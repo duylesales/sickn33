@@ -12,7 +12,7 @@ Building fast, functional prototypes and hardening them for production are two d
 
 At **LaunchStudio**, we've been the partner behind exactly this kind of agency handoff since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Marloes's client approved the launch on schedule, and her confidence taking on fintech-adjacent work grew instead of stalling. (€2,300 — Launch & Grow Package, hardened and documented in 8 business days.) 🚀
+Marloes's client approved the launch on schedule, and her confidence taking on fintech-adjacent work grew instead of stalling. (€2,300 - Launch & Grow Package, hardened and documented in 8 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/no-code-agency-partner-decision-launchstudio
 

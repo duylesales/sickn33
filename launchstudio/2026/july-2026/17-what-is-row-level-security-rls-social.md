@@ -1,4 +1,4 @@
-🔥 Mason built a prototype using **Cursor** — mason, a startup founder, used **cursor** to build a fitness trainer crm prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Mason built a prototype using **Cursor** - mason, a startup founder, used **cursor** to build a fitness trainer crm prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mason's application achieved production readiness: Mason secured all client records and verified strict data isolation under rigorous multi-user tests. (€1,200 (Security Hardening Package) — production-ready and deployed in 4 business days.). 🚀
+Mason's application achieved production readiness: Mason secured all client records and verified strict data isolation under rigorous multi-user tests. (€1,200 (Security Hardening Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/what-is-row-level-security-rls
 

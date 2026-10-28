@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Bram had a link. That was the thing he kept coming back to: he had built a booking tool for padel courts in Rotterdam in about nine days inside Lovable, and he had a link he could send to anyone, and it worked. Two club owners opened it on their phones and filled in a test booking. So when his accountant asked him where the app was hosted, the question genuinely puzzled him. It was on the internet. Someone could open it. Wasn't that hosting?
 
-It is, in the same way a demo apartment is housing. Everything you need to see the idea is there, and almost nothing you need to actually live in it. The gap between a Lovable preview URL and a production deployment is not a technical detail that engineers care about for aesthetic reasons — it is the difference between an app that survives its first busy Monday and one that doesn't.
+It is, in the same way a demo apartment is housing. Everything you need to see the idea is there, and almost nothing you need to actually live in it. The gap between a Lovable preview URL and a production deployment is not a technical detail that engineers care about for aesthetic reasons - it is the difference between an app that survives its first busy Monday and one that doesn't.
 
 ## What That Preview URL Actually Is
 
@@ -34,13 +34,13 @@ The practical translation for a founder: your preview link is proof the product 
 
 ## The Four Things That Behave Differently With Real Users
 
-**Concurrency stops being theoretical.** Two friends clicking around is not the same load pattern as forty people arriving from a LinkedIn post at 09:00. Preview environments frequently have limits on simultaneous requests that nobody notices until they are exceeded — and when they are, the failure looks to your users like a blank page rather than an error you can explain.
+**Concurrency stops being theoretical.** Two friends clicking around is not the same load pattern as forty people arriving from a LinkedIn post at 09:00. Preview environments frequently have limits on simultaneous requests that nobody notices until they are exceeded - and when they are, the failure looks to your users like a blank page rather than an error you can explain.
 
-**Secrets become a real problem.** In the build phase, an API key sitting in your frontend code is invisible to you because everything works. In production, that same key is visible to anyone who opens the browser's developer tools. Anyone. This is the single most common security finding when an AI-built app comes in for review, and the fix is architectural — the key has to move to a server-side function — not a setting you toggle.
+**Secrets become a real problem.** In the build phase, an API key sitting in your frontend code is invisible to you because everything works. In production, that same key is visible to anyone who opens the browser's developer tools. Anyone. This is the single most common security finding when an AI-built app comes in for review, and the fix is architectural - the key has to move to a server-side function - not a setting you toggle.
 
-**Database connections run out.** Your app talks to a database, and every visitor session opens a connection. Development traffic never exhausts the pool. Real traffic can, and when it does, the symptom is a site that works perfectly for the first thirty people and throws errors for everyone after — which is exactly the moment you least want it to happen.
+**Database connections run out.** Your app talks to a database, and every visitor session opens a connection. Development traffic never exhausts the pool. Real traffic can, and when it does, the symptom is a site that works perfectly for the first thirty people and throws errors for everyone after - which is exactly the moment you least want it to happen.
 
-**File uploads stop being free.** If your app lets users upload anything — a profile photo, a document, a court-booking screenshot — that data has to live somewhere with rules about size, type and access. AI-generated apps typically accept whatever they are given, which means your storage bill and your security exposure both scale with your least careful user.
+**File uploads stop being free.** If your app lets users upload anything - a profile photo, a document, a court-booking screenshot - that data has to live somewhere with rules about size, type and access. AI-generated apps typically accept whatever they are given, which means your storage bill and your security exposure both scale with your least careful user.
 
 ## Your Database Lives Somewhere Else Entirely
 
@@ -48,7 +48,7 @@ This is the part that surprises non-technical founders most, and it is worth sta
 
 Most Lovable projects store their data in Supabase. That Supabase project has its own region, its own backup settings, its own security rules and its own bill. You can change where your frontend is hosted without touching it, and you can lose your entire database while your frontend sits there looking perfectly healthy.
 
-Two consequences follow. First, when you ask "where is my app hosted," you are actually asking two questions, and the data one matters more, because a frontend can be rebuilt in a day and a customer database cannot. Second, the region your Supabase project runs in was chosen at creation, often by default, and for EU founders that default is frequently not in Europe. Moving it later is a migration, not a setting — export, restore, verify, cut over — so it is worth checking now while the answer costs you one dropdown.
+Two consequences follow. First, when you ask "where is my app hosted," you are actually asking two questions, and the data one matters more, because a frontend can be rebuilt in a day and a customer database cannot. Second, the region your Supabase project runs in was chosen at creation, often by default, and for EU founders that default is frequently not in Europe. Moving it later is a migration, not a setting - export, restore, verify, cut over - so it is worth checking now while the answer costs you one dropdown.
 
 ## "Deployed" and "Launched" Are Not the Same Word
 
@@ -73,7 +73,7 @@ Founders often skip this because it feels like enterprise ceremony for a product
 
 Ask yourself one question: if your database were wiped right now, what would you lose?
 
-For most early Lovable apps, the honest answer is "everything, and I'm not sure there's a copy." Managed database providers usually offer backups, sometimes only on paid plans, often with a retention window shorter than founders assume. The important detail is not whether backups exist but whether anyone has ever restored one — an untested backup is a hypothesis, not a safety net.
+For most early Lovable apps, the honest answer is "everything, and I'm not sure there's a copy." Managed database providers usually offer backups, sometimes only on paid plans, often with a retention window shorter than founders assume. The important detail is not whether backups exist but whether anyone has ever restored one - an untested backup is a hypothesis, not a safety net.
 
 ## Your Three Realistic Hosting Options
 
@@ -98,7 +98,7 @@ If you can answer six out of six, your app is genuinely ready for a domain. Four
 
 ## Getting From Link to Launch
 
-The good news is that this is a bounded piece of work, not a rebuild. LaunchStudio's engineers take the frontend you already built — untouched — and put the production layer underneath it: environment secrets moved server-side, database connections pooled properly, hosting configured with SSL and a real deploy pipeline, monitoring wired up, and backups tested rather than assumed. That is the [Launch Ready package](https://launchstudio.eu/en/#packages), typically inside a couple of weeks rather than a couple of months, and it is the same engineering discipline Manifera has applied to enterprise systems for more than eleven years from its Amsterdam and Ho Chi Minh City offices.
+The good news is that this is a bounded piece of work, not a rebuild. LaunchStudio's engineers take the frontend you already built - untouched - and put the production layer underneath it: environment secrets moved server-side, database connections pooled properly, hosting configured with SSL and a real deploy pipeline, monitoring wired up, and backups tested rather than assumed. That is the [Launch Ready package](https://launchstudio.eu/en/#packages), typically inside a couple of weeks rather than a couple of months, and it is the same engineering discipline Manifera has applied to enterprise systems for more than eleven years from its Amsterdam and Ho Chi Minh City offices.
 
 If you would rather find out where you stand before committing to anything, [send us your prototype link](https://launchstudio.eu/en/#contact) and you will get a straight answer about what is already solid and what needs attention first.
 
@@ -106,24 +106,24 @@ If you would rather find out where you stand before committing to anything, [sen
 
 ### A Padel Booking Tool Meets Its First Busy Monday
 
-Bram Verhoeven's app, CourtSlot, served three padel clubs around Rotterdam. He launched by sending the Lovable preview link to the clubs' member mailing lists on a Sunday evening — roughly 900 people in total. By Monday morning, about sixty of them tried to book a court in the same twenty-minute window.
+Bram Verhoeven's app, CourtSlot, served three padel clubs around Rotterdam. He launched by sending the Lovable preview link to the clubs' member mailing lists on a Sunday evening - roughly 900 people in total. By Monday morning, about sixty of them tried to book a court in the same twenty-minute window.
 
 The frontend held. The database did not: connections were opened per session and never pooled, so members thirty-one onwards saw a blank screen with no explanation. Two of them called the club, the club called Bram, and Bram had no logs to look at because error tracking had never been set up. He also discovered, while investigating, that the Supabase project was running in a US region and that his booking API key was readable in the page source.
 
 The work took eight business days: connection pooling and query fixes, the API key moved into a server-side function, the database migrated to an EU region with a tested restore, hosting moved to a proper deploy pipeline with a staging environment, and uptime plus error monitoring wired to his phone. The frontend he had built in Lovable was not modified at all.
 
-**Result:** CourtSlot handled a 400-member release from a fourth club six weeks later without incident, and Bram found out about the one outage that did occur — a provider issue lasting four minutes — from his phone rather than from a club manager.
+**Result:** CourtSlot handled a 400-member release from a fourth club six weeks later without incident, and Bram found out about the one outage that did occur - a provider issue lasting four minutes - from his phone rather than from a club manager.
 
 > *"I thought hosting was a box you tick. It turned out to be the difference between people booking a court and people phoning the club to complain about me."*
-> — **Bram Verhoeven, Founder, CourtSlot (Rotterdam)**
+> - **Bram Verhoeven, Founder, CourtSlot (Rotterdam)**
 
-**Cost & Timeline:** €2,400 (Launch Ready Package: hosting, database migration, secrets and monitoring) — live in 8 business days, plus managed hosting at €49/month.
+**Cost & Timeline:** €2,400 (Launch Ready Package: hosting, database migration, secrets and monitoring) - live in 8 business days, plus managed hosting at €49/month.
 
 ## Frequently Asked Questions
 
 ### Can I just keep using the Lovable preview link as my real app?
 
-For a small internal tool or an early pilot with a handful of friendly users, sometimes yes. It becomes a problem the moment you have paying customers, real personal data, or traffic arriving in bursts — because preview environments are built for iteration, not for concurrency, uptime guarantees or incident recovery.
+For a small internal tool or an early pilot with a handful of friendly users, sometimes yes. It becomes a problem the moment you have paying customers, real personal data, or traffic arriving in bursts - because preview environments are built for iteration, not for concurrency, uptime guarantees or incident recovery.
 
 ### Does moving hosting mean rebuilding my app?
 
@@ -131,11 +131,11 @@ No. The frontend you built stays as it is. Moving hosting means changing where t
 
 ### Is my Supabase database affected if I change frontend hosting?
 
-Not automatically — they are separate services with separate settings. That independence cuts both ways: you can move hosting without touching data, and you can also have a perfectly healthy frontend pointing at a database with no backups and the wrong region.
+Not automatically - they are separate services with separate settings. That independence cuts both ways: you can move hosting without touching data, and you can also have a perfectly healthy frontend pointing at a database with no backups and the wrong region.
 
 ### How much traffic can a default Lovable setup actually handle?
 
-There is no single number, because it depends on what each page does and how your database queries are written. The more useful question is what happens at your realistic peak — a product launch email, a press mention — and whether anything in the chain has a hard limit you would hit there.
+There is no single number, because it depends on what each page does and how your database queries are written. The more useful question is what happens at your realistic peak - a product launch email, a press mention - and whether anything in the chain has a hard limit you would hit there.
 
 ### What does managed hosting actually include?
 

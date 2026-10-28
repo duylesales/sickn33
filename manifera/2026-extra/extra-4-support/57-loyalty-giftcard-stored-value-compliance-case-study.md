@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager or technical lead at a retail chain scoping a stored-value gift card and loyalty wallet system faces a specific regulatory reality that's easy to underweight during architecture planning: rules governing stored-value balances — expiration limits, dormancy fees, and what happens to an unclaimed balance after a period of inactivity (commonly known as escheatment or unclaimed property law) — differ meaningfully across jurisdictions, with several US states prohibiting gift card expiration entirely while others permit it under specific conditions, and EU member states applying their own distinct rules under electronic money regulation. A system architected around a single, uniform balance policy across all markets risks either genuine regulatory non-compliance in stricter jurisdictions or unnecessarily forgoing legitimate balance management practices in more permissive ones.
+An IT Manager or technical lead at a retail chain scoping a stored-value gift card and loyalty wallet system faces a specific regulatory reality that's easy to underweight during architecture planning: rules governing stored-value balances - expiration limits, dormancy fees, and what happens to an unclaimed balance after a period of inactivity (commonly known as escheatment or unclaimed property law) - differ meaningfully across jurisdictions, with several US states prohibiting gift card expiration entirely while others permit it under specific conditions, and EU member states applying their own distinct rules under electronic money regulation. A system architected around a single, uniform balance policy across all markets risks either genuine regulatory non-compliance in stricter jurisdictions or unnecessarily forgoing legitimate balance management practices in more permissive ones.
 
 ## Why a Single Global Configuration Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A stored-value wallet system built around a single, globally uniform expiration 
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around region-configurable balance rules — able to apply, waive, or modify specific expiration and dormancy fee mechanics based on a customer's actual jurisdiction — lets a retailer comply with each market's specific regulatory requirements without forgoing legitimate balance management practices in markets where stricter mechanics remain legally permissible. This isn't simply a matter of geofencing a single feature on or off, since regulatory requirements can be more nuanced than a binary allow/disallow — some jurisdictions have specifically focused on disclosure requirements (clearly stating any expiration or fee terms at point of sale) rather than an outright prohibition, meaning the underlying system needs to support genuinely configurable behavior, not just a global on/off switch, to accommodate the actual range of regulatory approaches across a retailer's operating markets.
+A system architected from the start around region-configurable balance rules - able to apply, waive, or modify specific expiration and dormancy fee mechanics based on a customer's actual jurisdiction - lets a retailer comply with each market's specific regulatory requirements without forgoing legitimate balance management practices in markets where stricter mechanics remain legally permissible. This isn't simply a matter of geofencing a single feature on or off, since regulatory requirements can be more nuanced than a binary allow/disallow - some jurisdictions have specifically focused on disclosure requirements (clearly stating any expiration or fee terms at point of sale) rather than an outright prohibition, meaning the underlying system needs to support genuinely configurable behavior, not just a global on/off switch, to accommodate the actual range of regulatory approaches across a retailer's operating markets.
 
 ## What Building Region-Configurable Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Karta Lojalnościowa Katowice, a Katowice-based retail chain, had built an initi
 Manifera's Amsterdam team rebuilt the wallet system's core architecture around a configurable, region-specific ruleset, supporting both expiration restriction for stricter jurisdictions and enhanced disclosure for jurisdictions with transparency-focused requirements, alongside reliable jurisdiction determination logic and escheatment reporting support, all without requiring separate, parallel wallet systems per region.
 
 > *"We'd built one policy and assumed we'd just adjust it entirely wherever it caused a problem. It turned out the actual regulatory picture across our markets was more varied than a single policy could handle, and building real configurability was what let us keep operating properly across all our target markets rather than just retreating from the harder ones."*
-> — **IT Manager, Karta Lojalnościowa Katowice**
+> - **IT Manager, Karta Lojalnościowa Katowice**
 
 Karta Lojalnościowa Katowice successfully launched in its additional target markets with region-appropriate wallet configurations, and now treats regulatory configurability as a standard architectural requirement for any new loyalty mechanic, rather than a single global design decided once.
 
@@ -79,7 +79,7 @@ Karta Lojalnościowa Katowice successfully launched in its additional target mar
 
 ## Scoping Your Own Retail Loyalty Platform's Wallet System for Regulatory Compliance
 
-Before building or launching a stored-value gift card or loyalty wallet system across multiple markets, architect the system around genuinely configurable, region-specific rulesets — a single global policy forces an unnecessary trade-off between compliance risk and balance management flexibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready loyalty wallet system.
+Before building or launching a stored-value gift card or loyalty wallet system across multiple markets, architect the system around genuinely configurable, region-specific rulesets - a single global policy forces an unnecessary trade-off between compliance risk and balance management flexibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready loyalty wallet system.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between limiting balance management to the strictest jurisdic
 
 ### (Scenario: engineering lead scoping regional configurability) Is a simple geofenced on/off switch sufficient to handle stored-value regulation across markets?
 
-Not always — some jurisdictions focus on disclosure requirements rather than outright prohibition, meaning the system needs genuinely configurable behavior per region, not just a binary enable/disable switch.
+Not always - some jurisdictions focus on disclosure requirements rather than outright prohibition, meaning the system needs genuinely configurable behavior per region, not just a binary enable/disable switch.
 
 ### (Scenario: legal counsel reviewing technical architecture) Why does reliable customer jurisdiction determination matter for regulatory compliance?
 
@@ -110,7 +110,7 @@ Stored-value and escheatment regulation is a genuinely active, evolving area acr
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a stored-value wallet system) Why does gift card and loyalty balance regulation vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Different jurisdictions, notably several US states and EU electronic money rules, take varying positions on stored-value balance treatment." } },
     { "@type": "Question", "name": "(Scenario: retailer worried about compliance) What's the risk of building a wallet system around a single, globally uniform policy?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between limiting design to the strictest jurisdiction or risking non-compliance in stricter markets." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple geofenced on/off switch sufficient to handle stored-value regulation across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some jurisdictions focus on disclosure requirements rather than prohibition, requiring genuine configurability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple geofenced on/off switch sufficient to handle stored-value regulation across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some jurisdictions focus on disclosure requirements rather than prohibition, requiring genuine configurability." } },
     { "@type": "Question", "name": "(Scenario: legal counsel reviewing technical architecture) Why does reliable customer jurisdiction determination matter for regulatory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying region-specific rules correctly depends on accurately identifying jurisdiction, a nuance beyond simple billing address lookup." } },
     { "@type": "Question", "name": "(Scenario: retailer planning for future regulatory change) Why should a wallet system be designed to accommodate evolving regulation, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "The regulatory landscape is actively evolving, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

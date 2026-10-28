@@ -1,6 +1,6 @@
-⏱️ Sten promised a clinic group 99.5% uptime — using **Cursor** to build the scheduling assistant, but nothing behind it could actually prove that number. 🚨
+⏱️ Sten promised a clinic group 99.5% uptime - using **Cursor** to build the scheduling assistant, but nothing behind it could actually prove that number. 🚨
 
-If your first enterprise SLA lands before you've hired a Site Reliability Engineer, a 3-6 month recruiting cycle isn't a viable path — the contract needs reliability infrastructure now, not next quarter.
+If your first enterprise SLA lands before you've hired a Site Reliability Engineer, a 3-6 month recruiting cycle isn't a viable path - the contract needs reliability infrastructure now, not next quarter.
 
 ❌ No structured uptime monitoring or customer-facing status page
 ❌ No alerting wired to Slack, so failures get discovered by angry emails instead of a dashboard
@@ -12,7 +12,7 @@ If your first enterprise SLA lands before you've hired a Site Reliability Engine
 
 At **LaunchStudio**, we've been closing exactly this gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sten's platform delivered 99.7% uptime over the following two months, verified against a dashboard he handed straight to procurement (€3,600 (Relaunch & Scale Package) — completed in 10 business days.). 🚀
+Sten's platform delivered 99.7% uptime over the following two months, verified against a dashboard he handed straight to procurement (€3,600 (Relaunch & Scale Package) - completed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-sre-uptime-sla
 

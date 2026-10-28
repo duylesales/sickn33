@@ -1,4 +1,4 @@
-🚨 Stefan Rombouts built Bezorgroute in Cursor: a delivery route optimizer for small catering firms around Tilburg. The app called a commercial mapping API for routing. Because the API key was stored in a prefixed environment variable, it was compiled directly into the client-side JavaScript bundle — where scrapers found it and racked up €1,800 in unmetered billing. 😳
+🚨 Stefan Rombouts built Bezorgroute in Cursor: a delivery route optimizer for small catering firms around Tilburg. The app called a commercial mapping API for routing. Because the API key was stored in a prefixed environment variable, it was compiled directly into the client-side JavaScript bundle - where scrapers found it and racked up €1,800 in unmetered billing. 😳
 
 If an API key is in your frontend code, it is public to the entire world. Here's how secrets get leaked: 🧠
 

@@ -42,7 +42,7 @@ The phrase "AI in media" tends to evoke either recommendation algorithms or deep
 
 **Recommendation under constraints commercial platforms do not face.** A public broadcaster has a legal and editorial mandate that includes plurality, representation of minority viewpoints and reach across demographic groups. That means the objective function cannot simply be engagement. Building a recommender that balances relevance against diversity obligations, and that can be explained to an editorial board and a regulator, is a substantially harder problem than optimising watch time. Candidates who have only worked on engagement-maximising systems often find this the most intellectually interesting constraint they have encountered.
 
-**Speech and audio processing in Dutch.** Automatic speech recognition, speaker diarisation, subtitle generation and audio search all have to work on Dutch — a language with far less training data than English, regional accents that differ substantially, and a broadcasting archive spanning nearly a century of changing recording quality and speech conventions. Off-the-shelf models underperform noticeably, which makes the fine-tuning and evaluation work real rather than nominal.
+**Speech and audio processing in Dutch.** Automatic speech recognition, speaker diarisation, subtitle generation and audio search all have to work on Dutch - a language with far less training data than English, regional accents that differ substantially, and a broadcasting archive spanning nearly a century of changing recording quality and speech conventions. Off-the-shelf models underperform noticeably, which makes the fine-tuning and evaluation work real rather than nominal.
 
 **Archive enrichment at scale.** The national audiovisual archive holds an enormous volume of material, much of it sparsely catalogued. Automatic annotation, face and place recognition, topic classification and cross-modal search on decades of film, tape and digital material is a large, ongoing technical programme. Historical material brings its own problems: degraded audio, inconsistent framing conventions, and vocabulary that has shifted meaning over time.
 
@@ -91,13 +91,13 @@ Candidates frequently ask which side to target, and the answer depends on what t
 
 | | Public broadcasting and archive | Commercial media |
 |---|---|---|
-| Objective function | Constrained by mandate — plurality, reach, accessibility | Engagement, retention, advertising revenue |
+| Objective function | Constrained by mandate - plurality, reach, accessibility | Engagement, retention, advertising revenue |
 | Pace | Slower; decisions involve editorial and governance layers | Faster; closer to consumer product cycles |
 | Salary | Bounded by collective agreements, predictable | Higher ceiling, more variable |
 | Job security | Generally high | Sector-dependent, more volatile |
-| Explainability pressure | High — decisions must be defensible to editorial boards and regulators | Moderate — commercial accountability rather than public |
+| Explainability pressure | High - decisions must be defensible to editorial boards and regulators | Moderate - commercial accountability rather than public |
 | Technical freedom | Constrained by procurement and governance | Greater, within commercial priorities |
-| Portfolio value | Distinctive — constrained-objective recommendation is rare experience | More conventional, transfers easily |
+| Portfolio value | Distinctive - constrained-objective recommendation is rare experience | More conventional, transfers easily |
 
 The non-obvious point is that the public side often produces the more distinctive portfolio. Almost every recommendation engineer has optimised engagement. Comparatively few have built a system that had to satisfy a diversity mandate and survive editorial scrutiny, and that experience transfers unexpectedly well into regulated domains such as finance and healthcare where explainability and fairness constraints are becoming standard.
 
@@ -105,7 +105,7 @@ The non-obvious point is that the public side often produces the more distinctiv
 
 In most Dutch AI job markets, English suffices and Dutch is a social convenience. Hilversum is one of the clearest exceptions, for reasons that are structural rather than cultural.
 
-The product is Dutch-language content, for a Dutch-speaking audience, produced by editorial teams working in Dutch. If your work touches speech recognition, subtitling, content classification, search or metadata, you need to be able to evaluate output in Dutch — and evaluating whether an automatic transcript is good requires understanding the language well enough to hear the errors. Similarly, working with editorial stakeholders on what a recommender should surface involves conversations about nuance, tone and public-service obligations that are difficult to hold through a language barrier.
+The product is Dutch-language content, for a Dutch-speaking audience, produced by editorial teams working in Dutch. If your work touches speech recognition, subtitling, content classification, search or metadata, you need to be able to evaluate output in Dutch - and evaluating whether an automatic transcript is good requires understanding the language well enough to hear the errors. Similarly, working with editorial stakeholders on what a recommender should surface involves conversations about nuance, tone and public-service obligations that are difficult to hold through a language barrier.
 
 There are genuine exceptions. Platform engineering, infrastructure, backend and some pure modelling roles run in English at several organisations, particularly the larger commercial ones. Media technology vendors selling internationally often work in English throughout. But candidates should not assume the general Dutch pattern of English-as-default applies across this cluster, because in the content-facing layers it does not.
 
@@ -117,7 +117,7 @@ The archive wants to improve searchability of a large collection of regional new
 
 Staffing is a mix rather than a single hire: a researcher on a fixed-term contract tied to the funded project, an internal engineer who knows the collection management systems, and a university collaborator supervising a student. The role advertised externally is the researcher position, and it is described in terms of the collection and the research questions rather than the modelling techniques.
 
-A candidate who reads that posting and recognises it as a speech recognition and information retrieval problem on out-of-distribution historical Dutch audio has understood something the posting did not say explicitly. That recognition is precisely the advantage domain-literate candidates have in this market — and it is available to anyone willing to read past the job title.
+A candidate who reads that posting and recognises it as a speech recognition and information retrieval problem on out-of-distribution historical Dutch audio has understood something the posting did not say explicitly. That recognition is precisely the advantage domain-literate candidates have in this market - and it is available to anyone willing to read past the job title.
 
 ## The Vendor Layer Most Candidates Overlook Entirely
 
@@ -131,7 +131,7 @@ They are also, for the same reason, more likely to operate in English internally
 
 Engineers moving from a general technology background into media machine learning tend to underestimate one thing and overestimate another.
 
-The underestimate is how much domain knowledge affects credibility. Media organisations have watched external technologists arrive with confident proposals that ignored how broadcast actually works — how a playout schedule is constructed, why a rights window constrains what can be recommended, what an editorial team is accountable for. A candidate who has spent a few hours understanding those mechanics interviews very differently from one who has not, and the gap is visible within minutes of conversation.
+The underestimate is how much domain knowledge affects credibility. Media organisations have watched external technologists arrive with confident proposals that ignored how broadcast actually works - how a playout schedule is constructed, why a rights window constrains what can be recommended, what an editorial team is accountable for. A candidate who has spent a few hours understanding those mechanics interviews very differently from one who has not, and the gap is visible within minutes of conversation.
 
 The overestimate is how much media-specific technical experience is required. Very few candidates arrive having already built a subtitle pipeline or an archive search system. Hiring managers know this. What they look for is evidence you can work with messy real-world signals, that you take evaluation seriously, and that you can collaborate with non-technical stakeholders who have legitimate authority over the output. Those are transferable from many domains.
 
@@ -165,7 +165,7 @@ The practical implication is not to avoid the sector but to ask specific questio
 - Public-side recommendation work under plurality and explainability mandates produces an unusually distinctive portfolio that transfers well to regulated industries.
 - Dutch is genuinely required for content-facing roles here, unlike in most Dutch AI markets; platform and infrastructure roles are more often English-language.
 - Amsterdam and Utrecht are both within 25 minutes, which substantially lowers the career risk of specialising in one cluster.
-- Sector funding pressure is real — ask directly whether a team is operationally funded or programme-funded.
+- Sector funding pressure is real - ask directly whether a team is operationally funded or programme-funded.
 
 ## Where to Start
 
@@ -179,7 +179,7 @@ Browse current AI, machine learning and data vacancies in and around Hilversum a
 Constrained recommendation, Dutch speech recognition and subtitling, archive metadata extraction on historical material, real-time video processing for live broadcast, and rights and moderation classification.
 
 ### (Scenario: international candidate) Do I need Dutch to work in Hilversum's media cluster?
-For content-facing work, genuinely yes — you cannot evaluate a Dutch transcript or discuss editorial nuance without the language. Platform, infrastructure and some pure modelling roles are more often available in English.
+For content-facing work, genuinely yes - you cannot evaluate a Dutch transcript or discuss editorial nuance without the language. Platform, infrastructure and some pure modelling roles are more often available in English.
 
 ### (Scenario: candidate weighing public versus commercial) Which side is better to target?
 Commercial offers a higher salary ceiling and faster pace. The public side offers stability and, less obviously, a more distinctive portfolio, because constrained-objective recommendation is rare experience that transfers well to regulated industries.

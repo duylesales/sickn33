@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable App Performance: Where the Time Goes in Production",
-  "description": "Why AI-built applications feel instant with forty rows and sluggish with four thousand: repeated queries, missing indexes, unoptimised images and oversized bundles — with a measurement-first method for finding which one is yours.",
+  "description": "Why AI-built applications feel instant with forty rows and sluggish with four thousand: repeated queries, missing indexes, unoptimised images and oversized bundles - with a measurement-first method for finding which one is yours.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-18",
@@ -30,7 +30,7 @@ Slowness is not one problem. It is three, they have different symptoms, and fixi
 
 **Slow to fill.** The page appears but the content is missing, with a spinner. This is your data layer: queries, indexes, and how many separate requests are being made.
 
-**Slow to respond.** The page is loaded and interaction is sluggish. This is usually rendering — too many elements, oversized images being scaled by the browser, work happening on every keystroke.
+**Slow to respond.** The page is loaded and interaction is sluggish. This is usually rendering - too many elements, oversized images being scaled by the browser, work happening on every keystroke.
 
 Before doing anything, establish which one you have. They feel similar to a frustrated user and they share almost no fixes.
 
@@ -38,11 +38,11 @@ Before doing anything, establish which one you have. They feel similar to a frus
 
 The most common data-layer problem in AI-generated apps has a name: the N+1 query. It happens when your app fetches a list, then makes an additional request for each item in that list.
 
-Fetch twenty bookings, then for each booking fetch the customer, then for each customer fetch their company. That is one query plus twenty plus twenty — forty-one round trips where two would have done. With forty rows during development it is imperceptible. With four thousand rows it is a page that never finishes.
+Fetch twenty bookings, then for each booking fetch the customer, then for each customer fetch their company. That is one query plus twenty plus twenty - forty-one round trips where two would have done. With forty rows during development it is imperceptible. With four thousand rows it is a page that never finishes.
 
 Generated code produces this pattern constantly, because it is the natural way to express the logic when you are thinking about one item at a time. Nothing is wrong with any individual query; the problem only exists in the aggregate, which is exactly the kind of thing a code review does not surface and a network tab does immediately.
 
-The fix is to fetch related data in one query — a join, or the nested select your client library supports — rather than looping.
+The fix is to fetch related data in one query - a join, or the nested select your client library supports - rather than looping.
 
 ## Indexes: The Fix Nobody Thinks Of
 
@@ -66,7 +66,7 @@ The fix is processing at upload time: resize to the sizes you actually display, 
 
 Two smaller contributors worth knowing.
 
-**Bundle size.** Generated apps accumulate dependencies — a date library, an icon set, a chart package, an animation library — and by default the browser downloads all of it before rendering anything. Splitting the bundle so each page loads only what it needs is a configuration change with a visible effect on first load.
+**Bundle size.** Generated apps accumulate dependencies - a date library, an icon set, a chart package, an animation library - and by default the browser downloads all of it before rendering anything. Splitting the bundle so each page loads only what it needs is a configuration change with a visible effect on first load.
 
 **Cold starts.** Serverless functions that have not run recently take longer on the first request. If your app is quiet overnight, your first visitor each morning gets the slow version. This is rarely worth engineering around for a small product, and it is worth knowing so you do not chase a phantom.
 
@@ -76,7 +76,7 @@ Three reasons, all structural.
 
 You tested with tens of rows, not thousands. You tested on a laptop over office wifi, not a mid-range phone on mobile data. And you tested alone, so nothing was competing for the same database connections.
 
-Production reverses all three simultaneously, which is why the degradation feels sudden rather than gradual. It was gradual — you simply had no visibility into it.
+Production reverses all three simultaneously, which is why the degradation feels sudden rather than gradual. It was gradual - you simply had no visibility into it.
 
 ## Measure Before You Optimise
 
@@ -102,15 +102,15 @@ In descending order of return for a typical AI-built product:
 
 **Split the bundle** so pages load only what they need.
 
-**Then, and only then, consider infrastructure** — a bigger database instance, caching, a content delivery network. Upgrading infrastructure before fixing queries is paying more to run the same inefficiency faster, and it is the most common way founders waste money on this problem.
+**Then, and only then, consider infrastructure** - a bigger database instance, caching, a content delivery network. Upgrading infrastructure before fixing queries is paying more to run the same inefficiency faster, and it is the most common way founders waste money on this problem.
 
 ## When It Genuinely Is Infrastructure
 
-Sometimes the code is fine. Sustained traffic beyond what a small instance can serve, a database at its connection limit, or a workload that genuinely needs caching are real situations — they are simply less common than a missing index at this stage. The way to tell is that the fixes above produce no improvement, and that your measurements show resource saturation rather than slow individual operations.
+Sometimes the code is fine. Sustained traffic beyond what a small instance can serve, a database at its connection limit, or a workload that genuinely needs caching are real situations - they are simply less common than a missing index at this stage. The way to tell is that the fixes above produce no improvement, and that your measurements show resource saturation rather than slow individual operations.
 
 ## Getting It Diagnosed Properly
 
-Performance work rewards measurement over instinct, which is why it is worth having someone do it who has seen the same four causes in a hundred applications. LaunchStudio's engineers profile the app, add the indexes, collapse the repeated queries, build the image pipeline, split the bundle and set up monitoring so you can see the effect rather than assume it — without touching the interface you built.
+Performance work rewards measurement over instinct, which is why it is worth having someone do it who has seen the same four causes in a hundred applications. LaunchStudio's engineers profile the app, add the indexes, collapse the repeated queries, build the image pipeline, split the bundle and set up monitoring so you can see the effect rather than assume it - without touching the interface you built.
 
 That is part of the [Launch Ready and Launch & Grow scopes](https://launchstudio.eu/en/#packages), and the team behind it is Manifera's, whose eleven years of production engineering for clients including Vodafone and TNO involves a great deal of exactly this unglamorous work.
 
@@ -120,13 +120,13 @@ If your app is slower than it was and you do not know why, [describe your projec
 
 Caching gets suggested early in every performance conversation and belongs near the end, because it hides problems rather than removing them and it introduces a new category of bug.
 
-**What it does well.** Data that is expensive to compute and rarely changes — a homepage listing, a public catalogue, an aggregate count — served from memory instead of recalculated per request. For read-heavy public pages this is genuinely transformative.
+**What it does well.** Data that is expensive to compute and rarely changes - a homepage listing, a public catalogue, an aggregate count - served from memory instead of recalculated per request. For read-heavy public pages this is genuinely transformative.
 
 **What it does badly.** Anything personalised or transactional. Cache a page that includes the logged-in user's name and you will eventually serve one user's view to another, which is a data exposure rather than a performance issue.
 
 **The bug it introduces.** Stale data. A price updated in the database and not in the cache is a customer seeing one number and being charged another. Every cache needs an invalidation rule, and getting invalidation right is famously the harder half.
 
-**Why it comes last.** Caching an inefficient query makes the inefficiency intermittent rather than absent — fast until the cache misses, and then just as slow as before, usually under load, which is exactly when you least want it.
+**Why it comes last.** Caching an inefficient query makes the inefficiency intermittent rather than absent - fast until the cache misses, and then just as slow as before, usually under load, which is exactly when you least want it.
 
 The order that works: fix the queries, add the indexes, optimise the images, split the bundle. Then, if public pages are still heavy under real traffic, cache them deliberately with explicit invalidation and never cache anything that varies per user.
 
@@ -136,16 +136,16 @@ The order that works: fix the queries, add the indexes, optimise the images, spl
 
 Fenna Hoekman's app, Kookstudio, hosted recipes and meal plans for a community of home cooks around Zwolle. It launched fast and grew steadily. By month five, the recipe browse page took between five and nine seconds to show anything, and her most active users had started complaining.
 
-The measurement took an hour. The browse page issued one query for recipes, then one query per recipe for its author, then one per recipe for its tags — 121 requests for a page of forty recipes. The `recipes` table had no index on the category column used for filtering, so every filtered view read all 4,300 rows. Recipe photographs were served at full upload resolution, averaging 3.8 megabytes each, forty per page.
+The measurement took an hour. The browse page issued one query for recipes, then one query per recipe for its author, then one per recipe for its tags - 121 requests for a page of forty recipes. The `recipes` table had no index on the category column used for filtering, so every filtered view read all 4,300 rows. Recipe photographs were served at full upload resolution, averaging 3.8 megabytes each, forty per page.
 
 Five business days of work: the three queries collapsed into one nested select, four indexes added on the columns actually used for filtering and sorting, an upload pipeline added that generates thumbnail, card and full sizes in a modern format, and the bundle split so the browse page no longer downloads the recipe editor's dependencies.
 
 **Result:** the browse page went from between five and nine seconds to under one second on a mid-range phone over mobile data, and the monthly storage and bandwidth bill fell by roughly two-thirds as a side effect.
 
 > *"I had been reading about upgrading my database plan. The actual problem was four missing indexes and photographs the size of posters."*
-> — **Fenna Hoekman, Founder, Kookstudio (Zwolle)**
+> - **Fenna Hoekman, Founder, Kookstudio (Zwolle)**
 
-**Cost & Timeline:** €2,200 (query optimisation, indexes, image pipeline, bundle splitting) — completed in 5 business days.
+**Cost & Timeline:** €2,200 (query optimisation, indexes, image pipeline, bundle splitting) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -203,7 +203,7 @@ Almost always images and bundle size. A desktop connection hides both. Process u
       "name": "How many indexes does a small app need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typically three to six — one for each column frequently filtered, sorted or joined on. It is among the highest-return changes and usually an afternoon of work."
+        "text": "Typically three to six - one for each column frequently filtered, sorted or joined on. It is among the highest-return changes and usually an afternoon of work."
       }
     },
     {

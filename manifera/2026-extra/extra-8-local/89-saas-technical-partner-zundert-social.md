@@ -6,7 +6,7 @@ Two vendors quote the same SaaS platform. Eighteen months later, one costs 60% m
 ❌ **Floating-Point Currency Bugs:** Cross-border invoicing with float math is a rounding error waiting to hit a customer's invoice.
 
 **The Manifera Solution:**
-✅ **Fixed Monthly Pod Pricing:** No change-order surprises — reasonable scope evolution is absorbed, not re-invoiced.
+✅ **Fixed Monthly Pod Pricing:** No change-order surprises - reasonable scope evolution is absorbed, not re-invoiced.
 ✅ **Configurable Tax-Rate Engine:** VAT rules live as data, not code, so a rate change is a config update, not a regression cycle.
 ✅ **40-60% Lower True Cost:** €140,000-€175,000 all-in vs. €190,000-€260,000 real first-year cost on a "cheaper" fixed-bid quote.
 

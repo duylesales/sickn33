@@ -1,4 +1,4 @@
-🇪🇺 Hannah built an AI contract analysis platform using **Bolt** — hannah, a startup founder, used **bolt** to build an AI-powered contract analysis platform for procurement teams, but a French enterprise deal stalled over EU data residency and AI Act compliance. 🧠
+🇪🇺 Hannah built an AI contract analysis platform using **Bolt** - hannah, a startup founder, used **bolt** to build an AI-powered contract analysis platform for procurement teams, but a French enterprise deal stalled over EU data residency and AI Act compliance. 🧠
 
 If your architecture can't answer where EU customer data lives and how your AI system meets EU AI Act requirements, procurement will find that gap before your sales team does.
 
@@ -12,7 +12,7 @@ If your architecture can't answer where EU customer data lives and how your AI s
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Hannah's platform achieved production readiness: her paused deal resumed and closed within a month, and she now presents the EU architecture proactively during technical evaluation for every European prospect. (€6,200 (Enterprise Hardening Package) — EU infrastructure and compliance documentation built and verified in 15 business days.) 🚀
+Hannah's platform achieved production readiness: her paused deal resumed and closed within a month, and she now presents the EU architecture proactively during technical evaluation for every European prospect. (€6,200 (Enterprise Hardening Package) - EU infrastructure and compliance documentation built and verified in 15 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/data-residency-eu-ai-act-us-startups
 

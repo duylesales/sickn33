@@ -1,4 +1,4 @@
-🔥 Peyton built a prototype using **Cursor** — peyton, a startup founder, used **cursor** to build a saas for freelance writers prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Peyton built a prototype using **Cursor** - peyton, a startup founder, used **cursor** to build a saas for freelance writers prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Peyton's application achieved production readiness: Peyton reduced involuntary churn by 22% and automated account adjustments for canceled users. (€1,250 (Churn & Portal Package) — production-ready and deployed in 4 business days.). 🚀
+Peyton's application achieved production readiness: Peyton reduced involuntary churn by 22% and automated account adjustments for canceled users. (€1,250 (Churn & Portal Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/churn-reduction-strategies-ai-saas
 

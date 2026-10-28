@@ -16,7 +16,7 @@ Wat u wél moet inrichten vóór uw eerste patiënt:
 ✅ Volledige auditlogging op leesacties ("wie bekeek welk dossier en wanneer?")
 ✅ Exclusieve hosting binnen de EU en sluitende verwerkersovereenkomsten met elke subverwerker
 
-Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze senior engineers ervoor dat uw data-architectuur, versleuteling en compliancelagen productieklaar zijn — zonder de frontend aan te tasten die u al in Lovable of Bolt heeft gebouwd.
+Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze senior engineers ervoor dat uw data-architectuur, versleuteling en compliancelagen productieklaar zijn - zonder de frontend aan te tasten die u al in Lovable of Bolt heeft gebouwd.
 
 💡 Zo tekende fysiotherapie-app RouteToRecovery binnen 4 weken na onze revisie haar eerste contract met drie zorgpraktijken.
 

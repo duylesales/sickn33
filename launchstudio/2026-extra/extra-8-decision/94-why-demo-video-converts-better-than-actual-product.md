@@ -60,7 +60,7 @@ Turning a demo into an engaging, sticky product requires last-mile production en
 - **Optimistic UI & Skeleton States:** Rendering UI layout structures immediately while background APIs fetch data asynchronously.
 - **Fault-Tolerant Session Persistence:** Automatically saving draft states to the database so page refreshes never destroy user progress.
 
-[LaunchStudio](https://launchstudio.eu/en/) transforms AI prototypes into polished, high-activation production products — backed by Manifera's 11+ years of building intuitive digital experiences for enterprise leaders.
+[LaunchStudio](https://launchstudio.eu/en/) transforms AI prototypes into polished, high-activation production products - backed by Manifera's 11+ years of building intuitive digital experiences for enterprise leaders.
 
 [Turn your demo excitement into real, activated daily users](https://launchstudio.eu/en/#contact).
 
@@ -68,7 +68,7 @@ Turning a demo into an engaging, sticky product requires last-mile production en
 
 ### An AI-Native Founder in Action: From 18% to 64% User Activation
 
-Giselle van Dijk, a marketing consultant in Hilversum, built ContentChef — an AI marketing calendar generator. Her LinkedIn launch video went viral, attracting 420 beta signups. But only 18% of users actually generated a marketing calendar after logging in.
+Giselle van Dijk, a marketing consultant in Hilversum, built ContentChef - an AI marketing calendar generator. Her LinkedIn launch video went viral, attracting 420 beta signups. But only 18% of users actually generated a marketing calendar after logging in.
 
 LaunchStudio audited ContentChef's user onboarding journey and identified three critical drop-off points:
 1. When users logged in, they were greeted by an empty white grid with zero instructions.
@@ -80,9 +80,9 @@ The Manifera team implemented a 3-step onboarding modal with pre-loaded industry
 **Result:** Within two weeks of deploying the updates, ContentChef's user activation rate jumped from **18% to 64%**, with paid trial conversions increasing by 280%.
 
 > *"Our demo looked like magic on video, but our live app felt confusing and slow to real people. LaunchStudio added the polish, onboarding flow, and background reliability that made our real product match the promise of our demo."*
-> — **Giselle van Dijk, Founder, ContentChef (Hilversum)**
+> - **Giselle van Dijk, Founder, ContentChef (Hilversum)**
 
-**Cost & Timeline:** €1,800 (Launch Ready Package, UX state polish + background job queue + template onboarding) — completed in 6 business days.
+**Cost & Timeline:** €1,800 (Launch Ready Package, UX state polish + background job queue + template onboarding) - completed in 6 business days.
 
 ---
 
@@ -98,7 +98,7 @@ Optimistic UI instantly updates the screen to show what the user just did (e.g.,
 By using streaming responses (tokens rendering in real-time) or multi-stage progress bars that explain what the AI is analyzing step-by-step rather than a static loading spinner.
 
 ### What is the most important screen to optimize after signup?
-The "Empty State" — the first screen a brand-new user sees with zero data. Providing pre-filled sample templates and a clear, prominent primary action button drives immediate engagement.
+The "Empty State" - the first screen a brand-new user sees with zero data. Providing pre-filled sample templates and a clear, prominent primary action button drives immediate engagement.
 
 ### Does LaunchStudio modify our visual design when improving onboarding?
 No. We work within your existing design system and components (Lovable, React, Tailwind), simply adding the missing states, skeletons, and flow logic underneath.

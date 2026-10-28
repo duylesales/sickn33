@@ -23,7 +23,7 @@ Beveiliging komt op de eerste plaats omdat het lanceren met kwetsbaarheden onmid
 
 4. **Implementeer HTTPS**-omleiding: al het HTTP-verkeer moet worden omgeleid naar HTTPS
 
-5. **Authentificatiestroom controleren** — beveiligde pagina's moeten doorverwijzen naar inloggen, uitloggen moet alle sessies wissen, links voor het opnieuw instellen van wachtwoorden moeten voor eenmalig gebruik zijn
+5. **Authentificatiestroom controleren** - beveiligde pagina's moeten doorverwijzen naar inloggen, uitloggen moet alle sessies wissen, links voor het opnieuw instellen van wachtwoorden moeten voor eenmalig gebruik zijn
 
 **Tijdlijn**: 2–5 dagen met professionele hulp, 1–2 weken doe-het-zelf
 
@@ -33,15 +33,15 @@ Haal uw applicatie van voorbeeld-URL's naar een professionele infrastructuur.
 
 ### Acties
 
-1. **Koop en configureer uw domein** — stel DNS-records in die naar uw hostingplatform verwijzen
+1. **Koop en configureer uw domein** - stel DNS-records in die naar uw hostingplatform verwijzen
 
-2. **SSL-certificaat configureren** — de meeste hostingplatforms bieden gratis SSL via Let's Encrypt
+2. **SSL-certificaat configureren** - de meeste hostingplatforms bieden gratis SSL via Let's Encrypt
 
 3. **Omgevingsvariabelen instellen**: alle configuratiewaarden worden opgeslagen in het dashboard van uw hostingplatform, niet in code
 
-4. **Creëer een implementatiepijplijn** — het pushen naar de hoofdvertakking zou automatisch moeten worden opgebouwd en geïmplementeerd
+4. **Creëer een implementatiepijplijn** - het pushen naar de hoofdvertakking zou automatisch moeten worden opgebouwd en geïmplementeerd
 
-5. **Test de productiebuild** — controleer of alles werkt op het live domein, niet alleen in de ontwikkelingsmodus
+5. **Test de productiebuild** - controleer of alles werkt op het live domein, niet alleen in de ontwikkelingsmodus
 
 **Tijdlijn**: 1–2 dagen met professionele hulp, 3–5 dagen doe-het-zelf
 
@@ -55,7 +55,7 @@ Maak uw applicatie bestand tegen de onvoorspelbare dingen die echte gebruikers d
 
 2. **Voeg laadstatussen toe** voor elke gegevensophaalbewerking: gebruikers moeten altijd een spinner of skelet zien, nooit een leeg gebied
 
-3. **Maak lege statussen** voor lijsten en weergaven zonder gegevens — "Nog geen projecten. Maak uw eerste!" is beter dan een leeg scherm
+3. **Maak lege statussen** voor lijsten en weergaven zonder gegevens - "Nog geen projecten. Maak uw eerste!" is beter dan een leeg scherm
 
 4. **Netwerkfouten afhandelen**: wanneer API-aanroepen mislukken, wordt een knop voor opnieuw proberen weergegeven in plaats van dat deze crasht
 
@@ -69,9 +69,9 @@ Als uw product gebruikers kosten in rekening brengt, moet de betalingsverwerking
 
 ### Acties
 
-1. **Schakel Stripe naar live-modus** — update alle API-sleutels van test naar live
+1. **Schakel Stripe naar live-modus** - update alle API-sleutels van test naar live
 
-2. **Configureer webhooks** — stel eindpunten in om betalingsgebeurtenissen te ontvangen en Stripe-handtekeningen te verifiëren
+2. **Configureer webhooks** - stel eindpunten in om betalingsgebeurtenissen te ontvangen en Stripe-handtekeningen te verifiëren
 
 3. **Behandelingsfouten afhandelen**: geweigerde kaarten, onvoldoende saldo en verlopen betaalmethoden hebben allemaal duidelijke gebruikersberichten nodig
 
@@ -87,11 +87,11 @@ Weet wanneer er iets kapot gaat en bescherm uzelf op juridische wijze.
 
 ### Acties
 
-1. **Stel het bijhouden van fouten in** — installeer Sentry of LogRocket om productiefouten vast te leggen en u hierover te waarschuwen
+1. **Stel het bijhouden van fouten in** - installeer Sentry of LogRocket om productiefouten vast te leggen en u hierover te waarschuwen
 
 2. **Uptime-monitoring instellen**: gebruik UptimeRobot of Better Stack om u te waarschuwen wanneer uw app uitvalt
 
-3. **Schakel databaseback-ups in** — Het Supabase Pro-abonnement omvat dagelijkse back-ups
+3. **Schakel databaseback-ups in** - Het Supabase Pro-abonnement omvat dagelijkse back-ups
 
 4. **Servicevoorwaarden** en **Privacybeleid** maken – wettelijk verplicht als u gebruikersgegevens in de EU verzamelt
 
@@ -140,7 +140,7 @@ Ethan werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Ethan stapte soepel over naar de productie en nam op dag één twaalf wagenparkbeheerders in dienst.
 
-**Kosten en tijdlijn:** € 1.500 (demo naar productiepakket) — productieklaar en binnen 4 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.500 (demo naar productiepakket) - productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
 

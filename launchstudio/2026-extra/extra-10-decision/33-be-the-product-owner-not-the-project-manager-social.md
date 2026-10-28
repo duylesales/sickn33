@@ -1,4 +1,4 @@
-🚨 Wouter ran his first engagement the way he ran his retail shop — daily status checks, two hosting-provider debates, priorities swapped mid-week. A 9-day build took 16. 😬
+🚨 Wouter ran his first engagement the way he ran his retail shop - daily status checks, two hosting-provider debates, priorities swapped mid-week. A 9-day build took 16. 😬
 
 Founders confuse staying involved with staying in control of the wrong things. Here's the actual split: 🧠
 
@@ -8,11 +8,11 @@ Founders confuse staying involved with staying in control of the wrong things. H
 ❌ Requesting hour-by-hour time logs on a fixed-price engagement signals distrust, not oversight
 
 ✅ Define "done" in customer terms, not technical ones, before work starts
-✅ Set acceptance criteria upfront — confirmation within one minute, no double-bookings for the same slot
+✅ Set acceptance criteria upfront - confirmation within one minute, no double-bookings for the same slot
 ✅ Escalate business risk loudly; trust the technical approach after asking about it once
 ✅ Test the finished outcome the way a real customer would, not the process behind it
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we structure every engagement around a clear founder role — deciding outcomes, not managing tickets. 🎯
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we structure every engagement around a clear founder role - deciding outcomes, not managing tickets. 🎯
 
 His result: the second, more complex deposit-and-claims feature shipped in 8 business days against the same engineer's original 9-day estimate, with far less founder attention than the simpler first build had taken. 🚀
 

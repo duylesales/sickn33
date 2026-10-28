@@ -1,4 +1,4 @@
-🔐 Femke stond op het punt een Clerk-contract van € 400/maand te ondertekenen voor haar welzijnsplatform (gebouwd in **Lovable**), ervan uitgaande dat haar AI-gegenereerde auth te riskant was om te vertrouwen. Een audit vond dat het echte probleem niet de provider was — het was configuratie.
+🔐 Femke stond op het punt een Clerk-contract van € 400/maand te ondertekenen voor haar welzijnsplatform (gebouwd in **Lovable**), ervan uitgaande dat haar AI-gegenereerde auth te riskant was om te vertrouwen. Een audit vond dat het echte probleem niet de provider was - het was configuratie.
 
 Maatwerk auth vs. Auth0/Clerk is geen "kopen is veiliger, bouwen is goedkoper". Het is of iemand daadwerkelijk heeft geaudit wat uw AI-builder heeft gekoppeld.
 
@@ -12,7 +12,7 @@ Maatwerk auth vs. Auth0/Clerk is geen "kopen is veiliger, bouwen is goedkoper". 
 
 Bij **LaunchStudio** auditen wij precies deze bouwen-vs-kopen-beslissing al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De auth van Femke slaagde voor een vervolgbeveiligingsbeoordeling zonder bevindingen — en ze vermeed de terugkerende Clerk-kost volledig. (€ 1.300 — Launch Ready Pakket, geaudit en gehard in 6 werkdagen.) 🚀
+De auth van Femke slaagde voor een vervolgbeveiligingsbeoordeling zonder bevindingen - en ze vermeed de terugkerende Clerk-kost volledig. (€ 1.300 - Launch Ready Pakket, geaudit en gehard in 6 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/custom-auth-vs-auth0-clerk-decision
 

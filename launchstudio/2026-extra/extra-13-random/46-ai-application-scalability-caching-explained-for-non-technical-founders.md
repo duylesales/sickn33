@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Imagine a café where every time someone orders a coffee, the barista drives to the roastery to fetch the beans. It works. It is also slow, expensive and falls apart on a busy morning. Keeping beans behind the counter is caching. For AI-built apps, caching is often the difference between an app that slows down and runs up bills as it grows and one that stays fast and cheap — which makes it one of the most practical AI application scalability topics for any founder to understand, even without writing code.
+Imagine a café where every time someone orders a coffee, the barista drives to the roastery to fetch the beans. It works. It is also slow, expensive and falls apart on a busy morning. Keeping beans behind the counter is caching. For AI-built apps, caching is often the difference between an app that slows down and runs up bills as it grows and one that stays fast and cheap - which makes it one of the most practical AI application scalability topics for any founder to understand, even without writing code.
 
 ## What Caching Actually Is
 
@@ -39,18 +39,18 @@ There are several places a copy can be kept, each suited to different things:
 
 **On your server.** Results of slow database queries or external API calls can be kept in memory or in a fast store (such as Redis) for a period of time. Useful for data many users request.
 
-**In your database.** Pre-computed results — daily totals, rankings, summaries — can be stored rather than recalculated on every request.
+**In your database.** Pre-computed results - daily totals, rankings, summaries - can be stored rather than recalculated on every request.
 
 ## Why AI Application Scalability Suffers Without Caching
 
-AI tools generate code that fetches data every time it is needed, because that is simplest and always correct in a demo. With one user, nobody notices. With a thousand users each triggering the same API call, you notice — in load times, in rate-limit errors and on invoices from API providers.
+AI tools generate code that fetches data every time it is needed, because that is simplest and always correct in a demo. With one user, nobody notices. With a thousand users each triggering the same API call, you notice - in load times, in rate-limit errors and on invoices from API providers.
 
 ## What Is Worth Caching
 
 - **Public pages** that are the same for every visitor: landing pages, blog posts, listings.
 - **External data that changes slowly:** exchange rates, weather forecasts updated hourly, tide tables, product catalogues from a supplier.
 - **Expensive calculations** shown to many people: leaderboards, statistics, "popular this week."
-- **AI responses to identical inputs,** where appropriate — for example, a summary of a public document requested by many users.
+- **AI responses to identical inputs,** where appropriate - for example, a summary of a public document requested by many users.
 - **Static files:** images, scripts, fonts.
 
 ## What Must Never Be Cached Carelessly
@@ -62,7 +62,7 @@ This is where caching becomes dangerous, and why it should be done deliberately:
 - **Permissions.** Cached access rights can keep a removed team member inside the app.
 - **Anything that must be exactly current:** stock levels at checkout, seat availability, account balances.
 
-Several real-world data leaks have been caused by exactly this — a misconfigured cache serving one user's page to another.
+Several real-world data leaks have been caused by exactly this - a misconfigured cache serving one user's page to another.
 
 ## Signs Your App Needs Caching
 
@@ -97,9 +97,9 @@ When unsure, start short. A cache that expires quickly still removes most repeat
 The famous saying that cache invalidation is one of the hard problems in computing applies to apps too. Practical techniques:
 
 - **Time-based expiry** for data where brief staleness is acceptable.
-- **Event-based purging** when data changes — for example, purging a product page from the CDN when the product is edited.
-- **Versioned keys** — include a version or updated timestamp in the cache key, so a change naturally produces a new entry.
-- **Stale-while-revalidate** — serve the cached copy while fetching a fresh one in the background, so users never wait for a refresh.
+- **Event-based purging** when data changes - for example, purging a product page from the CDN when the product is edited.
+- **Versioned keys** - include a version or updated timestamp in the cache key, so a change naturally produces a new entry.
+- **Stale-while-revalidate** - serve the cached copy while fetching a fresh one in the background, so users never wait for a refresh.
 
 Most small apps need only the first two. The important thing is to decide deliberately rather than inherit whatever the framework defaults to.
 
@@ -109,7 +109,7 @@ Browsers and CDNs follow instructions sent by your server in the `Cache-Control`
 
 ## Caching Expensive API Calls on the Server
 
-For external APIs — weather, maps, AI models — a server-side cache with a key built from the request parameters prevents repeated paid calls. A simple implementation uses a key-value store with an expiry: before calling the API, check the cache; if present and fresh, return it; otherwise call the API, store the result and return it. Add a lock or "single flight" mechanism for popular keys, so that when the cache expires, one request refreshes it rather than hundreds calling the API at once.
+For external APIs - weather, maps, AI models - a server-side cache with a key built from the request parameters prevents repeated paid calls. A simple implementation uses a key-value store with an expiry: before calling the API, check the cache; if present and fresh, return it; otherwise call the API, store the result and return it. Add a lock or "single flight" mechanism for popular keys, so that when the cache expires, one request refreshes it rather than hundreds calling the API at once.
 
 ## Measuring the Effect
 
@@ -121,15 +121,15 @@ Because caching mistakes can leak data, include caching in security reviews: che
 
 ## When Caching Is Not the Answer
 
-Caching hides slowness; it does not remove it. If a page is slow because of a missing index or an inefficient query, fix that first — otherwise the first user after every cache expiry still waits, and the database still struggles under load. Use caching for work that is genuinely expensive and repeated, not as a bandage for problems that have direct fixes.
+Caching hides slowness; it does not remove it. If a page is slow because of a missing index or an inefficient query, fix that first - otherwise the first user after every cache expiry still waits, and the database still struggles under load. Use caching for work that is genuinely expensive and repeated, not as a bandage for problems that have direct fixes.
 
 ## Client-Side Caching in the App Itself
 
-Modern frontends — including those generated by Lovable, Bolt and v0 — often use data-fetching libraries such as TanStack Query or SWR that cache responses in the browser. Configured well, they prevent the same data being fetched repeatedly as users move between screens. Configured poorly, they either refetch constantly (costly) or show stale data after the user changes something (confusing). Check that queries have sensible stale times, that mutations invalidate the relevant queries and that sensitive data is cleared on logout.
+Modern frontends - including those generated by Lovable, Bolt and v0 - often use data-fetching libraries such as TanStack Query or SWR that cache responses in the browser. Configured well, they prevent the same data being fetched repeatedly as users move between screens. Configured poorly, they either refetch constantly (costly) or show stale data after the user changes something (confusing). Check that queries have sensible stale times, that mutations invalidate the relevant queries and that sensitive data is cleared on logout.
 
 ## Offline and Mobile Considerations
 
-For apps used on the move — like the tide app in the example below — caching also supports weak connections. A service worker can keep static assets and recently viewed public data available offline, with a clear indication that the data may be out of date. For time-sensitive information, show the timestamp of the last update so users can judge freshness themselves. This turns a limitation (no connection at the harbour) into a reasonable experience.
+For apps used on the move - like the tide app in the example below - caching also supports weak connections. A service worker can keep static assets and recently viewed public data available offline, with a clear indication that the data may be out of date. For time-sensitive information, show the timestamp of the last update so users can judge freshness themselves. This turns a limitation (no connection at the harbour) into a reasonable experience.
 
 ## A Caching Plan in Four Steps
 
@@ -137,7 +137,7 @@ If your app has no deliberate caching today, a sensible plan is: first, add corr
 
 ## For Non-Technical Founders: Questions to Ask
 
-If an engineer proposes caching, ask: which data will be cached, for how long, and how is personal data kept out of shared caches? How will changes appear to users — immediately or after a delay? And how will we know it is working? Clear answers to these three questions mean the caching is designed, not improvised.
+If an engineer proposes caching, ask: which data will be cached, for how long, and how is personal data kept out of shared caches? How will changes appear to users - immediately or after a delay? And how will we know it is working? Clear answers to these three questions mean the caching is designed, not improvised.
 
 ## The Team Behind LaunchStudio's Performance Work
 
@@ -151,16 +151,16 @@ Curious whether caching would help your app? [Calculate what your project would 
 
 Noah Bos, a sailing instructor in Den Helder, built Getijdenwijzer in Bolt: an app for sailors and fishermen that shows tides, wind and current forecasts for harbours along the Wadden Sea and North Sea coast, with alerts for favourable conditions. A mention in a sailing magazine brought 6,000 users in a spring month.
 
-The same month, Noah's weather API bill arrived at over €900. Every time any user opened a harbour page, the app called the weather API and the tide service directly — so a popular harbour viewed 20,000 times a day triggered 20,000 identical API calls for data that changed hourly. On sunny weekends the tide service's rate limit was reached and pages showed errors. And, as a side effect of an attempt to speed things up, a user's personal "my alerts" page had been set to cache at the CDN, briefly showing some users another sailor's saved harbours and phone number for SMS alerts.
+The same month, Noah's weather API bill arrived at over €900. Every time any user opened a harbour page, the app called the weather API and the tide service directly - so a popular harbour viewed 20,000 times a day triggered 20,000 identical API calls for data that changed hourly. On sunny weekends the tide service's rate limit was reached and pages showed errors. And, as a side effect of an attempt to speed things up, a user's personal "my alerts" page had been set to cache at the CDN, briefly showing some users another sailor's saved harbours and phone number for SMS alerts.
 
 LaunchStudio's engineers fixed the personal-page caching first, marking all per-user responses as private and purging the CDN. They then cached harbour forecasts on the server with an expiry matched to each source's update interval, pre-computed alert conditions in a scheduled job instead of on every page view, set CDN caching for public harbour pages with short lifetimes, and added monitoring on API usage and cost.
 
 **Result:** Weather and tide API calls fell by about 97%, and the monthly bill dropped to around €40 while users kept growing. Rate-limit errors disappeared, and harbour pages load in well under a second even on the first sunny Saturday of the season.
 
 > *"I was paying for the same forecast twenty thousand times a day. Caching felt like a technical detail until I saw it on an invoice."*
-> — **Noah Bos, Founder, Getijdenwijzer (Den Helder)**
+> - **Noah Bos, Founder, Getijdenwijzer (Den Helder)**
 
-**Cost & Timeline:** €1,650 (Launch Ready package: caching strategy, scheduled jobs, CDN configuration and cost monitoring) — completed in 6 business days.
+**Cost & Timeline:** €1,650 (Launch Ready package: caching strategy, scheduled jobs, CDN configuration and cost monitoring) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -178,7 +178,7 @@ Often dramatically. When many users request the same data, caching turns thousan
 
 ### How does Manifera decide what to cache?
 
-By classifying data by how often it changes, who it belongs to and how costly it is to fetch — a method refined on enterprise systems and applied through LaunchStudio at founder scale.
+By classifying data by how often it changes, who it belongs to and how costly it is to fetch - a method refined on enterprise systems and applied through LaunchStudio at founder scale.
 
 ### Does caching improve search rankings?
 

@@ -78,7 +78,7 @@ Ask which of these drove the decision. The second produces a much more sensible 
 ## Questions to Ask Before Accepting
 
 - **Was the current data person involved in creating this role and in interviewing?**
-- **What is the intended relationship — peer, senior, junior?** And do both of you understand it the same way?
+- **What is the intended relationship - peer, senior, junior?** And do both of you understand it the same way?
 - **Why now?** Backlog, key person risk, a new mandate or a departure you have not been told about.
 - **Is the first hire happy, and how long have they been there?** Ask them, not only the manager.
 - **How is work currently divided, and how would that change?**
@@ -88,7 +88,7 @@ Ask which of these drove the decision. The second produces a much more sensible 
 
 ## Meet Them Properly Before You Decide
 
-If the process has not included a real conversation with the person you would work alongside — not a panel, a conversation — ask for one. It is the most informative half hour available to you.
+If the process has not included a real conversation with the person you would work alongside - not a panel, a conversation - ask for one. It is the most informative half hour available to you.
 
 Listen for whether they describe the role as something they asked for, whether they talk about what they want to hand over, and whether they seem relieved or guarded. A first hire who has been asking for a colleague for a year will tell you so immediately, and that is the strongest possible signal.
 
@@ -107,7 +107,7 @@ The second hire arrives into conditions the first one did not have, and it is wo
 
 The value of the function is proven, so you do not spend a year justifying your existence. Tooling and access exist. Stakeholders understand roughly what to ask for. There is someone who knows why the data looks the way it does. And there is finally a second pair of eyes, which means your work can be reviewed for the first time in that organisation's history.
 
-That combination — a proven function with room to professionalise it — is a genuinely strong position, and it is why many people find this the most satisfying role of their career so far.
+That combination - a proven function with room to professionalise it - is a genuinely strong position, and it is why many people find this the most satisfying role of their career so far.
 
 ## When to Accept
 
@@ -133,11 +133,11 @@ Adopt their conventions first, then propose changes. Nothing damages this relati
 
 Divide ownership explicitly and early: which systems are yours, which are theirs, what requires agreement. Write it down, however informal it feels.
 
-Take the unloved work. Every one-person function has something the incumbent dislikes — a reporting pipeline, a governance task, a difficult stakeholder. Taking it deliberately buys enormous goodwill.
+Take the unloved work. Every one-person function has something the incumbent dislikes - a reporting pipeline, a governance task, a difficult stakeholder. Taking it deliberately buys enormous goodwill.
 
 Start reviewing each other's work immediately, in both directions. Framing it as mutual removes any suggestion that you are checking them.
 
-Document as you learn. You have a temporary advantage — you can see what is undocumented, because you are the one who cannot find it — and that advantage disappears within a few months.
+Document as you learn. You have a temporary advantage - you can see what is undocumented, because you are the one who cannot find it - and that advantage disappears within a few months.
 
 And settle standards together rather than by decree, even if you are the senior one. A function of two that agrees on conventions becomes a team; one that does not becomes two people sharing a backlog.
 
@@ -153,7 +153,7 @@ If it happens, the situation changes from "second hire" to "only data person", w
 
 **Ask for the replacement hire to be started at once,** and ask to be involved in defining and interviewing for it. Recruitment takes months, and starting in month three rather than month six is the difference between a difficult year and a very bad one.
 
-It is also worth asking yourself honestly whether the role you accepted still exists. If you joined specifically to have a colleague and to be reviewed, and that reason has gone, that is legitimate information — and a conversation to have with your manager while you still have goodwill, rather than a reason to quietly start looking.
+It is also worth asking yourself honestly whether the role you accepted still exists. If you joined specifically to have a colleague and to be reviewed, and that reason has gone, that is legitimate information - and a conversation to have with your manager while you still have goodwill, rather than a reason to quietly start looking.
 
 ## Real example
 
@@ -172,7 +172,7 @@ Eighteen months later the team is four people and he leads it. Her summary is th
 ## Key Takeaways
 
 - The second hire arrives into a function built by one person, where every convention is a personal choice and every improvement implies a judgement on their work.
-- Establish the intended relationship — peer, senior or junior — and confirm that both of you understand it the same way.
+- Establish the intended relationship - peer, senior or junior - and confirm that both of you understand it the same way.
 - Ask why now: reducing key person risk produces a far more sensible first six months than an expectation of doubled output.
 - Insist on a real conversation with the current data person before deciding; whether they asked for a colleague is the strongest signal available.
 - Start by adopting their conventions, dividing ownership in writing, taking the unloved work and reviewing each other's work in both directions.
@@ -205,9 +205,9 @@ The incumbent is overloaded, disengaged or leaving without it being said; manage
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is being the second data hire a good position?", "acceptedAnswer": {"@type": "Answer", "text": "Often one of the best — proven value, existing tooling and finally someone to review your work."}},
+    {"@type": "Question", "name": "Is being the second data hire a good position?", "acceptedAnswer": {"@type": "Answer", "text": "Often one of the best - proven value, existing tooling and finally someone to review your work."}},
     {"@type": "Question", "name": "What is the most important thing to check?", "acceptedAnswer": {"@type": "Answer", "text": "Whether the current data person wanted a colleague and helped choose you."}},
-    {"@type": "Question", "name": "Should I ask to speak with them directly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a real conversation reveals more than the rest of the process."}},
+    {"@type": "Question", "name": "Should I ask to speak with them directly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - a real conversation reveals more than the rest of the process."}},
     {"@type": "Question", "name": "How do I avoid friction over conventions?", "acceptedAnswer": {"@type": "Answer", "text": "Adopt theirs first, divide ownership in writing and set standards together."}},
     {"@type": "Question", "name": "What are the warning signs?", "acceptedAnswer": {"@type": "Answer", "text": "An overloaded or departing incumbent, critical management talk, or expectations of doubled output."}}
   ]

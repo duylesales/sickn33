@@ -1,4 +1,4 @@
-🔥 Sophia bouwde een prototype met **Bolt** — sophia, a co-working space manager, used **bolt** to build a workspace booking portal, maar ontdekte kritieke architectuur-, beveiligings- en deployment-knelpunten vóór de lancering. 🧠
+🔥 Sophia bouwde een prototype met **Bolt** - sophia, a co-working space manager, used **bolt** to build a workspace booking portal, maar ontdekte kritieke architectuur-, beveiligings- en deployment-knelpunten vóór de lancering. 🧠
 
 Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoer-sanering, database Row Level Securit
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Sophia's applicatie behaalde productie-gereedheid: Sophia's booking portal launched successfully, handling 1,200 secure workspace bookings in its first week without a single data leak or crash. (€1,900 (Launch Package) — production-ready and deployed in 6 business days.). 🚀
+Sophia's applicatie behaalde productie-gereedheid: Sophia's booking portal launched successfully, handling 1,200 secure workspace bookings in its first week without a single data leak or crash. (€1,900 (Launch Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/ai-app-looks-great-not-ready
 

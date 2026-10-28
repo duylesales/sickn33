@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Somewhere in the conversation about the contract, a sentence appears that changes the shape of the offer: the position runs for the duration of the programme, or is funded by the project, or exists because of one large customer. The work may be excellent — applied research, a consortium with interesting partners, a well-resourced innovation programme, a long engagement with a serious client. What has changed is that your employment is now tied to a specific pot of money with a specific end date, and understanding what happens when that money runs out is the whole decision.
+Somewhere in the conversation about the contract, a sentence appears that changes the shape of the offer: the position runs for the duration of the programme, or is funded by the project, or exists because of one large customer. The work may be excellent - applied research, a consortium with interesting partners, a well-resourced innovation programme, a long engagement with a serious client. What has changed is that your employment is now tied to a specific pot of money with a specific end date, and understanding what happens when that money runs out is the whole decision.
 
 ## The Three Funding Shapes
 
@@ -49,7 +49,7 @@ All three feel identical on day one. They differ in what happens in month thirty
 
 ## Why This Is So Common in Dutch AI Work
 
-The Netherlands funds a large amount of applied research and innovation through programmes rather than through permanent budgets, and much of the interesting cross-organisational work — health data, energy systems, mobility, agriculture, public services — exists as consortium projects with a defined lifetime.
+The Netherlands funds a large amount of applied research and innovation through programmes rather than through permanent budgets, and much of the interesting cross-organisational work - health data, energy systems, mobility, agriculture, public services - exists as consortium projects with a defined lifetime.
 
 That is not a warning; it is a description of where a good deal of the work is. Some of the most technically interesting AI roles in the country are funded this way, and treating grant-funded work as second-class would rule out much of the applied research landscape. The point is to enter with clear eyes.
 
@@ -73,7 +73,7 @@ Three outcomes, and employers know which is likely long before candidates do.
 
 **Absorption.** The capability proved valuable, a permanent budget was found, and you continue. The most common good outcome and the one to ask about directly.
 
-**Extension.** A follow-on project, a second phase, a renewed grant. Normal in research environments, and dependent on a proposal being successful — which means your continuity depends on someone else's bid.
+**Extension.** A follow-on project, a second phase, a renewed grant. Normal in research environments, and dependent on a proposal being successful - which means your continuity depends on someone else's bid.
 
 **Ending.** The project delivered, the client left, or the budget was not renewed. You have a transition period, a payment in some circumstances, and a search.
 
@@ -91,7 +91,7 @@ Three outcomes, and employers know which is likely long before candidates do.
 
 Grant and consortium work has a particular texture that suits some people very well.
 
-There are deliverables and reporting obligations, which means real deadlines attached to documents as well as to systems. There are partners — universities, companies, public bodies — with different incentives, and coordination takes a meaningful share of the week. Publication is often expected or encouraged. The pace is steadier than commercial work and the horizon is longer, which is a relief to some and frustrating to others.
+There are deliverables and reporting obligations, which means real deadlines attached to documents as well as to systems. There are partners - universities, companies, public bodies - with different incentives, and coordination takes a meaningful share of the week. Publication is often expected or encouraged. The pace is steadier than commercial work and the horizon is longer, which is a relief to some and frustrating to others.
 
 Client-funded work is the opposite in texture: fast, responsive, and shaped by a single customer's priorities, with the associated risk that their reorganisation becomes your problem.
 
@@ -131,7 +131,7 @@ The remedy is to ensure at least one thing you build is used by someone after th
 
 ## How to Position Yourself From Day One
 
-Treat the end date as a planning fact rather than an anxiety. Write it in your calendar, and set a point — six to nine months before — when you start looking, regardless of how the absorption conversation is going.
+Treat the end date as a planning fact rather than an anxiety. Write it in your calendar, and set a point - six to nine months before - when you start looking, regardless of how the absorption conversation is going.
 
 Build relationships in the permanent organisation, not only in the project. People get absorbed because a department wants them, and departments want people they know.
 
@@ -175,20 +175,20 @@ She is offered a permanent role by one of the industrial partners two months bef
 
 - Programme, client and internal project funding all produce fixed-term arrangements whose real question is what happens when the money ends.
 - Check the contract term against the funding period, your position in the sequence of fixed-term contracts, end-of-contract entitlements and the effect on borrowing capacity.
-- Ask what happened to people in the last comparable project — the most predictive question available.
+- Ask what happened to people in the last comparable project - the most predictive question available.
 - The career value is domain depth, a strong network, novel problems and applied research credentials; the risk is a CV of prototypes with nothing in production.
 - Set your own search date six to nine months before the funding ends, build relationships in the permanent organisation and make sure something you build outlives the project.
 
 ## Where to Start
 
-Before accepting a project-funded role, look at what permanent positions exist near you for the same skills — the comparison tells you how much insecurity the work is actually worth.
+Before accepting a project-funded role, look at what permanent positions exist near you for the same skills - the comparison tells you how much insecurity the work is actually worth.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate offered a project role) Is a grant-funded AI job worth taking?
-Often yes — much of the interesting applied research in the Netherlands is funded this way. Judge it on how much funding remains, whether people have been absorbed before and whether your work can outlive the project.
+Often yes - much of the interesting applied research in the Netherlands is funded this way. Judge it on how much funding remains, whether people have been absorbed before and whether your work can outlive the project.
 
 ### (Scenario: candidate checking the contract) What should I check in the contract?
 The term against the funding period, your position in the sequence of fixed-term contracts, what happens if funding is withdrawn early and what end-of-contract entitlements apply.
@@ -207,7 +207,7 @@ Your continuity depends on one customer's contract and priorities. Ask about con
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a grant-funded AI job worth taking?", "acceptedAnswer": {"@type": "Answer", "text": "Often — judge it on remaining funding, the absorption record and whether your work outlives the project."}},
+    {"@type": "Question", "name": "Is a grant-funded AI job worth taking?", "acceptedAnswer": {"@type": "Answer", "text": "Often - judge it on remaining funding, the absorption record and whether your work outlives the project."}},
     {"@type": "Question", "name": "What should I check in the contract?", "acceptedAnswer": {"@type": "Answer", "text": "Term versus funding period, position in the fixed-term sequence, early-termination clauses and entitlements."}},
     {"@type": "Question", "name": "How do I improve my chances of being kept?", "acceptedAnswer": {"@type": "Answer", "text": "Build relationships in the permanent organisation and deliver something it actually uses."}},
     {"@type": "Question", "name": "What is the long-term risk?", "acceptedAnswer": {"@type": "Answer", "text": "Consecutive project roles ending at pilot stage, leaving a CV with nothing in production."}},

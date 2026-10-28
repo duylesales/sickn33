@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 
 Most engineers treat Utrecht as a fallback: the place you look if Amsterdam is too expensive and Eindhoven is too far. That framing costs people money and hours, because it inverts what is actually true about the city.
 
-Utrecht is the point in the Netherlands from which the largest number of other places is reachable in under an hour. For a two-career household — the situation most mid-career engineers are actually optimising for — that is not a fallback. It is the solution.
+Utrecht is the point in the Netherlands from which the largest number of other places is reachable in under an hour. For a two-career household - the situation most mid-career engineers are actually optimising for - that is not a fallback. It is the solution.
 
 ## The Constraint Nobody Writes Down
 
@@ -57,7 +57,7 @@ Utrecht's AI demand is weighted toward institutions rather than consumer platfor
 
 **Software and consultancy.** Firms delivering AI capability into all three of the above.
 
-The common thread is that Utrecht AI work tends to be **accountable** AI work. If you want to build models nobody will ever audit, this is the wrong city. If you want to build models that survive an audit — a skill that is becoming scarce and well paid — it is an unusually good one.
+The common thread is that Utrecht AI work tends to be **accountable** AI work. If you want to build models nobody will ever audit, this is the wrong city. If you want to build models that survive an audit - a skill that is becoming scarce and well paid - it is an unusually good one.
 
 ## Comparative Analysis: Optimising for the Wrong Variable
 
@@ -73,7 +73,7 @@ The common thread is that Utrecht AI work tends to be **accountable** AI work. I
 
 There is a specific reason Utrecht deserves a second look in 2026: the shift in what employers in regulated sectors need.
 
-For a decade, the scarce skill was building models. It is becoming something else — being able to explain, document, monitor and defend a model to someone with statutory authority to switch it off. Health, finance, insurance and public administration all now need engineers who can do both halves.
+For a decade, the scarce skill was building models. It is becoming something else - being able to explain, document, monitor and defend a model to someone with statutory authority to switch it off. Health, finance, insurance and public administration all now need engineers who can do both halves.
 
 Very few engineers have deliberately built that combination. Almost all of them are in cities where regulated employers cluster. That is an arbitrage, and it has a shelf life: in three years this will be a standard expectation rather than a differentiator, and the premium will be gone.
 
@@ -114,15 +114,15 @@ Utrecht's employer mix explains why its AI work skews towards accountability.
 
 When Utrecht employers ask for "responsible AI" experience, they usually mean a combination of three frameworks.
 
-**The EU AI Act.** In force since August 2024 and applying in phases, with obligations for high-risk systems — many healthcare, insurance, public-sector and employment-related uses fall within scope — following later in the rollout. For engineers, this means risk classification, technical documentation, logging and human-oversight design becoming part of the job.
+**The EU AI Act.** In force since August 2024 and applying in phases, with obligations for high-risk systems - many healthcare, insurance, public-sector and employment-related uses fall within scope - following later in the rollout. For engineers, this means risk classification, technical documentation, logging and human-oversight design becoming part of the job.
 
 **The GDPR (in Dutch: AVG).** Health data counts as a special category of personal data, which makes data minimisation, pseudonymisation and legal-basis questions central to any clinical ML project at UMC Utrecht or a health-tech company on the Science Park.
 
-**Dutch public-sector requirements.** Government organisations increasingly publish their algorithms in the national *Algoritmeregister* and use assessments such as the IAMA before deploying them. An engineer who has contributed to one of these processes can describe that experience concretely — and that concreteness is what separates candidates in this market.
+**Dutch public-sector requirements.** Government organisations increasingly publish their algorithms in the national *Algoritmeregister* and use assessments such as the IAMA before deploying them. An engineer who has contributed to one of these processes can describe that experience concretely - and that concreteness is what separates candidates in this market.
 
 ## Hybrid Work in Utrecht's Institutions
 
-Large Utrecht institutions — hospitals, banks, insurers and public agencies — typically offer hybrid arrangements rather than fully remote roles, partly because access to sensitive data is restricted to managed environments. For a two-career household, that makes the reachability argument even stronger: two or three office days in Utrecht, combined with home working, is far more sustainable from a central location than from the edge of the Randstad.
+Large Utrecht institutions - hospitals, banks, insurers and public agencies - typically offer hybrid arrangements rather than fully remote roles, partly because access to sensitive data is restricted to managed environments. For a two-career household, that makes the reachability argument even stronger: two or three office days in Utrecht, combined with home working, is far more sustainable from a central location than from the edge of the Randstad.
 
 ## Job Titles to Search in Utrecht's Institutions
 
@@ -144,7 +144,7 @@ Utrecht's accountable AI work hides behind institutional titles. Searching for t
 
 Three design decisions make OnlyAIJobs suited to how Utrecht-based engineers actually decide.
 
-**Every vacancy carries its exact address.** Not "Utrecht" but the building — which is the difference between a ten-minute cycle from Overvecht and a bus ride to a business park on the ring road.
+**Every vacancy carries its exact address.** Not "Utrecht" but the building - which is the difference between a ten-minute cycle from Overvecht and a bus ride to a business park on the ring road.
 
 **Distance is computed from where you live**, so roles in Nieuwegein, Houten, Zeist, Amersfoort and Woerden appear in the same view as Utrecht itself rather than requiring five separate searches.
 
@@ -160,17 +160,17 @@ Three design decisions make OnlyAIJobs suited to how Utrecht-based engineers act
 
 ## Where to Start
 
-Draw your radius first. Then compare offers on total hours, not gross salary — and if you share a household with someone whose job is also fixed to a location, compare the pair rather than the position.
+Draw your radius first. Then compare offers on total hours, not gross salary - and if you share a household with someone whose job is also fixed to a location, compare the pair rather than the position.
 
 Browse current AI and data roles in and around Utrecht at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: Engineer in a two-career household) Why is Utrecht better for couples than Amsterdam or Eindhoven?
-Because Utrecht maximises reachability rather than local density. It is the point from which the greatest number of Dutch cities is within roughly an hour, which means two people with jobs in different places can both have a tolerable commute from one home. Job boards model one person and one address, so this advantage never appears in a search result — it has to be reasoned about deliberately.
+Because Utrecht maximises reachability rather than local density. It is the point from which the greatest number of Dutch cities is within roughly an hour, which means two people with jobs in different places can both have a tolerable commute from one home. Job boards model one person and one address, so this advantage never appears in a search result - it has to be reasoned about deliberately.
 
 ### (Scenario: ML engineer considering regulated industries) Is AI work in health, finance and public sector less technically interesting?
-It is differently interesting. The modelling is often more constrained, but the surrounding engineering — data lineage, validation, monitoring, reproducibility, explainability — is harder and more consequential than in most consumer settings. Engineers who dislike having their work audited find it frustrating; engineers who want their work to still be running in five years usually find it more satisfying.
+It is differently interesting. The modelling is often more constrained, but the surrounding engineering - data lineage, validation, monitoring, reproducibility, explainability - is harder and more consequential than in most consumer settings. Engineers who dislike having their work audited find it frustrating; engineers who want their work to still be running in five years usually find it more satisfying.
 
 ### (Scenario: Candidate comparing a Utrecht and an Amsterdam offer) How should I compare two offers in different cities?
 Convert both to the same units. Take gross salary, subtract realistic housing cost for the location, subtract the annual cost of the commute, then subtract the hours the commute consumes valued at what an hour of your life is worth to you. A ninety-minute daily difference is roughly five hundred hours a year, which reframes most salary gaps.

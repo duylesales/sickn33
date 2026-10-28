@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Een oprichter vroeg ons waarom het aanmaken van een project in zijn app twee e-mails verstuurde. Het kostte een middag om te beantwoorden, en het antwoord was dat zijn applicatie er één verstuurde en een databasetrigger de andere — vier maanden eerder geschreven door een AI-sessie, naar aanleiding van een verzoek dat hij vergeten was.
+Een oprichter vroeg ons waarom het aanmaken van een project in zijn app twee e-mails verstuurde. Het kostte een middag om te beantwoorden, en het antwoord was dat zijn applicatie er één verstuurde en een databasetrigger de andere - vier maanden eerder geschreven door een AI-sessie, naar aanleiding van een verzoek dat hij vergeten was.
 
 Dat is de typische fout van databaselogica in door AI gebouwde producten. Niet dat triggers verkeerd zijn, maar dat ze onzichtbaar zijn. Niets in de applicatiecode noemt ze. Ze verschijnen niet als u naar de functie zoekt. Ze draaien toch, bij elke insert, voor altijd, en het eerste teken van hun bestaan is gedrag dat niemand kan verklaren.
 
@@ -32,13 +32,13 @@ Maak een lijst van wat er bestaat voordat u iets beslist. Het Supabase-dashboard
 
 Lees elk exemplaar en schrijf er een zin naast: wat het doet, wat het activeert, en of iets er nog van afhangt. Dat kost een uur en is de hele diagnose.
 
-Verwacht drie categorieën te vinden. Een paar die dragend en correct zijn — bijhouden van tijdstempels, een teller, de standaardtrigger die bij aanmelding een profiel aanmaakt. Meerdere die iets dupliceren wat uw applicatie ook doet, en daar komen de dubbele e-mails vandaan. En één of twee die niets betekenisvols meer doen omdat de functie die ze nodig had is verwijderd, waardoor een trigger vuurt op een tabel die niemand leest.
+Verwacht drie categorieën te vinden. Een paar die dragend en correct zijn - bijhouden van tijdstempels, een teller, de standaardtrigger die bij aanmelding een profiel aanmaakt. Meerdere die iets dupliceren wat uw applicatie ook doet, en daar komen de dubbele e-mails vandaan. En één of twee die niets betekenisvols meer doen omdat de functie die ze nodig had is verwijderd, waardoor een trigger vuurt op een tabel die niemand leest.
 
 ## Wat in de Database Hoort
 
 Drie soorten logica staan echt beter in Postgres, en ze daarheen verplaatsen maakt een klein product betrouwbaarder in plaats van ingewikkelder.
 
-**Regels die moeten gelden, ongeacht wat de data schreef.** Een constraint dat een bedrag niet negatief mag zijn, dat een boeking niet kan eindigen vóór ze begint, dat een e-mailadres uniek is binnen een organisatie. Dat is geen bedrijfslogica in de interessante zin — het zijn uitspraken over wat een geldige rij is, en ze in de database afdwingen betekent dat ze gelden wanneer data binnenkomt via een importscript, een beheeractie, of een AI-sessie die vergat dat de regel bestond.
+**Regels die moeten gelden, ongeacht wat de data schreef.** Een constraint dat een bedrag niet negatief mag zijn, dat een boeking niet kan eindigen vóór ze begint, dat een e-mailadres uniek is binnen een organisatie. Dat is geen bedrijfslogica in de interessante zin - het zijn uitspraken over wat een geldige rij is, en ze in de database afdwingen betekent dat ze gelden wanneer data binnenkomt via een importscript, een beheeractie, of een AI-sessie die vergat dat de regel bestond.
 
 **Afgeleide waarden die nooit mogen afdrijven.** Een tijdstempel van de laatste wijziging, een zoekvector, een gedenormaliseerde teller die duur zou zijn om te berekenen. Een trigger die deze bijhoudt, is echt beter dan applicatiecode, omdat hij niet te omzeilen is.
 
@@ -62,7 +62,7 @@ Het is ook hoe row-level security per ongeluk wordt omzeild. Een hulpfunctie die
 
 Drie gewoontes beperken het risico. Gebruik het alleen wanneer er een specifieke reden is, en schrijf die reden in een opmerking. Controleer binnen zo'n functie expliciet de identiteit van de aanroeper in plaats van aan te nemen dat die al geautoriseerd was. En stel op elke security definer-functie expliciet het zoekpad (search path) in, want zonder dat kan de functie worden overgehaald iets anders aan te roepen dan de auteur bedoelde.
 
-Heeft uw project security definer-functies die niemand kan uitleggen, dan is dat het eerste wat u moet bekijken — nog vóór de policies zelf.
+Heeft uw project security definer-functies die niemand kan uitleggen, dan is dat het eerste wat u moet bekijken - nog vóór de policies zelf.
 
 ## Triggers en het Probleem van Dubbel Schrijven
 
@@ -70,13 +70,13 @@ De meest voorkomende concrete fout is eenvoudig: zowel de trigger als de applica
 
 Het gebeurt omdat de trigger in de ene sessie werd toegevoegd en de applicatiecode in een andere, en geen van beide van de ander wist. De symptomen zijn dubbele rijen, verdubbelde tellers, twee e-mails, of een auditlog met elke regel twee keer.
 
-Ze vinden is mechanisch. Zoek voor elke trigger in de applicatie naar code die hetzelfde werk doet. Bepaal dan welke blijft — meestal de applicatie, tenzij de regel moet gelden voor data die via andere routes binnenkomt — en verwijder de andere in plaats van beide te laten staan met een voorwaarde die ze uit elkaars vaarwater houdt. Zulke voorwaarden zijn precies hoe de situatie verwarrend werd.
+Ze vinden is mechanisch. Zoek voor elke trigger in de applicatie naar code die hetzelfde werk doet. Bepaal dan welke blijft - meestal de applicatie, tenzij de regel moet gelden voor data die via andere routes binnenkomt - en verwijder de andere in plaats van beide te laten staan met een voorwaarde die ze uit elkaars vaarwater houdt. Zulke voorwaarden zijn precies hoe de situatie verwarrend werd.
 
 ## Bewaar Ze in Migraties
 
 Functies en triggers die zijn aangemaakt door in de SQL-editor van Supabase te typen, bestaan alleen in die database. Ze staan niet in uw repository, ze zullen niet in een nieuwe omgeving staan, en een herstel vanuit een back-up bevat misschien wel of misschien niet de versie die u verwachtte.
 
-Alles hoort in migratiebestanden, ingecheckt, op dezelfde manier toegepast op staging en productie. Voor logica die nu alleen in het dashboard bestaat: exporteer de definities en commit ze als basismigratie — een uur werk dat een ongedocumenteerde database omzet in een reproduceerbare.
+Alles hoort in migratiebestanden, ingecheckt, op dezelfde manier toegepast op staging en productie. Voor logica die nu alleen in het dashboard bestaat: exporteer de definities en commit ze als basismigratie - een uur werk dat een ongedocumenteerde database omzet in een reproduceerbare.
 
 Dit maakt ook de rest van dit artikel mogelijk. U kunt niet beoordelen wat u niet kunt lezen, en een schema dat alleen in een gehost dashboard bestaat, is een schema dat niemand beoordeelt.
 
@@ -96,13 +96,13 @@ Een unieke constraint op een e-mailadres binnen een organisatie. Een check dat e
 
 De reden dat dit in een door AI gebouwd product meer telt dan elders, is dat uw applicatiecode voortdurend en onvoorspelbaar verandert. Een validatie die in maart in een component werd geschreven, kan verdwijnen in een refactor in augustus die niemand heeft gecontroleerd, en geen test merkt het, omdat de test uit dezelfde code werd gegenereerd. Een databaseconstraint overleeft elke herschrijving, elk nieuw endpoint, elk importscript en elke sessie waarin een agent besloot uw formulieren te herstructureren.
 
-Het bezwaar is dat schendingen van constraints lelijke foutmeldingen opleveren. Dat klopt en het is een presentatieprobleem: vang de specifieke schending af en toon een verstandige melding. Het alternatief — tolerante data en validatie die alleen bestaat waar iemand eraan dacht — is hoe een product rijen verzamelt waar zijn eigen code niet mee om kan gaan.
+Het bezwaar is dat schendingen van constraints lelijke foutmeldingen opleveren. Dat klopt en het is een presentatieprobleem: vang de specifieke schending af en toon een verstandige melding. Het alternatief - tolerante data en validatie die alleen bestaat waar iemand eraan dacht - is hoe een product rijen verzamelt waar zijn eigen code niet mee om kan gaan.
 
 ## Dit Inrichten
 
 Voor een bestaand Supabase-project kost dit één tot twee dagen: elke functie en trigger opgesomd en beschreven, duplicaten tussen database en applicatie in één richting opgelost, alles wat externe aanroepen doet verplaatst naar applicatiecode, constraints en triggers voor afgeleide waarden behouden en gedocumenteerd, security definer-functies beoordeeld met expliciete autorisatiecontroles en zoekpaden, dode logica verwijderd, alles vastgelegd in migraties en gecommit, en een korte notitie in de repository die uitlegt wat de database zelf doet, zodat de volgende persoon niet verrast wordt.
 
-LaunchStudio doet dit als onderdeel van het overnemen of verstevigen van een door AI gebouwde codebase, en meestal zit daar het onverklaarde gedrag. De engineers zijn van Manifera — elf jaar Postgres in productie, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit als onderdeel van het overnemen of verstevigen van een door AI gebouwde codebase, en meestal zit daar het onverklaarde gedrag. De engineers zijn van Manifera - elf jaar Postgres in productie, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons wat uw database doet dat uw code niet noemt](https://launchstudio.eu/nl/#contact).
 
@@ -114,24 +114,24 @@ Marnix Oosterveld runt Offerteroute, gebouwd met Lovable en een jaar lang uitgeb
 
 Installateurs klaagden dat klanten twee exemplaren van elke offerte ontvingen, soms minuten na elkaar en soms uren. Twee klanten hadden op beide geantwoord, wat dubbele opvolging opleverde en één discussie over een prijs die tussen de versies was veranderd.
 
-De applicatie verstuurde een offertemail wanneer een offerte als verzonden werd gemarkeerd. Dat deed ook een trigger op de offertetabel, acht maanden eerder geschreven, die vuurde bij elke update waarbij de statuskolom veranderde — inclusief de nachtelijke taak die vervaldatums bijwerkte, wat verklaart waarom sommige duplicaten om drie uur 's nachts binnenkwamen.
+De applicatie verstuurde een offertemail wanneer een offerte als verzonden werd gemarkeerd. Dat deed ook een trigger op de offertetabel, acht maanden eerder geschreven, die vuurde bij elke update waarbij de statuskolom veranderde - inclusief de nachtelijke taak die vervaldatums bijwerkte, wat verklaart waarom sommige duplicaten om drie uur 's nachts binnenkwamen.
 
 De review vond meer. In totaal elf triggers: vier die tijdstempels en tellers correct bijhielden, twee die applicatielogica dupliceerden, één die een externe webhook aanriep binnen een transactie en drie time-outs had veroorzaakt, drie die niets deden omdat hun doeltabellen waren vervangen, en één security definer-functie die offertes ophaalde zonder enige autorisatiecontrole, aan te roepen door elke geauthenticeerde gebruiker voor de data van elk bedrijf.
 
-Drie werkdagen: elke functie en trigger geïnventariseerd en beschreven; de e-mailtrigger en de webhooktrigger verwijderd, met het werk verplaatst naar de applicatie waar het opnieuw kan worden geprobeerd en gelogd; de paren met dubbele logica opgelost; drie dode triggers verwijderd; de security definer-functie herschreven met een expliciete lidmaatschapscontrole en een vast zoekpad; de triggers voor tijdstempels en tellers behouden, gedocumenteerd en gedekt door SQL-tests; en het hele schema — inclusief functies en triggers — geëxporteerd naar een basismigratie en gecommit, ter vervanging van een database die alleen in het dashboard bestond.
+Drie werkdagen: elke functie en trigger geïnventariseerd en beschreven; de e-mailtrigger en de webhooktrigger verwijderd, met het werk verplaatst naar de applicatie waar het opnieuw kan worden geprobeerd en gelogd; de paren met dubbele logica opgelost; drie dode triggers verwijderd; de security definer-functie herschreven met een expliciete lidmaatschapscontrole en een vast zoekpad; de triggers voor tijdstempels en tellers behouden, gedocumenteerd en gedekt door SQL-tests; en het hele schema - inclusief functies en triggers - geëxporteerd naar een basismigratie en gecommit, ter vervanging van een database die alleen in het dashboard bestond.
 
 **Resultaat:** de dubbele e-mails hielden op, de af en toe optredende time-outs verdwenen mee, en de blootgestelde functie werd gedicht voordat iemand haar had gebruikt. Marnix heeft nu een document van twee pagina's dat beschrijft wat zijn database uit zichzelf doet, wat volgens hem de eerste keer is sinds maand drie dat hij het gedrag van zijn eigen product begrijpt.
 
 > *"Niets in mijn code verstuurde een tweede e-mail. Het kostte een middag om te accepteren dat de database het zelf deed, omdat ik erom had gevraagd, in een chat die ik me niet herinner."*
-> — **Marnix Oosterveld, Oprichter, Offerteroute (Waalwijk)**
+> - **Marnix Oosterveld, Oprichter, Offerteroute (Waalwijk)**
 
-**Kosten & Doorlooptijd:** €2.700 (inventarisatie van het schema, review van triggers en functies, oplossen van duplicaten, externe aanroepen naar applicatiecode verplaatst, herstel van security definer, SQL-tests, basismigratie) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €2.700 (inventarisatie van het schema, review van triggers en functies, oplossen van duplicaten, externe aanroepen naar applicatiecode verplaatst, herstel van security definer, SQL-tests, basismigratie) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Zijn databasetriggers een slecht idee in Supabase?
 
-Nee — voor constraints, afgeleide waarden en atomaire handelingen over meerdere tabellen zijn ze de betere plek. Het probleem is onzichtbaarheid: logica in de database die nergens in uw code wordt genoemd.
+Nee - voor constraints, afgeleide waarden en atomaire handelingen over meerdere tabellen zijn ze de betere plek. Het probleem is onzichtbaarheid: logica in de database die nergens in uw code wordt genoemd.
 
 ### Moet een trigger een e-mail versturen of een webhook aanroepen?
 
@@ -159,7 +159,7 @@ Omdat logica die in de SQL-editor is aangemaakt in maar één database bestaat. 
       "name": "Zijn databasetriggers een slecht idee in Supabase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — constraints, afgeleide waarden en atomaire handelingen over meerdere tabellen horen daar. Het gevaar is logica die uw applicatiecode nooit noemt."
+        "text": "Nee - constraints, afgeleide waarden en atomaire handelingen over meerdere tabellen horen daar. Het gevaar is logica die uw applicatiecode nooit noemt."
       }
     },
     {
@@ -191,7 +191,7 @@ Omdat logica die in de SQL-editor is aangemaakt in maar één database bestaat. 
       "name": "Waarom moeten databasefuncties in migratiebestanden staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Logica die in de SQL-editor is aangemaakt, bestaat in die ene database — afwezig in nieuwe omgevingen, onzeker na een herstel, en onzichtbaar in uw repository."
+        "text": "Logica die in de SQL-editor is aangemaakt, bestaat in die ene database - afwezig in nieuwe omgevingen, onzeker na een herstel, en onzichtbaar in uw repository."
       }
     }
   ]

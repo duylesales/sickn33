@@ -117,19 +117,19 @@ The first map shows hotspots in dense, stone-covered neighbourhoods. But validat
 
 The combination of detailed elevation data and building registrations makes the Netherlands one of the best-documented countries in three dimensions. Researchers at TU Delft have developed the 3D BAG, an openly available dataset of three-dimensional building models for the entire country, created by combining the national building registration with elevation data. Such datasets allow analyses of solar potential on roofs, shadow effects of new buildings, noise propagation and urban heat.
 
-Digital twins — virtual representations of cities, infrastructure or water systems linked to real-time data — build on these foundations. Municipalities, provinces and infrastructure managers use them to simulate the effects of planning decisions, such as new housing developments or changes in traffic. For geospatial data scientists, digital twin projects combine 3D data processing, simulation, visualisation and sensor data integration, often in collaboration with urban planners and engineers.
+Digital twins - virtual representations of cities, infrastructure or water systems linked to real-time data - build on these foundations. Municipalities, provinces and infrastructure managers use them to simulate the effects of planning decisions, such as new housing developments or changes in traffic. For geospatial data scientists, digital twin projects combine 3D data processing, simulation, visualisation and sensor data integration, often in collaboration with urban planners and engineers.
 
 ## Subsidence and Soil: A Distinctly Dutch Geospatial Problem
 
 Large parts of the western and northern Netherlands consist of peat and clay soils that compact and oxidise when groundwater levels drop, causing land subsidence. Subsidence damages foundations, roads and infrastructure and increases flood risk and greenhouse gas emissions from peat.
 
-Monitoring subsidence is a geospatial challenge. Satellite radar interferometry (InSAR) can measure ground movements of millimetres over large areas, complementing levelling measurements and elevation models. Combining these measurements with soil maps, groundwater data and building information helps identify risks and design interventions, such as adjusted water levels. The topic connects geospatial data science to water management, agriculture, housing and climate policy — and illustrates how specialised Dutch geospatial problems can be.
+Monitoring subsidence is a geospatial challenge. Satellite radar interferometry (InSAR) can measure ground movements of millimetres over large areas, complementing levelling measurements and elevation models. Combining these measurements with soil maps, groundwater data and building information helps identify risks and design interventions, such as adjusted water levels. The topic connects geospatial data science to water management, agriculture, housing and climate policy - and illustrates how specialised Dutch geospatial problems can be.
 
 ## Nitrogen, Nature and Agriculture: Spatial Analysis at the Centre of Policy
 
 Few Dutch policy debates have been as spatial as the nitrogen issue. Protected Natura 2000 nature areas are sensitive to nitrogen deposition, and permits for activities such as farming, construction and infrastructure depend on calculated deposition effects. In the Netherlands, calculations are made with AERIUS, a modelling tool managed by RIVM, which combines emission sources, atmospheric dispersion and the locations of sensitive habitats.
 
-This creates substantial geospatial work: mapping emission sources such as farms and roads, analysing habitat locations and sensitivities, modelling scenarios for policy measures and communicating results to farmers, developers and citizens. Accuracy and transparency matter enormously, because results influence permits, livelihoods and nature protection. Geospatial data scientists working in this field need not only technical skills but also the ability to explain uncertainty in highly contested contexts — experience that is valuable across environmental and planning careers.
+This creates substantial geospatial work: mapping emission sources such as farms and roads, analysing habitat locations and sensitivities, modelling scenarios for policy measures and communicating results to farmers, developers and citizens. Accuracy and transparency matter enormously, because results influence permits, livelihoods and nature protection. Geospatial data scientists working in this field need not only technical skills but also the ability to explain uncertainty in highly contested contexts - experience that is valuable across environmental and planning careers.
 
 ## Government Versus Consultancy Roles
 
@@ -157,7 +157,7 @@ The Netherlands makes it easy to build a strong geospatial portfolio. Using PDOK
 
 - **Which data sources and platforms does the team use?**
 - **How are spatial models validated against ground truth?**
-- **Who uses the results — policymakers, engineers, the public?**
+- **Who uses the results - policymakers, engineers, the public?**
 - **What is the balance between GIS work and data science or software engineering?**
 - **How is location data involving individuals handled?**
 

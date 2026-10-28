@@ -1,7 +1,7 @@
 Your vendor signed the BAA in fifteen minutes. Did anyone actually read what's in it? 📄
 
 **The Pain Points:**
-❌ **Liability caps that don't cover you:** Many vendor BAAs cap total liability at annual fees paid — a $60K contract against a seven-figure OCR settlement is no protection at all.
+❌ **Liability caps that don't cover you:** Many vendor BAAs cap total liability at annual fees paid - a $60K contract against a seven-figure OCR settlement is no protection at all.
 ❌ **A 60-day "notification standard" that's really a ceiling:** HITECH's 60-day outer limit gets copy-pasted into BAAs as if it were the goal, not the maximum.
 ❌ **Invisible subcontractors:** Your vendor's cloud host or AI tool may be touching PHI with no flow-down BAA in place, and you'd never know from the contract alone.
 

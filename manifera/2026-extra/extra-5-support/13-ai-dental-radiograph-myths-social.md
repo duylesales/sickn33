@@ -1,4 +1,4 @@
-🚨 "AI Radiograph Analysis Can Simply Replace a Dentist's Diagnostic Read at Simi..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Radiograph Analysis Can Simply Replace a Dentist's Diagnostic Read at Simi..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Radiograph Analysis Can Simply Replace a Dentist'...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

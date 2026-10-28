@@ -31,7 +31,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Achtentwintig dagen. Niet "ongeveer een maand" — achtentwintig dagen, waarvan er pakweg negentien werkdagen zijn, en waarvan er misschien veertien overeind blijven na investeerdersgesprekken, pitchdeck-revisies en de drie verplichte afspraken die uw programmacoördinator alvast heeft ingepland. Dat is het daadwerkelijke budget waarmee u moet triageren, en de eerste fout die de meeste oprichters maken, is plannen op basis van de kalendermaand in plaats van die veertien dagen.
+Achtentwintig dagen. Niet "ongeveer een maand" - achtentwintig dagen, waarvan er pakweg negentien werkdagen zijn, en waarvan er misschien veertien overeind blijven na investeerdersgesprekken, pitchdeck-revisies en de drie verplichte afspraken die uw programmacoördinator alvast heeft ingepland. Dat is het daadwerkelijke budget waarmee u moet triageren, en de eerste fout die de meeste oprichters maken, is plannen op basis van de kalendermaand in plaats van die veertien dagen.
 
 De tweede fout is fundamenteler: Demo Day behandelen als een deadline voor *features*. Dat is het niet. Demo Day is het allereerste moment waarop uw product gelijktijdig wordt gebruikt door mensen die het niet zelf hebben gebouwd, die niet voorzichtig zijn, en die in een aantal gevallen actief nieuwsgierig zijn naar wat er gebeurt als ze op plekken klikken waar ze niet horen te zijn. Het is een deadline voor hardening verpakt in het jasje van een productdeadline, en de triage ziet er totaal anders uit zodra u het zo bekijkt.
 
@@ -39,7 +39,7 @@ De tweede fout is fundamenteler: Demo Day behandelen als een deadline voor *feat
 
 Uw eigen demonstratie op het podium is ingestudeerd en veilig. Het echte risico schuilt in de negentig seconden nadat de QR-code op het scherm verschijnt en het uur volgend op de pitch. Dat is het moment waarop tussen de veertig en driehonderd mensen gelijktijdig uw product openen via een overbelast wifi-netwerk, zich aanmelden met wegwerpadressen en functies testen in een volgorde die u zelf nog nooit heeft geprobeerd.
 
-Drie zaken bezwijken in dat tijdsbestek met een voorspelbare regelmaat. Ten eerste, **concurrency**: een prototype dat nooit meer dan vier gelijktijdige sessies heeft gekend, krijgt er ineens tweehonderd te verwerken. De connection pool van een starter-tier Postgres-database — vaak begrensd tussen de 15 en 60 directe verbindingen — raakt verzadigd, waardoor het product niet simpelweg vertraagt, maar hard crasht met serverfouten. Ten tweede, **de aanmeldstroom**: elke flow die uw gebruikers normaal gesproken pas *na* de registratie bereiken, wordt nu direct doorlopen door iemand die zojuist een nieuw account heeft aangemaakt, in een datastatus die uw handmatig aangemaakte testaccounts nooit hebben gehad. Ten derde, **de isolatiegrens**: wanneer honderden accounts binnen tien minuten worden aangemaakt, is de kans dat twee gebruikers elkaars gegevens zien niet langer theoretisch, maar statistisch onvermijdelijk.
+Drie zaken bezwijken in dat tijdsbestek met een voorspelbare regelmaat. Ten eerste, **concurrency**: een prototype dat nooit meer dan vier gelijktijdige sessies heeft gekend, krijgt er ineens tweehonderd te verwerken. De connection pool van een starter-tier Postgres-database - vaak begrensd tussen de 15 en 60 directe verbindingen - raakt verzadigd, waardoor het product niet simpelweg vertraagt, maar hard crasht met serverfouten. Ten tweede, **de aanmeldstroom**: elke flow die uw gebruikers normaal gesproken pas *na* de registratie bereiken, wordt nu direct doorlopen door iemand die zojuist een nieuw account heeft aangemaakt, in een datastatus die uw handmatig aangemaakte testaccounts nooit hebben gehad. Ten derde, **de isolatiegrens**: wanneer honderden accounts binnen tien minuten worden aangemaakt, is de kans dat twee gebruikers elkaars gegevens zien niet langer theoretisch, maar statistisch onvermijdelijk.
 
 Let op wat er níét op dit lijstje staat. Niemand op Demo Day maalt erom dat uw onboarding drie stappen telt in plaats van twee, of dat een leeg dashboard er visueel wat kaal uitziet. Het verschil tussen een demo die investeerders overtuigt en een demo die verandert in een pijnlijk incident dat u aan uw lead investor moet uitleggen, is vrijwel volledig infrastructureel van aard.
 
@@ -47,13 +47,13 @@ Let op wat er níét op dit lijstje staat. Niemand op Demo Day maalt erom dat uw
 
 Hier is het filter dat de komende vier weken behapbaar maakt. **Rangschik elk openstaand actiepunt op basis van de vraag of een onbekende, die normaal of licht afwijkend gedrag vertoont, het binnen tien minuten na de eerste aanmelding kan bereiken.**
 
-Alles wat binnen die zone valt, is werk voor week één. Alles daarbuiten — de beheerdersinterface die alleen uzelf gebruikt, het rapportagescherm achter een betaald abonnement dat niemand op Demo Day bezit, de tweede API-integratie — is uitstelbaar, ongeacht hoe luid het in uw hoofd roept om aandacht.
+Alles wat binnen die zone valt, is werk voor week één. Alles daarbuiten - de beheerdersinterface die alleen uzelf gebruikt, het rapportagescherm achter een betaald abonnement dat niemand op Demo Day bezit, de tweede API-integratie - is uitstelbaar, ongeacht hoe luid het in uw hoofd roept om aandacht.
 
 Deze regel druist vaak in tegen het gevoel van een oprichter, omdat de punten die het hardst knagen meestal de zichtbare, half afgewerkte visuele elementen zijn. De kwesties die een Demo Day echter fataal verstoren, zijn onzichtbaar en voelen voor de oprichter al als "klaar". Pas de regel mechanisch toe en het herordent uw prioriteitenlijst binnen een uur.
 
-## Week 1 — De Audit en Twee Onontkoombare Besluiten
+## Week 1 - De Audit en Twee Onontkoombare Besluiten
 
-Besteed de eerste drie dagen uitsluitend aan het inventariseren van wat u daadwerkelijk in handen heeft, zonder direct code aan te passen. Een grondige review op codeniveau van een AI-gegenereerde codebase — of deze nu uit Lovable, Bolt, Cursor of een mix daarvan stamt — brengt steevast dezelfde categorieën naar boven: autorisatie die enkel via frontend-routing wordt afgedwongen maar ontbreekt op de API, databasepolicies die ontbreken of geconfigureerd zijn als een overkoepelende `true`-conditie, beheer-sleutels die naar de browser lekken, betalingswebhooks die zonder handtekeningverificatie worden verwerkt, het ontbreken van rate limiting, en een databaseschema zonder tenant-kolom op tabellen die daar straks afhankelijk van zijn.
+Besteed de eerste drie dagen uitsluitend aan het inventariseren van wat u daadwerkelijk in handen heeft, zonder direct code aan te passen. Een grondige review op codeniveau van een AI-gegenereerde codebase - of deze nu uit Lovable, Bolt, Cursor of een mix daarvan stamt - brengt steevast dezelfde categorieën naar boven: autorisatie die enkel via frontend-routing wordt afgedwongen maar ontbreekt op de API, databasepolicies die ontbreken of geconfigureerd zijn als een overkoepelende `true`-conditie, beheer-sleutels die naar de browser lekken, betalingswebhooks die zonder handtekeningverificatie worden verwerkt, het ontbreken van rate limiting, en een databaseschema zonder tenant-kolom op tabellen die daar straks afhankelijk van zijn.
 
 De werkelijke meerwaarde van deze audit is niet de lijst met bevindingen. Het zijn de twee principiële keuzes die direct moeten worden gemaakt.
 
@@ -61,21 +61,21 @@ De werkelijke meerwaarde van deze audit is niet de lijst met bevindingen. Het zi
 
 **Besluit twee: waarop gaat u demonstreren?** Op de live productieomgeving met echte registraties, of in een afgeschermde staging-omgeving met vooraf klaargezette testaccounts? Beide keuzes zijn volkomen legitiem. Wat echter fataal is, is op de dag zelf ontdekken dat u het ene bedoelde, maar het andere heeft voorbereid. Hak deze knoop door in week één, want dit bepaalt of weken twee tot en met vier draaien om het beveiligen van een openbaar platform of om het robuust maken van een gecontroleerde omgeving.
 
-## Week 2 — De Scheiding Tussen Gebruikers
+## Week 2 - De Scheiding Tussen Gebruikers
 
 Als u in vier weken slechts één ding grondig kunt aanpakken, kies dan voor dit onderdeel. Week twee staat volledig in het teken van toegangscontrole, en dit omvat drie lagen die door oprichters dikwijls op één hoop worden gegooid.
 
-**Authenticatie** — bewijzen wie iemand is — is doorgaans de laag die AI-tools redelijk goed implementeren, omdat diensten zoals Supabase Auth, Auth0, Clerk of NextAuth het zware werk doen. Controleer desondanks de fundamenten: verlopen sessies correct, worden tokens niet opgeslagen op plekken waar kwaadwillende scripts ze kunnen uitlezen, en lekt de wachtwoord-herstelfunctie niet of een e-mailadres al in de database voorkomt?
+**Authenticatie** - bewijzen wie iemand is - is doorgaans de laag die AI-tools redelijk goed implementeren, omdat diensten zoals Supabase Auth, Auth0, Clerk of NextAuth het zware werk doen. Controleer desondanks de fundamenten: verlopen sessies correct, worden tokens niet opgeslagen op plekken waar kwaadwillende scripts ze kunnen uitlezen, en lekt de wachtwoord-herstelfunctie niet of een e-mailadres al in de database voorkomt?
 
-**Autorisatie** — bepalen wat een specifieke gebruiker mag doen — is het punt waar prototypes structureel falen. De test bestaat niet uit het doorklikken in de frontend. De echte test is het uitvoeren van een geauthenticeerde API-aanroep voor een object dat van uzelf is, het ID daarin wijzigen naar een object dat toebehoort aan een ander account, en de aanroep opnieuw versturen. Als het antwoord data oplevert, heeft u een ernstig datalek te pakken. Doe dit voor elk type entiteit: dossiers, uploads, exports, facturen en webhooks.
+**Autorisatie** - bepalen wat een specifieke gebruiker mag doen - is het punt waar prototypes structureel falen. De test bestaat niet uit het doorklikken in de frontend. De echte test is het uitvoeren van een geauthenticeerde API-aanroep voor een object dat van uzelf is, het ID daarin wijzigen naar een object dat toebehoort aan een ander account, en de aanroep opnieuw versturen. Als het antwoord data oplevert, heeft u een ernstig datalek te pakken. Doe dit voor elk type entiteit: dossiers, uploads, exports, facturen en webhooks.
 
-**Isolatie** — de scheiding structureel verankeren in plaats van via losse voorwaarden in applicatiecode — is de enige duurzame oplossing. Row-Level Security (RLS) policies in PostgreSQL, afgestemd op de geauthenticeerde gebruiker of diens organisatie, dwingen de regels af op databaseniveau in plaats van in backend-code die u bij een volgende update per ongeluk kunt vergeten. Het kost meer tijd in week twee, maar bespaart u ontelbare risico's in elke week daarna.
+**Isolatie** - de scheiding structureel verankeren in plaats van via losse voorwaarden in applicatiecode - is de enige duurzame oplossing. Row-Level Security (RLS) policies in PostgreSQL, afgestemd op de geauthenticeerde gebruiker of diens organisatie, dwingen de regels af op databaseniveau in plaats van in backend-code die u bij een volgende update per ongeluk kunt vergeten. Het kost meer tijd in week twee, maar bespaart u ontelbare risico's in elke week daarna.
 
 Reserveer de volledige week hiervoor. Toegangscontrole die op een vrije namiddag even snel wordt "geregeld", is toegangscontrole die alleen werkt voor de routes waar u op dat moment toevallig aan dacht.
 
-## Week 3 — Betalingen, E-mail en Foutafhandeling
+## Week 3 - Betalingen, E-mail en Foutafhandeling
 
-Week drie is gereserveerd voor de paden die alleen worden geactiveerd wanneer er iets heel goed of juist heel slecht gaat — en die daardoor het minst getest worden.
+Week drie is gereserveerd voor de paden die alleen worden geactiveerd wanneer er iets heel goed of juist heel slecht gaat - en die daardoor het minst getest worden.
 
 Als u live betalingen accepteert tijdens Demo Day, of direct in de dagen erna, moet de integratie aan vier harde eisen voldoen: cryptografische verificatie van webhook-handtekeningen tegen uw geheim, zodat niemand een valse `checkout.session.completed` kan versturen om zichzelf gratis toegang te verschaffen; idempotentietesten, zodat wanneer Stripe of Mollie een webhook opnieuw verzendt (wat gegarandeerd gebeurt) er geen dubbel abonnement wordt geactiveerd; een abonnementsstatus die expliciet in uw eigen database leeft in plaats van afgeleid te worden van het laatste binnengekomen event; en een heldere afhandeling van mislukte incasso's die voorkomt dat een gebruiker stilletjes voor altijd gratis toegang behoudt.
 
@@ -83,11 +83,11 @@ Transactionele e-mail is het andere cruciale onderdeel van week drie, en het is 
 
 Besteed vervolgens een halve dag aan **foutafhandeling**. Wat ziet de bezoeker wanneer een externe API-koppeling time-out vertoont? Laat een mislukte bestandsupload een zwevende record achter in de database? En toont uw foutpagina een volledige stacktrace waarin het adres van uw databasehost zichtbaar is? Niets hiervan oogt glamoureus, maar het is exact wat een vreemde als eerste te zien krijgt zodra er iets hapert.
 
-## Week 4 — Codefreeze, Generieke Repetitie en Monitoring
+## Week 4 - Codefreeze, Generieke Repetitie en Monitoring
 
 Week vier bevat géén nieuwe functionele ontwikkelingen. Dat is geen vrijblijvend advies; dat is het absolute bestaansrecht van week vier.
 
-**Hanteer een strikte feature-freeze vanaf dag één van deze week.** Vrijwel elk Demo Day-debacle met een technische oorzaak is terug te herleiden naar een ogenschijnlijk onschuldige aanpassing die binnen 72 uur vóór de pitch naar productie werd gepusht — meestal een kleine cosmetische tweak waarvan men dacht dat die "onmogelijk iets stuk kon maken".
+**Hanteer een strikte feature-freeze vanaf dag één van deze week.** Vrijwel elk Demo Day-debacle met een technische oorzaak is terug te herleiden naar een ogenschijnlijk onschuldige aanpassing die binnen 72 uur vóór de pitch naar productie werd gepusht - meestal een kleine cosmetische tweak waarvan men dacht dat die "onmogelijk iets stuk kon maken".
 
 **Oefen onder reële belasting.** Geen theoretische loadtest met software, maar een gecoördineerde praktijktest. Vraag twintig bekenden om binnen hetzelfde tijdsbestek van drie minuten gelijktijdig een account aan te maken en het product te gebruiken, bij voorkeur via hun smartphone op 4G/5G. U leert hier meer van dan van welke geautomatiseerde tool dan ook, en u ontdekt het ruim op tijd om de limiet van uw connection pool te verhogen, een connection pooler (zoals PgBouncer of Supabase Pooler) tussen te schakelen, of een synchrone e-mailverzending naar een achtergrondwachtrij te migreren.
 
@@ -99,7 +99,7 @@ Week vier bevat géén nieuwe functionele ontwikkelingen. Dat is geen vrijblijve
 
 Zeven zaken die dringend aanvoelen, maar dat binnen een tijdsbestek van vier weken beslist niet zijn: een formele penetratietest; voorbereidingen op SOC 2 of ISO 27001; multi-regio redundantie; een complete analytische en attributie-infrastructuur; prestatie-optimalisatie voor dataverkeer dat u nog niet heeft; het toevoegen van een tweede of derde betaalmethode; en het beheerdersdashboard dat u al weken voor uzelf wilt bouwen.
 
-Elk van deze punten heeft een legitiem moment. Geen van die momenten is nu. De eerlijke manier om uit te stellen, is door elk punt te koppelen aan een meetbare trigger — bijvoorbeeld: "pentest zodra de eerste enterprise-klant daarom vraagt", "SOC 2 zodra een contract boven de € 25k hiervan afhangt" — zodat uitstel een weloverwogen strategische keuze is in plaats van stilzwijgende struisvogelpolitiek.
+Elk van deze punten heeft een legitiem moment. Geen van die momenten is nu. De eerlijke manier om uit te stellen, is door elk punt te koppelen aan een meetbare trigger - bijvoorbeeld: "pentest zodra de eerste enterprise-klant daarom vraagt", "SOC 2 zodra een contract boven de € 25k hiervan afhangt" - zodat uitstel een weloverwogen strategische keuze is in plaats van stilzwijgende struisvogelpolitiek.
 
 ## Wat Te Doen Als U Slechts Twee Weken Heeft
 
@@ -114,7 +114,7 @@ Bij een deadline van twee weken kiest u er expliciet voor om betalingen uit te s
 
 Achter LaunchStudio staat het team van Manifera met meer dan 120 ervaren software-engineers. Hun [portfolio aan opgeleverde productiesystemen](https://www.manifera.com/portfolio/) is precies de reden waarom een tijdsbestek van vier weken een helder afbakeningsgesprek is in plaats van een gok: onze vaste-prijs trajecten van 1 tot 3 weken zijn exact ontworpen voor dit type harde deadlines.
 
-Vier weken is ruim voldoende voor een waterdichte gebruikersscheiding, een betrouwbare geldstroom en een geslaagde generale repetitie — het is niet genoeg voor alles, en de oprichters die slagen op Demo Day zijn zij die doelbewust keuzes durfden te maken. [Plan een introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en u sluit af met een concrete planning van wat haalbaar is in uw resterende veertien werkdagen.
+Vier weken is ruim voldoende voor een waterdichte gebruikersscheiding, een betrouwbare geldstroom en een geslaagde generale repetitie - het is niet genoeg voor alles, en de oprichters die slagen op Demo Day zijn zij die doelbewust keuzes durfden te maken. [Plan een introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en u sluit af met een concrete planning van wat haalbaar is in uw resterende veertien werkdagen.
 
 ## Echt voorbeeld
 
@@ -129,9 +129,9 @@ Weken twee en drie werden volledig besteed aan autorisatie op locatieniveau via 
 **Resultaat:** 214 vlekkeloze aanmeldingen in de eerste anderhalf uur na de pitch van Stagelijn, nul systeemfouten, nul datalekken tussen locaties en twee concrete vervolggesprekken voor een term sheet. De export voor salarisadministraties werd vijf weken later rustig gebouwd, toen een daadwerkelijke klant erom vroeg.
 
 > *"Ik stond op het punt mijn laatste maand te verdoen aan het bouwen van een functie voor één enkele persoon in de zaal. In plaats daarvan heb ik geïnvesteerd in het fundament dat tweehonderd mensen tegelijk gingen aanraken."*
-> — **Joris Bakhuizen, Oprichter Stagelijn (Amsterdam)**
+> - **Joris Bakhuizen, Oprichter Stagelijn (Amsterdam)**
 
-**Kosten & Doorlooptijd:** € 4.200 (Launch & Grow Pakket, autorisatie, e-mail deliverability en concurrency hardening) — opgeleverd in 15 werkdagen.
+**Kosten & Doorlooptijd:** € 4.200 (Launch & Grow Pakket, autorisatie, e-mail deliverability en concurrency hardening) - opgeleverd in 15 werkdagen.
 
 ---
 
@@ -139,7 +139,7 @@ Weken twee en drie werden volledig besteed aan autorisatie op locatieniveau via 
 
 ### Moet ik demonstreren op live productie of in een afgeschermde staging-omgeving?
 
-Beide keuzes zijn prima verdedigbaar, maar beslis dit direct in week één, omdat het alle vervolgstappen beïnvloedt. Een afgeschermde omgeving met voorgeprogrammeerde testdata elimineert concurrency- en registratierisico's volledig, ten koste van het niet direct kunnen registreren van geïnteresseerden in de zaal — wat voor veel pitches een zeer verstandige afweging is.
+Beide keuzes zijn prima verdedigbaar, maar beslis dit direct in week één, omdat het alle vervolgstappen beïnvloedt. Een afgeschermde omgeving met voorgeprogrammeerde testdata elimineert concurrency- en registratierisico's volledig, ten koste van het niet direct kunnen registreren van geïnteresseerden in de zaal - wat voor veel pitches een zeer verstandige afweging is.
 
 ### Kan een hardening-sprint van vier weken ook een databaseschemamigratie omvatten?
 
@@ -155,7 +155,7 @@ Jazeker, en bij een doorlooptijd van vier weken of minder is het vaak zelfs de s
 
 ### Wat moet ik doen met auditbevindingen die ik niet op tijd kan oplossen?
 
-Noteer elk punt zorgvuldig inclusief de concrete drempelwaarde die actie vereist — zoals een gebruikersaantal, contractwaarde of compliancenorm — en deel dit overzicht transparant met potentiële investeerders. Een oprichter die zijn resterende technische schuld exact kan benoemen en prioriteren, maakt een aanzienlijk professionelere indruk dan iemand die beweert dat er geen enkel probleem is.
+Noteer elk punt zorgvuldig inclusief de concrete drempelwaarde die actie vereist - zoals een gebruikersaantal, contractwaarde of compliancenorm - en deel dit overzicht transparant met potentiële investeerders. Een oprichter die zijn resterende technische schuld exact kan benoemen en prioriteren, maakt een aanzienlijk professionelere indruk dan iemand die beweert dat er geen enkel probleem is.
 
 <script type="application/ld+json">
 {

@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Een steeds groter deel van de mensen die zoeken naar een product zoals het jouwe, krijgt nooit meer een traditionele pagina met zoekresultaten te zien. Ze stellen een vraag aan een AI-assistent, ontvangen een samenvattende alinea en handelen daarnaar. Of jouw product in die alinea wordt genoemd, hangt af van iets wat net even anders werkt dan traditionele zoekmachineposities: of een machine jouw pagina kan uitlezen, begrijpt wat er beschreven wordt en voldoende vertrouwen heeft in de bron om jouw merk bij naam te noemen.
 
-Gestructureerde data (structured data) is dé manier om te voorkomen dat een AI moet gissen. Het is tevens het meest verwaarloosde onderdeel van technische SEO bij AI-gebouwde SaaS-applicaties — niet omdat het ingewikkeld is, maar omdat geen enkele no-code of AI-appbouwer dit automatisch toevoegt en er op het eerste gezicht ogenschijnlijk niets kapotgaat als het ontbreekt.
+Gestructureerde data (structured data) is dé manier om te voorkomen dat een AI moet gissen. Het is tevens het meest verwaarloosde onderdeel van technische SEO bij AI-gebouwde SaaS-applicaties - niet omdat het ingewikkeld is, maar omdat geen enkele no-code of AI-appbouwer dit automatisch toevoegt en er op het eerste gezicht ogenschijnlijk niets kapotgaat als het ontbreekt.
 
 ## Wat gestructureerde data daadwerkelijk doet
 
@@ -30,13 +30,13 @@ Op jouw pagina staat "€49 per maand". Een mens begrijpt dat meteen. Een zoekma
 
 Gestructureerde data neemt die onzekerheid weg. Het is een compact blok machineleesbare informatie dat in de HTML van de pagina is ingesloten en expliciet verklaart: deze pagina beschrijft een dienst, aangeboden door deze organisatie, tegen deze prijs, in deze valuta, beschikbaar in deze regio's. Er is geen interpretatie of giswerk nodig.
 
-Het formaat dat ertoe doet is JSON-LD — een scriptblok in de pagina, gescheiden van de zichtbare inhoud, dat gebruikmaakt van het universele vocabulair van schema.org. Het is onzichtbaar voor gewone bezoekers, maar wordt uitgelezen door elke grote zoekmachine en, in toenemende mate, door AI-antwoordmachines en taalmodellen die antwoorden formuleren.
+Het formaat dat ertoe doet is JSON-LD - een scriptblok in de pagina, gescheiden van de zichtbare inhoud, dat gebruikmaakt van het universele vocabulair van schema.org. Het is onzichtbaar voor gewone bezoekers, maar wordt uitgelezen door elke grote zoekmachine en, in toenemende mate, door AI-antwoordmachines en taalmodellen die antwoorden formuleren.
 
 ## De vijf schema-types die er echt toe doen voor een klein product
 
 Hier zijn de vijf belangrijkste types, in aflopende volgorde van waarde voor een typische AI-gebouwde SaaS:
 
-**Organization.** Wie je bent: officiële naam, website, logo, contactgegevens, sociale profielen en — cruciaal voor een Nederlands product — het adres, KvK-nummer en het verzorgingsgebied. Dit vormt het fundament, omdat het machines in staat stelt jouw productnaam te koppelen aan een daadwerkelijke juridische entiteit in plaats van het te behandelen als een willekeurig zelfstandig naamwoord.
+**Organization.** Wie je bent: officiële naam, website, logo, contactgegevens, sociale profielen en - cruciaal voor een Nederlands product - het adres, KvK-nummer en het verzorgingsgebied. Dit vormt het fundament, omdat het machines in staat stelt jouw productnaam te koppelen aan een daadwerkelijke juridische entiteit in plaats van het te behandelen als een willekeurig zelfstandig naamwoord.
 
 **WebSite,** met de sitenaam en alternatieve namen. Dit beïnvloedt hoe jouw merknaam in zoekresultaten wordt weergegeven en helpt bij het ontwarren van een productnaam die toevallig ook een algemeen Nederlands woord is.
 
@@ -50,7 +50,7 @@ Voor producten met een fysieke of regionale aanwezigheid voegt **LocalBusiness**
 
 ## Waarom AI-antwoordmachines net iets anders belonen
 
-Traditionele zoekmachine-ranking is vergelijkend: welke van deze geïndexeerde pagina's sluit het beste aan op deze specifieke zoekopdracht? Het genereren van antwoorden door AI (AEO / Answer Engine Optimization) werkt fundamenteel anders — een systeem stelt een samengesteld antwoord op en beslist welke bronnen betrouwbaar genoeg zijn om als autoriteit te citeren.
+Traditionele zoekmachine-ranking is vergelijkend: welke van deze geïndexeerde pagina's sluit het beste aan op deze specifieke zoekopdracht? Het genereren van antwoorden door AI (AEO / Answer Engine Optimization) werkt fundamenteel anders - een systeem stelt een samengesteld antwoord op en beslist welke bronnen betrouwbaar genoeg zijn om als autoriteit te citeren.
 
 Drie eigenschappen wegen daarbij uitzonderlijk zwaar:
 
@@ -88,9 +88,9 @@ Voor een Nederlands product is het toevoegen van het KvK-nummer en het officiël
 
 In de praktijk bestaat gestructureerde data uit een compact scriptblok in de `<head>` van elke pagina. Het werk splitst zich in twee categorieën:
 
-**Sitebrede data** — Organization en WebSite — hoort op elke pagina voor te komen. In een single-page application (SPA) betekent dit dat deze data aanwezig moet zijn in de direct geserveerde HTML in plaats van pas na het laden via JavaScript te worden geïnjecteerd. Voor een Lovable-project betekent dit doorgaans dat het thuishoort in de pre-rendered of server-rendered output, zij aan zij met je paginatitels en meta descriptions.
+**Sitebrede data** - Organization en WebSite - hoort op elke pagina voor te komen. In een single-page application (SPA) betekent dit dat deze data aanwezig moet zijn in de direct geserveerde HTML in plaats van pas na het laden via JavaScript te worden geïnjecteerd. Voor een Lovable-project betekent dit doorgaans dat het thuishoort in de pre-rendered of server-rendered output, zij aan zij met je paginatitels en meta descriptions.
 
-**Paginaspecifieke data** — de software-specificatie en prijs op de tarievenpagina, het FAQ-blok waar daadwerkelijk een FAQ staat, de breadcrumbs waar een hiërarchie bestaat — verschilt per URL-route. Dit maakt het integraal onderdeel van hetzelfde per-pagina metadata-framework dat je ook voor SEO gebruikt.
+**Paginaspecifieke data** - de software-specificatie en prijs op de tarievenpagina, het FAQ-blok waar daadwerkelijk een FAQ staat, de breadcrumbs waar een hiërarchie bestaat - verschilt per URL-route. Dit maakt het integraal onderdeel van hetzelfde per-pagina metadata-framework dat je ook voor SEO gebruikt.
 
 Daarom horen gestructureerde data en de SSR/pre-rendering oplossing in exact hetzelfde engineeringstraject thuis: beide vereisen dat de inhoud direct in het initiële HTTP-antwoord zit. Het één doen zonder het ander is dweilen met de kraan open.
 
@@ -100,7 +100,7 @@ Twee eenvoudige, gratis controles volstaan:
 
 **Valideer de syntaxis** met een schema-validatietool (zoals Schema.org Validator). Deze vertelt je direct of het JSON-formaat klopt en of de gebruikte velden en types worden herkend. Voer dit uit voor elk paginatype, want één syntaxisfout maakt het hele blok ongeldig.
 
-**Controleer het gerenderde resultaat** in Google's Test voor uitgebreide resultaten (Rich Results Test). Dit toont wat er daadwerkelijk op de live-URL wordt gedetecteerd — inclusief of de code überhaupt werd opgemerkt. Zo ontdek je meteen of je markup per ongeluk pas na zware JavaScript-uitvoering werd geladen en daardoor werd gemist.
+**Controleer het gerenderde resultaat** in Google's Test voor uitgebreide resultaten (Rich Results Test). Dit toont wat er daadwerkelijk op de live-URL wordt gedetecteerd - inclusief of de code überhaupt werd opgemerkt. Zo ontdek je meteen of je markup per ongeluk pas na zware JavaScript-uitvoering werd geladen en daardoor werd gemist.
 
 Controleer tot slot handmatig de broncode: klik met de rechtermuisknop op de pagina, kies 'Paginabron weergeven', zoek op `application/ld+json` en bekijk wat er staat. Staat het niet in de kale broncode maar wel in de Developer Tools van je browser? Dan heb je zojuist je belangrijkste SEO-lek gevonden.
 
@@ -120,7 +120,7 @@ Houd over een periode van twee tot drie maanden drie signalen in de gaten: of je
 
 Voor een met AI gebouwd softwareproduct vergt dit doorgaans een halve dag gericht programmeerwerk bovenop de pre-rendering setup. Het is precies het soort detail dat snel over het hoofd wordt gezien of verkeerd wordt geïmplementeerd: markup die te laat laadt, ongeldige JSON die stilletjes crasht, of organisatiedata die per route verschilt.
 
-LaunchStudio richt dit professioneel in als onderdeel van het vindbaar maken van een Lovable- of Bolt-applicatie: Organization- en WebSite-data direct in de geserveerde HTML, paginaspecifieke markup voor SoftwareApplication, prijzen, FAQ's en breadcrumbs, waterdichte entiteitsconsistentie, validatie per template en koppeling met Search Console — zonder dat we aan het unieke ontwerp van je applicatie hoeven te sleutelen.
+LaunchStudio richt dit professioneel in als onderdeel van het vindbaar maken van een Lovable- of Bolt-applicatie: Organization- en WebSite-data direct in de geserveerde HTML, paginaspecifieke markup voor SoftwareApplication, prijzen, FAQ's en breadcrumbs, waterdichte entiteitsconsistentie, validatie per template en koppeling met Search Console - zonder dat we aan het unieke ontwerp van je applicatie hoeven te sleutelen.
 
 Hierachter staat Manifera, met elf jaar ervaring in software engineering voor toonaangevende opdrachtgevers zoals Vodafone en TNO, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) en je ontvangt doorgaans binnen één werkdag een heldere analyse van wat jouw pagina's momenteel aan machines tonen, of bekijk direct de [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -136,7 +136,7 @@ Gestructureerde data weerspiegelt je product op het moment dat de code geschreve
 
 **Dienstomschrijvingen** veranderen naarmate het platform groeit; code die tijdens de lancering is geschreven dekt vaak slechts een fractie van wat je inmiddels aanbiedt.
 
-De gewoonte die dit voorkomt is simpel: pas telkens wanneer je een tarief, adres of vraag op de pagina aanpast, de markup in exact dezelfde release aan. En valideer één of twee keer per jaar al je templates opnieuw — het kost tien minuten en voorkomt sluipende fouten.
+De gewoonte die dit voorkomt is simpel: pas telkens wanneer je een tarief, adres of vraag op de pagina aanpast, de markup in exact dezelfde release aan. En valideer één of twee keer per jaar al je templates opnieuw - het kost tien minuten en voorkomt sluipende fouten.
 
 Als je markup dynamisch wordt gegenereerd op basis van je daadwerkelijke applicatiedata in plaats van handmatig in platte tekst gecodeerd, verdwijnt het overgrote deel van deze risico's vanzelf.
 
@@ -148,16 +148,16 @@ Marit Sluijter runde Vakwijzer, een applicatie voor trainingsadministratie gebou
 
 Erger nog: wanneer potentiële klanten aan ChatGPT of Perplexity vroegen naar handige software voor het beheren van cursusinschrijvingen in Nederland, werden haar concurrenten uitgebreid geciteerd en werd Vakwijzer nergens genoemd.
 
-De diagnose kostte een middag. De website bevatte geen enkele vorm van gestructureerde data. De bedrijfsnaam werd op vier pagina's op drie verschillende manieren geschreven. Nergens stond in duidelijke taal wat het product deed en in welke regio het opereerde — de slogan op de homepage luidde slechts "trainingsadministratie, vereenvoudigd". En omdat de volledige pagina client-side in de browser rendeerde, bevatte de direct geserveerde HTML vrijwel geen tekst.
+De diagnose kostte een middag. De website bevatte geen enkele vorm van gestructureerde data. De bedrijfsnaam werd op vier pagina's op drie verschillende manieren geschreven. Nergens stond in duidelijke taal wat het product deed en in welke regio het opereerde - de slogan op de homepage luidde slechts "trainingsadministratie, vereenvoudigd". En omdat de volledige pagina client-side in de browser rendeerde, bevatte de direct geserveerde HTML vrijwel geen tekst.
 
 De oplossing vergde zes werkdagen: pre-rendering voor alle openbare pagina's zodat alle content direct in het HTML-antwoord zat; Organization-markup met een consistente statutaire naam, adres, KvK-nummer en contactpunt over de hele site; SoftwareApplication- en Offer-markup op de tarievenpagina; FAQPage-markup op de twee pagina's met echte vragen; breadcrumbs; consistente naamgeving op alle pagina's en in alle paginatitels; en een beknopte beschrijving van één zin die overal identiek werd herhaald.
 
-**Resultaat:** binnen zeven weken stond de website op nummer één bij zoekopdrachten naar de eigen merknaam, verschenen de bedrijfsinformatie en sitelinks foutloos in de zoekresultaten, en meldden twee nieuwe klanten zich die het platform hadden ontdekt via een AI-assistent die Vakwijzer specifiek had aangeraden — iets wat nog niet eerder was voorgekomen.
+**Resultaat:** binnen zeven weken stond de website op nummer één bij zoekopdrachten naar de eigen merknaam, verschenen de bedrijfsinformatie en sitelinks foutloos in de zoekresultaten, en meldden twee nieuwe klanten zich die het platform hadden ontdekt via een AI-assistent die Vakwijzer specifiek had aangeraden - iets wat nog niet eerder was voorgekomen.
 
 > *"Ik had een jaar lang keihard gewerkt om het product fantastisch te maken, maar had machines nooit verteld wat het eigenlijk was. Het bleek dat niemand dat kon raden, inclusief de AI-tools die vragen over mijn markt beantwoordden."*
-> — **Marit Sluijter, Oprichter, Vakwijzer (Apeldoorn)**
+> - **Marit Sluijter, Oprichter, Vakwijzer (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** € 2.400 (pre-rendering, gestructureerde data over alle paginatypes, entiteitsconsistentie, validatie en Search Console-koppeling) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.400 (pre-rendering, gestructureerde data over alle paginatypes, entiteitsconsistentie, validatie en Search Console-koppeling) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -175,7 +175,7 @@ Ja, het neemt alle onduidelijkheid weg over wat jouw pagina omschrijft en welke 
 
 ### Kan foutieve gestructureerde data mijn website schaden?
 
-Zeker. Wanneer de markup zaken beschrijft die niet daadwerkelijk zichtbaar zijn voor bezoekers — zoals verzonnen reviews, onzichtbare FAQ's of misleidende categorieën — kan Google besluiten je structured data te negeren of handmatige sancties op te leggen.
+Zeker. Wanneer de markup zaken beschrijft die niet daadwerkelijk zichtbaar zijn voor bezoekers - zoals verzonnen reviews, onzichtbare FAQ's of misleidende categorieën - kan Google besluiten je structured data te negeren of handmatige sancties op te leggen.
 
 ### Hoe controleer ik of mijn gestructureerde data goed functioneert?
 
@@ -215,7 +215,7 @@ Controleer eerst de code met een schema-validator, test de live-URL vervolgens v
       "name": "Kan foutieve gestructureerde data mijn website schaden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeker. Wanneer de markup zaken beschrijft die niet daadwerkelijk zichtbaar zijn voor bezoekers — zoals verzonnen reviews, onzichtbare FAQ's of misleidende categorieën — kan Google besluiten je structured data te negeren of handmatige sancties op te leggen."
+        "text": "Zeker. Wanneer de markup zaken beschrijft die niet daadwerkelijk zichtbaar zijn voor bezoekers - zoals verzonnen reviews, onzichtbare FAQ's of misleidende categorieën - kan Google besluiten je structured data te negeren of handmatige sancties op te leggen."
       }
     },
     {

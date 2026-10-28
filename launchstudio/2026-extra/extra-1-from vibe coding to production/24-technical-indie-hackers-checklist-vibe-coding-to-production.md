@@ -31,7 +31,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Most production-readiness content assumes zero technical background and stays deliberately generic as a result. This one assumes the opposite: you can read your own codebase, run a terminal command, and evaluate a technical answer on its merits. What follows isn't a list of concepts to understand — it's a list of specific, executable verifications, with the actual test for each one.
+Most production-readiness content assumes zero technical background and stays deliberately generic as a result. This one assumes the opposite: you can read your own codebase, run a terminal command, and evaluate a technical answer on its merits. What follows isn't a list of concepts to understand - it's a list of specific, executable verifications, with the actual test for each one.
 
 ## Secrets: Run the Scan, Don't Assume
 
@@ -39,7 +39,7 @@ Execute `git log --all --full-history -- "**/*.env"` (and equivalent patterns fo
 
 ## Authentication: Test From Outside the Interface
 
-Using a valid session token, construct a request directly against your API — bypassing your frontend entirely — for a resource that specific session shouldn't have access to. A 403 response confirms server-side enforcement. Data returned instead confirms your authentication is frontend-only, regardless of how correctly your login screen behaves.
+Using a valid session token, construct a request directly against your API - bypassing your frontend entirely - for a resource that specific session shouldn't have access to. A 403 response confirms server-side enforcement. Data returned instead confirms your authentication is frontend-only, regardless of how correctly your login screen behaves.
 
 ## Authorization: Verify Role Claims Are Server-Determined, Not Client-Supplied
 
@@ -47,7 +47,7 @@ Check specifically whether your backend determines a request's role/permission l
 
 ## Session Lifecycle: Confirm Logout Actually Invalidates Server-Side
 
-Capture a valid token, log out through your normal flow, then attempt a direct API request using the captured token. If it still succeeds, your logout is client-side only — the token remains valid on the server regardless of the user's belief that they've logged out.
+Capture a valid token, log out through your normal flow, then attempt a direct API request using the captured token. If it still succeeds, your logout is client-side only - the token remains valid on the server regardless of the user's belief that they've logged out.
 
 ## Error Handling: Deliberately Break Every External Dependency
 
@@ -59,27 +59,27 @@ For any flow involving a limited or shared resource (bookings, inventory, unique
 
 ## Data Persistence: Restart the Process, Not Just the Browser
 
-Save data, then deliberately restart your application's server process — not merely refresh your browser — and confirm the data survives. Separately, confirm backups exist and, ideally, that a real restore has actually been tested at least once.
+Save data, then deliberately restart your application's server process - not merely refresh your browser - and confirm the data survives. Separately, confirm backups exist and, ideally, that a real restore has actually been tested at least once.
 
 ## CI: Confirm the Pipeline Actually Blocks Bad Merges
 
-Deliberately introduce a failing test or a lint violation in a branch, and confirm your pipeline actually prevents that change from merging or deploying — not just that a pipeline exists and runs, but that a failure genuinely blocks the change rather than merely being reported and ignored.
+Deliberately introduce a failing test or a lint violation in a branch, and confirm your pipeline actually prevents that change from merging or deploying - not just that a pipeline exists and runs, but that a failure genuinely blocks the change rather than merely being reported and ignored.
 
 ## Observability: Confirm You'd Actually Be Notified
 
-Trigger a deliberate error in a non-production environment and confirm it appears in your error tracking tool with useful context. Separately, confirm your uptime monitoring would actually alert you — not just log an entry silently — if your app went down right now.
+Trigger a deliberate error in a non-production environment and confirm it appears in your error tracking tool with useful context. Separately, confirm your uptime monitoring would actually alert you - not just log an entry silently - if your app went down right now.
 
 ## Rate Limiting: Confirm Abuse Actually Gets Throttled, Not Just Handled Gracefully
 
-Write a small script that hits a single endpoint — ideally something expensive, like a search or an AI-generation call — fifty or a hundred times in rapid succession, and observe what actually happens. A correctly configured endpoint returns a 429 (too many requests) after some threshold and stops processing further calls from that source. An endpoint with no rate limiting processes all of them, which matters for three distinct reasons: cost (each processed request against a paid API, like an LLM call, is money spent regardless of whether the traffic was legitimate), availability (enough concurrent load against an unthrottled endpoint can degrade or crash the service for everyone else using it at the same time), and abuse surface (a login or password-reset endpoint without rate limiting is directly exploitable for credential-stuffing or account-enumeration attacks). Check this specifically on any endpoint that's expensive to run, touches authentication, or sends anything (email, SMS) on your behalf, since those are the three categories where unthrottled abuse costs you directly rather than just consuming server resources.
+Write a small script that hits a single endpoint - ideally something expensive, like a search or an AI-generation call - fifty or a hundred times in rapid succession, and observe what actually happens. A correctly configured endpoint returns a 429 (too many requests) after some threshold and stops processing further calls from that source. An endpoint with no rate limiting processes all of them, which matters for three distinct reasons: cost (each processed request against a paid API, like an LLM call, is money spent regardless of whether the traffic was legitimate), availability (enough concurrent load against an unthrottled endpoint can degrade or crash the service for everyone else using it at the same time), and abuse surface (a login or password-reset endpoint without rate limiting is directly exploitable for credential-stuffing or account-enumeration attacks). Check this specifically on any endpoint that's expensive to run, touches authentication, or sends anything (email, SMS) on your behalf, since those are the three categories where unthrottled abuse costs you directly rather than just consuming server resources.
 
 ## Why Each Item Here Is a Test, Not a Belief
 
-The organizing principle across this entire checklist is the same: each item is phrased as something you actively do and observe the result of, not something you confirm by reading your own code and judging whether it looks correct. This distinction matters specifically for a technical founder, because reading your own code tends to confirm what you already believe about it — these tests are designed to surface what you don't already know.
+The organizing principle across this entire checklist is the same: each item is phrased as something you actively do and observe the result of, not something you confirm by reading your own code and judging whether it looks correct. This distinction matters specifically for a technical founder, because reading your own code tends to confirm what you already believe about it - these tests are designed to surface what you don't already know.
 
-[LaunchStudio](https://launchstudio.eu/en/) runs exactly this checklist, with the same executable rigor, for founders who'd rather have Manifera's engineers execute and verify it than spend their own limited time doing so — same tests, delivered at a fixed price and timeline.
+[LaunchStudio](https://launchstudio.eu/en/) runs exactly this checklist, with the same executable rigor, for founders who'd rather have Manifera's engineers execute and verify it than spend their own limited time doing so - same tests, delivered at a fixed price and timeline.
 
-[Get this exact checklist run against your specific codebase](https://launchstudio.eu/en/#calculator) — a checklist you execute yourself takes real time; one you delegate takes days.
+[Get this exact checklist run against your specific codebase](https://launchstudio.eu/en/#calculator) - a checklist you execute yourself takes real time; one you delegate takes days.
 
 ## Real example
 
@@ -87,14 +87,14 @@ The organizing principle across this entire checklist is the same: each item is 
 
 Niels, a former DevOps engineer turned founder in Delft, built ServerWacht, a Cursor-built tool monitoring uptime and performance for small businesses' own websites and sending plain-language alerts when something needed attention, drawing on genuine prior professional infrastructure experience.
 
-Given his background, Niels worked through the secrets, error handling, and CI verification items himself in an evening, confident in his ability to execute those specific tests correctly and interpret the results. The authorization and concurrency tests, however, he specifically recognized as areas where his own review — however technically capable — carried the structural blind spot of reviewing his own implementation, and he brought exactly those two items to LaunchStudio rather than the full engagement.
+Given his background, Niels worked through the secrets, error handling, and CI verification items himself in an evening, confident in his ability to execute those specific tests correctly and interpret the results. The authorization and concurrency tests, however, he specifically recognized as areas where his own review - however technically capable - carried the structural blind spot of reviewing his own implementation, and he brought exactly those two items to LaunchStudio rather than the full engagement.
 
-**Result:** LaunchStudio's targeted review found that ServerWacht's alert-configuration endpoint trusted a client-supplied account ID rather than verifying it against the authenticated session — meaning any logged-in user could, with a modified request, view or modify another customer's monitoring configuration, a gap Niels's own thorough but self-directed review had not specifically tested for.
+**Result:** LaunchStudio's targeted review found that ServerWacht's alert-configuration endpoint trusted a client-supplied account ID rather than verifying it against the authenticated session - meaning any logged-in user could, with a modified request, view or modify another customer's monitoring configuration, a gap Niels's own thorough but self-directed review had not specifically tested for.
 
-> *"I could genuinely run most of this checklist myself and trust my own results. The two items I skipped weren't because I couldn't technically do them — it's that I knew reviewing my own authorization logic has a blind spot no amount of care fully removes. Getting someone else to run exactly those two tests found a real gap."*
-> — **Niels Verheij, Founder, ServerWacht (Delft)**
+> *"I could genuinely run most of this checklist myself and trust my own results. The two items I skipped weren't because I couldn't technically do them - it's that I knew reviewing my own authorization logic has a blind spot no amount of care fully removes. Getting someone else to run exactly those two tests found a real gap."*
+> - **Niels Verheij, Founder, ServerWacht (Delft)**
 
-**Cost & Timeline:** €1,100 (targeted authorization and concurrency verification) — completed in 4 business days.
+**Cost & Timeline:** €1,100 (targeted authorization and concurrency verification) - completed in 4 business days.
 
 ---
 
@@ -102,27 +102,27 @@ Given his background, Niels worked through the secrets, error handling, and CI v
 
 ### If I can technically run every item on this checklist myself, is there still value in having someone else verify it?
 
-Some value remains even for a highly technical founder, specifically around items requiring adversarial testing of your own logic — as Niels's case shows, reviewing your own authorization implementation carries a structural blind spot regardless of technical skill, since you're inclined to test that code does what you intended rather than probe for what you didn't intend.
+Some value remains even for a highly technical founder, specifically around items requiring adversarial testing of your own logic - as Niels's case shows, reviewing your own authorization implementation carries a structural blind spot regardless of technical skill, since you're inclined to test that code does what you intended rather than probe for what you didn't intend.
 
 ### How long does running this full checklist manually typically take for a technical founder?
 
-Highly variable depending on your stack and how many gaps are found requiring fixes rather than just verification, but the verification steps alone — without fixes — typically take a few hours for a founder already comfortable with their own codebase and basic API testing tools.
+Highly variable depending on your stack and how many gaps are found requiring fixes rather than just verification, but the verification steps alone - without fixes - typically take a few hours for a founder already comfortable with their own codebase and basic API testing tools.
 
 ### Is it reasonable to split this checklist, running some items myself and delegating others, like Niels did?
 
-Yes — this is a common and reasonable approach for technical founders with limited time, and LaunchStudio scopes engagements around exactly this kind of partial checklist as readily as a full one.
+Yes - this is a common and reasonable approach for technical founders with limited time, and LaunchStudio scopes engagements around exactly this kind of partial checklist as readily as a full one.
 
 ### Which item on this checklist is most commonly skipped even by technical founders who attempt the rest?
 
-The concurrency and authorization tests specifically, since both require deliberately constructing an adversarial scenario against your own logic rather than confirming your logic works as intended — a mental shift that even technical, careful founders often don't naturally make without specific prompting.
+The concurrency and authorization tests specifically, since both require deliberately constructing an adversarial scenario against your own logic rather than confirming your logic works as intended - a mental shift that even technical, careful founders often don't naturally make without specific prompting.
 
 ### Does passing every item on this checklist guarantee my app has no remaining production risks?
 
-No single checklist guarantees zero risk — this covers the most common, well-documented categories of risk in AI-generated applications specifically, but product-specific considerations (regulatory requirements, unusual data sensitivity, unique architectural choices) may introduce risks outside this general checklist's scope.
+No single checklist guarantees zero risk - this covers the most common, well-documented categories of risk in AI-generated applications specifically, but product-specific considerations (regulatory requirements, unusual data sensitivity, unique architectural choices) may introduce risks outside this general checklist's scope.
 
 ### Is rate limiting something I need on every endpoint, or just a specific subset?
 
-Just a specific subset in practice — endpoints that are expensive to run (AI calls, heavy queries), touch authentication (login, password reset), or send something on your behalf (email, SMS) are the ones where unthrottled abuse costs you directly; low-cost, low-sensitivity endpoints matter far less if a rate limiting pass has to be prioritized under limited time.
+Just a specific subset in practice - endpoints that are expensive to run (AI calls, heavy queries), touch authentication (login, password reset), or send something on your behalf (email, SMS) are the ones where unthrottled abuse costs you directly; low-cost, low-sensitivity endpoints matter far less if a rate limiting pass has to be prioritized under limited time.
 
 <script type="application/ld+json">
 {
@@ -166,7 +166,7 @@ Just a specific subset in practice — endpoints that are expensive to run (AI c
       "name": "Does passing every item on this checklist guarantee no remaining production risks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No single checklist guarantees zero risk — product-specific considerations may introduce risks outside this general checklist's scope."
+        "text": "No single checklist guarantees zero risk - product-specific considerations may introduce risks outside this general checklist's scope."
       }
     },
     {
@@ -174,7 +174,7 @@ Just a specific subset in practice — endpoints that are expensive to run (AI c
       "name": "Is rate limiting needed on every endpoint, or just a specific subset?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Just a specific subset — endpoints that are expensive to run, touch authentication, or send something on your behalf are where unthrottled abuse costs you directly."
+        "text": "Just a specific subset - endpoints that are expensive to run, touch authentication, or send something on your behalf are where unthrottled abuse costs you directly."
       }
     }
   ]

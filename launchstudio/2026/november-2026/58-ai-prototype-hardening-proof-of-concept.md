@@ -89,9 +89,9 @@ When a lawyer asked a question, LaunchStudio's new architecture performed a ligh
 **Result:** The "Context Window" hallucination was mathematically eliminated. The AI could now analyze 500-page documents with flawless accuracy, because it was only ever reading the most relevant, targeted chunks of data. Sophie's company re-engaged the law firm, proved the new architectural reliability, and secured a €250,000 enterprise contract.
 
 > *"We were victims of the 'Weekend AI Prototype' illusion. We thought we had built a product, but we had only built a toy. LaunchStudio understood that building an AI product is 10% AI and 90% data engineering. They built the massive, invisible data infrastructure we needed to actually make the AI reliable in the real world."*
-> — **Sophie Jenkins, CTO, JurisAI (London)**
+> - **Sophie Jenkins, CTO, JurisAI (London)**
 
-**Cost & Timeline:** €18,000 (Launch & Grow Package with RAG Hardening & Evaluation Pipeline Add-on) — production-ready and deployed in 21 business days.
+**Cost & Timeline:** €18,000 (Launch & Grow Package with RAG Hardening & Evaluation Pipeline Add-on) - production-ready and deployed in 21 business days.
 
 ---
 

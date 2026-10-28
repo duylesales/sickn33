@@ -1,6 +1,6 @@
 🚨 11 PM before your Product Hunt launch. Someone in a founder Slack asks: "is your privacy policy accurate, or did you paste a template?" You genuinely don't know. 😳
 
-These aren't legal theory — several belong in your database schema before your first real user exists: 🧠
+These aren't legal theory - several belong in your database schema before your first real user exists: 🧠
 
 ❌ ID uploads sitting in a storage bucket the app never referenced again
 ❌ One "I agree to terms" checkbox with no record of what was consented to
@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years building compliant systems, 
 
 His result: a defensible consent record and a deletion path that worked end to end, before his first enterprise call. 🚀
 
-👉 Describe your project — a reply within one day on what your signup flow is missing: https://launchstudio.eu/en/blog/gdpr-decisions-before-your-first-eu-user
+👉 Describe your project - a reply within one day on what your signup flow is missing: https://launchstudio.eu/en/blog/gdpr-decisions-before-your-first-eu-user
 
 #AINativeFounder #GDPR #LaunchStudio #Manifera #EUStartups #FounderLife

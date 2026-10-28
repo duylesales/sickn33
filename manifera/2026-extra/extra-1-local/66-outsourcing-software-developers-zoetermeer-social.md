@@ -6,9 +6,9 @@
 ❌ **Company-Level References Hide Individual Gaps:** Vendor reputation says little about the specific engineer on your project.
 
 **The Manifera Solution:**
-✅ **Realistic Code Exercises:** Vetted against messy, representative codebase excerpts — not clean algorithm puzzles.
+✅ **Realistic Code Exercises:** Vetted against messy, representative codebase excerpts - not clean algorithm puzzles.
 ✅ **Explicit Testing-Discipline Check:** Every candidate evaluated on whether they test their own code, unprompted.
-✅ **Direct Access to the Actual Engineer:** No generic references — interview the person who'll actually be on your project.
+✅ **Direct Access to the Actual Engineer:** No generic references - interview the person who'll actually be on your project.
 
 Vet for production. Not for whiteboards. 🛡️
 

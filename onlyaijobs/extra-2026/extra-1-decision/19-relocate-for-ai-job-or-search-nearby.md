@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The assumption arrives early and is rarely examined: serious AI work happens in the Randstad, so at some point you will have to move there. It is the reason many graduates from Groningen, Twente, Limburg and Brabant start packing before they have checked what exists at home. Sometimes relocating is genuinely the right call. Often it is an expensive answer to a question that was never asked properly — and in a country this small, with this much rail, the alternatives deserve a fair hearing before you take on a Randstad rent.
+The assumption arrives early and is rarely examined: serious AI work happens in the Randstad, so at some point you will have to move there. It is the reason many graduates from Groningen, Twente, Limburg and Brabant start packing before they have checked what exists at home. Sometimes relocating is genuinely the right call. Often it is an expensive answer to a question that was never asked properly - and in a country this small, with this much rail, the alternatives deserve a fair hearing before you take on a Randstad rent.
 
 ## Three Options, Not Two
 
@@ -47,7 +47,7 @@ Most people frame this as move or stay. There are at least three realistic optio
 
 **Search locally.** Look for comparable work within your existing radius, which for many candidates turns out to be larger than expected.
 
-**Change the work, not the place.** Adjust the type of role — sector, specialism, employer size — so that suitable work exists nearby.
+**Change the work, not the place.** Adjust the type of role - sector, specialism, employer size - so that suitable work exists nearby.
 
 The fourth option is the one candidates most often overlook, and it is frequently the cheapest.
 
@@ -107,7 +107,7 @@ Do that search before you price a moving van.
 
 ## When Relocating Is Clearly Right
 
-- **Your specialism genuinely concentrates in one place.** Some niches — certain research fields, specific industry clusters — have few employers, and they are where they are.
+- **Your specialism genuinely concentrates in one place.** Some niches - certain research fields, specific industry clusters - have few employers, and they are where they are.
 - **The role is a significant career step** with no comparable alternative nearby.
 - **You want the city itself.** Wanting to live somewhere is a perfectly good reason, and it is more honest than dressing it as a career necessity.
 - **Your life is portable right now.** No partner's job to consider, no school-age children, no caring responsibilities.
@@ -117,7 +117,7 @@ Do that search before you price a moving van.
 
 - **Comparable work exists nearby** and you had not looked properly.
 - **Housing arithmetic destroys the salary gain.**
-- **Your support network is load-bearing** — childcare by family, a partner's established career, care for a relative.
+- **Your support network is load-bearing** - childcare by family, a partner's established career, care for a relative.
 - **Hybrid arrangements make an occasional long journey acceptable,** turning a daily problem into a weekly one.
 - **You value optionality.** Staying keeps your costs low and your options open; moving raises your fixed costs and narrows them.
 
@@ -133,7 +133,7 @@ Relocation is usually treated as a single irreversible decision made at the offe
 
 **Keep the return route open.** Consider what it would take to move back: is your current housing situation recoverable, would your network still be there, would employers near your home region still be hiring? A move that is expensive to reverse deserves more certainty than one that is not.
 
-**Talk to someone who made the same move.** Someone who relocated from your region to that city two years ago will tell you things no calculation captures — what they underestimated, what they miss and whether they would do it again.
+**Talk to someone who made the same move.** Someone who relocated from your region to that city two years ago will tell you things no calculation captures - what they underestimated, what they miss and whether they would do it again.
 
 None of this is an argument against relocating. It is an argument for sequencing the decision so that the expensive, hard-to-reverse part happens after the cheap, informative part.
 
@@ -153,15 +153,15 @@ As the EU Pay Transparency Directive is implemented, employers must provide info
 
 A data engineer in Groningen assumes he must move to Amsterdam or Utrecht. He starts looking at rooms and calculating what he can afford, and the numbers are uncomfortable.
 
-Before committing, he runs one structured search by category and distance from his home. Inside forty-five minutes he finds an energy-related organisation, two software companies, a healthcare institution and a manufacturer in a town he had never searched — five employers he did not know were hiring for work he can do.
+Before committing, he runs one structured search by category and distance from his home. Inside forty-five minutes he finds an energy-related organisation, two software companies, a healthcare institution and a manufacturer in a town he had never searched - five employers he did not know were hiring for work he can do.
 
 He applies to three and takes a role thirty minutes away. The salary is lower than the Amsterdam roles he was considering, but his rent does not change, his commute is a fraction of what it would have been, and he keeps the sports club and friends he has had for a decade.
 
-Two years later he does move — to Utrecht, for a specific role in a specialism that genuinely concentrates there. By then it is a deliberate choice for a particular job, not a default assumption about where work exists.
+Two years later he does move - to Utrecht, for a specific role in a specialism that genuinely concentrates there. By then it is a deliberate choice for a particular job, not a default assumption about where work exists.
 
 ## If You Do Move: Negotiate the Relocation
 
-Candidates who decide to relocate often treat the move as their own private cost. For a role the employer wants filled, part of it is negotiable — and the offer stage is the only moment when it is.
+Candidates who decide to relocate often treat the move as their own private cost. For a role the employer wants filled, part of it is negotiable - and the offer stage is the only moment when it is.
 
 **Relocation support.** Some Dutch employers contribute to moving costs, temporary housing for the first months, or an allowance for setting up. Larger organisations and those recruiting internationally are most likely to have an existing arrangement; smaller ones may agree something ad hoc if asked.
 
@@ -173,7 +173,7 @@ Candidates who decide to relocate often treat the move as their own private cost
 
 **Travel reimbursement during the transition.** If you commute long distance for three months before moving, ask whether that period is covered.
 
-For international candidates there may also be tax facilities for employees recruited from abroad, whose conditions have changed in recent years — check the current rules with the Tax Administration or an adviser rather than assuming what applied previously.
+For international candidates there may also be tax facilities for employees recruited from abroad, whose conditions have changed in recent years - check the current rules with the Tax Administration or an adviser rather than assuming what applied previously.
 
 Ask once, clearly, as part of the offer conversation. The worst outcome is a polite no.
 
@@ -187,7 +187,7 @@ Ask once, clearly, as part of the offer conversation. The worst outcome is a pol
 
 ## Where to Start
 
-Before you price a move, spend one session searching by category and distance from your current home, and write down every employer within your radius that is hiring — then compare that list with the Randstad option.
+Before you price a move, spend one session searching by category and distance from your current home, and write down every employer within your radius that is hiring - then compare that list with the Randstad option.
 
 Browse current AI, machine learning and data jobs by distance from where you live, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -203,7 +203,7 @@ Sometimes, but frequently not once housing, commuting and setup costs are includ
 It depends on office days and reliability. Two office days at distance is manageable for many people; five is the arrangement people most often abandon after a year.
 
 ### (Scenario: candidate who found few local roles) What if I searched locally and found nothing?
-Check whether you searched by city name rather than by distance and category — that combination hides employers in nearby towns and roles whose titles avoid AI vocabulary.
+Check whether you searched by city name rather than by distance and category - that combination hides employers in nearby towns and roles whose titles avoid AI vocabulary.
 
 ### (Scenario: candidate with family constraints) How should family circumstances weigh in this decision?
 Heavily. A partner's career, schools and nearby family support are load-bearing arrangements that are expensive to rebuild and rarely reflected in a salary difference.
@@ -213,11 +213,11 @@ Heavily. A partner's career, schools and nearby family support are load-bearing 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I need to move to the Randstad for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Often not — AI and data work is spread across every Dutch region and sector."}},
+    {"@type": "Question", "name": "Do I need to move to the Randstad for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Often not - AI and data work is spread across every Dutch region and sector."}},
     {"@type": "Question", "name": "Does a higher Randstad salary compensate for higher rent?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently not, once housing, commuting and setup costs are included."}},
     {"@type": "Question", "name": "Is commuting better than relocating?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the number of office days; two is manageable, five is often abandoned."}},
     {"@type": "Question", "name": "What if I searched locally and found nothing?", "acceptedAnswer": {"@type": "Answer", "text": "Check whether you searched by city name instead of by distance and category."}},
-    {"@type": "Question", "name": "How should family circumstances weigh in this decision?", "acceptedAnswer": {"@type": "Answer", "text": "Heavily — support networks are expensive to rebuild and rarely offset by salary."}}
+    {"@type": "Question", "name": "How should family circumstances weigh in this decision?", "acceptedAnswer": {"@type": "Answer", "text": "Heavily - support networks are expensive to rebuild and rarely offset by salary."}}
   ]
 }
 </script>

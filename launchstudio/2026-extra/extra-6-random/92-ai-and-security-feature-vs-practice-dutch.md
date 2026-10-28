@@ -19,15 +19,15 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Hier is een mening die u een slechte week kan besparen: één enkele AI-aangedreven beveiligingsfunctie in uw product is marketingtekst, geen beveiligingshouding. Het is prima om te hebben. Het is niet het ding dat de gegevens van uw gebruikers veilig houdt. Ik heb oprichters zien wijzen naar één indrukwekkend klinkende capaciteit — anomaliedetectie, slimme fraudesignalen, een "AI-gemonitord"-badge — en de onderliggende vraag "is deze applicatie daadwerkelijk veilig?" als beantwoord behandelen. Dat is ze niet. "AI en beveiliging" wordt gebruikt alsof het één vaststaande relatie benoemt, terwijl het in de praktijk twee heel verschillende dingen benoemt die oprichters blijven verwarren: een functie die u uitbrengt, en een praktijk die u onderhoudt.
+Hier is een mening die u een slechte week kan besparen: één enkele AI-aangedreven beveiligingsfunctie in uw product is marketingtekst, geen beveiligingshouding. Het is prima om te hebben. Het is niet het ding dat de gegevens van uw gebruikers veilig houdt. Ik heb oprichters zien wijzen naar één indrukwekkend klinkende capaciteit - anomaliedetectie, slimme fraudesignalen, een "AI-gemonitord"-badge - en de onderliggende vraag "is deze applicatie daadwerkelijk veilig?" als beantwoord behandelen. Dat is ze niet. "AI en beveiliging" wordt gebruikt alsof het één vaststaande relatie benoemt, terwijl het in de praktijk twee heel verschillende dingen benoemt die oprichters blijven verwarren: een functie die u uitbrengt, en een praktijk die u onderhoudt.
 
 ## Een functie is een vinkje. Een praktijk is een agenda.
 
-Een beveiligingsfunctie is iets dat u eenmalig bouwt en waarnaar u wijst. Het staat in het pitch deck, het staat op de landingspagina, het maakt een mooie schermafbeelding. Een beveiligingspraktijk is anders van aard — het is de discipline van het volgens schema patchen van afhankelijkheden, het beoordelen wie toegang heeft tot wat en dat inperken, het lezen van logs op tekenen van misbruik, en het herhaaldelijk toetsen van uw eigen aannames naarmate het product groeit. Een functie heeft een finishlijn. Een praktijk niet; die gaat gewoon door, of hij verwatert.
+Een beveiligingsfunctie is iets dat u eenmalig bouwt en waarnaar u wijst. Het staat in het pitch deck, het staat op de landingspagina, het maakt een mooie schermafbeelding. Een beveiligingspraktijk is anders van aard - het is de discipline van het volgens schema patchen van afhankelijkheden, het beoordelen wie toegang heeft tot wat en dat inperken, het lezen van logs op tekenen van misbruik, en het herhaaldelijk toetsen van uw eigen aannames naarmate het product groeit. Een functie heeft een finishlijn. Een praktijk niet; die gaat gewoon door, of hij verwatert.
 
 ## Waarom dit onderscheid verloren gaat in door AI gebouwde producten
 
-AI-codeertools zijn oprecht goed in het produceren van een geïsoleerde functie die eruitziet als een beveiligingswin — een door AI gemarkeerde verdachte inlogpoging, een slim contentfilter, een anomaliescore gekoppeld aan een transactie. Dit zijn echte capaciteiten en ze zijn niet nep. Het probleem is dat ze een smalle vraag beantwoorden ("kunnen we dit ene patroon detecteren?") terwijl ze de brede vraag ("wordt het systeem als geheel veilig onderhouden?") volledig onaangeroerd laten. Een oprichter die de smalle winst uitbrengt, kan weglopen met het geloof dat hij de brede vraag heeft afgehandeld, omdat niets in de output van de tool het verschil signaleerde.
+AI-codeertools zijn oprecht goed in het produceren van een geïsoleerde functie die eruitziet als een beveiligingswin - een door AI gemarkeerde verdachte inlogpoging, een slim contentfilter, een anomaliescore gekoppeld aan een transactie. Dit zijn echte capaciteiten en ze zijn niet nep. Het probleem is dat ze een smalle vraag beantwoorden ("kunnen we dit ene patroon detecteren?") terwijl ze de brede vraag ("wordt het systeem als geheel veilig onderhouden?") volledig onaangeroerd laten. Een oprichter die de smalle winst uitbrengt, kan weglopen met het geloof dat hij de brede vraag heeft afgehandeld, omdat niets in de output van de tool het verschil signaleerde.
 
 ## Wat 'praktijk' daadwerkelijk kost, en waarom het onzichtbaar is totdat het dat niet meer is
 
@@ -37,7 +37,7 @@ Praktijk ziet eruit als onglamoureus, terugkerend werk: het roteren van credenti
 
 Niet "hebben we een AI-beveiligingsfunctie?" maar "wie doet het terugkerende werk om dit systeem veilig te houden, en volgens welk schema?" Als het eerlijke antwoord "nog niemand" is, dan is dat de leemte die u moet dichten voordat de functie zijn volgende schermafbeelding krijgt.
 
-Achter de lanceringen van LaunchStudio staat het team van Manifera van meer dan 120 doorgewinterde technici, en onze hub in Singapore werkt met oprichters specifiek aan het omzetten van "we hebben een beveiligingsfunctie" naar "we hebben een beveiligingspraktijk" — toegangsbeoordelingen, patchcadans en monitoring die stilletjes op de achtergrond draait in plaats van in een pitch deck te leven. Als u wilt weten hoe die doorlopende dekking eruitziet, leggen onze [details over het supportpakket](https://launchstudio.eu/nl/#packages) dit uit, en Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde discipline toe voor enterprise-klanten op veel grotere schaal.
+Achter de lanceringen van LaunchStudio staat het team van Manifera van meer dan 120 doorgewinterde technici, en onze hub in Singapore werkt met oprichters specifiek aan het omzetten van "we hebben een beveiligingsfunctie" naar "we hebben een beveiligingspraktijk" - toegangsbeoordelingen, patchcadans en monitoring die stilletjes op de achtergrond draait in plaats van in een pitch deck te leven. Als u wilt weten hoe die doorlopende dekking eruitziet, leggen onze [details over het supportpakket](https://launchstudio.eu/nl/#packages) dit uit, en Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde discipline toe voor enterprise-klanten op veel grotere schaal.
 
 ## De Vier Praktijken Die Schuilgaan Achter het Woord 'Beveiliging'
 
@@ -56,7 +56,7 @@ Wanneer u deze vier disciplines structureel op orde heeft, is uw applicatie veil
 
 ### Een AI-native oprichter in actie: de functie die niet de praktijk was
 
-Levi Uithoorn, oprichter in Uithoorn, bouwde VeiligMeld — een tool voor incidentmelding — met Bolt. VeiligMeld werd uitgebracht met een oprecht nuttige AI-aangedreven signaleringsfunctie die meldingen markeerde die waarschijnlijk dringende opvolging nodig hadden. Levi wees naar die functie, in investeerdersgesprekken en tegenover vroege gebruikers, als bewijs dat de app veilig was. Het klonk als een redelijke afkorting. Het was ook fout, omdat beveiliging als doorlopende praktijk — het patchen van afhankelijkheden, het beoordelen wie beheerderstoegang had, het monitoren van ongewone accountactiviteit — nooit daadwerkelijk was opgezet. De signaleringsfunctie en de beveiligingshouding van het systeem waren twee ongerelateerde dingen die hetzelfde woord droegen.
+Levi Uithoorn, oprichter in Uithoorn, bouwde VeiligMeld - een tool voor incidentmelding - met Bolt. VeiligMeld werd uitgebracht met een oprecht nuttige AI-aangedreven signaleringsfunctie die meldingen markeerde die waarschijnlijk dringende opvolging nodig hadden. Levi wees naar die functie, in investeerdersgesprekken en tegenover vroege gebruikers, als bewijs dat de app veilig was. Het klonk als een redelijke afkorting. Het was ook fout, omdat beveiliging als doorlopende praktijk - het patchen van afhankelijkheden, het beoordelen wie beheerderstoegang had, het monitoren van ongewone accountactiviteit - nooit daadwerkelijk was opgezet. De signaleringsfunctie en de beveiligingshouding van het systeem waren twee ongerelateerde dingen die hetzelfde woord droegen.
 
 De leemte kwam aan het licht toen bleek dat een routineuze afhankelijkheid in de stack van VeiligMeld een bekende kwetsbaarheid had, maanden na de release. Niemand had de kwetsbaarheidsadviezen bijgehouden, omdat niemand daarvoor was aangewezen. Tegen de tijd dat Levi ervan hoorde, had de kwetsbare versie al weken in productie gedraaid, bereikbaar voor iedereen die wist waar te kijken.
 
@@ -65,9 +65,9 @@ De technici van LaunchStudio, ondersteund door Manifera, patchten de kwetsbare a
 **Resultaat:** VeiligMeld heeft nu een gedocumenteerde maandelijkse reviewcyclus, en Levi behandelt de AI-signaleringsfunctie als één input naast andere in plaats van als bewijs van beveiliging.
 
 > *"Ik dacht dat een AI-beveiligingsfunctie hebben betekende dat we gedekt waren. Het betekende dat we één goede tool hadden. De praktijk was het deel dat nog niemand had opgebouwd."*
-> — **Levi Uithoorn, oprichter, VeiligMeld (Uithoorn)**
+> - **Levi Uithoorn, oprichter, VeiligMeld (Uithoorn)**
 
-**Kosten en tijdlijn:** € 900 (patch van afhankelijkheid, toegangsbeoordeling en monitoringopzet) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 900 (patch van afhankelijkheid, toegangsbeoordeling en monitoringopzet) - voltooid in 4 werkdagen.
 
 ---
 
@@ -79,7 +79,7 @@ Een functie is één enkele gebouwde capaciteit, zoals anomaliedetectie op één
 
 ### Kan een door AI gebouwde app veilig zijn zonder toegewijd beveiligingsteam?
 
-Ja, maar er moet iemand — intern of extern — verantwoordelijk zijn voor de terugkerende praktijk: het controleren van kwetsbaarheidsadviezen, het beoordelen van toegang en het monitoren van logs, zelfs als die iemand een parttime inzet is in plaats van een volledige aanstelling.
+Ja, maar er moet iemand - intern of extern - verantwoordelijk zijn voor de terugkerende praktijk: het controleren van kwetsbaarheidsadviezen, het beoordelen van toegang en het monitoren van logs, zelfs als die iemand een parttime inzet is in plaats van een volledige aanstelling.
 
 ### Hoe helpt LaunchStudio met beveiligingspraktijk, niet alleen functies?
 
@@ -87,7 +87,7 @@ Het team van LaunchStudio, ondersteund door de meer dan 120 technici van Manifer
 
 ### Is het hebben van één AI-aangedreven beveiligingsfunctie op zichzelf een rode vlag?
 
-Nee — het is een legitieme capaciteit. De rode vlag is die ene functie behandelen als bewijs dat het hele systeem veilig is, wat een andere en veel bredere claim is.
+Nee - het is een legitieme capaciteit. De rode vlag is die ene functie behandelen als bewijs dat het hele systeem veilig is, wat een andere en veel bredere claim is.
 
 ### Waar is het team van LaunchStudio gevestigd voor oprichters in Zuidoost-Azië?
 
@@ -111,7 +111,7 @@ LaunchStudio heeft een hub in Singapore die de regio Zuidoost-Azië bedient, naa
       "name": "Kan een door AI gebouwde app veilig zijn zonder toegewijd beveiligingsteam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, maar er moet iemand — intern of extern — verantwoordelijk zijn voor de terugkerende praktijk: het controleren van kwetsbaarheidsadviezen, het beoordelen van toegang en het monitoren van logs, zelfs als die iemand een parttime inzet is in plaats van een volledige aanstelling."
+        "text": "Ja, maar er moet iemand - intern of extern - verantwoordelijk zijn voor de terugkerende praktijk: het controleren van kwetsbaarheidsadviezen, het beoordelen van toegang en het monitoren van logs, zelfs als die iemand een parttime inzet is in plaats van een volledige aanstelling."
       }
     },
     {
@@ -127,7 +127,7 @@ LaunchStudio heeft een hub in Singapore die de regio Zuidoost-Azië bedient, naa
       "name": "Is het hebben van één AI-aangedreven beveiligingsfunctie op zichzelf een rode vlag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — het is een legitieme capaciteit. De rode vlag is die ene functie behandelen als bewijs dat het hele systeem veilig is, wat een andere en veel bredere claim is."
+        "text": "Nee - het is een legitieme capaciteit. De rode vlag is die ene functie behandelen als bewijs dat het hele systeem veilig is, wat een andere en veel bredere claim is."
       }
     },
     {

@@ -8,7 +8,7 @@ Een beveiligingsvragenlijst is een risico-inventarisatie, geen eindexamen om te 
 ❌ Uw subverwerkerslijst onder tijdsdruk uit het geheugen opdiepen met alle fouten van dien
 
 ✅ Koppel elke eerlijke "nee" direct aan een concrete, specifieke compenserende maatregel
-✅ Stel MFA voor het hele team dezelfde middag nog verplicht in — een instelling van een kwartier
+✅ Stel MFA voor het hele team dezelfde middag nog verplicht in - een instelling van een kwartier
 ✅ Schrijf een beknopt, realistisch incidentresponsplan vóórdat een vragenlijst erom vraagt
 ✅ Houd uw subverwerkerslijst actueel, zodat dit onderdeel minuten kost in plaats van dagen
 

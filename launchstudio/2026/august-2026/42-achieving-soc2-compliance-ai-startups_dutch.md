@@ -31,13 +31,13 @@ Doelgroep: CTO's / Security Engineers / Founders
 }
 </script>
 
-U heeft zojuist een succesvolle presentatie gegeven aan de directie van een Fortune 500-onderneming. Ze zijn enthousiast over uw AI-tool en gaan akkoord met het jaarlijkse licentiebedrag van € 60.000. Vervolgens zetten ze hun Chief Information Security Officer (CISO) in de cc, die één cruciale vraag stelt: *"Kunt u ons uw SOC 2 Type II rapport toesturen?"* Is uw antwoord "nee", dan strandt de deal in een langdurig security-onderzoek van 2 tot 4 maanden — een wachttijd die de meeste startups qua cashflow simpelweg niet overleven. In B2B SaaS is SOC 2 geen optionele onderscheiding, maar uw verplichte verkoopvergunning voor het hogere zakelijke segment.
+U heeft zojuist een succesvolle presentatie gegeven aan de directie van een Fortune 500-onderneming. Ze zijn enthousiast over uw AI-tool en gaan akkoord met het jaarlijkse licentiebedrag van € 60.000. Vervolgens zetten ze hun Chief Information Security Officer (CISO) in de cc, die één cruciale vraag stelt: *"Kunt u ons uw SOC 2 Type II rapport toesturen?"* Is uw antwoord "nee", dan strandt de deal in een langdurig security-onderzoek van 2 tot 4 maanden - een wachttijd die de meeste startups qua cashflow simpelweg niet overleven. In B2B SaaS is SOC 2 geen optionele onderscheiding, maar uw verplichte verkoopvergunning voor het hogere zakelijke segment.
 
 ## Wat is SOC 2 Precies?
 
 SOC 2 is ontwikkeld door het American Institute of CPAs (AICPA) en is een formele auditing-standaard voor software- en serviceorganisaties. Het toetst hoe een onderneming klantdata beheert op basis van vijf "Trust Services Criteria": Beveiliging (Security), Beschikbaarheid (Availability), Verwerkingsintegriteit (Processing Integrity), Vertrouwelijkheid (Confidentiality) en Privacy.
 
-In tegenstelling tot ISO 27001 kent SOC 2 geen vaste checklist met verplichte maatregelen — u definieert uw eigen interne beveiligingscontroles en een onafhankelijk registeraccountantskantoor (CPA-firm) toetst of u deze controles daadwerkelijk consistent naleeft. Voor een AI-startup ligt de primaire focus vrijwel altijd op **Security** en **Confidentiality**: zakelijke klanten eisen onafhankelijk bewijs dat hun data niet kan uitlekken naar publieke AI-trainingsmodellen of andere klanten (tenants).
+In tegenstelling tot ISO 27001 kent SOC 2 geen vaste checklist met verplichte maatregelen - u definieert uw eigen interne beveiligingscontroles en een onafhankelijk registeraccountantskantoor (CPA-firm) toetst of u deze controles daadwerkelijk consistent naleeft. Voor een AI-startup ligt de primaire focus vrijwel altijd op **Security** en **Confidentiality**: zakelijke klanten eisen onafhankelijk bewijs dat hun data niet kan uitlekken naar publieke AI-trainingsmodellen of andere klanten (tenants).
 
 ## Het Tijdperk van Compliance-Automatisering: Vanta & Drata
 
@@ -93,7 +93,7 @@ Zij werkte samen met **LaunchStudio (door Manifera)** om automatische encrypties
 
 **Resultaat:** Glansrijk audit-ready verklaard en een zakelijk pilot-contract van € 40.000 definitief getekend.
 
-**Kosten & Tijdlijn:** €4.800 (SOC 2 Compliance Pakket) — productieklaar en binnen 12 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €4.800 (SOC 2 Compliance Pakket) - productieklaar en binnen 12 werkdagen live opgeleverd.
 
 ---
 
@@ -117,7 +117,7 @@ Gebrekkige administratieve discipline: ontbrekende 2FA op personeelsaccounts, ge
 
 ### Hoe ondersteunt LaunchStudio bij een SOC 2 traject?
 
-LaunchStudio bouwt de vereiste technische fundamenten — zoals encryptiesleutelrotatie, tenant-isolatie in vector-databases en gecentraliseerde audit-logging — ondersteund door 11+ jaar enterprise-ervaring van Manifera.
+LaunchStudio bouwt de vereiste technische fundamenten - zoals encryptiesleutelrotatie, tenant-isolatie in vector-databases en gecentraliseerde audit-logging - ondersteund door 11+ jaar enterprise-ervaring van Manifera.
 
 <script type="application/ld+json">
 {
@@ -161,7 +161,7 @@ LaunchStudio bouwt de vereiste technische fundamenten — zoals encryptiesleutel
       "name": "Hoe ondersteunt LaunchStudio bij een SOC 2 traject?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio bouwt de vereiste technische fundamenten — zoals encryptiesleutelrotatie, tenant-isolatie in vector-databases en gecentraliseerde audit-logging — ondersteund door 11+ jaar enterprise-ervaring van Manifera."
+        "text": "LaunchStudio bouwt de vereiste technische fundamenten - zoals encryptiesleutelrotatie, tenant-isolatie in vector-databases en gecentraliseerde audit-logging - ondersteund door 11+ jaar enterprise-ervaring van Manifera."
       }
     }
   ]

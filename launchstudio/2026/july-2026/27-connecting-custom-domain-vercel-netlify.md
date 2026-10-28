@@ -9,7 +9,7 @@ Moving your AI-built app from a preview URL (like `my-project.vercel.app`) to yo
 
 ## Step 1: Buy Your Domain
 
-If you haven't already, purchase your domain from a reputable registrar. Namecheap, Google Domains (now Squarespace), and Cloudflare are popular choices. You do not need to buy web hosting or SSL certificates from the registrar—Vercel or Netlify will handle that for free. You only need the domain name itself.
+If you haven't already, purchase your domain from a reputable registrar. Namecheap, Google Domains (now Squarespace), and Cloudflare are popular choices. You do not need to buy web hosting or SSL certificates from the registrar - Vercel or Netlify will handle that for free. You only need the domain name itself.
 
 ## Step 2: Add the Domain to Your Hosting Platform
 
@@ -46,7 +46,7 @@ Look for existing A Records or CNAME records that might conflict. Delete any def
 
 ## Step 5: Wait for Propagation and SSL
 
-Once you save the records in your registrar, return to your Vercel or Netlify dashboard. You will need to wait for "DNS Propagation"—the process of updating the global internet phonebook with your new address.
+Once you save the records in your registrar, return to your Vercel or Netlify dashboard. You will need to wait for "DNS Propagation" - the process of updating the global internet phonebook with your new address.
 
 This usually takes 5 to 15 minutes, though it can occasionally take a few hours. Once the platform detects the correct DNS records, the error message will disappear, and the status will change to "Valid Configuration."
 
@@ -80,7 +80,7 @@ Alexander partnered with **LaunchStudio (by Manifera)** to make the product laun
 
 **Result:** Alexander secured the portal with HTTPS, resolving browser security warning alerts for visitors.
 
-**Cost & Timeline:** €800 (Domain Configuration Package) — production-ready and deployed in 2 business days.
+**Cost & Timeline:** €800 (Domain Configuration Package) - production-ready and deployed in 2 business days.
 
 ---
 

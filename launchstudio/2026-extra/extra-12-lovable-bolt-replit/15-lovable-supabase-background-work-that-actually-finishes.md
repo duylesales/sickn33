@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable Supabase: Background Work That Actually Finishes",
-  "description": "Work that happens after the user clicks — emails, reports, imports, model calls — needs a queue rather than a hopeful function call. Building one in Postgres, with retries, idempotency and visibility.",
+  "description": "Work that happens after the user clicks - emails, reports, imports, model calls - needs a queue rather than a hopeful function call. Building one in Postgres, with retries, idempotency and visibility.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-13",
@@ -34,7 +34,7 @@ Four things are wrong with it.
 
 Serverless environments may terminate the instance as soon as the response is sent, so the work you started is killed part-way through, deterministically, under exactly the conditions you cannot reproduce locally.
 
-There is no retry. Whatever failed — a provider timeout, a rate limit, a network blip — simply did not happen, and nothing knows.
+There is no retry. Whatever failed - a provider timeout, a rate limit, a network blip - simply did not happen, and nothing knows.
 
 There is no record. You cannot tell a customer whether their import ran, because nothing wrote down that it was attempted.
 
@@ -48,7 +48,7 @@ That property matters more than it sounds. If the user's record and the job to e
 
 The table holds what you would expect: a job type, its parameters, a status, when it should run, how many attempts have been made, the last error, and timestamps. Workers claim jobs, run them, and mark them done or failed.
 
-The one piece of craft is claiming. Two workers must never take the same job, which in Postgres is a single statement that selects the next due job, skips rows another worker has locked, and marks it as taken — all atomically. Written correctly it is five lines; written incorrectly it produces duplicate emails at exactly the moment you least want them.
+The one piece of craft is claiming. Two workers must never take the same job, which in Postgres is a single statement that selects the next due job, skips rows another worker has locked, and marks it as taken - all atomically. Written correctly it is five lines; written incorrectly it produces duplicate emails at exactly the moment you least want them.
 
 ## Jobs Must Be Safe to Run Twice
 
@@ -62,7 +62,7 @@ The test is easy and worth running on every job you have: execute it twice with 
 
 Not every failure deserves the same response.
 
-A timeout or a rate limit is worth retrying, with an increasing delay — a few seconds, then a minute, then five, then an hour. An invalid email address or a malformed row will fail identically forever, and retrying it is only a way of filling your logs.
+A timeout or a rate limit is worth retrying, with an increasing delay - a few seconds, then a minute, then five, then an hour. An invalid email address or a malformed row will fail identically forever, and retrying it is only a way of filling your logs.
 
 So distinguish the two in code: permanent failures are marked failed immediately, transient ones are rescheduled with backoff. After a handful of attempts, everything stops and lands somewhere a human will look.
 
@@ -84,13 +84,13 @@ Whichever you choose, set a limit on how many jobs run concurrently. The reason 
 
 Asynchronous work changes the interface, and this is the part most implementations skip.
 
-The user needs to know their request was accepted, that it is in progress, and when it finished — and if it failed, what to do. A spinner that never resolves because the page has no way of learning the outcome is worse than a slow request.
+The user needs to know their request was accepted, that it is in progress, and when it finished - and if it failed, what to do. A spinner that never resolves because the page has no way of learning the outcome is worse than a slow request.
 
-The simplest pattern that works: create the job, return its identifier, and have the page poll for its status. For anything long, add an email when it completes. For anything a user initiated deliberately — an import, an export, a bulk action — keep a visible history, because the first question when something is wrong is always whether it ran at all.
+The simplest pattern that works: create the job, return its identifier, and have the page poll for its status. For anything long, add an email when it completes. For anything a user initiated deliberately - an import, an export, a bulk action - keep a visible history, because the first question when something is wrong is always whether it ran at all.
 
 ## Scheduled Work Is the Same Problem
 
-Recurring jobs — nightly reports, reminder emails, subscription checks, cleanup — belong in the same system rather than in separate scheduled functions.
+Recurring jobs - nightly reports, reminder emails, subscription checks, cleanup - belong in the same system rather than in separate scheduled functions.
 
 The reason is visibility. A scheduled function that silently stops running is one of the most common failures in small products, and it can go unnoticed for months because nothing is expected to appear when it works. If the schedule enqueues a job instead, then the absence of that job is visible in the same place as everything else, and an alert on "the nightly job has not run in 26 hours" is trivial rather than bespoke.
 
@@ -98,21 +98,21 @@ Keep the schedule thin: it creates jobs, it does not do work. That way a slow ru
 
 ## Keep the History, Prune the Queue
 
-A job table grows quickly — a product doing modest volume can accumulate hundreds of thousands of rows in a year — and a queue table that has become large is a queue table that claims jobs slowly.
+A job table grows quickly - a product doing modest volume can accumulate hundreds of thousands of rows in a year - and a queue table that has become large is a queue table that claims jobs slowly.
 
 Separate the two purposes. The queue holds work that is pending, running or recently finished. The history holds what happened, for as long as you need to answer questions about it.
 
 In practice that means a cleanup job, running nightly, that moves completed jobs older than a few days into an archive table or deletes them outright if the information has no value. Failed jobs stay until someone has dealt with them, which is the point of having them.
 
-Two details matter. Index the queue for the claiming query specifically — pending jobs due now, ordered by priority and time — and prefer a partial index covering only pending rows, so the index stays small no matter how much history exists behind it. And keep job parameters small: a job referencing a row by identifier stays useful forever, while a job carrying an entire uploaded file in its parameters makes the table enormous and the archive unusable.
+Two details matter. Index the queue for the claiming query specifically - pending jobs due now, ordered by priority and time - and prefer a partial index covering only pending rows, so the index stays small no matter how much history exists behind it. And keep job parameters small: a job referencing a row by identifier stays useful forever, while a job carrying an entire uploaded file in its parameters makes the table enormous and the archive unusable.
 
-The symptom of getting this wrong is distinctive and confusing when it appears — a queue that gets slower over months while processing the same amount of work per day, because every claim is searching a table that is now mostly finished jobs from last spring.
+The symptom of getting this wrong is distinctive and confusing when it appears - a queue that gets slower over months while processing the same amount of work per day, because every claim is searching a table that is now mostly finished jobs from last spring.
 
 ## Setting This Up
 
 For an existing product this is typically two to three days: a job table with claiming that is safe under concurrency, jobs enqueued in the same transaction as the data change that caused them, every existing fire-and-forget call converted, idempotency verified by running each job twice, permanent and transient failures distinguished with backoff and a maximum attempt count, a visible failed-job list with an alert, a worker running on a schedule with bounded concurrency, status and history surfaced to users for anything they initiated, and recurring work moved onto the queue so its absence is detectable.
 
-LaunchStudio builds this as part of production readiness, and it usually replaces three or four places where work was started and hoped for. The engineers are Manifera's — eleven years, 120+ engineers, and a good deal of queue code in production for clients including Vodafone and TNO.
+LaunchStudio builds this as part of production readiness, and it usually replaces three or four places where work was started and hoped for. The engineers are Manifera's - eleven years, 120+ engineers, and a good deal of queue code in production for clients including Vodafone and TNO.
 
 [Tell us what your app does after the user clicks send](https://launchstudio.eu/en/#contact).
 
@@ -124,16 +124,16 @@ Eva Broekhuizen built Ledenimport in Lovable: membership administration for spor
 
 Imports of 50 members worked. Imports of 600 sometimes worked. The function was called without waiting and processed rows in a loop, so in a serverless environment it was terminated somewhere between row 200 and row 500 when the response had already been sent.
 
-Clubs discovered this by noticing members missing. Their response was to import the file again, which created duplicates of everyone who had been processed the first time — and because the second run was also cut short, a third attempt produced a membership list nobody could trust. Two clubs spent an evening deduplicating by hand.
+Clubs discovered this by noticing members missing. Their response was to import the file again, which created duplicates of everyone who had been processed the first time - and because the second run was also cut short, a third attempt produced a membership list nobody could trust. Two clubs spent an evening deduplicating by hand.
 
-Three business days: a jobs table with atomic claiming; the import split into one job per batch of 50 rows, enqueued in the same transaction that records the upload, so an upload always has its jobs and a rollback leaves neither; every row keyed on the club's own membership number so re-running updates rather than inserting, making the whole import safe to repeat; transient failures retried with backoff and permanent ones — malformed rows, invalid dates — recorded against the upload with the row number and reason; a maximum of three attempts, after which the job lands on a failed list with a daily alert; the worker running every minute with a concurrency limit of five; an import status page showing progress, completion and per-row errors, with an email when a long import finishes; and the nightly membership-expiry job moved onto the same queue, where its absence became visible.
+Three business days: a jobs table with atomic claiming; the import split into one job per batch of 50 rows, enqueued in the same transaction that records the upload, so an upload always has its jobs and a rollback leaves neither; every row keyed on the club's own membership number so re-running updates rather than inserting, making the whole import safe to repeat; transient failures retried with backoff and permanent ones - malformed rows, invalid dates - recorded against the upload with the row number and reason; a maximum of three attempts, after which the job lands on a failed list with a daily alert; the worker running every minute with a concurrency limit of five; an import status page showing progress, completion and per-row errors, with an email when a long import finishes; and the nightly membership-expiry job moved onto the same queue, where its absence became visible.
 
-**Result:** imports of any size complete, and the largest club's 3,400-member file — which had never succeeded — ran in four minutes across 68 jobs. Duplicate-member support tickets went from the dominant category to none in the following season, and the expiry job was discovered to have not run for eleven days, which nobody had noticed.
+**Result:** imports of any size complete, and the largest club's 3,400-member file - which had never succeeded - ran in four minutes across 68 jobs. Duplicate-member support tickets went from the dominant category to none in the following season, and the expiry job was discovered to have not run for eleven days, which nobody had noticed.
 
 > *"Clubs were importing three times because it never finished, and every attempt made the data worse. They thought the product was unreliable. They were right, they just had the wrong reason."*
-> — **Eva Broekhuizen, Founder, Ledenimport (Amersfoort)**
+> - **Eva Broekhuizen, Founder, Ledenimport (Amersfoort)**
 
-**Cost & Timeline:** €3,200 (job table and claiming, import batching with transactional enqueue, idempotent row handling, retry policy with permanent failure classification, failed-job alerting, bounded worker, user-facing progress and error reporting, scheduled work migration) — completed in 3 business days.
+**Cost & Timeline:** €3,200 (job table and claiming, import batching with transactional enqueue, idempotent row handling, retry policy with permanent failure classification, failed-job alerting, bounded worker, user-facing progress and error reporting, scheduled work migration) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -167,7 +167,7 @@ Return a job identifier, let the page poll its status, and email when it complet
       "name": "Why does my background function stop half way through?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Serverless instances can be terminated once the response is sent, killing work that was started without being awaited — with no record that it was attempted."
+        "text": "Serverless instances can be terminated once the response is sent, killing work that was started without being awaited - with no record that it was attempted."
       }
     },
     {
@@ -183,7 +183,7 @@ Return a job identifier, let the page poll its status, and email when it complet
       "name": "How do I stop retries sending duplicate emails?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Make jobs idempotent — record what was sent and check before acting — then verify by running each job twice."
+        "text": "Make jobs idempotent - record what was sent and check before acting - then verify by running each job twice."
       }
     },
     {

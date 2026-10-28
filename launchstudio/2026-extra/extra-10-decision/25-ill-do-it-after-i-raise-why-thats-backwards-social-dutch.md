@@ -15,7 +15,7 @@ Waarom de volgorde omdraaien u enorme hefboom geeft:
 ✅ Voorkomt dat investeerders risico-afslagen van 10–20% bedingen of vertragende opschortende voorwaarden eisen
 ✅ Rust tijdens de gesprekken: u hoeft geen brandjes te blussen terwijl de handtekeningen gezet moeten worden
 
-Bij **LaunchStudio**, ondersteund door Manifera, maken onze senior engineers uw AI-prototype en SaaS-infrastructuur investeerdersproof — vóórdat een externe auditor er vragen over stelt.
+Bij **LaunchStudio**, ondersteund door Manifera, maken onze senior engineers uw AI-prototype en SaaS-infrastructuur investeerdersproof - vóórdat een externe auditor er vragen over stelt.
 
 💡 Zo hielpen we Lukas Bergström een multi-tenancy vraagstuk binnen 9 dagen op te lossen, waarna zijn €900k ronde zonder waarderingskorting sloot.
 

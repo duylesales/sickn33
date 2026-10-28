@@ -1,6 +1,6 @@
 🦄 **Stop hunting for Unicorns. The "Full-Stack" developer is a myth.**
 
-If you are a Founder looking for a single **app developer in Amsterdam** to build your UI, write the React Native code, architect the AWS backend, and manage the database—you are making a fatal mistake.
+If you are a Founder looking for a single **app developer in Amsterdam** to build your UI, write the React Native code, architect the AWS backend, and manage the database - you are making a fatal mistake.
 
 In 2026, technology is too complex for one person. If you hire a solo developer, you are guaranteeing two things:
 1️⃣ **Fragile Architecture:** They will be great at Frontend, but terrible at DevOps/Security. Your app will look nice but collapse under load.

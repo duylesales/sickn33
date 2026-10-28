@@ -1,11 +1,11 @@
-🚨 Five and a half hours a week. That's what Nadia actually had for Tarievenwijzer after a full-time job — not the fifteen she'd planned. 😳
+🚨 Five and a half hours a week. That's what Nadia actually had for Tarievenwijzer after a full-time job - not the fifteen she'd planned. 😳
 
 A side project doesn't slip by weeks, it slips by quarters, unless the plan fits real seventy-minute sessions: 🧠
 
 ❌ Her winter plan was to learn permissions herself, on an unrealistic hours estimate
 ❌ Role separation between municipal and supplier users didn't exist in the codebase
 ❌ A spreadsheet-parsing API key sat exposed in the client bundle
-❌ Unpredictable work — an authorization sweep — doesn't fit a Thursday evening
+❌ Unpredictable work - an authorization sweep - doesn't fit a Thursday evening
 
 ✅ Four gates with dates beat eighteen months of Thursdays with nothing decided
 ✅ Buy the work whose duration you can't predict, keep work that fits bounded sessions

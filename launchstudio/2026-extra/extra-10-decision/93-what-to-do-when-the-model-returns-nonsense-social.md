@@ -2,7 +2,7 @@
 
 Trusting confident-looking AI output without checking it is how this happens. Here's what he found: 🧠
 
-❌ The model always returned a plausible total, even on unreadable photos — with zero indication of uncertainty
+❌ The model always returned a plausible total, even on unreadable photos - with zero indication of uncertainty
 ❌ Extracted totals went straight into expense records with no validation against the receipt image
 ❌ A 3-month review found 47 entries where the extracted total didn't appear anywhere in the receipt
 ❌ Some of those 47 entries had already gone into VAT returns

@@ -1,6 +1,6 @@
 🚨 Joris had 26 days to demo day, a Bolt-built product, and a plan to spend the sprint on a payroll feature one investor liked. The audit reordered everything. 😳
 
-Demo day isn't a feature deadline — it's the first moment strangers touch your product at once: 🧠
+Demo day isn't a feature deadline - it's the first moment strangers touch your product at once: 🧠
 
 ❌ His API returned any shift record by ID without checking which venue owned it
 ❌ A payroll export nobody in the room would click was eating his last four weeks

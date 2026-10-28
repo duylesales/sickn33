@@ -1,6 +1,6 @@
-🚨 Hidde Brouwer's Offertetool produces quotes for 38 kitchen and bathroom installers, mostly on site in customers' kitchens. Quotes were rendered in the browser from whatever was in the database at the time of download. Then an installer updated their price list — and a homeowner who'd signed in January downloaded the quote again in April. 😳
+🚨 Hidde Brouwer's Offertetool produces quotes for 38 kitchen and bathroom installers, mostly on site in customers' kitchens. Quotes were rendered in the browser from whatever was in the database at the time of download. Then an installer updated their price list - and a homeowner who'd signed in January downloaded the quote again in April. 😳
 
-The April PDF showed different prices — €2,300 lower — and the installer had nothing to prove what had been sent in January. They honoured the lower price. Here's how to generate PDFs and documents that hold up: 🧠
+The April PDF showed different prices - €2,300 lower - and the installer had nothing to prove what had been sent in January. They honoured the lower price. Here's how to generate PDFs and documents that hold up: 🧠
 
 ❌ Quotes made with html2canvas and jsPDF: screenshots, unselectable text, rows cut at page breaks
 ❌ Quotes over three pages silently failing on phones
@@ -8,7 +8,7 @@ The April PDF showed different prices — €2,300 lower — and the installer h
 ❌ No record of what was actually sent
 
 ✅ Server-side rendering with headless Chromium behind a job queue, with retries and alerting
-✅ Documents generated once when sent, stored with a data snapshot, template version and SHA-256 checksum — revisions as new versions
+✅ Documents generated once when sent, stored with a data snapshot, template version and SHA-256 checksum - revisions as new versions
 ✅ A4 print templates with repeated table headers, unbroken rows, page numbers, embedded fonts and PDF/A output
 ✅ User content escaped, network and JavaScript disabled in the renderer, signed links and snapshot tests
 

@@ -6,11 +6,11 @@ The pitch team has twenty years of experience and a dozen comparable rollouts. S
 ❌ **Change Management as an Afterthought:** Technically sound delivery with no training or communication plan stalls on adoption regardless of build quality.
 
 **The Manifera Solution:**
-✅ **Contractual Staffing Commitments:** Named key personnel can't rotate off without consent and a defined transition period — no surprises in week six.
+✅ **Contractual Staffing Commitments:** Named key personnel can't rotate off without consent and a defined transition period - no surprises in week six.
 ✅ **Methodology Fit to the Actual Rollout:** Delivery approach adapted to your specific constraints, not a generic process recited in a pitch deck.
 ✅ **Full Knowledge Transfer:** Documentation and handover terms negotiated upfront, so post-rollout enhancement doesn't depend on the original SI relationship.
 
-The gap between the pitch and the delivery team is almost always contractual — close it before you sign. 📝
+The gap between the pitch and the delivery team is almost always contractual - close it before you sign. 📝
 
 👉 Read our full deep dive on choosing a systems integrator for enterprise rollouts: https://www.manifera.com/blog/choosing-a-systems-integrator-for-enterprise-wide-rollouts
 

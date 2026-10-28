@@ -35,7 +35,7 @@ Content Format: Comparison Guide
 }
 </script>
 
-Every vacancy begins life in one place: inside an employer's own recruitment system, published on their careers page. Job boards, aggregators and recruiters are all downstream of that moment. This creates a tempting conclusion — that the smartest search strategy is to skip the middlemen and monitor career pages directly. It is a reasonable instinct, and it works well for a specific and limited purpose. As a complete strategy it fails, for reasons that become obvious once you try to do it for more than about ten companies.
+Every vacancy begins life in one place: inside an employer's own recruitment system, published on their careers page. Job boards, aggregators and recruiters are all downstream of that moment. This creates a tempting conclusion - that the smartest search strategy is to skip the middlemen and monitor career pages directly. It is a reasonable instinct, and it works well for a specific and limited purpose. As a complete strategy it fails, for reasons that become obvious once you try to do it for more than about ten companies.
 
 ## The Case for Career Pages
 
@@ -43,7 +43,7 @@ Every vacancy begins life in one place: inside an employer's own recruitment sys
 
 **They contain the most complete version.** Board listings are often shortened. Career pages include the full description, team context, benefits and the real application process.
 
-**You see the whole team picture.** Seeing all open roles at once tells you whether a company is building a data team or replacing one person — a useful signal about stability and ambition.
+**You see the whole team picture.** Seeing all open roles at once tells you whether a company is building a data team or replacing one person - a useful signal about stability and ambition.
 
 **Applications go straight into the employer's system.** No intermediary, no duplicate submissions, no agency fee attached to your candidacy.
 
@@ -51,7 +51,7 @@ Every vacancy begins life in one place: inside an employer's own recruitment sys
 
 ## The Case Against Career Pages as Your Main Channel
 
-**You must already know the company.** This is the fundamental limitation. Monitoring career pages can only surface roles at employers you have heard of, which biases your search towards large, well-known names — precisely the employers with the most applicants per vacancy.
+**You must already know the company.** This is the fundamental limitation. Monitoring career pages can only surface roles at employers you have heard of, which biases your search towards large, well-known names - precisely the employers with the most applicants per vacancy.
 
 **The time cost scales badly.** Checking five career pages weekly is manageable. Checking fifty is a part-time job, and career pages rarely offer consistent filtering.
 
@@ -82,21 +82,21 @@ A job board inverts this. You start from the type of work and the distance you a
 
 ## What Changes With Pay Transparency
 
-The EU Pay Transparency Directive requires employers to provide information about the initial pay or its range before the interview, and prohibits asking candidates about pay history. As this is implemented, pay information should appear earlier — in vacancies or at first contact — across career pages and boards alike.
+The EU Pay Transparency Directive requires employers to provide information about the initial pay or its range before the interview, and prohibits asking candidates about pay history. As this is implemented, pay information should appear earlier - in vacancies or at first contact - across career pages and boards alike.
 
 This slightly reduces one advantage of career pages, where salary details were sometimes more visible than in shortened board listings. It also gives you a practical filter: if neither the listing nor the first conversation produces a range, ask directly and early.
 
 ## What "Applying Directly" Actually Means Behind the Scenes
 
-Applying on a career page usually means entering an applicant tracking system — the software employers use to receive, organise and evaluate applications. Understanding this makes the advice practical rather than symbolic.
+Applying on a career page usually means entering an applicant tracking system - the software employers use to receive, organise and evaluate applications. Understanding this makes the advice practical rather than symbolic.
 
 Most systems parse your CV into structured fields, which is why a clean, text-based layout matters more than a designed one. Multi-column layouts, text inside images and unusual fonts can be parsed badly, and a recruiter then sees a garbled version of your experience. Exporting a PDF from a text document, with standard headings, avoids most of this.
 
-Many systems also ask screening questions — availability, right to work, salary expectation, willingness to travel. Answer these carefully: they are frequently used as filters before a human reads anything. Where a question is ambiguous, answering in the widest defensible way keeps you in the process.
+Many systems also ask screening questions - availability, right to work, salary expectation, willingness to travel. Answer these carefully: they are frequently used as filters before a human reads anything. Where a question is ambiguous, answering in the widest defensible way keeps you in the process.
 
 Some employers use AI features inside these systems to rank or filter applications. Under the EU AI Act, AI used to filter applications or evaluate candidates is high-risk, and deployers must provide human oversight and inform candidates; under the GDPR you have rights concerning decisions based solely on automated processing. If a rejection arrives within minutes of applying, it is reasonable to ask whether a human reviewed it.
 
-None of this changes the core advice — apply where the employer receives it directly — but it does change how you prepare the file you upload.
+None of this changes the core advice - apply where the employer receives it directly - but it does change how you prepare the file you upload.
 
 ## A Sensible Hybrid Strategy
 
@@ -136,17 +136,17 @@ Check them on a fixed day, in one sitting, with the pages saved as browser bookm
 
 Review the list monthly. Remove employers who have published nothing relevant in months, and add any you discovered through a board listing or a conversation. The list should reflect the market you actually found, not the one you imagined when you started.
 
-If an employer uses a large recruitment system, check whether it offers its own notification option for new vacancies — many do, and that removes them from your manual list entirely.
+If an employer uses a large recruitment system, check whether it offers its own notification option for new vacancies - many do, and that removes them from your manual list entirely.
 
 ## Privacy Note
 
-Whichever route you use, you are handing over personal data. Under the GDPR you can ask what an employer stores, request deletion and object to further processing. Dutch guidance indicates application data should generally be deleted within a short period after the procedure unless you consent to longer retention for future vacancies. If a career page asks for unusual information — your citizen service number, a photo, date of birth — you are entitled to question why.
+Whichever route you use, you are handing over personal data. Under the GDPR you can ask what an employer stores, request deletion and object to further processing. Dutch guidance indicates application data should generally be deleted within a short period after the procedure unless you consent to longer retention for future vacancies. If a career page asks for unusual information - your citizen service number, a photo, date of birth - you are entitled to question why.
 
 ## When the Employer Has No Careers Page Worth Monitoring
 
 A significant share of Dutch employers with interesting data work have almost no careers infrastructure. A manufacturer with eighty employees, a regional insurer, a water board or a family-owned machine builder may have a single page listing two vacancies, or only an email address, or nothing at all between hires.
 
-This is not a sign of an unserious employer. It reflects how such organisations hire: infrequently, through their network, a regional channel or a simple email submission. OnlyAIJobs itself works this way on the employer side — a company sends a link to its vacancy by email rather than managing an account and a dashboard, which is precisely what makes participation realistic for smaller employers without recruitment staff.
+This is not a sign of an unserious employer. It reflects how such organisations hire: infrequently, through their network, a regional channel or a simple email submission. OnlyAIJobs itself works this way on the employer side - a company sends a link to its vacancy by email rather than managing an account and a dashboard, which is precisely what makes participation realistic for smaller employers without recruitment staff.
 
 For candidates, this has two implications. First, a career-page strategy systematically misses these employers, because there is nothing to monitor. Second, an open application can work here in a way it rarely does at large organisations: a short, specific message to a named manager, explaining which problem you could help with, sometimes arrives exactly when someone has started wondering whether they need a data person.
 
@@ -158,7 +158,7 @@ If you find such an employer through a board listing, it is worth noting the con
 
 A data engineer in Groningen begins by monitoring the career pages of eight companies he admires, checking them every Monday. After six weeks, two relevant roles have appeared, both requiring relocation to the Randstad.
 
-He then spends one evening browsing a specialist board by category and distance. Within thirty minutes he has a list of eleven employers within forty minutes of home that he had not considered — including an energy-related organisation, a regional software company and a manufacturer whose vacancy is titled "process data specialist".
+He then spends one evening browsing a specialist board by category and distance. Within thirty minutes he has a list of eleven employers within forty minutes of home that he had not considered - including an energy-related organisation, a regional software company and a manufacturer whose vacancy is titled "process data specialist".
 
 He adds five of them to his weekly career-page check and applies to three roles directly on the employers' sites. One rejects him, one never replies and one leads to an interview and later an offer. He kept his original eight companies on the list; the difference was adding the ones he did not know existed.
 
@@ -179,7 +179,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who monitors career pages) Is it better to apply directly on a company's website?
-Yes, applying on the employer's own site is usually best — but finding the vacancy is a separate problem, and career pages cannot help you discover employers you do not know.
+Yes, applying on the employer's own site is usually best - but finding the vacancy is a separate problem, and career pages cannot help you discover employers you do not know.
 
 ### (Scenario: candidate who wants the earliest information) Do vacancies appear on career pages first?
 Usually yes, sometimes days earlier, and some roles never leave the career page at all. The trade-off is that monitoring many pages costs significant time.

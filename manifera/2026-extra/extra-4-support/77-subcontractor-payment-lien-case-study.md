@@ -32,7 +32,7 @@ Construction lien laws, present in some form across most jurisdictions, generall
 
 This particular kind of exposure is especially insidious precisely because everything appears to be working normally right up until the moment it matters most, which is exactly why a deliberate structural fix matters more than trusting a manual process to eventually catch every gap on its own.
 
-A payment platform built around simple invoice-and-payment tracking, without structured lien waiver documentation tied explicitly to each specific payment, creates a genuine documentation gap: even if payments are actually being made correctly and on schedule, the firm lacks the structured, retrievable proof of proper lien waiver collection that protects it if a dispute or lien claim later arises. This gap is particularly dangerous because it's invisible during normal operations — payments proceed, work continues, and the documentation gap only becomes a real, costly problem at the specific moment a dispute or claim actually occurs, by which point reconstructing proper documentation retroactively is often difficult or impossible.
+A payment platform built around simple invoice-and-payment tracking, without structured lien waiver documentation tied explicitly to each specific payment, creates a genuine documentation gap: even if payments are actually being made correctly and on schedule, the firm lacks the structured, retrievable proof of proper lien waiver collection that protects it if a dispute or lien claim later arises. This gap is particularly dangerous because it's invisible during normal operations - payments proceed, work continues, and the documentation gap only becomes a real, costly problem at the specific moment a dispute or claim actually occurs, by which point reconstructing proper documentation retroactively is often difficult or impossible.
 
 ## What a Genuinely Protective Lien and Retainage Tracking System Requires
 
@@ -51,7 +51,7 @@ This means the stakes of getting structured lien documentation right scale direc
 
 A related, practical consideration worth naming directly: a general contractor's insurance carriers and surety bond providers, both important ongoing business relationships for any contracting firm, frequently review a firm's payment and lien documentation practices as part of their own risk assessment, particularly following any claim history or during bond capacity renewal discussions. A firm that can demonstrate genuinely structured, reliable lien waiver and retainage documentation practices is in a stronger position in these relationships than a firm whose documentation practices are informal or inconsistent, since insurers and sureties are, reasonably, more willing to extend favorable terms to a firm that demonstrably manages this specific risk category well.
 
-This is a specific, practical reason the documentation infrastructure this article describes serves a contracting firm's broader business relationships beyond pure legal defense in an active dispute — it's also a genuine, demonstrable risk management asset relevant to insurance and bonding relationships that materially affect a contracting firm's ability to actually win and execute larger future project opportunities, a business consideration extending well beyond the specific dispute-defense framing this article has otherwise focused on.
+This is a specific, practical reason the documentation infrastructure this article describes serves a contracting firm's broader business relationships beyond pure legal defense in an active dispute - it's also a genuine, demonstrable risk management asset relevant to insurance and bonding relationships that materially affect a contracting firm's ability to actually win and execute larger future project opportunities, a business consideration extending well beyond the specific dispute-defense framing this article has otherwise focused on.
 
 ## Manifera's Approach: Building Construction Payment Platforms With Genuine Lien Risk Protection
 
@@ -67,7 +67,7 @@ Byggefirma Odense, an Odense-based general contracting firm, had been using a si
 Manifera's Amsterdam team built a structured payment platform explicitly tying lien waiver collection to each specific payment application, distinguishing conditional and unconditional waivers correctly, with precise per-subcontractor retainage tracking and a complete, organized, retrievable audit trail for every project.
 
 > *"We'd been paying our subcontractors correctly and on time, and genuinely thought that meant we were protected. It took an actual dispute to show us that being paid correctly and being able to prove you followed proper lien waiver process are two different things, and we'd only ever really managed the first one."*
-> — **IT Manager, Byggefirma Odense**
+> - **IT Manager, Byggefirma Odense**
 
 Byggefirma Odense has since successfully defended two subsequent payment disputes with complete, readily retrievable documentation from the new system, and now treats structured lien waiver and retainage tracking as a non-negotiable requirement for any project's payment process.
 
@@ -82,7 +82,7 @@ Byggefirma Odense has since successfully defended two subsequent payment dispute
 
 ## Scoping Your Own Construction Payment Platform's Lien Protection
 
-Before building or evaluating a subcontractor payment platform, verify it ties lien waiver collection explicitly to each payment application and tracks retainage with genuine precision — a simplified payment tracking system that pays correctly can still leave a firm dangerously exposed without proper documentation. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely lien-protective construction payment platform.
+Before building or evaluating a subcontractor payment platform, verify it ties lien waiver collection explicitly to each payment application and tracks retainage with genuine precision - a simplified payment tracking system that pays correctly can still leave a firm dangerously exposed without proper documentation. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely lien-protective construction payment platform.
 
 ## Frequently Asked Questions
 

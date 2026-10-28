@@ -28,7 +28,7 @@ A childcare network's compliance and staffing system built around a single, glob
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around region-configurable licensing rules — able to apply the correct ratio, certification, and reporting requirements based on a specific center's actual licensing jurisdiction — lets a network comply with each state or country's specific requirements without unnecessarily over-constraining staffing in markets where more flexible arrangements remain legally permissible. This isn't simply a matter of toggling a single "strict mode" flag per center, since licensing requirements can be more nuanced than a binary strict-versus-permissive classification — some jurisdictions apply different ratio requirements by specific age-group breakdown that doesn't map directly onto another jurisdiction's own age-group categories, meaning the underlying system needs to support genuinely configurable rule structures per jurisdiction, not just a single strictness dial, to accommodate the actual range of licensing frameworks a multi-state or multi-country network encounters.
+A system architected from the start around region-configurable licensing rules - able to apply the correct ratio, certification, and reporting requirements based on a specific center's actual licensing jurisdiction - lets a network comply with each state or country's specific requirements without unnecessarily over-constraining staffing in markets where more flexible arrangements remain legally permissible. This isn't simply a matter of toggling a single "strict mode" flag per center, since licensing requirements can be more nuanced than a binary strict-versus-permissive classification - some jurisdictions apply different ratio requirements by specific age-group breakdown that doesn't map directly onto another jurisdiction's own age-group categories, meaning the underlying system needs to support genuinely configurable rule structures per jurisdiction, not just a single strictness dial, to accommodate the actual range of licensing frameworks a multi-state or multi-country network encounters.
 
 ## What Building Region-Configurable Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Péče o Děti Brno, a Brno-based childcare network, had built an initial compli
 Manifera's Amsterdam team rebuilt the compliance system's core architecture around a configurable, jurisdiction-specific licensing ruleset, supporting both stricter ratio and certification requirements where mandated and more flexible staffing arrangements where legally permissible, alongside reliable center-to-jurisdiction mapping and staff-credential tracking, all without requiring separate, parallel compliance systems per country.
 
 > *"We'd built one ratio standard and assumed it was strict enough to cover us everywhere. What we actually found was that the specific age-group breakdowns and certification rules varied more than a single standard could handle, and building real configurability was what let us expand into new jurisdictions with genuine confidence instead of hoping our one standard happened to be strict enough."*
-> — **IT Manager, Péče o Děti Brno**
+> - **IT Manager, Péče o Děti Brno**
 
 Péče o Děti Brno successfully expanded into its additional target jurisdictions with jurisdiction-appropriate compliance configurations, and now treats regulatory configurability as a standard architectural requirement for any new center or region added to the network.
 
@@ -79,7 +79,7 @@ Péče o Děti Brno successfully expanded into its additional target jurisdictio
 
 ## Scoping Your Own Childcare Network's Compliance System for Regulatory Compliance
 
-Before expanding a childcare network's compliance and staffing system across multiple states or countries, architect the licensing logic around genuinely configurable, jurisdiction-specific rulesets — a single global standard forces an unnecessary trade-off between staffing flexibility and licensing risk. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready childcare network compliance system.
+Before expanding a childcare network's compliance and staffing system across multiple states or countries, architect the licensing logic around genuinely configurable, jurisdiction-specific rulesets - a single global standard forces an unnecessary trade-off between staffing flexibility and licensing risk. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready childcare network compliance system.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between over-constraining staffing in permissive markets or r
 
 ### (Scenario: engineering lead scoping regional configurability) Is a simple strict-versus-permissive toggle sufficient to handle licensing rules across jurisdictions?
 
-Not always — some jurisdictions apply different ratio requirements by age-group breakdowns that don't map directly onto another jurisdiction's categories, meaning the system needs genuinely configurable rule structures, not just a strictness dial.
+Not always - some jurisdictions apply different ratio requirements by age-group breakdowns that don't map directly onto another jurisdiction's categories, meaning the system needs genuinely configurable rule structures, not just a strictness dial.
 
 ### (Scenario: compliance lead reviewing technical architecture) Why does reliable center-to-jurisdiction mapping matter for licensing compliance?
 
@@ -110,7 +110,7 @@ Childcare licensing regulation is a genuinely active, evolving area across juris
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-location compliance system) Why does childcare licensing regulation vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Ratio, certification, and reporting obligations genuinely vary, with individual US states and European countries each setting their own requirements." } },
     { "@type": "Question", "name": "(Scenario: compliance lead worried about licensing risk) What's the risk of building a compliance system around a single, globally uniform ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between over-constraining staffing in permissive markets or risking violation in stricter ones." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple strict-versus-permissive toggle sufficient to handle licensing rules across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — jurisdictions apply different age-group ratio breakdowns that don't map directly onto each other, requiring genuinely configurable rules." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple strict-versus-permissive toggle sufficient to handle licensing rules across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - jurisdictions apply different age-group ratio breakdowns that don't map directly onto each other, requiring genuinely configurable rules." } },
     { "@type": "Question", "name": "(Scenario: compliance lead reviewing technical architecture) Why does reliable center-to-jurisdiction mapping matter for licensing compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying jurisdiction-specific rules correctly depends on accurately identifying which authority governs a center and tracking staff certification." } },
     { "@type": "Question", "name": "(Scenario: network planning for future regulatory change) Why should a compliance system be designed to accommodate evolving licensing standards, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Licensing regulation is actively evolving, and a system requiring rework for each new standard creates ongoing compliance risk." } }
   ]

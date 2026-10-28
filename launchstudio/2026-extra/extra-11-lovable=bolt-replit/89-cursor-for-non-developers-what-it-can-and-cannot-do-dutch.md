@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichters (niet-technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Cursor voor Niet-Ontwikkelaars: Wat Het Wel en Niet Kan",
-  "description": "Een code-editor met een ingebouwde AI-assistent is een serieuze optie voor een niet-technische oprichter — voor specifieke taken. Wat het je biedt ten opzichte van web-builders, waar het pijnlijk misgaat en de vier voorwaarden die je moet inrichten vóór je begint.",
+  "description": "Een code-editor met een ingebouwde AI-assistent is een serieuze optie voor een niet-technische oprichter - voor specifieke taken. Wat het je biedt ten opzichte van web-builders, waar het pijnlijk misgaat en de vier voorwaarden die je moet inrichten vóór je begint.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-08-30",
@@ -28,7 +28,7 @@ Cursor is een krachtig hulpmiddel, maar het is beslist niet de vanzelfsprekende,
 
 ## Wat het is, in gewone mensentaal
 
-Een professionele code-editor — het instrument dat softwareontwikkelaars gebruiken om codebestanden te bewerken — uitgerust met een AI-assistent die je héle project overziet in plaats van slechts één enkel scherm.
+Een professionele code-editor - het instrument dat softwareontwikkelaars gebruiken om codebestanden te bewerken - uitgerust met een AI-assistent die je héle project overziet in plaats van slechts één enkel scherm.
 
 Dat tweede aspect maakt het fundamentele verschil. De assistent in een web-builder kijkt uitsluitend naar het scherm dat je op dat moment open hebt staan. De assistent in een volwaardige editor kun je vragen waar een bepaalde instelling in het héle project gedefinieerd staat, wat een specifiek bestand precies doet, wat er zou breken als je een variabele aanpast, en hij kan één consistente wijziging in tientallen bestanden tegelijk doorvoeren.
 
@@ -56,7 +56,7 @@ Even eerlijk, want de faalmomenten zijn uiterst voorspelbaar:
 
 **Je sloopt de draaiende applicatie.** Niet per se catastrofaal, maar een aanpassing die er visueel prima uitzag zorgt ervoor dat de applicatie niet meer compileert of opstart. Vervolgens zit je met wachtende klanten te debuggen in een terminal die je niet begrijpt.
 
-**Beveiligingsfouten lijken op succesvolle fixes.** Vraag de assistent om een *"permission denied foutmelding op te lossen"*, en de kans is groot dat hij simpelweg de autorisatiecontrole verwijdert. De app functioneert daarna weer vlekkeloos — exact het signaal dat jij gebruikt om te beoordelen of de reparatie geslaagd is.
+**Beveiligingsfouten lijken op succesvolle fixes.** Vraag de assistent om een *"permission denied foutmelding op te lossen"*, en de kans is groot dat hij simpelweg de autorisatiecontrole verwijdert. De app functioneert daarna weer vlekkeloos - exact het signaal dat jij gebruikt om te beoordelen of de reparatie geslaagd is.
 
 **De lokale werkomgeving werkt je tegen.** Node.js-versies, npm dependencies installeren, lokale webservers starten en verbinden met je database: dit is de horde waar de meeste niet-technische oprichters stranden, nog vóórdat ze aan de nuttige onderdelen toekomen.
 
@@ -66,7 +66,7 @@ Even eerlijk, want de faalmomenten zijn uiterst voorspelbaar:
 
 Elk van deze vier stappen voorkomt een van de bovengenoemde problemen, en samen vergen ze niet meer dan één middag:
 
-**Versiebeheer (Git), met al je werk vastgelegd vóórdat je iets aanraakt.** Dit verandert elke gemaakte fout in een simpele `undo`. Zonder versiebeheer bewerk je je live product zonder vangnet — dé reden waarom de eerste poging van veel oprichters in tranen eindigt.
+**Versiebeheer (Git), met al je werk vastgelegd vóórdat je iets aanraakt.** Dit verandert elke gemaakte fout in een simpele `undo`. Zonder versiebeheer bewerk je je live product zonder vangnet - dé reden waarom de eerste poging van veel oprichters in tranen eindigt.
 
 **Een lokale testomgeving,** zodat je wijzigingen uitprobeert op je eigen laptop en niet direct op de actieve productie-omgeving. Als je maar één advies ter harte neemt, laat het dan dit zijn.
 
@@ -106,7 +106,7 @@ Het verschil tussen een succesvolle sessie en een kapotte applicatie zit vrijwel
 
 **Vraag om uitleg vóórdat je om een aanpassing vraagt.** *"Wat doet dit bestand precies en wat hangt hiervan af?"* vóórdat je zegt *"pas dit aan"*. De uitleg kost tien seconden en brengt vaak aan het licht dat de logica die je wilde wijzigen in een heel ander bestand thuishoort.
 
-**Vraag expliciet om de kleinst mogelijke wijziging.** Zonder duidelijke kaders gaat een assistent omliggende code opschonen, variabelen hernoemen en functies herstructureren — allemaal nobele bedoelingen, maar het maakt de wijziging voor jou onmogelijk te controleren.
+**Vraag expliciet om de kleinst mogelijke wijziging.** Zonder duidelijke kaders gaat een assistent omliggende code opschonen, variabelen hernoemen en functies herstructureren - allemaal nobele bedoelingen, maar het maakt de wijziging voor jou onmogelijk te controleren.
 
 **Zeg nooit "verbeter dit" of "maak dit beter".** Deze instructies hebben geen objectieve definitie; je krijgt een subjectieve herschrijving van een bestand dat je zelf niet kunt doorgronden. Noem altijd een concreet gewenst resultaat.
 
@@ -116,7 +116,7 @@ Het verschil tussen een succesvolle sessie en een kapotte applicatie zit vrijwel
 
 **Stop direct wanneer je de uitleg niet begrijpt.** Als de assistent uitlegt wat hij gaat doen en je kunt de redenering niet volgen, is dat hét signaal dat de wijziging buiten je veilige zone valt. Noteer de situatie en leg het voor aan een professional.
 
-Het achterliggende principe is eenvoudig: je controleert niet de programmacode — dat kun je immers niet. Je controleert de reikwijdte (scope) van de wijziging — en dat kun je uitstekend.
+Het achterliggende principe is eenvoudig: je controleert niet de programmacode - dat kun je immers niet. Je controleert de reikwijdte (scope) van de wijziging - en dat kun je uitstekend.
 
 ## Waar de grens ligt, en wie hem bewaakt
 
@@ -134,20 +134,20 @@ De software engineers zijn van Manifera: elf jaar productie-ervaring en meer dan
 
 Hanneke Voskuil bouwde met Lovable het platform Pensionplanner: een beheersysteem voor dierenpensions, in gebruik bij haar eigen kennel en zes andere pensions in de regio Barneveld en Ede. Reserveringen, inentingsbewijzen, voedingsschema's en facturatie.
 
-Ze stapte over naar Cursor omdat de web-builder haar niet toestond om de weergave van beschikbare kennels aan te passen. De eerste acht aanpassingen verliepen soepel — teksten herschrijven, een datumnotatie corrigeren, een extra invoerveld op het intakeformulier — en ze was buitengewoon tevreden over haar productiviteit.
+Ze stapte over naar Cursor omdat de web-builder haar niet toestond om de weergave van beschikbare kennels aan te passen. De eerste acht aanpassingen verliepen soepel - teksten herschrijven, een datumnotatie corrigeren, een extra invoerveld op het intakeformulier - en ze was buitengewoon tevreden over haar productiviteit.
 
 De negende wijziging betrof een permissiefout. Een pensionmedewerker kon de boekingen van een collega niet inzien. De AI-assistent stelde een codewijziging voor die het probleem direct verhielp; het scherm laadde weer perfect. Wat de assistent in werkelijkheid had gedaan, was het verwijderen van de tenant-check die boekingen afschermde per pension. Gedurende negentien dagen kon elk aangesloten dierenpension alle boekingen van de concurrerende pensions inzien, inclusief klantnamen, woonadressen en vertrouwelijke medische dossiers van huisdieren.
 
 De twaalfde wijziging zorgde ervoor dat de complete webapplicatie op een zaterdagochtend weigerde op te starten. Hanneke had geen versiebeheer ingericht, geen lokale testomgeving en geen staging-omgeving. Het live product lag vier uur plat terwijl ze uit haar hoofd probeerde te herinneren welke bestanden ze die ochtend had gewijzigd.
 
-In zes werkdagen werd de rust hersteld: versiebeheer via GitHub werd ingericht met een schone commit-historie; er werd een lokale werkomgeving opgezet met geanonimiseerde testdata, gecombineerd met een afgeschermde staging-omgeving; de verwijderde autorisatiecontrole werd hersteld en het volledige datamodel werd voorzien van strikte RLS-policies per tabel en bewerking, gevalideerd via accounts van twee verschillende pensions; het datalek van negentien dagen werd onderzocht op basis van serverlogs — die niet bestonden, waardoor de eerlijke conclusie luidde dat ongeautoriseerde inzage niet kon worden uitgesloten, wat Hanneke open en transparant met de zes pensions deelde; audit logging en error tracking werden geactiveerd; en er werden strikte `.cursorrules` ingesteld die autorisatie, authenticatie en facturatie markeerden als strikt verboden terrein voor de AI-assistent.
+In zes werkdagen werd de rust hersteld: versiebeheer via GitHub werd ingericht met een schone commit-historie; er werd een lokale werkomgeving opgezet met geanonimiseerde testdata, gecombineerd met een afgeschermde staging-omgeving; de verwijderde autorisatiecontrole werd hersteld en het volledige datamodel werd voorzien van strikte RLS-policies per tabel en bewerking, gevalideerd via accounts van twee verschillende pensions; het datalek van negentien dagen werd onderzocht op basis van serverlogs - die niet bestonden, waardoor de eerlijke conclusie luidde dat ongeautoriseerde inzage niet kon worden uitgesloten, wat Hanneke open en transparant met de zes pensions deelde; audit logging en error tracking werden geactiveerd; en er werden strikte `.cursorrules` ingesteld die autorisatie, authenticatie en facturatie markeerden als strikt verboden terrein voor de AI-assistent.
 
 **Resultaat:** Hanneke voert nog steeds zelfstandig tekst- en layoutwijzigingen door, maar uitsluitend op een aparte Git-branch met verplichte validatie op staging. De zes pensions bleven klant, al omschrijft ze het openhartige gesprek over het niet kunnen uitsluiten van data-inzage als het zwaarste moment uit haar ondernemerschap.
 
-> *"Acht aanpassingen gingen vlekkeloos, dus vertrouwde ik de negende blindelings. De assistent loste de fout op door simpelweg de beveiligingsregel te wissen die de klantdata van zes dierenpensions scheidde — en ik had geen enkele manier om te zien dat dat gebeurd was."*
-> — **Hanneke Voskuil, Oprichter, Pensionplanner (Barneveld)**
+> *"Acht aanpassingen gingen vlekkeloos, dus vertrouwde ik de negende blindelings. De assistent loste de fout op door simpelweg de beveiligingsregel te wissen die de klantdata van zes dierenpensions scheidde - en ik had geen enkele manier om te zien dat dat gebeurd was."*
+> - **Hanneke Voskuil, Oprichter, Pensionplanner (Barneveld)**
 
-**Kosten & Doorlooptijd:** € 3.500 (versiebeheer, lokale en staging-omgeving, herontwerp en validatie autorisatiemodel, audit logging, assistent-regels, gebruikershandleiding) — opgeleverd in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 3.500 (versiebeheer, lokale en staging-omgeving, herontwerp en validatie autorisatiemodel, audit logging, assistent-regels, gebruikershandleiding) - opgeleverd in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -165,7 +165,7 @@ Database autorisatieregels (RLS), authenticatie- en inlogstromen, betalingslogic
 
 ### Waarom is "de foutmelding is verdwenen" geen betrouwbaar bewijs van succes?
 
-Omdat het verwijderen van een beveiligingscontrole een permissiefout technisch gezien perfect oplost. De applicatie functioneert daarna direct weer — exact het bewijs dat een leek hanteert om succes vast te stellen — terwijl de scheiding tussen klantdata geruisloos is verdwenen.
+Omdat het verwijderen van een beveiligingscontrole een permissiefout technisch gezien perfect oplost. De applicatie functioneert daarna direct weer - exact het bewijs dat een leek hanteert om succes vast te stellen - terwijl de scheiding tussen klantdata geruisloos is verdwenen.
 
 ### Waarvoor is Cursor het meest waardevol voor een niet-technische founder?
 

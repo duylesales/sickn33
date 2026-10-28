@@ -31,19 +31,19 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every booking or reservation tool — whether it's scheduling appointments, reserving equipment, or managing hotel rooms — shares a structural vulnerability that survives essentially every founder's own testing, precisely because that specific vulnerability only exists in a condition solo testing structurally cannot produce: two people trying to claim the same limited resource within the same narrow window of time.
+Every booking or reservation tool - whether it's scheduling appointments, reserving equipment, or managing hotel rooms - shares a structural vulnerability that survives essentially every founder's own testing, precisely because that specific vulnerability only exists in a condition solo testing structurally cannot produce: two people trying to claim the same limited resource within the same narrow window of time.
 
 ## Why This Bug Specifically Cannot Be Found Alone
 
-A founder testing their own booking flow does so sequentially, by definition — one booking attempt, observe the result, then the next attempt. The double-booking failure mode requires two attempts landing close enough together in time that both pass an availability check before either one's write actually completes, a timing condition that simply cannot occur when there's only one person testing, no matter how many times or how carefully that testing happens.
+A founder testing their own booking flow does so sequentially, by definition - one booking attempt, observe the result, then the next attempt. The double-booking failure mode requires two attempts landing close enough together in time that both pass an availability check before either one's write actually completes, a timing condition that simply cannot occur when there's only one person testing, no matter how many times or how carefully that testing happens.
 
 ## Why AI-Generated Booking Logic Is Specifically Prone to This
 
-The natural, prompt-satisfying way to implement availability checking is a two-step process: check whether the slot is free, then write the new booking if it is — logic that works perfectly under sequential testing and fails specifically under concurrent access, because the two steps aren't treated as a single, uninterruptible operation by default unless a developer or AI tool is specifically instructed to make them atomic.
+The natural, prompt-satisfying way to implement availability checking is a two-step process: check whether the slot is free, then write the new booking if it is - logic that works perfectly under sequential testing and fails specifically under concurrent access, because the two steps aren't treated as a single, uninterruptible operation by default unless a developer or AI tool is specifically instructed to make them atomic.
 
 ## Where This Gets Sharper for Travel and Hospitality Specifically
 
-Beyond the basic double-booking risk, travel and hospitality bookings add a reconciliation dimension general concurrency guidance doesn't fully cover: partial payment holds, cancellation windows, and multi-night bookings that can be modified mid-stay all interact with the same underlying availability data, meaning the concurrency problem isn't limited to the initial booking moment — it recurs at every point where availability data gets checked and modified again, including changes and cancellations that happen well after the original booking.
+Beyond the basic double-booking risk, travel and hospitality bookings add a reconciliation dimension general concurrency guidance doesn't fully cover: partial payment holds, cancellation windows, and multi-night bookings that can be modified mid-stay all interact with the same underlying availability data, meaning the concurrency problem isn't limited to the initial booking moment - it recurs at every point where availability data gets checked and modified again, including changes and cancellations that happen well after the original booking.
 
 ## How to Actually Test for This, Since Solo Testing Can't
 
@@ -51,29 +51,29 @@ The direct test: fire two near-simultaneous booking requests for the same slot o
 
 ## Why This Deserves Priority Attention in Any Booking-Category Product
 
-Because the failure mode produces a genuinely visible, often embarrassing customer-facing consequence — two customers both expecting the same room, the same appointment slot, the same piece of equipment — and because it's specifically invisible to the exact kind of testing a solo founder naturally performs, this warrants deliberate, dedicated testing rather than being caught incidentally as part of general quality assurance.
+Because the failure mode produces a genuinely visible, often embarrassing customer-facing consequence - two customers both expecting the same room, the same appointment slot, the same piece of equipment - and because it's specifically invisible to the exact kind of testing a solo founder naturally performs, this warrants deliberate, dedicated testing rather than being caught incidentally as part of general quality assurance.
 
 [LaunchStudio](https://launchstudio.eu/en/) specifically tests booking and reservation flows for this exact concurrency failure mode as a standard part of hardening any scheduling-category product, including the reconciliation complexity travel and hospitality bookings add on top of it, backed by Manifera's engineering experience across multiple production booking systems.
 
-[Get your booking flow tested against the condition your own testing can't reproduce](https://launchstudio.eu/en/#calculator) — this specific bug requires someone else, or something else, to actually find it.
+[Get your booking flow tested against the condition your own testing can't reproduce](https://launchstudio.eu/en/#calculator) - this specific bug requires someone else, or something else, to actually find it.
 
 ## Other Features That Hide the Same Concurrency Bug
 
-The double-booking failure mode isn't actually specific to booking tools — it's specific to any feature where a limited resource gets checked and then claimed in two separate steps, and a founder who's fixed it in one place in their product would do well to check whether the same underlying pattern exists anywhere else in the same codebase.
+The double-booking failure mode isn't actually specific to booking tools - it's specific to any feature where a limited resource gets checked and then claimed in two separate steps, and a founder who's fixed it in one place in their product would do well to check whether the same underlying pattern exists anywhere else in the same codebase.
 
-**Inventory and stock-level decrements.** An e-commerce or marketplace feature checking "is this item still in stock" before completing a purchase has the exact same structure as a booking availability check — two customers buying the last unit within moments of each other can both succeed under the same check-then-write logic, resulting in a sold item nobody can actually fulfill.
+**Inventory and stock-level decrements.** An e-commerce or marketplace feature checking "is this item still in stock" before completing a purchase has the exact same structure as a booking availability check - two customers buying the last unit within moments of each other can both succeed under the same check-then-write logic, resulting in a sold item nobody can actually fulfill.
 
 **Single-use discount or promo codes.** A code meant to be redeemed once needs its redemption check and its redemption record to happen as a single atomic operation, or two customers submitting the same code within the same narrow window can both have it applied, at whatever cost that represents to the business issuing it.
 
-**Waitlist promotion when a slot opens up.** A feature that automatically promotes the next person on a waitlist when a spot frees up — a returned ticket, a cancelled reservation — can promote more than one person to the same single opening if the promotion logic isn't made atomic, producing the same over-allocation problem in a different feature's clothing.
+**Waitlist promotion when a slot opens up.** A feature that automatically promotes the next person on a waitlist when a spot frees up - a returned ticket, a cancelled reservation - can promote more than one person to the same single opening if the promotion logic isn't made atomic, producing the same over-allocation problem in a different feature's clothing.
 
 **Limited-quantity flash sales or drops.** Any feature selling a capped quantity of something within a compressed time window concentrates exactly the kind of simultaneous-request timing this bug depends on, making flash-sale-style features a higher-risk category for this specific bug than steady, low-traffic purchasing flows.
 
-**Seat or capacity limits on events and classes.** A registration flow enforcing a maximum headcount — a workshop, a class, an event — is structurally identical to the room-booking example covered above, just with a different noun attached to the limited resource being claimed.
+**Seat or capacity limits on events and classes.** A registration flow enforcing a maximum headcount - a workshop, a class, an event - is structurally identical to the room-booking example covered above, just with a different noun attached to the limited resource being claimed.
 
-The fix, once a founder recognizes the pattern, is the same atomic check-and-write discipline covered above, applied to whichever specific feature is at risk — there's no need to treat each instance as a separate, novel problem once the underlying shape is recognized. What's worth doing deliberately is an inventory pass across your own product, listing every feature where two users could plausibly compete for the same limited thing at the same time, and checking each one specifically rather than assuming that fixing the most obvious instance (the actual booking flow) automatically covered every other place the same structural bug could be hiding.
+The fix, once a founder recognizes the pattern, is the same atomic check-and-write discipline covered above, applied to whichever specific feature is at risk - there's no need to treat each instance as a separate, novel problem once the underlying shape is recognized. What's worth doing deliberately is an inventory pass across your own product, listing every feature where two users could plausibly compete for the same limited thing at the same time, and checking each one specifically rather than assuming that fixing the most obvious instance (the actual booking flow) automatically covered every other place the same structural bug could be hiding.
 
-A product with several of these features and only one of them tested for concurrency has fixed the bug everyone happened to notice, not the underlying pattern that produced it — and the untested instances carry exactly the same risk of quietly surviving every demo until real, simultaneous usage finally finds them.
+A product with several of these features and only one of them tested for concurrency has fixed the bug everyone happened to notice, not the underlying pattern that produced it - and the untested instances carry exactly the same risk of quietly surviving every demo until real, simultaneous usage finally finds them.
 
 ## Real example
 
@@ -81,14 +81,14 @@ A product with several of these features and only one of them tested for concurr
 
 Lars, a former hotel front-desk manager turned founder in Valkenburg, built KamerPlan, an AI tool managing room availability and booking for small independent bed-and-breakfasts, using Cursor, tested extensively and reliably during development, always one booking attempt at a time, exactly the pattern that makes this specific bug invisible.
 
-During a busy holiday weekend, two separate guests booked the same room for the same dates within seconds of each other through two different B&Bs using KamerPlan, both bookings succeeding and both guests receiving confirmed reservation emails — a scenario that only became apparent when both parties arrived at the same property expecting the same room on the same night.
+During a busy holiday weekend, two separate guests booked the same room for the same dates within seconds of each other through two different B&Bs using KamerPlan, both bookings succeeding and both guests receiving confirmed reservation emails - a scenario that only became apparent when both parties arrived at the same property expecting the same room on the same night.
 
-**Result:** LaunchStudio implemented database-level locking ensuring the availability check and the booking write happen as a single atomic operation, closing the race condition before it could recur — verified specifically by firing simultaneous test bookings against the same slot and confirming exactly one now succeeds every time.
+**Result:** LaunchStudio implemented database-level locking ensuring the availability check and the booking write happen as a single atomic operation, closing the race condition before it could recur - verified specifically by firing simultaneous test bookings against the same slot and confirming exactly one now succeeds every time.
 
 > *"Every single test I ran during development booked one thing at a time and worked flawlessly. It took an actual busy weekend, with two real guests booking within seconds of each other, to reveal a bug that had genuinely never once shown up in months of my own testing."*
-> — **Lars Peeters, Founder, KamerPlan (Valkenburg)**
+> - **Lars Peeters, Founder, KamerPlan (Valkenburg)**
 
-**Cost & Timeline:** €1,450 (concurrency hardening for booking flow) — completed in 5 business days.
+**Cost & Timeline:** €1,450 (concurrency hardening for booking flow) - completed in 5 business days.
 
 ---
 
@@ -96,19 +96,19 @@ During a busy holiday weekend, two separate guests booked the same room for the 
 
 ### Does this double-booking risk apply to any product with a "check availability" step, or only travel and hospitality specifically?
 
-It applies to any product where a limited resource — an appointment slot, equipment, a room — can be claimed by more than one requester, including appointment scheduling, equipment rental, and event ticketing, not just travel and hospitality, which simply adds extra reconciliation complexity on top of the same core risk.
+It applies to any product where a limited resource - an appointment slot, equipment, a room - can be claimed by more than one requester, including appointment scheduling, equipment rental, and event ticketing, not just travel and hospitality, which simply adds extra reconciliation complexity on top of the same core risk.
 
 ### How is the travel and hospitality reconciliation problem specifically different from the basic double-booking bug?
 
-The basic bug concerns the initial booking moment; the reconciliation problem covers ongoing changes — cancellations, mid-stay modifications, partial holds — that also touch the same underlying availability data well after the original booking, meaning the same concurrency discipline needs to apply at every one of those later touchpoints too, not just the first one.
+The basic bug concerns the initial booking moment; the reconciliation problem covers ongoing changes - cancellations, mid-stay modifications, partial holds - that also touch the same underlying availability data well after the original booking, meaning the same concurrency discipline needs to apply at every one of those later touchpoints too, not just the first one.
 
 ### Can this specific bug be caught through general automated testing, or does it need a dedicated test?
 
-It requires a dedicated, specifically-constructed test simulating simultaneous requests — general automated testing that runs requests sequentially, even if automated, won't reproduce the timing condition this bug depends on unless the test is deliberately built to fire requests concurrently.
+It requires a dedicated, specifically-constructed test simulating simultaneous requests - general automated testing that runs requests sequentially, even if automated, won't reproduce the timing condition this bug depends on unless the test is deliberately built to fire requests concurrently.
 
 ### Is database-level locking the only way to fix this, or are there other approaches?
 
-Database-level locking is the most common, robust fix, though other approaches — like optimistic concurrency control with conflict detection — can also work depending on the specific database and application architecture, with the right choice typically determined during a scoped technical review.
+Database-level locking is the most common, robust fix, though other approaches - like optimistic concurrency control with conflict detection - can also work depending on the specific database and application architecture, with the right choice typically determined during a scoped technical review.
 
 ### How would a founder know if their booking tool has this specific gap before a real double-booking incident occurs?
 

@@ -31,15 +31,15 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-An AI-generated wellness or fitness app — suggesting workout adjustments, tracking nutrition, offering general lifestyle guidance — sits closer to regulated medical advice territory than most founders building in this specific category realize, and the line separating genuinely helpful general guidance from something that legally requires medical oversight isn't always where a founder intuitively expects it to be, especially once an AI system starts generating personalized, specific recommendations rather than displaying static, pre-written content.
+An AI-generated wellness or fitness app - suggesting workout adjustments, tracking nutrition, offering general lifestyle guidance - sits closer to regulated medical advice territory than most founders building in this specific category realize, and the line separating genuinely helpful general guidance from something that legally requires medical oversight isn't always where a founder intuitively expects it to be, especially once an AI system starts generating personalized, specific recommendations rather than displaying static, pre-written content.
 
 ## Why This Line Is Genuinely Blurry, Not Just Under-Communicated
 
-General wellness content — sample workout structures, general nutrition information — sits comfortably outside medical regulation in most jurisdictions. The moment a product starts generating personalized recommendations based on an individual user's specific health data, injury history, or stated conditions, it edges toward territory that regulatory frameworks in several jurisdictions treat differently, and the exact threshold isn't a single bright line so much as a gradient that depends on specificity, personalization, and how directly the output could influence a genuine health decision.
+General wellness content - sample workout structures, general nutrition information - sits comfortably outside medical regulation in most jurisdictions. The moment a product starts generating personalized recommendations based on an individual user's specific health data, injury history, or stated conditions, it edges toward territory that regulatory frameworks in several jurisdictions treat differently, and the exact threshold isn't a single bright line so much as a gradient that depends on specificity, personalization, and how directly the output could influence a genuine health decision.
 
 ## Why AI-Generated Personalization Specifically Pushes Toward This Line
 
-The entire value proposition of many AI wellness products is personalization — tailoring recommendations to an individual's specific situation rather than offering generic content. This is precisely the dimension that pushes a product closer to regulated territory, since generic content and individually-tailored recommendations based on personal health information are treated meaningfully differently by regulatory frameworks even when the underlying subject matter looks similar on the surface.
+The entire value proposition of many AI wellness products is personalization - tailoring recommendations to an individual's specific situation rather than offering generic content. This is precisely the dimension that pushes a product closer to regulated territory, since generic content and individually-tailored recommendations based on personal health information are treated meaningfully differently by regulatory frameworks even when the underlying subject matter looks similar on the surface.
 
 ## Where Founders in This Category Specifically Get Caught Off Guard
 
@@ -51,29 +51,29 @@ The entire value proposition of many AI wellness products is personalization —
 
 ## What a Reasonable Approach Actually Looks Like
 
-This isn't a call to avoid personalization or retreat to purely generic content — it's a call to deliberately understand where your specific product's output sits on this gradient, phrase recommendations with appropriate care, include clear guidance to consult a genuine healthcare professional for anything beyond general wellness suggestion, and treat any health-adjacent data collected with the elevated rigor it warrants regardless of the regulatory question specifically.
+This isn't a call to avoid personalization or retreat to purely generic content - it's a call to deliberately understand where your specific product's output sits on this gradient, phrase recommendations with appropriate care, include clear guidance to consult a genuine healthcare professional for anything beyond general wellness suggestion, and treat any health-adjacent data collected with the elevated rigor it warrants regardless of the regulatory question specifically.
 
 [LaunchStudio](https://launchstudio.eu/en/) helps AI-native founders in the wellness and fitness category think through exactly this line concretely, connecting the specific personalization and language choices in their product to both data-handling and regulatory considerations, backed by Manifera's broader experience helping founders navigate genuinely nuanced compliance questions rather than defaulting to a generic answer.
 
-[Get clarity on where your wellness product's output actually sits](https://launchstudio.eu/en/#contact) — the line is real, and it's rarely where founders initially assume it is.
+[Get clarity on where your wellness product's output actually sits](https://launchstudio.eu/en/#contact) - the line is real, and it's rarely where founders initially assume it is.
 
 ## A Self-Diagnostic: Five Questions to Locate Your Product on the Gradient
 
-Since the line described above isn't a single bright rule, a founder benefits more from a structured self-check than from a yes-or-no test. These five questions, considered honestly and specifically about your own product's actual output, give a reasonably clear read on where you currently sit — and which direction any drift over time has been moving.
+Since the line described above isn't a single bright rule, a founder benefits more from a structured self-check than from a yes-or-no test. These five questions, considered honestly and specifically about your own product's actual output, give a reasonably clear read on where you currently sit - and which direction any drift over time has been moving.
 
-**1. Does the product ask for individual health information to personalize its output?** Injury history, existing conditions, medications, reported symptoms — any of these feeding into personalized recommendations pushes toward the more sensitive end of the gradient. A product working only from general goals (weight, activity level, preferred workout style) sits further from this line by default.
+**1. Does the product ask for individual health information to personalize its output?** Injury history, existing conditions, medications, reported symptoms - any of these feeding into personalized recommendations pushes toward the more sensitive end of the gradient. A product working only from general goals (weight, activity level, preferred workout style) sits further from this line by default.
 
-**2. Applying the suggestion-versus-directive distinction covered above, when did you last actually re-read a sample of real output rather than the original prompt design?** The gap between how a product was designed to phrase things and how it's actually phrasing them in practice tends to widen quietly over successive prompt tweaks, model updates, and edge cases nobody specifically reviewed — a founder who checked this distinction once at launch and never again is often surprised by what a fresh, honest read of current output actually shows.
+**2. Applying the suggestion-versus-directive distinction covered above, when did you last actually re-read a sample of real output rather than the original prompt design?** The gap between how a product was designed to phrase things and how it's actually phrasing them in practice tends to widen quietly over successive prompt tweaks, model updates, and edge cases nobody specifically reviewed - a founder who checked this distinction once at launch and never again is often surprised by what a fresh, honest read of current output actually shows.
 
-**3. Could a user plausibly treat this output as a substitute for seeing a professional, in a realistic scenario?** Not a hypothetical extreme case, but a genuinely plausible one — a user with mild, ambiguous symptoms who might reasonably decide the app's guidance is sufficient rather than booking an appointment. The more plausible that scenario, the more the product's framing and disclaimers matter.
+**3. Could a user plausibly treat this output as a substitute for seeing a professional, in a realistic scenario?** Not a hypothetical extreme case, but a genuinely plausible one - a user with mild, ambiguous symptoms who might reasonably decide the app's guidance is sufficient rather than booking an appointment. The more plausible that scenario, the more the product's framing and disclaimers matter.
 
-**4. Does the product explicitly and visibly point toward professional consultation for anything beyond general guidance?** A clear, unavoidable prompt to consult a relevant professional — not buried in terms of service, but present at the point where personalized output actually appears — meaningfully changes the risk profile of otherwise-identical underlying recommendations.
+**4. Does the product explicitly and visibly point toward professional consultation for anything beyond general guidance?** A clear, unavoidable prompt to consult a relevant professional - not buried in terms of service, but present at the point where personalized output actually appears - meaningfully changes the risk profile of otherwise-identical underlying recommendations.
 
-**5. Has the output's language drifted since it was first written, without a deliberate re-review?** Product copy and AI-generated output phrasing both tend to evolve gradually through iteration, feature additions, and prompt tuning aimed at sounding more helpful — exactly the kind of drift that catches founders off guard, since nobody deliberately checked whether the language had moved further toward directive, medical-sounding phrasing than originally intended.
+**5. Has the output's language drifted since it was first written, without a deliberate re-review?** Product copy and AI-generated output phrasing both tend to evolve gradually through iteration, feature additions, and prompt tuning aimed at sounding more helpful - exactly the kind of drift that catches founders off guard, since nobody deliberately checked whether the language had moved further toward directive, medical-sounding phrasing than originally intended.
 
-A product answering toward the lower-risk end of all five questions — general inputs, considered rather than directive phrasing, low plausibility of substituting for professional care, clear consultation prompts, and no unreviewed drift — sits comfortably in general wellness territory. A product answering toward the higher-risk end of several questions at once isn't necessarily doing anything wrong, but genuinely warrants the kind of deliberate, specific review this article describes, rather than an assumption that "it's just a fitness app" settles the question on its own.
+A product answering toward the lower-risk end of all five questions - general inputs, considered rather than directive phrasing, low plausibility of substituting for professional care, clear consultation prompts, and no unreviewed drift - sits comfortably in general wellness territory. A product answering toward the higher-risk end of several questions at once isn't necessarily doing anything wrong, but genuinely warrants the kind of deliberate, specific review this article describes, rather than an assumption that "it's just a fitness app" settles the question on its own.
 
-Running through these five questions takes a few minutes and requires no legal or medical background — just an honest, specific look at what your product's actual output says, to whom, based on what input, phrased in what way. The founders who get caught off guard are rarely the ones who considered these questions and got the answer wrong; they're the ones who never specifically asked.
+Running through these five questions takes a few minutes and requires no legal or medical background - just an honest, specific look at what your product's actual output says, to whom, based on what input, phrased in what way. The founders who get caught off guard are rarely the ones who considered these questions and got the answer wrong; they're the ones who never specifically asked.
 
 ## Real example
 
@@ -83,12 +83,12 @@ Fleur, a former physiotherapy assistant turned founder in Breda, built HerstelCo
 
 When a healthcare-focused advisor reviewed HerstelCoach ahead of a planned partnership with local gyms, they specifically flagged that phrases like "you should avoid this movement for the next week given your reported knee pain" read as directive medical guidance rather than general wellness suggestion, a distinction with real regulatory implications given HerstelCoach's use of self-reported injury history to personalize its output.
 
-**Result:** LaunchStudio helped Fleur revise HerstelCoach's output language toward general, clearly-framed wellness suggestion paired with explicit prompts to consult a physiotherapist for anything beyond general guidance, alongside a review of how injury-history data was being stored and protected — resolving the specific gap the advisor had flagged before it became a genuine issue with the gym partnership.
+**Result:** LaunchStudio helped Fleur revise HerstelCoach's output language toward general, clearly-framed wellness suggestion paired with explicit prompts to consult a physiotherapist for anything beyond general guidance, alongside a review of how injury-history data was being stored and protected - resolving the specific gap the advisor had flagged before it became a genuine issue with the gym partnership.
 
 > *"I'd written the recommendations to sound confident and helpful, which felt like good product design at the time. It took an outside healthcare perspective to point out that 'confident and helpful' had drifted into language that sounded a lot more like medical direction than general wellness advice."*
-> — **Fleur Aarts, Founder, HerstelCoach (Breda)**
+> - **Fleur Aarts, Founder, HerstelCoach (Breda)**
 
-**Cost & Timeline:** €1,150 (output language and data-handling review) — completed in 4 business days.
+**Cost & Timeline:** €1,150 (output language and data-handling review) - completed in 4 business days.
 
 ---
 
@@ -96,7 +96,7 @@ When a healthcare-focused advisor reviewed HerstelCoach ahead of a planned partn
 
 ### Does every fitness or wellness AI product risk crossing into regulated territory?
 
-Not every one — genuinely generic, non-personalized content typically stays clearly outside this concern; the risk specifically increases as personalization based on individual health data and directive language both increase together.
+Not every one - genuinely generic, non-personalized content typically stays clearly outside this concern; the risk specifically increases as personalization based on individual health data and directive language both increase together.
 
 ### Is there a simple rule of thumb for keeping AI-generated wellness output on the safer, general side of this line?
 
@@ -104,11 +104,11 @@ Framing output as general considerations rather than directive instructions, and
 
 ### How does this interact with the elevated data-handling requirements covered elsewhere for sensitive health-adjacent data?
 
-They're related but distinct considerations — the regulatory advice question concerns what the product's output implies, while data handling concerns how the underlying health-adjacent information is stored and protected, and both warrant attention regardless of how the other resolves.
+They're related but distinct considerations - the regulatory advice question concerns what the product's output implies, while data handling concerns how the underlying health-adjacent information is stored and protected, and both warrant attention regardless of how the other resolves.
 
 ### Would Fleur's original language have been a problem even without the specific healthcare partnership prompting the review?
 
-The underlying risk existed regardless of the partnership, though the partnership's healthcare-adjacent scrutiny is specifically what surfaced it proactively — the same gap could have remained unnoticed longer without that particular external trigger.
+The underlying risk existed regardless of the partnership, though the partnership's healthcare-adjacent scrutiny is specifically what surfaced it proactively - the same gap could have remained unnoticed longer without that particular external trigger.
 
 ### Is it possible to build a genuinely personalized wellness product without ever approaching this regulatory line?
 
@@ -124,7 +124,7 @@ Personalization based on general preferences and goals, without incorporating sp
       "name": "Does every fitness or wellness AI product risk crossing into regulated territory?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not every one — generic, non-personalized content typically stays outside this concern; personalization and directive language increase risk."
+        "text": "Not every one - generic, non-personalized content typically stays outside this concern; personalization and directive language increase risk."
       }
     },
     {
@@ -140,7 +140,7 @@ Personalization based on general preferences and goals, without incorporating sp
       "name": "How does this interact with elevated data-handling requirements for health-adjacent data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Related but distinct — regulatory advice concerns output implications, data handling concerns storage and protection."
+        "text": "Related but distinct - regulatory advice concerns output implications, data handling concerns storage and protection."
       }
     },
     {

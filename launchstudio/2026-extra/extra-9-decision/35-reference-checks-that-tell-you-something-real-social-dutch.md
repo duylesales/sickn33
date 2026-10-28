@@ -1,4 +1,4 @@
-🚨 Zes gesprekken, drie bureaus. Elke referent zei hetzelfde: professioneel, stipt, prettig in de omgang. Ze koos het bureau waarvan ze de oprichter mocht — en ontdekte dat de senior engineers in week twee waren doorgeschoven naar een grotere klant. 😳
+🚨 Zes gesprekken, drie bureaus. Elke referent zei hetzelfde: professioneel, stipt, prettig in de omgang. Ze koos het bureau waarvan ze de oprichter mocht - en ontdekte dat de senior engineers in week twee waren doorgeschoven naar een grotere klant. 😳
 
 Een standaard referentiegesprek is een schijnvertoning: de leverancier kiest de referent, en "was u tevreden?" heeft maar één sociaal acceptabel antwoord: 🧠
 
@@ -8,7 +8,7 @@ Een standaard referentiegesprek is een schijnvertoning: de leverancier kiest de 
 ❌ Een lovende referent zonder technische achtergrond wordt verward met een bewijs van robuuste codekwaliteit
 
 ✅ Vraag om een klant van een project dat uitliep, én een klant van 18+ maanden geleden die er nog steeds op draait
-✅ Spoor zelf via LinkedIn één onafhankelijke referent op — die is het bureau helemaal niets verschuldigd
+✅ Spoor zelf via LinkedIn één onafhankelijke referent op - die is het bureau helemaal niets verschuldigd
 ✅ Vraag naar concrete gebeurtenissen: "vertel mij over de week waarin het project het meest onder druk stond"
 ✅ Vraag de referent van 18 maanden geleden hoe snel een nieuwe externe developer de codebase kon overnemen
 

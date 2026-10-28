@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Send the same Lovable prototype to five people in the Netherlands and ask what it costs to launch it, and the answers will differ by a factor of ten. Not because four of them are wrong, but because they are pricing four different pieces of work — and because you asked a question that sounds specific and is not.
+Send the same Lovable prototype to five people in the Netherlands and ask what it costs to launch it, and the answers will differ by a factor of ten. Not because four of them are wrong, but because they are pricing four different pieces of work - and because you asked a question that sounds specific and is not.
 
 Understanding what drives the number is worth more than finding the lowest one. It also lets you make the quotes comparable, which is the only way to judge them.
 
@@ -42,7 +42,7 @@ Three broad bands, with the caveat that individual quotes vary and these are the
 
 **Traditional agencies** typically start around €20,000 and rise steeply, with timelines in months. The default approach is to rebuild rather than inherit, and the price reflects project management, design capacity and account handling you may not need for a prototype that already works.
 
-**Independent freelancers and small studios** commonly land between €5,000 and €20,000. Quality and predictability vary widely here, and the biggest risk is not competence but availability — a single person with other clients and a holiday.
+**Independent freelancers and small studios** commonly land between €5,000 and €20,000. Quality and predictability vary widely here, and the biggest risk is not competence but availability - a single person with other clients and a holiday.
 
 **Specialised last-mile services,** including LaunchStudio, work in a narrower band because the scope is narrower: €800 to €7,500 fixed, one to three weeks, with the frontend kept rather than rebuilt, and managed hosting at €49 per month afterwards if you want it.
 
@@ -68,7 +68,7 @@ Notice what is not on the list: the number of screens. Founders describe their p
 
 They behave differently in ways worth understanding before choosing.
 
-**Hourly** transfers risk to you. If the work takes twice as long — because something was worse than expected, which is common in inherited codebases — you pay twice. It suits genuinely open-ended work and requires you to monitor scope actively.
+**Hourly** transfers risk to you. If the work takes twice as long - because something was worse than expected, which is common in inherited codebases - you pay twice. It suits genuinely open-ended work and requires you to monitor scope actively.
 
 **Fixed price** transfers risk to the supplier, and they price that risk in. It requires a clearly defined scope, which forces a useful conversation before anyone starts. For last-mile work on a prototype, this is usually the better arrangement: the scope is knowable, and you want a predictable number.
 
@@ -86,7 +86,7 @@ Four things a quote should tell you, and most do not.
 
 **What happens after delivery.** Two weeks of support for things that break is normal; open-ended maintenance is not, and both should be stated.
 
-**Who owns what.** Repository, accounts, domain, code — in your name, from the start.
+**Who owns what.** Repository, accounts, domain, code - in your name, from the start.
 
 A quote missing all four is not cheaper than one that includes them. It is less complete.
 
@@ -94,7 +94,7 @@ A quote missing all four is not cheaper than one that includes them. It is less 
 
 Make them comparable by supplying the scope yourself.
 
-Write your own list of outcomes — six to ten lines covering data access, secrets, payments, hosting, backups, monitoring and anything specific to your product — and ask every candidate to price that list. Any deviation becomes visible immediately: one quote excludes payments, another includes a redesign you did not ask for, a third adds a maintenance retainer.
+Write your own list of outcomes - six to ten lines covering data access, secrets, payments, hosting, backups, monitoring and anything specific to your product - and ask every candidate to price that list. Any deviation becomes visible immediately: one quote excludes payments, another includes a redesign you did not ask for, a third adds a maintenance retainer.
 
 This single step turns five incomparable numbers into a useful comparison, and it takes half an hour.
 
@@ -102,7 +102,7 @@ This single step turns five incomparable numbers into a useful comparison, and i
 
 Not dishonesty. Usually one of four things: the scope was misunderstood, the security work is excluded, the person has not opened your project, or the work will be done quickly rather than carefully by someone learning as they go.
 
-Ask one question to distinguish them: "what did you find when you looked at the project?" A specific answer — a table without access rules, a key in the bundle, a payment flow with no webhook — means they looked. A general answer means the number is a guess, and guesses move.
+Ask one question to distinguish them: "what did you find when you looked at the project?" A specific answer - a table without access rules, a key in the bundle, a payment flow with no webhook - means they looked. A general answer means the number is a guess, and guesses move.
 
 ## What a High Quote Usually Means
 
@@ -118,23 +118,23 @@ This is also the argument for a fixed, narrow first engagement rather than a lar
 
 ## Getting a Number You Can Compare
 
-LaunchStudio quotes fixed price against a written scope after looking at the project, within the €800 to €7,500 band, with the frontend kept, code ownership yours throughout, and a documented handover — which is the same list this article suggests you demand from anyone.
+LaunchStudio quotes fixed price against a written scope after looking at the project, within the €800 to €7,500 band, with the frontend kept, code ownership yours throughout, and a documented handover - which is the same list this article suggests you demand from anyone.
 
 The engineers are Manifera's, with eleven years of production work behind them for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City, which is the reason the estimates hold: this class of engagement is familiar rather than exploratory.
 
-[Describe your project](https://launchstudio.eu/en/#contact) and you will have a scoped, fixed-price offer within one business day — useful as a benchmark even if you engage someone else. The [packages page](https://launchstudio.eu/en/#packages) shows what each band includes.
+[Describe your project](https://launchstudio.eu/en/#contact) and you will have a scoped, fixed-price offer within one business day - useful as a benchmark even if you engage someone else. The [packages page](https://launchstudio.eu/en/#packages) shows what each band includes.
 
 ## What Changes the Number After You Start
 
 Even a well-scoped fixed price can move, and the professional version of that conversation looks different from the unprofessional one.
 
-**Legitimate reasons the scope changes.** The assessment finds something nobody could have known from outside — no persistence at all, a data model that cannot support the feature, a third-party integration that does not work as documented. This is normal in inherited code, and it should arrive as a conversation in the first days with a revised plan and a revised number before work continues.
+**Legitimate reasons the scope changes.** The assessment finds something nobody could have known from outside - no persistence at all, a data model that cannot support the feature, a third-party integration that does not work as documented. This is normal in inherited code, and it should arrive as a conversation in the first days with a revised plan and a revised number before work continues.
 
 **Illegitimate reasons.** Work nobody asked for appearing in the invoice. A refactor that serves the engineer's preference. A discovery raised at the end rather than when it was discovered.
 
 **How to handle it well.** Agree at the start that scope changes are raised in writing, with the cause, the revised estimate and the option to descope something else instead. That single clause converts an awkward mid-project negotiation into a routine decision.
 
-**What to watch in yourself.** Founders add scope too — a feature that occurred to them in week two, a design change, one more integration. Every addition is legitimate and each one should be priced rather than absorbed, because unpriced additions are how an engagement quietly becomes unprofitable and the quality drops at the end.
+**What to watch in yourself.** Founders add scope too - a feature that occurred to them in week two, a design change, one more integration. Every addition is legitimate and each one should be priced rather than absorbed, because unpriced additions are how an engagement quietly becomes unprofitable and the quality drops at the end.
 
 The healthiest arrangement is a small explicit contingency both parties understand: a stated allowance for discoveries, used with your approval, and returned if unused.
 
@@ -153,9 +153,9 @@ She chose one of the two, and the engagement finished within the estimate.
 **Result:** Klusmaat launched nineteen business days later, and Nienke reports that writing the scope took thirty minutes and was the most useful thirty minutes of the process.
 
 > *"I thought I was comparing prices. I was comparing five completely different projects that all called themselves the same thing."*
-> — **Nienke Hulst, Founder, Klusmaat (Zwolle)**
+> - **Nienke Hulst, Founder, Klusmaat (Zwolle)**
 
-**Cost & Timeline:** €4,300 (access control, payments, hosting with staging, backups and monitoring) — completed in 12 business days.
+**Cost & Timeline:** €4,300 (access control, payments, hosting with staging, backups and monitoring) - completed in 12 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Often, though not because of dishonesty. Ask what they found when they looked at
       "name": "Why do quotes for the same prototype differ so much?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They price different work — some include a frontend rebuild, some exclude security or payments, and some quote without opening the project. Supplying your own scope makes them comparable."
+        "text": "They price different work - some include a frontend rebuild, some exclude security or payments, and some quote without opening the project. Supplying your own scope makes them comparable."
       }
     },
     {

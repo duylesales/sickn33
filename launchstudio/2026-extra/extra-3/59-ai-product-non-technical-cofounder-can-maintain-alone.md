@@ -31,47 +31,47 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A technical founder building an AI product alongside a non-technical cofounder rarely plans deliberately for a specific, uncomfortable scenario: what happens to the product's ongoing operation if the technical founder is genuinely unavailable — illness, an unplanned departure, simply overwhelmed by other demands for an extended period — and the non-technical cofounder needs to keep the company running without that specific technical capability immediately available.
+A technical founder building an AI product alongside a non-technical cofounder rarely plans deliberately for a specific, uncomfortable scenario: what happens to the product's ongoing operation if the technical founder is genuinely unavailable - illness, an unplanned departure, simply overwhelmed by other demands for an extended period - and the non-technical cofounder needs to keep the company running without that specific technical capability immediately available.
 
 ## Why This Deserves Deliberate Planning, Not Just Hope
 
-Most founding teams operate under an implicit, unexamined assumption that the technical founder will always be reasonably available, an assumption that's usually true and specifically risky precisely because it's rarely stress-tested until the exact moment it's tested by real, unplanned circumstances — at which point discovering the gap is considerably more costly than having planned for it in advance would have been.
+Most founding teams operate under an implicit, unexamined assumption that the technical founder will always be reasonably available, an assumption that's usually true and specifically risky precisely because it's rarely stress-tested until the exact moment it's tested by real, unplanned circumstances - at which point discovering the gap is considerably more costly than having planned for it in advance would have been.
 
 ## What "Maintainable by a Non-Technical Cofounder Alone" Actually Requires
 
-**Documentation covering not just what the codebase does, but how to handle the most common operational tasks.** Beyond the reasoning-behind-decisions documentation covered elsewhere in broader guidance, a non-technical cofounder specifically needs a clear, plain-language guide to routine operational tasks — how to check if something's down, who to contact for what kind of issue, where credentials and access are stored securely.
+**Documentation covering not just what the codebase does, but how to handle the most common operational tasks.** Beyond the reasoning-behind-decisions documentation covered elsewhere in broader guidance, a non-technical cofounder specifically needs a clear, plain-language guide to routine operational tasks - how to check if something's down, who to contact for what kind of issue, where credentials and access are stored securely.
 
-**A genuine, accessible support relationship that doesn't depend entirely on the technical founder's personal availability.** The ongoing support arrangement covered elsewhere in broader guidance on post-launch support becomes specifically critical here — a non-technical cofounder with access to a support relationship independent of their technical cofounder's personal availability has a genuine fallback that pure internal documentation alone can't fully replace.
+**A genuine, accessible support relationship that doesn't depend entirely on the technical founder's personal availability.** The ongoing support arrangement covered elsewhere in broader guidance on post-launch support becomes specifically critical here - a non-technical cofounder with access to a support relationship independent of their technical cofounder's personal availability has a genuine fallback that pure internal documentation alone can't fully replace.
 
 **Access and credentials that the non-technical cofounder can actually reach, not locked behind the technical founder's personal accounts.** A surprisingly common gap: critical infrastructure access tied to the technical founder's personal login credentials rather than a properly shared, company-owned account structure, meaning the non-technical cofounder may not even be able to access critical systems in an emergency, regardless of how well-documented the underlying processes are.
 
 ## Why This Specifically Matters More for AI-Native Products Than Some Traditional Businesses
 
-Given how much of an AI-native product's ongoing operation depends on the kind of technical maintenance covered throughout this content series — monitoring, dependency updates, the ongoing model-update vigilance covered elsewhere — a non-technical cofounder facing an unplanned gap in technical availability faces a genuinely more consequential operational risk than a founding team running a less technically-dependent business might.
+Given how much of an AI-native product's ongoing operation depends on the kind of technical maintenance covered throughout this content series - monitoring, dependency updates, the ongoing model-update vigilance covered elsewhere - a non-technical cofounder facing an unplanned gap in technical availability faces a genuinely more consequential operational risk than a founding team running a less technically-dependent business might.
 
 ## How to Actually Prepare for This Without It Feeling Morbid or Excessive
 
-Treating this as standard business continuity planning — the same category of preparation any responsible company does for other key-person risks — rather than a dramatic, unlikely scenario, normalizes the conversation and makes the actual preparation (documentation, accessible support, properly shared credentials) feel like reasonable diligence rather than an uncomfortable admission of vulnerability.
+Treating this as standard business continuity planning - the same category of preparation any responsible company does for other key-person risks - rather than a dramatic, unlikely scenario, normalizes the conversation and makes the actual preparation (documentation, accessible support, properly shared credentials) feel like reasonable diligence rather than an uncomfortable admission of vulnerability.
 
 [LaunchStudio](https://launchstudio.eu/en/) helps founding teams establish exactly this kind of continuity preparation as part of broader ongoing support engagements, ensuring a non-technical cofounder has genuine, accessible fallback options independent of any single individual's personal availability, backed by Manifera's broader commitment to supporting founding teams' actual operational resilience, not just their initial launch.
 
-[Make sure your product doesn't depend entirely on one person's continued availability](https://launchstudio.eu/en/#contact) — a gap most founding teams never test until it's suddenly, urgently relevant.
+[Make sure your product doesn't depend entirely on one person's continued availability](https://launchstudio.eu/en/#contact) - a gap most founding teams never test until it's suddenly, urgently relevant.
 
 ## A 20-Minute Continuity Check a Non-Technical Cofounder Can Run This Week
 
 Waiting for an actual emergency to reveal whether this gap exists is exactly the scenario this article argues against. A non-technical cofounder can get a genuine, if rough, answer today, without needing to understand any of the underlying technology, by working through five direct questions.
 
-**Can you log into the hosting account, the domain registrar, and the payment processor right now, yourself, without asking anyone for a password?** Not "could you get access if you asked" — actually, personally, able to log in at this moment. If the honest answer involves someone else's personal email or authenticator app, that's the single most common version of this gap, and the easiest one to name once asked directly.
+**Can you log into the hosting account, the domain registrar, and the payment processor right now, yourself, without asking anyone for a password?** Not "could you get access if you asked" - actually, personally, able to log in at this moment. If the honest answer involves someone else's personal email or authenticator app, that's the single most common version of this gap, and the easiest one to name once asked directly.
 
-**If the product went down right now, do you know the first three things to check or the first person to contact, without guessing?** This doesn't require technical knowledge — it requires a written answer existing somewhere you can actually find it, whether that's a status page to check, a support contact to email, or a specific person's number to call, rather than an assumption that you'd "figure it out" under pressure.
+**If the product went down right now, do you know the first three things to check or the first person to contact, without guessing?** This doesn't require technical knowledge - it requires a written answer existing somewhere you can actually find it, whether that's a status page to check, a support contact to email, or a specific person's number to call, rather than an assumption that you'd "figure it out" under pressure.
 
-**Do you know where the company's credentials and access are actually stored — a password manager you have access to, not one you've heard mentioned?** A shared, properly permissioned credential store is different from credentials existing somewhere in a technical cofounder's personal accounts that happen to work fine as long as that person remains available.
+**Do you know where the company's credentials and access are actually stored - a password manager you have access to, not one you've heard mentioned?** A shared, properly permissioned credential store is different from credentials existing somewhere in a technical cofounder's personal accounts that happen to work fine as long as that person remains available.
 
 **Is there any existing support or maintenance relationship you could reach independently, or does every technical question currently route through one specific person?** An external support arrangement, even a modest one, is worth more here than it might seem day-to-day, precisely because it's the one fallback that doesn't depend on your own cofounder's availability at all.
 
-**Could you find, right now, any written explanation of how the product actually works operationally — not the code, but what it does and what regularly needs attention?** Plain-language operational documentation doesn't need to be extensive to be useful; it needs to exist somewhere findable, rather than living entirely in one person's head.
+**Could you find, right now, any written explanation of how the product actually works operationally - not the code, but what it does and what regularly needs attention?** Plain-language operational documentation doesn't need to be extensive to be useful; it needs to exist somewhere findable, rather than living entirely in one person's head.
 
-A "no" or "not sure" to two or more of these is a specific, concrete reason to treat this as a near-term priority rather than a someday item — not because a crisis is imminent, but because, as covered above, this gap is invisible right up until the moment it very much isn't, and by then there's no time left to build the fallback that should have already existed.
+A "no" or "not sure" to two or more of these is a specific, concrete reason to treat this as a near-term priority rather than a someday item - not because a crisis is imminent, but because, as covered above, this gap is invisible right up until the moment it very much isn't, and by then there's no time left to build the fallback that should have already existed.
 
 ## Real example
 
@@ -79,14 +79,14 @@ A "no" or "not sure" to two or more of these is a specific, concrete reason to t
 
 Sanne and her technical cofounder Bram had built VerhuurBeheer, an AI tool helping small property rental businesses manage listings and tenant communication, together, with Bram handling essentially all technical maintenance and Sanne, the non-technical cofounder, focused entirely on customer relationships and business operations.
 
-When Bram experienced a genuine, unplanned medical emergency requiring several weeks away from any work at all, Sanne discovered she had no access to VerhuurBeheer's critical hosting account, no documentation for basic operational troubleshooting, and no existing support relationship independent of Bram's personal availability — a gap that, fortunately, didn't cause a genuine incident during those specific weeks, but represented a real, previously unexamined vulnerability the whole ordeal made viscerally clear.
+When Bram experienced a genuine, unplanned medical emergency requiring several weeks away from any work at all, Sanne discovered she had no access to VerhuurBeheer's critical hosting account, no documentation for basic operational troubleshooting, and no existing support relationship independent of Bram's personal availability - a gap that, fortunately, didn't cause a genuine incident during those specific weeks, but represented a real, previously unexamined vulnerability the whole ordeal made viscerally clear.
 
 **Result:** Once Bram returned, the couple worked with LaunchStudio specifically to establish proper shared access, plain-language operational documentation, and an ongoing support relationship Sanne could access independently, closing a gap that had existed invisibly since the company's founding and had only become apparent through a genuinely stressful real-world test.
 
 > *"Bram being unavailable for a few weeks was already hard enough without also realizing I had no actual way to keep our own product running if something had gone wrong during that time. We got lucky that nothing did. I don't want to depend on luck again."*
-> — **Sanne de Wit, Co-Founder, VerhuurBeheer**
+> - **Sanne de Wit, Co-Founder, VerhuurBeheer**
 
-**Cost & Timeline:** €1,300 (continuity documentation, access restructuring, ongoing support setup) — completed in 5 business days.
+**Cost & Timeline:** €1,300 (continuity documentation, access restructuring, ongoing support setup) - completed in 5 business days.
 
 ---
 
@@ -98,19 +98,19 @@ The underlying principle applies more broadly to any team with a concentration o
 
 ### How would a non-technical cofounder know if their current setup already has this gap, without waiting for an actual emergency to reveal it?
 
-Directly asking specific questions — do I have my own access to critical systems, is there documentation I could actually follow, is there a support relationship I could reach independently — surfaces this proactively, similar in spirit to the diagnostic questions covered throughout broader guidance for evaluating other production-readiness gaps.
+Directly asking specific questions - do I have my own access to critical systems, is there documentation I could actually follow, is there a support relationship I could reach independently - surfaces this proactively, similar in spirit to the diagnostic questions covered throughout broader guidance for evaluating other production-readiness gaps.
 
 ### Is establishing this kind of continuity preparation a significant undertaking, or relatively contained?
 
-Generally contained, as in Sanne and Bram's case — the core work involves documentation, access restructuring, and establishing an existing support relationship, not a fundamental rebuild of the product or its infrastructure.
+Generally contained, as in Sanne and Bram's case - the core work involves documentation, access restructuring, and establishing an existing support relationship, not a fundamental rebuild of the product or its infrastructure.
 
 ### Does having an ongoing support relationship with an external partner, like LaunchStudio's Launch & Grow package, directly address this gap?
 
-Substantially, yes — an external support relationship the non-technical cofounder can access independently provides exactly the kind of fallback this article describes, considerably more reliable than depending entirely on internal documentation alone.
+Substantially, yes - an external support relationship the non-technical cofounder can access independently provides exactly the kind of fallback this article describes, considerably more reliable than depending entirely on internal documentation alone.
 
 ### How often should this kind of continuity preparation be revisited as a company and its team grow?
 
-Whenever the team composition changes meaningfully — new technical hires, departures, or significant changes in who holds critical knowledge — similar to how any access-control or documentation practice covered throughout broader guidance benefits from periodic review as circumstances evolve.
+Whenever the team composition changes meaningfully - new technical hires, departures, or significant changes in who holds critical knowledge - similar to how any access-control or documentation practice covered throughout broader guidance benefits from periodic review as circumstances evolve.
 
 <script type="application/ld+json">
 {
@@ -138,7 +138,7 @@ Whenever the team composition changes meaningfully — new technical hires, depa
       "name": "Is establishing continuity preparation a significant undertaking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Generally contained — documentation, access restructuring, and support setup, not a fundamental rebuild."
+        "text": "Generally contained - documentation, access restructuring, and support setup, not a fundamental rebuild."
       }
     },
     {
@@ -146,7 +146,7 @@ Whenever the team composition changes meaningfully — new technical hires, depa
       "name": "Does an ongoing external support relationship address this gap?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Substantially yes — provides a reliable fallback independent of internal documentation alone."
+        "text": "Substantially yes - provides a reliable fallback independent of internal documentation alone."
       }
     },
     {

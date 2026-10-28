@@ -1,4 +1,4 @@
-🔥 Ethan built a prototype using **Cursor** — ethan, a paralegal, used **cursor** to build an ai contract scanner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Ethan built a prototype using **Cursor** - ethan, a paralegal, used **cursor** to build an ai contract scanner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ethan's application achieved silky-smooth performance: The database remained stable under 4,000 concurrent sessions, and query latency dropped by 75%. (€1,900 (Database Scale Package) — production-ready and deployed in 5 business days.). 🚀
+Ethan's application achieved silky-smooth performance: The database remained stable under 4,000 concurrent sessions, and query latency dropped by 75%. (€1,900 (Database Scale Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/supabase-caching-strategies-ai-wrappers
 

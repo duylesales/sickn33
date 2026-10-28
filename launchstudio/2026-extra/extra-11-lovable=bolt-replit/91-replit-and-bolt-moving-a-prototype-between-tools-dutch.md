@@ -42,7 +42,7 @@ Het patroon is glashelder: alles wat je destijds bewust en zelfstandig hebt inge
 
 **Deployment- en omgevingsconfiguraties.** Build-commando's, runtime-instellingen, omgevingsvariabelen, geplande taken (cron jobs) en hostingtypes. Dit moet allemaal opnieuw worden ingesteld. Omdat dit zelden gedocumenteerd is, moet iemand eerst exact uitzoeken hoe het huidige systeem functioneert.
 
-**Geheime sleutels (secrets).** Elk platform slaat API-keys en tokens op een eigen manier op. De migratie is het uitgelezen moment om alle secrets te roteren — wat sowieso noodzakelijk is als meerdere teamleden toegang hebben gehad.
+**Geheime sleutels (secrets).** Elk platform slaat API-keys en tokens op een eigen manier op. De migratie is het uitgelezen moment om alle secrets te roteren - wat sowieso noodzakelijk is als meerdere teamleden toegang hebben gehad.
 
 **Samenwerkingsstatus.** Wie beheerdersrechten heeft, de gedeelde bewerkingshistorie en interne commentaren: niets daarvan reist mee naar een nieuw platform.
 
@@ -70,7 +70,7 @@ Loop dit stappenplan strikt af om chaos te voorkomen:
 
 Dit is veruit de meest voorkomende manier waarop migraties ontsporen:
 
-Een verhuizing lijkt een ideaal moment om direct de mappenstructuur op te schonen, libraries te upgraden, functies te hernoemen en die ene hardnekkige bug op te lossen. Doe dit niet. Wanneer er dan iets breekt — en er breekt altijd iets — is het onmogelijk om te achterhalen of de fout wordt veroorzaakt door het nieuwe platform of door jouw codewijzigingen.
+Een verhuizing lijkt een ideaal moment om direct de mappenstructuur op te schonen, libraries te upgraden, functies te hernoemen en die ene hardnekkige bug op te lossen. Doe dit niet. Wanneer er dan iets breekt - en er breekt altijd iets - is het onmogelijk om te achterhalen of de fout wordt veroorzaakt door het nieuwe platform of door jouw codewijzigingen.
 
 Migreer eerst, waarbij je de codebase zo identiek mogelijk houdt. Valideer dat alles naar behoren werkt. Pas daarna ga je verbeteren en refactoren. Het voelt contra-intuïtief, maar het is veruit de snelste route naar succes.
 
@@ -92,7 +92,7 @@ Controleer deze punten direct na de DNS-omzetting:
 - De applicatie laadt foutloos op je eigen domeinnaam met een geldig SSL-certificaat.
 - Nieuwe data die wordt ingevoerd blijft permanent bewaard na een herstart of hercompileersessie.
 - File-uploads functioneren en historische bestanden zijn foutloos op te vragen.
-- Elke geplande cron-job heeft minimaal één keer succesvol gedraaid — controleer dit actief in de logs.
+- Elke geplande cron-job heeft minimaal één keer succesvol gedraaid - controleer dit actief in de logs.
 - Webhooks van betaalproviders bereiken het nieuwe endpoint en worden gevalideerd.
 - Geen enkele geheime sleutel staat in de gedownloade frontend-bestanden.
 - Foutmeldingen komen binnen in je centrale error-tracker.
@@ -134,18 +134,18 @@ Ties Kroeze bouwde met Bolt het platform Zwemles: een planningssysteem voor zwem
 
 Hij besloot het project te migreren naar een volwaardige ontwikkelomgeving omdat hij server-side code nodig had voor een automatische incassokoppeling en omdat een parttime collega aansloot. De verhuizing kostte hem een weekend en op maandagochtend leek alles vlekkeloos te werken.
 
-Drie cruciale elementen waren echter achtergebleven. De nachtelijke cron-job die ouders een automatische herinneringsmail stuurde voor de les van de volgende dag, was geconfigureerd in de ingebouwde taakplanner van het oude platform en stond nergens in de broncode. De taak stopte geruisloos — en het ontbreken van een e-mail valt niemand direct op. Pasfoto's van kinderen, die zweminstructeurs gebruikten om lesgroepen te controleren, stonden opgeslagen in een lokale tijdelijke servermap op het oude platform en ontbraken in de export. En de webhook van de betaalprovider wees nog altijd naar het oude webadres, dat nog elf dagen online bleef reageren voordat de container werd gewist. Vanaf dat moment werden annuleringen van zwemabonnementen niet meer geregistreerd.
+Drie cruciale elementen waren echter achtergebleven. De nachtelijke cron-job die ouders een automatische herinneringsmail stuurde voor de les van de volgende dag, was geconfigureerd in de ingebouwde taakplanner van het oude platform en stond nergens in de broncode. De taak stopte geruisloos - en het ontbreken van een e-mail valt niemand direct op. Pasfoto's van kinderen, die zweminstructeurs gebruikten om lesgroepen te controleren, stonden opgeslagen in een lokale tijdelijke servermap op het oude platform en ontbraken in de export. En de webhook van de betaalprovider wees nog altijd naar het oude webadres, dat nog elf dagen online bleef reageren voordat de container werd gewist. Vanaf dat moment werden annuleringen van zwemabonnementen niet meer geregistreerd.
 
 Het uitvallen van de herinneringsmails werd pas na negentien dagen ontdekt, toen een zwemschoolhouder vroeg waarom zoveel bezorgde ouders plotseling telefonisch informeerden naar de lestijden.
 
-In acht werkdagen werd de schade vakkundig hersteld: de nachtelijke herinneringstaak werd opnieuw opgebouwd als een robuuste achtergrondtaak met audit logging en automatische waarschuwingen bij uitval; de volledige configuratie-inventarisatie werd alsnog uitgevoerd, waarbij twee verstopte instellingen aan het licht kwamen — een tijdzone-instelling en een uploadlimiet — die geruisloos waren teruggevallen naar standaarden waardoor lestijden voor een deel van de ouders een uur verschoven werden weergegeven; foto's werden gemigreerd naar beveiligde object storage met strikte tenant-autorisatie; de betaalwebhook werd omgezet met handtekeningverificatie en de elf dagen aan gemiste opzeggingen werden handmatig gereconcilieerd, waarbij drie gezinnen werden opgespoord die onterecht nog lesgeld betaalden; API-sleutels werden geroteerd; en de volledige architectuur werd gedocumenteerd.
+In acht werkdagen werd de schade vakkundig hersteld: de nachtelijke herinneringstaak werd opnieuw opgebouwd als een robuuste achtergrondtaak met audit logging en automatische waarschuwingen bij uitval; de volledige configuratie-inventarisatie werd alsnog uitgevoerd, waarbij twee verstopte instellingen aan het licht kwamen - een tijdzone-instelling en een uploadlimiet - die geruisloos waren teruggevallen naar standaarden waardoor lestijden voor een deel van de ouders een uur verschoven werden weergegeven; foto's werden gemigreerd naar beveiligde object storage met strikte tenant-autorisatie; de betaalwebhook werd omgezet met handtekeningverificatie en de elf dagen aan gemiste opzeggingen werden handmatig gereconcilieerd, waarbij drie gezinnen werden opgespoord die onterecht nog lesgeld betaalden; API-sleutels werden geroteerd; en de volledige architectuur werd gedocumenteerd.
 
 **Resultaat:** De drie onterecht gefactureerde gezinnen ontvingen binnen een week hun lesgeld terug. Ties omschrijft het tijdzoneprobleem als het meest pijnlijke incident: negentien dagen lang toonde zijn systeem ouders de verkeerde aanvangstijden zonder dat hij er ook maar enig vermoeden van had.
 
 > *"Alles wat ik met het blote oog kon zien functioneerde op maandagochtend. Wat niet was meeverhuisd, was alles wat onzichtbaar was: een nachtelijke e-mailjob, een tijdzone-instelling en een webhook die bleef antwoorden op een webadres dat ik op het punt stond te wissen."*
-> — **Ties Kroeze, Oprichter, Zwemles (Purmerend)**
+> - **Ties Kroeze, Oprichter, Zwemles (Purmerend)**
 
-**Kosten & Doorlooptijd:** € 3.600 (herbouw en monitoring van cron-jobs, configuratie-inventarisatie en correctie, veilige opslagmigratie, webhook-herstel met datareconciliatie, sleutelrotatie, documentatie) — opgeleverd in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 3.600 (herbouw en monitoring van cron-jobs, configuratie-inventarisatie en correctie, veilige opslagmigratie, webhook-herstel met datareconciliatie, sleutelrotatie, documentatie) - opgeleverd in 8 werkdagen.
 
 ## Veelgestelde vragen
 

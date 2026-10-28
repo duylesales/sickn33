@@ -1,6 +1,6 @@
-🔥 Tomas Berg bouwde QueueFlow AI — een platform voor wachtrijbeheer in restaurants met **Lovable** — en huurde een DevOps-consultant in toen dashboards begonnen vast te lopen tijdens de avonddrukte. 🧠
+🔥 Tomas Berg bouwde QueueFlow AI - een platform voor wachtrijbeheer in restaurants met **Lovable** - en huurde een DevOps-consultant in toen dashboards begonnen vast te lopen tijdens de avonddrukte. 🧠
 
-Drie weken en een nieuwe auto-scaling-opzet later crashte de app nog steeds bij precies dezelfde verkeersgrens — omdat niemand de daadwerkelijke query's had aangeraakt.
+Drie weken en een nieuwe auto-scaling-opzet later crashte de app nog steeds bij precies dezelfde verkeersgrens - omdat niemand de daadwerkelijke query's had aangeraakt.
 
 ❌ € 120-€ 180/uur besteed aan infrastructuur en orkestratie die de applicatiecode nooit bereikte
 ❌ 34 opeenvolgende databaseverzoeken bij één paginalading (een klassiek N+1-patroon)
@@ -12,7 +12,7 @@ Drie weken en een nieuwe auto-scaling-opzet later crashte de app nog steeds bij 
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De laadtijd van Tomas' dashboard daalde van 8 seconden naar minder dan 900 milliseconden: QueueFlow AI verwerkte een avonddrukte-piek van 15.000 gelijktijdige gebruikers zonder crashes en met 99,9% uptime. (€ 3.200 (Relaunch & Scale Pakket) — 9 werkdagen.) 🚀
+De laadtijd van Tomas' dashboard daalde van 8 seconden naar minder dan 900 milliseconden: QueueFlow AI verwerkte een avonddrukte-piek van 15.000 gelijktijdige gebruikers zonder crashes en met 99,9% uptime. (€ 3.200 (Relaunch & Scale Pakket) - 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-devops-consultant-scaling
 

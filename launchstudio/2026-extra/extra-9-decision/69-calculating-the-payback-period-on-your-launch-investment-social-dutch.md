@@ -1,4 +1,4 @@
-🧮 Twee oprichters, dezelfde offerte van € 3.800. De een zei binnen een dag 'ja' — hij had berekend dat hij het in zes weken terugverdiende. De ander twijfelde een maand lang en staarde naar haar banksaldo. 🤔
+🧮 Twee oprichters, dezelfde offerte van € 3.800. De een zei binnen een dag 'ja' - hij had berekend dat hij het in zes weken terugverdiende. De ander twijfelde een maand lang en staarde naar haar banksaldo. 🤔
 
 Investeerders vragen altijd naar uw CAC-terugverdientijd. Vrijwel niemand berekent dezelfde rekensom voor diens eigen lanceerinvestering: 🧠
 
@@ -7,7 +7,7 @@ Investeerders vragen altijd naar uw CAC-terugverdientijd. Vrijwel niemand bereke
 ❌ Verloop (churn) negeren veronderstelt ten onrechte dat elke klant uit maand één in maand vier nog betaalt
 ❌ Een te lange terugverdientijd duidt meestal op een prijsprobleem, niet op te dure engineering
 
-✅ Terugverdientijd = wanneer cumulatieve netto-omzet de vaste kosten passeert — controleerbaar, geen onderbuikgevoel
+✅ Terugverdientijd = wanneer cumulatieve netto-omzet de vaste kosten passeert - controleerbaar, geen onderbuikgevoel
 ✅ Bouw een eenvoudig rekenblad, één rij per maand, zodat elke aanname zwart-op-wit staat
 ✅ Voer een pessimistisch en optimistisch scenario uit om te zien hoe robuust de uitkomst is
 ✅ Een terugverdientijd van één tot vier maanden op een zelf gefinancierde lancering is ijzersterk

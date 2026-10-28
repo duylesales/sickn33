@@ -20,25 +20,25 @@ target_persona: "CTO"
 }
 </script>
 
-Every enterprise software integration project starts with a diagram that shows two clean boxes and a single arrow connecting them, and every one of those projects eventually discovers that the arrow is where all the actual work lives — the legacy system on one end and the modern application on the other are both well understood; it's the data mapping, error handling, and ongoing synchronization between them that nobody scoped properly.
+Every enterprise software integration project starts with a diagram that shows two clean boxes and a single arrow connecting them, and every one of those projects eventually discovers that the arrow is where all the actual work lives - the legacy system on one end and the modern application on the other are both well understood; it's the data mapping, error handling, and ongoing synchronization between them that nobody scoped properly.
 
 **The Pain:** A CTO scoping a legacy system integration typically gets a clean, optimistic estimate based on the assumption that connecting System A to System B is primarily a matter of building an API client against whatever interface each system already exposes, an assumption that holds until the integration hits its first data mismatch, undocumented business rule embedded in the legacy system, or transient failure that the initial scope never accounted for handling.
 
-**The Agitation:** Enterprise integration projects run over their original timeline and budget more often than not, commonly by 50% or more, and the overrun rarely comes from the systems being harder to connect to than expected — it comes from data quality issues discovered mid-project, error handling that wasn't designed until failures started happening in production, and an ongoing maintenance burden nobody budgeted for once the "one-time" integration project became a permanent piece of infrastructure two systems now depend on daily.
+**The Agitation:** Enterprise integration projects run over their original timeline and budget more often than not, commonly by 50% or more, and the overrun rarely comes from the systems being harder to connect to than expected - it comes from data quality issues discovered mid-project, error handling that wasn't designed until failures started happening in production, and an ongoing maintenance burden nobody budgeted for once the "one-time" integration project became a permanent piece of infrastructure two systems now depend on daily.
 
 ## What Actually Makes Enterprise Software Integration Reliable
 
-**Data mapping and reconciliation done before a single API call is built.** The most consistently underestimated part of any integration is reconciling how the same real-world entity — a customer, an order, an inventory item — is represented differently across two systems, including inconsistent identifiers, different field semantics, and legacy business rules embedded in how data was entered over years, and doing this mapping work upfront, before development starts, is what prevents the mid-project surprises that blow up timelines.
+**Data mapping and reconciliation done before a single API call is built.** The most consistently underestimated part of any integration is reconciling how the same real-world entity - a customer, an order, an inventory item - is represented differently across two systems, including inconsistent identifiers, different field semantics, and legacy business rules embedded in how data was entered over years, and doing this mapping work upfront, before development starts, is what prevents the mid-project surprises that blow up timelines.
 
-**Idempotent, retry-safe integration logic, not a happy-path API call.** Real-world integrations run over unreliable networks against systems that occasionally time out or return unexpected responses, and an integration built only for the happy path will eventually create duplicate records or lose data during a retry — idempotency keys and explicit retry logic designed in from the start are what make an integration actually reliable under real operating conditions, not just in a demo.
+**Idempotent, retry-safe integration logic, not a happy-path API call.** Real-world integrations run over unreliable networks against systems that occasionally time out or return unexpected responses, and an integration built only for the happy path will eventually create duplicate records or lose data during a retry - idempotency keys and explicit retry logic designed in from the start are what make an integration actually reliable under real operating conditions, not just in a demo.
 
-**A defined data ownership and conflict-resolution model.** When two systems can both modify the same underlying data, an integration needs an explicit answer to which system is authoritative for which field, and what happens when both systems have conflicting updates — an integration built without this model resolves conflicts arbitrarily, based on whichever system happened to sync last, which silently corrupts data over time.
+**A defined data ownership and conflict-resolution model.** When two systems can both modify the same underlying data, an integration needs an explicit answer to which system is authoritative for which field, and what happens when both systems have conflicting updates - an integration built without this model resolves conflicts arbitrarily, based on whichever system happened to sync last, which silently corrupts data over time.
 
-**Monitoring and alerting on the integration itself, not just the two endpoint systems.** An integration that fails silently — a webhook that stops firing, a batch sync that starts erroring without anyone noticing — can run broken for weeks before anyone downstream notices data has drifted out of sync, and treating the integration layer itself as a monitored piece of production infrastructure, with alerting on sync failures and data drift, is what catches these failures in hours instead of weeks.
+**Monitoring and alerting on the integration itself, not just the two endpoint systems.** An integration that fails silently - a webhook that stops firing, a batch sync that starts erroring without anyone noticing - can run broken for weeks before anyone downstream notices data has drifted out of sync, and treating the integration layer itself as a monitored piece of production infrastructure, with alerting on sync failures and data drift, is what catches these failures in hours instead of weeks.
 
 **Legacy system quirks documented as explicit constraints, not tribal knowledge.** Every legacy system has undocumented business rules, rate limits, or data quirks that whoever built the original system understood implicitly and nobody wrote down, and a proper integration project spends real discovery time surfacing these constraints explicitly rather than discovering them one production incident at a time.
 
-A CTO evaluating an integration proposal should look specifically for how much of the estimate is allocated to data mapping, reconciliation, and error handling versus how much is allocated to the API client code itself — a proposal that's mostly the latter is very likely underestimating the project by exactly the parts that historically cause the overruns.
+A CTO evaluating an integration proposal should look specifically for how much of the estimate is allocated to data mapping, reconciliation, and error handling versus how much is allocated to the API client code itself - a proposal that's mostly the latter is very likely underestimating the project by exactly the parts that historically cause the overruns.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -55,8 +55,8 @@ This is Dutch Management × Vietnamese Mastery: architectural discipline that sc
 
 Manifera rebuilt the integration with idempotency keys, explicit retry logic, and monitoring on the sync process itself, along with a clear data-ownership model specifying the legacy system as authoritative for on-hand inventory and the order-management platform as authoritative for reservations. Sync failures now trigger alerts within minutes rather than being discovered months later during an audit, and inventory drift has been eliminated.
 
-> *"We didn't know we had a problem until an audit found six months of drift between two systems that were supposedly in sync the whole time. The fix wasn't a better API call — it was actually deciding which system was allowed to be right about what."*
-> — **CTO, Ενοποιημένη Διανομή Λευκωσίας ΑΕ, Cyprus**
+> *"We didn't know we had a problem until an audit found six months of drift between two systems that were supposedly in sync the whole time. The fix wasn't a better API call - it was actually deciding which system was allowed to be right about what."*
+> - **CTO, Ενοποιημένη Διανομή Λευκωσίας ΑΕ, Cyprus**
 
 ## Happy-Path API Connections vs. Manifera's Durable Integration Architecture
 
@@ -70,7 +70,7 @@ Manifera rebuilt the integration with idempotency keys, explicit retry logic, an
 
 ## The Economics
 
-Enterprise integration projects run over budget by 50% or more more often than not, with the overrun typically concentrated in data reconciliation and error handling that a happy-path estimate never accounted for — proper upfront data mapping and idempotent design typically add a modest percentage to initial project cost while preventing the far larger cost of silent data drift, production incidents, and emergency rework discovered months after launch. Scope the integration for what it actually is: permanent infrastructure two systems will depend on daily. [Talk to Manifera](https://www.manifera.com/contact-us/) about enterprise software integration and legacy system integration built to stay reliable long after launch.
+Enterprise integration projects run over budget by 50% or more more often than not, with the overrun typically concentrated in data reconciliation and error handling that a happy-path estimate never accounted for - proper upfront data mapping and idempotent design typically add a modest percentage to initial project cost while preventing the far larger cost of silent data drift, production incidents, and emergency rework discovered months after launch. Scope the integration for what it actually is: permanent infrastructure two systems will depend on daily. [Talk to Manifera](https://www.manifera.com/contact-us/) about enterprise software integration and legacy system integration built to stay reliable long after launch.
 
 ## Frequently Asked Questions
 

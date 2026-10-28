@@ -6,16 +6,16 @@ WebSocket = persistent, bidirectional, needed for voice AI or live collaboration
 SSE = one-way stream, simpler, cheaper, perfect for "AI generates, browser displays"
 
 ❌ Her app only needed one-way streaming (server → browser)
-❌ Bolt built it with WebSocket anyway — more complex, more expensive
+❌ Bolt built it with WebSocket anyway - more complex, more expensive
 ❌ Server resources consumed disproportionately for a data flow that never needed bidirectional capability
 
 The simple decision framework: ✅
 1️⃣ Browser needs to send data continuously? → WebSocket
 2️⃣ Purely "server sends, browser displays"? → SSE
 
-⚠️ Bonus gotcha: AI-generated WebSocket code frequently skips reconnection logic entirely — works fine in testing, fails silently for real users on flaky connections
+⚠️ Bonus gotcha: AI-generated WebSocket code frequently skips reconnection logic entirely - works fine in testing, fails silently for real users on flaky connections
 
-At **LaunchStudio**, backed by Manifera's full-stack experience, we match the right tech to your actual interaction pattern — before scaling makes the wrong choice expensive to unwind. 🛡️
+At **LaunchStudio**, backed by Manifera's full-stack experience, we match the right tech to your actual interaction pattern - before scaling makes the wrong choice expensive to unwind. 🛡️
 
 Her result: -40% hosting cost, zero change to the user experience. 🚀
 

@@ -42,7 +42,7 @@ Content Format: Local Guide
 }
 </script>
 
-Slovenia is small — around two million inhabitants — but it punches above its weight in artificial intelligence research. Ljubljana, its compact and green capital, hosts the Jožef Stefan Institute, an internationally recognised research institute, and the International Research Centre on Artificial Intelligence under the auspices of UNESCO. The country has also produced software companies with global reach. AI jobs in Ljubljana are therefore a mix of research positions with international visibility, product roles at companies selling worldwide and data roles in pharma, finance and industry. This guide explains the Ljubljana AI landscape honestly, including the limits of a small market, and helps experienced engineers decide whether it fits their plans.
+Slovenia is small - around two million inhabitants - but it punches above its weight in artificial intelligence research. Ljubljana, its compact and green capital, hosts the Jožef Stefan Institute, an internationally recognised research institute, and the International Research Centre on Artificial Intelligence under the auspices of UNESCO. The country has also produced software companies with global reach. AI jobs in Ljubljana are therefore a mix of research positions with international visibility, product roles at companies selling worldwide and data roles in pharma, finance and industry. This guide explains the Ljubljana AI landscape honestly, including the limits of a small market, and helps experienced engineers decide whether it fits their plans.
 
 ## Ljubljana's Research Strength
 
@@ -50,7 +50,7 @@ Slovenia is small — around two million inhabitants — but it punches above it
 
 **IRCAI.** The International Research Centre on Artificial Intelligence was established in Ljubljana under the auspices of UNESCO. It focuses on AI in support of the UN Sustainable Development Goals and brings international visibility and partnerships to the city's AI community.
 
-**University of Ljubljana.** The Faculty of Computer and Information Science (FRI) is the country's leading computer science faculty, with research groups in machine learning, computer vision, bioinformatics and natural language processing. Other faculties — mathematics and physics, electrical engineering, economics — contribute to data science education and research. The University of Maribor, in Slovenia's second-largest city, adds further research and graduates.
+**University of Ljubljana.** The Faculty of Computer and Information Science (FRI) is the country's leading computer science faculty, with research groups in machine learning, computer vision, bioinformatics and natural language processing. Other faculties - mathematics and physics, electrical engineering, economics - contribute to data science education and research. The University of Maribor, in Slovenia's second-largest city, adds further research and graduates.
 
 **Computing.** Slovenia hosts Vega, a supercomputer in Maribor that is part of the EuroHPC network, giving researchers access to significant computing resources.
 
@@ -76,13 +76,13 @@ Engineers considering AI jobs in Ljubljana should understand the trade-offs.
 
 **Pay levels.** Salaries in Slovenia are generally lower than in Western and Northern Europe, although international product companies can pay competitively. Cost of living, especially housing in Ljubljana, has risen.
 
-**Specialisation.** Highly specialised roles — for example in large-scale LLM training — are rare locally. Research institutes and some product companies offer depth, but breadth of specialist options is limited.
+**Specialisation.** Highly specialised roles - for example in large-scale LLM training - are rare locally. Research institutes and some product companies offer depth, but breadth of specialist options is limited.
 
 **Career progression.** With fewer large companies, senior and leadership roles are limited. Many experienced engineers combine local roles with international projects or remote work.
 
 ## Remote Work and International Employers
 
-A significant number of Slovenian engineers work remotely for companies abroad, either as employees through local entities or employer-of-record services, or as independent contractors. Ljubljana's quality of life, safety and location — close to the Alps, the Adriatic coast, Italy, Austria and Croatia — make it attractive as a base. If you consider this path, clarify employment status, tax residence, social security and how the arrangement affects benefits. Also consider the career effects: fully remote roles can limit mentoring and visibility, so maintain local connections through meetups and the research community.
+A significant number of Slovenian engineers work remotely for companies abroad, either as employees through local entities or employer-of-record services, or as independent contractors. Ljubljana's quality of life, safety and location - close to the Alps, the Adriatic coast, Italy, Austria and Croatia - make it attractive as a base. If you consider this path, clarify employment status, tax residence, social security and how the arrangement affects benefits. Also consider the career effects: fully remote roles can limit mentoring and visibility, so maintain local connections through meetups and the research community.
 
 ## Language and Culture
 
@@ -94,11 +94,11 @@ EU and EEA citizens can work in Slovenia and register their residence. Non-EU ci
 
 ## How OnlyAIJobs Fits a Ljubljana Search
 
-OnlyAIJobs is a European job board focused exclusively on AI, ML and data roles, showing each vacancy at its exact address with the distance from your home, without paid placement and with applications going directly to employers. Its listings are currently concentrated in the Netherlands, so there are few or no Ljubljana vacancies there today. Use Slovenian job portals, the career pages of research institutes and companies and local networks as primary sources. OnlyAIJobs is useful if you are comparing Slovenia with the Netherlands — where employers such as Cegeka, Mollie and Sendcloud list AI roles — or if you want a clear view of AI-only vacancies across Europe. Slovenian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+OnlyAIJobs is a European job board focused exclusively on AI, ML and data roles, showing each vacancy at its exact address with the distance from your home, without paid placement and with applications going directly to employers. Its listings are currently concentrated in the Netherlands, so there are few or no Ljubljana vacancies there today. Use Slovenian job portals, the career pages of research institutes and companies and local networks as primary sources. OnlyAIJobs is useful if you are comparing Slovenia with the Netherlands - where employers such as Cegeka, Mollie and Sendcloud list AI roles - or if you want a clear view of AI-only vacancies across Europe. Slovenian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Research Careers in Ljubljana
 
-For engineers attracted to research, Ljubljana offers an unusual advantage: access to internationally connected research groups in a city where daily life is relaxed and manageable. Research careers in Slovenia, as in much of Europe, are largely project-funded. Positions at the Jožef Stefan Institute or university often depend on European programmes such as Horizon Europe, national research agency funding or industry contracts. This brings variety — researchers may work on health, environment, media and manufacturing projects within a few years — but also uncertainty about long-term funding.
+For engineers attracted to research, Ljubljana offers an unusual advantage: access to internationally connected research groups in a city where daily life is relaxed and manageable. Research careers in Slovenia, as in much of Europe, are largely project-funded. Positions at the Jožef Stefan Institute or university often depend on European programmes such as Horizon Europe, national research agency funding or industry contracts. This brings variety - researchers may work on health, environment, media and manufacturing projects within a few years - but also uncertainty about long-term funding.
 
 Practical tips for research candidates:
 
@@ -137,7 +137,7 @@ Newcomers often find that a few genuine connections open doors quickly, because 
 
 ## Evaluating an Offer in Slovenia
 
-When comparing AI jobs in Ljubljana, look beyond gross salary. Slovenian payslips include significant social security contributions, and net pay can differ considerably from gross. Many employers provide meal and transport allowances, and annual leave and holiday pay (regres) are part of the package. Ask about contract type — fixed-term positions are common in research — and about flexibility, remote work and training budgets. Compare total quality of life as well: short commutes, access to nature and a safe environment are real benefits that many engineers value highly.
+When comparing AI jobs in Ljubljana, look beyond gross salary. Slovenian payslips include significant social security contributions, and net pay can differ considerably from gross. Many employers provide meal and transport allowances, and annual leave and holiday pay (regres) are part of the package. Ask about contract type - fixed-term positions are common in research - and about flexibility, remote work and training budgets. Compare total quality of life as well: short commutes, access to nature and a safe environment are real benefits that many engineers value highly.
 
 ## Who Ljubljana Suits Best
 
@@ -147,7 +147,7 @@ Ljubljana tends to suit engineers who value research depth, quality of life and 
 
 Ljubljana is compact enough that many people walk or cycle to work, and the old town along the Ljubljanica river is largely car-free. The city has been recognised for its green policies, and nature is close: the Alps, Lake Bled and the Soča valley are within easy reach for weekend trips, and the Adriatic coast is around an hour and a half away. Housing has become more expensive as demand has grown, and the rental market can be tight, particularly near the centre and the university. Many people live in surrounding towns and commute by car, bus or train.
 
-For families, Ljubljana offers public kindergartens and schools, and there are international school options. Healthcare is provided through mandatory health insurance, often supplemented with additional insurance. Newcomers generally find the city safe, well organised and welcoming, although building close local friendships may take time — as in many European countries, joining sports clubs, hiking groups or language classes helps.
+For families, Ljubljana offers public kindergartens and schools, and there are international school options. Healthcare is provided through mandatory health insurance, often supplemented with additional insurance. Newcomers generally find the city safe, well organised and welcoming, although building close local friendships may take time - as in many European countries, joining sports clubs, hiking groups or language classes helps.
 
 ## Skills That Help You Stand Out
 
@@ -163,7 +163,7 @@ Before relocating, secure a job offer or a clear remote arrangement, check your 
 
 A Slovenian data scientist has worked for five years in Munich on recommender systems. She and her partner want to move back to be closer to family, but she worries about career prospects.
 
-She maps the Ljubljana market: a research engineer role at a JSI department working on European projects in natural language processing, a data science role at a gaming company and remote options with her Munich employer. After conversations with all three, she chooses a hybrid arrangement: she joins the gaming company, where her recommender experience is directly relevant, and stays connected to research through a part-time collaboration with a university group. Her pay is lower than in Munich, but her housing costs and commute are also lower, and she describes the move as a success — though she acknowledges that finding the right role took several months and depended on her network.
+She maps the Ljubljana market: a research engineer role at a JSI department working on European projects in natural language processing, a data science role at a gaming company and remote options with her Munich employer. After conversations with all three, she chooses a hybrid arrangement: she joins the gaming company, where her recommender experience is directly relevant, and stays connected to research through a part-time collaboration with a university group. Her pay is lower than in Munich, but her housing costs and commute are also lower, and she describes the move as a success - though she acknowledges that finding the right role took several months and depended on her network.
 
 ## Key Takeaways
 

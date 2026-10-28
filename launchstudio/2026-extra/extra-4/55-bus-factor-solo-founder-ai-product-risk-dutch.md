@@ -60,14 +60,14 @@ Dit is gemakkelijk te missen precies omdat het niet naar boven komt wanneer u si
 ```
 Dienst: Stripe (betalingsverwerker)
 Primaire beheerder: Oprichter (persoonlijk e-mailadres)
-Secundaire beheerder: Toegevoegd — zakenpartner
-MFA-methode: Authenticator-app (alleen telefoon oprichter) — ACTIE NODIG
-Back-up/herstelcodes: Nog niet opgeslagen in gedeelde kluis — ACTIE NODIG
+Secundaire beheerder: Toegevoegd - zakenpartner
+MFA-methode: Authenticator-app (alleen telefoon oprichter) - ACTIE NODIG
+Back-up/herstelcodes: Nog niet opgeslagen in gedeelde kluis - ACTIE NODIG
 
 Dienst: Domeinregistrar
 Primaire beheerder: Oprichter
 Secundaire beheerder: Toegevoegd
-MFA-methode: SMS naar nummer oprichter — ACTIE NODIG
+MFA-methode: SMS naar nummer oprichter - ACTIE NODIG
 Back-up/herstelcodes: Opgeslagen in gedeelde wachtwoordbeheerder
 ```
 
@@ -86,9 +86,9 @@ LaunchStudio werd ingeschakeld zodra Marit weer online was om ervoor te zorgen d
 **Resultaat:** RittenLog heeft nu twee geverifieerde beheerders op elk kritiek systeem, en een gedocumenteerde toegangslijst die Marit bijwerkt wanneer er een nieuwe dienst wordt toegevoegd.
 
 > *"Ik bouwde RittenLog om andere mensen te helpen hun wagenparken te beheren. Het was nooit bij me opgekomen dat ik het enkele punt van mislukken was voor mijn eigen bedrijf."*
-> — **Marit Voskuijlen, Oprichter, RittenLog (Drachten)**
+> - **Marit Voskuijlen, Oprichter, RittenLog (Drachten)**
 
-**Kosten en tijdlijn:** € 650 (toegangs-audit en instellen van een tweede beheerder over hosting, database, domein en betalingsverwerker) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (toegangs-audit en instellen van een tweede beheerder over hosting, database, domein en betalingsverwerker) - voltooid in 4 werkdagen.
 
 ---
 

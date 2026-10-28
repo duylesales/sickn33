@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 The error arrives without warning and usually at the best possible moment for your business and the worst for you: *sorry, too many clients already*. Your product stops. Nothing is broken, nothing was deployed, and in ten minutes it may well work again.
 
-What happened is that more parts of your application asked the database for a connection than the database was willing to give. Postgres does not have unlimited connections — each one costs real memory — and a small Supabase plan permits far fewer than founders assume. Sixty is a typical number. Some plans allow fifteen.
+What happened is that more parts of your application asked the database for a connection than the database was willing to give. Postgres does not have unlimited connections - each one costs real memory - and a small Supabase plan permits far fewer than founders assume. Sixty is a typical number. Some plans allow fifteen.
 
 Fifteen sounds tiny until you realise it is not fifteen users. It is fifteen simultaneous conversations with the database, which a well-behaved application can serve hundreds of users with, and which a serverless application can exhaust with nine people.
 
@@ -30,7 +30,7 @@ Fifteen sounds tiny until you realise it is not fifteen users. It is fifteen sim
 
 A traditional server starts once, opens a handful of connections, and reuses them for every request for months. That is the arrangement Postgres was designed around.
 
-Serverless functions — Vercel functions, Supabase edge functions, Netlify functions, the default deployment target for almost every AI-built app — work the other way. Each invocation may be a fresh instance with no memory of the last. If each one opens its own connection, then a hundred concurrent requests means a hundred connections, and the database refuses somewhere around number sixteen.
+Serverless functions - Vercel functions, Supabase edge functions, Netlify functions, the default deployment target for almost every AI-built app - work the other way. Each invocation may be a fresh instance with no memory of the last. If each one opens its own connection, then a hundred concurrent requests means a hundred connections, and the database refuses somewhere around number sixteen.
 
 Worse, an instance that finishes its work does not necessarily close the connection immediately. Connections linger, idle, holding a slot that nothing is using. It is entirely possible to exhaust your limit with almost no traffic at all, purely through accumulation.
 
@@ -50,17 +50,17 @@ The rule is short and worth writing down somewhere your future self will find it
 
 **Application code, especially serverless, uses the pooled connection.** Everything that serves user requests. This is the default and if you only remember one thing, remember this.
 
-**Migrations and schema changes use the direct connection.** Pooled connections in transaction mode do not support everything — prepared statements behave differently, session-level settings do not persist, and some schema operations will fail confusingly.
+**Migrations and schema changes use the direct connection.** Pooled connections in transaction mode do not support everything - prepared statements behave differently, session-level settings do not persist, and some schema operations will fail confusingly.
 
 **Long-running background jobs and anything holding a transaction open use the direct connection**, sparingly, because they occupy a real slot for their whole duration.
 
-Two habits prevent the errors that remain. Never hold a database transaction open across a call to an external service — a webhook, a model API, an email provider — because that occupies a connection for the duration of somebody else's outage. And make sure your client library is configured with a sensible pool size per instance rather than the library default, which is often far too generous for an environment where dozens of instances exist at once.
+Two habits prevent the errors that remain. Never hold a database transaction open across a call to an external service - a webhook, a model API, an email provider - because that occupies a connection for the duration of somebody else's outage. And make sure your client library is configured with a sensible pool size per instance rather than the library default, which is often far too generous for an environment where dozens of instances exist at once.
 
 ## Diagnosing It When It Happens
 
 When the error appears, three things tell you what is going on and all are available in the Supabase dashboard.
 
-Current connection count against your plan's limit, which confirms the diagnosis. The breakdown of what those connections are doing — a large number sitting idle in transaction is a specific and fixable bug, meaning code that opened a transaction and did something slow before committing. And whether the count grows steadily over hours rather than spiking with traffic, which indicates leaked connections rather than genuine load.
+Current connection count against your plan's limit, which confirms the diagnosis. The breakdown of what those connections are doing - a large number sitting idle in transaction is a specific and fixable bug, meaning code that opened a transaction and did something slow before committing. And whether the count grows steadily over hours rather than spiking with traffic, which indicates leaked connections rather than genuine load.
 
 A leak looks like this: connection count climbing slowly from deploy time until it hits the ceiling, regardless of how many users are active. It is nearly always a client created inside a request handler rather than once at module level, so every invocation makes another one and nothing ever tidies up.
 
@@ -68,13 +68,13 @@ A leak looks like this: connection count climbing slowly from deploy time until 
 
 The instinct when hitting a limit is to buy a bigger plan, and it does raise the ceiling.
 
-It also costs money every month to work around a bug that takes an hour to fix, and it delays the diagnosis rather than removing it — a leak that took three days to fill sixty connections will take twelve days to fill two hundred and forty, and it will still happen on the busiest morning of your year.
+It also costs money every month to work around a bug that takes an hour to fix, and it delays the diagnosis rather than removing it - a leak that took three days to fill sixty connections will take twelve days to fill two hundred and forty, and it will still happen on the busiest morning of your year.
 
 Fix the code first: pooled connections everywhere they belong, client instances created once, transactions kept short, no external calls inside them. Then upgrade if your traffic genuinely warrants it. Most products at this stage find that the correct configuration serves several times their current load on the plan they already have.
 
 ## Realtime and Its Own Limits
 
-If your product uses Supabase realtime for live updates, that has separate limits — concurrent connections and messages per second — and they are exhausted by a different pattern.
+If your product uses Supabase realtime for live updates, that has separate limits - concurrent connections and messages per second - and they are exhausted by a different pattern.
 
 The usual cause is a subscription created on every render rather than once, so a user with a page open for an hour accumulates subscriptions until something gives. The symptom is one heavy user affecting everyone, and it is invisible in testing because a single developer refreshing a page never accumulates enough.
 
@@ -84,7 +84,7 @@ Subscribe once, unsubscribe when the component goes away, and count your active 
 
 Everything above is knowable in advance for the price of an afternoon.
 
-Point a load-testing tool at your product's busiest page with realistic authentication and run it at two or three times the concurrency you expect. Watch connection count, error rate and response time together. The failure mode you are looking for is not slowness — it is the cliff, where everything is fine at thirty concurrent users and nothing works at forty.
+Point a load-testing tool at your product's busiest page with realistic authentication and run it at two or three times the concurrency you expect. Watch connection count, error rate and response time together. The failure mode you are looking for is not slowness - it is the cliff, where everything is fine at thirty concurrent users and nothing works at forty.
 
 Do this before a launch, a campaign, a press mention or a seasonal peak, because the cliff is always found by real users otherwise, and always at the moment the traffic was most valuable.
 
@@ -102,7 +102,7 @@ Choose numbers deliberately rather than generously: a few seconds for ordinary a
 
 For an existing app this is usually half a day to a day: connection strings audited so application code uses the pooler and migrations use the direct connection, database clients created once per instance rather than per request, pool size configured deliberately, transactions audited for external calls and long operations, realtime subscriptions checked for accumulation, connection metrics watched with an alert before the ceiling rather than at it, and a load test at several times expected concurrency to find the cliff while it is cheap.
 
-LaunchStudio does this as part of production readiness — it is one of the few problems that only appears once a product is working, which makes it a particularly unwelcome surprise. The engineers are Manifera's: eleven years, 160+ projects, and a great deal of Postgres under load, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this as part of production readiness - it is one of the few problems that only appears once a product is working, which makes it a particularly unwelcome surprise. The engineers are Manifera's: eleven years, 160+ projects, and a great deal of Postgres under load, from Amsterdam and Ho Chi Minh City.
 
 [Tell us your expected peak](https://launchstudio.eu/en/#contact) and we will tell you whether your current setup survives it.
 
@@ -112,18 +112,18 @@ LaunchStudio does this as part of production readiness — it is one of the few 
 
 Thijs Kranenburg built Zaalplanner in Lovable: booking software for community centres and village halls, 48 venues across Friesland and Groningen, each with a handful of staff.
 
-The product broke every Monday morning. Not slowly — completely, with database errors on every page, for ten to twenty minutes, then recovery without intervention. Monday morning is when venue managers do the week's bookings, so it was the worst possible window and the reason two venues had already asked about alternatives.
+The product broke every Monday morning. Not slowly - completely, with database errors on every page, for ten to twenty minutes, then recovery without intervention. Monday morning is when venue managers do the week's bookings, so it was the worst possible window and the reason two venues had already asked about alternatives.
 
 His Supabase plan allowed 60 connections. His application created a new database client inside each serverless function invocation, so every request opened a connection and left it to expire. Monday's nine or ten concurrent managers, each loading pages that made four or five requests, exhausted the limit within minutes.
 
 One business day: the database client moved to module scope so each function instance reuses a single connection; every application connection string switched to the pooled port, with the direct connection reserved for migrations; pool size set explicitly rather than left at the library default; two transactions that wrapped an email call removed, since one provider outage had held connections open for ninety seconds each; a realtime subscription in the booking calendar fixed to subscribe once rather than on every render; a dashboard alert at 70 percent of the connection limit; and a load test at 120 concurrent users to confirm the fix rather than assume it.
 
-**Result:** Monday mornings stopped failing. Peak connection use fell from the 60-connection ceiling to a steady 7, and the load test cleared 120 concurrent users — more than double Thijs's realistic peak — on the same plan he had been about to upgrade for €300 a month.
+**Result:** Monday mornings stopped failing. Peak connection use fell from the 60-connection ceiling to a steady 7, and the load test cleared 120 concurrent users - more than double Thijs's realistic peak - on the same plan he had been about to upgrade for €300 a month.
 
 > *"I was convinced I needed a bigger database. The whole problem was one line in the wrong place, creating a connection for every request and never giving it back."*
-> — **Thijs Kranenburg, Founder, Zaalplanner (Leeuwarden)**
+> - **Thijs Kranenburg, Founder, Zaalplanner (Leeuwarden)**
 
-**Cost & Timeline:** €1,450 (connection audit and pooler migration, client lifecycle fix, transaction remediation, realtime subscription fix, alerting, load test) — completed in 1 business day.
+**Cost & Timeline:** €1,450 (connection audit and pooler migration, client lifecycle fix, transaction remediation, realtime subscription fix, alerting, load test) - completed in 1 business day.
 
 ## Frequently Asked Questions
 
@@ -157,7 +157,7 @@ Load test at two or three times expected concurrency and watch connection count 
       "name": "What does the error \"too many clients already\" mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your app requested more simultaneous Postgres connections than the plan allows — usually a connection lifecycle bug in serverless code rather than real load."
+        "text": "Your app requested more simultaneous Postgres connections than the plan allows - usually a connection lifecycle bug in serverless code rather than real load."
       }
     },
     {
@@ -173,7 +173,7 @@ Load test at two or three times expected concurrency and watch connection count 
       "name": "Will upgrading the plan fix connection exhaustion?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It raises the ceiling without fixing the leak, which will still fill the larger limit — usually on your busiest day."
+        "text": "It raises the ceiling without fixing the leak, which will still fill the larger limit - usually on your busiest day."
       }
     },
     {

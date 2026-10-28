@@ -29,7 +29,7 @@ Het product werkt immers op uw eigen laptop. De demo's verlopen vlekkeloos en po
 Maar alle fatale valkuilen bevinden zich op paden die u tijdens de demonstratie nog nooit heeft bewandeld:
 Een kersvers leeg gebruikersaccount, een zakelijke klant met tienduizend rijen data, een tweede medewerker die tegelijkertijd inlogt, een geweigerde creditcard, een CSV-bestand met Nederlandse puntkomma's, of een zondagmiddag waarop het beveiligingscertificaat verloopt.
 
-Dit is het honderdste en afsluitende artikel in deze serie. Het is ontworpen als een pragmatische, direct toepasbare checklist — niet geordend op theoretisch onderwerp, maar op **gevolg en urgentie**:
+Dit is het honderdste en afsluitende artikel in deze serie. Het is ontworpen als een pragmatische, direct toepasbare checklist - niet geordend op theoretisch onderwerp, maar op **gevolg en urgentie**:
 Wat moet er geregeld zijn vóórdat u de eerste euro accepteert, wat moet staan vóór uw eerste grote zakelijke klant, en wat kan veilig wachten tot latere groei?
 
 
@@ -76,10 +76,10 @@ Dit zijn de beslissingen die bepalen of uw belangrijkste droomklant een trotse r
 
 Dit zijn weloverwogen beoordelingsbeslissingen. Elk van deze elementen is het waard om pas te bouwen wanneer een specifieke trigger verschijnt, in plaats van op basis van een willekeurige kalenderplanning:
 
-- **Een minimaal intern admin-paneel:** Een klant opzoeken, een proefperiode handmatig verlengen, toegangsrechten herstellen, een abonnement aanpassen, een transactie-e-mail opnieuw versturen, of de actuele accountstatus inzien — bouw dit zodra u merkt dat u SQL-queries rechtstreeks op uw productiedatabase zit te typen om alledaagse supportvragen te beantwoorden.
+- **Een minimaal intern admin-paneel:** Een klant opzoeken, een proefperiode handmatig verlengen, toegangsrechten herstellen, een abonnement aanpassen, een transactie-e-mail opnieuw versturen, of de actuele accountstatus inzien - bouw dit zodra u merkt dat u SQL-queries rechtstreeks op uw productiedatabase zit te typen om alledaagse supportvragen te beantwoorden.
 - **Een staging-omgeving met geanonimiseerde testdata:** Richt dit in op het moment dat u op het punt staat een database-migratie of architectuurwijziging door te voeren die u niet eenvoudig en zonder risico kunt terugdraaien.
 - **Feature flags:** Implementeer dit vóór de allereerste grote functionele wijziging waarbij u een mechanisme wilt hebben om de feature direct met één klik uit te schakelen zónder een volledige nieuwe deployment te hoeven draaien.
-- **Webhooks, een publieke API of een platform-connector:** Pas bouwen wanneer integratieverzoeken vanuit klanten divers van aard worden in plaats van geconcentreerd op één specifieke tool — en uitsluitend nadat uw onderliggende interne API-endpoints stabiel en consistent zijn.
+- **Webhooks, een publieke API of een platform-connector:** Pas bouwen wanneer integratieverzoeken vanuit klanten divers van aard worden in plaats van geconcentreerd op één specifieke tool - en uitsluitend nadat uw onderliggende interne API-endpoints stabiel en consistent zijn.
 - **Gedetailleerde notificatievoorkeuren met gerichte afmeldopties:** Inrichten vóórdat uw applicatie zóveel geautomatiseerde e-mails verstuurt dat een gefrustreerde gebruiker op de algemene uitschrijflink klikt en daarmee onbedoeld ook zijn facturatie- en beveiligingsmeldingen blokkeert.
 - **Tweerichtingssynchronisatie (*Two-way sync*):** Alleen bouwen wanneer beide gekoppelde systemen daadwerkelijk en aantoonbaar door verschillende mensen worden bewerkt. Negentig procent van alle integratieverzoeken wordt ruimschoots afgedekt door een betrouwbare éénrichtingssynchronisatie met een directe link terug naar het bronsysteem.
 - **Geautomatiseerde data-retentie- en verwijderingsscripts:** Verplicht inrichten zodra u persoonsgegevens bewaart van klanten die hun account definitief hebben opgezegd.
@@ -101,26 +101,26 @@ Bevat uw applicatie taalmodellen of AI-functies? Dan zijn de volgende maatregele
 Het zorgvuldig doorlopen en implementeren van de eerste lijst kost een ervaren software engineer bij een gemiddeld prototype **één tot drie weken werk**. De tweede lijst vergt een vergelijkbare inspanning. 
 
 Geen van deze werkzaamheden levert een flitsende nieuwe feature op die u op sociale media kunt demonstreren. 
-En dat is exact de reden waarom founders dit werk structureel voor zich uitschuiven — en waarom met AI gebouwde startups telkens op exact dezelfde manieren struikelen.
+En dat is exact de reden waarom founders dit werk structureel voor zich uitschuiven - en waarom met AI gebouwde startups telkens op exact dezelfde manieren struikelen.
 
 Het alternatief is om het gaandeweg zélf te ontdekken. Dat is een legitieme keuze, maar het is een harde ruil: u betaalt niet met geld, maar met tijd en met verloren klanten. Dat model werkt prima voor vergevingsgezinde consumentenapps. 
 Het faalt echter genadeloos zodra uw eerste serieuze zakelijke klant arriveert vóórdat u uw lessen heeft geleerd. Die klant is namelijk geen proefkonijn: **het is de referentiecase die bepaalt of de volgende vijf klanten ooit zullen tekenen.**
 
-LaunchStudio is opgericht voor founders die deze valkuilen willen vermijden. Ondersteund door Manifera's 11+ jaar ervaring in enterprise software engineering, loodsen we AI-gegenereerde prototypes door exact deze productiebeslissingen via onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). Wij werken tegen een vooraf overeengekomen vaste prijs, en we laten uw frontend exact zoals u die heeft ontworpen. Heeft u een prototype dat werkt en wilt u zeker weten dat het overeind blijft op de paden die niemand nog heeft bewandeld? [Beschrijf uw project](https://launchstudio.eu/nl/#contact) — u ontvangt binnen één werkdag een eerlijke technische beoordeling.
+LaunchStudio is opgericht voor founders die deze valkuilen willen vermijden. Ondersteund door Manifera's 11+ jaar ervaring in enterprise software engineering, loodsen we AI-gegenereerde prototypes door exact deze productiebeslissingen via onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). Wij werken tegen een vooraf overeengekomen vaste prijs, en we laten uw frontend exact zoals u die heeft ontworpen. Heeft u een prototype dat werkt en wilt u zeker weten dat het overeind blijft op de paden die niemand nog heeft bewandeld? [Beschrijf uw project](https://launchstudio.eu/nl/#contact) - u ontvangt binnen één werkdag een eerlijke technische beoordeling.
 
 
 ## Echt voorbeeld
 
 ### De Checklist Die Negen Dagen Werk Kostte
 
-Bram Kooij had Wachtrij gebouwd, een digitaal wachtrij- en afsprakenbeheersysteem voor gemeentelijke publieksbalies en stadskantoren in Nederland, ontwikkeld via Lovable. De applicatie draaide soepel als pilot bij drie kleinere plattelandsgemeenten. Een vierde gemeente — een centrumstad met ruim 160.000 inwoners — toonde concrete interesse, maar eiste vooraf een formele externe security- en compliance-audit.
+Bram Kooij had Wachtrij gebouwd, een digitaal wachtrij- en afsprakenbeheersysteem voor gemeentelijke publieksbalies en stadskantoren in Nederland, ontwikkeld via Lovable. De applicatie draaide soepel als pilot bij drie kleinere plattelandsgemeenten. Een vierde gemeente - een centrumstad met ruim 160.000 inwoners - toonde concrete interesse, maar eiste vooraf een formele externe security- en compliance-audit.
 
 Bram vroeg LaunchStudio om een pre-audit review uit te voeren aan de hand van deze checklist.
 
 De uitkomst was een wake-up call:
 1. **Autorisatie bestond alleen in de browser:** Een ingelogde bezoeker kon door het wijzigen van een nummer in de API-aanroep de burger- en adresgegevens van álle andere wachtenden inzien (BOLA/IDOR).
 2. **Onvolledige back-ups:** De database werd geback-upt, maar de geüploade legitimatiebewijzen en pasfoto's stonden op een niet-geback-upte opslagbucket.
-3. **Geen audit trail:** Er werd nergens gelogd welke balieambtenaar een dossier had ingezien of verwijderd — een harde eis voor overheidssystemen.
+3. **Geen audit trail:** Er werd nergens gelogd welke balieambtenaar een dossier had ingezien of verwijderd - een harde eis voor overheidssystemen.
 4. **Tijdzonefouten:** De rapportagedatums waren opgeslagen in UTC, waardoor alle burgers die zich tussen 23:00 en middernacht hadden gemeld, in de dagrapportages op de verkeerde datum stonden.
 5. **Fatale database-query:** Door één ontbrekende index op de bezoekerstabel duurde het inladen van het centrale weekoverzicht bij de grote pilotgemeente negentien seconden.
 
@@ -129,7 +129,7 @@ Geen enkele pilotgemeente had ooit geklaagd, simpelweg omdat niemand van hen op 
 **Resultaat:** In negen werkdagen saneerde LaunchStudio het complete platform: Row Level Security op PostgreSQL-niveau, volledige back-up recovery inclusief bestandsopslag, een onveranderlijke append-only auditlog, tijdzonecorrecte rapportages, database-indexen, paginering, veilige export en een formeel AVG-gegevensstroomdocument. Wachtrij slaagde glansrijk voor de herbeoordeling. Zes weken later tekende de gemeente een meerjarig contract ter waarde van circa negenmaal de opbrengst van de drie eerdere pilots gecombineerd.
 
 > *"Niets op die checklist was iets waar een klant ooit over had geklaagd. Maar elk afzonderlijk punt had de deal onmiddellijk getorpedeerd als de auditors van de gemeente het hadden ontdekt vóórdat wij het hadden opgelost."*
-> — **Bram Kooij, Oprichter, Wachtrij**
+> - **Bram Kooij, Oprichter, Wachtrij**
 
 **Kosten & Doorlooptijd:** Volledige productierijpheid en security-audit remediation opgeleverd in 9 werkdagen tegen een vaste projectprijs.
 

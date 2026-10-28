@@ -31,11 +31,11 @@ Doelgroep: SaaS Oprichters / FinOps / Product Managers
 }
 </script>
 
-Het bepalen van de prijs voor een traditioneel SaaS-product is een oefening in marketingpsychologie. Het bepalen van de prijs voor een AI SaaS-product is een oefening in strikte financiële wiskunde. Omdat AI-bedrijven bij elke gebruikersactie substantiële variabele kosten maken (API-tokens, GPU-inferentietijd), vernietigt het klakkeloos overnemen van traditionele "Onbeperkt voor € 29/maand" sjablonen direct uw brutomarges. In 2026 moeten oprichters bewust kiezen tussen vaste abonnementsbundels (Fixed Tiers), verbruiksgebaseerde facturatie (Usage-Based Billing) of een hybride model — en die keuze is allerminst cosmetisch. Het bepaalt of uw brutomarges gezond blijven naarmate u schaalt, of dat uw startup implodeert zodra een handvol intensieve power-users ontdekt hoever ze uw product kunnen belasten.
+Het bepalen van de prijs voor een traditioneel SaaS-product is een oefening in marketingpsychologie. Het bepalen van de prijs voor een AI SaaS-product is een oefening in strikte financiële wiskunde. Omdat AI-bedrijven bij elke gebruikersactie substantiële variabele kosten maken (API-tokens, GPU-inferentietijd), vernietigt het klakkeloos overnemen van traditionele "Onbeperkt voor € 29/maand" sjablonen direct uw brutomarges. In 2026 moeten oprichters bewust kiezen tussen vaste abonnementsbundels (Fixed Tiers), verbruiksgebaseerde facturatie (Usage-Based Billing) of een hybride model - en die keuze is allerminst cosmetisch. Het bepaalt of uw brutomarges gezond blijven naarmate u schaalt, of dat uw startup implodeert zodra een handvol intensieve power-users ontdekt hoever ze uw product kunnen belasten.
 
 ## Waarom AI Unit Economics het Oude Handboek Breken
 
-In een traditioneel SaaS-bedrijf — projectmanagementsoftware, CRM-systemen of analytics-dashboards — zijn de marginale kosten om één extra actieve gebruiker te bedienen nagenoeg nul. Een gebruiker die vijftig keer per dag inlogt, kost u nauwelijks iets extra aan database-reads en rekenkracht. Dat is de reden waarom "onbeperkte" prijsmodellen tien jaar lang floreerden: gebruik en kosten waren volledig ontkoppeld.
+In een traditioneel SaaS-bedrijf - projectmanagementsoftware, CRM-systemen of analytics-dashboards - zijn de marginale kosten om één extra actieve gebruiker te bedienen nagenoeg nul. Een gebruiker die vijftig keer per dag inlogt, kost u nauwelijks iets extra aan database-reads en rekenkracht. Dat is de reden waarom "onbeperkte" prijsmodellen tien jaar lang floreerden: gebruik en kosten waren volledig ontkoppeld.
 
 AI SaaS verbreekt die ontkoppeling definitief. Elke gegenereerde alinea, elke RAG-zoekopdracht en elke autonome agent-actie roept een betaalde API aan. Een model in de klasse van GPT-4o kost circa $ 2,50 per miljoen input-tokens en $ 10 per miljoen output-tokens; het genereren van een enkel document van 2.000 woorden inclusief context kan 6.000 tot 10.000 tokens verbruiken en kost $ 0,05 tot $ 0,15 aan directe inferentiekosten, nog vóór embeddings, vector-database queries en backend-infrastructuur worden meegerekend. Vermenigvuldig dat met een actieve gebruiker die 200 documenten per dag genereert, en uw "voordelige" abonnement van € 19 per maand leidt tot een operationeel verlies van € 15 tot € 30 per gebruiker per maand. Dit is de kernreden waarom brutomarges bij vroege AI SaaS-startups vaak rond de 50–70% schommelen, ver onder de 80–90% die investeerders van traditionele software verwachten.
 
@@ -43,7 +43,7 @@ AI SaaS verbreekt die ontkoppeling definitief. Elke gegenereerde alinea, elke RA
 
 Vaste abonnementsprijzen (bijv. € 19 voor Starter, € 49 voor Pro) zijn populair bij eindgebruikers omdat ze maximale voorspelbaarheid bieden. Voor AI-startups creëren ze echter een perverse prikkelstructuur.
 
-In traditionele SaaS zijn uw meest actieve power-users uw beste ambassadeurs — zij bevelen uw product aan en breiden licenties uit. In een AI SaaS met vaste prijzen en onbeperkt gebruik zijn uw meest actieve gebruikers financieel gezien uw gevaarlijkste klanten. Betaalt een klant € 19 per maand en verbruikt hij voor € 30 aan OpenAI API-kosten, dan teert hij direct in op uw werkkapitaal. Vaste bundels dwingen u vervolgens om de functionaliteit van uw product kunstmatig in te perken (met rate-limits, tragere modellen of cooldowns) om uw marge te beschermen — wat haaks staat op de belofte die u de klant heeft verkocht.
+In traditionele SaaS zijn uw meest actieve power-users uw beste ambassadeurs - zij bevelen uw product aan en breiden licenties uit. In een AI SaaS met vaste prijzen en onbeperkt gebruik zijn uw meest actieve gebruikers financieel gezien uw gevaarlijkste klanten. Betaalt een klant € 19 per maand en verbruikt hij voor € 30 aan OpenAI API-kosten, dan teert hij direct in op uw werkkapitaal. Vaste bundels dwingen u vervolgens om de functionaliteit van uw product kunstmatig in te perken (met rate-limits, tragere modellen of cooldowns) om uw marge te beschermen - wat haaks staat op de belofte die u de klant heeft verkocht.
 
 **Wanneer wél toepassen:** Uitsluitend voor B2C- of "Prosumer"-toepassingen, maar dan *altijd* gekoppeld aan een strikt en database-technisch afgedwongen creditsysteem (bijv. € 19/maand geeft recht op 500 AI-credits, geen onbeperkte toegang).
 
@@ -90,7 +90,7 @@ Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt waarom de
 
 ## Realiseer Winstgevende AI Unit Economics
 
-Uw prijsstrategie bepaalt het verschil tussen een bloeiende AI-onderneming en een faillissement. **LaunchStudio** helpt oprichters bij het modelleren van hun API-kosten en het implementeren van geavanceerde Stripe Hybride facturatiestructuren — inclusief Stripe Billing Meters, creditgrootboeken en geautomatiseerde overages.
+Uw prijsstrategie bepaalt het verschil tussen een bloeiende AI-onderneming en een faillissement. **LaunchStudio** helpt oprichters bij het modelleren van hun API-kosten en het implementeren van geavanceerde Stripe Hybride facturatiestructuren - inclusief Stripe Billing Meters, creditgrootboeken en geautomatiseerde overages.
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**, met meer dan 160 gerealiseerde projecten voor enterprise-klanten zoals Vodafone en TNO. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en winstgevend te lanceren, tegen circa 20% van de kosten van een traditioneel bureau. [Bereken uw kosten](https://launchstudio.eu/nl/#calculator) of [vraag direct een offerte aan](https://launchstudio.eu/nl/#contact). Voor diepere maatwerktrajecten staat Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) team klaar.
 
@@ -104,7 +104,7 @@ Hij ging een samenwerking aan met **LaunchStudio (door Manifera)**. Het team her
 
 **Resultaat:** Fouten met het omzeilen van credits daalden naar nul, waardoor server- en generatiemarges 100% beschermd bleven.
 
-**Kosten & Tijdlijn:** €1.600 (Database Transactie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Database Transactie Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
@@ -128,7 +128,7 @@ Het Hybride model. Breng een vast maandelijks platformabonnement in rekening inc
 
 ### Hoe verhoudt LaunchStudio zich tot Manifera qua facturatie-architectuur?
 
-LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 11+ jaar ervaring in enterprise-architectuur — inclusief Stripe-facturatie, creditledgers en metering — samen in compacte 1-tot-3-weekse lanceringstrajecten.
+LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 11+ jaar ervaring in enterprise-architectuur - inclusief Stripe-facturatie, creditledgers en metering - samen in compacte 1-tot-3-weekse lanceringstrajecten.
 
 <script type="application/ld+json">
 {
@@ -172,7 +172,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Hoe verhoudt LaunchStudio zich tot Manifera qua facturatie-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 11+ jaar ervaring in enterprise-architectuur — inclusief Stripe-facturatie, creditledgers en metering — samen in compacte 1-tot-3-weekse lanceringstrajecten."
+        "text": "LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 11+ jaar ervaring in enterprise-architectuur - inclusief Stripe-facturatie, creditledgers en metering - samen in compacte 1-tot-3-weekse lanceringstrajecten."
       }
     }
   ]

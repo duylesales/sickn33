@@ -53,7 +53,7 @@ The core of the role is deciding what to build and why, and then making it possi
 
 Engineers moving into this role arrive with advantages that non-technical product managers spend years acquiring.
 
-They can evaluate feasibility without asking. They know what a model can and cannot do, what data would be required, and how long it would genuinely take — which prevents the single most common failure in AI product management, promising something that is not possible.
+They can evaluate feasibility without asking. They know what a model can and cannot do, what data would be required, and how long it would genuinely take - which prevents the single most common failure in AI product management, promising something that is not possible.
 
 They can read an evaluation and see whether it means what it claims. They understand why a demonstration on ten examples proves nothing.
 
@@ -133,7 +133,7 @@ Under the EU AI Act, obligations depend on the use case and on the role the orga
 
 Data protection questions arrive in parallel: what lawful basis supports the processing, what happens to the data afterwards, and whether any decision has significant effects on individuals.
 
-None of this requires the product manager to be a lawyer. It requires knowing which questions trigger a conversation with legal colleagues, and scoping features so that the answers are workable — for instance, designing a human review step into the workflow from the start rather than discovering later that one is required.
+None of this requires the product manager to be a lawyer. It requires knowing which questions trigger a conversation with legal colleagues, and scoping features so that the answers are workable - for instance, designing a human review step into the workflow from the start rather than discovering later that one is required.
 
 Product managers who handle this well are notably valued in European companies, because the alternative is discovering a compliance obstacle after engineering has finished, which is expensive and demoralising for everyone.
 
@@ -149,7 +149,7 @@ Take the next ambiguous request that arrives and turn it into a proposal rather 
 
 Watch for your own reactions rather than your performance. Did the customer conversations energise you or drain you? Did you mind not building? Did you find the ambiguity interesting or maddening? Were you comfortable being accountable for something you could not do yourself?
 
-Three months of this tells you more than any amount of reading, and it produces exactly the evidence you would need to apply for the role — a specific example of having done it, which is what every hiring manager will ask for.
+Three months of this tells you more than any amount of reading, and it produces exactly the evidence you would need to apply for the role - a specific example of having done it, which is what every hiring manager will ask for.
 
 It also frequently produces the opposite conclusion, which is an equally valuable outcome and considerably cheaper than discovering it after changing jobs.
 
@@ -161,7 +161,7 @@ If you move externally, target roles where the technical dimension is explicit: 
 
 On your CV, translate. Lead with decisions, not implementations: what you chose to build, why, what you declined, what the outcome was. Interviewers for product roles are listening for judgement, trade-offs and users, and engineering CVs usually bury all three under technologies.
 
-Expect the interview to include a product sense exercise — how would you improve this, how would you decide what to build next — and a case about measuring success. Prepare to talk about a decision you got wrong, because it is asked almost universally and evasiveness is disqualifying.
+Expect the interview to include a product sense exercise - how would you improve this, how would you decide what to build next - and a case about measuring success. Prepare to talk about a decision you got wrong, because it is asked almost universally and evasiveness is disqualifying.
 
 ## Adjacent Roles Worth Considering
 
@@ -191,7 +191,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 ### The engineer who tested the move before making it
 
-A machine learning engineer in Ireland had been considering product management for a year. Rather than applying for roles, he asked his manager for a specific experiment: for one quarter, he would take responsibility for defining a new feature — its purpose, its success criteria, its behaviour when the model was uncertain — while another engineer built it.
+A machine learning engineer in Ireland had been considering product management for a year. Rather than applying for roles, he asked his manager for a specific experiment: for one quarter, he would take responsibility for defining a new feature - its purpose, its success criteria, its behaviour when the model was uncertain - while another engineer built it.
 
 The quarter taught him three things. He enjoyed the customer conversations more than he expected. He was good at translating between the sales team and the engineers, and that translation was genuinely scarce. And he found the meetings exhausting in a way that coding never had been.
 

@@ -8,11 +8,11 @@ v0 genereert oprecht gepolijste interfaces. Het genereert ook NUL backend, per o
 ❌ Elke interactie wordt aangedreven door placeholderinhoud die nooit echt gebruik zou overleven
 
 ✅ Op v0 gebaseerd = een hele laag bouwen die nog niet bestaat, niet verharden wat er is
-✅ Het ontwerpwerk — vaak het moeilijkste, meest subjectieve deel — is waarschijnlijk al af
+✅ Het ontwerpwerk - vaak het moeilijkste, meest subjectieve deel - is waarschijnlijk al af
 ✅ Echte database, echte authenticatie, echte businesslogica koppelen aan je BESTAANDE interface
 ✅ Nul visuele wijzigingen nodig als het ontwerpwerk vooraf goed gedaan was
 
-Bij **LaunchStudio** bouwen we de complete backendlaag rond jouw bestaande v0-interface — geen ontwerpwijzigingen. Gesteund door Manifera's full-stack-ervaring over 160+ projecten. 🛡️
+Bij **LaunchStudio** bouwen we de complete backendlaag rond jouw bestaande v0-interface - geen ontwerpwijzigingen. Gesteund door Manifera's full-stack-ervaring over 160+ projecten. 🛡️
 
 Haar resultaat: zes weken later gelanceerd met het identieke ontwerp, nu oprecht functioneel achter elk scherm. 🚀
 

@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **SaaS TCO:** includes subscription fees that scale with usage or seats, the cost of workarounds for workflow mismatches, and switching costs if the vendor changes pricing or gets acquired.
 ✅ **Custom build TCO:** includes initial development, ongoing maintenance (typically 15-20% of build cost annually), and the opportunity cost of engineering time not spent elsewhere.
-✅ **Amsterdam (Governance/Strategy):** Dutch technical leads run a structured build-or-buy assessment during discovery, comparing three-year TCO and evaluating whether a workflow is genuinely differentiating before recommending either path — including, when honest, recommending a client stick with SaaS rather than commissioning unnecessary custom work.
+✅ **Amsterdam (Governance/Strategy):** Dutch technical leads run a structured build-or-buy assessment during discovery, comparing three-year TCO and evaluating whether a workflow is genuinely differentiating before recommending either path - including, when honest, recommending a client stick with SaaS rather than commissioning unnecessary custom work.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

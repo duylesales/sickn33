@@ -1,7 +1,7 @@
-40,000 viewers. The stream held up fine. The "Buy Now" button didn't — 6,000 taps in 20 seconds saturated checkout while the video kept streaming smooth. 🛍️📉
+40,000 viewers. The stream held up fine. The "Buy Now" button didn't - 6,000 taps in 20 seconds saturated checkout while the video kept streaming smooth. 🛍️📉
 
 **The Pain Points:**
-❌ **Video-First Evaluation:** Most vendor due diligence tests stream quality and skips checkout concurrency entirely — the part that actually converts.
+❌ **Video-First Evaluation:** Most vendor due diligence tests stream quality and skips checkout concurrency entirely - the part that actually converts.
 ❌ **No Synchronized Spike Testing:** Standard peak-traffic load tests don't simulate thousands of viewers tapping buy in the same 20-second window.
 ❌ **Demo-Only Latency Claims:** A vendor's best-case glass-to-glass latency number rarely holds at real concurrent viewer counts.
 

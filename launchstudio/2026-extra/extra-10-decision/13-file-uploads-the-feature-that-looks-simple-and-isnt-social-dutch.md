@@ -16,7 +16,7 @@ Wat veilige bestandsuploads in productie vereisen:
 ✅ Privé-buckets met kortlevende signed URLs gekoppeld aan strikte autorisatiechecks
 ✅ Geïsoleerde domeinen en verplichte `Content-Disposition: attachment` headers tegen inline script-executie
 
-Bij **LaunchStudio**, ondersteund door Manifera, beveiligen onze senior engineers uw uploadpijplijn en storage policies — zonder de frontend-styling van uw uploadcomponenten aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, beveiligen onze senior engineers uw uploadpijplijn en storage policies - zonder de frontend-styling van uw uploadcomponenten aan te tasten.
 
 💡 Zo voorkwam marktplaats Craftlink dat paspoorten van vakmensen openbaar vindbaar werden door verificatiedocumenten direct te isoleren.
 

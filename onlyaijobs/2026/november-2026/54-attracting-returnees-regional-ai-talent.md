@@ -35,7 +35,7 @@ Content Format: Policy Brief
 }
 </script>
 
-A software engineer grew up in Zeeland, studied in Delft and now works as an ML engineer in Amsterdam. A data analyst from Twente moved to Utrecht after graduating. A data scientist from Limburg has lived in Rotterdam for eight years. At some point, many of them start thinking about moving back: when they have children, when housing in the city becomes unaffordable, when parents need support or when hybrid working makes a long daily commute unnecessary. Yet when they look for jobs in their home region, they often find little — not because there is nothing, but because they do not know where to look. For regions trying to attract AI and data talent, these returnees are one of the most promising and least targeted groups.
+A software engineer grew up in Zeeland, studied in Delft and now works as an ML engineer in Amsterdam. A data analyst from Twente moved to Utrecht after graduating. A data scientist from Limburg has lived in Rotterdam for eight years. At some point, many of them start thinking about moving back: when they have children, when housing in the city becomes unaffordable, when parents need support or when hybrid working makes a long daily commute unnecessary. Yet when they look for jobs in their home region, they often find little - not because there is nothing, but because they do not know where to look. For regions trying to attract AI and data talent, these returnees are one of the most promising and least targeted groups.
 
 ## Why Returnees Are an Attractive Talent Group
 
@@ -66,7 +66,7 @@ A software engineer grew up in Zeeland, studied in Delft and now works as an ML 
 
 Professionals living in the Randstad rarely follow the regional labour market of their home province. Their networks, recruiters and news sources focus on where they live now. When they search for regional jobs, generalist platforms often show vacancies by city name, missing employers in smaller towns, business parks and campuses. Many regional employers with AI and data needs do not use AI terminology in job titles or do not advertise widely.
 
-As a result, returnees frequently conclude that "there is nothing for me there" — a conclusion based on incomplete information. Visible regional vacancies, shown at exact location and categorised by type of work, directly address this gap.
+As a result, returnees frequently conclude that "there is nothing for me there" - a conclusion based on incomplete information. Visible regional vacancies, shown at exact location and categorised by type of work, directly address this gap.
 
 ## Hybrid Working Changes the Picture
 
@@ -106,7 +106,7 @@ Employers publish AI and data vacancies on a specialist platform showing jobs at
 
 ## Dual Careers in Practice
 
-For many returnees, the decisive question is not whether they can find a job, but whether their partner can too. A data scientist may find an attractive regional role, while their partner — perhaps a teacher, nurse, lawyer or marketing professional — needs suitable work as well. If one partner's career would suffer, the move often does not happen.
+For many returnees, the decisive question is not whether they can find a job, but whether their partner can too. A data scientist may find an attractive regional role, while their partner - perhaps a teacher, nurse, lawyer or marketing professional - needs suitable work as well. If one partner's career would suffer, the move often does not happen.
 
 Regions can support dual careers in practical ways: connecting partners with regional employer networks across sectors, sharing broader vacancy information beyond technology roles, offering introductions to recruitment contacts at larger regional employers and highlighting flexible and hybrid possibilities. Some employers include partner support in relocation packages for experienced hires. Even a single contact person who can point partners in the right direction can make a difference, because it shows that the region takes the whole household's situation seriously.
 
@@ -116,7 +116,7 @@ Returnees are reached not only through campaigns but through the channels they a
 
 Families and friends are an underestimated channel. Parents often share news about jobs and developments in the home region with their children. Community events, school reunions and holiday gatherings create moments where former residents reconnect. Regional organisations can support these informal channels by producing shareable stories and making vacancy information easy to forward.
 
-Professional communities also matter. A regional data meetup or AI network that welcomes visitors from outside the region gives returnees a way to explore the local professional scene before deciding to move — and to meet potential employers informally.
+Professional communities also matter. A regional data meetup or AI network that welcomes visitors from outside the region gives returnees a way to explore the local professional scene before deciding to move - and to meet potential employers informally.
 
 ## Common Pitfalls
 
@@ -138,7 +138,7 @@ Returnees are not one group. Their motivations and concerns vary by life stage a
 | Remote worker | Lower living costs, proximity to family | Isolation, future job options | Coworking spaces, regional employers for future moves |
 | Professional caring for parents | Family responsibilities | Flexibility, part-time options | Flexible and part-time roles, understanding employers |
 
-Campaigns that address these differences — rather than using a single generic message — are more likely to resonate.
+Campaigns that address these differences - rather than using a single generic message - are more likely to resonate.
 
 ## Working With Employers on Returnee-Friendly Vacancies
 
@@ -148,7 +148,7 @@ Regional partners can encourage these practices by sharing examples of successfu
 
 ## Timing Matters
 
-Decisions to move back often develop over months or years. Many returnees start browsing regional jobs long before they are ready to move, often during specific moments: holidays spent with family, the arrival of a child, a change in housing situation or a reorganisation at their current employer. Regions that maintain continuous visibility of vacancies — rather than running short campaigns — are present when these moments occur. Seasonal peaks, such as the Christmas period or summer holidays, are good times for targeted events and outreach.
+Decisions to move back often develop over months or years. Many returnees start browsing regional jobs long before they are ready to move, often during specific moments: holidays spent with family, the arrival of a child, a change in housing situation or a reorganisation at their current employer. Regions that maintain continuous visibility of vacancies - rather than running short campaigns - are present when these moments occur. Seasonal peaks, such as the Christmas period or summer holidays, are good times for targeted events and outreach.
 
 ## What This Is Not
 
@@ -156,7 +156,7 @@ Returnee attraction is not about persuading people to move against their interes
 
 ## Key Takeaways
 
-- Returnees — professionals who moved away and consider returning — are a valuable, often overlooked talent group for regional AI and data employment.
+- Returnees - professionals who moved away and consider returning - are a valuable, often overlooked talent group for regional AI and data employment.
 - They bring experience, networks and a higher likelihood of staying, and their decisions often coincide with life events.
 - The main barrier is an information gap: regional AI and data vacancies are often invisible to people living elsewhere.
 - Hybrid working, salary transparency and practical information about housing, schools and dual careers make returning more feasible.
@@ -164,7 +164,7 @@ Returnee attraction is not about persuading people to move against their interes
 
 ## Where to Start
 
-Identify three AI or data professionals who moved back to your region, ask what made them return and what nearly stopped them — then build your approach around those answers and link it to real vacancies.
+Identify three AI or data professionals who moved back to your region, ask what made them return and what nearly stopped them - then build your approach around those answers and link it to real vacancies.
 
 Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss making regional AI and data vacancies visible to returnees.
 

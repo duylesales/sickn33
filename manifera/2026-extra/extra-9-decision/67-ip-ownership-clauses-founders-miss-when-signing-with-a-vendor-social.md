@@ -1,7 +1,7 @@
-Your term sheet is signed. Then the investor's lawyer asks for "evidence of clean chain of title" on code your first vendor wrote — and you go looking for a clause that was never in the contract. 📄⚠️
+Your term sheet is signed. Then the investor's lawyer asks for "evidence of clean chain of title" on code your first vendor wrote - and you go looking for a clause that was never in the contract. 📄⚠️
 
 **The Pain Points:**
-❌ **"Work for Hire" Assumption:** Paying a vendor doesn't automatically transfer ownership — without an explicit assignment clause, many jurisdictions default to the creator retaining rights.
+❌ **"Work for Hire" Assumption:** Paying a vendor doesn't automatically transfer ownership - without an explicit assignment clause, many jurisdictions default to the creator retaining rights.
 ❌ **Undisclosed Background IP:** Vendors often reuse proprietary frameworks across clients, leaving founders assuming they own code they only have a license to.
 ❌ **Silent Subcontractor Gaps:** No flow-down IP obligations to subcontractors means a break in chain of title that surfaces during diligence, not before.
 

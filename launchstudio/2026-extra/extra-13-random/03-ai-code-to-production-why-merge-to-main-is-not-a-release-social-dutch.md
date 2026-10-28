@@ -1,4 +1,4 @@
-🚨 Daan Visser bouwde PlankPal met Cursor: lidmaatschappen en QR-check-in voor twee boulderhallen in Delft. Elke push naar main werd automatisch gedeployd. Op een donderdagavond vroeg hij Cursor een status "bevroren lidmaatschap" toe te voegen. De gegenereerde migratie herschreef elke bestaande rij — en zette onbekende statussen op null. 😳
+🚨 Daan Visser bouwde PlankPal met Cursor: lidmaatschappen en QR-check-in voor twee boulderhallen in Delft. Elke push naar main werd automatisch gedeployd. Op een donderdagavond vroeg hij Cursor een status "bevroren lidmaatschap" toe te voegen. De gegenereerde migratie herschreef elke bestaande rij - en zette onbekende statussen op null. 😳
 
 Twee uur lang werden leden met een geldig abonnement bij de deur geweigerd. Code terugdraaien hielp niet: de data was al veranderd. Daarom is "mergen naar main" geen releaseproces:
 
@@ -14,7 +14,7 @@ Twee uur lang werden leden met een geldig abonnement bij de deur geweigerd. Code
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, bouwen we releaseprocessen rond de manier waarop u al met AI-tools werkt. ⚙️
 
-💡 Het resultaat: € 1.600, zes werkdagen. 212 releases in vier maanden — CI hield er negen tegen, waaronder twee migraties die data zouden herschrijven — en sindsdien geen enkele check-instoring. 🚀
+💡 Het resultaat: € 1.600, zes werkdagen. 212 releases in vier maanden - CI hield er negen tegen, waaronder twee migraties die data zouden herschrijven - en sindsdien geen enkele check-instoring. 🚀
 
 👉 Van AI-code naar productie: waarom mergen naar main geen release is: https://launchstudio.eu/nl/blog/ai-code-to-production-why-merge-to-main-is-not-a-release
 

@@ -1,6 +1,6 @@
-🎯 Lillian, eigenaar van een webshop, bouwde een klantenservice-assistent met **Cursor** — totdat testers de bot manipuleerden om ongeautoriseerde productkortingen weg te geven. 💸
+🎯 Lillian, eigenaar van een webshop, bouwde een klantenservice-assistent met **Cursor** - totdat testers de bot manipuleerden om ongeautoriseerde productkortingen weg te geven. 💸
 
-Omdat gebruikers letterlijk alles kunnen typen in een invoerveld, is het aanvalsoppervlak oneindig — u moet uw eigen product breken vóórdat een vreemde dat live doet bij een betalende klant. 🧠
+Omdat gebruikers letterlijk alles kunnen typen in een invoerveld, is het aanvalsoppervlak oneindig - u moet uw eigen product breken vóórdat een vreemde dat live doet bij een betalende klant. 🧠
 
 ❌ Ontwikkelaars die hun eigen code testen en onbewust uitsluitend het ideale pad ("Happy Path") bewandelen
 ❌ Rollenspel-jailbreaks en gesprekserosie die het taalmodel stap voor stap wegleiden van zijn veiligheidsregels
@@ -12,7 +12,7 @@ Omdat gebruikers letterlijk alles kunnen typen in een invoerveld, is het aanvals
 
 Bij **LaunchStudio** bouwen we sinds 2014 geautomatiseerde testsuites via Manifera, met meer dan 160 enterprise-projecten. 🛡️
 
-LaunchStudio blokkeerde kortings-exploits voor Lillian en beschermde haar operationele marges tegen bot-misbruik. (€1.900 (Bot Testing Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+LaunchStudio blokkeerde kortings-exploits voor Lillian en beschermde haar operationele marges tegen bot-misbruik. (€1.900 (Bot Testing Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u uw AI aanvalt vóórdat een hacker dat doet: https://launchstudio.eu/nl/blog/red-teaming-your-own-ai-products
 

@@ -22,13 +22,13 @@ target_persona: "VP of Engineering"
 
 A VP of Engineering hands a roadmap to an outsourcing partner expecting a faster version of what the in-house team would have built, and gets back, six weeks later, a technically functional system that nobody on the internal team would have architected that way.
 
-**The Pain:** A VP of Engineering at an industrial-technology company near Spijkenisse — part of the Rotterdam port-industrial belt — is outsourcing software development for a plant-monitoring dashboard for the first time and is worried about losing the delivery discipline the in-house team already has: code review standards, test coverage, architectural consistency.
+**The Pain:** A VP of Engineering at an industrial-technology company near Spijkenisse - part of the Rotterdam port-industrial belt - is outsourcing software development for a plant-monitoring dashboard for the first time and is worried about losing the delivery discipline the in-house team already has: code review standards, test coverage, architectural consistency.
 
 **The Agitation:** An outsourcing engagement without a shared discipline standard produces working code that still creates a maintenance burden, because it doesn't match how the rest of the codebase is built. Reconciling a mismatched outsourced module with in-house standards typically costs a mid-market engineering org 4-8 weeks of retrofitting that a clear playbook upfront would have avoided entirely.
 
 ## The Playbook for Keeping Outsourced Delivery on Standard
 
-Outsourcing software development successfully isn't about finding a vendor who codes well in isolation — it's about finding one who codes to the same standard the internal team already holds, and verifiably keeps doing so under deadline pressure.
+Outsourcing software development successfully isn't about finding a vendor who codes well in isolation - it's about finding one who codes to the same standard the internal team already holds, and verifiably keeps doing so under deadline pressure.
 
 The first playbook item is a shared definition of done, agreed before a single sprint starts: test coverage thresholds, code review process, and architectural conventions documented and handed to the outsourced team as a hard requirement, not a suggestion. A VP of Engineering who skips this step gets code that "works" and doesn't fit.
 
@@ -41,7 +41,7 @@ The third is a named technical lead on the outsourced side who has the seniority
 - **Amsterdam (Governance/Strategy):** Dutch-based leads align the shared definition of done with your existing standards before delivery starts, and independently verify it's being held.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod works inside your existing review pipeline, with a named tech lead empowered to protect the standard under deadline pressure.
 
-This is Dutch Management × Vietnamese Mastery — outsourced capacity that doesn't create a second, lower-standard codebase. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - outsourced capacity that doesn't create a second, lower-standard codebase. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -51,8 +51,8 @@ Nordisk Sensorteknik AB, an industrial IoT company based in Malmö, Sweden, had 
 
 Manifera rebuilt the engagement around a shared definition of done, integrated into the client's existing GitHub review pipeline, with a named tech lead empowered to flag any request that would compromise test coverage. The next module shipped fully consistent with in-house standards, with zero retrofit time required.
 
-> *"The code worked. It just wasn't code we could maintain the way we maintain everything else. The second time, it was — because we defined 'done' before we started, not after."*
-> — **VP of Engineering, Nordisk Sensorteknik AB, Sweden**
+> *"The code worked. It just wasn't code we could maintain the way we maintain everything else. The second time, it was - because we defined 'done' before we started, not after."*
+> - **VP of Engineering, Nordisk Sensorteknik AB, Sweden**
 
 ## Ungoverned Outsourced Delivery vs. Manifera's Standards-Aligned Pod
 
@@ -66,13 +66,13 @@ Manifera rebuilt the engagement around a shared definition of done, integrated i
 
 ## The Economics
 
-A mismatched outsourced module doesn't fail outright — it ships, works, and then quietly costs the internal team 4-8 weeks of retrofit time to bring it in line with existing standards, time that was never budgeted because the mismatch wasn't visible until after delivery. Defining the shared standard upfront costs one planning session. [Talk to Manifera about aligning delivery standards before sprint one](https://www.manifera.com/contact-us/).
+A mismatched outsourced module doesn't fail outright - it ships, works, and then quietly costs the internal team 4-8 weeks of retrofit time to bring it in line with existing standards, time that was never budgeted because the mismatch wasn't visible until after delivery. Defining the shared standard upfront costs one planning session. [Talk to Manifera about aligning delivery standards before sprint one](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering worried about code-quality mismatch from outsourcing) How do we keep outsourced code consistent with our in-house standards?
 
-Document a shared definition of done — test coverage, review process, architectural conventions — before sprint one, and embed the outsourced pod into the same review pipeline as the internal team.
+Document a shared definition of done - test coverage, review process, architectural conventions - before sprint one, and embed the outsourced pod into the same review pipeline as the internal team.
 
 ### (Scenario: VP of Engineering concerned about deadline pressure eroding quality) What stops an outsourced pod from cutting corners under deadline pressure?
 
@@ -84,7 +84,7 @@ Typically 4-8 weeks of unplanned retrofit time for a mid-market engineering org,
 
 ### (Scenario: VP of Engineering deciding how much oversight to apply) Does maintaining a shared standard require constant internal oversight of the outsourced team?
 
-Not if the standard is documented and the outsourced pod is embedded in the same review pipeline with empowered technical leadership — oversight becomes periodic, not constant.
+Not if the standard is documented and the outsourced pod is embedded in the same review pipeline with empowered technical leadership - oversight becomes periodic, not constant.
 
 ### (Scenario: VP of Engineering worried about losing architectural consistency) How do we avoid an outsourced module creating architectural drift from the rest of the codebase?
 

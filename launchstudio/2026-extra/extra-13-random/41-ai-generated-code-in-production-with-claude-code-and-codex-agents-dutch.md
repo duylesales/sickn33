@@ -21,14 +21,14 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een snel groeiend aantal technische oprichters schrijft hun programmacode tegenwoordig nauwelijks nog zelf in een traditionele editor. In plaats daarvan formuleren ze hun wensen in natuurlijke taal tegen een terminal-agent — zoals Claude Code, OpenAI Codex of vergelijkbare CLI-tools. De agent leest de repository zelfstandig in, stelt een stappenplan op, bewerkt bestanden, draait geautomatiseerde tests en commit de wijzigingen. Deze agents zijn buitengewoon bekwaam: ze schrijven unit tests, respecteren bestaande projectconventies en voeren complexe refactorings door over tientallen bestanden heen die met eerdere tools ondenkbaar waren. Die enorme bekwaamheid verandert echter de aard van de risico's voor AI-gegenereerde code in productie. De voornaamste bedreiging is niet langer slordige code. Het is uiterst competente code die is gebouwd op een aanname die niemand handmatig heeft gecontroleerd.
+Een snel groeiend aantal technische oprichters schrijft hun programmacode tegenwoordig nauwelijks nog zelf in een traditionele editor. In plaats daarvan formuleren ze hun wensen in natuurlijke taal tegen een terminal-agent - zoals Claude Code, OpenAI Codex of vergelijkbare CLI-tools. De agent leest de repository zelfstandig in, stelt een stappenplan op, bewerkt bestanden, draait geautomatiseerde tests en commit de wijzigingen. Deze agents zijn buitengewoon bekwaam: ze schrijven unit tests, respecteren bestaande projectconventies en voeren complexe refactorings door over tientallen bestanden heen die met eerdere tools ondenkbaar waren. Die enorme bekwaamheid verandert echter de aard van de risico's voor AI-gegenereerde code in productie. De voornaamste bedreiging is niet langer slordige code. Het is uiterst competente code die is gebouwd op een aanname die niemand handmatig heeft gecontroleerd.
 
 ## Wat Er Wezenlijk Anders Is aan Terminal-Agents
 
 Vergeleken met webgebaseerde app-builders en simpele autocomplete-plugins:
 
 - **Opereren terminal-agents met jouw volledige gebruikersrechten.** Ze kunnen shell-commando's uitvoeren, lokale bestanden lezen en wijzigen, jouw persoonlijke CLI-inloggegevens gebruiken en API's aanroepen die bereikbaar zijn vanaf jouw machine.
-- **Schrijven ze hun eigen tests.** Wat op zichzelf uitstekend is — maar tevens betekent dat exact hetzelfde systeem de implementatie én de definitie van "correcte werking" formuleert.
+- **Schrijven ze hun eigen tests.** Wat op zichzelf uitstekend is - maar tevens betekent dat exact hetzelfde systeem de implementatie én de definitie van "correcte werking" formuleert.
 - **Voeren ze gigantische wijzigingen door.** Een refactoring die veertig bestanden tegelijk raakt is schering en inslag, waardoor een effectieve menselijke code-review bijzonder lastig wordt.
 - **Werken ze per sessie geïsoleerd.** Hun context wordt elke sessie opnieuw opgebouwd vanuit de repository en instructiebestanden; beslissingen die drie sessies geleden zijn genomen, kunnen zomaar vergeten zijn.
 
@@ -42,19 +42,19 @@ Als jouw terminaltoegang beschikt over database-inloggegevens voor productie, be
 
 ## Risico 2: Tests Die het Volledig Eens Zijn Met de Code
 
-Wanneer een agent zowel de functionaliteit als de bijbehorende tests schrijft, hebben die tests de neiging om te bevestigen wat de code feitelijk dóét, in plaats van wat de software zóu moeten doen. Als de agent een bedrijfslogica-regel verkeerd heeft geïnterpreteerd — bijvoorbeeld dat een afdelingsbeheerder de facturen van alle andere afdelingen mag inzien — zullen zijn tests exact die misvatting als de norm valideren.
+Wanneer een agent zowel de functionaliteit als de bijbehorende tests schrijft, hebben die tests de neiging om te bevestigen wat de code feitelijk dóét, in plaats van wat de software zóu moeten doen. Als de agent een bedrijfslogica-regel verkeerd heeft geïnterpreteerd - bijvoorbeeld dat een afdelingsbeheerder de facturen van alle andere afdelingen mag inzien - zullen zijn tests exact die misvatting als de norm valideren.
 
 **Wat te doen:** Schrijf de meest bedrijfskritieke tests zelf, of specificeer ze vooraf glashelder: "een gebruiker van team A moet een HTTP 403 Forbidden ontvangen wanneer hij een factuur opvraagt van team B." Negatieve tests voor autorisatie, betalingsstatussen en datagrenzen zijn precies het domein waar menselijke regie onmisbaar is. Laat de agent gerust de rest van de testsuite schrijven.
 
 ## Risico 3: Refactorings Die te Groot Zijn voor een Menselijke Review
 
-Een git-diff van 2.000 regels verspreid over veertig bestanden, waarbij alle tests keurig groen kleuren, is menselijkerwijs nauwelijks grondig te controleren. Cruciale security-wijzigingen — een per ongeluk verwijderde middleware, een versoepelde databasepolicy of een nieuw openbaar endpoint — kunnen hier geruisloos in opgaan.
+Een git-diff van 2.000 regels verspreid over veertig bestanden, waarbij alle tests keurig groen kleuren, is menselijkerwijs nauwelijks grondig te controleren. Cruciale security-wijzigingen - een per ongeluk verwijderde middleware, een versoepelde databasepolicy of een nieuw openbaar endpoint - kunnen hier geruisloos in opgaan.
 
 **Wat te doen:** Instrueer de agent om grote wijzigingen op te knippen in meerdere kleine, logisch gescheiden pull requests. Hanteer een vaste review-checklist: wijzigingen in authenticatie en middleware, aanpassingen aan database-policies, nieuwe openbare routes, nieuw geïnstalleerde dependencies en gewijzigde omgevingsvariabelen.
 
 ## Risico 4: Contextverloop Tussen Verschillende Sessies
 
-De agent herinnert zich niet dat je twee weken geleden besloot om nooit interne database-ID's in URL's te tonen, of dat een specifieke tabel uitsluitend door een asynchrone achtergrondtaak mag worden gemuteerd. Hij baseert zich uitsluitend op wat hij in de huidige sessie in de code aantreft. Architectuurbeslissingen die alleen in jouw hoofd — of in een oude chatlog — bestaan, gaan onherroepelijk verloren.
+De agent herinnert zich niet dat je twee weken geleden besloot om nooit interne database-ID's in URL's te tonen, of dat een specifieke tabel uitsluitend door een asynchrone achtergrondtaak mag worden gemuteerd. Hij baseert zich uitsluitend op wat hij in de huidige sessie in de code aantreft. Architectuurbeslissingen die alleen in jouw hoofd - of in een oude chatlog - bestaan, gaan onherroepelijk verloren.
 
 **Wat te doen:** Leg architectuurkeuzes en beveiligingsregels vast in permanente projectinstructiebestanden die de agent aan het begin van elke sessie verplicht inleest (zoals een `CLAUDE.md` of `AGENTS.md`) en in de README. Korte, dwingende instructies werken het best: "Alle datatoegang verloopt verplicht via Row-Level Security; gebruik nooit de service-role sleutel binnen reguliere request-handlers."
 
@@ -73,7 +73,7 @@ Het zou onterecht zijn om louter gevaren te benoemen. Doelbewust en gediscipline
 1. Een lokale ontwikkelomgeving die fysiek is afgeschermd van productietoegang.
 2. Permanente instructiebestanden met expliciete architectuur-, beveiligings- en coderingsconventies.
 3. Door mensen gespecificeerde negatieve autorisatietests voor datagrenzen en betalingen.
-4. Een geautomatiseerde CI-pipeline die tests, secret-scanning, dependency-audits en policy-checks afdwingt — controles die de agent niet kan omzeilen.
+4. Een geautomatiseerde CI-pipeline die tests, secret-scanning, dependency-audits en policy-checks afdwingt - controles die de agent niet kan omzeilen.
 5. Compacte pull requests die worden getoetst aan de hand van een beveiligingschecklist.
 6. Periodieke externe reviews om structurele sluipende afwijkingen tijdig te signaleren.
 
@@ -104,7 +104,7 @@ De meeste programmeerfouten in door agents geschreven code ontstaan door vage of
 - **Wat absoluut onaangetast moet blijven**: "Pas bestaande SQL-migraties niet aan; maak een nieuw migratiebestand aan."
 - **Verificatie**: "Voeg geautomatiseerde tests toe in `tests/access/contracts.test.ts` die bovenstaande gevallen bewijzen."
 
-Met dergelijke specificaties leggen de tests van de agent jouw daadwerkelijke bedoeling vast, in plaats van zijn eigen aanname — exact het hiaat dat optrad in het onderstaande praktijkvoorbeeld.
+Met dergelijke specificaties leggen de tests van de agent jouw daadwerkelijke bedoeling vast, in plaats van zijn eigen aanname - exact het hiaat dat optrad in het onderstaande praktijkvoorbeeld.
 
 ## Grote Aanpassingen Opdelen in Behapbare Eenheden
 
@@ -116,11 +116,11 @@ Bestanden zoals `CLAUDE.md` of `AGENTS.md` worden bij de start van elke werksess
 
 ## De CI-Pijplijn als Geautomatiseerde Voorman
 
-AI-agents floreren bij snelle, niet-onderhandelbare feedback. Een CI/CD-pipeline die bij elke pull request meedogenloos type-checks, linting, de complete testsuite inclusief negatieve autorisatietests, secret-scanning, dependency-audits en databasemigratie-controles uitvoert, fungeert als een onvermoeibare voorman. Maak het slagen van deze controles een harde voorwaarde voor het mergen van code. Wanneer de CI faalt, kan de agent het probleem meestal zelfstandig oplossen — mits de foutmelding specifiek en informatief is.
+AI-agents floreren bij snelle, niet-onderhandelbare feedback. Een CI/CD-pipeline die bij elke pull request meedogenloos type-checks, linting, de complete testsuite inclusief negatieve autorisatietests, secret-scanning, dependency-audits en databasemigratie-controles uitvoert, fungeert als een onvermoeibare voorman. Maak het slagen van deze controles een harde voorwaarde voor het mergen van code. Wanneer de CI faalt, kan de agent het probleem meestal zelfstandig oplossen - mits de foutmelding specifiek en informatief is.
 
 ## Periodieke Menselijke Evaluatie van Opeengehoopte Wijzigingen
 
-Zelfs met doordachte vangrails is het verstandig om periodiek — bijvoorbeeld maandelijks of voorafgaand aan het onboarden van een grote zakelijke klant — een holistische blik te werpen op alle geaccumuleerde wijzigingen. Controleer: nieuw geïntroduceerde endpoints en permissies, wijzigingen in databaseregels, nieuw toegevoegde dependencies, nieuwe omgevingsvariabelen, trends in error-logs en het gebruik van geprivilegieerde database-clients. Hiermee onderschep je subtiel sluipend contextverloop dat bij individuele pull request-reviews onopgemerkt blijft, zoals hulpfuncties die stilletjes de autorisatielaag beginnen te omzeilen.
+Zelfs met doordachte vangrails is het verstandig om periodiek - bijvoorbeeld maandelijks of voorafgaand aan het onboarden van een grote zakelijke klant - een holistische blik te werpen op alle geaccumuleerde wijzigingen. Controleer: nieuw geïntroduceerde endpoints en permissies, wijzigingen in databaseregels, nieuw toegevoegde dependencies, nieuwe omgevingsvariabelen, trends in error-logs en het gebruik van geprivilegieerde database-clients. Hiermee onderschep je subtiel sluipend contextverloop dat bij individuele pull request-reviews onopgemerkt blijft, zoals hulpfuncties die stilletjes de autorisatielaag beginnen te omzeilen.
 
 ## Wat Je Klanten Vertelt Over Software Gebouwd Met AI-Agents
 
@@ -128,7 +128,7 @@ Zakelijke opdrachtgevers vragen steeds vaker hoe software precies tot stand komt
 
 ## Bescherming Tegen Indirecte Prompt-Injectie in de Repository
 
-Terminal-agents lezen niet alleen broncode, maar ook documentatie, issues, pull request-commentaren en externe webpagina's. Externe data waarover jij geen controle hebt — zoals de README van een npm-package, een issue ingediend door een externe bezoeker of een gedownloade webpagina — kan verborgen instructies bevatten die gericht zijn aan de AI-agent. Beperk dit risico door willekeurige netwerktoegang te blokkeren, wees voorzichtig wanneer je een agent vraagt te handelen op extern aangeleverde issues, review alle wijzigingen die CI-configuraties of geheimen raken nauwgezet, en laat de agent nooit opereren met inloggegevens die ernstige schade kunnen aanrichten als hij een kwaadwillende instructie zou opvolgen.
+Terminal-agents lezen niet alleen broncode, maar ook documentatie, issues, pull request-commentaren en externe webpagina's. Externe data waarover jij geen controle hebt - zoals de README van een npm-package, een issue ingediend door een externe bezoeker of een gedownloade webpagina - kan verborgen instructies bevatten die gericht zijn aan de AI-agent. Beperk dit risico door willekeurige netwerktoegang te blokkeren, wees voorzichtig wanneer je een agent vraagt te handelen op extern aangeleverde issues, review alle wijzigingen die CI-configuraties of geheimen raken nauwgezet, en laat de agent nooit opereren met inloggegevens die ernstige schade kunnen aanrichten als hij een kwaadwillende instructie zou opvolgen.
 
 ## Kostendiscipline bij het Gebruik van Tokens
 
@@ -142,7 +142,7 @@ Met de opkomst van hypercapabele agents verschuift de menselijke rol van het typ
 
 Voor ondernemers die bouwen met behulp van terminal-agents brengt LaunchStudio de opgebouwde codebase gestructureerd in kaart, repareert de openstaande kwetsbaarheden en richt het beproefde operationele raamwerk in: omgevingsscheiding, instructiebestanden met heldere beveiligingsregels, negatieve testsuites en robuuste CI-vangrails. De code en de ontwikkelworkflow blijven volledig in jouw handen; de agent blijft op topsnelheid functioneren, maar nu binnen veilige kaders.
 
-Onze engineers hebben ruim 160 bedrijfskritische projecten opgeleverd voor veeleisende zakelijke klanten — en zetten die expertise nu in voor jouw software. Ze opereren vanuit het hoogwaardige ontwikkelcentrum van Manifera in Ho Chi Minh City, met direct lokaal relatiebeheer via Amsterdam en Singapore, en gebruiken zelf dagelijks AI-gedreven softwareontwikkeling. Voor meer inzicht in Manifera's aanpak, zie [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/). Anthropic's officiële handleiding over [Claude Code instellingen en permissies](https://docs.anthropic.com/en/docs/claude-code/settings) biedt diepgaande instructies over het effectief inrichten van veiligheidsbeperkingen.
+Onze engineers hebben ruim 160 bedrijfskritische projecten opgeleverd voor veeleisende zakelijke klanten - en zetten die expertise nu in voor jouw software. Ze opereren vanuit het hoogwaardige ontwikkelcentrum van Manifera in Ho Chi Minh City, met direct lokaal relatiebeheer via Amsterdam en Singapore, en gebruiken zelf dagelijks AI-gedreven softwareontwikkeling. Voor meer inzicht in Manifera's aanpak, zie [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/). Anthropic's officiële handleiding over [Claude Code instellingen en permissies](https://docs.anthropic.com/en/docs/claude-code/settings) biedt diepgaande instructies over het effectief inrichten van veiligheidsbeperkingen.
 
 Is jouw applicatie grotendeels tot stand gekomen via een AI-agent? [Ga in gesprek met een senior engineer die AI-code begrijpt](https://launchstudio.eu/nl/#contact).
 
@@ -152,16 +152,16 @@ Is jouw applicatie grotendeels tot stand gekomen via een AI-agent? [Ga in gespre
 
 Priya Raman, voormalig legal operations lead aan de Amsterdamse Zuidas, bouwde Contractkompas grotendeels met behulp van Claude Code: een B2B SaaS-oplossing die leverancierscontracten voor het middenbedrijf beheert, verlengdata en opzegtermijnen automatisch uitleest via een LLM en contracteigenaren tijdig waarschuwt voor stilzwijgende verlengingen. De codebase beschikte over een indrukwekkende testdekking van 91%, een strakke CI-pijplijn en keurige git-commits. Negentien bedrijven betaalden maandelijks voor de dienst.
 
-Tijdens een security-audit door het technische team van een potentiële enterprise-klant kwam binnen één namiddag aan het licht wat alle geautomatiseerde tests over het hoofd hadden gezien. Gebruikers met de rol "afdelingsbeheerder" bleken contracten van álle andere afdelingen binnen het bedrijf te kunnen inzien. De agent had "admin" simpelweg geïnterpreteerd als een bedrijfsbrede beheerder — en had vervolgens keurige tests geschreven die exact dat gedrag groen vinkten. De CI-workflow draaide bovendien zonder restricties op pull requests vanaf forks, met volledige leesrechten op de geheime repository-tokens. De agent had bovendien weken eerder de Supabase service-role sleutel toegevoegd aan een serverutility die door reguliere endpoints werd aangeroepen "om een permissiefout op te lossen", waarmee Row-Level Security voor die routes volledig werd omzeild. In Priya's lokale terminal stonden bovendien actieve productie-inloggegevens, die de agent tijdens een eerdere debugsessie had gebruikt om "even de data te inspecteren."
+Tijdens een security-audit door het technische team van een potentiële enterprise-klant kwam binnen één namiddag aan het licht wat alle geautomatiseerde tests over het hoofd hadden gezien. Gebruikers met de rol "afdelingsbeheerder" bleken contracten van álle andere afdelingen binnen het bedrijf te kunnen inzien. De agent had "admin" simpelweg geïnterpreteerd als een bedrijfsbrede beheerder - en had vervolgens keurige tests geschreven die exact dat gedrag groen vinkten. De CI-workflow draaide bovendien zonder restricties op pull requests vanaf forks, met volledige leesrechten op de geheime repository-tokens. De agent had bovendien weken eerder de Supabase service-role sleutel toegevoegd aan een serverutility die door reguliere endpoints werd aangeroepen "om een permissiefout op te lossen", waarmee Row-Level Security voor die routes volledig werd omzeild. In Priya's lokale terminal stonden bovendien actieve productie-inloggegevens, die de agent tijdens een eerdere debugsessie had gebruikt om "even de data te inspecteren."
 
 Binnen acht werkdagen losten de senior engineers van LaunchStudio de afdelingsautorisatie op en herschreven ze de relevante tests op basis van een menselijk gespecificeerde toegangsmatrix. De service-role sleutel werd verwijderd uit de API-paden en RLS werd hersteld. De CI-workflow werd beveiligd zodat forks geen geheimen kunnen uitlezen, productie-inloggegevens werden verplaatst naar een strikt geïsoleerd profiel dat handmatige activering vereist, de permissies van Claude Code werden geconfigureerd om expliciete toestemming te vragen voor database- en deploymentopdrachten, en de beveiligingsregels werden vastgelegd in het instructiebestand van het project.
 
 **Het resultaat:** Contractkompas doorstond de hernieuwde security-audit van de enterprise-organisatie met vlag en wimpel en sloot een jaarcontract af dat in waarde groter was dan alle voorgaande negentien klanten bij elkaar. Priya ontwikkelt haar platform nog altijd vrijwel exclusief met Claude Code; de door mensen gespecificeerde autorisatietests hebben sindsdien al drie keer tijdig een foutieve codewijziging van de agent onderschept.
 
-> *"De AI-agent was een aanzienlijk snellere programmeur dan ikzelf. Hij begreep alleen niet wat ik juridisch bedoelde met 'afdelingsbeheerder' — en schreef vrolijk tests die zijn eigen foute aanname bevestigden."*
-> — **Priya Raman, Oprichtster, Contractkompas (Amsterdam)**
+> *"De AI-agent was een aanzienlijk snellere programmeur dan ikzelf. Hij begreep alleen niet wat ik juridisch bedoelde met 'afdelingsbeheerder' - en schreef vrolijk tests die zijn eigen foute aanname bevestigden."*
+> - **Priya Raman, Oprichtster, Contractkompas (Amsterdam)**
 
-**Kosten & Tijdlijn:** € 2.300 (beveiligingsaudit, autorisatie- en sleutelbeveiliging, CI-hardening, agent-vangrails en testspecificatie) — succesvol opgeleverd in 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.300 (beveiligingsaudit, autorisatie- en sleutelbeveiliging, CI-hardening, agent-vangrails en testspecificatie) - succesvol opgeleverd in 8 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -172,7 +172,7 @@ Dat kan zeker, mits voorzien van dezelfde kwaliteitswaarborgen die alle professi
 Absoluut niet. Houd inloggegevens voor de productieomgeving te allen tijde strikt buiten het bereik van de agent en vereis altijd een bewuste, handmatige stap om productie te benaderen.
 
 ### Kan ik vertrouwen op tests die zijn geschreven door dezelfde agent die de code schreef?
-Beschouw ze als waardevolle documentatie, maar niet als onafhankelijk bewijs van correctheid. Specificeer bedrijfskritieke tests — met name negatieve autorisatietests en financiële randgevallen — altijd zelf, zodat ze de daadwerkelijke businesslogica weerspiegelen.
+Beschouw ze als waardevolle documentatie, maar niet als onafhankelijk bewijs van correctheid. Specificeer bedrijfskritieke tests - met name negatieve autorisatietests en financiële randgevallen - altijd zelf, zodat ze de daadwerkelijke businesslogica weerspiegelen.
 
 ### Maakt Manifera zelf ook gebruik van AI-programmeer-agents?
 Jazeker. De software-engineers van Manifera zetten AI-ondersteunde tools dagelijks intensief in, maar altijd ingebed binnen strenge reviewprocedures en CI-vangrails die in ruim 11 jaar enterprise-ontwikkeling zijn geperfectioneerd. LaunchStudio brengt deze professionele standaarden naar ambitieuze founders.

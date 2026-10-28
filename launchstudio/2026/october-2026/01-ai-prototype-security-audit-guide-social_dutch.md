@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype met **Cursor** — als voormalig HR-manager in Rotterdam zag ze een kans voor een betere tool voor medewerkersfeedback, maar ontdekte kritieke beveiligingsknelpunten vlak voor de livegang. 🧠
+🔥 Elena bouwde een prototype met **Cursor** - als voormalig HR-manager in Rotterdam zag ze een kans voor een betere tool voor medewerkersfeedback, maar ontdekte kritieke beveiligingsknelpunten vlak voor de livegang. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en datalekken.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Elena's applicatie ging succesvol live bij beide pilotbedrijven en doorstond een externe penetratietest. (€1.600 (Launch Ready Pakket) — binnen 4 werkdagen productieklaar opgeleverd). 🚀
+Elena's applicatie ging succesvol live bij beide pilotbedrijven en doorstond een externe penetratietest. (€1.600 (Launch Ready Pakket) - binnen 4 werkdagen productieklaar opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-prototype-security-audit-guide
 

@@ -4,9 +4,9 @@ Productwerving volgt roadmaps en kwartalen. Onderzoekswerving volgt subsidiecycl
 
 De levenscyclus verklaart veel: een hoogleraar schrijft een subsidievoorstel met een onderzoeksrichting erin. Beoordeling duurt zes maanden tot een jaar. Bij toekenning heeft de groep soms maar enkele maanden om te werven voordat de klok tegen de projectresultaten gaat lopen.
 
-Vandaar dat die vacatures plotseling opduiken en merkwaardig specifieke kwalificaties eisen. Ze zijn niet willekeurig kieskeurig — ze werven tegen beloftes die een jaar eerder zijn opgeschreven.
+Vandaar dat die vacatures plotseling opduiken en merkwaardig specifieke kwalificaties eisen. Ze zijn niet willekeurig kieskeurig - ze werven tegen beloftes die een jaar eerder zijn opgeschreven.
 
-Twee praktische gevolgen: veel posities worden ingevuld via netwerk vóór publicatie, dus zichtbaarheid opbouwen werkt beter dan zoeken. En die hyperspecifieke eisen zijn vaak subsidietaal, niet harde grenzen — vraag het na in plaats van jezelf uit te sluiten.
+Twee praktische gevolgen: veel posities worden ingevuld via netwerk vóór publicatie, dus zichtbaarheid opbouwen werkt beter dan zoeken. En die hyperspecifieke eisen zijn vaak subsidietaal, niet harde grenzen - vraag het na in plaats van jezelf uit te sluiten.
 
 https://onlyaijobs.eu/nl/blog/ai-research-roles-netherlands
 

@@ -15,7 +15,7 @@ Zelf bouwen betekent dat uw engineeringteam de volledige TypeScript/Python backe
 **U MOET zelf bouwen wanneer:**
 
 - **AI uw Primaire Kernproduct is:** Verkoopt u een gespecialiseerde "AI Juridisch Assistent", dan is de accuratesse van uw documentzoekopdrachten (retrieval) uw enige echte economische slotgracht (moat). Een generieke managed clouddienst begrijpt de subtiele juridische nuances tussen bepalingen in een contract van 400 pagina's simpelweg niet. U moet maatwerk chunking-algoritmen en een eigen cross-encoder re-ranking stap (zoals Cohere Rerank) bouwen om het vereiste enterprise-kwaliteitsniveau te halen.
-- **Kostenoptimalisatie op Schaal Cruciaal is:** Managed platforms rekenen gigantische opslagen — vaak 3 tot 10 keer de werkelijke rekenkrachtprijs. Door zelf te bouwen, kunt u eenvoudige taken dynamisch routeren naar goedkope opensource modellen (zoals Llama 3.3 70B of Mistral) en dure GPT-4 modellen reserveren voor complexe redeneringen. Bij miljoenen maandelijkse queries bespaart deze eigen routering 60% tot 80% op de operationele kosten.
+- **Kostenoptimalisatie op Schaal Cruciaal is:** Managed platforms rekenen gigantische opslagen - vaak 3 tot 10 keer de werkelijke rekenkrachtprijs. Door zelf te bouwen, kunt u eenvoudige taken dynamisch routeren naar goedkope opensource modellen (zoals Llama 3.3 70B of Mistral) en dure GPT-4 modellen reserveren voor complexe redeneringen. Bij miljoenen maandelijkse queries bespaart deze eigen routering 60% tot 80% op de operationele kosten.
 
 ## De Verborgen Kosten van Zelf Bouwen: Doorlopend Onderhoud
 
@@ -43,7 +43,7 @@ Bouwt u daarentegen op maat met open standaarden en modulaire API-aanroepen, dan
 
 De meest succesvolle en volwassen AI-producten zijn zelden 100% zelfgebouwd of 100% ingekocht. Het pragmatische patroon waarop toonaangevende teams uitkomen is een **Hybride Model**: koop de commodity-laag (embeddings, basis-LLM inferentie, beheerde vector-opslag in de beginfase) en bouw zelf de gedifferentieerde laag (eigen chunking-strategieën, re-ranking logica, prompt-orkestratie en evaluatiesets). Hierdoor vermijdt u maandenlange infrastructurele vertraging terwijl u 100% eigenaar blijft van de specifieke intellectuele eigendom die uw product uniek maakt ten opzichte van concurrenten.
 
-Manifera — het internationale softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink met hoofdkantoor aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** — adviseert en begeleidt AI-startups al ruim elf jaar bij deze fundamentele afwegingen. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk meer op de [Manifera over ons pagina](https://www.manifera.com/about-us/).
+Manifera - het internationale softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink met hoofdkantoor aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** - adviseert en begeleidt AI-startups al ruim elf jaar bij deze fundamentele afwegingen. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk meer op de [Manifera over ons pagina](https://www.manifera.com/about-us/).
 
 ## Belangrijkste Inzichten
 
@@ -69,7 +69,7 @@ Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om een 
 
 **Resultaat:** Documentzoekopdrachten werden uiterst accuraat en de zoektijd voor juristen daalde met 80%, wat haar binnen 2 weken een vliegende marktstart opleverde.
 
-**Kosten & Tijdlijn:** €2.200 (Vector Search Integratie Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.200 (Vector Search Integratie Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

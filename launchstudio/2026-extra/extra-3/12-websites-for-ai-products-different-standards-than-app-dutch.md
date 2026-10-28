@@ -53,7 +53,7 @@ Omdat de marketingsite geen betalingsgegevens of kernproductgegevens verwerkt, i
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt marketingwebsites met dit afzonderlijke risicoprofiel in gedachten – formuliebeveiliging, veerkracht van uptime en nauwkeurigheid van gestructureerde gegevens – als een aanvulling op, en niet een minder belangrijke versie van, productieverharding op app-niveau, waarbij dezelfde engineeringdiscipline wordt toegepast die Manifera naar elk klantgericht oppervlak brengt in meer dan 160 opgeleverde projecten.
 
-[Laat uw marketingsite beoordelen met dezelfde ernst als uw app](https://launchstudio.eu/nl/#calculator) — het is vaak het eerste en meest openbaar zichtbare wat iemand daadwerkelijk ziet.
+[Laat uw marketingsite beoordelen met dezelfde ernst als uw app](https://launchstudio.eu/nl/#calculator) - het is vaak het eerste en meest openbaar zichtbare wat iemand daadwerkelijk ziet.
 
 ## Een pre-lanceerchecklist voor uw marketingsite
 
@@ -86,10 +86,10 @@ Een regionaal zakelijk tijdschrift bracht dezelfde week dat Iris een bescheiden 
 
 **Resultaat:** LaunchStudio beoordeelde en verhardde de hostingconfiguratie van de marketingsite afzonderlijk van de eigen infrastructuur van de app, waarbij dezelfde soort belastingveerkracht werd toegevoegd die de app zelf al had. Hiermee werd een kloof gedicht die Iris specifiek eerste indrukken had gekost tijdens de week met het hoogste verkeer die haar lancering waarschijnlijk ooit zou zien.
 
-> *"Ik had zoveel zorg besteed aan het zorgen dat de daadwerkelijke app echt gebruik kon afhandelen. Het was nooit bij me opgekomen dat de marketingsite dezelfde aandacht nodig had — en de ene week dat het er het meest toe deed, met een persvermelding en een advertentiecampagne die beide tegelijk verkeer dreven, was precies wanneer hij het moeilijk had."*
-> — **Iris Voskamp, Oprichter, PlanningPilot (Zwolle)**
+> *"Ik had zoveel zorg besteed aan het zorgen dat de daadwerkelijke app echt gebruik kon afhandelen. Het was nooit bij me opgekomen dat de marketingsite dezelfde aandacht nodig had - en de ene week dat het er het meest toe deed, met een persvermelding en een advertentiecampagne die beide tegelijk verkeer dreven, was precies wanneer hij het moeilijk had."*
+> - **Iris Voskamp, Oprichter, PlanningPilot (Zwolle)**
 
-**Kosten en tijdlijn:** € 650 (beoordeling van marketingsitehosting en belastingveerkracht) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 650 (beoordeling van marketingsitehosting en belastingveerkracht) - voltooid in 3 werkdagen.
 
 ---
 
@@ -149,7 +149,7 @@ Het risico schaalt met het verwachte verkeer en de zichtbaarheid, dus een site i
       "name": "Is het redelijk dezelfde AI-tool te gebruiken voor app en marketingsite?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Volledig redelijk — de richtlijn gaat over het afzonderlijk beoordelen van elk oppervlak op basis van het risicoprofiel."
+        "text": "Volledig redelijk - de richtlijn gaat over het afzonderlijk beoordelen van elk oppervlak op basis van het risicoprofiel."
       }
     },
     {

@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Open Source and Your Dutch AI Career: Who Owns the Code You Write at Night",
-  "description": "Open source contributions can be the strongest evidence in a Dutch job application — but employment contracts, employer policies and licence obligations shape what you may publish and what it is worth.",
+  "description": "Open source contributions can be the strongest evidence in a Dutch job application - but employment contracts, employer policies and licence obligations shape what you may publish and what it is worth.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-19",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Ask a Dutch hiring manager what they actually read when assessing a technical candidate, and a public repository will be near the top of the list — above certificates, above the summary paragraph, often above the degree. Code is evidence in a way that claims are not. But contributing to open source while employed raises questions about ownership, confidentiality and employer policy that many candidates have never thought about until a lawyer asks them.
+Ask a Dutch hiring manager what they actually read when assessing a technical candidate, and a public repository will be near the top of the list - above certificates, above the summary paragraph, often above the degree. Code is evidence in a way that claims are not. But contributing to open source while employed raises questions about ownership, confidentiality and employer policy that many candidates have never thought about until a lawyer asks them.
 
 This article is general information, not legal advice; contracts differ and specific situations need individual review.
 
@@ -55,7 +55,7 @@ Two principles matter, and they interact.
 
 **Contractual clauses.** Employment contracts typically go further, with intellectual property clauses that assign rights in work related to the employer's business, confidentiality obligations that survive the employment, and sometimes non-compete or ancillary activity clauses requiring permission for outside work.
 
-The grey area — and it is genuinely grey — is a side project developed in your own time, on your own equipment, unrelated to your employer's business. A narrowly drafted clause leaves that clearly yours; a broadly drafted one may not. The practical resolutions are the same whichever side of the line you think you are on: read the clause before signing, ask for it to be narrowed if it is sweeping, and get written permission for a specific project rather than relying on interpretation.
+The grey area - and it is genuinely grey - is a side project developed in your own time, on your own equipment, unrelated to your employer's business. A narrowly drafted clause leaves that clearly yours; a broadly drafted one may not. The practical resolutions are the same whichever side of the line you think you are on: read the clause before signing, ask for it to be narrowed if it is sweeping, and get written permission for a specific project rather than relying on interpretation.
 
 ## Employer Policies Vary More Than You Expect
 
@@ -63,7 +63,7 @@ The grey area — and it is genuinely grey — is a side project developed in yo
 
 **Permissive but unstructured.** Most common: nobody objects, but there is no policy, which means approval depends on your manager and could change.
 
-**Restrictive.** Financial institutions, defence contractors, healthcare organisations and some public bodies restrict what may be published, sometimes for good reasons — security, confidentiality, regulatory obligations.
+**Restrictive.** Financial institutions, defence contractors, healthcare organisations and some public bodies restrict what may be published, sometimes for good reasons - security, confidentiality, regulatory obligations.
 
 **Silent.** The most dangerous category, because silence is not permission. If a dispute arises, an absent policy leaves you relying on the contract, which was drafted by the employer.
 
@@ -73,7 +73,7 @@ Ask during hiring. "What is your policy on contributing to open source?" is a no
 
 An engineer builds an internal utility that solves a common problem elegantly. It contains no business logic and no data, and colleagues suggest publishing it.
 
-They ask, and discover the process is not trivial: legal review for third-party licence obligations in dependencies, a security review to confirm no credentials or internal hostnames are embedded, a decision about which licence to publish under, and a question about who maintains it afterwards — because publishing something and abandoning it can embarrass the company.
+They ask, and discover the process is not trivial: legal review for third-party licence obligations in dependencies, a security review to confirm no credentials or internal hostnames are embedded, a decision about which licence to publish under, and a question about who maintains it afterwards - because publishing something and abandoning it can embarrass the company.
 
 The approval takes six weeks and is granted. The library gets modest use, and two years later the engineer is contacted about a job because of it.
 
@@ -83,7 +83,7 @@ The instructive part is the process rather than the outcome. Publishing work cod
 
 Not all contributions carry equal weight, and the most common mistake is optimising for volume.
 
-**Highest value:** sustained contributions to a project other people use — bug fixes, documentation improvements, review participation, a feature discussed and merged. This demonstrates collaboration, which is what employers actually worry about.
+**Highest value:** sustained contributions to a project other people use - bug fixes, documentation improvements, review participation, a feature discussed and merged. This demonstrates collaboration, which is what employers actually worry about.
 
 **High value:** your own project that solves a real problem, with a clear README, tests and an honest statement of limitations. One such project beats ten abandoned repositories.
 
@@ -131,7 +131,7 @@ They look first at whether anything is recent, then open the project whose name 
 
 Then they look at the commit history. Not for volume, but for shape: do commits do one thing, do the messages explain why, is there evidence of iteration and correction. Finally, if the project has issues or pull requests, they read your responses to other people, because that shows how you behave when someone disagrees with you.
 
-Three practical conclusions follow. Put your best work where it will be found — pin it, or name it clearly. Make sure at least one project is recent. And never leave a half-finished experiment as your most prominent repository, because it will be read as representative.
+Three practical conclusions follow. Put your best work where it will be found - pin it, or name it clearly. Make sure at least one project is recent. And never leave a half-finished experiment as your most prominent repository, because it will be read as representative.
 
 ## Licences: The Part Engineers Skip
 
@@ -143,13 +143,13 @@ The workplace relevance is immediate. Incorporating a copyleft-licensed componen
 
 For your own projects, choosing a licence deliberately matters too: publishing without one leaves others legally unable to use your work, which defeats the purpose of publishing it.
 
-Being the person on a team who understands this is a small, cheap differentiator — and with supply chain expectations tightening, it is increasingly asked about in interviews.
+Being the person on a team who understands this is a small, cheap differentiator - and with supply chain expectations tightening, it is increasingly asked about in interviews.
 
 ## Key Takeaways
 
 - Public code is among the strongest evidence in Dutch technical hiring, above certificates and often above the CV summary.
 - Code written as part of your job generally belongs to your employer; side projects depend on how the contract's IP clause is drafted.
-- Employer policies range from active programmes to outright restriction — ask during hiring rather than assuming.
+- Employer policies range from active programmes to outright restriction - ask during hiring rather than assuming.
 - Sustained contributions to a project people use beat volume, and documentation is the most predictive signal reviewers look at.
 - Supply chain legislation is making open source dependency knowledge a marketable professional skill.
 
@@ -165,7 +165,7 @@ Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](h
 Work done as part of your job generally belongs to the employer; side projects depend on your contract's IP and ancillary activity clauses, so read them.
 
 ### (Scenario: candidate with a sparse profile) Do I need a large GitHub presence to be hired?
-No — most Dutch employers do not require it, and three substantive contributions are worth more than many trivial ones.
+No - most Dutch employers do not require it, and three substantive contributions are worth more than many trivial ones.
 
 ### (Scenario: engineer wanting to publish work code) Is that usually allowed?
 Often yes, after legal and security review and a decision on licensing and maintenance; ask early rather than publishing first.
@@ -182,10 +182,10 @@ Better documentation on projects you already have, which is the first thing revi
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Does my Dutch employer own code I write in my own time?", "acceptedAnswer": {"@type": "Answer", "text": "Work done as part of your job generally belongs to the employer; side projects depend on the contract's IP clause."}},
-    {"@type": "Question", "name": "Do I need a large GitHub presence to get hired in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No — a few substantive contributions carry more weight than many trivial repositories."}},
+    {"@type": "Question", "name": "Do I need a large GitHub presence to get hired in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No - a few substantive contributions carry more weight than many trivial repositories."}},
     {"@type": "Question", "name": "Can I publish code I wrote at work as open source?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes after legal and security review plus decisions on licence and maintenance; ask before publishing."}},
     {"@type": "Question", "name": "Why do some employers restrict open source contributions?", "acceptedAnswer": {"@type": "Answer", "text": "Confidentiality, security and regulatory obligations, especially in finance, healthcare and defence."}},
-    {"@type": "Question", "name": "What improves a public code profile fastest?", "acceptedAnswer": {"@type": "Answer", "text": "Better documentation on existing projects — it is the first thing reviewers read."}}
+    {"@type": "Question", "name": "What improves a public code profile fastest?", "acceptedAnswer": {"@type": "Answer", "text": "Better documentation on existing projects - it is the first thing reviewers read."}}
   ]
 }
 </script>

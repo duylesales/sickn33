@@ -1,4 +1,4 @@
-💸 Priya bouwde een platform voor het doorzoeken van juridische documenten met **Bolt** — priya, a startup founder, used **bolt** to build an AI search tool for law firms, maar zag haar Pinecone-rekening in vier maanden tijd 10x stijgen doordat verweesde vectoren en overbodige her-embedding zich stilletjes opstapelden. 🧠
+💸 Priya bouwde een platform voor het doorzoeken van juridische documenten met **Bolt** - priya, a startup founder, used **bolt** to build an AI search tool for law firms, maar zag haar Pinecone-rekening in vier maanden tijd 10x stijgen doordat verweesde vectoren en overbodige her-embedding zich stilletjes opstapelden. 🧠
 
 Als uw vectordatabase-index nog nooit is geauditeerd, is de kans groot dat u betaalt voor miljoenen dode vectoren en dubbele embeddings die uw gebruikers nooit te zien krijgen.
 
@@ -12,7 +12,7 @@ Als uw vectordatabase-index nog nooit is geauditeerd, is de kans groot dat u bet
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Priya's platform kreeg de kosten weer onder controle: haar Pinecone-rekening daalde van $4.200 naar $1.890 per maand — een verlaging van 55% — zonder meetbaar verlies aan zoekkwaliteit. (€2.200 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
+Priya's platform kreeg de kosten weer onder controle: haar Pinecone-rekening daalde van $4.200 naar $1.890 per maand - een verlaging van 55% - zonder meetbaar verlies aan zoekkwaliteit. (€2.200 (Launch & Grow Pakket) - 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vector-db-bill-reduction-case-study
 

@@ -55,7 +55,7 @@ Het testen van de daadwerkelijke AI-gegenereerde uitvoerkwaliteit met oprecht Ne
 
 [LaunchStudio](https://launchstudio.eu/nl/) test AI-gegenereerde producten specifiek op echte meertalige functionaliteit, en niet alleen op interfacevertaling, gegeven de focus op de Nederlandse en bredere EU-markt die centraal staat in Manifera's eigen klantenbestand in haar hoofdkantoor in Amsterdam en haar Europese opdrachten.
 
-[Laat uw product testen in de taal die uw echte gebruikers daadwerkelijk zullen gebruiken](https://launchstudio.eu/nl/#calculator) — interfacevertaling en echte functionele gelijkwaardigheid zijn verschillende, beide noodzakelijke claims.
+[Laat uw product testen in de taal die uw echte gebruikers daadwerkelijk zullen gebruiken](https://launchstudio.eu/nl/#calculator) - interfacevertaling en echte functionele gelijkwaardigheid zijn verschillende, beide noodzakelijke claims.
 
 ## Een praktische controlelijst voor de lancering in een tweede taal
 
@@ -94,9 +94,9 @@ Zodra RecensieHulp werd gelanceerd voor echte Nederlands sprekende horecaklanten
 **Resultaat:** LaunchStudio stemde de onderliggende prompt-benadering van RecensieHulp opnieuw af specifiek tegen een echte set Nederlandse horecabeoordelingen. Hiermee werd de kwaliteitskloof gedicht tussen de volledig gelokaliseerde interface van het product en zijn voorheen in het Engels geteste onderliggende AI-logica. De daadwerkelijke uitvoerkwaliteit werd zo in lijn gebracht met wat de interface stilzwijgend had beloofd.
 
 > *"Ik had elke knop en elk etiket in het Nederlands vertaald en het gevoel dat het lokalisatiewerk gedaan was. Het was nooit bij me opgekomen dat de daadwerkelijke door AI gegenereerde tekst eronder alleen ooit was getest en afgesteld tegen Engelse voorbeelden, hoewel elke echte klant vanaf dag één echte Nederlandse beoordelingen indiende."*
-> — **Daan Willemsen, Oprichter, RecensieHulp (Rotterdam)**
+> - **Daan Willemsen, Oprichter, RecensieHulp (Rotterdam)**
 
-**Kosten en tijdlijn:** € 1.450 (meertalige prompt-afstelling en verificatie) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.450 (meertalige prompt-afstelling en verificatie) - voltooid in 6 werkdagen.
 
 ---
 
@@ -132,7 +132,7 @@ Het testen van de daadwerkelijke door AI gegenereerde uitvoer met echte Nederlan
       "name": "Geef interfacevertaling alleen een valse indruk van lokalisatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, vaak — een vertaalde interface signaleert lokalisatie terwijl de AI-uitvoerkwaliteit eronder ongemerkt ongetest blijft."
+        "text": "Ja, vaak - een vertaalde interface signaleert lokalisatie terwijl de AI-uitvoerkwaliteit eronder ongemerkt ongetest blijft."
       }
     },
     {
@@ -156,7 +156,7 @@ Het testen van de daadwerkelijke door AI gegenereerde uitvoer met echte Nederlan
       "name": "Vereist het herstellen van een taalkloof een volledige herbouw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typisch niet — het herstellen omvat meestal het herafstellen van de prompt-benadering voor de doeltaal."
+        "text": "Typisch niet - het herstellen omvat meestal het herafstellen van de prompt-benadering voor de doeltaal."
       }
     },
     {

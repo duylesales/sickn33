@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-A vacancy asks for a PhD or equivalent experience, five years of production machine learning, deep learning at scale, cloud infrastructure, MLOps, strong statistics, business stakeholder management, and preferably Dutch. You have most of it, not all. The question is whether applying is a reasonable use of an evening or an exercise in optimism. The honest answer is that it depends on which parts you are missing — and that the list in front of you is usually not what it appears to be.
+A vacancy asks for a PhD or equivalent experience, five years of production machine learning, deep learning at scale, cloud infrastructure, MLOps, strong statistics, business stakeholder management, and preferably Dutch. You have most of it, not all. The question is whether applying is a reasonable use of an evening or an exercise in optimism. The honest answer is that it depends on which parts you are missing - and that the list in front of you is usually not what it appears to be.
 
 ## Why AI Vacancies Are Written This Way
 
@@ -67,7 +67,7 @@ If you meet the hard gates and the core skills, missing context skills and decor
 | Meets hard gates, missing one core skill but have a close equivalent | Apply and address it explicitly |
 | Meets hard gates, missing two or more core skills | Apply only if the role is junior or the company is clearly building |
 | Fails a hard gate | Do not apply; find a comparable role without that gate |
-| Cannot tell which skills are core | Ask — a short message to the contact person is legitimate |
+| Cannot tell which skills are core | Ask - a short message to the contact person is legitimate |
 
 ## Why the "60%" Framing Misleads
 
@@ -89,7 +89,7 @@ If you apply while missing something, say so in a way that shows judgement rathe
 
 ## What Employers Do When Nobody Meets the List
 
-It helps to know what happens on the other side when a vacancy attracts no perfect candidate — which, for AI roles, is most of the time.
+It helps to know what happens on the other side when a vacancy attracts no perfect candidate - which, for AI roles, is most of the time.
 
 Hiring managers usually respond in one of four ways. They lower the requirement that turns out to be least essential, often the specific technology stack. They split the role, hiring a stronger engineer and pairing them with an existing analyst, or the reverse. They hire someone with a strong foundation and budget for training, especially where the domain knowledge is the harder part to find. Or they leave the vacancy open for months and quietly accept that the work is not getting done.
 
@@ -113,7 +113,7 @@ Some vacancies tell you, if you read carefully.
 
 ## Signals That the Bar Is Genuinely High
 
-Equally, some vacancies mean what they say. A role that is clearly the organisation's technical lead, a research position tied to a specific methodology, or a regulated setting requiring documented experience with high-risk AI systems under the EU AI Act may have little flexibility. So may a vacancy that has been open a long time with very specific wording — that combination often means the employer is waiting for exactly one profile.
+Equally, some vacancies mean what they say. A role that is clearly the organisation's technical lead, a research position tied to a specific methodology, or a regulated setting requiring documented experience with high-risk AI systems under the EU AI Act may have little flexibility. So may a vacancy that has been open a long time with very specific wording - that combination often means the employer is waiting for exactly one profile.
 
 ## Requirements That Are Really About Something Else
 
@@ -133,7 +133,7 @@ Reading proxies correctly does not mean ignoring requirements. It means matching
 
 ## What You Risk and What You Do Not
 
-Applying costs an evening. A rejection costs nothing beyond that, and Dutch recruitment practice — including the NVP Recruitment Code followed by many employers — expects candidates to be informed of the outcome and to receive reasons on request.
+Applying costs an evening. A rejection costs nothing beyond that, and Dutch recruitment practice - including the NVP Recruitment Code followed by many employers - expects candidates to be informed of the outcome and to receive reasons on request.
 
 What you should not do is apply indiscriminately to compensate for uncertainty. Twenty rushed applications produce fewer interviews than five considered ones, and they consume the time that the considered ones require. Selectivity is not about modesty; it is about where your evenings go.
 
@@ -143,9 +143,9 @@ Alongside the requirements list sits another unreliable signal: the seniority la
 
 At a young company with a small data team, "senior" may mean three years of experience and a willingness to work independently. At a bank or a research institute, the same word may require a decade, formal model governance experience and a track record of leading others. Meanwhile, some organisations avoid the labels altogether and describe a role only by tasks.
 
-The practical method is the same as for skills: read the described work, not the label. Ask yourself whether you have done the things the role's day-to-day involves — owning a project end to end, deciding on approach, being accountable when something breaks in production, mentoring someone. If yes, a "senior" label is not a barrier even with fewer years than stated. If no, a "senior" title with an easy-looking list may still be a stretch.
+The practical method is the same as for skills: read the described work, not the label. Ask yourself whether you have done the things the role's day-to-day involves - owning a project end to end, deciding on approach, being accountable when something breaks in production, mentoring someone. If yes, a "senior" label is not a barrier even with fewer years than stated. If no, a "senior" title with an easy-looking list may still be a stretch.
 
-Years of experience requirements deserve the same scepticism. They are usually a rough proxy for independence, not a hard gate. A candidate with four years of directly relevant production experience is often a better fit for a "five years required" role than someone with eight years in an adjacent field — and most hiring managers know this.
+Years of experience requirements deserve the same scepticism. They are usually a rough proxy for independence, not a hard gate. A candidate with four years of directly relevant production experience is often a better fit for a "five years required" role than someone with eight years in an adjacent field - and most hiring managers know this.
 
 ## Real example
 
@@ -153,9 +153,9 @@ Years of experience requirements deserve the same scepticism. They are usually a
 
 A backend engineer in Enschede with six years of experience finds an ML engineering vacancy at a regional manufacturer. The list includes production machine learning experience he does not have, deep learning frameworks he has only used in courses, cloud infrastructure he knows well and software engineering practices he knows very well.
 
-He sorts the list. Hard gates: none he fails. Core skills for this role, judging by the description of daily work — deploying and maintaining models, data pipelines, working with production systems — are mostly things he does. The deep learning experience appears in the "nice to have" section.
+He sorts the list. Hard gates: none he fails. Core skills for this role, judging by the description of daily work - deploying and maintaining models, data pipelines, working with production systems - are mostly things he does. The deep learning experience appears in the "nice to have" section.
 
-He applies, writing two sentences about the gap: the models he has deployed were built by others, and he has been closing that gap through a specific project he links to. He gets an interview, where the hiring manager explains that the team already has a data scientist and needs someone who can make models run reliably — which is exactly his profile. He is hired. The list had described an ideal; the job needed something narrower.
+He applies, writing two sentences about the gap: the models he has deployed were built by others, and he has been closing that gap through a specific project he links to. He gets an interview, where the hiring manager explains that the team already has a data scientist and needs someone who can make models run reliably - which is exactly his profile. He is hired. The list had described an ideal; the job needed something narrower.
 
 ## Key Takeaways
 
@@ -180,7 +180,7 @@ Yes, if you meet the hard gates and the two or three core skills the daily work 
 Read the description of daily work rather than the bullet list, look for a separate must-have section, and ask the contact person if it is unclear.
 
 ### (Scenario: candidate worried about honesty) Should I mention skills I am missing in my application?
-Yes, briefly — name the closest equivalent and show evidence of learning quickly. Do not claim experience you cannot demonstrate in an interview.
+Yes, briefly - name the closest equivalent and show evidence of learning quickly. Do not claim experience you cannot demonstrate in an interview.
 
 ### (Scenario: candidate seeing very long vacancies) Why do AI vacancies list so many requirements?
 They are often assembled from multiple sources, inflated by fast-moving technology and inconsistent job titles, and sometimes describe a whole team's skills.
@@ -195,7 +195,7 @@ A few considered applications generally produce more interviews than many rushed
   "mainEntity": [
     {"@type": "Question", "name": "Should I apply if I meet only part of the requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you meet the hard gates and the core skills the daily work depends on."}},
     {"@type": "Question", "name": "How do I know which requirements are genuinely required?", "acceptedAnswer": {"@type": "Answer", "text": "Read the daily work description, look for must-have sections and ask the contact person."}},
-    {"@type": "Question", "name": "Should I mention skills I am missing in my application?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, briefly, with the closest equivalent and evidence — never overstate."}},
+    {"@type": "Question", "name": "Should I mention skills I am missing in my application?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, briefly, with the closest equivalent and evidence - never overstate."}},
     {"@type": "Question", "name": "Why do AI vacancies list so many requirements?", "acceptedAnswer": {"@type": "Answer", "text": "They are assembled from multiple sources and often describe a whole team's skills."}},
     {"@type": "Question", "name": "Is it better to apply to many roles or a few?", "acceptedAnswer": {"@type": "Answer", "text": "A few tailored applications generally produce more interviews than many rushed ones."}}
   ]

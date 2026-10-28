@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two job seekers start the same week. One sends twenty-five applications, mostly through quick-apply flows, adjusting nothing. The other sends six, each with a CV adapted to the specific problem in the posting and a short letter that names why this employer. A month later, the first has three responses and no interviews; the second has four responses and two interviews. Both worked hard. Only one worked in a way that matches how AI hiring actually functions. The question "how many applications per week" has no universal answer, but it has a method — and the method starts by noticing that applications are not the thing you are trying to maximise.
+Two job seekers start the same week. One sends twenty-five applications, mostly through quick-apply flows, adjusting nothing. The other sends six, each with a CV adapted to the specific problem in the posting and a short letter that names why this employer. A month later, the first has three responses and no interviews; the second has four responses and two interviews. Both worked hard. Only one worked in a way that matches how AI hiring actually functions. The question "how many applications per week" has no universal answer, but it has a method - and the method starts by noticing that applications are not the thing you are trying to maximise.
 
 ## Why More Applications Stops Working Quickly
 
@@ -47,7 +47,7 @@ There is also a hidden cost. Applications create obligations: follow-ups, interv
 
 ## What You Are Actually Trying to Maximise
 
-Not applications. Not even responses. The measure that matters is **relevant interviews per week of effort** — conversations with employers whose roles you would genuinely accept.
+Not applications. Not even responses. The measure that matters is **relevant interviews per week of effort** - conversations with employers whose roles you would genuinely accept.
 
 That reframing changes decisions immediately. Applying to a role you would decline adds an application and zero expected interviews. Spending forty minutes tailoring an application for a role you want raises the chance of an interview substantially. A search session that finds two suitable local roles is more productive than one that finds forty distant ones.
 
@@ -99,7 +99,7 @@ The argument for volume usually rests on tailoring being expensive. It does not 
 
 **Keep a master CV** containing every project, result and technology, then delete rather than write for each application.
 
-**Build three or four CV variants** for the role types you target — engineering-leaning, analysis-leaning, research-leaning — and adjust only the top third per application.
+**Build three or four CV variants** for the role types you target - engineering-leaning, analysis-leaning, research-leaning - and adjust only the top third per application.
 
 **Write modular letter paragraphs:** one about your strongest relevant experience, one about the domain, one about why this employer. Reassemble rather than rewrite.
 
@@ -118,7 +118,7 @@ A simple record turns a frustrating search into a diagnosable process. For each 
 
 Ten applications is enough to see the first ratio. Twenty-five is usually enough to see the second. That is the real argument for a steady pace: it produces interpretable data.
 
-Saved jobs on a board plus a simple spreadsheet is enough infrastructure. It also prevents the two most common accidents — applying twice to the same employer through different routes, and losing track of a deadline.
+Saved jobs on a board plus a simple spreadsheet is enough infrastructure. It also prevents the two most common accidents - applying twice to the same employer through different routes, and losing track of a deadline.
 
 ## Where the Time Goes Wrong
 
@@ -138,7 +138,7 @@ There is also a regulatory dimension on the other side of the table: under the E
 
 ## Protecting Your Energy
 
-A search that runs for months is an endurance problem. Set process goals rather than outcome goals — "three tailored applications and one search session this week" rather than "get an interview" — because the first is under your control and the second is not.
+A search that runs for months is an endurance problem. Set process goals rather than outcome goals - "three tailored applications and one search session this week" rather than "get an interview" - because the first is under your control and the second is not.
 
 Keep one day a week free of job searching entirely. Batch applications into two evenings rather than spreading them across seven. And review the funnel monthly rather than agonising over individual rejections, which are noisy and mostly uninformative on their own.
 
@@ -146,7 +146,7 @@ Keep one day a week free of job searching entirely. Batch applications into two 
 
 The right number is not constant through a search. It should fall as processes progress, and most people forget to let it.
 
-In the first weeks, applications are your only activity, and two to four per week fills the time comfortably. Once three or four processes are live, the picture changes: each one brings preparation, a technical assessment, scheduling and follow-up. A single take-home assignment can consume an entire weekend. Continuing to send new applications at the same rate produces half-prepared interviews for roles you already have — which is the expensive mistake, because an interview reached is worth far more than an application sent.
+In the first weeks, applications are your only activity, and two to four per week fills the time comfortably. Once three or four processes are live, the picture changes: each one brings preparation, a technical assessment, scheduling and follow-up. A single take-home assignment can consume an entire weekend. Continuing to send new applications at the same rate produces half-prepared interviews for roles you already have - which is the expensive mistake, because an interview reached is worth far more than an application sent.
 
 A reasonable rule: reduce new applications by one for every active process beyond the second. With four live processes, pause new applications entirely for a week and protect the preparation time.
 
@@ -170,11 +170,11 @@ The market had not changed. The ratio between effort and relevance had.
 - Two to four tailored applications per week is a sustainable pace for most specialised searches.
 - Increase volume when you are junior, broad, relocating or under deadline; increase selectivity when senior, niche or already employed.
 - Make tailoring cheap with a master CV, role-specific variants and modular letter paragraphs, time-boxed to about forty minutes.
-- Track the funnel — applications, responses, interviews, offers — and diagnose the stage that is failing instead of increasing volume blindly.
+- Track the funnel - applications, responses, interviews, offers - and diagnose the stage that is failing instead of increasing volume blindly.
 
 ## Where to Start
 
-Decide your weekly number before you next open a job board, and make it small enough that every application can be tailored — then spend the time you save on research and interview preparation.
+Decide your weekly number before you next open a job board, and make it small enough that every application can be tailored - then spend the time you save on research and interview preparation.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -184,13 +184,13 @@ Browse current AI, machine learning and data jobs by category and distance, free
 For specialised AI, ML and data roles, two to four genuinely tailored applications per week is a sustainable and effective pace for most candidates.
 
 ### (Scenario: junior candidate) Should I apply to more roles if I am just starting out?
-Often yes — junior roles are noisier and tailoring is faster when your relevant experience is compact, so a somewhat higher volume is reasonable.
+Often yes - junior roles are noisier and tailoring is faster when your relevant experience is compact, so a somewhat higher volume is reasonable.
 
 ### (Scenario: candidate with no responses) I applied to thirty roles and heard almost nothing. What should I change?
 Look at the first ratio in your funnel: very low response rates usually indicate poor targeting or a CV that does not show fit in the top third, not insufficient volume.
 
 ### (Scenario: candidate considering auto-apply tools) Are automated application tools worth using?
-For specialised roles, generally not — they send generic applications into processes where tailoring is the differentiator, and they can harm your standing with employers.
+For specialised roles, generally not - they send generic applications into processes where tailoring is the differentiator, and they can harm your standing with employers.
 
 ### (Scenario: candidate searching for months) How do I keep going during a long search?
 Set process goals you control, batch applications into fixed evenings, keep one day free of searching and review your funnel monthly rather than reacting to individual rejections.
@@ -201,7 +201,7 @@ Set process goals you control, batch applications into fixed evenings, keep one 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How many applications per week should I send?", "acceptedAnswer": {"@type": "Answer", "text": "Two to four genuinely tailored applications per week suits most specialised searches."}},
-    {"@type": "Question", "name": "Should I apply to more roles if I am just starting out?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — junior outcomes are noisier and tailoring is faster."}},
+    {"@type": "Question", "name": "Should I apply to more roles if I am just starting out?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - junior outcomes are noisier and tailoring is faster."}},
     {"@type": "Question", "name": "I applied to thirty roles and heard almost nothing. What should I change?", "acceptedAnswer": {"@type": "Answer", "text": "Check targeting and whether your CV shows fit in the top third, rather than increasing volume."}},
     {"@type": "Question", "name": "Are automated application tools worth using?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not for specialised roles, where tailoring is the differentiator."}},
     {"@type": "Question", "name": "How do I keep going during a long search?", "acceptedAnswer": {"@type": "Answer", "text": "Use process goals, batch applications, keep a free day and review the funnel monthly."}}

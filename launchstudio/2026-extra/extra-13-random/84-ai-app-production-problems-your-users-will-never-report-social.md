@@ -12,7 +12,7 @@ Error tracking and a simple funnel revealed why within a week. About 40% of mobi
 ✅ Email moved to an authenticated sending domain
 ✅ A one-question survey on abandoned checkouts, plus privacy-scrubbed error tracking and funnel monitoring
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we look where users don't complain — they just leave. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we look where users don't complain - they just leave. ⚙️
 
 His result: €1,700, six business days. Mobile checkout completion rose by about half the next month, and orders across the three bakeries grew ~35% without extra advertising. Tom now checks the funnel every Monday instead of his inbox. 🚀
 

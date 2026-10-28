@@ -89,7 +89,7 @@ An engineer receives an offer that, with the expat facility applied, appears to 
 
 Once the full picture is assembled, the difference narrows. Rent for a family-sized apartment within reasonable commuting distance consumes a large share of the gain. Health insurance premiums for two adults are a new monthly cost. Childcare, even subsidised, is significant. The facility applies for a limited period, after which net income drops noticeably unless salary has grown to compensate.
 
-The move may still be worth making — for the work, the quality of life, the cycling infrastructure, or the fact that the Dutch labour market treats employees well — but it should be evaluated on the post-facility steady state, not on the first-year figure. A useful rule of thumb is to ask yourself whether the job would still be attractive if the facility did not exist at all, because eventually it will not.
+The move may still be worth making - for the work, the quality of life, the cycling infrastructure, or the fact that the Dutch labour market treats employees well - but it should be evaluated on the post-facility steady state, not on the first-year figure. A useful rule of thumb is to ask yourself whether the job would still be attractive if the facility did not exist at all, because eventually it will not.
 
 ## A Common Misconception Among International Candidates
 
@@ -101,7 +101,7 @@ A second misconception is that the facility can be arranged later if it is forgo
 
 - Are you a recognised sponsor with the immigration service, and have you hired internationally before?
 - Will you apply for the expat facility, and who prepares the application?
-- What relocation support is provided — housing search, registration, administration, partner support?
+- What relocation support is provided - housing search, registration, administration, partner support?
 - Is there a repayment clause if I leave within a defined period?
 - What is the salary progression path, given that the facility will end?
 
@@ -135,11 +135,11 @@ Every international professional in the Netherlands eventually has this argument
 
 The case for not learning: you can work in English in much of the technology sector, everyone speaks English well, courses take time, and progress is slow because Dutch people switch to English the moment they detect an accent.
 
-The case for learning is stronger than it first appears. It roughly doubles the number of employers available to you, particularly in healthcare, government and regional companies where interesting problems sit. It changes your position in meetings, because informal discussion — the part where decisions actually form — often happens in Dutch. It affects how permanent your life here feels, which in turn affects whether you stay. And it matters for a partner's employment prospects, which is frequently the real determinant of whether a family settles.
+The case for learning is stronger than it first appears. It roughly doubles the number of employers available to you, particularly in healthcare, government and regional companies where interesting problems sit. It changes your position in meetings, because informal discussion - the part where decisions actually form - often happens in Dutch. It affects how permanent your life here feels, which in turn affects whether you stay. And it matters for a partner's employment prospects, which is frequently the real determinant of whether a family settles.
 
 A pragmatic target is conversational competence within two years, with a realistic acceptance that professional fluency takes longer. Many employers fund courses; asking for this during negotiation is normal and rarely refused.
 
-The decision is ultimately about time horizon. For a two-year assignment, English is sufficient. For a life, it is not — and most people who move here for two years are still here after five.
+The decision is ultimately about time horizon. For a two-year assignment, English is sufficient. For a life, it is not - and most people who move here for two years are still here after five.
 
 ## Regional Netherlands Is the Underused Answer to the Housing Problem
 
@@ -154,7 +154,7 @@ The practical suggestion is straightforward. Run your job search on the work rat
 ## Key Takeaways
 
 - The expat tax facility has been repeatedly reduced in percentage, duration and scope; verify current rules for your start year.
-- For non-EU candidates, sponsorship and salary thresholds matter more than tax — confirm the employer is a recognised sponsor.
+- For non-EU candidates, sponsorship and salary thresholds matter more than tax - confirm the employer is a recognised sponsor.
 - Housing is the largest practical obstacle to moving to the Netherlands today, especially in the Randstad.
 - Health insurance, childcare and international schooling are real costs that offers rarely mention.
 - Evaluate the role on the steady state after the facility ends, not on the first-year net figure.
@@ -174,10 +174,10 @@ The facility has been reformed several times in percentage, duration and scope, 
 Only recognised sponsors can hire under the highly skilled migrant scheme, so ask about sponsorship status before investing in a process.
 
 ### (Scenario: candidate comparing net pay) What is the biggest hidden cost of moving here?
-Housing — supply is tight and rents are high, particularly in and around the Randstad.
+Housing - supply is tight and rents are high, particularly in and around the Randstad.
 
 ### (Scenario: candidate already living in Europe) Do I automatically qualify for the facility?
-No — conditions include recruitment from abroad and having lived beyond a defined distance from the Dutch border for a qualifying period.
+No - conditions include recruitment from abroad and having lived beyond a defined distance from the Dutch border for a qualifying period.
 
 ### (Scenario: candidate planning long-term) What happens when the facility ends?
 Net income falls unless salary has grown, which is why offers should be judged on the post-facility situation.
@@ -189,8 +189,8 @@ Net income falls unless salary has grown, which is why offers should be judged o
   "mainEntity": [
     {"@type": "Question", "name": "Is the Dutch 30% ruling still 30%?", "acceptedAnswer": {"@type": "Answer", "text": "The facility has been reformed several times in percentage, duration and scope; check the rules for your start year."}},
     {"@type": "Question", "name": "Can any Dutch employer hire a non-EU candidate?", "acceptedAnswer": {"@type": "Answer", "text": "Only recognised sponsors can hire under the highly skilled migrant scheme, so confirm sponsorship status early."}},
-    {"@type": "Question", "name": "What is the biggest hidden cost of moving to the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Housing — supply is tight and rents are high, especially in and around the Randstad."}},
-    {"@type": "Question", "name": "Do all foreign employees qualify for the expat facility?", "acceptedAnswer": {"@type": "Answer", "text": "No — conditions include recruitment from abroad and prior residence beyond a defined distance from the Dutch border."}},
+    {"@type": "Question", "name": "What is the biggest hidden cost of moving to the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Housing - supply is tight and rents are high, especially in and around the Randstad."}},
+    {"@type": "Question", "name": "Do all foreign employees qualify for the expat facility?", "acceptedAnswer": {"@type": "Answer", "text": "No - conditions include recruitment from abroad and prior residence beyond a defined distance from the Dutch border."}},
     {"@type": "Question", "name": "What happens when the expat facility ends?", "acceptedAnswer": {"@type": "Answer", "text": "Net income falls unless salary has grown, so offers should be judged on the post-facility steady state."}}
   ]
 }

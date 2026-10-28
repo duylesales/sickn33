@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Vraag een willekeurige AI-programmeertool om geautomatiseerde tests aan je project toe te voegen, en hij genereert zonder blikken of blozen veertig unittests voor je. Ze slagen allemaal direct. In vrijwel alle gevallen testen ze echter puur of een functie precies retourneert waarvoor hij geschreven is — een tautologie vermomd als kwaliteitsborging. En dat is exact de reden waarom oprichters die op deze manier tests toevoegen zich na afloop geen spat veiliger voelen.
+Vraag een willekeurige AI-programmeertool om geautomatiseerde tests aan je project toe te voegen, en hij genereert zonder blikken of blozen veertig unittests voor je. Ze slagen allemaal direct. In vrijwel alle gevallen testen ze echter puur of een functie precies retourneert waarvoor hij geschreven is - een tautologie vermomd als kwaliteitsborging. En dat is exact de reden waarom oprichters die op deze manier tests toevoegen zich na afloop geen spat veiliger voelen.
 
 Waardevol testen voor een klein softwareproduct draait niet om een theoretisch dekkingspercentage (code coverage). Het draait om een korte, messcherpe lijst van bedrijfskritieke stromen die onder geen beding mogen falen, getest op een manier die weerspiegelt hoe ze in werkelijkheid stukgaan. Voor een met AI gebouwde applicatie zonder enige bestaande testsuite telt die lijst exact vijf punten en kost de implementatie slechts één werkdag.
 
@@ -28,7 +28,7 @@ Waardevol testen voor een klein softwareproduct draait niet om een theoretisch d
 
 Een geautomatiseerde test heeft alleen betekenis als hij kan falen om een reden die er commercieel écht toe doet. Door AI gegenereerde tests worden bijna altijd geschreven vanuit de bestaande code-implementatie in plaats van vanuit de zakelijke requirements. Daardoor bevestigen ze simpelweg dat de code doet wat de code toevallig doet. Verander je het gedrag per ongeluk verkeerd, dan past het model de test vrolijk aan zodat hij weer slaagt.
 
-Bovendien concentreren dit soort tests zich hoofdzakelijk op 'pure functies' — het formatteren van een datumstring of het optellen van een winkelmandje — omdat die gemakkelijk in isolatie te testen zijn. Maar dat is vrijwel nooit waar een applicatie in productie omvalt. Een product breekt op de naden: bij de databaseverbinding, bij de betaalprovider, bij de gebruikerssessie en bij gelijktijdige verzoeken (concurrency).
+Bovendien concentreren dit soort tests zich hoofdzakelijk op 'pure functies' - het formatteren van een datumstring of het optellen van een winkelmandje - omdat die gemakkelijk in isolatie te testen zijn. Maar dat is vrijwel nooit waar een applicatie in productie omvalt. Een product breekt op de naden: bij de databaseverbinding, bij de betaalprovider, bij de gebruikerssessie en bij gelijktijdige verzoeken (concurrency).
 
 De allereerste stap is daarom om code coverage volledig te negeren en te starten met een heel andere vraag: welke fout zou dit bedrijf direct de das omdoen als het geruisloos stopt met werken?
 
@@ -36,17 +36,17 @@ De allereerste stap is daarom om code coverage volledig te negeren en te starten
 
 Voor nagenoeg elk klein SaaS-product zijn dat de volgende vijf:
 
-**Registratie en inloggen.** Als nieuwe gebruikers geen account kunnen aanmaken of bestaande klanten niet kunnen inloggen, doet de rest van de app er niet meer toe. Dit omvat uitdrukkelijk ook de wachtwoordherstel-stroom — het onderdeel dat het vaakst breekt en het langst onopgemerkt blijft.
+**Registratie en inloggen.** Als nieuwe gebruikers geen account kunnen aanmaken of bestaande klanten niet kunnen inloggen, doet de rest van de app er niet meer toe. Dit omvat uitdrukkelijk ook de wachtwoordherstel-stroom - het onderdeel dat het vaakst breekt en het langst onopgemerkt blijft.
 
 **De kernactie van het product.** De ene handeling waarvoor jouw software op aarde is: een reservering plaatsen, een vacature publiceren, een maandrapport genereren of een factuur versturen. Eén test die deze hele stroom van A tot Z doorloopt.
 
-**Betalingen en autorisatie.** Vanaf het klikken op de afrekenknop tot het daadwerkelijk toekennen van de gekochte rechten in de database — wat, zoals iedereen weet die met webhooks heeft gewerkt, heel iets anders is dan een succesvol getoond bedankscherm.
+**Betalingen en autorisatie.** Vanaf het klikken op de afrekenknop tot het daadwerkelijk toekennen van de gekochte rechten in de database - wat, zoals iedereen weet die met webhooks heeft gewerkt, heel iets anders is dan een succesvol getoond bedankscherm.
 
 **Data-isolatie (multi-tenancy).** Een test die inlogt als Gebruiker A en verifieert dat de records van Gebruiker B categorisch onbereikbaar zijn. Dit is de test met de allerhoogste bedrijfswaarde in een B2B-product, en vrijwel niemand schrijft hem.
 
-**Permissies en rollen.** Een normale medewerker die via een directe API-aanroep een beheerdersactie probeert uit te voeren en keurig wordt geweigerd — op databaseniveau, niet slechts doordat de knop in de interface is verborgen.
+**Permissies en rollen.** Een normale medewerker die via een directe API-aanroep een beheerdersactie probeert uit te voeren en keurig wordt geweigerd - op databaseniveau, niet slechts doordat de knop in de interface is verborgen.
 
-Vijf tests. Ze vangen niet elk minuscuul schoonheidsfoutje op. Maar ze vangen wél elke bug op waardoor je klanten en omzet verliest — en dat is waar het om gaat.
+Vijf tests. Ze vangen niet elk minuscuul schoonheidsfoutje op. Maar ze vangen wél elke bug op waardoor je klanten en omzet verliest - en dat is waar het om gaat.
 
 ## Test op het juiste abstractieniveau
 
@@ -66,7 +66,7 @@ De meeste testfouten in met AI gebouwde applicaties ontstaan doordat er wordt ge
 
 Je testdatabase moet minimaal twee verschillende organisaties bevatten, meerdere gebruikers met verschillende rollen, data die aan elk van hen toebehoort, een gebruiker zonder enige data, en minimaal één voorbeeld van elk lastig randgeval dat je in productie gegarandeerd tegenkomt: een extreem lange achternaam, een apostrof in een e-mailadres, emoji's, nulwaarden, negatieve bedragen, een datum uit 1970 en een gearchiveerd record dat nog ergens aan gekoppeld is.
 
-Schrijf een zogeheten *seed-script* dat deze testtoestand met één commando vanaf nul opbouwt. Dat kost een uur werk en transformeert testen van een tijdrovende klus in een geautomatiseerde handeling. Zonder zo'n script begint elke testronde met een kwartier handmatig klikken om testaccounts aan te maken — en dat is de reden waarom oprichters er na verloop van tijd mee stoppen.
+Schrijf een zogeheten *seed-script* dat deze testtoestand met één commando vanaf nul opbouwt. Dat kost een uur werk en transformeert testen van een tijdrovende klus in een geautomatiseerde handeling. Zonder zo'n script begint elke testronde met een kwartier handmatig klikken om testaccounts aan te maken - en dat is de reden waarom oprichters er na verloop van tijd mee stoppen.
 
 ## Wat je automatiseert en wat je handmatig houdt
 
@@ -78,7 +78,7 @@ Die checklist verdient een vaste plek in je routine. Tien punten die je vóór e
 
 ## Tests draaien waar het er echt toe doet
 
-Tests die alleen lokaal op je eigen laptop draaien, worden precies overgeslagen op het moment dat je haast hebt — en dat is exact het moment dat je dingen kapotmaakt. Twee maatregelen lossen dit moeiteloos op:
+Tests die alleen lokaal op je eigen laptop draaien, worden precies overgeslagen op het moment dat je haast hebt - en dat is exact het moment dat je dingen kapotmaakt. Twee maatregelen lossen dit moeiteloos op:
 
 **Draai tests automatisch bij elke git push** via een CI/CD-pipeline (zoals GitHub Actions). Het resultaat is een rood kruisje bij elke wijziging die een kritiek pad breekt, nog vóórdat de code klanten bereikt.
 
@@ -92,9 +92,9 @@ Het kost misschien vijftien regels code. Het beschermt je tegen de meest voorkom
 
 ## Wanneer je dit beter kunt uitbesteden
 
-Een complete testinfrastructuur opzetten tegen een echte database, met automatische seeding en een geautomatiseerde pipeline, is een paar dagen werk voor een senior engineer die dit vaker heeft gedaan — en twee frustrerende weken voor iemand die het wiel zelf moet uitvinden. Het is bovendien een fundament dat zichzelf continu blijft terugbetalen.
+Een complete testinfrastructuur opzetten tegen een echte database, met automatische seeding en een geautomatiseerde pipeline, is een paar dagen werk voor een senior engineer die dit vaker heeft gedaan - en twee frustrerende weken voor iemand die het wiel zelf moet uitvinden. Het is bovendien een fundament dat zichzelf continu blijft terugbetalen.
 
-LaunchStudio richt dit complete fundament in als onderdeel van het productierijp maken van met AI gebouwde software: realistische testdata, integratietests over de vijf kritieke paden, browser-tests voor registratie en betalen, een staging-omgeving die productie spiegelt en een CI/CD-pipeline die bij elke push automatisch draait — hand in hand met de databasepolicies en monitoring die door deze tests worden beschermd.
+LaunchStudio richt dit complete fundament in als onderdeel van het productierijp maken van met AI gebouwde software: realistische testdata, integratietests over de vijf kritieke paden, browser-tests voor registratie en betalen, een staging-omgeving die productie spiegelt en een CI/CD-pipeline die bij elke push automatisch draait - hand in hand met de databasepolicies en monitoring die door deze tests worden beschermd.
 
 De frontend die je in Lovable, Bolt of Cursor hebt gebouwd blijft onaangetast, en de tests worden schoon gedocumenteerd opgeleverd zodat jij of je AI-tool ze eenvoudig kunnen uitbreiden. Dit is een vast onderdeel van het [Launch Ready pakket](https://launchstudio.eu/nl/#packages), uitgevoerd door de engineers van Manifera met elf jaar ervaring in bedrijfskritische softwaresystemen voor partijen zoals Vodafone, TNO en CFLW.
 
@@ -108,9 +108,9 @@ Solo-oprichters testen hun eigen product meestal zelf, en dat is de minst betrou
 
 **Kijk mee over iemands schouder zonder iets te zeggen.** Ga achter een vriend of collega zitten, geef diegene één duidelijke taak ("maak een account aan en plan een afspraak"), en houd je tien minuten lang muisstil. Dit voelt ongemakkelijk, maar levert de meest waardevolle tien minuten aan productinzicht op die je kunt krijgen.
 
-**Test op een apparaat dat niet van jou is.** Leen een telefoon. Jouw eigen smartphone heeft immers al actieve sessies, gecachte bestanden en automatisch ingevulde wachtwoorden — factoren die bugs verbergen die een nieuwe bezoeker direct ervaart.
+**Test op een apparaat dat niet van jou is.** Leen een telefoon. Jouw eigen smartphone heeft immers al actieve sessies, gecachte bestanden en automatisch ingevulde wachtwoorden - factoren die bugs verbergen die een nieuwe bezoeker direct ervaart.
 
-Schrijf je bevindingen eerst allemaal op in plaats van direct tussendoor te gaan fixen. Een complete lijst toont patronen — drie problemen in de registratiestroom, twee bij betalingen — en patronen wijzen op structurele oorzaken, terwijl ad-hoc reparaties slechts symptomen bestrijden.
+Schrijf je bevindingen eerst allemaal op in plaats van direct tussendoor te gaan fixen. Een complete lijst toont patronen - drie problemen in de registratiestroom, twee bij betalingen - en patronen wijzen op structurele oorzaken, terwijl ad-hoc reparaties slechts symptomen bestrijden.
 
 ## Wat je uitdrukkelijk níét moet testen
 
@@ -126,32 +126,32 @@ Terughoudendheid is minstens zo belangrijk als dekking. Een testsuite die je na 
 
 **Automatiseer geen visuele opmaak.** Visuele regressietests zijn fragiel. Een menselijke blik op twee verschillende schermformaten vóór een release is voor een klein product oneindig veel sneller en betrouwbaarder.
 
-De stelregel: behoud alleen tests waarvan je zou schrikken als ze rood uitslaan. Als een falende test je slechts de schouders doet ophalen, verwijder hem dan direct — hij kost onderhoudstijd en levert geen enkele zekerheid op.
+De stelregel: behoud alleen tests waarvan je zou schrikken als ze rood uitslaan. Als een falende test je slechts de schouders doet ophalen, verwijder hem dan direct - hij kost onderhoudstijd en levert geen enkele zekerheid op.
 
 ## Echt voorbeeld
 
 ### Een boekingsplatform dat zijn eigen betaalstroom twee keer liet crashen
 
-Jelle Vroomen bouwde Sportlokaal in Lovable: een softwareplatform waarmee gemeentelijke sporthallen en gymzalen in Zaanstad en Purmerend online worden gereserveerd. Het platform had 48 aangesloten sportaccommodaties en had al twee keer een release gedeployed die de betaalstroom geruisloos platlegde — één keer zes uur lang, en één keer een heel weekend, beide keren ontdekt door zaalbeheerders in plaats van door Jelle zelf.
+Jelle Vroomen bouwde Sportlokaal in Lovable: een softwareplatform waarmee gemeentelijke sporthallen en gymzalen in Zaanstad en Purmerend online worden gereserveerd. Het platform had 48 aangesloten sportaccommodaties en had al twee keer een release gedeployed die de betaalstroom geruisloos platlegde - één keer zes uur lang, en één keer een heel weekend, beide keren ontdekt door zaalbeheerders in plaats van door Jelle zelf.
 
 Er waren nul geautomatiseerde tests. Elke nieuwe release werd gecontroleerd door even handmatig door de interface te klikken, en beide incidenten deden zich voor op avonden dat die handmatige check wegens tijdgebrek was afgeraffeld.
 
 Vier werkdagen waren nodig om een compacte, effectieve testsuite in te richten: een seed-script dat twee accommodaties, vier gebruikers over drie rollen en realistische testrecords aanmaakt; vijf integratietests voor registratie, zaalboeking, betaalverwerking en rechten, zaal-isolatie en autorisatieweigeringsregels; twee geautomatiseerde browser-tests voor registratie en checkout; een staging-omgeving met gesimuleerde testbetalingen; en de complete suite draaiend in een GitHub Actions-pipeline met notificaties bij fouten.
 
-De data-isolatietest faalde direct bij de allereerste run: het bleek dat een zaalbeheerder de boekingen en omzetcijfers van een andere sporthal kon inzien — een kritiek datalek dat al sinds de allereerste lancering openstond en dat niemand ooit met handmatig doorklikken had ontdekt.
+De data-isolatietest faalde direct bij de allereerste run: het bleek dat een zaalbeheerder de boekingen en omzetcijfers van een andere sporthal kon inzien - een kritiek datalek dat al sinds de allereerste lancering openstond en dat niemand ooit met handmatig doorklikken had ontdekt.
 
 **Resultaat:** elf maanden en circa negentig releases later heeft zich geen enkele betalingsstoring meer voorgedaan. De testsuite heeft sindsdien vier keer een ernstige regressie in staging tegengehouden vóórdat een zaalbeheerder of sporter er last van had.
 
-> *"Twee storingen kostten me meer vertrouwen dan de tests me geld hebben gekost. Maar waar ik pas écht van schrok, was het beveiligingslek dat de tests op dag één vonden — een bug die al acht maanden live stond."*
-> — **Jelle Vroomen, Oprichter, Sportlokaal (Zaanstad)**
+> *"Twee storingen kostten me meer vertrouwen dan de tests me geld hebben gekost. Maar waar ik pas écht van schrok, was het beveiligingslek dat de tests op dag één vonden - een bug die al acht maanden live stond."*
+> - **Jelle Vroomen, Oprichter, Sportlokaal (Zaanstad)**
 
-**Kosten & Doorlooptijd:** € 2.450 (seed data, integratie- en browsertests, staging-omgeving, deployment-pipeline) — afgerond binnen 4 werkdagen.
+**Kosten & Doorlooptijd:** € 2.450 (seed data, integratie- en browsertests, staging-omgeving, deployment-pipeline) - afgerond binnen 4 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Kan ik mijn AI-tool niet gewoon vragen om tests voor me te schrijven?
 
-Dat kan, maar dan krijg je meestal tests die geschreven zijn vanuit de bestaande code en zich concentreren op eenvoudige, pure hulpfuncties. Vraag in plaats daarvan expliciet naar specifieke risicoscenario's — zoals: *"authenticeer als Gebruiker A en verifieer dat het record van Gebruiker B onbereikbaar is"*. Dat levert tests op die daadwerkelijk kunnen falen om een reden die ertoe doet.
+Dat kan, maar dan krijg je meestal tests die geschreven zijn vanuit de bestaande code en zich concentreren op eenvoudige, pure hulpfuncties. Vraag in plaats daarvan expliciet naar specifieke risicoscenario's - zoals: *"authenticeer als Gebruiker A en verifieer dat het record van Gebruiker B onbereikbaar is"*. Dat levert tests op die daadwerkelijk kunnen falen om een reden die ertoe doet.
 
 ### Hoeveel geautomatiseerde tests heeft een klein softwareproduct écht nodig?
 

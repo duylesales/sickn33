@@ -21,7 +21,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Most articles about AI generated code in production focus on security holes. Those matter, and we write about them often. But when LaunchStudio engineers look through the logs of AI-built apps that are already live, the most frequent problems are not break-ins. They are reliability failures — code that behaves perfectly in a demo and degrades in quiet, specific ways once real traffic, real networks and real clocks get involved.
+Most articles about AI generated code in production focus on security holes. Those matter, and we write about them often. But when LaunchStudio engineers look through the logs of AI-built apps that are already live, the most frequent problems are not break-ins. They are reliability failures - code that behaves perfectly in a demo and degrades in quiet, specific ways once real traffic, real networks and real clocks get involved.
 
 Here are the five patterns that appear again and again, what each looks like when you finally look at the logs, and what the fix usually involves.
 
@@ -37,19 +37,19 @@ Here are the five patterns that appear again and again, what each looks like whe
 
 ## Pattern 2: The Optimistic Timeout
 
-**What it looks like in the code:** outbound calls to email providers, payment APIs, AI models or geocoding services with no timeout, or with the library default — which is sometimes infinite.
+**What it looks like in the code:** outbound calls to email providers, payment APIs, AI models or geocoding services with no timeout, or with the library default - which is sometimes infinite.
 
 **What it looks like in production:** when a third-party service slows down, your app slows down with it. Serverless functions hang until the platform kills them, users see spinners that never end, and because each hung request holds a database connection, the slowdown spreads to pages that have nothing to do with the slow service.
 
 **What it looks like in the logs:** a cluster of function timeouts at the platform limit (10, 15 or 30 seconds), all at once, followed by connection-pool errors.
 
-**The fix:** explicit timeouts on every outbound call, shorter than the platform limit, with a defined behaviour when they fire — queue the work for later, show a clear message, or fall back to a cached value.
+**The fix:** explicit timeouts on every outbound call, shorter than the platform limit, with a defined behaviour when they fire - queue the work for later, show a clear message, or fall back to a cached value.
 
 ## Pattern 3: The Unbounded Query
 
 **What it looks like in the code:** `select * from orders where user_id = ...` with no limit, or a dashboard that loads every record and filters in the browser. With ten test records, this is instant.
 
-**What it looks like in production:** fine for weeks, then gradually slower, then suddenly broken. The first customer with 4,000 orders opens their dashboard and the page takes forty seconds — or the function runs out of memory.
+**What it looks like in production:** fine for weeks, then gradually slower, then suddenly broken. The first customer with 4,000 orders opens their dashboard and the page takes forty seconds - or the function runs out of memory.
 
 **What it looks like in the logs:** response times creeping up week by week for the same endpoint, then out-of-memory errors concentrated on a handful of heavy users.
 
@@ -69,7 +69,7 @@ Here are the five patterns that appear again and again, what each looks like whe
 
 **What it looks like in the code:** a retry loop around a failing call, with no backoff and no maximum. Sometimes written by the AI to "make it more robust" when you asked it to fix an intermittent error.
 
-**What it looks like in production:** when the downstream service has a brief outage, every request retries immediately and repeatedly. Your app sends hundreds of calls per second to a service that is already struggling, often hitting rate limits that lock you out for longer than the original outage — and, for paid APIs, generating a bill.
+**What it looks like in production:** when the downstream service has a brief outage, every request retries immediately and repeatedly. Your app sends hundreds of calls per second to a service that is already struggling, often hitting rate limits that lock you out for longer than the original outage - and, for paid APIs, generating a bill.
 
 **What it looks like in the logs:** a sudden spike of identical outbound requests, followed by 429 "too many requests" responses.
 
@@ -106,7 +106,7 @@ The deeper fix behind all five patterns is to decide, for each external dependen
 | AI model API | Stream partial result | Show cached or manual option | Enforce per-user quota |
 | Maps / geocoding | Use last known value | Hide map, keep address text | Cache results aggressively |
 
-Once written down, each row becomes a small, testable piece of code. Without it, the behaviour is whatever the AI tool happened to generate — usually "hang, then fail silently."
+Once written down, each row becomes a small, testable piece of code. Without it, the behaviour is whatever the AI tool happened to generate - usually "hang, then fail silently."
 
 ## Testing Failure Before Your Users Do
 
@@ -120,21 +120,21 @@ Reliability work only counts if it is exercised. Three techniques work well for 
 
 ## Logs You Can Actually Use
 
-The Burak example below shows how much could be reconstructed once logs existed. Useful production logs share a few traits: every request carries an ID that appears in every related log line and error report; errors include the operation, the dependency and the duration, but never full request bodies with personal data; and logs are retained long enough to investigate — at least 14 to 30 days — in a searchable tool rather than in a serverless console that expires after a day. Setting this up once turns future incidents from guesswork into a five-minute search.
+The Burak example below shows how much could be reconstructed once logs existed. Useful production logs share a few traits: every request carries an ID that appears in every related log line and error report; errors include the operation, the dependency and the duration, but never full request bodies with personal data; and logs are retained long enough to investigate - at least 14 to 30 days - in a searchable tool rather than in a serverless console that expires after a day. Setting this up once turns future incidents from guesswork into a five-minute search.
 
 ## Prioritising Reliability Fixes
 
-Not all five patterns deserve equal urgency. A practical order is: silent catches on anything involving money or user data first, because they hide the rest; timeouts on external calls second, because they cause cascading slowdowns; retry limits third, because retry storms can generate bills and lockouts; unbounded queries fourth, in order of the pages heavy users visit; and clock handling last unless your product is scheduling-based, in which case it moves to the top. Revisit the order after two weeks of error tracking — real data usually confirms it, occasionally overturns it.
+Not all five patterns deserve equal urgency. A practical order is: silent catches on anything involving money or user data first, because they hide the rest; timeouts on external calls second, because they cause cascading slowdowns; retry limits third, because retry storms can generate bills and lockouts; unbounded queries fourth, in order of the pages heavy users visit; and clock handling last unless your product is scheduling-based, in which case it moves to the top. Revisit the order after two weeks of error tracking - real data usually confirms it, occasionally overturns it.
 
 ## Reliability Is a Habit, Not a Project
 
-The patterns in this article come back whenever new code is generated. Keep them out with small habits: a lint rule that flags empty catch blocks, a shared HTTP helper with a default timeout that every new integration must use, a pagination helper for list queries, a date utility that always takes a time zone, and a retry helper with backoff built in. When your AI tool is instructed to use these helpers — through project rules or a README section it reads — new code inherits good behaviour by default rather than by luck. Review the error tracker weekly for new error types; a new type is often the first sign that a generated change skipped one of the helpers.
+The patterns in this article come back whenever new code is generated. Keep them out with small habits: a lint rule that flags empty catch blocks, a shared HTTP helper with a default timeout that every new integration must use, a pagination helper for list queries, a date utility that always takes a time zone, and a retry helper with backoff built in. When your AI tool is instructed to use these helpers - through project rules or a README section it reads - new code inherits good behaviour by default rather than by luck. Review the error tracker weekly for new error types; a new type is often the first sign that a generated change skipped one of the helpers.
 
 ## What a Reliability Pass Covers
 
 When LaunchStudio does a reliability review of AI generated code in production, it is a targeted pass rather than a rewrite: search every `catch` block, every outbound call and every query without a limit; check how dates are created and stored; review retry logic; then connect error tracking and uptime monitoring so the next failure is visible within minutes. For most small SaaS products this is days of work, not weeks.
 
-LaunchStudio is powered by Manifera — our engineers have shipped 160+ projects for enterprise clients, and now they are here to launch yours. The same reliability checklist Manifera applies to enterprise systems out of its Ho Chi Minh City development centre is what we apply, scaled to founder budgets. You can [plan a free 15-minute intro call](https://launchstudio.eu/en/#contact), or read more about [the technologies Manifera works with](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio is powered by Manifera - our engineers have shipped 160+ projects for enterprise clients, and now they are here to launch yours. The same reliability checklist Manifera applies to enterprise systems out of its Ho Chi Minh City development centre is what we apply, scaled to founder budgets. You can [plan a free 15-minute intro call](https://launchstudio.eu/en/#contact), or read more about [the technologies Manifera works with](https://www.manifera.com/about-us/manifera-technologies/).
 
 ## Real example
 
@@ -149,9 +149,9 @@ LaunchStudio's engineers replaced the silent catches with reported errors and a 
 **Result:** In the following quarter, FleetNote recorded every scheduled service on time, failed photo uploads dropped to near zero because drivers could retry them, and the vehicle-data API bill fell by about 40% once the retry storm was gone.
 
 > *"Nothing ever crashed, which is why I trusted it. It turns out the app was failing politely and telling nobody."*
-> — **Burak Aydın, Founder, FleetNote (Zaandam)**
+> - **Burak Aydın, Founder, FleetNote (Zaandam)**
 
-**Cost & Timeline:** €2,200 (reliability review, error handling, timeouts, scheduling fixes and monitoring) — completed in 8 business days.
+**Cost & Timeline:** €2,200 (reliability review, error handling, timeouts, scheduling fixes and monitoring) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -169,7 +169,7 @@ The silent catch, because it hides every other problem. Once errors are reported
 
 ### Does Manifera use the same reliability checks on enterprise projects?
 
-Yes. The checklist is the same; the scale differs. Enterprise systems at Manifera get load testing and formal incident processes, while founder apps get the targeted version — the checks that catch the most damaging failures for the least effort.
+Yes. The checklist is the same; the scale differs. Enterprise systems at Manifera get load testing and formal incident processes, while founder apps get the targeted version - the checks that catch the most damaging failures for the least effort.
 
 ### Do reliability problems affect how AI search engines treat my site?
 

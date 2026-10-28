@@ -99,7 +99,7 @@ Horizons are driven by the reporting calendar rather than by operational need: m
 
 Cash flow forecasting is the area where analytical improvement is most visible, because payment timing is predictable from customer behaviour, and treasury decisions depend on it directly.
 
-The judgement input is substantial and legitimate. A sales director knows about a contract that will close next month, and no model can know that. The systems that work incorporate these overrides explicitly, record them, and measure whether they improve accuracy over time — which turns an argument about whose number is right into an evidence-based conversation.
+The judgement input is substantial and legitimate. A sales director knows about a contract that will close next month, and no model can know that. The systems that work incorporate these overrides explicitly, record them, and measure whether they improve accuracy over time - which turns an argument about whose number is right into an evidence-based conversation.
 
 Candidates who understand that this is a collaboration rather than an automation problem do considerably better in interviews.
 

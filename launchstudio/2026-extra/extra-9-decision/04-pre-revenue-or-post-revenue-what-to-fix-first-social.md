@@ -1,10 +1,10 @@
 🚨 €19 a month, from two beta nurseries. That single payment flipped Bram's entire priority list before he'd thought about what it meant. 😳
 
-Revenue isn't an amount, it's a switch — three things change the moment the first euro lands: 🧠
+Revenue isn't an amount, it's a switch - three things change the moment the first euro lands: 🧠
 
 ❌ Kwekerij read subscription status from the last webhook, not stored plan state
 ❌ Backups had three-day retention and nobody had ever restored one
-❌ The `nursery_id` column existed on orders but not on photos — guessable for months
+❌ The `nursery_id` column existed on orders but not on photos - guessable for months
 ❌ Monitoring and staging, what Bram had actually budgeted for, weren't urgent at all
 
 ✅ Reversibility, obligations and public failure all flip the instant money changes hands

@@ -1,4 +1,4 @@
-🔥 Jun Wei built a prototype using **Cursor** — jun wei, a former teacher based in singapore, identified a gap in how local tutoring centers matched students with specialized tutors, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Jun Wei built a prototype using **Cursor** - jun wei, a former teacher based in singapore, identified a gap in how local tutoring centers matched students with specialized tutors, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jun Wei's application achieved production readiness: The beta concluded successfully without any further data leaks or performance issues. Jun Wei's platform is now actively used by 12 tutoring centers across Singapore, handling over 5,000 student records securely. Cursor helped me build the vision, but I didn't know what I didn't know about database security. LaunchStudio bulletproofed the backend just in time. (€1,900 (Launch Ready package) — completed in 6 business days.). 🚀
+Jun Wei's application achieved production readiness: The beta concluded successfully without any further data leaks or performance issues. Jun Wei's platform is now actively used by 12 tutoring centers across Singapore, handling over 5,000 student records securely. Cursor helped me build the vision, but I didn't know what I didn't know about database security. LaunchStudio bulletproofed the backend just in time. (€1,900 (Launch Ready package) - completed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-database-setup-supabase-founders
 

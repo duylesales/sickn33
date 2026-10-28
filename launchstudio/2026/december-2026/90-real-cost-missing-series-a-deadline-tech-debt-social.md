@@ -1,4 +1,4 @@
-📉 One question from an investor's technical partner — "how is customer data isolated?" — stalled Oskar's nearly-closed Series A round. 🧠
+📉 One question from an investor's technical partner - "how is customer data isolated?" - stalled Oskar's nearly-closed Series A round. 🧠
 
 Technical due diligence surfaces exactly the gaps that never mattered at small scale. A strong product and real revenue don't automatically make a codebase diligence-ready.
 
@@ -12,7 +12,7 @@ Technical due diligence surfaces exactly the gaps that never mattered at small s
 
 At **LaunchStudio**, we've been closing exactly this class of diligence-relevant gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Oskar returned to his investor with a verified answer and documentation in days, and the round closed roughly three weeks later than planned — a contained delay instead of a lost deal: €5,400 (Relaunch & Scale Package), 8 business days. 🚀
+Oskar returned to his investor with a verified answer and documentation in days, and the round closed roughly three weeks later than planned - a contained delay instead of a lost deal: €5,400 (Relaunch & Scale Package), 8 business days. 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-missing-series-a-deadline-tech-debt
 

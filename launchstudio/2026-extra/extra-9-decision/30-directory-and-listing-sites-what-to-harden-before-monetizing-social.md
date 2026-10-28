@@ -3,7 +3,7 @@
 "Claim your listing" sounds simple. It's a verification problem wearing a simple UI: 🧠
 
 ❌ A claim button asks "is this your business?" with a checkbox, trusting the click
-❌ Submission forms validate fields are filled in, stop there — no bot check
+❌ Submission forms validate fields are filled in, stop there - no bot check
 ❌ 500 listings on one template read as duplicate content to search engines, not 500 results
 ❌ Featured placement stays live after a subscription lapses since nothing checks payment
 

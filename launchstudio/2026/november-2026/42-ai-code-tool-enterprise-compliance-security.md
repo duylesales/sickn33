@@ -100,9 +100,9 @@ Third, they ran aggressive Software Composition Analysis (SCA) scans across the 
 **Result:** Marco presented the new, LaunchStudio-certified AI governance architecture to the bank's auditors. He provided the legal DPAs guaranteeing Zero Data Retention and IP Indemnification. The auditors were satisfied with the newly secured perimeter, and the €40 Million acquisition successfully closed two months later. 
 
 > *"I thought I was being a modern, developer-friendly CTO by letting my team use whatever AI tools they wanted. I didn't realize I was legally poisoning my own codebase. LaunchStudio didn't just install software; they built the compliance framework that saved my acquisition. They understand that at the enterprise level, code is a legal asset."*
-> — **Marco Rossi, CTO, PayStream (Milan)**
+> - **Marco Rossi, CTO, PayStream (Milan)**
 
-**Cost & Timeline:** €18,500 (Enterprise Compliance & Due Diligence Rescue Package) — fully audited and deployed in 3 weeks.
+**Cost & Timeline:** €18,500 (Enterprise Compliance & Due Diligence Rescue Package) - fully audited and deployed in 3 weeks.
 
 ---
 

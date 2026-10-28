@@ -21,13 +21,13 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Hebt u iets gelezen over AI-code naar productie brengen, dan hebt u één woord steeds weer naast betalingen zien staan: webhook. "Bevestig betalingen via geverifieerde webhooks." "De webhookhandler is niet idempotent." Voor niet-technische oprichters klinkt dat als jargon. Het is eigenlijk een van de eenvoudigste en belangrijkste ideeën bij het runnen van een app die geld ontvangt — en een misverstand erover zit achter veel van de betaalproblemen in AI-gebouwde apps.
+Hebt u iets gelezen over AI-code naar productie brengen, dan hebt u één woord steeds weer naast betalingen zien staan: webhook. "Bevestig betalingen via geverifieerde webhooks." "De webhookhandler is niet idempotent." Voor niet-technische oprichters klinkt dat als jargon. Het is eigenlijk een van de eenvoudigste en belangrijkste ideeën bij het runnen van een app die geld ontvangt - en een misverstand erover zit achter veel van de betaalproblemen in AI-gebouwde apps.
 
 ## Een Webhook Is een Terugbelafspraak
 
 Stel dat u telefonisch iets bestelt en te horen krijgt: "We bellen u terug als het klaar is." U blijft niet bellen om ernaar te vragen; zij bellen u.
 
-Een webhook is precies dat voor software. Uw app geeft een dienst — Mollie, Stripe, een vervoerder — een adres en zegt: "Als er iets gebeurt, stuur dan hier een bericht naartoe." Als de betaling slaagt, mislukt, wordt terugbetaald of betwist, stuurt de betaalaanbieder een bericht naar dat adres op uw server.
+Een webhook is precies dat voor software. Uw app geeft een dienst - Mollie, Stripe, een vervoerder - een adres en zegt: "Als er iets gebeurt, stuur dan hier een bericht naartoe." Als de betaling slaagt, mislukt, wordt terugbetaald of betwist, stuurt de betaalaanbieder een bericht naar dat adres op uw server.
 
 ## Waarom Betalingen een Terugbelafspraak Nodig Hebben Voordat AI-Code naar Productie Gaat
 
@@ -37,7 +37,7 @@ Dit gebeurt er als een klant met iDEAL of een kaart betaalt:
 2. De klant betaalt in zijn bankapp of op de betaalpagina.
 3. De klant wordt teruggestuurd naar uw bedankpagina.
 
-De verleidelijke kortere weg — en die AI-tools vaak genereren — is stap 3 als bewijs van betaling te behandelen: "ze hebben de bedankpagina bereikt, dus ze hebben betaald." Maar stap 3 is onbetrouwbaar:
+De verleidelijke kortere weg - en die AI-tools vaak genereren - is stap 3 als bewijs van betaling te behandelen: "ze hebben de bedankpagina bereikt, dus ze hebben betaald." Maar stap 3 is onbetrouwbaar:
 
 - Klanten sluiten de bankapp en komen nooit terug.
 - Verbindingen vallen weg op mobiel.
@@ -55,7 +55,7 @@ De terugbelafspraak van de betaalaanbieder (de webhook) vindt plaats ongeacht wa
 
 ## Hoe een Correcte Webhookinrichting Eruitziet
 
-**Verifieer de afzender.** Iedereen zou een nep-bericht "betaling geslaagd" naar uw webhookadres kunnen sturen. Een correcte inrichting controleert of het bericht echt van de aanbieder komt — Stripe ondertekent zijn webhooks; bij Mollie zoekt de app na een melding de betaalstatus rechtstreeks op via de API.
+**Verifieer de afzender.** Iedereen zou een nep-bericht "betaling geslaagd" naar uw webhookadres kunnen sturen. Een correcte inrichting controleert of het bericht echt van de aanbieder komt - Stripe ondertekent zijn webhooks; bij Mollie zoekt de app na een melding de betaalstatus rechtstreeks op via de API.
 
 **Ga om met herhalingen.** Aanbieders kunnen dezelfde melding meer dan eens sturen. Uw app moet herhalingen herkennen en bijvoorbeeld niet twee bevestigingsmails versturen of twee keer lestegoed toevoegen. Engineers noemen dat idempotentie.
 
@@ -69,7 +69,7 @@ De terugbelafspraak van de betaalaanbieder (de webhook) vindt plaats ongeacht wa
 
 ## De Bedankpagina Doet er Nog Steeds Toe
 
-De bedankpagina blijft nuttig — om de klant een vriendelijk bericht te tonen. Ze hoort alleen niet te bepalen of hij heeft betaald. Een goed patroon: de pagina toont "we bevestigen uw betaling" en werkt zich bij zodra de webhook is verwerkt.
+De bedankpagina blijft nuttig - om de klant een vriendelijk bericht te tonen. Ze hoort alleen niet te bepalen of hij heeft betaald. Een goed patroon: de pagina toont "we bevestigen uw betaling" en werkt zich bij zodra de webhook is verwerkt.
 
 ## Webhooks Buiten Betalingen
 
@@ -102,7 +102,7 @@ export async function POST(req: Request) {
 }
 ```
 
-De aanpak van Stripe verschilt — het ondertekent elk event, en de handler verifieert de handtekening met het webhookgeheim vóór de verwerking — maar de principes zijn identiek: verifiëren, idempotent handelen, snel reageren.
+De aanpak van Stripe verschilt - het ondertekent elk event, en de handler verifieert de handtekening met het webhookgeheim vóór de verwerking - maar de principes zijn identiek: verifiëren, idempotent handelen, snel reageren.
 
 ## Betaalstatussen die U Moet Afhandelen
 
@@ -124,7 +124,7 @@ Betaalaanbieders bieden testmodi en tools om testevents te sturen. Test vóór d
 
 ## De Gezondheid van Webhooks Monitoren
 
-Webhooks kunnen stilletjes falen: uw endpoint geeft fouten, loopt in een time-out of is na een domeinwijziging verkeerd geconfigureerd. Volg de bezorging in het dashboard van de aanbieder, log elke ontvangen webhook met de uitkomst, stel meldingen in als het aantal mislukkingen een drempel overschrijdt, en stem dagelijks af — vergelijk betalingen die bij de aanbieder als betaald staan met bestellingen die in uw database als betaald staan. Elk verschil wijst op een webhookprobleem voordat klanten het merken.
+Webhooks kunnen stilletjes falen: uw endpoint geeft fouten, loopt in een time-out of is na een domeinwijziging verkeerd geconfigureerd. Volg de bezorging in het dashboard van de aanbieder, log elke ontvangen webhook met de uitkomst, stel meldingen in als het aantal mislukkingen een drempel overschrijdt, en stem dagelijks af - vergelijk betalingen die bij de aanbieder als betaald staan met bestellingen die in uw database als betaald staan. Elk verschil wijst op een webhookprobleem voordat klanten het merken.
 
 ## Hetzelfde Patroon voor Andere Diensten
 
@@ -132,11 +132,11 @@ Dezelfde discipline geldt voor andere diensten: aanbieders van elektronische han
 
 ## Scheiding van Omgevingen voor Webhooks
 
-Elke omgeving heeft een eigen webhookconfiguratie nodig: development en staging wijzen naar hun eigen endpoints met sleutels in testmodus; productie wijst naar het productie-endpoint met live sleutels. Ze mengen veroorzaakt enkele van de meest verwarrende bugs — stagingbestellingen die door productie-events als betaald worden gemarkeerd, of productiewebhooks die verloren gaan aan een staging-URL. Leg in uw documentatie vast welke webhook-URL bij welke omgeving hoort.
+Elke omgeving heeft een eigen webhookconfiguratie nodig: development en staging wijzen naar hun eigen endpoints met sleutels in testmodus; productie wijst naar het productie-endpoint met live sleutels. Ze mengen veroorzaakt enkele van de meest verwarrende bugs - stagingbestellingen die door productie-events als betaald worden gemarkeerd, of productiewebhooks die verloren gaan aan een staging-URL. Leg in uw documentatie vast welke webhook-URL bij welke omgeving hoort.
 
 ## Als het Misgaat: Afstemming
 
-Faalden webhooks een tijd — bijvoorbeeld nadat een deployment het endpoint brak — gebruik dan de API van de aanbieder om de betalingen in die periode op te vragen en ze af te stemmen met uw bestellingen. Markeer ontbrekende bevestigingen, verstuur vertraagde e-mails en geef capaciteit zo nodig vrij of wijs die opnieuw toe. Houd een afstemmingsscript klaar; dat maakt van een stressvol incident een routinecorrectie.
+Faalden webhooks een tijd - bijvoorbeeld nadat een deployment het endpoint brak - gebruik dan de API van de aanbieder om de betalingen in die periode op te vragen en ze af te stemmen met uw bestellingen. Markeer ontbrekende bevestigingen, verstuur vertraagde e-mails en geef capaciteit zo nodig vrij of wijs die opnieuw toe. Houd een afstemmingsscript klaar; dat maakt van een stressvol incident een routinecorrectie.
 
 ## Abonnementen Voegen Meer Events Toe
 
@@ -152,7 +152,7 @@ Voor niet-technische teamleden die klantvragen beantwoorden, helpt een eenvoudig
 
 ## Een Checklist voor Gereedheid van Webhooks
 
-Vóór de lancering: webhook-URL's per omgeving geconfigureerd; verificatie van elk event (handtekening of opzoeken via de API); idempotente verwerking op basis van de betaal- of event-ID; alle betaal- en abonnementsstatussen gekoppeld aan acties; zwaar werk verplaatst naar achtergrondtaken; logging en meldingen bij mislukkingen; dagelijkse afstemming tussen aanbieder en database; tests voor gesloten tabbladen, duplicaten, vertragingen, terugbetalingen en mislukkingen; en een afstemmingsscript klaar voor incidenten. Met deze zaken op hun plek weet uw app precies één keer van elke betaling — en hoeven klanten nooit te bewijzen dat ze hebben betaald.
+Vóór de lancering: webhook-URL's per omgeving geconfigureerd; verificatie van elk event (handtekening of opzoeken via de API); idempotente verwerking op basis van de betaal- of event-ID; alle betaal- en abonnementsstatussen gekoppeld aan acties; zwaar werk verplaatst naar achtergrondtaken; logging en meldingen bij mislukkingen; dagelijkse afstemming tussen aanbieder en database; tests voor gesloten tabbladen, duplicaten, vertragingen, terugbetalingen en mislukkingen; en een afstemmingsscript klaar voor incidenten. Met deze zaken op hun plek weet uw app precies één keer van elke betaling - en hoeven klanten nooit te bewijzen dat ze hebben betaald.
 
 ## Eerste Stap
 
@@ -160,7 +160,7 @@ Zoek de code die een bestelling als betaald markeert. Draait die als de klant uw
 
 ## Waarom Dit Ertoe Doet voor Klanten
 
-Klanten zien nooit webhooks, maar ze merken het direct als ze ontbreken: een boeking die na het betalen niet verschijnt, een dubbele afschrijving, toegang die na het opzeggen doorloopt of ondanks een geslaagde verlenging verdwijnt. Elk daarvan leidt tot een supportgesprek, een terugbetaling of een verloren klant. Een correct geïmplementeerde webhookflow maakt betalingen saai in de beste zin van het woord — ze werken gewoon, elke keer, of de klant nu terugkeert naar uw site of halverwege zijn bankapp sluit. Voor oprichters is die betrouwbaarheid wat marketing en groei mogelijk maakt zonder de voortdurende zorg op de achtergrond of het geld wel klopt met de bestellingen.
+Klanten zien nooit webhooks, maar ze merken het direct als ze ontbreken: een boeking die na het betalen niet verschijnt, een dubbele afschrijving, toegang die na het opzeggen doorloopt of ondanks een geslaagde verlenging verdwijnt. Elk daarvan leidt tot een supportgesprek, een terugbetaling of een verloren klant. Een correct geïmplementeerde webhookflow maakt betalingen saai in de beste zin van het woord - ze werken gewoon, elke keer, of de klant nu terugkeert naar uw site of halverwege zijn bankapp sluit. Voor oprichters is die betrouwbaarheid wat marketing en groei mogelijk maakt zonder de voortdurende zorg op de achtergrond of het geld wel klopt met de bestellingen.
 
 ## Onthoud
 
@@ -176,24 +176,24 @@ Betaalbevestiging via geverifieerde webhooks is onderdeel van bijna elk project 
 
 ### Een AI-Native Oprichter in Actie: Een Bedrijf in Kookworkshops dat Zijn Betalingen Niet Kon Vinden
 
-Rick Jonker, kok die kookworkshops geeft in Hattem, bouwde Pannenklaar in Lovable: gasten boeken een plek in een workshop, betalen via Mollie en ontvangen een bevestiging met het menu en de ingrediëntenlijst. De workshops verkochten goed — soms te goed.
+Rick Jonker, kok die kookworkshops geeft in Hattem, bouwde Pannenklaar in Lovable: gasten boeken een plek in een workshop, betalen via Mollie en ontvangen een bevestiging met het menu en de ingrediëntenlijst. De workshops verkochten goed - soms te goed.
 
-Elke week bracht een paar raadsels. Gasten kwamen aan met een bankafschrift waarop de betaling stond, maar zonder boeking in het systeem. Andere boekingen stonden als betaald gemarkeerd zonder bijbehorende betaling in Mollie — sommige van gasten die het tabblad hadden gesloten en via de bedanklink in hun geschiedenis waren teruggekomen. Terugbetalingen in het Mollie-dashboard gaven de plek nooit vrij, waardoor workshops als vol werden getoond terwijl ze dat niet waren. Rick had geen idee wat een webhook was; de app bevestigde boekingen zodra gasten de bedankpagina bereikten.
+Elke week bracht een paar raadsels. Gasten kwamen aan met een bankafschrift waarop de betaling stond, maar zonder boeking in het systeem. Andere boekingen stonden als betaald gemarkeerd zonder bijbehorende betaling in Mollie - sommige van gasten die het tabblad hadden gesloten en via de bedanklink in hun geschiedenis waren teruggekomen. Terugbetalingen in het Mollie-dashboard gaven de plek nooit vrij, waardoor workshops als vol werden getoond terwijl ze dat niet waren. Rick had geen idee wat een webhook was; de app bevestigde boekingen zodra gasten de bedankpagina bereikten.
 
 In vijf werkdagen implementeerden de engineers van LaunchStudio Mollie-webhooks die bij elke melding de betaalstatus opzochten, maakten ze de bevestiging van boekingen alleen afhankelijk van die status, handelden ze herhaalde meldingen en meldingen in de verkeerde volgorde af, gaven ze plekken automatisch vrij bij terugbetalingen en verlopen betalingen, verplaatsten ze bevestigingsmails naar een achtergrondtaak die door de webhook wordt gestart, voegden ze meldingen toe bij mislukte verwerking van webhooks, en stemden ze de boekingen van de afgelopen twee maanden af met de gegevens van Mollie.
 
 **Resultaat:** Niet-gekoppelde betalingen en spookboekingen stopten volledig. Plekken die door terugbetalingen vrijkomen, worden nu opnieuw verkocht, wat naar schatting € 600 per maand aan workshopomzet oplevert, en Rick besteedt zijn maandagochtenden aan koken in plaats van afstemmen.
 
-> *"Ik dacht dat de bedankpagina betekende dat iemand had betaald. Het bleek dat Mollie me al die tijd de waarheid probeerde te vertellen — ik luisterde alleen niet."*
-> — **Rick Jonker, Oprichter, Pannenklaar (Hattem)**
+> *"Ik dacht dat de bedankpagina betekende dat iemand had betaald. Het bleek dat Mollie me al die tijd de waarheid probeerde te vertellen - ik luisterde alleen niet."*
+> - **Rick Jonker, Oprichter, Pannenklaar (Hattem)**
 
-**Kosten & Tijdlijn:** € 1.350 (Launch Ready-pakket: betaalwebhooks, vrijgave van plekken, afstemming en monitoring) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.350 (Launch Ready-pakket: betaalwebhooks, vrijgave van plekken, afstemming en monitoring) - afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
 ### Wat is een webhook in eenvoudige woorden?
 
-Een bericht dat een dienst naar de server van uw app stuurt als er iets gebeurt, zoals een geslaagde betaling — net als een beloofde terugbelafspraak.
+Een bericht dat een dienst naar de server van uw app stuurt als er iets gebeurt, zoals een geslaagde betaling - net als een beloofde terugbelafspraak.
 
 ### Waarom hoort mijn app betalingen niet op de bedankpagina te bevestigen?
 
@@ -201,11 +201,11 @@ Omdat klanten misschien niet terugkeren, terugkeren voordat de betaling is verwe
 
 ### Wat betekent het verifiëren van een webhook?
 
-Bevestigen dat het bericht echt van de aanbieder komt — via een controle van de handtekening of door de betaalstatus op te zoeken via de API van de aanbieder — zodat nepmeldingen worden genegeerd.
+Bevestigen dat het bericht echt van de aanbieder komt - via een controle van de handtekening of door de betaalstatus op te zoeken via de API van de aanbieder - zodat nepmeldingen worden genegeerd.
 
 ### Hoe pakt Manifera betaalkoppelingen aan?
 
-Met geverifieerde webhooks, idempotente verwerking, afstemming en monitoring — patronen die in meer dan tien jaar koppelen van betaal- en bedrijfssystemen zijn verfijnd.
+Met geverifieerde webhooks, idempotente verwerking, afstemming en monitoring - patronen die in meer dan tien jaar koppelen van betaal- en bedrijfssystemen zijn verfijnd.
 
 ### Beïnvloeden betaalproblemen de online reputatie?
 

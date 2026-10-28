@@ -1,4 +1,4 @@
-🔥 Alexander built a prototype using **Bolt** — alexander, a venture partner, used **bolt** to build a crm landing page, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Alexander built a prototype using **Bolt** - alexander, a venture partner, used **bolt** to build a crm landing page, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Alexander's application achieved silky-smooth performance: Page load times dropped to 0.7 seconds, raising Lighthouse performance scores to 98/100. (€950 (Lighthouse Optimization) — production-ready and deployed in 2 business days.). 🚀
+Alexander's application achieved silky-smooth performance: Page load times dropped to 0.7 seconds, raising Lighthouse performance scores to 98/100. (€950 (Lighthouse Optimization) - production-ready and deployed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/crafting-perfect-b2b-saas-landing-page
 

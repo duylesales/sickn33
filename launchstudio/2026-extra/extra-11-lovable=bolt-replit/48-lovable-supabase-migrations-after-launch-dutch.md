@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Vóór de lancering is het wijzigen van je database een beslissing van vijf seconden. Hernoem een kolom, verwijder een tabel, herstructureer een relatie — er bestaat immers nog niets van waarde, en de ergste uitkomst is dat je wat AI-code opnieuw moet genereren.
+Vóór de lancering is het wijzigen van je database een beslissing van vijf seconden. Hernoem een kolom, verwijder een tabel, herstructureer een relatie - er bestaat immers nog niets van waarde, en de ergste uitkomst is dat je wat AI-code opnieuw moet genereren.
 
 Na de lancering raakt exact dezelfde handeling elke rij die je betalende klanten hebben aangemaakt, en het verschil in impact is gigantisch. Een hernoeming van vijf seconden kan resulteren in een applicatie die zijn eigen gegevens niet meer kan lezen, een boekingsproces dat voor iedereen halverwege de betaling vastloopt, en geen andere uitweg dan een back-up terugzetten die mogelijk al uren oud is.
 
@@ -32,7 +32,7 @@ Op de lanceringsdag veranderen er drie fundamentele zaken:
 
 **Er ontstaat data die je niet opnieuw kunt genereren.** Klantendossiers, geüploade bijlagen, historische transacties. De kosten van een fout zijn niet langer een uurtje verloren tijd, maar zakelijke schade.
 
-**De applicatie draait terwijl je de structuur wijzigt.** Gedurende een overgangsperiode — seconden of minuten — zijn de draaiende code en het databaseschema met elkaar in tegenspraak. Elk verzoek dat in dat tijdsvenster binnenkomt raakt een inconsistente staat.
+**De applicatie draait terwijl je de structuur wijzigt.** Gedurende een overgangsperiode - seconden of minuten - zijn de draaiende code en het databaseschema met elkaar in tegenspraak. Elk verzoek dat in dat tijdsvenster binnenkomt raakt een inconsistente staat.
 
 **Rollback is niet langer symmetrisch.** Code terugdraaien is een fluitje van een cent. Een schemawijziging terugdraaien die data al heeft getransformeerd is vaak onmogelijk, omdat de oorspronkelijke waarden simpelweg niet meer bestaan.
 
@@ -52,7 +52,7 @@ Additieve aanpassingen zijn nagenoeg risicoloos. Transformatieve wijzigingen ver
 
 ## Additieve Wijzigingen Zijn Nagenoeg Risicoloos
 
-Voeg de nieuwe kolom toe als `nullable` (optioneel) of met een verstandige standaardwaarde (default), deploy de migratie, en er breekt niets — de draaiende software weet immers niet dat de kolom bestaat.
+Voeg de nieuwe kolom toe als `nullable` (optioneel) of met een verstandige standaardwaarde (default), deploy de migratie, en er breekt niets - de draaiende software weet immers niet dat de kolom bestaat.
 
 Twee details houden het veilig: vermijd het toevoegen van een verplichte kolom (`NOT NULL`) zonder standaardwaarde aan een tabel met bestaande rijen, want de database weet niet waarmee die velden gevuld moeten worden en zal de migratie direct blokkeren. Voeg indexen bovendien bewust toe: op een grote tabel kan het aanmaken van een index alle schrijfacties langdurig blokkeren, tenzij je de index concurrent aanmaakt (`CREATE INDEX CONCURRENTLY`), wat een onschuldige optimalisatie anders verandert in een acute downtime.
 
@@ -78,7 +78,7 @@ Een kolom of tabel definitief verwijderen (`DROP`) is de enige actie zonder 'ong
 
 De veilige volgorde: stop eerst met het gebruik ervan, wacht een ruime periode, en verwijder het pas daarna. Hernoem de kolom naar iets dat duidelijk als 'deprecated' herkenbaar is, deploy code die er nergens meer naar verwijst, en laat het veld een week of twee onaangeroerd staan om te verifiëren dat er nergens iets omvalt. Een ongebruikte kolom in je database kost vrijwel niets; een per ongeluk verwijderde kolom die toch nodig bleek betekent een hersteloperatie vanuit een back-up, waarbij alle data sinds dat moment verloren gaat.
 
-Voordat je iets definitief verwijdert: zoek je complete codebase door op de naam van het veld — inclusief achtergrondtaken, cronjobs, rapportages en exports, waar verborgen verwijzingen zich vaak schuilhouden.
+Voordat je iets definitief verwijdert: zoek je complete codebase door op de naam van het veld - inclusief achtergrondtaken, cronjobs, rapportages en exports, waar verborgen verwijzingen zich vaak schuilhouden.
 
 ## Migraties Horen Thuis in de Git-Repository
 
@@ -106,7 +106,7 @@ Het transformeren van historische records is het punt waarop migraties vaak veel
 
 Een migratie testen tegen veertig keurig ingevoerde testrijen bewijst uitsluitend dat je SQL-syntax klopt, en verder helemaal niets.
 
-Test altijd tegen een kopie van de productiedatabase — geanonimiseerd als deze persoonsgegevens bevat — met het echte datavolume en de onvermijdelijke rommeligheid die een productiedatabase kenmerkt: onverwachte `NULL`-waarden, dubbele invoer, platte tekst in velden die een getal hadden moeten zijn, of vreemde tekencoderingen uit een CSV-import van maanden geleden. Dát is waar migraties in werkelijkheid op stuklopen; dat ontdekken op staging kost een uurtje uitzoekwerk in plaats van een publieke storing.
+Test altijd tegen een kopie van de productiedatabase - geanonimiseerd als deze persoonsgegevens bevat - met het echte datavolume en de onvermijdelijke rommeligheid die een productiedatabase kenmerkt: onverwachte `NULL`-waarden, dubbele invoer, platte tekst in velden die een getal hadden moeten zijn, of vreemde tekencoderingen uit een CSV-import van maanden geleden. Dát is waar migraties in werkelijkheid op stuklopen; dat ontdekken op staging kost een uurtje uitzoekwerk in plaats van een publieke storing.
 
 Klok de uitvoeringstijd tijdens deze test. Een backfill die vier minuten duurt op een kopie en elf minuten op productie is prima te overzien; eentje die vier minuten vergt op een tiende van de data is een onaangename verrassing die je vooraf wilt signaleren.
 
@@ -125,13 +125,13 @@ Elk van deze fouten is procedureel van aard en niet puur technisch, en dat is pr
 
 Leg elke wijziging vast als migratiebestand in Git. Categoriseer de wijziging: additief, transformatief of destructief. Hanteer het Expand and Contract patroon voor transformaties. Test vooraf tegen een realistische kopie en meet de tijdsduur. Maak direct vóór uitvoering een actuele back-up en weet hoe lang een eventuele restore duurt. Draai backfills in batches buiten piekdrukte. Verifieer met datatellingen en steekproeven. Bouw een wachttijd in vóórdat je oude structuren definitief wist. En noteer één regel in je deployment-logboek met wat er is aangepast.
 
-Tien minuten proces rondom een verandering die technisch wellicht één minuut duurt — dat is de juiste verhouding zodra er echte bedrijfsdata van klanten op het spel staat.
+Tien minuten proces rondom een verandering die technisch wellicht één minuut duurt - dat is de juiste verhouding zodra er echte bedrijfsdata van klanten op het spel staat.
 
 ## Het Fundament Neerzetten
 
 De meeste met AI gebouwde producten hebben geen gespecialiseerde databasebeheerder nodig; ze hebben simpelweg behoefte aan een schema dat is vastgelegd in versiebeheer, een staging-omgeving met realistische data, een geteste back-up- en herstelprocedure, en een ingeslepen routine voor toekomstige wijzigingen.
 
-LaunchStudio richt dat fundament in als onderdeel van het klaarmaken voor productie: het bestaande Supabase-schema vastleggen in versiebeheerde migraties zodat de repository de bron van waarheid wordt, een staging-database inrichten met veilige testdata, back-ups verifiëren met een daadwerkelijke restore-test, en het Expand and Contract patroon toepassen op de schemawijziging waar je op dat moment voor staat — zonder de frontend aan te raken die je in Lovable hebt gebouwd.
+LaunchStudio richt dat fundament in als onderdeel van het klaarmaken voor productie: het bestaande Supabase-schema vastleggen in versiebeheerde migraties zodat de repository de bron van waarheid wordt, een staging-database inrichten met veilige testdata, back-ups verifiëren met een daadwerkelijke restore-test, en het Expand and Contract patroon toepassen op de schemawijziging waar je op dat moment voor staat - zonder de frontend aan te raken die je in Lovable hebt gebouwd.
 
 De engineers zijn van Manifera: elf jaar ervaring met productiedatabases voor enterprise-opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) voor een helder oordeel over de veiligheid van je geplande schemawijziging (meestal binnen één werkdag), of bekijk de [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -157,14 +157,14 @@ Hij wilde het algemene veld `contact` opsplitsen in een afzonderlijke `naam` en 
 
 De deployment liep echter vast op een onverwachte build-fout in de TypeScript-code. Gedurende veertig minuten voerde de live applicatie queries uit op een kolomnaam die niet langer bestond in de database. Elke reserveringspagina toonde een foutmelding, en binnen tien minuten hingen de eerste drie beheerders van buurthuizen aan de lijn. Hij hernoemde de kolom in allerijl terug, waardoor de app weer werkte, maar ontdekte dat boekingen die in dat tijdsvenster waren aangemaakt slechts gedeeltelijk waren weggeschreven.
 
-Zes werkdagen werk volgden: het complete schema werd vastgelegd in gestructureerde SQL-migraties zodat Git maatgevend werd; er werd een aparte staging-omgeving ingericht met een geanonimiseerde kopie van de productiedata; de veldsplitsing werd opnieuw uitgevoerd via het Expand and Contract patroon — nieuwe kolommen aangemaakt, applicatiecode wegschrijvend naar beide velden, een gecontroleerde backfill van 9.000 records gevalideerd met steekproeven, de leesrichting omgezet, en de oude kolom pas twee weken later definitief gewist; de database-back-up werd getest met een gemeten hersteltijd van 22 minuten; en er werd een deployment-logboek geïntroduceerd.
+Zes werkdagen werk volgden: het complete schema werd vastgelegd in gestructureerde SQL-migraties zodat Git maatgevend werd; er werd een aparte staging-omgeving ingericht met een geanonimiseerde kopie van de productiedata; de veldsplitsing werd opnieuw uitgevoerd via het Expand and Contract patroon - nieuwe kolommen aangemaakt, applicatiecode wegschrijvend naar beide velden, een gecontroleerde backfill van 9.000 records gevalideerd met steekproeven, de leesrichting omgezet, en de oude kolom pas twee weken later definitief gewist; de database-back-up werd getest met een gemeten hersteltijd van 22 minuten; en er werd een deployment-logboek geïntroduceerd.
 
 **Resultaat:** dezelfde aanpassing werd later zonder één seconde downtime doorgevoerd. De vier schemawijzigingen die daarna volgden verliepen elk via twee gecontroleerde deployments en werden door geen enkel buurthuis opgemerkt.
 
 > *"Ik hernoemde simpelweg een kolommetje. Het voelde zo eenvoudig als een cel bewerken in Excel. Maar het legde het complete reserveringssysteem plat voor drie buurthuizen midden op de middag."*
-> — **Joost Brand, Oprichter, Ruimteplan (Almere)**
+> - **Joost Brand, Oprichter, Ruimteplan (Almere)**
 
-**Kosten & Doorlooptijd:** € 2.450 (schema vastgelegd als migraties, staging met geanonimiseerde data, veldsplitsing via expand-and-contract, geteste herstelprocedure van back-ups) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.450 (schema vastgelegd als migraties, staging met geanonimiseerde data, veldsplitsing via expand-and-contract, geteste herstelprocedure van back-ups) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -206,7 +206,7 @@ Test de migratie op een staging-kopie met een realistisch volume en rommelige da
       "name": "Wat houdt het Expand and Contract patroon precies in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nieuwe structuur toevoegen naast de oude, schrijven naar beide, backfillen, leesrichting omzetten en het oude pas dagen later verwijderen — zodat fouten met code-reverts worden opgelost."
+        "text": "Nieuwe structuur toevoegen naast de oude, schrijven naar beide, backfillen, leesrichting omzetten en het oude pas dagen later verwijderen - zodat fouten met code-reverts worden opgelost."
       }
     },
     {

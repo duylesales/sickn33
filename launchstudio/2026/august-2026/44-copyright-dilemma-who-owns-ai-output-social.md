@@ -1,4 +1,4 @@
-🔥 Stella built a prototype using **Cursor** — stella, a writer, used **cursor** to build a copy generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Stella built a prototype using **Cursor** - stella, a writer, used **cursor** to build a copy generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Stella's application achieved silky-smooth performance: Legal compliance was achieved, protecting the startup from copyright and trademark infringement risks. (€1,900 (Copyright Filter integration) — production-ready and deployed in 5 business days.). 🚀
+Stella's application achieved silky-smooth performance: Legal compliance was achieved, protecting the startup from copyright and trademark infringement risks. (€1,900 (Copyright Filter integration) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/copyright-dilemma-who-owns-ai-output
 

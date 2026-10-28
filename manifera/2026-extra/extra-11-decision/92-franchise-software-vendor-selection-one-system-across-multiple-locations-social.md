@@ -2,7 +2,7 @@ Eleven of your forty locations quietly switched point-of-sale systems on their o
 
 **The Pain Points:**
 ❌ **Franchisee Shadow IT:** Individual franchisees swap corporate-mandated systems for local alternatives, fragmenting data head office needs for consolidated reporting.
-❌ **Flat Pricing That Punishes Small Locations:** A per-location fee sized for your biggest franchisee makes the mandate financially painful for your smallest one — so they quietly opt out.
+❌ **Flat Pricing That Punishes Small Locations:** A per-location fee sized for your biggest franchisee makes the mandate financially painful for your smallest one - so they quietly opt out.
 ❌ **Single-Tenant Sprawl:** Without a clear multi-tenant architecture decision up front, brand-wide rollouts turn into a location-by-location manual reconciliation project.
 
 **The Manifera Solution:**

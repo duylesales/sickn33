@@ -20,15 +20,15 @@ Target Persona: Technical Solo Founder
 }
 </script>
 
-"AI in your database" sounds like a single upgrade — add a vector column, wire up similarity search, and your app now has AI-powered search sitting right next to the rest of your data. Technically, that's a fair description of what got added. It says nothing about whether the database can actually serve that feature alongside everything else it's already doing, under real traffic, without one starving the other. That second question is the one that matters, and it's the one that "AI in database" as a marketing phrase never actually answers.
+"AI in your database" sounds like a single upgrade - add a vector column, wire up similarity search, and your app now has AI-powered search sitting right next to the rest of your data. Technically, that's a fair description of what got added. It says nothing about whether the database can actually serve that feature alongside everything else it's already doing, under real traffic, without one starving the other. That second question is the one that matters, and it's the one that "AI in database" as a marketing phrase never actually answers.
 
 ## What AI-assisted vector search adds to a database, technically
 
-Vector search works by storing high-dimensional embeddings — numerical representations of text, images, or other content — and finding the closest matches to a query through similarity comparison rather than exact matching. Done properly, this requires a specialized index built for that comparison, because scanning every row's full embedding on every query is computationally expensive at any real scale. Done without that index — which is exactly what happens when a vector column gets added quickly to make a feature work, without the indexing step that makes it work *efficiently* — every similarity query has to compare against every stored row directly.
+Vector search works by storing high-dimensional embeddings - numerical representations of text, images, or other content - and finding the closest matches to a query through similarity comparison rather than exact matching. Done properly, this requires a specialized index built for that comparison, because scanning every row's full embedding on every query is computationally expensive at any real scale. Done without that index - which is exactly what happens when a vector column gets added quickly to make a feature work, without the indexing step that makes it work *efficiently* - every similarity query has to compare against every stored row directly.
 
 ## Why this specifically causes table locking, not just slowness
 
-An unindexed vector query doesn't fail quietly by being a little slow. Depending on the database engine and how the query is written, it can hold locks on the underlying table for the duration of that full scan — locks that block other operations trying to read or write the same table concurrently. If that table is shared with your application's regular transactional workload — bookings, orders, whatever your core feature actually is — every AI search query becomes a moment where unrelated, everyday operations queue up and wait, or time out entirely, because the table is locked by a search feature that has nothing to do with them.
+An unindexed vector query doesn't fail quietly by being a little slow. Depending on the database engine and how the query is written, it can hold locks on the underlying table for the duration of that full scan - locks that block other operations trying to read or write the same table concurrently. If that table is shared with your application's regular transactional workload - bookings, orders, whatever your core feature actually is - every AI search query becomes a moment where unrelated, everyday operations queue up and wait, or time out entirely, because the table is locked by a search feature that has nothing to do with them.
 
 This is the part that a phrase like "AI in your database" completely obscures: adding the feature is a schema change. Making it safe to run alongside your actual production workload is a performance and isolation problem, and the two are not the same amount of work.
 
@@ -38,38 +38,38 @@ This is the part that a phrase like "AI in your database" completely obscures: a
 - Test the search feature under realistic concurrent load against the same tables your core application writes to, not in isolation.
 - Consider whether the vector search workload should even share tables with transactional data, or whether it belongs in a separate store entirely.
 
-Manifera's engineers — with 11+ years of production engineering experience — have handled exactly this category of problem across AI-generated codebases where a feature worked in testing and then locked up under real concurrent load. Our Amsterdam team specifically reviews database schema and indexing as part of any production-readiness assessment. If your own app has an AI search feature you haven't load-tested against real concurrency, [calculate what a database review would cost](https://launchstudio.eu/en/#calculator), and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers the deeper engineering discipline behind getting this right the first time.
+Manifera's engineers - with 11+ years of production engineering experience - have handled exactly this category of problem across AI-generated codebases where a feature worked in testing and then locked up under real concurrent load. Our Amsterdam team specifically reviews database schema and indexing as part of any production-readiness assessment. If your own app has an AI search feature you haven't load-tested against real concurrency, [calculate what a database review would cost](https://launchstudio.eu/en/#calculator), and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers the deeper engineering discipline behind getting this right the first time.
 
 ## Three Categories of AI Database Features, Ranked by Locking Risk
 
-Not every "AI in the database" implementation carries the same amount of risk, and it's worth knowing which category your own feature falls into before assuming the worst — or, just as often, before assuming you're fine because nothing has broken yet.
+Not every "AI in the database" implementation carries the same amount of risk, and it's worth knowing which category your own feature falls into before assuming the worst - or, just as often, before assuming you're fine because nothing has broken yet.
 
-**Category one: vector search sharing the same table as transactional data.** This is the highest-risk pattern, and the one covered above — a similarity-search column added directly to a table your application also reads and writes for ordinary operations, with no index and no isolation. Every AI search query and every regular transaction are competing for a lock on the same table, and the two workloads have nothing to do with each other except geography.
+**Category one: vector search sharing the same table as transactional data.** This is the highest-risk pattern, and the one covered above - a similarity-search column added directly to a table your application also reads and writes for ordinary operations, with no index and no isolation. Every AI search query and every regular transaction are competing for a lock on the same table, and the two workloads have nothing to do with each other except geography.
 
-**Category two: a dedicated AI-feature table, joined back to core data.** Slightly safer — the embeddings live in their own table, referenced by a foreign key back to the records they describe. This avoids locking the core transactional table directly, but the join itself can still be expensive if the vector table is unindexed, and a slow join can still hold up whatever query depends on its result, even without a full table lock on your booking or order data specifically.
+**Category two: a dedicated AI-feature table, joined back to core data.** Slightly safer - the embeddings live in their own table, referenced by a foreign key back to the records they describe. This avoids locking the core transactional table directly, but the join itself can still be expensive if the vector table is unindexed, and a slow join can still hold up whatever query depends on its result, even without a full table lock on your booking or order data specifically.
 
-**Category three: a fully separate store, synced asynchronously.** The lowest-risk pattern keeps vector data in a store built for it — a dedicated vector database or a clearly separated schema — updated through an async process rather than queried inline against live transactional tables. A slow or even failing AI search feature in this pattern degrades gracefully: search results might lag or time out, but bookings, orders, and everything else your app actually depends on keep running unaffected.
+**Category three: a fully separate store, synced asynchronously.** The lowest-risk pattern keeps vector data in a store built for it - a dedicated vector database or a clearly separated schema - updated through an async process rather than queried inline against live transactional tables. A slow or even failing AI search feature in this pattern degrades gracefully: search results might lag or time out, but bookings, orders, and everything else your app actually depends on keep running unaffected.
 
-**Which category you're actually in isn't always obvious from the outside.** A feature can look identical from the user's perspective — type a query, get similar results back — regardless of which of the three patterns sits underneath it. The only way to know for certain is to open the schema and check where the vector column actually lives and what else reads from or writes to the same table, rather than inferring safety from the fact that the feature has worked fine so far.
+**Which category you're actually in isn't always obvious from the outside.** A feature can look identical from the user's perspective - type a query, get similar results back - regardless of which of the three patterns sits underneath it. The only way to know for certain is to open the schema and check where the vector column actually lives and what else reads from or writes to the same table, rather than inferring safety from the fact that the feature has worked fine so far.
 
-A quick way to check your own risk category today: find the table your AI search or recommendation feature queries, and list every other feature in your app that also reads or writes that same table. If the list is empty, you're closer to category three. If it includes anything core to your product's main workflow — the tables your busiest, most revenue-relevant feature depends on — you're closer to category one, and it's worth confirming the indexing and isolation questions covered above before real concurrent traffic finds the gap for you instead.
+A quick way to check your own risk category today: find the table your AI search or recommendation feature queries, and list every other feature in your app that also reads or writes that same table. If the list is empty, you're closer to category three. If it includes anything core to your product's main workflow - the tables your busiest, most revenue-relevant feature depends on - you're closer to category one, and it's worth confirming the indexing and isolation questions covered above before real concurrent traffic finds the gap for you instead.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Search Feature That Locked Every Booking
 
-Willem Kloppers, a founder based in Montfoort, built "SchemaWacht" — a maintenance scheduling tool — using Cursor, adding an AI-assisted vector search feature directly inside the production database to let users find similar past maintenance jobs by description. In testing, with a handful of records and no concurrent traffic, the feature worked exactly as expected.
+Willem Kloppers, a founder based in Montfoort, built "SchemaWacht" - a maintenance scheduling tool - using Cursor, adding an AI-assisted vector search feature directly inside the production database to let users find similar past maintenance jobs by description. In testing, with a handful of records and no concurrent traffic, the feature worked exactly as expected.
 
-Under real usage, it didn't hold up. The vector column had never been properly indexed — the query compared against every stored record's full embedding on each search — and that full scan locked the same tables SchemaWacht's regular booking system needed to read and write. Every time a user ran the AI search feature, bookings elsewhere in the app started timing out, because the underlying table was locked by a query with no relationship to booking at all.
+Under real usage, it didn't hold up. The vector column had never been properly indexed - the query compared against every stored record's full embedding on each search - and that full scan locked the same tables SchemaWacht's regular booking system needed to read and write. Every time a user ran the AI search feature, bookings elsewhere in the app started timing out, because the underlying table was locked by a query with no relationship to booking at all.
 
-Willem noticed the pattern once support messages about scheduling timeouts started clustering around the same times users were also using search — a correlation that took some digging to confirm, since the two features looked completely unrelated on the surface. He brought SchemaWacht to LaunchStudio to resolve it. Our engineers built a proper index for the vector column, restructured the search queries to avoid holding locks on the shared booking tables, and load-tested the fix against realistic concurrent usage before calling it resolved.
+Willem noticed the pattern once support messages about scheduling timeouts started clustering around the same times users were also using search - a correlation that took some digging to confirm, since the two features looked completely unrelated on the surface. He brought SchemaWacht to LaunchStudio to resolve it. Our engineers built a proper index for the vector column, restructured the search queries to avoid holding locks on the shared booking tables, and load-tested the fix against realistic concurrent usage before calling it resolved.
 
 **Result:** SchemaWacht's AI search feature now runs against a properly indexed vector column with no measurable impact on booking availability, verified under simulated concurrent load.
 
 > *"The feature worked in every test I ran. I just never ran a test where someone was also trying to book something at the same time."*
-> — **Willem Kloppers, Founder, SchemaWacht (Montfoort)**
+> - **Willem Kloppers, Founder, SchemaWacht (Montfoort)**
 
-**Cost & Timeline:** €1,300 (vector indexing and query isolation fix) — completed in 5 business days.
+**Cost & Timeline:** €1,300 (vector indexing and query isolation fix) - completed in 5 business days.
 
 ---
 
@@ -81,7 +81,7 @@ Because the full-table scan required to compare against every stored embedding c
 
 ### Is this specific to any one database engine?
 
-The exact locking behavior varies by engine, but the underlying problem — an expensive unindexed operation sharing a table with transactional workload — applies broadly across common production databases.
+The exact locking behavior varies by engine, but the underlying problem - an expensive unindexed operation sharing a table with transactional workload - applies broadly across common production databases.
 
 ### How would I catch this before it happens in production?
 

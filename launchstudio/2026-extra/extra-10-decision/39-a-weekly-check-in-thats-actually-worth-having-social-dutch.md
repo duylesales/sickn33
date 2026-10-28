@@ -1,4 +1,4 @@
-⏱️ "Hoe gaat het?" — "Goed hoor, we maken meters."
+⏱️ "Hoe gaat het?" - "Goed hoor, we maken meters."
 
 Twaalf dagen later hoort u ineens dat de betaalintegratie al een week stilligt.
 
@@ -15,7 +15,7 @@ Een voortgangsoverleg van 30 minuten dat wél resultaat oplevert:
 ✅ Min 18–23: Gebundelde besluiten die op de oprichter wachten
 ✅ Min 23–27: Nieuwe zakelijke markt- en klantcontext
 
-De vraag *"Wat gaat er komende week waarschijnlijk mis?"* alleen al redt uw lancering. Developers voelen risico's dagen van tevoren aankomen — mits u er expliciet naar vraagt.
+De vraag *"Wat gaat er komende week waarschijnlijk mis?"* alleen al redt uw lancering. Developers voelen risico's dagen van tevoren aankomen - mits u er expliciet naar vraagt.
 
 Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar software-ervaring), is dit onze vaste sprint-routine.
 

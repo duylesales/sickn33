@@ -12,7 +12,7 @@ Target Persona: SaaS Founder Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App to Production for International Users: Languages, Currencies and Time Zones",
-  "description": "AI-built apps assume one language, one currency, one time zone and one name format. A before-and-after guide to what breaks when international users arrive — and how to make an AI app production-ready for them without rebuilding it.",
+  "description": "AI-built apps assume one language, one currency, one time zone and one name format. A before-and-after guide to what breaks when international users arrive - and how to make an AI app production-ready for them without rebuilding it.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-27",
@@ -92,7 +92,7 @@ Taking an AI app to production for international users starts in the database. F
 | Currency | Implicit euros | `currency` code on every amount |
 | Dates of birth | Stored as text | Date type, displayed per locale |
 
-Changing these fields in a live app requires a migration: add new columns, backfill from old ones, switch reads and writes, then remove the old fields — the expand-and-contract approach that avoids downtime.
+Changing these fields in a live app requires a migration: add new columns, backfill from old ones, switch reads and writes, then remove the old fields - the expand-and-contract approach that avoids downtime.
 
 ## Time Zones in Scheduling Features
 
@@ -124,7 +124,7 @@ Platforms for international students or visitors often face users without a loca
 
 ## Search and Sorting Across Languages
 
-Search should be accent-insensitive and tolerant of transliterations — "Müller," "Mueller" and "Muller" should find each other. Postgres supports this with the `unaccent` extension and appropriate collations; full-text search configurations exist for many languages. Sorting names alphabetically should follow the user's locale rules, which differ between languages.
+Search should be accent-insensitive and tolerant of transliterations - "Müller," "Mueller" and "Muller" should find each other. Postgres supports this with the `unaccent` extension and appropriate collations; full-text search configurations exist for many languages. Sorting names alphabetically should follow the user's locale rules, which differ between languages.
 
 ## Emails, Documents and Notifications Across Locales
 
@@ -132,7 +132,7 @@ International users meet your product most often outside the app: confirmation e
 
 ## Legal and Tax Considerations for International Users
 
-Serving users from many countries raises questions beyond interface language: which consumer law applies, which VAT treatment is due, which data protection rules apply to users outside the EU, and whether your terms need translations. For most EU-based products, GDPR applies to all users regardless of nationality, and consumer rules of the customer's country may apply to consumer sales. Confirm your specific situation with advisers and make sure your data model stores what is needed — customer country, customer type, consent records — to apply the right rules.
+Serving users from many countries raises questions beyond interface language: which consumer law applies, which VAT treatment is due, which data protection rules apply to users outside the EU, and whether your terms need translations. For most EU-based products, GDPR applies to all users regardless of nationality, and consumer rules of the customer's country may apply to consumer sales. Confirm your specific situation with advisers and make sure your data model stores what is needed - customer country, customer type, consent records - to apply the right rules.
 
 ## Accessibility for Non-Native Speakers
 
@@ -148,19 +148,19 @@ Rather than supporting every locale at once, phase the rollout: first make the d
 
 ## Why It Pays Off
 
-International users are often early adopters, active in communities and generous with recommendations — as long as the product treats them as first-class users. Getting names, time zones, currencies and languages right is a small engineering effort compared with the growth it unlocks.
+International users are often early adopters, active in communities and generous with recommendations - as long as the product treats them as first-class users. Getting names, time zones, currencies and languages right is a small engineering effort compared with the growth it unlocks.
 
 ## A Quick Self-Check for Your App
 
-Try signing up as someone called "Nguyễn Thị Minh Khai" with a Vietnamese phone number, then as "Björk" with no surname, then as someone in São Paulo booking a slot in Rotterdam. If any step fails, shows garbled characters or displays the wrong time, you have found your first international production task. Most apps built with AI tools fail at least one of these three tests on the first try — and each failure is usually a few hours of work to fix properly, far less than the users it would otherwise turn away.
+Try signing up as someone called "Nguyễn Thị Minh Khai" with a Vietnamese phone number, then as "Björk" with no surname, then as someone in São Paulo booking a slot in Rotterdam. If any step fails, shows garbled characters or displays the wrong time, you have found your first international production task. Most apps built with AI tools fail at least one of these three tests on the first try - and each failure is usually a few hours of work to fix properly, far less than the users it would otherwise turn away.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio makes AI-built apps ready for international users without redesigning them: text externalised into translation files, internationalised emails and documents, inclusive name, address and phone handling, currency-aware money handling, time-zone-correct scheduling, locale-aware search — alongside the usual production hardening. The screens stay; the assumptions change.
+LaunchStudio makes AI-built apps ready for international users without redesigning them: text externalised into translation files, internationalised emails and documents, inclusive name, address and phone handling, currency-aware money handling, time-zone-correct scheduling, locale-aware search - alongside the usual production hardening. The screens stay; the assumptions change.
 
-LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and teams in Amsterdam, Singapore and Ho Chi Minh City — an organisation that works across languages, currencies and time zones every day. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); W3C's [internationalization guidance on personal names](https://www.w3.org/International/questions/qa-personal-names) is an excellent external reference.
+LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and teams in Amsterdam, Singapore and Ho Chi Minh City - an organisation that works across languages, currencies and time zones every day. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); W3C's [internationalization guidance on personal names](https://www.w3.org/International/questions/qa-personal-names) is an excellent external reference.
 
-[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) — from any time zone.
+[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) - from any time zone.
 
 ## Real example
 
@@ -175,9 +175,9 @@ Over ten business days, LaunchStudio's engineers externalised all text and email
 **Result:** Registration completion for international students rose from about 71% to 94%. No interviews were missed at the next clock change, and Stagebank expanded to three more universities in the following year.
 
 > *"My users were international by definition, and my app assumed they were all from Heerlen."*
-> — **Mark Hermans, Founder, Stagebank (Heerlen)**
+> - **Mark Hermans, Founder, Stagebank (Heerlen)**
 
-**Cost & Timeline:** €2,900 (Launch Ready package: internationalisation, name/address/phone handling, time zones, currencies and search) — completed in 10 business days.
+**Cost & Timeline:** €2,900 (Launch Ready package: internationalisation, name/address/phone handling, time zones, currencies and search) - completed in 10 business days.
 
 ## Frequently Asked Questions
 
@@ -187,7 +187,7 @@ Rigid name and address fields that reject valid international input, closely fol
 
 ### Should I translate my whole app before launching internationally?
 
-Prioritise critical flows — signup, core actions, payments, emails and legal texts — in the languages your users need. Secondary screens can follow.
+Prioritise critical flows - signup, core actions, payments, emails and legal texts - in the languages your users need. Secondary screens can follow.
 
 ### How should an app store times for meetings across time zones?
 
@@ -195,7 +195,7 @@ Store the timestamp in UTC together with the intended time zone of the event, an
 
 ### How does Manifera's international setup inform this work?
 
-Manifera operates across the Netherlands, Singapore and Vietnam, so multi-language, multi-currency and multi-time-zone requirements are part of its everyday work — and of the systems it builds.
+Manifera operates across the Netherlands, Singapore and Vietnam, so multi-language, multi-currency and multi-time-zone requirements are part of its everyday work - and of the systems it builds.
 
 ### Does internationalisation help with search and AI answer engines?
 

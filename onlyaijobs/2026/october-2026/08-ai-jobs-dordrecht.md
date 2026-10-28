@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Dordrecht lies at the meeting point of several rivers and has a long maritime and industrial history, which gives the city its own kind of data demand: shipping logistics, materials management and process optimisation in industrial environments — work similar in character to what you see in Rotterdam, but on a smaller scale.
+Dordrecht lies at the meeting point of several rivers and has a long maritime and industrial history, which gives the city its own kind of data demand: shipping logistics, materials management and process optimisation in industrial environments - work similar in character to what you see in Rotterdam, but on a smaller scale.
 
 ## What Kind of Data Work Actually Happens Here
 
-Industrial companies in and around Dordrecht deal with process optimisation, materials quality control and logistics planning around shipping traffic — statistical and modelling work with real operational consequences when a prediction is wrong.
+Industrial companies in and around Dordrecht deal with process optimisation, materials quality control and logistics planning around shipping traffic - statistical and modelling work with real operational consequences when a prediction is wrong.
 
 ## Why This Work Is Less Visible
 
@@ -47,7 +47,7 @@ Industrial companies rarely compete with scale-ups for visibility on general job
 
 ## Dordrecht's Geography Explains Its Economy
 
-Dordrecht is often called the oldest city in Holland, and it sits on an island surrounded by the Oude Maas, the Beneden-Merwede, the Noord and the Dordtsche Kil. The **St. Elizabeth's Flood of 1421** reshaped the landscape around the city and created the Biesbosch wetlands — a reminder that water has defined the region for centuries. Today, those same rivers form some of the busiest inland shipping routes in Europe, connecting the Port of Rotterdam with Germany, Belgium and the European hinterland.
+Dordrecht is often called the oldest city in Holland, and it sits on an island surrounded by the Oude Maas, the Beneden-Merwede, the Noord and the Dordtsche Kil. The **St. Elizabeth's Flood of 1421** reshaped the landscape around the city and created the Biesbosch wetlands - a reminder that water has defined the region for centuries. Today, those same rivers form some of the busiest inland shipping routes in Europe, connecting the Port of Rotterdam with Germany, Belgium and the European hinterland.
 
 Dordrecht is the largest city of the **Drechtsteden**, a cooperation of municipalities that includes Zwijndrecht, Papendrecht, Sliedrecht, Hendrik-Ido-Ambacht, Alblasserdam and Hardinxveld-Giessendam. Together they form one labour market with a strong maritime and manufacturing profile.
 
@@ -59,7 +59,7 @@ Dordrecht is the largest city of the **Drechtsteden**, a cooperation of municipa
 
 **Maritime Delta Drechtsteden.** A regional network of maritime companies, education and government that promotes the maritime manufacturing industry in the area.
 
-**Duurzaamheidsfabriek.** An education and innovation centre in Dordrecht where vocational and higher education work with companies on technology, maritime and sustainability themes — an important source of technical talent for the region.
+**Duurzaamheidsfabriek.** An education and innovation centre in Dordrecht where vocational and higher education work with companies on technology, maritime and sustainability themes - an important source of technical talent for the region.
 
 **Chemical and process industry.** The Dordrecht area also hosts chemical production, subject to strict environmental and safety supervision, which creates demand for process monitoring, emissions data and compliance reporting.
 
@@ -95,7 +95,7 @@ Dordrecht is the largest city of the **Drechtsteden**, a cooperation of municipa
 
 ## Regulation That Shapes Industrial Data Work
 
-- **Seveso III Directive.** Implemented in the Netherlands through the Major Accidents Risks Decree (BRZO), it sets strict safety requirements for companies handling large quantities of hazardous substances — including monitoring and documentation.
+- **Seveso III Directive.** Implemented in the Netherlands through the Major Accidents Risks Decree (BRZO), it sets strict safety requirements for companies handling large quantities of hazardous substances - including monitoring and documentation.
 - **EU Emissions Trading System (EU ETS).** Requires energy-intensive industries to monitor, report and verify greenhouse gas emissions, and since 2024 also covers maritime transport.
 - **Environmental permits and emission limits.** Emissions to air and water are regulated through permits under the Dutch Environment and Planning Act, with close public and regulatory attention to substances such as PFAS in this region.
 - **Inland shipping standards.** European technical requirements for inland vessels and crew rules influence maintenance planning and vessel design.
@@ -104,19 +104,19 @@ For data professionals, this means measurement accuracy, traceability and audita
 
 ## Why Smaller Industrial Cities Next to a Large Port Are Often Skipped
 
-Candidates serious about industrial or logistics data work almost automatically search for the biggest name in the region — in this case Rotterdam — and skip the smaller, less competitive markets nearby. That is exactly why a city like Dordrecht, despite real and technically serious demand, remains structurally underexposed: not because the work isn't there, but because nobody searches for it explicitly.
+Candidates serious about industrial or logistics data work almost automatically search for the biggest name in the region - in this case Rotterdam - and skip the smaller, less competitive markets nearby. That is exactly why a city like Dordrecht, despite real and technically serious demand, remains structurally underexposed: not because the work isn't there, but because nobody searches for it explicitly.
 
 ## A Concrete Scenario of Process Optimisation in Practice
 
-An industrial company in Dordrecht wants to improve quality control of a production process using sensor data that has been collected for years but never systematically analysed. The project starts with a thorough exploration of what this historical data actually contains and how reliable it is, before any predictive model is possible. Projects like this rarely become externally visible — no press release, no conference presentation — but they deliver tangible, measurable improvements in production quality and efficiency, exactly the kind of work that forms the core of industrial data work outside the big cities.
+An industrial company in Dordrecht wants to improve quality control of a production process using sensor data that has been collected for years but never systematically analysed. The project starts with a thorough exploration of what this historical data actually contains and how reliable it is, before any predictive model is possible. Projects like this rarely become externally visible - no press release, no conference presentation - but they deliver tangible, measurable improvements in production quality and efficiency, exactly the kind of work that forms the core of industrial data work outside the big cities.
 
 ## A Common Misconception About the Size of Opportunities in Smaller Industrial Cities
 
-Candidates sometimes assume smaller industrial cities such as Dordrecht have only a handful of relevant employers, compared with a seemingly endless choice in Rotterdam. In reality, every city with a real industrial base has several companies with their own, independent data teams or needs — the difference is not so much the number of opportunities, but how visible those opportunities are to a candidate relying only on the most obvious search terms.
+Candidates sometimes assume smaller industrial cities such as Dordrecht have only a handful of relevant employers, compared with a seemingly endless choice in Rotterdam. In reality, every city with a real industrial base has several companies with their own, independent data teams or needs - the difference is not so much the number of opportunities, but how visible those opportunities are to a candidate relying only on the most obvious search terms.
 
 ## Why Local Industrial Knowledge Becomes a Competitive Advantage
 
-A candidate who takes the time to understand the specific industrial history and character of the Dordrecht region — the combination of maritime and industrial activity at the meeting point of several rivers — presents themselves more strongly in an interview than a candidate bringing generic data science knowledge without any regional context. This investment in background knowledge is relatively small, but its differentiating effect is considerable in a market where most competitors don't make the effort.
+A candidate who takes the time to understand the specific industrial history and character of the Dordrecht region - the combination of maritime and industrial activity at the meeting point of several rivers - presents themselves more strongly in an interview than a candidate bringing generic data science knowledge without any regional context. This investment in background knowledge is relatively small, but its differentiating effect is considerable in a market where most competitors don't make the effort.
 
 ## Skills That Stand Out With Industrial and Maritime Employers
 
@@ -146,7 +146,7 @@ Industrial employers vary enormously in data maturity. Before accepting an offer
 1. **Where does the data live?** Sensor data locked in a local historian without export options is a very different starting point from a plant already streaming data to a cloud platform.
 2. **Who owns the operational technology?** Industrial networks are often managed separately from office IT for safety and security reasons. Understanding who controls access tells you how fast you can move.
 3. **Can models influence the process?** Some companies only allow advisory dashboards; others allow closed-loop control after validation. Both are legitimate, but they lead to very different work.
-4. **How are safety and environmental requirements handled?** In plants under strict safety supervision, any change to a process — including one proposed by a model — goes through formal change management.
+4. **How are safety and environmental requirements handled?** In plants under strict safety supervision, any change to a process - including one proposed by a model - goes through formal change management.
 5. **Is there a data team or would you be the first?** Being the first data specialist offers influence and variety, but requires the ability to build infrastructure and win trust at the same time.
 6. **What does on-site presence look like?** Industrial data work often requires regular presence on the shop floor or at the plant, which affects hybrid working options.
 
@@ -171,16 +171,16 @@ Browse current AI, machine learning and data jobs in and around Dordrecht at [on
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't see Dordrecht as a tech location) Is there really data work in the industrial sector around Dordrecht?
-Yes — process optimisation, materials quality control and logistics planning around shipping traffic are real applications of statistical modelling work.
+Yes - process optimisation, materials quality control and logistics planning around shipping traffic are real applications of statistical modelling work.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Dordrecht"?
 Industrial companies rarely compete for visibility, and job titles such as "Process Analyst" rarely reveal the underlying modelling component.
 
 ### (Scenario: candidate comparing this with Rotterdam) How does this work compare with what happens in Rotterdam?
-Similar in character — industrial and logistics — but on a smaller scale, with less competition per vacancy.
+Similar in character - industrial and logistics - but on a smaller scale, with less competition per vacancy.
 
 ### (Scenario: candidate unsure whether this is technically demanding) Is industrial process data work as technically demanding as consumer AI?
-Often, yes — process optimisation in an industrial environment has real operational consequences when a prediction is wrong, which makes the work rigorous.
+Often, yes - process optimisation in an industrial environment has real operational consequences when a prediction is wrong, which makes the work rigorous.
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work?
 Filter by category instead of job title, and look directly at industrial and maritime companies in the region.
@@ -190,10 +190,10 @@ Filter by category instead of job title, and look directly at industrial and mar
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there really data work in the industrial sector around Dordrecht?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — process optimisation, materials quality control and logistics planning around shipping traffic are real applications."}},
+    {"@type": "Question", "name": "Is there really data work in the industrial sector around Dordrecht?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - process optimisation, materials quality control and logistics planning around shipping traffic are real applications."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Dordrecht\"?", "acceptedAnswer": {"@type": "Answer", "text": "Industrial companies rarely compete for visibility, and job titles rarely reveal the modelling component."}},
     {"@type": "Question", "name": "How does this work compare with what happens in Rotterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Similar in character, but on a smaller scale with less competition per vacancy."}},
-    {"@type": "Question", "name": "Is industrial process data work as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes — it has real operational consequences when a prediction is wrong."}},
+    {"@type": "Question", "name": "Is industrial process data work as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes - it has real operational consequences when a prediction is wrong."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category instead of job title, and look at industrial and maritime companies."}}
   ]
 }

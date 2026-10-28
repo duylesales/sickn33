@@ -9,12 +9,12 @@ Een gehardeerde app zonder uitleg is een verplichting vermomd als bezit. Dit is 
 
 ✅ LaunchStudio levert een overdrachtsdocument gekoppeld aan risico, niet aan bestanden
 ✅ Een volledige kaart van credentials, omgevingsvariabelen en rotatieschema's
-✅ Expliciete lijst van wat NIET is aangeraakt — uw eigen werk blijft exact zoals het was
+✅ Expliciete lijst van wat NIET is aangeraakt - uw eigen werk blijft exact zoals het was
 ✅ Triagerichtlijnen zodat u zelf weet wat urgent is en wat kan wachten
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar engineeringpraktijk, is de overdracht een kerndeliverable, geen bijzaak. 🛡️
 
-Casimirs resultaat: drie weken later zelf een nieuwe functie gebouwd op dezelfde betaalcode, zonder één verduidelijkende vraag — ShiftLedger live in 11 werkdagen voor €1.900. 🚀
+Casimirs resultaat: drie weken later zelf een nieuwe functie gebouwd op dezelfde betaalcode, zonder één verduidelijkende vraag - ShiftLedger live in 11 werkdagen voor €1.900. 🚀
 
 👉 Zie hoe scoping en overdracht eruitzien voor uw codebase: https://launchstudio.eu/nl/blog/the-handoff-document-what-you-get
 

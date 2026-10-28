@@ -35,19 +35,19 @@ Breda has an education tradition in creative technology and games that few other
 
 ## Two Very Different Kinds of AI Work in the Same Region
 
-**Creative and games-related technology.** Think procedural generation, player behaviour models and applications of generative techniques in interactive media — work that is close to consumer AI in terms of toolset, but rarely labelled "AI" on a general job platform.
+**Creative and games-related technology.** Think procedural generation, player behaviour models and applications of generative techniques in interactive media - work that is close to consumer AI in terms of toolset, but rarely labelled "AI" on a general job platform.
 
-**Agrifood data.** Harvest forecasting, quality control and supply chain optimisation in the food industry are less visible, but just as technically demanding as consumer ML — and the region around Breda has a real agrifood base that produces this kind of work.
+**Agrifood data.** Harvest forecasting, quality control and supply chain optimisation in the food industry are less visible, but just as technically demanding as consumer ML - and the region around Breda has a real agrifood base that produces this kind of work.
 
 ## Why You Won't Find This by Searching for "AI"
 
-Both segments are titled by departments that don't regard the work as an "AI role" — a creative studio calls it "technical artist" or "gameplay engineer," a food company calls it "quality analyst" or "supply chain data analyst." Filtering by category instead of keyword is the only way to make both visible.
+Both segments are titled by departments that don't regard the work as an "AI role" - a creative studio calls it "technical artist" or "gameplay engineer," a food company calls it "quality analyst" or "supply chain data analyst." Filtering by category instead of keyword is the only way to make both visible.
 
 ## The Two Segments in Detail
 
-**Creative technology and games.** The region's education tradition produces a steady stream of graduates with skills in procedural generation, real-time rendering and behaviour models for interactive systems. This work shares techniques with consumer AI (embeddings, generative models, reinforcement learning in some cases), but the application — entertainment instead of conversion optimisation — attracts a different kind of employer than a typical Amsterdam product team.
+**Creative technology and games.** The region's education tradition produces a steady stream of graduates with skills in procedural generation, real-time rendering and behaviour models for interactive systems. This work shares techniques with consumer AI (embeddings, generative models, reinforcement learning in some cases), but the application - entertainment instead of conversion optimisation - attracts a different kind of employer than a typical Amsterdam product team.
 
-**Agrifood.** The wider region around Breda has a real presence of food companies for which harvest forecasting, supply chain logistics and quality control are not new topics — they are processes that have existed for decades and are now gradually being supplemented with statistical modelling.
+**Agrifood.** The wider region around Breda has a real presence of food companies for which harvest forecasting, supply chain logistics and quality control are not new topics - they are processes that have existed for decades and are now gradually being supplemented with statistical modelling.
 
 ## Comparing the Two Segments
 
@@ -55,31 +55,31 @@ Both segments are titled by departments that don't regard the work as an "AI rol
 |---|---|---|
 | Core skill | Generative models, rendering | Time series analysis, quality control |
 | Margin of error | Aesthetic/experience-driven | Operational/safety-driven |
-| Visibility on job platforms | Low — titled differently | Low — titled differently |
+| Visibility on job platforms | Low - titled differently | Low - titled differently |
 | Typical employer size | Small to medium | Medium to large |
 | Overlap with consumer AI techniques | High | Low to medium |
 
 ## Why This Combination Is Unique to the Region
 
-Few Dutch cities combine a creative technology tradition with a real agrifood sector within the same labour market. For a candidate, this means Breda offers two completely different career paths without having to relocate to switch from one to the other — a rare flexibility that doesn't exist in most other regions, where usually only one of the two kinds of work can be found locally.
+Few Dutch cities combine a creative technology tradition with a real agrifood sector within the same labour market. For a candidate, this means Breda offers two completely different career paths without having to relocate to switch from one to the other - a rare flexibility that doesn't exist in most other regions, where usually only one of the two kinds of work can be found locally.
 
 ## A Concrete Scenario From the Creative Technology Side
 
-Imagine a small games studio in Breda working on a title with procedurally generated environments. The team has no separate "AI department" — the person responsible for the generative models works closely with level designers and artists, and success is measured not by a technical metric but by whether the generated environments are actually fun to play. This is a fundamentally different way of working than a data science team trying to optimise a conversion rate: the feedback comes from creative colleagues and players, not from a dashboard.
+Imagine a small games studio in Breda working on a title with procedurally generated environments. The team has no separate "AI department" - the person responsible for the generative models works closely with level designers and artists, and success is measured not by a technical metric but by whether the generated environments are actually fun to play. This is a fundamentally different way of working than a data science team trying to optimise a conversion rate: the feedback comes from creative colleagues and players, not from a dashboard.
 
 ## A Common Misconception About Agrifood Data Work
 
-People often assume that work in the agrifood sector is less "AI" than work at a tech company, simply because the sector looks older and less digitised. In practice, modern agrifood companies have often been collecting sensor data on yield, temperature and humidity for years — and the challenge lies precisely in combining all that historical, messy data into usable forecasting models. This is no less "AI" than a consumer application in substance; it is just less visible because the sector doesn't present itself that way.
+People often assume that work in the agrifood sector is less "AI" than work at a tech company, simply because the sector looks older and less digitised. In practice, modern agrifood companies have often been collecting sensor data on yield, temperature and humidity for years - and the challenge lies precisely in combining all that historical, messy data into usable forecasting models. This is no less "AI" than a consumer application in substance; it is just less visible because the sector doesn't present itself that way.
 
 ## Why These Two Segments Together Offer a Unique Learning Experience
 
-Few other Dutch cities offer the opportunity to gain experience in both creative, generative technology and applied agrifood data within the same regional labour market — two completely different applications of similar underlying techniques. For a candidate who isn't yet sure which direction fits best, Breda offers a rare chance to explore both without relocating, something that simply isn't possible in most other regions because usually only one of the two segments is present.
+Few other Dutch cities offer the opportunity to gain experience in both creative, generative technology and applied agrifood data within the same regional labour market - two completely different applications of similar underlying techniques. For a candidate who isn't yet sure which direction fits best, Breda offers a rare chance to explore both without relocating, something that simply isn't possible in most other regions because usually only one of the two segments is present.
 
 ## Concrete Skills That Prepare You for Each Segment
 
-For the creative technology side, it pays to look beyond standard machine learning courses at specific techniques around procedural generation and real-time rendering constraints — skills that rarely feature in a generic data science programme but that games studios take for granted. A small personal project in which you build a simple generative system that has to render within a strict time limit shows exactly the kind of practical awareness of constraints a studio looks for.
+For the creative technology side, it pays to look beyond standard machine learning courses at specific techniques around procedural generation and real-time rendering constraints - skills that rarely feature in a generic data science programme but that games studios take for granted. A small personal project in which you build a simple generative system that has to render within a strict time limit shows exactly the kind of practical awareness of constraints a studio looks for.
 
-For the agrifood side, the most distinguishing skill is not the modelling itself, but combining several incomplete, seasonal data sources into a coherent whole — sensor data, weather data and historical harvest figures rarely follow the same format or time granularity. Practice with this kind of data integration problem, even on a small scale, is more convincing than in-depth knowledge of one specific advanced modelling algorithm.
+For the agrifood side, the most distinguishing skill is not the modelling itself, but combining several incomplete, seasonal data sources into a coherent whole - sensor data, weather data and historical harvest figures rarely follow the same format or time granularity. Practice with this kind of data integration problem, even on a small scale, is more convincing than in-depth knowledge of one specific advanced modelling algorithm.
 
 ## Why the Growth Direction of These Two Segments Is Likely to Differ
 
@@ -107,7 +107,7 @@ The agrifood sector "in the wider region" is not a vague notion. West Brabant ha
 | Agricultural West Brabant (including Dinteloord) | Arable farming, sugar processing, greenhouse horticulture | Harvest and yield forecasting, sensor data, precision agriculture |
 | Hazeldonk border area | Cross-border logistics | Transport planning, customs and supply chain data |
 
-**The ports as a data magnet.** Because both Rotterdam and Antwerp are within reach, West Brabant is a logical location for distribution centres serving European markets. That makes planning problems here more complex — and more interesting — than in a purely regional distribution network.
+**The ports as a data magnet.** Because both Rotterdam and Antwerp are within reach, West Brabant is a logical location for distribution centres serving European markets. That makes planning problems here more complex - and more interesting - than in a purely regional distribution network.
 
 ## Breda as a Border City: Your Commuting Radius Extends Across the Border
 
@@ -150,13 +150,13 @@ Browse current AI, machine learning and data vacancies in and around Breda at [o
 ## Frequently Asked Questions
 
 ### (Scenario: candidate from a games programme) Is there AI-related work in Breda outside the traditional tech sector?
-Yes — the region's creative and games technology tradition produces work around procedural generation and behaviour models, and the agrifood sector produces applied modelling work around harvest forecasting and quality control. Both are rarely called "AI" in the job title.
+Yes - the region's creative and games technology tradition produces work around procedural generation and behaviour models, and the agrifood sector produces applied modelling work around harvest forecasting and quality control. Both are rarely called "AI" in the job title.
 
 ### (Scenario: candidate who finds nothing through a search engine) Why do I find nothing when I search for "AI jobs Breda"?
-Because this work is titled by departments that don't see it as an AI role — "technical artist," "gameplay engineer" or "quality analyst" instead of AI vocabulary. Searching by category makes it visible.
+Because this work is titled by departments that don't see it as an AI role - "technical artist," "gameplay engineer" or "quality analyst" instead of AI vocabulary. Searching by category makes it visible.
 
 ### (Scenario: candidate torn between creative tech and agrifood) Which of the two segments has more structural demand?
-That varies over time and is not something we claim a national figure for — so always look at current vacancies rather than relying on an assumption.
+That varies over time and is not something we claim a national figure for - so always look at current vacancies rather than relying on an assumption.
 
 ### (Scenario: candidate unsure whether agrifood is "real" AI work) Are harvest forecasting and quality control in agrifood serious AI work?
 Yes, they rest on the same statistical and machine learning foundations as consumer AI, applied to a domain with real operational consequences when a prediction is wrong.
@@ -169,7 +169,7 @@ Filter by category and distance from home instead of by job title, so the work b
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there AI-related work in Breda outside the traditional tech sector?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the creative and games technology tradition produces work around procedural generation and behaviour models, and the agrifood sector produces applied modelling work around harvest forecasting and quality control."}},
+    {"@type": "Question", "name": "Is there AI-related work in Breda outside the traditional tech sector?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the creative and games technology tradition produces work around procedural generation and behaviour models, and the agrifood sector produces applied modelling work around harvest forecasting and quality control."}},
     {"@type": "Question", "name": "Why do I find nothing when I search for \"AI jobs Breda\"?", "acceptedAnswer": {"@type": "Answer", "text": "This work is titled by departments that don't see it as an AI role, using terms such as 'technical artist' or 'quality analyst' instead of AI vocabulary."}},
     {"@type": "Question", "name": "Which of the two segments has more structural demand?", "acceptedAnswer": {"@type": "Answer", "text": "That varies over time; look at current vacancies rather than relying on a national assumption."}},
     {"@type": "Question", "name": "Are harvest forecasting and quality control in agrifood serious AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they rest on the same statistical and machine learning foundations as consumer AI, applied to a domain with real operational consequences."}},

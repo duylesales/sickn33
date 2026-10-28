@@ -44,7 +44,7 @@ The institutional lessons have been absorbed, and they now shape practice in sev
 
 **Human review must be substantive, not formal.** A system that presents a recommendation the official always accepts is automated decision-making with a human signature attached. Oversight now looks for evidence that review genuinely changes outcomes.
 
-**Explainability means explicable to the affected person.** Not interpretable to a data scientist — comprehensible to a citizen who wants to know why a decision went against them, and sufficient for them to contest it.
+**Explainability means explicable to the affected person.** Not interpretable to a data scientist - comprehensible to a citizen who wants to know why a decision went against them, and sufficient for them to contest it.
 
 **Contestability is a design requirement.** There must be a route to challenge, and the challenge must be capable of succeeding. That means keeping the information necessary to reconstruct how a decision was reached.
 
@@ -159,7 +159,7 @@ Three specific things separate candidates here.
 ## Key Takeaways
 
 - Dutch public sector AI work is decisively shaped by institutional memory of automated decision-making that caused serious documented harm.
-- The practical requirements — substantive human review, explainability to the affected person, contestability, proportionality, disparate impact assessment — are the legitimate terms of the work rather than obstacles.
+- The practical requirements - substantive human review, explainability to the affected person, contestability, proportionality, disparate impact assessment - are the legitimate terms of the work rather than obstacles.
 - Assistive framing is far more workable than decisive framing, and the same technology framed differently moves from unbuildable to valuable.
 - The sector offers consequential questions, uniquely authoritative data, stability and governance experience that is becoming broadly valuable.
 - It costs you pace, tooling, compensation ceiling and a thin senior technical track, and exposes your work to political contestation.

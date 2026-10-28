@@ -41,7 +41,7 @@ U kunt een grote organisatie niet vragen om op dag één hun complete werkwijze 
 
 ## Het bouwen van het Trojaanse Paard
 
-Het Trojaanse Paard is een micro-product: een uiterst specifieke, laagdrempelige utility-tool die exact één tijdrovende taak perfect oplost. Het probeert niet het CRM te vervangen, maar werkt er geruisloos naast — bij voorkeur via een read-only API-koppeling zodat security-afdelingen geen bezwaar hebben.
+Het Trojaanse Paard is een micro-product: een uiterst specifieke, laagdrempelige utility-tool die exact één tijdrovende taak perfect oplost. Het probeert niet het CRM te vervangen, maar werkt er geruisloos naast - bij voorkeur via een read-only API-koppeling zodat security-afdelingen geen bezwaar hebben.
 
 **Voorbeeld:** U wilt een enterprise AI-supportplatform van 50.000 euro per jaar verkopen. Pitch niet direct het platform.
 
@@ -57,7 +57,7 @@ Binnen enkele weken gebruiken 15 verschillende medewerkers de extensie. U heeft 
 
 Na 90 dagen ziet u in uw dashboard dat 15 medewerkers van het doelbedrijf uw extensie dagelijks 400 keer gebruiken. Deze gebruiksdata is uw sterkste verkoopargument.
 
-Nu stuurt u een e-mail naar de VP Customer Success — geen koude pitch, maar harde data:
+Nu stuurt u een e-mail naar de VP Customer Success - geen koude pitch, maar harde data:
 
 *"Beste VP, 15 van uw supportmedewerkers gebruiken momenteel dagelijks onze samenvattingstool. Op basis van onze analyses hebben we uw team deze maand 300 uur leestijd bespaard. Graag laat ik u ons complete AI Support Platform zien, waarmee we 40% van deze tickets autonoom kunnen beantwoorden binnen uw Zendesk-omgeving."*
 
@@ -93,7 +93,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het team herstructureerde de 
 
 **Resultaat:** De security-reviews werden glansrijk doorstaan, wat leidde tot enterprise-pilotcontracten ter waarde van €60.000.
 
-**Kosten & tijdlijn:** €3.200 (Client-side Inference Pakket) — productieklaar en binnen 7 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €3.200 (Client-side Inference Pakket) - productieklaar en binnen 7 werkdagen live opgeleverd.
 
 ---
 

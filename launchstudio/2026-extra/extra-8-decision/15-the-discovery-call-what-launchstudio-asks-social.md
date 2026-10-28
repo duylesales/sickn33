@@ -8,7 +8,7 @@
 ❌ Quotes built on guesses instead of what's actually in the repo
 
 ✅ A structured discovery call maps the real technical picture first
-✅ "I don't know" is the MOST useful answer — it tells us where to verify
+✅ "I don't know" is the MOST useful answer - it tells us where to verify
 ✅ An engineer reviews the actual codebase before any number is quoted
 ✅ The result: a fixed price that holds all the way through delivery
 

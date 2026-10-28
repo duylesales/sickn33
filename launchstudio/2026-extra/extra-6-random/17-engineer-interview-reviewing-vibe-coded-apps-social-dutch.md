@@ -1,4 +1,4 @@
-🎙️ Milan Verhagen, een oprichter in Zwolle, bouwde KlantStroom — een CRM-tool voor kleine verkoopteams — met Cursor. Pull request na pull request zag er op het eerste gezicht netjes uit. Elke handmatige test die hij uitvoerde, slaagde probleemloos. 😳
+🎙️ Milan Verhagen, een oprichter in Zwolle, bouwde KlantStroom - een CRM-tool voor kleine verkoopteams - met Cursor. Pull request na pull request zag er op het eerste gezicht netjes uit. Elke handmatige test die hij uitvoerde, slaagde probleemloos. 😳
 
 Een netjes ogende app en een veilige app zijn niet hetzelfde. 🧠
 

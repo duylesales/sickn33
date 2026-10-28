@@ -20,37 +20,37 @@ target_persona: "Founder"
 }
 </script>
 
-A founder in Bunnik once described their first app build this way: it worked flawlessly in every rehearsal, and then crashed live in front of the one investor who actually mattered — because the demo path had been tested a dozen times and the account-creation flow the investor happened to try had never been tested once.
+A founder in Bunnik once described their first app build this way: it worked flawlessly in every rehearsal, and then crashed live in front of the one investor who actually mattered - because the demo path had been tested a dozen times and the account-creation flow the investor happened to try had never been tested once.
 
-**The Pain:** A first-time founder in Bunnik — a small Utrecht-province town sitting on the A12 corridor next to Utrecht Science Park, the university and medtech research cluster that has quietly turned this stretch between Utrecht and Bunnik into one of the Netherlands' denser concentrations of early-stage technical founders — is choosing app developer services for their first real product build, patching together freelancers and low-cost platforms based on whatever's fastest and cheapest right now.
+**The Pain:** A first-time founder in Bunnik - a small Utrecht-province town sitting on the A12 corridor next to Utrecht Science Park, the university and medtech research cluster that has quietly turned this stretch between Utrecht and Bunnik into one of the Netherlands' denser concentrations of early-stage technical founders - is choosing app developer services for their first real product build, patching together freelancers and low-cost platforms based on whatever's fastest and cheapest right now.
 
-**The Agitation:** A founder who treats every part of the first build as equally disposable "good enough for now" work discovers, usually at the worst possible moment — a fundraising demo, an early customer's first real session, an App Store review — that some parts of that first build were never disposable at all, and the cost of fixing them under pressure is far higher than building them properly the first time would have been.
+**The Agitation:** A founder who treats every part of the first build as equally disposable "good enough for now" work discovers, usually at the worst possible moment - a fundraising demo, an early customer's first real session, an App Store review - that some parts of that first build were never disposable at all, and the cost of fixing them under pressure is far higher than building them properly the first time would have been.
 
 ## Why the First Build Is the Only One That Can't Be "Good Enough for Now"
 
 Founders are told, correctly, to move fast and not over-engineer the MVP. What gets lost in that advice is that "don't over-engineer" and "cut corners on the core paths" are not the same instruction, and confusing them is what turns a scrappy first build into a liability instead of an asset.
 
-The parts of a first build that genuinely can be rough — a settings page nobody uses yet, an admin panel only the founder touches, a feature flagged as experimental — are fine to under-invest in. The parts that can't be rough are the ones a real user or investor will actually touch on day one: authentication, the core transaction or workflow the product exists to perform, and whatever data model underlies both. Get the database schema wrong on the field that represents your core business object, and every feature built on top of it inherits that mistake — a mistake that's cheap to fix on day three and expensive to fix once real user data is living inside it.
+The parts of a first build that genuinely can be rough - a settings page nobody uses yet, an admin panel only the founder touches, a feature flagged as experimental - are fine to under-invest in. The parts that can't be rough are the ones a real user or investor will actually touch on day one: authentication, the core transaction or workflow the product exists to perform, and whatever data model underlies both. Get the database schema wrong on the field that represents your core business object, and every feature built on top of it inherits that mistake - a mistake that's cheap to fix on day three and expensive to fix once real user data is living inside it.
 
-Security foundations belong in this same category, and founders under time pressure routinely defer them, reasoning there's no real user data yet to protect. That reasoning holds right up until the moment there is real user data, at which point retrofitting authentication and access control into a system not designed for it is a materially larger project than building it correctly from the start — and it's usually needed exactly when the founder has the least spare engineering capacity to do it.
+Security foundations belong in this same category, and founders under time pressure routinely defer them, reasoning there's no real user data yet to protect. That reasoning holds right up until the moment there is real user data, at which point retrofitting authentication and access control into a system not designed for it is a materially larger project than building it correctly from the start - and it's usually needed exactly when the founder has the least spare engineering capacity to do it.
 
-Observability is the third foundation founders skip and later regret. Without basic error tracking and logging from day one, "the demo crashed" becomes a mystery instead of a five-minute diagnosis, and every future incident — investor demo or first paying customer — carries the same risk of an unexplained failure with no data trail to explain it.
+Observability is the third foundation founders skip and later regret. Without basic error tracking and logging from day one, "the demo crashed" becomes a mystery instead of a five-minute diagnosis, and every future incident - investor demo or first paying customer - carries the same risk of an unexplained failure with no data trail to explain it.
 
 ## By the Numbers: What Founders Consistently Underestimate
 
-- Industry experience with early-stage builds consistently shows that products launched without basic error tracking take significantly longer to diagnose their first production incident — often hours instead of minutes.
+- Industry experience with early-stage builds consistently shows that products launched without basic error tracking take significantly longer to diagnose their first production incident - often hours instead of minutes.
 - A schema decision made incorrectly on a core business object and caught only after real user data exists typically requires a migration effort several times larger than getting it right initially.
 - Founders who patch together multiple freelancers without a single technical owner report a disproportionate share of "it worked for the last developer, nobody knows why it broke" incidents.
 - Products that defer authentication and access-control design until "we have real users" tend to ship that foundational work under the highest possible time pressure, precisely when mistakes are most likely.
 
-Bunnik's location next to Utrecht Science Park means a fair number of the founders building here are technical enough to write the first prototype themselves — and technical enough to recognize, usually around month four, that a prototype and a fundable product need different engineering discipline underneath the same UI.
+Bunnik's location next to Utrecht Science Park means a fair number of the founders building here are technical enough to write the first prototype themselves - and technical enough to recognize, usually around month four, that a prototype and a fundable product need different engineering discipline underneath the same UI.
 
 ## Manifera's Split: Dutch Oversight, Vietnamese Build Velocity
 
-- **Amsterdam (Governance/Strategy):** Dutch-based technical leads identify which parts of your MVP are genuinely disposable and which core paths — auth, data model, the primary workflow — require production-grade discipline from day one.
+- **Amsterdam (Governance/Strategy):** Dutch-based technical leads identify which parts of your MVP are genuinely disposable and which core paths - auth, data model, the primary workflow - require production-grade discipline from day one.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds those core paths correctly the first time, with basic observability and error tracking in place before the first demo, not added afterward.
 
-This is a bridge between European product judgment and Vietnam's build velocity — a first version fast enough to fundraise on and solid enough to survive contact with a real investor's account-creation flow. See how Manifera approaches first builds on the [mobile app development](https://www.manifera.com/services/mobile-app-development/) page.
+This is a bridge between European product judgment and Vietnam's build velocity - a first version fast enough to fundraise on and solid enough to survive contact with a real investor's account-creation flow. See how Manifera approaches first builds on the [mobile app development](https://www.manifera.com/services/mobile-app-development/) page.
 
 ## Case Study & Testimonial
 
@@ -61,7 +61,7 @@ Fjordwing Aviation Analytics AS, an early-stage flight-operations analytics star
 Manifera rebuilt the core data-import and analytics pipeline as a properly owned, tested module with real error handling, while leaving the founder's original UI largely intact. The founder's next investor demo included the exact same import flow, deliberately, this time tested against a range of real airline data formats in advance.
 
 > *"The UI was never the problem. Nobody had actually owned the part of the product that mattered most, and we didn't find that out until it mattered most."*
-> — **Founder, Fjordwing Aviation Analytics AS, Norway**
+> - **Founder, Fjordwing Aviation Analytics AS, Norway**
 
 ## Freelance Patchwork vs. Manifera Autonomous Pod
 
@@ -75,13 +75,13 @@ Manifera rebuilt the core data-import and analytics pipeline as a properly owned
 
 ## The Economics
 
-A typical freelance-patchwork first build runs a founder somewhere around €58,000 across seven months once every rebuild cycle from unaddressed core-path mistakes is counted — and it's rarely counted at the outset. A three-person Manifera Autonomous Pod (a senior full-stack engineer, a backend/data engineer, and part-time QA) runs approximately **€27,000 per month**, delivering a properly-owned MVP with core paths built correctly the first time in around **nine weeks** — roughly **30% less total spend** than the typical freelance-patchwork route once rebuild costs are honestly included. Request a [48-hour team proposal](https://www.manifera.com/contact-us/) scoped specifically to your core paths before you patch together another round of freelancers.
+A typical freelance-patchwork first build runs a founder somewhere around €58,000 across seven months once every rebuild cycle from unaddressed core-path mistakes is counted - and it's rarely counted at the outset. A three-person Manifera Autonomous Pod (a senior full-stack engineer, a backend/data engineer, and part-time QA) runs approximately **€27,000 per month**, delivering a properly-owned MVP with core paths built correctly the first time in around **nine weeks** - roughly **30% less total spend** than the typical freelance-patchwork route once rebuild costs are honestly included. Request a [48-hour team proposal](https://www.manifera.com/contact-us/) scoped specifically to your core paths before you patch together another round of freelancers.
 
 ## Frequently Asked Questions
 
 ### (Scenario: Founder deciding what to cut corners on in an MVP) Which parts of a first app build are actually safe to build quickly and roughly?
 
-Anything a real user or investor won't touch on day one — an unused settings page, an internal admin tool, an experimental feature behind a flag. The core transaction flow, authentication, and the underlying data model are not safe to treat this way.
+Anything a real user or investor won't touch on day one - an unused settings page, an internal admin tool, an experimental feature behind a flag. The core transaction flow, authentication, and the underlying data model are not safe to treat this way.
 
 ### (Scenario: Founder unsure whether to invest in security early) Do we really need proper authentication and access control before we have real users?
 

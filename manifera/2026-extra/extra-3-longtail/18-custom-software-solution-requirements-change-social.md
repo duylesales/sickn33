@@ -6,9 +6,9 @@
 ❌ **Rigid Off-the-Shelf SaaS Lock-In:** Generic SaaS tools force custom business logic into restrictive templates with escalating per-seat fees.
 
 **The Manifera Solution:**
-✅ **Modular architecture:** — a system built as loosely coupled modules can have one part changed without cascading rewrites through the rest.
-✅ **Configuration over hardcoding:** — business rules that live in configuration, adjustable without a code deployment, versus rules hardcoded directly into scattered application logic determine, almost entirely, how much a future change actually costs.
-✅ **Documentation of original decisions:** — a system whose architectural choices are documented can be safely extended by people who didn't build it originally.
+✅ **Modular architecture:** - a system built as loosely coupled modules can have one part changed without cascading rewrites through the rest.
+✅ **Configuration over hardcoding:** - business rules that live in configuration, adjustable without a code deployment, versus rules hardcoded directly into scattered application logic determine, almost entirely, how much a future change actually costs.
+✅ **Documentation of original decisions:** - a system whose architectural choices are documented can be safely extended by people who didn't build it originally.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

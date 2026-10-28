@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Groningen is een van de jongste steden van Nederland, en dat zie je aan de startups. Een opvallend aantal AI-gebouwde apps komt uit studentenhuizen bij de Zernike-campus en in de binnenstad: tools om een kamer te vinden, studieplanners, apps voor verenigingsbeheer, tweedehandsmarktplaatsen. Ze zijn in een paar weken in Bolt of Lovable gebouwd en vinden vaak snel echte gebruikers — omdat de oprichters zelf hun doelgroep zijn. Daarna komt de moeilijke vraag: hoe maak je een AI-applicatie productierijp als je budget een studentenbudget is?
+Groningen is een van de jongste steden van Nederland, en dat zie je aan de startups. Een opvallend aantal AI-gebouwde apps komt uit studentenhuizen bij de Zernike-campus en in de binnenstad: tools om een kamer te vinden, studieplanners, apps voor verenigingsbeheer, tweedehandsmarktplaatsen. Ze zijn in een paar weken in Bolt of Lovable gebouwd en vinden vaak snel echte gebruikers - omdat de oprichters zelf hun doelgroep zijn. Daarna komt de moeilijke vraag: hoe maak je een AI-applicatie productierijp als je budget een studentenbudget is?
 
 Dit artikel gaat over verstandig uitgeven, doen wat je zelf kunt en weten welke hoeken je niet mag afsnijden.
 
@@ -30,7 +30,7 @@ Dit artikel gaat over verstandig uitgeven, doen wat je zelf kunt en weten welke 
 
 Door studenten gebouwde apps verwerken vaak verrassend gevoelige data. Een app om huisgenoten te matchen bevat namen, foto's, telefoonnummers, budgetten en soms voorkeuren voor nationaliteit en geslacht. Een studieplanner bevat cijfers. Een verenigingsapp bevat adressen, bankgegevens voor contributie en foto's van mensen op evenementen.
 
-Ze verspreiden zich ook snel. Eén WhatsApp-bericht aan een studentenvereniging met 2.000 leden kan op één avond honderden aanmeldingen opleveren. Dat betekent dat het moment tussen "vrienden die het testen" en "vreemden die erop vertrouwen" één nacht kan zijn — en de app moet klaar zijn voordat het gebeurt, niet erna.
+Ze verspreiden zich ook snel. Eén WhatsApp-bericht aan een studentenvereniging met 2.000 leden kan op één avond honderden aanmeldingen opleveren. Dat betekent dat het moment tussen "vrienden die het testen" en "vreemden die erop vertrouwen" één nacht kan zijn - en de app moet klaar zijn voordat het gebeurt, niet erna.
 
 ## De Ononderhandelbare Punten: Wat een AI-Applicatie Productierijp Maakt
 
@@ -40,7 +40,7 @@ Als je budget maar een paar dingen dekt, dan zijn dit degene die mensen bescherm
 
 **2. Geen geheime sleutels in de browser.** Zoek in de broncode van je pagina naar `key`, `secret` en `token`. Geheime sleutels voor betaal-, e-mail- of AI-diensten horen op de server, en sleutels die zijn blootgesteld moeten worden vervangen.
 
-**3. Data in de EU, met een back-up die werkt.** Controleer de regio van je database. Voor Nederlandse gebruikers houdt een EU-regio het onder de AVG eenvoudig. Zet back-ups aan en zet er — minstens één keer — een terug.
+**3. Data in de EU, met een back-up die werkt.** Controleer de regio van je database. Voor Nederlandse gebruikers houdt een EU-regio het onder de AVG eenvoudig. Zet back-ups aan en zet er - minstens één keer - een terug.
 
 **4. Verwijderen op verzoek.** Studenten studeren af en vertrekken; ze zullen vragen om verwijderd te worden. Je moet hun data volledig kunnen verwijderen.
 
@@ -50,7 +50,7 @@ Al het andere kan gefaseerd. Deze vier niet.
 
 Veel van productierijpheid is organisatorisch in plaats van technisch, en kost alleen tijd:
 
-- Zet elk account (domein, hosting, database, betalingen) op één e-mailadres dat jij beheert, met tweestapsverificatie. Studentenprojecten verspreiden accounts vaak over de persoonlijke e-mailadressen van medeoprichters — een probleem als iemand afstudeert en naar het buitenland verhuist.
+- Zet elk account (domein, hosting, database, betalingen) op één e-mailadres dat jij beheert, met tweestapsverificatie. Studentenprojecten verspreiden accounts vaak over de persoonlijke e-mailadressen van medeoprichters - een probleem als iemand afstudeert en naar het buitenland verhuist.
 - Schrijf een korte, eerlijke privacyverklaring waarin staat wat je verzamelt, waarom en welke diensten het verwerken. De [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) heeft richtlijnen voor kleine organisaties.
 - Stel een gratis uptimemonitor in die je mailt als de app plat ligt.
 - Leg schriftelijk vast wie waarvoor verantwoordelijk is, vooral als je medeoprichters hebt.
@@ -71,11 +71,11 @@ Schrijf op wat je hebt uitgesteld en waarom. Die lijst is ook nuttig als je late
 
 Het geld dat je aan een engineer uitgeeft, hoort naar dingen te gaan die je echt niet zelf kunt en die echt risico dragen: toegangsregels in de database, geheimen aan de serverkant, betaalbevestiging als je geld ontvangt, en een review die je vertelt wat er verder mis is. De kleinste projecten van LaunchStudio beginnen bij € 800, vooraf vastgelegd; voor een studentenapp met accounts en een database maar zonder betalingen komt een gerichte Launch Ready-opdracht vaak uit rond € 1.000–€ 1.500. De [prijscalculator](https://launchstudio.eu/nl/#calculator) geeft een snelle schatting.
 
-Vergeleken met freelancers — van wie offertes voor een vergelijkbare scope meestal bij € 5.000 beginnen — of bureaus is dit weinig, maar voor een student is het nog steeds echt geld. Daarom is de review zo opgezet dat die je vertelt wat je nu moet oplossen en wat kan wachten, zodat je eerst aan de ononderhandelbare punten uitgeeft.
+Vergeleken met freelancers - van wie offertes voor een vergelijkbare scope meestal bij € 5.000 beginnen - of bureaus is dit weinig, maar voor een student is het nog steeds echt geld. Daarom is de review zo opgezet dat die je vertelt wat je nu moet oplossen en wat kan wachten, zodat je eerst aan de ononderhandelbare punten uitgeeft.
 
 ## Het Groningse Ecosysteem Helpt
 
-Student-ondernemers in Groningen staan er niet alleen voor. De ondernemerschapsprogramma's van de universiteit, incubators en de startupgemeenschap van de stad bieden mentoring, werkplekken en soms kleine subsidies. Veel van deze programma's vragen naar gegevensbescherming en beveiliging voordat ze tijd of geld investeren — een productierijpe app met een duidelijke privacyverklaring geeft je betere antwoorden.
+Student-ondernemers in Groningen staan er niet alleen voor. De ondernemerschapsprogramma's van de universiteit, incubators en de startupgemeenschap van de stad bieden mentoring, werkplekken en soms kleine subsidies. Veel van deze programma's vragen naar gegevensbescherming en beveiliging voordat ze tijd of geld investeren - een productierijpe app met een duidelijke privacyverklaring geeft je betere antwoorden.
 
 ## Een Budgetplan in Drie Fasen
 
@@ -87,7 +87,7 @@ Student-ondernemers krijgen geld vaak in kleine bedragen binnen: spaargeld, een 
 | 2. Veilig geld ontvangen | Voordat je iemand iets laat betalen | Betaalwebhooks, terugbetalingen, bonnen | € 400–€ 1.000 extra |
 | 3. Rustig groeien | Na de eerste omzet | Prestaties, beheertools, betere monitoring | Naar behoefte |
 
-Fase 1 wordt nooit overgeslagen. Fase 2 en 3 worden ingepland op het moment dat je ze echt nodig hebt — en elke fase krijgt een vaste prijs, zodat je weet waaraan je je verbindt.
+Fase 1 wordt nooit overgeslagen. Fase 2 en 3 worden ingepland op het moment dat je ze echt nodig hebt - en elke fase krijgt een vaste prijs, zodat je weet waaraan je je verbindt.
 
 ## Gratis en Goedkope Tools Die Veel Afdekken
 
@@ -115,17 +115,17 @@ Veel veelbelovende studentenprojecten lopen vast, niet door technologie, maar om
 
 ## Zonder Verrassingen Samenwerken met de Universiteit
 
-Heb je de app tijdens je studie gebouwd, controleer dan of er universitaire middelen, begeleiding of onderzoeksdata bij betrokken waren; sommige instellingen hebben IE-regels voor studentenwerk, vooral als het voortkomt uit vakken, scripties of onderzoeksprojecten. Zijn er universitaire data of systemen bij betrokken — studentinformatie, vakgegevens, institutionele logins — vraag dan vroeg aan het betreffende bureau welke voorwaarden gelden. De meeste universiteiten steunen studentenstartups; verrassingen ontstaan vooral als deze vragen laat worden gesteld.
+Heb je de app tijdens je studie gebouwd, controleer dan of er universitaire middelen, begeleiding of onderzoeksdata bij betrokken waren; sommige instellingen hebben IE-regels voor studentenwerk, vooral als het voortkomt uit vakken, scripties of onderzoeksprojecten. Zijn er universitaire data of systemen bij betrokken - studentinformatie, vakgegevens, institutionele logins - vraag dan vroeg aan het betreffende bureau welke voorwaarden gelden. De meeste universiteiten steunen studentenstartups; verrassingen ontstaan vooral als deze vragen laat worden gesteld.
 
 ## Wat een Goed Gedane Studentenapp Onderscheidt
 
-Student-ondernemers die productie serieus nemen, vallen op. Incubators, investeerders en eerste B2B-klanten zien een app met duidelijk eigendom, hosting in de EU, een privacyverklaring die klopt met de werkelijkheid en geen beveiligingsincidenten — en ze behandelen de oprichter als een serieuze ondernemer in plaats van een student met een bijproject. Het is een van de goedkoopste manieren om geloofwaardigheid te winnen, en het stapelt zich op: een schoon trackrecord in het eerste jaar maakt elk later gesprek makkelijker.
+Student-ondernemers die productie serieus nemen, vallen op. Incubators, investeerders en eerste B2B-klanten zien een app met duidelijk eigendom, hosting in de EU, een privacyverklaring die klopt met de werkelijkheid en geen beveiligingsincidenten - en ze behandelen de oprichter als een serieuze ondernemer in plaats van een student met een bijproject. Het is een van de goedkoopste manieren om geloofwaardigheid te winnen, en het stapelt zich op: een schoon trackrecord in het eerste jaar maakt elk later gesprek makkelijker.
 
 ## De Virale Avond: Een Overlevingschecklist
 
 Studentenapps groeien vaak op één avond, via één groepschat. Bereid je op die avond voor voordat hij komt:
 
-1. Rate limits op aanmelden, inloggen en berichten, zodat een piek van echte gebruikers niet op misbruik lijkt — of het wordt.
+1. Rate limits op aanmelden, inloggen en berichten, zodat een piek van echte gebruikers niet op misbruik lijkt - of het wordt.
 2. Transactionele e-mail via een echte aanbieder met genoeg dagelijkse quota voor honderden bevestigingen.
 3. Connection pooling op de database, zodat de honderdste gelijktijdige gebruiker net zo wordt bediend als de eerste.
 4. Foutregistratie en een uptimemelding op je telefoon, zodat je binnen minuten weet als er iets stukgaat.
@@ -136,15 +136,15 @@ Geen van deze dingen is duur, en elk ervan maakt van een mogelijke ramp een behe
 
 ## Toegankelijkheid en Inclusie vanaf het Begin
 
-De Groningse studentenpopulatie is internationaal en divers, inclusief studenten met een beperking die afhankelijk zijn van schermlezers, toetsenbordnavigatie of grotere tekst. AI-gegenereerde interfaces missen vaak labels, contrast en toetsenbordondersteuning. De basis op orde brengen — labels bij formuliervelden, alt-tekst bij afbeeldingen, voldoende contrast, zichtbare focus en foutmeldingen die worden voorgelezen — kost weinig tijdens het productieproject en vergroot je publiek. Het wordt ook steeds vaker verwacht door universiteiten en instellingen die met je app zouden kunnen samenwerken of hem promoten.
+De Groningse studentenpopulatie is internationaal en divers, inclusief studenten met een beperking die afhankelijk zijn van schermlezers, toetsenbordnavigatie of grotere tekst. AI-gegenereerde interfaces missen vaak labels, contrast en toetsenbordondersteuning. De basis op orde brengen - labels bij formuliervelden, alt-tekst bij afbeeldingen, voldoende contrast, zichtbare focus en foutmeldingen die worden voorgelezen - kost weinig tijdens het productieproject en vergroot je publiek. Het wordt ook steeds vaker verwacht door universiteiten en instellingen die met je app zouden kunnen samenwerken of hem promoten.
 
 ## Wanneer een Studentenapp een Bedrijf Wordt
 
-Op een gegeven moment heeft een succesvolle studentenapp een rechtsvorm, een bankrekening, facturen en contracten nodig. Die overgang is ook het moment waarop productiedetails voor buitenstaanders tellen: een boekhouder heeft betaalgegevens nodig die kloppen, een universitaire partner wil een verwerkersovereenkomst en een investeerder wil weten wie de eigenaar is van wat. Was de app al gebouwd op accounts van het bedrijf met gedocumenteerde datastromen, dan is die overgang papierwerk. Zo niet, dan wordt het archeologie — accounts, sleutels en data natrekken over persoonlijke e-mailadressen en voormalige medeoprichters. De boel in de studentenfase goed inrichten, is de goedkoopste manier om de bedrijfsfase makkelijk te maken.
+Op een gegeven moment heeft een succesvolle studentenapp een rechtsvorm, een bankrekening, facturen en contracten nodig. Die overgang is ook het moment waarop productiedetails voor buitenstaanders tellen: een boekhouder heeft betaalgegevens nodig die kloppen, een universitaire partner wil een verwerkersovereenkomst en een investeerder wil weten wie de eigenaar is van wat. Was de app al gebouwd op accounts van het bedrijf met gedocumenteerde datastromen, dan is die overgang papierwerk. Zo niet, dan wordt het archeologie - accounts, sleutels en data natrekken over persoonlijke e-mailadressen en voormalige medeoprichters. De boel in de studentenfase goed inrichten, is de goedkoopste manier om de bedrijfsfase makkelijk te maken.
 
 ## Het Voordeel van de Student-Ondernemer
 
-Student-ondernemers hebben één echt voordeel: ze zijn hun eigen gebruikers en kunnen goedkoop met honderden medestudenten testen. Combineer die nabijheid met een productierijpe basis, en een klein budget komt veel verder dan de meeste mensen verwachten — vaak verder dan een goed gefinancierd team dat de basis oversloeg.
+Student-ondernemers hebben één echt voordeel: ze zijn hun eigen gebruikers en kunnen goedkoop met honderden medestudenten testen. Combineer die nabijheid met een productierijpe basis, en een klein budget komt veel verder dan de meeste mensen verwachten - vaak verder dan een goed gefinancierd team dat de basis oversloeg.
 
 ## Wie Er Achter LaunchStudio Zit
 
@@ -158,16 +158,16 @@ Weet je niet waar je moet beginnen, [stuur ons dan de link naar je prototype](ht
 
 Wessel Postma, derdejaarsstudent aan de Rijksuniversiteit Groningen, bouwde Kamerzoeker in Bolt: studenten die een kamer zoeken maken profielen aan met foto's, budgetten en verhuisdata, en huidige bewoners die een nieuwe huisgenoot zoeken bladeren erdoorheen en sturen ze berichten. Hij deelde het op een dinsdagavond in de groepschats van twee studentenverenigingen. Op donderdag hadden 1.300 studenten zich aangemeld.
 
-Toen wees een vriend die informatica studeerde hem erop dat elk profiel — inclusief telefoonnummers en het veld "privénotities" waarin mensen hun situatie beschreven — zonder in te loggen via een API-endpoint kon worden opgehaald. De Supabase anon key in de pagina was geen probleem; de ontbrekende row level security-policy's wel. De database stond in een Amerikaanse regio, profielfoto's stonden in een openbare bucket en er was geen manier om een account te verwijderen.
+Toen wees een vriend die informatica studeerde hem erop dat elk profiel - inclusief telefoonnummers en het veld "privénotities" waarin mensen hun situatie beschreven - zonder in te loggen via een API-endpoint kon worden opgehaald. De Supabase anon key in de pagina was geen probleem; de ontbrekende row level security-policy's wel. De database stond in een Amerikaanse regio, profielfoto's stonden in een openbare bucket en er was geen manier om een account te verwijderen.
 
 Wessel had ongeveer € 1.500 gespaard voor het project. De review van LaunchStudio bevestigde de bevindingen en zette ze op volgorde. Binnen het budget zette het team row level security aan, zodat profielen alleen zichtbaar waren voor ingelogde gebruikers en privévelden alleen voor hun eigenaar, verplaatste het foto's naar privéopslag met ondertekende links, migreerde het de database naar een EU-regio met back-ups en een geteste restore, en voegde het volledige accountverwijdering toe. Wessel deed de rest zelf: hij bracht de accounts onder bij een project-e-mailadres met tweestapsverificatie, schreef een privacyverklaring en stelde een gratis uptimemonitor in. Prestatiewerk en een geplande upgrade van de berichtenfunctie werden met een schriftelijke notitie uitgesteld.
 
 **Resultaat:** Kamerzoeker bereikte 4.800 gebruikers bij de start van het volgende academische jaar, zonder datalekken. Een lokale incubator nam Wessel op in zijn programma en noemde de duidelijke privacyinrichting als een van de redenen om het project serieus te nemen.
 
 > *"Ik had een virale app en een heel kleine bankrekening. Ze losten precies de dingen op die mensen konden schaden en vertelden me wat kon wachten. Dat was het hele budget, goed besteed."*
-> — **Wessel Postma, Oprichter, Kamerzoeker (Groningen)**
+> - **Wessel Postma, Oprichter, Kamerzoeker (Groningen)**
 
-**Kosten & Tijdlijn:** € 1.200 (Launch Ready-pakket: toegangsbeheer, opslag, datamigratie en verwijdering) — afgerond in 6 werkdagen.
+**Kosten & Tijdlijn:** € 1.200 (Launch Ready-pakket: toegangsbeheer, opslag, datamigratie en verwijdering) - afgerond in 6 werkdagen.
 
 ## Veelgestelde Vragen
 

@@ -56,7 +56,7 @@ Het produceren van de overdrachtsdocumentatie lost het onmiddellijke probleem op
 De herstelling is niet het periodiek herschrijven van het gehele document – dat is exact het soort onglamoureus onderhoud dat voor onbepaalde tijd wordt uitgesteld. Het is het toevoegen van een korte beslissingslogboek-invoer aan elke wijziging die de bestaande documentatie verkeerd zou maken, geschreven op het moment dat de wijziging wordt gemaakt, wanneer de redenering nog vers in het geheugen ligt:
 
 ```
-## 2026-08-04 — Facturatiewachtrij gesplitst van gebruiks-meetwachtrij
+## 2026-08-04 - Facturatiewachtrij gesplitst van gebruiks-meetwachtrij
 Reden: een meetfout liet facturatietaken tijdelijk vastlopen; het isoleren
 ervan betekent dat een meetstoring een betaling niet meer kan vertragen.
 Bestanden aangeraakt: /server/queues/billing.ts, /server/queues/metering.ts
@@ -78,9 +78,9 @@ LaunchStudio werd ingeschakeld om KlantSignaal's codebase van buitenaf door te l
 **Resultaat:** Rick's volgende werknemer werkte binnen drie dagen in met behulp van de documentatie die LaunchStudio produceerde, in plaats van de twee weken die zijn eerste werknemer nodig had met niets om vanuit te werken.
 
 > *"Mijn eerste werknemer moest in feite een archeoloog worden voordat hij een ontwikkelaar kon worden. Ik wil iemand daar nooit meer doorheen laten gaan."*
-> — **Rick Nieuwenhuis, Oprichter, KlantSignaal (Winschoten)**
+> - **Rick Nieuwenhuis, Oprichter, KlantSignaal (Winschoten)**
 
-**Kosten en tijdlijn:** € 1.050 (volledige codebase-doorlezing en overdrachtsdocumentatie, inclusief architectuurkaart en het markeren van technische schuld) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (volledige codebase-doorlezing en overdrachtsdocumentatie, inclusief architectuurkaart en het markeren van technische schuld) - voltooid in 6 werkdagen.
 
 ---
 

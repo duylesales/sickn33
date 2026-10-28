@@ -1,4 +1,4 @@
-🚨 Marit Sluijter ran Vakwijzer, a training-administration tool built in Lovable for 14 training providers around Apeldoorn. When potential clients asked ChatGPT, Perplexity, or Google about Vakwijzer, AI answer engines returned outdated details from a defunct competitor — because the app completely lacked structured JSON-LD schema markup and machine-readable entity metadata. 😳
+🚨 Marit Sluijter ran Vakwijzer, a training-administration tool built in Lovable for 14 training providers around Apeldoorn. When potential clients asked ChatGPT, Perplexity, or Google about Vakwijzer, AI answer engines returned outdated details from a defunct competitor - because the app completely lacked structured JSON-LD schema markup and machine-readable entity metadata. 😳
 
 Traditional SEO targets keywords; AI Answer Engine Optimization (AEO) targets structured knowledge entities. Here's how to feed answer engines: 🧠
 

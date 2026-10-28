@@ -16,7 +16,7 @@ Hoe robuuste caching er wél uitziet:
 ✅ Cache-aside hanteren met expliciete invalidatie bij updates én een korte TTL (30–60s) als vangnet
 ✅ De 'Twee-Accounts Test' draaien vóór elke deploy: met twee verschillende browsers tegelijk inloggen en controleren
 
-Bij **LaunchStudio**, ondersteund door Manifera, auditen en beveiligen onze senior engineers uw cachinglagen en Redis-implementaties — zonder dat uw interface gewijzigd hoeft te worden.
+Bij **LaunchStudio**, ondersteund door Manifera, auditen en beveiligen onze senior engineers uw cachinglagen en Redis-implementaties - zonder dat uw interface gewijzigd hoeft te worden.
 
 💡 Zo hielpen we e-commerce platform Metrivue een accuut dashboard-datalek binnen enkele uren permanent te dichten en structureel te voorkomen.
 

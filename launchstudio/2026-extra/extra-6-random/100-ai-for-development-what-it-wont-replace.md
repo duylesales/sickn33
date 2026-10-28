@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "What 'AI for Development' Will and Won't Replace, According to the People Who Do This Full-Time",
-  "description": "After 100 articles on taking AI-built products to production, here is the honest answer on what AI for development actually replaces — the typing, not the judgment.",
+  "description": "After 100 articles on taking AI-built products to production, here is the honest answer on what AI for development actually replaces - the typing, not the judgment.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
@@ -20,11 +20,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-This is the hundredth article in this series, and it feels right to close it with the plainest possible answer to the question underneath all the others: what does "AI for development" actually replace, and what does it leave for a human to still decide? After ninety-nine articles built around real gaps in real AI-built products — race conditions, missing ownership checks, secrets left in config files, free tiers that buckle at the worst moment — one pattern holds across every single one of them. AI for development replaces the typing. It has not yet replaced the judgment.
+This is the hundredth article in this series, and it feels right to close it with the plainest possible answer to the question underneath all the others: what does "AI for development" actually replace, and what does it leave for a human to still decide? After ninety-nine articles built around real gaps in real AI-built products - race conditions, missing ownership checks, secrets left in config files, free tiers that buckle at the worst moment - one pattern holds across every single one of them. AI for development replaces the typing. It has not yet replaced the judgment.
 
 ## The typing was always the smaller part of the job
 
-Writing syntactically correct code that does roughly what you described has never been the hard part of building software, even though it used to eat the most hours. AI tools have absorbed that part almost completely, and that's a genuine, durable shift — not a fad, not a phase that reverses. Founders can now get to a working prototype in an afternoon that used to take weeks. That's real, and it's not going away.
+Writing syntactically correct code that does roughly what you described has never been the hard part of building software, even though it used to eat the most hours. AI tools have absorbed that part almost completely, and that's a genuine, durable shift - not a fad, not a phase that reverses. Founders can now get to a working prototype in an afternoon that used to take weeks. That's real, and it's not going away.
 
 ## The judgment was always the harder part, and it's still ours
 
@@ -36,42 +36,42 @@ It's tempting to assume that as AI tools improve, the judgment layer will shrink
 
 ## What "AI for development" will keep meaning, going forward
 
-Expect the phrase to keep meaning exactly what it means today: a dramatic acceleration of the part of building software that was always mechanical, paired with an unchanged need for the part that was always a judgment call. The honest advice, a hundred articles in, hasn't changed from article one — build fast with AI, and get a second, experienced set of eyes on the decisions the AI was never going to make for you.
+Expect the phrase to keep meaning exactly what it means today: a dramatic acceleration of the part of building software that was always mechanical, paired with an unchanged need for the part that was always a judgment call. The honest advice, a hundred articles in, hasn't changed from article one - build fast with AI, and get a second, experienced set of eyes on the decisions the AI was never going to make for you.
 
-"We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera. It's a fitting note to close a hundred-article series on: the typing got solved. The maturity — the architecture, the security, the judgment — is still the job.
+"We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera. It's a fitting note to close a hundred-article series on: the typing got solved. The maturity - the architecture, the security, the judgment - is still the job.
 
-LaunchStudio, out of its European headquarters in Amsterdam, exists specifically for that second part — the parts of a project no coding tool decides on its own. If you've built something with Lovable, Bolt, Cursor, or v0 and you're not sure where the judgment gaps are in your own product, our [free advice offer](https://launchstudio.eu/en/#contact) is a fast way to find out, and Manifera's [about us page](https://www.manifera.com/about-us/) tells the longer story of the eleven years behind that judgment.
+LaunchStudio, out of its European headquarters in Amsterdam, exists specifically for that second part - the parts of a project no coding tool decides on its own. If you've built something with Lovable, Bolt, Cursor, or v0 and you're not sure where the judgment gaps are in your own product, our [free advice offer](https://launchstudio.eu/en/#contact) is a fast way to find out, and Manifera's [about us page](https://www.manifera.com/about-us/) tells the longer story of the eleven years behind that judgment.
 
 ## The Judgment Calls That Keep Showing Up, Organized by Category
 
 A hundred articles of individual stories eventually reveal a shape underneath them, and it's worth naming that shape plainly rather than leaving it scattered across a hundred separate examples. The judgment calls that AI tools consistently don't make on their own sort into four recurring categories, and almost every production incident in this series falls into one of them.
 
-**Concurrency and shared state.** What happens when two people, two processes, or two requests touch the same thing at nearly the same moment. This category produces some of the most stubborn bugs precisely because single-user testing, by definition, never triggers it — the AI generates code that's correct for one actor at a time, and correctness under contention is a separate property nobody asked for explicitly.
+**Concurrency and shared state.** What happens when two people, two processes, or two requests touch the same thing at nearly the same moment. This category produces some of the most stubborn bugs precisely because single-user testing, by definition, never triggers it - the AI generates code that's correct for one actor at a time, and correctness under contention is a separate property nobody asked for explicitly.
 
-**Boundaries and access.** Who is allowed to see or do what, checked deliberately rather than assumed from context. Login checks are near-universal in AI-generated code; ownership and permission checks specific to a feature's actual business rules are not, because they can't be pattern-matched the same way — they have to be reasoned through, feature by feature, by someone who understands what the boundary is actually supposed to be.
+**Boundaries and access.** Who is allowed to see or do what, checked deliberately rather than assumed from context. Login checks are near-universal in AI-generated code; ownership and permission checks specific to a feature's actual business rules are not, because they can't be pattern-matched the same way - they have to be reasoned through, feature by feature, by someone who understands what the boundary is actually supposed to be.
 
-**Failure and degradation.** What the system does when something outside its control goes wrong — a payment processor times out, a platform has an outage, a dependency gets throttled. AI tools generate the success path readily and generate deliberate failure handling far less readily, because the success path is what a prompt implicitly describes and the failure path has to be asked for separately.
+**Failure and degradation.** What the system does when something outside its control goes wrong - a payment processor times out, a platform has an outage, a dependency gets throttled. AI tools generate the success path readily and generate deliberate failure handling far less readily, because the success path is what a prompt implicitly describes and the failure path has to be asked for separately.
 
-**Tool and infrastructure fit.** Whether the underlying choices — a custom model versus an API, a free tier versus dedicated infrastructure, one coding tool versus another — actually match what the product needs at its current and near-future scale, rather than what was easiest or most impressive-sounding to reach for at the start.
+**Tool and infrastructure fit.** Whether the underlying choices - a custom model versus an API, a free tier versus dedicated infrastructure, one coding tool versus another - actually match what the product needs at its current and near-future scale, rather than what was easiest or most impressive-sounding to reach for at the start.
 
-Every incident recounted across this series lives in one of these four categories, which is itself the point: the specific stories change, but the shape underneath them has stayed remarkably consistent across a hundred different products, founders, and AI tools. That consistency is useful information in its own right — it means a founder reviewing their own product doesn't need to guess at what to look for. The same four categories that explain the last hundred incidents are a reasonable checklist for finding the next one before it finds your users first.
+Every incident recounted across this series lives in one of these four categories, which is itself the point: the specific stories change, but the shape underneath them has stayed remarkably consistent across a hundred different products, founders, and AI tools. That consistency is useful information in its own right - it means a founder reviewing their own product doesn't need to guess at what to look for. The same four categories that explain the last hundred incidents are a reasonable checklist for finding the next one before it finds your users first.
 
-What's notable is how little the four categories have to do with which AI tool built the product. A founder using Cursor and a founder using Bolt end up asking the same four questions about their own codebase, because the categories describe gaps in judgment, not gaps in any particular tool's capability. That's also why the fix rarely means abandoning the AI tool that built the prototype — it means adding the judgment layer on top of it, once, and keeping it there as the product keeps growing past what any single prompt was ever asked to anticipate.
+What's notable is how little the four categories have to do with which AI tool built the product. A founder using Cursor and a founder using Bolt end up asking the same four questions about their own codebase, because the categories describe gaps in judgment, not gaps in any particular tool's capability. That's also why the fix rarely means abandoning the AI tool that built the prototype - it means adding the judgment layer on top of it, once, and keeping it there as the product keeps growing past what any single prompt was ever asked to anticipate.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Where the Typing Stopped Being Enough
 
-Roan Beemster, founder in Beemster, built WeideBeheer — a pasture-management tool for small dairy farms — with Bolt, across several iterations over several months. Each iteration got faster to produce than the last, and each one solved the typing problem completely: the interface worked, the data entry flowed, the pasture-rotation calendar displayed correctly. What Roan noticed, iteration after iteration, was that the parts of WeideBeheer that actually determined whether farmers trusted it with real decisions — how the app handled a farmer's return after a period offline, how it reconciled conflicting entries from two people managing the same herd, how it protected sensitive herd and yield data from other farms sharing the platform — never got solved by typing faster. They needed someone to sit with the specific judgment calls WeideBeheer's users actually faced and decide, deliberately, how the software should behave.
+Roan Beemster, founder in Beemster, built WeideBeheer - a pasture-management tool for small dairy farms - with Bolt, across several iterations over several months. Each iteration got faster to produce than the last, and each one solved the typing problem completely: the interface worked, the data entry flowed, the pasture-rotation calendar displayed correctly. What Roan noticed, iteration after iteration, was that the parts of WeideBeheer that actually determined whether farmers trusted it with real decisions - how the app handled a farmer's return after a period offline, how it reconciled conflicting entries from two people managing the same herd, how it protected sensitive herd and yield data from other farms sharing the platform - never got solved by typing faster. They needed someone to sit with the specific judgment calls WeideBeheer's users actually faced and decide, deliberately, how the software should behave.
 
-That recognition — that AI for development had replaced the typing on WeideBeheer completely, but left every judgment call exactly where it started — is what eventually brought Roan to LaunchStudio. LaunchStudio's engineers, backed by Manifera, worked through WeideBeheer's data-reconciliation logic, tightened access so one farm's herd and yield data stayed genuinely separate from another's, and built in a clear, tested behavior for what happens when a farmer's offline entries meet the live calendar again.
+That recognition - that AI for development had replaced the typing on WeideBeheer completely, but left every judgment call exactly where it started - is what eventually brought Roan to LaunchStudio. LaunchStudio's engineers, backed by Manifera, worked through WeideBeheer's data-reconciliation logic, tightened access so one farm's herd and yield data stayed genuinely separate from another's, and built in a clear, tested behavior for what happens when a farmer's offline entries meet the live calendar again.
 
 **Result:** WeideBeheer moved from a fast but judgment-thin prototype to a production tool multiple dairy farms now run their actual operations on, with the decisions that mattered made deliberately rather than left to whatever the AI happened to generate first.
 
-> *"Bolt never slowed me down once. It also never once told me what to do about two farmers editing the same herd record. That part was always going to be mine to figure out — or to hand to someone who does this full-time."*
-> — **Roan Beemster, Founder, WeideBeheer (Beemster)**
+> *"Bolt never slowed me down once. It also never once told me what to do about two farmers editing the same herd record. That part was always going to be mine to figure out - or to hand to someone who does this full-time."*
+> - **Roan Beemster, Founder, WeideBeheer (Beemster)**
 
-**Cost & Timeline:** €1,600 (data-reconciliation logic, access separation, and production hardening) — completed in 7 business days.
+**Cost & Timeline:** €1,600 (data-reconciliation logic, access separation, and production hardening) - completed in 7 business days.
 
 ---
 
@@ -87,11 +87,11 @@ Across the hundred products covered in this series, the pattern points the other
 
 ### Why does Herre Roelevink say the challenge has shifted from building software to maturing it?
 
-Because AI tools have largely solved the problem of turning an idea into working software quickly. What's left, according to Roelevink, CEO of LaunchStudio and Managing Director of Manifera, is the architecture and security work needed to bring that software to production maturity — the part Manifera has built eleven years of experience around.
+Because AI tools have largely solved the problem of turning an idea into working software quickly. What's left, according to Roelevink, CEO of LaunchStudio and Managing Director of Manifera, is the architecture and security work needed to bring that software to production maturity - the part Manifera has built eleven years of experience around.
 
 ### How does LaunchStudio help with the judgment calls AI tools don't make?
 
-LaunchStudio's engineers, backed by Manifera's 120+ engineers and 160+ delivered projects, review AI-generated products for exactly the decisions covered across this series — concurrency, ownership checks, infrastructure sizing, security practice — and fix what's missing without rebuilding the founder's frontend.
+LaunchStudio's engineers, backed by Manifera's 120+ engineers and 160+ delivered projects, review AI-generated products for exactly the decisions covered across this series - concurrency, ownership checks, infrastructure sizing, security practice - and fix what's missing without rebuilding the founder's frontend.
 
 ### Where is LaunchStudio based, and does location matter for this kind of work?
 

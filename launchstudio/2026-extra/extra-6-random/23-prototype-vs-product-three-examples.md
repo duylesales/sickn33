@@ -20,29 +20,29 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"It works" and "it's a product" are not the same sentence, even though founders use them interchangeably all the time. The cleanest way to see the difference isn't a definition — it's watching the same app pass through all three phases. Yara Smeets, a founder in Dordrecht, did exactly that with her hospitality booking tool, GastVrij. Her app went from a weekend Lovable build, to a Bolt-rebuilt MVP, to a LaunchStudio-hardened production platform, and each phase changed what "it works" actually meant.
+"It works" and "it's a product" are not the same sentence, even though founders use them interchangeably all the time. The cleanest way to see the difference isn't a definition - it's watching the same app pass through all three phases. Yara Smeets, a founder in Dordrecht, did exactly that with her hospitality booking tool, GastVrij. Her app went from a weekend Lovable build, to a Bolt-rebuilt MVP, to a LaunchStudio-hardened production platform, and each phase changed what "it works" actually meant.
 
 ## Example one: the weekend prototype, where "it works" means "it works for me, once"
 
-Yara built the first version of GastVrij in Lovable over a single weekend, describing the booking flow she imagined for small bed-and-breakfast owners and accepting most of what the AI generated. It worked — she could create a listing, set availability, and simulate a booking. But "worked" here meant exactly one thing: it worked when Yara herself clicked through it, on her own laptop, with data she'd typed in five minutes earlier. There was no real database security, no payment processing, and no consideration for what happens when two people try to book the same room at the same time. This is a prototype's entire job: prove the idea is worth building further, nothing more.
+Yara built the first version of GastVrij in Lovable over a single weekend, describing the booking flow she imagined for small bed-and-breakfast owners and accepting most of what the AI generated. It worked - she could create a listing, set availability, and simulate a booking. But "worked" here meant exactly one thing: it worked when Yara herself clicked through it, on her own laptop, with data she'd typed in five minutes earlier. There was no real database security, no payment processing, and no consideration for what happens when two people try to book the same room at the same time. This is a prototype's entire job: prove the idea is worth building further, nothing more.
 
 ## Example two: the Bolt-rebuilt MVP, where "it works" means "it works for other people, mostly"
 
-Once three bed-and-breakfast owners agreed to try GastVrij for real, Yara rebuilt the core booking flow in Bolt, this time testing it with actual users instead of just herself. This phase surfaced problems the weekend prototype never could have: a double-booking bug when two guests requested the same date range, a login flow that broke on certain email providers, a calendar sync that silently failed for one host. Each of these got patched as they appeared. The MVP phase is defined by this pattern — real usage revealing real edge cases, fixed reactively, one at a time. It's a meaningfully more real product than the prototype, but it's still being debugged in production by its own early users.
+Once three bed-and-breakfast owners agreed to try GastVrij for real, Yara rebuilt the core booking flow in Bolt, this time testing it with actual users instead of just herself. This phase surfaced problems the weekend prototype never could have: a double-booking bug when two guests requested the same date range, a login flow that broke on certain email providers, a calendar sync that silently failed for one host. Each of these got patched as they appeared. The MVP phase is defined by this pattern - real usage revealing real edge cases, fixed reactively, one at a time. It's a meaningfully more real product than the prototype, but it's still being debugged in production by its own early users.
 
 ## Example three: the production-hardened platform, where "it works" means "it works even when something goes wrong"
 
-The final phase is where the meaning of "it works" changes most dramatically. A production-ready GastVrij doesn't just handle the booking flow correctly when everything goes right — it handles what happens when a payment fails halfway through, when a host's account is compromised, when ten guests hit the booking page in the same second, when a database query gets crafted maliciously instead of innocently. This is the difference between an app that works and a product that's ready to be trusted with other people's money and data. It's also the least visible phase to a non-technical founder, because from the outside, a hardened app and an unhardened one can look identical right up until something breaks.
+The final phase is where the meaning of "it works" changes most dramatically. A production-ready GastVrij doesn't just handle the booking flow correctly when everything goes right - it handles what happens when a payment fails halfway through, when a host's account is compromised, when ten guests hit the booking page in the same second, when a database query gets crafted maliciously instead of innocently. This is the difference between an app that works and a product that's ready to be trusted with other people's money and data. It's also the least visible phase to a non-technical founder, because from the outside, a hardened app and an unhardened one can look identical right up until something breaks.
 
-That third phase is exactly what LaunchStudio specializes in: taking an AI-generated MVP through security hardening, proper authentication, payment integration, and database protection — without touching the frontend a founder has already built and validated with real users. LaunchStudio is backed by Manifera's team of 120+ engineers, with production engineering roots that trace back through 160+ delivered projects, and its main engineering center operates out of Ho Chi Minh City. If your app is somewhere between example two and example three right now, you can [send us your prototype link and get free advice](https://launchstudio.eu/en/#contact) on which phase you're actually in.
+That third phase is exactly what LaunchStudio specializes in: taking an AI-generated MVP through security hardening, proper authentication, payment integration, and database protection - without touching the frontend a founder has already built and validated with real users. LaunchStudio is backed by Manifera's team of 120+ engineers, with production engineering roots that trace back through 160+ delivered projects, and its main engineering center operates out of Ho Chi Minh City. If your app is somewhere between example two and example three right now, you can [send us your prototype link and get free advice](https://launchstudio.eu/en/#contact) on which phase you're actually in.
 
-Manifera's own [portfolio](https://www.manifera.com/portfolio/) shows what that same hardening discipline looks like applied to enterprise clients — the same rigor, just scaled to a founder's budget and timeline through LaunchStudio.
+Manifera's own [portfolio](https://www.manifera.com/portfolio/) shows what that same hardening discipline looks like applied to enterprise clients - the same rigor, just scaled to a founder's budget and timeline through LaunchStudio.
 
 ## Five Quick Checks That Reveal Which Phase You're Actually In
 
 You don't need to wait for someone else to tell you which of the three phases above your own app is actually in. A handful of five-minute checks, run yourself, right now, will tell you more honestly than how polished the app feels.
 
-1. **Open two browser tabs, log in as the same test account in both, and try to do the same action in both at once.** Book the same slot, submit the same form, claim the same item — whatever your product's core conflict point is. A prototype usually lets both succeed, silently creating a conflict neither side sees. Noticing this yourself, deliberately, tells you more than months of solo use ever will.
+1. **Open two browser tabs, log in as the same test account in both, and try to do the same action in both at once.** Book the same slot, submit the same form, claim the same item - whatever your product's core conflict point is. A prototype usually lets both succeed, silently creating a conflict neither side sees. Noticing this yourself, deliberately, tells you more than months of solo use ever will.
 
 2. **Try logging in with an email address that has unusual capitalization or extra spaces.** Something as small as this trips up more AI-generated login flows than founders expect, and it's a rough proxy for how much real-world messiness the rest of your app has actually been tested against versus how much it's only ever seen the clean, careful input you type yourself.
 
@@ -52,7 +52,7 @@ You don't need to wait for someone else to tell you which of the three phases ab
 
 5. **Try to access another test account's data by guessing at or editing an ID in the address bar.** This is the single most revealing check on this list, because it tests something no amount of positive user feedback will ever surface: whether your app enforces who can see what, or whether it simply trusts that nobody would think to try.
 
-None of these five checks require technical skill beyond patience and a willingness to deliberately try to break your own product instead of only ever using it the way it was designed to be used. Most prototypes fail two or more of these checks, and that's expected — it's not a verdict on the product's potential, just an honest read on which phase it's actually in today, as opposed to which phase it feels like it's in after months of it simply working for you personally.
+None of these five checks require technical skill beyond patience and a willingness to deliberately try to break your own product instead of only ever using it the way it was designed to be used. Most prototypes fail two or more of these checks, and that's expected - it's not a verdict on the product's potential, just an honest read on which phase it's actually in today, as opposed to which phase it feels like it's in after months of it simply working for you personally.
 
 ## Real example
 
@@ -60,16 +60,16 @@ None of these five checks require technical skill beyond patience and a willingn
 
 By the time GastVrij's Bolt-built MVP had eight hosts actively using it, Yara realized the app was handling something the weekend prototype and even the MVP were never designed for: real payments and real guest data at the same time, for multiple properties simultaneously. She brought in LaunchStudio to take the product through production hardening before opening bookings to the public.
 
-The audit found the booking database had no row-level security — any authenticated host could technically query another host's guest list and payment history simply by changing an ID in a request. It also found the payment flow had no handling for a card being declined mid-booking, which would have left a room marked unavailable with no payment actually collected. LaunchStudio's engineers implemented row-level security policies scoped to each host's account, added proper webhook handling for failed and delayed payments, and set up structured error logging so Yara could see problems before guests reported them.
+The audit found the booking database had no row-level security - any authenticated host could technically query another host's guest list and payment history simply by changing an ID in a request. It also found the payment flow had no handling for a card being declined mid-booking, which would have left a room marked unavailable with no payment actually collected. LaunchStudio's engineers implemented row-level security policies scoped to each host's account, added proper webhook handling for failed and delayed payments, and set up structured error logging so Yara could see problems before guests reported them.
 
-None of this changed how GastVrij looked or felt to use — the frontend Yara and her hosts had already grown attached to stayed untouched. What changed was everything underneath it.
+None of this changed how GastVrij looked or felt to use - the frontend Yara and her hosts had already grown attached to stayed untouched. What changed was everything underneath it.
 
 **Result:** GastVrij opened public bookings across all eight properties with row-level data isolation and verified payment handling in place, with zero data-exposure incidents in its first three months live.
 
-> *"The weekend version worked. The Bolt version worked for real people. But this was the first version that would still work if something went wrong — and something always eventually goes wrong."*
-> — **Yara Smeets, Founder, GastVrij (Dordrecht)**
+> *"The weekend version worked. The Bolt version worked for real people. But this was the first version that would still work if something went wrong - and something always eventually goes wrong."*
+> - **Yara Smeets, Founder, GastVrij (Dordrecht)**
 
-**Cost & Timeline:** €2,100 (security audit, row-level security implementation, and payment webhook hardening) — completed in 9 business days.
+**Cost & Timeline:** €2,100 (security audit, row-level security implementation, and payment webhook hardening) - completed in 9 business days.
 
 ---
 
@@ -77,7 +77,7 @@ None of this changed how GastVrij looked or felt to use — the frontend Yara an
 
 ### What's the real difference between a prototype and a product?
 
-A prototype proves an idea works when you test it yourself. A product works reliably for other people, including when things go wrong — failed payments, malicious requests, simultaneous users, and edge cases nobody anticipated.
+A prototype proves an idea works when you test it yourself. A product works reliably for other people, including when things go wrong - failed payments, malicious requests, simultaneous users, and edge cases nobody anticipated.
 
 ### Can an app "work" and still not be production-ready?
 
@@ -89,7 +89,7 @@ If you're the only person who has used the app, you're likely at prototype stage
 
 ### Does moving to production mean rebuilding the frontend?
 
-No. LaunchStudio's approach, and the one used in Yara Smeets' GastVrij hardening, works underneath the existing frontend — securing the database, auth, and payments without touching what founders and users already know.
+No. LaunchStudio's approach, and the one used in Yara Smeets' GastVrij hardening, works underneath the existing frontend - securing the database, auth, and payments without touching what founders and users already know.
 
 ### Where is LaunchStudio's engineering team based for this kind of work?
 

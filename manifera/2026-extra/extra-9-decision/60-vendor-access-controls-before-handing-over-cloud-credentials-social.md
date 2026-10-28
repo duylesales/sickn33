@@ -1,4 +1,4 @@
-Eleven months after a contractor left, their root-adjacent AWS access was still active. Nothing malicious happened — but the exposure sat there the entire time, invisible. 🔓⚠️
+Eleven months after a contractor left, their root-adjacent AWS access was still active. Nothing malicious happened - but the exposure sat there the entire time, invisible. 🔓⚠️
 
 **The Pain Points:**
 ❌ **Convenience Access:** Broad permissions granted upfront "to move faster" rarely get scoped down later.
@@ -8,7 +8,7 @@ Eleven months after a contractor left, their root-adjacent AWS access was still 
 **The Manifera Solution:**
 ✅ **Least-Privilege by Default:** Only the access a project phase actually needs, with a defined process to request more.
 ✅ **Time-Boxed, Just-in-Time Access:** Elevated permissions expire automatically instead of sitting active indefinitely.
-✅ **Written Offboarding SLA:** A specific deprovisioning window, with verification — not "promptly."
+✅ **Written Offboarding SLA:** A specific deprovisioning window, with verification - not "promptly."
 
 Independent audit logging on your side, always. Trust, but verify. 🔍
 

@@ -6,7 +6,7 @@
 ❌ **Costly Enforcement Penalties:** Regulatory audits impose immediate fines, license suspensions, and reputational damage for unverified discrepancy gaps.
 
 **The Manifera Solution:**
-✅ **Structuring withholding logic around a configurable ruleset per jurisdiction:** Rather than a single hardcoded rate, so jurisdiction-specific requirements — statutory rate, treaty exemption eligibility, reporting-form format — can be applied without a separate, parallel payout pipeline per country.
+✅ **Structuring withholding logic around a configurable ruleset per jurisdiction:** Rather than a single hardcoded rate, so jurisdiction-specific requirements - statutory rate, treaty exemption eligibility, reporting-form format - can be applied without a separate, parallel payout pipeline per country.
 ✅ **Building reliable creator tax-residency verification:** Since correctly applying jurisdiction-specific withholding depends on accurately establishing which jurisdiction actually governs a specific creator's earnings, a determination that carries real legal nuance beyond a self-reported address field.
 ✅ **Designing the system to accommodate evolving withholding requirements over time:** Since tax-treaty terms and statutory withholding rates are genuinely subject to periodic revision, and a system that can only be updated through substantial rework creates real ongoing compliance risk as requirements evolve.
 

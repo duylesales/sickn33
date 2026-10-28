@@ -1,4 +1,4 @@
-🔥 Henry built a prototype using **Bolt** — henry, a marketing consultant, used **bolt** to build a lead finder, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Henry built a prototype using **Bolt** - henry, a marketing consultant, used **bolt** to build a lead finder, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Henry's application achieved silky-smooth performance: Signed up 45 active affiliates, driving a 35% increase in monthly MRR. (€1,200 (Affiliate Tracking Package) — production-ready and deployed in 3 business days.). 🚀
+Henry's application achieved silky-smooth performance: Signed up 45 active affiliates, driving a 35% increase in monthly MRR. (€1,200 (Affiliate Tracking Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/affiliate-marketing-b2b-ai-saas
 

@@ -95,9 +95,9 @@ Het Manifera-team voerde in 14 werkdagen een grondige herstructurering uit:
 **Resultaat:** Toen de onderzoeker de aanval herhaalde, faalden alle drie de schakels: de firewall blokkeerde de prompt, de API weigerde data van derden en de browser blokkeerde het externe netwerkverzoek. Het beveiligingsrisico was wiskundig geëlimineerd.
 
 > *"Het marketingteam dacht dat ze een handige chatbot hadden gelanceerd. Als security-engineer zag ik een open databaseterminal die toegankelijk was voor het hele internet. LaunchStudio begreep de anatomie van AI-aanvallen tot in detail. Ze repareerden niet zomaar een bug, maar bouwden de zware kluisdeuren die nodig zijn om AI veilig zakelijk in te zetten."*
-> — **Marcus Lehmann, Security Engineer, RetailNet (Berlijn)**
+> - **Marcus Lehmann, Security Engineer, RetailNet (Berlijn)**
 
-**Kosten & Doorlooptijd:** €16.500 (Enterprise AI Security Audit & Saneringspakket) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €16.500 (Enterprise AI Security Audit & Saneringspakket) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

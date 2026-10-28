@@ -1,6 +1,6 @@
 🚨 Two "on track" check-ins in a row told Lotte everything was fine. Four days before launch, she learned the email-confirmation service had been silently failing since week two. 😳
 
-"How's it going" is the wrong question — it produces an averaged answer, not the one outlier that actually matters. 🧠
+"How's it going" is the wrong question - it produces an averaged answer, not the one outlier that actually matters. 🧠
 
 ❌ "Good, making progress" hides a week with four smooth days and one seriously blocked one
 ❌ Group calls where individual contributors soften risk in front of their peers

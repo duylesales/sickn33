@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Feature-First, Resilience-Never:** Beautiful platforms that fail exactly when regional disruption makes them most needed.
-❌ **Single-Region Hosting:** No geographic redundancy — a localized event takes down the whole system.
+❌ **Single-Region Hosting:** No geographic redundancy - a localized event takes down the whole system.
 ❌ **Documented, Never Rehearsed:** A disaster-recovery plan that's closer to a hope than a plan.
 
 **The Manifera Solution:**
@@ -10,7 +10,7 @@
 ✅ **Graceful Degradation by Design:** Critical functions survive partial system failures.
 ✅ **Rehearsed Disaster Recovery:** Tested on a regular schedule, not just written down once.
 
-Resilience engineered as a named requirement — not assumed. 🛡️
+Resilience engineered as a named requirement - not assumed. 🛡️
 
 👉 Read our full deep dive on digital transformation partner appingedam: https://www.manifera.com/blog/digital-transformation-partner-appingedam
 

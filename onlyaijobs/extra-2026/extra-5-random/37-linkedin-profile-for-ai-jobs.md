@@ -49,7 +49,7 @@ Three consequences follow.
 
 ## What to Write in Each Section
 
-**Headline.** Not your job title alone. State what you do and the domain: "Machine Learning Engineer — forecasting and time series in logistics" tells a recruiter more in eight words than most summaries do in a paragraph.
+**Headline.** Not your job title alone. State what you do and the domain: "Machine Learning Engineer - forecasting and time series in logistics" tells a recruiter more in eight words than most summaries do in a paragraph.
 
 **Summary.** Four to six sentences. What you work on, the kinds of problems you have solved, the technologies you actually use, and what you are open to. Write in the first person and in plain language.
 
@@ -71,7 +71,7 @@ The summary is where most profiles collapse into interchangeable phrases. A stru
 
 **Sentence one: what you do, concretely.** "I build and operate forecasting systems for a European retailer, covering about eleven thousand product-store combinations."
 
-**Sentences two and three: the kinds of problems you have solved.** Name two or three, with enough specificity that a reader can picture them. Mention the awkward parts — messy data, long feedback loops, regulated environments — because those signal real experience.
+**Sentences two and three: the kinds of problems you have solved.** Name two or three, with enough specificity that a reader can picture them. Mention the awkward parts - messy data, long feedback loops, regulated environments - because those signal real experience.
 
 **Sentence four: how you work.** Whether you own systems in production, who you work with, what you care about technically. Keep it factual.
 
@@ -89,7 +89,7 @@ Describe the shape of the work without the specifics. "Built a classification sy
 
 Use magnitudes rather than exact figures where exact figures are sensitive, and say when something is approximate.
 
-Focus on your contribution and the engineering rather than on the client or the commercial outcome. Naming a client without permission is a genuine problem; describing that you built streaming pipelines for a telecommunications operator usually is not — though check your contract, because some explicitly prohibit even that.
+Focus on your contribution and the engineering rather than on the client or the commercial outcome. Naming a client without permission is a genuine problem; describing that you built streaming pipelines for a telecommunications operator usually is not - though check your contract, because some explicitly prohibit even that.
 
 If in doubt, ask your employer what you may say publicly. Most have a clear answer, and having asked is itself a good sign to a future employer.
 
@@ -141,7 +141,7 @@ Profiles decay. The most common failure is a profile that was accurate three yea
 
 A sustainable habit is to update it twice a year, in a fifteen-minute pass: adjust the headline if your focus has shifted, add one or two bullets for anything significant you shipped, refresh the skills list by deleting what you no longer use, and check that your location and openness statement are correct.
 
-The better habit is to keep a private running note of what you have delivered — a line every month with the project, your contribution and the outcome. This takes two minutes a month and solves the hardest part of updating any professional document, which is remembering what you actually did. It also makes performance reviews and CV updates trivial.
+The better habit is to keep a private running note of what you have delivered - a line every month with the project, your contribution and the outcome. This takes two minutes a month and solves the hardest part of updating any professional document, which is remembering what you actually did. It also makes performance reviews and CV updates trivial.
 
 One more point about timing: update your profile before you need it. A profile rewritten the week you start looking, after a redundancy announcement, is both less considered and more conspicuous than one maintained steadily. The people who benefit most from a good profile are those who were not looking when the right message arrived.
 
@@ -153,7 +153,7 @@ It is not approaching strangers at events with a pitch. It is staying loosely in
 
 Practically: keep in touch with two or three former colleagues per job; attend a local meetup a few times a year in your domain; answer a question when you know the answer; and reply to people who contact you with real questions.
 
-The reason this matters is straightforward. A significant share of AI and data roles in Europe are filled through referrals and direct approaches rather than through open applications, and those channels run on weak ties — people who know roughly what you do and remember you exist.
+The reason this matters is straightforward. A significant share of AI and data roles in Europe are filled through referrals and direct approaches rather than through open applications, and those channels run on weak ties - people who know roughly what you do and remember you exist.
 
 ## How OnlyAIJobs Fits Alongside Your Profile
 

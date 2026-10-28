@@ -33,13 +33,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Helmond is a city of about 95,000 people, roughly fifteen minutes east of Eindhoven, and it holds a position in Dutch automotive research that its size gives no hint of. The national automotive campus is here, along with a stretch of instrumented public road used for connected and automated driving trials. For engineers interested in perception, sensor fusion or traffic systems, this is the most concentrated automotive AI location in the country — and it sits inside the wider Brainport region, which changes the career calculation considerably.
+Helmond is a city of about 95,000 people, roughly fifteen minutes east of Eindhoven, and it holds a position in Dutch automotive research that its size gives no hint of. The national automotive campus is here, along with a stretch of instrumented public road used for connected and automated driving trials. For engineers interested in perception, sensor fusion or traffic systems, this is the most concentrated automotive AI location in the country - and it sits inside the wider Brainport region, which changes the career calculation considerably.
 
 ## Automotive Perception Is a Different Engineering Discipline
 
 Candidates arriving from general machine learning underestimate how much automotive changes the practice, so it is worth setting out precisely.
 
-**Safety cases govern everything.** A perception system contributing to vehicle control must be argued safe, not merely measured accurate. That argument is a formal document, structured against standards, and it constrains design decisions from the start. A model that performs better on a benchmark but cannot be characterised — whose failure modes are not describable — may be unusable regardless of its numbers.
+**Safety cases govern everything.** A perception system contributing to vehicle control must be argued safe, not merely measured accurate. That argument is a formal document, structured against standards, and it constrains design decisions from the start. A model that performs better on a benchmark but cannot be characterised - whose failure modes are not describable - may be unusable regardless of its numbers.
 
 **The tail is the product.** Aggregate accuracy is close to irrelevant. What matters is behaviour in rare, difficult situations: unusual lighting, partial occlusion, atypical road users, degraded sensors, weather. The engineering effort concentrates on the long tail of scenarios that occur infrequently but must not be handled badly. Candidates used to optimising average-case metrics find this genuinely reorienting.
 
@@ -55,7 +55,7 @@ The pattern is that automotive rewards engineers who think about failure first. 
 
 The second half of this market is less discussed and, for some candidates, more accessible.
 
-**Connected vehicle and infrastructure communication.** Vehicles exchanging information with each other and with roadside equipment enables cooperative behaviour — coordinated merging, signal timing adapted to approaching traffic, hazard warnings propagated upstream. The data problems involve latency, partial participation and trust in messages of uncertain provenance.
+**Connected vehicle and infrastructure communication.** Vehicles exchanging information with each other and with roadside equipment enables cooperative behaviour - coordinated merging, signal timing adapted to approaching traffic, hazard warnings propagated upstream. The data problems involve latency, partial participation and trust in messages of uncertain provenance.
 
 **Traffic state estimation.** Inferring flow, density and queue formation across a network from sparse sensors, floating car data and occasional cameras. This is estimation under substantial uncertainty, and it feeds directly into control decisions on signals and ramp metering.
 
@@ -115,7 +115,7 @@ That removes the concentration risk that makes several other specialised regiona
 
 The sequence is more structured than in software hiring, and knowing it helps.
 
-Automotive employers generally screen for three things in order. First, evidence you understand safety-critical development — not necessarily certification experience, but an appreciation that verification and traceability are real constraints rather than process theatre. Second, depth in at least one sensing modality, since breadth without depth is common and less useful. Third, software engineering discipline, because automotive codebases are long-lived and maintained by teams under configuration control.
+Automotive employers generally screen for three things in order. First, evidence you understand safety-critical development - not necessarily certification experience, but an appreciation that verification and traceability are real constraints rather than process theatre. Second, depth in at least one sensing modality, since breadth without depth is common and less useful. Third, software engineering discipline, because automotive codebases are long-lived and maintained by teams under configuration control.
 
 Notably absent from that list is familiarity with the latest model architectures. Automotive timelines are long; a vehicle programme may run for years before production. Employers are consequently less interested in whether you know the most recent techniques than in whether you can build something that will still be defensible in five years.
 
@@ -139,7 +139,7 @@ Closed-track testing lets you construct scenarios deliberately, which is essenti
 
 Simulation helps and is used heavily, but simulation is only as good as its assumptions about how the world behaves, and those assumptions are exactly what real-road data is needed to calibrate. The loop between recorded real-world data, scenario extraction, simulation and re-testing is the core development cycle in this field, and access to the first step is the constraint.
 
-For a candidate, this has a concrete implication. Working somewhere with real-road access means your evaluation work has a grounding that purely simulation-based teams lack, and that experience is credible to employers elsewhere. It also means the data engineering problems are real ones — continuous multi-sensor capture in traffic, not curated datasets.
+For a candidate, this has a concrete implication. Working somewhere with real-road access means your evaluation work has a grounding that purely simulation-based teams lack, and that experience is credible to employers elsewhere. It also means the data engineering problems are real ones - continuous multi-sensor capture in traffic, not curated datasets.
 
 ## What Distinguishes Strong Candidates in This Market
 
@@ -166,7 +166,7 @@ Asking an employer directly how their programme is funded, and what happens to t
 - Automotive perception is governed by safety cases, dominated by rare-scenario behaviour, and often spends more effort on validation than on modelling.
 - The traffic and infrastructure layer is a second, more accessible market suited to systems-level thinkers, with fewer proprietary constraints.
 - Eindhoven at twelve minutes places Helmond inside the Brainport labour market, which removes the concentration risk that affects other specialised regional markets.
-- Employers screen for safety-critical understanding, depth in one sensing modality, and software discipline — not for familiarity with recent architectures.
+- Employers screen for safety-critical understanding, depth in one sensing modality, and software discipline - not for familiarity with recent architectures.
 - Simulation and data infrastructure is an overlooked entry route that is frequently the bottleneck and leads naturally into perception work.
 - Automated driving has a cancellation-cycle history; prefer work with value independent of full autonomy and keep your skills describable outside automotive vocabulary.
 
@@ -185,7 +185,7 @@ Safety cases constrain design from the start, rare-scenario behaviour matters mo
 Less than most specialised regional markets, because Eindhoven is twelve minutes away. You are effectively in the Brainport labour market, so a substantial regional cluster is your fallback rather than a handful of local employers.
 
 ### (Scenario: candidate without automotive experience) Is there a realistic entry route?
-Simulation and data infrastructure work — ingesting and indexing sensor data, deterministic replay, maintaining simulation environments. It needs software and data engineering strength more than domain knowledge, is frequently the bottleneck, and leads naturally into perception.
+Simulation and data infrastructure work - ingesting and indexing sensor data, deterministic replay, maintaining simulation environments. It needs software and data engineering strength more than domain knowledge, is frequently the bottleneck, and leads naturally into perception.
 
 ### (Scenario: candidate preparing for interviews) What should I emphasise?
 How you established that past work functioned, what its failure modes were, and how you would detect degradation in the field. Strong validation stories consistently beat stronger models with weak validation.

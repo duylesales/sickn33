@@ -20,13 +20,13 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Het is donderdagavond 20:40 uur. Twee klanten mailen je binnen vier minuten na elkaar. Je opent je applicatie op je telefoon en staart naar een wit scherm. Het specifieke gevoel dat direct volgt — een klamme, verlammende paniek — is precies de reden waarom dit artikel bestaat.
+Het is donderdagavond 20:40 uur. Twee klanten mailen je binnen vier minuten na elkaar. Je opent je applicatie op je telefoon en staart naar een wit scherm. Het specifieke gevoel dat direct volgt - een klamme, verlammende paniek - is precies de reden waarom dit artikel bestaat.
 
 Incidentrespons klinkt als iets voor grote enterprise-organisaties met complete operatieteams, uitgebreide runbooks en engineers die permanent oproepdiensten draaien. Maar de versie die een solo-oprichter nodig heeft past op één A4'tje. Het eenmalig doornemen ervan maakt het verschil tussen veertig minuten methodisch en beheerst handelen, of drie uur lang chaotisch gissen in de code waarbij je de situatie alleen maar verergert.
 
 ## De eerste tien minuten, in vaste volgorde
 
-**Bevestig de storing extern.** Open de app via mobiele data in een incognitovenster. Je eigen computer bevat actieve sessies, gecachte bestanden en je lokale netwerkverbinding — zaken die problemen kunnen maskeren of juist creëren. Heb je een externe uptime-monitor? Dan heeft deze je waarschijnlijk al gewaarschuwd.
+**Bevestig de storing extern.** Open de app via mobiele data in een incognitovenster. Je eigen computer bevat actieve sessies, gecachte bestanden en je lokale netwerkverbinding - zaken die problemen kunnen maskeren of juist creëren. Heb je een externe uptime-monitor? Dan heeft deze je waarschijnlijk al gewaarschuwd.
 
 **Stel de omvang (blast radius) vast.** Ligt de complete applicatie plat, of slechts één specifieke pagina? Is het probleem globaal, of ervaart één enkele gebruiker dit? Betreft het alleen ingelogde gebruikers, of ook anonieme bezoekers? Deze vraag beantwoordt binnen twee minuten meer dan een halfuur graven in serverlogs.
 
@@ -70,7 +70,7 @@ Dit proces kost meer tijd, maar het voorkomt dat je het probleem verdubbelt. Dit
 
 Schrijf dezelfde avond nog, zolang alles vers in je geheugen zit, vijf korte regels op: wat er gebeurde, hoe laat je het merkte, welke actie je ondernam, wat de directe grondoorzaak was en welke maatregel dit in de toekomst had voorkomen.
 
-Kies vervolgens exact één concrete actie uit die laatste regel en voer die uit. Geen omvangrijk programma met tien verbeterpunten — slechts één ding. Richt monitoring in op het onderdeel dat geruisloos faalde. Schrijf een automatische test voor het pad dat brak. Richt een rollback-procedure in als die ontbrak. Of zet een agendamelding op het certificaat dat bijna verliep.
+Kies vervolgens exact één concrete actie uit die laatste regel en voer die uit. Geen omvangrijk programma met tien verbeterpunten - slechts één ding. Richt monitoring in op het onderdeel dat geruisloos faalde. Schrijf een automatische test voor het pad dat brak. Richt een rollback-procedure in als die ontbrak. Of zet een agendamelding op het certificaat dat bijna verliep.
 
 Kleine applicaties worden stabiel door een geleidelijke opeenstapeling van gerichte oplossingen na echte incidenten, niet door abstracte betrouwbaarheidsinitiatieven. Oprichters die na elk incident één ding definitief oplossen, ervaren binnen een jaar significant minder storingen. Oprichters die een complete herziening plannen, voeren uiteindelijk niets uit.
 
@@ -95,7 +95,7 @@ Dat is het moment waarop serverlogs, audit-trails en een geoefend herstelprotoco
 
 Er is een duidelijke reden waarom incidentparaatheid als dienstverlening bestaat: het is onopvallend werk dat makkelijk wordt uitgesteld, maar op één specifiek moment van onschatbare waarde blijkt. LaunchStudio richt dit in als onderdeel van het productierijp maken van AI-gebouwde software: uptime-monitoring en alarmering, foutregistratie, een deployment-pipeline met staging en one-click rollback, een geoefend en getimed backup-herstel, en een beknopt runbook. Met de optionele beheerde variant (€ 49 per maand) staat er bovendien een team paraat dat de melding om 20:40 uur 's avonds direct opvangt.
 
-De gebruikersinterface die je hebt ontworpen in Lovable, Bolt of Cursor blijft exact zoals hij is. De onderliggende engineering is van Manifera: elf jaar ervaring met bedrijfskritische productiesystemen voor organisaties zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad — waar incidenten worden behandeld als een heldere procedure, niet als paniek.
+De gebruikersinterface die je hebt ontworpen in Lovable, Bolt of Cursor blijft exact zoals hij is. De onderliggende engineering is van Manifera: elf jaar ervaring met bedrijfskritische productiesystemen voor organisaties zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad - waar incidenten worden behandeld als een heldere procedure, niet als paniek.
 
 [Beschrijf je project](https://launchstudio.eu/nl/#contact) en ontdek binnen één werkdag hoe jouw applicatie reageert op een vervelende donderdagavond, of bekijk wat het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages) precies inhoudt.
 
@@ -119,7 +119,7 @@ Kies een willekeurige dinsdag. Voer op staging bewust een wijziging door die iet
 
 Het kost zestig minuten, het voelt wellicht overdreven, maar het zorgt ervoor dat je handen de handelingen al eens hebben uitgevoerd. Dat verschil is cruciaal: onder druk om 20:40 uur op donderdagavond leest niemand een document voor de allereerste keer. Je valt terug op routine.
 
-Herhaal dit na elke grote verandering in je infrastructuur en noteer de doorlooptijden — dat zijn exact de cijfers die je aan een zakelijke klant kunt voorleggen wanneer die vraagt naar je hersteltijd (RTO).
+Herhaal dit na elke grote verandering in je infrastructuur en noteer de doorlooptijden - dat zijn exact de cijfers die je aan een zakelijke klant kunt voorleggen wanneer die vraagt naar je hersteltijd (RTO).
 
 ## Echt voorbeeld
 
@@ -131,19 +131,19 @@ Die vijf uur bracht hij door in zijn code-editor, wanhopig zoekend naar de fout 
 
 In drie werkdagen richtten we zijn operationele basis in: een deployment-pipeline met staging en een rollback met één commando, error tracking gekoppeld aan zijn mobiel, een externe uptime-checker die binnen twee minuten alarmeert, een geoefend database-herstel met een gemeten hersteltijd van 35 minuten en een runbook van één pagina met kant-en-klare klantcommunicatie.
 
-Het tweede incident deed zich vier maanden later voor — een automatische dependency-update brak het genereren van pdf-facturen. De uptime-monitor merkte niets, want de server draaide gewoon; de error tracker sloeg elf minuten na de deploy direct alarm. Thijs draaide de release binnen zestig seconden terug, paste twee zinnen aan in zijn vooraf opgestelde e-mail en onderzocht de bug de volgende ochtend in alle rust zonder enige druk.
+Het tweede incident deed zich vier maanden later voor - een automatische dependency-update brak het genereren van pdf-facturen. De uptime-monitor merkte niets, want de server draaide gewoon; de error tracker sloeg elf minuten na de deploy direct alarm. Thijs draaide de release binnen zestig seconden terug, paste twee zinnen aan in zijn vooraf opgestelde e-mail en onderzocht de bug de volgende ochtend in alle rust zonder enige druk.
 
 **Resultaat:** twintig minuten beperkte hinder, één geruststellende e-mail, nul klachten. Hij omschrijft het verschil als "het volgen van een checklist in plaats van een pure adrenalinereactie".
 
 > *"De eerste keer zat ik vijf uur lang live op productie te stressen terwijl alles platlag. De tweede keer zette ik de vorige versie binnen een minuut terug en loste ik het de volgende ochtend op mijn gemak op."*
-> — **Thijs Marsman, Oprichter, Werkbon (Alkmaar)**
+> - **Thijs Marsman, Oprichter, Werkbon (Alkmaar)**
 
-**Kosten & Doorlooptijd:** € 1.700 (pipeline met rollback, monitoring en alarmering, geoefend backup-herstel, runbook) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** € 1.700 (pipeline met rollback, monitoring en alarmering, geoefend backup-herstel, runbook) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat moet ik als allereerste doen wanneer mijn applicatie offline gaat?
-Bevestig de storing eerst extern via mobiele data, stel vast wie en wat er precies geraakt is en controleer wat er recent gewijzigd is — met name recente deployments. Kijk naar feitelijk bewijs in je logging vóórdat je theorieën bedenkt, en draai een recente release direct terug.
+Bevestig de storing eerst extern via mobiele data, stel vast wie en wat er precies geraakt is en controleer wat er recent gewijzigd is - met name recente deployments. Kijk naar feitelijk bewijs in je logging vóórdat je theorieën bedenkt, en draai een recente release direct terug.
 
 ### Moet ik een deployment terugdraaien voordat ik de foutoorzaak begrijp?
 Ja, mits een recente deployment aan de storing voorafging. Het herstellen van de dienstverlening voor klanten staat voorop. De inhoudelijke diagnose stellen doe je naderhand op een niet-kritieke ontwikkelomgeving, mits je vooraf een rollback-procedure hebt ingericht.
@@ -167,7 +167,7 @@ Een externe uptime-monitor met mobiele notificaties, actieve error tracking, een
       "name": "Wat moet ik als allereerste doen wanneer mijn applicatie offline gaat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bevestig de storing eerst extern via mobiele data, stel vast wie en wat er precies geraakt is en controleer wat er recent gewijzigd is — met name recente deployments. Kijk naar feitelijk bewijs in je logging vóórdat je theorieën bedenkt, en draai een recente release direct terug."
+        "text": "Bevestig de storing eerst extern via mobiele data, stel vast wie en wat er precies geraakt is en controleer wat er recent gewijzigd is - met name recente deployments. Kijk naar feitelijk bewijs in je logging vóórdat je theorieën bedenkt, en draai een recente release direct terug."
       }
     },
     {

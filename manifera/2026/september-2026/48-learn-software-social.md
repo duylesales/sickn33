@@ -3,7 +3,7 @@
 A founder hires three bootcamp graduates to build an app. They write the syntax fast. The app loads instantly with 5 users. 
 Two months later, it hits 10,000 users, and the app completely crashes. 
 
-The founder asks why. The juniors are confused—"The code works fine!"
+The founder asks why. The juniors are confused - "The code works fine!"
 They learned Syntax (how to query a database). They never learned Software Architecture (how to design an Asynchronous Queue so the database doesn't lock up when 10,000 people query it at the same millisecond). 
 
 To **learn software** syntax takes 12 weeks. To learn the physics of distributed System Design takes 10 years. 

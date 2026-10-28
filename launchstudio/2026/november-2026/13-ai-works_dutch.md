@@ -31,7 +31,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Uw gebruiker klikt op "Genereer Rapport". Drie seconden later verschijnt een door AI geschreven analyse op het scherm. Voor de gebruiker voelt het als magie. Vanuit technisch oogpunt is het echter een keten van zeven systemen die perfect op elkaar moeten aansluiten — en uw met AI gegenereerde prototype bevat er hoogstwaarschijnlijk slechts twee van.
+Uw gebruiker klikt op "Genereer Rapport". Drie seconden later verschijnt een door AI geschreven analyse op het scherm. Voor de gebruiker voelt het als magie. Vanuit technisch oogpunt is het echter een keten van zeven systemen die perfect op elkaar moeten aansluiten - en uw met AI gegenereerde prototype bevat er hoogstwaarschijnlijk slechts twee van.
 
 Begrijpen hoe AI op backend-niveau werkt betekent niet dat u zelf moet leren programmeren. Het betekent wel dat u voldoende inzicht heeft in de systemen achter uw product om onderbouwde keuzes te maken over waar u uw tijd en budget aan besteedt. De meeste oprichters investeren te veel in de interface (wat gebruikers zien) en te weinig in de verwerkingspijplijn (wat de interface rendabel en betrouwbaar maakt).
 
@@ -49,7 +49,7 @@ Voordat er iets naar een AI-model wordt gestuurd, controleert uw server of de ge
 De tekst van de gebruiker wordt gecontroleerd en opgeschoond: mogelijke prompt-injectieaanvallen worden geneutraliseerd, buitensporige invoerlengtes worden ingekort en er wordt gecontroleerd of de inhoud voldoet aan het beleid.
 
 **Stap 4: Cache-Controle**
-Uw server controleert of een identiek of semantisch vergelijkbaar verzoek onlangs al is beantwoord. Zo ja, dan wordt direct het gecachte antwoord getoond — wat zowel wachttijd als API-kosten bespaart.
+Uw server controleert of een identiek of semantisch vergelijkbaar verzoek onlangs al is beantwoord. Zo ja, dan wordt direct het gecachte antwoord getoond - wat zowel wachttijd als API-kosten bespaart.
 
 **Stap 5: De AI API-Aanroep**
 Pas nu stuurt uw server het verzoek door naar OpenAI, Anthropic of een andere modelprovider. De aanroep bevat uw geheime systeemprompt, de gezuiverde gebruikersinvoer en technische parameters (modelselectie, temperatuur, max tokens).
@@ -75,23 +75,23 @@ Zonder response-caching stuurt uw app herhaaldelijk identieke verzoeken naar Ope
 **Werkelijke kosten:** Het engineeringteam van LaunchStudio verlaagt de maandelijkse AI-kosten gemiddeld met 40% tot 60% door het implementeren van semantische caching via Redis.
 
 ### Ontbrekende Invoervalidatie (Stap 3)
-Zonder validatie kunnen kwaadwillenden prompt-injecties uitvoeren — gerichte instructies die uw systeemprompt overschrijven. Ze kunnen ook gigantische documenten insturen die torenhoge kosten veroorzaken.
+Zonder validatie kunnen kwaadwillenden prompt-injecties uitvoeren - gerichte instructies die uw systeemprompt overschrijven. Ze kunnen ook gigantische documenten insturen die torenhoge kosten veroorzaken.
 
 **Werkelijke kosten:** Een prompt-injectie kan uw unieke systeemprompt (uw intellectueel eigendom) op straat leggen of het AI-model manipuleren om data van andere gebruikers vrij te geven.
 
 ## De Infrastructuur Die AI Betrouwbaar en Rendabel Maakt
 
-LaunchStudio bouwt de complete AI-verwerkingspijplijn bij de overgang van prototype naar productie. Het team van [Manifera](https://www.manifera.com/services/custom-software-development/) — met 120+ software-engineers in Ho Chi Minhstad onder Europees projectmanagement vanuit Amsterdam — heeft deze pijplijnen voor tientallen startups geïmplementeerd.
+LaunchStudio bouwt de complete AI-verwerkingspijplijn bij de overgang van prototype naar productie. Het team van [Manifera](https://www.manifera.com/services/custom-software-development/) - met 120+ software-engineers in Ho Chi Minhstad onder Europees projectmanagement vanuit Amsterdam - heeft deze pijplijnen voor tientallen startups geïmplementeerd.
 
 De standaard AI-infrastructuur omvat:
 
-- **Server-side proxy** — Alle AI-aanroepen lopen via uw beveiligde backend, nooit direct vanuit de browser
-- **Geheim beheer** — API-sleutels veilig opgeslagen in omgevingsvariabelen
-- **Rate limiting** — Verbruikslimieten per gebruiker per uur om misbruik te voorkomen
-- **Semantische caching** — Slimme herkenning van vergelijkbare vragen die 40–60% kosten bespaart
-- **Verbruiks-dashboard** — Inzicht in API-kosten per klant voor accurate marges
-- **Multi-provider fallback** — Automatische overschakeling naar Claude of Llama bij storingen bij OpenAI
-- **Kostenwaarschuwingen** — Directe notificaties bij ongewone pieken in het API-verbruik
+- **Server-side proxy** - Alle AI-aanroepen lopen via uw beveiligde backend, nooit direct vanuit de browser
+- **Geheim beheer** - API-sleutels veilig opgeslagen in omgevingsvariabelen
+- **Rate limiting** - Verbruikslimieten per gebruiker per uur om misbruik te voorkomen
+- **Semantische caching** - Slimme herkenning van vergelijkbare vragen die 40–60% kosten bespaart
+- **Verbruiks-dashboard** - Inzicht in API-kosten per klant voor accurate marges
+- **Multi-provider fallback** - Automatische overschakeling naar Claude of Llama bij storingen bij OpenAI
+- **Kostenwaarschuwingen** - Directe notificaties bij ongewone pieken in het API-verbruik
 
 Herre Roelevink, oprichter van Manifera en LaunchStudio: *"Veel AI-oprichters focussen zich blind op de prompt. Maar het is de pijplijn rondom de prompt die bepaalt of u een winstgevend bedrijf bouwt of een bodemloze kostenpost creëert."*
 
@@ -112,9 +112,9 @@ In plaats daarvan schakelde ze LaunchStudio in. Het team van Manifera realiseerd
 **Resultaat:** De AI-kosten van ContentSpark daalden van €2.100 naar slechts €380 per maand, terwijl het platform driemaal zoveel gebruikers bediende. Met 47 betalende abonnees (€893/maand omzet) tegenover €380 aan AI-kosten behaalde Lotte direct een gezonde brutomarge van 57%.
 
 > *"Mijn AI-prototype trok me financieel helemaal leeg. LaunchStudio heeft niet alleen de techniek gefikst, maar mijn complete kostenstructuur winstgevend gemaakt. Nu kloppen mijn marges eindelijk."*
-> — **Lotte Willems, Oprichter, ContentSpark (Den Bosch)**
+> - **Lotte Willems, Oprichter, ContentSpark (Den Bosch)**
 
-**Kosten & Doorlooptijd:** €2.400 (Launch & Grow Pakket) — productie-klaar en live binnen 7 werkdagen.
+**Kosten & Doorlooptijd:** €2.400 (Launch & Grow Pakket) - productie-klaar en live binnen 7 werkdagen.
 
 ---
 

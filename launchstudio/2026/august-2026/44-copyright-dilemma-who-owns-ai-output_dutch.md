@@ -31,11 +31,11 @@ Doelgroep: Tech Founders / IP Lawyers / CTO's
 }
 </script>
 
-Als een marketingteam van een enterprise-klant uw SaaS-platform gebruikt om een advertentie-afbeelding te genereren, en een concurrent downloadt die afbeelding en gebruikt deze in zijn eigen campagne, kan uw klant die concurrent dan aanklagen wegens inbreuk op het auteursrecht? Anno 2026 blijft het intellectueel eigendomsrecht (IP) rondom Generatieve AI een van de meest misbegrepen — en meest risicovolle — aspecten van de technologiesector. Oprichters moeten het principe van "menselijk auteurschap" begrijpen als een fundamentele pijler van hun productarchitectuur, omdat het direct bepaalt of uw zakelijke klanten hun gegenereerde bezittingen daadwerkelijk wettelijk kunnen beschermen.
+Als een marketingteam van een enterprise-klant uw SaaS-platform gebruikt om een advertentie-afbeelding te genereren, en een concurrent downloadt die afbeelding en gebruikt deze in zijn eigen campagne, kan uw klant die concurrent dan aanklagen wegens inbreuk op het auteursrecht? Anno 2026 blijft het intellectueel eigendomsrecht (IP) rondom Generatieve AI een van de meest misbegrepen - en meest risicovolle - aspecten van de technologiesector. Oprichters moeten het principe van "menselijk auteurschap" begrijpen als een fundamentele pijler van hun productarchitectuur, omdat het direct bepaalt of uw zakelijke klanten hun gegenereerde bezittingen daadwerkelijk wettelijk kunnen beschermen.
 
 ## De Eis van Menselijk Auteurschap (Human Authorship)
 
-Het fundament van het wereldwijde auteursrecht — zoals vastgelegd door de United States Copyright Office (USCO) en overgenomen in Europese jurisprudentie — is dat auteursrechtelijke bescherming uitsluitend toekomt aan vruchten van *menselijke* creativiteit. Een algoritme of neuraal netwerk kan juridisch geen auteur zijn. De USCO heeft registraties herhaaldelijk geweigerd (zoals in de geruchtmakende *Zarya of the Dawn*-zaak), waarbij AI-gegenereerde afbeeldingen van auteursrechtelijke bescherming werden uitgesloten.
+Het fundament van het wereldwijde auteursrecht - zoals vastgelegd door de United States Copyright Office (USCO) en overgenomen in Europese jurisprudentie - is dat auteursrechtelijke bescherming uitsluitend toekomt aan vruchten van *menselijke* creativiteit. Een algoritme of neuraal netwerk kan juridisch geen auteur zijn. De USCO heeft registraties herhaaldelijk geweigerd (zoals in de geruchtmakende *Zarya of the Dawn*-zaak), waarbij AI-gegenereerde afbeeldingen van auteursrechtelijke bescherming werden uitgesloten.
 
 Daarom ontbeert een ruwe afbeelding uit Midjourney of DALL-E, of een ruwe alinea tekst uit GPT-4o of Claude, van nature de vereiste menselijke creatieve inbreng. Zelfs als een gebruiker een uiterst complexe prompt van 500 woorden heeft geschreven met exacte instructies voor belichting en stijl, beschouwt de wetgever de prompt slechts als een "opdracht" aan de machine. Omdat de AI de uiteindelijke creatieve expressie (de pixels en woordvolgorde) bepaalt, valt het ruwe bestand direct in het publieke domein en kan iedereen het vrijelijk kopiëren.
 
@@ -43,7 +43,7 @@ Daarom ontbeert een ruwe afbeelding uit Midjourney of DALL-E, of een ruwe alinea
 
 Dit betekent niet dat AI waardeloos is voor intellectueel eigendom. De sleutel tot auteursrechtelijke bescherming ligt in **Substantiële Menselijke Modificatie** die het niveau van zelfstandige creatieve expressie bereikt.
 
-Genereert een ontwerper met uw AI een basislandschap en voegt hij daar in Photoshop handmatig tien andere beeldelementen aan toe, past hij kleurcorrecties toe en retoucheert hij details, dan kan het samengestelde eindwerk wél auteursrechtelijk beschermd worden — maar *uitsluitend* de menselijk toegevoegde elementen en de unieke compositie zijn beschermd, niet de onderliggende AI-laag. Dit heet een "dun auteursrecht" (thin copyright): een concurrent mag in theorie exact dezelfde AI-basisafbeelding hergebruiken voor een ander ontwerp zonder inbreuk te plegen.
+Genereert een ontwerper met uw AI een basislandschap en voegt hij daar in Photoshop handmatig tien andere beeldelementen aan toe, past hij kleurcorrecties toe en retoucheert hij details, dan kan het samengestelde eindwerk wél auteursrechtelijk beschermd worden - maar *uitsluitend* de menselijk toegevoegde elementen en de unieke compositie zijn beschermd, niet de onderliggende AI-laag. Dit heet een "dun auteursrecht" (thin copyright): een concurrent mag in theorie exact dezelfde AI-basisafbeelding hergebruiken voor een ander ontwerp zonder inbreuk te plegen.
 
 Uw software moet daarom werkstromen faciliteren waarin AI-output fungeert als eerste concept of schets, met ingebouwde bewerkingstools waarmee gebruikers de content handmatig kunnen verrijken en verfijnen.
 
@@ -90,7 +90,7 @@ Zij werkte samen met **LaunchStudio (door Manifera)** om een geautomatiseerde me
 
 **Resultaat:** Juridische risico's werden geëlimineerd en potentiële claims wegens merkinbreuk werden volledig afgevangen vóór publicatie.
 
-**Kosten & Tijdlijn:** €1.900 (Merkrechten & Copyright Filter Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.900 (Merkrechten & Copyright Filter Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

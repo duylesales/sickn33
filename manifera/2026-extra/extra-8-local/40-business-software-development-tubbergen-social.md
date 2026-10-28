@@ -6,7 +6,7 @@ A formula error silently overwrote six months of supplier certification records.
 ❌ **The Contract at Risk:** "Inadequate record-keeping controls" is exactly the language that surfaces during a customer's contract renewal review.
 
 **The Manifera Solution:**
-✅ **Immutable Audit Trail, Built In:** Every change logged — who, when, and what changed — impossible to silently overwrite.
+✅ **Immutable Audit Trail, Built In:** Every change logged - who, when, and what changed - impossible to silently overwrite.
 ✅ **Amsterdam Governance & Compliance Mapping:** Dutch-based architects map your actual regulatory and customer obligations before a line of code is written.
 ✅ **Vietnam Execution at Speed:** Ho Chi Minh City Autonomous Pods build role-based access, automated expiry alerts, and audit-ready reporting.
 

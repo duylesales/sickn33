@@ -94,9 +94,9 @@ Het Manifera-team voerde in 21 werkdagen een gerichte transitie uit:
 **Resultaat:** Hallucinaties door contextverlies verdwenen volledig. De AI kon voortaan contracten van meer dan 500 pagina's analyseren met 100% precisie. Sophie demonstreerde de nieuwe architectuur aan het advocatenkantoor en sloot alsnog een enterprise-contract van €250.000.
 
 > *"We trapten in de klassieke 'Weekend Prototype' valkuil: we dachten dat we een product hadden gebouwd, maar we hadden slechts een stuk speelgoed. LaunchStudio begreep dat een echt AI-product voor 10% uit AI bestaat en voor 90% uit data-engineering. Zij bouwden de onzichtbare infrastructuur die nodig was om de AI betrouwbaar te maken in de echte wereld."*
-> — **Sophie Jenkins, CTO, JurisAI (Londen)**
+> - **Sophie Jenkins, CTO, JurisAI (Londen)**
 
-**Kosten & Doorlooptijd:** €18.000 (Launch & Grow Pakket met RAG Hardening & Evaluatie Pipeline Add-on) — productie-klaar en live binnen 21 werkdagen.
+**Kosten & Doorlooptijd:** €18.000 (Launch & Grow Pakket met RAG Hardening & Evaluatie Pipeline Add-on) - productie-klaar en live binnen 21 werkdagen.
 
 ---
 

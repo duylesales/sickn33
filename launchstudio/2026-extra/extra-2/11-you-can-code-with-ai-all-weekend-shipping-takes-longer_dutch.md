@@ -57,7 +57,7 @@ Een correcte herstelling vereist een verificatiestap – een bevestigingslink of
 
 Manifera's engineeringwerk voor authenticatie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met klantgesprekken via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Vertel ons wat u gebouwd heeft — u hoort binnen één werkdag van ons](https://launchstudio.eu/nl/#contact).
+[Vertel ons wat u gebouwd heeft - u hoort binnen één werkdag van ons](https://launchstudio.eu/nl/#contact).
 
 ## Hoe u elk pad voor het aanmaken van accounts zelf kunt auditeren, voordat u lanceert
 
@@ -65,10 +65,10 @@ Een oprichter hoeft niet te wachten op een betaalde audit om de meest voorkomend
 
 **Breng elk pad in kaart dat accounttoegang verleent, niet alleen het aanmeldingsformulier**
 
-- Het primaire aanmeldingsformulier — het formulier dat een oprichter voortdurend test en daarom het meest vertrouwt
-- Social inloggen (Google, GitHub) — slaat e-mailverificatie vaak volledig over, aangezien de provider zelf garant staat voor het adres
-- Aanmelden op basis van uitnodigingen — een teamgenoot of beheerder maakt een account aan namens iemand anders
-- Voltooiing van wachtwoord-reset — verifieert dit opnieuw iets, of vertrouwt het simpelweg welke e-mail oorspronkelijk werd ingevoerd?
+- Het primaire aanmeldingsformulier - het formulier dat een oprichter voortdurend test en daarom het meest vertrouwt
+- Social inloggen (Google, GitHub) - slaat e-mailverificatie vaak volledig over, aangezien de provider zelf garant staat voor het adres
+- Aanmelden op basis van uitnodigingen - een teamgenoot of beheerder maakt een account aan namens iemand anders
+- Voltooiing van wachtwoord-reset - verifieert dit opnieuw iets, of vertrouwt het simpelweg welke e-mail oorspronkelijk werd ingevoerd?
 - Elke functie voor het in bulk importeren van accounts via CSV die later werd toegevoegd voor "power users"
 
 **Stel één vijandige vraag per pad**
@@ -100,9 +100,9 @@ Een vrouw nam contact op met de ondersteuning met de vraag waarom ze orderbevest
 **Resultaat:** LaunchStudio voegde een verplichte e-mailverificatiestap toe voordat een account volledige toegang krijgt, en auditeerde de stroom voor het opnieuw instellen van het wachtwoord om ervoor te zorgen dat deze ook afhangt van diezelfde geverifieerde status. Hiermee werden zowel de onmiddellijke verwarring als het onderliggende overnamerisico gesloten.
 
 > *"Ik bouwde de gehele aanmeldingsstroom in een middag en het voelde compleet omdat niets er onafgemaakt uitzag. Er was oprecht een verwarde vreemde voor nodig die ons e-mailde om te realiseren wat er daadwerkelijk ontbrak."*
-> — **Sander Hoekstra, Oprichter, CrateCurate (Zwolle)**
+> - **Sander Hoekstra, Oprichter, CrateCurate (Zwolle)**
 
-**Kosten en tijdlijn:** € 1.700 (e-mailverificatie en audit van accountbeveiliging) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.700 (e-mailverificatie en audit van accountbeveiliging) - voltooid in 6 werkdagen.
 
 ---
 

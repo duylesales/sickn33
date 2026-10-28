@@ -12,7 +12,7 @@ Complexe backend-security proberen te leren via tutorials kost maanden aan kostb
 
 Bij LaunchStudio versterken senior engineers uw backend, zodat u zich kunt richten op uw groei en klanten. 🛡️
 
-Priya herwon haar rust en lanceerde binnen een week met 45 betalende cliënten. (€ 2.200 (Launch Ready) — 6 werkdagen.) 🚀
+Priya herwon haar rust en lanceerde binnen een week met 45 betalende cliënten. (€ 2.200 (Launch Ready) - 6 werkdagen.) 🚀
 
 👉 Lees waarom delegeren loont: https://launchstudio.eu/nl/blog/real-cost-founder-burnout-diy-backend
 

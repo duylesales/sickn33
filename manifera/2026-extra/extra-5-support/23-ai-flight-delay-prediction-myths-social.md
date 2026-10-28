@@ -1,4 +1,4 @@
-🚨 "AI Delay Prediction Can Simply Replace Experienced Ops-Control Judgment at Si..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Delay Prediction Can Simply Replace Experienced Ops-Control Judgment at Si..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Delay Prediction Can Simply Replace Experienced O...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

@@ -54,7 +54,7 @@ Cluj-Napoca, the unofficial capital of Transylvania, has grown into one of Roman
 
 ## Where AI Jobs in Cluj-Napoca Come From
 
-Cluj's technology sector grew initially around software services: companies building software for clients in Western Europe and North America. Over time, the ecosystem has matured to include product companies, R&D centres, startups and engineering centres of international firms. Romania also produced UiPath, founded in Bucharest, which became one of the country's best-known technology companies — an inspiration for many Romanian engineers and founders. The Cluj IT Cluster brings together companies, universities and public authorities to support the regional technology sector.
+Cluj's technology sector grew initially around software services: companies building software for clients in Western Europe and North America. Over time, the ecosystem has matured to include product companies, R&D centres, startups and engineering centres of international firms. Romania also produced UiPath, founded in Bucharest, which became one of the country's best-known technology companies - an inspiration for many Romanian engineers and founders. The Cluj IT Cluster brings together companies, universities and public authorities to support the regional technology sector.
 
 | Employer type | Typical AI and data work | What it means for graduates |
 |---|---|---|
@@ -77,7 +77,7 @@ Bosch has a significant presence in the Cluj region, including an engineering ce
 
 ## From Outsourcing to Product Work
 
-A common question among Cluj graduates is whether to start in a software services company or a product company. Services companies offer structured onboarding, variety and exposure to international clients, which is excellent for learning engineering practices and communication. The trade-off is that you may work on parts of systems designed elsewhere and change projects frequently. Product companies offer ownership and depth in one domain but can be less structured for juniors. Many Cluj engineers start in services, build solid engineering skills and then move to product work — or grow into technical leadership within services companies, where AI practices are expanding.
+A common question among Cluj graduates is whether to start in a software services company or a product company. Services companies offer structured onboarding, variety and exposure to international clients, which is excellent for learning engineering practices and communication. The trade-off is that you may work on parts of systems designed elsewhere and change projects frequently. Product companies offer ownership and depth in one domain but can be less structured for juniors. Many Cluj engineers start in services, build solid engineering skills and then move to product work - or grow into technical leadership within services companies, where AI practices are expanding.
 
 ## Pay and Cost of Living
 
@@ -91,7 +91,7 @@ Romanian is the language of daily life and administration, and Hungarian is also
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Cluj-Napoca you will find few or no local vacancies there today. Use Romanian job portals, university career centres, company internship pages and community channels as primary sources. OnlyAIJobs is useful if you are considering the Netherlands later in your career — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by category and real commute. Cluj employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Cluj-Napoca you will find few or no local vacancies there today. Use Romanian job portals, university career centres, company internship pages and community channels as primary sources. OnlyAIJobs is useful if you are considering the Netherlands later in your career - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by category and real commute. Cluj employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Portfolio for Cluj Employers
 
@@ -100,7 +100,7 @@ Cluj employers see many applications from graduates with similar degrees. What s
 - **An end-to-end project:** data collection, cleaning, modelling, evaluation and a simple deployment, documented in a public repository.
 - **Clean code:** readable, tested code with version control history shows that you can work in a team.
 - **A project with real data:** Romanian open data, public datasets or data from a student project with a company.
-- **A language model application:** for example a retrieval-based assistant over documents, with a clear evaluation of its answers — increasingly relevant given how many companies are building such tools.
+- **A language model application:** for example a retrieval-based assistant over documents, with a clear evaluation of its answers - increasingly relevant given how many companies are building such tools.
 - **Your thesis:** especially if done with a company or research group; be ready to explain it in depth.
 
 Competitions and hackathons, which are frequent in Cluj, are excellent for building portfolio projects and meeting employers.
@@ -119,7 +119,7 @@ Cluj's automotive engineering centres offer a distinctive path for graduates int
 
 ## The First Two Years
 
-In your first role, prioritise learning over title or salary differences. Seek teams with experienced engineers who review your code and explain their decisions. Take ownership of small deliverables, ask for feedback regularly and learn how models reach production and are monitored. Develop communication skills — explaining your work to non-technical colleagues or clients is as important as technical ability. Keep a record of what you build and learn; it will make your next career step much easier.
+In your first role, prioritise learning over title or salary differences. Seek teams with experienced engineers who review your code and explain their decisions. Take ownership of small deliverables, ask for feedback regularly and learn how models reach production and are monitored. Develop communication skills - explaining your work to non-technical colleagues or clients is as important as technical ability. Keep a record of what you build and learn; it will make your next career step much easier.
 
 ## Staying or Moving Abroad
 
@@ -127,11 +127,11 @@ Many Romanian engineers eventually consider working abroad, and some return afte
 
 ## Reading Job Postings in Cluj
 
-Graduate postings in Cluj vary in quality. Strong postings describe the project, the team, the technologies and the learning path, and increasingly include salary ranges — something the EU Pay Transparency Directive will make standard across the EU. Weaker postings list many unrelated technologies or use vague titles. Signals of a good junior role include mentoring, code review, a clear onboarding plan and realistic requirements. If a posting for a junior role demands years of experience with many advanced tools, it may reflect unclear expectations. In the first conversation, ask what the last junior hire worked on, who reviews their work and how performance is evaluated.
+Graduate postings in Cluj vary in quality. Strong postings describe the project, the team, the technologies and the learning path, and increasingly include salary ranges - something the EU Pay Transparency Directive will make standard across the EU. Weaker postings list many unrelated technologies or use vague titles. Signals of a good junior role include mentoring, code review, a clear onboarding plan and realistic requirements. If a posting for a junior role demands years of experience with many advanced tools, it may reflect unclear expectations. In the first conversation, ask what the last junior hire worked on, who reviews their work and how performance is evaluated.
 
 ## Responsible AI Skills
 
-As the EU AI Act takes effect, companies that build AI systems for European clients need engineers who understand documentation, data governance, evaluation and human oversight. Services companies in Cluj that deliver AI projects for Western European clients increasingly face these requirements. Graduates who learn the basics of responsible AI — measuring bias, documenting datasets and models and understanding GDPR — bring a practical advantage to their first employer and position themselves well for future roles.
+As the EU AI Act takes effect, companies that build AI systems for European clients need engineers who understand documentation, data governance, evaluation and human oversight. Services companies in Cluj that deliver AI projects for Western European clients increasingly face these requirements. Graduates who learn the basics of responsible AI - measuring bias, documenting datasets and models and understanding GDPR - bring a practical advantage to their first employer and position themselves well for future roles.
 
 ## Living in Cluj
 

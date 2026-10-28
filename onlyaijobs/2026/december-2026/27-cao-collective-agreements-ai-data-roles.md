@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Collective Labour Agreements and AI Jobs: Why Your CAO Decides More Than Your Manager Does",
-  "description": "Whether a Dutch employer falls under a collective labour agreement determines your salary scale, leave, pension and negotiating room — and most technology companies fall under none at all.",
+  "description": "Whether a Dutch employer falls under a collective labour agreement determines your salary scale, leave, pension and negotiating room - and most technology companies fall under none at all.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-14",
@@ -41,13 +41,13 @@ This article is general information, not legal advice; the content of agreements
 
 ## What a CAO Is
 
-A collective labour agreement — in Dutch a *collectieve arbeidsovereenkomst*, universally abbreviated to CAO — is an agreement between employers or an employer association and trade unions, covering pay and employment conditions for a defined group of workers.
+A collective labour agreement - in Dutch a *collectieve arbeidsovereenkomst*, universally abbreviated to CAO - is an agreement between employers or an employer association and trade unions, covering pay and employment conditions for a defined group of workers.
 
 It typically sets salary scales and the steps within them, annual increases, working hours, leave entitlements, allowances such as a year-end payment, pension arrangements, provisions on overtime and standby duty, training rights and procedures around reorganisation.
 
 There are two ways you can be covered. Either your employer is bound directly, through membership of an employers' association or by concluding its own company agreement, or the agreement has been declared generally binding for a whole sector by the Ministry of Social Affairs and Employment, in which case employers in that sector must apply it whether they participated or not.
 
-The practical result is that many Dutch employees have their core terms decided collectively, at a table they never sat at — and that this can be to their considerable advantage.
+The practical result is that many Dutch employees have their core terms decided collectively, at a table they never sat at - and that this can be to their considerable advantage.
 
 ## Which AI and Data Jobs Fall Under Which Agreements
 
@@ -71,7 +71,7 @@ That last category is where most self-described AI jobs sit, which is precisely 
 
 **Advantages.** Transparent scales make it possible to know what the job pays before you apply. Progression steps are automatic rather than dependent on advocacy. Leave, year-end payments and pension arrangements are usually stronger than in uncovered sectors. Procedures around reorganisation and dismissal are clearer, and there is a defined route for disputes.
 
-**Disadvantages.** Your ceiling is the top of the scale. Exceptional performance rarely produces exceptional pay. A scarce skill — and machine learning is scarce in public sector organisations — cannot easily be rewarded above the framework, which is one reason such employers struggle to compete for senior technical people. Flexibility on individual arrangements can also be lower.
+**Disadvantages.** Your ceiling is the top of the scale. Exceptional performance rarely produces exceptional pay. A scarce skill - and machine learning is scarce in public sector organisations - cannot easily be rewarded above the framework, which is one reason such employers struggle to compete for senior technical people. Flexibility on individual arrangements can also be lower.
 
 The honest summary: covered employment is better at the start of a career and for predictability, and worse at the top end for people with in-demand specialisms.
 
@@ -79,7 +79,7 @@ The honest summary: covered employment is better at the start of a career and fo
 
 Where a CAO applies, your salary is determined in two steps.
 
-First, the job is evaluated and placed in a scale. The evaluation looks at responsibility, complexity, autonomy and knowledge required, using a structured job family description. This is where negotiation genuinely matters — and it is about the job, not about you.
+First, the job is evaluated and placed in a scale. The evaluation looks at responsibility, complexity, autonomy and knowledge required, using a structured job family description. This is where negotiation genuinely matters - and it is about the job, not about you.
 
 Second, you are placed at a step within that scale, usually based on relevant experience. Some room exists here, particularly if you can evidence directly relevant work.
 
@@ -91,7 +91,7 @@ A hospital hires a data scientist to build capacity forecasting models. The vaca
 
 Eighteen months later the person is running models that influence operating theatre planning, has trained colleagues, and is the only one in the organisation who can maintain the system. Their salary reflects a job description that no longer resembles the work.
 
-The remedy exists — a job re-evaluation, supported by an updated description and evidence of responsibilities — but it takes months and requires a manager who will champion it. The far easier moment to fix this was before signing, by asking which job family the role sits in and whether the description matches the actual work.
+The remedy exists - a job re-evaluation, supported by an updated description and evidence of responsibilities - but it takes months and requires a manager who will champion it. The far easier moment to fix this was before signing, by asking which job family the role sits in and whether the description matches the actual work.
 
 Candidates entering scale-based organisations should treat the job description as a financial document, because that is exactly what it is.
 
@@ -115,17 +115,17 @@ There is a structural problem in the Dutch labour market that every data profess
 
 Hospitals, ministries, municipalities, universities and water authorities all need machine learning and data engineering capability. All of them pay according to scales negotiated for an entire workforce, in which a data engineer is graded against a job family that also contains other specialists. Scarcity in one niche cannot easily be reflected without distorting the whole structure.
 
-The consequences are visible. Public organisations lose candidates to commercial employers at the senior end. They compensate by hiring consultants and contractors — sometimes at day rates that dwarf what an equivalent employee would cost — which is expensive, politically awkward and produces knowledge that leaves when the contract ends.
+The consequences are visible. Public organisations lose candidates to commercial employers at the senior end. They compensate by hiring consultants and contractors - sometimes at day rates that dwarf what an equivalent employee would cost - which is expensive, politically awkward and produces knowledge that leaves when the contract ends.
 
 Some organisations have found partial answers: allowances for scarce functions, hiring at a higher step within the scale, investing heavily in training internal staff, or competing on the substance of the work and the conditions rather than on pay.
 
-For candidates, this creates a genuine opportunity. If you value security, transparency, a thirty-six hour week and problems with public significance, you can enter these organisations with considerable leverage — not on the scale, which is fixed, but on the role, the level, the training budget and the freedom to shape the work.
+For candidates, this creates a genuine opportunity. If you value security, transparency, a thirty-six hour week and problems with public significance, you can enter these organisations with considerable leverage - not on the scale, which is fixed, but on the role, the level, the training budget and the freedom to shape the work.
 
 ## Reading a CAO Before You Sign
 
 A collective agreement is a long document, but the parts that matter to a new employee can be checked in fifteen minutes. Look for the following.
 
-**The salary table.** Find your scale and step, and check the increase rhythm — usually annual steps until the top of the scale, plus collectively agreed increases.
+**The salary table.** Find your scale and step, and check the increase rhythm - usually annual steps until the top of the scale, plus collectively agreed increases.
 
 **Year-end and holiday payments.** Confirm whether a thirteenth month or year-end payment exists and at what percentage.
 
@@ -137,7 +137,7 @@ A collective agreement is a long document, but the parts that matter to a new em
 
 **Training rights.** Some agreements guarantee a budget or time allocation.
 
-**Reorganisation provisions.** What happens in a restructuring — the social plan framework is worth knowing before you need it.
+**Reorganisation provisions.** What happens in a restructuring - the social plan framework is worth knowing before you need it.
 
 **Pension.** Which fund or scheme applies and at what contribution split.
 
@@ -152,11 +152,11 @@ Reading these sections is the single most efficient preparation available before
 - Is standby or out-of-hours work compensated under the agreement?
 - Does a works council exist, and has it been involved in systems this team builds?
 
-These questions are entirely normal in the Dutch context and a recruiter in a covered organisation will answer them without hesitation. If they cannot, ask to speak to someone in HR before you accept — the grading decision is far harder to change afterwards than before.
+These questions are entirely normal in the Dutch context and a recruiter in a covered organisation will answer them without hesitation. If they cannot, ask to speak to someone in HR before you accept - the grading decision is far harder to change afterwards than before.
 
 ## Key Takeaways
 
-- A collective labour agreement, where one applies, sets your scale, leave, pension and annual increases — often more decisively than your negotiation.
+- A collective labour agreement, where one applies, sets your scale, leave, pension and annual increases - often more decisively than your negotiation.
 - Universities, hospitals, government, much of finance and much of industry are covered; most technology companies and startups are not.
 - Coverage brings transparency, automatic progression and stronger procedures, at the cost of a hard ceiling for scarce skills.
 - In scale-based employers, the job description determines the scale, so read it as a financial document before signing.
@@ -171,7 +171,7 @@ Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](h
 ## Frequently Asked Questions
 
 ### (Scenario: international candidate) Do I need to join a union to be covered by a CAO?
-No — coverage follows the employer and sector; membership gives you influence in negotiations and individual support, but not the terms themselves.
+No - coverage follows the employer and sector; membership gives you influence in negotiations and individual support, but not the terms themselves.
 
 ### (Scenario: candidate at a startup) Does my employer have a CAO?
 Most technology companies and startups do not; terms are individual and there is no automatic annual increase.
@@ -190,7 +190,7 @@ Systems that monitor or analyse employees typically require works council involv
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I need to join a union to be covered by a CAO?", "acceptedAnswer": {"@type": "Answer", "text": "No — coverage follows the employer and sector; membership provides influence and support, not the terms themselves."}},
+    {"@type": "Question", "name": "Do I need to join a union to be covered by a CAO?", "acceptedAnswer": {"@type": "Answer", "text": "No - coverage follows the employer and sector; membership provides influence and support, not the terms themselves."}},
     {"@type": "Question", "name": "Do technology companies in the Netherlands have collective agreements?", "acceptedAnswer": {"@type": "Answer", "text": "Most do not; terms are individual and annual increases are not automatic."}},
     {"@type": "Question", "name": "What can I negotiate at a hospital or university?", "acceptedAnswer": {"@type": "Answer", "text": "Mainly the scale placement of the role and your step within it, since scales are fixed collectively."}},
     {"@type": "Question", "name": "Can I be paid above a CAO scale for scarce skills?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely, and usually only via special arrangements, which is why such employers struggle to attract senior specialists."}},

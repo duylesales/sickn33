@@ -31,64 +31,64 @@ Doelgroep: AI-Native Founder (niet-technisch)
 }
 </script>
 
-"Is het veilig?" is de vraag die bijna elke founder uiteindelijk stelt over een prototype gebouwd met Lovable, Bolt, of Cursor — meestal vlak voor een lanceerdatum, in plaats van bij de start. Het eerlijke antwoord is bijna nooit een simpel ja of nee. Het is "veilig tegen wat, precies?" — en die specificiteit is precies wat een demo-gerichte AI-codeertool geen reden heeft om uit zichzelf aan te bieden. Founders horen "veilig" doorgaans als één eigenschap, als een lichtschakelaar die aan of uit staat, terwijl het in de praktijk een lange lijst zeer specifieke, zeer controleerbare claims is, waarvan de meeste nog niemand daadwerkelijk geverifieerd heeft.
+"Is het veilig?" is de vraag die bijna elke founder uiteindelijk stelt over een prototype gebouwd met Lovable, Bolt, of Cursor - meestal vlak voor een lanceerdatum, in plaats van bij de start. Het eerlijke antwoord is bijna nooit een simpel ja of nee. Het is "veilig tegen wat, precies?" - en die specificiteit is precies wat een demo-gerichte AI-codeertool geen reden heeft om uit zichzelf aan te bieden. Founders horen "veilig" doorgaans als één eigenschap, als een lichtschakelaar die aan of uit staat, terwijl het in de praktijk een lange lijst zeer specifieke, zeer controleerbare claims is, waarvan de meeste nog niemand daadwerkelijk geverifieerd heeft.
 
 ## Wat "AI Secure" Daadwerkelijk Betekent In De Praktijk
 
-AI secure zijn is geen eigenschap die een tool standaard inbakt — het is een specifieke, verifieerbare staat die jouw applicatie ofwel bereikt ofwel niet, en die dingen omvat zoals: verifieert de server onafhankelijk wie een verzoek doet, of vertrouwt hij wat de frontend beweert? Worden geheimen zoals API-sleutels server-side gehouden, of eindigde er een ingebed in een client-zichtbare bundel? Is gebruikersdata per account geïsoleerd, of kan het verzoek van de ene ingelogde gebruiker per ongeluk de records van een andere bereiken? Wordt een mislukte inlogpoging gelogd en ratelimited, of kan deze indefinitief opnieuw geprobeerd worden door een geautomatiseerd script? Geen van deze zijn ja-standaard-uitkomsten van AI-geassisteerd coderen, en geen ervan verschijnt als een zichtbare bug tijdens normaal gebruik — het is het soort gat dat stilletjes blijft zitten totdat iemand er specifiek naar op zoek gaat, of die iemand nu een beveiligingsreviewer is of een vreemde met slechte bedoelingen.
+AI secure zijn is geen eigenschap die een tool standaard inbakt - het is een specifieke, verifieerbare staat die jouw applicatie ofwel bereikt ofwel niet, en die dingen omvat zoals: verifieert de server onafhankelijk wie een verzoek doet, of vertrouwt hij wat de frontend beweert? Worden geheimen zoals API-sleutels server-side gehouden, of eindigde er een ingebed in een client-zichtbare bundel? Is gebruikersdata per account geïsoleerd, of kan het verzoek van de ene ingelogde gebruiker per ongeluk de records van een andere bereiken? Wordt een mislukte inlogpoging gelogd en ratelimited, of kan deze indefinitief opnieuw geprobeerd worden door een geautomatiseerd script? Geen van deze zijn ja-standaard-uitkomsten van AI-geassisteerd coderen, en geen ervan verschijnt als een zichtbare bug tijdens normaal gebruik - het is het soort gat dat stilletjes blijft zitten totdat iemand er specifiek naar op zoek gaat, of die iemand nu een beveiligingsreviewer is of een vreemde met slechte bedoelingen.
 
 ## Waarom De Demo Niets Hiervan Test
 
-Een demo is, van nature, een coöperatief scenario — jij, de founder, die jouw eigen product test zoals bedoeld, op jouw eigen apparaat, met jouw eigen data, en de knoppen klikt in de volgorde die je verwacht dat ze geklikt worden. Niets aan dat scenario oefent natuurlijk het perspectief van een aanvaller uit, omdat je niet probeert jouw eigen app te breken terwijl je hem demonstreert aan een investeerder, een vriend, of je eerste tien klanten. Het perspectief van een aanvaller zoekt actief naar het verzoek dat niemand verwachtte, het veld dat niemand valideerde, het eindpunt waarvan niemand zich meer herinnerde dat het bestond zodra de functie live ging. Het gat is geen fout in de tools zelf; het is de voorspelbare, bijna mechanische consequentie van wat een demo daadwerkelijk gebouwd is om te bewijzen, wat nog nooit "en hier is wat er gebeurt als iemand dit probeert te misbruiken" heeft omvat.
+Een demo is, van nature, een coöperatief scenario - jij, de founder, die jouw eigen product test zoals bedoeld, op jouw eigen apparaat, met jouw eigen data, en de knoppen klikt in de volgorde die je verwacht dat ze geklikt worden. Niets aan dat scenario oefent natuurlijk het perspectief van een aanvaller uit, omdat je niet probeert jouw eigen app te breken terwijl je hem demonstreert aan een investeerder, een vriend, of je eerste tien klanten. Het perspectief van een aanvaller zoekt actief naar het verzoek dat niemand verwachtte, het veld dat niemand valideerde, het eindpunt waarvan niemand zich meer herinnerde dat het bestond zodra de functie live ging. Het gat is geen fout in de tools zelf; het is de voorspelbare, bijna mechanische consequentie van wat een demo daadwerkelijk gebouwd is om te bewijzen, wat nog nooit "en hier is wat er gebeurt als iemand dit probeert te misbruiken" heeft omvat.
 
 ## De Drie Plekken Waar Dit Gat Het Vaakst Verschijnt
 
-**Client-side vertrouwen.** Rolcontroles, premium-functiegating, en toestemmingslogica leven vaak alleen in de frontend, wat handig is om te bouwen, goedkoop om op te itereren, en er volledig correct uitziet in elke demo — maar triviaal te omzeilen is door iedereen die de netwerkverzoeken direct kan lezen, aangezien de server achter die frontend nooit daadwerkelijk gevraagd werd om zelf iets te controleren.
+**Client-side vertrouwen.** Rolcontroles, premium-functiegating, en toestemmingslogica leven vaak alleen in de frontend, wat handig is om te bouwen, goedkoop om op te itereren, en er volledig correct uitziet in elke demo - maar triviaal te omzeilen is door iedereen die de netwerkverzoeken direct kan lezen, aangezien de server achter die frontend nooit daadwerkelijk gevraagd werd om zelf iets te controleren.
 
 **Geheimen op de verkeerde plek.** API-sleutels en dienstcredentials gegenereerd tijdens snelle prototypesessies eindigen vaak hardgecodeerd rechtstreeks in frontendcode, onzichtbaar in de gerenderde UI maar volledig zichtbaar voor iedereen die de developer tools van de browser opent en de gebundelde JavaScript leest, soms maandenlang voordat iemand het opmerkt.
 
-**Geen onafhankelijke verificatielaag.** Zonder een tweede blik — iemand die specifiek zoekt naar wat een werkende demo niet aan het licht zou brengen — blijven deze gaten doorgaans onzichtbaar totdat een echte gebruiker, of een echte aanvaller, ze per ongeluk of met opzet vindt, en tegen die tijd heeft de blootstelling meestal al plaatsgevonden in plaats van louter theoretisch te zijn.
+**Geen onafhankelijke verificatielaag.** Zonder een tweede blik - iemand die specifiek zoekt naar wat een werkende demo niet aan het licht zou brengen - blijven deze gaten doorgaans onzichtbaar totdat een echte gebruiker, of een echte aanvaller, ze per ongeluk of met opzet vindt, en tegen die tijd heeft de blootstelling meestal al plaatsgevonden in plaats van louter theoretisch te zijn.
 
 ## Waarom Founders Consistent Onderschatten Hoe Snel Dit Gevonden Wordt
 
-Het is verleidelijk om aan te nemen dat niemand kijkt — dat een klein, vroege-fase product met een paar dozijn gebruikers te obscuur is om ongewenste aandacht te trekken. In de praktijk is veel van deze ontdekking helemaal niet gericht: geautomatiseerde scanners en bots doorzoeken continu het open internet naar precies deze categorieën onbeschermde eindpunten en blootgestelde sleutels, zonder enig idee of interesse in wie de app gebouwd heeft, en controleren simpelweg of het gat bestaat. Een product hoeft niet beroemd te zijn om zo gevonden te worden — het hoeft alleen bereikbaar te zijn.
+Het is verleidelijk om aan te nemen dat niemand kijkt - dat een klein, vroege-fase product met een paar dozijn gebruikers te obscuur is om ongewenste aandacht te trekken. In de praktijk is veel van deze ontdekking helemaal niet gericht: geautomatiseerde scanners en bots doorzoeken continu het open internet naar precies deze categorieën onbeschermde eindpunten en blootgestelde sleutels, zonder enig idee of interesse in wie de app gebouwd heeft, en controleren simpelweg of het gat bestaat. Een product hoeft niet beroemd te zijn om zo gevonden te worden - het hoeft alleen bereikbaar te zijn.
 
 ## Een Praktische Zelfevaluatie Checklist Voordat U Dit Toont aan Investeerders of Klanten
 
-U heeft geen formele achtergrond in cybersecurity nodig om een eerste inspectieronde uit te voeren op uw eigen prototype — u heeft ongeveer twintig minuten nodig en de bereidheid om actief te proberen uw eigen product te breken in plaats van het te gebruiken zoals bedoeld. Dit is geen vervanging voor een professionele technische audit, maar het is een effectieve methode om de meest voor de hand liggende gaten op te sporen vóórdat iemand anders dat doet, en het geeft u een veel concreter startpunt wanneer u in gesprek gaat met een software-engineer.
+U heeft geen formele achtergrond in cybersecurity nodig om een eerste inspectieronde uit te voeren op uw eigen prototype - u heeft ongeveer twintig minuten nodig en de bereidheid om actief te proberen uw eigen product te breken in plaats van het te gebruiken zoals bedoeld. Dit is geen vervanging voor een professionele technische audit, maar het is een effectieve methode om de meest voor de hand liggende gaten op te sporen vóórdat iemand anders dat doet, en het geeft u een veel concreter startpunt wanneer u in gesprek gaat met een software-engineer.
 
 **Doorloop deze vijf controles zélf:**
 
-- **Open de Developer Tools van uw browser en inspecteer het Network-tabblad.** Klik door elke "premium-", "beheerders-" of "afgeschermde" functionaliteit in uw applicatie en kijk welke data er daadwerkelijk terugkomt in de serverrespons, en niet slechts wat de gebruikersinterface toont — als de volledige dataset binnenkomt en de frontend er simpelweg voor kiest om delen ervan te verbergen, is de beperking puur cosmetisch.
+- **Open de Developer Tools van uw browser en inspecteer het Network-tabblad.** Klik door elke "premium-", "beheerders-" of "afgeschermde" functionaliteit in uw applicatie en kijk welke data er daadwerkelijk terugkomt in de serverrespons, en niet slechts wat de gebruikersinterface toont - als de volledige dataset binnenkomt en de frontend er simpelweg voor kiest om delen ervan te verbergen, is de beperking puur cosmetisch.
 - **Probeer een beveiligde URL rechtstreeks op te vragen in plaats van er naartoe te klikken.** Als een pagina een actieve login of een specifieke rol vereist, open deze dan in een incognitovenster zonder enige actieve sessie en kijk wat er daadwerkelijk wordt ingeladen.
-- **Doorzoek uw eigen frontend-bundel op gevoelige sleutels.** Bekijk de paginabroncode ("view source") of zoek in de gecompileerde JavaScript-bestanden naar termen zoals "key", "secret" of "token" — alles wat een echte inlogwaarde oplevert in plaats van een tijdelijke placeholder moet direct verhuizen naar de serverzijde.
+- **Doorzoek uw eigen frontend-bundel op gevoelige sleutels.** Bekijk de paginabroncode ("view source") of zoek in de gecompileerde JavaScript-bestanden naar termen zoals "key", "secret" of "token" - alles wat een echte inlogwaarde oplevert in plaats van een tijdelijke placeholder moet direct verhuizen naar de serverzijde.
 - **Probeer een record-ID in de URL te manipuleren.** Als uw applicatie een record toont op basis van een ID (een factuur, een document, een profiel), pas dat getal of identificatieteken dan minimaal aan en kijk of u een foutmelding krijgt of daadwerkelijk de gegevens van een andere gebruiker te zien krijgt.
-- **Controleer wat een mislukt verzoek prijsgeeft.** Voer doelbewust een verkeerd wachtwoord of een ongeldig verzoek in en lees de foutmelding zorgvuldig — een melding die expliciet bevestigt of een e-mailadres al in uw systeem bestaat, lekt stiekem meer informatie dan veilig is.
+- **Controleer wat een mislukt verzoek prijsgeeft.** Voer doelbewust een verkeerd wachtwoord of een ongeldig verzoek in en lees de foutmelding zorgvuldig - een melding die expliciet bevestigt of een e-mailadres al in uw systeem bestaat, lekt stiekem meer informatie dan veilig is.
 
-Geen van deze controles vereist het schrijven van code, en geen ervan kost meer dan een paar minuten. Wat ze echter niet kunnen vangen, is het hiaat dat zich uitsluitend voordoet onder specifieke randvoorwaarden — dat ene endpoint waarvan u het bestaan vergeten was, een rolcontrole die overal geldt behalve op één specifieke route, of een validatieregel die wel op het formulier maar niet op de onderliggende API is afgedwongen. Dat is exact de klasse van bevindingen waar een gestructureerde technische review voor bestaat.
+Geen van deze controles vereist het schrijven van code, en geen ervan kost meer dan een paar minuten. Wat ze echter niet kunnen vangen, is het hiaat dat zich uitsluitend voordoet onder specifieke randvoorwaarden - dat ene endpoint waarvan u het bestaan vergeten was, een rolcontrole die overal geldt behalve op één specifieke route, of een validatieregel die wel op het formulier maar niet op de onderliggende API is afgedwongen. Dat is exact de klasse van bevindingen waar een gestructureerde technische review voor bestaat.
 
 ## Hoe het Dichten van de Kloof Er Daadwerkelijk Uitziet
 
-Werkelijk 'AI secure' worden betekent niet dat u uw product volledig opnieuw moet bouwen. Het vraagt om een gerichte, specifieke slag: het verplaatsen van autorisatiecontroles naar de serverzijde, het onderbrengen van geheimen in een veilige omgevingsconfiguratie, het testen van de grens tussen wat een gebruiker mag doen en wat uw code daadwerkelijk afdwingt, en het bevestigen dat een geweigerd verzoek veilig faalt zonder gevoelige redenen prijs te geven. [LaunchStudio](https://launchstudio.eu/nl/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productie-applicaties voor toonaangevende opdrachtgevers — dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native oprichter nodig heeft vóór de officiële marktintroductie.
+Werkelijk 'AI secure' worden betekent niet dat u uw product volledig opnieuw moet bouwen. Het vraagt om een gerichte, specifieke slag: het verplaatsen van autorisatiecontroles naar de serverzijde, het onderbrengen van geheimen in een veilige omgevingsconfiguratie, het testen van de grens tussen wat een gebruiker mag doen en wat uw code daadwerkelijk afdwingt, en het bevestigen dat een geweigerd verzoek veilig faalt zonder gevoelige redenen prijs te geven. [LaunchStudio](https://launchstudio.eu/nl/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productie-applicaties voor toonaangevende opdrachtgevers - dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native oprichter nodig heeft vóór de officiële marktintroductie.
 
 Het beoordelingsproces van Manifera verloopt via engineeringteams verspreid over het hoofdkantoor in Amsterdam aan de Herengracht 420 en het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City. Hierdoor kan LaunchStudio snel schakelen binnen de tijdlijn van een oprichter, zonder concessies te doen aan de grondigheid van de review zelf.
 
-[Praat met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — vóórdat een echte gebruiker de kloof ontdekt die uw demo nooit heeft getest.
+[Praat met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) - vóórdat een echte gebruiker de kloof ontdekt die uw demo nooit heeft getest.
 
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de premiumfunctie die iedereen kon ontgrendelen
 
-Daan, een voormalig personal trainer die founder werd in Rotterdam, bouwde FitTrack Pro — een AI-geassisteerd coachingplatform dat gepersonaliseerde trainingsschema's genereert — met Lovable, met een betaald premiumniveau dat geavanceerde schema-aanpassing achter een abonnementscontrole plaatste.
+Daan, een voormalig personal trainer die founder werd in Rotterdam, bouwde FitTrack Pro - een AI-geassisteerd coachingplatform dat gepersonaliseerde trainingsschema's genereert - met Lovable, met een betaald premiumniveau dat geavanceerde schema-aanpassing achter een abonnementscontrole plaatste.
 
-Twee weken na een zachte lancering vermeldde een technisch nieuwsgierige klant dat hij toegang had gekregen tot de premium schema-builder zonder te betalen, simpelweg door hetzelfde API-eindpunt aan te roepen dat de premium-UI gebruikte via de developer tools van zijn browser. LaunchStudio's review bevestigde dat de abonnementscontrole alleen in de frontend bestond — de API zelf leverde premiumdata aan elke geauthenticeerde gebruiker, ongeacht betaalstatus.
+Twee weken na een zachte lancering vermeldde een technisch nieuwsgierige klant dat hij toegang had gekregen tot de premium schema-builder zonder te betalen, simpelweg door hetzelfde API-eindpunt aan te roepen dat de premium-UI gebruikte via de developer tools van zijn browser. LaunchStudio's review bevestigde dat de abonnementscontrole alleen in de frontend bestond - de API zelf leverde premiumdata aan elke geauthenticeerde gebruiker, ongeacht betaalstatus.
 
 **Resultaat:** LaunchStudio verplaatste de abonnementscontrole naar server-side, zodat elke premium-API-aanroep nu onafhankelijk een actief abonnement verifieert, en dicht het gat ongeacht wat de frontend toont. Daans kerncoachinglogica en UI bleven onaangeraakt.
 
 > *"Ik bouwde de paywall zoals Lovable suggereerde en het zag er volledig correct uit in elke demo die ik draaide. Er was maar één nieuwsgierige klant nodig om me te laten zien dat het in feite decoratief was."*
-> — **Daan Vermeulen, Founder, FitTrack Pro (Rotterdam)**
+> - **Daan Vermeulen, Founder, FitTrack Pro (Rotterdam)**
 
-**Kosten & tijdlijn:** €1.600 (Launch Ready-pakket, server-side autorisatieharding) — voltooid in 6 werkdagen.
+**Kosten & tijdlijn:** €1.600 (Launch Ready-pakket, server-side autorisatieharding) - voltooid in 6 werkdagen.
 
 ---
 
@@ -96,23 +96,23 @@ Twee weken na een zachte lancering vermeldde een technisch nieuwsgierige klant d
 
 ### Als een founder niet kan coderen, hoe zou hij dan zelfs weten om specifiek naar een "server-side"-controle te vragen?
 
-Dat zou hij doorgaans niet, en dat zou ook niet moeten hoeven — dit is precies waarom LaunchStudio's intakeproces gebouwd is rond een founder die beschrijft wat de functie zou moeten doen, niet diagnosticeert waar de controle momenteel zit; dat vertalen naar een specifieke technische fix is de taak van het engineeringteam, niet van de founder.
+Dat zou hij doorgaans niet, en dat zou ook niet moeten hoeven - dit is precies waarom LaunchStudio's intakeproces gebouwd is rond een founder die beschrijft wat de functie zou moeten doen, niet diagnosticeert waar de controle momenteel zit; dat vertalen naar een specifieke technische fix is de taak van het engineeringteam, niet van de founder.
 
-### Een beveiligingsengineer zou kunnen beweren dat elke fix opnieuw getest moet worden door iemand anders dan de persoon die hem maakte — werkt LaunchStudio zo?
+### Een beveiligingsengineer zou kunnen beweren dat elke fix opnieuw getest moet worden door iemand anders dan de persoon die hem maakte - werkt LaunchStudio zo?
 
-Ja, in de praktijk — de engineer die een fix zoals die van Daan implementeert is niet dezelfde persoon die hem afvinkt, een basisprincipe van functiescheiding rechtstreeks overgenomen van Manifera's enterprise-opdrachten, waar dezelfde discipline geldt ongeacht klantgrootte.
+Ja, in de praktijk - de engineer die een fix zoals die van Daan implementeert is niet dezelfde persoon die hem afvinkt, een basisprincipe van functiescheiding rechtstreeks overgenomen van Manifera's enterprise-opdrachten, waar dezelfde discipline geldt ongeacht klantgrootte.
 
 ### Is dit het soort gat waar Herre Roelevink naar verwees toen hij de verschuiving richting architectuur en beveiliging beschreef als de echte uitdaging nu?
 
-Het is een bijna perfect voorbeeld — Roelevinks eigen achtergrond met het runnen van CyberDevOps (nu CFLW Cyber Strategies) naast TNO was specifiek opgebouwd rond het vinden van precies deze categorie onzichtbare, structurele gaten, wat de lens is die hij heeft meegebracht in hoe LaunchStudio's reviewproces afgebakend wordt.
+Het is een bijna perfect voorbeeld - Roelevinks eigen achtergrond met het runnen van CyberDevOps (nu CFLW Cyber Strategies) naast TNO was specifiek opgebouwd rond het vinden van precies deze categorie onzichtbare, structurele gaten, wat de lens is die hij heeft meegebracht in hoe LaunchStudio's reviewproces afgebakend wordt.
 
 ### Doet het ertoe dat FitTrack Pro een kleine consumenten-app is in plaats van een enterprise-systeem?
 
-Niet voor het onderliggende risico — een abonnementsomzeiling kost een kleine founder proportioneel evenveel echte omzet als een grotere inbreuk een enterprise kost, wat deel uitmaakt van waarom LaunchStudio zijn reviewrigoureusheid niet naar beneden schaalt alleen omdat het bedrijf klein is.
+Niet voor het onderliggende risico - een abonnementsomzeiling kost een kleine founder proportioneel evenveel echte omzet als een grotere inbreuk een enterprise kost, wat deel uitmaakt van waarom LaunchStudio zijn reviewrigoureusheid niet naar beneden schaalt alleen omdat het bedrijf klein is.
 
 ### Zou dit gat gevangen kunnen zijn met geautomatiseerde scantools in plaats van een menselijke review?
 
-Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen — precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet.
+Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen - precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet.
 
 <script type="application/ld+json">
 {
@@ -124,15 +124,15 @@ Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, m
       "name": "Als een founder niet kan coderen, hoe zou hij dan zelfs weten om specifiek naar een \"server-side\"-controle te vragen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat zou hij doorgaans niet, en dat zou ook niet moeten hoeven — dit is precies waarom LaunchStudio's intakeproces gebouwd is rond een founder die beschrijft wat de functie zou moeten doen, niet diagnosticeert waar de controle momenteel zit; dat vertalen naar een specifieke technische fix is de taak van het engineeringteam, niet van de founder."
+        "text": "Dat zou hij doorgaans niet, en dat zou ook niet moeten hoeven - dit is precies waarom LaunchStudio's intakeproces gebouwd is rond een founder die beschrijft wat de functie zou moeten doen, niet diagnosticeert waar de controle momenteel zit; dat vertalen naar een specifieke technische fix is de taak van het engineeringteam, niet van de founder."
       }
     },
     {
       "@type": "Question",
-      "name": "Een beveiligingsengineer zou kunnen beweren dat elke fix opnieuw getest moet worden door iemand anders dan de persoon die hem maakte — werkt LaunchStudio zo?",
+      "name": "Een beveiligingsengineer zou kunnen beweren dat elke fix opnieuw getest moet worden door iemand anders dan de persoon die hem maakte - werkt LaunchStudio zo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, in de praktijk — de engineer die een fix zoals die van Daan implementeert is niet dezelfde persoon die hem afvinkt, een basisprincipe van functiescheiding rechtstreeks overgenomen van Manifera's enterprise-opdrachten, waar dezelfde discipline geldt ongeacht klantgrootte."
+        "text": "Ja, in de praktijk - de engineer die een fix zoals die van Daan implementeert is niet dezelfde persoon die hem afvinkt, een basisprincipe van functiescheiding rechtstreeks overgenomen van Manifera's enterprise-opdrachten, waar dezelfde discipline geldt ongeacht klantgrootte."
       }
     },
     {
@@ -140,7 +140,7 @@ Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, m
       "name": "Is dit het soort gat waar Herre Roelevink naar verwees toen hij de verschuiving richting architectuur en beveiliging beschreef als de echte uitdaging nu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is een bijna perfect voorbeeld — Roelevinks eigen achtergrond met het runnen van CyberDevOps (nu CFLW Cyber Strategies) naast TNO was specifiek opgebouwd rond het vinden van precies deze categorie onzichtbare, structurele gaten, wat de lens is die hij heeft meegebracht in hoe LaunchStudio's reviewproces afgebakend wordt."
+        "text": "Het is een bijna perfect voorbeeld - Roelevinks eigen achtergrond met het runnen van CyberDevOps (nu CFLW Cyber Strategies) naast TNO was specifiek opgebouwd rond het vinden van precies deze categorie onzichtbare, structurele gaten, wat de lens is die hij heeft meegebracht in hoe LaunchStudio's reviewproces afgebakend wordt."
       }
     },
     {
@@ -148,7 +148,7 @@ Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, m
       "name": "Doet het ertoe dat FitTrack Pro een kleine consumenten-app is in plaats van een enterprise-systeem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet voor het onderliggende risico — een abonnementsomzeiling kost een kleine founder proportioneel evenveel echte omzet als een grotere inbreuk een enterprise kost, wat deel uitmaakt van waarom LaunchStudio zijn reviewrigoureusheid niet naar beneden schaalt alleen omdat het bedrijf klein is."
+        "text": "Niet voor het onderliggende risico - een abonnementsomzeiling kost een kleine founder proportioneel evenveel echte omzet als een grotere inbreuk een enterprise kost, wat deel uitmaakt van waarom LaunchStudio zijn reviewrigoureusheid niet naar beneden schaalt alleen omdat het bedrijf klein is."
       }
     },
     {
@@ -156,7 +156,7 @@ Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, m
       "name": "Zou dit gat gevangen kunnen zijn met geautomatiseerde scantools in plaats van een menselijke review?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen — precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet."
+        "text": "Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen - precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet."
       }
     }
   ]

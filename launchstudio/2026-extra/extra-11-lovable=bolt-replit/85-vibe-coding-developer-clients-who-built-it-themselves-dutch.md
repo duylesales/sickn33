@@ -34,7 +34,7 @@ Vier diepgewortelde angsten die zelden hardop worden uitgesproken:
 
 **Dat je alles wilt herbouwen.** Hun ervaring met softwareontwikkelaars is dat onbekende code standaard wordt beantwoord met het voorstel om opnieuw te beginnen. Dat zou betekenen dat vier maanden noeste arbeid voor niets zijn geweest en dat de kosten astronomisch worden.
 
-**Dat ze de controle over hun eigen product verliezen.** Op dit moment kunnen ze zelfstandig velden toevoegen en functionaliteiten aanpassen; dat was immers de hele reden om no-code/AI-tools te gebruiken. Een professioneel traject dat eindigt in een situatie waarin ze zelf niets meer kunnen wijzigen, voelt als een achteruitgang — zelfs als het technisch superieur is.
+**Dat ze de controle over hun eigen product verliezen.** Op dit moment kunnen ze zelfstandig velden toevoegen en functionaliteiten aanpassen; dat was immers de hele reden om no-code/AI-tools te gebruiken. Een professioneel traject dat eindigt in een situatie waarin ze zelf niets meer kunnen wijzigen, voelt als een achteruitgang - zelfs als het technisch superieur is.
 
 **Dat de kosten onbeheersbaar worden.** Ze hebben geen technisch referentiekader om te beoordelen of een offerte realistisch is, waardoor ze een open-einde urencontract veel meer vrezen dan een forse, maar vaste projectprijs.
 
@@ -44,7 +44,7 @@ Ieder van deze bezwaren kun je in het allereerste gesprek wegnemen, en dat wegne
 
 **Begin met wat wél goed werkt.** Er zijn schermen in de app die uitstekend functioneren en waar betalende klanten dagelijks gebruik van maken. Benoem dat expliciet en specifiek. *"De boekingsflow is verrassend logisch opgezet en je gebruikers begrijpen het direct"* kost je niets en verandert de sfeer aan tafel onmiddellijk.
 
-**Scheid de interface van de infrastructuur.** Dit is het krachtigste denkraam dat je kunt inzetten. Wat de oprichter heeft gecreëerd — de gebruikerservaring, de schermen, de functionele logica — is vaak uitstekend, omdat hij zijn doelgroep door en door kent. Wat ontbreekt, is de onzichtbare achterkant: databaseregels, geheimenbeheer, back-ups, monitoring en betrouwbare deployments. Wanneer je uitlegt dat het zichtbare deel intact blijft en dat jij louter het onzichtbare fundament verstevigt, verdwijnt de angst voor herbouw direct. Bovendien is dit technisch gezien ook exact wat er moet gebeuren.
+**Scheid de interface van de infrastructuur.** Dit is het krachtigste denkraam dat je kunt inzetten. Wat de oprichter heeft gecreëerd - de gebruikerservaring, de schermen, de functionele logica - is vaak uitstekend, omdat hij zijn doelgroep door en door kent. Wat ontbreekt, is de onzichtbare achterkant: databaseregels, geheimenbeheer, back-ups, monitoring en betrouwbare deployments. Wanneer je uitlegt dat het zichtbare deel intact blijft en dat jij louter het onzichtbare fundament verstevigt, verdwijnt de angst voor herbouw direct. Bovendien is dit technisch gezien ook exact wat er moet gebeuren.
 
 **Wees specifiek in plaats van vaag.** Zeggen dat *"het systeem onveilig is"* klinkt als een diskwalificatie. Zeggen dat *"iedere ingelogde gebruiker de facturen van andere klanten kan inzien door simpelweg het id-nummer in de URL aan te passen, en ik kan het je binnen twee minuten laten zien"* is feitelijke informatie. Laat het zien. Een live demonstratie overtuigt sneller dan welk theoretisch betoog dan ook; op dat moment stopt de discussie over óf ze je moeten inhuren.
 
@@ -52,9 +52,9 @@ Ieder van deze bezwaren kun je in het allereerste gesprek wegnemen, en dat wegne
 
 ## Beoordeel vóór je offreert, en breng het in rekening
 
-Een betaald technisch assessment — twee tot vier uur werk, een paar honderd euro, verrekend met het projectbedrag als ze akkoord gaan — lost meerdere problemen tegelijk op:
+Een betaald technisch assessment - twee tot vier uur werk, een paar honderd euro, verrekend met het projectbedrag als ze akkoord gaan - lost meerdere problemen tegelijk op:
 
-Het verschaft je de feitelijke data om een fixed-price offerte zonder verrassingen uit te brengen, wat onmogelijk is op basis van alleen een schermdemo. Het scheidt serieuze ondernemers van mensen die gratis advies zoeken. Het levert de klant tastbare waarde op, zelfs als hij besluit niet door te gaan. En het transformeert het contact van een vrijblijvend verkoopgespraak naar een actieve werkrelatie — het domein waar jouw expertise het beste tot zijn recht komt.
+Het verschaft je de feitelijke data om een fixed-price offerte zonder verrassingen uit te brengen, wat onmogelijk is op basis van alleen een schermdemo. Het scheidt serieuze ondernemers van mensen die gratis advies zoeken. Het levert de klant tastbare waarde op, zelfs als hij besluit niet door te gaan. En het transformeert het contact van een vrijblijvend verkoopgespraak naar een actieve werkrelatie - het domein waar jouw expertise het beste tot zijn recht komt.
 
 Wat het assessment onderzoekt: Row-Level Security policies getest via een tweede gebruikersaccount, API-keys en waar ze zijn opgeslagen, betrouwbaarheid van back-ups, reproduceerbaarheid van deployments, verouderde dependencies, foutafhandeling en logging, en alle modules die transacties of geld verwerken. Lever dit op als een bondig schriftelijk auditrapport met bevindingen gerangschikt op risico, telkens vergezeld van een heldere toelichting in gewone mensentaal en een concrete kosteninschatting per herstelpunt.
 
@@ -66,13 +66,13 @@ Houd de eerste opdracht compact en scherp omlijnd. Een eerste project dat vlekke
 
 Neem de belangrijkste kwetsbaarheden uit het assessment, definieer elk punt als een meetbaar resultaat, koppel er een vaste prijs en een harde opleverdatum aan, en sluit alle overige zaken expliciet uit: geen nieuwe features, geen UI-redesign, één benoemde API-koppeling.
 
-Lever het werk vervolgens zo op dat de klant zelfstandig kan blijven doorontwikkelen. Gebruik conventionele code-architectuur, vermijd overbodige abstracties, voeg beknopt commentaar toe waar keuzes minder voor de hand liggen, en lever een korte notitie van wat er is aangepast en waarom. Als de oprichter na jouw werk nog steeds Lovable kan openen om een formulierveld toe te voegen, heb je precies behouden wat hij het meest waardeert aan het zelf bouwen — en belt hij jou gegarandeerd weer wanneer het complex wordt.
+Lever het werk vervolgens zo op dat de klant zelfstandig kan blijven doorontwikkelen. Gebruik conventionele code-architectuur, vermijd overbodige abstracties, voeg beknopt commentaar toe waar keuzes minder voor de hand liggen, en lever een korte notitie van wat er is aangepast en waarom. Als de oprichter na jouw werk nog steeds Lovable kan openen om een formulierveld toe te voegen, heb je precies behouden wat hij het meest waardeert aan het zelf bouwen - en belt hij jou gegarandeerd weer wanneer het complex wordt.
 
 ## Het werk is vrijwel altijd hetzelfde
 
 Na een tiental projecten verdwijnt elke verrassing. De bevindingen herhalen zich continu: ontbrekende of te permissieve databasepolicies, een Supabase service_role key in de client-side code, sessiedata die verdwijnt na een herstart, geen back-ups (of back-ups die nooit zijn getest), geheimen in platte tekst, ontbrekende foutopsporing, betaalwebhooks zonder handtekeningverificatie, geüploade bestanden in een publieke storage bucket met voorspelbare bestandsnamen, en een datamodel dat alleen in een visuele editor bestaat.
 
-Die herhaling is een enorme kracht. Het stelt je in staat om je diensten te productiseren — een vast pakket met een vaste prijs en een gegarandeerde doorlooptijd — en maakt je inschattingen foutloos, omdat je exact ditzelfde project al meermalen onder een andere merknaam hebt hersteld.
+Die herhaling is een enorme kracht. Het stelt je in staat om je diensten te productiseren - een vast pakket met een vaste prijs en een gegarandeerde doorlooptijd - en maakt je inschattingen foutloos, omdat je exact ditzelfde project al meermalen onder een andere merknaam hebt hersteld.
 
 ## Wat je vooral niét moet doen
 
@@ -92,7 +92,7 @@ De manier om hen te bereiken is door deze vragen openbaar, in heldere taal, in z
 
 ## De tweede opdracht is waar de echte winst zit
 
-Een eerste project dekt de kosten. Een tweede project maakt de klantrelatie buitengewoon waardevol. Bij dit type ondernemers is de kans op een vervolgopdracht uitzonderlijk groot — mits je het goed organiseert:
+Een eerste project dekt de kosten. Een tweede project maakt de klantrelatie buitengewoon waardevol. Bij dit type ondernemers is de kans op een vervolgopdracht uitzonderlijk groot - mits je het goed organiseert:
 
 **Sluit af met een concreet vervolgadvies.** Het assessment bracht meer knelpunten aan het licht dan er in het eerste sprintje zijn verholpen. Overhandig de overgebleven punten in een overzichtelijke roadmap met bijbehorende kosten en concrete triggers: *"De multi-tenant datastructuur wordt urgent zodra je een zakelijke klant met meerdere medewerkers aansluit"*, of *"De rapportagequery's moeten geoptimaliseerd worden zodra je boven de duizend records per klant uitkomt"*. Dit is geen opdringerige upselling; het is het technische strategisch plan dat ze zelf niet kunnen schrijven.
 
@@ -124,14 +124,14 @@ Ze veranderde twee cruciale elementen. Ze introduceerde een vast technisch asses
 
 De demonstratie duurt vier minuten. Elke oprichter aan wie ze dit toont begrijpt de ernst onmiddellijk; niemand gaat meer in discussie.
 
-Haar analyserapport werd eveneens herzien. Bevindingen gerangschikt op urgentie, geformuleerd in begrijpelijke zakelijke taal — *"Een concurrent kan via het netwerkpaneel de inkoopprijzen van andere accounts uitlezen"*, in plaats van *"Ontbrekende Row-Level Security"* — met een vaste herstelprijs per onderdeel. De slotpagina somt op wat er wél goed is aan de applicatie, wat volgens Yara steevast de pagina is die oprichters het meest waarderen.
+Haar analyserapport werd eveneens herzien. Bevindingen gerangschikt op urgentie, geformuleerd in begrijpelijke zakelijke taal - *"Een concurrent kan via het netwerkpaneel de inkoopprijzen van andere accounts uitlezen"*, in plaats van *"Ontbrekende Row-Level Security"* - met een vaste herstelprijs per onderdeel. De slotpagina somt op wat er wél goed is aan de applicatie, wat volgens Yara steevast de pagina is die oprichters het meest waarderen.
 
 **Resultaat:** In het daaropvolgende jaar converteerden 23 van de 31 assessments direct in vervolgopdrachten met een gemiddelde omzet van € 2.700. Vier oprichters die aanvankelijk afzagen van een vervolg, kwamen binnen zes maanden alsnog terug nadat een zakelijke klant kritische securityvragen stelde die ze niet konden beantwoorden. Twee klanten sturen haar inmiddels doorlopend nieuwe leads door.
 
 > *"Vroeger vertelde ik ondernemers dat hun applicatie onveilig was en zag ik hoe ze afhaakten. Nu laat ik hen vier minuten lang één scherm zien, waarna ze zelf vragen wat het kost om het direct op te lossen."*
-> — **Yara Postma, Freelance vibe coding developer (Delft)**
+> - **Yara Postma, Freelance vibe coding developer (Delft)**
 
-**Kosten & Doorlooptijd:** Intake herzien naar een vast assessment van € 300, verrekend met projecten van gemiddeld € 2.700 — proceswijziging geïmplementeerd binnen één week.
+**Kosten & Doorlooptijd:** Intake herzien naar een vast assessment van € 300, verrekend met projecten van gemiddeld € 2.700 - proceswijziging geïmplementeerd binnen één week.
 
 ## Veelgestelde vragen
 
@@ -173,7 +173,7 @@ Niet door te zoeken naar een algemene ontwikkelaar, maar door te zoeken op hun a
       "name": "Hoe leg ik technische kwetsbaarheden uit zonder de klant te kwetsen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Scheid interface van infrastructuur — behoud het zichtbare ontwerp en demonstreer één feitelijk datalek in plaats van algemene kritiek."
+        "text": "Scheid interface van infrastructuur - behoud het zichtbare ontwerp en demonstreer één feitelijk datalek in plaats van algemene kritiek."
       }
     },
     {

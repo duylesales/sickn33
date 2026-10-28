@@ -1,6 +1,6 @@
 🛑 "Wacht even... staat mijn eigen wachtwoord serieus in een logbestand?" Een ontdekking die veel oprichters pas doen tijdens een security-audit.
 
-Een onschuldig lijkende debugregel zoals `console.log(req.body)` wordt tijdens het bouwen met Cursor of Lovable snel toegevoegd — en vervolgens glad vergeten vóór de lancering.
+Een onschuldig lijkende debugregel zoals `console.log(req.body)` wordt tijdens het bouwen met Cursor of Lovable snel toegevoegd - en vervolgens glad vergeten vóór de lancering.
 
 De 4 categorieën data die NOOIT in uw productielogs mogen belanden:
 

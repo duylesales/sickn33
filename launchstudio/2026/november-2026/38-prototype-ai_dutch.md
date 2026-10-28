@@ -103,9 +103,9 @@ Binnen 14 werkdagen herbouwde het Manifera-team de Laatste 10%:
 **Resultaat:** Bij de volgende 350 pagina's tellende upload bevroor het scherm niet, maar leverde het systeem binnen 45 seconden een foutloos analysedossier op. Het vastgoedkantoor tekende direct een jaarcontract van €15.000.
 
 > *"Ik dacht dat ik een genie was omdat ik in een weekend een AI-app in elkaar had gezet. LaunchStudio zette me met beide benen op de grond en redde mijn bedrijf. Zij lieten zien dat een leuke interface bouwen pas de startlijn is; zij bouwden de zware industriële machine die zakelijke documenten daadwerkelijk aankan zonder te crashen."*
-> — **Lucas Wagner, Oprichter, LeaseLogic (Berlijn)**
+> - **Lucas Wagner, Oprichter, LeaseLogic (Berlijn)**
 
-**Kosten & Doorlooptijd:** €7.500 (Launch & Grow Pakket met Zware Dataverwerking Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €7.500 (Launch & Grow Pakket met Zware Dataverwerking Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

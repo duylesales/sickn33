@@ -2,7 +2,7 @@
 
 Discussions of AI in IT security focus on impressive automated threat detection. The trouble tends to show up somewhere much more basic: a signup form that happily accepts "12345." 🧠
 
-❌ An AI tool implements exactly what was described — if password strength wasn't part of that description, nothing gets added anyway
+❌ An AI tool implements exactly what was described - if password strength wasn't part of that description, nothing gets added anyway
 ❌ Individual password choice is the user's decision, but a platform accepting trivially weak passwords bears real responsibility too
 ❌ Credential stuffing attacks run indiscriminately against any reachable login form, regardless of platform size or fame
 ❌ A minimum length requirement alone doesn't prevent weak-but-long choices, nor address a strong-but-previously-breached password being reused
@@ -13,8 +13,8 @@ Discussions of AI in IT security focus on impressive automated threat detection.
 
 At **LaunchStudio**, we implement exactly this kind of balanced password policy as part of our authentication hardening work. Backed by Manifera's 11+ years building secure, user-friendly signup flows. 🛡️
 
-Her result: a clear minimum requirement, a breach-list check, and existing weak-password users prompted to update — signup experience unchanged. 🚀
+Her result: a clear minimum requirement, a breach-list check, and existing weak-password users prompted to update - signup experience unchanged. 🚀
 
-👉 Describe your product to us — we respond within one business day: https://launchstudio.eu/en/blog/ai-in-it-security-why-founders-still-need-a-human-review
+👉 Describe your product to us - we respond within one business day: https://launchstudio.eu/en/blog/ai-in-it-security-why-founders-still-need-a-human-review
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #Authentication

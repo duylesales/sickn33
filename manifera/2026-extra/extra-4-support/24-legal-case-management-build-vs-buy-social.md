@@ -1,4 +1,4 @@
-🚨 "Let's just buy an off-the-shelf SaaS tool or hire locally for 3x the cost." — The strategic miscalculation that locks your company into architectural debt and bloated burn rates. 💸🛡️
+🚨 "Let's just buy an off-the-shelf SaaS tool or hire locally for 3x the cost." - The strategic miscalculation that locks your company into architectural debt and bloated burn rates. 💸🛡️
 
 **The Pain Points:**
 ❌ **Off-the-Shelf Feature Lock-In:** Commercial SaaS forces your unique business workflows into rigid vendor templates with escalating per-seat licensing fees.
@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Custom High-ROI Core Architecture:** Builds bespoke software around your true competitive differentiators while utilizing standard APIs for commodity functions.
-✅ **Hybrid Offshore Team Economics:** Anchored by Dutch legal and strategic governance in Amsterdam with high-velocity engineering pods in Vietnam — slashing burn rate by 60%.
+✅ **Hybrid Offshore Team Economics:** Anchored by Dutch legal and strategic governance in Amsterdam with high-velocity engineering pods in Vietnam - slashing burn rate by 60%.
 ✅ **100% IP & Codebase Ownership:** Full transparency with CI/CD pipelines, automated testing, and clean documentation transferred directly to your organization.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

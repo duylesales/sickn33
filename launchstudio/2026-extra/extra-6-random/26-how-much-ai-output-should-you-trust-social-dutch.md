@@ -1,4 +1,4 @@
-🔢 De inspectie-app voor wagenparken RouteCheck van Ruben Achterberg, gebouwd met Lovable in Gouda, berekende kosten per voertuig met een door AI gegenereerde gelaagde prijsstructuur. Ze draaide zonder fouten, gaf plausibele getallen, en doorstond zijn eigen terloopse tests. Het duurde weken — en één scherpzinnige klant die zijn factuur vergeleek met zijn eigen gebruikslog — voordat iemand merkte dat er iets niet klopte. 📊
+🔢 De inspectie-app voor wagenparken RouteCheck van Ruben Achterberg, gebouwd met Lovable in Gouda, berekende kosten per voertuig met een door AI gegenereerde gelaagde prijsstructuur. Ze draaide zonder fouten, gaf plausibele getallen, en doorstond zijn eigen terloopse tests. Het duurde weken - en één scherpzinnige klant die zijn factuur vergeleek met zijn eigen gebruikslog - voordat iemand merkte dat er iets niet klopte. 📊
 
 Een plausibel ogend fout getal is veel gevaarlijker dan een duidelijke crash, want er lijkt niets mis mee te zijn. 🧠
 

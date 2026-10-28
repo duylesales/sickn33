@@ -21,14 +21,14 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Inloggen is een moment; een sessie is alles wat daarna komt. Elk verzoek dat uw app ontvangt, draagt een bewijs mee dat "dit nog steeds de gebruiker is die heeft ingelogd" — een token of een cookie. Kan dat bewijs worden gestolen, vervalst of hergebruikt, dan doet de sterkte van uw inlogscherm er niet toe. Sessiebeheer is een onderdeel van de beveiliging van AI-gegenereerde apps dat in demo's zelden aandacht krijgt, omdat demo's nooit testen wat er met een sessie gebeurt op een gedeelde computer, bij een kwaadaardige link of na een wachtwoordwijziging.
+Inloggen is een moment; een sessie is alles wat daarna komt. Elk verzoek dat uw app ontvangt, draagt een bewijs mee dat "dit nog steeds de gebruiker is die heeft ingelogd" - een token of een cookie. Kan dat bewijs worden gestolen, vervalst of hergebruikt, dan doet de sterkte van uw inlogscherm er niet toe. Sessiebeheer is een onderdeel van de beveiliging van AI-gegenereerde apps dat in demo's zelden aandacht krijgt, omdat demo's nooit testen wat er met een sessie gebeurt op een gedeelde computer, bij een kwaadaardige link of na een wachtwoordwijziging.
 
 ## Vooraf: Hoe AI-Gegenereerde Apps Vaak met Sessies Omgaan
 
-Als AI-tools eigen authenticatie implementeren — of de authenticatie van een aanbieder in eigen code verpakken — zijn veelvoorkomende patronen:
+Als AI-tools eigen authenticatie implementeren - of de authenticatie van een aanbieder in eigen code verpakken - zijn veelvoorkomende patronen:
 
 - **Tokens in localStorage,** leesbaar voor elk JavaScript op de pagina, inclusief geïnjecteerde scripts.
-- **Cookies zonder beveiligingsvlaggen** — zonder `HttpOnly`, `Secure` of `SameSite`.
+- **Cookies zonder beveiligingsvlaggen** - zonder `HttpOnly`, `Secure` of `SameSite`.
 - **Zeer lange levensduur,** zoals tokens die 30 dagen geldig zijn zonder vernieuwing of intrekking.
 - **Uitloggen dat alleen het token in de browser verwijdert,** terwijl het token zelf op de server geldig blijft.
 - **Geen intrekking van sessies** na wachtwoordwijzigingen of het verwijderen van een account.
@@ -92,7 +92,7 @@ cookies().set("__Host-session", sessionId, {
 });
 ```
 
-Het voorvoegsel `__Host-` vertelt browsers de cookie alleen te accepteren als die beveiligd is, het pad `/` heeft en geen domeinattribuut — wat voorkomt dat subdomeinen hem overschrijven. Veel AI-gegenereerde implementaties stellen cookies in met standaardattributen, wat meestal betekent: geen `HttpOnly` en soms geen `Secure`.
+Het voorvoegsel `__Host-` vertelt browsers de cookie alleen te accepteren als die beveiligd is, het pad `/` heeft en geen domeinattribuut - wat voorkomt dat subdomeinen hem overschrijven. Veel AI-gegenereerde implementaties stellen cookies in met standaardattributen, wat meestal betekent: geen `HttpOnly` en soms geen `Secure`.
 
 ## De Levensduur van Sessies Kiezen naar Risico
 
@@ -111,7 +111,7 @@ Apps die JWT's of vergelijkbare tokens gebruiken, horen een paar regels te volge
 
 ## CSRF-Bescherming in Moderne Frameworks
 
-Met SameSite-cookies blokkeert de browser de meeste cross-site request forgery. Gebruik voor extra bescherming bij gevoelige acties een van deze methoden: synchronisatietokens (een willekeurig token in het formulier, op de server geverifieerd), double-submit cookies, of het vereisen van een eigen header die eenvoudige formulieren van andere sites niet kunnen instellen. Sommige frameworks bieden standaard CSRF-bescherming voor formulieracties — bijvoorbeeld door de Origin-header te controleren — maar controleer dat die in uw configuratie actief is in plaats van het aan te nemen.
+Met SameSite-cookies blokkeert de browser de meeste cross-site request forgery. Gebruik voor extra bescherming bij gevoelige acties een van deze methoden: synchronisatietokens (een willekeurig token in het formulier, op de server geverifieerd), double-submit cookies, of het vereisen van een eigen header die eenvoudige formulieren van andere sites niet kunnen instellen. Sommige frameworks bieden standaard CSRF-bescherming voor formulieracties - bijvoorbeeld door de Origin-header te controleren - maar controleer dat die in uw configuratie actief is in plaats van het aan te nemen.
 
 ## Uitloggen dat Sessies Echt Beëindigt
 
@@ -123,7 +123,7 @@ Bescherming van sessies en bescherming tegen XSS versterken elkaar. HttpOnly-coo
 
 ## Afwijkingen in Sessies Monitoren
 
-Log sessie-events — inloggen, vernieuwen, uitloggen, intrekken, mislukte vernieuwing — met IP-bereiken en user agents. Stel meldingen in bij patronen zoals veel sessies voor één account vanuit verschillende landen binnen enkele minuten, het afgaan van de detectie van hergebruik van refresh tokens, of pieken in mislukte inlogpogingen. Gebruikers kunnen ook hun actieve sessies en recente inlogpogingen te zien krijgen, zodat ze zelf verdachte activiteit kunnen opmerken.
+Log sessie-events - inloggen, vernieuwen, uitloggen, intrekken, mislukte vernieuwing - met IP-bereiken en user agents. Stel meldingen in bij patronen zoals veel sessies voor één account vanuit verschillende landen binnen enkele minuten, het afgaan van de detectie van hergebruik van refresh tokens, of pieken in mislukte inlogpogingen. Gebruikers kunnen ook hun actieve sessies en recente inlogpogingen te zien krijgen, zodat ze zelf verdachte activiteit kunnen opmerken.
 
 ## Sessiegedrag Testen
 
@@ -131,7 +131,7 @@ Voeg geautomatiseerde tests toe voor: cookieattributen bij inlogantwoorden; gewe
 
 ## Sessies op Gedeelde en Openbare Apparaten
 
-Apps die op gedeelde apparaten worden gebruikt — receptiebalies, klaslokalen, werkplaatsen, kiosken — hebben een speciale aanpak nodig. Bied een modus "gedeeld apparaat" met korte inactiviteitstime-outs, zonder "ingelogd blijven", met automatisch uitloggen aan het einde van de werkdag en snel wisselen van gebruiker via een pincode bovenop een sessie op apparaatniveau. Wis gevoelige data van de pagina als de sessie eindigt, zodat de terugknop eerdere schermen niet onthult; stel cacheheaders in op geauthenticeerde pagina's om te voorkomen dat browsers ze opslaan.
+Apps die op gedeelde apparaten worden gebruikt - receptiebalies, klaslokalen, werkplaatsen, kiosken - hebben een speciale aanpak nodig. Bied een modus "gedeeld apparaat" met korte inactiviteitstime-outs, zonder "ingelogd blijven", met automatisch uitloggen aan het einde van de werkdag en snel wisselen van gebruiker via een pincode bovenop een sessie op apparaatniveau. Wis gevoelige data van de pagina als de sessie eindigt, zodat de terugknop eerdere schermen niet onthult; stel cacheheaders in op geauthenticeerde pagina's om te voorkomen dat browsers ze opslaan.
 
 ## Sessies in Mobiele Apps
 
@@ -147,11 +147,11 @@ Bevestig vóór de lancering: sessiecookies zijn HttpOnly, Secure en SameSite, w
 
 ## Waarom Oprichters Zich Hier Druk om Moeten Maken
 
-Fouten in sessies komen zelden naar boven in demo's, maar ze bepalen of één gestolen token of een gedeelde computer uitmondt in een accountovername. Ze zijn meestal goedkoop op te lossen — vooral configuratie en het gebruik van een volwassen authenticatieaanbieder — en duur om na een incident uit te leggen. Zet sessiebeveiliging vóór de lancering op dezelfde lijst als toegangsbeheer en betalingen.
+Fouten in sessies komen zelden naar boven in demo's, maar ze bepalen of één gestolen token of een gedeelde computer uitmondt in een accountovername. Ze zijn meestal goedkoop op te lossen - vooral configuratie en het gebruik van een volwassen authenticatieaanbieder - en duur om na een incident uit te leggen. Zet sessiebeveiliging vóór de lancering op dezelfde lijst als toegangsbeheer en betalingen.
 
 ## Vooraf en Daarna, Samengevat
 
-Vooraf: tokens in localStorage, cookies zonder vlaggen, sessies die een maand duren, uitloggen dat alleen het token verbergt, geen CSRF-bescherming en geen intrekking na een wachtwoordwijziging. Daarna: HttpOnly-, Secure- en SameSite-cookies gebonden aan de host; kortlevende access tokens met geroteerde refresh tokens; intrekking op de server bij uitloggen en wachtwoordwijziging; time-outs passend bij het risico; CSRF-bescherming bij gevoelige acties; een Content Security Policy; gelogde afwijkingen; en tests die dat allemaal op zijn plek houden. De interface ziet er in beide gevallen hetzelfde uit — het verschil is of een gestolen token, een gedeelde computer of een kwaadaardige link kan uitmonden in het account van iemand anders.
+Vooraf: tokens in localStorage, cookies zonder vlaggen, sessies die een maand duren, uitloggen dat alleen het token verbergt, geen CSRF-bescherming en geen intrekking na een wachtwoordwijziging. Daarna: HttpOnly-, Secure- en SameSite-cookies gebonden aan de host; kortlevende access tokens met geroteerde refresh tokens; intrekking op de server bij uitloggen en wachtwoordwijziging; time-outs passend bij het risico; CSRF-bescherming bij gevoelige acties; een Content Security Policy; gelogde afwijkingen; en tests die dat allemaal op zijn plek houden. De interface ziet er in beide gevallen hetzelfde uit - het verschil is of een gestolen token, een gedeelde computer of een kwaadaardige link kan uitmonden in het account van iemand anders.
 
 ## Eerste Stap
 
@@ -159,7 +159,7 @@ Log in op uw app, open de ontwikkelaarstools van de browser en kijk bij Applicat
 
 ## Waar LaunchStudio Past
 
-LaunchStudio beoordeelt sessiebeheer bij elke controle van de authenticatie en vervangt eigen sessiecode meestal door de veilige standaarden van de authenticatieaanbieder, voegt correcte cookievlaggen toe, CSRF-bescherming, uitloggen en intrekken op de server, en een passende levensduur. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft — inclusief het medeoprichten van CyberDevOps, nu CFLW Cyber Strategies — die een reviewcultuur vormt waarin beveiliging voorop staat. De engineers van Manifera werken in Ho Chi Minh-stad, met klantcontact via de Herengracht 420 in Amsterdam. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
+LaunchStudio beoordeelt sessiebeheer bij elke controle van de authenticatie en vervangt eigen sessiecode meestal door de veilige standaarden van de authenticatieaanbieder, voegt correcte cookievlaggen toe, CSRF-bescherming, uitloggen en intrekken op de server, en een passende levensduur. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft - inclusief het medeoprichten van CyberDevOps, nu CFLW Cyber Strategies - die een reviewcultuur vormt waarin beveiliging voorop staat. De engineers van Manifera werken in Ho Chi Minh-stad, met klantcontact via de Herengracht 420 in Amsterdam. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
 [Vraag een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) voor een review van authenticatie en sessies.
 
@@ -169,16 +169,16 @@ LaunchStudio beoordeelt sessiebeheer bij elke controle van de authenticatie en v
 
 Sem Evers, facilitair coördinator en oprichter in IJsselstein, bouwde Zaalvrij met Cursor: bedrijven in gedeelde kantoorgebouwen boeken vergaderruimtes, beheren bezoekers en krijgen maandelijkse facturen voor het gebruik. Zesentwintig bedrijven in vier gebouwen gebruikten het, vaak vanaf gedeelde receptiecomputers.
 
-Een receptioniste meldde dat na het uitloggen op de gedeelde computer de terugknop van de browser de boekingen van een ander bedrijf liet zien — en dat doorklikken nog steeds werkte. De review legde uit waarom: Cursor had JWT-authenticatie geïmplementeerd met tokens in localStorage, 30 dagen geldig, en uitloggen verwijderde het token alleen uit de browser zonder het ongeldig te maken. Een gekopieerd token bleef werken. Cookies voor een functie "ingelogd blijven" misten de vlaggen HttpOnly en SameSite, formulieren voor het annuleren van boekingen hadden geen CSRF-bescherming, en een wachtwoordwijziging beëindigde andere sessies niet. Een reflected XSS in het veld voor de naam van een bezoeker betekende dat een speciaal gemaakte link het token uit localStorage had kunnen lezen.
+Een receptioniste meldde dat na het uitloggen op de gedeelde computer de terugknop van de browser de boekingen van een ander bedrijf liet zien - en dat doorklikken nog steeds werkte. De review legde uit waarom: Cursor had JWT-authenticatie geïmplementeerd met tokens in localStorage, 30 dagen geldig, en uitloggen verwijderde het token alleen uit de browser zonder het ongeldig te maken. Een gekopieerd token bleef werken. Cookies voor een functie "ingelogd blijven" misten de vlaggen HttpOnly en SameSite, formulieren voor het annuleren van boekingen hadden geen CSRF-bescherming, en een wachtwoordwijziging beëindigde andere sessies niet. Een reflected XSS in het veld voor de naam van een bezoeker betekende dat een speciaal gemaakte link het token uit localStorage had kunnen lezen.
 
 In vier werkdagen vervingen de engineers van LaunchStudio de eigen JWT-afhandeling door sessies van Supabase Auth, sloegen ze refresh tokens op in HttpOnly-, Secure- en SameSite=Lax-cookies, verkortten ze de levensduur van access tokens, maakten ze sessies op de server ongeldig bij uitloggen en bij een wachtwoordwijziging, voegden ze een inactiviteitstime-out van acht uur toe voor accounts die als gebruik op een gedeelde computer zijn gemarkeerd, beschermden ze formulieren die de staat wijzigen met CSRF-tokens, losten ze de XSS op met output-escaping en een Content Security Policy, en voegden ze "overal uitloggen" toe.
 
 **Resultaat:** Het probleem met de gedeelde computer verdween, en een latere beveiligingsvragenlijst van een grotere huurder werd zonder vervolgvragen beantwoord. Zaalvrij is sindsdien in gebruik genomen in nog twee kantoorgebouwen.
 
 > *"Onze uitlogknop was een beleefde suggestie. Nu beëindigt hij de sessie echt."*
-> — **Sem Evers, Oprichter, Zaalvrij (IJsselstein)**
+> - **Sem Evers, Oprichter, Zaalvrij (IJsselstein)**
 
-**Kosten & Tijdlijn:** € 1.100 (versterking van sessies en cookies, CSRF-bescherming, oplossing voor XSS en migratie naar een authenticatieaanbieder) — afgerond in 4 werkdagen.
+**Kosten & Tijdlijn:** € 1.100 (versterking van sessies en cookies, CSRF-bescherming, oplossing voor XSS en migratie naar een authenticatieaanbieder) - afgerond in 4 werkdagen.
 
 ## Veelgestelde Vragen
 

@@ -121,9 +121,9 @@ Martin schakelde LaunchStudio in. Het Manifera-team voerde in 14 werkdagen een g
 **Resultaat:** De foutgevoelige filtercode in Node.js werd volledig geschrapt. Zocht een junior medewerker via de AI, dan weigerde de PostgreSQL-database zelf wiskundig de data van senior partners. De beveiliging was waterdicht, de querylatentie daalde met 30% en het advocatenkantoor tekende een meerjarig contract.
 
 > *"We kozen onze AI-stack op basis van wat populair was op Twitter in plaats van wat enterprise-architectuur vereist. LaunchStudio liet ons zien dat de 'makkelijkste' tool zelden de 'beste' tool is voor productie. De overstap naar pgvector redde onze belangrijkste klant omdat het ons de wiskundige beveiliging gaf die de zakelijke markt eist."*
-> — **Martin Becker, CTO, LexAI (Frankfurt)**
+> - **Martin Becker, CTO, LexAI (Frankfurt)**
 
-**Kosten & Doorlooptijd:** €15.500 (Launch & Grow Pakket met Architectuur Migratie Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €15.500 (Launch & Grow Pakket met Architectuur Migratie Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 
@@ -139,7 +139,7 @@ Ja. Als uw applicatie uitsluitend documenten hoeft te doorzoeken zonder complexe
 Ja, mits de database goed is geconfigureerd. Terwijl Pinecone schaling automatisch regelt, vereist `pgvector` op zeer grote schaal gedegen kennis van HNSW-indexering (Hierarchical Navigable Small World) en partitionering. LaunchStudio richt uw Supabase-omgeving met deze enterprise-indexen in voor sub-milliseconde zoektijden.
 
 ### Werkt de Vercel AI SDK uitsluitend met Next.js?
-De basis streaming-hooks (`useChat`, `useCompletion`) functioneren ook met React (Vite), Svelte en Vue. De krachtigste functies — zoals Generatieve UI (het dynamisch streamen van interactieve server-componenten) — maken echter intensief gebruik van de Server-Side Rendering architectuur van Next.js.
+De basis streaming-hooks (`useChat`, `useCompletion`) functioneren ook met React (Vite), Svelte en Vue. De krachtigste functies - zoals Generatieve UI (het dynamisch streamen van interactieve server-componenten) - maken echter intensief gebruik van de Server-Side Rendering architectuur van Next.js.
 
 ### Brengen orkestratieframeworks zoals LangChain beveiligingsrisico's met zich mee?
 Ja, met name via Prompt Injection. Als een LangChain-agent over een SQL-tool beschikt en een gebruiker manipuleert de prompt, kan het model destructieve queries uitvoeren. LaunchStudio schermt alle tools af met strikte Zod-schemavalidaties en draait database-agents onder strikt 'read-only' rechten.

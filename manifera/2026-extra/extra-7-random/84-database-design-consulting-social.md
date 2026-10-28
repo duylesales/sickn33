@@ -1,4 +1,4 @@
-A schema that's worked fine for two years isn't proof the design was right — it's often proof the volume was still too low to expose what was wrong. 🗃️⚠️
+A schema that's worked fine for two years isn't proof the design was right - it's often proof the volume was still too low to expose what was wrong. 🗃️⚠️
 
 **The Pain Points:**
 ❌ **Silent Design Debt:** Early shortcuts that cause no symptoms until growth finally exposes them.

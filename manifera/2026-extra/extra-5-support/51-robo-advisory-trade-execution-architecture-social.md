@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Structuring every rebalancing decision around a stable, deterministic identifier issued before submission:** Since idempotent execution fundamentally depends on the execution layer and the venue both being able to recognize a resubmission as the same order rather than a new one.
-✅ **Modeling account and order state as an append-only sequence of auditable events:** Rather than a mutable current-balance record, so any trade's full lineage — decision, submission, acknowledgment, fill, reconciliation — can be reconstructed on demand for a client or a regulator.
+✅ **Modeling account and order state as an append-only sequence of auditable events:** Rather than a mutable current-balance record, so any trade's full lineage - decision, submission, acknowledgment, fill, reconciliation - can be reconstructed on demand for a client or a regulator.
 ✅ **Designing retry and reconciliation logic around confirmed submission state from the start:** Rather than a simpler blind-retry model that would need fundamental rework to support genuine idempotency later.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

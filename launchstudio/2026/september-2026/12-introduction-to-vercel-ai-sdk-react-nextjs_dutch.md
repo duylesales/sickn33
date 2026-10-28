@@ -28,13 +28,13 @@ Platte tekst is saai en statisch. Als een zakelijke B2B-gebruiker aan uw financi
 
 De Vercel AI SDK introduceerde het baanbrekende concept van **Generatieve UI (Generative UI)** via React Server Components (`ai/rsc`) en tool-calling primitieven. U definieert een tool genaamd `showChart` met een Zod-schema voor de argumenten. Besluit het model deze tool aan te roepen, dan streamt de SDK geen platte tekst terug naar de browser, maar streamt direct de JSON-props voor een interactief React Component (zoals een Recharts staafgrafiek, een datatabel of een boekingswidget) en rendert dit direct in de chat-tijdlijn.
 
-De AI genereert realtime interactieve softwarecomponenten in plaats van statisch proza. Dit transformeert een simpele "Chatbot" naar een dynamische, AI-gestuurde applicatie-interface — exact het verschil tussen een leuk prototype en een volwassen enterprise-product waar zakelijke klanten voor willen betalen.
+De AI genereert realtime interactieve softwarecomponenten in plaats van statisch proza. Dit transformeert een simpele "Chatbot" naar een dynamische, AI-gestuurde applicatie-interface - exact het verschil tussen een leuk prototype en een volwassen enterprise-product waar zakelijke klanten voor willen betalen.
 
 ## Lichtgewicht, Transparant en Zonder Verborgen Prompts
 
-In tegenstelling tot LangChain — dat complexe verborgen ketens en ReAct-lussen op de achtergrond probeert uit te voeren — focust de Vercel AI SDK zich puur op de UI en de datatransportlaag. Het injecteert geen stiekeme prompts en voert geen onzichtbare achtergrondtaken uit. Het biedt de snelste, meest transparante brug tussen uw LLM API-aanroep en uw React-frontend: de `messages`-array die u ziet in uw `useChat` state is exact wat er naar het taalmodel is gestuurd.
+In tegenstelling tot LangChain - dat complexe verborgen ketens en ReAct-lussen op de achtergrond probeert uit te voeren - focust de Vercel AI SDK zich puur op de UI en de datatransportlaag. Het injecteert geen stiekeme prompts en voert geen onzichtbare achtergrondtaken uit. Het biedt de snelste, meest transparante brug tussen uw LLM API-aanroep en uw React-frontend: de `messages`-array die u ziet in uw `useChat` state is exact wat er naar het taalmodel is gestuurd.
 
-Deze transparantie brengt een duidelijke focus met zich mee: de SDK is geoptimaliseerd voor React, Next.js en Svelte. Voor Next.js App Router projecten — de absolute standaard onder moderne AI-native founders die bouwen met v0, Bolt of Lovable — is het de ideale keuze.
+Deze transparantie brengt een duidelijke focus met zich mee: de SDK is geoptimaliseerd voor React, Next.js en Svelte. Voor Next.js App Router projecten - de absolute standaard onder moderne AI-native founders die bouwen met v0, Bolt of Lovable - is het de ideale keuze.
 
 ## Route Handlers en de Edge Runtime
 
@@ -72,7 +72,7 @@ Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om de `
 
 **Resultaat:** Schermhaperingen verdwenen volledig, wat resulteerde in een vloeiende, woord-voor-woord streaminganimatie voor cv-aanbevelingen.
 
-**Kosten & Tijdlijn:** €1.300 (Frontend SDK Integratie Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.300 (Frontend SDK Integratie Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 

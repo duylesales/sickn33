@@ -32,7 +32,7 @@ Doelpersona: SaaS Oprichter Scale-Up
 }
 </script>
 
-Investeerders hebben inmiddels honderden indrukwekkende AI-demo's voorbij zien komen. Een strakke AI-gegenereerde prototype-demo, ooit een echte onderscheidende factor, is nu het absolute minimum geworden — vrijwel elke oprichter in 2027 kan er een laten zien. Wat een financierbare pitch nu echt onderscheidt, is het harde bewijs dat de demo een *echt, live product* vertegenwoordigt.
+Investeerders hebben inmiddels honderden indrukwekkende AI-demo's voorbij zien komen. Een strakke AI-gegenereerde prototype-demo, ooit een echte onderscheidende factor, is nu het absolute minimum geworden - vrijwel elke oprichter in 2027 kan er een laten zien. Wat een financierbare pitch nu echt onderscheidt, is het harde bewijs dat de demo een *echt, live product* vertegenwoordigt.
 
 ## Waarom "Het Werkt in de Demo" Geen Indruk Meer Maakt
 
@@ -40,25 +40,25 @@ Professionele investeerders hebben geleerd om AI-demo's met een flinke korrel zo
 
 ## Wat Investeringsbereidheid Tegenwoordig Echt Signaleert
 
-### Echte, Betalende Klanten — Zelfs een Klein Aantal
+### Echte, Betalende Klanten - Zelfs een Klein Aantal
 Een handvol klanten die uw product hebben gevonden, zich hebben geregistreerd en echt geld hebben betaald, levert een categorisch sterker signaal op dan honderd demo-presentaties. Het bewijst namelijk dat uw product de confrontatie met de echte wereld heeft overleefd: echte betalingen, echte onboarding, echt gebruik.
 
 ### Retentie- en Gebruiksdata
 Investeerders willen zien of klanten terugkomen, het product regelmatig gebruiken en hun gebruik uitbreiden. Deze gegevens bestaan simpelweg niet bij een prototype dat nooit live is gegaan.
 
 ### Bewijs dat de Infrastructuur Kan Schalen
-Een live product dat meerdere gelijktijdige gebruikers verwerkt zonder om te vallen, toont operationele kwaliteiten. Bij technische due diligence vragen investeerders door op beveiliging, datalocatie en betrouwbaarheid — vragen waar "we zijn nog niet live" geen overtuigend antwoord op is.
+Een live product dat meerdere gelijktijdige gebruikers verwerkt zonder om te vallen, toont operationele kwaliteiten. Bij technische due diligence vragen investeerders door op beveiliging, datalocatie en betrouwbaarheid - vragen waar "we zijn nog niet live" geen overtuigend antwoord op is.
 
 ### Een Oprichter Die Echte Operationele Uitdagingen Heeft Doorstaan
 Een oprichter die al te maken heeft gehad met een echte klantondersteuningsvraag, een mislukte betaling of een beveiligingsvraagstuk, straalt een geloofwaardigheid uit die een oprichter met een theoretisch idee mist.
 
 ## Het Snelste Pad van Prototype naar Financierbaar Bewijs
 
-De snelste manier om dit bewijs te verzamelen is niet nóg een maand schaven aan uw pitch deck — het is daadwerkelijk lanceren.
+De snelste manier om dit bewijs te verzamelen is niet nóg een maand schaven aan uw pitch deck - het is daadwerkelijk lanceren.
 
-Met LaunchStudio's doorlooptijd van één tot drie weken kunnen oprichters hun product lanceren en enkele weken aan echte gebruiks- en omzetgegevens verzamelen vóór hun investeerdersgesprekken. De technische reputatie van Manifera — vertrouwd door enterprise-klanten zoals Vodafone, TNO en CFLW — biedt extra ondersteunende geloofwaardigheid tijdens de technische due diligence.
+Met LaunchStudio's doorlooptijd van één tot drie weken kunnen oprichters hun product lanceren en enkele weken aan echte gebruiks- en omzetgegevens verzamelen vóór hun investeerdersgesprekken. De technische reputatie van Manifera - vertrouwd door enterprise-klanten zoals Vodafone, TNO en CFLW - biedt extra ondersteunende geloofwaardigheid tijdens de technische due diligence.
 
-[Maak uw product live vóór uw volgende investeerdersgesprek](https://launchstudio.eu/nl/#calculator) — echte data verandert het gesprek volledig.
+[Maak uw product live vóór uw volgende investeerdersgesprek](https://launchstudio.eu/nl/#calculator) - echte data verandert het gesprek volledig.
 
 ## Wat Technische Due Diligence Werkelijk Controleren
 
@@ -117,18 +117,18 @@ Investeerders willen verifieerbare documentatie zien vóór de definitieve inves
 
 ### Een AI-native oprichter in actie: Van een zwakke pitch naar een succesvolle investeringsronde
 
-Marit, een supply chain analist in Winterswijk, bouwde VoorraadVoorspel — een AI-tool die voorraadbehoeften voorspelt voor e-commerce verkopers — met behulp van Lovable. Ze had het prototype gepitcht bij drie angel investors, die allemaal vriendelijk afwijzend reageerden met "kom terug als je wat tractie hebt".
+Marit, een supply chain analist in Winterswijk, bouwde VoorraadVoorspel - een AI-tool die voorraadbehoeften voorspelt voor e-commerce verkopers - met behulp van Lovable. Ze had het prototype gepitcht bij drie angel investors, die allemaal vriendelijk afwijzend reageerden met "kom terug als je wat tractie hebt".
 
 In plaats van het prototype verder op te poetsen, nam Marit contact op met LaunchStudio om VoorraadVoorspel productieklaar te maken en te lanceren. Het team van Manifera regelde de authenticatie, veilige data-isolatie tussen verkopers en Mollie-facturatie binnen twee weken. Marit lanceerde het product bij 15 webwinkels uit haar netwerk.
 
 Zes weken later keerde Marit terug naar dezelfde drie investeerders met harde data: 15 betalende klanten, 93% retentie in maand twee en wekelijks terugkerend gebruik. Het gesprek veranderde compleet.
 
-**Resultaat:** Een van de oorspronkelijke investeerders en een nieuwe investeerder kenden binnen een maand een seed-investeringsronde toe — een resultaat dat Marit direct toeschrijft aan het vervangen van een mooie demo door echte operationele cijfers.
+**Resultaat:** Een van de oorspronkelijke investeerders en een nieuwe investeerder kenden binnen een maand een seed-investeringsronde toe - een resultaat dat Marit direct toeschrijft aan het vervangen van een mooie demo door echte operationele cijfers.
 
 > *"De eerste pitch had een prachtige demo en kreeg een beleefd 'nog niet'. De tweede pitch had echte klanten en retentiecijfers, en dat kwam volstrekt anders binnen. LaunchStudio's snelle lancering maakte dat mogelijk."*
-> — **Marit Scholten, Oprichter, VoorraadVoorspel (Winterswijk)**
+> - **Marit Scholten, Oprichter, VoorraadVoorspel (Winterswijk)**
 
-**Kosten & Doorlooptijd:** € 3.300 (Launch & Grow Pakket, prioriteit op investeerders-planning) — live in 13 werkdagen.
+**Kosten & Doorlooptijd:** € 3.300 (Launch & Grow Pakket, prioriteit op investeerders-planning) - live in 13 werkdagen.
 
 ---
 

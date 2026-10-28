@@ -112,7 +112,7 @@ Building this highly specialized **AI development team** internally is incredibl
 
 At Manifera, we provide fully structured AI Pods through our Hybrid Offshore model. 
 
-When you partner with us, our Dutch AI Architects act as the Security and Governance layer. They design the RAG pipelines, the Vector Databases, and the PII masking architecture. They then deploy our elite Vietnamese engineering pods—composed of true Data Engineers and Backend Specialists—to execute the infrastructure. 
+When you partner with us, our Dutch AI Architects act as the Security and Governance layer. They design the RAG pipelines, the Vector Databases, and the PII masking architecture. They then deploy our elite Vietnamese engineering pods - composed of true Data Engineers and Backend Specialists - to execute the infrastructure. 
 
 We do not hire "Prompt Engineers." We hire Software Engineers who understand how to build secure AI infrastructure. 
 

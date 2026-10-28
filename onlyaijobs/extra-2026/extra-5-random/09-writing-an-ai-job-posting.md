@@ -50,7 +50,7 @@ The second version tells a candidate the domain, the scale, the maturity level a
 
 ## Choose a Title That Matches the Work
 
-Titles in this field are inconsistent, and a vague one costs you applications. Use the term the market uses for the work, and add a qualifier if it helps: "Machine Learning Engineer — demand forecasting", "Data Engineer (Azure, analytics platform)", "Applied Scientist — computer vision".
+Titles in this field are inconsistent, and a vague one costs you applications. Use the term the market uses for the work, and add a qualifier if it helps: "Machine Learning Engineer - demand forecasting", "Data Engineer (Azure, analytics platform)", "Applied Scientist - computer vision".
 
 Avoid invented titles such as "Data Ninja" or "AI Evangelist", and avoid "Data Scientist" as a catch-all when the role is really analytics or engineering. Candidates who arrive expecting modelling and find dashboards leave within a year, which costs far more than the extra thought it takes to name the job correctly.
 
@@ -67,7 +67,7 @@ Honesty here is not a weakness. "Our data is spread across three systems and nee
 
 ## Write Requirements You Actually Mean
 
-The standard wish list — five years of everything, a PhD, ten technologies — filters out strong candidates and attracts the overconfident. Research on job adverts consistently finds that long requirement lists deter well-qualified applicants, particularly women and career changers, more than they deter unsuitable ones.
+The standard wish list - five years of everything, a PhD, ten technologies - filters out strong candidates and attracts the overconfident. Research on job adverts consistently finds that long requirement lists deter well-qualified applicants, particularly women and career changers, more than they deter unsuitable ones.
 
 A better pattern:
 
@@ -75,7 +75,7 @@ A better pattern:
 - **Helpful** (three to five items): experience that would accelerate them.
 - **Not required**: say explicitly what you are not asking for, such as "no PhD required" or "no prior experience in our sector required; we will teach you".
 
-Keep language plain and avoid gendered or exclusionary phrasing such as "rockstar", "aggressive self-starter" or "young dynamic team" — the last of which is also legally risky in several European countries.
+Keep language plain and avoid gendered or exclusionary phrasing such as "rockstar", "aggressive self-starter" or "young dynamic team" - the last of which is also legally risky in several European countries.
 
 ## Publish Pay, Location and Practicalities
 
@@ -91,16 +91,16 @@ Three details decide whether many candidates apply at all:
 
 A reliable structure for writing an AI job posting, in the order candidates read:
 
-1. **Title** — precise, market-standard, with a qualifier.
-2. **The problem** — two or three sentences on what they will build and why.
-3. **What you will do** — four to six bullets describing real activities, not responsibilities in the abstract.
-4. **The data and stack** — what exists, what they will build.
-5. **The team** — size, composition, manager, who they learn from.
-6. **Must-haves** — three to five.
-7. **Helpful, not required** — three to five, plus what you explicitly do not require.
-8. **What we offer** — salary range, benefits, learning budget, flexibility, equipment.
-9. **Practicalities** — exact address, hybrid policy, contract, language, sponsorship.
-10. **Process** — steps and timeline, with a named contact.
+1. **Title** - precise, market-standard, with a qualifier.
+2. **The problem** - two or three sentences on what they will build and why.
+3. **What you will do** - four to six bullets describing real activities, not responsibilities in the abstract.
+4. **The data and stack** - what exists, what they will build.
+5. **The team** - size, composition, manager, who they learn from.
+6. **Must-haves** - three to five.
+7. **Helpful, not required** - three to five, plus what you explicitly do not require.
+8. **What we offer** - salary range, benefits, learning budget, flexibility, equipment.
+9. **Practicalities** - exact address, hybrid policy, contract, language, sponsorship.
+10. **Process** - steps and timeline, with a named contact.
 
 Keep paragraphs short. Most candidates read on a phone, often in the evening, and scan before they commit to reading.
 
@@ -116,7 +116,7 @@ Replace them with specifics. If the environment really is fast-paced, say what t
 
 **Mid-level roles.** Emphasise ownership and interesting problems. Candidates at this level are usually employed and selective; they respond to specifics about the systems they would own and the team they would join.
 
-**Senior and lead roles.** Emphasise scope, influence and context: how the team fits the organisation, what decisions they would make, what is broken that they would fix, and what support they would have. Senior candidates read for constraints as much as opportunities — budget, mandate, reporting line.
+**Senior and lead roles.** Emphasise scope, influence and context: how the team fits the organisation, what decisions they would make, what is broken that they would fix, and what support they would have. Senior candidates read for constraints as much as opportunities - budget, mandate, reporting line.
 
 Using the same text for all three levels is the most common cause of mismatched applications.
 
@@ -130,7 +130,7 @@ Practical substitutes: describe the language level required rather than nativene
 
 Many postings promise more than the role delivers: "you will build cutting-edge generative AI systems" for a job that mostly involves cleaning data and maintaining dashboards. Candidates discover the gap in week three, and the cost is a resignation within a year plus a reputation that spreads through a small professional community.
 
-A more effective approach is to describe the mix honestly, including the unglamorous parts. Something like: "Roughly half your time will go to data pipelines and quality, a quarter to modelling and a quarter to working with the operations team on how forecasts are used." Candidates who accept that description arrive with the right expectations, and those who need a purely modelling role select themselves out — saving both sides months.
+A more effective approach is to describe the mix honestly, including the unglamorous parts. Something like: "Roughly half your time will go to data pipelines and quality, a quarter to modelling and a quarter to working with the operations team on how forecasts are used." Candidates who accept that description arrive with the right expectations, and those who need a purely modelling role select themselves out - saving both sides months.
 
 The same applies to generative AI. If the work is building retrieval systems over internal documents with careful evaluation, say that. It is genuinely interesting work, and describing it accurately attracts people who will do it well rather than people chasing a buzzword.
 
@@ -149,7 +149,7 @@ A posting's reach depends on where it appears and how it is presented. Publish o
 
 Be careful about intermediaries that rewrite your text or hide your identity. Experienced candidates distrust anonymous postings, and a rewritten advert usually loses exactly the details that attract the right people.
 
-On OnlyAIJobs, vacancies are shown at their exact address with the distance from the candidate's home, applications go directly to your own careers page, candidates browse without creating an account, and there is no paid placement — so a precise, honest posting from a small employer appears on the same terms as one from a large company. Listings are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie, Sendcloud, Heijmans and Boltrics among those listing AI and data roles. The first vacancy is free: email a link to info@onlyaijobs.eu.
+On OnlyAIJobs, vacancies are shown at their exact address with the distance from the candidate's home, applications go directly to your own careers page, candidates browse without creating an account, and there is no paid placement - so a precise, honest posting from a small employer appears on the same terms as one from a large company. Listings are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie, Sendcloud, Heijmans and Boltrics among those listing AI and data roles. The first vacancy is free: email a link to info@onlyaijobs.eu.
 
 ## Measuring Whether Your Posting Works
 
@@ -169,7 +169,7 @@ Before publishing, check that your posting:
 - Avoids exclusionary phrasing and unnecessary degree requirements.
 - Can be read on a phone in three minutes.
 
-If a posting meets all nine criteria, you will usually receive fewer applications and hire faster — which is the point. A vacancy is not an advertising campaign; it is the first filter in a process, and every hour spent making it precise saves several hours of screening later.
+If a posting meets all nine criteria, you will usually receive fewer applications and hire faster - which is the point. A vacancy is not an advertising campaign; it is the first filter in a process, and every hour spent making it precise saves several hours of screening later.
 
 ## Real example
 
@@ -177,7 +177,7 @@ If a posting meets all nine criteria, you will usually receive fewer application
 
 A logistics company advertised for a "Data Scientist" for three months. The posting listed Python, R, SQL, Spark, TensorFlow, PyTorch, Kubernetes, Tableau, Power BI, AWS and Azure; required a master's degree and five years' experience; described the company as a market leader; and gave no salary or address. It attracted 60 applications, mostly from candidates with no relevant background, and produced no hires.
 
-The hiring manager rewrote it as "Machine Learning Engineer — delivery time prediction". The first paragraph explained that the company promises delivery windows to customers and that the current estimates are wrong often enough to generate thousands of support calls each month. It described the data — three years of shipment records, route data and weather — and the stack, noted that there was no ML platform yet and that the first year would involve building one, listed three must-haves and three nice-to-haves, published a salary range and the exact address, and set out a four-step interview process completed within three weeks.
+The hiring manager rewrote it as "Machine Learning Engineer - delivery time prediction". The first paragraph explained that the company promises delivery windows to customers and that the current estimates are wrong often enough to generate thousands of support calls each month. It described the data - three years of shipment records, route data and weather - and the stack, noted that there was no ML platform yet and that the first year would involve building one, listed three must-haves and three nice-to-haves, published a salary range and the exact address, and set out a four-step interview process completed within three weeks.
 
 The rewritten posting attracted 23 applications. Eleven were relevant, four were interviewed and two offers were made. The hire started six weeks later.
 
@@ -196,7 +196,7 @@ Take your current AI vacancy and rewrite the first paragraph so it names the pro
 ## Frequently Asked Questions
 
 ### (Scenario: recruiter) How long should an AI job posting be?
-Long enough to describe the problem, data, team, requirements and practicalities — usually 500 to 800 words. Detail helps; padding does not.
+Long enough to describe the problem, data, team, requirements and practicalities - usually 500 to 800 words. Detail helps; padding does not.
 
 ### (Scenario: hiring manager) Should we publish a salary range?
 Yes. It improves the quality of applications and prepares you for EU pay transparency requirements.

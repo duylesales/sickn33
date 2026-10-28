@@ -20,29 +20,29 @@ target_persona: "CFO"
 }
 </script>
 
-The commonly cited rule of thumb for ongoing software maintenance and support cost — roughly 15-20% of original development cost annually — is a reasonable starting estimate that a meaningful share of real systems exceed, particularly systems that continue evolving rather than staying functionally frozen, and a CFO who budgets to the low end of that range risks a recurring, underfunded maintenance line that shows up as a persistent budget shortfall rather than a one-time surprise.
+The commonly cited rule of thumb for ongoing software maintenance and support cost - roughly 15-20% of original development cost annually - is a reasonable starting estimate that a meaningful share of real systems exceed, particularly systems that continue evolving rather than staying functionally frozen, and a CFO who budgets to the low end of that range risks a recurring, underfunded maintenance line that shows up as a persistent budget shortfall rather than a one-time surprise.
 
 **The Pain:** A CFO budgeting for a new software system typically includes an ongoing maintenance and support line based on the commonly cited industry rule of thumb, treating that percentage as a reliable planning figure, without examining the specific factors that push a given system's actual maintenance cost above or below that rule-of-thumb range, factors that are knowable in advance if specifically examined rather than assumed away by a generic percentage.
 
-**The Agitation:** A CFO who budgets maintenance at the low end of the rule-of-thumb range for a system that turns out to have high-maintenance characteristics — active ongoing feature development, integration with multiple external systems that themselves change over time, or a complex domain requiring specialized ongoing expertise — faces a recurring gap between budgeted and actual maintenance cost every year, a gap that doesn't resolve itself the way a one-time budget overrun does, compounding into a meaningful cumulative shortfall over a system's multi-year lifetime.
+**The Agitation:** A CFO who budgets maintenance at the low end of the rule-of-thumb range for a system that turns out to have high-maintenance characteristics - active ongoing feature development, integration with multiple external systems that themselves change over time, or a complex domain requiring specialized ongoing expertise - faces a recurring gap between budgeted and actual maintenance cost every year, a gap that doesn't resolve itself the way a one-time budget overrun does, compounding into a meaningful cumulative shortfall over a system's multi-year lifetime.
 
 ## The Factors That Actually Determine Maintenance Cost
 
 Genuine software maintenance and support budgeting should examine the specific factors that drive a given system's actual maintenance cost, rather than applying a generic industry percentage uniformly, because these factors vary considerably across systems and are knowable in advance with reasonable analysis.
 
-The first factor is whether the system is functionally frozen or actively evolving — a system that, once launched, receives only bug fixes and security patches has meaningfully lower ongoing cost than a system that continues receiving new features and functional changes in response to evolving business needs, since active development is itself an ongoing cost distinct from pure maintenance, and a CFO should budget these as genuinely separate line items rather than blending them into a single maintenance percentage that obscures which driver is actually responsible for the ongoing cost.
+The first factor is whether the system is functionally frozen or actively evolving - a system that, once launched, receives only bug fixes and security patches has meaningfully lower ongoing cost than a system that continues receiving new features and functional changes in response to evolving business needs, since active development is itself an ongoing cost distinct from pure maintenance, and a CFO should budget these as genuinely separate line items rather than blending them into a single maintenance percentage that obscures which driver is actually responsible for the ongoing cost.
 
-The second factor is external integration surface — a system that integrates with several external systems, APIs, or data sources carries genuine ongoing cost from those external dependencies changing over time (API version deprecations, data format changes, external service reliability issues), cost that scales with the number and volatility of external integrations and that a system with minimal external dependencies simply doesn't carry to the same degree.
+The second factor is external integration surface - a system that integrates with several external systems, APIs, or data sources carries genuine ongoing cost from those external dependencies changing over time (API version deprecations, data format changes, external service reliability issues), cost that scales with the number and volatility of external integrations and that a system with minimal external dependencies simply doesn't carry to the same degree.
 
-The third factor is domain complexity and the corresponding need for specialized ongoing expertise — a system in a highly regulated or technically complex domain requires maintenance performed by people with genuine domain expertise, which typically costs more per hour and may be harder to source reliably than general maintenance capacity, a cost factor a generic percentage rule doesn't distinguish from a simpler, less specialized system.
+The third factor is domain complexity and the corresponding need for specialized ongoing expertise - a system in a highly regulated or technically complex domain requires maintenance performed by people with genuine domain expertise, which typically costs more per hour and may be harder to source reliably than general maintenance capacity, a cost factor a generic percentage rule doesn't distinguish from a simpler, less specialized system.
 
-The fourth factor, often the least examined, is the underlying code quality and technical debt level at launch — a system launched with accumulated technical debt or rushed implementation quality generates higher ongoing maintenance cost than a system launched with genuinely sound engineering practices, because maintenance cost is, in a real sense, partly a function of how much the initial build cut corners that now need to be worked around during every subsequent change.
+The fourth factor, often the least examined, is the underlying code quality and technical debt level at launch - a system launched with accumulated technical debt or rushed implementation quality generates higher ongoing maintenance cost than a system launched with genuinely sound engineering practices, because maintenance cost is, in a real sense, partly a function of how much the initial build cut corners that now need to be worked around during every subsequent change.
 
-A CFO who examines these four factors specifically for a given system — evolution rate, external integration surface, domain complexity, and initial code quality — arrives at a maintenance budget genuinely calibrated to that system's actual characteristics, rather than a generic percentage that systematically underestimates cost for systems with high-maintenance characteristics and potentially overestimates it for genuinely simple, stable, low-dependency systems.
+A CFO who examines these four factors specifically for a given system - evolution rate, external integration surface, domain complexity, and initial code quality - arrives at a maintenance budget genuinely calibrated to that system's actual characteristics, rather than a generic percentage that systematically underestimates cost for systems with high-maintenance characteristics and potentially overestimates it for genuinely simple, stable, low-dependency systems.
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** Dutch leads build software maintenance and support budgets calibrated to a system's genuine characteristics — evolution rate, integration surface, domain complexity, and code quality — rather than a generic industry percentage.
+- **Amsterdam (Governance/Strategy):** Dutch leads build software maintenance and support budgets calibrated to a system's genuine characteristics - evolution rate, integration surface, domain complexity, and code quality - rather than a generic industry percentage.
 - **Vietnam (Execution/Velocity):** Autonomous pods in Ho Chi Minh City deliver ongoing maintenance transparently against these specific cost drivers, with genuine code quality at launch that keeps actual maintenance cost close to budget.
 
 This is Dutch Management × Vietnamese Mastery: European rigor in forecasting genuine ongoing costs, paired with execution capacity that builds systems with the code quality that keeps maintenance costs predictable. Learn more about [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) and how accurately calibrated maintenance budgeting prevents a recurring, compounding budget shortfall.
@@ -56,7 +56,7 @@ Systemy Produkcyjne Bydgoszcz S.A., a Bydgoszcz-based manufacturer, had budgeted
 Manifera helped rebuild the maintenance budget using the four-factor framework, separating active development cost from pure maintenance and accounting explicitly for the integration surface's ongoing cost. The revised budget matched actual costs within 10% over the following two years, eliminating the recurring shortfall.
 
 > *"We budgeted off a rule of thumb that had nothing to do with our actual system. We had active development and six external integrations, and the generic percentage didn't know either of those things existed. Once we budgeted for what we actually had instead of a generic average, the surprises stopped."*
-> — **CFO, Systemy Produkcyjne Bydgoszcz S.A., Poland**
+> - **CFO, Systemy Produkcyjne Bydgoszcz S.A., Poland**
 
 ## Rule-of-Thumb Maintenance Budgeting vs. Manifera's Factor-Calibrated Budgeting
 
@@ -84,7 +84,7 @@ Because active development is an ongoing cost distinct from maintenance, and ble
 
 ### (Scenario: CFO budgeting for a system with several external integrations) Why does a system's external integration surface affect its ongoing maintenance cost?
 
-Because external dependencies change over time — API deprecations, data format changes, reliability issues — generating cost that scales with the number and volatility of those integrations.
+Because external dependencies change over time - API deprecations, data format changes, reliability issues - generating cost that scales with the number and volatility of those integrations.
 
 ### (Scenario: CFO trying to understand why initial code quality affects long-term maintenance cost) How does a system's code quality at launch affect its ongoing maintenance cost?
 

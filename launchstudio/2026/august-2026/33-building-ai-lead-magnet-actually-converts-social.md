@@ -1,4 +1,4 @@
-🔥 Gavin built a prototype using **Lovable** — gavin, a marketer, used **lovable** to build a free pdf translation tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Gavin built a prototype using **Lovable** - gavin, a marketer, used **lovable** to build a free pdf translation tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Gavin's application achieved silky-smooth performance: Bot traffic was blocked instantly, protecting his API budget while maintaining real user signups. (€950 (Bot Security Package) — production-ready and deployed in 2 business days.). 🚀
+Gavin's application achieved silky-smooth performance: Bot traffic was blocked instantly, protecting his API budget while maintaining real user signups. (€950 (Bot Security Package) - production-ready and deployed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/building-ai-lead-magnet-actually-converts
 

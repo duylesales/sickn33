@@ -77,7 +77,7 @@ International companies operate business service and IT centres in Bratislava, c
 
 ## The Honest Limits of the Market
 
-Slovakia has around five and a half million inhabitants, and Bratislava's AI job market is correspondingly small. Expect fewer vacancies and fewer specialised senior roles than in large capitals. Salaries are lower than in Vienna or Western Europe, though competitive by regional standards and paid in euros. Many engineers combine local roles with international projects, remote work or — thanks to proximity — opportunities in Vienna.
+Slovakia has around five and a half million inhabitants, and Bratislava's AI job market is correspondingly small. Expect fewer vacancies and fewer specialised senior roles than in large capitals. Salaries are lower than in Vienna or Western Europe, though competitive by regional standards and paid in euros. Many engineers combine local roles with international projects, remote work or - thanks to proximity - opportunities in Vienna.
 
 ## Language, Pay and Permits
 
@@ -91,11 +91,11 @@ Bratislava has a compact historic centre beneath its castle, the Danube running 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Bratislava you will find few or no local vacancies there today. Use Slovak job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Bratislava with the Netherlands — where employers such as Accenture, Cegeka, AMCS and Mollie list AI roles — and its distance-based approach suits a region where Vienna is closer than many Slovak cities. Slovak employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Bratislava you will find few or no local vacancies there today. Use Slovak job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Bratislava with the Netherlands - where employers such as Accenture, Cegeka, AMCS and Mollie list AI roles - and its distance-based approach suits a region where Vienna is closer than many Slovak cities. Slovak employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Security ML in Depth
 
-Security companies analyse enormous numbers of files, URLs, scripts and behavioural events from devices around the world. Machine learning helps classify samples as benign or malicious, cluster related threats, detect new malware families and prioritise what human researchers examine. Challenges include adversaries who deliberately evade detection, the need for extremely low false-positive rates on customer devices, limited compute on endpoints and constant evolution of threats. Security ML also involves protecting AI systems themselves and, increasingly, detecting threats that use AI, such as generated phishing content. Engineers in this field combine ML with deep domain knowledge developed alongside malware researchers — an unusual and valuable profile.
+Security companies analyse enormous numbers of files, URLs, scripts and behavioural events from devices around the world. Machine learning helps classify samples as benign or malicious, cluster related threats, detect new malware families and prioritise what human researchers examine. Challenges include adversaries who deliberately evade detection, the need for extremely low false-positive rates on customer devices, limited compute on endpoints and constant evolution of threats. Security ML also involves protecting AI systems themselves and, increasingly, detecting threats that use AI, such as generated phishing content. Engineers in this field combine ML with deep domain knowledge developed alongside malware researchers - an unusual and valuable profile.
 
 ## Automotive Data in Slovakia
 
@@ -107,7 +107,7 @@ Navigation software processes map data, GPS traces and traffic information to ca
 
 ## Research: NLP, Trustworthy AI and Disinformation
 
-KInIT and Slovak universities conduct research on natural language processing — including for Slovak and other Central European languages — trustworthy AI and the detection of disinformation and harmful online content. This research connects to EU policy priorities, such as the Digital Services Act and the AI Act, and offers engineers opportunities to work on socially relevant problems in European projects.
+KInIT and Slovak universities conduct research on natural language processing - including for Slovak and other Central European languages - trustworthy AI and the detection of disinformation and harmful online content. This research connects to EU policy priorities, such as the Digital Services Act and the AI Act, and offers engineers opportunities to work on socially relevant problems in European projects.
 
 ## Working Across the Border in Vienna
 
@@ -127,7 +127,7 @@ Bratislava's tech community is small but active, with meetups on security, data 
 
 ## Skills That Stand Out
 
-Bratislava employers value security-aware ML engineering, strong software engineering, geospatial and time series skills, and computer vision for industry. English is expected in most tech roles; Slovak helps in local organisations and with career progression, and German is an asset in automotive. In a small market, versatility — combining data engineering, modelling and communication — is especially valuable.
+Bratislava employers value security-aware ML engineering, strong software engineering, geospatial and time series skills, and computer vision for industry. English is expected in most tech roles; Slovak helps in local organisations and with career progression, and German is an asset in automotive. In a small market, versatility - combining data engineering, modelling and communication - is especially valuable.
 
 ## Who Bratislava Suits Best
 

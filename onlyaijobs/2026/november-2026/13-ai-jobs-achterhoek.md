@@ -35,17 +35,17 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-The Achterhoek — literally "the back corner" — is a name that suggests somewhere remote. For a job seeker in Amsterdam, it may be. For the companies located there, it is anything but. The region in the east of Gelderland, bordering Germany, has one of the highest shares of manufacturing employment in the Netherlands, a dense network of family-owned technology companies and a listed technology firm in Groenlo whose products are used in dairy barns, retail stores and healthcare organisations around the world. As manufacturers automate and products become connected, AI and data work is growing here — mostly in companies that rarely advertise themselves as tech employers.
+The Achterhoek - literally "the back corner" - is a name that suggests somewhere remote. For a job seeker in Amsterdam, it may be. For the companies located there, it is anything but. The region in the east of Gelderland, bordering Germany, has one of the highest shares of manufacturing employment in the Netherlands, a dense network of family-owned technology companies and a listed technology firm in Groenlo whose products are used in dairy barns, retail stores and healthcare organisations around the world. As manufacturers automate and products become connected, AI and data work is growing here - mostly in companies that rarely advertise themselves as tech employers.
 
 ## Why the Achterhoek Has a Strong Industrial Base
 
 The Achterhoek developed an industrial economy based on textiles, metalworking and machinery, with many companies founded as family businesses and still owned by the same families generations later. Over time, textile manufacturing declined, but metalworking, machine building, plastics, food production and technology companies remained and modernised.
 
-This history created a particular business culture: pragmatic, loyal to the region and focused on making physical products well. Companies often compete internationally in niche markets while remaining deeply rooted locally. Many of them face the same challenge — attracting technical talent to a region that young people often leave to study in larger cities.
+This history created a particular business culture: pragmatic, loyal to the region and focused on making physical products well. Companies often compete internationally in niche markets while remaining deeply rooted locally. Many of them face the same challenge - attracting technical talent to a region that young people often leave to study in larger cities.
 
 ## The Named Organisations Behind the Achterhoek's Technology Market
 
-**Nedap.** Headquartered in Groenlo and listed on Euronext Amsterdam, Nedap develops technology solutions in several markets. Its livestock management systems use sensors to monitor cows and other animals, helping farmers detect health issues and fertility moments. Its retail solutions use technologies such as RFID to give stores insight into inventory and prevent loss. It also develops software for healthcare organisations, security and access control systems, and identification technology. Many of these products generate data that becomes more valuable when analysed with machine learning — for example, recognising behaviour patterns in animal sensor data.
+**Nedap.** Headquartered in Groenlo and listed on Euronext Amsterdam, Nedap develops technology solutions in several markets. Its livestock management systems use sensors to monitor cows and other animals, helping farmers detect health issues and fertility moments. Its retail solutions use technologies such as RFID to give stores insight into inventory and prevent loss. It also develops software for healthcare organisations, security and access control systems, and identification technology. Many of these products generate data that becomes more valuable when analysed with machine learning - for example, recognising behaviour patterns in animal sensor data.
 
 **Manufacturing and machine-building companies.** The region hosts numerous small and medium-sized manufacturers active in metalworking, machine construction, plastics, vehicle components and food processing. Many are suppliers to larger international companies and increasingly invest in automation, robotics and production data.
 
@@ -68,17 +68,17 @@ This history created a particular business culture: pragmatic, loyal to the regi
 
 Livestock monitoring is one of the most interesting AI applications in the region. Sensors on collars or ear tags measure activity, eating and rumination behaviour. From these signals, algorithms can indicate when a cow is in heat, when it may be getting ill or when eating patterns change. For a dairy farmer with many animals, such alerts help focus attention where it is needed.
 
-The technical challenges are substantial: sensor signals are noisy, animals differ individually, farms differ in management practices and algorithms must work reliably on devices with limited power. Alerts must be accurate enough that farmers trust them — too many false alarms and they will be ignored. Data scientists in this domain combine time series modelling, embedded systems thinking and knowledge of animal behaviour.
+The technical challenges are substantial: sensor signals are noisy, animals differ individually, farms differ in management practices and algorithms must work reliably on devices with limited power. Alerts must be accurate enough that farmers trust them - too many false alarms and they will be ignored. Data scientists in this domain combine time series modelling, embedded systems thinking and knowledge of animal behaviour.
 
 ## Regulation That Shapes the Work
 
-**EU Data Act (EU) 2023/2854.** Users of connected products — including farmers using sensor systems and companies using connected machines — have rights to access and share the data generated by their use of those products. This affects how technology companies design data access, and it is particularly relevant in agriculture, where data ownership is a sensitive topic.
+**EU Data Act (EU) 2023/2854.** Users of connected products - including farmers using sensor systems and companies using connected machines - have rights to access and share the data generated by their use of those products. This affects how technology companies design data access, and it is particularly relevant in agriculture, where data ownership is a sensitive topic.
 
-**EU Machinery Regulation (EU) 2023/1230.** Applying from January 2027, it sets requirements for machinery, including software-based safety functions and machines with self-evolving behaviour — relevant for machine builders adding AI to their products.
+**EU Machinery Regulation (EU) 2023/1230.** Applying from January 2027, it sets requirements for machinery, including software-based safety functions and machines with self-evolving behaviour - relevant for machine builders adding AI to their products.
 
 **NEN 7510.** Organisations processing health information in the Netherlands work with this standard for information security in healthcare, which affects software companies serving care organisations.
 
-**GDPR.** Applies to healthcare data, employee data and — in some cases — farm data linked to individual farmers.
+**GDPR.** Applies to healthcare data, employee data and - in some cases - farm data linked to individual farmers.
 
 **EU Artificial Intelligence Act.** AI systems used as safety components in machinery can be high-risk, and AI affecting access to healthcare services requires careful assessment.
 
@@ -92,7 +92,7 @@ The team changes approach. It analyses which alerts farmers actually acted on, b
 
 ## A Common Misconception About Regional Manufacturers
 
-Candidates often assume that manufacturers in rural regions are technologically behind companies in large cities. In the Achterhoek, many companies compete internationally in demanding niche markets and invest heavily in automation because labour shortages leave them no choice. What they often lack is not ambition but data talent: many have their first or second data professional on staff, which gives new hires considerable responsibility and influence — and sometimes a steep learning curve without a large team for support.
+Candidates often assume that manufacturers in rural regions are technologically behind companies in large cities. In the Achterhoek, many companies compete internationally in demanding niche markets and invest heavily in automation because labour shortages leave them no choice. What they often lack is not ambition but data talent: many have their first or second data professional on staff, which gives new hires considerable responsibility and influence - and sometimes a steep learning curve without a large team for support.
 
 ## How Hiring Works in Family-Owned Technology Companies
 
@@ -112,7 +112,7 @@ For data professionals, the border also widens the job market. Technology and ma
 
 At a regional manufacturer hiring its first data professional, the first project is rarely machine learning. It is typically something more foundational: connecting production machines to a central database, cleaning up an ERP export so management can trust weekly figures, or building a dashboard showing scrap rates per line. These projects build credibility, reveal where the real problems lie and create the data foundation needed for more advanced work later.
 
-Candidates who approach such roles with patience — and who can explain the value of foundational work to a practical owner or plant manager — tend to become the person the company turns to when it is ready for predictive quality or maintenance models a year later.
+Candidates who approach such roles with patience - and who can explain the value of foundational work to a practical owner or plant manager - tend to become the person the company turns to when it is ready for predictive quality or maintenance models a year later.
 
 ## Typical Job Titles to Search For
 
@@ -130,7 +130,7 @@ Candidates who approach such roles with patience — and who can explain the val
 - **Embedded and edge computing.** Running algorithms on devices with limited power and connectivity.
 - **Industrial data.** PLCs, machine data and production systems.
 - **Pragmatic data engineering.** Building a reliable data foundation in companies without large IT departments.
-- **Domain curiosity.** Interest in animals, manufacturing processes, retail or care — the domains determine what data means.
+- **Domain curiosity.** Interest in animals, manufacturing processes, retail or care - the domains determine what data means.
 - **German language skills.** An advantage for companies with customers and partners across the border.
 
 ## Commuting and Living in the Achterhoek
@@ -139,7 +139,7 @@ Doetinchem is connected by train to Arnhem, and the Zutphen–Winterswijk railwa
 
 ## Career Growth in a Region of Specialists
 
-Careers in the Achterhoek often combine breadth and responsibility. A data professional at a mid-sized manufacturer may work on quality, maintenance, planning and reporting within a few years — broad experience that is valuable when moving to a larger organisation or into leadership. At technology companies with international products, careers can become more specialised. And because many companies in the region share similar challenges, experience at one employer is directly relevant at another.
+Careers in the Achterhoek often combine breadth and responsibility. A data professional at a mid-sized manufacturer may work on quality, maintenance, planning and reporting within a few years - broad experience that is valuable when moving to a larger organisation or into leadership. At technology companies with international products, careers can become more specialised. And because many companies in the region share similar challenges, experience at one employer is directly relevant at another.
 
 ## Key Takeaways
 
@@ -158,7 +158,7 @@ Browse current AI, machine learning and data jobs in and around the Achterhoek a
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who thinks the Achterhoek has no tech jobs) Are there AI and data jobs in the Achterhoek?
-Yes — technology companies such as Nedap and many manufacturers and machine builders need data scientists, embedded engineers and data engineers.
+Yes - technology companies such as Nedap and many manufacturers and machine builders need data scientists, embedded engineers and data engineers.
 
 ### (Scenario: data scientist interested in agriculture) What data work exists in livestock technology?
 Analysing sensor data from animals to detect heat, illness and behaviour changes, with algorithms that must be accurate and trusted by farmers.
@@ -167,21 +167,21 @@ Analysing sensor data from animals to detect heat, illness and behaviour changes
 It brings more responsibility and less peer support, but also more influence and broad experience; ask about support for data infrastructure.
 
 ### (Scenario: candidate with German language skills) Is German useful for jobs in the Achterhoek?
-Often yes — many companies have customers, suppliers or partners in the neighbouring German regions.
+Often yes - many companies have customers, suppliers or partners in the neighbouring German regions.
 
 ### (Scenario: candidate living in Arnhem) Is the Achterhoek commutable from Arnhem?
-Yes — Doetinchem is about half an hour from Arnhem by train, although many locations in the region are easier to reach by car.
+Yes - Doetinchem is about half an hour from Arnhem by train, although many locations in the region are easier to reach by car.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Are there AI and data jobs in the Achterhoek?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — technology companies such as Nedap and many manufacturers need data and embedded specialists."}},
+    {"@type": "Question", "name": "Are there AI and data jobs in the Achterhoek?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - technology companies such as Nedap and many manufacturers need data and embedded specialists."}},
     {"@type": "Question", "name": "What data work exists in livestock technology?", "acceptedAnswer": {"@type": "Answer", "text": "Analysing animal sensor data to detect heat, illness and behaviour changes."}},
     {"@type": "Question", "name": "Is it risky to be the first data hire at a regional manufacturer?", "acceptedAnswer": {"@type": "Answer", "text": "It brings more responsibility and less peer support, but more influence and broad experience."}},
-    {"@type": "Question", "name": "Is German useful for jobs in the Achterhoek?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — many companies work with partners across the German border."}},
-    {"@type": "Question", "name": "Is the Achterhoek commutable from Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Doetinchem is about half an hour from Arnhem by train."}}
+    {"@type": "Question", "name": "Is German useful for jobs in the Achterhoek?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - many companies work with partners across the German border."}},
+    {"@type": "Question", "name": "Is the Achterhoek commutable from Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - Doetinchem is about half an hour from Arnhem by train."}}
   ]
 }
 </script>

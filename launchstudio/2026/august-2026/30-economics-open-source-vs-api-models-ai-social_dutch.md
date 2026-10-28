@@ -1,4 +1,4 @@
-🔥 Stella bouwde een prototype met **Bolt** — Stella, een HR-tech ondernemer, gebruikte Bolt om een kandidaat-evaluator te bouwen, maar haar maandelijkse OpenAI API-kosten overschreden de €4.000, waardoor alle winstmarges verdampten. 🧠
+🔥 Stella bouwde een prototype met **Bolt** - Stella, een HR-tech ondernemer, gebruikte Bolt om een kandidaat-evaluator te bouwen, maar haar maandelijkse OpenAI API-kosten overschreden de €4.000, waardoor alle winstmarges verdampten. 🧠
 
 De keuze tussen beheerde API's en zelf-gehoste open-source modellen is een economisch omslagpunt tussen variabele tokenkosten en vaste GPU-infrastructuur.
 
@@ -12,7 +12,7 @@ De keuze tussen beheerde API's en zelf-gehoste open-source modellen is een econo
 
 Bij **LaunchStudio** lossen we exact dit type AI-infrastructuur en GPU-migratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Stella's platform werd hyper-winstgevend: Haar maandelijkse hostingkosten daalden naar €350 en de brutomarge steeg van 20% naar maar liefst 85%. (€3.800 (GPU Hosting Migratie) — productieklaar en binnen 9 werkdagen gedeployed). 🚀
+Stella's platform werd hyper-winstgevend: Haar maandelijkse hostingkosten daalden naar €350 en de brutomarge steeg van 20% naar maar liefst 85%. (€3.800 (GPU Hosting Migratie) - productieklaar en binnen 9 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/economics-open-source-vs-api-models-ai
 

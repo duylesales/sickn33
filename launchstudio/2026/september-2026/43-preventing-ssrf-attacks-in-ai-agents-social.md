@@ -1,9 +1,9 @@
-🚨 Owen, a price-tracker developer, used **Lovable** to build a scraper — but insecure browser requests got it flagged and blocked by nearly every target site it touched. 🕸️
+🚨 Owen, a price-tracker developer, used **Lovable** to build a scraper - but insecure browser requests got it flagged and blocked by nearly every target site it touched. 🕸️
 
 Giving an AI agent a "fetch this URL" tool hands it the keys to your server's network layer, and one unsandboxed request can trigger a full-blown SSRF attack. 🧠
 
 ❌ A hacker prompting your agent to fetch `169.254.169.254`, the AWS metadata endpoint holding your live IAM credentials
-❌ DNS rebinding — a "safe" domain that resolves to an internal IP milliseconds after your denylist check passes
+❌ DNS rebinding - a "safe" domain that resolves to an internal IP milliseconds after your denylist check passes
 ❌ Open-source agent toolkits that ship with zero built-in SSRF protections
 
 ✅ Strict URL denylisting blocking localhost, internal IP ranges, metadata endpoints, and dangerous schemes like `file://`

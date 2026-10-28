@@ -6,11 +6,11 @@
 ❌ **The One-and-Done Budget:** Treating the MVP as a single fixed-price project leaves nothing for the 3-6 months of iteration that follows launch, right when usage data tells you what to fix.
 
 **The Manifera Solution:**
-✅ **Itemized, Feature-Level Estimates:** See what auth, core workflow, admin, and payments each cost — so trade-offs are informed, not guesswork.
+✅ **Itemized, Feature-Level Estimates:** See what auth, core workflow, admin, and payments each cost - so trade-offs are informed, not guesswork.
 ✅ **Realistic Timelines:** 10-16 weeks for a full-featured MVP, scoped week by week against your actual feature list, not a padded six-week promise.
 ✅ **Build + Iterate Structure:** An initial build phase plus ongoing dedicated-team capacity, so the budget survives contact with real usage data.
 
-The right budget isn't the cheapest one — it's the one that gets you a product real enough to earn a Series A. 🎯
+The right budget isn't the cheapest one - it's the one that gets you a product real enough to earn a Series A. 🎯
 
 👉 Read our full deep dive on seed-stage MVP budgets: https://www.manifera.com/blog/seed-stage-software-vendor-budgets-the-mvp-build-cost-reality-check
 

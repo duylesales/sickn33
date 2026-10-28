@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Verhuurplatforms verzamelen enkele van de gevoeligste documenten die gewone mensen ooit afgeven: paspoorten, loonstroken, werkgeversverklaringen, bankafschriften, soms een brief van een vorige verhuurder. In een krappe woningmarkt als de Nederlandse geven woningzoekenden ze graag af, omdat ze de woning willen. Dat maakt PropTech tot een van de sectoren waarin de stap van AI-prototype naar productie de meest bewuste beslissingen vraagt — en waarin de standaardkeuzes van AI-tools het vaakst verkeerd uitpakken.
+Verhuurplatforms verzamelen enkele van de gevoeligste documenten die gewone mensen ooit afgeven: paspoorten, loonstroken, werkgeversverklaringen, bankafschriften, soms een brief van een vorige verhuurder. In een krappe woningmarkt als de Nederlandse geven woningzoekenden ze graag af, omdat ze de woning willen. Dat maakt PropTech tot een van de sectoren waarin de stap van AI-prototype naar productie de meest bewuste beslissingen vraagt - en waarin de standaardkeuzes van AI-tools het vaakst verkeerd uitpakken.
 
 Dit is een beslisgids. Elk onderdeel is een keuze die u bewust moet maken voordat echte woningzoekenden binnenkomen.
 
@@ -31,7 +31,7 @@ Het instinct van een verhuurprototype is om alles vooraf te verzamelen: identite
 
 De Nederlandse regels voor goed verhuurderschap, ingevoerd met de Wet goed verhuurderschap, stellen verwachtingen aan non-discriminatoire selectie en beperken welke informatie verhuurders mogen opvragen, en wanneer. Kopieën van identiteitsbewijzen en gedetailleerde financiële gegevens zijn doorgaans pas in een later stadium gerechtvaardigd, niet van iedereen die om een bezichtiging vraagt. Het AVG-principe van dataminimalisatie wijst dezelfde kant op: verzamel wat u nodig hebt, wanneer u het nodig hebt.
 
-**De beslissing:** definieer fasen — interesse, bezichtiging, aanvraag, selectie, contract — en leg vast welke data in elke fase wordt verzameld. Bouw de app zo dat documenten alleen kunnen worden geüpload in de fase waarin ze gerechtvaardigd zijn.
+**De beslissing:** definieer fasen - interesse, bezichtiging, aanvraag, selectie, contract - en leg vast welke data in elke fase wordt verzameld. Bouw de app zo dat documenten alleen kunnen worden geüpload in de fase waarin ze gerechtvaardigd zijn.
 
 ## Beslissing 2: Hoe Gaat U om met Identiteitsbewijzen?
 
@@ -43,19 +43,19 @@ Nederlandse identiteitsbewijzen bevatten een burgerservicenummer (BSN), dat alle
 
 Een verhuurplatform heeft meestal meerdere partijen: huurders, verhuurders, makelaars, soms vastgoedbeheerders of verenigingen van eigenaren. Elk hoort alleen te zien wat betrekking heeft op hun panden en hun rol.
 
-**De beslissing:** schrijf de toegangsmatrix uit — welke rol welke data ziet voor welk pand — en dwing die af in de database. Een makelaar die voor verhuurder A werkt, mag nooit woningzoekenden voor verhuurder B zien, ook niet als beide hetzelfde platform gebruiken. AI-gegenereerde apps dwingen dit meestal alleen in de interface af.
+**De beslissing:** schrijf de toegangsmatrix uit - welke rol welke data ziet voor welk pand - en dwing die af in de database. Een makelaar die voor verhuurder A werkt, mag nooit woningzoekenden voor verhuurder B zien, ook niet als beide hetzelfde platform gebruiken. AI-gegenereerde apps dwingen dit meestal alleen in de interface af.
 
 ## Beslissing 4: Hoe Wordt Selectie Eerlijk en Uitlegbaar?
 
 Veel PropTech-tools voegen AI of scoring op basis van regels toe om woningzoekenden te rangschikken. Selectie mag niet discrimineren, en woningzoekenden kunnen besluiten aanvechten. Geautomatiseerde besluiten met aanzienlijke gevolgen vallen ook onder beperkingen van de AVG.
 
-**De beslissing:** gebruik transparante criteria (inkomensverhouding, passendheid van de huishoudgrootte), documenteer ze, houd een mens in het eindbesluit, log waarom een woningzoekende is geselecteerd of afgewezen, en vermijd data die als proxy kan dienen voor beschermde kenmerken — nationaliteit, naam, foto, postcode.
+**De beslissing:** gebruik transparante criteria (inkomensverhouding, passendheid van de huishoudgrootte), documenteer ze, houd een mens in het eindbesluit, log waarom een woningzoekende is geselecteerd of afgewezen, en vermijd data die als proxy kan dienen voor beschermde kenmerken - nationaliteit, naam, foto, postcode.
 
 ## Beslissing 5: Hoe Lang Bewaart U Wat?
 
 Documenten van afgewezen woningzoekenden horen niet te worden bewaard als de selectie is afgerond. Huurcontracten van huurders moeten daarentegen mogelijk voor de duur van de huur en daarna worden bewaard om juridische en fiscale redenen.
 
-**De beslissing:** stel bewaartermijnen vast per datatype en fase — bijvoorbeeld documenten van afgewezen woningzoekenden kort na verhuur van het pand verwijderen, huurdocumenten bewaren voor de duur van de huur plus de wettelijk vereiste periode — en automatiseer het.
+**De beslissing:** stel bewaartermijnen vast per datatype en fase - bijvoorbeeld documenten van afgewezen woningzoekenden kort na verhuur van het pand verwijderen, huurdocumenten bewaren voor de duur van de huur plus de wettelijk vereiste periode - en automatiseer het.
 
 ## Beslissing 6: Waar Staat de Data?
 
@@ -67,7 +67,7 @@ Een lek van identiteitsbewijzen en loonstroken is een ernstig datalek, dat waars
 
 ## AI-Prototype naar Productie: Bouwbeslissingen versus Specialistische Beslissingen
 
-Sommige van deze keuzes zijn technisch en kunnen door engineers worden geïmplementeerd: gefaseerde uploads, afdwingen van toegang, automatisering van bewaartermijnen, hosting in de EU, logging. Andere vragen juridische inbreng — vooral selectiecriteria en wat onder de huidige huurwetgeving mag worden gevraagd. LaunchStudio implementeert de technische kant en geeft aan waar juridisch advies nodig is; het vervangt geen advocaat.
+Sommige van deze keuzes zijn technisch en kunnen door engineers worden geïmplementeerd: gefaseerde uploads, afdwingen van toegang, automatisering van bewaartermijnen, hosting in de EU, logging. Andere vragen juridische inbreng - vooral selectiecriteria en wat onder de huidige huurwetgeving mag worden gevraagd. LaunchStudio implementeert de technische kant en geeft aan waar juridisch advies nodig is; het vervangt geen advocaat.
 
 ## Een Datastroom voor een Verhuurplatform, Fase voor Fase
 
@@ -100,7 +100,7 @@ Huurmarkten onder druk trekken kritische aandacht voor selectiepraktijken. Bouw 
 
 ## Toegang voor Meerdere Partijen en Offboarding
 
-PropTech-platforms omvatten veel partijen waarvan de relaties veranderen: makelaars wisselen van kantoor, verhuurders verkopen panden, vastgoedbeheerders nemen portefeuilles over. Modelleer deze relaties expliciet — makelaarskantoor, verhuurder, pand, opdracht — en dwing toegang via die relaties af. Eindigt een relatie, dan eindigt de toegang direct, ook tot historische data van woningzoekenden voor dat pand. Log elke toegang tot documenten en gegevens van woningzoekenden; verhuurders en makelaarskantoren vragen in hun eigen compliancecontroles steeds vaker om deze logs.
+PropTech-platforms omvatten veel partijen waarvan de relaties veranderen: makelaars wisselen van kantoor, verhuurders verkopen panden, vastgoedbeheerders nemen portefeuilles over. Modelleer deze relaties expliciet - makelaarskantoor, verhuurder, pand, opdracht - en dwing toegang via die relaties af. Eindigt een relatie, dan eindigt de toegang direct, ook tot historische data van woningzoekenden voor dat pand. Log elke toegang tot documenten en gegevens van woningzoekenden; verhuurders en makelaarskantoren vragen in hun eigen compliancecontroles steeds vaker om deze logs.
 
 ## Communicatie en Planning op Schaal
 
@@ -112,11 +112,11 @@ Gezien de gevoeligheid van huuraanvragen verdienen een paar maatregelen voorrang
 
 ## Borg en Huurbetalingen Afhandelen
 
-Handelt uw platform borgsommen of de eerste maand huur af, dan is het ontwerp van betalingen net zo belangrijk als het ontwerp van data. Bevestig betalingen via geverifieerde webhooks, nooit via redirects in de browser; leg precies vast op welk pand, welke huurder en welke periode elke betaling betrekking heeft; en beslis of geld rechtstreeks naar verhuurders gaat (meestal de voorkeur) of via het platform — wat regelgevende vragen kan oproepen over het beheren van geld van anderen. Regels voor terugbetaling bij mislukte verhuur moeten worden vastgelegd en automatisch worden uitgevoerd. Geschillen over de borg aan het einde van een huurperiode komen vaak voor, dus houd een duidelijke registratie met tijdstempels bij van wat er is betaald, wanneer en waarvoor.
+Handelt uw platform borgsommen of de eerste maand huur af, dan is het ontwerp van betalingen net zo belangrijk als het ontwerp van data. Bevestig betalingen via geverifieerde webhooks, nooit via redirects in de browser; leg precies vast op welk pand, welke huurder en welke periode elke betaling betrekking heeft; en beslis of geld rechtstreeks naar verhuurders gaat (meestal de voorkeur) of via het platform - wat regelgevende vragen kan oproepen over het beheren van geld van anderen. Regels voor terugbetaling bij mislukte verhuur moeten worden vastgelegd en automatisch worden uitgevoerd. Geschillen over de borg aan het einde van een huurperiode komen vaak voor, dus houd een duidelijke registratie met tijdstempels bij van wat er is betaald, wanneer en waarvoor.
 
 ## Werken met de Bestaande Systemen van Makelaarskantoren
 
-Makelaarskantoren gebruiken vaak al software voor vastgoedbeheer of een CRM. Koppelingen — goedgekeurde huurders exporteren, advertenties importeren — moeten dezelfde dataregels respecteren: stuur alleen wat het ontvangende systeem nodig heeft, gebruik API-inloggegevens per kantoor, log overdrachten en zorg dat verwijdering aan uw kant wordt gevolgd door duidelijke afspraken over de data in hun systeem. Koppelingen zijn de plek waar zorgvuldig ontworpen dataminimalisatie ongemerkt ongedaan kan worden gemaakt als niemand controleert wat er wordt geëxporteerd.
+Makelaarskantoren gebruiken vaak al software voor vastgoedbeheer of een CRM. Koppelingen - goedgekeurde huurders exporteren, advertenties importeren - moeten dezelfde dataregels respecteren: stuur alleen wat het ontvangende systeem nodig heeft, gebruik API-inloggegevens per kantoor, log overdrachten en zorg dat verwijdering aan uw kant wordt gevolgd door duidelijke afspraken over de data in hun systeem. Koppelingen zijn de plek waar zorgvuldig ontworpen dataminimalisatie ongemerkt ongedaan kan worden gemaakt als niemand controleert wat er wordt geëxporteerd.
 
 ## Voorbereiden op Kritisch Onderzoek
 
@@ -128,7 +128,7 @@ Verzamel minder, later, en verwijder eerder: elk document dat u nooit opslaat, i
 
 ## Waar U Deze Week Begint
 
-Breng uw fasen in kaart, verwijder wat u niet nodig hebt en beperk de rest — in die volgorde.
+Breng uw fasen in kaart, verwijder wat u niet nodig hebt en beperk de rest - in die volgorde.
 
 ## Waar LaunchStudio Past
 
@@ -151,9 +151,9 @@ De engineers van LaunchStudio herstructureerden de flow zodat voor het boeken va
 **Resultaat:** Kijkmoment bewaart nu op elk moment identiteitsbewijzen van minder dan 5% van het aantal mensen van voorheen. Twee grotere makelaarskantoren sloten zich aan nadat ze de beschrijving van de dataverwerking hadden beoordeeld, en supportvragen van bezorgde woningzoekenden over hun documenten hielden grotendeels op.
 
 > *"We vroegen duizenden mensen om hun paspoort zodat veertig van hen een appartement konden huren. De veiligste data bleek de data die we niet meer verzamelden."*
-> — **Ricardo Santos, Oprichter, Kijkmoment (Diemen)**
+> - **Ricardo Santos, Oprichter, Kijkmoment (Diemen)**
 
-**Kosten & Tijdlijn:** € 3.600 (Launch Ready-pakket met gefaseerd verzamelen van data, toegangsbeheer, migratie van opslag, bewaartermijnen en aanpassingen aan de scoring) — afgerond in 12 werkdagen.
+**Kosten & Tijdlijn:** € 3.600 (Launch Ready-pakket met gefaseerd verzamelen van data, toegangsbeheer, migratie van opslag, bewaartermijnen en aanpassingen aan de scoring) - afgerond in 12 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -171,7 +171,7 @@ Het kan zorgvuldig worden gebruikt: transparante criteria, geen beschermde kenme
 
 ### Waarom is de Amsterdamse basis van Manifera relevant voor PropTech-oprichters?
 
-Het Europese kantoor van Manifera aan de Herengracht 420 staat in het hart van de Nederlandse huurmarkt, en het team begrijpt de lokale druk en verwachtingen rond huurdersdata — gecombineerd met engineeringcapaciteit in Ho Chi Minh-stad.
+Het Europese kantoor van Manifera aan de Herengracht 420 staat in het hart van de Nederlandse huurmarkt, en het team begrijpt de lokale druk en verwachtingen rond huurdersdata - gecombineerd met engineeringcapaciteit in Ho Chi Minh-stad.
 
 ### Kan zorgvuldige omgang met huurdersdata de online reputatie van mijn platform verbeteren?
 

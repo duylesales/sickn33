@@ -10,11 +10,11 @@ Stefan vroeg eerst om een hands-on review. Die vond dat huiseigenaren via de API
 ✅ Alle vier de bevindingen binnen tien werkdagen opgelost
 ✅ Omvormertokens versleuteld en scheiding tussen installateurs afgedwongen
 ✅ Autorisatietests toegevoegd aan CI, zodat de oplossingen opgelost blijven
-✅ Een rapport met bewijs — door het energiebedrijf geaccepteerd voor de pilot, met later een formele pentest op een veel kleinere scope
+✅ Een rapport met bewijs - door het energiebedrijf geaccepteerd voor de pilot, met later een formele pentest op een veel kleinere scope
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, lossen we eerst de basis op — zodat het rapport met de grote naam de laatste stap is, niet de dure eerste. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, lossen we eerst de basis op - zodat het rapport met de grote naam de laatste stap is, niet de dure eerste. ⚙️
 
-💡 Het resultaat: € 2.900, tien werkdagen. De pilot startte twee maanden eerder, en de uiteindelijke formele pentest vond slechts twee bevindingen met een laag risico — tegen zo'n 40% minder dan de oorspronkelijke offerte. 🚀
+💡 Het resultaat: € 2.900, tien werkdagen. De pilot startte twee maanden eerder, en de uiteindelijke formele pentest vond slechts twee bevindingen met een laag risico - tegen zo'n 40% minder dan de oorspronkelijke offerte. 🚀
 
 👉 Beveiligingsaudit voor AI-Applicaties: Groot Consultancybureau vs. Hands-On Specialist: https://launchstudio.eu/nl/blog/ai-application-security-audit-large-consultancy-vs-hands-on-specialist
 

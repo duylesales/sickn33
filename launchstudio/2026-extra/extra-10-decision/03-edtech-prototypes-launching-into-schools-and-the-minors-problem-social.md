@@ -1,13 +1,13 @@
 🚨 Iris built Huiswerkmaatje for two enthusiastic teachers in Rotterdam. Then one teacher tried to bring it to her school, and the DPO sent back a two-page questionnaire Iris had never seen before. 😳
 
-Loving your app and approving it are two different processes — schools run the second one whether you're ready or not: 🧠
+Loving your app and approving it are two different processes - schools run the second one whether you're ready or not: 🧠
 
 ❌ Supabase project hosted outside the EU by default, nobody had ever checked
-❌ No deletion workflow at all — accounts and homework history persisted indefinitely
+❌ No deletion workflow at all - accounts and homework history persisted indefinitely
 ❌ Onboarding was built entirely around collecting parental consent, the wrong mechanism for a school-mediated product
 ❌ No sub-processor list existed because nobody had ever assembled one
 
-✅ The school is usually the data controller — your product needs a processor agreement, not a consent flow
+✅ The school is usually the data controller - your product needs a processor agreement, not a consent flow
 ✅ Move hosting to an EU region and build a real deletion workflow tied to the school's own roster system
 ✅ Replace consent-collection onboarding with a lightweight parental notification screen
 ✅ Prepare hosting location, retention policy and a sub-processor list before the first procurement conversation, not during it

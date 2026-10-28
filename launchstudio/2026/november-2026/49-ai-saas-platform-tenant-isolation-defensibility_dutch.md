@@ -49,7 +49,7 @@ Een AI SaaS Platform is via veilige API's direct verweven met de bronsystemen va
 
 ### 2. De Geavanceerde RAG-Engine (Data als Slotgracht)
 Een wrapper leunt uitsluitend op de algemene kennis van het standaard taalmodel.
-Een AI SaaS Platform bouwt een bedrijfsspecifieke kennisgraaf. Het platform verwerkt enterprise-data via geavanceerde OCR, semantische chunking en vectordatabases (Supabase `pgvector`). Het platform wordt dagelijks waardevoller omdat het de specifieke terminologie en context van de klant leert begrijpen — data waarover openbare modellen niet beschikken.
+Een AI SaaS Platform bouwt een bedrijfsspecifieke kennisgraaf. Het platform verwerkt enterprise-data via geavanceerde OCR, semantische chunking en vectordatabases (Supabase `pgvector`). Het platform wordt dagelijks waardevoller omdat het de specifieke terminologie en context van de klant leert begrijpen - data waarover openbare modellen niet beschikken.
 
 ### 3. Agentic Orkestratie (Workflow-Uitvoering)
 Een wrapper is passief: de gebruiker typt een vraag, de AI geeft antwoord en de interactie stopt.
@@ -91,9 +91,9 @@ Het Manifera-team voerde een intensieve transitie uit van 30 werkdagen:
 **Resultaat:** CopyGenius transformeerde van een simpele tekstgenerator naar een autonoom merchandising-platform. Omdat het webwinkeliers wekelijks 10 uur werk bespaarde door complete processen te automatiseren, daalde de churn naar 2%. Liam verhoogde zijn prijzen met 300% en haalde een Seed-ronde van €1,5 miljoen op.
 
 > *"Ik verkocht een losse tool, en mijn concurrent begon die tool gratis weg te geven. LaunchStudio hielp me transformeren van het verkopen van een tool naar het verkopen van een autonome workflow. Door diepe API-integraties en een agentic backend te bouwen, creëerden ze een slotgracht waar concurrenten niet meer bij konden. Ze hebben mijn bedrijf gered."*
-> — **Liam Davies, Oprichter, CopyGenius (Londen)**
+> - **Liam Davies, Oprichter, CopyGenius (Londen)**
 
-**Kosten & Doorlooptijd:** €22.000 (Launch & Grow Pakket met Agentic Orchestration & Enterprise Integrations Add-on) — productie-klaar en live binnen 30 werkdagen.
+**Kosten & Doorlooptijd:** €22.000 (Launch & Grow Pakket met Agentic Orchestration & Enterprise Integrations Add-on) - productie-klaar en live binnen 30 werkdagen.
 
 ---
 

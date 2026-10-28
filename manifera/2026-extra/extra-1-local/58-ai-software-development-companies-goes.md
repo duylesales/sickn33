@@ -20,19 +20,19 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-Just because a vendor's AI demo impressed your leadership team in a forty-minute pitch doesn't mean that vendor can get the same system to survive six months of real production traffic — those are two almost entirely different skill sets, and most procurement processes never actually test for the second one.
+Just because a vendor's AI demo impressed your leadership team in a forty-minute pitch doesn't mean that vendor can get the same system to survive six months of real production traffic - those are two almost entirely different skill sets, and most procurement processes never actually test for the second one.
 
-**The Pain:** A VP of Engineering at an agri-food processing company based in Goes — a central market town anchoring Zeeland's agricultural and food-logistics economy — is running a vendor selection process for an AI-powered quality inspection feature. Five proposals are on the table. Every single one included a polished live demo. None of the proposals included a single production case study with hard reliability metrics, and the VP is now expected to make a recommendation to leadership within two weeks based almost entirely on how good each pitch looked.
+**The Pain:** A VP of Engineering at an agri-food processing company based in Goes - a central market town anchoring Zeeland's agricultural and food-logistics economy - is running a vendor selection process for an AI-powered quality inspection feature. Five proposals are on the table. Every single one included a polished live demo. None of the proposals included a single production case study with hard reliability metrics, and the VP is now expected to make a recommendation to leadership within two weeks based almost entirely on how good each pitch looked.
 
-**The Agitation:** Choosing the wrong partner here isn't a minor miss — it's a repeat of a pattern this VP has already lived through once, where a previous AI vendor delivered an impressive proof of concept and then quietly struggled for four months trying to get it stable enough for actual production food-safety inspection use, ultimately never fully shipping. That failed engagement cost roughly €120,000 and a full production quarter, and leadership's patience for a second miss is measured in single digits.
+**The Agitation:** Choosing the wrong partner here isn't a minor miss - it's a repeat of a pattern this VP has already lived through once, where a previous AI vendor delivered an impressive proof of concept and then quietly struggled for four months trying to get it stable enough for actual production food-safety inspection use, ultimately never fully shipping. That failed engagement cost roughly €120,000 and a full production quarter, and leadership's patience for a second miss is measured in single digits.
 
 ## The Architectural Mandate
 
 The single highest-leverage move in evaluating AI software development companies is refusing to let the demo be the evidence. A demo proves a vendor can make a model respond convincingly to a handful of curated inputs in a controlled environment. It proves nothing about whether they can get that system through the unglamorous, load-bearing work that separates a prototype from a production system.
 
-The real evaluation checklist has to probe past the pitch. First: ask for production case studies with actual metrics — uptime, accuracy over time, cost per inference at scale — not screenshots of a demo. A vendor with genuine production experience will have these numbers ready; a demo-focused shop will pivot back to showing you the interface again.
+The real evaluation checklist has to probe past the pitch. First: ask for production case studies with actual metrics - uptime, accuracy over time, cost per inference at scale - not screenshots of a demo. A vendor with genuine production experience will have these numbers ready; a demo-focused shop will pivot back to showing you the interface again.
 
-Second: ask specifically how they handle MLOps — versioning, evaluation harnesses, observability — and how they handle the failure modes covered by every serious AI engagement: RAG grounding to prevent hallucination, model-agnostic architecture to avoid vendor lock-in, and a defined evaluation methodology to measure whether the system is actually accurate, not just fluent. Vague answers here are the single most reliable predictor of a vendor who can build a convincing prototype and nothing past it.
+Second: ask specifically how they handle MLOps - versioning, evaluation harnesses, observability - and how they handle the failure modes covered by every serious AI engagement: RAG grounding to prevent hallucination, model-agnostic architecture to avoid vendor lock-in, and a defined evaluation methodology to measure whether the system is actually accurate, not just fluent. Vague answers here are the single most reliable predictor of a vendor who can build a convincing prototype and nothing past it.
 
 Third: ask about team composition. A team of prompt engineers who are excellent at getting impressive demo outputs is a different team from one with engineers who have built vector database infrastructure, evaluation pipelines, and observability systems that ran in production for months. Ask who specifically will be on your project and what they've shipped, not what the company's marketing page claims.
 
@@ -40,8 +40,8 @@ Fourth: ask what happens after launch. A partner who disappears after go-live, l
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** Our Dutch-based architects own the production readiness standard for every engagement — evaluation methodology, MLOps maturity, security review — and stay accountable to you as the client's quality and risk partner, not just the sales relationship.
-- **Vietnam (Execution/Velocity):** Autonomous Pods in Ho Chi Minh City are the engineers who actually build and maintain the production system — the same team from prototype through post-launch monitoring, not a handoff to a different, less experienced team once the contract is signed.
+- **Amsterdam (Governance/Strategy):** Our Dutch-based architects own the production readiness standard for every engagement - evaluation methodology, MLOps maturity, security review - and stay accountable to you as the client's quality and risk partner, not just the sales relationship.
+- **Vietnam (Execution/Velocity):** Autonomous Pods in Ho Chi Minh City are the engineers who actually build and maintain the production system - the same team from prototype through post-launch monitoring, not a handoff to a different, less experienced team once the contract is signed.
 
 This is European project governance paired with Southeast Asian engineering talent, structured specifically so the team that impresses you in the pitch is the same team accountable for what ships. See real delivery outcomes on our [portfolio page](https://www.manifera.com/portfolio/).
 
@@ -49,12 +49,12 @@ This is European project governance paired with Southeast Asian engineering tale
 
 ### The Logistics Firm That Chose the Better Demo Twice
 
-NordFrakt Logistics A/S, a mid-sized freight logistics company in Denmark, selected an AI vendor for a route-optimization feature based largely on an impressive live demo. The vendor delivered a working prototype quickly, then spent five months unable to stabilize it for real production traffic — the system that handled twenty demo scenarios flawlessly broke down constantly against the volume and edge cases of actual daily freight data.
+NordFrakt Logistics A/S, a mid-sized freight logistics company in Denmark, selected an AI vendor for a route-optimization feature based largely on an impressive live demo. The vendor delivered a working prototype quickly, then spent five months unable to stabilize it for real production traffic - the system that handled twenty demo scenarios flawlessly broke down constantly against the volume and edge cases of actual daily freight data.
 
-NordFrakt brought in Manifera to evaluate what had gone wrong and take over delivery. The assessment found no evaluation harness, no load testing beyond the demo scale, and no observability layer — the prototype had simply never been built with production in mind. Manifera's Autonomous Pod rebuilt the system with proper evaluation testing and observability, and it went live within nine weeks, handling full production freight volume without the instability that had stalled the original vendor.
+NordFrakt brought in Manifera to evaluate what had gone wrong and take over delivery. The assessment found no evaluation harness, no load testing beyond the demo scale, and no observability layer - the prototype had simply never been built with production in mind. Manifera's Autonomous Pod rebuilt the system with proper evaluation testing and observability, and it went live within nine weeks, handling full production freight volume without the instability that had stalled the original vendor.
 
 > *"The second vendor's demo was less flashy than the first one's. It's also the one that's still running in production eighteen months later, which turned out to be the only metric that mattered."*
-> — **VP of Engineering, NordFrakt Logistics A/S, Denmark**
+> - **VP of Engineering, NordFrakt Logistics A/S, Denmark**
 
 ## Demo-Only AI Vendors vs. Manifera Production Partner
 
@@ -68,19 +68,19 @@ NordFrakt brought in Manifera to evaluate what had gone wrong and take over deli
 
 ## The Economics
 
-Choosing an AI vendor based on demo quality alone routinely results in a failed or stalled engagement roughly a third of the way into production rollout, at a typical sunk cost of €80,000–€150,000 and a full quarter of lost time-to-market versus competitors already live. The evaluation discipline that avoids this — requesting production metrics, probing MLOps maturity, verifying team continuity — costs almost nothing beyond a more rigorous procurement process, yet it's the single highest-leverage decision in the entire AI initiative. Getting vendor selection right the first time is dramatically cheaper than getting it wrong once and starting over with a second vendor, on a compressed timeline, with a more skeptical leadership team watching.
+Choosing an AI vendor based on demo quality alone routinely results in a failed or stalled engagement roughly a third of the way into production rollout, at a typical sunk cost of €80,000–€150,000 and a full quarter of lost time-to-market versus competitors already live. The evaluation discipline that avoids this - requesting production metrics, probing MLOps maturity, verifying team continuity - costs almost nothing beyond a more rigorous procurement process, yet it's the single highest-leverage decision in the entire AI initiative. Getting vendor selection right the first time is dramatically cheaper than getting it wrong once and starting over with a second vendor, on a compressed timeline, with a more skeptical leadership team watching.
 
 If every proposal on your desk right now looks equally impressive, you're evaluating the wrong thing. Talk to Manifera about what production-grade AI delivery actually looks like: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
 ## A Scored Rubric for Separating the Five Proposals on the Table
 
-Turn the qualitative evaluation into a weighted scorecard so five polished pitches stop looking identical. Production evidence carries the most weight (35%): score zero for "no case study," partial credit for a case study without hard metrics, and full credit only for named uptime, accuracy-over-time, and cost-per-inference figures from a comparable production deployment. MLOps maturity is next (25%): score on whether the vendor can describe a concrete evaluation harness and observability stack unprompted, not after being asked directly. Team continuity (20%): score based on whether the vendor commits, in writing, that the engineers in the pitch are the engineers who'll build the system — a "we'll staff appropriately" answer scores zero. Post-launch model (20%): score on whether ongoing monitoring, drift detection, and retraining are included as a defined service or left as an unstated assumption. For a Goes agri-food quality-inspection use case specifically, add a mandatory pass/fail gate on top of the weighted score: any vendor unable to describe a specific false-positive/false-negative tolerance methodology for a food-safety-adjacent inspection system should be disqualified regardless of how well they score elsewhere, since an unmanaged false-negative rate in that context isn't a technical inconvenience — it's a recall risk.
+Turn the qualitative evaluation into a weighted scorecard so five polished pitches stop looking identical. Production evidence carries the most weight (35%): score zero for "no case study," partial credit for a case study without hard metrics, and full credit only for named uptime, accuracy-over-time, and cost-per-inference figures from a comparable production deployment. MLOps maturity is next (25%): score on whether the vendor can describe a concrete evaluation harness and observability stack unprompted, not after being asked directly. Team continuity (20%): score based on whether the vendor commits, in writing, that the engineers in the pitch are the engineers who'll build the system - a "we'll staff appropriately" answer scores zero. Post-launch model (20%): score on whether ongoing monitoring, drift detection, and retraining are included as a defined service or left as an unstated assumption. For a Goes agri-food quality-inspection use case specifically, add a mandatory pass/fail gate on top of the weighted score: any vendor unable to describe a specific false-positive/false-negative tolerance methodology for a food-safety-adjacent inspection system should be disqualified regardless of how well they score elsewhere, since an unmanaged false-negative rate in that context isn't a technical inconvenience - it's a recall risk.
 
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering comparing multiple AI vendor proposals) What's the single best question to ask an AI vendor to separate demo-builders from production partners?
 
-Ask for a production case study with hard metrics — uptime, accuracy over time, cost per inference at real scale — not a demo. A vendor with genuine production experience will have this ready; one that doesn't will redirect back to the pitch.
+Ask for a production case study with hard metrics - uptime, accuracy over time, cost per inference at real scale - not a demo. A vendor with genuine production experience will have this ready; one that doesn't will redirect back to the pitch.
 
 ### (Scenario: Goes agri-food company evaluating AI for a compliance-sensitive use case) Does vendor selection matter more for AI features tied to safety or compliance requirements?
 
@@ -100,7 +100,7 @@ That depends on whether the stall reflects a fixable gap or a structural lack of
 
 ### (Scenario: VP of Engineering wanting to turn five pitches into a scored comparison) How should we weight production evidence versus MLOps maturity when scoring competing AI vendor proposals?
 
-A workable weighting is production evidence 35%, MLOps maturity 25%, team continuity 20%, and post-launch support model 20% — heavily favoring proof over pitch quality, since every proposal in a shortlist has already cleared the "can they present well" bar.
+A workable weighting is production evidence 35%, MLOps maturity 25%, team continuity 20%, and post-launch support model 20% - heavily favoring proof over pitch quality, since every proposal in a shortlist has already cleared the "can they present well" bar.
 
 ### (Scenario: VP of Engineering evaluating an AI quality-inspection vendor for food safety) What should disqualify an AI vendor outright for a food-safety-adjacent quality inspection use case?
 
@@ -112,7 +112,7 @@ It should integrate directly, feeding inspection results into your existing qual
 
 ### (Scenario: VP of Engineering wanting to de-risk before a full commitment) Should we pilot an AI vendor on a limited scope before committing to the full quality-inspection rollout?
 
-Yes — a scoped pilot on one production line or SKU over four to eight weeks, validated against real historical defect data, is the standard way to confirm accuracy claims before extending the system across the full operation.
+Yes - a scoped pilot on one production line or SKU over four to eight weeks, validated against real historical defect data, is the standard way to confirm accuracy claims before extending the system across the full operation.
 
 <script type="application/ld+json">
 {

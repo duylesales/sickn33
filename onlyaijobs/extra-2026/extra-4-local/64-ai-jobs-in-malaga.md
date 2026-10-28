@@ -70,7 +70,7 @@ The University of Málaga (UMA) has schools of telecommunications engineering, c
 
 ## Remote Work and the International Community
 
-Málaga has become a popular base for international remote workers, including people using Spain's digital nomad visa, which allows non-EU citizens working for foreign companies to live in Spain under certain conditions. This community has added coworking spaces, meetups and networking events, many in English. For AI engineers, this can be both an opportunity — contacts, events, possible employers — and a consideration: some professionals in Málaga work for employers elsewhere, and local AI roles remain fewer than in Madrid or Barcelona.
+Málaga has become a popular base for international remote workers, including people using Spain's digital nomad visa, which allows non-EU citizens working for foreign companies to live in Spain under certain conditions. This community has added coworking spaces, meetups and networking events, many in English. For AI engineers, this can be both an opportunity - contacts, events, possible employers - and a consideration: some professionals in Málaga work for employers elsewhere, and local AI roles remain fewer than in Madrid or Barcelona.
 
 ## Spanish Employment and Tax
 
@@ -92,7 +92,7 @@ Málaga offers sunshine for most of the year, beaches, a revitalised historic ce
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Málaga you will find few or no local vacancies there today. Use Spanish job portals, company career pages, the technology park's directories and local tech communities as primary sources. OnlyAIJobs is useful for comparing Málaga with the Netherlands — where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles — and as a method: with the technology park west of the city and housing spread along the coast, searching by real commute helps you avoid long daily trips. Andalusian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Málaga you will find few or no local vacancies there today. Use Spanish job portals, company career pages, the technology park's directories and local tech communities as primary sources. OnlyAIJobs is useful for comparing Málaga with the Netherlands - where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles - and as a method: with the technology park west of the city and housing spread along the coast, searching by real commute helps you avoid long daily trips. Andalusian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Machine Learning for Security at Scale
 
@@ -161,7 +161,7 @@ If you plan to live in Málaga while working remotely for an employer in another
 
 A Spanish data scientist working on fraud detection in Dublin wants to return to Spain and enjoy a better climate. She targets AI jobs in Málaga and receives an offer from a cybersecurity company working on phishing and malware detection.
 
-The gross salary is lower than in Dublin, but she calculates net pay, including the possible application of the inbound workers' tax regime, and compares rents in Málaga with Dublin. She negotiates temporary accommodation for her first month and a hybrid arrangement. After a year, she says the technical challenges are comparable to her previous role, her cost of living is lower and her quality of life much higher — though finding a long-term flat took patience.
+The gross salary is lower than in Dublin, but she calculates net pay, including the possible application of the inbound workers' tax regime, and compares rents in Málaga with Dublin. She negotiates temporary accommodation for her first month and a hybrid arrangement. After a year, she says the technical challenges are comparable to her previous role, her cost of living is lower and her quality of life much higher - though finding a long-term flat took patience.
 
 ## Key Takeaways
 

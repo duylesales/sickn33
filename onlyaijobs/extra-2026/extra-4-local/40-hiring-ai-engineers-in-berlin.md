@@ -48,15 +48,15 @@ Berlin is Germany's startup capital and one of Europe's most international citie
 
 ## Understanding the Berlin AI Talent Market
 
-**An international pool.** A large proportion of Berlin's tech workforce comes from abroad — from elsewhere in the EU and from countries such as India, Brazil, Turkey, Ukraine, the United States and many others. Candidates often speak excellent English but limited German.
+**An international pool.** A large proportion of Berlin's tech workforce comes from abroad - from elsewhere in the EU and from countries such as India, Brazil, Turkey, Ukraine, the United States and many others. Candidates often speak excellent English but limited German.
 
 **Strong research institutions.** Technische Universität Berlin, Humboldt-Universität and Freie Universität Berlin produce graduates and researchers. BIFOLD, the Berlin Institute for the Foundations of Learning and Data, is one of Germany's permanently funded AI competence centres, based at TU Berlin with partners including Charité. DFKI has a Berlin site, and Fraunhofer's Heinrich Hertz Institute works on AI in communications and video.
 
-**Established scale-ups and startups.** E-commerce, food delivery, fintech, mobility and B2B software companies — Zalando and Delivery Hero among the best known — have built large data and ML teams in Berlin. AI venture studios and startups working on language models, computer vision and applied AI add to the demand.
+**Established scale-ups and startups.** E-commerce, food delivery, fintech, mobility and B2B software companies - Zalando and Delivery Hero among the best known - have built large data and ML teams in Berlin. AI venture studios and startups working on language models, computer vision and applied AI add to the demand.
 
 **Big-tech and corporate offices.** Several global technology companies and German corporates have AI and engineering teams in Berlin.
 
-The result is a market where experienced AI engineers — especially those with production ML, MLOps and LLM application experience — receive multiple offers and choose carefully.
+The result is a market where experienced AI engineers - especially those with production ML, MLOps and LLM application experience - receive multiple offers and choose carefully.
 
 ## What Berlin AI Engineers Look For
 
@@ -73,7 +73,7 @@ Surveys and conversations with candidates consistently point to similar prioriti
 
 ## Writing a Vacancy That Works in Berlin
 
-1. **A precise title.** "ML Engineer — search ranking" or "Applied Scientist — LLM evaluation" instead of "AI Rockstar".
+1. **A precise title.** "ML Engineer - search ranking" or "Applied Scientist - LLM evaluation" instead of "AI Rockstar".
 2. **The problem and the data.** What will the engineer build, with what data, for which users?
 3. **The stack and the compute.** Frameworks, cloud, orchestration, available GPUs.
 4. **Team and reporting line.** Who they will work with and learn from.
@@ -88,7 +88,7 @@ Surveys and conversations with candidates consistently point to similar prioriti
 A good process for hiring AI engineers in Berlin is rigorous but efficient:
 
 1. **Screening call (30 minutes):** motivation, experience, salary expectations and visa situation.
-2. **Technical deep dive (60 minutes):** discuss a past ML project in depth — data, modelling choices, evaluation, deployment, failures.
+2. **Technical deep dive (60 minutes):** discuss a past ML project in depth - data, modelling choices, evaluation, deployment, failures.
 3. **Practical exercise:** either a short, paid or time-boxed take-home task, or a live session on a realistic problem such as designing an evaluation for a model or debugging a pipeline.
 4. **ML system design (60 minutes):** design a system relevant to your product, with trade-offs.
 5. **Team and values conversation:** meet future colleagues and the manager.
@@ -112,7 +112,7 @@ Relocation to Berlin involves several steps that can be stressful for candidates
 
 ## How OnlyAIJobs Supports Berlin Employers
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement — every vacancy competes on its content, which rewards precise, transparent postings like those described above. Candidates browse without an account.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement - every vacancy competes on its content, which rewards precise, transparent postings like those described above. Candidates browse without an account.
 
 In the interest of transparency: OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie, Sendcloud and AMCS. For hiring AI engineers in Berlin, use it alongside German and international job boards, LinkedIn, university and BIFOLD channels, community events and referrals. It is particularly relevant if you want to reach AI engineers in the Netherlands who may consider moving to Berlin. Your first vacancy is free: email a link to info@onlyaijobs.eu.
 
@@ -128,7 +128,7 @@ Compensation for AI engineers in Berlin varies widely between startups, scale-up
 
 ## Working With a Works Council
 
-Larger Berlin employers may have a works council (Betriebsrat), which has co-determination rights in areas such as working time, performance monitoring and the introduction of technical systems that can monitor employees. When introducing tools for AI teams — for example monitoring of productivity or AI tools that process employee data — involve the works council early. For AI products that affect employees, such as HR analytics, the EU AI Act classifies certain uses in employment as high-risk, adding further requirements.
+Larger Berlin employers may have a works council (Betriebsrat), which has co-determination rights in areas such as working time, performance monitoring and the introduction of technical systems that can monitor employees. When introducing tools for AI teams - for example monitoring of productivity or AI tools that process employee data - involve the works council early. For AI products that affect employees, such as HR analytics, the EU AI Act classifies certain uses in employment as high-risk, adding further requirements.
 
 ## Sourcing Beyond Job Boards
 
@@ -167,7 +167,7 @@ Given competition for senior engineers, many Berlin employers invest in juniors:
 
 ## Measuring Success
 
-Track time to hire, applicants per vacancy, the share passing each interview stage, offer acceptance rates, reasons for declined offers and first-year retention. These metrics reveal where your process leaks and whether changes — clearer vacancies, faster interviews, published salary ranges — actually work.
+Track time to hire, applicants per vacancy, the share passing each interview stage, offer acceptance rates, reasons for declined offers and first-year retention. These metrics reveal where your process leaks and whether changes - clearer vacancies, faster interviews, published salary ranges - actually work.
 
 ## Final Advice for Berlin Employers
 
@@ -179,7 +179,7 @@ Treat every AI vacancy as a product: define the problem clearly, be transparent 
 
 A Berlin logistics scale-up struggled to fill two ML engineer positions for three months. Its vacancy was titled "AI Engineer", listed a long set of technologies, did not mention salary or visa sponsorship and described a six-step interview process.
 
-The hiring manager rewrote the vacancy with a specific title ("ML Engineer — delivery time prediction"), a description of the data and models, a salary range, English as working language, a two-day hybrid policy and explicit visa sponsorship. The process was reduced to four steps completed within three weeks, and the company registered for the accelerated procedure for skilled workers. Applications from strong candidates increased, and both positions were filled within six weeks — one by an engineer relocating from outside the EU, who started after a streamlined visa process.
+The hiring manager rewrote the vacancy with a specific title ("ML Engineer - delivery time prediction"), a description of the data and models, a salary range, English as working language, a two-day hybrid policy and explicit visa sponsorship. The process was reduced to four steps completed within three weeks, and the company registered for the accelerated procedure for skilled workers. Applications from strong candidates increased, and both positions were filled within six weeks - one by an engineer relocating from outside the EU, who started after a streamlined visa process.
 
 ## Key Takeaways
 

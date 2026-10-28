@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-For years, Dutch vacancies for data scientists and ML engineers often said "competitive salary" and left the rest to negotiation. That practice is coming to an end. The **EU Pay Transparency Directive (EU) 2023/970** requires employers to give candidates information about initial pay or its range before the job interview, prohibits asking candidates about their pay history and requires pay structures based on objective, gender-neutral criteria. Member states had to transpose the directive by June 2026, and the Netherlands has been preparing implementing legislation; employers should check the current Dutch timeline. For AI roles — where market premiums, hybrid titles and negotiation have historically created large pay differences — the directive forces decisions many employers have postponed.
+For years, Dutch vacancies for data scientists and ML engineers often said "competitive salary" and left the rest to negotiation. That practice is coming to an end. The **EU Pay Transparency Directive (EU) 2023/970** requires employers to give candidates information about initial pay or its range before the job interview, prohibits asking candidates about their pay history and requires pay structures based on objective, gender-neutral criteria. Member states had to transpose the directive by June 2026, and the Netherlands has been preparing implementing legislation; employers should check the current Dutch timeline. For AI roles - where market premiums, hybrid titles and negotiation have historically created large pay differences - the directive forces decisions many employers have postponed.
 
 This article provides general information, not legal advice.
 
@@ -71,7 +71,7 @@ In the Netherlands, equal pay for men and women is already required under **Arti
 
 **Rapidly changing roles.** New roles such as ML platform engineer, AI product manager or AI governance specialist do not fit easily into existing job classification systems.
 
-**Negotiation differences.** Candidates who negotiate more assertively may receive higher starting salaries for the same work — a pattern that can contribute to unexplained pay gaps.
+**Negotiation differences.** Candidates who negotiate more assertively may receive higher starting salaries for the same work - a pattern that can contribute to unexplained pay gaps.
 
 ## Step 1: Define Roles and Levels Clearly
 
@@ -106,7 +106,7 @@ Many Dutch organisations already use job evaluation methods, such as **ORBA** or
 
 ## Step 4: Rethink Negotiation
 
-Because candidates will know the range in advance and employers cannot ask about pay history, negotiation shifts. Instead of anchoring on a candidate's previous salary, employers must justify positioning within the range using the documented criteria. This can reduce negotiation time and help avoid unexplained differences — but only if hiring managers are trained to apply criteria consistently and document their decisions.
+Because candidates will know the range in advance and employers cannot ask about pay history, negotiation shifts. Instead of anchoring on a candidate's previous salary, employers must justify positioning within the range using the documented criteria. This can reduce negotiation time and help avoid unexplained differences - but only if hiring managers are trained to apply criteria consistently and document their decisions.
 
 ## Step 5: Involve the Works Council and Communicate Internally
 
@@ -131,7 +131,7 @@ Pay under the directive includes not only base salary but also other remuneratio
 
 ## Preparing for Employee Information Requests
 
-Once employees can request information on average pay levels by sex for workers doing the same work or work of equal value, employers need reliable data about job categories and pay. For AI and data teams, where titles and responsibilities have often evolved informally, this requires clean job classification. Preparing now — defining categories, cleaning HR data and checking whether differences are explainable — reduces the risk of unpleasant surprises when the first requests arrive.
+Once employees can request information on average pay levels by sex for workers doing the same work or work of equal value, employers need reliable data about job categories and pay. For AI and data teams, where titles and responsibilities have often evolved informally, this requires clean job classification. Preparing now - defining categories, cleaning HR data and checking whether differences are explainable - reduces the risk of unpleasant surprises when the first requests arrive.
 
 ## A Concrete Scenario: The Range That Revealed a Problem
 
@@ -150,7 +150,7 @@ The insurer reviews the role definitions, adjusts the range and creates a plan t
 
 ## What Candidates Will Notice
 
-Transparent salary ranges influence who applies. Experienced AI professionals often receive many recruiter messages, and a vacancy with a clear, competitive range stands out. Candidates who might not have negotiated assertively — including many underrepresented groups in technology — are more likely to apply when pay is clear. For smaller employers competing with large technology companies, transparency about the total package, including development opportunities, flexibility and meaningful work, can offset lower base salaries.
+Transparent salary ranges influence who applies. Experienced AI professionals often receive many recruiter messages, and a vacancy with a clear, competitive range stands out. Candidates who might not have negotiated assertively - including many underrepresented groups in technology - are more likely to apply when pay is clear. For smaller employers competing with large technology companies, transparency about the total package, including development opportunities, flexibility and meaningful work, can offset lower base salaries.
 
 ## Key Takeaways
 
@@ -164,7 +164,7 @@ Transparent salary ranges influence who applies. Experienced AI professionals of
 
 Take your next AI vacancy, define its level using a shared framework, compare the proposed range with current employees in similar roles and document the criteria before publishing.
 
-Post your AI, machine learning or data vacancy with a clear salary range — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy with a clear salary range - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -172,7 +172,7 @@ Post your AI, machine learning or data vacancy with a clear salary range — fir
 Under the directive, candidates must receive information about initial pay or its range before the interview; including it in the vacancy is the simplest way to comply.
 
 ### (Scenario: recruiter used to asking about current salary) Can I still ask candidates about their current salary?
-No — the directive prohibits asking candidates about their pay history in current or previous employment.
+No - the directive prohibits asking candidates about their pay history in current or previous employment.
 
 ### (Scenario: employer with market premiums for AI roles) Can AI roles be paid more than other roles?
 Yes, if differences are based on objective, gender-neutral criteria applied consistently, such as skills, responsibility and documented market factors.
@@ -189,7 +189,7 @@ Review whether differences are objectively justified, document criteria and plan
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Do I have to publish a salary range in AI vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates must receive pay information before the interview; the vacancy is the simplest place."}},
-    {"@type": "Question", "name": "Can I still ask candidates about their current salary?", "acceptedAnswer": {"@type": "Answer", "text": "No — pay history questions are prohibited."}},
+    {"@type": "Question", "name": "Can I still ask candidates about their current salary?", "acceptedAnswer": {"@type": "Answer", "text": "No - pay history questions are prohibited."}},
     {"@type": "Question", "name": "Can AI roles be paid more than other roles?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, based on objective, gender-neutral criteria applied consistently."}},
     {"@type": "Question", "name": "Does the directive apply to small companies?", "acceptedAnswer": {"@type": "Answer", "text": "Recruitment transparency applies generally; reporting depends on size."}},
     {"@type": "Question", "name": "What should I do if current employees earn outside the new range?", "acceptedAnswer": {"@type": "Answer", "text": "Review justification, document criteria and correct unexplained differences."}}

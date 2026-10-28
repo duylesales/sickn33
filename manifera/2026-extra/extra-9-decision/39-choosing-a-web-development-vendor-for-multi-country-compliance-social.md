@@ -1,8 +1,8 @@
-Expanding from one EU market into four? Your legal team's nine-page memo isn't asking for translation — it's asking for four different compliance architectures. 🌍⚖️
+Expanding from one EU market into four? Your legal team's nine-page memo isn't asking for translation - it's asking for four different compliance architectures. 🌍⚖️
 
 **The Pain Points:**
 ❌ **"GDPR Is GDPR Everywhere":** France's CNIL has specific consent banner guidance a generic one-size-fits-all implementation frequently fails.
-❌ **Automated Scans Aren't Compliance:** They catch only 30-40% of real accessibility issues — nowhere near enough for genuine multi-country exposure.
+❌ **Automated Scans Aren't Compliance:** They catch only 30-40% of real accessibility issues - nowhere near enough for genuine multi-country exposure.
 ❌ **Data Residency As An Afterthought:** Retrofitting cross-border data architecture after launch costs far more than designing for it up front.
 
 **The Manifera Solution:**

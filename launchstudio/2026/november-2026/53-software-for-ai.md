@@ -35,7 +35,7 @@ Every decade, software engineering undergoes a tectonic shift in its foundationa
 
 In 2026, building software for AI requires a fundamentally new architecture. Attempting to run a high-traffic AI application on a traditional REST API backend backed by a standard relational database is a recipe for massive latency, astronomical cloud costs, and catastrophic security vulnerabilities.
 
-If you are a CTO architecting a new AI product—or refactoring a legacy application to support AI features—you must adopt the **AI-Native Enterprise Stack**. This stack is designed explicitly to handle high-dimensional vector mathematics, non-deterministic agentic routing, and streaming Generative UI.
+If you are a CTO architecting a new AI product - or refactoring a legacy application to support AI features - you must adopt the **AI-Native Enterprise Stack**. This stack is designed explicitly to handle high-dimensional vector mathematics, non-deterministic agentic routing, and streaming Generative UI.
 
 ## The 4 Pillars of the Enterprise AI Stack
 
@@ -66,7 +66,7 @@ Transitioning a development team from a traditional stack to the Enterprise AI S
 Directed by CEO Herre Roelevink in Amsterdam, and engineered by our systems architects in Ho Chi Minh City, we deploy the stack that scales.
 
 Our Infrastructure Implementation includes:
-1. **The Infrastructure-as-Code (IaC) Deployment:** We use Terraform to spin up your entire AI stack—the VPCs, the Supabase `pgvector` instances, the Redis semantic caches, and the LLM Gateways—ensuring your environment is secure and reproducible.
+1. **The Infrastructure-as-Code (IaC) Deployment:** We use Terraform to spin up your entire AI stack - the VPCs, the Supabase `pgvector` instances, the Redis semantic caches, and the LLM Gateways - ensuring your environment is secure and reproducible.
 2. **The Telemetry & Observability Setup:** You cannot manage what you cannot measure. We deploy **Langfuse** or **Helicone** into your backend, giving you an exact dashboard of how much money each individual user is costing you in API tokens, and allowing you to trace exactly why a specific prompt hallucinated.
 3. **Security by Default:** We configure the PII scrubbing proxies (Microsoft Presidio) and the Semantic Firewalls (NeMo Guardrails) at the network edge, ensuring your AI Stack is compliant with SOC2 and GDPR from day one.
 
@@ -93,9 +93,9 @@ Finally, they implemented a Redis Semantic Cache, so if 500 students asked the e
 **Result:** The platform stabilized immediately. The new Edge architecture handled 50,000 concurrent students the following week with zero timeouts. By utilizing the Semantic Cache and the Gateway failovers, Maria's API costs dropped by 45%, and the perceived latency for the students dropped from 15 seconds to 200 milliseconds. 
 
 > *"We tried to force AI through the pipes of a traditional web application, and the pipes burst. LaunchStudio didn't just write new code; they laid down a completely new, AI-native infrastructure. They gave us the engine we actually needed to survive enterprise scale."*
-> — **Maria Costa, CTO, StudyMind (Barcelona)**
+> - **Maria Costa, CTO, StudyMind (Barcelona)**
 
-**Cost & Timeline:** €19,500 (Launch & Grow Package with AI Infrastructure Migration Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €19,500 (Launch & Grow Package with AI Infrastructure Migration Add-on) - production-ready and deployed in 14 business days.
 
 ---
 

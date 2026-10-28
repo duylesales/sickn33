@@ -13,7 +13,7 @@ Content Format: Policy Brief
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Housing Shortage as a Labour Market Policy Problem: Why Regions Cannot Recruit Their Way Out",
-  "description": "Dutch regions run talent attraction campaigns while their housing markets make it impossible to accept the jobs on offer — and the two policy files are usually handled by different departments.",
+  "description": "Dutch regions run talent attraction campaigns while their housing markets make it impossible to accept the jobs on offer - and the two policy files are usually handled by different departments.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-27",
@@ -35,7 +35,7 @@ Content Format: Policy Brief
 }
 </script>
 
-A province launches a campaign to attract technical talent. The advertisements are good, the message is honest, and the jobs are real. A candidate responds, interviews, receives an offer — and then spends six weeks discovering that within thirty minutes of the workplace there is nothing available that a household of their size can afford or find. They decline, and the vacancy reopens.
+A province launches a campaign to attract technical talent. The advertisements are good, the message is honest, and the jobs are real. A candidate responds, interviews, receives an offer - and then spends six weeks discovering that within thirty minutes of the workplace there is nothing available that a household of their size can afford or find. They decline, and the vacancy reopens.
 
 This sequence plays out continuously across the Netherlands. In most regions, the campaign is run by one department and the housing file by another, and nobody owns the point where they meet.
 
@@ -51,7 +51,7 @@ The Dutch housing shortage is not uniform, and the parts that affect technical r
 
 **Family housing near employment is scarcest of all.** A single professional can find a room; a household with children needing three bedrooms within commuting distance of an industrial site faces a much harder search.
 
-**Temporary accommodation is the missing rung.** Without a place to stay for the first two to three months, the whole sequence — registration, bank, rental application — cannot begin.
+**Temporary accommodation is the missing rung.** Without a place to stay for the first two to three months, the whole sequence - registration, bank, rental application - cannot begin.
 
 ## Why This Is a Regional Economic Issue, Not Only a Social One
 
@@ -79,7 +79,7 @@ Housing supply cannot be conjured quickly, but several interventions are availab
 
 **Repurposing.** Vacant offices, retail and institutional buildings can be converted, and regional centres with declining retail often have more stock than they realise.
 
-**Information as a service.** A regional housing information point for newcomers — what areas exist, what they cost, how the rental process works, which agencies operate — costs little and improves conversion of job offers into accepted jobs.
+**Information as a service.** A regional housing information point for newcomers - what areas exist, what they cost, how the rental process works, which agencies operate - costs little and improves conversion of job offers into accepted jobs.
 
 **Student and starter housing.** Regions with a university of applied sciences that produces graduates and then cannot house them are training people for other regions.
 
@@ -91,7 +91,7 @@ The effect is disproportionate to the number of units. Candidates who would have
 
 The municipality's contribution was planning cooperation and speed rather than money. The employer's contribution was modest against the cost of a permanent vacancy.
 
-This model — a small pool of transitional housing linked to employment — is used in several Dutch regions and remains surprisingly rare given how well it works.
+This model - a small pool of transitional housing linked to employment - is used in several Dutch regions and remains surprisingly rare given how well it works.
 
 ## The Trade-Off Nobody Wants to State
 
@@ -99,7 +99,7 @@ There is an uncomfortable tension in regional housing debates that is worth nami
 
 Building housing to attract workers is frequently unpopular with existing residents, particularly where local young people are already on waiting lists. A municipality that visibly prioritises incoming knowledge workers over its own residents creates a legitimate grievance.
 
-The honest framing is that these are not necessarily competing objectives. The same shortage affects the local nurse, teacher, technician and the incoming data engineer, and the segment that serves all of them — mid-market rental and affordable starter homes — is the one in shortest supply. Policy that addresses that segment serves both groups.
+The honest framing is that these are not necessarily competing objectives. The same shortage affects the local nurse, teacher, technician and the incoming data engineer, and the segment that serves all of them - mid-market rental and affordable starter homes - is the one in shortest supply. Policy that addresses that segment serves both groups.
 
 What does create genuine conflict is dedicating scarce existing stock to newcomers rather than adding supply. Regions that expand the pool can serve both objectives; regions that reallocate it will face opposition they cannot argue their way out of, and should expect to.
 
@@ -125,7 +125,7 @@ Those findings are more useful than another talent attraction campaign, and cons
 
 Put your economic development and housing officers in one room with two datasets: open technical vacancies by location, and available housing within thirty minutes of each. The gaps will be specific and actionable.
 
-Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss how regional employers can present the full picture — job, commute and cost of living — to candidates considering a move.
+Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss how regional employers can present the full picture - job, commute and cost of living - to candidates considering a move.
 
 ## Frequently Asked Questions
 
@@ -136,10 +136,10 @@ Frequently housing: without available mid-market rental within a realistic commu
 Flexible and temporary accommodation, conversion of vacant buildings, and a newcomer housing information service.
 
 ### (Scenario: council facing local opposition) How do we justify housing for incoming workers?
-By addressing the segment that is scarce for everyone — mid-market rental and starter homes — rather than reallocating existing stock.
+By addressing the segment that is scarce for everyone - mid-market rental and starter homes - rather than reallocating existing stock.
 
 ### (Scenario: employer struggling to recruit) Can employers help?
-Yes — transitional housing linked to employment solves the impossible first step and is cheap relative to a permanent vacancy.
+Yes - transitional housing linked to employment solves the impossible first step and is cheap relative to a permanent vacancy.
 
 ### (Scenario: province planning policy) What analysis is missing?
 A joint view of open technical vacancies by location against housing availability within a realistic commute of each.
@@ -149,10 +149,10 @@ A joint view of open technical vacancies by location against housing availabilit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Why do candidates decline regional job offers?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently housing — without mid-market rental within a realistic commute, the job is not actually accessible."}},
+    {"@type": "Question", "name": "Why do candidates decline regional job offers?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently housing - without mid-market rental within a realistic commute, the job is not actually accessible."}},
     {"@type": "Question", "name": "What can municipalities do about housing in the short term?", "acceptedAnswer": {"@type": "Answer", "text": "Flexible and temporary accommodation, conversion of vacant buildings, and newcomer housing information services."}},
     {"@type": "Question", "name": "How can housing for incoming workers be justified locally?", "acceptedAnswer": {"@type": "Answer", "text": "By expanding the segment scarce for everyone rather than reallocating existing stock to newcomers."}},
-    {"@type": "Question", "name": "Can employers help solve the housing obstacle?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — transitional housing tied to employment solves the first step and is cheap against a long vacancy."}},
+    {"@type": "Question", "name": "Can employers help solve the housing obstacle?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - transitional housing tied to employment solves the first step and is cheap against a long vacancy."}},
     {"@type": "Question", "name": "What analysis do regions usually lack?", "acceptedAnswer": {"@type": "Answer", "text": "A joint view of open technical vacancies by location against housing available within a realistic commute."}}
   ]
 }

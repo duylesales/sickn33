@@ -1,4 +1,4 @@
-🔥 Harper bouwde een prototype met **Bolt** — Harper, een praktijkadviseur in de tandheelkunde, bouwde een geautomatiseerde planningsassistent, maar de app kon niet synchroniseren met bestaande tandartsen-software (PMS). 🧠
+🔥 Harper bouwde een prototype met **Bolt** - Harper, een praktijkadviseur in de tandheelkunde, bouwde een geautomatiseerde planningsassistent, maar de app kon niet synchroniseren met bestaande tandartsen-software (PMS). 🧠
 
 De verschuiving van generalistische horizontale chatbots naar gespecialiseerde Verticale AI-Agenten transformeert B2B SaaS met autonome digitale medewerkers en Outcome-Based pricing.
 
@@ -12,7 +12,7 @@ De verschuiving van generalistische horizontale chatbots naar gespecialiseerde V
 
 Bij **LaunchStudio** lossen we exact dit type verticale integratie en API-connectiviteitsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Harpers planningsagent werd een commercieel succes: 12 tandartspraktijken tekenden direct in de eerste week dankzij de naadloze PMS-koppeling. (€3.100 (Practice API Integration Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
+Harpers planningsagent werd een commercieel succes: 12 tandartspraktijken tekenden direct in de eerste week dankzij de naadloze PMS-koppeling. (€3.100 (Practice API Integration Pakket) - productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/rise-of-vertical-ai-agent-b2b-saas
 

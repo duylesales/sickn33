@@ -16,7 +16,7 @@ Wat uw restaurant-app écht nodig heeft vóór de eerste spits:
 ✅ Een 3-standenschakelaar (*Normaal / Druk / Zeer druk*) voor keukens om actuele levertijden realtime bij te sturen
 ✅ Pre-autorisatie van betalingen (authorize-then-capture): pas definitief incasseren bij acceptatie
 
-Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze engineers voor robuuste hardware-connectiviteit, heartbeat-monitoring en waterdichte betaalstromen — zonder uw frontend overhoop te gooien.
+Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze engineers voor robuuste hardware-connectiviteit, heartbeat-monitoring en waterdichte betaalstromen - zonder uw frontend overhoop te gooien.
 
 💡 Zo draaide lokaal bezorgplatform Buurtmaaltijd in Rotterdam direct storingsvrij tijdens de zaterdagspits, zelfs bij haperende restaurant-wifi.
 

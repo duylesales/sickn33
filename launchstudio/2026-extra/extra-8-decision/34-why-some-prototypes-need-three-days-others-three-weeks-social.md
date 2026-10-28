@@ -1,4 +1,4 @@
-⏱️ Two prototypes. Same AI tool. Same polish. One needs 3 days of hardening. The other needs 3 weeks. Here's why that's not inconsistency — it's math. 🧮
+⏱️ Two prototypes. Same AI tool. Same polish. One needs 3 days of hardening. The other needs 3 weeks. Here's why that's not inconsistency - it's math. 🧮
 
 Founders constantly misjudge their own timeline in both directions. The truth: 🧠
 
@@ -10,7 +10,7 @@ Founders constantly misjudge their own timeline in both directions. The truth: �
 ✅ What matters: what data flows through it, how many integrations, how it was built
 ✅ Sensitive data + more integrations = more surface area to verify
 ✅ A careful, prompt-by-prompt build often needs far less work than a rushed one
-✅ Only a scoping call — not a screenshot — reveals the real number
+✅ Only a scoping call - not a screenshot - reveals the real number
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we scope every project individually. No flat timelines. 📋
 

@@ -31,9 +31,9 @@ When deployed to production, the AI hallucinated confidently. It leaked executiv
 
 This is the reality of enterprise **AI solution development** in 2026. Building a demo is easy. Building a production-grade AI system is one of the most complex software engineering challenges of the decade.
 
-The number is not exaggeration. RAND Corporation's research on enterprise AI initiatives found that historically **over 80% of AI projects fail to reach meaningful production** — roughly double the failure rate of traditional (non-AI) IT projects. A 2025 MIT Media Lab NANDA study reached a strikingly similar conclusion from a different angle: despite an estimated $30–40 billion in enterprise generative AI investment, **95% of generative AI pilots produced no measurable return** on the P&L. MIT's researchers were explicit that the cause was rarely the underlying model — it was what they called "the learning gap," the failure to re-engineer the surrounding workflows, permissions, and data infrastructure the model has to live inside. That distinction is the entire premise of this article: the math researchers get right in a notebook is not the part that kills these projects.
+The number is not exaggeration. RAND Corporation's research on enterprise AI initiatives found that historically **over 80% of AI projects fail to reach meaningful production** - roughly double the failure rate of traditional (non-AI) IT projects. A 2025 MIT Media Lab NANDA study reached a strikingly similar conclusion from a different angle: despite an estimated $30–40 billion in enterprise generative AI investment, **95% of generative AI pilots produced no measurable return** on the P&L. MIT's researchers were explicit that the cause was rarely the underlying model - it was what they called "the learning gap," the failure to re-engineer the surrounding workflows, permissions, and data infrastructure the model has to live inside. That distinction is the entire premise of this article: the math researchers get right in a notebook is not the part that kills these projects.
 
-A decade-old but still definitive statement of this problem comes from Google's own machine learning engineers. In their widely cited 2015 paper "Hidden Technical Debt in Machine Learning Systems," D. Sculley and colleagues observed that "only a small fraction of real-world ML systems is composed of the ML code... the required surrounding infrastructure is vast and complex." The model is the small black box in the middle of the diagram. Everything failing in your production rollout — the RBAC layer, the ingestion pipeline, the evaluation harness — is the vast, complex "everything else" the paper warned about a decade before generative AI made the problem mainstream.
+A decade-old but still definitive statement of this problem comes from Google's own machine learning engineers. In their widely cited 2015 paper "Hidden Technical Debt in Machine Learning Systems," D. Sculley and colleagues observed that "only a small fraction of real-world ML systems is composed of the ML code... the required surrounding infrastructure is vast and complex." The model is the small black box in the middle of the diagram. Everything failing in your production rollout - the RBAC layer, the ingestion pipeline, the evaluation harness - is the vast, complex "everything else" the paper warned about a decade before generative AI made the problem mainstream.
 
 If you are transitioning an AI project from PoC to production, here are the three structural failures you must architect against.
 
@@ -79,7 +79,7 @@ If the Faithfulness score drops below 0.95, the CI/CD pipeline blocks the deploy
 
 ## Failure 4: Cost Explosion at Scale (The Token Economics Nobody Modeled)
 
-The PoC cost €40 a month in API calls. Nobody thought twice about it. Then the system went live to 3,000 employees, and the monthly OpenAI bill hit €18,000 — with no corresponding increase in value delivered. The CFO demands an explanation. The Data Scientist who built the PoC has no idea why costs scaled 450x faster than usage.
+The PoC cost €40 a month in API calls. Nobody thought twice about it. Then the system went live to 3,000 employees, and the monthly OpenAI bill hit €18,000 - with no corresponding increase in value delivered. The CFO demands an explanation. The Data Scientist who built the PoC has no idea why costs scaled 450x faster than usage.
 
 This happens because PoCs are built with zero cost discipline, and the failure mode is invisible until the invoice arrives. Three specific patterns drive the explosion:
 
@@ -90,17 +90,17 @@ This happens because PoCs are built with zero cost discipline, and the failure m
 **The Production Architecture Fix:**
 A cost-aware AI architecture routes intelligently instead of brute-forcing every query through the most expensive path:
 1. **Model routing by query complexity.** A lightweight classifier (or the cheapest available model) first triages the query. Simple factual lookups route to a small, fast model. Complex multi-step reasoning routes to the flagship model. This alone typically cuts token spend by 60-70% with no perceptible quality loss for the majority of queries.
-2. **Semantic response caching**, as described above, eliminates redundant API calls for repeated or near-duplicate questions — common in HR and IT-support style deployments where the same handful of questions account for a large share of volume.
+2. **Semantic response caching**, as described above, eliminates redundant API calls for repeated or near-duplicate questions - common in HR and IT-support style deployments where the same handful of questions account for a large share of volume.
 3. **Context window pruning**, where only the most relevant prior turns (determined via a lightweight relevance score, not the full transcript) are included in each follow-up request.
 4. **Real-time cost dashboards tied to usage attribution**, so finance can see cost-per-department and cost-per-query-type, rather than discovering the total only when the monthly invoice arrives.
 
-Without this layer, an AI system that looked free in the PoC becomes a recurring six-figure line item that nobody budgeted for — and one of the fastest ways for IT leadership to lose credibility with the CFO.
+Without this layer, an AI system that looked free in the PoC becomes a recurring six-figure line item that nobody budgeted for - and one of the fastest ways for IT leadership to lose credibility with the CFO.
 
 ## Where the ROI Actually Is (And Why Most Budgets Are Pointed the Wrong Way)
 
-The MIT NANDA study cited above contains a finding that should reorder most enterprise AI roadmaps: more than half of generative AI budgets are currently allocated to sales and marketing tools — the most visible, most demo-friendly use cases — yet the researchers found the strongest, most measurable ROI showing up in back-office automation: eliminating outsourced business processes, cutting external agency spend, and streamlining internal operations that never appear in a board presentation.
+The MIT NANDA study cited above contains a finding that should reorder most enterprise AI roadmaps: more than half of generative AI budgets are currently allocated to sales and marketing tools - the most visible, most demo-friendly use cases - yet the researchers found the strongest, most measurable ROI showing up in back-office automation: eliminating outsourced business processes, cutting external agency spend, and streamlining internal operations that never appear in a board presentation.
 
-This mismatch is not an accident; it is a predictable consequence of who greenlights AI budgets. A sales-facing chatbot is easy to demo to a board. A back-office document-processing pipeline that quietly eliminates a €40,000/year outsourced data-entry contract is not — but it is the one the RAND and MIT data both suggest actually survives contact with production.
+This mismatch is not an accident; it is a predictable consequence of who greenlights AI budgets. A sales-facing chatbot is easy to demo to a board. A back-office document-processing pipeline that quietly eliminates a €40,000/year outsourced data-entry contract is not - but it is the one the RAND and MIT data both suggest actually survives contact with production.
 
 **A five-question production-readiness filter, applied before scaling any AI PoC:**
 
@@ -108,11 +108,11 @@ This mismatch is not an accident; it is a predictable consequence of who greenli
 |---|---|---|
 | Does this use case have a metric that maps directly to cost or revenue (not "engagement")? | Deprioritize | Vague success metrics are how PoCs limp along for years without ever proving value, per the MIT "learning gap" finding |
 | Is the underlying business process already documented and stable? | Fix the process first | An AI layer automates chaos into faster chaos; it cannot fix an undocumented workflow |
-| Does IT already own the RBAC and data governance for the source systems involved? | Build this before touching the model | This is Failure 1 above — retrofitting access control after launch is the single most common cause of a pulled-plug PoC |
+| Does IT already own the RBAC and data governance for the source systems involved? | Build this before touching the model | This is Failure 1 above - retrofitting access control after launch is the single most common cause of a pulled-plug PoC |
 | Is there a named owner accountable for the tool's accuracy after launch, not just its build? | Assign one before launch | Evaluation infrastructure (Failure 3) atrophies the moment nobody is responsible for watching it |
-| Can the team articulate the cost-per-query at 10x current volume? | Model it now | This is Failure 4 — cost explosions are discovered, not planned for, in the majority of failed rollouts |
+| Can the team articulate the cost-per-query at 10x current volume? | Model it now | This is Failure 4 - cost explosions are discovered, not planned for, in the majority of failed rollouts |
 
-A use case that clears all five is a legitimate production candidate. A use case that clears zero or one is a demo — useful for building internal AI literacy, but not a €300,000 production commitment.
+A use case that clears all five is a legitimate production candidate. A use case that clears zero or one is a demo - useful for building internal AI literacy, but not a €300,000 production commitment.
 
 ## The Manifera Approach to AI Engineering
 
@@ -147,7 +147,7 @@ Because an enterprise-grade AI system is never a simple wrapper. To make it safe
 Because PoCs are built with zero cost discipline: every query, however trivial, hits the most expensive flagship model, no caching exists for repeated questions, and conversation context grows unbounded with every follow-up message. In production, you need model routing (cheap models for simple queries, flagship models only for complex reasoning), semantic caching for near-duplicate questions, and context window pruning. Together these typically cut token spend by 60-70% without a perceptible drop in answer quality.
 
 ### (Scenario: Board member questioning why the AI budget is going to a back-office tool instead of a customer-facing one) Shouldn't our AI investment go toward the most visible, customer-facing use case?
-Not according to the data. MIT's 2025 NANDA study on enterprise generative AI found that while more than half of AI budgets go toward visible sales and marketing tools, the strongest measurable ROI actually showed up in back-office automation — eliminating outsourced processes and cutting external agency costs. Visible use cases are easier to greenlight in a board meeting; back-office use cases are more likely to be the ones that still exist, and still return value, a year later.
+Not according to the data. MIT's 2025 NANDA study on enterprise generative AI found that while more than half of AI budgets go toward visible sales and marketing tools, the strongest measurable ROI actually showed up in back-office automation - eliminating outsourced processes and cutting external agency costs. Visible use cases are easier to greenlight in a board meeting; back-office use cases are more likely to be the ones that still exist, and still return value, a year later.
 
 <script type="application/ld+json">
 {

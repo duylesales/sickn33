@@ -112,9 +112,9 @@ In 3 weken tijd saneerde het Manifera-team het complete landschap:
 **Resultaat:** Marco presenteerde het LaunchStudio-gecertificeerde compliance-dossier inclusief ZDR-overeenkomsten aan de auditors. De bank keurde de nieuwe perimeter goed en de overname van €40 miljoen werd twee maanden later succesvol afgerond.
 
 > *"Ik dacht dat ik een moderne, developer-friendly CTO was door iedereen zijn eigen AI-tools te laten kiezen. Ik realiseerde me niet dat ik mijn eigen codebase juridisch aan het vergiftigen was. LaunchStudio installeerde niet alleen software, maar bouwde het compliance-fundament dat onze overname redde. Op enterprise-niveau is code een juridisch bezit."*
-> — **Marco Rossi, CTO, PayStream (Milaan)**
+> - **Marco Rossi, CTO, PayStream (Milaan)**
 
-**Kosten & Doorlooptijd:** €18.500 (Enterprise Compliance & Due Diligence Rescue Pakket) — volledig geauditeerd en operationeel binnen 3 weken.
+**Kosten & Doorlooptijd:** €18.500 (Enterprise Compliance & Due Diligence Rescue Pakket) - volledig geauditeerd en operationeel binnen 3 weken.
 
 ---
 

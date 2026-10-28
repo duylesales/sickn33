@@ -1,4 +1,4 @@
-🔥 Alexander built a prototype using **Bolt** — alexander, a startup founder, used **bolt** to build a venture deal flow portal prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Alexander built a prototype using **Bolt** - alexander, a startup founder, used **bolt** to build a venture deal flow portal prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Alexander's application achieved production readiness: Alexander secured the portal with HTTPS, resolving browser security warning alerts for visitors. (€800 (Domain Configuration Package) — production-ready and deployed in 2 business days.). 🚀
+Alexander's application achieved production readiness: Alexander secured the portal with HTTPS, resolving browser security warning alerts for visitors. (€800 (Domain Configuration Package) - production-ready and deployed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/connecting-custom-domain-vercel-netlify
 

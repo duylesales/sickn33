@@ -1,6 +1,6 @@
 🚨 A district's data protection officer asked ONE question in the procurement call: "Can students see each other's grades?" She genuinely didn't know. 😳
 
-EdTech faces a stricter bar than most AI-generated apps — the users are minors, the data is academic records, and the buyer has its own compliance obligations. Here's what that means: 🧠
+EdTech faces a stricter bar than most AI-generated apps - the users are minors, the data is academic records, and the buyer has its own compliance obligations. Here's what that means: 🧠
 
 ❌ Role separation built only at the interface, not verified at the API
 ❌ A "class progress" feature added later, never re-checked for access control
@@ -8,7 +8,7 @@ EdTech faces a stricter bar than most AI-generated apps — the users are minors
 ❌ A privacy policy that doesn't match the actual code is worse than no policy at all
 
 ✅ Access control has to be verified at every endpoint, not just the main flow
-✅ Documentation should describe what the system verifiably does — not intentions
+✅ Documentation should describe what the system verifiably does - not intentions
 ✅ School procurement is a fixed gate, not friction to route around
 ✅ None of this requires touching the teaching logic or student experience
 

@@ -41,7 +41,7 @@ De klassieke AI-gegenereerde flow: lees hoeveel kaarten er nog zijn, controleer 
 
 ## Beslissing 2: Hoe Lang Worden Kaarten Vastgehouden Tijdens de Checkout?
 
-Wanneer een koper de checkout start, moeten zijn kaarten worden vastgehouden zodat niemand anders ze kan kopen — maar niet voor altijd, anders blokkeren afgebroken checkouts de voorraad tijdens de drukte.
+Wanneer een koper de checkout start, moeten zijn kaarten worden vastgehouden zodat niemand anders ze kan kopen - maar niet voor altijd, anders blokkeren afgebroken checkouts de voorraad tijdens de drukte.
 
 **De beslissing:** houd vast voor een vastgestelde tijd (vaak 8–15 minuten), toon een aftelklok, geef automatisch vrij bij verloop en handel het randgeval af waarin de betaling net na het verlopen van de reservering wordt voltooid. Dat laatste geval vraagt om een regel: honoreer de betaling als er nog stoelen zijn, betaal automatisch terug als dat niet zo is.
 
@@ -49,11 +49,11 @@ Wanneer een koper de checkout start, moeten zijn kaarten worden vastgehouden zod
 
 Voor kleine evenementen zijn atomaire voorraad en reserveringen misschien genoeg. Voor evenementen waarbij de vraag het aanbod ver overtreft, overbelast het tegelijk toelaten van iedereen tot de checkout de database en de betaalkoppeling, en levert het een frustrerende ervaring op.
 
-**De beslissing:** overweeg een wachtkamer — kopers worden in een wachtrij geplaatst en in groepen toegelaten in een tempo dat het systeem aankan. Dit kan een beheerde dienst zijn of een eenvoudige implementatie met een snelle key-value store. Hoe dan ook verandert het een stormloop in een rij.
+**De beslissing:** overweeg een wachtkamer - kopers worden in een wachtrij geplaatst en in groepen toegelaten in een tempo dat het systeem aankan. Dit kan een beheerde dienst zijn of een eenvoudige implementatie met een snelle key-value store. Hoe dan ook verandert het een stormloop in een rij.
 
 ## Beslissing 4: Hoe Worden Betalingen onder Belasting Bevestigd?
 
-Betaalaanbieders kunnen goed tegen belasting; het risico zit in hoe uw app hun antwoorden verwerkt. Bevestiging via de browser faalt als duizenden kopers tegelijk worden doorgestuurd en sommigen nooit terugkeren. Webhooks moeten worden geverifieerd, idempotent worden verwerkt (aanbieders proberen opnieuw) en snel worden afgehandeld — idealiter door ze in een wachtrij te plaatsen en op de achtergrond te verwerken — zodat een uitbarsting van bevestigingen niet in een time-out loopt.
+Betaalaanbieders kunnen goed tegen belasting; het risico zit in hoe uw app hun antwoorden verwerkt. Bevestiging via de browser faalt als duizenden kopers tegelijk worden doorgestuurd en sommigen nooit terugkeren. Webhooks moeten worden geverifieerd, idempotent worden verwerkt (aanbieders proberen opnieuw) en snel worden afgehandeld - idealiter door ze in een wachtrij te plaatsen en op de achtergrond te verwerken - zodat een uitbarsting van bevestigingen niet in een time-out loopt.
 
 ## Beslissing 5: Hoe Gaat U om met Bots en Wederverkopers?
 
@@ -106,7 +106,7 @@ WHERE event_id = $2 AND seat_id = ANY($3) AND status = 'free';
 COMMIT;
 ```
 
-Nadat de betaling via een webhook is bevestigd, gaan de vastgehouden stoelen voor die bestelling naar `sold`. Een geplande taak geeft elke minuut verlopen reserveringen vrij. Omdat de statuscontrole en de update in één statement gebeuren, kunnen twee kopers nooit dezelfde stoel vasthouden — hoeveel er ook in dezelfde seconde binnenkomen.
+Nadat de betaling via een webhook is bevestigd, gaan de vastgehouden stoelen voor die bestelling naar `sold`. Een geplande taak geeft elke minuut verlopen reserveringen vrij. Omdat de statuscontrole en de update in één statement gebeuren, kunnen twee kopers nooit dezelfde stoel vasthouden - hoeveel er ook in dezelfde seconde binnenkomen.
 
 ## De Wachtkamer Ontwerpen
 
@@ -114,7 +114,7 @@ Een wachtkamer beschermt zowel het systeem als de ervaring van de koper. Belangr
 
 ## Botverdediging in Verhouding
 
-Zware antibotsystemen voegen frictie toe voor echte fans. Een evenredige aanpak stapelt eenvoudige maatregelen: aankooplimieten per account, betaalkaart en adres; rate limits per IP en sessie; CAPTCHA-uitdagingen alleen bij verdachte patronen; geverifieerde accounts (e-mail plus telefoon) voor evenementen met veel vraag; en kaarten op naam met overdracht via het platform waar doorverkoop een zorg is. Monitor aankooppatronen na elke verkoopstart — clusters van accounts die kaarten of adressen delen, laten zien wat de verdediging miste.
+Zware antibotsystemen voegen frictie toe voor echte fans. Een evenredige aanpak stapelt eenvoudige maatregelen: aankooplimieten per account, betaalkaart en adres; rate limits per IP en sessie; CAPTCHA-uitdagingen alleen bij verdachte patronen; geverifieerde accounts (e-mail plus telefoon) voor evenementen met veel vraag; en kaarten op naam met overdracht via het platform waar doorverkoop een zorg is. Monitor aankooppatronen na elke verkoopstart - clusters van accounts die kaarten of adressen delen, laten zien wat de verdediging miste.
 
 ## Terugbetalingen, Annuleringen en Wijzigingen van Evenementen
 
@@ -126,15 +126,15 @@ De verkoopstart is maar de helft van het probleem; de deur is de andere helft. Q
 
 ## Loadtesten Die de Werkelijkheid Weerspiegelen
 
-Loadtests moeten echt gedrag bij een verkoopstart nabootsen: duizenden gebruikers die in de eerste minuut binnenkomen, de evenementpagina verversen, de wachtkamer betreden, stoelen vasthouden en betalen — met een realistisch aandeel dat de checkout afbreekt. Test met datavolumes zoals in productie op staging, meet databaselocks en het gebruik van verbindingen, en herhaal na belangrijke wijzigingen. Het doel is niet één indrukwekkend getal, maar vertrouwen dat de specifieke verkoopstart die u gaat draaien zich zal gedragen zoals verwacht.
+Loadtests moeten echt gedrag bij een verkoopstart nabootsen: duizenden gebruikers die in de eerste minuut binnenkomen, de evenementpagina verversen, de wachtkamer betreden, stoelen vasthouden en betalen - met een realistisch aandeel dat de checkout afbreekt. Test met datavolumes zoals in productie op staging, meet databaselocks en het gebruik van verbindingen, en herhaal na belangrijke wijzigingen. Het doel is niet één indrukwekkend getal, maar vertrouwen dat de specifieke verkoopstart die u gaat draaien zich zal gedragen zoals verwacht.
 
 ## Communiceren met Fans Tijdens de Drukte
 
-Duidelijke communicatie vermindert zowel frustratie als belasting. Kondig de verkoopstart en de wachtkamer vooraf aan; laat kopers hun positie zien en wat er daarna gebeurt; toon de resterende beschikbaarheid eerlijk (of helemaal niet, liever dan onjuist); leg de reserveringstimers in de checkout uit; en verstuur bevestigingsmails snel via een transactionele aanbieder die de piek aankan. Is een evenement uitverkocht, zeg dat dan direct en verwijs naar een wachtlijst — kopers die een uitverkochte pagina blijven verversen, veroorzaken belasting en teleurstelling.
+Duidelijke communicatie vermindert zowel frustratie als belasting. Kondig de verkoopstart en de wachtkamer vooraf aan; laat kopers hun positie zien en wat er daarna gebeurt; toon de resterende beschikbaarheid eerlijk (of helemaal niet, liever dan onjuist); leg de reserveringstimers in de checkout uit; en verstuur bevestigingsmails snel via een transactionele aanbieder die de piek aankan. Is een evenement uitverkocht, zeg dat dan direct en verwijs naar een wachtlijst - kopers die een uitverkochte pagina blijven verversen, veroorzaken belasting en teleurstelling.
 
 ## Rapporten Die Zalen na de Verkoopstart Nodig Hebben
 
-Zalen en promotors willen weten hoe de verkoop is verlopen: verkochte kaarten per minuut, maximale lengte van de wachtrij, conversie van wachtkamer naar aankoop, afgebroken reserveringen, gebruikte betaalmethoden en geactiveerde aankooplimieten. Deze rapporten helpen hen de capaciteit, prijzen en marketing van het volgende evenement te plannen — en ze laten zien dat uw platform de drukste minuut van hun jaar beheerst en betrouwbaar heeft afgehandeld.
+Zalen en promotors willen weten hoe de verkoop is verlopen: verkochte kaarten per minuut, maximale lengte van de wachtrij, conversie van wachtkamer naar aankoop, afgebroken reserveringen, gebruikte betaalmethoden en geactiveerde aankooplimieten. Deze rapporten helpen hen de capaciteit, prijzen en marketing van het volgende evenement te plannen - en ze laten zien dat uw platform de drukste minuut van hun jaar beheerst en betrouwbaar heeft afgehandeld.
 
 ## De Verkoopstart Draaien Als een Evenement
 
@@ -142,7 +142,7 @@ Behandel elke verkoopstart met veel vraag als een operationeel evenement, met ee
 
 ## Waar LaunchStudio Past
 
-Het ticketingwerk van LaunchStudio omvat atomaire voorraad, reserveringen, verwerking van webhooks, caching, botverdediging en waar nodig een wachtkamer, gevolgd door een loadtest en monitoring — onder de interface die u al bouwde. Met beheerde hosting voor € 49 per maand worden verkoopstartdagen bewaakt in plaats van doorstaan op hoop.
+Het ticketingwerk van LaunchStudio omvat atomaire voorraad, reserveringen, verwerking van webhooks, caching, botverdediging en waar nodig een wachtkamer, gevolgd door een loadtest en monitoring - onder de interface die u al bouwde. Met beheerde hosting voor € 49 per maand worden verkoopstartdagen bewaakt in plaats van doorstaan op hoop.
 
 LaunchStudio wordt ondersteund door Manifera, wiens 120+ engineers in Ho Chi Minh-stad, Singapore en Amsterdam systemen hebben gebouwd voor grote klanten als Vodafone, waar belasting en betrouwbaarheid niet onderhandelbaar zijn. Zie voor meer over de engineeringaanpak van Manifera [de technologiepagina van Manifera](https://www.manifera.com/about-us/manifera-technologies/). De [PostgreSQL-documentatie over expliciete locking](https://www.postgresql.org/docs/current/explicit-locking.html) legt de databasekant van voorraadbeheer uit.
 
@@ -158,12 +158,12 @@ Toen een bekende Nederlandse band een intieme show aankondigde in een zaal met 4
 
 De engineers van LaunchStudio modelleerden elke stoel als een rij met een unique constraint op reservering/bestelling, voegden reserveringen van 10 minuten toe met automatische vrijgave en een regel voor late betalingen, verplaatsten Mollie-webhooks naar een geverifieerde, idempotente wachtrij, cachten evenementpagina's met een licht endpoint voor beschikbaarheid, voegden een wachtkamer toe voor evenementen die als veelgevraagd zijn gemarkeerd, voerden limieten per account en per kaart in met rate limiting, en draaiden vóór de volgende grote verkoopstart van de zaal een loadtest met 10.000 gesimuleerde kopers tegen staging.
 
-**Resultaat:** De volgende uitverkochte show van de zaal — 450 stoelen, zo'n 7.500 kopers in de eerste minuut — was in vier minuten uitverkocht, zonder overboeking, zonder niet-uitgegeven kaarten en zonder één account dat meer dan vier kaarten kocht. Zaalkaart heeft sindsdien negen zalen toegevoegd, waarvan verschillende die verkoopstart noemen.
+**Resultaat:** De volgende uitverkochte show van de zaal - 450 stoelen, zo'n 7.500 kopers in de eerste minuut - was in vier minuten uitverkocht, zonder overboeking, zonder niet-uitgegeven kaarten en zonder één account dat meer dan vier kaarten kocht. Zaalkaart heeft sindsdien negen zalen toegevoegd, waarvan verschillende die verkoopstart noemen.
 
 > *"Ticketing is het enige vak waarin je slechtste dag en je beste dag dezelfde minuut zijn. De app moet voor die minuut gebouwd zijn."*
-> — **Kevin Oosterhuis, Oprichter, Zaalkaart (Amsterdam)**
+> - **Kevin Oosterhuis, Oprichter, Zaalkaart (Amsterdam)**
 
-**Kosten & Tijdlijn:** € 4.800 (Launch & Grow-pakket: voorraad, reserveringen, wachtrij, betalingen, botverdediging en loadtesten) — afgerond in 14 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 4.800 (Launch & Grow-pakket: voorraad, reserveringen, wachtrij, betalingen, botverdediging en loadtesten) - afgerond in 14 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
@@ -185,7 +185,7 @@ Manifera heeft systemen gebouwd waarin belasting en betrouwbaarheid contractueel
 
 ### Kan een betrouwbaar ticketingplatform de vindbaarheid van evenementen verbeteren?
 
-Ja. Evenementpagina's met gestructureerde data (naam van het evenement, datum, zaal, beschikbaarheid) worden door zoekmachines en AI-assistenten gebruikt om vragen als "wat is er dit weekend te doen" te beantwoorden — maar alleen als ze snel en betrouwbaar laden.
+Ja. Evenementpagina's met gestructureerde data (naam van het evenement, datum, zaal, beschikbaarheid) worden door zoekmachines en AI-assistenten gebruikt om vragen als "wat is er dit weekend te doen" te beantwoorden - maar alleen als ze snel en betrouwbaar laden.
 
 <script type="application/ld+json">
 {

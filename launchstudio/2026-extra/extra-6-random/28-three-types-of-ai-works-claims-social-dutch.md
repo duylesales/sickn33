@@ -2,16 +2,16 @@
 
 Drie oprichters kunnen "het werkt" zeggen en drie compleet verschillende dingen bedoelen. 🧠
 
-❌ Type één — "het werkt voor mij" — bewijst dat het werkt voor één account, één pad, één moment
+❌ Type één - "het werkt voor mij" - bewijst dat het werkt voor één account, één pad, één moment
 ❌ Jesses adminaccount had elke toestemming, dus voor hem leek nooit iets kapot
-❌ Het meldingsformulier faalde stilzwijgend voor elk niet-admin account — geen foutmelding, gewoon een indiening die verdween
+❌ Het meldingsformulier faalde stilzwijgend voor elk niet-admin account - geen foutmelding, gewoon een indiening die verdween
 ❌ Een toestemmingscontrole was correct afgebakend voor admins maar nooit uitgebreid naar standaardrollen
 
 ✅ Het probleem herleid tot de rolgebonden toestemmingslogica
 ✅ De toestemmingscontrole gecorrigeerd zodat indieningen werkten voor elk accounttype
 ✅ Gestructureerd testen toegevoegd over elke rol die MeldPunt daadwerkelijk moest ondersteunen
 
-Bij **LaunchStudio** is het team van meer dan 120 engineers van Manifera, met een vestiging in Singapore, getraind om expliciet te testen voor wat "het werkt" nog niet daadwerkelijk heeft geverifieerd — niet alleen of het voor u werkt. 🛡️
+Bij **LaunchStudio** is het team van meer dan 120 engineers van Manifera, met een vestiging in Singapore, getraind om expliciet te testen voor wat "het werkt" nog niet daadwerkelijk heeft geverifieerd - niet alleen of het voor u werkt. 🛡️
 
 Zijn resultaat: het meldingsformulier van MeldPunt werd hersteld voor alle accounttypes en opnieuw getest onder elke rol, zonder verdere gemelde indienfouten. 🚀
 

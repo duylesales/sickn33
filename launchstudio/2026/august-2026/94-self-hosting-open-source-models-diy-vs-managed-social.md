@@ -1,6 +1,6 @@
-🖥️ Felix built a document-analysis SaaS with **Lovable** — self-hosting an open-source model looked like an obvious win on a spreadsheet, until GPU outages and unpatched servers ate the savings. 🧠
+🖥️ Felix built a document-analysis SaaS with **Lovable** - self-hosting an open-source model looked like an obvious win on a spreadsheet, until GPU outages and unpatched servers ate the savings. 🧠
 
-If your DIY self-hosting comparison only looks at per-token cost, it's missing GPU availability risk, inference optimization, security patching, and failover — the real drivers of total cost.
+If your DIY self-hosting comparison only looks at per-token cost, it's missing GPU availability risk, inference optimization, security patching, and failover - the real drivers of total cost.
 
 ❌ A single unmonitored GPU instance with no automatic failover
 ❌ An inference server frozen at day-one software with no patch plan
@@ -12,7 +12,7 @@ If your DIY self-hosting comparison only looks at per-token cost, it's missing G
 
 At **LaunchStudio**, we've been fixing exactly this class of infrastructure problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Felix cut his effective inference cost by roughly 60% versus his original API bill — with zero unplanned downtime. (€3,400 (Relaunch & Scale Package) — 11 business days.) 🚀
+Felix cut his effective inference cost by roughly 60% versus his original API bill - with zero unplanned downtime. (€3,400 (Relaunch & Scale Package) - 11 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/self-hosting-open-source-models-diy-vs-managed
 

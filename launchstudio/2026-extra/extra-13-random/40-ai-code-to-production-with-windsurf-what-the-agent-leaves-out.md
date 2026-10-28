@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Code to Production With Windsurf: What the Agent Leaves Out",
-  "description": "Windsurf's agentic workflow can build large parts of an app autonomously. This article covers what that agent typically leaves out when you take AI code to production: environment separation, secrets, auth boundaries, migrations, dependency sprawl and observability — and how to close each gap.",
+  "description": "Windsurf's agentic workflow can build large parts of an app autonomously. This article covers what that agent typically leaves out when you take AI code to production: environment separation, secrets, auth boundaries, migrations, dependency sprawl and observability - and how to close each gap.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-09",
@@ -21,13 +21,13 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Windsurf changed how many technical founders build. Instead of accepting suggestions line by line, you describe a feature and its agent plans, edits multiple files, runs commands, reads errors and iterates. Whole features appear in one session. That autonomy is precisely what makes it productive — and what makes the gap between "it runs" and "it's ready" harder to see. When you take Windsurf-built AI code to production, you are reviewing work that you watched happen but did not do.
+Windsurf changed how many technical founders build. Instead of accepting suggestions line by line, you describe a feature and its agent plans, edits multiple files, runs commands, reads errors and iterates. Whole features appear in one session. That autonomy is precisely what makes it productive - and what makes the gap between "it runs" and "it's ready" harder to see. When you take Windsurf-built AI code to production, you are reviewing work that you watched happen but did not do.
 
 This article covers what Windsurf's agent typically leaves out, why, and how to close each gap.
 
 ## Why Agentic Tools Leave Different Gaps
 
-Autocomplete tools leave gaps at the level of lines: a missing check here, a hard-coded value there. Agentic tools leave gaps at the level of systems. An agent optimises for making the task succeed in the environment it can see: your local machine, your dev database, your `.env` file. Its success signal is "the command ran, the page loaded, the test passed." Anything that only matters in a different environment — production, other users, other time zones, attackers — is outside its feedback loop.
+Autocomplete tools leave gaps at the level of lines: a missing check here, a hard-coded value there. Agentic tools leave gaps at the level of systems. An agent optimises for making the task succeed in the environment it can see: your local machine, your dev database, your `.env` file. Its success signal is "the command ran, the page loaded, the test passed." Anything that only matters in a different environment - production, other users, other time zones, attackers - is outside its feedback loop.
 
 The agent also runs commands. It installs packages, runs migrations and sometimes modifies configuration. Those actions persist beyond the session in ways that are easy to miss in a long diff.
 
@@ -39,7 +39,7 @@ Agents build against whatever environment is configured. Often that is one Supab
 
 ## Gap 2: Secrets Where the Agent Needed Them
 
-When an agent hits an authentication error calling an API, a common fix is to place the key where the code can reach it — sometimes in client-side code, sometimes in a config file that gets committed. The agent's goal was to make the call work; it did.
+When an agent hits an authentication error calling an API, a common fix is to place the key where the code can reach it - sometimes in client-side code, sometimes in a config file that gets committed. The agent's goal was to make the call work; it did.
 
 **Close it:** scan the repository and history for secrets (gitleaks or trufflehog), rotate any found, move all secrets to server-side environment variables and add secret scanning to CI.
 
@@ -51,7 +51,7 @@ Agents implement login flows well because they are well-documented patterns. Wha
 
 ## Gap 4: Migrations Applied, Not Managed
 
-Agents often modify the schema directly — running SQL in a session, or generating migrations and applying them immediately. The result can be a database whose state is not fully described by the migration files in the repository, making it impossible to recreate staging or production reliably.
+Agents often modify the schema directly - running SQL in a session, or generating migrations and applying them immediately. The result can be a database whose state is not fully described by the migration files in the repository, making it impossible to recreate staging or production reliably.
 
 **Close it:** reconcile the actual schema with migration files, commit a clean baseline, and from then on apply schema changes only through reviewed migrations in the deployment pipeline.
 
@@ -63,7 +63,7 @@ Every time an agent solves a problem by installing a package, your dependency tr
 
 ## Gap 6: Errors Handled for the Session, Not for Users
 
-When an agent encounters an error during its loop, it fixes it — sometimes by adding a `try/catch` that makes the error disappear. The session succeeds; in production, failures are swallowed silently.
+When an agent encounters an error during its loop, it fixes it - sometimes by adding a `try/catch` that makes the error disappear. The session succeeds; in production, failures are swallowed silently.
 
 **Close it:** review error handling, route unexpected errors to an error-tracking service, and ensure users see meaningful messages rather than silent failure.
 
@@ -79,7 +79,7 @@ None of this means you should stop using Windsurf. It means giving the agent gua
 
 - **Rules files** describing environments, secret handling and your authorisation model.
 - **CI that the agent cannot bypass**: type checks, tests including negative authorisation tests, secret scanning and dependency checks on every pull request.
-- **Reviewing command history**, not just diffs — what did the agent run?
+- **Reviewing command history**, not just diffs - what did the agent run?
 - **No production credentials** on the machine where the agent works.
 
 With those in place, the agent's speed becomes an advantage rather than a liability.
@@ -88,7 +88,7 @@ With those in place, the agent's speed becomes an advantage rather than a liabil
 
 When taking Windsurf-built AI code to production, the first step is understanding what the agent actually did across sessions. Sources to reconstruct it:
 
-- **Git history:** commit messages, file changes and — importantly — added or modified configuration files, migrations and dependency manifests.
+- **Git history:** commit messages, file changes and - importantly - added or modified configuration files, migrations and dependency manifests.
 - **The agent's terminal history** where available: installed packages, executed scripts, database commands.
 - **Database state versus migration files:** compare the live schema with what the migrations would produce; differences reveal manual or agent-run changes.
 - **Environment variables** in each environment and on your machine.
@@ -125,11 +125,11 @@ Agents solve problems by installing packages, and each package brings maintenanc
 
 ## Observability for Agent-Built Apps
 
-Agent-built apps benefit from slightly more observability than hand-built ones, because fewer people understand every path. Add request IDs to logs, report all unexpected errors to an error tracker, alert on new error types after each release and track key business events (signups, payments, core actions) so a silent break shows up as a drop in a chart. When something goes wrong, this data lets you — or the agent — find the cause quickly instead of guessing.
+Agent-built apps benefit from slightly more observability than hand-built ones, because fewer people understand every path. Add request IDs to logs, report all unexpected errors to an error tracker, alert on new error types after each release and track key business events (signups, payments, core actions) so a silent break shows up as a drop in a chart. When something goes wrong, this data lets you - or the agent - find the cause quickly instead of guessing.
 
 ## Measuring Whether the Guardrails Work
 
-Track a few signals over time: how often CI blocks agent pull requests and why, how many production incidents trace back to agent changes, and how long it takes from a problem appearing to a fix. A healthy setup shows CI catching issues regularly and production incidents becoming rare — evidence that agentic speed and production safety can coexist.
+Track a few signals over time: how often CI blocks agent pull requests and why, how many production incidents trace back to agent changes, and how long it takes from a problem appearing to a fix. A healthy setup shows CI catching issues regularly and production incidents becoming rare - evidence that agentic speed and production safety can coexist.
 
 ## A Windsurf Rules File Example
 
@@ -154,11 +154,11 @@ There are moments when it is wise to pause autonomous agent sessions: during an 
 
 ## The Balance to Aim For
 
-The goal is not to slow the agent down but to let it run fast on a track with barriers. With environments separated, rules written, CI enforcing checks and observability in place, Windsurf remains one of the fastest ways to build — and AI code to production becomes a routine rather than a gamble.
+The goal is not to slow the agent down but to let it run fast on a track with barriers. With environments separated, rules written, CI enforcing checks and observability in place, Windsurf remains one of the fastest ways to build - and AI code to production becomes a routine rather than a gamble.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's work on Windsurf-built apps follows the seven gaps above: environment separation, secret rotation, authorisation, migration reconciliation, dependency clean-up, error handling and observability, plus CI guardrails for continued agentic development. The frontend and features you built stay. The engineering comes from Manifera — LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy — with engineers in Ho Chi Minh City and European contact at Herengracht 420, Amsterdam. For the broader toolset, see [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/); for secret scanning, [gitleaks](https://github.com/gitleaks/gitleaks) is a solid open-source starting point.
+LaunchStudio's work on Windsurf-built apps follows the seven gaps above: environment separation, secret rotation, authorisation, migration reconciliation, dependency clean-up, error handling and observability, plus CI guardrails for continued agentic development. The frontend and features you built stay. The engineering comes from Manifera - LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy - with engineers in Ho Chi Minh City and European contact at Herengracht 420, Amsterdam. For the broader toolset, see [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/); for secret scanning, [gitleaks](https://github.com/gitleaks/gitleaks) is a solid open-source starting point.
 
 If your app was mostly built by an agent, [send us your repository link](https://launchstudio.eu/en/#contact) and we will tell you which gaps apply.
 
@@ -175,15 +175,15 @@ Over nine business days, the team separated development, staging and production 
 **Result:** Stallenlog has continued to be developed almost entirely with Windsurf, now through pull requests guarded by CI. It grew to 58 stables in the following six months, with no further test-data leaks or cross-stable exposure.
 
 > *"The agent built the app faster than I could have. It also ran my seed script on production, because nothing told it not to. Now something does."*
-> — **Arjen Wolters, Founder, Stallenlog (Assen)**
+> - **Arjen Wolters, Founder, Stallenlog (Assen)**
 
-**Cost & Timeline:** €2,500 (Launch Ready package: environments, secrets, authorisation, migrations, dependencies, observability and CI guardrails) — completed in 9 business days.
+**Cost & Timeline:** €2,500 (Launch Ready package: environments, secrets, authorisation, migrations, dependencies, observability and CI guardrails) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
 ### Is Windsurf-generated code less secure than code from other AI tools?
 
-Not inherently. Agentic tools produce different kinds of gaps — system-level rather than line-level — because they act autonomously in one environment. The same gaps appear with other agentic tools.
+Not inherently. Agentic tools produce different kinds of gaps - system-level rather than line-level - because they act autonomously in one environment. The same gaps appear with other agentic tools.
 
 ### How do I stop an AI agent from running commands against production?
 
@@ -195,7 +195,7 @@ Review diffs for scope and sensitive areas, and also review the commands the age
 
 ### What does Manifera's experience add to agent-built codebases?
 
-Manifera's engineers are used to taking over codebases written by others and establishing structure — environments, pipelines, tests — around them. Agent-built code is a new variant of a familiar task.
+Manifera's engineers are used to taking over codebases written by others and establishing structure - environments, pipelines, tests - around them. Agent-built code is a new variant of a familiar task.
 
 ### Does agentic development affect SEO or AI discoverability?
 

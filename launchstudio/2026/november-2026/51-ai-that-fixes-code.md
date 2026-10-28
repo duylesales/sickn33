@@ -37,7 +37,7 @@ This was a massive leap in productivity, but it was still inherently manual. The
 
 In 2026, enterprise engineering teams are abandoning the auto-complete paradigm. They are transitioning to the second era of AI software engineering: **Auto-Remediation**. 
 
-CTOs are no longer looking for an AI that just types faster; they are looking for an AI that fixes code autonomously. We have moved from AI as a "tool" to AI as an "agentic contributor"—an entity that can read a Jira ticket, clone a repository, navigate a million-line codebase, find the bug, run the test suite, and submit a Pull Request without human intervention.
+CTOs are no longer looking for an AI that just types faster; they are looking for an AI that fixes code autonomously. We have moved from AI as a "tool" to AI as an "agentic contributor" - an entity that can read a Jira ticket, clone a repository, navigate a million-line codebase, find the bug, run the test suite, and submit a Pull Request without human intervention.
 
 ## The Mechanics of Auto-Remediation
 
@@ -89,9 +89,9 @@ They built an automated webhook: Whenever the Customer Support team moved a Jira
 The entire process took 4 minutes, and zero human engineering time was spent writing code. Thomas's team went from spending 40% of their time on bug fixes to just 5% (the time required to review the AI's Pull Requests). Engineering velocity skyrocketed, and they shipped their new tax-calculation module three weeks ahead of schedule.
 
 > *"We were treating our senior engineers like highly-paid janitors, forcing them to clean up minor syntax messes every day. LaunchStudio built us a robotic janitor. The AI doesn't just suggest code anymore; it actively clears our Jira backlog while we sleep. It completely changed the economics of our engineering department."*
-> — **Thomas Berglund, VP of Engineering, PayFlow (Stockholm)**
+> - **Thomas Berglund, VP of Engineering, PayFlow (Stockholm)**
 
-**Cost & Timeline:** €16,500 (Launch & Grow Package with Agentic CI/CD Orchestration Add-on) — production-ready and deployed in 20 business days.
+**Cost & Timeline:** €16,500 (Launch & Grow Package with Agentic CI/CD Orchestration Add-on) - production-ready and deployed in 20 business days.
 
 ---
 

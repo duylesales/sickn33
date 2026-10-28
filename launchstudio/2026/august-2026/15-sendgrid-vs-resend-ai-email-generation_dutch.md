@@ -99,7 +99,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam migreerde
 
 **Resultaat:** De deliverability steeg naar 99,8%, waardoor zakelijke klanten hun factuuroverzichten direct in de inbox ontvingen.
 
-**Kosten & tijdlijn:** €950 (Email Delivery Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €950 (Email Delivery Pakket) - productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 

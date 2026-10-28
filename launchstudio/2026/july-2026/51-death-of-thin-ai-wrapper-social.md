@@ -1,4 +1,4 @@
-🔥 Dominic built a prototype using **Cursor** — dominic, a startup founder, used **cursor** to build a legal document search tool prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Dominic built a prototype using **Cursor** - dominic, a startup founder, used **cursor** to build a legal document search tool prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Dominic's application achieved production readiness: Dominic improved document search accuracy by 85%, securing high satisfaction scores from law firm clients. (€3,600 (Vector Integration Package) — production-ready and deployed in 10 business days.). 🚀
+Dominic's application achieved production readiness: Dominic improved document search accuracy by 85%, securing high satisfaction scores from law firm clients. (€3,600 (Vector Integration Package) - production-ready and deployed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/death-of-thin-ai-wrapper
 

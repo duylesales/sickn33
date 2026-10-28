@@ -1,4 +1,4 @@
-🔄 Marieke's developmentfacturen voor haar **Lovable** app stegen in maand 11 met 40% — zonder dat er meer werd opgeleverd. Haar contractverlenging naderde, maar ze twijfelde. 📉
+🔄 Marieke's developmentfacturen voor haar **Lovable** app stegen in maand 11 met 40% - zonder dat er meer werd opgeleverd. Haar contractverlenging naderde, maar ze twijfelde. 📉
 
 Inertie houdt veel oprichters vast aan bureaus uit jaar 1. Maar de vaardigheden voor een snel prototype sluiten zelden aan op de security- en schaaleisen van jaar 2.
 
@@ -12,7 +12,7 @@ Inertie houdt veel oprichters vast aan bureaus uit jaar 1. Maar de vaardigheden 
 
 Bij LaunchStudio auditen en versterken we bestaande codebases met vaste sprintprijzen, zonder doorlopende regiecontracten. 🛠️
 
-Marieke bespaarde € 1.800/maand en kreeg een geharde, geteste architectuur binnen 10 dagen. (€ 3.200 (Relaunch & Scale Pakket) — 10 werkdagen.) 🚀
+Marieke bespaarde € 1.800/maand en kreeg een geharde, geteste architectuur binnen 10 dagen. (€ 3.200 (Relaunch & Scale Pakket) - 10 werkdagen.) 🚀
 
 👉 Lees het besliskader: https://launchstudio.eu/nl/blog/contract-renewal-vs-switching-dev-partners
 

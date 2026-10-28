@@ -6,11 +6,11 @@
 ❌ **A Credibility Hit:** Skipping the structured comparison damages the CTO's standing on the next budget request.
 
 **The Manifera Solution:**
-✅ **Five Variables, Honestly Compared:** Cost, speed to start, scalability, risk profile, and communication — with the risk gap narrowing sharply once governance is accounted for.
+✅ **Five Variables, Honestly Compared:** Cost, speed to start, scalability, risk profile, and communication - with the risk gap narrowing sharply once governance is accounted for.
 ✅ **Amsterdam Strategic Governance:** The same EU-familiar legal recourse as a Dutch outsourcing company, plus contracted continuity.
-✅ **Vietnam Execution Velocity:** Equivalent seniority at €250-€400/day vs. €650-€950/day — a durable 45-60% reduction, not a one-time discount.
+✅ **Vietnam Execution Velocity:** Equivalent seniority at €250-€400/day vs. €650-€950/day - a durable 45-60% reduction, not a one-time discount.
 
-The risk gap narrows under proper governance — it doesn't vanish, but it's much smaller than assumed. 🛡️
+The risk gap narrows under proper governance - it doesn't vanish, but it's much smaller than assumed. 🛡️
 
 👉 Read our full deep dive on software outsourcing netherlands vs vietnam: https://www.manifera.com/blog/software-outsourcing-netherlands-vs-vietnam
 

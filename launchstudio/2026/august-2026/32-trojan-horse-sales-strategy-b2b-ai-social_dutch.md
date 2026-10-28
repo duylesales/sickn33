@@ -1,4 +1,4 @@
-🔥 Maya bouwde een prototype met **Bolt** — Maya, een legal compliance lead, gebruikte Bolt om een juridische voorspellingstool te bouwen, maar advocatenkantoren weigerden de app omdat vertrouwelijke dossiers het lokale netwerk verlieten. 🧠
+🔥 Maya bouwde een prototype met **Bolt** - Maya, een legal compliance lead, gebruikte Bolt om een juridische voorspellingstool te bouwen, maar advocatenkantoren weigerden de app omdat vertrouwelijke dossiers het lokale netwerk verlieten. 🧠
 
 Het verkopen van enterprise AI-platforms vereist de Trojaans Paard strategie: penetreer de organisatie met laagdrempelige micro-tools en upsell met behulp van concrete gebruiksdata.
 
@@ -12,7 +12,7 @@ Het verkopen van enterprise AI-platforms vereist de Trojaans Paard strategie: pe
 
 Bij **LaunchStudio** lossen we exact dit type micro-tool architectuur en client-side dataverwerkingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Maya's platform werd goedgekeurd: Door client-side verwerking met WebGPU slaagden alle enterprise security-audits, wat resulteerde in pilotcontracten van €60.000. (€3.200 (Client-side Inference Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
+Maya's platform werd goedgekeurd: Door client-side verwerking met WebGPU slaagden alle enterprise security-audits, wat resulteerde in pilotcontracten van €60.000. (€3.200 (Client-side Inference Pakket) - productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/trojan-horse-sales-strategy-b2b-ai
 

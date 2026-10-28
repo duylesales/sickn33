@@ -1,4 +1,4 @@
-🚨 No-code en AI zijn definitief samengesmolten — en dit verandert alles voor startups in 2027. 🔥
+🚨 No-code en AI zijn definitief samengesmolten - en dit verandert alles voor startups in 2027. 🔥
 
 Het oude no-code (Bubble, Webflow) hield u gevangen:
 ❌ Trage, logge prestaties
@@ -13,7 +13,7 @@ Met AI gegenereerde code biedt u wél snelheid én 100% eigenaarschap:
 
 Maar dit is wat GEEN ENKELE AI-tool automatisch regelt: 😱 productiebeveiliging, betalingswebhooks, CI/CD-pijplijnen, monitoring en AVG-compliance.
 
-Bij **LaunchStudio** bouwen we exact die ontbrekende laag — met behoud van uw met AI gebouwde frontend:
+Bij **LaunchStudio** bouwen we exact die ontbrekende laag - met behoud van uw met AI gebouwde frontend:
 ✅ Row Level Security & productie-versteviging
 ✅ Stripe- en Mollie-betalingsinfrastructuur
 ✅ Binnen 1 tot 3 weken live, vaste prijzen vanaf €800

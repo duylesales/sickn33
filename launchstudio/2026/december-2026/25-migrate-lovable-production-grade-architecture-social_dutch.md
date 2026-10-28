@@ -7,7 +7,7 @@ Haar Lovable-prototype was visueel prachtig. Toen ze wilde gaan factureren aan e
 ❌ Geen data-isolatie tussen verschillende winkels
 
 Het 7-stappenplan naar productie: 📋
-1️⃣ Codebase assessment — wat kan blijven, wat moet sterker
+1️⃣ Codebase assessment - wat kan blijven, wat moet sterker
 2️⃣ Authenticatie verharden (Supabase Auth / NextAuth)
 3️⃣ Database security audit (Row Level Security actief & getest)
 4️⃣ Geheime API-sleutels veilig server-side plaatsen
@@ -17,7 +17,7 @@ Het 7-stappenplan naar productie: 📋
 
 Het enige dat NOOIT verandert: uw frontend. Geen enkele pixel. 🛡️
 
-Bij **LaunchStudio**, ondersteund door Manifera's 120+ engineers, duurt dit 1–3 weken, vanaf €800 — vergeleken met €20k–€100k voor een traditioneel bureau. 🚀
+Bij **LaunchStudio**, ondersteund door Manifera's 120+ engineers, duurt dit 1–3 weken, vanaf €800 - vergeleken met €20k–€100k voor een traditioneel bureau. 🚀
 
 👉 Lees de complete migratiegids voor Lovable: https://launchstudio.eu/nl/blog/migrate-lovable-production-grade-architecture
 

@@ -3,12 +3,12 @@ Every middleware vendor's pitch deck lists the same connectors and the same upti
 **The Pain Points:**
 ❌ **Vague Failure Handling:** "The system retries automatically" with no specifics on retry limits, backoff timing, or what happens after retries are exhausted means nobody has actually operated this under real failure.
 ❌ **The Idempotency Gap:** Duplicate message delivery is rare enough to pass a demo and a pilot, then shows up in production as double-charged customers or double-counted inventory months later.
-❌ **Dashboards Nobody Watches:** Infrastructure metrics look fine even when an integration has silently stopped moving real data — without business-level alerting, a customer finds the problem before you do.
+❌ **Dashboards Nobody Watches:** Infrastructure metrics look fine even when an integration has silently stopped moving real data - without business-level alerting, a customer finds the problem before you do.
 
 **The Manifera Solution:**
-✅ **Dead-Letter Queues With Defined Retry Logic:** Every failure path is specific — exponential backoff, a maximum attempt count, and alerting when the dead-letter queue starts accumulating.
+✅ **Dead-Letter Queues With Defined Retry Logic:** Every failure path is specific - exponential backoff, a maximum attempt count, and alerting when the dead-letter queue starts accumulating.
 ✅ **Idempotency by Default:** Duplicate and out-of-order message handling built into the architecture, not skipped because it doesn't show up in initial testing.
-✅ **Business-Level Monitoring:** Alerts on real anomalies — like order volume dropping 80% in an hour — routed to a team with a defined on-call rotation.
+✅ **Business-Level Monitoring:** Alerts on real anomalies - like order volume dropping 80% in an hour - routed to a team with a defined on-call rotation.
 
 Feature checklists are easy to win in a demo. Operational reliability under messy production conditions is what actually reduces risk. 🎯
 

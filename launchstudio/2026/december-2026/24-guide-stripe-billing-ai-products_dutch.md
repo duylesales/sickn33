@@ -36,27 +36,27 @@ Stripe's snelstartgids om "een betaling te accepteren" kost ongeveer een kwartie
 ## Verder dan "Een Betaling Accepteren": Wat Echte SaaS-Facturatie Vereist
 
 ### Beheer van de Abonnementscyclus
-Klanten sluiten niet simpelweg eenmalig een abonnement af — ze upgraden, downgraden, pauzeren, zeggen op en keren later weer terug. Uw facturatiesysteem moet elke overgang correct verwerken, inclusief pro-rata verrekeningen bij tussentijdse wijzigingen en het toekennen of intrekken van toegangsrechten op exact het juiste moment in de facturatiecyclus.
+Klanten sluiten niet simpelweg eenmalig een abonnement af - ze upgraden, downgraden, pauzeren, zeggen op en keren later weer terug. Uw facturatiesysteem moet elke overgang correct verwerken, inclusief pro-rata verrekeningen bij tussentijdse wijzigingen en het toekennen of intrekken van toegangsrechten op exact het juiste moment in de facturatiecyclus.
 
 ### Afhandeling van Mislukte Betalingen (*Dunning*)
-Creditcards en bankpassen verlopen, worden geweigerd wegens ontoereikend saldo of worden geblokkeerd door fraudedetectie. Stripe's "Smart Retries" kunnen mislukte afschrijvingen automatisch opnieuw proberen, maar uw applicatie moet de tussenliggende status netjes afhandelen — doorgaans via een coulanceperiode (*grace period*) in plaats van een directe afsluiting — en helder communiceren met de klant.
+Creditcards en bankpassen verlopen, worden geweigerd wegens ontoereikend saldo of worden geblokkeerd door fraudedetectie. Stripe's "Smart Retries" kunnen mislukte afschrijvingen automatisch opnieuw proberen, maar uw applicatie moet de tussenliggende status netjes afhandelen - doorgaans via een coulanceperiode (*grace period*) in plaats van een directe afsluiting - en helder communiceren met de klant.
 
 ### Betrouwbaarheid van Webhooks
-Stripe communiceert facturatie-events (geslaagde betaling, mislukte incasso, opzegging) naar uw server via webhooks. Als uw webhook-handler niet idempotent is — oftewel niet veilig hetzelfde event meerdere keren kan verwerken — kunnen dubbel afgeleverde webhooks (wat volgens Stripe's eigen documentatie regelmatig gebeurt) leiden tot dubbele afschrijvingen of corrupte databasestatussen.
+Stripe communiceert facturatie-events (geslaagde betaling, mislukte incasso, opzegging) naar uw server via webhooks. Als uw webhook-handler niet idempotent is - oftewel niet veilig hetzelfde event meerdere keren kan verwerken - kunnen dubbel afgeleverde webhooks (wat volgens Stripe's eigen documentatie regelmatig gebeurt) leiden tot dubbele afschrijvingen of corrupte databasestatussen.
 
 ### Verbruiksafhankelijke Facturatie voor AI-Kosten (*Metered Billing*)
-Veel AI-producten maken variabele kosten die direct gekoppeld zijn aan gebruik — meer prompts, meer API-aanroepen, meer rekentijd. Het doorberekenen van deze variabele kosten via metered billing vereist nauwkeurige server-side registratie en synchronisatie met Stripe's metered billing API's — een wezenlijk complexere koppeling dan een vast abonnement.
+Veel AI-producten maken variabele kosten die direct gekoppeld zijn aan gebruik - meer prompts, meer API-aanroepen, meer rekentijd. Het doorberekenen van deze variabele kosten via metered billing vereist nauwkeurige server-side registratie en synchronisatie met Stripe's metered billing API's - een wezenlijk complexere koppeling dan een vast abonnement.
 
 ### Btw- en Facturatie-Compliance
 Een in Europa gevestigde SaaS moet btw correct berekenen, wat verschilt per land van de klant en type afnemer (B2B versus B2C). Stripe Tax kan dit grotendeels automatiseren, maar moet exact worden geconfigureerd voor uw specifieke rechtsgebied en klantenbestand.
 
 ## De Kloof in AI-Gegenereerde Prototypes
 
-AI-tools zoals Lovable en Bolt genereren een standaard Stripe checkout-flow relatief goed — het is een beproefd patroon met veel trainingsvoorbeelden. Wat zij structureel missen is het omliggende systeem: webhook-afhandeling, abonnementsstatussynchronisatie tussen Stripe en uw database, coulanceperiodes bij betalingsproblemen en variabele kostendoorberekening. Een prototype dat in een demo "een betaling kan accepteren" staat nog mijlenver af van een systeem dat 100 betalende abonnees een jaar lang foutloos factureert.
+AI-tools zoals Lovable en Bolt genereren een standaard Stripe checkout-flow relatief goed - het is een beproefd patroon met veel trainingsvoorbeelden. Wat zij structureel missen is het omliggende systeem: webhook-afhandeling, abonnementsstatussynchronisatie tussen Stripe en uw database, coulanceperiodes bij betalingsproblemen en variabele kostendoorberekening. Een prototype dat in een demo "een betaling kan accepteren" staat nog mijlenver af van een systeem dat 100 betalende abonnees een jaar lang foutloos factureert.
 
 ## Dit Direct in Eén Keer Goed Neerzetten
 
-Bugs in de facturatie zijn buitengewoon schadelijk omdat ze direct aan het geld van klanten raken — een abonnement dat niet correct stopt of een klant die dubbel wordt belast door een niet-idempotente webhook veroorzaakt direct een financieel probleem en een vertrouwensbreuk. [LaunchStudio](https://launchstudio.eu/nl/) implementeert Stripe (en Mollie, favoriet voor Nederlandse en Europese iDEAL-betalingen) als vast onderdeel van het Launch & Grow pakket, steunend op Manifera's ervaring met betaalsystemen in 160+ opgeleverde projecten.
+Bugs in de facturatie zijn buitengewoon schadelijk omdat ze direct aan het geld van klanten raken - een abonnement dat niet correct stopt of een klant die dubbel wordt belast door een niet-idempotente webhook veroorzaakt direct een financieel probleem en een vertrouwensbreuk. [LaunchStudio](https://launchstudio.eu/nl/) implementeert Stripe (en Mollie, favoriet voor Nederlandse en Europese iDEAL-betalingen) als vast onderdeel van het Launch & Grow pakket, steunend op Manifera's ervaring met betaalsystemen in 160+ opgeleverde projecten.
 
 [Bespreek uw facturatie-architectuur met een engineer](https://launchstudio.eu/nl/#calculator) vóórdat uw eerste klacht over dubbele afschrijvingen binnenkomt.
 
@@ -90,7 +90,7 @@ Bij op verbruik gebaseerde AI-producten (usage-based billing) kan een haperende 
 
 ### Een AI-native oprichter in actie: Het dubbel-afrekenen lek opgelost vóórdat het escaleerde
 
-Daniel, freelance grafisch ontwerper in Gouda, bouwde OntwerpFlow — een offerte- en facturatietool voor creatieve freelancers — met behulp van Lovable, inclusief een Stripe-checkout voor het maandabonnement. De kassa zelf functioneerde prima bij de start.
+Daniel, freelance grafisch ontwerper in Gouda, bouwde OntwerpFlow - een offerte- en facturatietool voor creatieve freelancers - met behulp van Lovable, inclusief een Stripe-checkout voor het maandabonnement. De kassa zelf functioneerde prima bij de start.
 
 Drie weken na de lancering ontving Daniel een verontruste e-mail van een abonnee die zag dat hetzelfde maandbedrag twee keer van zijn creditcard was afgeschreven. Bij onderzoek ontdekte Daniel dat zijn Stripe-webhook bij elk "invoice.paid" event simpelweg een nieuw abonnement aanmaakte in zijn database. Omdat Stripe ter controle soms hetzelfde webhook-event vaker dan één keer aflevert, was een groep klanten per ongeluk dubbel belast.
 
@@ -99,9 +99,9 @@ Daniel vond LaunchStudio via een ontwikkelaarsforum over webhook-idempotentie in
 **Resultaat:** Alle zes gedupeerde klanten ontvingen binnen 24 uur hun geld terug met een persoonlijke toelichting, wat wonderwel leidde tot méér klantvertrouwen in plaats van opzeggingen. In de vier maanden daarna trad er geen enkel facturatieprobleem meer op.
 
 > *"Ik had het 'happy path' van de kassa prima werkend. Het waren de onzichtbare webhooks die stiekem voor dubbele afschrijvingen zorgden. LaunchStudio repareerde de lekkende leidingen direct."*  
-> — **Daniel Smit, Oprichter OntwerpFlow (Gouda)**
+> - **Daniel Smit, Oprichter OntwerpFlow (Gouda)**
 
-**Kosten & tijdlijn:** €1.650 (audit en reparatie van het facturatiesysteem) — opgelost in 6 werkdagen.
+**Kosten & tijdlijn:** €1.650 (audit en reparatie van het facturatiesysteem) - opgelost in 6 werkdagen.
 
 ---
 

@@ -6,7 +6,7 @@
 ❌ **"Dedicated" ≠ Actually Dedicated:** Shared contractors without access parity just add coordination overhead.
 
 **The Manifera Solution:**
-✅ **~2 Weeks to Contributing:** Full repo, CI/CD, and ticketing access from day one — a structured onboarding sprint, not a wall-throw.
+✅ **~2 Weeks to Contributing:** Full repo, CI/CD, and ticketing access from day one - a structured onboarding sprint, not a wall-throw.
 ✅ **Genuinely Reversible:** Scale the engagement up or down on a defined notice period, no severance obligations.
 ✅ **~56% Lower Monthly Cost:** ~€7,360/month per developer vs. ~€16,720/month for a local senior hire.
 

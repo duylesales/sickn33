@@ -1,4 +1,4 @@
-🔥 Dr. Visser bouwde een prototype met **Bolt** — als arts in Den Haag bouwde hij een AI-app voor medische transcripties, maar zakte direct voor een AVG- en NEN 7510-audit bij een ziekenhuisnetwerk. 🧠
+🔥 Dr. Visser bouwde een prototype met **Bolt** - als arts in Den Haag bouwde hij een AI-app voor medische transcripties, maar zakte direct voor een AVG- en NEN 7510-audit bij een ziekenhuisnetwerk. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of AVG-conforme EU-infrastructuur heeft, veroorzaakt live verkeer direct torenhoge boetes en aansprakelijkheid.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Dr. Visser slaagde met vlag en wimpel voor de ziekenhuisaudit en sloot een zorgcontract van €6.000 MRR. (€4.500 (Enterprise Compliance Hardening Pakket) — binnen 15 werkdagen live). 🚀
+Dr. Visser slaagde met vlag en wimpel voor de ziekenhuisaudit en sloot een zorgcontract van €6.000 MRR. (€4.500 (Enterprise Compliance Hardening Pakket) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-generated-app-gdpr-compliance-checklist
 

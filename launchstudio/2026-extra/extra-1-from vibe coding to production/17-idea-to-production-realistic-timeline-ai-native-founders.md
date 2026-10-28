@@ -35,15 +35,15 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 ## Why the Two Phases Have Almost No Correlation
 
-Prototype speed is a function of how clearly you can describe what you want and how well an AI tool interprets that description — a well-specified, focused idea can be prototyped remarkably fast, almost regardless of the underlying technical complexity involved, because the tool handles that complexity for you. Production timeline is a function of an entirely different set of variables: how much sensitive data the product handles, how many external services it depends on, what regulatory obligations apply, and how many of the specific gaps covered throughout this series exist in the generated code. A simple idea can have a genuinely fast prototype phase and a slow production phase if it happens to touch payment processing and personal data. A complex idea can have a slow prototype phase and a fast production phase if it's a low-stakes internal tool with minimal external dependencies. The two timelines simply don't predict each other.
+Prototype speed is a function of how clearly you can describe what you want and how well an AI tool interprets that description - a well-specified, focused idea can be prototyped remarkably fast, almost regardless of the underlying technical complexity involved, because the tool handles that complexity for you. Production timeline is a function of an entirely different set of variables: how much sensitive data the product handles, how many external services it depends on, what regulatory obligations apply, and how many of the specific gaps covered throughout this series exist in the generated code. A simple idea can have a genuinely fast prototype phase and a slow production phase if it happens to touch payment processing and personal data. A complex idea can have a slow prototype phase and a fast production phase if it's a low-stakes internal tool with minimal external dependencies. The two timelines simply don't predict each other.
 
 ## Phase 1: Prototype (Typically Days to a Few Weeks)
 
-This phase is dominated by iteration speed — describing what you want, seeing it generated, refining based on what's wrong or missing, repeating. Most of the variance here comes from how well-defined the idea is at the outset and how many rounds of significant direction change occur, not from the underlying technical difficulty of what's being built, which the AI tool largely absorbs.
+This phase is dominated by iteration speed - describing what you want, seeing it generated, refining based on what's wrong or missing, repeating. Most of the variance here comes from how well-defined the idea is at the outset and how many rounds of significant direction change occur, not from the underlying technical difficulty of what's being built, which the AI tool largely absorbs.
 
 ## Phase 2: Production-Readiness Audit and Scoping (Typically Days)
 
-Before any production work begins, a proper audit identifies which of the standard gaps — secrets, authentication, error handling, testing, observability, and any product-specific concerns like payment processing or regulated data — actually apply to your specific prototype, and roughly how much work each represents. This phase is intentionally fast, because its purpose is producing an accurate scope for phase three, not doing the work itself.
+Before any production work begins, a proper audit identifies which of the standard gaps - secrets, authentication, error handling, testing, observability, and any product-specific concerns like payment processing or regulated data - actually apply to your specific prototype, and roughly how much work each represents. This phase is intentionally fast, because its purpose is producing an accurate scope for phase three, not doing the work itself.
 
 ## Phase 3: Production Hardening (Typically One to Three Weeks)
 
@@ -51,17 +51,17 @@ This is where the bulk of the remaining time genuinely goes, and where the earli
 
 ## Phase 4: Launch and Initial Monitoring (Ongoing, Front-Loaded)
 
-Launch itself is typically fast — deployment, final verification, going live — but the days immediately following launch warrant closer attention than the weeks after, since this is when real user behavior first tests everything the hardening phase addressed, and when observability (covered elsewhere in this series) pays for itself most directly. Founders who treat launch day as the finish line, rather than the start of a closely-watched initial window, often miss the specific period when a genuinely useful signal — an error spike, an unexpected usage pattern, a dependency behaving differently under real load than it did in testing — is most likely to appear, precisely because it's the first time the product has ever encountered real, unscripted behavior at any volume.
+Launch itself is typically fast - deployment, final verification, going live - but the days immediately following launch warrant closer attention than the weeks after, since this is when real user behavior first tests everything the hardening phase addressed, and when observability (covered elsewhere in this series) pays for itself most directly. Founders who treat launch day as the finish line, rather than the start of a closely-watched initial window, often miss the specific period when a genuinely useful signal - an error spike, an unexpected usage pattern, a dependency behaving differently under real load than it did in testing - is most likely to appear, precisely because it's the first time the product has ever encountered real, unscripted behavior at any volume.
 
 ## What Actually Drives Production Timeline Variance, Roughly Ranked
 
 Since prototyping time doesn't predict production time, it's worth knowing which factors actually do, roughly ordered by how much they typically add:
 
-**Regulated or sensitive data (largest driver).** Healthcare-adjacent information, financial data, or anything triggering specific regulatory obligations adds the most time, since it requires not just secure handling but demonstrable, documented compliance — a materially different bar than "the data is reasonably protected."
+**Regulated or sensitive data (largest driver).** Healthcare-adjacent information, financial data, or anything triggering specific regulatory obligations adds the most time, since it requires not just secure handling but demonstrable, documented compliance - a materially different bar than "the data is reasonably protected."
 
-**Number and quality of external integrations.** Each third-party system your product depends on — a payment processor, a practice management system, a shipping API — adds its own error handling, authentication, and failure-mode work, and integrations with inconsistent or poorly documented APIs, like Iris's case below, add disproportionately more than clean, well-documented ones.
+**Number and quality of external integrations.** Each third-party system your product depends on - a payment processor, a practice management system, a shipping API - adds its own error handling, authentication, and failure-mode work, and integrations with inconsistent or poorly documented APIs, like Iris's case below, add disproportionately more than clean, well-documented ones.
 
-**Multi-tenant or multi-role data separation.** Products where different users or organizations must not see each other's data need role-based access control verified at the architecture level, covered in depth elsewhere in this series — a meaningfully bigger scope than a single-tenant tool with one undifferentiated user type.
+**Multi-tenant or multi-role data separation.** Products where different users or organizations must not see each other's data need role-based access control verified at the architecture level, covered in depth elsewhere in this series - a meaningfully bigger scope than a single-tenant tool with one undifferentiated user type.
 
 **Payment processing handled directly.** Routing payments through a compliant processor's hosted checkout is comparatively fast to harden; handling card details more directly, even briefly, raises the compliance bar substantially and adds real time.
 
@@ -71,7 +71,7 @@ Knowing this ranking doesn't replace an actual audit, but it does let you make a
 
 ## Why Founders Consistently Misjudge This Timeline
 
-The most common error isn't underestimating any single phase — it's assuming phase three's length correlates with phase one's, since both phases feel, subjectively, like "building the product" from the founder's perspective. In reality, a founder who prototyped quickly and confidently often has no intuition for how much hardening their specific product needs, because the variables that determine hardening time (data sensitivity, external dependencies, regulatory exposure) are largely invisible during prototyping, when the focus is entirely on whether the feature works as intended.
+The most common error isn't underestimating any single phase - it's assuming phase three's length correlates with phase one's, since both phases feel, subjectively, like "building the product" from the founder's perspective. In reality, a founder who prototyped quickly and confidently often has no intuition for how much hardening their specific product needs, because the variables that determine hardening time (data sensitivity, external dependencies, regulatory exposure) are largely invisible during prototyping, when the focus is entirely on whether the feature works as intended.
 
 ## What This Means for Realistic Planning
 
@@ -79,22 +79,22 @@ The practical implication is straightforward: don't estimate your production tim
 
 [LaunchStudio](https://launchstudio.eu/en/) provides exactly this kind of accurate, scoped audit as the starting point of every engagement, translating your specific prototype's specific gaps into a real, fixed timeline rather than a generic estimate, backed by Manifera's experience across 160+ delivered projects of varying complexity.
 
-[Get a timeline based on your actual prototype, not a guess](https://launchstudio.eu/en/#calculator) — the two phases don't predict each other, so the only reliable estimate is a specific one.
+[Get a timeline based on your actual prototype, not a guess](https://launchstudio.eu/en/#calculator) - the two phases don't predict each other, so the only reliable estimate is a specific one.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Fast Prototype That Needed a Slower Production Phase
 
-Iris, a former dental hygienist turned founder in Apeldoorn, built TandAfspraak, an AI tool helping small dental practices manage appointment scheduling and automated patient reminders, prototyping the core functionality in just four days using Lovable — a genuinely fast build, given how clearly she'd specified exactly what she wanted from her years of hands-on experience with practice scheduling workflows.
+Iris, a former dental hygienist turned founder in Apeldoorn, built TandAfspraak, an AI tool helping small dental practices manage appointment scheduling and automated patient reminders, prototyping the core functionality in just four days using Lovable - a genuinely fast build, given how clearly she'd specified exactly what she wanted from her years of hands-on experience with practice scheduling workflows.
 
-Iris initially assumed, reasonably but incorrectly, that a four-day build implied a similarly fast path to launch. When LaunchStudio's initial audit reviewed TandAfspraak, the scope came back notably larger than her prototyping timeline had suggested: the app handled patient health-adjacent scheduling data, integrated with two separate practice management systems with inconsistent APIs, and included automated SMS reminders requiring proper opt-out handling for compliance — none of which had any bearing on how quickly the original prototype had come together.
+Iris initially assumed, reasonably but incorrectly, that a four-day build implied a similarly fast path to launch. When LaunchStudio's initial audit reviewed TandAfspraak, the scope came back notably larger than her prototyping timeline had suggested: the app handled patient health-adjacent scheduling data, integrated with two separate practice management systems with inconsistent APIs, and included automated SMS reminders requiring proper opt-out handling for compliance - none of which had any bearing on how quickly the original prototype had come together.
 
-**Result:** TandAfspraak's production hardening took seventeen business days, considerably longer than its four-day prototype phase, entirely because of factors — data sensitivity, external system integration complexity, regulatory considerations — that were invisible during the fast, focused prototyping phase and only became apparent once the actual audit examined what the product specifically needed to handle safely.
+**Result:** TandAfspraak's production hardening took seventeen business days, considerably longer than its four-day prototype phase, entirely because of factors - data sensitivity, external system integration complexity, regulatory considerations - that were invisible during the fast, focused prototyping phase and only became apparent once the actual audit examined what the product specifically needed to handle safely.
 
 > *"I genuinely thought four days to build meant a week or so to launch. The prototype speed had nothing to do with how much hardening the actual product needed once someone looked at what it was actually doing with patient data. I'm glad I got a real number instead of guessing."*
-> — **Iris Willems, Founder, TandAfspraak (Apeldoorn)**
+> - **Iris Willems, Founder, TandAfspraak (Apeldoorn)**
 
-**Cost & Timeline:** €4,200 (Launch & Grow Package, healthcare-adjacent data handling and multi-system integration) — live in 17 business days.
+**Cost & Timeline:** €4,200 (Launch & Grow Package, healthcare-adjacent data handling and multi-system integration) - live in 17 business days.
 
 ---
 
@@ -102,11 +102,11 @@ Iris initially assumed, reasonably but incorrectly, that a four-day build implie
 
 ### If my prototype took a long time to build, does that mean my production phase will also be slow?
 
-Not necessarily — as this guidance explains, the two phases are driven by largely different variables, so a slow, complex prototyping phase doesn't reliably predict a slow production phase, and vice versa, as Iris's case specifically illustrates in the opposite direction.
+Not necessarily - as this guidance explains, the two phases are driven by largely different variables, so a slow, complex prototyping phase doesn't reliably predict a slow production phase, and vice versa, as Iris's case specifically illustrates in the opposite direction.
 
 ### What specifically made Iris's production phase longer than her fast prototype phase?
 
-Data sensitivity (patient scheduling data), integration complexity (two inconsistent practice management system APIs), and regulatory considerations (SMS opt-out compliance) — none of these factors affected how quickly the prototype itself came together, since Lovable handled the interface and basic logic regardless of what the data represented.
+Data sensitivity (patient scheduling data), integration complexity (two inconsistent practice management system APIs), and regulatory considerations (SMS opt-out compliance) - none of these factors affected how quickly the prototype itself came together, since Lovable handled the interface and basic logic regardless of what the data represented.
 
 ### How accurate is an initial audit's timeline estimate compared to how long the work actually ends up taking?
 
@@ -114,11 +114,11 @@ Audits are specifically designed to produce accurate estimates by examining the 
 
 ### Is it possible to reduce production timeline by simplifying what data or integrations my prototype uses?
 
-Sometimes, yes — if a specific integration or data type is driving a disproportionate share of the timeline and isn't essential to your core value proposition, scoping it out for a later phase can meaningfully shorten initial production timeline, which is exactly the kind of trade-off a proper scoping conversation surfaces.
+Sometimes, yes - if a specific integration or data type is driving a disproportionate share of the timeline and isn't essential to your core value proposition, scoping it out for a later phase can meaningfully shorten initial production timeline, which is exactly the kind of trade-off a proper scoping conversation surfaces.
 
 ### Does a longer production timeline than expected mean something went wrong with my prototype?
 
-No — it typically means the prototype was doing something more inherently complex or sensitive than its build speed suggested, not that anything was built poorly; Iris's prototype was, by all accounts, well-built, and the timeline extension reflected what the product needed to handle safely, not a flaw in how it was made.
+No - it typically means the prototype was doing something more inherently complex or sensitive than its build speed suggested, not that anything was built poorly; Iris's prototype was, by all accounts, well-built, and the timeline extension reflected what the product needed to handle safely, not a flaw in how it was made.
 
 <script type="application/ld+json">
 {
@@ -130,7 +130,7 @@ No — it typically means the prototype was doing something more inherently comp
       "name": "If my prototype took a long time to build, does that mean my production phase will also be slow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — the two phases are driven by largely different variables, so a slow prototyping phase doesn't reliably predict a slow production phase."
+        "text": "Not necessarily - the two phases are driven by largely different variables, so a slow prototyping phase doesn't reliably predict a slow production phase."
       }
     },
     {
@@ -138,7 +138,7 @@ No — it typically means the prototype was doing something more inherently comp
       "name": "What typically makes a production phase longer than a fast prototype phase suggests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Data sensitivity, integration complexity with external systems, and regulatory considerations — none of which affect how quickly the prototype came together."
+        "text": "Data sensitivity, integration complexity with external systems, and regulatory considerations - none of which affect how quickly the prototype came together."
       }
     },
     {
@@ -154,7 +154,7 @@ No — it typically means the prototype was doing something more inherently comp
       "name": "Is it possible to reduce production timeline by simplifying data or integrations used?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sometimes yes — scoping out a non-essential integration or data type driving disproportionate timeline can meaningfully shorten initial production time."
+        "text": "Sometimes yes - scoping out a non-essential integration or data type driving disproportionate timeline can meaningfully shorten initial production time."
       }
     },
     {

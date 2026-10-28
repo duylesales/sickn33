@@ -64,13 +64,13 @@ None of this is exotic. It is the ordinary condition of building software for Eu
 
 Languages differ enormously in how much training data exists for them, and this determines what is achievable.
 
-English is in a category of its own. French, German, Spanish and Italian are well resourced. Dutch, Polish, Portuguese, Swedish, Czech, Greek, Romanian and others are moderately resourced, with usable models and noticeably thinner evaluation data. Smaller official languages — Maltese, Irish, Estonian, Latvian, Slovene — and regional languages such as Catalan, Basque, Welsh and Frisian have far less.
+English is in a category of its own. French, German, Spanish and Italian are well resourced. Dutch, Polish, Portuguese, Swedish, Czech, Greek, Romanian and others are moderately resourced, with usable models and noticeably thinner evaluation data. Smaller official languages - Maltese, Irish, Estonian, Latvian, Slovene - and regional languages such as Catalan, Basque, Welsh and Frisian have far less.
 
 The practical consequences follow a pattern. Well-resourced languages perform close to English in most tasks. Moderately resourced languages perform adequately for common tasks and degrade on specialised domains. Lower-resource languages require more careful model selection, more evaluation effort and sometimes a different approach entirely, such as translating to a high-resource language for processing.
 
 European initiatives have funded work on language resources for smaller languages, and national institutes in several countries maintain corpora, models and evaluation sets for their own language. These are the first place to look when starting work on one.
 
-The practical advice is to know where each language you must support sits, and to allocate evaluation effort accordingly — more for the ones where you have least confidence.
+The practical advice is to know where each language you must support sits, and to allocate evaluation effort accordingly - more for the ones where you have least confidence.
 
 ## Tokenisation, Context and Cost
 
@@ -130,7 +130,7 @@ Regional variation compounds it. German as spoken in Switzerland, Dutch in Fland
 
 Domain vocabulary is the third factor: product names, technical terms, place names and abbreviations that no general model has seen.
 
-Practical approaches include evaluating per accent group rather than per language, adapting models on domain audio where available, biasing recognition toward expected vocabulary, and designing interfaces that fail gracefully — confirming rather than assuming, and allowing correction.
+Practical approaches include evaluating per accent group rather than per language, adapting models on domain audio where available, biasing recognition toward expected vocabulary, and designing interfaces that fail gracefully - confirming rather than assuming, and allowing correction.
 
 Applications across Europe are substantial: call centre analysis, meeting transcription, subtitling for broadcasters, voice interfaces in vehicles, clinical dictation and accessibility. All of them require this evaluation discipline, and teams that apply it build systems that work for people whose voices do not resemble the training data.
 
@@ -160,7 +160,7 @@ Multilingual language work exists across Europe in more places than a keyword se
 
 **Customer service and contact centre technology**, where multilingual routing, classification and assistance are core.
 
-**Any pan-European business** — retail, logistics, banking, travel, software — building internal or customer-facing language systems.
+**Any pan-European business** - retail, logistics, banking, travel, software - building internal or customer-facing language systems.
 
 **Health, legal and public administration**, where documents and interactions are in national languages by necessity.
 
@@ -174,7 +174,7 @@ For candidates, knowing a European language other than English well is a genuine
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Language roles are advertised under varied titles — NLP engineer, computational linguist, conversational AI engineer, search relevance engineer — so read descriptions rather than filtering on titles. Vacancy text also indicates whether a team has faced multilingual reality, which tells you what the work will involve.
+Language roles are advertised under varied titles - NLP engineer, computational linguist, conversational AI engineer, search relevance engineer - so read descriptions rather than filtering on titles. Vacancy text also indicates whether a team has faced multilingual reality, which tells you what the work will involve.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Sendcloud, Mollie, Accenture, Cegeka and Boltrics among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

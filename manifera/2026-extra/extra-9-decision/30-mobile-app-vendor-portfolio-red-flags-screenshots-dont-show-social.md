@@ -8,7 +8,7 @@ Twenty beautiful screenshots tell you nothing about whether that vendor will sti
 **The Manifera Solution:**
 ✅ **Real, Live, Named Work:** Portfolio apps you can look up yourself, tied to real client relationships still being maintained today.
 ✅ **Named Engineers Before You Sign:** Meet the actual delivery team, not an account manager, during due diligence.
-✅ **Old References Welcome:** Ask us for a client from two years ago — we're confident in the long-term view, not just the fresh-launch glow.
+✅ **Old References Welcome:** Ask us for a client from two years ago - we're confident in the long-term view, not just the fresh-launch glow.
 
 Fifteen minutes of verification saves months of regret. 🔍
 

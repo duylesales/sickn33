@@ -35,7 +35,7 @@ Maar zodra u diezelfde reflex toepast op een productiedatabase met tienduizenden
 
 Zodra er echte klantdata in het spel is, veranderen drie spelregels fundamenteel:
 
-1. **Historische data moet behouden én getransformeerd worden:** Een kolom `naam` splitsen in `voornaam` en `achternaam` is geen cosmetische aanpassing. Het vereist een transformatielogica voor elke bestaande klant — inclusief tussenvoegsels (*"van der"*, *"de"*), namen met één woord, of buitenlandse klanten.
+1. **Historische data moet behouden én getransformeerd worden:** Een kolom `naam` splitsen in `voornaam` en `achternaam` is geen cosmetische aanpassing. Het vereist een transformatielogica voor elke bestaande klant - inclusief tussenvoegsels (*"van der"*, *"de"*), namen met één woord, of buitenlandse klanten.
 2. **De software blijft draaien tijdens de migratie:** Terwijl de migratie loopt, stromen er continu API-verzoeken binnen. Als uw applicatiecode al de nieuwe kolommen verwacht terwijl de database nog niet klaar is (of vice versa), crashen al die verzoeken met 500-serverfouten.
 3. **Fouten zijn onomkeerbaar:** Een kolom wissen (`DROP COLUMN`) wist alle data permanent. De enige redding is het terugzetten van een back-up, waarmee u direct alle transacties overschrijft die andere gebruikers in de tussentijd hebben gedaan.
 
@@ -78,7 +78,7 @@ Een migratie testen op vijftig testrijtjes bewijst uitsluitend dat uw SQL-syntax
 
 Herstel periodiek een recente productiedump in een afgeschermde staging-omgeving en test de migratie daarop met een stopwatch. Dit levert niet alleen een realistische inschatting van de uitvoeringstijd op, maar legt direct de bizarre data-uitzonderingen bloot die echte klanten in de loop der tijd hebben ingevoerd: spaties in plaats van nullen, e-mailadressen met een puntkomma, of telefoonnummers met tekst erin.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste database-engineering) voeren we zero-downtime migraties, gefaseerde backfills en concurrent index-optimalisaties standaard uit tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw databasearchitectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw data veilig blijft tijdens elke update.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste database-engineering) voeren we zero-downtime migraties, gefaseerde backfills en concurrent index-optimalisaties standaard uit tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw databasearchitectuur met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw data veilig blijft tijdens elke update.
 
 ## Migraties Horen in Versiebeheer (Git), Nooit in een Console
 
@@ -108,7 +108,7 @@ Bovendien bleek er nóg een levensgrote valkuil klaar te staan: Lieke had voor h
 **Resultaat:** Binnen drie werkdagen bracht LaunchStudio rust in de architectuur: de index werd herbouwd met `CONCURRENTLY`, alle migraties werden vastgelegd in Git-versiebeheer, en de adresmigratie werd omgevormd naar het Expand-and-Contract patroon. Tijdens de achtergrond-backfill ontdekte het script direct **3.100 afwijkende Nederlandse adresnotaties** (*"3 hoog achter"*, *"bus 12"*, *"t.o. nummer 4"*) die de oorspronkelijke query geruisloos verminkt zou hebben!
 
 > *"Negen minuten volledige downtime door één enkel regeltje code dat op mijn laptop een fractie van een seconde kostte. Mijn testdatabase was duizend keer kleiner en ik had er simpelweg nooit bij stilgestaan wat dat verschil betekende."*
-> — **Lieke Groothuis, Oprichter, Rittenboek**
+> - **Lieke Groothuis, Oprichter, Rittenboek**
 
 **Kosten & Doorlooptijd:** Zero-downtime migratiestructuur, Prisma-versiebeheer en backfill-validatie opgeleverd in 3 werkdagen.
 

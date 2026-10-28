@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Everyone builds the part where money comes in. Almost nobody builds the part where some of it goes back out — and that is the part your reputation is made of, because a customer who leaves cleanly tells people you were fair, and a customer who cannot find the cancel button tells rather more people rather more loudly.
+Everyone builds the part where money comes in. Almost nobody builds the part where some of it goes back out - and that is the part your reputation is made of, because a customer who leaves cleanly tells people you were fair, and a customer who cannot find the cancel button tells rather more people rather more loudly.
 
 There is also a regulatory edge to it in Europe, and a practical one: an app that cannot cancel properly generates support work forever.
 
@@ -30,7 +30,7 @@ Answer four questions and the implementation follows.
 
 **When does access end?** At the end of the paid period, almost always. The customer paid through the 30th; take away access on the 30th, not the moment they click. Immediate termination on cancellation feels punitive and generates refund requests you would otherwise never see.
 
-**Is there a refund?** For a monthly subscription, usually not — they keep the month they paid for. For an annual plan cancelled in month two, a pro-rata refund is the reasonable default and worth stating in your terms, because the alternative is arguing about it individually forever.
+**Is there a refund?** For a monthly subscription, usually not - they keep the month they paid for. For an annual plan cancelled in month two, a pro-rata refund is the reasonable default and worth stating in your terms, because the alternative is arguing about it individually forever.
 
 **What happens to their data?** Say it explicitly: retained for a defined period, exportable during that window, then deleted. This is both good practice and the answer to a question your privacy policy has to make anyway.
 
@@ -42,7 +42,7 @@ Then make the cancel button findable. Burying it is a tactic that survives only 
 
 The mistake appears in AI-generated code with some regularity: cancellation removes the user row, or cascades a delete across their records.
 
-This destroys your accounting history — you still need the invoices for those payments, for years. It destroys your ability to reactivate. And it makes every "can you check whether I was charged in April?" unanswerable.
+This destroys your accounting history - you still need the invoices for those payments, for years. It destroys your ability to reactivate. And it makes every "can you check whether I was charged in April?" unanswerable.
 
 Cancellation is a state change, not a deletion. The account exists, marked cancelled, with access restricted and a retention clock running. Deletion is a separate action with its own rules, which the customer can request and which you then carry out deliberately.
 
@@ -52,7 +52,7 @@ A customer on €29 upgrades to €79 on day ten of a thirty-day cycle. What do 
 
 The conventional answer is the difference for the unused time: roughly two thirds of €50. Both major providers calculate this for you. The trouble is that founders frequently override the behaviour without understanding it, and then cannot explain a customer's statement.
 
-Two rules keep it sane. Upgrades take effect immediately and charge the prorated difference — the customer asked for more product now. Downgrades take effect at the end of the current period and charge the lower price from the next one — otherwise you are issuing refunds on plan changes and the arithmetic gets strange when someone changes twice in a month.
+Two rules keep it sane. Upgrades take effect immediately and charge the prorated difference - the customer asked for more product now. Downgrades take effect at the end of the current period and charge the lower price from the next one - otherwise you are issuing refunds on plan changes and the arithmetic gets strange when someone changes twice in a month.
 
 Whatever you choose, show it before they confirm: *You will be charged €33.50 today, then €79 monthly from 1 November.* One sentence, and your plan-change support load approaches zero.
 
@@ -60,9 +60,9 @@ Whatever you choose, show it before they confirm: *You will be charged €33.50 
 
 A refund is not complete when the provider dashboard says refunded.
 
-It must reach **the provider**, which returns the money. It must reach **your database**, updating the payment record and any access it granted — otherwise a customer refunded in full continues using the product, and your revenue figures stay wrong. And it must reach **your accounting** as a credit note, sequentially numbered and referencing the original invoice, or your quarter will not reconcile.
+It must reach **the provider**, which returns the money. It must reach **your database**, updating the payment record and any access it granted - otherwise a customer refunded in full continues using the product, and your revenue figures stay wrong. And it must reach **your accounting** as a credit note, sequentially numbered and referencing the original invoice, or your quarter will not reconcile.
 
-Refunds issued by hand in a dashboard reliably complete only the first of the three. That is why refunding from inside your own application — a small admin action that performs all three steps together — is worth the afternoon it takes to build, long before you think you need an admin panel.
+Refunds issued by hand in a dashboard reliably complete only the first of the three. That is why refunding from inside your own application - a small admin action that performs all three steps together - is worth the afternoon it takes to build, long before you think you need an admin panel.
 
 Partial refunds deserve one extra thought: decide whether they change entitlement. Refunding half of an annual plan usually should not halve their remaining access; it should either end the subscription at a date or leave it alone. Pick, write it down, implement it once.
 
@@ -76,7 +76,7 @@ Most chargebacks against small subscription products are not fraud. They are peo
 
 ## The Admin Actions Worth Having on Day One
 
-Most billing support requests are the same handful of operations, and each one performed by hand in a provider dashboard is a chance to leave your own database out of step. A small internal page — visible only to you, with no design to speak of — pays for itself within weeks.
+Most billing support requests are the same handful of operations, and each one performed by hand in a provider dashboard is a chance to leave your own database out of step. A small internal page - visible only to you, with no design to speak of - pays for itself within weeks.
 
 The set worth building first: **issue a refund** (full or partial, which updates the provider, the payment record, the entitlement and the credit note together); **cancel a subscription** on the customer's behalf, since some people will always email rather than click; **extend or credit**, for the goodwill gesture that keeps an unhappy customer; **change a plan** manually, for the deals you negotiate that your pricing page does not model; and **look up a customer's billing history**, so that answering "was I charged in April?" takes seconds.
 
@@ -84,15 +84,15 @@ Add one thing to each: a note field, recording who did it and why. Six months la
 
 What does not belong here is direct editing of amounts on issued invoices, or a delete button. Every change should be an action with a recorded reason, not a field you can type over. An admin panel that can silently rewrite financial history is worse than no admin panel, because its edits leave no trace and its convenience guarantees they will happen.
 
-Access matters too. This page performs irreversible financial operations, so it belongs behind a separate permission check rather than an `is_admin` flag that any account row can carry — and it should log every use, including the ones you make yourself.
+Access matters too. This page performs irreversible financial operations, so it belongs behind a separate permission check rather than an `is_admin` flag that any account row can carry - and it should log every use, including the ones you make yourself.
 
 ## Write the Rules Down Before You Need Them
 
 Every refund and cancellation decision made in the moment, under pressure, from an email that has made you feel guilty, becomes an informal policy you cannot remember and cannot apply consistently.
 
-Write a page — internal, half a side — covering the cases that actually occur. Annual plan cancelled early: pro-rata refund of complete unused months. Monthly plan cancelled: no refund, access to period end. Customer who forgot to cancel and was charged yesterday: full refund, no argument, it costs less than the complaint. Customer who forgot for four months: one month refunded as a gesture. Downgrade mid-cycle: at period end. Service failure on your side: refund the affected period without being asked.
+Write a page - internal, half a side - covering the cases that actually occur. Annual plan cancelled early: pro-rata refund of complete unused months. Monthly plan cancelled: no refund, access to period end. Customer who forgot to cancel and was charged yesterday: full refund, no argument, it costs less than the complaint. Customer who forgot for four months: one month refunded as a gesture. Downgrade mid-cycle: at period end. Service failure on your side: refund the affected period without being asked.
 
-Two benefits, and the second is the one founders underestimate. Consistency, obviously — the same situation gets the same answer regardless of how the email was written. But also speed: a decision already made is a decision you do not spend an evening turning over, and billing correspondence is uniquely good at consuming attention that belongs to the product.
+Two benefits, and the second is the one founders underestimate. Consistency, obviously - the same situation gets the same answer regardless of how the email was written. But also speed: a decision already made is a decision you do not spend an evening turning over, and billing correspondence is uniquely good at consuming attention that belongs to the product.
 
 Publish the parts that affect customers in your terms, keep the rest internal, and revise it when a case arrives that the page does not cover.
 
@@ -100,7 +100,7 @@ Publish the parts that affect customers in your terms, keep the rest internal, a
 
 For a product already billing customers this is two to three days: a self-service cancellation that ends access at period end with a stated retention and export window, reactivation that works, proration configured with upgrade-now and downgrade-later semantics and the amount shown before confirmation, refunds issued from inside your own admin so provider, database and credit note move together, partial refund semantics decided and implemented, receipts on every charge including renewals, a recognisable statement descriptor, and enough evidence logged to contest a chargeback.
 
-LaunchStudio builds the full billing lifecycle rather than the checkout alone, under the Launch & Grow package with managed hosting at €49 per month. The engineers are Manifera's — eleven years, 160+ projects, client contact from Herengracht 420 in Amsterdam and delivery from Ho Chi Minh City.
+LaunchStudio builds the full billing lifecycle rather than the checkout alone, under the Launch & Grow package with managed hosting at €49 per month. The engineers are Manifera's - eleven years, 160+ projects, client contact from Herengracht 420 in Amsterdam and delivery from Ho Chi Minh City.
 
 [Tell us what happens in your app when someone cancels](https://launchstudio.eu/en/#contact).
 
@@ -119,9 +119,9 @@ Four business days: self-service cancellation ending access at period end, with 
 **Result:** cancellation emails to Sander stopped entirely, the accounting reconciled at year end without adjustment for the first time, and of the three chargebacks in the following year two were successfully contested with the logged evidence.
 
 > *"The double refund was the moment I understood the problem. Nothing in my app knew a refund had happened, so nothing could stop me doing it twice."*
-> — **Sander Kroese, Founder, Clubkas (Tilburg)**
+> - **Sander Kroese, Founder, Clubkas (Tilburg)**
 
-**Cost & Timeline:** €2,600 (self-service cancellation with retention and reactivation, unified refund action with credit notes, proration, receipts, descriptor change, dispute evidence logging) — completed in 4 business days.
+**Cost & Timeline:** €2,600 (self-service cancellation with retention and reactivation, unified refund action with credit notes, proration, receipts, descriptor change, dispute evidence logging) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

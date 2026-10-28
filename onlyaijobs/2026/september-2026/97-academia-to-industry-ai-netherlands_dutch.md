@@ -39,7 +39,7 @@ Nederland leidt veel meer onderzoeksgeschoolde mensen op dan het academische ste
 
 ## Wat niet overdraagt en wat actief schaadt
 
-**Nieuwheid is in de industrie geen waarde.** Een gepubliceerde bijdrage moet nieuw zijn. Een industriële oplossing moet werken, onderhoudbaar zijn, en door collega's begrepen worden. Een geavanceerde aanpak kiezen waar een eenvoudige volstaat, is een negatief signaal — geen bewijs van vermogen. Dit is de meest voorkomende fout.
+**Nieuwheid is in de industrie geen waarde.** Een gepubliceerde bijdrage moet nieuw zijn. Een industriële oplossing moet werken, onderhoudbaar zijn, en door collega's begrepen worden. Een geavanceerde aanpak kiezen waar een eenvoudige volstaat, is een negatief signaal - geen bewijs van vermogen. Dit is de meest voorkomende fout.
 
 **Perfectionisme wordt een belemmering.** Academisch werk wordt beoordeeld als het klaar is. Industrieel werk wordt deels beoordeeld op of het op tijd kwam om nuttig te zijn.
 
@@ -59,7 +59,7 @@ Nederland leidt veel meer onderzoeksgeschoolde mensen op dan het academische ste
 
 **Zet het engineeringwerk dat je deed vooraan.** Bijna elk onderzoeksproject omvat substantiële software, datapijplijnen en infrastructuur. Jij bouwde die en vermeldt die waarschijnlijk niet. Vermeld het.
 
-**Beschrijf samenwerkingen nauwkeurig.** Studenten begeleiden, coördineren met andere groepen, werken met domeinexperts uit een ander vak — dat zijn de teamwork- en stakeholderervaringen waar werkgevers naar vragen.
+**Beschrijf samenwerkingen nauwkeurig.** Studenten begeleiden, coördineren met andere groepen, werken met domeinexperts uit een ander vak - dat zijn de teamwork- en stakeholderervaringen waar werkgevers naar vragen.
 
 **Noem mislukkingen en wat je leerde.** Industriële gesprekken vragen hiernaar, en een onderzoeksloopbaan bevat eerlijke voorbeelden.
 

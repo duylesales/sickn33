@@ -46,7 +46,7 @@ Three shifts happened at once.
 
 **Hardware became scarce and expensive.** Accelerator capacity has been constrained, cloud pricing is high, and organisations with on-premise hardware want it used efficiently rather than sitting idle.
 
-The result is that people who understand what actually determines throughput, latency and cost are sought after — and there are not many of them, because the skill sits between machine learning and systems engineering and few curricula cover it.
+The result is that people who understand what actually determines throughput, latency and cost are sought after - and there are not many of them, because the skill sits between machine learning and systems engineering and few curricula cover it.
 
 ## What Actually Determines Performance
 
@@ -54,7 +54,7 @@ The result is that people who understand what actually determines throughput, la
 
 **Model size and precision.** Parameters times bytes per parameter gives your memory requirement, and it determines which hardware can serve the model at all.
 
-**Batching behaviour.** Processing several requests together amortises weight loading. For generative models, continuous batching — adding and removing requests as they arrive and finish — is what makes serving economical.
+**Batching behaviour.** Processing several requests together amortises weight loading. For generative models, continuous batching - adding and removing requests as they arrive and finish - is what makes serving economical.
 
 **Sequence length.** Attention cost grows with context, and the memory held for in-progress generations often dominates capacity.
 
@@ -130,9 +130,9 @@ Where inference runs is a decision with technical, financial and regulatory dime
 
 **CPU serving** is viable and often overlooked for smaller models, classical machine learning and low-volume workloads, and it avoids scarcity entirely.
 
-**Alternative accelerators** — inference-specialised chips and non-dominant vendors — appear increasingly in European deployments, sometimes at better availability or price, at the cost of a less mature software ecosystem.
+**Alternative accelerators** - inference-specialised chips and non-dominant vendors - appear increasingly in European deployments, sometimes at better availability or price, at the cost of a less mature software ecosystem.
 
-Data residency shapes all of this. Where processing must remain in the EU, or within an organisation's own infrastructure, options narrow and self-hosted open-weight models become more attractive. Understanding this trade-off — quality, cost, latency and compliance together — is precisely the judgement employers are hiring for.
+Data residency shapes all of this. Where processing must remain in the EU, or within an organisation's own infrastructure, options narrow and self-hosted open-weight models become more attractive. Understanding this trade-off - quality, cost, latency and compliance together - is precisely the judgement employers are hiring for.
 
 ## Reducing Work Before Optimising It
 

@@ -22,13 +22,13 @@ Doelgroep: SaaS-oprichters in Scale-Up fase
 }
 </script>
 
-Vanuit Roermond, Venlo of Maastricht zijn Duitsland en België geen exportmarkten; ze zijn het volgende dorp. Oprichters in Limburg en langs de oostgrens vinden hun eerste klanten vaak net zo makkelijk over de grens als thuis. Dat is een echt voordeel voor een AI-gebouwd product — en het voegt een laag eisen toe wanneer je een AI-prototype naar productie brengt. Vooral Duitsland heeft verwachtingen waar Nederlandse oprichters niet altijd op rekenen, en AI-tools, die standaard generieke Engelstalige sjablonen gebruiken, rekenen er op geen enkele.
+Vanuit Roermond, Venlo of Maastricht zijn Duitsland en België geen exportmarkten; ze zijn het volgende dorp. Oprichters in Limburg en langs de oostgrens vinden hun eerste klanten vaak net zo makkelijk over de grens als thuis. Dat is een echt voordeel voor een AI-gebouwd product - en het voegt een laag eisen toe wanneer je een AI-prototype naar productie brengt. Vooral Duitsland heeft verwachtingen waar Nederlandse oprichters niet altijd op rekenen, en AI-tools, die standaard generieke Engelstalige sjablonen gebruiken, rekenen er op geen enkele.
 
 Dit artikel is een praktisch overzicht, geen juridisch of fiscaal advies. Raadpleeg voor je specifieke situatie een adviseur.
 
 ## Juridische Vermeldingen: Het Duitse Impressum
 
-De Duitse wet verplicht de meeste commerciële websites en apps tot een makkelijk toegankelijke juridische vermelding (Impressum) met specifieke informatie: bedrijfsnaam en rechtsvorm, adres, contactgegevens inclusief e-mail, register en registratienummer, btw-identificatienummer en, afhankelijk van het bedrijf, verdere gegevens. Ontbrekende of onvolledige vermeldingen kunnen leiden tot sommaties (Abmahnungen) van concurrenten of verenigingen — een typisch Duits verschijnsel.
+De Duitse wet verplicht de meeste commerciële websites en apps tot een makkelijk toegankelijke juridische vermelding (Impressum) met specifieke informatie: bedrijfsnaam en rechtsvorm, adres, contactgegevens inclusief e-mail, register en registratienummer, btw-identificatienummer en, afhankelijk van het bedrijf, verdere gegevens. Ontbrekende of onvolledige vermeldingen kunnen leiden tot sommaties (Abmahnungen) van concurrenten of verenigingen - een typisch Duits verschijnsel.
 
 Belgische en Nederlandse regels vereisen ook duidelijke bedrijfsidentificatie op websites, maar de Duitse eis is formeler en wordt actiever gehandhaafd. Plaats een volledige juridische vermelding in elke taalversie, bereikbaar vanaf elke pagina en elk appscherm.
 
@@ -36,7 +36,7 @@ Belgische en Nederlandse regels vereisen ook duidelijke bedrijfsidentificatie op
 
 Duitse klanten bedienen betekent meestal Duits aanbieden, niet alleen Engels. Belgische klanten verwachten mogelijk Nederlands of Frans. Naast de interfaceteksten:
 
-- **Juridische documenten** — voorwaarden, privacyverklaring, informatie over herroeping — horen in de taal van de klant beschikbaar te zijn.
+- **Juridische documenten** - voorwaarden, privacyverklaring, informatie over herroeping - horen in de taal van de klant beschikbaar te zijn.
 - **Transactionele e-mails en facturen** moeten de taalinstelling van de klant volgen.
 - **Notaties** verschillen: datums, getallen (decimale komma's), adressen, telefoonnummers.
 - **Validatie** moet Duitse en Franse tekens (ä, ö, ü, ß, é, ç) accepteren zonder stuk te gaan.
@@ -48,14 +48,14 @@ AI-gebouwde apps coderen tekst en notaties meestal vast in één taal. Goede int
 De btw-regels voor grensoverschrijdende digitale diensten binnen de EU zijn specifiek:
 
 - **B2B:** verkopen aan een btw-geregistreerd bedrijf in een ander EU-land gebruikt doorgaans de verleggingsregeling. Je valideert het btw-nummer van de klant (via VIES), rekent geen Nederlandse btw en vermeldt "btw verlegd" op de factuur.
-- **B2C:** voor digitale diensten aan consumenten in andere EU-landen is de btw doorgaans verschuldigd tegen het tarief van het land van de klant — 19% in Duitsland, 21% in België — boven een EU-brede drempel. Met het éénloketsysteem (OSS) kun je dit via de Nederlandse Belastingdienst aangeven.
+- **B2C:** voor digitale diensten aan consumenten in andere EU-landen is de btw doorgaans verschuldigd tegen het tarief van het land van de klant - 19% in Duitsland, 21% in België - boven een EU-brede drempel. Met het éénloketsysteem (OSS) kun je dit via de Nederlandse Belastingdienst aangeven.
 - **Bewijs:** je moet de locatie van de klant vaststellen en vastleggen.
 
 Je app moet btw per klanttype en land berekenen, btw-nummers valideren, correcte facturen maken en de administratie bewaren. AI-gegenereerde checkoutcode past vrijwel altijd één Nederlands tarief toe op iedereen.
 
 ## Betaalmethoden
 
-Nederlandse klanten verwachten iDEAL; Belgen verwachten Bancontact; Duitse klanten gebruiken vaak PayPal, kaarten, SEPA-incasso en achteraf-betaalopties zoals Klarna. Mollie en Stripe ondersteunen de meeste hiervan via één integratie. Bevestig betalingen zoals altijd via geverifieerde webhooks in plaats van redirects in de browser — vooral belangrijk bij methoden met een redirect.
+Nederlandse klanten verwachten iDEAL; Belgen verwachten Bancontact; Duitse klanten gebruiken vaak PayPal, kaarten, SEPA-incasso en achteraf-betaalopties zoals Klarna. Mollie en Stripe ondersteunen de meeste hiervan via één integratie. Bevestig betalingen zoals altijd via geverifieerde webhooks in plaats van redirects in de browser - vooral belangrijk bij methoden met een redirect.
 
 ## Cookies en Toestemming
 
@@ -71,7 +71,7 @@ Verkopen aan consumenten over de grens brengt hun consumentenrecht in het spel: 
 
 ## Van AI-Prototype naar Productie over de Grens: Support en Operatie
 
-Klanten verwachten support in hun taal en tijdens hun kantooruren. Transactionele e-mails, statuspagina's en foutmeldingen horen gelokaliseerd te zijn. Zelfs kleine dingen — een Duitse klant die een Nederlandstalige mail voor wachtwoordherstel krijgt — veroorzaken frictie.
+Klanten verwachten support in hun taal en tijdens hun kantooruren. Transactionele e-mails, statuspagina's en foutmeldingen horen gelokaliseerd te zijn. Zelfs kleine dingen - een Duitse klant die een Nederlandstalige mail voor wachtwoordherstel krijgt - veroorzaken frictie.
 
 ## Internationalisering Goed Implementeren
 
@@ -79,7 +79,7 @@ Bij het naar productie brengen van een AI-prototype voor Duitsland en België is
 
 1. **Haal alle teksten uit componenten** naar vertaalbestanden per taal (`nl.json`, `de.json`, `fr.json`, `en.json`), met een bibliotheek als next-intl, react-i18next of FormatJS.
 2. **Gebruik sleutels, geen zinnen**, zodat tekst kan veranderen zonder verwijzingen te breken.
-3. **Handel meervouden en variabelen af** via het berichtformaat van de bibliotheek, niet via het aan elkaar plakken van strings — Duitse en Franse meervoudsregels verschillen van de Engelse.
+3. **Handel meervouden en variabelen af** via het berichtformaat van de bibliotheek, niet via het aan elkaar plakken van strings - Duitse en Franse meervoudsregels verschillen van de Engelse.
 4. **Formatteer datums, getallen en valuta's** met de `Intl`-API's op basis van de taalinstelling van de gebruiker.
 5. **Vertaal berichten aan de serverkant**: e-mails, pdf's, foutmeldingen en notificaties, op basis van de opgeslagen taal van de gebruiker.
 6. **Zet de taal in de URL's** voor openbare pagina's (`/de/`, `/fr/`) met hreflang-tags, zodat zoekmachines de juiste versie tonen.
@@ -118,7 +118,7 @@ Elk hiervan kent specifieke eisen; laat een advocaat die bekend is met Duits e-c
 | België | Bancontact, kaarten, PayPal, SEPA-incasso |
 | Duitsland | PayPal, kaarten, SEPA-incasso, achteraf betalen (bijv. Klarna), bankoverschrijving |
 
-Bied methoden aan op basis van het land van de klant, en bevestig elke betaling via geverifieerde webhooks. Sommige methoden, zoals SEPA-incasso, bevestigen asynchroon — je app moet netjes omgaan met de status "in behandeling" en latere mislukkingen.
+Bied methoden aan op basis van het land van de klant, en bevestig elke betaling via geverifieerde webhooks. Sommige methoden, zoals SEPA-incasso, bevestigen asynchroon - je app moet netjes omgaan met de status "in behandeling" en latere mislukkingen.
 
 ## Klantenservice in Meerdere Talen
 
@@ -126,7 +126,7 @@ Support in de taal van de klant hoort bij productiegereedheid voor buurmarkten. 
 
 ## Documentatie over Gegevensbescherming voor Duitse Zakelijke Klanten
 
-Duitse B2B-klanten verwachten vaak een Auftragsverarbeitungsvertrag (verwerkersovereenkomst) in het Duits, een lijst met subverwerkers en hun locaties en een beschrijving van technische en organisatorische maatregelen (TOM's). Stel deze één keer op, in lijn met je werkelijke opzet. Een precies TOM-document — toegangsbeheer, versleuteling, back-ups, logging, incidentafhandeling — beantwoordt de meeste vragen voordat ze worden gesteld.
+Duitse B2B-klanten verwachten vaak een Auftragsverarbeitungsvertrag (verwerkersovereenkomst) in het Duits, een lijst met subverwerkers en hun locaties en een beschrijving van technische en organisatorische maatregelen (TOM's). Stel deze één keer op, in lijn met je werkelijke opzet. Een precies TOM-document - toegangsbeheer, versleuteling, back-ups, logging, incidentafhandeling - beantwoordt de meeste vragen voordat ze worden gesteld.
 
 ## Cookietoestemming Die in Duitsland Standhoudt
 
@@ -134,11 +134,11 @@ Duitse toezichthouders en rechters hebben een strikte kijk op toestemmingsbanner
 
 ## Prijzen en Valuta Presenteren
 
-Duitse en Belgische consumenten verwachten prijzen inclusief btw, met het btw-bedrag vermeld waar vereist, en duidelijke informatie over bijkomende kosten zoals bezorging. Voor B2B-klanten zijn prijzen exclusief btw gebruikelijk. Je app moet het juiste formaat tonen afhankelijk van type klant en land, en de factuur moet overeenkomen met wat bij de checkout werd getoond. Afrondingsverschillen tussen getoonde en gefactureerde prijzen zijn een veelvoorkomende bron van klachten in grensoverschrijdende winkels — bereken één keer, sla het resultaat op en gebruik het overal opnieuw.
+Duitse en Belgische consumenten verwachten prijzen inclusief btw, met het btw-bedrag vermeld waar vereist, en duidelijke informatie over bijkomende kosten zoals bezorging. Voor B2B-klanten zijn prijzen exclusief btw gebruikelijk. Je app moet het juiste formaat tonen afhankelijk van type klant en land, en de factuur moet overeenkomen met wat bij de checkout werd getoond. Afrondingsverschillen tussen getoonde en gefactureerde prijzen zijn een veelvoorkomende bron van klachten in grensoverschrijdende winkels - bereken één keer, sla het resultaat op en gebruik het overal opnieuw.
 
 ## Een Uitrolplan voor Buurmarkten
 
-Een verstandige volgorde om vanuit Nederland Duitsland en België te betreden: internationaliseer eerst het product en de juridische teksten; implementeer daarna de btw-logica en lokale betaalmethoden; lanceer vervolgens voor een beperkte groep — bijvoorbeeld bestaande partners over de grens — en verzamel feedback; lokaliseer daarna marketing en support; en breid ten slotte uit. Elke stap is testbaar, en problemen komen boven bij een klein aantal klanten in plaats van tijdens een grote lancering.
+Een verstandige volgorde om vanuit Nederland Duitsland en België te betreden: internationaliseer eerst het product en de juridische teksten; implementeer daarna de btw-logica en lokale betaalmethoden; lanceer vervolgens voor een beperkte groep - bijvoorbeeld bestaande partners over de grens - en verzamel feedback; lokaliseer daarna marketing en support; en breid ten slotte uit. Elke stap is testbaar, en problemen komen boven bij een klein aantal klanten in plaats van tijdens een grote lancering.
 
 ## Wat LaunchStudio Doorgaans Verandert aan Grensoverschrijdende Apps
 
@@ -154,7 +154,7 @@ LaunchStudio helpt oprichters in grensregio's hun AI-gebouwde product klaar te m
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het leveren van software voor internationale klanten vanuit Amsterdam, Singapore en Ho Chi Minh-stad. Zie [het portfolio van Manifera](https://www.manifera.com/portfolio/). Voor btw op digitale diensten is het [OSS-portaal van de Europese Commissie](https://vat-one-stop-shop.ec.europa.eu/) het gezaghebbende startpunt.
 
-[Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — in het Nederlands of Engels.
+[Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) - in het Nederlands of Engels.
 
 ## Praktijkvoorbeeld
 
@@ -169,9 +169,9 @@ In dertien werkdagen internationaliseerden de engineers van LaunchStudio de app 
 **Resultaat:** Het percentage voltooide Duitse checkouts steeg het seizoen daarna met ruwweg een derde, B2B-facturen aan Duitse hotels klopten, en de sommatie werd zonder verdere problemen afgehandeld. Grensfiets voegde het jaar daarna elf Duitse en vier Belgische partnerlocaties toe.
 
 > *"De grens ligt op tien minuten van mijn winkel. Voor mijn app bleek hij een stuk verder weg te liggen."*
-> — **Annelies Brink, Oprichter, Grensfiets (Roermond)**
+> - **Annelies Brink, Oprichter, Grensfiets (Roermond)**
 
-**Kosten & Tijdlijn:** € 4.100 (Launch & Grow-pakket: internationalisering, btw-logica, betalingen, toestemming en juridische structuren) — afgerond in 13 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 4.100 (Launch & Grow-pakket: internationalisering, btw-logica, betalingen, toestemming en juridische structuren) - afgerond in 13 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 

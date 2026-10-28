@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Customer Data and Third-Party Models: What Leaves Your System",
-  "description": "Adding an AI feature means sending your customers' data to another company. What that requires under GDPR, the questions business customers will ask, and the practical measures — minimisation, redaction, regional processing — that make the answers acceptable.",
+  "description": "Adding an AI feature means sending your customers' data to another company. What that requires under GDPR, the questions business customers will ask, and the practical measures - minimisation, redaction, regional processing - that make the answers acceptable.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-05-27",
@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-An AI feature is, from a data protection standpoint, a decision to send your customers' information to another company's computers. That is not an argument against it — the same is true of your hosting provider, your email service, and your payment processor. It is an argument for treating it with the same seriousness, which founders frequently do not, because a model API feels like a library rather than a supplier.
+An AI feature is, from a data protection standpoint, a decision to send your customers' information to another company's computers. That is not an argument against it - the same is true of your hosting provider, your email service, and your payment processor. It is an argument for treating it with the same seriousness, which founders frequently do not, because a model API feels like a library rather than a supplier.
 
 The moment this becomes concrete is the first business customer who asks where their data goes. In regulated sectors that question arrives during procurement, and "I'm not sure" ends the conversation.
 
@@ -40,9 +40,9 @@ Then there is the question that decides whether some customers can use your prod
 
 For European customers this is frequently the deciding factor, and it has become more addressable than it was.
 
-The major providers now offer regional processing options — European endpoints, or contractual commitments about where data is handled and stored. Some offer zero-retention arrangements where inputs are not stored at all after the response. Whether these are available depends on the provider and the tier, and they occasionally cost more or restrict which models can be used.
+The major providers now offer regional processing options - European endpoints, or contractual commitments about where data is handled and stored. Some offer zero-retention arrangements where inputs are not stored at all after the response. Whether these are available depends on the provider and the tier, and they occasionally cost more or restrict which models can be used.
 
-The practical approach: find out what your provider offers for European processing, choose it if your customers are European businesses, and be able to state plainly where data goes. For customers in healthcare, legal, financial services, or the public sector, this is not a preference — a data transfer outside the EU without an appropriate basis can be the reason a deal does not happen, regardless of how good the feature is.
+The practical approach: find out what your provider offers for European processing, choose it if your customers are European businesses, and be able to state plainly where data goes. For customers in healthcare, legal, financial services, or the public sector, this is not a preference - a data transfer outside the EU without an appropriate basis can be the reason a deal does not happen, regardless of how good the feature is.
 
 Some customers will require processing that never leaves their jurisdiction, which points to a self-hosted or regionally-guaranteed model. That is a significant architectural decision and worth making only when a customer's money depends on it.
 
@@ -56,7 +56,7 @@ The most effective protection is not contractual. It is not sending the data in 
 
 **Never send secrets or credentials**, including anything that might be embedded in a document a customer uploaded.
 
-**Exclude special-category data by default** — health, biometric, and similar information carries stricter obligations, and sending it to a third party requires a firmer basis than convenience.
+**Exclude special-category data by default** - health, biometric, and similar information carries stricter obligations, and sending it to a third party requires a firmer basis than convenience.
 
 Minimisation has a second benefit worth noting: it usually improves the output. A model given a focused input produces a better answer than one given everything and asked to find the relevant part, and it costs less.
 
@@ -68,9 +68,9 @@ Business customers ask a consistent set of questions, and having written answers
 
 Which providers process our data, and where. What specifically is sent. Is it used for training. How long is it retained by the provider. Can the AI feature be disabled for our account. What happens to generated content if we delete our data. Who at your company can see the inputs and outputs.
 
-That last one deserves attention, because it is often overlooked. If your logging captures model inputs and outputs for debugging — which is useful and recommended — then those logs contain customer data, potentially in a third-party logging service, accessible to anyone with access to it. That needs the same retention policy, the same access control, and the same mention in your documentation as the rest.
+That last one deserves attention, because it is often overlooked. If your logging captures model inputs and outputs for debugging - which is useful and recommended - then those logs contain customer data, potentially in a third-party logging service, accessible to anyone with access to it. That needs the same retention policy, the same access control, and the same mention in your documentation as the rest.
 
-The penultimate question matters too. When a customer exercises their right to erasure, generated content derived from their data is their data, and deletion must reach it — including anything stored at the provider if retention is enabled.
+The penultimate question matters too. When a customer exercises their right to erasure, generated content derived from their data is their data, and deletion must reach it - including anything stored at the provider if retention is enabled.
 
 ## Give Customers the Choice
 
@@ -86,7 +86,7 @@ This is worth building before the first enterprise conversation rather than duri
 
 ### The Feature That Cost a Healthcare Deal
 
-Ruben Aarts ran Zorgnotitie, a note-taking tool for allied health practices, built in Bolt. A feature summarised session notes, sending the full note — including patient name, date of birth, and clinical detail — to a model provider on a consumer-tier account, with no data processing agreement and no regional configuration.
+Ruben Aarts ran Zorgnotitie, a note-taking tool for allied health practices, built in Bolt. A feature summarised session notes, sending the full note - including patient name, date of birth, and clinical detail - to a model provider on a consumer-tier account, with no data processing agreement and no regional configuration.
 
 A practice group of eleven clinics reached procurement, and the questionnaire asked the standard questions. He could not say where processing occurred, had no agreement in place, could not confirm the data was not used for training, and had no way to disable the feature for an account. The process ended there.
 
@@ -95,7 +95,7 @@ The review found more. Model inputs and outputs were being logged in full to a t
 **Result:** the provider account moved to a business tier with a data processing agreement and European processing, notes redacted of patient identifiers before sending with restoration afterwards, model input and output logging reduced to metadata only, an account-level switch to disable AI processing, generated content brought into the deletion path, and a written data-flow document for procurement questionnaires. The practice group re-engaged the following quarter and signed.
 
 > "The feature was the reason they were interested and the reason they said no. Everything they asked was reasonable and I had answers to none of it."
-> — **Ruben Aarts, Founder, Zorgnotitie**
+> - **Ruben Aarts, Founder, Zorgnotitie**
 
 **Cost & Timeline:** data minimisation, provider configuration, and documentation delivered in 4 business days.
 

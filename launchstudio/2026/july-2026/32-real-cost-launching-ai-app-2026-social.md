@@ -1,4 +1,4 @@
-🔥 Lily built a prototype using **Cursor** — lily, a startup founder, used **cursor** to build a influencer pitch deck generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Lily built a prototype using **Cursor** - lily, a startup founder, used **cursor** to build a influencer pitch deck generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lily's application achieved production readiness: Lily went live for a fraction of the cost, preserving development budget for user acquisition. (€2,100 (Production Launch Package) — production-ready and deployed in 7 business days.). 🚀
+Lily's application achieved production readiness: Lily went live for a fraction of the cost, preserving development budget for user acquisition. (€2,100 (Production Launch Package) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-launching-ai-app-2026
 

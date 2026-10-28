@@ -87,15 +87,15 @@ Latvian is the official language and important for public services and daily lif
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and there is no paid placement, so small and large employers appear on equal terms.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Riga you will find few or no local vacancies there today. Use Latvian job portals, company career pages and local tech community channels as primary sources. OnlyAIJobs is useful for comparing Riga with the Netherlands — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a method: filter by AI category and real commute rather than by title. Latvian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Riga you will find few or no local vacancies there today. Use Latvian job portals, company career pages and local tech community channels as primary sources. OnlyAIJobs is useful for comparing Riga with the Netherlands - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a method: filter by AI category and real commute rather than by title. Latvian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Working on Smaller Languages: What It Involves
 
-Language technology for Latvian, Lithuanian, Estonian and other smaller languages differs from English-centric NLP in important ways. Training data is scarcer, so data collection, cleaning and augmentation matter more. Rich morphology means that a single word can take many forms, which affects tokenisation and evaluation. Public administrations and businesses need systems that handle official terminology, legal texts and formal registers reliably. Evaluation is harder, because standard benchmarks may not exist and native-speaker judgement is essential. Engineers who master these challenges gain expertise that is transferable to many of the EU's official languages — a growing need as European institutions and governments deploy AI-based services in all member-state languages.
+Language technology for Latvian, Lithuanian, Estonian and other smaller languages differs from English-centric NLP in important ways. Training data is scarcer, so data collection, cleaning and augmentation matter more. Rich morphology means that a single word can take many forms, which affects tokenisation and evaluation. Public administrations and businesses need systems that handle official terminology, legal texts and formal registers reliably. Evaluation is harder, because standard benchmarks may not exist and native-speaker judgement is essential. Engineers who master these challenges gain expertise that is transferable to many of the EU's official languages - a growing need as European institutions and governments deploy AI-based services in all member-state languages.
 
 ## Product ML in Riga's SaaS Companies
 
-Riga's SaaS and e-commerce companies illustrate how ML supports global products from a small city. Forecasting demand and production capacity, optimising fulfilment across facilities, detecting fraudulent orders, personalising onboarding and building AI-powered features for customers are typical tasks. Language model features — translation, content generation, summarisation — are particularly relevant for localisation and content platforms. These companies usually run English-speaking teams with international colleagues, modern cloud infrastructure and experimentation practices, giving engineers experience comparable to that in larger hubs.
+Riga's SaaS and e-commerce companies illustrate how ML supports global products from a small city. Forecasting demand and production capacity, optimising fulfilment across facilities, detecting fraudulent orders, personalising onboarding and building AI-powered features for customers are typical tasks. Language model features - translation, content generation, summarisation - are particularly relevant for localisation and content platforms. These companies usually run English-speaking teams with international colleagues, modern cloud infrastructure and experimentation practices, giving engineers experience comparable to that in larger hubs.
 
 ## Evaluating Service Centre Roles
 
@@ -103,7 +103,7 @@ Technology and service centres of Nordic and international companies are signifi
 
 ## Living in Riga
 
-Riga is compact, with a UNESCO-listed historic centre, extensive Art Nouveau districts, parks and access to the Baltic Sea at Jūrmala, a short train ride away. Public transport — trams, trolleybuses and buses — covers the city, and distances are short, so commutes are typically much shorter than in large capitals. Housing costs are moderate by EU standards, though modern apartments in central areas have become more expensive. Winters are cold and dark, summers bright and pleasant. Riga International Airport, airBaltic's hub, connects the city with much of Europe.
+Riga is compact, with a UNESCO-listed historic centre, extensive Art Nouveau districts, parks and access to the Baltic Sea at Jūrmala, a short train ride away. Public transport - trams, trolleybuses and buses - covers the city, and distances are short, so commutes are typically much shorter than in large capitals. Housing costs are moderate by EU standards, though modern apartments in central areas have become more expensive. Winters are cold and dark, summers bright and pleasant. Riga International Airport, airBaltic's hub, connects the city with much of Europe.
 
 ## Networking in a Small Ecosystem
 
@@ -111,7 +111,7 @@ In Riga, relationships matter. Many roles are filled through recommendations, an
 
 ## Remote Work and International Employers
 
-Many Latvian engineers work remotely for companies in other countries, either as employees through local entities or employer-of-record services or as contractors. This can bring higher salaries while living in Riga, but it has implications for tax residence, social security and employment protection that should be clarified in advance. It can also limit mentoring and career visibility. A combination — a local role with international projects, or remote work combined with active participation in the Riga community — often works best.
+Many Latvian engineers work remotely for companies in other countries, either as employees through local entities or employer-of-record services or as contractors. This can bring higher salaries while living in Riga, but it has implications for tax residence, social security and employment protection that should be clarified in advance. It can also limit mentoring and career visibility. A combination - a local role with international projects, or remote work combined with active participation in the Riga community - often works best.
 
 ## Questions to Ask Riga Employers
 

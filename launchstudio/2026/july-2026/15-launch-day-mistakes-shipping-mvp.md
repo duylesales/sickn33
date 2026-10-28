@@ -45,7 +45,7 @@ You survived the prototype phase, hardened your security, and configured your de
 
 **Why it is a disaster**: Live payment flows have complexities that test mode hides: bank declines, 3D Secure authentication popups, webhook delays, and strict validation rules. If your checkout is broken, you are paying to acquire users you cannot monetize.
 
-**What to do instead**: Obsessively monitor your Stripe dashboard. On launch day, manually process a €1 real transaction yourself every few hours. If a user's payment fails, reach out to them personally within minutes — it shows incredible customer service and helps you debug live issues.
+**What to do instead**: Obsessively monitor your Stripe dashboard. On launch day, manually process a €1 real transaction yourself every few hours. If a user's payment fails, reach out to them personally within minutes - it shows incredible customer service and helps you debug live issues.
 
 ## The Launch Day Checklist
 
@@ -65,7 +65,7 @@ Print this and put it next to your monitor on launch day:
 
 ## Key Takeaways
 
-- Never launch on a Friday — you lose weekend support from infrastructure providers.
+- Never launch on a Friday - you lose weekend support from infrastructure providers.
 
 - Avoid the "big bang" launch; roll out to small cohorts first to catch inevitable bugs.
 
@@ -91,7 +91,7 @@ Noah partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 
 **Result:** Noah handled a launch-day spike of over 8,000 document uploads without a single database timeout.
 
-**Cost & Timeline:** €1,900 (Launch Guard Package) — production-ready and deployed in 6 business days.
+**Cost & Timeline:** €1,900 (Launch Guard Package) - production-ready and deployed in 6 business days.
 
 ---
 

@@ -43,12 +43,12 @@ Het bouwen van een terugbetalingsformulier dat een bestelreferentie en een reden
 
 ## Stap drie: Zie waarom dit slaagt voor elke test met echte, correcte bestellingen
 
-Het testen van een retour- of terugbetalingsfunctie met reële, bestaande bestellingen die daadwerkelijk toebehoren aan het eigen testaccount levert elke keer een correct resultaat op. Het beschreven scenario — een legitieme klant die restitutie aanvraagt voor zijn eigen echte order — is immers exact waarop de functionaliteit tijdens de bouw is getest. Niets aan dit natuurlijke testproces onthult wat er gebeurt wanneer iemand opzettelijk verwijst naar een bestelling die helemaal niet bestaat of die toebehoort aan een andere klant. Een oprichter die zijn eigen afrekenstroom test, gebruikt logischerwijs zijn eigen testorders; er is geen vanzelfsprekende aanleiding om een verzonnen ordernummer in te voeren, omdat dat zou vereisen dat men de functie bewust probeert te breken.
+Het testen van een retour- of terugbetalingsfunctie met reële, bestaande bestellingen die daadwerkelijk toebehoren aan het eigen testaccount levert elke keer een correct resultaat op. Het beschreven scenario - een legitieme klant die restitutie aanvraagt voor zijn eigen echte order - is immers exact waarop de functionaliteit tijdens de bouw is getest. Niets aan dit natuurlijke testproces onthult wat er gebeurt wanneer iemand opzettelijk verwijst naar een bestelling die helemaal niet bestaat of die toebehoort aan een andere klant. Een oprichter die zijn eigen afrekenstroom test, gebruikt logischerwijs zijn eigen testorders; er is geen vanzelfsprekende aanleiding om een verzonnen ordernummer in te voeren, omdat dat zou vereisen dat men de functie bewust probeert te breken.
 
 
 ## Stap vier: Begrijp het specifieke frauderisico dat dit creëert
 
-Zonder deugdelijke backend-verificatie kan een terugbetalingsverzoek dat verwijst naar een verzonnen of gemanipuleerd ordernummer potentieel worden verwerkt en uitbetaald, ongeacht of een dergelijke bestelling ooit daadwerkelijk heeft plaatsgevonden. Dit creëert effectief een mechanisme om direct geld aan de onderneming te onttrekken zonder enige legitieme onderliggende transactie — een wezenlijk ernstiger risico dan een eenvoudige visuele fout. Dit risico schaalt bovendien op een bijzonder pijnlijke manier: in tegenstelling tot een gewone bug die per toeval wordt ontdekt, is een ongecontroleerde terugbetalingsroute herhaalbaar. Iedereen die het patroon eenmaal ontdekt, kan het keer op keer geautomatiseerd toepassen totdat iemand het toevallig opmerkt in de financiële boekhouding.
+Zonder deugdelijke backend-verificatie kan een terugbetalingsverzoek dat verwijst naar een verzonnen of gemanipuleerd ordernummer potentieel worden verwerkt en uitbetaald, ongeacht of een dergelijke bestelling ooit daadwerkelijk heeft plaatsgevonden. Dit creëert effectief een mechanisme om direct geld aan de onderneming te onttrekken zonder enige legitieme onderliggende transactie - een wezenlijk ernstiger risico dan een eenvoudige visuele fout. Dit risico schaalt bovendien op een bijzonder pijnlijke manier: in tegenstelling tot een gewone bug die per toeval wordt ontdekt, is een ongecontroleerde terugbetalingsroute herhaalbaar. Iedereen die het patroon eenmaal ontdekt, kan het keer op keer geautomatiseerd toepassen totdat iemand het toevallig opmerkt in de financiële boekhouding.
 
 
 ## Stap vijf: Implementeer verificatie zonder legitieme terugbetalingen te bemoeilijken
@@ -61,7 +61,7 @@ Manifera's engineering voor bedrijfslogica en fraudepreventie wordt geleverd via
 
 ## Een Checklist voor Elke Functie Die Geld Verplaatst op Basis van een Gebruikersclaim
 
-Terugbetalingen zijn slechts één voorbeeld van een bredere categorie: elke functionaliteit waarbij een gebruiker verwijst naar een entiteit (een bestelling, een tegoedbon, een verwijzingsbonus of een eerdere betaling) en het systeem actie onderneemt — doorgaans met financiële gevolgen — op basis van de aanname dat die referentie legitiem is. Ditzelfde controlekader geldt voor al deze functies:
+Terugbetalingen zijn slechts één voorbeeld van een bredere categorie: elke functionaliteit waarbij een gebruiker verwijst naar een entiteit (een bestelling, een tegoedbon, een verwijzingsbonus of een eerdere betaling) en het systeem actie onderneemt - doorgaans met financiële gevolgen - op basis van de aanname dat die referentie legitiem is. Ditzelfde controlekader geldt voor al deze functies:
 
 - **Verifieert de backend de actuele status van de oorspronkelijke transactie?** Vertrouw nooit op een claim van de frontend ('deze bestelling is geretourneerd'). De server moet zelfstandig in de database verifiëren of de order daadwerkelijk is betaald, niet eerder is terugbetaald en binnen het geldige retourvenster valt.
 - **Wordt het terug te betalen bedrag berekend op de server?** Accepteer nooit een bedragsparameter vanuit de browser van de gebruiker. Het restitutiebedrag moet altijd door de backend worden berekend op basis van de opgeslagen orderregels.
@@ -82,9 +82,9 @@ Een financiële controle opmerkte verschillende verwerkte terugbetalingen die ve
 **Resultaat:** LaunchStudio implementeerde de juiste orderverificatie tegen PlantAbonnement's daadwerkelijke bestelrecords voordat er enige terugbetaling wordt verwerkt. Dit sloot de kloof en voorkwam verdere uitbetalingen tegen gefabriceerde referentienummers.
 
 > *"We verwerkten oprecht vol vertrouwen terugbetalingen, de ene na de andere, zonder enige reden om te vermoeden dat ze niet echt waren. Het is een raar gevoel als je je realiseert dat je hebt uitbetaald tegen bestellingen die simpelweg niet bestonden."*
-> — **Wim Peters, Oprichter, PlantAbonnement (Roermond)**
+> - **Wim Peters, Oprichter, PlantAbonnement (Roermond)**
 
-**Kosten en tijdlijn:** € 1.800 (orderverificatie en versterking van terugbetalingslogica) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.800 (orderverificatie en versterking van terugbetalingslogica) - voltooid in 6 werkdagen.
 
 ---
 
@@ -96,7 +96,7 @@ Omdat een AI-tool de prompt letterlijk volgt: 'maak een knop waarmee de gebruike
 
 ### Zou een e-commerce specialist dit beschouwen als een van de meest schadelijke mogelijke bugs?
 
-Ja, absoluut — in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform.
+Ja, absoluut - in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform.
 
 ### Hoe waarborgt Manifera de integriteit van betaal- en afrekenstromen bij maatwerksoftware?
 
@@ -128,7 +128,7 @@ Vertrouw nooit een enkel veld dat door de client wordt aangeleverd met betrekkin
       "name": "Zou een e-commerce specialist dit beschouwen als een van de meest schadelijke mogelijke bugs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, absoluut — in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform."
+        "text": "Ja, absoluut - in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform."
       }
     },
     {

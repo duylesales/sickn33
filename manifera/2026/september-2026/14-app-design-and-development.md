@@ -44,7 +44,7 @@ When the offshore engineering team receives these designs, one of two things hap
 1. **The Budget Explodes:** The engineers follow the design literally, spending hundreds of hours building complex backend systems to support trivial UI animations or data tables.
 2. **The UX Breaks:** The engineers realize the design is unbuildable within budget, so they quietly cut corners. The final product looks nothing like the beautiful Figma prototype, and the founder is furious.
 
-> "Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious." — Fred Brooks, *The Mythical Man-Month*
+> "Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious." - Fred Brooks, *The Mythical Man-Month*
 
 Fred Brooks wrote that in 1975, decades before Figma existed, and it is still the most precise description of the Design-First Fallacy available. A UI mockup is a flowchart with better typography. It shows the intended path through the software, but it says nothing about what the software actually has to store, join, and compute to make that path real. If you design the UI without first understanding what the underlying tables can efficiently produce, you are writing checks your backend cannot cash.
 
@@ -80,7 +80,7 @@ Elite design teams enforce a simple governance artifact before development start
 ### The Responsive Breakpoint Gap
 The same discipline applies to screen width. Most Figma files are designed at a single desktop frame size (commonly 1440px). Without explicit breakpoint designs for tablet (around 768px) and mobile (around 375px), the frontend team is left guessing how a 12-column dashboard should collapse, and every developer guesses differently. Architecture-Led Design mandates at least three breakpoint mockups per complex screen, not just a "responsive" checkbox in the handoff notes.
 
-## Design Still Matters — Just Not First
+## Design Still Matters - Just Not First
 
 It is worth being precise about what this argument is not. It is not "design doesn't matter." McKinsey's "The Business Value of Design" study tracked the design actions of 300 publicly listed companies across five years and more than two million pieces of financial data. Companies in the top quartile of McKinsey's Design Index posted 32% higher revenue growth and 56% higher total returns to shareholders than their industry peers over that period, a result that held across medical technology, consumer goods, and retail banking. Good design is one of the most measurable levers a product organization has.
 

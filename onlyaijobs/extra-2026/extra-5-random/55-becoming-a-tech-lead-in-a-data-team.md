@@ -169,7 +169,7 @@ Not everyone should, and the field would be healthier if that were said more oft
 
 The role suits people who find other people's development satisfying, who enjoy the puzzle of an organisation as much as a technical one, who can tolerate ambiguity and unfinished business, and who do not need to be the one who solved the problem.
 
-It suits less well people whose satisfaction comes primarily from building, who find interruption genuinely draining, or who dislike conflict — because a meaningful part of the job is holding a position when someone senior disagrees.
+It suits less well people whose satisfaction comes primarily from building, who find interruption genuinely draining, or who dislike conflict - because a meaningful part of the job is holding a position when someone senior disagrees.
 
 There is no career ladder in which leadership is the only way up. Senior individual contributor tracks exist in most serious European technology employers and reach comparable seniority and pay. If your organisation has no such track, that is worth knowing before you conclude that leadership is your only option.
 
@@ -207,7 +207,7 @@ A year later the team delivered more, two engineers had grown visibly, and he de
 
 ## Where to Start
 
-Take responsibility for one cross-cutting concern — evaluation standards, the deployment path, or the team's technical direction — before you have the title. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Take responsibility for one cross-cutting concern - evaluation standards, the deployment path, or the team's technical direction - before you have the title. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

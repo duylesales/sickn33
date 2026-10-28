@@ -1,4 +1,4 @@
-🚨 A generic SaaS quote and a pharma-compliant SaaS quote look deceptively similar — until an audit asks for a validation record the generic build never produced. 💊⚙️
+🚨 A generic SaaS quote and a pharma-compliant SaaS quote look deceptively similar - until an audit asks for a validation record the generic build never produced. 💊⚙️
 
 **The Pain Points:**
 ❌ **Compliance Priced as an Afterthought:** Validation documentation and audit trails left off the original quote entirely.

@@ -1,8 +1,8 @@
-🚂 Femke Bosman bouwde RailDock, een platform voor vrachtplanning en het koppelen van vervoerders voor transportbedrijven rond Meppel, met v0 gedurende drie weken aan avonden — en een routinematige beoordeling vóór de lancering ontdekte dat de betalingswebhook nooit controleerde of verzoeken daadwerkelijk van Stripe kwamen. Iedereen die de URL raadde, kon een nep "betaling geslaagd"-gebeurtenis vervalsen. 😳
+🚂 Femke Bosman bouwde RailDock, een platform voor vrachtplanning en het koppelen van vervoerders voor transportbedrijven rond Meppel, met v0 gedurende drie weken aan avonden - en een routinematige beoordeling vóór de lancering ontdekte dat de betalingswebhook nooit controleerde of verzoeken daadwerkelijk van Stripe kwamen. Iedereen die de URL raadde, kon een nep "betaling geslaagd"-gebeurtenis vervalsen. 😳
 
 Ze had haar afrekenflow vijftig keer getest. Het werkte altijd. Dat is precies het probleem. 🧠
 
-❌ Het webhook-endpoint accepteerde ongesigneerde verzoeken — een nep "betaald"-gebeurtenis kon gratis vracht boeken
+❌ Het webhook-endpoint accepteerde ongesigneerde verzoeken - een nep "betaald"-gebeurtenis kon gratis vracht boeken
 ❌ Rolgebaseerde toegang (vervoerders versus verladers) werd alleen in de UI afgedwongen, nooit op de backend
 ❌ Beide flows werkten foutloos in haar eigen tests, waardoor ze ze nooit verdacht
 ❌ "Werkt altijd voor mij" en "kan niet door iemand anders worden vervalst" bleken twee verschillende dingen te zijn

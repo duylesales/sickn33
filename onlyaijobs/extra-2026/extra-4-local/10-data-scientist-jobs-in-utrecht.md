@@ -82,7 +82,7 @@ In the Dutch market, job titles are often in English, but postings may be writte
 
 ## Commuting: Searching by Distance, Not by City
 
-Utrecht's central location changes how you should search. A data scientist living in Utrecht can realistically consider jobs in Amersfoort, Hilversum, Amsterdam and parts of the Randstad, and sometimes further. Conversely, living outside Utrecht — for example in Houten, Nieuwegein, Zeist, Amersfoort or even Arnhem — can make Utrecht employers accessible while offering different housing options.
+Utrecht's central location changes how you should search. A data scientist living in Utrecht can realistically consider jobs in Amersfoort, Hilversum, Amsterdam and parts of the Randstad, and sometimes further. Conversely, living outside Utrecht - for example in Houten, Nieuwegein, Zeist, Amersfoort or even Arnhem - can make Utrecht employers accessible while offering different housing options.
 
 This is precisely why a city label is a weak filter. What matters is the time from your home to the employer's actual office. An office on the Utrecht Science Park is a different commute from one near Utrecht Centraal or in the Papendorp business area on the western side. OnlyAIJobs shows each vacancy at its exact address together with the distance from your home, so you can compare real commutes instead of city names.
 
@@ -169,7 +169,7 @@ Investing in one or two of these areas alongside your core modelling skills make
 
 A data scientist from Italy, living in Amsterdam, receives offers from an e-commerce company in Amsterdam and from a mobility organisation in Utrecht. The Amsterdam offer pays slightly more, but her flat is expensive and the lease ends soon.
 
-She maps both offices by exact address and compares realistic homes: a flat in Amersfoort or Utrecht is more affordable and puts both employers within a train commute. She realises that choosing Utrecht as a place to live keeps both options open for future job changes. She accepts the Utrecht role, moves to a neighbourhood near a station and cycles to work. Two years later, when she considers a new role, she can look at employers across a large part of the country without moving again — the practical advantage of Utrecht's central position.
+She maps both offices by exact address and compares realistic homes: a flat in Amersfoort or Utrecht is more affordable and puts both employers within a train commute. She realises that choosing Utrecht as a place to live keeps both options open for future job changes. She accepts the Utrecht role, moves to a neighbourhood near a station and cycles to work. Two years later, when she considers a new role, she can look at employers across a large part of the country without moving again - the practical advantage of Utrecht's central position.
 
 ## Key Takeaways
 

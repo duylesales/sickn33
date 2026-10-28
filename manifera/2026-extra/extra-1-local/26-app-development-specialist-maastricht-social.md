@@ -1,8 +1,8 @@
-🚨 Roughly one in three apps submitted by teams without dedicated mobile experience gets rejected on first submission to the App Store, and each rejection cycle costs three to seven days — days a marketing campaign with a fixed launch date does not have. ⚙️💥
+🚨 Roughly one in three apps submitted by teams without dedicated mobile experience gets rejected on first submission to the App Store, and each rejection cycle costs three to seven days - days a marketing campaign with a fixed launch date does not have. ⚙️💥
 
 **The Pain Points:**
 ❌ **The Maastricht Engineering Talent Trap:** A CMO at a Maastricht hospitality and retail brand, the kind that lives off cross-border tourist traffic from Belgium and Germany flowing through the historic city center, hired the same web agency that built the brand's website to build a customer loyalty app. The agency was excellent at websites.
-❌ **Compounding Burn Rate & Delayed Roadmaps:** The app failed Apple's App Store review three separate times — first for an incomplete privacy nutrition label, then for a broken sign-in flow, then for push notification permissions requested at the wrong point in the user journey. Each rejection burned another week.
+❌ **Compounding Burn Rate & Delayed Roadmaps:** The app failed Apple's App Store review three separate times - first for an incomplete privacy nutrition label, then for a broken sign-in flow, then for push notification permissions requested at the wrong point in the user journey. Each rejection burned another week.
 ❌ **The Local Monolith & Freelancer Risk:** Relying on fragmented freelancers or legacy local agencies leads to single-developer dependency, zero test automation, and brittle production deployments.
 
 **The Manifera Solution:**

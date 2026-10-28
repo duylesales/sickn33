@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Agency Lock Marketing Crisis:** A CMO inherited a marketing site built years ago by an agency that never documented the codebase, never handed over clean repository access, and built the CMS integration with enough custom, undocumented logic that no other vendor will confidently quote work on it. Every change, however small, routes through the same agency, at whatever price and timeline they choose to offer, because switching means rebuilding institutional knowledge that was never written down in the first place.
-❌ **The Compounding Business Impact:** Vendor lock-in on a marketing site isn't a mild inconvenience — it's a recurring tax on every single change, and a CMO stuck with a single-vendor hostage codebase typically pays 40-70% above competitive market rates for routine development work, which on a marketing site requiring even modest ongoing development can mean €80,000-€150,000 a year in vendor premium that a properly structured, portable codebase would never have required in the first place.
+❌ **The Compounding Business Impact:** Vendor lock-in on a marketing site isn't a mild inconvenience - it's a recurring tax on every single change, and a CMO stuck with a single-vendor hostage codebase typically pays 40-70% above competitive market rates for routine development work, which on a marketing site requiring even modest ongoing development can mean €80,000-€150,000 a year in vendor premium that a properly structured, portable codebase would never have required in the first place.
 ❌ **The Fatal "Quick Fix" Trap:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

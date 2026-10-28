@@ -21,7 +21,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Bij tien gebruikers is je AI-gebouwde SaaS een gesprek. Je kent iedereen bij naam, je lost dingen op via WhatsApp, en als er iets vreemds gebeurt, vraag je het aan de ene persoon bij wie het gebeurde. Bij honderd gebruikers wordt het een systeem. De app is niet veranderd, maar de omstandigheden eromheen wel, en een specifieke set productieproblemen van AI-apps verschijnt bijna op commando — geen dramatische crashes, maar langzame erosie die je klanten kost voordat je het patroon opmerkt.
+Bij tien gebruikers is je AI-gebouwde SaaS een gesprek. Je kent iedereen bij naam, je lost dingen op via WhatsApp, en als er iets vreemds gebeurt, vraag je het aan de ene persoon bij wie het gebeurde. Bij honderd gebruikers wordt het een systeem. De app is niet veranderd, maar de omstandigheden eromheen wel, en een specifieke set productieproblemen van AI-apps verschijnt bijna op commando - geen dramatische crashes, maar langzame erosie die je klanten kost voordat je het patroon opmerkt.
 
 Dit artikel bekijkt die stap van tien naar honderd, wat er verandert, en wat je als eerste oplost.
 
@@ -35,7 +35,7 @@ Onder die omstandigheden kan een app die door Lovable, Bolt of Cursor is gegener
 
 Honderd gebruikers zijn niet tien gebruikers maal tien. Ze gedragen zich wezenlijk anders.
 
-**Ze overlappen.** Met honderd actieve accounts gebruiken op elk moment meerdere mensen de app, en er ontstaan pieken — een maandagochtend, een herinneringsmail, een deadline. Bewerkingen die nooit tegelijk plaatsvonden, botsen nu.
+**Ze overlappen.** Met honderd actieve accounts gebruiken op elk moment meerdere mensen de app, en er ontstaan pieken - een maandagochtend, een herinneringsmail, een deadline. Bewerkingen die nooit tegelijk plaatsvonden, botsen nu.
 
 **Ze stapelen data op.** Sommige van je gebruikers worden zware gebruikers. Eén team heeft 3.000 records terwijl de meeste er 30 hebben, en pagina's die alles in één keer laden, worden traag voor precies de klanten die jou het meest waarderen.
 
@@ -45,15 +45,15 @@ Honderd gebruikers zijn niet tien gebruikers maal tien. Ze gedragen zich wezenli
 
 ## De Vijf Productieproblemen van AI-Apps Die als Eerste Verschijnen
 
-**1. Pagina's die elke week trager worden.** AI-gegenereerde databasequery's halen vaak hele tabellen op en filteren in de browser, zonder indexen op de kolommen waarop wordt gezocht. Met honderd gebruikers en maanden aan data duurt een dashboard dat 200 milliseconden kostte nu acht seconden. De oplossing — paginering, filteren op de server en een paar goedgekozen indexen — is meestal een of twee dagen werk, maar alleen als iemand het opmerkt voordat gebruikers afhaken.
+**1. Pagina's die elke week trager worden.** AI-gegenereerde databasequery's halen vaak hele tabellen op en filteren in de browser, zonder indexen op de kolommen waarop wordt gezocht. Met honderd gebruikers en maanden aan data duurt een dashboard dat 200 milliseconden kostte nu acht seconden. De oplossing - paginering, filteren op de server en een paar goedgekozen indexen - is meestal een of twee dagen werk, maar alleen als iemand het opmerkt voordat gebruikers afhaken.
 
 **2. E-mails die stilletjes niet meer aankomen.** Veel AI-gebouwde apps versturen e-mail via een gratis abonnement of de ingebouwde verzender van de databaseaanbieder, die is bedoeld voor authenticatiemails tijdens ontwikkeling, niet voor transactioneel volume. Op een gegeven moment bereik je een daglimiet en mislukken e-mails stil, of heeft je verzenddomein geen SPF-, DKIM- en DMARC-records en sturen inboxaanbieders je naar de spam. Hoe dan ook verdwijnen wachtwoordherstelmails en facturen.
 
-**3. Twee mensen die hetzelfde bewerken.** Een gedeelde teamagenda, een voorraadtelling, een lijst met vrije plekken. Met tien gebruikers zijn gelijktijdige bewerkingen zeldzaam. Met honderd wint de laatste opslag en verdwijnt iemands werk — of boeken twee klanten dezelfde plek.
+**3. Twee mensen die hetzelfde bewerken.** Een gedeelde teamagenda, een voorraadtelling, een lijst met vrije plekken. Met tien gebruikers zijn gelijktijdige bewerkingen zeldzaam. Met honderd wint de laatste opslag en verdwijnt iemands werk - of boeken twee klanten dezelfde plek.
 
 **4. Supportvragen die je niet kunt beantwoorden.** Wanneer een gebruiker zegt "mijn betaling is gelukt maar ik kan niet bij de cursus", moet je kunnen opzoeken wat er gebeurde. De meeste AI-gebouwde apps hebben geen beheerweergave, geen audittrail en geen doorzoekbare logs, dus elke supportvraag betekent met de hand in de database graven.
 
-**5. Rekeningen die sneller groeien dan de omzet.** AI-functies die bij elke paginaweergave een taalmodel aanroepen, afbeeldingen opgeslagen op volledige resolutie, serverless functies die om de paar seconden pollen — bij tien gebruikers doet niets daarvan ertoe. Bij honderd kan het een winstgevend abonnement in een verlies veranderen.
+**5. Rekeningen die sneller groeien dan de omzet.** AI-functies die bij elke paginaweergave een taalmodel aanroepen, afbeeldingen opgeslagen op volledige resolutie, serverless functies die om de paar seconden pollen - bij tien gebruikers doet niets daarvan ertoe. Bij honderd kan het een winstgevend abonnement in een verlies veranderen.
 
 ## Een Voor-en-Na-Tabel Die Je Kunt Gebruiken
 
@@ -69,7 +69,7 @@ Honderd gebruikers zijn niet tien gebruikers maal tien. Ze gedragen zich wezenli
 
 Ben je voorbij de MVP en groei je, dan bouw je waarschijnlijk ook nog functies. Elke nieuwe functie wordt gegenereerd met dezelfde standaardinstellingen als de oude, dus de problemen vermenigvuldigen zich in plaats van dat ze worden opgelost. Het beste moment om ze op te lossen ligt rond 50–100 gebruikers, wanneer je genoeg echte data hebt om de patronen te zien en nog weinig genoeg klanten dat fixes goedkoop zijn.
 
-Hier past het Launch & Grow-pakket van LaunchStudio het vaakst: het versterkingswerk als project tegen vaste prijs, gevolgd door beheerde hosting, monitoring, back-ups en beveiligingsupdates voor € 49 per maand, zodat de volgende honderd gebruikers dezelfde problemen niet opnieuw introduceren. LaunchStudio wordt ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — en de engineers die het werk doen, vanuit het ontwikkelcentrum van Manifera in Ho Chi Minh-stad en aangestuurd vanaf de Herengracht 420 in Amsterdam, hebben systemen geschaald tot ver voorbij honderd gebruikers. Zie hoe die teams zijn georganiseerd op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/). Meer details staan op de [pakkettenpagina](https://launchstudio.eu/nl/#packages).
+Hier past het Launch & Grow-pakket van LaunchStudio het vaakst: het versterkingswerk als project tegen vaste prijs, gevolgd door beheerde hosting, monitoring, back-ups en beveiligingsupdates voor € 49 per maand, zodat de volgende honderd gebruikers dezelfde problemen niet opnieuw introduceren. LaunchStudio wordt ondersteund door Manifera - vertrouwd door Vodafone, TNO en CFLW - en de engineers die het werk doen, vanuit het ontwikkelcentrum van Manifera in Ho Chi Minh-stad en aangestuurd vanaf de Herengracht 420 in Amsterdam, hebben systemen geschaald tot ver voorbij honderd gebruikers. Zie hoe die teams zijn georganiseerd op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/). Meer details staan op de [pakkettenpagina](https://launchstudio.eu/nl/#packages).
 
 ## De Vijf Problemen Diagnosticeren met Data, Niet met Gokken
 
@@ -77,7 +77,7 @@ Wanneer groei productieproblemen van AI-apps blootlegt, is de verleiding te gokk
 
 **Voor trage pagina's:** open de weergave van queryprestaties bij je databaseaanbieder (Supabase heeft er een ingebouwd) en sorteer op totale tijd. In bijna elke AI-gebouwde app die we bekijken, nemen drie tot vijf query's het grootste deel van de databasetijd voor hun rekening. Draai `EXPLAIN ANALYZE` op elk ervan; zoek naar sequentiële scans op grote tabellen en naar query's die per paginaweergave honderden keren worden uitgevoerd.
 
-**Voor ontbrekende e-mails:** het dashboard van je transactionele e-mailaanbieder toont aantallen afgeleverde, teruggekaatste, uitgestelde en als spam gemelde berichten. Gebruik je de ingebouwde verzender van de databaseaanbieder, controleer dan de limieten in de documentatie — die zijn meestal bedoeld voor volumes tijdens ontwikkeling.
+**Voor ontbrekende e-mails:** het dashboard van je transactionele e-mailaanbieder toont aantallen afgeleverde, teruggekaatste, uitgestelde en als spam gemelde berichten. Gebruik je de ingebouwde verzender van de databaseaanbieder, controleer dan de limieten in de documentatie - die zijn meestal bedoeld voor volumes tijdens ontwikkeling.
 
 **Voor gelijktijdige bewerkingen:** doorzoek supportberichten op woorden als "verdwenen", "teruggezet", "terug veranderd". Kijk daarna naar de betreffende tabel: heeft die een kolom `updated_at` die de app echt controleert vóór het opslaan? Zo niet, dan is "de laatste opslag wint" vrijwel zeker.
 
@@ -95,11 +95,11 @@ Wanneer groei productieproblemen van AI-apps blootlegt, is de verleiding te gokk
 | Geen zicht voor support | Beheerweergave, auditlog per klant | 2–4 dagen | Trage support, giswerk |
 | Stijgende kosten | Caching, limieten, opslagregels | 1–3 dagen | Uitholling van de marge |
 
-Samen genomen is het werk voor een product met 100 gebruikers meestal één tot drie weken — weinig vergeleken met de kosten van het verliezen van de klanten die deze problemen blootleggen.
+Samen genomen is het werk voor een product met 100 gebruikers meestal één tot drie weken - weinig vergeleken met de kosten van het verliezen van de klanten die deze problemen blootleggen.
 
 ## Optimistische Vergrendeling in Gewone Woorden
 
-De oplossing voor gelijktijdige bewerkingen verdient een korte uitleg, omdat ze zo vaak ontbreekt. Elk record draagt een versienummer. Wanneer een gebruiker een record opent, onthoudt de app de versie. Bij het opslaan accepteert de database de wijziging alleen als de versie nog hetzelfde is, en verhoogt die dan. Heeft iemand anders in de tussentijd opgeslagen, dan wordt de tweede opslag geweigerd en ziet de gebruiker "dit record is door iemand anders gewijzigd — bekijk het en probeer het opnieuw" in plaats van dat het stilletjes wordt overschreven. Het kost een kolom en een voorwaarde, en het elimineert een hele categorie klachten over "mijn wijzigingen zijn verdwenen".
+De oplossing voor gelijktijdige bewerkingen verdient een korte uitleg, omdat ze zo vaak ontbreekt. Elk record draagt een versienummer. Wanneer een gebruiker een record opent, onthoudt de app de versie. Bij het opslaan accepteert de database de wijziging alleen als de versie nog hetzelfde is, en verhoogt die dan. Heeft iemand anders in de tussentijd opgeslagen, dan wordt de tweede opslag geweigerd en ziet de gebruiker "dit record is door iemand anders gewijzigd - bekijk het en probeer het opnieuw" in plaats van dat het stilletjes wordt overschreven. Het kost een kolom en een voorwaarde, en het elimineert een hele categorie klachten over "mijn wijzigingen zijn verdwenen".
 
 ## Capaciteit Plannen voor de Volgende Stap
 
@@ -110,7 +110,7 @@ Het passeren van 100 gebruikers is het juiste moment om eenvoudige capaciteitsdo
 - De CPU van de database moet op piekmomenten onder ongeveer de helft van de capaciteit blijven.
 - Infrastructuurkosten per actieve gebruiker moeten gelijk blijven of dalen.
 
-Meet deze maandelijks. Wanneer er één afdrijft, heb je maanden — geen uren — om te handelen, en dat is het verschil tussen geplande engineering en noodfixes.
+Meet deze maandelijks. Wanneer er één afdrijft, heb je maanden - geen uren - om te handelen, en dat is het verschil tussen geplande engineering en noodfixes.
 
 ## Waarom Stil Afhaken het Echte Risico Is
 
@@ -130,13 +130,13 @@ Drie indicatoren geven een vroege waarschuwing:
 - **Afleverpercentage van e-mail**, zichtbaar bij elke serieuze transactionele e-mailaanbieder. Alles onder ongeveer 98% vraagt om onderzoek.
 - **Wekelijks actieve gebruikers als aandeel van de aanmeldingen.** Een dalend aandeel, zonder klachten, betekent vaak stille problemen.
 
-De richtlijnen van Google over [Core Web Vitals](https://web.dev/articles/vitals) zijn een nuttige externe maatstaf voor wat "snel genoeg" betekent voor echte gebruikers — en voor zoekmachines.
+De richtlijnen van Google over [Core Web Vitals](https://web.dev/articles/vitals) zijn een nuttige externe maatstaf voor wat "snel genoeg" betekent voor echte gebruikers - en voor zoekmachines.
 
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Contributie-App bij Club Nummer 23
 
-Sven Mulder, penningmeester van een hockeyclub in Deventer, bouwde Teamkas in Lovable om contributie, wedstrijdbijdragen en betalingen voor tenues te innen. Het werkte zo goed voor zijn eigen club dat hij er een SaaS van maakte, en binnen zes maanden gebruikten 23 clubs het — zo'n 110 clubbeheerders en een paar duizend leden die erdoor betaalden.
+Sven Mulder, penningmeester van een hockeyclub in Deventer, bouwde Teamkas in Lovable om contributie, wedstrijdbijdragen en betalingen voor tenues te innen. Het werkte zo goed voor zijn eigen club dat hij er een SaaS van maakte, en binnen zes maanden gebruikten 23 clubs het - zo'n 110 clubbeheerders en een paar duizend leden die erdoor betaalden.
 
 De problemen kwamen samen aan het begin van het nieuwe seizoen. Het betalingsoverzicht voor grotere clubs deed er meer dan tien seconden over om te laden, omdat elke transactie in de browser werd opgehaald en gefilterd. Betalingsherinneringen werden verstuurd via de ingebouwde e-maildienst van Supabase en liepen tegen de limieten aan; honderden herinneringen gingen nooit de deur uit, en clubs dachten dat leden ze negeerden. Twee penningmeesters van dezelfde club die tegelijk de contributie van een lid aanpasten, overschreven elkaar. En toen een club vroeg waarom een lid twee keer was afgeschreven, kon Sven op geen enkele manier zien wat er was gebeurd.
 
@@ -145,9 +145,9 @@ De engineers van LaunchStudio herschreven de zware query's met paginering, filte
 **Resultaat:** Het betalingsoverzicht ging voor de grootste club van meer dan tien seconden naar minder dan één seconde. De aflevering van herinneringen steeg van naar schatting 60% naar boven de 99%, en de openstaande contributie over de clubs heen daalde de maand erna met ongeveer een derde. Teamkas groeide tegen het einde van het seizoen naar 41 clubs.
 
 > *"Elke club die ik toevoegde, maakte de app een beetje slechter, en ik zag het pas toen het nieuwe seizoen ze allemaal tegelijk raakte."*
-> — **Sven Mulder, Oprichter, Teamkas (Deventer)**
+> - **Sven Mulder, Oprichter, Teamkas (Deventer)**
 
-**Kosten & Tijdlijn:** € 3.800 (Launch & Grow-pakket: prestaties, e-mail, gelijktijdigheid en beheertools) — afgerond in 13 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 3.800 (Launch & Grow-pakket: prestaties, e-mail, gelijktijdigheid en beheertools) - afgerond in 13 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
@@ -157,7 +157,7 @@ Het getal is bij benadering. Waar het om gaat, is dat gelijktijdig gebruik, grot
 
 ### Moet ik de schaalbaarheid vóór de lancering oplossen, of wachten op gebruikers?
 
-Los op wat vroeg goedkoop op te lossen is — indexen, e-mailinrichting, basismonitoring — vóór de lancering. Diepere wijzigingen, zoals cachingstrategieën of wachtrijen op de achtergrond, kunnen wachten totdat echt gebruik laat zien waar ze nodig zijn.
+Los op wat vroeg goedkoop op te lossen is - indexen, e-mailinrichting, basismonitoring - vóór de lancering. Diepere wijzigingen, zoals cachingstrategieën of wachtrijen op de achtergrond, kunnen wachten totdat echt gebruik laat zien waar ze nodig zijn.
 
 ### Hoe weet ik of mijn gebruikers vertrekken vanwege prestaties?
 

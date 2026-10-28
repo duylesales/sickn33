@@ -90,7 +90,7 @@ Legal research is a retrieval problem with characteristics that make generic app
 
 **Structure is exploitable.** Legislation is organised into articles, paragraphs and sub-provisions, and chunking that respects that structure substantially improves retrieval over naive splitting.
 
-Public legal data across Europe is comparatively accessible — EU legal acts, national legislation portals and increasing publication of case law — which makes this a domain where a newcomer can build serious portfolio work with real data.
+Public legal data across Europe is comparatively accessible - EU legal acts, national legislation portals and increasing publication of case law - which makes this a domain where a newcomer can build serious portfolio work with real data.
 
 ## Contracts at Portfolio Scale
 
@@ -98,7 +98,7 @@ Contract analysis is where most commercial legal technology revenue sits, and th
 
 The recurring business problems are: understanding what a company has agreed across thousands of contracts; finding all agreements affected by a regulatory change or a corporate event; accelerating due diligence in transactions; checking incoming third-party paper against an internal playbook; and tracking obligations and key dates so that renewals and terminations are not missed.
 
-Technically this is extraction and classification over documents that are structurally messy — scanned, amended by side letters, inconsistently formatted, in several languages and sometimes only available as images.
+Technically this is extraction and classification over documents that are structurally messy - scanned, amended by side letters, inconsistently formatted, in several languages and sometimes only available as images.
 
 Two engineering realities dominate. First, document processing quality caps everything: if table extraction mangles a schedule of payments, no downstream model recovers it. Second, the definition of a clause type is fuzzy and lawyers disagree, so annotation guidelines and inter-annotator agreement measurement are essential rather than academic.
 
@@ -120,7 +120,7 @@ Engineers who raise these questions during design are valued. Those who discover
 
 Legal tasks have a property that complicates evaluation: qualified professionals disagree, and sometimes there is no single correct answer.
 
-This changes how you build test sets. Multiple annotators are needed, agreement must be measured, and disagreement must be examined rather than averaged away — it usually reveals that the task definition is underspecified. If two experienced lawyers label a clause differently, the useful response is to refine the guideline, not to pick one.
+This changes how you build test sets. Multiple annotators are needed, agreement must be measured, and disagreement must be examined rather than averaged away - it usually reveals that the task definition is underspecified. If two experienced lawyers label a clause differently, the useful response is to refine the guideline, not to pick one.
 
 Metrics must reflect the workflow. For triage systems, recall at a review budget matters more than overall accuracy, because the question is whether the important documents appear in the portion that gets read. For extraction, per-field accuracy with span-level verification is more informative than document-level scores. For generated summaries, groundedness against cited sources is the primary criterion.
 
@@ -170,7 +170,7 @@ The professional dynamic in this sector is distinctive, and engineers who adapt 
 
 Lawyers are trained to find the flaw in an argument, which means your system will be tested adversarially from the first demonstration. This is not hostility; it is the professional habit that makes them good at their work. Treat it as free quality assurance.
 
-They are also trained to be precise about language, and they will notice when you use a term loosely. Learning the correct vocabulary for the documents you are processing — what a recital is, what an indemnity does, why a governing law clause matters — earns credibility quickly and prevents misunderstandings that would otherwise surface late.
+They are also trained to be precise about language, and they will notice when you use a term loosely. Learning the correct vocabulary for the documents you are processing - what a recital is, what an indemnity does, why a governing law clause matters - earns credibility quickly and prevents misunderstandings that would otherwise surface late.
 
 Their time is expensive and billed, which means every request for annotation, review or feedback has a visible cost. Design your labelling exercises to need as little expert time as possible, and show what previous input produced before asking for more.
 

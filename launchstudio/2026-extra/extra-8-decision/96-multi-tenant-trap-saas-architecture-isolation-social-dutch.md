@@ -1,9 +1,9 @@
-🔓 Klant A logt in en ziet de salarissen en klantenlijsten van Klant B. Geen hack, geen crash — gewoon één vergeten WHERE-clausule. 😳
+🔓 Klant A logt in en ziet de salarissen en klantenlijsten van Klant B. Geen hack, geen crash - gewoon één vergeten WHERE-clausule. 😳
 
-Dit patroon werkt perfect in élke demo en élke pilot — tot uw tweede betalende klant in dezelfde tabel terechtkomt: 🧠
+Dit patroon werkt perfect in élke demo en élke pilot - tot uw tweede betalende klant in dezelfde tabel terechtkomt: 🧠
 
 ❌ AI-tools modelleren data rond user_id, niet rond bedrijven
-❌ Filtering op applicatieniveau vergeet één endpoint, één keer — genoeg
+❌ Filtering op applicatieniveau vergeet één endpoint, één keer - genoeg
 ❌ Elk nieuw endpoint is een nieuwe kans om de bug te herintroduceren
 ❌ Storage buckets blijven vaak wereldwijd leesbaar met te raden URL's
 

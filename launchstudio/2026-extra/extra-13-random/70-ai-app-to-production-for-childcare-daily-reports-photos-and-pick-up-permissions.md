@@ -41,7 +41,7 @@ Group photos are the hardest part. A photo of three toddlers at the sandbox show
 
 ## Decision 3: Where Do Health Notes Go?
 
-Allergies, medication, developmental observations and incidents are health data — special category data under GDPR. They need stricter access (the child's parents and relevant staff only), logging of who viewed them, and careful retention.
+Allergies, medication, developmental observations and incidents are health data - special category data under GDPR. They need stricter access (the child's parents and relevant staff only), logging of who viewed them, and careful retention.
 
 **The decision:** separate health fields from ordinary diary notes, restrict and log access, and keep free-text "notes" from becoming an unstructured dumping ground for sensitive information.
 
@@ -57,7 +57,7 @@ Daycares often use shared tablets in the group room. Shared logins make every en
 
 ## Decision 6: Retention
 
-Daily reports and photos accumulate quickly. Decide how long they stay available after a child leaves, give parents a way to download their child's history, and then delete it — including from storage and, within their retention window, backups.
+Daily reports and photos accumulate quickly. Decide how long they stay available after a child leaves, give parents a way to download their child's history, and then delete it - including from storage and, within their retention window, backups.
 
 ## Decision 7: Contracts With Daycare Organisations
 
@@ -76,7 +76,7 @@ Taking a childcare AI app to production starts with modelling who may see what. 
 | Location manager | All children at the location | Assignments, settings | Logged access to health data |
 | Organisation admin | Configuration, reports | Users and locations | Limited access to child records |
 
-Enforce this in database policies based on relationships, not in the interface. Every change to relationships — especially restrictions — should be logged and applied immediately.
+Enforce this in database policies based on relationships, not in the interface. Every change to relationships - especially restrictions - should be logged and applied immediately.
 
 ## Photo Consent, Implemented
 
@@ -92,7 +92,7 @@ This is more work than a simple photo feed, but it is what parents and data prot
 
 ## Health Information With Care
 
-Allergies, medication schedules, dietary needs and incident reports must be visible to the people who need them at the moment they need them — the staff member preparing lunch, the one giving medication — and not beyond. Show allergy alerts prominently in daily views for the relevant group, log access to health notes, restrict free-text fields and define retention. Medication administration records, where kept, should record who administered what and when, without edits.
+Allergies, medication schedules, dietary needs and incident reports must be visible to the people who need them at the moment they need them - the staff member preparing lunch, the one giving medication - and not beyond. Show allergy alerts prominently in daily views for the relevant group, log access to health notes, restrict free-text fields and define retention. Medication administration records, where kept, should record who administered what and when, without edits.
 
 ## Pick-Up Safety Workflows
 
@@ -108,7 +108,7 @@ Messages between staff and parents often contain sensitive information. Keep the
 
 ## Data Retention and Leaving Families
 
-When a child leaves the centre, parents often want the photos and reports. Offer an export, then delete or anonymise according to the retention policy. Some records may need to be kept longer for legal or quality reasons — for example incident reports — while photos and daily notes rarely need long retention. Automate these rules so they apply consistently across locations.
+When a child leaves the centre, parents often want the photos and reports. Offer an export, then delete or anonymise according to the retention policy. Some records may need to be kept longer for legal or quality reasons - for example incident reports - while photos and daily notes rarely need long retention. Automate these rules so they apply consistently across locations.
 
 ## Working With Childcare Organisations
 
@@ -120,7 +120,7 @@ Accidents, injuries and unusual events must be recorded carefully in childcare. 
 
 ## Accessibility and Language for Parents
 
-Parents come from many backgrounds and languages, and some have disabilities. Offer the app in the languages common among your families, use plain language in reports, support screen readers and larger text, and make sure important information — pick-up changes, incidents, closures — is also communicated through channels parents reliably see.
+Parents come from many backgrounds and languages, and some have disabilities. Offer the app in the languages common among your families, use plain language in reports, support screen readers and larger text, and make sure important information - pick-up changes, incidents, closures - is also communicated through channels parents reliably see.
 
 ## Security Measures Worth Prioritising
 
@@ -136,7 +136,7 @@ Before rolling out to more locations: relationships and restrictions modelled an
 
 ## Why Parents Notice
 
-Parents rarely read privacy notices, but they notice immediately when a photo of another child appears in their feed or when a grandparent they did not authorise can see daily reports. Getting the details right is what makes parents recommend the app to other families — and what makes directors confident enough to roll it out across every location they run.
+Parents rarely read privacy notices, but they notice immediately when a photo of another child appears in their feed or when a grandparent they did not authorise can see daily reports. Getting the details right is what makes parents recommend the app to other families - and what makes directors confident enough to roll it out across every location they run.
 
 ## Where LaunchStudio Fits
 
@@ -157,9 +157,9 @@ Over eleven business days, LaunchStudio's engineers modelled families, guardians
 **Result:** The daycare organisation informed the affected family and reviewed the new setup with its privacy officer, who approved it. Kinderdagboek has since been adopted by a second childcare organisation with eleven locations.
 
 > *"Every parent wants the photos. Not every parent wants their child in someone else's. The app has to know the difference."*
-> — **Esmee Kuiper, Founder, Kinderdagboek (Woerden)**
+> - **Esmee Kuiper, Founder, Kinderdagboek (Woerden)**
 
-**Cost & Timeline:** €3,100 (Launch Ready package: family access model, photo consent, health data, pick-up permissions, staff accounts and retention) — completed in 11 business days.
+**Cost & Timeline:** €3,100 (Launch Ready package: family access model, photo consent, health data, pick-up permissions, staff accounts and retention) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
@@ -173,7 +173,7 @@ Yes, they are health data. Restrict access to the child's parents and relevant s
 
 ### How should a childcare app handle separated parents?
 
-Model each guardian's rights explicitly — viewing, editing, pick-up changes — and honour restrictions such as court orders on the server, not just in the interface.
+Model each guardian's rights explicitly - viewing, editing, pick-up changes - and honour restrictions such as court orders on the server, not just in the interface.
 
 ### How does Manifera approach apps holding children's data?
 

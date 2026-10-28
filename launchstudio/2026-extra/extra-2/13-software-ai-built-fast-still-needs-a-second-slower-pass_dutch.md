@@ -65,7 +65,7 @@ Het controleren van uw huidige CORS-installatie vereist geen beveiligingsconsult
 
 **Vind waar uw beleid daadwerkelijk is gedefinieerd**
 
-- Express/Node apps: doorgaans een `cors()` middleware-oproep, soms geconfigureerd met `origin: '*'` of `origin: true` — beide effectief wijd open
+- Express/Node apps: doorgaans een `cors()` middleware-oproep, soms geconfigureerd met `origin: '*'` of `origin: true` - beide effectief wijd open
 - Frameworks met ingebouwde CORS-afhandeling (Django, Rails, FastAPI): typisch een instellingenbestand dat toegestane oorsprongen vermeldt
 - Beheerde platformen (Supabase, Firebase): CORS wordt soms geconfigureerd via het dashboard van het platform in plaats van applicatiecode, wat gemakkelijk volledig over het hoofd te zien is aangezien het niet in de repository zit
 
@@ -94,10 +94,10 @@ Het beveiligingsteam van een partner dat ClaimClear evalueerde vóór een formel
 
 **Resultaat:** LaunchStudio implementeerde een correcte toegestane lijst die API-toegang beperkte tot ClaimClear's bekende frontend en geverifieerde partnerdomeinen, waardoor de blootstelling werd gesloten voordat de partnerintegratie doorging.
 
-> *"Niets aan ons eigen gebruik van de API zag er ooit verkeerd uit, omdat het dat natuurlijk niet zou doen — we riepen het altijd aan vanaf de ene plek die toch al altijd toegestaan zou zijn."*
-> — **Ruben de Groot, Oprichter, ClaimClear (Amersfoort)**
+> *"Niets aan ons eigen gebruik van de API zag er ooit verkeerd uit, omdat het dat natuurlijk niet zou doen - we riepen het altijd aan vanaf de ene plek die toch al altijd toegestaan zou zijn."*
+> - **Ruben de Groot, Oprichter, ClaimClear (Amersfoort)**
 
-**Kosten en tijdlijn:** € 2.300 (audit van API-toegangsbeheer en CORS-uitharding) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (audit van API-toegangsbeheer en CORS-uitharding) - voltooid in 8 werkdagen.
 
 ---
 

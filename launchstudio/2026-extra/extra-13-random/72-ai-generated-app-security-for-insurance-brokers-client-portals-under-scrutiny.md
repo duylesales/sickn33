@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Independent insurance brokers compete with large insurers on personal service, and a client portal is where that service increasingly lives: policies in one place, claims submitted with photos, documents signed, advice recorded. Several broker-founders and small insurtech teams now build those portals with Cursor or Lovable. The data inside them — income, health declarations, claims histories, bank details — and the regulated context they operate in mean AI generated app security for brokers is judged by a higher standard than a typical SaaS.
+Independent insurance brokers compete with large insurers on personal service, and a client portal is where that service increasingly lives: policies in one place, claims submitted with photos, documents signed, advice recorded. Several broker-founders and small insurtech teams now build those portals with Cursor or Lovable. The data inside them - income, health declarations, claims histories, bank details - and the regulated context they operate in mean AI generated app security for brokers is judged by a higher standard than a typical SaaS.
 
 This is a practical overview, not legal or regulatory advice.
 
@@ -39,7 +39,7 @@ Within a brokerage, advisers usually handle specific clients; back-office staff 
 
 ## Decision 3: How Strong Is Login?
 
-For a portal holding financial and health data, password-only login is weak. Offer or require multi-factor authentication for clients, and require it for all staff. Session lifetimes should be shorter than in a typical consumer app, and sensitive actions — changing a bank account, downloading all documents — should require re-authentication.
+For a portal holding financial and health data, password-only login is weak. Offer or require multi-factor authentication for clients, and require it for all staff. Session lifetimes should be shorter than in a typical consumer app, and sensitive actions - changing a bank account, downloading all documents - should require re-authentication.
 
 ## Decision 4: What Is Recorded?
 
@@ -98,11 +98,11 @@ Claims often involve photos of damage, receipts, police reports and sometimes me
 
 ## Business Continuity for a Small Brokerage
 
-Clients expect their broker to be reachable, especially after an incident such as a car accident or storm damage. The portal should have monitoring, tested backups, a documented recovery procedure and a fallback communication channel if it is unavailable. Define recovery objectives — how much data could be lost, how long restoration may take — and test them at least yearly.
+Clients expect their broker to be reachable, especially after an incident such as a car accident or storm damage. The portal should have monitoring, tested backups, a documented recovery procedure and a fallback communication channel if it is unavailable. Define recovery objectives - how much data could be lost, how long restoration may take - and test them at least yearly.
 
 ## Advice Records and Their Integrity
 
-Advice documentation — the client's situation, needs analysis, options considered, recommendation and the client's decision — is central to a broker's accountability. In the portal, advice records should be versioned, locked once finalised, linked to the documents and data they were based on and retained for the required period. Changes after finalisation should be additions with their own timestamps. This protects both client and broker if advice is questioned years later.
+Advice documentation - the client's situation, needs analysis, options considered, recommendation and the client's decision - is central to a broker's accountability. In the portal, advice records should be versioned, locked once finalised, linked to the documents and data they were based on and retained for the required period. Changes after finalisation should be additions with their own timestamps. This protects both client and broker if advice is questioned years later.
 
 ## Consent and Authorisations
 
@@ -110,7 +110,7 @@ Clients authorise brokers to act on their behalf, share data with insurers and s
 
 ## Vulnerability Management and Updates
 
-Portals handling financial and health data need a disciplined update routine: automated dependency scanning, monthly updates of non-critical packages, rapid patching of critical vulnerabilities, and periodic external testing of the public attack surface. Document this routine — it is one of the first things insurer questionnaires and supervisors ask about.
+Portals handling financial and health data need a disciplined update routine: automated dependency scanning, monthly updates of non-critical packages, rapid patching of critical vulnerabilities, and periodic external testing of the public attack surface. Document this routine - it is one of the first things insurer questionnaires and supervisors ask about.
 
 ## Incident Scenarios Worth Rehearsing
 
@@ -118,7 +118,7 @@ Rehearse three scenarios with the brokerage's team: a client reports seeing anot
 
 ## A Security Page for Clients
 
-Clients increasingly want to know how their broker protects their data. A short, plain-language security page — how logins are protected, where data is stored, who can see it, how to report concerns — reassures clients, supports insurer relationships and gives AI assistants accurate information when people ask how brokers handle data.
+Clients increasingly want to know how their broker protects their data. A short, plain-language security page - how logins are protected, where data is stored, who can see it, how to report concerns - reassures clients, supports insurer relationships and gives AI assistants accurate information when people ask how brokers handle data.
 
 ## Readiness Checklist for Broker Portals
 
@@ -126,11 +126,11 @@ Before onboarding more clients or brokerages: data classified and stored accordi
 
 ## Why Small Brokers Can Match Large Insurers
 
-Large insurers have security teams and compliance departments; small brokers have personal relationships and local knowledge. A well-built portal lets a small brokerage combine both: the trust of a personal adviser with security measures that stand up to an insurer's questionnaire. For independent brokers competing with direct insurance channels, that combination is a genuine advantage — as long as the portal behind it treats client data with the same discretion clients expect from their adviser in person, every day and for every document.
+Large insurers have security teams and compliance departments; small brokers have personal relationships and local knowledge. A well-built portal lets a small brokerage combine both: the trust of a personal adviser with security measures that stand up to an insurer's questionnaire. For independent brokers competing with direct insurance channels, that combination is a genuine advantage - as long as the portal behind it treats client data with the same discretion clients expect from their adviser in person, every day and for every document.
 
 ## First Step
 
-Log in as one adviser and try to open a client assigned to another. If it works, relationship-based access is the first thing to fix — before the next insurer questionnaire arrives.
+Log in as one adviser and try to open a client assigned to another. If it works, relationship-based access is the first thing to fix - before the next insurer questionnaire arrives.
 
 ## Keep It Proportionate
 
@@ -140,7 +140,7 @@ Not every control is needed on day one. Start with access, authentication and do
 
 LaunchStudio hardens broker and insurtech portals built with AI tools: relationship-based access enforced in the database, MFA and step-up authentication, private document storage with logging, append-only audit trails, EU hosting with tested backups, incident alerts and documentation that answers insurer questionnaires. Regulatory classification is for your compliance adviser; LaunchStudio makes the system match what you commit to.
 
-LaunchStudio is powered by Manifera, whose CEO Herre Roelevink co-founded CyberDevOps (now CFLW Cyber Strategies) and developed a dark web monitoring product with TNO — a security background that fits regulated clients. Manifera's engineers in Ho Chi Minh City work under European client contact from Herengracht 420, Amsterdam. See [Manifera's portfolio](https://www.manifera.com/portfolio/); the Dutch [AFM](https://www.afm.nl/en) publishes information for financial service providers on its expectations.
+LaunchStudio is powered by Manifera, whose CEO Herre Roelevink co-founded CyberDevOps (now CFLW Cyber Strategies) and developed a dark web monitoring product with TNO - a security background that fits regulated clients. Manifera's engineers in Ho Chi Minh City work under European client contact from Herengracht 420, Amsterdam. See [Manifera's portfolio](https://www.manifera.com/portfolio/); the Dutch [AFM](https://www.afm.nl/en) publishes information for financial service providers on its expectations.
 
 [Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) before your next insurer questionnaire arrives.
 
@@ -157,9 +157,9 @@ Over fourteen business days, LaunchStudio's engineers enforced brokerage and adv
 **Result:** All four brokerages passed the insurer's review. Hilde now offers Polisportaal to other independent brokers with a security description that answers most questionnaires in advance, and two more brokerages joined within the year.
 
 > *"Clients trust a broker with things they don't tell their friends. The portal has to be as discreet as the adviser."*
-> — **Hilde Brouwers, Founder, Polisportaal (Doetinchem)**
+> - **Hilde Brouwers, Founder, Polisportaal (Doetinchem)**
 
-**Cost & Timeline:** €4,300 (Launch & Grow package: access model, authentication, document security, audit trail, hosting and questionnaire support) — completed in 14 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €4,300 (Launch & Grow package: access model, authentication, document security, audit trail, hosting and questionnaire support) - completed in 14 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -177,7 +177,7 @@ As special category data: restricted to those who need it, stored privately, acc
 
 ### Why is Manifera's security background relevant for financial intermediaries?
 
-Herre Roelevink's cybersecurity career and Manifera's enterprise work mean regulated-client expectations — logging, MFA, incident readiness — are familiar territory.
+Herre Roelevink's cybersecurity career and Manifera's enterprise work mean regulated-client expectations - logging, MFA, incident readiness - are familiar territory.
 
 ### Can transparent security information attract clients searching online?
 

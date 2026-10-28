@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-International professionals arriving in the Dutch AI market hear two contradictory things in the same week. The first is that everyone speaks English and language is no obstacle. The second is that half the interesting vacancies mention Dutch, and the ones that do not are the most competitive. Both are partly true, and the gap between them causes a specific and costly mistake: postponing the job search for six or twelve months to reach a level of Dutch that most relevant employers never required. The useful question is not whether to learn Dutch — in the long run, in this country, the answer is almost always yes — but whether to learn it before applying.
+International professionals arriving in the Dutch AI market hear two contradictory things in the same week. The first is that everyone speaks English and language is no obstacle. The second is that half the interesting vacancies mention Dutch, and the ones that do not are the most competitive. Both are partly true, and the gap between them causes a specific and costly mistake: postponing the job search for six or twelve months to reach a level of Dutch that most relevant employers never required. The useful question is not whether to learn Dutch - in the long run, in this country, the answer is almost always yes - but whether to learn it before applying.
 
 ## Where English Genuinely Suffices
 
@@ -43,7 +43,7 @@ Large parts of the Dutch AI market operate in English, reliably.
 
 **Technology companies and scale-ups**, particularly in Amsterdam, Eindhoven, Utrecht and Delft, frequently have international teams where English is the working language by necessity.
 
-**Research environments** — universities, university medical centres, national institutes and public-private labs — operate in English for research, because their staff and collaborations are international.
+**Research environments** - universities, university medical centres, national institutes and public-private labs - operate in English for research, because their staff and collaborations are international.
 
 **Space, semiconductor and high-tech engineering**, where international consortia and suppliers make English standard.
 
@@ -85,7 +85,7 @@ When in doubt, ask in one sentence before applying: "Is Dutch required for this 
 
 The **Common European Framework of Reference for Languages (CEFR)** scale is the practical vocabulary. Employers who have thought about it usually ask for B1 or B2 for roles with operational contact, and C1 for roles involving policy writing or public communication.
 
-Three things are worth knowing. Passive Dutch — understanding meetings and reading documentation — is often the real requirement, and it arrives far earlier than fluent speaking. Technical vocabulary transfers easily, because much of it is English anyway. And many employers value visible effort: stating "Dutch: A2, currently taking classes" on a CV is received well, while claiming B2 you cannot demonstrate creates an awkward interview.
+Three things are worth knowing. Passive Dutch - understanding meetings and reading documentation - is often the real requirement, and it arrives far earlier than fluent speaking. Technical vocabulary transfers easily, because much of it is English anyway. And many employers value visible effort: stating "Dutch: A2, currently taking classes" on a CV is received well, while claiming B2 you cannot demonstrate creates an awkward interview.
 
 The **State Examination Dutch as a Second Language (Staatsexamen NT2)** is the recognised certification, at two levels, and it is useful when a formal qualification is needed, particularly for public sector roles.
 
@@ -93,7 +93,7 @@ The **State Examination Dutch as a Second Language (Staatsexamen NT2)** is the r
 
 Postponing your search until your Dutch is "good enough" carries costs that are easy to underestimate.
 
-**Time is the largest.** Reaching conversational B1 typically takes months of consistent study, and B2 longer. A year spent studying is a year of Dutch work experience not gained — and Dutch work experience is what employers actually screen for.
+**Time is the largest.** Reaching conversational B1 typically takes months of consistent study, and B2 longer. A year spent studying is a year of Dutch work experience not gained - and Dutch work experience is what employers actually screen for.
 
 **Permit windows may not wait.** If you are on an orientation year permit after graduating, that window has a defined duration. Spending it studying rather than applying is usually the wrong allocation. Highly skilled migrant status depends on sponsored employment, so timing matters there too; check current conditions with the **IND**.
 
@@ -119,7 +119,7 @@ For most international AI professionals, the answer is to do both at once.
 
 Job advertisements describe language requirements as a binary. Daily working life is more layered, and knowing the pattern helps you judge how much Dutch a role really needs.
 
-Most mixed teams in the Netherlands settle into an informal arrangement: technical discussions, documentation and code reviews in English, small talk and corridor conversations in Dutch. Meetings switch depending on who is present, and switch back the moment someone hesitates. Written communication from outside the team — HR, facilities, works council, the canteen, the intranet — is frequently Dutch only.
+Most mixed teams in the Netherlands settle into an informal arrangement: technical discussions, documentation and code reviews in English, small talk and corridor conversations in Dutch. Meetings switch depending on who is present, and switch back the moment someone hesitates. Written communication from outside the team - HR, facilities, works council, the canteen, the intranet - is frequently Dutch only.
 
 The practical consequence is that you can do your job well in English while missing part of the organisational context. That gap matters more over time than at the start: informal information about priorities, reorganisations and who actually decides things tends to travel in Dutch.
 
@@ -129,7 +129,7 @@ Two habits close it faster than lessons alone. Read internal Dutch documents wit
 
 Dutch equal treatment law prohibits discrimination on grounds including nationality and race. A language requirement that is genuinely necessary for the work is legitimate. A requirement used as a proxy for nationality, or applied inconsistently, is not.
 
-In practice, most language requirements in AI vacancies are neither: they are copied from templates without much thought. That is precisely why asking is worthwhile — you are frequently asking an employer to consider a question they never actually decided.
+In practice, most language requirements in AI vacancies are neither: they are copied from templates without much thought. That is precisely why asking is worthwhile - you are frequently asking an employer to consider a question they never actually decided.
 
 ## How to Learn Dutch While Working Full-Time
 
@@ -139,9 +139,9 @@ If the conclusion is to apply now and learn in parallel, the practical question 
 
 **Separate the two skills you need.** Understanding spoken Dutch in meetings and reading documentation are what make you effective at work, and they arrive earlier than fluent speaking. Podcasts, news written in simple Dutch and reading your organisation's internal documents with a translation tool alongside all build comprehension quickly.
 
-**Use your work context as the curriculum.** Learn the vocabulary of your own domain first — planning, quality, claims, patients, grid, logistics — because that is what appears in the meetings you sit in. Technical terms are often English anyway, which means the gap is smaller than it seems.
+**Use your work context as the curriculum.** Learn the vocabulary of your own domain first - planning, quality, claims, patients, grid, logistics - because that is what appears in the meetings you sit in. Technical terms are often English anyway, which means the gap is smaller than it seems.
 
-**Ask colleagues for a rule.** Many international professionals report the same frustration: everyone switches to English the moment they hesitate. A simple agreement with two or three colleagues — stand-ups in Dutch, or the first ten minutes of a meeting — creates practice without disrupting work.
+**Ask colleagues for a rule.** Many international professionals report the same frustration: everyone switches to English the moment they hesitate. A simple agreement with two or three colleagues - stand-ups in Dutch, or the first ten minutes of a meeting - creates practice without disrupting work.
 
 **Use employer support.** Many Dutch employers fund language courses, and some allow part of the learning during working hours. Ask at the offer stage, when your negotiating position is strongest, and get the arrangement written down.
 
@@ -149,7 +149,7 @@ If the conclusion is to apply now and learn in parallel, the practical question 
 
 ## Beyond the Job: Life Outside Work
 
-One honest note. Even in an English-speaking job, Dutch changes daily life: letters from the municipality and tax authority, school communication, healthcare appointments, neighbours, social conversations that switch language when you join. For anyone intending to stay several years, learning Dutch is an investment in living here rather than only in employability. Civic integration obligations also apply to some residence statuses, though highly skilled migrants are generally exempt — check what applies to your situation.
+One honest note. Even in an English-speaking job, Dutch changes daily life: letters from the municipality and tax authority, school communication, healthcare appointments, neighbours, social conversations that switch language when you join. For anyone intending to stay several years, learning Dutch is an investment in living here rather than only in employability. Civic integration obligations also apply to some residence statuses, though highly skilled migrants are generally exempt - check what applies to your situation.
 
 That argues for starting early and continuing steadily. It does not argue for postponing your search.
 
@@ -175,7 +175,7 @@ The four months of intensive study were not wasted. Starting them without applyi
 
 ## Where to Start
 
-Check how many roles within your radius are published in English before assuming language is your obstacle — then apply to those while you keep learning.
+Check how many roles within your radius are published in English before assuming language is your obstacle - then apply to those while you keep learning.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -191,7 +191,7 @@ Not always. Ask in one sentence whether Dutch is needed for daily work; some req
 Where it matters, B1 or B2 is common, and C1 for policy or public communication roles. Passive comprehension is often the practical requirement.
 
 ### (Scenario: candidate on a residence permit) Does my permit affect this decision?
-Yes — orientation year permits have a limited duration and highly skilled migrant status depends on sponsored employment, so applying early matters. Check current IND conditions.
+Yes - orientation year permits have a limited duration and highly skilled migrant status depends on sponsored employment, so applying early matters. Check current IND conditions.
 
 ### (Scenario: candidate worried about honesty on a CV) How should I state my Dutch level?
 Use CEFR levels honestly, including that you are learning. Visible effort is well received; an overstated level creates an awkward interview.
@@ -201,10 +201,10 @@ Use CEFR levels honestly, including that you are learning. Visible effort is wel
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I wait until I speak Dutch before applying for AI jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — many technology and research employers work in English, and experience counts more."}},
+    {"@type": "Question", "name": "Should I wait until I speak Dutch before applying for AI jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - many technology and research employers work in English, and experience counts more."}},
     {"@type": "Question", "name": "Does a vacancy written in Dutch mean Dutch is required?", "acceptedAnswer": {"@type": "Answer", "text": "Not always; ask whether Dutch is needed for daily work."}},
     {"@type": "Question", "name": "Which Dutch level do employers usually need?", "acceptedAnswer": {"@type": "Answer", "text": "B1 or B2 where it matters, C1 for policy roles; passive comprehension often suffices."}},
-    {"@type": "Question", "name": "Does my permit affect this decision?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — orientation year windows and sponsored employment conditions make early applying important."}},
+    {"@type": "Question", "name": "Does my permit affect this decision?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - orientation year windows and sponsored employment conditions make early applying important."}},
     {"@type": "Question", "name": "How should I state my Dutch level?", "acceptedAnswer": {"@type": "Answer", "text": "Use CEFR levels honestly, including that you are currently learning."}}
   ]
 }

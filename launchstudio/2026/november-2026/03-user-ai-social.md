@@ -9,7 +9,7 @@ Why? Because User AI tools are brilliant at generating interfaces, but they skip
 ❌ No Database Triggers (data gets overwritten)
 ❌ No Dunning Sequences (failed payments are ignored)
 
-Your prototype isn't a failure—it's just unfinished. 🛠️ 
+Your prototype isn't a failure - it's just unfinished. 🛠️ 
 
 Don't let an agency charge you €45,000 to "rebuild it from scratch." Learn how smart founders are keeping their AI-generated frontends and bridging the gap to production: https://launchstudio.eu/en/blog/user-ai
 

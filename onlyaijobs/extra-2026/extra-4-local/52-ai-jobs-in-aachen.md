@@ -49,11 +49,11 @@ Aachen, at Germany's western edge where the country meets the Netherlands and Be
 
 RWTH Aachen University has a long tradition of close collaboration with industry. Its computer science department has research groups in machine learning, computer vision, natural language processing, robotics and data management, and AI is integrated into many engineering disciplines. RWTH's work on the "Internet of Production", a major interdisciplinary research initiative, explores how data and AI can transform manufacturing by connecting machines, processes and products.
 
-The RWTH Aachen Campus hosts research clusters in which companies and institutes work side by side on topics such as production engineering, automotive, logistics and photonics. Fraunhofer institutes in Aachen — including those for production technology (IPT), laser technology (ILT) and molecular biology and applied ecology — carry out applied research with companies. FH Aachen University of Applied Sciences trains practically oriented engineers and computer scientists.
+The RWTH Aachen Campus hosts research clusters in which companies and institutes work side by side on topics such as production engineering, automotive, logistics and photonics. Fraunhofer institutes in Aachen - including those for production technology (IPT), laser technology (ILT) and molecular biology and applied ecology - carry out applied research with companies. FH Aachen University of Applied Sciences trains practically oriented engineers and computer scientists.
 
 ## Forschungszentrum Jülich and Supercomputing
 
-Forschungszentrum Jülich, about 30 kilometres from Aachen, is one of Europe's largest interdisciplinary research centres. Its Jülich Supercomputing Centre hosts JUPITER, the European exascale supercomputer procured by the EuroHPC Joint Undertaking, as well as other large systems. Research at Jülich covers energy, climate, neuroscience, materials and information technology, including AI and quantum computing. For graduates, Jülich offers PhD positions, research software engineering roles and work on large-scale scientific ML and high-performance computing — rare opportunities for those interested in the infrastructure behind modern AI.
+Forschungszentrum Jülich, about 30 kilometres from Aachen, is one of Europe's largest interdisciplinary research centres. Its Jülich Supercomputing Centre hosts JUPITER, the European exascale supercomputer procured by the EuroHPC Joint Undertaking, as well as other large systems. Research at Jülich covers energy, climate, neuroscience, materials and information technology, including AI and quantum computing. For graduates, Jülich offers PhD positions, research software engineering roles and work on large-scale scientific ML and high-performance computing - rare opportunities for those interested in the infrastructure behind modern AI.
 
 ## Industry and Companies
 
@@ -110,7 +110,7 @@ For job seekers, this means that searching by distance rather than by country re
 
 ## Supercomputing and Scientific ML
 
-Jülich's supercomputers make the Aachen region one of Europe's best places for graduates interested in high-performance computing and large-scale AI. Research software engineers optimise scientific codes and AI workloads for supercomputers, support researchers in training large models and develop tools for data management and workflow automation. Scientific ML projects include climate and weather modelling, materials simulation, brain research and energy systems. These roles build expertise in distributed computing, GPU programming and performance engineering — skills that are in high demand across industry and research, including in companies training large AI models.
+Jülich's supercomputers make the Aachen region one of Europe's best places for graduates interested in high-performance computing and large-scale AI. Research software engineers optimise scientific codes and AI workloads for supercomputers, support researchers in training large models and develop tools for data management and workflow automation. Scientific ML projects include climate and weather modelling, materials simulation, brain research and energy systems. These roles build expertise in distributed computing, GPU programming and performance engineering - skills that are in high demand across industry and research, including in companies training large AI models.
 
 ## Building a Profile for Aachen Employers
 
@@ -126,11 +126,11 @@ A thesis or HiWi experience at a production engineering institute is one of the 
 
 ## Living in Aachen
 
-Aachen is a historic city — its cathedral, founded by Charlemagne, is a UNESCO World Heritage Site — with a large student population that gives it a young, lively atmosphere. Housing is more affordable than in Cologne or Düsseldorf, though demand is high near the university. The city has good bus connections, and regional trains link it to Cologne, Maastricht, Liège and Brussels. The countryside of the Eifel and the Dutch and Belgian borderlands are close for weekends.
+Aachen is a historic city - its cathedral, founded by Charlemagne, is a UNESCO World Heritage Site - with a large student population that gives it a young, lively atmosphere. Housing is more affordable than in Cologne or Düsseldorf, though demand is high near the university. The city has good bus connections, and regional trains link it to Cologne, Maastricht, Liège and Brussels. The countryside of the Eifel and the Dutch and Belgian borderlands are close for weekends.
 
 ## Your First Two Years
 
-Use your first years to build depth in one industrial or scientific domain and strong engineering habits. If you start with a PhD at an RWTH institute, take advantage of industry projects to build a network; if you start in a company, stay connected to institutes through collaborations and events. Improve your German — it opens many doors in the region's industry.
+Use your first years to build depth in one industrial or scientific domain and strong engineering habits. If you start with a PhD at an RWTH institute, take advantage of industry projects to build a network; if you start in a company, stay connected to institutes through collaborations and events. Improve your German - it opens many doors in the region's industry.
 
 ## Questions to Ask Aachen Employers
 
@@ -143,7 +143,7 @@ Use your first years to build depth in one industrial or scientific domain and s
 
 ## A Simple Action Plan
 
-Apply for a HiWi position at an institute whose work interests you, choose a thesis linked to industry, attend events on the RWTH Campus and in the Euroregion and search by distance across the border. In Aachen, a few good connections — and a willingness to look beyond national lines — can open many doors.
+Apply for a HiWi position at an institute whose work interests you, choose a thesis linked to industry, attend events on the RWTH Campus and in the Euroregion and search by distance across the border. In Aachen, a few good connections - and a willingness to look beyond national lines - can open many doors.
 
 ## Photonics and Laser Technology
 
@@ -155,11 +155,11 @@ The Aachen region has a long tradition in automotive engineering, with RWTH inst
 
 ## Structural Change and Energy
 
-The Rhenish mining area near Aachen is undergoing structural change as lignite mining is phased out. Significant public investment supports new research institutes, energy projects and companies in the region, including in hydrogen, digitalisation and AI. For graduates, this creates new opportunities in energy systems, digital infrastructure and applied research — often with the explicit goal of building a sustainable economy in the region.
+The Rhenish mining area near Aachen is undergoing structural change as lignite mining is phased out. Significant public investment supports new research institutes, energy projects and companies in the region, including in hydrogen, digitalisation and AI. For graduates, this creates new opportunities in energy systems, digital infrastructure and applied research - often with the explicit goal of building a sustainable economy in the region.
 
 ## German Graduate Conditions
 
-German graduate jobs typically include a probation period of up to six months, at least 20 statutory holiday days (commonly 28 to 30), health, pension and unemployment insurance and notice periods set by law or contract. Industrial employers are often covered by the metal and electrical industry collective agreement, which defines pay groups and annual increases. Research positions at RWTH institutes and Jülich follow public-sector pay scales and are usually fixed-term. When comparing offers, consider net pay, contract duration, learning opportunities and how the role builds toward your long-term goals — in Aachen, an engineering PhD with industry projects can be as valuable a career step as a first industry job.
+German graduate jobs typically include a probation period of up to six months, at least 20 statutory holiday days (commonly 28 to 30), health, pension and unemployment insurance and notice periods set by law or contract. Industrial employers are often covered by the metal and electrical industry collective agreement, which defines pay groups and annual increases. Research positions at RWTH institutes and Jülich follow public-sector pay scales and are usually fixed-term. When comparing offers, consider net pay, contract duration, learning opportunities and how the role builds toward your long-term goals - in Aachen, an engineering PhD with industry projects can be as valuable a career step as a first industry job.
 
 ## Staying Connected
 

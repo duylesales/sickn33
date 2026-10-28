@@ -110,9 +110,9 @@ LaunchStudio's ingenieurs herbouwden CheckoutSnel's betalingsintegratie met idem
 **Resultaat:** Britt heeft sinds het verzenden van de herstelling geen enkel ondersteuningsticket meer gehad over een dubbele afschrijving. Betalingsherhaalpogingen worden nu veilig opgelost in plaats van een tweede afschrijving te riskeren.
 
 > *"Ik wist niet eens dat 'idempotentie-sleutel' een echte term was totdat dit gebeurde. Nu is het het eerste ding dat ik controleer in elke betalingscode."*
-> — **Britt Hofman, Oprichter, CheckoutSnel (Alphen aan den Rijn)**
+> - **Britt Hofman, Oprichter, CheckoutSnel (Alphen aan den Rijn)**
 
-**Kosten en tijdlijn:** € 700 (implementatie van idempotentie-sleutels, frontend-bescherming tegen dubbel indienen, en serverzijde-ontdubbeling) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 700 (implementatie van idempotentie-sleutels, frontend-bescherming tegen dubbel indienen, en serverzijde-ontdubbeling) - voltooid in 4 werkdagen.
 
 ---
 

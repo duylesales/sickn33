@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App to Production on Mobile: Passing App Store and Play Store Review",
-  "description": "Taking an AI app to production on mobile adds a gatekeeper the web never had: app store review. This guide covers why AI-built mobile apps get rejected — account deletion, privacy labels, login, payments, stability — and how to get through review the first time.",
+  "description": "Taking an AI app to production on mobile adds a gatekeeper the web never had: app store review. This guide covers why AI-built mobile apps get rejected - account deletion, privacy labels, login, payments, stability - and how to get through review the first time.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-30",
@@ -33,9 +33,9 @@ AI tools generate mobile code from the same patterns they use for web apps. They
 
 **No account deletion inside the app.** If users can create an account, both stores expect them to be able to delete it from within the app (Google also requires a web link). "Email us to delete your account" is no longer enough.
 
-**Reviewers cannot log in.** If the app needs an account, reviewers need working demo credentials in the submission notes — and the demo account must show real functionality, not an empty screen.
+**Reviewers cannot log in.** If the app needs an account, reviewers need working demo credentials in the submission notes - and the demo account must show real functionality, not an empty screen.
 
-**Privacy labels that don't match reality.** Apple's privacy nutrition labels and Google's Data safety form must declare what data you collect and why, including data collected by SDKs you did not choose deliberately — analytics, crash reporting, the AI tool's defaults. Reviewers and automated checks compare declarations against behaviour.
+**Privacy labels that don't match reality.** Apple's privacy nutrition labels and Google's Data safety form must declare what data you collect and why, including data collected by SDKs you did not choose deliberately - analytics, crash reporting, the AI tool's defaults. Reviewers and automated checks compare declarations against behaviour.
 
 **Payments for digital content outside the store.** Selling digital content or subscriptions consumed in the app generally has to use the store's in-app purchase system, with limited exceptions and region-specific rules. Physical goods and real-world services can use Stripe or Mollie. AI-built apps frequently get this wrong in both directions.
 
@@ -49,7 +49,7 @@ AI tools generate mobile code from the same patterns they use for web apps. They
 
 Store review looks at the app, but many rejections are really backend problems:
 
-- **Account deletion must actually delete** — the backend needs an endpoint that removes or anonymises the user's data across database, storage and third-party services.
+- **Account deletion must actually delete** - the backend needs an endpoint that removes or anonymises the user's data across database, storage and third-party services.
 - **Demo accounts need seeded data** in production that is safe to show.
 - **API keys must not be in the app bundle.** A mobile binary can be unpacked; any secret in it should be considered public.
 - **The API must handle old app versions.** Once installed, older versions keep calling your backend for months. Breaking API changes break users you cannot force to update.
@@ -101,7 +101,7 @@ Keep the inventory with your code and update it when SDKs change. Declarations t
 
 ## Push Notifications and Permissions Done Right
 
-Permission requests influence both review and user trust. Ask for permissions only when the feature needs them — location when a walk starts, camera when the user wants to add a photo — with a short explanation screen before the system prompt. For push notifications, explain what users will receive and let them control categories in the app. Store device tokens securely, remove them on logout and account deletion, and never send sensitive content in notification text, since it appears on lock screens.
+Permission requests influence both review and user trust. Ask for permissions only when the feature needs them - location when a walk starts, camera when the user wants to add a photo - with a short explanation screen before the system prompt. For push notifications, explain what users will receive and let them control categories in the app. Store device tokens securely, remove them on logout and account deletion, and never send sensitive content in notification text, since it appears on lock screens.
 
 ## Versioning Your API for Installed Apps
 
@@ -119,7 +119,7 @@ Both stores support gradual rollout: phased release on the App Store and staged 
 
 ## Over-the-Air Updates: Useful, With Limits
 
-Expo and React Native support over-the-air (OTA) updates for JavaScript and assets, allowing fixes without a full store release. They are valuable for urgent bug fixes, but store rules limit what OTA updates may change — generally not the app's primary purpose or significant new features beyond what was reviewed. Use OTA for fixes, route feature changes through normal review, and test OTA updates on staging channels before production.
+Expo and React Native support over-the-air (OTA) updates for JavaScript and assets, allowing fixes without a full store release. They are valuable for urgent bug fixes, but store rules limit what OTA updates may change - generally not the app's primary purpose or significant new features beyond what was reviewed. Use OTA for fixes, route feature changes through normal review, and test OTA updates on staging channels before production.
 
 ## Security Specifics for Mobile Apps
 
@@ -131,7 +131,7 @@ Approval is the beginning. Monitor reviews and ratings daily in the first weeks,
 
 ## Handling In-App Purchase When It Applies
 
-If your app sells digital content or subscriptions consumed in the app, store rules generally require in-app purchase, with some regional and category exceptions that change over time. Implementing it production-grade means validating receipts or purchase tokens on your server, listening to the stores' server notifications for renewals, cancellations and refunds, and keeping entitlements in your database in sync — the mobile equivalent of payment webhooks. Services such as RevenueCat simplify this across both stores. Mixing store purchases with web purchases requires careful entitlement logic so users get the same access wherever they paid.
+If your app sells digital content or subscriptions consumed in the app, store rules generally require in-app purchase, with some regional and category exceptions that change over time. Implementing it production-grade means validating receipts or purchase tokens on your server, listening to the stores' server notifications for renewals, cancellations and refunds, and keeping entitlements in your database in sync - the mobile equivalent of payment webhooks. Services such as RevenueCat simplify this across both stores. Mixing store purchases with web purchases requires careful entitlement logic so users get the same access wherever they paid.
 
 ## Accessibility on Mobile
 
@@ -143,7 +143,7 @@ Review times vary, from hours to several days, and occasionally longer around ho
 
 ## The Short Version
 
-Store review rewards apps that are complete, honest about data, fair about payments and respectful of user rights. Prepare those four things before you submit — deletion, declarations, payment model and a working demo account — and review becomes a checkpoint rather than a wall.
+Store review rewards apps that are complete, honest about data, fair about payments and respectful of user rights. Prepare those four things before you submit - deletion, declarations, payment model and a working demo account - and review becomes a checkpoint rather than a wall.
 
 ## Where LaunchStudio Fits
 
@@ -161,14 +161,14 @@ Joost Verbruggen, a dog walker in Tilburg, built Uitlaatmaatje in Bolt as an Exp
 
 Apple rejected it three times in five weeks: first because reviewers could not log in, then because there was no in-app account deletion, then because the privacy label omitted location data and crash analytics collected by an SDK Bolt had added. Google flagged the Data safety form for the same reason. Meanwhile, a friend who unpacked the Android build found the Stripe secret key and the Google Maps key inside it.
 
-LaunchStudio's engineers rotated both keys and moved payment creation and map calls behind server-side functions, built a backend deletion flow that removed profiles, dog records, walk photos and location history and cancelled Stripe customers, added versioned API routes so older builds kept working, seeded a demo account with realistic walks, documented every SDK's data collection for accurate privacy declarations, and wrote clear purpose strings for location and camera permissions. Walks are real-world services, so Stripe remained correct — and the submission notes said so.
+LaunchStudio's engineers rotated both keys and moved payment creation and map calls behind server-side functions, built a backend deletion flow that removed profiles, dog records, walk photos and location history and cancelled Stripe customers, added versioned API routes so older builds kept working, seeded a demo account with realistic walks, documented every SDK's data collection for accurate privacy declarations, and wrote clear purpose strings for location and camera permissions. Walks are real-world services, so Stripe remained correct - and the submission notes said so.
 
 **Result:** Uitlaatmaatje passed review on both stores at the next submission. In its first three months on mobile it gained 640 dog owners and 38 walkers around Tilburg and Breda.
 
 > *"I thought the rejections were Apple being difficult. They were Apple reading my app more carefully than I had."*
-> — **Joost Verbruggen, Founder, Uitlaatmaatje (Tilburg)**
+> - **Joost Verbruggen, Founder, Uitlaatmaatje (Tilburg)**
 
-**Cost & Timeline:** €3,900 (Mobile App: secrets, deletion flow, API versioning, privacy declarations and submission support) — completed in 14 business days.
+**Cost & Timeline:** €3,900 (Mobile App: secrets, deletion flow, API versioning, privacy declarations and submission support) - completed in 14 business days.
 
 ## Frequently Asked Questions
 
@@ -182,7 +182,7 @@ For physical goods and real-world services, generally yes. For digital content o
 
 ### Is it safe to put API keys in a mobile app?
 
-Only keys designed to be public, restricted by bundle ID or domain. Anything secret — payment keys, AI API keys, admin tokens — can be extracted from the binary and must live on a server.
+Only keys designed to be public, restricted by bundle ID or domain. Anything secret - payment keys, AI API keys, admin tokens - can be extracted from the binary and must live on a server.
 
 ### How does Manifera's mobile experience help with store review?
 

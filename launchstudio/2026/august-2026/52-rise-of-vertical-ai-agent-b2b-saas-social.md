@@ -1,4 +1,4 @@
-🔥 Harper built a prototype using **Bolt** — harper, a dental consultant, used **bolt** to build an automated scheduler, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Harper built a prototype using **Bolt** - harper, a dental consultant, used **bolt** to build an automated scheduler, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Harper's application achieved silky-smooth performance: Signed 12 dental clinics in the first week, automating booking flows. (€3,100 (Practice API Integration) — production-ready and deployed in 7 business days.). 🚀
+Harper's application achieved silky-smooth performance: Signed 12 dental clinics in the first week, automating booking flows. (€3,100 (Practice API Integration) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/rise-of-vertical-ai-agent-b2b-saas
 

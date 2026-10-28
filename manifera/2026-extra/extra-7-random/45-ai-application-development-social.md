@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **An Honest Usage-Cost Model:** Estimated before launch, not a rough afterthought.
 ✅ **Amsterdam Strategic Governance:** Cost forecasting and monitoring treated as seriously as the build budget.
-✅ **Vietnam Execution Velocity:** Cost-aware technical design — model tiering and caching built in from the start.
+✅ **Vietnam Execution Velocity:** Cost-aware technical design - model tiering and caching built in from the start.
 
 We budgeted the build carefully and guessed at the running cost. The guess was wrong by a lot. 🛡️
 

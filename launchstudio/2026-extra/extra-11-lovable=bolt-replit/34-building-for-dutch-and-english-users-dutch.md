@@ -28,7 +28,7 @@ De eerste reflex is om dit te zien als een simpel vertaalprojectje: exporteer al
 
 AI-bouwers schrijven alle tekststrings standaard direct hardcoded in de React-componenten. Er is geen scheiding tussen de visuele interface en de bewoordingen, omdat niets in een initiële prompt aangaf dat dit nodig zou zijn.
 
-Dat betekent dat de eerste echte taak bestaat uit tekstextractie: het losweken van elke zichtbare tekststring naar een gestructureerd formaat (zoals JSON-vertaalbestanden met i18next) waarin vertalingen naast elkaar kunnen bestaan. Voor een kleine app is dit ongeveer één werkdag, maar het is onontkoombaar. Zonder deze scheiding betekent een tweede taal toevoegen dat je al je UI-componenten moet dupliceren — de snelste weg naar een codebase die binnen enkele sprints permanent uit sync raakt.
+Dat betekent dat de eerste echte taak bestaat uit tekstextractie: het losweken van elke zichtbare tekststring naar een gestructureerd formaat (zoals JSON-vertaalbestanden met i18next) waarin vertalingen naast elkaar kunnen bestaan. Voor een kleine app is dit ongeveer één werkdag, maar het is onontkoombaar. Zonder deze scheiding betekent een tweede taal toevoegen dat je al je UI-componenten moet dupliceren - de snelste weg naar een codebase die binnen enkele sprints permanent uit sync raakt.
 
 Twee details bepalen het verschil tussen een schone architectuur en dubbel werk achteraf:
 - Identificeer vertaalsleutels op basis van hun semantische betekenis (bijvoorbeeld `booking.remaining_slots`) in plaats van de letterlijke Engelse tekst, zodat een kleine aanpassing in het Engels de Nederlandse vertaling niet direct ontkoppelt.
@@ -40,7 +40,7 @@ Dit is het punt waar een tweetalig product zich verraadt als een haastige toevoe
 
 **Datumnotaties.** Een Nederlandse gebruiker die "03/04/2027" leest, gaat uit van 3 april. Een Amerikaan leest 4 maart. Het uitschrijven van de maandnaam ("3 april 2027") neemt elke verwarring weg. Bovendien wijkt het Nederlands af in hoofdlettergebruik: maandnamen worden in het Nederlands met een kleine letter geschreven.
 
-**Getallen en valutanotaties.** In Nederland is de komma het decimale scheidingsteken en de punt het duizendtallen-scheidingsteken (€ 1.250,50) — exact het omgekeerde van de Angelsaksische standaard ($1,250.50). Een prijs met een verkeerde notatie oogt als een slordige typefout of schept verwarring over het daadwerkelijke bedrag.
+**Getallen en valutanotaties.** In Nederland is de komma het decimale scheidingsteken en de punt het duizendtallen-scheidingsteken (€ 1.250,50) - exact het omgekeerde van de Angelsaksische standaard ($1,250.50). Een prijs met een verkeerde notatie oogt als een slordige typefout of schept verwarring over het daadwerkelijke bedrag.
 
 **Tijden en kalenders.** Nederlanders gebruiken in zakelijke context vrijwel altijd de 24-uursklok en werkweken die op maandag beginnen. Een kalenderwidget die op zondag begint, verraadt direct dat de software blindelings is geïmporteerd.
 
@@ -60,7 +60,7 @@ Facturen verdienen extra aandacht. Een Nederlandse zakelijke klant verwacht een 
 
 ## Zoeken en content gedragen zich per taal fundamenteel anders
 
-Bevat jouw applicatie een zoekbalk? Dan heeft taal meer impact dan veel oprichters voorzien. De regels voor woordherkenning (stemming) verschillen sterk. In het Nederlands zorgen samengestelde woorden ervoor dat een zoekterm ook gevonden moet worden wanneer het onderdeel uitmaakt van een langer woord — iets wat een zoekmachine die op het Engels is geconfigureerd categorisch niet doet.
+Bevat jouw applicatie een zoekbalk? Dan heeft taal meer impact dan veel oprichters voorzien. De regels voor woordherkenning (stemming) verschillen sterk. In het Nederlands zorgen samengestelde woorden ervoor dat een zoekterm ook gevonden moet worden wanneer het onderdeel uitmaakt van een langer woord - iets wat een zoekmachine die op het Engels is geconfigureerd categorisch niet doet.
 
 Bevat je database content in meerdere talen? Bepaal dan vooraf of de zoekfunctie standaard beide talen doorzoekt of uitsluitend filtert op de actieve taal van de gebruiker. Beide keuzes zijn verdedigbaar; maar er nooit over nadenken leidt tot zoekresultaten die gebruikers als chaotisch ervaren.
 
@@ -78,7 +78,7 @@ Veel SaaS-bedrijven kiezen er overigens verstandig voor om hun marketingpagina's
 
 Terughoudendheid bespaart een enorme hoeveelheid onderhoudswerk:
 
-Productnamen, merktermen en feature-namen behoud je zoals ze zijn. Technische identifiers, foutcodes en referentienummers vertaal je nooit. Juridische documenten (zoals algemene voorwaarden) vereisen een professionele juridische vertaling of een heldere clausule welke taalversie leidend is — een door AI vertaalde terms-pagina met kromme juridische termen is riskanter dan een helder Engels document.
+Productnamen, merktermen en feature-namen behoud je zoals ze zijn. Technische identifiers, foutcodes en referentienummers vertaal je nooit. Juridische documenten (zoals algemene voorwaarden) vereisen een professionele juridische vertaling of een heldere clausule welke taalversie leidend is - een door AI vertaalde terms-pagina met kromme juridische termen is riskanter dan een helder Engels document.
 
 Door gebruikers gegenereerde content (UGC) is bovendien niet jouw verantwoordelijkheid om vooraf te vertalen. Een advertentie geplaatst in het Nederlands blijft in het Nederlands; een optionele vertaalknop ("Vertaal met AI") is een functionaliteit, geen verplichting.
 
@@ -94,13 +94,13 @@ Door gebruikers gegenereerde content (UGC) is bovendien niet jouw verantwoordeli
 
 Meertaligheid is typisch zo'n feature die relatief eenvoudig is wanneer hij vanaf het fundament goed wordt ontworpen, maar tijdrovend en kostbaar wordt wanneer hij achteraf op een draaiende applicatie moet worden geplakt. De tekstextractie moet immers hoe dan ook plaatsvinden, en achteraf sleutelen aan strings in een actieve productie-omgeving brengt onnodige risico's met zich mee.
 
-LaunchStudio pakt dit op als onderdeel van het afronden van AI-gebouwde software: teksten professioneel geëxtraheerd en gestructureerd via i18n, opmaak volledig locale-aware gemaakt, taalvoorkeuren opgeslagen en gesynchroniseerd met e-mailtemplates, zoekfunctionaliteit geoptimaliseerd voor zowel Nederlands als Engels, en openbare URL's voorzien van de juiste taalannotaties — zonder de interface die je in Lovable hebt gebouwd aan te tasten.
+LaunchStudio pakt dit op als onderdeel van het afronden van AI-gebouwde software: teksten professioneel geëxtraheerd en gestructureerd via i18n, opmaak volledig locale-aware gemaakt, taalvoorkeuren opgeslagen en gesynchroniseerd met e-mailtemplates, zoekfunctionaliteit geoptimaliseerd voor zowel Nederlands als Engels, en openbare URL's voorzien van de juiste taalannotaties - zonder de interface die je in Lovable hebt gebouwd aan te tasten.
 
 Dit gebeurt onder leiding van de senior engineers van Manifera, met elf jaar ervaring in softwareontwikkeling voor klanten binnen de EU (waaronder Vodafone en TNO), vanuit kantoren in Amsterdam en Ho Chi Minhstad waar meertalige architecturen dagelijkse kost zijn. Bekijk de [pakketten](https://launchstudio.eu/nl/#packages) of [beschrijf je project](https://launchstudio.eu/nl/#contact) voor een gerichte analyse binnen één werkdag.
 
 ## Welke taal moet de standaardinstelling zijn?
 
-Een beslissing die oprichters vaak per ongeluk nemen — meestal Engels omdat de prompts in die taal zijn geschreven — maar die een bewuste strategie vereist:
+Een beslissing die oprichters vaak per ongeluk nemen - meestal Engels omdat de prompts in die taal zijn geschreven - maar die een bewuste strategie vereist:
 
 **Verkoop aan Nederlandse consumenten (B2C):** Nederlands, zonder enige twijfel. Consumentenvertrouwen in Nederland hangt sterk samen met software die vlekkeloos Nederlands spreekt. Een uitsluitend Engelstalige consumenten-app voelt direct afstandelijk of onaf aan.
 
@@ -143,9 +143,9 @@ In zeven werkdagen werd de lokalisatie professioneel herzien: alle teksten werde
 **Resultaat:** het aantal no-shows door verkeerde data daalde de daaropvolgende twee maanden naar vrijwel nul, en twee praktijken die op het punt stonden over te stappen naar een concurrent besloten alsnog te blijven.
 
 > *"Alles was netjes vertaald. Toch voelde het product buitenlands aan. De reden bleek pijnlijk eenvoudig: we toonden Amerikaanse datumnotaties aan Nederlandse fysiotherapeuten."*
-> — **Lotte Verhoeven, Oprichter, Praktijkplanner (Eindhoven)**
+> - **Lotte Verhoeven, Oprichter, Praktijkplanner (Eindhoven)**
 
-**Kosten & Doorlooptijd:** € 3.250 (tekstextractie, locale-aware opmaak, taalvoorkeur in database en e-mailrouting, Nederlandse facturatie, SEO-taalsignalen) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.250 (tekstextractie, locale-aware opmaak, taalvoorkeur in database en e-mailrouting, Nederlandse facturatie, SEO-taalsignalen) - afgerond in 7 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -174,7 +174,7 @@ Datumnotaties (dag-maand-jaar) en uitgeschreven maanden, de komma als decimaal s
       "name": "Is het toevoegen van een tweede taal puur een vertaalklus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — vertaling is slechts een kwart van het werk. Tekstextractie, lokale datumnotaties, getallen en valuta, e-mailrouting per taal en meertalige zoekfunctionaliteit vormen de rest."
+        "text": "Nee - vertaling is slechts een kwart van het werk. Tekstextractie, lokale datumnotaties, getallen en valuta, e-mailrouting per taal en meertalige zoekfunctionaliteit vormen de rest."
       }
     },
     {

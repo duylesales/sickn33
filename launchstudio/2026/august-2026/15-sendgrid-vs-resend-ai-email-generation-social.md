@@ -1,4 +1,4 @@
-🔥 Mia built a prototype using **Cursor** — mia, an accountant, used **cursor** to build a tool that emails parsed invoice data, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Mia built a prototype using **Cursor** - mia, an accountant, used **cursor** to build a tool that emails parsed invoice data, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mia's application achieved silky-smooth performance: Email deliverability reached 99.8%, ensuring clients received their invoice summaries instantly. (€950 (Email Delivery Package) — production-ready and deployed in 2 business days.). 🚀
+Mia's application achieved silky-smooth performance: Email deliverability reached 99.8%, ensuring clients received their invoice summaries instantly. (€950 (Email Delivery Package) - production-ready and deployed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/sendgrid-vs-resend-ai-email-generation
 

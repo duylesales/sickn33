@@ -31,7 +31,7 @@ Doelpersona: SaaS-Oprichter / CFO / CTO
 }
 </script>
 
-In het traditionele SaaS-verdienmodel naderen de variabele productiekosten (Cost of Goods Sold - COGS) de nul. Heeft u eenmaal de ontwikkelkosten van een traditionele webapplicatie betaald, dan kost het toevoegen van een nieuwe gebruiker u hooguit enkele centen aan serverkosten op AWS. Hierdoor behalen traditionele softwarebedrijven brutomarges van 85% tot 90% — de belangrijkste statistiek waarop software-waarderingen worden gebaseerd.
+In het traditionele SaaS-verdienmodel naderen de variabele productiekosten (Cost of Goods Sold - COGS) de nul. Heeft u eenmaal de ontwikkelkosten van een traditionele webapplicatie betaald, dan kost het toevoegen van een nieuwe gebruiker u hooguit enkele centen aan serverkosten op AWS. Hierdoor behalen traditionele softwarebedrijven brutomarges van 85% tot 90% - de belangrijkste statistiek waarop software-waarderingen worden gebaseerd.
 
 AI-softwareproducten verbreken deze fundamentele economische wet.
 
@@ -113,9 +113,9 @@ David schakelde LaunchStudio in voor een intensieve "Marge-Optimalisatie Sprint"
 **Resultaat:** David's API-kosten daalden met 78%. Zijn maandfactuur kromp van €35.000 naar €7.700. Zijn brutomarge explodeerde van 10% naar een uiterst gezonde 80%. Hij sloot zijn Seed-financieringsronde een maand later met succes af.
 
 > *"Ik was zo gefocust op een mooie feature dat ik niet doorhad dat ik een machine had gebouwd die mijn bankrekening leegslurpte. LaunchStudio veranderde niets aan de voorkant voor de gebruiker, maar bouwde de motor onder de motorkap volledig om. Zij redden mijn brutomarges, en daarmee letterlijk mijn bedrijf."*
-> — **David Lindberg, Oprichter, ReviewSense AI (Stockholm)**
+> - **David Lindberg, Oprichter, ReviewSense AI (Stockholm)**
 
-**Kosten & Doorlooptijd:** €8.500 (Launch & Grow Pakket met Marge-Optimalisatie & Routering Add-on) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €8.500 (Launch & Grow Pakket met Marge-Optimalisatie & Routering Add-on) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 

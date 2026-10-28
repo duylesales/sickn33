@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Using AI in Your Own Recruitment: What the EU AI Act Requires From Dutch Employers",
-  "description": "AI tools that filter applications, rank candidates or analyse interviews are high-risk under the EU AI Act, and some practices are prohibited. A practical guide for Dutch employers using AI in recruitment — obligations, vendor questions, works council involvement and GDPR.",
+  "description": "AI tools that filter applications, rank candidates or analyse interviews are high-risk under the EU AI Act, and some practices are prohibited. A practical guide for Dutch employers using AI in recruitment - obligations, vendor questions, works council involvement and GDPR.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-21",
@@ -45,7 +45,7 @@ This article provides general information, not legal advice.
 
 **Prohibited practices (Article 5).** Since February 2025, certain AI practices are prohibited, including AI systems that infer emotions of a natural person in the workplace or in education institutions, except for medical or safety reasons. AI that analyses candidates' facial expressions or voice in interviews to infer emotions can therefore fall within a prohibition when used in a workplace context. Biometric categorisation to infer sensitive characteristics such as race, political opinions or sexual orientation is also prohibited.
 
-**AI literacy (Article 4).** Since February 2025, providers and deployers must take measures to ensure a sufficient level of AI literacy among staff dealing with AI systems — including recruiters using AI tools.
+**AI literacy (Article 4).** Since February 2025, providers and deployers must take measures to ensure a sufficient level of AI literacy among staff dealing with AI systems - including recruiters using AI tools.
 
 **Timeline for high-risk obligations.** Obligations for high-risk systems listed in Annex III were scheduled to apply from August 2026. EU institutions have discussed adjusting the timing of some high-risk obligations, so employers should check the current applicable dates. Preparing now is sensible regardless, because GDPR and equal treatment rules already apply.
 
@@ -53,7 +53,7 @@ This article provides general information, not legal advice.
 
 Most employers buy recruitment tools from vendors. In that case, the vendor is usually the **provider**, responsible for conformity assessment, technical documentation, risk management, data governance and registration of high-risk systems. The employer is the **deployer**.
 
-An employer can become a provider if it develops its own AI recruitment system, puts its name on a system or makes a substantial modification to a high-risk system. Companies with strong data teams sometimes build internal ranking models for applications — which can bring provider obligations.
+An employer can become a provider if it develops its own AI recruitment system, puts its name on a system or makes a substantial modification to a high-risk system. Companies with strong data teams sometimes build internal ranking models for applications - which can bring provider obligations.
 
 ## Deployer Obligations Under Article 26
 
@@ -88,7 +88,7 @@ Under **Article 27 of the Dutch Works Councils Act**, employers need the works c
 
 ## Equal Treatment and Bias
 
-Dutch equal treatment law prohibits discrimination in recruitment on protected grounds. AI systems trained on historical hiring data can reproduce past patterns — for example, favouring candidates from certain universities, backgrounds or career paths. Employers remain responsible for discriminatory outcomes even if a vendor's system produced them. Regular monitoring of selection outcomes across groups, where lawful and feasible, and human review of automated recommendations help identify problems.
+Dutch equal treatment law prohibits discrimination in recruitment on protected grounds. AI systems trained on historical hiring data can reproduce past patterns - for example, favouring candidates from certain universities, backgrounds or career paths. Employers remain responsible for discriminatory outcomes even if a vendor's system produced them. Regular monitoring of selection outcomes across groups, where lawful and feasible, and human review of automated recommendations help identify problems.
 
 ## Questions to Ask Recruitment Technology Vendors
 
@@ -109,25 +109,25 @@ Informing candidates does not need to be complicated, but it should be specific.
 
 An example: "We use software that helps our recruiters organise applications by matching the information in your CV with the requirements of the role. The software does not reject applications automatically: every application is reviewed by a recruiter before a decision is made. If you have questions about how your application was assessed or want to request human review, please contact us."
 
-Avoid vague statements such as "we may use innovative technologies". Candidates for AI and data roles in particular are likely to appreciate clear explanations — and to be put off by vague ones.
+Avoid vague statements such as "we may use innovative technologies". Candidates for AI and data roles in particular are likely to appreciate clear explanations - and to be put off by vague ones.
 
 ## Human Oversight That Is Meaningful, Not Symbolic
 
 The AI Act requires deployers to assign human oversight to people with the necessary competence, training and authority. In recruitment, oversight is easily reduced to a formality: a recruiter who clicks "approve" on the AI's ranking without understanding it, or who never looks beyond the top of a list.
 
-Meaningful oversight involves several elements. Recruiters must understand what the tool does, its limitations and the risk of automation bias — the tendency to trust automated recommendations too readily. They must have time and authority to deviate from recommendations. Processes should require review of a sample of lower-ranked or rejected applications. And decisions to reject candidates should be based on criteria that a human can explain, not simply on a score.
+Meaningful oversight involves several elements. Recruiters must understand what the tool does, its limitations and the risk of automation bias - the tendency to trust automated recommendations too readily. They must have time and authority to deviate from recommendations. Processes should require review of a sample of lower-ranked or rejected applications. And decisions to reject candidates should be based on criteria that a human can explain, not simply on a score.
 
 Organisations can test whether oversight works by periodically checking how often recruiters deviate from AI recommendations and why. If deviations never occur, oversight may exist only on paper.
 
 ## A Concrete Scenario: The Ranking Tool Nobody Questioned
 
-A technology company uses an applicant tracking system with an AI feature that ranks applicants for data engineering roles. Recruiters mostly review the top twenty candidates for each vacancy. After a year, the company notices that very few candidates with non-traditional backgrounds — such as career switchers or graduates from universities of applied sciences — reach interviews.
+A technology company uses an applicant tracking system with an AI feature that ranks applicants for data engineering roles. Recruiters mostly review the top twenty candidates for each vacancy. After a year, the company notices that very few candidates with non-traditional backgrounds - such as career switchers or graduates from universities of applied sciences - reach interviews.
 
 The company investigates with the vendor. The ranking model weighted certain keywords and education patterns heavily, reflecting historical hiring. Recruiters had not been trained on how the ranking worked and rarely looked beyond the top of the list. The company changes its process: recruiters review a broader set of applications, the ranking is used as one input rather than a filter, candidates are informed about the use of AI in the process, and the works council and data protection officer review the tool. Interview diversity improves, and the company is better prepared for AI Act obligations.
 
 ## A Common Misconception
 
-Many employers believe that because a tool is bought from a reputable vendor, compliance is the vendor's responsibility. Under the AI Act, providers have extensive obligations, but deployers have their own — especially human oversight, informing candidates and workers, monitoring and log-keeping. Under the GDPR and equal treatment law, the employer remains responsible for how candidates are treated. Another misconception is that simple keyword filters are never AI. Whether a system is an AI system depends on how it works; many modern screening features use machine learning and fall within the definition.
+Many employers believe that because a tool is bought from a reputable vendor, compliance is the vendor's responsibility. Under the AI Act, providers have extensive obligations, but deployers have their own - especially human oversight, informing candidates and workers, monitoring and log-keeping. Under the GDPR and equal treatment law, the employer remains responsible for how candidates are treated. Another misconception is that simple keyword filters are never AI. Whether a system is an AI system depends on how it works; many modern screening features use machine learning and fall within the definition.
 
 ## A Practical Roadmap for Employers
 
@@ -151,9 +151,9 @@ Many employers believe that because a tool is bought from a reputable vendor, co
 
 ## Where to Start
 
-List every tool in your recruitment process and identify which ones rank, filter or evaluate candidates — that inventory is the foundation for every other step.
+List every tool in your recruitment process and identify which ones rank, filter or evaluate candidates - that inventory is the foundation for every other step.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -167,7 +167,7 @@ AI systems that infer emotions in the workplace are prohibited except for medica
 The vendor has provider obligations, but employers as deployers have their own obligations, including human oversight and informing candidates.
 
 ### (Scenario: HR manager) Do we need to inform candidates that we use AI?
-Yes — under the AI Act, affected persons must be informed when high-risk AI assists decisions about them, and the GDPR requires transparency.
+Yes - under the AI Act, affected persons must be informed when high-risk AI assists decisions about them, and the GDPR requires transparency.
 
 ### (Scenario: employer with a works council) Does the works council need to be involved?
 Workers' representatives must be informed before high-risk AI is used at the workplace, and consent may be required under the Works Councils Act.
@@ -180,7 +180,7 @@ Workers' representatives must be informed before high-risk AI is used at the wor
     {"@type": "Question", "name": "Is our applicant tracking system high-risk under the AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "AI features that filter, rank or evaluate candidates are high-risk."}},
     {"@type": "Question", "name": "Can we use AI to analyse candidates' emotions in video interviews?", "acceptedAnswer": {"@type": "Answer", "text": "Emotion inference in the workplace is prohibited except for medical or safety reasons."}},
     {"@type": "Question", "name": "Is the vendor responsible for AI Act compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Vendors have provider obligations; employers have deployer obligations too."}},
-    {"@type": "Question", "name": "Do we need to inform candidates that we use AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — under the AI Act and GDPR transparency rules."}},
+    {"@type": "Question", "name": "Do we need to inform candidates that we use AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - under the AI Act and GDPR transparency rules."}},
     {"@type": "Question", "name": "Does the works council need to be involved?", "acceptedAnswer": {"@type": "Answer", "text": "It must be informed and consent may be required."}}
   ]
 }

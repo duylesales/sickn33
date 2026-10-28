@@ -20,19 +20,19 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-A founder holding an AI-built prototype and a proposal from a traditional agency is in a strange negotiating position. They know their product needs work. They usually don't know exactly how much, or what kind. And an agency, however well-intentioned, has a natural incentive to size the engagement generously — which means the sales pitch often needs a second, more skeptical read before a contract gets signed.
+A founder holding an AI-built prototype and a proposal from a traditional agency is in a strange negotiating position. They know their product needs work. They usually don't know exactly how much, or what kind. And an agency, however well-intentioned, has a natural incentive to size the engagement generously - which means the sales pitch often needs a second, more skeptical read before a contract gets signed.
 
 Here's how to read one of those pitches properly.
 
 ## Signal one: "rebuild" language for a problem that's actually contained
 
-Listen for how the agency frames the work. If every explanation of what's wrong leads back to "we'd really need to rebuild this properly," ask a direct follow-up: rebuild which part, specifically, and why can't it be fixed in place. A genuinely broken foundation sometimes does need a rebuild. But an AI app dev prototype with a handful of specific security or architecture gaps usually needs those gaps fixed, not a wholesale replacement of everything the founder already built — including the frontend they may have spent months refining.
+Listen for how the agency frames the work. If every explanation of what's wrong leads back to "we'd really need to rebuild this properly," ask a direct follow-up: rebuild which part, specifically, and why can't it be fixed in place. A genuinely broken foundation sometimes does need a rebuild. But an AI app dev prototype with a handful of specific security or architecture gaps usually needs those gaps fixed, not a wholesale replacement of everything the founder already built - including the frontend they may have spent months refining.
 
 If the agency can't point to a specific technical reason the existing frontend can't be kept, "rebuild" may be doing more sales work than technical work.
 
 ## Signal two: vague findings instead of a specific list
 
-A trustworthy assessment names things: this authentication flow doesn't handle token expiry, this database query is vulnerable to injection, this endpoint doesn't check permissions correctly. A pitch that stays at the level of "there are a lot of underlying issues" or "the code quality isn't where it needs to be" without ever getting specific is harder to evaluate — and harder to push back on, which may be exactly the point.
+A trustworthy assessment names things: this authentication flow doesn't handle token expiry, this database query is vulnerable to injection, this endpoint doesn't check permissions correctly. A pitch that stays at the level of "there are a lot of underlying issues" or "the code quality isn't where it needs to be" without ever getting specific is harder to evaluate - and harder to push back on, which may be exactly the point.
 
 Ask for the list. A specific list is checkable, even by a non-technical founder, because you can ask a second party whether the same list holds up.
 
@@ -46,21 +46,21 @@ A pitch that discourages you from getting a second opinion, or frames a competin
 
 ## Job's overpaid rebuild
 
-Job Vermeer, a founder in Elburg, built BouwPlan — a construction project tool — using Lovable. He signed with a traditional agency whose pitch implied a full rebuild was necessary to make BouwPlan production-ready. The pitch was confident and the reasoning sounded plausible at the time — enough that Job moved forward without getting a second opinion first.
+Job Vermeer, a founder in Elburg, built BouwPlan - a construction project tool - using Lovable. He signed with a traditional agency whose pitch implied a full rebuild was necessary to make BouwPlan production-ready. The pitch was confident and the reasoning sounded plausible at the time - enough that Job moved forward without getting a second opinion first.
 
-In fact, only targeted fixes were needed — specific issues in how the tool handled project data access and file uploads, not a reason to discard the working frontend and start over. Job significantly overpaid before eventually getting a second opinion from LaunchStudio, by which point the agency had already billed for a substantial portion of a rebuild that didn't need to happen.
+In fact, only targeted fixes were needed - specific issues in how the tool handled project data access and file uploads, not a reason to discard the working frontend and start over. Job significantly overpaid before eventually getting a second opinion from LaunchStudio, by which point the agency had already billed for a substantial portion of a rebuild that didn't need to happen.
 
 ## What to do differently before signing
 
-Before agreeing to any agency's proposed scope, get a second, independent read — ideally from a team with no financial interest in the size of the engagement. Ask for a specific list of findings, not a general impression. Ask which parts of the existing product genuinely need to change and which don't. And treat "we need to rebuild this" as a claim to verify, not a conclusion to accept on the strength of confident delivery.
+Before agreeing to any agency's proposed scope, get a second, independent read - ideally from a team with no financial interest in the size of the engagement. Ask for a specific list of findings, not a general impression. Ask which parts of the existing product genuinely need to change and which don't. And treat "we need to rebuild this" as a claim to verify, not a conclusion to accept on the strength of confident delivery.
 
-Our engineers in Amsterdam, alongside colleagues in Singapore and Ho Chi Minh City, are regularly the second opinion founders bring in after a pitch like the one Job received — and the finding, more often than not, is that a targeted fix would have done the job. LaunchStudio's fixed-scope pricing (typically €800–€7,500, delivered in one to three weeks) exists specifically so founders can compare a concrete, itemized scope against whatever an agency has proposed. Unlike freelancers, LaunchStudio is backed by Manifera, a company with 11+ years of production engineering experience — you can [see what a fixed-scope quote for your actual findings would look like](https://launchstudio.eu/en/#calculator) before committing to anything larger.
+Our engineers in Amsterdam, alongside colleagues in Singapore and Ho Chi Minh City, are regularly the second opinion founders bring in after a pitch like the one Job received - and the finding, more often than not, is that a targeted fix would have done the job. LaunchStudio's fixed-scope pricing (typically €800–€7,500, delivered in one to three weeks) exists specifically so founders can compare a concrete, itemized scope against whatever an agency has proposed. Unlike freelancers, LaunchStudio is backed by Manifera, a company with 11+ years of production engineering experience - you can [see what a fixed-scope quote for your actual findings would look like](https://launchstudio.eu/en/#calculator) before committing to anything larger.
 
 ## The Follow-Up Questions That Separate a Real Assessment From a Sales Pitch
 
-The four signals covered above are things to notice while listening to a pitch. The following questions are things to actively ask, out loud, before signing anything — and a legitimate assessment should be able to answer every one of them specifically, without the answer shifting the story.
+The four signals covered above are things to notice while listening to a pitch. The following questions are things to actively ask, out loud, before signing anything - and a legitimate assessment should be able to answer every one of them specifically, without the answer shifting the story.
 
-**"Can you show me the specific file or feature this issue is in?"** A real finding can be pointed to. If the answer stays abstract — "it's throughout the codebase," "it's a broader pattern" — without ever landing on something concrete, that's worth noting as a gap between what's being described and what's actually been verified.
+**"Can you show me the specific file or feature this issue is in?"** A real finding can be pointed to. If the answer stays abstract - "it's throughout the codebase," "it's a broader pattern" - without ever landing on something concrete, that's worth noting as a gap between what's being described and what's actually been verified.
 
 **"What would it take to fix this specific issue without touching anything else?"** This question tests whether the agency has actually scoped the problem narrowly or is defaulting to the broadest possible framing. A specific, contained answer suggests real technical assessment. An answer that expands to "well, once you're in there, you'd really want to also..." is worth treating as scope creep in the making, however reasonable it sounds in the moment.
 
@@ -70,9 +70,9 @@ The four signals covered above are things to notice while listening to a pitch. 
 
 **"Would your assessment change if I told you I hadn't raised any funding yet?"** This is a deliberately blunt way to test signal three from the list above. A price genuinely tied to technical scope shouldn't move much based on the answer. If it visibly does, that's worth remembering during the next conversation.
 
-**"Who else has reviewed this same codebase, and can I see what they found?"** Not every founder will have a prior review to compare against, but asking the question signals you expect the current assessment to hold up against another set of eyes — and watching how an agency responds to that expectation is itself useful information, regardless of whether a second review currently exists.
+**"Who else has reviewed this same codebase, and can I see what they found?"** Not every founder will have a prior review to compare against, but asking the question signals you expect the current assessment to hold up against another set of eyes - and watching how an agency responds to that expectation is itself useful information, regardless of whether a second review currently exists.
 
-None of these six questions require a technical background to ask, and none of them are hostile — a legitimate agency answers all six comfortably, because a real assessment was never threatened by scrutiny in the first place. The pitches worth being cautious about are the ones where one or two of these questions visibly change the tone of the conversation.
+None of these six questions require a technical background to ask, and none of them are hostile - a legitimate agency answers all six comfortably, because a real assessment was never threatened by scrutiny in the first place. The pitches worth being cautious about are the ones where one or two of these questions visibly change the tone of the conversation.
 
 ## Real example
 
@@ -80,16 +80,16 @@ None of these six questions require a technical background to ask, and none of t
 
 Job Vermeer had built BouwPlan to help small construction firms track project documents, timelines, and subcontractor updates in one place. As BouwPlan grew, he reached out to a traditional agency for help making it production-ready, and their pitch described extensive underlying problems that, in their telling, justified rebuilding the application from the ground up.
 
-Job signed on, and the agency began work on a full rebuild. Partway through, on a colleague's recommendation, he brought BouwPlan to LaunchStudio for a second opinion — mostly out of curiosity about whether the cost he was already paying was reasonable. Manifera's engineers reviewed the actual codebase and found a much narrower set of real issues: project data access wasn't properly scoped between different construction firms using the platform, and file uploads lacked validation, allowing potentially unsafe file types through. Both were fixable directly, without touching the frontend Job had already built and refined.
+Job signed on, and the agency began work on a full rebuild. Partway through, on a colleague's recommendation, he brought BouwPlan to LaunchStudio for a second opinion - mostly out of curiosity about whether the cost he was already paying was reasonable. Manifera's engineers reviewed the actual codebase and found a much narrower set of real issues: project data access wasn't properly scoped between different construction firms using the platform, and file uploads lacked validation, allowing potentially unsafe file types through. Both were fixable directly, without touching the frontend Job had already built and refined.
 
 Job stopped the agency's rebuild, and LaunchStudio implemented the targeted fixes directly against the existing BouwPlan codebase.
 
 **Result:** BouwPlan launched with its original frontend intact, its actual security gaps closed, and at a fraction of what the abandoned rebuild would have eventually cost.
 
 > *"I paid for a rebuild I never needed before someone finally told me what was actually wrong."*
-> — **Job Vermeer, Founder, BouwPlan (Elburg)**
+> - **Job Vermeer, Founder, BouwPlan (Elburg)**
 
-**Cost & Timeline:** €1,450 (data access scoping and file upload validation) — completed in 9 business days.
+**Cost & Timeline:** €1,450 (data access scoping and file upload validation) - completed in 9 business days.
 
 ---
 

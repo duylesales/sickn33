@@ -32,7 +32,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Zaanstad is a municipality of roughly 160,000 people immediately northwest of Amsterdam, formed from a group of industrial towns along the river Zaan. It is one of the oldest industrialised areas in Europe, and food processing has been its defining industry for centuries — cocoa, oils and fats, starch, flour and related products. For a data engineer or machine learning engineer, this produces a specific kind of industrial work, and the location means you can do it while living fifteen minutes from central Amsterdam.
+Zaanstad is a municipality of roughly 160,000 people immediately northwest of Amsterdam, formed from a group of industrial towns along the river Zaan. It is one of the oldest industrialised areas in Europe, and food processing has been its defining industry for centuries - cocoa, oils and fats, starch, flour and related products. For a data engineer or machine learning engineer, this produces a specific kind of industrial work, and the location means you can do it while living fifteen minutes from central Amsterdam.
 
 ## Why Food Processing Data Is a Distinct Technical Domain
 
@@ -103,7 +103,7 @@ This has several practical consequences.
 
 **Interventions are rare and expensive.** You cannot run experiments freely on a plant producing saleable product. Most of your data is observational, from a system operated to maintain quality, which means the interesting regions of the operating space are systematically under-sampled precisely because operators avoid them.
 
-Candidates who recognise these issues and can discuss them credibly stand out immediately in process industry interviews, because the failure they describe — a model that validated well and then did not work — is one most plants have experienced with an external data consultant.
+Candidates who recognise these issues and can discuss them credibly stand out immediately in process industry interviews, because the failure they describe - a model that validated well and then did not work - is one most plants have experienced with an external data consultant.
 
 ## The Amsterdam Relationship Is the Decisive Factor
 
@@ -116,7 +116,7 @@ Candidates who recognise these issues and can discuss them credibly stand out im
 | Alkmaar | 20–25 minutes | Energy transition and grid work |
 | Utrecht | 45–55 minutes | Health data, consultancy, public sector |
 
-Twelve to seventeen minutes to Amsterdam is not a commute in any meaningful sense — it is shorter than many cross-city journeys within Amsterdam itself. This changes the entire proposition. A candidate living in Zaanstad has the full Amsterdam labour market available with no meaningful travel penalty, while paying materially less for housing than in Amsterdam proper.
+Twelve to seventeen minutes to Amsterdam is not a commute in any meaningful sense - it is shorter than many cross-city journeys within Amsterdam itself. This changes the entire proposition. A candidate living in Zaanstad has the full Amsterdam labour market available with no meaningful travel penalty, while paying materially less for housing than in Amsterdam proper.
 
 The practical implication is that the local industrial market and the Amsterdam market are not alternatives here; they are both available simultaneously. That makes Zaanstad one of the lowest-risk locations covered in this series, because specialising in food manufacturing carries almost no concentration penalty.
 
@@ -128,7 +128,7 @@ This produces a particular opportunity and a particular risk.
 
 The opportunity is influence. A competent data engineer in such an organisation is often the first, which means you define the practices, choose the tooling and set the expectations. Work that would be a small contribution within a mature data organisation can be foundational here, and it is visible to senior management because there is nobody between you and them on these questions.
 
-The risk is isolation. Being the only person who understands your own work is professionally uncomfortable and technically dangerous — nobody reviews your decisions, nobody catches your errors, and your growth depends entirely on self-direction. Candidates considering such a role should ask directly who will review their work, and whether there is budget for external expertise or training. If the honest answer is nobody and no, weigh that seriously.
+The risk is isolation. Being the only person who understands your own work is professionally uncomfortable and technically dangerous - nobody reviews your decisions, nobody catches your errors, and your growth depends entirely on self-direction. Candidates considering such a role should ask directly who will review their work, and whether there is budget for external expertise or training. If the honest answer is nobody and no, weigh that seriously.
 
 The mitigation available in Zaanstad specifically is that Amsterdam is fifteen minutes away, which makes maintaining a professional network outside your employer genuinely practical. That is a real advantage over taking a similar role in an isolated location.
 
@@ -138,7 +138,7 @@ This is the skill that determines success in industrial data roles, and it is no
 
 Process engineers in a food plant know things that are not written down: which sensor reads low, which line behaves differently on Mondays, why a previous attempt at automation failed. That knowledge is the most valuable input available to you and it is only accessible through relationships.
 
-Two behaviours help consistently. Spend time on the plant floor before proposing anything, which signals that you consider their knowledge relevant and gives you context no dataset will provide. And frame your work as extending their capability rather than replacing their judgement — because in a safety-critical process, their judgement is a control and they are right to defend it.
+Two behaviours help consistently. Spend time on the plant floor before proposing anything, which signals that you consider their knowledge relevant and gives you context no dataset will provide. And frame your work as extending their capability rather than replacing their judgement - because in a safety-critical process, their judgement is a control and they are right to defend it.
 
 Two behaviours reliably fail. Presenting model output as authoritative when it conflicts with operator experience, without investigating why they disagree, destroys credibility quickly. And treating the sensor data as ground truth when the people who installed and maintain those sensors know its limitations means your first confident conclusion will be embarrassingly wrong.
 
@@ -148,7 +148,7 @@ Two behaviours reliably fail. Presenting model output as authoritative when it c
 - Machine vision here is harder than it appears, with deformable products, reflective wet environments, high line speeds, severe cost asymmetry and hardware that must survive aggressive cleaning.
 - Amsterdam is twelve to seventeen minutes away, which makes this one of the lowest-concentration-risk specialised markets in the country.
 - Industrial employers often have strong engineering cultures and weak data cultures, giving early data hires unusual influence.
-- The corresponding risk is isolation with no one to review your work — ask directly who will, and treat Amsterdam proximity as the mitigation.
+- The corresponding risk is isolation with no one to review your work - ask directly who will, and treat Amsterdam proximity as the mitigation.
 - Success depends on working well with process engineers whose undocumented knowledge is your most valuable input.
 
 ## Where to Start

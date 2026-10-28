@@ -24,17 +24,17 @@ De harde realiteit van een productlancering is dat het exacte moment waarop je a
 
 Een exclusieve kaartverkoop, een vermelding in de landelijke pers, een viraal LinkedIn-bericht, een geslaagde Product Hunt lancering of een invloedrijke partner die jouw app aanbeveelt bij zijn netwerk. Wat de aanleiding ook is, het patroon is identiek: maandenlang veertig bezoekers per dag, en opeens vierduizend actieve gebruikers binnen één enkel uur.
 
-Het goede nieuws is dat een dergelijke crash niet mysterieus is. Applicaties bezwijken onder piekbelasting in een uiterst voorspelbare volgorde — en elk onderdeel van die kettingreactie is vooraf binnen minder dan één werkdag te verhelpen.
+Het goede nieuws is dat een dergelijke crash niet mysterieus is. Applicaties bezwijken onder piekbelasting in een uiterst voorspelbare volgorde - en elk onderdeel van die kettingreactie is vooraf binnen minder dan één werkdag te verhelpen.
 
 ## Wat er breekt, in chronologische volgorde
 
-**1. Databaseverbindingen, als allereerste en vrijwel altijd.** Elk inkomend webverzoek dat een eigen directe databaseconnectie opent, verbruikt een schaars slot. De maximale limiet is razendsnel bereikt. Het symptoom is geen heldere foutmelding, maar een applicatie die voor de eerste vijftig bezoekers prima werkt en daarna voor iedereen willekeurig hapert — wat vaak ten onrechte wordt toegeschreven aan de hostingprovider.
+**1. Databaseverbindingen, als allereerste en vrijwel altijd.** Elk inkomend webverzoek dat een eigen directe databaseconnectie opent, verbruikt een schaars slot. De maximale limiet is razendsnel bereikt. Het symptoom is geen heldere foutmelding, maar een applicatie die voor de eerste vijftig bezoekers prima werkt en daarna voor iedereen willekeurig hapert - wat vaak ten onrechte wordt toegeschreven aan de hostingprovider.
 
 **2. Query's die altijd al traag waren.** Een databasequery die 800 milliseconden duurt valt bij laag verkeer niemand op. Onder zware piekbelasting gaan verzoeken in de rij staan: 800 milliseconden wordt acht seconden, en daarna een harde time-out.
 
 **3. Externe API-limieten (rate limits) waarvan je het bestaan niet wist.** De verzendlimiet van je e-mailprovider, het minuutplafond van een geocoding-kaartdienst of de fraudedrempel van je betaalprovider. Deze limieten waren ruim voldoende voor je testfase, maar schieten hopeloos tekort bij een plotselinge verkeersexplosie.
 
-**4. Servergeheugen bij vaste containerlimieten.** Meer gelijktijdige verzoeken dan het werkgeheugen aankan, waardoor de servercontainer crasht en opnieuw opstart — met verlies van alle actieve sessies tot gevolg.
+**4. Servergeheugen bij vaste containerlimieten.** Meer gelijktijdige verzoeken dan het werkgeheugen aankan, waardoor de servercontainer crasht en opnieuw opstart - met verlies van alle actieve sessies tot gevolg.
 
 **5. Onvoorziene cloudkosten.** Geen downtime, maar een onaangename verrassing aan het einde van de maand: 'pay-as-you-go' cloudservices schalen mee met verbruik, en een ongecontroleerde piek resulteert in een torenhoge factuur.
 
@@ -54,7 +54,7 @@ De grootste reductie in serverbelasting is tevens volledig kosteloos:
 
 Je landingspagina, de homepage, de prijzenpagina en de specifieke campagne-URL: als deze pagina's niet per individuele bezoeker variëren, serveer ze dan als statische bestanden via een wereldwijd Content Delivery Network (CDN). Een statisch bestand belast geen databaseconnecties, verbruikt geen servergeheugen en maakt geen enkel onderscheid tussen tien of tienduizend gelijktijdige bezoekers.
 
-Hierdoor raakt de verkeerspiek jouw database-infrastructuur pas op het moment dat iemand daadwerkelijk een account aanmaakt of inlogt — een fractie van het aantal mensen dat louter kwam kijken. Veel met Lovable gebouwde applicaties crashen op launch day puur doordat de marketingpagina als zware dynamische applicatielaag wordt gerenderd.
+Hierdoor raakt de verkeerspiek jouw database-infrastructuur pas op het moment dat iemand daadwerkelijk een account aanmaakt of inlogt - een fractie van het aantal mensen dat louter kwam kijken. Veel met Lovable gebouwde applicaties crashen op launch day puur doordat de marketingpagina als zware dynamische applicatielaag wordt gerenderd.
 
 Hetzelfde geldt voor beeldmateriaal: comprimeer afbeeldingen, converteer naar moderne webformaten (WebP) en serveer ze vanaf een CDN. Niet-geoptimaliseerde afbeeldingen van 5 MB zijn de snelste manier om een campagnepagina traag te maken nog vóórdat er een databaserecord is aangeraakt.
 
@@ -96,7 +96,7 @@ Besteed een halve dag aan voorbereiding om van je lancering een beheersbaar proc
 
 ## De capaciteit die je tijdelijk kunt inkopen
 
-Niet elk knelpunt hoeft weken van tevoren met diepgaande code-aanpassingen te worden opgelost. Soms kun je schaalgrootte simpelweg tijdelijk inkopen — een optie die veel oprichters over het hoofd zien:
+Niet elk knelpunt hoeft weken van tevoren met diepgaande code-aanpassingen te worden opgelost. Soms kun je schaalgrootte simpelweg tijdelijk inkopen - een optie die veel oprichters over het hoofd zien:
 
 **Schaal je databasetier tijdelijk op voor de lanceerweek.** Managed databases (zoals Supabase Pro/Team) stellen je in staat om met één klik op te schalen naar een zwaardere serverinstantie met meer RAM, CPU en connectielimieten. Voor een lanceerweek zijn de meerkosten verwaarloosbaar vergeleken met de imagoschade van downtime, en na afloop schaal je met één klik weer terug.
 
@@ -122,7 +122,7 @@ Vervolgens kondigde een van de organisaties de inschrijving aan voor een populai
 
 Het platform hield het precies elf minuten vol voordat de server volledig stopte met reageren. De website bleef vervolgens vijftig minuten lang onbereikbaar.
 
-De technische evaluatie achteraf bracht de klassieke faalketen aan het licht: elk inkomend verzoek opende een eigen databaseconnectie, waardoor de connectielimiet al bij 90 gelijktijdige gebruikers werd bereikt. De pagina met het resterende aantal startbewijzen voerde bij élke paginalaadactie een ongeïndexeerde `COUNT(*)`-query uit over de complete inschrijvingentabel, continu getriggerd door duizenden mensen die de pagina verversten. De verzendlimiet van de e-mailprovider werd binnen vier minuten overschreden, waardoor honderden succesvol ingeschreven deelnemers geen bevestigingsmail ontvingen en zich opnieuw inschreven — sommigen zelfs driemaal. En de landingspagina van het evenement werd dynamisch gerenderd door de applicatie in plaats van geserveerd als een statisch bestand, waardoor nieuwsgierige kijkers exact evenveel servercapaciteit opslokten als betalende deelnemers.
+De technische evaluatie achteraf bracht de klassieke faalketen aan het licht: elk inkomend verzoek opende een eigen databaseconnectie, waardoor de connectielimiet al bij 90 gelijktijdige gebruikers werd bereikt. De pagina met het resterende aantal startbewijzen voerde bij élke paginalaadactie een ongeïndexeerde `COUNT(*)`-query uit over de complete inschrijvingentabel, continu getriggerd door duizenden mensen die de pagina verversten. De verzendlimiet van de e-mailprovider werd binnen vier minuten overschreden, waardoor honderden succesvol ingeschreven deelnemers geen bevestigingsmail ontvingen en zich opnieuw inschreven - sommigen zelfs driemaal. En de landingspagina van het evenement werd dynamisch gerenderd door de applicatie in plaats van geserveerd als een statisch bestand, waardoor nieuwsgierige kijkers exact evenveel servercapaciteit opslokten als betalende deelnemers.
 
 De organisatie sloot de inschrijving noodgedwongen en verplaatste de opening naar de daaropvolgende week.
 
@@ -131,9 +131,9 @@ In zeven werkdagen werd het platform structureel versterkt voor de tweede poging
 **Resultaat:** De herhaalde opening verwerkte 4.100 inschrijvingen in exact negen minuten zonder een seconde downtime en met een piekresponstijd van slechts 1,2 seconden. De 31 dubbele betalingen uit de eerste poging werden opgespoord en gerestitueerd. De tevreden organisatie heeft inmiddels drie extra evenementen op het platform aangesloten.
 
 > *"Vierduizend mensen hadden mijn website op exact hetzelfde moment openstaan, en het hield elf minuten stand. Wat de server uiteindelijk velde, was een pagina die een statisch bestand had moeten zijn."*
-> — **Thijs Damen, Oprichter, Startbewijs (Doetinchem)**
+> - **Thijs Damen, Oprichter, Startbewijs (Doetinchem)**
 
-**Kosten & Doorlooptijd:** € 4.400 (connection pooling, database-triggers en indexering, statische CDN-scheiding en beeldoptimalisatie, e-mail queuing, unieke database-constraints, feature flags, load-testing tot 5.000 users) — opgeleverd in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 4.400 (connection pooling, database-triggers en indexering, statische CDN-scheiding en beeldoptimalisatie, e-mail queuing, unieke database-constraints, feature flags, load-testing tot 5.000 users) - opgeleverd in 7 werkdagen.
 
 ## Veelgestelde vragen
 

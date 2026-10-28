@@ -1,4 +1,4 @@
-🔥 Logan built a prototype using **Cursor** — logan, a digital marketer, used **cursor** to build a keyword research tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Logan built a prototype using **Cursor** - logan, a digital marketer, used **cursor** to build a keyword research tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Logan's application achieved silky-smooth performance: Fake registrations dropped to zero, securing his SaaS revenue stream. (€1,100 (Webhook Security Package) — production-ready and deployed in 3 business days.). 🚀
+Logan's application achieved silky-smooth performance: Fake registrations dropped to zero, securing his SaaS revenue stream. (€1,100 (Webhook Security Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/webhooks-connecting-ai-saas-real-world
 

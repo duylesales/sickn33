@@ -10,7 +10,7 @@ A Nijkerk CIO described her cloud project in one sentence: three vendors, three 
 ✅ **Amsterdam Owns the Full Architecture:** A single Dutch technical lead owns infrastructure, application, and QA standards as one accountable point of contact.
 ✅ **53% Lower Than Three Fragmented Vendors:** A unified pod covering five roles runs €45,000/month versus roughly €96,000/month for equivalent fragmented local hiring.
 
-An Austrian SaaS platform shipped on schedule for the first time in three cycles after replacing three vendors with one Manifera pod — bugs that took weeks to diagnose started getting fixed in days. 🎯
+An Austrian SaaS platform shipped on schedule for the first time in three cycles after replacing three vendors with one Manifera pod - bugs that took weeks to diagnose started getting fixed in days. 🎯
 
 👉 Read our full deep dive on building a cloud development team serving Nijkerk: https://www.manifera.com/blog/cloud-development-team-nijkerk
 

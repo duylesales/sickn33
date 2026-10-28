@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Discovery/architecture:** typically 1-2 senior people, since the work is primarily judgment and synthesis, which doesn't parallelize well across more people.
-✅ **Core development:** scales with how independently the remaining work can be divided — a team of 3-5 is common for a standard-complexity project, more if the architecture genuinely supports parallel workstreams.
+✅ **Core development:** scales with how independently the remaining work can be divided - a team of 3-5 is common for a standard-complexity project, more if the architecture genuinely supports parallel workstreams.
 ✅ **QA/stabilization:** often 1-2 dedicated testers plus the ability to pull in the original developers for specific fixes, rather than a large team, since this phase requires focus and consistency more than raw capacity.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

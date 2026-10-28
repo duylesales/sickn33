@@ -120,7 +120,7 @@ Hiring is only the start. Kraków employers that retain AI engineers tend to:
 - Keep compensation reviews regular and transparent.
 - Maintain a healthy engineering culture: code review, documentation, reasonable on-call arrangements for production models.
 
-With the EU AI Act, ML teams increasingly also need governance practices — documentation of data and models, risk assessments for high-risk uses and human oversight. Building these practices in from the start makes your team more attractive to engineers who care about quality.
+With the EU AI Act, ML teams increasingly also need governance practices - documentation of data and models, risk assessments for high-risk uses and human oversight. Building these practices in from the start makes your team more attractive to engineers who care about quality.
 
 ## Partnering With Universities
 
@@ -128,7 +128,7 @@ Collaborating with Kraków's universities is one of the best long-term investmen
 
 ## How OnlyAIJobs Fits a Kraków Hiring Strategy
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to the employer's own page and there is no paid placement — every listing competes on content, not on budget. Today, OnlyAIJobs listings are concentrated in the Netherlands, where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles, so the Polish candidate audience is still growing. For hiring AI engineers in Kraków, use it alongside Polish job portals, your careers page, referrals and university channels. It is especially relevant if you hire across borders or want to reach European ML engineers who search by location and category. Your first vacancy is free: email a link to info@onlyaijobs.eu.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to the employer's own page and there is no paid placement - every listing competes on content, not on budget. Today, OnlyAIJobs listings are concentrated in the Netherlands, where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles, so the Polish candidate audience is still growing. For hiring AI engineers in Kraków, use it alongside Polish job portals, your careers page, referrals and university channels. It is especially relevant if you hire across borders or want to reach European ML engineers who search by location and category. Your first vacancy is free: email a link to info@onlyaijobs.eu.
 
 ## Onboarding: The First Ninety Days
 
@@ -136,7 +136,7 @@ A strong hiring process can be undone by a weak start. AI engineers who join a n
 
 **Before day one.** Make sure hardware, accounts, data access and cloud permissions are ready. ML engineers who spend their first two weeks waiting for access to data lose motivation quickly, and it signals that the organisation does not take the work seriously.
 
-**First month.** Give each new hire a buddy, a clear map of the data and systems, and a small but real task that reaches production — for example improving a feature pipeline or adding monitoring to an existing model. Early delivery builds confidence and trust.
+**First month.** Give each new hire a buddy, a clear map of the data and systems, and a small but real task that reaches production - for example improving a feature pipeline or adding monitoring to an existing model. Early delivery builds confidence and trust.
 
 **Second month.** Involve the engineer in a larger piece of work with a clear owner and a clear definition of success. Review progress regularly and make expectations explicit.
 
@@ -172,7 +172,7 @@ Kraków's technology community is well connected, and word travels fast between 
 
 A European logistics software company decides to build a forecasting and optimisation team in Kraków. Its first vacancy, titled "AI Engineer", attracts many applications but few with relevant skills.
 
-The hiring manager rewrites the posting: "Machine Learning Engineer — demand forecasting", with a description of the data (shipment histories, seasonality, external signals), the stack, pay ranges for both contract types, the exact office address near a tram line, a two-day hybrid policy and a four-step interview process. She also partners with an AGH student research group for a sponsored thesis on forecasting.
+The hiring manager rewrites the posting: "Machine Learning Engineer - demand forecasting", with a description of the data (shipment histories, seasonality, external signals), the stack, pay ranges for both contract types, the exact office address near a tram line, a two-day hybrid policy and a four-step interview process. She also partners with an AGH student research group for a sponsored thesis on forecasting.
 
 The rewritten vacancy attracts fewer but much better-matched applications, and the process is shortened from two months to under four weeks. Within a year, the team has two experienced ML engineers, two software engineers who moved into ML and a graduate from the thesis project. Retention is strong because the team owns its models and sees the impact on customers.
 

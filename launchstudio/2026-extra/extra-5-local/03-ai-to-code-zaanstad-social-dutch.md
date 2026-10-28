@@ -1,6 +1,6 @@
-⚠️ Femke Bakker bouwde MillOps — een kwaliteitscontrole-tool voor regionale voedselproducenten — met v0, verspreid over meerdere weken avonden, en had binnen een maand drie lokale producenten die het testten. Toen liet een slechte migratie stilletjes een productietabel vallen.
+⚠️ Femke Bakker bouwde MillOps - een kwaliteitscontrole-tool voor regionale voedselproducenten - met v0, verspreid over meerdere weken avonden, en had binnen een maand drie lokale producenten die het testten. Toen liet een slechte migratie stilletjes een productietabel vallen.
 
-Niemand had back-ups geconfigureerd, omdat v0 daar geen reden toe had — het stond niet in Femke's prompts. 🧠
+Niemand had back-ups geconfigureerd, omdat v0 daar geen reden toe had - het stond niet in Femke's prompts. 🧠
 
 ❌ De database had vanaf dag één geen enkele back-upconfiguratie
 ❌ Een routinematige functie-update liet per ongeluk een productietabel vallen

@@ -28,71 +28,71 @@ Here's a framework for telling the two apart before you commit the time.
 
 Run every significant piece of your product through two questions:
 
-**Is this a solved problem?** Authentication, payments, email delivery, file storage, search indexing — these are problems that mature, audited, widely-used services already handle well. Building your own version means re-solving something thousands of engineers have already stress-tested, usually worse than they did.
+**Is this a solved problem?** Authentication, payments, email delivery, file storage, search indexing - these are problems that mature, audited, widely-used services already handle well. Building your own version means re-solving something thousands of engineers have already stress-tested, usually worse than they did.
 
 **Is this your core differentiator?** If a piece of functionality is the actual reason customers choose you over alternatives, it deserves your direct attention, even if it takes longer. If it's infrastructure that customers never see and don't care how it works, it isn't.
 
 That gives you four quadrants:
 
-- **Solved problem + not a differentiator** — delegate immediately. This is the easiest call and the one founders get wrong most often. Authentication, billing, hosting.
-- **Solved problem + differentiator** — rare, but worth a second look. Sometimes what looks like "just auth" is actually a core part of your product's trust story. Even then, build on top of an existing service rather than from zero.
-- **Not solved + differentiator** — build it yourself, carefully. This is where your time should go.
-- **Not solved + not a differentiator** — deprioritize or find a narrow off-the-shelf fit. Don't let this quadrant eat your roadmap.
+- **Solved problem + not a differentiator** - delegate immediately. This is the easiest call and the one founders get wrong most often. Authentication, billing, hosting.
+- **Solved problem + differentiator** - rare, but worth a second look. Sometimes what looks like "just auth" is actually a core part of your product's trust story. Even then, build on top of an existing service rather than from zero.
+- **Not solved + differentiator** - build it yourself, carefully. This is where your time should go.
+- **Not solved + not a differentiator** - deprioritize or find a narrow off-the-shelf fit. Don't let this quadrant eat your roadmap.
 
 ## Why founders get stuck in the wrong quadrant
 
-The trap isn't a lack of skill. It's that AI coding tools make "not solved" and "solved" problems feel equally approachable. If you can prompt your way to a working login flow, it's easy to assume you've handled authentication the way an auth provider would — session management, token rotation, password reset flows, breach detection, rate limiting on login attempts. In practice, a hand-built system usually covers the happy path and quietly skips the parts that only matter when something goes wrong.
+The trap isn't a lack of skill. It's that AI coding tools make "not solved" and "solved" problems feel equally approachable. If you can prompt your way to a working login flow, it's easy to assume you've handled authentication the way an auth provider would - session management, token rotation, password reset flows, breach detection, rate limiting on login attempts. In practice, a hand-built system usually covers the happy path and quietly skips the parts that only matter when something goes wrong.
 
 The tell that you're in the wrong quadrant: if the thing you're building has a well-known name and a handful of established providers (Auth0, Stripe, SendGrid, S3), you are very likely reinventing a solved problem, no matter how custom your version feels while you're writing it.
 
 ## Applying the framework: authentication as a case study
 
-Guus Peters, a founder in Ede, built TransportGrip — a fleet paperwork app — using Cursor. Authentication looked like a small task: users needed to log in, and Cursor could generate the code quickly. He built a custom system from scratch instead of using an existing provider, effectively reinventing what a service like Auth0 already solved. It took him three weeks — session handling, password reset, and multi-device login each turned out to need more iteration than expected, and none of it touched what made TransportGrip actually useful to fleet operators.
+Guus Peters, a founder in Ede, built TransportGrip - a fleet paperwork app - using Cursor. Authentication looked like a small task: users needed to log in, and Cursor could generate the code quickly. He built a custom system from scratch instead of using an existing provider, effectively reinventing what a service like Auth0 already solved. It took him three weeks - session handling, password reset, and multi-device login each turned out to need more iteration than expected, and none of it touched what made TransportGrip actually useful to fleet operators.
 
-Run that same decision through the matrix: authentication is a solved problem, and it wasn't TransportGrip's differentiator — customers cared about the paperwork automation, not the login screen. It belonged in the "delegate immediately" quadrant from the start.
+Run that same decision through the matrix: authentication is a solved problem, and it wasn't TransportGrip's differentiator - customers cared about the paperwork automation, not the login screen. It belonged in the "delegate immediately" quadrant from the start.
 
 ## Making the call before you start, not after
 
 The framework only pays off if you use it before writing code, not as a postmortem. Before starting any non-trivial feature, ask: does this have a name and a handful of established providers already solving it? If yes, and it's not the reason customers choose you, delegate it and spend the saved time on what actually differentiates the product.
 
-Our team, working out of Singapore alongside colleagues in Amsterdam and Ho Chi Minh City, reviews exactly this kind of build-vs-delegate decision when we assess incoming prototypes — it's often the single biggest lever for shortening a founder's path to launch. LaunchStudio brings Manifera's enterprise-grade engineering, the same standard used across Manifera's [custom software development work](https://www.manifera.com/services/custom-software-development/), to exactly these calls. If you want a second opinion on where your own build sits on this matrix, you can [see what a fixed-scope review would cost](https://launchstudio.eu/en/#calculator).
+Our team, working out of Singapore alongside colleagues in Amsterdam and Ho Chi Minh City, reviews exactly this kind of build-vs-delegate decision when we assess incoming prototypes - it's often the single biggest lever for shortening a founder's path to launch. LaunchStudio brings Manifera's enterprise-grade engineering, the same standard used across Manifera's [custom software development work](https://www.manifera.com/services/custom-software-development/), to exactly these calls. If you want a second opinion on where your own build sits on this matrix, you can [see what a fixed-scope review would cost](https://launchstudio.eu/en/#calculator).
 
 ## The Solved-Problem Checklist: What Almost Always Belongs in the Delegate Quadrant
 
 The matrix above works well once you know which category a given feature falls into, but "is this a solved problem" is still a judgment call the first few times you make it. A concrete list of the categories that almost always land in "delegate immediately," regardless of what product you're building, makes the call faster and removes the temptation to treat your version as the exception.
 
-**Authentication and session management.** Login, password reset, multi-device sessions, token expiry — this is the single most commonly reinvented solved problem, and it's rarely anyone's differentiator. Established providers have handled the edge cases, breach detection, credential stuffing, session hijacking, that a custom build almost never gets to on the first pass.
+**Authentication and session management.** Login, password reset, multi-device sessions, token expiry - this is the single most commonly reinvented solved problem, and it's rarely anyone's differentiator. Established providers have handled the edge cases, breach detection, credential stuffing, session hijacking, that a custom build almost never gets to on the first pass.
 
-**Payments and billing.** Handling card data directly, calculating tax across jurisdictions, managing subscription proration — each of these has enough regulatory and edge-case weight that building it yourself isn't just slower, it's a genuine liability if done incorrectly. This is a category where the cost of a mistake is measured in real money, not just engineering time.
+**Payments and billing.** Handling card data directly, calculating tax across jurisdictions, managing subscription proration - each of these has enough regulatory and edge-case weight that building it yourself isn't just slower, it's a genuine liability if done incorrectly. This is a category where the cost of a mistake is measured in real money, not just engineering time.
 
 **Transactional email and notifications.** Deliverability, spam-filter reputation, and retry logic for failed sends are a specialized, ongoing problem, not a one-time build. A custom-built sender that works in testing frequently ends up in spam folders in production, for reasons that have nothing to do with how well the code was written.
 
 **File storage and uploads.** Reliable storage, CDN delivery, and handling large or malformed files at scale is a solved problem with mature, inexpensive providers. Building your own storage layer means also building your own backup strategy, redundancy, and access control from nothing.
 
-**Search and indexing.** Once a product has enough records that a simple database query stops being fast enough, search becomes its own specialized problem — relevance ranking, typo tolerance, indexing strategy — that established search infrastructure has already solved far better than a first attempt will.
+**Search and indexing.** Once a product has enough records that a simple database query stops being fast enough, search becomes its own specialized problem - relevance ranking, typo tolerance, indexing strategy - that established search infrastructure has already solved far better than a first attempt will.
 
-**Background job processing and queues.** Anything that needs to run reliably outside a user's immediate request — sending a batch of emails, processing an import, retrying a failed webhook — benefits from mature queueing infrastructure that already handles retries, failures, and ordering correctly.
+**Background job processing and queues.** Anything that needs to run reliably outside a user's immediate request - sending a batch of emails, processing an import, retrying a failed webhook - benefits from mature queueing infrastructure that already handles retries, failures, and ordering correctly.
 
 **Monitoring, logging, and error tracking.** Knowing what broke, when, and for which user is itself a specialized problem, and building custom monitoring from scratch usually means you find out about production issues from angry users instead of from the system that was supposed to warn you first.
 
-The pattern across every item on this list is the same: each one has a well-known name, several mature providers, and a long history of edge cases that already got found and fixed by someone else's users, not yours. None of this means the delegated version is invisible to your customers — a smooth login flow or a fast search bar still shapes how your product feels. It means the differentiation isn't in having built it yourself; it's in choosing the right provider and integrating it well, which takes a fraction of the time reinventing it would.
+The pattern across every item on this list is the same: each one has a well-known name, several mature providers, and a long history of edge cases that already got found and fixed by someone else's users, not yours. None of this means the delegated version is invisible to your customers - a smooth login flow or a fast search bar still shapes how your product feels. It means the differentiation isn't in having built it yourself; it's in choosing the right provider and integrating it well, which takes a fraction of the time reinventing it would.
 
-If a piece of your product isn't on this list, that's a reasonable first signal it might actually belong in the "build it yourself" quadrant — worth a second look rather than an automatic default either way.
+If a piece of your product isn't on this list, that's a reasonable first signal it might actually belong in the "build it yourself" quadrant - worth a second look rather than an automatic default either way.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Three Weeks Spent Reinventing Auth0
 
-Guus Peters had a working prototype of TransportGrip within days of starting in Cursor — drivers could log paperwork, dispatchers could review it, and the core workflow looked solid. Authentication was the one piece he decided to build fully himself, reasoning that it was a small, contained problem he could knock out quickly.
+Guus Peters had a working prototype of TransportGrip within days of starting in Cursor - drivers could log paperwork, dispatchers could review it, and the core workflow looked solid. Authentication was the one piece he decided to build fully himself, reasoning that it was a small, contained problem he could knock out quickly.
 
-Three weeks later, he had a login system that worked for the demo but hadn't been tested against session expiry edge cases, concurrent logins across a driver's phone and the dispatch office's desktop, or what should happen when a password reset link was used twice. When Guus brought the project to LaunchStudio ahead of onboarding real fleet clients, Manifera's engineers replaced the custom system with a managed authentication provider wired directly into TransportGrip's existing frontend — no visible change for users, but a system now backed by infrastructure tested across millions of logins rather than one founder's three weeks of iteration.
+Three weeks later, he had a login system that worked for the demo but hadn't been tested against session expiry edge cases, concurrent logins across a driver's phone and the dispatch office's desktop, or what should happen when a password reset link was used twice. When Guus brought the project to LaunchStudio ahead of onboarding real fleet clients, Manifera's engineers replaced the custom system with a managed authentication provider wired directly into TransportGrip's existing frontend - no visible change for users, but a system now backed by infrastructure tested across millions of logins rather than one founder's three weeks of iteration.
 
 **Result:** TransportGrip launched with authentication that fleet operators' IT departments could approve without a second look, and Guus redirected his own development time toward the paperwork automation that actually sets TransportGrip apart.
 
 > *"I spent three weeks building something I could have swapped in in an afternoon. That's the lesson that stuck with me."*
-> — **Guus Peters, Founder, TransportGrip (Ede)**
+> - **Guus Peters, Founder, TransportGrip (Ede)**
 
-**Cost & Timeline:** €900 (authentication migration and integration) — completed in 6 business days.
+**Cost & Timeline:** €900 (authentication migration and integration) - completed in 6 business days.
 
 ---
 
@@ -100,7 +100,7 @@ Three weeks later, he had a login system that worked for the demo but hadn't bee
 
 ### How do I know if something is a "solved problem" worth delegating?
 
-If the feature has a well-known name and several established, widely-used providers already offering it — like authentication, payments, or email delivery — it's almost always a solved problem worth delegating rather than building from scratch.
+If the feature has a well-known name and several established, widely-used providers already offering it - like authentication, payments, or email delivery - it's almost always a solved problem worth delegating rather than building from scratch.
 
 ### What if delegating a solved problem still feels like giving up control?
 
@@ -108,7 +108,7 @@ Delegating to a mature provider often gives you more control in practice, since 
 
 ### Does LaunchStudio only handle backend delegation, or does it touch the frontend too?
 
-LaunchStudio focuses on backend, security, payments, auth, database, and hosting work, and is specifically designed to integrate with the frontend a founder has already built in tools like Cursor, Lovable, or Bolt — not to replace it.
+LaunchStudio focuses on backend, security, payments, auth, database, and hosting work, and is specifically designed to integrate with the frontend a founder has already built in tools like Cursor, Lovable, or Bolt - not to replace it.
 
 ### Where is Manifera's engineering team based?
 

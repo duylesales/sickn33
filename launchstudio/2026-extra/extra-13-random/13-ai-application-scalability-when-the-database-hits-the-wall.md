@@ -12,7 +12,7 @@ Target Persona: SaaS Founder Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Application Scalability: When Your Database, Not Your Code, Hits the Wall",
-  "description": "For most AI-built apps, the first scalability limit is the database rather than the application code. This article explains connections, missing indexes, N+1 queries, lock contention and growing tables — and the order in which to fix them.",
+  "description": "For most AI-built apps, the first scalability limit is the database rather than the application code. This article explains connections, missing indexes, N+1 queries, lock contention and growing tables - and the order in which to fix them.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-13",
@@ -21,23 +21,23 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-When an AI-built app starts to struggle under real usage, the instinct is to blame the code — or the AI tool that wrote it — and to reach for bigger servers. In most cases LaunchStudio reviews, that is the wrong diagnosis. AI application scalability problems in small and mid-sized products almost always start in the database. The application servers are mostly idle, waiting for queries that take too long, run too often or hold connections that other requests need.
+When an AI-built app starts to struggle under real usage, the instinct is to blame the code - or the AI tool that wrote it - and to reach for bigger servers. In most cases LaunchStudio reviews, that is the wrong diagnosis. AI application scalability problems in small and mid-sized products almost always start in the database. The application servers are mostly idle, waiting for queries that take too long, run too often or hold connections that other requests need.
 
 This matters because the fixes are different. Bigger application servers do nothing for a slow query. A single index can do more than a tenfold hosting upgrade.
 
 ## Why the Database Limits AI Application Scalability First
 
-Modern hosting — Vercel, Netlify, Replit Deployments, Fly.io — scales application code relatively easily. Serverless functions spin up more copies as traffic grows. Your database does not work that way. It is usually a single primary instance, with a fixed number of connections and a fixed amount of memory and CPU, shared by every request your app makes.
+Modern hosting - Vercel, Netlify, Replit Deployments, Fly.io - scales application code relatively easily. Serverless functions spin up more copies as traffic grows. Your database does not work that way. It is usually a single primary instance, with a fixed number of connections and a fixed amount of memory and CPU, shared by every request your app makes.
 
 AI-generated code makes this worse in predictable ways. Models write queries that return correct results on small data, with no knowledge of how your tables will grow. They open connections casually. They fetch related records one at a time in loops. None of this matters with a few hundred rows. All of it matters with a few hundred thousand.
 
 ## Limit 1: Running Out of Connections
 
-Every request that talks to Postgres needs a connection. Databases allow a limited number — on smaller managed plans, often somewhere between 20 and 100. Serverless functions can each open their own connection, and if many run at once, the pool is exhausted and new requests fail with errors like "too many connections" or "remaining connection slots are reserved."
+Every request that talks to Postgres needs a connection. Databases allow a limited number - on smaller managed plans, often somewhere between 20 and 100. Serverless functions can each open their own connection, and if many run at once, the pool is exhausted and new requests fail with errors like "too many connections" or "remaining connection slots are reserved."
 
 **What it looks like:** the app works for the first wave of users in a busy period and fails for everyone after.
 
-**The fix:** a connection pooler between the app and the database — Supabase provides one, and PgBouncer is the common standalone option — plus making sure the app reuses a single client per function instance instead of creating a new one per query.
+**The fix:** a connection pooler between the app and the database - Supabase provides one, and PgBouncer is the common standalone option - plus making sure the app reuses a single client per function instance instead of creating a new one per query.
 
 ## Limit 2: Missing Indexes
 
@@ -45,11 +45,11 @@ An index lets the database find rows without scanning the whole table. AI-genera
 
 **What it looks like:** specific pages get steadily slower as data grows, especially lists and dashboards.
 
-**The fix:** add indexes on the columns used in `WHERE`, `JOIN` and `ORDER BY` for your most frequent queries. Postgres's `EXPLAIN ANALYZE` shows whether a query uses an index or scans the table; Supabase's dashboard surfaces the slowest queries directly. Indexes are not free — they slow writes slightly and take space — so add them for real query patterns, not speculatively.
+**The fix:** add indexes on the columns used in `WHERE`, `JOIN` and `ORDER BY` for your most frequent queries. Postgres's `EXPLAIN ANALYZE` shows whether a query uses an index or scans the table; Supabase's dashboard surfaces the slowest queries directly. Indexes are not free - they slow writes slightly and take space - so add them for real query patterns, not speculatively.
 
 ## Limit 3: The N+1 Query
 
-A page shows twenty posts, each with its author's name. AI-generated code frequently fetches the twenty posts in one query and then the author for each post in a separate query — twenty-one queries for one page. With a hundred items and several relationships, a single page load can trigger hundreds of queries.
+A page shows twenty posts, each with its author's name. AI-generated code frequently fetches the twenty posts in one query and then the author for each post in a separate query - twenty-one queries for one page. With a hundred items and several relationships, a single page load can trigger hundreds of queries.
 
 **What it looks like:** pages that are fast in development and slow in production, even when individual queries are fast.
 
@@ -57,7 +57,7 @@ A page shows twenty posts, each with its author's name. AI-generated code freque
 
 ## Limit 4: Lock Contention
 
-When many requests try to update the same row — a counter, a stock level, a shared document — they queue behind each other. AI-generated code often updates aggregate values on every action ("increment the post's like count") rather than computing them when needed.
+When many requests try to update the same row - a counter, a stock level, a shared document - they queue behind each other. AI-generated code often updates aggregate values on every action ("increment the post's like count") rather than computing them when needed.
 
 **What it looks like:** writes that slow down or time out during busy periods, while reads are fine.
 
@@ -65,7 +65,7 @@ When many requests try to update the same row — a counter, a stock level, a sh
 
 ## Limit 5: Tables That Only Grow
 
-Event logs, notifications, chat messages, analytics events — AI-built apps often store all of them forever in the main database. Tables with tens of millions of rows make backups slower, restores slower and every unindexed query painful.
+Event logs, notifications, chat messages, analytics events - AI-built apps often store all of them forever in the main database. Tables with tens of millions of rows make backups slower, restores slower and every unindexed query painful.
 
 **What it looks like:** gradually rising database size and backup times; storage costs climbing faster than users.
 
@@ -119,7 +119,7 @@ Row-level security policies also benefit from indexes: a policy that checks `org
 
 A database connection is like a phone line into the database. Postgres can only hold a limited number of lines open. Serverless functions tend to open a new line each time they start, and at peak times they start by the hundreds. A pooler sits in between and shares a smaller number of real lines among many short requests.
 
-For Supabase projects, this means using the pooled connection string (transaction mode) for serverless functions and reserving direct connections for migrations and long-running jobs. For ORMs such as Prisma or Drizzle, it also means configuring them for pooled connections and creating one client per function instance rather than per request. It is rarely more than a configuration change — and it removes the most dramatic failure mode, where the app works for the first thirty users of a busy hour and fails for everyone after.
+For Supabase projects, this means using the pooled connection string (transaction mode) for serverless functions and reserving direct connections for migrations and long-running jobs. For ORMs such as Prisma or Drizzle, it also means configuring them for pooled connections and creating one client per function instance rather than per request. It is rarely more than a configuration change - and it removes the most dramatic failure mode, where the app works for the first thirty users of a busy hour and fails for everyone after.
 
 ## Measuring Before and After
 
@@ -143,7 +143,7 @@ Database health is part of every Launch & Grow engagement: a review of slow quer
 
 The engineers doing this work come from Manifera, whose teams have run production databases for enterprise systems across Europe and Southeast Asia for 11+ years. Manifera's development centre in Ho Chi Minh City works with PostgreSQL, MySQL, MongoDB, Supabase and Firebase daily, as listed on [Manifera's technologies page](https://www.manifera.com/about-us/manifera-technologies/). The [PostgreSQL documentation on indexes](https://www.postgresql.org/docs/current/indexes.html) is an excellent free reference if you want to go deeper yourself.
 
-To see what this would cost for your app, try the [price calculator](https://launchstudio.eu/en/#calculator) — "Database/backend" is one of the options.
+To see what this would cost for your app, try the [price calculator](https://launchstudio.eu/en/#calculator) - "Database/backend" is one of the options.
 
 ## Real example
 
@@ -158,9 +158,9 @@ The team introduced connection pooling and a shared client, rewrote the discussi
 **Result:** Sunday-evening errors stopped entirely. The discussion page went from roughly 3.5 seconds to 180 milliseconds for the largest clubs, and hosting costs dropped by about 35% once the unnecessary upgrades were reversed.
 
 > *"I kept buying bigger servers for a problem that lived somewhere else. Four indexes did more than two upgrades."*
-> — **Koen Hendriks, Founder, Leesclub (Enschede)**
+> - **Koen Hendriks, Founder, Leesclub (Enschede)**
 
-**Cost & Timeline:** €2,800 (Launch & Grow package: database review, pooling, query and index fixes, archiving and monitoring) — completed in 9 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €2,800 (Launch & Grow package: database review, pooling, query and index fixes, archiving and monitoring) - completed in 9 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -178,7 +178,7 @@ They speed up reads for the queries they match but slow writes slightly and use 
 
 ### Does Manifera handle larger database migrations if needed?
 
-Yes. When a product outgrows its setup — for example, moving to read replicas or a different database — Manifera's full-cycle teams can plan and execute that migration, with LaunchStudio as the starting point.
+Yes. When a product outgrows its setup - for example, moving to read replicas or a different database - Manifera's full-cycle teams can plan and execute that migration, with LaunchStudio as the starting point.
 
 ### Does database performance influence SEO and AI answer engines?
 

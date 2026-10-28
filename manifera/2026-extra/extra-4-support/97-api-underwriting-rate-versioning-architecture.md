@@ -20,19 +20,19 @@ target_persona: "A"
 }
 </script>
 
-A CTO at an insurtech company building a real-time, API-based underwriting platform — instantly quoting and binding policies through automated risk assessment rather than traditional manual underwriting — faces a foundational architecture decision that's easy to underweight during initial development: whether the platform's rating engine and underwriting rules are built around genuine, structured versioning, or built as a single, continuously-updated live rate table without explicit historical version tracking.
+A CTO at an insurtech company building a real-time, API-based underwriting platform - instantly quoting and binding policies through automated risk assessment rather than traditional manual underwriting - faces a foundational architecture decision that's easy to underweight during initial development: whether the platform's rating engine and underwriting rules are built around genuine, structured versioning, or built as a single, continuously-updated live rate table without explicit historical version tracking.
 
 ## Why Insurance Specifically Requires Genuine Rate and Rule Versioning
 
 Recognizing this requirement explicitly, before rate changes and older policies actually accumulate together, is what separates a platform that scales into regulatory scrutiny confidently from one that discovers the gap only under real audit pressure.
 
-A policy issued under a specific rating structure and underwriting rule set needs to remain servicable — renewals calculated correctly, claims evaluated against the actual rules that applied when the policy was issued, regulatory audits able to reconstruct exactly what rates and rules governed a specific historical policy — for the policy's entire lifetime, which for many insurance products extends years beyond the original issuance date. A platform built around a single, continuously-updated live rate table, without genuine structured versioning preserving exactly what rates and rules applied at each specific point in time, loses the ability to accurately reconstruct this historical context once rates or rules have since changed, creating a genuine problem the moment a policy issued under an earlier rate structure needs to be serviced, renewed, or evaluated for a claim under rules that have since been updated.
+A policy issued under a specific rating structure and underwriting rule set needs to remain servicable - renewals calculated correctly, claims evaluated against the actual rules that applied when the policy was issued, regulatory audits able to reconstruct exactly what rates and rules governed a specific historical policy - for the policy's entire lifetime, which for many insurance products extends years beyond the original issuance date. A platform built around a single, continuously-updated live rate table, without genuine structured versioning preserving exactly what rates and rules applied at each specific point in time, loses the ability to accurately reconstruct this historical context once rates or rules have since changed, creating a genuine problem the moment a policy issued under an earlier rate structure needs to be serviced, renewed, or evaluated for a claim under rules that have since been updated.
 
 ## Why This Gap Is Invisible Until a Policy Actually Needs Historical Servicing
 
 This delayed visibility is precisely what makes the gap so easy to underinvest in relative to its actual eventual stakes.
 
-A live-rate-table architecture works adequately during initial development and early operation, when every active policy was issued under the current, latest rate structure and no meaningful rate changes have yet occurred since the platform launched. The gap becomes visible specifically once the business has been operating long enough to have both updated its rates at least once and have active policies still in force from before that update — precisely the condition a platform's early testing and initial operation doesn't naturally represent, since early testing occurs before any rate changes have accumulated, meaning the versioning gap doesn't surface until real business maturity creates the exact historical servicing need the architecture wasn't built to support.
+A live-rate-table architecture works adequately during initial development and early operation, when every active policy was issued under the current, latest rate structure and no meaningful rate changes have yet occurred since the platform launched. The gap becomes visible specifically once the business has been operating long enough to have both updated its rates at least once and have active policies still in force from before that update - precisely the condition a platform's early testing and initial operation doesn't naturally represent, since early testing occurs before any rate changes have accumulated, meaning the versioning gap doesn't surface until real business maturity creates the exact historical servicing need the architecture wasn't built to support.
 
 ## What Genuine Rate and Rule Versioning Architecture Requires
 
@@ -45,7 +45,7 @@ A live-rate-table architecture works adequately during initial development and e
 
 A specific, important detail worth naming directly, since Seguradora Digital Aveiro's case study below describes attempting exactly this correction: reconstructing historical rate version records after the fact, once a platform has already been operating without genuine versioning for some period, is a fundamentally harder and less reliable undertaking than building genuine versioning in from the start. Depending on how the original live-rate-table architecture was built, the specific historical rate and rule values that applied at a specific past policy issuance date may not be fully recoverable at all if they were simply overwritten by subsequent updates without any change history preserved anywhere in the system, meaning a retroactive reconstruction effort can, in the worst case, only partially succeed, leaving some historical policies with genuinely incomplete or uncertain rate justification even after a dedicated correction effort.
 
-This is a specific, practical reason building genuine rate versioning from an underwriting platform's very first version matters more than it might initially appear — unlike many other architectural gaps that can be fully corrected retroactively given sufficient engineering effort, a genuine rate versioning gap risks a permanent, unrecoverable loss of historical accuracy for policies issued during the period before the gap was corrected, a risk that simply doesn't exist for a platform that built genuine versioning in from day one.
+This is a specific, practical reason building genuine rate versioning from an underwriting platform's very first version matters more than it might initially appear - unlike many other architectural gaps that can be fully corrected retroactively given sufficient engineering effort, a genuine rate versioning gap risks a permanent, unrecoverable loss of historical accuracy for policies issued during the period before the gap was corrected, a risk that simply doesn't exist for a platform that built genuine versioning in from day one.
 
 ## Why This Decision Also Affects an Insurtech Company's Ability to Raise Capital and Pass Due Diligence
 
@@ -65,7 +65,7 @@ Seguradora Digital Aveiro, an Aveiro-based insurtech company, had built its real
 Manifera's Amsterdam team rebuilt the platform's rating engine around genuine, timestamped rate and rule versioning, retroactively reconstructing historical version records from available data where possible, and tying every subsequently issued policy explicitly to its specific applicable rate version going forward.
 
 > *"We'd built assuming our rates would basically just live in one place and get updated as needed. It took our first real rate change, and then a regulatory audit request we genuinely struggled to answer accurately, to show us we needed real historical version tracking, not just a rate table that happened to reflect whatever was currently true."*
-> — **CTO, Seguradora Digital Aveiro**
+> - **CTO, Seguradora Digital Aveiro**
 
 Seguradora Digital Aveiro's rebuilt platform now maintains complete, auditable rate version history, and the company passed its next regulatory audit without the historical reconstruction difficulty the original architecture would have created.
 
@@ -80,7 +80,7 @@ Seguradora Digital Aveiro's rebuilt platform now maintains complete, auditable r
 
 ## Scoping Your Own Underwriting Platform's Rate Versioning Architecture
 
-Before building or launching an API-based underwriting platform, structure the rating engine around genuine, timestamped rate and rule versioning from the start — a live rate table without version history creates a real servicing and regulatory gap the moment rates change and older policies need historical accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely version-aware insurtech underwriting platform.
+Before building or launching an API-based underwriting platform, structure the rating engine around genuine, timestamped rate and rule versioning from the start - a live rate table without version history creates a real servicing and regulatory gap the moment rates change and older policies need historical accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely version-aware insurtech underwriting platform.
 
 ## Frequently Asked Questions
 

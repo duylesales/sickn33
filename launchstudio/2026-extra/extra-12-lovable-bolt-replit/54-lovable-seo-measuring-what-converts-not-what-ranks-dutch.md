@@ -22,7 +22,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 
 Een oprichter kan u vertellen dat zijn verkeer met 40 procent is gestegen, zonder te kunnen zeggen of het één klant opleverde. Dat is de normale stand van meten in een klein product, en het is waarom beslissingen over content op gevoel worden genomen.
 
-De nuttige vraag is smal: welke pagina's brengen mensen die klant worden? Al het andere — sessies, bouncepercentage, gemiddelde tijd, zoekwoordposities — is op zijn best context en op zijn slechtst afleiding.
+De nuttige vraag is smal: welke pagina's brengen mensen die klant worden? Al het andere - sessies, bouncepercentage, gemiddelde tijd, zoekwoordposities - is op zijn best context en op zijn slechtst afleiding.
 
 Het beantwoorden vereist geen analyticsplatform. Het vereist één kolom in uw database.
 
@@ -32,7 +32,7 @@ Het mechanisme is eenvoudig genoeg om in een uur te bouwen, en het is de basis v
 
 Sla bij het eerste bezoek twee dingen op in de browser: de pagina waarop iemand binnenkwam en waar hij vandaan kwam. Kopieer die waarden naar het accountrecord wanneer hij zich uiteindelijk aanmeldt.
 
-Nu draagt elke klant de pagina mee die hem bracht. U kunt vragen welke artikelen aanmeldingen opleveren, welke proefperiodes opleveren die betalend worden, en welke verkeer brengen dat nooit iets wordt — en u kunt het maanden later vragen, omdat het antwoord in uw eigen database staat in plaats van in de bewaartermijn van een tool van een derde partij.
+Nu draagt elke klant de pagina mee die hem bracht. U kunt vragen welke artikelen aanmeldingen opleveren, welke proefperiodes opleveren die betalend worden, en welke verkeer brengen dat nooit iets wordt - en u kunt het maanden later vragen, omdat het antwoord in uw eigen database staat in plaats van in de bewaartermijn van een tool van een derde partij.
 
 Twee verfijningen die de moeite waard zijn: bewaar de eerste landingspagina in plaats van haar te overschrijven, omdat het artikel dat iemand introduceerde meer zegt dan de prijspagina die hij als laatste zag; en bewaar de verwijzer, zodat u zoeken kunt onderscheiden van een link die iemand deelde.
 
@@ -54,7 +54,7 @@ Drie dingen daar zijn een maandelijkse blik waard.
 
 **Pagina's met vertoningen maar weinig klikken.** Mensen zien u en kiezen niet voor u. De titel en beschrijving zijn het probleem, en die herschrijven kost tien minuten voor een direct effect.
 
-**Zoekopdrachten waarop u rankt maar waar u niet op richtte.** Vaak de nuttigste informatie die er is — mensen komen binnen terwijl ze zoeken naar iets verwants dat u terloops noemde, en dat is een artikel dat erop wacht geschreven te worden.
+**Zoekopdrachten waarop u rankt maar waar u niet op richtte.** Vaak de nuttigste informatie die er is - mensen komen binnen terwijl ze zoeken naar iets verwants dat u terloops noemde, en dat is een artikel dat erop wacht geschreven te worden.
 
 **Pagina's die er dichtbij zitten.** Net onder het punt waar verkeer begint. Een uur bijwerken verplaatst ze vaak, en dat is de goedkoopste verbetering die er is.
 
@@ -72,7 +72,7 @@ De landingspagina is waar iemand voor het eerst binnenkwam, niet het hele verhaa
 
 Twee gewoontes houden het meten eerlijk zonder iets ingewikkelds te bouwen.
 
-Vraag het. Eén optionele vraag bij de aanmelding — hoe hebt u over ons gehoord, als vrije tekst — levert betere informatie op dan de meeste attributiesystemen, omdat mensen u vertellen over de podcast, de collega en de forumdraad die geen enkele tracking kan zien.
+Vraag het. Eén optionele vraag bij de aanmelding - hoe hebt u over ons gehoord, als vrije tekst - levert betere informatie op dan de meeste attributiesystemen, omdat mensen u vertellen over de podcast, de collega en de forumdraad die geen enkele tracking kan zien.
 
 En accepteer dat een deel onkenbaar is. De juiste reactie daarop is geen ingewikkelder meetsysteem; het is de data die u hebt afwegen tegen wat klanten u vertellen, en beslissen met beide.
 
@@ -82,19 +82,19 @@ De hierboven beschreven meting is alleen nuttig als u genoeg tijd geeft om de ge
 
 Een nieuw artikel heeft weken nodig om te worden geïndexeerd en maanden om de positie te bereiken die het zal bereiken. Het na drie weken beoordelen vertelt u niets behalve dat het nieuw is. Drie tot zes maanden is het eerlijke venster voordat de prestaties van een pagina informatief zijn.
 
-Volume doet er ook toe. Een pagina met 40 bezoeken en 1 aanmelding en een pagina met 40 bezoeken en 3 aanmeldingen verschillen niet betekenisvol; bij deze aantallen is het verschil ruis. Wacht op genoeg waarnemingen, of vergelijk groepen pagina's in plaats van afzonderlijke — alle artikelen over het ene onderwerp tegen alle artikelen over het andere — wat veel sneller een bruikbaar signaal geeft.
+Volume doet er ook toe. Een pagina met 40 bezoeken en 1 aanmelding en een pagina met 40 bezoeken en 3 aanmeldingen verschillen niet betekenisvol; bij deze aantallen is het verschil ruis. Wacht op genoeg waarnemingen, of vergelijk groepen pagina's in plaats van afzonderlijke - alle artikelen over het ene onderwerp tegen alle artikelen over het andere - wat veel sneller een bruikbaar signaal geeft.
 
 Twee praktische gevolgen. Beoordeel voor contentbeslissingen per kwartaal in plaats van per maand, ook als u uit interesse vaker naar de getallen kijkt. En weersta de neiging een pagina te herschrijven omdat ze in haar eerste maand tegenviel, wat hetzelfde is als een plant uitgraven om de wortels te controleren.
 
-De ene uitzondering waar u direct op moet handelen: een pagina met vertoningen en vrijwel geen klikken. Dat is een probleem met titel en beschrijving, het is binnen weken zichtbaar, en het oplossen kost tien minuten — wat het de enige snelle terugkoppeling in deze discipline maakt.
+De ene uitzondering waar u direct op moet handelen: een pagina met vertoningen en vrijwel geen klikken. Dat is een probleem met titel en beschrijving, het is binnen weken zichtbaar, en het oplossen kost tien minuten - wat het de enige snelle terugkoppeling in deze discipline maakt.
 
 ## Bepaal Wat U met het Antwoord Doet
 
 Meten verdient zichzelf alleen terug als het verandert wat er wordt geschreven, en dat vereist een beslisregel die u vooraf met uzelf afspreekt in plaats van elk kwartaal een discussie.
 
-Een regel die werkt voor kleine producten: sorteer bij elke kwartaalreview de pagina's op aanmeldingen. De bovenste groep vertelt u welk onderwerp werkt — schrijf er nog twee artikelen over, dieper in plaats van breder. De middelste groep is prima en heeft niets nodig. De onderste groep is, na zes maanden met betekenisvol verkeer en geen aanmeldingen, een onderwerp dat het verkeerde publiek trekt; stop met erover schrijven, en overweeg of de bestaande pagina's moeten worden bijgewerkt om kopers aan te spreken of gewoon met rust gelaten.
+Een regel die werkt voor kleine producten: sorteer bij elke kwartaalreview de pagina's op aanmeldingen. De bovenste groep vertelt u welk onderwerp werkt - schrijf er nog twee artikelen over, dieper in plaats van breder. De middelste groep is prima en heeft niets nodig. De onderste groep is, na zes maanden met betekenisvol verkeer en geen aanmeldingen, een onderwerp dat het verkeerde publiek trekt; stop met erover schrijven, en overweeg of de bestaande pagina's moeten worden bijgewerkt om kopers aan te spreken of gewoon met rust gelaten.
 
-De moeilijkere beslissing is wat u doet met een pagina die veel verkeer en geen klanten oplevert. Het instinct is haar te houden omdat het getal groot is. De eerlijke lezing is dat ze mensen trekt die geen kopers zijn, en elk volgend artikel over dat thema vergroot de vergissing — precies het patroon in het voorbeeld hieronder.
+De moeilijkere beslissing is wat u doet met een pagina die veel verkeer en geen klanten oplevert. Het instinct is haar te houden omdat het getal groot is. De eerlijke lezing is dat ze mensen trekt die geen kopers zijn, en elk volgend artikel over dat thema vergroot de vergissing - precies het patroon in het voorbeeld hieronder.
 
 Zo'n pagina houden kost niets en ze is geen kandidaat voor verwijdering; de vergissing zit alleen in er meer van schrijven. Schrijf in plaats daarvan wat de kleine converterende pagina suggereert, en kijk over drie maanden opnieuw.
 
@@ -108,13 +108,13 @@ Geen van deze kondigt zichzelf aan. De pagina bestaat nog, ziet er goed uit, en 
 
 De controle is één regel in de kwartaalreview: vergelijk de aanmeldingen van elke pagina met hetzelfde kwartaal vorig jaar, en kijk naar alles wat flink is gedaald. Meestal is het antwoord verouderde content; af en toe is het een technische fout die u al maanden klanten kost.
 
-Dit is ook het argument om de meting in uw eigen database te houden in plaats van in een tool met een bewaarlimiet. Dit kwartaal vergelijken met dat van twee jaar geleden kan alleen als de data er nog is, en het is de vergelijking die langzame achteruitgang vangt — het soort dat niemand opmerkt totdat het totaal genoeg is verschoven om alarmerend te zijn.
+Dit is ook het argument om de meting in uw eigen database te houden in plaats van in een tool met een bewaarlimiet. Dit kwartaal vergelijken met dat van twee jaar geleden kan alleen als de data er nog is, en het is de vergelijking die langzame achteruitgang vangt - het soort dat niemand opmerkt totdat het totaal genoeg is verschoven om alarmerend te zijn.
 
 ## Dit Inrichten
 
 Voor een bestaand product kost dit doorgaans een halve dag: eerste landingspagina en verwijzer vastgelegd bij het eerste bezoek en bij aanmelding naar het account gekopieerd, een maandelijkse query die aanmeldingen, conversiepercentage en omzet per pagina oplevert, de zoekconsole maandelijks bekeken op vertoningen zonder klikken, onverwachte zoekopdrachten en pagina's die er net naast zitten, meetwaarden die tot geen beslissing leiden verwijderd van welk dashboard u ook bekijkt, een optionele vrije-tekstvraag bij aanmelding over hoe mensen u vonden, en een kwartaalreview die op basis van het resultaat bepaalt wat er wordt geschreven en bijgewerkt.
 
-LaunchStudio richt dit in samen met content- en prestatiewerk, omdat publiceren zonder dit schrijven in het donker is. Daarachter staat Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio richt dit in samen met content- en prestatiewerk, omdat publiceren zonder dit schrijven in het donker is. Daarachter staat Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons welke van uw pagina's vorig kwartaal klanten opleverden](https://launchstudio.eu/nl/#contact). De meeste oprichters kunnen het niet zeggen.
 
@@ -124,7 +124,7 @@ LaunchStudio richt dit in samen met content- en prestatiewerk, omdat publiceren 
 
 Aukje Verstraeten bouwde Ritregistratie in Lovable: kilometer- en ritregistratie voor berijders van een auto van de zaak en zzp'ers, 340 abonnees à €9 per maand.
 
-Haar succesvolste artikel qua verkeer — een algemeen stuk over de fiscale regels voor privégebruik van een auto van de zaak — bracht 4.200 bezoeken per maand, zo'n 60 procent van haar organische verkeer. Ze had er vier vervolgartikelen over hetzelfde thema bij geschreven, omdat de cijfers goed waren.
+Haar succesvolste artikel qua verkeer - een algemeen stuk over de fiscale regels voor privégebruik van een auto van de zaak - bracht 4.200 bezoeken per maand, zo'n 60 procent van haar organische verkeer. Ze had er vier vervolgartikelen over hetzelfde thema bij geschreven, omdat de cijfers goed waren.
 
 Het vastleggen van de landingspagina bij aanmelding veranderde het beeld binnen twee maanden. Het populaire artikel had in die periode 3 aanmeldingen opgeleverd. Een veel kleiner artikel over het registreren van ritten voor meerdere voertuigen binnen één eenmanszaak, met 190 bezoeken per maand, had er 22 opgeleverd.
 
@@ -132,12 +132,12 @@ De verklaring was achteraf voor de hand liggend: het fiscale artikel trok werkne
 
 Eén werkdag, daarna twee maanden meten: eerste landingspagina en verwijzer vastgelegd bij het eerste bezoek en bij aanmelding naar het account geschreven; een maandelijkse query die aanmeldingen, conversiepercentage en omzet per landingspagina oplevert; de zoekconsole bekeken op vertoningen zonder klikken, wat zes pagina's met slechte titels opleverde; een optionele vrije-tekstvraag bij aanmelding; en meetwaarden die tot geen beslissing leidden verwijderd van haar dashboard.
 
-**Resultaat:** ze stopte met het schrijven van fiscale uitleg en schreef zes artikelen over specifieke registratiesituaties — meerdere voertuigen, gemengd privé- en zakelijk gebruik, halverwege het jaar van auto wisselen, berijders met twee werkgevers. Het organische verkeer daalde in de zes maanden daarna met 22 procent. De organische aanmeldingen stegen met 210 procent. De vrije-tekstvraag liet bovendien zien dat 14 procent van de aanmeldingen kwam van één forum voor accountants waar ze nog nooit van had gehoord.
+**Resultaat:** ze stopte met het schrijven van fiscale uitleg en schreef zes artikelen over specifieke registratiesituaties - meerdere voertuigen, gemengd privé- en zakelijk gebruik, halverwege het jaar van auto wisselen, berijders met twee werkgevers. Het organische verkeer daalde in de zes maanden daarna met 22 procent. De organische aanmeldingen stegen met 210 procent. De vrije-tekstvraag liet bovendien zien dat 14 procent van de aanmeldingen kwam van één forum voor accountants waar ze nog nooit van had gehoord.
 
 > *"Mijn beste pagina qua verkeer leverde in twee maanden drie klanten op. Mijn slechtste pagina qua verkeer leverde er tweeëntwintig op. Ik had een jaar lang meer van de verkeerde geschreven, omdat het getal groter was."*
-> — **Aukje Verstraeten, Oprichter, Ritregistratie (Roermond)**
+> - **Aukje Verstraeten, Oprichter, Ritregistratie (Roermond)**
 
-**Kosten & Doorlooptijd:** €1.400 (vastleggen van landingspagina en verwijzer met attributie aan accounts, maandelijkse rapportage van aanmeldingen en omzet per pagina, reviewproces voor de zoekconsole, vraag naar herkomst bij aanmelding, opgeschoond dashboard) — afgerond in 1 werkdag.
+**Kosten & Doorlooptijd:** €1.400 (vastleggen van landingspagina en verwijzer met attributie aan accounts, maandelijkse rapportage van aanmeldingen en omzet per pagina, reviewproces voor de zoekconsole, vraag naar herkomst bij aanmelding, opgeschoond dashboard) - afgerond in 1 werkdag.
 
 ## Veelgestelde vragen
 
@@ -147,7 +147,7 @@ Nee. De eerste landingspagina en verwijzer vastleggen bij het eerste bezoek, en 
 
 ### Welke meetwaarden doen er echt toe?
 
-Aanmeldingen per pagina, conversiepercentage per pagina, en omzet per pagina — plus vertoningen en doorklikratio in de zoekconsole. Alles wat geen beslissing zou veranderen, is het verzamelen niet waard.
+Aanmeldingen per pagina, conversiepercentage per pagina, en omzet per pagina - plus vertoningen en doorklikratio in de zoekconsole. Alles wat geen beslissing zou veranderen, is het verzamelen niet waard.
 
 ### Waarom is bouncepercentage misleidend voor artikelen?
 
@@ -171,7 +171,7 @@ Stel bij aanmelding een optionele vrije-tekstvraag. Mensen noemen de collega, he
       "name": "Heb ik een analyticsplatform nodig om content te meten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Leg de eerste landingspagina en verwijzer vast bij het eerste bezoek en kopieer ze bij aanmelding naar het account — het antwoord staat dan in uw eigen database."
+        "text": "Nee. Leg de eerste landingspagina en verwijzer vast bij het eerste bezoek en kopieer ze bij aanmelding naar het account - het antwoord staat dan in uw eigen database."
       }
     },
     {
@@ -195,7 +195,7 @@ Stel bij aanmelding een optionele vrije-tekstvraag. Mensen noemen de collega, he
       "name": "Moet attributie de eerste of de laatste aanraking gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bewaar de eerste landingspagina — het artikel dat iemand introduceerde, is informatiever dan de laatste pagina vóór de aanmelding."
+        "text": "Bewaar de eerste landingspagina - het artikel dat iemand introduceerde, is informatiever dan de laatste pagina vóór de aanmelding."
       }
     },
     {

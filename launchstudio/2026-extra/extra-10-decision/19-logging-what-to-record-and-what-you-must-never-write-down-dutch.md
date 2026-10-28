@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Logging: Wat U Moet Vastleggen, en Wat U Nooit Mag Opschrijven",
-  "description": "Een praktische checklist voor software-oprichters over wat een productielogregel wél moet bevatten, hoe lang u logs bewaart, en de specifieke categorieën data — tokens, wachtwoorden, creditcards en persoonsgegevens — die nooit in een logbestand mogen belanden.",
+  "description": "Een praktische checklist voor software-oprichters over wat een productielogregel wél moet bevatten, hoe lang u logs bewaart, en de specifieke categorieën data - tokens, wachtwoorden, creditcards en persoonsgegevens - die nooit in een logbestand mogen belanden.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-02-25",
@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-*"Wacht eens even... staat mijn eigen wachtwoord nu serieus in een logbestand?"* Dit is een vraag die oprichters doorgaans exact één keer stellen. Meestal wanneer ze tijdens het doorzoeken van productielogs naar een vage bug plotseling een bekende tekenreeks zien opduiken: het wachtwoord dat ze vorige week zelf intypten tijdens het testen van het inlogformulier. Dit is geen hypothetisch bangmakerijtje. Een regel zoals `console.log(req.body)` — of het equivalent daarvan in Python, Go of PHP — is een van de meest voorkomende debug-patronen in door AI geschreven code. Het wordt tijdens de ontwikkeling snel toegevoegd om te zien waarom een endpoint vreemd reageert, en blijft vervolgens gedachteloos in de code staan omdat het werkte en niemand eraan dacht het vóór de lancering te verwijderen.
+*"Wacht eens even... staat mijn eigen wachtwoord nu serieus in een logbestand?"* Dit is een vraag die oprichters doorgaans exact één keer stellen. Meestal wanneer ze tijdens het doorzoeken van productielogs naar een vage bug plotseling een bekende tekenreeks zien opduiken: het wachtwoord dat ze vorige week zelf intypten tijdens het testen van het inlogformulier. Dit is geen hypothetisch bangmakerijtje. Een regel zoals `console.log(req.body)` - of het equivalent daarvan in Python, Go of PHP - is een van de meest voorkomende debug-patronen in door AI geschreven code. Het wordt tijdens de ontwikkeling snel toegevoegd om te zien waarom een endpoint vreemd reageert, en blijft vervolgens gedachteloos in de code staan omdat het werkte en niemand eraan dacht het vóór de lancering te verwijderen.
 
 Het resultaat: de applicatie logt letterlijk alles wat er via het verzoek binnenkomt. Bij een inlog-endpoint is dat een wachtwoord in platte tekst; bij een afrekenpagina kan dat een creditcardnummer zijn. Logbestanden blijven aanzienlijk langer bewaard dan oprichters beseffen, worden gekopieerd naar externe monitoringtools (zoals Datadog, Better Stack of Axiom), en zijn inzichtelijk voor meer medewerkers dan vrijwel elk ander onderdeel van uw infrastructuur.
 
@@ -42,7 +42,7 @@ Wanneer een ontwikkelaar of AI-tool tijdens het bouwen snel een bug wil opsporen
 Vier categorieën mogen onder geen enkel beding in uw logs terechtkomen:
 
 1. **Wachtwoorden en authenticatie-tokens:**
-   Elk wachtwoordveld — zowel in platte tekst als zelfs gehasht — hoort nooit in logs thuis. Het loggen van ruwe wachtwoorden (bijvoorbeeld wanneer een gebruiker een nieuw account aanmaakt of inlogt) verandert uw logfiles in een directe bron voor credential stuffing. Hetzelfde geldt voor `Authorization`-headers met Bearer tokens, sessiecookies en API-sleutels van derden. Eén gelekt logbestand geeft een kwaadwillende direct toegang tot uw hele infrastructuur.
+   Elk wachtwoordveld - zowel in platte tekst als zelfs gehasht - hoort nooit in logs thuis. Het loggen van ruwe wachtwoorden (bijvoorbeeld wanneer een gebruiker een nieuw account aanmaakt of inlogt) verandert uw logfiles in een directe bron voor credential stuffing. Hetzelfde geldt voor `Authorization`-headers met Bearer tokens, sessiecookies en API-sleutels van derden. Eén gelekt logbestand geeft een kwaadwillende direct toegang tot uw hele infrastructuur.
 
 2. **Betaalkaartgegevens en CVC-codes:**
    Het loggen van volledige creditcardnummers (PAN), vervaldatums of de 3-cijferige CVC/CVV-beveiligingscode is een zware, directe overtreding van de **PCI-DSS normering**. Als uw betalingsverwerker ontdekt dat u CVC-codes opslaat in applicatielogs, riskeert u onmiddellijke royering van uw betaalaccount en torenhoge boetes. Zelfs een 'onschuldige' `console.log(stripePayload)` kan dit lek al veroorzaken.
@@ -54,9 +54,9 @@ Vier categorieën mogen onder geen enkel beding in uw logs terechtkomen:
    Een compleet gebruikersprofiel met naam, adres, telefoonnummer, burgerservicenummer en geboortedatum in één JSON-blob loggen omdat *"log het hele user-object"* de snelste manier van debuggen was. Afzonderlijk naar een ID refereren (`user_id: 1193`) is uitstekend; het complete profiel meervoudig in logs wegschrijven maakt van elk logbestand een gigantisch datalek zodra een medewerker, stagiair of externe logdienst gecompromitteerd raakt.
 ## Gestructureerd Loggen (Structured Logging): Waarom Vrije Tekst Niet Schaalt
 
-Het overgrote deel van de door AI gegenereerde logging is volstrekt ongestructureerd: een willekeurige tekstreeks, samengevoegd met wat variabelen, die naar de standard output wordt weggeschreven — zoals `console.log('Gebruiker ' + userId + ' inloggen mislukt')`. Voor een individuele programmeur die door een handvol regels scrolt is dat prima leesbaar. Het wordt echter nagenoeg volstrekt waardeloos zodra uw applicatie meer dan een triviale hoeveelheid productie-verkeer verwerkt. Er bestaat immers geen betrouwbare manier om vrije tekst over tienduizenden logregels efficiënt te doorzoeken, filteren of aggregeren zonder kwetsbare regex-patronen.
+Het overgrote deel van de door AI gegenereerde logging is volstrekt ongestructureerd: een willekeurige tekstreeks, samengevoegd met wat variabelen, die naar de standard output wordt weggeschreven - zoals `console.log('Gebruiker ' + userId + ' inloggen mislukt')`. Voor een individuele programmeur die door een handvol regels scrolt is dat prima leesbaar. Het wordt echter nagenoeg volstrekt waardeloos zodra uw applicatie meer dan een triviale hoeveelheid productie-verkeer verwerkt. Er bestaat immers geen betrouwbare manier om vrije tekst over tienduizenden logregels efficiënt te doorzoeken, filteren of aggregeren zonder kwetsbare regex-patronen.
 
-**Gestructureerd loggen (structured logging)** schrijft elke logregel daarentegen weg als een consistent, uniform object — standaard in JSON-formaat — met expliciet benoemde velden:
+**Gestructureerd loggen (structured logging)** schrijft elke logregel daarentegen weg als een consistent, uniform object - standaard in JSON-formaat - met expliciet benoemde velden:
 ```json
 {
   "level": "error",
@@ -68,14 +68,14 @@ Het overgrote deel van de door AI gegenereerde logging is volstrekt ongestructur
 }
 ```
 
-Het enorme praktische voordeel bewijst zich op het moment dat u onder zware tijdsdruk een acuut incident moet onderzoeken: *"Hoeveel mislukte inlogpogingen vonden er voor dit specifieke account plaats in het afgelopen uur?"* is een haarscherpe, razendsnelle query over gestructureerde velden, terwijl het bij vrije tekst een frustrerende, foutgevoelige scrol- en gokoefening wordt. Elk serieus loganalyseplatform (zoals Datadog, Better Stack, Axiom of AWS CloudWatch) is fundamenteel gebouwd rondom gestructureerde velden. Het invoeren van dit formaat kost vrijwel niets als u het vroegtijdig inricht — het is puur de configuratie van een logging-library (zoals Pino of Winston) — maar het is een monsterlijke operatie als u pas begint wanneer er al honderdduizenden ongestructureerde regels in productie rondzwerven.
+Het enorme praktische voordeel bewijst zich op het moment dat u onder zware tijdsdruk een acuut incident moet onderzoeken: *"Hoeveel mislukte inlogpogingen vonden er voor dit specifieke account plaats in het afgelopen uur?"* is een haarscherpe, razendsnelle query over gestructureerde velden, terwijl het bij vrije tekst een frustrerende, foutgevoelige scrol- en gokoefening wordt. Elk serieus loganalyseplatform (zoals Datadog, Better Stack, Axiom of AWS CloudWatch) is fundamenteel gebouwd rondom gestructureerde velden. Het invoeren van dit formaat kost vrijwel niets als u het vroegtijdig inricht - het is puur de configuratie van een logging-library (zoals Pino of Winston) - maar het is een monsterlijke operatie als u pas begint wanneer er al honderdduizenden ongestructureerde regels in productie rondzwerven.
 
 Deze discipline ondersteunt tevens rechtstreeks het voorkomen van geheime datalekken: een gestructureerde logger met een vooraf gedefinieerd schema dwingt de ontwikkelaar om expliciet te kiezen welke velden worden meegestuurd, in schril contrast met `console.log(req.body)` waarbij standaard alles, inclusief wachtwoorden en tokens, blindelings wordt weggeschreven.
 ## Bewaartermijnen (Retention): Wat Is Nodig en Wat Is een Risico?
 
-De bewaartermijn van serverlogs is een beleidskeuze die in de meeste prototypes nooit bewust wordt gemaakt — logs hopen zich simpelweg eindeloos op volgens de standaardinstellingen van het gekozen platform. Dat kan variëren van slechts enkele dagen op een gratis hostingtier tot oneindig lang wanneer logs worden doorgestuurd naar goedkope, onbeheerde cloudopslag waar niemand ooit naar omkijkt.
+De bewaartermijn van serverlogs is een beleidskeuze die in de meeste prototypes nooit bewust wordt gemaakt - logs hopen zich simpelweg eindeloos op volgens de standaardinstellingen van het gekozen platform. Dat kan variëren van slechts enkele dagen op een gratis hostingtier tot oneindig lang wanneer logs worden doorgestuurd naar goedkope, onbeheerde cloudopslag waar niemand ooit naar omkijkt.
 
-Een te korte bewaartermijn brengt directe operationele schade met zich mee: als een betalende klant een storing meldt die vier dagen geleden plaatsvond en uw logs bewaren slechts data van de afgelopen 48 uur, bent u blind en kunt u de oorzaak nooit meer achterhalen. Een te lange bewaartermijn brengt echter een volkomen ander, juridisch risico met zich mee: elke dag dat een logregel in opslag blijft staan, vormt het een potentieel doelwit bij een inbraak op uw systemen of uw externe logprovider. Bovendien dicteert de AVG dat persoonsgegevens — inclusief persoonsgegevens die onbedoeld in logs belanden, zoals een e-mailadres in een foutmelding — niet langer bewaard mogen worden dan strikt noodzakelijk is voor het doel waarvoor ze zijn verzameld. *"We hebben nooit een retentiebeleid ingesteld dus alles staat er al twee jaar"* houdt bij geen enkele privacytoezichthouder stand.
+Een te korte bewaartermijn brengt directe operationele schade met zich mee: als een betalende klant een storing meldt die vier dagen geleden plaatsvond en uw logs bewaren slechts data van de afgelopen 48 uur, bent u blind en kunt u de oorzaak nooit meer achterhalen. Een te lange bewaartermijn brengt echter een volkomen ander, juridisch risico met zich mee: elke dag dat een logregel in opslag blijft staan, vormt het een potentieel doelwit bij een inbraak op uw systemen of uw externe logprovider. Bovendien dicteert de AVG dat persoonsgegevens - inclusief persoonsgegevens die onbedoeld in logs belanden, zoals een e-mailadres in een foutmelding - niet langer bewaard mogen worden dan strikt noodzakelijk is voor het doel waarvoor ze zijn verzameld. *"We hebben nooit een retentiebeleid ingesteld dus alles staat er al twee jaar"* houdt bij geen enkele privacytoezichthouder stand.
 
 Een gezonde, beproefde standaard voor vroege SaaS-producten is een **retentie van 30 tot maximaal 90 dagen** voor direct doorzoekbare operationele logs. Alles wat ouder is dan die termijn, dient automatisch en onherroepelijk gewist te worden, tenzij er een wettelijke of fiscale bewaarplicht geldt voor specifieke financiële audit-records die veilig naar afgesloten koude archiefopslag worden verplaatst.
 ## Foutmeldingen voor Gebruikers versus Wat U Achter de Schermen Logt
@@ -103,23 +103,23 @@ U kunt uw complete codebase in minder dan zestig minuten auditen door de volgend
 
 Het professioneel inrichten van uw log-architectuur is vrijwel altijd een gerichte, afgebakende verbetering. Het behelst het nalopen van bestaande log-statements, het verwijderen of maskeren van gevoelige parameters, het standaardiseren op een gestructureerde JSON-logger en het instellen van een gezonde bewaartermijn. Het vereist geen ingrijpende verbouwing van de kernfunctionaliteiten van uw product. Het valt daardoor comfortabel binnen de vaste scope van het **Launch Ready** traject van LaunchStudio.
 
-Het is tevens een van de constateringen die de [engineers van Manifera](https://www.manifera.com/services/custom-software-development/) stelselmatig als eerste naar boven halen tijdens een audit van AI-code. Het patroon dat dit veroorzaakt — het gemakzuchtig loggen van het complete request-object tijdens het prototypen — is immers nagenoeg universeel aanwezig, en wordt vrijwel altijd vergeten vóór de lancering. Weet u niet exact wat uw applicatie op dit moment wegschrijft naar productielogs? [Beschrijf uw project en ontvang binnen één werkdag een heldere analyse](https://launchstudio.eu/nl/#contact) van wat een logging-audit bij uw applicatie aan het licht zou brengen.
+Het is tevens een van de constateringen die de [engineers van Manifera](https://www.manifera.com/services/custom-software-development/) stelselmatig als eerste naar boven halen tijdens een audit van AI-code. Het patroon dat dit veroorzaakt - het gemakzuchtig loggen van het complete request-object tijdens het prototypen - is immers nagenoeg universeel aanwezig, en wordt vrijwel altijd vergeten vóór de lancering. Weet u niet exact wat uw applicatie op dit moment wegschrijft naar productielogs? [Beschrijf uw project en ontvang binnen één werkdag een heldere analyse](https://launchstudio.eu/nl/#contact) van wat een logging-audit bij uw applicatie aan het licht zou brengen.
 ## Echt voorbeeld
 
 ### Een Solo-Oprichter Vindt Zijn Eigen Wachtwoord Terug in Zijn Logbestanden
 
 Jakub Wróbel bouwde Notarize, een digitale handtekeningentool voor zzp'ers en freelancers, met behulp van Cursor. Tijdens het ontwikkelen had hij bij het inlog-endpoint een tijdelijke debug-regel geplaatst: `console.log('Login attempt:', req.body)`. De inlogbug werd opgelost, maar de logregel bleef onaangeroerd in productie actief.
 
-Toen een potentiële zakelijke klant vroeg om een security-vragenlijst in te vullen ter voorbereiding op een enterprise-pilot, doorzocht Jakub uit nieuwsgierigheid zijn productielogs op zijn eigen e-mailadres. Tot zijn grote schrik trof hij zijn eigen wachtwoord aan — in volstrekt leesbare platte tekst, vastgelegd tijdens een inlogpoging van weken geleden. Elke inlogpoging van elke gebruiker sinds de livegang was doodleuk doorgestuurd naar een externe cloud-loggingdienst.
+Toen een potentiële zakelijke klant vroeg om een security-vragenlijst in te vullen ter voorbereiding op een enterprise-pilot, doorzocht Jakub uit nieuwsgierigheid zijn productielogs op zijn eigen e-mailadres. Tot zijn grote schrik trof hij zijn eigen wachtwoord aan - in volstrekt leesbare platte tekst, vastgelegd tijdens een inlogpoging van weken geleden. Elke inlogpoging van elke gebruiker sinds de livegang was doodleuk doorgestuurd naar een externe cloud-loggingdienst.
 
 Tijdens het Launch Ready-traject saneerden we direct alle loghandlers: de debug-regel werd vervangen door een gestructureerd JSON-event met uitsluitend het `user_id`, tijdstempel en een boolean voor succes of falen. Er werd een linting-regel ingesteld die het direct loggen van `req.body` structureel blokkeert. Uit voorzorg werden de wachtwoorden van alle bestaande gebruikers preventief gereset onder een professionele beveiligingscommunicatie.
 
 **Resultaat:** De security-vragenlijst van de enterprise-klant kon met vlag en wimpel en met aantoonbare audittrails worden beantwoord, waardoor het pilotcontract ter waarde van tienduizenden euro's werd binnengehaald.
 
 > *"Ik vond mijn eigen wachtwoord terug in een logbestand waarvan ik vergeten was dat het bestond. Dat was het moment waarop 'ik ruim die debug-logs later wel op' direct veranderde in een absolute noodzaak."*
-> — **Jakub Wróbel, Oprichter, Notarize (Wrocław)**
+> - **Jakub Wróbel, Oprichter, Notarize (Wrocław)**
 
-**Kosten & Doorlooptijd:** Launch Ready-pakket, logging-audit en beveiligingsrevisie — opgeleverd in 3 werkdagen.
+**Kosten & Doorlooptijd:** Launch Ready-pakket, logging-audit en beveiligingsrevisie - opgeleverd in 3 werkdagen.
 
 ## Veelgestelde Vragen
 

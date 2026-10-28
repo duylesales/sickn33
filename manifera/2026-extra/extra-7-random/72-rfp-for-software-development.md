@@ -20,23 +20,23 @@ target_persona: "CFO"
 }
 </script>
 
-A CFO who sends out a loosely structured RFP for software development and receives back five bids ranging from €80,000 to €400,000 hasn't learned that vendors have wildly different pricing — they've learned that a loosely structured RFP produces bids for five different projects that happen to share a title, and the real work of vendor selection hasn't started until the RFP itself is rebuilt to force genuinely comparable responses.
+A CFO who sends out a loosely structured RFP for software development and receives back five bids ranging from €80,000 to €400,000 hasn't learned that vendors have wildly different pricing - they've learned that a loosely structured RFP produces bids for five different projects that happen to share a title, and the real work of vendor selection hasn't started until the RFP itself is rebuilt to force genuinely comparable responses.
 
-**The Pain:** A CFO running a software development RFP process wants a clean, comparable set of bids to bring to a selection committee or board, but a typical RFP template — problem statement, desired outcomes, "please provide your approach and pricing" — leaves so much scope interpretation up to each vendor that the responses that come back differ as much in what they assumed as in what they cost, forcing the CFO to either normalize wildly different proposals manually or make a decision on incomparable information.
+**The Pain:** A CFO running a software development RFP process wants a clean, comparable set of bids to bring to a selection committee or board, but a typical RFP template - problem statement, desired outcomes, "please provide your approach and pricing" - leaves so much scope interpretation up to each vendor that the responses that come back differ as much in what they assumed as in what they cost, forcing the CFO to either normalize wildly different proposals manually or make a decision on incomparable information.
 
-**The Agitation:** A CFO who selects a vendor from an RFP process without having forced comparable scope commitments discovers the real gaps only after the contract is signed and the project is underway — a lower bidder who assumed a narrower testing scope, a vendor who quoted against a different technology stack than the CFO intended, a proposal that never actually addressed the specific integration requirement buried on page four of the RFP — and by then, renegotiating scope happens from a position of far less leverage than during the bidding process.
+**The Agitation:** A CFO who selects a vendor from an RFP process without having forced comparable scope commitments discovers the real gaps only after the contract is signed and the project is underway - a lower bidder who assumed a narrower testing scope, a vendor who quoted against a different technology stack than the CFO intended, a proposal that never actually addressed the specific integration requirement buried on page four of the RFP - and by then, renegotiating scope happens from a position of far less leverage than during the bidding process.
 
 ## Structuring an RFP That Produces Genuinely Comparable Bids
 
-**A fixed, detailed scope section vendors must respond against, not interpret.** Rather than a general problem statement, an effective RFP includes specific functional requirements, explicit technical constraints (existing stack, required integrations, compliance requirements), and defined acceptance criteria for what "done" means — the more precisely scope is fixed in the RFP itself, the less room vendors have to quote against materially different projects.
+**A fixed, detailed scope section vendors must respond against, not interpret.** Rather than a general problem statement, an effective RFP includes specific functional requirements, explicit technical constraints (existing stack, required integrations, compliance requirements), and defined acceptance criteria for what "done" means - the more precisely scope is fixed in the RFP itself, the less room vendors have to quote against materially different projects.
 
-**A standardized pricing breakdown structure, not a single total.** Requiring every vendor to break pricing down into the same categories — discovery and design, core development by defined phase, testing and QA, deployment, and a defined post-launch support period — turns an apples-to-oranges total into a line-by-line comparison, and immediately surfaces which vendor's lower total comes from cutting a specific category rather than genuine efficiency.
+**A standardized pricing breakdown structure, not a single total.** Requiring every vendor to break pricing down into the same categories - discovery and design, core development by defined phase, testing and QA, deployment, and a defined post-launch support period - turns an apples-to-oranges total into a line-by-line comparison, and immediately surfaces which vendor's lower total comes from cutting a specific category rather than genuine efficiency.
 
-**Explicit questions about assumptions, not just deliverables.** An RFP that asks vendors to state their assumptions about team seniority, testing depth, and change management process for scope creep forces vendors to commit those assumptions to writing, rather than leaving a CFO to discover them mid-project — a vendor unwilling to answer these questions specifically and in writing is itself a useful signal.
+**Explicit questions about assumptions, not just deliverables.** An RFP that asks vendors to state their assumptions about team seniority, testing depth, and change management process for scope creep forces vendors to commit those assumptions to writing, rather than leaving a CFO to discover them mid-project - a vendor unwilling to answer these questions specifically and in writing is itself a useful signal.
 
 **A mandatory reference and past-project structure, not just logos.** Rather than accepting a general client list, requiring each vendor to provide two or three references for projects of comparable scope and technology, with a named contact and specific project details, produces reference calls that can actually be compared to the CFO's own project rather than generic testimonials.
 
-**A defined evaluation rubric shared with vendors in advance.** Publishing the specific criteria and weighting the RFP will be scored against — technical approach, price, team experience, references, communication process — before bids are due produces better, more targeted responses than an opaque process, since vendors respond to what's actually being measured rather than guessing what matters.
+**A defined evaluation rubric shared with vendors in advance.** Publishing the specific criteria and weighting the RFP will be scored against - technical approach, price, team experience, references, communication process - before bids are due produces better, more targeted responses than an opaque process, since vendors respond to what's actually being measured rather than guessing what matters.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -54,7 +54,7 @@ Gentse Softwarediensten BV, a Ghent-based logistics software buyer, ran an initi
 Manifera helped the CFO rebuild the RFP with a fixed scope section, a standardized five-category pricing breakdown, and explicit assumption questions on testing depth and team seniority, then reissued it to the same vendor pool. The rebid bids landed within a much narrower, genuinely comparable range, and the CFO selected a vendor with full confidence in what was actually being compared for the first time in the process.
 
 > *"The first round of bids taught me nothing except that our RFP was badly written. Once we forced everyone to answer the same specific questions the same specific way, the real differences between vendors finally became visible instead of buried in scope nobody had stated."*
-> — **CFO, Gentse Softwarediensten BV, Belgium**
+> - **CFO, Gentse Softwarediensten BV, Belgium**
 
 ## Loosely Structured RFPs vs. Manifera's Comparable-Bid RFP Structure
 
@@ -68,7 +68,7 @@ Manifera helped the CFO rebuild the RFP with a fixed scope section, a standardiz
 
 ## The Economics
 
-A poorly structured RFP process costs a CFO weeks of manual bid normalization and still risks selecting a vendor based on incomparable numbers, while a rigorously structured RFP costs modestly more time to draft upfront and produces bids that can be compared line by line, catching scope mismatches before contract signature rather than after. [Talk to Manifera](https://www.manifera.com/contact-us/) about an RFP process — and a proposal response — built for genuine comparability.
+A poorly structured RFP process costs a CFO weeks of manual bid normalization and still risks selecting a vendor based on incomparable numbers, while a rigorously structured RFP costs modestly more time to draft upfront and produces bids that can be compared line by line, catching scope mismatches before contract signature rather than after. [Talk to Manifera](https://www.manifera.com/contact-us/) about an RFP process - and a proposal response - built for genuine comparability.
 
 ## Frequently Asked Questions
 

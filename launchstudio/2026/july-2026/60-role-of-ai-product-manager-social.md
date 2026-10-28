@@ -1,4 +1,4 @@
-🔥 Sadie built a prototype using **Cursor** — sadie, a startup founder, used **cursor** to build a retail inventory ai agent prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Sadie built a prototype using **Cursor** - sadie, a startup founder, used **cursor** to build a retail inventory ai agent prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sadie's application achieved production readiness: Sadie launched her retail SaaS platform successfully, securing her first 5 pilot store customers on a foundation that could scale past the prototype stage. (€3,000 (SaaS MVP Launch Package) — production-ready and deployed in 9 business days.). 🚀
+Sadie's application achieved production readiness: Sadie launched her retail SaaS platform successfully, securing her first 5 pilot store customers on a foundation that could scale past the prototype stage. (€3,000 (SaaS MVP Launch Package) - production-ready and deployed in 9 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/role-of-ai-product-manager
 

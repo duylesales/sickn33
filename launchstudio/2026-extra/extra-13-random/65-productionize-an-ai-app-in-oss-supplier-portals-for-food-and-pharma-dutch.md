@@ -22,7 +22,7 @@ Doelgroep: SaaS-oprichters in Scale-Up fase
 }
 </script>
 
-Oss groeide op voeding — vleesverwerking, margarine, later kant-en-klaarmaaltijden — en op farmaceutica. Die geschiedenis liet een regionale economie achter vol producenten, leveranciers, kwaliteitsmanagers en auditors, en een bepaald soort oprichter: iemand die jarenlang per e-mail achter specificatiebladen en certificaten aan zat en besloot er een portaal voor te bouwen. Met Lovable of Bolt kan dat portaal binnen enkele weken werken. Om een AI-app voor deze wereld productierijp te maken, moet je echter voldoen aan de verwachtingen van kwaliteitssystemen die rond audits zijn ontworpen.
+Oss groeide op voeding - vleesverwerking, margarine, later kant-en-klaarmaaltijden - en op farmaceutica. Die geschiedenis liet een regionale economie achter vol producenten, leveranciers, kwaliteitsmanagers en auditors, en een bepaald soort oprichter: iemand die jarenlang per e-mail achter specificatiebladen en certificaten aan zat en besloot er een portaal voor te bouwen. Met Lovable of Bolt kan dat portaal binnen enkele weken werken. Om een AI-app voor deze wereld productierijp te maken, moet je echter voldoen aan de verwachtingen van kwaliteitssystemen die rond audits zijn ontworpen.
 
 ## Waarom Je een AI-App voor Ketens Anders Productierijp Maakt
 
@@ -42,7 +42,7 @@ De belangrijkste productiewijziging is "uploaden overschrijft" vervangen door ee
 
 ## Audittrails die Standhouden
 
-Een audittrail legt vast wie wat deed: uploaden, beoordelen, goedkeuren, afwijzen, een veld wijzigen, downloaden. Om geloofwaardig te zijn, moet hij append-only zijn, apart worden opgeslagen van de data die hij beschrijft en beschermd zijn tegen bewerking door gewone gebruikers — ook door beheerders bij de klanten van het portaal.
+Een audittrail legt vast wie wat deed: uploaden, beoordelen, goedkeuren, afwijzen, een veld wijzigen, downloaden. Om geloofwaardig te zijn, moet hij append-only zijn, apart worden opgeslagen van de data die hij beschrijft en beschermd zijn tegen bewerking door gewone gebruikers - ook door beheerders bij de klanten van het portaal.
 
 Gereguleerde farmaceutische omgevingen kunnen formelere maatregelen vereisen, zoals elektronische handtekeningen en gevalideerde systemen onder kaders als EU GMP Annex 11. Een klein portaal heeft misschien niet vanaf dag één volledige validatie nodig, maar hoort zo te zijn ontworpen dat die maatregelen later kunnen worden toegevoegd zonder het opnieuw te bouwen.
 
@@ -56,7 +56,7 @@ Certificaten verlopen. Een portaal in productie houdt geldigheidsdata bij, herin
 
 ## Exports voor Audits
 
-Komt de auditor van een klant langs, dan heeft de kwaliteitsmanager een volledige export met tijdstempels nodig — documenten, versies en audittrail — in een formaat dat een auditor accepteert. Dit één keer bouwen bespaart bij elke audit dagen zoekwerk.
+Komt de auditor van een klant langs, dan heeft de kwaliteitsmanager een volledige export met tijdstempels nodig - documenten, versies en audittrail - in een formaat dat een auditor accepteert. Dit één keer bouwen bespaart bij elke audit dagen zoekwerk.
 
 ## Hosting en Continuïteit
 
@@ -90,11 +90,11 @@ De meeste leveranciersportalen zijn goed geholpen met de eerste twee; hash chain
 
 ## Elektronische Goedkeuringen en Handtekeningen
 
-Goedkeuringen in kwaliteitssystemen moeten vaak laten zien wie goedkeurde, wanneer en met welke betekenis ("goedgekeurd als conform"). Een robuuste goedkeuring vereist dat de goedkeurder is geauthenticeerd (bij voorkeur met meerfactorauthenticatie), legt de exacte goedgekeurde versie, de betekenis van de goedkeuring en het tijdstempel vast, en voorkomt latere wijziging van de goedgekeurde versie. In farmaceutische contexten die onder GMP vallen, kunnen de eisen aan elektronische handtekeningen formeler zijn — inclusief unieke identificatie van gebruikers en koppeling van handtekeningen aan records — en horen ze met het kwaliteitsteam van de klant te worden beoordeeld.
+Goedkeuringen in kwaliteitssystemen moeten vaak laten zien wie goedkeurde, wanneer en met welke betekenis ("goedgekeurd als conform"). Een robuuste goedkeuring vereist dat de goedkeurder is geauthenticeerd (bij voorkeur met meerfactorauthenticatie), legt de exacte goedgekeurde versie, de betekenis van de goedkeuring en het tijdstempel vast, en voorkomt latere wijziging van de goedgekeurde versie. In farmaceutische contexten die onder GMP vallen, kunnen de eisen aan elektronische handtekeningen formeler zijn - inclusief unieke identificatie van gebruikers en koppeling van handtekeningen aan records - en horen ze met het kwaliteitsteam van de klant te worden beoordeeld.
 
 ## Leveranciers Onboarden en Offboarden
 
-Leveranciers wisselen regelmatig van contactpersoon. Bouw onboarding rond uitnodigingen die naar zakelijke e-mailadressen worden gestuurd, waarbij de eigen beheerder van de leverancier collega's kan toevoegen en verwijderen. Offboarding hoort toegang direct te verwijderen als een leveranciersrelatie eindigt, terwijl de historische documenten van de leverancier gedurende de vereiste periode worden bewaard. Periodieke toegangsreviews — bijvoorbeeld per kwartaal een rapport van actieve leveranciersgebruikers naar elke producent — houden het gebruikersbestand schoon.
+Leveranciers wisselen regelmatig van contactpersoon. Bouw onboarding rond uitnodigingen die naar zakelijke e-mailadressen worden gestuurd, waarbij de eigen beheerder van de leverancier collega's kan toevoegen en verwijderen. Offboarding hoort toegang direct te verwijderen als een leveranciersrelatie eindigt, terwijl de historische documenten van de leverancier gedurende de vereiste periode worden bewaard. Periodieke toegangsreviews - bijvoorbeeld per kwartaal een rapport van actieve leveranciersgebruikers naar elke producent - houden het gebruikersbestand schoon.
 
 ## Logica voor Geldigheid, Verloop en Escalatie
 
@@ -114,7 +114,7 @@ Grotere klanten kunnen het portaal zelf als leverancier auditen. Stel een kort d
 
 ## Wijzigingsbeheer voor het Portaal Zelf
 
-Klanten met oog voor kwaliteit geven niet alleen om hun documenten, maar ook om hoe het portaal verandert. Hanteer een eenvoudig, gedocumenteerd wijzigingsproces: wijzigingen bijgehouden in versiebeheer, getest op staging, beoordeeld vóór de release, en samengevat in release notes die klanten kunnen lezen. Informeer klanten vooraf over wijzigingen die de goedkeuringslogica, audittrails of documentstatus raken. Vraagt een farmaceutische klant om bewijs van validatie, dan wordt dit proces — met testregistraties per release — daar de basis voor.
+Klanten met oog voor kwaliteit geven niet alleen om hun documenten, maar ook om hoe het portaal verandert. Hanteer een eenvoudig, gedocumenteerd wijzigingsproces: wijzigingen bijgehouden in versiebeheer, getest op staging, beoordeeld vóór de release, en samengevat in release notes die klanten kunnen lezen. Informeer klanten vooraf over wijzigingen die de goedkeuringslogica, audittrails of documentstatus raken. Vraagt een farmaceutische klant om bewijs van validatie, dan wordt dit proces - met testregistraties per release - daar de basis voor.
 
 ## Bewaartermijnen in Gereguleerde Sectoren
 
@@ -130,17 +130,17 @@ Terugkerende fouten zijn onder meer: bestanden overschrijven in plaats van er ve
 
 ## Waarom Oprichters uit de Sector een Voorsprong Hebben
 
-Oprichters die in kwaliteitsmanagement hebben gewerkt, weten precies wat auditors vragen en waar spreadsheets tekortschieten. Gecombineerd met een portaal op productieniveau is die kennis een sterk concurrentievoordeel: producenten vertrouwen een tool die is gebouwd door iemand die aan de andere kant van een audit heeft gezeten — zolang de software voldoet aan de standaard die die ervaring belooft.
+Oprichters die in kwaliteitsmanagement hebben gewerkt, weten precies wat auditors vragen en waar spreadsheets tekortschieten. Gecombineerd met een portaal op productieniveau is die kennis een sterk concurrentievoordeel: producenten vertrouwen een tool die is gebouwd door iemand die aan de andere kant van een audit heeft gezeten - zolang de software voldoet aan de standaard die die ervaring belooft.
 
 ## De Standaard om na te Streven
 
-Een leveranciersportaal is productierijp voor voeding en farma wanneer elk document een geschiedenis heeft, elke goedkeuring een eigenaar en een tijdstempel, elke leverancier alleen zijn eigen wereld ziet, elke vervaldatum wordt opgemerkt voordat die ertoe doet, en elke auditvraag met een export kan worden beantwoord in plaats van met een avond zoeken. Die standaard bereiken met een AI-gebouwd portaal is meestal een paar weken gerichte engineering — en het maakt van een nuttige tool er een waarop kwaliteitsmanagers een audit durven te laten rusten.
+Een leveranciersportaal is productierijp voor voeding en farma wanneer elk document een geschiedenis heeft, elke goedkeuring een eigenaar en een tijdstempel, elke leverancier alleen zijn eigen wereld ziet, elke vervaldatum wordt opgemerkt voordat die ertoe doet, en elke auditvraag met een export kan worden beantwoord in plaats van met een avond zoeken. Die standaard bereiken met een AI-gebouwd portaal is meestal een paar weken gerichte engineering - en het maakt van een nuttige tool er een waarop kwaliteitsmanagers een audit durven te laten rusten.
 
 ## Waar LaunchStudio Past
 
 LaunchStudio helpt oprichters in gereguleerde ketens een AI-app die met Lovable, Bolt of Cursor is gebouwd productierijp te maken: versiebeheer van documenten met geldigheidsdata, append-only audittrails, scheiding tussen leveranciers en klanten afgedwongen in de database, gemonitorde herinneringen over vervaldatums, auditexports, hosting in de EU en back-ups. De interface die je gebruikers kennen, blijft op zijn plek.
 
-LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en klanten als TNO en Xpar Vision, een leverancier van inspectiesystemen voor de glasindustrie. De engineers van Manifera werken vanuit het ontwikkelcentrum in Ho Chi Minh-stad, met het Europese kantoor aan de Herengracht 420 in Amsterdam — ongeveer anderhalf uur van Oss. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/). Voor de farmaceutische kant bevat [EudraLex Volume 4](https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en) van de Europese Commissie de GMP-richtlijnen, inclusief Annex 11.
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en klanten als TNO en Xpar Vision, een leverancier van inspectiesystemen voor de glasindustrie. De engineers van Manifera werken vanuit het ontwikkelcentrum in Ho Chi Minh-stad, met het Europese kantoor aan de Herengracht 420 in Amsterdam - ongeveer anderhalf uur van Oss. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/). Voor de farmaceutische kant bevat [EudraLex Volume 4](https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en) van de Europese Commissie de GMP-richtlijnen, inclusief Annex 11.
 
 [Bereken wat je project zou kosten](https://launchstudio.eu/nl/#calculator), of praat direct met ons over je eerste klantaudit.
 
@@ -157,9 +157,9 @@ In vijftien werkdagen voerden de engineers van LaunchStudio documentversies in m
 **Resultaat:** De producent doorstond de retailaudit met de export van Recepturo, en het rapport van de auditor noemde de documentbeheersing positief. Recepturo groeide het jaar daarna naar 16 producenten, waarvan twee in de sector van farmaceutische hulpstoffen.
 
 > *"In kwaliteitsmanagement is een document zonder geschiedenis geen bewijs. Mijn portaal had de documenten, en had het bewijs weggegooid."*
-> — **Ruud van Kessel, Oprichter, Recepturo (Oss)**
+> - **Ruud van Kessel, Oprichter, Recepturo (Oss)**
 
-**Kosten & Tijdlijn:** € 4.600 (Launch & Grow-pakket: versiebeheer, audittrail, toegangsbeheer, herinneringen, exports en hosting) — afgerond in 15 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 4.600 (Launch & Grow-pakket: versiebeheer, audittrail, toegangsbeheer, herinneringen, exports en hosting) - afgerond in 15 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 

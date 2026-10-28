@@ -20,11 +20,11 @@ target_persona: "COO"
 }
 </script>
 
-The system that works perfectly for your Netherlands entity hits a wall the moment it reaches Germany, because German statutory chart of accounts requirements don't map cleanly onto what was configured for Dutch reporting, and your France entity is still waiting because nobody scoped the French payroll localization until three weeks before go-live. A multi-country rollout is not one project executed in several places — it's several genuinely different projects wearing the same system name, and the vendor who doesn't understand that distinction will burn your timeline finding it out in production.
+The system that works perfectly for your Netherlands entity hits a wall the moment it reaches Germany, because German statutory chart of accounts requirements don't map cleanly onto what was configured for Dutch reporting, and your France entity is still waiting because nobody scoped the French payroll localization until three weeks before go-live. A multi-country rollout is not one project executed in several places - it's several genuinely different projects wearing the same system name, and the vendor who doesn't understand that distinction will burn your timeline finding it out in production.
 
-This decision reaches a COO when a business has grown past a single-entity operation and needs a common system — ERP, HR, or a core operational platform — deployed consistently enough to give leadership real cross-entity visibility, while still respecting the genuine legal, tax, and regulatory differences each country entity operates under. Get the vendor selection right and the rollout becomes a template that accelerates with each new entity added; get it wrong and every new country becomes its own crisis, with the vendor relearning the same lessons from scratch each time.
+This decision reaches a COO when a business has grown past a single-entity operation and needs a common system - ERP, HR, or a core operational platform - deployed consistently enough to give leadership real cross-entity visibility, while still respecting the genuine legal, tax, and regulatory differences each country entity operates under. Get the vendor selection right and the rollout becomes a template that accelerates with each new entity added; get it wrong and every new country becomes its own crisis, with the vendor relearning the same lessons from scratch each time.
 
-## Localization Is Not a Checkbox — It's a Distinct Body of Legal Requirement Per Country
+## Localization Is Not a Checkbox - It's a Distinct Body of Legal Requirement Per Country
 
 Every country entity in scope carries its own statutory chart of accounts, tax reporting requirements, payroll and labor law compliance needs, and often language and currency handling that a system configured correctly for one country will not automatically satisfy in another. A vendor who treats localization as a configuration setting to toggle, rather than a substantive body of legal and regulatory requirement to research and validate per country, will discover the gap only when a local finance or HR team rejects the system as non-compliant, often uncomfortably close to a planned go-live.
 
@@ -32,7 +32,7 @@ Ask any vendor candidate specifically which countries in your rollout scope they
 
 ## Sequencing: Pilot Entity Selection Determines Whether Lessons Compound or Repeat
 
-The single highest-leverage decision in a multi-country rollout is which entity goes first. A well-chosen pilot entity — typically the headquarters entity or one with moderate complexity and strong internal change-management support — lets the vendor and internal team work through the inevitable early mistakes on a forgiving entity before replicating the approach at scale. A poorly chosen pilot — the most complex entity, or one with weak internal buy-in — front-loads maximum risk onto the phase of the project where the vendor's understanding of your specific business is at its lowest.
+The single highest-leverage decision in a multi-country rollout is which entity goes first. A well-chosen pilot entity - typically the headquarters entity or one with moderate complexity and strong internal change-management support - lets the vendor and internal team work through the inevitable early mistakes on a forgiving entity before replicating the approach at scale. A poorly chosen pilot - the most complex entity, or one with weak internal buy-in - front-loads maximum risk onto the phase of the project where the vendor's understanding of your specific business is at its lowest.
 
 Ask any vendor how they propose sequencing entities and why, and be skeptical of a vendor who defers this decision entirely to you without offering a reasoned recommendation based on their assessment of relative complexity across the entities in scope. A vendor who has run genuine multi-country rollouts before will have a clear point of view on this, informed by which patterns tend to surface problems early versus late.
 
@@ -50,15 +50,15 @@ Ask specifically how the vendor plans standup and escalation coverage across the
 
 ## Governance Structure: Who Actually Owns Cross-Entity Consistency
 
-Without a clearly defined governance structure, each country entity's local team will, understandably, push for local customization that serves their immediate needs, and left unchecked, this produces a system that's technically deployed everywhere but configured so differently in each entity that the cross-entity visibility and reporting consistency that justified the whole project never materializes. A vendor should propose, and help you establish, a clear escalation path for local customization requests — a defined core configuration that's consistent across all entities, and an explicit, governed process for any deviation, rather than allowing every entity's preference to become an ungoverned one-off.
+Without a clearly defined governance structure, each country entity's local team will, understandably, push for local customization that serves their immediate needs, and left unchecked, this produces a system that's technically deployed everywhere but configured so differently in each entity that the cross-entity visibility and reporting consistency that justified the whole project never materializes. A vendor should propose, and help you establish, a clear escalation path for local customization requests - a defined core configuration that's consistent across all entities, and an explicit, governed process for any deviation, rather than allowing every entity's preference to become an ungoverned one-off.
 
-Ask how the vendor has handled this tension on past multi-country projects specifically — what percentage of configuration ended up standardized versus locally customized, and what the governance process looked like for adjudicating disputes between local preference and global consistency.
+Ask how the vendor has handled this tension on past multi-country projects specifically - what percentage of configuration ended up standardized versus locally customized, and what the governance process looked like for adjudicating disputes between local preference and global consistency.
 
 ## Making the Final Call
 
 The right vendor for a multi-country rollout is the one who treats localization as substantive per-country legal research rather than a configuration checkbox, has a reasoned point of view on pilot entity sequencing, has genuinely planned for cross-border data residency requirements beyond generic GDPR language, and proposes concrete language and time zone coverage for each entity rather than a single global support model. A vendor's general international experience matters less than their specific experience in the exact countries your rollout touches.
 
-Manifera's Amsterdam-based project governance coordinates cross-entity consistency while our Ho Chi Minh City engineering team executes the technical build across time zones — see our [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model for how we structure multi-country engagements around genuine local coverage.
+Manifera's Amsterdam-based project governance coordinates cross-entity consistency while our Ho Chi Minh City engineering team executes the technical build across time zones - see our [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model for how we structure multi-country engagements around genuine local coverage.
 
 ## Frequently Asked Questions
 

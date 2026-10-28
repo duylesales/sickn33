@@ -1,4 +1,4 @@
-📋 Casper's contract intelligence platform, built with **Cursor**, had a Series B term sheet in hand — and technical diligence scheduled for the following month. Running an honest scorecard found three gaps his deck's growth numbers didn't account for. ⚖️
+📋 Casper's contract intelligence platform, built with **Cursor**, had a Series B term sheet in hand - and technical diligence scheduled for the following month. Running an honest scorecard found three gaps his deck's growth numbers didn't account for. ⚖️
 
 If your Series B diligence partner asks "can you prove this architecture supports the growth this deck claims," an unmodeled gap in data isolation, cost governance, or database headroom becomes a valuation and deal-term risk, not just an awkward conversation.
 
@@ -12,7 +12,7 @@ If your Series B diligence partner asks "can you prove this architecture support
 
 At **LaunchStudio**, we've been closing exactly this class of production engineering gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Casper's diligence process closed with zero material findings in all three areas addressed (€5,900 (Enterprise Hardening Package) — completed in 15 business days.). 🚀
+Casper's diligence process closed with zero material findings in all three areas addressed (€5,900 (Enterprise Hardening Package) - completed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-infrastructure-maturity-scorecard-series-b
 

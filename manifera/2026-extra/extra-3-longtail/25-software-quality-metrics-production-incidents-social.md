@@ -6,9 +6,9 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **Change failure rate:** — the percentage of deployments that result in a rollback, hotfix, or genuine incident.
-✅ **Mean time to recovery (MTTR):** — how quickly, in practice, the team actually detects and resolves an incident once it genuinely occurs.
-✅ **Code churn concentrated in specific modules:** — files that get modified repeatedly in quick succession, sprint after sprint, are a genuinely strong predictor of underlying design problems, more reliable than a static, once-off coverage snapshot.
+✅ **Change failure rate:** - the percentage of deployments that result in a rollback, hotfix, or genuine incident.
+✅ **Mean time to recovery (MTTR):** - how quickly, in practice, the team actually detects and resolves an incident once it genuinely occurs.
+✅ **Code churn concentrated in specific modules:** - files that get modified repeatedly in quick succession, sprint after sprint, are a genuinely strong predictor of underlying design problems, more reliable than a static, once-off coverage snapshot.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

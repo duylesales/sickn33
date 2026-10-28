@@ -96,7 +96,7 @@ Barcelona offers a high quality of life, a mild climate, the sea, mountains near
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Barcelona you will find few or no local vacancies there today. Use Spanish job portals, company career pages, BSC and university vacancy lists and the local tech community as primary sources. OnlyAIJobs is useful for comparing Barcelona with the Netherlands — where employers such as Sendcloud, Mollie, Accenture and Cegeka list AI roles — and as a method: in a metropolitan area where housing pushes people outward, searching by real commute is essential. Barcelona employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Barcelona you will find few or no local vacancies there today. Use Spanish job portals, company career pages, BSC and university vacancy lists and the local tech community as primary sources. OnlyAIJobs is useful for comparing Barcelona with the Netherlands - where employers such as Sendcloud, Mollie, Accenture and Cegeka list AI roles - and as a method: in a metropolitan area where housing pushes people outward, searching by real commute is essential. Barcelona employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Scale-Up Machine Learning in Practice
 
@@ -122,11 +122,11 @@ Barcelona is dense and relatively compact within its city limits, but the metrop
 
 ## Building a Network
 
-Barcelona has an active tech community with frequent meetups on data science, machine learning, Python and MLOps, as well as conferences and startup events. The Mobile World Congress and related events bring international visitors each year. Participating in these communities helps newcomers find roles, learn about companies and build friendships — important in a city where many international residents arrive without existing connections.
+Barcelona has an active tech community with frequent meetups on data science, machine learning, Python and MLOps, as well as conferences and startup events. The Mobile World Congress and related events bring international visitors each year. Participating in these communities helps newcomers find roles, learn about companies and build friendships - important in a city where many international residents arrive without existing connections.
 
 ## Research Careers at the BSC and Universities
 
-For research-oriented engineers, Barcelona offers a combination of large-scale computing and academic depth that is rare in Southern Europe. The BSC recruits research engineers, software engineers and scientists for projects in computer architecture, programming models, AI, life sciences and climate modelling, often funded by European programmes. Working at a supercomputing centre gives exposure to distributed systems, performance engineering and large datasets — skills that transfer directly to large-model training in industry.
+For research-oriented engineers, Barcelona offers a combination of large-scale computing and academic depth that is rare in Southern Europe. The BSC recruits research engineers, software engineers and scientists for projects in computer architecture, programming models, AI, life sciences and climate modelling, often funded by European programmes. Working at a supercomputing centre gives exposure to distributed systems, performance engineering and large datasets - skills that transfer directly to large-model training in industry.
 
 University research groups at UPC, UPF, UAB and the University of Barcelona offer PhD and postdoc positions, supported by Spanish and Catalan research funding and European grants. Catalonia has also used programmes to attract international research talent. As elsewhere, early-career research positions are often fixed-term; ask about funding horizons and career paths.
 
@@ -157,7 +157,7 @@ Barcelona suits engineers who value lifestyle, international community and scale
 
 An ML engineer working on delivery-time prediction at an Amsterdam logistics company is approached by a Barcelona delivery scale-up. The gross salary is lower than in Amsterdam, but the role includes ownership of dispatch optimisation for several markets and equity.
 
-She calculates net pay, including the potential application of the special tax regime for inbound workers, and compares rents in Barcelona neighbourhoods near the office with her Amsterdam costs. Housing turns out to be the biggest uncertainty, so she negotiates temporary accommodation for the first two months. She accepts the offer and starts Spanish lessons. After a year, she finds that the work is more intense than in Amsterdam but the scope much broader — and that the lifestyle compensates for the lower salary.
+She calculates net pay, including the potential application of the special tax regime for inbound workers, and compares rents in Barcelona neighbourhoods near the office with her Amsterdam costs. Housing turns out to be the biggest uncertainty, so she negotiates temporary accommodation for the first two months. She accepts the offer and starts Spanish lessons. After a year, she finds that the work is more intense than in Amsterdam but the scope much broader - and that the lifestyle compensates for the lower salary.
 
 ## Key Takeaways
 

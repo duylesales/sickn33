@@ -1,4 +1,4 @@
-🚨 Tim Roorda freelanced around Groningen building applications in Lovable and Cursor. His portfolio showcased 11 projects — all gorgeous UI screenshots. But he was consistently losing enterprise contracts to established agencies because corporate clients saw only prototype concepts with zero proof of production security, database pooling, or GDPR compliance. 😳
+🚨 Tim Roorda freelanced around Groningen building applications in Lovable and Cursor. His portfolio showcased 11 projects - all gorgeous UI screenshots. But he was consistently losing enterprise contracts to established agencies because corporate clients saw only prototype concepts with zero proof of production security, database pooling, or GDPR compliance. 😳
 
 Pretty UI screenshots prove you can prompt. A production portfolio proves you can ship software that survives the real world: 🧠
 

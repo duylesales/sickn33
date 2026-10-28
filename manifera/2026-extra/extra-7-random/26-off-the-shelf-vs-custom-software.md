@@ -20,7 +20,7 @@ target_persona: "CEO"
 }
 </script>
 
-Off-the-shelf versus custom software is usually framed as a binary choice, and the framing itself is the problem — the actually correct answer for a large share of companies is a configured middle ground neither pure option describes, and a CEO who only weighs the two extremes never considers it.
+Off-the-shelf versus custom software is usually framed as a binary choice, and the framing itself is the problem - the actually correct answer for a large share of companies is a configured middle ground neither pure option describes, and a CEO who only weighs the two extremes never considers it.
 
 **The Pain:** A CEO framing a software decision as "off-the-shelf versus custom" is implicitly choosing between a packaged product that won't perfectly fit and a fully bespoke build that costs multiples more, without considering that most off-the-shelf platforms today offer a configuration and extension layer substantial enough to close most of the gap between the two extremes at a fraction of full custom cost.
 
@@ -28,13 +28,13 @@ Off-the-shelf versus custom software is usually framed as a binary choice, and t
 
 ## The Configuration Layer Most Companies Underestimate
 
-Most mature off-the-shelf platforms in categories like CRM, ERP, and workflow management now ship with a genuine configuration and extension layer — custom fields, workflow rules, API-based extensions, and in many cases a scripting or low-code layer for building platform-specific logic — and a CEO evaluating the binary choice should investigate this layer specifically before assuming the packaged product's default behavior represents its actual ceiling.
+Most mature off-the-shelf platforms in categories like CRM, ERP, and workflow management now ship with a genuine configuration and extension layer - custom fields, workflow rules, API-based extensions, and in many cases a scripting or low-code layer for building platform-specific logic - and a CEO evaluating the binary choice should investigate this layer specifically before assuming the packaged product's default behavior represents its actual ceiling.
 
-The practical question isn't "does this off-the-shelf platform do exactly what we need out of the box" — very few do — it's "can this platform's configuration and extension layer be shaped to do what we need, and at what cost relative to a full custom build." For a meaningful share of business requirements, the answer is yes, and the configuration cost is a small fraction of what full custom development would cost, because the underlying platform is already handling the parts of the problem that aren't differentiating.
+The practical question isn't "does this off-the-shelf platform do exactly what we need out of the box" - very few do - it's "can this platform's configuration and extension layer be shaped to do what we need, and at what cost relative to a full custom build." For a meaningful share of business requirements, the answer is yes, and the configuration cost is a small fraction of what full custom development would cost, because the underlying platform is already handling the parts of the problem that aren't differentiating.
 
 The decision this actually reduces to, once the configuration layer is properly investigated, is the same differentiation test that applies to the custom-versus-buy question broadly: does the gap between the off-the-shelf platform's out-of-the-box behavior and the company's actual need reflect something genuinely differentiating that the configuration layer can't reach, or is it a gap the configuration layer can close. Most gaps, investigated honestly, turn out to be closeable through configuration; a smaller number genuinely require custom development layered on top of, or alongside, the configured platform.
 
-This produces a third category most binary framings miss entirely: a configured off-the-shelf platform with a targeted custom extension for the specific genuinely differentiating piece — capturing the cost efficiency of the packaged product for everything that isn't differentiating, while still building custom software for the piece that actually is. A CEO who investigates this middle ground before committing to either extreme routinely finds it's the actually correct answer, at a cost meaningfully below full custom and a capability level meaningfully above the packaged product's defaults.
+This produces a third category most binary framings miss entirely: a configured off-the-shelf platform with a targeted custom extension for the specific genuinely differentiating piece - capturing the cost efficiency of the packaged product for everything that isn't differentiating, while still building custom software for the piece that actually is. A CEO who investigates this middle ground before committing to either extreme routinely finds it's the actually correct answer, at a cost meaningfully below full custom and a capability level meaningfully above the packaged product's defaults.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -52,7 +52,7 @@ Platforma Handlowa Wrocław Sp. z o.o., a Wrocław-based retailer, had framed it
 Manifera's assessment found the platform's low-code extension layer could handle roughly 80% of the company's requirements through configuration, with only its proprietary demand-forecasting logic genuinely requiring custom development. The hybrid approach delivered the full capability at approximately 45% of the full custom build's projected cost.
 
 > *"We were choosing between two extremes that both felt wrong. Nobody had told us there was a real middle option where the platform did most of the work and we only had to build the one piece that was actually ours."*
-> — **CEO, Platforma Handlowa Wrocław Sp. z o.o., Poland**
+> - **CEO, Platforma Handlowa Wrocław Sp. z o.o., Poland**
 
 ## Binary Framing vs. Manifera's Configured-Platform-Plus-Extension Approach
 
@@ -76,7 +76,7 @@ A configured off-the-shelf platform with a targeted custom extension built speci
 
 ### (Scenario: CEO evaluating whether an off-the-shelf platform's limitations are fixable) How can a CEO tell if an off-the-shelf platform's gap is closeable through configuration?
 
-Investigate the platform's configuration and extension layer directly — custom fields, workflow rules, API extensions, and low-code capabilities — rather than assuming its default behavior is the ceiling.
+Investigate the platform's configuration and extension layer directly - custom fields, workflow rules, API extensions, and low-code capabilities - rather than assuming its default behavior is the ceiling.
 
 ### (Scenario: CEO trying to estimate savings from a hybrid approach) How much can a configured-platform-plus-extension approach save compared to a full custom build?
 
@@ -84,7 +84,7 @@ Typically 40-60% below the cost of a full custom build, since the underlying pla
 
 ### (Scenario: CEO trying to determine what genuinely needs custom development in a hybrid approach) In a hybrid approach, what should actually be custom-built?
 
-Only the piece that reflects genuine competitive differentiation the configuration layer can't reach — everything else should be handled through platform configuration.
+Only the piece that reflects genuine competitive differentiation the configuration layer can't reach - everything else should be handled through platform configuration.
 
 ### (Scenario: CEO who committed to a full custom build without investigating alternatives) What's the risk of skipping the configuration-layer investigation before committing to a full custom build?
 

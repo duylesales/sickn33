@@ -6,11 +6,11 @@
 ❌ **Centralized Decision-Making:** Every judgment call escalates back to one overloaded VP.
 
 **The Manifera Solution:**
-✅ **Specific Async Progress Docs:** Checkable claims, reviewable in minutes — not a live meeting to interpret.
+✅ **Specific Async Progress Docs:** Checkable claims, reviewable in minutes - not a live meeting to interpret.
 ✅ **Structural Quality Gates:** Automated coverage thresholds and architecture review catch drift without constant watching.
 ✅ **Empowered Local Tech Lead:** Ambiguity resolved on the ground, not escalated by default.
 
-Accountability that scales — without consuming your calendar. 🛡️
+Accountability that scales - without consuming your calendar. 🛡️
 
 👉 Read our full deep dive on remote development team beverwijk: https://www.manifera.com/blog/remote-development-team-beverwijk
 

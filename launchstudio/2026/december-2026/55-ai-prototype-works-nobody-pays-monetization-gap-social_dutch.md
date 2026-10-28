@@ -3,13 +3,13 @@
 "Iedereen vindt het geweldig. Niemand betaalt." Een van de meest verwarrende momenten voor AI-oprichters. Dit zijn de 4 ECHTE oorzaken: 🧠
 
 1️⃣ U heeft nooit daadwerkelijk een betaalmechanisme gebouwd (komt vaker voor dan u denkt!)
-2️⃣ Uw gratis versie biedt al "genoeg" waarde — geen reden om te upgraden
+2️⃣ Uw gratis versie biedt al "genoeg" waarde - geen reden om te upgraden
 3️⃣ De prijs sluit niet aan op de ervaren waarde (testen, niet gokken)
-4️⃣ De verkeerde koper — de gebruiker is dolenthousiast, maar beslist niet over het budget
+4️⃣ De verkeerde koper - de gebruiker is dolenthousiast, maar beslist niet over het budget
 
 De belangrijkste diagnosevraag: "Kan iemand op DIT moment technisch gezien geld overmaken in uw app?" Zo niet, dan is dat uw hele antwoord! 🎯
 
-🧪 Test betaalbereidheid vóórdat u codeert: een 'Fake Door' Upgrade-knop, een handmatig betaalverzoekje voor uw 3 grootste fans, of een wachtlijst met duidelijke prijs ("€15/maand vanaf volgende maand — doe je mee?"). Harde data, nul programmeerkosten.
+🧪 Test betaalbereidheid vóórdat u codeert: een 'Fake Door' Upgrade-knop, een handmatig betaalverzoekje voor uw 3 grootste fans, of een wachtlijst met duidelijke prijs ("€15/maand vanaf volgende maand - doe je mee?"). Harde data, nul programmeerkosten.
 
 Bij **LaunchStudio** lossen we Oorzaak 1 standaard op in elk Launch & Grow pakket. 🛡️
 

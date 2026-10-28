@@ -47,9 +47,9 @@ Een prototype dat voor één groep is gebouwd, dwingt hier zelden iets van af. I
 
 ## Toegangsbeheer over Meerdere Instellingen
 
-Als meerdere instellingen één platform gebruiken, is de kerneis strikte scheiding: elke instelling — en vaak elk project daarbinnen — ziet alleen haar eigen data. Onderzoekers kunnen lid zijn van meerdere projecten bij verschillende instellingen, met in elk een andere rol. Toegang moet op de server worden afgedwongen, bij voorkeur in de database met row level security gekoppeld aan het lidmaatschap van instelling en project.
+Als meerdere instellingen één platform gebruiken, is de kerneis strikte scheiding: elke instelling - en vaak elk project daarbinnen - ziet alleen haar eigen data. Onderzoekers kunnen lid zijn van meerdere projecten bij verschillende instellingen, met in elk een andere rol. Toegang moet op de server worden afgedwongen, bij voorkeur in de database met row level security gekoppeld aan het lidmaatschap van instelling en project.
 
-Instellingen geven ook de voorkeur aan hun eigen logins. Single sign-on via SAML of OpenID Connect — in België vaak via federaties zoals die van Belnet — is vaak een voorwaarde voor ingebruikname.
+Instellingen geven ook de voorkeur aan hun eigen logins. Single sign-on via SAML of OpenID Connect - in België vaak via federaties zoals die van Belnet - is vaak een voorwaarde voor ingebruikname.
 
 ## Reproduceerbaarheid en Versiebeheer
 
@@ -86,7 +86,7 @@ Academische SSO loopt meestal via SAML of OpenID Connect, vaak via nationale of 
 
 1. Kies een authenticatieaanbieder die federatie via SAML/OIDC ondersteunt (veel beheerde aanbieders doen dat).
 2. Registreer je dienst bij de betreffende federatie of rechtstreeks bij de identiteitsprovider van elke instelling.
-3. Koppel attributen — naam, e-mail, affiliatie, soms rol — aan je gebruikersmodel.
+3. Koppel attributen - naam, e-mail, affiliatie, soms rol - aan je gebruikersmodel.
 4. Ga om met gebruikers die bij meerdere instellingen horen of van instelling wisselen.
 5. Houd een alternatieve login voor externe samenwerkingspartners zonder institutioneel account.
 6. Deactiveer gebruikers automatisch als hun institutionele login niet meer werkt.
@@ -99,7 +99,7 @@ Voor onderzoekstools is reproduceerbaarheid een productie-eis. Tag elke release;
 
 ## Hostingkeuzes voor Academische Klanten
 
-Instellingen geven steeds vaker de voorkeur aan hosting in de EU, soms in specifieke landen, en af en toe aan on-premises of nationale onderzoeksclouds. Ontwerp de applicatie zo dat hij op standaardinfrastructuur kan draaien — containers, beheerde Postgres, S3-compatibele opslag — in plaats van af te hangen van één propriëtair platform. Die flexibiliteit kan de inkoop beslissen: een instelling met strikte eisen kan om een eigen deployment vragen.
+Instellingen geven steeds vaker de voorkeur aan hosting in de EU, soms in specifieke landen, en af en toe aan on-premises of nationale onderzoeksclouds. Ontwerp de applicatie zo dat hij op standaardinfrastructuur kan draaien - containers, beheerde Postgres, S3-compatibele opslag - in plaats van af te hangen van één propriëtair platform. Die flexibiliteit kan de inkoop beslissen: een instelling met strikte eisen kan om een eigen deployment vragen.
 
 ## Prijzen en Inkoop in de Academische Wereld
 
@@ -107,11 +107,11 @@ Academische inkoop heeft een eigen ritme: budgetten gekoppeld aan subsidies en b
 
 ## Verwachtingen rond Beveiliging van Universitaire IT
 
-IT- en beveiligingsteams van universiteiten vragen doorgaans naar authenticatie (SSO, MFA voor beheerders), versleuteling tijdens transport en in opslag, logging en monitoring, kwetsbaarheidsbeheer, back-up en herstel, melding van incidenten en datalocatie. Veel teams voeren ook eigen beveiligingsscans uit op de openbare endpoints van leveranciers. Stel een beknopt beveiligingsoverzicht op en los voor de eerste institutionele review duidelijke bevindingen op — ontbrekende headers, verouderde TLS-configuraties, blootgestelde beheerpaden.
+IT- en beveiligingsteams van universiteiten vragen doorgaans naar authenticatie (SSO, MFA voor beheerders), versleuteling tijdens transport en in opslag, logging en monitoring, kwetsbaarheidsbeheer, back-up en herstel, melding van incidenten en datalocatie. Veel teams voeren ook eigen beveiligingsscans uit op de openbare endpoints van leveranciers. Stel een beknopt beveiligingsoverzicht op en los voor de eerste institutionele review duidelijke bevindingen op - ontbrekende headers, verouderde TLS-configuraties, blootgestelde beheerpaden.
 
 ## Van Eén Lab naar Vele: Overwegingen bij Opschalen
 
-Naarmate meer instellingen aansluiten, kun je nieuwe eisen verwachten: configuratie per instelling, eigen rapportages, koppelingen met lokale systemen (reservering, financiën, identiteit) en support over tijdzones heen voor internationale consortia. Een architectuur die vanaf het begin tenants kent — elke tabel afgebakend tot een instelling, configuratie per tenant — maakt deze groei stapsgewijs in plaats van een herontwerp.
+Naarmate meer instellingen aansluiten, kun je nieuwe eisen verwachten: configuratie per instelling, eigen rapportages, koppelingen met lokale systemen (reservering, financiën, identiteit) en support over tijdzones heen voor internationale consortia. Een architectuur die vanaf het begin tenants kent - elke tabel afgebakend tot een instelling, configuratie per tenant - maakt deze groei stapsgewijs in plaats van een herontwerp.
 
 ## Omgaan met Gevoelige Onderzoeksdomeinen
 
@@ -123,7 +123,7 @@ Onderzoekers willen begrijpen hoe de tool werkt voordat ze zijn resultaten vertr
 
 ## Supportmodellen voor Academische Klanten
 
-Academische gebruikers werken vaak op onregelmatige tijden en in internationale samenwerkingen. Een praktisch supportmodel voor een kleine spin-off omvat een gedocumenteerd helpcentrum, een gedeelde supportinbox met doelen voor reactietijden, een statuspagina voor incidenten en vooraf gecommuniceerde onderhoudsvensters — bij voorkeur buiten periodes zoals subsidiedeadlines of conferentie-inzendingen, die je van je klanten kunt leren.
+Academische gebruikers werken vaak op onregelmatige tijden en in internationale samenwerkingen. Een praktisch supportmodel voor een kleine spin-off omvat een gedocumenteerd helpcentrum, een gedeelde supportinbox met doelen voor reactietijden, een statuspagina voor incidenten en vooraf gecommuniceerde onderhoudsvensters - bij voorkeur buiten periodes zoals subsidiedeadlines of conferentie-inzendingen, die je van je klanten kunt leren.
 
 ## Adoptie binnen Instellingen Meten
 
@@ -131,7 +131,7 @@ Volg het gebruik per instelling en per faciliteit: actieve gebruikers, reserveri
 
 ## Van Spin-Off naar Duurzaam Bedrijf
 
-Veel spin-offs beginnen met subsidiegeld en één pleitbezorger binnen de universiteit. Duurzaamheid vraagt betalende klanten buiten het oorspronkelijke lab, een robuuste operatie en een product dat werkt zonder dat de oprichter elke vraag beantwoordt. Productierijpheid — tenancy, SSO, documentatie, monitoring en duidelijke afspraken — maakt die overgang mogelijk en maakt van een succesvolle onderzoekstool een bedrijf waarop instellingen jarenlang kunnen bouwen.
+Veel spin-offs beginnen met subsidiegeld en één pleitbezorger binnen de universiteit. Duurzaamheid vraagt betalende klanten buiten het oorspronkelijke lab, een robuuste operatie en een product dat werkt zonder dat de oprichter elke vraag beantwoordt. Productierijpheid - tenancy, SSO, documentatie, monitoring en duidelijke afspraken - maakt die overgang mogelijk en maakt van een succesvolle onderzoekstool een bedrijf waarop instellingen jarenlang kunnen bouwen.
 
 ## Een Startchecklist voor Leuvense Oprichters
 
@@ -139,7 +139,7 @@ Vóór het tekenen met een tweede instelling: licentie of overdracht van IE gere
 
 ## Waarom Het Ertoe Doet voor het Onderzoek Zelf
 
-Productierijpheid is voor een onderzoeksspin-off niet alleen een commerciële kwestie. Als instellingen het platform vertrouwen — de scheiding van data, de reproduceerbaarheid, de uptime tijdens kritieke experimenten — gebruiken meer onderzoekers het, stroomt er meer data doorheen en groeit de wetenschappelijke waarde van de tool. Het engineeringwerk dat de inkoop makkelijker maakt, is hetzelfde werk dat resultaten betrouwbaarder maakt. Voor een oprichter die in het lab begon, is die samenhang tussen goede wetenschap en goede software vaak de overtuigendste reden om productie vanaf de allereerste externe klant serieus te nemen.
+Productierijpheid is voor een onderzoeksspin-off niet alleen een commerciële kwestie. Als instellingen het platform vertrouwen - de scheiding van data, de reproduceerbaarheid, de uptime tijdens kritieke experimenten - gebruiken meer onderzoekers het, stroomt er meer data doorheen en groeit de wetenschappelijke waarde van de tool. Het engineeringwerk dat de inkoop makkelijker maakt, is hetzelfde werk dat resultaten betrouwbaarder maakt. Voor een oprichter die in het lab begon, is die samenhang tussen goede wetenschap en goede software vaak de overtuigendste reden om productie vanaf de allereerste externe klant serieus te nemen.
 
 ## Waar LaunchStudio Past
 
@@ -160,9 +160,9 @@ In elf werkdagen voerden de engineers van LaunchStudio tenancy per instelling en
 **Resultaat:** Alle drie de instituten tekenden binnen twee maanden. LabAgenda beheert nu reserveringen voor 41 faciliteiten, en de beschrijving van de dataverwerking is bij elke volgende inkoop hergebruikt.
 
 > *"In het lab was vertrouwen vanzelfsprekend, omdat we elkaar allemaal kenden. Het verkopen betekende dat vertrouwen opschrijven en afdwingen in de code."*
-> — **Pieter-Jan Maes, Oprichter, LabAgenda (Leuven)**
+> - **Pieter-Jan Maes, Oprichter, LabAgenda (Leuven)**
 
-**Kosten & Tijdlijn:** € 3.200 (Launch Ready-pakket met tenancy, SSO, datamigratie, logging en releasepipeline) — afgerond in 11 werkdagen.
+**Kosten & Tijdlijn:** € 3.200 (Launch Ready-pakket met tenancy, SSO, datamigratie, logging en releasepipeline) - afgerond in 11 werkdagen.
 
 ## Veelgestelde Vragen
 

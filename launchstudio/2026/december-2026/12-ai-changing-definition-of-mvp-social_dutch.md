@@ -15,9 +15,9 @@ De nieuwe MVP-checklist: ✅
 ✅ Echte hosting op een live domein met SSL
 ✅ Echte beveiliging, niet alleen een gepolijste UI
 
-Bij **LaunchStudio** dichten we exact deze kloof — zonder ook maar één knop van uw ontwerp aan te passen. Ondersteund door Manifera's 120+ engineers en 11+ jaar ervaring. 🛡️🚀
+Bij **LaunchStudio** dichten we exact deze kloof - zonder ook maar één knop van uw ontwerp aan te passen. Ondersteund door Manifera's 120+ engineers en 11+ jaar ervaring. 🛡️🚀
 
-🧪 5-seconden test: ververs uw browsertabblad hard. Is de data weg of bent u uitgelogd? Dat is geen bug — dat is uw "MVP" die u vertelt dat er nog geen echte database onder zit.
+🧪 5-seconden test: ververs uw browsertabblad hard. Is de data weg of bent u uitgelogd? Dat is geen bug - dat is uw "MVP" die u vertelt dat er nog geen echte database onder zit.
 
 👉 Lees hoe AI de definitie van een MVP heeft veranderd: https://launchstudio.eu/nl/blog/ai-changing-definition-of-mvp
 

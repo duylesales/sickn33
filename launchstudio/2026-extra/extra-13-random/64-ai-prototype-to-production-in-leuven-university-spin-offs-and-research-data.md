@@ -47,9 +47,9 @@ A prototype built for one group rarely enforces any of this. Everyone in the lab
 
 ## Multi-Institution Access Control
 
-When several institutions use one platform, the core requirement is strict separation: each institution — and often each project within it — sees only its own data. Researchers may belong to several projects at different institutions, with different roles in each. Access must be enforced on the server, ideally in the database with row-level security keyed to institution and project membership.
+When several institutions use one platform, the core requirement is strict separation: each institution - and often each project within it - sees only its own data. Researchers may belong to several projects at different institutions, with different roles in each. Access must be enforced on the server, ideally in the database with row-level security keyed to institution and project membership.
 
-Institutions also prefer their own logins. Single sign-on through SAML or OpenID Connect — in Belgium frequently via federations such as Belnet's — is often a condition of adoption.
+Institutions also prefer their own logins. Single sign-on through SAML or OpenID Connect - in Belgium frequently via federations such as Belnet's - is often a condition of adoption.
 
 ## Reproducibility and Versioning
 
@@ -86,7 +86,7 @@ Academic SSO usually runs through SAML or OpenID Connect, often via national or 
 
 1. Choose an auth provider that supports SAML/OIDC federation (many managed providers do).
 2. Register your service with the relevant federation or directly with each institution's identity provider.
-3. Map attributes — name, email, affiliation, sometimes role — to your user model.
+3. Map attributes - name, email, affiliation, sometimes role - to your user model.
 4. Handle users who belong to several institutions or change institutions.
 5. Keep a fallback login for external collaborators without institutional accounts.
 6. Deactivate users automatically when their institutional login stops working.
@@ -99,7 +99,7 @@ For research tools, reproducibility is a production requirement. Tag every relea
 
 ## Hosting Choices for Academic Customers
 
-Institutions increasingly prefer EU hosting, sometimes specific countries, and occasionally on-premises or national research cloud infrastructure. Design the application so it can run on standard infrastructure — containers, managed Postgres, S3-compatible storage — rather than depending on a single proprietary platform. This flexibility can decide procurement: an institution with strict requirements may ask for a dedicated deployment.
+Institutions increasingly prefer EU hosting, sometimes specific countries, and occasionally on-premises or national research cloud infrastructure. Design the application so it can run on standard infrastructure - containers, managed Postgres, S3-compatible storage - rather than depending on a single proprietary platform. This flexibility can decide procurement: an institution with strict requirements may ask for a dedicated deployment.
 
 ## Pricing and Procurement in Academia
 
@@ -107,11 +107,11 @@ Academic procurement has its own rhythms: budgets tied to grants and fiscal year
 
 ## Security Expectations From University IT
 
-University IT and security teams typically ask about authentication (SSO, MFA for admins), encryption in transit and at rest, logging and monitoring, vulnerability management, backup and recovery, incident notification and data location. Many also run their own security scans against suppliers' public endpoints. Prepare a concise security overview and fix obvious findings — missing headers, outdated TLS configurations, exposed admin paths — before the first institutional review.
+University IT and security teams typically ask about authentication (SSO, MFA for admins), encryption in transit and at rest, logging and monitoring, vulnerability management, backup and recovery, incident notification and data location. Many also run their own security scans against suppliers' public endpoints. Prepare a concise security overview and fix obvious findings - missing headers, outdated TLS configurations, exposed admin paths - before the first institutional review.
 
 ## From One Lab to Many: Scaling Considerations
 
-As more institutions join, expect new demands: per-institution configuration, custom reports, integration with local systems (booking, finance, identity), and support across time zones for international consortia. A tenant-aware architecture from the start — every table scoped to an institution, configuration per tenant — makes this growth incremental rather than a redesign.
+As more institutions join, expect new demands: per-institution configuration, custom reports, integration with local systems (booking, finance, identity), and support across time zones for international consortia. A tenant-aware architecture from the start - every table scoped to an institution, configuration per tenant - makes this growth incremental rather than a redesign.
 
 ## Handling Sensitive Research Domains
 
@@ -123,7 +123,7 @@ Research users want to understand how the tool works before trusting its results
 
 ## Support Models for Academic Customers
 
-Academic users often work irregular hours and in international collaborations. A practical support model for a small spin-off includes a documented help centre, a shared support inbox with response-time targets, a status page for incidents and scheduled maintenance windows communicated in advance — ideally outside periods such as grant deadlines or conference submissions that you can learn from your customers.
+Academic users often work irregular hours and in international collaborations. A practical support model for a small spin-off includes a documented help centre, a shared support inbox with response-time targets, a status page for incidents and scheduled maintenance windows communicated in advance - ideally outside periods such as grant deadlines or conference submissions that you can learn from your customers.
 
 ## Measuring Adoption Within Institutions
 
@@ -131,7 +131,7 @@ Track usage per institution and per facility: active users, bookings or analyses
 
 ## From Spin-Off to Sustainable Company
 
-Many spin-offs begin with grant funding and a single champion inside the university. Sustainability requires paying customers beyond the original lab, robust operations and a product that works without its founder answering every question. Production readiness — tenancy, SSO, documentation, monitoring and clear agreements — is what makes that transition possible, turning a successful research tool into a company that institutions can depend on for years.
+Many spin-offs begin with grant funding and a single champion inside the university. Sustainability requires paying customers beyond the original lab, robust operations and a product that works without its founder answering every question. Production readiness - tenancy, SSO, documentation, monitoring and clear agreements - is what makes that transition possible, turning a successful research tool into a company that institutions can depend on for years.
 
 ## A Starting Checklist for Leuven Founders
 
@@ -139,7 +139,7 @@ Before signing a second institution: IP licence or assignment settled with the t
 
 ## Why It Matters for the Research Itself
 
-Production readiness is not only a commercial concern for a research spin-off. When institutions trust the platform — its data separation, its reproducibility, its uptime during critical experiments — more researchers use it, more data flows through it and the scientific value of the tool grows. The engineering work that makes procurement easier is the same work that makes results more reliable. For a founder who started in the lab, that alignment between good science and good software is often the most persuasive reason to take production seriously from the very first external customer onwards.
+Production readiness is not only a commercial concern for a research spin-off. When institutions trust the platform - its data separation, its reproducibility, its uptime during critical experiments - more researchers use it, more data flows through it and the scientific value of the tool grows. The engineering work that makes procurement easier is the same work that makes results more reliable. For a founder who started in the lab, that alignment between good science and good software is often the most persuasive reason to take production seriously from the very first external customer onwards.
 
 ## Where LaunchStudio Fits
 
@@ -160,9 +160,9 @@ Over eleven business days, LaunchStudio's engineers introduced institution and f
 **Result:** All three institutes signed within two months. LabAgenda now manages bookings for 41 facilities, and its data-handling description has been reused in every subsequent procurement.
 
 > *"In the lab, trust was implicit because we all knew each other. Selling it meant writing that trust down and enforcing it in the code."*
-> — **Pieter-Jan Maes, Founder, LabAgenda (Leuven)**
+> - **Pieter-Jan Maes, Founder, LabAgenda (Leuven)**
 
-**Cost & Timeline:** €3,200 (Launch Ready package with tenancy, SSO, data migration, logging and release pipeline) — completed in 11 business days.
+**Cost & Timeline:** €3,200 (Launch Ready package with tenancy, SSO, data migration, logging and release pipeline) - completed in 11 business days.
 
 ## Frequently Asked Questions
 

@@ -14,7 +14,7 @@ Strak, minimalistisch design en digitale toegankelijkheid botsen regelmatig, ter
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het ontwikkelen van toegankelijke systemen voor semi-overheden en enterprises, nemen we deze audit standaard mee in elk hardeningtraject. ♿
 
-Het resultaat: contrastverhoudingen hersteld, toetsenbordinteracties herbouwd en focusstijlen geactiveerd binnen een week — de partneraudit werd direct behaald. 🚀
+Het resultaat: contrastverhoudingen hersteld, toetsenbordinteracties herbouwd en focusstijlen geactiveerd binnen een week - de partneraudit werd direct behaald. 🚀
 
 👉 Gebruik onze prijscalculator om direct te zien wat een toegankelijkheidsaudit kost bij uw lancering: https://launchstudio.eu/nl/blog/accessibility-what-eu-founders-need-at-launch
 

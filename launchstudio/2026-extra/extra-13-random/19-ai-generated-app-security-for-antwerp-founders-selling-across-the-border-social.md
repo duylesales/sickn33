@@ -7,7 +7,7 @@ Checkout offered only cards, so Dutch studios lost bookings to customers expecti
 ❌ Studio separation only in the interface
 ❌ US hosting and a single-language privacy notice
 
-✅ Mollie with Bancontact, iDEAL and cards, confirmed through verified webhooks — past mismatches reconciled
+✅ Mollie with Bancontact, iDEAL and cards, confirmed through verified webhooks - past mismatches reconciled
 ✅ Studio-level data separation enforced in the database
 ✅ Escaped email templates and validation that still accepts accented names
 ✅ EU-hosted database and email, plus a processor list for privacy notices in Dutch, French and English

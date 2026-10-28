@@ -12,7 +12,7 @@ Target Persona: SaaS Founder Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Development Roadmap: The First 90 Days After Launch",
-  "description": "A realistic 90-day AI development roadmap for founders whose AI-built app has just launched: what to watch in weeks 1–2, what to fix in month one, what to build in month two, and what to put in place by month three — with budget and time guidance.",
+  "description": "A realistic 90-day AI development roadmap for founders whose AI-built app has just launched: what to watch in weeks 1–2, what to fix in month one, what to build in month two, and what to put in place by month three - with budget and time guidance.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-28",
@@ -35,7 +35,7 @@ The first two weeks are for observation. Real users will use your product in way
 - Support messages, tagged by theme.
 
 **What to do:**
-- Fix critical bugs immediately — anything that blocks signup, payment or the core action, or exposes data.
+- Fix critical bugs immediately - anything that blocks signup, payment or the core action, or exposes data.
 - Keep a list of everything else. Do not fix it yet.
 - Talk to at least five users.
 
@@ -56,12 +56,12 @@ This month is unglamorous and disproportionately valuable. A stable product reta
 
 ## Days 31–60: Build Deliberately
 
-Now build — but with a process that protects what works.
+Now build - but with a process that protects what works.
 
 - **Choose features from evidence.** Prioritise what the most engaged users ask for and what the funnel data shows is missing, not what the loudest message requests.
 - **One significant feature at a time.** Build it with your AI tool, test it on staging, release it (ideally behind a feature flag), watch the data, then move on.
 - **Protect critical flows.** Keep automated tests on signup, login, payment and the core action, and run them before every release. AI tools regenerate code readily; tests catch the regressions.
-- **Review security-relevant changes.** Anything that touches access control, payments or data deserves a second look — yours with a checklist, or an engineer's.
+- **Review security-relevant changes.** Anything that touches access control, payments or data deserves a second look - yours with a checklist, or an engineer's.
 
 ## Days 61–90: Prepare for Growth
 
@@ -88,7 +88,7 @@ LaunchStudio's Launch Ready package includes 48 hours of post-launch support for
 
 ## Instrumentation to Set Up on Day One
 
-An AI development roadmap for the first 90 days only works if you can see what is happening. Before launch — or on day one at the latest — set up:
+An AI development roadmap for the first 90 days only works if you can see what is happening. Before launch - or on day one at the latest - set up:
 
 | Signal | Tool type | What it tells you |
 | --- | --- | --- |
@@ -105,11 +105,11 @@ Keep one short weekly summary of these signals. It becomes the evidence behind e
 
 ## Defining Activation for Your Product
 
-"Activation" is the moment a new user gets real value — and it is the most useful early metric. Define it concretely: for a clothing-swap subscription, "listed a first item"; for a scheduling tool, "created and shared a first schedule"; for an invoicing app, "sent a first invoice." Measure the share of signups who reach it within a week. Improving activation in the first 90 days usually does more for growth than any new feature, because it makes existing acquisition count.
+"Activation" is the moment a new user gets real value - and it is the most useful early metric. Define it concretely: for a clothing-swap subscription, "listed a first item"; for a scheduling tool, "created and shared a first schedule"; for an invoicing app, "sent a first invoice." Measure the share of signups who reach it within a week. Improving activation in the first 90 days usually does more for growth than any new feature, because it makes existing acquisition count.
 
 ## Running Weekly User Conversations
 
-Talk to users every week in the first month and regularly after. Useful questions: What were you trying to do when you signed up? What almost stopped you? What did you expect to find that wasn't there? What would you tell a friend about it? Record answers in a shared document with dates. Patterns across five to ten conversations often point directly at the most valuable next improvement — and sometimes reveal production problems (emails not arriving, confusing errors) that monitoring missed.
+Talk to users every week in the first month and regularly after. Useful questions: What were you trying to do when you signed up? What almost stopped you? What did you expect to find that wasn't there? What would you tell a friend about it? Record answers in a shared document with dates. Patterns across five to ten conversations often point directly at the most valuable next improvement - and sometimes reveal production problems (emails not arriving, confusing errors) that monitoring missed.
 
 ## Prioritising the Backlog After Launch
 
@@ -117,19 +117,19 @@ By week three, the backlog will be long: bugs, requests, ideas, postponed items.
 
 ## Release Cadence That Balances Speed and Stability
 
-In the first 90 days, a steady cadence works better than bursts: for example, small releases twice a week, each through staging, with larger changes behind feature flags. Avoid releasing on Friday afternoons or before your own absences. Write a one-line changelog for each release — useful for support, for users and for tracing the cause when something goes wrong.
+In the first 90 days, a steady cadence works better than bursts: for example, small releases twice a week, each through staging, with larger changes behind feature flags. Avoid releasing on Friday afternoons or before your own absences. Write a one-line changelog for each release - useful for support, for users and for tracing the cause when something goes wrong.
 
 ## Budget Checkpoints
 
-Review costs at day 30, 60 and 90: infrastructure and service fees per active user, AI or API costs if applicable, payment fees, and time spent on support. Compare with revenue per user. If costs per user are rising, investigate before scaling acquisition — a leaky cost structure grows with every new customer.
+Review costs at day 30, 60 and 90: infrastructure and service fees per active user, AI or API costs if applicable, payment fees, and time spent on support. Compare with revenue per user. If costs per user are rising, investigate before scaling acquisition - a leaky cost structure grows with every new customer.
 
 ## The Day-90 Review
 
-At day 90, hold a short review — alone, with a co-founder or with an advisor — covering: what the data says about activation, retention and usage; which assumptions were confirmed or wrong; the state of reliability and security (incidents, alerts, open risks); costs per user; and the top three priorities for the next quarter. Write it down in a page or two. This document is valuable for investors, future hires and your own clarity about what the product has become.
+At day 90, hold a short review - alone, with a co-founder or with an advisor - covering: what the data says about activation, retention and usage; which assumptions were confirmed or wrong; the state of reliability and security (incidents, alerts, open risks); costs per user; and the top three priorities for the next quarter. Write it down in a page or two. This document is valuable for investors, future hires and your own clarity about what the product has become.
 
 ## When to Bring in Help During the 90 Days
 
-Some moments justify external help even in a lean first quarter: a security concern raised by a user, a performance problem at a growth moment, a payment issue affecting revenue, or a large customer requesting documentation. Knowing in advance whom you would call — and having your code, accounts and documentation ready for them — turns these moments from crises into routine requests.
+Some moments justify external help even in a lean first quarter: a security concern raised by a user, a performance problem at a growth moment, a payment issue affecting revenue, or a large customer requesting documentation. Knowing in advance whom you would call - and having your code, accounts and documentation ready for them - turns these moments from crises into routine requests.
 
 ## Handling the First Incident Calmly
 
@@ -137,11 +137,11 @@ Most products have their first real incident within 90 days: a payment integrati
 
 ## Keeping AI-Assisted Development Safe After Launch
 
-Many founders keep building with Lovable, Bolt or Cursor after launch. Protect the production baseline: work on branches, keep critical-flow tests running in CI, review diffs for unintended changes, never let the AI tool touch production data directly and re-run the two-account test after significant changes. The speed of AI-assisted development is an asset in the first 90 days — as long as it passes through the same gates as everything else.
+Many founders keep building with Lovable, Bolt or Cursor after launch. Protect the production baseline: work on branches, keep critical-flow tests running in CI, review diffs for unintended changes, never let the AI tool touch production data directly and re-run the two-account test after significant changes. The speed of AI-assisted development is an asset in the first 90 days - as long as it passes through the same gates as everything else.
 
 ## A Simple Weekly Rhythm
 
-For solo founders, a weekly rhythm keeps the roadmap on track without overhead: Monday, review the signals summary and support themes; Tuesday to Thursday, build and release in small steps; Friday, talk to users, update the backlog and write three lines on what was learned. Repeating this for thirteen weeks produces a remarkable amount of progress — and a clear record of why the product evolved the way it did.
+For solo founders, a weekly rhythm keeps the roadmap on track without overhead: Monday, review the signals summary and support themes; Tuesday to Thursday, build and release in small steps; Friday, talk to users, update the backlog and write three lines on what was learned. Repeating this for thirteen weeks produces a remarkable amount of progress - and a clear record of why the product evolved the way it did.
 
 ## What Success Looks Like at Day 90
 
@@ -149,7 +149,7 @@ A successful first quarter is not measured only in users. It looks like stable o
 
 ## The Roadmap in One Sentence
 
-Watch before you build, stabilise before you expand, build one thing at a time with evidence, and end the quarter with a written review — that is the whole first-90-days roadmap, and it works whether your product was built by hand or with AI.
+Watch before you build, stabilise before you expand, build one thing at a time with evidence, and end the quarter with a written review - that is the whole first-90-days roadmap, and it works whether your product was built by hand or with AI.
 
 ## The Team Behind the Roadmap
 
@@ -168,9 +168,9 @@ Carmen followed the roadmap. In the first two weeks she resisted building the "w
 **Result:** After ninety days, Kledingruil had 610 paying members, monthly churn under 4% and no data or payment incidents. Carmen entered her second quarter with a roadmap based on data rather than guesses.
 
 > *"The hardest part of the first two weeks was not building. It was also the most useful thing I did."*
-> — **Carmen Vidal, Founder, Kledingruil (Amsterdam)**
+> - **Carmen Vidal, Founder, Kledingruil (Amsterdam)**
 
-**Cost & Timeline:** €2,500 (Launch & Grow package for launch, plus two small post-launch fixes within managed hosting) — launch in 10 business days, followed by €49/month managed hosting through the first 90 days.
+**Cost & Timeline:** €2,500 (Launch & Grow package for launch, plus two small post-launch fixes within managed hosting) - launch in 10 business days, followed by €49/month managed hosting through the first 90 days.
 
 ## Frequently Asked Questions
 

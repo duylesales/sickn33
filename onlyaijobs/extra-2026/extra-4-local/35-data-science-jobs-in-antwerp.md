@@ -42,7 +42,7 @@ Content Format: Local Guide
 }
 </script>
 
-Antwerp is Belgium's second-largest city and home to one of Europe's largest ports. Along the Scheldt river, container terminals, chemical plants, logistics centres and energy infrastructure form one of the continent's most important industrial and logistics hubs. The city also hosts the world's leading diamond trading centre, a vibrant fashion and design scene and a growing digital ecosystem. For experienced data professionals, data science jobs in Antwerp combine large-scale industrial and logistics problems with a lively, compact city — and the Dutch border is less than an hour away. This guide maps the opportunities and explains what to consider.
+Antwerp is Belgium's second-largest city and home to one of Europe's largest ports. Along the Scheldt river, container terminals, chemical plants, logistics centres and energy infrastructure form one of the continent's most important industrial and logistics hubs. The city also hosts the world's leading diamond trading centre, a vibrant fashion and design scene and a growing digital ecosystem. For experienced data professionals, data science jobs in Antwerp combine large-scale industrial and logistics problems with a lively, compact city - and the Dutch border is less than an hour away. This guide maps the opportunities and explains what to consider.
 
 ## The Port of Antwerp-Bruges
 
@@ -94,7 +94,7 @@ Dutch (Flemish) is the official language in Antwerp and the language of most loc
 
 ## Cross-Border Opportunities
 
-Antwerp is close to the Netherlands: Breda is about 45 minutes away, and Rotterdam about an hour. Some professionals live in Antwerp and work in the southern Netherlands or vice versa. Cross-border work involves tax and social security questions, which are governed by bilateral agreements and EU rules; check them carefully. For job seekers, this proximity doubles the potential market — something to use when searching by distance rather than by country.
+Antwerp is close to the Netherlands: Breda is about 45 minutes away, and Rotterdam about an hour. Some professionals live in Antwerp and work in the southern Netherlands or vice versa. Cross-border work involves tax and social security questions, which are governed by bilateral agreements and EU rules; check them carefully. For job seekers, this proximity doubles the potential market - something to use when searching by distance rather than by country.
 
 ## Belgian Employment Conditions
 
@@ -104,7 +104,7 @@ Belgian salaries are paid monthly, with holiday pay and often a thirteenth month
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands. For data science jobs in Antwerp, you will find few or no Belgian vacancies there today, so use Belgian job portals, company career pages and university networks as primary sources. But because Antwerp is so close to the border, OnlyAIJobs is directly useful for the Dutch side of your search: set your home in Antwerp or the southern Netherlands and see which AI and data roles fall within your commuting radius — for example in the Rotterdam region, including Capelle aan den IJssel, or further into Brabant. Employers listing on the platform include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies and Rexel. Antwerp employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands. For data science jobs in Antwerp, you will find few or no Belgian vacancies there today, so use Belgian job portals, company career pages and university networks as primary sources. But because Antwerp is so close to the border, OnlyAIJobs is directly useful for the Dutch side of your search: set your home in Antwerp or the southern Netherlands and see which AI and data roles fall within your commuting radius - for example in the Rotterdam region, including Capelle aan den IJssel, or further into Brabant. Employers listing on the platform include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies and Rexel. Antwerp employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Industrial Data Science: What It Takes
 

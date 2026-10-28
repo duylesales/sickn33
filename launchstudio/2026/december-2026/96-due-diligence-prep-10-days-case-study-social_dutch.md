@@ -12,7 +12,7 @@ Een technische due diligence audit vergeeft geen slordigheden. Eén gelekte sleu
 
 Bij LaunchStudio bereiden we AI-startups turn-key voor op veeleisende investeerders-audits. 🛡️
 
-De audit slaagde vlekkeloos — Camille sloot haar financiering van € 600.000 succesvol af. (€ 3.600 (Due Diligence Prep) — 10 werkdagen.) 🚀
+De audit slaagde vlekkeloos - Camille sloot haar financiering van € 600.000 succesvol af. (€ 3.600 (Due Diligence Prep) - 10 werkdagen.) 🚀
 
 👉 Ontdek het 10-dagen audit stappenplan: https://launchstudio.eu/nl/blog/due-diligence-prep-10-days-case-study
 

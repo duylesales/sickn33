@@ -12,7 +12,7 @@ At **Manifera**, our **Hybrid Hub** provides absolute transparency:
 🇻🇳 Direct, Tier-1 execution from our elite **Autonomous Pods** in **Vietnam**.
 
 ✅ Get enterprise-grade architecture at mathematically optimized OpEx. ⚡
-✅ Zero secret outsourcing—you interact with your dedicated Tech Lead daily. 🗣️
+✅ Zero secret outsourcing - you interact with your dedicated Tech Lead daily. 🗣️
 
 Stop paying the "Middleman Tax." Invest in true architectural velocity! 🛡️🚀
 👉 The CTO's guide to auditing Singaporean tech agencies: https://www.manifera.com/blog/mobile-app-development-company-singapore

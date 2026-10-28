@@ -1,4 +1,4 @@
-🔥 Nora built a prototype using **Cursor** — nora, a startup founder, used **cursor** to build a virtual design assistant prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Nora built a prototype using **Cursor** - nora, a startup founder, used **cursor** to build a virtual design assistant prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Nora's application achieved production readiness: Nora successfully launched her first product with confidence in its production security, allowing her to focus entirely on marketing and customer acquisition instead of infrastructure firefighting. (€1,900 (Solo Launch Package) — production-ready and deployed in 6 business days.). 🚀
+Nora's application achieved production readiness: Nora successfully launched her first product with confidence in its production security, allowing her to focus entirely on marketing and customer acquisition instead of infrastructure firefighting. (€1,900 (Solo Launch Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/solo-founder-ai-tech-stack-2026
 

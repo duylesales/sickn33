@@ -1,6 +1,6 @@
-🎬 Samuel, een fotograaf, bouwde een AI-fotoverbeteraar met **Cursor** — maar gebruikers verlieten de app tijdens de 5 seconden wachttijd omdat het voorbeeldscherm statisch bleef en geen enkel signaal van activiteit toonde. 🖼️
+🎬 Samuel, een fotograaf, bouwde een AI-fotoverbeteraar met **Cursor** - maar gebruikers verlieten de app tijdens de 5 seconden wachttijd omdat het voorbeeldscherm statisch bleef en geen enkel signaal van activiteit toonde. 🖼️
 
-Een blanco spinner vertelt de gebruiker niets — en na enkele seconden stilte denkt het brein: "is het vastgelopen?" 🧠
+Een blanco spinner vertelt de gebruiker niets - en na enkele seconden stilte denkt het brein: "is het vastgelopen?" 🧠
 
 ❌ Een statisch, onveranderlijk scherm tijdens een AI-generatie zonder enige feedback
 ❌ Gebruikers die de pagina verversen, tokens verspillen en dubbele database-writes triggeren
@@ -12,7 +12,7 @@ Een blanco spinner vertelt de gebruiker niets — en na enkele seconden stilte d
 
 Bij **LaunchStudio** bouwen we al meer dan een decennium latency-gevoelige enterprise-interfaces via Manifera voor klanten zoals Vodafone en TNO. 🛡️
 
-Voor Samuel daalde het vroegtijdig verlaten van de app met 75% omdat gebruikers direct zagen dat het systeem actief werkte. (€950 (UX Loading Optimization Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Voor Samuel daalde het vroegtijdig verlaten van de app met 75% omdat gebruikers direct zagen dat het systeem actief werkte. (€950 (UX Loading Optimization Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek waarom AI-laadstatussen het verschil maken: https://launchstudio.eu/nl/blog/why-ai-loading-states-matter-for-retention
 

@@ -6,7 +6,7 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **Inventory consistency under concurrent orders.:** Two different customers buying the very last unit of a product simultaneously is a classic race condition that, unhandled, results in overselling — a problem invisible at low traffic and guaranteed to surface at peak traffic, when it's most damaging to customer trust.
+✅ **Inventory consistency under concurrent orders.:** Two different customers buying the very last unit of a product simultaneously is a classic race condition that, unhandled, results in overselling - a problem invisible at low traffic and guaranteed to surface at peak traffic, when it's most damaging to customer trust.
 ✅ **Checkout flow database locks.:** A checkout process that holds database locks longer than strictly necessary creates a real bottleneck that compounds quickly under concurrent load, turning a minor inefficiency at normal traffic into a queue of failed transactions during a spike.
 ✅ **Database read/write contention.:** Product catalog browsing (reads) and order processing (writes) directly competing for the exact same database resources under peak load, without read replicas or caching to separate the two, degrades both simultaneously exactly when performance matters most.
 

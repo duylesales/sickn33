@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building an AI Community Platform? AI Generated App Security for User Content",
-  "description": "Community platforms built with AI tools let users post, upload and message — which brings abuse, illegal content, harassment and data leaks. This article covers the AI generated app security and moderation basics a community needs before it grows, including DSA notice-and-action.",
+  "description": "Community platforms built with AI tools let users post, upload and message - which brings abuse, illegal content, harassment and data leaks. This article covers the AI generated app security and moderation basics a community needs before it grows, including DSA notice-and-action.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-06",
@@ -39,25 +39,25 @@ AI-generated community apps typically implement all of these features as plain c
 
 **Safe rendering.** User text must be escaped or sanitised before display, so a post cannot run scripts in other members' browsers. Rich text and Markdown need a strict allow-list.
 
-**Upload controls.** Limit size and file types, check the actual content type rather than the file name, store uploads privately with signed links where appropriate, and strip location metadata from photos — members often do not realise their photos reveal where they live.
+**Upload controls.** Limit size and file types, check the actual content type rather than the file name, store uploads privately with signed links where appropriate, and strip location metadata from photos - members often do not realise their photos reveal where they live.
 
 **Rate limits.** Limit how often an account can post, message and sign up from the same address. Most spam waves are stopped by sensible rate limits alone.
 
 **Access control for private spaces.** Private groups and direct messages must be enforced in the database, so members cannot read conversations they are not part of by changing an ID.
 
-**Account signals.** New accounts posting links, many accounts from one IP, accounts that only message strangers — simple signals catch most abuse.
+**Account signals.** New accounts posting links, many accounts from one IP, accounts that only message strangers - simple signals catch most abuse.
 
 ## Moderation Tools You Need Before You Need Them
 
 - **Report buttons** on posts, comments, profiles and messages.
 - **A moderation queue** where reports arrive with context.
-- **Actions:** hide content, warn, mute, suspend and ban — enforced on the server, not only in the interface.
+- **Actions:** hide content, warn, mute, suspend and ban - enforced on the server, not only in the interface.
 - **Block and mute** for members themselves.
 - **An audit log** of moderation actions, for consistency and appeals.
 
 ## The Digital Services Act Applies to Small Platforms Too
 
-The EU Digital Services Act (DSA) applies to hosting services, including online platforms that store and publish user content. Small and micro enterprises are exempt from many of the heavier obligations, but basic duties remain for most: a way for anyone to report illegal content (notice-and-action), a point of contact, clear terms about what is allowed and — when you remove content or suspend accounts — a statement of reasons to the affected user. Your moderation tools are also how you meet these obligations. The European Commission's [DSA overview](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package) summarises who must do what.
+The EU Digital Services Act (DSA) applies to hosting services, including online platforms that store and publish user content. Small and micro enterprises are exempt from many of the heavier obligations, but basic duties remain for most: a way for anyone to report illegal content (notice-and-action), a point of contact, clear terms about what is allowed and - when you remove content or suspend accounts - a statement of reasons to the affected user. Your moderation tools are also how you meet these obligations. The European Commission's [DSA overview](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package) summarises who must do what.
 
 ## Privacy Inside the Community
 
@@ -105,7 +105,7 @@ A good moderation workflow is quick for moderators and fair for members:
 1. **Report:** members report content with a reason category and optional comment.
 2. **Triage:** reports arrive in a queue sorted by severity and number of reports; illegal content and threats are highlighted.
 3. **Decision:** moderators see the content, its context, the member's history and previous actions, then choose an action.
-4. **Action:** hide content, warn, mute for a period, suspend or ban — enforced on the server.
+4. **Action:** hide content, warn, mute for a period, suspend or ban - enforced on the server.
 5. **Notification:** the affected member receives a statement of reasons and, where appropriate, a way to appeal.
 6. **Record:** every action is logged with moderator, reason and timestamp.
 
@@ -113,7 +113,7 @@ Volunteer moderators especially benefit from clear guidelines and canned respons
 
 ## DSA Notice-and-Action, Implemented
 
-For hosting services, the Digital Services Act requires a mechanism for anyone — members or not — to notify you of content they consider illegal. In practice: a publicly accessible form or link on each piece of content; fields for the location of the content, an explanation of why it is illegal and the notifier's contact details (with exceptions for certain offences); confirmation of receipt; a timely decision; and information to the notifier about the outcome. When you restrict content or accounts, provide the affected user with a statement of reasons. Keep records of notices and decisions; they are useful if authorities ask.
+For hosting services, the Digital Services Act requires a mechanism for anyone - members or not - to notify you of content they consider illegal. In practice: a publicly accessible form or link on each piece of content; fields for the location of the content, an explanation of why it is illegal and the notifier's contact details (with exceptions for certain offences); confirmation of receipt; a timely decision; and information to the notifier about the outcome. When you restrict content or accounts, provide the affected user with a statement of reasons. Keep records of notices and decisions; they are useful if authorities ask.
 
 ## Protecting Members' Privacy by Design
 
@@ -137,7 +137,7 @@ Harassment in private messages is one of the most distressing experiences for co
 
 ## Community Guidelines as Part of the Product
 
-Clear guidelines reduce moderation workload and make decisions defensible. Keep them short, specific and visible: what is welcome, what is not, what happens when rules are broken, how to report and how to appeal. Link them from signup, posting screens and moderation notices. Under the DSA, your terms must describe content restrictions and moderation procedures in clear language — guidelines are the practical form of that obligation.
+Clear guidelines reduce moderation workload and make decisions defensible. Keep them short, specific and visible: what is welcome, what is not, what happens when rules are broken, how to report and how to appeal. Link them from signup, posting screens and moderation notices. Under the DSA, your terms must describe content restrictions and moderation procedures in clear language - guidelines are the practical form of that obligation.
 
 ## Commercial Features in Communities
 
@@ -149,7 +149,7 @@ Before opening a community widely: content sanitisation and CSP in place; upload
 
 ## The Founder's Role in a Safe Community
 
-Founders of small communities often become moderators by default, handling reports late at night alongside everything else. That is sustainable only briefly. Invest early in the tools above, recruit a few trusted members as moderators, write down guidelines and procedures, and review community health monthly. Your role shifts from firefighter to steward: setting the tone, backing moderators' decisions and deciding when rules need to change. Communities where members feel protected grow through word of mouth, because people invite friends into spaces they trust. That trust is built on the unglamorous work of sanitisation, rate limits, moderation tools and clear rules — exactly the parts an AI tool leaves out when it generates a beautiful community app in an afternoon.
+Founders of small communities often become moderators by default, handling reports late at night alongside everything else. That is sustainable only briefly. Invest early in the tools above, recruit a few trusted members as moderators, write down guidelines and procedures, and review community health monthly. Your role shifts from firefighter to steward: setting the tone, backing moderators' decisions and deciding when rules need to change. Communities where members feel protected grow through word of mouth, because people invite friends into spaces they trust. That trust is built on the unglamorous work of sanitisation, rate limits, moderation tools and clear rules - exactly the parts an AI tool leaves out when it generates a beautiful community app in an afternoon.
 
 ## Where to Start
 
@@ -157,11 +157,11 @@ If you can only do three things this week, sanitise all user content, add rate l
 
 ## Where LaunchStudio Fits
 
-LaunchStudio adds the security and moderation layer community founders skip: safe rendering, upload controls, rate limits, database-enforced private spaces, reporting and moderation workflows with server-side enforcement, audit logging and DSA-ready notice-and-action flows — without redesigning the community you built.
+LaunchStudio adds the security and moderation layer community founders skip: safe rendering, upload controls, rate limits, database-enforced private spaces, reporting and moderation workflows with server-side enforcement, audit logging and DSA-ready notice-and-action flows - without redesigning the community you built.
 
-LaunchStudio is backed by Manifera — trusted by Vodafone, TNO and CFLW — whose engineers in Ho Chi Minh City have built user-facing platforms for more than 11 years, with client contact from Amsterdam and Singapore. See [Manifera's portfolio](https://www.manifera.com/portfolio/).
+LaunchStudio is backed by Manifera - trusted by Vodafone, TNO and CFLW - whose engineers in Ho Chi Minh City have built user-facing platforms for more than 11 years, with client contact from Amsterdam and Singapore. See [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
-If your community is growing faster than you can moderate it, [describe your project](https://launchstudio.eu/en/#contact) — we reply within one working day.
+If your community is growing faster than you can moderate it, [describe your project](https://launchstudio.eu/en/#contact) - we reply within one working day.
 
 ## Real example
 
@@ -169,16 +169,16 @@ If your community is growing faster than you can moderate it, [describe your pro
 
 Lieke Mertens, a knitwear designer in Zutphen, built Breiclub in Lovable: a community for knitters to share projects, ask questions in groups, message each other and buy patterns from independent designers. It grew to about 9,000 members across the Netherlands and Flanders within a year.
 
-Growth brought problems Lieke had no tools for. Spam accounts posted links to counterfeit yarn shops faster than she could delete them. A member harassed another through private messages, and the only way to stop it was to delete the harasser's account in the database — which also deleted evidence. Project photos included GPS locations of members' homes. A post containing a script tag briefly redirected visitors in one group, and anyone could read the private "designers only" group by changing its ID in the URL.
+Growth brought problems Lieke had no tools for. Spam accounts posted links to counterfeit yarn shops faster than she could delete them. A member harassed another through private messages, and the only way to stop it was to delete the harasser's account in the database - which also deleted evidence. Project photos included GPS locations of members' homes. A post containing a script tag briefly redirected visitors in one group, and anyone could read the private "designers only" group by changing its ID in the URL.
 
 Over nine business days, LaunchStudio's engineers sanitised all user content with a strict allow-list, stripped photo metadata and added upload limits, introduced rate limits for new accounts and link posting, enforced group membership and messages in the database, built report buttons, a moderation queue, mute, suspend and ban actions with statements of reasons, member-level blocking and an audit log, and added a public notice form for illegal content.
 
 **Result:** Spam dropped by more than 90% within a week, mostly through rate limits and new-account rules. Lieke and two volunteer moderators now handle reports in about twenty minutes a day, and Breiclub passed 14,000 members the following winter.
 
 > *"I built a place for knitters and forgot that a place for people is also a place for people who behave badly."*
-> — **Lieke Mertens, Founder, Breiclub (Zutphen)**
+> - **Lieke Mertens, Founder, Breiclub (Zutphen)**
 
-**Cost & Timeline:** €2,300 (Launch Ready package: content security, uploads, rate limits, access control and moderation tools) — completed in 9 business days.
+**Cost & Timeline:** €2,300 (Launch Ready package: content security, uploads, rate limits, access control and moderation tools) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -196,7 +196,7 @@ At minimum: report buttons, a moderation queue, hide and suspend actions enforce
 
 ### How does Manifera approach platforms with user-generated content?
 
-By treating every user input as untrusted and every moderation action as something that must be enforced and logged on the server — practices from more than a decade of building user-facing systems.
+By treating every user input as untrusted and every moderation action as something that must be enforced and logged on the server - practices from more than a decade of building user-facing systems.
 
 ### Should community content be visible to search engines?
 

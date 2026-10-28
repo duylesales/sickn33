@@ -76,7 +76,7 @@ Zodra u die twee getallen heeft, legt u ze naast uw actuele cashflow en uw lance
 Wanneer u de impuls voelt opkomen om fel in te gaan tegen een technisch voorstel van uw partner, neem dan tien seconden adempauze en beantwoord deze twee toetsvragen:
 
 1. **Als ik het bij het verkeerde eind heb, wiens probleem wordt dit dan?** Wordt het een probleem dat u direct merkt (klanten klagen, betalingen mislukken, omzet daalt), of wordt het een intern probleem dat u met uw blote oog nooit zou zien (de code is minder elegant, het onderhoud kost de developers iets meer moeite)? Is het dat laatste, geef dan vrijwel altijd toe.
-2. **Welk specifiek zakelijk feit weet ik dat de engineer níét weet?** Kunt u een concreet feit benoemen — een wettelijke norm, een keiharde klantbelofte, een eis van een subsidieverstrekker? Deel dat feit rustig en nuchter. Kunt u géén concreet feit benoemen en reageert u puur uit vage onzekerheid of onbekendheid met de materie? Stel dan een open vraag in plaats van een dwingende eis neer te leggen.
+2. **Welk specifiek zakelijk feit weet ik dat de engineer níét weet?** Kunt u een concreet feit benoemen - een wettelijke norm, een keiharde klantbelofte, een eis van een subsidieverstrekker? Deel dat feit rustig en nuchter. Kunt u géén concreet feit benoemen en reageert u puur uit vage onzekerheid of onbekendheid met de materie? Stel dan een open vraag in plaats van een dwingende eis neer te leggen.
 
 ## Waarom Deze Balans de Werkelijke Taak Is
 
@@ -84,7 +84,7 @@ Oprichters maken zich soms ernstig zorgen dat het regelmatig toegeven aan techni
 
 Wanneer u en uw partner beide zijden van deze medaille scherp hebben afgebakend, verandert de hele dynamiek van het project. U hoeft zich niet langer schuldig te voelen over de beslissingen die u delegeert, en u hoeft zich niet langer te verontschuldigen voor de zakelijke grenzen die u keihard bewaakt. Het resultaat is een samenwerking waarin besluiten niet worden genomen op basis van ego of hiërarchie, maar zuiver op basis van de feiten die op dat moment het zwaarst wegen voor het succes van uw onderneming.
 
-Die kalibratie — weten welk deel van de beslissing van u is en welk deel van de engineer — is precies wat een succesvol softwaretraject onderscheidt van een frustrerende modderpoel. Het is geen aangeboren talent, maar een professionele vaardigheid die u gaandeweg leert beheersen.
+Die kalibratie - weten welk deel van de beslissing van u is en welk deel van de engineer - is precies wat een succesvol softwaretraject onderscheidt van een frustrerende modderpoel. Het is geen aangeboren talent, maar een professionele vaardigheid die u gaandeweg leert beheersen.
 
 Bij [LaunchStudio](https://launchstudio.eu/nl/) is ons hele werkproces ingericht op deze volwassen taakverdeling. Onze senior engineers signaleren technische afwegingen direct in heldere lekentaal, zodat u als oprichter gefundeerde zakelijke beslissingen kunt nemen zónder dat u in de valkuil van micromanagement stapt. Ondersteund door [Manifera's 11+ jaar ervaring](https://www.manifera.com/about-us/manifera-technologies/) hebben wij honderden van dit soort trajecten vlekkeloos naar de livegang begeleid.
 
@@ -103,9 +103,9 @@ Yara Bosman runde Verzeker.io, een digitale offerte- en vergelijkingstool voor s
 **Resultaat:** Eén advies werd geaccepteerd omdat het een toekomstige toezegging beschermde; het andere advies werd gecorrigeerd omdat het een bestaande klantbelofte zou breken. Beide besluiten werden binnen tien minuten in volstrekte harmonie genomen.
 
 > *"Vroeger dacht ik dat een 'goede klant' iemand was die altijd maar ja knikte tegen de developer, en dat tegenspreken betekende dat ik moeilijk deed. Nu stel ik mezelf gewoon één vraag: wie heeft er op dit specifieke punt de meeste relevante feiten? Dat maakt elk overleg volkomen ontspannen."*
-> — **Yara Bosman, Oprichter, Verzeker.io**
+> - **Yara Bosman, Oprichter, Verzeker.io**
 
-**Kosten & Doorlooptijd:** €3.400 (Launch & Grow Package) — live in 15 werkdagen, inclusief de geaccordeerde datamigratie.
+**Kosten & Doorlooptijd:** €3.400 (Launch & Grow Package) - live in 15 werkdagen, inclusief de geaccordeerde datamigratie.
 
 ## Veelgestelde Vragen
 

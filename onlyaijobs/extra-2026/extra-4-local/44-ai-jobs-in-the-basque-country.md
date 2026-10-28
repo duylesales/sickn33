@@ -43,7 +43,7 @@ Content Format: Regional Guide
 }
 </script>
 
-The Basque Country, in northern Spain, is one of Europe's most industrial regions and one of the wealthiest in Spain. Its economy rests on manufacturing — machine tools, automotive components, railway equipment, aerospace parts and energy equipment — supported by a dense network of technology centres and a cooperative tradition unique in Europe. The region has invested heavily in applied research and digital industry, and it hosts major energy and banking companies. For experienced machine learning engineers, AI jobs in the Basque Country are strongly oriented toward industrial AI, energy and applied research, in cities known for their quality of life, food culture and proximity to both the sea and the mountains. This guide maps the opportunities and explains what to consider before moving.
+The Basque Country, in northern Spain, is one of Europe's most industrial regions and one of the wealthiest in Spain. Its economy rests on manufacturing - machine tools, automotive components, railway equipment, aerospace parts and energy equipment - supported by a dense network of technology centres and a cooperative tradition unique in Europe. The region has invested heavily in applied research and digital industry, and it hosts major energy and banking companies. For experienced machine learning engineers, AI jobs in the Basque Country are strongly oriented toward industrial AI, energy and applied research, in cities known for their quality of life, food culture and proximity to both the sea and the mountains. This guide maps the opportunities and explains what to consider before moving.
 
 ## The Industrial Foundation
 
@@ -69,7 +69,7 @@ The Basque Country has one of Spain's densest networks of technology centres, wh
 
 **BCAM**, the Basque Center for Applied Mathematics in Bilbao, conducts research in applied mathematics, including machine learning, statistics and optimisation.
 
-Other centres and cooperative research institutes work on manufacturing, materials and energy. The region has also invested in quantum computing as part of its science and technology strategy. For ML engineers, these centres offer applied research roles with direct industry impact — a middle ground between academia and product companies.
+Other centres and cooperative research institutes work on manufacturing, materials and energy. The region has also invested in quantum computing as part of its science and technology strategy. For ML engineers, these centres offer applied research roles with direct industry impact - a middle ground between academia and product companies.
 
 ## Universities
 
@@ -98,7 +98,7 @@ Salaries in the Basque Country are among the highest in Spain, although generall
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy appears at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in the Basque Country you will find few or no local vacancies there today. Use Spanish job portals, technology centre career pages, university vacancy lists and regional industry networks as primary sources. OnlyAIJobs is useful for comparing the Basque industrial AI market with the Netherlands — where engineering and industrial employers such as Holland Innovative, VINCI Energies, Heijmans and Rexel list AI roles — and as a method: in a region with three provincial capitals and many industrial towns, searching by real commute is essential. Basque employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in the Basque Country you will find few or no local vacancies there today. Use Spanish job portals, technology centre career pages, university vacancy lists and regional industry networks as primary sources. OnlyAIJobs is useful for comparing the Basque industrial AI market with the Netherlands - where engineering and industrial employers such as Holland Innovative, VINCI Energies, Heijmans and Rexel list AI roles - and as a method: in a region with three provincial capitals and many industrial towns, searching by real commute is essential. Basque employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Industrial AI in Practice
 
@@ -107,7 +107,7 @@ Industrial AI in the Basque Country has specific characteristics that shape dail
 - **Machine data at the edge.** Machine tools and production lines generate high-frequency signals from spindles, motors, sensors and controllers. Models often run on industrial PCs or embedded hardware close to the machine, with limited compute and strict reliability requirements.
 - **Scarce failure data.** Real failures are rare and expensive, so engineers use anomaly detection, physics-informed features, simulation and careful labelling with maintenance experts.
 - **Domain collaboration.** Success depends on working with machine builders, process engineers and operators, who understand the physics and the practical constraints.
-- **Product integration.** Machine builders increasingly sell AI-enabled features — monitoring, diagnostics, optimisation — as part of their products, which requires robust software engineering and long-term support.
+- **Product integration.** Machine builders increasingly sell AI-enabled features - monitoring, diagnostics, optimisation - as part of their products, which requires robust software engineering and long-term support.
 - **Safety and standards.** Industrial machinery is subject to safety regulations, and the EU AI Act classifies AI systems used as safety components in certain regulated products as high-risk.
 
 Engineers who enjoy the combination of signals, physics and software find this work rewarding, and it builds expertise that is valued across European manufacturing.
@@ -122,11 +122,11 @@ Energy is a major part of the Basque economy, from Iberdrola's global operations
 
 ## Language Technology for Basque
 
-Basque is a language isolate, unrelated to other European languages, with a relatively small number of speakers. Building language technology for Basque — machine translation, speech recognition, language models — is a distinctive research and engineering challenge. Research groups at UPV/EHU and technology centres have developed resources and models for Basque, supported by regional language policy. For NLP engineers interested in low-resource languages, this is one of the most interesting places in Europe, and the methods developed for Basque are relevant to many other smaller languages.
+Basque is a language isolate, unrelated to other European languages, with a relatively small number of speakers. Building language technology for Basque - machine translation, speech recognition, language models - is a distinctive research and engineering challenge. Research groups at UPV/EHU and technology centres have developed resources and models for Basque, supported by regional language policy. For NLP engineers interested in low-resource languages, this is one of the most interesting places in Europe, and the methods developed for Basque are relevant to many other smaller languages.
 
 ## Three Cities, Three Profiles
 
-**Bilbao** is the largest city and the business centre, with energy and banking headquarters, BCAM, the University of Deusto and a transformed riverfront symbolised by the Guggenheim Museum. **San Sebastián (Donostia)** is smaller, famous for its beaches and gastronomy, and hosts Vicomtech, research centres and technology companies; housing is expensive. **Vitoria-Gasteiz**, the administrative capital, is known for green urban planning and has industrial companies and a university campus. The cities are connected by motorways, buses and trains, and many industrial companies are located in towns and valleys between them — check commute times to the exact site before choosing where to live.
+**Bilbao** is the largest city and the business centre, with energy and banking headquarters, BCAM, the University of Deusto and a transformed riverfront symbolised by the Guggenheim Museum. **San Sebastián (Donostia)** is smaller, famous for its beaches and gastronomy, and hosts Vicomtech, research centres and technology companies; housing is expensive. **Vitoria-Gasteiz**, the administrative capital, is known for green urban planning and has industrial companies and a university campus. The cities are connected by motorways, buses and trains, and many industrial companies are located in towns and valleys between them - check commute times to the exact site before choosing where to live.
 
 ## Cooperatives and Workplace Culture
 
@@ -159,7 +159,7 @@ The region suits engineers who enjoy industrial and energy problems with tangibl
 
 A Spanish data scientist working on predictive maintenance for an industrial company in Munich wants to return to Spain and is offered a role at a Basque technology centre, leading data projects for machine tool manufacturers.
 
-The salary is lower than in Munich, but she calculates her net income under the Basque tax system, compares housing costs in Bilbao and considers the role: she would work with several manufacturers on real machines, with a research dimension she enjoys. She accepts. After a year, she has deployed anomaly detection models in two companies' machines and co-authored a paper with a university group. She says the combination of applied research and industrial impact is exactly what she was looking for — and that Bilbao's quality of life exceeded her expectations.
+The salary is lower than in Munich, but she calculates her net income under the Basque tax system, compares housing costs in Bilbao and considers the role: she would work with several manufacturers on real machines, with a research dimension she enjoys. She accepts. After a year, she has deployed anomaly detection models in two companies' machines and co-authored a paper with a university group. She says the combination of applied research and industrial impact is exactly what she was looking for - and that Bilbao's quality of life exceeded her expectations.
 
 ## Key Takeaways
 

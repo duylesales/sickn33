@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Kan Ik Niet Gewoon Blijven Prompten Tot het Opgelost Is?",
-  "description": "Waarom sommige problemen in een AI-prototype verdwijnen na twee extra prompts terwijl andere met elke poging juist stilletjes verergeren — en de vier signalen dat het tijd is om een engineer in te schakelen.",
+  "description": "Waarom sommige problemen in een AI-prototype verdwijnen na twee extra prompts terwijl andere met elke poging juist stilletjes verergeren - en de vier signalen dat het tijd is om een engineer in te schakelen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-02-20",
@@ -23,7 +23,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Het is een volkomen logische vraag, en oprichters die hem stellen zijn allerminst naïef. U heeft immers met eigen ogen gezien hoe dezelfde AI-tool die uw complete applicatie in een weekend in elkaar zette, een kapotte layout binnen elf seconden repareerde. Als een prompt het product kon bouwen, zou een prompt het toch ook moeten kunnen repareren?
 
-Die redenering gaat op voor een verrassend groot deel van wat er misgaat — totdat het er plotseling, abrupt mee ophoudt. En dat kantelpunt is vanuit het chatvenster van uw AI-tool nagenoeg onzichtbaar.
+Die redenering gaat op voor een verrassend groot deel van wat er misgaat - totdat het er plotseling, abrupt mee ophoudt. En dat kantelpunt is vanuit het chatvenster van uw AI-tool nagenoeg onzichtbaar.
 
 Het eerlijke antwoord is niet *"nee, stop met prompten en huur iemand in"*. Het eerlijke antwoord is dat AI-prompting excelleert in **één specifieke categorie problemen**, maar structureel faalt in een andere. Vanuit de stoel van de niet-technische ondernemer lijken beide categorieën identiek, maar juist die tweede categorie bevat exact de risico's die vóór uw lancering moeten zijn opgelost.
 
@@ -52,9 +52,9 @@ Kijk nu eens naar een fundamenteel ander probleem: *"Soms verschijnt de bestelli
 - U kunt de oplossing niet zien: u heeft geen flauw idee welke van de vijftien databasestappen faalde.
 - **En cruciaal: u kunt niet verifiëren of het gefixt is.** Het uitblijven van een bug die slechts 1 op de 200 keer optreedt, is visueel niet te onderscheiden van een bug die er nog steeds zit maar toevallig even niet getriggerd wordt.
 
-Dit is waar de prompt-lus verandert van een zegen in een gevaarlijke valkuil. U beschrijft het symptoom aan de AI. De AI — die geen enkele toegang heeft tot uw productielogs of live database — verzint een plausibele theorie en presenteert met het grootste zelfvertrouwen een 'oplossing'. U voert de code door. De bug treedt die middag niet op, dus u denkt dat het is opgelost. Twee dagen later meldt een tweede klant hetzelfde probleem.
+Dit is waar de prompt-lus verandert van een zegen in een gevaarlijke valkuil. U beschrijft het symptoom aan de AI. De AI - die geen enkele toegang heeft tot uw productielogs of live database - verzint een plausibele theorie en presenteert met het grootste zelfvertrouwen een 'oplossing'. U voert de code door. De bug treedt die middag niet op, dus u denkt dat het is opgelost. Twee dagen later meldt een tweede klant hetzelfde probleem.
 
-De AI deed precies waar u om vroeg, maar u vroeg de AI een diagnose te stellen op basis van een symptoom zonder enig bewijs — vergelijkbaar met een arts die medicijnen voorschrijft op basis van een kort sms'je. Soms gokt de AI goed. Maar u kunt onmogelijk weten wanneer.
+De AI deed precies waar u om vroeg, maar u vroeg de AI een diagnose te stellen op basis van een symptoom zonder enig bewijs - vergelijkbaar met een arts die medicijnen voorschrijft op basis van een kort sms'je. Soms gokt de AI goed. Maar u kunt onmogelijk weten wanneer.
 
 ## De Onzichtbare Stapeling van Technische Schuld
 
@@ -75,25 +75,25 @@ U heeft geen technische achtergrond nodig om deze vier signalen te herkennen. Ze
 2. **U kunt de bug niet op commando reproduceren.**
    Als u het probleem op elk gewenst moment kunt laten optreden, heeft doorgedreven prompten nog een vechtkans, omdat u het resultaat tenminste direct kunt verifiëren. Treedt de fout echter slechts *soms* op, bij *sommige* gebruikers onder onduidelijke omstandigheden? Dan bent u de verificatiestap kwijt, en is elke nieuwe AI-oplossing een pure gok.
 3. **De fix vereist een wijziging in iets wat u niet visueel op het scherm kunt zien.**
-   Alles wat raakt aan wie welke gegevens mag inzien (autorisatie), wat er gebeurt als een betalingsprovider traag reageert (time-outs en retries), wat er op de achtergrond draait nadat de gebruiker zijn browsertabblad sluit, of hoe gelijktijdige acties van twee gebruikers elkaar beïnvloeden — deze logica leeft in gedrag en concurrency, niet in de gebruikersinterface. Er valt op het scherm niets te zien om te bevestigen dat het werkt.
+   Alles wat raakt aan wie welke gegevens mag inzien (autorisatie), wat er gebeurt als een betalingsprovider traag reageert (time-outs en retries), wat er op de achtergrond draait nadat de gebruiker zijn browsertabblad sluit, of hoe gelijktijdige acties van twee gebruikers elkaar beïnvloeden - deze logica leeft in gedrag en concurrency, niet in de gebruikersinterface. Er valt op het scherm niets te zien om te bevestigen dat het werkt.
 4. **U begint bepaalde delen van uw eigen product angstvallig te vermijden.**
-   Dit is veruit het meest betrouwbare van de vier signalen, en tevens het signaal dat het minst graag wordt toegegeven. Wanneer een oprichter aarzelt om de betaalstroom of het accountbeheer aan te raken omdat de vorige prompt elders iets anders brak, dan is dat geen gezonde voorzichtigheid — dat is een codebase die onvoorspelbaar is geworden. En onvoorspelbaarheid wegnemen is exact waarvoor u een senior engineer inschakelt.
+   Dit is veruit het meest betrouwbare van de vier signalen, en tevens het signaal dat het minst graag wordt toegegeven. Wanneer een oprichter aarzelt om de betaalstroom of het accountbeheer aan te raken omdat de vorige prompt elders iets anders brak, dan is dat geen gezonde voorzichtigheid - dat is een codebase die onvoorspelbaar is geworden. En onvoorspelbaarheid wegnemen is exact waarvoor u een senior engineer inschakelt.
 ## Wat een Senior Software Engineer Doet Dat een Prompt Principieel Niet Kan
 
-Het fundamentele verschil tussen een ervaren engineer en een taalmodel is geen kwestie van abstracte intelligentie — en het op die manier formuleren maakt de keuze alleen maar onnodig ingewikkeld. Het werkelijke verschil is **bewijsvoering (evidence)**.
+Het fundamentele verschil tussen een ervaren engineer en een taalmodel is geen kwestie van abstracte intelligentie - en het op die manier formuleren maakt de keuze alleen maar onnodig ingewikkeld. Het werkelijke verschil is **bewijsvoering (evidence)**.
 
-De allereerste stap van een professionele engineer bij een ongrijpbare bug is nooit om halsoverkop code te gaan herschrijven. Zijn eerste stap is om het onzichtbare zichtbaar te maken: gerichte logging toevoegen rondom het verdachte traject, de foutcondities gecontroleerd en bewust reproduceren, inspecteren wat de productiedatabase feitelijk bevat voor de getroffen klant, en verifiëren of twee concurrerende netwerkverzoeken toevallig op exact hetzelfde milliseconde-moment arriveerden. Pas wanneer de exacte grondoorzaak onweerlegbaar is bewezen, wordt er code gewijzigd — eenmalig, op één specifieke plek, ondersteund door een geautomatiseerde test die faalt als het probleem ooit terugkeert.
+De allereerste stap van een professionele engineer bij een ongrijpbare bug is nooit om halsoverkop code te gaan herschrijven. Zijn eerste stap is om het onzichtbare zichtbaar te maken: gerichte logging toevoegen rondom het verdachte traject, de foutcondities gecontroleerd en bewust reproduceren, inspecteren wat de productiedatabase feitelijk bevat voor de getroffen klant, en verifiëren of twee concurrerende netwerkverzoeken toevallig op exact hetzelfde milliseconde-moment arriveerden. Pas wanneer de exacte grondoorzaak onweerlegbaar is bewezen, wordt er code gewijzigd - eenmalig, op één specifieke plek, ondersteund door een geautomatiseerde test die faalt als het probleem ooit terugkeert.
 
-Een AI-tool in een chatvenster beschikt over geen enkele van deze instrumenten. Het kan uw productielogs niet live uitlezen, kan geen actieve queries afvuren op uw draaiende database, en kan niet zien dat de mislukte bestellingen toevallig allemaal afkomstig waren van klanten in een tijdzone die voorloopt op de uwe. Het model kan uitsluitend werken op basis van uw eigen subjectieve omschrijving van het symptoom — en uw omschrijving is noodgedwongen de beschrijving van iemand die de onderliggende oorzaak zelf evenmin kan zien. Dit is geen tekortkoming die u met een 'betere prompt' kunt oplossen; het is een fundamentele informatiebeperking van wat er binnen het chatvenster beschikbaar is.
+Een AI-tool in een chatvenster beschikt over geen enkele van deze instrumenten. Het kan uw productielogs niet live uitlezen, kan geen actieve queries afvuren op uw draaiende database, en kan niet zien dat de mislukte bestellingen toevallig allemaal afkomstig waren van klanten in een tijdzone die voorloopt op de uwe. Het model kan uitsluitend werken op basis van uw eigen subjectieve omschrijving van het symptoom - en uw omschrijving is noodgedwongen de beschrijving van iemand die de onderliggende oorzaak zelf evenmin kan zien. Dit is geen tekortkoming die u met een 'betere prompt' kunt oplossen; het is een fundamentele informatiebeperking van wat er binnen het chatvenster beschikbaar is.
 
-Daarnaast is er een tweede, subtieler verschil: een ervaren engineer weet exact welke problemen *absoluut vóór de lancering* moeten worden opgelost en welke veilig kunnen wachten tot versie 2 — dat een afrondingsfoutje in de visuele prijsweergave op het scherm kan wachten, maar dezelfde rekenfout in het daadwerkelijk afgeschreven creditcardbedrag een keiharde showstopper is. AI-tools rangschikken problemen niet op basis van zakelijke consequenties; ze repareren wat u toevallig aanwijst, met exact dezelfde zelfverzekerde toon in beide gevallen.
+Daarnaast is er een tweede, subtieler verschil: een ervaren engineer weet exact welke problemen *absoluut vóór de lancering* moeten worden opgelost en welke veilig kunnen wachten tot versie 2 - dat een afrondingsfoutje in de visuele prijsweergave op het scherm kan wachten, maar dezelfde rekenfout in het daadwerkelijk afgeschreven creditcardbedrag een keiharde showstopper is. AI-tools rangschikken problemen niet op basis van zakelijke consequenties; ze repareren wat u toevallig aanwijst, met exact dezelfde zelfverzekerde toon in beide gevallen.
 ## De Vuistregel: Hoe Lang Blijft U Proberen?
 
-Geef uzelf een helder budget vóórdat u aan een probleem begint, en niet pas wanneer u diep gefrustreerd bent. Een beproefde vuistregel die voor vrijwel elke oprichter werkt: **maximaal drie prompt-pogingen of maximaal één uur werk, wat het eerst bereikt wordt — stop daarna en classificeer het probleem.**
+Geef uzelf een helder budget vóórdat u aan een probleem begint, en niet pas wanneer u diep gefrustreerd bent. Een beproefde vuistregel die voor vrijwel elke oprichter werkt: **maximaal drie prompt-pogingen of maximaal één uur werk, wat het eerst bereikt wordt - stop daarna en classificeer het probleem.**
 
 Betreft het een zichtbaar, lokaal en direct verifieerbaar probleem in de frontend? Ga gerust door; u bevindt zich in het domein waarin generatieve AI excelleert, en poging vier levert waarschijnlijk het gewenste resultaat op. Zakt de bug echter voor de zien/repareren/verifiëren-toets? Stop dan direct met prompten en schrijf het probleem gestructureerd op: noteer het exacte symptoom, wanneer het optreedt, welke klant het meldde, en wat u tot nu toe al geprobeerd heeft. Die beknopte lijst is later goud waard: het vormt het verschil tussen een engineer die twee uur moet pionieren om uw stappen te reconstrueren, of iemand die direct doelgericht aan de structurele oplossing kan beginnen.
 
-Houd altijd de asymmetrie voor ogen die deze vraag zo urgent maakt: vóór de lancering kost een verkeerde gok u hooguit een verloren middag. Ná de lancering betekent exact dezelfde verkeerde gok dat een echte betalende klant dubbel wordt aangeslagen, of dat vertrouwelijke gegevens van het ene account zichtbaar worden voor het andere — situaties waar u pas achter komt via een boze e-mail van een klant.
+Houd altijd de asymmetrie voor ogen die deze vraag zo urgent maakt: vóór de lancering kost een verkeerde gok u hooguit een verloren middag. Ná de lancering betekent exact dezelfde verkeerde gok dat een echte betalende klant dubbel wordt aangeslagen, of dat vertrouwelijke gegevens van het ene account zichtbaar worden voor het andere - situaties waar u pas achter komt via een boze e-mail van een klant.
 
 LaunchStudio bestaat specifiek voor dit overdrachtsmoment: uw product functioneert voor 80% naar behoren, de overgebleven knelpunten reageren niet langer op prompts, en u heeft ervaren engineers nodig die de oorzaak methodisch opsporen en definitief verhelpen in plaats van opnieuw te gissen. Geruggensteund door Manifera's elf jaar ervaring in enterprise-softwareontwikkeling werken wij altijd met een vaste scope en een vaste prijs vóórdat iemand uw code aanraakt. Heeft u een lijst met *"drie keer gerepareerd en toch weer teruggekeerd"*? [Beschrijf uw project](https://launchstudio.eu/nl/#contact) en wij vertellen u binnen één werkdag wat er onder de motorkap werkelijk aan de hand is.
 ## Echt voorbeeld
@@ -104,12 +104,12 @@ Sanne Duijvestein had met Lovable een online roostertool voor de horeca gebouwd 
 
 Sanne besteedde drie weken aan het oplossen hiervan. Eenenveertig prompts verspreid over twee verschillende AI-tools leverden telkens een overtuigende verklaring op: eerst was het een caching-fout, toen een tijdzone-bug en daarna een state management-probleem. Elke 'fix' leek te werken, simpelweg omdat de fout zich slechts 1 op de 50 keer voordeed. Intussen verzamelde haar codebase drie verschillende caching-lagen die elkaar tegenwerkten.
 
-Toen ze LaunchStudio inschakelde, vond onze lead engineer de werkelijke boosdoener binnen 90 minuten: de databasequery miste een filter op de horecavestiging wanneer een optioneel datumfilter ontbrak — een scenario dat uitsluitend optrad wanneer een bedrijfsleider het scherm opende zonder eerst handmatig een week te selecteren.
+Toen ze LaunchStudio inschakelde, vond onze lead engineer de werkelijke boosdoener binnen 90 minuten: de databasequery miste een filter op de horecavestiging wanneer een optioneel datumfilter ontbrak - een scenario dat uitsluitend optrad wanneer een bedrijfsleider het scherm opende zonder eerst handmatig een week te selecteren.
 
-**Resultaat:** De daadwerkelijke fix bestond uit vier regels code. Het opruimen van de 41 mislukte prompt-pogingen en conflicterende caching-lagen kostte echter zes uur werk — wat Sanne achteraf omschreef als *"het duurste leergeld om geld te willen besparen"*.
+**Resultaat:** De daadwerkelijke fix bestond uit vier regels code. Het opruimen van de 41 mislukte prompt-pogingen en conflicterende caching-lagen kostte echter zes uur werk - wat Sanne achteraf omschreef als *"het duurste leergeld om geld te willen besparen"*.
 
 > *"Ik bleef maar doorgaan omdat elke AI-fix leek te werken. Niemand vertelt je dat bij dit soort bugs 'het is opgelost' en 'het is er nog steeds' er aan de oppervlakte exact hetzelfde uitzien."*
-> — **Sanne Duijvestein, Oprichter, Roosterly (Utrecht)**
+> - **Sanne Duijvestein, Oprichter, Roosterly (Utrecht)**
 
 **Kosten & Doorlooptijd:** Diagnose en code-opschoning afgerond binnen 3 werkdagen tegen een vaste prijs.
 

@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The offer is good: interesting work, a reasonable salary, a team you liked. Then you reach the contract type — one year, fixed term, "with the intention of extending". In the Netherlands this is entirely normal, especially for a first hire in a data team or for a role funded by a specific project. It is also a materially different proposition from a permanent contract, in ways that reach beyond work into mortgages, rental applications and, for international candidates, residence permits. The question is not whether fixed-term is acceptable in principle, but whether it is acceptable in your situation and on these terms.
+The offer is good: interesting work, a reasonable salary, a team you liked. Then you reach the contract type - one year, fixed term, "with the intention of extending". In the Netherlands this is entirely normal, especially for a first hire in a data team or for a role funded by a specific project. It is also a materially different proposition from a permanent contract, in ways that reach beyond work into mortgages, rental applications and, for international candidates, residence permits. The question is not whether fixed-term is acceptable in principle, but whether it is acceptable in your situation and on these terms.
 
 This article provides general information, not legal advice. For your specific situation, consult an employment lawyer, your union or the free information service **Juridisch Loket**.
 
@@ -90,7 +90,7 @@ The last reason is common and relatively benign. The first is the one to probe: 
 
 ## When to Accept
 
-Accepting is usually sensible when the work is clearly good, the employer answers the questions above concretely, and your personal situation can absorb a possible end date — no imminent mortgage application, no permit dependency you cannot manage, some savings.
+Accepting is usually sensible when the work is clearly good, the employer answers the questions above concretely, and your personal situation can absorb a possible end date - no imminent mortgage application, no permit dependency you cannot manage, some savings.
 
 It is also reasonable when the alternative is nothing. A year of relevant experience improves your position substantially more than a year of searching, and the Dutch chain rule means that continuation, if it happens, moves you towards a permanent contract on a defined timeline.
 
@@ -108,7 +108,7 @@ It is also reasonable when the alternative is nothing. A year of relevant experi
 
 The most useful evidence about a fixed-term contract is not in the contract; it is in what the employer has done with previous ones.
 
-Ask directly how many people joined on temporary contracts in the last two or three years and how many were continued. A specific answer — "five of seven, the two who left went of their own accord" — tells you far more than any assurance about intentions. Hesitation or a vague answer is itself informative.
+Ask directly how many people joined on temporary contracts in the last two or three years and how many were continued. A specific answer - "five of seven, the two who left went of their own accord" - tells you far more than any assurance about intentions. Hesitation or a vague answer is itself informative.
 
 You can also check indirectly. During interviews, ask colleagues how long they have been there and how they started; people answer this honestly. If everyone on the team began on a one-year contract and is still present three years later, the policy is genuinely a formality. If the team has visibly rotated, ask why.
 
@@ -122,13 +122,13 @@ Ask when the decision about continuation will be communicated. For contracts of 
 
 Use the final months deliberately: make sure your work is documented, get a written reference or a recommendation, and keep a record of what you delivered in terms the next employer will understand. If the role ends, entitlement to unemployment benefits through the UWV depends on meeting the conditions, and a transition payment applies in principle when the employer ends the employment.
 
-Candidates who treat the end date as a fixed planning point — rather than as something to worry about later — usually find the transition uneventful, whichever way it goes.
+Candidates who treat the end date as a fixed planning point - rather than as something to worry about later - usually find the transition uneventful, whichever way it goes.
 
 ## What You Can Negotiate Instead
 
 If the contract type is genuinely fixed by policy, other terms often are not.
 
-A longer initial term — eighteen months or two years rather than twelve — reduces uncertainty while staying within the chain rule. A written statement of the criteria for continuation gives you something concrete. A higher salary compensates for the risk you are carrying, and with pay transparency rules employers must in any case provide pay information before the interview. A guaranteed training budget protects your market value if the role ends. Explicit agreement on a reference and a notice conversation well before the end date costs the employer nothing and is worth having.
+A longer initial term - eighteen months or two years rather than twelve - reduces uncertainty while staying within the chain rule. A written statement of the criteria for continuation gives you something concrete. A higher salary compensates for the risk you are carrying, and with pay transparency rules employers must in any case provide pay information before the interview. A guaranteed training budget protects your market value if the role ends. Explicit agreement on a reference and a notice conversation well before the end date costs the employer nothing and is worth having.
 
 ## Real example
 
@@ -171,7 +171,7 @@ It is possible but more complicated; lenders usually ask for an employer's decla
 Highly skilled migrant permits depend on sponsored employment, with a search period applying if employment ends; check current conditions with the IND before accepting.
 
 ### (Scenario: candidate leaving a permanent job) Should I give up a permanent contract for a temporary one?
-Only with good reason and after negotiating — a longer initial term, higher salary or written continuation criteria — because you are carrying the risk the employer is avoiding.
+Only with good reason and after negotiating - a longer initial term, higher salary or written continuation criteria - because you are carrying the risk the employer is avoiding.
 
 <script type="application/ld+json">
 {

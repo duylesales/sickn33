@@ -1,4 +1,4 @@
-🚨 Bas Oosterhuis ran Sportief, a gym membership platform in Almere. When a developer accidentally executed a destructive database migration without a WHERE clause, Bas assumed his daily automated backups had him covered. But when he tried to recover, the restore had never been rehearsed — leaving gyms unable to check in members for 18 hours. 😳
+🚨 Bas Oosterhuis ran Sportief, a gym membership platform in Almere. When a developer accidentally executed a destructive database migration without a WHERE clause, Bas assumed his daily automated backups had him covered. But when he tried to recover, the restore had never been rehearsed - leaving gyms unable to check in members for 18 hours. 😳
 
 An unverified backup is an unverified hypothesis. You don't have backups until you have tested the restore: 🧠
 

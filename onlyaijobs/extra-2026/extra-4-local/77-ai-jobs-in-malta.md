@@ -42,7 +42,7 @@ Malta, the EU's smallest member state by population, has an unusually internatio
 
 ## iGaming: Malta's Largest Tech Employer
 
-Malta became a European hub for online gaming after introducing a regulatory framework for remote gaming in the early 2000s, and the Malta Gaming Authority licenses and supervises many operators and suppliers. Gaming companies — operators, platform providers and game studios — employ large numbers of engineers, data scientists and analysts on the island.
+Malta became a European hub for online gaming after introducing a regulatory framework for remote gaming in the early 2000s, and the Malta Gaming Authority licenses and supervises many operators and suppliers. Gaming companies - operators, platform providers and game studios - employ large numbers of engineers, data scientists and analysts on the island.
 
 Data science and ML in iGaming cover personalisation and recommendations, customer lifetime value prediction, fraud and bonus abuse detection, payment risk, marketing optimisation and live operations. An increasingly important area is responsible gambling: using data to detect signs of problematic play and trigger interventions, as required by regulators. Engineers considering iGaming should reflect on their comfort with the industry and ask employers how they approach player protection.
 
@@ -79,17 +79,17 @@ Malta offers sunshine, sea, a rich history and a compact, lively environment. Mo
 
 ## How OnlyAIJobs Fits a Malta Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement — every listing competes on content.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement - every listing competes on content.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Malta you will find few or no local vacancies there today. Use Maltese job portals, company career pages, recruitment agencies specialising in gaming and fintech, and community channels as primary sources. OnlyAIJobs is useful for comparing Malta with the Netherlands — where fintech and technology employers such as Mollie, Accenture and Cegeka list AI roles — and its location-first approach fits an island where traffic makes the exact office address matter more than the town name. Maltese employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Malta you will find few or no local vacancies there today. Use Maltese job portals, company career pages, recruitment agencies specialising in gaming and fintech, and community channels as primary sources. OnlyAIJobs is useful for comparing Malta with the Netherlands - where fintech and technology employers such as Mollie, Accenture and Cegeka list AI roles - and its location-first approach fits an island where traffic makes the exact office address matter more than the town name. Maltese employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Responsible Gambling and Ethical Considerations
 
-Online gaming raises legitimate ethical questions, and engineers considering the industry should think about them honestly. Regulators increasingly require operators to protect players by monitoring behaviour for signs of harm — rapid increases in deposits, chasing losses, playing at unusual hours — and to intervene with messages, limits or account restrictions. Machine learning plays a growing role in these systems, and some data scientists choose iGaming specifically to work on player protection. When evaluating an employer, ask how responsible gambling is organised, whether data scientists work on it, how interventions are evaluated and how commercial goals are balanced with player welfare. The answers reveal a great deal about the company's culture and standards.
+Online gaming raises legitimate ethical questions, and engineers considering the industry should think about them honestly. Regulators increasingly require operators to protect players by monitoring behaviour for signs of harm - rapid increases in deposits, chasing losses, playing at unusual hours - and to intervene with messages, limits or account restrictions. Machine learning plays a growing role in these systems, and some data scientists choose iGaming specifically to work on player protection. When evaluating an employer, ask how responsible gambling is organised, whether data scientists work on it, how interventions are evaluated and how commercial goals are balanced with player welfare. The answers reveal a great deal about the company's culture and standards.
 
 ## Personalisation and Customer Analytics in iGaming
 
-Beyond player protection, iGaming data teams work on recommending games, personalising promotions, predicting customer lifetime value and churn, optimising marketing spend across channels and detecting bonus abuse and fraud. These problems resemble those in e-commerce and media, with large volumes of event data, real-time decisions and extensive experimentation. The technical experience — streaming data, feature stores, experimentation platforms, real-time scoring — is transferable to many other industries, which gives engineers flexibility for later career moves.
+Beyond player protection, iGaming data teams work on recommending games, personalising promotions, predicting customer lifetime value and churn, optimising marketing spend across channels and detecting bonus abuse and fraud. These problems resemble those in e-commerce and media, with large volumes of event data, real-time decisions and extensive experimentation. The technical experience - streaming data, feature stores, experimentation platforms, real-time scoring - is transferable to many other industries, which gives engineers flexibility for later career moves.
 
 ## Payments and Real-Time Risk
 
@@ -121,7 +121,7 @@ Maltese employers value real-time ML engineering, experimentation, customer anal
 
 ## Preparing for Interviews
 
-Interviews typically include technical screens, coding tasks, ML fundamentals and case studies — for example designing a churn model, a fraud detection system or a responsible gambling alert. Prepare to discuss trade-offs, evaluation and ethical considerations, and ask detailed questions about the team, data and company standards.
+Interviews typically include technical screens, coding tasks, ML fundamentals and case studies - for example designing a churn model, a fraud detection system or a responsible gambling alert. Prepare to discuss trade-offs, evaluation and ethical considerations, and ask detailed questions about the team, data and company standards.
 
 ## Evaluating an Offer
 
@@ -137,7 +137,7 @@ Malta suits engineers who want English-speaking, commercially focused ML work in
 
 ## Health, Public Services and Digitalisation
 
-Malta's public sector has invested in digital government services, electronic health records and data platforms, creating roles for data analysts and data scientists in health, transport, education and public administration. Health data science includes capacity planning for hospitals, analysis of patient pathways and support for public health research, within strict data protection rules. Transport and urban planning teams analyse traffic data — an important topic on a densely populated island with significant congestion. Some public-sector roles require Maltese language skills and follow public recruitment procedures, while projects delivered by consultancies and IT companies are often in English. For engineers who want their work to benefit residents directly, these roles offer an alternative to the commercial sectors that dominate Malta's tech market.
+Malta's public sector has invested in digital government services, electronic health records and data platforms, creating roles for data analysts and data scientists in health, transport, education and public administration. Health data science includes capacity planning for hospitals, analysis of patient pathways and support for public health research, within strict data protection rules. Transport and urban planning teams analyse traffic data - an important topic on a densely populated island with significant congestion. Some public-sector roles require Maltese language skills and follow public recruitment procedures, while projects delivered by consultancies and IT companies are often in English. For engineers who want their work to benefit residents directly, these roles offer an alternative to the commercial sectors that dominate Malta's tech market.
 
 ## Remote Work from Malta
 
@@ -145,7 +145,7 @@ Malta attracts remote workers, including through a nomad residence permit for no
 
 ## Responsible AI
 
-Across gaming, fintech and public services, AI systems in Malta affect people's money, behaviour and access to services. Engineers who understand GDPR, the EU AI Act and sector-specific rules — and who can build transparent, well-documented systems — are increasingly valued, and they help employers maintain the trust of regulators and customers.
+Across gaming, fintech and public services, AI systems in Malta affect people's money, behaviour and access to services. Engineers who understand GDPR, the EU AI Act and sector-specific rules - and who can build transparent, well-documented systems - are increasingly valued, and they help employers maintain the trust of regulators and customers.
 
 ## Where People Live and Work
 
@@ -161,7 +161,7 @@ Visit the office area at rush hour before signing a lease; on Malta, ten kilomet
 
 A data scientist working on payment fraud in Stockholm receives an offer from a Malta-based payments company serving online merchants. The team works in English, and the offer includes relocation support.
 
-He compares net pay under Maltese tax rules with his Swedish salary, researches rents in Sliema and St Julian's and checks the company's licensing. He accepts and chooses a flat within walking distance of the office to avoid traffic. After a year, he says the fraud problems are as challenging as in Sweden, the international team is enjoyable and the climate is a clear improvement — though he notes that the island can feel small after a while.
+He compares net pay under Maltese tax rules with his Swedish salary, researches rents in Sliema and St Julian's and checks the company's licensing. He accepts and chooses a flat within walking distance of the office to avoid traffic. After a year, he says the fraud problems are as challenging as in Sweden, the international team is enjoyable and the climate is a clear improvement - though he notes that the island can feel small after a while.
 
 ## Key Takeaways
 

@@ -1,6 +1,6 @@
-🔥 Lukas built RouteMatch AI using **Bolt** — an AI freight-matching platform that landed a 40-carrier pilot, until a NIS2-driven vendor security review revealed his prototype wasn't close to ready. 🧠
+🔥 Lukas built RouteMatch AI using **Bolt** - an AI freight-matching platform that landed a 40-carrier pilot, until a NIS2-driven vendor security review revealed his prototype wasn't close to ready. 🧠
 
-If your AI platform touches freight, transport, or supply-chain data, the vendor review headed your way is very likely shaped by NIS2 — and it asks fundamentally different questions than a generic SaaS security questionnaire.
+If your AI platform touches freight, transport, or supply-chain data, the vendor review headed your way is very likely shaped by NIS2 - and it asks fundamentally different questions than a generic SaaS security questionnaire.
 
 ❌ No database-enforced isolation between carrier accounts that directly compete with each other
 ❌ No rate limiting or authentication hardening on EDI/API integration points
@@ -12,7 +12,7 @@ If your AI platform touches freight, transport, or supply-chain data, the vendor
 
 At **LaunchStudio**, we've been closing exactly this class of regulation-specific enterprise gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lukas's pilot launched on schedule: the compliance team approved RouteMatch AI as a vendor without a follow-up call, and all 40 carrier partners onboarded in the first week. (€5,800 (Enterprise Hardening Package) — 7 business days.) 🚀
+Lukas's pilot launched on schedule: the compliance team approved RouteMatch AI as a vendor without a follow-up call, and all 40 carrier partners onboarded in the first week. (€5,800 (Enterprise Hardening Package) - 7 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/european-logistics-vendor-security-review-case-study
 

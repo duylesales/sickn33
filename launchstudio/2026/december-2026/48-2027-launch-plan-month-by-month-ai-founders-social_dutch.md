@@ -1,4 +1,4 @@
-🚨 Ze liep al MEER DAN EEN JAAR rond met haar idee. Een gestructureerd 3-maandenplan zorgde er eindelijk voor dat ze live ging — met betalende klanten vanaf dag 1! 📅
+🚨 Ze liep al MEER DAN EEN JAAR rond met haar idee. Een gestructureerd 3-maandenplan zorgde er eindelijk voor dat ze live ging - met betalende klanten vanaf dag 1! 📅
 
 Een idee zonder plan blijft een droom. Dit is het concrete maand-voor-maand stappenplan voor een succesvolle SaaS-lancering in 2027: 🧠
 
@@ -10,7 +10,7 @@ De #1 valkuil: Maand 1 overslaan omdat coderen met AI zoveel sneller en leuker v
 
 💰 Realistisch kwartaalbudget: €1.000 tot €8.000 totaal, voornamelijk geconcentreerd in Maand 3. Maand 1 en 2 kosten vooral TIJD, geen geld.
 
-Haar resultaat: gelanceerd naar 22 warme contacten waarmee ze sinds Maand 1 contact had — 9 betalende hotelklanten in de eerste 2 weken! 🎯
+Haar resultaat: gelanceerd naar 22 warme contacten waarmee ze sinds Maand 1 contact had - 9 betalende hotelklanten in de eerste 2 weken! 🎯
 
 Bij **LaunchStudio**, ondersteund door Manifera's 120+ software-engineers, voeren we Maand 3 uit in 1 tot 3 weken zodra u zover bent. 🛡️🚀
 

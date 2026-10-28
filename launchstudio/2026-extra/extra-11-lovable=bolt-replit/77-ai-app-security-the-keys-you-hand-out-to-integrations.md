@@ -12,7 +12,7 @@ Target Persona: SaaS Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App Security: The Keys You Hand Out to Integrations",
-  "description": "Every integration is a credential going somewhere you do not control — in both directions. How to issue keys that can be scoped and revoked, what to do about the keys customers give you, and why breadth of access is the real risk.",
+  "description": "Every integration is a credential going somewhere you do not control - in both directions. How to issue keys that can be scoped and revoked, what to do about the keys customers give you, and why breadth of access is the real risk.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-08-18",
@@ -22,7 +22,7 @@ Target Persona: SaaS Scale-Up
 
 Integrations are how a product stops being an island, and every one of them is a credential living somewhere you cannot see.
 
-The traffic runs both ways, and founders think about only one direction. Keys you hold, for the services you call — those get attention, because they appear on your invoices. Keys you issue, so customers and partners can call you — those get much less, because they feel like a feature rather than a risk. And keys customers give you, so you can reach into their systems, get the least attention of all, which is unfortunate because they carry the most consequence.
+The traffic runs both ways, and founders think about only one direction. Keys you hold, for the services you call - those get attention, because they appear on your invoices. Keys you issue, so customers and partners can call you - those get much less, because they feel like a feature rather than a risk. And keys customers give you, so you can reach into their systems, get the least attention of all, which is unfortunate because they carry the most consequence.
 
 ## Three Directions, Three Different Problems
 
@@ -30,13 +30,13 @@ The traffic runs both ways, and founders think about only one direction. Keys yo
 
 **Keys you issue.** A customer wants their own system to push data into yours, or a partner builds on top of you. Now you are the provider, and the risk is a key of yours in somebody else's codebase, deployed by people you will never meet, possibly committed to a repository you cannot see.
 
-**Keys customers give you.** Access to their accounting system, their calendar, their CRM. The risk is that you are now holding the keys to another company's data, and if you are compromised, they are — which is precisely what their procurement team was worried about.
+**Keys customers give you.** Access to their accounting system, their calendar, their CRM. The risk is that you are now holding the keys to another company's data, and if you are compromised, they are - which is precisely what their procurement team was worried about.
 
 Each needs a different answer. The dangerous move is treating all three as "an API key in an environment variable".
 
 ## When You Issue Keys, Assume They Will Leak
 
-Not through malice — through ordinary practice. Keys get committed to repositories, pasted into chat, written into a low-code tool by a contractor, put in a browser-side script by somebody who did not realise, and left behind when an employee leaves.
+Not through malice - through ordinary practice. Keys get committed to repositories, pasted into chat, written into a low-code tool by a contractor, put in a browser-side script by somebody who did not realise, and left behind when an employee leaves.
 
 Design for that. Five properties make an issued key survivable.
 
@@ -86,7 +86,7 @@ Once you have integrations, two questions appear in every customer conversation.
 
 **"What can your integration do inside our system?"** Answerable in one sentence if you requested narrow scopes, and uncomfortable if you asked for everything.
 
-**"What happens to our access if you are breached?"** They want to hear that credentials are encrypted, access is restricted internally, and you can revoke everything quickly. Having a tested revocation path — one operation that invalidates all issued keys or all stored customer tokens — is worth building before you are asked.
+**"What happens to our access if you are breached?"** They want to hear that credentials are encrypted, access is restricted internally, and you can revoke everything quickly. Having a tested revocation path - one operation that invalidates all issued keys or all stored customer tokens - is worth building before you are asked.
 
 Add both to the security document you send to procurement teams, alongside the subprocessor list.
 
@@ -104,7 +104,7 @@ It will happen, usually through somebody else's mistake, and having a sequence w
 
 **Then establish what it did.** Your integration audit trail answers this: which endpoints, from which origins, at what times, on which records. This is the moment logging either pays for itself or reveals its absence, and the difference between "no unexpected use" and "we cannot say" is entirely determined by work done months earlier.
 
-**Tell the customer plainly.** What was exposed, what it could reach, what you found, what you have done. If the leak was theirs — a key committed to a repository, pasted into a browser — say so without blame and help them move the integration server-side. They already feel bad; what they need is the fix.
+**Tell the customer plainly.** What was exposed, what it could reach, what you found, what you have done. If the leak was theirs - a key committed to a repository, pasted into a browser - say so without blame and help them move the integration server-side. They already feel bad; what they need is the fix.
 
 **Decide whether it is notifiable.** If the key could reach personal data and there is any indication it was used, this is a potential personal data breach with the obligations that follow, including timescales agreed in your data processing agreement. Assess it deliberately rather than hoping, and document the reasoning either way.
 
@@ -130,16 +130,16 @@ The largest customers wanted their project-management systems to push documents 
 
 A building firm's IT manager reported the problem himself. Their key had been committed to a repository by a contractor eighteen months earlier, and the repository had been made public during a reorganisation. He had found it while auditing something else.
 
-Ten business days of work: an issued-key system rebuilt with scopes — read, write and administrative as separate grants — with each key hashed rather than stored, shown once at creation, named per integration, rate-limited, and revocable by the customer in their own settings screen with last-used time and origin displayed; all 16 existing keys revoked and reissued with the narrowest scope each integration actually needed, which for nine of them was read-and-upload only; access logs for the exposed key reviewed against the firm's own records, establishing that it had not been used from an unexpected origin; outgoing webhooks signed with documented verification; the incoming endpoint given signature verification and deduplication; an integration audit trail added so every API action is attributable to a named key; and a single operation built that revokes every key for a customer at once.
+Ten business days of work: an issued-key system rebuilt with scopes - read, write and administrative as separate grants - with each key hashed rather than stored, shown once at creation, named per integration, rate-limited, and revocable by the customer in their own settings screen with last-used time and origin displayed; all 16 existing keys revoked and reissued with the narrowest scope each integration actually needed, which for nine of them was read-and-upload only; access logs for the exposed key reviewed against the firm's own records, establishing that it had not been used from an unexpected origin; outgoing webhooks signed with documented verification; the incoming endpoint given signature verification and deduplication; an integration audit trail added so every API action is attributable to a named key; and a single operation built that revokes every key for a customer at once.
 
-The review of the exposed key found no unauthorised use. That conclusion was only possible because the logging was added before the answer was needed — a point Merel now makes to prospects.
+The review of the exposed key found no unauthorised use. That conclusion was only possible because the logging was added before the answer was needed - a point Merel now makes to prospects.
 
 **Result:** the firm stayed and expanded its contract, and the per-customer key screen became a feature two later prospects mentioned during evaluation.
 
 > *"A key I issued sat in a public repository for months with permission to delete every drawing on three hundred projects. It could have been read-only and nobody would have noticed the difference."*
-> — **Merel Duijvestein, Founder, Bouwdossier (Almere)**
+> - **Merel Duijvestein, Founder, Bouwdossier (Almere)**
 
-**Cost & Timeline:** €4,700 (scoped key system with hashing and self-service revocation, key reissue, webhook signing and verification, integration audit trail, mass revocation) — completed in 10 business days.
+**Cost & Timeline:** €4,700 (scoped key system with hashing and self-service revocation, key reissue, webhook signing and verification, integration audit trail, mass revocation) - completed in 10 business days.
 
 ## Frequently Asked Questions
 
@@ -149,7 +149,7 @@ Only as a hash. Show the key once at creation and never again. If your system ca
 
 ### What scope should an issued key have?
 
-The narrowest the integration actually needs, offered as separate grants — read, write, administrative. Most customer integrations only need to read and add data, and offering read-only removes most of the possible damage.
+The narrowest the integration actually needs, offered as separate grants - read, write, administrative. Most customer integrations only need to read and add data, and offering read-only removes most of the possible damage.
 
 ### How should I hold credentials a customer gives me?
 
@@ -181,7 +181,7 @@ What your integration can do inside their system, and what happens to that acces
       "name": "What scope should an issued key have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The narrowest the integration needs, as separate read, write and administrative grants — most customer integrations only read and add data."
+        "text": "The narrowest the integration needs, as separate read, write and administrative grants - most customer integrations only read and add data."
       }
     },
     {
@@ -205,7 +205,7 @@ What your integration can do inside their system, and what happens to that acces
       "name": "What will customers ask about our integration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "What it can do inside their system and what happens to that access if you are breached — both answerable with narrow scopes and a tested revocation path."
+        "text": "What it can do inside their system and what happens to that access if you are breached - both answerable with narrow scopes and a tested revocation path."
       }
     }
   ]

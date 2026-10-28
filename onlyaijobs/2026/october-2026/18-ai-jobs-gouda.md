@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Gouda's central location between Rotterdam and Utrecht, combined with a long tradition in food production, creates a mix of logistics data demand and quality-control modelling in the food sector — two segments rarely mentioned together, but which exist side by side here.
+Gouda's central location between Rotterdam and Utrecht, combined with a long tradition in food production, creates a mix of logistics data demand and quality-control modelling in the food sector - two segments rarely mentioned together, but which exist side by side here.
 
 ## What Kind of Data Work Actually Happens Here
 
-Quality control in food production and logistics planning for companies that benefit from the central location between two large cities — both require statistical rigour, with real operational consequences when a prediction is wrong.
+Quality control in food production and logistics planning for companies that benefit from the central location between two large cities - both require statistical rigour, with real operational consequences when a prediction is wrong.
 
 ## Why This Work Is Less Visible
 
@@ -47,15 +47,15 @@ Food companies and regional logistics companies rarely compete for visibility on
 
 ## Gouda's Named Food Heritage and Economy
 
-**Gouda Cheese Market.** Gouda's traditional cheese market, held on the market square in front of the historic Waag, is one of the best-known symbols of Dutch dairy heritage. The name travels worldwide, and **Gouda Holland** is registered in the EU as a Protected Geographical Indication, meaning cheese sold under that name must meet specific production and origin requirements — including traceability and quality rules that generate data obligations for producers.
+**Gouda Cheese Market.** Gouda's traditional cheese market, held on the market square in front of the historic Waag, is one of the best-known symbols of Dutch dairy heritage. The name travels worldwide, and **Gouda Holland** is registered in the EU as a Protected Geographical Indication, meaning cheese sold under that name must meet specific production and origin requirements - including traceability and quality rules that generate data obligations for producers.
 
-**Syrup waffles.** Gouda is also the home of the stroopwafel. **Kamphuisen Siroopwafelfabriek**, founded in Gouda in the nineteenth century, is one of the long-standing producers. Bakery production at industrial scale involves weight control, baking process parameters and packaging quality — classic statistical process control territory.
+**Syrup waffles.** Gouda is also the home of the stroopwafel. **Kamphuisen Siroopwafelfabriek**, founded in Gouda in the nineteenth century, is one of the long-standing producers. Bakery production at industrial scale involves weight control, baking process parameters and packaging quality - classic statistical process control territory.
 
 **Healthcare.** **Groene Hart Hospital** in Gouda is a regional employer with data work in capacity planning, quality and patient flows.
 
 **Education.** **ID College**, a vocational education institute with locations in Gouda and the surrounding region, trains technical, logistics and ICT professionals, while universities in Rotterdam, Delft, Leiden and Utrecht are within commuting distance.
 
-**The Green Heart.** Gouda lies in the Green Heart, the largely rural area enclosed by the Randstad cities. Dairy farming in the surrounding peat meadows supplies the regional cheese industry — and the soil subsidence of peat areas makes water levels, emissions and land use important policy data topics.
+**The Green Heart.** Gouda lies in the Green Heart, the largely rural area enclosed by the Randstad cities. Dairy farming in the surrounding peat meadows supplies the regional cheese industry - and the soil subsidence of peat areas makes water levels, emissions and land use important policy data topics.
 
 ## The Entity Landscape by Type
 
@@ -86,7 +86,7 @@ A production line in the food industry continuously generates measurement data: 
 
 In addition, the costs of the two types of error are strongly asymmetric and context-dependent. A false alarm that unnecessarily stops a production batch costs money directly in lost capacity and materials. A missed defect that reaches the market can be far more expensive, both financially and in reputational damage, and touches legal food safety obligations under the **EU Food Hygiene Regulation (EC) No 852/2004** and its **HACCP**-based approach. Weighing this asymmetry correctly isn't a purely technical choice; it requires explicit agreement with quality and production managers, and that alignment is often a bigger part of the job than the modelling itself.
 
-A third technical dimension that weighs more heavily here than elsewhere is traceability. When a quality problem is found afterwards, an organisation must be able to reconstruct which products may have been affected and on what data decisions were based. Models running in this context must not only make good decisions but record them traceably — a requirement that shapes the design and simply doesn't exist in many other application domains.
+A third technical dimension that weighs more heavily here than elsewhere is traceability. When a quality problem is found afterwards, an organisation must be able to reconstruct which products may have been affected and on what data decisions were based. Models running in this context must not only make good decisions but record them traceably - a requirement that shapes the design and simply doesn't exist in many other application domains.
 
 ## How the Logistics Side of Gouda's Market Compares
 
@@ -100,7 +100,7 @@ Gouda's central location between Rotterdam and Utrecht plays a concrete role her
 
 For a candidate seriously considering this region, the most important practical step is deciding early which of the two pillars actually appeals to you, because preparation and self-presentation differ per segment.
 
-For the quality-control side, it pays to study **statistical process control** — a discipline older than modern machine learning that remains the shared language in which quality departments in the food industry think and communicate. Candidates who speak this language can work effectively from day one with the people who hold the domain knowledge.
+For the quality-control side, it pays to study **statistical process control** - a discipline older than modern machine learning that remains the shared language in which quality departments in the food industry think and communicate. Candidates who speak this language can work effectively from day one with the people who hold the domain knowledge.
 
 For the logistics side, the most valuable preparation is practical experience with optimisation problems under hard constraints, plus some familiarity with the operational terms common in the field.
 
@@ -114,7 +114,7 @@ Food production has no significant cyclical drop in demand; people keep eating r
 
 The first months at a medium-sized food producer or regional logistics provider almost always go into understanding and making accessible existing data that was never collected with analysis in mind. Production data sits in a system designed for process control, quality measurements in another system managed by the quality department, and the link between them often exists only in the heads of people who have worked there for years. Reconstructing that link is unglamorous work rarely mentioned in a job description, but it is the precondition for everything that follows.
 
-The second phase is usually about building trust, not technical refinement. A model that is technically correct but not trusted by operators is ignored; a simpler model whose logic is understandable to the people who have to work with it gets used. Only in the second year does the kind of work candidates originally imagined typically come into view at most employers in this segment — which is the normal sequence in which analytical capacity develops in an organisation without an earlier data function.
+The second phase is usually about building trust, not technical refinement. A model that is technically correct but not trusted by operators is ignored; a simpler model whose logic is understandable to the people who have to work with it gets used. Only in the second year does the kind of work candidates originally imagined typically come into view at most employers in this segment - which is the normal sequence in which analytical capacity develops in an organisation without an earlier data function.
 
 ## What This Region Offers Beyond Work
 
@@ -122,7 +122,7 @@ Gouda's central location between Rotterdam, Utrecht and The Hague gives resident
 
 ## Why Employers in This Segment Are Often Open to Career Switchers
 
-Medium-sized employers in food and regional logistics generally have a more pragmatic attitude towards profiles that don't match the vacancy exactly than larger, more structured organisations. Where a large employer can afford to wait for an exact match, a medium-sized regional employer faces a choice between a strong candidate with a slightly different profile or another quarter with an open vacancy. It is therefore worth applying even when you don't meet every stated requirement — provided your motivation names explicitly which parts of your background transfer directly and how you plan to build the remaining knowledge.
+Medium-sized employers in food and regional logistics generally have a more pragmatic attitude towards profiles that don't match the vacancy exactly than larger, more structured organisations. Where a large employer can afford to wait for an exact match, a medium-sized regional employer faces a choice between a strong candidate with a slightly different profile or another quarter with an open vacancy. It is therefore worth applying even when you don't meet every stated requirement - provided your motivation names explicitly which parts of your background transfer directly and how you plan to build the remaining knowledge.
 
 ## Typical Job Titles to Search For
 
@@ -135,7 +135,7 @@ Medium-sized employers in food and regional logistics generally have a more prag
 
 ## Key Takeaways
 
-- Gouda combines a food heritage — the Cheese Market, the Gouda Holland PGI and stroopwafel production — with a central logistics location on the A12 and A20.
+- Gouda combines a food heritage - the Cheese Market, the Gouda Holland PGI and stroopwafel production - with a central logistics location on the A12 and A20.
 - Food quality control means separating natural variation, process deviations and defects, with HACCP-based traceability.
 - Logistics planning serves several large cities at once and faces zero-emission zone constraints.
 - Statistical process control and optimisation under constraints are the most valuable preparation.
@@ -150,7 +150,7 @@ Browse current AI, machine learning and data jobs in and around Gouda at [onlyai
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't see Gouda as a data work location) Is there really data work in Gouda beyond its famous cheese tradition?
-Yes — quality control in food production and logistics planning are real applications of statistical modelling in the region.
+Yes - quality control in food production and logistics planning are real applications of statistical modelling in the region.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Gouda"?
 Food companies and regional logistics companies rarely compete for visibility, and job titles rarely reveal the modelling component.
@@ -159,7 +159,7 @@ Food companies and regional logistics companies rarely compete for visibility, a
 A central location between Rotterdam and Utrecht gives many people a relatively short commute from a wider area.
 
 ### (Scenario: candidate unsure whether this is technically demanding) Is quality control in food as technically demanding as consumer AI?
-Often, yes — food safety standards leave little room for a model that is "mostly good enough."
+Often, yes - food safety standards leave little room for a model that is "mostly good enough."
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work?
 Filter by category instead of job title, and explicitly consider Gouda as a work location because of its central position.
@@ -169,10 +169,10 @@ Filter by category instead of job title, and explicitly consider Gouda as a work
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there really data work in Gouda beyond its famous cheese tradition?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — quality control in food production and logistics planning are real applications."}},
+    {"@type": "Question", "name": "Is there really data work in Gouda beyond its famous cheese tradition?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - quality control in food production and logistics planning are real applications."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Gouda\"?", "acceptedAnswer": {"@type": "Answer", "text": "Food companies and logistics companies rarely compete for visibility."}},
     {"@type": "Question", "name": "Why is Gouda's central location relevant?", "acceptedAnswer": {"@type": "Answer", "text": "A central location between Rotterdam and Utrecht gives many people a relatively short commute."}},
-    {"@type": "Question", "name": "Is quality control in food as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes — food safety standards leave little room for a model that is 'mostly good enough'."}},
+    {"@type": "Question", "name": "Is quality control in food as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes - food safety standards leave little room for a model that is 'mostly good enough'."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category instead of job title, and explicitly consider Gouda as a work location."}}
   ]
 }

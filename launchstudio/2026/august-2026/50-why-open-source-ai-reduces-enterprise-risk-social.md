@@ -1,4 +1,4 @@
-🔥 Ava built a prototype using **Cursor** — ava, an attorney, used **cursor** to build an ai contract scanner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Ava built a prototype using **Cursor** - ava, an attorney, used **cursor** to build an ai contract scanner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ava's application achieved silky-smooth performance: Enterprise security reviews passed easily, eliminating dependence on external LLM vendors. (€4,500 (Private LLM Deployment) — production-ready and deployed in 9 business days.). 🚀
+Ava's application achieved silky-smooth performance: Enterprise security reviews passed easily, eliminating dependence on external LLM vendors. (€4,500 (Private LLM Deployment) - production-ready and deployed in 9 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/why-open-source-ai-reduces-enterprise-risk
 

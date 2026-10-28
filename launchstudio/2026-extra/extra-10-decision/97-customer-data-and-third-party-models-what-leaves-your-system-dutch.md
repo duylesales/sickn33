@@ -40,7 +40,7 @@ Zodra u persoonsgegevens naar een externe AI-modelprovider (zoals OpenAI, Anthro
 
 **De AI-provider wordt een officiële subverwerker (*subprocessor*).** Uw verwerkersovereenkomst (DPA) met uw klanten bevat vrijwel zeker een lijst van partijen die namens u gegevens verwerken. Die lijst moet verplicht worden uitgebreid met de modelprovider. Het toevoegen van een nieuwe subverwerker vereist doorgaans een tijdige notificatie aan uw klanten, en in sommige zakelijke contracten hebben zij zelfs het expliciete recht om bezwaar te maken.
 
-**U moet een Verwerkersovereenkomst (DPA) met de provider sluiten.** De grote aanbieders bieden standaard DPA's aan. Het is een kwestie van de juiste juridische voorwaarden accepteren in uw zakelijke dashboard — u hoeft niet individueel te onderhandelen — maar het is een cruciale administratieve stap die bij prototypes vaak simpelweg wordt overgeslagen.
+**U moet een Verwerkersovereenkomst (DPA) met de provider sluiten.** De grote aanbieders bieden standaard DPA's aan. Het is een kwestie van de juiste juridische voorwaarden accepteren in uw zakelijke dashboard - u hoeft niet individueel te onderhandelen - maar het is een cruciale administratieve stap die bij prototypes vaak simpelweg wordt overgeslagen.
 
 **Uw privacybeleid moet de gegevensstroom weerspiegelen.** Welke data wordt verstuurd, naar welke partij, voor welk specifiek doel, waar vindt de verwerking plaats, en hoe lang wordt de data bewaard? Dit is exact het document dat de compliance officer of security officer van een zakelijke klant als eerste opvraagt en doorleest.
 
@@ -50,9 +50,9 @@ En dan is er de beslissende vraag die bepaalt of zakelijke klanten uw product ü
 
 Voor Europese zakelijke klanten is de geografische locatie van de dataverwerking (*data residency*) vaak de doorslaggevende factor in het inkooptraject. Gelukkig is dit tegenwoordig veel beter oplosbaar dan enkele jaren geleden.
 
-De grote modelproviders bieden inmiddels regionale verwerkingsopties aan — dedicated Europese endpoints (zoals Azure OpenAI in West-Europe of AWS Bedrock in Frankfurt), gekoppeld aan contractuele toezeggingen over waar gegevens daadwerkelijk worden verwerkt en opgeslagen. Sommige aanbieders bieden tevens zero-data-retention (ZDR) overeenkomsten aan, waarbij prompts en gegenereerde outputs na afronding van de API-aanroep direct worden gewist en nergens op schijf worden bewaard. Of deze voorzieningen beschikbaar zijn, hangt af van de provider en het serviceniveau; soms brengen ze meerkosten met zich mee of beperken ze welke modelversies kunnen worden ingezet.
+De grote modelproviders bieden inmiddels regionale verwerkingsopties aan - dedicated Europese endpoints (zoals Azure OpenAI in West-Europe of AWS Bedrock in Frankfurt), gekoppeld aan contractuele toezeggingen over waar gegevens daadwerkelijk worden verwerkt en opgeslagen. Sommige aanbieders bieden tevens zero-data-retention (ZDR) overeenkomsten aan, waarbij prompts en gegenereerde outputs na afronding van de API-aanroep direct worden gewist en nergens op schijf worden bewaard. Of deze voorzieningen beschikbaar zijn, hangt af van de provider en het serviceniveau; soms brengen ze meerkosten met zich mee of beperken ze welke modelversies kunnen worden ingezet.
 
-De praktische aanpak: onderzoek wat uw modelprovider biedt op het gebied van Europese dataverwerking, configureer deze Europese endpoints als u Europese zakelijke klanten bedient, en zorg dat u helder en ondubbelzinnig kunt aantonen waar de data naartoe gaat. Voor organisaties in de zorg, juridische dienstverlening, financiële sector of overheid is dit geen vrijblijvende voorkeur — een onrechtmatige doorgifte van persoonsgegevens buiten de EU/EER zonder passend beschermingsniveau kan de harde reden zijn waarom een deal definitief afketst, ongeacht hoe indrukwekkend uw AI-feature functioneert.
+De praktische aanpak: onderzoek wat uw modelprovider biedt op het gebied van Europese dataverwerking, configureer deze Europese endpoints als u Europese zakelijke klanten bedient, en zorg dat u helder en ondubbelzinnig kunt aantonen waar de data naartoe gaat. Voor organisaties in de zorg, juridische dienstverlening, financiële sector of overheid is dit geen vrijblijvende voorkeur - een onrechtmatige doorgifte van persoonsgegevens buiten de EU/EER zonder passend beschermingsniveau kan de harde reden zijn waarom een deal definitief afketst, ongeacht hoe indrukwekkend uw AI-feature functioneert.
 
 Sommige klanten met zeer strikte compliance-eisen zullen eisen dat data hun eigen geografische jurisdictie onder geen beding verlaat. Dat wijst naar een *self-hosted* open-source model (zoals Llama of Mistral) binnen een eigen Europese cloudomgeving. Dat is een zware architectuurbeslissing met aanzienlijke operationele complexiteit, die pas gerechtvaardigd is wanneer de contractwaarde van die specifieke klant de investering rechtvaardigt.
 
@@ -68,7 +68,7 @@ De meest effectieve bescherming tegen datalekken en compliance-conflicten is nie
 
 **Sluit bijzondere categorieën persoonsgegevens standaard uit.** Medische gegevens, biometrische data of strafrechtelijke gegevens vallen onder het strengste AVG-regime; het doorsluizen van dergelijke data naar een externe partij vraagt om een veel zwaardere juridische grondslag dan simpel gebruikersgemak.
 
-Dataminimalisatie heeft daarnaast een direct technisch voordeel dat vaak over het hoofd wordt gezien: het verbetert vrijwel altijd de kwaliteit van de output. Een model dat een compacte, gefocuste invoer krijgt, levert een scherpere en nauwkeurigere analyse dan een model dat een gigantische dump van irrelevante data moet doorspitten om het juiste antwoord te vinden — en het kost bovendien een fractie van de API-rekening.
+Dataminimalisatie heeft daarnaast een direct technisch voordeel dat vaak over het hoofd wordt gezien: het verbetert vrijwel altijd de kwaliteit van de output. Een model dat een compacte, gefocuste invoer krijgt, levert een scherpere en nauwkeurigere analyse dan een model dat een gigantische dump van irrelevante data moet doorspitten om het juiste antwoord te vinden - en het kost bovendien een fractie van de API-rekening.
 
 Het nauwkeurig bepalen van wat er daadwerkelijk verstuurd moet worden, het implementeren van effectieve redactie-algoritmen en het configureren van regionale verwerkingspaden is specifiek software-engineeringwerk. Het wordt routinematig overgeslagen bij haastig gebouwde prototypes waar simpelweg het hele JSON-object in de prompt wordt geplakt. LaunchStudio, ondersteund door meer dan 11 jaar enterprise engineering-ervaring bij Manifera, implementeert dataminimalisatie en de bijbehorende compliance-documentatie vanaf dag één. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige review binnen één werkdag.
 
@@ -85,7 +85,7 @@ Zij vragen:
 - Wat gebeurt er met gegenereerde content als wij verzoeken om verwijdering van onze bedrijfsgegevens?
 - Welke medewerkers binnen uw eigen bedrijf hebben toegang tot de opgeslagen prompts en gegenereerde outputs?
 
-Die laatste vraag verdient bijzondere aandacht, omdat deze vrijwel altijd wordt vergeten. Als uw applicatielogging volledige modelprompts en antwoorden wegschrijft voor debugging — wat functioneel heel nuttig is — dan bevatten die centrale logs (bijvoorbeeld in Datadog, Sentry of CloudWatch) ruwe klantgegevens. Iedere ontwikkelaar met toegang tot die logging-tool kan die data inzien. Dat vereist exact hetzelfde retentiebeleid, strikt rolgebaseerd toegangsbeheer (RBAC) en een duidelijke vermelding in uw privacyvoorwaarden als de rest van uw primaire database.
+Die laatste vraag verdient bijzondere aandacht, omdat deze vrijwel altijd wordt vergeten. Als uw applicatielogging volledige modelprompts en antwoorden wegschrijft voor debugging - wat functioneel heel nuttig is - dan bevatten die centrale logs (bijvoorbeeld in Datadog, Sentry of CloudWatch) ruwe klantgegevens. Iedere ontwikkelaar met toegang tot die logging-tool kan die data inzien. Dat vereist exact hetzelfde retentiebeleid, strikt rolgebaseerd toegangsbeheer (RBAC) en een duidelijke vermelding in uw privacyvoorwaarden als de rest van uw primaire database.
 
 Ook de voorlaatste vraag is cruciaal: wanneer een klant een beroep doet op zijn wettelijke recht op gegevenswissing (*right to erasure*), is afgeleide AI-content gebaseerd op zijn data eveneens persoonsdata. Verwijderingsscripts moeten dus ook die gegenereerde analyses en eventueel bij de provider gecachte records volledig bereiken.
 
@@ -105,7 +105,7 @@ Het loont om deze configuratieoptie in te bouwen vóórdat u uw eerste enterpris
 
 Ruben Aarts runde Zorgnotitie, een digitale verslagleggings- en praktijkbeheertool voor eerstelijns paramedische zorgverleners en fysiotherapeuten in Nederland, gebouwd via Bolt. Een populaire AI-knop vatte behandelverslagen automatisch samen. 
 
-Onder de motorkap stuurde de applicatie het **volledige cliëntendossier** — inclusief naam van de patiënt, geboortedatum, BSN en gevoelige klinische observaties — rechtstreeks naar een AI-modelprovider. Ruben gebruikte hiervoor een consumenten-API-sleutel op zijn eigen naam, zónder Verwerkersovereenkomst (DPA) en zónder garanties over Europese serverlocaties.
+Onder de motorkap stuurde de applicatie het **volledige cliëntendossier** - inclusief naam van de patiënt, geboortedatum, BSN en gevoelige klinische observaties - rechtstreeks naar een AI-modelprovider. Ruben gebruikte hiervoor een consumenten-API-sleutel op zijn eigen naam, zónder Verwerkersovereenkomst (DPA) en zónder garanties over Europese serverlocaties.
 
 Een regionaal samenwerkingsverband van **elf fysiotherapiepraktijken** toonde grote interesse in de software. Tijdens de contractonderhandelingen stuurde de Functionaris Gegevensbescherming (FG) van de zorggroep de standaard leveranciersvragenlijst:
 1. Waar worden de patiëntgegevens fysiek verwerkt?
@@ -116,12 +116,12 @@ Een regionaal samenwerkingsverband van **elf fysiotherapiepraktijken** toonde gr
 Ruben kon op geen van deze vragen een bevredigend antwoord geven. De zorggroep brak de onderhandelingen per direct af.
 
 Een audit door LaunchStudio legde nog een groter lek bloot:
-Alle volledige prompts — inclusief de medische patiëntgegevens — werden integraal gelogd in een externe monitoringtool met een retentietijd van 90 dagen. Cliënten die een formeel AVG-verwijderverzoek hadden ingediend, stonden met hun diagnoses nog altijd opgeslagen in die serverlogs.
+Alle volledige prompts - inclusief de medische patiëntgegevens - werden integraal gelogd in een externe monitoringtool met een retentietijd van 90 dagen. Cliënten die een formeel AVG-verwijderverzoek hadden ingediend, stonden met hun diagnoses nog altijd opgeslagen in die serverlogs.
 
 **Resultaat:** Binnen vier werkdagen saneerde LaunchStudio de data-architectuur: het API-account werd overgezet naar een zakelijke tier met Europese data-residency en een officiële DPA, er werd een automatische anonimiseringslaag gebouwd die patiëntnamen en geboortedata vóór verzending verving door tokens, de cloudlogging werd beperkt tot geanonimiseerde metadata, er kwam een organisatieschakelaar om AI per praktijk uit te zetten, en er werd een transparant compliance-document opgesteld. Gewapend met dit dossier benaderde Ruben de zorggroep opnieuw; de FG keurde de software goed en alle elf praktijken tekenden alsnog.
 
 > *"De AI-knop was de reden waarom ze geïnteresseerd waren, en exact de reden waarom ze 'nee' zeiden. Elke vraag van de privacy-officer was volkomen redelijk, en ik had op geen enkele vraag een antwoord."*
-> — **Ruben Aarts, Oprichter, Zorgnotitie**
+> - **Ruben Aarts, Oprichter, Zorgnotitie**
 
 **Kosten & Doorlooptijd:** Dataminimalisatie, pseudonimiseringspijplijn en DPA-documentatie opgeleverd in 4 werkdagen.
 

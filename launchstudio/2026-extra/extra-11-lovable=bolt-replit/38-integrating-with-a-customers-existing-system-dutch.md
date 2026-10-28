@@ -22,13 +22,13 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 *"Koppelt jullie software ook met ons huidige ERP- of planningssysteem?"* Het is de vraag die een veelbelovend verkoopgesprek in één klap kan omtoveren tot een getekend contract. Tegelijkertijd is het precies de vraag die meer roadmaps van vroege SaaS-producten heeft gekaapt dan welk ander onderwerp dan ook.
 
-De reden is simpel: de term 'integreren' kan slaan op vier fundamenteel verschillende technische toezeggingen. Het varieert van een middag werk tot een permanente operationele verplichting. Het gevaar schuilt erin dat de oprichter die enthousiast "ja" zegt en de zakelijke klant die de vraag stelt, vaak aan twee totaal verschillende dingen denken. Exact achterhalen wát er bedoeld wordt — vóórdat je een offerte uitbrengt, niet pas na de handtekening — is de hele kunst.
+De reden is simpel: de term 'integreren' kan slaan op vier fundamenteel verschillende technische toezeggingen. Het varieert van een middag werk tot een permanente operationele verplichting. Het gevaar schuilt erin dat de oprichter die enthousiast "ja" zegt en de zakelijke klant die de vraag stelt, vaak aan twee totaal verschillende dingen denken. Exact achterhalen wát er bedoeld wordt - vóórdat je een offerte uitbrengt, niet pas na de handtekening - is de hele kunst.
 
 ## De vier niveaus, van goedkoopst naar meest complex
 
 **Niveau één: Gegevensuitwisseling via bestanden (export en import).** De klant kan zijn gegevens downloaden uit jouw app en uploaden in zijn eigen software (of omgekeerd) in een gestandaardiseerd formaat (zoals CSV, Excel of XML). Onopvallend, direct functioneel en verrassend vaak exact wat de klant zoekt zodra je doorvraagt naar de praktische use-case.
 
-**Niveau twee: Jouw software leest periodiek data uit hun systeem.** Jouw applicatie haalt volgens een vast tijdschema gegevens op uit hun API of SFTP-server — bijvoorbeeld een actuele debiteurenlijst, een tarievenbestand of een rooster. Jij bepaalt het tijdstip, de frequentie en de foutafhandeling, wat het beheer voorspelbaar en overzichtelijk houdt.
+**Niveau twee: Jouw software leest periodiek data uit hun systeem.** Jouw applicatie haalt volgens een vast tijdschema gegevens op uit hun API of SFTP-server - bijvoorbeeld een actuele debiteurenlijst, een tarievenbestand of een rooster. Jij bepaalt het tijdstip, de frequentie en de foutafhandeling, wat het beheer voorspelbaar en overzichtelijk houdt.
 
 **Niveau drie: Hun systeem stuurt realtime gebeurtenissen naar jou.** Hun software pusht webhooks of events naar jouw API zodra er iets gebeurt. Dit is aanzienlijk complexer: je erft direct hun retry-beleid, willekeurige volgorde van binnenkomst, duplicate verzoeken en hun specifieke definitie van een datamutatie.
 
@@ -82,7 +82,7 @@ Voor Nederlandse zakelijke klanten is dit een standaardonderdeel van de inkooppr
 
 **Breng onderhoudskosten structureel in rekening.** Integraties vergen periodiek onderhoud zodra de externe partij een update uitrolt. Een klein vast maandelijks onderhoudsbedrag is volkomen redelijk en voorkomt dat integraties verlieslatend worden.
 
-**Leg vast wie de eerstelijns support verzorgt.** Als data een keer niet verschijnt, belt de klant altijd naar jou — ook als de storing bij hun eigen IT-afdeling ligt. Spreek vooraf af hoe supportvragen worden onderzocht en welke bewijslast nodig is.
+**Leg vast wie de eerstelijns support verzorgt.** Als data een keer niet verschijnt, belt de klant altijd naar jou - ook als de storing bij hun eigen IT-afdeling ligt. Spreek vooraf af hoe supportvragen worden onderzocht en welke bewijslast nodig is.
 
 **Bouw het eenmalig en modulair.** Trap niet in de valkuil van maatwerk per klant. Als twee klanten hetzelfde boekhoudpakket (zoals Exact Online of Moneybird) gebruiken, bouw de koppeling dan als een generieke productfeature met documentatie.
 
@@ -94,7 +94,7 @@ Sommige integratieverzoeken zijn het zakelijk waard om resoluut af te wijzen:
 - Een verzoek waarbij jij contractueel verantwoordelijk wordt gehouden voor de juistheid van data die door hun eigen medewerkers foutief wordt ingevoerd.
 - Elke integratie waarbij je niet in één eenvoudige zin kunt uitleggen wat er gebeurt wanneer het systeem van de klant tijdelijk onbereikbaar is.
 
-Een vriendelijke afwijzing vergezeld van een werkbaar alternatief — een periodieke CSV-export of een helder gedocumenteerde REST-API waar hun eigen IT-team tegenaan kan bouwen — behoudt het zakelijke contact vaker dan veel oprichters vrezen.
+Een vriendelijke afwijzing vergezeld van een werkbaar alternatief - een periodieke CSV-export of een helder gedocumenteerde REST-API waar hun eigen IT-team tegenaan kan bouwen - behoudt het zakelijke contact vaker dan veel oprichters vrezen.
 
 ## Bouwen zonder dat de integratie je hele product overneemt
 
@@ -132,7 +132,7 @@ Een koppeling heeft altijd twee kanten, en jij beheert er slechts één. Vroegti
 
 ### Een grote deal binnengehaald met een simpele spreadsheet-export
 
-Karin Moeskops bouwde Leverbaar in Lovable: een planningstool voor versleveringen, gebruikt door vijftien regionale voedselproducenten rond Zutphen. Een potentiële grote klant — een horecagroothandel met veertig vaste toeleveranciers — gaf aan uitsluitend te willen tekenen als het platform direct integreerde met hun interne ERP-systeem.
+Karin Moeskops bouwde Leverbaar in Lovable: een planningstool voor versleveringen, gebruikt door vijftien regionale voedselproducenten rond Zutphen. Een potentiële grote klant - een horecagroothandel met veertig vaste toeleveranciers - gaf aan uitsluitend te willen tekenen als het platform direct integreerde met hun interne ERP-systeem.
 
 De offerte die Karin ontving van een externe softwareontwikkelaar was gigantisch: een bouwtijd van drie maanden en tienduizenden euro's aan kosten, wat haar complete ontwikkelbudget zou opsouperen.
 
@@ -140,12 +140,12 @@ Voordat ze toezegde, vroeg Karin tijdens een werkbezoek aan de logistiek coördi
 
 Dat was een niveau-één vraagstuk. De oplossing kostte vier werkdagen: een geautomatiseerde, gestructureerde CSV-export in exact de kolomvolgorde die het groothandelssysteem standaard kan importeren, dagelijks om 16:00 uur automatisch klaargezet op een beveiligde SFTP-map die het groothandelssysteem al monitorde, inclusief automatische datavalidatie en e-mailnotificaties bij eventuele exportfouten.
 
-De groothandel tekende direct. Veertien maanden later vroeg het bedrijf alsnog om een realtime API-koppeling — op een moment dat het transactievolume en de maandelijkse omzet die investering ruimschoots rechtvaardigden.
+De groothandel tekende direct. Veertien maanden later vroeg het bedrijf alsnog om een realtime API-koppeling - op een moment dat het transactievolume en de maandelijkse omzet die investering ruimschoots rechtvaardigden.
 
 > *"Ze vroegen om een 'volledige integratie'. Wat ze feitelijk nodig hadden, was dat één medewerker stopte met het dagelijks overtypen van veertig regels data. Dat losten we op in vier dagen."*
-> — **Karin Moeskops, Oprichter, Leverbaar (Zutphen)**
+> - **Karin Moeskops, Oprichter, Leverbaar (Zutphen)**
 
-**Kosten & Doorlooptijd:** € 1.850 (geplande gestructureerde export, schemavalidatie, SFTP-aflevering en monitoring) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.850 (geplande gestructureerde export, schemavalidatie, SFTP-aflevering en monitoring) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -182,7 +182,7 @@ Wanneer het externe systeem geen officiële documentatie heeft, wanneer de klant
       "name": "Is een periodieke bestandsexport wel een volwaardige integratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vaak wel — als het doel is om handmatig overtypen te stoppen, levert een gestructureerde periodieke export binnen enkele dagen het gewenste resultaat."
+        "text": "Vaak wel - als het doel is om handmatig overtypen te stoppen, levert een gestructureerde periodieke export binnen enkele dagen het gewenste resultaat."
       }
     },
     {

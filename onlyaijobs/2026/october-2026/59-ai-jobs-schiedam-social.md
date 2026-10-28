@@ -1,4 +1,4 @@
-💡 Schiedam's jenever heritage lives on in distilleries such as Nolet and De Kuyper Royal Distillers — and so does serious data work.
+💡 Schiedam's jenever heritage lives on in distilleries such as Nolet and De Kuyper Royal Distillers - and so does serious data work.
 
 🎓 Keeping a blend identical while raw materials change, analysing sensory panel data, forecasting for international markets and reconciling excise inventory. The same city hosts DSW Zorgverzekeraar's head office, adding health insurance analytics.
 

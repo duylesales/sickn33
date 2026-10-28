@@ -4,7 +4,7 @@
 
 ✅ It helps with Dutch equal treatment law too. And note: emotion recognition in the workplace is prohibited under the AI Act.
 
-📢 Post your vacancy — first listing free: info@onlyaijobs.eu
+📢 Post your vacancy - first listing free: info@onlyaijobs.eu
 
 📖 Read the full story: https://onlyaijobs.eu/blog/structured-interviews-reducing-bias-ai-hiring
 

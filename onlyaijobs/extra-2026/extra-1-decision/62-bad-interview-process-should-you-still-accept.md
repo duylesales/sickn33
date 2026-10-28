@@ -39,7 +39,7 @@ Four weeks of silence, then an interview moved twice, then a technical round wit
 
 ## What the Process Legitimately Tells You
 
-Recruitment is the one organisational activity you observe from outside before committing, so it is worth reading carefully — for what it actually reveals.
+Recruitment is the one organisational activity you observe from outside before committing, so it is worth reading carefully - for what it actually reveals.
 
 **How decisions get made.** A process where nobody can say who decides, or where an offer waits three weeks for an unnamed approval, is showing you something about internal authority that will also apply to your project budget.
 
@@ -85,7 +85,7 @@ None of these predicts anything about the job.
 - **The scope of the job grows with each conversation** while the terms do not.
 - **An unpaid assignment that is real work,** particularly one resembling a current problem, or one that takes days rather than hours.
 - **Pressure tactics:** an exploding deadline, or enthusiasm treated as a test of commitment.
-- **Evasiveness about the basics** — salary range, contract type, who you would work with, what happened to your predecessor.
+- **Evasiveness about the basics** - salary range, contract type, who you would work with, what happened to your predecessor.
 - **Disrespect that is casual rather than accidental:** dismissive comments, an interviewer taking other calls, questions about personal circumstances that have no business being asked.
 - **Terms that change between the verbal offer and the document.**
 
@@ -95,7 +95,7 @@ The distinction underneath this list is between disorganisation and disregard. D
 
 Rather than speculating, raise it. Near the end of the process, in a normal tone: the process has taken longer than expected and I met people with different descriptions of the role, so I would like to understand how it is defined and who decides.
 
-The answer resolves most cases. A candid response — a reorganisation, a departure, a hiring freeze that lifted, an honest apology — is reassuring, and the willingness to give it says more than the original failure did. A defensive or dismissive answer tells you that raising problems is unwelcome, which is exactly what you needed to know.
+The answer resolves most cases. A candid response - a reorganisation, a departure, a hiring freeze that lifted, an honest apology - is reassuring, and the willingness to give it says more than the original failure did. A defensive or dismissive answer tells you that raising problems is unwelcome, which is exactly what you needed to know.
 
 This also has a side benefit: candidates who ask questions like this calmly are frequently taken more seriously, not less.
 
@@ -145,7 +145,7 @@ It helps to have a benchmark, because candidates who have only seen poor process
 
 **Reasons given.** A rejection with a sentence of substance, and a decision communicated when promised.
 
-**Room to ask.** Time set aside for your questions, and honest answers to the difficult ones — what went wrong last year, why the role is open, what the team finds frustrating.
+**Room to ask.** Time set aside for your questions, and honest answers to the difficult ones - what went wrong last year, why the role is open, what the team finds frustrating.
 
 Measured against that, most processes have some rough edges, which is normal. What matters is whether the rough edges were administrative or whether they went to the substance: the definition of the role, the honesty of the answers and the respect shown to people with no leverage.
 
@@ -155,25 +155,25 @@ Measured against that, most processes have some rough edges, which is normal. Wh
 
 A data scientist reaches the offer stage after a process that took eleven weeks. Two interviews were rescheduled, four weeks passed with no contact, and the two technical interviewers described the role differently: one as a modelling role, one as a platform role.
 
-She is inclined to decline, and instead asks. The answer is more informative than she expected: the team's lead left during the process, hiring paused for a month, and the two interviewers genuinely disagreed about what the role should be — a disagreement that was resolved two weeks ago by the new lead, who explains the outcome clearly and admits the process was poor.
+She is inclined to decline, and instead asks. The answer is more informative than she expected: the team's lead left during the process, hiring paused for a month, and the two interviewers genuinely disagreed about what the role should be - a disagreement that was resolved two weeks ago by the new lead, who explains the outcome clearly and admits the process was poor.
 
 She then asks to speak to an engineer on the team, without managers. He confirms the version she was given, says the lead's departure was difficult and that things have settled, and describes work she finds interesting.
 
 She accepts, with the role definition and everything she negotiated in the written offer.
 
-A year later, her view is that the process was a fair reflection of a difficult period rather than of the organisation — and that she would have declined a good job on incomplete information if she had not asked.
+A year later, her view is that the process was a fair reflection of a difficult period rather than of the organisation - and that she would have declined a good job on incomplete information if she had not asked.
 
 ## Key Takeaways
 
 - Distinguish disorganisation, which often predicts nothing, from disregard, which predicts how you will be treated as an employee.
 - The strongest warning is interviewers describing different roles; it usually means the job was never defined.
-- Dutch practice, guided by the NVP recruitment code, sets reasonable expectations on transparency, timeliness and handling of your data — use it as a benchmark, not a rule you can enforce.
+- Dutch practice, guided by the NVP recruitment code, sets reasonable expectations on transparency, timeliness and handling of your data - use it as a benchmark, not a rule you can enforce.
 - Raise the problems directly near the end of the process; the quality of the answer resolves most cases.
 - Verify with a colleague conversation, the predecessor's story and a complete written offer before deciding.
 
 ## Where to Start
 
-A difficult process is easier to judge when you know what else is available — check the current market near you before deciding whether to accept, withdraw or keep looking.
+A difficult process is easier to judge when you know what else is available - check the current market near you before deciding whether to accept, withdraw or keep looking.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -192,16 +192,16 @@ Yes, calmly and near the end. A candid explanation is reassuring; a defensive an
 When it takes days rather than hours, resembles a current business problem, or is unpaid work that benefits the employer directly.
 
 ### (Scenario: candidate about to accept) What should I insist on?
-Everything in writing — title, scope, salary and scale position, contract type, hours, pension, training budget and any specific commitment made during the process.
+Everything in writing - title, scope, salary and scale position, contract type, hours, pension, training budget and any specific commitment made during the process.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does a bad interview process mean a bad employer?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — disorganisation often predicts nothing, while carelessness towards candidates predicts more."}},
+    {"@type": "Question", "name": "Does a bad interview process mean a bad employer?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - disorganisation often predicts nothing, while carelessness towards candidates predicts more."}},
     {"@type": "Question", "name": "What is the most serious warning sign?", "acceptedAnswer": {"@type": "Answer", "text": "Interviewers describing different roles, or no clarity about who your manager would be."}},
-    {"@type": "Question", "name": "Should I mention the problems before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, calmly — the quality of the answer resolves most cases."}},
+    {"@type": "Question", "name": "Should I mention the problems before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, calmly - the quality of the answer resolves most cases."}},
     {"@type": "Question", "name": "When is a take-home assignment unreasonable?", "acceptedAnswer": {"@type": "Answer", "text": "When it takes days, mirrors a current business problem or is unpaid work benefiting the employer."}},
     {"@type": "Question", "name": "What should I insist on?", "acceptedAnswer": {"@type": "Answer", "text": "Everything in writing, including scope, scale position, contract type and negotiated commitments."}}
   ]

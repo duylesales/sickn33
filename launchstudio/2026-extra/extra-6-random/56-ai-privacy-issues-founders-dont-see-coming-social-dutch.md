@@ -1,10 +1,10 @@
-📩 Wesley Dijkhuizen bouwde "WerkAgenda," een planningsapp voor uitzendkrachten, met Bolt — met een AI-model dat automatisch dienstsuggesties genereerde op basis van geüploade roosters. Toen vroeg een klant schriftelijk precies welke gegevens de AI-provider bewaarde van die roosters, en voor hoe lang. Wesley besefte dat hij het oprecht niet wist — hij had de bewaartermijnen van de provider nooit zelf gelezen.
+📩 Wesley Dijkhuizen bouwde "WerkAgenda," een planningsapp voor uitzendkrachten, met Bolt - met een AI-model dat automatisch dienstsuggesties genereerde op basis van geüploade roosters. Toen vroeg een klant schriftelijk precies welke gegevens de AI-provider bewaarde van die roosters, en voor hoe lang. Wesley besefte dat hij het oprecht niet wist - hij had de bewaartermijnen van de provider nooit zelf gelezen.
 
 "Ik gebruik een gerenommeerde AI-provider" is een gevoel. Het is geen antwoord waar een klant iets mee kan. 🧠
 
 ❌ Wesley koos zijn AI-provider op basis van integratiegemak, zonder ooit de bewaartermijnen te lezen
 ❌ Niets in het bouwen met Bolt spoort u aan om even stil te staan en te controleren wat een provider bewaart
-❌ De vraag van de klant was redelijk — een operationeel team dat plannnigsgegevens verwerkte en nadacht over waar die terechtkwamen
+❌ De vraag van de klant was redelijk - een operationeel team dat plannnigsgegevens verwerkte en nadacht over waar die terechtkwamen
 ❌ De standaardtier bood zelfs geen no-retention-optie aan
 
 ✅ Lees de specifieke gegevensbewaar- en gebruiksvoorwaarden voor uw exacte provider en abonnement

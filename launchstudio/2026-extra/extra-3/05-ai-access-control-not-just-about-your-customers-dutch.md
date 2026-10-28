@@ -1,18 +1,18 @@
 ---
-Titel: "AI-toegangsbeheer gaat niet alleen over uw klanten — hoe zit het met uw team?"
+Titel: "AI-toegangsbeheer gaat niet alleen over uw klanten - hoe zit het met uw team?"
 Trefwoorden: ai access, ai secure, ai data security, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelgroep: SaaS Oprichter Schaalvergroting
 ---
 
-# AI-toegangsbeheer gaat niet alleen over uw klanten — hoe zit het met uw team?
+# AI-toegangsbeheer gaat niet alleen over uw klanten - hoe zit het met uw team?
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-toegangsbeheer gaat niet alleen over uw klanten — hoe zit het met uw team?",
-  "description": "Oprichters die klantgerichte AI-toegang beveiligen, laten de interne toegang vaak standaard wijd openstaan — iedereen in het team kan ruwe prompts, modeluitvoer en klantgegevens zien via gedeelde beheerdersinloggegevens. Een specifieke blik op waarom deze interne laag over het hoofd wordt gezien.",
+  "headline": "AI-toegangsbeheer gaat niet alleen over uw klanten - hoe zit het met uw team?",
+  "description": "Oprichters die klantgerichte AI-toegang beveiligen, laten de interne toegang vaak standaard wijd openstaan - iedereen in het team kan ruwe prompts, modeluitvoer en klantgegevens zien via gedeelde beheerdersinloggegevens. Een specifieke blik op waarom deze interne laag over het hoofd wordt gezien.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -53,7 +53,7 @@ Individuele accounts in plaats van één gedeelde inlog, zodat toegang per perso
 
 [LaunchStudio](https://launchstudio.eu/nl/) behandelt intern toegangsbeheer als een standaard controlepunt op het moment dat een oprichtersteam zijn tweede of derde bijdrager toevoegt, wat dezelfde toegangsscopingsdiscipline weerspiegelt die Manifera intern toepast op al haar eigen teams in Amsterdam, Singapore en Ho Chi Minh-stad die werken aan enterprise-klantgegevens – een gedeelde inlog die volledig onschuldig voelde met één oprichter, wordt een echte, specifieke aansprakelijkheid op het moment dat er een team, hoe klein of informeel ook, omheen bestaat.
 
-[Laat uw interne toegang beoordelen voordat uw team de gedeelde inlog ontgroeit](https://launchstudio.eu/nl/#contact) — een kloof die niets kost om vroeg te dichten en aanzienlijk meer om af te wikkelen als er eenmaal maandenlang stilletjes op is vertrouwd.
+[Laat uw interne toegang beoordelen voordat uw team de gedeelde inlog ontgroeit](https://launchstudio.eu/nl/#contact) - een kloof die niets kost om vroeg te dichten en aanzienlijk meer om af te wikkelen als er eenmaal maandenlang stilletjes op is vertrouwd.
 
 ## Een opsplitsing rol-voor-rol van hoe interne toegang er feitelijk uit zou moeten zien
 
@@ -79,12 +79,12 @@ Fenna, een voormalig wervingsconsultant die oprichter werd in Utrecht, bouwde So
 
 Toen de opdracht van de aannemer een paar maanden later eindigde, realiseerde Fenna zich dat de gedeelde inlog nooit was geroteerd, wat betekende dat de voormalige aannemer technisch gezien volledige toegang behield tot de ruwe screeningsgegevens van elke sollicitant en het account van elke klant – toegang waarvan er geen manier was om specifiek te bevestigen dat deze ooit ongepast was gebruikt, maar ook geen manier om het uit te sluiten, aangezien het gedeelde inloggegeven geen activiteit per persoon registreerde.
 
-**Resultaat:** LaunchStudio implementeerde individuele, rol-gescopte accounts met basis-toegangslogging, roteerde de oude gedeelde inlog volledig en gaf Fenna een concreet, doorlopend proces voor het verlenen en intrekken van toegang naarmate haar team bleef groeien — waardoor een kloof werd gedicht die sinds haar allereerste aanname onzichtbaar had bestaan.
+**Resultaat:** LaunchStudio implementeerde individuele, rol-gescopte accounts met basis-toegangslogging, roteerde de oude gedeelde inlog volledig en gaf Fenna een concreet, doorlopend proces voor het verlenen en intrekken van toegang naarmate haar team bleef groeien - waardoor een kloof werd gedicht die sinds haar allereerste aanname onzichtbaar had bestaan.
 
 > *"Het is nooit bij me opgekomen dat het binnenhalen van één parttime aannemer voor een paar maanden betekende dat die persoon precies dezelfde toegang had als ik, tot de gegevens van elke sollicitant, voor onbepaalde tijd, zonder een verslag van wat ze daadwerkelijk hadden bekeken."*
-> — **Fenna Kloosterman, Oprichter, SollicitatieScan (Utrecht)**
+> - **Fenna Kloosterman, Oprichter, SollicitatieScan (Utrecht)**
 
-**Kosten en tijdlijn:** € 900 (implementatie van intern toegangsbeheer en rotatie van inloggegevens) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 900 (implementatie van intern toegangsbeheer en rotatie van inloggegevens) - voltooid in 4 werkdagen.
 
 ---
 

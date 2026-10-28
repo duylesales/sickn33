@@ -6,7 +6,7 @@ Every "best offshore software development companies" list on page one is either 
 ❌ **The Slipping Roadmap:** Every week spent chasing rankings is another week the internal team stays stretched thin covering the capacity gap this hire was meant to fill.
 
 **The Manifera Solution:**
-✅ **Paid Pilot Tasks Over Proposals:** Real code, real engineers, real evidence — not a sales deck.
+✅ **Paid Pilot Tasks Over Proposals:** Real code, real engineers, real evidence - not a sales deck.
 ✅ **Amsterdam Governance & Integration Planning:** Dutch-based architects evaluate pilot output and own how the team joins your actual sprint ceremonies.
 ✅ **Vietnam Execution at Speed:** The Ho Chi Minh City engineers you vet are the same engineers who embed with your team.
 

@@ -40,7 +40,7 @@ Zeven dingen, in deze volgorde.
 
 **Wat u weet dat er mis is.** De bug die u niet kunt oplossen, de pagina die traag is, het ding waarvan u vermoedt dat het onveilig is. Niemand denkt er minder over u door en het bespaart een uur ontdekkingswerk.
 
-**Randvoorwaarden.** Uw budgetbereik, uw deadline, alles wat het product moet behouden — de integratie van een klant, een ontwerp waarvoor iemand betaalde, een platform dat u niet kunt verlaten.
+**Randvoorwaarden.** Uw budgetbereik, uw deadline, alles wat het product moet behouden - de integratie van een klant, een ontwerp waarvoor iemand betaalde, een platform dat u niet kunt verlaten.
 
 **Wie u hierin bent.** Blijft u naast hen bouwen, draagt u het volledig over, of iets daartussenin? Dit bepaalt hoe het werk wordt ingericht en is de vraag die het vaakst onbeantwoord blijft.
 
@@ -48,7 +48,7 @@ Zeven dingen, in deze volgorde.
 
 Oprichters houden het bedrag achter in de veronderstelling dat dat een betere prijs oplevert. Het levert een slechter proces op.
 
-Een engineer die weet dat u €3.000 hebt, vertelt u wat €3.000 oplevert en wat niet, en dat is een nuttig gesprek. Een die het niet weet, offreert ofwel voor alles — een bedrag waar u van schrikt — ofwel voor het minimum, en ontdekt halverwege het project dat u meer verwachtte.
+Een engineer die weet dat u €3.000 hebt, vertelt u wat €3.000 oplevert en wat niet, en dat is een nuttig gesprek. Een die het niet weet, offreert ofwel voor alles - een bedrag waar u van schrikt - ofwel voor het minimum, en ontdekt halverwege het project dat u meer verwachtte.
 
 Een bereik is genoeg. "Tussen €2.000 en €5.000, afhankelijk van wat nodig is" is eerlijk, en elke competente leverancier vertelt u aan welke kant van dat bereik uw situatie zit.
 
@@ -68,7 +68,7 @@ Vier details die een offerte wezenlijk veranderen en bijna altijd worden weggela
 
 **Hoeveel klanten en hoe ze zijn gescheiden.** Eén organisatie per account, of meerdere gebruikers die delen? Multi-tenancy is de grootste afzonderlijke structurele factor.
 
-**Waarmee het integreert.** Elke externe dienst — betalingen, e-mail, boekhouding, een branchesysteem. Integraties zijn waar schattingen misgaan.
+**Waarmee het integreert.** Elke externe dienst - betalingen, e-mail, boekhouding, een branchesysteem. Integraties zijn waar schattingen misgaan.
 
 **Of iemand anders eraan heeft gewerkt.** Een codebase met de aanpak van twee eerdere freelancers erin kost meer tijd om in te werken dan een met één auteur, ook als die auteur een tool was.
 
@@ -86,11 +86,11 @@ De helft van de vertraging in deze opdrachten is administratief, en die is volle
 
 Wat een leverancier nodig heeft, en wat u voorbereidt.
 
-**De code**, in een repository waaraan ze kunnen worden toegevoegd. Is ze nooit uit de bouwtool geëxporteerd, doe dat dan eerst — het is de stap die anders de eerste dag van een betaalde opdracht opslokt.
+**De code**, in een repository waaraan ze kunnen worden toegevoegd. Is ze nooit uit de bouwtool geëxporteerd, doe dat dan eerst - het is de stap die anders de eerste dag van een betaalde opdracht opslokt.
 
 **Een werkende omgeving**, of een notitie die uitlegt wat er ontbreekt. Een leverancier die uw product niet kan draaien, besteedt zijn eerste uren aan het werkend krijgen ervan, op uw kosten.
 
-**Leestoegang tot de relevante dashboards** — hosting, database, betaalprovider, e-mail — in plaats van het wachtwoord van het account. De meeste platforms ondersteunen het toevoegen van een medewerker, en het zo doen betekent dat toegang achteraf intrekken één klik is in plaats van een rotatie.
+**Leestoegang tot de relevante dashboards** - hosting, database, betaalprovider, e-mail - in plaats van het wachtwoord van het account. De meeste platforms ondersteunen het toevoegen van een medewerker, en het zo doen betekent dat toegang achteraf intrekken één klik is in plaats van een rotatie.
 
 **Testaccounts** op elk rechtenniveau, zodat ze het product zien zoals uw klanten het zien.
 
@@ -124,9 +124,9 @@ De uitzondering is een codebase waarvan het datamodel niet kan weergeven wat het
 
 ## Dit Inrichten
 
-Schrijf, voordat u iemand benadert, één pagina over: wat het product doet en wie het gebruikt, waar het nu staat inclusief klanten en omzet, wat u wilt dat er gebeurt met een datum en een getal, toegang tot de code of een notitie dat die nooit is geëxporteerd, wat u al weet dat er mis is, uw budgetbereik en harde randvoorwaarden, uw eigen beoogde rol daarna, en de saaie feiten — datavolume, tenancy, integraties, eerdere bijdragers. Beschrijf problemen in plaats van oplossingen.
+Schrijf, voordat u iemand benadert, één pagina over: wat het product doet en wie het gebruikt, waar het nu staat inclusief klanten en omzet, wat u wilt dat er gebeurt met een datum en een getal, toegang tot de code of een notitie dat die nooit is geëxporteerd, wat u al weet dat er mis is, uw budgetbereik en harde randvoorwaarden, uw eigen beoogde rol daarna, en de saaie feiten - datavolume, tenancy, integraties, eerdere bijdragers. Beschrijf problemen in plaats van oplossingen.
 
-LaunchStudio offreert precies hierop, en het Launch Ready-pakket begint bij €800 voor een prototype dat moet worden beveiligd en gelanceerd. Daarachter staat Manifera — elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio offreert precies hierop, en het Launch Ready-pakket begint bij €800 voor een prototype dat moet worden beveiligd en gelanceerd. Daarachter staat Manifera - elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
 
 [Stuur ons uw pagina](https://launchstudio.eu/nl/#contact) en we komen terug met een gespecificeerde offerte in plaats van een verkennend gesprek.
 
@@ -142,14 +142,14 @@ De offertes waren €2.400, €11.000 en €38.000. Geen ervan was te vergelijke
 
 Hij besteedde drie weken aan gesprekken om vast te stellen wat elk had bedoeld.
 
-Twee uur schrijven, daarna een andere uitkomst: een briefing van één pagina waarin staat wat het product doet en dat 14 garages het dagelijks gebruiken; dat het live is, 4.000 records bevat en nog geen betalingen verwerkt; dat het doel is betalingen te accepteren en vóór het bandenseizoen in oktober 40 garages aan te sluiten, een datum met een getal; een link naar de repository, die ochtend geëxporteerd; drie bekende problemen benoemd — een trage lijstpagina voor de grootste garage, onzekerheid of garages elkaars data konden zien, en een e-mail die soms niet aankomt; een budgetbereik van €4.000 tot €9.000; een randvoorwaarde dat het product de hele tijd live moet blijven; en de mededeling dat hij daarna zelf functies wil blijven bouwen.
+Twee uur schrijven, daarna een andere uitkomst: een briefing van één pagina waarin staat wat het product doet en dat 14 garages het dagelijks gebruiken; dat het live is, 4.000 records bevat en nog geen betalingen verwerkt; dat het doel is betalingen te accepteren en vóór het bandenseizoen in oktober 40 garages aan te sluiten, een datum met een getal; een link naar de repository, die ochtend geëxporteerd; drie bekende problemen benoemd - een trage lijstpagina voor de grootste garage, onzekerheid of garages elkaars data konden zien, en een e-mail die soms niet aankomt; een budgetbereik van €4.000 tot €9.000; een randvoorwaarde dat het product de hele tijd live moet blijven; en de mededeling dat hij daarna zelf functies wil blijven bouwen.
 
-**Resultaat:** de drie herziene offertes kwamen terug op €5.200, €6.800 en €7.500 — vergelijkbaar, gespecificeerd, en alle drie binnen zijn bereik. Twee van de drie vertelden hem ongevraagd dat zijn trage pagina waarschijnlijk een indexprobleem was in plaats van een architectuurprobleem. Hij koos de middelste offerte, en het werk duurde negen dagen tegen een schatting van acht.
+**Resultaat:** de drie herziene offertes kwamen terug op €5.200, €6.800 en €7.500 - vergelijkbaar, gespecificeerd, en alle drie binnen zijn bereik. Twee van de drie vertelden hem ongevraagd dat zijn trage pagina waarschijnlijk een indexprobleem was in plaats van een architectuurprobleem. Hij koos de middelste offerte, en het werk duurde negen dagen tegen een schatting van acht.
 
-> *"Drie offertes, van vierentwintighonderd tot achtendertigduizend, voor wat ik dacht dat dezelfde vraag was. Het was niet dezelfde vraag — ik had drie verschillende dingen gevraagd zonder het te beseffen."*
-> — **Machiel Verduijn, Oprichter, Bandenwissel (Emmen)**
+> *"Drie offertes, van vierentwintighonderd tot achtendertigduizend, voor wat ik dacht dat dezelfde vraag was. Het was niet dezelfde vraag - ik had drie verschillende dingen gevraagd zonder het te beseffen."*
+> - **Machiel Verduijn, Oprichter, Bandenwissel (Emmen)**
 
-**Kosten & Doorlooptijd:** €6.800 (beveiligingsreview en herstel, multi-tenant scheiding, betalingsintegratie, e-mailbezorgbaarheid, prestatiewerk, ondersteuning bij lancering) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** €6.800 (beveiligingsreview en herstel, multi-tenant scheiding, betalingsintegratie, e-mailbezorgbaarheid, prestatiewerk, ondersteuning bij lancering) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -163,7 +163,7 @@ Of de code in een repository staat die u beheert, of de tool nooit heeft verlate
 
 ### Moet ik de technische oplossing voorschrijven?
 
-Nee. Beschrijf het probleem — "deze pagina duurt acht seconden voor onze grootste klant" — en laat de engineer de diagnose stellen. Een implementatie voorschrijven koopt vaak het verkeerde werk.
+Nee. Beschrijf het probleem - "deze pagina duurt acht seconden voor onze grootste klant" - en laat de engineer de diagnose stellen. Een implementatie voorschrijven koopt vaak het verkeerde werk.
 
 ### Wat moet een goede offerte bevatten?
 
@@ -191,7 +191,7 @@ De goede vertellen u dat een deel van wat u vroeg niet nodig is, en vragen naar 
       "name": "Wat is het belangrijkste feit in een briefing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Of de code in een repository staat die u beheert of de bouwtool nooit heeft verlaten — dat verandert de beoordeling het meest."
+        "text": "Of de code in een repository staat die u beheert of de bouwtool nooit heeft verlaten - dat verandert de beoordeling het meest."
       }
     },
     {

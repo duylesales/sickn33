@@ -1,6 +1,6 @@
 🚨 Natalie, a business forecast founder, built a forecaster app with **Cursor**. It crashed the moment OpenAI updated from GPT-4 to GPT-4o, because every single API call in her codebase referenced OpenAI's SDK and its exact response shape directly. 💥
 
-If your app is hardcoded to one model provider, you're not building a product — you're building a liability that breaks on someone else's release schedule. 🧠
+If your app is hardcoded to one model provider, you're not building a product - you're building a liability that breaks on someone else's release schedule. 🧠
 
 ❌ Every AI call scattered across the codebase, tightly coupled to one provider's SDK
 ❌ A single deprecated parameter from an upstream model update taking down the whole app

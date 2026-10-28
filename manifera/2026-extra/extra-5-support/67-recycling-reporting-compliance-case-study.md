@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager or technical lead at a recycling operator serving multiple municipalities faces a specific compliance reality that's easy to underweight during reporting platform planning: material-sorting categories and diversion-rate reporting requirements are set by each municipality's own local ordinance, and these genuinely vary from one contract to the next, sometimes substantially — one municipality may require reporting on a dozen distinct material categories while another mandates only aggregate diversion percentages, and audit formats and submission cadences differ further still. A reporting system architected around a single, hardcoded format risks either failing a municipality's audit outright or over-collecting and misreporting data in a format a different municipality never asked for, both of which carry real contractual and regulatory consequences for a recycling operator.
+An IT Manager or technical lead at a recycling operator serving multiple municipalities faces a specific compliance reality that's easy to underweight during reporting platform planning: material-sorting categories and diversion-rate reporting requirements are set by each municipality's own local ordinance, and these genuinely vary from one contract to the next, sometimes substantially - one municipality may require reporting on a dozen distinct material categories while another mandates only aggregate diversion percentages, and audit formats and submission cadences differ further still. A reporting system architected around a single, hardcoded format risks either failing a municipality's audit outright or over-collecting and misreporting data in a format a different municipality never asked for, both of which carry real contractual and regulatory consequences for a recycling operator.
 
 ## Why a Single Hardcoded Reporting Format Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A compliance reporting platform built around a single, globally uniform reportin
 
 ## Why Municipality-Configurable Architecture Is the More Sustainable Approach
 
-A reporting platform architected from the start around a municipality-configurable engine — able to apply each municipality's specific material-sorting categories, diversion-rate calculation methodology, and audit submission format as a distinct, independently maintainable configuration — lets a recycling operator comply with each municipality's specific contractual reporting requirement without maintaining separate, diverging reporting codebases per contract. This isn't simply a matter of relabeling category names per municipality, since reporting requirements can differ more fundamentally than that — some municipalities mandate genuinely different diversion-rate calculation methodologies (weight-based versus volume-based) rather than merely different category labels within the same methodology, meaning the underlying reporting engine needs to support genuinely configurable calculation logic, not just configurable labels, to accommodate the actual range of municipal ordinance approaches across an operator's service contracts.
+A reporting platform architected from the start around a municipality-configurable engine - able to apply each municipality's specific material-sorting categories, diversion-rate calculation methodology, and audit submission format as a distinct, independently maintainable configuration - lets a recycling operator comply with each municipality's specific contractual reporting requirement without maintaining separate, diverging reporting codebases per contract. This isn't simply a matter of relabeling category names per municipality, since reporting requirements can differ more fundamentally than that - some municipalities mandate genuinely different diversion-rate calculation methodologies (weight-based versus volume-based) rather than merely different category labels within the same methodology, meaning the underlying reporting engine needs to support genuinely configurable calculation logic, not just configurable labels, to accommodate the actual range of municipal ordinance approaches across an operator's service contracts.
 
 ## What Building Municipality-Configurable Reporting Architecture Actually Requires
 
@@ -38,7 +38,7 @@ A reporting platform architected from the start around a municipality-configurab
 
 ## Why This Decision Also Shapes Contamination-Rate Reporting
 
-A related, practical consideration worth naming directly: beyond diversion-rate reporting itself, many municipal contracts separately require operators to report contamination rates — the share of collected recyclable material that's actually non-recyclable or improperly sorted — an obligation entirely distinct from diversion-rate reporting even though both draw on overlapping material-flow data. A recycling operator's reporting platform needs to accommodate both the genuinely divergent municipality-facing diversion reporting this article focuses on and these separate contamination-reporting requirements, which don't always align neatly with any specific municipality's diversion-reporting format. A municipality-configurable architecture built with genuine flexibility in mind tends to accommodate contamination-rate reporting more naturally than a system built around a narrower assumption that only diversion reporting needs to be considered, since the same underlying configurability that supports per-municipality diversion rules typically extends readily to per-municipality contamination-reporting obligations as well.
+A related, practical consideration worth naming directly: beyond diversion-rate reporting itself, many municipal contracts separately require operators to report contamination rates - the share of collected recyclable material that's actually non-recyclable or improperly sorted - an obligation entirely distinct from diversion-rate reporting even though both draw on overlapping material-flow data. A recycling operator's reporting platform needs to accommodate both the genuinely divergent municipality-facing diversion reporting this article focuses on and these separate contamination-reporting requirements, which don't always align neatly with any specific municipality's diversion-reporting format. A municipality-configurable architecture built with genuine flexibility in mind tends to accommodate contamination-rate reporting more naturally than a system built around a narrower assumption that only diversion reporting needs to be considered, since the same underlying configurability that supports per-municipality diversion rules typically extends readily to per-municipality contamination-reporting obligations as well.
 
 ## Why Operators Often Underestimate How Frequently Ordinances Actually Change
 
@@ -64,7 +64,7 @@ This is Dutch Management × Vietnamese Mastery applied to recycling reporting pl
 Manifera's Amsterdam team rebuilt the reporting platform's core engine around a configurable, municipality-specific ruleset, supporting both the home municipality's weight-based diversion methodology and the newer contracts' volume-based methodology, alongside reliable material-flow attribution to the correct municipal contract and contamination-rate reporting support, all without requiring separate, parallel reporting codebases per contract.
 
 > *"We assumed we'd just relabel our existing report for each new municipality. It turned out the actual diversion-rate methodology across our contracts was different enough in kind, not just in category names, that building real configurability was what let us keep reporting correctly across all our service contracts rather than maintaining separate systems that would inevitably drift apart."*
-> — **IT Manager, Återvinning Umeå**
+> - **IT Manager, Återvinning Umeå**
 
 Återvinning Umeå successfully passed its first full audit cycle under the new contracts with municipality-appropriate reporting configurations, and now treats reporting configurability as a standard architectural requirement for any new municipal contract, rather than a single reporting structure decided once.
 
@@ -79,7 +79,7 @@ Manifera's Amsterdam team rebuilt the reporting platform's core engine around a 
 
 ## Scoping Your Own Recycling Operator's Reporting Platform for Multi-Municipality Compliance
 
-Before expanding recycling operations across multiple municipal contracts, architect the reporting platform around genuinely configurable, municipality-specific rulesets — a single hardcoded format forces an unnecessary trade-off between audit risk and diverging, unmaintainable codebases. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready recycling reporting engine.
+Before expanding recycling operations across multiple municipal contracts, architect the reporting platform around genuinely configurable, municipality-specific rulesets - a single hardcoded format forces an unnecessary trade-off between audit risk and diverging, unmaintainable codebases. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready recycling reporting engine.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between misapplying one municipality's format elsewhere or ma
 
 ### (Scenario: engineering lead scoping reporting configurability) Is relabeling category names per municipality sufficient to handle reporting variation?
 
-Not always — some municipalities mandate genuinely different diversion-rate calculation methodologies, not just different category labels within the same methodology, meaning the engine needs configurable calculation logic, not just configurable labels.
+Not always - some municipalities mandate genuinely different diversion-rate calculation methodologies, not just different category labels within the same methodology, meaning the engine needs configurable calculation logic, not just configurable labels.
 
 ### (Scenario: compliance lead reviewing technical architecture) Why does reliable material-flow attribution matter for reporting compliance?
 
@@ -110,7 +110,7 @@ Municipalities periodically revise sorting and diversion-reporting ordinances on
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-municipality reporting platform) Why does recycling reporting vary meaningfully across municipal contracts?", "acceptedAnswer": { "@type": "Answer", "text": "Each municipality sets its own sorting categories, diversion methodology, and submission format through local ordinance, which genuinely differ across contracts." } },
     { "@type": "Question", "name": "(Scenario: recycling operator worried about compliance) What's the risk of building a reporting platform around a single, hardcoded format?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between misapplying one format elsewhere or maintaining separate, diverging codebases per contract." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping reporting configurability) Is relabeling category names per municipality sufficient to handle reporting variation?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some municipalities mandate genuinely different calculation methodologies, requiring configurable logic, not just labels." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping reporting configurability) Is relabeling category names per municipality sufficient to handle reporting variation?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some municipalities mandate genuinely different calculation methodologies, requiring configurable logic, not just labels." } },
     { "@type": "Question", "name": "(Scenario: compliance lead reviewing technical architecture) Why does reliable material-flow attribution matter for reporting compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying municipality-specific reporting correctly depends on accurately attributing material volume to the governing municipality." } },
     { "@type": "Question", "name": "(Scenario: recycling operator planning for future ordinance changes) Why should a reporting platform be designed to accommodate future ordinance revisions, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Municipalities periodically revise ordinances on staggered timelines, and rework-heavy systems create ongoing compliance risk." } }
   ]

@@ -13,7 +13,7 @@ Content Format: Policy Brief
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Science Parks and Campuses as AI Talent Hubs: Turning Co-Location Into a Visible Labour Market",
-  "description": "Dutch science parks and campuses bring together companies, knowledge institutions and startups — but their combined job market is often invisible to talent. A policy brief on how campus organisations can make AI and data vacancies visible, strengthen internships and retain talent within their ecosystem.",
+  "description": "Dutch science parks and campuses bring together companies, knowledge institutions and startups - but their combined job market is often invisible to talent. A policy brief on how campus organisations can make AI and data vacancies visible, strengthen internships and retain talent within their ecosystem.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-27",
@@ -35,13 +35,13 @@ Content Format: Policy Brief
 }
 </script>
 
-Walk across a Dutch science park and you pass dozens of organisations within a few hundred metres: a multinational research lab, a university faculty, a scale-up with thirty employees, a startup in an incubator, a shared testing facility. Many of them are looking for people who can work with data and AI. Yet a data science graduate searching for jobs rarely sees this campus as one labour market. Each organisation publishes vacancies separately — or not at all — and small companies remain invisible next to large brands. For campus organisations whose mission includes building ecosystems, the combined job market on their own site is one of the most underused assets they have.
+Walk across a Dutch science park and you pass dozens of organisations within a few hundred metres: a multinational research lab, a university faculty, a scale-up with thirty employees, a startup in an incubator, a shared testing facility. Many of them are looking for people who can work with data and AI. Yet a data science graduate searching for jobs rarely sees this campus as one labour market. Each organisation publishes vacancies separately - or not at all - and small companies remain invisible next to large brands. For campus organisations whose mission includes building ecosystems, the combined job market on their own site is one of the most underused assets they have.
 
 ## Why Campuses Matter for AI Talent
 
 Dutch science parks and campuses were created to bring research, education and business together. That concentration creates specific advantages for talent:
 
-**Career mobility without relocation.** Professionals can change employers — from a startup to a corporate lab, from research to product development — without moving house or changing commute.
+**Career mobility without relocation.** Professionals can change employers - from a startup to a corporate lab, from research to product development - without moving house or changing commute.
 
 **Learning environment.** Seminars, shared facilities and informal contact expose employees to knowledge beyond their own organisation.
 
@@ -64,7 +64,7 @@ Dutch science parks and campuses were created to bring research, education and b
 | Pivot Park | Oss | Drug discovery and life sciences |
 | Wageningen Campus | Wageningen | Agrifood, environment, life sciences |
 
-Each campus has a distinct profile, but all combine organisations of different sizes that need data and AI skills — from bioinformatics and materials informatics to computer vision and data engineering.
+Each campus has a distinct profile, but all combine organisations of different sizes that need data and AI skills - from bioinformatics and materials informatics to computer vision and data engineering.
 
 ## The Visibility Problem on Campuses
 
@@ -80,7 +80,7 @@ Each campus has a distinct profile, but all combine organisations of different s
 
 **1. Aggregate and showcase vacancies.** Make AI and data vacancies from all campus organisations visible together, at exact location, and share them through campus channels. Cooperating with specialist platforms is usually more effective than building a separate portal.
 
-**2. Profile smaller employers.** Short profiles of startups and scale-ups — what they build, what data they work with, how many people they employ — help candidates discover them.
+**2. Profile smaller employers.** Short profiles of startups and scale-ups - what they build, what data they work with, how many people they employ - help candidates discover them.
 
 **3. Organise talent-focused events.** Campus-wide career events, data meetups and open days for students connect talent with multiple employers at once.
 
@@ -106,13 +106,13 @@ Campuses can offer services that individual small companies cannot organise alon
 
 A campus hosting around one hundred organisations notices that many startups struggle to hire data engineers, while students at the nearby university say they cannot find local tech jobs and move to Amsterdam after graduating.
 
-The campus organisation surveys its tenants and finds dozens of open or planned AI and data roles, many never publicly advertised. It encourages companies to publish vacancies on a specialist platform that shows jobs at exact location, adds a campus-wide overview to its newsletter and website and organises a quarterly "data careers on campus" event with the university. Within a year, several companies report hires from the local university and the campus has concrete data on its AI labour market — information that also supports discussions with the municipality and province about housing and mobility.
+The campus organisation surveys its tenants and finds dozens of open or planned AI and data roles, many never publicly advertised. It encourages companies to publish vacancies on a specialist platform that shows jobs at exact location, adds a campus-wide overview to its newsletter and website and organises a quarterly "data careers on campus" event with the university. Within a year, several companies report hires from the local university and the campus has concrete data on its AI labour market - information that also supports discussions with the municipality and province about housing and mobility.
 
 ## Housing and Amenities as Talent Infrastructure
 
 A campus can offer excellent jobs and still lose talent if people cannot live nearby or if the site feels empty after working hours. Young professionals and international employees in particular weigh housing availability, public transport, sports facilities, childcare and places to meet when choosing where to work.
 
-Several Dutch campuses have developed or advocated for housing for students, researchers and young professionals near the site, improved bus and cycling connections and added facilities such as restaurants, sports centres and event spaces. Campus organisations rarely control all of these themselves, but they can bring employer demand data to municipalities, housing corporations and transport authorities — making a concrete case for investments that support talent retention.
+Several Dutch campuses have developed or advocated for housing for students, researchers and young professionals near the site, improved bus and cycling connections and added facilities such as restaurants, sports centres and event spaces. Campus organisations rarely control all of these themselves, but they can bring employer demand data to municipalities, housing corporations and transport authorities - making a concrete case for investments that support talent retention.
 
 ## Talent Formats That Work on Campuses
 
@@ -159,7 +159,7 @@ Collecting these indicators annually helps campus organisations demonstrate thei
 
 ## When Companies Leave or Close
 
-Campuses inevitably see companies relocate, downsize or close. These moments can either drain talent from the ecosystem or keep it circulating. Campus organisations that respond quickly — sharing information about affected employees' skills with other tenants (with consent), organising matching sessions and highlighting open vacancies — help retain valuable expertise. This also strengthens the campus's reputation as a place where a career is resilient, which in turn attracts new talent.
+Campuses inevitably see companies relocate, downsize or close. These moments can either drain talent from the ecosystem or keep it circulating. Campus organisations that respond quickly - sharing information about affected employees' skills with other tenants (with consent), organising matching sessions and highlighting open vacancies - help retain valuable expertise. This also strengthens the campus's reputation as a place where a career is resilient, which in turn attracts new talent.
 
 ## How This Connects to Regional Policy
 
@@ -175,7 +175,7 @@ Campuses are often part of regional innovation strategies supported by municipal
 
 ## Where to Start
 
-Ask your tenants how many AI and data roles they expect to fill in the next year — then make those roles visible together, where talent actually searches.
+Ask your tenants how many AI and data roles they expect to fill in the next year - then make those roles visible together, where talent actually searches.
 
 Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss making AI and data vacancies on your campus visible at exact location.
 

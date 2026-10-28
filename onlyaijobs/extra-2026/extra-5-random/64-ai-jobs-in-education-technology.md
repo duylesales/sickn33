@@ -56,7 +56,7 @@ Education is where the case for personalised technology is most appealing and th
 
 ## The Regulatory Position Is Strict, and Rightly So
 
-Under the EU AI Act, AI systems used in education and vocational training are classified as high-risk in several defined uses — determining access or admission to institutions, evaluating learning outcomes, assessing the appropriate level of education a person will receive, and monitoring or detecting prohibited behaviour during tests. Emotion inference in educational settings is among the prohibited practices.
+Under the EU AI Act, AI systems used in education and vocational training are classified as high-risk in several defined uses - determining access or admission to institutions, evaluating learning outcomes, assessing the appropriate level of education a person will receive, and monitoring or detecting prohibited behaviour during tests. Emotion inference in educational settings is among the prohibited practices.
 
 GDPR applies with additional force because children's data receives specific protection, and school children cannot meaningfully consent. Public sector institutions face further constraints on the legal bases available to them.
 
@@ -68,7 +68,7 @@ The practical consequence is that systems which make consequential decisions abo
 
 Education technology has a credibility problem that engineers entering the field should understand: much of what is sold has never been shown to improve learning.
 
-The difficulty is genuine. Learning is slow, affected by everything happening in a student's life, and measured imperfectly. Engagement metrics — time on platform, exercises completed, streaks maintained — are easy to collect and correlate weakly with learning. Test scores are closer but sensitive to what was taught to the test. And randomised evaluation in schools is logistically and ethically complicated.
+The difficulty is genuine. Learning is slow, affected by everything happening in a student's life, and measured imperfectly. Engagement metrics - time on platform, exercises completed, streaks maintained - are easy to collect and correlate weakly with learning. Test scores are closer but sensitive to what was taught to the test. And randomised evaluation in schools is logistically and ethically complicated.
 
 Organisations that take this seriously do several things. They distinguish engagement from learning explicitly in their own reporting. They run controlled evaluations where possible, sometimes at class or school level to avoid contaminating comparisons within a classroom. They measure retention of knowledge weeks later rather than immediate performance. They publish results including negative ones. And they involve education researchers who understand the methodological traps.
 
@@ -82,7 +82,7 @@ The established approaches have long histories. Item response theory models the 
 
 Practical complications dominate. Content must be tagged with the skills it addresses, and building that structure is substantial expert work. Item difficulty must be calibrated, which requires data. Learners guess, slip, and sometimes game the system. Cold start affects both new learners and new content.
 
-The sequencing decision — what to present next — is a decision problem under uncertainty, and contextual bandits appear here as they do elsewhere, with the important constraint that exploration involves real learners' time.
+The sequencing decision - what to present next - is a decision problem under uncertainty, and contextual bandits appear here as they do elsewhere, with the important constraint that exploration involves real learners' time.
 
 Candidates with backgrounds in psychometrics, cognitive science or educational research are unusually valuable in these teams, and the combination with engineering skill is scarce across Europe.
 
@@ -92,7 +92,7 @@ Automated assessment splits sharply between low-stakes practice and high-stakes 
 
 For practice and formative feedback, automated scoring of short answers, code and structured responses is well established and useful. Errors are recoverable, and the feedback loop helps learners.
 
-For high-stakes assessment — examinations that determine progression, qualification or admission — the bar is entirely different. These uses fall within the high-risk category under the EU AI Act, requiring documentation, human oversight, accuracy and transparency. Beyond compliance, fairness is scrutinised intensely: scoring models trained on past marking reproduce past marking, including any bias in it, and performance across first languages, dialects and writing styles must be examined rather than assumed.
+For high-stakes assessment - examinations that determine progression, qualification or admission - the bar is entirely different. These uses fall within the high-risk category under the EU AI Act, requiring documentation, human oversight, accuracy and transparency. Beyond compliance, fairness is scrutinised intensely: scoring models trained on past marking reproduce past marking, including any bias in it, and performance across first languages, dialects and writing styles must be examined rather than assumed.
 
 Proctoring deserves specific mention. Remote invigilation systems that monitor candidates attracted significant criticism and regulatory attention across Europe, on grounds of privacy, accuracy and the distress caused to candidates. Emotion inference in this context is now prohibited. Engineers should expect any work in this area to face serious scrutiny.
 
@@ -108,7 +108,7 @@ Related work includes grammatical error detection and correction, which must dis
 
 Europe's linguistic diversity makes this a natural region for such work, and the market extends well beyond consumer apps into professional language training, integration programmes for new arrivals, and school curricula.
 
-For engineers with speech or natural language backgrounds, this is one of the more accessible entry points into education technology, and the evaluation discipline it requires — measuring performance across demographic groups deliberately — transfers to any application where fairness across populations matters.
+For engineers with speech or natural language backgrounds, this is one of the more accessible entry points into education technology, and the evaluation discipline it requires - measuring performance across demographic groups deliberately - transfers to any application where fairness across populations matters.
 
 ## Generative AI in Classrooms and Institutions
 
@@ -120,7 +120,7 @@ On the support side, tutoring assistants that explain rather than answer are an 
 
 For teachers, drafting support, feedback assistance and administrative help save time in a profession where workload is a persistent problem, and this is where institutional enthusiasm is strongest.
 
-Institutions also face questions of academic integrity, detection of generated work — where the tools are unreliable enough that many universities have advised against relying on them — and policy on acceptable use.
+Institutions also face questions of academic integrity, detection of generated work - where the tools are unreliable enough that many universities have advised against relying on them - and policy on acceptable use.
 
 Across all of this, transparency obligations under the AI Act apply, and the sector's strong norms mean that systems interacting with learners are expected to be clearly identified as machines.
 
@@ -142,7 +142,7 @@ Across all of this, transparency obligations under the AI Act apply, and the sec
 
 **Professional and corporate learning providers**, an adjacent market with fewer constraints because the learners are adults in employment.
 
-Conditions vary accordingly. Institutional and public roles offer stability and collective agreements; commercial edtech offers faster pace and more variable security. Team sizes inside institutions are typically small, which means broad roles and limited technical peer support — worth checking before accepting.
+Conditions vary accordingly. Institutional and public roles offer stability and collective agreements; commercial edtech offers faster pace and more variable security. Team sizes inside institutions are typically small, which means broad roles and limited technical peer support - worth checking before accepting.
 
 ## Entering the Field and Interviewing Well
 
@@ -182,7 +182,7 @@ For engineers, the practical lesson is to design with teachers rather than for t
 
 A European university built a model predicting which first-year students were at risk of dropping out, intending to flag them to student advisers.
 
-The pilot produced a difficult conversation. The model's strongest predictors were factors the university could not act on and should not weight — prior school type, home region, and a proxy for socioeconomic background. Flagging students on that basis risked creating a self-fulfilling categorisation from the first weeks of their studies.
+The pilot produced a difficult conversation. The model's strongest predictors were factors the university could not act on and should not weight - prior school type, home region, and a proxy for socioeconomic background. Flagging students on that basis risked creating a self-fulfilling categorisation from the first weeks of their studies.
 
 The team changed the design. Instead of individual risk scores, they identified behavioural signals that were actionable and time-specific: not accessing course materials in the first fortnight, not submitting the first assignment, not attending introductory sessions. These triggered an offer of support rather than a risk label, and the offer went to everyone who matched, without ranking.
 

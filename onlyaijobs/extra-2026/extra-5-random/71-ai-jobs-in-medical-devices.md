@@ -86,7 +86,7 @@ Risk management runs alongside, following the recognised standard for medical de
 
 It is slower. It also produces systems that can be understood and maintained years later by people who did not build them, which is a benefit engineers often come to appreciate.
 
-Candidates who have worked in any regulated environment — aviation, automotive safety, pharmaceutical manufacturing — transfer comfortably, because the underlying discipline is shared.
+Candidates who have worked in any regulated environment - aviation, automotive safety, pharmaceutical manufacturing - transfer comfortably, because the underlying discipline is shared.
 
 ## Data Access, Privacy and Annotation
 
@@ -120,7 +120,7 @@ Engineers who want continuous deployment will find this frustrating. Those who l
 
 A striking number of technically sound medical AI products fail commercially, and the reason is rarely accuracy.
 
-Clinicians work under severe time pressure within established workflows. A tool that requires opening a separate application, logging in again, uploading an image and interpreting a separate result will not be used, however good it is. Integration into the systems clinicians already use — the imaging viewer, the electronic record, the reporting tool — determines adoption.
+Clinicians work under severe time pressure within established workflows. A tool that requires opening a separate application, logging in again, uploading an image and interpreting a separate result will not be used, however good it is. Integration into the systems clinicians already use - the imaging viewer, the electronic record, the reporting tool - determines adoption.
 
 The output format matters as much. A probability score means little to most clinicians; a highlighted region, a structured finding, or a prioritised worklist is actionable. Systems that reorder a queue so that urgent cases are read first have found adoption more easily than systems that offer a second opinion, because they change workflow without changing responsibility.
 

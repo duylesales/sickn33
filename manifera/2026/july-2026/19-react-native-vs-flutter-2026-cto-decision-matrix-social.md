@@ -1,4 +1,4 @@
-📱 **React Native vs. Flutter in 2026 — not another "it depends" post. Here's the actual decision matrix:**
+📱 **React Native vs. Flutter in 2026 - not another "it depends" post. Here's the actual decision matrix:**
 
 **👥 Team & Talent**
 → RN: Any JS dev learns it in 2-4 weeks. Massive talent pool.

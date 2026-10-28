@@ -1,8 +1,8 @@
-Six weeks post-close on a €320K pre-seed round, one founder had burned 40% of her runway on a freelancer who vanished after milestone two — no contract, no IP clause, no repo access. 😬
+Six weeks post-close on a €320K pre-seed round, one founder had burned 40% of her runway on a freelancer who vanished after milestone two - no contract, no IP clause, no repo access. 😬
 
 **The Pain Points:**
 ❌ **The Vanishing Freelancer:** Solo hires with no company entity and no written IP assignment leave you with nothing to show if they disappear mid-build.
-❌ **The Fixed-Price Trap:** A fixed quote only protects you if the scope is genuinely fixed — and at pre-seed, you're still learning what your MVP actually needs to be.
+❌ **The Fixed-Price Trap:** A fixed quote only protects you if the scope is genuinely fixed - and at pre-seed, you're still learning what your MVP actually needs to be.
 ❌ **The Upfront Payment Ask:** Full payment before any working software ships puts 100% of the delivery risk on you, with no leverage if things go sideways.
 
 **The Manifera Solution:**

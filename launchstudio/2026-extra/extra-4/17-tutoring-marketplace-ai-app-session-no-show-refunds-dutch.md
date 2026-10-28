@@ -84,9 +84,9 @@ LaunchStudio's ingenieurs herbouwden de logica voor niet-verschijnen naar vier e
 **Resultaat:** niet-verschijnende bijlesgevers triggeren nu een automatisch terugbetalingspad in plaats van stilletjes te voltooien als een betaalde sessie, wat de exacte kloof dicht die ongetest was gebleven.
 
 > *"Ik bouwde het beleid voor niet-verschijnen vanaf de kant van de student omdat dat het risico was waar ik me zorgen over maakte om het bedrijf te beschermen. Ik heb er nooit één keer aan gedacht om te vragen: wat als de bijlesgever degene is die afhaakt?"*
-> — **Sanne Kok, Oprichter, BijlesMatch (Delft)**
+> - **Sanne Kok, Oprichter, BijlesMatch (Delft)**
 
-**Kosten en tijdlijn:** € 700 (herbouw van logica voor niet-verschijnen met vier statussen, terugbetalingspad bij afwezige bijlesgever, herstelling van timing betalingsvrijgave) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 700 (herbouw van logica voor niet-verschijnen met vier statussen, terugbetalingspad bij afwezige bijlesgever, herstelling van timing betalingsvrijgave) - voltooid in 3 werkdagen.
 
 ---
 

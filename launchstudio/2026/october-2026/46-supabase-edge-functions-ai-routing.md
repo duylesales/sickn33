@@ -11,7 +11,7 @@ When technical solo founders build their first AI app using Next.js, the archite
 
 This "direct-to-frontend" architecture works perfectly on your localhost. But the moment you deploy to production, you have essentially handed your credit card to the internet.
 
-If your OpenAI API key is exposed to the client browser, anyone can open their Chrome Developer Tools, copy your key from the network tab, and use it to run their own massive AI scripts at your expense — this is one of the most common patterns behind the finding that 45% of AI-generated code ships with exploitable security holes. Even if you hide the key, calling the LLM directly from the frontend means you cannot implement metered billing, you cannot mask Personally Identifiable Information (PII), and you cannot rate-limit abusive users.
+If your OpenAI API key is exposed to the client browser, anyone can open their Chrome Developer Tools, copy your key from the network tab, and use it to run their own massive AI scripts at your expense - this is one of the most common patterns behind the finding that 45% of AI-generated code ships with exploitable security holes. Even if you hide the key, calling the LLM directly from the frontend means you cannot implement metered billing, you cannot mask Personally Identifiable Information (PII), and you cannot rate-limit abusive users.
 
 You need a secure middleman. For modern AI startups, the best middleman in the business is **Supabase Edge Functions**. Here is why you must use them for LLM routing, and how to architect them securely.
 
@@ -25,7 +25,7 @@ If the frontend talks directly to OpenAI, your database never knows how many tok
 
 ### 2. Vendor Lock-In
 
-If you hardcode OpenAI calls into 20 different frontend components, switching to a cheaper or faster model — like Anthropic's Claude or an open-weight model served via Groq or Together AI — requires a massive, painful rewrite of your entire UI layer, one component at a time, with high risk of missing one.
+If you hardcode OpenAI calls into 20 different frontend components, switching to a cheaper or faster model - like Anthropic's Claude or an open-weight model served via Groq or Together AI - requires a massive, painful rewrite of your entire UI layer, one component at a time, with high risk of missing one.
 
 ### 3. The PII Liability
 
@@ -45,22 +45,22 @@ This simple architectural shift unlocks enterprise-grade security and control:
 
 ## Building the Middleman with LaunchStudio
 
-While writing a basic Edge Function is easy, writing one that securely handles asynchronous token streaming, rate limiting, and atomic database deductions under heavy traffic is incredibly complex. If your function fails to deduct credits due to a race condition — two requests reading the same balance before either writes back — your users get free AI, and you eat the cost silently until you notice the discrepancy in a monthly reconciliation.
+While writing a basic Edge Function is easy, writing one that securely handles asynchronous token streaming, rate limiting, and atomic database deductions under heavy traffic is incredibly complex. If your function fails to deduct credits due to a race condition - two requests reading the same balance before either writes back - your users get free AI, and you eat the cost silently until you notice the discrepancy in a monthly reconciliation.
 
 This is why technical founders outsource their backend routing to [LaunchStudio](https://launchstudio.eu/en/).
 
 Backed by the senior backend engineers at [Manifera](https://www.manifera.com/), whose teams operate out of Amsterdam and Ho Chi Minh City, LaunchStudio specializes in building hardened LLM routing infrastructure. You keep building your beautiful Next.js frontend; we build the secure Supabase Edge Functions.
 
-We configure the CORS headers, write the PII-masking middleware, and implement the atomic transactions — using Postgres `SELECT ... FOR UPDATE` or dedicated RPC functions — required to ensure your billing is 100% accurate under concurrent load. We turn your fragile frontend prototype into a secure, scalable SaaS architecture, the same category of production hardening we apply across [custom software development](https://www.manifera.com/services/custom-software-development/) engagements for enterprise clients.
+We configure the CORS headers, write the PII-masking middleware, and implement the atomic transactions - using Postgres `SELECT ... FOR UPDATE` or dedicated RPC functions - required to ensure your billing is 100% accurate under concurrent load. We turn your fragile frontend prototype into a secure, scalable SaaS architecture, the same category of production hardening we apply across [custom software development](https://www.manifera.com/services/custom-software-development/) engagements for enterprise clients.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
 ## Key Takeaways
 
 - Never call an LLM API directly from your frontend; it exposes your API keys, and this exact pattern is a major contributor to the 45% of AI-generated code that ships with exploitable vulnerabilities.
 - Supabase Edge Functions act as a secure, server-side "middleman" between your users and your AI providers, running on Deno at the network edge.
 - Edge Functions allow you to implement Pre-Flight billing checks, PII masking, dynamic LLM routing, and per-user rate limiting.
-- Race conditions in credit deduction are the single most common billing bug in AI SaaS — they require atomic, server-side transactions to fix, not client-side checks.
+- Race conditions in credit deduction are the single most common billing bug in AI SaaS - they require atomic, server-side transactions to fix, not client-side checks.
 - LaunchStudio provides the expert enterprise engineering required to build and secure complex Edge Function architectures, protecting your profit margins.
 
 [Stop exposing your API keys. Partner with LaunchStudio to secure your LLM routing today](https://launchstudio.eu/en/#contact).
@@ -81,7 +81,7 @@ We completely rebuilt his routing layer using Supabase Edge Functions. We remove
 
 **Result:** Jonas re-launched the app one week later. His API keys were completely invisible to the frontend. Because the Edge Function stripped the PII before the text hit the LLM, he passed a strict data-privacy audit from a major Berlin hospital network and secured a €40,000 enterprise contract. *"LaunchStudio's Edge Function architecture saved my business. Without their middleman logic, I was bankrupt and legally exposed."*
 
-**Cost & Timeline:** €3,500 (Edge Function Routing & PII Sanitization) — completed in 8 business days.
+**Cost & Timeline:** €3,500 (Edge Function Routing & PII Sanitization) - completed in 8 business days.
 
 ---
 

@@ -40,11 +40,11 @@ This is the single most important thing to understand about technical work in th
 
 In most commercial settings, you have abundant measurements and the difficulty lies in predicting something from them. Here, the quantities you need to know are at or beyond the limit of what can be measured at all. Feature sizes are smaller than the wavelength of light used to image them. The signals you receive are indirect consequences of the structure you care about, distorted by the physics of the measurement process itself.
 
-This produces a characteristic problem shape: inferring a physical structure from measurements that do not directly show it, where the forward model — how a given structure produces a given signal — is known from physics but is expensive to compute and not straightforwardly invertible.
+This produces a characteristic problem shape: inferring a physical structure from measurements that do not directly show it, where the forward model - how a given structure produces a given signal - is known from physics but is expensive to compute and not straightforwardly invertible.
 
 **Inverse problems dominate.** Reconstructing what is on a wafer from scattered light, electron signals or interference patterns is an inverse problem with a physically grounded forward model. Machine learning enters as a way to approximate the inverse mapping, or to accelerate the forward model so that iterative inversion becomes tractable.
 
-**Physics-informed methods are the norm rather than a novelty.** Purely data-driven models that ignore the known physics perform worse and, more importantly, fail unpredictably outside their training distribution — which is unacceptable when the consequence is scrapping wafers worth a great deal of money. Hybrid approaches that embed physical structure are standard practice here, not an academic curiosity.
+**Physics-informed methods are the norm rather than a novelty.** Purely data-driven models that ignore the known physics perform worse and, more importantly, fail unpredictably outside their training distribution - which is unacceptable when the consequence is scrapping wafers worth a great deal of money. Hybrid approaches that embed physical structure are standard practice here, not an academic curiosity.
 
 **Data is expensive and scarce in the places that matter.** Generating labelled examples requires running actual processes on actual hardware. For the rare failure modes that matter most, examples may number in the tens. Simulation supplements this, but then the simulation-to-reality gap becomes its own problem.
 
@@ -54,7 +54,7 @@ This produces a characteristic problem shape: inferring a physical structure fro
 
 **Computational lithography.** Predicting how a pattern will print given the optics, and pre-distorting the mask so the printed result matches intent. This is a large-scale physical simulation and optimisation problem where machine learning accelerates components that would otherwise be prohibitively slow.
 
-**Metrology.** Measuring what was actually produced — feature dimensions, overlay alignment between layers, defects — at scales where the measurement is itself an inference problem.
+**Metrology.** Measuring what was actually produced - feature dimensions, overlay alignment between layers, defects - at scales where the measurement is itself an inference problem.
 
 **Defect detection and classification.** Finding and categorising anomalies in imagery where defects are rare, varied, and where the cost of missing a systematic defect is much higher than the cost of a false alarm.
 
@@ -64,7 +64,7 @@ This produces a characteristic problem shape: inferring a physical structure fro
 
 ## The Entity Landscape
 
-**ASML.** Headquartered in Veldhoven, the company develops and manufactures lithography systems used by semiconductor manufacturers worldwide. It dominates the local employment market entirely, and its scale means it contains many effectively separate technical organisations — computational lithography, metrology, optics, mechatronics, software, manufacturing. Candidates should understand that "working there" describes a very wide range of possible jobs.
+**ASML.** Headquartered in Veldhoven, the company develops and manufactures lithography systems used by semiconductor manufacturers worldwide. It dominates the local employment market entirely, and its scale means it contains many effectively separate technical organisations - computational lithography, metrology, optics, mechatronics, software, manufacturing. Candidates should understand that "working there" describes a very wide range of possible jobs.
 
 **The regional supplier network.** The machines are built from components produced by a large network of specialist suppliers across the Brainport region and beyond. Many of these companies do sophisticated precision engineering and increasingly employ data specialists for quality and process work. They are far less visible than the main employer and considerably easier to enter.
 
@@ -100,7 +100,7 @@ The honest guidance is to match your entry point to your background rather than 
 
 Semiconductor equipment is an industry where a single machine sells for an amount comparable to a large building, where the customer base is small and technically extremely demanding, and where a performance advantage translates directly into market position. The economics support high compensation for people who can advance the technology.
 
-The consequence is that this is a competitive market. Candidates should expect thorough technical interviewing, genuine depth in the assessment, and a process that takes time. Preparation that emphasises fundamentals — probability, linear algebra, optimisation, physics where relevant — is far more useful than preparation that emphasises breadth of tooling.
+The consequence is that this is a competitive market. Candidates should expect thorough technical interviewing, genuine depth in the assessment, and a process that takes time. Preparation that emphasises fundamentals - probability, linear algebra, optimisation, physics where relevant - is far more useful than preparation that emphasises breadth of tooling.
 
 Compensation, for candidates who clear that bar, is among the highest available in Dutch engineering, and the region's housing costs are moderate rather than Randstad-level. The combination is favourable.
 
@@ -110,7 +110,7 @@ A technical organisation of this size behaves differently from anything most can
 
 **Your problem is a fragment of a larger one.** A machine involves optics, mechanics, thermal management, electronics, control software and metrology, all interacting. You will own a narrow slice. Understanding how your slice affects the whole requires deliberate effort, because nobody will hand you that context. Engineers who invest in building it become disproportionately useful; those who optimise their component in isolation produce locally good, globally unhelpful results.
 
-**Interfaces are where difficulty lives.** Because the system is decomposed across many teams, the hard engineering problems frequently sit at the boundaries between them — where one group's assumptions meet another's. Comfort working across organisational boundaries matters more here than in a small team where everyone shares context implicitly.
+**Interfaces are where difficulty lives.** Because the system is decomposed across many teams, the hard engineering problems frequently sit at the boundaries between them - where one group's assumptions meet another's. Comfort working across organisational boundaries matters more here than in a small team where everyone shares context implicitly.
 
 **Documentation and traceability are load-bearing.** A machine installed at a customer site must be supportable for many years by people who were not involved in building it. This produces process requirements that feel heavy coming from a startup, and they exist for reasons that become obvious once you have seen a field problem traced back through several years of design decisions.
 
@@ -120,7 +120,7 @@ A technical organisation of this size behaves differently from anything most can
 
 This cluster is unusually international, which affects the practical experience of working here considerably.
 
-English is the working language throughout technical organisations. A large proportion of the technical workforce is internationally recruited, and the supporting infrastructure — relocation, schooling, administrative help — is well developed because employers have been doing it at scale for years. For an international candidate, this is among the most straightforward Dutch markets to enter socially and administratively.
+English is the working language throughout technical organisations. A large proportion of the technical workforce is internationally recruited, and the supporting infrastructure - relocation, schooling, administrative help - is well developed because employers have been doing it at scale for years. For an international candidate, this is among the most straightforward Dutch markets to enter socially and administratively.
 
 Two counterweights deserve mention. Export control and trade restrictions affect this industry substantially, and specific roles may have nationality-related access limitations, particularly those touching the most sensitive technology. Ask about this early, as with defence work. Separately, the industry is geopolitically exposed in a way that most engineering sectors are not, and while that does not translate into employment instability at present, candidates should be aware that the business environment involves political factors beyond normal market risk.
 
@@ -132,7 +132,7 @@ What it builds is rare. Genuine competence in inverse problems, physics-informed
 
 What it narrows is breadth of employer type. Five years of deep work on measurement physics does not obviously qualify you for a product machine learning role at a consumer technology company, and candidates who later want that transition sometimes find the translation harder than expected. The skills are stronger, but the vocabulary and the interviewing conventions differ, and hiring managers elsewhere may not recognise what you have.
 
-The mitigation is not to avoid depth but to maintain legibility. Be able to describe your work in terms of the general problem class — inference under uncertainty, inverse problems, physics-constrained optimisation — rather than only in domain-specific terms. Keep some public evidence of your reasoning, whether papers, talks or writing. The specialisation is worth having; it just needs to be explicable to people outside it.
+The mitigation is not to avoid depth but to maintain legibility. Be able to describe your work in terms of the general problem class - inference under uncertainty, inverse problems, physics-constrained optimisation - rather than only in domain-specific terms. Keep some public evidence of your reasoning, whether papers, talks or writing. The specialisation is worth having; it just needs to be explicable to people outside it.
 
 There is also a straightforward positive to record: this is one of the few technical fields where the fundamental difficulty is not going to be solved away. Physical measurement limits do not get easier. Competence acquired here retains its value in a way that expertise in a specific software ecosystem generally does not.
 
@@ -156,7 +156,7 @@ Most people working here live in Eindhoven or the surrounding area rather than i
 - Uncertainty quantification is a core requirement rather than a refinement, since predictions feed decisions that need calibrated confidence.
 - The dominant employer is competitive and expects strong quantitative foundations; the supplier and service layers are genuinely accessible alternatives with real technical content.
 - Match your entry point to your background rather than concluding the cluster is closed.
-- Compensation is among the highest in Dutch engineering, the working language is English, and the region is set up for international recruitment — but export control and geopolitical exposure are real factors to ask about.
+- Compensation is among the highest in Dutch engineering, the working language is English, and the region is set up for international recruitment - but export control and geopolitical exposure are real factors to ask about.
 
 ## Where to Start
 
@@ -176,7 +176,7 @@ Yes, but through different doors: data infrastructure, software engineering, ana
 Purely data-driven models fail unpredictably outside their training distribution, and here that failure can mean scrapping very expensive material. Embedding known physics makes behaviour more predictable, which matters more than benchmark performance.
 
 ### (Scenario: international candidate) Is this an accessible market for non-Dutch candidates?
-Among the most accessible in the country socially and administratively — English is the working language and employers recruit internationally at scale. But ask early about export control and nationality-related access limits on specific roles.
+Among the most accessible in the country socially and administratively - English is the working language and employers recruit internationally at scale. But ask early about export control and nationality-related access limits on specific roles.
 
 ### (Scenario: candidate weighing the competition) How should I prepare for interviews here?
 Emphasise fundamentals: probability, linear algebra, optimisation and relevant physics. Depth is assessed genuinely. Breadth of tooling familiarity is much less useful than being able to reason carefully about a measurement problem.
@@ -186,7 +186,7 @@ Emphasise fundamentals: probability, linear algebra, optimisation and relevant p
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How is this work different from commercial machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "The hard problem is measurement rather than prediction — inferring physical structures from signals that do not directly show them, using an expensive physics-based forward model."}},
+    {"@type": "Question", "name": "How is this work different from commercial machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "The hard problem is measurement rather than prediction - inferring physical structures from signals that do not directly show them, using an expensive physics-based forward model."}},
     {"@type": "Question", "name": "Can I work in this cluster without a physics background?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, through data infrastructure, software engineering, analysis tooling, manufacturing data or supplier-side quality work, with movement inward possible over years."}},
     {"@type": "Question", "name": "Why are physics-informed methods emphasised over standard deep learning?", "acceptedAnswer": {"@type": "Answer", "text": "Purely data-driven models fail unpredictably outside their training distribution, and here that failure can mean scrapping very expensive material."}},
     {"@type": "Question", "name": "Is this an accessible market for international candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Among the most accessible socially and administratively, with English as the working language, though export control may limit access to specific roles."}},

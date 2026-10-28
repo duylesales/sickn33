@@ -1,4 +1,4 @@
-🔥 Evelyn built a prototype using **Bolt** — evelyn, a content marketer, used **bolt** to build a copywriting assistant, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Evelyn built a prototype using **Bolt** - evelyn, a content marketer, used **bolt** to build a copywriting assistant, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Evelyn's application achieved silky-smooth performance: Private API keys were hidden from the client, securing her billing from unauthorized access. (€850 (Secrets Protection Package) — production-ready and deployed in 2 business days.). 🚀
+Evelyn's application achieved silky-smooth performance: Private API keys were hidden from the client, securing her billing from unauthorized access. (€850 (Secrets Protection Package) - production-ready and deployed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/securing-api-keys-nextjs-ai-apps
 

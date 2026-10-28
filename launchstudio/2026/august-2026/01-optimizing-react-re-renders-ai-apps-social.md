@@ -1,4 +1,4 @@
-🔥 Liam built a prototype using **Lovable** — liam, a financial analyst, used **lovable** to build a real-time portfolio dashboard, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Liam built a prototype using **Lovable** - liam, a financial analyst, used **lovable** to build a real-time portfolio dashboard, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Liam's application achieved silky-smooth performance: Dashboard CPU usage dropped from 98% to 4%, restoring silky smooth updates and user interactions. (€1,800 (Performance Optimization Package) — production-ready and deployed in 4 business days.). 🚀
+Liam's application achieved silky-smooth performance: Dashboard CPU usage dropped from 98% to 4%, restoring silky smooth updates and user interactions. (€1,800 (Performance Optimization Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/optimizing-react-re-renders-ai-apps
 

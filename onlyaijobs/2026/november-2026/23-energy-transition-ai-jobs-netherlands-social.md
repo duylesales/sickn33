@@ -4,7 +4,7 @@
 
 🏢 TenneT, Alliander, Stedin, Enexis, GOPACS, ElaadNL, suppliers, traders and the ACM shape the landscape.
 
-✅ Grid operators offer the largest volume of impactful work — and are usually underestimated by candidates.
+✅ Grid operators offer the largest volume of impactful work - and are usually underestimated by candidates.
 
 🔎 Browse current jobs: https://onlyaijobs.eu/jobs
 

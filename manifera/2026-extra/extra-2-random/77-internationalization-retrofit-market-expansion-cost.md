@@ -20,26 +20,26 @@ target_persona: "CEO"
 }
 </script>
 
-The board approved German market entry as a two-quarter initiative. Engineering discovered, three weeks in, that every user-facing string in the application was hardcoded directly into component templates, with no translation infrastructure anywhere in the codebase — the two-quarter plan quietly became a four-quarter plan before a single German user ever saw the product.
+The board approved German market entry as a two-quarter initiative. Engineering discovered, three weeks in, that every user-facing string in the application was hardcoded directly into component templates, with no translation infrastructure anywhere in the codebase - the two-quarter plan quietly became a four-quarter plan before a single German user ever saw the product.
 
-**The Pain:** A CEO greenlit expansion into a new market based on a commercial timeline — sales pipeline, localized marketing, a launch date communicated to the board — without engineering having flagged that the product was never built with internationalization in mind. Every date format, currency display, pluralization rule, and user-facing string is hardcoded in English throughout the codebase, because internationalization was never on a roadmap when the company only operated in one market and nobody thought to build for a future that wasn't yet funded.
+**The Pain:** A CEO greenlit expansion into a new market based on a commercial timeline - sales pipeline, localized marketing, a launch date communicated to the board - without engineering having flagged that the product was never built with internationalization in mind. Every date format, currency display, pluralization rule, and user-facing string is hardcoded in English throughout the codebase, because internationalization was never on a roadmap when the company only operated in one market and nobody thought to build for a future that wasn't yet funded.
 
-**The Agitation:** Retrofitting internationalization into a codebase that was never designed for it is dramatically more expensive and slower than building it in from the start, because every hardcoded string, every date-formatting assumption, and every currency-display shortcut has to be found and fixed individually across the entire application — a search-and-rework exercise that scales with the size of the codebase, not with the complexity of the target market. A CEO who committed to a market-entry timeline based on the commercial plan alone, without validating the technical retrofit cost, discovers the real timeline only after the board commitment is already public.
+**The Agitation:** Retrofitting internationalization into a codebase that was never designed for it is dramatically more expensive and slower than building it in from the start, because every hardcoded string, every date-formatting assumption, and every currency-display shortcut has to be found and fixed individually across the entire application - a search-and-rework exercise that scales with the size of the codebase, not with the complexity of the target market. A CEO who committed to a market-entry timeline based on the commercial plan alone, without validating the technical retrofit cost, discovers the real timeline only after the board commitment is already public.
 
 ## The Internationalization Retrofit Mandate
 
-The first mandate is a full internationalization audit before committing to any market-entry timeline publicly — a systematic scan of the codebase for hardcoded strings, date and number formatting assumptions, currency handling, and pluralization logic, producing an honest estimate of retrofit scope before a date gets attached to a board slide.
+The first mandate is a full internationalization audit before committing to any market-entry timeline publicly - a systematic scan of the codebase for hardcoded strings, date and number formatting assumptions, currency handling, and pluralization logic, producing an honest estimate of retrofit scope before a date gets attached to a board slide.
 
-The second mandate is migrating to a proper internationalization framework — externalizing every user-facing string into translation resource files, replacing hardcoded date and currency formatting with locale-aware libraries — as a foundational infrastructure project, not a per-feature patch applied inconsistently as new markets get added one at a time.
+The second mandate is migrating to a proper internationalization framework - externalizing every user-facing string into translation resource files, replacing hardcoded date and currency formatting with locale-aware libraries - as a foundational infrastructure project, not a per-feature patch applied inconsistently as new markets get added one at a time.
 
-The third mandate is treating internationalization infrastructure as reusable investment, not a one-market cost — once the framework is properly in place, adding a third and fourth market becomes materially cheaper than the first retrofit, because the hard architectural work is already done and subsequent markets are primarily translation and locale-specific business-rule work, not another engineering excavation through the codebase.
+The third mandate is treating internationalization infrastructure as reusable investment, not a one-market cost - once the framework is properly in place, adding a third and fourth market becomes materially cheaper than the first retrofit, because the hard architectural work is already done and subsequent markets are primarily translation and locale-specific business-rule work, not another engineering excavation through the codebase.
 
-The fourth mandate is separating the commercial timeline from the technical timeline explicitly in board communication going forward — a market-entry date should be set only after engineering has validated the retrofit scope, not before, so the company never again finds itself explaining to a board why a committed date needs to move because of a technical discovery that should have been made before the commitment.
+The fourth mandate is separating the commercial timeline from the technical timeline explicitly in board communication going forward - a market-entry date should be set only after engineering has validated the retrofit scope, not before, so the company never again finds itself explaining to a board why a committed date needs to move because of a technical discovery that should have been made before the commitment.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch architects run the internationalization audit and translate the findings into a realistic timeline the CEO can commit to publicly, before any date reaches a board slide.
-- **Vietnam (Execution/Velocity):** Autonomous pods in Vietnam execute the internationalization migration — externalizing strings, implementing locale-aware formatting, building the reusable framework that makes every subsequent market cheaper than the first.
+- **Vietnam (Execution/Velocity):** Autonomous pods in Vietnam execute the internationalization migration - externalizing strings, implementing locale-aware formatting, building the reusable framework that makes every subsequent market cheaper than the first.
 
 This is Dutch Management × Vietnamese Mastery: European commercial-technical alignment that prevents a market-entry date from being set before the retrofit cost is known, paired with execution capacity that builds internationalization as reusable infrastructure, not a one-off patch. Learn more about [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) and how a properly scoped internationalization foundation makes every future market expansion faster than the last.
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: European commercial-technical al
 
 ### A Stockholm SaaS Company's German Launch Discovery
 
-Nordisk Affärsplattform AB, a Stockholm-based B2B SaaS company, had announced a German market launch to its board as a two-quarter initiative, only to discover during technical scoping that the entire application had hardcoded English strings, US-style date formatting, and no currency-locale handling anywhere in the codebase — a retrofit that would genuinely require closer to five months of dedicated engineering work before a single translated screen could ship.
+Nordisk Affärsplattform AB, a Stockholm-based B2B SaaS company, had announced a German market launch to its board as a two-quarter initiative, only to discover during technical scoping that the entire application had hardcoded English strings, US-style date formatting, and no currency-locale handling anywhere in the codebase - a retrofit that would genuinely require closer to five months of dedicated engineering work before a single translated screen could ship.
 
-Manifera conducted the internationalization audit within two weeks, then executed the full migration to a proper i18n framework — externalized strings, locale-aware date and currency formatting, and a translation-management workflow — over fourteen weeks. The CEO was able to communicate a revised, accurate timeline to the board early enough to manage expectations, and the company's subsequent French market entry, using the now-reusable i18n infrastructure, took six weeks rather than the original German retrofit's fourteen.
+Manifera conducted the internationalization audit within two weeks, then executed the full migration to a proper i18n framework - externalized strings, locale-aware date and currency formatting, and a translation-management workflow - over fourteen weeks. The CEO was able to communicate a revised, accurate timeline to the board early enough to manage expectations, and the company's subsequent French market entry, using the now-reusable i18n infrastructure, took six weeks rather than the original German retrofit's fourteen.
 
-> *"The German launch date moved, and that was an uncomfortable board conversation. But it was one honest conversation instead of a missed deadline nobody saw coming — and by the time France came around, the hard part was already built."*
-> — **CEO, Nordisk Affärsplattform AB, Sweden**
+> *"The German launch date moved, and that was an uncomfortable board conversation. But it was one honest conversation instead of a missed deadline nobody saw coming - and by the time France came around, the hard part was already built."*
+> - **CEO, Nordisk Affärsplattform AB, Sweden**
 
 ## Hardcoded English Codebase vs. Manifera's Reusable I18n Foundation
 
@@ -66,13 +66,13 @@ Manifera conducted the internationalization audit within two weeks, then execute
 
 ## The Economics
 
-Retrofitting internationalization into a codebase never built for it typically costs €70,000-€130,000 and four to six months for the first market, largely because the work is a discovery-and-rework exercise across the entire application rather than a contained project. Once that foundational investment is made properly, each subsequent market typically costs a fraction of that — often 20-30% — because the framework, not the codebase, does the heavy lifting going forward. The real cost of skipping the audit isn't just the retrofit itself, but the board credibility cost of a publicly committed date moving because of a technical discovery that should have been made before the commitment. [Talk to Manifera](https://www.manifera.com/contact-us/) about auditing your internationalization readiness before the next market-entry date reaches a board slide.
+Retrofitting internationalization into a codebase never built for it typically costs €70,000-€130,000 and four to six months for the first market, largely because the work is a discovery-and-rework exercise across the entire application rather than a contained project. Once that foundational investment is made properly, each subsequent market typically costs a fraction of that - often 20-30% - because the framework, not the codebase, does the heavy lifting going forward. The real cost of skipping the audit isn't just the retrofit itself, but the board credibility cost of a publicly committed date moving because of a technical discovery that should have been made before the commitment. [Talk to Manifera](https://www.manifera.com/contact-us/) about auditing your internationalization readiness before the next market-entry date reaches a board slide.
 
 ## Frequently Asked Questions
 
 ### (Scenario: CEO who committed to a market-entry date before an i18n audit) How do we avoid committing to a market-entry timeline that engineering later has to walk back?
 
-Run a full internationalization audit before any date is communicated publicly or to the board — the audit typically takes one to two weeks and gives an honest basis for a commercial timeline, rather than discovering the real scope mid-project.
+Run a full internationalization audit before any date is communicated publicly or to the board - the audit typically takes one to two weeks and gives an honest basis for a commercial timeline, rather than discovering the real scope mid-project.
 
 ### (Scenario: CEO trying to understand why the retrofit is so much more expensive than expected) Why is retrofitting internationalization so much more expensive than building it in from the start?
 
@@ -80,7 +80,7 @@ Because every hardcoded string, date format, and currency assumption has to be f
 
 ### (Scenario: CEO planning multiple future market expansions) Does the internationalization investment pay off across multiple future markets, or is it a one-time cost per market?
 
-It's genuinely reusable investment — once the framework is properly built, subsequent markets are primarily translation and locale-specific business-rule work, typically costing a fraction of the first market's retrofit cost.
+It's genuinely reusable investment - once the framework is properly built, subsequent markets are primarily translation and locale-specific business-rule work, typically costing a fraction of the first market's retrofit cost.
 
 ### (Scenario: CEO trying to align commercial and engineering timelines going forward) How should commercial and technical timelines be aligned for future market-entry decisions?
 

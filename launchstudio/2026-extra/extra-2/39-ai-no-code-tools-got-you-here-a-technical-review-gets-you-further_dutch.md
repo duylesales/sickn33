@@ -57,18 +57,18 @@ Een correcte herstelling voegt een expliciete deelnemerscontrole toe aan elk ver
 
 Manifera's audits voor berichten en toegangsbeheer worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Deel een link naar uw prototype — we bekijken het gratis](https://launchstudio.eu/nl/#contact).
+[Deel een link naar uw prototype - we bekijken het gratis](https://launchstudio.eu/nl/#contact).
 
 ## Andere Gedeelde Functies Die Dezelfde Eigendomscontrole Vereisen
 
-Privéberichten zijn het meest sprekende voorbeeld van een gedeelde functie, maar hetzelfde onderliggende principe — het expliciet controleren of de aanvrager een legitieme relatie heeft tot de opgevraagde bron voordat deze wordt geretourneerd — is direct van toepassing op tal van andere interactieve functionaliteiten:
+Privéberichten zijn het meest sprekende voorbeeld van een gedeelde functie, maar hetzelfde onderliggende principe - het expliciet controleren of de aanvrager een legitieme relatie heeft tot de opgevraagde bron voordat deze wordt geretourneerd - is direct van toepassing op tal van andere interactieve functionaliteiten:
 
-- **Groepsboekingen en gedeelde agenda's** — een planningsfunctie met meerdere deelnemers (zoals een gezin dat meerdere sessies boekt of een groepsles) vereist exact dezelfde verificatie per deelnemer als een tweepersoonsgesprek, toegepast over een bredere groep legitieme kijkers.
-- **Gedeelde documenten en bestandsuploads** — een lesbestand, een huiswerkopdracht of een geüpload contract dat hoort bij een specifieke relatie tussen twee gebruikers heeft dezelfde servercontrole nodig voordat het wordt geserveerd op basis van een ID of downloadlink.
-- **Notities en beoordelingen gekoppeld aan een specifieke samenwerking** — een interne notitie of vertrouwelijke beoordeling die alleen zichtbaar mag zijn voor de twee partijen die betrokken zijn bij een afspraak, loopt exact hetzelfde risico als de ophaallogica niet verifieert dat de aanvrager een van die twee partijen is.
-- **Activiteiten- en notificatiestromen** — een feed met "recente activiteiten" binnen een specifieke organisatie of samenwerking heeft dezelfde deelnemerscontrole nodig als de onderliggende gegevens die worden samengevat, aangezien een dergelijke feed vaak als secundaire weergave over dezelfde brontabellen is gebouwd.
+- **Groepsboekingen en gedeelde agenda's** - een planningsfunctie met meerdere deelnemers (zoals een gezin dat meerdere sessies boekt of een groepsles) vereist exact dezelfde verificatie per deelnemer als een tweepersoonsgesprek, toegepast over een bredere groep legitieme kijkers.
+- **Gedeelde documenten en bestandsuploads** - een lesbestand, een huiswerkopdracht of een geüpload contract dat hoort bij een specifieke relatie tussen twee gebruikers heeft dezelfde servercontrole nodig voordat het wordt geserveerd op basis van een ID of downloadlink.
+- **Notities en beoordelingen gekoppeld aan een specifieke samenwerking** - een interne notitie of vertrouwelijke beoordeling die alleen zichtbaar mag zijn voor de twee partijen die betrokken zijn bij een afspraak, loopt exact hetzelfde risico als de ophaallogica niet verifieert dat de aanvrager een van die twee partijen is.
+- **Activiteiten- en notificatiestromen** - een feed met "recente activiteiten" binnen een specifieke organisatie of samenwerking heeft dezelfde deelnemerscontrole nodig als de onderliggende gegevens die worden samengevat, aangezien een dergelijke feed vaak als secundaire weergave over dezelfde brontabellen is gebouwd.
 
-De rode draad door al deze vier voorbeelden is dat elke feature hoogstwaarschijnlijk op dezelfde manier is gebouwd en getest: prima functionerend voor het beoogde, eerlijke gebruik, waarbij de specifieke beveiligingsvraag — "kan iemand die géén legitieme deelnemer is dit bestand opvragen via het ID?" — nooit spontaan opkomt tijdens normale tests. Een technische audit die dit gat in één deelsysteem vindt en dicht, controleert direct elk ander onderdeel dat volgens hetzelfde patroon is opgebouwd.
+De rode draad door al deze vier voorbeelden is dat elke feature hoogstwaarschijnlijk op dezelfde manier is gebouwd en getest: prima functionerend voor het beoogde, eerlijke gebruik, waarbij de specifieke beveiligingsvraag - "kan iemand die géén legitieme deelnemer is dit bestand opvragen via het ID?" - nooit spontaan opkomt tijdens normale tests. Een technische audit die dit gat in één deelsysteem vindt en dicht, controleert direct elk ander onderdeel dat volgens hetzelfde patroon is opgebouwd.
 
 ## Echt voorbeeld
 
@@ -81,9 +81,9 @@ Een ouder nam verward contact op met de klantenservice nadat ze vluchtig een fra
 **Resultaat:** LaunchStudio voegde expliciete deelnemersverificatie toe aan elk verzoek om gesprekken en berichten, wat de blootstelling volledig sloot, ongeacht navigatietiming of het gokken van gespreks-ID's. En dit zonder LesMaatje's berichteninterface of gebruikerservaring te veranderen.
 
 > *"Het was maar een flits op het scherm, nauwelijks een seconde, en ik had het gemakkelijk af kunnen doen als een storing. Ik ben oprecht blij dat die ouder het vermeldde in plaats van aan te nemen dat het niets was."*
-> — **Nadia Bouras, Oprichter, LesMaatje (Doetinchem)**
+> - **Nadia Bouras, Oprichter, LesMaatje (Doetinchem)**
 
-**Kosten en tijdlijn:** € 1.800 (audit voor toegangsbepaling bij berichten en deelnemersverificatie) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.800 (audit voor toegangsbepaling bij berichten en deelnemersverificatie) - voltooid in 6 werkdagen.
 
 ---
 

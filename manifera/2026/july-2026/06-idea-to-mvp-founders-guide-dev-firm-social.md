@@ -1,6 +1,6 @@
 🚀 **The MVP playbook nobody teaches in startup school:**
 
-You validated the problem. Talked to 50 customers. Now you need to actually BUILD the thing — and you don't code.
+You validated the problem. Talked to 50 customers. Now you need to actually BUILD the thing - and you don't code.
 
 Here's the 5-step process that works:
 

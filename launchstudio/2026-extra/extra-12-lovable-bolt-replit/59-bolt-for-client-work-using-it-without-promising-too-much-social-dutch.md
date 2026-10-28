@@ -10,9 +10,9 @@ Drie weken later mailde hun operationeel manager die link naar 40 klanten. Namen
 ✅ Het prototype offline gehaald, met logs die precies lieten zien wat wel en niet was blootgesteld
 ✅ Drie weken aan echte klantdata gemigreerd naar een goed gebouwde versie, niet weggegooid
 ✅ Productie gespecificeerd in 14 benoemde werkzaamheden, elk met onderbouwing
-✅ Een nieuwe standaard: prijzen in twee fasen, links die na 14 dagen verlopen, wachtwoorden, en een banner "demonstratiemodel — niet voor gebruik met echte gegevens"
+✅ Een nieuwe standaard: prijzen in twee fasen, links die na 14 dagen verlopen, wachtwoorden, en een banner "demonstratiemodel - niet voor gebruik met echte gegevens"
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, doen we de productiefase white-label — zodat u de klantrelatie houdt. 🤝
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, doen we de productiefase white-label - zodat u de klantrelatie houdt. 🤝
 
 💡 Het resultaat: na vier werkdagen en € 4.300 was de opdracht gered. Bij elf opdrachten sindsdien werd de productieofferte negen keer geaccepteerd en nooit ter discussie gesteld vanwege de snelheid van het prototype. Verkenning kost nu € 2.500, vooraf betaald. 🚀
 

@@ -8,15 +8,15 @@ Buyer Stage: Decision
 
 Before launching your AI-built prototype to real users, verify these 20 critical items across security, payments, deployment, performance, and legal compliance. Approximately 95% of AI-generated applications fail at least 10 of these checks. Each failed item represents a risk to your users, your revenue, or your reputation. This checklist helps you identify and fix the gaps before they become problems.
 
-This checklist is based on our experience reviewing hundreds of AI-built prototypes at LaunchStudio. We have identified the 20 items that most frequently cause problems after launch — ranked by severity and grouped by category. Use it as your pre-launch audit before accepting your first real user.
+This checklist is based on our experience reviewing hundreds of AI-built prototypes at LaunchStudio. We have identified the 20 items that most frequently cause problems after launch - ranked by severity and grouped by category. Use it as your pre-launch audit before accepting your first real user.
 
-## Security (Items 1–5) — Mandatory
+## Security (Items 1–5) - Mandatory
 
 All five security items must pass before launch. Skipping any of these creates immediate risk to your users and potential legal liability for you.
 
 ### 1. Authentication Uses a Proven Provider
 
-**Check**: Your app uses Supabase Auth, Firebase Authentication, Auth0, or another established authentication provider — not a custom-built login system.
+**Check**: Your app uses Supabase Auth, Firebase Authentication, Auth0, or another established authentication provider - not a custom-built login system.
 
 **Why it matters**: Custom authentication is the most common source of security vulnerabilities in web applications. Proven providers handle password hashing, session management, token rotation, and brute force protection correctly.
 
@@ -34,7 +34,7 @@ All five security items must pass before launch. Skipping any of these creates i
 
 **Check**: Every table in your Supabase database has RLS enabled with appropriate policies that restrict users to their own data.
 
-**Why it matters**: Without RLS, any authenticated user can query, modify, or delete any row in any table — including other users' data. This is the most critical and most commonly missed security measure in AI-built applications.
+**Why it matters**: Without RLS, any authenticated user can query, modify, or delete any row in any table - including other users' data. This is the most critical and most commonly missed security measure in AI-built applications.
 
 **How to verify**: Open your Supabase dashboard, go to each table, and check that RLS is enabled (the lock icon should be active). Review the policies to ensure they restrict access by user ID.
 
@@ -44,7 +44,7 @@ All five security items must pass before launch. Skipping any of these creates i
 
 **Why it matters**: Without HTTPS, user data (including login credentials) is transmitted in plain text and can be intercepted by anyone on the same network.
 
-**How to verify**: Visit your application URL with http:// — it should automatically redirect to https://. Check that the browser shows a lock icon in the address bar.
+**How to verify**: Visit your application URL with http:// - it should automatically redirect to https://. Check that the browser shows a lock icon in the address bar.
 
 ### 5. Input Validation on All User-Submitted Data
 
@@ -54,7 +54,7 @@ All five security items must pass before launch. Skipping any of these creates i
 
 **How to verify**: Try submitting forms with empty fields, extremely long text, HTML tags, and special characters. The application should reject invalid input with clear error messages.
 
-## Payments (Items 6–9) — Required If You Accept Payments
+## Payments (Items 6–9) - Required If You Accept Payments
 
 ### 6. Stripe Is in Live Mode
 
@@ -80,7 +80,7 @@ All five security items must pass before launch. Skipping any of these creates i
 
 **Why it matters**: Without proper verification, users might access paid features by navigating directly to URLs or manipulating client-side state.
 
-## Deployment (Items 10–14) — Essential
+## Deployment (Items 10–14) - Essential
 
 ### 10. App Runs on Your Own Domain
 
@@ -102,11 +102,11 @@ All five security items must pass before launch. Skipping any of these creates i
 
 **Check**: Your database has automated daily backups enabled and you have tested restoring from a backup at least once.
 
-## Performance (Items 15–18) — Strongly Recommended
+## Performance (Items 15–18) - Strongly Recommended
 
 ### 15. Page Loads in Under 3 Seconds
 
-**Check**: Test your application on Google PageSpeed Insights — aim for a performance score above 70 on mobile.
+**Check**: Test your application on Google PageSpeed Insights - aim for a performance score above 70 on mobile.
 
 ### 16. Works on Mobile
 
@@ -118,9 +118,9 @@ All five security items must pass before launch. Skipping any of these creates i
 
 ### 18. No Console Errors in Production
 
-**Check**: Open browser developer tools on your production site — there should be no JavaScript errors in the console during normal usage.
+**Check**: Open browser developer tools on your production site - there should be no JavaScript errors in the console during normal usage.
 
-## Legal and Launch (Items 19–20) — Required for EU
+## Legal and Launch (Items 19–20) - Required for EU
 
 ### 19. Terms of Service and Privacy Policy in Place
 
@@ -139,13 +139,13 @@ All five security items must pass before launch. Skipping any of these creates i
 | 8–13 passed | Needs work | Your prototype is a strong starting point but needs professional production readiness work. |
 | 0–7 passed | Not ready | Do not launch yet. Get professional help to address the critical gaps. |
 
-Most AI-built prototypes score between 4 and 8 on this checklist. That is completely normal — it reflects the gap between prototype and production that all AI-generated applications share. The important thing is knowing the score and addressing the gaps before your first real user.
+Most AI-built prototypes score between 4 and 8 on this checklist. That is completely normal - it reflects the gap between prototype and production that all AI-generated applications share. The important thing is knowing the score and addressing the gaps before your first real user.
 
 ## Key Takeaways
 
 - Use this 20-point checklist to assess your AI-built prototype's production readiness
 
-- All 5 security items are mandatory — never launch without them
+- All 5 security items are mandatory - never launch without them
 
 - Most AI-built prototypes pass only 4–8 of the 20 items
 
@@ -169,7 +169,7 @@ Lucas partnered with **LaunchStudio (by Manifera)**. The engineering team secure
 
 **Result:** Lucas's tool became fully production-ready, allowing him to pass client security audits and sign up his first three corporate customers within 10 days of launch.
 
-**Cost & Timeline:** €3,200 (Grow Package) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €3,200 (Grow Package) - production-ready and deployed in 10 business days.
 
 ---
 
@@ -180,7 +180,7 @@ Lucas partnered with **LaunchStudio (by Manifera)**. The engineering team secure
 
 ### How many checklist items must pass before I can launch?
 
-All 5 security items are mandatory — launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live.
+All 5 security items are mandatory - launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live.
 
 ### What is the most commonly failed checklist item?
 
@@ -208,7 +208,7 @@ Launching without security measures exposes you to data breaches, unauthorized a
       "name": "How many checklist items must pass before I can launch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All 5 security items are mandatory — launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live."
+        "text": "All 5 security items are mandatory - launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live."
       }
     },
     {

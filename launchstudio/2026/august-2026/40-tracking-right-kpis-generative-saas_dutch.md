@@ -50,13 +50,13 @@ Omdat u niet elke output handmatig kunt controleren, meet u impliciet en explici
 - **Expliciet:** Duim omhoog / Duim omlaag knoppen naast de gegenereerde tekst.
 - **Impliciet (Betrouwbaarder):** Klikt de gebruiker op "Kopieer naar klembord"? Wordt het resultaat opgeslagen in de database? Of klikt men direct drie keer achter elkaar op "Regenereer"?
 
-Als een gebruiker herhaaldelijk op "Regenereer" klikt, is de GSR voor die sessie mislukt. Zakt uw totale GSR onder de 80%, dan duidt dit op falende systeemprompts, veranderd modelgedrag of verouderde RAG-context — wat een directe voorbode is van stijgende klantopzeggingen (churn).
+Als een gebruiker herhaaldelijk op "Regenereer" klikt, is de GSR voor die sessie mislukt. Zakt uw totale GSR onder de 80%, dan duidt dit op falende systeemprompts, veranderd modelgedrag of verouderde RAG-context - wat een directe voorbode is van stijgende klantopzeggingen (churn).
 
 ## KPI 3: Tijd tot Waarde (Time-to-Value - TTV)
 
 Gebruikers van AI-tools verwachten directe magie. **Time-to-Value (TTV)** meet exact het aantal seconden vanaf het moment van aanmelden tot het moment waarop de gebruiker diens eerste succesvolle AI-generatie ontvangt.
 
-Als uw onboarding de gebruiker dwingt eerst e-mails te verifiëren, instructievideo's te bekijken en drie API-koppelingen in te stellen, loopt de TTV op naar 10 minuten en haakt een groot deel van de gebruikers voortijdig af. Richt uw onboarding zo in dat een verbluffend AI-resultaat binnen 60 seconden wordt geleverd — bij voorkeur met vooraf ingeladen voorbeelddocumenten.
+Als uw onboarding de gebruiker dwingt eerst e-mails te verifiëren, instructievideo's te bekijken en drie API-koppelingen in te stellen, loopt de TTV op naar 10 minuten en haakt een groot deel van de gebruikers voortijdig af. Richt uw onboarding zo in dat een verbluffend AI-resultaat binnen 60 seconden wordt geleverd - bij voorkeur met vooraf ingeladen voorbeelddocumenten.
 
 ## KPI 4: Functionaliteit-Specifieke Latentie (Time to First Token)
 
@@ -96,7 +96,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam configure
 
 **Resultaat:** Dashboard-laadtijden daalden naar minder dan 300ms en de primaire schrijfsnelheid bleef optimaal stabiel.
 
-**Kosten & tijdlijn:** €1.850 (DB Scaling Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.850 (DB Scaling Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

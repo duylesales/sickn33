@@ -1,4 +1,4 @@
-A roadmap with forty items and no stated trade-offs isn't a strategy — it's a backlog with dates attached. 🗺️📉
+A roadmap with forty items and no stated trade-offs isn't a strategy - it's a backlog with dates attached. 🗺️📉
 
 **The Pain Points:**
 ❌ **Activity Mistaken for Strategy:** Constant shipping with no coherent bet behind it.

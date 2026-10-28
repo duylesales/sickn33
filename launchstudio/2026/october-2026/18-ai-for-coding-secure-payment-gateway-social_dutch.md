@@ -1,4 +1,4 @@
-🔥 Emma bouwde een prototype met **Lovable** — als online docent in Amsterdam bouwde ze een videocursusplatform, maar ontdekte dat betalende klanten geen toegang kregen door ontbrekende webhooks. 🧠
+🔥 Emma bouwde een prototype met **Lovable** - als online docent in Amsterdam bouwde ze een videocursusplatform, maar ontdekte dat betalende klanten geen toegang kregen door ontbrekende webhooks. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of cryptografische webhooks heeft, veroorzaakt live verkeer direct omzetverlies en beveiligingslekken.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Emma lanceerde haar platform veilig opnieuw, beschermt haar content tegen manipulatie en incasseert volautomatisch. (€1.500 (Launch Ready Pakket met maatwerk betalingen) — binnen 5 werkdagen live). 🚀
+Emma lanceerde haar platform veilig opnieuw, beschermt haar content tegen manipulatie en incasseert volautomatisch. (€1.500 (Launch Ready Pakket met maatwerk betalingen) - binnen 5 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-for-coding-secure-payment-gateway
 

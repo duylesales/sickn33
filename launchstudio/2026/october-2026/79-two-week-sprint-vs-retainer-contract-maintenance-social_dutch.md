@@ -1,4 +1,4 @@
-💼 Anders betaalde €14.400 voor 6 maanden retainer — Anders Lindqvist, oprichter van StockPath (gebouwd met **Lovable**), ontdekte dat zijn programmeerwerk geconcentreerd was in slechts drie korte golven, terwijl hij maandenlang voor leegloop had betaald. 🧠
+💼 Anders betaalde €14.400 voor 6 maanden retainer - Anders Lindqvist, oprichter van StockPath (gebouwd met **Lovable**), ontdekte dat zijn programmeerwerk geconcentreerd was in slechts drie korte golven, terwijl hij maandenlang voor leegloop had betaald. 🧠
 
 Als uw onderhoudsbehoefte in pieken en dalen komt, betaalt u bij een maandelijks contract voor rustige weken waarin niets gebeurt.
 
@@ -12,7 +12,7 @@ Als uw onderhoudsbehoefte in pieken en dalen komt, betaalt u bij een maandelijks
 
 Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering problemen al sinds 2014 op via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Anders werkte zijn hele backlog weg in 1 sprint: Anders loste zijn openstaande taken op voor een fractie van zijn eerdere retainerkosten en boekt nu alleen een sprint wanneer er een concrete aanleiding is. (€2.300 (Launch & Grow Pakket) — 10 werkdagen). 🚀
+Anders werkte zijn hele backlog weg in 1 sprint: Anders loste zijn openstaande taken op voor een fractie van zijn eerdere retainerkosten en boekt nu alleen een sprint wanneer er een concrete aanleiding is. (€2.300 (Launch & Grow Pakket) - 10 werkdagen). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/two-week-sprint-vs-retainer-contract-maintenance
 

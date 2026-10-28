@@ -1,4 +1,4 @@
-✨ David, a gym owner, built a workout generator with **Bolt** — but new exercise cards would snap onto the screen with a hard cut every time the AI finished generating, making the whole app feel unfinished. 🏋️
+✨ David, a gym owner, built a workout generator with **Bolt** - but new exercise cards would snap onto the screen with a hard cut every time the AI finished generating, making the whole app feel unfinished. 🏋️
 
 A chart that pops onto the screen out of nowhere feels broken, no matter how accurate the data underneath it actually is. 🧠
 

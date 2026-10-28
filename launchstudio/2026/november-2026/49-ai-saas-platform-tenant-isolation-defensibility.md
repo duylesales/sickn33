@@ -49,7 +49,7 @@ An AI SaaS Platform is deeply integrated into the user's existing systems of rec
 
 ### 2. The Proprietary RAG Engine (Data as a Moat)
 A Thin Wrapper relies entirely on the foundational model's generalized knowledge. 
-An AI SaaS Platform builds a proprietary knowledge graph. As the platform ingests the user's secure enterprise data, it heavily pre-processes it. It uses specialized OCR (Optical Character Recognition) for PDFs, runs semantic chunking algorithms, and stores the data in a highly optimized Vector Database (like Supabase pgvector). The platform becomes more valuable every day because it learns the specific taxonomy and semantic context of the client's business—a dataset that OpenAI does not possess.
+An AI SaaS Platform builds a proprietary knowledge graph. As the platform ingests the user's secure enterprise data, it heavily pre-processes it. It uses specialized OCR (Optical Character Recognition) for PDFs, runs semantic chunking algorithms, and stores the data in a highly optimized Vector Database (like Supabase pgvector). The platform becomes more valuable every day because it learns the specific taxonomy and semantic context of the client's business - a dataset that OpenAI does not possess.
 
 ### 3. Agentic Orchestration (Workflow Execution)
 A Thin Wrapper is reactive; the user types a prompt, the AI replies, and the interaction ends. 
@@ -87,9 +87,9 @@ The user didn't have to log into Liam's app at all. The work was done invisibly 
 **Result:** CopyGenius was no longer a text generator; it was an autonomous merchandising platform. Because it actively saved merchants 10 hours a week by automating the entire workflow (not just writing the text), churn dropped to 2%. Liam raised his pricing by 300% and successfully secured a €1.5M Seed round.
 
 > *"I was selling a tool, and my competitors started giving that tool away for free. LaunchStudio helped me transition from selling a tool to selling an autonomous workflow. By building the complex API integrations and the agentic backend, they built a moat so deep that my competitors couldn't touch me. They saved my company."*
-> — **Liam Davies, Founder, CopyGenius (London)**
+> - **Liam Davies, Founder, CopyGenius (London)**
 
-**Cost & Timeline:** €22,000 (Launch & Grow Package with Agentic Orchestration & Enterprise Integrations Add-on) — production-ready and deployed in 30 days.
+**Cost & Timeline:** €22,000 (Launch & Grow Package with Agentic Orchestration & Enterprise Integrations Add-on) - production-ready and deployed in 30 days.
 
 ---
 

@@ -16,7 +16,7 @@ Wat een advocatenkantoor zwart-op-wit van u verlangt:
 ✅ Aantoonbare hard-delete procedures en cryptografisch beveiligde audit logs
 ✅ Opslag en support exclusief binnen de EU conform NOvA-richtlijnen
 
-Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de hoogwaardige beveiligings- en autorisatielagen die CISOs eisen — zonder uw geteste applicatie-interface opnieuw te hoeven bouwen.
+Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de hoogwaardige beveiligings- en autorisatielagen die CISOs eisen - zonder uw geteste applicatie-interface opnieuw te hoeven bouwen.
 
 💡 Zo haalde contractreview-tool Clausio binnen 3 weken na onze interventie de veiligheidsgoedkeuring bij meerdere advocatenkantoren.
 

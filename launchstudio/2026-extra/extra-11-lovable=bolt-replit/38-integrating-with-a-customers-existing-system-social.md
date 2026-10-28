@@ -1,4 +1,4 @@
-🚨 Karin Moeskops built Leverbaar in Lovable to coordinate delivery scheduling for 15 food producers around Zutphen. A major regional wholesaler with 40 suppliers agreed to sign on the condition that Leverbaar integrated with their enterprise ERP system — threatening an expensive, multi-month custom API build that would exhaust Karin's development budget. 😳
+🚨 Karin Moeskops built Leverbaar in Lovable to coordinate delivery scheduling for 15 food producers around Zutphen. A major regional wholesaler with 40 suppliers agreed to sign on the condition that Leverbaar integrated with their enterprise ERP system - threatening an expensive, multi-month custom API build that would exhaust Karin's development budget. 😳
 
 Enterprise integrations don't always require complex real-time APIs. Here's how to integrate pragmatically: 🧠
 

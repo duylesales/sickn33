@@ -89,7 +89,7 @@ Spanish is essential for daily life and for most local employers. Valencian, a c
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It shows every vacancy at its exact address with the distance from your home, sends applications straight to the employer's own page, requires no account to browse and does not sell premium placement to employers.
 
-To be transparent: OnlyAIJobs listings are currently concentrated in the Netherlands. For AI jobs in Valencia, you will find few or no local vacancies there today, so rely on Spanish job portals, university employment services (UPV and the University of Valencia both have active career services), accelerator networks and company career pages. OnlyAIJobs is useful if you are considering the Netherlands as an alternative — where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles — and as a model for searching by category and real commute. Valencia employers can publish their first AI vacancy free via info@onlyaijobs.eu.
+To be transparent: OnlyAIJobs listings are currently concentrated in the Netherlands. For AI jobs in Valencia, you will find few or no local vacancies there today, so rely on Spanish job portals, university employment services (UPV and the University of Valencia both have active career services), accelerator networks and company career pages. OnlyAIJobs is useful if you are considering the Netherlands as an alternative - where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles - and as a model for searching by category and real commute. Valencia employers can publish their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Portfolio That Works in Valencia
 
@@ -104,7 +104,7 @@ Hackathons and datathons organised by universities, companies and public bodies 
 
 ## Understanding Spanish Employment Contracts
 
-Spanish labour law distinguishes between permanent contracts (contrato indefinido) and temporary contracts, which labour reforms in recent years have restricted. Internship contracts for recent graduates (contratos formativos) have specific rules on duration and pay. Many companies apply a collective agreement (convenio colectivo) for their sector, which sets minimum salaries, working hours and holidays. When you receive an offer, check the type of contract, the applicable collective agreement, the gross annual salary and how many payments it is divided into, the probation period and the working schedule. Don't hesitate to ask questions — understanding these elements helps you compare offers accurately.
+Spanish labour law distinguishes between permanent contracts (contrato indefinido) and temporary contracts, which labour reforms in recent years have restricted. Internship contracts for recent graduates (contratos formativos) have specific rules on duration and pay. Many companies apply a collective agreement (convenio colectivo) for their sector, which sets minimum salaries, working hours and holidays. When you receive an offer, check the type of contract, the applicable collective agreement, the gross annual salary and how many payments it is divided into, the probation period and the working schedule. Don't hesitate to ask questions - understanding these elements helps you compare offers accurately.
 
 ## Research Careers Through VRAIN and ValgrAI
 
@@ -136,7 +136,7 @@ At the same time, be realistic: working remotely for a foreign company as a firs
 
 ## Neighbourhoods and Getting Around
 
-Valencia is flat and compact, with an extensive network of cycle lanes and the Turia Gardens — a long park built in the former riverbed — crossing the city. Metro, trams and buses connect the centre, the university campuses, the port and the beaches. UPV's main campus in Vera and the University of Valencia's campuses are in the north-east, while the Marina de Empresas is in the port area. Many young professionals live in neighbourhoods such as Benimaclet, Ruzafa or El Cabanyal, though rents in popular areas have risen significantly. Check commute times to your employer's exact address before choosing where to live.
+Valencia is flat and compact, with an extensive network of cycle lanes and the Turia Gardens - a long park built in the former riverbed - crossing the city. Metro, trams and buses connect the centre, the university campuses, the port and the beaches. UPV's main campus in Vera and the University of Valencia's campuses are in the north-east, while the Marina de Empresas is in the port area. Many young professionals live in neighbourhoods such as Benimaclet, Ruzafa or El Cabanyal, though rents in popular areas have risen significantly. Check commute times to your employer's exact address before choosing where to live.
 
 ## Your First Year in a Valencia AI Role
 
@@ -144,7 +144,7 @@ Focus your first year on engineering fundamentals, understanding the business do
 
 ## Interviews for Junior AI Roles in Valencia
 
-Interview processes in Valencia vary by employer. Startups often combine a conversation with founders or the tech lead, a technical exercise — for example a short take-home task on a dataset — and a discussion of your projects. Larger companies and consultancies may add aptitude tests, group dynamics or several interview rounds. Interviews at local companies are usually conducted in Spanish, while international companies and some startups interview in English.
+Interview processes in Valencia vary by employer. Startups often combine a conversation with founders or the tech lead, a technical exercise - for example a short take-home task on a dataset - and a discussion of your projects. Larger companies and consultancies may add aptitude tests, group dynamics or several interview rounds. Interviews at local companies are usually conducted in Spanish, while international companies and some startups interview in English.
 
 Prepare to explain your thesis and projects clearly: why you chose a method, how you evaluated it and what you would improve. Employers want to see reasoning, curiosity and the ability to learn, not encyclopaedic knowledge. Asking thoughtful questions about the team, the data and how models reach production also leaves a good impression and helps you assess whether the role offers the learning you need.
 
@@ -158,7 +158,7 @@ Spain has set up a national AI supervisory agency, AESIA, headquartered in A Cor
 
 A UPV graduate in computer engineering completed a master's thesis on speech recognition at a VRAIN research group. Many of her classmates moved to Madrid or abroad for higher salaries.
 
-She considered her options: a research scholarship to start a PhD, an internship at an international company in Madrid and a junior ML engineer role at a Valencia startup working on voice interfaces for customer service. She chose the startup, which let her apply her thesis work directly, and negotiated a hybrid arrangement. Within two years, she became responsible for the speech pipeline. Her salary remained below what classmates earned in Madrid, but her living costs were lower and her quality of life higher. She stays in touch with her former research group and collaborates on a joint project — a connection that has helped both the startup and the lab.
+She considered her options: a research scholarship to start a PhD, an internship at an international company in Madrid and a junior ML engineer role at a Valencia startup working on voice interfaces for customer service. She chose the startup, which let her apply her thesis work directly, and negotiated a hybrid arrangement. Within two years, she became responsible for the speech pipeline. Her salary remained below what classmates earned in Madrid, but her living costs were lower and her quality of life higher. She stays in touch with her former research group and collaborates on a joint project - a connection that has helped both the startup and the lab.
 
 ## Key Takeaways
 

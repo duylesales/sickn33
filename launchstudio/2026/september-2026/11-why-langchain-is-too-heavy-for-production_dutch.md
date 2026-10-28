@@ -18,19 +18,19 @@ Dit is geen theoretisch probleem: audits van LaunchStudio tonen aan dat circa 45
 
 ## De Hoge Prijs van Verborgen Tokens
 
-Omdat LangChain-agenten zijn gebouwd om generieke taken af te handelen, zijn ze computationeel inefficiënt. Wanneer een LangChain-agent moet beslissen welke tool hij moet inzetten, voert hij intern vaak een "ReAct thought loop" uit. Het model voert op de achtergrond stilletjes 3 tot 4 afzonderlijke LLM-query's uit — één om te beslissen of een tool nodig is, één om de tool-aanroep te formatteren, één om het resultaat te interpreteren, en nog één om het definitieve antwoord te formuleren — vóórdat de eindgebruiker ook maar één woord op zijn scherm ziet.
+Omdat LangChain-agenten zijn gebouwd om generieke taken af te handelen, zijn ze computationeel inefficiënt. Wanneer een LangChain-agent moet beslissen welke tool hij moet inzetten, voert hij intern vaak een "ReAct thought loop" uit. Het model voert op de achtergrond stilletjes 3 tot 4 afzonderlijke LLM-query's uit - één om te beslissen of een tool nodig is, één om de tool-aanroep te formatteren, één om het resultaat te interpreteren, en nog één om het definitieve antwoord te formuleren - vóórdat de eindgebruiker ook maar één woord op zijn scherm ziet.
 
 U betaalt voor elk van die verborgen tokens. Wij zien regelmatig startups die overstappen van LangChain naar native SDK's (de officiële `openai` npm-package of Anthropic's TypeScript SDK) en hun maandelijkse OpenAI-factuur direct met **60% zien dalen**, simpelweg door het elimineren van overbodige, onzichtbare sub-query's. Bij 50.000 verzoeken per maand kan deze "onzichtbare belasting" al snel oplopen tot $ 1.000 per maand aan verspild budget. Bovendien telt de latentie genadeloos op: elke verborgen round-trip voegt 400ms tot 900ms toe, waardoor een eenvoudige handeling verandert in een trage wachttijd van 5 seconden.
 
 ## Dependency Hell en Onverwachte Breaking Changes
 
-LangChain innoveert op een moordend tempo — te snel voor enterprise-stabiliteit. Omdat het probeert te integreren met honderden databases, vector stores en model-aanbieders, is de dependency-tree kolossaal. Een standaard installatie trekt tientallen indirecte packages binnen. Een minimale versie-update kan zomaar een class hernoemen, een import-pad deprecaten of het standaardgedrag van een `AgentExecutor` geruisloos wijzigen.
+LangChain innoveert op een moordend tempo - te snel voor enterprise-stabiliteit. Omdat het probeert te integreren met honderden databases, vector stores en model-aanbieders, is de dependency-tree kolossaal. Een standaard installatie trekt tientallen indirecte packages binnen. Een minimale versie-update kan zomaar een class hernoemen, een import-pad deprecaten of het standaardgedrag van een `AgentExecutor` geruisloos wijzigen.
 
 Wij hebben teams complete sprints zien verliezen door een routine-upgrade van `langchain-community` die stilletjes de similarity-scoring van documenten wijzigde, waardoor RAG-resultaten degradeerden zonder dat er ook maar één foutmelding werd gelogd. Enterprise SaaS vereist stabiele, voorspelbare architectuur. Een directe REST API-aanroep naar OpenAI of Anthropic heeft nagenoeg nul afhankelijkheden en breekt vrijwel nooit tussen deployments.
 
 ## Zelfs de Makers van LangChain Zagen het Probleem
 
-Veelzeggend is dat het team achter LangChain later een afzonderlijk product ontwikkelde: **LangGraph**. Dit product werd specifiek ontworpen om ontwikkelaars meer controle op een lager niveau te geven over agent-state en workflow-executies — een impliciete erkenning dat de oorspronkelijke `AgentExecutor` abstractie te ondoorzichtig was voor serieus productiegebruik. Hoewel LangGraph een verbetering is qua explicietheid door workflows als grafen met knooppunten te modelleren, leunt het nog altijd op dezelfde omvangrijke `langchain-core` dependency-tree. Dezelfde tijd besteed aan een slanke, handgeschreven state machine van 100 regels bovenop de native SDK biedt dezelfde controle zonder enig versie-risico.
+Veelzeggend is dat het team achter LangChain later een afzonderlijk product ontwikkelde: **LangGraph**. Dit product werd specifiek ontworpen om ontwikkelaars meer controle op een lager niveau te geven over agent-state en workflow-executies - een impliciete erkenning dat de oorspronkelijke `AgentExecutor` abstractie te ondoorzichtig was voor serieus productiegebruik. Hoewel LangGraph een verbetering is qua explicietheid door workflows als grafen met knooppunten te modelleren, leunt het nog altijd op dezelfde omvangrijke `langchain-core` dependency-tree. Dezelfde tijd besteed aan een slanke, handgeschreven state machine van 100 regels bovenop de native SDK biedt dezelfde controle zonder enig versie-risico.
 
 ## De Oplossing: Schrijf Uw Eigen Slanke Orchestratielaag
 
@@ -41,7 +41,7 @@ Het geheim van ervaren AI-engineers is dat u helemaal geen zwaar framework nodig
 3. Voeg de context en invoer samen in een heldere, gestructureerde `messages`-array;
 4. Stuur die array rechtstreeks naar de officiële SDK van OpenAI of Anthropic met uw eigen expliciete retry- en foutafhandeling.
 
-Deze complete orchestratie schrijft u in **50 tot 80 regels volstrekt transparante, leesbare code**. Als er iets misgaat, weet u exact waarom — er is geen framework-laag om de schuld aan te geven. U beheerst elk token, elke prompt en elk retry-beleid. U ruilt een klein beetje initiële ontwikkelsnelheid in voor maandenlange productiestabiliteit en een codebase die voor elke nieuwe softwareontwikkelaar direct begrijpelijk is.
+Deze complete orchestratie schrijft u in **50 tot 80 regels volstrekt transparante, leesbare code**. Als er iets misgaat, weet u exact waarom - er is geen framework-laag om de schuld aan te geven. U beheerst elk token, elke prompt en elk retry-beleid. U ruilt een klein beetje initiële ontwikkelsnelheid in voor maandenlange productiestabiliteit en een codebase die voor elke nieuwe softwareontwikkelaar direct begrijpelijk is.
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft het treffend: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze slanke, enterprise-veilige architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
 
@@ -69,7 +69,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om de agentlogica te refac
 
 **Resultaat:** De payload-grootte en API-overhead daalden met 60%, terwijl de onderhoudbaarheid van de codebase drastisch verbeterde.
 
-**Kosten & Tijdlijn:** €1.800 (Framework Migratie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.800 (Framework Migratie Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

@@ -1,6 +1,6 @@
-🌙 Daan Ruitenberg built "RisicoScore," a credit-risk scoring tool, with v0 — no alerting configured at all, just default logs nobody was watching. A credential-stuffing attack ran against his login endpoint for eleven straight days before anyone noticed. 😳
+🌙 Daan Ruitenberg built "RisicoScore," a credit-risk scoring tool, with v0 - no alerting configured at all, just default logs nobody was watching. A credential-stuffing attack ran against his login endpoint for eleven straight days before anyone noticed. 😳
 
-If someone started hammering your login endpoint right now, would you find out tonight — or eleven days from now? 🧠
+If someone started hammering your login endpoint right now, would you find out tonight - or eleven days from now? 🧠
 
 ❌ No threshold for failed login attempts, no notification for unusual patterns
 ❌ Every individual request looked, on its own, like an ordinary failed login

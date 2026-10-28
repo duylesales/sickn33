@@ -45,7 +45,7 @@ Een QR-bestelapp die klaar is voor een echte dinerbediening heeft het nodig dat 
 
 Dit is de categorie kloof waar het team van Manifera specifiek naar zoekt bij het beoordelen van met AI gegenereerde apps voor de lancering – LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters, en verouderde status-bugs zoals deze zijn exact het soort ding dat naar boven komt in een gestructureerde beoordeling, maar niet bij informeel testen. Onze ingenieurs die werken vanuit Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad handelen een groot deel van dit soort realtime data- en status-synchronisatiewerk af voor klanten van LaunchStudio.
 
-Voordat u QR-codes op echte tafels plaatst, is het het waard om [te controleren wat een beoordeling voor de lancering kost](https://launchstudio.eu/nl/#calculator) — het is een fractie van de kosten van een vrijdagavond aan gecompenseerde maaltijden.
+Voordat u QR-codes op echte tafels plaatst, is het het waard om [te controleren wat een beoordeling voor de lancering kost](https://launchstudio.eu/nl/#calculator) - het is een fractie van de kosten van een vrijdagavond aan gecompenseerde maaltijden.
 
 ## Artikelen met beperkte aantallen hebben hun eigen race-conditie
 
@@ -53,7 +53,7 @@ Her-validatie op het moment van bestellen herstelt verouderde prijzen, maar het 
 
 ```
 Bestelling Tafel 12:                   Bestelling Tafel 7:
-1. Controleert "laatste special" — aantal: 1  1. Controleert "laatste special" — aantal: 1
+1. Controleert "laatste special" - aantal: 1  1. Controleert "laatste special" - aantal: 1
 2. Ziet het als beschikbaar            2. Ziet het als beschikbaar
 3. Bestelling bevestigd                3. Bestelling bevestigd
 
@@ -68,7 +68,7 @@ UPDATE menu_items
 SET quantity_remaining = quantity_remaining - 1
 WHERE id = :item_id AND quantity_remaining > 0
 
--- Als er nul rijen zijn bijgewerkt, was het artikel al weg —
+-- Als er nul rijen zijn bijgewerkt, was het artikel al weg -
 -- weiger deze bestelregel in plaats van deze te bevestigen
 ```
 
@@ -87,9 +87,9 @@ LaunchStudio herbouwde de logica voor het laden van het menu, zodat prijs- en be
 **Resultaat:** TafelScan draaide haar volgende drie vrijdagbedieningen met nul bonnen met een prijsverschil, en het pilot-restaurant tekende voor een tweede locatie.
 
 > *"Ik heb er nooit één keer aan gedacht wat er gebeurt met een menu dat een klant al open heeft staan. Nu is het het eerste wat ik controleer bij elke nieuwe functie."*
-> — **Milan Aydin, Oprichter, TafelScan (Rotterdam)**
+> - **Milan Aydin, Oprichter, TafelScan (Rotterdam)**
 
-**Kosten en tijdlijn:** € 850 (realtime menusynchronisatie, her-validatie op bestelmoment, versiestempels) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 850 (realtime menusynchronisatie, her-validatie op bestelmoment, versiestempels) - voltooid in 6 werkdagen.
 
 ---
 

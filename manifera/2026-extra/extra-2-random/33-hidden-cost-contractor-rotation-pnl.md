@@ -20,19 +20,19 @@ target_persona: "CFO"
 }
 </script>
 
-The day rate on your outsourcing contract is the smallest number in the true cost equation — the real damage is buried three lines down in "professional services" as unbudgeted rework nobody labeled correctly.
+The day rate on your outsourcing contract is the smallest number in the true cost equation - the real damage is buried three lines down in "professional services" as unbudgeted rework nobody labeled correctly.
 
 **The Pain:** A CFO signs off on a staff-augmentation contract at an attractive blended day rate, only to discover eighteen months later that the engineering team has turned over completely twice, and every rotation triggered a re-onboarding period during which delivery slowed and defects rose without a single change order ever appearing on the invoice.
 
-**The Agitation:** Contractor rotation that isn't structurally prevented typically costs 25-40% of a project's total budget in re-onboarding, rework, and defect remediation that never appears as a labeled line item — meaning a €400,000 annual outsourcing contract can quietly consume an additional €100,000-€160,000 in disguised cost, invisible until someone finally reconciles delivered features against total spend.
+**The Agitation:** Contractor rotation that isn't structurally prevented typically costs 25-40% of a project's total budget in re-onboarding, rework, and defect remediation that never appears as a labeled line item - meaning a €400,000 annual outsourcing contract can quietly consume an additional €100,000-€160,000 in disguised cost, invisible until someone finally reconciles delivered features against total spend.
 
 ## The Architectural Mandate
 
-The financial mechanics of contractor rotation are straightforward once isolated, which is precisely why vendors rarely isolate them. Every time a contractor leaves an engagement, three cost categories activate simultaneously: re-recruiting or reassignment cost, a ramp-down-then-ramp-up productivity trough for the incoming contractor, and — the largest and least visible — rework on code shipped by the departing contractor that the new one doesn't fully understand and eventually has to touch. None of these appear as a discrete invoice line. They appear as slower sprints, more bugs, and a growing sense that "the vendor just isn't as fast as they used to be," which is a symptom, not a diagnosis.
+The financial mechanics of contractor rotation are straightforward once isolated, which is precisely why vendors rarely isolate them. Every time a contractor leaves an engagement, three cost categories activate simultaneously: re-recruiting or reassignment cost, a ramp-down-then-ramp-up productivity trough for the incoming contractor, and - the largest and least visible - rework on code shipped by the departing contractor that the new one doesn't fully understand and eventually has to touch. None of these appear as a discrete invoice line. They appear as slower sprints, more bugs, and a growing sense that "the vendor just isn't as fast as they used to be," which is a symptom, not a diagnosis.
 
-Custom software development cost models built around individual contractor placements — rather than a persistent team — structurally guarantee this leakage, because the vendor's commercial incentive is to keep contractors billable somewhere, not necessarily on your project specifically. When a contractor is pulled to a higher-margin engagement, the client absorbs 100% of the re-onboarding cost and the vendor absorbs none of it. This is not a hypothetical misalignment — it is the default economic incentive of most time-and-materials staffing arrangements unless the contract explicitly prevents it.
+Custom software development cost models built around individual contractor placements - rather than a persistent team - structurally guarantee this leakage, because the vendor's commercial incentive is to keep contractors billable somewhere, not necessarily on your project specifically. When a contractor is pulled to a higher-margin engagement, the client absorbs 100% of the re-onboarding cost and the vendor absorbs none of it. This is not a hypothetical misalignment - it is the default economic incentive of most time-and-materials staffing arrangements unless the contract explicitly prevents it.
 
-The mandate for a CFO evaluating or renewing an outsourcing contract is to price continuity as a contractual term, not hope for it as a courtesy. That means a named-team clause (the specific individuals assigned stay assigned, with financial penalties for unplanned substitution), a documented handoff protocol if rotation is unavoidable, and — critically — a requirement that the vendor, not the client, bears the ramp cost of any replacement. A vendor unwilling to accept that liability is signaling that rotation is part of their business model, not an exception to it.
+The mandate for a CFO evaluating or renewing an outsourcing contract is to price continuity as a contractual term, not hope for it as a courtesy. That means a named-team clause (the specific individuals assigned stay assigned, with financial penalties for unplanned substitution), a documented handoff protocol if rotation is unavoidable, and - critically - a requirement that the vendor, not the client, bears the ramp cost of any replacement. A vendor unwilling to accept that liability is signaling that rotation is part of their business model, not an exception to it.
 
 Rework cost specifically deserves board-level visibility because it's the category most often absorbed silently into "normal" sprint velocity variance rather than tracked as its own line item. A CFO who asks engineering leadership "what percentage of last quarter's sprint capacity went to re-understanding or fixing code from departed contractors" is usually the first person in the organization to ask that question, and the answer is frequently uncomfortable.
 
@@ -41,18 +41,18 @@ Rework cost specifically deserves board-level visibility because it's the catego
 - **Amsterdam (Governance/Strategy):** Dutch architects own team-continuity contracting, risk management, and act as the client's quality shield, with named-pod clauses that make rotation a contractual exception rather than a routine occurrence.
 - **Vietnam (Execution/Velocity):** Autonomous pods in Vietnam are assigned for project duration, with documentation-as-you-go built into the sprint process so institutional knowledge never lives in a single departing individual's head.
 
-This is Dutch Management × Vietnamese Mastery — a structure that prices continuity in from day one instead of billing the client for its absence later. Learn how pod continuity is contracted on [Manifera's offshore software development teams](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a structure that prices continuity in from day one instead of billing the client for its absence later. Learn how pod continuity is contracted on [Manifera's offshore software development teams](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
 ### An Eindhoven Manufacturing-Tech Firm's Rotation Reckoning
 
-Bergveld Systems, an Eindhoven-based industrial IoT company, had run a staff-augmentation contract with a regional outsourcing vendor for two years. When the CFO finally commissioned a spend reconciliation against delivered features, the analysis showed 34% of total spend over the period had gone to rework and re-onboarding triggered by eleven separate contractor substitutions — none of which had been flagged as change orders.
+Bergveld Systems, an Eindhoven-based industrial IoT company, had run a staff-augmentation contract with a regional outsourcing vendor for two years. When the CFO finally commissioned a spend reconciliation against delivered features, the analysis showed 34% of total spend over the period had gone to rework and re-onboarding triggered by eleven separate contractor substitutions - none of which had been flagged as change orders.
 
 Manifera restructured the engagement as a named dedicated pod with a contractual continuity clause: the assigned engineers stayed assigned for the duration, with Manifera bearing any replacement ramp cost rather than passing it to Bergveld. The Amsterdam governance layer instituted a documentation-as-sprint-deliverable requirement so no single engineer held undocumented context. Over the following year, rework as a percentage of total spend dropped from 34% to under 6%.
 
 > *"We weren't paying for engineers, we were paying to keep re-teaching the same codebase to new people every few months. Once that stopped, our actual delivered output nearly doubled on the same budget."*
-> — **CFO, Bergveld Systems**
+> - **CFO, Bergveld Systems**
 
 ## Legacy Agency vs. Manifera Pod
 
@@ -73,11 +73,11 @@ Contractor rotation is one of the few outsourcing risks that is entirely prevent
 Most finance teams have no general ledger category for rotation cost, which is exactly why it hides. A CFO can reconstruct it with a simple four-line model applied to any outsourcing or dedicated team services contract:
 
 1. **Re-recruitment/reassignment cost:** vendor sourcing and screening time for a replacement, typically 1-2 weeks of otherwise-billed capacity per rotation event.
-2. **Ramp trough:** the incoming contractor's reduced output during onboarding, commonly 50-70% of standard output for the first three to four weeks — model this as lost capacity, not just slower delivery.
-3. **Rework cost:** hours spent by the new contractor and existing team fixing or refactoring code from the departed contractor that wasn't fully understood at handoff — this is consistently the largest of the three categories and the one general ledgers never capture as its own line.
+2. **Ramp trough:** the incoming contractor's reduced output during onboarding, commonly 50-70% of standard output for the first three to four weeks - model this as lost capacity, not just slower delivery.
+3. **Rework cost:** hours spent by the new contractor and existing team fixing or refactoring code from the departed contractor that wasn't fully understood at handoff - this is consistently the largest of the three categories and the one general ledgers never capture as its own line.
 4. **Knowledge-decay tax:** a residual, harder-to-quantify drag from institutional context that never gets rebuilt, showing up as recurring low-severity bugs in the same modules quarter after quarter.
 
-Multiply category 2 and 3 by the number of rotation events in the trailing twelve months and divide by total contract spend — that percentage is your real, board-reportable rotation tax, and it should appear as a line item in the next vendor renewal discussion, not stay buried in "professional services."
+Multiply category 2 and 3 by the number of rotation events in the trailing twelve months and divide by total contract spend - that percentage is your real, board-reportable rotation tax, and it should appear as a line item in the next vendor renewal discussion, not stay buried in "professional services."
 
 ## Frequently Asked Questions
 
@@ -115,7 +115,7 @@ The headline day rate rarely reflects total cost per delivered feature. A lower-
 
 ### (Scenario: CFO deciding how to structure vendor payment terms around continuity) Can payment terms themselves be structured to discourage vendor-side rotation?
 
-Yes — tying a portion of vendor payment to a rolling engineer-retention threshold, or building in a penalty clause for unplanned substitutions outside a documented handoff process, directly aligns the vendor's margin with keeping the same people on your project rather than reallocating them to a higher-margin account.
+Yes - tying a portion of vendor payment to a rolling engineer-retention threshold, or building in a penalty clause for unplanned substitutions outside a documented handoff process, directly aligns the vendor's margin with keeping the same people on your project rather than reallocating them to a higher-margin account.
 
 <script type="application/ld+json">
 {

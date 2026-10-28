@@ -74,9 +74,9 @@ Het echte incident gebeurde toen een gebruiker, die een oud gearchiveerd project
 LaunchStudio herbouwde ProjectVolg's verwijderlogica rond een zachte-verwijderingspatroon: een `deleted_at`-tijdstempel op projecten en hun gerelateerde taken, elke bestaande query bijgewerkt om gemarkeerde records te filteren, en een eenvoudige beheerweergave voor "recent verwijderd" waar een project kon worden hersteld binnen een venster van 30 dagen voordat het permanent werd gewist op een schema. **Resultaat:** de allereerstvolgende per ongeluk uitgevoerde verwijdering, weken later, werd door de gebruiker zelf binnen een minuut hersteld, zonder enige betrokkenheid van engineering.
 
 > *"Het verliezen van dat project leerde me op de harde manier dat 'verwijderen' en 'voor altijd weg' niet dezelfde knop zouden moeten zijn. Nu is het oprecht onmogelijk om per ongeluk gegevens te verliezen."*
-> — **Daniël Wesseling, Oprichter, ProjectVolg (Emmeloord)**
+> - **Daniël Wesseling, Oprichter, ProjectVolg (Emmeloord)**
 
-**Kosten en tijdlijn:** € 750 (schema-migratie voor zachte verwijdering, query-updates, beheerweergave voor herstel) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 750 (schema-migratie voor zachte verwijdering, query-updates, beheerweergave voor herstel) - voltooid in 4 werkdagen.
 
 ---
 

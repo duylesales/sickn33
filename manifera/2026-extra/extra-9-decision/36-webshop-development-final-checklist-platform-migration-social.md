@@ -1,8 +1,8 @@
-9 p.m. the night before go-live. Every test passed. Most migration failures are already baked in at this exact moment — and nobody knows it yet. 🌙
+9 p.m. the night before go-live. Every test passed. Most migration failures are already baked in at this exact moment - and nobody knows it yet. 🌙
 
 **The Pain Points:**
 ❌ **"Customer Count Matches" Is a Weak Check:** Account counts can align perfectly while individual records are missing order history, addresses, or loyalty balances.
-❌ **Redirect Gaps Hide in the Long Tail:** 90% redirect coverage sounds thorough — the missing 10% is usually the exact pages driving meaningful organic traffic.
+❌ **Redirect Gaps Hide in the Long Tail:** 90% redirect coverage sounds thorough - the missing 10% is usually the exact pages driving meaningful organic traffic.
 ❌ **Rollback Plans That Were Never Rehearsed:** Teams discover mid-emergency that a restore script references a file path that changed months ago, or a "one command" revert needs manual steps nobody remembered.
 
 **The Manifera Solution:**

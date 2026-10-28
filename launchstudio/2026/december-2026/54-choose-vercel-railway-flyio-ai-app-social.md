@@ -2,9 +2,9 @@
 
 Every hosting platform has fans who swear it's the only right choice. Reality: it depends on your architecture, not what's trending: 🧠
 
-⚡ VERCEL — best for standard Next.js apps, edge-ready, but watch serverless time limits for heavy processing
-🚂 RAILWAY — best for background jobs, persistent databases, Heroku-like simplicity
-✈️ FLY.IO — best for global low-latency needs, more control, more complexity (often overkill for a first launch)
+⚡ VERCEL - best for standard Next.js apps, edge-ready, but watch serverless time limits for heavy processing
+🚂 RAILWAY - best for background jobs, persistent databases, Heroku-like simplicity
+✈️ FLY.IO - best for global low-latency needs, more control, more complexity (often overkill for a first launch)
 
 The decision framework: ✅
 1️⃣ Standard Next.js app? → Vercel
@@ -12,9 +12,9 @@ The decision framework: ✅
 3️⃣ Proven global latency needs? → Fly.io
 4️⃣ Unsure? → Start with Vercel
 
-🗄️ Hidden decision #2: none of these 3 platforms are database products. Wrong compute+database pairing (e.g. serverless functions with no connection pooler) can max out your database's connection limit under real load — pick a proven pairing (Vercel+Supabase, Railway+Railway Postgres, Fly.io+Fly Postgres).
+🗄️ Hidden decision #2: none of these 3 platforms are database products. Wrong compute+database pairing (e.g. serverless functions with no connection pooler) can max out your database's connection limit under real load - pick a proven pairing (Vercel+Supabase, Railway+Railway Postgres, Fly.io+Fly Postgres).
 
-At **LaunchStudio**, backed by Manifera's DevOps experience across 160+ projects, we match the platform to YOUR architecture — including hybrid setups. 🛡️
+At **LaunchStudio**, backed by Manifera's DevOps experience across 160+ projects, we match the platform to YOUR architecture - including hybrid setups. 🛡️
 
 Her fix: kept the frontend on Vercel, moved just the nightly job to Railway. Zero disruption, problem solved. 🚀
 

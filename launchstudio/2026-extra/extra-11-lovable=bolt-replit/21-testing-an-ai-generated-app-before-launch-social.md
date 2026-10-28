@@ -1,4 +1,4 @@
-🚨 Jelle Vroomen built Sportlokaal in Lovable to book community sports halls across Zaanstad and Purmerend for 48 venue partners. He shipped quick UI tweaks twice that accidentally broke the payment flow — once for six hours, and once for a full weekend — with both outages discovered by furious venue managers rather than by Jelle. 😳
+🚨 Jelle Vroomen built Sportlokaal in Lovable to book community sports halls across Zaanstad and Purmerend for 48 venue partners. He shipped quick UI tweaks twice that accidentally broke the payment flow - once for six hours, and once for a full weekend - with both outages discovered by furious venue managers rather than by Jelle. 😳
 
 AI tools generate code in seconds, but they don't test failure states. Here is the minimum test pyramid you must build before launch: 🧠
 
@@ -14,7 +14,7 @@ AI tools generate code in seconds, but they don't test failure states. Here is t
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we install automated test harnesses that catch bugs before your paying customers ever see them. 🧪
 
-His result: Jelle Vroomen implemented integration tests and a deployment pipeline in 4 business days for €2,450 (seed data, browser tests, staging environment, pipeline). Across 11 months and 90 releases since, Sportlokaal has had zero payment outages — with the test suite catching 4 regressions before deployment. 🚀
+His result: Jelle Vroomen implemented integration tests and a deployment pipeline in 4 business days for €2,450 (seed data, browser tests, staging environment, pipeline). Across 11 months and 90 releases since, Sportlokaal has had zero payment outages - with the test suite catching 4 regressions before deployment. 🚀
 
 👉 Discover what to test first in an AI-generated web application: https://launchstudio.eu/en/blog/testing-an-ai-generated-app-before-launch
 

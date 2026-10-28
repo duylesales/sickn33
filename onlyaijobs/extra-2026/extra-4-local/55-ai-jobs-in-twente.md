@@ -43,7 +43,7 @@ Content Format: Regional Career Guide
 }
 </script>
 
-Twente, in the east of the Netherlands near the German border, is often overlooked by graduates who assume that serious tech careers happen in the Randstad. That assumption misses a region with a strong technical university, a tradition of entrepreneurship, a cluster of high-tech and defence electronics companies and a lively startup ecosystem. For students and recent graduates, AI jobs in Twente span robotics, high-tech systems, radar and sensing, health technology, manufacturing and software — often in companies that struggle to find talent precisely because graduates leave for Amsterdam or Utrecht. This guide maps the region and explains why staying can be a smart career move.
+Twente, in the east of the Netherlands near the German border, is often overlooked by graduates who assume that serious tech careers happen in the Randstad. That assumption misses a region with a strong technical university, a tradition of entrepreneurship, a cluster of high-tech and defence electronics companies and a lively startup ecosystem. For students and recent graduates, AI jobs in Twente span robotics, high-tech systems, radar and sensing, health technology, manufacturing and software - often in companies that struggle to find talent precisely because graduates leave for Amsterdam or Utrecht. This guide maps the region and explains why staying can be a smart career move.
 
 ## The University of Twente and Saxion
 
@@ -61,7 +61,7 @@ Twente has a strong base in high-tech systems and manufacturing. Thales Nederlan
 
 ## Health Technology
 
-Twente has a notable health technology cluster, combining UT's biomedical and technical medicine research with hospitals such as Medisch Spectrum Twente and companies developing medical devices, imaging systems and digital health solutions. Technical physicians — a profession pioneered at UT — work at the intersection of medicine and technology. AI applications include medical imaging, surgical robotics, patient monitoring and clinical decision support.
+Twente has a notable health technology cluster, combining UT's biomedical and technical medicine research with hospitals such as Medisch Spectrum Twente and companies developing medical devices, imaging systems and digital health solutions. Technical physicians - a profession pioneered at UT - work at the intersection of medicine and technology. AI applications include medical imaging, surgical robotics, patient monitoring and clinical decision support.
 
 ## Where AI Jobs in Twente Are Found for Graduates
 
@@ -76,15 +76,15 @@ Twente has a notable health technology cluster, combining UT's biomedical and te
 
 OnlyAIJobs lists AI and data vacancies across the Netherlands, and searching by distance from Enschede or Hengelo makes regional employers visible alongside those elsewhere.
 
-## Why Graduates Leave — and Why They Don't Have To
+## Why Graduates Leave - and Why They Don't Have To
 
-The pattern is familiar across Dutch regions: students graduate, assume the interesting jobs are in the Randstad and move west, while regional companies struggle to fill AI and data roles. The reasons are mostly informational — regional employers are less visible, their vacancies may be in Dutch or use functional titles, and students don't know them. OnlyAIJobs was founded because of exactly this problem, first observed in Noord-Brabant. Searching by category and distance from your home, rather than by title and famous city names, brings regional employers into view. For many Twente graduates, the result is a job with meaningful technical work, lower housing costs and a much shorter commute.
+The pattern is familiar across Dutch regions: students graduate, assume the interesting jobs are in the Randstad and move west, while regional companies struggle to fill AI and data roles. The reasons are mostly informational - regional employers are less visible, their vacancies may be in Dutch or use functional titles, and students don't know them. OnlyAIJobs was founded because of exactly this problem, first observed in Noord-Brabant. Searching by category and distance from your home, rather than by title and famous city names, brings regional employers into view. For many Twente graduates, the result is a job with meaningful technical work, lower housing costs and a much shorter commute.
 
 ## How OnlyAIJobs Works for a Twente Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, with listings currently concentrated in the Netherlands. Each vacancy is shown at its exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and there is no paid placement — a Kennispark startup appears on the same terms as a large corporation. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Holland Innovative, Heijmans and VINCI Energies.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, with listings currently concentrated in the Netherlands. Each vacancy is shown at its exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and there is no paid placement - a Kennispark startup appears on the same terms as a large corporation. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Holland Innovative, Heijmans and VINCI Energies.
 
-For AI jobs in Twente, the practical approach is to set your home address, choose a realistic commuting radius — perhaps including Deventer, Apeldoorn or the Achterhoek — and review what falls within it. Combine this with UT and Saxion career services, Novel-T's startup overviews and company career pages.
+For AI jobs in Twente, the practical approach is to set your home address, choose a realistic commuting radius - perhaps including Deventer, Apeldoorn or the Achterhoek - and review what falls within it. Combine this with UT and Saxion career services, Novel-T's startup overviews and company career pages.
 
 ## Robotics in Twente
 
@@ -96,7 +96,7 @@ Twente's tradition in radar, sensors and electronics creates demand for engineer
 
 ## Smart Industry and Manufacturing
 
-Twente and the wider eastern Netherlands have many manufacturing companies — in machinery, packaging, textiles heritage turned into technical textiles, food and components — that are adopting data and AI. Typical graduate projects include vision-based quality inspection, predictive maintenance of production lines, optimisation of planning and energy use, and analysis of process data. Saxion's applied research groups and regional smart industry programmes connect students with these companies. The work is practical and visible: improvements show up directly in production figures.
+Twente and the wider eastern Netherlands have many manufacturing companies - in machinery, packaging, textiles heritage turned into technical textiles, food and components - that are adopting data and AI. Typical graduate projects include vision-based quality inspection, predictive maintenance of production lines, optimisation of planning and energy use, and analysis of process data. Saxion's applied research groups and regional smart industry programmes connect students with these companies. The work is practical and visible: improvements show up directly in production figures.
 
 ## Building a Profile for Twente Employers
 
@@ -106,7 +106,7 @@ Twente and the wider eastern Netherlands have many manufacturing companies — i
 - **Domain curiosity**: willingness to learn radar, manufacturing, medicine or infrastructure.
 - **Communication in English and ideally Dutch**.
 
-UT's student teams — for example in robotics, solar vehicles or drones — offer excellent experience and visibility with regional employers.
+UT's student teams - for example in robotics, solar vehicles or drones - offer excellent experience and visibility with regional employers.
 
 ## The German Border
 
@@ -126,7 +126,7 @@ Enschede is a lively university city with a green campus, a compact centre and a
 
 ## Your First Two Years
 
-Focus on engineering foundations, depth in one domain — robotics, sensing, manufacturing or health technology — and the ability to take systems from prototype to reliable operation. Stay connected with the university and the startup community; Twente's close-knit ecosystem rewards people who share knowledge and build relationships.
+Focus on engineering foundations, depth in one domain - robotics, sensing, manufacturing or health technology - and the ability to take systems from prototype to reliable operation. Stay connected with the university and the startup community; Twente's close-knit ecosystem rewards people who share knowledge and build relationships.
 
 ## PhDs and Research Careers
 
@@ -138,7 +138,7 @@ Dutch employment for graduates typically includes a holiday allowance of around 
 
 ## A Weekly Search Routine
 
-Set your home address, review AI and data vacancies within your commuting radius weekly, attend Kennispark and university events and keep a list of regional employers you would like to work for. Contact them directly — regional employers often appreciate proactive interest.
+Set your home address, review AI and data vacancies within your commuting radius weekly, attend Kennispark and university events and keep a list of regional employers you would like to work for. Contact them directly - regional employers often appreciate proactive interest.
 
 ## Health Technology in Practice
 

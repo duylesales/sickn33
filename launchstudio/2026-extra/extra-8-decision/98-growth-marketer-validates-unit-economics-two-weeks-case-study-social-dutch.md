@@ -1,6 +1,6 @@
 💳 "500 wachtlijst-aanmeldingen" zeggen niets. Hij had gezien hoe twee eerdere startups daarop ophaalden en toen slechts 2% echte conversie ontdekten. Deze keer wilde hij echt geld zien. 😳
 
-In 14 dagen van prototype naar bewezen unit economics — met echte betalingen, geen vanity-metrics: 🧠
+In 14 dagen van prototype naar bewezen unit economics - met echte betalingen, geen vanity-metrics: 🧠
 
 ❌ Gratis aanmeldingen converteren zelden zodra de paywall komt
 ❌ Client-side pixels missen 30-50% van conversies door adblockers

@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (non-technical)
 }
 </script>
 
-You are on a call with a prospective customer — a Dutch company with forty employees and a procurement process — and they ask where they can see it. You send the link. It contains the name of a development platform and a string that looks like an identifier, and you find yourself explaining what it is before you explain what the product does.
+You are on a call with a prospective customer - a Dutch company with forty employees and a procurement process - and they ask where they can see it. You send the link. It contains the name of a development platform and a string that looks like an identifier, and you find yourself explaining what it is before you explain what the product does.
 
 That is the entire argument for a custom domain, and it is enough on its own. But there are three more reasons, and one of them will cost you a great deal if you get it wrong at the start.
 
@@ -38,29 +38,29 @@ That is the entire argument for a custom domain, and it is enough on its own. Bu
 
 DNS sounds technical and is mostly two record types.
 
-**An A record** points a name directly at an address — typically used for your bare domain, such as `yourcompany.nl`.
+**An A record** points a name directly at an address - typically used for your bare domain, such as `yourcompany.nl`.
 
-**A CNAME record** points one name at another name — typically used for `www.yourcompany.nl` or a subdomain like `app.yourcompany.nl`.
+**A CNAME record** points one name at another name - typically used for `www.yourcompany.nl` or a subdomain like `app.yourcompany.nl`.
 
-The platform tells you which to create and with what values; your registrar is where you create them. Two practical notes. Changes are not instantaneous — allow for propagation, and resist the urge to change things repeatedly while waiting, which is how people create problems they then have to diagnose. And every domain has a TTL setting that determines how long answers are cached; lowering it a day before a planned move makes the cutover faster.
+The platform tells you which to create and with what values; your registrar is where you create them. Two practical notes. Changes are not instantaneous - allow for propagation, and resist the urge to change things repeatedly while waiting, which is how people create problems they then have to diagnose. And every domain has a TTL setting that determines how long answers are cached; lowering it a day before a planned move makes the cutover faster.
 
 ## Certificates and the Padlock
 
 Every site needs HTTPS. Without it browsers mark the page as not secure, which is the single most effective way to lose a visitor who arrived interested.
 
-Platforms generally issue and renew a certificate automatically once your DNS is pointing correctly, which removes what used to be an annoying manual task. Two things still go wrong. A certificate cannot be issued while DNS is misconfigured, so an early failure usually means a record is wrong rather than anything deeper. And a certificate covering `www` but not the bare domain, or the reverse, produces warnings for half your visitors — which is why the next decision matters.
+Platforms generally issue and renew a certificate automatically once your DNS is pointing correctly, which removes what used to be an annoying manual task. Two things still go wrong. A certificate cannot be issued while DNS is misconfigured, so an early failure usually means a record is wrong rather than anything deeper. And a certificate covering `www` but not the bare domain, or the reverse, produces warnings for half your visitors - which is why the next decision matters.
 
 ## Pick One Address and Redirect the Other
 
 `yourcompany.nl` and `www.yourcompany.nl` are different addresses. So are the HTTP and HTTPS versions of each.
 
-If all four resolve independently, you have four versions of your site, which splits search signals, breaks analytics, and occasionally produces the certificate warning above. Choose one as canonical — either is fine, be consistent — and make every other version redirect to it permanently. Then use that one form everywhere: in your links, your emails, your printed material and your structured data.
+If all four resolve independently, you have four versions of your site, which splits search signals, breaks analytics, and occasionally produces the certificate warning above. Choose one as canonical - either is fine, be consistent - and make every other version redirect to it permanently. Then use that one form everywhere: in your links, your emails, your printed material and your structured data.
 
 ## Email Is a Separate Problem
 
 A frequent and expensive misunderstanding: pointing your domain at your application does nothing for email.
 
-Email needs its own records — SPF declaring who may send on your behalf, DKIM signing your messages, and DMARC telling receiving servers what to do with messages that fail. Without them, transactional email from your product — password resets, confirmations, invoices — lands in spam at a rate you will not measure and customers will not report. They will simply say they never received it.
+Email needs its own records - SPF declaring who may send on your behalf, DKIM signing your messages, and DMARC telling receiving servers what to do with messages that fail. Without them, transactional email from your product - password resets, confirmations, invoices - lands in spam at a rate you will not measure and customers will not report. They will simply say they never received it.
 
 Set these up when you set up the domain, send a test to several providers, and check where it lands. Also check that your sending address is a real mailbox somebody monitors, because replies to a no-reply address are a category of lost customer nobody counts.
 
@@ -86,7 +86,7 @@ Both `www` and bare versions resolve and one redirects to the other. HTTPS works
 
 Most founders set up one address and then discover, over the following year, that they need four. Planning the shape now costs nothing and prevents a second migration.
 
-**The marketing site and the application.** Two common arrangements: the application on a subdomain such as `app.yourcompany.nl` with the marketing site on the main domain, or both on the main domain with the application under a path. The first is cleaner operationally — the two can be hosted separately, deployed independently, and the marketing pages can be static while the application is not. The second keeps everything in one place, which is simpler until it is not.
+**The marketing site and the application.** Two common arrangements: the application on a subdomain such as `app.yourcompany.nl` with the marketing site on the main domain, or both on the main domain with the application under a path. The first is cleaner operationally - the two can be hosted separately, deployed independently, and the marketing pages can be static while the application is not. The second keeps everything in one place, which is simpler until it is not.
 
 **A staging address,** such as `staging.yourcompany.nl`, once anyone depends on you. This is where a change is confirmed working before customers see it. Block it from being indexed, and put it behind a password so it is not accidentally public.
 
@@ -96,7 +96,7 @@ Most founders set up one address and then discover, over the following year, tha
 
 Two technical consequences of splitting across subdomains. Cookies and sessions do not automatically work across them, so if visitors move between your marketing site and your application while logged in, that behaviour needs deliberate configuration. And each subdomain needs its own certificate coverage, which is automatic on most platforms but worth verifying rather than assuming.
 
-**If you ever want a subdomain per customer** — `klantnaam.yourcompany.nl` — decide early. Supporting it means wildcard DNS and wildcard certificates, and retrofitting it onto a product whose customers already have bookmarked addresses is considerably more work than building it in.
+**If you ever want a subdomain per customer** - `klantnaam.yourcompany.nl` - decide early. Supporting it means wildcard DNS and wildcard certificates, and retrofitting it onto a product whose customers already have bookmarked addresses is considerably more work than building it in.
 
 Write the intended shape down on one page: which name points where, what each is for, where the certificate comes from, what is blocked from indexing. It takes ten minutes, it is the document you will hand to whoever helps you next, and it is the thing nobody has when they ask for help.
 
@@ -114,18 +114,18 @@ Behind it is Manifera: eleven years of production work for clients including Vod
 
 Ilse Brandsma built Proefles on Replit: a trial-lesson booking tool used by four music schools and two dance studios around Breda. A friend who had helped her at the beginning had registered the domain on his own account, paid for it on his own card, and pointed it at the project.
 
-Eighteen months later the friend had moved abroad and stopped replying. The domain's renewal was approaching, the card on file had expired, and Ilse had no access to the registrar account. She also could not add email authentication records, which meant booking confirmations had been reaching spam folders for a year — something she discovered only when a music school mentioned that confirmations "usually turn up eventually, in the junk".
+Eighteen months later the friend had moved abroad and stopped replying. The domain's renewal was approaching, the card on file had expired, and Ilse had no access to the registrar account. She also could not add email authentication records, which meant booking confirmations had been reaching spam folders for a year - something she discovered only when a music school mentioned that confirmations "usually turn up eventually, in the junk".
 
 Recovery took eleven days through the registrar's dispute process, with documentation of her business's use of the name, and it succeeded only because the friend eventually responded to a registrar notification.
 
 Three business days of work once access was restored: domain transferred to an account owned by her company with automatic renewal and two administrators; the canonical form chosen with redirects from every other variant; certificates verified; SPF, DKIM and DMARC configured and delivery tested against four major providers; the sending address changed from no-reply to a monitored mailbox; canonical tags and sitemap aligned; and the DNS configuration documented.
 
-**Result:** confirmation emails now reach inboxes — one dance studio reported that no-shows for trial lessons fell noticeably in the following two months — and a planned hosting change three months later required a single DNS edit.
+**Result:** confirmation emails now reach inboxes - one dance studio reported that no-shows for trial lessons fell noticeably in the following two months - and a planned hosting change three months later required a single DNS edit.
 
 > *"My domain belonged to someone who had moved to New Zealand and stopped reading his email. It took eleven days and a dispute process to get back a name my customers had been typing for a year."*
-> — **Ilse Brandsma, Founder, Proefles (Breda)**
+> - **Ilse Brandsma, Founder, Proefles (Breda)**
 
-**Cost & Timeline:** €900 (domain transfer and ownership setup, redirects and certificates, email authentication with delivery testing, canonical alignment, documentation) — completed in 3 business days after access was recovered.
+**Cost & Timeline:** €900 (domain transfer and ownership setup, redirects and certificates, email authentication with delivery testing, canonical alignment, documentation) - completed in 3 business days after access was recovered.
 
 ## Frequently Asked Questions
 
@@ -135,7 +135,7 @@ Usually an A record for the bare domain and a CNAME for www, with the exact valu
 
 ### Do I need to do anything about the HTTPS certificate?
 
-Generally no — it is issued and renewed automatically once DNS points correctly. A failure early on almost always means a record is wrong. Check that both the www and bare versions are covered.
+Generally no - it is issued and renewed automatically once DNS points correctly. A failure early on almost always means a record is wrong. Check that both the www and bare versions are covered.
 
 ### Should I use www or the bare domain?
 
@@ -167,7 +167,7 @@ Because the person named on the registration controls it. If a freelancer, agenc
       "name": "Do I need to do anything about the HTTPS certificate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Generally no — it is issued and renewed automatically once DNS is correct. Early failures usually mean a misconfigured record; check both www and bare versions are covered."
+        "text": "Generally no - it is issued and renewed automatically once DNS is correct. Early failures usually mean a misconfigured record; check both www and bare versions are covered."
       }
     },
     {
@@ -175,7 +175,7 @@ Because the person named on the registration controls it. If a freelancer, agenc
       "name": "Should I use www or the bare domain?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Either — choose one, redirect all other versions to it permanently, and use that form consistently everywhere."
+        "text": "Either - choose one, redirect all other versions to it permanently, and use that form consistently everywhere."
       }
     },
     {

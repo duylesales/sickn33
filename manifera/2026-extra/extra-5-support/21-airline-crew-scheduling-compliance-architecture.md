@@ -20,19 +20,19 @@ target_persona: "A"
 }
 </script>
 
-A VP of Operations or CTO at a regional or charter airline building an internal crew scheduling platform faces a foundational architecture decision that directly determines whether the platform produces legal, safe rosters or generates a slow-building compliance liability: whether duty-time and rest-period rules — the kind of flight-time limitation regime enforced by regulators such as the FAA under Part 117 or EASA under its FTL subpart, covering maximum flight duty periods, minimum rest between duty periods, and cumulative duty-hour limits across rolling 7-day, 28-day, and annual windows — are built into the scheduling engine's core validation logic from the start, or treated as a compliance check to be layered on once basic shift assignment is working.
+A VP of Operations or CTO at a regional or charter airline building an internal crew scheduling platform faces a foundational architecture decision that directly determines whether the platform produces legal, safe rosters or generates a slow-building compliance liability: whether duty-time and rest-period rules - the kind of flight-time limitation regime enforced by regulators such as the FAA under Part 117 or EASA under its FTL subpart, covering maximum flight duty periods, minimum rest between duty periods, and cumulative duty-hour limits across rolling 7-day, 28-day, and annual windows - are built into the scheduling engine's core validation logic from the start, or treated as a compliance check to be layered on once basic shift assignment is working.
 
 ## Why Naive Shift-Based Scheduling Produces Illegal Rosters
 
-The most naive approach to crew scheduling — treating it as a generic workforce shift-assignment problem, matching available crew to open flights based on qualification and availability — produces rosters that look entirely reasonable at the moment they're published and only reveal their real problem once operations actually run: a specific combination of a weather delay extending one sector, a subsequent reassignment covering a crew member's colleague on a different flight, and that crew member's own cumulative duty hours over the preceding seven days, none individually alarming, can combine to push an individual crew member's actual flight duty period or cumulative duty total past a regulatory limit without a naive shift-matching system ever flagging it, since the violation only exists in the interaction between several ordinary, independently unremarkable scheduling events.
+The most naive approach to crew scheduling - treating it as a generic workforce shift-assignment problem, matching available crew to open flights based on qualification and availability - produces rosters that look entirely reasonable at the moment they're published and only reveal their real problem once operations actually run: a specific combination of a weather delay extending one sector, a subsequent reassignment covering a crew member's colleague on a different flight, and that crew member's own cumulative duty hours over the preceding seven days, none individually alarming, can combine to push an individual crew member's actual flight duty period or cumulative duty total past a regulatory limit without a naive shift-matching system ever flagging it, since the violation only exists in the interaction between several ordinary, independently unremarkable scheduling events.
 
 ## What a Genuine Duty-Time Compliance Rule Engine Actually Solves
 
-A genuine duty-time compliance rule engine addresses this directly by continuously validating every crew member's projected and actual flight duty period, rest period, and cumulative duty totals against the full applicable regulatory limits — not just at initial roster publication, but at every subsequent event that could change the calculation: a delay, a reassignment, a standby crew member being activated, an augmented-crew determination for a long-haul sector. This is meaningfully different from a point-in-time compliance check run once when a roster is first built, since the specific violations that create real safety and regulatory exposure are disproportionately the ones introduced by a downstream operational change made after the original roster already passed its initial validation.
+A genuine duty-time compliance rule engine addresses this directly by continuously validating every crew member's projected and actual flight duty period, rest period, and cumulative duty totals against the full applicable regulatory limits - not just at initial roster publication, but at every subsequent event that could change the calculation: a delay, a reassignment, a standby crew member being activated, an augmented-crew determination for a long-haul sector. This is meaningfully different from a point-in-time compliance check run once when a roster is first built, since the specific violations that create real safety and regulatory exposure are disproportionately the ones introduced by a downstream operational change made after the original roster already passed its initial validation.
 
 ## Why Retrofitting This Onto an Existing Scheduler Is Genuinely Difficult
 
-A crew scheduling platform built initially around simple availability-based shift assignment, with duty-time compliance validation planned as a later addition, tends to discover that genuine compliance validation needs to be woven into every point in the system where an assignment can change — the delay-handling workflow, the reassignment workflow, the standby-activation workflow — rather than existing as a single, separable validation step run once. Retrofitting continuous, event-triggered compliance validation onto a scheduler architected around a single validation pass at roster publication is a considerably larger undertaking than designing the rule engine to re-validate on every relevant event from the start, often requiring rework of the core assignment and reassignment logic that operations staff already rely on daily.
+A crew scheduling platform built initially around simple availability-based shift assignment, with duty-time compliance validation planned as a later addition, tends to discover that genuine compliance validation needs to be woven into every point in the system where an assignment can change - the delay-handling workflow, the reassignment workflow, the standby-activation workflow - rather than existing as a single, separable validation step run once. Retrofitting continuous, event-triggered compliance validation onto a scheduler architected around a single validation pass at roster publication is a considerably larger undertaking than designing the rule engine to re-validate on every relevant event from the start, often requiring rework of the core assignment and reassignment logic that operations staff already rely on daily.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -44,7 +44,7 @@ A crew scheduling platform built initially around simple availability-based shif
 
 A specific reason this architectural mismatch shows up repeatedly, not just at first-time platforms: genuine flight-time limitation compliance engineering is a specialized regulatory-and-systems discipline, distinct from general workforce scheduling software development, and a team with real strength in dispatch systems, HR scheduling tools, or general operations software doesn't automatically have this specific compliance-engineering expertise represented unless someone has deliberately sought it out. General scheduling experience builds strong intuitions about shift assignment and availability matching, but the rolling-window cumulative calculations and event-triggered re-validation genuine duty-time compliance requires tends to be learned through direct prior experience building compliance-grade crew scheduling systems specifically, a genuinely narrower specialization within the broader operations software discipline.
 
-This is a specific instance of a broader pattern worth naming directly: a platform validated against a calm operating day with few delays and few reassignments is exactly the condition under which a duty-time compliance gap is least likely to surface, since it's precisely the irregular, disrupted operating days — multiple delays cascading into multiple reassignments — that produce the specific combinations most likely to generate an undetected violation.
+This is a specific instance of a broader pattern worth naming directly: a platform validated against a calm operating day with few delays and few reassignments is exactly the condition under which a duty-time compliance gap is least likely to surface, since it's precisely the irregular, disrupted operating days - multiple delays cascading into multiple reassignments - that produce the specific combinations most likely to generate an undetected violation.
 
 ## Why Fleet Complexity Matters Considerably in How Urgently This Architecture Decision Needs to Be Made
 
@@ -64,7 +64,7 @@ Pianificazione Equipaggio Bologna, a Bologna-based regional airline, had built a
 Manifera's Amsterdam team rebuilt the platform's core validation logic around continuous, rolling-window duty and rest tracking, triggering re-validation on every delay, reassignment, and standby activation rather than only at initial roster publication, a substantial rework of assignment logic operations staff had already grown reliant on.
 
 > *"Our test schedules never had the kind of cascading disruption that actually happens on a bad weather day. It wasn't until a real disrupted day exposed a genuine violation that we understood our scheduler had never actually been validated against the conditions where these problems come from."*
-> — **VP of Operations, Pianificazione Equipaggio Bologna**
+> - **VP of Operations, Pianificazione Equipaggio Bologna**
 
 Pianificazione Equipaggio Bologna's rebuilt platform has since caught and automatically blocked several would-be violations during subsequent disrupted operating days, and the carrier now requires every scheduling system change to be validated against simulated disruption scenarios, not just calm-day test schedules.
 
@@ -79,7 +79,7 @@ Pianificazione Equipaggio Bologna's rebuilt platform has since caught and automa
 
 ## Scoping Your Own Airline Operations Platform's Compliance Architecture
 
-Before building or expanding a crew scheduling platform, design the core validation engine around continuous, rolling-window duty-time compliance from the start — a naive shift-assignment system that looks fine on a calm operating day reveals its real problems only under genuine disruption, by which point retrofitting proper compliance architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building genuinely compliance-grade crew scheduling architecture.
+Before building or expanding a crew scheduling platform, design the core validation engine around continuous, rolling-window duty-time compliance from the start - a naive shift-assignment system that looks fine on a calm operating day reveals its real problems only under genuine disruption, by which point retrofitting proper compliance architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building genuinely compliance-grade crew scheduling architecture.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It continuously validates every crew member's flight duty period, rest period, a
 
 ### (Scenario: airline evaluating an existing scheduler) Why is retrofitting compliance validation onto an existing platform difficult?
 
-Genuine compliance validation needs to be woven into every workflow that can change an assignment — delays, reassignments, standby activation — rather than existing as a single separable check, requiring substantial rework of core scheduling logic.
+Genuine compliance validation needs to be woven into every workflow that can change an assignment - delays, reassignments, standby activation - rather than existing as a single separable check, requiring substantial rework of core scheduling logic.
 
 ### (Scenario: safety officer planning testing strategy) Why might a scheduling platform work fine in testing but fail during a real disrupted operating day?
 
@@ -101,7 +101,7 @@ Calm test schedules with few delays or reassignments rarely produce the specific
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their duty-time compliance engineering experience?
 
-Ask specifically how their architecture tracks cumulative duty across rolling windows and how it re-validates compliance after a delay or reassignment — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture tracks cumulative duty across rolling windows and how it re-validates compliance after a delay or reassignment - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

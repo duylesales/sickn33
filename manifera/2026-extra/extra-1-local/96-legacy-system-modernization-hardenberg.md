@@ -22,9 +22,9 @@ target_persona: "VP of Engineering"
 
 A full rewrite of a business-critical legacy system promises a clean slate and delivers, more often than not, an eighteen-month project that quietly becomes a twenty-four-month project, with the business running on an increasingly unmaintained old system the entire time.
 
-**The Pain:** A VP of Engineering at a manufacturing company in Hardenberg — an Overijssel town near the German border with a strong cross-border manufacturing supply chain — needs legacy system modernization for an aging production-control system, and the instinctive first proposal from every vendor so far has been a full rewrite, without much discussion of the risk that carries for a system the business depends on daily.
+**The Pain:** A VP of Engineering at a manufacturing company in Hardenberg - an Overijssel town near the German border with a strong cross-border manufacturing supply chain - needs legacy system modernization for an aging production-control system, and the instinctive first proposal from every vendor so far has been a full rewrite, without much discussion of the risk that carries for a system the business depends on daily.
 
-**The Agitation:** A VP of Engineering who commits to a full rewrite discovers, partway through, that the old system still needs bug fixes and support during the rewrite's extended timeline, effectively running two systems' worth of engineering burden simultaneously — while the eventual big-bang cutover to the new system carries all the concentrated risk a phased approach would have spread out and mitigated along the way.
+**The Agitation:** A VP of Engineering who commits to a full rewrite discovers, partway through, that the old system still needs bug fixes and support during the rewrite's extended timeline, effectively running two systems' worth of engineering burden simultaneously - while the eventual big-bang cutover to the new system carries all the concentrated risk a phased approach would have spread out and mitigated along the way.
 
 ## The Case for Incremental Modernization
 
@@ -34,14 +34,14 @@ The first principle is identifying the legacy system's most painful or highest-v
 
 The second is that each incrementally modernized component delivers real value immediately upon completion, rather than the all-or-nothing value delivery of a full rewrite, where nothing is usable until the entire multi-month or multi-year project finishes.
 
-The third is that risk stays distributed and manageable throughout — each incremental piece is a smaller, lower-stakes cutover than a single big-bang replacement of the entire system, and a problem discovered in one modernized component doesn't jeopardize the rest of the still-functioning legacy system the way a full rewrite's failure would.
+The third is that risk stays distributed and manageable throughout - each incremental piece is a smaller, lower-stakes cutover than a single big-bang replacement of the entire system, and a problem discovered in one modernized component doesn't jeopardize the rest of the still-functioning legacy system the way a full rewrite's failure would.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads identify and prioritize the highest-value legacy components for incremental modernization, sequencing the roadmap to deliver real value at each stage rather than an all-or-nothing endpoint.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds compatibility layers that let modernized components coexist safely with untouched legacy code throughout the transition.
 
-This is Dutch Management × Vietnamese Mastery — legacy modernization that reduces risk instead of concentrating it into one high-stakes rewrite. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - legacy modernization that reduces risk instead of concentrating it into one high-stakes rewrite. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Anadolu Üretim Sistemleri A.Ş., a manufacturing company based near Istanbul, T
 Manifera restructured the effort around a strangler-pattern approach, identifying the three highest-value legacy components and modernizing them incrementally behind compatibility layers, delivering usable value within the first six weeks rather than waiting for full project completion. Eight months later, five of the system's most critical components had been fully modernized and were delivering value, with the remaining legacy components stable and scheduled for the same incremental treatment.
 
 > *"The full rewrite promised a clean ending and gave us a stalled project and a fragile old system we still depended on every day. The incremental approach gave us wins we could actually see within weeks, not a promise eighteen months out."*
-> — **VP of Engineering, Anadolu Üretim Sistemleri A.Ş., Turkey**
+> - **VP of Engineering, Anadolu Üretim Sistemleri A.Ş., Turkey**
 
 ## Full-Rewrite Approach vs. Manifera's Strangler-Pattern Modernization
 

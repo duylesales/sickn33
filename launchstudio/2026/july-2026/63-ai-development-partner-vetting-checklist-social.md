@@ -1,4 +1,4 @@
-🔍 Amara ran three agencies through a 12-point checklist before trusting anyone with her patient data — amara chukwu, a healthtech founder, used **cursor** to build a patient-intake SaaS prototype, but knew a wrong hire could sink her before her first enterprise client review. 🧠
+🔍 Amara ran three agencies through a 12-point checklist before trusting anyone with her patient data - amara chukwu, a healthtech founder, used **cursor** to build a patient-intake SaaS prototype, but knew a wrong hire could sink her before her first enterprise client review. 🧠
 
 If you can't get a straight answer on RLS policies, Stripe webhook handling, or who's actually touching your code, you're about to hand your database to a guess, not a partner.
 
@@ -12,7 +12,7 @@ If you can't get a straight answer on RLS policies, Stripe webhook handling, or 
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Amara's platform passed her first enterprise clinic's security review on the first attempt, with no follow-up remediation requests. (€4,100 (Enterprise Hardening) — 12 business days.) 🚀
+Amara's platform passed her first enterprise clinic's security review on the first attempt, with no follow-up remediation requests. (€4,100 (Enterprise Hardening) - 12 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-development-partner-vetting-checklist
 

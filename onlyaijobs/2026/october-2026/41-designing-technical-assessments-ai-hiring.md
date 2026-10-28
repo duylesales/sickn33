@@ -35,23 +35,23 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A take-home assignment that asks candidates to implement a classic algorithm from scratch tests something real — but often not the thing the actual role requires, where candidates will use existing libraries and spend most of their time on data quality and evaluation judgment, not algorithm implementation.
+A take-home assignment that asks candidates to implement a classic algorithm from scratch tests something real - but often not the thing the actual role requires, where candidates will use existing libraries and spend most of their time on data quality and evaluation judgment, not algorithm implementation.
 
 ## What a Good Assessment Actually Tests
 
-**The real day-to-day work, not a generic exercise.** If the role is mostly about evaluating and improving an existing model, the assessment should involve exactly that — reviewing a flawed approach and identifying what's wrong with it — not building something from scratch that the job rarely requires.
+**The real day-to-day work, not a generic exercise.** If the role is mostly about evaluating and improving an existing model, the assessment should involve exactly that - reviewing a flawed approach and identifying what's wrong with it - not building something from scratch that the job rarely requires.
 
-**Judgment under ambiguity, not just correctness.** A strong assessment often has more than one reasonable answer, and asks the candidate to justify their choice — that justification reveals more than whether they landed on the "right" answer.
+**Judgment under ambiguity, not just correctness.** A strong assessment often has more than one reasonable answer, and asks the candidate to justify their choice - that justification reveals more than whether they landed on the "right" answer.
 
 **A time investment proportional to the role.** A four-hour take-home for a mid-level role signals respect for a candidate's time; an unreasonably long assessment filters out exactly the experienced candidates with other options, not the weakest ones.
 
 ## Why Copied Templates Fail
 
-An assessment copied from a generic template tests generic skills, not what this specific role actually needs — which means strong performance on the assessment correlates weakly with strong performance in the actual job.
+An assessment copied from a generic template tests generic skills, not what this specific role actually needs - which means strong performance on the assessment correlates weakly with strong performance in the actual job.
 
 ## A Deeper Look at Why Copied Assessments Fail Quietly
 
-A copied assessment template doesn't fail loudly — candidates still complete it, scores still get compared, hiring decisions still get made. The failure is invisible until months later, when a strong performer on the assessment turns out to be a weak performer on the actual job, or vice versa, and nobody traces that mismatch back to the assessment design itself because the correlation was never explicitly checked in the first place.
+A copied assessment template doesn't fail loudly - candidates still complete it, scores still get compared, hiring decisions still get made. The failure is invisible until months later, when a strong performer on the assessment turns out to be a weak performer on the actual job, or vice versa, and nobody traces that mismatch back to the assessment design itself because the correlation was never explicitly checked in the first place.
 
 ## A Practical Redesign Process for an Existing Assessment
 
@@ -66,7 +66,7 @@ A copied assessment template doesn't fail loudly — candidates still complete i
 | | One-time redesign cost | Ongoing payoff |
 |---|---|---|
 | Time investment | A few hours, once per role type | Better-correlated hiring decisions for every future candidate |
-| Risk of getting it wrong initially | Low — can be iterated | — |
+| Risk of getting it wrong initially | Low - can be iterated | - |
 | Risk of not doing it | Continued mismatch between assessment performance and job performance | Compounds with every hire |
 
 ## Four Assessment Formats and What Each Actually Measures
@@ -77,7 +77,7 @@ The take-home assignment measures independent problem-solving with realistic tim
 
 The live pairing session measures how a candidate thinks under observation and how they collaborate, which the take-home cannot. It is considerably better than a take-home at revealing reasoning process, and considerably worse at revealing what someone produces with time to think. It also disadvantages candidates who perform poorly under observation for reasons unrelated to job performance.
 
-The structured technical discussion — no code, just a conversation about how the candidate would approach a described problem — measures judgement and communication efficiently and imposes minimal candidate burden. It cannot verify implementation ability, which makes it insufficient alone for roles where that matters.
+The structured technical discussion - no code, just a conversation about how the candidate would approach a described problem - measures judgement and communication efficiently and imposes minimal candidate burden. It cannot verify implementation ability, which makes it insufficient alone for roles where that matters.
 
 The portfolio review, where the candidate walks through prior work, measures depth of understanding of work they actually did and imposes almost no additional burden. Its limitation is that it depends on the candidate having relevant prior work they can discuss, which disadvantages career changers and those whose previous work was confidential.
 
@@ -101,7 +101,7 @@ Designing a good assessment is only half the work; evaluating submissions consis
 
 The foundational practice is defining what a strong, adequate and weak submission look like before seeing any submissions. Evaluators who form these standards while reviewing inevitably calibrate against whichever submission they happened to read first, and the resulting ordering is partly an artefact of review sequence rather than of candidate quality.
 
-The second practice is separating the dimensions being evaluated rather than forming a single overall impression. A submission might show excellent problem framing and weak implementation, or the reverse, and these differences matter for the hiring decision in ways a single score obscures. Scoring dimensions separately also surfaces disagreement between evaluators productively — two reviewers who both scored a candidate as adequate may have done so for opposite reasons.
+The second practice is separating the dimensions being evaluated rather than forming a single overall impression. A submission might show excellent problem framing and weak implementation, or the reverse, and these differences matter for the hiring decision in ways a single score obscures. Scoring dimensions separately also surfaces disagreement between evaluators productively - two reviewers who both scored a candidate as adequate may have done so for opposite reasons.
 
 The third practice, discussed also in the structured-interview analysis elsewhere on this site, is having evaluators score independently before discussing. The first opinion voiced in a review discussion anchors the group substantially, and independent scoring preserves the informational value of having multiple reviewers at all.
 
@@ -111,7 +111,7 @@ How the assessment is framed and how results are communicated affects both candi
 
 Explaining why the assessment exists and what it is intended to evaluate improves submissions measurably, because candidates who understand what is being assessed direct their effort there rather than guessing. It also signals respect, which matters in a market where strong candidates have alternatives.
 
-Providing candidates with the evaluation dimensions in advance is a stronger version of the same principle, and it does not compromise the assessment's validity for the judgement-based work that AI roles require — knowing that you will be evaluated on how you justify your approach does not make justifying it well any easier.
+Providing candidates with the evaluation dimensions in advance is a stronger version of the same principle, and it does not compromise the assessment's validity for the judgement-based work that AI roles require - knowing that you will be evaluated on how you justify your approach does not make justifying it well any easier.
 
 Providing brief feedback afterward, even to unsuccessful candidates, is a practice few organisations sustain and one that produces disproportionate goodwill in the small professional communities described throughout this site. A candidate who receives two sentences of genuine feedback speaks differently about your organisation than one who receives silence, and both conversations reach other candidates.
 
@@ -119,9 +119,9 @@ Providing brief feedback afterward, even to unsuccessful candidates, is a practi
 
 A balanced treatment should note that some hiring situations are better served by skipping the assessment entirely.
 
-For senior candidates with substantial public work — publications, open-source contributions, conference talks — a portfolio discussion frequently provides better signal than any assessment could, and requesting an assessment can read as failing to engage with evidence already available. Several strong senior candidates decline processes that require assessments for this reason.
+For senior candidates with substantial public work - publications, open-source contributions, conference talks - a portfolio discussion frequently provides better signal than any assessment could, and requesting an assessment can read as failing to engage with evidence already available. Several strong senior candidates decline processes that require assessments for this reason.
 
-For roles where the primary requirement is domain judgement rather than implementation — the governance and product roles discussed elsewhere on this site — a technical assessment may measure the wrong thing entirely, and a structured discussion of scenarios provides better signal.
+For roles where the primary requirement is domain judgement rather than implementation - the governance and product roles discussed elsewhere on this site - a technical assessment may measure the wrong thing entirely, and a structured discussion of scenarios provides better signal.
 
 For hiring situations with extreme time pressure, an assessment that adds a week to the process may cost the candidate entirely, and a faster process with slightly less certainty may produce a better outcome than a thorough process that concludes after the candidate has accepted elsewhere.
 
@@ -133,7 +133,7 @@ The final and most neglected element of assessment design is checking whether th
 
 The minimal version is retrospective: for each of your last several hires, compare their assessment performance against how they have actually performed in the role. If the ordering broadly matches, the assessment is providing signal. If strong assessment performers have underperformed while modest performers have excelled, the assessment is measuring something other than what the job requires, and its design deserves reconsideration.
 
-This comparison is imperfect — sample sizes are small, on-the-job performance depends on many factors beyond capability — but even a rough check surfaces the more severe misalignments, particularly the common case where an assessment measures speed and syntax fluency while the role rewards judgement and thoroughness.
+This comparison is imperfect - sample sizes are small, on-the-job performance depends on many factors beyond capability - but even a rough check surfaces the more severe misalignments, particularly the common case where an assessment measures speed and syntax fluency while the role rewards judgement and thoroughness.
 
 The complementary check is asking recent hires how the assessment compared to the actual work. Candidates who have now done the job for six months are uniquely positioned to assess whether the assessment resembled it, and they will usually say so candidly if asked. Several organisations that have run this simple exercise discovered their assessment bore little relation to the role, having been inherited from a template nobody had revisited.
 
@@ -147,7 +147,7 @@ Confirm also that the assessment is proportionate to the seniority of the role, 
 
 Decades of research in personnel psychology support some of the recommendations in this article. A widely cited meta-analysis by **Schmidt and Hunter (1998)** found that **work sample tests** and **structured interviews** are among the better predictors of job performance, while unstructured interviews and years of experience predict considerably less well. Later research has refined the exact numbers, but the practical message holds: assessments that closely resemble real work, scored against predefined criteria, tend to predict better than puzzles or informal conversations.
 
-For AI roles, this supports assessments built around realistic tasks — interpreting a flawed model evaluation, cleaning a small messy dataset, or designing a monitoring approach — combined with a structured debrief in which every candidate is asked the same core questions.
+For AI roles, this supports assessments built around realistic tasks - interpreting a flawed model evaluation, cleaning a small messy dataset, or designing a monitoring approach - combined with a structured debrief in which every candidate is asked the same core questions.
 
 ## The Legal Frame for Assessments in the Netherlands
 
@@ -155,11 +155,11 @@ For AI roles, this supports assessments built around realistic tasks — interpr
 - **Reasonable accommodation.** Under the **Equal Treatment on Grounds of Disability or Chronic Illness Act**, employers must make effective adjustments where needed, for example extra time for a candidate with dyslexia, unless this imposes a disproportionate burden. Mention in your assessment invitation how candidates can request accommodations.
 - **Candidate data.** Assessment results are personal data under the **GDPR**. The **Dutch Data Protection Authority** advises deleting applicant data within four weeks after the procedure ends unless the candidate consents to longer retention.
 - **Automated scoring.** If you use AI tools to score assessments or screen candidates, note that the **EU Artificial Intelligence Act** classifies AI systems used for recruitment and selection as high-risk, with obligations around human oversight, transparency and bias management.
-- **Fair process.** The **NVP Recruitment Code** recommends transparency about the selection procedure and its steps — including what an assessment involves and how much time it takes.
+- **Fair process.** The **NVP Recruitment Code** recommends transparency about the selection procedure and its steps - including what an assessment involves and how much time it takes.
 
 ## Handling Generative AI in Take-Home Assignments
 
-Generative AI tools have changed take-home assignments. Instead of trying to ban their use — which is hard to verify — many teams now state explicitly whether AI assistance is allowed and ask candidates to describe how they used it. The follow-up conversation then becomes the real test: can the candidate explain every choice, spot weaknesses in the generated parts and extend the solution live? That approach reflects how the work is actually done today and keeps the assessment fair for candidates who are transparent.
+Generative AI tools have changed take-home assignments. Instead of trying to ban their use - which is hard to verify - many teams now state explicitly whether AI assistance is allowed and ask candidates to describe how they used it. The follow-up conversation then becomes the real test: can the candidate explain every choice, spot weaknesses in the generated parts and extend the solution live? That approach reflects how the work is actually done today and keeps the assessment fair for candidates who are transparent.
 
 ## Key Takeaways
 
@@ -173,7 +173,7 @@ Generative AI tools have changed take-home assignments. Instead of trying to ban
 
 Design your next assessment around a real, anonymized problem from your own team's actual work, scoped to a reasonable time commitment, and ask candidates to justify their reasoning, not just produce a correct output.
 
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
+Post your open AI, machine learning or data role - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -181,16 +181,16 @@ Post your open AI, machine learning or data role — first listing free — at i
 Because it tests generic skills rather than what the specific role actually requires day to day, so strong performance on it correlates weakly with strong performance in the actual job.
 
 ### (Scenario: hiring manager deciding what to test) What should a good AI technical assessment actually test?
-The real day-to-day work of the role — evaluation and judgment under ambiguity — rather than a generic exercise like implementing a classic algorithm from scratch.
+The real day-to-day work of the role - evaluation and judgment under ambiguity - rather than a generic exercise like implementing a classic algorithm from scratch.
 
 ### (Scenario: hiring manager designing assessment length) How long should a technical assessment reasonably take?
-Proportional to the role's seniority and scope — an unreasonably long assessment filters out experienced candidates with other options rather than identifying the weakest ones.
+Proportional to the role's seniority and scope - an unreasonably long assessment filters out experienced candidates with other options rather than identifying the weakest ones.
 
 ### (Scenario: hiring manager wanting to differentiate candidates) Why is it useful to design a problem with more than one reasonable answer?
 Because asking candidates to justify their choice reveals judgment that a single "correct answer" assessment can't surface.
 
 ### (Scenario: hiring manager wondering where to source assessment content) Where should assessment content come from?
-A real, anonymized problem from your own team's actual work — scoped appropriately — rather than a generic template copied from elsewhere.
+A real, anonymized problem from your own team's actual work - scoped appropriately - rather than a generic template copied from elsewhere.
 
 <script type="application/ld+json">
 {
@@ -199,7 +199,7 @@ A real, anonymized problem from your own team's actual work — scoped appropria
   "mainEntity": [
     {"@type": "Question", "name": "Why doesn't a generic take-home assessment predict job performance well?", "acceptedAnswer": {"@type": "Answer", "text": "It tests generic skills rather than what the specific role actually requires day to day."}},
     {"@type": "Question", "name": "What should a good AI technical assessment actually test?", "acceptedAnswer": {"@type": "Answer", "text": "The real day-to-day work of the role, rather than a generic exercise."}},
-    {"@type": "Question", "name": "How long should a technical assessment reasonably take?", "acceptedAnswer": {"@type": "Answer", "text": "Proportional to the role's seniority and scope — unreasonable length filters out experienced candidates with other options."}},
+    {"@type": "Question", "name": "How long should a technical assessment reasonably take?", "acceptedAnswer": {"@type": "Answer", "text": "Proportional to the role's seniority and scope - unreasonable length filters out experienced candidates with other options."}},
     {"@type": "Question", "name": "Why is it useful to design a problem with more than one reasonable answer?", "acceptedAnswer": {"@type": "Answer", "text": "Asking candidates to justify their choice reveals judgment a single correct-answer assessment can't surface."}},
     {"@type": "Question", "name": "Where should assessment content come from?", "acceptedAnswer": {"@type": "Answer", "text": "A real, anonymized problem from your own team's actual work, scoped appropriately."}}
   ]

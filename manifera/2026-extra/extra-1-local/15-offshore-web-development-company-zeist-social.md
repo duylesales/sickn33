@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **The Zeist Engineering Talent Trap:** A CMO at a wellness and lifestyle brand headquartered in Zeist is planning a major seasonal campaign and needs a new e-commerce-enabled website live in ten weeks. The internal team has no dedicated web development capacity, and every outsourcing quote treats "marketing site" as a lower priority than the vendor's enterprise application work.
-❌ **Compounding Burn Rate & Delayed Roadmaps:** A campaign-critical website that launches late — or launches on time but with broken conversion flows because the vendor didn't understand the marketing intent behind the design — doesn't just cost development fees. It costs the entire campaign's paid media spend, which for a seasonal push can run into six figures, all pointed at a page that doesn't convert the way the creative brief intended.
+❌ **Compounding Burn Rate & Delayed Roadmaps:** A campaign-critical website that launches late - or launches on time but with broken conversion flows because the vendor didn't understand the marketing intent behind the design - doesn't just cost development fees. It costs the entire campaign's paid media spend, which for a seasonal push can run into six figures, all pointed at a page that doesn't convert the way the creative brief intended.
 ❌ **The Local Monolith & Freelancer Risk:** Relying on fragmented freelancers or legacy local agencies leads to single-developer dependency, zero test automation, and brittle production deployments.
 
 **The Manifera Solution:**

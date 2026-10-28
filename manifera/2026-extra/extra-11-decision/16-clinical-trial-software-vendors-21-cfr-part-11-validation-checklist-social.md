@@ -2,13 +2,13 @@
 
 **The Pain Points:**
 ❌ **No IQ/OQ/PQ evidence:** A vendor claiming compliance without installation, operational, and performance qualification records has nothing to show an inspector.
-❌ **Editable audit trails:** If a privileged user — including the vendor's own support staff — can alter audit trail entries, the system fails data integrity basics.
+❌ **Editable audit trails:** If a privileged user - including the vendor's own support staff - can alter audit trail entries, the system fails data integrity basics.
 ❌ **Legacy CSV overkill (or under-kill):** Vendors stuck on exhaustive validation for every feature slow you down; vendors with no risk-based rigor at all put your trial data at risk.
 
 **The Manifera Solution:**
 ✅ **Validation as a co-deliverable:** IQ/OQ/PQ documentation, traceability matrices, and change control SOPs ship alongside the platform, not after an audit request.
 ✅ **ALCOA+ by design:** Attributable, contemporaneous, immutable audit trails built into the architecture from day one.
-✅ **CSA-aligned risk assessment:** Rigorous testing where it matters, leveraged evidence where it doesn't — aligned with FDA's 2022 guidance direction.
+✅ **CSA-aligned risk assessment:** Rigorous testing where it matters, leveraged evidence where it doesn't - aligned with FDA's 2022 guidance direction.
 
 Your EDC platform is only as defensible as its documentation trail. 📋
 

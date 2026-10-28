@@ -4,7 +4,7 @@ De build is het makkelijke deel. Dit is wat er écht gebeurt in de eerste 48 uur
 
 ❌ Safari, Firefox en mobiele browsers breken dingen die op uw eigen machine perfect werkten
 ❌ Betalingsfouten (SCA, iDEAL-redirects) blijven onzichtbaar zonder logging
-❌ Klanten die vastlopen mailen niet — ze vertrekken gewoon stilletjes
+❌ Klanten die vastlopen mailen niet - ze vertrekken gewoon stilletjes
 ❌ Zonder monitoring hoort u pas dagen later over een probleem, via een boze e-mail
 
 ✅ LaunchStudio's Launch Ready Pakket omvat 48 uur post-lancering ondersteuning
@@ -12,9 +12,9 @@ De build is het makkelijke deel. Dit is wat er écht gebeurt in de eerste 48 uur
 ✅ Reactietijd van 30-60 minuten op productiekritieke incidenten
 ✅ We zien problemen vaak vóórdat u ze zelf rapporteert
 
-Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, lopen we niet weg bij deployment — we blijven tijdens het venster waarin het er het meest toe doet. 🛡️
+Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, lopen we niet weg bij deployment - we blijven tijdens het venster waarin het er het meest toe doet. 🛡️
 
-Fleurs resultaat: 3 launch-day bugs opgelost binnen 5 uur — 67 aanmeldingen en 4 betalende klanten op dag één. 🚀
+Fleurs resultaat: 3 launch-day bugs opgelost binnen 5 uur - 67 aanmeldingen en 4 betalende klanten op dag één. 🚀
 
 👉 Plan uw lancering met ondersteuning die blijft tijdens het kritieke venster: https://launchstudio.eu/nl/blog/first-48-hours-after-launch-matter-more
 

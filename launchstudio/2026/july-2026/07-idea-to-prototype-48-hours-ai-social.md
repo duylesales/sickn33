@@ -1,4 +1,4 @@
-🔥 Thomas built a prototype using **Lovable** — thomas, an event planner, spent a weekend using **lovable** and **supabase** to build a corporate event registration web app, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Thomas built a prototype using **Lovable** - thomas, an event planner, spent a weekend using **lovable** and **supabase** to build a corporate event registration web app, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Thomas's application achieved production readiness: Thomas demonstrated the secure app on his own domain to the client, securing a booking contract for 3 major conferences. (€1,500 (Launch Package) — production-ready and deployed in 5 business days.). 🚀
+Thomas's application achieved production readiness: Thomas demonstrated the secure app on his own domain to the client, securing a booking contract for 3 major conferences. (€1,500 (Launch Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/idea-to-prototype-48-hours-ai
 

@@ -29,13 +29,13 @@ Probeer je machine learning-werk in Nederland in te stappen en lijkt elke sector
 
 **De problemen zijn goed begrepen.** Vraagvoorspelling, aanbevelen, prijsstelling, verloop, zoekranking en marketingattributie hebben uitgebreide publieke literatuur.
 
-**Je kunt vóór aanname een relevant portfolio bouwen.** Publieke datasets voor aanbevelen, retailvraag en zoeken bestaan. Anders dan in zorg of defensie kun je vermogen aantonen op realistische problemen zonder institutionele toegang — de grootste reden dat de sector toegankelijker is.
+**Je kunt vóór aanname een relevant portfolio bouwen.** Publieke datasets voor aanbevelen, retailvraag en zoeken bestaan. Anders dan in zorg of defensie kun je vermogen aantonen op realistische problemen zonder institutionele toegang - de grootste reden dat de sector toegankelijker is.
 
 **Teams zijn groter en bevatten juniors.** Een supermarktketen of marktplaats kan tientallen datamensen hebben, met gestructureerde onboarding en iemand wiens taak ook is jou te ontwikkelen.
 
 ## Wat het werk is
 
-**Vraagvoorspelling.** Voorspellen wat verkoopt, waar en wanneer. Bedrieglijk lastig op schaal: honderdduizenden product-locatiecombinaties, meeste met schaarse en intermitterende verkoop, plus promoties, seizoen, weer en kannibalisatie. De asymmetrische kosten uit het logistiekstuk gelden volledig — de verliesfunctie telt zwaarder dan het model.
+**Vraagvoorspelling.** Voorspellen wat verkoopt, waar en wanneer. Bedrieglijk lastig op schaal: honderdduizenden product-locatiecombinaties, meeste met schaarse en intermitterende verkoop, plus promoties, seizoen, weer en kannibalisatie. De asymmetrische kosten uit het logistiekstuk gelden volledig - de verliesfunctie telt zwaarder dan het model.
 
 **Assortiment en voorraad.** Wat waar op voorraad, hoeveel, en wanneer bijbestellen. Optimalisatie onder ruimte-, houdbaarheids- en leveranciersrandvoorwaarden.
 
@@ -79,7 +79,7 @@ Probeer je machine learning-werk in Nederland in te stappen en lijkt elke sector
 
 **De concurrentie is hier het hoogst.** De toegankelijkheid die je helpt instappen, betekent ook dat je met de grootste sollicitantenpool concurreert.
 
-Niets hiervan pleit tegen de sector. Het pleit voor hem bewust gebruiken: instappen, echte productie-ervaring bouwen, en dan beslissen of je binnen retail verdiept — er zijn substantiële seniorproblemen — of die ervaring meeneemt naar een sector waar hij schaarser wordt.
+Niets hiervan pleit tegen de sector. Het pleit voor hem bewust gebruiken: instappen, echte productie-ervaring bouwen, en dan beslissen of je binnen retail verdiept - er zijn substantiële seniorproblemen - of die ervaring meeneemt naar een sector waar hij schaarser wordt.
 
 ## Hoe je werkelijk binnenkomt
 
@@ -102,7 +102,7 @@ Het plafond in retail is lager dan in halfgeleiders of kwantitatieve financiën 
 ## Belangrijkste punten
 
 - Retail en e-commerce is de toegankelijkste sector om machine learning-werk in te stappen.
-- De technische inhoud is echt — honderdduizenden schaarse intermitterende series voorspellen met asymmetrische kosten is werkelijk lastig.
+- De technische inhoud is echt - honderdduizenden schaarse intermitterende series voorspellen met asymmetrische kosten is werkelijk lastig.
 - Marketingmeting is statistisch het meest beladen gebied.
 - De kostenpost van toegankelijkheid is onderscheidend vermogen.
 - Gebruik de sector bewust: instappen, productie-ervaring bouwen, dan verdiepen of verplaatsen.

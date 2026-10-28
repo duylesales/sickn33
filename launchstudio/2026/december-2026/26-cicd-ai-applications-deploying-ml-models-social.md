@@ -1,17 +1,17 @@
 🚨 He edited one AI prompt to fix a complaint. It secretly broke defect detection for 6 manufacturing clients. Nobody caught it until a client called confused. 😱
 
-Traditional CI/CD assumes: same input = same output. AI breaks that assumption completely — meaning "passing tests" doesn't mean what you think it means: 🧠
+Traditional CI/CD assumes: same input = same output. AI breaks that assumption completely - meaning "passing tests" doesn't mean what you think it means: 🧠
 
-❌ You can't test "the AI returns exactly this text" — it fails even when working correctly
+❌ You can't test "the AI returns exactly this text" - it fails even when working correctly
 ❌ Prompt edits deployed on vibes, with zero testing process
 ❌ One subtle change = silent regression reaching ALL your customers at once
 
-The fix — AI-aware CI/CD: ✅
+The fix - AI-aware CI/CD: ✅
 ✅ Test structure, not exact content (required fields, length, no bad content)
 ✅ Version your prompts like code
-✅ Staged rollouts — one customer first, not all six
+✅ Staged rollouts - one customer first, not all six
 ✅ Cost & latency gates, not just "does it work"
-✅ Log the model + prompt version on every response — it's the only way to tell "our regression" from "provider outage" in minutes instead of hours 🔍
+✅ Log the model + prompt version on every response - it's the only way to tell "our regression" from "provider outage" in minutes instead of hours 🔍
 
 At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this pipeline in. His result: 2 regressions caught before they ever reached a customer. 🛡️🚀
 

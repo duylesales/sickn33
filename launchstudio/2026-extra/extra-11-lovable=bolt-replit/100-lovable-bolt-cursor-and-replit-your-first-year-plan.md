@@ -30,11 +30,11 @@ Five thresholds, in the order they arrive.
 
 **What you are doing:** finding out whether anyone wants this.
 
-Use the generative tools — Lovable, Bolt — and use them freely. Build the thing, show it to ten people who have the problem, and listen. Iterate as fast as the tooling allows.
+Use the generative tools - Lovable, Bolt - and use them freely. Build the thing, show it to ten people who have the problem, and listen. Iterate as fast as the tooling allows.
 
 **Do not:** buy a domain and set up hosting and configure analytics before you have shown anybody anything. Do not build multi-tenancy for customers you do not have. Do not worry about the database.
 
-**Two exceptions, because they cost nothing now and a fortnight later.** Register the domain in your own company's name from the start, if you register one at all. And if there is any realistic chance your customers will be companies rather than individuals, build the organisation-and-membership model rather than attaching everything to a user — this is the single most expensive thing to retrofit.
+**Two exceptions, because they cost nothing now and a fortnight later.** Register the domain in your own company's name from the start, if you register one at all. And if there is any realistic chance your customers will be companies rather than individuals, build the organisation-and-membership model rather than attaching everything to a user - this is the single most expensive thing to retrofit.
 
 **Spend:** platform subscriptions, and less than you think. Most ideas should die here, cheaply.
 
@@ -50,7 +50,7 @@ Secrets moved server-side, with any key that reached the browser rotated. Then s
 
 Data made durable: an external managed database in an EU region, uploads in object storage rather than beside your code, and backups verified by actually restoring one and timing it.
 
-A custom domain with HTTPS, and the deployed address — never a preview link — given to customers.
+A custom domain with HTTPS, and the deployed address - never a preview link - given to customers.
 
 Error tracking and uptime monitoring, which is twenty minutes and will immediately show you something broken you did not know about.
 
@@ -72,7 +72,7 @@ A Dutch company with a procurement process wants to buy, and the questions arriv
 
 A colleague, a freelancer, or a customer whose staff need separate logins.
 
-**What becomes urgent:** version control as the source of truth with small reviewable commits; a staging environment with its own anonymised data; a rollback you have actually performed and timed; separate accounts for every person with same-day removal when they leave; and logic moved out of generated screens so two people — or two tools — stop overwriting each other.
+**What becomes urgent:** version control as the source of truth with small reviewable commits; a staging environment with its own anonymised data; a rollback you have actually performed and timed; separate accounts for every person with same-day removal when they leave; and logic moved out of generated screens so two people - or two tools - stop overwriting each other.
 
 This is also where the tooling mix settles: generative tools for surfaces, editorial tools like Cursor for anything structural, and a rule that a screen graduates to real code the moment somebody depends on what it calculates.
 
@@ -114,7 +114,7 @@ Across projects built with every one of these tools, the same problems appear. K
 
 **Records owned by users rather than organisations.** Which works until a customer's colleague needs access, and then becomes shared logins.
 
-**An aggregate with no tenant filter.** A dashboard number, a total, an export — counting the whole table, which is how cross-customer leaks happen in products whose main lists are correctly filtered.
+**An aggregate with no tenant filter.** A dashboard number, a total, an export - counting the whole table, which is how cross-customer leaks happen in products whose main lists are correctly filtered.
 
 None of these are failures of the tools, and none require unusual skill to fix. They are all the same category of thing: consequences of a request that was about making a feature work, answered by a system with no reason to consider anything else.
 
@@ -122,9 +122,9 @@ Check the eight. Whatever the answer, you will know something about your product
 
 ## What Each Stage Costs
 
-For realistic planning: stage two — the week of production readiness — is typically €1,500 to €3,000. Stage three, the enterprise-readiness work, €3,000 to €6,000 depending on how much tenancy and audit work is needed. Stage four and five are usually smaller, €1,500 to €4,000 each, because the foundation exists by then.
+For realistic planning: stage two - the week of production readiness - is typically €1,500 to €3,000. Stage three, the enterprise-readiness work, €3,000 to €6,000 depending on how much tenancy and audit work is needed. Stage four and five are usually smaller, €1,500 to €4,000 each, because the foundation exists by then.
 
-LaunchStudio prices these as fixed scopes in bands from €800 to €7,500 — roughly 20% of what a traditional agency charges for comparable work — with managed hosting at €49 per month for the parts that never finish. Every account stays in your name, the codebase stays conventional, and you keep building with your own tooling afterwards.
+LaunchStudio prices these as fixed scopes in bands from €800 to €7,500 - roughly 20% of what a traditional agency charges for comparable work - with managed hosting at €49 per month for the parts that never finish. Every account stays in your name, the codebase stays conventional, and you keep building with your own tooling afterwards.
 
 Behind it is Manifera: eleven years, 160+ production projects, 120+ engineers, clients including Vodafone, TNO, CFLW, Statler BI and Xpar Vision, working from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City.
 
@@ -134,13 +134,13 @@ Behind it is Manifera: eleven years, 160+ production projects, 120+ engineers, c
 
 ### A Year, in the Order It Actually Happened
 
-Lianne de Ruiter built Bezoekregistratie with Lovable: visitor registration for offices and factories — sign-in at reception, host notification, evacuation lists, contractor checks.
+Lianne de Ruiter built Bezoekregistratie with Lovable: visitor registration for offices and factories - sign-in at reception, host notification, evacuation lists, contractor checks.
 
 **February.** Prototype in nine days, shown to four facility managers she knew. Two said they would pay. Cost: a platform subscription.
 
 **April, first paying customer.** A logistics company in Veenendaal, €180 per month. This triggered the production readiness week: access rules written and tested from a second account, which found that any signed-in user could read every visitor record; a service key removed from the frontend; the database moved to an EU region with backups restored and timed; visitor photographs moved out of the project directory into object storage, which turned out to matter because four months of them had already been lost to redeploys; a custom domain; error tracking, which surfaced a host-notification failure affecting one browser. €2,400, six days.
 
-**July, first business contract.** A manufacturer with a procurement process and 41 questions. Tenant isolation moved into database policies, an audit trail added to visitor records — which the manufacturer's safety officer cited as the deciding feature, because evacuation lists must be defensible — two-factor authentication, a subprocessor list that surfaced an analytics tool she had forgotten, retention and erasure, and a five-page security document. €4,900, eleven days. Contract signed six weeks later at €1,100 per month.
+**July, first business contract.** A manufacturer with a procurement process and 41 questions. Tenant isolation moved into database policies, an audit trail added to visitor records - which the manufacturer's safety officer cited as the deciding feature, because evacuation lists must be defensible - two-factor authentication, a subprocessor list that surfaced an analytics tool she had forgotten, retention and erasure, and a five-page security document. €4,900, eleven days. Contract signed six weeks later at €1,100 per month.
 
 **October, a colleague joined.** Version control, staging with anonymised data, a tested rollback, separate accounts, and the notification logic moved out of a generated screen after it was overwritten by a layout change. €1,800, four days.
 
@@ -149,7 +149,7 @@ Lianne de Ruiter built Bezoekregistratie with Lovable: visitor registration for 
 **Result:** eleven customers by the anniversary, €4,300 monthly recurring revenue, and total engineering spend of €11,200 across the year.
 
 > *"Every piece of work I paid for became urgent about a week before I did it. The only one I regret is the four months of visitor photographs I lost before anyone told me files do not survive a redeploy."*
-> — **Lianne de Ruiter, Founder, Bezoekregistratie (Veenendaal)**
+> - **Lianne de Ruiter, Founder, Bezoekregistratie (Veenendaal)**
 
 **Cost & Timeline:** €11,200 across four engagements over twelve months, plus €49 per month managed hosting from month eleven.
 
@@ -173,7 +173,7 @@ Version control as the source of truth, a staging environment with anonymised da
 
 ### What does a year of this cost?
 
-Typically €1,500–€3,000 for production readiness, €3,000–€6,000 for enterprise readiness, and €1,500–€4,000 each for the team and scale stages — with managed hosting at €49 per month. Roughly 20% of a traditional agency's price for comparable work.
+Typically €1,500–€3,000 for production readiness, €3,000–€6,000 for enterprise readiness, and €1,500–€4,000 each for the team and scale stages - with managed hosting at €49 per month. Roughly 20% of a traditional agency's price for comparable work.
 
 <script type="application/ld+json">
 {
@@ -185,7 +185,7 @@ Typically €1,500–€3,000 for production readiness, €3,000–€6,000 for 
       "name": "When should I stop building and make the product production-ready?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At the first paying customer — before that most of the work is premature, and after it someone else's money and data are involved."
+        "text": "At the first paying customer - before that most of the work is premature, and after it someone else's money and data are involved."
       }
     },
     {

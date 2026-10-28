@@ -8,11 +8,11 @@ v0 generates genuinely polished interfaces. It also generates ZERO backend, by d
 ❌ Every interaction is powered by placeholder content that was never meant to survive real use
 
 ✅ v0-based = building an entire layer that doesn't exist yet, not hardening what's there
-✅ The design work — often the hardest, most subjective part — is likely already done
+✅ The design work - often the hardest, most subjective part - is likely already done
 ✅ Real database, real auth, real business logic connect into your EXISTING interface
 ✅ Zero visual changes required if the design work was done properly upfront
 
-At **LaunchStudio**, we build the complete backend layer around your existing v0 interface — no design changes. Backed by Manifera's full-stack experience across 160+ projects. 🛡️
+At **LaunchStudio**, we build the complete backend layer around your existing v0 interface - no design changes. Backed by Manifera's full-stack experience across 160+ projects. 🛡️
 
 Her result: launched 6 weeks later with the identical design, now genuinely functional behind every screen. 🚀
 

@@ -28,7 +28,7 @@ Lidmaatschap is het fundament waarop rechten, facturatie, audit en datascheiding
 
 ## Het Datamodel: Drie Tabellen, Niet Eén Kolom
 
-De kortere weg is één kolom: `profiles.organisation_id`. Die beantwoordt "bij welk bedrijf hoort deze persoon" — en verder niets.
+De kortere weg is één kolom: `profiles.organisation_id`. Die beantwoordt "bij welk bedrijf hoort deze persoon" - en verder niets.
 
 Ze kan geen persoon weergeven die bij twee organisaties hoort, en dat komt vaak voor: accountants die meerdere klanten bedienen, onderaannemers die voor meerdere installateurs werken, adviseurs, en iedereen die van werkgever wisselt maar zijn e-mailadres houdt. Ze kan geen rol per organisatie bevatten. En ze kan geen uitnodiging weergeven die nog niet is geaccepteerd.
 
@@ -65,7 +65,7 @@ create table invitations (
 
 Een lidmaatschap is de relatie tussen een persoon en een organisatie, waarbij de rol bij die relatie hoort in plaats van bij de persoon. Een uitnodiging is een lidmaatschap in afwachting, met een vervaldatum. Geen van beide vervangt de ander: de uitnodiging legt vast wie werd gevraagd, door wie en wanneer; het lidmaatschap legt vast wie werkelijk toegang heeft.
 
-De samengestelde primaire sleutel op `memberships` dwingt af dat iemand maar één keer lid kan zijn van een organisatie. De cascades zorgen ervoor dat het verwijderen van een organisatie haar lidmaatschappen en uitnodigingen verwijdert, en dat het verwijderen van een gebruiker zijn lidmaatschappen verwijdert — wat de AVG bij wissing vereist, zoals het verwijderartikel in extra-11 beschrijft.
+De samengestelde primaire sleutel op `memberships` dwingt af dat iemand maar één keer lid kan zijn van een organisatie. De cascades zorgen ervoor dat het verwijderen van een organisatie haar lidmaatschappen en uitnodigingen verwijdert, en dat het verwijderen van een gebruiker zijn lidmaatschappen verwijdert - wat de AVG bij wissing vereist, zoals het verwijderartikel in extra-11 beschrijft.
 
 ## Policies Volgen het Lidmaatschap
 
@@ -84,19 +84,19 @@ create policy "members read invoices" on invoices
   for select using (is_member(organisation_id));
 ```
 
-De hulpfunctie doet er om twee redenen toe. Ze houdt policies kort en gelijk over alle tabellen, wat ze reviewbaar maakt. En omdat ze `security definer` is, leest ze `memberships` zonder dat de eigen policies van die tabel naar zichzelf terugverwijzen — de fout van oneindige recursie die AI-gegenereerde policies verrassend vaak opleveren wanneer een lidmaatschapspolicy het lidmaatschap probeert te controleren.
+De hulpfunctie doet er om twee redenen toe. Ze houdt policies kort en gelijk over alle tabellen, wat ze reviewbaar maakt. En omdat ze `security definer` is, leest ze `memberships` zonder dat de eigen policies van die tabel naar zichzelf terugverwijzen - de fout van oneindige recursie die AI-gegenereerde policies verrassend vaak opleveren wanneer een lidmaatschapspolicy het lidmaatschap probeert te controleren.
 
 Indexeer `memberships (user_id, organisation_id)`. Elke policy-evaluatie op elke tabel roept deze functie aan, en zonder de index is elke aanroep een scan.
 
-Rollen voegen een tweede hulpfunctie toe — `has_role(org, 'admin')` — gebruikt voor schrijfacties die niet elk lid mag uitvoeren: mensen uitnodigen, facturatie wijzigen, records verwijderen. Het artikel over rollen en rechten in deze reeks behandelt wanneer drie rollen niet meer volstaan.
+Rollen voegen een tweede hulpfunctie toe - `has_role(org, 'admin')` - gebruikt voor schrijfacties die niet elk lid mag uitvoeren: mensen uitnodigen, facturatie wijzigen, records verwijderen. Het artikel over rollen en rechten in deze reeks behandelt wanneer drie rollen niet meer volstaan.
 
 ## Uitnodigingstokens Goed Gedaan
 
 De uitnodigingslink is een inloggegeven. Wie hem heeft, kan lid worden van een organisatie en haar data zien. Hij verdient dezelfde zorg als een link om een wachtwoord te herstellen, en het artikel over wachtwoordherstel in deze reeks beschrijft het meeste van wat er misgaat.
 
-**Willekeurig, lang en onvoorspelbaar.** Minstens 32 bytes uit een cryptografische randomgenerator. Niet het database-ID van de uitnodiging, niet het gebruikers-ID van de uitnodiger, geen oplopend getal — die komen allemaal voor in AI-gegenereerde uitnodigingsflows.
+**Willekeurig, lang en onvoorspelbaar.** Minstens 32 bytes uit een cryptografische randomgenerator. Niet het database-ID van de uitnodiging, niet het gebruikers-ID van de uitnodiger, geen oplopend getal - die komen allemaal voor in AI-gegenereerde uitnodigingsflows.
 
-**Opgeslagen als hash.** De database bevat `sha256(token)`, de e-mail bevat het token. Wie de uitnodigingstabel leest — via een back-up, een gelekte service key, een te ruime policy — kan niet gebruiken wat hij vindt.
+**Opgeslagen als hash.** De database bevat `sha256(token)`, de e-mail bevat het token. Wie de uitnodigingstabel leest - via een back-up, een gelekte service key, een te ruime policy - kan niet gebruiken wat hij vindt.
 
 **Met een vervaldatum.** Zeven dagen is een verstandige standaard voor B2B-producten. Lang genoeg voor iemand op vakantie; kort genoeg dat een oude e-mail in een gecompromitteerde mailbox waardeloos is.
 
@@ -122,21 +122,21 @@ if (inv.email.toLowerCase() !== user.email.toLowerCase())
 
 Zonder de e-mailcontrole is een uitnodiging een toegangsbewijs voor wie hem vasthoudt: één keer doorgestuurd laat hij binnen wie erop klikt. Met de controle is een doorgestuurde link nutteloos voor iedereen behalve de bedoelde ontvanger.
 
-Doe het accepteren in één transactie — lidmaatschap aanmaken, `accepted_at` zetten — zodat twee gelijktijdige klikken geen duplicaat kunnen maken of een ingetrokken uitnodiging kunnen accepteren.
+Doe het accepteren in één transactie - lidmaatschap aanmaken, `accepted_at` zetten - zodat twee gelijktijdige klikken geen duplicaat kunnen maken of een ingetrokken uitnodiging kunnen accepteren.
 
 ## De Flows Die AI-Gegenereerde Code Mist
 
-Het gelukkige pad — een beheerder nodigt een nieuw adres uit, de ontvanger meldt zich aan en wordt lid — is wat wordt gebouwd en getest. Echt gebruik raakt binnen de eerste maand aan verschillende andere.
+Het gelukkige pad - een beheerder nodigt een nieuw adres uit, de ontvanger meldt zich aan en wordt lid - is wat wordt gebouwd en getest. Echt gebruik raakt binnen de eerste maand aan verschillende andere.
 
 **De ontvanger heeft al een account.** Die moet inloggen en worden toegevoegd, niet worden gevraagd zich opnieuw aan te melden en te horen dat het e-mailadres al bestaat.
 
-**De ontvanger meldt zich aan met een ander adres.** Iemand die is uitgenodigd op `j.devries@bedrijf.nl` meldt zich aan met een persoonlijk Gmail-adres. De koppeling aan het e-mailadres weigert dat, terecht, en de foutmelding moet zeggen waarom en wat te doen — inloggen met het uitgenodigde adres, of om een nieuwe uitnodiging vragen.
+**De ontvanger meldt zich aan met een ander adres.** Iemand die is uitgenodigd op `j.devries@bedrijf.nl` meldt zich aan met een persoonlijk Gmail-adres. De koppeling aan het e-mailadres weigert dat, terecht, en de foutmelding moet zeggen waarom en wat te doen - inloggen met het uitgenodigde adres, of om een nieuwe uitnodiging vragen.
 
 **De ontvanger wordt twee keer uitgenodigd.** Een tweede uitnodiging aan hetzelfde adres voor dezelfde organisatie moet de eerste vervangen, niet een parallelle aanmaken. Een gedeeltelijke unieke index op `(organisation_id, lower(email))` voor uitnodigingen die nog openstaan, dwingt dat af.
 
 **De ontvanger is al lid.** Een bestaand lid uitnodigen moet dat melden, niet een e-mail versturen.
 
-**De uitnodiging is verlopen.** De link moet uitleggen dat ze is verlopen en dat de beheerder een nieuwe kan sturen — geen algemene fout tonen, wat elke keer een supportticket oplevert.
+**De uitnodiging is verlopen.** De link moet uitleggen dat ze is verlopen en dat de beheerder een nieuwe kan sturen - geen algemene fout tonen, wat elke keer een supportticket oplevert.
 
 **De organisatie heeft haar limiet aan gebruikers bereikt.** Hieronder besproken; de controle hoort bij het uitnodigen en opnieuw bij het accepteren.
 
@@ -152,8 +152,8 @@ Verwijderen moet vier dingen doen:
 
 1. **De lidmaatschapsrij verwijderen.** Elke policy die het lidmaatschap controleert, weigert dan bij het volgende verzoek de toegang.
 2. **Zijn sessie voor die organisatie beëindigen**, of alle sessies als hij nergens anders bij hoort. Supabase staat toe een gebruiker vanaf de server uit te loggen; gebruik dat.
-3. **Alles intrekken wat persoonlijk van hem was** — API-sleutels die hij aanmaakte, integraties die hij koppelde, agendafeeds met zijn token in de URL.
-4. **Het vastleggen** — wie wie verwijderde, wanneer — in het auditlog.
+3. **Alles intrekken wat persoonlijk van hem was** - API-sleutels die hij aanmaakte, integraties die hij koppelde, agendafeeds met zijn token in de URL.
+4. **Het vastleggen** - wie wie verwijderde, wanneer - in het auditlog.
 
 En één ding mag verwijderen niet doen: het werk wissen dat hij maakte. Facturen die een oud-medewerker uitschreef, horen nog steeds bij de organisatie. Verwijs naar de gebruiker via zijn ID, houd de rij, en toon "voormalig lid" waar zijn naam zou staan. Iemands bijdragen wissen omdat hij is vertrokken, is een dataverliesincident dat op zijn beurt wacht.
 
@@ -182,14 +182,14 @@ Geef eigenaren daarna een bewuste manier om over te dragen: eerst iemand anders 
 
 Zodra één persoon bij twee organisaties kan horen, moet elk scherm weten in welke hij werkt.
 
-De veelgemaakte fout is de actieve organisatie alleen in de browser bij te houden — in `localStorage` of een React-context — en haar bij elk verzoek mee te sturen als parameter die de server vertrouwt. Een gebruiker die die parameter aanpast, vraagt om de data van een andere organisatie, en het enige wat tussen hem en die data staat, is de policy. Kloppen de policies, dan krijgt hij niets; maar "de policies kloppen" is precies de aanname waar het IDOR-artikel in deze reeks over gaat.
+De veelgemaakte fout is de actieve organisatie alleen in de browser bij te houden - in `localStorage` of een React-context - en haar bij elk verzoek mee te sturen als parameter die de server vertrouwt. Een gebruiker die die parameter aanpast, vraagt om de data van een andere organisatie, en het enige wat tussen hem en die data staat, is de policy. Kloppen de policies, dan krijgt hij niets; maar "de policies kloppen" is precies de aanname waar het IDOR-artikel in deze reeks over gaat.
 
 De robuuste opzet:
 
 - De actieve organisatie wordt gekozen in de interface en meegestuurd met verzoeken.
-- De server, of de policy, controleert bij elk verzoek het lidmaatschap van die organisatie — en vertrouwt nooit alleen op de parameter.
+- De server, of de policy, controleert bij elk verzoek het lidmaatschap van die organisatie - en vertrouwt nooit alleen op de parameter.
 - De organisatiewisselaar toont alleen organisaties waarvan de gebruiker lid is, gelezen uit `memberships`, niet uit een gecachete lijst.
-- URL's bevatten de organisatie waar dat helpt — `/app/org/{id}/invoices` — zodat een link die collega's delen de juiste context opent, en een link die wordt geopend door iemand zonder lidmaatschap duidelijk "geen toegang" toont in plaats van een lege pagina.
+- URL's bevatten de organisatie waar dat helpt - `/app/org/{id}/invoices` - zodat een link die collega's delen de juiste context opent, en een link die wordt geopend door iemand zonder lidmaatschap duidelijk "geen toegang" toont in plaats van een lege pagina.
 
 ## Gebruikerslimieten, Facturatie en Domeinen
 
@@ -197,9 +197,9 @@ Lidmaatschap is waar prijzen per gebruiker de database raken.
 
 **Gebruikerslimieten** worden op de server op twee momenten afgedwongen: wanneer een uitnodiging wordt aangemaakt, en wanneer ze wordt geaccepteerd. Alleen bij het uitnodigen controleren laat een organisatie twintig uitnodigingen aanmaken terwijl ze onder de limiet zit, en alle twintig accepteren. Tel openstaande uitnodigingen mee voor de limiet, of controleer opnieuw bij het accepteren.
 
-**Facturatiewijzigingen** volgen lidmaatschapswijzigingen. Rekent u per gebruiker, dan moet het toevoegen of verwijderen van een lid de hoeveelheid in het abonnement bijwerken — via de API van de aanbieder, met pro rata zoals beschreven in het artikel over terugbetalingen en pro rata in deze reeks — in plaats van te wachten tot iemand het bij de verlenging opmerkt.
+**Facturatiewijzigingen** volgen lidmaatschapswijzigingen. Rekent u per gebruiker, dan moet het toevoegen of verwijderen van een lid de hoeveelheid in het abonnement bijwerken - via de API van de aanbieder, met pro rata zoals beschreven in het artikel over terugbetalingen en pro rata in deze reeks - in plaats van te wachten tot iemand het bij de verlenging opmerkt.
 
-**Lid worden op basis van domein** — iedereen met een adres op `@bedrijf.nl` mag zonder uitnodiging lid worden — is handig voor grotere klanten en standaard gevaarlijk. Bied het alleen aan wanneer de organisatie het eigendom van het domein heeft geverifieerd, nooit voor gratis e-mailaanbieders, en laat gebruikers die zo binnenkomen als lid binnenkomen, niet als beheerder.
+**Lid worden op basis van domein** - iedereen met een adres op `@bedrijf.nl` mag zonder uitnodiging lid worden - is handig voor grotere klanten en standaard gevaarlijk. Bied het alleen aan wanneer de organisatie het eigendom van het domein heeft geverifieerd, nooit voor gratis e-mailaanbieders, en laat gebruikers die zo binnenkomen als lid binnenkomen, niet als beheerder.
 
 ## Leg Vast Wat Lidmaatschap Verandert
 
@@ -214,18 +214,18 @@ Toon de eigen gebeurtenissen van een organisatie aan haar beheerders. Een pagina
 Voor een product dat al in productie draait met `profiles.organisation_id`, is de migratie mechanisch als ze in de juiste volgorde gebeurt.
 
 1. Maak `organisations`, `memberships` en `invitations` aan naast de bestaande kolom.
-2. Vul aan: één lidmaatschap per bestaand profiel, met de rol die het feitelijk had — meestal eigenaar voor degene die zich aanmeldde, lid voor iedereen die later werd toegevoegd.
+2. Vul aan: één lidmaatschap per bestaand profiel, met de rol die het feitelijk had - meestal eigenaar voor degene die zich aanmeldde, lid voor iedereen die later werd toegevoegd.
 3. Herschrijf elke policy zodat ze `is_member()` gebruikt in plaats van te vergelijken met de profielkolom. Dit is de grootste stap; maak eerst een lijst van elke tabel.
 4. Pas de frontend aan zodat die de actieve organisatie uit de lidmaatschappen leest.
 5. Laat beide een periode naast elkaar draaien, en verwijder de kolom zodra niets haar nog leest.
 
-Test het herschrijven van de policies met twee accounts in twee organisaties, waarbij elke lees- en schrijfactie over de grens heen wordt geprobeerd — de test tussen accounts die het IDOR-artikel in deze reeks aanbeveelt. Het is de enige betrouwbare manier om te weten dat de nieuwe policies standhouden.
+Test het herschrijven van de policies met twee accounts in twee organisaties, waarbij elke lees- en schrijfactie over de grens heen wordt geprobeerd - de test tussen accounts die het IDOR-artikel in deze reeks aanbeveelt. Het is de enige betrouwbare manier om te weten dat de nieuwe policies standhouden.
 
 ## Dit Inrichten
 
-Voor een Lovable-product dat teams toevoegt, is dit doorgaans twee tot vier dagen: aparte tabellen voor organisaties, lidmaatschappen en uitnodigingen met de rol op het lidmaatschap, row level security herschreven rond een `security definer`-functie voor lidmaatschap met de bijbehorende index, uitnodigingstokens die willekeurig, gehasht, verlopend, eenmalig, intrekbaar en gekoppeld aan het uitgenodigde e-mailadres zijn, accepteren in één transactie, de randgevallen afgehandeld — bestaande accounts, afwijkende adressen, duplicaten, verlopen — verwijderen dat het lidmaatschap wist, sessies beëindigt en persoonlijke inloggegevens intrekt terwijl het werk van de persoon behouden blijft, een databasebewaking tegen organisaties zonder eigenaar, door de server gecontroleerd wisselen van organisatie, gebruikerslimieten afgedwongen bij uitnodigen en accepteren, de hoeveelheid in de facturatie gelijk gehouden, en lidmaatschapsgebeurtenissen weggeschreven naar een auditlog.
+Voor een Lovable-product dat teams toevoegt, is dit doorgaans twee tot vier dagen: aparte tabellen voor organisaties, lidmaatschappen en uitnodigingen met de rol op het lidmaatschap, row level security herschreven rond een `security definer`-functie voor lidmaatschap met de bijbehorende index, uitnodigingstokens die willekeurig, gehasht, verlopend, eenmalig, intrekbaar en gekoppeld aan het uitgenodigde e-mailadres zijn, accepteren in één transactie, de randgevallen afgehandeld - bestaande accounts, afwijkende adressen, duplicaten, verlopen - verwijderen dat het lidmaatschap wist, sessies beëindigt en persoonlijke inloggegevens intrekt terwijl het werk van de persoon behouden blijft, een databasebewaking tegen organisaties zonder eigenaar, door de server gecontroleerd wisselen van organisatie, gebruikerslimieten afgedwongen bij uitnodigen en accepteren, de hoeveelheid in de facturatie gelijk gehouden, en lidmaatschapsgebeurtenissen weggeschreven naar een auditlog.
 
-LaunchStudio bouwt dit wanneer een product voor één gebruiker zijn eerste teamklant krijgt. De engineers zijn van Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio bouwt dit wanneer een product voor één gebruiker zijn eerste teamklant krijgt. De engineers zijn van Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons wat het verwijderen van een gebruiker in uw product werkelijk doet](https://launchstudio.eu/nl/#contact).
 
@@ -235,7 +235,7 @@ LaunchStudio bouwt dit wanneer een product voor één gebruiker zijn eerste team
 
 Joost Verhagen bouwde Werkbonapp in Lovable: digitale werkbonnen voor installatiebedrijven, gebruikt door 48 bedrijven met zo'n 600 monteurs.
 
-Teamondersteuning was toegevoegd met een uitnodigingsknop en een kolom `organisation_id` op elk profiel. De uitnodigingslink bevatte het ID van de organisatie en verliep nooit; iedereen die hem opende en zich aanmeldde, werd lid van dat bedrijf. Een monteur verwijderen haalde hem uit de teamlijst en zette een vlag, maar liet de kolom — en zijn toegang via de API — onaangeroerd.
+Teamondersteuning was toegevoegd met een uitnodigingsknop en een kolom `organisation_id` op elk profiel. De uitnodigingslink bevatte het ID van de organisatie en verliep nooit; iedereen die hem opende en zich aanmeldde, werd lid van dat bedrijf. Een monteur verwijderen haalde hem uit de teamlijst en zette een vlag, maar liet de kolom - en zijn toegang via de API - onaangeroerd.
 
 Twee dingen brachten het probleem in dezelfde maand aan het licht. Een onderaannemer die voor twee installateurs werkte, kon niet aan de tweede worden toegevoegd omdat een profiel maar één organisatie kon bevatten, en had als omweg een tweede e-mailadres gekregen. En een installateur merkte dat werkbonnen werden bekeken door een account dat ze vier maanden eerder hadden verwijderd.
 
@@ -244,9 +244,9 @@ Drie werkdagen: tabellen voor lidmaatschappen en uitnodigingen aangemaakt, met a
 **Resultaat:** bij het overzetten werden 37 verwijderde monteurs bij 11 bedrijven gevonden die nog werkende toegang hadden, allemaal op de eerste dag ingetrokken; de logs toonden dat vier van hen de toegang na hun verwijdering hadden gebruikt. Onderaannemers kunnen nu met één login bij meerdere installateurs horen, en twee installateurs stapten binnen de maand over op grotere abonnementen omdat onderaannemers toevoegen mogelijk was geworden.
 
 > *"Iemand verwijderen haalde hem van het scherm en verder niets. Zevenendertig mensen die waren vertrokken, hadden nog toegang, en vier van hen hadden die gebruikt."*
-> — **Joost Verhagen, Oprichter, Werkbonapp (Hengelo)**
+> - **Joost Verhagen, Oprichter, Werkbonapp (Hengelo)**
 
-**Kosten & Doorlooptijd:** €3.400 (model voor lidmaatschappen en uitnodigingen met overzetting, herschreven policies over 17 tabellen met tests tussen organisaties, veilige uitnodigingstokens, verwijderen met intrekking van sessies, bewaking van de laatste eigenaar, afdwingen van gebruikerslimieten, auditlog voor lidmaatschap) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (model voor lidmaatschappen en uitnodigingen met overzetting, herschreven policies over 17 tabellen met tests tussen organisaties, veilige uitnodigingstokens, verwijderen met intrekking van sessies, bewaking van de laatste eigenaar, afdwingen van gebruikerslimieten, auditlog voor lidmaatschap) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -260,7 +260,7 @@ Een lang willekeurig token dat alleen als hash wordt opgeslagen, een geldigheid 
 
 ### Wat moet het verwijderen van een teamlid doen?
 
-Het lidmaatschap wissen, zijn sessies beëindigen, persoonlijke inloggegevens zoals API-sleutels en agendatokens intrekken, en de wijziging vastleggen — terwijl het werk dat hij maakte aan hem toegeschreven blijft.
+Het lidmaatschap wissen, zijn sessies beëindigen, persoonlijke inloggegevens zoals API-sleutels en agendatokens intrekken, en de wijziging vastleggen - terwijl het werk dat hij maakte aan hem toegeschreven blijft.
 
 ### Hoe voorkom ik de fout van oneindige recursie in lidmaatschapspolicies?
 
@@ -268,7 +268,7 @@ Zet de lidmaatschapscontrole in een `security definer`-functie en roep die aan v
 
 ### Hoe moeten gebruikerslimieten worden afgedwongen?
 
-Op de server, zowel bij het aanmaken als bij het accepteren van een uitnodiging, met openstaande uitnodigingen meegeteld — en met de hoeveelheid in de facturatie bijgewerkt bij elke wijziging in het lidmaatschap.
+Op de server, zowel bij het aanmaken als bij het accepteren van een uitnodiging, met openstaande uitnodigingen meegeteld - en met de hoeveelheid in de facturatie bijgewerkt bij elke wijziging in het lidmaatschap.
 
 <script type="application/ld+json">
 {
@@ -280,7 +280,7 @@ Op de server, zowel bij het aanmaken als bij het accepteren van een uitnodiging,
       "name": "Waarom een tabel met lidmaatschappen in plaats van een organisatiekolom op profielen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mensen horen bij meerdere organisaties, rollen horen bij de relatie, en openstaande uitnodigingen hebben een eigen record nodig — een kolom ondersteunt geen van deze."
+        "text": "Mensen horen bij meerdere organisaties, rollen horen bij de relatie, en openstaande uitnodigingen hebben een eigen record nodig - een kolom ondersteunt geen van deze."
       }
     },
     {

@@ -6,7 +6,7 @@
 ❌ **Costly Enforcement & Downtime Penalties:** Failed migrations and regulatory audits impose immediate financial penalties, data loss, and operational halts.
 
 **The Manifera Solution:**
-✅ **Parallel-run the new cloud WMS alongside the existing on-premise system before cutover:** validating that real warehouse operations — actual picks, actual scans, actual shipments — produce matching results in both systems before the old system is retired, rather than trusting a staging-environment test alone.
+✅ **Parallel-run the new cloud WMS alongside the existing on-premise system before cutover:** validating that real warehouse operations - actual picks, actual scans, actual shipments - produce matching results in both systems before the old system is retired, rather than trusting a staging-environment test alone.
 ✅ **Migrate in careful phases by warehouse zone or function, not the whole operation all at once:** containing any unexpected issue to a limited, contained area rather than risking the entire warehouse's operations on a single cutover event.
 ✅ **Schedule the final cutover during genuinely low-activity windows:** informed directly by real operational data about specifically when order volume is actually lowest, rather than a generically assumed "off-hours" time that may still carry meaningful warehouse activity.
 

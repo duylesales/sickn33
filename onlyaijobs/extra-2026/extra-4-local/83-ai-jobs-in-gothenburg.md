@@ -89,7 +89,7 @@ Gothenburg is known for its friendly atmosphere, canals, archipelago islands rea
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Gothenburg you will find few or no local vacancies there today. Use Swedish job portals, company career pages and AI Sweden and Chalmers announcements as primary sources. OnlyAIJobs is useful for comparing Gothenburg with the Netherlands — where automotive, engineering and logistics employers such as Holland Innovative, VINCI Energies and Rexel list AI roles — and as a method: Gothenburg's employers are spread across Torslanda, Lindholmen, Mölndal and the port, so the exact address determines your commute. Swedish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Gothenburg you will find few or no local vacancies there today. Use Swedish job portals, company career pages and AI Sweden and Chalmers announcements as primary sources. OnlyAIJobs is useful for comparing Gothenburg with the Netherlands - where automotive, engineering and logistics employers such as Holland Innovative, VINCI Energies and Rexel list AI roles - and as a method: Gothenburg's employers are spread across Torslanda, Lindholmen, Mölndal and the port, so the exact address determines your commute. Swedish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Autonomous Driving Data at Scale
 
@@ -149,7 +149,7 @@ The shift to electric vehicles has transformed automotive engineering in Gothenb
 
 ## The Port and Sustainable Logistics
 
-The Port of Gothenburg handles a large share of Scandinavian container traffic and works on digitalisation and emissions reduction. Logistics companies optimise rail shuttles to inland terminals, truck routing and warehouse operations. Data scientists support forecasting, planning and sustainability reporting — practical problems with measurable effects on costs and emissions.
+The Port of Gothenburg handles a large share of Scandinavian container traffic and works on digitalisation and emissions reduction. Logistics companies optimise rail shuttles to inland terminals, truck routing and warehouse operations. Data scientists support forecasting, planning and sustainability reporting - practical problems with measurable effects on costs and emissions.
 
 ## Startups and Lindholmen
 
@@ -161,7 +161,7 @@ Automotive safety, healthcare and public-sector AI all require careful governanc
 
 ## The Changing Automotive Landscape
 
-The automotive industry is going through profound change — electrification, software-defined vehicles, new competitors and cost pressure — and Gothenburg feels these shifts directly. Demand for software, data and AI skills remains significant as manufacturers build in-house capabilities, but restructuring can affect individual units and projects. When evaluating an automotive role, ask how central the team is to the company's strategy, how it is funded and how its roadmap has evolved. Building experience across automotive, industry, energy or life sciences makes your career more resilient in a region so closely associated with vehicles, and Gothenburg's diverse employer base makes such moves possible without relocating.
+The automotive industry is going through profound change - electrification, software-defined vehicles, new competitors and cost pressure - and Gothenburg feels these shifts directly. Demand for software, data and AI skills remains significant as manufacturers build in-house capabilities, but restructuring can affect individual units and projects. When evaluating an automotive role, ask how central the team is to the company's strategy, how it is funded and how its roadmap has evolved. Building experience across automotive, industry, energy or life sciences makes your career more resilient in a region so closely associated with vehicles, and Gothenburg's diverse employer base makes such moves possible without relocating.
 
 ## Settling In
 

@@ -52,7 +52,7 @@ In software architecture, this translates to a safe, incremental migration:
 Instead of rewriting the whole app, the Architect places an API Gateway (or a routing layer like NGINX) in front of the legacy PHP monolith. Initially, 100% of user traffic is routed straight through the Gateway to the old monolith. The users notice no change.
 
 ### 2. Decoupling the First Microservice (The Roots)
-The engineering team identifies one specific, isolated piece of functionality—for example, the "Email Notification Service." 
+The engineering team identifies one specific, isolated piece of functionality - for example, the "Email Notification Service." 
 The team builds a brand-new, modern Microservice (e.g., in Node.js) that *only* handles email notifications. They rigorously test it. 
 
 ### 3. Routing the Traffic (The Strangulation)

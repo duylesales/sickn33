@@ -25,7 +25,7 @@ Content Format: Career Guide
 
 ## Waarom het juist voor AI/ML-werk meer uitmaakt
 
-Veel oprecht nuttig AI-werk gebeurt in ongeplande, terloopse gesprekken — een data engineer die opvangt waarom de invoer van een model is veranderd, een productmanager die een randgeval persoonlijk verheldert voordat het een bug in productie wordt. Volledig remote teams die dit goed doen, hebben doorgaans bewuste structuren gebouwd om dat te vervangen — gedocumenteerde beslissingen, opgenomen doorloopsessies, expliciete asynchrone gewoonten. Teams die zichzelf remote-vriendelijk noemen zonder die structuren te hebben gebouwd, vallen vaak stilletjes terug op "wie op kantoor is, wordt eerst gehoord", wat remote teamleden benadeelt zonder dat iemand dat bedoelt.
+Veel oprecht nuttig AI-werk gebeurt in ongeplande, terloopse gesprekken - een data engineer die opvangt waarom de invoer van een model is veranderd, een productmanager die een randgeval persoonlijk verheldert voordat het een bug in productie wordt. Volledig remote teams die dit goed doen, hebben doorgaans bewuste structuren gebouwd om dat te vervangen - gedocumenteerde beslissingen, opgenomen doorloopsessies, expliciete asynchrone gewoonten. Teams die zichzelf remote-vriendelijk noemen zonder die structuren te hebben gebouwd, vallen vaak stilletjes terug op "wie op kantoor is, wordt eerst gehoord", wat remote teamleden benadeelt zonder dat iemand dat bedoelt.
 
 ## Wat je daadwerkelijk moet vragen, voorbij "is dit remote?"
 
@@ -37,7 +37,7 @@ Veel oprecht nuttig AI-werk gebeurt in ongeplande, terloopse gesprekken — een 
 
 ## Waar te beginnen
 
-Filter niet alleen op het label "remote". Stel de drie bovenstaande vragen in een eerste gesprek — de werkelijke antwoorden voorspellen je dagelijkse ervaring veel beter dan het label dat een vacature toevallig koos.
+Filter niet alleen op het label "remote". Stel de drie bovenstaande vragen in een eerste gesprek - de werkelijke antwoorden voorspellen je dagelijkse ervaring veel beter dan het label dat een vacature toevallig koos.
 
 Bekijk actuele AI-, machine learning- en datarollen door heel Nederland op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), en lees de daadwerkelijke werkafspraken per vacature in plaats van op één label te vertrouwen.
 
@@ -45,7 +45,7 @@ Bekijk actuele AI-, machine learning- en datarollen door heel Nederland op [only
 
 **"Loop me door hoe vorige week een technische beslissing tot stand kwam."** Het antwoord vertelt je of beslissingen in een doorzoekbaar, asynchroon-vriendelijk formaat leven of in iemands herinnering aan een gangpadgesprek.
 
-**"Wat is op dit moment de feitelijke verdeling tussen kantoor- en remote teamleden?"** Niet het beleid — de huidige realiteit. Een team dat nominaal remote-vriendelijk is maar voor 90% gecolokeerd, gedraagt zich als een gecolokeerd team met een uitzondering.
+**"Wat is op dit moment de feitelijke verdeling tussen kantoor- en remote teamleden?"** Niet het beleid - de huidige realiteit. Een team dat nominaal remote-vriendelijk is maar voor 90% gecolokeerd, gedraagt zich als een gecolokeerd team met een uitzondering.
 
 **"Is er een verplicht overlapvenster, en hoe is dat vastgesteld?"** Een doordacht antwoord suggereert dat het team daadwerkelijk met gedistribueerde samenwerking heeft geworsteld; een vaag antwoord suggereert dat het nog niet is beproefd.
 
@@ -61,23 +61,23 @@ Bekijk actuele AI-, machine learning- en datarollen door heel Nederland op [only
 
 ## Waarom AI-teams hier meer mee worstelen dan andere functies
 
-De remote workflow van een salesteam is industriebreed goed begrepen; die van een AI-team niet, omdat zo veel nuttige informatie — waarom een dataset eruitziet zoals hij eruitziet, wat een model vorige week precies fout deed, welk randgeval iemand terloops opmerkte — informeel reist, tenzij een team bewust structuren heeft gebouwd om die vast te leggen. Teams die dat nog niet hebben gedaan, merken het gat vaak pas als een remote aanstelling stilletjes achterop raakt op context die nooit in een document belandde.
+De remote workflow van een salesteam is industriebreed goed begrepen; die van een AI-team niet, omdat zo veel nuttige informatie - waarom een dataset eruitziet zoals hij eruitziet, wat een model vorige week precies fout deed, welk randgeval iemand terloops opmerkte - informeel reist, tenzij een team bewust structuren heeft gebouwd om die vast te leggen. Teams die dat nog niet hebben gedaan, merken het gat vaak pas als een remote aanstelling stilletjes achterop raakt op context die nooit in een document belandde.
 
 ## Een doorkijkje: hoe een remote teamlid stilletjes achterop raakt
 
-Stel je een remote data scientist voor die aan een gedeeld project werkt met twee collega's op kantoor. Dat kantoorduo heeft een gesprek van vijf minuten op de gang over een randgeval dat ze in de data opmerkten, spreekt een snelle oplossing af en gaat verder — niemand documenteert het, want het voelde te klein om op te schrijven. De remote collega is niet in de ruimte, hoort het niet, en bouwt later voort op de oude, inmiddels achterhaalde aanname, met werk dat opnieuw moet. Gebeurt dat één keer, dan is het pech. Gebeurt het wekelijks, maandenlang, dan is de remote collega stilletjes en onzichtbaar benadeeld — niet door iemands kwade wil, maar door de simpele fysica van wie er toevallig in de ruimte is wanneer kleine beslissingen informeel vallen.
+Stel je een remote data scientist voor die aan een gedeeld project werkt met twee collega's op kantoor. Dat kantoorduo heeft een gesprek van vijf minuten op de gang over een randgeval dat ze in de data opmerkten, spreekt een snelle oplossing af en gaat verder - niemand documenteert het, want het voelde te klein om op te schrijven. De remote collega is niet in de ruimte, hoort het niet, en bouwt later voort op de oude, inmiddels achterhaalde aanname, met werk dat opnieuw moet. Gebeurt dat één keer, dan is het pech. Gebeurt het wekelijks, maandenlang, dan is de remote collega stilletjes en onzichtbaar benadeeld - niet door iemands kwade wil, maar door de simpele fysica van wie er toevallig in de ruimte is wanneer kleine beslissingen informeel vallen.
 
 ## Een misverstand over wiens verantwoordelijkheid dit is
 
-Het is verleidelijk dit te framen als het probleem van de remote medewerker — die zou meer moeten vragen, meer context moeten najagen. In de praktijk behandelen teams die remote werk succesvol gelijkwaardig maken dit als een structurele verantwoordelijkheid van het hele team, niet als individuele last voor wie toevallig remote is: een gewoonte om beslissingen op te schrijven ongeacht of iedereen in de ruimte dat nodig vindt, juist omdat "nodig" anders wordt beoordeeld door mensen die erbij waren dan door mensen die dat niet waren.
+Het is verleidelijk dit te framen als het probleem van de remote medewerker - die zou meer moeten vragen, meer context moeten najagen. In de praktijk behandelen teams die remote werk succesvol gelijkwaardig maken dit als een structurele verantwoordelijkheid van het hele team, niet als individuele last voor wie toevallig remote is: een gewoonte om beslissingen op te schrijven ongeacht of iedereen in de ruimte dat nodig vindt, juist omdat "nodig" anders wordt beoordeeld door mensen die erbij waren dan door mensen die dat niet waren.
 
 ## Veelgestelde vragen
 
 ### (Scenario: kandidaat die alleen op het label "remote" afgaat) Kan ik het label "remote-vriendelijk" in een vacature op waarde schatten?
-Niet volledig — het label dekt een breed scala aan werkelijke afspraken, van volledig gedistribueerde teams tot hybride opzetten met lichte flexibele taal. Vraag direct naar documentatiepraktijken en de werkelijke verhouding kantoor-remote.
+Niet volledig - het label dekt een breed scala aan werkelijke afspraken, van volledig gedistribueerde teams tot hybride opzetten met lichte flexibele taal. Vraag direct naar documentatiepraktijken en de werkelijke verhouding kantoor-remote.
 
 ### (Scenario: kandidaat die een remote rol accepteerde en zich benadeeld voelde) Waarom voelen remote teamleden soms alsof ze beslissingen missen?
-Teams die de informele, fysieke informatiestroom niet bewust hebben herbouwd — gedocumenteerde beslissingen, opgenomen doorloopsessies, asynchrone gewoonten — vallen vaak terug op collega's op kantoor die eerst worden gehoord, ook zonder dat iemand remote leden wil benadelen.
+Teams die de informele, fysieke informatiestroom niet bewust hebben herbouwd - gedocumenteerde beslissingen, opgenomen doorloopsessies, asynchrone gewoonten - vallen vaak terug op collega's op kantoor die eerst worden gehoord, ook zonder dat iemand remote leden wil benadelen.
 
 ### (Scenario: kandidaat die bedenkt wat te vragen in een gesprek) Wat moet ik vragen voorbij "is deze rol remote of hybride?"
 Hoe technische beslissingen worden gedocumenteerd, wat vandaag de feitelijke verhouding kantoor-remote is, en of er een verplichte overlap in kernuren geldt. Die voorspellen de dagelijkse ervaring beter dan het label alleen.
@@ -86,7 +86,7 @@ Hoe technische beslissingen worden gedocumenteerd, wat vandaag de feitelijke ver
 Een wezenlijk deel van nuttig AI-werk gebeurt in ongeplande, terloopse gesprekken over datakwaliteit, randgevallen en modelgedrag. Remote teams die hier goed mee omgaan, hebben expliciete structuren gebouwd; teams die dat niet hebben, benadelen remote leden stilletjes.
 
 ### (Scenario: kandidaat die een team beoordeelt dat zegt "remote-first" te zijn) Is het label "remote-first" een betrouwbaar signaal dat een team echt gedistribueerd is?
-Het is een redelijk startsignaal maar geen garantie — verifieer het met directe vragen over documentatiegewoonten en de werkelijke samenstelling van het team in plaats van op het label te vertrouwen.
+Het is een redelijk startsignaal maar geen garantie - verifieer het met directe vragen over documentatiegewoonten en de werkelijke samenstelling van het team in plaats van op het label te vertrouwen.
 
 <script type="application/ld+json">
 {

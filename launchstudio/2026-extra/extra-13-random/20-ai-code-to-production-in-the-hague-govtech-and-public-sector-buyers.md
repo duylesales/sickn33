@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Code to Production in The Hague: GovTech Startups and Public-Sector Buyers",
-  "description": "GovTech founders in The Hague face buyers with formal security, accessibility and data requirements. This article explains what public-sector customers ask for when AI code goes to production — BIO, accessibility, hosting, penetration tests and exit plans — and how to prepare.",
+  "description": "GovTech founders in The Hague face buyers with formal security, accessibility and data requirements. This article explains what public-sector customers ask for when AI code goes to production - BIO, accessibility, hosting, penetration tests and exit plans - and how to prepare.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-20",
@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The Hague is where Dutch government lives, and it has produced a steady stream of GovTech founders: former civil servants, policy advisers and consultants who saw a problem from the inside and built a tool for it. More and more of those tools start as AI code — a Windsurf or Cursor project assembled quickly to show a municipality what is possible. The pilot goes well. Then procurement sends a questionnaire, and moving that AI code to production becomes a very specific exercise.
+The Hague is where Dutch government lives, and it has produced a steady stream of GovTech founders: former civil servants, policy advisers and consultants who saw a problem from the inside and built a tool for it. More and more of those tools start as AI code - a Windsurf or Cursor project assembled quickly to show a municipality what is possible. The pilot goes well. Then procurement sends a questionnaire, and moving that AI code to production becomes a very specific exercise.
 
 Public-sector buyers are not harder to please than other customers; they are more explicit. They write down what they need. That is good news, because it means you can prepare.
 
@@ -30,12 +30,12 @@ Public-sector buyers are not harder to please than other customers; they are mor
 
 Questionnaires vary, but Dutch municipalities, provinces, water boards and agencies commonly ask about the same areas:
 
-- **Information security** — often mapped to the BIO (Baseline Informatiebeveiliging Overheid), the government's information security baseline based on ISO 27002.
-- **Data protection** — a processing agreement, processor list, data location, retention and a data protection impact assessment if the processing is high-risk.
-- **Accessibility** — government websites and apps must meet accessibility requirements based on WCAG, and buyers increasingly ask suppliers for an accessibility statement.
-- **Testing** — evidence of security testing, often a recent penetration test for anything facing citizens.
-- **Continuity** — backups, recovery times, incident processes and what happens if your company stops.
-- **Exit** — how the buyer gets their data back in a usable format if the contract ends.
+- **Information security** - often mapped to the BIO (Baseline Informatiebeveiliging Overheid), the government's information security baseline based on ISO 27002.
+- **Data protection** - a processing agreement, processor list, data location, retention and a data protection impact assessment if the processing is high-risk.
+- **Accessibility** - government websites and apps must meet accessibility requirements based on WCAG, and buyers increasingly ask suppliers for an accessibility statement.
+- **Testing** - evidence of security testing, often a recent penetration test for anything facing citizens.
+- **Continuity** - backups, recovery times, incident processes and what happens if your company stops.
+- **Exit** - how the buyer gets their data back in a usable format if the contract ends.
 
 An AI prototype usually has none of this documented and some of it missing entirely.
 
@@ -43,13 +43,13 @@ An AI prototype usually has none of this documented and some of it missing entir
 
 Behind the paperwork sit concrete technical requirements. The ones AI-generated GovTech prototypes most often lack:
 
-**Role-based access that matches the organisation.** Municipal users have roles — case handler, team lead, administrator, auditor — with different rights. AI-built apps often have "user" and "admin," enforced partly in the interface.
+**Role-based access that matches the organisation.** Municipal users have roles - case handler, team lead, administrator, auditor - with different rights. AI-built apps often have "user" and "admin," enforced partly in the interface.
 
 **Audit logging.** Public bodies must be able to account for who viewed and changed data. An append-only log of access to personal data is frequently a hard requirement.
 
 **Authentication suited to government users.** Many buyers want single sign-on with their own identity provider (often via SAML or OpenID Connect) and multi-factor authentication for administrators. Citizen-facing services may involve DigiD or eHerkenning, which bring their own requirements and assessments.
 
-**Data minimisation and retention.** Personal data should be collected only where necessary and deleted according to a defined schedule — something AI-generated schemas never include.
+**Data minimisation and retention.** Personal data should be collected only where necessary and deleted according to a defined schedule - something AI-generated schemas never include.
 
 **Hosting and location.** Buyers typically want data in the EU and sometimes in the Netherlands, with clarity about every sub-processor.
 
@@ -103,7 +103,7 @@ Dutch government bodies are required to make their websites and apps accessible,
 
 ## Data Minimisation and Retention for Citizen Data
 
-Public services handle citizens' data under strict expectations. Collect only what the service needs; strip metadata from photos (locations of reporters' homes, for instance); separate identifying data from operational data where possible; and agree retention periods with the buyer, then enforce them automatically. For services that may involve sensitive situations — complaints about neighbours, reports of unsafe situations — consider how the reporter's identity is protected from the person or organisation being reported.
+Public services handle citizens' data under strict expectations. Collect only what the service needs; strip metadata from photos (locations of reporters' homes, for instance); separate identifying data from operational data where possible; and agree retention periods with the buyer, then enforce them automatically. For services that may involve sensitive situations - complaints about neighbours, reports of unsafe situations - consider how the reporter's identity is protected from the person or organisation being reported.
 
 ## An Exit Plan Buyers Can Accept
 
@@ -111,15 +111,15 @@ Public buyers must be able to continue if a supplier stops. An exit plan describ
 
 ## Procurement Timing and Thresholds
 
-Public procurement follows rules that depend on contract value. Smaller contracts can often be awarded through simpler procedures, while larger ones require formal tenders with published criteria. For a young GovTech company, early contracts are frequently pilots or small assignments below European thresholds. Use them to build references, documentation and evidence — a restore test, an accessibility statement, a clean penetration test — that you will need when larger tenders arrive. Each successful small contract makes the next procurement dossier easier to complete.
+Public procurement follows rules that depend on contract value. Smaller contracts can often be awarded through simpler procedures, while larger ones require formal tenders with published criteria. For a young GovTech company, early contracts are frequently pilots or small assignments below European thresholds. Use them to build references, documentation and evidence - a restore test, an accessibility statement, a clean penetration test - that you will need when larger tenders arrive. Each successful small contract makes the next procurement dossier easier to complete.
 
 ## Building Trust Before the First Contract
 
-Public buyers are cautious with young suppliers, for good reasons: continuity, security and accountability. Several steps build trust before procurement starts. Invite the buyer's information security officer and privacy officer into the pilot early, rather than surprising them at contract time. Share your security mapping and processor list proactively. Offer a named contact for incidents. Keep a changelog of releases so the buyer can see how the product evolves. And be honest about limitations — a documented gap with a plan is far more acceptable to a public body than a claim that turns out to be untrue.
+Public buyers are cautious with young suppliers, for good reasons: continuity, security and accountability. Several steps build trust before procurement starts. Invite the buyer's information security officer and privacy officer into the pilot early, rather than surprising them at contract time. Share your security mapping and processor list proactively. Offer a named contact for incidents. Keep a changelog of releases so the buyer can see how the product evolves. And be honest about limitations - a documented gap with a plan is far more acceptable to a public body than a claim that turns out to be untrue.
 
 ## Designing for Civil Servants' Workflows
 
-Case handlers and team leads use GovTech tools all day, often alongside several other systems. Production readiness includes workflow details that AI prototypes rarely get right: bulk actions with confirmation and undo, keyboard shortcuts for frequent tasks, exports in formats the organisation's other systems accept, clear status histories for each case, and handover between colleagues without losing context. Watching two or three civil servants use the pilot for an hour reveals most of these needs quickly — and fixing them turns a tool people tolerate into one they ask for.
+Case handlers and team leads use GovTech tools all day, often alongside several other systems. Production readiness includes workflow details that AI prototypes rarely get right: bulk actions with confirmation and undo, keyboard shortcuts for frequent tasks, exports in formats the organisation's other systems accept, clear status histories for each case, and handover between colleagues without losing context. Watching two or three civil servants use the pilot for an hour reveals most of these needs quickly - and fixing them turns a tool people tolerate into one they ask for.
 
 ## Security Testing Cadence After Launch
 
@@ -133,15 +133,15 @@ In GovTech projects, clarity about roles prevents most friction. The buyer is us
 
 LaunchStudio's work for GovTech founders combines technical hardening with the documentation buyers expect: role-based access and audit logging enforced on the server, SSO integration, retention rules, EU hosting, accessibility fixes in the existing interface, and a security overview ready to attach to a questionnaire. When a penetration test is required, the system is prepared for it and findings are handled afterwards.
 
-The engineering comes from Manifera, which has 11+ years of experience delivering software to organisations with formal requirements — including TNO, the Netherlands Organisation for Applied Scientific Research. Manifera's CEO Herre Roelevink has a background in cybersecurity, having co-founded CyberDevOps (now CFLW Cyber Strategies). Manifera's Amsterdam office on Herengracht 420 is under an hour from The Hague Centraal; engineering is carried out at the Ho Chi Minh City development centre. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) for its larger-scale public and enterprise work.
+The engineering comes from Manifera, which has 11+ years of experience delivering software to organisations with formal requirements - including TNO, the Netherlands Organisation for Applied Scientific Research. Manifera's CEO Herre Roelevink has a background in cybersecurity, having co-founded CyberDevOps (now CFLW Cyber Strategies). Manifera's Amsterdam office on Herengracht 420 is under an hour from The Hague Centraal; engineering is carried out at the Ho Chi Minh City development centre. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) for its larger-scale public and enterprise work.
 
-To start, [describe your project](https://launchstudio.eu/en/#contact) — including the buyer's questionnaire if you have one. We respond within one working day.
+To start, [describe your project](https://launchstudio.eu/en/#contact) - including the buyer's questionnaire if you have one. We respond within one working day.
 
 ## Real example
 
 ### An AI-Native Founder in Action: A Neighbourhood Reporting Tool Meets Procurement
 
-Hugo Verbeek spent eleven years as a policy adviser before founding BuurtSignaal in The Hague: a tool that lets residents report issues — broken streetlights, illegal dumping, unsafe crossings — and lets municipal teams triage and respond. He built it in Windsurf with a Next.js frontend and Postgres, and ran a pilot with one city district. Residents liked it; district staff liked it more.
+Hugo Verbeek spent eleven years as a policy adviser before founding BuurtSignaal in The Hague: a tool that lets residents report issues - broken streetlights, illegal dumping, unsafe crossings - and lets municipal teams triage and respond. He built it in Windsurf with a Next.js frontend and Postgres, and ran a pilot with one city district. Residents liked it; district staff liked it more.
 
 When the municipality moved to a formal contract, procurement sent a 90-question security and privacy questionnaire. Hugo could answer about a third. The review LaunchStudio carried out explained why: municipal staff roles were "user" and "admin," with case-handler restrictions only in the interface; there was no audit log; staff logged in with passwords rather than the municipality's identity provider; residents' reports, including photos with location data, were kept indefinitely; hosting was in a US region; and an accessibility scan found missing labels and keyboard traps in the resident form.
 
@@ -150,9 +150,9 @@ Over 21 business days, the team implemented four staff roles enforced in the dat
 **Result:** BuurtSignaal signed a three-year contract with the municipality and has since been piloted by two neighbouring municipalities, both of which accepted the existing documentation with minor additions.
 
 > *"The pilot proved residents wanted it. The contract depended on proving the municipality could trust it. Those were two different projects, and I'd only done the first one."*
-> — **Hugo Verbeek, Founder, BuurtSignaal (The Hague)**
+> - **Hugo Verbeek, Founder, BuurtSignaal (The Hague)**
 
-**Cost & Timeline:** €6,900 (Launch & Grow package: access control, audit logging, SSO, retention, hosting, accessibility fixes and procurement documentation) — completed in 21 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €6,900 (Launch & Grow package: access control, audit logging, SSO, retention, hosting, accessibility fixes and procurement documentation) - completed in 21 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 

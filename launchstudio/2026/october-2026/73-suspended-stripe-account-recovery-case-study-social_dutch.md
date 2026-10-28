@@ -1,6 +1,6 @@
-🚨 Daniel's Stripe-account werd geblokkeerd — Daniel Achterberg, oprichter van ClauseCheck (een document-automatiseringstool gebouwd met **Cursor**), zag zijn betalingen 14 dagen na de lancering stilvallen door een piek in geschillen veroorzaakt door dubbele afschrijvingen. 🧠
+🚨 Daniel's Stripe-account werd geblokkeerd - Daniel Achterberg, oprichter van ClauseCheck (een document-automatiseringstool gebouwd met **Cursor**), zag zijn betalingen 14 dagen na de lancering stilvallen door een piek in geschillen veroorzaakt door dubbele afschrijvingen. 🧠
 
-Als uw checkout geen idempotentie bevat, kan een trage verbinding met dubbelklikken uw geschillenpercentage boven de Stripe-drempelwaarde duwen — met een automatische blokkade tot gevolg.
+Als uw checkout geen idempotentie bevat, kan een trage verbinding met dubbelklikken uw geschillenpercentage boven de Stripe-drempelwaarde duwen - met een automatische blokkade tot gevolg.
 
 ❌ Geen idempotentiesleutel op betalingen leidde tot dubbele afschrijvingen bij dubbelklikken
 ❌ Een dispute rate van 3% triggerde een automatische blokkade van alle uitbetalingen

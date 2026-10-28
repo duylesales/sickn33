@@ -35,7 +35,7 @@ De onzekerheid over *"wat gebeurt er eigenlijk precies als ik dit inplan?"* houd
 
 ## Stap 1: Het Kennismakingsgesprek van 15 Minuten
 
-U beschrijft uw product, wat u al heeft gebouwd (doorgaans met Lovable, Bolt, Cursor of v0) en wat u wilt bereiken — een lanceerdeadline, een specifieke zorg zoals beveiliging, of algemene begeleiding om het product productieklaar te maken. Er is geen technische achtergrond vereist; het gesprek is zo gestructureerd dat oprichters hun situatie in gewone mensentaal kunnen toelichten, waarna het team van LaunchStudio dat aan hun kant vertaalt naar een technische scope.
+U beschrijft uw product, wat u al heeft gebouwd (doorgaans met Lovable, Bolt, Cursor of v0) en wat u wilt bereiken - een lanceerdeadline, een specifieke zorg zoals beveiliging, of algemene begeleiding om het product productieklaar te maken. Er is geen technische achtergrond vereist; het gesprek is zo gestructureerd dat oprichters hun situatie in gewone mensentaal kunnen toelichten, waarna het team van LaunchStudio dat aan hun kant vertaalt naar een technische scope.
 
 ## Stap 2: Codebase-Review en Scoping
 
@@ -43,15 +43,15 @@ Na afloop van het gesprek inspecteert het team de werkelijke codebase van uw pro
 
 ## Stap 3: Vaste Offerte en Tijdslijn
 
-U ontvangt een specifieke, gespecificeerde offerte — geen vage bandbreedte — samen met een bindende tijdslijn, doorgaans één tot drie weken afhankelijk van de scope. Dit is het moment waarop u beslist of u wilt doorgaan; het eerste gesprek en de scoping-analyse scheppen geen enkele verplichting.
+U ontvangt een specifieke, gespecificeerde offerte - geen vage bandbreedte - samen met een bindende tijdslijn, doorgaans één tot drie weken afhankelijk van de scope. Dit is het moment waarop u beslist of u wilt doorgaan; het eerste gesprek en de scoping-analyse scheppen geen enkele verplichting.
 
 ## Stap 4: Kickoff en Ontwikkeling
 
-Zodra u de offerte goedkeurt, begint het engineeringteam van Manifera met het werk. Uw visuele frontend-ontwerp wordt behouden als vast startpunt (zoals behandeld in onze eerdere richtlijnen voor frontend-behoud), waarbij het team de ontbrekende infrastructuurlagen eromheen bouwt — authenticatie, databasebeveiliging, betalingen en hostingconfiguratie.
+Zodra u de offerte goedkeurt, begint het engineeringteam van Manifera met het werk. Uw visuele frontend-ontwerp wordt behouden als vast startpunt (zoals behandeld in onze eerdere richtlijnen voor frontend-behoud), waarbij het team de ontbrekende infrastructuurlagen eromheen bouwt - authenticatie, databasebeveiliging, betalingen en hostingconfiguratie.
 
 ## Stap 5: Voortgangscommunicatie
 
-Gedurende de ontwikkeling ontvangt u regelmatige updates over de voortgang — geen radiostilte tot een plotseling bericht dat "het klaar is". Voor oprichters met harde externe deadlines (een lanceerevenement, een toezegging aan een klant) wordt de voortgangscommunicatie afgestemd op die urgentie.
+Gedurende de ontwikkeling ontvangt u regelmatige updates over de voortgang - geen radiostilte tot een plotseling bericht dat "het klaar is". Voor oprichters met harde externe deadlines (een lanceerevenement, een toezegging aan een klant) wordt de voortgangscommunicatie afgestemd op die urgentie.
 
 ## Stap 6: Testen en Beoordeling
 
@@ -63,54 +63,54 @@ Uw product gaat live op uw eigen domein, onder uw eigen accounts, met volledig b
 
 ## Wat Er Zeker NIET Gebeurt
 
-Geen herontwerp van uw interface zonder uitdrukkelijk overleg. Geen verrassingen met open eindes en uurtarieven, zoals beschreven in onze richtlijnen voor vaste prijzen. Geen druk om aanvullende diensten aan te schaffen die uw specifieke project niet nodig heeft — het doel is een afgebakende, eerlijke samenwerking, niet het maximaliseren van declarabele uren.
+Geen herontwerp van uw interface zonder uitdrukkelijk overleg. Geen verrassingen met open eindes en uurtarieven, zoals beschreven in onze richtlijnen voor vaste prijzen. Geen druk om aanvullende diensten aan te schaffen die uw specifieke project niet nodig heeft - het doel is een afgebakende, eerlijke samenwerking, niet het maximaliseren van declarabele uren.
 
-[Boek uw gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — de eerste, geheel vrijblijvende stap in dit transparante proces.
+[Boek uw gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) - de eerste, geheel vrijblijvende stap in dit transparante proces.
 
 ## Achter Stap 2: Hoe de 7-Lagen Gap-Analyse Daadwerkelijk Werkt
 
-Oprichters willen natuurlijk weten wat er daadwerkelijk gebeurt tijdens de codebase-review, aangezien dit de stap is die zowel de offerte als de daaropvolgende planning bepaalt. De inspectie is geen oppervlakkige technische scan — het zijn zeven gerichte controles, elk gekoppeld aan één productielaag, die elk een specifiek oordeel (geslaagd, afgekeurd of gedeeltelijk) opleveren in plaats van een vaag algemeen gevoel.
+Oprichters willen natuurlijk weten wat er daadwerkelijk gebeurt tijdens de codebase-review, aangezien dit de stap is die zowel de offerte als de daaropvolgende planning bepaalt. De inspectie is geen oppervlakkige technische scan - het zijn zeven gerichte controles, elk gekoppeld aan één productielaag, die elk een specifiek oordeel (geslaagd, afgekeurd of gedeeltelijk) opleveren in plaats van een vaag algemeen gevoel.
 
 **Wat er per laag wordt gecontroleerd:**
-1. **Frontend** — is de interface stabiel, of breekt deze bij situaties die de AI-tool nooit heeft getest (lege data, foutstatussen, trage verbindingen)? Deze laag passeert meestal grotendeels ongewijzigd, omdat oprichters hier de meeste iteratietijd aan hebben besteed in hun AI-tool.
-2. **AI/Modellaag** — wordt de modelaanroep veilig gedaan vanuit een server-route, of is de API-sleutel zichtbaar aan de client-side? Is er een fallback als de AI-provider een time-out geeft of ongeldige data terugstuurt?
-3. **Authenticatie** — is er een echt sessie- en wachtwoordhashing-systeem aanwezig, of is "inloggen" puur cosmetisch waarbij een naam in local storage wordt opgeslagen zonder verificatie?
-4. **Database** — is er daadwerkelijke isolatie op rijniveau (Row Level Security) tussen gebruikers, of stelt het schema technisch elke ingelogde gebruiker in staat om data van anderen op te vragen?
-5. **Betalingen** — is er een betaalprovider-koppeling (Mollie of Stripe) en handelt deze mislukte betalingen, restituties en abonnementswijzigingen correct af?
-6. **Hosting** — is de huidige deployment stabiel onder gelijktijdige gebruikersbelasting, of is deze alleen door de oprichter solo getest?
-7. **Monitoring** — krijgt het team een melding als het product uitvalt of fouten genereert, of ontdekt de oprichter dit pas via een boze e-mail van een klant?
+1. **Frontend** - is de interface stabiel, of breekt deze bij situaties die de AI-tool nooit heeft getest (lege data, foutstatussen, trage verbindingen)? Deze laag passeert meestal grotendeels ongewijzigd, omdat oprichters hier de meeste iteratietijd aan hebben besteed in hun AI-tool.
+2. **AI/Modellaag** - wordt de modelaanroep veilig gedaan vanuit een server-route, of is de API-sleutel zichtbaar aan de client-side? Is er een fallback als de AI-provider een time-out geeft of ongeldige data terugstuurt?
+3. **Authenticatie** - is er een echt sessie- en wachtwoordhashing-systeem aanwezig, of is "inloggen" puur cosmetisch waarbij een naam in local storage wordt opgeslagen zonder verificatie?
+4. **Database** - is er daadwerkelijke isolatie op rijniveau (Row Level Security) tussen gebruikers, of stelt het schema technisch elke ingelogde gebruiker in staat om data van anderen op te vragen?
+5. **Betalingen** - is er een betaalprovider-koppeling (Mollie of Stripe) en handelt deze mislukte betalingen, restituties en abonnementswijzigingen correct af?
+6. **Hosting** - is de huidige deployment stabiel onder gelijktijdige gebruikersbelasting, of is deze alleen door de oprichter solo getest?
+7. **Monitoring** - krijgt het team een melding als het product uitvalt of fouten genereert, of ontdekt de oprichter dit pas via een boze e-mail van een klant?
 
-Elke laag krijgt een specifieke notitie in het scoping-document — geen vaag "moet naar gekeken worden", maar de exacte constatering, zoals *"geen row-level security policies ingesteld op de tabel boekingen"* — omdat vage bevindingen leiden tot vage offertes, en dat is precies wat oprichters willen vermijden.
+Elke laag krijgt een specifieke notitie in het scoping-document - geen vaag "moet naar gekeken worden", maar de exacte constatering, zoals *"geen row-level security policies ingesteld op de tabel boekingen"* - omdat vage bevindingen leiden tot vage offertes, en dat is precies wat oprichters willen vermijden.
 
-**Waarom dit leidt tot een vaste offerte in plaats van een bandbreedte:** doordat de bevinding per laag specifiek is, kunnen de benodigde engineering-uren om elk gat te dichten met reëel vertrouwen worden gecalculeerd, in plaats van marges in te bouwen voor onzekerheid. Een oprichter wiens authenticatie Supabase Auth al correct gebruikt, krijgt een lagere offertecomponent voor die laag dan een oprichter bij wie "inloggen" cosmetisch blijkt te zijn — de review bepaalt direct het bedrag.
+**Waarom dit leidt tot een vaste offerte in plaats van een bandbreedte:** doordat de bevinding per laag specifiek is, kunnen de benodigde engineering-uren om elk gat te dichten met reëel vertrouwen worden gecalculeerd, in plaats van marges in te bouwen voor onzekerheid. Een oprichter wiens authenticatie Supabase Auth al correct gebruikt, krijgt een lagere offertecomponent voor die laag dan een oprichter bij wie "inloggen" cosmetisch blijkt te zijn - de review bepaalt direct het bedrag.
 
 Dit is ook waarom de codebase-review plaatsvindt vóór de offerte: een vaste prijs afgeven zonder eerst de 7 lagen te inspecteren zou puur gokwerk zijn. Het is de technische reden waarom de offerte in Stap 3 gespecificeerd kan worden, en waarom twee oprichters met vergelijkbaar klinkende producten toch verschillende offertes kunnen ontvangen zodra hun echte codebases zijn onderzocht.
 
-**Wat oprichters vooraf kunnen doen om deze stap te versnellen:** zorg dat de live URL van uw prototype en, indien mogelijk, leestoegang tot de codebase (een GitHub-link of export uit Lovable, Bolt, Cursor of v0) klaarliggen. U hoeft zelf geen technische samenvatting te schrijven — het benoemen van de hiaten is precies waar onze review voor dient — maar directe toegang tot de code maakt van Stap 2 een snelle en feitelijke inspectie.
+**Wat oprichters vooraf kunnen doen om deze stap te versnellen:** zorg dat de live URL van uw prototype en, indien mogelijk, leestoegang tot de codebase (een GitHub-link of export uit Lovable, Bolt, Cursor of v0) klaarliggen. U hoeft zelf geen technische samenvatting te schrijven - het benoemen van de hiaten is precies waar onze review voor dient - maar directe toegang tot de code maakt van Stap 2 een snelle en feitelijke inspectie.
 
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Alle stappen doorlopen van start tot finish
 
-Puck, coördinator van kinderactiviteiten in Culemborg, bouwde met v0 SpeelAgenda: een AI-tool die leeftijdsgeschikte lokale uitjes en activiteiten voorstelde aan ouders op basis van de interesses van hun kinderen. Ze had wekenlang geaarzeld voordat ze het kennismakingsgesprek met LaunchStudio boekte, puur omdat ze niet wist wat er zou gebeuren — zou ze onder druk worden gezet voor een dure aankoop, zou haar ontwerp zonder overleg worden aangepast, en was de planning wel betrouwbaar?
+Puck, coördinator van kinderactiviteiten in Culemborg, bouwde met v0 SpeelAgenda: een AI-tool die leeftijdsgeschikte lokale uitjes en activiteiten voorstelde aan ouders op basis van de interesses van hun kinderen. Ze had wekenlang geaarzeld voordat ze het kennismakingsgesprek met LaunchStudio boekte, puur omdat ze niet wist wat er zou gebeuren - zou ze onder druk worden gezet voor een dure aankoop, zou haar ontwerp zonder overleg worden aangepast, en was de planning wel betrouwbaar?
 
-Pucks gesprek van 15 minuten behandelde haar prototype, haar doel om vóór het nieuwe schooljaar te lanceren en haar specifieke zorg over het behoud van haar ontwerp. De daaropvolgende codebase-review identificeerde de concrete gaten: geen echte authenticatie, geen mogelijkheid om het geplande maandelijkse bedrag af te rekenen en een database zonder betrouwbare scheiding tussen ouderaccounts. Ze ontving een vaste offerte van €2.250 met een doorlooptijd van 11 werkdagen — zonder verkoopdruk of onnodige extra's.
+Pucks gesprek van 15 minuten behandelde haar prototype, haar doel om vóór het nieuwe schooljaar te lanceren en haar specifieke zorg over het behoud van haar ontwerp. De daaropvolgende codebase-review identificeerde de concrete gaten: geen echte authenticatie, geen mogelijkheid om het geplande maandelijkse bedrag af te rekenen en een database zonder betrouwbare scheiding tussen ouderaccounts. Ze ontving een vaste offerte van €2.250 met een doorlooptijd van 11 werkdagen - zonder verkoopdruk of onnodige extra's.
 
 Puck keurde de offerte goed, waarna de ontwikkeling startte met wekelijkse voortgangsupdates met het oog op haar schooljaar-deadline. Vóór oplevering verifieerde Puck zelf dat twee afzonderlijke ouder-testaccounts elkaars kindgegevens niet konden zien. SpeelAgenda lanceerde op haar eigen domein, in haar eigen accounts, met haar oorspronkelijke v0-ontwerp volledig intact.
 
-**Resultaat:** SpeelAgenda ging drie dagen vóór Pucks schooljaar-deadline live, waarbij het hele proces exact verliep zoals besproken tijdens het eerste gesprek — waarmee alle eerdere twijfels werden weggenomen.
+**Resultaat:** SpeelAgenda ging drie dagen vóór Pucks schooljaar-deadline live, waarbij het hele proces exact verliep zoals besproken tijdens het eerste gesprek - waarmee alle eerdere twijfels werden weggenomen.
 
-> *"Ik had het boeken van het gesprek een maand uitgesteld omdat ik niet wist waar ik aan begon. Elke stap verliep exact zoals vooraf beschreven — geen verrassingen, geen verkoopdruk en geen enkele wijziging aan mijn ontwerp waar ik niet eerst akkoord op had gegeven."*  
-> — **Puck Willems, Oprichter SpeelAgenda (Culemborg)**
+> *"Ik had het boeken van het gesprek een maand uitgesteld omdat ik niet wist waar ik aan begon. Elke stap verliep exact zoals vooraf beschreven - geen verrassingen, geen verkoopdruk en geen enkele wijziging aan mijn ontwerp waar ik niet eerst akkoord op had gegeven."*  
+> - **Puck Willems, Oprichter SpeelAgenda (Culemborg)**
 
-**Kosten & tijdlijn:** €2.250 (Launch Ready Pakket) — binnen 11 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €2.250 (Launch Ready Pakket) - binnen 11 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Zit er enige verplichting of kosten verbonden aan het eerste gesprek van 15 minuten?
-Nee. Het gesprek is gratis en verplicht u tot niets — het is specifiek bedoeld om u inzicht te geven in uw opties en een heldere scope te schetsen voordat u besluit over een betaald traject.
+Nee. Het gesprek is gratis en verplicht u tot niets - het is specifiek bedoeld om u inzicht te geven in uw opties en een heldere scope te schetsen voordat u besluit over een betaald traject.
 
 ### Hoe lang duurt de codebase-review en het opstellen van de offerte doorgaans na het gesprek?
 Dit hangt af van de complexiteit, maar oprichters ontvangen hun gespecificeerde vaste offerte doorgaans binnen enkele werkdagen na de intake, zodra het team de code grondig heeft geanalyseerd.

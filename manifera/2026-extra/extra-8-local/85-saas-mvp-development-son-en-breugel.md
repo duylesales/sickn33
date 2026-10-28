@@ -22,21 +22,21 @@ target_persona: "CMO"
 
 Every MVP pitch promises speed, and almost none of them mention that the fastest possible build and the fastest possible path to a fundable Series A are frequently two different products.
 
-**The Pain:** A CMO at an early-stage SaaS startup based in Son en Breugel — a Noord-Brabant municipality near Eindhoven, close to the Ekkersrijt business and logistics park and its active surrounding tech-startup scene — needs a working MVP live in time for an investor demo day eight weeks away, and every development option pitched so far promises the fastest timeline by cutting corners the CMO can't fully evaluate from a marketing seat: no automated tests, a database schema that will not survive real user growth, and authentication logic assembled from copy-pasted tutorial code with no security review.
+**The Pain:** A CMO at an early-stage SaaS startup based in Son en Breugel - a Noord-Brabant municipality near Eindhoven, close to the Ekkersrijt business and logistics park and its active surrounding tech-startup scene - needs a working MVP live in time for an investor demo day eight weeks away, and every development option pitched so far promises the fastest timeline by cutting corners the CMO can't fully evaluate from a marketing seat: no automated tests, a database schema that will not survive real user growth, and authentication logic assembled from copy-pasted tutorial code with no security review.
 
-**The Agitation:** A friend running a competing startup in the same Brainport-region ecosystem shipped an MVP in six weeks that impressed investors enough to close a seed round — and then spent the first four months after closing unable to add a single promised feature from the pitch deck, because the codebase's total absence of tests meant every change risked breaking something else, and a security vulnerability in the improvised authentication system was found by a prospective enterprise customer's security team during due diligence, killing a deal that would have been the company's largest contract to date. The CMO does not want speed today to become the reason next year's biggest opportunity falls apart.
+**The Agitation:** A friend running a competing startup in the same Brainport-region ecosystem shipped an MVP in six weeks that impressed investors enough to close a seed round - and then spent the first four months after closing unable to add a single promised feature from the pitch deck, because the codebase's total absence of tests meant every change risked breaking something else, and a security vulnerability in the improvised authentication system was found by a prospective enterprise customer's security team during due diligence, killing a deal that would have been the company's largest contract to date. The CMO does not want speed today to become the reason next year's biggest opportunity falls apart.
 
 ## The Mandate: A Speed Standard That Doesn't Borrow Against the Next Six Months
 
 Building an MVP fast and building an MVP irresponsibly are not the same constraint, and a real speed-without-technical-debt standard identifies exactly which corners are safe to cut for a first version and which ones will compound into liabilities the moment the product needs to grow.
 
-The first principle is scoping the MVP down to the minimum feature set that proves the core value proposition, not the full vision from the pitch deck. Every feature cut from the initial build is time that can instead go toward building the features that remain correctly — with real data validation, real error handling, and a data model that reflects the actual long-term shape of the product, even if only a handful of features exercise it initially.
+The first principle is scoping the MVP down to the minimum feature set that proves the core value proposition, not the full vision from the pitch deck. Every feature cut from the initial build is time that can instead go toward building the features that remain correctly - with real data validation, real error handling, and a data model that reflects the actual long-term shape of the product, even if only a handful of features exercise it initially.
 
 Second, a small number of foundational decisions are worth getting right from day one specifically because they are expensive to change later: the core data model, the authentication and authorization approach, and the basic architectural boundary between the parts of the system likely to need to scale and the parts that won't. These decisions cost relatively little extra time to make well at the outset and cost enormously more to unwind after real customer data and real integrations depend on them.
 
-Third, a minimal but real automated test suite covering the core user flows — not comprehensive coverage, but enough to make the codebase safely changeable — is one of the highest-leverage investments an MVP can make, because the whole point of an MVP is to iterate rapidly based on user feedback after launch, and an untested codebase makes every post-launch iteration slower and riskier than it needs to be, precisely during the period speed matters most.
+Third, a minimal but real automated test suite covering the core user flows - not comprehensive coverage, but enough to make the codebase safely changeable - is one of the highest-leverage investments an MVP can make, because the whole point of an MVP is to iterate rapidly based on user feedback after launch, and an untested codebase makes every post-launch iteration slower and riskier than it needs to be, precisely during the period speed matters most.
 
-Fourth, security fundamentals — proper authentication libraries rather than improvised tutorial code, basic input validation, and secrets management — need to be non-negotiable even under time pressure, because a security failure discovered by a prospective customer's due diligence team doesn't just cost the deal, it costs the credibility of every future enterprise conversation the company has.
+Fourth, security fundamentals - proper authentication libraries rather than improvised tutorial code, basic input validation, and secrets management - need to be non-negotiable even under time pressure, because a security failure discovered by a prospective customer's due diligence team doesn't just cost the deal, it costs the credibility of every future enterprise conversation the company has.
 
 Fifth, technical debt that is knowingly taken on to hit the demo-day deadline should be explicitly documented and prioritized for the first post-funding sprint, so the team building against investor excitement after a successful raise isn't discovering the debt for the first time exactly when the pressure to move fast is highest again.
 
@@ -62,7 +62,7 @@ Fifth, technical debt that is knowingly taken on to hit the demo-day deadline sh
 3. **Weeks 6-7:** Complete remaining scope, document any technical debt taken on under deadline pressure, and prioritize that debt list for the first post-funding sprint.
 4. **Week 8:** MVP demos successfully at the funding event, with a documented, prioritized technical-debt list ready to guide the first weeks of post-raise engineering work.
 
-Son en Breugel sits near Eindhoven within reach of the Ekkersrijt business and logistics park, an area with an active and growing tech-startup scene feeding off the broader Brainport region's engineering density, and the SaaS startups founded here compete for investor attention against a regional ecosystem where technical due diligence has become a standard, expected part of any serious funding conversation — making a codebase's real quality, not just its demo-day polish, an increasingly visible factor in whether a raise actually closes.
+Son en Breugel sits near Eindhoven within reach of the Ekkersrijt business and logistics park, an area with an active and growing tech-startup scene feeding off the broader Brainport region's engineering density, and the SaaS startups founded here compete for investor attention against a regional ecosystem where technical due diligence has become a standard, expected part of any serious funding conversation - making a codebase's real quality, not just its demo-day polish, an increasingly visible factor in whether a raise actually closes.
 
 ## The Governance Split
 
@@ -78,8 +78,8 @@ Nourrily SAS, an early-stage foodtech SaaS startup based in Lyon, France, needed
 
 Manifera scoped the MVP to the minimum feature set proving Nourrily's core matching algorithm, made deliberate data-model decisions anticipating real customer variety rather than demo-specific data, and used an established authentication library instead of custom-built login logic. A minimal test suite covered the core user flows, and three deliberately deferred features were documented as technical debt for the first post-raise sprint. The MVP demoed successfully, the seed round closed, and the engineering team resolved the documented debt list within the first six weeks of new funding without any surprises.
 
-> *"We'd already been burned once by a fast build we couldn't trust. This time, fast didn't mean fragile — we knew exactly what we'd deferred and fixed it in order, instead of discovering it during our first real customer's security review."*
-> — **CMO, Nourrily SAS, France**
+> *"We'd already been burned once by a fast build we couldn't trust. This time, fast didn't mean fragile - we knew exactly what we'd deferred and fixed it in order, instead of discovering it during our first real customer's security review."*
+> - **CMO, Nourrily SAS, France**
 
 ## Cut-Every-Corner MVP vs. Manifera's Speed-Without-Debt Standard
 
@@ -101,7 +101,7 @@ If your MVP needs to survive not just a demo but the first real customer's due d
 
 ### (Scenario: CMO with a fixed demo-day deadline weighing MVP build options) How do we build an MVP fast without creating technical debt that hurts us later?
 
-Scope the MVP down to the minimum feature set that proves the core value proposition, get a small number of foundational decisions — data model, authentication, architectural boundaries — right from the start, and document any debt knowingly taken on so it's addressed deliberately after funding rather than discovered as a surprise.
+Scope the MVP down to the minimum feature set that proves the core value proposition, get a small number of foundational decisions - data model, authentication, architectural boundaries - right from the start, and document any debt knowingly taken on so it's addressed deliberately after funding rather than discovered as a surprise.
 
 ### (Scenario: CMO worried about a security gap being found during due diligence) How do we avoid a security vulnerability being discovered by a prospective customer instead of by us?
 
@@ -109,11 +109,11 @@ Use established, security-reviewed authentication libraries rather than improvis
 
 ### (Scenario: CMO unsure whether testing is worth the time before a deadline) Is automated test coverage worth the time investment for an MVP with only eight weeks to build?
 
-Yes for the core user flows specifically — minimal but real test coverage there makes post-launch iteration considerably faster and safer, which matters most in exactly the period right after a successful raise when speed is critical again.
+Yes for the core user flows specifically - minimal but real test coverage there makes post-launch iteration considerably faster and safer, which matters most in exactly the period right after a successful raise when speed is critical again.
 
 ### (Scenario: CMO deciding how much of the pitch-deck vision to build first) Should the MVP include every feature promised in the investor pitch deck?
 
-No — scope to the minimum feature set that proves the core value proposition; every feature cut from the initial build is time redirected toward building the remaining features correctly rather than thinly.
+No - scope to the minimum feature set that proves the core value proposition; every feature cut from the initial build is time redirected toward building the remaining features correctly rather than thinly.
 
 ### (Scenario: CMO wanting a plan for what happens right after a successful raise) What happens to the corners we knowingly cut to hit the demo-day deadline?
 

@@ -1,4 +1,4 @@
-💡 Assen, the provincial capital of Drenthe, is home to NAM's head office — and nearby ASTRON and LOFAR make the region a pioneer in large-scale signal processing.
+💡 Assen, the provincial capital of Drenthe, is home to NAM's head office - and nearby ASTRON and LOFAR make the region a pioneer in large-scale signal processing.
 
 📜 Data work here covers subsurface and seismic monitoring, geodata for provincial planning under the Environment and Planning Act, energy transition modelling with Hydrogen Valley Northern Netherlands, and regional logistics and agriculture.
 

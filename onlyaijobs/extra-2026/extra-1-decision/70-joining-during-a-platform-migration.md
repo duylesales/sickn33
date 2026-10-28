@@ -61,7 +61,7 @@ Candidates hired during migrations are often surprised by the ratio.
 
 **Archaeology.** Understanding logic written years ago by people who left, including the rules nobody documented.
 
-**Negotiating scope.** Deciding what does not move — the reports nobody reads, the models nobody uses — which is politically harder than the engineering.
+**Negotiating scope.** Deciding what does not move - the reports nobody reads, the models nobody uses - which is politically harder than the engineering.
 
 **Documentation.** Often written for the first time, because the migration forces the question of what things actually do.
 
@@ -157,7 +157,7 @@ And agree what your role becomes afterwards. The conversation is much easier bef
 
 If you decide the migration is worth joining, a few things are much easier to agree before you start than to raise in month eight.
 
-**A written description of the role after the migration.** Not a promise of a promotion — simply what the work becomes once the old platform is switched off. This is the single most useful thing to have in writing, because migrations end and nobody plans for the day after.
+**A written description of the role after the migration.** Not a promise of a promotion - simply what the work becomes once the old platform is switched off. This is the single most useful thing to have in writing, because migrations end and nobody plans for the day after.
 
 **A protected share of non-migration work.** Even one day a week on modelling or analysis keeps your skills current and makes the year survivable. Ask for it explicitly; it will not happen by default.
 
@@ -169,7 +169,7 @@ If you decide the migration is worth joining, a few things are much easier to ag
 
 **A say in scope.** Ask whether new joiners can propose retirements. An organisation that welcomes that question will use you well; one that does not has already decided that everything moves.
 
-None of these requests is unusual, and asking them signals that you have done this before — which, for an employer halfway through a difficult migration, is exactly the impression you want to leave.
+None of these requests is unusual, and asking them signals that you have done this before - which, for an employer halfway through a difficult migration, is exactly the impression you want to leave.
 
 ## Real example
 
@@ -197,7 +197,7 @@ The old warehouse is switched off two weeks late. His second year is what was ad
 
 ## Where to Start
 
-Ask when the old platform is switched off before you accept — then compare the answer with employers near you whose migration is already finished.
+Ask when the old platform is switched off before you accept - then compare the answer with employers near you whose migration is already finished.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -223,7 +223,7 @@ Own the parity testing, question what should be retired while you are still new,
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is joining during a migration a bad idea?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently — it builds platform depth; the risk is an endless migration or mis-set expectations."}},
+    {"@type": "Question", "name": "Is joining during a migration a bad idea?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently - it builds platform depth; the risk is an endless migration or mis-set expectations."}},
     {"@type": "Question", "name": "What is the most important question?", "acceptedAnswer": {"@type": "Answer", "text": "When the old platform is decommissioned, and who has authority to switch it off."}},
     {"@type": "Question", "name": "Will I still do machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Usually less during the transition; ask what proportion of year one is migration work."}},
     {"@type": "Question", "name": "What are the warning signs?", "acceptedAnswer": {"@type": "Answer", "text": "No end date, both platforms developed in parallel, no scope reduction and repeated slippage."}},

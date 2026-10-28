@@ -13,7 +13,7 @@ Content Format: Regional Market Analysis
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Jobs in Heerlen: Statistics, Pensions and a Data Campus in Parkstad Limburg",
-  "description": "Heerlen combines a major office of Statistics Netherlands, the pension administrator APG and the Brightlands Smart Services Campus — a data-heavy labour market that rarely appears in searches for AI jobs.",
+  "description": "Heerlen combines a major office of Statistics Netherlands, the pension administrator APG and the Brightlands Smart Services Campus - a data-heavy labour market that rarely appears in searches for AI jobs.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-01",
@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Ask someone in the Randstad where Dutch official statistics are produced, and most will say The Hague. Ask where the pensions of millions of Dutch public-sector and education workers are administered, and few will know the answer. Both answers include Heerlen — a city in the south of Limburg that has quietly become one of the most data-intensive employment locations in the country, without ever marketing itself as an AI hub.
+Ask someone in the Randstad where Dutch official statistics are produced, and most will say The Hague. Ask where the pensions of millions of Dutch public-sector and education workers are administered, and few will know the answer. Both answers include Heerlen - a city in the south of Limburg that has quietly become one of the most data-intensive employment locations in the country, without ever marketing itself as an AI hub.
 
 ## Why Heerlen Is a Data City Before It Is a Tech City
 
@@ -45,9 +45,9 @@ That profile matters for anyone working in machine learning or data science. The
 
 ## The Named Organisations Behind Heerlen's Data Market
 
-**Statistics Netherlands (CBS).** CBS has two main offices: The Hague and Heerlen. The Heerlen office is a large workplace for statisticians, methodologists, data engineers and IT specialists. CBS produces official statistics on the economy, population, labour market and society, and it has invested in data science and new data sources — for example web data, sensor data and administrative registers — through its Center for Big Data Statistics.
+**Statistics Netherlands (CBS).** CBS has two main offices: The Hague and Heerlen. The Heerlen office is a large workplace for statisticians, methodologists, data engineers and IT specialists. CBS produces official statistics on the economy, population, labour market and society, and it has invested in data science and new data sources - for example web data, sensor data and administrative registers - through its Center for Big Data Statistics.
 
-**APG.** APG is one of the largest pension administrators in the Netherlands and has major offices in Heerlen and Amsterdam. It carries out pension administration, asset management and communication for pension funds, including ABP, the pension fund for government and education employees. Pension administration at this scale is a data problem: contribution records, participant histories, actuarial calculations and — increasingly — personalised communication.
+**APG.** APG is one of the largest pension administrators in the Netherlands and has major offices in Heerlen and Amsterdam. It carries out pension administration, asset management and communication for pension funds, including ABP, the pension fund for government and education employees. Pension administration at this scale is a data problem: contribution records, participant histories, actuarial calculations and - increasingly - personalised communication.
 
 **Brightlands Smart Services Campus.** One of the four Brightlands campuses in Limburg, this campus in Heerlen focuses on data science, digital services and smart services for sectors such as government, finance and health. It hosts companies, research groups and education programmes around data, and it is the most visible place in the city where AI-related work is explicitly labelled as such.
 
@@ -61,7 +61,7 @@ The work in Heerlen clusters around three themes.
 
 **Pension administration and asset management.** A pension administrator processes the working lives of millions of people. Machine learning applications include data quality detection in contribution records, forecasting of participant behaviour, document processing and customer contact analytics. Asset management adds a quantitative finance dimension: portfolio analytics, risk models and ESG data processing.
 
-**Public and smart services.** Companies and research groups on the campus work on digital services for governments and organisations — from data platforms to privacy-preserving analytics.
+**Public and smart services.** Companies and research groups on the campus work on digital services for governments and organisations - from data platforms to privacy-preserving analytics.
 
 ## The Pension System Transition as a Data Project
 
@@ -77,7 +77,7 @@ For data professionals, this transition is one of the largest data migration and
 | Typical AI work | Data quality, methodology, record linkage, financial analytics | Health data, biomedical research, academic AI |
 | Employer size | Few very large employers plus campus companies | Mix of university, hospital and smaller firms |
 | International orientation | Moderate; much work in Dutch | High; strongly international university |
-| Distance | — | Roughly half an hour by train |
+| Distance | - | Roughly half an hour by train |
 
 The two cities form one labour market in practice. A candidate living in Maastricht can reach Heerlen easily, and the reverse is equally true. Aachen, just across the German border, is also within reach of Heerlen, which adds a cross-border dimension for people with German-language skills.
 
@@ -85,7 +85,7 @@ The two cities form one labour market in practice. A candidate living in Maastri
 
 **GDPR.** Almost everything processed in Heerlen's large institutions is personal data: income, employment history, household composition, pension entitlements. Data minimisation, purpose limitation and pseudonymisation are daily practice, not abstract principles.
 
-**Statistics Netherlands Act.** CBS operates under its own law, which gives it access to administrative data for statistical purposes and imposes strict confidentiality: no published statistic may allow individuals or companies to be identified. Statistical disclosure control — making sure outputs cannot be traced back to individuals — is a specialism in its own right.
+**Statistics Netherlands Act.** CBS operates under its own law, which gives it access to administrative data for statistical purposes and imposes strict confidentiality: no published statistic may allow individuals or companies to be identified. Statistical disclosure control - making sure outputs cannot be traced back to individuals - is a specialism in its own right.
 
 **Financial supervision.** Pension administrators are supervised by DNB and the AFM, which have expectations on data quality, outsourcing, IT risk and model governance. The EU Digital Operational Resilience Act (DORA) also applies to parts of the financial sector, including institutions for occupational retirement provision, with a proportional approach.
 
@@ -99,7 +99,7 @@ This is typical of Heerlen's data work. The model is only half the job; the othe
 
 ## A Common Misconception About Institutional Data Work
 
-Candidates from product companies sometimes assume that work at a statistics office or pension administrator is slow and technically outdated. The pace of decision-making can indeed be slower than at a startup, and legacy systems exist. But the technical depth is often greater than expected: methodology departments deal with bias, uncertainty and causal questions at a level many commercial teams never reach, and large data platforms and cloud migrations are common. The difference is less about technology and more about accountability — results are scrutinised by supervisors, parliament and the public.
+Candidates from product companies sometimes assume that work at a statistics office or pension administrator is slow and technically outdated. The pace of decision-making can indeed be slower than at a startup, and legacy systems exist. But the technical depth is often greater than expected: methodology departments deal with bias, uncertainty and causal questions at a level many commercial teams never reach, and large data platforms and cloud migrations are common. The difference is less about technology and more about accountability - results are scrutinised by supervisors, parliament and the public.
 
 ## Typical Job Titles to Search For
 
@@ -131,26 +131,26 @@ The trade-off is that the market is concentrated. A few large employers dominate
 
 ## Career Growth in Institutional Data Work
 
-A data professional who starts at a statistics office or pension administrator often grows along one of two paths. The first is technical depth: becoming a methodologist or lead data scientist who designs how new data sources and models enter production statistics or core administration. The second is governance: moving into data management, model risk or data protection roles, which are in growing demand as regulation increases. Both paths build a type of experience — accountable, audited, large-scale data work — that is valued by banks, insurers and government bodies elsewhere in the country.
+A data professional who starts at a statistics office or pension administrator often grows along one of two paths. The first is technical depth: becoming a methodologist or lead data scientist who designs how new data sources and models enter production statistics or core administration. The second is governance: moving into data management, model risk or data protection roles, which are in growing demand as regulation increases. Both paths build a type of experience - accountable, audited, large-scale data work - that is valued by banks, insurers and government bodies elsewhere in the country.
 
 ## Key Takeaways
 
 - Heerlen hosts a major office of Statistics Netherlands (CBS), the pension administrator APG and the Brightlands Smart Services Campus.
 - The Open Universiteit, Zuyd University of Applied Sciences and Maastricht University supply research and talent.
-- Work centres on official statistics, pension administration, asset management and data services — with a strong emphasis on data quality and methodology.
+- Work centres on official statistics, pension administration, asset management and data services - with a strong emphasis on data quality and methodology.
 - The Future Pensions Act transition, GDPR, the Statistics Netherlands Act, DNB supervision and the AI Act shape daily practice.
 - Titles rarely say "AI"; search by category and consider Heerlen, Maastricht and Aachen as one region.
 
 ## Where to Start
 
-If your strength lies in statistics, data quality or accountable machine learning, Heerlen deserves a place on your shortlist — especially if you live in Limburg or want to.
+If your strength lies in statistics, data quality or accountable machine learning, Heerlen deserves a place on your shortlist - especially if you live in Limburg or want to.
 
 Browse current AI, machine learning and data jobs in and around Heerlen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who has never considered Limburg) Is Heerlen a realistic place for a data science career?
-Yes — Statistics Netherlands, APG and the Brightlands Smart Services Campus create a substantial market for data science, data engineering and methodology roles.
+Yes - Statistics Netherlands, APG and the Brightlands Smart Services Campus create a substantial market for data science, data engineering and methodology roles.
 
 ### (Scenario: candidate searching for "AI jobs Heerlen" and finding little) Why do so few results show up when I search for AI jobs in Heerlen?
 Most roles are titled methodologist, data analyst, data quality specialist or actuarial analyst rather than AI or machine learning engineer.
@@ -159,21 +159,21 @@ Most roles are titled methodologist, data analyst, data quality specialist or ac
 For many roles at public institutions and pension administrators, good Dutch is required; campus companies and research roles are more often English-friendly.
 
 ### (Scenario: candidate from a startup background) Is institutional data work technically interesting?
-Often more than expected — methodology, uncertainty, record linkage and large-scale data quality are demanding problems, with high accountability for results.
+Often more than expected - methodology, uncertainty, record linkage and large-scale data quality are demanding problems, with high accountability for results.
 
 ### (Scenario: candidate living in Maastricht) Can I combine Heerlen and Maastricht in my job search?
-Yes — the cities are roughly half an hour apart by train and function as one regional labour market, together with Sittard-Geleen and Aachen.
+Yes - the cities are roughly half an hour apart by train and function as one regional labour market, together with Sittard-Geleen and Aachen.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Heerlen a realistic place for a data science career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Statistics Netherlands, APG and the Brightlands Smart Services Campus create a substantial market for data roles."}},
+    {"@type": "Question", "name": "Is Heerlen a realistic place for a data science career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - Statistics Netherlands, APG and the Brightlands Smart Services Campus create a substantial market for data roles."}},
     {"@type": "Question", "name": "Why do so few results show up when I search for AI jobs in Heerlen?", "acceptedAnswer": {"@type": "Answer", "text": "Most roles are titled methodologist, data analyst or actuarial analyst rather than AI engineer."}},
     {"@type": "Question", "name": "Do I need to speak Dutch to work in Heerlen?", "acceptedAnswer": {"@type": "Answer", "text": "For many roles at public institutions and pension administrators, yes; campus companies and research roles are more often English-friendly."}},
-    {"@type": "Question", "name": "Is institutional data work technically interesting?", "acceptedAnswer": {"@type": "Answer", "text": "Often more than expected — methodology, uncertainty and large-scale data quality are demanding problems."}},
-    {"@type": "Question", "name": "Can I combine Heerlen and Maastricht in my job search?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — they are roughly half an hour apart and function as one regional labour market."}}
+    {"@type": "Question", "name": "Is institutional data work technically interesting?", "acceptedAnswer": {"@type": "Answer", "text": "Often more than expected - methodology, uncertainty and large-scale data quality are demanding problems."}},
+    {"@type": "Question", "name": "Can I combine Heerlen and Maastricht in my job search?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - they are roughly half an hour apart and function as one regional labour market."}}
   ]
 }
 </script>

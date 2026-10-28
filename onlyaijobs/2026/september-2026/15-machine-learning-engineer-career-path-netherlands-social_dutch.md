@@ -4,7 +4,7 @@ Titelinflatie is reëel in Nederland, en de titel is daardoor een zwakker signaa
 
 Eigenaarschap. Beschrijft de vacature een gedefinieerde taak ("implementeer X") of een open probleem ("bedenk hoe we Y aanpakken")? Het tweede zegt meer dan welk aantal jaren dan ook.
 
-Verantwoordelijkheid. Staat piketdienst of incidentafhandeling erin? De afwezigheid in een "senior"-vacature is zelf informatief — of er is een platformteam, of niemand heeft erover nagedacht.
+Verantwoordelijkheid. Staat piketdienst of incidentafhandeling erin? De afwezigheid in een "senior"-vacature is zelf informatief - of er is een platformteam, of niemand heeft erover nagedacht.
 
 Breedte. Data-tot-deployment, of één van de drie?
 

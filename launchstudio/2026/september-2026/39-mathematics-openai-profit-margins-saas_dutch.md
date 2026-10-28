@@ -28,11 +28,11 @@ Zodra u weet dat uw gemiddelde CPQ exact € 0,05 bedraagt, kunt u het **Break-e
 
 Als u een gebruiker een vast abonnement van € 20 per maand in rekening brengt, deelt u de omzet door de CPQ (€ 20,00 / € 0,05 = 400).
 
-400 is uw absolute break-even grens. Klikt een gebruiker 400 keer op genereren in een maand, dan is uw brutomarge op die klant exact 0%. Klikt hij 500 keer, dan verliest u € 5,00 op die specifieke account in die maand. Deze wiskundige realiteit bewijst waarom het aanbieden van een "onbeperkt" vast abonnement een gegarandeerde route naar faillissement is — niet omdat gemiddelde gebruikers die grens overschrijden, maar omdat uw meest actieve, meest betrokken 'Power Users' gegarandeerd over deze drempel heengaan. Onder een vast onbeperkt tarief zijn uw allerbeste klanten systematisch uw meest verlieslatende klanten.
+400 is uw absolute break-even grens. Klikt een gebruiker 400 keer op genereren in een maand, dan is uw brutomarge op die klant exact 0%. Klikt hij 500 keer, dan verliest u € 5,00 op die specifieke account in die maand. Deze wiskundige realiteit bewijst waarom het aanbieden van een "onbeperkt" vast abonnement een gegarandeerde route naar faillissement is - niet omdat gemiddelde gebruikers die grens overschrijden, maar omdat uw meest actieve, meest betrokken 'Power Users' gegarandeerd over deze drempel heengaan. Onder een vast onbeperkt tarief zijn uw allerbeste klanten systematisch uw meest verlieslatende klanten.
 
 ## De Drie Hefbomen om de Margeformule te Optimaliseren
 
-Als uw berekening aantoont dat uw verwachte brutomarge slechts een magere 30% is — ver onder de gezonde 65% tot 75% die voor AI SaaS realistisch is (vergeleken met de 85%+ van traditionele software) — heeft u drie strategische knoppen om aan te draaien:
+Als uw berekening aantoont dat uw verwachte brutomarge slechts een magere 30% is - ver onder de gezonde 65% tot 75% die voor AI SaaS realistisch is (vergeleken met de 85%+ van traditionele software) - heeft u drie strategische knoppen om aan te draaien:
 
 **Hefboom 1: Prijzen Verhogen.** De meest effectieve oplossing waar oprichters vaak te lang mee wachten uit angst voor conversieverlies. Als uw CPQ hoog is omdat de AI gigantische bedrijfswaarde levert (zoals het opstellen van een juridisch pleidooi dat een jurist anders 4 uur werk kost), vraag dan geen € 20 per maand, maar € 200 per maand of stap over op uitkomstgebaseerde prijzen. Waardegebaseerde prijzen herstellen uw marges direct zonder dat u één regel code hoeft aan te passen.
 
@@ -42,11 +42,11 @@ Als uw berekening aantoont dat uw verwachte brutomarge slechts een magere 30% is
 
 ## De Verborgen Kosten van Slechte RAG-Pijplijnen
 
-Oprichters vergeten vaak de invloed van RAG (Retrieval-Augmented Generation) op de CPQ-berekening. Als uw RAG-pijplijn slordig is geconfigureerd — waarbij u standaard de "Top 10" tekstchunks ophaalt uit pgvector of Pinecone "voor de zekerheid" — injecteert het systeem 10 lange alinea's in de prompt, terwijl slechts 1 alinea daadwerkelijk relevant was voor de vraag.
+Oprichters vergeten vaak de invloed van RAG (Retrieval-Augmented Generation) op de CPQ-berekening. Als uw RAG-pijplijn slordig is geconfigureerd - waarbij u standaard de "Top 10" tekstchunks ophaalt uit pgvector of Pinecone "voor de zekerheid" - injecteert het systeem 10 lange alinea's in de prompt, terwijl slechts 1 alinea daadwerkelijk relevant was voor de vraag.
 
 U betaalt voor elk afzonderlijk geïnjecteerd token, of het model de tekst nu gebruikt of niet. Door uw vectorzoekopdracht te optimaliseren naar de "Top 2" of "Top 3" meest relevante chunks en een re-ranking stap (zoals Cohere Rerank) toe te passen, houdt u de omvang van de invoerprompt en daarmee de CPQ strikt begrensd, zelfs wanneer uw kennisbank groeit van 100 naar 100.000 documenten.
 
-Manifera — het softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink met Europees hoofdkantoor aan de **Herengracht 420 in Amsterdam** en engineeringhubs in **Singapore** en **Ho Chi Minhstad, Vietnam** — voert deze diepgaande marge-audits wekelijks uit. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Unit economics zijn een volwassenheidsvraagstuk dat tijdig moet worden opgelost. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
+Manifera - het softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink met Europees hoofdkantoor aan de **Herengracht 420 in Amsterdam** en engineeringhubs in **Singapore** en **Ho Chi Minhstad, Vietnam** - voert deze diepgaande marge-audits wekelijks uit. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Unit economics zijn een volwassenheidsvraagstuk dat tijdig moet worden opgelost. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
 
 ## Belangrijkste Inzichten
 
@@ -72,7 +72,7 @@ Zij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in. Het team b
 
 **Resultaat:** Realtime inzicht in brutomarges werd direct zichtbaar, waardoor zij haar prijsmodellen kon optimaliseren naar een gezonde 70% brutomarge.
 
-**Kosten & Tijdlijn:** €1.600 (NestJS Middleware Setup Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (NestJS Middleware Setup Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

@@ -39,11 +39,11 @@ Terneuzen hosts one of the larger chemical industry clusters in the Netherlands,
 
 ## What This Work Actually Involves
 
-Chemical process optimisation requires modelling with direct safety and efficiency stakes — a wrong prediction in a chemical process has consequences well beyond a bad recommendation. Port logistics data work here shares characteristics with Rotterdam's, but at a different scale and with the added complexity of cross-border operations.
+Chemical process optimisation requires modelling with direct safety and efficiency stakes - a wrong prediction in a chemical process has consequences well beyond a bad recommendation. Port logistics data work here shares characteristics with Rotterdam's, but at a different scale and with the added complexity of cross-border operations.
 
 ## Why This Stays Under the Radar
 
-Chemical and industrial employers rarely compete for tech-scene visibility, and job titles reflect chemical-engineering or process vocabulary rather than AI terms — a candidate searching nationally is unlikely to encounter this cluster by keyword alone.
+Chemical and industrial employers rarely compete for tech-scene visibility, and job titles reflect chemical-engineering or process vocabulary rather than AI terms - a candidate searching nationally is unlikely to encounter this cluster by keyword alone.
 
 ## The Named Organisations Behind Terneuzen's Industrial Base
 
@@ -53,7 +53,7 @@ Chemical and industrial employers rarely compete for tech-scene visibility, and 
 
 **Yara Sluiskil.** Near Terneuzen, Yara operates a large fertiliser production site. Ammonia and fertiliser production are energy-intensive processes where optimisation and emissions reduction are major data topics.
 
-**Smart Delta Resources.** This cooperation of energy- and raw-material-intensive companies in the Zeeland–Flanders region works on reducing CO2 emissions and sharing energy and resources between companies — including projects on hydrogen, CO2 capture and residual heat. Such cooperation depends on accurate data about flows of energy, heat and materials.
+**Smart Delta Resources.** This cooperation of energy- and raw-material-intensive companies in the Zeeland–Flanders region works on reducing CO2 emissions and sharing energy and resources between companies - including projects on hydrogen, CO2 capture and residual heat. Such cooperation depends on accurate data about flows of energy, heat and materials.
 
 **Infrastructure.** The **Ghent–Terneuzen Canal** connects the Western Scheldt with the port of Ghent. The **New Lock Terneuzen**, a large sea lock opened in 2023, increases capacity and allows larger ships to reach the canal zone. Lock planning and vessel traffic management are classic scheduling and forecasting problems.
 
@@ -74,7 +74,7 @@ Chemical and industrial employers rarely compete for tech-scene visibility, and 
 | Core industrial character | Chemical and fertiliser production plus cross-border port logistics | Integrated chemical and materials science campus |
 | Cross-border complexity | Yes, a port authority spanning the Netherlands and Belgium | Less pronounced |
 | Typical role focus | Process optimisation, energy and emissions, logistics | Process optimisation, materials science R&D |
-| Discovery difficulty | High — chemical and logistics vocabulary, not AI | High — same pattern |
+| Discovery difficulty | High - chemical and logistics vocabulary, not AI | High - same pattern |
 
 ## Where Data and Machine Learning Are Applied
 
@@ -100,7 +100,7 @@ Chemical and fertiliser production in the Zeeland–Flanders region is at the ce
 
 ## Why Chemical-Industry Data Roles Reward Long-Term Career Stability
 
-Chemical manufacturing operates on long capital cycles and doesn't disappear or pivot the way a venture-funded start-up might, which means data roles tied to process optimisation tend to offer a more stable career trajectory than the AI industry's faster-moving segments — a trade worth considering explicitly for candidates who value stability as much as technical novelty.
+Chemical manufacturing operates on long capital cycles and doesn't disappear or pivot the way a venture-funded start-up might, which means data roles tied to process optimisation tend to offer a more stable career trajectory than the AI industry's faster-moving segments - a trade worth considering explicitly for candidates who value stability as much as technical novelty.
 
 ## A Concrete Scenario: Reducing Energy Use in a Distillation Unit
 
@@ -111,12 +111,12 @@ A process engineer and a data scientist at a chemical site want to reduce steam 
 | Aspect | Terneuzen and the canal zone | Rotterdam port industry |
 |---|---|---|
 | Scale | Large regional cluster | Europe's largest port and industrial complex |
-| Cross-border dimension | Built in — one port authority across the Netherlands and Belgium | Limited |
+| Cross-border dimension | Built in - one port authority across the Netherlands and Belgium | Limited |
 | Competition for data roles | Low, few candidates search the region | Higher |
 | Proximity to large cities | Ghent within commuting distance; Dutch cities further away | Rotterdam and The Hague nearby |
 | Housing costs | Generally lower | Higher |
 
-For candidates willing to live in Zeeland or the Ghent region, the combination of large-scale industry, low competition and lower housing costs can be attractive — provided they are comfortable with a less urban environment and longer travel to the Randstad.
+For candidates willing to live in Zeeland or the Ghent region, the combination of large-scale industry, low competition and lower housing costs can be attractive - provided they are comfortable with a less urban environment and longer travel to the Randstad.
 
 ## Practical Points for Working in a Cross-Border Industrial Region
 
@@ -145,7 +145,7 @@ For candidates willing to live in Zeeland or the Ghent region, the combination o
 
 ## Accessibility and Search Radius
 
-Terneuzen lies in Zeeuws-Vlaanderen, south of the Western Scheldt. The **Western Scheldt Tunnel** connects it with the rest of Zeeland, including Goes and Middelburg, and Ghent in Belgium is within commuting distance by car. There is no railway station in Terneuzen, so a car or bus is usually needed. A realistic search radius includes Sluiskil, Axel, Hulst, Vlissingen, Middelburg and — for cross-border workers — the Ghent region. Anyone living in Belgium and working in the Netherlands, or vice versa, should check tax and social security consequences with a cross-border information point.
+Terneuzen lies in Zeeuws-Vlaanderen, south of the Western Scheldt. The **Western Scheldt Tunnel** connects it with the rest of Zeeland, including Goes and Middelburg, and Ghent in Belgium is within commuting distance by car. There is no railway station in Terneuzen, so a car or bus is usually needed. A realistic search radius includes Sluiskil, Axel, Hulst, Vlissingen, Middelburg and - for cross-border workers - the Ghent region. Anyone living in Belgium and working in the Netherlands, or vice versa, should check tax and social security consequences with a cross-border information point.
 
 ## Why Now Is a Good Moment to Look at the Region
 
@@ -153,7 +153,7 @@ Several developments make Terneuzen and the canal zone more interesting for data
 
 ## Key Takeaways
 
-- Terneuzen combines large chemical and fertiliser production — including Dow Benelux and Yara Sluiskil — with North Sea Port, a cross-border port authority.
+- Terneuzen combines large chemical and fertiliser production - including Dow Benelux and Yara Sluiskil - with North Sea Port, a cross-border port authority.
 - Smart Delta Resources and energy transition projects create new modelling work on energy, hydrogen and CO2.
 - Data work covers process optimisation, energy management, predictive maintenance, emissions reporting and lock and vessel planning.
 - Seveso III, the EU ETS, environmental permits and NIS2 shape how data can be used.
@@ -168,10 +168,10 @@ Browse current AI, machine learning and data jobs in and around Terneuzen at [on
 ## Frequently Asked Questions
 
 ### (Scenario: candidate unaware of Terneuzen's industrial scale) Is there real AI-adjacent work in Terneuzen's chemical industry?
-Yes — chemical process optimisation involves genuine modelling work with direct safety and efficiency stakes, at a scale that rarely gets discussed nationally.
+Yes - chemical process optimisation involves genuine modelling work with direct safety and efficiency stakes, at a scale that rarely gets discussed nationally.
 
 ### (Scenario: candidate comparing this to Rotterdam) How does this compare to logistics work in Rotterdam?
-Similar in character — physical, high-stakes logistics and process work — but at a different scale, with added cross-border complexity.
+Similar in character - physical, high-stakes logistics and process work - but at a different scale, with added cross-border complexity.
 
 ### (Scenario: candidate searching nationally and finding little) Why doesn't this cluster show up in a national AI job search?
 Chemical and industrial employers don't compete for tech-scene visibility, and job titles use process-engineering vocabulary rather than AI terms.
@@ -187,7 +187,7 @@ Filter by category rather than title, and consider chemical and industrial emplo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there real AI-adjacent work in Terneuzen's chemical industry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — chemical process optimisation involves genuine modelling work with direct safety and efficiency stakes."}},
+    {"@type": "Question", "name": "Is there real AI-adjacent work in Terneuzen's chemical industry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - chemical process optimisation involves genuine modelling work with direct safety and efficiency stakes."}},
     {"@type": "Question", "name": "How does this compare to logistics work in Rotterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Similar in character, but at a different scale with added cross-border complexity."}},
     {"@type": "Question", "name": "Why doesn't this cluster show up in a national AI job search?", "acceptedAnswer": {"@type": "Answer", "text": "Chemical and industrial employers don't compete for tech-scene visibility, using process-engineering vocabulary."}},
     {"@type": "Question", "name": "What makes chemical process optimisation particularly demanding?", "acceptedAnswer": {"@type": "Answer", "text": "A wrong prediction has direct safety and efficiency consequences."}},

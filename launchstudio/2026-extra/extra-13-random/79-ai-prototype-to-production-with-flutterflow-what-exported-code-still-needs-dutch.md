@@ -25,13 +25,13 @@ FlutterFlow bevindt zich op het snijvlak van no-code en volwaardige softwareontw
 
 ## Waar FlutterFlow-Apps Hun Risico's Bewaren op Weg naar Productie
 
-Een FlutterFlow-applicatie is technisch gezien puur een frontend-client. De smartphone van de gebruiker communiceert rechtstreeks met Firebase, Supabase of externe API's. Dat betekent dat de backend-configuratie de enige echte beveiligingslinie vormt — en die staat volledig los van de visuele schermen die je in de editor hebt ontworpen.
+Een FlutterFlow-applicatie is technisch gezien puur een frontend-client. De smartphone van de gebruiker communiceert rechtstreeks met Firebase, Supabase of externe API's. Dat betekent dat de backend-configuratie de enige echte beveiligingslinie vormt - en die staat volledig los van de visuele schermen die je in de editor hebt ontworpen.
 
 **Firestore of Supabase Security Rules:** Wanneer de app data direct opvraagt uit Firestore, bepalen de beveiligingsregels (Security Rules) wie welk document mag lezen en overschrijven. Prototypes draaien vrijwel altijd op testmodusregels (*"allow read, write: if true;"*) of op een naïeve check (*"iedere ingelogde gebruiker mag alles"*). Bij Supabase geldt exact hetzelfde voor Row-Level Security (RLS). Een oogverblindend mooie app met openstaande regels stelt alle persoonsgegevens van al je klanten wagenwijd open voor iedereen die een gratis account aanmaakt.
 
 **Geheime API-sleutels in de client:** API-aanroepen die in FlutterFlow worden geconfigureerd met geheime sleutels (zoals OpenAI API keys of Mollie live keys) belanden in de gecompileerde app-binary. Iedereen met een eenvoudige decompiler kan deze sleutels binnen enkele seconden uit de app extraheren. Betaalsleutels, beheerders-tokens en AI-modellen horen uitsluitend thuis in Cloud Functions of Edge Functions.
 
-**Niet-gecontroleerde custom code:** FlutterFlow biedt de mogelijkheid om 'custom widgets', 'custom actions' en functies toe te voegen — vaak gekopieerd uit ChatGPT of Claude. Deze code draait met volledige rechten binnen je app en vereist een professionele review, inclusief de externe packages die ermee worden binnengehaald.
+**Niet-gecontroleerde custom code:** FlutterFlow biedt de mogelijkheid om 'custom widgets', 'custom actions' en functies toe te voegen - vaak gekopieerd uit ChatGPT of Claude. Deze code draait met volledige rechten binnen je app en vereist een professionele review, inclusief de externe packages die ermee worden binnengehaald.
 
 **Autorisatielogica uitsluitend in de interface:** Het simpelweg verbergen van een beheerdersknop voor normale gebruikers in de editor voorkomt niet dat een slimme gebruiker de onderliggende API direct aanroept. Rollen en permissies moeten altijd op serverniveau worden afgedwongen.
 
@@ -144,7 +144,7 @@ Vóór indiening bij Apple en Google:
 
 ## Waarom de Backend het Succes Bepaalt
 
-In FlutterFlow zien de interfaces er vrijwel direct professioneel en gelikt uit — dat is de ongekende kracht van het platform. Maar of jouw applicatie veilig en betrouwbaar is voor honderden leden of klanten, wordt voor 100% bepaald door wat er achter de schermen gebeurt: de backend-regels die datalekken voorkomen, serverfuncties die betalingen veiligstellen en een gestructureerd releaseproces. Wie daarin investeert, combineert de bouwsnelheid van FlutterFlow met de betrouwbaarheid van een enterprise-applicatie.
+In FlutterFlow zien de interfaces er vrijwel direct professioneel en gelikt uit - dat is de ongekende kracht van het platform. Maar of jouw applicatie veilig en betrouwbaar is voor honderden leden of klanten, wordt voor 100% bepaald door wat er achter de schermen gebeurt: de backend-regels die datalekken voorkomen, serverfuncties die betalingen veiligstellen en een gestructureerd releaseproces. Wie daarin investeert, combineert de bouwsnelheid van FlutterFlow met de betrouwbaarheid van een enterprise-applicatie.
 
 ## De Eerste Stap
 
@@ -154,7 +154,7 @@ Open vandaag nog je Firebase Console of Supabase Dashboard en controleer de acti
 
 LaunchStudio brengt FlutterFlow-prototypes veilig naar productie door de backend en het releaseproces professioneel dicht te timmeren: waterdichte beveiligingsregels met geautomatiseerde tests, Cloud Functions voor gevoelige bewerkingen, verwijdering van geheimen, custom code reviews, accountverwijderflows, crashmonitoring en begeleiding bij de store-reviews. Je ontwerpen blijven gewoon in FlutterFlow beheersbaar. LaunchStudio wordt ondersteund door Manifera, dat al ruim 11 jaar native Flutter- en mobiele applicaties bouwt voor internationale ondernemingen; bekijk [Manifera's mobile app development diensten](https://www.manifera.com/services/mobile-app-development/). Onze software-engineers opereren vanuit Ho Chi Minhstad onder Nederlandse leiding vanuit Amsterdam. Raadpleeg de officiële [FlutterFlow documentatie over Firebase security rules](https://docs.flutterflow.io/) als startpunt voor de beveiliging in de editor.
 
-[Deel je prototypelink met ons](https://launchstudio.eu/nl/#contact) — inclusief eventuele store-concepten.
+[Deel je prototypelink met ons](https://launchstudio.eu/nl/#contact) - inclusief eventuele store-concepten.
 
 ## Praktijkvoorbeeld
 
@@ -162,16 +162,16 @@ LaunchStudio brengt FlutterFlow-prototypes veilig naar productie door de backend
 
 Thijmen de Lange, instructeur bij een zweefvliegvereniging nabij Lelystad, bouwde Zweefvliegclub met behulp van FlutterFlow: clubleden reserveren lestoestellen en instructeurs, houden hun vlieguren bij in een digitaal logboek, zien live de kistbeschikbaarheid en rekenen startgelden af. Drie zweefvliegclubs in Midden-Nederland sloten zich aan, goed voor circa 520 actieve leden. Thijmen wilde de app vóór de start van het vliegseizoen in de App Store en Google Play hebben.
 
-De audit van LaunchStudio toonde het klassieke patroon van client-heavy mobiele apps. De Firestore-regels stonden zo afgesteld dat ieder ingelogd lid alle collecties kon lezen en overschrijven — inclusief de medische keuringsdata en betalingshistorie van andere piloten. Leden konden bovendien via een netwerkverzoek hun eigen vluchten als 'voldaan' markeren. De geheime Mollie API-sleutel stond rechtstreeks geconfigureerd in een FlutterFlow API-call en zat letterlijk in de app-binary. De speciale beheerdersfunctie "solovlucht goedkeuren" was weliswaar visueel verborgen voor leerlingen, maar de onderliggende databasemutatie stond voor iedereen open. Bovendien bevatte een custom action van ChatGPT een zwaar verouderd package met bekende crashes, ontbrak een accountverwijderfunctie en werden aanpassingen willekeurig doorgevoerd in zowel FlutterFlow als geëxporteerde code.
+De audit van LaunchStudio toonde het klassieke patroon van client-heavy mobiele apps. De Firestore-regels stonden zo afgesteld dat ieder ingelogd lid alle collecties kon lezen en overschrijven - inclusief de medische keuringsdata en betalingshistorie van andere piloten. Leden konden bovendien via een netwerkverzoek hun eigen vluchten als 'voldaan' markeren. De geheime Mollie API-sleutel stond rechtstreeks geconfigureerd in een FlutterFlow API-call en zat letterlijk in de app-binary. De speciale beheerdersfunctie "solovlucht goedkeuren" was weliswaar visueel verborgen voor leerlingen, maar de onderliggende databasemutatie stond voor iedereen open. Bovendien bevatte een custom action van ChatGPT een zwaar verouderd package met bekende crashes, ontbrak een accountverwijderfunctie en werden aanpassingen willekeurig doorgevoerd in zowel FlutterFlow als geëxporteerde code.
 
 Binnen elf werkdagen hebben de engineers van LaunchStudio de Firestore-regels strikt herschreven per club, lid en instructeursrol met emulator-tests, de betalingsafhandeling gemigreerd naar Google Cloud Functions met Mollie-webhooks, instructeursakkoorden server-side afgedwongen, het verouderde package vervangen, een conforme accountverwijderflow gebouwd, Firebase Crashlytics geactiveerd, FlutterFlow als centrale bron van waarheid ingericht met automatische Git-synchronisatie en de app-store-indieningen voorbereid.
 
 **Resultaat:** Beide apps werden bij de allereerste indiening direct goedgekeurd door Apple en Google. Het vliegseizoen startte vlekkeloos met alle drie de clubs, en een vierde vereniging sloot zich halverwege het seizoen aan. De crashvrije sessies bleven stabiel boven de 99,5%.
 
 > *"FlutterFlow zorgde ervoor dat de app er prachtig en af uitzag. De backend-regels erachter bepaalden of hij daadwerkelijk veilig was."*
-> — **Thijmen de Lange, Oprichter, Zweefvliegclub (Lelystad)**
+> - **Thijmen de Lange, Oprichter, Zweefvliegclub (Lelystad)**
 
-**Kosten & Tijdlijn:** € 3.300 (Mobiele App: security rules, server functions, code review, accountverwijdering, monitoring en store releases) — afgerond in 11 werkdagen.
+**Kosten & Tijdlijn:** € 3.300 (Mobiele App: security rules, server functions, code review, accountverwijdering, monitoring en store releases) - afgerond in 11 werkdagen.
 
 ## Veelgestelde Vragen
 

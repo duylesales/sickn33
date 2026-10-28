@@ -29,7 +29,7 @@ Stop. Adem in. Leg uw telefoon weg.
 
 Wat u op dat moment ervaart is geen geniale productinval die uw bedrijf gaat redden. Wat u ervaart is **lanceringsangst vermomd als productiviteit**. Het toevoegen van last-minute features is het meest verslavende verdovingsmiddel voor oprichters: zolang u immers nog bouwt, hoeft u uw product niet bloot te stellen aan het keiharde oordeel van de markt. Maar elke nachtelijke inval die u doordrukt in de laatste twee weken vóór livegang, verhoogt het risico op fatale bugs exponentieel en schuift uw lanceerdatum geruisloos vooruit.
 
-Hier is hoe u een ijzersterk filter opzet om nee te zeggen tegen uzelf — en waarom uw kans op succes daarmee verdubbelt.
+Hier is hoe u een ijzersterk filter opzet om nee te zeggen tegen uzelf - en waarom uw kans op succes daarmee verdubbelt.
 
 ## Waarom Scope Creep Vooral een Oprichtersprobleem Is
 
@@ -76,9 +76,9 @@ Wanneer u als oprichter consequent uw eigen ideeën durft te parkeren, geeft u b
 
 ## Hoe U Dit Filter Handhaaft Onder Hoge Druk
 
-De moeilijkste test voor deze discipline vindt niet plaats tijdens een rustige planningssessie op maandagochtend — de test vindt plaats op het moment dat een idee dringend en onweerstaanbaar voelt, zoals bij die nachtelijke inval om 02:15 uur. Twee concrete gewoontes helpen u om de verleiding in het heetst van de strijd te weerstaan.
+De moeilijkste test voor deze discipline vindt niet plaats tijdens een rustige planningssessie op maandagochtend - de test vindt plaats op het moment dat een idee dringend en onweerstaanbaar voelt, zoals bij die nachtelijke inval om 02:15 uur. Twee concrete gewoontes helpen u om de verleiding in het heetst van de strijd te weerstaan.
 
-Ten eerste: schrijf de ingeving altijd eerst op in uw notities vóórdat u iemand van uw team of ontwikkelpartner contacteert. Bouw bewust wrijving in tussen de gedachte en de actie. Een idee dat de volgende ochtend na een goede nachtrust en een nuchtere blik op de vier filtervragen nog steeds overeind staat, verdient een rustig gesprek. Een idee dat dat nachtelijke hiaat niet overleeft, was puur nervositeit — en u heeft uzelf en uw partner een hoop afleiding bespaard.
+Ten eerste: schrijf de ingeving altijd eerst op in uw notities vóórdat u iemand van uw team of ontwikkelpartner contacteert. Bouw bewust wrijving in tussen de gedachte en de actie. Een idee dat de volgende ochtend na een goede nachtrust en een nuchtere blik op de vier filtervragen nog steeds overeind staat, verdient een rustig gesprek. Een idee dat dat nachtelijke hiaat niet overleeft, was puur nervositeit - en u heeft uzelf en uw partner een hoop afleiding bespaard.
 
 Ten tweede: spreek dit filter vóóraf expliciet af met uw technische partner. Maak van vragen als "werkt de kernwaarde zonder dit?" en "kan dit wachten tot week één na launch?" een vast onderdeel van uw gedeelde vocabulaire. Het vaste-prijs en vaste-doorlooptijd model van [LaunchStudio](https://launchstudio.eu/nl/) is exact ontworpen om dit fundament te beschermen. Onze senior engineers borgen de afgesproken scope, zodat we samen kunnen vieren dat uw product op tijd en binnen budget live staat.
 
@@ -100,13 +100,13 @@ De overige dertien wensen bleven onaangeroerd. Casper lanceerde stipt op de afge
 **Resultaat:** Omzethelder lanceerde exact op tijd, binnen het afgesproken Launch & Grow-budget van €4.900. De twee functies die na de launch werden gebouwd, werden in een fractie van de tijd gerealiseerd omdat er werd gebouwd op basis van feiten in plaats van nachtelijke aannames.
 
 > *"Elk van die veertien ideeën voelde op het moment van bedenken als absolute bittere noodzaak. Een week na de lancering bewezen mijn echte gebruikers welke twee er werkelijk toe deden en welke twaalf puur waren voortgekomen uit mijn eigen lanceringsangst. Als ik ze allemaal had nagejaagd, was ik een maand later nog steeds niet live geweest."*
-> — **Casper van Dijk, Oprichter, Omzethelder**
+> - **Casper van Dijk, Oprichter, Omzethelder**
 
-**Kosten & Doorlooptijd:** €4.900 (Launch & Grow Package, abonnements-SaaS) — live op de oorspronkelijk geplande datum binnen 16 werkdagen.
+**Kosten & Doorlooptijd:** €4.900 (Launch & Grow Package, abonnements-SaaS) - live op de oorspronkelijk geplande datum binnen 16 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Wat als mijn engineeringpartner nog tijd over heeft in de laatste week — kan ik die uren niet benutten voor nieuwe features?
+### Wat als mijn engineeringpartner nog tijd over heeft in de laatste week - kan ik die uren niet benutten voor nieuwe features?
 Gebruik overgebleven uren nooit voor nieuwe functionaliteiten in de lanceerweek. Gebruik die tijd uitsluitend voor kwaliteitsverbetering: extra stresstests, aangescherpte foutafhandeling, beveiligingscontroles en het nalopen van documentatie. Nieuwe features introduceren nieuw risico op het meest kwetsbare moment.
 
 ### Hoe herken ik het verschil tussen gezonde productvisie en pure lanceringsangst om 02:00 uur 's nachts?
@@ -128,7 +128,7 @@ Nee. Fouten en mankementen in functionaliteiten die binnen de afgesproken scope 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat als mijn engineeringpartner nog tijd over heeft in de laatste week — kan ik die uren niet benutten voor nieuwe features?",
+      "name": "Wat als mijn engineeringpartner nog tijd over heeft in de laatste week - kan ik die uren niet benutten voor nieuwe features?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Gebruik overgebleven uren voor kwaliteitsverbetering, tests en documentatie, nooit voor nieuwe features die op het laatste moment ongetest risico introduceren."

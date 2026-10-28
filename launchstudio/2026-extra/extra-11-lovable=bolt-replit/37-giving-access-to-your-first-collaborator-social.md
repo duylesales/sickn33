@@ -1,4 +1,4 @@
-🚨 Nadine Peters ran Kliniekagenda in Lovable for 11 private clinics in Breda, holding patient records and appointment history. Over two years, she worked with four different freelance contractors — sharing master database passwords, production API keys, and admin logins over Slack without ever rotating credentials after offboarding. 😳
+🚨 Nadine Peters ran Kliniekagenda in Lovable for 11 private clinics in Breda, holding patient records and appointment history. Over two years, she worked with four different freelance contractors - sharing master database passwords, production API keys, and admin logins over Slack without ever rotating credentials after offboarding. 😳
 
 Sharing master production credentials with contractors is the #1 cause of accidental data breaches. Here's how to delegate safely: 🧠
 

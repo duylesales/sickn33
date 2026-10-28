@@ -11,9 +11,9 @@ The indexing checklist: ✅
 2️⃣ Composite indexes for common filter+sort patterns
 3️⃣ Specialized vector indexes for embeddings
 4️⃣ Monitor slow-query logs after launch
-5️⃣ Don't over-index — every index adds write overhead
+5️⃣ Don't over-index - every index adds write overhead
 
-Don't just assume your index works — run `EXPLAIN ANALYZE`. "Seq Scan" on a query you thought was indexed means it's silently doing nothing. 🔍
+Don't just assume your index works - run `EXPLAIN ANALYZE`. "Seq Scan" on a query you thought was indexed means it's silently doing nothing. 🔍
 
 At **LaunchStudio**, backed by Manifera's database expertise across PostgreSQL, MongoDB & MySQL, we catch this before it becomes a crisis. 🛡️
 

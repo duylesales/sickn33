@@ -32,17 +32,17 @@ Content Format: Policy Brief
 }
 </script>
 
-Most corporate sustainability efforts focus on what happens inside the building — energy use, waste, supply chains. Commuting is a less visible category, largely because a company hires people who then decide independently how far they'll travel, and no single actor feels directly responsible for the emissions that decision produces. That's a policy gap more than a technical one, and it's one that job visibility can partially close.
+Most corporate sustainability efforts focus on what happens inside the building - energy use, waste, supply chains. Commuting is a less visible category, largely because a company hires people who then decide independently how far they'll travel, and no single actor feels directly responsible for the emissions that decision produces. That's a policy gap more than a technical one, and it's one that job visibility can partially close.
 
 ## The Mechanism, Stated Plainly
 
-A candidate who doesn't know that a suitable role exists ten minutes from home may accept a much farther one simply because it was the visible option. That's not a choice anyone made deliberately about commuting — it's a byproduct of vacancies being harder to find at short distances than at the scale of a whole metropolitan region. Making local roles genuinely visible, at an address level rather than a city level, doesn't force a shorter commute on anyone, but it removes an information barrier that currently pushes toward longer ones by default.
+A candidate who doesn't know that a suitable role exists ten minutes from home may accept a much farther one simply because it was the visible option. That's not a choice anyone made deliberately about commuting - it's a byproduct of vacancies being harder to find at short distances than at the scale of a whole metropolitan region. Making local roles genuinely visible, at an address level rather than a city level, doesn't force a shorter commute on anyone, but it removes an information barrier that currently pushes toward longer ones by default.
 
 ## Why This Is Relevant to Regional and Business-Association Work
 
 **It's a low-cost lever compared to infrastructure investment.** Improving public transit or building housing near employment centers takes years and significant capital. Improving job visibility is comparatively inexpensive and can be encouraged through existing employer relationships an organization already maintains.
 
-**It complements, rather than replaces, other mobility strategies.** This isn't a substitute for transit investment or housing policy — it's a smaller, immediate lever that sits alongside them, addressing the specific problem of candidates not knowing what's already close by.
+**It complements, rather than replaces, other mobility strategies.** This isn't a substitute for transit investment or housing policy - it's a smaller, immediate lever that sits alongside them, addressing the specific problem of candidates not knowing what's already close by.
 
 **It's measurable at the level of individual employer relationships.** Encouraging local employers to list open roles with precise location data, and encouraging job seekers to search by distance rather than city, is a concrete action a business association or regional office can point to.
 
@@ -69,7 +69,7 @@ Framing this purely as a recruiting or regional-development topic misses an audi
 
 ## A Walkthrough: How This Might Enter a Company's Sustainability Reporting
 
-A mid-sized company's sustainability team is preparing its annual Scope 3 emissions report and realizes commuting is a category they've never actively managed, only measured. A team member discovers that a meaningful share of new hires over the past year accepted longer-commute roles simply because closer opportunities weren't visible to them at the time of their job search — not because closer options didn't exist. Adding a small action item — encouraging both the company's own future job postings and its regional partnerships to prioritize address-level visibility — becomes a low-cost, easily justified addition to that year's sustainability action plan, sitting alongside larger initiatives like building retrofits.
+A mid-sized company's sustainability team is preparing its annual Scope 3 emissions report and realizes commuting is a category they've never actively managed, only measured. A team member discovers that a meaningful share of new hires over the past year accepted longer-commute roles simply because closer opportunities weren't visible to them at the time of their job search - not because closer options didn't exist. Adding a small action item - encouraging both the company's own future job postings and its regional partnerships to prioritize address-level visibility - becomes a low-cost, easily justified addition to that year's sustainability action plan, sitting alongside larger initiatives like building retrofits.
 
 ## A Misconception About Whether This Is "Real" Sustainability Work
 
@@ -77,7 +77,7 @@ Some sustainability professionals might dismiss this as too small or indirect to
 
 ## Why Pairing This With Existing Regional Partnerships Multiplies Its Effect
 
-A single company acting alone on this lever has limited effect; the same idea applied across a regional business association's membership, or in coordination with a municipality's own sustainability goals (discussed elsewhere on this site), compounds the impact well beyond what any one employer could achieve independently — making this a natural candidate for regional coordination rather than a purely internal corporate initiative.
+A single company acting alone on this lever has limited effect; the same idea applied across a regional business association's membership, or in coordination with a municipality's own sustainability goals (discussed elsewhere on this site), compounds the impact well beyond what any one employer could achieve independently - making this a natural candidate for regional coordination rather than a purely internal corporate initiative.
 
 ## How This Connects to Broader European Sustainability Reporting Trends
 
@@ -85,7 +85,7 @@ As sustainability reporting requirements across the EU continue to expand in sco
 
 ## Why This Argument Works Best When Paired With Concrete Numbers, Not Just Principle
 
-Sustainability officers evaluating many competing potential initiatives respond better to a concrete, even if modest, projected impact than to a purely qualitative argument about "removing information barriers." Where possible, pairing this proposal with an internal estimate — even a rough one, based on your own company's actual new-hire commute patterns over the past year — of how many new hires might plausibly have chosen a closer role had they known about it, makes the case considerably more persuasive than the general principle alone, turning an abstract argument into something a sustainability team can actually evaluate and potentially act on.
+Sustainability officers evaluating many competing potential initiatives respond better to a concrete, even if modest, projected impact than to a purely qualitative argument about "removing information barriers." Where possible, pairing this proposal with an internal estimate - even a rough one, based on your own company's actual new-hire commute patterns over the past year - of how many new hires might plausibly have chosen a closer role had they known about it, makes the case considerably more persuasive than the general principle alone, turning an abstract argument into something a sustainability team can actually evaluate and potentially act on.
 
 ## The Reporting Frameworks, Named
 
@@ -115,7 +115,7 @@ To show why local hiring matters in these frameworks, the calculation is straigh
 4. **Model a scenario** in which a share of long-distance commuters had instead been hired from within a shorter radius, or had chosen a nearby employer.
 5. **Report the difference** as an indicative potential reduction, clearly labelled as an estimate.
 
-The purpose is not to claim precise savings from job-board visibility, but to make the relationship between hiring radius and reported emissions visible to decision-makers. Mode matters as much as distance: a short car commute can emit more than a longer train journey, while cycling emits close to nothing — which is why distance-based job search works best alongside good cycling and public transport options.
+The purpose is not to claim precise savings from job-board visibility, but to make the relationship between hiring radius and reported emissions visible to decision-makers. Mode matters as much as distance: a short car commute can emit more than a longer train journey, while cycling emits close to nothing - which is why distance-based job search works best alongside good cycling and public transport options.
 
 ## Where Regional Organisations Fit In
 
@@ -124,7 +124,7 @@ For regional development agencies, municipalities and business associations, the
 - **Employers already collect the data.** Organisations subject to WPM know their employees' commute patterns and have an incentive to reduce emissions per kilometre.
 - **Regional mobility programmes exist.** Many Dutch regions run programmes with employers to reduce peak-hour car traffic and encourage cycling and public transport. Making nearby vacancies visible is a natural addition to those conversations.
 - **Research is available.** The **Netherlands Institute for Transport Policy Analysis (KiM)** and CBS publish analyses of Dutch commuting patterns that regional organisations can use to frame the discussion with local data.
-- **Talent retention and sustainability reinforce each other.** A graduate who finds a suitable job near home stays in the region and commutes less — the same outcome serves both economic development and climate goals.
+- **Talent retention and sustainability reinforce each other.** A graduate who finds a suitable job near home stays in the region and commutes less - the same outcome serves both economic development and climate goals.
 
 ## Key Takeaways
 
@@ -136,37 +136,37 @@ For regional development agencies, municipalities and business associations, the
 
 ## Where to Start
 
-If your organization already engages with local employers on sustainability or economic development, consider whether encouraging visible, address-level job listings fits alongside that work — a low-effort addition rather than a new program.
+If your organization already engages with local employers on sustainability or economic development, consider whether encouraging visible, address-level job listings fits alongside that work - a low-effort addition rather than a new program.
 
 Reach out to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whether this fits your region's existing initiatives.
 
 ## Frequently Asked Questions
 
 ### (Scenario: sustainability officer skeptical this is a meaningful lever) Is job visibility really a meaningful sustainability lever, or a minor detail?
-It's a small, concrete lever rather than a headline initiative — it shouldn't be presented as meaningfully offsetting a region's total commuting emissions on its own, but it's a low-cost complement to larger mobility and housing strategies.
+It's a small, concrete lever rather than a headline initiative - it shouldn't be presented as meaningfully offsetting a region's total commuting emissions on its own, but it's a low-cost complement to larger mobility and housing strategies.
 
 ### (Scenario: regional office wondering how this differs from transit investment) How does this differ from investing in public transit or housing near employment centers?
-It's a much lower-cost, faster-to-implement lever addressing a specific information gap — candidates not knowing what's already close by — rather than a substitute for the harder, longer-term infrastructure work.
+It's a much lower-cost, faster-to-implement lever addressing a specific information gap - candidates not knowing what's already close by - rather than a substitute for the harder, longer-term infrastructure work.
 
 ### (Scenario: business association wondering what action to actually take) What would our organization actually do to act on this?
-Encourage employers you already work with to list open roles with precise location data, and encourage job seekers in your network to search by distance rather than city — both low-effort additions to existing relationships.
+Encourage employers you already work with to list open roles with precise location data, and encourage job seekers in your network to search by distance rather than city - both low-effort additions to existing relationships.
 
 ### (Scenario: policy officer wondering how to measure this) Is this measurable, or just a qualitative argument?
-It's measurable at the level of employer relationships — how many local employers list roles with precise locations, and whether job seekers engage with distance-based search — though it shouldn't be treated as a headline emissions metric on its own.
+It's measurable at the level of employer relationships - how many local employers list roles with precise locations, and whether job seekers engage with distance-based search - though it shouldn't be treated as a headline emissions metric on its own.
 
 ### (Scenario: reader wondering if this replaces other approaches) Does this replace the need for transit or housing investment?
-No — it's a smaller, immediate complement that sits alongside those larger strategies, not a substitute for them.
+No - it's a smaller, immediate complement that sits alongside those larger strategies, not a substitute for them.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is job visibility really a meaningful sustainability lever, or a minor detail?", "acceptedAnswer": {"@type": "Answer", "text": "It's a small, concrete lever rather than a headline initiative — a low-cost complement to larger mobility and housing strategies, not a substitute for them."}},
+    {"@type": "Question", "name": "Is job visibility really a meaningful sustainability lever, or a minor detail?", "acceptedAnswer": {"@type": "Answer", "text": "It's a small, concrete lever rather than a headline initiative - a low-cost complement to larger mobility and housing strategies, not a substitute for them."}},
     {"@type": "Question", "name": "How does this differ from investing in public transit or housing near employment centers?", "acceptedAnswer": {"@type": "Answer", "text": "It's a much lower-cost, faster-to-implement lever addressing a specific information gap, rather than a substitute for infrastructure work."}},
     {"@type": "Question", "name": "What would our organization actually do to act on this?", "acceptedAnswer": {"@type": "Answer", "text": "Encourage employers to list open roles with precise location data, and encourage job seekers to search by distance rather than city."}},
     {"@type": "Question", "name": "Is this measurable, or just a qualitative argument?", "acceptedAnswer": {"@type": "Answer", "text": "It's measurable at the level of employer relationships, though it shouldn't be treated as a headline emissions metric on its own."}},
-    {"@type": "Question", "name": "Does this replace the need for transit or housing investment?", "acceptedAnswer": {"@type": "Answer", "text": "No — it's a smaller, immediate complement that sits alongside those larger strategies."}}
+    {"@type": "Question", "name": "Does this replace the need for transit or housing investment?", "acceptedAnswer": {"@type": "Answer", "text": "No - it's a smaller, immediate complement that sits alongside those larger strategies."}}
   ]
 }
 </script>

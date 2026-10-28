@@ -1,4 +1,4 @@
-🔥 Violet built a prototype using **Lovable** — violet, a startup founder, used **lovable** to build a healthcare crm saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Violet built a prototype using **Lovable** - violet, a startup founder, used **lovable** to build a healthcare crm saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Violet's application achieved production readiness: Violet passed the corporate security audit on her next submission, securing a €30,000 enterprise annual contract. (€4,500 (Compliance & Security Package) — production-ready and deployed in 15 business days.). 🚀
+Violet's application achieved production readiness: Violet passed the corporate security audit on her next submission, securing a €30,000 enterprise annual contract. (€4,500 (Compliance & Security Package) - production-ready and deployed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/selling-ai-enterprise-clients-security-compliance
 

@@ -100,7 +100,7 @@ Wanneer een startupcodebase is opgebouwd door verschillende oprichters die elk h
 
 Marcus runt een gerenommeerd digitaal ontwerpbureau in Antwerpen (Studio Motif). Zijn team ontwerpt hoogwaardige interfaces, maar moest de technische realisatie altijd uitbesteden. Met de opkomst van AI-tools dacht Marcus de ontwikkeling eindelijk binnenshuis te kunnen halen.
 
-Hij testte alle tools. Voor een belangrijk klantproject — een beveiligd documentenportaal voor een accountantskantoor — ontwierp hij eerst de componenten met v0. Vervolgens zette hij in Lovable de applicatielogica en de Supabase-database op.
+Hij testte alle tools. Voor een belangrijk klantproject - een beveiligd documentenportaal voor een accountantskantoor - ontwierp hij eerst de componenten met v0. Vervolgens zette hij in Lovable de applicatielogica en de Supabase-database op.
 
 De klant was razend enthousiast over de demonstratie. Totdat de IT-afdeling van het accountantskantoor een beveiligingsaudit uitvoerde.
 
@@ -113,9 +113,9 @@ Via een aanbeveling kwam Marcus bij LaunchStudio. In een kort overleg beoordeeld
 **Resultaat:** Het portaal doorstond de hernieuwde IT-audit met vlag en wimpel. Studio Motif zet LaunchStudio nu standaard in als vaste white-label backend-partner voor al hun projecten.
 
 > *"We hebben weken verspild aan het zoeken naar die ene AI-tool die alles kon. LaunchStudio leerde ons de gouden regel: gebruik AI voor de frontend en ervaren engineers voor de infrastructuur. Dat is de enige aanpak die werkt voor zakelijke klanten."*
-> — **Marcus Peeters, Oprichter, Studio Motif (Antwerpen)**
+> - **Marcus Peeters, Oprichter, Studio Motif (Antwerpen)**
 
-**Kosten & Doorlooptijd:** €4.500 (Launch & Grow Pakket) — productie-klaar en live binnen 9 werkdagen.
+**Kosten & Doorlooptijd:** €4.500 (Launch & Grow Pakket) - productie-klaar en live binnen 9 werkdagen.
 
 ---
 
@@ -131,7 +131,7 @@ Ja, mits de tool standaard open-source code genereert (zoals React, Next.js, Vue
 Gebruik Bolt voor eenvoudige landingspagina's en visuele concepten. Gebruik Lovable zodra uw applicatie gebruikersaccounts, complexe statussen en meerdere databasetabellen nodig heeft. Lovable sluit aanzienlijk beter aan op professionele backend-engineering.
 
 ### Zijn de React-componenten van AI-tools écht van productieniveau?
-Ja, de frontend-UI (HTML, CSS, React componenten) die tools als Lovable en v0 genereren is van uitstekende kwaliteit. Kwaliteitsproblemen bij AI-tools zitten vrijwel uitsluitend in de ontbrekende backend-architectuur en beveiliging — exact de onderdelen die LaunchStudio toevoegt.
+Ja, de frontend-UI (HTML, CSS, React componenten) die tools als Lovable en v0 genereren is van uitstekende kwaliteit. Kwaliteitsproblemen bij AI-tools zitten vrijwel uitsluitend in de ontbrekende backend-architectuur en beveiliging - exact de onderdelen die LaunchStudio toevoegt.
 
 ### Wat is het meest voorkomende breekpunt bij het bouwen van apps met AI-tools?
 De deployment- en beveiligingsfase. Oprichters zien een lokaal werkend prototype en denken dat het project voor 90% af is. Vervolgens ontdekken ze dat het inrichten van veilige cloud-servers, DNS-configuraties, databasemigraties en betalingswebhooks net zoveel specialistische kennis vereist als traditionele software-ontwikkeling.

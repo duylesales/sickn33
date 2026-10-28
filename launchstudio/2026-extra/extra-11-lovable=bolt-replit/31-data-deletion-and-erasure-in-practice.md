@@ -44,7 +44,7 @@ Start by listing where one user's data exists in your product. For a typical AI-
 
 A deletion that covers the first item and none of the others is not deletion. It is a hidden account.
 
-## The Parts You Are Allowed — and Sometimes Required — to Keep
+## The Parts You Are Allowed - and Sometimes Required - to Keep
 
 Erasure is not absolute, and understanding the exceptions prevents both over-deletion and the panic of believing you must destroy your accounting.
 
@@ -52,7 +52,7 @@ Erasure is not absolute, and understanding the exceptions prevents both over-del
 
 **Data needed for a legal claim or defence,** kept proportionately and not indefinitely.
 
-**Other people's data.** A message thread between two users, a review of a seller, a shared document — deleting one participant's account does not entitle you to erase content that concerns someone else. Anonymising the departed party is usually the right answer.
+**Other people's data.** A message thread between two users, a review of a seller, a shared document - deleting one participant's account does not entitle you to erase content that concerns someone else. Anonymising the departed party is usually the right answer.
 
 **Aggregate figures** that cannot identify anyone.
 
@@ -64,13 +64,13 @@ For anything entangled with other users or with your own records, replacing iden
 
 A booking becomes an anonymous booking that still counts in a venue's history. A review keeps its text and rating and loses the reviewer's name. A message thread survives with one participant marked as a deleted user.
 
-The important detail: anonymisation has to be real. Replacing a name while leaving the email address, the phone number, the address and a user identifier that links to other records is not anonymisation — it is relabelling. If the remaining fields can identify the person alone or in combination, the data is still personal data.
+The important detail: anonymisation has to be real. Replacing a name while leaving the email address, the phone number, the address and a user identifier that links to other records is not anonymisation - it is relabelling. If the remaining fields can identify the person alone or in combination, the data is still personal data.
 
 ## The Referential Integrity Problem
 
 Delete a user row that other records point to and your database will either refuse or, worse, leave orphans your application does not expect, producing pages that fail on a missing reference.
 
-This is the practical reason deletion is engineering work rather than a button. Every relationship needs a decision made in advance — cascade, set to null, anonymise, or block deletion until something else is resolved — and those decisions must be expressed in the schema rather than hoped for in application code.
+This is the practical reason deletion is engineering work rather than a button. Every relationship needs a decision made in advance - cascade, set to null, anonymise, or block deletion until something else is resolved - and those decisions must be expressed in the schema rather than hoped for in application code.
 
 Products that skip this end up with a delete function nobody dares to run, which is how deletion requests start being handled manually and, eventually, not at all.
 
@@ -78,7 +78,7 @@ Products that skip this end up with a delete function nobody dares to run, which
 
 **Third parties** each need their own path. Most providers offer deletion of a contact or a record, sometimes via an interface and sometimes via an API. Build this into your deletion routine rather than remembering it, because manual steps do not survive contact with a busy week.
 
-**Backups** are the part founders try to avoid explaining. Deleted data persists in backups until those backups expire. This is normal, accepted practice — the appropriate answer is to state the retention period, ensure restored data is re-deleted if a restore happens, and not claim instantaneous erasure everywhere.
+**Backups** are the part founders try to avoid explaining. Deleted data persists in backups until those backups expire. This is normal, accepted practice - the appropriate answer is to state the retention period, ensure restored data is re-deleted if a restore happens, and not claim instantaneous erasure everywhere.
 
 Saying this plainly in your privacy statement is better than a vaguer claim you cannot honour.
 
@@ -96,7 +96,7 @@ Saying this plainly in your privacy statement is better than a vaguer claim you 
 
 ## A Test You Can Run This Week
 
-Create an account, use the product properly — book something, upload a file, trigger an email, cause an error. Then delete the account and go looking.
+Create an account, use the product properly - book something, upload a file, trigger an email, cause an error. Then delete the account and go looking.
 
 Is the user row gone? Their files? Their contact in the email provider? Their identifier in the error tracker? Does any page break? Can you still find them by searching your database for the email address?
 
@@ -106,7 +106,7 @@ Nearly every founder who runs this test for the first time finds at least three 
 
 This is well-bounded work that produces a permanent answer to a question every business customer eventually asks. LaunchStudio implements it as part of preparing an AI-built product for real customers: a per-data-type decision map of delete, anonymise or retain; schema-level rules so deletion cannot leave orphans; a routine covering storage, third-party services and logs; retention rules that run automatically; a self-service deletion path with a grace period; and the documentation your customers' privacy officers will ask for.
 
-The interface you built in Lovable stays exactly as it is. The engineering comes from Manifera — eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City — and it sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages).
+The interface you built in Lovable stays exactly as it is. The engineering comes from Manifera - eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City - and it sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages).
 
 If your delete button removes one row, [describe your project](https://launchstudio.eu/en/#contact) and we will map what it actually needs to reach, usually within one business day.
 
@@ -130,7 +130,7 @@ The reason to do this before anyone asks: holding personal data longer than nece
 
 Deletion done properly is irreversible by design, which creates a second problem: mistakes.
 
-A customer who deletes an account in frustration and writes back an hour later, a support action taken against the wrong record, a retention job configured with the wrong period — all of these are ordinary, and none of them are recoverable once the data is genuinely gone.
+A customer who deletes an account in frustration and writes back an hour later, a support action taken against the wrong record, a retention job configured with the wrong period - all of these are ordinary, and none of them are recoverable once the data is genuinely gone.
 
 The standard answer is a grace period: mark the record as deleted, hide it from the product immediately so the user experiences deletion, and remove it permanently after a stated interval. Fourteen days is common and any period works provided you state it.
 
@@ -151,9 +151,9 @@ Seven business days of work: a decision map across fourteen data types marking e
 **Result:** both members received a written explanation of exactly what had been removed and what was anonymised, and the platform passed a data-protection review from a municipality four months later with deletion cited as a strength.
 
 > *"I had written in my own privacy statement that people could have their data deleted. I had built a button that hid their account and left everything else exactly where it was."*
-> — **Hanneke Doorn, Founder, Buurtkracht (Zwolle)**
+> - **Hanneke Doorn, Founder, Buurtkracht (Zwolle)**
 
-**Cost & Timeline:** €3,400 (deletion map, schema rules, third-party integration, self-service flow, retention automation) — completed in 7 business days.
+**Cost & Timeline:** €3,400 (deletion map, schema rules, third-party integration, self-service flow, retention automation) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -175,7 +175,7 @@ Often, and it is usually the practical answer for content entangled with other u
 
 ### How do I know my deletion actually works?
 
-Create a real account, use the product fully, delete it, then search every system for that person — database, storage, email provider, error tracker, logs. Most founders find at least three places on the first attempt.
+Create a real account, use the product fully, delete it, then search every system for that person - database, storage, email provider, error tracker, logs. Most founders find at least three places on the first attempt.
 
 <script type="application/ld+json">
 {

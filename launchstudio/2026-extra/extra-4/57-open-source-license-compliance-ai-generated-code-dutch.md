@@ -62,9 +62,9 @@ KENNISGEVINGEN VAN DERDEN (THIRD-PARTY NOTICES)
 
 Dit product bevat software van de volgende open-source projecten:
 
-- date-fns (MIT License) — Copyright (c) date-fns contributors
-- react-table (MIT License) — Copyright (c) Tanner Linsley
-- pdf-lib (MIT License) — Copyright (c) PDF-lib contributors
+- date-fns (MIT License) - Copyright (c) date-fns contributors
+- react-table (MIT License) - Copyright (c) Tanner Linsley
+- pdf-lib (MIT License) - Copyright (c) PDF-lib contributors
 
 De volledige licentietekst voor elk pakket is beschikbaar in
 /legal/third-party-notices.txt
@@ -85,9 +85,9 @@ LaunchStudio voerde een licentie-audit uit over RouteBoard's codebase. We identi
 **Resultaat:** RouteBoard's codebase slaagde voor een daaropvolgende informele licentiebeoordeling zonder markeringen, wat Vince een schone basis gaf voor elk toekomstig overnamegesprek.
 
 > *"Ik had geen idee dat een gesuggereerde code-snippet met juridische voorwaarden kon komen. Ik zag simpelweg dat het werkte en ging door – wat exact het probleem is."*
-> — **Vince Aarts, Oprichter, RouteBoard (Hardenberg)**
+> - **Vince Aarts, Oprichter, RouteBoard (Hardenberg)**
 
-**Kosten en tijdlijn:** € 1.400 (volledige licentie-audit van de codebase en schone herschrijfsessie van de gemarkeerde routefunctie) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (volledige licentie-audit van de codebase en schone herschrijfsessie van de gemarkeerde routefunctie) - voltooid in 8 werkdagen.
 
 ---
 

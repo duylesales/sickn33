@@ -9,9 +9,9 @@ Doelpersona: B (Technische Solo-Oprichter)
 
 Wanneer u als technische solo-oprichter een AI-applicatie bouwt, is ontwikkelsnelheid van levensbelang. U gebruikt Bolt.new of Cursor om in sneltreinvaart uw React-frontend te genereren, en kiest vervolgens Supabase als uw backend.
 
-Supabase — een open-source Firebase-alternatief gebouwd bovenop de krachtige relationele database PostgreSQL — is zonder twijfel een van de allerbeste database-keuzes voor moderne AI-startups. Het biedt kant-en-klare API's, realtime data-synchronisatie en ingebouwde vector-ondersteuning (`pgvector`) voor het opslaan van AI-embeddings.
+Supabase - een open-source Firebase-alternatief gebouwd bovenop de krachtige relationele database PostgreSQL - is zonder twijfel een van de allerbeste database-keuzes voor moderne AI-startups. Het biedt kant-en-klare API's, realtime data-synchronisatie en ingebouwde vector-ondersteuning (`pgvector`) voor het opslaan van AI-embeddings.
 
-Echter: exact dezelfde eigenschap die Supabase zo razendsnel maakt om mee te ontwikkelen — de automatisch gegenereerde client-side API — vormt tevens een gigantisch beveiligingslek als u niet exact weet hoe u deze moet vergrendelen. Als u Supabase rechtstreeks aanroept vanuit uw React-frontend zónder **Row Level Security (RLS)** in te stellen, staat uw complete database wagenwijd open voor het gehele openbare internet.
+Echter: exact dezelfde eigenschap die Supabase zo razendsnel maakt om mee te ontwikkelen - de automatisch gegenereerde client-side API - vormt tevens een gigantisch beveiligingslek als u niet exact weet hoe u deze moet vergrendelen. Als u Supabase rechtstreeks aanroept vanuit uw React-frontend zónder **Row Level Security (RLS)** in te stellen, staat uw complete database wagenwijd open voor het gehele openbare internet.
 
 Dit is geen theoretisch risico: onafhankelijke audits van door AI gegenereerde codebases tonen aan dat **45% van deze projecten ernstige beveiligingslekken bevat**, en het ontbreken of verkeerd configureren van RLS is met afstand de meest voorkomende fout.
 
@@ -38,7 +38,7 @@ const { data, error } = await supabase
   .delete()
 ```
 
-Als u geen Row Level Security heeft ingeschakeld, voert PostgreSQL dit commando onmiddellijk uit. De aanvaller wist binnen één seconde uw complete gebruikerstabel. Hier is geen geavanceerde hackerskennis voor nodig — de openbare `anon`-sleutel wordt standaard meegestuurd naar elke browser, en iedereen kan die sleutel uit het netwerktabblad kopiëren en willekeurige queries afvuren met de officiële SDK.
+Als u geen Row Level Security heeft ingeschakeld, voert PostgreSQL dit commando onmiddellijk uit. De aanvaller wist binnen één seconde uw complete gebruikerstabel. Hier is geen geavanceerde hackerskennis voor nodig - de openbare `anon`-sleutel wordt standaard meegestuurd naar elke browser, en iedereen kan die sleutel uit het netwerktabblad kopiëren en willekeurige queries afvuren met de officiële SDK.
 
 ## Maak Kennis met Row Level Security (RLS)
 
@@ -59,7 +59,7 @@ Met deze policy actief kan een aanvaller in zijn browserconsole typen wat hij wi
 
 ### RLS Moet Elke Afzonderlijke Operatie Dekken, Niet Alleen SELECT
 
-Een klassieke fout — die AI-codegeneratoren aan de lopende band maken — is het genereren van één enkele policy voor `SELECT`, in de veronderstelling dat de tabel daarmee beveiligd is. PostgreSQL evalueert `SELECT`, `INSERT`, `UPDATE` en `DELETE` echter volkomen onafhankelijk van elkaar.
+Een klassieke fout - die AI-codegeneratoren aan de lopende band maken - is het genereren van één enkele policy voor `SELECT`, in de veronderstelling dat de tabel daarmee beveiligd is. PostgreSQL evalueert `SELECT`, `INSERT`, `UPDATE` en `DELETE` echter volkomen onafhankelijk van elkaar.
 
 Een tabel met uitsluitend een `SELECT`-policy zal, afhankelijk van uw instellingen, óf alle schrijfacties blokkeren (waardoor uw app breekt), óf schrijfacties wagenwijd open laten staan. Een productierijpe tabel vereist vier expliciete policies:
 
@@ -77,7 +77,7 @@ CREATE POLICY "delete_own" ON public.ai_generated_reports
   FOR DELETE USING (auth.uid() = user_id);
 ```
 
-Let met name op de `WITH CHECK`-clausule bij `INSERT` en `UPDATE` — dit is wat voorkomt dat een gebruiker een nieuw record aanmaakt en dit stiekem toewijst aan het `user_id` van een *andere* klant, een subtiel beveiligingslek dat met alleen een `USING`-clausule niet wordt afgedekt.
+Let met name op de `WITH CHECK`-clausule bij `INSERT` en `UPDATE` - dit is wat voorkomt dat een gebruiker een nieuw record aanmaakt en dit stiekem toewijst aan het `user_id` van een *andere* klant, een subtiel beveiligingslek dat met alleen een `USING`-clausule niet wordt afgedekt.
 
 Test deze policies altijd zoals een aanvaller te werk zou gaan: log in met twee verschillende testaccounts en probeer via de ruwe client data van het andere account te lezen, te wijzigen of te wissen.
 
@@ -93,7 +93,7 @@ Daarnaast is er een subtieler gevaar: Supabase Edge Functions die gebruikmaken v
 
 Het schrijven van veilige, geoptimaliseerde PostgreSQL RLS-policies vereist diepgaande databasespecialisatie. Tools zoals Cursor kunnen weliswaar basis-snippets genereren, maar vertrouwen op een LLM voor de fundamentele beveiliging van uw database is een levensgevaarlijke gok.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, meer dan 120 senior engineers en vestigingen aan de **Herengracht 420 in Amsterdam (1017 BZ)**, **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam**, zijn wij gespecialiseerd in het beveiligen van Supabase-architecturen voor AI-startups. U bouwt de frontend en de kern van uw AI-visie; wij verzorgen de database-hardening.
 
@@ -105,7 +105,7 @@ Dit garandeert dat uw relationele PostgreSQL-fundering en uw pgvector-opslag dir
 
 - Supabase maakt directe frontend-queries mogelijk, maar stelt uw complete database bloot aan het publieke internet als RLS ontbreekt.
 - Row Level Security (RLS) fungeert als een firewall op databaseniveau die garandeert dat gebruikers uitsluitend hun eigen data kunnen inzien of bewerken.
-- RLS moet expliciet worden geconfigureerd voor alle vier de operaties: SELECT, INSERT, UPDATE en DELETE — inclusief `WITH CHECK`-clausules voor schrijfacties.
+- RLS moet expliciet worden geconfigureerd voor alle vier de operaties: SELECT, INSERT, UPDATE en DELETE - inclusief `WITH CHECK`-clausules voor schrijfacties.
 - Foutief geconfigureerde RLS bij AI-apps leidt tot gestolen vector-embeddings, gemanipuleerde RAG-modellen en misbruik van dure AI-API-tegoeden.
 - Het schrijven van kogelvrije SQL-policies vereist senior PostgreSQL-ervaring die AI-codetools simpelweg niet betrouwbaar kunnen leveren.
 - LaunchStudio treedt op als uw backend-partner en levert binnen 1 tot 3 weken een volledig geharde en beveiligde Supabase-architectuur op.
@@ -124,11 +124,11 @@ Een week na de bètalancering zag David een gigantische explosie in zijn OpenAI 
 
 Geconfronteerd met een acuut AVG-datalek en het mogelijke einde van zijn startup, zette David de applicatie direct offline en nam met spoed contact op met **LaunchStudio (door Manifera)**.
 
-Onze database-engineers grepen onmiddellijk in. We activeerden RLS over zijn gehele Supabase-schema, dekkend voor `SELECT`, `INSERT`, `UPDATE` en `DELETE` op elke tabel — inclusief de afzonderlijke `pgvector` embeddingstabel die in zijn oorspronkelijke opzet was overgeslagen. We schreven strikte SQL-policies die controleerden dat `auth.uid()` exact overeenkwam met het `tenant_id` van het contract. We verplaatsten zijn dure OpenAI-aanroepen naar beveiligde Supabase Edge Functions met gevalideerde permissies en auditten alle API-sleutels.
+Onze database-engineers grepen onmiddellijk in. We activeerden RLS over zijn gehele Supabase-schema, dekkend voor `SELECT`, `INSERT`, `UPDATE` en `DELETE` op elke tabel - inclusief de afzonderlijke `pgvector` embeddingstabel die in zijn oorspronkelijke opzet was overgeslagen. We schreven strikte SQL-policies die controleerden dat `auth.uid()` exact overeenkwam met het `tenant_id` van het contract. We verplaatsten zijn dure OpenAI-aanroepen naar beveiligde Supabase Edge Functions met gevalideerde permissies en auditten alle API-sleutels.
 
 **Resultaat:** David herlanceerde zijn applicatie 5 werkdagen later in een kogelvrije staat. Kort daarna doorstond hij met vlag en wimpel een formele security-audit van een gerenommeerd Amsterdams advocatenkantoor, wat hem een enterprise-contract van € 3.000 MRR opleverde. *"Ik had een geweldige AI-tool gebouwd, maar een levensgevaarlijke database. LaunchStudio beveiligde mijn backend en redde mijn bedrijf van een rampzalige rechtszaak."*
 
-**Kosten & Tijdlijn:** €2.800 (Launch Ready database-hardening pakket) — binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.800 (Launch Ready database-hardening pakket) - binnen 5 werkdagen live opgeleverd.
 
 ---
 

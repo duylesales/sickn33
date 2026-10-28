@@ -1,6 +1,6 @@
-🔥 Elena Vasquez bouwde DataPulse AI — een platform voor bedrijfsgegevensverrijking met **Cursor** — en probeerde in één sprint zelf te migreren van vaste tarieven naar usage-based billing. 🧠
+🔥 Elena Vasquez bouwde DataPulse AI - een platform voor bedrijfsgegevensverrijking met **Cursor** - en probeerde in één sprint zelf te migreren van vaste tarieven naar usage-based billing. 🧠
 
-In de eerste factureringscyclus na de overstap telde een retry-bug het gebruik van ongeveer 60 klanten dubbel — binnen een dag kwamen er elf supporttickets binnen met klachten.
+In de eerste factureringscyclus na de overstap telde een retry-bug het gebruik van ongeveer 60 klanten dubbel - binnen een dag kwamen er elf supporttickets binnen met klachten.
 
 ❌ Geen idempotentiesleutels, waardoor herhaalde verzoeken klanten stilletjes dubbel factureerden
 ❌ Geen verzoeningstaak die gerapporteerd gebruik vergeleek met wat daadwerkelijk was verbruikt
@@ -12,7 +12,7 @@ In de eerste factureringscyclus na de overstap telde een retry-bug het gebruik v
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De usage-based billing van DataPulse AI ging live zonder billinggeschillen in de eerste volledige cyclus. (€ 2.600 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
+De usage-based billing van DataPulse AI ging live zonder billinggeschillen in de eerste volledige cyclus. (€ 2.600 (Launch & Grow Pakket) - 8 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/usage-based-billing-migration-diy-vs-launchstudio
 

@@ -34,7 +34,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Europe produces food at enormous scale under tight margins, strict safety rules and growing environmental obligations, and it does so with a shrinking agricultural workforce. That combination has made agriculture and food one of the more interesting applied AI markets on the continent — practical, measurable and unusually close to physical reality. AI jobs in agriculture and food are less visible than those in technology companies, and often more varied.
+Europe produces food at enormous scale under tight margins, strict safety rules and growing environmental obligations, and it does so with a shrinking agricultural workforce. That combination has made agriculture and food one of the more interesting applied AI markets on the continent - practical, measurable and unusually close to physical reality. AI jobs in agriculture and food are less visible than those in technology companies, and often more varied.
 
 ## Where AI Jobs in Agriculture and Food Exist
 
@@ -64,17 +64,17 @@ Agricultural data is seasonal, sparse and biological, which changes the modellin
 
 **Connectivity is poor.** Machinery and sensors operate where networks are weak, so edge processing and store-and-forward designs are normal.
 
-**Ownership is contested.** Who owns farm data — the farmer, the machinery manufacturer, the cooperative, the advisor — is a live commercial and policy question in Europe, and it affects what you are allowed to use.
+**Ownership is contested.** Who owns farm data - the farmer, the machinery manufacturer, the cooperative, the advisor - is a live commercial and policy question in Europe, and it affects what you are allowed to use.
 
 ## Remote Sensing and Field-Scale Analysis
 
 Satellite imagery has become a working tool rather than a research topic in European agriculture, largely because open programmes provide regular, free coverage of the continent at useful resolution.
 
-The practical workflow involves obtaining imagery, correcting for atmospheric effects, masking clouds — a constant problem in northern European growing seasons — computing vegetation indices, and combining the result with field boundaries, weather data and management records.
+The practical workflow involves obtaining imagery, correcting for atmospheric effects, masking clouds - a constant problem in northern European growing seasons - computing vegetation indices, and combining the result with field boundaries, weather data and management records.
 
 Applications include detecting variation within a field so that fertiliser or seed can be applied at variable rates, monitoring crop development against expectation, estimating yield before harvest, verifying that practices were carried out for subsidy or certification purposes, and assessing damage after weather events for insurance.
 
-The technical skills are specific: geospatial data handling, coordinate systems, raster processing, and an understanding of what a vegetation index does and does not measure. Anyone who has worked with satellite or aerial data in any field — environment, forestry, urban planning, insurance — transfers readily.
+The technical skills are specific: geospatial data handling, coordinate systems, raster processing, and an understanding of what a vegetation index does and does not measure. Anyone who has worked with satellite or aerial data in any field - environment, forestry, urban planning, insurance - transfers readily.
 
 Drone imagery complements satellites where higher resolution or precise timing is needed, and brings its own constraints around flight regulation, battery life and processing volume.
 
@@ -88,7 +88,7 @@ Typical problems include predicting harvest volume and timing weeks ahead so tha
 
 Energy deserves particular mention. Greenhouse operations are energy-intensive, and the volatility of European energy prices has made optimisation against hourly prices commercially decisive rather than marginal.
 
-For engineers, this subdomain is attractive because feedback is fast compared with arable farming — a crop cycle may be weeks — and because the combination of process control, forecasting and vision makes the work varied.
+For engineers, this subdomain is attractive because feedback is fast compared with arable farming - a crop cycle may be weeks - and because the combination of process control, forecasting and vision makes the work varied.
 
 ## Livestock, Welfare and Health
 
@@ -96,7 +96,7 @@ Animal production has adopted sensing widely, and the applications combine econo
 
 Dairy is the most instrumented sector: individual animal identification, milk yield and composition per milking, activity and rumination sensors, and automated milking systems that generate continuous records. Analytical work includes detecting illness before clinical signs appear, predicting fertility windows, optimising feed, and identifying animals whose performance is declining.
 
-Poultry and pig production use environmental sensing, camera-based monitoring of behaviour and weight estimation, and audio analysis — coughing patterns, for instance, can indicate respiratory problems across a house before individual animals are visibly ill.
+Poultry and pig production use environmental sensing, camera-based monitoring of behaviour and weight estimation, and audio analysis - coughing patterns, for instance, can indicate respiratory problems across a house before individual animals are visibly ill.
 
 Two characteristics shape the work. Individual animals vary substantially, so population-level models need careful handling of individual baselines. And the consequences of a false alarm differ from those of a missed case in ways that farmers understand well and should be asked about.
 
@@ -118,7 +118,7 @@ Waste reduction is a common entry project for new data hires because it is measu
 
 Environmental obligations have become a major driver of data work in European agri-food, and they are creating roles that did not exist a few years ago.
 
-Emissions accounting is the clearest case. Large companies reporting under the Corporate Sustainability Reporting Directive must produce auditable figures, and for food businesses a large share of emissions sits in agricultural supply chains rather than in their own operations. Estimating those figures requires combining supplier data, production records, regional factors and sometimes farm-level measurement — a genuine data integration problem with a verification requirement attached.
+Emissions accounting is the clearest case. Large companies reporting under the Corporate Sustainability Reporting Directive must produce auditable figures, and for food businesses a large share of emissions sits in agricultural supply chains rather than in their own operations. Estimating those figures requires combining supplier data, production records, regional factors and sometimes farm-level measurement - a genuine data integration problem with a verification requirement attached.
 
 Other strands include nitrogen and nutrient management, which is a significant regulatory issue in several European countries; water use monitoring and reporting; pesticide reduction targets, which drive precision application technology; soil carbon measurement, where quantification remains scientifically contested; and biodiversity monitoring, increasingly using acoustic and image sensing.
 
@@ -136,7 +136,7 @@ The sector's employers are more varied than newcomers expect.
 
 **Machinery and equipment manufacturers** build tractors, implements, greenhouse systems, milking robots and processing equipment, increasingly with embedded intelligence.
 
-**Input suppliers** — seed, crop protection, nutrition — run substantial research and digital advisory operations.
+**Input suppliers** - seed, crop protection, nutrition - run substantial research and digital advisory operations.
 
 **Agritech startups** work on robotics, sensing, farm management software and marketplaces, concentrated around agricultural universities.
 
@@ -174,7 +174,7 @@ The technical problems are genuinely difficult. Plants are deformable, partially
 
 Roles here combine perception, control, embedded systems and reliability engineering, and they sit at startups, machinery manufacturers and research institutes.
 
-For engineers who want their work to move physical objects in the world and who are comfortable with the slow, iterative reality of field testing, it is among the most satisfying niches in European applied AI — provided you accept that a season's testing window closes whether you are ready or not.
+For engineers who want their work to move physical objects in the world and who are comfortable with the slow, iterative reality of field testing, it is among the most satisfying niches in European applied AI - provided you accept that a season's testing window closes whether you are ready or not.
 
 ## Real example
 
@@ -192,13 +192,13 @@ The engineer leading the project summarised it in a sentence often quoted by his
 
 - AI jobs in agriculture and food span arable, horticulture, livestock, machinery, processing and supply chain.
 - Seasonality makes data scarce; one year yields very few observations.
-- Physical conditions — dust, vibration, light, connectivity — dominate deployment.
+- Physical conditions - dust, vibration, light, connectivity - dominate deployment.
 - Domain collaboration with agronomists, growers and food technologists is essential.
 - Sustainability reporting is creating substantial new data engineering work.
 
 ## Where to Start
 
-Learn one subdomain properly — remote sensing, greenhouse climate, or food process data — and spend time with people who do the work. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Learn one subdomain properly - remote sensing, greenhouse climate, or food process data - and spend time with people who do the work. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

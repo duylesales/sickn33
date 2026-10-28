@@ -22,23 +22,23 @@ target_persona: "CTO"
 
 An AI software development demo that works impressively in a controlled setting and a genuinely production-ready AI system are separated by considerably more engineering effort than the demo's apparent completeness suggests, and a CTO who underestimates that gap sets project timelines and budgets that consistently fall short.
 
-**The Pain:** A CTO evaluating AI software development, having seen a compelling proof-of-concept or demo — often built quickly using modern AI tooling — reasonably extrapolates that a production version is a relatively short distance away, because the demo already does the impressive, hard-seeming part (getting a model to produce useful output), without recognizing that the demo skipped the specific engineering work that separates a controlled demonstration from something reliable enough to depend on in production.
+**The Pain:** A CTO evaluating AI software development, having seen a compelling proof-of-concept or demo - often built quickly using modern AI tooling - reasonably extrapolates that a production version is a relatively short distance away, because the demo already does the impressive, hard-seeming part (getting a model to produce useful output), without recognizing that the demo skipped the specific engineering work that separates a controlled demonstration from something reliable enough to depend on in production.
 
-**The Agitation:** A CTO who greenlights an AI initiative on a demo-based timeline estimate routinely discovers, once production engineering work actually begins, that reliability handling, edge-case management, monitoring, and integration work the demo never touched account for the majority of the total engineering effort — commonly 70-80% of total project cost — turning what was budgeted as a short follow-on project into a multi-month engineering effort that wasn't planned for, straining both timeline commitments and team capacity.
+**The Agitation:** A CTO who greenlights an AI initiative on a demo-based timeline estimate routinely discovers, once production engineering work actually begins, that reliability handling, edge-case management, monitoring, and integration work the demo never touched account for the majority of the total engineering effort - commonly 70-80% of total project cost - turning what was budgeted as a short follow-on project into a multi-month engineering effort that wasn't planned for, straining both timeline commitments and team capacity.
 
 ## What the Demo Skips
 
 The specific engineering work that separates a demo from a production AI system falls into several categories a CTO should explicitly budget for, rather than treating the demo's existence as evidence the hard part is already done.
 
-The first category is handling the genuine unpredictability of AI model outputs at production scale — a demo run a handful of times by its own builder, who knows roughly what inputs to expect, doesn't encounter the long tail of unusual, malformed, or adversarial inputs that real production usage generates at volume, and building genuine handling for that long tail — validation, graceful degradation, fallback behavior when the model's output doesn't meet quality expectations — is a substantial engineering effort with no equivalent in the demo.
+The first category is handling the genuine unpredictability of AI model outputs at production scale - a demo run a handful of times by its own builder, who knows roughly what inputs to expect, doesn't encounter the long tail of unusual, malformed, or adversarial inputs that real production usage generates at volume, and building genuine handling for that long tail - validation, graceful degradation, fallback behavior when the model's output doesn't meet quality expectations - is a substantial engineering effort with no equivalent in the demo.
 
-The second category is monitoring and evaluation infrastructure specific to AI systems, which differs meaningfully from traditional software monitoring because AI system quality can degrade silently — a model continuing to run without errors while producing steadily worse outputs, a failure mode traditional uptime monitoring doesn't catch at all. Building genuine quality monitoring, alongside the traditional operational monitoring every production system needs, is real engineering effort a demo never required because a demo's output quality is being informally, manually evaluated by the person building it.
+The second category is monitoring and evaluation infrastructure specific to AI systems, which differs meaningfully from traditional software monitoring because AI system quality can degrade silently - a model continuing to run without errors while producing steadily worse outputs, a failure mode traditional uptime monitoring doesn't catch at all. Building genuine quality monitoring, alongside the traditional operational monitoring every production system needs, is real engineering effort a demo never required because a demo's output quality is being informally, manually evaluated by the person building it.
 
-The third category is integration with existing systems and data — a demo built in isolation from the production environment's actual authentication, data access patterns, and existing application logic needs real integration work to function inside that environment, work that's routinely the largest single line item in an AI production build and is almost entirely invisible in a standalone demo.
+The third category is integration with existing systems and data - a demo built in isolation from the production environment's actual authentication, data access patterns, and existing application logic needs real integration work to function inside that environment, work that's routinely the largest single line item in an AI production build and is almost entirely invisible in a standalone demo.
 
-The fourth category is the ongoing operational cost and effort of maintaining an AI system in production — model behavior can shift as underlying models are updated, cost structures can change as usage scales, and a production AI system requires genuine ongoing attention in a way a one-time demo build never surfaces as a consideration.
+The fourth category is the ongoing operational cost and effort of maintaining an AI system in production - model behavior can shift as underlying models are updated, cost structures can change as usage scales, and a production AI system requires genuine ongoing attention in a way a one-time demo build never surfaces as a consideration.
 
-A CTO who explicitly budgets for these four categories — rather than treating a demo's existence as most of the work already being done — sets timeline and budget expectations that survive contact with the actual production engineering effort, and avoids the credibility cost of an AI initiative that consistently runs over a demo-based estimate that was never realistic to begin with.
+A CTO who explicitly budgets for these four categories - rather than treating a demo's existence as most of the work already being done - sets timeline and budget expectations that survive contact with the actual production engineering effort, and avoids the credibility cost of an AI initiative that consistently runs over a demo-based estimate that was never realistic to begin with.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -56,7 +56,7 @@ Rozwiązania Cyfrowe Kraków S.A., a Kraków-based insurance-technology company,
 Manifera's subsequent AI initiatives for the company began with an explicit scope breakdown across all four production categories before any timeline commitment was made, giving the CFO and CTO a realistic budget upfront. The next project delivered within 10% of its estimated timeline.
 
 > *"The demo worked so well we assumed we were most of the way there. We were maybe twenty percent of the way there. Once we actually understood what production-grade meant for an AI system, our estimates finally started holding."*
-> — **CTO, Rozwiązania Cyfrowe Kraków S.A., Poland**
+> - **CTO, Rozwiązania Cyfrowe Kraków S.A., Poland**
 
 ## Demo-Based Estimating vs. Manifera's Full-Scope AI Engineering
 
@@ -84,7 +84,7 @@ Because AI system quality can degrade silently, with the system continuing to ru
 
 ### (Scenario: CTO trying to identify the largest cost driver in an AI production build) What's typically the largest single line item in moving an AI system from demo to production?
 
-Integration with existing systems and data — authentication, data access patterns, and existing application logic — which is almost entirely invisible in a standalone demo.
+Integration with existing systems and data - authentication, data access patterns, and existing application logic - which is almost entirely invisible in a standalone demo.
 
 ### (Scenario: CTO wondering if an AI system needs ongoing attention after launch) Does a production AI system require ongoing operational effort after its initial launch?
 

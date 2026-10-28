@@ -95,9 +95,9 @@ Het Manifera-team voerde een 60-daagse "Platform Unificatie Sprint" uit:
 **Resultaat:** De merkidentiteit werd per direct uniform omdat elke afdeling zocht in dezelfde centrale database. De CISO keurde de architectuur goed omdat alle dataverwerking plaatsvond binnen één interne Zero-Trust perimeter. David zegde 19 van de 22 losse SaaS-abonnementen op. De totale AI-kosten daalden van €450.000 naar €85.000 per jaar (de zuivere Azure-rekenkracht), wat het bedrijf jaarlijks €365.000 aan besparingen opleverde.
 
 > *"We leden aan de dood door duizend wrappers: onze data lag overal, onze security was kwetsbaar en ons budget bloedde leeg. LaunchStudio bouwde niet zomaar een tool, maar een centraal zenuwstelsel voor onze hele organisatie. Zij gaven ons onze datasoevereiniteit terug en bespaarden ons honderdduizenden euro's per jaar."*
-> — **David Mueller, CIO, MediaNexus (Berlijn)**
+> - **David Mueller, CIO, MediaNexus (Berlijn)**
 
-**Kosten & Doorlooptijd:** €45.000 (Enterprise Consolidatie & Unified Platform Architectuur Pakket) — productie-klaar en live binnen 60 werkdagen.
+**Kosten & Doorlooptijd:** €45.000 (Enterprise Consolidatie & Unified Platform Architectuur Pakket) - productie-klaar en live binnen 60 werkdagen.
 
 ---
 

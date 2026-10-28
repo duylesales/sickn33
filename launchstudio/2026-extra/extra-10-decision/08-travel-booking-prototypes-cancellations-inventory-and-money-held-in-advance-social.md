@@ -1,10 +1,10 @@
 🚨 Two customers booked the last spot on Lotte's kayak tour within four seconds of each other. Both got confirmation emails. Both showed up. The host had one spare kayak. 😳
 
-It worked perfectly in solo testing — here's why that never catches the failure that matters: 🧠
+It worked perfectly in solo testing - here's why that never catches the failure that matters: 🧠
 
 ❌ Availability check and reservation write were two separate steps with no locking between them
 ❌ Host payouts happened immediately on booking, weeks before the experience, with no clawback if a customer cancelled
-❌ "Cancel" was a single generic action — always full refund or none, no policy-aware calculation
+❌ "Cancel" was a single generic action - always full refund or none, no policy-aware calculation
 ❌ Prepaid, undelivered bookings were tracked as regular revenue, with no real exposure number if suppliers failed
 
 ✅ Add a database-level unique constraint on slot-and-timeslot, so a conflicting booking fails cleanly, not silently

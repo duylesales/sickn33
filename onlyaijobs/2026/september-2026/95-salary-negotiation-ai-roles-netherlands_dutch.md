@@ -25,7 +25,7 @@ Onderhandelen over beloning in Nederland wijkt op praktisch relevante punten af 
 
 ## Stel eerst vast met welk type werkgever je te maken hebt
 
-**Cao-werkgevers.** Publieke sector, zorg, onderwijs, veel onderzoeksinstituten en een aantal grote bedrijven werken onder een cao die loonschalen vastlegt. Je functie wordt op een schaal ingepast, en die schaal heeft treden. Binnen die structuur zijn de onderhandelbare elementen in welke schaal je wordt geplaatst en op welke trede — niet het bedrag zelf.
+**Cao-werkgevers.** Publieke sector, zorg, onderwijs, veel onderzoeksinstituten en een aantal grote bedrijven werken onder een cao die loonschalen vastlegt. Je functie wordt op een schaal ingepast, en die schaal heeft treden. Binnen die structuur zijn de onderhandelbare elementen in welke schaal je wordt geplaatst en op welke trede - niet het bedrag zelf.
 
 **Commercieel vrije werkgevers.** Technologiebedrijven, scale-ups, adviesbureaus, de meeste financiële instellingen en de meeste industriële werkgevers stellen beloning zelf vast. Hier is het bedrag werkelijk onderhandelbaar en kan de bandbreedte groot zijn.
 
@@ -37,7 +37,7 @@ De praktische eerste stap is direct vragen: valt deze functie onder een cao of e
 
 **Onder een cao** richt je op inpassing in plaats van bedrag. In welke schaal de functie zit, welke trede, of eerdere ervaring een hogere starttrede rechtvaardigt, en of er ruimte is voor een arbeidsmarkttoelage voor schaarse expertise. Sommige cao's kennen die en ze worden minder vaak gebruikt dan mogelijk.
 
-Ook onderhandelbaar: startdatum, opleidingsbudget, congresbezoek, arbeidspatroon, extra verlof in sommige cao's, en apparatuur. Dat is niet triviaal — een gegarandeerd opleidingsbudget en congresbezoek hebben echte carrièrewaarde.
+Ook onderhandelbaar: startdatum, opleidingsbudget, congresbezoek, arbeidspatroon, extra verlof in sommige cao's, en apparatuur. Dat is niet triviaal - een gegarandeerd opleidingsbudget en congresbezoek hebben echte carrièrewaarde.
 
 **Bij commerciële vrijheid** ligt het hele pakket open. Basissalaris, welkomstbonus, variabele beloning, aandelen waar aangeboden, pensioenbijdrage boven het minimum, opleidingsbudget, en de specifieke hybride afspraak.
 

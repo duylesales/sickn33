@@ -9,7 +9,7 @@ Here's what the data actually says:
 
 🇵🇱 **Eastern Europe (Poland, Romania)**
 → 5 senior devs = €175K–275K/year
-→ Salaries up 40% since 2022 — advantage is shrinking fast
+→ Salaries up 40% since 2022 - advantage is shrinking fast
 → Developer retention crisis: avg tenure dropped to 14 months
 
 🇻🇳 **Southeast Asia (Vietnam)**
@@ -20,7 +20,7 @@ Here's what the data actually says:
 
 The winning play? **Hybrid model.** Dutch management for client trust + Vietnamese engineering for execution speed and cost efficiency.
 
-This is exactly how @Manifera operates — Amsterdam HQ with a Ho Chi Minh City engineering hub. European governance, Asian engineering excellence.
+This is exactly how @Manifera operates - Amsterdam HQ with a Ho Chi Minh City engineering hub. European governance, Asian engineering excellence.
 
 → Full comparison with decision framework: https://www.manifera.com/blog/amsterdam-vs-eastern-europe-dev-team
 

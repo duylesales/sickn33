@@ -1,4 +1,4 @@
-🚨 Tessa van Dijk ran Zorgmaatje in Lovable: a care-coordination tool used by 9 home-care organisations around Apeldoorn. When a regional healthcare network prepared to sign an expansion deal, their procurement questionnaire demanded proof of isolated staging environments, rollback mechanisms, and repository ownership — features default Lovable preview hosting couldn't provide. 😳
+🚨 Tessa van Dijk ran Zorgmaatje in Lovable: a care-coordination tool used by 9 home-care organisations around Apeldoorn. When a regional healthcare network prepared to sign an expansion deal, their procurement questionnaire demanded proof of isolated staging environments, rollback mechanisms, and repository ownership - features default Lovable preview hosting couldn't provide. 😳
 
 Preview hosting is built for sharing drafts, not managing production software. Here's how Lovable hosting compares to Vercel and Netlify: 🧠
 

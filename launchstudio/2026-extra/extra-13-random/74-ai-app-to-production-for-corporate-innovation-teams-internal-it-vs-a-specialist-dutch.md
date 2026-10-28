@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Niet elke AI-native oprichter leidt een klassieke startup. Binnen woningcorporaties, gemeenten, ziekenhuizen, verzekeraars en productiebedrijven bouwen innovatiemanagers en business analisten met tools als Lovable en Bolt werkende prototypes die acute problemen van collega's of klanten oplossen. De pilot is een groot succes. Maar daarna volgt steevast de vraag waarop de meeste initiatieven stranden: wie brengt deze AI-applicatie daadwerkelijk naar productie? De interne IT-afdeling heeft een backlog die in kwartalen wordt gemeten, security- en architecture-boards vergaderen maandelijks en het prototype past binnen geen enkele bestaande platformstandaard. Het alternatief — een externe specialist inschakelen — roept direct vragen op over inkoop, informatiebeveiliging en intellectueel eigendom.
+Niet elke AI-native oprichter leidt een klassieke startup. Binnen woningcorporaties, gemeenten, ziekenhuizen, verzekeraars en productiebedrijven bouwen innovatiemanagers en business analisten met tools als Lovable en Bolt werkende prototypes die acute problemen van collega's of klanten oplossen. De pilot is een groot succes. Maar daarna volgt steevast de vraag waarop de meeste initiatieven stranden: wie brengt deze AI-applicatie daadwerkelijk naar productie? De interne IT-afdeling heeft een backlog die in kwartalen wordt gemeten, security- en architecture-boards vergaderen maandelijks en het prototype past binnen geen enkele bestaande platformstandaard. Het alternatief - een externe specialist inschakelen - roept direct vragen op over inkoop, informatiebeveiliging en intellectueel eigendom.
 
 ## Waarom Corporate AI-Projecten Vaak Vastlopen Vóór Productie
 
@@ -38,7 +38,7 @@ De aarzeling van interne IT is volkomen begrijpelijk: als er straks een datalek 
 
 **Sterke punten:** Grondige kennis van de interne systemen, single sign-on, complianceregels en supportprocessen; langetermijneigenaarschap; geen extern inkooptraject nodig.
 
-**Zwakke punten:** Beperkte capaciteit — het project sluit achteraan aan in een lange rij; onbekendheid met door AI gegenereerde code en moderne low-code platforms; de sterke neiging om de app vanaf nul te herschrijven op de corporatestack (wat maanden tot jaren kost en ten koste gaat van de snelheid en interface die de gebruikers juist waardeerden).
+**Zwakke punten:** Beperkte capaciteit - het project sluit achteraan aan in een lange rij; onbekendheid met door AI gegenereerde code en moderne low-code platforms; de sterke neiging om de app vanaf nul te herschrijven op de corporatestack (wat maanden tot jaren kost en ten koste gaat van de snelheid en interface die de gebruikers juist waardeerden).
 
 **Beste keuze wanneer:** De applicatie diepgaand moet integreren met kernsystemen (zoals ERP of centrale zaaksystemen), IT over directe capaciteit beschikt en het beleid dicteert dat alles intern wordt gehost en beheerd.
 
@@ -55,7 +55,7 @@ De aarzeling van interne IT is volkomen begrijpelijk: als er straks een datalek 
 In de praktijk blijkt de meest succesvolle aanpak een heldere taakverdeling tussen de organisatie en de specialist:
 - **De organisatie (IT, security, privacy) formuleert de kaders:** gewenste identity provider, hostinglocatie binnen de EU, loggingformaten, dataretentie en het supportmodel.
 - **De specialist beveiligt en implementeert** de applicatie conform deze kaders: koppeling met Microsoft Entra ID (SSO), rolgebaseerde databasetoegang, auditlogging, EU-infrastructuur, documentatie en penetratietests.
-- **Interne IT ontvangt een kant-en-klare overdracht** — of accordeert een managed-service constructie — voorzien van complete runbooks en documentatie die direct door de audit komen.
+- **Interne IT ontvangt een kant-en-klare overdracht** - of accordeert een managed-service constructie - voorzien van complete runbooks en documentatie die direct door de audit komen.
 
 Zo behoudt de organisatie volledige controle over data en veiligheid, zonder dat het schaarse interne IT-capaciteit kost.
 
@@ -73,7 +73,7 @@ Zorg dat je het antwoord op deze vragen paraat hebt vóór het eerste overleg:
 
 ## Inkoop Zonder Bureaucratische Verlamming
 
-Vaste projectprijzen met een helder afgebakende scope die onder de interne aanbestedingsgrenzen vallen, kunnen vaak razendsnel door afdelingsmanagers worden goedgekeurd. Een heldere Statement of Work (SoW) — met een gedetailleerde opsomming van deliverables, normen en overdrachtsdocumenten — voorkomt vertraging op de inkoopafdeling.
+Vaste projectprijzen met een helder afgebakende scope die onder de interne aanbestedingsgrenzen vallen, kunnen vaak razendsnel door afdelingsmanagers worden goedgekeurd. Een heldere Statement of Work (SoW) - met een gedetailleerde opsomming van deliverables, normen en overdrachtsdocumenten - voorkomt vertraging op de inkoopafdeling.
 
 ## Een Gezamenlijke Requirements-Workshop
 
@@ -170,7 +170,7 @@ Stuur vóór het volgende directieoverleg een compacte samenvatting van één A4
 
 LaunchStudio ondersteunt innovatieteams en intrapreneurs om AI-prototypes productierijp te maken conform de strenge eisen van de organisatie: integratie met Microsoft Entra ID (SSO), rolgebaseerde autorisatie in de database, EU-hosting, auditlogging, complete documentatie en een professioneel overdrachts- of managed-service dossier. Vaste projectprijzen tussen € 800 en € 7.500 passen doorgaans uitstekend binnen lokale innovatiebudgetten. Achter LaunchStudio staat Manifera, een softwarehuis dat al meer dan 11 jaar software levert voor enterprise- en onderzoeksinstellingen zoals Vodafone en TNO, opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad. Voor grootschalige vervolgtrajecten biedt [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) volledige multidisciplinaire engineeringteams. Microsoft's documentatie over [Entra ID app-registraties](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app) licht toe hoe SSO-koppelingen aan de IT-kant worden geconfigureerd.
 
-[Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — nodig gerust je IT-aanspreekpunt uit.
+[Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) - nodig gerust je IT-aanspreekpunt uit.
 
 ## Praktijkvoorbeeld
 
@@ -185,9 +185,9 @@ Wendy stelde een hybride samenwerking voor. IT en de privacy officer stelden de 
 **Resultaat:** Reparatiemelder ging achttien werkdagen na goedkeuring van het hybride plan live voor alle huurders, in plaats van de gevreesde negen maanden wachttijd. Binnen een jaar liep ruim 60% van alle reparatieverzoeken via de app. De corporatie past dit succesvolle model inmiddels toe op twee andere innovatiepilots.
 
 > *"IT probeerde ons niet tegen te houden. Ze stelden simpelweg de juiste kritische vragen. We hadden alleen een partij nodig die die vragen binnen weken kon beantwoorden in plaats van binnen kwartalen."*
-> — **Wendy Hoogland, Innovatielead, Woningcorporatie (Zwolle)**
+> - **Wendy Hoogland, Innovatielead, Woningcorporatie (Zwolle)**
 
-**Kosten & Tijdlijn:** € 5.800 (Launch & Grow-pakket: SSO, toegangscontrole, datamigratie, logging, documentatie en overdracht) — afgerond in 18 werkdagen, plus € 49/maand managed hosting.
+**Kosten & Tijdlijn:** € 5.800 (Launch & Grow-pakket: SSO, toegangscontrole, datamigratie, logging, documentatie en overdracht) - afgerond in 18 werkdagen, plus € 49/maand managed hosting.
 
 ## Veelgestelde Vragen
 

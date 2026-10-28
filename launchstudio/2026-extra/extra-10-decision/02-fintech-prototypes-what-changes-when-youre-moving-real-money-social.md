@@ -3,7 +3,7 @@
 Founders routinely underestimate the moment a payment processor turns into a payment service. Here's the line that flips it: 🧠
 
 ❌ One pooled Stripe balance representing every client's held payment, with zero segregation
-❌ A database `balance` field overwritten on every transaction — no audit trail at all
+❌ A database `balance` field overwritten on every transaction - no audit trail at all
 ❌ Supabase and Stripe's actual balance had never been reconciled against each other
 ❌ The webhook endpoint accepted "payment succeeded" events with no signature verification
 

@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 The decision usually arrives as a small irritation rather than a crisis. A customer asks whether the app runs in Europe. An investor asks who has access to the code. A colleague needs to deploy a fix while you are on a train. None of those are emergencies, and together they mean the same thing: the project has outgrown the environment that made it possible.
 
-Moving off Replit is a normal and fairly boring piece of work, provided you understand one thing up front — you are not moving an application. You are moving the parts of it that are actually yours, and rebuilding the parts the platform was quietly providing.
+Moving off Replit is a normal and fairly boring piece of work, provided you understand one thing up front - you are not moving an application. You are moving the parts of it that are actually yours, and rebuilding the parts the platform was quietly providing.
 
 ## What Replit Is Genuinely Good At
 
@@ -30,7 +30,7 @@ It is worth being clear, because the case for leaving is not "the tool is bad".
 
 Replit removes setup entirely: an environment that exists the moment you open it, dependencies resolved, a running process, a URL, a database if you want one, and collaboration without anyone configuring anything. For building, learning, prototyping and demonstrating, this is an enormous amount of friction removed, and for a founder testing whether an idea works at all, it is often the fastest route available.
 
-The reason to move is not quality. It is that the same design decisions that remove setup also remove control — and control is what you need once other people depend on the thing.
+The reason to move is not quality. It is that the same design decisions that remove setup also remove control - and control is what you need once other people depend on the thing.
 
 ## The Three Reasons People Actually Move
 
@@ -44,7 +44,7 @@ Two poor reasons are worth naming too: moving because a developer finds the plat
 
 ## What Transfers Cleanly
 
-**Your source code.** It is yours, it is ordinary code, and it moves by pushing it to a repository you control. If it is not already in Git with a readable history, start there — this is worth doing before any migration, regardless of destination.
+**Your source code.** It is yours, it is ordinary code, and it moves by pushing it to a repository you control. If it is not already in Git with a readable history, start there - this is worth doing before any migration, regardless of destination.
 
 **Your database contents,** assuming you can export them. Rows, tables, schema. The format is portable even when the hosting is not.
 
@@ -54,13 +54,13 @@ Two poor reasons are worth naming too: moving because a developer finds the plat
 
 ## What Does Not Transfer, and Has to Be Rebuilt
 
-**The environment itself.** Language runtime, dependency versions, system packages, the start command — all of this was configured by the platform through its own mechanism. On your own infrastructure it becomes explicit: a container definition or a build configuration you write and keep in the repository. This is the single largest piece of work in most migrations and the one people underestimate.
+**The environment itself.** Language runtime, dependency versions, system packages, the start command - all of this was configured by the platform through its own mechanism. On your own infrastructure it becomes explicit: a container definition or a build configuration you write and keep in the repository. This is the single largest piece of work in most migrations and the one people underestimate.
 
-**Secrets management.** Environment variables stored in the platform interface do not come with you. They need to be recreated in your new hosting provider's secret storage — and this is the right moment to check whether any of them should have been server-side all along, and to rotate anything that has been sitting in a shared workspace.
+**Secrets management.** Environment variables stored in the platform interface do not come with you. They need to be recreated in your new hosting provider's secret storage - and this is the right moment to check whether any of them should have been server-side all along, and to rotate anything that has been sitting in a shared workspace.
 
 **The always-on behaviour.** Whether your process stays running, how it restarts after a crash, what happens under concurrent load: all of this was handled by the platform's model. Your new host has its own model, and it is rarely identical.
 
-**Collaboration and access.** Who can see and change the project was a platform setting. It becomes repository permissions, deployment permissions and cloud account roles — three separate things instead of one.
+**Collaboration and access.** Who can see and change the project was a platform setting. It becomes repository permissions, deployment permissions and cloud account roles - three separate things instead of one.
 
 **Anything platform-specific in your code.** Calls to platform-provided storage, key-value stores or environment helpers need replacing with standard equivalents. Search your codebase for these before you plan the timeline; they are easy to fix and easy to miss until the app fails at runtime.
 
@@ -68,7 +68,7 @@ Two poor reasons are worth naming too: moving because a developer finds the plat
 
 If your data lives in a platform-managed database, decide where it is going before anything else, because everything else depends on it.
 
-For most small products the sensible destination is a managed PostgreSQL service — Supabase, a cloud provider's managed instance, or similar — in a region you deliberately choose. That gives you backups, connection pooling, region control and an export path that does not depend on any one vendor's interface.
+For most small products the sensible destination is a managed PostgreSQL service - Supabase, a cloud provider's managed instance, or similar - in a region you deliberately choose. That gives you backups, connection pooling, region control and an export path that does not depend on any one vendor's interface.
 
 Migrate it in a rehearsal first: export, restore into the new instance, point a copy of the app at it, and use it for a day. The rehearsal finds the schema quirks, the encoding surprises and the missing indexes while nothing is at stake. Doing this on cutover day instead is how migrations become weekends.
 
@@ -76,7 +76,7 @@ Migrate it in a rehearsal first: export, restore into the new instance, point a 
 
 **One: get the code into your own repository** with a clean history and a README describing how to run it.
 
-**Two: make the app runnable somewhere neutral** — your laptop, a container — using explicit configuration rather than platform magic. If it only runs on the platform, you have not finished this step.
+**Two: make the app runnable somewhere neutral** - your laptop, a container - using explicit configuration rather than platform magic. If it only runs on the platform, you have not finished this step.
 
 **Three: stand up the new database and rehearse the import.** Verify row counts and a handful of records by hand.
 
@@ -112,7 +112,7 @@ Founders frequently expect their bill to rise after leaving an all-in-one platfo
 
 **Hosting for the application itself** is usually modest for a small product, and several providers have free or low tiers that comfortably serve a few thousand visitors a month.
 
-**The managed database** is normally the largest line, and the one where the free tier stops being appropriate soonest — usually at the point where you need daily backups, a guaranteed region and no automatic pausing after inactivity.
+**The managed database** is normally the largest line, and the one where the free tier stops being appropriate soonest - usually at the point where you need daily backups, a guaranteed region and no automatic pausing after inactivity.
 
 **Storage and bandwidth** scale with user-uploaded files, and this is where an unoptimised image pipeline shows up as a recurring cost rather than a one-off annoyance.
 
@@ -130,14 +130,14 @@ Sander Vos ran Leerlijn, a small platform selling exam preparation courses to se
 
 The move was triggered by a single procurement question from a school in Arnhem that wanted to buy licences for a whole year group: where is student data stored, and who has access to it? Sander could not answer either question in a form the school's privacy officer would accept.
 
-The migration took eleven business days. The environment was made explicit with a container definition and a build pipeline, the database was exported and restored into a managed EU-region PostgreSQL instance with daily backups and a tested restore, seventeen environment variables were rebuilt in proper secret storage — three of which turned out to be credentials that had been shared in a workspace with a former contractor and were rotated — and deployment moved to a repository-driven pipeline with staging and one-command rollback. The old environment stayed live and read-only for a week.
+The migration took eleven business days. The environment was made explicit with a container definition and a build pipeline, the database was exported and restored into a managed EU-region PostgreSQL instance with daily backups and a tested restore, seventeen environment variables were rebuilt in proper secret storage - three of which turned out to be credentials that had been shared in a workspace with a former contractor and were rotated - and deployment moved to a repository-driven pipeline with staging and one-command rollback. The old environment stayed live and read-only for a week.
 
 **Result:** the school's privacy officer approved the platform two weeks later, and Leerlijn signed its first institutional contract, which was worth more than four times the migration cost.
 
 > *"Nothing was broken. I just couldn't answer a question that any serious customer was eventually going to ask me."*
-> — **Sander Vos, Founder, Leerlijn (Arnhem)**
+> - **Sander Vos, Founder, Leerlijn (Arnhem)**
 
-**Cost & Timeline:** €3,600 (migration, database move with EU region, secrets rotation, deployment pipeline) — completed in 11 business days.
+**Cost & Timeline:** €3,600 (migration, database move with EU region, secrets rotation, deployment pipeline) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
@@ -147,7 +147,7 @@ No. The code and the data are yours and both export. What does not come with you
 
 ### How long does a migration like this take?
 
-For a small product, typically one to two weeks including a rehearsal and a safe cutover. The variable is rarely the code — it is how much platform-specific behaviour is embedded in the app and how much data has to move.
+For a small product, typically one to two weeks including a rehearsal and a safe cutover. The variable is rarely the code - it is how much platform-specific behaviour is embedded in the app and how much data has to move.
 
 ### Should I change my database at the same time?
 

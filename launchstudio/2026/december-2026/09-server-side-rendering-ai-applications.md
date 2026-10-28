@@ -31,9 +31,9 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-If you are building an AI-native application with Lovable, Bolt, or Cursor, there is a good chance your entire application runs in the browser. The AI tool generated a React single-page application (SPA) where all the logic — routing, data fetching, API calls — happens on the client side, in the user's browser.
+If you are building an AI-native application with Lovable, Bolt, or Cursor, there is a good chance your entire application runs in the browser. The AI tool generated a React single-page application (SPA) where all the logic - routing, data fetching, API calls - happens on the client side, in the user's browser.
 
-This architecture was fine for prototyping. For production, it is increasingly becoming a liability. And the solution — server-side rendering (SSR) — is making a dramatic comeback, driven by problems that are uniquely severe in AI applications.
+This architecture was fine for prototyping. For production, it is increasingly becoming a liability. And the solution - server-side rendering (SSR) - is making a dramatic comeback, driven by problems that are uniquely severe in AI applications.
 
 ## The Client-Side Problem in AI Applications
 
@@ -47,7 +47,7 @@ In 2026, API key theft from client-side AI applications became one of the most c
 
 ### Problem 2: SEO Invisibility
 
-Google's crawler can execute JavaScript, but it does not execute it well — especially for dynamic, data-dependent content. If your AI application's marketing pages, blog, or landing page are rendered entirely by client-side JavaScript, Google may see an empty HTML skeleton with a loading spinner. This makes your site effectively invisible to search engines.
+Google's crawler can execute JavaScript, but it does not execute it well - especially for dynamic, data-dependent content. If your AI application's marketing pages, blog, or landing page are rendered entirely by client-side JavaScript, Google may see an empty HTML skeleton with a loading spinner. This makes your site effectively invisible to search engines.
 
 For an AI SaaS competing for organic traffic on keywords like "AI contract review tool" or "automated invoice generator," SEO invisibility is a death sentence.
 
@@ -87,7 +87,7 @@ For AI-native startups, **Next.js with the App Router** has become the default c
 
 ## The AI-Specific SSR Advantage: Server Components for LLM Calls
 
-React Server Components (available in Next.js 13+) are specifically designed for the pattern AI applications need. A Server Component runs exclusively on the server. It can directly call your OpenAI API, query your database, and access environment variables — all without any of this logic being visible to the browser.
+React Server Components (available in Next.js 13+) are specifically designed for the pattern AI applications need. A Server Component runs exclusively on the server. It can directly call your OpenAI API, query your database, and access environment variables - all without any of this logic being visible to the browser.
 
 The result: your AI application makes LLM calls from a secure server environment, streams the response to the browser in real time, and never exposes a single API key to the client. This is the architecture pattern that eliminates the most common security vulnerability in AI applications.
 
@@ -95,11 +95,11 @@ The result: your AI application makes LLM calls from a secure server environment
 
 If your AI application was built with Lovable or Bolt and runs entirely on the client side, transitioning to SSR requires careful architectural work:
 
-1. **Move API calls to server routes** — Every client-side API call needs to become a server-side API route or a Server Component.
-2. **Separate public and private routes** — Marketing pages should be statically generated for SEO. Application pages should be server-rendered with authentication.
-3. **Implement proper session management** — SSR requires server-side session handling instead of purely client-side token storage.
-4. **Configure streaming** — AI response streaming from the server to the browser requires specific SSR configuration.
-5. **Update deployment** — SSR applications require a Node.js server (or serverless functions), not just a static file host.
+1. **Move API calls to server routes** - Every client-side API call needs to become a server-side API route or a Server Component.
+2. **Separate public and private routes** - Marketing pages should be statically generated for SEO. Application pages should be server-rendered with authentication.
+3. **Implement proper session management** - SSR requires server-side session handling instead of purely client-side token storage.
+4. **Configure streaming** - AI response streaming from the server to the browser requires specific SSR configuration.
+5. **Update deployment** - SSR applications require a Node.js server (or serverless functions), not just a static file host.
 
 This transition is one of the most common engineering projects that [LaunchStudio](https://launchstudio.eu/en/) handles. The Manifera engineering team, with deep Next.js and React expertise across their 120+ developer team at Pho Quang Street in Ho Chi Minh City, regularly migrates client-side AI applications to SSR architectures while keeping the founder's existing UI intact.
 
@@ -109,13 +109,13 @@ Herre Roelevink, Manifera's founder, sees this pattern constantly: *"Almost ever
 
 If you are beginning a new AI project in 2027, the answer is almost always yes. Start with Next.js App Router and build your AI features using Server Components from day one. The initial setup is marginally more complex than a pure client-side SPA, but it eliminates an entire category of security vulnerabilities and performance problems that you would otherwise need to fix later at much greater cost.
 
-[Discuss your architecture with LaunchStudio](https://launchstudio.eu/en/#contact) — we help founders choose the right rendering strategy for their specific use case.
+[Discuss your architecture with LaunchStudio](https://launchstudio.eu/en/#contact) - we help founders choose the right rendering strategy for their specific use case.
 
 ## Real example
 
 ### An AI-Native Founder in Action: From Exposed API Keys to Secure SSR Architecture
 
-Erik, a patent attorney in Utrecht, built PatentScan — an AI-powered tool that analyzed patent filings for potential conflicts — using Lovable. The tool was brilliant: users uploaded a patent application, and the AI cross-referenced it against a proprietary database of European patent filings to identify potential conflicts and prior art.
+Erik, a patent attorney in Utrecht, built PatentScan - an AI-powered tool that analyzed patent filings for potential conflicts - using Lovable. The tool was brilliant: users uploaded a patent application, and the AI cross-referenced it against a proprietary database of European patent filings to identify potential conflicts and prior art.
 
 Two weeks after launching to a small group of beta users, Erik received a terrifying email from a user: "I found your OpenAI API key in the browser network tab. You should fix this." The user was a friendly security researcher, but Erik's API key had been exposed to every user who had accessed the application. When he checked his OpenAI billing dashboard, he discovered €340 in unauthorized API charges from an unknown source.
 
@@ -124,9 +124,9 @@ Erik immediately contacted LaunchStudio after a colleague in his Utrecht-based l
 **Result:** PatentScan relaunched with zero client-side API exposure. The unauthorized API charges stopped immediately. Three law firms signed enterprise contracts at €399/month within the first month. The page load time dropped from 4.2 seconds (client-side React SPA) to 0.8 seconds (SSR), and Google began indexing PatentScan's content pages for the first time.
 
 > *"A stranger found my API key in the browser. That was the wake-up call. LaunchStudio moved my entire app to server-side rendering in under two weeks. No API keys in the browser, no security nightmares, and my Google ranking went from invisible to page two within a month."*
-> — **Erik van der Berg, Founder, PatentScan (Utrecht)**
+> - **Erik van der Berg, Founder, PatentScan (Utrecht)**
 
-**Cost & Timeline:** €3,100 (Launch & Grow Package with SSR migration) — production-ready and deployed in 11 business days.
+**Cost & Timeline:** €3,100 (Launch & Grow Package with SSR migration) - production-ready and deployed in 11 business days.
 
 ---
 
@@ -134,11 +134,11 @@ Erik immediately contacted LaunchStudio after a colleague in his Utrecht-based l
 
 ### Why do AI tools like Lovable generate client-side SPAs instead of SSR applications?
 
-AI tools optimize for simplicity and rapid iteration. Client-side SPAs are easier to generate because they require no server configuration — everything runs in the browser. This is perfect for prototyping but creates security and performance problems in production. The transition to SSR is a natural part of the prototype-to-production journey that LaunchStudio handles as standard practice for every deployment.
+AI tools optimize for simplicity and rapid iteration. Client-side SPAs are easier to generate because they require no server configuration - everything runs in the browser. This is perfect for prototyping but creates security and performance problems in production. The transition to SSR is a natural part of the prototype-to-production journey that LaunchStudio handles as standard practice for every deployment.
 
 ### Does server-side rendering make AI responses slower?
 
-No — in most cases it makes them faster. With SSR, the AI API call happens on the server, which typically has a faster, more reliable internet connection than the user's browser. The server also handles streaming more efficiently, delivering the first tokens of the AI response to the user sooner. Manifera's engineering team optimizes server-side AI response streaming to minimize time-to-first-byte for every LaunchStudio deployment.
+No - in most cases it makes them faster. With SSR, the AI API call happens on the server, which typically has a faster, more reliable internet connection than the user's browser. The server also handles streaming more efficiently, delivering the first tokens of the AI response to the user sooner. Manifera's engineering team optimizes server-side AI response streaming to minimize time-to-first-byte for every LaunchStudio deployment.
 
 ### Can I still use Supabase with server-side rendering?
 
@@ -146,11 +146,11 @@ Absolutely. Supabase provides server-side client libraries specifically designed
 
 ### How does SSR affect my hosting costs?
 
-SSR requires a server or serverless functions to render pages, which costs more than static file hosting. However, with platforms like Vercel, the cost is minimal — most AI SaaS applications fall within the free or hobby tier for SSR costs. The savings from not having API keys stolen and abused typically dwarf the incremental hosting cost. Herre Roelevink regularly advises founders: "The cost of one API key theft incident exceeds years of SSR hosting fees."
+SSR requires a server or serverless functions to render pages, which costs more than static file hosting. However, with platforms like Vercel, the cost is minimal - most AI SaaS applications fall within the free or hobby tier for SSR costs. The savings from not having API keys stolen and abused typically dwarf the incremental hosting cost. Herre Roelevink regularly advises founders: "The cost of one API key theft incident exceeds years of SSR hosting fees."
 
 ### Is it too late to migrate my existing client-side AI app to SSR?
 
-No. LaunchStudio regularly migrates Lovable and Bolt-generated SPAs to Next.js SSR architectures. The migration preserves your existing React components — they continue to render identically from the user's perspective. What changes is where the rendering happens (server instead of browser) and where API calls are made (server-side routes instead of client-side fetch). The typical migration takes 5–10 business days depending on application complexity.
+No. LaunchStudio regularly migrates Lovable and Bolt-generated SPAs to Next.js SSR architectures. The migration preserves your existing React components - they continue to render identically from the user's perspective. What changes is where the rendering happens (server instead of browser) and where API calls are made (server-side routes instead of client-side fetch). The typical migration takes 5–10 business days depending on application complexity.
 
 <script type="application/ld+json">
 {
@@ -162,7 +162,7 @@ No. LaunchStudio regularly migrates Lovable and Bolt-generated SPAs to Next.js S
       "name": "Why do AI tools like Lovable generate client-side SPAs instead of SSR applications?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI tools optimize for simplicity — client-side SPAs require no server configuration. This is perfect for prototyping but creates security and performance problems in production. Transitioning to SSR is part of the prototype-to-production journey."
+        "text": "AI tools optimize for simplicity - client-side SPAs require no server configuration. This is perfect for prototyping but creates security and performance problems in production. Transitioning to SSR is part of the prototype-to-production journey."
       }
     },
     {
@@ -194,7 +194,7 @@ No. LaunchStudio regularly migrates Lovable and Bolt-generated SPAs to Next.js S
       "name": "Is it too late to migrate my existing client-side AI app to SSR?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. LaunchStudio regularly migrates Lovable/Bolt SPAs to Next.js SSR. Your React components render identically — only the rendering location changes. Typical migration takes 5-10 business days."
+        "text": "No. LaunchStudio regularly migrates Lovable/Bolt SPAs to Next.js SSR. Your React components render identically - only the rendering location changes. Typical migration takes 5-10 business days."
       }
     }
   ]

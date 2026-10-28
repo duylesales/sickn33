@@ -1,4 +1,4 @@
-🔥 Henry bouwde een prototype met **Bolt** — Henry, een marketingconsultant, gebruikte Bolt om een B2B lead-finder te bouwen, maar affiliates klaagden dat hun verwijzingen niet werden geregistreerd door gebroken cookie-tracking. 🧠
+🔥 Henry bouwde een prototype met **Bolt** - Henry, een marketingconsultant, gebruikte Bolt om een B2B lead-finder te bouwen, maar affiliates klaagden dat hun verwijzingen niet werden geregistreerd door gebroken cookie-tracking. 🧠
 
 Affiliate marketing biedt een 'Nul-CAC' groeimodel waarbij u uitsluitend commissie betaalt over daadwerkelijk gerealiseerde abonnementsverkopen.
 
@@ -12,7 +12,7 @@ Affiliate marketing biedt een 'Nul-CAC' groeimodel waarbij u uitsluitend commiss
 
 Bij **LaunchStudio** lossen we exact dit type facturatie- en software-integratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Henrys platform groeide exponentieel: Hij sloot 45 actieve vak-affiliates aan, wat leidde tot een stijging van 35% in de maandelijkse MRR. (€1.200 (Affiliate Tracking Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Henrys platform groeide exponentieel: Hij sloot 45 actieve vak-affiliates aan, wat leidde tot een stijging van 35% in de maandelijkse MRR. (€1.200 (Affiliate Tracking Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/affiliate-marketing-b2b-ai-saas
 

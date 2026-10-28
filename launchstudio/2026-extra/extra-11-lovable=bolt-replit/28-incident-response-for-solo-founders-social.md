@@ -1,4 +1,4 @@
-🚨 Thijs Marsman ran Werkbon, a job-sheet and invoicing tool for 70 installation firms across Noord-Holland. A Wednesday evening deployment introduced a bug that completely broke the job-sheet view. Without automated rollbacks or telemetry, Thijs found out 90 minutes later from a customer's WhatsApp message — and spent five stressful hours untangling the codebase to restore service. 😳
+🚨 Thijs Marsman ran Werkbon, a job-sheet and invoicing tool for 70 installation firms across Noord-Holland. A Wednesday evening deployment introduced a bug that completely broke the job-sheet view. Without automated rollbacks or telemetry, Thijs found out 90 minutes later from a customer's WhatsApp message - and spent five stressful hours untangling the codebase to restore service. 😳
 
 When an outage hits at 10 PM, panic is not a strategy. Every founder needs a 3-step incident response playbook: 🧠
 

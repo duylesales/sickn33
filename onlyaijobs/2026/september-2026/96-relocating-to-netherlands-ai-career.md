@@ -96,7 +96,7 @@ The regional analyses in this series are directly applicable here, and the pract
 
 **If your work is in finance, fintech, marketplaces or consumer technology**, Amsterdam or its commuter ring. Accept that housing is the hardest here and consider Zaanstad, Haarlem, Almere or Hoorn as described in those analyses.
 
-**If your work is in agrifood, life sciences or process industry**, the relevant clusters are dispersed — Wageningen, Oss, Sittard-Geleen, Venlo — and the location decision follows the employer rather than the reverse.
+**If your work is in agrifood, life sciences or process industry**, the relevant clusters are dispersed - Wageningen, Oss, Sittard-Geleen, Venlo - and the location decision follows the employer rather than the reverse.
 
 **If you are uncertain**, Utrecht is the most defensible default. It is central, connected to everywhere by rail, has a substantial market of its own in health data and consultancy, and leaves your options open in a way that a peripheral location does not.
 
@@ -114,7 +114,7 @@ The general principle for an international arrival is to prioritise optionality 
 
 **Planning culture is strong.** Meetings are scheduled well in advance, including social ones. Spontaneity is less common than in some cultures, and an unplanned drop-in is less welcome.
 
-**English suffices at work in most technical settings, and Dutch matters outside it.** Your colleagues will switch to English readily. Administrative letters, school communication, medical paperwork, neighbours and social settings are another matter, and the sector analyses in this series identify domains — media, public administration, healthcare, agriculture at the applied end — where Dutch is genuinely required professionally too.
+**English suffices at work in most technical settings, and Dutch matters outside it.** Your colleagues will switch to English readily. Administrative letters, school communication, medical paperwork, neighbours and social settings are another matter, and the sector analyses in this series identify domains - media, public administration, healthcare, agriculture at the applied end - where Dutch is genuinely required professionally too.
 
 ## The Honest Assessment of Learning Dutch
 
@@ -134,17 +134,17 @@ This is the part of relocation that receives least attention and matters most fo
 
 **Meetups and technical communities exist and are accessible.** The Dutch technical scene is active, particularly around Amsterdam, Utrecht and Eindhoven, and events are conducted in English far more often than not. Attending is low-cost and the barrier is mostly inertia.
 
-**Sector communities are more useful than general ones.** A generic data science meetup gives you contact with people doing similar work elsewhere. A domain-specific community — water technology, maritime, energy, agrifood — puts you in contact with people who could employ you, which is a different and more valuable thing. The sector analyses in this series identify these networks by name.
+**Sector communities are more useful than general ones.** A generic data science meetup gives you contact with people doing similar work elsewhere. A domain-specific community - water technology, maritime, energy, agrifood - puts you in contact with people who could employ you, which is a different and more valuable thing. The sector analyses in this series identify these networks by name.
 
-**Writing publicly is disproportionately effective for an international candidate.** You lack the local university cohort and school-friend networks that Dutch professionals accumulate by default. Visible public work — writing, talks, open-source contribution — substitutes for that and is the most efficient route to being known by people you have not met.
+**Writing publicly is disproportionately effective for an international candidate.** You lack the local university cohort and school-friend networks that Dutch professionals accumulate by default. Visible public work - writing, talks, open-source contribution - substitutes for that and is the most efficient route to being known by people you have not met.
 
 **Dutch professional relationships develop slowly and then last.** The initial reserve that arrivals sometimes read as coldness is followed, in most cases, by relationships that are durable and genuinely reciprocal. Expecting the rapid warmth of some other cultures leads to disappointment; expecting nothing leads to isolation. The realistic expectation is that a professional relationship takes a year to become substantial and then holds for a decade.
 
-**Ask directly for what you need.** Dutch directness works in both directions. A clear request — for an introduction, for advice on a sector, for a conversation about someone's work — is received well and answered honestly. Hinting is less effective here than asking.
+**Ask directly for what you need.** Dutch directness works in both directions. A clear request - for an introduction, for advice on a sector, for a conversation about someone's work - is received well and answered honestly. Hinting is less effective here than asking.
 
 ## Key Takeaways
 
-- For non-EU candidates the employer applies, which constrains your search to recognised sponsors — check sponsor status before investing in an application.
+- For non-EU candidates the employer applies, which constrains your search to recognised sponsors - check sponsor status before investing in an application.
 - The orientation year for recent graduates allows work without employer sponsorship and is a genuinely valuable bridge.
 - Housing rather than immigration is where relocations go wrong, particularly the requirement to register your address and the fact that some landlords do not permit it.
 - Plan on one to three months of temporary accommodation and search properly from inside the country.
@@ -163,7 +163,7 @@ Browse current AI, machine learning and data vacancies across the Netherlands at
 The highly skilled migrant route requires the employer to be a recognised sponsor with the immigration service. A small company that has never hired internationally may not be willing to become one for a single candidate. Check sponsor status early.
 
 ### (Scenario: candidate planning the move) What is the most underestimated difficulty?
-Housing. Supply is short in the Randstad, landlords often require a contract before letting to you, and some do not permit address registration — which you need for a service number, bank account and being paid correctly.
+Housing. Supply is short in the Randstad, landlords often require a contract before letting to you, and some do not permit address registration - which you need for a service number, bank account and being paid correctly.
 
 ### (Scenario: candidate searching from abroad) Should I secure permanent housing before arriving?
 Generally no. One to three months of temporary accommodation while searching from inside the country costs more per month but substantially reduces the risk of committing to something unsuitable sight unseen.

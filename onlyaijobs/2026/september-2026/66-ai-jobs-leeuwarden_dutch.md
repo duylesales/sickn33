@@ -21,13 +21,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Leeuwarden telt ongeveer 125.000 inwoners en is de hoofdstad van Friesland. De AI- en datamarkt is klein — werkelijk klein, niet slechts onderbelicht — maar bevat één internationaal betekenisvol onderzoekscluster en één stevig industrieel datadomein.
+Leeuwarden telt ongeveer 125.000 inwoners en is de hoofdstad van Friesland. De AI- en datamarkt is klein - werkelijk klein, niet slechts onderbelicht - maar bevat één internationaal betekenisvol onderzoekscluster en één stevig industrieel datadomein.
 
 ## Begin bij de eerlijke beperking
 
 Leeuwarden heeft weinig werkgevers die zeggen dat ze machine learning-engineers zoeken. Er is geen scale-upcluster, geen concentratie technologiekantoren en geen dichte start-uplaag. Verlies of verlaat je hier een baan, dan zijn de realistische opties een klein aantal andere lokale werkgevers, forenzen naar Groningen, of verhuizen.
 
-Kandidaten die een liquide arbeidsmarkt nodig hebben — omdat ze vroeg in hun loopbaan zitten of hun opties niet geconcentreerd willen — kunnen de rest als achtergrond lezen in plaats van als aanbeveling.
+Kandidaten die een liquide arbeidsmarkt nodig hebben - omdat ze vroeg in hun loopbaan zitten of hun opties niet geconcentreerd willen - kunnen de rest als achtergrond lezen in plaats van als aanbeveling.
 
 ## Het watertechnologiecluster is werkelijk internationaal
 
@@ -35,7 +35,7 @@ Kandidaten die een liquide arbeidsmarkt nodig hebben — omdat ze vroeg in hun l
 
 **WaterCampus Leeuwarden** is het omringende innovatie-ecosysteem, met onderzoek, toegepast onderwijs, start-ups en bedrijven rond waterzuivering, hergebruik, ontzilting, grondstofterugwinning en monitoring.
 
-**Procesmonitoring en -regeling van zuiveringssystemen.** Waterzuivering kent biologische en chemische processen die niet-lineair reageren op wijzigingen in samenstelling, temperatuur en belasting. Sensordata is continu maar schaars in juist de variabelen die je wilt weten, omdat veel belangrijke metingen laboratoriumanalyse met vertraging vergen. Soft sensors — modellen die een moeilijk meetbare grootheid afleiden uit makkelijk meetbare — zijn een actief toepassingsgebied.
+**Procesmonitoring en -regeling van zuiveringssystemen.** Waterzuivering kent biologische en chemische processen die niet-lineair reageren op wijzigingen in samenstelling, temperatuur en belasting. Sensordata is continu maar schaars in juist de variabelen die je wilt weten, omdat veel belangrijke metingen laboratoriumanalyse met vertraging vergen. Soft sensors - modellen die een moeilijk meetbare grootheid afleiden uit makkelijk meetbare - zijn een actief toepassingsgebied.
 
 **Anomaliedetectie in distributienetten.** Drinkwaternetten zijn groot, ondergronds en slechts puntgewijs geïnstrumenteerd. Lekken, verontreiniging of afwijkend verbruik detecteren uit beperkte sensordekking is een inferentieprobleem onder forse onzekerheid.
 
@@ -51,7 +51,7 @@ Friesland is zuivelland, en het bijbehorende datawerk is substantiëler dan buit
 
 **FrieslandCampina** is een van de grootste zuivelcoöperaties ter wereld, met wortels in deze regio. Zuivelverwerking op die schaal genereert keten-, kwaliteits-, opbrengst- en procesoptimalisatiewerk, plus steeds veeleisender traceerbaarheid.
 
-**Data op koppel- en bedrijfsniveau.** Moderne melkveehouderij is zwaar geïnstrumenteerd: melksystemen leggen opbrengst en samenstelling per dier vast, sensoren volgen activiteit en herkauwen, voeding wordt beheerd tegen gemeten opname. Dat levert tijdreeksen per dier over grote koppels op, gebruikt voor gezondheidsdetectie, vruchtbaarheidsbeheer en opbrengstoptimalisatie. De problemen — onregelmatige bemonstering, individuele variatie, zwakke labels uit latere veterinaire uitkomsten — zijn oprecht interessant.
+**Data op koppel- en bedrijfsniveau.** Moderne melkveehouderij is zwaar geïnstrumenteerd: melksystemen leggen opbrengst en samenstelling per dier vast, sensoren volgen activiteit en herkauwen, voeding wordt beheerd tegen gemeten opname. Dat levert tijdreeksen per dier over grote koppels op, gebruikt voor gezondheidsdetectie, vruchtbaarheidsbeheer en opbrengstoptimalisatie. De problemen - onregelmatige bemonstering, individuele variatie, zwakke labels uit latere veterinaire uitkomsten - zijn oprecht interessant.
 
 **Stikstof en milieucompliance.** De Nederlandse landbouw opereert onder intense en politiek betwiste milieuregelgeving. Emissies meten, modelleren en rapporteren op bedrijfs- en regioniveau heeft directe financiële en juridische gevolgen voor boeren, wat ongewoon veel gewicht legt op verdedigbaarheid van methode.
 
@@ -77,7 +77,7 @@ Friesland is zuivelland, en het bijbehorende datawerk is substantiëler dan buit
 
 Dit wordt meestal als zachte overweging kort aangestipt. Voor Leeuwarden is het een primaire factor.
 
-De woonlasten horen bij de laagste van alle Nederlandse provinciehoofdsteden, en het verschil met de Randstad is niet marginaal — het is vaak het verschil tussen onbepaald huren en een huis met tuin bezitten op één technisch salaris. Woon-werkverkeer binnen de stad is kort genoeg om te fietsen.
+De woonlasten horen bij de laagste van alle Nederlandse provinciehoofdsteden, en het verschil met de Randstad is niet marginaal - het is vaak het verschil tussen onbepaald huren en een huis met tuin bezitten op één technisch salaris. Woon-werkverkeer binnen de stad is kort genoeg om te fietsen.
 
 Daartegenover: de stad is klein, het culturele aanbod is beperkter dan in Amsterdam of Groningen, de noordelijke winters zijn donker, en de provincie heeft een eigen regionale identiteit en taal die inzet vraagt. Fries is een erkende officiële taal met actief dagelijks gebruik, wat voor sommige nieuwkomers charmant en voor andere isolerend is.
 
@@ -100,7 +100,7 @@ Een onderzoeksthema wordt met inbreng van deelnemende bedrijven bepaald, financi
 
 Een ML-engineer die zo'n vacature leest, ziet een waterzuiveringsonderwerp en concludeert vaak dat het niets voor hem is. Maar het werk kan grotendeels rekenkundig zijn: een biologisch proces modelleren, een soft sensor ontwikkelen, een experiment ontwerpen dat de benodigde data genereert. Het onderzoekscentrum heeft ondertussen vaak moeite kandidaten met voldoende rekenkundige vaardigheden te vinden, omdat de sollicitanten uit procestechnologie en chemie komen.
 
-Die mismatch is een kans — met als voorwaarde oprechte belangstelling voor het domein.
+Die mismatch is een kans - met als voorwaarde oprechte belangstelling voor het domein.
 
 ## Het carrièrerisico, helder benoemd
 
@@ -113,7 +113,7 @@ Die mismatch is een kans — met als voorwaarde oprechte belangstelling voor het
 - De markt is werkelijk klein, niet slechts onderbelicht; wie een liquide markt nodig heeft, moet elders kijken.
 - Het watertechnologiecluster heeft echte Europese statuur, met soft sensors, netwerkanomaliedetectie en procesoptimalisatie onder randvoorwaarden.
 - Zuivel- en landbouwdata is het tweede domein, met tijdreeksen per dier en milieurelevante emissiemodellering.
-- Onderzoeksfuncties zijn in domeintaal geformuleerd en trekken weinig rekenkundig sterke kandidaten — een opening.
+- Onderzoeksfuncties zijn in domeintaal geformuleerd en trekken weinig rekenkundig sterke kandidaten - een opening.
 - Groningen op onder veertig minuten maakt een basis in Leeuwarden haalbaar; de Randstad niet.
 - Het woonvoorstel is hier een primaire factor en past uitstekend bij een specifieke minderheid.
 

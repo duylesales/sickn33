@@ -80,9 +80,9 @@ LaunchStudio's team traceerde de kloof naar de afhandelaar van de aanmelding, vo
 **Resultaat:** GroeiBoost's verwijzingsprogramma kent nu automatisch toe en crediteert automatisch. Anne-Fleur stemt verwijzingsbeloningen niet langer handmatig af.
 
 > *"Ik dacht oprecht dat het verwijzingsprogramma zichzelf draaide. Erachter komen dat ik maandenlang handmatig het verwijzingsprogramma was geweest was geen leuke middag."*
-> — **Anne-Fleur Timmer, Oprichter, GroeiBoost (Oosterhout)**
+> - **Anne-Fleur Timmer, Oprichter, GroeiBoost (Oosterhout)**
 
-**Kosten en tijdlijn:** € 1.300 (herstelling van verwijzingstoeschrijving, audit van alternatieve aanmeldingspaden, en afstemmingstaak) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (herstelling van verwijzingstoeschrijving, audit van alternatieve aanmeldingspaden, en afstemmingstaak) - voltooid in 8 werkdagen.
 
 ---
 

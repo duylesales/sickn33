@@ -10,9 +10,9 @@ He'd rebuilt the booking calendar (which had worked), added a new admin dashboar
 ✅ The working calendar restored from version history
 ✅ Guest-list access enforced in the database
 ✅ Deposits confirmed via verified Mollie webhooks, password resets fixed
-✅ Server-side admin roles, tests, a deployment pipeline and documentation — so the graduate could keep building safely
+✅ Server-side admin roles, tests, a deployment pipeline and documentation - so the graduate could keep building safely
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we do the one-off work that needs experience — then hand over a foundation your next hire can build on. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we do the one-off work that needs experience - then hand over a foundation your next hire can build on. ⚙️
 
 Her result: €2,200, eight business days. Kinderfeestje handled 640 bookings through spring and summer with no payment or data incidents, and the graduate shipped three new features on the hardened base. 🚀
 

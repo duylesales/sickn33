@@ -16,17 +16,17 @@ Start met een heldere presentatieslide: *"Op basis van onze sectoranalyse bestee
 
 ## Fase 2: Het 'Aha!' Moment Tonen (The After State)
 
-Deel nu pas uw beeldscherm. Laat hen géén instellingenmenu zien. Toon hen niet hoe je een bestand uploadt, een werkruimte configureert of teamleden uitnodigt. Sla al deze administratieve stappen over en spring direct naar de magie — het ene doorslaggevende moment dat het 40-uur durende knelpunt uit Fase 1 in één klap oplost.
+Deel nu pas uw beeldscherm. Laat hen géén instellingenmenu zien. Toon hen niet hoe je een bestand uploadt, een werkruimte configureert of teamleden uitnodigt. Sla al deze administratieve stappen over en spring direct naar de magie - het ene doorslaggevende moment dat het 40-uur durende knelpunt uit Fase 1 in één klap oplost.
 
 Toon het exacte eindresultaat aan de hand van een realistisch document dat als twee druppels water lijkt op hun eigen documenten, geen generiek voorbeeld: *"Hier is datzelfde complexe leverancierscontract van 50 pagina's. Ik klik op deze ene knop. Binnen enkele seconden heeft de AI alle aansprakelijkheidsclausules geëxtraheerd, drie compliance-schendingen in het rood gemarkeerd en een concept-mail opgesteld aan de leverancier met de exacte juridische correcties."*
 
-U heeft zojuist visueel bewezen dat hun 40-urige operationele nachtmerrie kan worden opgelost met één enkele muisklik. Het technische "hoe" — de embeddings, chunking-strategieën of modelkeuzes — doet er voor dit publiek volstrekt niet toe. Het resultaat is het enige dat telt: hoe minder klikken tussen "probleem" en "oplossing", hoe overtuigender de demo.
+U heeft zojuist visueel bewezen dat hun 40-urige operationele nachtmerrie kan worden opgelost met één enkele muisklik. Het technische "hoe" - de embeddings, chunking-strategieën of modelkeuzes - doet er voor dit publiek volstrekt niet toe. Het resultaat is het enige dat telt: hoe minder klikken tussen "probleem" en "oplossing", hoe overtuigender de demo.
 
 ## Fase 3: Vertrouwen en Veiligheidsgrenzen Demonstreren (Trust & Guardrails)
 
 Zodra u de magie heeft getoond, ervaart de enterprise-koper vrijwel direct een golf van acute bezorgdheid. Hij denkt: *"Dit gaat veel te snel. Wat als de AI een niet-bestaande clausule verzint? Wat als er een verkeerde e-mail naar een strategische leverancier wordt gestuurd?"* U moet deze angst proactief ontmantelen vóórdat de koper de vraag hardop stelt.
 
-Demonstreer uw **Human-in-the-Loop (HITL)** beveiligingsgrenzen als een vast en essentieel onderdeel van uw demo. Toon het scherm waarop de AI-concepttekst fysiek gepauzeerd staat in een "Wacht op Goedkeuring" status. Zeg: *"Kijk, de e-mail blijft in concept staan en elke gemarkeerde clausule toont een betrouwbaarheidsscore. Onze architectuur voorkomt dat de AI ooit zelfstandig externe communicatie verzendt zonder dat een bevoegde manager expliciet op deze knop 'Goedkeuren' klikt — en daalt de score onder de 85%, dan escaleert het systeem automatisch naar een senior jurist."* Dit visuele bewijs van veiligheid neemt de CISO-bezwaren weg nog vóórdat deze in een security-vragenlijst belanden.
+Demonstreer uw **Human-in-the-Loop (HITL)** beveiligingsgrenzen als een vast en essentieel onderdeel van uw demo. Toon het scherm waarop de AI-concepttekst fysiek gepauzeerd staat in een "Wacht op Goedkeuring" status. Zeg: *"Kijk, de e-mail blijft in concept staan en elke gemarkeerde clausule toont een betrouwbaarheidsscore. Onze architectuur voorkomt dat de AI ooit zelfstandig externe communicatie verzendt zonder dat een bevoegde manager expliciet op deze knop 'Goedkeuren' klikt - en daalt de score onder de 85%, dan escaleert het systeem automatisch naar een senior jurist."* Dit visuele bewijs van veiligheid neemt de CISO-bezwaren weg nog vóórdat deze in een security-vragenlijst belanden.
 
 ## Fase 4: De 'Saaie' Enterprise-Integraties (SSO, RBAC, Integrations)
 
@@ -42,9 +42,9 @@ Sluit uw demo af door het onboarding-traject week voor week te schetsen: *"Omdat
 
 ## Het Managen van de Live Vraag-en-Antwoordsessie (Q&A)
 
-De demo eindigt niet wanneer u stopt met schermdelen — de aansluitende tien minuten van de vraag-en-antwoordsessie bepalen of de deal definitief gewonnen of verloren wordt. Wees voorbereid op de drie standaardvragen: "Wat gebeurt er als de AI het mis heeft?" (wijs direct op de Human-in-the-Loop guardrails uit Fase 3), "Hoe schalen de kosten bij intensief gebruik?" (antwoord met de voorspelbare jaarlijkse licentiebundel), en "Welke vergelijkbare klanten gebruiken dit al?" (zorg voor één concrete referentie of geanonimiseerde use case). Oprichters die hier improviseren vervallen vaak opnieuw in technisch jargon, wat de opgebouwde commerciële waarde tenietdoet.
+De demo eindigt niet wanneer u stopt met schermdelen - de aansluitende tien minuten van de vraag-en-antwoordsessie bepalen of de deal definitief gewonnen of verloren wordt. Wees voorbereid op de drie standaardvragen: "Wat gebeurt er als de AI het mis heeft?" (wijs direct op de Human-in-the-Loop guardrails uit Fase 3), "Hoe schalen de kosten bij intensief gebruik?" (antwoord met de voorspelbare jaarlijkse licentiebundel), en "Welke vergelijkbare klanten gebruiken dit al?" (zorg voor één concrete referentie of geanonimiseerde use case). Oprichters die hier improviseren vervallen vaak opnieuw in technisch jargon, wat de opgebouwde commerciële waarde tenietdoet.
 
-Manifera — het softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink — bouwt veilige sandboxed demo-omgevingen en representatieve datasets voor AI-startups. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Een productierijpe demo op een betrouwbare architectuur verandert een vrijblijvend gesprek in een getekend contract. Bekijk meer in het [Manifera portfolio](https://www.manifera.com/portfolio/).
+Manifera - het softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** door Herre Roelevink - bouwt veilige sandboxed demo-omgevingen en representatieve datasets voor AI-startups. Herre benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Een productierijpe demo op een betrouwbare architectuur verandert een vrijblijvend gesprek in een getekend contract. Bekijk meer in het [Manifera portfolio](https://www.manifera.com/portfolio/).
 
 ## Belangrijkste Inzichten
 
@@ -70,7 +70,7 @@ Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om sand
 
 **Resultaat:** De conversieratio van salesdemo's naar betaalde pilots steeg met 45%, wat resulteerde in 5 direct getekende contracten.
 
-**Kosten & Tijdlijn:** €1.500 (Sales Demo Omgeving Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.500 (Sales Demo Omgeving Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

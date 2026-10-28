@@ -1,6 +1,6 @@
-🌙 Daan Ruitenberg bouwde "RisicoScore," een tool voor kredietrisicobeoordeling, met v0 — helemaal geen waarschuwingen geconfigureerd, alleen standaardlogs die niemand in de gaten hield. Een credential-stuffing-aanval liep elf dagen achtereen tegen zijn loginpagina voordat iemand het merkte. 😳
+🌙 Daan Ruitenberg bouwde "RisicoScore," een tool voor kredietrisicobeoordeling, met v0 - helemaal geen waarschuwingen geconfigureerd, alleen standaardlogs die niemand in de gaten hield. Een credential-stuffing-aanval liep elf dagen achtereen tegen zijn loginpagina voordat iemand het merkte. 😳
 
-Als iemand nu uw loginpagina zou bestoken, zou u het dan vanavond merken — of pas over elf dagen? 🧠
+Als iemand nu uw loginpagina zou bestoken, zou u het dan vanavond merken - of pas over elf dagen? 🧠
 
 ❌ Geen drempel voor mislukte inlogpogingen, geen melding voor ongewone patronen
 ❌ Elk afzonderlijk verzoek zag er op zichzelf uit als een gewone mislukte inlogpoging

@@ -29,7 +29,7 @@ Het meeste Europese landbouwland is over eeuwen gegroeid. Percelen zijn onregelm
 
 De Flevopolders zijn in de twintigste eeuw ingericht volgens landbouwkundige principes. Percelen zijn groot en regelmatig. De bodem, onder water afgezet en daarna droog gelegd, is homogener dan gebruikelijk. Ontwatering is systematisch.
 
-De gevolgen zijn concreet. Autonome en semi-autonome machines hebben een veel makkelijkere werkomgeving, wat verklaart waarom veldproeven met landbouwrobotica zich in dit soort regio's concentreren. Variabele dosering — zaad, mest of gewasbescherming aanpassen over een perceel — heeft schonere geometrie. Experimentele vergelijking is hanteerbaarder omdat er minder verstorende variatie tussen proefvakken zit. En remote sensing is eenvoudiger bij regelmatige perceelgrenzen.
+De gevolgen zijn concreet. Autonome en semi-autonome machines hebben een veel makkelijkere werkomgeving, wat verklaart waarom veldproeven met landbouwrobotica zich in dit soort regio's concentreren. Variabele dosering - zaad, mest of gewasbescherming aanpassen over een perceel - heeft schonere geometrie. Experimentele vergelijking is hanteerbaarder omdat er minder verstorende variatie tussen proefvakken zit. En remote sensing is eenvoudiger bij regelmatige perceelgrenzen.
 
 Het eerlijke tegenwicht: dit maakt de regio ook minder representatief. Een hier ontwikkeld model draagt mogelijk slecht over naar de versnipperde landschappen waar het meeste Europese landbouw plaatsvindt.
 
@@ -96,13 +96,13 @@ Amsterdam op veertig tot vijftig minuten is forenzbaar maar langer dan vanuit Za
 
 Agrarische broeikasgasuitstoot, met name methaan van herkauwers en stikstofverbindingen uit mest en kunstmest, staat centraal in een van de meest politiek betwiste beleidsgebieden van Nederland. Reductiedoelen hebben directe gevolgen voor bedrijfsvoering, en handhaving vraagt meting.
 
-Die meting is technisch lastig. Emissies uit een stal of van een perceel zijn diffuus, weersafhankelijk en duur om direct te meten. Ze schatten uit proxies — voersamenstelling, dierkenmerken, mestmanagement, bodemcondities — vraagt modellen die nauwkeurig genoeg zijn om besluiten over individuele bedrijven te dragen en verdedigbaar genoeg om juridische toetsing te doorstaan.
+Die meting is technisch lastig. Emissies uit een stal of van een perceel zijn diffuus, weersafhankelijk en duur om direct te meten. Ze schatten uit proxies - voersamenstelling, dierkenmerken, mestmanagement, bodemcondities - vraagt modellen die nauwkeurig genoeg zijn om besluiten over individuele bedrijven te dragen en verdedigbaar genoeg om juridische toetsing te doorstaan.
 
 Wie wil dat zijn werk telt, vindt weinig plekken waar het zichtbaarder telt. Wie niet in betwist terrein wil werken, moet weten dat dit veld werkelijk betwist is.
 
 ## Belangrijkste punten
 
-- De Flevolandse akkers zijn ontworpen in plaats van geërfd, met grote regelmatige percelen en uniforme bodem — bijna ideaal voor precisielandbouw en autonome machines.
+- De Flevolandse akkers zijn ontworpen in plaats van geërfd, met grote regelmatige percelen en uniforme bodem - bijna ideaal voor precisielandbouw en autonome machines.
 - Het tegenwicht is representativiteit: hier ontwikkelde modellen dragen mogelijk slecht over naar versnipperde landschappen.
 - Veehouderijdata is het tweede domein, met tijdreeksen per dier, vroege ziektedetectie uit subtiele gedragsverandering en welzijnsbeoordeling.
 - Onderzoeksinstituten met proeffaciliteiten laten je experimenten ontwerpen, maar biologische cycli maken planningshorizonnen jaren lang.

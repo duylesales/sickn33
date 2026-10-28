@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Ask an AI tool to add tests to your project and it will happily produce forty of them. They will pass. They will also, in most cases, test that a function returns what it was written to return — which is a tautology dressed as assurance, and it is why founders who add tests this way feel no safer afterwards.
+Ask an AI tool to add tests to your project and it will happily produce forty of them. They will pass. They will also, in most cases, test that a function returns what it was written to return - which is a tautology dressed as assurance, and it is why founders who add tests this way feel no safer afterwards.
 
 Useful testing for a small product is not about coverage. It is about a short list of things that must never break, tested in a way that reflects how they actually break. For an AI-built app with no test suite at all, that list is five items long and takes a day to implement.
 
@@ -28,7 +28,7 @@ Useful testing for a small product is not about coverage. It is about a short li
 
 A test is only meaningful if it could fail for a reason you care about. Generated tests tend to be written from the implementation rather than from the requirement, so they assert that the code does what the code does. Change the behaviour incorrectly and the test changes with it.
 
-They also concentrate on pure functions — formatting a date, calculating a total — because those are easy to test in isolation. Almost nothing in your product breaks there. Your product breaks at the seams: the database, the payment provider, the session, the concurrent request.
+They also concentrate on pure functions - formatting a date, calculating a total - because those are easy to test in isolation. Almost nothing in your product breaks there. Your product breaks at the seams: the database, the payment provider, the session, the concurrent request.
 
 So the first decision is to ignore coverage entirely and start from a different question: what would end this business if it silently stopped working?
 
@@ -40,7 +40,7 @@ For nearly every small product, the answer is these.
 
 **The core action.** The one thing your product exists to do: create a booking, publish a listing, generate a report, send an invoice. One test that performs it end to end.
 
-**Payment.** From clicking pay to the customer actually having what they paid for — which, as anyone who has read about webhooks knows, is not the same as the checkout succeeding.
+**Payment.** From clicking pay to the customer actually having what they paid for - which, as anyone who has read about webhooks knows, is not the same as the checkout succeeding.
 
 **Data isolation.** A test that logs in as user A and asserts that user B's records are unreachable. This is the single highest-value test in a multi-tenant product and almost nobody writes it.
 
@@ -88,13 +88,13 @@ Tests that only run on your laptop get skipped exactly when you are in a hurry, 
 
 If you write one test today, write the data isolation one: authenticate as one user, attempt to read another user's record by its identifier, and assert that it fails.
 
-It is perhaps fifteen lines. It protects against the single most common serious flaw in AI-generated applications. And because it runs on every change, it prevents the specific regression where someone loosens a policy to fix an unrelated bug and quietly opens the door again — which is how these flaws return after being fixed once.
+It is perhaps fifteen lines. It protects against the single most common serious flaw in AI-generated applications. And because it runs on every change, it prevents the specific regression where someone loosens a policy to fix an unrelated bug and quietly opens the door again - which is how these flaws return after being fixed once.
 
 ## When Someone Else Should Build This
 
 Setting up a test harness against a real database, with seeding, in a pipeline, is a few days of work for someone who has done it before and a frustrating fortnight for someone who has not. It is also the kind of foundation that pays back continuously rather than once.
 
-LaunchStudio builds it as part of making an AI-built product production-ready: seed data that reflects reality, integration tests over the paths that matter, browser tests for signup and payment, a staging environment matching production configuration, and the whole thing running automatically on every change — alongside the access policies and monitoring that the tests are there to protect.
+LaunchStudio builds it as part of making an AI-built product production-ready: seed data that reflects reality, integration tests over the paths that matter, browser tests for signup and payment, a staging environment matching production configuration, and the whole thing running automatically on every change - alongside the access policies and monitoring that the tests are there to protect.
 
 The interface you built in Lovable, Bolt or Cursor is untouched, and the tests are left readable so you can extend them yourself or ask your AI tool to. That is part of the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers, whose eleven years of production work for clients including Vodafone, TNO and CFLW involved rather a lot of exactly this.
 
@@ -104,13 +104,13 @@ If you are about to launch something with no tests at all, [describe your projec
 
 Solo founders test their own product, which is the least reliable arrangement possible, because you use the app the way you built it. Three cheap substitutes for a second person.
 
-**Recruit two real users as a launch group.** Not for feedback on the idea — for use. People who did not build the product find the broken path in twenty minutes, because they do things in the order that makes sense to them rather than the order you designed.
+**Recruit two real users as a launch group.** Not for feedback on the idea - for use. People who did not build the product find the broken path in twenty minutes, because they do things in the order that makes sense to them rather than the order you designed.
 
 **Watch someone use it without helping.** Sit behind a friend, give them a goal, and say nothing for ten minutes. This is uncomfortable and it is the highest-information ten minutes available to a small product.
 
 **Test on a device you do not own.** Borrow a phone. Your own device has your session, your cached assets and your autofill, all of which hide problems a new visitor will meet immediately.
 
-Then write down what you find rather than fixing as you go. A list produced in one sitting shows patterns — three findings in the signup flow, two in payments — and patterns point at causes, while fixing one item at a time points at symptoms.
+Then write down what you find rather than fixing as you go. A list produced in one sitting shows patterns - three findings in the signup flow, two in payments - and patterns point at causes, while fixing one item at a time points at symptoms.
 
 ## What Not to Test
 
@@ -126,32 +126,32 @@ Restraint matters as much as coverage, because a suite you abandon is worth less
 
 **Do not automate anything visual.** Layout tests are brittle, and a human glance at two screen sizes before release is faster and more reliable for a small product.
 
-The test to keep is the one you would be alarmed to see fail. If a test failing would make you shrug, delete it — it is costing maintenance and buying nothing.
+The test to keep is the one you would be alarmed to see fail. If a test failing would make you shrug, delete it - it is costing maintenance and buying nothing.
 
 ## Real example
 
 ### A Booking Platform That Broke Its Own Payments Twice
 
-Jelle Vroomen built Sportlokaal in Lovable: a platform for booking community sports halls across Zaanstad and Purmerend. It had forty-eight venue partners and had twice shipped a change that broke the payment flow — once for six hours, once for a full weekend, both discovered by venue managers rather than by Jelle.
+Jelle Vroomen built Sportlokaal in Lovable: a platform for booking community sports halls across Zaanstad and Purmerend. It had forty-eight venue partners and had twice shipped a change that broke the payment flow - once for six hours, once for a full weekend, both discovered by venue managers rather than by Jelle.
 
 There were no tests. Every release was verified by clicking through the app manually, and both failures happened on evenings when that check had been abbreviated.
 
 Four business days of work produced something deliberately small: a seed script creating two venues, four users across three roles and a set of awkward records; five integration tests covering signup, booking creation, payment completion through to entitlement, cross-venue data isolation and a permission refusal; two browser tests for signup and checkout; a staging environment mirroring production with test-mode payments; and the suite running on every push with a notification on failure.
 
-The isolation test failed on its first run, revealing that a venue manager could read bookings from a venue they did not manage — a flaw that had existed since launch and that nobody had found by clicking.
+The isolation test failed on its first run, revealing that a venue manager could read bookings from a venue they did not manage - a flaw that had existed since launch and that nobody had found by clicking.
 
 **Result:** eleven months and roughly ninety releases later, no payment outage. The suite has failed on four occasions, each time catching a regression before it reached a venue.
 
 > *"Two outages cost me more goodwill than the tests cost money. The one that actually scared me was the bug the tests found on day one, which had been live for eight months."*
-> — **Jelle Vroomen, Founder, Sportlokaal (Zaanstad)**
+> - **Jelle Vroomen, Founder, Sportlokaal (Zaanstad)**
 
-**Cost & Timeline:** €2,450 (seed data, integration and browser tests, staging environment, pipeline) — completed in 4 business days.
+**Cost & Timeline:** €2,450 (seed data, integration and browser tests, staging environment, pipeline) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
 ### Can I just ask my AI tool to write tests for me?
 
-You can, and you will usually get tests written from the implementation rather than from the requirement, concentrated on pure functions. Ask instead for specific scenarios — "log in as user A and assert user B's record is unreachable" — which produces tests that can actually fail for a reason you care about.
+You can, and you will usually get tests written from the implementation rather than from the requirement, concentrated on pure functions. Ask instead for specific scenarios - "log in as user A and assert user B's record is unreachable" - which produces tests that can actually fail for a reason you care about.
 
 ### How many tests does a small product need?
 
@@ -211,7 +211,7 @@ The data isolation test: authenticate as one user and assert that another user's
       "name": "Which single test should I write first?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The data isolation test — authenticate as one user and assert another user's records cannot be read. It guards the most common serious flaw in AI-built apps."
+        "text": "The data isolation test - authenticate as one user and assert another user's records cannot be read. It guards the most common serious flaw in AI-built apps."
       }
     }
   ]

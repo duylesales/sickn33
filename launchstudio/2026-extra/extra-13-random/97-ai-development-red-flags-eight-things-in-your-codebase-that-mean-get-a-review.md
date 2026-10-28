@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Development Red Flags: Eight Things in Your Codebase That Mean 'Get a Review'",
-  "description": "Eight warning signs a non-technical founder can spot in an AI development project — without reading code — that indicate the app needs a professional review before real users or payments arrive.",
+  "description": "Eight warning signs a non-technical founder can spot in an AI development project - without reading code - that indicate the app needs a professional review before real users or payments arrive.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-05",
@@ -21,11 +21,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Non-technical founders often ask: "How would I even know if my app has a problem?" You cannot read the code, and the app works when you click through it. But AI development leaves visible traces — in how the app behaves, how it was built and what your tools and accounts show. None of these red flags prove there is a vulnerability. Each one means the chance is high enough that a professional review is worth it before real users or payments arrive.
+Non-technical founders often ask: "How would I even know if my app has a problem?" You cannot read the code, and the app works when you click through it. But AI development leaves visible traces - in how the app behaves, how it was built and what your tools and accounts show. None of these red flags prove there is a vulnerability. Each one means the chance is high enough that a professional review is worth it before real users or payments arrive.
 
 ## Red Flag 1: You Can See Other People's Data by Changing a Number
 
-Open something that belongs to you — an order, a booking, a profile — and look at the web address. If it contains a number, change it slightly while logged in. If you see someone else's data, you have found the most common serious problem in AI-built apps. This one is not a maybe; it is a stop sign.
+Open something that belongs to you - an order, a booking, a profile - and look at the web address. If it contains a number, change it slightly while logged in. If you see someone else's data, you have found the most common serious problem in AI-built apps. This one is not a maybe; it is a stop sign.
 
 ## Red Flag 2: The Page Source Contains Words Like "secret" or "sk_"
 
@@ -37,7 +37,7 @@ If your admin area is protected only because normal users don't see the link, tr
 
 ## Red Flag 4: The App Says "Paid" Before the Payment Provider Does
 
-Start a test payment, then close the payment page before returning. If your app shows the order as paid — or never records a payment that actually went through — payments are confirmed the wrong way.
+Start a test payment, then close the payment page before returning. If your app shows the order as paid - or never records a payment that actually went through - payments are confirmed the wrong way.
 
 ## Red Flag 5: Everything Lives on One Account You Don't Fully Control
 
@@ -49,7 +49,7 @@ If you do not know whether backups exist, or have never restored one, assume you
 
 ## Red Flag 7: Changes Go Straight to Live
 
-If every edit in your AI tool is immediately visible to customers, with no test environment, one prompt can break the app for everyone — and you have no easy way back.
+If every edit in your AI tool is immediately visible to customers, with no test environment, one prompt can break the app for everyone - and you have no easy way back.
 
 ## Red Flag 8: You Find Out About Problems From Customers
 
@@ -63,27 +63,27 @@ If nobody is alerted when the app goes down or errors occur, your customers are 
 
 ## Why These AI Development Flags Appear
 
-They are not signs of a bad founder or a bad tool. AI development tools build what you describe, and they are excellent at screens and flows. They do not decide who may see what, where secrets belong, or how your business should recover from a mistake — unless someone tells them. The flags are simply the places where nobody did.
+They are not signs of a bad founder or a bad tool. AI development tools build what you describe, and they are excellent at screens and flows. They do not decide who may see what, where secrets belong, or how your business should recover from a mistake - unless someone tells them. The flags are simply the places where nobody did.
 
 ## How to Check Each Red Flag, Step by Step
 
 AI development red flags are only useful if you can check them reliably. A step-by-step guide for non-technical founders:
 
-**Red flag 1 — changing a number.** Create two accounts (use a second email address). With account A, create an item and note its address. Log out, log in as B, paste A's address. Also try changing the last digit of your own item's address while logged in as A. If anything that is not yours appears, stop and note it.
+**Red flag 1 - changing a number.** Create two accounts (use a second email address). With account A, create an item and note its address. Log out, log in as B, paste A's address. Also try changing the last digit of your own item's address while logged in as A. If anything that is not yours appears, stop and note it.
 
-**Red flag 2 — secrets in page source.** On any page of your app, right-click → View page source, then search for `sk_`, `secret`, `service_role`, `api_key`, `password`. Repeat on the JavaScript files listed in the browser's network tab. Write down every match with the surrounding text.
+**Red flag 2 - secrets in page source.** On any page of your app, right-click → View page source, then search for `sk_`, `secret`, `service_role`, `api_key`, `password`. Repeat on the JavaScript files listed in the browser's network tab. Write down every match with the surrounding text.
 
-**Red flag 3 — hidden admin.** Log in as a normal user, then type your admin page's address directly. Try also in a private window without logging in.
+**Red flag 3 - hidden admin.** Log in as a normal user, then type your admin page's address directly. Try also in a private window without logging in.
 
-**Red flag 4 — payment confirmed early.** In test mode, start a payment, close the payment tab before returning and check the order. Then complete a payment normally and check again.
+**Red flag 4 - payment confirmed early.** In test mode, start a payment, close the payment tab before returning and check the order. Then complete a payment normally and check again.
 
-**Red flag 5 — ownership.** List every service your app uses and check which email owns it and whether two-factor authentication is on.
+**Red flag 5 - ownership.** List every service your app uses and check which email owns it and whether two-factor authentication is on.
 
-**Red flag 6 — backups.** Log into your database provider, find backups, check they are enabled and ask your engineer to restore one into a test project.
+**Red flag 6 - backups.** Log into your database provider, find backups, check they are enabled and ask your engineer to restore one into a test project.
 
-**Red flag 7 — changes go live directly.** Ask: when I change something in my AI tool, where does it appear first? If the answer is "live," this flag is raised.
+**Red flag 7 - changes go live directly.** Ask: when I change something in my AI tool, where does it appear first? If the answer is "live," this flag is raised.
 
-**Red flag 8 — customers as monitoring.** Ask: if the app went down now, who would get a message, and how?
+**Red flag 8 - customers as monitoring.** Ask: if the app went down now, who would get a message, and how?
 
 ## Interpreting What You Find
 
@@ -126,7 +126,7 @@ After running the checks, write a one-page plan: each raised flag, its severity,
 
 ## Re-Checking After Changes
 
-Red flags can return. AI tools regenerate code, new features add new pages and new team members get access. Repeat the eight checks after every significant change and at least every quarter. Ask your engineer to automate the most important ones — especially the two-account test — so they run on every deployment. Over time, the checks become a routine rather than an alarm.
+Red flags can return. AI tools regenerate code, new features add new pages and new team members get access. Repeat the eight checks after every significant change and at least every quarter. Ask your engineer to automate the most important ones - especially the two-account test - so they run on every deployment. Over time, the checks become a routine rather than an alarm.
 
 ## First Step
 
@@ -134,7 +134,7 @@ Run red flag 1, the two-account test, on your three most important pages today. 
 
 ## Why Non-Technical Founders Are Well Placed to Check
 
-It may seem that only engineers can judge whether an app is safe. For the most important risks, that is not true. The checks in this article require a browser, two email addresses, a test payment and access to your own accounts. Non-technical founders often notice red flags that technical founders overlook, precisely because they approach the app as a user would — clicking, changing, trying things. Combine that perspective with a professional review for what cannot be seen from outside, and you have a far better picture of your app than either alone would give.
+It may seem that only engineers can judge whether an app is safe. For the most important risks, that is not true. The checks in this article require a browser, two email addresses, a test payment and access to your own accounts. Non-technical founders often notice red flags that technical founders overlook, precisely because they approach the app as a user would - clicking, changing, trying things. Combine that perspective with a professional review for what cannot be seen from outside, and you have a far better picture of your app than either alone would give.
 
 ## Remember
 
@@ -158,14 +158,14 @@ Noortje Vermeer runs a clothing alteration and repair studio in Naarden and buil
 
 After reading about AI app security, Noortje went through the red flags herself and found five: changing a number in the order address showed another customer's photos and address; the page source contained a key beginning with `sk_`; the admin page opened in a private browser window; she had never restored a backup; and she had once learned about an outage from a customer's Instagram comment. She booked a review.
 
-LaunchStudio confirmed all five and found one more — deposits confirmed on browser redirect. Over five business days, the engineers enforced customer-level access in the database, rotated the Mollie secret key and moved payment creation server-side, protected the admin area with roles, moved deposit confirmation to webhooks, enabled backups with a tested restore, added a staging environment and set up uptime and error alerts on Noortje's phone.
+LaunchStudio confirmed all five and found one more - deposits confirmed on browser redirect. Over five business days, the engineers enforced customer-level access in the database, rotated the Mollie secret key and moved payment creation server-side, protected the admin area with roles, moved deposit confirmation to webhooks, enabled backups with a tested restore, added a staging environment and set up uptime and error alerts on Noortje's phone.
 
 **Result:** Noortje re-ran the red-flag checks herself afterwards and found none. Naaiwerk now handles around 120 bookings a month, and she repeats the checks after every major change.
 
 > *"I couldn't read the code, but I could count the flags. Five was enough to know I needed help."*
-> — **Noortje Vermeer, Founder, Naaiwerk (Naarden)**
+> - **Noortje Vermeer, Founder, Naaiwerk (Naarden)**
 
-**Cost & Timeline:** €1,300 (Launch Ready package: access control, secrets, admin protection, payments, backups and monitoring) — completed in 5 business days.
+**Cost & Timeline:** €1,300 (Launch Ready package: access control, secrets, admin protection, payments, backups and monitoring) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -183,7 +183,7 @@ No. It means the most visible warning signs are absent. A professional review ca
 
 ### How does Manifera turn red flags into fixes?
 
-By reviewing the code and configuration behind each flag, fixing the root cause at a fixed price and explaining the result in plain language — practices from over a decade of enterprise delivery.
+By reviewing the code and configuration behind each flag, fixing the root cause at a fixed price and explaining the result in plain language - practices from over a decade of enterprise delivery.
 
 ### Can fixing red flags improve how my app is perceived online?
 

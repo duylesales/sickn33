@@ -12,7 +12,7 @@ Foutregistratie en een eenvoudige funnel lieten binnen een week zien waarom. Zo'
 ✅ E-mail verplaatst naar een geauthenticeerd verzenddomein
 ✅ Een vraag van één regel bij afgebroken checkouts, plus foutregistratie zonder persoonsgegevens en funnelmonitoring
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, kijken we waar gebruikers niet klagen — ze vertrekken gewoon. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, kijken we waar gebruikers niet klagen - ze vertrekken gewoon. ⚙️
 
 💡 Het resultaat: € 1.700, zes werkdagen. Het aantal voltooide mobiele checkouts steeg de maand daarna met ongeveer de helft, en de bestellingen bij de drie bakkerijen groeiden met zo'n 35% zonder extra advertenties. Tom kijkt nu elke maandag naar de funnel in plaats van naar zijn inbox. 🚀
 

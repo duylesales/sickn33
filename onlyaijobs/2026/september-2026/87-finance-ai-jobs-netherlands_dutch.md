@@ -21,7 +21,7 @@ Content Format: Sector Analysis
 }
 </script>
 
-Financiële dienstverlening is een van de grootste werkgevers van kwantitatief talent in Nederland, en de sector die kandidaten uit technologiebedrijven het meest consistent verrast. De verrassing is niet de moeilijkheid van het modelleren. Het is dat een model hier een beheerst artefact is met documentatie, validatie, eigenaarschap en een levenscyclus — en dat die governance geen obstakel voor het werk is maar de vorm ervan.
+Financiële dienstverlening is een van de grootste werkgevers van kwantitatief talent in Nederland, en de sector die kandidaten uit technologiebedrijven het meest consistent verrast. De verrassing is niet de moeilijkheid van het modelleren. Het is dat een model hier een beheerst artefact is met documentatie, validatie, eigenaarschap en een levenscyclus - en dat die governance geen obstakel voor het werk is maar de vorm ervan.
 
 ## Wat modelgovernance dagelijks betekent
 
@@ -29,7 +29,7 @@ Financiële dienstverlening is een van de grootste werkgevers van kwantitatief t
 
 **Onafhankelijke validatie is een aparte functie.** Iemand die geen modellen bouwt, beoordeelt het jouwe: de data, de aannames, de methodologie, het testen, de beperkingen. Dat is bij ontwerp tegensprekend en niet persoonlijk. Engineers die het als aanval ervaren, lopen vast; engineers die het gebruiken om eigen zwaktes te vinden, verbeteren sneller dan alleen.
 
-**Documentatie is een oplevering.** Geen README — een document dat beschrijft wat het model doet, welke data het gebruikt, welke aannames het maakt, hoe het is getest, waar het niet gebruikt mag worden, en welke monitoring degradatie detecteert.
+**Documentatie is een oplevering.** Geen README - een document dat beschrijft wat het model doet, welke data het gebruikt, welke aannames het maakt, hoe het is getest, waar het niet gebruikt mag worden, en welke monitoring degradatie detecteert.
 
 **Uitlegbaarheid kan een eis zijn in plaats van een voorkeur.** Raakt een model een klant, dan moet het besluit soms uitlegbaar zijn aan die klant en aan een toezichthouder. Dat beperkt methoden en is een ontwerpinput vanaf het begin.
 

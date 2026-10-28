@@ -1,4 +1,4 @@
-🔥 Lisa bouwde een prototype via **AI builders** — als voormalig accountant bouwde ze een chatbot voor fiscale vragen, maar haar poging om via Zapier en Xero een geautomatiseerde boekhouder te maken strandde op vastlopende automatiseringen. 🧠
+🔥 Lisa bouwde een prototype via **AI builders** - als voormalig accountant bouwde ze een chatbot voor fiscale vragen, maar haar poging om via Zapier en Xero een geautomatiseerde boekhouder te maken strandde op vastlopende automatiseringen. 🧠
 
 Als u een eenvoudige chatbot wilt transformeren naar een autonome AI-agent zonder maatwerk orchestration (LangChain/LangGraph) en circuit breakers, leiden multi-step loops tot torenhoge kosten en foutieve acties.
 
@@ -12,7 +12,7 @@ Als u een eenvoudige chatbot wilt transformeren naar een autonome AI-agent zonde
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Lisa schakelde over naar een tarief van €1 per verwerkte factuur en verwerkte direct 50.000 facturen in maand één. (€14.000 (Agentic Backend & LangChain) — binnen 30 werkdagen live). 🚀
+Lisa schakelde over naar een tarief van €1 per verwerkte factuur en verwerkte direct 50.000 facturen in maand één. (€14.000 (Agentic Backend & LangChain) - binnen 30 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-agent-automation-b2b-saas
 

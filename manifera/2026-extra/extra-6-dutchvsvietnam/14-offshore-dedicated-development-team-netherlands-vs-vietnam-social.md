@@ -2,11 +2,11 @@
 
 **The Pain Points:**
 ❌ **Unquantified Anxiety, Not Numbers:** "Offshore never works" isn't a number, and the board wants numbers.
-❌ **A Default, Not a Decision:** Six months later, two of five roles filled, roadmap slipped a full quarter — a decision that was never actually made.
-❌ **Governance Risk Mistaken for Geography Risk:** The real variable isn't where the team sits — it's whether anyone's accountable above it.
+❌ **A Default, Not a Decision:** Six months later, two of five roles filled, roadmap slipped a full quarter - a decision that was never actually made.
+❌ **Governance Risk Mistaken for Geography Risk:** The real variable isn't where the team sits - it's whether anyone's accountable above it.
 
 **The Manifera Solution:**
-✅ **Cost, Timeline, and Risk — Computed the Same Way for Both:** A €550,000-€700,000 local team vs. €220,000-€320,000 governed pod, 4-6 months vs. 4 weeks to full capacity.
+✅ **Cost, Timeline, and Risk - Computed the Same Way for Both:** A €550,000-€700,000 local team vs. €220,000-€320,000 governed pod, 4-6 months vs. 4 weeks to full capacity.
 ✅ **Amsterdam Strategic Governance:** Architecture sign-off and contractual accountability that converts the governance variable from liability into advantage.
 ✅ **Vietnam Execution Velocity:** Senior-level output at 45-60% of the Dutch cost base, full sprint contribution within a documented 4-week ramp.
 

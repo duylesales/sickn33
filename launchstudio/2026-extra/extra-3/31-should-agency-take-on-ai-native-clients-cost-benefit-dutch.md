@@ -51,7 +51,7 @@ Heeft het bestaande team van uw bureau oprecht het comfort om een onbekende back
 
 [LaunchStudio](https://launchstudio.eu/nl/) werkt met bureaus aan beide uiteinden van dit spectrum – bureaus die in-house competentie opbouwen en een tweede mening of specifieke training willen, en bureaus die liever volledig samenwerken voor de technische diepgang. Dit weerspiegelt Manifera's eigen bredere ervaring in zowel directe klantlevering als white-label technische partnerschapsmodellen.
 
-[Krijg een eerlijk beeld van of dit segment past bij de daadwerkelijke krachten van uw bureau](https://launchstudio.eu/nl/#contact) — het juiste antwoord hangt af van uw specifieke team, en niet van een algemene trend.
+[Krijg een eerlijk beeld van of dit segment past bij de daadwerkelijke krachten van uw bureau](https://launchstudio.eu/nl/#contact) - het juiste antwoord hangt af van uw specifieke team, en niet van een algemene trend.
 
 ## Een scorekaart met vijf factoren om te beslissen of dit segment bij uw bureau past
 
@@ -80,7 +80,7 @@ In plaats van dit groeiende volume aan aanvragen af te wijzen of zwaar te invest
 **Resultaat:** Bram's bureau beheert nu de klantrelatie en het ontwerpwerk voor AI-native klanten, terwijl LaunchStudio de technische verharding oplevert onder zijn merknaam. Hierdoor kan Bram dit groeiende klantsegment bedienen zonder de meerjarige investering die nodig zou zijn geweest om echte competentie in backend-beveiliging op te bouwen vanaf het daadwerkelijke uitgangspunt van zijn bureau.
 
 > *"Ik had een jaar of meer kunnen besteden aan het proberen opbouwen van expertise in backend-beveiliging waar mijn team oprecht geen natuurlijke basis voor had. Samenwerken voor specifiek dat onderdeel stelde me in staat om onmiddellijk 'ja' te zeggen tegen dit groeiende segment, waarbij ik de kracht gebruikte die ik daadwerkelijk al had in plaats van te doen alsof ik iets moest worden wat mijn bureau niet was."*
-> — **Bram Oosterveld, Bureau-eigenaar, Den Haag**
+> - **Bram Oosterveld, Bureau-eigenaar, Den Haag**
 
 **Kosten en tijdlijn:** White-label partnerschapsinrichting: geen kosten vooraf; tarieven per opdracht afgestemd op elk specifiek klantproject.
 
@@ -126,7 +126,7 @@ Ja, een echt risico – een bureau zonder een van beide paden kan opdrachten ver
       "name": "Is een white-label partnerschap alleen voor bureaus zonder backend-capaciteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Werkt voor beide — bureaus met wat diepgang kunnen hiaten opvangen, terwijl bureaus zonder diepgang het segment direct bedienen."
+        "text": "Werkt voor beide - bureaus met wat diepgang kunnen hiaten opvangen, terwijl bureaus zonder diepgang het segment direct bedienen."
       }
     },
     {
@@ -134,7 +134,7 @@ Ja, een echt risico – een bureau zonder een van beide paden kan opdrachten ver
       "name": "Moet een bureau zijn merk of positionering aanpassen voor AI-native klanten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — de klantgerichte relatie blijft hetzelfde terwijl de levering via een partner verloopt."
+        "text": "Niet noodzakelijkerwijs - de klantgerichte relatie blijft hetzelfde terwijl de levering via een partner verloopt."
       }
     },
     {
@@ -142,7 +142,7 @@ Ja, een echt risico – een bureau zonder een van beide paden kan opdrachten ver
       "name": "Hoe lang duurt het om in-house competentie op te bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanzienlijk langer dan één project — het vereist ervaring met veel gevarieerde codebases om patronen te leren."
+        "text": "Aanzienlijk langer dan één project - het vereist ervaring met veel gevarieerde codebases om patronen te leren."
       }
     },
     {

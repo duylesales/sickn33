@@ -114,9 +114,9 @@ Wanneer een ontwikkelaar nu een prompt aanpast om een Frans btw-probleem op te l
 **Resultaat:** De ontwikkelingssnelheid keerde direct terug. Ontwikkelaars waren niet langer verlamd door angst omdat de EDD-pipeline een wiskundig vangnet bood. Het hallucinatiepercentage in productie daalde naar 0,1%, en Marcus' team schaalde het systeem succesvol naar het verwerken van 50.000 facturen per maand voor grote Europese ondernemingen.
 
 > *"We probeerden een neuraal netwerk te beheren met dezelfde tools die we gebruikten voor een eenvoudige database. Het was een ramp die op het punt stond te gebeuren. LaunchStudio heeft niet alleen onze code gerepareerd; ze hebben onze complete engineeringafdeling geleerd hoe je daadwerkelijk software bouwt in het AI-tijdperk. De evaluatiepipeline die ze hebben gebouwd is het meest waardevolle stuk infrastructuur dat we bezitten."*
-> — **Marcus Sterling, CTO, LedgerAI (Londen)**
+> - **Marcus Sterling, CTO, LedgerAI (Londen)**
 
-**Kosten & Doorlooptijd:** € 12.500 (Launch & Grow Pakket met Enterprise MLOps & EDD Add-on) — productieklaar en uitgerold in 15 werkdagen.
+**Kosten & Doorlooptijd:** € 12.500 (Launch & Grow Pakket met Enterprise MLOps & EDD Add-on) - productieklaar en uitgerold in 15 werkdagen.
 
 ---
 

@@ -17,19 +17,19 @@ Hier leest u de nuchtere realiteit van het deployen van een met Bolt AI gebouwde
 
 ## De Sandbox versus de Echte Productiewerkelijkheid (The Reality Check)
 
-Bolt AI maakt gebruik van een geavanceerde technologie genaamd **WebContainers** om uw applicatie rechtstreeks binnen de browseromgeving uit te voeren — in wezen een lichtgewicht Node.js runtime die client-side draait. Dit creëert een levensgrote kloof tussen de geïsoleerde "sandbox"-omgeving en het echte internet, omdat een WebContainer geen persistente harde schijf bezit, geen echte netwerkidentiteit heeft en geen van de restricties (en beschermingsmechanismen) van een fysieke productieserver kent.
+Bolt AI maakt gebruik van een geavanceerde technologie genaamd **WebContainers** om uw applicatie rechtstreeks binnen de browseromgeving uit te voeren - in wezen een lichtgewicht Node.js runtime die client-side draait. Dit creëert een levensgrote kloof tussen de geïsoleerde "sandbox"-omgeving en het echte internet, omdat een WebContainer geen persistente harde schijf bezit, geen echte netwerkidentiteit heeft en geen van de restricties (en beschermingsmechanismen) van een fysieke productieserver kent.
 
 ### 1. De Illusie van de Vluchtige Database (The Ephemeral Database)
 
 Wanneer u Bolt AI vraagt om *"een database toe te voegen"*, genereert het model vaak een lokale SQLite-database of een in-memory datastructuur. Dit functioneert schijnbaar vlekkeloos zolang uw browsertabblad geopend blijft.
 
-- **De Realiteitscheck:** Op het moment dat u deze code deployt naar een echte server, reset deze lokale database bij elke serverherstart — en serverless platforms (zoals Vercel of Netlify) herstarten functies continu, vaak tussen individuele gebruikersverzoeken door. Alle gebruikersdata en registraties worden direct en permanent gewist. Om live te kunnen gaan, moet u de code handmatig migreren naar een persistente, externe PostgreSQL-database (zoals Supabase), wat Bolt niet veilig voor u kan provisioneren. Dit is geen bug die u kunt wegpompen met een extra prompt; het is een structurele fysieke beperking van de sandbox.
+- **De Realiteitscheck:** Op het moment dat u deze code deployt naar een echte server, reset deze lokale database bij elke serverherstart - en serverless platforms (zoals Vercel of Netlify) herstarten functies continu, vaak tussen individuele gebruikersverzoeken door. Alle gebruikersdata en registraties worden direct en permanent gewist. Om live te kunnen gaan, moet u de code handmatig migreren naar een persistente, externe PostgreSQL-database (zoals Supabase), wat Bolt niet veilig voor u kan provisioneren. Dit is geen bug die u kunt wegpompen met een extra prompt; het is een structurele fysieke beperking van de sandbox.
 
 ### 2. Het Volledig Ontbreken van Geheimbeheer (Missing Secret Management)
 
-Om uw Bolt-applicatie te verbinden met echte externe diensten — zoals Stripe voor betalingen, Resend voor transactionele e-mails of OpenAI voor AI-generaties — heeft u geheime API-sleutels nodig.
+Om uw Bolt-applicatie te verbinden met echte externe diensten - zoals Stripe voor betalingen, Resend voor transactionele e-mails of OpenAI voor AI-generaties - heeft u geheime API-sleutels nodig.
 
-- **De Realiteitscheck:** U kunt uw live Stripe Secret Key niet veilig in het chatvenster van Bolt.new plakken. Doet u dat wel, dan wordt die sleutel vrijwel zeker hardcoded meegecompileerd in de openbare client-side JavaScript-bundel, waardoor iedereen die uw site bezoekt uw geld en API-tegoeden kan stelen. Productie-deployment vereist het configureren van beveiligde server-side omgevingsvariabelen die de sandbox niet voor u kan orkestreren — variabelen die moeten leven op de infrastructuur van uw hostingprovider, en nooit in een bestand dat in een publieke GitHub-repository belandt.
+- **De Realiteitscheck:** U kunt uw live Stripe Secret Key niet veilig in het chatvenster van Bolt.new plakken. Doet u dat wel, dan wordt die sleutel vrijwel zeker hardcoded meegecompileerd in de openbare client-side JavaScript-bundel, waardoor iedereen die uw site bezoekt uw geld en API-tegoeden kan stelen. Productie-deployment vereist het configureren van beveiligde server-side omgevingsvariabelen die de sandbox niet voor u kan orkestreren - variabelen die moeten leven op de infrastructuur van uw hostingprovider, en nooit in een bestand dat in een publieke GitHub-repository belandt.
 
 ### 3. De Onvolledige Authenticatie-Loop (Unfinished Authentication)
 
@@ -49,7 +49,7 @@ Geen van de vier bovengenoemde structurele gaten is zichtbaar binnen de interfac
 
 Als niet-technische ondernemer is het downloaden van een zip-bestand van een Bolt AI-project en het staren naar een map vol `vite.config.ts` en `package.json` bestanden uiterst ontmoedigend. U heeft de visie gebouwd, maar mist de specialistische software-engineering om de software veilig op het internet te publiceren.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Dit is exact het bestaansrecht van [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging in **Singapore** (100 Tras Street) en ons software-centrum in **Ho Chi Minhstad, Vietnam** (10 Pho Quang Street), vormen wij de betrouwbare brug tussen uw Bolt AI-prototype en een veilige, live productieomgeving.
 
@@ -57,7 +57,7 @@ Met ons **"Launch Ready" pakket** stuurt u ons simpelweg uw Bolt AI-project. Wij
 
 Wij verwijderen de vluchtige lokale databases en vervangen deze door een persistente, veilige PostgreSQL-omgeving op Supabase. Wij richten uw omgevingsvariabelen veilig in. Wij vergrendelen uw API-routes met strikte Row Level Security, lossen WebContainer-compatibiliteitsproblemen op en bouwen de cryptografisch beveiligde Stripe/Mollie webhooks zodat u daadwerkelijk abonnementsgeld kunt incasseren. Binnen **1 tot 3 weken** transformeren we uw browser-experiment in een veilige, schaalbare en winstgevende B2B SaaS.
 
-Dit specialistische werk bouwt voort op exact dezelfde kwaliteitsstandaarden die Manifera hanteert voor veeleisende enterprise-opdrachtgevers — met als essentieel verschil dat u als solo-oprichter profiteert van een afgebakend, vast geprijsd project dat perfect binnen uw budget past.
+Dit specialistische werk bouwt voort op exact dezelfde kwaliteitsstandaarden die Manifera hanteert voor veeleisende enterprise-opdrachtgevers - met als essentieel verschil dat u als solo-oprichter profiteert van een afgebakend, vast geprijsd project dat perfect binnen uw budget past.
 
 ### Wat "Productieklaar" Werkelijk Betekent voor een Bolt-App
 
@@ -93,7 +93,7 @@ Gedurende de daaropvolgende 8 werkdagen vervingen we de vluchtige SQLite-databas
 
 **Resultaat:** Sarah lanceerde haar platform officieel en veilig. De applicatie genereert inmiddels een stabiele € 600 MRR aan abonnementen van lokale evenementenbureaus, zonder dat Sarah zich ooit nog zorgen hoeft te maken over dataverlies. *"Bolt hielp me de app te visualiseren, maar LaunchStudio maakte er een echt, betrouwbaar bedrijf van."*
 
-**Kosten & Tijdlijn:** €1.800 (Launch Ready Pakket) — binnen 8 werkdagen volledig live opgeleverd.
+**Kosten & Tijdlijn:** €1.800 (Launch Ready Pakket) - binnen 8 werkdagen volledig live opgeleverd.
 
 ---
 

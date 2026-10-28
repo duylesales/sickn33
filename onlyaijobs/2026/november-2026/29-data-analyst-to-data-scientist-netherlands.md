@@ -35,11 +35,11 @@ Content Format: Career Guide
 }
 </script>
 
-A remarkable number of data scientists in the Netherlands did not start as data scientists. They started as analysts: building reports, answering business questions in SQL, maintaining dashboards and explaining numbers to managers. At some point, they wanted to go further — to predict rather than describe, to experiment rather than report. The transition from analyst to data scientist is one of the most common career moves in the Dutch data market, and also one of the most misunderstood. Many analysts overestimate how much they need to learn about advanced algorithms and underestimate the gaps that actually hold them back.
+A remarkable number of data scientists in the Netherlands did not start as data scientists. They started as analysts: building reports, answering business questions in SQL, maintaining dashboards and explaining numbers to managers. At some point, they wanted to go further - to predict rather than describe, to experiment rather than report. The transition from analyst to data scientist is one of the most common career moves in the Dutch data market, and also one of the most misunderstood. Many analysts overestimate how much they need to learn about advanced algorithms and underestimate the gaps that actually hold them back.
 
 ## Why Analysts Have a Strong Starting Position
 
-Analysts often bring exactly the skills that inexperienced data scientists lack. They know how to find and clean data in messy real-world systems. They understand business context and know which questions managers actually care about. They can communicate results to non-technical stakeholders. They have learned — often painfully — that numbers are only useful when people trust them.
+Analysts often bring exactly the skills that inexperienced data scientists lack. They know how to find and clean data in messy real-world systems. They understand business context and know which questions managers actually care about. They can communicate results to non-technical stakeholders. They have learned - often painfully - that numbers are only useful when people trust them.
 
 Data science hiring managers frequently say that these skills are harder to teach than a new modelling technique. A candidate who understands how a company's data is generated and can explain why a prediction matters often outperforms a candidate with a stronger theoretical background but little practical experience.
 
@@ -58,19 +58,19 @@ Three of these gaps are more important than the rest.
 
 **Statistical reasoning.** The most important gap is not machine learning algorithms but statistical thinking: understanding uncertainty, the difference between correlation and causation, why a sample may be biased and how to tell whether an improvement is real or noise. Many failed data science projects fail on these points, not on algorithm choice.
 
-**Model evaluation.** Knowing how to evaluate a model honestly — using proper validation, avoiding data leakage, choosing metrics that reflect business costs and recognising when a model is not good enough — separates reliable data scientists from people who can run a training script.
+**Model evaluation.** Knowing how to evaluate a model honestly - using proper validation, avoiding data leakage, choosing metrics that reflect business costs and recognising when a model is not good enough - separates reliable data scientists from people who can run a training script.
 
 **Programming and reproducibility.** Moving from SQL and BI tools to Python or R, and learning version control and writing reusable code, allows analysts to work with more complex data and to hand over work that others can maintain.
 
 ## The Gaps That Matter Less Than People Think
 
-Many analysts spend months studying advanced deep learning architectures before applying for data science roles. For most Dutch data science positions — at retailers, insurers, energy companies, government organisations and manufacturers — the daily work involves structured data, regression and classification models, gradient boosting, forecasting and experimentation. Deep learning is valuable for specific roles, such as computer vision or NLP, but it is rarely the entry requirement for a general data scientist role.
+Many analysts spend months studying advanced deep learning architectures before applying for data science roles. For most Dutch data science positions - at retailers, insurers, energy companies, government organisations and manufacturers - the daily work involves structured data, regression and classification models, gradient boosting, forecasting and experimentation. Deep learning is valuable for specific roles, such as computer vision or NLP, but it is rarely the entry requirement for a general data scientist role.
 
 Similarly, advanced mathematics beyond a solid understanding of linear algebra, probability and statistics is seldom decisive for applied roles. What matters is applying the fundamentals correctly.
 
 ## Routes That Work in the Dutch Labour Market
 
-**The internal route.** The most successful route is often inside the current employer. Analysts who take on a small predictive project — a forecast, a churn indicator, an experiment evaluation — can demonstrate data science value with data and stakeholders they already know. Many organisations prefer to develop internal talent because domain knowledge is expensive to acquire. Discussing development ambitions in performance conversations and asking for a pilot project are practical first steps.
+**The internal route.** The most successful route is often inside the current employer. Analysts who take on a small predictive project - a forecast, a churn indicator, an experiment evaluation - can demonstrate data science value with data and stakeholders they already know. Many organisations prefer to develop internal talent because domain knowledge is expensive to acquire. Discussing development ambitions in performance conversations and asking for a pilot project are practical first steps.
 
 **The hybrid title route.** Some roles combine analysis and data science, with titles such as "data analyst advanced analytics", "decision scientist", "product analyst" or "junior data scientist". These positions allow analysts to grow into modelling work gradually.
 
@@ -86,7 +86,7 @@ Training costs money and time. In the Netherlands, several sources may help.
 
 **Sector training funds.** Many sectors have training and development funds (O&O-fondsen) financed by employers and employees, which may subsidise training for workers in that sector.
 
-**Lifelong learning policy.** The Dutch government promotes lifelong learning under the heading Leven Lang Ontwikkelen. National schemes have changed over time — the former STAP training budget was discontinued — so check current options with official government sources, your sector fund and your employer.
+**Lifelong learning policy.** The Dutch government promotes lifelong learning under the heading Leven Lang Ontwikkelen. National schemes have changed over time - the former STAP training budget was discontinued - so check current options with official government sources, your sector fund and your employer.
 
 **Flexible Working Act.** Employees may request changes to working hours, which can create time for part-time study. Employers must consider requests seriously and may refuse changes in working hours only on substantial grounds.
 
@@ -146,7 +146,7 @@ Data scientist roles generally pay more than analyst roles at comparable experie
 ## Key Takeaways
 
 - Analysts have strong starting advantages: data handling, business context and communication.
-- The most important gaps are statistical reasoning, honest model evaluation and programming with reproducibility — not advanced deep learning.
+- The most important gaps are statistical reasoning, honest model evaluation and programming with reproducibility - not advanced deep learning.
 - Internal pilot projects, hybrid roles, part-time education and focused portfolios are effective routes in the Dutch market.
 - Employer development budgets, sector training funds, lifelong learning schemes, the Flexible Working Act and the AI Act's AI literacy obligation can support development.
 - Careful evaluation and stakeholder trust matter more than algorithm complexity in making the transition succeed.
@@ -163,16 +163,16 @@ Browse current AI, machine learning and data jobs, including junior and hybrid d
 Statistical reasoning, model evaluation and programming in Python or R, applied to a real question from your own work.
 
 ### (Scenario: analyst studying deep learning) Do I need deep learning to get a data scientist job?
-Not for most roles — structured data, regression, classification, forecasting and experimentation dominate general data science work.
+Not for most roles - structured data, regression, classification, forecasting and experimentation dominate general data science work.
 
 ### (Scenario: analyst considering a degree) Do I need a master's degree to make the transition?
-Not necessarily — demonstrated skills and practical projects often matter more, although formal education can help with statistics.
+Not necessarily - demonstrated skills and practical projects often matter more, although formal education can help with statistics.
 
 ### (Scenario: analyst looking for funding) How can I fund data science training in the Netherlands?
 Check your employer's development budget, your collective agreement, your sector training fund and current government lifelong learning options.
 
 ### (Scenario: analyst at an established employer) Is moving internally better than changing employers?
-Often yes — domain knowledge and existing trust make it easier to demonstrate data science value inside your current organisation.
+Often yes - domain knowledge and existing trust make it easier to demonstrate data science value inside your current organisation.
 
 <script type="application/ld+json">
 {
@@ -180,10 +180,10 @@ Often yes — domain knowledge and existing trust make it easier to demonstrate 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "What should a data analyst learn first to become a data scientist?", "acceptedAnswer": {"@type": "Answer", "text": "Statistical reasoning, model evaluation and programming, applied to a real question."}},
-    {"@type": "Question", "name": "Do I need deep learning to get a data scientist job?", "acceptedAnswer": {"@type": "Answer", "text": "Not for most roles — structured data modelling and forecasting dominate."}},
-    {"@type": "Question", "name": "Do I need a master's degree to make the transition?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — demonstrated skills and projects often matter more."}},
+    {"@type": "Question", "name": "Do I need deep learning to get a data scientist job?", "acceptedAnswer": {"@type": "Answer", "text": "Not for most roles - structured data modelling and forecasting dominate."}},
+    {"@type": "Question", "name": "Do I need a master's degree to make the transition?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - demonstrated skills and projects often matter more."}},
     {"@type": "Question", "name": "How can I fund data science training in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Employer budgets, collective agreements, sector training funds and current government schemes."}},
-    {"@type": "Question", "name": "Is moving internally better than changing employers?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — domain knowledge and trust make it easier to demonstrate value."}}
+    {"@type": "Question", "name": "Is moving internally better than changing employers?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - domain knowledge and trust make it easier to demonstrate value."}}
   ]
 }
 </script>

@@ -22,7 +22,7 @@ Target Persona: SaaS Scale-Up
 
 Somewhere between five and ten percent of recurring charges fail every month, and almost none of those failures mean a customer decided to leave. Cards expire. Banks decline for reasons they do not explain. A direct debit bounces because a business current account was briefly empty on the wrong Tuesday.
 
-The industry name for the customers you lose this way is involuntary churn, and for a subscription product it is routinely the largest single source of cancellation — larger than competitors, larger than dissatisfaction, and the only one you can fix with code rather than with a better product.
+The industry name for the customers you lose this way is involuntary churn, and for a subscription product it is routinely the largest single source of cancellation - larger than competitors, larger than dissatisfaction, and the only one you can fix with code rather than with a better product.
 
 An AI-built subscription app almost never handles it. The generated integration creates a subscription, marks the user active, and has no concept of what happens on the day a charge does not go through.
 
@@ -30,7 +30,7 @@ An AI-built subscription app almost never handles it. The generated integration 
 
 Find out before you read further. Open your database and ask: if a renewal failed this morning, what would be different?
 
-In most Lovable and Bolt applications the honest answer is *nothing*. The user row still says active. The webhook for the failed payment arrived at an endpoint that only listens for successes, or at no endpoint at all. The customer keeps their access indefinitely and you never learn that they stopped paying — until you reconcile the provider dashboard against your own revenue and find eleven accounts that have not paid since spring.
+In most Lovable and Bolt applications the honest answer is *nothing*. The user row still says active. The webhook for the failed payment arrived at an endpoint that only listens for successes, or at no endpoint at all. The customer keeps their access indefinitely and you never learn that they stopped paying - until you reconcile the provider dashboard against your own revenue and find eleven accounts that have not paid since spring.
 
 The mirror-image failure is just as common and worse: the app cuts access the instant a charge fails. A good customer whose card expired opens your product, finds themselves locked out with no explanation, and now has an excellent reason to evaluate an alternative. You have converted a five-day administrative problem into a cancellation.
 
@@ -38,15 +38,15 @@ The mirror-image failure is just as common and worse: the app cuts access the in
 
 There is a standard pattern and it is not complicated.
 
-**Retry, on a schedule, several times.** A charge that fails today frequently succeeds on Thursday, because salaries land and balances change. Stripe and Mollie both do this automatically if you let them — typically three to four attempts over two to three weeks. Your job is mostly not to interfere.
+**Retry, on a schedule, several times.** A charge that fails today frequently succeeds on Thursday, because salaries land and balances change. Stripe and Mollie both do this automatically if you let them - typically three to four attempts over two to three weeks. Your job is mostly not to interfere.
 
 **Keep access during a grace period.** Give the customer the retry window with their account working. The revenue you protect by cutting them off on day one is roughly zero; the revenue you lose is everything they would have paid you afterwards.
 
-**Tell them, in a way that is easy to act on.** The first email should be short, specific and contain a single link that goes straight to a page where they can update their payment method without logging in through three screens. Not a demand — a notification, because most recipients genuinely did not know.
+**Tell them, in a way that is easy to act on.** The first email should be short, specific and contain a single link that goes straight to a page where they can update their payment method without logging in through three screens. Not a demand - a notification, because most recipients genuinely did not know.
 
 **Escalate slowly and stop clearly.** A second message part-way through the window, a final one before access ends, and then a defined end state: subscription cancelled, access restricted, data retained for a stated period. A customer who returns two months later should be able to pay and resume, not discover their account was deleted.
 
-**Record every step.** Which attempt failed, when, with what reason, what you sent and what the customer did. When somebody writes to say they were charged after cancelling — and someone will — this log is how you answer in two minutes instead of an afternoon.
+**Record every step.** Which attempt failed, when, with what reason, what you sent and what the customer did. When somebody writes to say they were charged after cancelling - and someone will - this log is how you answer in two minutes instead of an afternoon.
 
 ## Three States, Not Two
 
@@ -72,21 +72,21 @@ Recovery is overwhelmingly an email problem rather than an engineering one, and 
 
 What works: sending from a real address a human replies to, naming the product and the amount, saying plainly which payment method failed, and giving one link that solves it. What does not: a generic "billing issue" subject line, a link to a login page rather than to the fix, and anything that reads like a collections notice.
 
-And send them from a domain that is properly configured, or your carefully written recovery sequence will be filtered before anyone reads it — which is the quiet reason many founders conclude that dunning emails do not work.
+And send them from a domain that is properly configured, or your carefully written recovery sequence will be filtered before anyone reads it - which is the quiet reason many founders conclude that dunning emails do not work.
 
 ## Watch the Number That Tells You It Is Working
 
 Failed-payment handling is one of the few pieces of billing work with a metric attached, and the metric is easy to compute: of charges that failed in a month, what proportion eventually succeeded without the customer cancelling?
 
-Below about forty percent, something is broken — usually the emails are not arriving, or the update-payment link requires a login the customer has forgotten. Between fifty and seventy-five percent is what a competent setup produces. Above that and you are either lucky in your customer base or you sell to businesses with reliable direct debits.
+Below about forty percent, something is broken - usually the emails are not arriving, or the update-payment link requires a login the customer has forgotten. Between fifty and seventy-five percent is what a competent setup produces. Above that and you are either lucky in your customer base or you sell to businesses with reliable direct debits.
 
-Two secondary numbers are worth a monthly glance. How many accounts are past due right now, which should be a small and stable number rather than a growing one. And how long the average past-due account stays past due — if that is climbing, your final step is not firing and accounts are sitting in limbo with working access.
+Two secondary numbers are worth a monthly glance. How many accounts are past due right now, which should be a small and stable number rather than a growing one. And how long the average past-due account stays past due - if that is climbing, your final step is not firing and accounts are sitting in limbo with working access.
 
 None of this needs a dashboard. A saved query, run on the first Monday of the month and written in a note, is enough for a product of any size a solo founder is running. What matters is that the number exists at all, because involuntary churn is invisible by nature: nobody writes to tell you they stopped paying by accident, and the customers it removes are, on average, the ones who liked your product enough to still be subscribed.
 
 ## One Thing Not to Automate
 
-There is a temptation, once the sequence works, to let it handle everything — including the customer who has failed four times across three months and whose account keeps recovering just long enough to fail again.
+There is a temptation, once the sequence works, to let it handle everything - including the customer who has failed four times across three months and whose account keeps recovering just long enough to fail again.
 
 Look at those by hand. A repeatedly failing account is usually one of three things: a business whose finance process genuinely cannot accommodate your billing date, a customer who wants to leave and has chosen the passive route, or a card being used by someone who should not have it. Each deserves a different response, and none of them is a fifth automated email.
 
@@ -98,7 +98,7 @@ Five minutes a month on the handful of accounts the automation could not resolve
 
 For a running subscription product this is two to four days: subscription states modelled properly in your own database, the provider's retry schedule configured deliberately rather than by default, a grace period with access maintained, a payment-update page reachable from an email without a full login, a three-message recovery sequence from a verified sending domain, webhook handling for the failure and recovery events your integration currently ignores, a clear end state with data retention, and a small internal view showing which accounts are past due right now.
 
-LaunchStudio builds this as part of payment integration under the Launch & Grow package, hosted and monitored at €49 per month. Behind it is Manifera — 160+ delivered projects and eleven years of production systems, with engineering in Ho Chi Minh City and client contact from Amsterdam.
+LaunchStudio builds this as part of payment integration under the Launch & Grow package, hosted and monitored at €49 per month. Behind it is Manifera - 160+ delivered projects and eleven years of production systems, with engineering in Ho Chi Minh City and client contact from Amsterdam.
 
 [Ask us what your app does on a failed renewal](https://launchstudio.eu/en/#contact). It is usually a short and uncomfortable answer.
 
@@ -108,18 +108,18 @@ LaunchStudio builds this as part of payment integration under the Launch & Grow 
 
 Fleur Alkemade runs Praktijkvoorraad, built in Lovable: stock and ordering software for independent physiotherapy and podiatry practices, €39 per month, 180 subscribers across the eastern Netherlands.
 
-Her integration handled the happy path correctly. A subscription created a row, set `is_active` to true, and that was the entire model. There was no webhook handler for failed payments — the endpoint existed but ignored every event type except the one that confirmed a first charge.
+Her integration handled the happy path correctly. A subscription created a row, set `is_active` to true, and that was the entire model. There was no webhook handler for failed payments - the endpoint existed but ignored every event type except the one that confirmed a first charge.
 
-She discovered the problem while preparing figures for her accountant in October. The provider dashboard showed 180 active subscriptions; her bank statements showed consistently fewer payments than that. Eleven practices had a failed card or a lapsed SEPA mandate — the oldest since March — and had been using the product free for up to seven months. None of them knew. Two had assumed the charges were simply on a different statement.
+She discovered the problem while preparing figures for her accountant in October. The provider dashboard showed 180 active subscriptions; her bank statements showed consistently fewer payments than that. Eleven practices had a failed card or a lapsed SEPA mandate - the oldest since March - and had been using the product free for up to seven months. None of them knew. Two had assumed the charges were simply on a different statement.
 
 Five business days: the subscription model rewritten with active, past due, paused and cancelled states held in her own database and checked by a single access function; failure, recovery and mandate-revoked webhook events handled with idempotency; the provider's retry schedule set to four attempts across 21 days; a fourteen-day grace period during which the practice keeps working access; a payment-update page reachable from a signed email link with no login; a three-message recovery sequence sent from a domain with SPF, DKIM and DMARC configured; settlement-based access for direct debit rather than initiation-based; and an internal past-due list Fleur checks on Mondays.
 
 **Result:** nine of the eleven lapsed practices reinstated within two weeks of being told, worth €4,212 in recovered annual revenue. Over the following six months the sequence recovered 71 percent of failed charges automatically, and Fleur's reconciliation went from an afternoon to a glance.
 
-> *"I was not chasing anyone, because I did not know there was anyone to chase. Nine of the eleven paid the day I emailed them — they just thought it was going out."*
-> — **Fleur Alkemade, Founder, Praktijkvoorraad (Deventer)**
+> *"I was not chasing anyone, because I did not know there was anyone to chase. Nine of the eleven paid the day I emailed them - they just thought it was going out."*
+> - **Fleur Alkemade, Founder, Praktijkvoorraad (Deventer)**
 
-**Cost & Timeline:** €2,900 (subscription state model, failure and mandate webhooks, retry and grace configuration, recovery sequence with email authentication, settlement-based access, past-due reporting) — completed in 5 business days.
+**Cost & Timeline:** €2,900 (subscription state model, failure and mandate webhooks, retry and grace configuration, recovery sequence with email authentication, settlement-based access, past-due reporting) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -185,7 +185,7 @@ A well-built sequence typically recovers between half and three quarters of fail
       "name": "How much revenue does failed-payment recovery actually return?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A well-built sequence typically recovers half to three quarters of failed charges — usually more than any conversion experiment a small product runs in a year."
+        "text": "A well-built sequence typically recovers half to three quarters of failed charges - usually more than any conversion experiment a small product runs in a year."
       }
     }
   ]

@@ -68,7 +68,7 @@ Semiconductor manufacturing operates at tolerances that have no parallel in othe
 
 Yield is the proportion of manufactured devices that work, and improving it is where most analytical value in this industry lies.
 
-The work combines several strands. Spatial analysis of defect patterns on a wafer, where the shape of a pattern — edge effects, radial gradients, clusters, scratches — points toward particular process steps or handling issues. Commonality analysis, identifying tools, chambers, recipes or material lots shared by underperforming wafers. Correlation of process parameters with electrical test results across hundreds of steps. And analysis of test data to distinguish systematic loss from random defectivity.
+The work combines several strands. Spatial analysis of defect patterns on a wafer, where the shape of a pattern - edge effects, radial gradients, clusters, scratches - points toward particular process steps or handling issues. Commonality analysis, identifying tools, chambers, recipes or material lots shared by underperforming wafers. Correlation of process parameters with electrical test results across hundreds of steps. And analysis of test data to distinguish systematic loss from random defectivity.
 
 The statistical challenge is substantial. With thousands of candidate parameters and hundreds of tools, spurious correlations are guaranteed, and an engineer who chases every apparent signal wastes months. Multiple comparison awareness, careful control for product mix and time, and validation of any finding through a designed experiment are what separate useful analysis from noise.
 
@@ -92,7 +92,7 @@ For candidates with backgrounds in reliability engineering, signal processing or
 
 Measuring and inspecting structures far smaller than the wavelength of visible light is a technical field in itself, and Europe has a particular strength here.
 
-Inspection systems scan wafers for defects and produce images and coordinates at high volume. Classifying those defects — distinguishing killer defects from harmless particles, and attributing them to likely sources — is a computer vision problem with the industrial characteristics described elsewhere in these guides: rare classes, subtle appearance differences, and enormous throughput requirements.
+Inspection systems scan wafers for defects and produce images and coordinates at high volume. Classifying those defects - distinguishing killer defects from harmless particles, and attributing them to likely sources - is a computer vision problem with the industrial characteristics described elsewhere in these guides: rare classes, subtle appearance differences, and enormous throughput requirements.
 
 Metrology measures dimensions, overlay between layers, film thickness and other properties. Increasingly, machine learning augments physical measurement: inferring properties from indirect signals faster than direct measurement allows, so that more wafers can be measured within the same time budget.
 
@@ -170,7 +170,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 One characteristic distinguishes analytical work in this sector from general industrial analytics: the underlying processes are described by physics that is well understood, and ignoring it wastes information.
 
-Deposition, etching, lithography and thermal processes all have physical models developed over decades. These models are approximate, computationally expensive, or require parameters that are hard to measure, which is precisely where data-driven methods add value — not by replacing the physics but by correcting it.
+Deposition, etching, lithography and thermal processes all have physical models developed over decades. These models are approximate, computationally expensive, or require parameters that are hard to measure, which is precisely where data-driven methods add value - not by replacing the physics but by correcting it.
 
 Practical patterns include using physical simulation to generate training data where real examples are scarce; learning a correction term between a physical model's prediction and measured reality; constraining a learned model so that its outputs respect known physical relationships; and using physical understanding to select features rather than searching blindly across thousands of parameters.
 

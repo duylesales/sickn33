@@ -35,19 +35,19 @@ Content Format: Decision Guide
 }
 </script>
 
-You find a vacancy that fits well, spend two hours tailoring a CV and a letter, submit it, and hear nothing. Weeks later you discover the role was filled before you applied — or was never really open. Every job seeker experiences this, and in a field where good applications take real effort, the cost is significant. A few minutes of checking before you write can save those hours, and the checks are straightforward once you know what to look at.
+You find a vacancy that fits well, spend two hours tailoring a CV and a letter, submit it, and hear nothing. Weeks later you discover the role was filled before you applied - or was never really open. Every job seeker experiences this, and in a field where good applications take real effort, the cost is significant. A few minutes of checking before you write can save those hours, and the checks are straightforward once you know what to look at.
 
 ## The Four Types of Postings That Waste Your Time
 
 **Already-filled roles.** The vacancy was genuine but is now closed, and nobody removed it from the aggregator or board that copied it.
 
-**Ghost jobs.** Postings kept live without a real intention to hire soon — to build a candidate pipeline, to test the market, to appear to be growing, or because a hiring freeze arrived after publication.
+**Ghost jobs.** Postings kept live without a real intention to hire soon - to build a candidate pipeline, to test the market, to appear to be growing, or because a hiring freeze arrived after publication.
 
 **Agency fishing.** Listings published by intermediaries to collect CVs rather than to fill a specific assignment they have been given.
 
 **Outright scams.** Rare in AI hiring but real, usually recognisable by requests for money, identity documents or bank details early in the process.
 
-Only the last category is dishonest in a legal sense. The others are mostly the result of process sloppiness — which does not make the wasted evening less annoying.
+Only the last category is dishonest in a legal sense. The others are mostly the result of process sloppiness - which does not make the wasted evening less annoying.
 
 ## Check One: Age and Freshness
 
@@ -63,7 +63,7 @@ A practical response: filter by posting date when the board allows it, and treat
 
 The single most reliable test is to find the same vacancy on the employer's own website.
 
-If it is there, with the same title and a working application route, the role is almost certainly live. If it is absent while the board listing remains, the role has probably been filled or withdrawn. If the employer's site lists it but with different details — another location, another seniority, a different closing date — trust the employer's version.
+If it is there, with the same title and a working application route, the role is almost certainly live. If it is absent while the board listing remains, the role has probably been filled or withdrawn. If the employer's site lists it but with different details - another location, another seniority, a different closing date - trust the employer's version.
 
 This check takes two minutes and resolves most uncertainty. It is also the reason that boards linking to the employer's own posting, as OnlyAIJobs does, are easier to verify than platforms that host a copy of the text.
 
@@ -91,11 +91,11 @@ For employers you do not know, a few minutes of research helps.
 
 Genuine vacancies are usually specific. They describe a team, a problem, the tools in use and what the first months look like. They name a contact person or an application route inside the employer's own system.
 
-Warning signs include: a description so generic it could apply to any company; a mismatch between the seniority in the title and the tasks described; no information about the team or the work, only requirements; and — increasingly common — text that reads as though it was generated without anyone checking it, such as contradictory statements about location or working hours.
+Warning signs include: a description so generic it could apply to any company; a mismatch between the seniority in the title and the tasks described; no information about the team or the work, only requirements; and - increasingly common - text that reads as though it was generated without anyone checking it, such as contradictory statements about location or working hours.
 
 ## Check Six: Salary Information
 
-Under the EU Pay Transparency Directive, employers must provide information about the initial pay or its range before the job interview, and may not ask about pay history. As this is implemented, the absence of any salary information, combined with an unwillingness to give a range when asked, becomes a meaningful signal — not necessarily that the role is fake, but that the employer has not organised its hiring.
+Under the EU Pay Transparency Directive, employers must provide information about the initial pay or its range before the job interview, and may not ask about pay history. As this is implemented, the absence of any salary information, combined with an unwillingness to give a range when asked, becomes a meaningful signal - not necessarily that the role is fake, but that the employer has not organised its hiring.
 
 ## Scam Signals That Justify Stopping Immediately
 
@@ -109,7 +109,7 @@ If you encounter these, stop contact and report it to the **Fraudehelpdesk**, an
 
 ## Reading the Answer You Get Back
 
-If you send a short message asking whether a role is still open, the reply itself is evidence — often better evidence than the posting.
+If you send a short message asking whether a role is still open, the reply itself is evidence - often better evidence than the posting.
 
 **A specific, prompt answer** naming the stage of the process ("we are interviewing next week and still accepting applications") indicates an organised employer who tracks their own vacancies. Apply with confidence.
 
@@ -119,7 +119,7 @@ If you send a short message asking whether a role is still open, the reply itsel
 
 **Silence** is itself informative. An employer who cannot answer a three-sentence question in a week is unlikely to run a fast, communicative process afterwards.
 
-**A response from a person with a name and function** — a hiring manager, a team lead, a recruiter who names the team — is worth more than a reply from a generic inbox.
+**A response from a person with a name and function** - a hiring manager, a team lead, a recruiter who names the team - is worth more than a reply from a generic inbox.
 
 Many Dutch employers follow the NVP Recruitment Code, which sets expectations about informing candidates and handling applications within reasonable timeframes. You are not being demanding by asking; you are checking whether the process is real before investing your evening in it.
 
@@ -144,7 +144,7 @@ This takes five minutes, and the response tells you a lot. A prompt, specific re
 
 ## Why Postings Go Stale: What Happens Inside the Employer
 
-Understanding why a vacancy stays online after it should have been removed makes the signals easier to interpret — and reduces the temptation to read bad intent into ordinary disorganisation.
+Understanding why a vacancy stays online after it should have been removed makes the signals easier to interpret - and reduces the temptation to read bad intent into ordinary disorganisation.
 
 **Distribution is fragmented.** A vacancy published once can end up on the employer's site, several boards, aggregators that copied it and agency pages. Taking it down in one place does not remove it from the others, and few organisations have a process for cleaning up every copy.
 
@@ -154,7 +154,7 @@ Understanding why a vacancy stays online after it should have been removed makes
 
 **Processes simply take long.** Specialist AI roles routinely take months to fill. A vacancy that is three months old may be entirely genuine and still open, with a candidate in the final round.
 
-The distinction that matters to you is not whether the employer behaved well but whether your application has a realistic chance this month. That is exactly why the checks in this article focus on verifiable facts — presence on the employer's own site, a named contact, a company that demonstrably exists — rather than on guessing intentions.
+The distinction that matters to you is not whether the employer behaved well but whether your application has a realistic chance this month. That is exactly why the checks in this article focus on verifiable facts - presence on the employer's own site, a named contact, a company that demonstrably exists - rather than on guessing intentions.
 
 ## Real example
 
@@ -176,7 +176,7 @@ Over the next five weeks she applies to seven roles instead of fourteen and rece
 
 ## Where to Start
 
-Before your next application, spend two minutes on the checklist above — especially checking the employer's own site — and only then start writing.
+Before your next application, spend two minutes on the checklist above - especially checking the employer's own site - and only then start writing.
 
 Browse current AI, machine learning and data jobs that link directly to the employer's own posting at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -204,7 +204,7 @@ Any request for payment, bank details or identity documents before a genuine off
   "mainEntity": [
     {"@type": "Question", "name": "How old is too old for a job posting?", "acceptedAnswer": {"@type": "Answer", "text": "Beyond about two months, verify before investing effort; aggregators can make old roles look new."}},
     {"@type": "Question", "name": "What is the best way to check whether a vacancy is still open?", "acceptedAnswer": {"@type": "Answer", "text": "Find the same role on the employer's own website."}},
-    {"@type": "Question", "name": "Should I apply to a vacancy that does not name the company?", "acceptedAnswer": {"@type": "Answer", "text": "Be cautious — unnamed listings prevent verification and risk duplicate applications."}},
+    {"@type": "Question", "name": "Should I apply to a vacancy that does not name the company?", "acceptedAnswer": {"@type": "Answer", "text": "Be cautious - unnamed listings prevent verification and risk duplicate applications."}},
     {"@type": "Question", "name": "How do I verify that a company is real?", "acceptedAnswer": {"@type": "Answer", "text": "Check the KVK register, the website and the address against the listing."}},
     {"@type": "Question", "name": "When is a job offer a scam?", "acceptedAnswer": {"@type": "Answer", "text": "Any request for payment or identity documents before a genuine offer; stop and report it."}}
   ]

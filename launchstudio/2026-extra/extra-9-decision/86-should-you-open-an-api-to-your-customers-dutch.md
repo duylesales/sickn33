@@ -31,7 +31,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Het is 23:40 uur en er staat een onbeantwoord Slack-bericht van een klant open: *"Hé, hebben jullie toevallig een openbare API? We willen onze data graag automatisch in ons eigen dashboard inladen."* Het voelt als ultieme validatie — een betalende klant wil functionaliteit bouwen bovenop wat u heeft gemaakt. Voor een technische solo-oprichter die in een avond een paar REST-endpoints in elkaar kan zetten, is de reflex om direct "ja" te zeggen en de code-editor te openen.
+Het is 23:40 uur en er staat een onbeantwoord Slack-bericht van een klant open: *"Hé, hebben jullie toevallig een openbare API? We willen onze data graag automatisch in ons eigen dashboard inladen."* Het voelt als ultieme validatie - een betalende klant wil functionaliteit bouwen bovenop wat u heeft gemaakt. Voor een technische solo-oprichter die in een avond een paar REST-endpoints in elkaar kan zetten, is de reflex om direct "ja" te zeggen en de code-editor te openen.
 
 Die reflex is precies de reden waarom veel oprichters eindigen met een publieke API waar ze nooit meer vanaf komen. Ze beantwoorden complexe supportvragen van externe ontwikkelaars die ze nog nooit hebben ontmoet, en ontdekken achttien maanden later dat een routineuze interne refactoring ineens een delicaat onderhandelingstraject is geworden met drie externe integraties waarvan ze het bestaan allang vergeten waren. Een publieke API is geen eenmalige feature die u live zet; het is een stilzwijgend contract dat u voor onbepaalde tijd aangaat. Die beslissing verdient aanzienlijk meer bezinning dan de twee uur die nodig zijn om de eerste versie te programmeren.
 
@@ -44,7 +44,7 @@ Wat structureel wordt onderschat, is alles wat er gebeurt *nadat* dat eerste end
 * Elk bugrapport van een API-gebruiker vergt diepgaande opsporingstijd die direct concurreert met uw eigenlijke product-roadmap;
 * Elk op zichzelf redelijk functieverzoek ("kunnen jullie ook restitutiestatussen meegeven?", "kunnen jullie webhooks sturen bij dit event?") vergroot de technische footprint die u tot in lengte van dagen moet onderhouden.
 
-De mythe is niet dat API's ingewikkeld zijn om te bouwen — de mythe is dat de initiële bouw de grootste kostenpost is. Dat is niet zo. Het doorlopende onderhoud is de werkelijke kostenpost.
+De mythe is niet dat API's ingewikkeld zijn om te bouwen - de mythe is dat de initiële bouw de grootste kostenpost is. Dat is niet zo. Het doorlopende onderhoud is de werkelijke kostenpost.
 
 ## Wat een Publieke API U Werkelijk Kost, Lang Na de Lancering
 
@@ -56,7 +56,7 @@ Zodra een API actieve externe gebruikers heeft, ontstaan er drie structurele, do
 
 ## Versionering: De Verplichting Die Niemand Duidelijk Uitlegt
 
-Zodra een API extern wordt gebruikt, is versionering geen optionele luxe meer, maar een harde operationele vereiste. De gevestigde standaard is het opnemen van expliciete versienummers in het URL-pad of de request-headers (`/v1/`, `/v2/`). Daarbij blijft de verouderde versie actief gedurende een vastgestelde overgangsperiode — doorgaans zes tot twaalf maanden voor een SaaS-applicatie — nadat er een ingrijpende wijziging (breaking change) is doorgevoerd.
+Zodra een API extern wordt gebruikt, is versionering geen optionele luxe meer, maar een harde operationele vereiste. De gevestigde standaard is het opnemen van expliciete versienummers in het URL-pad of de request-headers (`/v1/`, `/v2/`). Daarbij blijft de verouderde versie actief gedurende een vastgestelde overgangsperiode - doorgaans zes tot twaalf maanden voor een SaaS-applicatie - nadat er een ingrijpende wijziging (breaking change) is doorgevoerd.
 
 Dit betekent concreet dat zodra u `/v2/` lanceert (bijvoorbeeld omdat u het gebruikers- of entiteitenmodel wilde moderniseren), u gedurende die hele overgangsperiode *twee* volwaardige API-versies gelijktijdig in de lucht moet houden. Uw onderhoudslast verdubbelt daarmee tijdelijk. Wie deze discipline overslaat en velden inline wijzigt onder de aanname dat hij zijn paar gebruikers wel even per e-mail informeert, komt vroeg of laat bedrogen uit: een cruciale koppeling breekt geruisloos in het weekend, en u staat midden in een productie-incident voor een beslissing die u destijds een middag planningswerk moest besparen.
 
@@ -68,7 +68,7 @@ Dit is geenszins een pleidooi om nooit een publieke API te lanceren. Voor het ju
 * **Drastische verlaging van het verloop (churn):** Klanten die bedrijfskritische workflows en koppelingen hebben gebouwd bovenop uw platform stappen vrijwel nooit meer over naar een concurrent. De overstapkosten worden torenhoog.
 * **Het API-first platformmodel:** De API fungeert zelf als distributiekanaal, waardoor andere softwareontwikkelaars complementaire tools en plugins rond uw product bouwen (het model waarmee partijen als Stripe en Twilio marktleider werden).
 
-Voldoet uw situatie aan deze criteria? Dan zijn de doorlopende onderhoudskosten de investering dubbel en dwars waard — mits u deze vooraf budgetteert en niet overhaast begint.
+Voldoet uw situatie aan deze criteria? Dan zijn de doorlopende onderhoudskosten de investering dubbel en dwars waard - mits u deze vooraf budgetteert en niet overhaast begint.
 
 ## Het Slimmere Middenpad Dat Veel Solo-Oprichters Overslaan
 
@@ -98,7 +98,7 @@ Beantwoord de volgende vijf vragen eerlijk op papier voordat u toezeggingen doet
 
 Blijkt uit de antwoorden dat een volledige API momenteel te zwaar is? Kies dan resoluut voor een webhook of exportfunctie. Een doordachte reactie na twee dagen met de juiste oplossing wekt oneindig veel meer vertrouwen dan een overhaast "ja" op de late avond.
 
-Het team van [LaunchStudio](https://launchstudio.eu/nl/#contact) helpt technische solo-oprichters regelmatig bij het maken van deze afweging. Ondersteund door Manifera's software-engineers — die al talloze productie-API's hebben gebouwd en onderhouden — adviseren we altijd de lichtste oplossing die het echte klantprobleem oplost zonder overbodige ballast.
+Het team van [LaunchStudio](https://launchstudio.eu/nl/#contact) helpt technische solo-oprichters regelmatig bij het maken van deze afweging. Ondersteund door Manifera's software-engineers - die al talloze productie-API's hebben gebouwd en onderhouden - adviseren we altijd de lichtste oplossing die het echte klantprobleem oplost zonder overbodige ballast.
 
 [Bespreek uw vraagstuk met een engineer](https://launchstudio.eu/nl/#contact) om vast te stellen of een webhook, export of echte API de juiste keuze is voor uw situatie.
 
@@ -117,7 +117,7 @@ Geen van de drie klanten had daadwerkelijk behoefte aan een interactieve API om 
 **Resultaat:** Ruben bouwde in vier dagen tijd één configureerbare uitgaande webhook (voor de CRM-gevallen) en een geplande CSV-exportfunctie (voor de rapportages). Hij bespaarde zichzelf minstens drie weken intensieve bouwtijd, en zit nu niet vast aan een permanente versioneringsverplichting of een tijdrovende support-inbox voor ontwikkelaars.
 
 > *"Ik stond op het punt om een prestigieuze feature te bouwen in plaats van wat mijn klanten feitelijk nodig hadden. Die webhook kostte me een middag werk. De publieke API die ik bijna had gebouwd, had me jarenlang al mijn vrije weekenden gekost."*  
-> — **Ruben Aalders, Oprichter, Formhive**
+> - **Ruben Aalders, Oprichter, Formhive**
 
 ## Veelgestelde Vragen
 

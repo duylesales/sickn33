@@ -24,7 +24,7 @@ Uw betaalprovider moet uw applicatie laten weten wanneer een abonnement is betaa
 
 Zo gesteld is het risico duidelijk. In de praktijk is het onzichtbaar, omdat het endpoint door een AI-sessie werd aangemaakt, de eerste keer werkte, en er niets aan lijkt op een open deur.
 
-Iedereen die het adres ontdekt — en adressen worden ontdekt — kan een bericht sturen dat beweert dat een betaling is geslaagd. Controleert uw handler niet wie het stuurde, dan gelooft uw product het.
+Iedereen die het adres ontdekt - en adressen worden ontdekt - kan een bericht sturen dat beweert dat een betaling is geslaagd. Controleert uw handler niet wie het stuurde, dan gelooft uw product het.
 
 ## Controleer de Handtekening, Elke Keer
 
@@ -32,15 +32,15 @@ Elke serieuze provider ondertekent zijn webhooks. Een header bevat een handteken
 
 Drie details die gegenereerde code routinematig verkeerd doet.
 
-**Gebruik de ruwe inhoud.** De handtekening dekt de exacte bytes die werden verstuurd. Parset uw framework de JSON voordat u het ziet, en serialiseert u het opnieuw om te verifiëren, dan wijkt het resultaat af — volgorde van sleutels, witruimte, opmaak van getallen — en mislukt de verificatie af en toe op manieren die heel frustrerend zijn om te debuggen. Leg specifiek voor de webhookroute de ruwe inhoud vast.
+**Gebruik de ruwe inhoud.** De handtekening dekt de exacte bytes die werden verstuurd. Parset uw framework de JSON voordat u het ziet, en serialiseert u het opnieuw om te verifiëren, dan wijkt het resultaat af - volgorde van sleutels, witruimte, opmaak van getallen - en mislukt de verificatie af en toe op manieren die heel frustrerend zijn om te debuggen. Leg specifiek voor de webhookroute de ruwe inhoud vast.
 
 **Vergelijk in constante tijd.** Een normale stringvergelijking stopt zodra ze een verschil vindt, wat informatie lekt over hoeveel van een gok juist was. Elk platform heeft een timing-veilige vergelijkingsfunctie; gebruik die.
 
-**Weiger bij mislukking, luid.** Een handler die een mislukte verificatie logt en het bericht toch verwerkt, is een handler zonder verificatie. Geef een fout terug, leg het vast, en meld het als er plotseling mislukkingen verschijnen — een reeks ervan is óf een provider die een geheim vervangt, óf iemand die aan het aftasten is.
+**Weiger bij mislukking, luid.** Een handler die een mislukte verificatie logt en het bericht toch verwerkt, is een handler zonder verificatie. Geef een fout terug, leg het vast, en meld het als er plotseling mislukkingen verschijnen - een reeks ervan is óf een provider die een geheim vervangt, óf iemand die aan het aftasten is.
 
 ## Replay Is de Tweede Helft
 
-Een geldig ondertekend bericht blijft voor altijd geldig. Iemand die er een onderschept — uit een logboek, een proxy, een foutrapport — kan het opnieuw versturen.
+Een geldig ondertekend bericht blijft voor altijd geldig. Iemand die er een onderschept - uit een logboek, een proxy, een foutrapport - kan het opnieuw versturen.
 
 Twee verdedigingen, samen gebruikt. Controleer de tijdstempel die de provider meestuurt en weiger alles wat ouder is dan een paar minuten, wat het venster begrenst. En leg elke verwerkte eventidentificatie vast en weiger duplicaten, wat u ook de idempotentie geeft die nieuwe pogingen vereisen.
 
@@ -56,7 +56,7 @@ Dat kost één API-aanroep en sluit een categorie problemen af: levering in de v
 
 ## Antwoord Snel, Werk Later
 
-Providers verwachten een snelle bevestiging en behandelen een trage reactie als mislukking, waarna ze het opnieuw proberen — en zo wordt één trage handler vier gelijktijdige uitvoeringen van hetzelfde werk.
+Providers verwachten een snelle bevestiging en behandelen een trage reactie als mislukking, waarna ze het opnieuw proberen - en zo wordt één trage handler vier gelijktijdige uitvoeringen van hetzelfde werk.
 
 Controleer de handtekening, leg het event vast, geef succes terug. Verwerk het daarna in een achtergrondtaak. Uw endpoint antwoordt in milliseconden, nieuwe pogingen worden niet langer door uw eigen traagheid veroorzaakt, en een mislukking bij de verwerking wordt een mislukte taak die u kunt bekijken en opnieuw kunt proberen in plaats van een verloren event.
 
@@ -68,29 +68,29 @@ Twee kleinere verstevigingen die de minuten waard zijn.
 
 Beperk op bron waar de provider zijn adressen publiceert, als laag onder de verificatie van handtekeningen in plaats van ervoor in de plaats. En laat het endpoint nooit iets onthullen: een handler die gedetailleerde fouten teruggeeft, vertelt iemand die aftast precies wat uw validatie verwacht, een gratis cursus in het opstellen van een verzoek dat erdoor komt.
 
-Houd de URL onopvallend in plaats van geheim. Geheimhouding is hier geen beveiligingsmaatregel — de handtekening is dat — maar er is geen reden haar een naam te geven die aandacht trekt.
+Houd de URL onopvallend in plaats van geheim. Geheimhouding is hier geen beveiligingsmaatregel - de handtekening is dat - maar er is geen reden haar een naam te geven die aandacht trekt.
 
 ## De Uitgaande Kant Heeft een Eigen Probleem
 
 Roept uw product webhooks aan die klanten configureren, dan hebt u iets gebouwd met een ander risico: uw server doet een HTTP-verzoek naar elk adres dat een klant intypt.
 
-Dat is server-side request forgery. Een klant kan een webhook naar een intern adres laten wijzen en uw applicatie gebruiken om dingen te bereiken die van buitenaf niet bereikbaar horen te zijn — de metadatadienst van een cloudprovider, een intern beheerpaneel, een database op een privénetwerk.
+Dat is server-side request forgery. Een klant kan een webhook naar een intern adres laten wijzen en uw applicatie gebruiken om dingen te bereiken die van buitenaf niet bereikbaar horen te zijn - de metadatadienst van een cloudprovider, een intern beheerpaneel, een database op een privénetwerk.
 
 De beschermingen: zet de hostnaam om naar een adres en weiger privé-, loopback- en link-local-adressen, en controleer opnieuw na elke redirect, omdat een publieke hostnaam naar een interne kan doorverwijzen. Sta alleen HTTP en HTTPS toe. Stel een korte time-out en een limiet op de antwoordgrootte in. En geef de inhoud van het antwoord niet terug aan de klant, want een product dat een URL ophaalt en laat zien wat het vond, is een scanner voor uw eigen netwerk.
 
-Onderteken aan de verzendende kant uw eigen webhooks, zodat uw klanten ze kunnen verifiëren, voeg een tijdstempel en een eventidentificatie toe, en probeer het opnieuw met oplopende wachttijd en een maximum — alles wat dit artikel van uw providers vraagt.
+Onderteken aan de verzendende kant uw eigen webhooks, zodat uw klanten ze kunnen verifiëren, voeg een tijdstempel en een eventidentificatie toe, en probeer het opnieuw met oplopende wachttijd en een maximum - alles wat dit artikel van uw providers vraagt.
 
 ## Een Webhookgeheim Vervangen Zonder Downtime
 
-Signing-secrets moeten af en toe veranderen — na het vertrek van een opdrachtnemer, na een blootstelling, of gewoon volgens schema — en de naïeve vervanging breekt elke levering in het gat tussen het wijzigen bij de provider en het uitrollen van de nieuwe waarde.
+Signing-secrets moeten af en toe veranderen - na het vertrek van een opdrachtnemer, na een blootstelling, of gewoon volgens schema - en de naïeve vervanging breekt elke levering in het gat tussen het wijzigen bij de provider en het uitrollen van de nieuwe waarde.
 
 De opzet die dat voorkomt: accepteer tijdens een overgang twee geheimen. Uw handler probeert het huidige, en als dat faalt, het vorige, en behandelt beide als geldig. Wijzig het geheim bij de provider, bevestig dat leveringen tegen het nieuwe worden geverifieerd, en verwijder het oude na een paar dagen.
 
-Dezelfde vorm werkt voor wijzigingen van endpoints. Draai de nieuwe URL naast de oude, verplaats de configuratie van de provider, zie het verkeer verschuiven, en hef dan het oude endpoint op — in plaats van om te schakelen en te hopen.
+Dezelfde vorm werkt voor wijzigingen van endpoints. Draai de nieuwe URL naast de oude, verplaats de configuratie van de provider, zie het verkeer verschuiven, en hef dan het oude endpoint op - in plaats van om te schakelen en te hopen.
 
 Twee dingen maken vervangen makkelijk genoeg om het ook echt te doen. Bewaar de geheimen in omgevingsconfiguratie in plaats van in code, zodat vervangen geen codewijziging en review vereist. En leg ergens waar u het terugvindt vast welke providers u webhooks sturen, waar elk endpoint staat, en wanneer het geheim voor het laatst werd gewijzigd. De meeste producten kunnen het eerste daarvan niet beantwoorden, en daarom wordt er nooit iets vervangen.
 
-De verwante controle: weet wat er gebeurt als de verificatie om drie uur 's nachts begint te falen omdat iemand een geheim in een providerdashboard heeft vervangen. Is het antwoord dat events stilletjes worden weggegooid, voeg de melding dan nu toe — een reeks mislukte verificaties moet iemand wakker maken, omdat het óf een aanval is, óf een integratie die net is gestopt met werken.
+De verwante controle: weet wat er gebeurt als de verificatie om drie uur 's nachts begint te falen omdat iemand een geheim in een providerdashboard heeft vervangen. Is het antwoord dat events stilletjes worden weggegooid, voeg de melding dan nu toe - een reeks mislukte verificaties moet iemand wakker maken, omdat het óf een aanval is, óf een integratie die net is gestopt met werken.
 
 ## Een Endpoint Testen Dat U Niet Makkelijk Kunt Aanroepen
 
@@ -106,7 +106,7 @@ De gewoonte om te vermijden: een tijdelijke schakelaar die de verificatie van ha
 
 Voor een bestaand product kost dit doorgaans een halve tot een hele dag: verificatie van handtekeningen op elke inkomende webhook met de ruwe inhoud en een timing-veilige vergelijking, weigering bij mislukking met meldingen, controles op tijdstempel en eventidentificatie voor replay en idempotentie, de stand bevestigd via de API van de provider voordat er iets wordt verleend, handlers teruggebracht tot verifiëren-vastleggen-bevestigen met verwerking in achtergrondtaken, beperking op bron waar gepubliceerd, nietszeggende foutantwoorden, en voor uitgaande webhooks controle van adressen tegen privébereiken met hercontrole na redirects, time-outs, groottelimieten, ondertekening en begrensde nieuwe pogingen.
 
-LaunchStudio behandelt webhooks in de beveiligingsreview en in betaalwerk, waar niet-geverifieerde handlers tot de meest voorkomende bevindingen horen. De engineers zijn van Manifera — elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW.
+LaunchStudio behandelt webhooks in de beveiligingsreview en in betaalwerk, waar niet-geverifieerde handlers tot de meest voorkomende bevindingen horen. De engineers zijn van Manifera - elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW.
 
 [Stuur ons uw webhook-URL](https://launchstudio.eu/nl/#contact) en wij vertellen u of hij ons gelooft.
 
@@ -116,7 +116,7 @@ LaunchStudio behandelt webhooks in de beveiligingsreview en in betaalwerk, waar 
 
 Lieke Ottenhof bouwde Sportschoolbeheer in Lovable: leden- en toegangsbeheer voor zelfstandige sportscholen en fitnessstudio's, 54 locaties met zo'n 8.000 leden.
 
-Lidmaatschappen werden geactiveerd door een webhook van haar betaalprovider. De handler las de JSON, vond de klantreferentie en het abonnement, en werkte het lidmaatschap bij. Hij controleerde de handtekening niet — de AI-sessie die hem schreef, was er niet om gevraagd, en het dashboard van de provider toonde dat de leveringen slaagden.
+Lidmaatschappen werden geactiveerd door een webhook van haar betaalprovider. De handler las de JSON, vond de klantreferentie en het abonnement, en werkte het lidmaatschap bij. Hij controleerde de handtekening niet - de AI-sessie die hem schreef, was er niet om gevraagd, en het dashboard van de provider toonde dat de leveringen slaagden.
 
 De URL stond vier dagen in een publieke repository, in een configuratiebestand dat een opdrachtnemer had gecommit en kort daarna verwijderde. Elf weken later stuurde iemand er een gemanipuleerd bericht naartoe dat een jaarlidmaatschap op één locatie activeerde. In de maand daarna activeerde dezelfde bron 23 lidmaatschappen bij negen locaties, elk tussen €240 en €580 per jaar waard, en verschillende werden doorverkocht.
 
@@ -127,9 +127,9 @@ Twee werkdagen: verificatie van handtekeningen toegevoegd met de ruwe verzoekinh
 **Resultaat:** ongeveer €9.000 aan jaarlijkse lidmaatschapswaarde teruggewonnen, en de afstemmingstaak heeft sindsdien twee echte verschillen opgevangen die werden veroorzaakt door mislukte webhookleveringen in plaats van fraude. Lieke noemt de handtekeningcontrole vier regels code die het hele verdienmodel bewaken.
 
 > *"Het dashboard van de provider zei dat elke levering slaagde, dus ik geloofde dat de integratie in orde was. Ze was ook in orde. Ze accepteerde alleen ook berichten van iedereen."*
-> — **Lieke Ottenhof, Oprichter, Sportschoolbeheer (Breda)**
+> - **Lieke Ottenhof, Oprichter, Sportschoolbeheer (Breda)**
 
-**Kosten & Doorlooptijd:** €2.500 (verificatie van handtekeningen en tijdstempels, ontdubbeling van events, herstructurering van de handler met verwerking op de achtergrond, bevestiging van de stand bij de provider, identificatie en herstel van frauduleuze lidmaatschappen, maandelijkse afstemming) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.500 (verificatie van handtekeningen en tijdstempels, ontdubbeling van events, herstructurering van de handler met verwerking op de achtergrond, bevestiging van de stand bij de provider, identificatie en herstel van frauduleuze lidmaatschappen, maandelijkse afstemming) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -151,7 +151,7 @@ Providers behandelen trage antwoorden als mislukkingen en proberen het opnieuw, 
 
 ### Wat is het risico als klanten uitgaande webhooks kunnen configureren?
 
-Server-side request forgery — uw server roept elk adres aan dat zij opgeven, inclusief interne. Zet hostnamen om, weiger privébereiken, controleer opnieuw na redirects, en geef nooit de inhoud van het antwoord terug.
+Server-side request forgery - uw server roept elk adres aan dat zij opgeven, inclusief interne. Zet hostnamen om, weiger privébereiken, controleer opnieuw na redirects, en geef nooit de inhoud van het antwoord terug.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-🚨 Felix built an HR policy assistant using **Lovable** — felix, a startup founder, used **lovable** to build an AI-powered HR policy assistant for mid-market companies, but a pre-launch review caught a RAG tenant-isolation gap before it became a real leak. 🧠
+🚨 Felix built an HR policy assistant using **Lovable** - felix, a startup founder, used **lovable** to build an AI-powered HR policy assistant for mid-market companies, but a pre-launch review caught a RAG tenant-isolation gap before it became a real leak. 🧠
 
 If your RAG pipeline filters retrieval by similarity score alone, without a hard tenant boundary at the database layer, one broadly worded query can expose another customer's data.
 
@@ -12,7 +12,7 @@ If your RAG pipeline filters retrieval by similarity score alone, without a hard
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Felix's platform achieved production readiness: he launched with zero tenant-isolation findings in his pre-launch penetration test, and now cites the hardened architecture directly in enterprise security questionnaires. (€4,200 (Relaunch & Scale Package) — RAG pipeline hardened and verified in 11 business days.) 🚀
+Felix's platform achieved production readiness: he launched with zero tenant-isolation findings in his pre-launch penetration test, and now cites the hardened architecture directly in enterprise security questionnaires. (€4,200 (Relaunch & Scale Package) - RAG pipeline hardened and verified in 11 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/data-exfiltration-incident-cost-vs-rag-hardening
 

@@ -31,17 +31,17 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-In a demo, bank reconciliation looks like a solved problem: a payment comes in, the reference number matches a unit, the balance updates, done. In a real homeowner association with sixty units and sixty residents who all format payment references slightly differently, that same logic misattributes money constantly — and nobody notices until someone gets a late notice for a bill they already paid.
+In a demo, bank reconciliation looks like a solved problem: a payment comes in, the reference number matches a unit, the balance updates, done. In a real homeowner association with sixty units and sixty residents who all format payment references slightly differently, that same logic misattributes money constantly - and nobody notices until someone gets a late notice for a bill they already paid.
 
 ## The demo version vs. the reality version
 
-An AI-built finance tool for HOAs or co-ops, tested with clean synthetic data, will match "Unit 4B — March dues" to unit 4B every time. Real bank transfers rarely look like that. Residents type payment references from memory, on their phone banking app, months or years after they were first told what format to use. "Unit 4B," "4-B," "Appartement 4B," "4B maart," and just "4B" might all refer to the same payment, and a literal string-match reconciliation script — which is what most AI coding assistants generate by default, because it's the simplest thing that passes a basic test — will only catch the exact formats it was tested against.
+An AI-built finance tool for HOAs or co-ops, tested with clean synthetic data, will match "Unit 4B - March dues" to unit 4B every time. Real bank transfers rarely look like that. Residents type payment references from memory, on their phone banking app, months or years after they were first told what format to use. "Unit 4B," "4-B," "Appartement 4B," "4B maart," and just "4B" might all refer to the same payment, and a literal string-match reconciliation script - which is what most AI coding assistants generate by default, because it's the simplest thing that passes a basic test - will only catch the exact formats it was tested against.
 
 The failure mode isn't a crash. It's worse: the payment gets matched to the wrong unit, or matched to no unit at all and left in a manual review queue that nobody checks regularly. Either way, the association's books say something different from reality, and the person who finds out first is usually a resident disputing a balance they don't believe they owe.
 
 ## Why this is a database design problem, not a UI problem
 
-The instinct when this bug appears is to "fix the matching," but the actual issue usually sits one layer deeper, in how payment references are modeled at all. A robust reconciliation system needs fuzzy matching with a confidence score, a manual review queue for anything below a safe threshold, and — critically — a two-way audit trail so that when a mismatch is corrected, there's a record of what changed and why. None of that is exotic, but it requires designing the database schema and matching logic together from the start, which is exactly the kind of architectural thinking that gets skipped when the goal is "get the demo working by Friday."
+The instinct when this bug appears is to "fix the matching," but the actual issue usually sits one layer deeper, in how payment references are modeled at all. A robust reconciliation system needs fuzzy matching with a confidence score, a manual review queue for anything below a safe threshold, and - critically - a two-way audit trail so that when a mismatch is corrected, there's a record of what changed and why. None of that is exotic, but it requires designing the database schema and matching logic together from the start, which is exactly the kind of architectural thinking that gets skipped when the goal is "get the demo working by Friday."
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and reconciliation logic like this is a recurring fix across the AI-native finance tools our team reviews. It's the same underlying discipline Manifera applies to enterprise financial data work for clients like Statler BI. Our team based out of Manifera's Amsterdam office at Herengracht 420 handles a meaningful share of this financial-logic and reconciliation work for LaunchStudio's European clients, given how tightly it's tied to local banking reference formats and compliance norms.
 
@@ -49,7 +49,7 @@ If your tool touches real money and real bank data, [get a fixed-scope estimate 
 
 ## Fixing a Mismatch Doesn't Un-Ring the Bell It Already Rang
 
-Confidence scoring reduces how often a payment lands in the unmatched queue, but it doesn't eliminate the rarer, more damaging case: a match that scores high confidence and is still wrong. Two units with adjacent numbers, a resident paying on behalf of a family member in a different unit, a typo that happens to collide with a real unit number — any of these can produce a match the system is genuinely confident about and genuinely incorrect on. When a treasurer catches this later and reassigns the payment, the balance itself updates instantly. What doesn't automatically update is anything that already fired off the old, wrong balance — a late notice, a delinquency flag, an automated reminder email — because correcting the underlying data doesn't retroactively reach into a message that already landed in someone's inbox.
+Confidence scoring reduces how often a payment lands in the unmatched queue, but it doesn't eliminate the rarer, more damaging case: a match that scores high confidence and is still wrong. Two units with adjacent numbers, a resident paying on behalf of a family member in a different unit, a typo that happens to collide with a real unit number - any of these can produce a match the system is genuinely confident about and genuinely incorrect on. When a treasurer catches this later and reassigns the payment, the balance itself updates instantly. What doesn't automatically update is anything that already fired off the old, wrong balance - a late notice, a delinquency flag, an automated reminder email - because correcting the underlying data doesn't retroactively reach into a message that already landed in someone's inbox.
 
 The reassignment flow needs to check for and reverse those downstream effects explicitly, not just fix the number:
 
@@ -68,18 +68,18 @@ Without this step, a resident can end up with an accurate balance and an unretra
 
 ### An AI-Native Founder in Action: The Payment That Landed on the Wrong Door
 
-Bram Kuiper, founder in Middelburg, built VvEKas — a finance tool for homeowner associations and co-ops — using Bolt. It handled dues tracking, expense logging, and basic reporting cleanly, and the association board that piloted it liked how much manual spreadsheet work it removed.
+Bram Kuiper, founder in Middelburg, built VvEKas - a finance tool for homeowner associations and co-ops - using Bolt. It handled dues tracking, expense logging, and basic reporting cleanly, and the association board that piloted it liked how much manual spreadsheet work it removed.
 
-The gap surfaced within the first full billing cycle. VvEKas matched incoming bank transfers to units using a literal string comparison against the payment reference residents were asked to use. Because residents entered references in slightly different formats — abbreviations, missing spaces, local language variants — a meaningful share of payments either matched to the wrong unit or landed in an unmatched queue nobody was actively monitoring. The board's monthly report showed several units as delinquent when they'd actually paid on time, and one resident received a late notice for a payment that had been sitting, unmatched, in the system for weeks.
+The gap surfaced within the first full billing cycle. VvEKas matched incoming bank transfers to units using a literal string comparison against the payment reference residents were asked to use. Because residents entered references in slightly different formats - abbreviations, missing spaces, local language variants - a meaningful share of payments either matched to the wrong unit or landed in an unmatched queue nobody was actively monitoring. The board's monthly report showed several units as delinquent when they'd actually paid on time, and one resident received a late notice for a payment that had been sitting, unmatched, in the system for weeks.
 
 LaunchStudio rebuilt the reconciliation engine with fuzzy string matching weighted by unit number, resident name, and amount, producing a confidence score for every incoming payment. Anything below a safe confidence threshold routes to a manual review queue that the board treasurer checks weekly instead of never, with a one-click reassignment tool and a full audit trail of any correction made.
 
 **Result:** VvEKas's next billing cycle reconciled with zero misattributed payments and cleared its unmatched queue within 48 hours instead of accumulating for weeks.
 
 > *"I thought reconciliation was basically string-matching. It took one angry resident to learn it's actually a trust system, and trust systems need a lot more care than string-matching."*
-> — **Bram Kuiper, Founder, VvEKas (Middelburg)**
+> - **Bram Kuiper, Founder, VvEKas (Middelburg)**
 
-**Cost & Timeline:** €1,100 (fuzzy-match reconciliation engine, confidence scoring, audit trail) — completed in 7 business days.
+**Cost & Timeline:** €1,100 (fuzzy-match reconciliation engine, confidence scoring, audit trail) - completed in 7 business days.
 
 ---
 
@@ -91,11 +91,11 @@ Most AI-generated reconciliation logic uses literal string matching against paym
 
 ### What's the difference between a matching bug and a matching gap?
 
-A matching bug produces a visible error. A matching gap silently assigns a payment to the wrong record or leaves it unmatched with no alert — which is more dangerous because nobody knows to look for it.
+A matching bug produces a visible error. A matching gap silently assigns a payment to the wrong record or leaves it unmatched with no alert - which is more dangerous because nobody knows to look for it.
 
 ### Does this only apply to HOA and co-op tools?
 
-No — any AI-built SaaS tool that reconciles incoming payments against internal records (rent tools, subscription trackers, invoicing apps) can have the same underlying gap.
+No - any AI-built SaaS tool that reconciles incoming payments against internal records (rent tools, subscription trackers, invoicing apps) can have the same underlying gap.
 
 ### How does LaunchStudio typically approach fixing this?
 
@@ -103,11 +103,11 @@ By rebuilding the matching logic with fuzzy matching and confidence scoring inst
 
 ### Is Manifera experienced with financial data systems beyond LaunchStudio projects?
 
-Yes — Manifera has delivered financial and data-analytics work for enterprise clients including Statler BI, and that experience directly informs how reconciliation systems get built for LaunchStudio founders.
+Yes - Manifera has delivered financial and data-analytics work for enterprise clients including Statler BI, and that experience directly informs how reconciliation systems get built for LaunchStudio founders.
 
 ### If a payment gets reassigned to the correct unit later, does that automatically fix any late notice that already went out?
 
-Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number — the flow needs a step that checks for downstream effects and sends a correction notice when one is found.
+Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number - the flow needs a step that checks for downstream effects and sends a correction notice when one is found.
 
 <script type="application/ld+json">
 {
@@ -142,7 +142,7 @@ Not unless the reassignment flow explicitly checks for it. Correcting the balanc
     {
       "@type": "Question",
       "name": "If a payment gets reassigned to the correct unit later, does that automatically fix any late notice that already went out?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number — the flow needs a step that checks for downstream effects and sends a correction notice when one is found." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number - the flow needs a step that checks for downstream effects and sends a correction notice when one is found." }
     }
   ]
 }

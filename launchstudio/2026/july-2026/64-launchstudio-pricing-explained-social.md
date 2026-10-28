@@ -1,4 +1,4 @@
-💸 Felix built a subscription-box SaaS using **Bolt** — but wasn't sure which security package his app actually needed, so he asked before guessing. 🧠
+💸 Felix built a subscription-box SaaS using **Bolt** - but wasn't sure which security package his app actually needed, so he asked before guessing. 🧠
 
 If you don't know whether your AI-built app needs a light security pass or a full compliance overhaul, you'll either overpay for work you don't need or underpay for work that leaves you exposed.
 
@@ -12,7 +12,7 @@ If you don't know whether your AI-built app needs a light security pass or a ful
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Felix's application achieved production readiness: Felix processed his first 200 subscription renewals with zero billing disputes, and no customer experienced a lapsed subscription due to a missed payment confirmation. (€2,400 (Launch & Grow Package) — 8 business days.). 🚀
+Felix's application achieved production readiness: Felix processed his first 200 subscription renewals with zero billing disputes, and no customer experienced a lapsed subscription due to a missed payment confirmation. (€2,400 (Launch & Grow Package) - 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-pricing-explained
 

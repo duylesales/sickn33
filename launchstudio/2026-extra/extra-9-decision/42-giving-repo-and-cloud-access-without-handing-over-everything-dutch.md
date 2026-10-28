@@ -33,7 +33,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 Vrijwel elk advies over samenwerken met externe softwareontwikkelaars begint met de dooddoener dat u de mensen die u inhuurt moet vertrouwen. Vrijwel geen enkel advies vermeldt dat vertrouwen géén toegangsmodel is. U kunt een team volkomen vertrouwen en toch geen enkele gegronde reden hebben om hen *Project Owner* te maken op uw Google Cloud-project. Het risico dat u managet is immers zelden dat een senior engineer er vandoor gaat met uw Stripe-saldo. Het reële risico betreft een gecompromitteerde laptop, een API-token dat per ongeluk in openbare CI-logs belandt, een onderaannemer die u nog nooit hebt ontmoet, of het simpele feit dat u over negen weken alle rechten wilt intrekken en niet meer weet waar u overal op "toestaan" hebt geklikt.
 
-De eerste impuls — klik op *Invite*, kies de allerhoogste beheerdersrol zodat niemand vastloopt, en ga snel door — is begrijpelijk wanneer u als solo-oprichter alle ballen tegelijk in de lucht houdt. Het is echter ook de exacte reden waarom oprichters eindigen met drie voormalige freelancers die nog steeds *Admin*-rechten hebben op de broncode, en een `service_role` key die al in twee verschillende Slack-groepen is geplakt.
+De eerste impuls - klik op *Invite*, kies de allerhoogste beheerdersrol zodat niemand vastloopt, en ga snel door - is begrijpelijk wanneer u als solo-oprichter alle ballen tegelijk in de lucht houdt. Het is echter ook de exacte reden waarom oprichters eindigen met drie voormalige freelancers die nog steeds *Admin*-rechten hebben op de broncode, en een `service_role` key die al in twee verschillende Slack-groepen is geplakt.
 
 Hieronder vindt u de professionele werkwijze die u in veertig minuten structureel inricht, service voor service, met de exacte platformrollen.
 
@@ -53,7 +53,7 @@ Het tweede principe: **elke toegekende bevoegdheid moet op één centrale plek m
 
 Als uw codebase momenteel in een persoonlijke repository staat, verhuis deze dan eerst naar een gratis **GitHub-organisatie**. Dat kost vijf minuten en levert direct essentiële voordelen op: een auditlogboek, een centraal ledenoverzicht en de mogelijkheid om medewerkers met één muisklik te ontkoppelen zonder uw persoonlijke GitHub-profiel te raken.
 
-Ken binnen de repository de rol **Write** toe — géén *Admin* en bij voorkeur geen *Maintain*. Write dekt alles af wat een software engineer daadwerkelijk moet doen: branches aanmaken en pushen, pull requests openen en beoordelen, issues beheren en GitHub Actions uitvoeren. Admin voegt louter administratieve bevoegdheden toe die niets met programmeren te maken hebben: regels voor branchbeveiliging wijzigen, webhooks beheren, de repository overdragen of wissen.
+Ken binnen de repository de rol **Write** toe - géén *Admin* en bij voorkeur geen *Maintain*. Write dekt alles af wat een software engineer daadwerkelijk moet doen: branches aanmaken en pushen, pull requests openen en beoordelen, issues beheren en GitHub Actions uitvoeren. Admin voegt louter administratieve bevoegdheden toe die niets met programmeren te maken hebben: regels voor branchbeveiliging wijzigen, webhooks beheren, de repository overdragen of wissen.
 
 Maak Write vervolgens veilig door de belangrijkste branch hermetisch te beschermen. Stel branch protection in op `main`:
 - Vereis altijd een pull request vóór het mergen;
@@ -63,7 +63,7 @@ Maak Write vervolgens veilig door de belangrijkste branch hermetisch te bescherm
 
 Dit is de ideale balans: de ingehuurde engineer kan naar hartenlust ontwikkelen en testen op afzonderlijke branches, maar er belandt geen enkele regel op uw productiesite zonder een transparante diff die u op uw eigen tempo kunt inzien.
 
-Controleer tevens onder *Settings → Deploy keys* en *Settings → Secrets and variables → Actions* of er geen vergeten sleutels uit eerdere experimenten rondslingeren. Moet u toegang verlenen aan een geautomatiseerde tool of script? Gebruik dan een *fine-grained personal access token* of een GitHub App die strikt beperkt is tot deze ene repository — nooit een klassiek PAT-token met brede rechten, dat direct toegang verschaft tot al uw andere projecten.
+Controleer tevens onder *Settings → Deploy keys* en *Settings → Secrets and variables → Actions* of er geen vergeten sleutels uit eerdere experimenten rondslingeren. Moet u toegang verlenen aan een geautomatiseerde tool of script? Gebruik dan een *fine-grained personal access token* of een GitHub App die strikt beperkt is tot deze ene repository - nooit een klassiek PAT-token met brede rechten, dat direct toegang verschaft tot al uw andere projecten.
 
 ## Supabase: Rechten op Organisatieniveau en de Sleutel Die Uw Week Verpest
 
@@ -95,11 +95,11 @@ Het rechtenmodel van Stripe is uitstekend ontworpen. Ga naar *Instellingen → T
 
 Maak vervolgens gebruik van **Restricted API Keys** in plaats van de algemene geheime sleutel (`sk_live`). In het Stripe-dashboard kunt u sleutels aanmaken met rechten per resource: bijvoorbeeld uitsluitend schrijfrechten op Checkout Sessions en Customers, alleen-lezen op Charges, en nul toegang tot Payouts of rekeningsaldi. Het intrekken of roteren van een beperkte sleutel na afronding kost dertig seconden zonder enig neveneffect.
 
-Mollie — de logische standaard wanneer uw klanten Nederlands zijn en via iDEAL afrekenen — kent een eenvoudiger model: voeg de ontwikkelaar toe als gebruiker binnen uw organisatie en bewaar het beheer over uitbetalingen en bankkoppelingen exclusief onder uw eigen login. Mollie scheidt test- en live-sleutels strikt: verstrek de live-sleutels pas wanneer u daadwerkelijk klaar bent om productiebetalingen te testen, en genereer op dat moment direct een schone sleutel.
+Mollie - de logische standaard wanneer uw klanten Nederlands zijn en via iDEAL afrekenen - kent een eenvoudiger model: voeg de ontwikkelaar toe als gebruiker binnen uw organisatie en bewaar het beheer over uitbetalingen en bankkoppelingen exclusief onder uw eigen login. Mollie scheidt test- en live-sleutels strikt: verstrek de live-sleutels pas wanneer u daadwerkelijk klaar bent om productiebetalingen te testen, en genereer op dat moment direct een schone sleutel.
 
 ## DNS en Domeinbeheer: Het Wachtwoord Dat U Nooit Afgeeft
 
-Toegang tot uw domeinregistrar is het gevaarlijkste gegeven binnen uw onderneming — riskanter nog dan Stripe. Wie uw domeinnaam beheert, beheert immers ook uw e-mailverkeer, wachtwoordresets van alle gekoppelde diensten en OAuth-koppelingen. Met controle over uw domein kan een kwaadwillende uw complete digitale identiteit overnemen.
+Toegang tot uw domeinregistrar is het gevaarlijkste gegeven binnen uw onderneming - riskanter nog dan Stripe. Wie uw domeinnaam beheert, beheert immers ook uw e-mailverkeer, wachtwoordresets van alle gekoppelde diensten en OAuth-koppelingen. Met controle over uw domein kan een kwaadwillende uw complete digitale identiteit overnemen.
 
 Deel nooit de inloggegevens van uw registrar (zoals TransIP of Namecheap).
 - Draait uw DNS op **Cloudflare**? Voeg de engineer toe als teamlid met toegang die strikt beperkt is tot de betreffende DNS-zone. Zij kunnen dan records toevoegen zonder toegang tot uw facturatie of andere domeinen.
@@ -118,7 +118,7 @@ Configureer SPF, DKIM en DMARC op dit subdomein. Maak in diensten zoals Resend o
 Ga er pragmatisch van uit dat elk wachtwoord of token dat ooit in een AI-chatvenster is ingevoerd, naar GitHub is gecommit of via Slack is verstuurd, openbaar bekend is. Circa 45% van alle AI-gegenereerde code bevat beveiligingsfouten, waarbij het onveilig opslaan van API-sleutels een van de grootste boosdoeners is.
 
 - **Vóór de start:** Roteer alle sleutels die mogelijk zijn blootgesteld. Doorzoek de git-geschiedenis met `git log -p -S'sk_live'` of met een tool zoals `gitleaks`. Het wissen van een `.env`-bestand in een recente commit haalt de data immers niet uit de git-historie.
-- **Tijdens het project:** Bewaar gedeelde tokens in één beveiligde kluis — bijvoorbeeld een aparte 1Password- of Bitwarden-collectie die speciaal voor dit project is aangemaakt.
+- **Tijdens het project:** Bewaar gedeelde tokens in één beveiligde kluis - bijvoorbeeld een aparte 1Password- of Bitwarden-collectie die speciaal voor dit project is aangemaakt.
 - **Na oplevering:** Roteer consequent alle sleutels die tijdens het project zijn gebruikt. Niet uit wantrouwen, maar omdat de blootstelling van een inloggegeven toeneemt met elk apparaat waarop het heeft gestaan.
 
 ## De Offboarding-Checklist: Schrijf Hem op Dag Eén
@@ -144,26 +144,26 @@ Granulaire toegang is geen kwestie van wantrouwen; het is een ontwerpkeuze die u
 
 ### Een Indie Hacker in Actie: De Sleutel Die Acht Maanden Actief Bleef
 
-Thijs Bakker, technisch solo-oprichter in Eindhoven, bouwde met behulp van Cursor het platform Routewise — een webapplicatie voor routeplanning en digitale afleveringsbewijzen voor zelfstandige pakketkoeriers. De backend draaide op Supabase met betalingen via Stripe. Vóórdat hij een externe ontwikkelpartner inschakelde voor de beveiliging en betalingshardening, voerde hij een grondige toegangs- en beveiligingsaudit uit.
+Thijs Bakker, technisch solo-oprichter in Eindhoven, bouwde met behulp van Cursor het platform Routewise - een webapplicatie voor routeplanning en digitale afleveringsbewijzen voor zelfstandige pakketkoeriers. De backend draaide op Supabase met betalingen via Stripe. Vóórdat hij een externe ontwikkelpartner inschakelde voor de beveiliging en betalingshardening, voerde hij een grondige toegangs- en beveiligingsaudit uit.
 
 Die inspectie bracht direct drie aanzienlijke risico's aan het licht:
-1. Een Firebase service account JSON-bestand uit een verlaten eerdere prototypeversie stond nog altijd integraal in de git-geschiedenis, en de bijbehorende sleutel bleek in de Google Cloud IAM Console nog gewoon actief te zijn — acht maanden nadat de code was verwijderd.
+1. Een Firebase service account JSON-bestand uit een verlaten eerdere prototypeversie stond nog altijd integraal in de git-geschiedenis, en de bijbehorende sleutel bleek in de Google Cloud IAM Console nog gewoon actief te zijn - acht maanden nadat de code was verwijderd.
 2. Zijn Supabase `service_role` key was tijdens nachtelijke debugsessies in een Cursor-chatvenster en in een openbare Discord-discussie geplakt.
 3. Een freelance UI-ontwerper met wie hij in 2025 kort had samengewerkt, beschikte nog steeds over volledige schrijfrechten op de repository, inclusief een actieve deploy key waarvan niemand het doel meer wist.
 
 **Resultaat:** Alle drie de kwetsbaarheden werden vóór aanvang van het traject structureel verholpen. De Firebase-sleutel werd in IAM gedeactiveerd, de Supabase-sleutels werden geroteerd en de verouderde ontwerper werd ontkoppeld. Het gehele hardeningtraject verliep vervolgens op basis van afgebakende rollen: Write-toegang op een beveiligde `main`-branch, Developer-rechten binnen een afzonderlijke Supabase-organisatie en een beperkte Stripe-sleutel die louter Checkout en Customers kon aanroepen. De definitieve offboarding op de laatste dag nam welgeteld elf minuten in beslag.
 
 > *"Niets van wat ik aantrof was kwaadwillend bedoeld. Het was simpelweg het gevolg van acht maanden keihard doorbouwen. Elk van die vergeten sleutels vormde een acuut beveiligingslek dat ik zonder deze audit regelrecht mee naar de livegang had genomen."*
-> — **Thijs Bakker, Oprichter, Routewise (Eindhoven)**
+> - **Thijs Bakker, Oprichter, Routewise (Eindhoven)**
 
-**Kosten & Doorlooptijd:** €2.900 (Launch Ready pakket, Row Level Security hardening, webhookverificatie en credential-rotatie) — binnen 9 werkdagen live in productie.
+**Kosten & Doorlooptijd:** €2.900 (Launch Ready pakket, Row Level Security hardening, webhookverificatie en credential-rotatie) - binnen 9 werkdagen live in productie.
 
 ---
 
 ## Veelgestelde Vragen
 
 ### Is Write-toegang op GitHub werkelijk voldoende voor een extern engineeringteam?
-Ja, voor vrijwel elk extern softwaretraject volstaat Write ruimschoots. Write dekt het aanmaken en pushen van branches, het indienen en beoordelen van pull requests en het monitoren van Actions — kortom de complete ontwikkelworkflow. Admin-rechten voegen uitsluitend organisatorische bevoegdheden toe, zoals het wijzigen van beveiligingsregels, webhooks, overdrachten en projectverwijdering. Dat zijn eigenaarsbeslissingen die altijd bij u horen te blijven.
+Ja, voor vrijwel elk extern softwaretraject volstaat Write ruimschoots. Write dekt het aanmaken en pushen van branches, het indienen en beoordelen van pull requests en het monitoren van Actions - kortom de complete ontwikkelworkflow. Admin-rechten voegen uitsluitend organisatorische bevoegdheden toe, zoals het wijzigen van beveiligingsregels, webhooks, overdrachten en projectverwijdering. Dat zijn eigenaarsbeslissingen die altijd bij u horen te blijven.
 
 ### Waarom vereist Supabase-toegang een aparte organisatie in plaats van louter een projectuitnodiging?
 Omdat Supabase gebruikersrechten toekent op organisatieniveau. Zodra u een externe ontwikkelaar uitnodigt voor een organisatie, krijgt deze automatisch toegang tot alle databases en projecten die binnen die organisatie vallen. Heeft u meerdere nevenprojecten in dezelfde accountgroep, breng het uit te besteden project dan vóór de uitnodiging onder in een eigen, afgezonderde organisatie.
@@ -187,7 +187,7 @@ Ja, en op dit punt dient u volkomen principieel te zijn. Toegang tot uw domeinre
       "name": "Is Write-toegang op GitHub werkelijk voldoende voor een extern engineeringteam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Write omvat het pushen van branches, reviewen van pull requests en draaien van Actions — de gehele engineeringworkflow. Admin-rechten zijn louter administratief en horen bij de eigenaar te blijven."
+        "text": "Ja. Write omvat het pushen van branches, reviewen van pull requests en draaien van Actions - de gehele engineeringworkflow. Admin-rechten zijn louter administratief en horen bij de eigenaar te blijven."
       }
     },
     {

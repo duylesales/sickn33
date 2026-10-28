@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Healthcare AI Jobs in the Netherlands: Hospitals, Health Data Infrastructure and the Rules That Govern Both",
-  "description": "A guide to where healthcare AI work happens in the Netherlands — university medical centres, general hospitals, health insurers, health data organisations and medtech companies — and the skills and regulations that define it.",
+  "description": "A guide to where healthcare AI work happens in the Netherlands - university medical centres, general hospitals, health insurers, health data organisations and medtech companies - and the skills and regulations that define it.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-11",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Few fields attract as many aspiring AI professionals as healthcare, and few are as misunderstood from the outside. Candidates imagine training models that detect disease in scans. That work exists, but it is a small part of a much larger picture. Dutch hospitals struggle with staff shortages and administrative burden, health insurers analyse care costs and quality, national organisations build infrastructure for sharing health data, and medtech companies bring certified AI products to market. For data professionals, healthcare offers meaningful work — but only for those who understand how the sector, its data and its rules actually work.
+Few fields attract as many aspiring AI professionals as healthcare, and few are as misunderstood from the outside. Candidates imagine training models that detect disease in scans. That work exists, but it is a small part of a much larger picture. Dutch hospitals struggle with staff shortages and administrative burden, health insurers analyse care costs and quality, national organisations build infrastructure for sharing health data, and medtech companies bring certified AI products to market. For data professionals, healthcare offers meaningful work - but only for those who understand how the sector, its data and its rules actually work.
 
 ## Why Healthcare Needs Data Professionals Now
 
@@ -58,11 +58,11 @@ This shifts the focus of healthcare AI. The most urgent questions are often not 
 
 ## The Named Organisations in the Dutch Health Data Landscape
 
-**University medical centres.** The Netherlands has seven university medical centres — Amsterdam UMC, Erasmus MC, LUMC, Maastricht UMC+, Radboudumc, UMCG and UMC Utrecht — represented jointly by the **Netherlands Federation of University Medical Centres (NFU)**. They combine patient care, education and research and host many AI research groups, including well-known medical image analysis groups.
+**University medical centres.** The Netherlands has seven university medical centres - Amsterdam UMC, Erasmus MC, LUMC, Maastricht UMC+, Radboudumc, UMCG and UMC Utrecht - represented jointly by the **Netherlands Federation of University Medical Centres (NFU)**. They combine patient care, education and research and host many AI research groups, including well-known medical image analysis groups.
 
 **Health-RI.** The national initiative for health data infrastructure works on making health data findable, accessible, interoperable and reusable (FAIR) for research and innovation, and on preparing the Netherlands for the European Health Data Space.
 
-**Nictiz.** The Dutch competence centre for electronic exchange of health information develops and maintains standards for data exchange in healthcare — essential for making data usable across organisations.
+**Nictiz.** The Dutch competence centre for electronic exchange of health information develops and maintains standards for data exchange in healthcare - essential for making data usable across organisations.
 
 **Health and Youth Care Inspectorate (IGJ).** The inspectorate supervises the quality and safety of care and medical devices, including software used as a medical device.
 
@@ -104,7 +104,7 @@ This mix is not a sign of inefficiency; it reflects the reality that healthcare 
 
 Because health data is so sensitive, Dutch organisations increasingly analyse it in controlled environments rather than copying datasets to personal laptops or general cloud storage. Secure research environments provide access to pseudonymised data within a controlled workspace where outputs are checked before they leave. Some national and European initiatives go further with federated analysis: instead of bringing data together, analysis code is sent to the data at each hospital or institution, and only aggregated results are shared.
 
-For data professionals, these environments change how work is done. Installing packages may require approval, computing resources may be limited and exporting results takes time. But they make analyses possible that would otherwise be blocked by privacy concerns — and experience with them is increasingly valuable as the European Health Data Space takes shape.
+For data professionals, these environments change how work is done. Installing packages may require approval, computing resources may be limited and exporting results takes time. But they make analyses possible that would otherwise be blocked by privacy concerns - and experience with them is increasingly valuable as the European Health Data Space takes shape.
 
 ## Pay and Employment Conditions in Healthcare
 
@@ -145,14 +145,14 @@ Data professionals from finance, retail or technology can transition successfull
 
 ## Where to Start
 
-If you want your data work to help a healthcare system under pressure, focus on understanding health data, regulation and clinical practice — those are the skills that set candidates apart.
+If you want your data work to help a healthcare system under pressure, focus on understanding health data, regulation and clinical practice - those are the skills that set candidates apart.
 
 Browse current AI, machine learning and data jobs, including healthcare roles, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who wants to build diagnostic models) Is most healthcare AI work about medical imaging?
-No — imaging AI is important, but most healthcare data work involves operational analytics, data infrastructure, quality measurement and care purchasing.
+No - imaging AI is important, but most healthcare data work involves operational analytics, data infrastructure, quality measurement and care purchasing.
 
 ### (Scenario: data scientist from another sector) Can I move into healthcare data science without a medical background?
 Yes, but expect to learn health data structures, clinical terminology and healthcare regulation; communication with clinicians is essential.
@@ -171,7 +171,7 @@ University medical centres, general hospitals, health insurers, health data orga
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is most healthcare AI work about medical imaging?", "acceptedAnswer": {"@type": "Answer", "text": "No — most work involves operational analytics, infrastructure, quality measurement and care purchasing."}},
+    {"@type": "Question", "name": "Is most healthcare AI work about medical imaging?", "acceptedAnswer": {"@type": "Answer", "text": "No - most work involves operational analytics, infrastructure, quality measurement and care purchasing."}},
     {"@type": "Question", "name": "Can I move into healthcare data science without a medical background?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with time to learn health data, terminology and regulation."}},
     {"@type": "Question", "name": "When does healthcare AI software become a medical device?", "acceptedAnswer": {"@type": "Answer", "text": "When intended for medical purposes such as diagnosis or treatment support."}},
     {"@type": "Question", "name": "What is the European Health Data Space?", "acceptedAnswer": {"@type": "Answer", "text": "An EU regulation on access to and secondary use of electronic health data."}},

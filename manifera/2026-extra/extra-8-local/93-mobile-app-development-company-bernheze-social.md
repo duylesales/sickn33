@@ -6,7 +6,7 @@ Your field app looked great in the boardroom demo. Then technicians went back to
 ❌ **All-at-Once Mandate:** Company-wide rollout on day one, with no field champions to build peer trust first.
 
 **The Manifera Solution:**
-✅ **Offline-First Architecture:** Every action saves locally and syncs later — connectivity becomes invisible to the user.
+✅ **Offline-First Architecture:** Every action saves locally and syncs later - connectivity becomes invisible to the user.
 ✅ **Frictionless Auth:** SSO tied to the company device, no repeated password entry mid-shift.
 ✅ **Champions-Led Rollout:** A small pilot group proves it works before the wider team ever sees it.
 

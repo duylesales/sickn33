@@ -1,4 +1,4 @@
-🚨 Thibault Van Damme built WerfPlan, a job-site scheduling tool for construction crews, using v0 — and onboarded his first three contracting firms straight off a clean, working demo. Two weeks in, an overnight reset on the app's free-tier database wiped a full week of schedule changes for one of his pilot firms. 😳
+🚨 Thibault Van Damme built WerfPlan, a job-site scheduling tool for construction crews, using v0 - and onboarded his first three contracting firms straight off a clean, working demo. Two weeks in, an overnight reset on the app's free-tier database wiped a full week of schedule changes for one of his pilot firms. 😳
 
 A demo that "works" and a database built to survive real use are two different questions. 🧠
 
@@ -9,7 +9,7 @@ A demo that "works" and a database built to survive real use are two different q
 
 ✅ Migrate to a proper managed Postgres instance with automated daily backups
 ✅ Add connection pooling to handle concurrent crew updates safely
-✅ Leave the existing frontend completely untouched — this is an infrastructure fix, not a redesign
+✅ Leave the existing frontend completely untouched - this is an infrastructure fix, not a redesign
 
 At **LaunchStudio**, this is exactly the gap our engineers look for first: the software choices founders make in week one of prompting, and whether they hold up by week twelve of real users. Backed by Manifera's 11+ years of production engineering. 🛡️
 

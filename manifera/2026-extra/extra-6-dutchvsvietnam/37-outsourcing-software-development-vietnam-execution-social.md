@@ -1,4 +1,4 @@
-🚨 Delivery risk doesn't announce itself in the kickoff call. It shows up 3 sprints in — a burndown chart sliding right while every status update still says "on track." ⚙️💥
+🚨 Delivery risk doesn't announce itself in the kickoff call. It shows up 3 sprints in - a burndown chart sliding right while every status update still says "on track." ⚙️💥
 
 **The Pain Points:**
 ❌ **Four Missed Sprints, Zero Escalation:** Each individually explainable, until a release slips a full quarter.

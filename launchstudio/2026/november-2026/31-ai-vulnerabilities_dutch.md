@@ -42,7 +42,7 @@ In 2026 zijn de gevaarlijkste bedreigingen voor een AI SaaS geen SQL-injecties, 
 ### 1. Denial of Wallet (DoW) Aanvallen
 Bij een traditionele SaaS probeert een DDoS-aanval uw server plat te leggen door de processor of netwerkbandbreedte te overspoelen. Bij een AI SaaS probeert een DoW-aanval uw onderneming financieel failliet te laten gaan door uw OpenAI- of Anthropic-tegoed in korte tijd maximaal uit te putten.
 
-Omdat LLM API-aanroepen per token worden afgerekend, kan een geautomatiseerd script dat duizenden lange prompts naar uw openstaande endpoint stuurt, binnen enkele uren tienduizenden euro's aan kosten genereren. De server crasht niet — deze verwerkt alles keurig — maar uw zakelijke creditcard wordt leeggetrokken.
+Omdat LLM API-aanroepen per token worden afgerekend, kan een geautomatiseerd script dat duizenden lange prompts naar uw openstaande endpoint stuurt, binnen enkele uren tienduizenden euro's aan kosten genereren. De server crasht niet - deze verwerkt alles keurig - maar uw zakelijke creditcard wordt leeggetrokken.
 
 **De Technische Oplossing:** DoW-aanvallen lost u niet op door simpelweg een API-sleutel te verbergen. U moet gelaagde snelheidsbegrenzing (rate limiting) op infrastructuurniveau inrichten (met Redis/Upstash), gekoppeld aan een server-side quotabeheer. Als een gebruiker op een proefabonnement zit, controleert de backend het exacte tokenverbruik en blokkeert de server het verzoek *voordat* het de externe API bereikt.
 
@@ -96,9 +96,9 @@ Binnen 10 werkdagen voerde het Manifera-team een complete beveiligingsredding ui
 **Resultaat:** Liam betaalde zijn schuld af en lanceerde GradeGenius opnieuw. De nieuwe architectuur weerstond latere script-aanvallen moeiteloos. Liam verkoopt zijn platform inmiddels aan complete scholengemeenschappen (€8.500 MRR) en zijn API-kosten blijven altijd binnen de voorspelde marges.
 
 > *"Ik dacht dat hacken betekende dat iemand je wachtwoord steelt. Ik wist niet dat iemand je failliet kon laten gaan door je AI-app simpelweg te veel vragen te stellen. LaunchStudio repareerde niet alleen een lek; ze bouwden het financiële schild dat mijn bedrijf nodig had om te overleven."*
-> — **Liam O'Connor, Oprichter, GradeGenius (Dublin)**
+> - **Liam O'Connor, Oprichter, GradeGenius (Dublin)**
 
-**Kosten & Doorlooptijd:** €5.500 (Launch & Grow Pakket met Security Hardening Add-on) — productie-klaar en live binnen 10 werkdagen.
+**Kosten & Doorlooptijd:** €5.500 (Launch & Grow Pakket met Security Hardening Add-on) - productie-klaar en live binnen 10 werkdagen.
 
 ---
 

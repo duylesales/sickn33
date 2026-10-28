@@ -60,11 +60,11 @@ The Otto Group, one of the world's largest online retailers, has its headquarter
 
 ### Media and publishing
 
-Hamburg is a traditional centre of the German media industry, with publishers, broadcasters and advertising agencies. Several global technology companies have their German offices in the city. AI applications include content recommendation, automated tagging and summarisation, audience analytics, advertising technology and, increasingly, generative AI tools in content production — with careful attention to editorial standards.
+Hamburg is a traditional centre of the German media industry, with publishers, broadcasters and advertising agencies. Several global technology companies have their German offices in the city. AI applications include content recommendation, automated tagging and summarisation, audience analytics, advertising technology and, increasingly, generative AI tools in content production - with careful attention to editorial standards.
 
 ### Consumer goods, health and energy
 
-Consumer goods companies, life science firms and renewable energy companies — including those active in offshore wind in the North Sea — add further opportunities for data professionals.
+Consumer goods companies, life science firms and renewable energy companies - including those active in offshore wind in the North Sea - add further opportunities for data professionals.
 
 ## Research and Education
 
@@ -82,7 +82,7 @@ The Hamburg University of Technology (TUHH) focuses on engineering, including lo
 
 ## Working in Hamburg
 
-Hamburg employers range from traditional family-owned companies and large corporations to international tech offices and startups. In traditional companies, German is often the working language, and communication tends to be reserved and formal — Hamburg is known for a certain Hanseatic understatement. International teams, startups and research groups often work in English. Many larger employers have works councils and some are bound by collective agreements.
+Hamburg employers range from traditional family-owned companies and large corporations to international tech offices and startups. In traditional companies, German is often the working language, and communication tends to be reserved and formal - Hamburg is known for a certain Hanseatic understatement. International teams, startups and research groups often work in English. Many larger employers have works councils and some are bound by collective agreements.
 
 German employment conditions generally include permanent contracts after probation, at least 20 statutory days of paid holiday (many employers offer around 30), health and social insurance contributions and notice periods defined by law or contract. Compare net pay rather than gross, because social contributions and income tax are significant.
 
@@ -98,7 +98,7 @@ Hamburg is a green city with lakes, canals and parks, including the Alster lakes
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-To be transparent: listings are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Sendcloud and Rexel. For AI jobs in Hamburg you will find few or no local vacancies there today, so use German job portals, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing with Dutch logistics and e-commerce employers — the Netherlands and Hamburg share many maritime and logistics characteristics — and as a method: in a city where the port, Airbus and central offices are far apart, searching by distance matters. Hamburg employers can list their first AI vacancy free via info@onlyaijobs.eu.
+To be transparent: listings are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Sendcloud and Rexel. For AI jobs in Hamburg you will find few or no local vacancies there today, so use German job portals, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing with Dutch logistics and e-commerce employers - the Netherlands and Hamburg share many maritime and logistics characteristics - and as a method: in a city where the port, Airbus and central offices are far apart, searching by distance matters. Hamburg employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Port Data Science in Practice
 
@@ -138,11 +138,11 @@ Where you live in Hamburg should depend on where you work. Central districts suc
 
 ## Career Development
 
-Hamburg's diversity of sectors allows engineers to change domains without changing cities. A data scientist might move from e-commerce to logistics, from media to aviation or from a corporation to a startup. The city's AI community meets through meetups, university events and initiatives such as ARIC, which bring together practitioners from different industries. Building a network across sectors is valuable, because the same ML methods — forecasting, optimisation, NLP, computer vision — apply across domains, and cross-industry experience is well regarded.
+Hamburg's diversity of sectors allows engineers to change domains without changing cities. A data scientist might move from e-commerce to logistics, from media to aviation or from a corporation to a startup. The city's AI community meets through meetups, university events and initiatives such as ARIC, which bring together practitioners from different industries. Building a network across sectors is valuable, because the same ML methods - forecasting, optimisation, NLP, computer vision - apply across domains, and cross-industry experience is well regarded.
 
 ## Questions to Ask Hamburg Employers
 
-- At which site will I work — central office, port, airport or Finkenwerder?
+- At which site will I work - central office, port, airport or Finkenwerder?
 - What language are team meetings and documentation in?
 - Is the company bound by a collective agreement, and is there a works council?
 - How do models move from prototype to production, and who operates them?

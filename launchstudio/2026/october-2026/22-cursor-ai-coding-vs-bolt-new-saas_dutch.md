@@ -22,7 +22,7 @@ Hier volgt een diepgaande technische analyse van hoe beide tools zich verhouden 
 Bolt.new maakt gebruik van **WebContainers** om een complete Node.js ontwikkelomgeving rechtstreeks binnen uw webbrowser op te starten. U voert een prompt in, waarna de AI de React-componenten schrijft, Vite configureert en ogenblikkelijk een werkende live-preview rendert.
 
 - **Het Grote Voordeel:** Ongeëvenaarde snelheid bij het prototypen. Als u een UI-concept wilt valideren of een dashboard met demodata wilt bouwen om aan vroege investeerders te demonstreren, brengt Bolt.new u daar binnen enkele uren. U omzeilt npm-installaties, versieconflicten en lokale serveromgevingen volledig.
-- **Het Grote Nadeel:** Het is een ommuurde tuin (walled garden). Zodra uw applicatie echte enterprise-infrastructuur vereist — zoals een persistente PostgreSQL-database, Stripe-webhooks of rate limiting — wordt de browser-sandbox een ernstige belemmering. U kunt geen geheime server-side omgevingsvariabelen veilig beheren in een sandbox, en specifieke native npm-pakketten weigeren domweg te draaien in een WebContainer.
+- **Het Grote Nadeel:** Het is een ommuurde tuin (walled garden). Zodra uw applicatie echte enterprise-infrastructuur vereist - zoals een persistente PostgreSQL-database, Stripe-webhooks of rate limiting - wordt de browser-sandbox een ernstige belemmering. U kunt geen geheime server-side omgevingsvariabelen veilig beheren in een sandbox, en specifieke native npm-pakketten weigeren domweg te draaien in een WebContainer.
 
 ### Cursor AI: De Enterprise-Grade Copiloot voor Lokale Ontwikkeling
 
@@ -35,9 +35,9 @@ Cursor AI is een volwaardige desktop IDE. Het draait direct op uw eigen computer
 
 De meest succesvolle technische solo-oprichters kiezen niet tussen deze twee tools; zij **sequencen** ze in een logische volgorde:
 
-1. **De Bolt-Fase:** Gebruik Bolt.new om in sneltreinvaart de gebruikersinterface te genereren, de componentstructuur neer te zetten en de UX te valideren bij potentiële klanten. Behandel alles wat u hier bouwt als experimenteel — het doel is het beantwoorden van de vraag *"slaat dit productconcept aan"*, en niet *"is dit klaar voor betalende klanten"*.
+1. **De Bolt-Fase:** Gebruik Bolt.new om in sneltreinvaart de gebruikersinterface te genereren, de componentstructuur neer te zetten en de UX te valideren bij potentiële klanten. Behandel alles wat u hier bouwt als experimenteel - het doel is het beantwoorden van de vraag *"slaat dit productconcept aan"*, en niet *"is dit klaar voor betalende klanten"*.
 2. **De Cursor-Fase:** Zodra de UI is gevalideerd, exporteert u de code uit Bolt en opent deze in Cursor AI. Gebruik de diepe codebase-context van Cursor om de vluchtige sandbox-logica te verwijderen, een persistente Supabase PostgreSQL-database aan te sluiten en de beveiligde server-side API-routes te schrijven.
-3. **De Overdrachtsfase:** Zelfs met een gevalideerde UI en een verfijnde backend in Cursor, moet u de daadwerkelijke productie-infrastructuur inrichten — hosting, DNS-routering, SSL-certificaten, Stripe-webhooks en foutmonitoring — zaken die geen van beide tools zelfstandig afhandelt.
+3. **De Overdrachtsfase:** Zelfs met een gevalideerde UI en een verfijnde backend in Cursor, moet u de daadwerkelijke productie-infrastructuur inrichten - hosting, DNS-routering, SSL-certificaten, Stripe-webhooks en foutmonitoring - zaken die geen van beide tools zelfstandig afhandelt.
 
 ## Waar Oprichters Vastlopen: Een Vergelijking per Eigenschap
 
@@ -55,11 +55,11 @@ Deze tabel maakt het duidelijk: geen van beide tools overbrugt zelfstandig het c
 
 Zelfs met Cursor AI blijft het transformeren van een prototype naar een veilige, schaalbare productie-omgeving zwaar backend softwarewerk. Het configureren van Stripe-webhooks, het beheren van edge-netwerken en het beveiligen van API-endpoints slokt weken aan kostbare tijd op.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uw time-to-market drastisch verkort. Gesteund door het enterprise team van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit **Amsterdam, Singapore en Ho Chi Minhstad**, treden wij op als infrastructurele partner voor ambitieuze solo-oprichters.
 
-U gebruikt Bolt om de UI te genereren en Cursor om uw logica te verfijnen. Zodra u klaar bent om live te gaan, draagt u de codebase over aan LaunchStudio. Ons **"Launch Ready" pakket** verzorgt de complete "laatste mijl". Wij auditen de door AI gegenereerde code op kwetsbaarheden — een reëel risico wetende dat 45% van de AI-code kwetsbaarheden bevat — implementeren strikte Row Level Security, bouwen de betaalintegraties en deployen uw SaaS naar een geharde productie-omgeving.
+U gebruikt Bolt om de UI te genereren en Cursor om uw logica te verfijnen. Zodra u klaar bent om live te gaan, draagt u de codebase over aan LaunchStudio. Ons **"Launch Ready" pakket** verzorgt de complete "laatste mijl". Wij auditen de door AI gegenereerde code op kwetsbaarheden - een reëel risico wetende dat 45% van de AI-code kwetsbaarheden bevat - implementeren strikte Row Level Security, bouwen de betaalintegraties en deployen uw SaaS naar een geharde productie-omgeving.
 
 U blijft gefocust op productontwikkeling en marketing; wij garanderen een robuuste enterprise-infrastructuur volgens dezelfde hoge kwaliteitsstandaarden die Manifera hanteert voor multinationals.
 
@@ -87,7 +87,7 @@ Mark schakelde **LaunchStudio (door Manifera)** in. Hij droeg zijn in Cursor ver
 
 **Resultaat:** Marks ATS lanceerde vlekkeloos en sloot in de eerste maand direct 15 zakelijke klanten aan, goed voor € 1.500 MRR. Hij gebruikt Cursor nu uitsluitend om nieuwe features te bouwen, wetende dat LaunchStudio zijn live infrastructuur bewaakt. *"Cursor is fantastisch voor het schrijven van code, maar LaunchStudio bouwde de echte serverinfrastructuur die mijn bedrijf draaiende houdt."*
 
-**Kosten & Tijdlijn:** €2.500 (Launch Ready Pakket met S3- en Stripe-integratie) — binnen 8 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.500 (Launch Ready Pakket met S3- en Stripe-integratie) - binnen 8 werkdagen live opgeleverd.
 
 ---
 
@@ -103,7 +103,7 @@ De onderliggende AI-modellen (zoals Claude of GPT) zijn vergelijkbaar. Het cruci
 
 ### Waarom heb ik LaunchStudio nodig als ik als technische oprichter al Cursor gebruik?
 
-Cursor helpt bij het schrijven van code, maar u moet alsnog handmatig alle cloudinfrastructuur orkestreren. LaunchStudio neemt de risicovolle en tijdrovende DevOps-taken uit handen — zoals SSL-configuraties, geautomatiseerde CI/CD-pijplijnen en webhook-beveiliging — wat u weken aan frustratie bespaart.
+Cursor helpt bij het schrijven van code, maar u moet alsnog handmatig alle cloudinfrastructuur orkestreren. LaunchStudio neemt de risicovolle en tijdrovende DevOps-taken uit handen - zoals SSL-configuraties, geautomatiseerde CI/CD-pijplijnen en webhook-beveiliging - wat u weken aan frustratie bespaart.
 
 ### Zit ik na samenwerking met LaunchStudio vast aan een eigen platform?
 

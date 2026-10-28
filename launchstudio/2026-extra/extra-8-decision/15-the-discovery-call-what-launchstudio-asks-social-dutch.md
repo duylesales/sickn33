@@ -8,7 +8,7 @@
 ❌ Offertes bouwen op gissingen in plaats van op wat er feitelijk in de repository staat
 
 ✅ Een gestructureerd intakegesprek brengt eerst het echte technische beeld in kaart
-✅ "Ik weet het niet" is het MEEST waardevolle antwoord — het vertelt ons waar we moeten verifiëren
+✅ "Ik weet het niet" is het MEEST waardevolle antwoord - het vertelt ons waar we moeten verifiëren
 ✅ Een engineer inspecteert de codebase zelf voordat er ook maar één getal wordt genoemd
 ✅ Het resultaat: een vaste prijs die tot en met de oplevering exact standhoudt
 

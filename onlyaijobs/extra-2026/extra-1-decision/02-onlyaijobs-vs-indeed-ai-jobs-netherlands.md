@@ -60,13 +60,13 @@ The practical consequence: on one platform you are filtering an enormous pool, w
 
 ## The Sponsored Listing Question
 
-On platforms where employers can pay for prominence, what you see first reflects budget as well as relevance. This is not hidden — EU rules require online intermediation services and search engines to be transparent towards business users about the main parameters that determine ranking, and consumer protection rules require traders to disclose paid placement and the main ranking parameters to consumers. The Dutch Authority for Consumers and Markets enforces consumer rules and has published guidance on online persuasion techniques.
+On platforms where employers can pay for prominence, what you see first reflects budget as well as relevance. This is not hidden - EU rules require online intermediation services and search engines to be transparent towards business users about the main parameters that determine ranking, and consumer protection rules require traders to disclose paid placement and the main ranking parameters to consumers. The Dutch Authority for Consumers and Markets enforces consumer rules and has published guidance on online persuasion techniques.
 
 Transparency helps, but it does not change the underlying dynamic: an employer with a recruitment budget outranks one without. For AI roles specifically, this matters more than in many fields, because a significant share of interesting technical work sits at smaller companies, research organisations and regional employers who rarely sponsor listings.
 
 ## The Duplicate Problem
 
-Aggregation creates duplicates. The same vacancy can appear several times because it was collected from the employer's site, from an agency that is recruiting for it and from another board that also listed it. For candidates, this produces three recognisable frustrations: scrolling past the same role repeatedly, being unsure which version is current, and accidentally applying twice through different routes — which can create awkward situations when two agencies both claim to have presented you.
+Aggregation creates duplicates. The same vacancy can appear several times because it was collected from the employer's site, from an agency that is recruiting for it and from another board that also listed it. For candidates, this produces three recognisable frustrations: scrolling past the same role repeatedly, being unsure which version is current, and accidentally applying twice through different routes - which can create awkward situations when two agencies both claim to have presented you.
 
 A platform that lists a vacancy once, linking to the employer's own posting, avoids this by design. It is a small thing until you have spent an evening deduplicating search results.
 
@@ -74,7 +74,7 @@ A platform that lists a vacancy once, linking to the employer's own posting, avo
 
 A city label is a poor proxy for the thing that actually shapes your week. "Amsterdam" covers offices a twelve-minute cycle from the centre and business parks that require a train, a transfer and a bus. "Rotterdam" includes the city centre and port locations far from any station. Filtering by city therefore includes roles you would never accept and excludes employers just over a municipal border who are closer to your home than half the roles in your own city.
 
-Address-level listings with distance from your home turn this around. You search the radius you are willing to travel, and the platform shows what is in it — including employers in towns you would never have typed into a search box. For a country as densely built and well connected as the Netherlands, this single difference changes which vacancies you consider.
+Address-level listings with distance from your home turn this around. You search the radius you are willing to travel, and the platform shows what is in it - including employers in towns you would never have typed into a search box. For a country as densely built and well connected as the Netherlands, this single difference changes which vacancies you consider.
 
 ## Where the Aggregator Genuinely Wins
 
@@ -104,7 +104,7 @@ Address-level listings with distance from your home turn this around. You search
 
 Both platforms depend on employers writing clear vacancies. Neither can tell you whether a team's data is usable, whether the models described actually reach production, or whether the manager is any good. Both will show you roles where "AI" is used loosely in a job title and roles where serious machine learning hides behind a title like "quality specialist".
 
-The EU Pay Transparency Directive will improve one part of this: employers must provide information about initial pay or its range before the interview and may not ask about pay history. Over time, expect more vacancies on every channel to state a range — and treat those that do as a signal of an employer who has thought about pay structure.
+The EU Pay Transparency Directive will improve one part of this: employers must provide information about initial pay or its range before the interview and may not ask about pay history. Over time, expect more vacancies on every channel to state a range - and treat those that do as a signal of an employer who has thought about pay structure.
 
 ## Reading Freshness Signals Correctly
 
@@ -112,7 +112,7 @@ Aggregators show a posting date, but that date can mean several different things
 
 It may be the date the employer published the role. It may be the date the aggregator collected the listing, which makes an old vacancy look new. It may be the date of the most recent re-posting, which some employers do periodically to keep a role visible without any change in the underlying process. And where a role is collected from several sources, different copies of the same vacancy can carry different dates.
 
-The practical consequence is that "posted 2 days ago" is a weak signal on an aggregator and a stronger one on a board that receives listings directly from employers. When the date matters — and for competitive roles it does — the reliable check is to find the vacancy on the employer's own careers page and see whether it is still live there.
+The practical consequence is that "posted 2 days ago" is a weak signal on an aggregator and a stronger one on a board that receives listings directly from employers. When the date matters - and for competitive roles it does - the reliable check is to find the vacancy on the employer's own careers page and see whether it is still live there.
 
 ## What Quick Applications Do to Your Odds
 
@@ -128,7 +128,7 @@ This is why the channel you apply through matters less than how you apply. If yo
 
 A data engineer in Breda searches "data engineer" within 25 kilometres on a large aggregator and gets several hundred results. Most are recruitment agency listings, many for roles in the Randstad that were tagged loosely, and several appear three times each. He applies to eight, mostly through quick application flows, and receives two rejections and six silences.
 
-He then browses a specialist board by category and distance. The result set is far smaller: a handful of roles within his radius. Two are at companies he had never heard of — a food producer in a town fifteen minutes away and a logistics firm on a business park he drives past weekly. Both vacancies describe pipeline and platform work he can do. He applies directly on the employers' own sites with a tailored CV.
+He then browses a specialist board by category and distance. The result set is far smaller: a handful of roles within his radius. Two are at companies he had never heard of - a food producer in a town fifteen minutes away and a logistics firm on a business park he drives past weekly. Both vacancies describe pipeline and platform work he can do. He applies directly on the employers' own sites with a tailored CV.
 
 He does not get both jobs; he gets one interview and one rejection. But the ratio changed dramatically, and so did the commute attached to the opportunity. Counting results, he concludes, measured the wrong thing.
 
@@ -138,7 +138,7 @@ It is tempting to assume the aggregator is a superset: everything on the special
 
 An aggregator misses vacancies that employers publish only on their own site without structured data, roles distributed through regional or sector channels, and postings from small employers whose systems are not indexed. It also effectively hides roles that are present but ranked far down for your query.
 
-A specialist board misses employers who never submit to it — including large companies that manage recruitment entirely through their own systems, and organisations in adjacent sectors that do not think of their work as AI.
+A specialist board misses employers who never submit to it - including large companies that manage recruitment entirely through their own systems, and organisations in adjacent sectors that do not think of their work as AI.
 
 The practical response is to accept that no single channel is complete and to design around it. Use the specialist board as your primary map of AI, ML and data work within your radius. Use the aggregator's alerts as a background net for anything outside that map. And check the career pages of a short list of employers you specifically care about, since some roles never leave those pages at all.
 
@@ -160,7 +160,7 @@ The practical response is to accept that no single channel is complete and to de
 
 ## Where to Start
 
-Run the same search twice this week — once by city on a large platform, once by category and distance on a specialist board — and compare how many results you would genuinely accept.
+Run the same search twice this week - once by city on a large platform, once by category and distance on a specialist board - and compare how many results you would genuinely accept.
 
 Browse current AI, machine learning and data jobs, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -170,7 +170,7 @@ Browse current AI, machine learning and data jobs, free and without an account, 
 Not for a specialised field. What matters is how many listings you would genuinely apply to and how far they are from home, not how many results load.
 
 ### (Scenario: candidate seeing the same role repeatedly) Why do vacancies appear several times on aggregators?
-Because the same role is collected from multiple sources — the employer, agencies and other boards — which also increases the risk of applying twice.
+Because the same role is collected from multiple sources - the employer, agencies and other boards - which also increases the risk of applying twice.
 
 ### (Scenario: candidate wondering about ranking) Do employers pay to appear higher on job boards?
 On platforms with sponsored listings, yes, and EU rules require transparency about ranking parameters and paid placement. OnlyAIJobs does not sell prominence.
@@ -186,7 +186,7 @@ Applying on the employer's own site keeps your application out of high-volume qu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does a bigger job board mean a better search?", "acceptedAnswer": {"@type": "Answer", "text": "Not for a specialised field — relevance and distance matter more than result counts."}},
+    {"@type": "Question", "name": "Does a bigger job board mean a better search?", "acceptedAnswer": {"@type": "Answer", "text": "Not for a specialised field - relevance and distance matter more than result counts."}},
     {"@type": "Question", "name": "Why do vacancies appear several times on aggregators?", "acceptedAnswer": {"@type": "Answer", "text": "The same role is collected from employers, agencies and other boards, creating duplicates."}},
     {"@type": "Question", "name": "Do employers pay to appear higher on job boards?", "acceptedAnswer": {"@type": "Answer", "text": "On platforms with sponsored listings yes, with transparency required; OnlyAIJobs does not sell prominence."}},
     {"@type": "Question", "name": "Which platform is better for automated alerts?", "acceptedAnswer": {"@type": "Answer", "text": "Large platforms excel at alerts; specialist boards suit focused searching by category and distance."}},

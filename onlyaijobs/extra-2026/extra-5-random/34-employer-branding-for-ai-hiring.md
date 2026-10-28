@@ -53,7 +53,7 @@ Brand recognition sits far below these. A candidate who understands the problem 
 
 Your job advertisement is your brand for most candidates, because it is the only thing they will read. Three changes improve results immediately.
 
-**Describe one real problem.** Not "leverage AI to drive business value" — the actual thing. "We forecast demand for eleven thousand products across sixty branches, and our current system was built in 2017."
+**Describe one real problem.** Not "leverage AI to drive business value" - the actual thing. "We forecast demand for eleven thousand products across sixty branches, and our current system was built in 2017."
 
 **State what exists.** Data volumes, systems in production, team size and composition, tooling. Candidates infer seriousness from specifics.
 
@@ -97,9 +97,9 @@ Distribution matters as much as content, and it differs by seniority.
 
 **Junior and graduate candidates** use general job boards, university career services, LinkedIn and specialised boards. They apply in volume and respond well to clear, encouraging postings that state what is genuinely required rather than listing five years of experience for a junior role.
 
-**Mid-level and senior candidates** are mostly passive. They look when something prompts them: a colleague's recommendation, a company they noticed at a meetup, a specific problem that interests them. Reaching them depends on being visible in the places they already are — specialised boards, professional communities, local technical events — and on your existing employees' networks.
+**Mid-level and senior candidates** are mostly passive. They look when something prompts them: a colleague's recommendation, a company they noticed at a meetup, a specific problem that interests them. Reaching them depends on being visible in the places they already are - specialised boards, professional communities, local technical events - and on your existing employees' networks.
 
-**Specialists** — a person who has built retrieval systems in regulated environments, or deployed vision on embedded hardware — are found through targeted search and referral, and are usually persuaded by the specific problem rather than by the company.
+**Specialists** - a person who has built retrieval systems in regulated environments, or deployed vision on embedded hardware - are found through targeted search and referral, and are usually persuaded by the specific problem rather than by the company.
 
 Practical advice for a smaller employer: use a specialised AI and data board so your vacancy sits among relevant roles rather than competing with hundreds of unrelated postings, ask your team to share it personally, and make sure the vacancy is good enough to be worth sharing.
 
@@ -125,7 +125,7 @@ A process that takes six weeks with two unexplained silences tells them decision
 
 Conversely, a process where every stage is explained in advance, replies come within days, the technical interviewers are engaged and the decision arrives when promised is itself persuasive. Candidates routinely cite it as a reason for choosing one offer over another.
 
-This costs nothing but attention. Set internal service levels — reply within three working days, decision within a week of the final interview — and hold to them. Tell candidates the timeline and update them if it slips.
+This costs nothing but attention. Set internal service levels - reply within three working days, decision within a week of the final interview - and hold to them. Tell candidates the timeline and update them if it slips.
 
 Include a chance to ask the team real questions without the hiring manager present. Confident organisations offer it; candidates notice which ones do.
 
@@ -147,11 +147,11 @@ Four numbers are enough: applications per vacancy, the proportion that are plaus
 
 The most informative source is candidates themselves. Ask every person who reaches an interview where they found the role and what made them apply. Ask everyone who declines an offer why, and record the answer honestly rather than the comfortable version. Over five or six hires, patterns are unmistakable: a commute problem, a pay band problem, a description problem or a process problem.
 
-Also review the vacancies that failed. A role open for six months is telling you something — usually that the requirements are unrealistic, the range is below market, or the description does not convey that the work is real.
+Also review the vacancies that failed. A role open for six months is telling you something - usually that the requirements are unrealistic, the range is below market, or the description does not convey that the work is real.
 
 ## How OnlyAIJobs Supports Employers
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position — placement cannot be bought, so vacancies compete on how well they are written.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position - placement cannot be bought, so vacancies compete on how well they are written.
 
 Two details help smaller employers specifically. Listings show the exact address and the distance from the candidate's home, which surfaces companies that candidates would otherwise never find and prevents late-stage commute surprises. And because the board carries only AI, ML and data roles, a well-written vacancy from an unknown manufacturer sits alongside one from a recognised name rather than being buried in a general feed.
 

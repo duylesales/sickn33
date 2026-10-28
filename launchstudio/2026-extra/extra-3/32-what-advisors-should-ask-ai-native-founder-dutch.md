@@ -59,7 +59,7 @@ Een oprichter met oprecht solide antwoorden beschrijft specifieke zaken – een 
 
 [LaunchStudio](https://launchstudio.eu/nl/) werkt rechtstreeks samen met mentoren en adviseurs van oprichters wanneer we worden uitgenodigd in dat gesprek, om te helpen exact dit soort vragen en hun antwoorden nauwkeurig te vertalen. Dit wordt ondersteund door Manifera's bredere ervaring in het duidelijk communiceren van technische bevindingen aan niet-technische belanghebbenden in meer dan 160 opgeleverde projecten.
 
-[Breng deze vijf vragen mee naar uw volgende adviesgesprek](https://launchstudio.eu/nl/#contact) — ze brengen iets naar boven wat generieke onderzoeksvragen bij deze specifieke categorie oprichters consistent missen.
+[Breng deze vijf vragen mee naar uw volgende adviesgesprek](https://launchstudio.eu/nl/#contact) - ze brengen iets naar boven wat generieke onderzoeksvragen bij deze specifieke categorie oprichters consistent missen.
 
 ## Een korte zelfdiagnose voor adviseurs: Heeft u de technische laag daadwerkelijk onderzocht?
 
@@ -87,10 +87,10 @@ Na kennis te hebben genomen van deze specifieke categorie vragen, vroeg Niels's 
 
 **Resultaat:** De specifieke vraag van de mentor zette Niels ertoe aan om OnderhoudsPlan naar LaunchStudio te brengen voor exact het soort externe, vijandige beoordeling dat zijn eigen testen nooit had geboden. Hiermee werden twee echte hiaten naar boven gebracht en gedicht vóór OnderhoudsPlan's geplande lancering bij haar eerste betalende installatiebedrijven als klant.
 
-> *"Elk adviesgesprek dat ik voor dat moment had gehad ging over klanten en prijzen, wat voelde als de juiste dingen om op te focussen. Eén specifieke, andere vraag — heeft iemand anders dan jij dit daadwerkelijk technisch gecontroleerd — was de eerste keer dat iemand me iets vroeg waar ik oprecht geen zelfverzekerd antwoord op had."*
-> — **Niels Bakker, Oprichter, OnderhoudsPlan (Haarlem)**
+> *"Elk adviesgesprek dat ik voor dat moment had gehad ging over klanten en prijzen, wat voelde als de juiste dingen om op te focussen. Eén specifieke, andere vraag - heeft iemand anders dan jij dit daadwerkelijk technisch gecontroleerd - was de eerste keer dat iemand me iets vroeg waar ik oprecht geen zelfverzekerd antwoord op had."*
+> - **Niels Bakker, Oprichter, OnderhoudsPlan (Haarlem)**
 
-**Kosten en tijdlijn:** € 1.900 (Launch Ready Pakket) — live in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (Launch Ready Pakket) - live in 8 werkdagen.
 
 ---
 

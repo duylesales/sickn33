@@ -1,4 +1,4 @@
-🚨 "Myth #1: "Every PMS Has a Modern REST API" ❌" — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "Myth #1: "Every PMS Has a Modern REST API" ❌" - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "Myth #1: "Every PMS Has a Modern REST API" ❌":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

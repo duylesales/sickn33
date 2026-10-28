@@ -1,4 +1,4 @@
-🚨 Fenna Hoekman built Kookstudio in Zwolle to manage workshop bookings and recipe libraries. Everything flew during local demos. But when 80 participants loaded upcoming dates and recipes simultaneously, pages took 9 seconds to load — because unindexed queries, sequential joins, and uncompressed 4MB food photos drove database CPU to 85%. 😳
+🚨 Fenna Hoekman built Kookstudio in Zwolle to manage workshop bookings and recipe libraries. Everything flew during local demos. But when 80 participants loaded upcoming dates and recipes simultaneously, pages took 9 seconds to load - because unindexed queries, sequential joins, and uncompressed 4MB food photos drove database CPU to 85%. 😳
 
 Prototypes run on 10 rows of mock data. Production runs on thousands. Here's why AI-built databases slow to a crawl under real data: 🧠
 

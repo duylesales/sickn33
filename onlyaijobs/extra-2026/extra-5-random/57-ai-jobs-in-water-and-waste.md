@@ -154,7 +154,7 @@ Employers here hire data skills and teach the domain, but they screen for whethe
 
 Expect questions such as: how would you detect a leak from flow data alone; how would you model pipe deterioration when failures are rare; how would you optimise aeration without risking a permit breach; how would you handle a sensor that drifts; how would you convince a plant operator with thirty years of experience that your recommendation is worth trying.
 
-Preparation that helps: learn time series anomaly detection properly, get comfortable with geospatial data, read one utility's annual performance report, and understand the basic physical processes involved — a few hours of reading about how treatment works pays for itself in the first interview.
+Preparation that helps: learn time series anomaly detection properly, get comfortable with geospatial data, read one utility's annual performance report, and understand the basic physical processes involved - a few hours of reading about how treatment works pays for itself in the first interview.
 
 As elsewhere in infrastructure, willingness to visit plants and walk networks is a real filter and worth stating.
 
@@ -172,7 +172,7 @@ New arrivals to utilities consistently underestimate how much of the job is deal
 
 Operational data comes from supervisory control and data acquisition systems and historians designed for real-time operation rather than analysis. Values may be stored only on change, or compressed by algorithms that discard detail, so what looks like a clean time series is an artefact of a storage policy set fifteen years ago.
 
-Sensors drift, foul and fail. A turbidity probe coated with biofilm reports gradually falling values; a pressure sensor may be reading correctly while the wrong tag name has been mapped to it since an upgrade. Cross-checking against physical consistency — mass balance, expected relationships between measurements — catches errors that statistical outlier detection misses.
+Sensors drift, foul and fail. A turbidity probe coated with biofilm reports gradually falling values; a pressure sensor may be reading correctly while the wrong tag name has been mapped to it since an upgrade. Cross-checking against physical consistency - mass balance, expected relationships between measurements - catches errors that statistical outlier detection misses.
 
 Tag naming is its own archaeology. Conventions differ by site, by vendor and by decade, and mapping tags to physical assets is often a manual exercise that nobody has completed.
 

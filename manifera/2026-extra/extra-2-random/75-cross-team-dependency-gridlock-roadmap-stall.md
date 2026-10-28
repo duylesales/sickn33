@@ -22,19 +22,19 @@ target_persona: "VP of Engineering"
 
 Both squads hit every sprint commitment for six straight weeks. The feature that depended on both of them is still not live, because each squad was waiting on the other to finalize an API contract that neither one owned the authority to finalize alone.
 
-**The Pain:** A VP of Engineering has two squads working on interdependent parts of the same cross-cutting feature — one owns the backend service, the other owns the frontend consuming it — and both teams are individually hitting their sprint goals, yet the actual feature isn't shipping, because the interface contract between them keeps shifting as each team discovers requirements the other hadn't communicated, and neither squad has explicit authority to finalize the contract unilaterally.
+**The Pain:** A VP of Engineering has two squads working on interdependent parts of the same cross-cutting feature - one owns the backend service, the other owns the frontend consuming it - and both teams are individually hitting their sprint goals, yet the actual feature isn't shipping, because the interface contract between them keeps shifting as each team discovers requirements the other hadn't communicated, and neither squad has explicit authority to finalize the contract unilaterally.
 
-**The Agitation:** Cross-team dependency gridlock is uniquely hard to diagnose because it hides inside two teams that both look productive on their own dashboards — velocity charts are green, sprint commitments are met, and yet the actual business outcome, the shipped feature, doesn't move. By the time a VP of Engineering notices the pattern, a full quarter's roadmap commitment can have quietly stalled, with no single team's retro ever surfacing the real root cause, because from inside either team, it looks like the other team is the blocker.
+**The Agitation:** Cross-team dependency gridlock is uniquely hard to diagnose because it hides inside two teams that both look productive on their own dashboards - velocity charts are green, sprint commitments are met, and yet the actual business outcome, the shipped feature, doesn't move. By the time a VP of Engineering notices the pattern, a full quarter's roadmap commitment can have quietly stalled, with no single team's retro ever surfacing the real root cause, because from inside either team, it looks like the other team is the blocker.
 
 ## The Dependency Ownership Mandate
 
 The first mandate is explicit interface contract ownership assigned to a single accountable person or role before either team starts building against it, not an implicit assumption that the contract will emerge naturally from two teams' independent Slack conversations. A named owner with actual authority to finalize the API shape, even under disagreement, removes the structural ambiguity that lets a contract drift indefinitely.
 
-The second mandate is a contract-first development discipline — defining and reviewing the interface specification, then having both teams build against a stable, versioned contract simultaneously, using mocked implementations where needed, rather than one team building against a moving target defined by whatever the other team happens to have shipped so far.
+The second mandate is a contract-first development discipline - defining and reviewing the interface specification, then having both teams build against a stable, versioned contract simultaneously, using mocked implementations where needed, rather than one team building against a moving target defined by whatever the other team happens to have shipped so far.
 
-The third mandate is dependency-aware sprint planning at the program level, not just team level — a program-level view that specifically tracks cross-team blocking dependencies and flags when two teams' individual sprint plans don't actually add up to a shippable outcome, even though each team's own plan looks internally consistent.
+The third mandate is dependency-aware sprint planning at the program level, not just team level - a program-level view that specifically tracks cross-team blocking dependencies and flags when two teams' individual sprint plans don't actually add up to a shippable outcome, even though each team's own plan looks internally consistent.
 
-The fourth mandate is a designated escalation path for contract disagreements that resolves within days, not weeks — because the alternative to fast resolution is exactly the kind of extended, low-visibility stall that erodes a quarter's roadmap without ever showing up as a single dramatic missed deadline.
+The fourth mandate is a designated escalation path for contract disagreements that resolves within days, not weeks - because the alternative to fast resolution is exactly the kind of extended, low-visibility stall that erodes a quarter's roadmap without ever showing up as a single dramatic missed deadline.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -51,8 +51,8 @@ Habitatge Digital S.L., a Barcelona-based proptech platform, had a listings squa
 
 Manifera introduced a named interface-contract owner with program-level authority, moved both teams to a contract-first workflow with a versioned, reviewed specification and mocked interfaces for parallel development, and instituted program-level dependency tracking that flagged blocking dependencies explicitly. The matching feature shipped within five weeks of the new process starting, compared to the eight-plus weeks already spent stalled under the old structure.
 
-> *"Every retro for two months said we'd hit our sprint goals. Nobody's retro said the feature still wasn't live, because from inside either team, it looked like the other team's problem. The fix wasn't more velocity — it was someone actually owning the seam between us."*
-> — **VP of Engineering, Habitatge Digital S.L., Spain**
+> *"Every retro for two months said we'd hit our sprint goals. Nobody's retro said the feature still wasn't live, because from inside either team, it looked like the other team's problem. The fix wasn't more velocity - it was someone actually owning the seam between us."*
+> - **VP of Engineering, Habitatge Digital S.L., Spain**
 
 ## Implicit Cross-Team Coordination vs. Manifera's Contract-First Governance
 
@@ -66,13 +66,13 @@ Manifera introduced a named interface-contract owner with program-level authorit
 
 ## The Economics
 
-A cross-team dependency gridlock that stalls a cross-cutting feature for a full quarter costs a company the entire opportunity value of that feature — delayed revenue, delayed competitive response, delayed customer commitments — while both teams' payroll continues regardless of whether the actual business outcome ships. Introducing contract-first development discipline and program-level dependency tracking typically costs a modest process investment relative to recovering even a single quarter of stalled cross-team roadmap delivery. [Talk to Manifera](https://www.manifera.com/contact-us/) about program-level governance that catches gridlock two healthy-looking teams can't see on their own.
+A cross-team dependency gridlock that stalls a cross-cutting feature for a full quarter costs a company the entire opportunity value of that feature - delayed revenue, delayed competitive response, delayed customer commitments - while both teams' payroll continues regardless of whether the actual business outcome ships. Introducing contract-first development discipline and program-level dependency tracking typically costs a modest process investment relative to recovering even a single quarter of stalled cross-team roadmap delivery. [Talk to Manifera](https://www.manifera.com/contact-us/) about program-level governance that catches gridlock two healthy-looking teams can't see on their own.
 
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering with two teams both hitting sprint goals but no shipped feature) How can two teams both be hitting their sprint commitments while the feature they're jointly building doesn't ship?
 
-Because each team's sprint plan can look internally consistent while the interface contract between them keeps shifting, meaning individual productivity doesn't translate into a shippable joint outcome — a gap that team-level metrics alone won't surface.
+Because each team's sprint plan can look internally consistent while the interface contract between them keeps shifting, meaning individual productivity doesn't translate into a shippable joint outcome - a gap that team-level metrics alone won't surface.
 
 ### (Scenario: VP of Engineering trying to prevent contract drift between teams) What prevents an API contract between two teams from drifting indefinitely?
 
@@ -88,7 +88,7 @@ A designated escalation path with a defined resolution timeline, typically days 
 
 ### (Scenario: VP of Engineering trying to estimate the cost of unresolved gridlock) What does a quarter-long cross-team stall actually cost the business?
 
-The full opportunity value of the delayed feature — lost revenue, delayed competitive response, missed customer commitments — while both teams' cost continues regardless, making it one of the more expensive and least visible forms of engineering inefficiency.
+The full opportunity value of the delayed feature - lost revenue, delayed competitive response, missed customer commitments - while both teams' cost continues regardless, making it one of the more expensive and least visible forms of engineering inefficiency.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-🚨 If your offshore team's first meaningfully shippable pull request lands in month three, you didn't hire an engineering team — you hired a very expensive orientation program. ⚙️💥
+🚨 If your offshore team's first meaningfully shippable pull request lands in month three, you didn't hire an engineering team - you hired a very expensive orientation program. ⚙️💥
 
 **The Pain Points:**
 ❌ **90 Day Ramp Crisis:** A VP of Engineering signed a new offshore development team engagement with a clear mandate from the CEO: accelerate the roadmap within the current fiscal year. Kickoff happened twelve weeks ago.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Strangler-Fig Modernization Architecture:** Extracts legacy workflows into standalone, standards-based services behind an API gateway without freezing live production traffic.
 ✅ **Amsterdam Strategic & Risk Governance:** Dutch account leadership reviews the client's architecture before kickoff, defines the milestone-based ramp plan, and acts as an IP and quality shield ensuring the ramp is measured and contractually committed, not open-ended.
-✅ **Vietnam Deep Engineering Velocity:** Autonomous pods in Vietnam execute the structured ramp — environment setup, supervised real work, independent ticket ownership — reaching standard velocity inside a documented four-week window.
+✅ **Vietnam Deep Engineering Velocity:** Autonomous pods in Vietnam execute the structured ramp - environment setup, supervised real work, independent ticket ownership - reaching standard velocity inside a documented four-week window.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

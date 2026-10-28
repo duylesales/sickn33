@@ -1,4 +1,4 @@
-🚨 "AI Congestion Prediction Can Simply Replace Experienced Dispatcher Judgment a..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Congestion Prediction Can Simply Replace Experienced Dispatcher Judgment a..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Congestion Prediction Can Simply Replace Experien...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

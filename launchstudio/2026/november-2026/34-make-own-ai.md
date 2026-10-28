@@ -50,7 +50,7 @@ When you fine-tune an LLM on new data, you inadvertently damage its existing wei
 Suppose you spend €15,000 fine-tuning a model on your company's HR policies. Two weeks later, the HR department changes the remote work policy. To update the AI's knowledge, you cannot simply edit a database row. You must completely retrain the model, incurring the €15,000 cost all over again. Factual knowledge in a fine-tuned model is baked in and immutable.
 
 ### 3. The Hallucination Multiplier
-Fine-tuned models still hallucinate, but they do so much more dangerously. Because they have been trained on your specific industry jargon, when they invent a fake fact, they present it using the exact tone and terminology of your industry, making the hallucination incredibly difficult for users to spot. Furthermore, a fine-tuned model cannot cite its sources—it cannot tell you *where* it learned a fact, only that it "knows" it.
+Fine-tuned models still hallucinate, but they do so much more dangerously. Because they have been trained on your specific industry jargon, when they invent a fake fact, they present it using the exact tone and terminology of your industry, making the hallucination incredibly difficult for users to spot. Furthermore, a fine-tuned model cannot cite its sources - it cannot tell you *where* it learned a fact, only that it "knows" it.
 
 ## The RAG Supremacy
 
@@ -96,9 +96,9 @@ When a lawyer asked the new system to draft a specific clause, the backend execu
 **Result:** The new system drafted contracts flawlessly. It cited the exact previous contracts it used as inspiration. When the law changed, David simply updated the text files in the database, and the AI was instantly updated. His infrastructure costs dropped from thousands of euros in GPU rentals to €150/month in API and database fees. David closed his first three law firm clients a month later, generating €5,500 in MRR.
 
 > *"I wasted €40,000 trying to teach an AI to be a lawyer. LaunchStudio taught me that you don't need to teach the AI anything; you just need to hand it the right documents at the right time. They replaced a massive, expensive ML project with an elegant, cheap data pipeline."*
-> — **David Weber, Founder, ContractForge (Frankfurt)**
+> - **David Weber, Founder, ContractForge (Frankfurt)**
 
-**Cost & Timeline:** €5,800 (Launch & Grow Package with Advanced RAG Add-on) — production-ready and deployed in 12 business days.
+**Cost & Timeline:** €5,800 (Launch & Grow Package with Advanced RAG Add-on) - production-ready and deployed in 12 business days.
 
 ---
 

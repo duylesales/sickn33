@@ -20,43 +20,43 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-Every vendor's website says "senior engineers, agile delivery, proven track record" — so what actually separates a Vietnam-based team that ships production-grade web platforms from one that's learned to say the right words in a sales call?
+Every vendor's website says "senior engineers, agile delivery, proven track record" - so what actually separates a Vietnam-based team that ships production-grade web platforms from one that's learned to say the right words in a sales call?
 
-**The Pain:** A VP of Engineering at a Netherlands or EU-based company has been asked to evaluate a Vietnam-based offshore option for web development capacity, and the proposals on the table all look credible on paper — portfolios, case studies, "10+ years experience" — but none of it tells the VP whether the engineers actually assigned to the account can hold a production-grade codebase to European standards.
+**The Pain:** A VP of Engineering at a Netherlands or EU-based company has been asked to evaluate a Vietnam-based offshore option for web development capacity, and the proposals on the table all look credible on paper - portfolios, case studies, "10+ years experience" - but none of it tells the VP whether the engineers actually assigned to the account can hold a production-grade codebase to European standards.
 
 **The Agitation:** Getting this wrong is expensive in a specific, recurring way: a team that looks capable in the sales process but lacks real engineering depth produces code that passes initial review and then accumulates technical debt invisibly, until a EU-based company discovers, eight months in, that a platform rebuild is needed to fix architecture decisions nobody caught early. That rebuild routinely costs €60,000-€120,000 more than the original engagement, on top of the sunk cost of the first attempt.
 
 ## What Makes Vietnam Execution Actually Reliable
 
-Vietnam's software engineering talent pool is real and well-documented — the country graduates over 50,000 IT and computer science students annually, and Ho Chi Minh City in particular has become a dense hub for companies that have delivered production systems for European, Japanese, and North American clients for over a decade. But a large talent pool doesn't automatically translate into a reliable vendor, and a VP of Engineering evaluating offshore web development needs a specific, checkable set of signals rather than a general reputation.
+Vietnam's software engineering talent pool is real and well-documented - the country graduates over 50,000 IT and computer science students annually, and Ho Chi Minh City in particular has become a dense hub for companies that have delivered production systems for European, Japanese, and North American clients for over a decade. But a large talent pool doesn't automatically translate into a reliable vendor, and a VP of Engineering evaluating offshore web development needs a specific, checkable set of signals rather than a general reputation.
 
-The first signal is engineer-level verification, not company-level marketing. Ask for the named engineers who will actually be assigned to your account — their GitHub contribution history if available, their specific stack experience, and how long they've been with the vendor rather than freelance. High turnover inside a vendor is one of the strongest predictors of inconsistent delivery, because institutional knowledge about your codebase walks out the door every time an engineer rotates off.
+The first signal is engineer-level verification, not company-level marketing. Ask for the named engineers who will actually be assigned to your account - their GitHub contribution history if available, their specific stack experience, and how long they've been with the vendor rather than freelance. High turnover inside a vendor is one of the strongest predictors of inconsistent delivery, because institutional knowledge about your codebase walks out the door every time an engineer rotates off.
 
-The second signal is process maturity, which shows up in specifics a vendor should be able to answer immediately: what's the code review standard before a PR merges, is there a defined Git branching strategy, how is technical debt tracked and prioritized against feature work, and what CI/CD pipeline runs before code reaches staging. A team that answers vaguely — "we follow best practices" — hasn't been asked this by a serious client before.
+The second signal is process maturity, which shows up in specifics a vendor should be able to answer immediately: what's the code review standard before a PR merges, is there a defined Git branching strategy, how is technical debt tracked and prioritized against feature work, and what CI/CD pipeline runs before code reaches staging. A team that answers vaguely - "we follow best practices" - hasn't been asked this by a serious client before.
 
 The third signal, specific to web development, is exposure to the constraints a European client actually cares about: responsive performance under real mobile network conditions, WCAG accessibility compliance, and experience building against European data protection requirements. A vendor whose entire portfolio is domestic Vietnamese or regional Southeast Asian projects may never have had to build for GDPR-conscious data flows or EU accessibility law, and that inexperience shows up in the first compliance audit.
 
-The fourth, and most overlooked, signal is what happens when something goes wrong. Ask for a specific example of a production incident the team handled — not a hypothetical, an actual one — and how they communicated it, how fast they resolved it, and what changed afterward. A vendor with a polished case-study slide but no honest incident story either hasn't shipped enough production code to have hit a real incident, or isn't willing to be transparent about it, and both are disqualifying.
+The fourth, and most overlooked, signal is what happens when something goes wrong. Ask for a specific example of a production incident the team handled - not a hypothetical, an actual one - and how they communicated it, how fast they resolved it, and what changed afterward. A vendor with a polished case-study slide but no honest incident story either hasn't shipped enough production code to have hit a real incident, or isn't willing to be transparent about it, and both are disqualifying.
 
-Finally, Ho Chi Minh City specifically has matured as a delivery hub in a way that matters practically: a dense local ecosystem of senior engineers who've cycled through outsourcing companies serving European and North American clients means the strongest teams aren't first-timers learning Western client expectations on your project — they've already been through that learning curve on someone else's.
+Finally, Ho Chi Minh City specifically has matured as a delivery hub in a way that matters practically: a dense local ecosystem of senior engineers who've cycled through outsourcing companies serving European and North American clients means the strongest teams aren't first-timers learning Western client expectations on your project - they've already been through that learning curve on someone else's.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** The Dutch team vets engineer assignment, enforces code review and process standards, and remains the accountable escalation point, so a VP of Engineering gets Vietnam's technical depth without having to personally verify it engineer by engineer.
 - **Vietnam (Execution/Velocity):** A Ho Chi Minh City pod with senior engineers who've delivered for regulated European clients before executes sprints against committed velocity, with process discipline already built in.
 
-This is Dutch Management × Vietnamese Mastery — European process rigor wrapped around proven Southeast Asian engineering depth. VPs of Engineering can review how pods are vetted and staffed on Manifera's [web application development](https://www.manifera.com/services/web-app-develop/) page.
+This is Dutch Management × Vietnamese Mastery - European process rigor wrapped around proven Southeast Asian engineering depth. VPs of Engineering can review how pods are vetted and staffed on Manifera's [web application development](https://www.manifera.com/services/web-app-develop/) page.
 
 ## Case Study & Testimonial
 
 ### A Groningen SaaS Company's Vendor Vetting Turnaround
 
-Noordster Digital, a Groningen-based B2B SaaS company building workforce scheduling software, had already been burned once by a Vietnam-based vendor who looked strong in the sales process but assigned junior engineers to the actual account once the contract was signed. Their VP of Engineering came to the next evaluation with a specific checklist — named engineers, process documentation, a real incident story — and most vendors couldn't answer completely.
+Noordster Digital, a Groningen-based B2B SaaS company building workforce scheduling software, had already been burned once by a Vietnam-based vendor who looked strong in the sales process but assigned junior engineers to the actual account once the contract was signed. Their VP of Engineering came to the next evaluation with a specific checklist - named engineers, process documentation, a real incident story - and most vendors couldn't answer completely.
 
 Manifera provided named senior engineer profiles with verifiable project history, a documented code review and CI/CD process, and a specific account of a past production incident (a caching bug that caused stale scheduling data) along with the postmortem and process change that followed. The pod was staffed exactly as proposed, with no substitution after signing, and shipped the scheduling module's core rewrite within the committed ten-week window.
 
 > *"The difference this time was I could actually verify what I was buying before I signed anything. Nobody dodged a single question on my checklist."*
-> — **VP of Engineering, Noordster Digital**
+> - **VP of Engineering, Noordster Digital**
 
 ## Unverified Offshore Vendor vs. Manifera Vietnam Pod
 
@@ -70,9 +70,9 @@ Manifera provided named senior engineer profiles with verifiable project history
 
 ## The Economics
 
-The financial risk in offshore web development rarely shows up in the contract price — it shows up eight to twelve months later, when a company discovers a rebuild is needed because the code that passed initial review was never held to a real production standard. That rebuild, layered on top of the original spend, typically runs €60,000-€120,000 for a mid-sized web platform, plus the opportunity cost of the roadmap time lost re-doing work that should have shipped correctly the first time.
+The financial risk in offshore web development rarely shows up in the contract price - it shows up eight to twelve months later, when a company discovers a rebuild is needed because the code that passed initial review was never held to a real production standard. That rebuild, layered on top of the original spend, typically runs €60,000-€120,000 for a mid-sized web platform, plus the opportunity cost of the roadmap time lost re-doing work that should have shipped correctly the first time.
 
-A vendor that can answer every question on a real due-diligence checklist — named engineers, process discipline, honest incident history, European compliance exposure — costs the same on the invoice as one that can't. The difference only shows up eight months later, in whether you're shipping features or funding a rebuild. [Bring your checklist to Manifera](https://www.manifera.com/contact-us/).
+A vendor that can answer every question on a real due-diligence checklist - named engineers, process discipline, honest incident history, European compliance exposure - costs the same on the invoice as one that can't. The difference only shows up eight months later, in whether you're shipping features or funding a rebuild. [Bring your checklist to Manifera](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

@@ -22,7 +22,7 @@ Most startups discover personal data in 8-15 different systems:
 → Backups
 → CDN caches
 
-**Right to Deletion — the engineering nightmare:**
+**Right to Deletion - the engineering nightmare:**
 
 User requests deletion → you must purge from ALL systems within 30 days.
 
@@ -34,10 +34,10 @@ Build a centralised Deletion Service that:
 
 **5 minimum GDPR requirements for any startup:**
 
-✅ Data map — where does personal data live?
-✅ Consent management — record what, when, how
-✅ Right-to-deletion workflow — 30 days max
-✅ Encryption — at rest AND in transit
+✅ Data map - where does personal data live?
+✅ Consent management - record what, when, how
+✅ Right-to-deletion workflow - 30 days max
+✅ Encryption - at rest AND in transit
 ✅ Accurate privacy policy
 
 Implementable in **4-6 weeks** by a small team.

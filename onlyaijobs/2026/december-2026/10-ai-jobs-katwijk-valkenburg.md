@@ -41,19 +41,19 @@ For most of the twentieth century, the airfield at Valkenburg near Katwijk belon
 
 The Netherlands has some of the most tightly managed airspace in Europe. Between Schiphol, military zones, helicopter corridors and dense population, there are very few places where an organisation can routinely test a flying system without an administrative marathon. A former air base with existing infrastructure, controlled ground access and an established relationship with aviation authorities is therefore a scarce asset.
 
-**Unmanned Valley** at Valkenburg exists to exploit exactly that: a field lab and business location for drones and sensor technology, where companies, knowledge institutions and public organisations can develop and demonstrate systems. Around it, the site is being redeveloped, including large-scale housing plans — a reminder that in the Netherlands, even a test field competes with the need for homes.
+**Unmanned Valley** at Valkenburg exists to exploit exactly that: a field lab and business location for drones and sensor technology, where companies, knowledge institutions and public organisations can develop and demonstrate systems. Around it, the site is being redeveloped, including large-scale housing plans - a reminder that in the Netherlands, even a test field competes with the need for homes.
 
 ## The Named Organisations Behind the Local Data Market
 
 **Unmanned Valley.** The field lab and business park hosts companies working on unmanned aerial systems, sensors, and related services, with test facilities and airspace arrangements that individual startups could not arrange alone.
 
-**ESA ESTEC in Noordwijk.** The European Space Research and Technology Centre is the technical heart of the European Space Agency, employing a large international workforce of engineers and scientists, with a surrounding **Space Business Park** of companies in space systems, instrumentation and downstream applications. Earth observation data — satellite imagery and derived products — is a direct bridge between the space cluster and the drone cluster: both produce remote sensing data that someone has to turn into information.
+**ESA ESTEC in Noordwijk.** The European Space Research and Technology Centre is the technical heart of the European Space Agency, employing a large international workforce of engineers and scientists, with a surrounding **Space Business Park** of companies in space systems, instrumentation and downstream applications. Earth observation data - satellite imagery and derived products - is a direct bridge between the space cluster and the drone cluster: both produce remote sensing data that someone has to turn into information.
 
 **TNO and applied research.** Applied research organisations in the corridor work on sensing, autonomy, radar and optics, with locations in The Hague and Delft within easy reach.
 
 **Leiden.** **Leiden University** and the Leiden Bio Science Park add astronomy, computer science, data science and life sciences to the regional mix, fifteen minutes inland.
 
-**Regional employers.** Katwijk itself has a substantial SME base — construction, horticulture, fisheries heritage, logistics and technical firms — plus tourism. These are not AI employers, but they are the reason the town has a working population rather than only commuters.
+**Regional employers.** Katwijk itself has a substantial SME base - construction, horticulture, fisheries heritage, logistics and technical firms - plus tourism. These are not AI employers, but they are the reason the town has a working population rather than only commuters.
 
 ## What Kind of AI and Data Work Actually Happens Here
 
@@ -63,7 +63,7 @@ The Netherlands has some of the most tightly managed airspace in Europe. Between
 
 **Remote sensing analytics.** Turning aerial and satellite imagery into usable products: crop status, infrastructure inspection, dike monitoring, vegetation mapping, subsidence detection. Photogrammetry, multispectral analysis and change detection are the core methods.
 
-**Inspection automation.** Assets such as bridges, wind turbines, roofs and high-voltage lines are increasingly inspected by drone, generating imagery that must be analysed consistently — a computer vision problem with a strong data management component.
+**Inspection automation.** Assets such as bridges, wind turbines, roofs and high-voltage lines are increasingly inspected by drone, generating imagery that must be analysed consistently - a computer vision problem with a strong data management component.
 
 **Airspace management data.** Coordinating many unmanned flights safely requires services for identification, tracking, geo-awareness and conflict detection. This is an emerging European system with real software and data work behind it.
 
@@ -71,7 +71,7 @@ The Netherlands has some of the most tightly managed airspace in Europe. Between
 
 ## The Regulatory Reality That Shapes Every Drone Project
 
-European drone rules divide operations into categories based on risk. The practical dividing line for most commercial ambitions is flight **beyond visual line of sight**: the moment an operator cannot see the aircraft, the risk assessment, the technical requirements and the permissions become substantially heavier. Emerging **U-space** airspace services are intended to make dense unmanned operations manageable, and national authorities — including the Dutch **Human Environment and Transport Inspectorate** — supervise operators.
+European drone rules divide operations into categories based on risk. The practical dividing line for most commercial ambitions is flight **beyond visual line of sight**: the moment an operator cannot see the aircraft, the risk assessment, the technical requirements and the permissions become substantially heavier. Emerging **U-space** airspace services are intended to make dense unmanned operations manageable, and national authorities - including the Dutch **Human Environment and Transport Inspectorate** - supervise operators.
 
 For an engineer, this matters more than any model choice. A perception system that reduces the probability of a collision is not merely a nice improvement; it is the argument that unlocks permission to operate at all. Teams that understand how to turn engineering evidence into a safety case are the ones whose products reach customers.
 
@@ -83,7 +83,7 @@ For an engineer, this matters more than any model choice. A perception system th
 | Typical AI work | Perception, autonomy, remote sensing analytics | Space systems engineering, Earth observation, instrument data |
 | Employer mix | Small companies and scale-ups | One very large institution plus specialised SMEs |
 | Working language | Dutch with English in technical teams | Highly international, English dominant |
-| Distance | — | About 15 minutes |
+| Distance | - | About 15 minutes |
 
 The two sites are complementary and close enough that professionals move between them. Adding Leiden, The Hague and Delft to the search radius turns this into one of the densest sensor and space technology regions in Europe.
 
@@ -97,7 +97,7 @@ The two sites are complementary and close enough that professionals move between
 
 **Export control and security.** Sensor and autonomy technology can have dual-use implications, with screening and export restrictions for some projects.
 
-**Environmental and nature rules.** Flying over protected dunes and Natura 2000 areas involves disturbance restrictions, particularly in bird breeding seasons — an unusually literal constraint on experiments.
+**Environmental and nature rules.** Flying over protected dunes and Natura 2000 areas involves disturbance restrictions, particularly in bird breeding seasons - an unusually literal constraint on experiments.
 
 ## A Concrete Scenario: The Inspection Model That Failed in Autumn
 
@@ -105,11 +105,11 @@ A company builds a model to detect defects on infrastructure from drone imagery.
 
 In October, detection quality collapses. Low sun angles produce long shadows; wet surfaces reflect differently; leaves obscure structures; and flights are conducted at slightly different altitudes because of wind. The model has learned summer lighting as much as it has learned defects.
 
-The fix is prosaic: deliberate collection of data across seasons and conditions, flight protocols standardising altitude and overlap, explicit tracking of capture metadata, and evaluation stratified by season. The team ends up investing far more in data collection discipline than in modelling — which is the correct allocation, and the one that most newcomers to remote sensing underestimate.
+The fix is prosaic: deliberate collection of data across seasons and conditions, flight protocols standardising altitude and overlap, explicit tracking of capture metadata, and evaluation stratified by season. The team ends up investing far more in data collection discipline than in modelling - which is the correct allocation, and the one that most newcomers to remote sensing underestimate.
 
 ## A Common Misconception About Drone Jobs
 
-Candidates imagine flying as the job. In practice, the pilot function is shrinking and the engineering function is growing: someone must build the perception, the autonomy, the data pipeline and the analysis, and someone must construct the safety case that allows the operation. The commercial reality is also less romantic than it appears — many drone companies make their money from the data products, not the flights. Job seekers should therefore evaluate an employer's data capability, not its hardware photos.
+Candidates imagine flying as the job. In practice, the pilot function is shrinking and the engineering function is growing: someone must build the perception, the autonomy, the data pipeline and the analysis, and someone must construct the safety case that allows the operation. The commercial reality is also less romantic than it appears - many drone companies make their money from the data products, not the flights. Job seekers should therefore evaluate an employer's data capability, not its hardware photos.
 
 ## Typical Job Titles to Search For
 
@@ -138,7 +138,7 @@ Rail access is indirect: the nearest stations are in Leiden, with bus connection
 
 ## Career Growth in Sensing and Autonomy
 
-Perception and autonomy skills are among the most transferable in engineering: automotive, logistics robotics, agriculture, maritime autonomy, defence and industrial inspection all compete for the same people. Remote sensing expertise leads into water management, agriculture, energy infrastructure and climate services — sectors with long-term public investment behind them. The space cluster adds an international dimension, with career paths that can continue in other European countries through the same agencies and contractors.
+Perception and autonomy skills are among the most transferable in engineering: automotive, logistics robotics, agriculture, maritime autonomy, defence and industrial inspection all compete for the same people. Remote sensing expertise leads into water management, agriculture, energy infrastructure and climate services - sectors with long-term public investment behind them. The space cluster adds an international dimension, with career paths that can continue in other European countries through the same agencies and contractors.
 
 ## Earth Observation: The Bridge Between Space and Drones
 
@@ -146,7 +146,7 @@ The two clusters in this corner of the country do the same thing at different al
 
 Dutch use cases are concrete. Water authorities monitor dike condition and soil moisture. Agricultural services track crop development across whole provinces. Infrastructure managers watch for subsidence, which in a country built on soft soil is a permanent concern. Environmental agencies map vegetation and land use change. Maritime authorities monitor shipping and detect spills.
 
-What makes this work interesting is the fusion problem. Satellite data gives you history and coverage; drone flights give you detail and timing; ground sensors give you truth at a point. Combining the three into one defensible estimate — with uncertainty attached — is the actual product, and it requires geospatial skill, statistical care and a clear understanding of what the end user will decide based on the result.
+What makes this work interesting is the fusion problem. Satellite data gives you history and coverage; drone flights give you detail and timing; ground sensors give you truth at a point. Combining the three into one defensible estimate - with uncertainty attached - is the actual product, and it requires geospatial skill, statistical care and a clear understanding of what the end user will decide based on the result.
 
 Because European satellite programmes provide open data at no cost, the barrier to building experience here is unusually low. Anyone can download imagery and build a monitoring pipeline over their own region, and doing so is one of the most effective portfolio projects available for this market.
 
@@ -154,7 +154,7 @@ Because European satellite programmes provide open data at no cost, the barrier 
 
 Candidates evaluating employers in the unmanned sector should look carefully at business models, because the industry has matured unevenly. A decade ago, many companies sold flights: a service where the aircraft was the product. Most of those have discovered that flying is a low-margin activity that customers can commission from anyone.
 
-The companies doing well now sell something else. Some sell analysis — an inspection report, a monitoring subscription, a change alert — where the drone is merely how the data was collected. Some sell the hardware or subsystems that others fly. Some sell regulatory capability: the permits, procedures and safety cases that allow complex operations, which is genuinely difficult to replicate.
+The companies doing well now sell something else. Some sell analysis - an inspection report, a monitoring subscription, a change alert - where the drone is merely how the data was collected. Some sell the hardware or subsystems that others fly. Some sell regulatory capability: the permits, procedures and safety cases that allow complex operations, which is genuinely difficult to replicate.
 
 For a job seeker, those distinctions predict stability. Ask how revenue is earned, how much of it is recurring, and whether the company's advantage lies in something a competitor could buy off the shelf. In a young industry these questions are not impolite; they are what a careful candidate should ask.
 
@@ -168,14 +168,14 @@ For a job seeker, those distinctions predict stability. Ask how revenue is earne
 
 ## Where to Start
 
-If you want to work on sensors that fly — and then on the data they produce — few places in Europe put the test field, the space centre and a research university this close together.
+If you want to work on sensors that fly - and then on the data they produce - few places in Europe put the test field, the space centre and a research university this close together.
 
 Browse current AI, machine learning and data jobs in and around Katwijk at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who wants to fly drones) Are drone jobs mostly piloting?
-Increasingly not — the growth is in perception, autonomy, data processing and safety engineering rather than manual flying.
+Increasingly not - the growth is in perception, autonomy, data processing and safety engineering rather than manual flying.
 
 ### (Scenario: computer vision engineer) What makes outdoor vision harder here?
 Changing light, weather, seasons and flight geometry; without disciplined data collection, models learn conditions instead of targets.
@@ -184,7 +184,7 @@ Changing light, weather, seasons and flight geometry; without disciplined data c
 In the space sector and international technical teams, yes; Dutch SMEs and public-sector clients generally expect Dutch.
 
 ### (Scenario: candidate comparing sectors) Do remote sensing skills transfer elsewhere?
-Strongly — water management, agriculture, energy infrastructure and climate services all use the same geospatial and vision methods.
+Strongly - water management, agriculture, energy infrastructure and climate services all use the same geospatial and vision methods.
 
 ### (Scenario: candidate without a car) Is the area commutable by public transport?
 Leiden is the rail hub with bus links to the coast; many people cycle or drive, so check the specific site before committing.
@@ -194,10 +194,10 @@ Leiden is the rail hub with bus links to the coast; many people cycle or drive, 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Are drone jobs mostly piloting?", "acceptedAnswer": {"@type": "Answer", "text": "No — growth is in perception, autonomy, data processing and safety engineering rather than manual flying."}},
+    {"@type": "Question", "name": "Are drone jobs mostly piloting?", "acceptedAnswer": {"@type": "Answer", "text": "No - growth is in perception, autonomy, data processing and safety engineering rather than manual flying."}},
     {"@type": "Question", "name": "What makes outdoor computer vision harder for drone work?", "acceptedAnswer": {"@type": "Answer", "text": "Changing light, weather, seasons and flight geometry; disciplined data collection matters more than model choice."}},
     {"@type": "Question", "name": "Can I work in the Katwijk and Noordwijk cluster without Dutch?", "acceptedAnswer": {"@type": "Answer", "text": "In the space sector and international technical teams yes; Dutch SMEs and public clients generally expect Dutch."}},
-    {"@type": "Question", "name": "Do remote sensing skills transfer to other sectors?", "acceptedAnswer": {"@type": "Answer", "text": "Strongly — water management, agriculture, energy infrastructure and climate services use the same methods."}},
+    {"@type": "Question", "name": "Do remote sensing skills transfer to other sectors?", "acceptedAnswer": {"@type": "Answer", "text": "Strongly - water management, agriculture, energy infrastructure and climate services use the same methods."}},
     {"@type": "Question", "name": "Is Katwijk commutable by public transport?", "acceptedAnswer": {"@type": "Answer", "text": "Leiden is the rail hub with bus links to the coast; many people cycle or drive to the sites."}}
   ]
 }

@@ -55,7 +55,7 @@ Zodra een naam deze lichtere, evenredige initiële controle overleeft en een opr
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters door deze evenredige naamgevingsrisicocontrols te denken als onderdeel van bredere lanceringvoorbereidingsgesprekken, waarbij wordt gemarkeerd wanneer een naam meer formeel juridisch onderzoek rechtvaardigt vóór significante investeringen. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om kostbare, vermijdbare fouten te voorkomen tijdens de vroegste, goedkoopst te herstellen fase van het bouwen van een bedrijf.
 
-[Controleer uw naam voordat u er uw merk omheen bouwt](https://launchstudio.eu/nl/#contact) — domeinbeschikbaarheid en merkrechtelijke veiligheid zijn oprecht verschillende vragen.
+[Controleer uw naam voordat u er uw merk omheen bouwt](https://launchstudio.eu/nl/#contact) - domeinbeschikbaarheid en merkrechtelijke veiligheid zijn oprecht verschillende vragen.
 
 ## Vier merkrechtelijke risicocategorieën die oprichters consistent onderschatten
 
@@ -82,9 +82,9 @@ Ongeveer zes maanden na de lancering ontving Kirsten een formele sommatiebrief v
 **Resultaat:** Kirsten werkte samen met LaunchStudio om een herpositionering en naamsverandering (rebrand) onder een nieuwe naam te plannen en uit te voeren – dit keer goed gecontroleerd op zowel domeinbeschikbaarheid als merkrechtelijk risico – waarbij verdere verstoring werd geminimaliseerd. De zes maanden aan marketinginvesteringen, klantbekendheid en merkmaterialen gebouwd rond de oorspronkelijke naam vertegenwoordigden echter echte, vermijdbare kosten die een eenvoudige zoekopdracht vooraf volledig zou hebben voorkomen.
 
 > *"Ik controleerde het domein, zag dat het beschikbaar was, en ging er gewoon voor. Het was nooit bij me opgekomen dat 'niemand anders bezit dit exacte domein' en 'niemand anders heeft een juridische claim op deze naam in mijn branche' volledig verschillende vragen waren, totdat de brief van een advocaat zes maanden en veel marketinguitgaven later arriveerde."*
-> — **Kirsten Meijer, Oprichter (Enschede)**
+> - **Kirsten Meijer, Oprichter (Enschede)**
 
-**Kosten en tijdlijn:** € 700 (beoordeling van naamgevingsrisico voor naamsverandering) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 700 (beoordeling van naamgevingsrisico voor naamsverandering) - voltooid in 3 werkdagen.
 
 ---
 
@@ -136,7 +136,7 @@ Niet altijd – afhankelijk van de specifieke omstandigheden zijn een onderhande
       "name": "Biedt een beschikbaar domein een signaal over merkrechtelijke veiligheid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeer beperkt — domeinbeschikbaarheid staat volledig los van juridische merkrechtelijke conflicten in uw branche."
+        "text": "Zeer beperkt - domeinbeschikbaarheid staat volledig los van juridische merkrechtelijke conflicten in uw branche."
       }
     },
     {
@@ -152,7 +152,7 @@ Niet altijd – afhankelijk van de specifieke omstandigheden zijn een onderhande
       "name": "Is een naamsverandering altijd noodzakelijk bij een conflict?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet altijd — onderhandeling of verschillende positionering kan soms, hoewel onzeker en juridisch advies vereist."
+        "text": "Niet altijd - onderhandeling of verschillende positionering kan soms, hoewel onzeker en juridisch advies vereist."
       }
     }
   ]

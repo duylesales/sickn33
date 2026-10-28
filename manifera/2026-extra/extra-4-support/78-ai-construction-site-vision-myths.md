@@ -24,7 +24,7 @@ A CEO at a construction technology company, or a construction firm leader evalua
 
 ## Myth 1: "A Model That Detects Safety Violations Accurately in Testing Will Perform Similarly Reliably on a Real, Active Site"
 
-A computer vision safety monitoring model validated against a curated test dataset — clear, well-lit images of specific safety violations like missing hard hats or unsecured harnesses — can demonstrate genuinely strong accuracy in that controlled testing context. What this underweights is that a real, active construction site presents genuinely challenging visual conditions a curated test set often doesn't fully represent: variable and often poor lighting, dust and debris obscuring camera views, workers partially occluded by equipment or materials, and constantly changing site layout as construction progresses. A model that performs well on curated test imagery can experience meaningfully degraded real-world accuracy under these genuinely harder, more variable real site conditions, a gap that matters enormously given that a safety monitoring system's entire value proposition depends on reliable detection specifically under real, imperfect site conditions, not idealized testing conditions.
+A computer vision safety monitoring model validated against a curated test dataset - clear, well-lit images of specific safety violations like missing hard hats or unsecured harnesses - can demonstrate genuinely strong accuracy in that controlled testing context. What this underweights is that a real, active construction site presents genuinely challenging visual conditions a curated test set often doesn't fully represent: variable and often poor lighting, dust and debris obscuring camera views, workers partially occluded by equipment or materials, and constantly changing site layout as construction progresses. A model that performs well on curated test imagery can experience meaningfully degraded real-world accuracy under these genuinely harder, more variable real site conditions, a gap that matters enormously given that a safety monitoring system's entire value proposition depends on reliable detection specifically under real, imperfect site conditions, not idealized testing conditions.
 
 ## Myth 2: "False Positive Safety Alerts Are a Minor Inconvenience Compared to the Value of Catching Real Violations"
 
@@ -36,7 +36,7 @@ A construction firm reasonably sees value in AI-detected safety violations as ob
 
 ## Why These Myths Are Genuinely Understandable
 
-These assumptions aren't unreasonable — computer vision's genuine, visible success in more controlled settings naturally creates optimism about direct applicability to construction site monitoring, and construction firms have real, legitimate safety and efficiency reasons to explore this technology seriously. What makes construction site monitoring specifically different is the combination of genuinely harder, more variable real-world visual conditions than many controlled testing environments represent, a real alert fatigue risk that makes false positive rate a genuine safety consideration rather than a pure accuracy trade-off, and real fairness and liability considerations around how AI-detected violations are actually used that a purely technical accuracy framing doesn't fully address.
+These assumptions aren't unreasonable - computer vision's genuine, visible success in more controlled settings naturally creates optimism about direct applicability to construction site monitoring, and construction firms have real, legitimate safety and efficiency reasons to explore this technology seriously. What makes construction site monitoring specifically different is the combination of genuinely harder, more variable real-world visual conditions than many controlled testing environments represent, a real alert fatigue risk that makes false positive rate a genuine safety consideration rather than a pure accuracy trade-off, and real fairness and liability considerations around how AI-detected violations are actually used that a purely technical accuracy framing doesn't fully address.
 
 ## What This Means for Building or Adopting Construction Vision Tools Correctly
 
@@ -49,7 +49,7 @@ These assumptions aren't unreasonable — computer vision's genuine, visible suc
 
 A specific, practical point worth naming directly: a construction site safety monitoring system's actual effectiveness depends significantly on genuine worker cooperation and trust, not purely on the technology's detection capability in isolation. Workers who perceive a monitoring system as unreliable, unfair, or prone to false accusations reasonably develop resistance to the system, whether through active workarounds, general resentment affecting broader safety culture, or simply disengaging from the safety program the system was meant to support. A system built with the accuracy, false positive management, and fairness safeguards this article describes is considerably more likely to earn genuine worker buy-in than one that oversells its reliability and mishandles the consequences of its inevitable errors.
 
-This is a specific reason the technical and process rigor this article describes matters beyond pure detection accuracy metrics — it directly shapes whether a safety monitoring system actually achieves adoption and genuine safety culture improvement on a real site, or instead becomes an unpopular, resisted system that workers actively work around, a real risk that undermines the entire safety investment regardless of how technically sophisticated the underlying detection model actually is.
+This is a specific reason the technical and process rigor this article describes matters beyond pure detection accuracy metrics - it directly shapes whether a safety monitoring system actually achieves adoption and genuine safety culture improvement on a real site, or instead becomes an unpopular, resisted system that workers actively work around, a real risk that undermines the entire safety investment regardless of how technically sophisticated the underlying detection model actually is.
 
 ## Manifera's Approach: Building Construction Vision Tools With Genuine Site-Condition Rigor
 
@@ -65,7 +65,7 @@ Budowa Wizja Kalisz, a Kalisz-based construction technology startup, had built a
 Manifera's Amsterdam team, engaged to rework the product, rebuilt the detection model's training and validation around genuinely representative real-site imagery collected across varied lighting and occlusion conditions, explicitly tuned the false positive rate based on real site supervisor feedback, and redesigned the product to require human verification before any detection could be used for disciplinary documentation.
 
 > *"Our lab numbers looked great and gave us real confidence going into pilots. Real dusty, poorly lit job sites showed us pretty quickly that lab accuracy and site accuracy were two very different things, and fixing the gap meant genuinely rebuilding around real conditions, not just tuning a few settings."*
-> — **Co-Founder, Budowa Wizja Kalisz**
+> - **Co-Founder, Budowa Wizja Kalisz**
 
 Budowa Wizja Kalisz's recalibrated system produced meaningfully improved real-site detection accuracy and a substantially lower false positive rate, restoring site supervisor trust in the alerts, and the company now validates all detection updates specifically against representative real-site conditions before any production deployment.
 
@@ -85,15 +85,15 @@ Before building or adopting AI computer vision tools for construction site monit
 
 ### (Scenario: founder scoping a construction vision tool) Does strong accuracy on a curated test dataset predict how well a model performs on a real construction site?
 
-Not reliably — real sites present genuinely harder conditions like poor lighting, dust, and occlusion that curated test datasets often don't fully represent, risking meaningfully degraded real-world accuracy.
+Not reliably - real sites present genuinely harder conditions like poor lighting, dust, and occlusion that curated test datasets often don't fully represent, risking meaningfully degraded real-world accuracy.
 
 ### (Scenario: founder defaulting to maximum detection sensitivity) Are false positive safety alerts just a minor inconvenience compared to catching more real violations?
 
-Not necessarily — a high false positive rate causes alert fatigue, where workers and supervisors begin discounting warnings generally, paradoxically reducing the system's real-world safety effectiveness.
+Not necessarily - a high false positive rate causes alert fatigue, where workers and supervisors begin discounting warnings generally, paradoxically reducing the system's real-world safety effectiveness.
 
 ### (Scenario: construction firm considering AI for disciplinary action) Can AI-detected safety violations be used directly for disciplinary or liability documentation without further verification?
 
-Not advisably — AI detection carries real uncertainty on any specific instance, and using it directly without human verification risks unfairness to workers and a weaker legal position if the detection is later challenged.
+Not advisably - AI detection carries real uncertainty on any specific instance, and using it directly without human verification risks unfairness to workers and a weaker legal position if the detection is later challenged.
 
 ### (Scenario: founder validating a vision product) What should a construction vision product's validation process actually include?
 
@@ -108,9 +108,9 @@ Ask specifically how the system was validated, including whether real-site condi
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "(Scenario: founder scoping a construction vision tool) Does strong accuracy on a curated test dataset predict how well a model performs on a real construction site?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — real sites present harder conditions like poor lighting and dust that curated datasets often don't represent." } },
-    { "@type": "Question", "name": "(Scenario: founder defaulting to maximum detection sensitivity) Are false positive safety alerts just a minor inconvenience compared to catching more real violations?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — high false positive rates cause alert fatigue, reducing the system's real-world safety effectiveness." } },
-    { "@type": "Question", "name": "(Scenario: construction firm considering AI for disciplinary action) Can AI-detected safety violations be used directly for disciplinary or liability documentation without further verification?", "acceptedAnswer": { "@type": "Answer", "text": "Not advisably — direct use without human verification risks unfairness and a weaker legal position if later challenged." } },
+    { "@type": "Question", "name": "(Scenario: founder scoping a construction vision tool) Does strong accuracy on a curated test dataset predict how well a model performs on a real construction site?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably - real sites present harder conditions like poor lighting and dust that curated datasets often don't represent." } },
+    { "@type": "Question", "name": "(Scenario: founder defaulting to maximum detection sensitivity) Are false positive safety alerts just a minor inconvenience compared to catching more real violations?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily - high false positive rates cause alert fatigue, reducing the system's real-world safety effectiveness." } },
+    { "@type": "Question", "name": "(Scenario: construction firm considering AI for disciplinary action) Can AI-detected safety violations be used directly for disciplinary or liability documentation without further verification?", "acceptedAnswer": { "@type": "Answer", "text": "Not advisably - direct use without human verification risks unfairness and a weaker legal position if later challenged." } },
     { "@type": "Question", "name": "(Scenario: founder validating a vision product) What should a construction vision product's validation process actually include?", "acceptedAnswer": { "@type": "Answer", "text": "Testing against genuinely representative real-site imagery across varied conditions, not just idealized test datasets." } },
     { "@type": "Question", "name": "(Scenario: construction firm evaluating a vendor's tool) What should a construction firm ask a vision monitoring vendor before deployment?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about validation conditions, actual false positive rate, and whether human verification is required before consequential use." } }
   ]

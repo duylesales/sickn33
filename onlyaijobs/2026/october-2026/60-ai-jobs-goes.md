@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Goes sits at the centre of Zeeland's agricultural region, distinct from the coastal offshore-energy character that shapes Middelburg's data work. Here, the data demand comes from crop production, fruit growing, shellfish farming, food logistics and regional distribution — a different specialisation within the same province.
+Goes sits at the centre of Zeeland's agricultural region, distinct from the coastal offshore-energy character that shapes Middelburg's data work. Here, the data demand comes from crop production, fruit growing, shellfish farming, food logistics and regional distribution - a different specialisation within the same province.
 
 ## What This Work Actually Involves
 
@@ -51,7 +51,7 @@ Goes is the main town of **Zuid-Beveland**, a former island in Zeeland with fert
 
 **Arable farming.** Potatoes, onions, sugar beet and grains are grown on large, open fields. Zeeland's clay soils and mild maritime climate make it a productive arable region, and crops such as seed potatoes and onions are exported widely.
 
-**Fruit growing.** Zuid-Beveland, particularly around Kapelle and nearby villages, is known for apple and pear orchards. Fruit growing involves long-term investment in trees, weather-dependent harvests and cold storage — all data-intensive planning questions.
+**Fruit growing.** Zuid-Beveland, particularly around Kapelle and nearby villages, is known for apple and pear orchards. Fruit growing involves long-term investment in trees, weather-dependent harvests and cold storage - all data-intensive planning questions.
 
 **Shellfish farming in Yerseke.** A short distance from Goes, **Yerseke** is the centre of Dutch mussel and oyster farming, with a mussel auction and a concentration of shellfish companies. **Wageningen Marine Research** has a location in Yerseke, conducting research on shellfish culture, ecosystems and the Eastern Scheldt and Wadden Sea.
 
@@ -76,9 +76,9 @@ Goes is the main town of **Zuid-Beveland**, a former island in Zeeland with fert
 | | Goes (agriculture and logistics) | Middelburg (offshore energy) |
 |---|---|---|
 | Core technical challenge | Yield prediction, food-distribution logistics | Predictive maintenance, energy-output forecasting |
-| Physical accessibility of assets | High — land-based agriculture | Low — offshore installations |
+| Physical accessibility of assets | High - land-based agriculture | Low - offshore installations |
 | Typical background sought | Agricultural science affinity, logistics analytics | Time series modelling, offshore or maritime affinity |
-| Discovery difficulty | High — general agri-vocabulary, not AI | High — general energy-sector vocabulary |
+| Discovery difficulty | High - general agri-vocabulary, not AI | High - general energy-sector vocabulary |
 
 ## Where Data and Machine Learning Are Applied
 
@@ -93,11 +93,11 @@ Goes is the main town of **Zuid-Beveland**, a former island in Zeeland with fert
 
 ## Regulation and Policy That Drive Data Demand
 
-- **EU Nitrates Directive.** Limits the use of nitrogen from manure to protect water quality. The Netherlands' derogation allowing higher manure application on grassland is being phased out, which puts pressure on farmers to fertilise more precisely — a direct driver of precision agriculture data.
+- **EU Nitrates Directive.** Limits the use of nitrogen from manure to protect water quality. The Netherlands' derogation allowing higher manure application on grassland is being phased out, which puts pressure on farmers to fertilise more precisely - a direct driver of precision agriculture data.
 - **EU Water Framework Directive.** Requires good ecological and chemical status of water bodies, which shapes rules on fertiliser and crop protection use near water.
 - **EU Common Agricultural Policy (CAP).** Links part of farm support to environmental and climate measures, which require documentation and monitoring.
 - **Food safety for shellfish.** Shellfish production areas are monitored for water quality and toxins, with supervision by the Netherlands Food and Consumer Product Safety Authority.
-- **Water management and salinisation.** Freshwater availability policy and measures against salinisation affect which crops can be grown where — increasingly supported by spatial data and models.
+- **Water management and salinisation.** Freshwater availability policy and measures against salinisation affect which crops can be grown where - increasingly supported by spatial data and models.
 
 ## Why Zeeland Rewards Treating It as Two Markets, Not One
 
@@ -117,7 +117,7 @@ That creates data questions with long time horizons: where salinisation risk is 
 
 Mussel and oyster farming in the Eastern Scheldt and Wadden Sea depends on natural conditions that growers can only partly influence. Mussel seed is collected, relocated to culture plots and harvested after growing, and yields depend on food availability in the water, water temperature, predators and storms. Growers and researchers use data on chlorophyll, water temperature, currents and historical harvests to decide where and when to place and harvest mussels. Food safety adds another layer: shellfish areas are monitored for toxins produced by certain algae, and harvesting can be temporarily closed when levels rise.
 
-For data work, this means environmental time series, spatial models of water bodies and early warning models for algae blooms — a small but distinctive niche in which Yerseke's concentration of companies and research makes the Goes area the natural centre.
+For data work, this means environmental time series, spatial models of water bodies and early warning models for algae blooms - a small but distinctive niche in which Yerseke's concentration of companies and research makes the Goes area the natural centre.
 
 ## Practical Points for Working in the Region
 
@@ -147,7 +147,7 @@ For data work, this means environmental time series, spatial models of water bod
 
 ## Accessibility and Search Radius
 
-Goes lies on the railway line between Roosendaal and Vlissingen, with Middelburg roughly a quarter of an hour away and Roosendaal around half an hour. The A58 motorway connects Goes with Brabant, and the Zeeland Bridge and Western Scheldt Tunnel link it with the rest of the province. A realistic search radius includes Kapelle, Yerseke, Middelburg, Vlissingen, Bergen op Zoom and — via the tunnel — Terneuzen. Many agricultural roles involve field visits, so a car is often useful. Check current travel times in the NS journey planner.
+Goes lies on the railway line between Roosendaal and Vlissingen, with Middelburg roughly a quarter of an hour away and Roosendaal around half an hour. The A58 motorway connects Goes with Brabant, and the Zeeland Bridge and Western Scheldt Tunnel link it with the rest of the province. A realistic search radius includes Kapelle, Yerseke, Middelburg, Vlissingen, Bergen op Zoom and - via the tunnel - Terneuzen. Many agricultural roles involve field visits, so a car is often useful. Check current travel times in the NS journey planner.
 
 ## Who This Market Suits
 
@@ -159,7 +159,7 @@ Goes suits data professionals who want their work to connect directly to food pr
 - Wageningen Marine Research in Yerseke, ZLTO, the Scheldestromen Water Board, HZ and Scalda shape the regional ecosystem.
 - Data work covers yield forecasting, harvest and storage planning, salinisation monitoring, shellfish growth and food safety, logistics and precision fertilisation.
 - The Nitrates Directive, the Water Framework Directive, the CAP and shellfish food safety rules drive demand for precise data.
-- Treat Zeeland as two markets — agriculture around Goes and offshore energy around Middelburg — and search both explicitly.
+- Treat Zeeland as two markets - agriculture around Goes and offshore energy around Middelburg - and search both explicitly.
 
 ## Where to Start
 
@@ -170,7 +170,7 @@ Browse current AI, machine learning and data jobs in and around Goes at [onlyaij
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who assumes all Zeeland AI work is offshore-energy related) Is all AI-adjacent work in Zeeland related to offshore wind energy?
-No — Goes represents a distinct agricultural and logistics specialisation within the same province, separate from the coastal offshore-energy character of Middelburg.
+No - Goes represents a distinct agricultural and logistics specialisation within the same province, separate from the coastal offshore-energy character of Middelburg.
 
 ### (Scenario: candidate wondering what this work involves) What kind of data work happens around Goes specifically?
 Yield prediction and quality monitoring for regional agriculture, combined with logistics planning for food distribution.
@@ -189,7 +189,7 @@ Filter by category and consider Goes specifically alongside broader Zeeland sear
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is all AI-adjacent work in Zeeland related to offshore wind energy?", "acceptedAnswer": {"@type": "Answer", "text": "No — Goes represents a distinct agricultural and logistics specialisation within the same province."}},
+    {"@type": "Question", "name": "Is all AI-adjacent work in Zeeland related to offshore wind energy?", "acceptedAnswer": {"@type": "Answer", "text": "No - Goes represents a distinct agricultural and logistics specialisation within the same province."}},
     {"@type": "Question", "name": "What kind of data work happens around Goes specifically?", "acceptedAnswer": {"@type": "Answer", "text": "Yield prediction and quality monitoring for regional agriculture, combined with food distribution logistics."}},
     {"@type": "Question", "name": "How does this compare to agri-data work discussed for Ede or Wageningen?", "acceptedAnswer": {"@type": "Answer", "text": "Similar in statistical rigour, applied to Zeeland's agricultural base and distribution networks."}},
     {"@type": "Question", "name": "Why might I miss this segment searching \"AI jobs Zeeland\"?", "acceptedAnswer": {"@type": "Answer", "text": "A general search might default to the offshore-energy angle, missing this agricultural segment."}},

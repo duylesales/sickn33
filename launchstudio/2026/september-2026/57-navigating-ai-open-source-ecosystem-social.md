@@ -1,6 +1,6 @@
-🚨 Grace, a bookkeeper, built an audit tool with **Cursor**. Client privacy rules prohibited sending financial data to OpenAI's servers — but her app, by default, routed every document straight through the OpenAI API endpoint anyway. 🔐
+🚨 Grace, a bookkeeper, built an audit tool with **Cursor**. Client privacy rules prohibited sending financial data to OpenAI's servers - but her app, by default, routed every document straight through the OpenAI API endpoint anyway. 🔐
 
-Open-source models aren't just cheaper — for regulated data, they're often the only legally viable option. 🧠
+Open-source models aren't just cheaper - for regulated data, they're often the only legally viable option. 🧠
 
 ❌ Sensitive financial documents routed straight to a third-party US API by default
 ❌ No way to guarantee data residency for privacy-sensitive clients

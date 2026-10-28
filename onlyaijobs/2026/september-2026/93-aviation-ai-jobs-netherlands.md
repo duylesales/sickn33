@@ -94,7 +94,7 @@ Noise and emissions obligations require measurement, allocation and reporting. T
 
 Three things make this attractive for a candidate.
 
-It is legally required rather than discretionary, which means funding is not contingent on someone's strategic priorities. It is technically substantive — modelling noise propagation and attributing it correctly is a real physical modelling problem, not a reporting task. And it sits at the intersection of operations and public accountability, which means the work is examined by people outside the organisation and must be defensible.
+It is legally required rather than discretionary, which means funding is not contingent on someone's strategic priorities. It is technically substantive - modelling noise propagation and attributing it correctly is a real physical modelling problem, not a reporting task. And it sits at the intersection of operations and public accountability, which means the work is examined by people outside the organisation and must be defensible.
 
 For engineers who want their work to matter environmentally and who prefer measurable obligations to voluntary targets, this is one of the clearer places in Dutch aviation where those preferences align with what the employer actually needs.
 
@@ -108,7 +108,7 @@ For a data practitioner this has several effects.
 
 **Evidence standards are high.** A claim that something reduces risk must be supported. Aviation does not adopt changes on the strength of a promising correlation.
 
-**Rare events are the entire point.** The events you most want to predict have almost no examples, because the system is designed to prevent them. This makes the statistics hard and pushes work toward precursor analysis — identifying the conditions and minor deviations that precede serious events rather than modelling the events themselves.
+**Rare events are the entire point.** The events you most want to predict have almost no examples, because the system is designed to prevent them. This makes the statistics hard and pushes work toward precursor analysis - identifying the conditions and minor deviations that precede serious events rather than modelling the events themselves.
 
 **Human factors are taken seriously.** A system that is technically correct but that increases workload at a critical moment, or that induces complacency, is a safety problem. Engineers are expected to think about how a tool changes operator behaviour.
 
@@ -158,7 +158,7 @@ Candidates should weigh two opposing forces rather than accept either narrative.
 
 Against the sector: aviation faces genuine pressure from emissions policy, noise constraints, competition from rail on short routes, and public opposition to expansion. Growth in flight volume at the main hub is constrained by design rather than by demand. Anyone expecting a growth sector should look elsewhere.
 
-For the sector: constraint increases rather than decreases the value of optimisation. When you cannot add capacity, using what exists better becomes the only available improvement, and that is precisely what data work delivers. Environmental obligations also create new analytical demand — measuring, allocating and reporting noise and emissions accurately is itself substantial work.
+For the sector: constraint increases rather than decreases the value of optimisation. When you cannot add capacity, using what exists better becomes the only available improvement, and that is precisely what data work delivers. Environmental obligations also create new analytical demand - measuring, allocating and reporting noise and emissions accurately is itself substantial work.
 
 The practical implication is that the sector is not expanding but the technical function within it is, because the constraints that limit the business increase the need for the capability. That is a different and more durable position than growth-driven demand.
 
@@ -183,7 +183,7 @@ Browse current aviation, logistics, machine learning and data vacancies across t
 An airport with spare capacity absorbs disruption; one at its limit cascades it, because every resource is already committed. That coupling means optimising components in isolation makes overall outcomes worse, so system-level modelling genuinely beats local improvement.
 
 ### (Scenario: candidate interested in safety work) Why is predicting serious events difficult?
-Because the system is designed to prevent them, so they have almost no examples. Work therefore focuses on precursor analysis — the conditions and minor deviations preceding serious events — rather than modelling the events directly.
+Because the system is designed to prevent them, so they have almost no examples. Work therefore focuses on precursor analysis - the conditions and minor deviations preceding serious events - rather than modelling the events directly.
 
 ### (Scenario: candidate weighing sector decline) Is aviation a shrinking sector to enter?
 Flight volume growth at the main hub is constrained by policy rather than demand, so it is not a growth sector. But the technical function within it is expanding, because when you cannot add capacity, using existing capacity better becomes the only improvement available.
@@ -192,7 +192,7 @@ Flight volume growth at the main hub is constrained by policy rather than demand
 Evidence standards and pace. Aviation does not adopt changes on a promising correlation, and modifying anything operational involves assessment and approval. That slowness is why the industry is as safe as it is.
 
 ### (Scenario: candidate choosing a specialisation) Where is talent shortest?
-Crew rostering and network planning — classic operations research problems that remain hard and are undersupplied because training has shifted toward statistical learning.
+Crew rostering and network planning - classic operations research problems that remain hard and are undersupplied because training has shifted toward statistical learning.
 
 <script type="application/ld+json">
 {

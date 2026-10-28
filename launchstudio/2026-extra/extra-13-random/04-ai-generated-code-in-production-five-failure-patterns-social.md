@@ -12,7 +12,7 @@ Nothing had ever crashed. The logs, once someone looked, showed an app failing p
 ✅ Reminders recalculated in Europe/Amsterdam time
 ✅ Retries capped with exponential backoff, plus Sentry and uptime alerts
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find the failures AI-written code hides — before your customers do. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we find the failures AI-written code hides - before your customers do. ⚙️
 
 His result: €2,200, eight business days. Every scheduled service on time the next quarter, failed uploads near zero, and the vehicle-data API bill down about 40% once the retry storm was gone. 🚀
 

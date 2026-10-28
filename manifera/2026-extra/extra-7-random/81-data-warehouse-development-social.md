@@ -1,4 +1,4 @@
-Most CTOs spend the warehouse decision comparing Snowflake vs. BigQuery vs. Redshift on price — while the architecture decisions inside whichever platform they pick matter far more and are far harder to undo. 🏗️📦
+Most CTOs spend the warehouse decision comparing Snowflake vs. BigQuery vs. Redshift on price - while the architecture decisions inside whichever platform they pick matter far more and are far harder to undo. 🏗️📦
 
 **The Pain Points:**
 ❌ **Platform Choice Overweighted:** Modeling, partitioning, and access governance treated as implementation details.

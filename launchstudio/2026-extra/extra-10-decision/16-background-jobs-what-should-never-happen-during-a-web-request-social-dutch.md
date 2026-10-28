@@ -16,7 +16,7 @@ Wat betrouwbare achtergrondtaken vereisen:
 ✅ Een dead-letter queue (DLQ) die mislukte taken bewaart met een direct alert naar uw team
 ✅ Persistente taakstatus (in PostgreSQL of Redis) die deployments en server-crashes moeiteloos overleeft
 
-Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw webhook-handlers en wachtrij-architectuur — zonder uw frontend aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw webhook-handlers en wachtrij-architectuur - zonder uw frontend aan te tasten.
 
 💡 Zo voorkwam facturatietool Ledgerly dubbele uitbetalingen aan freelancers door idempotente webhook-verwerking in te voeren.
 

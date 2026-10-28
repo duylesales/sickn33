@@ -16,7 +16,7 @@ Wat uw boekingsplatform productierijp maakt:
 ✅ Een gescheiden tussenrekening-grootboek voor vooruitbetaalde gelden tot ná de activiteit
 ✅ Uitbetaling aan partners gekoppeld aan de uitvoeringsdatum in plaats van de boekingsdatum
 
-Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers robuuste concurrency-beveiligingen, betrouwbare kalendersynchronisaties en veilige geldstroom-architecturen — zonder uw frontend aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers robuuste concurrency-beveiligingen, betrouwbare kalendersynchronisaties en veilige geldstroom-architecturen - zonder uw frontend aan te tasten.
 
 💡 Zo verwerkte ervaringsplatform Weekendje ruim 900 boekingen zonder een enkele dubbele reservering of uitbetalingsconflict.
 

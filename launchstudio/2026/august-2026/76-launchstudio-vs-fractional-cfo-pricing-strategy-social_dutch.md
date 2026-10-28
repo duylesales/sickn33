@@ -1,6 +1,6 @@
-🔥 Elena bouwde MetricForge met **Lovable** — een AI-marketinganalyticsplatform dat acht maanden vastzat op één plat plan van €59/maand, terwijl haar zwaarste gebruikers veel meer waarde onttrokken dan casual gebruikers. 🧠
+🔥 Elena bouwde MetricForge met **Lovable** - een AI-marketinganalyticsplatform dat acht maanden vastzat op één plat plan van €59/maand, terwijl haar zwaarste gebruikers veel meer waarde onttrokken dan casual gebruikers. 🧠
 
-Een fractional CFO kan u precies vertellen wat u in rekening moet brengen. Wat ze meestal niet kunnen doen, is de meet- en factureringslogica bouwen om die prijsstrategie echt te maken — daarom blijven goede prijsstrategieën vaak maandenlang onuitgevoerd liggen.
+Een fractional CFO kan u precies vertellen wat u in rekening moet brengen. Wat ze meestal niet kunnen doen, is de meet- en factureringslogica bouwen om die prijsstrategie echt te maken - daarom blijven goede prijsstrategieën vaak maandenlang onuitgevoerd liggen.
 
 ❌ Een gevalideerde prijsstrategie die in een document blijft liggen omdat niemand de Stripe-logica kan bouwen
 ❌ Geen gebruiksmeting, waardoor zware en lichte gebruikers exact dezelfde prijs betalen
@@ -12,7 +12,7 @@ Een fractional CFO kan u precies vertellen wat u in rekening moet brengen. Wat z
 
 Bij **LaunchStudio** zetten wij gevalideerde prijsstrategie al sinds 2014 om in werkende omzetinfrastructuur via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De strategie van Elena werd eindelijk uitgevoerd: de gemiddelde omzet per account van MetricForge steeg binnen de eerste factureringscyclus na lancering, toen bureau-klanten overstapten naar de hogere tier die daadwerkelijk bij hun gebruik paste. (€ 2.200 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
+De strategie van Elena werd eindelijk uitgevoerd: de gemiddelde omzet per account van MetricForge steeg binnen de eerste factureringscyclus na lancering, toen bureau-klanten overstapten naar de hogere tier die daadwerkelijk bij hun gebruik paste. (€ 2.200 (Launch & Grow Pakket) - 8 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-fractional-cfo-pricing-strategy
 

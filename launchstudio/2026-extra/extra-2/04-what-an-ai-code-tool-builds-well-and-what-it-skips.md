@@ -31,7 +31,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every AI code tool on the market today — v0, Bolt, Lovable, Cursor — is genuinely good at what it's built for: turning a described feature into working, visually correct code, fast. The confusion starts when founders quietly extend that competence to areas the tool was never actually built for, like access control, abuse prevention, or the specific question of what happens when a route gets requested by someone who was never supposed to see it in the first place.
+Every AI code tool on the market today - v0, Bolt, Lovable, Cursor - is genuinely good at what it's built for: turning a described feature into working, visually correct code, fast. The confusion starts when founders quietly extend that competence to areas the tool was never actually built for, like access control, abuse prevention, or the specific question of what happens when a route gets requested by someone who was never supposed to see it in the first place.
 
 ## Myth: An AI Code Tool Builds a Complete Application
 
@@ -51,7 +51,7 @@ Every AI code tool on the market today — v0, Bolt, Lovable, Cursor — is genu
 
 ## Myth: This Is a Minor Gap Compared to "Real" Security Issues
 
-**Reality:** an unprotected admin route is often the single highest-value target in an entire application, since admin panels typically expose exactly the kind of broad, sensitive controls — user management, data export, billing overrides — that a narrower vulnerability elsewhere wouldn't. Treating it as a footnote tends to be the opposite of the actual risk it represents.
+**Reality:** an unprotected admin route is often the single highest-value target in an entire application, since admin panels typically expose exactly the kind of broad, sensitive controls - user management, data export, billing overrides - that a narrower vulnerability elsewhere wouldn't. Treating it as a footnote tends to be the opposite of the actual risk it represents.
 
 ## How to Inventory Every Route in Your Application, Not Just the Ones in Your Nav Menu
 
@@ -61,11 +61,11 @@ The uncomfortable truth about "hidden" routes is that most founders don't actual
 
 - **Check the framework's routing structure directly**, not the navigation menu. In a Next.js project, that means looking at every folder under `/app` or `/pages`; in most other frameworks, there's an equivalent routes file or folder listing every path the server actually responds to, whether or not a link points to it.
 - **Search your codebase for every place a role or permission check exists**, then cross-reference that list against the full route list from the step above. Any route missing from the permission-check list is a route with no access control at all, by definition, not an oversight you have to guess at.
-- **Pull your server's access logs**, if you have any history of them, and look for requests to paths you don't recognize. Real traffic — including bot traffic — often reveals routes that exist but were never intentionally documented anywhere.
+- **Pull your server's access logs**, if you have any history of them, and look for requests to paths you don't recognize. Real traffic - including bot traffic - often reveals routes that exist but were never intentionally documented anywhere.
 - **Ask your AI coding tool directly** to list every route or page it has generated across the project's history, including ones later removed from navigation but never actually deleted from the codebase. This won't be perfect, but it's a faster starting point than manually reading every file.
 - **Check what search engines have already indexed**, using a simple `site:yourdomain.com` search, since an unprotected route that's been live for even a few weeks is often already crawled and listed publicly, exactly as happened with Lotte's admin panel.
 
-Once you have the full list, the actual fix is almost mechanical: every route serving anything beyond fully public content needs an explicit, server-side answer to "who is allowed to load this," checked independently of whether a link to it currently exists anywhere in the UI. The inventory step is the part founders skip, not because it's hard, but because it never occurs to them that "unlinked" and "unprotected" are different properties — until a search engine, a curious visitor, or a review process treats them as the same thing.
+Once you have the full list, the actual fix is almost mechanical: every route serving anything beyond fully public content needs an explicit, server-side answer to "who is allowed to load this," checked independently of whether a link to it currently exists anywhere in the UI. The inventory step is the part founders skip, not because it's hard, but because it never occurs to them that "unlinked" and "unprotected" are different properties - until a search engine, a curious visitor, or a review process treats them as the same thing.
 
 ## What Closing This Gap Looks Like in Practice
 
@@ -81,14 +81,14 @@ Manifera's engineering work is coordinated between its Amsterdam headquarters at
 
 Lotte, a former estate agent turned founder in Groningen, built PandBoard, an AI-assisted real estate listing tool built with v0, including an internal admin panel for managing listings and agent accounts.
 
-A routine search-engine indexing check turned up her admin panel URL sitting in Google's index, fully reachable without any login redirect. LaunchStudio's review confirmed the admin routes had no server-side role check at all — only a login form that, if bypassed by directly requesting the underlying page, granted full access.
+A routine search-engine indexing check turned up her admin panel URL sitting in Google's index, fully reachable without any login redirect. LaunchStudio's review confirmed the admin routes had no server-side role check at all - only a login form that, if bypassed by directly requesting the underlying page, granted full access.
 
 **Result:** LaunchStudio added independent server-side role verification to every admin route, closing public reachability entirely regardless of navigation links or search indexing.
 
 > *"I genuinely thought a login page in front of it meant it was protected. I had no idea the page behind the login was reachable directly the whole time."*
-> — **Lotte Janssen, Founder, PandBoard (Groningen)**
+> - **Lotte Janssen, Founder, PandBoard (Groningen)**
 
-**Cost & Timeline:** €1,900 (admin route access control audit) — completed in 7 business days.
+**Cost & Timeline:** €1,900 (admin route access control audit) - completed in 7 business days.
 
 ---
 
@@ -96,27 +96,27 @@ A routine search-engine indexing check turned up her admin panel URL sitting in 
 
 ### Would this exact gap show up the same way in a Next.js app as it did in Lotte's v0-generated project?
 
-The specific file structure differs, but the underlying risk is identical — Next.js API routes and server components still need an explicit role check, and a page that "looks protected" by a client-side redirect is just as reachable directly as any other unguarded route.
+The specific file structure differs, but the underlying risk is identical - Next.js API routes and server components still need an explicit role check, and a page that "looks protected" by a client-side redirect is just as reachable directly as any other unguarded route.
 
 ### Does Manifera's experience serving Vodafone-scale clients mean small founder projects get a lighter version of the same review?
 
-The review scope is matched to what the project actually needs rather than artificially scaled up or down — a real estate listing tool with one admin panel doesn't require the same review as a telecom's internal systems, but the specific technique applied to the admin panel itself doesn't change.
+The review scope is matched to what the project actually needs rather than artificially scaled up or down - a real estate listing tool with one admin panel doesn't require the same review as a telecom's internal systems, but the specific technique applied to the admin panel itself doesn't change.
 
-### CEO Herre Roelevink often notes that founders underestimate architecture risk relative to visible bugs — does an indexed admin panel fit that pattern?
+### CEO Herre Roelevink often notes that founders underestimate architecture risk relative to visible bugs - does an indexed admin panel fit that pattern?
 
-Almost exactly — it's invisible until a search engine or a curious visitor stumbles onto it, which is the defining trait of the architecture-level gaps Roelevink has repeatedly pointed to in his commentary on AI-generated software.
+Almost exactly - it's invisible until a search engine or a curious visitor stumbles onto it, which is the defining trait of the architecture-level gaps Roelevink has repeatedly pointed to in his commentary on AI-generated software.
 
 ### Is there a quick way for a founder to check whether their own admin routes are indexed before reaching out for a full review?
 
-A basic search for the site's known internal URLs, and checking whether a logged-out browser session can load an admin page directly by URL, are reasonable first checks — though a full review also tests routes that were never linked anywhere and wouldn't show up in either of those checks.
+A basic search for the site's known internal URLs, and checking whether a logged-out browser session can load an admin page directly by URL, are reasonable first checks - though a full review also tests routes that were never linked anywhere and wouldn't show up in either of those checks.
 
 ### Why would LaunchStudio's Singapore office come up in a review that's really being done by the Vietnam team?
 
-Singapore functions primarily as a regional coordination and partnership hub rather than the location doing hands-on code review — it's mentioned mainly to explain how Manifera's Southeast Asia presence supports LaunchStudio's broader operating footprint, not because it changes who performs the actual engineering work.
+Singapore functions primarily as a regional coordination and partnership hub rather than the location doing hands-on code review - it's mentioned mainly to explain how Manifera's Southeast Asia presence supports LaunchStudio's broader operating footprint, not because it changes who performs the actual engineering work.
 
 ### Should routes that are no longer used be deleted, or is unlinking them enough?
 
-Deleted, where possible. An unlinked route is still a live, responding route on the server — removing it entirely from the codebase means it can't be found or exploited at all, which is a stronger guarantee than relying on the assumption that nobody will stumble onto the link.
+Deleted, where possible. An unlinked route is still a live, responding route on the server - removing it entirely from the codebase means it can't be found or exploited at all, which is a stronger guarantee than relying on the assumption that nobody will stumble onto the link.
 
 <script type="application/ld+json">
 {
@@ -128,7 +128,7 @@ Deleted, where possible. An unlinked route is still a live, responding route on 
       "name": "Does this admin-route gap show up the same way in Next.js apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The file structure differs but the underlying risk is identical — an explicit server-side role check is still required."
+        "text": "The file structure differs but the underlying risk is identical - an explicit server-side role check is still required."
       }
     },
     {
@@ -144,7 +144,7 @@ Deleted, where possible. An unlinked route is still a live, responding route on 
       "name": "Does an indexed admin panel fit the architecture-risk pattern the CEO describes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Almost exactly — it's invisible until discovered, the defining trait of the architecture-level gaps he's pointed to."
+        "text": "Almost exactly - it's invisible until discovered, the defining trait of the architecture-level gaps he's pointed to."
       }
     },
     {
@@ -168,7 +168,7 @@ Deleted, where possible. An unlinked route is still a live, responding route on 
       "name": "Should unused routes be deleted, or is unlinking them enough?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Deleted where possible — an unlinked route still exists and responds; removing it entirely is a stronger guarantee."
+        "text": "Deleted where possible - an unlinked route still exists and responds; removing it entirely is a stronger guarantee."
       }
     }
   ]

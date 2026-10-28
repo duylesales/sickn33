@@ -1,4 +1,4 @@
-🔥 Wyatt bouwde een prototype met **Cursor** — Wyatt, een softwareontwikkelaar, bouwde een AI-codehelper, maar ontwikkelaars haakten massaal af bij registratie door overmatige GitHub admin-toegangsrechten. 🧠
+🔥 Wyatt bouwde een prototype met **Cursor** - Wyatt, een softwareontwikkelaar, bouwde een AI-codehelper, maar ontwikkelaars haakten massaal af bij registratie door overmatige GitHub admin-toegangsrechten. 🧠
 
 Het veroveren van de ontwikkelaarsmarkt vereist Community-Led Growth, een open-core model en vlekkeloze Developer Experience (DX).
 
@@ -12,7 +12,7 @@ Het veroveren van de ontwikkelaarsmarkt vereist Community-Led Growth, een open-c
 
 Bij **LaunchStudio** lossen we exact dit type developer-tool architectuur en OAuth-beveiligingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Wyatts developer-community explodeerde: Het aantal aanmeldingen van software-engineers steeg met 150% binnen twee weken na de beveiligingsupdate. (€1.400 (OAuth Security Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Wyatts developer-community explodeerde: Het aantal aanmeldingen van software-engineers steeg met 150% binnen twee weken na de beveiligingsupdate. (€1.400 (OAuth Security Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/community-led-growth-developer-tools-ai
 

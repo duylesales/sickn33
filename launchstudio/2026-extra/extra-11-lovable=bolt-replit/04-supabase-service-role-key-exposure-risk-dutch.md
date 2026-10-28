@@ -30,7 +30,7 @@ Dit artikel gaat over die ene sleutel: wat hij doet, de drie alledaagse routes w
 
 Een Supabase-project geeft meerdere API-sleutels uit, en het onderscheid hiertussen vormt de kern van het hele vraagstuk.
 
-**De publieke sleutel (anon key)** — degene die uw frontend hoort te gebruiken — identificeert simpelweg uw project. Deze draagt uit zichzelf geen enkele bevoegdheid. Elk verzoek dat ermee wordt gedaan, wordt geëvalueerd tegen uw Row Level Security (RLS) beleidsregels. Daarom zijn die policies zo cruciaal. Als uw policies kloppen, is deze sleutel volkomen veilig in een browser. Hij is ervoor ontworpen om daar te zijn.
+**De publieke sleutel (anon key)** - degene die uw frontend hoort te gebruiken - identificeert simpelweg uw project. Deze draagt uit zichzelf geen enkele bevoegdheid. Elk verzoek dat ermee wordt gedaan, wordt geëvalueerd tegen uw Row Level Security (RLS) beleidsregels. Daarom zijn die policies zo cruciaal. Als uw policies kloppen, is deze sleutel volkomen veilig in een browser. Hij is ervoor ontworpen om daar te zijn.
 
 **De service role key** is exact het tegenovergestelde. Hij is uitsluitend ontworpen voor vertrouwde server-side code en **omzeilt Row Level Security volledig**. Elke regel die u heeft opgesteld over wie wat mag inzien, is domweg niet van toepassing op verzoeken die met deze sleutel binnenkomen. Hij kan elke rij in elke tabel lezen, willekeurige data wijzigen en complete tabellen wissen.
 
@@ -44,7 +44,7 @@ Niemand besluit bewust om een beheerderssleutel op straat te gooien. Hij arrivee
 
 **Route 2: de AI lost het symptoom op.** Vraag een AI-codingassistent om een row-level-security fout op te lossen en hij produceert vaak direct werkende code. Maar "werkend" is niet synoniem met "veilig". Tools zoals Lovable, Bolt en Cursor zijn geoptimaliseerd om uw app draaiende te krijgen, en een client-side aanroep met een bevoorrechte sleutel draait vlekkeloos. De tool kan niet afwegen dat "dit functioneert" botst met "dit stelt de database open voor de wereld", want alleen het eerste is zichtbaar in de uitvoer.
 
-**Route 3: verwarring rond omgevingsvariabelen.** Frontend build-systemen stellen sommige omgevingsvariabelen bewust bloot aan de browser — dat is immers hoe uw publieke sleutel daar terechtkomt — gewoonlijk herkenbaar aan een specifiek voorvoegsel (zoals `VITE_` of `NEXT_PUBLIC_`). Plaatst u een geheim in een variabele met dat prefix, dan wordt deze meegecompileerd in de JavaScript-bundel die iedere bezoeker downloadt. De variabele *lijkt* op een servergeheim in een lokaal `.env`-bestand. Dat is hij niet. Hij ligt open op het internet.
+**Route 3: verwarring rond omgevingsvariabelen.** Frontend build-systemen stellen sommige omgevingsvariabelen bewust bloot aan de browser - dat is immers hoe uw publieke sleutel daar terechtkomt - gewoonlijk herkenbaar aan een specifiek voorvoegsel (zoals `VITE_` of `NEXT_PUBLIC_`). Plaatst u een geheim in een variabele met dat prefix, dan wordt deze meegecompileerd in de JavaScript-bundel die iedere bezoeker downloadt. De variabele *lijkt* op een servergeheim in een lokaal `.env`-bestand. Dat is hij niet. Hij ligt open op het internet.
 
 ## Wat Een Kwaadwillende Daadwerkelijk Kan Doen
 
@@ -54,7 +54,7 @@ Iedere willekeurige bezoeker kan de ontwikkelaarstools van de browser openen en 
 
 Er is geen inlog vereist, geen ingewikkelde exploit en geen geavanceerde hacktechniek. De inloggegevens zijn immers kant-en-klaar met de webpagina meegeleverd.
 
-Twee verzwarende omstandigheden zijn essentieel om te beseffen. Ten eerste: als de sleutel ooit in een openbare GitHub-repository is gecommit, kan deze zijn geïndexeerd en vindbaar blijven, zelfs na verwijdering — het schrappen uit de huidige code haalt oude kopieën niet terug. Ten tweede: handelingen verricht met een service role key zijn in de meeste logs niet te onderscheiden van legitieme serveractiviteit, wat betekent dat u onmogelijk met zekerheid kunt vaststellen welke data wanneer is ingezien. Dat weegt zwaar onder de AVG (GDPR), waarbij een datalek van persoonsgegevens binnen 72 uur na ontdekking moet worden gemeld bij de Autoriteit Persoonsgegevens — en "wij kunnen niet achterhalen welke gegevens zijn buitgemaakt" is een buitengewoon pijnlijke constatering in zo'n melding.
+Twee verzwarende omstandigheden zijn essentieel om te beseffen. Ten eerste: als de sleutel ooit in een openbare GitHub-repository is gecommit, kan deze zijn geïndexeerd en vindbaar blijven, zelfs na verwijdering - het schrappen uit de huidige code haalt oude kopieën niet terug. Ten tweede: handelingen verricht met een service role key zijn in de meeste logs niet te onderscheiden van legitieme serveractiviteit, wat betekent dat u onmogelijk met zekerheid kunt vaststellen welke data wanneer is ingezien. Dat weegt zwaar onder de AVG (GDPR), waarbij een datalek van persoonsgegevens binnen 72 uur na ontdekking moet worden gemeld bij de Autoriteit Persoonsgegevens - en "wij kunnen niet achterhalen welke gegevens zijn buitgemaakt" is een buitengewoon pijnlijke constatering in zo'n melding.
 
 ## Controleer Uw Eigen App Binnen Tien Minuten
 
@@ -72,7 +72,7 @@ Vindt u een gelekte sleutel? Roteer (vernieuw) deze dan ogenblikkelijk in het Su
 
 ## Hoe De Juiste Architectuur Er Uitziet
 
-Bewerkingen die oprecht verhoogde beheerdersrechten vereisen — het versturen van een betaalbewijs, het genereren van een financieel managementrapport, het verwerken van een webhook of het aggregeren van data over gebruikers heen — zijn volkomen legitiem. Ze horen alleen thuis op een plek waar de bezoeker ze niet kan zien.
+Bewerkingen die oprecht verhoogde beheerdersrechten vereisen - het versturen van een betaalbewijs, het genereren van een financieel managementrapport, het verwerken van een webhook of het aggregeren van data over gebruikers heen - zijn volkomen legitiem. Ze horen alleen thuis op een plek waar de bezoeker ze niet kan zien.
 
 **Server-side functies.** Supabase Edge Functions, of een API-route in een eigen backend, bewaren de service role key als een zuiver servergeheim. Uw frontend roept de functie aan met de reguliere sessie van de ingelogde gebruiker; de serverfunctie controleert wie de gebruiker is en welke rechten deze bezit, en voert pas daarna de bevoorrechte actie uit.
 
@@ -86,9 +86,9 @@ Bewerkingen die oprecht verhoogde beheerdersrechten vereisen — het versturen v
 
 Gelekte API-sleutels zijn de meest voorkomende individuele bevinding wanneer een door AI gebouwde applicatie ter inspectie binnenkomt. De oorzaak is structureel en niet per se onzorgvuldigheid. AI-codingassistenten zijn ongeëvenaard in het produceren van code die direct werkt, maar hebben geen enkel concept van een kwaadwillende actor. Ze vragen zich niet af wie dit nog meer kan inzien, wat er gebeurt als iemand een ID in het verzoek wijzigt, of aan welke kant van het netwerk een sleutel thuishoort.
 
-Dat is de kloof waar LaunchStudio voor is opgericht: de frontend die u met AI heeft ontworpen behouden, en een ondoordringbare backend eronder plaatsen. Concreet betekent dit voor dit type probleem: elke sleutel in de codebase en git-historie auditen, gecompromitteerde sleutels roteren, bevoorrechte acties migreren naar server-side functies, de RLS-policies formuleren die de beheerderssleutel overbodig maken, en het geheel valideren door als ingelogde gebruiker actief te proberen andermans data te kapen — het werk binnen het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), uitgevoerd door engineers van Manifera die al elf jaar productiesystemen beveiligen.
+Dat is de kloof waar LaunchStudio voor is opgericht: de frontend die u met AI heeft ontworpen behouden, en een ondoordringbare backend eronder plaatsen. Concreet betekent dit voor dit type probleem: elke sleutel in de codebase en git-historie auditen, gecompromitteerde sleutels roteren, bevoorrechte acties migreren naar server-side functies, de RLS-policies formuleren die de beheerderssleutel overbodig maken, en het geheel valideren door als ingelogde gebruiker actief te proberen andermans data te kapen - het werk binnen het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), uitgevoerd door engineers van Manifera die al elf jaar productiesystemen beveiligen.
 
-Heeft u iets verontrustends ontdekt tijdens de tien-minuten-controle? [Spreek met een engineer die AI-gegenereerde code door en door begrijpt](https://launchstudio.eu/nl/#contact) — wij reageren binnen één werkdag, en het vandaag roteren van een sleutel is oneindig veel goedkoper dan een verplichte datalekmelding volgende maand.
+Heeft u iets verontrustends ontdekt tijdens de tien-minuten-controle? [Spreek met een engineer die AI-gegenereerde code door en door begrijpt](https://launchstudio.eu/nl/#contact) - wij reageren binnen één werkdag, en het vandaag roteren van een sleutel is oneindig veel goedkoper dan een verplichte datalekmelding volgende maand.
 
 ## Sleutels Roteren Zonder Dat Uw Applicatie Uitvalt
 
@@ -98,11 +98,11 @@ Oprichters stellen het roteren van sleutels vaak uit uit angst het live product 
 
 **Herstel de architectuur vóórdat u de sleutel roteert.** Is een client-side aanroep afhankelijk van de bevoorrechte sleutel? Bouw die aanroep dan eerst om naar een server-side Edge Function die de gebruikerssessie valideert. Deploy dit en bevestig dat de app via het nieuwe pad naar behoren functioneert terwijl de oude sleutel nog geldig is.
 
-**Roteer vervolgens de sleutel in Supabase en werk de legitieme serverlocaties bij** — uw function secrets en de geheimenopslag van uw hostingomgeving — binnen hetzelfde onderhoudsvenster.
+**Roteer vervolgens de sleutel in Supabase en werk de legitieme serverlocaties bij** - uw function secrets en de geheimenopslag van uw hostingomgeving - binnen hetzelfde onderhoudsvenster.
 
 **Verifieer door bewust te testen op falen.** Laad uw website, open ontwikkelaarstools en doorzoek de bundel opnieuw. Bevestig dat de oude sleutel definitief niet meer werkt door er buiten de app om een testverzoek mee te doen.
 
-**Voorkom tot slot herhaling.** Richt een build-controle in die de client-bundel scant op bevoorrechte tokens. Dit transformeert beveiliging van een vrome wens naar een harde geautomatiseerde barrière in uw deployment-pipeline — onmisbaar, want de oorspronkelijke fout ontstaat altijd onder tijdsdruk aan het einde van een lange werkdag.
+**Voorkom tot slot herhaling.** Richt een build-controle in die de client-bundel scant op bevoorrechte tokens. Dit transformeert beveiliging van een vrome wens naar een harde geautomatiseerde barrière in uw deployment-pipeline - onmisbaar, want de oorspronkelijke fout ontstaat altijd onder tijdsdruk aan het einde van een lange werkdag.
 
 ## Echt voorbeeld
 
@@ -110,18 +110,18 @@ Oprichters stellen het roteren van sleutels vaak uit uit angst het live product 
 
 Thomas de Wit bouwde Factuurly, een gestroomlijnde facturatietool voor Nederlandse zzp'ers, grotendeels met behulp van Cursor en een Supabase-backend. Het platform telde circa 180 betalende gebruikers toen hij om een audit verzocht, voornamelijk omdat hij advies wilde inwinnen over databaseprestaties.
 
-De prestaties waren uitstekend. Wat de audit echter aan het licht bracht, was dat één client-side module de service role key gebruikte om factuurtotalen op te halen voor een dashboard-widget — maanden eerder haastig toegevoegd om een permissiefout op te lossen en daarna nooit meer herzien. Elk van die 180 betalende zzp'ers had bij het openen van het dashboard een sleutel ontvangen die volledige lees- en schrijfrechten gaf tot een database vol klantnamen, woonadressen en openstaande factuurbedragen van álle andere gebruikers. De sleutel was bovendien vindbaar in de commit-geschiedenis van de repository, die kortstondig openbaar had gestaan.
+De prestaties waren uitstekend. Wat de audit echter aan het licht bracht, was dat één client-side module de service role key gebruikte om factuurtotalen op te halen voor een dashboard-widget - maanden eerder haastig toegevoegd om een permissiefout op te lossen en daarna nooit meer herzien. Elk van die 180 betalende zzp'ers had bij het openen van het dashboard een sleutel ontvangen die volledige lees- en schrijfrechten gaf tot een database vol klantnamen, woonadressen en openstaande factuurbedragen van álle andere gebruikers. De sleutel was bovendien vindbaar in de commit-geschiedenis van de repository, die kortstondig openbaar had gestaan.
 
 Het hersteltraject nam vijf werkdagen in beslag: de sleutel werd direct geroteerd, het dashboard-widget werd herbouwd als een Edge Function die de sessie van de aanvrager valideert alvorens uitsluitend diens eigen totalen te berekenen, Row Level Security policies werden opgesteld en beproefd over alle factuurtabellen, de git-historie werd opgeschoond, geheimen werden ondergebracht in managed storage, en er werd een geautomatiseerde CI-check toegevoegd die de build direct afbreekt zodra er een `service_role` token in een client-bundel opduikt.
 
-Omdat de serverlogs legitieme serveraanroepen niet konden onderscheiden van mogelijk misbruik, liet Thomas zich juridisch adviseren over zijn meldplicht onder de AVG in plaats van zelf aannames te doen — de juiste volgorde van handelen, en de reden waarom engineering slechts de helft van het verhaal vormt.
+Omdat de serverlogs legitieme serveraanroepen niet konden onderscheiden van mogelijk misbruik, liet Thomas zich juridisch adviseren over zijn meldplicht onder de AVG in plaats van zelf aannames te doen - de juiste volgorde van handelen, en de reden waarom engineering slechts de helft van het verhaal vormt.
 
 **Resultaat:** Er werden geen aanwijzingen voor misbruik aangetroffen, het lek werd binnen een week definitief gedicht, en de CI-controle heeft sindsdien al één nieuwe poging van een AI-tool om een bevoorrechte sleutel in te voegen tijdens een feature-sprint automatisch onderschept.
 
 > *"Het waren drie regels code die ik om middernacht typte om een rode foutmelding weg te krijgen. Ze stonden zeven maanden lang in productie, en deelden volledige beheerdersrechten uit aan iedereen die mijn dashboard opende."*
-> — **Thomas de Wit, Oprichter, Factuurly (Utrecht)**
+> - **Thomas de Wit, Oprichter, Factuurly (Utrecht)**
 
-**Kosten & Doorlooptijd:** €1.900 (beveiligingssanering: sleutelrotatie, herbouw Edge Function, opstellen policies en CI-check) — voltooid in 5 werkdagen.
+**Kosten & Doorlooptijd:** €1.900 (beveiligingssanering: sleutelrotatie, herbouw Edge Function, opstellen policies en CI-check) - voltooid in 5 werkdagen.
 
 ---
 
@@ -129,7 +129,7 @@ Omdat de serverlogs legitieme serveraanroepen niet konden onderscheiden van moge
 
 ### Hoe houd ik de twee Supabase-sleutels uit elkaar?
 
-Decodeer het token — beide zijn JSON Web Tokens met een `role`-claim in de payload. De rol `anon` is de publieke sleutel en hoort thuis in uw frontend; de rol `service_role` omzeilt alle Row Level Security en mag uitsluitend in beveiligde server-side omgevingen voorkomen.
+Decodeer het token - beide zijn JSON Web Tokens met een `role`-claim in de payload. De rol `anon` is de publieke sleutel en hoort thuis in uw frontend; de rol `service_role` omzeilt alle Row Level Security en mag uitsluitend in beveiligde server-side omgevingen voorkomen.
 
 ### Ik heb de sleutel geroteerd in het dashboard. Ben ik nu klaar?
 

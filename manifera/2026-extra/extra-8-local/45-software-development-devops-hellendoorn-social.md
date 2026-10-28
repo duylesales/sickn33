@@ -1,4 +1,4 @@
-🐛 The bug reproduces every time in production. It never once shows up in staging. That's not bad luck — it's environment drift. 🔍
+🐛 The bug reproduces every time in production. It never once shows up in staging. That's not bad luck - it's environment drift. 🔍
 
 **The Pain Points:**
 ❌ **Silent Configuration Divergence:** Manual changes to one environment, forgotten on the other.

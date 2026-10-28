@@ -1,4 +1,4 @@
-🔥 Connor built a prototype using **Bolt** — connor, a legal tech founder, used **bolt** to build a contract checker, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Connor built a prototype using **Bolt** - connor, a legal tech founder, used **bolt** to build a contract checker, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Connor's application achieved silky-smooth performance: Tax calculations and invoices are now 100% compliant globally, eliminating legal risks. (€1,400 (Stripe Tax Integration) — production-ready and deployed in 3 business days.). 🚀
+Connor's application achieved silky-smooth performance: Tax calculations and invoices are now 100% compliant globally, eliminating legal risks. (€1,400 (Stripe Tax Integration) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/implementing-stripe-tax-global-saas
 

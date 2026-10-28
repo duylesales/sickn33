@@ -1,4 +1,4 @@
-💰 Kwame paid €7,200 into a monthly retainer — and still had no secure payment flow after three months. 🧠
+💰 Kwame paid €7,200 into a monthly retainer - and still had no secure payment flow after three months. 🧠
 
 If your development pricing model rewards time spent instead of outcomes delivered, "ongoing progress" can quietly mean the hardest, most important work keeps getting deprioritized.
 
@@ -8,7 +8,7 @@ If your development pricing model rewards time spent instead of outcomes deliver
 
 ✅ Fixed-price, project-based engagements with a clear scope and a real "done"
 ✅ Incentives aligned toward efficient delivery, since the price doesn't move if it takes longer
-✅ A natural stopping point — spending ends automatically once the defined scope ships
+✅ A natural stopping point - spending ends automatically once the defined scope ships
 
 At **LaunchStudio**, we've been delivering fixed-price, outcome-defined engagements since 2014 through Manifera, across 160+ delivered projects. 🛡️
 

@@ -11,13 +11,13 @@ Two years ago, access to a highly capable Large Language Model was a rare, expen
 
 The tech giants are engaged in a brutal race to the bottom to capture developer market share. Models that were considered state-of-the-art 12 months ago have been replaced by "mini" and "flash" tier models (like `gpt-4o-mini`, `claude-3-5-haiku`, or `gemini-flash`) that are faster, equally intelligent for most business tasks, and **90% cheaper** per million tokens.
 
-For an AI startup, this is a financial miracle. If you charge your B2B clients a flat $100/month subscription, and your underlying API costs drop by 90% overnight, your gross margins expand massively without you needing to acquire a single new customer. The cost of goods sold (COGS) in AI software is mathematically destined to decrease over time, which is the opposite of the trend early AI startups feared. This is also precisely why VCs now scrutinize AI unit economics so closely — a startup whose margins depend on today's token price, rather than an architecture that benefits from tomorrow's cheaper one, is structurally exposed.
+For an AI startup, this is a financial miracle. If you charge your B2B clients a flat $100/month subscription, and your underlying API costs drop by 90% overnight, your gross margins expand massively without you needing to acquire a single new customer. The cost of goods sold (COGS) in AI software is mathematically destined to decrease over time, which is the opposite of the trend early AI startups feared. This is also precisely why VCs now scrutinize AI unit economics so closely - a startup whose margins depend on today's token price, rather than an architecture that benefits from tomorrow's cheaper one, is structurally exposed.
 
 ## The Open-Source Threat to Proprietary Models
 
 The commoditization is being accelerated by the Open-Source community. Models like Meta's Llama and Mistral's open-weight releases are freely available for anyone to download and run. They frequently match or exceed the performance of closed, paid models on standard benchmarks for well-defined business tasks like classification, extraction, and summarization.
 
-This breaks the vendor lock-in. If OpenAI suddenly raises API prices, a startup is no longer trapped. They can simply rent a GPU on AWS, RunPod, or a European provider, spin up a Llama or Mistral model, and host their own intelligence locally. This constant threat of open-source defection forces proprietary APIs to keep their prices aggressively low — it is a structural check on pricing power that didn't exist in the GPT-3.5 era.
+This breaks the vendor lock-in. If OpenAI suddenly raises API prices, a startup is no longer trapped. They can simply rent a GPU on AWS, RunPod, or a European provider, spin up a Llama or Mistral model, and host their own intelligence locally. This constant threat of open-source defection forces proprietary APIs to keep their prices aggressively low - it is a structural check on pricing power that didn't exist in the GPT-3.5 era.
 
 Self-hosting also unlocks a second class of buyer that pure API vendors structurally cannot serve: regulated European customers who need data residency guarantees. A German healthcare client or a Dutch financial services firm often cannot legally send patient or client data to a US-based API endpoint, no matter how good the model is. A startup with a model-agnostic architecture can offer that client a self-hosted open-weight model running entirely inside an EU data center, satisfying GDPR data residency requirements in a way that a hardcoded OpenAI integration never could. That flexibility, not just cost, is why open-weight models matter strategically even for teams that use proprietary APIs for 95% of their traffic.
 
@@ -31,7 +31,7 @@ You must build a **Model-Agnostic** backend using an abstraction layer (like Lit
 
 Model selection is only half of the cost equation. The other half is not calling the model at all when you don't need to, and this is where semantic caching becomes the highest-leverage optimization most early-stage teams never implement. A naive cache only matches identical strings, which is nearly useless for natural language, since two users rarely phrase the same question the same way. A semantic cache instead embeds every incoming query into a vector, checks it against a store of previously embedded queries using cosine similarity, and if a sufficiently close match exists (say, above a 0.95 similarity threshold), it returns the previously computed response instead of paying for a new completion.
 
-For a support-ticket triage tool, a document-summarization feature, or any workload where users ask semantically similar questions repeatedly, a well-tuned semantic cache can eliminate 30-40% of LLM calls entirely, with zero perceptible quality loss to the end user. Combined with prompt compression — stripping redundant boilerplate from system prompts and truncating retrieved context to only the most relevant chunks — this is how mature AI products keep their gross margins expanding even as usage scales, rather than watching token costs grow linearly with every new customer.
+For a support-ticket triage tool, a document-summarization feature, or any workload where users ask semantically similar questions repeatedly, a well-tuned semantic cache can eliminate 30-40% of LLM calls entirely, with zero perceptible quality loss to the end user. Combined with prompt compression - stripping redundant boilerplate from system prompts and truncating retrieved context to only the most relevant chunks - this is how mature AI products keep their gross margins expanding even as usage scales, rather than watching token costs grow linearly with every new customer.
 
 ## The Infrastructure Precedent: When Compute Became Cheap
 
@@ -43,9 +43,9 @@ The LLM layer is following an almost identical trajectory. Model access used to 
 
 If the foundational model is a cheap commodity, where does the value of an AI startup reside? It resides in the layer above the model: **The Context**.
 
-The value is in your proprietary RAG database, your deep integrations into legacy enterprise software, your incredibly robust UI/UX, and your highly optimized system prompts. You do not sell the intelligence; you sell the specific, frictionless workflow that the intelligence powers. Let the trillion-dollar companies fight over the foundational layer, while you harvest the profits at the application layer. This is the same lesson that plays out across nearly every wave of infrastructure commoditization in software history — the compute layer gets cheap, and the value migrates to whoever owns the workflow and the data around it.
+The value is in your proprietary RAG database, your deep integrations into legacy enterprise software, your incredibly robust UI/UX, and your highly optimized system prompts. You do not sell the intelligence; you sell the specific, frictionless workflow that the intelligence powers. Let the trillion-dollar companies fight over the foundational layer, while you harvest the profits at the application layer. This is the same lesson that plays out across nearly every wave of infrastructure commoditization in software history - the compute layer gets cheap, and the value migrates to whoever owns the workflow and the data around it.
 
-Herre Roelevink, Founder & Managing Director of Manifera, connects this directly to how production architecture should be built: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A model-agnostic layer isn't just a cost optimization — it's the kind of maturity that keeps a product stable while the underlying model landscape keeps shifting under it.
+Herre Roelevink, Founder & Managing Director of Manifera, connects this directly to how production architecture should be built: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A model-agnostic layer isn't just a cost optimization - it's the kind of maturity that keeps a product stable while the underlying model landscape keeps shifting under it.
 
 ## Key Takeaways
 
@@ -75,7 +75,7 @@ She reached out to **LaunchStudio (by Manifera)**. The team refactored the app t
 
 **Result:** Swapping AI models now takes minutes of config, eliminating vendor API lock-in.
 
-**Cost & Timeline:** €1,500 (API Adapter Integration) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,500 (API Adapter Integration) - production-ready and deployed in 4 business days.
 
 ---
 

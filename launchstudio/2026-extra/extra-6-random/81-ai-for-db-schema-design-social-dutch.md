@@ -1,4 +1,4 @@
-🗄️ Kasper Bodegraven bouwde "SchemaGrip," een ledenfacturatietool voor lokale verenigingen, met de AI-ondersteunde databaseontwerper van Bolt. Hij accepteerde het voorgestelde schema zonder het regel voor regel te controleren — het zag er goed uit, de tabellen waren logisch, elke test slaagde. 😬
+🗄️ Kasper Bodegraven bouwde "SchemaGrip," een ledenfacturatietool voor lokale verenigingen, met de AI-ondersteunde databaseontwerper van Bolt. Hij accepteerde het voorgestelde schema zonder het regel voor regel te controleren - het zag er goed uit, de tabellen waren logisch, elke test slaagde. 😬
 
 Eén ontbrekende regel SQL kostte een klant een dubbele afschrijving.
 

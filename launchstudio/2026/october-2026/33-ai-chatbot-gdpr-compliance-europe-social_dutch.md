@@ -1,4 +1,4 @@
-🔥 Sarah bouwde een prototype via **AI builders** — als oprichter van een HR-tech scale-up in Berlijn bouwde ze een chatbot voor kandidaat-screening, maar een Duitse autofabrikant legde de pilot stil wegens zware AVG-gevaren. 🧠
+🔥 Sarah bouwde een prototype via **AI builders** - als oprichter van een HR-tech scale-up in Berlijn bouwde ze een chatbot voor kandidaat-screening, maar een Duitse autofabrikant legde de pilot stil wegens zware AVG-gevaren. 🧠
 
 Als uw AI-chatbot persoonsgegevens rechtstreeks doorstuurt naar Amerikaanse consumenten-API's zonder PII-masking of DPA, veroorzaakt live verkeer direct AVG-boetes en afgewezen zakelijke deals.
 
@@ -12,7 +12,7 @@ Als uw AI-chatbot persoonsgegevens rechtstreeks doorstuurt naar Amerikaanse cons
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Sarah slaagde glansrijk voor de Duitse compliance-audit en sloot direct de enterprise-deal van €10.000 MRR. (€5.000 (Enterprise Compliance & Middleware) — binnen 15 werkdagen live). 🚀
+Sarah slaagde glansrijk voor de Duitse compliance-audit en sloot direct de enterprise-deal van €10.000 MRR. (€5.000 (Enterprise Compliance & Middleware) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-chatbot-gdpr-compliance-europe
 

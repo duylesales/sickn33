@@ -55,7 +55,7 @@ Basis-invoervalidatie en spambescherming op het registratieformulier, het opslaa
 
 [LaunchStudio](https://launchstudio.eu/nl/) past een afgebakende, gepast minimale maar echte standaard van zorgvuldigheid toe op wachtlijsttools voor de lancering. Wij erkennen dat echte persoonlijke gegevens echte, hoewel evenredige, bescherming rechtvaardigen, ongeacht hoe vroeg in de ontwikkeling het omringende product momenteel is. Dit wordt ondersteund door Manifera's bredere toewijding om elke verzameling van echte persoonlijke gegevens met oprechte ernst te behandelen.
 
-[Laat uw wachtlijst beoordelen met de minimale, gepaste zorg die echte gegevens verdienen](https://launchstudio.eu/nl/#contact) — voor-de-lancering betekent niet voor-de-consequentie voor de mensen die zich aanmelden.
+[Laat uw wachtlijst beoordelen met de minimale, gepaste zorg die echte gegevens verdienen](https://launchstudio.eu/nl/#contact) - voor-de-lancering betekent niet voor-de-consequentie voor de mensen die zich aanmelden.
 
 ## Wat er gebeurt met wachtlijstgegevens zodra het product daadwerkelijk lanceert
 
@@ -82,9 +82,9 @@ Binnen enkele weken was het wachtlijstformulier van Lucas ontdekt door geautomat
 **Resultaat:** LaunchStudio implementeerde basis-botbescherming en invoervalidatie op het wachtlijstformulier, en hielp Lucas bij het opschonen van de bestaande database van echte versus nep-inzendingen. Hiermee werd de wachtlijst hersteld naar iets dat daadwerkelijk bruikbaar was voor het bedoelde doel, in plaats van de door spam vervuilde troep die nonchalante, onbeschermde formulierbouw had opgeleverd.
 
 > *"Ik dacht oprecht dat een wachtlijstformulier ongeveer net zo weinig belangen had als alles wat ik ooit zou bouwen, dus ik heb er geen echte gedachte in gestoken om het te beschermen. Het kostte een paar weken van geautomatiseerde spam-troep die mijn zogenaamd eenvoudige lijst overspoelde om te realiseren dat 'lage belangen' en 'helemaal geen bescherming nodig' daadwerkelijk niet dezelfde claim waren."*
-> — **Lucas Vermeer, Oprichter, VoorraadSlim (Groningen)**
+> - **Lucas Vermeer, Oprichter, VoorraadSlim (Groningen)**
 
-**Kosten en tijdlijn:** € 400 (verharding van wachtlijstformulier en opschoning van gegevens) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 400 (verharding van wachtlijstformulier en opschoning van gegevens) - voltooid in 2 werkdagen.
 
 ---
 

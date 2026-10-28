@@ -21,11 +21,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-January is peak season for personal trainers and coaches: new clients, new programmes, new resolutions. Many coaches now give clients their own app, built with Bolt or Lovable — training schedules, check-ins, nutrition logs, progress photos, session bookings and package payments. It is a strong way to stand out. Taking that AI app to production, though, means handling health information and body photos, money for prepaid packages and a calendar that clients expect to be exact. These are the decisions to make before the January rush.
+January is peak season for personal trainers and coaches: new clients, new programmes, new resolutions. Many coaches now give clients their own app, built with Bolt or Lovable - training schedules, check-ins, nutrition logs, progress photos, session bookings and package payments. It is a strong way to stand out. Taking that AI app to production, though, means handling health information and body photos, money for prepaid packages and a calendar that clients expect to be exact. These are the decisions to make before the January rush.
 
 ## Decision 1: What Does the Intake Questionnaire Collect?
 
-Coaching intake forms often ask about injuries, medical conditions, medication, pregnancy, mental health and eating habits. That is health data — special category data under GDPR, requiring explicit consent and stronger protection. It sits in the same database as names and email addresses in most AI-built apps, with the same access for everyone.
+Coaching intake forms often ask about injuries, medical conditions, medication, pregnancy, mental health and eating habits. That is health data - special category data under GDPR, requiring explicit consent and stronger protection. It sits in the same database as names and email addresses in most AI-built apps, with the same access for everyone.
 
 **The decision:** ask only what you need for safe coaching, obtain explicit consent with a clear purpose, store health answers separately with restricted and logged access, and set a retention period.
 
@@ -53,7 +53,7 @@ Many coaching apps add AI-generated programmes or meal plans. Decide what data g
 
 ## Decision 7: When Does Wellness Become a Medical Device?
 
-Apps that give diagnostic or treatment advice can fall under medical device rules. Coaching and general fitness guidance usually do not — but features that assess conditions or recommend treatment should be reviewed carefully before launch.
+Apps that give diagnostic or treatment advice can fall under medical device rules. Coaching and general fitness guidance usually do not - but features that assess conditions or recommend treatment should be reviewed carefully before launch.
 
 ## Structuring Health Data Separately
 
@@ -69,7 +69,7 @@ Taking a coaching AI app to production starts with separating what is sensitive 
 | Workout logs | Personal, sometimes health-related | Programme tables; coach access |
 | Payment records | Financial | Billing tables; admin access |
 
-Separation makes it possible to apply stricter rules — access logging, shorter retention, exclusion from AI features — only where they are needed, without complicating the whole app.
+Separation makes it possible to apply stricter rules - access logging, shorter retention, exclusion from AI features - only where they are needed, without complicating the whole app.
 
 ## Explicit Consent for Health Information
 
@@ -102,7 +102,7 @@ AI-generated training plans and meal suggestions are popular, but they touch hea
 
 ## Wearables and Integrations
 
-Clients may want to connect fitness trackers or health platforms. Each integration brings detailed health-related data. Request only the data types needed, explain what is imported, let clients disconnect easily with data deletion, and store tokens securely. Consider whether imported data changes your app's risk profile — heart rate and sleep data are closer to medical information than workout counts.
+Clients may want to connect fitness trackers or health platforms. Each integration brings detailed health-related data. Request only the data types needed, explain what is imported, let clients disconnect easily with data deletion, and store tokens securely. Consider whether imported data changes your app's risk profile - heart rate and sleep data are closer to medical information than workout counts.
 
 ## Communication Between Coach and Client
 
@@ -110,7 +110,7 @@ Messages often contain health details ("my knee hurts again"). Keep messaging wi
 
 ## Retention and Leaving Clients
 
-Coaching relationships end: clients move, change goals or pause. Define retention per data type — for example health answers and progress photos deleted a set period after the last session unless the client asks to keep them, workout history kept longer if the client wants to return, payment records kept as long as tax law requires. Offer clients an export of their progress before deletion; many value their history. Automate retention so it applies consistently across coaches.
+Coaching relationships end: clients move, change goals or pause. Define retention per data type - for example health answers and progress photos deleted a set period after the last session unless the client asks to keep them, workout history kept longer if the client wants to return, payment records kept as long as tax law requires. Offer clients an export of their progress before deletion; many value their history. Automate retention so it applies consistently across coaches.
 
 ## Security Measures Proportionate to the Data
 
@@ -126,11 +126,11 @@ Typical issues include: intake answers stored with profile data and visible to a
 
 ## A Pre-Season Checklist for Coaches
 
-Before January or any intake peak: health data separated with explicit consent and access logging; progress photos private with signed links; coach-client relationships enforced; package credits transactional with webhook-confirmed payments; cancellation rules enforced in local time; AI features minimised and labelled; retention and export configured; messaging inside the app; monitoring and backups active. With this in place, new clients can join with confidence — and coaches can focus on coaching.
+Before January or any intake peak: health data separated with explicit consent and access logging; progress photos private with signed links; coach-client relationships enforced; package credits transactional with webhook-confirmed payments; cancellation rules enforced in local time; AI features minimised and labelled; retention and export configured; messaging inside the app; monitoring and backups active. With this in place, new clients can join with confidence - and coaches can focus on coaching.
 
 ## Why Trust Is the Real Product
 
-Clients choose a personal trainer or coach for expertise, but they stay because of trust. They share injuries, weights, photos and personal struggles they may not share with friends. An app that handles that information carefully — separated, consented, private, deleted when no longer needed — extends the coach's professionalism into the digital space. An app that leaks it, even once, can undo years of reputation built session by session. For coaches and studios, taking an AI-built app to production properly is therefore not an IT expense but an investment in the relationship that the whole business depends on.
+Clients choose a personal trainer or coach for expertise, but they stay because of trust. They share injuries, weights, photos and personal struggles they may not share with friends. An app that handles that information carefully - separated, consented, private, deleted when no longer needed - extends the coach's professionalism into the digital space. An app that leaks it, even once, can undo years of reputation built session by session. For coaches and studios, taking an AI-built app to production properly is therefore not an IT expense but an investment in the relationship that the whole business depends on.
 
 ## First Step
 
@@ -142,11 +142,11 @@ Treat every intake answer and progress photo as if the client were reading over 
 
 ## In Short
 
-Separate, consent, restrict, log and delete — in that order.
+Separate, consent, restrict, log and delete - in that order.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio takes coaching apps to production while keeping the look coaches and clients like: separated and consented health data, private progress photos, coach-level access, transactional package credits and verified payments, server-enforced cancellation rules and responsible AI features. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, working from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City — and one of LaunchStudio's own early testimonials came from Marieke, a founder of a SaaS for personal trainers. See [Manifera's mobile app development](https://www.manifera.com/services/mobile-app-development/); the [GDPR text on special categories](https://gdpr-info.eu/art-9-gdpr/) sets out the rules for health data.
+LaunchStudio takes coaching apps to production while keeping the look coaches and clients like: separated and consented health data, private progress photos, coach-level access, transactional package credits and verified payments, server-enforced cancellation rules and responsible AI features. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, working from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City - and one of LaunchStudio's own early testimonials came from Marieke, a founder of a SaaS for personal trainers. See [Manifera's mobile app development](https://www.manifera.com/services/mobile-app-development/); the [GDPR text on special categories](https://gdpr-info.eu/art-9-gdpr/) sets out the rules for health data.
 
 [Calculate what your project would cost](https://launchstudio.eu/en/#calculator) before January fills your calendar.
 
@@ -156,16 +156,16 @@ LaunchStudio takes coaching apps to production while keeping the look coaches an
 
 Dewi Pranoto, a personal trainer running a small studio in Capelle aan den IJssel with three coaches, built Coachkaart in Bolt: clients complete an intake, receive weekly programmes, log workouts and meals, upload monthly progress photos, book sessions and buy session packages. About 140 clients used it, and Dewi expected to double that in January.
 
-In December she asked for a review. The intake form collected medical conditions, medication and past eating disorders, stored alongside names and visible to all coaches. Progress photos sat in a public bucket with sequential file names. Coaches could see all clients, including those of colleagues. Package credits were deducted by the browser, so a refresh at the right moment kept a session free; payments were confirmed by redirect. Late cancellations were judged by hand. An AI meal plan feature sent full intake answers — including medical history — to the model provider.
+In December she asked for a review. The intake form collected medical conditions, medication and past eating disorders, stored alongside names and visible to all coaches. Progress photos sat in a public bucket with sequential file names. Coaches could see all clients, including those of colleagues. Package credits were deducted by the browser, so a refresh at the right moment kept a session free; payments were confirmed by redirect. Late cancellations were judged by hand. An AI meal plan feature sent full intake answers - including medical history - to the model provider.
 
 Over ten business days, LaunchStudio's engineers split health answers into a restricted, access-logged table with explicit consent, moved photos to private storage with signed links and metadata stripping, enforced coach-client relationships in the database, made credit deduction transactional on booking with Mollie webhooks confirming purchases, enforced cancellation rules in Europe/Amsterdam time, and changed the AI meal plan to use only goals and preferences, labelled as AI-generated with coach approval.
 
 **Result:** The January intake brought 170 new clients without incidents or payment disputes. Clients who asked how their photos were stored received a clear answer, and two of Dewi's coaches now run their own client groups within the app.
 
 > *"My clients tell me things they don't tell their friends. The app had to be as discreet as I am in the studio."*
-> — **Dewi Pranoto, Founder, Coachkaart (Capelle aan den IJssel)**
+> - **Dewi Pranoto, Founder, Coachkaart (Capelle aan den IJssel)**
 
-**Cost & Timeline:** €2,700 (Launch Ready package: health data handling, photo security, access control, package payments and AI data boundaries) — completed in 10 business days.
+**Cost & Timeline:** €2,700 (Launch Ready package: health data handling, photo security, access control, package payments and AI data boundaries) - completed in 10 business days.
 
 ## Frequently Asked Questions
 

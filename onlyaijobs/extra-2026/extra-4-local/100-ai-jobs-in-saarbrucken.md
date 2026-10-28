@@ -41,7 +41,7 @@ Content Format: Local Guide
 }
 </script>
 
-Saarbrücken is a mid-sized city on the French border with an outsized reputation in computer science. Its Saarland Informatics Campus brings together Saarland University's computer science department, the German Research Center for Artificial Intelligence (DFKI), the CISPA Helmholtz Center for Information Security and two Max Planck institutes — for informatics and for software systems — on a single site. Few places in Europe concentrate so much computing research in one campus. Around it, Saarland's automotive and steel industries are modernising, and Luxembourg and France are within commuting distance. For experienced machine learning engineers and researchers, AI jobs in Saarbrücken offer research depth, security expertise and industrial applications, with low living costs by German standards. This guide explains the landscape.
+Saarbrücken is a mid-sized city on the French border with an outsized reputation in computer science. Its Saarland Informatics Campus brings together Saarland University's computer science department, the German Research Center for Artificial Intelligence (DFKI), the CISPA Helmholtz Center for Information Security and two Max Planck institutes - for informatics and for software systems - on a single site. Few places in Europe concentrate so much computing research in one campus. Around it, Saarland's automotive and steel industries are modernising, and Luxembourg and France are within commuting distance. For experienced machine learning engineers and researchers, AI jobs in Saarbrücken offer research depth, security expertise and industrial applications, with low living costs by German standards. This guide explains the landscape.
 
 ## The Saarland Informatics Campus
 
@@ -88,7 +88,7 @@ Saarbrücken is compact and affordable, with a lively student population, French
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Saarbrücken you will find few or no local vacancies there today. Use German job portals, the campus institutes' vacancy pages and company career sites as primary sources. OnlyAIJobs is useful for comparing Saarland with the Netherlands — where employers such as Accenture, Cegeka, Holland Innovative and VINCI Energies list AI roles — and its distance-based approach suits a border region where Luxembourg and France may be closer than other German cities. Employers in Saarland can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Saarbrücken you will find few or no local vacancies there today. Use German job portals, the campus institutes' vacancy pages and company career sites as primary sources. OnlyAIJobs is useful for comparing Saarland with the Netherlands - where employers such as Accenture, Cegeka, Holland Innovative and VINCI Energies list AI roles - and its distance-based approach suits a border region where Luxembourg and France may be closer than other German cities. Employers in Saarland can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Research on the Campus: What the Work Involves
 
@@ -96,7 +96,7 @@ Working at one of the Saarbrücken institutes means joining an international res
 
 ## Language Technology and Multimodal AI
 
-Saarbrücken has a long tradition in computational linguistics, and language technology remains a strength of both the university and DFKI. Research covers speech and language processing, machine translation, dialogue systems, multimodal AI that combines language with images and video, and applications in education, healthcare and industry. As language models become central to AI products, expertise in evaluation, multilingual processing and human–AI interaction is in demand — and Saarbrücken has decades of accumulated knowledge in exactly these areas.
+Saarbrücken has a long tradition in computational linguistics, and language technology remains a strength of both the university and DFKI. Research covers speech and language processing, machine translation, dialogue systems, multimodal AI that combines language with images and video, and applications in education, healthcare and industry. As language models become central to AI products, expertise in evaluation, multilingual processing and human–AI interaction is in demand - and Saarbrücken has decades of accumulated knowledge in exactly these areas.
 
 ## Machine Learning Security and Privacy
 
@@ -104,7 +104,7 @@ The intersection of AI and security has become a major field, and Saarbrücken i
 
 ## Industrial AI in Saarland
 
-Saarland's manufacturers apply AI to inspection, maintenance, process control and energy efficiency, and DFKI's industrial projects support smaller companies in adopting these technologies. The region's economic transformation — away from coal and toward new industries — has led to investment in research and innovation. Engineers who combine ML with manufacturing knowledge find practical, impactful work.
+Saarland's manufacturers apply AI to inspection, maintenance, process control and energy efficiency, and DFKI's industrial projects support smaller companies in adopting these technologies. The region's economic transformation - away from coal and toward new industries - has led to investment in research and innovation. Engineers who combine ML with manufacturing knowledge find practical, impactful work.
 
 ## Questions to Ask Saarbrücken Employers
 
@@ -125,7 +125,7 @@ Employers and institutes value strong fundamentals in algorithms and systems, ex
 
 ## Research Careers and Transitions
 
-Early-career research positions in Germany are usually fixed-term, funded by projects or graduate programmes. Many researchers from Saarbrücken move into industry after a PhD or postdoc, joining technology companies, research labs or startups across Europe — the campus has produced many spin-offs and alumni in senior technical roles. Others stay in applied research at DFKI or CISPA, where longer-term positions exist. For engineers coming from industry, a research role in Saarbrücken can be a way to deepen expertise before returning to industry with a stronger profile.
+Early-career research positions in Germany are usually fixed-term, funded by projects or graduate programmes. Many researchers from Saarbrücken move into industry after a PhD or postdoc, joining technology companies, research labs or startups across Europe - the campus has produced many spin-offs and alumni in senior technical roles. Others stay in applied research at DFKI or CISPA, where longer-term positions exist. For engineers coming from industry, a research role in Saarbrücken can be a way to deepen expertise before returning to industry with a stronger profile.
 
 ## Evaluating an Offer
 
@@ -137,7 +137,7 @@ Saarbrücken suits engineers and researchers who want depth in computer science,
 
 ## Cross-Border Careers: Luxembourg and France
 
-Saarbrücken's position makes it a practical base for cross-border careers. Luxembourg, about an hour and a half away, has a financial sector, EU institutions and the University of Luxembourg with its SnT centre, all of which hire data professionals; salaries there are high, though housing is expensive, which is one reason many people live on the German or French side of the border. Metz and Nancy in Lorraine have universities, research laboratories and industrial companies, and cross-border research collaborations in the Greater Region connect institutions across Germany, France, Luxembourg and Belgium. For job seekers, this means that searching by distance rather than by country reveals many more opportunities than a German-only search would. Cross-border employment raises practical questions — which country taxes your income, where you pay social security, how health insurance and pensions work — and these depend on bilateral agreements and EU coordination rules. Cross-border information centres in the region provide free advice, and it is worth consulting them before accepting an offer across the border. Many engineers in Saarland build careers that combine German research or industry experience with opportunities in Luxembourg or France.
+Saarbrücken's position makes it a practical base for cross-border careers. Luxembourg, about an hour and a half away, has a financial sector, EU institutions and the University of Luxembourg with its SnT centre, all of which hire data professionals; salaries there are high, though housing is expensive, which is one reason many people live on the German or French side of the border. Metz and Nancy in Lorraine have universities, research laboratories and industrial companies, and cross-border research collaborations in the Greater Region connect institutions across Germany, France, Luxembourg and Belgium. For job seekers, this means that searching by distance rather than by country reveals many more opportunities than a German-only search would. Cross-border employment raises practical questions - which country taxes your income, where you pay social security, how health insurance and pensions work - and these depend on bilateral agreements and EU coordination rules. Cross-border information centres in the region provide free advice, and it is worth consulting them before accepting an offer across the border. Many engineers in Saarland build careers that combine German research or industry experience with opportunities in Luxembourg or France.
 
 ## Startups and Spin-offs
 

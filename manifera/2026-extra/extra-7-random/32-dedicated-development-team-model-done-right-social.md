@@ -1,4 +1,4 @@
-🚨 A dedicated development team is structurally different from project-based outsourcing — same people, accumulating product knowledge over time. That advantage only shows up if you actually treat it like a real team. ⚙️🤝
+🚨 A dedicated development team is structurally different from project-based outsourcing - same people, accumulating product knowledge over time. That advantage only shows up if you actually treat it like a real team. ⚙️🤝
 
 **The Pain Points:**
 ❌ **Paying Dedicated Rates for a Ticket Queue:** Arm's-length management that never lets product knowledge compound.
@@ -6,7 +6,7 @@
 ❌ **One-Way Communication:** Valuable technical perspective lost because the team is only ever told what to build.
 
 **The Manifera Solution:**
-✅ **Genuine Context Inclusion:** Same planning rituals as internal team members — not a filtered, execution-only subset.
+✅ **Genuine Context Inclusion:** Same planning rituals as internal team members - not a filtered, execution-only subset.
 ✅ **Amsterdam Strategic Governance:** Structuring real two-way communication from the start.
 ✅ **Vietnam Execution Velocity:** A genuine team extension that builds deep, compounding product knowledge.
 

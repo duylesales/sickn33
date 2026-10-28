@@ -12,7 +12,7 @@ Wanneer een CTO vertrekt, verandert de software in een gevaarlijke 'black box'.
 
 Bij LaunchStudio auditen en herstellen we geërfde softwarebases zodat oprichters weer rustig kunnen ondernemen. 🛡️
 
-Sofia herwon 100% controle en onboardde direct 12 nieuwe studio's. (€ 3.400 (Audit & Hardening) — 8 werkdagen.) 🚀
+Sofia herwon 100% controle en onboardde direct 12 nieuwe studio's. (€ 3.400 (Audit & Hardening) - 8 werkdagen.) 🚀
 
 👉 Lees het herstelplan voor geërfde code: https://launchstudio.eu/nl/blog/choosing-partner-audit-inherited-cofounder-code
 

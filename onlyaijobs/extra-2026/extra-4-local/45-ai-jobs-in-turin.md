@@ -83,7 +83,7 @@ Other research organisations, such as the LINKS Foundation, work on applied digi
 
 ## Italian Employment Conditions
 
-Italian employment is governed by national collective agreements (CCNL) by sector — for example the metalworking agreement for many industrial employers, or banking and commerce agreements. Salaries are expressed as gross annual amounts (RAL), typically paid in 13 or 14 instalments, and employees accrue a severance fund (TFR). Many employers offer meal vouchers, supplementary health insurance and welfare benefits. Salaries in Turin are generally lower than in Milan, but so is the cost of living, particularly housing. Italy's tax regime for workers relocating to Italy ("impatriati") was reformed in 2024 with reduced benefits; check current eligibility with a tax adviser.
+Italian employment is governed by national collective agreements (CCNL) by sector - for example the metalworking agreement for many industrial employers, or banking and commerce agreements. Salaries are expressed as gross annual amounts (RAL), typically paid in 13 or 14 instalments, and employees accrue a severance fund (TFR). Many employers offer meal vouchers, supplementary health insurance and welfare benefits. Salaries in Turin are generally lower than in Milan, but so is the cost of living, particularly housing. Italy's tax regime for workers relocating to Italy ("impatriati") was reformed in 2024 with reduced benefits; check current eligibility with a tax adviser.
 
 ## Language
 
@@ -97,11 +97,11 @@ Turin is an elegant city with long arcades, baroque squares, a strong café cult
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Turin you will find few or no local vacancies there today. Use Italian job portals, company career pages, Politecnico di Torino's career services and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Turin's industrial AI market with the Netherlands — where engineering employers such as Holland Innovative, VINCI Energies and Heijmans list AI roles — and as a method: in a metropolitan area where many industrial sites lie outside the centre, searching by real commute matters. Piedmont employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Turin you will find few or no local vacancies there today. Use Italian job portals, company career pages, Politecnico di Torino's career services and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Turin's industrial AI market with the Netherlands - where engineering employers such as Holland Innovative, VINCI Energies and Heijmans list AI roles - and as a method: in a metropolitan area where many industrial sites lie outside the centre, searching by real commute matters. Piedmont employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Automotive AI in a Changing Industry
 
-The automotive industry is undergoing deep change — electrification, software-defined vehicles, new competitors and cost pressure — and Turin feels these changes directly. For AI professionals, this creates both opportunity and uncertainty. Demand for software, data and AI skills remains significant as manufacturers and suppliers build capabilities in vehicle software, battery analytics, connected services and digital manufacturing. At the same time, restructuring can affect individual business units. When evaluating an automotive role, ask how central the team is to the company's strategy, how it is funded and how stable its roadmap is. Diversifying your experience across automotive, aerospace, energy or industrial AI makes your career more resilient.
+The automotive industry is undergoing deep change - electrification, software-defined vehicles, new competitors and cost pressure - and Turin feels these changes directly. For AI professionals, this creates both opportunity and uncertainty. Demand for software, data and AI skills remains significant as manufacturers and suppliers build capabilities in vehicle software, battery analytics, connected services and digital manufacturing. At the same time, restructuring can affect individual business units. When evaluating an automotive role, ask how central the team is to the company's strategy, how it is funded and how stable its roadmap is. Diversifying your experience across automotive, aerospace, energy or industrial AI makes your career more resilient.
 
 Typical automotive AI projects in Turin include vision-based inspection of paint and body parts, anomaly detection on assembly lines, predictive maintenance of production equipment, analysis of vehicle test data, battery state-of-health estimation and demand forecasting for parts. These projects require close collaboration with engineers and a solid understanding of quality and safety processes.
 
@@ -115,7 +115,7 @@ Turin's banking sector gives data scientists access to large, diverse datasets a
 
 ## Consulting as a Career Accelerator
 
-Turin's IT consulting and services sector employs many data professionals, often working for clients in automotive, banking, energy, telecom and retail across Italy and Europe. Consulting offers variety, fast learning, exposure to different technologies and a broad network. The trade-offs are less ownership of long-term products and project-driven workloads. Many engineers spend several years in consulting before moving into an in-house role in the domain they enjoy most — a path that works well in Turin, where consulting firms and industrial clients are close together.
+Turin's IT consulting and services sector employs many data professionals, often working for clients in automotive, banking, energy, telecom and retail across Italy and Europe. Consulting offers variety, fast learning, exposure to different technologies and a broad network. The trade-offs are less ownership of long-term products and project-driven workloads. Many engineers spend several years in consulting before moving into an in-house role in the domain they enjoy most - a path that works well in Turin, where consulting firms and industrial clients are close together.
 
 ## Research Careers
 
@@ -148,7 +148,7 @@ When comparing AI jobs in Turin with offers elsewhere, calculate the full annual
 
 ## Turin and the Wider North-West
 
-Turin's location opens further options. Milan is under an hour by high-speed train, Genoa and the Ligurian coast are close, and the French border region is within reach. Some professionals live in Turin and work hybrid for Milan employers, combining Turin's lower living costs with Milan's larger job market — a practical arrangement worth discussing with employers.
+Turin's location opens further options. Milan is under an hour by high-speed train, Genoa and the Ligurian coast are close, and the French border region is within reach. Some professionals live in Turin and work hybrid for Milan employers, combining Turin's lower living costs with Milan's larger job market - a practical arrangement worth discussing with employers.
 
 ## A Final Tip
 

@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Prototype to Production Field Guide: 100 Lessons in One Checklist",
-  "description": "A capstone guide condensing a hundred articles on taking an AI prototype to production into one practical checklist: ownership, access, secrets, money, data, delivery, visibility, AI features, growth and operations — with links to the deeper articles.",
+  "description": "A capstone guide condensing a hundred articles on taking an AI prototype to production into one practical checklist: ownership, access, secrets, money, data, delivery, visibility, AI features, growth and operations - with links to the deeper articles.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2028-01-08",
@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Over a hundred articles, we have looked at taking an AI prototype to production from almost every angle: cities from Groningen to Leuven, industries from flowers to insurance, tools from Lovable to FlutterFlow, and founders from students to corporate innovation leads. The details differ. The underlying lessons repeat with remarkable consistency. This field guide condenses them into one checklist you can work through with your own app — with links to the deeper articles where you need more.
+Over a hundred articles, we have looked at taking an AI prototype to production from almost every angle: cities from Groningen to Leuven, industries from flowers to insurance, tools from Lovable to FlutterFlow, and founders from students to corporate innovation leads. The details differ. The underlying lessons repeat with remarkable consistency. This field guide condenses them into one checklist you can work through with your own app - with links to the deeper articles where you need more.
 
 ## The One Idea Behind All of It
 
@@ -38,7 +38,7 @@ Deeper: [taking back access after a freelancer leaves](https://launchstudio.eu/e
 
 ## Part 2: Access
 
-- [ ] Users can only reach their own data — enforced in the database or API, not the interface
+- [ ] Users can only reach their own data - enforced in the database or API, not the interface
 - [ ] Admin areas protected by server-side roles
 - [ ] Organisations and roles modelled explicitly if you have teams
 - [ ] Negative tests that try forbidden access for each role
@@ -73,7 +73,7 @@ Deeper: [the terms, privacy policy and agreements you need](https://launchstudio
 ## Part 6: Delivery
 
 - [ ] Your own domain with SSL
-- [ ] Development, staging and production separated — including data
+- [ ] Development, staging and production separated - including data
 - [ ] Changes reviewed and released through a pipeline; rollback possible
 - [ ] Migrations reviewed and reversible where possible
 
@@ -142,7 +142,7 @@ Repeat the self-assessment every quarter and after major changes. The ticks will
 | 9. Growth | Will it stay fast and affordable as users grow? | Ongoing | Engineer |
 | 10. Operations | Who owns what, and how do we respond? | Ongoing | Founder + team |
 
-For a typical working prototype, Parts 1–7 together represent one to three weeks of focused work — the scope of most LaunchStudio projects.
+For a typical working prototype, Parts 1–7 together represent one to three weeks of focused work - the scope of most LaunchStudio projects.
 
 ## The Five Mistakes Behind Most Incidents
 
@@ -162,7 +162,7 @@ Different founders will focus on different parts. **Non-technical founders** sho
 
 ## What Changes When the Checklist Is Done
 
-Founders who complete Parts 1–7 describe similar changes: they stop worrying about what might be broken, respond to customer questions about security with specifics, release changes without holding their breath, and spend their time on customers and growth. Investors and business customers notice the difference too, because the evidence they ask for already exists. That operational calm is the real outcome of production readiness — more than any single fix.
+Founders who complete Parts 1–7 describe similar changes: they stop worrying about what might be broken, respond to customer questions about security with specifics, release changes without holding their breath, and spend their time on customers and growth. Investors and business customers notice the difference too, because the evidence they ask for already exists. That operational calm is the real outcome of production readiness - more than any single fix.
 
 ## Keeping the Checklist Alive
 
@@ -174,7 +174,7 @@ The checklist is designed for founders to use independently, but some findings j
 
 ## From One Hundred Articles to One Habit
 
-If the whole series had to be reduced to one habit, it would be this: regularly ask "what happens when someone other than me uses this?" — a stranger, a competitor, a customer on a slow phone, a payment provider sending a delayed message, a colleague who just left. AI tools answer "what happens when I use this?" beautifully. Production readiness is answering the other question, deliberately and repeatedly, for as long as the product lives.
+If the whole series had to be reduced to one habit, it would be this: regularly ask "what happens when someone other than me uses this?" - a stranger, a competitor, a customer on a slow phone, a payment provider sending a delayed message, a colleague who just left. AI tools answer "what happens when I use this?" beautifully. Production readiness is answering the other question, deliberately and repeatedly, for as long as the product lives.
 
 ## Where to Go Next
 
@@ -186,7 +186,7 @@ Every item on this checklist exists because a founder somewhere learned it the h
 
 ## Where LaunchStudio Fits
 
-Every article in this series ends in the same place because the work is the same: keep the frontend you built, fix what is needed, go live quickly. LaunchStudio does that at fixed prices from €800 to €7,500, typically in one to three weeks, with the code staying yours and readable by your AI tools. LaunchStudio is powered by Manifera — 11+ years, 120+ engineers, 160+ projects, clients such as Vodafone, TNO and CFLW — working from Herengracht 420 in Amsterdam, Tras Street in Singapore and Pho Quang Street in Ho Chi Minh City. See [Manifera's portfolio](https://www.manifera.com/portfolio/) and, for the security side, the [OWASP Top 10](https://owasp.org/www-project-top-ten/).
+Every article in this series ends in the same place because the work is the same: keep the frontend you built, fix what is needed, go live quickly. LaunchStudio does that at fixed prices from €800 to €7,500, typically in one to three weeks, with the code staying yours and readable by your AI tools. LaunchStudio is powered by Manifera - 11+ years, 120+ engineers, 160+ projects, clients such as Vodafone, TNO and CFLW - working from Herengracht 420 in Amsterdam, Tras Street in Singapore and Pho Quang Street in Ho Chi Minh City. See [Manifera's portfolio](https://www.manifera.com/portfolio/) and, for the security side, the [OWASP Top 10](https://owasp.org/www-project-top-ten/).
 
 [Send us your prototype link](https://launchstudio.eu/en/#contact) and we will go through this checklist with you, free of charge.
 
@@ -203,9 +203,9 @@ Over ten business days, LaunchStudio's engineers worked through the unchecked bo
 **Result:** The newspaper article brought 1,800 new members in a week without an outage or complaint about privacy. Buurtkookt now has around 5,000 members, and Sanne revisits the checklist every quarter.
 
 > *"A hundred articles sounded overwhelming. One checklist with my own ticks on it didn't."*
-> — **Sanne Groot, Founder, Buurtkookt (Amsterdam)**
+> - **Sanne Groot, Founder, Buurtkookt (Amsterdam)**
 
-**Cost & Timeline:** €2,800 (Launch Ready package covering access, secrets, payments, data, delivery and monitoring gaps) — completed in 10 business days.
+**Cost & Timeline:** €2,800 (Launch Ready package covering access, secrets, payments, data, delivery and monitoring gaps) - completed in 10 business days.
 
 ## Frequently Asked Questions
 
@@ -223,7 +223,7 @@ No. Access, secrets and money must be done before paying users; data, delivery a
 
 ### Why does Herre Roelevink describe architecture and security as the real challenge now?
 
-Because AI made building software fast and cheap, while making software safe and dependable still takes deliberate engineering — the work Manifera has done for more than a decade.
+Because AI made building software fast and cheap, while making software safe and dependable still takes deliberate engineering - the work Manifera has done for more than a decade.
 
 ### How does production readiness relate to visibility in search and AI answers?
 

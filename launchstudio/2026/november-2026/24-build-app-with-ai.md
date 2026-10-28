@@ -37,7 +37,7 @@ You used Lovable or Bolt to build an app with AI. The interface is stunning. The
 
 This is where the reality of AI app development collides with enterprise procurement. The VSAQ asks about data encryption at rest, multi-tenant isolation architectures, Single Sign-On (SSO) capabilities, and SLA uptime guarantees. 
 
-Your prototype—running on a default Supabase instance with anonymous keys in the frontend and zero data partitioning—fails immediately.
+Your prototype - running on a default Supabase instance with anonymous keys in the frontend and zero data partitioning - fails immediately.
 
 Building an app with AI is the easiest way to generate a B2B product. Transitioning that app to pass an enterprise security audit is one of the hardest engineering challenges a solo founder will face.
 
@@ -101,9 +101,9 @@ In a 15-business-day sprint, the Manifera team completely re-architected the bac
 **Result:** With the new architecture and the compliance documentation provided by LaunchStudio, Sarah re-engaged the logistics conglomerate. FreightFlow passed the IT audit on the second attempt. She has since closed three more enterprise contracts, bringing her ARR to €162,000. 
 
 > *"I knew the logistics industry perfectly, and AI let me build the solution. But I knew nothing about enterprise IT security. LaunchStudio was the missing link. They took my 'toy' app and gave it the armor it needed to survive corporate procurement."*
-> — **Sarah Peeters, Founder, FreightFlow (Antwerp)**
+> - **Sarah Peeters, Founder, FreightFlow (Antwerp)**
 
-**Cost & Timeline:** €7,500 (Launch & Grow Package with Enterprise Security Add-on) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €7,500 (Launch & Grow Package with Enterprise Security Add-on) - production-ready and deployed in 15 business days.
 
 ---
 

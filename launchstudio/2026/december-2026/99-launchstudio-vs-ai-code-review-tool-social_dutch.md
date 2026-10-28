@@ -12,7 +12,7 @@ Geautomatiseerde AI-scanners controleren syntax, maar zijn blind voor semantisch
 
 Bij LaunchStudio leveren we de menselijke senior engineering die échte veiligheid waarborgt. 🛡️
 
-Ingrid voorkwam een catastrofaal datalek en lanceerde met 6 advocatenkantoren. (€ 2.900 (Security Audit) — 7 werkdagen.) 🚀
+Ingrid voorkwam een catastrofaal datalek en lanceerde met 6 advocatenkantoren. (€ 2.900 (Security Audit) - 7 werkdagen.) 🚀
 
 👉 Lees waarom AI-scanners niet volstaan: https://launchstudio.eu/nl/blog/launchstudio-vs-ai-code-review-tool
 

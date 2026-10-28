@@ -2,7 +2,7 @@
 
 🏢 High Tech Campus Eindhoven, the Brightlands campuses, Utrecht Science Park, Leiden Bio Science Park, Kennispark Twente, Zernike, Amsterdam Science Park, Novio Tech Campus, Pivot Park and Wageningen Campus all offer something rare: changing employer without changing commute.
 
-🚀 Startups suffer most from invisibility. They cannot match big salaries, but they offer responsibility and impact — if candidates ever find them.
+🚀 Startups suffer most from invisibility. They cannot match big salaries, but they offer responsibility and impact - if candidates ever find them.
 
 🏠 Housing, transport and amenities decide whether talent stays.
 

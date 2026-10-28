@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Lanceringsweken lopen bij software-oprichters op een uiterst voorspelbare manier verkeerd af: de oprichter besteedt alle kostbare tijd aan het perfectioneren van productfeatures en ontdekt de gebreken in de onderliggende infrastructuur pas op de dag van lancering zelf. De gebruikersinterface wordt tot in detail opgepoetst, er wordt nog snel een laatste knop toegevoegd, en niemand controleert of de e-mail voor wachtwoordherstel daadwerkelijk aankomt of dat klant B via de URL ongehinderd de privégegevens van klant A kan inzien.
 
-Wat volgt is een praktisch verificatieplan van vijf dagen. Het gaat ervan uit dat de kernfunctionaliteit werkt — dat deel heb je immers zelf gebouwd — en concentreert zich volledig op alles daaromheen, in de exacte volgorde waarin je de meest kritieke risico's het vroegst ontdekt. Elke dag kost je circa twee tot drie uur, geen volledige dag. De vaste volgorde is essentieel: het heeft immers geen enkele zin om betalingen te testen op een database die wijd openstaat voor de buitenwereld.
+Wat volgt is een praktisch verificatieplan van vijf dagen. Het gaat ervan uit dat de kernfunctionaliteit werkt - dat deel heb je immers zelf gebouwd - en concentreert zich volledig op alles daaromheen, in de exacte volgorde waarin je de meest kritieke risico's het vroegst ontdekt. Elke dag kost je circa twee tot drie uur, geen volledige dag. De vaste volgorde is essentieel: het heeft immers geen enkele zin om betalingen te testen op een database die wijd openstaat voor de buitenwereld.
 
 ## Maandag: Wie kan wat inzien (Toegangsbeheer & Autorisatie)
 
@@ -116,7 +116,7 @@ Soms staat een lanceerdatum onwrikbaar vast door externe factoren: een marketing
 
 **Schakel het haperende onderdeel tijdelijk uit.** Een product dat op dag één een secundaire functionaliteit mist, is hooguit een kleine teleurstelling. Een product dat privacygevoelige data lekt, is een juridische ramp. Werkt file-upload nog niet veilig? Lanceer zonder upload en voeg de functie twee weken later gehard toe.
 
-**Plaats een menselijke controleur in de flow.** Waar een geautomatiseerde procedure nog niet bewezen stabiel is — zoals refunds, accountverwijderingen of data-exports — handel je deze de eerste weken handmatig af. Traag en foutloos wint het altijd van snel en onbetrouwbaar.
+**Plaats een menselijke controleur in de flow.** Waar een geautomatiseerde procedure nog niet bewezen stabiel is - zoals refunds, accountverwijderingen of data-exports - handel je deze de eerste weken handmatig af. Traag en foutloos wint het altijd van snel en onbetrouwbaar.
 
 **Communiceer transparant met getroffen gebruikers.** *"De rapportagefunctie volgt over twee weken; alle overige onderdelen werken vanaf vandaag"* is een boodschap die zakelijke klanten direct respecteren. Doodse stilte gevolgd door een onverwachte fout breekt het vertrouwen.
 
@@ -132,7 +132,7 @@ Het verificatieplan stopt niet op het moment dat je live gaat. De eerste week me
 
 **Vergelijk je eigen administratie eenmalig met die van je providers.** Afgeschreven betalingen tegenover vastgelegde databaserecords, verzonden e-mails tegenover afgeleverde berichten. Een administratieve afwijking in week één is een overzichtelijke bug; dezelfde afwijking in maand zes is een boekhoudkundig drama.
 
-Noteer wat er daadwerkelijk gebeurde — verkeersvolumes, doorlooptijden, storingen en verrassingen. Dat document vormt de basislijn voor elke toekomstige release.
+Noteer wat er daadwerkelijk gebeurde - verkeersvolumes, doorlooptijden, storingen en verrassingen. Dat document vormt de basislijn voor elke toekomstige release.
 
 ## Echt voorbeeld
 
@@ -142,24 +142,24 @@ Daan Coppens had een harde lanceerdatum voor Voorraadje, een voorraadbeheertool 
 
 Op advies van een bevriende ontwikkelaar doorliep hij de week ervoor het vijfdaagse verificatieplan.
 
-Op maandag stuitte hij direct op een kritiek beveiligingslek: vier cruciale databasetabellen bleken geen actieve RLS-policies te hebben. Hierdoor kon elke winkelier via eenvoudige API-calls de actuele voorraadstanden, inkoopprijzen en winstmarges van álle andere aangesloten winkels inzien — de meest concurrentiegevoelige bedrijfsdata van elf ondernemers die deels directe concurrenten van elkaar waren. Op dinsdag bleek dat gebruikers die het tabblad direct na de betaling sloten, nooit automatisch toegang kregen. En op woensdag belandden wachtwoord-resets bij Outlook en Hotmail steevast in de spambox.
+Op maandag stuitte hij direct op een kritiek beveiligingslek: vier cruciale databasetabellen bleken geen actieve RLS-policies te hebben. Hierdoor kon elke winkelier via eenvoudige API-calls de actuele voorraadstanden, inkoopprijzen en winstmarges van álle andere aangesloten winkels inzien - de meest concurrentiegevoelige bedrijfsdata van elf ondernemers die deels directe concurrenten van elkaar waren. Op dinsdag bleek dat gebruikers die het tabblad direct na de betaling sloten, nooit automatisch toegang kregen. En op woensdag belandden wachtwoord-resets bij Outlook en Hotmail steevast in de spambox.
 
-Daan besloot de lancering met vier dagen uit te stellen. Het dichtzetten van de RLS-policies en het herstellen van de betaal-webhook kostte drie werkdagen; het configureren van DKIM en SPF kostte een middag. Tijdens de donderdag-oefening werd een getimede backupherstelactie van 38 minuten vastgelegd — een cijfer dat hij nadien met trots aan potentiële zakelijke klanten heeft getoond.
+Daan besloot de lancering met vier dagen uit te stellen. Het dichtzetten van de RLS-policies en het herstellen van de betaal-webhook kostte drie werkdagen; het configureren van DKIM en SPF kostte een middag. Tijdens de donderdag-oefening werd een getimede backupherstelactie van 38 minuten vastgelegd - een cijfer dat hij nadien met trots aan potentiële zakelijke klanten heeft getoond.
 
 **Resultaat:** de elf winkels startten op vrijdagochtend zonder problemen. In de eerste operationele week deed zich slechts één klein puntje voor (een traag rapportagescherm) en geen enkele winkelier heeft ooit de data van een concurrent gezien.
 
 > *"Ik stond op het punt software te lanceren waarmee elf concurrerende winkeliers elkaars marges konden inzien. Ik ontdekte het op maandagmiddag met een test die ik op elk moment in de drie maanden ervoor had kunnen uitvoeren."*
-> — **Daan Coppens, Oprichter, Voorraadje (Maastricht)**
+> - **Daan Coppens, Oprichter, Voorraadje (Maastricht)**
 
-**Kosten & Doorlooptijd:** € 3.050 (RLS-beveiliging herstellen, webhook-automatisering, e-mailauthenticatie, getimed backupherstel) — afgerond in 4 werkdagen vóór lancering.
+**Kosten & Doorlooptijd:** € 3.050 (RLS-beveiliging herstellen, webhook-automatisering, e-mailauthenticatie, getimed backupherstel) - afgerond in 4 werkdagen vóór lancering.
 
 ## Veelgestelde vragen
 
 ### Wat moet ik als allereerste controleren vóórdat ik live ga?
-Toegangsbeheer en databasereliabiliteit. Maak twee afzonderlijke accounts aan en probeer elkaars data in te zien door ID's in de URL te wijzigen. Alle andere zaken — betalingen, e-mails, performance — zijn ondergeschikt aan de vraag of klanten elkaars privégegevens kunnen uitlezen.
+Toegangsbeheer en databasereliabiliteit. Maak twee afzonderlijke accounts aan en probeer elkaars data in te zien door ID's in de URL te wijzigen. Alle andere zaken - betalingen, e-mails, performance - zijn ondergeschikt aan de vraag of klanten elkaars privégegevens kunnen uitlezen.
 
 ### Moet ik echt een echte live-betaling uitvoeren vóór de lancering?
-Ja, absoluut. De testmodus van betaalproviders bewandelt niet exact dezelfde serverroutes, en de meest voorkomende betaalfout — een klant die de browser sluit vóórdat de redirectpagina laadt — openbaart zich uitsluitend bij een echte transactie die je bewust voortijdig afbreekt.
+Ja, absoluut. De testmodus van betaalproviders bewandelt niet exact dezelfde serverroutes, en de meest voorkomende betaalfout - een klant die de browser sluit vóórdat de redirectpagina laadt - openbaart zich uitsluitend bij een echte transactie die je bewust voortijdig afbreekt.
 
 ### Hoeveel tijd kost deze pre-launch verificatie in totaal?
 Ongeveer twee tot drie uur per dag gedurende vijf werkdagen in de week vóór de geplande go-live. Het is geen dagtaak, maar een gestructureerde checklist waarbij latere controles pas zin hebben als eerdere stappen slagen.
@@ -212,7 +212,7 @@ Nee. Kondig je product gefaseerd aan, begin bij je kleinste en meest vertrouwde 
       "name": "Is het verstandig om direct voor iedereen tegelijk te lanceren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — lanceer gefaseerd, begin met een kleine groep en monitor de error tracker intensief tijdens de eerste uren."
+        "text": "Nee - lanceer gefaseerd, begin met een kleine groep en monitor de error tracker intensief tijdens de eerste uren."
       }
     }
   ]

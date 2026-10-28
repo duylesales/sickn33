@@ -44,7 +44,7 @@ Content Format: Regional Career Guide
 }
 </script>
 
-Wallonia, the French-speaking southern region of Belgium, is often overlooked in discussions about European tech careers. Yet it combines strong universities, a regional AI programme, one of Europe's most important biopharma clusters, a notable space and aerospace sector and science parks that host startups and research centres. Its cities — Liège, Louvain-la-Neuve, Mons, Charleroi and Namur — are close to Brussels, Luxembourg, the Netherlands, Germany and France. For students and recent graduates, AI jobs in Wallonia offer realistic entry points into machine learning, often with lower living costs than Brussels and a region eager to keep its talent. This guide explains where to look and how to get started.
+Wallonia, the French-speaking southern region of Belgium, is often overlooked in discussions about European tech careers. Yet it combines strong universities, a regional AI programme, one of Europe's most important biopharma clusters, a notable space and aerospace sector and science parks that host startups and research centres. Its cities - Liège, Louvain-la-Neuve, Mons, Charleroi and Namur - are close to Brussels, Luxembourg, the Netherlands, Germany and France. For students and recent graduates, AI jobs in Wallonia offer realistic entry points into machine learning, often with lower living costs than Brussels and a region eager to keep its talent. This guide explains where to look and how to get started.
 
 ## Universities and Research
 
@@ -64,7 +64,7 @@ Wallonia has a network of accredited research centres that work closely with com
 
 ## Biotech and Pharma
 
-Wallonia is home to one of Europe's strongest biopharma clusters. Major pharmaceutical and vaccine companies have large operations in the region — for example in the Walloon Brabant province — and the Biopark in Charleroi hosts biotech companies and research. Data science roles include manufacturing analytics, quality, clinical data, bioinformatics and supply chain, within regulated environments.
+Wallonia is home to one of Europe's strongest biopharma clusters. Major pharmaceutical and vaccine companies have large operations in the region - for example in the Walloon Brabant province - and the Biopark in Charleroi hosts biotech companies and research. Data science roles include manufacturing analytics, quality, clinical data, bioinformatics and supply chain, within regulated environments.
 
 ## Space and Aerospace
 
@@ -72,7 +72,7 @@ Liège and its region have a notable space sector, with companies and research c
 
 ## Digital Companies and Science Parks
 
-Science parks near the universities — in Louvain-la-Neuve, Liège, Mons and Gosselies — host software companies, startups and innovation centres. Digital companies in Wallonia work on SaaS, health tech, industrial software and AI applications. Liège's airport is also a major cargo hub, creating logistics data roles.
+Science parks near the universities - in Louvain-la-Neuve, Liège, Mons and Gosselies - host software companies, startups and innovation centres. Digital companies in Wallonia work on SaaS, health tech, industrial software and AI applications. Liège's airport is also a major cargo hub, creating logistics data roles.
 
 ## Where AI Jobs in Wallonia Are Found for Graduates
 
@@ -99,13 +99,13 @@ French is the language of daily life and most workplaces in Wallonia. Research g
 
 ## How OnlyAIJobs Fits a Walloon Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement — every listing competes on content.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement - every listing competes on content.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Wallonia you will find few or no Belgian vacancies there today. Use Belgian job portals, university career services, research centre announcements and company career pages as primary sources. OnlyAIJobs is directly useful for the Dutch side of a cross-border search: from Liège, Dutch Limburg and Maastricht are less than an hour away, and employers there and elsewhere in the Netherlands — such as Holland Innovative, Cegeka, Heijmans and Accenture — list AI roles. Walloon employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Wallonia you will find few or no Belgian vacancies there today. Use Belgian job portals, university career services, research centre announcements and company career pages as primary sources. OnlyAIJobs is directly useful for the Dutch side of a cross-border search: from Liège, Dutch Limburg and Maastricht are less than an hour away, and employers there and elsewhere in the Netherlands - such as Holland Innovative, Cegeka, Heijmans and Accenture - list AI roles. Walloon employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Applied Research Centres as a First Job
 
-Wallonia's accredited research centres play a special role: they help regional companies, especially SMEs, adopt new technologies. A research engineer might spend a year on several projects — predictive maintenance for a metal processing plant, computer vision for quality control at a food producer, simulation-based optimisation for an aerospace supplier — often working on-site with company engineers. For graduates, this offers rapid learning, exposure to many industries and a network across the region. Many engineers later join one of the companies they worked with, or move into R&D roles elsewhere, bringing practical experience that pure academic or large-company paths rarely provide. Regional funding programmes support these collaborations, making research centres stable employers for early-career engineers.
+Wallonia's accredited research centres play a special role: they help regional companies, especially SMEs, adopt new technologies. A research engineer might spend a year on several projects - predictive maintenance for a metal processing plant, computer vision for quality control at a food producer, simulation-based optimisation for an aerospace supplier - often working on-site with company engineers. For graduates, this offers rapid learning, exposure to many industries and a network across the region. Many engineers later join one of the companies they worked with, or move into R&D roles elsewhere, bringing practical experience that pure academic or large-company paths rarely provide. Regional funding programmes support these collaborations, making research centres stable employers for early-career engineers.
 
 ## Biopharma Data Roles
 
@@ -169,7 +169,7 @@ Belgian PhD positions are usually funded by the FNRS (the French-speaking commun
 
 ## Responsible AI
 
-The EU AI Act, GDPR and sector-specific regulation shape how AI is used in biopharma, public services and industry. Graduates who understand documentation, validation and fairness — topics central to TRAIL's work — bring practical value to Walloon employers.
+The EU AI Act, GDPR and sector-specific regulation shape how AI is used in biopharma, public services and industry. Graduates who understand documentation, validation and fairness - topics central to TRAIL's work - bring practical value to Walloon employers.
 
 ## Startups and Digital Wallonia
 
@@ -193,7 +193,7 @@ Keep in touch with your thesis supervisor, research centre colleagues and classm
 
 A computer science graduate from UCLouvain wrote her master's thesis on anomaly detection in industrial sensor data with a Walloon research centre. Many classmates moved to Brussels or abroad.
 
-The research centre offered her a research engineer position working on AI projects for regional manufacturers, and a biopharma company offered a data analyst role. She chose the research centre for variety and learning. After two years, she has worked with five companies on predictive maintenance and quality projects and says the experience gave her a broad, practical foundation — while living affordably close to family.
+The research centre offered her a research engineer position working on AI projects for regional manufacturers, and a biopharma company offered a data analyst role. She chose the research centre for variety and learning. After two years, she has worked with five companies on predictive maintenance and quality projects and says the experience gave her a broad, practical foundation - while living affordably close to family.
 
 ## Key Takeaways
 

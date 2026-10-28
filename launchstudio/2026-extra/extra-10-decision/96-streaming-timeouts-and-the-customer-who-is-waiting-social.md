@@ -1,14 +1,14 @@
-⏱️ Nora thought her AI couldn't handle long contracts. The model finished every single one — her hosting platform just hung up first, at 30 seconds. 😤
+⏱️ Nora thought her AI couldn't handle long contracts. The model finished every single one - her hosting platform just hung up first, at 30 seconds. 😤
 
 Blaming the model for what's actually a timeout is an easy mistake to make. Here's what was really happening: 🧠
 
 ❌ Contracts over roughly 15 pages exceeded the platform's 30-second limit and got terminated with a generic error
-❌ The model call kept running and completing anyway — she paid for every failed analysis
+❌ The model call kept running and completing anyway - she paid for every failed analysis
 ❌ Customers re-uploaded 3–4 times after each error, multiplying cost for documents that never succeeded
 ❌ Roughly a fifth of all uploads were failing this way, reported by customers as "doesn't work with big contracts"
 
 ✅ Move anything that might exceed the platform limit into a background job, not a live request
-✅ Show per-section progress instead of a spinner — "processing page 12 of 40" beats silence
+✅ Show per-section progress instead of a spinner - "processing page 12 of 40" beats silence
 ✅ Store results durably so a customer who closes the tab still finds their analysis later
 ✅ Set your own shorter internal timeout with one retry, so you control the failure, not the platform
 

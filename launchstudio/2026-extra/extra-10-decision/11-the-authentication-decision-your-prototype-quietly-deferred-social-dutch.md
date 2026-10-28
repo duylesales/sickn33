@@ -16,7 +16,7 @@ Hoe een veilige authenticatielaag er wél uitziet:
 ✅ Server-side intrekking: accounts direct en onherroepelijk kunnen uitschakelen
 ✅ Direct een `role`-veld hanteren in middleware en database-policies, zodat RBAC geen rewrite wordt
 
-Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw authenticatie en autorisatie in de backend en middleware — zonder uw gebruikersinterface aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw authenticatie en autorisatie in de backend en middleware - zonder uw gebruikersinterface aan te tasten.
 
 💡 Zo zorgde roosterplatform Rotaflow dat ex-medewerkers binnen 20 minuten definitief werden buitengesloten in plaats van nog 30 dagen toegang te houden.
 

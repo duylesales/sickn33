@@ -99,14 +99,14 @@ Het inrichten van synthetische gebruikerspaden, heartbeat-monitoring voor achter
 
 Hoe ziet een volwassen en beproefde monitoring-architectuur er in de praktijk uit voor een softwareproduct met enkele honderden zakelijke klanten en één verantwoordelijke oprichter?
 
-- **Externe uptime-monitoring:** Een externe dienst (zoals Better Uptime of Checkly) die elke drie tot vijf minuten twee of drie synthetische gebruikersreizen doorloopt en pas een alert stuurt na twee opeenvolgende mislukkingen — om valse alarmen door tijdelijke netwerkhaperingen te voorkomen.
+- **Externe uptime-monitoring:** Een externe dienst (zoals Better Uptime of Checkly) die elke drie tot vijf minuten twee of drie synthetische gebruikersreizen doorloopt en pas een alert stuurt na twee opeenvolgende mislukkingen - om valse alarmen door tijdelijke netwerkhaperingen te voorkomen.
 - **Error-tracking met klantcontext:** Een geïnstalleerde Sentry- of Bugsnag-integratie die alarmeert bij nieuwe onbekende fouttypes en bij plotselinge foutenpieken na een release.
 - **Heartbeat-monitoring:** Dead Man's Snitches op elke geplande cronjob, dagelijkse rapportagetaken en asynchrone queue-workers.
 - **Wachtrij-monitoring:** Directe waarschuwingen wanneer de wachtrijdiepte (*queue depth*) of de wachttijd van achtergrondtaken een ongezonde grens overschrijdt.
 - **Wekelijkse kwaliteitscheck:** Een vast kwartier per week om de top-fouten en de traagste databasequeries en API-endpoints door te nemen.
 - **Vervaldatum-alerts:** Geautomatiseerde waarschuwingen voor SSL-certificaten, domeinnamen en externe OAuth-tokens, ingesteld op minimaal vier weken vóór de vervaldatum.
 
-De directe softwarekosten hiervan zijn uiterst bescheiden — de gratis en instappakketten van moderne tools dekken dit op deze schaal vrijwel volledig af — en de initiële inrichting kost u precies één geconcentreerde middag. Het succes schuilt niet in de complexiteit van de tools, maar in de discipline om de urgente alarmen strikt te beperken tot wat écht directe actie vereist, en direct te handelen naar wat de alerts u vertellen.
+De directe softwarekosten hiervan zijn uiterst bescheiden - de gratis en instappakketten van moderne tools dekken dit op deze schaal vrijwel volledig af - en de initiële inrichting kost u precies één geconcentreerde middag. Het succes schuilt niet in de complexiteit van de tools, maar in de discipline om de urgente alarmen strikt te beperken tot wat écht directe actie vereist, en direct te handelen naar wat de alerts u vertellen.
 ## Echt voorbeeld
 
 ### Elf Dagen Facturen Die Nooit Werden Verzonden
@@ -131,7 +131,7 @@ Bij een grondige inspectie door LaunchStudio kwamen nog twee actieve 'stille ram
 **Resultaat:** Binnen twee werkdagen richtte LaunchStudio een waterdicht monitoringsysteem in: Dead Man's Snitch heartbeats op alle nachtelijke cronjobs (alarm na 30 minuten vertraging), synthetische Playwright-checks die elke tien minuten inloggen en een factuurconcept simuleren, webhook-foutmonitoring en error-tracking verrijkt met klant-ID's.
 
 > *"Mijn uptime-monitor was de hele periode stralend groen. Hij vertelde me volstrekt de waarheid over het enige waar hij naar keek: de voordeur. Alleen was dat toevallig niet het onderdeel waar mijn omzet vandaan kwam."*
-> — **Timo van Loon, Oprichter, Abonnee**
+> - **Timo van Loon, Oprichter, Abonnee**
 
 **Kosten & Doorlooptijd:** Inrichting van heartbeat monitoring, synthetische checks en error-alerting opgeleverd in 2 werkdagen.
 

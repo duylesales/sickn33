@@ -43,13 +43,13 @@ Four structural reasons, all of which matter practically.
 
 **The problems are well-understood.** Demand forecasting, recommendation, pricing, churn, search ranking and marketing attribution have extensive public literature and established approaches. You are not required to invent a method, which makes the learning curve shallower.
 
-**You can build a relevant portfolio before being hired.** Public datasets for recommendation, retail demand and search exist. Unlike healthcare or defence, you can demonstrate ability on realistic problems without institutional access — and this is the single largest reason the sector is more accessible.
+**You can build a relevant portfolio before being hired.** Public datasets for recommendation, retail demand and search exist. Unlike healthcare or defence, you can demonstrate ability on realistic problems without institutional access - and this is the single largest reason the sector is more accessible.
 
 **Teams are larger and include juniors.** A supermarket chain or marketplace may have dozens of data people, with structured onboarding and someone whose job includes developing you. Small specialised employers in other sectors cannot offer that.
 
 ## What the Work Actually Is
 
-**Demand forecasting.** Predicting what will sell, where and when. Deceptively hard at scale: hundreds of thousands of product-location combinations, most with sparse and intermittent sales, plus promotions, seasonality, weather and cannibalisation between products. The asymmetric cost point from the logistics analysis applies fully — the loss function matters more than the model.
+**Demand forecasting.** Predicting what will sell, where and when. Deceptively hard at scale: hundreds of thousands of product-location combinations, most with sparse and intermittent sales, plus promotions, seasonality, weather and cannibalisation between products. The asymmetric cost point from the logistics analysis applies fully - the loss function matters more than the model.
 
 **Assortment and inventory.** What to stock where, how much, and when to reorder. Optimisation under space, shelf life and supplier constraints.
 
@@ -71,11 +71,11 @@ Four structural reasons, all of which matter practically.
 
 Worth unpacking, because it is the technical problem that dominates retail forecasting and the one candidates most often underestimate.
 
-Most forecasting instruction uses series with regular, reasonably continuous values — electricity demand, website traffic, sales of a popular product. Retail at the level where decisions are made is not like that. A specific product in a specific store may sell zero units on most days, one unit occasionally, and five during a promotion. Across a large assortment, the majority of series look like this.
+Most forecasting instruction uses series with regular, reasonably continuous values - electricity demand, website traffic, sales of a popular product. Retail at the level where decisions are made is not like that. A specific product in a specific store may sell zero units on most days, one unit occasionally, and five during a promotion. Across a large assortment, the majority of series look like this.
 
 That breaks a number of standard approaches.
 
-**Mean-based error metrics mislead.** A forecast of 0.3 units per day may be the best possible estimate and is never correct on any individual day. Percentage errors are undefined when actuals are zero. Choosing a metric that reflects the decision — usually about whether to hold stock — requires thought rather than a default.
+**Mean-based error metrics mislead.** A forecast of 0.3 units per day may be the best possible estimate and is never correct on any individual day. Percentage errors are undefined when actuals are zero. Choosing a metric that reflects the decision - usually about whether to hold stock - requires thought rather than a default.
 
 **The decision is discrete while the forecast is continuous.** You cannot order 0.3 units. What matters is the probability distribution over integer demand during a lead time, not a point estimate, which pushes the problem toward probabilistic forecasting.
 
@@ -85,7 +85,7 @@ That breaks a number of standard approaches.
 
 **New products have no history.** A meaningful share of assortment turns over, and forecasting something that has never been sold requires using attributes and analogues rather than its own past.
 
-**Promotions dominate variance.** For many products the promotional uplift is larger than the entire baseline, and promotions interact — one product's promotion cannibalises another's sales and lifts a third's.
+**Promotions dominate variance.** For many products the promotional uplift is larger than the entire baseline, and promotions interact - one product's promotion cannibalises another's sales and lifts a third's.
 
 A candidate who understands these points and can discuss the censored demand problem specifically demonstrates more real retail understanding than one who can name five forecasting architectures. It is the single most efficient thing to learn before interviewing in this sector.
 
@@ -135,11 +135,11 @@ Retail and e-commerce is the most accessible sector, and that has a correspondin
 
 **The work is less differentiating than other sectors.** Almost every data scientist has done forecasting, recommendation or churn. Three years of it produces a competent but common profile. A candidate with three years of semiconductor metrology, clinical validation or sensor fusion has something scarcer.
 
-**Objectives can be thin.** Optimising conversion or basket size is commercially legitimate and, for some people, becomes unsatisfying. The Hilversum analysis makes the related point about constrained versus unconstrained objectives — there is genuinely more intellectual substance in a recommender that must satisfy a plurality mandate than in one that maximises clicks.
+**Objectives can be thin.** Optimising conversion or basket size is commercially legitimate and, for some people, becomes unsatisfying. The Hilversum analysis makes the related point about constrained versus unconstrained objectives - there is genuinely more intellectual substance in a recommender that must satisfy a plurality mandate than in one that maximises clicks.
 
 **The competition is highest here.** The accessibility that helps you enter also means you compete with the largest applicant pool.
 
-None of this argues against the sector. It argues for using it deliberately: enter, build genuine production experience, and then decide whether to deepen within retail — which has substantial senior problems — or move that experience into a sector where it becomes scarcer.
+None of this argues against the sector. It argues for using it deliberately: enter, build genuine production experience, and then decide whether to deepen within retail - which has substantial senior problems - or move that experience into a sector where it becomes scarcer.
 
 ## How to Actually Get In
 
@@ -166,10 +166,10 @@ These are genuinely hard, and the people who can do them are scarce. The ceiling
 ## Key Takeaways
 
 - Retail and e-commerce is the most accessible sector for entering machine learning work: unrestricted data, well-understood problems, portfolio-buildable, and teams large enough to include juniors.
-- The technical content is real — forecasting hundreds of thousands of sparse intermittent series with asymmetric costs is genuinely hard.
+- The technical content is real - forecasting hundreds of thousands of sparse intermittent series with asymmetric costs is genuinely hard.
 - Marketing measurement is the most statistically fraught area, because naive attribution systematically misleads and experimentation is the only reliable answer.
 - The cost of accessibility is differentiation: three years of forecasting and recommendation produces a competent but common profile.
-- Use the sector deliberately — enter, build production experience, then decide whether to deepen or move it somewhere it becomes scarcer.
+- Use the sector deliberately - enter, build production experience, then decide whether to deepen or move it somewhere it becomes scarcer.
 - Evaluation and experimentation competence distinguishes candidates more than model knowledge, because most applicants get both wrong.
 
 ## Where to Start

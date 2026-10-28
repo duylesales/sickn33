@@ -1,6 +1,6 @@
-🔧 Ravi bouwde FleetPulse AI met **Bolt** — een verhardingsklus van drie weken bij een parttime contractor liep uit tot negen weken, waarna de contractor vertrok met een reëel RLS-gat live in productie. 🧠
+🔧 Ravi bouwde FleetPulse AI met **Bolt** - een verhardingsklus van drie weken bij een parttime contractor liep uit tot negen weken, waarna de contractor vertrok met een reëel RLS-gat live in productie. 🧠
 
-Als beveiligingskritiek werk leunt op één freelancer die tijd verdeelt over andere klanten, zijn scope creep en single-point-of-failure-risico geen hypothese — ze zijn structureel.
+Als beveiligingskritiek werk leunt op één freelancer die tijd verdeelt over andere klanten, zijn scope creep en single-point-of-failure-risico geen hypothese - ze zijn structureel.
 
 ❌ Beschikbaarheid dun verspreid over concurrerende klantverplichtingen
 ❌ Scope die stilletjes uitdijt zonder natuurlijke grens of beoordeling
@@ -12,7 +12,7 @@ Als beveiligingskritiek werk leunt op één freelancer die tijd verdeelt over an
 
 Bij **LaunchStudio** ronden wij dit soort vastgelopen trajecten al sinds 2014 af via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-LaunchStudio dichtte het RLS-gat en leverde in 9 werkdagen, voor minder dan de negen weken uurfacturering van de contractor. (€ 2.000 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
+LaunchStudio dichtte het RLS-gat en leverde in 9 werkdagen, voor minder dan de negen weken uurfacturering van de contractor. (€ 2.000 (Launch & Grow Pakket) - 7 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-part-time-contractor
 

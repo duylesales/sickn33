@@ -28,7 +28,7 @@ A salon chain's payroll and point-of-sale system built around a single, globally
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around region-configurable gratuity-tax rules — able to apply the correct tip-versus-service-charge classification, withholding treatment, and reporting mechanics based on a specific location's actual jurisdiction — lets a chain comply with each state or country's specific requirements without either overcorrecting in permissive jurisdictions or under-correcting in stricter ones. This isn't simply a matter of toggling a single tip-versus-service-charge flag per location, since the underlying rules can be more nuanced than a binary classification — some jurisdictions apply different treatment depending on whether the gratuity amount is set by the salon (a mandatory percentage added to larger bookings) versus freely chosen by the client, meaning the system needs to support genuinely configurable classification logic per transaction type and jurisdiction, not just a single per-location switch, to accommodate the actual range of regulatory approaches a multi-location chain encounters.
+A system architected from the start around region-configurable gratuity-tax rules - able to apply the correct tip-versus-service-charge classification, withholding treatment, and reporting mechanics based on a specific location's actual jurisdiction - lets a chain comply with each state or country's specific requirements without either overcorrecting in permissive jurisdictions or under-correcting in stricter ones. This isn't simply a matter of toggling a single tip-versus-service-charge flag per location, since the underlying rules can be more nuanced than a binary classification - some jurisdictions apply different treatment depending on whether the gratuity amount is set by the salon (a mandatory percentage added to larger bookings) versus freely chosen by the client, meaning the system needs to support genuinely configurable classification logic per transaction type and jurisdiction, not just a single per-location switch, to accommodate the actual range of regulatory approaches a multi-location chain encounters.
 
 ## What Building Region-Configurable Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Salon Lohnabrechnung Graz, a Graz-based salon and spa chain, had built an initia
 Manifera's Amsterdam team rebuilt the payroll system's core architecture around a configurable, jurisdiction-specific gratuity ruleset, supporting both mandatory service-charge classification for stricter jurisdictions and voluntary-tip treatment for jurisdictions with more favorable tax handling, alongside reliable location-to-jurisdiction mapping, all without requiring separate, parallel payroll systems per country.
 
 > *"We'd built one gratuity rule and figured we'd just adjust it manually wherever it caused a problem. What we actually found was that the real regulatory picture across our markets was more varied than a single rule could handle, and building real configurability was what let us keep our stylists' pay accurate everywhere rather than just reacting location by location."*
-> — **IT Manager, Salon Lohnabrechnung Graz**
+> - **IT Manager, Salon Lohnabrechnung Graz**
 
 Salon Lohnabrechnung Graz successfully expanded into its additional target markets with jurisdiction-appropriate gratuity configurations, and now treats regulatory configurability as a standard architectural requirement for any new payroll mechanic, rather than a single global rule decided once.
 
@@ -79,7 +79,7 @@ Salon Lohnabrechnung Graz successfully expanded into its additional target marke
 
 ## Scoping Your Own Salon Chain's Payroll System for Regulatory Compliance
 
-Before expanding a salon or spa chain's payroll and point-of-sale system across multiple states or countries, architect the gratuity-tax logic around genuinely configurable, jurisdiction-specific rulesets — a single global rule forces an unnecessary trade-off between audit exposure and payroll accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready salon chain payroll system.
+Before expanding a salon or spa chain's payroll and point-of-sale system across multiple states or countries, architect the gratuity-tax logic around genuinely configurable, jurisdiction-specific rulesets - a single global rule forces an unnecessary trade-off between audit exposure and payroll accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready salon chain payroll system.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between risking misclassification and audit exposure in stric
 
 ### (Scenario: engineering lead scoping regional configurability) Is a simple per-location classification flag sufficient to handle gratuity tax rules across markets?
 
-Not always — some jurisdictions apply different treatment depending on whether the gratuity amount is salon-set or freely chosen by the client, meaning the system needs genuinely configurable classification logic, not just a single per-location switch.
+Not always - some jurisdictions apply different treatment depending on whether the gratuity amount is salon-set or freely chosen by the client, meaning the system needs genuinely configurable classification logic, not just a single per-location switch.
 
 ### (Scenario: payroll administrator reviewing technical architecture) Why does reliable location-to-jurisdiction mapping matter for gratuity compliance?
 
@@ -110,7 +110,7 @@ Gratuity and service-charge tax guidance is a genuinely active area of state and
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-location payroll system) Why does gratuity tax treatment vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Whether a gratuity is a voluntary tip or taxable service revenue genuinely varies by jurisdiction, with different states and EU member states applying different rules." } },
     { "@type": "Question", "name": "(Scenario: operations lead worried about compliance) What's the risk of building a payroll system around a single, globally uniform gratuity rule?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between audit exposure in stricter jurisdictions or over-withholding from employee pay in more permissive ones." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple per-location classification flag sufficient to handle gratuity tax rules across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some jurisdictions distinguish salon-set versus client-chosen gratuity amounts, requiring genuinely configurable classification logic." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple per-location classification flag sufficient to handle gratuity tax rules across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some jurisdictions distinguish salon-set versus client-chosen gratuity amounts, requiring genuinely configurable classification logic." } },
     { "@type": "Question", "name": "(Scenario: payroll administrator reviewing technical architecture) Why does reliable location-to-jurisdiction mapping matter for gratuity compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying jurisdiction-specific rules correctly depends on accurately identifying which state or country governs a specific location's payroll." } },
     { "@type": "Question", "name": "(Scenario: chain planning for future regulatory change) Why should a payroll system be designed to accommodate evolving gratuity guidance, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Gratuity tax guidance is actively evolving, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

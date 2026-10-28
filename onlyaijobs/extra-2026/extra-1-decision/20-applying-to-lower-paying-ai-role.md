@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The role is the one you want: real modelling work, a team that deploys things, a manager who understands what you do. The salary is below what you earn now. Somewhere between the excitement and the spreadsheet sits a decision that people get wrong in both directions — accepting cuts that were never necessary, or declining moves that would have paid for themselves within two years. Salary is the easiest thing to compare and the worst single criterion to decide on, but "follow your passion" is equally useless advice when rent is involved. What helps is knowing which kinds of pay cuts tend to reverse quickly and which tend to persist.
+The role is the one you want: real modelling work, a team that deploys things, a manager who understands what you do. The salary is below what you earn now. Somewhere between the excitement and the spreadsheet sits a decision that people get wrong in both directions - accepting cuts that were never necessary, or declining moves that would have paid for themselves within two years. Salary is the easiest thing to compare and the worst single criterion to decide on, but "follow your passion" is equally useless advice when rent is involved. What helps is knowing which kinds of pay cuts tend to reverse quickly and which tend to persist.
 
 ## Situations Where a Pay Cut Commonly Appears
 
@@ -55,11 +55,11 @@ The role is the one you want: real modelling work, a team that deploys things, a
 
 In the Netherlands, comparing gross salaries alone is misleading. Before concluding anything, put both packages on the same footing.
 
-Holiday allowance of at least 8%, a thirteenth month where it exists, employer pension contributions, travel reimbursement, working hours — 36 versus 40 makes a noticeable difference to the effective hourly rate — leave days, training budget and any collective agreement that governs future increases.
+Holiday allowance of at least 8%, a thirteenth month where it exists, employer pension contributions, travel reimbursement, working hours - 36 versus 40 makes a noticeable difference to the effective hourly rate - leave days, training budget and any collective agreement that governs future increases.
 
 Then subtract the costs each role imposes: commuting time converted into money if it matters to you, parking, childcare timing, and for international professionals whether tax arrangements such as the 30% ruling apply and for how long.
 
-As the EU Pay Transparency Directive is implemented, employers must provide pay information before the interview and base pay on objective criteria, which makes this comparison far easier to do early. Quite often the apparent cut shrinks to a rounding difference — or disappears.
+As the EU Pay Transparency Directive is implemented, employers must provide pay information before the interview and base pay on objective criteria, which makes this comparison far easier to do early. Quite often the apparent cut shrinks to a rounding difference - or disappears.
 
 ## When a Pay Cut Is Usually Worth It
 
@@ -85,7 +85,7 @@ As the EU Pay Transparency Directive is implemented, employers must provide pay 
 
 **Your fixed obligations cannot absorb it.** Mortgage payments, rent, childcare and loans are not flexible, and lenders assess income stability closely.
 
-**It is a correction of an underpayment you never fixed.** If you are below market now, your next employer's lower offer may reflect their assumption rather than your value — and pay history questions are prohibited under the transparency rules, so the number is negotiable on its merits.
+**It is a correction of an underpayment you never fixed.** If you are below market now, your next employer's lower offer may reflect their assumption rather than your value - and pay history questions are prohibited under the transparency rules, so the number is negotiable on its merits.
 
 **You would resent it.** Predictable resentment damages performance and usually ends the role within a year.
 
@@ -139,13 +139,13 @@ A lower gross salary changes more than your monthly transfer, and the secondary 
 
 **Unemployment and disability cover.** Benefit entitlements are related to earned income, which is worth knowing if your sector is volatile.
 
-**Holiday allowance and any thirteenth month.** These are usually percentages of salary, so a lower base reduces them proportionally — which is why comparing full packages rather than base salaries matters.
+**Holiday allowance and any thirteenth month.** These are usually percentages of salary, so a lower base reduces them proportionally - which is why comparing full packages rather than base salaries matters.
 
 None of these make a pay cut wrong. They make the real figure different from the one in the offer letter, usually by more than people expect in one direction or the other. Ten minutes with official calculators before you decide is a better use of time than a second reading of the job description.
 
 ## What to Tell the Employer
 
-Say plainly that the role interests you, that the offer is below your current package, and ask what flexibility exists. Give the number you need and why, in terms of the role rather than your history — you cannot be asked about pay history under the transparency rules, and you do not need to volunteer it.
+Say plainly that the role interests you, that the offer is below your current package, and ask what flexibility exists. Give the number you need and why, in terms of the role rather than your history - you cannot be asked about pay history under the transparency rules, and you do not need to volunteer it.
 
 If they cannot move on salary, ask what else they can move on. If the answer is nothing at all, that is information about how they treat employees who ask for things, and it is worth knowing before rather than after.
 
@@ -153,7 +153,7 @@ If they cannot move on salary, ask what else they can move on. If the answer is 
 
 ### A supply chain planner in Venlo who took less for two years
 
-A supply chain planner in Venlo with eight years of experience wants to move into forecasting and data science. The roles he wants all list requirements he half meets, and the one offer he receives — a medior data analyst position at a logistics company thirty minutes away — pays noticeably less than his current job.
+A supply chain planner in Venlo with eight years of experience wants to move into forecasting and data science. The roles he wants all list requirements he half meets, and the one offer he receives - a medior data analyst position at a logistics company thirty minutes away - pays noticeably less than his current job.
 
 He does the full comparison. The new employer has a slightly better pension contribution, a thirteenth month and a 36-hour week against his current 40, plus a shorter commute. On a net, per-hour basis the gap is much smaller than the gross figures suggested.
 
@@ -171,7 +171,7 @@ Eighteen months later the review happens as agreed and his salary moves above hi
 
 ## Where to Start
 
-Before accepting less, check what comparable roles near you actually offer — with pay transparency, ranges are increasingly visible, and knowing the local market turns a leap of faith into a calculation.
+Before accepting less, check what comparable roles near you actually offer - with pay transparency, ranges are increasingly visible, and knowing the local market turns a leap of faith into a calculation.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -190,7 +190,7 @@ Only with a written review date and stated criteria. A verbal promise of "we wil
 Training budget with protected time, an extra leave day, a four-day week, travel reimbursement, home-working allowance and the job title.
 
 ### (Scenario: candidate worried about future offers) Does accepting less now affect my future salary?
-It can, because increases compound from a lower base — which is why a written review point matters, and why pay history questions are prohibited when you next apply.
+It can, because increases compound from a lower base - which is why a written review point matters, and why pay history questions are prohibited when you next apply.
 
 <script type="application/ld+json">
 {

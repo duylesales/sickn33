@@ -3,7 +3,7 @@
 "I'll do it for equity instead of cash" sounds friendly when you're broke. It's often one of the most expensive decisions a founder makes: 😱
 
 ❌ €3,000 cash feels expensive TODAY
-❌ 10% equity feels FREE today — no invoice, no bank hit
+❌ 10% equity feels FREE today - no invoice, no bank hit
 ❌ But that 10% claims your ENTIRE future value, diluted at every future round
 
 When equity actually makes sense: ✅
@@ -17,7 +17,7 @@ When it's a bad trade: ❌
 
 The framework: get a REAL cash quote first, then calculate what the equity % is worth at a future valuation. It's usually eye-opening. 🧠
 
-⚠️ Hidden trap most founders miss: equity given informally is often FULLY VESTED on day one — no cliff, no clawback. Developer disappears next week? That equity is permanently theirs. Always demand vesting + a signed IP assignment.
+⚠️ Hidden trap most founders miss: equity given informally is often FULLY VESTED on day one - no cliff, no clawback. Developer disappears next week? That equity is permanently theirs. Always demand vesting + a signed IP assignment.
 
 At **LaunchStudio**, fixed pricing from €800 means founders can compare real numbers before giving away their company. 🛡️🚀
 

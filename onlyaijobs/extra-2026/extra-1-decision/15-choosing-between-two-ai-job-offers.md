@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Having two offers is a good problem, and it is still a problem. The pressure is real: both employers want an answer, one deadline is earlier than the other, and the comparison that looked obvious yesterday looks different this morning. Most people in this situation reach for the one number they can compare directly — the salary — and decide on that. Two years later, the people who regret their choice rarely mention money. They mention a manager, a stack that never got fixed, a commute that wore them down, or work that turned out to be reporting rather than modelling. A structured comparison takes an evening and is worth considerably more than the difference between two salary offers.
+Having two offers is a good problem, and it is still a problem. The pressure is real: both employers want an answer, one deadline is earlier than the other, and the comparison that looked obvious yesterday looks different this morning. Most people in this situation reach for the one number they can compare directly - the salary - and decide on that. Two years later, the people who regret their choice rarely mention money. They mention a manager, a stack that never got fixed, a commute that wore them down, or work that turned out to be reporting rather than modelling. A structured comparison takes an evening and is worth considerably more than the difference between two salary offers.
 
 ## Step One: Compare the Whole Package, Not the Salary
 
@@ -57,7 +57,7 @@ In the Netherlands, gross salary is only part of the picture. Put both offers si
 
 **Collective agreement.** If one employer falls under a cao, salary scales, increases and conditions may be more predictable.
 
-As the EU Pay Transparency Directive is implemented, employers must provide pay information before interviews and base pay on objective criteria — which makes it reasonable to ask where each offer sits within its range and what determines movement inside it.
+As the EU Pay Transparency Directive is implemented, employers must provide pay information before interviews and base pay on objective criteria - which makes it reasonable to ask where each offer sits within its range and what determines movement inside it.
 
 ## Step Two: Compare the Work Itself
 
@@ -99,7 +99,7 @@ Two offers that look identical financially can differ significantly here, and th
 
 ## A Scoring Method That Avoids Self-Deception
 
-Write down your criteria before you look at the offers again, and weight them. A simple version: work content 30%, people and manager 25%, growth and learning 20%, total package 15%, commute and flexibility 10% — adjusted to your own situation.
+Write down your criteria before you look at the offers again, and weight them. A simple version: work content 30%, people and manager 25%, growth and learning 20%, total package 15%, commute and flexibility 10% - adjusted to your own situation.
 
 Score each offer on each criterion, then check the result against your instinct. When the arithmetic and the instinct disagree, that disagreement is the useful part: either a criterion is weighted wrongly, or something you have not articulated is bothering you about one of the offers. Both are worth finding out before you sign.
 
@@ -107,7 +107,7 @@ Score each offer on each criterion, then check the result against your instinct.
 
 Both employers have shown you their best version: the manager who has prepared, the office on a good day, the roadmap as it is meant to go. One conversation with a current employee gives you something different.
 
-Ask each employer to arrange a short call with a future colleague — not a manager, and ideally someone who joined in the last year or two. Most reasonable organisations agree. Someone who joined recently remembers what surprised them, which is exactly what you want to know.
+Ask each employer to arrange a short call with a future colleague - not a manager, and ideally someone who joined in the last year or two. Most reasonable organisations agree. Someone who joined recently remembers what surprised them, which is exactly what you want to know.
 
 Useful questions: what surprised you in the first three months, what took longer than expected, how are decisions actually made, and what would you change if you could. Also ask what happened to the last person in a role like the one you are considering.
 
@@ -129,7 +129,7 @@ Do not accept an offer you intend to reconsider. Withdrawing an acceptance is po
 
 Both offers describe a starting point. Few describe what comes after it, and that is where the difference between two similar roles usually shows up.
 
-Ask each employer the same three questions. What does someone in this role typically work on in their second year? How have people in this position developed — internally, or by leaving? What would make you consider this hire a success twelve months from now?
+Ask each employer the same three questions. What does someone in this role typically work on in their second year? How have people in this position developed - internally, or by leaving? What would make you consider this hire a success twelve months from now?
 
 The answers separate organisations that think about careers from those filling a gap. An employer who can describe a second-year project, name two people who grew from this role and state a concrete success measure has thought about the position as more than a vacancy.
 
@@ -141,7 +141,7 @@ It is also worth asking what happens if the first project fails. Every data proj
 
 When two options remain genuinely close, ask which mistake is easier to correct.
 
-Probation periods in the Netherlands are short and capped by law, which cuts both ways: you can leave a bad fit quickly, and so can the employer. A role that builds transferable skills — production experience, a portfolio you can show, a domain that exists in many companies — keeps future options open. A role that is comfortable but narrow can quietly reduce them.
+Probation periods in the Netherlands are short and capped by law, which cuts both ways: you can leave a bad fit quickly, and so can the employer. A role that builds transferable skills - production experience, a portfolio you can show, a domain that exists in many companies - keeps future options open. A role that is comfortable but narrow can quietly reduce them.
 
 If neither offer is clearly better on substance, choose the one that leaves you with more choices in two years.
 
@@ -153,7 +153,7 @@ A data scientist in Breda holds two offers. The first, from a scale-up in Amster
 
 She builds the comparison. Including holiday allowance, the thirteenth month, pension contributions and travel reimbursement, the gap narrows substantially. Weekly commuting differs by almost four hours. On the work itself, the scale-up describes an existing team and a clear production pipeline; the manufacturer describes a first data hire with a specific quality-inspection problem and an engaged sponsor, but no peer to review her code.
 
-She asks both employers one more question — who reviews my work — and the manufacturer arranges a part-time external mentor as part of the offer. That changes the balance.
+She asks both employers one more question - who reviews my work - and the manufacturer arranges a part-time external mentor as part of the offer. That changes the balance.
 
 She takes the manufacturer role, with the mentor arrangement in writing. Two years later she leads a small team there. The spreadsheet did not make the decision; it showed her which question was still unanswered.
 
@@ -167,7 +167,7 @@ She takes the manufacturer role, with the mentor arrangement in writing. Two yea
 
 ## Where to Start
 
-Before you decide between two offers, spend twenty minutes checking what else exists within your radius — so you are choosing between these two and the real market, not between these two and a guess.
+Before you decide between two offers, spend twenty minutes checking what else exists within your radius - so you are choosing between these two and the real market, not between these two and a guess.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -177,13 +177,13 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Put both on the same basis: gross salary plus holiday allowance, thirteenth month, pension contributions, travel reimbursement, working hours, leave and training budget.
 
 ### (Scenario: candidate with a deadline) Can I ask an employer for more time to decide?
-Yes — ask for a specific short extension with a reason. Most employers agree, and an outright refusal says something about the organisation.
+Yes - ask for a specific short extension with a reason. Most employers agree, and an outright refusal says something about the organisation.
 
 ### (Scenario: candidate unsure which matters most) Which factor do people most often regret ignoring?
 Commute and the quality of the manager and team. Salary differences fade; a long daily journey and a poor working relationship do not.
 
 ### (Scenario: candidate with two similar offers) What should I do when both offers score almost the same?
-Choose the one that leaves you with more options in two years — usually the role that builds production experience and transferable skills.
+Choose the one that leaves you with more options in two years - usually the role that builds production experience and transferable skills.
 
 ### (Scenario: candidate who accepted and hesitates) Can I withdraw an acceptance before signing?
 Legally it may be possible before a contract exists, but it damages your reputation in a small market. Ask for time before accepting instead.
@@ -194,7 +194,7 @@ Legally it may be possible before a contract exists, but it damages your reputat
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How do I compare two Dutch job offers fairly?", "acceptedAnswer": {"@type": "Answer", "text": "Compare gross salary plus holiday allowance, thirteenth month, pension, travel reimbursement, hours, leave and training budget."}},
-    {"@type": "Question", "name": "Can I ask an employer for more time to decide?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — request a specific short extension; most employers agree."}},
+    {"@type": "Question", "name": "Can I ask an employer for more time to decide?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - request a specific short extension; most employers agree."}},
     {"@type": "Question", "name": "Which factor do people most often regret ignoring?", "acceptedAnswer": {"@type": "Answer", "text": "Commute and the quality of the manager and team."}},
     {"@type": "Question", "name": "What should I do when both offers score almost the same?", "acceptedAnswer": {"@type": "Answer", "text": "Choose the role that leaves more options in two years."}},
     {"@type": "Question", "name": "Can I withdraw an acceptance before signing?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly, but it costs reputation in a small market; ask for time instead."}}

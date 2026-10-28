@@ -4,7 +4,7 @@ A startup hires 5 freelance developers to save capital. Six months later, the co
 
 The CEO blames the developers. But the problem was the lack of a **Software Development Manager**.
 
-When you buy offshore talent directly, you buy *Syntax Knowledge* (they know how to type React code). But you lack *Domain Knowledge* and architectural governance. Without a Tech Lead, offshore developers become a "Feature Factory"—blindly closing Jira tickets even if the feature structurally destroys the database.
+When you buy offshore talent directly, you buy *Syntax Knowledge* (they know how to type React code). But you lack *Domain Knowledge* and architectural governance. Without a Tech Lead, offshore developers become a "Feature Factory" - blindly closing Jira tickets even if the feature structurally destroys the database.
 
 *"A developer's job is to write code. An SDM's job is to ensure the code should actually be written."*
 

@@ -1,4 +1,4 @@
-🚨 Wendy Hoogland, innovatiemanager bij een Zwolse woningcorporatie met zo'n 12.000 woningen, bouwde Reparatiemelder in Lovable: huurders melden reparaties met foto's, krijgen een tijdvak voor de afspraak en volgen de voortgang. Een pilot van drie maanden met 400 huurders verminderde het aantal telefoontjes naar de reparatiedesk met een derde. Daarna liep de volledige uitrol vast — vijf maanden lang. 😳
+🚨 Wendy Hoogland, innovatiemanager bij een Zwolse woningcorporatie met zo'n 12.000 woningen, bouwde Reparatiemelder in Lovable: huurders melden reparaties met foto's, krijgen een tijdvak voor de afspraak en volgen de voortgang. Een pilot van drie maanden met 400 huurders verminderde het aantal telefoontjes naar de reparatiedesk met een derde. Daarna liep de volledige uitrol vast - vijf maanden lang. 😳
 
 De interne IT kwam met de verwachte bezwaren: inloggen voor huurders los van het huurdersportaal, gedeelde accounts voor medewerkers, data in een Supabase-project in een Amerikaanse regio, foto's van woningen van huurders in openbare opslag, geen verwerkingsregister, geen logging en geen eigenaar voor support. De eigen schatting van IT om het op het platform van de corporatie opnieuw te bouwen: negen maanden. Zo krijgen corporate innovatieteams een AI-app naar productie zonder IT te omzeilen:
 
@@ -10,7 +10,7 @@ De interne IT kwam met de verwachte bezwaren: inloggen voor huurders los van het
 ✅ IT en de privacyfunctionaris stelden de eisen
 ✅ SSO voor medewerkers via Microsoft Entra ID en inloggen voor huurders via de identiteitsprovider van het bestaande huurdersportaal
 ✅ Toegang per huurder en complex in de database, migratie naar de EU onder de verwerkersovereenkomst van de corporatie, privéopslag van foto's
-✅ Auditlogs geëxporteerd naar de monitoring van IT, documentatie en een runbook — onder een managed-serviceafspraak met een gedocumenteerd exitplan
+✅ Auditlogs geëxporteerd naar de monitoring van IT, documentatie en een runbook - onder een managed-serviceafspraak met een gedocumenteerd exitplan
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, beantwoorden we de vragen van IT in weken in plaats van kwartalen. ⚙️
 

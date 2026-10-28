@@ -50,7 +50,7 @@ The demand is steady and the supply of people who do it well is not.
 
 **Regression with engineered features.** Gradient boosting on lag features, calendar variables, holidays, promotions and weather is the workhorse for many commercial problems, especially with many related series.
 
-**Hierarchical approaches.** Most real forecasting is hierarchical — item within store within region — and reconciling forecasts so levels are consistent is a distinct technical skill.
+**Hierarchical approaches.** Most real forecasting is hierarchical - item within store within region - and reconciling forecasts so levels are consistent is a distinct technical skill.
 
 **Intermittent demand methods.** Series that are zero most of the time need specific treatment; standard error metrics mislead badly here.
 
@@ -64,7 +64,7 @@ Random cross-validation on time series is wrong, and interviewers use it as a sc
 
 Correct practice uses time-based splits and rolling-origin evaluation: train on data up to a point, forecast forward the horizon you actually need, move the origin, repeat. Your evaluation must mirror the real situation, including what information is genuinely available at forecast time.
 
-Metric choice matters too. Percentage errors break with zeros and penalise asymmetrically; scaled errors relative to a naive forecast are more interpretable across series of different magnitudes. And the business asymmetry — whether over-forecasting or under-forecasting costs more — should shape both the metric and, sometimes, the loss function.
+Metric choice matters too. Percentage errors break with zeros and penalise asymmetrically; scaled errors relative to a naive forecast are more interpretable across series of different magnitudes. And the business asymmetry - whether over-forecasting or under-forecasting costs more - should shape both the metric and, sometimes, the loss function.
 
 ## Understanding the Data Before Modelling
 
@@ -72,7 +72,7 @@ Forecasting rewards patience with the series itself, and experienced practitione
 
 **Decompose first.** Separate trend, seasonality and remainder, and look at them. Multiple seasonalities are common: daily and weekly patterns in energy and traffic, weekly and annual patterns in retail, and sometimes monthly payroll cycles on top.
 
-**Find the breaks.** Series contain structural changes — a new store opened, a product was relaunched, a pandemic, a pricing change, a system migration that altered how the data was recorded. A model fitted across a break will produce confident nonsense.
+**Find the breaks.** Series contain structural changes - a new store opened, a product was relaunched, a pandemic, a pricing change, a system migration that altered how the data was recorded. A model fitted across a break will produce confident nonsense.
 
 **Check the calendar carefully.** European holidays differ by country and often by region, Easter moves, school holidays are staggered deliberately, and a public holiday falling on a Thursday changes the whole week. Building a proper holiday calendar for the markets you serve is unglamorous and materially improves accuracy.
 
@@ -86,7 +86,7 @@ Examples appear constantly. A model uses this week's promotion flag, but promoti
 
 Each of these produces excellent backtest results and disappointing production behaviour.
 
-The discipline is to build a table of every input with two columns: when the value becomes known, and how accurate the version available at forecast time is. Where a driver is itself forecast — weather, prices, macroeconomic indicators — you must evaluate using forecast values, including their errors, not the eventual truth.
+The discipline is to build a table of every input with two columns: when the value becomes known, and how accurate the version available at forecast time is. Where a driver is itself forecast - weather, prices, macroeconomic indicators - you must evaluate using forecast values, including their errors, not the eventual truth.
 
 This also affects horizon design. Many operations need several horizons for different decisions: a day ahead for staffing, six weeks for ordering, a year for capacity. Each has different information available, and treating them as one problem is a common design error.
 
@@ -120,7 +120,7 @@ Operational forecasting systems have characteristics that differ from one-off an
 
 **Scale.** A retailer may forecast millions of item-store combinations daily. Fitting a bespoke model per series is impossible; you need approaches that train once across many series, or fast automated fitting with sensible defaults.
 
-**Schedules and dependencies.** Forecasts feed planning systems with deadlines. If the pipeline fails at three in the morning, someone needs a fallback — usually last week's forecast or a naive estimate — so the downstream process still runs.
+**Schedules and dependencies.** Forecasts feed planning systems with deadlines. If the pipeline fails at three in the morning, someone needs a fallback - usually last week's forecast or a naive estimate - so the downstream process still runs.
 
 **Monitoring.** Forecast accuracy should be tracked continuously and by segment, with alerts when a segment degrades. Because outcomes arrive later than predictions, monitoring requires storing forecasts with their vintage and joining to actuals when they appear.
 
@@ -142,7 +142,7 @@ Finally, respect what the forecast is for. Accuracy is not the objective; better
 
 Forecasting is one of the easiest specialisms in which to build convincing evidence, because good public data is abundant across Europe.
 
-National statistics offices, energy grid operators, transport authorities and weather services publish long, real series with genuine seasonality and structural breaks. Pick one domain — electricity demand, traffic counts, water consumption, retail sales indices — and work it properly.
+National statistics offices, energy grid operators, transport authorities and weather services publish long, real series with genuine seasonality and structural breaks. Pick one domain - electricity demand, traffic counts, water consumption, retail sales indices - and work it properly.
 
 A portfolio project that impresses looks like this: a naive baseline established first; rolling-origin validation with a stated horizon; three approaches compared, including a classical method; a holiday and calendar treatment specific to the country; prediction intervals with coverage measured; an error analysis showing where the model fails and why; and a short write-up of what you would monitor in production.
 
@@ -152,7 +152,7 @@ That is perhaps thirty hours of work and it demonstrates almost everything inter
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show the exact address and distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a better position.
 
-Forecasting roles are often advertised under titles that do not mention it — demand planning analyst, supply chain data scientist, energy analyst, operations research specialist — so read vacancy text rather than filtering on titles. Because the board carries only data and AI roles, scanning full descriptions is realistic rather than exhausting.
+Forecasting roles are often advertised under titles that do not mention it - demand planning analyst, supply chain data scientist, energy analyst, operations research specialist - so read vacancy text rather than filtering on titles. Because the board carries only data and AI roles, scanning full descriptions is realistic rather than exhausting.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Sendcloud, Rexel, AMCS and Heijmans among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -162,7 +162,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 A retail group in Europe replaced its statistical forecasting system with a machine learning model that reduced average error across all products by a meaningful margin. The planning team rejected it.
 
-The reason emerged in a workshop. The improvement was concentrated in high-volume products, which planners never worried about. On slow-moving items — where they actually had to decide whether to hold stock — the new model was worse, because the error metric used in development had effectively ignored them.
+The reason emerged in a workshop. The improvement was concentrated in high-volume products, which planners never worried about. On slow-moving items - where they actually had to decide whether to hold stock - the new model was worse, because the error metric used in development had effectively ignored them.
 
 The team rebuilt the evaluation: segmented by product velocity, reported against a naive baseline per segment, and weighted by the cost consequence of error rather than by volume. The final system used different approaches for fast and slow items, including an intermittent demand method that the original project had never considered.
 

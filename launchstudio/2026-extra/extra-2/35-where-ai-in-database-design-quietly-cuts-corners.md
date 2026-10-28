@@ -31,23 +31,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Using AI in database design speeds up something founders rarely think about explicitly: seeding an initial administrator account so there's something to log into on day one. That seed account almost always ships with a simple, predictable default password meant purely to get development started — and the quiet assumption that someone will change it before launch turns out to be exactly the kind of assumption nothing in the system actually enforces.
+Using AI in database design speeds up something founders rarely think about explicitly: seeding an initial administrator account so there's something to log into on day one. That seed account almost always ships with a simple, predictable default password meant purely to get development started - and the quiet assumption that someone will change it before launch turns out to be exactly the kind of assumption nothing in the system actually enforces.
 
 ## Why Seed Accounts Exist and Why Their Defaults Are Predictable
 
-Setting up a new application's database typically requires at least one account to log in and configure things — an AI coding tool generating this initial setup reasonably creates a default admin account with a simple, memorable placeholder password, intended purely as a starting point for the founder to immediately change. This is a completely reasonable development convenience, not a flaw in the tool's design. The alternative — generating a random, unmemorable password nobody can actually use to get started — would make the initial setup experience worse for the overwhelming majority of legitimate use, purely to guard against a scenario (the placeholder never getting changed) that a tool has no way of predicting will actually happen.
+Setting up a new application's database typically requires at least one account to log in and configure things - an AI coding tool generating this initial setup reasonably creates a default admin account with a simple, memorable placeholder password, intended purely as a starting point for the founder to immediately change. This is a completely reasonable development convenience, not a flaw in the tool's design. The alternative - generating a random, unmemorable password nobody can actually use to get started - would make the initial setup experience worse for the overwhelming majority of legitimate use, purely to guard against a scenario (the placeholder never getting changed) that a tool has no way of predicting will actually happen.
 
 ## Why "Immediately Change It" Doesn't Always Happen Immediately
 
-Amid the genuine excitement of getting a new product running for the first time, changing a placeholder admin password is a small, easy-to-defer task compared to the more visible, more exciting work of building out actual features — and because the default credential continues working exactly as intended for the founder's own convenience, there's no natural friction ever prompting a return to that one, small, forgotten step. Weeks or months later, once the product is live and the founder's attention has long since moved to customers, growth, and new features, that early to-do item has typically dropped off the list entirely, not through carelessness but simply because nothing about daily use of the product ever surfaces it again.
+Amid the genuine excitement of getting a new product running for the first time, changing a placeholder admin password is a small, easy-to-defer task compared to the more visible, more exciting work of building out actual features - and because the default credential continues working exactly as intended for the founder's own convenience, there's no natural friction ever prompting a return to that one, small, forgotten step. Weeks or months later, once the product is live and the founder's attention has long since moved to customers, growth, and new features, that early to-do item has typically dropped off the list entirely, not through carelessness but simply because nothing about daily use of the product ever surfaces it again.
 
 ## Why Default Credentials Are Specifically, Actively Targeted
 
-Unlike most vulnerabilities, which require some discovery effort, common default credential patterns are extensively documented and specifically targeted by automated tools that simply attempt well-known default username-and-password combinations against any reachable admin login page they find, at scale, across the internet — no custom targeting or discovery required on the attacker's part at all. These scans run continuously and indiscriminately, working through lists of known frameworks' default admin paths and credential pairs against millions of publicly reachable addresses; a newly launched product doesn't need to attract any attention or notoriety to be found this way, only to be reachable.
+Unlike most vulnerabilities, which require some discovery effort, common default credential patterns are extensively documented and specifically targeted by automated tools that simply attempt well-known default username-and-password combinations against any reachable admin login page they find, at scale, across the internet - no custom targeting or discovery required on the attacker's part at all. These scans run continuously and indiscriminately, working through lists of known frameworks' default admin paths and credential pairs against millions of publicly reachable addresses; a newly launched product doesn't need to attract any attention or notoriety to be found this way, only to be reachable.
 
 ## Why This Specific Gap Grants Disproportionate Access
 
-Unlike many narrower vulnerabilities affecting a single feature, a compromised admin account typically grants broad, sweeping access — user data, financial records, the ability to modify core settings — meaning the "small, easy-to-defer task" of changing a default password carries a disproportionately large downside relative to how little effort the fix itself actually requires. Most vulnerabilities are bounded to a specific feature or data type; an admin account, by design, isn't bounded that way at all, which is exactly why it's worth treating as the single highest-priority item on any pre-launch checklist rather than one item among many of similar weight.
+Unlike many narrower vulnerabilities affecting a single feature, a compromised admin account typically grants broad, sweeping access - user data, financial records, the ability to modify core settings - meaning the "small, easy-to-defer task" of changing a default password carries a disproportionately large downside relative to how little effort the fix itself actually requires. Most vulnerabilities are bounded to a specific feature or data type; an admin account, by design, isn't bounded that way at all, which is exactly why it's worth treating as the single highest-priority item on any pre-launch checklist rather than one item among many of similar weight.
 
 ## What Closing This Gap Actually Involves
 
@@ -61,13 +61,13 @@ Manifera's pre-launch configuration audits are performed by the engineering team
 
 Default admin passwords are the most consequential version of this pattern, but they're rarely the only unchanged default sitting in a newly launched product. Before opening a product to real customers, it's worth deliberately working through each of these:
 
-- **Admin and seed accounts** — every account an AI coding tool or database setup process created automatically during development, confirming each either has a genuinely unique password or has been disabled entirely.
-- **API keys and third-party service credentials** — payment processors, email services, and analytics tools often ship with separate test and live keys; launching while a test key is still wired into a live-facing feature can silently break functionality rather than expose data, but the opposite mistake (a real key hardcoded in a place meant for a placeholder) can leak actual credentials.
-- **Database connection strings** — a default local development password left unchanged in a production database connection string is functionally identical to a default admin login, just one layer further from the user-facing interface.
-- **Demo or seed data** — sample listings, test user accounts, or placeholder content generated during development that's still live and publicly visible after launch, which is more of a polish issue than a security one, but still worth a deliberate check.
-- **Environment variables and configuration flags** — a "debug mode" or "verbose logging" flag left on from development can expose more internal detail in error messages than a production system should ever reveal to a regular user.
+- **Admin and seed accounts** - every account an AI coding tool or database setup process created automatically during development, confirming each either has a genuinely unique password or has been disabled entirely.
+- **API keys and third-party service credentials** - payment processors, email services, and analytics tools often ship with separate test and live keys; launching while a test key is still wired into a live-facing feature can silently break functionality rather than expose data, but the opposite mistake (a real key hardcoded in a place meant for a placeholder) can leak actual credentials.
+- **Database connection strings** - a default local development password left unchanged in a production database connection string is functionally identical to a default admin login, just one layer further from the user-facing interface.
+- **Demo or seed data** - sample listings, test user accounts, or placeholder content generated during development that's still live and publicly visible after launch, which is more of a polish issue than a security one, but still worth a deliberate check.
+- **Environment variables and configuration flags** - a "debug mode" or "verbose logging" flag left on from development can expose more internal detail in error messages than a production system should ever reveal to a regular user.
 
-None of these individually take long to check, and none require deep technical expertise to understand once flagged — the actual failure mode isn't difficulty, it's simply that nobody built a deliberate, systematic pass through this list into the excitement of shipping a new product. That systematic pass is exactly what a pre-launch review is for.
+None of these individually take long to check, and none require deep technical expertise to understand once flagged - the actual failure mode isn't difficulty, it's simply that nobody built a deliberate, systematic pass through this list into the excitement of shipping a new product. That systematic pass is exactly what a pre-launch review is for.
 
 ## Real example
 
@@ -75,14 +75,14 @@ None of these individually take long to check, and none require deep technical e
 
 Rick, a former gallery assistant turned founder in Schiedam, built KunstMarkt, an AI-assisted art marketplace connecting independent artists with buyers, built with v0, launched with an administrative dashboard for managing listings, sellers, and commission payouts.
 
-Weeks after a modest launch, Rick received an alarmed message from a seller noticing unfamiliar changes to commission rates across the platform. LaunchStudio's review found the admin dashboard's original seed account was still active with its original, unchanged default password — one that matched a widely documented default pattern for the specific framework KunstMarkt had been built on.
+Weeks after a modest launch, Rick received an alarmed message from a seller noticing unfamiliar changes to commission rates across the platform. LaunchStudio's review found the admin dashboard's original seed account was still active with its original, unchanged default password - one that matched a widely documented default pattern for the specific framework KunstMarkt had been built on.
 
 **Result:** LaunchStudio immediately disabled the default account, established properly unique administrator credentials, and audited KunstMarkt's broader configuration for any other unchanged defaults, closing the exposure and restoring the correct commission rates.
 
 > *"I genuinely remember thinking 'I'll change that later' during the excitement of getting the whole marketplace running for the first time. Later just never specifically happened until this forced the issue."*
-> — **Rick Boersma, Founder, KunstMarkt (Schiedam)**
+> - **Rick Boersma, Founder, KunstMarkt (Schiedam)**
 
-**Cost & Timeline:** €1,700 (default credential remediation and configuration audit) — completed in 6 business days.
+**Cost & Timeline:** €1,700 (default credential remediation and configuration audit) - completed in 6 business days.
 
 ---
 
@@ -90,27 +90,27 @@ Weeks after a modest launch, Rick received an alarmed message from a seller noti
 
 ### Would a security researcher describe default-credential exploitation as requiring sophisticated technique?
 
-No, it's specifically one of the least sophisticated, most automatable categories of exploitation that exists, precisely because it requires no custom discovery or technique at all — just systematically trying well-documented default combinations against any reachable login page, which is exactly why it's so commonly targeted at scale.
+No, it's specifically one of the least sophisticated, most automatable categories of exploitation that exists, precisely because it requires no custom discovery or technique at all - just systematically trying well-documented default combinations against any reachable login page, which is exactly why it's so commonly targeted at scale.
 
 ### Does this risk only apply to admin accounts specifically, or other kinds of default configuration too?
 
-It applies most severely to admin accounts given the broad access they typically grant, but the same underlying pattern — a placeholder value intended to be changed before launch, but not enforced to be — can apply to other default configuration values too, like a default API key or a placeholder database connection string.
+It applies most severely to admin accounts given the broad access they typically grant, but the same underlying pattern - a placeholder value intended to be changed before launch, but not enforced to be - can apply to other default configuration values too, like a default API key or a placeholder database connection string.
 
-### Manifera has deployed production systems across many different frameworks and platforms — does that variety help catch framework-specific default credential patterns?
+### Manifera has deployed production systems across many different frameworks and platforms - does that variety help catch framework-specific default credential patterns?
 
-Yes, directly — different frameworks and platforms ship with their own specific, documented default credential patterns, and having broad, direct experience across many of them means a review can quickly recognize and check for the specific pattern relevant to whichever framework a founder's AI tool happened to use.
+Yes, directly - different frameworks and platforms ship with their own specific, documented default credential patterns, and having broad, direct experience across many of them means a review can quickly recognize and check for the specific pattern relevant to whichever framework a founder's AI tool happened to use.
 
-### Herre Roelevink has spoken about founders needing a second, deliberate pass rather than assuming things will get handled "eventually" — does this case fit that description precisely?
+### Herre Roelevink has spoken about founders needing a second, deliberate pass rather than assuming things will get handled "eventually" - does this case fit that description precisely?
 
-About as precisely as any example could — Rick's own account of the gap was literally "I'll change that later," which is exactly the kind of well-intentioned but unenforced deferral Roelevink's philosophy of a dedicated, deliberate review pass is specifically designed to catch before it becomes a real incident.
+About as precisely as any example could - Rick's own account of the gap was literally "I'll change that later," which is exactly the kind of well-intentioned but unenforced deferral Roelevink's philosophy of a dedicated, deliberate review pass is specifically designed to catch before it becomes a real incident.
 
 ### Is there a way to make sure a seed admin account can't be forgotten about in the first place?
 
-A reasonable practice is designing the initial setup flow to actively force a credential change on first login, rather than allowing the placeholder to remain functional indefinitely — this is exactly the kind of small, deliberate design decision a proper review checks for and can add if it wasn't already part of the original build.
+A reasonable practice is designing the initial setup flow to actively force a credential change on first login, rather than allowing the placeholder to remain functional indefinitely - this is exactly the kind of small, deliberate design decision a proper review checks for and can add if it wasn't already part of the original build.
 
 ### Is checking for default credentials something a non-technical founder can realistically do themselves before launch?
 
-Partially — a founder can reasonably check for obvious cases, like confirming they've personally changed any admin password they know they set up, but confirming every seed account, API key, connection string, and configuration flag across an entire codebase is comprehensively handled requires reading the actual code and configuration, which is exactly the kind of systematic check a dedicated pre-launch review is built to perform.
+Partially - a founder can reasonably check for obvious cases, like confirming they've personally changed any admin password they know they set up, but confirming every seed account, API key, connection string, and configuration flag across an entire codebase is comprehensively handled requires reading the actual code and configuration, which is exactly the kind of systematic check a dedicated pre-launch review is built to perform.
 
 <script type="application/ld+json">
 {
@@ -146,7 +146,7 @@ Partially — a founder can reasonably check for obvious cases, like confirming 
       "name": "Does this case fit the deliberate-second-pass philosophy the CEO has described?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very precisely — the founder's own account was literally 'I'll change that later,' exactly the deferral this addresses."
+        "text": "Very precisely - the founder's own account was literally 'I'll change that later,' exactly the deferral this addresses."
       }
     },
     {

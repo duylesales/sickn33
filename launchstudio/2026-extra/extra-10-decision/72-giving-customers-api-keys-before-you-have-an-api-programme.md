@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A customer asks whether they can pull their data programmatically, and the obvious answer is yes — your product already has endpoints, they already have an account, so it is just a matter of giving them a key. That reasoning is where a lot of small products acquire a permanent obligation they never intended.
+A customer asks whether they can pull their data programmatically, and the obvious answer is yes - your product already has endpoints, they already have an account, so it is just a matter of giving them a key. That reasoning is where a lot of small products acquire a permanent obligation they never intended.
 
 The endpoints your frontend uses are not a public API. They were designed for one consumer that you control and deploy alongside them, which means they can change whenever convenient. The moment a customer's script depends on them, they become a contract: change a field name and someone's integration breaks at 3am, and you find out from an angry email. The difference between an internal endpoint and a public one is not technical. It is a promise about stability.
 
@@ -30,21 +30,21 @@ None of which means you should refuse. It means deciding, deliberately, how much
 
 It helps to see this as a spectrum rather than a yes or no.
 
-**A private arrangement with one customer.** A key, a couple of endpoints, and an explicit understanding — in writing — that this is unsupported, may change with notice, and exists because you agreed to it specifically. Entirely reasonable, and the right answer for the first request.
+**A private arrangement with one customer.** A key, a couple of endpoints, and an explicit understanding - in writing - that this is unsupported, may change with notice, and exists because you agreed to it specifically. Entirely reasonable, and the right answer for the first request.
 
 **A limited documented API.** A small, deliberately chosen set of endpoints, documented, versioned, and treated as stable. More work, and appropriate when several customers want the same thing.
 
 **A public API programme.** Full surface, published documentation, changelog, deprecation policy, developer support. A product in its own right, with its own maintenance cost, and not something to drift into by accident.
 
-Most founders should start at the first level and move only when demand justifies it. The failure mode is starting at level one technically while behaving as though it is level three — giving a key, saying nothing about stability, and then discovering you can no longer change an endpoint because three customers depend on its exact shape.
+Most founders should start at the first level and move only when demand justifies it. The failure mode is starting at level one technically while behaving as though it is level three - giving a key, saying nothing about stability, and then discovering you can no longer change an endpoint because three customers depend on its exact shape.
 
 ## Storing Keys Without Storing a Liability
 
 An API key is a credential, and it must be handled like one. The common implementation stores the key as plain text in a table so it can be displayed in the interface later, which turns your database into a set of ready-to-use credentials for every customer's account.
 
-The correct approach is the same as for passwords: store a hash, never the key itself. Show the key once, at creation, with a clear notice that it will not be shown again. If the customer loses it, they generate a new one. To help them tell keys apart in a list, store a short non-secret prefix — the first several characters — and display that.
+The correct approach is the same as for passwords: store a hash, never the key itself. Show the key once, at creation, with a clear notice that it will not be shown again. If the customer loses it, they generate a new one. To help them tell keys apart in a list, store a short non-secret prefix - the first several characters - and display that.
 
-Three further requirements. **Prefix your keys identifiably**, so a key that leaks into a public repository can be recognised by automated scanners and by you. **Support multiple keys per account with names**, so a customer can rotate without downtime and revoke one integration without breaking another. **Record last use**, which is what lets both of you identify keys that are no longer needed — and provides the first signal that something is using a key nobody remembers creating.
+Three further requirements. **Prefix your keys identifiably**, so a key that leaks into a public repository can be recognised by automated scanners and by you. **Support multiple keys per account with names**, so a customer can rotate without downtime and revoke one integration without breaking another. **Record last use**, which is what lets both of you identify keys that are no longer needed - and provides the first signal that something is using a key nobody remembers creating.
 
 Revocation must be immediate and total. A revoked key should stop working on the next request, which means not caching validation results for longer than a moment.
 
@@ -54,13 +54,13 @@ A key that can do everything the account owner can do is the default in generate
 
 Two levels of scoping cover most needs without becoming a permissions project. **Read versus write**, which is a single choice at key creation and eliminates most of the risk, since the majority of integrations only read. And **resource scope**, limiting a key to particular kinds of data, where your product has clearly separable areas.
 
-Beyond that, two rules that are easy to get wrong. A key must never exceed the permissions of the account it belongs to — a member's key granting owner-level access is a privilege escalation, and it happens when key validation is implemented separately from the ordinary permission checks. And every account-scoped rule that applies in your interface must apply to key-authenticated requests too, because API traffic is exactly the path where a missing check goes unnoticed.
+Beyond that, two rules that are easy to get wrong. A key must never exceed the permissions of the account it belongs to - a member's key granting owner-level access is a privilege escalation, and it happens when key validation is implemented separately from the ordinary permission checks. And every account-scoped rule that applies in your interface must apply to key-authenticated requests too, because API traffic is exactly the path where a missing check goes unnoticed.
 
 ## Rate Limits Are for the Customer's Protection as Much as Yours
 
 Scripts do things people do not: run in a loop, retry immediately on failure, and request the same page four hundred times because of a bug in someone's pagination.
 
-Without limits, one customer's badly written integration can degrade your product for everyone, and the customer will not know they are doing it. A per-key limit — a few hundred requests a minute is generous for most business products — protects both sides. Return the standard signal when the limit is hit, a 429 status with a header saying when to try again, and include headers showing remaining quota so a well-written client can pace itself.
+Without limits, one customer's badly written integration can degrade your product for everyone, and the customer will not know they are doing it. A per-key limit - a few hundred requests a minute is generous for most business products - protects both sides. Return the standard signal when the limit is hit, a 429 status with a header saying when to try again, and include headers showing remaining quota so a well-written client can pace itself.
 
 Two refinements worth having from the start: a lower limit on expensive operations such as exports or reports, and the ability to raise the limit for a specific customer without a deployment, because the first serious integrator will need more and you do not want that to be an engineering task.
 
@@ -68,11 +68,11 @@ Two refinements worth having from the start: a lower limit on expensive operatio
 
 Once a customer's code depends on your response shape, you need a way to change it that does not break them. Deciding this before the first key is issued costs nothing; deciding it afterwards costs a customer relationship.
 
-The simplest workable approach is a version in the path — `/v1/orders` — with a stated rule: within a version, fields may be added but never removed or renamed, and behaviour will not change incompatibly. Anything breaking goes into a new version, with the old one supported for a stated period.
+The simplest workable approach is a version in the path - `/v1/orders` - with a stated rule: within a version, fields may be added but never removed or renamed, and behaviour will not change incompatibly. Anything breaking goes into a new version, with the old one supported for a stated period.
 
 Then apply the rule that makes versioning survivable: **treat adding fields as safe and everything else as breaking.** This means telling customers explicitly that their code must tolerate unknown fields, which most libraries do by default, and it means resisting the temptation to rename something for tidiness.
 
-For a first, private arrangement, a lighter commitment is legitimate: a version prefix in the path, plus a written statement that you will give 30 days' notice of breaking changes. That is honest, cheap, and sufficient — provided you actually have a way to contact the people using each key, which is one more argument for keys being named and attached to an account rather than issued informally.
+For a first, private arrangement, a lighter commitment is legitimate: a version prefix in the path, plus a written statement that you will give 30 days' notice of breaking changes. That is honest, cheap, and sufficient - provided you actually have a way to contact the people using each key, which is one more argument for keys being named and attached to an account rather than issued informally.
 
 Setting up key storage, scoping, rate limits, and versioning correctly at the point of the first request is a small, bounded piece of work that prevents an ad-hoc arrangement from becoming an unmanageable obligation. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds customer-facing API access that can be maintained. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -87,7 +87,7 @@ Eleven months later, four customers held keys. A review before an enterprise dea
 **Result:** keys hashed with a displayed prefix, read and write scoping at creation, named keys with last-use tracking and immediate revocation, per-key rate limits with a lower ceiling on expensive endpoints, and a `/v1` prefix with a written stability commitment. All four existing keys were rotated, and the periodic slowness disappeared.
 
 > "I gave someone a key in about five minutes. It turned out I had also given them the ability to delete their own company's product catalogue, and given myself no way to tell whether anyone was still using it."
-> — **Daan Verhoeven, Founder, Voorraadsync**
+> - **Daan Verhoeven, Founder, Voorraadsync**
 
 **Cost & Timeline:** API key management, scoping, and rate limiting delivered in 3 business days.
 

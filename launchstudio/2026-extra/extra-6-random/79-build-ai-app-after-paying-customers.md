@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-There's a specific milestone every founder remembers: the weekend they managed to build an AI app that actually worked. A prompt, a few iterations, and suddenly there's a real, functioning product where there wasn't one before. It's a genuine achievement, and it's also, quietly, the easy part. The much harder, much less discussed milestone comes later — the day paying customers start relying on that same app every single day, and "built" turns out to have meant something narrower than anyone realized.
+There's a specific milestone every founder remembers: the weekend they managed to build an AI app that actually worked. A prompt, a few iterations, and suddenly there's a real, functioning product where there wasn't one before. It's a genuine achievement, and it's also, quietly, the easy part. The much harder, much less discussed milestone comes later - the day paying customers start relying on that same app every single day, and "built" turns out to have meant something narrower than anyone realized.
 
 ## "Built" is a demo-shaped word
 
@@ -32,48 +32,48 @@ An app with ten casual users clicking around during testing behaves very differe
 
 ## "Supportable" is the milestone nobody names
 
-There's a milestone between "built" and "scaled" that rarely gets its own name: supportable. A supportable app is one where, when something breaks, you can find out what broke, fix it, and recover any lost data without starting from zero. It requires logging that actually records what the app is doing, a backup and restore process that's been tested — not just assumed to work — and enough visibility into the system that a problem doesn't require guesswork to diagnose. None of this is glamorous. None of it shows up in a demo. All of it is the difference between a bad day and a business-ending one, once real customers are depending on the product.
+There's a milestone between "built" and "scaled" that rarely gets its own name: supportable. A supportable app is one where, when something breaks, you can find out what broke, fix it, and recover any lost data without starting from zero. It requires logging that actually records what the app is doing, a backup and restore process that's been tested - not just assumed to work - and enough visibility into the system that a problem doesn't require guesswork to diagnose. None of this is glamorous. None of it shows up in a demo. All of it is the difference between a bad day and a business-ending one, once real customers are depending on the product.
 
 ## What changes once customers are paying
 
-The moment real money changes hands, the cost of an unsupportable app stops being hypothetical. A bug that would have been a shrug during free testing becomes a refund request, a canceled subscription, or a customer who quietly stops trusting the product. This is the point where it's worth treating "build an AI app" and "run a supportable AI app for paying customers" as two separate projects, each with its own checklist — because they are.
+The moment real money changes hands, the cost of an unsupportable app stops being hypothetical. A bug that would have been a shrug during free testing becomes a refund request, a canceled subscription, or a customer who quietly stops trusting the product. This is the point where it's worth treating "build an AI app" and "run a supportable AI app for paying customers" as two separate projects, each with its own checklist - because they are.
 
-LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy specifically for this transition — taking a weekend-built AI app and making it supportable without rebuilding the founder's frontend. Our team, including engineers based in Amsterdam, handles exactly this kind of production-hardening work as a defined, scoped engagement. You can [see what package fits where your app currently stands](https://launchstudio.eu/en/#packages) before your next paying customer finds the gap for you. For more on how Manifera approaches this kind of work, see [our web app development services](https://www.manifera.com/services/web-app-develop/).
+LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy specifically for this transition - taking a weekend-built AI app and making it supportable without rebuilding the founder's frontend. Our team, including engineers based in Amsterdam, handles exactly this kind of production-hardening work as a defined, scoped engagement. You can [see what package fits where your app currently stands](https://launchstudio.eu/en/#packages) before your next paying customer finds the gap for you. For more on how Manifera approaches this kind of work, see [our web app development services](https://www.manifera.com/services/web-app-develop/).
 
 ## The Supportability Self-Test: Six Questions to Ask Before Your Next Signup
 
 You don't need a formal audit to get a rough read on whether your app has crossed from "built" to "supportable." Six questions, answered honestly, tell you almost everything, and each one maps to a specific gap that tends to surface at the worst possible time if it's there.
 
-**Can you find one specific action a specific user took yesterday?** Not "the app logs things" in the abstract — can you, right now, pull up what a named user actually did in the last 24 hours? If the honest answer involves guessing or scrolling through raw database rows hoping something jumps out, there's no real logging yet, just data that happens to exist.
+**Can you find one specific action a specific user took yesterday?** Not "the app logs things" in the abstract - can you, right now, pull up what a named user actually did in the last 24 hours? If the honest answer involves guessing or scrolling through raw database rows hoping something jumps out, there's no real logging yet, just data that happens to exist.
 
-**Have you actually restored from a backup, or only confirmed one exists?** A backup that's never been restored is a backup you're assuming works. The only way to know is to actually run the restore, on a copy, before you need it for real — confirming a backup file exists on a dashboard somewhere tells you almost nothing about whether it would actually save you.
+**Have you actually restored from a backup, or only confirmed one exists?** A backup that's never been restored is a backup you're assuming works. The only way to know is to actually run the restore, on a copy, before you need it for real - confirming a backup file exists on a dashboard somewhere tells you almost nothing about whether it would actually save you.
 
 **If your database vanished right now, how much data would be gone forever?** The honest answer to this question is usually more sobering than founders expect, because "we take backups" and "we take backups frequently enough that losing between them wouldn't hurt" are different claims. A backup taken nightly still means up to 24 hours of a busy day's activity could vanish.
 
 **Would you know about an outage before a customer tells you?** If your only outage-detection mechanism is a customer noticing something's wrong and emailing you, you're finding out last, not first, about problems in your own product. A basic monitor that checks your app's availability every few minutes closes this gap in under an hour of setup.
 
-**Can someone other than you explain what a specific error means?** If every bug report currently requires you personally to dig in and guess, you have a single point of failure that happens to be you. Even a rough written note next to your most common failure modes — what this error usually means, where to look first — starts turning tribal knowledge into something transferable.
+**Can someone other than you explain what a specific error means?** If every bug report currently requires you personally to dig in and guess, you have a single point of failure that happens to be you. Even a rough written note next to your most common failure modes - what this error usually means, where to look first - starts turning tribal knowledge into something transferable.
 
-**Do you know your data recovery time, or just that recovery is "possible"?** "Possible" and "possible within the hour it would take before your angriest customer cancels" are very different guarantees. If you've never timed how long an actual restore takes, you don't actually know your recovery time — you know your hope.
+**Do you know your data recovery time, or just that recovery is "possible"?** "Possible" and "possible within the hour it would take before your angriest customer cancels" are very different guarantees. If you've never timed how long an actual restore takes, you don't actually know your recovery time - you know your hope.
 
-None of these six require an engineering team to answer. They require sitting down for twenty minutes and being honest about which ones you can currently answer with a demonstrated fact rather than an assumption. A "no" on two or three of these isn't a crisis — it's simply a precise list of what to fix before the next customer's bad day becomes your bad day too.
+None of these six require an engineering team to answer. They require sitting down for twenty minutes and being honest about which ones you can currently answer with a demonstrated fact rather than an assumption. A "no" on two or three of these isn't a crisis - it's simply a precise list of what to fix before the next customer's bad day becomes your bad day too.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Built in a Weekend, Tested by Ten Property Managers
 
-Tobias Krimpen, a founder based in Krimpen aan den IJssel, built "LanceerApp," a rental-inspection tool for property managers, using Lovable. The build itself took a single weekend — describing the inspection workflow, iterating on the interface, and arriving at a working app faster than he'd expected. He signed his first ten paying property managers shortly after, each relying on LanceerApp daily to log and track rental inspections across their properties.
+Tobias Krimpen, a founder based in Krimpen aan den IJssel, built "LanceerApp," a rental-inspection tool for property managers, using Lovable. The build itself took a single weekend - describing the inspection workflow, iterating on the interface, and arriving at a working app faster than he'd expected. He signed his first ten paying property managers shortly after, each relying on LanceerApp daily to log and track rental inspections across their properties.
 
-It was only once those ten customers were using the app daily that Tobias discovered what "built" hadn't included. There was no logging in the app at all, so when a property manager reported that an inspection record had seemingly vanished, Tobias had no way to trace what had actually happened — no record of what the system had done, just a missing entry and a confused customer. There was no backup restore process either; the only copy of the data was whatever currently existed in the live database, with no tested way to recover anything if it were ever lost or corrupted. Diagnosing any problem meant guessing, because nothing in the app was built to explain itself.
+It was only once those ten customers were using the app daily that Tobias discovered what "built" hadn't included. There was no logging in the app at all, so when a property manager reported that an inspection record had seemingly vanished, Tobias had no way to trace what had actually happened - no record of what the system had done, just a missing entry and a confused customer. There was no backup restore process either; the only copy of the data was whatever currently existed in the live database, with no tested way to recover anything if it were ever lost or corrupted. Diagnosing any problem meant guessing, because nothing in the app was built to explain itself.
 
 LaunchStudio was brought in to close that specific gap. Our engineers added structured logging across LanceerApp's core inspection workflows, set up automated, tested database backups with a verified restore process, and built a basic diagnostic view so Tobias could see what the system had actually done when a customer reported a problem, rather than guessing.
 
 **Result:** LanceerApp now logs every inspection action and can restore from a verified backup within minutes, giving Tobias the visibility his ten paying property managers' daily usage actually required.
 
 > *"Building it took a weekend. Realizing what 'built' didn't include took a phone call from a confused customer."*
-> — **Tobias Krimpen, Founder, LanceerApp (Krimpen aan den IJssel)**
+> - **Tobias Krimpen, Founder, LanceerApp (Krimpen aan den IJssel)**
 
-**Cost & Timeline:** €1,300 (logging, backup and restore process, diagnostic tooling) — completed in 6 business days.
+**Cost & Timeline:** €1,300 (logging, backup and restore process, diagnostic tooling) - completed in 6 business days.
 
 ---
 

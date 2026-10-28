@@ -1,6 +1,6 @@
 🧠 **AI is making your developers faster. It's also making your architecture worse.**
 
-GitHub's 2025 Developer Survey: teams using AI assistants shipped 55% more PRs per sprint — but had a 41% increase in production incidents within 6 months.
+GitHub's 2025 Developer Survey: teams using AI assistants shipped 55% more PRs per sprint - but had a 41% increase in production incidents within 6 months.
 
 The uncomfortable math:
 → More code shipped ≠ better software
@@ -18,7 +18,7 @@ Understand transformers, fine-tuning, RAG pipelines. But they can't decide wheth
 **Layer 3: Senior Architects** (1 per project) ← THE LAYER MOST COMPANIES SKIP
 Define system boundaries, data ownership, failure modes, regulatory constraints. The decisions no LLM can make.
 
-Real story: A fintech client built an "AI fraud detection system." Model was excellent. But deployed as a synchronous API call — adding 2.3s latency to every transaction. Revenue dropped 12% in Week 1.
+Real story: A fintech client built an "AI fraud detection system." Model was excellent. But deployed as a synchronous API call - adding 2.3s latency to every transaction. Revenue dropped 12% in Week 1.
 
 The fix wasn't algorithmic. It was architectural.
 

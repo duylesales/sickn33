@@ -1,6 +1,6 @@
 🚨 Eén nieuwsbrief naar 2.400 patiënten op maandagavond. Tegen dinsdagochtend: vier slots dubbel geboekt, twee patiënten die een uur te vroeg kwamen na een boeking vanuit Spanje, en een agenda-koppeling die al drie weken platlag. 😳
 
-Een boekingsapp lijkt het eenvoudigste project — een agenda, een formulier, een bevestigingsmail. Dat is het niet — hier breekt het als eerste: 🧠
+Een boekingsapp lijkt het eenvoudigste project - een agenda, een formulier, een bevestigingsmail. Dat is het niet - hier breekt het als eerste: 🧠
 
 ❌ Beschikbaarheid controleren en opslaan als twee losse stappen waar twee mensen tegelijk tussendoor glippen
 ❌ Afspraaktijden opslaan zonder vast te leggen in welke tijdzone ze vallen

@@ -1,4 +1,4 @@
-🔥 Thomas bouwde een prototype met **Bolt** — als ontwikkelaar in Utrecht bouwde hij een compliance SaaS voor tandartspraktijken, maar ontdekte ernstige AVG-datalekken rondom patiëntgegevens vóór de livegang. 🧠
+🔥 Thomas bouwde een prototype met **Bolt** - als ontwikkelaar in Utrecht bouwde hij een compliance SaaS voor tandartspraktijken, maar ontdekte ernstige AVG-datalekken rondom patiëntgegevens vóór de livegang. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of dataminimalisatie heeft, veroorzaakt live verkeer direct AVG-boetes en aansprakelijkheid.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Thomas lanceerde zijn SaaS veilig bij zijn eerste 5 tandartspraktijken en voorkwam een verwoestende AVG-boete op medische data. (€2.500 (Launch & Grow Pakket) — binnen 5 werkdagen opgeleverd). 🚀
+Thomas lanceerde zijn SaaS veilig bij zijn eerste 5 tandartspraktijken en voorkwam een verwoestende AVG-boete op medische data. (€2.500 (Launch & Grow Pakket) - binnen 5 werkdagen opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-data-security-protecting-pii-saas
 

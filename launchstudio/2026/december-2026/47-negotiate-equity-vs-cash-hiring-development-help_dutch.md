@@ -32,15 +32,15 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-"Ik doe het wel voor aandelen in plaats van geld" klinkt enorm aantrekkelijk wanneer u als oprichter krap bij kas zit. Het blijkt echter ook vaak een van de duurste beslissingen te zijn die een beginnende ondernemer kan nemen — precies omdat de kosten van aandelen op het moment van de beslissing uitgesteld en abstract voelen, terwijl een factuur direct en concreet is.
+"Ik doe het wel voor aandelen in plaats van geld" klinkt enorm aantrekkelijk wanneer u als oprichter krap bij kas zit. Het blijkt echter ook vaak een van de duurste beslissingen te zijn die een beginnende ondernemer kan nemen - precies omdat de kosten van aandelen op het moment van de beslissing uitgesteld en abstract voelen, terwijl een factuur direct en concreet is.
 
 ## Waarom Aandelen Veel Goedkoper Voelen Dan Ze In Werkelijkheid Zijn
 
-Het betalen van € 3.000 aan contanten voor een afgebakende technische klus voelt vandaag duur. Het weggeven van 10% van uw bedrijf voor hetzelfde werk voelt vandaag "gratis" — er is geen factuur en uw bankrekening verandert niet. Die 10% is echter een claim op de *totale toekomstige waarde* van uw bedrijf. Dat betekent dat u bij elke toekomstige investeringsronde en bij een uiteindelijke verkoop 10% van uw opbrengst afstaat voor werk dat een eenmalige contante betaling permanent had opgelost.
+Het betalen van € 3.000 aan contanten voor een afgebakende technische klus voelt vandaag duur. Het weggeven van 10% van uw bedrijf voor hetzelfde werk voelt vandaag "gratis" - er is geen factuur en uw bankrekening verandert niet. Die 10% is echter een claim op de *totale toekomstige waarde* van uw bedrijf. Dat betekent dat u bij elke toekomstige investeringsronde en bij een uiteindelijke verkoop 10% van uw opbrengst afstaat voor werk dat een eenmalige contante betaling permanent had opgelost.
 
 ## Wanneer Werken voor Aandelen Wél Zinvol Is
 
-**Echte co-founder relaties.** Als de ontwikkelaar instapt als een volwaardige co-founder — die alle risico's deelt, zich voor de lange termijn verbindt en dagelijks strategische beslissingen met u neemt — passen aandelen uitstekend bij die gedeelde ambitie.
+**Echte co-founder relaties.** Als de ontwikkelaar instapt als een volwaardige co-founder - die alle risico's deelt, zich voor de lange termijn verbindt en dagelijks strategische beslissingen met u neemt - passen aandelen uitstekend bij die gedeelde ambitie.
 
 **Geen enkel contant geld beschikbaar en geen alternatieven.** Als u absoluut geen geld heeft en het alternatief is om helemaal niet te lanceren, kan een aandelenafspraak de enige optie zijn, mits de omvang heel strak afgebakend is.
 
@@ -48,7 +48,7 @@ Het betalen van € 3.000 aan contanten voor een afgebakende technische klus voe
 
 ## Wanneer Aandelen Weggeven een Slechte Deal Is
 
-**Voor afgebakend, definieerbaar technisch werk** — zoals het productieklaar maken van een AI-prototype — heeft de engineering een duidelijke marktprijs. Het weggeven van aandelen voor werk dat met een vast tarief (zoals LaunchStudio's pakket van € 800 – € 7.500) opgelost kan worden, is bijna altijd een extreem slechte deal.
+**Voor afgebakend, definieerbaar technisch werk** - zoals het productieklaar maken van een AI-prototype - heeft de engineering een duidelijke marktprijs. Het weggeven van aandelen voor werk dat met een vast tarief (zoals LaunchStudio's pakket van € 800 – € 7.500) opgelost kan worden, is bijna altijd een extreem slechte deal.
 
 **Wanneer de "co-founder" zich niet als zodanig gedraagt.** Als de ontwikkelaar na een paar weken werk weer vertrekt of niet fulltime meebouwt, betaalt u een co-founder beloning voor een tijdelijke freelancer.
 
@@ -100,7 +100,7 @@ Het weggeven van aandelen aan externe partijen brengt grote risico's met zich me
 
 ### Een AI-native oprichter in actie: Het afwijzen van een 15% aandelen-aanbod voor een klus van €3.000
 
-Timo, een personal finance blogger in Barendrecht, bouwde BudgetBuddy — een AI-tool die persoonlijke besparingsplannen genereert — met behulp van Lovable. Toen hij klaar was om te lanceren, bood een bevriende ontwikkelaar aan om het product "af te maken" in ruil voor 15% aandelen in plaats van geld.
+Timo, een personal finance blogger in Barendrecht, bouwde BudgetBuddy - een AI-tool die persoonlijke besparingsplannen genereert - met behulp van Lovable. Toen hij klaar was om te lanceren, bood een bevriende ontwikkelaar aan om het product "af te maken" in ruil voor 15% aandelen in plaats van geld.
 
 Voordat hij akkoord ging, maakte Timo een snelle berekening: als BudgetBuddy in de toekomst een bescheiden waardering van € 500.000 zou bereiken, vertegenwoordigde die 15% een waarde van € 75.000. Een offerte bij LaunchStudio voor exact dezelfde productielancering kwam echter uit op € 3.000 contant.
 
@@ -109,16 +109,16 @@ Timo sloeg het aandelen-aanbod af en betaalde LaunchStudio's vaste contante prij
 **Resultaat:** BudgetBuddy lanceerde met behoud van 100% eigendom. Timo bespaarde door deze simpele vergelijking tienduizenden euro's aan toekomstige waarde.
 
 > *"15% klonk als een bescheiden verzoek toen hij het aanbood. Toen ik uitrekende wat 15% ooit waard zou kunnen zijn vergeleken met een contante offerte voor hetzelfde werk, was de keuze snel gemaakt. Ik betaalde geld en hield mijn bedrijf."*
-> — **Timo Verweij, Oprichter, BudgetBuddy (Barendrecht)**
+> - **Timo Verweij, Oprichter, BudgetBuddy (Barendrecht)**
 
-**Kosten & Doorlooptijd:** € 3.000 (Launch Ready Pakket) — live in 11 werkdagen, versus een afgewezen aanbod van 15% aandelen.
+**Kosten & Doorlooptijd:** € 3.000 (Launch Ready Pakket) - live in 11 werkdagen, versus een afgewezen aanbod van 15% aandelen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Is het altijd verkeerd om aandelen aan te bieden voor ontwikkelwerk?
-Nee — voor echte co-founders die volwaardig risico en zeggenschap delen, zijn aandelen uiterst gepast. De waarschuwing geldt specifiek voor afgebakend projectwerk dat een duidelijke marktprijs in geld heeft.
+Nee - voor echte co-founders die volwaardig risico en zeggenschap delen, zijn aandelen uiterst gepast. De waarschuwing geldt specifiek voor afgebakend projectwerk dat een duidelijke marktprijs in geld heeft.
 
 ### Hoe schat ik in wat een aandelenpercentage in de toekomst waard is?
 Gebruik een reeks van realistisch-voorzichtige bedrijfswaarderingen (bijv. € 250k, € 500k, € 1M) en vermenigvuldig dat met het gevraagde percentage. Dit geeft direct helderheid.

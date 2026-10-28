@@ -32,7 +32,7 @@ Three questions to answer for your own project, today.
 
 **Who has access?** Everyone ever invited, including the person who helped for an afternoon in March and the friend who looked at a bug. Access granted is rarely revoked.
 
-**What does access allow?** Broadly: running the project, which means running code with the configured credentials. Whether collaborators can read secret values directly varies by plan and by how they are stored — which is precisely why the answer should be checked rather than assumed.
+**What does access allow?** Broadly: running the project, which means running code with the configured credentials. Whether collaborators can read secret values directly varies by plan and by how they are stored - which is precisely why the answer should be checked rather than assumed.
 
 **Is the project public or private?** A public project is readable by anyone. Code in a public project is public, and anything a collaborator wrote into a file rather than into the secrets mechanism is public with it.
 
@@ -42,7 +42,7 @@ The audit is five minutes and it usually produces at least one removal.
 
 Forking is a core part of how Replit works and the mechanism that surprises people most.
 
-Conventionally, secrets configured through the platform's secrets mechanism are not copied into a fork — the fork gets the code and empty values. That is the behaviour you want.
+Conventionally, secrets configured through the platform's secrets mechanism are not copied into a fork - the fork gets the code and empty values. That is the behaviour you want.
 
 Anything written into a file, however, travels. A credential in a configuration file, an `.env` committed into the project, a connection string pasted into a code comment while debugging: all of it goes with the fork, to whoever forked it, permanently.
 
@@ -54,7 +54,7 @@ Then check the forks of any public project you own, which is a thing you can do 
 
 The measure that limits the damage of any of the above: one credential per integration, scoped to what it needs.
 
-A single administrative key used for everything means every exposure is total. Separate keys — one for the database from the application, one for the payment provider, one for email — mean a leak is contained to one system, and rotating it does not stop everything else working.
+A single administrative key used for everything means every exposure is total. Separate keys - one for the database from the application, one for the payment provider, one for email - mean a leak is contained to one system, and rotating it does not stop everything else working.
 
 Where the provider offers scoped keys, use them. A key that can read but not delete, or that can access one bucket rather than all of them, converts a serious incident into a minor one.
 
@@ -70,7 +70,7 @@ Where it does not: prepare everything, make the change at a quiet hour, and veri
 
 Rotate annually as a routine, and immediately whenever a collaborator's access ends, a project has been public, or a value has been pasted anywhere.
 
-That second trigger is the one to internalise. Someone leaving a project is a rotation event, and it is the one most consistently skipped — the access is removed, the credentials they had are not changed, and a copy of them may still exist.
+That second trigger is the one to internalise. Someone leaving a project is a rotation event, and it is the one most consistently skipped - the access is removed, the credentials they had are not changed, and a copy of them may still exist.
 
 ## The Ordinary Case, Without the Drama
 
@@ -86,11 +86,11 @@ That is the whole practice for a product of this size. It is unremarkable, it ta
 
 ## Offboarding, Written Down
 
-The trigger most often skipped deserves its own short procedure, because it happens at a moment when nobody is thinking about credentials — somebody is leaving, and the conversation is about handover rather than about access.
+The trigger most often skipped deserves its own short procedure, because it happens at a moment when nobody is thinking about credentials - somebody is leaving, and the conversation is about handover rather than about access.
 
 Five items, in order.
 
-**Remove platform access** — the project, the repository, the hosting account, the database provider, the domain registrar. Anything they could sign into.
+**Remove platform access** - the project, the repository, the hosting account, the database provider, the domain registrar. Anything they could sign into.
 
 **Rotate anything they held.** Not merely anything they used; anything they could have read. If they had project access, that is every credential in the project.
 
@@ -106,13 +106,13 @@ The same list applies to yourself, incidentally, when you stop using a service: 
 
 One more habit that costs nothing: when you add a new integration, write down at that moment which credential it uses and where the account lives. The inventory is almost impossible to reconstruct afterwards and trivial to maintain as you go.
 
-The same note should record who holds the account, because a credential you can rotate but cannot reach — because the account is in a former collaborator's name — is a different and more awkward problem.
+The same note should record who holds the account, because a credential you can rotate but cannot reach - because the account is in a former collaborator's name - is a different and more awkward problem.
 
 ## Setting This Up
 
 For a Replit product this is typically half a day: an audit of everyone with access and removal of anyone who no longer needs it, a check of whether the project is public and of any forks, a search of the project for credential values rather than variable names with anything found moved into the secrets mechanism and rotated, separate scoped credentials per integration, genuine separation between development and production values, a rotation performed using the two-key technique to establish that it is routine, an inventory recording each credential and where it is used, and a rule that a collaborator leaving triggers rotation.
 
-LaunchStudio does this as part of taking a Replit project to production, where credential hygiene is consistently the first finding. The engineers are Manifera's — eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
+LaunchStudio does this as part of taking a Replit project to production, where credential hygiene is consistently the first finding. The engineers are Manifera's - eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
 
 [Ask us who currently has access to your project](https://launchstudio.eu/en/#contact). The list is usually longer than remembered.
 
@@ -126,22 +126,22 @@ The project had started as a public template he was learning from, and had been 
 
 Eighteen months later, a routine review found the string still in the file. The project had been forked eleven times while public.
 
-There was no evidence of misuse, and the database contained pupils' names, addresses, school details and transport needs — which is special category data in every respect that matters.
+There was no evidence of misuse, and the database contained pupils' names, addresses, school details and transport needs - which is special category data in every respect that matters.
 
 Two business days: the database credentials rotated immediately, before anything else; the connection string removed from the file and moved to the secrets mechanism, with the project's history checked for other pasted values, which found an email provider key from the same period; both credentials rotated and provider logs reviewed, showing no access from unrecognised sources in the available window; the project confirmed private and the eleven forks identified, with the platform contacted about the two that were public; access reviewed, finding four collaborators from earlier work who no longer needed it, all removed; separate scoped credentials created per integration, replacing one shared administrative key; development and production values genuinely separated; a rotation performed to establish the procedure; an inventory of seven credentials recording where each is used and when it was rotated; and a documented breach assessment concluding that notification was warranted given the data category, which was made to the contractors and to the Autoriteit Persoonsgegevens.
 
-**Result:** the assessment found no evidence of access, and the contractors were told directly by Ruben before they could hear it elsewhere. All seven stayed. His view is that the four months of being public were a decision he never consciously made — the project simply started that way and he did not think about it again.
+**Result:** the assessment found no evidence of access, and the contractors were told directly by Ruben before they could hear it elsewhere. All seven stayed. His view is that the four months of being public were a decision he never consciously made - the project simply started that way and he did not think about it again.
 
 > *"It was public for four months while I was learning, and I pasted a connection string into a file during that time. Eleven people forked it. I found out eighteen months later, in a review I nearly did not do."*
-> — **Ruben Hooghiemstra, Founder, Leerlingvervoer (Apeldoorn)**
+> - **Ruben Hooghiemstra, Founder, Leerlingvervoer (Apeldoorn)**
 
-**Cost & Timeline:** €2,900 (emergency credential rotation, file and history search with second credential found, fork identification and platform contact, access review and removals, scoped per-integration credentials, environment separation, rotation procedure, credential inventory, breach assessment and notification) — completed in 2 business days.
+**Cost & Timeline:** €2,900 (emergency credential rotation, file and history search with second credential found, fork identification and platform contact, access review and removals, scoped per-integration credentials, environment separation, rotation procedure, credential inventory, breach assessment and notification) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
 ### Do secrets travel when someone forks my project?
 
-Values in the platform's secrets mechanism generally do not. Anything written into a file does — a configuration file, a committed environment file, a string pasted into a comment.
+Values in the platform's secrets mechanism generally do not. Anything written into a file does - a configuration file, a committed environment file, a string pasted into a comment.
 
 ### How do I check whether a credential is in a file?
 
@@ -177,7 +177,7 @@ Where the provider allows two active keys, create the new one, set it, confirm i
       "name": "How do I find credentials hidden in project files?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Search for the value itself rather than the variable name — a pasted string will not be found by searching for a variable."
+        "text": "Search for the value itself rather than the variable name - a pasted string will not be found by searching for a variable."
       }
     },
     {
@@ -201,7 +201,7 @@ Where the provider allows two active keys, create the new one, set it, confirm i
       "name": "How do I rotate a key without downtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Create the new key while the old one is active, deploy it, confirm use, then revoke — or change at a quiet hour and verify."
+        "text": "Create the new key while the old one is active, deploy it, confirm use, then revoke - or change at a quiet hour and verify."
       }
     }
   ]

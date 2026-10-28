@@ -88,9 +88,9 @@ LaunchStudio's ingenieurs werkten met de transactielogboeken van de databaseprov
 **Resultaat:** Stijn heeft nu back-ups die zijn bewezen te werken, en niet alleen gepland om te draaien. Hij zou het binnen uren weten, en niet binnen weken, als dat ooit zou veranderen.
 
 > *"Ik dacht oprecht dat ik gedekt was. Het ontdekken midden in een crisis dat zes weken aan back-ups niet bestonden was het ergste moment van het runnen van dit bedrijf tot nu toe."*
-> — **Stijn Kuijpers, Oprichter, VoorraadKompas (Lelystad)**
+> - **Stijn Kuijpers, Oprichter, VoorraadKompas (Lelystad)**
 
-**Kosten en tijdlijn:** € 650 (herbouw van back-uppijplijn, monitoring van inloggegevens, en terugkerende hersteltesten) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (herbouw van back-uppijplijn, monitoring van inloggegevens, en terugkerende hersteltesten) - voltooid in 4 werkdagen.
 
 ---
 

@@ -31,23 +31,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-AI in development workflows changes how fast a feature gets built. It doesn't change what that feature is fundamentally capable of once it's live — and a convenient "import product image from a URL" feature, built quickly and correctly to satisfy exactly that description, is fundamentally capable of a lot more than displaying a picture, unless something specifically stops it.
+AI in development workflows changes how fast a feature gets built. It doesn't change what that feature is fundamentally capable of once it's live - and a convenient "import product image from a URL" feature, built quickly and correctly to satisfy exactly that description, is fundamentally capable of a lot more than displaying a picture, unless something specifically stops it.
 
 ## What an "Import From URL" Feature Actually Does Under the Hood
 
-A feature letting a user paste a URL and having your server fetch whatever's at that address — an image, a document, any resource — necessarily means your own server is the one making that outbound request, not the user's browser. This is a genuinely convenient pattern, and AI coding tools implement it readily whenever a founder describes wanting this kind of "paste a link, we'll grab it" functionality.
+A feature letting a user paste a URL and having your server fetch whatever's at that address - an image, a document, any resource - necessarily means your own server is the one making that outbound request, not the user's browser. This is a genuinely convenient pattern, and AI coding tools implement it readily whenever a founder describes wanting this kind of "paste a link, we'll grab it" functionality.
 
 ## Why "Your Server Fetches It" Is the Specific Risk
 
-If the URL a user provides isn't restricted in any way, there's nothing stopping a request from targeting internal network addresses your server can reach but the public internet can't — internal admin panels, cloud metadata services, or other backend systems that were never meant to be reachable from outside, but that your own server, making the request on the user's behalf, can reach directly.
+If the URL a user provides isn't restricted in any way, there's nothing stopping a request from targeting internal network addresses your server can reach but the public internet can't - internal admin panels, cloud metadata services, or other backend systems that were never meant to be reachable from outside, but that your own server, making the request on the user's behalf, can reach directly.
 
 ## Why This Is Called Server-Side Request Forgery
 
-The name describes exactly what happens: a request is forged (crafted by an outside party) but executed server-side (by your own trusted infrastructure), giving an attacker a way to probe or interact with internal systems using your server's own network position and trust level, rather than their own, far more restricted external vantage point. In cloud-hosted environments specifically, this often extends to a special internal address that returns temporary credentials and configuration details about the server itself — a target an unrestricted "fetch this URL" feature can reach just as easily as it reaches a normal external image.
+The name describes exactly what happens: a request is forged (crafted by an outside party) but executed server-side (by your own trusted infrastructure), giving an attacker a way to probe or interact with internal systems using your server's own network position and trust level, rather than their own, far more restricted external vantage point. In cloud-hosted environments specifically, this often extends to a special internal address that returns temporary credentials and configuration details about the server itself - a target an unrestricted "fetch this URL" feature can reach just as easily as it reaches a normal external image.
 
 ## Why Testing With Real Image URLs Never Reveals This
 
-Testing an "import from URL" feature by pasting real, external image links — which is the only thing a founder building and testing this feature would naturally do — confirms the feature correctly fetches and displays public images. It provides zero information about what happens if someone instead provides an internal network address, since that's simply not a URL a founder testing normal functionality has any reason to try.
+Testing an "import from URL" feature by pasting real, external image links - which is the only thing a founder building and testing this feature would naturally do - confirms the feature correctly fetches and displays public images. It provides zero information about what happens if someone instead provides an internal network address, since that's simply not a URL a founder testing normal functionality has any reason to try.
 
 ## What Properly Restricting This Feature Requires
 
@@ -59,13 +59,13 @@ Manifera's SSRF and backend integration security work is delivered through the H
 
 ## Beyond Blocking Internal IPs: A Fuller SSRF Defense
 
-Restricting a "fetch from URL" feature to genuinely public destinations sounds simple in principle, but a shallow implementation — one that only checks whether the initially provided address looks like an internal IP — misses several ways the same restriction gets bypassed in practice:
+Restricting a "fetch from URL" feature to genuinely public destinations sounds simple in principle, but a shallow implementation - one that only checks whether the initially provided address looks like an internal IP - misses several ways the same restriction gets bypassed in practice:
 
-- **DNS rebinding** — a domain name that resolves to a legitimate public address at the moment it's checked, but is switched to resolve to an internal address by the time the actual fetch request happens, slipping past a validation check that only ran once, early, rather than at the moment of the real request.
-- **Redirect chains** — a URL that itself points to a genuinely public address, but which responds with a redirect to an internal one, bypassing a check that only validates the initially requested address and doesn't follow (or re-validate) where a redirect actually leads.
-- **The cloud metadata endpoint specifically** — a known, fixed internal address that many cloud providers use to serve temporary credentials and configuration to a running server; blocking it explicitly, by name, is worth doing on top of a general "no internal IP ranges" rule, precisely because it's such a high-value target if reached.
-- **Alternate address formats** — the same internal address written in decimal, octal, or hexadecimal notation instead of the standard dotted format can slip past a validation check written to recognize only one specific format.
-- **Non-HTTP protocols** — a feature meant to fetch images over HTTP or HTTPS that doesn't explicitly restrict which protocol is allowed can sometimes be pointed at a local file path or another protocol entirely, extending the risk beyond just internal network addresses.
+- **DNS rebinding** - a domain name that resolves to a legitimate public address at the moment it's checked, but is switched to resolve to an internal address by the time the actual fetch request happens, slipping past a validation check that only ran once, early, rather than at the moment of the real request.
+- **Redirect chains** - a URL that itself points to a genuinely public address, but which responds with a redirect to an internal one, bypassing a check that only validates the initially requested address and doesn't follow (or re-validate) where a redirect actually leads.
+- **The cloud metadata endpoint specifically** - a known, fixed internal address that many cloud providers use to serve temporary credentials and configuration to a running server; blocking it explicitly, by name, is worth doing on top of a general "no internal IP ranges" rule, precisely because it's such a high-value target if reached.
+- **Alternate address formats** - the same internal address written in decimal, octal, or hexadecimal notation instead of the standard dotted format can slip past a validation check written to recognize only one specific format.
+- **Non-HTTP protocols** - a feature meant to fetch images over HTTP or HTTPS that doesn't explicitly restrict which protocol is allowed can sometimes be pointed at a local file path or another protocol entirely, extending the risk beyond just internal network addresses.
 
 A genuinely robust fix validates the destination at the moment of the actual request rather than only at initial input, explicitly blocks the cloud metadata address by name, and restricts the allowed protocol rather than trusting whatever scheme happens to be present in the provided URL. This is exactly the kind of layered validation a general "avoid internal addresses" instruction to an AI coding tool tends not to produce on its own, since each of these five bypass techniques is a specific, separately known pattern rather than something inferred from a general description of the desired behavior.
 
@@ -75,14 +75,14 @@ A genuinely robust fix validates the destination at the moment of the actual req
 
 Wessel, a former logistics coordinator turned founder in Vlaardingen, built VoorraadVast, an AI-assisted warehouse inventory management tool built with Cursor, including a convenient feature letting warehouse staff import a product photo directly from a supplied URL rather than uploading a file manually.
 
-A partner's security-conscious IT contact, reviewing VoorraadVast ahead of a potential integration, tested the import feature with an internal network address instead of a public image URL and found the server attempted to fetch and return whatever it found there — confirming the feature had no restriction on what kind of address it would reach out to. LaunchStudio's review confirmed the underlying fetch logic accepted and requested any URL without validating it was a genuinely public destination.
+A partner's security-conscious IT contact, reviewing VoorraadVast ahead of a potential integration, tested the import feature with an internal network address instead of a public image URL and found the server attempted to fetch and return whatever it found there - confirming the feature had no restriction on what kind of address it would reach out to. LaunchStudio's review confirmed the underlying fetch logic accepted and requested any URL without validating it was a genuinely public destination.
 
 **Result:** LaunchStudio added strict validation ensuring the import feature only fetches from verified public, external addresses, explicitly blocking any request targeting internal or reserved network ranges, closing the exposure without changing how staff used the import feature for legitimate product photos.
 
 > *"I built that feature to save staff a few clicks importing product photos. It never once crossed my mind that the same convenience could theoretically be pointed at something completely different from a photo."*
-> — **Wessel Kramer, Founder, VoorraadVast (Vlaardingen)**
+> - **Wessel Kramer, Founder, VoorraadVast (Vlaardingen)**
 
-**Cost & Timeline:** €2,600 (SSRF remediation and URL fetch validation) — completed in 8 business days.
+**Cost & Timeline:** €2,600 (SSRF remediation and URL fetch validation) - completed in 8 business days.
 
 ---
 
@@ -94,15 +94,15 @@ Increasingly common, specifically because "fetch a resource from a URL the user 
 
 ### Does this risk only affect features explicitly described as "import from URL," or does it show up elsewhere too?
 
-It shows up in any feature where user input influences an outbound server-side request — webhook callback URLs, PDF generation services that fetch external content, or link-preview features all carry some version of the same underlying risk if the destination isn't properly restricted.
+It shows up in any feature where user input influences an outbound server-side request - webhook callback URLs, PDF generation services that fetch external content, or link-preview features all carry some version of the same underlying risk if the destination isn't properly restricted.
 
-### Manifera's engineering has secured server-side integrations for enterprise clients — does that experience transfer to a smaller inventory tool like VoorraadVast?
+### Manifera's engineering has secured server-side integrations for enterprise clients - does that experience transfer to a smaller inventory tool like VoorraadVast?
 
-Yes, directly — the specific validation pattern (confirm a destination is genuinely public before fetching it) is identical regardless of company size, and applying an already-proven enterprise pattern to a founder-scale product is considerably faster and more reliable than developing the correct approach from scratch for each new case.
+Yes, directly - the specific validation pattern (confirm a destination is genuinely public before fetching it) is identical regardless of company size, and applying an already-proven enterprise pattern to a founder-scale product is considerably faster and more reliable than developing the correct approach from scratch for each new case.
 
-### Herre Roelevink has described the current challenge as being about architecture rather than raw feature output — does an SSRF gap fit that framing well?
+### Herre Roelevink has described the current challenge as being about architecture rather than raw feature output - does an SSRF gap fit that framing well?
 
-Very well — the import feature functioned exactly as described from a feature-output perspective; the missing piece was an architectural decision about what the server should and shouldn't be allowed to reach on a user's behalf, precisely the category Roelevink's commentary consistently points to.
+Very well - the import feature functioned exactly as described from a feature-output perspective; the missing piece was an architectural decision about what the server should and shouldn't be allowed to reach on a user's behalf, precisely the category Roelevink's commentary consistently points to.
 
 ### Is there a way for a founder to test for this kind of gap themselves before a professional review?
 
@@ -110,7 +110,7 @@ A founder with some technical comfort can try providing an internal address (lik
 
 ### Does blocking obvious internal IP ranges cover most of this risk, or is that only a partial fix?
 
-Only partial — blocking obvious internal ranges stops the most naive attempt, but DNS rebinding, redirect chains, alternate address formats, and the cloud metadata endpoint specifically all require additional, separate handling beyond a simple range check. A validation approach that only checks the initially provided address, rather than re-validating at the moment of the actual request, leaves several of these bypasses fully open.
+Only partial - blocking obvious internal ranges stops the most naive attempt, but DNS rebinding, redirect chains, alternate address formats, and the cloud metadata endpoint specifically all require additional, separate handling beyond a simple range check. A validation approach that only checks the initially provided address, rather than re-validating at the moment of the actual request, leaves several of these bypasses fully open.
 
 <script type="application/ld+json">
 {
@@ -162,7 +162,7 @@ Only partial — blocking obvious internal ranges stops the most naive attempt, 
       "name": "Does blocking obvious internal IP ranges cover most of this risk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only partially — DNS rebinding, redirect chains, and the cloud metadata endpoint all require separate, additional handling."
+        "text": "Only partially - DNS rebinding, redirect chains, and the cloud metadata endpoint all require separate, additional handling."
       }
     }
   ]

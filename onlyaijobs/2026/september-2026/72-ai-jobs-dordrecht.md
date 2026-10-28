@@ -143,7 +143,7 @@ Candidates who do not fit any of these are probably better served basing themsel
 
 Two things differ from general technology hiring and are worth preparing for.
 
-**Domain credibility is weighted heavily.** Maritime is an old industry with deep practical knowledge, and it has seen external technologists arrive with proposals that ignored how vessels, ports or waterways actually operate. Demonstrating that you have taken the trouble to understand the operational reality — even at a basic level — changes how you are received substantially.
+**Domain credibility is weighted heavily.** Maritime is an old industry with deep practical knowledge, and it has seen external technologists arrive with proposals that ignored how vessels, ports or waterways actually operate. Demonstrating that you have taken the trouble to understand the operational reality - even at a basic level - changes how you are received substantially.
 
 **The companies are often family-owned and long-horizon.** Many mid-sized maritime engineering firms have existed for generations and think in decades. They value people who intend to stay and who can work with engineers who have thirty years of experience in a specific vessel type. Interviews assess fit for that environment as much as technical capability.
 
@@ -190,7 +190,7 @@ Often the opposite. Maritime engineering firms frequently lack modern data capab
     {"@type": "Question", "name": "What does maritime data work actually involve?", "acceptedAnswer": {"@type": "Answer", "text": "Waterway routing under changing draught limits, voyage efficiency against fuel and emissions constraints, condition monitoring at sea, and inland vessel autonomy."}},
     {"@type": "Question", "name": "Why is water safety work technically distinctive?", "acceptedAnswer": {"@type": "Answer", "text": "The events you must estimate are rarer than the observational record, so extrapolation must be defensible under legal standards."}},
     {"@type": "Question", "name": "How should I approach maritime employers?", "acceptedAnswer": {"@type": "Answer", "text": "Show you have made an effort to understand operational reality, and expect them to assess long-term intent. Many are family firms thinking in decades."}},
-    {"@type": "Question", "name": "Are maritime data roles junior in scope?", "acceptedAnswer": {"@type": "Answer", "text": "Often the opposite — these firms frequently lack data capability, so you may be establishing the function rather than joining one."}}
+    {"@type": "Question", "name": "Are maritime data roles junior in scope?", "acceptedAnswer": {"@type": "Answer", "text": "Often the opposite - these firms frequently lack data capability, so you may be establishing the function rather than joining one."}}
   ]
 }
 </script>

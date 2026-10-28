@@ -1,4 +1,4 @@
-🚨 A €3,100 subcontractor invoice turns into a €9,500 line item on a client proposal. Side by side, the honest reaction is discomfort — is that padding, or accounted for? 😅
+🚨 A €3,100 subcontractor invoice turns into a €9,500 line item on a client proposal. Side by side, the honest reaction is discomfort - is that padding, or accounted for? 😅
 
 Agencies get this wrong in one of two directions, and both are expensive: 💸
 
@@ -8,7 +8,7 @@ Agencies get this wrong in one of two directions, and both are expensive: 💸
 ❌ No scope boundary means a mid-build "yes" quietly erases the margin you priced in
 
 ✅ Cost-plus with named line items: subcontractor cost, scoping time, revision buffer, margin
-✅ Present one bundled, outcome-based number — sell the deliverable, not your cost stack
+✅ Present one bundled, outcome-based number - sell the deliverable, not your cost stack
 ✅ Anchor against traditional agency rates (€20K–€500K+) before stating your number
 ✅ Show your work only for a sophisticated client who explicitly asks how it was built
 

@@ -1,6 +1,6 @@
-🔥 Ingrid built CopyForge AI using **Lovable** — an AI marketing copy tool one signature away from an enterprise retail contract, until legal returned her Terms of Service with 40 tracked changes, all AI-specific gaps. 🧠
+🔥 Ingrid built CopyForge AI using **Lovable** - an AI marketing copy tool one signature away from an enterprise retail contract, until legal returned her Terms of Service with 40 tracked changes, all AI-specific gaps. 🧠
 
-If your AI product's Terms of Service is a generic template, it says nothing about output ownership, training data provenance, or AI-specific liability — exactly what an enterprise legal team flags first, and a generalist lawyer often misses too.
+If your AI product's Terms of Service is a generic template, it says nothing about output ownership, training data provenance, or AI-specific liability - exactly what an enterprise legal team flags first, and a generalist lawyer often misses too.
 
 ❌ No clear clause on who owns AI-generated output
 ❌ No representation about the training data behind the underlying model
@@ -12,7 +12,7 @@ If your AI product's Terms of Service is a generic template, it says nothing abo
 
 At **LaunchStudio**, we've been building exactly this technical foundation for AI compliance since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ingrid's contract closed without a second round: her lawyer drafted AI-specific terms in days instead of weeks, and the retail chain's legal team approved the revised contract without further tracked changes. (€2,900 (Launch & Grow Package) — 9 business days.) 🚀
+Ingrid's contract closed without a second round: her lawyer drafted AI-specific terms in days instead of weeks, and the retail chain's legal team approved the revised contract without further tracked changes. (€2,900 (Launch & Grow Package) - 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-enterprise-tos-ai-copyright
 

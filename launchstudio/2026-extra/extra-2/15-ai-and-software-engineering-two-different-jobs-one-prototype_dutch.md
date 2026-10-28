@@ -94,9 +94,9 @@ Een onderaannemer, die door zijn eigen factuur bladerde en het opeenvolgende num
 **Resultaat:** LaunchStudio voegde een expliciete eigenschapsverificatie toe aan het factuureindpunt en auditeerde elke vergelijkbare bron per gebruiker in BouwBoard op hetzelfde patroon. Dit sloot de kloof over de gehele applicatie in plaats van alleen het ene eindpunt dat gemeld was.
 
 > *"Hij vertelde me er bijna verontschuldigend over, alsof hij zich slecht voelde dat hij er toevallig op stuitte. Ik was gewoon opgelucht dat het iemand eerlijk was die het vermeldde in plaats van stil te blijven."*
-> — **Milan de Wit, Oprichter, BouwBoard (Leeuwarden)**
+> - **Milan de Wit, Oprichter, BouwBoard (Leeuwarden)**
 
-**Kosten en tijdlijn:** € 2.000 (IDOR-audit en eigenschapsverificatie over broneindpunten) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (IDOR-audit en eigenschapsverificatie over broneindpunten) - voltooid in 7 werkdagen.
 
 ---
 

@@ -16,7 +16,7 @@ Wat u wél moet inrichten vóór u onnodig tienduizenden euro's uitgeeft aan een
 ✅ Complexe zakelijke logica ontkoppelen naar microservices terwijl de UI in Lovable bewerkbaar blijft
 ✅ 100% eigendom over intellectueel eigendom, deployment pipelines en hosting behouden
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, begeleiden we founders bij de overstap van prototype naar een enterprise repository — met behoud van wendbaarheid.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, begeleiden we founders bij de overstap van prototype naar een enterprise repository - met behoud van wendbaarheid.
 
 💡 Het resultaat: Emma Zwart liet de repository-migratie en staging-pipeline binnen 8 werkdagen inrichten voor € 3.150. Het enterprise contract werd 5 weken later getekend en 14 maanden later past ze zelf nog steeds moeiteloos UI-elementen aan in Lovable. 🚀
 

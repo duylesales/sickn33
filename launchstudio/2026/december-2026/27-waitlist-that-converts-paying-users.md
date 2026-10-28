@@ -31,16 +31,16 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Waitlist size is one of the most misleading vanity metrics in startup culture. A founder proudly announcing "2,000 people on our waitlist" often has a worse business than a founder with 150 people on theirs — because waitlist signups measure curiosity, not commitment, and the gap between the two determines whether your launch generates revenue or silence.
+Waitlist size is one of the most misleading vanity metrics in startup culture. A founder proudly announcing "2,000 people on our waitlist" often has a worse business than a founder with 150 people on theirs - because waitlist signups measure curiosity, not commitment, and the gap between the two determines whether your launch generates revenue or silence.
 
 ## Why Most Waitlists Convert Poorly
 
-The typical waitlist asks for almost nothing: an email address, sometimes a name. This low barrier maximizes signups but also maximizes low-intent signups — people who were mildly curious for ten seconds, not people who will actually pay when you launch. When launch day arrives, founders are often shocked that a 2,000-person waitlist converts to 40 paying customers, a 2% rate that feels like failure relative to the signup number, even though 40 paying customers from a cold launch is a genuinely strong outcome.
+The typical waitlist asks for almost nothing: an email address, sometimes a name. This low barrier maximizes signups but also maximizes low-intent signups - people who were mildly curious for ten seconds, not people who will actually pay when you launch. When launch day arrives, founders are often shocked that a 2,000-person waitlist converts to 40 paying customers, a 2% rate that feels like failure relative to the signup number, even though 40 paying customers from a cold launch is a genuinely strong outcome.
 
 ## Designing a Waitlist That Filters for Real Intent
 
 ### Ask for More Than an Email
-Adding even one meaningful question — "what's the biggest problem you're hoping this solves?" or "would you pay €X/month for this?" — filters out low-intent signups and gives you real qualitative data about what to build and how to price it.
+Adding even one meaningful question - "what's the biggest problem you're hoping this solves?" or "would you pay €X/month for this?" - filters out low-intent signups and gives you real qualitative data about what to build and how to price it.
 
 ### Offer a Founding Member Incentive Tied to Actual Commitment
 Rather than a generic "get notified when we launch," offer founding members a locked-in discount or bonus feature in exchange for a small refundable deposit or an explicit pre-commitment. This converts curiosity into a genuine signal of purchase intent.
@@ -49,23 +49,23 @@ Rather than a generic "get notified when we launch," offer founding members a lo
 Track who opens your waitlist emails, who replies to updates, and who engages with any pre-launch content. This engaged segment converts to paying customers at a dramatically higher rate than the full list and deserves prioritized outreach at launch.
 
 ### Launch to the Waitlist Before the Public
-A staged launch — waitlist first, public second — lets you validate your onboarding flow and pricing with a warmer audience before opening to cold traffic, and it rewards your most engaged early supporters appropriately.
+A staged launch - waitlist first, public second - lets you validate your onboarding flow and pricing with a warmer audience before opening to cold traffic, and it rewards your most engaged early supporters appropriately.
 
 ## The Technical Waitlist Requirements Founders Underestimate
 
-A waitlist that "just collects emails" still needs real infrastructure once it matters to your business: reliable email delivery (not landing in spam), a way to segment and message different waitlist cohorts, and — critically — a smooth, low-friction path from "waitlist member" to "paying customer" at launch, which requires your actual product to be genuinely ready to onboard people the moment you email your list.
+A waitlist that "just collects emails" still needs real infrastructure once it matters to your business: reliable email delivery (not landing in spam), a way to segment and message different waitlist cohorts, and - critically - a smooth, low-friction path from "waitlist member" to "paying customer" at launch, which requires your actual product to be genuinely ready to onboard people the moment you email your list.
 
-This last point is where many AI-native founders stumble: they build an impressive waitlist landing page in Lovable or Bolt, generate real excitement, and then launch to find their actual product — the one behind the waitlist — isn't production-ready to receive real paying customers. [LaunchStudio](https://launchstudio.eu/en/) exists specifically to make sure your product is ready before your waitlist email goes out, not scrambling to fix critical gaps during your highest-attention moment.
+This last point is where many AI-native founders stumble: they build an impressive waitlist landing page in Lovable or Bolt, generate real excitement, and then launch to find their actual product - the one behind the waitlist - isn't production-ready to receive real paying customers. [LaunchStudio](https://launchstudio.eu/en/) exists specifically to make sure your product is ready before your waitlist email goes out, not scrambling to fix critical gaps during your highest-attention moment.
 
-[Get your product launch-ready](https://launchstudio.eu/en/#calculator) before you email your waitlist — you rarely get a second first impression with your most engaged audience.
+[Get your product launch-ready](https://launchstudio.eu/en/#calculator) before you email your waitlist - you rarely get a second first impression with your most engaged audience.
 
 ## The Pre-Launch Nurture Sequence: Keeping a Waitlist Warm Without Burning It Out
 
-Getting someone to join your waitlist is the easy part. Keeping their attention and intent alive for the weeks or months between signup and launch — without annoying them into unsubscribing or simply forgetting why they signed up — requires a deliberate email cadence, not a single "thanks for joining" message followed by silence until launch day.
+Getting someone to join your waitlist is the easy part. Keeping their attention and intent alive for the weeks or months between signup and launch - without annoying them into unsubscribing or simply forgetting why they signed up - requires a deliberate email cadence, not a single "thanks for joining" message followed by silence until launch day.
 
 ### What to Actually Send, and When
 - **Immediately after signup**: A confirmation that also asks your qualifying question if you haven't already, plus a realistic timeline expectation ("we expect to launch in roughly 6 weeks") so people aren't left guessing
-- **Every 2-3 weeks during the wait**: A short, genuine update — a specific feature decision you made based on their feedback, a screenshot of real progress, or an answer to a common question raised by multiple signups. The goal is demonstrating momentum, not manufacturing content for its own sake
+- **Every 2-3 weeks during the wait**: A short, genuine update - a specific feature decision you made based on their feedback, a screenshot of real progress, or an answer to a common question raised by multiple signups. The goal is demonstrating momentum, not manufacturing content for its own sake
 - **One to two weeks before launch**: A "we're close" message that sets a specific date if you have one, building anticipation without over-promising a date you might miss
 - **Launch day itself**: The conversion email, ideally personalized by segment rather than one identical blast to everyone
 
@@ -73,10 +73,10 @@ Getting someone to join your waitlist is the easy part. Keeping their attention 
 Founders who ask a qualifying question at signup have real data to segment nurture content by, not just launch messaging. A signup who mentioned pricing sensitivity responds better to an update emphasizing value and return on investment; a signup who mentioned a specific missing feature responds better to an update on exactly that feature's progress. This segmented nurture approach costs little extra effort if you're already collecting qualifying answers, and it meaningfully increases the odds someone still remembers and cares about your product by the time you actually launch.
 
 ### The Over-Communication Trap
-The opposite failure — emailing too frequently with low-substance updates — trains your most valuable, most engaged signups to stop opening your emails before launch day even arrives, which is precisely the audience you most need paying attention when the conversion email lands. If you don't have a genuine update worth sending, it's better to skip that cycle than to send filler that erodes open rates for the message that actually matters.
+The opposite failure - emailing too frequently with low-substance updates - trains your most valuable, most engaged signups to stop opening your emails before launch day even arrives, which is precisely the audience you most need paying attention when the conversion email lands. If you don't have a genuine update worth sending, it's better to skip that cycle than to send filler that erodes open rates for the message that actually matters.
 
 ### Reactivating Signups Who've Gone Quiet
-Some portion of any waitlist stops opening emails weeks before launch, not because they're uninterested but because life moved on. A short, low-pressure "still interested?" message sent shortly before your launch email, distinct from the launch email itself, can meaningfully re-engage a portion of this quiet segment — giving you a second chance to reach people your standard nurture cadence alone would have lost by launch day. Combined with the qualifying-question data and segmentation described above, this nurture sequence is what turns a static list of email addresses into an audience that actually arrives at launch day still informed, still interested, and still ready to pay.
+Some portion of any waitlist stops opening emails weeks before launch, not because they're uninterested but because life moved on. A short, low-pressure "still interested?" message sent shortly before your launch email, distinct from the launch email itself, can meaningfully re-engage a portion of this quiet segment - giving you a second chance to reach people your standard nurture cadence alone would have lost by launch day. Combined with the qualifying-question data and segmentation described above, this nurture sequence is what turns a static list of email addresses into an audience that actually arrives at launch day still informed, still interested, and still ready to pay.
 
 ## Real example
 
@@ -84,16 +84,16 @@ Some portion of any waitlist stops opening emails weeks before launch, not becau
 
 Nina, a freelance interior designer in Almere, built RuimtePlan, an AI tool that generated furniture layout suggestions from a room photo and dimensions, using v0 and Bolt. Rather than chasing broad signup numbers, she deliberately built a waitlist that asked visitors one question: "What room are you struggling to plan, and what's frustrating about it?" This filtered her list to 180 genuinely engaged signups over six weeks, each with a real, specific problem documented.
 
-When Nina was ready to launch, she discovered her prototype could generate impressive layout suggestions but had no way to save a user's project between sessions, no payment system, and the AI photo analysis calls were running directly from the browser with an exposed API key — none of which would survive real usage from her 180 engaged, expectant signups.
+When Nina was ready to launch, she discovered her prototype could generate impressive layout suggestions but had no way to save a user's project between sessions, no payment system, and the AI photo analysis calls were running directly from the browser with an exposed API key - none of which would survive real usage from her 180 engaged, expectant signups.
 
 Nina contacted LaunchStudio with a firm two-week deadline tied to a planned launch email to her waitlist. The Manifera team prioritized exactly what launch required: project persistence so users could save and revisit their room plans, secure server-side AI calls, and a Mollie-based one-time payment option (per-room-plan) that matched how Nina's waitlist respondents described wanting to use the tool.
 
-**Result:** Nina emailed her 180-person waitlist on schedule. 61 converted to paying customers within the first week — a 34% conversion rate, far above typical waitlist benchmarks, which Nina attributes directly to having filtered for genuine intent from the start and having a product that was actually ready to receive them.
+**Result:** Nina emailed her 180-person waitlist on schedule. 61 converted to paying customers within the first week - a 34% conversion rate, far above typical waitlist benchmarks, which Nina attributes directly to having filtered for genuine intent from the start and having a product that was actually ready to receive them.
 
 > *"I could have chased a bigger number, but I asked one real question instead of just collecting emails. When LaunchStudio got my product ready in time, that quality showed up immediately in how many people actually paid."*
-> — **Nina Kramer, Founder, RuimtePlan (Almere)**
+> - **Nina Kramer, Founder, RuimtePlan (Almere)**
 
-**Cost & Timeline:** €2,950 (Launch & Grow Package, launch-deadline priority) — live in 13 business days.
+**Cost & Timeline:** €2,950 (Launch & Grow Package, launch-deadline priority) - live in 13 business days.
 
 ---
 
@@ -109,7 +109,7 @@ Long enough to gather meaningful signal (typically a few weeks to a couple of mo
 
 ### What if my product isn't ready when my waitlist reaches a size I want to launch to?
 
-Launching before your product can reliably handle real payments and real usage risks damaging trust with your most engaged, highest-intent audience — arguably your most valuable audience to protect. It's usually better to delay the launch email slightly and ensure production readiness first, as Nina did with her two-week LaunchStudio engagement.
+Launching before your product can reliably handle real payments and real usage risks damaging trust with your most engaged, highest-intent audience - arguably your most valuable audience to protect. It's usually better to delay the launch email slightly and ensure production readiness first, as Nina did with her two-week LaunchStudio engagement.
 
 ### Should I charge waitlist members a deposit to join, or is that too aggressive?
 
@@ -117,7 +117,7 @@ It depends on your audience and positioning. A small, explicitly refundable depo
 
 ### Can LaunchStudio help build the waitlist page itself, or only the product behind it?
 
-LaunchStudio's core focus is the production infrastructure behind your product — the part that needs to be ready when your waitlist converts. Many founders build the waitlist landing page themselves using Lovable, Bolt, or v0, and bring LaunchStudio in specifically to ensure the underlying product is ready to receive those conversions reliably.
+LaunchStudio's core focus is the production infrastructure behind your product - the part that needs to be ready when your waitlist converts. Many founders build the waitlist landing page themselves using Lovable, Bolt, or v0, and bring LaunchStudio in specifically to ensure the underlying product is ready to receive those conversions reliably.
 
 <script type="application/ld+json">
 {

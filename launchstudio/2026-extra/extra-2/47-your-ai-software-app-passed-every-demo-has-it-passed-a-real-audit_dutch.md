@@ -61,11 +61,11 @@ Manifera's audits voor sessiebeveiliging worden uitgevoerd door het engineeringt
 
 Het ongeldig maken van een sessie bij het uitloggen is een belangrijk startpunt, maar het is slechts één schakel in de bredere levenscyclus van gebruikersauthenticatie. Een volwaardige controle inspecteert het gehele sessiebeheer:
 
-- **Automatische sessieverlooptijd (Session Expiry)** — verloopt een inlogtoken automatisch na een redelijke periode van inactiviteit, of blijft het voor altijd geldig zolang de gebruiker niet handmatig op 'Uitloggen' klikt? Een oneindig geldig token betekent dat een eenmaal ontvreemd token voor altijd toegang blijft bieden.
-- **Sessie-intrekking bij wachtwoordwijziging** — wanneer een gebruiker zijn wachtwoord wijzigt of herstelt, moet de backend gegarandeerd alle andere actieve sessies van dat account direct beëindigen.
-- **Beperking van gelijktijdige sessies (Concurrent Sessions)** — voor gevoelige zakelijke applicaties is het wenselijk om inzicht te hebben in het aantal actieve sessies per account en oude sessies automatisch af te sluiten wanneer vanaf een nieuw apparaat wordt ingelogd.
-- **Veilige verversing van tokens (Refresh Token Rotation)** — als uw architectuur gebruikmaakt van korte sessietokens in combinatie met refresh tokens, moet elk refresh token bij gebruik direct worden geroteerd en ongeldig worden gemaakt voor toekomstig hergebruik.
-- **Opslaglocatie van inloggegevens in de browser** — zorg ervoor dat sessietokens uitsluitend worden opgeslagen in `HttpOnly`, `Secure` cookies en nooit in `localStorage`, waar ze kwetsbaar zijn voor diefstal via XSS-aanvallen.
+- **Automatische sessieverlooptijd (Session Expiry)** - verloopt een inlogtoken automatisch na een redelijke periode van inactiviteit, of blijft het voor altijd geldig zolang de gebruiker niet handmatig op 'Uitloggen' klikt? Een oneindig geldig token betekent dat een eenmaal ontvreemd token voor altijd toegang blijft bieden.
+- **Sessie-intrekking bij wachtwoordwijziging** - wanneer een gebruiker zijn wachtwoord wijzigt of herstelt, moet de backend gegarandeerd alle andere actieve sessies van dat account direct beëindigen.
+- **Beperking van gelijktijdige sessies (Concurrent Sessions)** - voor gevoelige zakelijke applicaties is het wenselijk om inzicht te hebben in het aantal actieve sessies per account en oude sessies automatisch af te sluiten wanneer vanaf een nieuw apparaat wordt ingelogd.
+- **Veilige verversing van tokens (Refresh Token Rotation)** - als uw architectuur gebruikmaakt van korte sessietokens in combinatie met refresh tokens, moet elk refresh token bij gebruik direct worden geroteerd en ongeldig worden gemaakt voor toekomstig hergebruik.
+- **Opslaglocatie van inloggegevens in de browser** - zorg ervoor dat sessietokens uitsluitend worden opgeslagen in `HttpOnly`, `Secure` cookies en nooit in `localStorage`, waar ze kwetsbaar zijn voor diefstal via XSS-aanvallen.
 
 Sessiebeveiliging is een doorlopend proces gedurende de hele gebruikerssessie. Het systematisch controleren van deze stappen waarborgt dat de achterdeur net zo goed vergrendeld is als de voordeur.
 
@@ -80,9 +80,9 @@ Een IT-vaardige leraar die het gedrag van het platform testte uit professionele 
 **Resultaat:** LaunchStudio implementeerde een correcte sessie-ongeldigverklaring aan de serverzijde getriggerd door uitloggen. Ze bevestigden dat een buitgemaakt token van vóór het uitloggen direct achteraf oprecht stopt met werken.
 
 > *"De interface zag er elke keer dat ik het zelf testte compleet uitgelogd uit, wat exact is waarom ik nooit vermoedde dat er daadwerkelijk nog iets actief was eronder. Er was een leraar voor nodig die specifiek testte op dit gedeelde-apparaat-scenario om het op te vangen."*
-> — **Anna Visser, Oprichter, ToetsTijd (Kampen)**
+> - **Anna Visser, Oprichter, ToetsTijd (Kampen)**
 
-**Kosten en tijdlijn:** € 1.600 (implementatie van sessie-ongeldigverklaring aan de serverzijde) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (implementatie van sessie-ongeldigverklaring aan de serverzijde) - voltooid in 5 werkdagen.
 
 ---
 
@@ -90,19 +90,19 @@ Een IT-vaardige leraar die het gedrag van het platform testte uit professionele 
 
 ### Zou een sessiespecialist onvolledige uitlog-invalidatie beschouwen als een veelvoorkomend gebrek?
 
-Ja, zeer gebruikelijk — het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt.
+Ja, zeer gebruikelijk - het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt.
 
 ### Is dit risico alleen relevant voor gedeelde apparaten (zoals op scholen of kantoren), of ook voor individuele gebruikers?
 
 Het is direct acuut op gedeelde apparaten waar een volgende gebruiker het vorige account kan overnemen, maar ook voor individuele gebruikers: als een apparaat wordt gestolen of een netwerkaanval plaatsvindt, blijft een niet-geïnvalideerd token bruikbaar, zelfs nadat de gebruiker meende veilig te zijn uitgelogd.
 
-### Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen — helpt die ervaring bij het signaleren van sessierisico's?
+### Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen - helpt die ervaring bij het signaleren van sessierisico's?
 
 Ja, het begrijpen van de operationele context (gedeelde werkplekken versus individuele smartphones) bepaalt hoe streng sessies moeten worden beheerd. Manifera implementeert levenscyclusbeheer voor sessies dat voldoet aan enterprise-beveiligingsstandaarden.
 
 ### Hoe sluit deze case aan bij de visie van Herre Roelevink over het verschil tussen 'lijkt correct' en 'is correct'?
 
-Perfect — in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst.
+Perfect - in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst.
 
 ### Kan een oprichter zelf controleren of zijn sessietokens na het uitloggen daadwerkelijk dood zijn?
 
@@ -118,7 +118,7 @@ Ja, door een beveiligd netwerkverzoek vanuit de developer tools te kopiëren (al
       "name": "Zou een sessiespecialist onvolledige uitlog-invalidatie beschouwen als een veelvoorkomend gebrek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zeer gebruikelijk — het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt."
+        "text": "Ja, zeer gebruikelijk - het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt."
       }
     },
     {
@@ -131,7 +131,7 @@ Ja, door een beveiligd netwerkverzoek vanuit de developer tools te kopiëren (al
     },
     {
       "@type": "Question",
-      "name": "Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen — helpt die ervaring bij het signaleren van sessierisico's?",
+      "name": "Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen - helpt die ervaring bij het signaleren van sessierisico's?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja, het begrijpen van de operationele context (gedeelde werkplekken versus individuele smartphones) bepaalt hoe streng sessies moeten worden beheerd. Manifera implementeert levenscyclusbeheer voor sessies dat voldoet aan enterprise-beveiligingsstandaarden."
@@ -142,7 +142,7 @@ Ja, door een beveiligd netwerkverzoek vanuit de developer tools te kopiëren (al
       "name": "Hoe sluit deze case aan bij de visie van Herre Roelevink over het verschil tussen 'lijkt correct' en 'is correct'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Perfect — in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst."
+        "text": "Perfect - in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst."
       }
     },
     {

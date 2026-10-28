@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The team is six people and will be twelve by the end of the year, or twelve and heading for twenty-five. It is presented as the reason to join, and it is a genuine signal: somebody with budget has decided this capability matters. It is also the condition that produces the most predictable set of problems in data teams — onboarding that nobody has capacity to do, conventions that fork three ways, seniors who stop building because they are teaching, and a correction eighteen months later when the growth stops. Rapid hiring is neither good nor bad news. It is a situation with a known failure pattern, and you can find out in one conversation whether this team is managing it.
+The team is six people and will be twelve by the end of the year, or twelve and heading for twenty-five. It is presented as the reason to join, and it is a genuine signal: somebody with budget has decided this capability matters. It is also the condition that produces the most predictable set of problems in data teams - onboarding that nobody has capacity to do, conventions that fork three ways, seniors who stop building because they are teaching, and a correction eighteen months later when the growth stops. Rapid hiring is neither good nor bad news. It is a situation with a known failure pattern, and you can find out in one conversation whether this team is managing it.
 
 ## Why Teams Scale Suddenly
 
@@ -105,7 +105,7 @@ Ask directly: of the people already here, how many have more than three years of
 
 Every rapid expansion ends, and the ending matters. If the growth was tied to funding or a programme, the correction can be abrupt: hiring freezes, and occasionally a reduction, with the most recent arrivals feeling most exposed regardless of how selection formally works in a Dutch reorganisation.
 
-This is not a reason to avoid growing teams. It is a reason to ask what the growth is funded by, and to notice whether the team is being built around durable work — systems the organisation depends on — or around a programme with an end date.
+This is not a reason to avoid growing teams. It is a reason to ask what the growth is funded by, and to notice whether the team is being built around durable work - systems the organisation depends on - or around a programme with an end date.
 
 ## When to Accept
 
@@ -141,7 +141,7 @@ And expect the first quarter to feel chaotic. In a team that is doubling, it is 
 
 A team that is hiring quickly reveals a great deal through how it hires, and you experience that process directly before you have to decide anything.
 
-**Did the technical conversation have substance?** Teams under pressure to fill seats sometimes lower the bar without admitting it. If your technical interview was superficial, ask yourself who else passed through it — your future colleagues were assessed the same way.
+**Did the technical conversation have substance?** Teams under pressure to fill seats sometimes lower the bar without admitting it. If your technical interview was superficial, ask yourself who else passed through it - your future colleagues were assessed the same way.
 
 **Who interviewed you?** If you met only the manager and a recruiter, the team has no say in who joins it, which usually means onboarding is nobody's responsibility either.
 
@@ -161,13 +161,13 @@ An engineer is offered a role at a company whose data team is going from seven t
 
 He asks what the nine new people will work on. The manager has a specific answer: three on a platform migration, four on two named product areas, two on governance work required by a compliance deadline. That answer is the thing that reassures him most.
 
-He then asks to speak to the most recent joiner, who is candid — the first six weeks were disorganised, there was no onboarding material, and it improved after the team appointed someone to own it.
+He then asks to speak to the most recent joiner, who is candid - the first six weeks were disorganised, there was no onboarding material, and it improved after the team appointed someone to own it.
 
 He accepts, and in his first month writes the onboarding guide he wished he had received, which is adopted for the next five hires.
 
 Nine months in, the team is fourteen and the quality dip everyone warned about happened and passed. The two governance hires turn out to be the most secure roles in the team, because their work is tied to an obligation rather than to a budget.
 
-His conclusion: the growth was not the reason to join or to stay — the work plan behind it was.
+His conclusion: the growth was not the reason to join or to stay - the work plan behind it was.
 
 ## Key Takeaways
 
@@ -179,7 +179,7 @@ His conclusion: the growth was not the reason to join or to stay — the work pl
 
 ## Where to Start
 
-Team growth is easy to advertise and hard to verify, so ask what the new people will work on — then compare with stable teams near you where the work is already defined.
+Team growth is easy to advertise and hard to verify, so ask what the new people will work on - then compare with stable teams near you where the work is already defined.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -209,7 +209,7 @@ Hiring freezes and occasionally a correction. Ask what funds the expansion and w
     {"@type": "Question", "name": "Should I join a fast-growing team early in my career?", "acceptedAnswer": {"@type": "Answer", "text": "Only where mentoring capacity exists; otherwise you get responsibility without correction."}},
     {"@type": "Question", "name": "What should I expect as a senior hire?", "acceptedAnswer": {"@type": "Answer", "text": "Much of year one spent onboarding others and setting standards."}},
     {"@type": "Question", "name": "What is the clearest warning sign?", "acceptedAnswer": {"@type": "Answer", "text": "A hiring plan with no work plan behind it."}},
-    {"@type": "Question", "name": "What happens when the growth stops?", "acceptedAnswer": {"@type": "Answer", "text": "Freezes and sometimes corrections — ask what funds the growth and whether the work is durable."}}
+    {"@type": "Question", "name": "What happens when the growth stops?", "acceptedAnswer": {"@type": "Answer", "text": "Freezes and sometimes corrections - ask what funds the growth and whether the work is durable."}}
   ]
 }
 </script>

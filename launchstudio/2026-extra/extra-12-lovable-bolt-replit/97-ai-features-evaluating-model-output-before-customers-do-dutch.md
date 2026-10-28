@@ -20,9 +20,9 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-De meeste AI-functies in AI-gebouwde producten zijn op dezelfde manier getest: de oprichter probeerde een paar voorbeelden, de uitvoer zag er goed uit, en de functie ging live. Een samenvatting van een overleg, een conceptantwoord aan een klant, een classificatie van binnenkomende documenten, een voorgesteld plan — elk werkte overtuigend op de voorbeelden die het te zien kreeg.
+De meeste AI-functies in AI-gebouwde producten zijn op dezelfde manier getest: de oprichter probeerde een paar voorbeelden, de uitvoer zag er goed uit, en de functie ging live. Een samenvatting van een overleg, een conceptantwoord aan een klant, een classificatie van binnenkomende documenten, een voorgesteld plan - elk werkte overtuigend op de voorbeelden die het te zien kreeg.
 
-Wat niemand testte, is wat er daarna gebeurt. De modelaanbieder brengt een nieuwe versie uit en de oude wordt uitgefaseerd. Een AI-assistent "verbetert" de prompt tijdens een refactor. Klanten beginnen langere documenten in te voeren, andere formaten, een andere taal. De uitvoer verandert — meestal niet dramatisch, maar op manieren die ertoe doen: een detail weggelaten, een feit verzonnen, een toon die niet meer past. En in de meeste producten merkt niets het op, totdat een klant het doet.
+Wat niemand testte, is wat er daarna gebeurt. De modelaanbieder brengt een nieuwe versie uit en de oude wordt uitgefaseerd. Een AI-assistent "verbetert" de prompt tijdens een refactor. Klanten beginnen langere documenten in te voeren, andere formaten, een andere taal. De uitvoer verandert - meestal niet dramatisch, maar op manieren die ertoe doen: een detail weggelaten, een feit verzonnen, een toon die niet meer past. En in de meeste producten merkt niets het op, totdat een klant het doet.
 
 Traditionele software heeft tests die falen wanneer gedrag verandert. AI-functies hebben het equivalent nodig, aangepast aan uitvoer die nooit twee keer precies hetzelfde is. Dit artikel behandelt hoe u bepaalt wat goede uitvoer betekent voor uw functie, een evaluatieset bouwt, die beoordeelt, wijzigingen ervan afhankelijk maakt, uitvoer in productie controleert, en gebruikt wat klanten corrigeren om de functie te verbeteren.
 
@@ -32,7 +32,7 @@ Vier dingen veranderen het gedrag van een AI-functie zonder dat iemand de functi
 
 **Het model verandert.** Aanbieders brengen nieuwe versies uit, faseren oude uit, en passen soms een model aan achter dezelfde naam. Een goedkoper of sneller model dat "even goed is op benchmarks", kan slechter zijn in het ene ding dat uw functie nodig heeft.
 
-**De prompt verandert.** Prompts staan in code, en code wordt bewerkt — steeds vaker door AI-assistenten die opruimen, inkorten en herformuleren. Een zin die werd verwijderd omdat hij overbodig leek, was vaak de instructie die een specifieke fout voorkwam.
+**De prompt verandert.** Prompts staan in code, en code wordt bewerkt - steeds vaker door AI-assistenten die opruimen, inkorten en herformuleren. Een zin die werd verwijderd omdat hij overbodig leek, was vaak de instructie die een specifieke fout voorkwam.
 
 **De invoer verandert.** Klanten gebruiken de functie op manieren die niemand testte: langere transcripten, gescande documenten, gemengd Nederlands en Engels, ongebruikelijke vaktermen. De kwaliteit van de uitvoer op echte invoer kan sterk verschillen van die op de voorbeelden uit de ontwikkeling.
 
@@ -61,7 +61,7 @@ Een evaluatieset is een verzameling realistische invoer, elk met de informatie d
 
 **Begin met vijftig tot honderdvijftig voorbeelden.** Genoeg om de variatie van echt gebruik te dekken; weinig genoeg om met de hand na te lopen.
 
-**Gebruik echte invoer, geanonimiseerd.** Synthetische voorbeelden die de oprichter schreef, testen wat de oprichter zich voorstelde. Geanonimiseerde voorbeelden uit echt gebruik — met namen, adressen en herleidbare details vervangen — testen wat klanten werkelijk doen. Spreek dit af met klanten als de data van hen is, en verwerk het onder uw verwerkersovereenkomst.
+**Gebruik echte invoer, geanonimiseerd.** Synthetische voorbeelden die de oprichter schreef, testen wat de oprichter zich voorstelde. Geanonimiseerde voorbeelden uit echt gebruik - met namen, adressen en herleidbare details vervangen - testen wat klanten werkelijk doen. Spreek dit af met klanten als de data van hen is, en verwerk het onder uw verwerkersovereenkomst.
 
 **Dek de moeilijke gevallen bewust af.** Lange invoer, korte invoer, invoer van slechte kwaliteit, randgevallen, voorbeelden waarin het juiste antwoord "dit kan ik niet bepalen" is, voorbeelden waarop een vorige versie faalde. Elke foutmelding van een klant wordt een nieuw voorbeeld.
 
@@ -84,13 +84,13 @@ Bewaar de set in de repository, geef haar versies, en behandel wijzigingen eraan
 
 Verschillende eigenschappen vragen verschillende controles. Gebruik voor elke eigenschap de goedkoopste controle die betrouwbaar is.
 
-**Deterministische controles** — code die een eigenschap exact controleert. Is de uitvoer geldige JSON die aan het schema voldoet? Is ze korter dan de woordlimiet? Is ze Nederlands? Komt elke naam in de uitvoer voor in de invoer? Komt de classificatie overeen met het label? Deze zijn snel, goedkoop, en moeten zo veel mogelijk dekken.
+**Deterministische controles** - code die een eigenschap exact controleert. Is de uitvoer geldige JSON die aan het schema voldoet? Is ze korter dan de woordlimiet? Is ze Nederlands? Komt elke naam in de uitvoer voor in de invoer? Komt de classificatie overeen met het label? Deze zijn snel, goedkoop, en moeten zo veel mogelijk dekken.
 
-**Beoordeling door een model** — een tweede model beoordeelt een eigenschap die code niet makkelijk kan controleren: "Noemt deze samenvatting elke zorg die hieronder staat?" of "Belooft dit antwoord iets wat niet in het beleid staat?" Beoordelende modellen zijn nuttig en onvolmaakt. Geef ze een smalle, specifieke vraag in plaats van "is dit goed?", vraag om een ja of nee met een geciteerde onderbouwing, en valideer de beoordelaar zelf op voorbeelden waarvan u het antwoord kent voordat u hem vertrouwt.
+**Beoordeling door een model** - een tweede model beoordeelt een eigenschap die code niet makkelijk kan controleren: "Noemt deze samenvatting elke zorg die hieronder staat?" of "Belooft dit antwoord iets wat niet in het beleid staat?" Beoordelende modellen zijn nuttig en onvolmaakt. Geef ze een smalle, specifieke vraag in plaats van "is dit goed?", vraag om een ja of nee met een geciteerde onderbouwing, en valideer de beoordelaar zelf op voorbeelden waarvan u het antwoord kent voordat u hem vertrouwt.
 
-**Menselijke review** — voor een steekproef van de uitvoer, vooral bij de introductie van een nieuw model of een nieuwe prompt, en voor eigenschappen die geen geautomatiseerde controle goed vangt, zoals of een samenvatting echt nuttig zou zijn voor de persoon die haar leest. Houd het gestructureerd: elke keer dezelfde beoordelingsmaatstaf, met scores, zodat resultaten kunnen worden vergeleken.
+**Menselijke review** - voor een steekproef van de uitvoer, vooral bij de introductie van een nieuw model of een nieuwe prompt, en voor eigenschappen die geen geautomatiseerde controle goed vangt, zoals of een samenvatting echt nuttig zou zijn voor de persoon die haar leest. Houd het gestructureerd: elke keer dezelfde beoordelingsmaatstaf, met scores, zodat resultaten kunnen worden vergeleken.
 
-Het resultaat van een evaluatierun is een set getallen per eigenschap — "risico-uitspraken opgenomen: 97%; verzonnen namen: 0 van 120; binnen woordlimiet: 100%" — geen indruk.
+Het resultaat van een evaluatierun is een set getallen per eigenschap - "risico-uitspraken opgenomen: 97%; verzonnen namen: 0 van 120; binnen woordlimiet: 100%" - geen indruk.
 
 ## Maak Elke Wijziging Afhankelijk van de Evaluatie
 
@@ -120,25 +120,25 @@ Dit is wat de aankondiging van een aanbieder dat een model wordt uitgefaseerd, v
 
 ## Modellen en Prompts Eerlijk Vergelijken
 
-Het meeste evaluatiewerk gebeurt op een beslismoment: een goedkoper model, een nieuwe aanbieder, een herschreven prompt. Ze goed vergelijken voorkomt twee tegengestelde fouten — overstappen op iets slechters omdat het er op vijf voorbeelden goed uitzag, en weigeren over te stappen op iets beters omdat niemand het mat.
+Het meeste evaluatiewerk gebeurt op een beslismoment: een goedkoper model, een nieuwe aanbieder, een herschreven prompt. Ze goed vergelijken voorkomt twee tegengestelde fouten - overstappen op iets slechters omdat het er op vijf voorbeelden goed uitzag, en weigeren over te stappen op iets beters omdat niemand het mat.
 
 **Draai elke kandidaat op dezelfde evaluatieset, met dezelfde instellingen.** Zet de temperatuur, de context en de nabewerking vast, zodat de enige variabele de vergeleken variabele is.
 
 **Draai meer dan één keer.** Modeluitvoer varieert per run. Twee of drie runs per kandidaat laten zien of een verschil van twee punten echt is of ruis. Behandel bij kleine evaluatiesets kleine verschillen als gelijkspel en beslis op kosten, latentie of andere eigenschappen.
 
-**Vergelijk per eigenschap, niet op één score.** Een kandidaat die gemiddeld beter is maar slechter op de ene kritieke eigenschap — weggelaten risico's, verkeerde bedragen, verzonnen feiten — is slechter. Beslis vooraf welke eigenschappen kritiek zijn en behandel elke achteruitgang daarop als uitsluitend.
+**Vergelijk per eigenschap, niet op één score.** Een kandidaat die gemiddeld beter is maar slechter op de ene kritieke eigenschap - weggelaten risico's, verkeerde bedragen, verzonnen feiten - is slechter. Beslis vooraf welke eigenschappen kritiek zijn en behandel elke achteruitgang daarop als uitsluitend.
 
 **Vergelijk de kosten per acceptabele uitvoer.** Een goedkoper model dat vaker faalt bij validatie, en daardoor opnieuw probeert of terugvalt op een mens, kan per bruikbaar resultaat meer kosten dan het dure model. Deel de totale kosten door het aantal uitvoeringen dat alle kritieke controles doorstaat.
 
 **Bevestig geleidelijk in productie.** Nadat een kandidaat de evaluatie heeft doorstaan, released u hem achter een feature flag aan een klein deel van de klanten, zoals het artikel over feature flags in deze reeks beschrijft, en vergelijkt u bewerkingspercentages en validatiefouten tussen de twee groepen voordat u iedereen overzet. De evaluatieset vertelt u wat u verwachtte; productie vertelt u wat u niet verwachtte.
 
-Leg elke vergelijking vast — kandidaten, resultaten, beslissing en reden — in het beslissingenlogboek. De volgende keer dat een aanbieder een nieuw model aankondigt, is de vorige vergelijking het vertrekpunt in plaats van een vergeten gesprek.
+Leg elke vergelijking vast - kandidaten, resultaten, beslissing en reden - in het beslissingenlogboek. De volgende keer dat een aanbieder een nieuw model aankondigt, is de vorige vergelijking het vertrekpunt in plaats van een vergeten gesprek.
 
 ## Beperk de Uitvoer
 
 Veel kwaliteitsproblemen worden goedkoper voorkomen door te beperken wat het model kan opleveren dan door het achteraf te controleren.
 
-**Gebruik gestructureerde uitvoer.** Vraag het model JSON terug te geven die aan een schema voldoet — de meeste aanbieders ondersteunen dat direct — en valideer die met een schemabibliotheek voordat u haar gebruikt. Een samenvatting met verplichte velden zoals `concerns`, `agreements` en `follow_up` kan de sectie met zorgen niet stilletjes weglaten; ze kan haar alleen leeg laten, en dat is te controleren.
+**Gebruik gestructureerde uitvoer.** Vraag het model JSON terug te geven die aan een schema voldoet - de meeste aanbieders ondersteunen dat direct - en valideer die met een schemabibliotheek voordat u haar gebruikt. Een samenvatting met verplichte velden zoals `concerns`, `agreements` en `follow_up` kan de sectie met zorgen niet stilletjes weglaten; ze kan haar alleen leeg laten, en dat is te controleren.
 
 **Vraag om onderbouwing.** Vraag bij extractie en samenvatting om een kort citaat uit de invoer dat elke belangrijke uitspraak onderbouwt. Uitspraken zonder onderbouwing kunnen worden gemarkeerd of weggelaten, en verzonnen feiten worden veel zeldzamer.
 
@@ -150,7 +150,7 @@ Veel kwaliteitsproblemen worden goedkoper voorkomen door te beperken wat het mod
 
 De evaluatieset beschermt tegen achteruitgang die u voorzag. Controles in productie vangen de rest.
 
-**Valideer elke uitvoer** met de deterministische controles voordat ze wordt getoond of opgeslagen: schema, lengte, taal, namen die niet in de invoer voorkomen. Faalt een controle, probeer het dan één keer opnieuw en val daarna terug — toon een duidelijke melding, bied de handmatige route aan — in plaats van kapotte uitvoer te tonen.
+**Valideer elke uitvoer** met de deterministische controles voordat ze wordt getoond of opgeslagen: schema, lengte, taal, namen die niet in de invoer voorkomen. Faalt een controle, probeer het dan één keer opnieuw en val daarna terug - toon een duidelijke melding, bied de handmatige route aan - in plaats van kapotte uitvoer te tonen.
 
 **Neem steekproeven voor review.** Een klein percentage van de uitvoer, willekeurig gekozen en geanonimiseerd, wekelijks beoordeeld tegen de maatstaf. Het vangt afdrijven op echte invoer die de evaluatieset nog niet bevat, en elke interessante fout wordt aan de set toegevoegd.
 
@@ -168,19 +168,19 @@ Ontwerp de review zo dat ze echt is in plaats van wegklikken: toon de onderbouwi
 
 AI-functies beoordelen en debuggen vraagt om inzicht in invoer en uitvoer. De invoer bevat vaak precies de persoonsgegevens die klanten u toevertrouwen.
 
-Log bewust. Bewaar prompts en uitvoer alleen zo lang als nodig — dertig dagen is gebruikelijk — met beperkte toegang en elke toegang vastgelegd. Verwijder waar mogelijk identificatoren vóór het loggen. Sluit de gevoeligste functies volledig uit van logging en vertrouw in plaats daarvan op de evaluatieset en de steekproefreview. Leg voor elk verzoek het model, de promptversie en de instellingen vast, zodat een klacht kan worden herleid tot de configuratie die haar veroorzaakte. Voeg de logging toe aan uw verwerkingsregister en bewaarregister, zoals de AVG-artikelen in deze reeks beschrijven — en controleer dat de gegevensverwerking van uw modelaanbieder overeenkomt met wat u uw klanten vertelde.
+Log bewust. Bewaar prompts en uitvoer alleen zo lang als nodig - dertig dagen is gebruikelijk - met beperkte toegang en elke toegang vastgelegd. Verwijder waar mogelijk identificatoren vóór het loggen. Sluit de gevoeligste functies volledig uit van logging en vertrouw in plaats daarvan op de evaluatieset en de steekproefreview. Leg voor elk verzoek het model, de promptversie en de instellingen vast, zodat een klacht kan worden herleid tot de configuratie die haar veroorzaakte. Voeg de logging toe aan uw verwerkingsregister en bewaarregister, zoals de AVG-artikelen in deze reeks beschrijven - en controleer dat de gegevensverwerking van uw modelaanbieder overeenkomt met wat u uw klanten vertelde.
 
 ## Kwaliteit in het Nederlands
 
 De meeste modellen zijn het sterkst in het Engels. Een functie die in het Engels goed werkt, kan in het Nederlands merkbaar zwakker zijn: onnatuurlijke formuleringen, anglicismen, gemengde formele en informele aanspreekvorm, onjuiste vaktermen.
 
-Beoordeel in de taal die uw klanten gebruiken. Neem eigenschappen voor taalkwaliteit op in de maatstaf — de juiste aanspreekvorm, de terminologie van de organisatie, geen Engelse fragmenten — en laat een moedertaalspreker een steekproef beoordelen bij het evalueren van een nieuw model. Overweeg het model in het Nederlands te instrueren in plaats van in het Engels wanneer de uitvoer Nederlands moet zijn; test beide, omdat het resultaat per model verschilt.
+Beoordeel in de taal die uw klanten gebruiken. Neem eigenschappen voor taalkwaliteit op in de maatstaf - de juiste aanspreekvorm, de terminologie van de organisatie, geen Engelse fragmenten - en laat een moedertaalspreker een steekproef beoordelen bij het evalueren van een nieuw model. Overweeg het model in het Nederlands te instrueren in plaats van in het Engels wanneer de uitvoer Nederlands moet zijn; test beide, omdat het resultaat per model verschilt.
 
 ## Dit Inrichten
 
 Voor een product met één of meer AI-functies is dit doorgaans vier tot zes dagen: de definitie van goede uitvoer per functie opgeschreven als controleerbare eigenschappen, een evaluatieset van vijftig tot honderdvijftig geanonimiseerde echte voorbeelden met moeilijke gevallen en verwachte eigenschappen, deterministische controles voor alles wat code kan controleren, smalle en gevalideerde beoordelingen door een model voor de rest, een gestructureerde maatstaf voor menselijke review, een evaluatierunner die wijzigingen aan prompts, modellen en de pijplijn in CI tegenhoudt, vastgezette modelversies, eerlijke vergelijkingen van kandidaten per eigenschap en kosten per acceptabele uitvoer, gestructureerde uitvoer met schema's, onderbouwing en expliciete onzekerheid, validatie in productie met nieuwe poging en terugval, een wekelijkse steekproefreview, het bijhouden van acceptatie en bewerkingen, kosten en latentie gevolgd naast kwaliteit, menselijke bevestiging voor uitvoer met veel impact, privacybewuste logging met bewaartermijn en redactie, en taalkwaliteit in het Nederlands in de maatstaf.
 
-LaunchStudio richt dit in voor AI-functies waarop klanten zijn gaan vertrouwen. Daarachter staat Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio richt dit in voor AI-functies waarop klanten zijn gaan vertrouwen. Daarachter staat Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons hoe u zou weten of uw AI-functie slechter werd](https://launchstudio.eu/nl/#contact).
 
@@ -199,9 +199,9 @@ Vijf werkdagen: een evaluatieset van 120 geanonimiseerde intakegesprekken, samen
 **Resultaat:** op de evaluatieset liet het goedkopere model met de ingekorte prompt in 14% van de gesprekken minstens één risico-uitspraak weg; de teruggezette prompt met gestructureerde uitvoer bracht dit op het oorspronkelijke model onder 2%, en de poort wees later twee kandidaat-modellen af die achteruitgingen. Verzonnen namen gingen in productie naar nul. De privacyfunctionarissen van de gemeenten accepteerden de documentatie, en het aandeel samenvattingen dat door medewerkers flink werd bewerkt, daalde met ongeveer een derde.
 
 > *"We veranderden één regel om geld te besparen en een opruimactie haalde één alinea weg. Er ging niets fout. De samenvattingen begonnen gewoon de dingen weg te laten die er het meest toe deden."*
-> — **Linda Smits, Oprichter, Intakeverslag (Utrecht)**
+> - **Linda Smits, Oprichter, Intakeverslag (Utrecht)**
 
-**Kosten & Doorlooptijd:** €5.200 (geannoteerde evaluatieset van 120 gesprekken, deterministische controles en beoordelingen door een model, evaluatiepoort in CI met vastgezette modellen, gestructureerde uitvoer met onderbouwing, validatie in productie, expliciete bevestiging van risico's, bijhouden van bewerkingen, privacybewuste logging en documentatie) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** €5.200 (geannoteerde evaluatieset van 120 gesprekken, deterministische controles en beoordelingen door een model, evaluatiepoort in CI met vastgezette modellen, gestructureerde uitvoer met onderbouwing, validatie in productie, expliciete bevestiging van risico's, bijhouden van bewerkingen, privacybewuste logging en documentatie) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -223,7 +223,7 @@ Valideer elke uitvoer automatisch, beoordeel wekelijks een willekeurige steekpro
 
 ### Moet AI-uitvoer door een persoon worden beoordeeld?
 
-Voor alles wat iemands zorg, geld, juridische positie of werk raakt, ja — als echte review met de onderbouwing zichtbaar, niet als bevestiging met één klik.
+Voor alles wat iemands zorg, geld, juridische positie of werk raakt, ja - als echte review met de onderbouwing zichtbaar, niet als bevestiging met één klik.
 
 <script type="application/ld+json">
 {
@@ -267,7 +267,7 @@ Voor alles wat iemands zorg, geld, juridische positie of werk raakt, ja — als 
       "name": "Wanneer moet een mens AI-uitvoer beoordelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wanneer uitvoer zorg, geld, juridische positie of werk raakt — met zichtbare onderbouwing en echte bewerking, niet met één klik bevestigen."
+        "text": "Wanneer uitvoer zorg, geld, juridische positie of werk raakt - met zichtbare onderbouwing en echte bewerking, niet met één klik bevestigen."
       }
     }
   ]

@@ -25,29 +25,29 @@ Het is geen oordeel over de oprichter. Het is gewoon wat er gebeurt als code wor
 
 ## De eerste tien minuten
 
-Vraag het aan elke engineer die dit soort reviews regelmatig doet, en ze beschrijven ongeveer dezelfde eerste tien minuten. Ze openen de repository. Ze zoeken naar een handvol bekende probleemplekken — overal waar inloggegevens zouden kunnen staan, overal waar gebruikersinvoer rechtstreeks een databasequery bereikt, overal waar een permissiecontrole zou moeten bestaan maar misschien niet bestaat. Meestal duikt er iets op in die eerste doorloop, nog voordat ze ook maar één regel van de eigenlijke applicatielogica hebben gelezen.
+Vraag het aan elke engineer die dit soort reviews regelmatig doet, en ze beschrijven ongeveer dezelfde eerste tien minuten. Ze openen de repository. Ze zoeken naar een handvol bekende probleemplekken - overal waar inloggegevens zouden kunnen staan, overal waar gebruikersinvoer rechtstreeks een databasequery bereikt, overal waar een permissiecontrole zou moeten bestaan maar misschien niet bestaat. Meestal duikt er iets op in die eerste doorloop, nog voordat ze ook maar één regel van de eigenlijke applicatielogica hebben gelezen.
 
-Dit komt niet doordat AI-codeertools slordig zijn. Het komt doordat ze consistent zijn. Als u een AI-tool vraagt om een integratie toe te voegen, lost hij doorgaans het onmiddellijke probleem op — de API-aanroep aan de praat krijgen — met welk patroon hij de vorige keer ook gebruikte, op de meest directe manier die beschikbaar is. Als de meest directe manier toevallig het rechtstreeks plakken van een sleutel in het bestand is, is dat wat er verschijnt. En omdat de tool consistent is, neigt datzelfde kortere pad zich elke keer te herhalen wanneer een vergelijkbare taak zich voordoet.
+Dit komt niet doordat AI-codeertools slordig zijn. Het komt doordat ze consistent zijn. Als u een AI-tool vraagt om een integratie toe te voegen, lost hij doorgaans het onmiddellijke probleem op - de API-aanroep aan de praat krijgen - met welk patroon hij de vorige keer ook gebruikte, op de meest directe manier die beschikbaar is. Als de meest directe manier toevallig het rechtstreeks plakken van een sleutel in het bestand is, is dat wat er verschijnt. En omdat de tool consistent is, neigt datzelfde kortere pad zich elke keer te herhalen wanneer een vergelijkbare taak zich voordoet.
 
 ## Kevins zes bestanden
 
-Kevin de Ruiter, een oprichter in Doetinchem, bouwde MonteurApp — een tool voor de buitendienst van monteurs — met Bolt. De app werkte goed: monteurs konden klussen loggen, foto's uploaden en gegevens terugsynchroniseren naar kantoor. Kevin had in de loop van de tijd verschillende integraties met derden toegevoegd — kaarten, meldingen, een onderdelenopzoekservice — elke keer opgevraagd bij Bolt als een nieuwe feature.
+Kevin de Ruiter, een oprichter in Doetinchem, bouwde MonteurApp - een tool voor de buitendienst van monteurs - met Bolt. De app werkte goed: monteurs konden klussen loggen, foto's uploaden en gegevens terugsynchroniseren naar kantoor. Kevin had in de loop van de tijd verschillende integraties met derden toegevoegd - kaarten, meldingen, een onderdelenopzoekservice - elke keer opgevraagd bij Bolt als een nieuwe feature.
 
-De eerste keer dat een engineer van LaunchStudio de codebase doorlas, sprong het patroon er meteen uit: hardgecodeerde API-sleutels, rechtstreeks vastgelegd in zes verschillende bestanden. Niet één onoplettendheid — zes, één voor elke integratie, omdat Bolt elk nieuw verzoek op dezelfde manier had afgehandeld als het eerste. Vanuit het perspectief van de tool had het het probleem elke keer opgelost. Vanuit een beveiligingsperspectief zaten er nu zes afzonderlijke inloggegevens in platte tekst in een codebase die, als die ooit openbaar zou worden of door de verkeerde persoon zou worden benaderd, live toegang tot elke verbonden dienst tegelijk zou weggeven.
+De eerste keer dat een engineer van LaunchStudio de codebase doorlas, sprong het patroon er meteen uit: hardgecodeerde API-sleutels, rechtstreeks vastgelegd in zes verschillende bestanden. Niet één onoplettendheid - zes, één voor elke integratie, omdat Bolt elk nieuw verzoek op dezelfde manier had afgehandeld als het eerste. Vanuit het perspectief van de tool had het het probleem elke keer opgelost. Vanuit een beveiligingsperspectief zaten er nu zes afzonderlijke inloggegevens in platte tekst in een codebase die, als die ooit openbaar zou worden of door de verkeerde persoon zou worden benaderd, live toegang tot elke verbonden dienst tegelijk zou weggeven.
 
 ## Waarom dit specifieke patroon zo vaak voorkomt
 
-Er is een reden waarom "hardgecodeerde sleutels herhaald over bestanden" een van de meest voorkomende bevindingen is in plaats van een zeldzame uitzondering. AI-codeertools werken door patroonherkenning toe te passen op wat al in de codebase staat en wat doorgaans wordt gedaan om een bepaald soort verzoek op te lossen. Zodra een kortere weg eenmaal verschijnt en werkt, wordt het de weg van de minste weerstand voor elk vergelijkbaar verzoek daarna. Een oprichter die één voor één vijf integraties toevoegt, telkens code goedkeurend die "gewoon werkt" in de demo, heeft geen natuurlijk moment waarop het patroon in twijfel wordt getrokken — omdat er niets aan de demo stukgaat.
+Er is een reden waarom "hardgecodeerde sleutels herhaald over bestanden" een van de meest voorkomende bevindingen is in plaats van een zeldzame uitzondering. AI-codeertools werken door patroonherkenning toe te passen op wat al in de codebase staat en wat doorgaans wordt gedaan om een bepaald soort verzoek op te lossen. Zodra een kortere weg eenmaal verschijnt en werkt, wordt het de weg van de minste weerstand voor elk vergelijkbaar verzoek daarna. Een oprichter die één voor één vijf integraties toevoegt, telkens code goedkeurend die "gewoon werkt" in de demo, heeft geen natuurlijk moment waarop het patroon in twijfel wordt getrokken - omdat er niets aan de demo stukgaat.
 
 De lacune wordt pas zichtbaar wanneer iemand de code leest met een andere vraag in gedachten: niet "werkt dit" maar "wat gebeurt er als iemand dit vindt."
 
 ## Wat er daadwerkelijk verandert zodra een engineer het leest
 
-De waarde van een eerste echte codereview zit niet in het vinden van één bug. Het zit in het blootleggen van een patroon — dezelfde kortere weg, dezelfde ontbrekende controle, dezelfde aanname — herhaald overal waar die kortere weg handig was. Zodra u het patroon kent, repareert u niet alleen zes bestanden. U repareert de gewoonte die die zes bestanden vertegenwoordigen, wat betekent dat u overal elders moet controleren waar het ook naar boven had kunnen komen.
+De waarde van een eerste echte codereview zit niet in het vinden van één bug. Het zit in het blootleggen van een patroon - dezelfde kortere weg, dezelfde ontbrekende controle, dezelfde aanname - herhaald overal waar die kortere weg handig was. Zodra u het patroon kent, repareert u niet alleen zes bestanden. U repareert de gewoonte die die zes bestanden vertegenwoordigen, wat betekent dat u overal elders moet controleren waar het ook naar boven had kunnen komen.
 
 Dat is de eigenlijke waarde van een menselijke engineer die door AI gegenereerde code minstens één keer leest vóór lancering: niet het corrigeren van de AI-tool, maar het opsporen van het patroon dat de AI-tool nooit wist dat het herhaalde.
 
-Onze technici in Amsterdam doen dit soort eerste-leesreviews regelmatig, en het patroon van zes bestanden op rij is een van de meest voorkomende dingen die ze vinden. LaunchStudio wordt gesteund door Manifera — vertrouwd door klanten als Vodafone, TNO en CFLW — en Manifera's [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) past dezelfde standaard van "lees het één keer goed" toe op elk project. Wilt u dat een engineer daadwerkelijk uw eigen codebase doorleest, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
+Onze technici in Amsterdam doen dit soort eerste-leesreviews regelmatig, en het patroon van zes bestanden op rij is een van de meest voorkomende dingen die ze vinden. LaunchStudio wordt gesteund door Manifera - vertrouwd door klanten als Vodafone, TNO en CFLW - en Manifera's [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) past dezelfde standaard van "lees het één keer goed" toe op elk project. Wilt u dat een engineer daadwerkelijk uw eigen codebase doorleest, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Verder Dan Hardcoded Sleutels: De Andere Patronen Die een Eerste Inspectie Ontdekt
 
@@ -70,16 +70,16 @@ Het opsporen en elimineren van deze patronen is exact het werk waarin een gespec
 
 ### Een AI-native oprichter in actie: zes bestanden, één patroon, geen kwade opzet
 
-Kevin de Ruiter had MonteurApp gestaag opgebouwd over meerdere maanden, waarbij hij integraties toevoegde naarmate monteurs in de buitendienst om nieuwe mogelijkheden vroegen — een kaartdienst voor klantlocaties, pushmeldingen voor planningswijzigingen, een onderdelenzoekfunctie gekoppeld aan de API van een leverancier. Elke toevoeging werkte op het moment dat hij erom vroeg, en elke toevoeging bedde, zonder dat Kevin het wist, de API-sleutel van die integratie rechtstreeks in het broncodebestand in dat de integratie afhandelde.
+Kevin de Ruiter had MonteurApp gestaag opgebouwd over meerdere maanden, waarbij hij integraties toevoegde naarmate monteurs in de buitendienst om nieuwe mogelijkheden vroegen - een kaartdienst voor klantlocaties, pushmeldingen voor planningswijzigingen, een onderdelenzoekfunctie gekoppeld aan de API van een leverancier. Elke toevoeging werkte op het moment dat hij erom vroeg, en elke toevoeging bedde, zonder dat Kevin het wist, de API-sleutel van die integratie rechtstreeks in het broncodebestand in dat de integratie afhandelde.
 
 Toen Kevin MonteurApp bij LaunchStudio bracht voorafgaand aan een bredere uitrol naar meer buitendienstteams, kwamen bij de eerste engineeringdoorloop alle zes de gevallen binnen dezelfde review naar boven. Het team van Manifera haalde elke inloggegeven uit de code naar een goede setup voor geheimenbeheer, roteerde elke blootgestelde sleutel (want een sleutel die in een repository heeft gestaan, moet worden behandeld als mogelijk gecompromitteerd), en voegde een controle toe om het patroon voortaan automatisch op te sporen.
 
 **Resultaat:** MonteurApp beheert nu alle integratie-inloggegevens via één, goed beveiligde configuratie, en Kevin heeft een herhaalbare controle ingesteld zodat dezelfde kortere weg niet stilletjes terug kan keren de volgende keer dat hij om een nieuwe integratie vraagt.
 
 > *"Ik had geen idee dat het zes keer gebeurde. Ik dacht dat het één ding was dat ik ooit nog zou oplossen, geen patroon dat door de hele app liep."*
-> — **Kevin de Ruiter, oprichter, MonteurApp (Doetinchem)**
+> - **Kevin de Ruiter, oprichter, MonteurApp (Doetinchem)**
 
-**Kosten en tijdlijn:** € 750 (audit inloggegevens, opzet geheimenbeheer en sleutelrotatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 750 (audit inloggegevens, opzet geheimenbeheer en sleutelrotatie) - voltooid in 5 werkdagen.
 
 ---
 

@@ -1,4 +1,4 @@
-🚨 "We test everything" is one of the most common claims in software development — and one of the least meaningful. "Everything" is doing enormous, unverified work in that sentence. ⚙️🔍
+🚨 "We test everything" is one of the most common claims in software development - and one of the least meaningful. "Everything" is doing enormous, unverified work in that sentence. ⚙️🔍
 
 **The Pain Points:**
 ❌ **A Claim, Not a Number:** "Comprehensive coverage" with nothing checkable behind it.
@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Four Checkable Artifacts, Not Claims:** Critical-path coverage numbers, structural QA independence, genuine edge-case testing, and tracked defect-escape rate.
-✅ **Amsterdam Strategic Governance:** Requiring verifiable QA artifacts as standard practice — not accepted reassurances.
+✅ **Amsterdam Strategic Governance:** Requiring verifiable QA artifacts as standard practice - not accepted reassurances.
 ✅ **Vietnam Execution Velocity:** Structurally independent QA with genuine adversarial testing, producing evidence, not just confidence.
 
 We'd been told "comprehensive coverage" for two years. It meant almost nothing about the 15% of the codebase that actually mattered. 🛡️

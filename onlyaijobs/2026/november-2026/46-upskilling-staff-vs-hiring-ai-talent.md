@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-Every organisation that wants to use AI faces the same question sooner or later: do we hire people who already have the skills, or do we develop the people we already have? Hiring brings expertise quickly but is expensive and competitive. Upskilling builds on employees who know the business, the data and the customers, but takes time and does not always succeed. In the Netherlands, where the labour market for AI and data professionals remains tight and the EU AI Act requires organisations to ensure AI literacy among staff, the choice is rarely either-or. The most effective organisations combine both — deliberately.
+Every organisation that wants to use AI faces the same question sooner or later: do we hire people who already have the skills, or do we develop the people we already have? Hiring brings expertise quickly but is expensive and competitive. Upskilling builds on employees who know the business, the data and the customers, but takes time and does not always succeed. In the Netherlands, where the labour market for AI and data professionals remains tight and the EU AI Act requires organisations to ensure AI literacy among staff, the choice is rarely either-or. The most effective organisations combine both - deliberately.
 
 ## Why the Question Has Become Urgent
 
@@ -128,7 +128,7 @@ In practice, the most effective retention measure is not a repayment clause but 
 
 **Provide protected time.** Learning on top of a full workload usually fails. Agree on a percentage of working time dedicated to development.
 
-**Arrange mentoring.** An experienced data professional — internal, hired or external — reviews work and helps avoid common mistakes.
+**Arrange mentoring.** An experienced data professional - internal, hired or external - reviews work and helps avoid common mistakes.
 
 **Define the destination.** Clarify which role the employee grows into, and how pay and responsibilities will change.
 
@@ -158,21 +158,21 @@ Organisations often measure upskilling by the number of courses completed or cer
 - **Retention and progression** of participants after the programme.
 - **Business outcomes** linked to the use cases they worked on.
 
-Evaluating the programme after a year — and adjusting selection, mentoring or time allocation — prevents repeating an approach that does not work.
+Evaluating the programme after a year - and adjusting selection, mentoring or time allocation - prevents repeating an approach that does not work.
 
 ## A Concrete Scenario: One Hire, Four Upskilled Employees
 
 A regional insurer wants to use machine learning in claims processing but struggles to hire data scientists. Instead of trying to hire a full team, it recruits one experienced lead data scientist and selects four internal employees: two analysts, a claims specialist and a software developer.
 
-Over a year, the four combine part-time training at a university of applied sciences with projects supervised by the lead. The analysts build predictive models, the claims specialist becomes the product owner and the developer handles deployment. The insurer delivers two use cases and builds a team that understands claims processes deeply. Two of the upskilled employees are formally promoted into data science roles. The insurer later hires additional specialists — who join a team that already knows the business.
+Over a year, the four combine part-time training at a university of applied sciences with projects supervised by the lead. The analysts build predictive models, the claims specialist becomes the product owner and the developer handles deployment. The insurer delivers two use cases and builds a team that understands claims processes deeply. Two of the upskilled employees are formally promoted into data science roles. The insurer later hires additional specialists - who join a team that already knows the business.
 
 ## A Common Misconception
 
-A frequent misconception is that upskilling is always cheaper than hiring. Without mentoring, protected time and real projects, upskilling programmes produce certificates rather than capability, and the cost of failed projects can exceed recruitment costs. The opposite misconception — that only external hires can do AI work — overlooks the value of domain knowledge and the difficulty of integrating new hires into complex organisations.
+A frequent misconception is that upskilling is always cheaper than hiring. Without mentoring, protected time and real projects, upskilling programmes produce certificates rather than capability, and the cost of failed projects can exceed recruitment costs. The opposite misconception - that only external hires can do AI work - overlooks the value of domain knowledge and the difficulty of integrating new hires into complex organisations.
 
 ## Communicating an Upskilling Programme to the Organisation
 
-How an upskilling programme is introduced affects both participation and the reactions of employees who are not selected. Unclear communication can create anxiety — employees may interpret AI training as a sign that their jobs will disappear — or resentment if selection appears arbitrary.
+How an upskilling programme is introduced affects both participation and the reactions of employees who are not selected. Unclear communication can create anxiety - employees may interpret AI training as a sign that their jobs will disappear - or resentment if selection appears arbitrary.
 
 **Explain the purpose.** Make clear why the organisation invests in AI capability and how it connects to strategy, for example improving planning quality or reducing administrative burden, rather than only cutting costs.
 
@@ -196,14 +196,14 @@ Where a programme affects many employees or changes job structures, the works co
 
 ## Where to Start
 
-Map which of your planned AI activities require literacy, AI-enabled roles or specialists — then decide per level whether to train, hire or combine both.
+Map which of your planned AI activities require literacy, AI-enabled roles or specialists - then decide per level whether to train, hire or combine both.
 
-Post your AI, machine learning or data vacancy for the specialist your team needs — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy for the specialist your team needs - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer facing talent shortage) Should we train existing staff or hire data scientists?
-Often both — train employees with domain knowledge and aptitude, and hire experienced specialists for complex work and mentoring.
+Often both - train employees with domain knowledge and aptitude, and hire experienced specialists for complex work and mentoring.
 
 ### (Scenario: employer unsure which employees to train) Which employees are best suited to become data professionals?
 Data analysts, BI developers, software engineers and motivated domain experts with analytical aptitude are often good candidates.
@@ -222,10 +222,10 @@ The SLIM scheme, sector training funds and collective agreement budgets may help
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should we train existing staff or hire data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Often both — train for domain roles and hire specialists for complex work."}},
+    {"@type": "Question", "name": "Should we train existing staff or hire data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Often both - train for domain roles and hire specialists for complex work."}},
     {"@type": "Question", "name": "Which employees are best suited to become data professionals?", "acceptedAnswer": {"@type": "Answer", "text": "Analysts, BI developers, software engineers and motivated domain experts."}},
     {"@type": "Question", "name": "Can we require employees to repay training costs if they leave?", "acceptedAnswer": {"@type": "Answer", "text": "Not for mandatory training; for other training only with a clear clause."}},
-    {"@type": "Question", "name": "Does the AI Act require us to train employees?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — measures to ensure sufficient AI literacy are required."}},
+    {"@type": "Question", "name": "Does the AI Act require us to train employees?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - measures to ensure sufficient AI literacy are required."}},
     {"@type": "Question", "name": "Are there subsidies for upskilling employees in AI?", "acceptedAnswer": {"@type": "Answer", "text": "SLIM, sector funds and collective agreement budgets may help."}}
   ]
 }

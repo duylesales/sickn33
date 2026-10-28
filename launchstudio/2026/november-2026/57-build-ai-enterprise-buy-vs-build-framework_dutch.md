@@ -95,9 +95,9 @@ Het Manifera-team voerde in 30 werkdagen een gerichte transitie uit:
 **Resultaat:** De AI Compliance Officer stond binnen exact 30 dagen in productie. Doordat LaunchStudio de complexe infrastructuur (Laag 2) realiseerde, konden Lars' ontwikkelaars zich richten op wat zij écht begrepen: de financiële logica en de gebruikersinterface (Laag 3).
 
 > *"Onze ontwikkelaars dachten dat omdat ze een webapp konden bouwen, ze ook wel even een enterprise AI-architectuur konden neerzetten. We verspilden 8 maanden aan het opnieuw uitvinden van het wiel. LaunchStudio installeerde de industriële AI-motor in onze eigen VPC, zodat ons team de auto eromheen kon afbouwen. Het was onze beste strategische beslissing."*
-> — **Lars Knudsen, VP of Engineering, CompliFi (Kopenhagen)**
+> - **Lars Knudsen, VP of Engineering, CompliFi (Kopenhagen)**
 
-**Kosten & Doorlooptijd:** €25.000 (Launch & Grow Pakket met Architectuur Rescue & RAG Optimalisatie Add-on) — productie-klaar en live binnen 30 werkdagen.
+**Kosten & Doorlooptijd:** €25.000 (Launch & Grow Pakket met Architectuur Rescue & RAG Optimalisatie Add-on) - productie-klaar en live binnen 30 werkdagen.
 
 ---
 

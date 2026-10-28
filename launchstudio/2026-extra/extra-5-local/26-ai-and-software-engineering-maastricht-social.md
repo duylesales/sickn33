@@ -1,4 +1,4 @@
-🚨 Fleur Hermans built EuroDesk — a tool tracking cross-border EU grant programs for small businesses — using Bolt in three weeks, storing business data from users in the Netherlands, Belgium, and Germany. A prospective institutional partner then asked one question: where physically is data from Belgian and German users stored, and does your data processing agreement reflect that? She had no answer. 😳
+🚨 Fleur Hermans built EuroDesk - a tool tracking cross-border EU grant programs for small businesses - using Bolt in three weeks, storing business data from users in the Netherlands, Belgium, and Germany. A prospective institutional partner then asked one question: where physically is data from Belgian and German users stored, and does your data processing agreement reflect that? She had no answer. 😳
 
 Bolt built her a great tool. It didn't know she needed a data processing agreement to match. 🧠
 
@@ -11,7 +11,7 @@ Bolt built her a great tool. It didn't know she needed a data processing agreeme
 ✅ Add audit logging for every eligibility calculation
 ✅ Produce a data processing agreement that actually matches the technical setup
 
-At **LaunchStudio**, Manifera's engineers treat this handoff — AI's first draft, engineering's compliance layer — as standard practice for cross-border founders, the same rigor applied for clients like TNO. 🛡️
+At **LaunchStudio**, Manifera's engineers treat this handoff - AI's first draft, engineering's compliance layer - as standard practice for cross-border founders, the same rigor applied for clients like TNO. 🛡️
 
 EuroDesk's result: it secured the institutional partnership after a follow-up review, with the data residency documentation cited as the deciding factor. 🚀
 

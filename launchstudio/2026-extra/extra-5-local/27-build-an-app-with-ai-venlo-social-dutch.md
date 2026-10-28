@@ -1,4 +1,4 @@
-🚨 Stijn Gerrits bouwde GrensVracht — een boekings- en documentatietool voor vrachtvervoerders die goederen tussen Nederland en Duitsland vervoeren — met Cursor in drie weken. Nederlandse vervoerders waren er weg van. De eerste Duitse vervoerder liep bijna direct tegen een muur op: de facturatiemodule ging volledig uit van Nederlandse btw-regels, zonder logica voor de intra-EU-btw-behandeling van grensoverschrijdend vrachtvervoer. 😳
+🚨 Stijn Gerrits bouwde GrensVracht - een boekings- en documentatietool voor vrachtvervoerders die goederen tussen Nederland en Duitsland vervoeren - met Cursor in drie weken. Nederlandse vervoerders waren er weg van. De eerste Duitse vervoerder liep bijna direct tegen een muur op: de facturatiemodule ging volledig uit van Nederlandse btw-regels, zonder logica voor de intra-EU-btw-behandeling van grensoverschrijdend vrachtvervoer. 😳
 
 De boekhouder markeerde de facturen als niet-compliant binnen de eerste factureringscyclus. 🧠
 

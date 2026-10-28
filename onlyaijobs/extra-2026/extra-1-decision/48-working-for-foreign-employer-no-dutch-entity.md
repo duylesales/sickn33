@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The approach arrives by message: an interesting company abroad, a strong salary in another currency, work you would enjoy, and you would stay where you live. Somewhere in the third conversation it emerges that they have no Dutch entity, and that the arrangement will run through "our global employment partner" or, more casually, "you can invoice us monthly". Both can be entirely legitimate. Both change your position in ways that matter — social security, pension, protection during illness, what happens if the relationship ends. In a market where remote hiring across borders has become ordinary, this is a decision worth understanding rather than trusting.
+The approach arrives by message: an interesting company abroad, a strong salary in another currency, work you would enjoy, and you would stay where you live. Somewhere in the third conversation it emerges that they have no Dutch entity, and that the arrangement will run through "our global employment partner" or, more casually, "you can invoice us monthly". Both can be entirely legitimate. Both change your position in ways that matter - social security, pension, protection during illness, what happens if the relationship ends. In a market where remote hiring across borders has become ordinary, this is a decision worth understanding rather than trusting.
 
 This article provides general information, not legal, tax or financial advice. Arrangements differ per case, and it is worth paying for an hour of professional advice before signing. The free service **Juridisch Loket** can also point you in the right direction.
 
@@ -59,7 +59,7 @@ What matters practically is the outcome: are you covered for unemployment, illne
 
 ## Which Employment Law Applies
 
-Under the **Rome I Regulation**, parties can choose the law governing an employment contract, but that choice cannot deprive the employee of the protection of mandatory provisions of the law that would otherwise apply — generally the law of the country where the work is habitually carried out.
+Under the **Rome I Regulation**, parties can choose the law governing an employment contract, but that choice cannot deprive the employee of the protection of mandatory provisions of the law that would otherwise apply - generally the law of the country where the work is habitually carried out.
 
 In practice, if you live and work in the Netherlands, core Dutch protections tend to apply regardless of what the contract says it is governed by. That includes areas such as dismissal protection, notice, minimum holiday and sick pay obligations, although the analysis is case-specific.
 
@@ -94,12 +94,12 @@ The complication is enforcement rather than entitlement. Asserting a right again
 - A reputable employer of record with a Dutch contract, payroll, social security and ideally a pension arrangement.
 - A large foreign employer with an established process for hiring in the Netherlands and named advisers.
 - A contractor arrangement where you genuinely operate as an independent professional, with multiple clients, your own tools and control over how you work.
-- A compensation package that explicitly covers what is missing — pension substitute, insurance, allowances — rather than a headline salary that quietly excludes them.
+- A compensation package that explicitly covers what is missing - pension substitute, insurance, allowances - rather than a headline salary that quietly excludes them.
 
 ## When to Decline or Restructure
 
 - The employer cannot explain who pays social security.
-- You are asked to invoice while working exclusively for them, on their schedule, under their direction — which is employment in substance, and the Dutch rules on employment relationships are being enforced more actively.
+- You are asked to invoice while working exclusively for them, on their schedule, under their direction - which is employment in substance, and the Dutch rules on employment relationships are being enforced more actively.
 - No pension, no illness arrangement and no compensation for either.
 - Contract governed by a distant jurisdiction with disputes to be settled there.
 - The only reason for the structure is to avoid obligations, which tells you how other obligations will be treated.
@@ -115,13 +115,13 @@ If you go this route deliberately, structure it deliberately: more than one clie
 
 Ask for the structure that puts a Dutch entity in the chain, even if it costs them a little more. Ask for a pension contribution or an explicit salary uplift that you can invest yourself. Ask for the illness scenario to be written down. Ask for equipment and home working costs. And ask for notice terms that are symmetrical.
 
-If the employer is serious about hiring in the Netherlands, these requests are normal and often already anticipated. If they are improvising, your questions will show it — and improvisation is the main risk in these arrangements.
+If the employer is serious about hiring in the Netherlands, these requests are normal and often already anticipated. If they are improvising, your questions will show it - and improvisation is the main risk in these arrangements.
 
 ## The Tax Side, in Outline
 
 Tax is where these arrangements most often produce an unpleasant surprise in the second year, so it is worth understanding the shape of it even though the details are individual.
 
-**Withholding may not happen automatically.** A Dutch employer withholds wage tax from your salary, so the amount that arrives is yours. A foreign employer without a Dutch withholding obligation may pay you gross, which means the tax is still due — later, from you, in a lump sum. People who spend the gross figure discover this at exactly the wrong moment.
+**Withholding may not happen automatically.** A Dutch employer withholds wage tax from your salary, so the amount that arrives is yours. A foreign employer without a Dutch withholding obligation may pay you gross, which means the tax is still due - later, from you, in a lump sum. People who spend the gross figure discover this at exactly the wrong moment.
 
 **Set money aside from month one.** If nothing is withheld, treat a substantial share of each payment as not yours. A provisional assessment arrangement with the tax authority can spread the payments across the year instead of leaving one large bill.
 
@@ -155,7 +155,7 @@ The company chooses the employer of record. Her net position is slightly below t
 
 ## Where to Start
 
-Before accepting a cross-border arrangement, compare it with what employers near you offer on total conditions rather than headline salary — pension, illness cover and contract stability rarely appear in the first number.
+Before accepting a cross-border arrangement, compare it with what employers near you offer on total conditions rather than headline salary - pension, illness cover and contract stability rarely appear in the first number.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -165,7 +165,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Yes, through an employer of record, direct employment or a contractor arrangement. The structure determines your social security, protection and pension position.
 
 ### (Scenario: candidate unsure about coverage) Who pays my social security in that situation?
-Within the EU, insurance generally follows where you work. Where the employer has no Dutch establishment, arrangements exist for the employee to handle contributions — ask who does what, in writing.
+Within the EU, insurance generally follows where you work. Where the employer has no Dutch establishment, arrangements exist for the employee to handle contributions - ask who does what, in writing.
 
 ### (Scenario: candidate offered a contractor arrangement) Is invoicing as a freelancer a good idea?
 Only if you genuinely operate independently. Dutch rules assess the working relationship in practice, and enforcement has been tightened, so an employment-like arrangement carries risk for both sides.
@@ -181,7 +181,7 @@ A structure with a Dutch entity in the chain, a pension contribution or explicit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can a foreign employer hire me while I live in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — via employer of record, direct employment or contracting, each with different consequences."}},
+    {"@type": "Question", "name": "Can a foreign employer hire me while I live in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - via employer of record, direct employment or contracting, each with different consequences."}},
     {"@type": "Question", "name": "Who pays my social security in that situation?", "acceptedAnswer": {"@type": "Answer", "text": "Insurance generally follows where you work; clarify in writing who registers and pays."}},
     {"@type": "Question", "name": "Is invoicing as a freelancer a good idea?", "acceptedAnswer": {"@type": "Answer", "text": "Only with genuine independence; the relationship is assessed in practice."}},
     {"@type": "Question", "name": "What is usually missing compared with a Dutch employer?", "acceptedAnswer": {"@type": "Answer", "text": "Pension, sick pay arrangements, occupational health support and mortgage-friendly documents."}},

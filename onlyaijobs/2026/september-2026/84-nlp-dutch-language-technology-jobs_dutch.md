@@ -27,7 +27,7 @@ Taaltechnologiewerk in Nederland heeft een bepalend kenmerk dat bijna elke funct
 
 **Voorgetrainde modellen presteren onder de maat, en ongelijkmatig.** Meertalige modellen bevatten Nederlands, maar hun Nederlandse vermogen is doorgaans zwakker dan hun Engelse, en die zwakte is niet uniform over taken. Prestaties op goed vertegenwoordigde algemene tekst kunnen acceptabel zijn terwijl prestaties op gespecialiseerd domeintaalgebruik slecht zijn.
 
-**Domeinspecifiek Nederlands is nog schaarser.** Nederlandse juridische taal, Nederlandse medische dossiers, Nederlandse gemeentelijke administratieve tekst, Nederlandse schadebeschrijvingen — elk is een gespecialiseerd register met eigen vocabulaire en conventies.
+**Domeinspecifiek Nederlands is nog schaarser.** Nederlandse juridische taal, Nederlandse medische dossiers, Nederlandse gemeentelijke administratieve tekst, Nederlandse schadebeschrijvingen - elk is een gespecialiseerd register met eigen vocabulaire en conventies.
 
 **Annoteren is duur en lastig uit te besteden.** Engelse tekst op schaal annoteren is een volwassen industrie. Nederlands annoteren vraagt Nederlandstaligen, een veel kleinere arbeidspool tegen veel hogere kosten.
 
@@ -55,7 +55,7 @@ Taaltechnologiewerk in Nederland heeft een bepalend kenmerk dat bijna elke funct
 
 In het Engels werken betekent concurreren met een enorme internationale talentpool op problemen waar goed voorziene organisaties al veel inspanning hebben gestopt. In het Nederlands werken betekent dat de beschikbare benaderingen minder grondig zijn verkend, de datasets vaak nog niet zijn gebouwd, en het aantal mensen dat het werk bekwaam kan doen veel kleiner is.
 
-Belangrijker: de vaardigheden die je ontwikkelt dragen over naar elke andere taal met beperkte middelen — wat de meeste talen zijn. Technieken voor werken met schaarse geannoteerde data, evalueren zonder gevestigde benchmarks, code-mixing hanteren en meertalige modellen aanpassen aan een specifiek register zijn direct toepasbaar in tientallen markten.
+Belangrijker: de vaardigheden die je ontwikkelt dragen over naar elke andere taal met beperkte middelen - wat de meeste talen zijn. Technieken voor werken met schaarse geannoteerde data, evalueren zonder gevestigde benchmarks, code-mixing hanteren en meertalige modellen aanpassen aan een specifiek register zijn direct toepasbaar in tientallen markten.
 
 ## De taaleis, direct beantwoord
 
@@ -79,7 +79,7 @@ Belangrijker: de vaardigheden die je ontwikkelt dragen over naar elke andere taa
 
 Als er één investering is die zich hier disproportioneel terugbetaalt, is het goed worden in evaluatiesets bouwen.
 
-In een goed voorziene taal kun je op gevestigde benchmarks vertrouwen en je inspanning aan modellering besteden. In het Nederlands vaak niet, wat betekent dat de kwaliteit van je conclusies volledig afhangt van de kwaliteit van een evaluatieset die je zelf bouwde. De meeste mensen bouwen die onzorgvuldig — steekproeven wat beschikbaar is, moeilijke gevallen ondervertegenwoordigd, annotatorovereenstemming niet gecontroleerd.
+In een goed voorziene taal kun je op gevestigde benchmarks vertrouwen en je inspanning aan modellering besteden. In het Nederlands vaak niet, wat betekent dat de kwaliteit van je conclusies volledig afhangt van de kwaliteit van een evaluatieset die je zelf bouwde. De meeste mensen bouwen die onzorgvuldig - steekproeven wat beschikbaar is, moeilijke gevallen ondervertegenwoordigd, annotatorovereenstemming niet gecontroleerd.
 
 Wie evaluatiesets doelbewust bouwt, produceert betrouwbare resultaten terwijl collega's getallen produceren die deployment niet overleven.
 
@@ -94,6 +94,6 @@ Wie evaluatiesets doelbewust bouwt, produceert betrouwbare resultaten terwijl co
 
 ## Waar te beginnen
 
-Bepaal of je Nederlandstalig werk of infrastructuur- en meertalig werk richt, want de taaleis verschilt volledig. Richt je het eerste en is je Nederlands beperkt, dan is leesvaardigheid genoeg om output te beoordelen haalbaar in maanden — en precies het vermogen dat werkgevers nodig hebben.
+Bepaal of je Nederlandstalig werk of infrastructuur- en meertalig werk richt, want de taaleis verschilt volledig. Richt je het eerste en is je Nederlands beperkt, dan is leesvaardigheid genoeg om output te beoordelen haalbaar in maanden - en precies het vermogen dat werkgevers nodig hebben.
 
 Bekijk actuele NLP-, machine learning- en AI-vacatures in Nederland op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).

@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Generated App Security: What an Attacker Tries First",
-  "description": "Most attacks on small AI-built apps are not sophisticated. This article walks through the first ten minutes of a typical probe — the predictable URLs, the page source, the IDs, the signup form — and what each reveals about AI generated app security.",
+  "description": "Most attacks on small AI-built apps are not sophisticated. This article walks through the first ten minutes of a typical probe - the predictable URLs, the page source, the IDs, the signup form - and what each reveals about AI generated app security.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-10",
@@ -23,13 +23,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Founders tend to imagine attackers as elite hackers with custom tools, which leads to a comforting conclusion: nobody would bother with my small app. The reality of AI generated app security is less cinematic and more worrying. Most probes of small web apps are automated or casual, take minutes, and try the same handful of things in the same order. They succeed not because they are clever but because AI-built apps tend to leave the same doors open.
 
-Here is what those first ten minutes usually look like — told from the attacker's side so you can check each door from yours.
+Here is what those first ten minutes usually look like - told from the attacker's side so you can check each door from yours.
 
 ## Minute 1: Reading What You Sent Them
 
 The first thing anyone does is look at what your app already hands to every visitor: the page source and the JavaScript files the browser downloads. No hacking involved; this is public by design.
 
-They are looking for three things. **Keys** — strings that look like API credentials for payment providers, AI models, email services or maps. **Endpoints** — the addresses your frontend calls, which reveal the shape of your backend. **Configuration** — database project URLs, feature flags, sometimes even comments the AI left in the code.
+They are looking for three things. **Keys** - strings that look like API credentials for payment providers, AI models, email services or maps. **Endpoints** - the addresses your frontend calls, which reveal the shape of your backend. **Configuration** - database project URLs, feature flags, sometimes even comments the AI left in the code.
 
 AI tools frequently place keys in frontend code because it is the quickest way to make a feature work during a demo. A publishable key for Stripe or a restricted database key may be fine. A secret key for an AI model or an email provider is not; it lets someone run up your bill or send email as you.
 
@@ -37,7 +37,7 @@ AI tools frequently place keys in frontend code because it is the quickest way t
 
 Next come the addresses nobody linked to but everybody tries: `/admin`, `/dashboard/admin`, `/api/users`, `/api/admin/stats`, `/debug`, `/.env`. Automated scanners run through thousands of these per minute.
 
-AI-generated apps commonly create an admin page and protect it only by not showing a link to it. The page exists, the route exists, and if the server does not check the visitor's role, the admin tools work for anyone who finds them. The same applies to API routes the admin page calls — even if the page itself is protected, the API behind it may not be.
+AI-generated apps commonly create an admin page and protect it only by not showing a link to it. The page exists, the route exists, and if the server does not check the visitor's role, the admin tools work for anyone who finds them. The same applies to API routes the admin page calls - even if the page itself is protected, the API behind it may not be.
 
 ## Minute 5: Changing a Number
 
@@ -55,9 +55,9 @@ If the app accepts files or text that other users will see, the attacker tries t
 
 ## What Happens After Minute 10
 
-If any of these doors opens, the casual probe becomes a real problem. Data gets copied. Keys get used. In some cases the person simply emails you — responsible disclosure happens more often than founders expect — but you cannot rely on the person who finds the gap being kind.
+If any of these doors opens, the casual probe becomes a real problem. Data gets copied. Keys get used. In some cases the person simply emails you - responsible disclosure happens more often than founders expect - but you cannot rely on the person who finds the gap being kind.
 
-It is worth noting that none of the steps above required special skill. They required a browser, a free account and curiosity. That is why the 45% figure — the share of AI-generated code with security vulnerabilities often cited in industry research — matters even for tiny apps. Attention is cheap; your app does not need to be famous to be probed.
+It is worth noting that none of the steps above required special skill. They required a browser, a free account and curiosity. That is why the 45% figure - the share of AI-generated code with security vulnerabilities often cited in industry research - matters even for tiny apps. Attention is cheap; your app does not need to be famous to be probed.
 
 ## AI Generated App Security: Closing the Doors in the Same Order
 
@@ -69,7 +69,7 @@ The good news is that the doors are few and known. Checking them in the attacker
 - **Forms:** uniform login errors, rate limiting and a strict list of fields the server accepts.
 - **Uploads and inputs:** type and size limits, private storage, escaped output.
 
-The [OWASP Top 10](https://owasp.org/www-project-top-ten/) maps these to formal categories — broken access control sits at number one — if you want an external reference to share with a co-founder or investor.
+The [OWASP Top 10](https://owasp.org/www-project-top-ten/) maps these to formal categories - broken access control sits at number one - if you want an external reference to share with a co-founder or investor.
 
 ## Minute 11 Onwards: What an Attacker Does With What They Found
 
@@ -79,11 +79,11 @@ The first ten minutes decide whether a probe becomes an incident. What happens n
 
 **An open admin route** is explored manually. The attacker looks for exports ("download all users"), impersonation features and settings that change where money or email goes. Admin panels generated by AI tools often have bulk export built in, which turns one discovery into a full data breach.
 
-**A changeable ID** is enumerated with a script: try IDs 1 to 50,000 and save every response. With sequential IDs, the entire table can be copied in minutes. This is why moving from sequential numbers to random identifiers is a useful additional layer — not a replacement for access checks, but it removes the easy enumeration.
+**A changeable ID** is enumerated with a script: try IDs 1 to 50,000 and save every response. With sequential IDs, the entire table can be copied in minutes. This is why moving from sequential numbers to random identifiers is a useful additional layer - not a replacement for access checks, but it removes the easy enumeration.
 
 **Weak login controls** lead to credential stuffing: trying email-password pairs leaked from other websites. Because many people reuse passwords, a small percentage succeed, and those accounts are then used or sold.
 
-**Unsafe uploads and inputs** are used for stored scripts that run in other users' browsers — often targeting admins, whose sessions are the most valuable.
+**Unsafe uploads and inputs** are used for stored scripts that run in other users' browsers - often targeting admins, whose sessions are the most valuable.
 
 ## A Severity Guide for Founders
 
@@ -91,7 +91,7 @@ When a finding arrives, this rough guide helps you decide how fast to move:
 
 | Finding | Severity | Act within |
 | --- | --- | --- |
-| Secret key visible in browser or public repo | Critical | Hours — rotate first, investigate second |
+| Secret key visible in browser or public repo | Critical | Hours - rotate first, investigate second |
 | Any user can read other users' data | Critical | Same day |
 | Admin functions reachable without role check | Critical | Same day |
 | Payment confirmed by browser redirect | High | Days |
@@ -103,7 +103,7 @@ When a finding arrives, this rough guide helps you decide how fast to move:
 
 ## Checking Whether It Already Happened
 
-After closing a door, the next question is whether anyone walked through it. Most founders cannot answer this, because AI-built apps rarely log enough. Where logs exist, look for: many requests to the same endpoint with changing IDs from one IP address; requests to admin routes from accounts without admin roles; unusual spikes in usage on third-party dashboards (AI tokens, emails sent, map calls); and new admin users or changed payment settings you did not make. Your hosting provider, database and payment provider often keep access logs for a limited time — check them quickly.
+After closing a door, the next question is whether anyone walked through it. Most founders cannot answer this, because AI-built apps rarely log enough. Where logs exist, look for: many requests to the same endpoint with changing IDs from one IP address; requests to admin routes from accounts without admin roles; unusual spikes in usage on third-party dashboards (AI tokens, emails sent, map calls); and new admin users or changed payment settings you did not make. Your hosting provider, database and payment provider often keep access logs for a limited time - check them quickly.
 
 If personal data was likely accessed, GDPR requires assessing whether the breach must be reported to the data protection authority within 72 hours of becoming aware, and whether affected users must be informed. The assessment itself should be written down, even if the conclusion is that no notification is needed.
 
@@ -115,13 +115,13 @@ Beyond fixing specific doors, a few measures make casual probing much less rewar
 
 You can walk through the same ten minutes on your own app, as long as you do it on your own accounts and ideally on staging. Open the page source and the network tab and note every key and endpoint. Try `/admin`, `/api/admin` and any route names you see in the JavaScript while logged in as a normal user. Change IDs in your own requests. Enter a wrong password ten times and see whether anything slows you down. Upload a large file and a file renamed from `.exe` to `.jpg`. Type `<b>test</b>` into a name field and see whether it renders bold elsewhere.
 
-Write down what happened at each step. If any door opened, stop testing that door and fix it — or ask an engineer to — before going further. Never test other people's apps this way without permission; on your own app, it is one of the most useful hours you can spend before launch. Repeat the exercise after every major feature, because AI generated app security is not a state you reach once but a property you keep checking.
+Write down what happened at each step. If any door opened, stop testing that door and fix it - or ask an engineer to - before going further. Never test other people's apps this way without permission; on your own app, it is one of the most useful hours you can spend before launch. Repeat the exercise after every major feature, because AI generated app security is not a state you reach once but a property you keep checking.
 
 ## Why a Human Review Still Matters
 
 Automated scanners catch some of these doors, particularly exposed keys and missing security headers. They are weak at the most damaging one, the changed number, because a scanner does not know which records should belong to whom. That judgment requires someone who understands your data model.
 
-LaunchStudio is powered by Manifera, a software development company with 11+ years of experience — including a founder whose earlier company, CyberDevOps (now CFLW Cyber Strategies), built a dark web monitoring product with TNO. Security review is not an add-on for this team; it is where it started. Reviews are carried out by engineers at Manifera's Ho Chi Minh City development centre and coordinated through the Amsterdam office. You can [plan a free 15-minute call](https://launchstudio.eu/en/#contact) to talk through your app, or look at [Manifera's portfolio](https://www.manifera.com/portfolio/) for the kind of systems this team secures.
+LaunchStudio is powered by Manifera, a software development company with 11+ years of experience - including a founder whose earlier company, CyberDevOps (now CFLW Cyber Strategies), built a dark web monitoring product with TNO. Security review is not an add-on for this team; it is where it started. Reviews are carried out by engineers at Manifera's Ho Chi Minh City development centre and coordinated through the Amsterdam office. You can [plan a free 15-minute call](https://launchstudio.eu/en/#contact) to talk through your app, or look at [Manifera's portfolio](https://www.manifera.com/portfolio/) for the kind of systems this team secures.
 
 ## Real example
 
@@ -129,16 +129,16 @@ LaunchStudio is powered by Manifera, a software development company with 11+ yea
 
 Ruben Dekker organises tours of traditional cheese farms around Alkmaar and built Kaasroute in Bolt: tourists book a tour, pay online, and receive a digital ticket with a QR code; partner farms see a list of upcoming visitors. In its second summer, Kaasroute handled a few thousand bookings, many from international visitors.
 
-In July, a guest who worked in IT emailed Ruben politely. Out of curiosity, she had changed the booking number in her ticket URL and seen another family's booking — names, phone number, hotel. She had also noticed that `/admin` loaded a page listing every booking of the season. Ruben had no idea either was possible; the admin link was not shown anywhere in the app.
+In July, a guest who worked in IT emailed Ruben politely. Out of curiosity, she had changed the booking number in her ticket URL and seen another family's booking - names, phone number, hotel. She had also noticed that `/admin` loaded a page listing every booking of the season. Ruben had no idea either was possible; the admin link was not shown anywhere in the app.
 
 LaunchStudio's engineers treated it as urgent. Within the first day they locked the admin area and its API behind server-side role checks and added ownership checks so tickets were only visible to the booker, using unguessable ticket codes instead of sequential numbers. They then worked through the rest of the attacker's sequence: a payment API key found in the page source was rotated and moved server-side, the login got rate limiting and uniform error messages, and the farm partners' portal was restricted to each farm's own visitors. Logs were checked for signs of earlier access, and Ruben was helped to assess whether a data breach notification was needed.
 
-**Result:** No evidence of wider access was found in the logs. Kaasroute finished the season with the fixes in place, and Ruben sent the guest a free tour for two — and added a short "report a security issue" address to the site's footer.
+**Result:** No evidence of wider access was found in the logs. Kaasroute finished the season with the fixes in place, and Ruben sent the guest a free tour for two - and added a short "report a security issue" address to the site's footer.
 
 > *"I assumed nobody would look. Somebody looked in her first five minutes, and I'm lucky it was her."*
-> — **Ruben Dekker, Founder, Kaasroute (Alkmaar)**
+> - **Ruben Dekker, Founder, Kaasroute (Alkmaar)**
 
-**Cost & Timeline:** €1,100 (urgent access-control fixes, key rotation, login hardening and log review) — completed in 4 business days.
+**Cost & Timeline:** €1,100 (urgent access-control fixes, key rotation, login hardening and log review) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Valuta's, Getallen en Notaties voor een Europees Softwareproduct",
-  "description": "Geld opslaan als decimaal getal leidt vroeg of laat onvermijdelijk tot een factuurtotaal dat één cent afwijkt — en Europese btw-regels maken het nog complexer. Een gids over cent-gebaseerde wiskunde, btw-afrondingsregels en Europese getalsnotaties.",
+  "description": "Geld opslaan als decimaal getal leidt vroeg of laat onvermijdelijk tot een factuurtotaal dat één cent afwijkt - en Europese btw-regels maken het nog complexer. Een gids over cent-gebaseerde wiskunde, btw-afrondingsregels en Europese getalsnotaties.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-04-21",
@@ -39,7 +39,7 @@ Bij één los bedrag merkt niemand het. Maar tel veertig factuurregels bij elkaa
 Er zijn twee juiste manieren om geld op te slaan:
 
 1. **Sla bedragen op in gehele centen (*Cents as Integers - De Gouden Standaard*):**
-   Sla een bedrag van € 19,99 op in uw database als het gehele getal `1999`. Alle interne berekeningen (optellen, aftrekken, kortingen) gebeuren met 100% exacte integer-wiskunde. Pas op het allerlaatste moment — wanneer het getal op het beeldscherm wordt getoond of op een PDF wordt geprint — deelt u door 100. Dit is exact hoe betalingsgiganten zoals Mollie, Stripe en Adyen werken.
+   Sla een bedrag van € 19,99 op in uw database als het gehele getal `1999`. Alle interne berekeningen (optellen, aftrekken, kortingen) gebeuren met 100% exacte integer-wiskunde. Pas op het allerlaatste moment - wanneer het getal op het beeldscherm wordt getoond of op een PDF wordt geprint - deelt u door 100. Dit is exact hoe betalingsgiganten zoals Mollie, Stripe en Adyen werken.
 2. **Gebruik het exacte `NUMERIC(12, 4)` of `DECIMAL` type van uw database:**
    Mits alle berekeningen binnen SQL of via gespecialiseerde wiskundige bibliotheken (`BigNumber.js` of `decimal.js`) worden uitgevoerd, en nooit tussentijds worden geconverteerd naar een standaard JavaScript `Number`.
 
@@ -89,7 +89,7 @@ new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' }).format(12
 
 Let ook op datumnotaties: `03/04/2027` is in Nederland 3 april 2027, maar in de VS 4 maart 2027. Gebruik in Europa altijd een ondubbelzinnige schrijfwijze (`3 april 2027` of `2027-04-03`) en hanteer standaard de 24-uursklok (`14:30` in plaats van `2:30 PM`).
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in financiële en ERP-software) auditen en herstructureren we geldopslag, btw-berekeningen en getalsopmaak tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw financiële logica met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw cijfers kloppen tot op de cent.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in financiële en ERP-software) auditen en herstructureren we geldopslag, btw-berekeningen en getalsopmaak tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw financiële logica met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw cijfers kloppen tot op de cent.
 
 ## Echt voorbeeld
 
@@ -107,7 +107,7 @@ Bij de audit door LaunchStudio bleek het probleem veel groter dan die ene cent:
 **Resultaat:** Binnen vier werkdagen saneerde LaunchStudio de financiële motor: alle bedragen in de database werden gemigreerd naar gehele centen (`BIGINT`), de btw-berekening werd omgezet naar een strikte regel-voor-regel afronding conform de normen van de Belastingdienst, en alle bedragen werden opgemaakt via `Intl.NumberFormat('nl-NL')`. Tevens werd een geautomatiseerde reconciliatie uitgevoerd over veertien maanden aan historische facturen: veertig facturen met een afrondingsverschil van 1 cent werden netjes gecorrigeerd met een duidelijke toelichting naar de accountants.
 
 > *"Eén cent verschil leek mij muggenziften van een accountant. Totdat bleek dat dezelfde onderliggende programmeerfout ervoor had gezorgd dat we bij een klant per ongeluk één honderdste van het factuurbedrag hadden geïncasseerd."*
-> — **Wietse de Groot, Oprichter, Uurloon**
+> - **Wietse de Groot, Oprichter, Uurloon**
 
 **Kosten & Doorlooptijd:** Financiële datamigratie naar centen, btw-reconciliatie en locale-opmaak opgeleverd in 4 werkdagen.
 

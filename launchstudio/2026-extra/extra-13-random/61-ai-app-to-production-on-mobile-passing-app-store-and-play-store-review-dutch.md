@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-App naar Productie op Mobiel: Slagen voor de App Store- en Google Play-Review",
-  "description": "Een AI-app naar productie brengen op mobiel introduceert een strenge poortwachter die het web niet kent: de app store review. Deze gids behandelt waarom AI-gebouwde mobiele apps worden afgewezen — accountverwijdering, privacy-labels, inloggen, betalingen en stabiliteit — en hoe je in één keer wordt goedgekeurd.",
+  "description": "Een AI-app naar productie brengen op mobiel introduceert een strenge poortwachter die het web niet kent: de app store review. Deze gids behandelt waarom AI-gebouwde mobiele apps worden afgewezen - accountverwijdering, privacy-labels, inloggen, betalingen en stabiliteit - en hoe je in één keer wordt goedgekeurd.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-30",
@@ -33,9 +33,9 @@ AI-tools genereren mobiele code uit dezelfde patronen die ze voor webapps gebrui
 
 **Geen accountverwijdering in de app.** Kunnen gebruikers een account aanmaken, dan verwachten beide stores dat ze het ook vanuit de app kunnen verwijderen (Google vereist daarnaast een weblink). "Mail ons om je account te verwijderen" is niet meer genoeg.
 
-**Reviewers kunnen niet inloggen.** Heeft de app een account nodig, dan hebben reviewers werkende demo-inloggegevens nodig in de notities bij het indienen — en het demo-account moet echte functionaliteit laten zien, geen leeg scherm.
+**Reviewers kunnen niet inloggen.** Heeft de app een account nodig, dan hebben reviewers werkende demo-inloggegevens nodig in de notities bij het indienen - en het demo-account moet echte functionaliteit laten zien, geen leeg scherm.
 
-**Privacylabels die niet kloppen met de werkelijkheid.** De privacylabels van Apple en het formulier Data safety van Google moeten aangeven welke data je verzamelt en waarom, inclusief data die wordt verzameld door SDK's die je niet bewust hebt gekozen — analytics, crashrapportage, de standaardinstellingen van de AI-tool. Reviewers en geautomatiseerde controles leggen de verklaringen naast het gedrag.
+**Privacylabels die niet kloppen met de werkelijkheid.** De privacylabels van Apple en het formulier Data safety van Google moeten aangeven welke data je verzamelt en waarom, inclusief data die wordt verzameld door SDK's die je niet bewust hebt gekozen - analytics, crashrapportage, de standaardinstellingen van de AI-tool. Reviewers en geautomatiseerde controles leggen de verklaringen naast het gedrag.
 
 **Betalingen voor digitale content buiten de store.** Digitale content of abonnementen verkopen die in de app worden gebruikt, moet doorgaans via het in-app-aankoopsysteem van de store, met beperkte uitzonderingen en regels die per regio verschillen. Fysieke goederen en diensten in de echte wereld kunnen Stripe of Mollie gebruiken. AI-gebouwde apps doen dit vaak in beide richtingen fout.
 
@@ -49,7 +49,7 @@ AI-tools genereren mobiele code uit dezelfde patronen die ze voor webapps gebrui
 
 Store-review kijkt naar de app, maar veel afwijzingen zijn eigenlijk backendproblemen:
 
-- **Accountverwijdering moet echt verwijderen** — de backend heeft een endpoint nodig dat de gegevens van de gebruiker verwijdert of anonimiseert in database, opslag en diensten van derden.
+- **Accountverwijdering moet echt verwijderen** - de backend heeft een endpoint nodig dat de gegevens van de gebruiker verwijdert of anonimiseert in database, opslag en diensten van derden.
 - **Demo-accounts hebben seeddata nodig** in productie die veilig getoond kan worden.
 - **API-sleutels horen niet in de appbundle.** Een mobiel binair bestand kan worden uitgepakt; elk geheim erin moet als openbaar worden beschouwd.
 - **De API moet met oude appversies omgaan.** Eenmaal geïnstalleerd blijven oudere versies je backend maandenlang aanroepen. Ingrijpende API-wijzigingen breken gebruikers die je niet kunt dwingen te updaten.
@@ -101,7 +101,7 @@ Bewaar de inventaris bij je code en werk hem bij als SDK's veranderen. Verklarin
 
 ## Pushnotificaties en Rechten Goed Geregeld
 
-Toestemmingsvragen beïnvloeden zowel de review als het vertrouwen van gebruikers. Vraag alleen om rechten wanneer de functie ze nodig heeft — locatie als een wandeling begint, camera als de gebruiker een foto wil toevoegen — met een kort uitlegscherm vóór de systeemvraag. Leg bij pushnotificaties uit wat gebruikers zullen ontvangen en laat ze categorieën in de app beheren. Sla apparaattokens veilig op, verwijder ze bij uitloggen en accountverwijdering, en stuur nooit gevoelige inhoud in de notificatietekst, omdat die op vergrendelschermen verschijnt.
+Toestemmingsvragen beïnvloeden zowel de review als het vertrouwen van gebruikers. Vraag alleen om rechten wanneer de functie ze nodig heeft - locatie als een wandeling begint, camera als de gebruiker een foto wil toevoegen - met een kort uitlegscherm vóór de systeemvraag. Leg bij pushnotificaties uit wat gebruikers zullen ontvangen en laat ze categorieën in de app beheren. Sla apparaattokens veilig op, verwijder ze bij uitloggen en accountverwijdering, en stuur nooit gevoelige inhoud in de notificatietekst, omdat die op vergrendelschermen verschijnt.
 
 ## Versies van Je API voor Geïnstalleerde Apps
 
@@ -119,7 +119,7 @@ Beide stores ondersteunen een geleidelijke uitrol: gefaseerde release in de App 
 
 ## Over-the-Air-Updates: Nuttig, met Grenzen
 
-Expo en React Native ondersteunen over-the-air-updates (OTA) voor JavaScript en assets, waarmee oplossingen zonder volledige store-release kunnen worden verspreid. Ze zijn waardevol voor dringende bugfixes, maar de regels van de stores beperken wat OTA-updates mogen veranderen — doorgaans niet het hoofddoel van de app of belangrijke nieuwe functies buiten wat is beoordeeld. Gebruik OTA voor oplossingen, laat functiewijzigingen via de normale review lopen, en test OTA-updates op stagingkanalen vóór productie.
+Expo en React Native ondersteunen over-the-air-updates (OTA) voor JavaScript en assets, waarmee oplossingen zonder volledige store-release kunnen worden verspreid. Ze zijn waardevol voor dringende bugfixes, maar de regels van de stores beperken wat OTA-updates mogen veranderen - doorgaans niet het hoofddoel van de app of belangrijke nieuwe functies buiten wat is beoordeeld. Gebruik OTA voor oplossingen, laat functiewijzigingen via de normale review lopen, en test OTA-updates op stagingkanalen vóór productie.
 
 ## Beveiligingsaspecten Specifiek voor Mobiele Apps
 
@@ -131,7 +131,7 @@ Goedkeuring is het begin. Volg in de eerste weken dagelijks reviews en beoordeli
 
 ## In-App-Aankopen Afhandelen Wanneer Die Gelden
 
-Verkoopt je app digitale content of abonnementen die in de app worden gebruikt, dan vereisen de regels van de stores doorgaans in-app-aankopen, met enkele uitzonderingen per regio en categorie die in de loop van de tijd veranderen. Dat op productieniveau implementeren betekent bonnetjes of aankooptokens op je server valideren, luisteren naar de servermeldingen van de stores voor verlengingen, opzeggingen en terugbetalingen, en rechten in je database synchroon houden — het mobiele equivalent van betaalwebhooks. Diensten als RevenueCat vereenvoudigen dit voor beide stores. Store-aankopen combineren met webaankopen vraagt zorgvuldige logica voor rechten, zodat gebruikers dezelfde toegang krijgen waar ze ook betaalden.
+Verkoopt je app digitale content of abonnementen die in de app worden gebruikt, dan vereisen de regels van de stores doorgaans in-app-aankopen, met enkele uitzonderingen per regio en categorie die in de loop van de tijd veranderen. Dat op productieniveau implementeren betekent bonnetjes of aankooptokens op je server valideren, luisteren naar de servermeldingen van de stores voor verlengingen, opzeggingen en terugbetalingen, en rechten in je database synchroon houden - het mobiele equivalent van betaalwebhooks. Diensten als RevenueCat vereenvoudigen dit voor beide stores. Store-aankopen combineren met webaankopen vraagt zorgvuldige logica voor rechten, zodat gebruikers dezelfde toegang krijgen waar ze ook betaalden.
 
 ## Toegankelijkheid op Mobiel
 
@@ -143,7 +143,7 @@ Reviewtijden variëren van uren tot enkele dagen, en zijn rond feestdagen of bel
 
 ## De Korte Versie
 
-Store-review beloont apps die compleet zijn, eerlijk over data, eerlijk over betalingen en respectvol tegenover de rechten van gebruikers. Bereid die vier dingen voor vóór je indient — verwijdering, verklaringen, betaalmodel en een werkend demo-account — en de review wordt een controlepunt in plaats van een muur.
+Store-review beloont apps die compleet zijn, eerlijk over data, eerlijk over betalingen en respectvol tegenover de rechten van gebruikers. Bereid die vier dingen voor vóór je indient - verwijdering, verklaringen, betaalmodel en een werkend demo-account - en de review wordt een controlepunt in plaats van een muur.
 
 ## Waar LaunchStudio Past
 
@@ -161,14 +161,14 @@ Joost Verbruggen, hondenuitlater in Tilburg, bouwde Uitlaatmaatje in Bolt als Ex
 
 Apple wees de app in vijf weken drie keer af: eerst omdat reviewers niet konden inloggen, daarna omdat er geen accountverwijdering in de app was, en daarna omdat het privacylabel de locatiedata en crashanalytics wegliet die werden verzameld door een SDK die Bolt had toegevoegd. Google markeerde het formulier Data safety om dezelfde reden. Ondertussen vond een vriend die de Android-build uitpakte de geheime Stripe-sleutel en de Google Maps-sleutel erin.
 
-De engineers van LaunchStudio roteerden beide sleutels en verplaatsten het aanmaken van betalingen en de kaartaanroepen naar functies aan de serverkant, bouwden een verwijderflow in de backend die profielen, hondengegevens, wandelfoto's en locatiegeschiedenis verwijderde en Stripe-klanten annuleerde, voegden API-routes met versies toe zodat oudere builds bleven werken, vulden een demo-account met realistische wandelingen, documenteerden de dataverzameling van elke SDK voor nauwkeurige privacyverklaringen, en schreven duidelijke doelbeschrijvingen voor de rechten op locatie en camera. Wandelingen zijn diensten in de echte wereld, dus Stripe bleef de juiste keuze — en de reviewnotities zeiden dat ook.
+De engineers van LaunchStudio roteerden beide sleutels en verplaatsten het aanmaken van betalingen en de kaartaanroepen naar functies aan de serverkant, bouwden een verwijderflow in de backend die profielen, hondengegevens, wandelfoto's en locatiegeschiedenis verwijderde en Stripe-klanten annuleerde, voegden API-routes met versies toe zodat oudere builds bleven werken, vulden een demo-account met realistische wandelingen, documenteerden de dataverzameling van elke SDK voor nauwkeurige privacyverklaringen, en schreven duidelijke doelbeschrijvingen voor de rechten op locatie en camera. Wandelingen zijn diensten in de echte wereld, dus Stripe bleef de juiste keuze - en de reviewnotities zeiden dat ook.
 
 **Resultaat:** Uitlaatmaatje kwam bij de volgende indiening door de review van beide stores. In de eerste drie maanden op mobiel kreeg het er 640 hondenbezitters en 38 uitlaters bij rond Tilburg en Breda.
 
 > *"Ik dacht dat de afwijzingen Apple was die moeilijk deed. Het was Apple die mijn app zorgvuldiger las dan ik had gedaan."*
-> — **Joost Verbruggen, Oprichter, Uitlaatmaatje (Tilburg)**
+> - **Joost Verbruggen, Oprichter, Uitlaatmaatje (Tilburg)**
 
-**Kosten & Tijdlijn:** € 3.900 (mobiele app: geheimen, verwijderflow, API-versies, privacyverklaringen en ondersteuning bij het indienen) — afgerond in 14 werkdagen.
+**Kosten & Tijdlijn:** € 3.900 (mobiele app: geheimen, verwijderflow, API-versies, privacyverklaringen en ondersteuning bij het indienen) - afgerond in 14 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -182,7 +182,7 @@ Voor fysieke goederen en diensten in de echte wereld doorgaans wel. Voor digital
 
 ### Is het veilig om API-sleutels in een mobiele app te zetten?
 
-Alleen sleutels die bedoeld zijn om openbaar te zijn, beperkt tot een bundle-ID of domein. Alles wat geheim is — betaalsleutels, sleutels voor AI-API's, beheerderstokens — kan uit het binaire bestand worden gehaald en hoort op een server.
+Alleen sleutels die bedoeld zijn om openbaar te zijn, beperkt tot een bundle-ID of domein. Alles wat geheim is - betaalsleutels, sleutels voor AI-API's, beheerderstokens - kan uit het binaire bestand worden gehaald en hoort op een server.
 
 ### Hoe helpt de mobiele ervaring van Manifera bij de store-review?
 

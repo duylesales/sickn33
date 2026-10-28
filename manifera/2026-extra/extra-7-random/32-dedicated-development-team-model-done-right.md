@@ -20,23 +20,23 @@ target_persona: "CTO"
 }
 </script>
 
-A dedicated development team is structurally different from a project-based outsourcing engagement — the same people work with a company continuously, building genuine product knowledge over time — but that structural advantage only materializes if the company actually treats the dedicated team like an extension of its own organization, not a queue for tickets.
+A dedicated development team is structurally different from a project-based outsourcing engagement - the same people work with a company continuously, building genuine product knowledge over time - but that structural advantage only materializes if the company actually treats the dedicated team like an extension of its own organization, not a queue for tickets.
 
-**The Pain:** A CTO adopting a dedicated development team model is paying for the specific advantage of continuity — the same engineers, accumulating product knowledge, becoming more effective over time rather than starting fresh on each new task — but the day-to-day management pattern the CTO's own organization applies to the team determines whether that advantage is actually realized or quietly discarded through habits inherited from project-based outsourcing.
+**The Pain:** A CTO adopting a dedicated development team model is paying for the specific advantage of continuity - the same engineers, accumulating product knowledge, becoming more effective over time rather than starting fresh on each new task - but the day-to-day management pattern the CTO's own organization applies to the team determines whether that advantage is actually realized or quietly discarded through habits inherited from project-based outsourcing.
 
-**The Agitation:** A CTO who manages a dedicated development team the same way they'd manage a project-based vendor — arm's-length communication, minimal context-sharing, treating the team as an execution resource rather than a genuine extension of the internal team — gets a team that never accumulates the product knowledge the dedicated model is specifically designed to build, paying dedicated-team rates for what functions, in practice, as project-based outsourcing with none of the continuity benefit that justified the model's premium in the first place.
+**The Agitation:** A CTO who manages a dedicated development team the same way they'd manage a project-based vendor - arm's-length communication, minimal context-sharing, treating the team as an execution resource rather than a genuine extension of the internal team - gets a team that never accumulates the product knowledge the dedicated model is specifically designed to build, paying dedicated-team rates for what functions, in practice, as project-based outsourcing with none of the continuity benefit that justified the model's premium in the first place.
 
 ## What Actually Realizing the Dedicated Team Advantage Requires
 
-A dedicated development team's core value proposition — accumulated product knowledge that compounds over time — requires specific behaviors from the client organization, not just from the team itself, and a CTO who wants the model to actually deliver its promised advantage needs to build these behaviors deliberately.
+A dedicated development team's core value proposition - accumulated product knowledge that compounds over time - requires specific behaviors from the client organization, not just from the team itself, and a CTO who wants the model to actually deliver its promised advantage needs to build these behaviors deliberately.
 
-The first requirement is genuine inclusion in product context, not just task assignment. A dedicated team that only receives discrete tickets, without visibility into the broader product roadmap, the reasoning behind prioritization decisions, or the strategic context a feature serves, never develops the deeper product understanding that would let it anticipate needs, flag issues proactively, or suggest better approaches — capabilities that are the actual point of paying for dedicated continuity rather than project-based execution. A CTO should include the dedicated team in the same planning and context-sharing rituals as internal team members, not a filtered, execution-only subset.
+The first requirement is genuine inclusion in product context, not just task assignment. A dedicated team that only receives discrete tickets, without visibility into the broader product roadmap, the reasoning behind prioritization decisions, or the strategic context a feature serves, never develops the deeper product understanding that would let it anticipate needs, flag issues proactively, or suggest better approaches - capabilities that are the actual point of paying for dedicated continuity rather than project-based execution. A CTO should include the dedicated team in the same planning and context-sharing rituals as internal team members, not a filtered, execution-only subset.
 
-The second requirement is genuine two-way communication, treating the dedicated team's technical input as a real input to product and technical decisions, not just an execution channel for decisions made elsewhere. A dedicated team that's been embedded long enough to understand the product deeply often has genuinely valuable perspective on technical tradeoffs and even product decisions — perspective a CTO loses entirely if the team is only ever told what to build, never asked what it thinks.
+The second requirement is genuine two-way communication, treating the dedicated team's technical input as a real input to product and technical decisions, not just an execution channel for decisions made elsewhere. A dedicated team that's been embedded long enough to understand the product deeply often has genuinely valuable perspective on technical tradeoffs and even product decisions - perspective a CTO loses entirely if the team is only ever told what to build, never asked what it thinks.
 
-The third requirement is stability of the relationship itself — a dedicated team model's value compounds specifically because the same people stay engaged over time, and a CTO who churns through the arrangement quickly, or treats it as easily interchangeable with project-based alternatives, prevents the compounding effect from ever accumulating meaningfully. The continuity that makes the model valuable takes months to start paying off and longer to reach its full value, and a CTO evaluating the model against a shorter horizon is measuring it against a timeframe too short for its core advantage to show up.
+The third requirement is stability of the relationship itself - a dedicated team model's value compounds specifically because the same people stay engaged over time, and a CTO who churns through the arrangement quickly, or treats it as easily interchangeable with project-based alternatives, prevents the compounding effect from ever accumulating meaningfully. The continuity that makes the model valuable takes months to start paying off and longer to reach its full value, and a CTO evaluating the model against a shorter horizon is measuring it against a timeframe too short for its core advantage to show up.
 
-A CTO who treats a dedicated development team the way these three requirements describe — genuinely included in context, genuinely consulted, genuinely given the relationship stability the model needs — realizes an advantage over project-based outsourcing that compounds meaningfully over the engagement's life. A CTO who doesn't is paying a premium for a benefit their own management pattern is quietly preventing from ever materializing.
+A CTO who treats a dedicated development team the way these three requirements describe - genuinely included in context, genuinely consulted, genuinely given the relationship stability the model needs - realizes an advantage over project-based outsourcing that compounds meaningfully over the engagement's life. A CTO who doesn't is paying a premium for a benefit their own management pattern is quietly preventing from ever materializing.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -53,8 +53,8 @@ This is Dutch Management × Vietnamese Mastery: European guidance on realizing t
 
 Manifera restructured the engagement to include the dedicated team in weekly planning sessions and roadmap discussions, treating the team's technical input as a genuine part of decision-making. Within six months, the team began proactively flagging technical risks and suggesting improvements the previous ticket-only arrangement had never surfaced.
 
-> *"We were paying for a dedicated team and running it like a task queue. Once we actually brought them into the planning conversations, we started getting the thing we were paying for in the first place — people who understood our product well enough to tell us things we hadn't thought to ask."*
-> — **CTO, Дигитални Решения София АД, Bulgaria**
+> *"We were paying for a dedicated team and running it like a task queue. Once we actually brought them into the planning conversations, we started getting the thing we were paying for in the first place - people who understood our product well enough to tell us things we hadn't thought to ask."*
+> - **CTO, Дигитални Решения София АД, Bulgaria**
 
 ## Ticket-Queue Management vs. Manifera's Genuine Team Extension
 
@@ -74,7 +74,7 @@ A CTO who manages a dedicated development team like a project-based vendor pays 
 
 ### (Scenario: CTO paying dedicated-team rates but managing the team like a project vendor) Why might a dedicated development team not deliver its promised advantage?
 
-Because the core value — accumulated product knowledge — requires genuine context-sharing and two-way communication from the client, which a ticket-queue management style prevents.
+Because the core value - accumulated product knowledge - requires genuine context-sharing and two-way communication from the client, which a ticket-queue management style prevents.
 
 ### (Scenario: CTO deciding how to onboard a new dedicated team) What should a CTO include a dedicated development team in, beyond task assignments?
 

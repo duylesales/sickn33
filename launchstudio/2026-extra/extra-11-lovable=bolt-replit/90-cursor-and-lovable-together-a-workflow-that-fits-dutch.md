@@ -26,7 +26,7 @@ Het combineren van beide werelden is een uitstekende strategie, maar introduceer
 
 ## Waarom elke tool uitblinkt in zijn eigen domein
 
-**De visuele builder blinkt uit in de buitenkant.** Een nieuw dashboard, een interactief formulier, een visuele grid of een conversieflow tussen pagina's. Je ziet het resultaat direct ontstaan terwijl je het via prompts beschrijft — een feedbackloop die vele malen sneller werkt dan handmatig code schrijven en continu een browser refreshen.
+**De visuele builder blinkt uit in de buitenkant.** Een nieuw dashboard, een interactief formulier, een visuele grid of een conversieflow tussen pagina's. Je ziet het resultaat direct ontstaan terwijl je het via prompts beschrijft - een feedbackloop die vele malen sneller werkt dan handmatig code schrijven en continu een browser refreshen.
 
 **De code-editor blinkt uit in de constructieve architectuur.** Het consolideren van een bedrijfsregel die per ongeluk op drie plekken is geprogrammeerd, het extraheren van configuraties, het geautomatiseerd doorvoeren van één patroon over dertig bestanden, het schrijven van unit tests en het analyseren welke modules van elkaar afhankelijk zijn. De eenheid van werk is hier het totale project, niet slechts één afzonderlijk scherm.
 
@@ -50,7 +50,7 @@ Synchroniseert jouw builder nog niet met een externe Git-repository? Richt dat d
 
 Vier specifieke knelpunten waar je vooraf op moet anticiperen:
 
-**Hergenereerde bestanden.** Vraag je de visuele builder om een detail op een scherm aan te passen, dan kan hij besluiten om het gehele componentbestand opnieuw te genereren. Daarbij wordt alle handgeschreven logica die jij lokaal had toegevoegd genadeloos gewist. De oplossing is strikte ontkoppeling: bewaar je bedrijfslogica op een plek waar de builder niets te zoeken heeft — een aparte module of service-bestand — en laat het visuele scherm die logica uitsluitend aanroepen. Gegenereerde bestanden blijven gegenereerd; jouw maatwerkcode leeft elders.
+**Hergenereerde bestanden.** Vraag je de visuele builder om een detail op een scherm aan te passen, dan kan hij besluiten om het gehele componentbestand opnieuw te genereren. Daarbij wordt alle handgeschreven logica die jij lokaal had toegevoegd genadeloos gewist. De oplossing is strikte ontkoppeling: bewaar je bedrijfslogica op een plek waar de builder niets te zoeken heeft - een aparte module of service-bestand - en laat het visuele scherm die logica uitsluitend aanroepen. Gegenereerde bestanden blijven gegenereerd; jouw maatwerkcode leeft elders.
 
 **Codeformatting-ruis.** Beide tools hanteren vaak andere regels voor inspringing en witregels, wat resulteert in commits vol met cosmetische aanpassingen die de werkelijke codewijzigingen onzichtbaar maken. Kies één formatteringstool (zoals Prettier), configureer deze voor beide omgevingen en leg het configuratiebestand vast in de repository.
 
@@ -86,7 +86,7 @@ Onderzoek vervolgens hoe het conflict kon ontstaan. Vrijwel altijd blijkt er bed
 
 ## Zo samenwerken met een externe ontwikkelaar
 
-Wanneer een externe specialist aanschuift — een freelancer, technisch partner of collega — vraagt de workflow om één duidelijke werkafspraak: spreek af wie waar en wanneer werkt. Wijzigingen in de builder zijn immers direct en globaal zichtbaar; wijzigingen in de code-editor verlopen via Git-branches en code reviews. Zonder heldere afspraken botsen de doordachte refactoring van de ontwikkelaar en de snelle interface-aanpassing van de oprichter geheid op vrijdagmiddag.
+Wanneer een externe specialist aanschuift - een freelancer, technisch partner of collega - vraagt de workflow om één duidelijke werkafspraak: spreek af wie waar en wanneer werkt. Wijzigingen in de builder zijn immers direct en globaal zichtbaar; wijzigingen in de code-editor verlopen via Git-branches en code reviews. Zonder heldere afspraken botsen de doordachte refactoring van de ontwikkelaar en de snelle interface-aanpassing van de oprichter geheid op vrijdagmiddag.
 
 Het model dat in de praktijk feilloos functioneert: de oprichter gebruikt de builder voor schermen op een eigen Git-branch die via een pull request wordt samengevoegd; de ontwikkelaar werkt aan architectuur en backend-code; en alles wat autorisatie, betalingen of klantdata raakt wordt altijd aan een vierogenprincipe onderworpen.
 
@@ -94,11 +94,11 @@ Het model dat in de praktijk feilloos functioneert: de oprichter gebruikt de bui
 
 Dit is de cruciale discipline die deze workflow over meerdere jaren gezond houdt:
 
-Elk nieuw scherm in je applicatie begint als een wegwerpproduct. Het is gegenereerd om een idee te testen, wordt deze maand waarschijnlijk drie keer herschreven en verdient geen enkele bescherming. Dat is exact de juiste houding — totdat het scherm een specifiek kantelpunt bereikt.
+Elk nieuw scherm in je applicatie begint als een wegwerpproduct. Het is gegenereerd om een idee te testen, wordt deze maand waarschijnlijk drie keer herschreven en verdient geen enkele bescherming. Dat is exact de juiste houding - totdat het scherm een specifiek kantelpunt bereikt.
 
 **Een scherm 'studeert af' zodra klanten ervan afhankelijk worden.** Een bedrijfsproces van een klant loopt erdoorheen. Het berekent een bedrag dat op een factuur verschijnt. De medewerkers van een zakelijke afnemer weten precies waar welke knop zit. Vanaf dat moment zijn de kosten van een onbedoelde hergeneratie niet langer nul.
 
-**Afstuderen betekent de logica verhuizen, niet het scherm bevriezen.** De visuele layout mag je naar hartenlust blijven aanpassen via prompts; wat je verhuist is de onderliggende bedrijfsregel — de berekening, de validatie, de statusovergang — naar een zelfstandige TypeScript-module met een duidelijke naam. De interface blijft razendsnel aanpasbaar, terwijl het bedrijfskritische fundament immuun wordt voor regeneratiefouten.
+**Afstuderen betekent de logica verhuizen, niet het scherm bevriezen.** De visuele layout mag je naar hartenlust blijven aanpassen via prompts; wat je verhuist is de onderliggende bedrijfsregel - de berekening, de validatie, de statusovergang - naar een zelfstandige TypeScript-module met een duidelijke naam. De interface blijft razendsnel aanpasbaar, terwijl het bedrijfskritische fundament immuun wordt voor regeneratiefouten.
 
 **Documenteer welke onderdelen welke status hebben.** Een kort overzicht in je repository: deze modules zijn handgeschreven, deze mappen zijn visueel gegenereerd. Dat is de basis voor je `.cursorrules`, het eerste wat een nieuwe engineer leest, en wat voorkomt dat je over zes maanden foute aannames doet over je eigen software.
 
@@ -106,9 +106,9 @@ Elk nieuw scherm in je applicatie begint als een wegwerpproduct. Het is gegenere
 
 ## De code-architectuur neerzetten die dit mogelijk maakt
 
-Deze hybride workflow vereist een project waarin visuele interfaces en handgeschreven logica daadwerkelijk van elkaar zijn gescheiden — iets wat bij applicaties die puur met AI zijn gebouwd van nature ontbreekt.
+Deze hybride workflow vereist een project waarin visuele interfaces en handgeschreven logica daadwerkelijk van elkaar zijn gescheiden - iets wat bij applicaties die puur met AI zijn gebouwd van nature ontbreekt.
 
-LaunchStudio voert die scheiding uit als een afgebakend fixed-price project: bedrijfslogica wordt uit de gegenereerde schermen gehaald naar zelfstandige modules die de builder nooit overschrijft, dubbele logica wordt samengevoegd, configuraties worden expliciet gemaakt, de Git-repository wordt ingericht als centrale bron van waarheid met consistente formattering, vitale tests worden geschreven en projectregels voor beide tools worden ingesteld — zónder de door jou ontworpen interface aan te tasten.
+LaunchStudio voert die scheiding uit als een afgebakend fixed-price project: bedrijfslogica wordt uit de gegenereerde schermen gehaald naar zelfstandige modules die de builder nooit overschrijft, dubbele logica wordt samengevoegd, configuraties worden expliciet gemaakt, de Git-repository wordt ingericht als centrale bron van waarheid met consistente formattering, vitale tests worden geschreven en projectregels voor beide tools worden ingesteld - zónder de door jou ontworpen interface aan te tasten.
 
 De software engineers zijn van Manifera: elf jaar productie-ervaring en meer dan 160 gerealiseerde projecten voor opdrachtgevers als Vodafone, TNO en CFLW vanuit Amsterdam Herengracht 420 en Ho Chi Minhstad.
 
@@ -122,7 +122,7 @@ Ivo Schaminée bouwde met Lovable het platform Servicecontract: contractbeheer v
 
 Hij was gestart met Cursor voor de backend-onderdelen die de builder gebrekkig afhandelde, en gedurende twee maanden werkte die combinatie uitstekend. Op een donderdag besteedde hij de hele dag aan het consolideren van de contractverlengingsberekening. Die bleek op drie verschillende plekken in de code te zijn geprogrammeerd, met drie verschillende uitkomsten voor contracten die halverwege de maand waren ingegaan. Het werk was lokaal afgerond, maar nog niet gepusht naar GitHub.
 
-Op vrijdagochtend vroeg een klant om een kleine tekstuele wijziging op het contractoverzichtsscherm. Ivo paste de tekst aan in de online builder. De builder hergenereerde het volledige schermbestand — en precies in dat bestand bevonden zich twee van de drie verlengingsberekeningen. De gegenereerde versie van de builder werd naar de Git-repository gepusht. Ivo's volledige donderdagwerk was overschreven. En omdat de derde implementatie elders intact was gebleven, werden verlengingsdata voor mid-maand contracten nu op een vierde, volstrekt onvoorspelbare manier berekend.
+Op vrijdagochtend vroeg een klant om een kleine tekstuele wijziging op het contractoverzichtsscherm. Ivo paste de tekst aan in de online builder. De builder hergenereerde het volledige schermbestand - en precies in dat bestand bevonden zich twee van de drie verlengingsberekeningen. De gegenereerde versie van de builder werd naar de Git-repository gepusht. Ivo's volledige donderdagwerk was overschreven. En omdat de derde implementatie elders intact was gebleven, werden verlengingsdata voor mid-maand contracten nu op een vierde, volstrekt onvoorspelbare manier berekend.
 
 Niemand merkte het op gedurende elf dagen. Tegen die tijd waren er 34 foutieve verlengingsherinneringen verstuurd, waarvan twee naar gewaardeerde klanten die hun contract al lang hadden verlengd.
 
@@ -131,9 +131,9 @@ In zeven werkdagen brachten ervaren engineers structurele orde aan: de verlengin
 **Resultaat:** Geen enkel codeconflict meer in de negen maanden daarna. Volgens Ivo was de echte doorbraak niet de tooling-configuratie, maar de vaste gewoonte om bedrijfslogica direct uit schermen te halen zodra een functionaliteit stabiel is.
 
 > *"Een tekstwijziging van twee woorden op vrijdagochtend wiste een volle dag uiterst secuur werk uit, puur omdat de logica die ik had gerepareerd leefde in een scherm dat de builder naar believen opnieuw mocht overschrijven."*
-> — **Ivo Schaminée, Oprichter, Servicecontract (Oss)**
+> - **Ivo Schaminée, Oprichter, Servicecontract (Oss)**
 
-**Kosten & Doorlooptijd:** € 3.300 (logica-extractie naar modules, tests rondom verlengingsregels, dataherstel, Git- en toolingconfiguratie, rules-bestanden, workflow-richtlijnen) — opgeleverd in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.300 (logica-extractie naar modules, tests rondom verlengingsregels, dataherstel, Git- en toolingconfiguratie, rules-bestanden, workflow-richtlijnen) - opgeleverd in 7 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -155,7 +155,7 @@ De visuele builder voor schermen, layouts, gebruikersflows en snelle copy; de co
 
 ### Zijn rules-bestanden (.cursorrules) de moeite waard?
 
-Absoluut — het kost tien minuten. Ze specificeren projectconventies, markeren welke mappen automatisch gegenereerd worden en blokkeren gevoelige bestanden voor automatische aanpassingen. Dit verhoogt de kwaliteit van AI-suggesties aanzienlijk en voorkomt gevaarlijke bewerkingen.
+Absoluut - het kost tien minuten. Ze specificeren projectconventies, markeren welke mappen automatisch gegenereerd worden en blokkeren gevoelige bestanden voor automatische aanpassingen. Dit verhoogt de kwaliteit van AI-suggesties aanzienlijk en voorkomt gevaarlijke bewerkingen.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-🚨 Can you write the exact SQL that proves customer B has never read customer A's rows? Not app code — the constraint that makes it impossible. One founder found out when a driver switched employers and saw his old routes in a report. 😳
+🚨 Can you write the exact SQL that proves customer B has never read customer A's rows? Not app code - the constraint that makes it impossible. One founder found out when a driver switched employers and saw his old routes in a report. 😳
 
 A `company_id` column isn't multi-tenant. It's a naming convention wearing a costume: 🧠
 

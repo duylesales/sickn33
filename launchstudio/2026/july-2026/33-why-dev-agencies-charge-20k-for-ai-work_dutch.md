@@ -80,7 +80,7 @@ Henry werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Henry ging in minder dan twee weken van start, waarbij klantgegevens werden veiliggesteld en betaalde taxaties mogelijk werden gemaakt.
 
-**Kosten en tijdlijn:** € 3.200 (verhardings- en integratiepakket) — productieklaar en binnen 10 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 3.200 (verhardings- en integratiepakket) - productieklaar en binnen 10 werkdagen geïmplementeerd.
 
 ---
 

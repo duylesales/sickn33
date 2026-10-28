@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The most expensive sentence in a Replit project is "it was working yesterday". It usually means data was being written somewhere that felt like storage and was not — a file beside the application, a local database created inside the environment, an in-memory structure that survived exactly as long as the process did.
+The most expensive sentence in a Replit project is "it was working yesterday". It usually means data was being written somewhere that felt like storage and was not - a file beside the application, a local database created inside the environment, an in-memory structure that survived exactly as long as the process did.
 
 Then something restarts. A redeploy, a platform maintenance window, a crash, a change to the run configuration. The application comes back perfectly and the data does not, and the loss is silent: no error, no warning, simply a product that has forgotten everything since the last time you looked.
 
@@ -58,7 +58,7 @@ Four decisions, in this order.
 
 **Put the credentials in the platform's secrets mechanism,** never in a file in the project. Replit provides one; use it consistently so there is exactly one place to rotate.
 
-**Use the right key on the right side.** The public key belongs in anything running in a browser and relies on your access rules for protection. The privileged key belongs only in server-side code — and in a Replit project, where frontend and backend frequently live in the same repository, this distinction is easy to lose. If your project serves a frontend directly, assume anything it can read is public.
+**Use the right key on the right side.** The public key belongs in anything running in a browser and relies on your access rules for protection. The privileged key belongs only in server-side code - and in a Replit project, where frontend and backend frequently live in the same repository, this distinction is easy to lose. If your project serves a frontend directly, assume anything it can read is public.
 
 **Enable row level security on every table and write the policies before you have real data.** A table without policies, reachable through the automatically generated API, is readable by anyone holding your public key. This is the single most common serious finding in AI-built projects, and it costs nothing to prevent and a week to retrofit.
 
@@ -66,7 +66,7 @@ Four decisions, in this order.
 
 The failure that surprises people who did everything else correctly.
 
-Each connection to Postgres consumes a slot, and the number of slots is finite. A development environment holding one or two connections never approaches the limit; an application serving concurrent visitors, particularly one where each request opens its own connection, exhausts it quickly. The symptom is not a clean error message — it is an application that works for the first several people and fails for everyone afterwards, intermittently, in a way that looks like the platform being unreliable.
+Each connection to Postgres consumes a slot, and the number of slots is finite. A development environment holding one or two connections never approaches the limit; an application serving concurrent visitors, particularly one where each request opens its own connection, exhausts it quickly. The symptom is not a clean error message - it is an application that works for the first several people and fails for everyone afterwards, intermittently, in a way that looks like the platform being unreliable.
 
 The fix is pooling: connect through the pooled endpoint your provider offers, reuse connections rather than creating one per request, and close them when work finishes. Supabase provides a pooled connection string for exactly this purpose, and using it is a configuration change rather than a rewrite.
 
@@ -78,7 +78,7 @@ Once your database is external, the question of where its structure is defined b
 
 Changes made by clicking in a dashboard exist only in that database. Your project has no record of them, a collaborator's environment does not match, and nobody can say what changed or when. On a platform where environments are recreated regularly, that divergence bites sooner than elsewhere.
 
-Keep migrations as files in the project. It makes changes reviewable, reproducible in every environment, and visible to whatever tooling — human or agent — you work with next.
+Keep migrations as files in the project. It makes changes reviewable, reproducible in every environment, and visible to whatever tooling - human or agent - you work with next.
 
 ## What Should Stay on Replit
 
@@ -86,7 +86,7 @@ This is not an argument for moving everything.
 
 The application itself, the development environment, the collaboration and the deployment can all reasonably stay where they are. What moves is the data: the database, and any files users upload, which belong in object storage with per-owner access rather than on a filesystem that gets rebuilt.
 
-That split — application on the platform, state outside it — is what makes a Replit project survivable without giving up the thing that made it pleasant to build.
+That split - application on the platform, state outside it - is what makes a Replit project survivable without giving up the thing that made it pleasant to build.
 
 ## Testing That It Actually Survives
 
@@ -104,7 +104,7 @@ Four checks, none requiring tooling.
 
 Most projects reaching this decision are not empty. There is real information in the temporary store, and moving it is a small project of its own.
 
-**Export before you change anything.** Whatever the current store is — a file, a local database, an in-memory structure dumped on demand — get a copy out and keep it somewhere that is not the project. This is the step people skip because they intend to do the migration in one sitting, and it is the step that saves them when the sitting does not go as planned.
+**Export before you change anything.** Whatever the current store is - a file, a local database, an in-memory structure dumped on demand - get a copy out and keep it somewhere that is not the project. This is the step people skip because they intend to do the migration in one sitting, and it is the step that saves them when the sitting does not go as planned.
 
 **Expect the data to be messier than the code implies.** Records written by earlier versions of the application frequently lack fields the current version assumes, because the shape changed and nothing migrated the old rows. Dates may be stored in two formats. The same customer may appear twice with different capitalisation. You will find out during the import rather than before it, so plan for a pass that cleans as it loads.
 
@@ -112,9 +112,9 @@ Most projects reaching this decision are not empty. There is real information in
 
 **Add the constraints during the import, not after.** Required fields, uniqueness on email addresses, foreign keys that guarantee a record points at something real. Applied at import, they tell you exactly how much invalid data you have. Applied later, they fail against data you have to clean under time pressure.
 
-**Verify by counting.** Number of records in, number out, plus a handful of specific records checked by eye — the oldest, the newest, one with unusual characters in a name, one with an empty optional field. Then have someone who uses the product daily look at the result, because they will notice a wrong total that no count would reveal.
+**Verify by counting.** Number of records in, number out, plus a handful of specific records checked by eye - the oldest, the newest, one with unusual characters in a name, one with an empty optional field. Then have someone who uses the product daily look at the result, because they will notice a wrong total that no count would reveal.
 
-**Run both for a short period if you can,** writing to the new store while the old one remains readable, and cut over once the numbers agree for a few days. For most small products a maintenance window of an hour is simpler and perfectly acceptable — announce it, do it early, and keep the export.
+**Run both for a short period if you can,** writing to the new store while the old one remains readable, and cut over once the numbers agree for a few days. For most small products a maintenance window of an hour is simpler and perfectly acceptable - announce it, do it early, and keep the export.
 
 ## Getting the Data Layer Right
 
@@ -130,7 +130,7 @@ LaunchStudio does this without touching the interface you built, and leaves the 
 
 Tessa Oomen built Wachtlijst on Replit: a waiting-list and intake tool for three physiotherapy practices around Tiel. Patients submitted a form, practices worked through the list, and it had been running for two months.
 
-Submissions were stored in a file inside the project. Every redeploy — and Tessa redeployed whenever she adjusted the form — removed everything submitted since the previous one. The practices had noticed that the list "sometimes looked shorter" and assumed colleagues had processed entries.
+Submissions were stored in a file inside the project. Every redeploy - and Tessa redeployed whenever she adjusted the form - removed everything submitted since the previous one. The practices had noticed that the list "sometimes looked shorter" and assumed colleagues had processed entries.
 
 The scale became clear only when one practice cross-referenced their own phone log: roughly 40 intake requests had been lost across six weeks, from people who had submitted a form and heard nothing.
 
@@ -141,15 +141,15 @@ The lost submissions could not be recovered. The practices contacted the people 
 **Result:** no data loss in the eleven months since, and the intake list survived a busy September that produced more submissions in a week than the previous system had lost in six.
 
 > *"I thought a file in my project was a database. It behaved exactly like one right up until the moment it deleted forty people who were waiting for care."*
-> — **Tessa Oomen, Founder, Wachtlijst (Tiel)**
+> - **Tessa Oomen, Founder, Wachtlijst (Tiel)**
 
-**Cost & Timeline:** €3,200 (database setup with region and backups, access rules, pooling, storage migration, migrations) — completed in 6 business days.
+**Cost & Timeline:** €3,200 (database setup with region and backups, access rules, pooling, storage migration, migrations) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
 ### Why does my Replit project lose data when I redeploy?
 
-Because the data is stored inside the environment — a file beside your code, a local database or in-memory state — and environments are rebuilt. Durability requires storage whose lifecycle is separate from the application's.
+Because the data is stored inside the environment - a file beside your code, a local database or in-memory state - and environments are rebuilt. Durability requires storage whose lifecycle is separate from the application's.
 
 ### Which key should my Replit app use to reach Supabase?
 
@@ -161,7 +161,7 @@ Usually connection exhaustion. Each request opening its own database connection 
 
 ### Should my schema live in the dashboard or in the project?
 
-In the project, as migration files. Dashboard-only changes exist nowhere else, so environments drift apart and nobody can say what changed — which matters more on a platform where environments are recreated regularly.
+In the project, as migration files. Dashboard-only changes exist nowhere else, so environments drift apart and nobody can say what changed - which matters more on a platform where environments are recreated regularly.
 
 ### Do I have to leave Replit to have a real database?
 
@@ -177,7 +177,7 @@ No. The useful split is application on the platform and state outside it: the da
       "name": "Why does my Replit project lose data when I redeploy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because the data sits inside the environment — a file, a local database or memory — and environments are rebuilt. Durability needs storage with a lifecycle separate from the app."
+        "text": "Because the data sits inside the environment - a file, a local database or memory - and environments are rebuilt. Durability needs storage with a lifecycle separate from the app."
       }
     },
     {
@@ -209,7 +209,7 @@ No. The useful split is application on the platform and state outside it: the da
       "name": "Do I have to leave Replit to have a real database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — keep the application on the platform and move state outside it: database and uploaded files in managed services."
+        "text": "No - keep the application on the platform and move state outside it: database and uploaded files in managed services."
       }
     }
   ]

@@ -1,6 +1,6 @@
 🚀 9:00 uur: "Top 5 Product van de Dag." 10:15 uur: elke bezoeker krijgt een 504-fout en niemand kan zich meer aanmelden. Een droomlancering wordt in 75 minuten een nachtmerrie. 😳
 
-Een virale piek breekt software niet willekeurig — hij valt vier specifieke knelpunten aan die AI-prototypes standaard ongeconfigureerd laten: 🧠
+Een virale piek breekt software niet willekeurig - hij valt vier specifieke knelpunten aan die AI-prototypes standaard ongeconfigureerd laten: 🧠
 
 ❌ Directe databaseverbindingen raken op bij 100+ gelijktijdige serverless instances
 ❌ Zware assets zonder CDN verbruiken uw bandbreedte én serverresources
@@ -14,7 +14,7 @@ Een virale piek breekt software niet willekeurig — hij valt vier specifieke kn
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring met veerkrachtige webapplicaties, harden we AI-prototypes tegen precies dit soort pieken. 🛡️
 
-Joosts resultaat: BriefBot haalde #3 Product van de Dag met 18.500 bezoekers en 2.400 aanmeldingen — bij nul downtime en 140ms API-latency. 🚀
+Joosts resultaat: BriefBot haalde #3 Product van de Dag met 18.500 bezoekers en 2.400 aanmeldingen - bij nul downtime en 140ms API-latency. 🚀
 
 👉 Zorg dat uw grootste marketingmoment geen technische ramp wordt: https://launchstudio.eu/nl/blog/prototype-featured-product-hunt-before-ready
 

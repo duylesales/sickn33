@@ -1,8 +1,8 @@
-📄 Fleur Lisse bouwde "BloemBestel," een bloemenbestelbeheertool voor bloemisten, met Bolt. Zes maanden na lancering, met dagelijks echte klantgegevens die erdoorheen stroomden, gebruikte ze de exportfunctie van het platform om van hostingprovider te wisselen — en las de kleine lettertjes pas voor het eerst tijdens het exporteren. 😳
+📄 Fleur Lisse bouwde "BloemBestel," een bloemenbestelbeheertool voor bloemisten, met Bolt. Zes maanden na lancering, met dagelijks echte klantgegevens die erdoorheen stroomden, gebruikte ze de exportfunctie van het platform om van hostingprovider te wisselen - en las de kleine lettertjes pas voor het eerst tijdens het exporteren. 😳
 
 De exportknop is voor de meeste oprichters de eerste keer dat ze de bijbehorende voorwaarden ooit lezen.
 
-❌ Een clausule behield het recht van de AI-leverancier om gegenereerde code — inclusief die van BloemBestel — te hergebruiken voor toekomstige modeltraining
+❌ Een clausule behield het recht van de AI-leverancier om gegenereerde code - inclusief die van BloemBestel - te hergebruiken voor toekomstige modeltraining
 ❌ Niets suggereerde dat dit beperkt was tot een afsluitdatum; het leek alles te dekken wat ze had gebouwd
 ❌ Daaronder viel logica gevormd door maanden aan echte klant- en bedrijfsgegevens
 ❌ Ze kwam hier pas achter op de dag dat ze het platform moest verlaten, niet ervoor

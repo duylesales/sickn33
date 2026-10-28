@@ -1,10 +1,10 @@
-🐛 Nina Bosch built ArchiefKoppel, a document management SaaS for legal and admin firms, using Cursor. She fixed a permissions bug, shipped it, moved on — then weeks later a customer reported the exact same bug in a different part of the product. 😳
+🐛 Nina Bosch built ArchiefKoppel, a document management SaaS for legal and admin firms, using Cursor. She fixed a permissions bug, shipped it, moved on - then weeks later a customer reported the exact same bug in a different part of the product. 😳
 
-AI-generated technical debt has no decision trail — nobody chose it, so nobody's watching for it. 🧠
+AI-generated technical debt has no decision trail - nobody chose it, so nobody's watching for it. 🧠
 
 ❌ Cursor had implemented near-identical permission-checking logic across eight different files instead of one shared function
 ❌ Each file looked locally clean, well-named, and reasonable on its own
-❌ Nina fixed the bug once, confirmed it, shipped it — and it was still broken everywhere else
+❌ Nina fixed the bug once, confirmed it, shipped it - and it was still broken everywhere else
 ❌ Nobody had a reason to check for duplication, because nobody consciously chose to duplicate the logic
 
 ✅ Search systematically for near-identical functions across the whole codebase, not file by file

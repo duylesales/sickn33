@@ -1,4 +1,4 @@
-🚨 Nearly every failed offshore software development team engagement traces back to the same decision made badly at the start. It's not skill — it's the handoff. ⚙️🌏
+🚨 Nearly every failed offshore software development team engagement traces back to the same decision made badly at the start. It's not skill - it's the handoff. ⚙️🌏
 
 **The Pain Points:**
 ❌ **Narrow Tickets, No Autonomy:** Every ambiguous judgment call sits blocked waiting for internal-team clarification.
@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Larger, Goal-Specified Units of Work:** Judgment calls resolved locally instead of escalated.
-✅ **Amsterdam Strategic Governance:** Explicit, generous decision rights defined upfront — not left implicit.
+✅ **Amsterdam Strategic Governance:** Explicit, generous decision rights defined upfront - not left implicit.
 ✅ **Vietnam Execution Velocity:** Genuine autonomy within clear goals and constraints, asynchronous-first by design.
 
 We thought we had a skills problem. We actually had a decision-rights problem. Once we defined what they could decide, the same team moved twice as fast. 🛡️

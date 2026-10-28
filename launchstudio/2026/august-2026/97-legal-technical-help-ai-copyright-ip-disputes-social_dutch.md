@@ -1,4 +1,4 @@
-⚖️ Isabelle bouwde BrandVoice AI met **Lovable** — een auteursrechtkennisgeving van een uitgever kwam binnen met een deadline van twee weken, en haar advocaat had technisch bewijs nodig dat simpelweg nog niet bestond. 🧠
+⚖️ Isabelle bouwde BrandVoice AI met **Lovable** - een auteursrechtkennisgeving van een uitgever kwam binnen met een deadline van twee weken, en haar advocaat had technisch bewijs nodig dat simpelweg nog niet bestond. 🧠
 
 Als een juridische kennisgeving over de trainingsdata of outputs van uw AI binnenkomt en u heeft geen herkomstdocumentatie of generatielogs, argumenteert uw advocaat blind.
 
@@ -12,7 +12,7 @@ Als een juridische kennisgeving over de trainingsdata of outputs van uw AI binne
 
 Bij **LaunchStudio** bouwen wij dit soort technische bewijsinfrastructuur al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Het geschil werd opgelost via een onderhandelde licentieaanpassing in plaats van een rechtszaak, onderbouwd met echt bewijs. (€ 4.600 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
+Het geschil werd opgelost via een onderhandelde licentieaanpassing in plaats van een rechtszaak, onderbouwd met echt bewijs. (€ 4.600 (Enterprise Hardening Pakket) - 10 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/legal-technical-help-ai-copyright-ip-disputes
 

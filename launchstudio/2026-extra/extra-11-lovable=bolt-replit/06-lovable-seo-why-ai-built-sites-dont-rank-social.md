@@ -1,4 +1,4 @@
-🚨 Daan Hoekstra's app, Werkplaats, listed 340 studio and workshop spaces across Groningen and Friesland. Six weeks after launching on Lovable, direct traffic trickled in, but Google had indexed only 3 pages out of 340 — because client-side Single Page Applications look like blank HTML shells to web crawlers. 😳
+🚨 Daan Hoekstra's app, Werkplaats, listed 340 studio and workshop spaces across Groningen and Friesland. Six weeks after launching on Lovable, direct traffic trickled in, but Google had indexed only 3 pages out of 340 - because client-side Single Page Applications look like blank HTML shells to web crawlers. 😳
 
 A slick client-side SPA cannot rank if search bots only see an empty `<div id='root'></div>`. Here's why Lovable apps struggle on Google: 🧠
 

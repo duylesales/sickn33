@@ -31,7 +31,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Rutger, drie maanden onderweg met de groei van zijn facturatie-SaaS, ontvangt een e-mail van de bedrijfsjurist van een potentiële zakelijke klant: *"Kunt u ons uw verwerkersovereenkomst (DPA) en een actuele lijst van uw subverwerkers toesturen?"* Hij heeft de term nog nooit gehoord. Hij belt zijn medeoprichter. Geen van beiden kan zich herinneren ooit een overeenkomst te hebben ondertekend met Stripe, Resend of Supabase — was dat dan nodig? En is dit iets wat ze nu zélf helemaal moeten schrijven?
+Rutger, drie maanden onderweg met de groei van zijn facturatie-SaaS, ontvangt een e-mail van de bedrijfsjurist van een potentiële zakelijke klant: *"Kunt u ons uw verwerkersovereenkomst (DPA) en een actuele lijst van uw subverwerkers toesturen?"* Hij heeft de term nog nooit gehoord. Hij belt zijn medeoprichter. Geen van beiden kan zich herinneren ooit een overeenkomst te hebben ondertekend met Stripe, Resend of Supabase - was dat dan nodig? En is dit iets wat ze nu zélf helemaal moeten schrijven?
 
 Het eerlijke antwoord luidt: allebei. Vrijwel al uw cloudleveranciers hebben al een kant-en-klare verwerkersovereenkomst (Data Processing Agreement / DPA) klaarliggen die u met één klik in uw beheeraccount kunt accepteren of die automatisch deel uitmaakt van de algemene voorwaarden. Maar daarnaast heeft u ook een *eigen* verwerkersovereenkomst nodig: het document dat u aanbiedt aan uw eigen zakelijke klanten. Vanuit hún perspectief bent ú immers de verwerker van hún klantdata.
 
@@ -94,7 +94,7 @@ Zodra u software levert aan zakelijke klanten (B2B), moet u een eigen DPA kunnen
 - Wat is uw meldtermijn bij een eventueel datalek? (Standaard geldt: binnen 72 uur na ontdekking, conform de wettelijke meldplicht).
 - Wat gebeurt er met de data bij beëindiging van het contract (wissen of exporteren)?
 
-Veel SaaS-startups starten met een degelijk modelcontract — bijvoorbeeld gebaseerd op het standaardmodel van brancheverenigingen of de Modelcontractbepalingen van de Europese Commissie — en laten dit door een jurist toetsen aan hun werkelijke situatie. Dat is aanzienlijk sneller en kostenefficiënter dan een advocaat vanaf nul een maatwerkovereenkomst te laten schrijven.
+Veel SaaS-startups starten met een degelijk modelcontract - bijvoorbeeld gebaseerd op het standaardmodel van brancheverenigingen of de Modelcontractbepalingen van de Europese Commissie - en laten dit door een jurist toetsen aan hun werkelijke situatie. Dat is aanzienlijk sneller en kostenefficiënter dan een advocaat vanaf nul een maatwerkovereenkomst te laten schrijven.
 
 ## De Subverwerkerslijst: Het Levende Document Dat Vragen Voorkomt
 
@@ -129,9 +129,9 @@ Het ideale kantelpunt is: **zodra uw eerste betalende B2B-klant aan boord komt e
 
 ## Waarom Dit Zich Terugverdient Vóórdat Ernaar Gevraagd Wordt
 
-De oprichters die dit proces succesvol doorlopen, zijn niet degenen met de meest geavanceerde juridische afdeling — het zijn simpelweg de ondernemers die de leveranciersinventarisatie voltooid hadden vóórdat de eerste enterprise-klant ernaar vroeg. Hierdoor is de reactie op "stuur ons uw DPA en subverwerkerslijst" een e-mail die nog dezelfde dag de deur uitgaat met een bestaand document als bijlage, in plaats van een hectische zoektocht van twee weken die de deal stillegt. Verkooptrajecten in het enterprise-segment duren van nature al lang genoeg; zichtbaar onvoorbereid zijn op standaard papierwerk dat een concurrent wél direct paraat heeft, is een volstrekt vermijdbare reden om een deal te verliezen die inhoudelijk perfect bij uw product aansloot.
+De oprichters die dit proces succesvol doorlopen, zijn niet degenen met de meest geavanceerde juridische afdeling - het zijn simpelweg de ondernemers die de leveranciersinventarisatie voltooid hadden vóórdat de eerste enterprise-klant ernaar vroeg. Hierdoor is de reactie op "stuur ons uw DPA en subverwerkerslijst" een e-mail die nog dezelfde dag de deur uitgaat met een bestaand document als bijlage, in plaats van een hectische zoektocht van twee weken die de deal stillegt. Verkooptrajecten in het enterprise-segment duren van nature al lang genoeg; zichtbaar onvoorbereid zijn op standaard papierwerk dat een concurrent wél direct paraat heeft, is een volstrekt vermijdbare reden om een deal te verliezen die inhoudelijk perfect bij uw product aansloot.
 
-Het samenstellen van een sluitende subverwerkerslijst over een echte productiestack en het inrichten van een DPA die een inkoopteam daadwerkelijk accepteert, is precies het soort operationele funderingswerk dat [LaunchStudio](https://launchstudio.eu/nl/) levert naast beveiligingshardening — gevoed door meer dan 11 jaar ervaring van Manifera met enterprise-deals die exact op dit soort voorbereiding vallen of staan.
+Het samenstellen van een sluitende subverwerkerslijst over een echte productiestack en het inrichten van een DPA die een inkoopteam daadwerkelijk accepteert, is precies het soort operationele funderingswerk dat [LaunchStudio](https://launchstudio.eu/nl/) levert naast beveiligingshardening - gevoed door meer dan 11 jaar ervaring van Manifera met enterprise-deals die exact op dit soort voorbereiding vallen of staan.
 
 [Plan een gesprek met een engineer](https://launchstudio.eu/nl/#contact) die uw daadwerkelijke stack doorloopt en u tool voor tool vertelt welke verwerkersovereenkomsten u al heeft en welke u nog mist.
 
@@ -141,14 +141,14 @@ Het samenstellen van een sluitende subverwerkerslijst over een echte productiest
 
 Rutger Hofstra had zijn facturatiesoftware Boekly, gebouwd met behulp van Bolt, uitgebouwd tot twaalf betalende zzp-klanten toen de directie van een middelgroot accountantskantoor interesse toonde. Als harde voorwaarde voor het ondertekenen van de licentieovereenkomst eiste de bedrijfsjurist van het kantoor een getekende verwerkersovereenkomst en een complete subverwerkerslijst.
 
-Rutger had geen van beide documenten paraat. Zijn leverancierscontracten met Supabase, Resend en Stripe bleken standaard online beschikbaar te zijn, maar stonden nog onaangeroerd als 'ongelezen' in de instellingen. Daarnaast bevatte Boekly een AI-koppeling via OpenAI om factuurregels automatisch te rubriceren — waarvan niemand wist hoe dit juridisch precies gekwalificeerd moest worden.
+Rutger had geen van beide documenten paraat. Zijn leverancierscontracten met Supabase, Resend en Stripe bleken standaard online beschikbaar te zijn, maar stonden nog onaangeroerd als 'ongelezen' in de instellingen. Daarnaast bevatte Boekly een AI-koppeling via OpenAI om factuurregels automatisch te rubriceren - waarvan niemand wist hoe dit juridisch precies gekwalificeerd moest worden.
 
 De zakelijke deal liep elf dagen volledige vertraging op terwijl Rutger zocht naar documenten en tevergeefs probeerde een online template aan te passen aan zijn complexe datastromen. De audit door de software-engineers van Manifera bracht direct rust: de analyse toonde aan dat de OpenAI-integratie louter generieke omschrijvingen van factuurregels doorgaf en géén persoonsnamen of IBAN-nummers. Dit vereenvoudigde de formulering van de DPA aanzienlijk en leverde een heldere, auditeerbare subverwerkerslijst op.
 
 **Het Resultaat:** Boekly tekende de overeenkomst met het accountantskantoor en gebruikte exact dezelfde set documenten om in de daaropvolgende drie maanden nog twee grote zakelijke klanten binnen een week aan te sluiten.
 
 > *"Het papierwerk zelf kostte uiteindelijk maar een middag werk, zodra iemand me exact uitlegde waarnaar ik moest zoeken. Wat me elf dagen kostte, was het feit dat ik niet eens wist dat een 'subverwerkerslijst' een bestaande standaard was."*
-> — **Rutger Hofstra, Oprichter, Boekly (Groningen)**
+> - **Rutger Hofstra, Oprichter, Boekly (Groningen)**
 
 ---
 

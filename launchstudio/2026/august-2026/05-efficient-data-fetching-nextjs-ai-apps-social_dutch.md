@@ -1,4 +1,4 @@
-🔥 Lucas bouwde een prototype met **Bolt** — Lucas, een HR-recruiter, gebruikte Bolt om een cv-screening app te bouwen, maar liep aan tegen ernstige vertragingen door sequentiële database-watervallen. 🧠
+🔥 Lucas bouwde een prototype met **Bolt** - Lucas, een HR-recruiter, gebruikte Bolt om een cv-screening app te bouwen, maar liep aan tegen ernstige vertragingen door sequentiële database-watervallen. 🧠
 
 Als uw Next.js AI-applicatie onafhankelijke queries na elkaar uitvoert in plaats van parallel, blijft het scherm secondenlang wit voor de gebruiker.
 
@@ -12,7 +12,7 @@ Als uw Next.js AI-applicatie onafhankelijke queries na elkaar uitvoert in plaats
 
 Bij **LaunchStudio** lossen we exact dit type data-architectuurproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Lucas's applicatie werd razendsnel: De initiële laadtijd daalde naar slechts 0,4s met vloeiende skeleton streaming voor zware analyses. (€1.600 (Next.js Optimization Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Lucas's applicatie werd razendsnel: De initiële laadtijd daalde naar slechts 0,4s met vloeiende skeleton streaming voor zware analyses. (€1.600 (Next.js Optimization Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/efficient-data-fetching-nextjs-ai-apps
 

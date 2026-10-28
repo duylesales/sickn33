@@ -1,4 +1,4 @@
-🔥 Lincoln bouwde een prototype met **Lovable** — Lincoln, een HR-startup founder, bouwde een recruitment-app, maar liep vast op zware documentatie- en auditeisen onder de nieuwe EU AI Act wetgeving. 🧠
+🔥 Lincoln bouwde een prototype met **Lovable** - Lincoln, een HR-startup founder, bouwde een recruitment-app, maar liep vast op zware documentatie- en auditeisen onder de nieuwe EU AI Act wetgeving. 🧠
 
 De Europese AI-Verordening (EU AI Act) reguleert AI op basis van use-case risiconiveaus; Hoog-Risico toepassingen vereisen verplichte auditlogging en menselijk toezicht.
 
@@ -12,7 +12,7 @@ De Europese AI-Verordening (EU AI Act) reguleert AI op basis van use-case risico
 
 Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en audit-logging vraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Lincolns recruitment-platform werd volledig conform: De app voldeed aan alle documentatie-eisen van de EU AI Act en kon veilig uitrollen in Europa. (€2.400 (AI Act Audit Trail Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Lincolns recruitment-platform werd volledig conform: De app voldeed aan alle documentatie-eisen van de EU AI Act en kon veilig uitrollen in Europa. (€2.400 (AI Act Audit Trail Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/eu-ai-act-what-b2b-founders-must-know
 

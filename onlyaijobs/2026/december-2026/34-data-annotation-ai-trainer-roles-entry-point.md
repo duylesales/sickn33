@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Data Annotation and AI Trainer Roles: A Real Entry Point, With Real Caveats",
-  "description": "Annotation, labelling and model evaluation roles are one of the few genuinely open doors into AI work — and whether they lead anywhere depends almost entirely on the employer you choose.",
+  "description": "Annotation, labelling and model evaluation roles are one of the few genuinely open doors into AI work - and whether they lead anywhere depends almost entirely on the employer you choose.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-17",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Machine learning runs on labelled data, and labelled data is produced by people. In the Netherlands those people work under a variety of titles — data annotator, labelling specialist, AI trainer, evaluation analyst, data quality officer — and their work is a genuine entry point into the field for candidates without a technical degree. It is also a category where the difference between a good employer and a bad one is larger than almost anywhere else in this industry.
+Machine learning runs on labelled data, and labelled data is produced by people. In the Netherlands those people work under a variety of titles - data annotator, labelling specialist, AI trainer, evaluation analyst, data quality officer - and their work is a genuine entry point into the field for candidates without a technical degree. It is also a category where the difference between a good employer and a bad one is larger than almost anywhere else in this industry.
 
 ## What the Work Actually Is
 
@@ -49,7 +49,7 @@ Machine learning runs on labelled data, and labelled data is produced by people.
 
 **Quality assurance.** Measuring agreement between annotators, identifying systematic disagreement, resolving edge cases and monitoring drift in labelling quality over time.
 
-**Domain expert labelling.** Specialists — clinicians, lawyers, agronomists, engineers — labelling data in their own field. These roles pay far better than generic annotation and are frequently part-time alongside the person's main profession.
+**Domain expert labelling.** Specialists - clinicians, lawyers, agronomists, engineers - labelling data in their own field. These roles pay far better than generic annotation and are frequently part-time alongside the person's main profession.
 
 ## Why This Is Harder Work Than People Assume
 
@@ -59,7 +59,7 @@ Almost every real-world labelling task contains genuine ambiguity. Is a partiall
 
 Handling that well requires precision of thought. Good annotators notice that a guideline is ambiguous before they have labelled ten thousand examples inconsistently. Good guideline authors anticipate edge cases and write rules that generalise. Good quality leads use agreement statistics to find systematic problems rather than to blame individuals.
 
-This is why the field distinguishes between annotation as a task and annotation as a discipline — and why the second is a legitimate specialism.
+This is why the field distinguishes between annotation as a task and annotation as a discipline - and why the second is a legitimate specialism.
 
 ## The Caveats, Stated Plainly
 
@@ -77,7 +77,7 @@ A team building a document classification system is frustrated by a model that p
 
 An annotator raises a question about a category: the guideline says to label documents by their primary purpose, but many documents serve two purposes, and different annotators have been resolving this differently for months. Agreement statistics, when finally computed per category, confirm it: that category has far lower agreement than the others.
 
-The team rewrites the guideline with explicit rules for multi-purpose documents, re-labels a sample, and discovers that a meaningful share of the training data was inconsistently labelled. After correction, model performance improves substantially — more than any architecture change had achieved.
+The team rewrites the guideline with explicit rules for multi-purpose documents, re-labels a sample, and discovers that a meaningful share of the training data was inconsistently labelled. After correction, model performance improves substantially - more than any architecture change had achieved.
 
 This pattern is common enough to be a rule of thumb: when a model plateaus, look at the labels before the architecture. And the person most likely to spot the problem is the one doing the labelling, if anyone is listening to them.
 
@@ -113,7 +113,7 @@ When a model produces free text, there is no label to compare against. Judging w
 
 The work involves reading outputs against a rubric, scoring them consistently, identifying failure patterns, and writing up what breaks. Done well, it is the closest thing to experimental science available without a technical degree: you are designing a measurement instrument for something inherently subjective and then defending its reliability.
 
-For candidates, two features make this attractive. It rewards domain knowledge — a nurse, a lawyer or an accountant evaluating outputs in their field is far more valuable than a generalist. And it sits close to the product team, which means visibility and a realistic path into evaluation design, product or quality roles.
+For candidates, two features make this attractive. It rewards domain knowledge - a nurse, a lawyer or an accountant evaluating outputs in their field is far more valuable than a generalist. And it sits close to the product team, which means visibility and a realistic path into evaluation design, product or quality roles.
 
 The caution is the same as elsewhere in this category: check whether the employer treats evaluation as a temporary contract to be minimised or as a permanent capability they are building.
 
@@ -121,7 +121,7 @@ The caution is the same as elsewhere in this category: check whether the employe
 
 New annotators who want this to lead somewhere can do a surprising amount in half a year.
 
-**Keep an ambiguity log.** Every time you hesitate over a label, write down the example and why. After a few weeks you will have a document that is genuinely useful to the team — and evidence that you think systematically.
+**Keep an ambiguity log.** Every time you hesitate over a label, write down the example and why. After a few weeks you will have a document that is genuinely useful to the team - and evidence that you think systematically.
 
 **Measure your own consistency.** Re-label a sample of your own earlier work without looking at your previous answers and see how often you agree with yourself. Most people are shocked, and the exercise teaches more about labelling than any training module.
 
@@ -137,7 +137,7 @@ Six months of this produces a portfolio of contributions that no generic labelli
 
 European AI rules place obligations on providers of high-risk systems around data governance: training data must be relevant, sufficiently representative and, as far as possible, free of errors, with documented data preparation practices.
 
-Read carefully, that is a requirement for exactly the work described here — and for evidence that it was done properly. The effect on the job market is that organisations building regulated systems increasingly need documented labelling processes, quality metrics and audit trails, which raises the status of annotation and data quality roles from a cost to be minimised into a compliance function.
+Read carefully, that is a requirement for exactly the work described here - and for evidence that it was done properly. The effect on the job market is that organisations building regulated systems increasingly need documented labelling processes, quality metrics and audit trails, which raises the status of annotation and data quality roles from a cost to be minimised into a compliance function.
 
 Candidates should use this. Framing your experience in terms of data governance, documented quality procedures and representativeness analysis speaks directly to what employers now need to demonstrate.
 
@@ -145,13 +145,13 @@ Candidates should use this. Framing your experience in terms of data governance,
 
 Both sides hold a misconception. Candidates assume annotation is a dead end; employers assume it is unskilled and outsource it as cheaply as possible.
 
-The organisations that do best with machine learning tend to disagree with both. They treat annotation as part of the technical process, employ people who understand the domain, invest in guidelines and measurement, and keep a feedback loop between annotators and modellers. The improvement in model quality from doing this well typically exceeds what is available from any change in architecture — a fact that is widely acknowledged in practice and still rarely reflected in job adverts or pay scales.
+The organisations that do best with machine learning tend to disagree with both. They treat annotation as part of the technical process, employ people who understand the domain, invest in guidelines and measurement, and keep a feedback loop between annotators and modellers. The improvement in model quality from doing this well typically exceeds what is available from any change in architecture - a fact that is widely acknowledged in practice and still rarely reflected in job adverts or pay scales.
 
 ## Key Takeaways
 
 - Annotation, evaluation and AI trainer roles are one of the few genuinely open entry points into AI work in the Netherlands.
 - The work involves real judgement: ambiguity, guideline design and measurement of agreement, not mechanical clicking.
-- Pay, contract form, content exposure and career visibility vary enormously — evaluate the employer, not the task.
+- Pay, contract form, content exposure and career visibility vary enormously - evaluate the employer, not the task.
 - Learning quality measurement and writing guidelines is the fastest route from labelling into a technical role.
 - European AI rules are raising the status of documented data quality work, which candidates should use in how they frame their experience.
 
@@ -170,7 +170,7 @@ Yes, provided the employer connects annotation to the technical team; otherwise 
 Pay against the skill required, contract form, whether distressing content is involved, and whether anyone has moved from the team into a technical role.
 
 ### (Scenario: domain professional) Can I do this alongside my current job?
-Frequently — domain expert labelling in medicine, law, agriculture or engineering is often part-time and pays considerably better than generic work.
+Frequently - domain expert labelling in medicine, law, agriculture or engineering is often part-time and pays considerably better than generic work.
 
 ### (Scenario: annotator wanting to progress) What should I learn first?
 Inter-annotator agreement and quality sampling, plus enough scripting to analyse label distributions yourself.
@@ -185,7 +185,7 @@ Automation handles bulk labelling increasingly well, which shifts human work tow
   "mainEntity": [
     {"@type": "Question", "name": "Is data annotation a legitimate way into AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if the employer connects annotation to the technical team; otherwise it can become a role with no exit."}},
     {"@type": "Question", "name": "What should I check before accepting an annotation job?", "acceptedAnswer": {"@type": "Answer", "text": "Pay versus skill required, contract form, exposure to distressing content, and whether anyone has progressed internally."}},
-    {"@type": "Question", "name": "Can domain experts do labelling part-time?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — expert labelling in medicine, law, agriculture or engineering is frequently part-time and better paid."}},
+    {"@type": "Question", "name": "Can domain experts do labelling part-time?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - expert labelling in medicine, law, agriculture or engineering is frequently part-time and better paid."}},
     {"@type": "Question", "name": "What should an annotator learn to progress?", "acceptedAnswer": {"@type": "Answer", "text": "Inter-annotator agreement, quality sampling and enough scripting to analyse label distributions."}},
     {"@type": "Question", "name": "Will automation replace annotation jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Bulk labelling is increasingly automated, shifting human work to edge cases, evaluation, guidelines and quality assurance."}}
   ]

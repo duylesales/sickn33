@@ -33,7 +33,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Deventer is a city of around 100,000 people on the river IJssel, and its data and machine learning market has a character that distinguishes it sharply from the technology-sector markets candidates usually evaluate. The work here is overwhelmingly embedded in physical projects — infrastructure, water systems, buildings, logistics flows — rather than in software products. That single structural fact changes what employers want, how they hire, and what a career here builds toward.
+Deventer is a city of around 100,000 people on the river IJssel, and its data and machine learning market has a character that distinguishes it sharply from the technology-sector markets candidates usually evaluate. The work here is overwhelmingly embedded in physical projects - infrastructure, water systems, buildings, logistics flows - rather than in software products. That single structural fact changes what employers want, how they hire, and what a career here builds toward.
 
 ## Data Work Inside Engineering Projects, Not Software Companies
 
@@ -59,7 +59,7 @@ It would be easy to assume that consultancy data work is descriptive analytics d
 
 **Remote sensing for subsidence and land movement.** The Netherlands has a well-documented subsidence problem with consequences for foundations, infrastructure and water management. Satellite interferometry combined with ground measurements produces data that supports both analysis and legal claims.
 
-**Optimisation under physical and regulatory constraints.** Routing, capacity planning, dredging schedules, energy use in pumping — problems where the constraint set comes from physics and law rather than from business preference, and where a solution that violates a constraint is not merely suboptimal but unusable.
+**Optimisation under physical and regulatory constraints.** Routing, capacity planning, dredging schedules, energy use in pumping - problems where the constraint set comes from physics and law rather than from business preference, and where a solution that violates a constraint is not merely suboptimal but unusable.
 
 **Digital twins of physical assets.** The term is overused commercially, but in an engineering consultancy it usually means something concrete: a maintained computational representation of a real asset, calibrated against sensor data, used for scenario analysis and maintenance planning.
 
@@ -75,7 +75,7 @@ Candidates who have found commercial machine learning intellectually undemanding
 
 **Manufacturing and industrial suppliers.** The wider Overijssel and Gelderland region has a substantial base of machine builders and industrial suppliers, generating machine vision, predictive maintenance and production data work. These companies are typically small, rarely advertise widely, and are best discovered through regional networks.
 
-**Healthcare.** Deventer Ziekenhuis serves the region, and hospital data work — capacity planning, imaging support, administrative automation — exists here as in other regional centres, though usually in small teams.
+**Healthcare.** Deventer Ziekenhuis serves the region, and hospital data work - capacity planning, imaging support, administrative automation - exists here as in other regional centres, though usually in small teams.
 
 **Oost NL.** The regional development agency for Overijssel and Gelderland publishes information on growing technology companies across the east, which is one of the more efficient ways to find employers that do not surface in national searches.
 
@@ -96,11 +96,11 @@ This is the central decision for anyone considering Deventer seriously, so it de
 
 | | Engineering consultancy | Product company |
 |---|---|---|
-| Domain breadth | Very high — many sectors over a few years | Narrow and deep in one product domain |
+| Domain breadth | Very high - many sectors over a few years | Narrow and deep in one product domain |
 | Technical depth per project | Constrained by budget and deadline | Can compound over years |
 | Ownership of outcome | Ends at delivery | Continues through operation |
 | Client exposure | Constant, including senior stakeholders | Usually mediated by product management |
-| Writing and communication weight | Very high — the report is the deliverable | Moderate |
+| Writing and communication weight | Very high - the report is the deliverable | Moderate |
 | Portfolio legibility | Varied but sometimes hard to describe concretely | Clearer narrative of scale and impact |
 | International project exposure | Often high | Depends entirely on the company |
 | Suits engineers who | Like variety, client contact, physical problems | Like depth, systems ownership, iteration |
@@ -113,7 +113,7 @@ Consider a consultancy's water and infrastructure unit that has won a multi-year
 
 The hiring profile is unusual and worth understanding. They need enough machine learning competence to build a defensible surrogate, enough numerical and physical literacy to understand what the simulator is doing and where approximation will fail, and enough communication ability to explain uncertainty to a client who will make an investment decision based on the output. That combination is scarce, and it is not what a typical machine learning job posting screens for.
 
-Consequently the posting will emphasise "affinity with physical systems" or "experience in a technical engineering environment" — phrases that a candidate optimising for machine learning keywords will read as vague or low-tech. They are neither. They are the employer trying to describe the hardest part of the requirement in the vocabulary available to them.
+Consequently the posting will emphasise "affinity with physical systems" or "experience in a technical engineering environment" - phrases that a candidate optimising for machine learning keywords will read as vague or low-tech. They are neither. They are the employer trying to describe the hardest part of the requirement in the vocabulary available to them.
 
 Candidates from a physics, civil engineering, applied mathematics or geoscience background who later moved into machine learning are unusually well positioned here, and frequently do not realise it. If that describes you, this market values your original discipline in a way that a general technology employer typically does not.
 
@@ -131,7 +131,7 @@ Candidates evaluating whether a Deventer consultancy role is a career dead end b
 
 For a candidate coming from a software or general data science background, three adjustments matter more than any technical upskilling.
 
-**Learn to write for decision-makers.** Not documentation, not a notebook with markdown cells — a structured written argument that a client's director can read and act on. This is a learnable skill that most data scientists have never been required to develop, and it is the single largest differentiator in consultancy hiring. If you have any written work that demonstrates it, foreground it.
+**Learn to write for decision-makers.** Not documentation, not a notebook with markdown cells - a structured written argument that a client's director can read and act on. This is a learnable skill that most data scientists have never been required to develop, and it is the single largest differentiator in consultancy hiring. If you have any written work that demonstrates it, foreground it.
 
 **Get comfortable saying what you do not know.** Consultancy work involves advising clients under uncertainty, and overstating confidence is a professional liability rather than a presentational choice. Engineers used to product environments, where optimism is often rewarded, sometimes read appropriate hedging as weakness. In this setting it reads as competence.
 
@@ -158,7 +158,7 @@ The combination of Apeldoorn at twenty minutes and Zwolle at twenty-five is the 
 
 Deventer should not be described as an AI hub, and it is worth saying so plainly rather than inflating it.
 
-The number of roles here that a candidate would recognise as a machine learning position is small. If your criterion is "many employers competing for machine learning engineers", this is the wrong city and Amsterdam, Utrecht or Eindhoven are the right ones. What Deventer offers instead is a specific kind of work — data and modelling embedded in physical engineering projects with international reach — available through a small number of substantial employers, in a city with markedly lower housing costs than the Randstad, positioned within reach of several adjacent markets.
+The number of roles here that a candidate would recognise as a machine learning position is small. If your criterion is "many employers competing for machine learning engineers", this is the wrong city and Amsterdam, Utrecht or Eindhoven are the right ones. What Deventer offers instead is a specific kind of work - data and modelling embedded in physical engineering projects with international reach - available through a small number of substantial employers, in a city with markedly lower housing costs than the Randstad, positioned within reach of several adjacent markets.
 
 That is a real proposition for the right person and a poor one for the wrong person, and the distinction is mostly about whether physical-systems problems interest you more than software-product problems. Candidates should decide that question honestly before investing effort in this market, because the answer determines everything else.
 
@@ -192,7 +192,7 @@ More than in general technology employment. A physics, civil engineering, applie
 Not on its own employer count. It works because Apeldoorn is twenty minutes away and Zwolle twenty-five, which gives access to register data, logistics and the eastern technical corridor without relocating.
 
 ### (Scenario: candidate filtering job boards) Why do relevant postings not mention machine learning?
-Employers describe the hardest part of the requirement — affinity with physical systems and engineering judgement — in engineering vocabulary. Those vague-sounding phrases usually mark the substantive roles.
+Employers describe the hardest part of the requirement - affinity with physical systems and engineering judgement - in engineering vocabulary. Those vague-sounding phrases usually mark the substantive roles.
 
 <script type="application/ld+json">
 {
@@ -203,7 +203,7 @@ Employers describe the hardest part of the requirement — affinity with physica
     {"@type": "Question", "name": "Is infrastructure data work technically demanding?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes. Surrogate modelling of hydraulic simulators, anomaly detection with almost no failure examples, and optimisation under physical constraints are genuinely difficult."}},
     {"@type": "Question", "name": "Does my original engineering discipline matter here?", "acceptedAnswer": {"@type": "Answer", "text": "More than in general technology employment. Physics, civil engineering or applied mathematics combined with machine learning is the scarce profile this market wants."}},
     {"@type": "Question", "name": "Is Deventer big enough to build a career in?", "acceptedAnswer": {"@type": "Answer", "text": "Not on its own employer count, but Apeldoorn is twenty minutes away and Zwolle twenty-five, which widens the effective market considerably."}},
-    {"@type": "Question", "name": "Why do relevant postings not mention machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Employers describe the hardest requirement — affinity with physical systems and engineering judgement — in engineering vocabulary rather than AI terminology."}}
+    {"@type": "Question", "name": "Why do relevant postings not mention machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Employers describe the hardest requirement - affinity with physical systems and engineering judgement - in engineering vocabulary rather than AI terminology."}}
   ]
 }
 </script>

@@ -9,7 +9,7 @@ This is the White-Label Customization Trap. White-label is great for MVPs. But t
 
 To scale, you must transition to Custom Engineering so you own 100% of the Intellectual Property and the architectural routing.
 
-At Manifera, our Dutch Architects specialize in "Re-Platforming"—migrating enterprises out of fragile white-label traps and into highly scalable, bespoke custom architectures.
+At Manifera, our Dutch Architects specialize in "Re-Platforming" - migrating enterprises out of fragile white-label traps and into highly scalable, bespoke custom architectures.
 
 👇 Read our Founder's guide to the Build vs. Buy debate:
 [Read the full breakdown: manifera.com/blog/app-solutions-white-label-customization-trap]

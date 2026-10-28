@@ -1,9 +1,9 @@
-⚠️ Madison, a retail store owner, built an AI refund bot with **Lovable** — but it kept approving refunds for invalid claims, quietly leaking cash out of her business. 💸
+⚠️ Madison, a retail store owner, built an AI refund bot with **Lovable** - but it kept approving refunds for invalid claims, quietly leaking cash out of her business. 💸
 
 The fix isn't less AI, it's a hard architectural rule: read operations can run autonomously, write operations need a human. 🧠
 
 ❌ Autonomous agents executing financial write actions with zero human checkpoint
-❌ A system prompt asking the AI to "please ask before sending" — a suggestion, not a guarantee
+❌ A system prompt asking the AI to "please ask before sending" - a suggestion, not a guarantee
 ❌ Approval screens that invite "Automation Bias," where humans rubber-stamp without reading
 
 ✅ A dashboard queue where refunds over a threshold require a manager's explicit approval click

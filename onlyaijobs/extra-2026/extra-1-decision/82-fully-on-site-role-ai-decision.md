@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-After several years in which remote work was assumed, a growing number of Dutch vacancies specify daily presence. Sometimes the reason is unavoidable: the data is on a machine you cannot reach from home, the process you are modelling is physical, or the environment is restricted for security or clinical reasons. Sometimes the reason is preference dressed as necessity. The distinction matters, because full presence is the single largest ongoing cost an employer can attach to a job — not in money, but in hours of your life, repeated every week for years.
+After several years in which remote work was assumed, a growing number of Dutch vacancies specify daily presence. Sometimes the reason is unavoidable: the data is on a machine you cannot reach from home, the process you are modelling is physical, or the environment is restricted for security or clinical reasons. Sometimes the reason is preference dressed as necessity. The distinction matters, because full presence is the single largest ongoing cost an employer can attach to a job - not in money, but in hours of your life, repeated every week for years.
 
 ## Where On-Site Is Genuinely Required
 
@@ -65,7 +65,7 @@ The Dutch legal position is relevant here: under the **Flexible Working Act**, e
 
 It is worth being fair about this, because the advantages are real and under-argued.
 
-**You see the thing the data describes.** Standing at the line, watching an operator override the system, noticing that the sensor is mounted badly — none of this reaches you through a dashboard. In industrial and clinical settings, the difference in model quality is substantial.
+**You see the thing the data describes.** Standing at the line, watching an operator override the system, noticing that the sensor is mounted badly - none of this reaches you through a dashboard. In industrial and clinical settings, the difference in model quality is substantial.
 
 **Informal knowledge arrives continuously.** Why a shift records things differently, which supplier's deliveries are always wrong, what happened in the incident everyone still talks about.
 
@@ -79,7 +79,7 @@ It is worth being fair about this, because the advantages are real and under-arg
 
 **Time, compounding.** An hour each way is roughly ten hours a week, around four hundred a year. Over three years that is the equivalent of several months of waking life.
 
-**Flexibility that families rely on.** School runs, a sick child, a delivery, a medical appointment — all become logistics rather than adjustments.
+**Flexibility that families rely on.** School runs, a sick child, a delivery, a medical appointment - all become logistics rather than adjustments.
 
 **Weather and rail.** In a country where many people commute by train and bicycle, a difficult winter or a disrupted line is a recurring tax on your week.
 
@@ -91,7 +91,7 @@ It is worth being fair about this, because the advantages are real and under-arg
 
 Measure the real journey at the real times: door to desk, in the morning peak, not the map estimate. Add the return. Multiply by five, then by forty-six weeks.
 
-Then ask what compensates. A higher salary that works out at a modest hourly rate for your travel time is not compensation; a role that genuinely advances your career might be. A journey you can use — a train where you read or work — is meaningfully different from one spent driving.
+Then ask what compensates. A higher salary that works out at a modest hourly rate for your travel time is not compensation; a role that genuinely advances your career might be. A journey you can use - a train where you read or work - is meaningfully different from one spent driving.
 
 Check the travel arrangements too: what is reimbursed, whether a public transport pass is provided, whether travel time counts in any way. These vary widely between Dutch employers and are negotiable more often than candidates realise.
 
@@ -99,7 +99,7 @@ Check the travel arrangements too: what is reimbursed, whether a public transpor
 
 - **Why is presence required?** Listen for a technical reason or a cultural one.
 - **Which parts of the work genuinely need the site, and which do not?**
-- **Is any flexibility possible — a day a fortnight, occasional home working for focus, flexibility in exceptional weeks?**
+- **Is any flexibility possible - a day a fortnight, occasional home working for focus, flexibility in exceptional weeks?**
 - **What are the core hours, and how rigid are they?** Shifting your day by an hour can transform a commute.
 - **What is reimbursed, and is a public transport pass provided?**
 - **Do others have arrangements?** If exceptions exist, the policy is negotiable.
@@ -121,7 +121,7 @@ Check the travel arrangements too: what is reimbursed, whether a public transpor
 - Core hours are rigid and the journey is at peak times.
 - Your household depends on flexibility that the role removes.
 - No exceptions exist for anyone, which suggests none will exist for you either.
-- Comparable work exists closer to home — which is worth checking before deciding rather than after.
+- Comparable work exists closer to home - which is worth checking before deciding rather than after.
 
 ## How to Make It Work If You Accept
 
@@ -129,7 +129,7 @@ Negotiate the edges rather than the principle. Employers who cannot offer home w
 
 Ask about a compressed arrangement: four longer days rather than five, where the work allows it. This is common in the Netherlands and halves a week's commuting cost in one step.
 
-Make the journey productive or restorative deliberately — reading, a podcast, a walk at one end. A commute you have decided how to use is a different experience from one you endure.
+Make the journey productive or restorative deliberately - reading, a podcast, a walk at one end. A commute you have decided how to use is a different experience from one you endure.
 
 And revisit it. Arrangements that are impossible at hiring sometimes become possible after a year of trust, and the conversation is much easier once you have delivered something.
 
@@ -139,9 +139,9 @@ If you will be there every day, the physical reality of the place deserves the s
 
 **Where would you actually sit?** A desk in an open-plan office beside a call centre is a different working life from a quiet corner near the engineers. Ask to see the desk, not the reception area.
 
-**Can you reach the thing you are modelling?** In industrial and clinical settings, the whole argument for presence is access. Ask whether you would be allowed onto the floor, into the lab, alongside the process — some sites keep office staff firmly separated, in which case you have the commute without the benefit.
+**Can you reach the thing you are modelling?** In industrial and clinical settings, the whole argument for presence is access. Ask whether you would be allowed onto the floor, into the lab, alongside the process - some sites keep office staff firmly separated, in which case you have the commute without the benefit.
 
-**Where are your actual colleagues?** A surprising number of on-site roles put you in a building where your team is not: the data people sit at head office, the engineers at another location, and you would be video-calling from a different site every day. That is the worst combination available — full presence, remote collaboration.
+**Where are your actual colleagues?** A surprising number of on-site roles put you in a building where your team is not: the data people sit at head office, the engineers at another location, and you would be video-calling from a different site every day. That is the worst combination available - full presence, remote collaboration.
 
 **How does the journey end?** Parking, secure bicycle storage, the distance from the station, the last kilometre in November rain. These small frictions are what make or break a five-day commute over years.
 
@@ -165,15 +165,15 @@ Her view: being on site is only expensive when the site is far away, and the rea
 
 ## Key Takeaways
 
-- Separate genuine requirements — physical processes, restricted data, instrumented labs — from cultural preference expressed as necessity.
+- Separate genuine requirements - physical processes, restricted data, instrumented labs - from cultural preference expressed as necessity.
 - Daily presence genuinely improves work in industrial, clinical and early-stage settings, where informal knowledge and seeing the process matter.
 - The cost is time compounding over years, lost household flexibility, weather and rail disruption, and a much smaller set of employers within reach.
 - Do the arithmetic on the real journey at real times, and check what is reimbursed and whether travel time is recognised.
-- Negotiate the edges — flexible start times, compressed days, occasional exceptions — which employers can often grant even when home working is impossible.
+- Negotiate the edges - flexible start times, compressed days, occasional exceptions - which employers can often grant even when home working is impossible.
 
 ## Where to Start
 
-If a role requires daily presence, the decision is mostly about distance — so search by how far it is from your home rather than by city name.
+If a role requires daily presence, the decision is mostly about distance - so search by how far it is from your home rather than by city name.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -201,7 +201,7 @@ Seeing the process the data describes. In industrial and clinical settings, info
   "mainEntity": [
     {"@type": "Question", "name": "Is a fully on-site AI role a bad sign?", "acceptedAnswer": {"@type": "Answer", "text": "Not when presence is genuinely required; it is a warning when the work is location-independent."}},
     {"@type": "Question", "name": "How should I assess the travel?", "acceptedAnswer": {"@type": "Answer", "text": "Measure the real peak-time journey across a year; a short daily commute can beat a long hybrid one."}},
-    {"@type": "Question", "name": "Can I ask for home working later?", "acceptedAnswer": {"@type": "Answer", "text": "You can request it under the Flexible Working Act, but employers retain discretion — agree it up front."}},
+    {"@type": "Question", "name": "Can I ask for home working later?", "acceptedAnswer": {"@type": "Answer", "text": "You can request it under the Flexible Working Act, but employers retain discretion - agree it up front."}},
     {"@type": "Question", "name": "What can I ask for if home working is impossible?", "acceptedAnswer": {"@type": "Answer", "text": "Flexible hours, a compressed week, travel reimbursement and occasional exceptions."}},
     {"@type": "Question", "name": "What is the strongest argument for being on site?", "acceptedAnswer": {"@type": "Answer", "text": "Seeing the process the data describes, which regularly explains anomalies analysis cannot."}}
   ]

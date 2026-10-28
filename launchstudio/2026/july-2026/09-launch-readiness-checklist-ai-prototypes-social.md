@@ -1,4 +1,4 @@
-🔥 Lucas built a prototype using **Cursor** — lucas, a former support manager, used **cursor** to build a chatbot logs analytics dashboard for client support teams, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Lucas built a prototype using **Cursor** - lucas, a former support manager, used **cursor** to build a chatbot logs analytics dashboard for client support teams, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lucas's application achieved production readiness: Lucas's tool became fully production-ready, allowing him to pass client security audits and sign up his first three corporate customers within 10 days of launch. (€3,200 (Grow Package) — production-ready and deployed in 10 business days.). 🚀
+Lucas's application achieved production readiness: Lucas's tool became fully production-ready, allowing him to pass client security audits and sign up his first three corporate customers within 10 days of launch. (€3,200 (Grow Package) - production-ready and deployed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launch-readiness-checklist-ai-prototypes
 

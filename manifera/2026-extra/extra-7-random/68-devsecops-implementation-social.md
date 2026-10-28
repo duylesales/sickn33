@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Checks Staged by Cost:** IDE linting, PR-stage SAST/SCA, deploy-stage DAST and IaC scanning.
-✅ **Calibrated Blocking:** Only high/critical severity blocks the build — trust in the gate stays intact.
+✅ **Calibrated Blocking:** Only high/critical severity blocks the build - trust in the gate stays intact.
 ✅ **Remediation SLAs:** Every finding gets an owner and a deadline based on severity.
 
 A gate engineers trust catches more risk than a gate engineers route around. 🔐

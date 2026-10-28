@@ -1,8 +1,8 @@
-🚨 40 mensen zagen een leeg wit scherm tijdens een LinkedIn-campagne. Geen foutmelding, geen retry-knop — gewoon wit. Ze gingen er allemaal vanuit dat het product kapot was en vertrokken. 😳
+🚨 40 mensen zagen een leeg wit scherm tijdens een LinkedIn-campagne. Geen foutmelding, geen retry-knop - gewoon wit. Ze gingen er allemaal vanuit dat het product kapot was en vertrokken. 😳
 
 Foutstatussen lijken een detail totdat u beseft: het zijn de meest voorkomende statussen die uw gebruikers ooit zien. Dit is wat er misgaat: 🧠
 
-❌ AI-tools bouwen alleen het happy path — nooit wat er gebeurt als iets faalt
+❌ AI-tools bouwen alleen het happy path - nooit wat er gebeurt als iets faalt
 ❌ Een lege pagina en een kapotte pagina zien er voor een gebruiker identiek uit
 ❌ "Something went wrong" vertelt niemand wat te doen
 ❌ Elke storing leest als hetzelfde signaal: niemand houdt hier toezicht op
@@ -14,7 +14,7 @@ Foutstatussen lijken een detail totdat u beseft: het zijn de meest voorkomende s
 
 Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, weten we dat het verschil tussen een demo en een product zit in hoe het zich gedraagt als er iets misgaat. 🛡️
 
-Liekes resultaat: uitval bij de assessment-stap daalde van 14% naar 2% — alleen door foutafhandeling, voor €800. 🚀
+Liekes resultaat: uitval bij de assessment-stap daalde van 14% naar 2% - alleen door foutafhandeling, voor €800. 🚀
 
 👉 Laat uw prototype checken op onzichtbare gaten in foutafhandeling: https://launchstudio.eu/nl/blog/prototype-error-page-says-about-product
 

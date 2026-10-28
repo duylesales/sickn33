@@ -1,4 +1,4 @@
-🚨 "A Model That Detects Safety Violations Accurately in Testing Will Perform Sim..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "A Model That Detects Safety Violations Accurately in Testing Will Perform Sim..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "A Model That Detects Safety Violations Accurately in Testing Will Perform Similarly Reliably on a Real, Active Site":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

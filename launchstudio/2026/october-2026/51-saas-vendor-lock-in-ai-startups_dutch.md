@@ -21,7 +21,7 @@ Hier leest u hoe afhankelijkheid van één enkele AI-leverancier uw startup bedr
 
 ### 1. De Prijzengijzeling (The Pricing Hostage)
 
-Wanneer uw applicatie uitsluitend kan communiceren met één specifiek AI-model, weet die leverancier dat u klem zit. Als zij morgen hun API-prijzen verdubbelen, moet u simpelweg betalen of uw bedrijf sluiten. U heeft nul onderhandelingsmacht en beschikt niet over de mogelijkheid om uw dataverkeer — zelfs tijdelijk — om te leiden naar een voordeligere concurrent terwijl u een langetermijnoplossing zoekt.
+Wanneer uw applicatie uitsluitend kan communiceren met één specifiek AI-model, weet die leverancier dat u klem zit. Als zij morgen hun API-prijzen verdubbelen, moet u simpelweg betalen of uw bedrijf sluiten. U heeft nul onderhandelingsmacht en beschikt niet over de mogelijkheid om uw dataverkeer - zelfs tijdelijk - om te leiden naar een voordeligere concurrent terwijl u een langetermijnoplossing zoekt.
 
 ### 2. De Innovatie-Flessenhals (The Innovation Bottleneck)
 
@@ -29,7 +29,7 @@ De wereld van Kunstmatige Intelligentie innoveert te snel om op één enkel paar
 
 ### 3. Onaangekondigde Uitfaseringen (Deprecations)
 
-Wanneer u zwaar leunt op gesloten, bedrijfseigen frameworks — zoals de Assistants API van een specifieke partij of proprietary no-code plugins — kan de leverancier de werking van die tool met minimale waarschuwing wijzigen of stopzetten. Eén enkele update van hun platform kan maanden van uw werk in één klap vernietigen, waardoor u halsoverkop onder hoge druk moet herprogrammeren.
+Wanneer u zwaar leunt op gesloten, bedrijfseigen frameworks - zoals de Assistants API van een specifieke partij of proprietary no-code plugins - kan de leverancier de werking van die tool met minimale waarschuwing wijzigen of stopzetten. Eén enkele update van hun platform kan maanden van uw werk in één klap vernietigen, waardoor u halsoverkop onder hoge druk moet herprogrammeren.
 
 ### 4. De Database-Afhankelijkheid die Niemand Noemt
 
@@ -39,26 +39,26 @@ Vendor lock-in beperkt zich niet tot het taalmodel dat u aanroept. Als u uw voll
 
 Om een verdedigbare, schaalbare SaaS op te bouwen, moet u **cloud-agnostisch en model-agnostisch** worden.
 
-Dit betekent dat u een backend-architectuur bouwt die fungeert als een universele vertaler. In plaats van dat uw frontend zegt *"Stuur dit direct naar OpenAI"*, zegt uw frontend *"Stuur dit naar onze centrale LLM Router"*. Deze intelligente Router beslist vervolgens in realtime — op basis van actuele kosten, responstijd, taaktype of server-beschikbaarheid — of het verzoek naar OpenAI, Anthropic, of een opensource model zoals Llama of Mistral wordt gestuurd.
+Dit betekent dat u een backend-architectuur bouwt die fungeert als een universele vertaler. In plaats van dat uw frontend zegt *"Stuur dit direct naar OpenAI"*, zegt uw frontend *"Stuur dit naar onze centrale LLM Router"*. Deze intelligente Router beslist vervolgens in realtime - op basis van actuele kosten, responstijd, taaktype of server-beschikbaarheid - of het verzoek naar OpenAI, Anthropic, of een opensource model zoals Llama of Mistral wordt gestuurd.
 
 Dit is exact de architecturale transformatie die [LaunchStudio](https://launchstudio.eu/nl/) uitvoert voor groeiende AI-startups.
 
-Gesteund door de uitgebreide enterprise software-ervaring van [Manifera](https://www.manifera.com/) — met engineeringteams in Amsterdam en Ho Chi Minhstad — herbouwen wij breekbare, vergrendelde MVP's tot robuuste, leveranciersonafhankelijke platforms.
+Gesteund door de uitgebreide enterprise software-ervaring van [Manifera](https://www.manifera.com/) - met engineeringteams in Amsterdam en Ho Chi Minhstad - herbouwen wij breekbare, vergrendelde MVP's tot robuuste, leveranciersonafhankelijke platforms.
 
 Wij gebruiken open-source frameworks (zoals LangChain) draaiend op beveiligde Node.js- of Python-backends, en bouwen uw datalaag op standaard PostgreSQL. Mocht OpenAI kampen met een wereldwijde storing, dan schakelt onze architectuur via automatische "failover" binnen milliseconden over naar een Anthropic-server. Uw eindgebruikers merken letterlijk niets van de storing. Door uw eigen backend-logica te bezitten, herwint u de totale controle over uw marges, uw uptime en de toekomst van uw bedrijf. Dit is dezelfde engineeringdiscipline die we hanteren bij onze [maatwerk software-ontwikkeling](https://www.manifera.com/services/custom-software-development/) voor grote zakelijke klanten.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Een Snelle Zelf-Check: Hoe Vast Zit Uw Bedrijf?
 
 Vóórdat u kunt ontsnappen aan leveranciersafhankelijkheid, moet u weten hoe diep het probleem zit. Beantwoord deze vier vragen eerlijk:
 
 1. **Kunt u elke plek in uw codebase aanwijzen waar een LLM rechtstreeks wordt aangeroepen?** Is het antwoord "nee, het zit verspreid over tientallen frontend-bestanden", dan heeft u geen router maar een willekeurige wirwar van kabels.
-2. **Bezit u een direct exporteerbaar back-upbestand van uw complete databaseschema?** Leeft uw data uitsluitend in een gesloten no-code database, dan bezit u uw data niet — u huurt slechts toegang.
+2. **Bezit u een direct exporteerbaar back-upbestand van uw complete databaseschema?** Leeft uw data uitsluitend in een gesloten no-code database, dan bezit u uw data niet - u huurt slechts toegang.
 3. **Heeft u ooit getest wat er gebeurt als uw primaire AI-provider uitvalt?** Als u nooit bewust een provider-storing heeft gesimuleerd op een testomgeving, weet u niet hoe uw app reageert onder echte crashes.
 4. **Is uw prijsmodel vastgeklonken aan de tokenprijs van één aanbieder?** Als uw winstmarge afhangt van één specifiek tarief dat morgen kan veranderen, zijn uw bedrijfscijfers zo wankel als hun volgende nieuwsbrief.
 
-Beantwoordt u meer dan één vraag met "nee", dan is vendor lock-in geen toekomstig risico voor uw startup — het is een acute actuele dreiging.
+Beantwoordt u meer dan één vraag met "nee", dan is vendor lock-in geen toekomstig risico voor uw startup - het is een acute actuele dreiging.
 
 ## Belangrijkste Inzichten
 
@@ -84,7 +84,7 @@ Wij orkestreerden een complete bevrijding uit zijn vendor lock-in. Ons team extr
 
 **Resultaat:** Mark heeft sindsdien nooit meer last gehad van een AI-storing. Omdat zijn nieuwe architectuur model-agnostisch was, kon hij eenvoudige verzoeken tevens routeren naar goedkopere opensource modellen, waardoor zijn maandelijkse API-kosten met **40% daalden**. *"Ik wist niet dat ik gegijzeld werd totdat de servers crashten. LaunchStudio bouwde de universele router die mij mijn bedrijf teruggaf."*
 
-**Kosten & Tijdlijn:** €11.500 (Agnostische Backend Herbouw & Dynamische LLM-Routering) — binnen 20 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €11.500 (Agnostische Backend Herbouw & Dynamische LLM-Routering) - binnen 20 werkdagen live opgeleverd.
 
 ---
 

@@ -40,7 +40,7 @@ Content Format: Career Guide
 }
 </script>
 
-Tartu is Estonia's second city and its intellectual capital. Home to the University of Tartu, founded in 1632 and one of the oldest universities in Northern Europe, the city has a young population, a strong research tradition and a technology scene that punches above its size. Estonia's reputation as a digital state — with nearly all public services online — and its record of producing technology companies make it an appealing place to start a career in AI. For students and recent graduates, AI jobs in Tartu offer research positions with international reach, roles at software companies and startups, and a gentle entry into the Estonian tech ecosystem, with Tallinn just over two hours away. This guide explains where to look and how to get started.
+Tartu is Estonia's second city and its intellectual capital. Home to the University of Tartu, founded in 1632 and one of the oldest universities in Northern Europe, the city has a young population, a strong research tradition and a technology scene that punches above its size. Estonia's reputation as a digital state - with nearly all public services online - and its record of producing technology companies make it an appealing place to start a career in AI. For students and recent graduates, AI jobs in Tartu offer research positions with international reach, roles at software companies and startups, and a gentle entry into the Estonian tech ecosystem, with Tallinn just over two hours away. This guide explains where to look and how to get started.
 
 ## The University of Tartu
 
@@ -68,7 +68,7 @@ Because the local market is small, many roles in Tartu are in software engineeri
 
 ## Estonia's Digital Ecosystem
 
-Estonia's digital public services — digital identity, e-signatures, online tax filing, e-health records and the X-Road data exchange layer — are well known internationally. For AI professionals, this creates a context in which public institutions are comfortable with digital technology and data, and interest in responsible use of AI in public services is high. Estonia has also developed national AI initiatives for the public sector. Graduates interested in govtech, digital identity or public sector AI can find relevant projects and employers, many based in Tallinn but with connections to Tartu's research community.
+Estonia's digital public services - digital identity, e-signatures, online tax filing, e-health records and the X-Road data exchange layer - are well known internationally. For AI professionals, this creates a context in which public institutions are comfortable with digital technology and data, and interest in responsible use of AI in public services is high. Estonia has also developed national AI initiatives for the public sector. Graduates interested in govtech, digital identity or public sector AI can find relevant projects and employers, many based in Tallinn but with connections to Tartu's research community.
 
 ## Pay and Cost of Living
 
@@ -86,7 +86,7 @@ EU citizens can work freely in Estonia and register their residence. Non-EU grad
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It shows each vacancy at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Tartu you will find few or no local vacancies there today. Use Estonian job portals, the University of Tartu's career services and research vacancy lists, company career pages and startup community channels as primary sources. OnlyAIJobs becomes useful if you consider moving to the Netherlands later — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by AI category and real commute. Tartu employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Tartu you will find few or no local vacancies there today. Use Estonian job portals, the University of Tartu's career services and research vacancy lists, company career pages and startup community channels as primary sources. OnlyAIJobs becomes useful if you consider moving to the Netherlands later - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by AI category and real commute. Tartu employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Profile as a Tartu Graduate
 
@@ -114,7 +114,7 @@ Estonia's biobank and digital health records create unusual opportunities for he
 
 ## Tartu or Tallinn?
 
-Many Estonian graduates weigh Tartu against Tallinn. Tallinn is the capital and has the largest concentration of tech companies, startups and investors, as well as higher salaries. Tartu offers the university's research strength, a relaxed student-city atmosphere and lower living costs. The two cities are connected by trains and buses in around two to two and a half hours, and some companies have offices in both. A common path is to start in Tartu — often in research or at a company with a Tartu office — and later move to Tallinn or abroad, but many engineers choose to stay in Tartu long term, especially if they work in research or for companies that allow hybrid work.
+Many Estonian graduates weigh Tartu against Tallinn. Tallinn is the capital and has the largest concentration of tech companies, startups and investors, as well as higher salaries. Tartu offers the university's research strength, a relaxed student-city atmosphere and lower living costs. The two cities are connected by trains and buses in around two to two and a half hours, and some companies have offices in both. A common path is to start in Tartu - often in research or at a company with a Tartu office - and later move to Tallinn or abroad, but many engineers choose to stay in Tartu long term, especially if they work in research or for companies that allow hybrid work.
 
 ## Living in Tartu
 
@@ -134,7 +134,7 @@ Interviews for junior roles in Tartu typically include a conversation about your
 
 ## Responsible AI in a Digital State
 
-Because Estonia's public services are so digital, questions about responsible AI — transparency, fairness, data protection and human oversight — arise quickly whenever AI is introduced. The EU AI Act classifies several public sector uses, such as access to essential public services, as high-risk. Graduates who understand these requirements and can document and evaluate systems carefully are valuable to public institutions and to the companies that build systems for them, making responsible AI a practical career advantage in Estonia.
+Because Estonia's public services are so digital, questions about responsible AI - transparency, fairness, data protection and human oversight - arise quickly whenever AI is introduced. The EU AI Act classifies several public sector uses, such as access to essential public services, as high-risk. Graduates who understand these requirements and can document and evaluate systems carefully are valuable to public institutions and to the companies that build systems for them, making responsible AI a practical career advantage in Estonia.
 
 ## Staying Connected
 
@@ -146,7 +146,7 @@ Keep in touch with your supervisors and classmates after graduation; in Estonia'
 
 A master's student from India completed a data science programme at the University of Tartu, with a thesis on NLP for Estonian public documents in collaboration with a research group. Many classmates moved to Tallinn or abroad after graduation.
 
-He received a research engineer position in the university's NLP group, working on a project to improve language technology for public services, and an offer for a junior data engineer role at a Tallinn company. He chose the research role, which allowed him to continue his thesis work and build publications, and stayed in Tartu where his rent was affordable. After two years, he moved to an ML engineer role at a company working on language technology, bringing both research experience and practical engineering skills — a path that his Tartu network made possible.
+He received a research engineer position in the university's NLP group, working on a project to improve language technology for public services, and an offer for a junior data engineer role at a Tallinn company. He chose the research role, which allowed him to continue his thesis work and build publications, and stayed in Tartu where his rent was affordable. After two years, he moved to an ML engineer role at a company working on language technology, bringing both research experience and practical engineering skills - a path that his Tartu network made possible.
 
 ## Key Takeaways
 

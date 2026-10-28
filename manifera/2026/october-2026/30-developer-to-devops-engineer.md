@@ -58,7 +58,7 @@ To transition from developer to DevOps engineer, one must stop treating servers 
 
 A DevOps engineer never clicks buttons in the AWS or Azure web console to create a server. They write code that creates the server. 
 
-Using tools like HashiCorp Terraform, the DevOps engineer defines the entire cloud architecture—virtual private clouds, load balancers, database clusters, and security groups—in a declarative text file. 
+Using tools like HashiCorp Terraform, the DevOps engineer defines the entire cloud architecture - virtual private clouds, load balancers, database clusters, and security groups - in a declarative text file. 
 
 *   **The Paradigm Shift:** If a server crashes, the DevOps engineer doesn't fix it. They simply run a command, and Terraform reads the code to automatically spin up a perfect, brand-new replacement server in 45 seconds. The infrastructure is version-controlled on GitHub, just like the application code.
 
@@ -80,13 +80,13 @@ They package the application code, the database, and the operating system into a
 
 Software engineers rarely become DevOps engineers overnight, and vendors who claim otherwise are usually just relabeling a mid-level developer. The transition typically unfolds in three overlapping phases.
 
-**Months 1–6: Operational literacy.** The developer starts by learning Linux systems administration fundamentals — file permissions, networking, process management — and Bash scripting well enough to automate repetitive manual tasks they already understand from writing application code. They get hands-on with Docker, containerizing an application they already know intimately, which builds the mental model for how code, dependencies, and the OS layer interact. Most engineers at this stage are still writing application code 80% of the time and infrastructure code 20% of the time.
+**Months 1–6: Operational literacy.** The developer starts by learning Linux systems administration fundamentals - file permissions, networking, process management - and Bash scripting well enough to automate repetitive manual tasks they already understand from writing application code. They get hands-on with Docker, containerizing an application they already know intimately, which builds the mental model for how code, dependencies, and the OS layer interact. Most engineers at this stage are still writing application code 80% of the time and infrastructure code 20% of the time.
 
-**Months 6–12: Automation ownership.** The engineer starts owning a CI/CD pipeline for a real service — configuring build stages, automated test gates, and deployment triggers in GitHub Actions or Jenkins, usually under the mentorship of a senior DevOps Architect. They begin writing their first Terraform modules, typically for non-production environments first, where a mistake costs hours, not revenue. The split shifts to roughly 50/50 between application code and infrastructure code.
+**Months 6–12: Automation ownership.** The engineer starts owning a CI/CD pipeline for a real service - configuring build stages, automated test gates, and deployment triggers in GitHub Actions or Jenkins, usually under the mentorship of a senior DevOps Architect. They begin writing their first Terraform modules, typically for non-production environments first, where a mistake costs hours, not revenue. The split shifts to roughly 50/50 between application code and infrastructure code.
 
-**Months 12–18: Architectural ownership.** The engineer takes ownership of production infrastructure design — VPC architecture, Kubernetes cluster configuration, secrets management, and incident response runbooks. They start being the person paged at 2 a.m. when the cluster misbehaves, which is where "Hardware Empathy" stops being theoretical. By this point, the split has usually inverted: 70-80% infrastructure and platform work, 20-30% application code, with the application code experience now functioning as an asset rather than the primary job.
+**Months 12–18: Architectural ownership.** The engineer takes ownership of production infrastructure design - VPC architecture, Kubernetes cluster configuration, secrets management, and incident response runbooks. They start being the person paged at 2 a.m. when the cluster misbehaves, which is where "Hardware Empathy" stops being theoretical. By this point, the split has usually inverted: 70-80% infrastructure and platform work, 20-30% application code, with the application code experience now functioning as an asset rather than the primary job.
 
-The engineers who skip straight to Month 18 without the first twelve months of operational grounding are the ones who write Terraform that looks correct but doesn't account for how the application actually behaves under load — because they never lived through a 2 a.m. page for code they personally shipped.
+The engineers who skip straight to Month 18 without the first twelve months of operational grounding are the ones who write Terraform that looks correct but doesn't account for how the application actually behaves under load - because they never lived through a 2 a.m. page for code they personally shipped.
 
 ## Procuring DevOps Excellence
 
@@ -98,17 +98,17 @@ Amazon CTO Werner Vogels articulated the philosophy behind this hybrid role in a
 
 ## The Math: What a Once-a-Month Deploy Actually Costs
 
-DORA's 2024 State of DevOps Report — based on a survey of more than 39,000 engineering professionals — found that elite-performing teams deploy on demand, multiple times a day, while low-performing teams deploy somewhere between once a month and once every six months. Elite teams also deploy roughly 182 times more frequently than low performers and recover from incidents thousands of times faster. Two numbers make that gap concrete for a CTO building a budget case.
+DORA's 2024 State of DevOps Report - based on a survey of more than 39,000 engineering professionals - found that elite-performing teams deploy on demand, multiple times a day, while low-performing teams deploy somewhere between once a month and once every six months. Elite teams also deploy roughly 182 times more frequently than low performers and recover from incidents thousands of times faster. Two numbers make that gap concrete for a CTO building a budget case.
 
-**The lead time cost.** If your team only deploys once a month, every finished feature sits in a queue for an average of two weeks before it reaches a user and starts generating revenue or feedback. Across a 12-month roadmap, that is roughly six months of aggregate "shelf time" — completed engineering work that cannot yet be validated, sold, or iterated on, purely because the deployment pipeline is manual and risky rather than automated.
+**The lead time cost.** If your team only deploys once a month, every finished feature sits in a queue for an average of two weeks before it reaches a user and starts generating revenue or feedback. Across a 12-month roadmap, that is roughly six months of aggregate "shelf time" - completed engineering work that cannot yet be validated, sold, or iterated on, purely because the deployment pipeline is manual and risky rather than automated.
 
-**The downtime cost.** Gartner's widely cited benchmark study puts the average cost of unplanned IT downtime at $5,600 per minute across organizations (a 2014 baseline that the Ponemon Institute later updated to closer to $9,000 per minute in 2016, reflecting rising infrastructure complexity). A manual, three-hour deployment process is not just slow — every one of those 180 minutes carries real outage risk from a mistyped command or a missed dependency. A single failed manual deployment, at the low end of Gartner's range, costs more than most enterprises spend on an entire quarter of DevOps tooling.
+**The downtime cost.** Gartner's widely cited benchmark study puts the average cost of unplanned IT downtime at $5,600 per minute across organizations (a 2014 baseline that the Ponemon Institute later updated to closer to $9,000 per minute in 2016, reflecting rising infrastructure complexity). A manual, three-hour deployment process is not just slow - every one of those 180 minutes carries real outage risk from a mistyped command or a missed dependency. A single failed manual deployment, at the low end of Gartner's range, costs more than most enterprises spend on an entire quarter of DevOps tooling.
 
-An automated CI/CD pipeline does not just make engineering feel faster. It removes a specific, quantifiable category of financial risk — the multi-hour window where a human is manually operating production infrastructure by hand.
+An automated CI/CD pipeline does not just make engineering feel faster. It removes a specific, quantifiable category of financial risk - the multi-hour window where a human is manually operating production infrastructure by hand.
 
 ### A Worked FinOps Example: The Idle Staging Server
 
-FinOps is not an abstract discipline — it is a set of specific, repeatable automations. Consider a realistic, illustrative mid-sized SaaS environment with four non-production environments (development, QA, staging, and a pre-production clone), each provisioned with the same instance sizing as production because nobody wanted to risk a mismatch during testing.
+FinOps is not an abstract discipline - it is a set of specific, repeatable automations. Consider a realistic, illustrative mid-sized SaaS environment with four non-production environments (development, QA, staging, and a pre-production clone), each provisioned with the same instance sizing as production because nobody wanted to risk a mismatch during testing.
 
 | Environment | Monthly Cost (24/7) | Actual Business Hours Needed | Cost If Scheduled (12h/day, weekdays only) |
 |---|---|---|---|
@@ -118,7 +118,7 @@ FinOps is not an abstract discipline — it is a set of specific, repeatable aut
 | Pre-production clone | €1,800 | Weekday business hours | €640 |
 | **Total** | **€6,800/month** | | **€2,490/month** |
 
-A DevOps engineer writes a single scheduling automation — a Terraform-managed Lambda function or a scheduled GitHub Action — that shuts these four environments down at 6:00 p.m. and restarts them at 8:00 a.m. on weekdays, and leaves them off entirely on weekends. The result is roughly €4,310 in monthly savings, or just over €51,000 annually, from non-production infrastructure that nobody uses outside working hours. This is a small piece of the automation a DevOps engineer builds, but it is the piece that makes the discipline self-funding: the savings from this single script alone typically cover a meaningful share of that engineer's fully-loaded cost.
+A DevOps engineer writes a single scheduling automation - a Terraform-managed Lambda function or a scheduled GitHub Action - that shuts these four environments down at 6:00 p.m. and restarts them at 8:00 a.m. on weekdays, and leaves them off entirely on weekends. The result is roughly €4,310 in monthly savings, or just over €51,000 annually, from non-production infrastructure that nobody uses outside working hours. This is a small piece of the automation a DevOps engineer builds, but it is the piece that makes the discipline self-funding: the savings from this single script alone typically cover a meaningful share of that engineer's fully-loaded cost.
 
 ---
 

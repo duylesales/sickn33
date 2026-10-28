@@ -8,7 +8,7 @@ Four months of AI-assisted development on the team, zero shared rules for how to
 **The Manifera Solution:**
 ✅ **Written Adoption Policy:** Clear line between low-risk (boilerplate) and high-scrutiny (auth, payments) code.
 ✅ **Repository-Specific Tooling Config:** AI assistants tuned to your style guide and security constraints.
-✅ **Real Before/After Metrics:** Defect rate, incident resolution time, and review depth — not just story points.
+✅ **Real Before/After Metrics:** Defect rate, incident resolution time, and review depth - not just story points.
 
 Speed and discipline aren't a trade-off if you sequence the rollout right. 🛠️
 

@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Beveiliging van AI-gegenereerde code: Externe scripts, widgets en de gegevens van uw klanten",
-  "description": "Chatwidgets, analysetags, heatmaps en ingesloten tools draaien met volledige toegang tot uw webpagina's. Dit artikel behandelt de risico's voor beveiliging en privacy van externe scripts in door AI gebouwde apps — datalekken, supply chain-aanvallen en toestemming — en hoe u controle houdt via CSP, SRI en een scriptinventaris.",
+  "description": "Chatwidgets, analysetags, heatmaps en ingesloten tools draaien met volledige toegang tot uw webpagina's. Dit artikel behandelt de risico's voor beveiliging en privacy van externe scripts in door AI gebouwde apps - datalekken, supply chain-aanvallen en toestemming - en hoe u controle houdt via CSP, SRI en een scriptinventaris.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-29",
@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-"Voeg een chatwidget toe." "Voeg Google Analytics toe." "Voeg een heatmaptool toe zodat ik zie waar mensen klikken." Elk is een prompt van één regel, en AI-codeertools reageren door een scripttag in de lay-out van uw app te plakken — op elke pagina, ook op de pagina's waar klanten hun adres typen, documenten uploaden of betaalgegevens invoeren. Scripts van derden zijn een stille hoek van de beveiliging van AI-gegenereerde code: code die u niet zelf schreef, van bedrijven die u nauwelijks kent, die met dezelfde toegang tot uw pagina's draait als uw eigen code.
+"Voeg een chatwidget toe." "Voeg Google Analytics toe." "Voeg een heatmaptool toe zodat ik zie waar mensen klikken." Elk is een prompt van één regel, en AI-codeertools reageren door een scripttag in de lay-out van uw app te plakken - op elke pagina, ook op de pagina's waar klanten hun adres typen, documenten uploaden of betaalgegevens invoeren. Scripts van derden zijn een stille hoek van de beveiliging van AI-gegenereerde code: code die u niet zelf schreef, van bedrijven die u nauwelijks kent, die met dezelfde toegang tot uw pagina's draait als uw eigen code.
 
 ## Wat een Script van Derden Kan Doen
 
@@ -30,7 +30,7 @@ Een script dat in uw pagina wordt geladen, kan technisch gezien:
 - Alles op de pagina lezen, inclusief formuliervelden terwijl gebruikers typen.
 - Cookies en opslag lezen waartoe JavaScript toegang heeft.
 - Data naar zijn eigen servers sturen.
-- De pagina wijzigen — inhoud invoegen, gebruikers doorsturen, formulieren aanpassen.
+- De pagina wijzigen - inhoud invoegen, gebruikers doorsturen, formulieren aanpassen.
 
 Gerenommeerde aanbieders misbruiken dit niet bewust. Maar hun scripts kunnen meer verzamelen dan u bedoelt (tools voor sessie-opname die formulierinvoer vastleggen, bijvoorbeeld), en aanbieders kunnen worden gecompromitteerd: verschillende bekende supply-chainaanvallen injecteerden code om kaartgegevens af te vangen in veelgebruikte scripts, met gevolgen voor elke site die ze laadde.
 
@@ -112,7 +112,7 @@ Zet hem eerst live met `Content-Security-Policy-Report-Only`, verzamel een week 
 
 ## Subresource Integrity voor Vaste Bibliotheken
 
-Laadt u een specifieke versie van een bibliotheek van een CDN, voeg dan een attribuut `integrity` toe met de hash van het bestand. De browser weigert het bestand uit te voeren als het is gewijzigd. Dat beschermt tegen gecompromitteerde CDN's voor bestanden met een vaste versie. Voor scripts die voortdurend veranderen — de meeste tags van leveranciers — kan SRI niet worden gebruikt; daar zijn het beperken van pagina's en CSP de belangrijkste verdediging, en is zelf hosten van stabiele bibliotheken vaak de betere keuze.
+Laadt u een specifieke versie van een bibliotheek van een CDN, voeg dan een attribuut `integrity` toe met de hash van het bestand. De browser weigert het bestand uit te voeren als het is gewijzigd. Dat beschermt tegen gecompromitteerde CDN's voor bestanden met een vaste versie. Voor scripts die voortdurend veranderen - de meeste tags van leveranciers - kan SRI niet worden gebruikt; daar zijn het beperken van pagina's en CSP de belangrijkste verdediging, en is zelf hosten van stabiele bibliotheken vaak de betere keuze.
 
 ## Betaalpagina's Verdienen een Speciale Behandeling
 
@@ -136,7 +136,7 @@ Elk script van derden voegt netwerkverzoeken toe, JavaScript dat moet worden ver
 
 ## Monitoren op Onverwachte Scripts
 
-Scripts kunnen verschijnen zonder dat iemand het merkt — via een wijziging in de tagmanager, een gecompromitteerde afhankelijkheid of een leverancier die extra scripts laadt. Monitor met CSP-meldingen van overtredingen (die pogingen tonen om niet-goedgekeurde bronnen te laden), periodieke geautomatiseerde scans van belangrijke pagina's met een lijst van geladen domeinen, en meldingen als er een nieuw domein verschijnt. Behandel op betaal- en accountpagina's elk onverwacht script als een te onderzoeken incident.
+Scripts kunnen verschijnen zonder dat iemand het merkt - via een wijziging in de tagmanager, een gecompromitteerde afhankelijkheid of een leverancier die extra scripts laadt. Monitor met CSP-meldingen van overtredingen (die pogingen tonen om niet-goedgekeurde bronnen te laden), periodieke geautomatiseerde scans van belangrijke pagina's met een lijst van geladen domeinen, en meldingen als er een nieuw domein verschijnt. Behandel op betaal- en accountpagina's elk onverwacht script als een te onderzoeken incident.
 
 ## Wat U Gebruikers Vertelt
 
@@ -152,7 +152,7 @@ Open uw checkout- of accountpagina, bekijk het netwerkpaneel en tel de externe d
 
 ## Waarom Dit een AI-Specifiek Risico Is
 
-AI-codeertools voegen opmerkelijk gemakkelijk scripts van derden toe: vraag om analytics, een chatwidget of een kaart, en er verschijnt een scripttag in de globale lay-out, geladen op elke pagina, zonder afhandeling van toestemming of beperkingen. Over maanden prompten stapelen ze zich op. Niemand besloot paspoortnummers naar een leverancier van sessie-opname te sturen; het gebeurde omdat een behulpzame tool overal een fragment toevoegde. Daarom verdienen scripts van derden een plek in elke productiereview van AI-gebouwde apps — en daarom zijn een inventaris, beperking per pagina, toestemmingsblokkering en een Content Security Policy het waard om vóór de lancering in te richten in plaats van na een ongemakkelijke vraag van een klant of toezichthouder.
+AI-codeertools voegen opmerkelijk gemakkelijk scripts van derden toe: vraag om analytics, een chatwidget of een kaart, en er verschijnt een scripttag in de globale lay-out, geladen op elke pagina, zonder afhandeling van toestemming of beperkingen. Over maanden prompten stapelen ze zich op. Niemand besloot paspoortnummers naar een leverancier van sessie-opname te sturen; het gebeurde omdat een behulpzame tool overal een fragment toevoegde. Daarom verdienen scripts van derden een plek in elke productiereview van AI-gebouwde apps - en daarom zijn een inventaris, beperking per pagina, toestemmingsblokkering en een Content Security Policy het waard om vóór de lancering in te richten in plaats van na een ongemakkelijke vraag van een klant of toezichthouder.
 
 ## Onthoud
 
@@ -160,7 +160,7 @@ Elk script dat u laadt, handelt met uw gezag op de pagina's van uw gebruikers. L
 
 ## Waar LaunchStudio Past
 
-LaunchStudio beoordeelt scripts van derden als onderdeel van zijn controles op beveiliging en privacy: inventaris en opschoning, beperking per pagina, laden na toestemming, privacybewuste configuratie, een Content Security Policy afgestemd op uw app en isolatie van betalingen. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft — inclusief werk aan dark-webmonitoring met TNO — die een zorgvuldige kijk op supply-chainrisico's vormt. De engineers van Manifera werken vanuit Ho Chi Minh-stad, met klantcontact via Amsterdam en Singapore. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/); [de CSP-gids van MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) is de helderste inleiding.
+LaunchStudio beoordeelt scripts van derden als onderdeel van zijn controles op beveiliging en privacy: inventaris en opschoning, beperking per pagina, laden na toestemming, privacybewuste configuratie, een Content Security Policy afgestemd op uw app en isolatie van betalingen. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft - inclusief werk aan dark-webmonitoring met TNO - die een zorgvuldige kijk op supply-chainrisico's vormt. De engineers van Manifera werken vanuit Ho Chi Minh-stad, met klantcontact via Amsterdam en Singapore. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/); [de CSP-gids van MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) is de helderste inleiding.
 
 [Stuur ons de link naar uw site](https://launchstudio.eu/nl/#contact) en we maken een lijst van elk script dat hij laadt.
 
@@ -172,14 +172,14 @@ Yara Ouali, eigenaar van een klein reisbureau in Leidschendam dat gespecialiseer
 
 Tijdens een privacyreview op verzoek van een partner-touroperator bleek het portaal op elke pagina elf scripts van derden te laden: analytics, twee advertentiepixels, een heatmaptool met sessie-opname, een chatwidget, een reviewwidget, een lettertypedienst, een kaartbibliotheek en drie scripts van tools die Yara niet meer gebruikte. De tool voor sessie-opname legde namen, geboortedata en paspoortnummers van passagiers vast terwijl reizigers ze typten. Alle scripts laadden vóór de cookiebanner. Het termijnformulier verzamelde kaartgegevens in de eigen velden van het portaal voordat het ze doorgaf aan de betaalaanbieder. Er was geen Content Security Policy.
 
-In zes werkdagen verwijderden de engineers van LaunchStudio zes ongebruikte of overbodige scripts, beperkten ze de chatwidget en de reviewwidget tot pagina's zonder persoonlijke formulieren, verplaatsten ze analytics naar een privacyvriendelijke optie met hosting in de EU en laadden ze advertentiepixels alleen na toestemming en nooit op portaalpagina's, haalden ze sessie-opname uit het portaal en lieten ze opgenomen sessies bij de leverancier verwijderen, schakelden ze termijnbetalingen over op de gehoste checkout van Mollie, en zetten ze een Content Security Policy live — eerst in report-only, daarna afgedwongen.
+In zes werkdagen verwijderden de engineers van LaunchStudio zes ongebruikte of overbodige scripts, beperkten ze de chatwidget en de reviewwidget tot pagina's zonder persoonlijke formulieren, verplaatsten ze analytics naar een privacyvriendelijke optie met hosting in de EU en laadden ze advertentiepixels alleen na toestemming en nooit op portaalpagina's, haalden ze sessie-opname uit het portaal en lieten ze opgenomen sessies bij de leverancier verwijderen, schakelden ze termijnbetalingen over op de gehoste checkout van Mollie, en zetten ze een Content Security Policy live - eerst in report-only, daarna afgedwongen.
 
 **Resultaat:** De partner-touroperator keurde het portaal goed. De laadtijd van het passagiersformulier halveerde, en Yara keurt nu elk nieuw script goed aan de hand van een inventaris van één pagina.
 
 > *"Ik had elf bedrijven uitgenodigd in de ruimte waar mijn klanten hun paspoortnummers typten. De meeste was ik vergeten."*
-> — **Yara Ouali, Oprichter, Reisdossier (Leidschendam)**
+> - **Yara Ouali, Oprichter, Reisdossier (Leidschendam)**
 
-**Kosten & Tijdlijn:** € 1.500 (Launch Ready-pakket: inventaris en opschoning van scripts, laden na toestemming, isolatie van betalingen en CSP) — afgerond in 6 werkdagen.
+**Kosten & Tijdlijn:** € 1.500 (Launch Ready-pakket: inventaris en opschoning van scripts, laden na toestemming, isolatie van betalingen en CSP) - afgerond in 6 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -197,7 +197,7 @@ Veel wel, vooral scripts die cookies of identificatoren voor tracking gebruiken.
 
 ### Hoe beoordeelt Manifera supply-chainrisico's in webapps?
 
-Door elk extern script en elke afhankelijkheid als onderdeel van het aanvalsoppervlak te behandelen — een aanpak gevormd door de cybersecurityachtergrond van Herre Roelevink — en te beperken waartoe elk toegang heeft.
+Door elk extern script en elke afhankelijkheid als onderdeel van het aanvalsoppervlak te behandelen - een aanpak gevormd door de cybersecurityachtergrond van Herre Roelevink - en te beperken waartoe elk toegang heeft.
 
 ### Helpen minder scripts van derden bij SEO?
 

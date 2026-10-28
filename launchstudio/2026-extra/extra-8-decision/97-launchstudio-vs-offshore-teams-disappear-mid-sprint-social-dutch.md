@@ -1,4 +1,4 @@
-📵 Zes weken, €4.500 betaald, en toen stopte het offshore-team ineens met reageren — met de betalingsintegratie volledig kapot. De klant dreigde het contract van €25.000 te schrappen. 😳
+📵 Zes weken, €4.500 betaald, en toen stopte het offshore-team ineens met reageren - met de betalingsintegratie volledig kapot. De klant dreigde het contract van €25.000 te schrappen. 😳
 
 Het "verdwijnende bureau"-verhaal is geen incident, het is een voorspelbaar gevolg van de prijsstructuur: 🧠
 
@@ -9,12 +9,12 @@ Het "verdwijnende bureau"-verhaal is geen incident, het is een voorspelbaar gevo
 
 ✅ Nederlands recht, afdwingbare contracten en IP-overdracht
 ✅ 120+ gesalarieerde senior engineers, geen rondzwervende freelancers
-✅ Fixed-price — wij absorberen de kosten van onvoorziene complexiteit
+✅ Fixed-price - wij absorberen de kosten van onvoorziene complexiteit
 ✅ 11 jaar enterprise-track record voor klanten als Vodafone en TNO
 
 Bij **LaunchStudio**, mogelijk gemaakt door Manifera's hybride model, combineren we Nederlandse verantwoordelijkheid met wereldwijde engineeringkracht. 🛡️
 
-Kaspers resultaat: de vastgelopen code gered en de productiebuild opgeleverd in 9 werkdagen — zijn €25.000-klant behouden. 🚀
+Kaspers resultaat: de vastgelopen code gered en de productiebuild opgeleverd in 9 werkdagen - zijn €25.000-klant behouden. 🚀
 
 👉 Ontdek waarom Nederlandse verantwoordelijkheid het verschil maakt: https://launchstudio.eu/nl/blog/launchstudio-vs-offshore-teams-disappear
 

@@ -35,7 +35,7 @@ The most misunderstood button in modern software development is "Download Code."
 
 For a non-technical founder, this feels like the finish line. You have the code. The AI download is complete. Now you just need to put it on the internet, right?
 
-Wrong. That ZIP file is not a business. It is a blueprint. And trying to run a business from a blueprint is how thousands of AI-native founders stall out right before launch. The code you download from an AI tool is fundamentally incomplete — not because the AI failed, but because a ZIP file cannot contain cloud infrastructure.
+Wrong. That ZIP file is not a business. It is a blueprint. And trying to run a business from a blueprint is how thousands of AI-native founders stall out right before launch. The code you download from an AI tool is fundamentally incomplete - not because the AI failed, but because a ZIP file cannot contain cloud infrastructure.
 
 ## What is Actually in Your AI Download
 
@@ -52,7 +52,7 @@ The code might have API calls to Supabase or Firebase, but the database itself d
 Your downloaded code has a login form. It does not have the secure server that hashes passwords, sends verification emails, and manages session cookies.
 
 **3. Payment Infrastructure**
-Your pricing page looks great. But the webhooks that listen for Stripe payment confirmations and update user subscriptions require a live, publicly accessible server environment — they cannot run from a downloaded folder.
+Your pricing page looks great. But the webhooks that listen for Stripe payment confirmations and update user subscriptions require a live, publicly accessible server environment - they cannot run from a downloaded folder.
 
 **4. Production Environment Variables**
 Your downloaded code likely has empty placeholder files for API keys, or worse, hardcoded development keys that will break or incur massive charges if exposed to the public.
@@ -69,15 +69,15 @@ Moving from an AI download on localhost to a production server on the open inter
 
 Not every AI download is packaged the same way, and the differences matter once you move toward deployment.
 
-**Bolt** exports a clean, self-contained Vite or Next.js project. The ZIP is portable and easy to hand to any engineer, but Bolt projects rarely include any backend scaffolding at all — what you are downloading is a pure frontend shell with no data layer attached.
+**Bolt** exports a clean, self-contained Vite or Next.js project. The ZIP is portable and easy to hand to any engineer, but Bolt projects rarely include any backend scaffolding at all - what you are downloading is a pure frontend shell with no data layer attached.
 
 **Lovable** generates a package that feels more complete because it wires the frontend directly to a Supabase project from the start. This can be misleading: the download often ships with a Supabase anonymous key and permissive default policies, meaning the "database connection" you downloaded is frequently not secure enough to expose to real users without further hardening.
 
-**v0 (by Vercel)** focuses purely on UI components. Its download is the cleanest from a code-quality standpoint but the least functional out of the box — there is usually no data layer, no authentication, and often no routing beyond a single page or a handful of static screens.
+**v0 (by Vercel)** focuses purely on UI components. Its download is the cleanest from a code-quality standpoint but the least functional out of the box - there is usually no data layer, no authentication, and often no routing beyond a single page or a handful of static screens.
 
 **Cursor**-built projects are not really "downloads" in the traditional sense, since Cursor works directly on a live local repository connected to Git. This gives technical founders more control over the codebase from day one, but it also assumes the person exporting the project already understands version control and basic deployment concepts, or is prepared to hand the entire repository to a team that does.
 
-The practical implication is that the tool you used to generate your AI download determines exactly which gaps need to be filled before launch. Bolt users typically need the most backend work built from zero. Lovable users need the most security hardening around an existing database connection. v0 users need both a data layer and authentication built from scratch. None of these gaps disappear on their own — they simply move from being "your AI tool's problem" to being "your deployment problem" the moment you click download and expect a working ZIP file to become a business.
+The practical implication is that the tool you used to generate your AI download determines exactly which gaps need to be filled before launch. Bolt users typically need the most backend work built from zero. Lovable users need the most security hardening around an existing database connection. v0 users need both a data layer and authentication built from scratch. None of these gaps disappear on their own - they simply move from being "your AI tool's problem" to being "your deployment problem" the moment you click download and expect a working ZIP file to become a business.
 
 ## Bridging the Gap: From Download to Deployment
 
@@ -112,9 +112,9 @@ Thomas found LaunchStudio instead. In a 15-minute call, the Manifera team review
 **Result:** CrossUtrecht App launched to his 140 members in 8 business days. The system processes €12,500 in automated monthly dues flawlessly, and members book classes from their phones. Thomas never had to learn what a webhook is.
 
 > *"I thought downloading the code meant the job was done. I had no idea what deployment meant. LaunchStudio took my ZIP file and turned it into an actual, working business system in just over a week."*
-> — **Thomas de Vries, Founder, CrossUtrecht (Utrecht)**
+> - **Thomas de Vries, Founder, CrossUtrecht (Utrecht)**
 
-**Cost & Timeline:** €2,600 (Launch & Grow Package) — production-ready and deployed in 8 business days.
+**Cost & Timeline:** €2,600 (Launch & Grow Package) - production-ready and deployed in 8 business days.
 
 ---
 

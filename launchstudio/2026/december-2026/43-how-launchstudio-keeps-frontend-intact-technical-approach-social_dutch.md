@@ -7,13 +7,13 @@
 ✅ Authenticatie en databasebeveiliging worden als een schil ROND uw UI geplaatst
 ✅ CSS, typografie en componenten blijven standaard 100% onaangeraakt
 
-🔧 Onder de motorkap: een backend-adapterlaag vertaalt bestaande frontend-calls naar de echte database — de frontend merkt LITTERLIJK niet eens dat de backend is vervangen. Plus geautomatiseerde screenshot-tests vóór elke merge!
+🔧 Onder de motorkap: een backend-adapterlaag vertaalt bestaande frontend-calls naar de echte database - de frontend merkt LITTERLIJK niet eens dat de backend is vervangen. Plus geautomatiseerde screenshot-tests vóór elke merge!
 
-De enige uitzondering? Noodzakelijke functionele laad- en foutmeldingen — altijd vooraf overlegd, nooit een onaangename verrassing. 🛡️
+De enige uitzondering? Noodzakelijke functionele laad- en foutmeldingen - altijd vooraf overlegd, nooit een onaangename verrassing. 🛡️
 
 Ze doorliep 3 rondes backend-inrichting (auth, Mollie-facturatie, hosting) en vergeleek de screenshots: 📸
 
-Resultaat: **nul pixels verschoven.** Haar gevalideerde ontwerp — getest met 6 echte B&B-eigenaren — bleef exact zoals zij het wilde! 🚀
+Resultaat: **nul pixels verschoven.** Haar gevalideerde ontwerp - getest met 6 echte B&B-eigenaren - bleef exact zoals zij het wilde! 🚀
 
 Gesteund door Manifera's engineeringcultuur: respect voor gevalideerd gebruikersontwerp wint het altijd van de persoonlijke smaak van een developer.
 

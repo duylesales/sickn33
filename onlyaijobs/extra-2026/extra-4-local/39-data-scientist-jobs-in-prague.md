@@ -42,7 +42,7 @@ Content Format: Local Guide
 }
 </script>
 
-Prague is one of Central Europe's most attractive cities for technology professionals. Its historic beauty and cultural life are well known, but the city also has a mature software industry, strong technical universities and a track record of home-grown companies with global reach — from cybersecurity software used by hundreds of millions of people to document AI and hospitality platforms. Data scientist jobs in Prague span consumer security, product analytics, e-commerce, search and language models, banking, automotive and research. This guide explains where the work is, what employers expect and what experienced professionals should consider before moving.
+Prague is one of Central Europe's most attractive cities for technology professionals. Its historic beauty and cultural life are well known, but the city also has a mature software industry, strong technical universities and a track record of home-grown companies with global reach - from cybersecurity software used by hundreds of millions of people to document AI and hospitality platforms. Data scientist jobs in Prague span consumer security, product analytics, e-commerce, search and language models, banking, automotive and research. This guide explains where the work is, what employers expect and what experienced professionals should consider before moving.
 
 ## The Czech Technology Landscape
 
@@ -66,9 +66,9 @@ Prague is one of Central Europe's most attractive cities for technology professi
 
 **Czech Technical University in Prague (CTU).** CTU is the country's leading technical university. Its Faculty of Electrical Engineering hosts an AI Center with research in machine learning, planning, multi-agent systems and computer vision, and CTU's Czech Institute of Informatics, Robotics and Cybernetics (CIIRC) conducts research in AI, robotics and industrial automation, including a testbed for Industry 4.0.
 
-**Charles University.** The Faculty of Mathematics and Physics at Charles University is known for strong computer science, including natural language processing — its Institute of Formal and Applied Linguistics has a long track record in Czech and multilingual NLP — as well as machine learning and theoretical computer science.
+**Charles University.** The Faculty of Mathematics and Physics at Charles University is known for strong computer science, including natural language processing - its Institute of Formal and Applied Linguistics has a long track record in Czech and multilingual NLP - as well as machine learning and theoretical computer science.
 
-**Other institutions.** The Czech Academy of Sciences has institutes working on computer science and information theory, and universities in Brno — including Brno University of Technology and Masaryk University — add a second strong tech centre in the country.
+**Other institutions.** The Czech Academy of Sciences has institutes working on computer science and information theory, and universities in Brno - including Brno University of Technology and Masaryk University - add a second strong tech centre in the country.
 
 ## Types of Data Scientist Jobs in Prague
 
@@ -103,7 +103,7 @@ Prague offers a beautiful historic centre, excellent public transport with metro
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for data scientist jobs in Prague you will find few or no local vacancies there today. Use Czech job portals, company career pages, university vacancy lists and community channels as primary sources. OnlyAIJobs is useful for comparing Prague with the Netherlands — where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles — and as a method: filter by AI category and real commute rather than by title. Czech employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for data scientist jobs in Prague you will find few or no local vacancies there today. Use Czech job portals, company career pages, university vacancy lists and community channels as primary sources. OnlyAIJobs is useful for comparing Prague with the Netherlands - where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles - and as a method: filter by AI category and real commute rather than by title. Czech employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Cybersecurity Data Science in Depth
 
@@ -119,7 +119,7 @@ The adversarial nature of the work, the need for very low false-positive rates a
 
 ## Document AI and Vision-Language Models
 
-Document AI — extracting structured information from invoices, receipts, contracts and forms — has become a significant field, and Prague has notable expertise. The work combines layout understanding, optical character recognition, vision-language models and domain knowledge of business processes. Challenges include handling many document formats and languages, learning from limited labelled data, integrating human review for uncertain cases and meeting enterprise requirements for accuracy, security and auditability. Recent advances in multimodal language models have transformed the field, and companies in Prague are applying them to real business workflows.
+Document AI - extracting structured information from invoices, receipts, contracts and forms - has become a significant field, and Prague has notable expertise. The work combines layout understanding, optical character recognition, vision-language models and domain knowledge of business processes. Challenges include handling many document formats and languages, learning from limited labelled data, integrating human review for uncertain cases and meeting enterprise requirements for accuracy, security and auditability. Recent advances in multimodal language models have transformed the field, and companies in Prague are applying them to real business workflows.
 
 ## Czech Language Technology
 
@@ -163,7 +163,7 @@ Prague suits data scientists who want product-focused, technically deep work in 
 
 A data scientist working on fraud detection at an Amsterdam fintech receives an offer from a Prague cybersecurity company to work on scam detection for consumer products. The gross salary is lower, but the role involves models protecting a very large user base and working with an experienced research team.
 
-He calculates net income in koruna, considers currency risk and compares Prague rents with his Amsterdam costs. He finds that his disposable income would be similar and that the technical challenge — adversarial, high-volume detection — is exactly what he wants. He accepts, and after a year says the combination of technical depth, English-speaking teams and Prague's quality of life made the move worthwhile, although learning basic Czech proved necessary for dealing with authorities.
+He calculates net income in koruna, considers currency risk and compares Prague rents with his Amsterdam costs. He finds that his disposable income would be similar and that the technical challenge - adversarial, high-volume detection - is exactly what he wants. He accepts, and after a year says the combination of technical depth, English-speaking teams and Prague's quality of life made the move worthwhile, although learning basic Czech proved necessary for dealing with authorities.
 
 ## Key Takeaways
 

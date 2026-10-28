@@ -1,4 +1,4 @@
-🚨 A customer unsubscribed from marketing emails and kept getting them anyway — because the unsubscribe only applied to one of six independent systems that all send email, none checking a shared preference. 📧⚙️
+🚨 A customer unsubscribed from marketing emails and kept getting them anyway - because the unsubscribe only applied to one of six independent systems that all send email, none checking a shared preference. 📧⚙️
 
 **The Pain Points:**
 ❌ **Six Systems, No Shared Record:** Every team bolted on its own sending logic, disconnected from the rest.

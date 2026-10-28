@@ -45,7 +45,7 @@ Content Format: Regional Talent Guide
 }
 </script>
 
-OnlyAIJobs started with a problem its founders saw in Noord-Brabant: talented people from the province moved to Amsterdam, Utrecht or Rotterdam, not because there was no interesting work nearby, but because they didn't know the companies in their own region. For development agencies, municipalities, universities and employer networks, that pattern is costly. AI jobs in Noord-Brabant exist in large numbers — in semiconductors, high-tech systems, health technology, logistics, food, energy and public services — yet many graduates never see them. This guide is written for regional organisations that want to change that, and it explains what actually keeps AI talent in the region.
+OnlyAIJobs started with a problem its founders saw in Noord-Brabant: talented people from the province moved to Amsterdam, Utrecht or Rotterdam, not because there was no interesting work nearby, but because they didn't know the companies in their own region. For development agencies, municipalities, universities and employer networks, that pattern is costly. AI jobs in Noord-Brabant exist in large numbers - in semiconductors, high-tech systems, health technology, logistics, food, energy and public services - yet many graduates never see them. This guide is written for regional organisations that want to change that, and it explains what actually keeps AI talent in the region.
 
 ## Where AI Jobs in Noord-Brabant Are
 
@@ -53,7 +53,7 @@ Noord-Brabant is one of Europe's most technology-intensive regions. Its AI and d
 
 **Brainport Eindhoven.** The Eindhoven region is home to ASML in Veldhoven, Philips, NXP and a dense network of high-tech suppliers, engineering firms and startups. AI work here involves computer vision for inspection, machine learning for lithography and process control, predictive maintenance of complex machines, health technology and embedded AI. Brainport Development coordinates regional economic development and talent initiatives.
 
-**Tilburg and 's-Hertogenbosch.** Tilburg University's data science and cognitive science programmes, and JADS in 's-Hertogenbosch — a joint initiative of Tilburg University and TU/e — produce data scientists with strong business and societal orientation. The region hosts logistics hubs, financial service providers, public organisations and energy and water utilities.
+**Tilburg and 's-Hertogenbosch.** Tilburg University's data science and cognitive science programmes, and JADS in 's-Hertogenbosch - a joint initiative of Tilburg University and TU/e - produce data scientists with strong business and societal orientation. The region hosts logistics hubs, financial service providers, public organisations and energy and water utilities.
 
 **Breda and West Brabant.** Breda has logistics and distribution companies, a games and media cluster linked to Breda University of Applied Sciences and industrial firms in the wider region.
 
@@ -81,7 +81,7 @@ Most of these are information problems, not substance problems. That is good new
 
 **1. Make employers findable by distance.** Graduates search by title and city. When they search instead by category and distance from their home, regional employers appear. Encourage students and job seekers to use location-first search, and encourage employers to publish exact addresses rather than vague regions.
 
-**2. Help employers write better vacancies.** Many regional AI roles are described poorly. Workshops that help SMEs write specific, honest vacancies — the problem, the data, the tools, English as working language where true, salary range, hybrid policy — increase response rates substantially.
+**2. Help employers write better vacancies.** Many regional AI roles are described poorly. Workshops that help SMEs write specific, honest vacancies - the problem, the data, the tools, English as working language where true, salary range, hybrid policy - increase response rates substantially.
 
 **3. Connect students with real regional problems early.** Theses, internships, hackathons and challenge-based learning projects with regional employers are the most effective retention tools. Students who have already worked on a grid operator's congestion data or a manufacturer's inspection images know the company and are known by it.
 
@@ -101,7 +101,7 @@ Regional organisations can use this in practical ways: pointing students and job
 
 Because Brainport is the province's largest AI employer cluster, it helps to understand what AI work there involves. High-tech systems companies build machines of extraordinary precision, and AI supports them in several ways: computer vision for wafer and component inspection, machine learning models that predict and correct errors in lithography and metrology, predictive maintenance for machines installed at customer sites worldwide, anomaly detection in manufacturing data and software tools that help engineers analyse complex system behaviour. Health technology companies apply AI to medical imaging, patient monitoring and clinical workflows, within the EU Medical Device Regulation and the high-risk requirements of the EU AI Act.
 
-This work requires strong mathematics, physics or engineering foundations combined with ML. It is some of the most technically demanding AI work in Europe — which makes it all the more striking that many graduates overlook it. Communicating concrete examples of such projects to students is one of the most persuasive retention messages a region can send.
+This work requires strong mathematics, physics or engineering foundations combined with ML. It is some of the most technically demanding AI work in Europe - which makes it all the more striking that many graduates overlook it. Communicating concrete examples of such projects to students is one of the most persuasive retention messages a region can send.
 
 ## Measuring Regional Talent Retention
 
@@ -120,7 +120,7 @@ These indicators make it possible to see whether initiatives work, and they help
 Small and medium-sized enterprises form the backbone of Brabant's economy, and many are starting their first AI projects. They often face specific challenges in hiring: no dedicated recruiters, uncertainty about what profile they need, limited budgets and vacancies that compete poorly with those of large companies. Regional organisations can help by offering practical support:
 
 - Templates and examples of good AI vacancy texts.
-- Advice on realistic role design — for example whether an SME needs a data engineer first rather than a machine learning researcher.
+- Advice on realistic role design - for example whether an SME needs a data engineer first rather than a machine learning researcher.
 - Shared internship programmes in which several SMEs host students.
 - Connections with universities for thesis projects and applied research.
 - Information on responsible AI and the EU AI Act, so SMEs can build compliant systems from the start.
@@ -129,21 +129,21 @@ SMEs that hire a first AI professional successfully often become strong advocate
 
 ## The Role of Universities and Universities of Applied Sciences
 
-Universities and universities of applied sciences are the region's most important talent sources, and their choices shape retention. Programmes that include challenge-based learning with regional partners, mandatory internships or graduation projects in companies, and career services that actively present regional employers keep more graduates local. Fontys, Avans and Breda University of Applied Sciences have long traditions of practice-oriented education with regional employers, while TU/e, Tilburg University and JADS combine research with industry collaboration. Coordinating these efforts across institutions — for example through a shared overview of AI thesis opportunities in the province — reduces fragmentation and makes it easier for employers to engage.
+Universities and universities of applied sciences are the region's most important talent sources, and their choices shape retention. Programmes that include challenge-based learning with regional partners, mandatory internships or graduation projects in companies, and career services that actively present regional employers keep more graduates local. Fontys, Avans and Breda University of Applied Sciences have long traditions of practice-oriented education with regional employers, while TU/e, Tilburg University and JADS combine research with industry collaboration. Coordinating these efforts across institutions - for example through a shared overview of AI thesis opportunities in the province - reduces fragmentation and makes it easier for employers to engage.
 
 ## Telling the Regional Story
 
-Finally, regions need a story that students and job seekers find credible. Generic slogans about innovation rarely persuade. What works is concrete, specific storytelling: a graduate who works on inspection models for chip machines, a data scientist who helps a water company detect leaks, a young engineer who forecasts congestion on the electricity grid, an international graduate who joined an English-speaking SME. Such stories, combined with practical tools for finding jobs by distance, show that meaningful AI careers exist close to home — and that leaving for the Randstad is a choice, not a necessity.
+Finally, regions need a story that students and job seekers find credible. Generic slogans about innovation rarely persuade. What works is concrete, specific storytelling: a graduate who works on inspection models for chip machines, a data scientist who helps a water company detect leaks, a young engineer who forecasts congestion on the electricity grid, an international graduate who joined an English-speaking SME. Such stories, combined with practical tools for finding jobs by distance, show that meaningful AI careers exist close to home - and that leaving for the Randstad is a choice, not a necessity.
 
 ## Collaboration Across Borders
 
-Noord-Brabant borders Belgium, and Antwerp and Leuven are within commuting distance for parts of the province. Cross-border cooperation on talent — shared events, recognition of internships and joint communication — can widen the regional labour market. For job seekers, searching by distance rather than by country reveals opportunities on both sides of the border.
+Noord-Brabant borders Belgium, and Antwerp and Leuven are within commuting distance for parts of the province. Cross-border cooperation on talent - shared events, recognition of internships and joint communication - can widen the regional labour market. For job seekers, searching by distance rather than by country reveals opportunities on both sides of the border.
 
 ## A Practical Programme for One Year
 
 Regional organisations that want to start can follow a simple twelve-month programme:
 
-1. **Months 1–2: map the market.** Collect AI and data vacancies from regional employers and identify gaps — employers doing AI work that are not visible online.
+1. **Months 1–2: map the market.** Collect AI and data vacancies from regional employers and identify gaps - employers doing AI work that are not visible online.
 2. **Months 3–4: improve vacancy texts.** Run workshops with employers on writing specific, transparent vacancies with exact addresses and clear language requirements.
 3. **Months 5–6: engage students.** Organise sessions at universities where students search by distance from their home, followed by visits to regional employers.
 4. **Months 7–9: build project pipelines.** Match regional employers with thesis students, interns and challenge-based learning projects for the next academic year.
@@ -161,7 +161,7 @@ Brabant's strength in high-tech, health and public services means many regional 
 
 ## A Message for Job Seekers
 
-If you live in Noord-Brabant and want an AI career, start by searching within your commuting radius. You may find that the role you are looking for is closer than the Randstad — and that it comes with lower housing costs and a shorter commute.
+If you live in Noord-Brabant and want an AI career, start by searching within your commuting radius. You may find that the role you are looking for is closer than the Randstad - and that it comes with lower housing costs and a shorter commute.
 
 ## Real example
 

@@ -25,7 +25,7 @@ Dordrecht telt ongeveer 120.000 inwoners op het punt waar meerdere rivieren same
 
 ## De geografie is het verhaal
 
-Dordrecht ligt op een eiland waar de Rijn- en Maassystemen samenkomen voor ze de zee bereiken. Dat geeft twee kenmerken die de technische economie vormen: het is eeuwenlang een scheepvaartstad, en het is een van de meest overstromingsgevoelige stedelijke gebieden van het land — waardoor het een echt onderwerp is van nationaal waterveiligheidsonderzoek in plaats van slechts een begunstigde.
+Dordrecht ligt op een eiland waar de Rijn- en Maassystemen samenkomen voor ze de zee bereiken. Dat geeft twee kenmerken die de technische economie vormen: het is eeuwenlang een scheepvaartstad, en het is een van de meest overstromingsgevoelige stedelijke gebieden van het land - waardoor het een echt onderwerp is van nationaal waterveiligheidsonderzoek in plaats van slechts een begunstigde.
 
 ## Maritiem en binnenvaartdatawerk
 

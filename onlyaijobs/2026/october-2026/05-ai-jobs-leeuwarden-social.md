@@ -1,4 +1,4 @@
-💡 Leeuwarden hosts Wetsus, the European Centre of Excellence for Sustainable Water Technology — an international research cluster most national AI conversations never mention.
+💡 Leeuwarden hosts Wetsus, the European Centre of Excellence for Sustainable Water Technology - an international research cluster most national AI conversations never mention.
 
 🤖 The data work: soft sensors for water quality, process optimisation in treatment plants, membrane fouling prediction, leak detection. Driven by the Water Framework Directive and the revised Urban Wastewater Treatment Directive, demand is long-term and structural.
 

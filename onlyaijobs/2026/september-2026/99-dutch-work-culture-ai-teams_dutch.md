@@ -85,7 +85,7 @@ Elke gids over werken in Nederland vermeldt dat Nederlanders direct zijn. Bijna 
 
 ## Waar deze cultuur werkelijk goed voor is
 
-Technisch meningsverschil is goedkoop. Je kunt betogen dat een ontwerp verkeerd is zonder politieke gevolgen — een enorm voordeel voor engineeringkwaliteit.
+Technisch meningsverschil is goedkoop. Je kunt betogen dat een ontwerp verkeerd is zonder politieke gevolgen - een enorm voordeel voor engineeringkwaliteit.
 
 Werk en leven zijn werkelijk scheidbaar, en die grens wordt institutioneel gerespecteerd.
 
@@ -106,6 +106,6 @@ En de directheid betekent, zodra je gewend bent, dat je doorgaans weet waar je s
 
 ## Waar te beginnen
 
-Stel je eerste maand meer vragen dan comfortabel voelt en behandel elke kritische feedback als informatie in plaats van als oordeel. Vraag daarna één collega direct wat je cultureel verkeerd doet — je krijgt een eerlijk antwoord, en dat is precies het punt.
+Stel je eerste maand meer vragen dan comfortabel voelt en behandel elke kritische feedback als informatie in plaats van als oordeel. Vraag daarna één collega direct wat je cultureel verkeerd doet - je krijgt een eerlijk antwoord, en dat is precies het punt.
 
 Bekijk actuele AI-, machine learning- en datavacatures in Nederland op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).

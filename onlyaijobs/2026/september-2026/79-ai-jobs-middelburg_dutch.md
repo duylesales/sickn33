@@ -114,7 +114,7 @@ Omdat de lokale markt klein en geïsoleerd is, verandert werken op afstand de re
 
 Wie hier wil wonen en een functie op afstand of sterk hybride bij een werkgever elders heeft, heeft het centrale probleem opgelost. De provincie wordt dan een goede woonplek zonder werkgelegenheidsnadeel.
 
-De waarschuwingen uit het Hoorn-stuk gelden hier sterker. Functies op afstand zijn competitiever. Afspraken zijn bij verschillende Nederlandse werkgevers strakker geworden. En professionele isolatie is een echte kostenpost die twee uur afstand van elke grote stad versterkt — je kunt niet makkelijk een avondbijeenkomst in Rotterdam bijwonen.
+De waarschuwingen uit het Hoorn-stuk gelden hier sterker. Functies op afstand zijn competitiever. Afspraken zijn bij verschillende Nederlandse werkgevers strakker geworden. En professionele isolatie is een echte kostenpost die twee uur afstand van elke grote stad versterkt - je kunt niet makkelijk een avondbijeenkomst in Rotterdam bijwonen.
 
 De praktische mitigatie is bewust: plan periodieke reizen naar vakbijeenkomsten, onderhoud je online aanwezigheid actiever dan anders nodig, en wees eerlijk of jij iemand bent die professionele relaties zonder fysieke nabijheid onderhoudt.
 
@@ -124,7 +124,7 @@ De praktische mitigatie is bewust: plan periodieke reizen naar vakbijeenkomsten,
 - Deltawaterbouw hier is van mondiale betekenis, met keringbedrijf onder asymmetrische gevolgen, constructiemonitoring, morfologie en zeespiegeladaptatie.
 - Offshore wind is het groeiende domein, met voorspelling, conditiemonitoring en onderhoudsplanning tegen beperkte weervensters.
 - Gent en Antwerpen liggen dichterbij dan Rotterdam en vormen een forse Belgische markt voor wie grensoverschrijdend wil werken.
-- De provincie past engineers met commitment aan water of offshore wind en mensen met persoonlijke redenen — en past anderen niet, want gelijkwaardig werk bestaat elders met betere terugvalopties.
+- De provincie past engineers met commitment aan water of offshore wind en mensen met persoonlijke redenen - en past anderen niet, want gelijkwaardig werk bestaat elders met betere terugvalopties.
 - Werken op afstand lost het centrale probleem hier beslissender op dan elders, maar professionele isolatie is een versterkte kostenpost.
 
 ## Waar te beginnen

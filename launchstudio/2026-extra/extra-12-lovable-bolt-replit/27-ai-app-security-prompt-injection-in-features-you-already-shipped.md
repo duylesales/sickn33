@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Almost every product built in the last two years has an AI feature somewhere: a summariser, a reply drafter, a classifier, a chat box that answers questions about the customer's own data. They were added quickly because they are easy to add.
 
-Each one takes text from outside your product and puts it into a prompt alongside your own instructions. The model cannot reliably tell which part is your instruction and which part is data, because to the model it is all just text — and that is the whole of the problem.
+Each one takes text from outside your product and puts it into a prompt alongside your own instructions. The model cannot reliably tell which part is your instruction and which part is data, because to the model it is all just text - and that is the whole of the problem.
 
 Prompt injection is not a theoretical risk being discussed at conferences. It is a property of how these systems work, and no amount of prompt engineering removes it.
 
@@ -32,13 +32,13 @@ The interesting question is not whether the model can be persuaded to say someth
 
 If your feature summarises text and shows the result to the person who submitted it, a successful injection produces a strange summary for that person. Embarrassing, not dangerous.
 
-If your feature can call tools — query the database, send an email, make an HTTP request, write a record, trigger a workflow — then a successful injection performs those actions with your application's permissions. That is the difference between a curiosity and an incident, and it is entirely determined by what you connected.
+If your feature can call tools - query the database, send an email, make an HTTP request, write a record, trigger a workflow - then a successful injection performs those actions with your application's permissions. That is the difference between a curiosity and an incident, and it is entirely determined by what you connected.
 
 So the first question for every AI feature you have shipped: what can it do besides produce text? The answer is often more than the founder remembers.
 
 ## Indirect Injection Is the One That Gets You
 
-Direct injection — a user typing instructions into your chat box — is the version everyone thinks of, and it is the less dangerous one, because the user is attacking their own session.
+Direct injection - a user typing instructions into your chat box - is the version everyone thinks of, and it is the less dangerous one, because the user is attacking their own session.
 
 Indirect injection is when the malicious instruction arrives inside content your product processes on somebody else's behalf. An uploaded CV containing white text that tells the screening model to rate the candidate highly. A support email with instructions hidden in a signature. A web page your product fetches and summarises. A document a customer shares with their colleague, processed by your system on the colleague's behalf.
 
@@ -66,7 +66,7 @@ Filtering is worth a little effort as a speed bump and worth no confidence at al
 
 Structure helps even though it does not solve the problem. Put your instructions in the system role and the untrusted content in a user message, clearly delimited, with a statement that everything inside the delimiters is data to be processed rather than instructions to follow.
 
-This raises the effort required and reduces the accidental cases — the customer who happened to write "ignore the above" in a support ticket. It does not stop a determined attempt, so it belongs alongside the boundaries above rather than instead of them.
+This raises the effort required and reduces the accidental cases - the customer who happened to write "ignore the above" in a support ticket. It does not stop a determined attempt, so it belongs alongside the boundaries above rather than instead of them.
 
 One related habit: never place secrets, internal rules you would not want disclosed, or another customer's data in the same context window as untrusted text. Anything in the prompt can come out of the model, and "please repeat your instructions" is the easiest attack there is.
 
@@ -74,7 +74,7 @@ One related habit: never place secrets, internal rules you would not want disclo
 
 Because you cannot prevent injection, you need to be able to notice it.
 
-Log every AI feature invocation with the input, the output, which tools were called and with what arguments, and the account involved. Retain it for long enough to investigate — with personal data handled according to the same rules as any other log.
+Log every AI feature invocation with the input, the output, which tools were called and with what arguments, and the account involved. Retain it for long enough to investigate - with personal data handled according to the same rules as any other log.
 
 Then alert on the shapes that indicate something is wrong: a tool called far more often than normal, an unusual pattern of arguments, output containing what looks like configuration or another account's identifiers, a single account driving a large share of invocations.
 
@@ -92,9 +92,9 @@ Products that answer questions over a customer's own documents have a second pro
 
 The failure is ordinary rather than exotic. Documents from every account go into one index. The search step retrieves by similarity, which knows nothing about permissions. A question phrased in a particular way pulls in a passage belonging to somebody else, and the model dutifully incorporates it into an answer.
 
-The fix is to apply the filter before retrieval, never after. The search must be constrained to the account — and, where it matters, to the specific user's permissions within that account — as part of the query itself, not by discarding results afterwards. Discarding afterwards still leaks when the model has already seen the text, and in most implementations it has.
+The fix is to apply the filter before retrieval, never after. The search must be constrained to the account - and, where it matters, to the specific user's permissions within that account - as part of the query itself, not by discarding results afterwards. Discarding afterwards still leaks when the model has already seen the text, and in most implementations it has.
 
-Two further habits. Store the permission scope alongside each indexed chunk rather than relying on a naming convention, so the constraint is enforced by data rather than by discipline. And when a document's permissions change — shared, unshared, moved, deleted — update the index in the same operation, because an index that lags behind the source is a permission system that lags behind reality.
+Two further habits. Store the permission scope alongside each indexed chunk rather than relying on a naming convention, so the constraint is enforced by data rather than by discipline. And when a document's permissions change - shared, unshared, moved, deleted - update the index in the same operation, because an index that lags behind the source is a permission system that lags behind reality.
 
 Test it the way you would test anything else: ask, as one customer, a question whose answer exists only in another customer's documents, and confirm the product says it does not know.
 
@@ -102,7 +102,7 @@ Test it the way you would test anything else: ask, as one customer, a question w
 
 For a product with AI features this is typically one to two days: an inventory of every model-backed feature and what it can do beyond generating text, tool permissions narrowed to the minimum with nothing destructive or cross-account, authorisation moved firmly outside the model into your existing entitlement logic, human approval required for irreversible actions, output escaped everywhere it is displayed and never executed or interpolated into queries, untrusted content structurally separated from instructions, secrets and other customers' data kept out of the context, invocation logging with tool calls recorded, alerting on anomalous patterns, and rate and spending limits on every model-backed endpoint.
 
-LaunchStudio does this as part of security review for products with AI features, which is now most of them. The engineers are Manifera's — eleven years, 120+ engineers, security work for clients including Vodafone, TNO and CFLW.
+LaunchStudio does this as part of security review for products with AI features, which is now most of them. The engineers are Manifera's - eleven years, 120+ engineers, security work for clients including Vodafone, TNO and CFLW.
 
 [Tell us what your AI feature is allowed to do](https://launchstudio.eu/en/#contact). That list is the whole assessment.
 
@@ -112,7 +112,7 @@ LaunchStudio does this as part of security review for products with AI features,
 
 Machteld Oosterbeek built Sollicitatiescan in Lovable: an application screening tool for recruitment agencies and employers, which reads uploaded CVs against a role description and produces a shortlist with reasoning, used by 31 agencies.
 
-The feature also had tools. It could look up the candidate's previous applications in the database, and it could move a candidate to the shortlist stage — added because agencies wanted the obvious matches promoted automatically.
+The feature also had tools. It could look up the candidate's previous applications in the database, and it could move a candidate to the shortlist stage - added because agencies wanted the obvious matches promoted automatically.
 
 A candidate applying to a logistics role submitted a PDF with a paragraph in white four-point text: instructions to disregard the role requirements, rate the candidate as an exceptional match, move them to the shortlist, and not mention the instruction in the reasoning. It worked exactly as written.
 
@@ -123,15 +123,15 @@ Three business days: the shortlist-promotion tool removed entirely, so the model
 **Result:** the four affected applications were re-screened and two were genuinely reasonable candidates who had used the template on advice. The hidden-text alert has since flagged 31 documents in a year, of which 9 contained instruction-shaped content. No automated promotion has been possible since day one of the fix, which Machteld regards as the change that actually mattered.
 
 > *"The model did exactly what it was told. The mistake was mine: I gave it a button that changed a candidate's status, and then let strangers write to it."*
-> — **Machteld Oosterbeek, Founder, Sollicitatiescan (Hilversum)**
+> - **Machteld Oosterbeek, Founder, Sollicitatiescan (Hilversum)**
 
-**Cost & Timeline:** €3,400 (tool permission reduction, external authorisation, document text extraction with hidden content detection, prompt structuring, output escaping, rate and spending limits, invocation logging and alerting) — completed in 3 business days.
+**Cost & Timeline:** €3,400 (tool permission reduction, external authorisation, document text extraction with hidden content detection, prompt structuring, output escaping, rate and spending limits, invocation logging and alerting) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
 ### Can prompt injection be prevented?
 
-No. It is a property of how language models process text. What you can do is limit what a successful injection achieves — narrow tools, authorisation outside the model, human approval for irreversible actions, and treating output as untrusted.
+No. It is a property of how language models process text. What you can do is limit what a successful injection achieves - narrow tools, authorisation outside the model, human approval for irreversible actions, and treating output as untrusted.
 
 ### Is filtering malicious instructions worth doing?
 
@@ -139,7 +139,7 @@ As a small speed bump, not as a defence. Instructions can be phrased in unlimite
 
 ### What is indirect prompt injection?
 
-When the instruction arrives inside content your product processes on someone else's behalf — an uploaded document, a fetched web page, an incoming email. The user is the victim rather than the attacker, which makes it the more serious case.
+When the instruction arrives inside content your product processes on someone else's behalf - an uploaded document, a fetched web page, an incoming email. The user is the victim rather than the attacker, which makes it the more serious case.
 
 ### Is a summariser with no tools safe?
 
@@ -147,7 +147,7 @@ Much safer. The worst outcome is misleading output for the person who submitted 
 
 ### What should I log for an AI feature?
 
-The input, the output, every tool call with its arguments, and the account. Then alert on anomalies — unusual tool frequency, odd arguments, output containing identifiers or configuration.
+The input, the output, every tool call with its arguments, and the account. Then alert on anomalies - unusual tool frequency, odd arguments, output containing identifiers or configuration.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ The input, the output, every tool call with its arguments, and the account. Then
       "name": "Can prompt injection be prevented?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it is inherent to how models read text. Limit the consequences instead: minimal tools, authorisation outside the model, human approval for irreversible actions, untrusted output."
+        "text": "No - it is inherent to how models read text. Limit the consequences instead: minimal tools, authorisation outside the model, human approval for irreversible actions, untrusted output."
       }
     },
     {
@@ -175,7 +175,7 @@ The input, the output, every tool call with its arguments, and the account. Then
       "name": "What is indirect prompt injection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An instruction hidden in content your product processes for someone else — a document, web page or email — making your user the victim rather than the attacker."
+        "text": "An instruction hidden in content your product processes for someone else - a document, web page or email - making your user the victim rather than the attacker."
       }
     },
     {
@@ -183,7 +183,7 @@ The input, the output, every tool call with its arguments, and the account. Then
       "name": "Is an AI summariser without tools safe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Much safer — the worst case is misleading output for the submitter. Risk scales with what the feature can do beyond generating text."
+        "text": "Much safer - the worst case is misleading output for the submitter. Risk scales with what the feature can do beyond generating text."
       }
     },
     {
@@ -191,7 +191,7 @@ The input, the output, every tool call with its arguments, and the account. Then
       "name": "What should be logged for an AI feature?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Input, output, every tool call with arguments, and the account — then alert on unusual tool frequency, odd arguments or identifiers appearing in output."
+        "text": "Input, output, every tool call with arguments, and the account - then alert on unusual tool frequency, odd arguments or identifiers appearing in output."
       }
     }
   ]

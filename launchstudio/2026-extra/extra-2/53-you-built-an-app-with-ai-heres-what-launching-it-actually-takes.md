@@ -35,19 +35,19 @@ You built an app with AI, it works, and now you want it genuinely live. One spec
 
 ## Step One: Identify Every Feature That Returns a List of Records
 
-Any feature returning a searchable or browsable list — a member directory, a volunteer roster, a public listings page — is a candidate for this specific check, regardless of how innocuous the underlying data might initially seem, since even seemingly low-stakes directory information can become meaningfully more sensitive once it's aggregated in bulk rather than viewed one entry at a time. This includes features that don't look like a "directory" in name at all — a search box that returns matching customer records, an API endpoint feeding an autocomplete field, a public leaderboard, or an export button intended for a single user's own data but built without checking whether the same endpoint could be called repeatedly for someone else's. Any of these can function as a directory in practice, even if nobody on the team would ever describe it that way.
+Any feature returning a searchable or browsable list - a member directory, a volunteer roster, a public listings page - is a candidate for this specific check, regardless of how innocuous the underlying data might initially seem, since even seemingly low-stakes directory information can become meaningfully more sensitive once it's aggregated in bulk rather than viewed one entry at a time. This includes features that don't look like a "directory" in name at all - a search box that returns matching customer records, an API endpoint feeding an autocomplete field, a public leaderboard, or an export button intended for a single user's own data but built without checking whether the same endpoint could be called repeatedly for someone else's. Any of these can function as a directory in practice, even if nobody on the team would ever describe it that way.
 
 ## Step Two: Understand Why Aggregated Data Is Riskier Than It Looks Individually
 
-A single volunteer's name and contact details, viewable through the intended interface, might reasonably be considered acceptable public information for the platform's purpose. The same information, systematically collected across an entire directory through repeated automated requests, becomes a complete, exportable dataset — a meaningfully different and more sensitive artifact than any single, individually-viewed record.
+A single volunteer's name and contact details, viewable through the intended interface, might reasonably be considered acceptable public information for the platform's purpose. The same information, systematically collected across an entire directory through repeated automated requests, becomes a complete, exportable dataset - a meaningfully different and more sensitive artifact than any single, individually-viewed record.
 
 ## Step Three: Recognize That This Requires No Special Access, Just Patience
 
-Scraping a public directory doesn't require breaching any authentication or exploiting any complex vulnerability — it simply requires repeatedly requesting the same public search or listing feature, systematically, until the entire underlying dataset has been collected, which is exactly why a rate limit on this kind of feature matters even when no other part of a system is vulnerable at all.
+Scraping a public directory doesn't require breaching any authentication or exploiting any complex vulnerability - it simply requires repeatedly requesting the same public search or listing feature, systematically, until the entire underlying dataset has been collected, which is exactly why a rate limit on this kind of feature matters even when no other part of a system is vulnerable at all.
 
 ## Step Four: Test Whether Your Own Directory Feature Has This Limit
 
-Testing your own directory feature by browsing it normally, as a founder naturally does, never reveals whether repeated, rapid requests are actually limited — normal browsing behavior looks nothing like the systematic, repeated request pattern that scraping actually involves, meaning this specific check requires either deliberate testing or a dedicated review. A founder can get a rough sense of their own exposure with a simple manual test: open the directory feature and submit the same search or page-load request rapidly, dozens of times in quick succession, either by hand or with a basic scripted loop. If every single request returns a normal, full response with no slowdown, no error, and no sign the system even noticed the repetition, that's a reasonably strong signal no rate limit exists at all. A system that starts responding more slowly, returning an error, or requiring a brief wait after a burst of requests is at least attempting some form of protection, even if the specific threshold still needs proper calibration.
+Testing your own directory feature by browsing it normally, as a founder naturally does, never reveals whether repeated, rapid requests are actually limited - normal browsing behavior looks nothing like the systematic, repeated request pattern that scraping actually involves, meaning this specific check requires either deliberate testing or a dedicated review. A founder can get a rough sense of their own exposure with a simple manual test: open the directory feature and submit the same search or page-load request rapidly, dozens of times in quick succession, either by hand or with a basic scripted loop. If every single request returns a normal, full response with no slowdown, no error, and no sign the system even noticed the repetition, that's a reasonably strong signal no rate limit exists at all. A system that starts responding more slowly, returning an error, or requiring a brief wait after a burst of requests is at least attempting some form of protection, even if the specific threshold still needs proper calibration.
 
 ## Step Five: Apply a Rate Limit Without Disrupting Legitimate Use
 
@@ -63,14 +63,14 @@ Founders who understand a rate limit is needed often stall on the next question:
 
 **Start by observing real usage, not guessing**
 
-- Look at how your actual users interact with the feature today — how many searches does a normal coordinator run in a busy five-minute stretch during a real shift-planning session?
+- Look at how your actual users interact with the feature today - how many searches does a normal coordinator run in a busy five-minute stretch during a real shift-planning session?
 - Set an initial threshold meaningfully above that observed peak, not just above your own gut sense of what "seems reasonable"
 
 **Use a tiered response instead of a single hard block**
 
-1. **Soft slowdown** — after a moderate volume of requests in a short window, add a brief delay before responding, which is invisible to a human clicking through a directory but meaningfully throttles an automated script making requests as fast as possible
-2. **Temporary block** — after a clearly abnormal volume, block the requesting IP or account for a set cooldown period, with a clear message explaining why
-3. **Manual review flag** — a pattern that repeats across multiple cooldown cycles gets flagged for a human to look at, since a legitimate user rarely triggers the same limit twice
+1. **Soft slowdown** - after a moderate volume of requests in a short window, add a brief delay before responding, which is invisible to a human clicking through a directory but meaningfully throttles an automated script making requests as fast as possible
+2. **Temporary block** - after a clearly abnormal volume, block the requesting IP or account for a set cooldown period, with a clear message explaining why
+3. **Manual review flag** - a pattern that repeats across multiple cooldown cycles gets flagged for a human to look at, since a legitimate user rarely triggers the same limit twice
 
 **Distinguish between anonymous and authenticated traffic**
 
@@ -80,7 +80,7 @@ A rate limit applied per logged-in account is easier to calibrate accurately tha
 
 A threshold that was reasonable at 20 coordinators may need adjusting at 200, and a limit set once during initial implementation and never revisited again is a common way founders end up with either an ineffective limit that quietly stopped mattering, or an overly strict one that started generating support tickets nobody connected back to the original configuration.
 
-Getting this calibration right the first time is exactly the kind of judgment call that benefits from having configured the same kind of protection across many different products and traffic patterns before — which is part of why LaunchStudio treats rate limit calibration as a specific, deliberate step rather than an arbitrary default number applied the same way everywhere.
+Getting this calibration right the first time is exactly the kind of judgment call that benefits from having configured the same kind of protection across many different products and traffic patterns before - which is part of why LaunchStudio treats rate limit calibration as a specific, deliberate step rather than an arbitrary default number applied the same way everywhere.
 
 ## Real example
 
@@ -93,9 +93,9 @@ A brigade coordinator using an unrelated online tool noticed an unusually large,
 **Result:** LaunchStudio implemented a calibrated rate limit on the directory search feature, allowing normal coordinator use to continue exactly as before while meaningfully restricting the kind of rapid, repeated requests that had allowed the apparent bulk collection to occur.
 
 > *"We never figured out with total certainty exactly how that export happened, but the review made clear it absolutely could have happened this way, and that alone was enough to make fixing it urgent."*
-> — **Duco Hendriks, Founder, BrandweerRoster (Alphen aan den Rijn)**
+> - **Duco Hendriks, Founder, BrandweerRoster (Alphen aan den Rijn)**
 
-**Cost & Timeline:** €1,900 (directory search rate limiting implementation) — completed in 6 business days.
+**Cost & Timeline:** €1,900 (directory search rate limiting implementation) - completed in 6 business days.
 
 ---
 
@@ -103,23 +103,23 @@ A brigade coordinator using an unrelated online tool noticed an unusually large,
 
 ### Would a data protection specialist consider directory scraping a serious risk even when the underlying data seems relatively low-stakes?
 
-Yes — even seemingly low-stakes contact information becomes more sensitive once aggregated at scale, since a complete directory export enables a range of misuse (targeted spam, impersonation, unwanted contact) that individual, one-at-a-time access to the same information doesn't meaningfully enable in the same way.
+Yes - even seemingly low-stakes contact information becomes more sensitive once aggregated at scale, since a complete directory export enables a range of misuse (targeted spam, impersonation, unwanted contact) that individual, one-at-a-time access to the same information doesn't meaningfully enable in the same way.
 
 ### Does this risk only apply to directories with personal contact information, or other kinds of public listing features too?
 
-It applies to any public listing or search feature returning meaningful volume of data through repeated requests — product catalogs, public review sections, or any other browsable dataset all face some version of the same underlying scraping risk if left completely unrestricted.
+It applies to any public listing or search feature returning meaningful volume of data through repeated requests - product catalogs, public review sections, or any other browsable dataset all face some version of the same underlying scraping risk if left completely unrestricted.
 
-### Manifera's experience protecting production systems from automated abuse — does that transfer directly to a volunteer organization's scheduling tool?
+### Manifera's experience protecting production systems from automated abuse - does that transfer directly to a volunteer organization's scheduling tool?
 
-Yes, directly — the underlying rate-limiting technique and calibration approach is identical regardless of the specific data being protected, and applying an already-proven approach to BrandweerRoster's directory feature is considerably faster than developing an equivalent protection from scratch for this specific case.
+Yes, directly - the underlying rate-limiting technique and calibration approach is identical regardless of the specific data being protected, and applying an already-proven approach to BrandweerRoster's directory feature is considerably faster than developing an equivalent protection from scratch for this specific case.
 
-### Herre Roelevink has spoken about risks that require no special technical sophistication to exploit, just patience — does directory scraping fit that description precisely?
+### Herre Roelevink has spoken about risks that require no special technical sophistication to exploit, just patience - does directory scraping fit that description precisely?
 
-Precisely — scraping a public directory requires no authentication breach or complex exploit, simply the patience to make repeated requests systematically, exactly the low-sophistication-but-real-risk category Roelevink's commentary on overlooked AI-native product gaps consistently highlights.
+Precisely - scraping a public directory requires no authentication breach or complex exploit, simply the patience to make repeated requests systematically, exactly the low-sophistication-but-real-risk category Roelevink's commentary on overlooked AI-native product gaps consistently highlights.
 
 ### Is rate limiting alone sufficient to fully prevent this kind of scraping, or are there additional protections worth considering?
 
-Rate limiting meaningfully raises the difficulty and reduces the practicality of large-scale scraping, though a fully comprehensive approach might also consider whether the full dataset genuinely needs to be publicly searchable at all, or whether some information could reasonably require authentication first — a broader question worth discussing during a full review rather than addressed by rate limiting alone.
+Rate limiting meaningfully raises the difficulty and reduces the practicality of large-scale scraping, though a fully comprehensive approach might also consider whether the full dataset genuinely needs to be publicly searchable at all, or whether some information could reasonably require authentication first - a broader question worth discussing during a full review rather than addressed by rate limiting alone.
 
 <script type="application/ld+json">
 {
@@ -155,7 +155,7 @@ Rate limiting meaningfully raises the difficulty and reduces the practicality of
       "name": "Does directory scraping fit the low-sophistication-but-real-risk pattern the CEO describes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Precisely — it requires no exploit, just the patience to make repeated requests systematically."
+        "text": "Precisely - it requires no exploit, just the patience to make repeated requests systematically."
       }
     },
     {

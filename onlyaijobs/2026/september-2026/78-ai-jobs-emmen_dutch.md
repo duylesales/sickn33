@@ -25,13 +25,13 @@ Emmen telt ongeveer 107.000 inwoners in Zuidoost-Drenthe, dicht bij de Duitse gr
 
 ## Chemie- en polymeerprocesdata is een echt technisch domein
 
-**Het product wordt gedefinieerd door eigenschappen, niet alleen door samenstelling.** De bruikbaarheid van een polymeer hangt af van molecuulgewichtsverdeling, kristalliniteit, mechanische sterkte, thermisch gedrag en uiterlijk. Die eigenschappen komen voort uit procescondities — temperatuurprofielen, afschuiving, verblijftijd, afkoelsnelheid — op manieren die met de onderliggende fysica te maken hebben maar er niet simpelweg uit te berekenen zijn.
+**Het product wordt gedefinieerd door eigenschappen, niet alleen door samenstelling.** De bruikbaarheid van een polymeer hangt af van molecuulgewichtsverdeling, kristalliniteit, mechanische sterkte, thermisch gedrag en uiterlijk. Die eigenschappen komen voort uit procescondities - temperatuurprofielen, afschuiving, verblijftijd, afkoelsnelheid - op manieren die met de onderliggende fysica te maken hebben maar er niet simpelweg uit te berekenen zijn.
 
 **Meting loopt achter op productie.** Veel kwaliteitseigenschappen vragen laboratoriumtesten die uren duren. Wanneer je weet dat een batch buiten specificatie valt, heb je er al meer van gemaakt. Precies de situatie waarvoor soft sensors bestaan: de laboratoriummeting afleiden uit continu beschikbare procesdata.
 
 **Processen zijn continu en gekoppeld.** Materiaal stroomt door vaten met verblijftijdverdelingen, dus een uitvoermeting relateren aan ingangscondities vraagt het schatten van een variabele, verdeelde vertraging. Bovendien zijn chemische processen sterk gekoppeld: temperatuur aanpassen om één eigenschap te herstellen raakt er drie andere.
 
-**Bij overgangen zit de waarde.** Een fabriek die stabiel op een bekend goed werkpunt draait, is niet waar de problemen zitten. Gradewisselingen — overschakelen van de ene productspecificatie naar de andere — leveren materiaal buiten specificatie op, kosten tijd en veroorzaken een substantieel deel van de verspilling.
+**Bij overgangen zit de waarde.** Een fabriek die stabiel op een bekend goed werkpunt draait, is niet waar de problemen zitten. Gradewisselingen - overschakelen van de ene productspecificatie naar de andere - leveren materiaal buiten specificatie op, kosten tijd en veroorzaken een substantieel deel van de verspilling.
 
 **Energie-intensiteit maakt optimalisatie direct waardevol.** Chemische verwerking gebruikt veel energie, en energieprijzen hebben verlaging financieel urgent gemaakt.
 
@@ -107,7 +107,7 @@ Passen die vier bij je, dan biedt procesindustrie een loopbaan met ongewone duur
 - Polymeerprocesdatawerk is werkelijk veeleisend: eigenschappen komen voort uit procescondities op niet simpel berekenbare wijze, kwaliteitsmeting loopt uren achter, en continue stroming breekt aannames.
 - Bij gradewisselingen in plaats van stabiel bedrijf zitten de verspilling én de kans.
 - Gerecycled materiaal introduceert een nieuwere probleemklasse waarin ingangsvariabiliteit de kernuitdaging is.
-- Zuidoost-Drenthe kent bevolkingsdaling, een niet-groeiende werkgeversbasis en op lange termijn uitdunnende voorzieningen — echte overwegingen, geen redenen de regio af te wijzen.
+- Zuidoost-Drenthe kent bevolkingsdaling, een niet-groeiende werkgeversbasis en op lange termijn uitdunnende voorzieningen - echte overwegingen, geen redenen de regio af te wijzen.
 - Wervingsmoeite verbetert je positie maar vergroot het risico de enige te zijn die jouw werk doet.
 - Met Duits compenseert de grensmarkt de lokale dunheid werkelijk; zonder Duits zijn de opties smal.
 

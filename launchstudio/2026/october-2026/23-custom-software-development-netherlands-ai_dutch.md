@@ -19,13 +19,13 @@ Die kloof tussen *"het ziet er af uit"* en *"het is veilig om er een bedrijf op 
 
 ## De Verschuiving van Bouwen naar Verharden (The Shift to Hardening)
 
-De definitie van maatwerk softwareontwikkeling is fundamenteel veranderd. De economische waarde zit niet langer in het uitschrijven van standaard UI-boilerplate code. AI-tools doen dat immers perfect, foutloos en binnen enkele seconden. De nieuwe waardepropositie voor bureaus schuilt in **"backend hardening"** — het niet-glamoureuze, hooggespecialiseerde softwarewerk om een ruw prototype om te vormen tot een robuust systeem dat bestand is tegen echte gebruikers, echte betalingen en actieve cyberaanvallen.
+De definitie van maatwerk softwareontwikkeling is fundamenteel veranderd. De economische waarde zit niet langer in het uitschrijven van standaard UI-boilerplate code. AI-tools doen dat immers perfect, foutloos en binnen enkele seconden. De nieuwe waardepropositie voor bureaus schuilt in **"backend hardening"** - het niet-glamoureuze, hooggespecialiseerde softwarewerk om een ruw prototype om te vormen tot een robuust systeem dat bestand is tegen echte gebruikers, echte betalingen en actieve cyberaanvallen.
 
 ### Stop met het Verkopen van UI, Verkoop Infrastructuur
 
 Wanneer een klant u een door AI gegenereerd prototype overhandigt, moet u ervan uitgaan dat de visuele voorkant prachtig is, maar de backend een beveiligingsnachtmerrie. AI-tools doen structureel het volgende:
 - Zij omzeilen Row Level Security (RLS) in databases, waardoor elke ingelogde gebruiker records van andere klanten kan opvragen.
-- Zij lekken productie-API-sleutels — voor OpenAI, Stripe of interne systemen — rechtstreeks in de client-side JavaScript-bundels, zichtbaar voor iedereen in de browser-ontwikkelaarstools.
+- Zij lekken productie-API-sleutels - voor OpenAI, Stripe of interne systemen - rechtstreeks in de client-side JavaScript-bundels, zichtbaar voor iedereen in de browser-ontwikkelaarstools.
 - Zij laten essentiële rate-limiting achterwege, waardoor zowel AI-kosten als inlogformulieren kwetsbaar zijn voor grootschalig misbruik.
 - Zij slaan server-side inputvalidatie volledig over en vertrouwen blindelings op data vanuit de browser, wat de deur wagenwijd openzet voor SQL-injecties en XSS-aanvallen.
 - Zij laten staging- en productie-omgevingsvariabelen door elkaar lopen, waardoor test-keys per ongeluk in live-omgevingen belanden.
@@ -54,11 +54,11 @@ Het probleem voor veel creatieve en design-gerichte bureaus is dat "backend hard
 
 Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) een **white-label partnerprogramma** heeft ontwikkeld.
 
-Gesteund door ruim 11 jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise softwareontwikkeling — met bewezen [referentieprojecten](https://www.manifera.com/portfolio/) voor toonaangevende organisaties zoals Vodafone, TNO en CFLW — fungeert LaunchStudio als de geruisloze backend engineering-afdeling voor Nederlandse digitale bureaus.
+Gesteund door ruim 11 jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise softwareontwikkeling - met bewezen [referentieprojecten](https://www.manifera.com/portfolio/) voor toonaangevende organisaties zoals Vodafone, TNO en CFLW - fungeert LaunchStudio als de geruisloze backend engineering-afdeling voor Nederlandse digitale bureaus.
 
 **Jouw branding, onze techniek.**
 
-Wanneer uw klant een door AI gegenereerd prototype aanlevert, beheert u de klantrelatie en verfijnt de gebruikerservaring. U draagt de codebase over aan LaunchStudio. Wij voeren de kritieke software-engineering uit: wij beveiligen de database, herschrijven ongeautoriseerde API-routes, configureren betaalsystemen en deployen de applicatie veilig. Dankzij Manifera's multidisciplinaire engineeringteams — opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze internationale vestiging in **Singapore** (100 Tras Street) en ons omvangrijke software-center in **Ho Chi Minhstad, Vietnam** (10 Pho Quang Street) — profiteren bureaupartners van 24-uurs engineeringcapaciteit (follow-the-sun model).
+Wanneer uw klant een door AI gegenereerd prototype aanlevert, beheert u de klantrelatie en verfijnt de gebruikerservaring. U draagt de codebase over aan LaunchStudio. Wij voeren de kritieke software-engineering uit: wij beveiligen de database, herschrijven ongeautoriseerde API-routes, configureren betaalsystemen en deployen de applicatie veilig. Dankzij Manifera's multidisciplinaire engineeringteams - opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze internationale vestiging in **Singapore** (100 Tras Street) en ons omvangrijke software-center in **Ho Chi Minhstad, Vietnam** (10 Pho Quang Street) - profiteren bureaupartners van 24-uurs engineeringcapaciteit (follow-the-sun model).
 
 U factureert uw klant een uitstekende premie voor een enterprise-waardige lancering, terwijl wij u een voorspelbare, vaste inkoopprijs rekenen. U schaalt uw bureaucapaciteit op zonder extra personeelskosten, en hoeft nooit meer projecten af te wijzen.
 
@@ -66,13 +66,13 @@ U factureert uw klant een uitstekende premie voor een enterprise-waardige lancer
 
 Bureaus die deze transitie succesvol maken, positioneren zich niet ineens als puur cybersecurity-bedrijf. Zij houden het gesprek gericht op het eindresultaat: een werkend, veilig product op het eigen domein van de klant, snel geleverd. De offerte verschuift van *"€ 50.000 voor 4 maanden herbouw"* naar bijvoorbeeld *"€ 3.000 voor een UX-sprint, plus € 8.000 tot € 15.000 voor enterprise-grade hardening en livegang binnen 2 tot 3 weken"*.
 
-Dit levert het bureau een gezonde marge op — vaak een betere netto winstmarge dan in het traditionele model doordat de AI-tool gigantisch veel uren bespaart op de frontend — terwijl het voor de klant drastisch sneller en voordeliger is. Het koppelen van de hardening-fase aan concrete deliverables (zoals een geslaagde penetratietest, een AVG-geauditeerde datastroom en een geteste Stripe-integratie) geeft de klant tastbare zekerheid die intern eenvoudig goedgekeurd wordt door stakeholders en directies.
+Dit levert het bureau een gezonde marge op - vaak een betere netto winstmarge dan in het traditionele model doordat de AI-tool gigantisch veel uren bespaart op de frontend - terwijl het voor de klant drastisch sneller en voordeliger is. Het koppelen van de hardening-fase aan concrete deliverables (zoals een geslaagde penetratietest, een AVG-geauditeerde datastroom en een geteste Stripe-integratie) geeft de klant tastbare zekerheid die intern eenvoudig goedgekeurd wordt door stakeholders en directies.
 
 ## Belangrijkste Inzichten
 
 - Het traditionele model van € 50k en 4 maanden maatwerk softwareontwikkeling is achterhaald; klanten bouwen prototypes met AI en verwachten snelle livegang.
 - Bureaus moeten hun waardepropositie verschuiven van het schrijven van UI-code naar het leveren van veilige "backend hardening" en infrastructuur.
-- 45% van de AI-code bevat kwetsbaarheden en 80% van de AI-projecten strandt vóór productie — dat gat is de nieuwe inkomstenbron voor softwarebureaus.
+- 45% van de AI-code bevat kwetsbaarheden en 80% van de AI-projecten strandt vóór productie - dat gat is de nieuwe inkomstenbron voor softwarebureaus.
 - Creatieve bureaus missen vaak de in-house DevOps-capaciteit om AI-code winstgevend te beveiligen; een fulltime senior engineer (€ 90k+/jaar) is te kostbaar voor projectwerk.
 - LaunchStudio biedt een discreet white-label partnerschap, waardoor Nederlandse bureaus AI-applicaties onder eigen merk veilig kunnen lanceren.
 
@@ -92,7 +92,7 @@ Onder een strikte geheimhoudingsverklaring (NDA) trad LaunchStudio op als de bac
 
 **Resultaat:** Studio Vorm leverde binnen 14 werkdagen een enterprise-waardig portaal op aan de logistieke klant. Zij factureerden de klant € 12.000 voor het complete traject en sloten tevens een maandelijks onderhoudscontract af. De klant was laaiend enthousiast over de snelheid, en Studio Vorm behield zijn sleutelklant zonder extra personeel te hoeven aannemen. *"LaunchStudio stelde ons in staat ons direct aan te passen aan het AI-tijdperk. We zeggen nu volmondig 'ja' tegen elk AI-prototype project."*
 
-**Kosten & Tijdlijn:** €3.500 (White-label Launch Ready Pakket) — binnen 14 werkdagen volledig opgeleverd.
+**Kosten & Tijdlijn:** €3.500 (White-label Launch Ready Pakket) - binnen 14 werkdagen volledig opgeleverd.
 
 ---
 
@@ -100,7 +100,7 @@ Onder een strikte geheimhoudingsverklaring (NDA) trad LaunchStudio op als de bac
 
 ### Is maatwerk softwareontwikkeling ten dode opgeschreven door AI?
 
-Nee, absoluut niet, maar het *type* werk is fundamenteel veranderd. Het genereren van frontend UI-code is geautomatiseerd door AI. Moderne maatwerk softwareontwikkeling focust zich op complexe backend-architectuur, security audits, database-ontwerp, third-party API-integraties en schaalbare infrastructuur — de elementen die bepalen of een bedrijf zijn eerste echte klanten overleeft.
+Nee, absoluut niet, maar het *type* werk is fundamenteel veranderd. Het genereren van frontend UI-code is geautomatiseerd door AI. Moderne maatwerk softwareontwikkeling focust zich op complexe backend-architectuur, security audits, database-ontwerp, third-party API-integraties en schaalbare infrastructuur - de elementen die bepalen of een bedrijf zijn eerste echte klanten overleeft.
 
 ### Hoe concurreren Nederlandse bureaus met klanten die hun eigen AI-prototypes bouwen?
 

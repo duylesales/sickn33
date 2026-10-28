@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-You want different work — more engineering, a different domain, a lead role, a team that ships — and there are two routes to it. One is inside your current employer: a different team, a different function, possibly a different site, with everything else unchanged. The other is a new employer, a new contract and a fresh start. Candidates often treat the internal option as a consolation prize and the external one as the real move. That ranking is frequently wrong, and it costs people good opportunities that were available two floors away. It is also sometimes right, particularly about money.
+You want different work - more engineering, a different domain, a lead role, a team that ships - and there are two routes to it. One is inside your current employer: a different team, a different function, possibly a different site, with everything else unchanged. The other is a new employer, a new contract and a fresh start. Candidates often treat the internal option as a consolation prize and the external one as the real move. That ranking is frequently wrong, and it costs people good opportunities that were available two floors away. It is also sometimes right, particularly about money.
 
 ## Why the Internal Move Is Underrated
 
@@ -65,7 +65,7 @@ Here the external route usually wins, and it is worth being clear-eyed about it.
 
 Internal moves typically follow the organisation's pay structure: a step within a scale, or a move to an adjacent one. External moves reset your salary to whatever the market will pay, which after several years in one place is frequently a larger jump than any internal progression would produce.
 
-Two things moderate that. First, pay transparency obligations are pushing employers to be more explicit about ranges and criteria, which makes internal inequities harder to sustain quietly and gives you better grounds to ask. Second, where a collective agreement applies, the scale is the scale, and no amount of negotiation changes it — so the internal ceiling is knowable in advance.
+Two things moderate that. First, pay transparency obligations are pushing employers to be more explicit about ranges and criteria, which makes internal inequities harder to sustain quietly and gives you better grounds to ask. Second, where a collective agreement applies, the scale is the scale, and no amount of negotiation changes it - so the internal ceiling is knowable in advance.
 
 The practical approach: find out the scale attached to the internal role before you decide. If it is a genuine step, the internal move's lower risk may well be worth more than an external increase. If the internal role pays the same for materially more responsibility, you have learned something about your employer.
 
@@ -79,7 +79,7 @@ The practical approach: find out the scale attached to the internal role before 
 
 **Get the terms in writing.** Scale, salary, hours, reporting line and any commitment about scope. Internal moves are frequently agreed verbally and remembered differently later.
 
-**Expect to prove yourself again, a little.** Internal credibility transfers, but not entirely — you are still new to that team's work.
+**Expect to prove yourself again, a little.** Internal credibility transfers, but not entirely - you are still new to that team's work.
 
 ## What Can Go Wrong
 
@@ -89,14 +89,14 @@ The practical approach: find out the scale attached to the internal role before 
 
 **The reputation shift.** In a small number of organisations, expressing interest elsewhere marks you as disloyal. Where that is the culture, you have learned something important about staying.
 
-**The same problem, different team.** If what you dislike is the organisation — its pace, its politics, its appetite for data work — an internal move changes the wallpaper. Be honest about whether the problem is the team or the place.
+**The same problem, different team.** If what you dislike is the organisation - its pace, its politics, its appetite for data work - an internal move changes the wallpaper. Be honest about whether the problem is the team or the place.
 
 ## When Internal Is Clearly Better
 
 - The work you want genuinely exists inside your employer.
 - Your context and relationships would transfer into the new role usefully.
 - The organisation is a good place to work and the current team is the problem.
-- You need stability — a mortgage, a permit, a demanding period at home.
+- You need stability - a mortgage, a permit, a demanding period at home.
 - The internal role is a real step in scale and scope.
 - You would keep learning from people you respect.
 
@@ -106,7 +106,7 @@ The practical approach: find out the scale attached to the internal role before 
 - Your salary has drifted well below market and internal structures cannot correct it.
 - You have already tried internally and been blocked.
 - You have stopped learning from the organisation as a whole.
-- Your reputation there is fixed at a level you have outgrown — a real phenomenon, and a common reason capable people leave.
+- Your reputation there is fixed at a level you have outgrown - a real phenomenon, and a common reason capable people leave.
 - The employer's direction on data work is one you do not believe in.
 
 ## A Note on Using an External Offer
@@ -115,7 +115,7 @@ Some people obtain an external offer to force an internal move or a pay correcti
 
 The cleaner sequence is to ask internally first, on the merits, and to go externally when the answer is no. You keep the relationships either way, and in a market as small as Dutch data work, that matters more than a single increase.
 
-There is also a middle path that costs nothing: interview externally to find out what the market pays, decide honestly whether you would accept, and only then open the internal conversation. Knowing your market value changes how you ask, even when you never mention the other process — and if the internal answer is disappointing, you already know what your alternatives look like rather than guessing.
+There is also a middle path that costs nothing: interview externally to find out what the market pays, decide honestly whether you would accept, and only then open the internal conversation. Knowing your market value changes how you ask, even when you never mention the other process - and if the internal answer is disappointing, you already know what your alternatives look like rather than guessing.
 
 ## How Employers Read This Later
 
@@ -123,7 +123,7 @@ Both routes leave a trace on your record, and it is worth knowing how Dutch hiri
 
 **Long tenure with internal moves reads well.** Eight years at one employer, with three distinct roles, signals that an organisation kept investing in you and that you can operate in different contexts. It is read very differently from eight years in the same job.
 
-**Long tenure without internal moves raises a question.** Not about loyalty, but about breadth: interviewers wonder whether your practice has been shaped by one organisation's habits, and whether you would adapt. The answer is to describe what changed within the role — new systems, new domains, new responsibilities — rather than the years.
+**Long tenure without internal moves raises a question.** Not about loyalty, but about breadth: interviewers wonder whether your practice has been shaped by one organisation's habits, and whether you would adapt. The answer is to describe what changed within the role - new systems, new domains, new responsibilities - rather than the years.
 
 **Frequent external moves raise a different question.** Three employers in four years invites a question about whether you stay long enough to live with your own decisions, which matters in a field where models fail eighteen months after deployment.
 
@@ -153,13 +153,13 @@ Two years on, she is doing the work she wanted, at an employer she never had to 
 
 - Internal moves preserve context, relationships, reputation and terms, and carry far less of the risk that makes job changes go wrong.
 - They usually happen only when you create them: talk to the receiving manager informally first, then your own manager.
-- External moves generally pay better, because they reset your salary to the market rather than following an internal structure — check the scale of the internal role before deciding.
+- External moves generally pay better, because they reset your salary to the market rather than following an internal structure - check the scale of the internal role before deciding.
 - Refuse the half-move where you keep old responsibilities, agree a handover and get the new terms in writing.
 - Go externally when the work does not exist internally, when you have been blocked, or when your reputation there is fixed at a level you have outgrown.
 
 ## Where to Start
 
-Before concluding that your next step has to be elsewhere, find out what the external market looks like near you — it tells you what an internal move is worth, and what to ask for.
+Before concluding that your next step has to be elsewhere, find out what the external market looks like near you - it tells you what an internal move is worth, and what to ask for.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -185,7 +185,7 @@ It works, and it costs you: you may be seen as negotiating under threat, and you
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is an internal move a lesser option?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — it preserves context, relationships and terms with far less risk; pay is the usual drawback."}},
+    {"@type": "Question", "name": "Is an internal move a lesser option?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - it preserves context, relationships and terms with far less risk; pay is the usual drawback."}},
     {"@type": "Question", "name": "How do I start an internal move?", "acceptedAnswer": {"@type": "Answer", "text": "Speak informally to the receiving manager first, then tell your own manager, framed as development."}},
     {"@type": "Question", "name": "Will I earn less by moving internally?", "acceptedAnswer": {"@type": "Answer", "text": "Often, since external moves reset pay to the market; check the internal scale first."}},
     {"@type": "Question", "name": "What if my manager blocks the move?", "acceptedAnswer": {"@type": "Answer", "text": "Two quarters of agreement without movement is an answer; that is when an external search makes sense."}},

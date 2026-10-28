@@ -1,6 +1,6 @@
-🧭 Evelyn, a bookkeeper, built an audit tool with **Lovable** — but high churn hit fast because new users had no idea how to format their Excel uploads, and the open chat box gave them zero guidance. 📊
+🧭 Evelyn, a bookkeeper, built an audit tool with **Lovable** - but high churn hit fast because new users had no idea how to format their Excel uploads, and the open chat box gave them zero guidance. 📊
 
-If you promise "our AI can do anything," users will ask something no model can reliably answer — and their first impression will be a confidently wrong one. 🧠
+If you promise "our AI can do anything," users will ask something no model can reliably answer - and their first impression will be a confidently wrong one. 🧠
 
 ❌ A blank chat window as the very first thing a brand-new user sees
 ❌ No indication of what the AI can and can't actually process

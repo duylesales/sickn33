@@ -55,7 +55,7 @@ Het aanvragen van toegang tot alleen de specifieke sites of pagina-elementen die
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt AI-browserextensies specifiek op de evenredigheid van de machtigingsomvang en de helderheid van de gegevensverwerking voor de inzending in de winkel. Wij dichten de kloof tussen het brede toegangspatroon van een AI-coderingshulpmiddel en wat winkelbeoordelingen en gebruikersvertrouwen daadwerkelijk vereisen, ondersteund door Manifera's bredere ervaring in het navigeren door platformspecifieke beoordelingsprocessen in meerdere productcategorieën.
 
-[Laat de machtigingen van uw extensie afbakenen voordat een winkelbeoordeling ze markeert](https://launchstudio.eu/nl/#calculator) — bredere toegang dan nodig is een risico voor zowel beoordeling als vertrouwen.
+[Laat de machtigingen van uw extensie afbakenen voordat een winkelbeoordeling ze markeert](https://launchstudio.eu/nl/#calculator) - bredere toegang dan nodig is een risico voor zowel beoordeling als vertrouwen.
 
 ## Vier vragen om te stellen voordat u een nieuwe machtiging aanvraagt
 
@@ -84,9 +84,9 @@ Het beoordelingsproces van de Chrome Web Store wees de initiële inzending van P
 **Resultaat:** LaunchStudio herstructureerde het machtigingsmodel van PaginaSamenvatter om alleen toegang aan te vragen wanneer een gebruiker de samenvattingsfunctie expliciet activeerde op een specifieke pagina, in plaats van permanente brede toegang. Hiermee werd de winkelbeoordeling bij de herinzending doorstaan en kregen privacybewuste gebruikers als secundair voordeel een duidelijker, nauwkeuriger beeld van wat de extensie daadwerkelijk wel en niet opende.
 
 > *"Ik had oprecht niet nagedacht over het verschil tussen 'werkt op elke site' en 'heeft permanente toegang tot alles op elke site', aangezien ze tijdens het bouwen functioneel hetzelfde voelden voor mij. De afwijzing in de winkelbeoordeling was de eerste keer dat iemand daadwerkelijk een punt maakte van dat specifieke onderscheid."*
-> — **Sander Kloosterman, Oprichter, PaginaSamenvatter (Wageningen)**
+> - **Sander Kloosterman, Oprichter, PaginaSamenvatter (Wageningen)**
 
-**Kosten en tijdlijn:** € 850 (afbakening van machtigingen en herinzending in de winkel) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 850 (afbakening van machtigingen en herinzending in de winkel) - voltooid in 3 werkdagen.
 
 ---
 
@@ -138,7 +138,7 @@ In geest gerelateerd – beide betreffen het verlenen van alleen wat daadwerkeli
       "name": "Is een door actie geactiveerde machtiging altijd mogelijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Afhankelijk van functionaliteit — sommige hebben achtergrondtoegang nodig, terwijl veel alleen toegang kunnen vragen bij activatie."
+        "text": "Afhankelijk van functionaliteit - sommige hebben achtergrondtoegang nodig, terwijl veel alleen toegang kunnen vragen bij activatie."
       }
     },
     {

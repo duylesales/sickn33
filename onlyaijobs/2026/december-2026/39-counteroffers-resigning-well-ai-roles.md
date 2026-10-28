@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Counteroffers and Resigning Well: How to Leave a Dutch AI Job Without Burning the Bridge",
-  "description": "Notice periods, handovers, counteroffers and references work differently in a small labour market where you will meet these people again — here is how to handle the last six weeks.",
+  "description": "Notice periods, handovers, counteroffers and references work differently in a small labour market where you will meet these people again - here is how to handle the last six weeks.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-20",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The Dutch data market is small. The manager you resign from may interview you in six years, sit on a panel with you next spring, or become a customer. Resigning badly is one of the few career mistakes that follows people around in a country this size, and it is entirely avoidable — the mechanics are simple once you know them.
+The Dutch data market is small. The manager you resign from may interview you in six years, sit on a panel with you next spring, or become a customer. Resigning badly is one of the few career mistakes that follows people around in a country this size, and it is entirely avoidable - the mechanics are simple once you know them.
 
 This article is general information, not legal advice; contracts and collective agreements differ.
 
@@ -65,11 +65,11 @@ Then let your manager decide how and when the wider team is told. Respecting tha
 
 If you are valuable, a counteroffer is likely, and the moment it is made is the worst possible time to start thinking about it.
 
-Decide in advance what, if anything, would genuinely make you stay — and be specific: a different scope, a promotion with a defined scale, a different manager, a reduced on-call burden. If the honest answer is that nothing would, then say so kindly and hold the line.
+Decide in advance what, if anything, would genuinely make you stay - and be specific: a different scope, a promotion with a defined scale, a different manager, a reduced on-call burden. If the honest answer is that nothing would, then say so kindly and hold the line.
 
 The arguments against accepting counteroffers are well known and mostly sound. The underlying reasons you started looking rarely change because money was added. Your loyalty is now a known quantity, which can affect how you are viewed in future planning. And the increase you received under pressure may substitute for the one you would have received anyway.
 
-That said, the blanket advice that counteroffers are always a trap is too strong. A counteroffer that addresses the actual reason you were leaving — genuinely different work, a structural change to a problem, a move to another team — can be the right choice, particularly if you liked the organisation and were leaving reluctantly.
+That said, the blanket advice that counteroffers are always a trap is too strong. A counteroffer that addresses the actual reason you were leaving - genuinely different work, a structural change to a problem, a move to another team - can be the right choice, particularly if you liked the organisation and were leaving reluctantly.
 
 The test is simple: if the offer had arrived three months ago without a resignation attached, would you have been happy? If yes, consider it seriously. If it is only money against a problem that was never about money, decline.
 
@@ -79,7 +79,7 @@ An engineer resigns from a company where they had been unhappy. In the conversat
 
 The notice period is technically served. No handover documentation is produced, and the model they maintained fails a month after they leave with nobody able to diagnose it.
 
-Two years later, their name comes up when a former colleague is asked informally about them by a hiring manager. The answer is not malicious — it is simply honest: strong technically, left us in a difficult position.
+Two years later, their name comes up when a former colleague is asked informally about them by a hiring manager. The answer is not malicious - it is simply honest: strong technically, left us in a difficult position.
 
 In a market of this size, that conversation happens more often than people imagine, and it is the reason the last six weeks are worth taking seriously even when the job was bad. The grievances may have been entirely justified; the outcome is still avoidable.
 
@@ -89,7 +89,7 @@ Data and machine learning roles are unusually dependent on undocumented knowledg
 
 **Systems you own.** What runs, when, what it depends on, what breaks most often, and how to fix it. Write it down even if you also explain it verbally.
 
-**Access and credentials.** What you have access to, what should be revoked, and what nobody else currently has. Never leave shared credentials in place, and never take copies of data with you — this is both a professional and a legal matter.
+**Access and credentials.** What you have access to, what should be revoked, and what nobody else currently has. Never leave shared credentials in place, and never take copies of data with you - this is both a professional and a legal matter.
 
 **Decisions and context.** Why things are built the way they are. This is the part that disappears entirely when someone leaves and is the most valuable thing you can leave behind.
 
@@ -103,15 +103,15 @@ A useful standard: could someone competent, who has never spoken to you, keep th
 
 Dutch employers commonly hold one, sometimes with HR rather than your manager.
 
-Be honest but measured. Structural, specific and non-personal feedback — workload distribution, unclear ownership, a process that does not work — is useful and can genuinely change things. A list of grievances about individuals will be repeated, will not change anything, and will define how you are remembered.
+Be honest but measured. Structural, specific and non-personal feedback - workload distribution, unclear ownership, a process that does not work - is useful and can genuinely change things. A list of grievances about individuals will be repeated, will not change anything, and will define how you are remembered.
 
-If something genuinely serious occurred — harassment, unsafe practice, a legal breach — that is a different conversation, and it should be raised through the proper channel rather than mentioned in passing on your last day.
+If something genuinely serious occurred - harassment, unsafe practice, a legal breach - that is a different conversation, and it should be raised through the proper channel rather than mentioned in passing on your last day.
 
 ## The Weeks After You Give Notice
 
 The tone of your final weeks is what people actually remember, more than anything you achieved earlier.
 
-Keep delivering. Finish what you can finish, and be honest about what you cannot. Offer to help onboard your replacement, including after you leave if you are willing — a short, bounded offer, such as answering questions for a month, is generous without being open-ended.
+Keep delivering. Finish what you can finish, and be honest about what you cannot. Offer to help onboard your replacement, including after you leave if you are willing - a short, bounded offer, such as answering questions for a month, is generous without being open-ended.
 
 Stay off the topic of your new employer's superiority. Say goodbye properly to people who helped you. And leave the documentation better than you found it, which is the professional equivalent of returning a borrowed tool cleaned.
 
@@ -125,7 +125,7 @@ Some organisations, particularly in financial services and in competitive commer
 
 What you can reasonably ask for is clarity: whether you will continue working, what access you retain, what you are expected to complete, and how the handover will happen if you cannot log in. If you are placed on non-working notice, salary and benefits normally continue for the notice period, and you should confirm the terms in writing.
 
-Two boundaries matter absolutely. Do not copy data, code, documents or contacts to take with you, even material you personally created — this is both a confidentiality breach and, where personal data is involved, a data protection issue. And do not approach clients or colleagues about your new employer while still employed, particularly if a relation clause exists.
+Two boundaries matter absolutely. Do not copy data, code, documents or contacts to take with you, even material you personally created - this is both a confidentiality breach and, where personal data is involved, a data protection issue. And do not approach clients or colleagues about your new employer while still employed, particularly if a relation clause exists.
 
 Handled calmly, this phase is forgettable. Handled badly, it is the thing everyone remembers about your departure.
 
@@ -135,7 +135,7 @@ Formal references in the Netherlands are often brief, but informal ones are cons
 
 A Dutch hiring manager considering you will frequently know someone who worked with you, and that quiet conversation carries more weight than any letter. This is why the way you leave matters so disproportionately here, and why it is worth investing in relationships that outlast the job.
 
-Practical steps: ask a former manager or senior colleague directly whether they would be willing to act as a reference, and do so while your work is fresh in their memory rather than three years later. Keep in touch lightly — a message when they change roles, a question occasionally, attendance at the same meetup.
+Practical steps: ask a former manager or senior colleague directly whether they would be willing to act as a reference, and do so while your work is fresh in their memory rather than three years later. Keep in touch lightly - a message when they change roles, a question occasionally, attendance at the same meetup.
 
 And be a good reference for others. In a market this small, the person you helped find a job in 2026 is on the hiring panel in 2031. That is not cynicism; it is simply how a professional community of this size functions.
 
@@ -144,12 +144,12 @@ And be a good reference for others. In a market this small, the person you helpe
 - Check your notice period, non-compete clause and outstanding entitlements before resigning, and never resign on a verbal offer.
 - Tell your manager first, keep it short and final, and confirm in writing the same day.
 - Decide about a counteroffer before it arrives; accept only if it addresses the actual reason you were leaving.
-- The handover is the part people remember — document systems, access, decisions and open threads with named successors.
+- The handover is the part people remember - document systems, access, decisions and open threads with named successors.
 - In a labour market this small, the last six weeks affect references and opportunities for years.
 
 ## Where to Start
 
-Before you accept anything, read your contract's notice and non-compete clauses. Then write the first page of your handover document — you will need it either way.
+Before you accept anything, read your contract's notice and non-compete clauses. Then write the first page of your handover document - you will need it either way.
 
 Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -165,7 +165,7 @@ Only if it addresses the actual reason you were leaving; money alone rarely fixe
 Such clauses exist and are assessed by courts on reasonableness in scope, duration and geography; take advice before signing a competing offer.
 
 ### (Scenario: employee leaving a bad job) Does the handover still matter?
-Yes — in a small market, how you left is discussed informally for years, and a poor handover is remembered longer than a grievance.
+Yes - in a small market, how you left is discussed informally for years, and a poor handover is remembered longer than a grievance.
 
 ### (Scenario: employee in an exit interview) How honest should I be?
 Specific, structural and non-personal feedback is useful; a list of complaints about individuals will be repeated and change nothing.
@@ -178,7 +178,7 @@ Specific, structural and non-personal feedback is useful; a list of complaints a
     {"@type": "Question", "name": "How much notice must I give in a Dutch job?", "acceptedAnswer": {"@type": "Answer", "text": "Whatever the contract or collective agreement specifies; one month is common and some require notice to end on the first of a month."}},
     {"@type": "Question", "name": "Should I accept a counteroffer?", "acceptedAnswer": {"@type": "Answer", "text": "Only if it addresses the actual reason you were leaving; money alone rarely fixes a non-financial problem."}},
     {"@type": "Question", "name": "Can a Dutch non-compete clause stop me joining a competitor?", "acceptedAnswer": {"@type": "Answer", "text": "Such clauses exist and courts assess their reasonableness in scope, duration and geography; take advice first."}},
-    {"@type": "Question", "name": "Does a handover matter if I disliked the job?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — in a small market how you left is discussed informally for years."}},
+    {"@type": "Question", "name": "Does a handover matter if I disliked the job?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - in a small market how you left is discussed informally for years."}},
     {"@type": "Question", "name": "How honest should I be in an exit interview?", "acceptedAnswer": {"@type": "Answer", "text": "Specific, structural, non-personal feedback is useful; complaints about individuals will be repeated and change nothing."}}
   ]
 }

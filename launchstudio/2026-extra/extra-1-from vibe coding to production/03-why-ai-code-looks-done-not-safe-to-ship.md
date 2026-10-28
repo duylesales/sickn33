@@ -31,64 +31,64 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Everyone says AI can code your entire app. Nobody mentions that "looks complete" and "is safe to ship" are answers to two completely different questions — and that AI-generated code is specifically good at making the first one look true before the second one has been checked at all. Having reviewed enough of these codebases to see the pattern, it's worth being precise about why that happens, rather than treating it as a vague warning.
+Everyone says AI can code your entire app. Nobody mentions that "looks complete" and "is safe to ship" are answers to two completely different questions - and that AI-generated code is specifically good at making the first one look true before the second one has been checked at all. Having reviewed enough of these codebases to see the pattern, it's worth being precise about why that happens, rather than treating it as a vague warning.
 
 ## The False Sense of Readiness, and Why It's Structural
 
-A vibe-coded app that renders correctly, handles the happy path smoothly, and demos well creates a strong, misleading impression of completeness. That impression isn't a coincidence or a lapse in the tooling — it's the direct, predictable result of what these tools are optimized to do. An AI coding assistant is trained and evaluated, implicitly, on whether the generated code satisfies the prompt it was given. It says nothing about whether edge cases outside that prompt are handled, whether errors fail gracefully, or whether the dependencies it selected were the right ones for production use rather than simply the fastest ones to wire up. The interface behaving as expected tells you the model understood your request. It tells you nothing about the code's behavior in the much larger space of conditions you never described.
+A vibe-coded app that renders correctly, handles the happy path smoothly, and demos well creates a strong, misleading impression of completeness. That impression isn't a coincidence or a lapse in the tooling - it's the direct, predictable result of what these tools are optimized to do. An AI coding assistant is trained and evaluated, implicitly, on whether the generated code satisfies the prompt it was given. It says nothing about whether edge cases outside that prompt are handled, whether errors fail gracefully, or whether the dependencies it selected were the right ones for production use rather than simply the fastest ones to wire up. The interface behaving as expected tells you the model understood your request. It tells you nothing about the code's behavior in the much larger space of conditions you never described.
 
 ## The Real Question Isn't "Can AI Write Code?"
 
-That question is already settled — yes, obviously, convincingly. The question that actually determines whether your app is safe to launch is different and much narrower: what validation loop proves this code is safe enough to ship? Without an explicit, executed answer to that question, "looks done" is the only evidence you have, and it's evidence about the wrong claim entirely — it tells you the code satisfies a demo, not that it survives contact with unpredictable real-world use.
+That question is already settled - yes, obviously, convincingly. The question that actually determines whether your app is safe to launch is different and much narrower: what validation loop proves this code is safe enough to ship? Without an explicit, executed answer to that question, "looks done" is the only evidence you have, and it's evidence about the wrong claim entirely - it tells you the code satisfies a demo, not that it survives contact with unpredictable real-world use.
 
 ## Where the Gap Specifically Shows Up
 
-- **Missed edge cases** — AI tools optimize for the scenarios described in the prompt, not the ones a real user eventually triggers by accident: unusual input formats, unexpected sequences of actions, boundary values nobody thought to mention
-- **Inadequate error handling** — generic catch-all blocks that don't distinguish a network blip from a payment failure, meaning the app's response to "something went wrong" is identical regardless of what actually went wrong or how the user should react
-- **Inappropriate dependency choices** — packages selected for speed of generation and popularity in training data, not maintained security posture, active support status, or licensing fit for a commercial product
-- **Hidden broken workflows** — features that pass a narrow manual test while failing under slightly different real-world conditions, often because the manual test and the AI's own internal verification both exercised the same narrow path
-- **Security assumptions never actually verified** — access control that exists in the UI but was never confirmed to exist at the API level, which is functionally equivalent to having no access control at all against anyone who bypasses the interface
+- **Missed edge cases** - AI tools optimize for the scenarios described in the prompt, not the ones a real user eventually triggers by accident: unusual input formats, unexpected sequences of actions, boundary values nobody thought to mention
+- **Inadequate error handling** - generic catch-all blocks that don't distinguish a network blip from a payment failure, meaning the app's response to "something went wrong" is identical regardless of what actually went wrong or how the user should react
+- **Inappropriate dependency choices** - packages selected for speed of generation and popularity in training data, not maintained security posture, active support status, or licensing fit for a commercial product
+- **Hidden broken workflows** - features that pass a narrow manual test while failing under slightly different real-world conditions, often because the manual test and the AI's own internal verification both exercised the same narrow path
+- **Security assumptions never actually verified** - access control that exists in the UI but was never confirmed to exist at the API level, which is functionally equivalent to having no access control at all against anyone who bypasses the interface
 
 ## Why This Gap Survives Even Careful Prompting
 
-A reasonable instinct is to assume better prompting closes this gap — asking the AI tool to "handle errors properly" or "make this secure." In practice, this helps only marginally, because the tool still can't verify its own output against conditions it wasn't shown, and a founder without deep technical background can't reliably evaluate whether the resulting code actually satisfies that instruction or merely appears to. The gap isn't a prompting failure. It's the structural absence of an independent verification step, which no amount of asking nicely substitutes for.
+A reasonable instinct is to assume better prompting closes this gap - asking the AI tool to "handle errors properly" or "make this secure." In practice, this helps only marginally, because the tool still can't verify its own output against conditions it wasn't shown, and a founder without deep technical background can't reliably evaluate whether the resulting code actually satisfies that instruction or merely appears to. The gap isn't a prompting failure. It's the structural absence of an independent verification step, which no amount of asking nicely substitutes for.
 
 ## From Vibe Coding to Production Means Building the Validation Loop You're Missing
 
-Closing this gap isn't about rewriting what the AI generated — most of it is fine, often genuinely well-structured. It's about adding the review, testing, and verification layer that confirms it's fine, rather than assuming it based on how the demo looked. This is precisely the distinction between functional code, which satisfies a described scenario, and deployment-safe code, which has been deliberately tested against scenarios nobody described.
+Closing this gap isn't about rewriting what the AI generated - most of it is fine, often genuinely well-structured. It's about adding the review, testing, and verification layer that confirms it's fine, rather than assuming it based on how the demo looked. This is precisely the distinction between functional code, which satisfies a described scenario, and deployment-safe code, which has been deliberately tested against scenarios nobody described.
 
 ## What an Independent Code Review Actually Looks At
 
-Founders who hear "get your code reviewed" often picture something vague — someone reading through files and nodding along. A genuine production-readiness review is considerably more specific than that, and knowing what it actually checks makes it easier to evaluate whether a given review, from any provider, is doing real work or just skimming.
+Founders who hear "get your code reviewed" often picture something vague - someone reading through files and nodding along. A genuine production-readiness review is considerably more specific than that, and knowing what it actually checks makes it easier to evaluate whether a given review, from any provider, is doing real work or just skimming.
 
 **Structural review.** Does the code follow a consistent, maintainable pattern, or does logic sprawl unpredictably across files in a way that makes future changes risky simply because nobody can be fully confident what else a given change might touch?
 
-**Dependency audit.** Every package your app relies on was chosen by the AI tool for some combination of popularity and fit with the prompt, not necessarily for active maintenance status, known vulnerabilities, or license compatibility with a commercial product — a review checks each dependency against current security advisories, not just whether it currently runs without error.
+**Dependency audit.** Every package your app relies on was chosen by the AI tool for some combination of popularity and fit with the prompt, not necessarily for active maintenance status, known vulnerabilities, or license compatibility with a commercial product - a review checks each dependency against current security advisories, not just whether it currently runs without error.
 
-**Adversarial path testing.** Rather than confirming the described scenarios work, a real review deliberately constructs the scenarios nobody described — malformed input, boundary values, sequences of actions a normal user wouldn't naturally attempt — and checks what actually happens, since this is precisely the space the AI tool wasn't evaluated against.
+**Adversarial path testing.** Rather than confirming the described scenarios work, a real review deliberately constructs the scenarios nobody described - malformed input, boundary values, sequences of actions a normal user wouldn't naturally attempt - and checks what actually happens, since this is precisely the space the AI tool wasn't evaluated against.
 
 **Security assumption verification.** Any claim your app makes about who can access what gets tested directly against the API, not assumed from how the interface behaves, following the same logic covered elsewhere in this series regarding the difference between frontend gatekeeping and actual enforcement.
 
-A review that skips any of these four isn't incomplete by a small margin — it's answering a narrower question than "is this safe to ship," and founders evaluating a potential partner should ask specifically whether all four are included, not just assume "code review" means the same thing to everyone offering it.
+A review that skips any of these four isn't incomplete by a small margin - it's answering a narrower question than "is this safe to ship," and founders evaluating a potential partner should ask specifically whether all four are included, not just assume "code review" means the same thing to everyone offering it.
 
-[LaunchStudio](https://launchstudio.eu/en/) builds exactly this validation layer around your existing AI-generated frontend — reviewing, testing, and hardening what's there rather than starting over, backed by Manifera's engineering discipline across 160+ delivered projects.
+[LaunchStudio](https://launchstudio.eu/en/) builds exactly this validation layer around your existing AI-generated frontend - reviewing, testing, and hardening what's there rather than starting over, backed by Manifera's engineering discipline across 160+ delivered projects.
 
-[Get your code reviewed against a real validation standard](https://launchstudio.eu/en/#contact) — find out what "looks done" is actually hiding before your users do.
+[Get your code reviewed against a real validation standard](https://launchstudio.eu/en/#contact) - find out what "looks done" is actually hiding before your users do.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Feature That Passed Every Test He Personally Ran
 
-Bram, a former retail store manager turned founder in Roosendaal, built VoorraadSlim, an AI tool helping small retailers forecast inventory needs based on sales history and seasonal patterns, using Bolt. Bram tested VoorraadSlim extensively himself — uploading his own store's sales data repeatedly, refining the forecasting prompts, and demoing it confidently to three fellow shop owners who were impressed enough to ask about pricing, having watched it correctly forecast inventory needs against his own historical numbers dozens of times.
+Bram, a former retail store manager turned founder in Roosendaal, built VoorraadSlim, an AI tool helping small retailers forecast inventory needs based on sales history and seasonal patterns, using Bolt. Bram tested VoorraadSlim extensively himself - uploading his own store's sales data repeatedly, refining the forecasting prompts, and demoing it confidently to three fellow shop owners who were impressed enough to ask about pricing, having watched it correctly forecast inventory needs against his own historical numbers dozens of times.
 
-When LaunchStudio conducted a pre-launch review, the team discovered that VoorraadSlim's forecasting feature broke silently whenever uploaded sales data contained a specific but common formatting variation — a comma-separated file exported from one particular popular point-of-sale system, using a different date format and column ordering than the one Bram personally used. His own testing had never triggered this because he'd only ever tested with his own store's specific export format, and the AI-generated parsing logic had been built and validated exclusively against that same format, with no fallback for anything else.
+When LaunchStudio conducted a pre-launch review, the team discovered that VoorraadSlim's forecasting feature broke silently whenever uploaded sales data contained a specific but common formatting variation - a comma-separated file exported from one particular popular point-of-sale system, using a different date format and column ordering than the one Bram personally used. His own testing had never triggered this because he'd only ever tested with his own store's specific export format, and the AI-generated parsing logic had been built and validated exclusively against that same format, with no fallback for anything else.
 
-**Result:** LaunchStudio identified and fixed the parsing gap, adding format detection and graceful handling for the variation, before any of the three interested shop owners — who used the affected point-of-sale system — ever encountered a silent failure that would have looked, to them, like the tool simply not working, with no indication of why.
+**Result:** LaunchStudio identified and fixed the parsing gap, adding format detection and graceful handling for the variation, before any of the three interested shop owners - who used the affected point-of-sale system - ever encountered a silent failure that would have looked, to them, like the tool simply not working, with no indication of why.
 
 > *"I'd tested it probably fifty times myself and it worked every single time. It turns out I was the only person testing with my own specific setup. The bug only existed for everyone else."*
-> — **Bram Kuijpers, Founder, VoorraadSlim (Roosendaal)**
+> - **Bram Kuijpers, Founder, VoorraadSlim (Roosendaal)**
 
-**Cost & Timeline:** €1,900 (Launch Ready Package, validation and edge-case testing) — live in 8 business days.
+**Cost & Timeline:** €1,900 (Launch Ready Package, validation and edge-case testing) - live in 8 business days.
 
 ---
 
@@ -96,27 +96,27 @@ When LaunchStudio conducted a pre-launch review, the team discovered that Voorra
 
 ### If I've personally tested my app extensively and never found a bug, does that mean it's genuinely solid?
 
-Not necessarily — as Bram's case shows, personal testing exercises your own usage patterns and data formats, which may not represent the range of conditions real users will introduce, especially data formats, sequences of actions, or edge cases you wouldn't naturally generate yourself simply because you only have your own habits and your own data to test with.
+Not necessarily - as Bram's case shows, personal testing exercises your own usage patterns and data formats, which may not represent the range of conditions real users will introduce, especially data formats, sequences of actions, or edge cases you wouldn't naturally generate yourself simply because you only have your own habits and your own data to test with.
 
 ### Is this "looks done but isn't" problem specific to certain AI coding tools, or general across all of them?
 
-It's general across AI coding tools, since all of them are optimized to produce functional, prompt-satisfying output efficiently — the gap between that and verified, production-safe output is a structural characteristic of how these tools work, not a specific tool's flaw, and better prompting only narrows it marginally rather than closing it.
+It's general across AI coding tools, since all of them are optimized to produce functional, prompt-satisfying output efficiently - the gap between that and verified, production-safe output is a structural characteristic of how these tools work, not a specific tool's flaw, and better prompting only narrows it marginally rather than closing it.
 
 ### What does a proper validation loop actually involve, concretely?
 
-It typically includes code review against production standards, testing deliberately beyond the happy path by triggering edge cases and failures the AI tool wasn't shown, dependency review for security posture and maintenance status, and confirming security assumptions are actually true — verified against the API directly — rather than assumed from how the interface behaves.
+It typically includes code review against production standards, testing deliberately beyond the happy path by triggering edge cases and failures the AI tool wasn't shown, dependency review for security posture and maintenance status, and confirming security assumptions are actually true - verified against the API directly - rather than assumed from how the interface behaves.
 
 ### How would I have found the bug Bram found without an external review?
 
-Realistically, only through a user hitting it in production and reporting a confusing failure, or through deliberately testing with data and conditions outside your own typical usage — an external review is specifically designed to surface exactly this kind of gap before either of those less controlled, more costly discovery paths plays out with a real customer.
+Realistically, only through a user hitting it in production and reporting a confusing failure, or through deliberately testing with data and conditions outside your own typical usage - an external review is specifically designed to surface exactly this kind of gap before either of those less controlled, more costly discovery paths plays out with a real customer.
 
 ### Does finding issues like this mean my AI coding tool did a bad job?
 
-No — it means the tool did precisely what it's designed to do: generate functional software efficiently that satisfies the scenario it was given. Validation is a separate, complementary step that addresses everything outside that scenario, not a correction of a mistake the tool made.
+No - it means the tool did precisely what it's designed to do: generate functional software efficiently that satisfies the scenario it was given. Validation is a separate, complementary step that addresses everything outside that scenario, not a correction of a mistake the tool made.
 
 ### Does an independent review like this require handing over my entire codebase, or can it be scoped narrowly?
 
-It can be scoped to specific areas of concern, though a genuinely thorough review — covering structure, dependencies, adversarial testing, and security assumptions — typically needs full codebase access to catch gaps that span multiple files, which is why LaunchStudio's initial scoping conversation clarifies exactly what's included before any commitment.
+It can be scoped to specific areas of concern, though a genuinely thorough review - covering structure, dependencies, adversarial testing, and security assumptions - typically needs full codebase access to catch gaps that span multiple files, which is why LaunchStudio's initial scoping conversation clarifies exactly what's included before any commitment.
 
 <script type="application/ld+json">
 {
@@ -128,7 +128,7 @@ It can be scoped to specific areas of concern, though a genuinely thorough revie
       "name": "If I've personally tested my app extensively and never found a bug, does that mean it's genuinely solid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — personal testing exercises your own usage patterns and data formats, which may not represent the full range of conditions real users introduce."
+        "text": "Not necessarily - personal testing exercises your own usage patterns and data formats, which may not represent the full range of conditions real users introduce."
       }
     },
     {
@@ -160,7 +160,7 @@ It can be scoped to specific areas of concern, though a genuinely thorough revie
       "name": "Does finding issues like this mean the AI coding tool did a bad job?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — the tool generated functional software that satisfies the scenario it was given. Validation addresses everything outside that scenario, not a tool mistake."
+        "text": "No - the tool generated functional software that satisfies the scenario it was given. Validation addresses everything outside that scenario, not a tool mistake."
       }
     },
     {

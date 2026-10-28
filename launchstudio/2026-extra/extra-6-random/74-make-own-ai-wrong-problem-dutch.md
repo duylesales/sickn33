@@ -19,15 +19,15 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Ergens in de opwinding van het bouwen van een AI-product begint een specifiek idee aantrekkelijk te lijken: wat als we ons eigen model zouden trainen? Niet gebruiken — *trainen* — iets eigens, iets dat van ons is. Het klinkt als de serieuze, ambitieuze versie van het bouwen van een AI-bedrijf. In de praktijk is het willen maken van een eigen AI, voor de overgrote meerderheid van de oprichters die ernaar grijpen, een goed vermomde manier om een veel kleiner, veel oplosbaarder probleem uit de weg te gaan.
+Ergens in de opwinding van het bouwen van een AI-product begint een specifiek idee aantrekkelijk te lijken: wat als we ons eigen model zouden trainen? Niet gebruiken - *trainen* - iets eigens, iets dat van ons is. Het klinkt als de serieuze, ambitieuze versie van het bouwen van een AI-bedrijf. In de praktijk is het willen maken van een eigen AI, voor de overgrote meerderheid van de oprichters die ernaar grijpen, een goed vermomde manier om een veel kleiner, veel oplosbaarder probleem uit de weg te gaan.
 
 ## De aantrekkingskracht is echt, en meestal misplaatst
 
-Er is niets irrationeels aan het willen hebben van een eigen model. Het bezitten van uw kerntechnologie voelt als controle, als verdedigbaarheid, als het soort dingen dat serieuze AI-bedrijven doen. Het probleem is dat het trainen van een model vanaf nul een enorme onderneming is — gegevensverzameling, opschoning, labeling, rekenkracht, evaluatie, iteratie — bedoeld voor een probleem dat de meeste vroege producten helemaal niet hebben. De meeste vroege producten hebben een veel enger probleem: een bestaand, buitengewoon capabel model betrouwbaar één specifieke taak laten uitvoeren. Dat is een prompt- en architectuurprobleem, geen trainingsprobleem, en het is oplosbaar in dagen in plaats van maanden.
+Er is niets irrationeels aan het willen hebben van een eigen model. Het bezitten van uw kerntechnologie voelt als controle, als verdedigbaarheid, als het soort dingen dat serieuze AI-bedrijven doen. Het probleem is dat het trainen van een model vanaf nul een enorme onderneming is - gegevensverzameling, opschoning, labeling, rekenkracht, evaluatie, iteratie - bedoeld voor een probleem dat de meeste vroege producten helemaal niet hebben. De meeste vroege producten hebben een veel enger probleem: een bestaand, buitengewoon capabel model betrouwbaar één specifieke taak laten uitvoeren. Dat is een prompt- en architectuurprobleem, geen trainingsprobleem, en het is oplosbaar in dagen in plaats van maanden.
 
 ## Waar 'mijn eigen AI maken' meestal een vervanging voor is
 
-Wanneer een oprichter zegt dat hij zijn eigen AI wil maken, bedoelt hij daaronder meestal een van een paar veel specifiekere dingen: "ik wil dat dit nauwkeurig is voor mijn exacte use case," of "ik wil dat dit onderscheidend aanvoelt ten opzichte van concurrenten die hetzelfde onderliggende model gebruiken," of simpelweg "ik vertrouw er niet volledig op dat een algemeen model dit goed kan." Alle drie zijn legitieme zorgen. Geen enkele vereist het vanaf nul trainen van een model om op te lossen. Nauwkeurigheid voor een specifieke taak is meestal een prompt-engineering- en contextprobleem. Onderscheidend vermogen komt meestal voort uit uw gegevens, uw workflow en uw productbeslissingen — niet uit het basismodel. Vertrouwen wordt meestal opgelost door testen, niet door eigendom.
+Wanneer een oprichter zegt dat hij zijn eigen AI wil maken, bedoelt hij daaronder meestal een van een paar veel specifiekere dingen: "ik wil dat dit nauwkeurig is voor mijn exacte use case," of "ik wil dat dit onderscheidend aanvoelt ten opzichte van concurrenten die hetzelfde onderliggende model gebruiken," of simpelweg "ik vertrouw er niet volledig op dat een algemeen model dit goed kan." Alle drie zijn legitieme zorgen. Geen enkele vereist het vanaf nul trainen van een model om op te lossen. Nauwkeurigheid voor een specifieke taak is meestal een prompt-engineering- en contextprobleem. Onderscheidend vermogen komt meestal voort uit uw gegevens, uw workflow en uw productbeslissingen - niet uit het basismodel. Vertrouwen wordt meestal opgelost door testen, niet door eigendom.
 
 ## De omweg kost meer dan de oprichter verwacht
 
@@ -35,7 +35,7 @@ Het trainen van een eigen model is niet alleen duur in rekenkracht. Het is duur 
 
 ## De betere eerste stap
 
-Voordat u iets traint, is de eerlijke eerste vraag: is er daadwerkelijk geprobeerd of een kant-en-klaar model, met betere prompts, betere context en een goed ontworpen pipeline, tekortschiet? Voor de meeste oprichters is het antwoord nee — omdat de kant-en-klare optie nooit serieus is geprobeerd voordat het besluit werd genomen om zelf te gaan trainen. Prompt-engineering, het ophalen van relevante context, en een zorgvuldige omgang met randgevallen lossen het overgrote deel van "de AI is hier niet goed genoeg in"-problemen op, tegen een fractie van de kosten en tijd.
+Voordat u iets traint, is de eerlijke eerste vraag: is er daadwerkelijk geprobeerd of een kant-en-klaar model, met betere prompts, betere context en een goed ontworpen pipeline, tekortschiet? Voor de meeste oprichters is het antwoord nee - omdat de kant-en-klare optie nooit serieus is geprobeerd voordat het besluit werd genomen om zelf te gaan trainen. Prompt-engineering, het ophalen van relevante context, en een zorgvuldige omgang met randgevallen lossen het overgrote deel van "de AI is hier niet goed genoeg in"-problemen op, tegen een fractie van de kosten en tijd.
 
 LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en onderdeel van elk vroeg gesprek met een oprichter die "mijn eigen AI maken" nastreeft, is een botte realiteitscheck: is dit daadwerkelijk het snelste pad naar wat u nodig hebt, of is het het pad dat serieuzer aanvoelt? Ons team, waaronder engineers gevestigd in Singapore, heeft verschillende oprichters teruggebracht van een trainingsomweg naar een goed geëngineerde prompt- en routeringslaag die het echte probleem in dagen oploste. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) voordat u weken vastlegt aan de verkeerde aanpak. Voor hoe Manifera dit soort engineeringwerk in de praktijk afbakent, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
@@ -43,7 +43,7 @@ LaunchStudio brengt de enterprise-grade engineering van Manifera naar de opricht
 
 Veel startups denken onterecht dat ze direct een eigen taalmodel moeten trainen (fine-tuning) om unieke waarde te leveren. In 95% van de gevallen volstaat echter een slimme prompt met Retrieval-Augmented Generation (RAG). Er zijn slechts drie zeldzame situaties waarin maatwerktraining werkelijk economisch en technisch verantwoord is:
 
-**1. U hanteert een Volledig Unieke, Gesloten Terminologie.** Uw software opereert in een zeer specifieke niche — zoals gespecialiseerde medische pathologie, niche-rechtspraak of complexe industriële engineering — met een vocabulaire dat in openbare trainingsdata simpelweg niet bestaat en waarbij standaard modellen stelselmatig de verkeerde context kiezen.
+**1. U hanteert een Volledig Unieke, Gesloten Terminologie.** Uw software opereert in een zeer specifieke niche - zoals gespecialiseerde medische pathologie, niche-rechtspraak of complexe industriële engineering - met een vocabulaire dat in openbare trainingsdata simpelweg niet bestaat en waarbij standaard modellen stelselmatig de verkeerde context kiezen.
 
 **2. U Moet Extreem Hoge Snelheid Tegen Minimale Kosten Behalen bij Hoog Volume.** U verwerkt miljoenen verzoeken per dag waarbij de latentie onder de 100 milliseconden moet blijven en de kosten van grote modellen (zoals GPT-4) uw marge volledig opeten. Een klein, ge-finetuned open-source model (zoals Llama-3 8B) kan die specifieke taak vaak sneller en 90% goedkoper uitvoeren.
 
@@ -54,18 +54,18 @@ Herbevestigt u geen van deze drie punten? Blijf dan ver weg van kostbare fine-tu
 
 ### Een AI-native oprichter in actie: zes weken richting de verkeerde oplossing
 
-Lisanne Beumer, een oprichter uit Sliedrecht, bouwde "EigenModel", een tool voor het triagen van klantenservicetickets, bedoeld om binnenkomende supporttickets automatisch naar het juiste team te routeren. Ervan overtuigd dat nauwkeurige routering een model vereiste dat specifiek op haar domein was getraind, besteedde ze zes weken aan het vanaf nul trainen van een eigen model — het verzamelen van historische ticketgegevens, pogingen om deze te labelen, en het itereren op trainingsruns met beperkte eigen ervaring in machine learning.
+Lisanne Beumer, een oprichter uit Sliedrecht, bouwde "EigenModel", een tool voor het triagen van klantenservicetickets, bedoeld om binnenkomende supporttickets automatisch naar het juiste team te routeren. Ervan overtuigd dat nauwkeurige routering een model vereiste dat specifiek op haar domein was getraind, besteedde ze zes weken aan het vanaf nul trainen van een eigen model - het verzamelen van historische ticketgegevens, pogingen om deze te labelen, en het itereren op trainingsruns met beperkte eigen ervaring in machine learning.
 
-Het daadwerkelijke probleem eronder was veel kleiner: haar bestaande tickets werden niet correct gerouteerd omdat de prompts die aan een kant-en-klaar model werden gegeven de specifieke categorieën, randgevallen en voorbeelden misten die het model uit de doos nauwkeurig hadden laten routeren. Het was geen kenniskloof die trainingsdata vereiste om te dichten. Het was een prompt-ontwerp- en contextprobleem dat betere engineering — geen eigen model — rechtstreeks kon oplossen.
+Het daadwerkelijke probleem eronder was veel kleiner: haar bestaande tickets werden niet correct gerouteerd omdat de prompts die aan een kant-en-klaar model werden gegeven de specifieke categorieën, randgevallen en voorbeelden misten die het model uit de doos nauwkeurig hadden laten routeren. Het was geen kenniskloof die trainingsdata vereiste om te dichten. Het was een prompt-ontwerp- en contextprobleem dat betere engineering - geen eigen model - rechtstreeks kon oplossen.
 
 Lisanne bracht het project naar LaunchStudio nadat haar zes weken aan trainingspogingen geen model hadden opgeleverd dat beter presteerde dan een goed geconfigureerde kant-en-klare optie. Onze engineers bouwden een degelijke prompt- en contextpipeline met een bestaand capabel model, voedden deze met gestructureerde voorbeelden van eerder correct gerouteerde tickets en duidelijke categorische definities, en vervingen daarmee de hele eigen-trainingsinspanning.
 
 **Resultaat:** de ticketroutering van EigenModel bereikte een hogere nauwkeurigheid dan Lisannes eigen trainingspogingen hadden bereikt, gebouwd in dagen in plaats van de al bestede zes weken, hoewel de omweg haar lancering al meer dan een maand had vertraagd.
 
 > *"Ik dacht dat het trainen van mijn eigen model het product meer van mijzelf zou maken. Het maakte het alleen maar later."*
-> — **Lisanne Beumer, oprichter, EigenModel (Sliedrecht)**
+> - **Lisanne Beumer, oprichter, EigenModel (Sliedrecht)**
 
-**Kosten en tijdlijn:** € 900 (opbouw van prompt-pipeline en routeringslogica) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 900 (opbouw van prompt-pipeline en routeringslogica) - voltooid in 4 werkdagen.
 
 ---
 
@@ -81,7 +81,7 @@ Eigen training duurt doorgaans weken tot maanden en vereist aanzienlijk werk aan
 
 ### Wat moet een oprichter proberen voordat hij besluit een eigen model te trainen?
 
-Een serieus geprobeerde, goed geëngineerde prompt- en contextpipeline op een bestaand capabel model — de meeste "de AI is niet nauwkeurig genoeg"-problemen worden op dit niveau opgelost voordat training ooit nodig is.
+Een serieus geprobeerde, goed geëngineerde prompt- en contextpipeline op een bestaand capabel model - de meeste "de AI is niet nauwkeurig genoeg"-problemen worden op dit niveau opgelost voordat training ooit nodig is.
 
 ### Helpt LaunchStudio oprichters bij het bouwen van dit soort pipeline?
 
@@ -117,7 +117,7 @@ Af en toe, bij aanzienlijke schaal met heel specifieke eigen gegevensvoordelen, 
       "name": "Wat moet een oprichter proberen voordat hij besluit een eigen model te trainen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een serieus geprobeerde, goed geëngineerde prompt- en contextpipeline op een bestaand capabel model — de meeste \"de AI is niet nauwkeurig genoeg\"-problemen worden op dit niveau opgelost voordat training ooit nodig is."
+        "text": "Een serieus geprobeerde, goed geëngineerde prompt- en contextpipeline op een bestaand capabel model - de meeste \"de AI is niet nauwkeurig genoeg\"-problemen worden op dit niveau opgelost voordat training ooit nodig is."
       }
     },
     {

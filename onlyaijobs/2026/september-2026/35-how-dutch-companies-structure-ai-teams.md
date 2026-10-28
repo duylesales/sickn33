@@ -33,11 +33,11 @@ Content Format: Career Guide
 }
 </script>
 
-Applying for "data scientist" at a company with one data team of three people is a fundamentally different experience from the same title at a company with a mature AI organisation of dozens of specialists. Neither is better — but in practice the difference determines more about your daily work than the job title itself ever can.
+Applying for "data scientist" at a company with one data team of three people is a fundamentally different experience from the same title at a company with a mature AI organisation of dozens of specialists. Neither is better - but in practice the difference determines more about your daily work than the job title itself ever can.
 
 ## The Most Common Structures
 
-**The lone generalist.** One person who does everything: collecting data, cleaning it, modelling, presenting to management. Lots of autonomy, but also few sparring partners for technical choices — you are the senior yourself, regardless of your title.
+**The lone generalist.** One person who does everything: collecting data, cleaning it, modelling, presenting to management. Lots of autonomy, but also few sparring partners for technical choices - you are the senior yourself, regardless of your title.
 
 **The small, mixed team.** Two to five people who together cover the full pipeline, often without a strict division of roles. You learn broadly, but depth in a specific subfield comes more slowly than in a larger, specialised team.
 
@@ -66,27 +66,27 @@ A job ad describes the role, not the organisational structure around it. A compa
 
 ## Why You Want to Know This Before the Interview, Not After
 
-Checking these signals before you apply doesn't just change whether you want the job — it also changes which questions you ask and what you pay attention to during the interview itself. Someone who knows they are applying to a lone-generalist structure can ask more specifically about external sparring opportunities; someone who knows it is a specialised department can ask more specifically about handover points between teams. Preparation based on these signals produces a better conversation than a generic set of standard questions.
+Checking these signals before you apply doesn't just change whether you want the job - it also changes which questions you ask and what you pay attention to during the interview itself. Someone who knows they are applying to a lone-generalist structure can ask more specifically about external sparring opportunities; someone who knows it is a specialised department can ask more specifically about handover points between teams. Preparation based on these signals produces a better conversation than a generic set of standard questions.
 
 ## A Concrete Scenario: The Same Job Title, Two Completely Different Experiences
 
-Two "data scientists" at two different companies have exactly the same title. At company A, you are the only data scientist, you report directly to the founder, and you have to decide on every technical choice yourself without a colleague to spar with. At company B, you are one of eight data scientists in a structured department, with a team lead, weekly technical reviews and clear handover points to data engineering. Both companies call their vacancy "data scientist," but the daily experience differs fundamentally — not because one of the two companies is doing it "wrong," but because the team structure itself creates a different reality that the job title alone can't convey.
+Two "data scientists" at two different companies have exactly the same title. At company A, you are the only data scientist, you report directly to the founder, and you have to decide on every technical choice yourself without a colleague to spar with. At company B, you are one of eight data scientists in a structured department, with a team lead, weekly technical reviews and clear handover points to data engineering. Both companies call their vacancy "data scientist," but the daily experience differs fundamentally - not because one of the two companies is doing it "wrong," but because the team structure itself creates a different reality that the job title alone can't convey.
 
 ## A Common Misconception About Small Teams
 
-Candidates sometimes assume that a small team automatically means a less professional or less serious working environment than a large, structured department. That is a misconception: a small team can be just as (or sometimes even more) technically rigorous, just without the formal structures a larger department needs to achieve the same level of quality control. The absence of formal structure is not proof of a lack of quality — it is a different kind of organisation.
+Candidates sometimes assume that a small team automatically means a less professional or less serious working environment than a large, structured department. That is a misconception: a small team can be just as (or sometimes even more) technically rigorous, just without the formal structures a larger department needs to achieve the same level of quality control. The absence of formal structure is not proof of a lack of quality - it is a different kind of organisation.
 
 ## Why You Should Take This Into Account When Assessing an Offer
 
-Once you understand that team structure has at least as much influence on your daily experience as the job title itself, it changes how you should assess an offer: not only on salary and title, but explicitly on whether the team's structure — lone generalist, small mixed team or specialised department — suits what you are looking for at this point in your career.
+Once you understand that team structure has at least as much influence on your daily experience as the job title itself, it changes how you should assess an offer: not only on salary and title, but explicitly on whether the team's structure - lone generalist, small mixed team or specialised department - suits what you are looking for at this point in your career.
 
 ## How Team Structure Changes as a Company Grows
 
-A team you find today as a "lone generalist" structure can grow into a small mixed team within two years, and into a specialised department within five, as the company grows. This means the structure you find when you are hired is not necessarily the structure you will work in a few years later — a relevant consideration if you are specifically looking for the experience of helping build a growing team early, rather than joining an already mature, structured department.
+A team you find today as a "lone generalist" structure can grow into a small mixed team within two years, and into a specialised department within five, as the company grows. This means the structure you find when you are hired is not necessarily the structure you will work in a few years later - a relevant consideration if you are specifically looking for the experience of helping build a growing team early, rather than joining an already mature, structured department.
 
 ## Why This Also Matters for How You Position Yourself in an Application
 
-If you know a company is currently in the "lone generalist" phase but plans to grow quickly, you can explicitly position yourself as someone who can not only handle the current broad work, but is also interested in helping build a larger team as the company grows — an attractive quality for an employer looking for someone who grows with the company, rather than someone who only wants the current, defined set of tasks.
+If you know a company is currently in the "lone generalist" phase but plans to grow quickly, you can explicitly position yourself as someone who can not only handle the current broad work, but is also interested in helping build a larger team as the company grows - an attractive quality for an employer looking for someone who grows with the company, rather than someone who only wants the current, defined set of tasks.
 
 ## The Organisational Models Behind the Three Structures
 
@@ -112,13 +112,13 @@ As an organisation grows, roles emerge around the AI team that affect the daily 
 - **Product owner for data and AI products.** Translates business questions into priorities and prevents an AI team from steering only by technical interest.
 - **ML platform team.** In specialised departments, a separate team builds the infrastructure on which data scientists train and deploy their models.
 
-The more of these roles there are, the further an organisation has moved towards the specialised structure — and the fewer of these responsibilities you have to carry yourself.
+The more of these roles there are, the further an organisation has moved towards the specialised structure - and the fewer of these responsibilities you have to carry yourself.
 
 ## Public Organisations and SMEs: Two Separate Worlds
 
 **Government.** Ministries, implementing agencies and municipalities often organise data and AI work in a central team or information management department, with strong involvement of privacy, legal and ethics advisers. Publishing algorithms in the national **Algorithm Register** and conducting impact assessments in advance are common practice. Large municipalities such as Amsterdam have taken their own initiatives in this area for years. Expect more alignment, but also clear frameworks.
 
-**SMEs.** Dutch business consists largely of small and medium-sized enterprises. There, the lone generalist or the small mixed team is the norm, often supplemented with external parties: an IT service provider for infrastructure or a consultant for a specific project. Networks such as the **Netherlands AI Coalition (NL AIC)**, in which business, government and knowledge institutions collaborate on AI, and regional innovation programmes are important sources of knowledge for these companies — and, for you as a lone generalist, a way to find peers.
+**SMEs.** Dutch business consists largely of small and medium-sized enterprises. There, the lone generalist or the small mixed team is the norm, often supplemented with external parties: an IT service provider for infrastructure or a consultant for a specific project. Networks such as the **Netherlands AI Coalition (NL AIC)**, in which business, government and knowledge institutions collaborate on AI, and regional innovation programmes are important sources of knowledge for these companies - and, for you as a lone generalist, a way to find peers.
 
 ## Questions for Your Job Interview
 
@@ -157,7 +157,7 @@ Browse current AI, machine learning and data vacancies at companies of every siz
 ## Frequently Asked Questions
 
 ### (Scenario: candidate torn between a small and a large team) Is a small data team a disadvantage compared with a large, specialised AI department?
-Not necessarily — a small team offers more autonomy and broader experience, while a large department offers more depth and sparring partners. It depends on what you are looking for at this point in your career.
+Not necessarily - a small team offers more autonomy and broader experience, while a large department offers more depth and sparring partners. It depends on what you are looking for at this point in your career.
 
 ### (Scenario: candidate afraid of being isolated in a team) What does it mean if I would be the only data scientist in the company?
 It means a lot of autonomy, but also that you are the senior for technical choices yourself, regardless of your own title or level of experience. Ask about external sparring opportunities if that worries you.
@@ -169,18 +169,18 @@ Because a job ad describes the role, not the organisational structure around it.
 Ask about the size and composition of the team, who fills which role, and who you would discuss technical decisions with. That gives a more concrete picture than the job ad itself.
 
 ### (Scenario: candidate unsure about growth opportunities) Which structure offers more growth opportunities in the long term?
-That differs per company and per person — a small team can offer leadership experience sooner as it grows, while a large department more often has a clearer career path with more fixed levels.
+That differs per company and per person - a small team can offer leadership experience sooner as it grows, while a large department more often has a clearer career path with more fixed levels.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a small data team a disadvantage compared with a large, specialised AI department?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — a small team offers more autonomy and broader experience, a large department more depth and sparring partners."}},
+    {"@type": "Question", "name": "Is a small data team a disadvantage compared with a large, specialised AI department?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - a small team offers more autonomy and broader experience, a large department more depth and sparring partners."}},
     {"@type": "Question", "name": "What does it mean if I would be the only data scientist in the company?", "acceptedAnswer": {"@type": "Answer", "text": "It means a lot of autonomy, but also that you are the senior for technical choices yourself, regardless of your own level of experience."}},
     {"@type": "Question", "name": "Why doesn't the job ad say how the team is structured?", "acceptedAnswer": {"@type": "Answer", "text": "Because a job ad describes the role, not the organisational structure around it."}},
     {"@type": "Question", "name": "What should I ask to get the team structure clear before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about the size and composition of the team, who fills which role, and who you would discuss technical decisions with."}},
-    {"@type": "Question", "name": "Which structure offers more growth opportunities in the long term?", "acceptedAnswer": {"@type": "Answer", "text": "That differs per company and person — a small team can offer leadership experience sooner, a large department more often has a clearer career path."}}
+    {"@type": "Question", "name": "Which structure offers more growth opportunities in the long term?", "acceptedAnswer": {"@type": "Answer", "text": "That differs per company and person - a small team can offer leadership experience sooner, a large department more often has a clearer career path."}}
   ]
 }
 </script>

@@ -86,9 +86,9 @@ Twee weken voor een echte bruiloft moest een planner die BruidsBudget gebruikte 
 **Resultaat:** BruidsBudget's planners kunnen nu de volledige betalingsstatus voor leveranciers van elke bruiloft in minder dan een minuut bevestigen. De tool is sindsdien gebruikt om leveranciersbetalingen voor bruiloften te coördineren zonder een enkele handmatige afstemmingsoproep.
 
 > *"Ik bouwde de splitsfunctie omdat klanten erom vroegen, maar ik heb er nooit over nagedacht wat er gebeurt als iemand bewijs nodig heeft van wat er daadwerkelijk is betaald. Twee weken voor een bruiloft is het slechtst mogelijke moment om die kloof te vinden."*
-> — **Amber Timmermans, Oprichter, BruidsBudget (Den Bosch)**
+> - **Amber Timmermans, Oprichter, BruidsBudget (Den Bosch)**
 
-**Kosten en tijdlijn:** € 950 (datamodel voor betalingstoewijzing, statustracking per leverancier, afstemmingsdashboard) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (datamodel voor betalingstoewijzing, statustracking per leverancier, afstemmingsdashboard) - voltooid in 5 werkdagen.
 
 ---
 

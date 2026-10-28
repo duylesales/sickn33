@@ -1,4 +1,4 @@
-🚨 Charlotte, een loopbaancoach, bouwde een cv-optimalisatietool met **Cursor** — maar het handmatig beheren van streaming-chunks in React veroorzaakte flikkerende schermen en dubbele woorden bij elk advies. ⚡
+🚨 Charlotte, een loopbaancoach, bouwde een cv-optimalisatietool met **Cursor** - maar het handmatig beheren van streaming-chunks in React veroorzaakte flikkerende schermen en dubbele woorden bij elk advies. ⚡
 
 Het handmatig parsen van een ruwe AI-tekststroom is complex; de Vercel AI SDK brengt deze uitdaging terug naar één enkele, elegante React hook. 🧠
 
@@ -12,7 +12,7 @@ Het handmatig parsen van een ruwe AI-tekststroom is complex; de Vercel AI SDK br
 
 Bij **LaunchStudio** bouwen we sinds 2014 enterprise frontend- en streamingsystemen via Manifera, gedragen door 120+ software-engineers en meer dan 160 opgeleverde projecten. 🛡️
 
-Charlottes weergaveproblemen werden direct opgelost, waardoor cv-verbeteringen nu woord voor woord vloeiend animeren. (€1.300 (Frontend SDK Integration Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Charlottes weergaveproblemen werden direct opgelost, waardoor cv-verbeteringen nu woord voor woord vloeiend animeren. (€1.300 (Frontend SDK Integration Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek de voordelen van de Vercel AI SDK: https://launchstudio.eu/nl/blog/introduction-to-vercel-ai-sdk-react-nextjs
 

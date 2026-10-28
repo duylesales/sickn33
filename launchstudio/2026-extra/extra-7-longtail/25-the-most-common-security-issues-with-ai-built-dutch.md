@@ -22,17 +22,17 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 
 Een bureaueigenaar in Antwerpen nam afgelopen voorjaar een nieuwe klant aan: een wellness-startup met een werkende boekingsapp, volledig gebouwd in v0, en een lanceerdatum die al aan investeerders beloofd was. Het bureau had al genoeg maatwerkprojecten gedaan, maar nog nooit een beveiligingsaudit van andermans door AI gegenereerde codebase onder echte tijdsdruk. Wat ze in de eerste middag van graven vonden, komt dicht in de buurt van een checklist van de beveiligingsproblemen bij door AI gebouwde apps die op bijna elk project zoals dit opduiken.
 
-Als u een bureau runt of freelance werkt en steeds vaker klanten treft die aankomen met een Lovable-, Bolt-, Cursor- of v0-prototype in plaats van een leeg canvas, zal dit patroon bekend voorkomen. De bouw zelf is meestal prima — soms oprecht indrukwekkend. De beveiligingshouding eronder is waar de verrassingen zitten, en die clusteren zich doorgaans rond dezelfde handvol gaten, project na project.
+Als u een bureau runt of freelance werkt en steeds vaker klanten treft die aankomen met een Lovable-, Bolt-, Cursor- of v0-prototype in plaats van een leeg canvas, zal dit patroon bekend voorkomen. De bouw zelf is meestal prima - soms oprecht indrukwekkend. De beveiligingshouding eronder is waar de verrassingen zitten, en die clusteren zich doorgaans rond dezelfde handvol gaten, project na project.
 
 ## Vóór: hoe een "werkende" door AI gebouwde app eruitziet als hij op uw bureau landt
 
-Een typisch binnenkomend project ziet er op het eerste gezicht productieklaar uit. Het heeft een inlogflow, een dashboard, wat data die tussen sessies blijft bestaan, misschien een Stripe-integratie die met succes een testbetaling verwerkt. Klanten zijn vaak overtuigd dat het "eigenlijk al af is" en alleen nog wat polijstwerk of een eigen domein nodig heeft. Dat vertrouwen is begrijpelijk — de demo werkt oprecht, elke keer dat ze er zelf doorheen klikken.
+Een typisch binnenkomend project ziet er op het eerste gezicht productieklaar uit. Het heeft een inlogflow, een dashboard, wat data die tussen sessies blijft bestaan, misschien een Stripe-integratie die met succes een testbetaling verwerkt. Klanten zijn vaak overtuigd dat het "eigenlijk al af is" en alleen nog wat polijstwerk of een eigen domein nodig heeft. Dat vertrouwen is begrijpelijk - de demo werkt oprecht, elke keer dat ze er zelf doorheen klikken.
 
 Wat meestal ontbreekt, is helemaal niet zichtbaar in een click-through. Het vereist het openen van de code en het stellen van een andere set vragen: verifieert elk data-ophalend endpoint server-side dat de aanvrager eigenaar is van het opgevraagde record? Staan er credentials in platte tekst in de frontend-bundel? Is er iets dat een gescripte vloed aan aanmeldverzoeken tegenhoudt? Niets hiervan komt naar boven wanneer een klant zijn eigen app aan zichzelf demonstreert, omdat hij altijd ingelogd is als zichzelf, zijn eigen data opvraagt, één verzoek tegelijk.
 
 ## De meest voorkomende beveiligingsproblemen bij door AI gebouwde apps die we bij LaunchStudio zien
 
-Bij de beoordelingen die de engineers van LaunchStudio uitvoeren — vaak namens bureaus die de fix onder hun eigen merk leveren — komen steeds dezelfde categorieën naar boven, ruwweg in deze volgorde van frequentie:
+Bij de beoordelingen die de engineers van LaunchStudio uitvoeren - vaak namens bureaus die de fix onder hun eigen merk leveren - komen steeds dezelfde categorieën naar boven, ruwweg in deze volgorde van frequentie:
 
 **Ontbrekende server-side autorisatie.** Verreweg de meest voorkomende bevinding. De frontend toont alleen de eigen data van een gebruiker, maar de backend retourneert de data van iedereen als het juiste ID rechtstreeks wordt opgevraagd, omdat niets eigendom controleert op database- of API-niveau.
 
@@ -50,17 +50,17 @@ Eén reden waarom bureaus deze bevindingen vermijden, is angst om een klant af t
 
 ## Erna: hoe het eruitziet zodra de beveiligingsproblemen daadwerkelijk zijn opgelost
 
-De fix voor bijna al deze categorieën gebeurt zonder ook maar één pixel aan te raken die de klant ziet. Autorisatie wordt afgedwongen op queryniveau. Credentials verhuizen naar omgevingsvariabelen die de browser nooit ontvangt. Rate limiting wordt toegevoegd op de API-gateway- of middleware-laag. Server-side validatie wordt toegevoegd als spiegel van wat de frontend al controleert. Niets daarvan vereist uitleg aan de klant waarom hun app "er nu anders uitziet", want dat doet hij niet — hij wordt gewoon veilig om aan vreemden te tonen.
+De fix voor bijna al deze categorieën gebeurt zonder ook maar één pixel aan te raken die de klant ziet. Autorisatie wordt afgedwongen op queryniveau. Credentials verhuizen naar omgevingsvariabelen die de browser nooit ontvangt. Rate limiting wordt toegevoegd op de API-gateway- of middleware-laag. Server-side validatie wordt toegevoegd als spiegel van wat de frontend al controleert. Niets daarvan vereist uitleg aan de klant waarom hun app "er nu anders uitziet", want dat doet hij niet - hij wordt gewoon veilig om aan vreemden te tonen.
 
 Voor een bureau is dit het deel dat de moeite waard is om bij uw eigen klanten te benadrukken: een beveiligingsronde is geen herontwerp, en zet de tijdlijn niet terug naar nul. Het is gericht, afgebakend werk dat onder wat al bestaat wordt gelegd.
 
 ## Dit leveren onder uw eigen merk
 
-Dit is precies het gat dat LaunchStudio bestaat om te dichten voor bureaus die geen in-house beveiligingsgerichte engineers hebben, maar geen klanten willen afwijzen die aankomen met door AI gebouwde prototypes. Het werk gebeurt onder NDA, geleverd tegen een vaste omvang en prijs, en kan naar buiten gaan onder de naam van uw bureau in plaats van die van LaunchStudio — u blijft de klantgerichte partner, wij zijn de engineering achter de schermen. De engineers van Manifera hebben meer dan tien jaar lang meer dan 160 projecten geleverd voor zakelijke klanten, werkend vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore; datzelfde team ondersteunt elke levering van LaunchStudio, inclusief de white-label leveringen. U kunt [een klantproject beschrijven via het proces van LaunchStudio](https://launchstudio.eu/nl/#process) op dezelfde manier als een oprichter zou doen, alleen gemarkeerd als partneropdracht, en het [klantenportfolio van Manifera](https://www.manifera.com/portfolio/) bekijken voor het soort engineeringstandaard waaraan het werk wordt gehouden.
+Dit is precies het gat dat LaunchStudio bestaat om te dichten voor bureaus die geen in-house beveiligingsgerichte engineers hebben, maar geen klanten willen afwijzen die aankomen met door AI gebouwde prototypes. Het werk gebeurt onder NDA, geleverd tegen een vaste omvang en prijs, en kan naar buiten gaan onder de naam van uw bureau in plaats van die van LaunchStudio - u blijft de klantgerichte partner, wij zijn de engineering achter de schermen. De engineers van Manifera hebben meer dan tien jaar lang meer dan 160 projecten geleverd voor zakelijke klanten, werkend vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore; datzelfde team ondersteunt elke levering van LaunchStudio, inclusief de white-label leveringen. U kunt [een klantproject beschrijven via het proces van LaunchStudio](https://launchstudio.eu/nl/#process) op dezelfde manier als een oprichter zou doen, alleen gemarkeerd als partneropdracht, en het [klantenportfolio van Manifera](https://www.manifera.com/portfolio/) bekijken voor het soort engineeringstandaard waaraan het werk wordt gehouden.
 
 ## Dit inbouwen in uw standaard intakeproces
 
-In plaats van deze problemen project voor project onder tijdsdruk te ontdekken, bouwen de bureaus die dit goed aanpakken een beveiligingsronde in hun standaard intakechecklist voor elke klant die aankomt met een door AI gebouwd prototype, op dezelfde manier als u al browsercompatibiliteit of responsieve lay-out zou controleren voordat u een project afgerond noemt. Een korte, herhaalbare checklist — autorisatie, credentials, rate limiting, invoervalidatie, versleuteling in rust — toegepast op elk binnenkomend door AI gebouwd project, vangt het merendeel op van wat anders halverwege een project als verrassing zou opduiken, en stelt u in staat de beveiligingsronde vanaf het eerste klantgesprek te offreren als een bekende, begrote regel in plaats van een ongeplande toevoeging die halverwege ontdekt wordt.
+In plaats van deze problemen project voor project onder tijdsdruk te ontdekken, bouwen de bureaus die dit goed aanpakken een beveiligingsronde in hun standaard intakechecklist voor elke klant die aankomt met een door AI gebouwd prototype, op dezelfde manier als u al browsercompatibiliteit of responsieve lay-out zou controleren voordat u een project afgerond noemt. Een korte, herhaalbare checklist - autorisatie, credentials, rate limiting, invoervalidatie, versleuteling in rust - toegepast op elk binnenkomend door AI gebouwd project, vangt het merendeel op van wat anders halverwege een project als verrassing zou opduiken, en stelt u in staat de beveiligingsronde vanaf het eerste klantgesprek te offreren als een bekende, begrote regel in plaats van een ongeplande toevoeging die halverwege ontdekt wordt.
 
 ## Echt voorbeeld
 
@@ -68,18 +68,18 @@ In plaats van deze problemen project voor project onder tijdsdruk te ontdekken, 
 
 Elke Van Acker runt een klein digitaal bureau in Brugge, voornamelijk voor lokale horeca- en wellnessbedrijven. Een nieuwe klant kwam aan met WellnessLoop, een klasboekingsapp voor boutique fitnessstudio's, onafhankelijk gebouwd in v0, met een lanceerdatum drie weken van tevoren al gecommuniceerd aan studiopartners. Het team van Elke had sterke frontend- en designvaardigheden maar geen in-house beveiligingsspecialist, en de tijdlijn liet geen ruimte om er een aan te nemen en in te werken.
 
-Ze bracht het project naar LaunchStudio onder een white-label opdracht. Onze engineers ontdekten dat elke ingelogde gebruiker de privé-boekingsdata van elke studio kon bekijken, inclusief namen van andere leden en klasaanwezigheid, simpelweg door een numeriek ID te wijzigen in de API-verzoeken van de app — het exacte gebroken-toegangscontrolepatroon dat het vaakst opduikt bij beoordelingen zoals deze. Er was ook een API-sleutel van een betalingsprovider rechtstreeks zichtbaar in de frontend-bundel. Beide werden opgelost op backendniveau binnen de oorspronkelijke tijdlijn, en het eindresultaat ging terug naar de klant van Elke onder de merknaam van haar eigen bureau.
+Ze bracht het project naar LaunchStudio onder een white-label opdracht. Onze engineers ontdekten dat elke ingelogde gebruiker de privé-boekingsdata van elke studio kon bekijken, inclusief namen van andere leden en klasaanwezigheid, simpelweg door een numeriek ID te wijzigen in de API-verzoeken van de app - het exacte gebroken-toegangscontrolepatroon dat het vaakst opduikt bij beoordelingen zoals deze. Er was ook een API-sleutel van een betalingsprovider rechtstreeks zichtbaar in de frontend-bundel. Beide werden opgelost op backendniveau binnen de oorspronkelijke tijdlijn, en het eindresultaat ging terug naar de klant van Elke onder de merknaam van haar eigen bureau.
 
 > *"Mijn klant wist nooit dat LaunchStudio betrokken was. Ze wisten alleen dat we op tijd een veilige app leverden, wat precies het resultaat was dat ik nodig had als het bureau dat ze inhuurden."*
-> — **Elke Van Acker, bureaueigenaar (Brugge)**
+> - **Elke Van Acker, bureaueigenaar (Brugge)**
 
-**Kosten en tijdlijn:** € 1.850 (white-label herstel autorisatie en credentials) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.850 (white-label herstel autorisatie en credentials) - voltooid in 6 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat is het meest voorkomende beveiligingsprobleem in door AI gebouwde apps?
 
-Ontbrekende server-side autorisatie — de backend die de data van elke gebruiker retourneert als het juiste ID wordt opgevraagd, omdat niets controleert of de aanvrager daadwerkelijk eigenaar is van het record.
+Ontbrekende server-side autorisatie - de backend die de data van elke gebruiker retourneert als het juiste ID wordt opgevraagd, omdat niets controleert of de aanvrager daadwerkelijk eigenaar is van het record.
 
 ### Kan mijn bureau beveiligingsfixes aanbieden zonder een beveiligingsengineer aan te nemen?
 

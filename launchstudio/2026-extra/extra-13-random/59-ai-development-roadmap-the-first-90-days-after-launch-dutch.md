@@ -12,7 +12,7 @@ Doelgroep: SaaS-oprichters in Scale-Up fase
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-Ontwikkelingsroadmap: De Eerste 90 Dagen na de Lancering",
-  "description": "Een realistische 90-dagen AI-ontwikkelingsroadmap voor ondernemers van wie de AI-gebouwde app zojuist live is gegaan: wat te monitoren in week 1–2, wat te stabiliseren in maand één, wat te bouwen in maand twee en wat neer te zetten in maand drie — inclusief budget- en tijdsrichtlijnen.",
+  "description": "Een realistische 90-dagen AI-ontwikkelingsroadmap voor ondernemers van wie de AI-gebouwde app zojuist live is gegaan: wat te monitoren in week 1–2, wat te stabiliseren in maand één, wat te bouwen in maand twee en wat neer te zetten in maand drie - inclusief budget- en tijdsrichtlijnen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-28",
@@ -35,7 +35,7 @@ De eerste twee weken zijn voor observatie. Echte gebruikers gebruiken je product
 - Supportberichten, gelabeld per thema.
 
 **Wat je doet:**
-- Los kritieke bugs direct op — alles wat aanmelden, betalen of de kernactie blokkeert, of data blootstelt.
+- Los kritieke bugs direct op - alles wat aanmelden, betalen of de kernactie blokkeert, of data blootstelt.
 - Houd een lijst bij van al het andere. Los het nog niet op.
 - Praat met minstens vijf gebruikers.
 
@@ -56,12 +56,12 @@ Deze maand is niet spectaculair en onevenredig waardevol. Een stabiel product be
 
 ## Dag 31–60: Bewust Bouwen
 
-Nu bouw je — maar met een proces dat beschermt wat werkt.
+Nu bouw je - maar met een proces dat beschermt wat werkt.
 
 - **Kies functies op basis van bewijs.** Geef voorrang aan waar de meest betrokken gebruikers om vragen en wat volgens de funneldata ontbreekt, niet aan wat het luidste bericht vraagt.
 - **Eén belangrijke functie tegelijk.** Bouw haar met je AI-tool, test op staging, breng uit (bij voorkeur achter een feature flag), bekijk de data, en ga dan verder.
 - **Bescherm kritieke flows.** Houd geautomatiseerde tests op aanmelden, inloggen, betalen en de kernactie, en draai ze vóór elke release. AI-tools genereren code gemakkelijk opnieuw; tests vangen de regressies op.
-- **Beoordeel wijzigingen die de beveiliging raken.** Alles wat toegangsbeheer, betalingen of data raakt, verdient een tweede blik — die van jezelf met een checklist, of die van een engineer.
+- **Beoordeel wijzigingen die de beveiliging raken.** Alles wat toegangsbeheer, betalingen of data raakt, verdient een tweede blik - die van jezelf met een checklist, of die van een engineer.
 
 ## Dag 61–90: Voorbereiden op Groei
 
@@ -88,7 +88,7 @@ Het Launch Ready-pakket van LaunchStudio bevat 48 uur ondersteuning na de lancer
 
 ## Meetpunten om op Dag Eén in te Richten
 
-Een AI-ontwikkelingsroadmap voor de eerste 90 dagen werkt alleen als je kunt zien wat er gebeurt. Richt vóór de lancering — of uiterlijk op dag één — het volgende in:
+Een AI-ontwikkelingsroadmap voor de eerste 90 dagen werkt alleen als je kunt zien wat er gebeurt. Richt vóór de lancering - of uiterlijk op dag één - het volgende in:
 
 | Signaal | Soort tool | Wat het je vertelt |
 | --- | --- | --- |
@@ -105,11 +105,11 @@ Houd een korte wekelijkse samenvatting van deze signalen bij. Die wordt het bewi
 
 ## Activatie Definiëren voor Je Product
 
-"Activatie" is het moment waarop een nieuwe gebruiker echte waarde krijgt — en het is de nuttigste vroege meting. Definieer haar concreet: voor een kledingruilabonnement "een eerste item aangeboden"; voor een planningstool "een eerste rooster gemaakt en gedeeld"; voor een facturatie-app "een eerste factuur verstuurd". Meet het aandeel aanmeldingen dat haar binnen een week bereikt. Activatie verbeteren in de eerste 90 dagen doet meestal meer voor groei dan welke nieuwe functie ook, omdat het bestaande acquisitie laat renderen.
+"Activatie" is het moment waarop een nieuwe gebruiker echte waarde krijgt - en het is de nuttigste vroege meting. Definieer haar concreet: voor een kledingruilabonnement "een eerste item aangeboden"; voor een planningstool "een eerste rooster gemaakt en gedeeld"; voor een facturatie-app "een eerste factuur verstuurd". Meet het aandeel aanmeldingen dat haar binnen een week bereikt. Activatie verbeteren in de eerste 90 dagen doet meestal meer voor groei dan welke nieuwe functie ook, omdat het bestaande acquisitie laat renderen.
 
 ## Wekelijkse Gesprekken met Gebruikers
 
-Praat in de eerste maand elke week met gebruikers, en daarna regelmatig. Nuttige vragen: Wat probeerde je te doen toen je je aanmeldde? Wat hield je bijna tegen? Wat verwachtte je te vinden wat er niet was? Wat zou je een vriend erover vertellen? Leg antwoorden met datum vast in een gedeeld document. Patronen over vijf tot tien gesprekken wijzen vaak direct naar de waardevolste volgende verbetering — en brengen soms productieproblemen aan het licht (e-mails die niet aankomen, verwarrende foutmeldingen) die de monitoring miste.
+Praat in de eerste maand elke week met gebruikers, en daarna regelmatig. Nuttige vragen: Wat probeerde je te doen toen je je aanmeldde? Wat hield je bijna tegen? Wat verwachtte je te vinden wat er niet was? Wat zou je een vriend erover vertellen? Leg antwoorden met datum vast in een gedeeld document. Patronen over vijf tot tien gesprekken wijzen vaak direct naar de waardevolste volgende verbetering - en brengen soms productieproblemen aan het licht (e-mails die niet aankomen, verwarrende foutmeldingen) die de monitoring miste.
 
 ## De Backlog Prioriteren na de Lancering
 
@@ -117,19 +117,19 @@ In week drie is de backlog lang: bugs, verzoeken, ideeën, uitgestelde punten. E
 
 ## Een Releaseritme dat Snelheid en Stabiliteit in Balans Houdt
 
-In de eerste 90 dagen werkt een vast ritme beter dan pieken: bijvoorbeeld twee keer per week kleine releases, elk via staging, met grotere wijzigingen achter feature flags. Vermijd releases op vrijdagmiddag of vlak voor je eigen afwezigheid. Schrijf bij elke release een changelog van één regel — nuttig voor support, voor gebruikers en om de oorzaak te traceren als er iets misgaat.
+In de eerste 90 dagen werkt een vast ritme beter dan pieken: bijvoorbeeld twee keer per week kleine releases, elk via staging, met grotere wijzigingen achter feature flags. Vermijd releases op vrijdagmiddag of vlak voor je eigen afwezigheid. Schrijf bij elke release een changelog van één regel - nuttig voor support, voor gebruikers en om de oorzaak te traceren als er iets misgaat.
 
 ## Budgetcontrolemomenten
 
-Bekijk de kosten op dag 30, 60 en 90: kosten voor infrastructuur en diensten per actieve gebruiker, AI- of API-kosten indien van toepassing, betaalkosten, en tijd besteed aan support. Vergelijk die met de omzet per gebruiker. Stijgen de kosten per gebruiker, onderzoek dat dan voordat je de acquisitie opschaalt — een lekke kostenstructuur groeit mee met elke nieuwe klant.
+Bekijk de kosten op dag 30, 60 en 90: kosten voor infrastructuur en diensten per actieve gebruiker, AI- of API-kosten indien van toepassing, betaalkosten, en tijd besteed aan support. Vergelijk die met de omzet per gebruiker. Stijgen de kosten per gebruiker, onderzoek dat dan voordat je de acquisitie opschaalt - een lekke kostenstructuur groeit mee met elke nieuwe klant.
 
 ## De Evaluatie op Dag 90
 
-Houd op dag 90 een korte evaluatie — alleen, met een medeoprichter of met een adviseur — over: wat de data zegt over activatie, retentie en gebruik; welke aannames zijn bevestigd of onjuist bleken; de staat van betrouwbaarheid en beveiliging (incidenten, meldingen, open risico's); kosten per gebruiker; en de drie belangrijkste prioriteiten voor het volgende kwartaal. Schrijf het op in een of twee pagina's. Dit document is waardevol voor investeerders, toekomstige medewerkers en je eigen helderheid over wat het product is geworden.
+Houd op dag 90 een korte evaluatie - alleen, met een medeoprichter of met een adviseur - over: wat de data zegt over activatie, retentie en gebruik; welke aannames zijn bevestigd of onjuist bleken; de staat van betrouwbaarheid en beveiliging (incidenten, meldingen, open risico's); kosten per gebruiker; en de drie belangrijkste prioriteiten voor het volgende kwartaal. Schrijf het op in een of twee pagina's. Dit document is waardevol voor investeerders, toekomstige medewerkers en je eigen helderheid over wat het product is geworden.
 
 ## Wanneer Je Tijdens de 90 Dagen Hulp Inschakelt
 
-Sommige momenten rechtvaardigen externe hulp, ook in een zuinig eerste kwartaal: een beveiligingszorg die een gebruiker meldt, een prestatieprobleem op een groeimoment, een betaalprobleem dat omzet raakt, of een grote klant die om documentatie vraagt. Vooraf weten wie je zou bellen — en je code, accounts en documentatie voor hen klaar hebben — maakt van deze momenten routineverzoeken in plaats van crises.
+Sommige momenten rechtvaardigen externe hulp, ook in een zuinig eerste kwartaal: een beveiligingszorg die een gebruiker meldt, een prestatieprobleem op een groeimoment, een betaalprobleem dat omzet raakt, of een grote klant die om documentatie vraagt. Vooraf weten wie je zou bellen - en je code, accounts en documentatie voor hen klaar hebben - maakt van deze momenten routineverzoeken in plaats van crises.
 
 ## Het Eerste Incident Kalm Afhandelen
 
@@ -137,11 +137,11 @@ De meeste producten hebben binnen 90 dagen hun eerste echte incident: een haperi
 
 ## Ontwikkelen met AI Veilig Houden na de Lancering
 
-Veel oprichters blijven na de lancering bouwen met Lovable, Bolt of Cursor. Bescherm de productiebasis: werk op branches, houd tests op kritieke flows draaiend in CI, beoordeel diffs op onbedoelde wijzigingen, laat de AI-tool nooit rechtstreeks aan productiedata komen en draai de test met twee accounts opnieuw na belangrijke wijzigingen. De snelheid van ontwikkelen met AI is in de eerste 90 dagen een troef — zolang die door dezelfde poorten gaat als al het andere.
+Veel oprichters blijven na de lancering bouwen met Lovable, Bolt of Cursor. Bescherm de productiebasis: werk op branches, houd tests op kritieke flows draaiend in CI, beoordeel diffs op onbedoelde wijzigingen, laat de AI-tool nooit rechtstreeks aan productiedata komen en draai de test met twee accounts opnieuw na belangrijke wijzigingen. De snelheid van ontwikkelen met AI is in de eerste 90 dagen een troef - zolang die door dezelfde poorten gaat als al het andere.
 
 ## Een Eenvoudig Weekritme
 
-Voor solo-oprichters houdt een weekritme de roadmap op koers zonder overhead: maandag de samenvatting van signalen en supportthema's bekijken; dinsdag tot en met donderdag in kleine stappen bouwen en uitbrengen; vrijdag met gebruikers praten, de backlog bijwerken en drie regels schrijven over wat er is geleerd. Dit dertien weken herhalen levert opmerkelijk veel vooruitgang op — en een duidelijke registratie van waarom het product zich zo heeft ontwikkeld.
+Voor solo-oprichters houdt een weekritme de roadmap op koers zonder overhead: maandag de samenvatting van signalen en supportthema's bekijken; dinsdag tot en met donderdag in kleine stappen bouwen en uitbrengen; vrijdag met gebruikers praten, de backlog bijwerken en drie regels schrijven over wat er is geleerd. Dit dertien weken herhalen levert opmerkelijk veel vooruitgang op - en een duidelijke registratie van waarom het product zich zo heeft ontwikkeld.
 
 ## Hoe Succes Eruitziet op Dag 90
 
@@ -149,7 +149,7 @@ Een geslaagd eerste kwartaal wordt niet alleen in gebruikers gemeten. Het ziet e
 
 ## De Roadmap in Één Zin
 
-Kijk voordat je bouwt, stabiliseer voordat je uitbreidt, bouw één ding tegelijk op basis van bewijs, en sluit het kwartaal af met een geschreven evaluatie — dat is de hele roadmap voor de eerste 90 dagen, en die werkt of je product nu met de hand of met AI is gebouwd.
+Kijk voordat je bouwt, stabiliseer voordat je uitbreidt, bouw één ding tegelijk op basis van bewijs, en sluit het kwartaal af met een geschreven evaluatie - dat is de hele roadmap voor de eerste 90 dagen, en die werkt of je product nu met de hand of met AI is gebouwd.
 
 ## Het Team Achter de Roadmap
 
@@ -168,9 +168,9 @@ Carmen volgde de roadmap. In de eerste twee weken weerstond ze de verleiding de 
 **Resultaat:** Na negentig dagen had Kledingruil 610 betalende leden, een maandelijks verloop van minder dan 4% en geen incidenten met data of betalingen. Carmen begon haar tweede kwartaal met een roadmap gebaseerd op data in plaats van gissingen.
 
 > *"Het moeilijkste van de eerste twee weken was niet bouwen. Het was ook het nuttigste wat ik deed."*
-> — **Carmen Vidal, Oprichter, Kledingruil (Amsterdam)**
+> - **Carmen Vidal, Oprichter, Kledingruil (Amsterdam)**
 
-**Kosten & Tijdlijn:** € 2.500 (Launch & Grow-pakket voor de lancering, plus twee kleine oplossingen na de lancering binnen managed hosting) — lancering in 10 werkdagen, gevolgd door € 49/maand voor beheerde hosting gedurende de eerste 90 dagen.
+**Kosten & Tijdlijn:** € 2.500 (Launch & Grow-pakket voor de lancering, plus twee kleine oplossingen na de lancering binnen managed hosting) - lancering in 10 werkdagen, gevolgd door € 49/maand voor beheerde hosting gedurende de eerste 90 dagen.
 
 ## Veelgestelde Vragen
 
@@ -217,7 +217,7 @@ Ja. Vroege reviews, vermeldingen en uptime bepalen hoe zoekmachines en AI-antwoo
     {
       "@type": "Question",
       "name": "Hoe bepaalt de ervaring van Manifera het advies na de lancering?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Producten die stabiliseren voordat ze uitbreiden, behouden gebruikers beter — een patroon gezien over 160+ projecten." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Producten die stabiliseren voordat ze uitbreiden, behouden gebruikers beter - een patroon gezien over 160+ projecten." }
     },
     {
       "@type": "Question",

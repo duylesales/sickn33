@@ -40,7 +40,7 @@ Self-regulating system. Innovation balanced with stability.
 
 **Every outage gets a blameless post-mortem:**
 📋 Timeline (minute by minute)
-📋 Root cause (not "bad deploy" — the actual technical failure)
+📋 Root cause (not "bad deploy" - the actual technical failure)
 📋 Action items (specific, assigned, time-bound)
 
 Downtime is not a tech inconvenience. It's a business catastrophe.

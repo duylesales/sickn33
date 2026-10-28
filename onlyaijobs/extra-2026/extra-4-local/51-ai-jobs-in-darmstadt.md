@@ -101,16 +101,16 @@ Research groups, space organisations and many tech teams in Darmstadt work in En
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Darmstadt you will find few or no local vacancies there today. Use German job portals, TU Darmstadt's career services, research institute vacancy pages and space organisation career sites as primary sources. OnlyAIJobs becomes useful if you consider the Netherlands — where employers such as Accenture, Cegeka, Holland Innovative and AMCS list AI roles — and as a model for searching by category and real commute. Darmstadt employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Darmstadt you will find few or no local vacancies there today. Use German job portals, TU Darmstadt's career services, research institute vacancy pages and space organisation career sites as primary sources. OnlyAIJobs becomes useful if you consider the Netherlands - where employers such as Accenture, Cegeka, Holland Innovative and AMCS list AI roles - and as a model for searching by category and real commute. Darmstadt employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Profile for Darmstadt Employers
 
 Darmstadt's research-heavy ecosystem rewards graduates who combine solid fundamentals with evidence of independent work:
 
-- **A thesis with depth**, ideally in an area linked to local strengths — time series, computer vision, security ML, scientific data or NLP.
+- **A thesis with depth**, ideally in an area linked to local strengths - time series, computer vision, security ML, scientific data or NLP.
 - **Research experience** through HiWi positions, even if you plan to work in industry.
 - **Programming quality**: clean, tested code, version control and experience with computing clusters.
-- **Domain curiosity**: space, weather, security or chemistry — employers value graduates who take the time to understand the domain.
+- **Domain curiosity**: space, weather, security or chemistry - employers value graduates who take the time to understand the domain.
 - **Clear communication** in English and, ideally, German.
 
 Hackathons and events organised by hessian.AI, TU Darmstadt and ATHENE are good places to build projects and meet researchers and employers.
@@ -121,7 +121,7 @@ The intersection of AI and security is one of Darmstadt's most distinctive field
 
 ## Space and Weather Data: What the Work Involves
 
-Working on AI for space and meteorology involves distinctive problems. Spacecraft send continuous streams of telemetry — temperatures, voltages, orientation, instrument status — and operations teams must detect anomalies early. Machine learning helps flag unusual patterns among thousands of parameters, but models must be reliable and interpretable, because operators make decisions affecting missions worth hundreds of millions of euros. Meteorological satellites produce vast amounts of imagery and atmospheric measurements, which are used for weather forecasting and climate monitoring; ML supports data processing, quality control and increasingly forecasting itself. Graduates in this field learn to work with very large scientific datasets, strict quality requirements and international teams.
+Working on AI for space and meteorology involves distinctive problems. Spacecraft send continuous streams of telemetry - temperatures, voltages, orientation, instrument status - and operations teams must detect anomalies early. Machine learning helps flag unusual patterns among thousands of parameters, but models must be reliable and interpretable, because operators make decisions affecting missions worth hundreds of millions of euros. Meteorological satellites produce vast amounts of imagery and atmospheric measurements, which are used for weather forecasting and climate monitoring; ML supports data processing, quality control and increasingly forecasting itself. Graduates in this field learn to work with very large scientific datasets, strict quality requirements and international teams.
 
 ## The Frankfurt Connection
 
@@ -150,7 +150,7 @@ Apply for a HiWi position in a group that interests you, attend hessian.AI and A
 
 ## Working Student and HiWi Roles in Practice
 
-In Germany, part-time work during studies is a normal and valued part of a career. Student assistants (HiWis) in research groups help with experiments, software development, data preparation and literature reviews, while working students (Werkstudenten) in companies contribute to real projects for up to around 20 hours a week during semesters. Both options let you earn money, build experience and test whether a field suits you. In Darmstadt, research groups at TU Darmstadt, Fraunhofer institutes, ATHENE, hessian.AI labs and companies in the city and in Frankfurt regularly advertise such positions. Many graduates find that their HiWi or working student employer becomes their first full-time employer, or at least provides the recommendation that opens the next door. Starting early — ideally in the first year of your master's programme — gives you the most benefit.
+In Germany, part-time work during studies is a normal and valued part of a career. Student assistants (HiWis) in research groups help with experiments, software development, data preparation and literature reviews, while working students (Werkstudenten) in companies contribute to real projects for up to around 20 hours a week during semesters. Both options let you earn money, build experience and test whether a field suits you. In Darmstadt, research groups at TU Darmstadt, Fraunhofer institutes, ATHENE, hessian.AI labs and companies in the city and in Frankfurt regularly advertise such positions. Many graduates find that their HiWi or working student employer becomes their first full-time employer, or at least provides the recommendation that opens the next door. Starting early - ideally in the first year of your master's programme - gives you the most benefit.
 
 ## Science and Technology Companies
 

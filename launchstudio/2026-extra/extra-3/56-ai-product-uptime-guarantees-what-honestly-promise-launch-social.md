@@ -1,11 +1,11 @@
-🚨 Merel put "99.9% uptime guarantee" in FactuurVolg's early contracts — because that's the number she'd seen other companies advertise, without doing any actual math on whether her setup could deliver it. Then a several-hour outage, caused entirely by her AI provider and completely outside her control, put her in contractual breach. 📉
+🚨 Merel put "99.9% uptime guarantee" in FactuurVolg's early contracts - because that's the number she'd seen other companies advertise, without doing any actual math on whether her setup could deliver it. Then a several-hour outage, caused entirely by her AI provider and completely outside her control, put her in contractual breach. 📉
 
-An uptime guarantee is a specific, checkable commitment — not marketing language. 🧠
+An uptime guarantee is a specific, checkable commitment - not marketing language. 🧠
 
-❌ 99.9% allows roughly 8.7 hours of downtime a year — a tighter tolerance than founders realize when they reach for the number because it sounds professional
+❌ 99.9% allows roughly 8.7 hours of downtime a year - a tighter tolerance than founders realize when they reach for the number because it sounds professional
 ❌ Your own uptime can never exceed your AI provider's actual historical reliability, no matter how solid your own infrastructure is
 ❌ A new product with limited operating history genuinely doesn't have the data to back a specific number yet
-❌ Missing an unrealistic promise creates real credibility and contractual consequences — worse than a conservative figure reliably met
+❌ Missing an unrealistic promise creates real credibility and contractual consequences - worse than a conservative figure reliably met
 
 ✅ Calculate a realistic figure from your own infrastructure's history, your AI provider's published uptime, and your actual incident-response speed
 ✅ Consider no formal guarantee at all early on, paired with transparent communication about your real reliability practices

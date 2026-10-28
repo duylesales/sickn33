@@ -2,11 +2,11 @@
 
 **The Pain Points:**
 ❌ **Blended Rates Hide Seniority Gaps:** A junior-heavy bench can average up to look identical to a senior-weighted team.
-❌ **Governance Billed Separately, Later:** Some quotes exclude architectural review entirely — until you need it.
+❌ **Governance Billed Separately, Later:** Some quotes exclude architectural review entirely - until you need it.
 ❌ **Ambiguous Scope-Change Pricing:** Two "identical" rates can diverge wildly once renegotiation starts.
 
 **The Manifera Solution:**
-✅ **Named Seniority Breakdown:** No blended averages — you see exactly who's on the team.
+✅ **Named Seniority Breakdown:** No blended averages - you see exactly who's on the team.
 ✅ **Governance Included, Not Hidden:** Independent quality review built into the quoted rate.
 ✅ **Defined Scope-Change Pricing:** Know the total cost before you sign, not after.
 

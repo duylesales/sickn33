@@ -1,10 +1,10 @@
-🚨 A partner at one of Charlotte de Groot's pilot law firms was skimming the weekly intake summary from IntakeWijs — and froze. The name on a new client intake was the opposing party in a case the firm was already actively running. The app had scheduled the consultation without blinking. 😳
+🚨 A partner at one of Charlotte de Groot's pilot law firms was skimming the weekly intake summary from IntakeWijs - and froze. The name on a new client intake was the opposing party in a case the firm was already actively running. The app had scheduled the consultation without blinking. 😳
 
 A client intake tool built with an AI assistant will handle forms beautifully and still have no idea it needs to think like a compliance officer. 🧠
 
-❌ Cursor built forms, document collection, and calendar booking cleanly — because that's exactly what was asked for
+❌ Cursor built forms, document collection, and calendar booking cleanly - because that's exactly what was asked for
 ❌ Nobody explicitly told the AI that every new contact needs cross-referencing against the firm's existing client and matter database before a meeting gets booked
-❌ Conflict checking isn't a UI feature — it's a data-relationship problem requiring fuzzy matching across nicknames, maiden names, and subsidiary companies
+❌ Conflict checking isn't a UI feature - it's a data-relationship problem requiring fuzzy matching across nicknames, maiden names, and subsidiary companies
 ❌ IntakeWijs had zero automated check in place; it simply accepted the new intake and booked the consult
 
 ✅ Run a fuzzy match against the firm's client and matter database on every new intake submission

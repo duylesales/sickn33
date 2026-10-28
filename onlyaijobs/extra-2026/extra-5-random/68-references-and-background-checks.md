@@ -75,7 +75,7 @@ Keep three referees ready at any time, refreshed as you change roles. Assembling
 
 A referee who is caught off guard gives a vague reference, and a vague reference reads as reservation.
 
-Contact each one before you give their details. Ask directly whether they would be comfortable giving a positive reference — the phrasing matters, because it gives someone with reservations an easy way to decline, which is far better for you than a lukewarm call.
+Contact each one before you give their details. Ask directly whether they would be comfortable giving a positive reference - the phrasing matters, because it gives someone with reservations an easy way to decline, which is far better for you than a lukewarm call.
 
 Then give them what they need. Which company, which role, roughly what it involves, and a short reminder of what you worked on together: the projects, your contribution and the outcome. Two or three sentences each. People remember less than you assume, particularly about work from several years ago.
 
@@ -91,7 +91,7 @@ Screening in the EU must have a lawful basis and be proportionate to the role, a
 
 **Employment and education verification** is generally accepted, and in a field where credentials are occasionally embellished it is reasonable.
 
-**Criminal record checks** are restricted in most member states to roles where they are justified — work with children or vulnerable people, financial services, security-sensitive positions — and rules on what may be requested and by whom vary considerably by country.
+**Criminal record checks** are restricted in most member states to roles where they are justified - work with children or vulnerable people, financial services, security-sensitive positions - and rules on what may be requested and by whom vary considerably by country.
 
 **Credit checks** are used in some financial roles and are not generally appropriate elsewhere.
 
@@ -177,7 +177,7 @@ A machine learning engineer accepted a conditional offer and supplied two refere
 
 The second reference was lukewarm. The manager remembered him working on a project that had been cancelled and, asked what he had delivered, could not recall specifics. Nothing negative was said, and the absence of substance was itself a problem.
 
-The hiring manager raised it. The candidate was able to explain the project and why it had been cancelled, and offered a third referee — a colleague who had worked with him daily on the system that actually shipped that year.
+The hiring manager raised it. The candidate was able to explain the project and why it had been cancelled, and offered a third referee - a colleague who had worked with him daily on the system that actually shipped that year.
 
 That conversation resolved it and the offer stood.
 
@@ -207,7 +207,7 @@ Choose other referees, be honest with the new employer about the situation befor
 Several European countries restrict questions about salary history, and pay transparency rules are tightening this further. You can decline and state your expectations instead.
 
 ### (Scenario: candidate facing a criminal record check) Is this normal?
-In specific sectors, yes — finance, children, security and some public roles. Outside these, a blanket criminal record check may not be proportionate.
+In specific sectors, yes - finance, children, security and some public roles. Outside these, a blanket criminal record check may not be proportionate.
 
 ### (Scenario: employer) How should we take references properly?
 After a conditional offer, with the candidate's consent, using the same questions for every candidate, and recording only what is relevant to the role.

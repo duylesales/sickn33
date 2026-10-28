@@ -1,4 +1,4 @@
-🧩 It's 11pm on a Tuesday and your engineering team is still untangling a billing bug nobody fully understands anymore — because the person who built it left two sprints ago.
+🧩 It's 11pm on a Tuesday and your engineering team is still untangling a billing bug nobody fully understands anymore - because the person who built it left two sprints ago.
 
 **The Pain Points:**
 ❌ **Every Deal Eats a Sprint:** Custom integration requests from enterprise customers keep pulling engineers off the roadmap that would land the next ten deals.

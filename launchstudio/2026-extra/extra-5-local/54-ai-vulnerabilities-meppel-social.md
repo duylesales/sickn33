@@ -1,8 +1,8 @@
-🚂 Femke Bosman built RailDock, a freight scheduling and carrier-matching platform for transport companies around Meppel, using v0 across three weeks of evenings — and a routine pre-launch review found that its payment webhook never verified requests actually came from Stripe. Anyone who guessed the URL could fake a "payment succeeded" event. 😳
+🚂 Femke Bosman built RailDock, a freight scheduling and carrier-matching platform for transport companies around Meppel, using v0 across three weeks of evenings - and a routine pre-launch review found that its payment webhook never verified requests actually came from Stripe. Anyone who guessed the URL could fake a "payment succeeded" event. 😳
 
 She'd tested her checkout flow fifty times. It always worked. That's exactly the problem. 🧠
 
-❌ Webhook endpoint accepted unsigned requests — a fake "paid" event could book freight for free
+❌ Webhook endpoint accepted unsigned requests - a fake "paid" event could book freight for free
 ❌ Role-based access (carriers vs. shippers) was only enforced in the UI, never on the backend
 ❌ Both flows worked flawlessly in her own testing, which is why she never suspected them
 ❌ "Always works for me" and "can't be faked by someone else" turned out to be two different things

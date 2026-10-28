@@ -3,12 +3,12 @@
 Ninety minutes of prep is the highest-leverage hour of your whole launch: 🧠
 
 ❌ Your GitHub repo sits under an old email you forgot the password to
-❌ Your Supabase project was set up by a friend — you're not the owner
+❌ Your Supabase project was set up by a friend - you're not the owner
 ❌ No Mollie account yet, though you're charging with iDEAL on day one
 ❌ Nobody's flagged which prototype screens are real and which are fake
 
 ✅ Gather six assets before kickoff: repo, database, payments, domain, a brief, one decision-maker
-✅ Start KvK and Mollie verification the day you sign — it runs in parallel
+✅ Start KvK and Mollie verification the day you sign - it runs in parallel
 ✅ Own the payment account; invite your engineer as a restricted team member
 ✅ Say "I don't know, here's where I'd look" instead of guessing
 

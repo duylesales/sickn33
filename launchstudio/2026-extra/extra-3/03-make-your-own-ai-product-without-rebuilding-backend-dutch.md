@@ -51,7 +51,7 @@ Oprichters die meerdere ideeën achter elkaar valideren, of tegelijkertijd een k
 
 [LaunchStudio](https://launchstudio.eu/nl/) bouwt precies dit soort herbruikbare, productierijpe fundamenten voor oprichters die van plan zijn meer dan één AI-product te maken, gebruikmakend van Manifera's eigen interne praktijk van het onderhouden van gedeelde, geharde infrastructuurpatronen over meer dan 160 klantprojecten die zijn geleverd vanuit de kantoren in Amsterdam en Singapore, in plaats van elke afzonderlijke opdracht te behandelen als een leeg blad dat de klok weer vanaf nul laat lopen.
 
-[Bouw uw fundament één keer, lanceer meer dan één keer](https://launchstudio.eu/nl/#contact) — de delen van uw product die niet het idee zijn, hoeven niet elke keer dat het idee verandert te worden herbouwd.
+[Bouw uw fundament één keer, lanceer meer dan één keer](https://launchstudio.eu/nl/#contact) - de delen van uw product die niet het idee zijn, hoeven niet elke keer dat het idee verandert te worden herbouwd.
 
 ## Een zelftest: Is wat u hergebruikt een fundament, of gewoon een gewoonte?
 
@@ -79,10 +79,10 @@ Het team van LaunchStudio herkende dat de vereisten voor authenticatie, betaling
 
 **Resultaat:** PersoneelRuil bereikte productiegereedheid in zes werkdagen in plaats van de ongeveer drie weken die TafelPlan oorspronkelijk had gekost, waarbij Bart's tweede product dezelfde beveiligingshouding erfde die het eerste al had verdiend door daadwerkelijk verhardingswerk.
 
-> *"Ik verwachtte oprecht dat ronde twee net zo lang zou duren als ronde één. Het kostte een fractie van de tijd, omdat de saaie, onzichtbare dingen — inloggen, betalingen, hosting — al één keer goed waren gedaan en gewoon aangepast moesten worden, niet opnieuw gedaan."*
-> — **Bart Hulshof, Oprichter, TafelPlan & PersoneelRuil (Arnhem)**
+> *"Ik verwachtte oprecht dat ronde twee net zo lang zou duren als ronde één. Het kostte een fractie van de tijd, omdat de saaie, onzichtbare dingen - inloggen, betalingen, hosting - al één keer goed waren gedaan en gewoon aangepast moesten worden, niet opnieuw gedaan."*
+> - **Bart Hulshof, Oprichter, TafelPlan & PersoneelRuil (Arnhem)**
 
-**Kosten en tijdlijn:** € 1.100 (fundamentaanpassing voor tweede product) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (fundamentaanpassing voor tweede product) - voltooid in 6 werkdagen.
 
 ---
 
@@ -118,7 +118,7 @@ Dit is precies het soort beoordeling dat snel wordt opgelost in een oriënterend
       "name": "Betekent het hergebruiken van een fundament dat producten dezelfde database delen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — hergebruik verwijst naar onderliggende patronen en geharde componenten, niet naar gedeelde gegevens tussen ongerelateerde producten."
+        "text": "Niet noodzakelijkerwijs - hergebruik verwijst naar onderliggende patronen en geharde componenten, niet naar gedeelde gegevens tussen ongerelateerde producten."
       }
     },
     {

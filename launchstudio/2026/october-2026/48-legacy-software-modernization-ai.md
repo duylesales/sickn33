@@ -25,44 +25,44 @@ Modern AI requires data to be accessible via REST or GraphQL APIs. Legacy system
 
 ### 2. The Cloud Disconnect
 
-Generative AI runs in the cloud. Many enterprise clients — especially in finance, healthcare, and logistics — still run their core software on local, on-premise servers, sometimes physically in a server room on-site because of decade-old compliance decisions nobody has revisited. Sending sensitive, on-premise data to a cloud-based LLM without a secure, encrypted "bridge" is a massive compliance violation, and it's the first thing a competent IT security review will flag.
+Generative AI runs in the cloud. Many enterprise clients - especially in finance, healthcare, and logistics - still run their core software on local, on-premise servers, sometimes physically in a server room on-site because of decade-old compliance decisions nobody has revisited. Sending sensitive, on-premise data to a cloud-based LLM without a secure, encrypted "bridge" is a massive compliance violation, and it's the first thing a competent IT security review will flag.
 
 ### 3. Data Fragmentation (The Silo Problem)
 
-AI is only as smart as the data it accesses. In legacy companies, HR data is in one old system, inventory is in another, and CRM data is in an Excel spreadsheet someone emails around every Friday. If you try to build a Retrieval-Augmented Generation (RAG) system on top of this, the AI will hallucinate because it cannot cross-reference these disconnected silos — it will confidently answer questions using only the fragment of data it happened to be given, with no way to know what it's missing.
+AI is only as smart as the data it accesses. In legacy companies, HR data is in one old system, inventory is in another, and CRM data is in an Excel spreadsheet someone emails around every Friday. If you try to build a Retrieval-Augmented Generation (RAG) system on top of this, the AI will hallucinate because it cannot cross-reference these disconnected silos - it will confidently answer questions using only the fragment of data it happened to be given, with no way to know what it's missing.
 
 ## Pitching the "Strangler Fig" Migration
 
 When you pitch a solution to the client, do not suggest "ripping and replacing" their 15-year-old software. That is too expensive, too risky for an IT department that has to sign off on it, and it's the kind of project that gets cancelled halfway through when budgets tighten. Instead, pitch the **Strangler Fig Pattern**.
 
-This is a software modernization strategy where you build a modern, cloud-native wrapper — often using Next.js and Supabase — *around* the legacy system, named after the strangler fig vine that grows around a host tree without immediately killing it. The modern wrapper slowly takes over specific functions, like reading inventory data or handling a single form, via secure APIs, while the core legacy system keeps running in the background, untouched and low-risk.
+This is a software modernization strategy where you build a modern, cloud-native wrapper - often using Next.js and Supabase - *around* the legacy system, named after the strangler fig vine that grows around a host tree without immediately killing it. The modern wrapper slowly takes over specific functions, like reading inventory data or handling a single form, via secure APIs, while the core legacy system keeps running in the background, untouched and low-risk.
 
 Once the modern "wrapper" is safely connected to the data, *then* you can plug in your AI Agents. The legacy modernization pays for itself by unlocking the AI capabilities the CEO desperately wants, and it gives IT a migration path they can approve in stages rather than a single high-stakes cutover.
 
 ### A Typical Strangler Fig Sequence
 
-1. **Map the data.** Identify which legacy tables or file exports actually matter for the AI use case — usually a fraction of the full schema.
+1. **Map the data.** Identify which legacy tables or file exports actually matter for the AI use case - usually a fraction of the full schema.
 2. **Build a read-only API bridge.** A secure Edge Function or middleware service exposes just those fields, encrypted in transit, without modifying the legacy system at all.
-3. **Validate with a low-risk feature.** Point a single, low-stakes feature — like a search or a dashboard widget — at the new API to prove the bridge works under real load.
+3. **Validate with a low-risk feature.** Point a single, low-stakes feature - like a search or a dashboard widget - at the new API to prove the bridge works under real load.
 4. **Layer in the AI.** Once the bridge is proven, connect the RAG pipeline or agent to the same API, so the AI reads live, validated data rather than a stale export.
 5. **Expand incrementally.** Each additional legacy function gets its own bridge and validation step, so no single migration step can take down the client's production system.
 
 ## Partnering with LaunchStudio for Execution
 
-Selling legacy modernization is highly profitable, but executing it requires deep, enterprise-level backend engineering. You cannot assign this to a junior frontend developer, and getting it wrong — for example, accidentally exposing PII through a poorly scoped API bridge — can turn a sales win into a liability nightmare.
+Selling legacy modernization is highly profitable, but executing it requires deep, enterprise-level backend engineering. You cannot assign this to a junior frontend developer, and getting it wrong - for example, accidentally exposing PII through a poorly scoped API bridge - can turn a sales win into a liability nightmare.
 
 This is where leading digital agencies partner with [LaunchStudio](https://launchstudio.eu/en/), whose engineering teams span offices in Amsterdam and Singapore.
 
 Backed by [Manifera's](https://www.manifera.com/) decade-plus of experience untangling massive corporate legacy systems for clients like Vodafone and TNO, we act as your invisible, white-label engineering team.
 
-Your agency designs the beautiful new frontend interface and the AI UX. LaunchStudio's senior architects handle the ugly backend work. We build the secure API bridges to the client's ancient on-premise servers. We implement the "Strangler Fig" migration safely, with zero downtime and no disruption to systems the client's business already depends on. We ensure the data is perfectly structured so your AI agents can read it without hallucinating — the exact class of RAG failure that quietly undermines otherwise well-built AI features.
+Your agency designs the beautiful new frontend interface and the AI UX. LaunchStudio's senior architects handle the ugly backend work. We build the secure API bridges to the client's ancient on-premise servers. We implement the "Strangler Fig" migration safely, with zero downtime and no disruption to systems the client's business already depends on. We ensure the data is perfectly structured so your AI agents can read it without hallucinating - the exact class of RAG failure that quietly undermines otherwise well-built AI features.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
 ## Key Takeaways
 
 - You cannot sell advanced AI features to enterprise clients if their data is trapped in 15-year-old, disconnected legacy software.
-- The IT department will block AI projects due to missing APIs, on-premise security risks, and data silos — and rightly so.
+- The IT department will block AI projects due to missing APIs, on-premise security risks, and data silos - and rightly so.
 - Pitch "Legacy Software Modernization" (specifically the Strangler Fig pattern) as the necessary first step to unlock AI capabilities, staged in low-risk increments IT can actually approve.
 - LaunchStudio provides agencies with the white-label enterprise engineering required to safely connect legacy systems to modern AI cloud infrastructure.
 
@@ -82,7 +82,7 @@ We joined David's pitch to the client's IT department as his "Head of Engineerin
 
 **Result:** Once the secure door was built, David's team successfully deployed the AI Logistics Copilot. The AI could now securely read the legacy database in real-time. David's agency won a €120,000 contract, which included a substantial markup on our white-label engineering fees. *"The client thought they were too old for AI. LaunchStudio built the bridge that proved them wrong, and we took all the credit."*
 
-**Cost & Timeline:** €45,000 (White-Label Legacy API Wrapper & AI Integration) — completed in 45 business days.
+**Cost & Timeline:** €45,000 (White-Label Legacy API Wrapper & AI Integration) - completed in 45 business days.
 
 ---
 
@@ -95,7 +95,7 @@ It is the process of updating, upgrading, or rewriting old, outdated software sy
 It is a safe way to modernize software, named after a vine that grows around a host tree. Instead of rebuilding the entire old system at once, which is risky and expensive, you build a modern system *around* it. You slowly move small features, like login or search, to the new system one at a time, until the old system is no longer needed and can be safely retired.
 
 ### Why do IT departments hate AI projects?
-IT departments prioritize security and stability over new features. When an agency pitches a cloud-based AI that needs to read sensitive, on-premise company data, IT sees a massive security risk. You have to prove you can build a secure, encrypted API bridge — and typically validate it with a low-risk feature first — before they will approve the AI.
+IT departments prioritize security and stability over new features. When an agency pitches a cloud-based AI that needs to read sensitive, on-premise company data, IT sees a massive security risk. You have to prove you can build a secure, encrypted API bridge - and typically validate it with a low-risk feature first - before they will approve the AI.
 
 ### Can LaunchStudio work with 20-year-old codebases?
 Yes. Manifera's enterprise engineers have extensive experience working with legacy databases, like old SQL Server or Oracle instances, outdated protocols like SOAP, and monolithic architectures. We know how to safely extract data from old systems without breaking them or triggering downtime the client can't afford.

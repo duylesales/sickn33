@@ -59,11 +59,11 @@ Kloven in invoervalidatie zijn ongebruikelijk gemakkelijk voor een oprichter om 
 
 **Vijf dingen die het waard zijn om te proberen op elk formulier met een getal:**
 
-1. **Een negatief getal** waar alleen positieve waarden logisch zijn — een hoeveelheid, een duur, een beoordeling. Een goed gevalideerd veld weigert het meteen; een slecht gevalideerd veld kan het verwerken en een onzinnig of misbruikbaar resultaat produceren.
-2. **Nul**, waar nul een logisch vreemde of betekenisloze waarde is — een bestelling met nul hoeveelheid, een boeking van nul nachten. Sommige applicaties handelen dit genadig af; andere produceren een berekeningsfout of een onbedoeld gratis resultaat.
-3. **Een enorm getal** — negen cijfers in plaats van een of twee — in een veld dat een normale, kleine waarde verwacht. Dit kan af en toe overflow-gedrag triggeren, of simpelweg onthullen dat er nooit een bovengrens werd overwogen.
+1. **Een negatief getal** waar alleen positieve waarden logisch zijn - een hoeveelheid, een duur, een beoordeling. Een goed gevalideerd veld weigert het meteen; een slecht gevalideerd veld kan het verwerken en een onzinnig of misbruikbaar resultaat produceren.
+2. **Nul**, waar nul een logisch vreemde of betekenisloze waarde is - een bestelling met nul hoeveelheid, een boeking van nul nachten. Sommige applicaties handelen dit genadig af; andere produceren een berekeningsfout of een onbedoeld gratis resultaat.
+3. **Een enorm getal** - negen cijfers in plaats van een of twee - in een veld dat een normale, kleine waarde verwacht. Dit kan af en toe overflow-gedrag triggeren, of simpelweg onthullen dat er nooit een bovengrens werd overwogen.
 4. **Een decimaal getal waar een geheel getal wordt verwacht**, of tekst waar een getal wordt verwacht. Een veld dat stilletjes "3.7 eenheden" accepteert van iets dat alleen redelijkerwijs kan bestaan in gehele eenheden, of dat fouten geeft op een verwarrende manier in plaats van een schone weigering, is een teken dat validatie niet specifiek werd overwogen voor dat veld.
-5. **Hetzelfde formulier twee keer snel achter elkaar indienen** — dubbelklikken op een knop "bestelling plaatsen" of "betaling indienen". Zonder bescherming tegen dubbele indiening kan dit soms twee records, twee afschrijvingen, of twee van wat het formulier verondersteld werd exact één keer aan te maken veroorzaken.
+5. **Hetzelfde formulier twee keer snel achter elkaar indienen** - dubbelklikken op een knop "bestelling plaatsen" of "betaling indienen". Zonder bescherming tegen dubbele indiening kan dit soms twee records, twee afschrijvingen, of twee van wat het formulier verondersteld werd exact één keer aan te maken veroorzaken.
 
 **Wat te doen met wat u vindt:** geen van deze testen, op zichzelf, vertelt u hoe u het onderliggende probleem veilig kunt herstellen – dat vereist nog steeds iemand die server-side validatie correct kan implementeren, het kan testen tegen elk toegangspunt (niet alleen het formulier dat u geprobeerd heeft), en kan bevestigen dat de herstelling legitieme randgevallen zoals een oprecht grote maar geldige bestelling niet breekt. Maar het zelf doorlopen van deze vijf-item lijst, op uw eigen product, voorafgaand aan een gesprek met een ingenieur, veranderd een vage "kun je controleren of mijn validatie oké is" in een specifieke "dit is wat ik vond toen ik X, Y en Z probeerde." Dit heeft de neiging de resulterende beoordeling sneller en preciezer afgebakend te maken vanaf het allereerste gesprek.
 
@@ -86,9 +86,9 @@ Een klant die uit nieuwsgierigheid randgevallen testte diende een negatieve hoev
 **Resultaat:** LaunchStudio voegde consistente server-side validatie toe over elk bestelgerelateerd eindpunt, waardoor negatieve, nul-, of onredelijke hoeveelheids- en prijswaarden werden geweigerd, ongeacht welk toegangspunt ze indiende.
 
 > *"Een klant vond dit per ongeluk tijdens het testen van iets ongerelateerds en vermeldde het bijna als een grap. Het had oprecht aanzienlijk langer onopgemerkt kunnen blijven dan het deed."*
-> — **Niels Kramer, Oprichter, MakerLink (Nijmegen)**
+> - **Niels Kramer, Oprichter, MakerLink (Nijmegen)**
 
-**Kosten en tijdlijn:** € 2.000 (audit van invoervalidatie over bestel- en prijseindpunten) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (audit van invoervalidatie over bestel- en prijseindpunten) - voltooid in 7 werkdagen.
 
 ---
 
@@ -102,7 +102,7 @@ Niet altijd – standaard functionele QA is vaak gebouwd rond "werkt dit met ver
 
 Het geldt voor in feite elk product met numerieke invoer die een berekening voedt – hoeveelheden, prijzen, duur, kortingen. Dit betekent dat boekingsplatformen, abonnements-tools en facturatiesystemen allemaal voor hetzelfde risico staan.
 
-### Manifera heeft decennia aan gecombineerde engineeringervaring over enterprise-systemen — vertaalt dat zich rechtstreeks naar het opvangen van een randgeval zoals dat van MakerLink?
+### Manifera heeft decennia aan gecombineerde engineeringervaring over enterprise-systemen - vertaalt dat zich rechtstreeks naar het opvangen van een randgeval zoals dat van MakerLink?
 
 Ja, rechtstreeks – enterprise software engineering heeft grens- en randgevalvalidatie altijd behandeld als een eersteklas zorg in plaats van een nagedachte. Die discipline brengt zich schoon over op producten op oprichterschaal.
 
@@ -137,7 +137,7 @@ Nee – het betekent dat de specifieke paden die u getest heeft standhielden, ni
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft decennia aan gecombineerde engineeringervaring over enterprise-systemen — vertaalt dat zich rechtstreeks naar het opvangen van een randgeval zoals dat van MakerLink?",
+      "name": "Manifera heeft decennia aan gecombineerde engineeringervaring over enterprise-systemen - vertaalt dat zich rechtstreeks naar het opvangen van een randgeval zoals dat van MakerLink?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja, rechtstreeks – enterprise software engineering heeft grens- en randgevalvalidatie altijd behandeld als een eersteklas zorg in plaats van een nagedachte. Die discipline brengt zich schoon over op producten op oprichterschaal."

@@ -1,8 +1,8 @@
-🚨 Sanne Bakker launched Shiftly, a shift-matching tool for hospitality staff in Amsterdam, on her custom domain in a single afternoon. Over the next fortnight, one-third (33%) of new users never completed registration — confirmation emails landed straight in spam without SPF/DKIM, and the payment callback still pointed to the old preview URL, causing users to abandon checkout. 😳
+🚨 Sanne Bakker launched Shiftly, a shift-matching tool for hospitality staff in Amsterdam, on her custom domain in a single afternoon. Over the next fortnight, one-third (33%) of new users never completed registration - confirmation emails landed straight in spam without SPF/DKIM, and the payment callback still pointed to the old preview URL, causing users to abandon checkout. 😳
 
 Pointing an A-record is only ten percent of going live on a custom domain. Here's what founders forget: 🧠
 
-❌ Transactional emails sent without verified SPF, DKIM, and DMARC DNS records — dumped into spam folders
+❌ Transactional emails sent without verified SPF, DKIM, and DMARC DNS records - dumped into spam folders
 ❌ OAuth callbacks and magic links still configured with temporary platform preview addresses
 ❌ Apex and www versions competing for traffic without canonical 301 redirects
 ❌ SSL certificate working on the root domain but failing silently on API and auth subdomains

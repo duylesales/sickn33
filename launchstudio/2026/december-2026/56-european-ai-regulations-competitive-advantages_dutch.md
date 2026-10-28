@@ -36,7 +36,7 @@ De gangbare aanname is dat Europese AI-regelgeving Europese oprichters vertraagt
 
 ## De Gevestigde Opvatting en Waarom Deze Onvolledig Is
 
-Het is waar dat de AVG (GDPR) en de nieuwe EU AI Act eisen stellen waar oprichters in minder gereguleerde markten geen last van hebben — verwerkersovereenkomsten, transparantieplichten en risicobeoordelingen. Het klassieke verhaal ziet dit puur als wrijving: langzamer, duurder en beperkender dan bouwen voor de Amerikaanse markt.
+Het is waar dat de AVG (GDPR) en de nieuwe EU AI Act eisen stellen waar oprichters in minder gereguleerde markten geen last van hebben - verwerkersovereenkomsten, transparantieplichten en risicobeoordelingen. Het klassieke verhaal ziet dit puur als wrijving: langzamer, duurder en beperkender dan bouwen voor de Amerikaanse markt.
 
 ## Waarom Dit Verhaal het "Vertrouwensdividend" Mist
 
@@ -71,7 +71,7 @@ De EU AI Act deelt AI-systemen in vier risicoklassen in:
 3. **Beperkt risico**: Chatbots en AI-gegenereerde content (transparantieplicht: de gebruiker moet weten dat hij met AI communiceert).
 4. **Minimaal risico**: De overgrote meerderheid van B2B-productiviteitstools (geen specifieke extra eisen bovenop de AVG).
 
-De meeste AI-native SaaS-apps vallen in de categorie **beperkt of minimaal risico**, wat betekent dat de verplichtingen vaak beperkt blijven tot transparantie — een uiterst haalbare eis.
+De meeste AI-native SaaS-apps vallen in de categorie **beperkt of minimaal risico**, wat betekent dat de verplichtingen vaak beperkt blijven tot transparantie - een uiterst haalbare eis.
 
 ### Belangrijkste inzichten
 
@@ -143,16 +143,16 @@ export interface ComplianceAuditRecord {
 
 ### Een AI-native oprichter in actie: Een deal winnen puur op basis van compliance-paraatheid
 
-Hanna, een adviseur op het gebied van welzijn op de werkplek in Oldenzaal, bouwde WelzijnScan — een AI-tool die geanonimiseerde enquête-antwoorden van werknemers analyseert om welzijnstrends in kaart te brengen — met behulp van Bolt. Ze nam het op tegen een goed gefinancierde Amerikaanse concurrent om een contract bij een Nederlandse fabrikant.
+Hanna, een adviseur op het gebied van welzijn op de werkplek in Oldenzaal, bouwde WelzijnScan - een AI-tool die geanonimiseerde enquête-antwoorden van werknemers analyseert om welzijnstrends in kaart te brengen - met behulp van Bolt. Ze nam het op tegen een goed gefinancierde Amerikaanse concurrent om een contract bij een Nederlandse fabrikant.
 
 De HR-directeur van het productiebedrijf stelde beide partijen gedetailleerde vragen: waar werd de data opgeslagen, verliet het de EU en hoe werd de AVG nageleefd? Hanna, die WelzijnScan via LaunchStudio met AVG-architectuur had gebouwd, beantwoordde elke vraag direct. De Amerikaanse concurrent moest de vragen meenemen en kwam nooit met bevredigende antwoorden over EU-dataresidentie.
 
 **Resultaat:** Hanna won het contract specifiek op basis van compliance-paraatheid. De HR-directeur noemde de helderheid rondom databescherming de beslissende factor.
 
-> *"We namen het op tegen een goedkopere, grotere concurrent. Wat de doorslag gaf was geen functie — het was dat ik elke datavraag direct kon beantwoorden en zij niet."*
-> — **Hanna Groenewold, Oprichter, WelzijnScan (Oldenzaal)**
+> *"We namen het op tegen een goedkopere, grotere concurrent. Wat de doorslag gaf was geen functie - het was dat ik elke datavraag direct kon beantwoorden en zij niet."*
+> - **Hanna Groenewold, Oprichter, WelzijnScan (Oldenzaal)**
 
-**Kosten & Doorlooptijd:** € 2.850 (Launch & Grow Pakket, AVG-compliant architectuur) — live in 12 werkdagen.
+**Kosten & Doorlooptijd:** € 2.850 (Launch & Grow Pakket, AVG-compliant architectuur) - live in 12 werkdagen.
 
 ---
 

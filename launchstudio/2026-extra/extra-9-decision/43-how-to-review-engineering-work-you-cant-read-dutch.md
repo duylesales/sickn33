@@ -33,7 +33,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Uw engineer stuurt op donderdagmiddag een bericht: *"De authenticatie-hardening is afgerond, Row Level Security (RLS) policies zijn actief op alle tabellen, en ik heb de API-sleutels verhuisd naar de server. Het staat klaar voor je review."*
 
-U kunt zelf geen regel code lezen. Wat beoordeelt u op dat moment eigenlijk — en hoe geeft u akkoord zonder blind uw handtekening te zetten onder werk dat u niet begrijpt, of uzelf belachelijk te maken door net te doen alsof u het wél snapt?
+U kunt zelf geen regel code lezen. Wat beoordeelt u op dat moment eigenlijk - en hoe geeft u akkoord zonder blind uw handtekening te zetten onder werk dat u niet begrijpt, of uzelf belachelijk te maken door net te doen alsof u het wél snapt?
 
 Dit is de meest voorkomende, stille onzekerheid onder oprichters die hun product met behulp van AI-tools (zoals Lovable, Bolt of Cursor) hebben gebouwd en vervolgens professionele ontwikkelaars inschakelen voor de afronding. Het goede nieuws: die onzekerheid berust op een denkfout. Code inspecteren is immers niet wat reviewen betekent. Een review is het systematisch verifiëren of vooraf afgesproken functionaliteiten en beveiligingseisen nu daadwerkelijk waar zijn in uw applicatie. En voor die taak bent u vele malen beter gekwalificeerd dan uw engineer, omdat u als enige exact weet welk zakelijk doel het product moet dienen.
 
@@ -59,7 +59,7 @@ Controleer twee zaken op de staging-omgeving:
 
 ## Deliverable Twee: Een Schriftelijke Acceptatiechecklist, Vooraf Vastgelegd
 
-Het meest waardevolle document binnen een softwaretraject is een lijst met concrete stellingen die waar moeten zijn zodra het werk klaar is — geschreven in begrijpelijke taal en overeengekomen vóórdat de eerste regel code wordt getypt.
+Het meest waardevolle document binnen een softwaretraject is een lijst met concrete stellingen die waar moeten zijn zodra het werk klaar is - geschreven in begrijpelijke taal en overeengekomen vóórdat de eerste regel code wordt getypt.
 
 *Vooraf overeengekomen* is het sleutelwoord. Een checklist die pas aan het einde wordt opgesteld, is louter een verslag van wat er toevallig is gebouwd. Een checklist die bij de start is afgetikt, fungeert als een bindend contract over wat er gebouwd móét worden. Het voorkomt het ongemakkelijke spanningsveld waarbij de oprichter een vaag gevoel van onvrede heeft maar dit niet kan onderbouwen, terwijl de engineer meent dat hij alles heeft geleverd wat werd gevraagd.
 
@@ -70,14 +70,14 @@ Vraag om een genummerde lijst van tien tot vijfentwintig concrete punten. Geen v
 Zwakke acceptatiecriteria falen bijna altijd op formulering, niet op intentie. Drie vuistregels lossen dit structureel op:
 
 1. **Benoem expliciet de actor.** *"Een uitgelogde bezoeker"*, *"een betalende abonnee"*, *"een beheerder"*. De helft van alle datalekken in AI-software betreft permissieproblemen (wie mag wat zien?). Een criterium zonder duidelijke rol kan dat risico niet testen.
-2. **Benoem het waarneembare resultaat, niet het technische mechanisme.** *"Ik ontvang de factuurmail binnen twee minuten op mijn eigen testadres"* is testbaar. *"E-mailintegratie is geconfigureerd"* is dat niet — want hoe controleert u dat? Een formulering op basis van het resultaat blijft bovendien geldig als de ontwikkelaar halverwege voor een andere technische tool kiest.
-3. **Test het foutscenario, niet alleen het succespad.** Voeg bij elk succesvol scenario direct het bijbehorende weigeringsscenario toe. De betaling slaagt met een geldige testkaart — én faalt netjes met een duidelijke foutmelding bij een geweigerde kaart (in plaats van een vastlopend wit scherm). Wachtwoordreset werkt voor een bestaand account — én verraadt niet of een onbekend e-mailadres in de database voorkomt. AI-tools optimaliseren primair voor de demonstratiemodus; juist in de foutscenario's schuilt de meerwaarde van uw handmatige controle.
+2. **Benoem het waarneembare resultaat, niet het technische mechanisme.** *"Ik ontvang de factuurmail binnen twee minuten op mijn eigen testadres"* is testbaar. *"E-mailintegratie is geconfigureerd"* is dat niet - want hoe controleert u dat? Een formulering op basis van het resultaat blijft bovendien geldig als de ontwikkelaar halverwege voor een andere technische tool kiest.
+3. **Test het foutscenario, niet alleen het succespad.** Voeg bij elk succesvol scenario direct het bijbehorende weigeringsscenario toe. De betaling slaagt met een geldige testkaart - én faalt netjes met een duidelijke foutmelding bij een geweigerde kaart (in plaats van een vastlopend wit scherm). Wachtwoordreset werkt voor een bestaand account - én verraadt niet of een onbekend e-mailadres in de database voorkomt. AI-tools optimaliseren primair voor de demonstratiemodus; juist in de foutscenario's schuilt de meerwaarde van uw handmatige controle.
 
 Een goede lakmoesproef: als u het punt voorlegt aan een willekeurige kennis die uw product nog nooit heeft gezien, en diegene kan de test uitvoeren zonder u vragen te stellen, dan is het criterium correct geformuleerd.
 
 ## Deliverable Drie: Een Changelog in Begrijpelijke Mensentaal
 
-Vraag om een doorlopend overzicht — minimaal twee keer per week bijgewerkt in een gedeeld document — met per afgeronde wijziging één heldere regel tekst in normaal Nederlands, inclusief de reden. Bijvoorbeeld: *"OpenAI API-sleutel verplaatst van de browser naar de server, omdat iedereen via de inspectietool van de browser voorheen uw sleutel kon kopiëren en op uw kosten kon genereren."*
+Vraag om een doorlopend overzicht - minimaal twee keer per week bijgewerkt in een gedeeld document - met per afgeronde wijziging één heldere regel tekst in normaal Nederlands, inclusief de reden. Bijvoorbeeld: *"OpenAI API-sleutel verplaatst van de browser naar de server, omdat iedereen via de inspectietool van de browser voorheen uw sleutel kon kopiëren en op uw kosten kon genereren."*
 
 Dit levert u drie grote voordelen op:
 - U weet precies wat er is gebeurd zonder git-diffs te hoeven ontcijferen;
@@ -88,7 +88,7 @@ Accepteer geen ruwe lijst met git-commitberichten als alternatief. *"fix: update
 
 ## Deliverable Vier: Een Korte Walkthrough-Video Halverwege
 
-Vraag rond het midden van het traject om een schermopname van circa tien minuten — géén lange live meeting, maar een asynchrone video — waarin de engineer over de staging-omgeving loopt en de werking van de nieuwe functionaliteiten demonstreert.
+Vraag rond het midden van het traject om een schermopname van circa tien minuten - géén lange live meeting, maar een asynchrone video - waarin de engineer over de staging-omgeving loopt en de werking van de nieuwe functionaliteiten demonstreert.
 
 Een video werkt vele malen effectiever dan een live videogesprek. U kunt pauzeren, een complex fragment drie keer terugspoelen, en de video over drie weken opnieuw bekijken als u twijfelt over een detail. In een live meeting knikt men uit beleefdheid mee, om het tegen vrijdag weer vergeten te zijn. Bovendien beschermt het de focus van uw ontwikkelaar: een korte opname kost hen vijftien minuten, terwijl een geplande afspraak al snel een heel dagdeel aan concentratie opslokt.
 
@@ -99,13 +99,13 @@ Luister tijdens de video niet naar ingewikkelde vaktermen, maar let op de aanslu
 U hoeft een technisch antwoord niet tot in detail te kunnen beoordelen om waardevolle inzichten uit een vraag te halen. Deze vier vragen leggen feilloos de vinger op de zere plek:
 
 1. *"Wat ben je in de code tegengekomen dat we nog niet wisten toen we de offerte opstelden?"* Elk project kent verrassingen. Een engineer die antwoordt met "niets bijzonders" kijkt niet goed of vertelt niet alles, wetende dat bijna de helft van alle AI-gegenereerde code fundamentele veiligheidsfouten bevat. Dit geeft u tevens een vroege waarschuwing over eventuele scope-uitloop.
-2. *"Wat is op dit moment het meest kwetsbare onderdeel van het product, en wat zou je daaraan verbeteren als we nog een week extra hadden?"* Dit levert u een geprioriteerd risicoprofiel op in de eigen woorden van de expert — goud waard voor uw go-to-market planning.
+2. *"Wat is op dit moment het meest kwetsbare onderdeel van het product, en wat zou je daaraan verbeteren als we nog een week extra hadden?"* Dit levert u een geprioriteerd risicoprofiel op in de eigen woorden van de expert - goud waard voor uw go-to-market planning.
 3. *"Als we volgende week 500 nieuwe betalende gebruikers op één dag verwelkomen, wat begeeft het dan als eerste?"* Een scherp antwoord benoemt direct een specifiek knelpunt: een API rate limit, database connection pooling of een e-mailquotum. Een ontwijkend antwoord toont aan dat er nog niet over schaalbaarheid is nagedacht.
 4. *"Welke technische zaken heb je tijdens deze sprint bewust níét aangepakt, en waarom?"* Goede ontwikkelaars maken continu afwegingen over wat wel en niet binnen de tijd past. Deze vraag maakt die onzichtbare keuzes expliciet, zodat u kunt bijsturen als iets van hoge zakelijke waarde onbedoeld is blijven liggen.
 
 ## Wat U Vooral Niet Moet Doen (En Welke Drie Signalen Wél Tellen)
 
-Verlies uzelf niet in details: ga geen meningen vormen over programmeerstijl, mapstructuren of specifieke JavaScript-bibliotheken. Plak geen broncode in ChatGPT om te vragen "of dit goede code is" — een AI-chatbot zonder de volledige architectuurcontext zal altijd willekeurige verbeterpunten verzinnen, waardoor uw engineer kostbare tijd kwijt is aan het verdedigen van volstrekt logische keuzes. En staar u niet blind op het aantal git-commits per dag; een ontwikkelaar die een hele dag rustig de databasestructuur bestudeert vóórdat hij iets aanpast, levert vaak het allerbeste werk.
+Verlies uzelf niet in details: ga geen meningen vormen over programmeerstijl, mapstructuren of specifieke JavaScript-bibliotheken. Plak geen broncode in ChatGPT om te vragen "of dit goede code is" - een AI-chatbot zonder de volledige architectuurcontext zal altijd willekeurige verbeterpunten verzinnen, waardoor uw engineer kostbare tijd kwijt is aan het verdedigen van volstrekt logische keuzes. En staar u niet blind op het aantal git-commits per dag; een ontwikkelaar die een hele dag rustig de databasestructuur bestudeert vóórdat hij iets aanpast, levert vaak het allerbeste werk.
 
 Er zijn drie signalen die wél direct om actie vragen:
 - **Ontwijkend gedrag:** Een engineer die op een concrete functionele vraag stelselmatig reageert met abstracte geruststellingen.
@@ -120,24 +120,24 @@ Software beoordelen zonder code te kunnen lezen draait om het opeisen van de jui
 
 ### Een Oprichter in Actie: Het Checklist-Punt Dat een Ernstig Datalek Voorkwam
 
-Fleur Janssen, voormalig bloemiste in Haarlem, ontwikkelde met behulp van Bolt het platform Bloemroute — een SaaS-applicatie waarmee zelfstandige bloemisten bezorgmomenten plannen en gecombineerde rijroutes genereren. Toen ze de backend liet afwerken door een extern bureau, eiste ze vooraf een gedetailleerde acceptatiechecklist met handelingen die ze zelf kon testen.
+Fleur Janssen, voormalig bloemiste in Haarlem, ontwikkelde met behulp van Bolt het platform Bloemroute - een SaaS-applicatie waarmee zelfstandige bloemisten bezorgmomenten plannen en gecombineerde rijroutes genereren. Toen ze de backend liet afwerken door een extern bureau, eiste ze vooraf een gedetailleerde acceptatiechecklist met handelingen die ze zelf kon testen.
 
 Eén van de criteria die ze zelf toevoegde: *"Als bloemist A inlogt en in de adresbalk het winkel-ID handmatig wijzigt naar het nummer van bloemist B, toont het systeem een foutmelding en géén bezorgopdrachten."*
 
-In week twee testte ze dit op de staging-omgeving. Bij de reguliere bestellijst slaagde de test vlekkeloos: het systeem gaf keurig een 403-foutmelding. Vervolgens probeerde ze exact hetzelfde op de pagina van de *printbare routesheet* — een functie die niet expliciet op de checklist stond omdat niemand eraan had gedacht. Tot haar schrik verschenen direct alle bezorgadressen, bloemstukdetails en telefoonnummers van een concurrerende bloemist op haar scherm.
+In week twee testte ze dit op de staging-omgeving. Bij de reguliere bestellijst slaagde de test vlekkeloos: het systeem gaf keurig een 403-foutmelding. Vervolgens probeerde ze exact hetzelfde op de pagina van de *printbare routesheet* - een functie die niet expliciet op de checklist stond omdat niemand eraan had gedacht. Tot haar schrik verschenen direct alle bezorgadressen, bloemstukdetails en telefoonnummers van een concurrerende bloemist op haar scherm.
 
 **Resultaat:** De printbare routesheet bleek een verouderde, directe database-query te gebruiken die buiten de nieuw ingerichte authenticatielogica omging. Omdat Fleur dit tijdens de testfase in week twee ontdekte in plaats van na de officiële lancering, loste het ontwikkelteam het probleem binnen een werkdag op. Vervolgens werden direct drie vergelijkbare secundaire querypaden gecontroleerd en dichtgezet.
 
-> *"Ik ontdekte het datalek omdat ik mijn product en mijn gebruikers door en door ken, niet omdat ik code kan lezen. Mijn ontwikkelaar kon het binnen een uur repareren — maar hij had die printpagina zelf nooit gecontroleerd, simpelweg omdat hij nog nooit om zes uur 's ochtends een routebriefje voor een bezorger heeft uitgeprint."*
-> — **Fleur Janssen, Oprichter, Bloemroute (Haarlem)**
+> *"Ik ontdekte het datalek omdat ik mijn product en mijn gebruikers door en door ken, niet omdat ik code kan lezen. Mijn ontwikkelaar kon het binnen een uur repareren - maar hij had die printpagina zelf nooit gecontroleerd, simpelweg omdat hij nog nooit om zes uur 's ochtends een routebriefje voor een bezorger heeft uitgeprint."*
+> - **Fleur Janssen, Oprichter, Bloemroute (Haarlem)**
 
-**Kosten & Doorlooptijd:** €2.750 (Launch Ready pakket, multi-tenant data-isolatie en authenticatie-hardening) — binnen 12 werkdagen live in productie.
+**Kosten & Doorlooptijd:** €2.750 (Launch Ready pakket, multi-tenant data-isolatie en authenticatie-hardening) - binnen 12 werkdagen live in productie.
 
 ---
 
 ## Veelgestelde Vragen
 
-### Wie moet de acceptatiechecklist schrijven — ik of het engineeringteam?
+### Wie moet de acceptatiechecklist schrijven - ik of het engineeringteam?
 Beide partijen, in een vaste volgorde. U schrijft de eerste opzet in uw eigen woorden: wat moet het product functioneel doen en welke situaties mogen absoluut niet voorkomen. Vervolgens vult het engineeringteam dit aan met technische randvoorwaarden en foutscenario's (zoals mislukte betalingen of sessieverlopen) die u zelf niet had kunnen voorzien. Door dit document vóór aanvang gezamenlijk te ondertekenen, fungeert het als een objectief contract.
 
 ### Wat als ik geen staging-omgeving krijg aangeboden voor mijn project?
@@ -150,7 +150,7 @@ Reken op circa één tot twee uur per week: een half uur om op staging de checkl
 Ja, dat is een volkomen professionele verwachting en geen gunst. Een programmeur die een aanpassing niet in één duidelijke Nederlandse zin kan uitleggen, overziet de consequenties van zijn werk vaak zelf onvoldoende. Bovendien dient deze toelichting direct als waardevolle documentatie voor toekomstige ontwikkelaars die later aan uw platform gaan bouwen.
 
 ### Wat moet ik doen als een checklist-item faalt op de staging-omgeving?
-Rapporteer het probleem strikt feitelijk en zonder zelf diagnoses te stellen: beschrijf exact welke stappen u zette, wat u verwachtte dat er zou gebeuren, wat er feitelijk gebeurde, en voeg een schermafbeelding bij. Ga niet raden naar de technische oorzaak ("de knop doet het niet omdat de database vastloopt") — daarmee stuurt u de engineer mogelijk op een dwaalspoor. Een afgekeurd punt tijdens de bouwfase is een volstrekt normaal onderdeel van het proces, geen crisis.
+Rapporteer het probleem strikt feitelijk en zonder zelf diagnoses te stellen: beschrijf exact welke stappen u zette, wat u verwachtte dat er zou gebeuren, wat er feitelijk gebeurde, en voeg een schermafbeelding bij. Ga niet raden naar de technische oorzaak ("de knop doet het niet omdat de database vastloopt") - daarmee stuurt u de engineer mogelijk op een dwaalspoor. Een afgekeurd punt tijdens de bouwfase is een volstrekt normaal onderdeel van het proces, geen crisis.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ Rapporteer het probleem strikt feitelijk en zonder zelf diagnoses te stellen: be
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wie moet de acceptatiechecklist schrijven — ik of het engineeringteam?",
+      "name": "Wie moet de acceptatiechecklist schrijven - ik of het engineeringteam?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Beide partijen. U formuleert de functionele eisen in uw eigen woorden, waarna het engineeringteam dit aanvult met technische foutscenario's en configuratiecontroles. Goedkeuring vooraf maakt het een bindende afspraak."

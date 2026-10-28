@@ -107,9 +107,9 @@ Now, when a developer tweaked a prompt to fix a French VAT issue, the CI/CD pipe
 **Result:** Engineering velocity returned instantly. Developers were no longer paralyzed by fear because the EDD pipeline provided a mathematical safety net. The hallucination rate in production dropped to 0.1%, and Marcus's team successfully scaled the system to process 50,000 invoices a month for major European enterprises.
 
 > *"We were trying to manage a neural network using the same tools we used to manage a basic database. It was a disaster waiting to happen. LaunchStudio didn't just fix our code; they re-educated our entire engineering department on how to actually build software in the AI era. The evaluation pipeline they built is the most valuable piece of infrastructure we own."*
-> — **Marcus Sterling, CTO, LedgerAI (London)**
+> - **Marcus Sterling, CTO, LedgerAI (London)**
 
-**Cost & Timeline:** €12,500 (Launch & Grow Package with Enterprise MLOps & EDD Add-on) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €12,500 (Launch & Grow Package with Enterprise MLOps & EDD Add-on) - production-ready and deployed in 15 business days.
 
 ---
 

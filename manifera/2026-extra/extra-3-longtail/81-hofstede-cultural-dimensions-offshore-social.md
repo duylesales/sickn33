@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Train the client-facing management layer to recognize indirect signals explicitly:** Rather than expecting an engineering team from a different cultural background to communicate exactly like a Western European colleague would.
 ✅ **Create structured, low-stakes opportunities to surface concerns directly:** such as a specific, standing "what's the biggest risk right now" question in status updates, which gives space for a concern to be raised even when a spontaneous, unprompted direct challenge feels culturally uncomfortable.
-✅ **Have a cultural bridge role — someone who understands both communication norms — actively translating:** not just linguistically but in terms of directness calibration, between a client's expectations and an engineering team's actual signals.
+✅ **Have a cultural bridge role - someone who understands both communication norms - actively translating:** not just linguistically but in terms of directness calibration, between a client's expectations and an engineering team's actual signals.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

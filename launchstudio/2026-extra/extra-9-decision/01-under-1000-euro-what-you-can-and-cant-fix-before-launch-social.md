@@ -2,13 +2,13 @@
 
 A tight budget tempts founders to spread it across everything that sounds urgent. Here's why that backfires: 🧠
 
-❌ Her Supabase tables had RLS switched off — every provider could read every other's client records
+❌ Her Supabase tables had RLS switched off - every provider could read every other's client records
 ❌ €900 buys one category done properly, not four done halfway
 ❌ Spending €400 on Stripe while records sit readable across accounts is buying the wrong thing beautifully
 ❌ Protecting a €900 budget for six months often costs more than €1,600 in delay
 
 ✅ Decide which single risk you're buying down, not "everything, but cheaper"
-✅ No sensitive data means an €800–€1,200 job — deploy, protect the keys, launch
+✅ No sensitive data means an €800–€1,200 job - deploy, protect the keys, launch
 ✅ Payments can wait if customers will invoice or bank-transfer for a quarter
 ✅ Access control at €1,000 becomes the foundation later payments work builds on
 

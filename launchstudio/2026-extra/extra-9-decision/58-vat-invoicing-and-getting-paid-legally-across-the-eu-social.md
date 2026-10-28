@@ -1,6 +1,6 @@
 🚨 Sell a €10 subscription to a consumer in Germany and you owe German VAT, at Germany's rate, even if your company has never set foot there. 😳
 
-There's a specific EU mechanism built to avoid registering separately in every member state — knowing it exists and using it right are different things: 🧠
+There's a specific EU mechanism built to avoid registering separately in every member state - knowing it exists and using it right are different things: 🧠
 
 ❌ Believing "Stripe handles taxes" equals producing a legally compliant invoice
 ❌ A German B2B customer's finance team rejecting an invoice with no VAT breakdown

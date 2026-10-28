@@ -1,6 +1,6 @@
-🚨 Vertelt u uw klant wie hun backend daadwerkelijk heeft gebouwd? Bram deed het niet — totdat een fintechklant vroeg naar tokenverversing, en zijn pijnlijke stilte meer schade deed dan de waarheid ooit had kunnen doen. 😬
+🚨 Vertelt u uw klant wie hun backend daadwerkelijk heeft gebouwd? Bram deed het niet - totdat een fintechklant vroeg naar tokenverversing, en zijn pijnlijke stilte meer schade deed dan de waarheid ooit had kunnen doen. 😬
 
-Er bestaat geen universeel juiste houding — alleen de verkeerde houding voor déze specifieke klant: 🎭
+Er bestaat geen universeel juiste houding - alleen de verkeerde houding voor déze specifieke klant: 🎭
 
 ❌ Onzichtbaar blijven bij een technisch onderlegde klant is één verdiepende vraag verwijderd van gezichtsverlies
 ❌ De partner reflexmatig benoemen kan een designklant doen afvragen waarom ze uw bureau eigenlijk nodig hebben
@@ -10,7 +10,7 @@ Er bestaat geen universeel juiste houding — alleen de verkeerde houding voor d
 ✅ Blijf onzichtbaar als de klant u koos voor branding of design, en het technische risico van het project laag is
 ✅ Benoem de partner zodra betalingsverkeer, privacygevoelige data of zakelijke inkoopprocedures meespelen
 ✅ Introduceer de specialist rechtstreeks wanneer de compliance-procedure van de klant daar expliciet om vraagt
-✅ Bepaal uw transparantie op basis van klantprofiel en risico — doelbewust gekozen, niet uit automatisme
+✅ Bepaal uw transparantie op basis van klantprofiel en risico - doelbewust gekozen, niet uit automatisme
 
 Bij **LaunchStudio**, ondersteund door Manifera's team van 120+ ervaren software-engineers, werkt het benoemen van het partnerschap juist als een krachtige kwaliteitsborging. 🛡️
 

@@ -1,4 +1,4 @@
-😬 Bram Kuiper bouwde Bloomroute — een bloemenmarktplaats die kwekers uit de bollenstreek verbindt met lokale bloemisten — volledig in Lovable, zonder één regel code te schrijven. Het zag er klaar uit. Tot een bloemist belde om te vragen waarom haar kaart niet was belast voor drie bestellingen.
+😬 Bram Kuiper bouwde Bloomroute - een bloemenmarktplaats die kwekers uit de bollenstreek verbindt met lokale bloemisten - volledig in Lovable, zonder één regel code te schrijven. Het zag er klaar uit. Tot een bloemist belde om te vragen waarom haar kaart niet was belast voor drie bestellingen.
 
 De Stripe-integratie verwees nog naar testsleutels. Elke "succesvolle" bestelling tijdens een zachte lancering bij twaalf bloemisten belastte nooit ook maar een cent. 🧠
 
@@ -11,7 +11,7 @@ De Stripe-integratie verwees nog naar testsleutels. Elke "succesvolle" bestellin
 ✅ Zet een goede transactionele e-mailpijplijn op voor bevestigingen en resets
 ✅ Controleer en verwerk getroffen bestellingen opnieuw voordat ze klachten worden
 
-Bij **LaunchStudio** bouwen we voort op de meer dan 120 engineers en 160 opgeleverde projecten van Manifera voor klanten zoals Vodafone en TNO — dezelfde nauwkeurigheid toegepast op een weekend-build in Lovable. 🛡️
+Bij **LaunchStudio** bouwen we voort op de meer dan 120 engineers en 160 opgeleverde projecten van Manifera voor klanten zoals Vodafone en TNO - dezelfde nauwkeurigheid toegepast op een weekend-build in Lovable. 🛡️
 
 Bloomroute schakelde over op live betaalsleutels, voegde de ontbrekende e-mailpijplijn toe en verwerkte elke gemiste bestelling opnieuw binnen vier werkdagen, zonder verdere betaalproblemen sindsdien. 🚀
 

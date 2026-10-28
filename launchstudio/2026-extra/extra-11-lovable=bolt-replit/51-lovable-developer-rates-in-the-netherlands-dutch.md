@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Stuur hetzelfde Lovable-prototype naar vijf verschillende softwarepartijen in Nederland en vraag wat het kost om het product live te zetten. De antwoorden zullen uiteenlopen met een factor tien. Niet omdat vier van hen de boel oplichten, maar omdat ze vier fundamenteel verschillende opdrachten aan het begroten zijn — en omdat jij een vraag stelde die concreet klinkt, maar dat in de praktijk niet is.
+Stuur hetzelfde Lovable-prototype naar vijf verschillende softwarepartijen in Nederland en vraag wat het kost om het product live te zetten. De antwoorden zullen uiteenlopen met een factor tien. Niet omdat vier van hen de boel oplichten, maar omdat ze vier fundamenteel verschillende opdrachten aan het begroten zijn - en omdat jij een vraag stelde die concreet klinkt, maar dat in de praktijk niet is.
 
 Begrijpen wat de prijs daadwerkelijk drijft levert meer op dan simpelweg zoeken naar de allerlaagste bieder. Het stelt je bovendien in staat om offertes écht vergelijkbaar te maken, wat de enige manier is om een verantwoorde keuze te maken.
 
@@ -42,7 +42,7 @@ Er zijn drie herkenbare marktsegmenten, met de kanttekening dat individuele offe
 
 **Traditionele softwarebureaus** starten doorgaans rond de € 20.000 en lopen snel op tot € 50.000+, met doorlooptijden van maanden. Hun standaard reflex is herbouwen in plaats van voortbouwen op het prototype. De prijs weerspiegelt projectmanagers, designcapaciteit en accountmanagement waar je bij een al werkend prototype vaak helemaal niet op zit te wachten.
 
-**Zelfstandige freelancers en kleine studio's** landen meestal tussen de € 5.000 en € 20.000. De kwaliteit en voorspelbaarheid lopen hier enorm uiteen. Het grootste operationele risico is niet hun technische kunde, maar hun beschikbaarheid — een eenpitter die ook andere klanten heeft of op vakantie gaat.
+**Zelfstandige freelancers en kleine studio's** landen meestal tussen de € 5.000 en € 20.000. De kwaliteit en voorspelbaarheid lopen hier enorm uiteen. Het grootste operationele risico is niet hun technische kunde, maar hun beschikbaarheid - een eenpitter die ook andere klanten heeft of op vakantie gaat.
 
 **Gespecialiseerde 'last-mile' diensten,** waaronder LaunchStudio, werken binnen een strakkere bandbreedte omdat de scope strakker is afgebakend: € 800 tot € 7.500 vaste prijs, één tot drie weken doorlooptijd, waarbij de bestaande frontend behouden blijft in plaats van gesloopt te worden, optioneel aangevuld met managed hosting voor € 49 per maand.
 
@@ -68,7 +68,7 @@ Let op wat er níet in dit rijtje staat: het aantal schermen in je app. Oprichte
 
 Beide modellen gedragen zich fundamenteel anders:
 
-**Op regie (uurtarief)** verschuift het risico volledig naar jou. Als het werk twee keer zo lang duurt — omdat een door AI gegenereerde codebase toch complexer in elkaar zat dan gedacht — betaal je het dubbele. Het past bij open onderzoeksopdrachten, maar dwingt jou om continu de uren en scope te managen.
+**Op regie (uurtarief)** verschuift het risico volledig naar jou. Als het werk twee keer zo lang duurt - omdat een door AI gegenereerde codebase toch complexer in elkaar zat dan gedacht - betaal je het dubbele. Het past bij open onderzoeksopdrachten, maar dwingt jou om continu de uren en scope te managen.
 
 **Een vaste projectprijs (fixed price)** verschuift het risico naar de ontwikkelaar, die dat risico in zijn prijs calculeert. Het vereist vooraf een haarscherpe scope, wat leidt tot een uitermate nuttig inhoudelijk gesprek vóórdat de klok gaat tikken. Voor het productieklaar maken van een prototype is dit vrijwel altijd het betere model: de ontbrekende onderdelen zijn immers vooraf perfect in kaart te brengen en jij wilt budgettaire zekerheid.
 
@@ -94,7 +94,7 @@ Een offerte waarin deze vier punten ontbreken is niet goedkoper dan een offerte 
 
 Maak ze vergelijkbaar door zélf de scope aan te leveren.
 
-Stel je eigen lijst van gewenste resultaten op — zes tot tien concrete regels over databeveiliging, API-sleutels, betalingen, hosting, back-ups, monitoring en domeinconfiguratie — en vraag elke kandidaat om exact díe lijst te beprijzen. Elke afwijking springt er direct uit: de ene offerte sluit betalingen plotseling uit, de tweede bevat een redesign waar je nooit om hebt gevraagd, en de derde voegt een verplicht onderhoudscontract toe.
+Stel je eigen lijst van gewenste resultaten op - zes tot tien concrete regels over databeveiliging, API-sleutels, betalingen, hosting, back-ups, monitoring en domeinconfiguratie - en vraag elke kandidaat om exact díe lijst te beprijzen. Elke afwijking springt er direct uit: de ene offerte sluit betalingen plotseling uit, de tweede bevat een redesign waar je nooit om hebt gevraagd, en de derde voegt een verplicht onderhoudscontract toe.
 
 Deze simpele stap transformeert vijf onvergelijkbare bedragen in een glasheldere zakelijke vergelijking, en het kost je een half uur werk.
 
@@ -102,7 +102,7 @@ Deze simpele stap transformeert vijf onvergelijkbare bedragen in een glasheldere
 
 Zelden kwade opzet. Meestal een van de volgende vier zaken: de scope is niet begrepen, security en compliance zijn weggelaten, de ontwikkelaar heeft de code nog niet eens geopend, of het werk wordt snel en oppervlakkig afgeraffeld door een junior die aan jouw project moet leren.
 
-Stel deze ene vraag om het kaf van het koren te scheiden: *"Wat trof je concreet aan toen je de codebase inspecteerde?"* Een specifiek antwoord — een databasetabel zonder autorisatieregels, een API-key in de frontend-bundel, of een webhook die nergens wordt afgehandeld — bewijst dat ze hebben gekeken. Een vaag, algemeen antwoord betekent dat het bedrag een slag in de lucht is, en schattingen op basis van aannames lopen altijd op.
+Stel deze ene vraag om het kaf van het koren te scheiden: *"Wat trof je concreet aan toen je de codebase inspecteerde?"* Een specifiek antwoord - een databasetabel zonder autorisatieregels, een API-key in de frontend-bundel, of een webhook die nergens wordt afgehandeld - bewijst dat ze hebben gekeken. Een vaag, algemeen antwoord betekent dat het bedrag een slag in de lucht is, en schattingen op basis van aannames lopen altijd op.
 
 ## Wat een Extreem Hoge Offerte Meestal Betekent
 
@@ -118,11 +118,11 @@ Dit is tevens het pleidooi voor een compacte, afgebakende eerste opdracht. Dicht
 
 ## Een Prijs Krijgen Waar Je Wat Aan Hebt
 
-LaunchStudio offreert vaste projectprijzen op basis van een vooraf geschreven scope nadat we het project daadwerkelijk hebben ingezien, binnen de bandbreedte van € 800 tot € 7.500. Daarbij blijft de frontend behouden, is alle code vanaf dag één van jou, en leveren we een gedocumenteerde overdracht op — exact de standaarden die dit artikel adviseert om van iedereen te eisen.
+LaunchStudio offreert vaste projectprijzen op basis van een vooraf geschreven scope nadat we het project daadwerkelijk hebben ingezien, binnen de bandbreedte van € 800 tot € 7.500. Daarbij blijft de frontend behouden, is alle code vanaf dag één van jou, en leveren we een gedocumenteerde overdracht op - exact de standaarden die dit artikel adviseert om van iedereen te eisen.
 
 De engineers zijn van Manifera, met elf jaar ervaring in enterprise-softwareontwikkeling voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. Dat verklaart waarom onze schattingen standhouden: dit type overdrachtstraject is voor ons een vertrouwde discipline en geen experiment.
 
-[Beschrijf je project](https://launchstudio.eu/nl/#contact) en je ontvangt binnen één werkdag een concreet, gespecificeerd fixed-price voorstel — uitermate waardevol als ijkpunt, zelfs als je uiteindelijk met een ander in zee gaat. Op de [pakkettenpagina](https://launchstudio.eu/nl/#packages) zie je exact wat elke categorie omvat.
+[Beschrijf je project](https://launchstudio.eu/nl/#contact) en je ontvangt binnen één werkdag een concreet, gespecificeerd fixed-price voorstel - uitermate waardevol als ijkpunt, zelfs als je uiteindelijk met een ander in zee gaat. Op de [pakkettenpagina](https://launchstudio.eu/nl/#packages) zie je exact wat elke categorie omvat.
 
 ## Wat de Prijs Kan Wijzigen Nadat Je Bent Begonnen
 
@@ -134,7 +134,7 @@ Zelfs bij een strakke vaste prijs kan de realiteit wijzigen. Het professionele g
 
 **Hoe je dit goed regelt.** Spreek bij aanvang af dat scopemaatregelen altijd schriftelijk worden gemeld, inclusief oorzaak, herzien budget en de expliciete optie om een ander onderdeel te laten vervallen om binnen het budget te blijven. Die ene clausule verandert een pijnlijke discussie in een beheersbare zakelijke afweging.
 
-**Let op je eigen valkuilen.** Oprichters wijzigen zelf ook scopes — een briljant nieuw idee in week twee, een gewijzigde layout, nog een extra betaalmethode. Elke toevoeging is begrijpelijk, maar moet apart worden begroot in plaats van 'even meegenomen', want onbegrote uitbreidingen zijn dé manier waarop projecten verzanden en de kwaliteit aan het eind onder druk komt te staan.
+**Let op je eigen valkuilen.** Oprichters wijzigen zelf ook scopes - een briljant nieuw idee in week twee, een gewijzigde layout, nog een extra betaalmethode. Elke toevoeging is begrijpelijk, maar moet apart worden begroot in plaats van 'even meegenomen', want onbegrote uitbreidingen zijn dé manier waarop projecten verzanden en de kwaliteit aan het eind onder druk komt te staan.
 
 ## Echt voorbeeld
 
@@ -151,9 +151,9 @@ Ze koos een van de twee vergelijkbare partijen, en het traject werd binnen het g
 **Resultaat:** Klusmaat ging negentien werkdagen later succesvol live. Nienke gaf aan dat het formuleren van die concrete scope dertig minuten kostte en de meest waardevolle dertig minuten van het hele traject waren.
 
 > *"Ik dacht dat ik prijzen aan het vergelijken was. In werkelijkheid vergeleek ik vijf totaal verschillende projecten die toevallig allemaal hetzelfde etiket droegen."*
-> — **Nienke Hulst, Oprichter, Klusmaat (Zwolle)**
+> - **Nienke Hulst, Oprichter, Klusmaat (Zwolle)**
 
-**Kosten & Doorlooptijd:** € 4.300 (toegangscontrole, betalingsverkeer, hosting met staging, back-ups en monitoring) — afgerond in 12 werkdagen.
+**Kosten & Doorlooptijd:** € 4.300 (toegangscontrole, betalingsverkeer, hosting met staging, back-ups en monitoring) - afgerond in 12 werkdagen.
 
 ## Veelgestelde vragen
 

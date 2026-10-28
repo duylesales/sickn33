@@ -32,7 +32,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Gouda is a city of roughly 75,000 people in South Holland, sitting in the Green Heart between the four largest cities in the country. Its local technical market is modest. Its position is exceptional — Rotterdam and Utrecht are each about twenty minutes away, The Hague around thirty, Amsterdam around fifty. No other Dutch city of this size has that.
+Gouda is a city of roughly 75,000 people in South Holland, sitting in the Green Heart between the four largest cities in the country. Its local technical market is modest. Its position is exceptional - Rotterdam and Utrecht are each about twenty minutes away, The Hague around thirty, Amsterdam around fifty. No other Dutch city of this size has that.
 
 Because Gouda is the clearest example of a location chosen on commute economics rather than local employment, this analysis treats that decision properly. The framework applies to many locations; Gouda is simply where it applies most cleanly.
 
@@ -52,7 +52,7 @@ Being specific rather than vague, since a reader deserves to know what is actual
 
 **Business services and IT suppliers.** Mid-sized firms serving regional and national clients, some delivering data platform work.
 
-The realistic count of roles a machine learning engineer would recognise as a strong match is modest — more than Hoorn, considerably fewer than Rotterdam. Enough that local employment is possible; not enough to be the basis of a plan.
+The realistic count of roles a machine learning engineer would recognise as a strong match is modest - more than Hoorn, considerably fewer than Rotterdam. Enough that local employment is possible; not enough to be the basis of a plan.
 
 ## The Commute Arbitrage, Worked Through Properly
 
@@ -73,7 +73,7 @@ Timetable journey time understates reality. The honest figure includes getting t
 
 ### Step two: multiply by actual office days, not five
 
-This is where most people misjudge. A three-day office week at forty minutes each way is four hours of weekly travel. The same commute at five days is six hours and forty minutes. The difference over a year is substantial — roughly 130 hours, or three working weeks.
+This is where most people misjudge. A three-day office week at forty minutes each way is four hours of weekly travel. The same commute at five days is six hours and forty minutes. The difference over a year is substantial - roughly 130 hours, or three working weeks.
 
 Establish the office-day expectation contractually before deciding, and ask how it has changed over the past two years, because trends in several Dutch organisations have moved toward more attendance rather than less.
 
@@ -81,7 +81,7 @@ Establish the office-day expectation contractually before deciding, and ask how 
 
 There are only three reasonable positions, and you should know which is yours.
 
-Some people genuinely use train time productively — reading, planning, thinking. For them the marginal cost of a train commute is much lower than the clock time suggests, though it is not zero, because commuting time is not equivalent to time at home.
+Some people genuinely use train time productively - reading, planning, thinking. For them the marginal cost of a train commute is much lower than the clock time suggests, though it is not zero, because commuting time is not equivalent to time at home.
 
 Some people cannot work on trains but genuinely do not mind the time. For them the cost is real but tolerable.
 
@@ -127,7 +127,7 @@ Consider a candidate with an offer in Amsterdam. They are choosing between livin
 
 **The housing difference** needs your own figures, but the gap between a flat in Amsterdam and a house in Gouda is typically several hundred euros monthly in rent, and considerably more in purchase terms. Take a conservative figure of €600 monthly, which is €7,200 annually.
 
-**The implied hourly compensation** is €7,200 divided by 207 hours, or roughly €35 per hour of marginal commuting time — untaxed, since it is a saving rather than income. For many candidates that compares favourably with their after-tax hourly rate, which makes the trade financially rational rather than merely acceptable.
+**The implied hourly compensation** is €7,200 divided by 207 hours, or roughly €35 per hour of marginal commuting time - untaxed, since it is a saving rather than income. For many candidates that compares favourably with their after-tax hourly rate, which makes the trade financially rational rather than merely acceptable.
 
 **Then adjust for the qualitative factors.** Outdoor space, a quieter environment, and different school options may matter a great deal or not at all depending on your circumstances. A single person in their twenties may value the Amsterdam option at more than €600 monthly for reasons that have nothing to do with commuting. A family with two children may value the Gouda option at far more than the financial difference suggests.
 
@@ -141,13 +141,13 @@ The country is small and the rail network is dense. Journey times between most s
 
 That has a practical implication candidates often miss: you should search a wider geography than feels natural. A candidate in Utrecht who only considers Utrecht employers is excluding Amsterdam, Rotterdam, The Hague, Amersfoort and Den Bosch, all within an hour. The same logic applies in reverse to where you live.
 
-The regional analyses in this series describe genuine differences between markets — the domains, the employer types, the clusters. Those differences are real and worth choosing between. But the geography separating them is smaller than it appears, and treating a job search as bounded by your city is one of the more common and more costly restrictions candidates place on themselves.
+The regional analyses in this series describe genuine differences between markets - the domains, the employer types, the clusters. Those differences are real and worth choosing between. But the geography separating them is smaller than it appears, and treating a job search as bounded by your city is one of the more common and more costly restrictions candidates place on themselves.
 
 ## Why Gouda Specifically Is the Strongest Case
 
 Most commute-arbitrage locations give access to one city. Live in Hoorn and you commute to Amsterdam. Live in Alkmaar and you commute to Amsterdam. Your employment options are effectively one market, and if that market's employers do not suit you, you have a problem.
 
-Gouda gives access to four. Rotterdam, Utrecht, The Hague and Amsterdam are all reachable, and they have genuinely different employer profiles — port and energy, health and consultancy, government and international organisations, scale-ups and finance. That diversity is the actual value, and it is not about convenience but about resilience: a change of employer does not require a change of address, and a change of sector does not either.
+Gouda gives access to four. Rotterdam, Utrecht, The Hague and Amsterdam are all reachable, and they have genuinely different employer profiles - port and energy, health and consultancy, government and international organisations, scale-ups and finance. That diversity is the actual value, and it is not about convenience but about resilience: a change of employer does not require a change of address, and a change of sector does not either.
 
 For a candidate whose partner also works, this matters more again. Two people can hold jobs in different cities from one home, which is difficult from most locations and straightforward from here.
 
@@ -155,7 +155,7 @@ For a candidate whose partner also works, this matters more again. Two people ca
 
 Since insurance is the most substantial local category, it is worth saying why it is more interesting than its reputation suggests.
 
-Insurance is a business of quantified uncertainty, which makes it natively statistical in a way few industries are. The core operations — pricing risk, reserving for future claims, detecting fraud — are modelling problems that predate machine learning by a century and have a mature methodological tradition behind them.
+Insurance is a business of quantified uncertainty, which makes it natively statistical in a way few industries are. The core operations - pricing risk, reserving for future claims, detecting fraud - are modelling problems that predate machine learning by a century and have a mature methodological tradition behind them.
 
 That tradition is now interacting with modern methods, and the interaction is genuinely interesting. Regulators increasingly constrain which variables may be used in pricing and require that decisions affecting customers be explainable. Fairness in claims handling and pricing has become a live supervisory concern. Document and image processing on claims material is a large practical application. And the actuarial and data science functions in Dutch insurers are learning to work together, which creates roles for people who can bridge both.
 
@@ -167,7 +167,7 @@ Being clear about the cases where commute arbitrage is the wrong answer.
 
 If you are early in your career, proximity matters more than you expect. Informal learning, evening events, spontaneous conversation and visibility all favour being where the work is. The financial argument for living further out is weaker when your salary is lower and your career development is more important than your housing.
 
-If you work in a role requiring frequent physical presence — hardware, laboratory, plant — hybrid arrangements are constrained and the commute is not negotiable downward.
+If you work in a role requiring frequent physical presence - hardware, laboratory, plant - hybrid arrangements are constrained and the commute is not negotiable downward.
 
 If you are unsure whether you will stay with your employer, remember that your next role must also be commutable. A location that works for your current job may not for the next.
 
@@ -177,7 +177,7 @@ And if you have not established the office-day expectation in writing, do not ma
 
 - Gouda's local market is modest, with insurance and financial services the most substantial category for a data specialist.
 - Its exceptional feature is position: Rotterdam and Utrecht at twenty minutes, The Hague at thirty, Amsterdam at fifty.
-- Work the commute calculation in six steps — real door-to-door time, actual office days, honest valuation of the time, comparison against the commute you would have anyway, quantified benefit, and failure modes.
+- Work the commute calculation in six steps - real door-to-door time, actual office days, honest valuation of the time, comparison against the commute you would have anyway, quantified benefit, and failure modes.
 - The marginal comparison matters more than the absolute one, because living in a city usually involves a commute too.
 - Gouda's specific strength is access to four different employer profiles rather than one, which makes it robust to changing employer or sector without moving.
 - Commute arbitrage is the wrong answer early in a career, in roles needing physical presence, and whenever the office-day expectation is not established in writing.
@@ -191,7 +191,7 @@ Browse current AI, machine learning and data vacancies in and around Gouda at [o
 ## Frequently Asked Questions
 
 ### (Scenario: candidate assessing the local market) Is there enough AI work in Gouda itself?
-A modest amount — more than the smallest regional cities, considerably less than Rotterdam. Insurance and financial services is the most substantial category. Local employment is possible but should not be the basis of a plan.
+A modest amount - more than the smallest regional cities, considerably less than Rotterdam. Insurance and financial services is the most substantial category. Local employment is possible but should not be the basis of a plan.
 
 ### (Scenario: candidate weighing a commute) What is the most common mistake in this calculation?
 Comparing against a zero commute. If you lived in the city you worked in, you would probably still travel twenty to thirty minutes. The marginal cost of Gouda is therefore much smaller than the absolute figure suggests.

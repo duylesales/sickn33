@@ -53,7 +53,7 @@ Functioneel testen na een tool-wissel bevestigt dat het product nog steeds doet 
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt specifiek codebases met een gemengde oorsprong die het gevolg zijn van tool-wissels halverwege een project op exact dit risico van inconsistentie en redundantie. Wij passen dezelfde systematische verificatie toe ongeacht hoeveel verschillende tools hebben bijgedragen aan de geschiedenis van een bepaalde codebase, ondersteund door Manifera's bredere ervaring met het werken over oprecht gevarieerde, soms gemengde klantcodebases.
 
-[Laat uw codebase van gemengde tools controleren op consistentie, en niet alleen op functionaliteit](https://launchstudio.eu/nl/#calculator) — een tool-wissel die "nog steeds werkt" is niet noodzakelijkerwijs geverifieerd op wat er onder de motorkap daadwerkelijk is veranderd.
+[Laat uw codebase van gemengde tools controleren op consistentie, en niet alleen op functionaliteit](https://launchstudio.eu/nl/#calculator) - een tool-wissel die "nog steeds werkt" is niet noodzakelijkerwijs geverifieerd op wat er onder de motorkap daadwerkelijk is veranderd.
 
 ## Zelf-test: Signalen dat uw codebase stilletjes is afgeweken na een tool-wissel
 
@@ -82,9 +82,9 @@ De beoordeling van LaunchStudio, specifiek ingegeven door Teun die de tool-wisse
 **Resultaat:** LaunchStudio standaardiseerde de afhandeling van authenticatie over zowel de oorspronkelijke als de nieuw toegevoegde secties naar één enkel, consistent, geverifieerd patroon. Hiermee werd de inconsistentie gedicht voordat het echte verwarring of een beveiligingskloof kon creëren tijdens toekomstig onderhoudswerk dat aannam dat één patroon uniform van toepassing was terwijl dat daadwerkelijk niet zo was.
 
 > *"Ik ben van tools gewisseld omdat Cursor oprecht beter werkte voor wat ik als volgende nodig had, wat functioneel de juiste keuze was. Het was nooit bij me opgekomen om specifiek te controleren of de nieuwe code hetzelfde beveiligingspatroon volgde als wat Bolt al had gebouwd. En het bleek dat dat niet zo was, stilletjes, op een manier die niets in mijn eigen testen zou hebben gevangen."*
-> — **Teun Willemsen, Oprichter, WerkUrenApp (Nijmegen)**
+> - **Teun Willemsen, Oprichter, WerkUrenApp (Nijmegen)**
 
-**Kosten en tijdlijn:** € 1.000 (beoordeling van authenticatieconsistentie bij gemengde oorsprong) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.000 (beoordeling van authenticatieconsistentie bij gemengde oorsprong) - voltooid in 4 werkdagen.
 
 ---
 
@@ -128,7 +128,7 @@ Zeker steeds gebruikelijker naarmate oprichters de relatieve sterkten van versch
       "name": "Hoe controleert een niet-technische oprichter op dit inconsistentierisico?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dit vraagt een technische review — kaart het specifiek aan bij je expert als je van tool bent gewisseld."
+        "text": "Dit vraagt een technische review - kaart het specifiek aan bij je expert als je van tool bent gewisseld."
       }
     },
     {

@@ -16,7 +16,7 @@ Wat uw fitness-app nodig heeft vóórdat u opschaalt:
 ✅ Fijnmazig toegangsbeheer voor coaches (strikt beperkt tot gekoppelde atleten mét auditlog)
 ✅ Eenzelfde zware versleuteling voor data afkomstig uit Apple Health, Google Fit of Whoop
 
-Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers uw datamodel en bouwen we waterdichte autorisaties — zonder de sportieve gebruikerservaring aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers uw datamodel en bouwen we waterdichte autorisaties - zonder de sportieve gebruikerservaring aan te tasten.
 
 💡 Zo hield hardloop-app Looproute haar populaire evaluatiefunctie overeind zónder dat blessurenotities nog per ongeluk door hele hardloopclubs werden ingezien.
 

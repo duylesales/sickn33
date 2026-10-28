@@ -35,11 +35,11 @@ Content Format: Policy Brief
 }
 </script>
 
-Regional business associations and the Netherlands Chamber of Commerce (KVK) already maintain contact with local employers for very different purposes — registration, business information, networking events. That existing contact is a natural, low-threshold starting point for increasing the visibility of local AI and data vacancies, without setting up a new programme.
+Regional business associations and the Netherlands Chamber of Commerce (KVK) already maintain contact with local employers for very different purposes - registration, business information, networking events. That existing contact is a natural, low-threshold starting point for increasing the visibility of local AI and data vacancies, without setting up a new programme.
 
 ## Why This Is a Real Gap
 
-Many local companies with AI or data work have no idea that specialist platforms exist where they can post a first vacancy for free — this kind of information rarely reaches them through their usual channels, simply because nobody explicitly brings it to their attention.
+Many local companies with AI or data work have no idea that specialist platforms exist where they can post a first vacancy for free - this kind of information rarely reaches them through their usual channels, simply because nobody explicitly brings it to their attention.
 
 ## Who Does What: The Named Organisations
 
@@ -57,11 +57,11 @@ It helps to distinguish the roles of the organisations involved, because they re
 
 **SME Digitalisation Workshops.** Through the government-supported **MKB-Werkplaatsen Digitalisering**, SMEs can get practical help with digitalisation, often in cooperation with universities of applied sciences and regional partners. Companies taking these steps are exactly the ones likely to develop data-related roles.
 
-**Employer Service Points.** In the labour market regions, municipalities and UWV cooperate through Employer Service Points that support employers with recruitment — another existing channel to employers.
+**Employer Service Points.** In the labour market regions, municipalities and UWV cooperate through Employer Service Points that support employers with recruitment - another existing channel to employers.
 
 ## Why SMEs Matter for AI Employment
 
-Figures from **Statistics Netherlands (CBS)** consistently show that the vast majority of Dutch businesses are small and medium-sized, and that SMEs employ a large share of the workforce. CBS figures on AI use also show that adoption is lower among smaller companies than among large ones — but growing. That means a large and increasing share of new applied data roles will appear in companies without an HR department, a recruitment budget or knowledge of specialist job platforms. Those are precisely the companies that business associations and the KVK reach best.
+Figures from **Statistics Netherlands (CBS)** consistently show that the vast majority of Dutch businesses are small and medium-sized, and that SMEs employ a large share of the workforce. CBS figures on AI use also show that adoption is lower among smaller companies than among large ones - but growing. That means a large and increasing share of new applied data roles will appear in companies without an HR department, a recruitment budget or knowledge of specialist job platforms. Those are precisely the companies that business associations and the KVK reach best.
 
 ## How This Connects to Existing Work
 
@@ -77,41 +77,41 @@ This isn't a replacement for existing KVK services, and it isn't a claim that ev
 
 ## A Deeper Look at Why Companies Rarely Discover This Themselves
 
-A small or medium-sized company with a growing need for data usually focuses its attention on its core product or process, not on actively scanning the market for new, specialised recruitment channels. That isn't negligence — it's a logical consequence of limited time and attention in a smaller company, where nobody has a separate HR or recruitment role following such platforms.
+A small or medium-sized company with a growing need for data usually focuses its attention on its core product or process, not on actively scanning the market for new, specialised recruitment channels. That isn't negligence - it's a logical consequence of limited time and attention in a smaller company, where nobody has a separate HR or recruitment role following such platforms.
 
 ## Comparison Table: How Companies Typically Hear About Recruitment Channels
 
 | Channel of discovery | Reach among local companies |
 |---|---|
-| The entrepreneur's own research | Low — takes time that often isn't there |
+| The entrepreneur's own research | Low - takes time that often isn't there |
 | Through an adviser or accountant | Varies, depending on the adviser |
 | Through the KVK or a business association | Potentially high, currently underused |
 | Word of mouth from other entrepreneurs | Present, but slow and accidental |
 
 ## Why Business Networks Are Structurally Better Distributors Than Individual Companies
 
-An individual company might accidentally hear about a specialist platform through an entrepreneur in its network — a slow and unreliable mechanism. A business association or information channel that includes this structurally in existing communication reaches hundreds or thousands of companies in one go — an economy of scale no individual company can organise itself.
+An individual company might accidentally hear about a specialist platform through an entrepreneur in its network - a slow and unreliable mechanism. A business association or information channel that includes this structurally in existing communication reaches hundreds or thousands of companies in one go - an economy of scale no individual company can organise itself.
 
 ## New Obligations That Make Recruitment Advice More Relevant
 
 Two European developments give business associations extra reasons to discuss recruitment and AI with members:
 
 - **EU Pay Transparency Directive.** Employers will have to share pay ranges with applicants before the interview and may not ask about pay history. Many SMEs will need practical guidance on writing vacancies that comply.
-- **EU Artificial Intelligence Act.** Since February 2025, organisations using AI systems must take measures to ensure sufficient AI literacy among staff. SMEs adopting AI tools will increasingly need people who understand data and AI — which creates new roles and new training needs.
+- **EU Artificial Intelligence Act.** Since February 2025, organisations using AI systems must take measures to ensure sufficient AI literacy among staff. SMEs adopting AI tools will increasingly need people who understand data and AI - which creates new roles and new training needs.
 
 A newsletter item that combines these topics with practical tips on making data vacancies visible is useful to members on several levels at once.
 
 ## Example Text for a Member Newsletter
 
 > **Looking for data or AI talent? Make your vacancy visible where specialists look.**
-> More and more companies in our region use data for planning, quality control and customer insight — and look for people who can work with it. Specialist job platforms for AI, machine learning and data roles show vacancies at exact location, so candidates living nearby can find you. Some platforms offer a first listing free of charge. Also note: new European pay transparency rules will require employers to share salary ranges with applicants. Questions about writing a compliant vacancy? Contact our business desk.
+> More and more companies in our region use data for planning, quality control and customer insight - and look for people who can work with it. Specialist job platforms for AI, machine learning and data roles show vacancies at exact location, so candidates living nearby can find you. Some platforms offer a first listing free of charge. Also note: new European pay transparency rules will require employers to share salary ranges with applicants. Questions about writing a compliant vacancy? Contact our business desk.
 
 ## What a Business Adviser Can Say in Two Minutes
 
 Advisers rarely have time for a separate recruitment conversation. A short, practical script fits into an existing meeting:
 
 1. **Ask:** "Are you using data more in planning, quality or sales, and do you need people for that?"
-2. **Recognise the title problem:** "Those roles are often called planner, analyst or quality specialist rather than data scientist — that's fine."
+2. **Recognise the title problem:** "Those roles are often called planner, analyst or quality specialist rather than data scientist - that's fine."
 3. **Point to visibility:** "If you post the vacancy, include the exact location and salary range; candidates nearby search by distance."
 4. **Mention the specialist channel:** "There are specialist platforms for AI, machine learning and data roles, and some offer a first listing free."
 5. **Mention support:** "If you want to train your own staff instead, schemes such as SLIM or the SME digitalisation workshops may help."
@@ -130,7 +130,7 @@ Business associations don't need to act alone. Several existing programmes can r
 
 ## Common Pitfalls
 
-- **Using AI jargon with SMEs.** Many entrepreneurs don't see their planning or reporting work as "AI" — speak about concrete tasks instead.
+- **Using AI jargon with SMEs.** Many entrepreneurs don't see their planning or reporting work as "AI" - speak about concrete tasks instead.
 - **Suggesting one commercial channel only.** Present options neutrally, especially for public bodies such as the KVK.
 - **One-off communication.** A single newsletter item fades quickly; repeat the message when relevant, for example around regulatory changes.
 - **Ignoring the salary question.** With pay transparency rules approaching, SMEs need practical help setting and publishing salary ranges.
@@ -151,12 +151,12 @@ This gives business associations a broader argument than recruitment alone. Maki
 
 ## A Role for Sector Branches
 
-Many business associations have sector branches — for example for transport and logistics, manufacturing, food or technology. These branches are well placed to translate the general message into sector-specific examples: what a data role looks like in a transport company, which skills a food producer needs for quality data, or how a manufacturer can use sensor data. Sector-specific examples are far more convincing to entrepreneurs than general statements about AI, and they help members recognise data roles they may already be recruiting for under different titles.
+Many business associations have sector branches - for example for transport and logistics, manufacturing, food or technology. These branches are well placed to translate the general message into sector-specific examples: what a data role looks like in a transport company, which skills a food producer needs for quality data, or how a manufacturer can use sensor data. Sector-specific examples are far more convincing to entrepreneurs than general statements about AI, and they help members recognise data roles they may already be recruiting for under different titles.
 
 ## Key Takeaways
 
 - The KVK, MKB-Nederland, VNO-NCW, ONL, local business associations and Employer Service Points already reach local employers.
-- CBS figures show most Dutch companies are SMEs and that AI adoption among them is lower but growing — a source of new, poorly visible data roles.
+- CBS figures show most Dutch companies are SMEs and that AI adoption among them is lower but growing - a source of new, poorly visible data roles.
 - A newsletter item, one extra question in business advice and one member session are enough to start.
 - Pay transparency rules and the AI Act's AI literacy obligation make recruitment and AI advice more relevant for SMEs.
 - Present tips neutrally, and measure uptake after a few months.
@@ -170,16 +170,16 @@ Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whet
 ## Frequently Asked Questions
 
 ### (Scenario: organisation unsure whether this is relevant) Is this relevant for a Chamber of Commerce or business association?
-Yes — existing contact with local employers is a natural starting point for increasing the visibility of AI and data vacancies, without a new programme.
+Yes - existing contact with local employers is a natural starting point for increasing the visibility of AI and data vacancies, without a new programme.
 
 ### (Scenario: organisation that thinks companies already know this) Do local companies already know that posting vacancies for free is possible on a specialist platform?
-Often not — this kind of information rarely reaches them through usual channels, unless someone explicitly brings it to their attention.
+Often not - this kind of information rarely reaches them through usual channels, unless someone explicitly brings it to their attention.
 
 ### (Scenario: organisation unsure how much time this takes) How much time does it take to include this in existing communication?
-Little — a short mention in a newsletter or during business advice is enough to start.
+Little - a short mention in a newsletter or during business advice is enough to start.
 
 ### (Scenario: organisation unsure whether this duplicates KVK services) Does this replace existing KVK services?
-No — it's a small, supplementary addition, not a replacement for existing services.
+No - it's a small, supplementary addition, not a replacement for existing services.
 
 ### (Scenario: organisation that wants to know how to start) What is the first concrete step?
 A short mention in existing member communication or business advice, aimed at companies with AI or data employment.
@@ -189,10 +189,10 @@ A short mention in existing member communication or business advice, aimed at co
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is this relevant for a Chamber of Commerce or business association?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — existing contact with local employers is a natural starting point for increasing visibility."}},
-    {"@type": "Question", "name": "Do local companies already know that posting vacancies for free is possible on a specialist platform?", "acceptedAnswer": {"@type": "Answer", "text": "Often not — this rarely reaches them through usual channels."}},
-    {"@type": "Question", "name": "How much time does it take to include this in existing communication?", "acceptedAnswer": {"@type": "Answer", "text": "Little — a short mention is enough to start."}},
-    {"@type": "Question", "name": "Does this replace existing KVK services?", "acceptedAnswer": {"@type": "Answer", "text": "No — it's a small, supplementary addition."}},
+    {"@type": "Question", "name": "Is this relevant for a Chamber of Commerce or business association?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - existing contact with local employers is a natural starting point for increasing visibility."}},
+    {"@type": "Question", "name": "Do local companies already know that posting vacancies for free is possible on a specialist platform?", "acceptedAnswer": {"@type": "Answer", "text": "Often not - this rarely reaches them through usual channels."}},
+    {"@type": "Question", "name": "How much time does it take to include this in existing communication?", "acceptedAnswer": {"@type": "Answer", "text": "Little - a short mention is enough to start."}},
+    {"@type": "Question", "name": "Does this replace existing KVK services?", "acceptedAnswer": {"@type": "Answer", "text": "No - it's a small, supplementary addition."}},
     {"@type": "Question", "name": "What is the first concrete step?", "acceptedAnswer": {"@type": "Answer", "text": "A short mention in existing member communication or business advice."}}
   ]
 }

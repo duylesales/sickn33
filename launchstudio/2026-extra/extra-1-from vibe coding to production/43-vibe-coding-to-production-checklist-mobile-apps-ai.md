@@ -31,39 +31,39 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An AI-generated mobile app inherits every general production-readiness gap covered throughout this series — secrets, authentication, error handling, testing, observability — and adds a specific additional layer on top, because mobile apps face constraints and review processes that web applications simply don't: app store approval gates, offline-first user expectations, and a genuinely different security model around where sensitive data actually lives.
+An AI-generated mobile app inherits every general production-readiness gap covered throughout this series - secrets, authentication, error handling, testing, observability - and adds a specific additional layer on top, because mobile apps face constraints and review processes that web applications simply don't: app store approval gates, offline-first user expectations, and a genuinely different security model around where sensitive data actually lives.
 
 ## App Store Review: A Gate, Not Just a Guideline
 
-Apple's App Store and Google Play both enforce specific technical and content requirements before an app can even reach users, and these reviews specifically scrutinize several of the exact gaps covered elsewhere in this series — data handling disclosure, authentication security, and appropriate handling of user permissions — meaning a production-readiness gap here isn't just a risk, it can be an outright launch blocker if review catches it, with rejection cycles adding real delay beyond whatever your own development timeline anticipated.
+Apple's App Store and Google Play both enforce specific technical and content requirements before an app can even reach users, and these reviews specifically scrutinize several of the exact gaps covered elsewhere in this series - data handling disclosure, authentication security, and appropriate handling of user permissions - meaning a production-readiness gap here isn't just a risk, it can be an outright launch blocker if review catches it, with rejection cycles adding real delay beyond whatever your own development timeline anticipated.
 
 ## Client-Side Data Storage: A Different Risk Model Than Web
 
-Mobile apps frequently cache data locally on the device for offline access and performance — a genuinely useful pattern that introduces a distinct risk from the server-side gaps covered throughout this series: sensitive data stored insecurely on the device itself, accessible to anyone with physical access to an unlocked phone or, in more severe cases, extractable through device-level vulnerabilities regardless of your server-side security posture. AI-generated mobile code frequently caches data for the legitimate performance benefit without specifically considering whether that cached data needs device-level encryption.
+Mobile apps frequently cache data locally on the device for offline access and performance - a genuinely useful pattern that introduces a distinct risk from the server-side gaps covered throughout this series: sensitive data stored insecurely on the device itself, accessible to anyone with physical access to an unlocked phone or, in more severe cases, extractable through device-level vulnerabilities regardless of your server-side security posture. AI-generated mobile code frequently caches data for the legitimate performance benefit without specifically considering whether that cached data needs device-level encryption.
 
 ## Offline Behavior: A Genuinely Different Error-Handling Category
 
-The structured error handling covered elsewhere in this series, focused on external service failures, needs a mobile-specific extension: your app needs to behave sensibly when there's no network connection at all, not just when a specific service call fails. AI-generated mobile apps frequently assume connectivity throughout, producing confusing or broken states when a user opens the app on a subway, in an elevator, or anywhere with genuinely no signal — a condition mobile users encounter far more routinely than web users ever do.
+The structured error handling covered elsewhere in this series, focused on external service failures, needs a mobile-specific extension: your app needs to behave sensibly when there's no network connection at all, not just when a specific service call fails. AI-generated mobile apps frequently assume connectivity throughout, producing confusing or broken states when a user opens the app on a subway, in an elevator, or anywhere with genuinely no signal - a condition mobile users encounter far more routinely than web users ever do.
 
 ## API Keys Embedded in Mobile Binaries: A Distinct Version of the Secrets Problem
 
-The hardcoded secrets problem covered in depth elsewhere in this series has a mobile-specific variant worth naming directly: a secret embedded in a compiled mobile app binary is extractable by anyone with the technical knowledge to decompile it — a meaningfully different exposure path than a secret sitting in a git repository, since mobile app binaries are, by their nature, distributed directly to every user's device, making any embedded secret trivially more accessible than one that would require repository access first.
+The hardcoded secrets problem covered in depth elsewhere in this series has a mobile-specific variant worth naming directly: a secret embedded in a compiled mobile app binary is extractable by anyone with the technical knowledge to decompile it - a meaningfully different exposure path than a secret sitting in a git repository, since mobile app binaries are, by their nature, distributed directly to every user's device, making any embedded secret trivially more accessible than one that would require repository access first.
 
 ## Push Notification Infrastructure: Its Own Reliability Category
 
-If your app uses push notifications, this introduces its own dependency requiring the same structured error handling and observability covered throughout this series applied specifically to notification delivery — a failed or delayed push notification for something time-sensitive (an appointment reminder, a payment confirmation) carries real consequence, and testing this reliably requires specifically verifying delivery under realistic device conditions, not just confirming a notification API call technically succeeded.
+If your app uses push notifications, this introduces its own dependency requiring the same structured error handling and observability covered throughout this series applied specifically to notification delivery - a failed or delayed push notification for something time-sensitive (an appointment reminder, a payment confirmation) carries real consequence, and testing this reliably requires specifically verifying delivery under realistic device conditions, not just confirming a notification API call technically succeeded.
 
 ## Platform-Specific Testing Beyond Your Own Device
 
-Testing exclusively on your own development device or simulator, similar to the general "it works on my machine" gap covered elsewhere in this series, misses genuine device and OS-version fragmentation across real users' actual phones — older devices with less processing power, different screen sizes, and different OS versions than whatever you happened to develop and test on, all of which can surface behavior your own testing never encountered.
+Testing exclusively on your own development device or simulator, similar to the general "it works on my machine" gap covered elsewhere in this series, misses genuine device and OS-version fragmentation across real users' actual phones - older devices with less processing power, different screen sizes, and different OS versions than whatever you happened to develop and test on, all of which can surface behavior your own testing never encountered.
 
 ## A Pre-Submission Checklist Before You Ever Hit "Submit for Review"
 
 Given how costly an app store rejection cycle can be to your launch timeline, a specific checklist to work through before your first submission attempt catches most of the gaps this article covers in a single, deliberate pass rather than discovering them through a rejection notice:
 
-**Data handling disclosure matches actual behavior.** Whatever your app's store listing claims about data collection and storage needs to accurately reflect what the code actually does — a mismatch here, even an unintentional one from a founder who genuinely didn't know what their AI-generated code was doing under the hood, is a common and entirely avoidable rejection reason.
+**Data handling disclosure matches actual behavior.** Whatever your app's store listing claims about data collection and storage needs to accurately reflect what the code actually does - a mismatch here, even an unintentional one from a founder who genuinely didn't know what their AI-generated code was doing under the hood, is a common and entirely avoidable rejection reason.
 
-**Locally cached sensitive data is encrypted, not just stored.** Specifically check, rather than assume, whether any data your app caches on-device for offline access uses the platform's secure storage APIs — this is precisely the gap that caused Melissa's rejection below, and it's invisible in every normal functional test.
+**Locally cached sensitive data is encrypted, not just stored.** Specifically check, rather than assume, whether any data your app caches on-device for offline access uses the platform's secure storage APIs - this is precisely the gap that caused Melissa's rejection below, and it's invisible in every normal functional test.
 
 **No API keys or secrets are embedded in the compiled binary.** Search your app's bundled code and configuration for anything that looks like a credential before submission, since this is extractable by anyone who decompiles your distributed app, not just a repository-access risk.
 
@@ -71,7 +71,7 @@ Given how costly an app store rejection cycle can be to your launch timeline, a 
 
 **Permission requests are scoped to what you actually use.** Requesting device permissions (camera, location, contacts) beyond what your app's actual functionality requires is both a common review flag and, independent of review, a real trust signal to cautious users deciding whether to grant access.
 
-Working through this list before your first submission, rather than treating app store review as the first real check, converts several potential rejection cycles — each costing real days against your launch timeline — into a single, deliberate pre-submission pass.
+Working through this list before your first submission, rather than treating app store review as the first real check, converts several potential rejection cycles - each costing real days against your launch timeline - into a single, deliberate pre-submission pass.
 
 ## What This Means for Mobile-Specific Prioritization
 
@@ -79,7 +79,7 @@ The general production-readiness checklist applies in full, with app store compl
 
 [LaunchStudio](https://launchstudio.eu/en/) hardens AI-generated mobile apps against exactly these platform-specific gaps alongside the general checklist covered throughout this series, backed by Manifera's mobile development experience across React Native and Flutter production applications.
 
-[Get your mobile app tested against app store requirements and real device conditions](https://launchstudio.eu/en/#calculator) — the general checklist plus what's specific to shipping through an app store.
+[Get your mobile app tested against app store requirements and real device conditions](https://launchstudio.eu/en/#calculator) - the general checklist plus what's specific to shipping through an app store.
 
 ## Real example
 
@@ -87,16 +87,16 @@ The general production-readiness checklist applies in full, with app store compl
 
 Melissa, a former physical therapist turned founder in Nieuw-Vennep, built HerstelApp, a React Native mobile app generated with Cursor helping patients track home rehabilitation exercises with photo progress logging, submitted to the App Store after development testing that Melissa considered thorough and complete on her own device.
 
-Apple's review process rejected HerstelApp's initial submission, specifically flagging inadequate data protection disclosure for the health-adjacent photo data the app stored locally on-device for offline access — a rejection that, on investigation, reflected a genuine underlying gap: HerstelApp cached patient progress photos in plain, unencrypted local storage, technically functional but genuinely insecure if a patient's phone were lost, stolen, or accessed by someone else.
+Apple's review process rejected HerstelApp's initial submission, specifically flagging inadequate data protection disclosure for the health-adjacent photo data the app stored locally on-device for offline access - a rejection that, on investigation, reflected a genuine underlying gap: HerstelApp cached patient progress photos in plain, unencrypted local storage, technically functional but genuinely insecure if a patient's phone were lost, stolen, or accessed by someone else.
 
 Melissa brought HerstelApp to LaunchStudio specifically to address both the review rejection and the underlying issue it had surfaced. The team implemented proper device-level encryption for locally cached patient data and updated the app's data handling disclosure to accurately reflect the now-corrected storage practices.
 
-**Result:** HerstelApp passed App Store review on resubmission, and the underlying fix meant patient progress photos were now genuinely protected on-device, not just superficially compliant with review requirements — closing a gap that Melissa's own development-device testing, which never specifically examined how data was actually stored locally, had no natural way of surfacing.
+**Result:** HerstelApp passed App Store review on resubmission, and the underlying fix meant patient progress photos were now genuinely protected on-device, not just superficially compliant with review requirements - closing a gap that Melissa's own development-device testing, which never specifically examined how data was actually stored locally, had no natural way of surfacing.
 
-> *"My testing confirmed the photos saved and loaded correctly every time. It never occurred to me to check how they were actually stored on the device itself — Apple's review was, honestly, the first time anyone looked at that specific question, and it turned out the answer wasn't good enough."*
-> — **Melissa Kortekaas, Founder, HerstelApp (Nieuw-Vennep)**
+> *"My testing confirmed the photos saved and loaded correctly every time. It never occurred to me to check how they were actually stored on the device itself - Apple's review was, honestly, the first time anyone looked at that specific question, and it turned out the answer wasn't good enough."*
+> - **Melissa Kortekaas, Founder, HerstelApp (Nieuw-Vennep)**
 
-**Cost & Timeline:** €2,600 (mobile-specific hardening — data encryption, review compliance) — live in 10 business days.
+**Cost & Timeline:** €2,600 (mobile-specific hardening - data encryption, review compliance) - live in 10 business days.
 
 ---
 
@@ -104,7 +104,7 @@ Melissa brought HerstelApp to LaunchStudio specifically to address both the revi
 
 ### How would I know if my mobile app has an insecure local data storage gap like Melissa's before an app store rejection surfaces it?
 
-Specifically examining how and where your app caches any locally-stored data — checking whether it uses the device's secure storage APIs versus plain, unencrypted storage — is the direct check, rather than relying on functional testing alone, which confirms data saves and loads but says nothing about how securely it's stored.
+Specifically examining how and where your app caches any locally-stored data - checking whether it uses the device's secure storage APIs versus plain, unencrypted storage - is the direct check, rather than relying on functional testing alone, which confirms data saves and loads but says nothing about how securely it's stored.
 
 ### Does this mobile-specific guidance apply equally to React Native and Flutter apps, or does it differ by framework?
 
@@ -112,7 +112,7 @@ The general categories (app store review, local storage security, offline behavi
 
 ### Is app store rejection always a sign of a genuine underlying issue, or can it also happen for less substantive reasons?
 
-Both occur — some rejections reflect genuine gaps like Melissa's, while others are more procedural (missing metadata, unclear app description) with less direct technical substance; the specific rejection reason given typically clarifies which category applies, and genuine data-handling or security rejections warrant the kind of investigation Melissa's case involved.
+Both occur - some rejections reflect genuine gaps like Melissa's, while others are more procedural (missing metadata, unclear app description) with less direct technical substance; the specific rejection reason given typically clarifies which category applies, and genuine data-handling or security rejections warrant the kind of investigation Melissa's case involved.
 
 ### How can I test offline behavior systematically, rather than just occasionally noticing when my own testing happens to lose signal?
 
@@ -120,7 +120,7 @@ Deliberately enabling airplane mode or disabling network access on a test device
 
 ### Does embedding an API key in a compiled mobile binary carry the same risk regardless of how "hidden" or obfuscated the code is?
 
-Obfuscation raises the difficulty bar but doesn't eliminate the risk — a sufficiently motivated party can still decompile and extract embedded secrets from an obfuscated binary, meaning the correct fix is keeping sensitive keys server-side entirely rather than relying on obfuscation as a substitute for genuinely not embedding them in the distributed app.
+Obfuscation raises the difficulty bar but doesn't eliminate the risk - a sufficiently motivated party can still decompile and extract embedded secrets from an obfuscated binary, meaning the correct fix is keeping sensitive keys server-side entirely rather than relying on obfuscation as a substitute for genuinely not embedding them in the distributed app.
 
 <script type="application/ld+json">
 {
@@ -148,7 +148,7 @@ Obfuscation raises the difficulty bar but doesn't eliminate the risk — a suffi
       "name": "Is app store rejection always a sign of a genuine underlying issue?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both occur — some reflect genuine gaps, others are more procedural, and the specific rejection reason clarifies which applies."
+        "text": "Both occur - some reflect genuine gaps, others are more procedural, and the specific rejection reason clarifies which applies."
       }
     },
     {
@@ -164,7 +164,7 @@ Obfuscation raises the difficulty bar but doesn't eliminate the risk — a suffi
       "name": "Does embedding an API key in an obfuscated mobile binary reduce the risk sufficiently?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Obfuscation raises the difficulty bar but doesn't eliminate the risk — the correct fix is keeping sensitive keys server-side entirely."
+        "text": "Obfuscation raises the difficulty bar but doesn't eliminate the risk - the correct fix is keeping sensitive keys server-side entirely."
       }
     }
   ]

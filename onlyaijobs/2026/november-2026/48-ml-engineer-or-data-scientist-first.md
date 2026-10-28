@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A company has an idea for machine learning and opens a vacancy for a data scientist. Six months later, the data scientist has built several promising models in notebooks — none of which run in production. Another company hires a strong ML engineer who builds an impressive platform, but nobody has defined which business problems the platform should solve. Both companies hired talented people. Both hired for the wrong bottleneck. Choosing between a machine learning engineer and a data scientist — and increasingly an AI engineer — is one of the most consequential decisions in building an AI capability.
+A company has an idea for machine learning and opens a vacancy for a data scientist. Six months later, the data scientist has built several promising models in notebooks - none of which run in production. Another company hires a strong ML engineer who builds an impressive platform, but nobody has defined which business problems the platform should solve. Both companies hired talented people. Both hired for the wrong bottleneck. Choosing between a machine learning engineer and a data scientist - and increasingly an AI engineer - is one of the most consequential decisions in building an AI capability.
 
 ## How the Roles Differ
 
@@ -72,7 +72,7 @@ The reverse mistake is equally common in technically ambitious organisations. An
 
 ## The Rise of the AI Engineer
 
-The availability of powerful foundation models accessible through APIs and open-source releases has created a newer role: the AI engineer. Instead of training models from scratch, AI engineers build applications that use language models — for example, retrieval-augmented question answering on internal documents, automated document processing or assistants embedded in products.
+The availability of powerful foundation models accessible through APIs and open-source releases has created a newer role: the AI engineer. Instead of training models from scratch, AI engineers build applications that use language models - for example, retrieval-augmented question answering on internal documents, automated document processing or assistants embedded in products.
 
 The skills overlap with software engineering, ML engineering and data science: integrating APIs, designing retrieval pipelines, evaluating output quality, managing costs and latency, handling security and privacy and monitoring behaviour. For organisations whose AI ambitions centre on generative AI applications, an AI engineer with strong software engineering and evaluation skills may be a better first hire than a traditional data scientist.
 
@@ -98,15 +98,15 @@ The skills overlap with software engineering, ML engineering and data science: i
 
 The decision about which role to hire first is also influenced by what can be bought rather than built.
 
-**Managed ML platforms.** Cloud providers and data platform vendors offer managed services for training, deploying and monitoring models. These reduce the amount of infrastructure an organisation must build, which can lower the initial need for ML platform engineering — although someone still needs to configure, integrate and operate the services responsibly.
+**Managed ML platforms.** Cloud providers and data platform vendors offer managed services for training, deploying and monitoring models. These reduce the amount of infrastructure an organisation must build, which can lower the initial need for ML platform engineering - although someone still needs to configure, integrate and operate the services responsibly.
 
-**Foundation model APIs.** Organisations building generative AI features can use models through APIs instead of training their own. This shifts the need from model development towards application engineering, evaluation, security and cost management — the core of the AI engineer role.
+**Foundation model APIs.** Organisations building generative AI features can use models through APIs instead of training their own. This shifts the need from model development towards application engineering, evaluation, security and cost management - the core of the AI engineer role.
 
 **Packaged AI products.** Some use cases, such as document processing or demand forecasting for common retail patterns, can be addressed with existing software products. In such cases, the most valuable first hire may be someone who can evaluate vendors, integrate products and measure results rather than build models.
 
 **Consultancies and interim professionals.** External experts can deliver a first production use case or set up infrastructure, while internal hires take over ownership. This works well when knowledge transfer is planned explicitly.
 
-Buying does not remove the need for internal expertise. Organisations still need people who understand data, can judge whether a product or model works well for their context and can take responsibility for outcomes — including obligations under regulations such as the AI Act.
+Buying does not remove the need for internal expertise. Organisations still need people who understand data, can judge whether a product or model works well for their context and can take responsibility for outcomes - including obligations under regulations such as the AI Act.
 
 ## Writing the Vacancy for the Right Role
 
@@ -116,7 +116,7 @@ Buying does not remove the need for internal expertise. Organisations still need
 
 **State the team context.** Candidates want to know whether they will be the first data hire, whether data engineering support exists and who owns deployment.
 
-**Categorise correctly.** On specialist job boards, choosing the right category — for example machine learning, development or infrastructure — helps the right candidates find the vacancy.
+**Categorise correctly.** On specialist job boards, choosing the right category - for example machine learning, development or infrastructure - helps the right candidates find the vacancy.
 
 ## Assessing the Right Skills
 
@@ -127,7 +127,7 @@ Buying does not remove the need for internal expertise. Organisations still need
 | AI engineer | Application development with LLMs, retrieval design, evaluation of generative outputs, security and cost awareness |
 | Data engineer | Data modelling, pipeline reliability, data quality, platform knowledge |
 
-Using a data science interview to hire an ML engineer — or the reverse — is a common reason good hires are missed.
+Using a data science interview to hire an ML engineer - or the reverse - is a common reason good hires are missed.
 
 ## Collaboration Patterns That Work
 
@@ -135,7 +135,7 @@ Choosing the right roles is only part of the picture; how they work together det
 
 **Pairing from the start.** Teams in which data scientists and ML engineers collaborate from the beginning of a project avoid the handover problem, where a model built without production constraints must be rebuilt later. Engineers can advise on data availability at prediction time, latency and monitoring needs while models are still being designed.
 
-**Shared ownership of outcomes.** When data scientists are responsible only for model accuracy and engineers only for uptime, nobody owns business impact. Shared goals — such as adoption by users or measurable improvements — encourage collaboration.
+**Shared ownership of outcomes.** When data scientists are responsible only for model accuracy and engineers only for uptime, nobody owns business impact. Shared goals - such as adoption by users or measurable improvements - encourage collaboration.
 
 **Embedded versus central teams.** Small organisations often have one central data team serving the whole business. Larger organisations sometimes embed data scientists in business units while ML platform engineers work centrally to provide shared infrastructure. Both can work, but the model should be chosen deliberately.
 
@@ -147,11 +147,11 @@ Choosing the right roles is only part of the picture; how they work together det
 
 A logistics company hires two data scientists to improve delivery time predictions. After a year, they have built accurate models, but predictions are generated manually each week and shared through spreadsheets. Planners stop using them when they become outdated.
 
-The company reassesses its bottleneck. It hires an ML engineer who builds an automated pipeline, integrates predictions into the planning system and sets up monitoring. Within three months, predictions are updated daily and used routinely. The data scientists spend less time on manual runs and more on improving models. The company realises its first hire should have been a combination: one data scientist and one ML engineer — or a data scientist with strong engineering support from the start.
+The company reassesses its bottleneck. It hires an ML engineer who builds an automated pipeline, integrates predictions into the planning system and sets up monitoring. Within three months, predictions are updated daily and used routinely. The data scientists spend less time on manual runs and more on improving models. The company realises its first hire should have been a combination: one data scientist and one ML engineer - or a data scientist with strong engineering support from the start.
 
 ## A Common Misconception
 
-A common misconception is that a sufficiently talented data scientist can cover every AI role. Some individuals are genuinely versatile, particularly in small organisations, but expecting one person to handle problem definition, modelling, data engineering, deployment, monitoring and governance leads to burnout and fragile systems. Another misconception is that generative AI has made data scientists unnecessary. Evaluating model outputs, designing experiments and measuring business impact remain core data science skills — even when the underlying model comes from an API.
+A common misconception is that a sufficiently talented data scientist can cover every AI role. Some individuals are genuinely versatile, particularly in small organisations, but expecting one person to handle problem definition, modelling, data engineering, deployment, monitoring and governance leads to burnout and fragile systems. Another misconception is that generative AI has made data scientists unnecessary. Evaluating model outputs, designing experiments and measuring business impact remain core data science skills - even when the underlying model comes from an API.
 
 ## Key Takeaways
 
@@ -163,9 +163,9 @@ A common misconception is that a sufficiently talented data scientist can cover 
 
 ## Where to Start
 
-Write down the single biggest obstacle between your current situation and AI delivering value — then choose the role whose core job is removing exactly that obstacle.
+Write down the single biggest obstacle between your current situation and AI delivering value - then choose the role whose core job is removing exactly that obstacle.
 
-Post your AI, machine learning or data vacancy in the right category — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy in the right category - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -173,7 +173,7 @@ Post your AI, machine learning or data vacancy in the right category — first l
 It depends on the bottleneck: without clear use cases, start with data science or analysis; with validated models that are not in production, hire an ML engineer.
 
 ### (Scenario: company with models in notebooks) Why don't our data scientists' models reach production?
-Production ML requires deployment, pipelines, monitoring and operations — skills typically associated with ML engineering rather than modelling.
+Production ML requires deployment, pipelines, monitoring and operations - skills typically associated with ML engineering rather than modelling.
 
 ### (Scenario: company building generative AI features) What is an AI engineer?
 A role focused on building applications using foundation models, including retrieval, evaluation, integration, security and cost management.
@@ -182,7 +182,7 @@ A role focused on building applications using foundation models, including retri
 Some versatile professionals can in small settings, but expecting one person to cover all AI roles often leads to fragile systems and burnout.
 
 ### (Scenario: regulated company) Does the AI Act influence which roles we need?
-Yes — high-risk AI systems require documentation, logging, robustness and monitoring, which call for engineering and governance capacity.
+Yes - high-risk AI systems require documentation, logging, robustness and monitoring, which call for engineering and governance capacity.
 
 <script type="application/ld+json">
 {
@@ -193,7 +193,7 @@ Yes — high-risk AI systems require documentation, logging, robustness and moni
     {"@type": "Question", "name": "Why don't our data scientists' models reach production?", "acceptedAnswer": {"@type": "Answer", "text": "Production ML requires deployment, pipelines and monitoring skills."}},
     {"@type": "Question", "name": "What is an AI engineer?", "acceptedAnswer": {"@type": "Answer", "text": "A role building applications on foundation models, including retrieval and evaluation."}},
     {"@type": "Question", "name": "Can one person cover data science and ML engineering?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes in small settings, but it often leads to fragile systems."}},
-    {"@type": "Question", "name": "Does the AI Act influence which roles we need?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — high-risk systems need engineering and governance capacity."}}
+    {"@type": "Question", "name": "Does the AI Act influence which roles we need?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - high-risk systems need engineering and governance capacity."}}
   ]
 }
 </script>

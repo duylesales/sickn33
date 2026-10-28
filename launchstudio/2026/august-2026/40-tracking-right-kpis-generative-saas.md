@@ -18,7 +18,7 @@ If you charge $30/month, and a power user consumes $25 in Anthropic or OpenAI AP
 
 ### Building the Cost Attribution Pipeline
 
-The engineering reality here is that most teams don't track this by default — it requires deliberately logging token counts (input and output separately, since output tokens typically cost 3-5x more) against the user ID on every single LLM call, storing that in a dedicated `usage_events` table, and rolling it up into a per-user margin dashboard. Skipping this instrumentation is one of the most common reasons AI SaaS founders discover their unit economics are broken only after a viral growth spike has already generated a five-figure API bill.
+The engineering reality here is that most teams don't track this by default - it requires deliberately logging token counts (input and output separately, since output tokens typically cost 3-5x more) against the user ID on every single LLM call, storing that in a dedicated `usage_events` table, and rolling it up into a per-user margin dashboard. Skipping this instrumentation is one of the most common reasons AI SaaS founders discover their unit economics are broken only after a viral growth spike has already generated a five-figure API bill.
 
 ## KPI 2: Generation Success Rate (GSR)
 
@@ -28,15 +28,15 @@ You cannot read every output yourself once you have real volume. You must instru
 
 - **Explicit:** Thumbs Up / Thumbs Down buttons next to the generated result.
 
-- **Implicit (Better):** Did the user click the "Copy to Clipboard" button? Did they click "Save to Database"? Did they hit "Regenerate" immediately? Implicit signals are more reliable than explicit ones because most users never bother clicking a thumbs-down button — they simply hit regenerate or, worse, leave and never come back.
+- **Implicit (Better):** Did the user click the "Copy to Clipboard" button? Did they click "Save to Database"? Did they hit "Regenerate" immediately? Implicit signals are more reliable than explicit ones because most users never bother clicking a thumbs-down button - they simply hit regenerate or, worse, leave and never come back.
 
-If the user hits "Regenerate" three times in a row, the GSR for that session failed. If your overall GSR drops below 80%, it indicates your system prompts are breaking down, a recent model update changed behavior in a way your prompts didn't anticipate, or your retrieval layer is returning stale context — any of which directly predicts a spike in churn next month if left unaddressed.
+If the user hits "Regenerate" three times in a row, the GSR for that session failed. If your overall GSR drops below 80%, it indicates your system prompts are breaking down, a recent model update changed behavior in a way your prompts didn't anticipate, or your retrieval layer is returning stale context - any of which directly predicts a spike in churn next month if left unaddressed.
 
 ## KPI 3: Time-to-Value (TTV)
 
 Patience in the AI era is non-existent. A user expects a magic trick instantly. **Time-to-Value** measures the exact number of seconds from the moment the user clicks "Sign Up" to the moment they receive their first successful AI generation.
 
-If your onboarding flow forces them to verify their email, watch a 3-minute tutorial video, and connect three APIs before they can use the generator, your TTV is 10 minutes, and a large share of users will abandon before ever seeing the product work. You must architect your onboarding to guarantee a successful AI "Aha!" moment within 60 seconds — ideally with sample data pre-loaded so the user can experience a generation before they've even finished setting up their own account.
+If your onboarding flow forces them to verify their email, watch a 3-minute tutorial video, and connect three APIs before they can use the generator, your TTV is 10 minutes, and a large share of users will abandon before ever seeing the product work. You must architect your onboarding to guarantee a successful AI "Aha!" moment within 60 seconds - ideally with sample data pre-loaded so the user can experience a generation before they've even finished setting up their own account.
 
 ## KPI 4: Feature-Specific Latency
 
@@ -44,7 +44,7 @@ In web development, we track page load speed. In AI, we track **Time to First To
 
 ## KPI 5: Cost-per-Retained-User (CPRU)
 
-Customer Acquisition Cost (CAC) alone is misleading for generative AI products, because it ignores the ongoing serving cost of every retained user. **Cost-per-Retained-User** combines your acquisition spend with your cumulative AI serving cost for users who stick around past 90 days. A user who was cheap to acquire but expensive to serve every month can be a net loss even at healthy retention rates — this metric catches that trap before it shows up as a shrinking bank balance. Calculate it monthly per cohort, and treat any upward trend as an early warning that your pricing tiers or usage limits need revisiting.
+Customer Acquisition Cost (CAC) alone is misleading for generative AI products, because it ignores the ongoing serving cost of every retained user. **Cost-per-Retained-User** combines your acquisition spend with your cumulative AI serving cost for users who stick around past 90 days. A user who was cheap to acquire but expensive to serve every month can be a net loss even at healthy retention rates - this metric catches that trap before it shows up as a shrinking bank balance. Calculate it monthly per cohort, and treat any upward trend as an early warning that your pricing tiers or usage limits need revisiting.
 
 ## Key Takeaways
 
@@ -60,7 +60,7 @@ Customer Acquisition Cost (CAC) alone is misleading for generative AI products, 
 
 ## Instrument Your Growth
 
-Are you flying blind regarding your true AI costs and user success rates? **LaunchStudio** implements deep PostHog and custom telemetry architectures to give you real-time visibility into your AI Gross Margins and Generation Success Rates — the instrumentation layer that roughly 80% of AI-built prototypes skip entirely, right up until a viral spike turns into an unexpected API bill.
+Are you flying blind regarding your true AI costs and user success rates? **LaunchStudio** implements deep PostHog and custom telemetry architectures to give you real-time visibility into your AI Gross Margins and Generation Success Rates - the instrumentation layer that roughly 80% of AI-built prototypes skip entirely, right up until a viral spike turns into an unexpected API bill.
 
 LaunchStudio is an initiative powered by **Manifera**, an international software development company founded in **2014** by **Herre Roelevink**. As Herre puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera operates its European HQ in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ Amsterdam), with development hubs in **Singapore** and **Ho Chi Minh City, Vietnam**, combining "Dutch management with Vietnamese mastery." Explore Manifera's [offshore software development services](https://www.manifera.com/services/offshore-software-development/) or [use the calculator to estimate your project](https://launchstudio.eu/en/#calculator).
 
@@ -74,7 +74,7 @@ She partnered with **LaunchStudio (by Manifera, founded in 2014)** to configure 
 
 **Result:** Dashboard load times dropped to under 300ms, and primary write performance remained fast.
 
-**Cost & Timeline:** €1,850 (DB Scaling Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,850 (DB Scaling Package) - production-ready and deployed in 4 business days.
 
 ---
 

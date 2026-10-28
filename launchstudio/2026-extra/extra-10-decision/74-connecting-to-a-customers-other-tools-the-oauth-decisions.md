@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The moment your product connects to a customer's Google account, their accounting software, or their payment platform, you are holding a credential that acts on their behalf in a system that is not yours. That credential typically does not expire in any useful sense, is stored in your database, and grants whatever you asked for at the moment the customer clicked Allow — which, in most prototype implementations, is considerably more than the feature actually needs.
+The moment your product connects to a customer's Google account, their accounting software, or their payment platform, you are holding a credential that acts on their behalf in a system that is not yours. That credential typically does not expire in any useful sense, is stored in your database, and grants whatever you asked for at the moment the customer clicked Allow - which, in most prototype implementations, is considerably more than the feature actually needs.
 
 Integrations are also among the strongest reasons customers choose one product over another, so this is not an argument against building them. It is an argument for understanding what you are taking custody of, because a breach involving stored integration tokens is not a breach of your data. It is a breach of your customers' other systems, through you.
 
@@ -28,7 +28,7 @@ Integrations are also among the strongest reasons customers choose one product o
 
 The consent screen the customer sees lists what you are requesting, and it is the moment your product is judged. "Read your emails" and "read and delete your files" cause people to abandon the connection, sometimes permanently, even when the underlying feature is innocuous.
 
-Two rules. **Request the narrowest scope that does the job** — read-only where you only read, a restricted scope where the provider offers one. Google, for instance, offers a scope granting access only to files your own application created, which is dramatically less alarming and less risky than access to the customer's whole drive.
+Two rules. **Request the narrowest scope that does the job** - read-only where you only read, a restricted scope where the provider offers one. Google, for instance, offers a scope granting access only to files your own application created, which is dramatically less alarming and less risky than access to the customer's whole drive.
 
 **Request incrementally.** Ask for calendar reading when the customer sets up calendar sync, not everything at signup. A customer who has already seen value from one connection consents far more readily to the next, and you avoid asking for permissions that half your customers will never use.
 
@@ -60,9 +60,9 @@ There is also an organisational trap worth designing around: a connection author
 
 Connecting to a major platform is not purely technical. Google, Microsoft, and Meta all operate review processes, and sensitive scopes trigger the strict versions.
 
-For Google, requesting sensitive or restricted scopes means a verification process involving a demonstration video, a privacy policy meeting specific requirements, domain ownership verification, and — for restricted scopes such as full Gmail or Drive access — an annual security assessment by an approved third party, which carries a substantial cost. Until verification completes, unverified applications face a hard cap on how many accounts may connect and show an alarming warning screen.
+For Google, requesting sensitive or restricted scopes means a verification process involving a demonstration video, a privacy policy meeting specific requirements, domain ownership verification, and - for restricted scopes such as full Gmail or Drive access - an annual security assessment by an approved third party, which carries a substantial cost. Until verification completes, unverified applications face a hard cap on how many accounts may connect and show an alarming warning screen.
 
-The timeline runs from days to several weeks. Founders regularly discover this a fortnight before a launch that depends on the integration, which is the wrong moment. If your product needs a reviewed scope, start the process early, and check first whether a narrower scope avoids the requirement — that single decision has saved more launches than any amount of expediting.
+The timeline runs from days to several weeks. Founders regularly discover this a fortnight before a launch that depends on the integration, which is the wrong moment. If your product needs a reviewed scope, start the process early, and check first whether a narrower scope avoids the requirement - that single decision has saved more launches than any amount of expediting.
 
 Getting scopes, encrypted token storage, refresh handling, and reconnection flows right is a well-defined piece of production work, and it is a common gap in AI-generated products where an integration is implemented as a happy-path connection that works once. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds integrations that survive expiry, revocation, and the provider's review process. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -70,7 +70,7 @@ Getting scopes, encrypted token storage, refresh handling, and reconnection flow
 
 Three things, and they are quick to build.
 
-**Which connections exist, and what each can do**, in plain language: "Connected to Google Calendar as anna@company.nl — can read and create events." Customers, and particularly their IT administrators, want to see this without inspecting the provider's settings.
+**Which connections exist, and what each can do**, in plain language: "Connected to Google Calendar as anna@company.nl - can read and create events." Customers, and particularly their IT administrators, want to see this without inspecting the provider's settings.
 
 **When it last worked**, so a broken connection is visible before it causes a problem.
 
@@ -86,12 +86,12 @@ Nienke Bakker ran Afsprakenlijn, an appointment-coordination tool for physiother
 
 In June, a practice reported double-bookings. Their sync had stopped in March, when the practice manager who originally authorised the connection changed her Google password. The refresh failed, the error was logged, and nothing else happened: no flag in the product, no email, and the connection page still displayed "Connected". Eleven practices were in the same state, three of them for over two months.
 
-The review found two further issues. Refresh tokens were stored unencrypted, meaning a database copy would have granted calendar access to 40 practices. And the original integration had requested full calendar read-write scope across all calendars, where the narrower scope covering only events the application itself created would have been sufficient — a difference that had also put the application into a stricter verification tier.
+The review found two further issues. Refresh tokens were stored unencrypted, meaning a database copy would have granted calendar access to 40 practices. And the original integration had requested full calendar read-write scope across all calendars, where the narrower scope covering only events the application itself created would have been sufficient - a difference that had also put the application into a stricter verification tier.
 
 **Result:** tokens encrypted at rest with a key held outside the database, centralised refresh handling with protection against concurrent refresh, connection health shown in the product with email alerts on failure and one-click reconnect, and scopes narrowed at the next re-authorisation, which removed the stricter verification requirement.
 
 > "Eleven practices thought their calendars were syncing. The product said Connected on every one of them, and it had been wrong since March."
-> — **Nienke Bakker, Founder, Afsprakenlijn**
+> - **Nienke Bakker, Founder, Afsprakenlijn**
 
 **Cost & Timeline:** integration hardening and connection monitoring delivered in 3 business days.
 

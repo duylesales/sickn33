@@ -89,13 +89,13 @@ EU citizens can work in Poland and register their stay if staying longer. Non-EU
 
 ## Living in Warsaw
 
-Warsaw is a dynamic city with a rebuilt historic old town, modern business districts, extensive parks and a growing cultural and food scene. Public transport — metro, trams, buses and suburban trains — is efficient and affordable. Many tech companies are located in the city centre around the Rondo Daszyńskiego and Wola business district, in Mokotów's office areas or near the centre. Housing costs have risen, but a wide range of neighbourhoods is available. Warsaw's Chopin Airport connects to much of Europe.
+Warsaw is a dynamic city with a rebuilt historic old town, modern business districts, extensive parks and a growing cultural and food scene. Public transport - metro, trams, buses and suburban trains - is efficient and affordable. Many tech companies are located in the city centre around the Rondo Daszyńskiego and Wola business district, in Mokotów's office areas or near the centre. Housing costs have risen, but a wide range of neighbourhoods is available. Warsaw's Chopin Airport connects to much of Europe.
 
 ## How OnlyAIJobs Fits a Warsaw Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for a higher position in the listings.
 
-Its listings are currently concentrated in the Netherlands. For machine learning jobs in Warsaw you will find few or no local vacancies there today, so rely on Polish job portals, company career pages and community channels. OnlyAIJobs is useful for comparing Warsaw with the Netherlands — where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles — and as a method: search by AI category and commute rather than by vague titles. Polish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands. For machine learning jobs in Warsaw you will find few or no local vacancies there today, so rely on Polish job portals, company career pages and community channels. OnlyAIJobs is useful for comparing Warsaw with the Netherlands - where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles - and as a method: search by AI category and commute rather than by vague titles. Polish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Banking ML in Poland
 
@@ -119,7 +119,7 @@ Warsaw and other Polish cities have a large software services industry that buil
 
 ## Polish Language Models and NLP
 
-Work on Polish language technology has accelerated. The national PLLuM project has brought together research institutions to develop language models for Polish for use in public administration and beyond. The SpeakLeash community has developed open datasets and the Bielik family of models. Companies in banking, e-commerce and public services increasingly need models that handle Polish well — including its rich morphology, formal registers and domain vocabulary. For NLP engineers, this creates opportunities in data curation, fine-tuning, evaluation and deployment, as well as in research. Polish-speaking engineers with NLP expertise are particularly sought after.
+Work on Polish language technology has accelerated. The national PLLuM project has brought together research institutions to develop language models for Polish for use in public administration and beyond. The SpeakLeash community has developed open datasets and the Bielik family of models. Companies in banking, e-commerce and public services increasingly need models that handle Polish well - including its rich morphology, formal registers and domain vocabulary. For NLP engineers, this creates opportunities in data curation, fine-tuning, evaluation and deployment, as well as in research. Polish-speaking engineers with NLP expertise are particularly sought after.
 
 ## Research and Academia
 

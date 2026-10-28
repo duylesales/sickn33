@@ -1,9 +1,9 @@
-A lateral hire's conflict check came back clean. Three months later, opposing counsel found the connection the firm's own system missed — because prior-firm data was loaded as a spreadsheet the search engine never actually indexed. ⚖️
+A lateral hire's conflict check came back clean. Three months later, opposing counsel found the connection the firm's own system missed - because prior-firm data was loaded as a spreadsheet the search engine never actually indexed. ⚖️
 
 **The Pain Points:**
-❌ **Conflict search built on broken data pipelines:** The algorithm works fine — the failure is almost always at lateral hire onboarding, mergers, or migrations where party data wasn't imported properly.
+❌ **Conflict search built on broken data pipelines:** The algorithm works fine - the failure is almost always at lateral hire onboarding, mergers, or migrations where party data wasn't imported properly.
 ❌ **Exact-match-only search:** "Smith Industries LLC" and "Smith Industries, LLC" read as unrelated entities without fuzzy matching and entity resolution.
-❌ **Ethical walls that leak:** Access gets blocked in document management but stays open in billing or calendaring — an incomplete wall a disqualification motion can pick apart.
+❌ **Ethical walls that leak:** Access gets blocked in document management but stays open in billing or calendaring - an incomplete wall a disqualification motion can pick apart.
 
 **The Manifera Solution:**
 ✅ **Data migration validation, not just "transfer confirmed":** We test whether historical and lateral-hire party data is actually searchable post-migration, not just present.

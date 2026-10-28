@@ -21,13 +21,13 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Hoe lang duurt het om een AI-app productierijp te maken? Traditionele bureaus beweren maanden. Enthousiaste berichten op X (Twitter) roepen een namiddag. Het eerlijke antwoord voor een werkend prototype uit Lovable, Bolt of Cursor ligt vrijwel altijd tussen één en drie weken — waarbij veertien kalenderdagen een zeer representatief traject is. Niet omdat veertien een magisch getal is, maar omdat dit simpelweg de tijd is die de onvermijdelijke stappen kosten wanneer er geen tijd wordt verspild.
+Hoe lang duurt het om een AI-app productierijp te maken? Traditionele bureaus beweren maanden. Enthousiaste berichten op X (Twitter) roepen een namiddag. Het eerlijke antwoord voor een werkend prototype uit Lovable, Bolt of Cursor ligt vrijwel altijd tussen één en drie weken - waarbij veertien kalenderdagen een zeer representatief traject is. Niet omdat veertien een magisch getal is, maar omdat dit simpelweg de tijd is die de onvermijdelijke stappen kosten wanneer er geen tijd wordt verspild.
 
 Dit artikel doorloopt die veertien dagen stap voor stap, zodat u exact ziet waar de tijd naartoe gaat, wat u als oprichter moet doen, en welke onderdelen eventueel versneld kunnen worden als u onder hoge tijdsdruk staat.
 
 ## Vóór Dag 1: Het Gedeelte Dat Alles Bepaalt
 
-De onderstaande planning gaat ervan uit dat aan twee basisvoorwaarden is voldaan. Ten eerste: u beschikt over een werkend prototype — de schermen bestaan en de hoofdgebruikersstroom werkt wanneer u er doorheen klikt. Ten tweede: de scope staat onherroepelijk vast. Dat tweede punt is precies wat twee weken geruisloos in twee maanden kan veranderen.
+De onderstaande planning gaat ervan uit dat aan twee basisvoorwaarden is voldaan. Ten eerste: u beschikt over een werkend prototype - de schermen bestaan en de hoofdgebruikersstroom werkt wanneer u er doorheen klikt. Ten tweede: de scope staat onherroepelijk vast. Dat tweede punt is precies wat twee weken geruisloos in twee maanden kan veranderen.
 
 Een vastomlijnde scope betekent een schriftelijke lijst: deze functionaliteiten gaan live, en déze niet. "En misschien nog een handig referralprogramma" toevoegen op dag 6 is geen kleine tweak; het is een compleet nieuwe functie die dezelfde beveiliging, tests en deployment vereist als de rest. LaunchStudio stemt de scope zorgvuldig af tijdens het 15-minuten durende intakegesprek en vertaalt dit vóór dag 1 naar een vaste prijs en scope, zodat beide partijen elkaar aan de tijdlijn kunnen houden.
 
@@ -35,7 +35,7 @@ Een vastomlijnde scope betekent een schriftelijke lijst: deze functionaliteiten 
 
 De eerste twee dagen leveren voor het oog nauwelijks zichtbare veranderingen op, en dat hoort ook zo. Een engineer analyseert de codebase grondig langs bekende risicogebieden: waar geheimen (API-sleutels) staan opgeslagen, hoe authenticatie en autorisatie worden afgedwongen, hoe data wordt bewaard en geback-upt, hoe betalingen worden geverifieerd en hoe de app wordt uitgerold.
 
-De opbrengst is een compacte schriftelijke bevindingenlijst, gerangschikt op risico. Voor een typische AI-applicatie bevat deze tussen de acht en twintig punten. Sommige zijn one-line fixes. Twee of drie zijn structureel van aard — doorgaans rondom datatoegangsregels (RLS) of betalingsafhandeling — en die bepalen de rest van het werkschema.
+De opbrengst is een compacte schriftelijke bevindingenlijst, gerangschikt op risico. Voor een typische AI-applicatie bevat deze tussen de acht en twintig punten. Sommige zijn one-line fixes. Twee of drie zijn structureel van aard - doorgaans rondom datatoegangsregels (RLS) of betalingsafhandeling - en die bepalen de rest van het werkschema.
 
 **Wat u doet:** Toegang verlenen tot uw repository, hosting, database en domeinaccounts. Vragen snel beantwoorden. Een oprichter die binnen enkele uren reageert, bespaart op deze fase alleen al een volle werkdag.
 
@@ -44,9 +44,9 @@ De opbrengst is een compacte schriftelijke bevindingenlijst, gerangschikt op ris
 Hier vindt het echte engineeringwerk plaats, in een doordachte volgorde: eerst de zaken die data beschermen, daarna de zaken die omzet veiligstellen, en tot slot de zaken die het beheer vereenvoudigen.
 
 - **Dag 3:** Geheimen en API-sleutels verhuizen naar de serverzijde. Elke sleutel die werd aangetroffen in de frontend-bundel of de git-historie wordt ingetrokken, geroteerd en veilig vervangen.
-- **Dag 4:** Autorisatie wordt strikt afgedwongen op database- of API-niveau (bijv. Supabase RLS), zodat een ingelogde gebruiker uitsluitend bij zijn eigen records kan — ongeacht wat de gebruikersinterface toont of toelaat.
+- **Dag 4:** Autorisatie wordt strikt afgedwongen op database- of API-niveau (bijv. Supabase RLS), zodat een ingelogde gebruiker uitsluitend bij zijn eigen records kan - ongeacht wat de gebruikersinterface toont of toelaat.
 - **Dag 5:** Betalingen worden uitsluitend bevestigd via cryptografisch geverifieerde webhooks van de betalingsprovider, en niet langer op basis van een browser die meldt dat de betaling geslaagd is. Maakt u gebruik van Mollie of Stripe, dan worden test- en live-modus hier strikt van elkaar gescheiden.
-- **Dag 6:** Databeheer — migratie naar een EU-databaseregio indien vereist, back-ups geconfigureerd, en één hersteloperatie daadwerkelijk uitgevoerd om te bewijzen dat data hersteld kan worden.
+- **Dag 6:** Databeheer - migratie naar een EU-databaseregio indien vereist, back-ups geconfigureerd, en één hersteloperatie daadwerkelijk uitgevoerd om te bewijzen dat data hersteld kan worden.
 
 **Wat u doet:** Vrijwel niets, behalve bereikbaar blijven. Soms roept een structurele aanpassing een functionele vraag op ("mag een team-admin ook de facturen van andere teamleden inzien?") die alleen u als oprichter kunt beantwoorden.
 
@@ -60,7 +60,7 @@ Tegelijkertijd wordt de productie-infrastructuur klaargezet: hosting geoptimalis
 
 ## Dagen 10–12: Testen Zoals Echte Klanten het Gebruiken
 
-Testen is iets heel anders dan even snel door het 'happy path' klikken. De drie testdagen focussen op de kernprocessen van uw bedrijf — registratie, de kernactie van de app, betalen en accountverwijdering — onder omstandigheden die een AI-demo nooit simuleert: verkeerde wachtwoorden, verlopen bankpassen, twee browsertabbladen tegelijk open, een haperende mobiele 4G-verbinding, of een nieuwsgierige gebruiker die data van een ander probeert te openen door een ID in de URL aan te passen.
+Testen is iets heel anders dan even snel door het 'happy path' klikken. De drie testdagen focussen op de kernprocessen van uw bedrijf - registratie, de kernactie van de app, betalen en accountverwijdering - onder omstandigheden die een AI-demo nooit simuleert: verkeerde wachtwoorden, verlopen bankpassen, twee browsertabbladen tegelijk open, een haperende mobiele 4G-verbinding, of een nieuwsgierige gebruiker die data van een ander probeert te openen door een ID in de URL aan te passen.
 
 Alles wat faalt, gaat direct terug naar de takenlijst voor herstel. Dit is tevens de buffer in de planning die onvoorziene verrassingen opvangt; een tweewekelijks schema zónder ingebouwde testdagen is in werkelijkheid een tiendagenplan zonder enige marge.
 
@@ -82,17 +82,17 @@ Onder hoge tijdsdruk kunnen sommige fasen worden ingekort. Maar zeker niet alles
 | Testen (10–12) | Gedeeltelijk | Kernstromen mogen nooit worden overgeslagen; randgevallen kunnen worden geprioriteerd |
 | Lancering (13–14) | Nee | DNS-propagatie, SSL-certificaten en observatie van de eerste dag vergen reële tijd |
 
-Een eenvoudige app — een website met een contactformulier en een rechttoe-rechtaan boekingsmodule — is vaak al binnen een week klaar voor productie. Een SaaS-applicatie met abonnementen, teamrollen en een beheeromgeving vergt al snel de volle twee tot drie weken. De prijscalculator van LaunchStudio weerspiegelt dit: een werkend prototype is het uitgangspunt (factor 1.0×), terwijl een startpunt met uitsluitend een ontwerp 1.3× vraagt en een puur idee 1.5×, omdat eerdere stadia extra ontwikkeldagen toevoegen vóórdat de veertiendaagse cyclus kan starten. U kunt de [prijscalculator](https://launchstudio.eu/nl/#calculator) direct uitproberen met uw eigen gegevens.
+Een eenvoudige app - een website met een contactformulier en een rechttoe-rechtaan boekingsmodule - is vaak al binnen een week klaar voor productie. Een SaaS-applicatie met abonnementen, teamrollen en een beheeromgeving vergt al snel de volle twee tot drie weken. De prijscalculator van LaunchStudio weerspiegelt dit: een werkend prototype is het uitgangspunt (factor 1.0×), terwijl een startpunt met uitsluitend een ontwerp 1.3× vraagt en een puur idee 1.5×, omdat eerdere stadia extra ontwikkeldagen toevoegen vóórdat de veertiendaagse cyclus kan starten. U kunt de [prijscalculator](https://launchstudio.eu/nl/#calculator) direct uitproberen met uw eigen gegevens.
 
 ## Wat U Daadwerkelijk Elke Dag Ziet
 
 Een tweewekelijkse planning van AI-app naar productie geeft alleen rust als u de voortgang transparant kunt volgen. LaunchStudio stuurt aan het einde van elke werkdag een beknopte schriftelijke update. Een typische update op dag 5 ziet er als volg uit:
 
-> **Vandaag afgerond:** Mollie-webhookendpoint live op staging; handtekeningcontrole en statuslookup geverifieerd; dubbele notificaties worden genegeerd op basis van betaal-ID. **Gevonden:** terugbetalingen via het Mollie-dashboard werkten de boekingsstatus niet automatisch bij — toegevoegd aan de fixlijst van vandaag. **Uw beslissing nodig:** moet een geannuleerde boeking de tijdslot direct weer vrijgeven of na 24 uur? **Morgen op de planning:** proefmigratie naar EU-database op staging; hersteltest van back-up.
+> **Vandaag afgerond:** Mollie-webhookendpoint live op staging; handtekeningcontrole en statuslookup geverifieerd; dubbele notificaties worden genegeerd op basis van betaal-ID. **Gevonden:** terugbetalingen via het Mollie-dashboard werkten de boekingsstatus niet automatisch bij - toegevoegd aan de fixlijst van vandaag. **Uw beslissing nodig:** moet een geannuleerde boeking de tijdslot direct weer vrijgeven of na 24 uur? **Morgen op de planning:** proefmigratie naar EU-database op staging; hersteltest van back-up.
 
 Drie zaken zijn hierin essentieel: voortgang wordt gerapporteerd in geverifieerde resultaten (niet in vage uren). Nieuwe bevindingen worden direct gemeld op de dag van ontdekking, niet pas achteraf. En beslissingen die alleen u kunt nemen worden expliciet voorgelegd, inclusief een logisch standaardvoorstel zodat het werk niet stilvalt als u even bezet bent.
 
-## De Risico's Die de Datum Kunnen Verschuiven — en Hoe Daarmee Wordt Omgegaan
+## De Risico's Die de Datum Kunnen Verschuiven - en Hoe Daarmee Wordt Omgegaan
 
 Zelfs met een strakke scope kan een handvol factoren een veertiendaagse planning beïnvloeden:
 
@@ -112,7 +112,7 @@ Oprichters die het maximale uit deze twee weken halen, richten zich op taken die
 
 ## Wie Er Gedurende de Twee Weken Aan Uw App Werkt
 
-Een lancering in veertien dagen is geen kwestie van één eenzame programmeur die overuren draait. Bij LaunchStudio bestaat een team doorgaans uit een lead engineer die de algehele leiding heeft, het plan bewaakt en uw dagelijkse updates verzorgt; één of twee developers die parallel fixes doorvoeren zodra het structurele fundament staat; en een onafhankelijke tweede reviewer die alle beveiligingskritieke aanpassingen — zoals toegangsrechten, betalingen en API-sleutels — grondig controleert vóórdat ze naar staging gaan. De lead engineer is uw vaste aanspreekpunt, zodat u uw visie nooit twee keer hoeft uit te leggen.
+Een lancering in veertien dagen is geen kwestie van één eenzame programmeur die overuren draait. Bij LaunchStudio bestaat een team doorgaans uit een lead engineer die de algehele leiding heeft, het plan bewaakt en uw dagelijkse updates verzorgt; één of twee developers die parallel fixes doorvoeren zodra het structurele fundament staat; en een onafhankelijke tweede reviewer die alle beveiligingskritieke aanpassingen - zoals toegangsrechten, betalingen en API-sleutels - grondig controleert vóórdat ze naar staging gaan. De lead engineer is uw vaste aanspreekpunt, zodat u uw visie nooit twee keer hoeft uit te leggen.
 
 Deze taakverdeling zorgt ervoor dat een strakke planning realistisch blijft. Parallel werken aan onafhankelijke onderdelen (betalingen inrichten terwijl een collega de staging-omgeving opzet) verkort de doorlooptijd zonder in te boeten aan zorgvuldigheid.
 
@@ -145,10 +145,10 @@ Het team beveiligde de opslagbucket en uploadlimieten op dag 3, schermde de admi
 
 **Resultaat:** KlusKompas ging live op dag 13, exact twee dagen vóór de beurs. Tijdens het beursweekend verwerkte de app 74 offerteaanvragen en 19 betaalde aanbetalingen, zonder een enkele mislukte transactie of melding over haperende uploads.
 
-> *"Ik verwachtte dat ze zouden zeggen 'drie maanden'. Ze zeiden: 'twee weken als je stopt met nieuwe features toevoegen' — en ze kregen op beide punten gelijk."*
-> — **Joris Kramer, Oprichter, KlusKompas (Amersfoort)**
+> *"Ik verwachtte dat ze zouden zeggen 'drie maanden'. Ze zeiden: 'twee weken als je stopt met nieuwe features toevoegen' - en ze kregen op beide punten gelijk."*
+> - **Joris Kramer, Oprichter, KlusKompas (Amersfoort)**
 
-**Kosten & Tijdlijn:** €2.900 (Launch Ready-pakket inclusief betaal- en beveiligingsmodules) — live in 14 kalenderdagen.
+**Kosten & Tijdlijn:** €2.900 (Launch Ready-pakket inclusief betaal- en beveiligingsmodules) - live in 14 kalenderdagen.
 
 ## Veelgestelde Vragen
 
@@ -166,7 +166,7 @@ Het verdient sterke aanbeveling om geen aanpassingen te doen aan componenten waa
 
 ### Waarom test LaunchStudio drie dagen lang in plaats van eerder live te gaan?
 
-Omdat de fouten die de meeste schade aanrichten — dubbele afschrijvingen, datalekken tussen verschillende gebruikersaccounts en falende mobiele uploads — simpelweg niet zichtbaar zijn in een demo. Ze komen pas aan het licht wanneer praktijkomstandigheden worden gesimuleerd. Het overslaan van deze stap maakt van uw eerste echte klanten ongewild de testers.
+Omdat de fouten die de meeste schade aanrichten - dubbele afschrijvingen, datalekken tussen verschillende gebruikersaccounts en falende mobiele uploads - simpelweg niet zichtbaar zijn in een demo. Ze komen pas aan het licht wanneer praktijkomstandigheden worden gesimuleerd. Het overslaan van deze stap maakt van uw eerste echte klanten ongewild de testers.
 
 ### Zorgt het werken met engineers in Vietnam voor vertraging in de planning?
 

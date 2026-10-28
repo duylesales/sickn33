@@ -12,13 +12,13 @@ Wanneer u een software-startup bouwt die fundamenteel afhankelijk is van externe
 
 Graceful Degradation is een fundamenteel en beproefd ontwerpprincipe dat stamt uit decennia van onderzoek naar gedistribueerde softwaresystemen, lang vóór de opkomst van moderne Large Language Models. Het principe dicteert dat wanneer een complexe, geavanceerde component in de softwareketen faalt, het totale systeem onder geen beding volledig mag omvallen. In plaats daarvan moet de software gecontroleerd en automatisch terugvallen naar een eenvoudiger, robuuster handmatig niveau, zodat de zakelijke eindgebruiker zijn primaire kerntaak altijd zonder blokkades kan afronden.
 
-In de context van moderne AI-software betekent dit heel concreet: de AI fungeert te allen tijde als een *versneller* van een bestaande workflow, nooit en te nimmer als de enige exclusieve toegangspoort ertoe. Deze fundamentele framingkeuze — is de AI een optionele efficiëntielaag bovenop een werkend handmatig proces of de enige manier om iets gedaan te krijgen — bepaalt of een incidentele OpenAI-storing resulteert in een simpele supportvraag of in het vroegtijdig beëindigen van een zakelijk jaarcontract.
+In de context van moderne AI-software betekent dit heel concreet: de AI fungeert te allen tijde als een *versneller* van een bestaande workflow, nooit en te nimmer als de enige exclusieve toegangspoort ertoe. Deze fundamentele framingkeuze - is de AI een optionele efficiëntielaag bovenop een werkend handmatig proces of de enige manier om iets gedaan te krijgen - bepaalt of een incidentele OpenAI-storing resulteert in een simpele supportvraag of in het vroegtijdig beëindigen van een zakelijk jaarcontract.
 
 ## De Gebruikersinterface Ontwerpen met Fallbacks (UI Fallback)
 
 Neem als sprekend praktijkvoorbeeld een AI-gedreven CRM dat automatisch de website van een potentiële lead analyseert en een uiterst gepersonaliseerde acquisitie-mail opstelt. Wat gebeurt er technisch als de OpenAI API plotseling kampt met een storing?
 
-- **De Gebrekkige en Fragiele Architectuur:** De gebruiker klikt op de lead, een laadicoon blijft oneindig draaien, er verschijnt een nietszeggende en lelijke rode "Error 502 Bad Gateway" toast-melding op het scherm en de gebruiker kan op dat moment geen enkele e-mail versturen. De complete functionaliteit — inclusief onderdelen die niets met de AI te maken hadden, zoals de basisteksteditor — is onbereikbaar doordat één enkele ongevalideerde AI-component in de render-tree een fatale runtime error veroorzaakt.
+- **De Gebrekkige en Fragiele Architectuur:** De gebruiker klikt op de lead, een laadicoon blijft oneindig draaien, er verschijnt een nietszeggende en lelijke rode "Error 502 Bad Gateway" toast-melding op het scherm en de gebruiker kan op dat moment geen enkele e-mail versturen. De complete functionaliteit - inclusief onderdelen die niets met de AI te maken hadden, zoals de basisteksteditor - is onbereikbaar doordat één enkele ongevalideerde AI-component in de render-tree een fatale runtime error veroorzaakt.
 - **De Graceful Architectuur:** De gebruikersinterface toont standaard een klassiek, overzichtelijk en leeg invoerveld voor handmatige e-mailopmaak. De knop "Magische AI Concept Generatie" is visueel geplaatst als een handig hulpmiddel erboven, duidelijk gepositioneerd als een assistent in plaats van een verplichte sluis. Klikt de gebruiker op de knop en faalt de externe API, dan toont de interface een vriendelijke en transparante melding: *"De AI-assistent is momenteel tijdelijk niet bereikbaar wegens onderhoud bij de provider. U kunt uw bericht hieronder handmatig opstellen en direct verzenden."* De gebruiker moet weliswaar even zelf typen, maar de bedrijfscontinuïteit blijft 100% gewaarborgd en de rest van het platform blijft vlekkeloos interactief dankzij React Error Boundaries.
 
 ## Backend Fallbacks: Multi-Provider Routering (Multi-Provider Routing)
@@ -29,7 +29,7 @@ Uw Node.js backend hoort standaard uitgerust te zijn met **Multi-Provider Router
 
 ## Retry-Logica en Idempotentie (Idempotency Keys)
 
-Een gevaarlijke valkuil bij automatische herhaalpogingen (retries): als een verzoek door een netwerkonderbreking wel succesvol op de server van de provider is verwerkt maar de response verloren ging in het netwerk, kan een automatische herhaalpoging leiden tot dubbele facturatie, dubbele e-mailverzendingen of inconsistente database-records. Om dit te voorkomen, moet elke herhaalbare AI-operatie worden voorzien van een **Idempotentie-Sleutel (Idempotency Key)** — een unieke UUID gegenereerd aan de clientzijde en meegegeven aan de backend. Hierdoor herkent het systeem een herhaalde aanroep direct als exact hetzelfde verzoek en worden dubbele mutaties technisch uitgesloten.
+Een gevaarlijke valkuil bij automatische herhaalpogingen (retries): als een verzoek door een netwerkonderbreking wel succesvol op de server van de provider is verwerkt maar de response verloren ging in het netwerk, kan een automatische herhaalpoging leiden tot dubbele facturatie, dubbele e-mailverzendingen of inconsistente database-records. Om dit te voorkomen, moet elke herhaalbare AI-operatie worden voorzien van een **Idempotentie-Sleutel (Idempotency Key)** - een unieke UUID gegenereerd aan de clientzijde en meegegeven aan de backend. Hierdoor herkent het systeem een herhaalde aanroep direct als exact hetzelfde verzoek en worden dubbele mutaties technisch uitgesloten.
 
 ## Transparante en Menselijke Foutmeldingen
 
@@ -68,7 +68,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om een multi-provider fall
 
 **Resultaat:** De applicatie behield 100% uptime en beschikbaarheid tijdens daaropvolgende grootschalige provider-storingen.
 
-**Kosten & Tijdlijn:** €1.100 (API Fallback Integratie Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.100 (API Fallback Integratie Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 

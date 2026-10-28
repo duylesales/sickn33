@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 There is a difference between an assistant that suggests a line of code and one that builds the thing. The first proposes; you accept or reject, and the surface of the decision is visible on screen. The second creates files you have not opened, installs packages you did not name, writes configuration you did not know existed, and reports back that the feature is working.
 
-Both are useful. Only the second requires a review habit, and almost nobody has one, because the output arrives already functioning — which is precisely the property that removes the prompt to look.
+Both are useful. Only the second requires a review habit, and almost nobody has one, because the output arrives already functioning - which is precisely the property that removes the prompt to look.
 
 ## What an Agent Actually Touches
 
@@ -32,7 +32,7 @@ Worth listing, because founders underestimate the breadth.
 
 **Dependencies,** installed to make something work. A request for a chart or a date picker adds packages and, with them, everything those packages depend on.
 
-**Configuration.** Build settings, run commands, environment definitions — the parts that determine how your project starts and what it can reach.
+**Configuration.** Build settings, run commands, environment definitions - the parts that determine how your project starts and what it can reach.
 
 **Secrets and environment variables,** sometimes created with placeholder values that look real.
 
@@ -46,7 +46,7 @@ Three properties make agent-generated work distinctive.
 
 **It optimises for "working".** The success criterion is that your request now functions. Nothing in that objective concerns who else can reach the data, what happens under load, or whether a package was necessary.
 
-**It cannot see your intent.** You asked for a feature; it inferred everything else — the data structure, the access pattern, the error handling — from what seemed reasonable. Those inferences are invisible in the result.
+**It cannot see your intent.** You asked for a feature; it inferred everything else - the data structure, the access pattern, the error handling - from what seemed reasonable. Those inferences are invisible in the result.
 
 **It is fluent.** Generated code reads well, is consistently formatted, and runs on the first attempt, which produces a confidence signal your brain has spent years learning to trust and which no longer correlates with correctness.
 
@@ -58,7 +58,7 @@ You do not have to review everything. Reviewing these five catches most of what 
 
 **Two: anything touching data access.** Where the code reads or writes your database, and whether those operations carry any check about who is asking. This is where the most serious flaw in AI-built products lives, and an agent will not add a rule nobody requested.
 
-**Three: credentials.** Search the project for anything resembling a key. Then check whether the agent placed a privileged credential in code that runs in a browser — the one mistake that turns a working feature into an open database.
+**Three: credentials.** Search the project for anything resembling a key. Then check whether the agent placed a privileged credential in code that runs in a browser - the one mistake that turns a working feature into an open database.
 
 **Four: configuration changes.** Run commands, build settings, exposed ports, environment definitions. These are rarely read and they determine how your project behaves when deployed rather than when previewed.
 
@@ -70,7 +70,7 @@ Many founders using an agent cannot evaluate implementation quality, and that do
 
 **Ask the agent to explain what it changed,** in plain language, before you accept. An explanation that does not match what you asked for is a signal you can act on without reading a line.
 
-**Ask what it decided that you did not specify.** This single question surfaces the inferences — the data structure it chose, the library it picked, the assumption it made about who can see what.
+**Ask what it decided that you did not specify.** This single question surfaces the inferences - the data structure it chose, the library it picked, the assumption it made about who can see what.
 
 **Ask what would break this.** Agents answer this surprisingly well and it produces a list you can test manually.
 
@@ -108,7 +108,7 @@ After each substantial agent session: read the change list, check new dependenci
 
 Weekly: read the full dependency list, remove what is unused, and confirm nothing privileged has drifted into client-side code.
 
-Before any release: run the six checks from a production readiness list — two accounts reading each other's data, keys in the bundle, a real payment abandoned mid-flow, a file upload of the wrong type, a logged-out attempt at a protected page, and the error tracker checked afterwards.
+Before any release: run the six checks from a production readiness list - two accounts reading each other's data, keys in the bundle, a real payment abandoned mid-flow, a file upload of the wrong type, a logged-out attempt at a protected page, and the error tracker checked afterwards.
 
 None of this slows you down meaningfully. It converts speed into speed you can rely on.
 
@@ -120,7 +120,7 @@ The findings above are visible if you look on the day. A second category only em
 
 **Accumulated permissiveness.** Agents are asked to fix errors, and a permissions error has two solutions: grant the caller the right access, or remove the check. The second is faster, always works, and is what gets generated when the request is phrased as "this is returning an error, fix it". Across a dozen sessions a product can lose most of its access checks without any single session looking wrong.
 
-**Duplicated logic.** Ask for the same capability in three places across three sessions and you get three implementations that behave slightly differently — three date formats, three ways of calculating a total, three definitions of an active customer. Nothing breaks; the numbers simply stop agreeing, and reconciling them later is more work than preventing them now.
+**Duplicated logic.** Ask for the same capability in three places across three sessions and you get three implementations that behave slightly differently - three date formats, three ways of calculating a total, three definitions of an active customer. Nothing breaks; the numbers simply stop agreeing, and reconciling them later is more work than preventing them now.
 
 **Dead code that still runs.** Features replaced rather than removed, endpoints nobody uses that still accept requests, scheduled work for a process that no longer exists. Each one is a surface somebody can reach and a thing you will have to reason about during an incident.
 
@@ -132,7 +132,7 @@ The habit that catches these is a monthly half-hour: read the dependency list, g
 
 That is the common outcome on a project that has had several agent sessions, and it is not a reason to start again.
 
-LaunchStudio handles it as bounded work: an audit of what was generated, dependencies triaged rather than counted, access rules written and verified by attempting to bypass them, credentials consolidated and rotated, file storage moved somewhere durable, and configuration made explicit so deployment is reproducible — with the interface you built left untouched and the codebase kept conventional so you can keep working with the agent afterwards.
+LaunchStudio handles it as bounded work: an audit of what was generated, dependencies triaged rather than counted, access rules written and verified by attempting to bypass them, credentials consolidated and rotated, file storage moved somewhere durable, and configuration made explicit so deployment is reproducible - with the interface you built left untouched and the codebase kept conventional so you can keep working with the agent afterwards.
 
 The engineers are Manifera's: eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City, where reviewing code somebody else wrote is most of the job.
 
@@ -146,16 +146,16 @@ Freek Wiersma built Werkbriefje on Replit: a job-sheet tool for a group of four 
 
 He shipped it without reading the change list.
 
-Three weeks later his project would not start after a restart, and the investigation surfaced what the session had actually done. The PDF feature had installed eleven packages, one of which pulled in a headless browser runtime that made the project slow to start and occasionally exceed its memory allowance. It had also added a second storage mechanism to cache generated files — writing them beside the application, where a rebuild removed them, which is why some job sheets could no longer be downloaded. And it had created an environment variable holding a licence key for a library, in a file committed to the project.
+Three weeks later his project would not start after a restart, and the investigation surfaced what the session had actually done. The PDF feature had installed eleven packages, one of which pulled in a headless browser runtime that made the project slow to start and occasionally exceed its memory allowance. It had also added a second storage mechanism to cache generated files - writing them beside the application, where a rebuild removed them, which is why some job sheets could no longer be downloaded. And it had created an environment variable holding a licence key for a library, in a file committed to the project.
 
-Five business days of work: the PDF pipeline rebuilt using a lighter approach appropriate to the volume, nine packages removed, generated files moved to external object storage with per-company access, the committed key rotated and moved into proper secret storage, memory usage brought back within the allowance, and a review routine adopted — one request per session, a change list read before accepting.
+Five business days of work: the PDF pipeline rebuilt using a lighter approach appropriate to the volume, nine packages removed, generated files moved to external object storage with per-company access, the committed key rotated and moved into proper secret storage, memory usage brought back within the allowance, and a review routine adopted - one request per session, a change list read before accepting.
 
 **Result:** start-up time returned to normal, the missing job sheets were regenerated from source data, and Freek reports that reading the change list now takes him two minutes per session and has caught two further unnecessary packages.
 
 > *"It built the feature in twenty minutes and I was delighted. It also installed an entire browser to make a PDF and put a licence key in my repository, and I found out three weeks later."*
-> — **Freek Wiersma, Founder, Werkbriefje (Zutphen)**
+> - **Freek Wiersma, Founder, Werkbriefje (Zutphen)**
 
-**Cost & Timeline:** €2,200 (dependency cleanup, PDF pipeline rebuild, storage migration, key rotation) — completed in 5 business days.
+**Cost & Timeline:** €2,200 (dependency cleanup, PDF pipeline rebuild, storage migration, key rotation) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -173,7 +173,7 @@ Ask the agent to explain what it changed in plain language, ask what it decided 
 
 ### How can I make agent output easier to review?
 
-Ask for one thing per session, state your constraints up front — no new dependencies without telling you, this table is owner-only, this runs on the server — and ask for a change list at the end that you then verify.
+Ask for one thing per session, state your constraints up front - no new dependencies without telling you, this table is owner-only, this runs on the server - and ask for a change list at the end that you then verify.
 
 ### What should never be delegated to an agent?
 
@@ -197,7 +197,7 @@ Which data is sensitive, who is allowed to do what, what happens when something 
       "name": "What should I check after every agent session?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "New dependencies, anything touching data access, anywhere a credential appears, configuration changes and anything writing files — then test as a hostile user."
+        "text": "New dependencies, anything touching data access, anywhere a credential appears, configuration changes and anything writing files - then test as a hostile user."
       }
     },
     {

@@ -35,13 +35,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-A century ago, the Langstraat — the string of towns between Tilburg and Den Bosch that includes Waalwijk — was the centre of the Dutch shoe and leather industry. Today, driving along the A59, you see a different landscape: vast distribution centres, truck parks and business parks where goods for webshops and retailers across Europe are stored, picked and shipped. Waalwijk has become one of the most frequently mentioned logistics locations in the Netherlands. A few kilometres away lies one of Europe's best-known theme parks, where millions of visitors per year create an entirely different kind of data. For data professionals who like operational problems, Waalwijk offers far more than its modest size suggests.
+A century ago, the Langstraat - the string of towns between Tilburg and Den Bosch that includes Waalwijk - was the centre of the Dutch shoe and leather industry. Today, driving along the A59, you see a different landscape: vast distribution centres, truck parks and business parks where goods for webshops and retailers across Europe are stored, picked and shipped. Waalwijk has become one of the most frequently mentioned logistics locations in the Netherlands. A few kilometres away lies one of Europe's best-known theme parks, where millions of visitors per year create an entirely different kind of data. For data professionals who like operational problems, Waalwijk offers far more than its modest size suggests.
 
 ## From Leather to Logistics
 
 The Langstraat's shoe and leather industry declined in the second half of the twentieth century as production moved to countries with lower labour costs. What remained was a strategic location: between the ports of Rotterdam and Antwerp and the German hinterland, with direct motorway access and space for large buildings. Municipalities developed business parks, and logistics service providers, retailers and webshops built distribution centres.
 
-The rise of e-commerce accelerated this development. Online retail requires fulfilment centres that handle huge numbers of small orders, often with next-day or same-day delivery promises. Waalwijk and the surrounding region became one of the areas where such operations concentrated. The town's shoe history still echoes in local identity — including a museum dedicated to leather and shoes — but its economy is now firmly logistical.
+The rise of e-commerce accelerated this development. Online retail requires fulfilment centres that handle huge numbers of small orders, often with next-day or same-day delivery promises. Waalwijk and the surrounding region became one of the areas where such operations concentrated. The town's shoe history still echoes in local identity - including a museum dedicated to leather and shoes - but its economy is now firmly logistical.
 
 ## The Employers Behind Waalwijk's Data Market
 
@@ -69,7 +69,7 @@ The rise of e-commerce accelerated this development. Online retail requires fulf
 
 ## The Peak Problem: Planning for Black Friday
 
-E-commerce logistics is defined by peaks. Black Friday, Cyber Monday, the Sinterklaas season and Christmas can multiply daily order volumes. A fulfilment centre must plan months in advance for extra staff, temporary storage and transport capacity — while clients' forecasts are often uncertain and promotions may change at short notice.
+E-commerce logistics is defined by peaks. Black Friday, Cyber Monday, the Sinterklaas season and Christmas can multiply daily order volumes. A fulfilment centre must plan months in advance for extra staff, temporary storage and transport capacity - while clients' forecasts are often uncertain and promotions may change at short notice.
 
 Data scientists in this environment work on forecasting order volumes per client and per day, translating forecasts into staffing plans, and monitoring actual volumes in real time to adjust. Errors are expensive in both directions: too few staff means delayed orders and penalties, too many means unnecessary costs in a low-margin business. The combination of uncertainty, operational constraints and financial pressure makes peak planning one of the most practical and valued data skills in logistics.
 
@@ -99,13 +99,13 @@ Labour shortages and rising wages have pushed logistics companies to automate. G
 
 Each step changes the data work. In a manual warehouse, the main data questions concern labour planning and pick paths. In an automated warehouse, they shift towards system throughput, bottleneck analysis, equipment reliability and how humans and machines work together. Because automation investments are large and long-term, companies use data and simulation to decide which processes to automate first and to verify that expected benefits are realised.
 
-Automation also changes the workforce. Fewer people walk long distances, while more people are needed for exception handling, maintenance and supervision of automated systems. Data professionals who understand both the technical system and the human side of the operation help companies make these transitions without losing reliability — or the goodwill of the people on the floor.
+Automation also changes the workforce. Fewer people walk long distances, while more people are needed for exception handling, maintenance and supervision of automated systems. Data professionals who understand both the technical system and the human side of the operation help companies make these transitions without losing reliability - or the goodwill of the people on the floor.
 
 ## A Concrete Scenario: Predicting Queues at a Theme Park
 
 A theme park wants to reduce frustration from long queues. Historical data includes ticket sales, weather forecasts, school holidays in different regions and countries, attraction capacity and observed queue times. A model predicts queue times per attraction throughout the day.
 
-The first use is informational: visitors see predicted waiting times in an app. The next step is operational: staff can open extra capacity, adjust show schedules or guide visitors to less crowded areas. A more advanced step links the forecast to pricing and capacity management — encouraging visits on quieter days. Each step raises the bar for accuracy and trust, and each involves teams from operations, marketing and IT. The case shows that leisure analytics is not a soft domain: it is operations research with emotional stakes.
+The first use is informational: visitors see predicted waiting times in an app. The next step is operational: staff can open extra capacity, adjust show schedules or guide visitors to less crowded areas. A more advanced step links the forecast to pricing and capacity management - encouraging visits on quieter days. Each step raises the bar for accuracy and trust, and each involves teams from operations, marketing and IT. The case shows that leisure analytics is not a soft domain: it is operations research with emotional stakes.
 
 ## A Common Misconception About Logistics Jobs
 
@@ -163,13 +163,13 @@ Browse current AI, machine learning and data jobs in and around Waalwijk at [onl
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't associate Waalwijk with data work) Is there real data science work in Waalwijk?
-Yes — e-commerce fulfilment, logistics services, transport planning and the nearby theme park all rely on forecasting, optimisation and analytics.
+Yes - e-commerce fulfilment, logistics services, transport planning and the nearby theme park all rely on forecasting, optimisation and analytics.
 
 ### (Scenario: data scientist new to logistics) What makes e-commerce logistics a challenging data domain?
 Extreme seasonal peaks, uncertain client forecasts, high return rates and low margins make forecasting and planning both difficult and valuable.
 
 ### (Scenario: candidate concerned about worker monitoring) Are there legal limits to analysing warehouse worker productivity?
-Yes — GDPR, the Works Councils Act and the AI Act's rules for worker-related AI require transparency, lawful purposes and often works council consent.
+Yes - GDPR, the Works Councils Act and the AI Act's rules for worker-related AI require transparency, lawful purposes and often works council consent.
 
 ### (Scenario: candidate interested in leisure) What data work exists at a theme park?
 Visitor flow and queue prediction, pricing and revenue management, hotel occupancy and staff planning.
@@ -182,9 +182,9 @@ Mostly by car or bike, or by bus from Tilburg and Den Bosch, since Waalwijk has 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there real data science work in Waalwijk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — fulfilment, logistics services, transport planning and a nearby theme park rely on analytics."}},
+    {"@type": "Question", "name": "Is there real data science work in Waalwijk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - fulfilment, logistics services, transport planning and a nearby theme park rely on analytics."}},
     {"@type": "Question", "name": "What makes e-commerce logistics a challenging data domain?", "acceptedAnswer": {"@type": "Answer", "text": "Seasonal peaks, uncertain client forecasts, high return rates and low margins."}},
-    {"@type": "Question", "name": "Are there legal limits to analysing warehouse worker productivity?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — GDPR, the Works Councils Act and the AI Act require transparency and often works council consent."}},
+    {"@type": "Question", "name": "Are there legal limits to analysing warehouse worker productivity?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - GDPR, the Works Councils Act and the AI Act require transparency and often works council consent."}},
     {"@type": "Question", "name": "What data work exists at a theme park?", "acceptedAnswer": {"@type": "Answer", "text": "Queue prediction, pricing, hotel occupancy and staff planning."}},
     {"@type": "Question", "name": "How do people commute to Waalwijk?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly by car, bike or bus from Tilburg and Den Bosch."}}
   ]

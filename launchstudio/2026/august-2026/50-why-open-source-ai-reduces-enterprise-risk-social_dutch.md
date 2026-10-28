@@ -1,4 +1,4 @@
-🔥 Ava bouwde een prototype met **Cursor** — Ava, een jurist, bouwde een AI-contractscanner, maar zakelijke klanten vreesden dat vertrouwelijke data zou worden gebruikt voor modeltraining door externe AI-providers. 🧠
+🔥 Ava bouwde een prototype met **Cursor** - Ava, een jurist, bouwde een AI-contractscanner, maar zakelijke klanten vreesden dat vertrouwelijke data zou worden gebruikt voor modeltraining door externe AI-providers. 🧠
 
 Open Source AI verlaagt enterprise-risico's, elimineert platformafhankelijkheid en maakt veilige private cloud (VPC) uitrol mogelijk.
 
@@ -12,7 +12,7 @@ Open Source AI verlaagt enterprise-risico's, elimineert platformafhankelijkheid 
 
 Bij **LaunchStudio** lossen we exact dit type open-source AI-architectuur en VPC-implementatievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Avas contractscanner werd enterprise-klaar: Alle veiligheidsaudits werden vlot doorstaan dankzij een dedicated private Llama-3 deployment. (€4.500 (Private LLM Deployment Pakket) — productieklaar en binnen 9 werkdagen gedeployed). 🚀
+Avas contractscanner werd enterprise-klaar: Alle veiligheidsaudits werden vlot doorstaan dankzij een dedicated private Llama-3 deployment. (€4.500 (Private LLM Deployment Pakket) - productieklaar en binnen 9 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/why-open-source-ai-reduces-enterprise-risk
 

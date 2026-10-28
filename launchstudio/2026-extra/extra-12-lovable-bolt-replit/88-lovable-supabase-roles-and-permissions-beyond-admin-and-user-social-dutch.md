@@ -1,4 +1,4 @@
-🚨 Horecarooster van Marloes Teunissen roostert zo'n 3.800 medewerkers op 140 locaties voor 27 horecagroepen. Er waren drie rollen: eigenaar, beheerder, lid. Locatiemanagers moesten uren goedkeuren — wat alleen beheerders konden — dus werd elke manager beheerder. Toen zag een financieel directeur dat een manager zijn eigen overuren goedkeurde. 😳
+🚨 Horecarooster van Marloes Teunissen roostert zo'n 3.800 medewerkers op 140 locaties voor 27 horecagroepen. Er waren drie rollen: eigenaar, beheerder, lid. Locatiemanagers moesten uren goedkeuren - wat alleen beheerders konden - dus werd elke manager beheerder. Toen zag een financieel directeur dat een manager zijn eigen overuren goedkeurde. 😳
 
 Als beheerder konden managers ook de lonen van elke locatie zien. Diezelfde week haakte een groep met 34 locaties precies om die reden af. Zo bouwt u rollen en rechten voorbij "beheerder en gebruiker":
 
@@ -14,7 +14,7 @@ Als beheerder konden managers ook de lonen van elke locatie zien. Diezelfde week
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, bouwen we dit wanneer een product begint te verkopen aan organisaties met meerdere locaties. ⚙️
 
-💡 Het resultaat: € 4.800, vier werkdagen. Een historische controle vond drie managers die samen € 4.100 aan eigen overuren hadden goedgekeurd. De groep met 34 locaties tekende binnen de maand, en een tweede groep volgde — 61 nieuwe locaties. 🚀
+💡 Het resultaat: € 4.800, vier werkdagen. Een historische controle vond drie managers die samen € 4.100 aan eigen overuren hadden goedgekeurd. De groep met 34 locaties tekende binnen de maand, en een tweede groep volgde - 61 nieuwe locaties. 🚀
 
 👉 Lovable Supabase: rollen en rechten voorbij beheerder en gebruiker: https://launchstudio.eu/nl/blog/lovable-supabase-roles-and-permissions-beyond-admin-and-user
 

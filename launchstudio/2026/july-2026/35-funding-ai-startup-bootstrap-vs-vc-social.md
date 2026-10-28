@@ -1,4 +1,4 @@
-🔥 Jackson built a prototype using **Cursor** — jackson, a startup founder, used **cursor** to build a legal case summarizer prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Jackson built a prototype using **Cursor** - jackson, a startup founder, used **cursor** to build a legal case summarizer prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jackson's application achieved production readiness: Jackson secured pre-seed backing from angel investors by demonstrating a secure, compliant SaaS architecture instead of just a working demo. (€3,500 (Enterprise Hardening Package) — production-ready and deployed in 12 business days.). 🚀
+Jackson's application achieved production readiness: Jackson secured pre-seed backing from angel investors by demonstrating a secure, compliant SaaS architecture instead of just a working demo. (€3,500 (Enterprise Hardening Package) - production-ready and deployed in 12 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/funding-ai-startup-bootstrap-vs-vc
 

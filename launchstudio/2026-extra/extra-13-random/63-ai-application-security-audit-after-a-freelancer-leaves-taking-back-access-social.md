@@ -9,10 +9,10 @@ One freelancer still owned the GitHub repo and the Supabase project. The other s
 
 ✅ Repository and Supabase project transferred to Nadia's company account
 ✅ Both freelancers removed everywhere and the Vercel token revoked
-✅ Mollie, Supabase service role, email and maps keys rotated in a planned sequence — no downtime
-✅ Two-factor authentication everywhere and a written access register — plus the domain transferred and IP assignments signed within a week
+✅ Mollie, Supabase service role, email and maps keys rotated in a planned sequence - no downtime
+✅ Two-factor authentication everywhere and a written access register - plus the domain transferred and IP assignments signed within a week
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we make sure access belongs to your company — and is lent to people, never the other way round. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and its cybersecurity roots, we make sure access belongs to your company - and is lent to people, never the other way round. ⚙️
 
 Her result: €1,300, five business days. Nadia sent the access register to the removals company and the partnership went ahead. Verhuisvriend now runs a ten-minute offboarding checklist whenever a contractor finishes. 🚀
 

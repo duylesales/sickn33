@@ -92,7 +92,7 @@ TU Delft is one of Europe's leading technical universities. It has launched a se
 
 ## How OnlyAIJobs Works for This Region
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It is currently strongest in the Netherlands, which makes it directly useful for AI jobs in Rotterdam and The Hague. Every vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement — so a logistics SME in Capelle is shown on equal terms with a multinational. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Sendcloud, Mollie, Heijmans, VINCI Energies, Rexel and Holland Innovative.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It is currently strongest in the Netherlands, which makes it directly useful for AI jobs in Rotterdam and The Hague. Every vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement - so a logistics SME in Capelle is shown on equal terms with a multinational. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Sendcloud, Mollie, Heijmans, VINCI Energies, Rexel and Holland Innovative.
 
 Combine it with university career services, government vacancy portals (for public roles), international organisations' recruitment sites and your network for full coverage.
 
@@ -117,7 +117,7 @@ For data scientists, government work in The Hague offers significant societal im
 
 ## TU Delft AI Labs and Research Careers
 
-TU Delft's AI labs bring together researchers from computer science and application domains such as civil engineering, aerospace, mechanical engineering and design. This creates positions for PhD candidates and postdocs working at the intersection of AI and engineering — for example AI for water management, energy systems, mobility, materials or robotics. TNO and Deltares offer applied research careers with direct links to industry and government. Erasmus University Rotterdam, including its business school and econometrics tradition, and Erasmus MC contribute research in data-driven decision-making and health. Leiden University's campus in The Hague focuses on governance, security and global affairs, including the governance of technology.
+TU Delft's AI labs bring together researchers from computer science and application domains such as civil engineering, aerospace, mechanical engineering and design. This creates positions for PhD candidates and postdocs working at the intersection of AI and engineering - for example AI for water management, energy systems, mobility, materials or robotics. TNO and Deltares offer applied research careers with direct links to industry and government. Erasmus University Rotterdam, including its business school and econometrics tradition, and Erasmus MC contribute research in data-driven decision-making and health. Leiden University's campus in The Hague focuses on governance, security and global affairs, including the governance of technology.
 
 For experienced engineers considering a research role, the region offers an unusually practical flavour of AI research: problems come from real infrastructure, water systems, ports and hospitals, and results often feed directly into practice.
 
@@ -133,7 +133,7 @@ EU citizens can work freely in the Netherlands and must register with their muni
 
 ## Security and Cyber Roles in The Hague
 
-The Hague's security cluster brings together cybersecurity companies, government bodies, research institutes and international organisations. AI plays a growing role in detecting cyber threats, analysing large volumes of logs and network data, identifying fraud and supporting investigations. Work in this field often combines machine learning with domain expertise in security and law, and it places high demands on reliability, explainability and legal compliance — because decisions can affect individuals' rights. Some roles require security clearances and nationality conditions, particularly in government and international organisations. For engineers interested in adversarial problems and public safety, the cluster offers distinctive opportunities.
+The Hague's security cluster brings together cybersecurity companies, government bodies, research institutes and international organisations. AI plays a growing role in detecting cyber threats, analysing large volumes of logs and network data, identifying fraud and supporting investigations. Work in this field often combines machine learning with domain expertise in security and law, and it places high demands on reliability, explainability and legal compliance - because decisions can affect individuals' rights. Some roles require security clearances and nationality conditions, particularly in government and international organisations. For engineers interested in adversarial problems and public safety, the cluster offers distinctive opportunities.
 
 ## Questions to Ask Employers in the Region
 
@@ -146,7 +146,7 @@ The Hague's security cluster brings together cybersecurity companies, government
 
 ## Career Paths Across the Region
 
-The density of different employers in the southern Randstad allows varied careers without relocating. A data scientist might start in e-commerce in Rotterdam, move to energy or port logistics, then into a government role in The Hague or an applied research position at TNO or TU Delft. Each move builds a broader perspective on how AI creates value in different contexts. Networking across these sectors — through meetups in Rotterdam, events at TU Delft and security events in The Hague — makes such transitions easier.
+The density of different employers in the southern Randstad allows varied careers without relocating. A data scientist might start in e-commerce in Rotterdam, move to energy or port logistics, then into a government role in The Hague or an applied research position at TNO or TU Delft. Each move builds a broader perspective on how AI creates value in different contexts. Networking across these sectors - through meetups in Rotterdam, events at TU Delft and security events in The Hague - makes such transitions easier.
 
 ## A Practical Search Routine
 

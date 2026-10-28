@@ -33,7 +33,7 @@ Content Format: Career Guide
 }
 </script>
 
-The question arrives around the fourth or fifth year. You are competent across several areas and expert in none, and colleagues who chose a niche appear to be advancing faster — or more precariously, depending on which niche. Whether to be a specialist or generalist in an AI career has no universal answer, and the useful framing is not which is better but what each buys you and what it costs.
+The question arrives around the fourth or fifth year. You are competent across several areas and expert in none, and colleagues who chose a niche appear to be advancing faster - or more precariously, depending on which niche. Whether to be a specialist or generalist in an AI career has no universal answer, and the useful framing is not which is better but what each buys you and what it costs.
 
 ## What Each Strategy Actually Buys
 
@@ -53,7 +53,7 @@ The pattern most experienced European practitioners converge on is a T: broad wo
 
 The broad part is not optional. Anyone working in applied AI needs to handle data, write maintainable code, evaluate honestly, deploy something and explain it to a non-specialist. These are the entry conditions rather than a specialisation.
 
-The deep part is what makes you memorable. It can be a technical area, a class of problem or a domain — and the strongest position is usually a combination: forecasting in energy, retrieval in regulated documents, computer vision in manufacturing.
+The deep part is what makes you memorable. It can be a technical area, a class of problem or a domain - and the strongest position is usually a combination: forecasting in energy, retrieval in regulated documents, computer vision in manufacturing.
 
 The combination matters because it is far harder to replicate than either element alone. Many people know forecasting; fewer know forecasting and the operational reality of a distribution network, and those people are recruited rather than filtered.
 
@@ -81,7 +81,7 @@ What has proved less durable: expertise tied to a specific framework, a specific
 
 The depth-versus-breadth framing usually omits the dimension that matters most in practice.
 
-Technical skill is widely distributed and increasingly assisted by tooling. Understanding of a particular industry — its processes, constraints, vocabulary, economics and failure modes — is not, and it cannot be acquired in a weekend.
+Technical skill is widely distributed and increasingly assisted by tooling. Understanding of a particular industry - its processes, constraints, vocabulary, economics and failure modes - is not, and it cannot be acquired in a weekend.
 
 The practical consequence is that a person with moderate technical depth and deep domain understanding is frequently more employable, and more effective, than a stronger technologist without it. They know which questions matter, whether an answer is plausible and what will actually be adopted.
 
@@ -105,7 +105,7 @@ The right answer differs depending on where you are, which is why generic advice
 
 **Beyond twelve.** Most people either deepen further into a recognised expert position, broaden into leadership where breadth is the requirement, or combine depth with a domain and become the person an industry calls.
 
-The transitions are not irreversible. People move between these patterns repeatedly, and a period of deliberate breadth after years of depth — or the reverse — is a normal and often refreshing part of a long career.
+The transitions are not irreversible. People move between these patterns repeatedly, and a period of deliberate breadth after years of depth - or the reverse - is a normal and often refreshing part of a long career.
 
 ## Signs You Have Specialised Too Narrowly
 
@@ -147,7 +147,7 @@ Depth rarely accumulates by accident, and the mechanisms are straightforward.
 
 **Take the projects.** The fastest route is doing the work repeatedly on real problems with consequences. Volunteer for the ones in your chosen area even when they are less glamorous.
 
-**Read properly.** Not announcements — the foundational material. Most specialisms have two or three books and a handful of papers that repay careful study, and few practitioners have read them.
+**Read properly.** Not announcements - the foundational material. Most specialisms have two or three books and a handful of papers that repay careful study, and few practitioners have read them.
 
 **Build the thing nobody else will.** An evaluation harness, a benchmark, a tool for a recurring problem. Owning a piece of infrastructure in your area makes you the person who understands it.
 
@@ -215,7 +215,7 @@ Choose the area you already enjoy most, take the projects that require it, and d
 Most specialisms transfer more than they appear to. Evaluation, systems thinking and domain knowledge move with you; only the tooling is discarded.
 
 ### (Scenario: candidate choosing a niche) Which specialisms are safest?
-Those narrow in method and broad in sector — forecasting, optimisation, evaluation, retrieval, data platform — because the demand is not tied to one industry.
+Those narrow in method and broad in sector - forecasting, optimisation, evaluation, retrieval, data platform - because the demand is not tied to one industry.
 
 ### (Scenario: employer) Should we hire specialists or generalists?
 Generalists for small teams and early capability, specialists once you have a problem that recurs and justifies depth.

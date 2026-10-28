@@ -1,4 +1,4 @@
-🚨 Search "mobile app development cost" and every result gives a range wide enough to be useless — €10,000 to €250,000. The honest answer depends on decisions you haven't made yet. 💶⚙️
+🚨 Search "mobile app development cost" and every result gives a range wide enough to be useless - €10,000 to €250,000. The honest answer depends on decisions you haven't made yet. 💶⚙️
 
 **The Pain Points:**
 ❌ **A Range, Not a Budget:** No vendor's marketing page can price a decision that isn't made yet.
@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Four Real Cost Drivers, Explained:** Platform scope, backend complexity, platform-specific feature depth, and post-launch maintenance (15-25% of build cost annually).
-✅ **Amsterdam Strategic Governance:** A realistic cost model built against your actual project — before any commitment is made.
+✅ **Amsterdam Strategic Governance:** A realistic cost model built against your actual project - before any commitment is made.
 ✅ **Vietnam Execution Velocity:** Delivery at a materially lower cost base, without cutting the corners that produce a change order later.
 
 We budgeted for "the app." It turned out the app was maybe half the actual cost. 🛡️

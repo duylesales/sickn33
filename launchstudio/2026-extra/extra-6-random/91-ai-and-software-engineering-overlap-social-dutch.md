@@ -1,4 +1,4 @@
-🚨 Bente Bennebroek bouwde RoosterKoppel, een tool voor het ruilen van diensten voor retailteams, met Cursor — de code was netjes en leesbaar, dus sloeg ze een aparte reviewronde volledig over, met de gedachte "de AI heeft het al geëngineerd". 😳
+🚨 Bente Bennebroek bouwde RoosterKoppel, een tool voor het ruilen van diensten voor retailteams, met Cursor - de code was netjes en leesbaar, dus sloeg ze een aparte reviewronde volledig over, met de gedachte "de AI heeft het al geëngineerd". 😳
 
 Nette code en geëngineerde code zijn niet dezelfde claim. 🧠
 

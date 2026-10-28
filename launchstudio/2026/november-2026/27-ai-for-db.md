@@ -35,7 +35,7 @@ When evaluating AI for DB (Database) integration, founders quickly realize that 
 
 In a traditional application, databases act as dumb storage. You insert a user profile, and later you `SELECT * FROM users WHERE id = 123`. The database relies on exact matches. 
 
-AI applications, however, require semantic understanding. If a user searches for "payment problems," the database needs to return documents containing the phrases "credit card declined," "invoice overdue," and "billing error"—even if the exact word "payment" never appears in the text. 
+AI applications, however, require semantic understanding. If a user searches for "payment problems," the database needs to return documents containing the phrases "credit card declined," "invoice overdue," and "billing error" - even if the exact word "payment" never appears in the text. 
 
 This is the domain of the Vector Database. When you use tools like Lovable or Cursor to build an AI application, they often generate basic integrations with Supabase or Pinecone. But generating the API call is only 10% of the work. Architecting the database to handle millions of vector embeddings without crashing the CPU, exhausting connection limits, or violating data privacy is the true engineering challenge.
 
@@ -53,7 +53,7 @@ Why? Because storing your vectors in Pinecone and your relational data (users, o
 ### 2. High-Dimensional Indexing (HNSW)
 The AI coding tools (like Bolt or Cursor) usually write a basic cosine similarity search query: `ORDER BY embedding <=> query_embedding LIMIT 5`. 
 
-In a prototype with 1,000 documents, this performs a Sequential Scan—the database compares the query against every single row. It takes 50 milliseconds. It feels instantaneous.
+In a prototype with 1,000 documents, this performs a Sequential Scan - the database compares the query against every single row. It takes 50 milliseconds. It feels instantaneous.
 
 In production, with 5,000,000 documents, a Sequential Scan on 1536-dimensional vectors (the OpenAI default) will absolutely crush your database CPU and take 8 to 15 seconds to return a result. 
 
@@ -101,9 +101,9 @@ Within 8 business days, LaunchStudio rebuilt the data layer. They wrote custom P
 **Result:** ContractContext went from crashing to delivering highly accurate semantic search results across 4 million rows in 42 milliseconds. Simon saved the enterprise contract, which is now worth €9,500 in MRR. 
 
 > *"Cursor built the UI, but it couldn't comprehend the physics of a database at scale. LaunchStudio didn't just fix my code; they performed open-heart surgery on my database architecture while the patient was alive. They saved the company."*
-> — **Simon Dubois, Founder, ContractContext (Brussels)**
+> - **Simon Dubois, Founder, ContractContext (Brussels)**
 
-**Cost & Timeline:** €4,800 (Launch & Grow Package with Database Scale Add-on) — production-ready and deployed in 8 business days.
+**Cost & Timeline:** €4,800 (Launch & Grow Package with Database Scale Add-on) - production-ready and deployed in 8 business days.
 
 ---
 

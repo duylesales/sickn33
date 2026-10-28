@@ -1,6 +1,6 @@
 Elk studentenportfolio bevat hetzelfde project. 📊 Kaggle-dataset, notebook, 90-en-nog-wat procent, README met de architectuur.
 
-Het is geen slechte oefening. Maar een hiring manager die het honderd keer heeft gezien, leert er niets over jou uit. Je moeite mislukte niet — ze onderscheidde alleen niet.
+Het is geen slechte oefening. Maar een hiring manager die het honderd keer heeft gezien, leert er niets over jou uit. Je moeite mislukte niet - ze onderscheidde alleen niet.
 
 Wat wél signaleert:
 

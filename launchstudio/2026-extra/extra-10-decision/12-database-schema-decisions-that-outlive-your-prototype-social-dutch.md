@@ -16,7 +16,7 @@ Wat een productierijp databaseschema wél vereist:
 ✅ Doelgerichte indexen (aangemaakt met `CREATE INDEX CONCURRENTLY` in Postgres)
 ✅ Omkeerbare migraties waarbij elke `up` een geteste en werkende `down` heeft
 
-Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers uw databaseschema en voeren we gerichte, veilige migraties uit — vóórdat live data uw opties definitief beperkt.
+Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers uw databaseschema en voeren we gerichte, veilige migraties uit - vóórdat live data uw opties definitief beperkt.
 
 💡 Zo herstelde therapeutenplatform Ferndesk 14 verdwenen afspraken en werden toekomstige data-corrupties permanent geblokkeerd.
 

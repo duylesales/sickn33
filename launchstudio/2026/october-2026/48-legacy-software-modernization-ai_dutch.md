@@ -27,7 +27,7 @@ Moderne AI vereist dat data realtime en dynamisch toegankelijk is via gestandaar
 
 ### 2. De Kloof Tussen Lokaal en Cloud (The Cloud Disconnect)
 
-Generatieve AI draait in de cloud. Veel grote organisaties — met name in de financiële sector, de gezondheidszorg en de maritieme logistiek — draaien hun kernsystemen nog altijd op fysieke servers op locatie (on-premise), vaak vanwege historische compliance-eisen die niemand ooit heeft herzien. Het direct doorsturen van gevoelige on-premise bedrijfsdata naar een cloud-LLM zónder beveiligde, versleutelde tussenlaag vormt een zware overtreding van het IT-beleid en de AVG.
+Generatieve AI draait in de cloud. Veel grote organisaties - met name in de financiële sector, de gezondheidszorg en de maritieme logistiek - draaien hun kernsystemen nog altijd op fysieke servers op locatie (on-premise), vaak vanwege historische compliance-eisen die niemand ooit heeft herzien. Het direct doorsturen van gevoelige on-premise bedrijfsdata naar een cloud-LLM zónder beveiligde, versleutelde tussenlaag vormt een zware overtreding van het IT-beleid en de AVG.
 
 ### 3. Gegevensfragmentatie en Informatiesilo's (The Silo Problem)
 
@@ -39,13 +39,13 @@ Wanneer u een oplossing pitcht aan de directie en de IT-leiding, stel dan nooit 
 
 Pitch in plaats daarvan het beproefde **Strangler Fig Patroon** (de wurgvijg-migratie).
 
-Dit is een softwaremoderniseringsstrategie waarbij u een moderne, cloud-native tussenlaag — gebouwd met Next.js en Supabase — *rondom* het bestaande legacy-systeem bouwt, vernoemd naar de plant die geleidelijk rond een gastheerboom groeit zonder deze in één keer om te hakken. Deze moderne laag neemt stapsgewijs specifieke deeltaken over via beveiligde API-koppelingen, terwijl het oude kernsysteem op de achtergrond ongewijzigd en zonder risico blijft doordraaien.
+Dit is een softwaremoderniseringsstrategie waarbij u een moderne, cloud-native tussenlaag - gebouwd met Next.js en Supabase - *rondom* het bestaande legacy-systeem bouwt, vernoemd naar de plant die geleidelijk rond een gastheerboom groeit zonder deze in één keer om te hakken. Deze moderne laag neemt stapsgewijs specifieke deeltaken over via beveiligde API-koppelingen, terwijl het oude kernsysteem op de achtergrond ongewijzigd en zonder risico blijft doordraaien.
 
 Zodra de moderne tussenlaag veilig verbonden is met de data, kunt u moeiteloos uw AI-agents inpluggen. De modernisering betaalt zichzelf direct terug doordat het de AI-functionaliteiten ontgrendelt die de CEO zo graag wil, terwijl de IT-afdeling een gefaseerd migratiepad krijgt dat zij met een gerust hart kunnen goedkeuren.
 
 ### Een Typisch Strangler Fig Migratietraject
 
-1. **Datastromen in Kaart Brengen:** Breng nauwkeurig in kaart welke tabellen of data-exports werkelijk relevant zijn voor de AI-toepassing — meestal slechts een fractie van het complete legacy-schema.
+1. **Datastromen in Kaart Brengen:** Breng nauwkeurig in kaart welke tabellen of data-exports werkelijk relevant zijn voor de AI-toepassing - meestal slechts een fractie van het complete legacy-schema.
 2. **Een Veilige Read-Only API-Brug Bouwen:** Een beveiligde Edge Function of middleware-service ontsluit uitsluitend die specifieke velden, versleuteld in transit, zónder het oude systeem te belasten.
 3. **Valideren met een Laag-Risico Feature:** Koppel eerst een eenvoudige zoekfunctie of dashboard aan de nieuwe API om de stabiliteit onder live belasting te bewijzen.
 4. **De AI-Laag Activeren:** Zodra de API-brug bewezen stabiel is, sluit u de RAG-pijplijn of AI-agent aan, zodat deze leest van actuele, gevalideerde data.
@@ -61,7 +61,7 @@ Gesteund door **Manifera's ruim 11 jaar ervaring** in het ontrafelen en modernis
 
 Uw bureau ontwerpt de aantrekkelijke nieuwe gebruikersinterface en de AI-interactie; de software-architecten van LaunchStudio verzorgen het zware backend-werk. Wij bouwen de beveiligde API-bruggen naar de lokale databases van de klant, voeren de gefaseerde Strangler Fig migratie uit zónder downtime, en structureren de data zodanig dat uw AI-agents foutloos kunnen redeneren zonder hallucinaties. Wij leveren robuuste enterprise architectuur tegen circa 20% van de kosten van traditionele bureaus, zie onze [tarieven en pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Belangrijkste Inzichten
 
@@ -87,7 +87,7 @@ Wij sloten aan bij het overleg met de IT-directie als Davids "Head of Engineerin
 
 **Resultaat:** Zodra de beveiligde data-brug operationeel was, lanceerde Davids team de AI Logistics Copilot met groot succes. De AI kon de legacy-data realtime en foutloos analyseren. Davids bureau ondertekende een contract van **€ 120.000**, inclusief een aanzienlijke winstmarge op onze white-label werkzaamheden. *"De klant dacht dat hun antieke systemen ongeschikt waren voor AI. LaunchStudio bouwde de brug die het tegendeel bewees, en ons bureau kreeg alle lof."*
 
-**Kosten & Tijdlijn:** €45.000 (White-Label Legacy API Wrapper & AI Integratie) — binnen 45 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €45.000 (White-Label Legacy API Wrapper & AI Integratie) - binnen 45 werkdagen live opgeleverd.
 
 ---
 

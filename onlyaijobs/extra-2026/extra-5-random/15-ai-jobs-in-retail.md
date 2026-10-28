@@ -72,7 +72,7 @@ The defining feature of retail data work is that almost everything is tested. On
 
 Expect to discuss: how to size an experiment; what to do about novelty and primacy effects; how to handle interference between users or stores; the risks of peeking at results; multiple testing; how to measure long-term effects such as retention when your metric is short-term revenue; and when a switchback or synthetic control design is appropriate.
 
-Candidates who can reason clearly about experiments — including when not to run one — are hired ahead of those with more sophisticated models and weaker measurement.
+Candidates who can reason clearly about experiments - including when not to run one - are hired ahead of those with more sophisticated models and weaker measurement.
 
 ## What the Data Is Like
 
@@ -90,7 +90,7 @@ To be transparent about scope: listings are currently concentrated in the Nether
 
 ## Pricing: The Highest-Leverage Problem
 
-Pricing work is where retail data science most directly moves profit, and it is also where the modelling is most subtle. Elasticity cannot be observed directly; prices change for reasons correlated with demand; competitors respond; and promotions interact with base prices in ways that confound naive estimates. Causal inference matters more here than predictive accuracy, and experiments — price tests across stores or regions — are often the only reliable source of truth.
+Pricing work is where retail data science most directly moves profit, and it is also where the modelling is most subtle. Elasticity cannot be observed directly; prices change for reasons correlated with demand; competitors respond; and promotions interact with base prices in ways that confound naive estimates. Causal inference matters more here than predictive accuracy, and experiments - price tests across stores or regions - are often the only reliable source of truth.
 
 Practical pricing teams combine econometric models with constraints from the business: price ladders, psychological price points, brand positioning, legal rules on price presentation and promotions, and fairness considerations that prevent personalised prices in most European retail contexts. Engineers who enjoy statistics with real financial consequences find this the most intellectually satisfying corner of the sector.
 
@@ -116,7 +116,7 @@ Two retail segments stretch forecasting in opposite directions.
 
 **Grocery** sells items with too much history but volatile short-term demand: weather, holidays, promotions, competitor actions and substitution when something is out of stock. Shelf life turns the problem into a trade-off between waste and availability, and probabilistic forecasts with explicit service levels are essential.
 
-If you are choosing where to specialise, these segments teach different skills: fashion rewards attribute modelling and cold-start thinking, grocery rewards probabilistic forecasting and operational integration. Both translate well to other industries — the first to any launch-driven business, the second to any perishable or capacity-constrained one.
+If you are choosing where to specialise, these segments teach different skills: fashion rewards attribute modelling and cold-start thinking, grocery rewards probabilistic forecasting and operational integration. Both translate well to other industries - the first to any launch-driven business, the second to any perishable or capacity-constrained one.
 
 ## Roles, Titles and Team Structures
 
@@ -124,7 +124,7 @@ Retail data organisations typically contain several distinct groups: commercial 
 
 Titles include data scientist, data analyst, analytics engineer, machine learning engineer, applied scientist, operations research specialist, experimentation analyst and increasingly AI engineer for teams building assistants over catalogue and policy data. Read the responsibilities: in retail, the same title spans very different work depending on which group it sits in.
 
-Understanding this structure is useful in interviews. Asking which group a role belongs to, who its internal customers are and how decisions are made shows that you know how retail organisations work — and helps you avoid joining a team whose remit does not match your interest.
+Understanding this structure is useful in interviews. Asking which group a role belongs to, who its internal customers are and how decisions are made shows that you know how retail organisations work - and helps you avoid joining a team whose remit does not match your interest.
 
 ## Pay and Progression
 
@@ -132,23 +132,23 @@ Retail generally pays somewhat below technology and finance for equivalent roles
 
 ## Entering the Sector
 
-- **From other forecasting domains** — energy, logistics, manufacturing — the transfer is direct; learn promotions and assortment structure.
+- **From other forecasting domains** - energy, logistics, manufacturing - the transfer is direct; learn promotions and assortment structure.
 - **From consumer tech**: experimentation and ranking skills transfer to marketplaces and digital teams.
 - **From economics or econometrics**: pricing and causal inference roles are a natural fit and often under-supplied.
 - **From within retail operations**: buyers, planners and store managers who learn analytics are extremely valuable, because they know where the numbers mislead.
 - **Graduates**: retail is one of the more accessible sectors for first data jobs, with many analyst roles that lead into modelling.
 
-A good entry project uses public retail-like data — open sales datasets, weather, holiday calendars — to forecast demand with promotions, evaluate over time and state an inventory decision rule with service levels.
+A good entry project uses public retail-like data - open sales datasets, weather, holiday calendars - to forecast demand with promotions, evaluate over time and state an inventory decision rule with service levels.
 
 ## A Final Word
 
-Retail rewards people who like measurable work and are comfortable being proved wrong quickly. The feedback loop is the sector's great advantage: within weeks you will know whether your model helped, and within months whether the business kept using it. That discipline — combined with the sheer breadth of problems, from millisecond ranking to annual assortment planning — makes retail one of the best places in Europe to build a broad, durable data career.
+Retail rewards people who like measurable work and are comfortable being proved wrong quickly. The feedback loop is the sector's great advantage: within weeks you will know whether your model helped, and within months whether the business kept using it. That discipline - combined with the sheer breadth of problems, from millisecond ranking to annual assortment planning - makes retail one of the best places in Europe to build a broad, durable data career.
 
 ## Store Operations and Workforce Analytics
 
 Physical retail adds a layer of problems that pure e-commerce never faces. Stores need staffing forecasts by hour, taking account of footfall patterns, promotions, weather and local events, while respecting labour agreements and employee preferences. Shelf availability differs from system stock, so teams build models that detect phantom inventory from sales patterns. Space and assortment decisions determine which products appear in which store format, and local demographics make national averages misleading.
 
-Computer vision has entered this space through shelf monitoring, queue detection and loss prevention, though European deployments are constrained by privacy law and works council agreements — cameras that analyse customers or employees raise GDPR questions and, under the EU AI Act, certain workplace uses are treated as high-risk. Teams that handle these considerations transparently, with employee representatives involved early, deploy successfully; those that do not usually stall after a pilot.
+Computer vision has entered this space through shelf monitoring, queue detection and loss prevention, though European deployments are constrained by privacy law and works council agreements - cameras that analyse customers or employees raise GDPR questions and, under the EU AI Act, certain workplace uses are treated as high-risk. Teams that handle these considerations transparently, with employee representatives involved early, deploy successfully; those that do not usually stall after a pilot.
 
 For data professionals, store operations offer some of the most satisfying work in retail: the constraints are concrete, the people using your output are immediately reachable, and a small improvement in staffing or availability shows up in both service quality and cost within weeks.
 
@@ -160,7 +160,7 @@ A data scientist at a European grocery chain was asked to improve store-level de
 
 Sitting with store managers, she discovered why. For most products, the existing forecast was good enough; the losses came from a few hundred items with short shelf life and volatile demand, where managers routinely overrode the system because they did not trust it. Improving the average did nothing for those items.
 
-She narrowed the project: probabilistic forecasts for the volatile subset, with explicit service-level trade-offs so that managers could see the cost of a stockout against the cost of waste, and an interface that showed why the forecast had changed. Adoption rose, waste fell measurably on those products, and the work was extended to other categories. The lesson she repeats to new joiners is that in retail, the value is usually concentrated in a small part of the assortment — and finding it requires talking to the people who currently override your model.
+She narrowed the project: probabilistic forecasts for the volatile subset, with explicit service-level trade-offs so that managers could see the cost of a stockout against the cost of waste, and an interface that showed why the forecast had changed. Adoption rose, waste fell measurably on those products, and the work was extended to other categories. The lesson she repeats to new joiners is that in retail, the value is usually concentrated in a small part of the assortment - and finding it requires talking to the people who currently override your model.
 
 ## Key Takeaways
 

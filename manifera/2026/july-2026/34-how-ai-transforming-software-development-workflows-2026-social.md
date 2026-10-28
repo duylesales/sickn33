@@ -19,7 +19,7 @@ Traditional team (10 people):
 AI-augmented team (same output, 7 people):
 → 3 senior, 3 mid, 1 junior
 
-Smaller but more senior. The senior engineers aren't typing more — they're reviewing more AI output and making more architectural decisions.
+Smaller but more senior. The senior engineers aren't typing more - they're reviewing more AI output and making more architectural decisions.
 
 **What AI still CANNOT do in 2026:**
 

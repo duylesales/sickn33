@@ -79,7 +79,7 @@ William werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 
 **Resultaat:** William elimineerde time-outfouten voor gebruikers en ondersteunde het genereren van PDF's tot 200 pagina's.
 
-**Kosten en tijdlijn:** € 1.750 (Edge Architecture-pakket) — productieklaar en binnen 6 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.750 (Edge Architecture-pakket) - productieklaar en binnen 6 werkdagen geïmplementeerd.
 
 ---
 

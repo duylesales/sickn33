@@ -45,7 +45,7 @@ Content Format: Regional Career Guide
 }
 </script>
 
-Gelderland is the largest province of the Netherlands by land area, stretching from the Veluwe forests to the river landscapes around Arnhem and Nijmegen. For students graduating in AI, data science or computer science, it is easy to assume that the interesting jobs are all in Amsterdam or the rest of the Randstad. That assumption is exactly what OnlyAIJobs was built to challenge: talented graduates often leave their region because they simply do not know the local employers doing serious AI work. AI jobs in Gelderland exist across food and agriculture, energy, health, semiconductors and public services — and many of them are a short bike or train ride from where students already live. This guide maps the province for graduates.
+Gelderland is the largest province of the Netherlands by land area, stretching from the Veluwe forests to the river landscapes around Arnhem and Nijmegen. For students graduating in AI, data science or computer science, it is easy to assume that the interesting jobs are all in Amsterdam or the rest of the Randstad. That assumption is exactly what OnlyAIJobs was built to challenge: talented graduates often leave their region because they simply do not know the local employers doing serious AI work. AI jobs in Gelderland exist across food and agriculture, energy, health, semiconductors and public services - and many of them are a short bike or train ride from where students already live. This guide maps the province for graduates.
 
 ## Why Look at AI Jobs in Gelderland
 
@@ -61,7 +61,7 @@ Gelderland is the largest province of the Netherlands by land area, stretching f
 
 ### Wageningen, Ede and the Foodvalley region
 
-Wageningen University & Research combines a university with applied research institutes. Its work on precision agriculture, plant and animal breeding, food quality, water and climate generates enormous amounts of data — from satellite and drone images to genomic data and sensor streams from greenhouses and barns. Around it, the Foodvalley region, which includes Ede, hosts food companies, agri-tech startups, research institutes and service providers. Data science and machine learning roles here involve computer vision for crops and livestock, yield prediction, food supply chain optimisation and analysis of consumer and nutrition data.
+Wageningen University & Research combines a university with applied research institutes. Its work on precision agriculture, plant and animal breeding, food quality, water and climate generates enormous amounts of data - from satellite and drone images to genomic data and sensor streams from greenhouses and barns. Around it, the Foodvalley region, which includes Ede, hosts food companies, agri-tech startups, research institutes and service providers. Data science and machine learning roles here involve computer vision for crops and livestock, yield prediction, food supply chain optimisation and analysis of consumer and nutrition data.
 
 ### Arnhem: energy and infrastructure
 
@@ -86,9 +86,9 @@ Apeldoorn hosts several public organisations with large data operations, includi
 | Computer vision engineer (junior) | Agri-tech startups, WUR spin-offs | Image models for crops, food, livestock |
 | Data analyst moving toward ML | SMEs, municipalities, cooperatives | Dashboards, forecasting, first models |
 
-Many regional employers advertise in Dutch. Search in both Dutch and English, and don't be put off by Dutch-language postings if the team itself works partly in English — ask.
+Many regional employers advertise in Dutch. Search in both Dutch and English, and don't be put off by Dutch-language postings if the team itself works partly in English - ask.
 
-## Why Graduates Leave — and Why They Don't Have To
+## Why Graduates Leave - and Why They Don't Have To
 
 Every year, many graduates from Wageningen, Nijmegen and Arnhem move to the Randstad for their first job. Some go because they want city life or a specific employer, which is a perfectly good reason. Many others go simply because the employers they know by name are there. Career fairs, online job boards and classmates' stories tend to highlight large, well-known companies, most of which have their main offices in Amsterdam, Utrecht, Rotterdam or The Hague.
 
@@ -102,7 +102,7 @@ OnlyAIJobs is a practical tool for AI jobs in Gelderland because its listings ar
 
 ## Building a Profile for Regional Employers
 
-Regional employers in Gelderland often look for slightly different qualities than large tech companies in Amsterdam. Many are domain-driven organisations — energy, food, health, government — where data science supports a core business rather than being the product itself. They value:
+Regional employers in Gelderland often look for slightly different qualities than large tech companies in Amsterdam. Many are domain-driven organisations - energy, food, health, government - where data science supports a core business rather than being the product itself. They value:
 
 - **Domain curiosity:** interest in how the grid works, how crops grow or how hospitals organise care. Mention relevant courses, thesis topics or projects.
 - **Communication:** the ability to explain results to engineers, agronomists, doctors or policy advisers who are not data specialists.
@@ -120,7 +120,7 @@ Traineeships are a popular route into the Dutch job market for graduates. Public
 
 Gelderland is large, and commuting patterns depend on where you live. Arnhem and Nijmegen are connected by frequent trains in about 15 to 20 minutes, making the two cities effectively one labour market. Ede-Wageningen station links the Foodvalley region to Arnhem and Utrecht, though Wageningen itself relies on bus connections to the station. Apeldoorn has direct trains to Amersfoort, Deventer and Zutphen. Cycling works well within cities and increasingly on fast bicycle routes between them, such as the RijnWaalpad between Arnhem and Nijmegen. Many employers reimburse travel costs.
 
-Because distances vary, always check the actual office location. A company listed as "Ede" may be near the station or on a business park, and the difference matters if you depend on public transport. Searching by distance from home — the core of OnlyAIJobs — shows these differences directly.
+Because distances vary, always check the actual office location. A company listed as "Ede" may be near the station or on a business park, and the difference matters if you depend on public transport. Searching by distance from home - the core of OnlyAIJobs - shows these differences directly.
 
 ## Life After the First Job
 
@@ -144,7 +144,7 @@ These projects share a common feature: they connect data science directly to phy
 
 ## Responsible AI in Regional Organisations
 
-Many Gelderland employers work in regulated or sensitive areas — health, energy infrastructure, public services. Graduates who understand GDPR, fairness and the EU AI Act's requirements for high-risk systems have an advantage, as these organisations must document and justify their use of algorithms carefully.
+Many Gelderland employers work in regulated or sensitive areas - health, energy infrastructure, public services. Graduates who understand GDPR, fairness and the EU AI Act's requirements for high-risk systems have an advantage, as these organisations must document and justify their use of algorithms carefully.
 
 ## A Simple Weekly Routine for Your Search
 
@@ -156,7 +156,7 @@ Check new AI vacancies within your commuting radius once or twice a week, save e
 
 A master's graduate in artificial intelligence from Radboud University assumed he would have to move to Amsterdam to find a machine learning role. His classmates were applying to the same large companies in the Randstad, and the competition was intense.
 
-Instead of searching by city, he searched AI and data vacancies by distance from his home in Nijmegen. He found a junior data scientist role at a grid operator in Arnhem, 20 minutes by train, working on forecasting congestion — a problem that interested him more than advertising or e-commerce. He also discovered an agri-tech startup near Wageningen using computer vision. He accepted the grid operator role, stayed in his affordable flat and joined a team with direct societal impact. A year later, he says his biggest surprise was how many serious AI employers had been within half an hour of his home all along.
+Instead of searching by city, he searched AI and data vacancies by distance from his home in Nijmegen. He found a junior data scientist role at a grid operator in Arnhem, 20 minutes by train, working on forecasting congestion - a problem that interested him more than advertising or e-commerce. He also discovered an agri-tech startup near Wageningen using computer vision. He accepted the grid operator role, stayed in his affordable flat and joined a team with direct societal impact. A year later, he says his biggest surprise was how many serious AI employers had been within half an hour of his home all along.
 
 ## Key Takeaways
 

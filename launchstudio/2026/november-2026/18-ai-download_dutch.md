@@ -35,7 +35,7 @@ De meest verkeerd begrepen knop in moderne software-ontwikkeling is *"Download C
 
 Voor een niet-technische oprichter voelt dit als de finish. U heeft de broncode immers binnen. De AI-download is voltooid. Nu hoeft u het alleen nog maar op het internet te zetten, toch?
 
-Helaas niet. Dat ZIP-bestand is geen draaiend bedrijf; het is een architectonische blauwdruk. En proberen een bedrijf te runnen vanaf een blauwdruk is de reden waarom duizenden AI-oprichters vlak voor de eindstreep stranden. De code die u downloadt is fundamenteel incompleet — niet omdat de AI gefaald heeft, maar omdat een ZIP-bestand simpelweg geen cloud-infrastructuur kan bevatten.
+Helaas niet. Dat ZIP-bestand is geen draaiend bedrijf; het is een architectonische blauwdruk. En proberen een bedrijf te runnen vanaf een blauwdruk is de reden waarom duizenden AI-oprichters vlak voor de eindstreep stranden. De code die u downloadt is fundamenteel incompleet - niet omdat de AI gefaald heeft, maar omdat een ZIP-bestand simpelweg geen cloud-infrastructuur kan bevatten.
 
 ## Wat Er Daadwerkelijk In Uw AI-Download Zit
 
@@ -52,7 +52,7 @@ De code bevat wellicht aanroepen naar Supabase of Firebase, maar de database zel
 Uw gedownloade code bevat een fraai inlogvenster. Het bevat echter niet de beveiligde server die wachtwoorden hasht, verificatiemails verstuurt en veilige sessie-cookies beheert.
 
 **3. Betalingsinfrastructuur**
-Uw prijspagina ziet er fantastisch uit. Maar de webhooks die luisteren naar betalingsbevestigingen van Stripe of Mollie en gebruikersabonnementen activeren, vereisen een publiek bereikbare backend-server — ze kunnen niet draaien vanuit een lokale map.
+Uw prijspagina ziet er fantastisch uit. Maar de webhooks die luisteren naar betalingsbevestigingen van Stripe of Mollie en gebruikersabonnementen activeren, vereisen een publiek bereikbare backend-server - ze kunnen niet draaien vanuit een lokale map.
 
 **4. Veilige Omgevingsvariabelen**
 Uw download bevat doorgaans lege placeholder-bestanden voor API-sleutels, of erger nog: hardcoded testsleutels die direct lekken zodra u de code openbaar maakt.
@@ -107,16 +107,16 @@ Thomas klikte op de knop *Download Code*. Hij pakte de bestanden uit op de lapto
 
 Toen ontdekte hij het probleem: leden konden de app thuis niet openen op hun telefoon. De app bestond uitsluitend op zijn lokale wifinetwerk. En wanneer iemand een proefbetaling wilde doen, crashte de Stripe-koppeling omdat de webhooks geen openbare server konden bereiken.
 
-Een lid dat in de IT werkte legde uit dat Thomas cloudhosting, een echte database en een backend nodig had — en vroeg €8.000 om dit in te richten.
+Een lid dat in de IT werkte legde uit dat Thomas cloudhosting, een echte database en een backend nodig had - en vroeg €8.000 om dit in te richten.
 
 Thomas koos voor LaunchStudio. Tijdens een 15-minuten call beoordeelde het Manifera-team zijn Bolt-code. De frontend was uitstekend. LaunchStudio nam zijn downloadbestand, richtte een beveiligde Supabase-database in voor de ledenadministratie, configureerde de Stripe-webhooks op een Vercel-productieserver en koppelde alles aan een eigen `.nl`-domein.
 
 **Resultaat:** De CrossUtrecht-app lanceerde binnen 8 werkdagen voor zijn 140 leden. Het systeem incasseert maandelijks vlekkeloos €12.500 aan automatische contributies en sporters reserveren moeiteloos via hun smartphone.
 
 > *"Ik dacht dat met het downloaden van de code het werk erop zat. Ik had geen flauw benul van servers en deployment. LaunchStudio pakte mijn ZIP-bestand aan en toverde het binnen een week om tot een echt draaiend bedrijfssysteem."*
-> — **Thomas de Vries, Oprichter, CrossUtrecht (Utrecht)**
+> - **Thomas de Vries, Oprichter, CrossUtrecht (Utrecht)**
 
-**Kosten & Doorlooptijd:** €2.600 (Launch & Grow Pakket) — productie-klaar en live binnen 8 werkdagen.
+**Kosten & Doorlooptijd:** €2.600 (Launch & Grow Pakket) - productie-klaar en live binnen 8 werkdagen.
 
 ---
 

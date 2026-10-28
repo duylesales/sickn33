@@ -119,11 +119,11 @@ LaunchStudio richt dit in als integraal onderdeel van de productiegereedheid, om
 
 ### Een verwijderde medewerker en een loonstrook die mee verdween
 
-Wendy Bosman bouwde met Lovable het platform Personeelsdossier: digitaal personeelsbeheer voor het mkb, in gebruik bij 29 bedrijven in de regio Hengelo en Enschede — arbeidsovereenkomsten, verzuimregistraties, beoordelingsverslagen en historische loonstroken.
+Wendy Bosman bouwde met Lovable het platform Personeelsdossier: digitaal personeelsbeheer voor het mkb, in gebruik bij 29 bedrijven in de regio Hengelo en Enschede - arbeidsovereenkomsten, verzuimregistraties, beoordelingsverslagen en historische loonstroken.
 
 Een 'verwijder'-actie voerde een directe SQL `DELETE` uit op het werknemersrecord. Er was geen prullenbak, geen archieffunctie en geen scheiding tussen operationele personeelsdata en gekoppelde salarisdocumenten.
 
-Binnen één maand ontstonden twee ernstige incidenten. Een salarisadministrateur bij een klant verwijderde het dossier van een uitdienstgetreden medewerker om de lijst op te schonen, en wiste daarmee onbedoeld zeven jaar aan historische loonstroken — documenten die het bedrijf wettelijk verplicht was te bewaren en nergens anders meer bezat na een overstap van salarissoftware.
+Binnen één maand ontstonden twee ernstige incidenten. Een salarisadministrateur bij een klant verwijderde het dossier van een uitdienstgetreden medewerker om de lijst op te schonen, en wiste daarmee onbedoeld zeven jaar aan historische loonstroken - documenten die het bedrijf wettelijk verplicht was te bewaren en nergens anders meer bezat na een overstap van salarissoftware.
 
 Vervolgens diende een voormalig werknemer bij een andere klant een officieel AVG-verwijderverzoek in. Wendy had geen technische mogelijkheid om het dossier gedeeltelijk te schonen: alle data over deze persoon zat in één tabel, inclusief de salarisdocumenten die haar klant wettelijk moest behouden. Haar opties waren het verzoek onrechtmatig weigeren of de wettelijke administratie van haar klant vernietigen.
 
@@ -134,9 +134,9 @@ De gewiste loonstroken van zeven jaar konden gelukkig grotendeels worden herstel
 **Resultaat:** Het AVG-verzoek werd vlekkeloos afgehandeld tot tevredenheid van zowel de burger als de werkgever (persoonsgegevens gewist, verplichte loongegevens behouden onder de wettelijke uitzondering), en het formele bewaarbeleid wordt tegenwoordig standaard meegeleverd bij de onboarding van elke nieuwe klant.
 
 > *"Eén muisklik wiste een medewerker én zeven jaar aan loonstroken die mijn klant wettelijk verplicht was te bewaren. Diezelfde week vroeg iemand om gegevenswissing, en ik kon dat niet uitvoeren zonder de administratie van een ander te slopen."*
-> — **Wendy Bosman, Oprichter, Personeelsdossier (Hengelo)**
+> - **Wendy Bosman, Oprichter, Personeelsdossier (Hengelo)**
 
-**Kosten & Doorlooptijd:** € 5.100 (centrale soft delete met herstelvenster en policy-filtering, archivering, ontkoppeling van bewaarplichtige documenten, complete AVG-verwijderoperatie, anonimisering, bewaarbeleid, compliance-logging) — opgeleverd in 11 werkdagen.
+**Kosten & Doorlooptijd:** € 5.100 (centrale soft delete met herstelvenster en policy-filtering, archivering, ontkoppeling van bewaarplichtige documenten, complete AVG-verwijderoperatie, anonimisering, bewaarbeleid, compliance-logging) - opgeleverd in 11 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -146,7 +146,7 @@ Vrijwel nooit. In de meeste gevallen bedoelt de gebruiker *"haal dit uit mijn ac
 
 ### Hoe voorkom ik dat verwijderde records per ongeluk opduiken in rapportages?
 
-Door de uitsluiting van soft-deleted data op één centrale plek af te dwingen — in je Supabase Row-Level Security policies of via centrale database-views — in plaats van te hopen dat elke losse query in de applicatiecode `WHERE deleted_at IS NULL` onthoudt.
+Door de uitsluiting van soft-deleted data op één centrale plek af te dwingen - in je Supabase Row-Level Security policies of via centrale database-views - in plaats van te hopen dat elke losse query in de applicatiecode `WHERE deleted_at IS NULL` onthoudt.
 
 ### Wat gebeurt er als de fiscale bewaarplicht botst met een AVG-verwijderverzoek?
 

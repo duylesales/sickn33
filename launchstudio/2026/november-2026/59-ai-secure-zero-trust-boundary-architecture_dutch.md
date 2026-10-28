@@ -104,9 +104,9 @@ Het Manifera-team voerde een 18-daagse "Zero-Trust Hardening Sprint" uit:
 **Resultaat:** Toen de tester de aanval herhaalde, detecteerde de firewall de manipulatie direct en verbrak de verbinding. En zelfs als de firewall werd omzeild, weigerde de database de gegevens fysiek omdat het JWT-token van de tester geen rechten had voor andere rekeningen. Het platform slaagde voor de heraudit en werd veilig heropend.
 
 > *"We maakten de klassieke fout door de AI te vertrouwen op het volgen van instructies. LaunchStudio leerde ons dat je de AI moet behandelen als een potentiële aanvaller. Zij bouwden de fysieke databasebeperkingen en middleware-firewalls die ons platform wiskundig veilig maakten. Zij hebben onze reputatie gered."*
-> — **Julian Bauer, CTO, WealthSync (Zürich)**
+> - **Julian Bauer, CTO, WealthSync (Zürich)**
 
-**Kosten & Doorlooptijd:** €19.500 (Launch & Grow Pakket met Zero-Trust Security & Penetratietest Add-on) — productie-klaar en live binnen 18 werkdagen.
+**Kosten & Doorlooptijd:** €19.500 (Launch & Grow Pakket met Zero-Trust Security & Penetratietest Add-on) - productie-klaar en live binnen 18 werkdagen.
 
 ---
 

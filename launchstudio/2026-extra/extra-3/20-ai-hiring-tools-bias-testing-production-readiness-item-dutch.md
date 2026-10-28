@@ -55,7 +55,7 @@ Biastesten delen dezelfde kernstructuur als het vijandige testen dat in bredere 
 
 [LaunchStudio](https://launchstudio.eu/nl/) behandelt biastesten als een standaardoverweging voor AI-tools voor werving en kandidaatscreening in het bijzonder, waarbij dezelfde gestructureerde, vijandige testdiscipline wordt toegepast die in elke andere categorie van productiegereedheid wordt gebruikt, ondersteund door Manifera's bredere toewijding aan verantwoordelijke AI-praktijken in haar engineering-opdrachten.
 
-[Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit naar boven zou brengen](https://launchstudio.eu/nl/#calculator) — een functioneel nauwkeurige tool en een eerlijke tool zijn verschillende, beide noodzakelijke claims.
+[Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit naar boven zou brengen](https://launchstudio.eu/nl/#calculator) - een functioneel nauwkeurige tool en een eerlijke tool zijn verschillende, beide noodzakelijke claims.
 
 ## Een zelfdiagnose: Vijf vragen voordat u het eerlijke karakter van een wervingstool vertrouwt
 
@@ -83,10 +83,10 @@ Toen een potentiële enterprise-klant specifiek om bewijs van biastesten vroeg a
 
 **Resultaat:** LaunchStudio hielp Koen om de specifieke factoren te identificeren en aan te passen die het patroon dreven, en voerde vervolgens dezelfde gestructureerde test opnieuw uit om te bevestigen dat de aanpassing de kloof betekenisvol had gedicht. Dit gaf Koen concreet, getest bewijs om aan de enterprise-klant te overleggen in plaats van een ongeteste aanname van eerlijkheid.
 
-> *"Ik had KandidaatMatch voortdurend getest tegen echte cv's en het leek altijd goed te werken. Het was nooit bij me opgekomen om specifiek een test te construeren die controleerde of identieke kwalificaties anders werden gerangschikt op basis van dingen die niets te maken hadden met de functie-eisen — totdat een klant er specifiek om vroeg, en de test exact dat vond."*
-> — **Koen Willemsen, Oprichter, KandidaatMatch (Eindhoven)**
+> *"Ik had KandidaatMatch voortdurend getest tegen echte cv's en het leek altijd goed te werken. Het was nooit bij me opgekomen om specifiek een test te construeren die controleerde of identieke kwalificaties anders werden gerangschikt op basis van dingen die niets te maken hadden met de functie-eisen - totdat een klant er specifiek om vroeg, en de test exact dat vond."*
+> - **Koen Willemsen, Oprichter, KandidaatMatch (Eindhoven)**
 
-**Kosten en tijdlijn:** € 2.100 (biastesten, herstel en herverificatie) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (biastesten, herstel en herverificatie) - voltooid in 8 werkdagen.
 
 ---
 

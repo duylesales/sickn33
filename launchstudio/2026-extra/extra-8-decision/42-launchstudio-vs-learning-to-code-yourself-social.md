@@ -1,4 +1,4 @@
-🧮 She could have learned webhook security herself — she'd done it before. The real question wasn't "can I," it was "what do I stop doing this week if I do." 💭
+🧮 She could have learned webhook security herself - she'd done it before. The real question wasn't "can I," it was "what do I stop doing this week if I do." 💭
 
 Technical founders weighing LaunchStudio vs. learning to code it yourself usually frame it as a capability question. It isn't. It's a time-cost question, and it has a real answer. 🧠
 

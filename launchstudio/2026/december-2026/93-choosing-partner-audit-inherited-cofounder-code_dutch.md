@@ -113,7 +113,7 @@ Het reorganiseren van een geërfde codebase markeert het begin van een nieuwe fa
 
 Met de deskundige ondersteuning van LaunchStudio bent u er 100 procent zeker van dat uw intellectueel eigendom veiliggesteld is en dat uw codebase voldoet aan de hoogste enterprise-normen.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ## Echt voorbeeld
 
@@ -127,7 +127,7 @@ LaunchStudio migreerde alle accounts, roteerde alle geheimen, implementeerde Pos
 
 **Resultaat:** Sofia kreeg de volledige operationele controle terug, behield alle studio-klanten en onboardde binnen een maand 12 nieuwe studio's met totale gemoedsrust.
 
-**Investering & Doorlooptijd:** € 3.400 (Co-founder Codebase Audit & Hardening) — 8 werkdagen.
+**Investering & Doorlooptijd:** € 3.400 (Co-founder Codebase Audit & Hardening) - 8 werkdagen.
 
 ---
 

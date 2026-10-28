@@ -1,4 +1,4 @@
-🚨 The no-code backend that was perfect at 10 customers became a real liability at 200 — and a prospective retail chain's technical evaluator noticed before he did. 😳
+🚨 The no-code backend that was perfect at 10 customers became a real liability at 200 - and a prospective retail chain's technical evaluator noticed before he did. 😳
 
 He'd delayed this for months, convinced fixing it meant rebuilding everything and freezing growth. Here's what actually happened: 🧠
 

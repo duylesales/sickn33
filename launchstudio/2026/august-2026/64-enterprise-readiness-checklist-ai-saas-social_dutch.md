@@ -1,6 +1,6 @@
-🏢 Dev bouwde een workflow-automatisering-SaaS met **Cursor** — waarna een Vodafone-achtige enterprise-prospect een security-vragenlijst terugstuurde die zijn prototype niet kon beantwoorden. 🧠
+🏢 Dev bouwde een workflow-automatisering-SaaS met **Cursor** - waarna een Vodafone-achtige enterprise-prospect een security-vragenlijst terugstuurde die zijn prototype niet kon beantwoorden. 🧠
 
-Als uw door AI gebouwde app geen SSO, gedocumenteerde tenant-isolatie, audit-logging en een publieke uptime-SLA heeft, wijst enterprise-inkoop u niet af — ze worden gewoon stil.
+Als uw door AI gebouwde app geen SSO, gedocumenteerde tenant-isolatie, audit-logging en een publieke uptime-SLA heeft, wijst enterprise-inkoop u niet af - ze worden gewoon stil.
 
 ❌ E-mail/wachtwoord-login in plaats van de SAML-gebaseerde SSO die het IT-beleid van de enterprise vereiste
 ❌ Row Level Security "aanwezig" maar nooit gedocumenteerd of bewezen op tenant-niveau
@@ -12,7 +12,7 @@ Als uw door AI gebouwde app geen SSO, gedocumenteerde tenant-isolatie, audit-log
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Dev's applicatie behaalde productie-gereedheid: Dev doorstond de technische beoordeling van de enterprise en ging rechtstreeks van pilotgesprek naar contractonderhandeling. (€5.800 (Enterprise Hardening Pakket) — 12 werkdagen.). 🚀
+Dev's applicatie behaalde productie-gereedheid: Dev doorstond de technische beoordeling van de enterprise en ging rechtstreeks van pilotgesprek naar contractonderhandeling. (€5.800 (Enterprise Hardening Pakket) - 12 werkdagen.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-readiness-checklist-ai-saas
 

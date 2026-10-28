@@ -1,4 +1,4 @@
-🔥 Mark built a prototype using **Lovable** — mark, an operations manager at a regional logistics company, struggled with tracking freelance delivery drivers across multiple spreadsheets, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Mark built a prototype using **Lovable** - mark, an operations manager at a regional logistics company, struggled with tracking freelance delivery drivers across multiple spreadsheets, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mark's application achieved production readiness: Mark launched his logistics SaaS to his first paying customers just two weeks later. Lovable helped me build the car, but LaunchStudio built the engine and the brakes so I could safely drive it on the highway. (€1,800 (Scale Package) — production-ready and deployed in 8 business days.). 🚀
+Mark's application achieved production readiness: Mark launched his logistics SaaS to his first paying customers just two weeks later. Lovable helped me build the car, but LaunchStudio built the engine and the brakes so I could safely drive it on the highway. (€1,800 (Scale Package) - production-ready and deployed in 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/build-saas-mvp-lovable-one-week
 

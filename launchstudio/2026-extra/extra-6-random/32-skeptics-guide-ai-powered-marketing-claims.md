@@ -28,14 +28,14 @@ I want to make the case that skepticism here isn't cynicism. It's just reading c
 
 "AI-powered" is an adjective doing a lot of work. The question that actually matters is the noun it's modifying. "AI-powered security scanning" could mean a large language model reasoning about your authentication logic and flagging a broken authorization check. It could also mean a static analysis tool that's existed since 2015, rebranded, running the same regex-based pattern matching it always did, with an LLM bolted on to write the summary paragraph at the end.
 
-Both of those are technically "AI-powered." Only one of them is actually looking for the kind of vulnerability that gets exploited. The marketing page will not tell you which one you're getting. The product will, eventually — usually at the worst possible time.
+Both of those are technically "AI-powered." Only one of them is actually looking for the kind of vulnerability that gets exploited. The marketing page will not tell you which one you're getting. The product will, eventually - usually at the worst possible time.
 
 ## Questions that separate substance from seasoning
 
 A skeptical buyer asks questions that a marketing page can't answer with more adjectives:
 
 - **What specific class of vulnerability does this catch that a standard linter wouldn't?** If the answer is vague ("a wide range of security issues"), that's a tell.
-- **Does it understand your application's logic, or just pattern-match against known signatures?** Pattern matching against known CVEs is useful and fine — it's just not the same claim as "understands your code."
+- **Does it understand your application's logic, or just pattern-match against known signatures?** Pattern matching against known CVEs is useful and fine - it's just not the same claim as "understands your code."
 - **What does a real finding look like?** Ask for an actual example output, not a screenshot of a dashboard with green checkmarks.
 - **Who or what reviews the finding before it reaches you?** A tool that flags 200 "issues," most of which are noise, is not the same as one that surfaces the three that matter.
 - **What happens when it's wrong?** Every automated tool has false positives and false negatives. A vendor who can't discuss their tool's failure modes hasn't thought hard about their own product.
@@ -44,44 +44,44 @@ None of these questions require you to be a security engineer. They just require
 
 ## Why this matters more in the AI-tooling era specifically
 
-This isn't a new problem — "AI-powered" is just the current version of "next-generation" and "enterprise-grade" before it. But it lands differently right now because so many founders building with Lovable, Bolt, or Cursor are, by definition, less able to independently verify a security claim by reading the underlying code themselves. That's not a criticism — it's the entire premise of these tools. But it does mean the marketing claim carries more unchecked weight than it would for a founder with a security background who could just look under the hood.
+This isn't a new problem - "AI-powered" is just the current version of "next-generation" and "enterprise-grade" before it. But it lands differently right now because so many founders building with Lovable, Bolt, or Cursor are, by definition, less able to independently verify a security claim by reading the underlying code themselves. That's not a criticism - it's the entire premise of these tools. But it does mean the marketing claim carries more unchecked weight than it would for a founder with a security background who could just look under the hood.
 
 That gap between "can't easily verify" and "must trust the marketing" is exactly where thin tools thrive. It's worth actively closing that gap by asking vendors the direct questions above, rather than letting a well-designed landing page do the deciding for you.
 
-Manifera's engineers — 120+ of them, with 11+ years building production systems for clients like Vodafone and TNO — spend a fair amount of time doing exactly this kind of evaluation on behalf of founders, distinguishing tools with real analysis capability from tools with real marketing budgets. Our Singapore hub works with Southeast Asia-based founders on this specific due diligence before any production launch. If you want a second opinion on a security vendor you're evaluating, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you honestly what we think the tool actually does. For a broader look at how production-grade engineering teams approach this, Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the kind of security rigor applied across 160+ delivered projects.
+Manifera's engineers - 120+ of them, with 11+ years building production systems for clients like Vodafone and TNO - spend a fair amount of time doing exactly this kind of evaluation on behalf of founders, distinguishing tools with real analysis capability from tools with real marketing budgets. Our Singapore hub works with Southeast Asia-based founders on this specific due diligence before any production launch. If you want a second opinion on a security vendor you're evaluating, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you honestly what we think the tool actually does. For a broader look at how production-grade engineering teams approach this, Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the kind of security rigor applied across 160+ delivered projects.
 
 ## Five More Phrases That Deserve the Same Scrutiny
 
-"AI-powered" isn't the only adjective doing more marketing work than technical work in this space — it's just the most current one. A handful of other phrases have gone through the exact same drift, from meaning something specific to meaning "trust us," and they're worth the same treatment: asking what the noun actually refers to, rather than accepting the adjective as a substitute for an answer.
+"AI-powered" isn't the only adjective doing more marketing work than technical work in this space - it's just the most current one. A handful of other phrases have gone through the exact same drift, from meaning something specific to meaning "trust us," and they're worth the same treatment: asking what the noun actually refers to, rather than accepting the adjective as a substitute for an answer.
 
-**"Enterprise-grade."** This phrase implies a specific level of rigor — audited processes, defined SLAs, a track record with organizations that have their own procurement standards. It's also frequently applied to tools with none of that behind them. The useful question isn't "is it enterprise-grade," it's "which enterprises, doing what, for how long" — a question with a checkable answer, unlike the adjective alone.
+**"Enterprise-grade."** This phrase implies a specific level of rigor - audited processes, defined SLAs, a track record with organizations that have their own procurement standards. It's also frequently applied to tools with none of that behind them. The useful question isn't "is it enterprise-grade," it's "which enterprises, doing what, for how long" - a question with a checkable answer, unlike the adjective alone.
 
-**"Bank-level" or "military-grade" encryption.** These phrases describe a level of encryption strength that, in most cases, simply refers to standard, widely available encryption algorithms every reputable service already uses by default. The phrase implies something exceptional is happening; in practice it's frequently describing the baseline. The more useful question is what's actually encrypted, at rest or only in transit, and who holds the keys — details the adjective conveniently skips.
+**"Bank-level" or "military-grade" encryption.** These phrases describe a level of encryption strength that, in most cases, simply refers to standard, widely available encryption algorithms every reputable service already uses by default. The phrase implies something exceptional is happening; in practice it's frequently describing the baseline. The more useful question is what's actually encrypted, at rest or only in transit, and who holds the keys - details the adjective conveniently skips.
 
 **"Fully automated" review or monitoring.** Automation is a genuine capability, but "fully automated" often obscures whether a human ever looks at what the automation flags before it reaches you, or whether the tool's output goes straight to a dashboard nobody's reviewing closely. Ask specifically what happens between a finding being generated and a person acting on it.
 
-**"Compliant" without naming a specific standard.** Compliance is close to meaningless as a standalone adjective — compliant with what, verified by whom, as of which date? A tool that's vague about which specific framework it's compliant with, or unable to produce documentation of an actual audit, is using the word as reassurance rather than as a factual claim.
+**"Compliant" without naming a specific standard.** Compliance is close to meaningless as a standalone adjective - compliant with what, verified by whom, as of which date? A tool that's vague about which specific framework it's compliant with, or unable to produce documentation of an actual audit, is using the word as reassurance rather than as a factual claim.
 
-**"Continuous" monitoring or scanning.** This one sounds like a frequency claim but is sometimes really a marketing description of a tool that runs on a fixed schedule far less frequent than "continuous" implies — once a day, or even once a week. Ask for the actual interval, in specific units, rather than accepting a word chosen for its reassuring rhythm.
+**"Continuous" monitoring or scanning.** This one sounds like a frequency claim but is sometimes really a marketing description of a tool that runs on a fixed schedule far less frequent than "continuous" implies - once a day, or even once a week. Ask for the actual interval, in specific units, rather than accepting a word chosen for its reassuring rhythm.
 
-The pattern across all five is identical to the one covered above: an adjective standing in for a specific, checkable fact, deployed precisely because most buyers won't ask the follow-up question. None of these phrases are inherently dishonest on their own — a tool genuinely can be enterprise-grade, genuinely compliant, genuinely continuous. The point isn't to assume every vendor is overselling. It's to make the vendor answer the specific version of the claim before you decide how much weight to give the general one.
+The pattern across all five is identical to the one covered above: an adjective standing in for a specific, checkable fact, deployed precisely because most buyers won't ask the follow-up question. None of these phrases are inherently dishonest on their own - a tool genuinely can be enterprise-grade, genuinely compliant, genuinely continuous. The point isn't to assume every vendor is overselling. It's to make the vendor answer the specific version of the claim before you decide how much weight to give the general one.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The linter wearing a security badge
 
-Milo Post, a founder in Purmerend, built VeiligPunt — a safety incident reporting tool — using Bolt. Because VeiligPunt handled sensitive incident reports, Milo specifically went looking for a vendor that marketed "AI-powered security" capability, reasoning that a tool explicitly built around AI-driven security analysis would catch more than he could on his own. The landing page language was confident: automated vulnerability detection, intelligent code review, continuous security monitoring.
+Milo Post, a founder in Purmerend, built VeiligPunt - a safety incident reporting tool - using Bolt. Because VeiligPunt handled sensitive incident reports, Milo specifically went looking for a vendor that marketed "AI-powered security" capability, reasoning that a tool explicitly built around AI-driven security analysis would catch more than he could on his own. The landing page language was confident: automated vulnerability detection, intelligent code review, continuous security monitoring.
 
-When Milo actually integrated the tool and looked closely at what it flagged, the picture didn't match the pitch. It caught unused variables, inconsistent naming, and a handful of style violations — the output of a fairly standard code linter, with no evidence it was reasoning about authentication flows, data exposure, or authorization logic at all. The "AI" in the marketing appeared to be limited to an LLM-generated summary sentence appended to otherwise conventional lint output. Nothing it flagged would have caught the kind of finding that actually mattered for a tool handling incident reports tied to real people.
+When Milo actually integrated the tool and looked closely at what it flagged, the picture didn't match the pitch. It caught unused variables, inconsistent naming, and a handful of style violations - the output of a fairly standard code linter, with no evidence it was reasoning about authentication flows, data exposure, or authorization logic at all. The "AI" in the marketing appeared to be limited to an LLM-generated summary sentence appended to otherwise conventional lint output. Nothing it flagged would have caught the kind of finding that actually mattered for a tool handling incident reports tied to real people.
 
-Milo brought VeiligPunt to LaunchStudio for an actual production-readiness review. Engineers found that the incident report submission endpoint had no rate limiting and that report attachments were stored with predictable, guessable URLs — neither of which the "AI-powered" tool had flagged, because neither is the kind of thing a linter is built to see.
+Milo brought VeiligPunt to LaunchStudio for an actual production-readiness review. Engineers found that the incident report submission endpoint had no rate limiting and that report attachments were stored with predictable, guessable URLs - neither of which the "AI-powered" tool had flagged, because neither is the kind of thing a linter is built to see.
 
 **Result:** Milo replaced the linter-dressed-as-security-tool with a genuine review process and closed both gaps before VeiligPunt's public launch.
 
 > *"I paid for 'AI-powered security' and got a very well-marketed linter. What I actually needed was someone who could read what my app does and tell me where it breaks."*
-> — **Milo Post, Founder, VeiligPunt (Purmerend)**
+> - **Milo Post, Founder, VeiligPunt (Purmerend)**
 
-**Cost & Timeline:** €950 (security review, rate limiting fix, attachment access control) — completed in 6 business days.
+**Cost & Timeline:** €950 (security review, rate limiting fix, attachment access control) - completed in 6 business days.
 
 ---
 
@@ -97,7 +97,7 @@ It's not fraud, but it is marketing doing more work than the product. The distin
 
 ### Does Manifera's team evaluate third-party security tools, or only build custom solutions?
 
-Both — Manifera's engineers regularly assess whether a founder's existing tooling is doing real work before recommending whether to keep it, replace it, or supplement it with a manual review.
+Both - Manifera's engineers regularly assess whether a founder's existing tooling is doing real work before recommending whether to keep it, replace it, or supplement it with a manual review.
 
 ### Why does this matter more for founders using Lovable, Bolt, or Cursor specifically?
 

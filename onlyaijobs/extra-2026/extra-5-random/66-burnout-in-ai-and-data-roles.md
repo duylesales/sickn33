@@ -143,11 +143,11 @@ Across all stages, the common thread is that the person carrying the risk is oft
 
 If you are already past the early warning stage, several things are worth knowing.
 
-Recovery takes longer than people expect — often months rather than weeks — and it is not achieved by a long weekend. In much of Europe, sick leave for exhaustion is recognised and supported, and taking it early shortens the total absence considerably compared with continuing until you cannot work at all.
+Recovery takes longer than people expect - often months rather than weeks - and it is not achieved by a long weekend. In much of Europe, sick leave for exhaustion is recognised and supported, and taking it early shortens the total absence considerably compared with continuing until you cannot work at all.
 
 Talk to your doctor or occupational health service rather than self-diagnosing. They see this frequently and can advise on both treatment and the practicalities of leave and return.
 
-On whether to leave: separate the causes. If the problem is that your employer does not deploy anything, does not fix foundations, or does not listen, and you have raised it more than once without change, leaving is a rational response rather than a failure of resilience. If the problem is how you work — unbounded tasks, inability to stop, comparison to others — it will follow you, and changing jobs delays rather than resolves it.
+On whether to leave: separate the causes. If the problem is that your employer does not deploy anything, does not fix foundations, or does not listen, and you have raised it more than once without change, leaving is a rational response rather than a failure of resilience. If the problem is how you work - unbounded tasks, inability to stop, comparison to others - it will follow you, and changing jobs delays rather than resolves it.
 
 A useful test before resigning: describe the specific change that would make you stay. If your employer could make it and will not, leave. If no employer could make it, the work needs to change rather than the workplace.
 
@@ -175,7 +175,7 @@ The answers are diagnostic, and the willingness to answer candidly is itself inf
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Browsing is free and requires no account, vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, and no employer can pay for a higher position in the results.
 
-Two details matter when working conditions are part of what you are optimising. The distance from your home is shown, which makes the daily reality of a commute visible before you apply. And vacancy text often reveals team maturity — mentions of production systems, monitoring and ownership suggest an environment where work reaches users, which is the factor most closely linked to whether engineers in this field stay well.
+Two details matter when working conditions are part of what you are optimising. The distance from your home is shown, which makes the daily reality of a commute visible before you apply. And vacancy text often reveals team maturity - mentions of production systems, monitoring and ownership suggest an environment where work reaches users, which is the factor most closely linked to whether engineers in this field stay well.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -183,7 +183,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 ### The engineer who counted the shelved projects
 
-A senior data scientist at a European retailer found herself unable to start work in the mornings. She was not overworked by hours — her employer was scrupulous about working time — and she could not explain the feeling.
+A senior data scientist at a European retailer found herself unable to start work in the mornings. She was not overworked by hours - her employer was scrupulous about working time - and she could not explain the feeling.
 
 During a conversation with a former colleague, she listed what she had built in three years: a pricing model, a demand forecast rebuild, a customer segmentation, a supplier risk analysis and a recommendation prototype. Of the five, one was running. Three had been completed, presented, praised and never deployed. One had been cancelled mid-project.
 

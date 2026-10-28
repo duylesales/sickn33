@@ -26,9 +26,9 @@ You spent three weeks writing a 47-page requirements document. You sent it to yo
 
 There are three fundamental mistakes:
 
-**Mistake 1: Writing a novel instead of a blueprint.** A 50-page Word document with paragraphs of prose is not a requirements document — it is a liability. Developers need structured, scannable information. Prose buries requirements inside narrative.
+**Mistake 1: Writing a novel instead of a blueprint.** A 50-page Word document with paragraphs of prose is not a requirements document - it is a liability. Developers need structured, scannable information. Prose buries requirements inside narrative.
 
-**Mistake 2: Describing solutions instead of problems.** "The system shall have a blue button that opens a modal with a dropdown containing..." — this is design, not requirements. Requirements describe WHAT the user needs to accomplish. Design describes HOW.
+**Mistake 2: Describing solutions instead of problems.** "The system shall have a blue button that opens a modal with a dropdown containing..." - this is design, not requirements. Requirements describe WHAT the user needs to accomplish. Design describes HOW.
 
 **Mistake 3: Assuming shared context.** You have spent six months thinking about this product. Your developers have spent six minutes reading your document. Every assumption you fail to document becomes a surprise in week four of development.
 
@@ -36,7 +36,7 @@ As Martin Fowler warns: *"One of the biggest problems with software specificatio
 
 ## The Requirements Template That Actually Works
 
-Use this structure — it fits on a single page per feature and developers will read every word:
+Use this structure - it fits on a single page per feature and developers will read every word:
 
 ### Section 1: User Story (3 sentences max)
 
@@ -54,7 +54,7 @@ This is the contract between you and the development team. If these criteria pas
 
 **Example:**
 - [ ] Given a valid barcode, when the user scans it, then the inventory count increments by the shipment quantity within 2 seconds
-- [ ] Given an unrecognised barcode, when the user scans it, then the system displays "Unknown barcode — add new item?" with an option to manually enter details
+- [ ] Given an unrecognised barcode, when the user scans it, then the system displays "Unknown barcode - add new item?" with an option to manually enter details
 - [ ] Given no internet connection, when the user scans a barcode, then the scan is queued locally and synced when connectivity restores
 
 ### Section 3: Out of Scope (Explicitly state what you are NOT building)
@@ -72,11 +72,11 @@ Only include constraints that the business dictates. Do NOT specify technology c
 
 **Valid constraints:** "Must comply with GDPR data residency (EU servers only)," "Must support 500 concurrent users," "Must integrate with existing SAP system via RFC."
 
-**Invalid constraints:** "Must use React for the frontend" — that is a technical decision, leave it to your [development team](https://www.manifera.com/services/offshore-software-development/).
+**Invalid constraints:** "Must use React for the frontend" - that is a technical decision, leave it to your [development team](https://www.manifera.com/services/offshore-software-development/).
 
 ### Section 5: Visual Reference (Wireframe or screenshot)
 
-Not a pixel-perfect design. A rough wireframe — even drawn on a napkin and photographed — communicates layout intent 10x better than paragraphs of description. Tools like Excalidraw, Balsamiq, or even PowerPoint work fine.
+Not a pixel-perfect design. A rough wireframe - even drawn on a napkin and photographed - communicates layout intent 10x better than paragraphs of description. Tools like Excalidraw, Balsamiq, or even PowerPoint work fine.
 
 ## Common Patterns That Kill Projects
 
@@ -119,12 +119,12 @@ For teams that find even the template above too heavy, here is the absolute mini
 Feature: [Name]
 User: [Who uses this]
 Problem: [What pain does this solve]
-Success: [How do we know it works — 3 bullet points]
+Success: [How do we know it works - 3 bullet points]
 Not this: [What are we explicitly NOT building]
 Sketch: [Attached wireframe or screenshot]
 ```
 
-This one-page format has been used successfully on over 160 projects at Manifera — combining Dutch project governance with Vietnamese engineering execution to ensure nothing is lost in translation between business intent and technical implementation.
+This one-page format has been used successfully on over 160 projects at Manifera - combining Dutch project governance with Vietnamese engineering execution to ensure nothing is lost in translation between business intent and technical implementation.
 
 Download our ROI calculator for offshore development at [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
@@ -142,15 +142,15 @@ For your MVP, you can write requirements yourself using the user story template 
 
 ### How do I handle changing requirements during development? (Scenario: Product Manager discovering new user needs during sprint cycles)
 
-Use a change request process: document the new requirement, assess its impact on timeline and budget, get stakeholder approval, and add it to the backlog. Good Agile teams expect requirements to evolve — that is the point of iterative development. The key is that changes are conscious decisions, not silent scope creep.
+Use a change request process: document the new requirement, assess its impact on timeline and budget, get stakeholder approval, and add it to the backlog. Good Agile teams expect requirements to evolve - that is the point of iterative development. The key is that changes are conscious decisions, not silent scope creep.
 
-### What format should requirements be in — Word, Confluence, Jira, or something else? (Scenario: IT Manager setting up project documentation for a new engagement)
+### What format should requirements be in - Word, Confluence, Jira, or something else? (Scenario: IT Manager setting up project documentation for a new engagement)
 
-Use whatever your development team already uses. If they use Jira, write user stories as Jira tickets with acceptance criteria in the description field. If they use Confluence, write feature briefs as Confluence pages. The format matters far less than the content quality. Avoid sending requirements as email attachments — they become impossible to version-control.
+Use whatever your development team already uses. If they use Jira, write user stories as Jira tickets with acceptance criteria in the description field. If they use Confluence, write feature briefs as Confluence pages. The format matters far less than the content quality. Avoid sending requirements as email attachments - they become impossible to version-control.
 
 ### How do I know if my requirements are "good enough" to start development? (Scenario: Founder anxious about getting started but unsure if specs are ready)
 
-If a developer can read your user story, acceptance criteria, and wireframe and build a working prototype in one sprint without asking more than three clarifying questions, your requirements are good enough. Perfection in requirements is a myth — start building, learn from the first sprint, and refine for the next one.
+If a developer can read your user story, acceptance criteria, and wireframe and build a working prototype in one sprint without asking more than three clarifying questions, your requirements are good enough. Perfection in requirements is a myth - start building, learn from the first sprint, and refine for the next one.
 
 <script type="application/ld+json">
 {
@@ -178,15 +178,15 @@ If a developer can read your user story, acceptance criteria, and wireframe and 
       "name": "How do I handle changing requirements during development? (Scenario: Product Manager discovering new user needs during sprint cycles)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use a change request process: document the new requirement, assess its impact on timeline and budget, get stakeholder approval, and add it to the backlog. Good Agile teams expect requirements to evolve — that is the point of iterative development. The key is that changes are conscious decisions, not silent scope creep."
+        "text": "Use a change request process: document the new requirement, assess its impact on timeline and budget, get stakeholder approval, and add it to the backlog. Good Agile teams expect requirements to evolve - that is the point of iterative development. The key is that changes are conscious decisions, not silent scope creep."
       }
     },
     {
       "@type": "Question",
-      "name": "What format should requirements be in — Word, Confluence, Jira, or something else? (Scenario: IT Manager setting up project documentation for a new engagement)",
+      "name": "What format should requirements be in - Word, Confluence, Jira, or something else? (Scenario: IT Manager setting up project documentation for a new engagement)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use whatever your development team already uses. If they use Jira, write user stories as Jira tickets with acceptance criteria in the description field. If they use Confluence, write feature briefs as Confluence pages. The format matters far less than the content quality. Avoid sending requirements as email attachments — they become impossible to version-control."
+        "text": "Use whatever your development team already uses. If they use Jira, write user stories as Jira tickets with acceptance criteria in the description field. If they use Confluence, write feature briefs as Confluence pages. The format matters far less than the content quality. Avoid sending requirements as email attachments - they become impossible to version-control."
       }
     },
     {
@@ -194,7 +194,7 @@ If a developer can read your user story, acceptance criteria, and wireframe and 
       "name": "How do I know if my requirements are 'good enough' to start development? (Scenario: Founder anxious about getting started but unsure if specs are ready)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If a developer can read your user story, acceptance criteria, and wireframe and build a working prototype in one sprint without asking more than three clarifying questions, your requirements are good enough. Perfection in requirements is a myth — start building, learn from the first sprint, and refine for the next one."
+        "text": "If a developer can read your user story, acceptance criteria, and wireframe and build a working prototype in one sprint without asking more than three clarifying questions, your requirements are good enough. Perfection in requirements is a myth - start building, learn from the first sprint, and refine for the next one."
       }
     }
   ]

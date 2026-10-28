@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The role is technically interesting and the team is good. The system is a risk model that decides which people get additional checks, or a monitoring tool that scores employee behaviour, or a recommendation engine whose optimisation target you quietly suspect is engagement at any cost. Nothing about it is illegal. Something about it makes you hesitate. In the Netherlands, this hesitation carries particular weight: the childcare benefits scandal showed what happens when capable people build a risk system without enough people asking uncomfortable questions, and the SyRI judgment showed that legality is not the same as acceptability. Deciding whether to take such a role is a professional judgement, not a purity test — but it is one worth making deliberately rather than by default.
+The role is technically interesting and the team is good. The system is a risk model that decides which people get additional checks, or a monitoring tool that scores employee behaviour, or a recommendation engine whose optimisation target you quietly suspect is engagement at any cost. Nothing about it is illegal. Something about it makes you hesitate. In the Netherlands, this hesitation carries particular weight: the childcare benefits scandal showed what happens when capable people build a risk system without enough people asking uncomfortable questions, and the SyRI judgment showed that legality is not the same as acceptability. Deciding whether to take such a role is a professional judgement, not a purity test - but it is one worth making deliberately rather than by default.
 
 ## First: Separate Three Different Discomforts
 
@@ -73,7 +73,7 @@ Both involved technically competent people building systems that worked as speci
 
 Employees are not powerless in this area, and several mechanisms exist.
 
-**Inside the project.** The person building the system has more influence over its design than anyone downstream. Error analysis by subgroup, threshold choices, what is logged, what the interface shows a human reviewer, what is documented as a limitation — these are technical decisions with ethical consequences, and they are yours.
+**Inside the project.** The person building the system has more influence over its design than anyone downstream. Error analysis by subgroup, threshold choices, what is logged, what the interface shows a human reviewer, what is documented as a limitation - these are technical decisions with ethical consequences, and they are yours.
 
 **Through governance functions.** Data protection officers, privacy counsel, compliance and internal audit exist partly to be consulted. Involving them early is normal practice, not escalation.
 
@@ -87,7 +87,7 @@ Employees are not powerless in this area, and several mechanisms exist.
 
 - **The illegality is structural**, not a detail someone forgot.
 - **Nobody can explain who is affected when the system is wrong**, and nobody seems to consider it their question.
-- **The oversight is decorative** — a human clicks approve on a list they cannot realistically evaluate.
+- **The oversight is decorative** - a human clicks approve on a list they cannot realistically evaluate.
 - **The team's response to your questions is defensive or dismissive** during the interview, when they are trying to impress you.
 - **The purpose itself conflicts with your values** and no amount of good implementation changes that.
 
@@ -109,7 +109,7 @@ None of these requests is unusual. How they are received is information.
 
 ## Documenting Concerns Properly
 
-If you take the role and a concern arises, how you record it matters — for the organisation, for the people affected and, if things go badly, for you.
+If you take the role and a concern arises, how you record it matters - for the organisation, for the people affected and, if things go badly, for you.
 
 **Write it into the artefact, not only into an email.** Model documentation, evaluation reports and design decisions are the right place for known limitations, subgroup performance differences and conditions under which the system should not be used. Under the AI Act, technical documentation and record-keeping are obligations for high-risk systems, so this is normal practice rather than an act of dissent.
 
@@ -131,7 +131,7 @@ In the first interview she asks what happens to someone wrongly selected for add
 
 This time the answer is different. The team lead explains that a human rights impact assessment was conducted, that a previous version of the model was rejected because its selection correlated with neighbourhood, and that the current design monitors subgroup outcomes quarterly with a named owner.
 
-She takes the job. Two years later she is the person who runs that quarterly analysis — and once, successfully, argues for a threshold change that reduced selection of a group the model had been treating unfairly.
+She takes the job. Two years later she is the person who runs that quarterly analysis - and once, successfully, argues for a threshold change that reduced selection of a group the model had been treating unfairly.
 
 ## When the Concern Arises After You Joined
 
@@ -143,19 +143,19 @@ Then raise it once, in the right place, with a proposal attached. Most concerns 
 
 If nothing happens, decide what your line is and say it plainly: which part of the work you are not willing to do, and what alternative you propose. Refusing a specific task with a stated reason is a professional position; general unease expressed repeatedly is not, and it wears out your credibility.
 
-If the line is crossed anyway, the options narrow to accepting it, moving internally or leaving. Knowing in advance which of those you would choose makes the moment far less overwhelming — and it is worth knowing that the Dutch AI market is large enough that leaving over a principle rarely ends a career.
+If the line is crossed anyway, the options narrow to accepting it, moving internally or leaving. Knowing in advance which of those you would choose makes the moment far less overwhelming - and it is worth knowing that the Dutch AI market is large enough that leaving over a principle rarely ends a career.
 
 ## Key Takeaways
 
 - Separate the three discomforts: probable illegality, lawful but harmful, and personal values. Each leads to a different conversation.
 - Ask in the interview who is affected when the system is wrong, what assessment was done, how human oversight really works and who has ever said no.
 - Under the AI Act, systems assessing benefits eligibility, creditworthiness or employment decisions are high-risk, with public deployers required to assess fundamental rights impacts.
-- Dutch history — the benefits scandal and the SyRI judgment — makes "I only built the model" a weaker position here than elsewhere.
+- Dutch history - the benefits scandal and the SyRI judgment - makes "I only built the model" a weaker position here than elsewhere.
 - Take the role if your concerns can influence design; decline if oversight is decorative or the purpose itself conflicts with your values.
 
 ## Where to Start
 
-If a role leaves you uneasy, check what comparable work exists near you before deciding — a real alternative makes it much easier to hold a line you believe in.
+If a role leaves you uneasy, check what comparable work exists near you before deciding - a real alternative makes it much easier to hold a line you believe in.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

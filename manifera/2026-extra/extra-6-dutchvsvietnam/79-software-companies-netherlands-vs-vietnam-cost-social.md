@@ -7,8 +7,8 @@
 
 **The Manifera Solution:**
 ✅ **Four Real Cost Components:** Base engineering cost, governance overhead, delivery risk premium, and total cost with governance held constant.
-✅ **Amsterdam Strategic Governance:** Governance priced as an explicit, separate function — no hidden line for a board to discover later.
-✅ **Vietnam Execution Velocity:** Delivery at 45-60% of the total cost of a comparably governed Dutch engagement — for the same risk profile.
+✅ **Amsterdam Strategic Governance:** Governance priced as an explicit, separate function - no hidden line for a board to discover later.
+✅ **Vietnam Execution Velocity:** Delivery at 45-60% of the total cost of a comparably governed Dutch engagement - for the same risk profile.
 
 Price governance explicitly on both sides. That's the comparison a board can actually trust. 🛡️
 

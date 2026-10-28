@@ -33,7 +33,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 It is 11 PM on a Tuesday. You have been prompting Bolt AI for four hours. The landing page looks stunning. The dashboard has three interactive charts. The signup flow works. You screenshot it, send it to your co-founder, and write: "We're launching next week."
 
-You are not launching next week. You are four to six weeks away from launching — and you don't know it yet.
+You are not launching next week. You are four to six weeks away from launching - and you don't know it yet.
 
 Bolt AI, built on StackBlitz's WebContainers technology, is arguably the fastest way to turn a product idea into something visual. It runs an entire development environment in your browser. No setup. No terminal commands. No GitHub configuration. You describe what you want, and functional code appears in seconds.
 
@@ -43,11 +43,11 @@ But speed creates a dangerous illusion. The prototype that looks ready is runnin
 
 Bolt is not a toy. For specific use cases, it is the single best tool available:
 
-- **Idea validation in minutes** — Test whether a concept makes visual sense before investing any money.
-- **Investor pitch prototypes** — Create something clickable to demonstrate during fundraising conversations.
-- **Landing pages** — Generate conversion-optimized pages with email capture that you can deploy same-day.
-- **Internal tools** — Quick calculators, dashboards, and data viewers for your own team.
-- **UI exploration** — Try five different layout approaches in an hour instead of debating designs for a week.
+- **Idea validation in minutes** - Test whether a concept makes visual sense before investing any money.
+- **Investor pitch prototypes** - Create something clickable to demonstrate during fundraising conversations.
+- **Landing pages** - Generate conversion-optimized pages with email capture that you can deploy same-day.
+- **Internal tools** - Quick calculators, dashboards, and data viewers for your own team.
+- **UI exploration** - Try five different layout approaches in an hour instead of debating designs for a week.
 
 For these use cases, Bolt delivers extraordinary value. The free tier provides enough generations to build an initial prototype, and the paid plan at approximately $20/month is trivial compared to any alternative.
 
@@ -70,7 +70,7 @@ This is not a criticism of Bolt. It is a recognition that rapid prototyping tool
 
 Here is where psychology works against you. You have spent 40 hours in Bolt crafting the perfect interface. Every button placement. Every color gradient. Every micro-interaction. The thought of an agency telling you "we need to rebuild from scratch" feels like erasing weeks of creative work.
 
-This fear is valid — and it is the exact reason [LaunchStudio](https://launchstudio.eu/en/) exists.
+This fear is valid - and it is the exact reason [LaunchStudio](https://launchstudio.eu/en/) exists.
 
 LaunchStudio, powered by [Manifera's engineering team](https://www.manifera.com/services/custom-software-development/) with over 11 years of experience, specifically preserves your AI-generated frontend. They do not rebuild your interface. They build the missing backend infrastructure underneath it: security hardening, payment integration, database architecture, and production deployment.
 
@@ -99,11 +99,11 @@ The founders who move fastest use Bolt strategically:
 
 1. **Validate** the concept with a Bolt prototype in a single afternoon
 2. **Test** the prototype with five potential users to confirm demand
-3. **Refine** the UI based on feedback (still in Bolt — it is free and fast)
+3. **Refine** the UI based on feedback (still in Bolt - it is free and fast)
 4. **Hand off** the validated, user-tested prototype to LaunchStudio for production engineering
 5. **Launch** with real users, real payments, and real infrastructure
 
-This approach costs roughly €2,500 total and takes three weeks. The alternative — learning backend development yourself — costs six months of your time and still produces amateur infrastructure.
+This approach costs roughly €2,500 total and takes three weeks. The alternative - learning backend development yourself - costs six months of your time and still produces amateur infrastructure.
 
 [Use the LaunchStudio price calculator](https://launchstudio.eu/#calculator) to see exactly what your Bolt prototype needs to go live.
 
@@ -124,9 +124,9 @@ Nina found LaunchStudio through the LaunchStudio website calculator. The Manifer
 **Result:** VendorSync launched with 34 vendors in the first month. Nina charges €29/month per vendor, generating €986/month in recurring revenue within 45 days of launch.
 
 > *"Bolt gave me the app I imagined. LaunchStudio gave me the business I imagined. The whole thing cost less than one month of what agencies quoted."*
-> — **Nina de Vries, Founder, VendorSync (Utrecht)**
+> - **Nina de Vries, Founder, VendorSync (Utrecht)**
 
-**Cost & Timeline:** €1,800 (Launch Ready Package) — production-ready and deployed in 6 business days.
+**Cost & Timeline:** €1,800 (Launch Ready Package) - production-ready and deployed in 6 business days.
 
 ---
 
@@ -142,11 +142,11 @@ Yes. LaunchStudio's entire approach preserves your existing frontend. The engine
 
 ### (Scenario: Budget-conscious founder comparing AI tools) Should I use Bolt or Lovable for my startup prototype?
 
-Use Bolt for rapid validation and landing pages — it is the fastest tool for visual prototyping. Use Lovable for more complex applications with database needs. Many founders start with Bolt to validate the concept, then move to Lovable for a more complete prototype before engaging LaunchStudio for production engineering.
+Use Bolt for rapid validation and landing pages - it is the fastest tool for visual prototyping. Use Lovable for more complex applications with database needs. Many founders start with Bolt to validate the concept, then move to Lovable for a more complete prototype before engaging LaunchStudio for production engineering.
 
 ### (Scenario: Technical co-founder evaluating code quality) What happens to the Bolt-generated code when LaunchStudio rebuilds the backend?
 
-The Bolt frontend code is extracted and placed in a proper GitHub repository. Backend code is built from scratch using production-grade patterns — proper API routes, server-side validation, and secure database queries. The result is a clean, maintainable codebase that you or any developer can extend.
+The Bolt frontend code is extracted and placed in a proper GitHub repository. Backend code is built from scratch using production-grade patterns - proper API routes, server-side validation, and secure database queries. The result is a clean, maintainable codebase that you or any developer can extend.
 
 ### (Scenario: Founder worried about ongoing costs after launch) What does it cost to maintain a LaunchStudio-launched product monthly?
 
@@ -178,7 +178,7 @@ The Launch Ready package (€800–€3,500) includes 48 hours of post-launch su
       "name": "Should I use Bolt or Lovable for my startup prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use Bolt for rapid validation and landing pages — it is the fastest tool for visual prototyping. Use Lovable for more complex applications with database needs. Many founders start with Bolt to validate the concept, then move to Lovable for a more complete prototype before engaging LaunchStudio for production engineering."
+        "text": "Use Bolt for rapid validation and landing pages - it is the fastest tool for visual prototyping. Use Lovable for more complex applications with database needs. Many founders start with Bolt to validate the concept, then move to Lovable for a more complete prototype before engaging LaunchStudio for production engineering."
       }
     },
     {
@@ -186,7 +186,7 @@ The Launch Ready package (€800–€3,500) includes 48 hours of post-launch su
       "name": "What happens to the Bolt-generated code when LaunchStudio rebuilds the backend?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Bolt frontend code is extracted and placed in a proper GitHub repository. Backend code is built from scratch using production-grade patterns — proper API routes, server-side validation, and secure database queries. The result is a clean, maintainable codebase that you or any developer can extend."
+        "text": "The Bolt frontend code is extracted and placed in a proper GitHub repository. Backend code is built from scratch using production-grade patterns - proper API routes, server-side validation, and secure database queries. The result is a clean, maintainable codebase that you or any developer can extend."
       }
     },
     {

@@ -1,4 +1,4 @@
-A Head of Product ships one AI feature a year versus one every quarter — usually not because of talent or budget, but because nothing reusable got built the first time around. 🔁🤖
+A Head of Product ships one AI feature a year versus one every quarter - usually not because of talent or budget, but because nothing reusable got built the first time around. 🔁🤖
 
 **The Pain Points:**
 ❌ **Every Feature Restarts From Zero:** The first AI feature took nine months and three re-scopes, and four more ideas are stuck in the backlog because nobody wants to repeat that timeline.

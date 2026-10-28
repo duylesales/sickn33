@@ -1,4 +1,4 @@
-🔥 Mia built a prototype using **Cursor** — mia, a sales manager, used **cursor** to build an ai crm assistant, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Mia built a prototype using **Cursor** - mia, a sales manager, used **cursor** to build an ai crm assistant, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mia's application achieved silky-smooth performance: Team conversion rate of free users to enterprise packages grew by 40%. (€1,550 (Sales CRM Integration) — production-ready and deployed in 4 business days.). 🚀
+Mia's application achieved silky-smooth performance: Team conversion rate of free users to enterprise packages grew by 40%. (€1,550 (Sales CRM Integration) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/product-led-sales-motion-ai
 

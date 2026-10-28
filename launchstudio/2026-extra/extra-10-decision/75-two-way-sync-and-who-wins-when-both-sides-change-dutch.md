@@ -31,7 +31,7 @@ Bij **éénrichtings-synchronisatie (*one-way sync*)** is er altijd één duidel
 
 Bij **tweeweg-synchronisatie (*two-way sync*)** is er per definitie **géén bron van waarheid meer**. 
 
-Elke vraag die zich voordoet — wie heeft gelijk, welke wijziging is recenter, is dit een bestaand of een nieuw record — moet worden opgelost door zelfverzonnen beslisregels. En wie verkeerde regels hanteert, ziet hoe systemen elkaars data geruisloos overschrijven of vernietigen.
+Elke vraag die zich voordoet - wie heeft gelijk, welke wijziging is recenter, is dit een bestaand of een nieuw record - moet worden opgelost door zelfverzonnen beslisregels. En wie verkeerde regels hanteert, ziet hoe systemen elkaars data geruisloos overschrijven of vernietigen.
 
 ## De Vier Problemen Die bij Éénrichtings-Sync Niet Bestaan
 
@@ -81,7 +81,7 @@ En tot slot de achterliggende infrastructuur: synchronisatie is asynchrone achte
 Het bouwen van tweeweg-synchronisatie die voorspelbaar conflicten oplost, lussen voorkomt en zijn eigen betrouwbaarheid bewaakt is serieus softwarewerk. LaunchStudio, ondersteund door meer dan 11 jaar productie-ervaring bij Manifera, implementeert robuuste integraties inclusief reconciliatie en foutmonitoring. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Vraag Eerst Wat de Klant Écht Nodig Heeft
 
-Voordat u toezegt om tweeweg-synchronisatie te gaan ontwikkelen, luidt de meest waardevolle ontwerpvraag niet: *"Wilt u tweeweg-koppeling?"* — op die vraag antwoordt elke klant immers direct gedachteloos ja. De werkelijke vraag luidt: *"Op welke specifieke plek wilt u uw wijzigingen gaan invoeren?"*.
+Voordat u toezegt om tweeweg-synchronisatie te gaan ontwikkelen, luidt de meest waardevolle ontwerpvraag niet: *"Wilt u tweeweg-koppeling?"* - op die vraag antwoordt elke klant immers direct gedachteloos ja. De werkelijke vraag luidt: *"Op welke specifieke plek wilt u uw wijzigingen gaan invoeren?"*.
 
 Het overgrote merendeel van de antwoorden onthult dat de klant in werkelijkheid voldoende heeft aan een **éénrichtingskoppeling** (*one-way sync*):
 - Een klant die wil dat afspraken die in uw applicatie worden geboekt automatisch in zijn Google Agenda verschijnen, maar die afspraken nooit in Google Agenda bewerkt, heeft uitsluitend éénrichtings-export nodig.
@@ -94,7 +94,7 @@ Waar tweeweg-koppeling echt onvermijdelijk is, verkleinen drie pragmatische scop
 2. **Synchroniseer een gefilterde selectie van records:** Beperk de sync tot actieve projecten of klanten met een specifieke tag, zodat zowel het volume als het afbreukrisico beheersbaar blijft.
 3. **Begin met één richting en voeg de tweede richting pas later toe:** Laat de identiteitskoppeling en monitoring zich eerst bewijzen op het eenvoudigere probleem.
 
-Een gouden tussenweg voor veel SaaS-producten: bouw een betrouwbare éénrichtingskoppeling en plaats in uw interface een directe klikbare hyperlink naar het overeenkomstige record in het externe systeem. Gebruikers zien de data direct waar ze die nodig hebben en hebben één duidelijke plek voor mutaties — wat vrijwel altijd exact is wat ze eigenlijk bedoelden toen ze vroegen om een 'tweeweg-koppeling'.
+Een gouden tussenweg voor veel SaaS-producten: bouw een betrouwbare éénrichtingskoppeling en plaats in uw interface een directe klikbare hyperlink naar het overeenkomstige record in het externe systeem. Gebruikers zien de data direct waar ze die nodig hebben en hebben één duidelijke plek voor mutaties - wat vrijwel altijd exact is wat ze eigenlijk bedoelden toen ze vroegen om een 'tweeweg-koppeling'.
 ## Echt voorbeeld
 
 ### De Oneindige Lus Die 90.000 API-Calls Veroorzaakte in Één Weekend
@@ -116,7 +116,7 @@ Bovendien bleek dat Klantbeeld contacten synchroniseerde op basis van het e-mail
 **Resultaat:** Binnen vijf werkdagen saneerde LaunchStudio de complete integratie: de architectuur werd omgevormd naar éénrichtings-sync voor stamgegevens (het boekhoudpakket is de enige eigenaar van bedrijfsnamen en adressen), terwijl Klantbeeld exclusief eigenaar werd van werkbonnen en communicatiehistorie. Er werd een persistente mapping-tabel opgezet, lus-preventie via origin-headers ingevoerd, en verwijderingen werden geblokkeerd tenzij een beheerder ze handmatig goedkeurt in het dashboard.
 
 > *"Ze vroegen om tweeweg-sync en ik zei meteen 'ja' zonder te vragen wie waar iets ging bewerken. Achteraf bleek dat ze de gegevens in werkelijkheid maar op één plek wilden beheren."*
-> — **Bas Kuipers, Oprichter, Klantbeeld**
+> - **Bas Kuipers, Oprichter, Klantbeeld**
 
 **Kosten & Doorlooptijd:** Integratieherontwerp, lus-preventie en data-reconciliatie opgeleverd in 5 werkdagen.
 

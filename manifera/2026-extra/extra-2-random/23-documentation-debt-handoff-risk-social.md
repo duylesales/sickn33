@@ -1,4 +1,4 @@
-🚨 The system nobody wrote documentation for always keeps working — right up until the one engineer who understood it hands in their notice, and suddenly a two-day fix becomes a three-week archaeology dig. ⚙️💥
+🚨 The system nobody wrote documentation for always keeps working - right up until the one engineer who understood it hands in their notice, and suddenly a two-day fix becomes a three-week archaeology dig. ⚙️💥
 
 **The Pain Points:**
 ❌ **Documentation Debt Handoff Crisis:** A VP of Engineering at a mid-market fintech is about to lose a senior engineer who single-handedly built and maintained the reconciliation service three years ago. There's no architecture diagram, no runbook, and the onboarding notes for whoever inherits it amount to a Slack thread nobody can search properly.

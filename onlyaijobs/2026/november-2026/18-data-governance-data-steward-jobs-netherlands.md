@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Every organisation that wants to use AI eventually discovers that its biggest problem is not the model. It is the data: definitions that differ between departments, unclear ownership, inconsistent quality, undocumented sources and uncertainty about what may legally be used. For years, data governance was seen as an administrative function — policies nobody read and committees nobody attended. That has changed. European regulation, rising AI adoption and costly data failures have made governance a strategic capability. In the Netherlands, banks, insurers, government organisations, hospitals, universities and increasingly mid-sized companies are hiring people who make data trustworthy. For data professionals who enjoy structure, collaboration and influence, these roles offer a strong and future-proof career path.
+Every organisation that wants to use AI eventually discovers that its biggest problem is not the model. It is the data: definitions that differ between departments, unclear ownership, inconsistent quality, undocumented sources and uncertainty about what may legally be used. For years, data governance was seen as an administrative function - policies nobody read and committees nobody attended. That has changed. European regulation, rising AI adoption and costly data failures have made governance a strategic capability. In the Netherlands, banks, insurers, government organisations, hospitals, universities and increasingly mid-sized companies are hiring people who make data trustworthy. For data professionals who enjoy structure, collaboration and influence, these roles offer a strong and future-proof career path.
 
 ## What Data Governance Actually Involves
 
@@ -69,7 +69,7 @@ The **DAMA-DMBOK (Data Management Body of Knowledge)** is a widely used referenc
 
 **AI regulation.** **Article 10 of the EU AI Act** requires that training, validation and testing data for high-risk AI systems be subject to appropriate data governance and management practices, including examination for possible biases and assessment of data availability, quantity and suitability.
 
-**Data protection.** The **GDPR** requires organisations to know which personal data they process, for which purposes and on which legal basis — impossible without data governance.
+**Data protection.** The **GDPR** requires organisations to know which personal data they process, for which purposes and on which legal basis - impossible without data governance.
 
 **European data economy rules.** The **Data Governance Act (EU) 2022/868** creates frameworks for data sharing, data intermediaries and data altruism, while the **Data Act (EU) 2023/2854** gives users of connected products rights to access and share data. Both require organisations to manage data sharing deliberately.
 
@@ -95,13 +95,13 @@ In Dutch government organisations, data governance connects to architecture prin
 
 ## A Concrete Scenario: The Model That Used the Wrong "Customer"
 
-An insurer builds a machine learning model to predict customer churn. The model performs well in testing but produces strange results in production. Investigation reveals that the training data used a definition of "customer" from the marketing system — anyone who requested a quote — while the production data used the policy administration definition — people with an active policy.
+An insurer builds a machine learning model to predict customer churn. The model performs well in testing but produces strange results in production. Investigation reveals that the training data used a definition of "customer" from the marketing system - anyone who requested a quote - while the production data used the policy administration definition - people with an active policy.
 
 A data steward for the customer domain works with marketing, policy administration and the data science team to document distinct definitions, update the data catalogue and add quality checks to ensure models use the correct source. The churn model is retrained, and future projects start with documented definitions. The case shows why data governance is a prerequisite for reliable AI rather than an obstacle to it.
 
 ## Data Governance for Generative AI
 
-Generative AI introduces new governance questions. Which internal documents may be used in retrieval-augmented generation systems? How are access rights respected when a language model searches across document collections — can an employee receive an answer based on a document they are not authorised to read? Which data may be sent to external model providers? How long are prompts and outputs stored, and do they contain personal data?
+Generative AI introduces new governance questions. Which internal documents may be used in retrieval-augmented generation systems? How are access rights respected when a language model searches across document collections - can an employee receive an answer based on a document they are not authorised to read? Which data may be sent to external model providers? How long are prompts and outputs stored, and do they contain personal data?
 
 Data governance professionals are increasingly involved in answering these questions. Practical measures include classifying documents by sensitivity before they are indexed, applying access controls at the retrieval level, maintaining an inventory of AI applications and their data sources, defining retention policies for prompts and outputs and assessing vendors' data handling. Organisations that already have mature metadata and access management find generative AI adoption considerably easier and safer.
 
@@ -119,13 +119,13 @@ Starting small and visible builds credibility. Trying to govern all data at once
 
 Almost every governance framework assigns data owners, yet in many organisations ownership exists only on paper. Business managers named as data owners often do not know what is expected, lack time and see data quality as an IT problem. Data stewards then carry responsibility without authority.
 
-Organisations that make ownership work tend to follow a few principles. They assign ownership to the business function that creates or relies most on the data, rather than to IT. They define a small number of concrete responsibilities — approving definitions, prioritising quality issues, deciding on access requests — instead of vague accountability. They link data quality to outcomes owners care about, such as reliable reporting, fewer customer complaints or successful AI projects. And they give stewards a direct line to owners and a regular forum to escalate issues.
+Organisations that make ownership work tend to follow a few principles. They assign ownership to the business function that creates or relies most on the data, rather than to IT. They define a small number of concrete responsibilities - approving definitions, prioritising quality issues, deciding on access requests - instead of vague accountability. They link data quality to outcomes owners care about, such as reliable reporting, fewer customer complaints or successful AI projects. And they give stewards a direct line to owners and a regular forum to escalate issues.
 
 For data governance professionals, the ability to make ownership meaningful is often more important than designing the perfect framework. It requires understanding business priorities and translating governance into benefits managers recognise.
 
 ## Tools of the Trade
 
-Data governance work uses several types of tools: data catalogues that document datasets and definitions, lineage tools that show how data flows between systems, data quality monitoring tools that measure completeness and validity, and access management systems. Specific products differ between organisations, but understanding the purpose of each tool type — and knowing that tools only work when ownership and processes are clear — is more valuable than expertise in a single product.
+Data governance work uses several types of tools: data catalogues that document datasets and definitions, lineage tools that show how data flows between systems, data quality monitoring tools that measure completeness and validity, and access management systems. Specific products differ between organisations, but understanding the purpose of each tool type - and knowing that tools only work when ownership and processes are clear - is more valuable than expertise in a single product.
 
 ## A Common Misconception About Data Governance Careers
 
@@ -175,7 +175,7 @@ Data governance careers can progress from data steward to data governance lead, 
 
 ## Where to Start
 
-Identify one recurring data problem in your current work — an unclear definition or a quality issue — and take the lead in documenting and resolving it. That experience is the foundation of a governance career.
+Identify one recurring data problem in your current work - an unclear definition or a quality issue - and take the lead in documenting and resolving it. That experience is the foundation of a governance career.
 
 Browse current AI, machine learning and data jobs, including data governance roles, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -191,10 +191,10 @@ Reliable AI depends on well-defined, high-quality and lawfully used data; the AI
 Banking, insurance, government, healthcare, research, energy, retail, manufacturing and consultancies.
 
 ### (Scenario: compliance professional) Can I move into data governance from compliance?
-Yes — regulatory knowledge is valuable, combined with building technical understanding of data and systems.
+Yes - regulatory knowledge is valuable, combined with building technical understanding of data and systems.
 
 ### (Scenario: candidate worried about career growth) Is data governance a good long-term career?
-Yes — regulation and AI adoption increase demand, with paths to governance leadership, AI governance and chief data officer roles.
+Yes - regulation and AI adoption increase demand, with paths to governance leadership, AI governance and chief data officer roles.
 
 <script type="application/ld+json">
 {
@@ -205,7 +205,7 @@ Yes — regulation and AI adoption increase demand, with paths to governance lea
     {"@type": "Question", "name": "Why does data governance matter for AI?", "acceptedAnswer": {"@type": "Answer", "text": "AI depends on good data; the AI Act requires data governance for high-risk systems."}},
     {"@type": "Question", "name": "Which sectors hire data governance professionals?", "acceptedAnswer": {"@type": "Answer", "text": "Finance, government, healthcare, research, energy, retail, manufacturing and consultancies."}},
     {"@type": "Question", "name": "Can I move into data governance from compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, combined with technical understanding."}},
-    {"@type": "Question", "name": "Is data governance a good long-term career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — demand grows with regulation and AI adoption."}}
+    {"@type": "Question", "name": "Is data governance a good long-term career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - demand grows with regulation and AI adoption."}}
   ]
 }
 </script>

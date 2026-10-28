@@ -1,9 +1,9 @@
-A 9-second mobile load time on your product catalog isn't a UX detail — it's an ad budget quietly burning. 🌷📉
+A 9-second mobile load time on your product catalog isn't a UX detail - it's an ad budget quietly burning. 🌷📉
 
 **The Pain Points:**
 ❌ **The Slow Catalog Tax:** Paid campaigns drive real traffic straight to a page that takes 9 seconds to load on mobile, and 70%+ of it bounces before ever seeing the offer.
 ❌ **The Six-Week Landing Page:** Every marketing request queues behind a legacy WordPress theme nobody on the team fully understands anymore.
-❌ **The "Why Isn't Marketing Converting?" Meeting:** The CEO is asking questions the CMO can't answer — because the real problem is engineering, not messaging.
+❌ **The "Why Isn't Marketing Converting?" Meeting:** The CEO is asking questions the CMO can't answer - because the real problem is engineering, not messaging.
 
 **The Manifera Solution:**
 ✅ **Headless CMS, Publish Without a Dev Ticket:** Marketing ships new campaign pages same-day, no developer queue.

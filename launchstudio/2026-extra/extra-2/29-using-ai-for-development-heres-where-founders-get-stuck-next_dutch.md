@@ -59,14 +59,14 @@ Manifera's backend-beveiligingsaudits worden uitgevoerd door het engineeringteam
 
 ## Waar Ditzelfde Patroon Zich Nog Meer Verbergt Buiten Profielformulieren
 
-Een accountrolveld is de meest schadelijke manifestatie van deze kwetsbaarheid, maar het onderliggende patroon — een update-eindpunt dat meer velden accepteert dan het zichtbare webformulier toont (mass assignment) — duikt overal op waar een database-record velden bevat die een gebruiker niet rechtstreeks zou mogen aanpassen.
+Een accountrolveld is de meest schadelijke manifestatie van deze kwetsbaarheid, maar het onderliggende patroon - een update-eindpunt dat meer velden accepteert dan het zichtbare webformulier toont (mass assignment) - duikt overal op waar een database-record velden bevat die een gebruiker niet rechtstreeks zou mogen aanpassen.
 
 **Andere plekken die het waard zijn om specifiek op ditzelfde patroon te controleren:**
 
-- **Bestel- of abonnementsstatusvelden** — als een eindpunt voor het bijwerken van een bezorgadres toevallig ook een veld voor de bestelstatus accepteert, kan een gemanipuleerd netwerkverzoek een onbetaalde bestelling markeren als 'betaald', of een opgezegd abonnement als 'actief', zonder ooit de daadwerkelijke betaal- of opzeggingsstroom te doorlopen.
-- **Prijs- of kortingsvelden op een winkelwagen- of afrekenobject** — een eindpunt dat de inhoud van een winkelmandje bijwerkt, kan onbedoeld ook een veld voor handmatige prijsaanpassing of kortingspercentage accepteren dat nooit bedoeld was om door gebruikers te worden bewerkt.
-- **Eigendoms- of ID-verwijzingsvelden** — een eindpunt dat de details van een resource bijwerkt, kan ook een veld accepteren dat opnieuw toewijst welk gebruikersaccount eigenaar is van die bron. Hierdoor kan de ene gebruiker potentieel de gegevens van een andere gebruiker opeisen.
-- **Verificatie- of goedkeuringsstatusvelden** — een profielupdate op een marktplaats of dienstenplatform kan onbedoeld toestaan dat een vlag zoals "is_verified" of "is_approved" rechtstreeks wordt meegegeven, waardoor het handmatige of geautomatiseerde verificatieproces dat die status moest bewaken volledig wordt omzeild.
+- **Bestel- of abonnementsstatusvelden** - als een eindpunt voor het bijwerken van een bezorgadres toevallig ook een veld voor de bestelstatus accepteert, kan een gemanipuleerd netwerkverzoek een onbetaalde bestelling markeren als 'betaald', of een opgezegd abonnement als 'actief', zonder ooit de daadwerkelijke betaal- of opzeggingsstroom te doorlopen.
+- **Prijs- of kortingsvelden op een winkelwagen- of afrekenobject** - een eindpunt dat de inhoud van een winkelmandje bijwerkt, kan onbedoeld ook een veld voor handmatige prijsaanpassing of kortingspercentage accepteren dat nooit bedoeld was om door gebruikers te worden bewerkt.
+- **Eigendoms- of ID-verwijzingsvelden** - een eindpunt dat de details van een resource bijwerkt, kan ook een veld accepteren dat opnieuw toewijst welk gebruikersaccount eigenaar is van die bron. Hierdoor kan de ene gebruiker potentieel de gegevens van een andere gebruiker opeisen.
+- **Verificatie- of goedkeuringsstatusvelden** - een profielupdate op een marktplaats of dienstenplatform kan onbedoeld toestaan dat een vlag zoals "is_verified" of "is_approved" rechtstreeks wordt meegegeven, waardoor het handmatige of geautomatiseerde verificatieproces dat die status moest bewaken volledig wordt omzeild.
 
 De gemeenschappelijke deler bij al deze voorbeelden is identiek: een backend die erop vertrouwt dat een inkomend verzoek alleen redelijke velden bevat, in plaats van expliciet af te dwingen welke velden elk eindpunt exact mag accepteren. Een review die één instantie van dit patroon in een codebase vindt en herstelt, heeft alle reden om gericht te controleren op exact dezelfde probleemvorm overal elders waar een record velden bevat die gevoeliger zijn dan wat het eigen formulier opzettelijk toont.
 
@@ -81,9 +81,9 @@ Een partner die het platform namens Lars testte, ontdekte tijdens het inspectere
 **Resultaat:** LaunchStudio implementeerde een expliciete toestemmingslijst (allow-list) op elk update-eindpunt in WerfMakelaar, wat garandeert dat alleen bedoelde velden ooit gewijzigd kunnen worden via elk specifiek formulier, ongeacht wat een verzoek anders kan bevatten. Dit sloot het risico op escalatie van machtigingen platformbreed.
 
 > *"Hij liet me zien wat hij gedaan had en ik begreep aanvankelijk oprecht niet waarom het überhaupt mogelijk was. Het was niet bij me opgekomen dat hetzelfde eindpunt dat een telefoonnummer-update afhandelt theoretisch ook beheerderstoegang uit kon delen."*
-> — **Lars Verbeek, Oprichter, WerfMakelaar (Roosendaal)**
+> - **Lars Verbeek, Oprichter, WerfMakelaar (Roosendaal)**
 
-**Kosten en tijdlijn:** € 2.100 (mass assignment audit en implementatie van allow-lists over update-eindpunten) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (mass assignment audit en implementatie van allow-lists over update-eindpunten) - voltooid in 7 werkdagen.
 
 ---
 
@@ -91,23 +91,23 @@ Een partner die het platform namens Lars testte, ontdekte tijdens het inspectere
 
 ### Zou een backend-beveiligingsspecialist 'mass assignment' beschouwen als een veelvoorkomende kwetsbaarheidsklasse in moderne webframeworks?
 
-Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast — toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt.
+Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast - toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt.
 
 ### Geldt dit risico alleen voor velden zoals accountrollen, of reikt het breder?
 
-Het reikt aanzienlijk breder — elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat.
+Het reikt aanzienlijk breder - elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat.
 
-### Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering — helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?
+### Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering - helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?
 
 Ja, omdat het te herkennen ontwerppatroon helder gedefinieerd en consistent is, ongeacht de specifieke applicatie. Ingenieurs die ervaren zijn in code-audits controleren routinematig de invoervalidatie van elk afzonderlijk update-eindpunt, in plaats van het risico telkens opnieuw vanaf nul te moeten ontdekken.
 
 ### Is dit het soort probleem waarnaar CEO Herre Roelevink verwijst wanneer hij architectuurkloven beschrijft die onzichtbaar blijven in een werkende demo?
 
-Ja, precies — een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt.
+Ja, precies - een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt.
 
 ### Als een oprichter een bekend backend-framework gebruikt met ingebouwde bescherming tegen mass assignment, kan dit dan nog steeds gebeuren?
 
-Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken — en AI-gegenereerde code garandeert dat laatste allerminst automatisch.
+Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken - en AI-gegenereerde code garandeert dat laatste allerminst automatisch.
 
 <script type="application/ld+json">
 {
@@ -119,7 +119,7 @@ Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is inge
       "name": "Zou een backend-beveiligingsspecialist 'mass assignment' beschouwen als een veelvoorkomende kwetsbaarheidsklasse in moderne webframeworks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast — toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt."
+        "text": "Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast - toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt."
       }
     },
     {
@@ -127,12 +127,12 @@ Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is inge
       "name": "Geldt dit risico alleen voor velden zoals accountrollen, of reikt het breder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het reikt aanzienlijk breder — elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat."
+        "text": "Het reikt aanzienlijk breder - elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat."
       }
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering — helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?",
+      "name": "Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering - helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja, omdat het te herkennen ontwerppatroon helder gedefinieerd en consistent is, ongeacht de specifieke applicatie. Ingenieurs die ervaren zijn in code-audits controleren routinematig de invoervalidatie van elk afzonderlijk update-eindpunt, in plaats van het risico telkens opnieuw vanaf nul te moeten ontdekken."
@@ -143,7 +143,7 @@ Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is inge
       "name": "Is dit het soort probleem waarnaar CEO Herre Roelevink verwijst wanneer hij architectuurkloven beschrijft die onzichtbaar blijven in een werkende demo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, precies — een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt."
+        "text": "Ja, precies - een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt."
       }
     },
     {
@@ -151,7 +151,7 @@ Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is inge
       "name": "Als een oprichter een bekend backend-framework gebruikt met ingebouwde bescherming tegen mass assignment, kan dit dan nog steeds gebeuren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken — en AI-gegenereerde code garandeert dat laatste allerminst automatisch."
+        "text": "Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken - en AI-gegenereerde code garandeert dat laatste allerminst automatisch."
       }
     }
   ]

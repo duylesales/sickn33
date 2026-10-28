@@ -71,7 +71,7 @@ Interrogate the vendor's application architecture. They must decouple the Presen
 **Green Flag:** *"We use an offline-first architecture. Network requests update a local encrypted SQLite database (or WatermelonDB/Realm). The UI strictly observes the local database using reactive streams (RxSwift/Flow). When the network returns, a background worker synchronizes the local mutations with the remote API using conflict resolution strategies."*
 
 > "In Compose, the entire UI is a function of state."
-> — Android Developers documentation, developer.android.com
+> - Android Developers documentation, developer.android.com
 
 Google's own Jetpack Compose documentation states the principle plainly, and it applies well beyond Compose specifically: the moment a UI component starts making direct HTTP calls or holding its own mutable copy of server data, you have lost the single source of truth that makes offline-first synchronization, error handling, and testing tractable. The UI should render *from* state, never fetch or mutate it directly.
 
@@ -89,7 +89,7 @@ Their pipeline must automate:
 
 ### 4. Crash Rate and ANR Discipline: The Numbers Google Actually Enforces
 
-Most vendors talk about "quality" in vague terms. Google does not. Android's own developer documentation defines explicit "bad behavior" thresholds inside Google Play Console's Android vitals: an app is flagged once its **user-perceived crash rate exceeds 1.09%** of daily active users across all device models (or 8% on any single device model), and once its **user-perceived ANR (Application Not Responding) rate exceeds 0.47%** of daily active users. Cross either threshold and Play does not just log a warning internally — it can actively reduce your app's visibility in store search and surface a warning label directly on your store listing to prospective users.
+Most vendors talk about "quality" in vague terms. Google does not. Android's own developer documentation defines explicit "bad behavior" thresholds inside Google Play Console's Android vitals: an app is flagged once its **user-perceived crash rate exceeds 1.09%** of daily active users across all device models (or 8% on any single device model), and once its **user-perceived ANR (Application Not Responding) rate exceeds 0.47%** of daily active users. Cross either threshold and Play does not just log a warning internally - it can actively reduce your app's visibility in store search and surface a warning label directly on your store listing to prospective users.
 
 This is a useful, concrete interview question for any vendor: *"What is your typical crash-free session rate on a comparable production app, and how do you monitor it against Play's published thresholds?"* An elite mobile app development company will already have Firebase Crashlytics or Sentry wired into the CI/CD pipeline described above, with a release gate that blocks a build from shipping if crash-free sessions drop below an internal target (commonly 99.5%+, comfortably inside Google's own bad-behavior threshold). A vendor who cannot quote you a crash-free percentage for their last three shipped apps is not tracking the metric that most directly determines whether your app stays visible in the store you are paying to be discovered in.
 

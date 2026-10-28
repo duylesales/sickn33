@@ -24,7 +24,7 @@ Veruit de meeste geschillen tussen software-oprichters en de freelance ontwikkel
 
 Drie maanden later is het softwareproduct bijna voltooid, zijn de facturen aanzienlijk hoger uitgevallen dan verwacht, en ontstaat er een patstelling: viel het notificatiesysteem nou wel of niet binnen de afgesproken prijs? Wie bezit juridisch gezien eigenlijk de broncode? En wat gebeurt er met de hosting- en database-accounts als de samenwerking stopt? Beide partijen handelen te goeder trouw en beiden hebben gelijk over wat ze zich herinneren van dat eerste gesprek.
 
-Een degelijk contract is geen motie van wantrouwen jegens een ontwikkelaar. Het is een instrument om meningsverschillen al in week één boven tafel te krijgen in plaats van in maand vier — wanneer het oplossen ervan nog nauwelijks geld en moeite kost.
+Een degelijk contract is geen motie van wantrouwen jegens een ontwikkelaar. Het is een instrument om meningsverschillen al in week één boven tafel te krijgen in plaats van in maand vier - wanneer het oplossen ervan nog nauwelijks geld en moeite kost.
 
 ## Eigenaarschap: Het Beding Dat Écht Telt
 
@@ -40,9 +40,9 @@ De vraag die in het AI-tijdperk steeds vaker opkomt: kan met AI gegenereerde cod
 
 *"Bouw een online boekingsplatform"* is geen projectscope. Het is een vrome wens gedeeld door twee mensen die zich elk een totaal ander product voorstellen.
 
-Een werkbare scope somt de functionele mogelijkheden in heldere mensentaal op — wat een gebruiker stap voor stap kan doen, scherm voor scherm. Het benoemt bovendien expliciet wat er buitengesloten is, wat vaak het meest waardevolle deel van de overeenkomst is: geen native mobiele app, geen koppeling met het boekhoudpakket, uitsluitend de Nederlandse taal, en geen ondersteuning voor meerdere gebruikers per organisatie. Het specificeert welke externe koppelingen gebouwd worden en wie de API-accounts aanlevert. En het formuleert een duidelijke *Definition of Done* voor elk onderdeel, getoetst op criteria die u kunt controleren zonder code te hoeven lezen.
+Een werkbare scope somt de functionele mogelijkheden in heldere mensentaal op - wat een gebruiker stap voor stap kan doen, scherm voor scherm. Het benoemt bovendien expliciet wat er buitengesloten is, wat vaak het meest waardevolle deel van de overeenkomst is: geen native mobiele app, geen koppeling met het boekhoudpakket, uitsluitend de Nederlandse taal, en geen ondersteuning voor meerdere gebruikers per organisatie. Het specificeert welke externe koppelingen gebouwd worden en wie de API-accounts aanlevert. En het formuleert een duidelijke *Definition of Done* voor elk onderdeel, getoetst op criteria die u kunt controleren zonder code te hoeven lezen.
 
-Leg daarnaast schriftelijk vast hoe scope-wijzigingen (meerwerk) worden afgehandeld: een beknopt schriftelijk voorstel, een vaste meerprijs en de impact op de opleverdatum, vooraf goedgekeurd vóórdat de ontwikkelaar eraan begint. De meeste conflicten zijn in wezen meerwerk-conflicten vermomd als scope-discussies — een feature die door drie enthousiaste telefoontjes geruisloos twee keer zo groot werd.
+Leg daarnaast schriftelijk vast hoe scope-wijzigingen (meerwerk) worden afgehandeld: een beknopt schriftelijk voorstel, een vaste meerprijs en de impact op de opleverdatum, vooraf goedgekeurd vóórdat de ontwikkelaar eraan begint. De meeste conflicten zijn in wezen meerwerk-conflicten vermomd als scope-discussies - een feature die door drie enthousiaste telefoontjes geruisloos twee keer zo groot werd.
 
 ## Betalingen Koppelen Aan Verifieerbare Mijlpalen
 
@@ -70,7 +70,7 @@ Die laatste lijst is goud waard. Een ontwikkelaar die eerlijk opschrijft welke o
 
 ## Garantie, Aansprakelijkheid en Wie Wat Herstelt
 
-Spreek een redelijke garantieperiode af — gebruikelijk is 30 tot 90 dagen na oplevering — waarbinnen bugs en afwijkingen van de overeengekomen scope kosteloos door de ontwikkelaar worden hersteld, met een heldere scheiding tussen een echte bug en een nieuw functieverzoek.
+Spreek een redelijke garantieperiode af - gebruikelijk is 30 tot 90 dagen na oplevering - waarbinnen bugs en afwijkingen van de overeengekomen scope kosteloos door de ontwikkelaar worden hersteld, met een heldere scheiding tussen een echte bug en een nieuw functieverzoek.
 
 Maximaliseer de aansprakelijkheid van de freelancer tot een proportioneel bedrag, doorgaans de totale factuurwaarde van de opdracht. Een zzp'er kan geen onbeperkte aansprakelijkheid dragen, en het eisen daarvan leidt tot een afwijzing of een torenhoge risico-opslag. Wees omgekeerd kritisch op standaardvoorwaarden van bureaus die elke aansprakelijkheid uitsluiten, zelfs bij opzet of grove nalatigheid.
 
@@ -86,7 +86,7 @@ Laat een concurrentiebeding achterwege. In een specialistische markt is een conc
 
 Dit is tegenwoordig het meest voorkomende scenario: u heeft zelf met Lovable, Bolt of Cursor een werkend prototype in elkaar gezet en huurt nu een senior engineer in om de applicatie productierijp te maken.
 
-Twee zaken veranderen: De scope moet worden geschreven op basis van de bevindingen van een technische audit in plaats van nieuwe visuele features — een concrete lijst met verhardingspunten (zoals RLS-policies, webhook-verificatie, backups en indexering) met voor elk punt een duidelijke oplevertoets. En het eigendomsbeding moet expliciet vermelden dat zowel het bestaande fundament als de nieuw geschreven code exclusief uw eigendom blijven.
+Twee zaken veranderen: De scope moet worden geschreven op basis van de bevindingen van een technische audit in plaats van nieuwe visuele features - een concrete lijst met verhardingspunten (zoals RLS-policies, webhook-verificatie, backups en indexering) met voor elk punt een duidelijke oplevertoets. En het eigendomsbeding moet expliciet vermelden dat zowel het bestaande fundament als de nieuw geschreven code exclusief uw eigendom blijven.
 
 ## Als de Ontwikkelaar Persoonsgegevens van Klanten Aanraakt
 
@@ -122,14 +122,14 @@ Wat de vier zinnen in de e-mail niet hadden geregeld: het intellectuele eigendom
 
 De ontwikkelaar handelde niet te kwader trouw. Hij had het simpelweg druk met zijn nieuwe baan en had geen enkele contractuele prikkel om prioriteit te geven aan een project waar hij feitelijk al mee klaar dacht te zijn.
 
-Het terugkrijgen van de controle kostte vijf weken en twee formele brieven van een jurist, en slaagde uiteindelijk alleen omdat de ontwikkelaar gelukkig alsnog meewerkte. Zes werkdagen aan gerichte interventies daarna: de broncode werd ondergebracht in een GitHub-organisatie op naam van Marijke's BV; het domein werd overgedragen met twee beheerders; een schone database werd aangemaakt in een EU-regio en de data gemigreerd; alle API-sleutels werden geroteerd; de resterende scope werd voltooid — met name de autorisatieregels en de betalingswebhooks, precies de twee onderdelen die niemand had geverifieerd; er werd complete overdrachtsdocumentatie geschreven; en er werd een degelijke overeenkomst van opdracht opgesteld voor toekomstige ontwikkelaars.
+Het terugkrijgen van de controle kostte vijf weken en twee formele brieven van een jurist, en slaagde uiteindelijk alleen omdat de ontwikkelaar gelukkig alsnog meewerkte. Zes werkdagen aan gerichte interventies daarna: de broncode werd ondergebracht in een GitHub-organisatie op naam van Marijke's BV; het domein werd overgedragen met twee beheerders; een schone database werd aangemaakt in een EU-regio en de data gemigreerd; alle API-sleutels werden geroteerd; de resterende scope werd voltooid - met name de autorisatieregels en de betalingswebhooks, precies de twee onderdelen die niemand had geverifieerd; er werd complete overdrachtsdocumentatie geschreven; en er werd een degelijke overeenkomst van opdracht opgesteld voor toekomstige ontwikkelaars.
 
-**Resultaat:** Planbord ging elf weken later live dan gepland. Marijke schat de directe kosten van de vertraging en juridische bijstand op circa €7.000 — tegenover een contract dat vooraf in één middag opgesteld had kunnen worden.
+**Resultaat:** Planbord ging elf weken later live dan gepland. Marijke schat de directe kosten van de vertraging en juridische bijstand op circa €7.000 - tegenover een contract dat vooraf in één middag opgesteld had kunnen worden.
 
 > *"Hij bedoelde het niet slecht. Hij had mijn domeinnaam op zijn eigen account geregistreerd omdat het sneller ging, en daarna vond hij een vaste baan."*
-> — **Marijke Doornbos, Oprichter, Planbord (Leeuwarden)**
+> - **Marijke Doornbos, Oprichter, Planbord (Leeuwarden)**
 
-**Kosten & Doorlooptijd:** €4.200 (reconstructie repositories en accounts, databasemigratie, credential-rotatie, afronding rest-scope, overdrachtsdocumentatie) — afgerond in 6 werkdagen nadat de toegang was hersteld.
+**Kosten & Doorlooptijd:** €4.200 (reconstructie repositories en accounts, databasemigratie, credential-rotatie, afronding rest-scope, overdrachtsdocumentatie) - afgerond in 6 werkdagen nadat de toegang was hersteld.
 
 ## Veelgestelde vragen
 
@@ -151,7 +151,7 @@ Koppel betalingen aan meetbare, controleerbare mijlpalen: een startaanbetaling, 
 
 ### Wat is de contractbepaling die oprichters het vaakst vergeten?
 
-Het accounts-beding. Elke account — domein, hosting, database, betaalprovider, mailserver, analytics en code-repository — moet direct op naam van uw eigen onderneming geregistreerd staan, waarbij de ontwikkelaar tijdelijke toegang krijgt en geen eigenaarschap bezit.
+Het accounts-beding. Elke account - domein, hosting, database, betaalprovider, mailserver, analytics en code-repository - moet direct op naam van uw eigen onderneming geregistreerd staan, waarbij de ontwikkelaar tijdelijke toegang krijgt en geen eigenaarschap bezit.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-🎙️ Milan Verhagen, a founder in Zwolle, built KlantStroom — a CRM tool for small sales teams — using Cursor. Pull request after pull request looked clean at a glance. Every manual test he ran passed cleanly. 😳
+🎙️ Milan Verhagen, a founder in Zwolle, built KlantStroom - a CRM tool for small sales teams - using Cursor. Pull request after pull request looked clean at a glance. Every manual test he ran passed cleanly. 😳
 
 A clean-looking app and a safe app are not the same thing. 🧠
 

@@ -34,7 +34,7 @@ An attacker reaching that page does not need to find a vulnerability in your app
 
 ## The Five Ways Admin Access Gets Reached
 
-**Security by obscurity.** The page is at a path nobody would guess, and the check is that you have to know the path. Paths are discovered — in browser history, in analytics, in a shared screenshot, by an automated scan trying common names.
+**Security by obscurity.** The page is at a path nobody would guess, and the check is that you have to know the path. Paths are discovered - in browser history, in analytics, in a shared screenshot, by an automated scan trying common names.
 
 **A flag the user controls.** An `is_admin` column on a profile table that users can update. This appears in AI-built applications with genuine regularity, because storing the flag next to the profile is the obvious design and locking that column is a separate decision nobody makes.
 
@@ -50,7 +50,7 @@ Logging in as a customer is the most useful support feature and the most dangero
 
 **It must be recorded.** Every impersonation session: who, which customer, when, for how long. This is the record that answers a customer asking whether anyone from your company looked at their data, and "we don't log that" is an answer with commercial consequences.
 
-**It should be visible.** A banner while active, so nobody forgets which account they are in — and, ideally, a notice to the customer that support accessed their account. Dutch business customers respond well to that transparency and badly to discovering it later.
+**It should be visible.** A banner while active, so nobody forgets which account they are in - and, ideally, a notice to the customer that support accessed their account. Dutch business customers respond well to that transparency and badly to discovering it later.
 
 **It should be limited.** Read-only by default, with a deliberate step to take actions. Most support questions are answered by looking.
 
@@ -76,7 +76,7 @@ You do not need an identity platform. Five things are enough.
 
 **Separate accounts for separate people,** even in a company of two. Attribution requires it.
 
-**Server-side authorisation on every administrative endpoint,** checked against a role stored where users cannot write it. Not a hidden menu — a check in the code that runs.
+**Server-side authorisation on every administrative endpoint,** checked against a role stored where users cannot write it. Not a hidden menu - a check in the code that runs.
 
 **Everything logged,** with the log kept where an administrator cannot edit it.
 
@@ -88,7 +88,7 @@ Two optional additions are worth the effort once you have business customers: re
 
 The strategic move, and the one that reduces risk permanently.
 
-Most administrative access exists to answer recurring questions: why did this email not arrive, why is this record stuck, what happened to this payment. Each of those can be a purpose-built view showing exactly what is needed — a delivery status, a job history, a payment timeline — rather than unrestricted access to everything.
+Most administrative access exists to answer recurring questions: why did this email not arrive, why is this record stuck, what happened to this payment. Each of those can be a purpose-built view showing exactly what is needed - a delivery status, a job history, a payment timeline - rather than unrestricted access to everything.
 
 Purpose-built views are safer, faster to use, and can be given to a support colleague without handing over the product. Over time the general-purpose panel shrinks to the handful of genuinely exceptional operations, which is the right size for something this dangerous.
 
@@ -104,7 +104,7 @@ Anything that succeeds is a finding, and it is a finding somebody else could hav
 
 The situation that breaks every policy: a developer is joining for three weeks to fix something, and they need to see real data to do it.
 
-**Ask whether they actually do.** A large proportion of debugging needs the shape of the data rather than the contents. A development environment with anonymised data — real structure, real volume, fictional people — resolves most of these requests and is the single best investment you can make before hiring anyone.
+**Ask whether they actually do.** A large proportion of debugging needs the shape of the data rather than the contents. A development environment with anonymised data - real structure, real volume, fictional people - resolves most of these requests and is the single best investment you can make before hiring anyone.
 
 **If real access is genuinely required, make it narrow and temporary.** Their own account, never a shared one. The smallest role that covers the work. A date when it ends, decided before it starts. And tell them it is logged, which is not distrust but the same arrangement any professional expects.
 
@@ -128,20 +128,20 @@ LaunchStudio does this as part of production readiness, and documents who can do
 
 ### An Admin Path in the Browser History of a Shared Laptop
 
-Stijn Groenewoud built Aanmelder with Lovable: event registration used by fourteen organisations around Zwolle — conference organisers, two municipalities and several trade associations. Around 60,000 registrations a year, including dietary requirements, accessibility needs and, for some events, employer details.
+Stijn Groenewoud built Aanmelder with Lovable: event registration used by fourteen organisations around Zwolle - conference organisers, two municipalities and several trade associations. Around 60,000 registrations a year, including dietary requirements, accessibility needs and, for some events, employer details.
 
 The administrative page sat at a path he considered unguessable. Access was granted by an `is_admin` column on the profile table. There was no two-factor authentication, one set of credentials was shared between Stijn and a part-time colleague, and the panel included a button exporting all registrations across all organisations as a spreadsheet, added once for a client who had asked for their own data.
 
 The problem surfaced without malice. A freelance event coordinator borrowed a laptop the part-time colleague had used, typed the first letters of the site into the address bar, and the administrative path appeared from browser history. The session was still valid. She was looking at fourteen organisations' registration lists, recognised competitors' events, and called Stijn immediately.
 
-Eight business days of work: administrative authorisation moved to a role in a table users cannot write, with every administrative endpoint checked server-side rather than by hiding menu items; two-factor authentication enforced on all administrative accounts; the shared login split into three individual accounts and two dormant accounts removed, one belonging to a developer who had finished in the previous year; session lifetime for administrative accounts shortened with re-authentication required for sensitive actions; the global export removed and replaced with a per-organisation export that is logged and attributable; impersonation rebuilt as read-only with a visible banner, a full record of every session and a monthly summary available to each organisation; an audit trail added for every administrative action; and four purpose-built support views created — registration status, email delivery, payment timeline and export history — covering what the panel had actually been used for.
+Eight business days of work: administrative authorisation moved to a role in a table users cannot write, with every administrative endpoint checked server-side rather than by hiding menu items; two-factor authentication enforced on all administrative accounts; the shared login split into three individual accounts and two dormant accounts removed, one belonging to a developer who had finished in the previous year; session lifetime for administrative accounts shortened with re-authentication required for sensitive actions; the global export removed and replaced with a per-organisation export that is logged and attributable; impersonation rebuilt as read-only with a visible banner, a full record of every session and a monthly summary available to each organisation; an audit trail added for every administrative action; and four purpose-built support views created - registration status, email delivery, payment timeline and export history - covering what the panel had actually been used for.
 
 **Result:** the coordinator's report was handled as a near-miss with a written note to the fourteen organisations, all of whom stayed. Two municipalities subsequently asked for the internal-access description during a contract renewal, which Stijn now keeps as a standing document.
 
 > *"My admin page was protected by the fact that nobody knew the address. Then somebody's browser remembered it."*
-> — **Stijn Groenewoud, Founder, Aanmelder (Zwolle)**
+> - **Stijn Groenewoud, Founder, Aanmelder (Zwolle)**
 
-**Cost & Timeline:** €3,900 (server-side authorisation, two-factor enforcement, account separation, impersonation rebuild with logging, export restriction, purpose-built support views) — completed in 8 business days.
+**Cost & Timeline:** €3,900 (server-side authorisation, two-factor enforcement, account separation, impersonation rebuild with logging, export restriction, purpose-built support views) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -175,7 +175,7 @@ Two-factor authentication on every administrative account, with separate account
       "name": "Is a secret admin URL enough protection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — paths surface via history, analytics, screenshots and scanners. Authorisation must be a server-side check against a role users cannot modify."
+        "text": "No - paths surface via history, analytics, screenshots and scanners. Authorisation must be a server-side check against a role users cannot modify."
       }
     },
     {

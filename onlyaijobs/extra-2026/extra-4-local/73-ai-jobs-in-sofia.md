@@ -89,7 +89,7 @@ Sofia lies at the foot of Vitosha mountain, with hiking and skiing within reach 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Sofia you will find few or no local vacancies there today. Use Bulgarian job portals, company career pages, INSAIT's vacancy announcements and local tech communities as primary sources. OnlyAIJobs is useful for comparing Sofia with the Netherlands — where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles — and as a method: filter by AI category and real commute rather than by title. Bulgarian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Sofia you will find few or no local vacancies there today. Use Bulgarian job portals, company career pages, INSAIT's vacancy announcements and local tech communities as primary sources. OnlyAIJobs is useful for comparing Sofia with the Netherlands - where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles - and as a method: filter by AI category and real commute rather than by title. Bulgarian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Research Institute: What It Means for Engineers
 
@@ -105,7 +105,7 @@ Sofia's product companies illustrate how AI is integrated into established softw
 
 ## Supercomputing and AI Infrastructure
 
-Access to a EuroHPC supercomputer in Sofia gives researchers and companies computing power for AI training and scientific simulation. Engineers who support HPC systems work on performance optimisation, distributed training, scheduling and data management — skills in high demand as AI models grow. European initiatives to provide AI computing for startups and research may expand opportunities in this area.
+Access to a EuroHPC supercomputer in Sofia gives researchers and companies computing power for AI training and scientific simulation. Engineers who support HPC systems work on performance optimisation, distributed training, scheduling and data management - skills in high demand as AI models grow. European initiatives to provide AI computing for startups and research may expand opportunities in this area.
 
 ## Evaluating R&D Centre Roles
 

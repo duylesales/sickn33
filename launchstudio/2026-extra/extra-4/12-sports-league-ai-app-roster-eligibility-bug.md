@@ -31,29 +31,29 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-It's Friday night, and a club secretary is filing a formal protest. Not about a referee decision — about a player. He's checking a rulebook, a matchday roster printout, and an app that was supposed to make this exact situation impossible. It didn't.
+It's Friday night, and a club secretary is filing a formal protest. Not about a referee decision - about a player. He's checking a rulebook, a matchday roster printout, and an app that was supposed to make this exact situation impossible. It didn't.
 
 ## Eligibility rules look simple until a real season tests them
 
-Amateur sports leagues run on eligibility rules: a player suspended for two games can't be picked for those two games, a player registered with one club can't turn out for another mid-season, an under-18 player can't be fielded in a senior fixture. On paper, this looks like a simple boolean — eligible or not. In practice, it's a rule that has to be enforced at the exact moment a team manager builds their matchday squad, not just displayed as a status somewhere in a player's profile.
+Amateur sports leagues run on eligibility rules: a player suspended for two games can't be picked for those two games, a player registered with one club can't turn out for another mid-season, an under-18 player can't be fielded in a senior fixture. On paper, this looks like a simple boolean - eligible or not. In practice, it's a rule that has to be enforced at the exact moment a team manager builds their matchday squad, not just displayed as a status somewhere in a player's profile.
 
-This is where a lot of AI-built league management apps quietly fall short. A tool like Cursor can generate a player profile page that shows a red "suspended" badge next to a player's name — and that badge is genuinely useful, right up until the moment the roster-builder screen doesn't actually check that flag before letting the player be added. The badge is a display feature. Blocking the action is a business-logic feature. They're built differently, and it's entirely possible to ship one without the other, because the demo where you build a roster with all-eligible players never exposes the gap.
+This is where a lot of AI-built league management apps quietly fall short. A tool like Cursor can generate a player profile page that shows a red "suspended" badge next to a player's name - and that badge is genuinely useful, right up until the moment the roster-builder screen doesn't actually check that flag before letting the player be added. The badge is a display feature. Blocking the action is a business-logic feature. They're built differently, and it's entirely possible to ship one without the other, because the demo where you build a roster with all-eligible players never exposes the gap.
 
 ## Why this bug is worse than most
 
-Most software bugs cost you time or money. This one costs a team a game, after the fact, in front of an opposing club and a league disciplinary committee. Once a protest is filed and a suspended player is confirmed to have played, most amateur leagues apply an automatic forfeit — the result gets overturned regardless of what happened on the pitch. That's a real consequence for players who trained all week, for a coach who set a game plan, and for a club's standing in the table. It's also a visible, embarrassing failure for the app itself, right at the moment the club needed to trust it most.
+Most software bugs cost you time or money. This one costs a team a game, after the fact, in front of an opposing club and a league disciplinary committee. Once a protest is filed and a suspended player is confirmed to have played, most amateur leagues apply an automatic forfeit - the result gets overturned regardless of what happened on the pitch. That's a real consequence for players who trained all week, for a coach who set a game plan, and for a club's standing in the table. It's also a visible, embarrassing failure for the app itself, right at the moment the club needed to trust it most.
 
-The deeper issue is that eligibility isn't one rule — it's several, and they interact. A suspension has a start and end date. A transfer window changes which club a player belongs to. An age-group rule depends on a birth date and the specific competition. A well-built system checks all of these at the point of roster submission, not just at profile display time, and blocks the submission outright if any rule is violated — with a clear message explaining why, so the team manager isn't left guessing.
+The deeper issue is that eligibility isn't one rule - it's several, and they interact. A suspension has a start and end date. A transfer window changes which club a player belongs to. An age-group rule depends on a birth date and the specific competition. A well-built system checks all of these at the point of roster submission, not just at profile display time, and blocks the submission outright if any rule is violated - with a clear message explaining why, so the team manager isn't left guessing.
 
 ## What it takes to build eligibility checks that actually hold up
 
-Getting this right requires roster submission logic that runs a live validation pass against every player added — checking suspension dates, transfer status, and age-group rules against the specific competition and matchday — and rejects the submission with a specific reason if anything fails. It's not a large feature in isolation, but it has to sit correctly between the player database and the roster-building interface, which is exactly the kind of integration work that gets rushed in a fast AI build. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and this category of "the display is right but the enforcement isn't" bug is one they see constantly across very different industries — because it's a pattern in how prototyping tools get built, not a one-off mistake.
+Getting this right requires roster submission logic that runs a live validation pass against every player added - checking suspension dates, transfer status, and age-group rules against the specific competition and matchday - and rejects the submission with a specific reason if anything fails. It's not a large feature in isolation, but it has to sit correctly between the player database and the roster-building interface, which is exactly the kind of integration work that gets rushed in a fast AI build. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and this category of "the display is right but the enforcement isn't" bug is one they see constantly across very different industries - because it's a pattern in how prototyping tools get built, not a one-off mistake.
 
 Manifera's engineering center on Pho Quang Street in Ho Chi Minh City has handled backend logic work of this kind for a range of clients, and the same discipline applies whether the deadline is a corporate rollout or a Saturday morning kickoff. If you're unsure whether your own app has this exact gap, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) before your league finds out for you.
 
 ## Eligibility Can Change Between Submission and Kickoff
 
-A validation check at the moment of roster submission is a snapshot, not a guarantee — and rosters are often submitted days before a match is actually played. A disciplinary committee can issue a suspension on a Thursday for an incident reviewed after a prior weekend's games, well after a team manager submitted their roster on Wednesday. A transfer can be approved or rejected in that same window. If the system only ever checks eligibility once, at the moment of submission, a roster that was fully valid when it was built can quietly become invalid before the match starts, and nothing in the app will know.
+A validation check at the moment of roster submission is a snapshot, not a guarantee - and rosters are often submitted days before a match is actually played. A disciplinary committee can issue a suspension on a Thursday for an incident reviewed after a prior weekend's games, well after a team manager submitted their roster on Wednesday. A transfer can be approved or rejected in that same window. If the system only ever checks eligibility once, at the moment of submission, a roster that was fully valid when it was built can quietly become invalid before the match starts, and nothing in the app will know.
 
 The fix is treating eligibility as something that needs re-checking, not just checking once well:
 
@@ -73,22 +73,22 @@ async function revalidateRosterBeforeKickoff(matchId) {
 }
 ```
 
-This runs as a scheduled pass a few hours before kickoff, and separately whenever a suspension or transfer record changes after a roster has already been submitted — so a late-arriving disciplinary ruling gets flagged to the team manager directly, instead of surfacing for the first time as a post-match protest.
+This runs as a scheduled pass a few hours before kickoff, and separately whenever a suspension or transfer record changes after a roster has already been submitted - so a late-arriving disciplinary ruling gets flagged to the team manager directly, instead of surfacing for the first time as a post-match protest.
 
 ## Real example
 
 ### An AI-Native Founder in Action: A Badge That Didn't Actually Stop Anything
 
-Kaylee Smit, a founder in Breda, built CompetitieBeheer — an amateur sports league management app — using Cursor. The app handled fixture scheduling, standings, and player registration well, and included a suspension status badge that showed clearly on a player's profile. What it didn't do was check that suspension status when a team manager built their matchday roster. The roster-builder screen pulled from the full club player list without cross-referencing active suspensions at all.
+Kaylee Smit, a founder in Breda, built CompetitieBeheer - an amateur sports league management app - using Cursor. The app handled fixture scheduling, standings, and player registration well, and included a suspension status badge that showed clearly on a player's profile. What it didn't do was check that suspension status when a team manager built their matchday roster. The roster-builder screen pulled from the full club player list without cross-referencing active suspensions at all.
 
 A team manager, unaware a player was serving a one-game ban, added him to the matchday squad. He played the full match. The opposing club, aware of the suspension from a prior disciplinary notice, filed a formal protest after the game. The league committee reviewed the case and applied an automatic forfeit, overturning a result the team had won on the pitch. Kaylee brought CompetitieBeheer to LaunchStudio afterward. Engineers rebuilt the roster submission flow to run a live eligibility check against suspension dates, transfer status, and age-group rules at the moment a player is added, blocking the submission with a specific reason if any rule fails, rather than relying on a passive status badge.
 
 **Result:** CompetitieBeheer now blocks ineligible players at the point of roster submission across all its pilot leagues, and no club using the updated system has faced a forfeit due to an eligibility oversight since the fix shipped.
 
-> *"The badge was right there on the screen. Everyone assumed that meant the system was protecting us. It wasn't — it was just showing us information and trusting a human to act on it correctly every single time, which of course eventually didn't happen."*
-> — **Kaylee Smit, Founder, CompetitieBeheer (Breda)**
+> *"The badge was right there on the screen. Everyone assumed that meant the system was protecting us. It wasn't - it was just showing us information and trusting a human to act on it correctly every single time, which of course eventually didn't happen."*
+> - **Kaylee Smit, Founder, CompetitieBeheer (Breda)**
 
-**Cost & Timeline:** €480 (roster eligibility validation logic across suspension, transfer, and age-group rules) — completed in 3 business days.
+**Cost & Timeline:** €480 (roster eligibility validation logic across suspension, transfer, and age-group rules) - completed in 3 business days.
 
 ---
 
@@ -96,27 +96,27 @@ A team manager, unaware a player was serving a one-game ban, added him to the ma
 
 ### Why would an app show a suspension badge but still let a suspended player be added to a roster?
 
-Because displaying a status and enforcing a rule are two separate pieces of logic — a badge is a read-only display feature, while blocking a roster submission requires active validation logic at the exact point of that action, which prototyping tools don't build automatically.
+Because displaying a status and enforcing a rule are two separate pieces of logic - a badge is a read-only display feature, while blocking a roster submission requires active validation logic at the exact point of that action, which prototyping tools don't build automatically.
 
 ### Can this kind of bug affect other rule types besides suspensions?
 
-Yes — the same gap commonly shows up with transfer windows, age-group eligibility, and multi-club registration restrictions, since they're all rules that need to be checked live rather than just displayed.
+Yes - the same gap commonly shows up with transfer windows, age-group eligibility, and multi-club registration restrictions, since they're all rules that need to be checked live rather than just displayed.
 
 ### How does LaunchStudio find this kind of hidden business-logic gap?
 
-LaunchStudio's engineers, backed by Manifera's experience across 160+ delivered projects, review the actual data flow between your database and your user-facing actions, not just the interface — which is how display-only bugs like this get caught before a real user finds them.
+LaunchStudio's engineers, backed by Manifera's experience across 160+ delivered projects, review the actual data flow between your database and your user-facing actions, not just the interface - which is how display-only bugs like this get caught before a real user finds them.
 
 ### Is this the kind of fix that requires rebuilding my whole app?
 
-No — it's typically a targeted backend fix to the specific action (like roster submission) that's missing validation, layered onto your existing Cursor-built frontend without changing how it looks or feels.
+No - it's typically a targeted backend fix to the specific action (like roster submission) that's missing validation, layered onto your existing Cursor-built frontend without changing how it looks or feels.
 
 ### What if a suspension is issued after a roster has already passed the eligibility check?
 
-A one-time check at submission only reflects what was true at that moment — a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff, so a late disciplinary ruling or transfer decision doesn't slip through a check that already passed days earlier.
+A one-time check at submission only reflects what was true at that moment - a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff, so a late disciplinary ruling or transfer decision doesn't slip through a check that already passed days earlier.
 
 ### Does LaunchStudio work with sports and league management platforms specifically?
 
-LaunchStudio doesn't specialize in one vertical — Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same rigorous review process to any AI-built prototype, regardless of industry.
+LaunchStudio doesn't specialize in one vertical - Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same rigorous review process to any AI-built prototype, regardless of industry.
 
 <script type="application/ld+json">
 {
@@ -126,12 +126,12 @@ LaunchStudio doesn't specialize in one vertical — Manifera's engineers, includ
     {
       "@type": "Question",
       "name": "Why would an app show a suspension badge but still let a suspended player be added to a roster?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Displaying a status and enforcing a rule are separate pieces of logic — a badge is read-only, while blocking a submission requires active validation at the point of that action, which prototyping tools don't build automatically." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Displaying a status and enforcing a rule are separate pieces of logic - a badge is read-only, while blocking a submission requires active validation at the point of that action, which prototyping tools don't build automatically." }
     },
     {
       "@type": "Question",
       "name": "Can this kind of bug affect other rule types besides suspensions?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — the same gap commonly shows up with transfer windows, age-group eligibility, and multi-club registration restrictions." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - the same gap commonly shows up with transfer windows, age-group eligibility, and multi-club registration restrictions." }
     },
     {
       "@type": "Question",
@@ -141,17 +141,17 @@ LaunchStudio doesn't specialize in one vertical — Manifera's engineers, includ
     {
       "@type": "Question",
       "name": "Is this the kind of fix that requires rebuilding my whole app?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No — it's typically a targeted backend fix layered onto your existing frontend without changing how it looks or feels." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No - it's typically a targeted backend fix layered onto your existing frontend without changing how it looks or feels." }
     },
     {
       "@type": "Question",
       "name": "What if a suspension is issued after a roster has already passed the eligibility check?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A one-time check at submission only reflects what was true at that moment — a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff." }
+      "acceptedAnswer": { "@type": "Answer", "text": "A one-time check at submission only reflects what was true at that moment - a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff." }
     },
     {
       "@type": "Question",
       "name": "Does LaunchStudio work with sports and league management platforms specifically?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio doesn't specialize in one vertical — Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same review process to any AI-built prototype." }
+      "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio doesn't specialize in one vertical - Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same review process to any AI-built prototype." }
     }
   ]
 }

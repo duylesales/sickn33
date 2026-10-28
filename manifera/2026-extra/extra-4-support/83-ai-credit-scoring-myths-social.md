@@ -1,4 +1,4 @@
-🚨 "If Alternative Data Genuinely Predicts Repayment Behavior Well, It's Automati..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "If Alternative Data Genuinely Predicts Repayment Behavior Well, It's Automati..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "If Alternative Data Genuinely Predicts Repayment Behavior Well, It's Automatically Appropriate to Use for Credit Decisions":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

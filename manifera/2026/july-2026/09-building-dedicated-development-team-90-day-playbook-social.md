@@ -1,6 +1,6 @@
 📋 **The 90-Day Playbook for building a dedicated development team:**
 
-Most dedicated team engagements fail not because of bad engineers — but because of bad onboarding. Here's the blueprint:
+Most dedicated team engagements fail not because of bad engineers - but because of bad onboarding. Here's the blueprint:
 
 **Days 1-14: Partner Selection**
 → Define exact roles ("Senior React + Node.js", not "3 developers")

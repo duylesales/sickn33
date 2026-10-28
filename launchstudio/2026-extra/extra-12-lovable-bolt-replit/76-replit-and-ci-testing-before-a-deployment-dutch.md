@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Deployen vanuit Replit is een knop. Dat is de aantrekkingskracht, en voor een prototype is het precies goed — de kortst mogelijke weg van een wijziging naar zien dat ze werkt.
+Deployen vanuit Replit is een knop. Dat is de aantrekkingskracht, en voor een prototype is het precies goed - de kortst mogelijke weg van een wijziging naar zien dat ze werkt.
 
 Voor een product met klanten is het ook een weg waarop niets staat. Wat er in het project zit, gaat live, inclusief de wijziging van drie minuten geleden die niet is gedraaid, de syntaxfout in een bestand dat niemand opende, en het geheim dat iemand tijdens het debuggen in een configuratie plakte.
 
@@ -34,7 +34,7 @@ De volgorde doet ertoe, omdat elke controle goedkoper is dan de volgende en ande
 
 **Slagen de linter en de typecontrole?** Ongedefinieerde variabelen, ongebruikte imports, verkeerde types, kolommen die niet bestaan. Gratis, snel, en ze vangen de verzonnen interfaces op die gegenereerde code oplevert.
 
-**Slagen de tests?** De proportionele suite die elders in deze reeks wordt beschreven — autorisatie, geld, de hoofdflow. Dit is de controle die een gedragswijziging opvangt die niemand bedoelde.
+**Slagen de tests?** De proportionele suite die elders in deze reeks wordt beschreven - autorisatie, geld, de hoofdflow. Dit is de controle die een gedragswijziging opvangt die niemand bedoelde.
 
 **Zit er een geheim in de code?** Een scan op patronen van inloggegevens in de gebouwde uitvoer, die de build laat falen wanneer er een verschijnt. Gezien hoe vaak deze reeks is teruggekomen op sleutels in frontendbundels, verdient deze haar plek.
 
@@ -44,7 +44,7 @@ Vier controles, onder drie minuten, en ze vangen het overgrote deel op van wat a
 
 De praktische vraag voor een product dat op een prototypingplatform leeft: waar gebeurt CI eigenlijk?
 
-Het realistische antwoord voor de meesten is de eigen automatisering van een gehoste repository — een workflowbestand in de repository dat bij elke push draait. Het is op deze schaal gratis, vraagt geen infrastructuur, en werkt ongeacht waar het product wordt gedeployd.
+Het realistische antwoord voor de meesten is de eigen automatisering van een gehoste repository - een workflowbestand in de repository dat bij elke push draait. Het is op deze schaal gratis, vraagt geen infrastructuur, en werkt ongeacht waar het product wordt gedeployd.
 
 Dat impliceert de opzet die deze reeks steeds aanbeveelt: de code leeft in een repository, en het platform deployt daarvandaan in plaats van de plek te zijn waar de code leeft. Direct deployen vanuit een bewerksessie betekent dat er niets te controleren is voordat het gebeurt.
 
@@ -54,9 +54,9 @@ De workflow is eenvoudig: bij elke push installeren, bouwen, linten, types contr
 
 Een controle die kan worden genegeerd, is geen poort.
 
-Twee beslissingen maken haar echt. Een falende controle blokkeert de deployment — geen waarschuwing, geen melding, een weigering. En de controles zijn snel genoeg dat erop wachten geen reden is om ze te omzeilen; duurt de suite vijftien minuten, dan wordt ze omzeild op de middag dat het ertoe doet.
+Twee beslissingen maken haar echt. Een falende controle blokkeert de deployment - geen waarschuwing, geen melding, een weigering. En de controles zijn snel genoeg dat erop wachten geen reden is om ze te omzeilen; duurt de suite vijftien minuten, dan wordt ze omzeild op de middag dat het ertoe doet.
 
-Het gevolg is dat een controle die af en toe faalt, moet worden opgelost of verwijderd. Een onbetrouwbare test leert u opnieuw te draaien en door te gaan, wat u traint de poort volledig te negeren — en op dat punt hebt u de kosten van CI zonder enig voordeel.
+Het gevolg is dat een controle die af en toe faalt, moet worden opgelost of verwijderd. Een onbetrouwbare test leert u opnieuw te draaien en door te gaan, wat u traint de poort volledig te negeren - en op dat punt hebt u de kosten van CI zonder enig voordeel.
 
 ## Voeg Controles Toe op Basis van Incidenten
 
@@ -70,7 +70,7 @@ Zo blijft een pipeline proportioneel. Elke controle bestaat omdat er iets gebeur
 
 Eén toevoeging naast controleren: een draaiende kopie van elke branch, automatisch gedeployd, op een eigen URL.
 
-Voor een solo-oprichter is dit de mogelijkheid om een wijziging in een echte omgeving te bekijken voordat u haar samenvoegt, wat de dingen opvangt die geen geautomatiseerde controle kan opvangen — een layout die op een telefoon breekt, een flow die verwarrend is, een bericht in de verkeerde toon.
+Voor een solo-oprichter is dit de mogelijkheid om een wijziging in een echte omgeving te bekijken voordat u haar samenvoegt, wat de dingen opvangt die geen geautomatiseerde controle kan opvangen - een layout die op een telefoon breekt, een flow die verwarrend is, een bericht in de verkeerde toon.
 
 Voor een team van twee is het hoe de ander reviewt zonder iets lokaal te draaien.
 
@@ -88,11 +88,11 @@ Vier dingen om voor later te bewaren.
 
 **Deployment naar meerdere omgevingen met goedkeuringen.** Een stagingomgeving is het hebben waard; een promotieworkflow met goedkeuringspoorten is ceremonie voor een team van één.
 
-**Prestatiebudgetten en visuele regressie.** Uiteindelijk nuttig, in het begin luidruchtig, en beide leveren fouten op die oordeel vragen in plaats van een fix — en dat is precies de eigenschap waardoor een poort wordt genegeerd.
+**Prestatiebudgetten en visuele regressie.** Uiteindelijk nuttig, in het begin luidruchtig, en beide leveren fouten op die oordeel vragen in plaats van een fix - en dat is precies de eigenschap waardoor een poort wordt genegeerd.
 
 **Alles wat onderhoud vraagt dat u niet gaat doen.** Een controle die om de paar weken breekt en aandacht nodig heeft, is een controle die wordt uitgeschakeld.
 
-De proportionele pipeline voor een klein product bestaat uit de vier hierboven genoemde controles plus wat incidenten hebben toegevoegd, draaiend in drie minuten, zonder aandacht nodig tussen fouten in. Dat is genoeg om de spanning uit deployen te halen, en dat is het hele punt — en elke toevoeging daarna moet haar plek verdienen door iets te voorkomen wat echt is gebeurd.
+De proportionele pipeline voor een klein product bestaat uit de vier hierboven genoemde controles plus wat incidenten hebben toegevoegd, draaiend in drie minuten, zonder aandacht nodig tussen fouten in. Dat is genoeg om de spanning uit deployen te halen, en dat is het hele punt - en elke toevoeging daarna moet haar plek verdienen door iets te voorkomen wat echt is gebeurd.
 
 ## Migraties Hebben een Eigen Poort Nodig
 
@@ -110,15 +110,15 @@ Drie controles zijn het toevoegen waard zodra uw product een schema heeft dat he
 
 Voeg een vierde toe als uw data groot is: dat de migratie binnen een redelijke tijd klaar is bij een realistisch volume, omdat een statement dat een tabel elf minuten vergrendelt een storing is, ongeacht of het slaagt.
 
-Niets hiervan is uitgebreid, en samen dichten ze het gat dat overblijft na de gewone controles — namelijk dat de gevaarlijkste wijziging die uw product maakt, de wijziging is die uw testsuite niet ongedaan kan maken.
+Niets hiervan is uitgebreid, en samen dichten ze het gat dat overblijft na de gewone controles - namelijk dat de gevaarlijkste wijziging die uw product maakt, de wijziging is die uw testsuite niet ongedaan kan maken.
 
-Hetzelfde principe geldt voor elke onomkeerbare actie die een deployment kan veroorzaken — een bulkmail, een afschrijving, het verwijderen van bestanden. Als een release het kan doen, moet de pipeline het weten, en moet een mens er bewust mee hebben ingestemd.
+Hetzelfde principe geldt voor elke onomkeerbare actie die een deployment kan veroorzaken - een bulkmail, een afschrijving, het verwijderen van bestanden. Als een release het kan doen, moet de pipeline het weten, en moet een mens er bewust mee hebben ingestemd.
 
 ## Dit Inrichten
 
 Voor een Replit-product is dit doorgaans één dag: de code in een repository met het platform dat daarvandaan deployt in plaats van vanuit een bewerksessie, een workflow die bij elke push installeert, bouwt, lint, types controleert, test en op geheimen scant, deployment afhankelijk van het slagen van alles, controles onder ongeveer drie minuten gehouden zodat ze nooit worden omzeild, onbetrouwbare tests opgelost of verwijderd, previewdeployments per branch met eigen inloggegevens en beschermd tegen openbare toegang, en een gewoonte om een controle toe te voegen wanneer een incident een gat blootlegt.
 
-LaunchStudio richt dit in als onderdeel van productiegereedheid, en het is meestal de verandering waardoor oprichters op vrijdag durven te deployen. De engineers zijn van Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio richt dit in als onderdeel van productiegereedheid, en het is meestal de verandering waardoor oprichters op vrijdag durven te deployen. De engineers zijn van Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons wat er nu tussen uw code en uw klanten staat](https://launchstudio.eu/nl/#contact). Voor veel producten is het eerlijke antwoord: niets.
 
@@ -130,7 +130,7 @@ Maud Terlouw bouwde Rittenregistratie op Replit: registratie van ritten en onkos
 
 Ze deployde meerdere keren per dag met de knop van het platform, vanuit de bewerksessie. Er waren geen tests en geen controles.
 
-Op een donderdagmiddag maakte ze een kleine wijziging aan de onkostenberekening en deployde om 16:25, en vertrok daarna om haar kinderen op te halen. De wijziging bevatte een verwijzing naar een variabele die in die scope niet bestond — het soort fout dat een typecontrole direct meldt en een mens die snel leest niet ziet.
+Op een donderdagmiddag maakte ze een kleine wijziging aan de onkostenberekening en deployde om 16:25, en vertrok daarna om haar kinderen op te halen. De wijziging bevatte een verwijzing naar een variabele die in die scope niet bestond - het soort fout dat een typecontrole direct meldt en een mens die snel leest niet ziet.
 
 De applicatie startte niet op. Tussen 16:25 en 19:40, toen het bericht van een zorgverlener haar eindelijk bereikte, konden zo'n 400 zorgverleners die hun dienst afsloten de ritten van die dag niet registreren. De meesten gaven het op; twee organisaties lieten medewerkers ze op papier noteren en de week erna opnieuw invoeren.
 
@@ -139,9 +139,9 @@ Twee werkdagen: de code naar een repository verplaatst, met het platform dat dep
 **Resultaat:** de pipeline heeft in het jaar daarna 14 deployments tegengehouden, waarvan 9 build- of typefouten die het product precies zoals bij het oorspronkelijke incident zouden hebben gebroken. Maud merkt op dat ze nu vaker deployt in plaats van minder, omdat de beslissing eruit is gehaald.
 
 > *"Ik deployde om vijf voor half vijf en ging mijn kinderen ophalen. Vierhonderd zorgverleners konden drie uur lang hun ritten niet registreren, en de fout was een variabelenaam die een typecontrole had opgevangen voordat ik de kamer uit was."*
-> — **Maud Terlouw, Oprichter, Rittenregistratie (Gouda)**
+> - **Maud Terlouw, Oprichter, Rittenregistratie (Gouda)**
 
-**Kosten & Doorlooptijd:** €2.600 (deployment vanuit de repository, CI-workflow met build, lint, typecontrole, tests en scannen op geheimen, deployment afhankelijk van de controles, suite van 31 tests, previewdeployments met geïsoleerde inloggegevens, uptimemonitoring) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.600 (deployment vanuit de repository, CI-workflow met build, lint, typecontrole, tests en scannen op geheimen, deployment afhankelijk van de controles, suite van 31 tests, previewdeployments met geïsoleerde inloggegevens, uptimemonitoring) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -163,7 +163,7 @@ Los haar op of verwijder haar. Een onbetrouwbare controle leert u opnieuw te dra
 
 ### Welke controles voeg ik toe na de basis?
 
-Die waartoe een incident u aanzet. Een ontbrekende migratie, een endpoint zonder autorisatie, een kwetsbare dependency, een te grote bundel — elk wordt een controle nadat het één keer is gebeurd.
+Die waartoe een incident u aanzet. Een ontbrekende migratie, een endpoint zonder autorisatie, een kwetsbare dependency, een te grote bundel - elk wordt een controle nadat het één keer is gebeurd.
 
 <script type="application/ld+json">
 {
@@ -175,7 +175,7 @@ Die waartoe een incident u aanzet. Een ontbrekende migratie, een endpoint zonder
       "name": "Wat is de eerste CI-controle die het toevoegen waard is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat het project bouwt — negentig seconden, geen tests nodig, en het voorkomt de meest voorkomende kapotte deployment."
+        "text": "Dat het project bouwt - negentig seconden, geen tests nodig, en het voorkomt de meest voorkomende kapotte deployment."
       }
     },
     {
@@ -207,7 +207,7 @@ Die waartoe een incident u aanzet. Een ontbrekende migratie, een endpoint zonder
       "name": "Welke controles komen na build, lint en tests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die waar een incident om vraagt — consistentie van migraties, autorisatie tussen accounts, dependency-audits, limieten op bundelgrootte."
+        "text": "Die waar een incident om vraagt - consistentie van migraties, autorisatie tussen accounts, dependency-audits, limieten op bundelgrootte."
       }
     }
   ]

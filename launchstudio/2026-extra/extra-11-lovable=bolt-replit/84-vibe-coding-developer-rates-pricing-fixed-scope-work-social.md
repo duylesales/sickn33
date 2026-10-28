@@ -1,4 +1,4 @@
-🚨 Sem Bruggeman, a freelance vibe coding developer in Groningen, billed €55 an hour. For one driving-school founder he spent eleven hours fixing access rules, removing a service key from the frontend, testing a restore and securing the payment webhook. He invoiced €605 — and, after a discount nobody asked for, collected €340. 😳
+🚨 Sem Bruggeman, a freelance vibe coding developer in Groningen, billed €55 an hour. For one driving-school founder he spent eleven hours fixing access rules, removing a service key from the frontend, testing a restore and securing the payment webhook. He invoiced €605 - and, after a discount nobody asked for, collected €340. 😳
 
 Six weeks later he learned those fixed access rules had won his client a contract with eleven driving schools. Here's why hourly billing punishes good work: 🧠
 
@@ -10,7 +10,7 @@ Six weeks later he learned those fixed access rules had won his client a contrac
 ✅ Price the outcome, not the effort
 ✅ A paid assessment, credited against any engagement that follows
 ✅ Named packages with fixed prices, delivery times and written exclusions
-✅ Maintenance offered separately — and every change quoted in writing first
+✅ Maintenance offered separately - and every change quoted in writing first
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we also work white-label with freelance developers who want production-grade delivery behind their own name. 🤝
 

@@ -6,9 +6,9 @@
 ❌ **Rigid Off-the-Shelf SaaS Lock-In:** Generic SaaS tools force custom business logic into restrictive templates with escalating per-seat fees.
 
 **The Manifera Solution:**
-✅ **Your team has quietly built an elaborate spreadsheet or manual process around the software's limitations:** — a clear sign the tool doesn't actually fit how the business operates.
-✅ **You've customized the same off-the-shelf tool so extensively, over so many years, that routine vendor upgrades break your workflows:** — meaning you're bearing custom-software maintenance risk without custom-software architectural control.
-✅ **Multiple disconnected tools are stitched together, precariously, with manual data entry:** — a symptom of no single generic product covering your actual end-to-end process.
+✅ **Your team has quietly built an elaborate spreadsheet or manual process around the software's limitations:** - a clear sign the tool doesn't actually fit how the business operates.
+✅ **You've customized the same off-the-shelf tool so extensively, over so many years, that routine vendor upgrades break your workflows:** - meaning you're bearing custom-software maintenance risk without custom-software architectural control.
+✅ **Multiple disconnected tools are stitched together, precariously, with manual data entry:** - a symptom of no single generic product covering your actual end-to-end process.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

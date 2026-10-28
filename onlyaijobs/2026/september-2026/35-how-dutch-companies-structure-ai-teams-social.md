@@ -2,7 +2,7 @@
 
 👥 The lone generalist: lots of autonomy, few sparring partners. The small, mixed team: broad learning, slower depth. The specialised department: more depth, more dependence on other teams.
 
-✅ Ask explicitly about team size and composition — it tells you more than the job ad.
+✅ Ask explicitly about team size and composition - it tells you more than the job ad.
 
 📖 Read the full story: https://onlyaijobs.eu/blog/how-dutch-companies-structure-ai-teams
 

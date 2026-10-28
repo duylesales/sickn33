@@ -1,4 +1,4 @@
-🚨 Bo Klaassen built Groeiplan in Lovable: a goal-tracking tool for 90 business coaches across Utrecht and Amersfoort. She spent three months polishing the UI, social marketing, and a second language, while postponing backend security. When an enterprise coaching network evaluated the app, missing access rules allowed coaches to view other practices' client records — nearly destroying her launch. 😳
+🚨 Bo Klaassen built Groeiplan in Lovable: a goal-tracking tool for 90 business coaches across Utrecht and Amersfoort. She spent three months polishing the UI, social marketing, and a second language, while postponing backend security. When an enterprise coaching network evaluated the app, missing access rules allowed coaches to view other practices' client records - nearly destroying her launch. 😳
 
 Founders routinely polish visual features first and leave security for last. That is backwards. Here is the correct order of work: 🧠
 

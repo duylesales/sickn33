@@ -55,7 +55,7 @@ Het instinct om de missie op de eerste plaats te zetten dat oprichters van non-p
 
 [LaunchStudio](https://launchstudio.eu/nl/) past dezelfde zorgvuldigheid toe op AI-tools voor non-profitorganisaties als op elke commerciële opdracht, waarbij gegevens van donateurs en begunstigden worden behandeld met de gevoeligheid die ze daadwerkelijk dragen in plaats van de lagere prioriteit die hun niet-commerciële framing anders zou suggereren, ondersteund door Manifera's engineeringdiscipline in opdrachten met gevoelige gegevens ongeacht de sector.
 
-[Laat de AI-tool van uw non-profitorganisatie beoordelen met de zorgvuldigheid die de gegevens daadwerkelijk verdienen](https://launchstudio.eu/nl/#contact) — missie eerst betekent niet beveiliging laatst.
+[Laat de AI-tool van uw non-profitorganisatie beoordelen met de zorgvuldigheid die de gegevens daadwerkelijk verdienen](https://launchstudio.eu/nl/#contact) - missie eerst betekent niet beveiliging laatst.
 
 ## Waar te beginnen bij een krap budget: Een prioriteitsvolgorde
 
@@ -83,10 +83,10 @@ De functie voor het matchen van vrijwilligers van HulpNetwerk was zo gebouwd dat
 
 **Resultaat:** LaunchStudio implementeerde een juiste toegangssegmentatie, waarbij de details over de omstandigheden van begonnenstigden specifiek werden beperkt tot coördinatoren, terwijl algemene vrijwilligers alleen de minimale informatie kregen die nodig was om interesse in een match te tonen. Hiermee werd een kloof gedicht die oprecht gevoelige persoonlijke omstandigheden had blootgesteld aan een veel bredere groep dan Marijke ooit had bedoeld.
 
-> *"We staken elke beschikbare euro in de daadwerkelijke missie, wat voelde als het verantwoordelijke ding om te doen. Er was iemand voor nodig die er specifiek op wees dat de gevoelige omstandigheden van onze begunstigden zichtbaar waren voor tientallen vrijwilligers die dat nooit hoefden te zien, voordat ik me realiseerde dat beveiliging niet losstond van de missie — het beschermde het vertrouwen waar de hele missie van afhangt."*
-> — **Marijke Bosman, Oprichter, HulpNetwerk (Deventer)**
+> *"We staken elke beschikbare euro in de daadwerkelijke missie, wat voelde als het verantwoordelijke ding om te doen. Er was iemand voor nodig die er specifiek op wees dat de gevoelige omstandigheden van onze begunstigden zichtbaar waren voor tientallen vrijwilligers die dat nooit hoefden te zien, voordat ik me realiseerde dat beveiliging niet losstond van de missie - het beschermde het vertrouwen waar de hele missie van afhangt."*
+> - **Marijke Bosman, Oprichter, HulpNetwerk (Deventer)**
 
-**Kosten en tijdlijn:** € 1.300 (beoordeling en herstel van toegangscontrole tegen non-profit-tarief) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (beoordeling en herstel van toegangscontrole tegen non-profit-tarief) - voltooid in 5 werkdagen.
 
 ---
 
@@ -122,7 +122,7 @@ Opdrachten voor non-profitorganisaties worden afgebakend met dezelfde gelaagde, 
       "name": "Betekent een kleiner non-profit budget dat productiegereedheid niet haalbaar is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gelaagde prioritering geldt direct — het aanpakken van hiaten met de hoogste consequenties is haalbaar op een beperkt budget."
+        "text": "Gelaagde prioritering geldt direct - het aanpakken van hiaten met de hoogste consequenties is haalbaar op een beperkt budget."
       }
     },
     {

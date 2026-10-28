@@ -119,9 +119,9 @@ They implemented Row Level Security (RLS) policies at the database level.
 **Result:** The manual filtering code in Node.js was deleted entirely. Now, when the junior paralegal queried the AI, the database itself mathematically rejected any vectors belonging to the Senior Partner. The security was bulletproof, the query latency dropped by 30% (because there was no network hop between two different databases), and the law firm signed a multi-year enterprise agreement.
 
 > *"We chose our AI stack based on what was popular on Twitter, not based on enterprise architecture requirements. LaunchStudio showed us that the 'easiest' tool is rarely the 'best' tool for production. Migrating to pgvector saved our biggest contract because it gave us the mathematical security our clients demanded."*
-> — **Martin Becker, CTO, LexAI (Frankfurt)**
+> - **Martin Becker, CTO, LexAI (Frankfurt)**
 
-**Cost & Timeline:** €15,500 (Launch & Grow Package with Architecture Migration Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €15,500 (Launch & Grow Package with Architecture Migration Add-on) - production-ready and deployed in 14 business days.
 
 ---
 
@@ -181,7 +181,7 @@ They can, specifically via "Prompt Injection." If you build a LangChain agent th
       "name": "Does the Vercel AI SDK only work with Next.js?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The core streaming hooks work with React, Svelte, and Vue. However, the most powerful features—like Generative UI (streaming interactive server components)—heavily rely on the Server-Side Rendering architecture pioneered by Next.js."
+        "text": "The core streaming hooks work with React, Svelte, and Vue. However, the most powerful features - like Generative UI (streaming interactive server components) - heavily rely on the Server-Side Rendering architecture pioneered by Next.js."
       }
     },
     {

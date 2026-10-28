@@ -1,4 +1,4 @@
-🚨 Sebastian Krammer had een idee voor TicketFlow, een tool voor evenemententicketing, in Zürich — een gedeeltelijk Lovable-prototype met een paar schermen en geen werkende backend. Eén freelancer vroeg hem € 14.000. Een traditioneel bureau zei "bel ons voor enterprise-prijzen." Geen van beiden vertelde hem waar hij eigenlijk voor zou betalen. 😳
+🚨 Sebastian Krammer had een idee voor TicketFlow, een tool voor evenemententicketing, in Zürich - een gedeeltelijk Lovable-prototype met een paar schermen en geen werkende backend. Eén freelancer vroeg hem € 14.000. Een traditioneel bureau zei "bel ons voor enterprise-prijzen." Geen van beiden vertelde hem waar hij eigenlijk voor zou betalen. 😳
 
 De meeste oprichters berekenen het AI-toolabonnement van € 20 per maand en denken dat dat het bedrag is. Dat is het niet. 🧠
 
@@ -13,7 +13,7 @@ De meeste oprichters berekenen het AI-toolabonnement van € 20 per maand en den
 
 Bij **LaunchStudio** zorgt Manifera's 11+ jaar ervaring in productie-engineering vanuit Ho Chi Minh City ervoor dat we exact bepalen wat er ontbreekt in plaats van een 'black box' te offreren. 🛡️
 
-Sebastian's resultaat: een volledige productiebouw — boeking, betalingen, accounts, deployment — voor een fractie van de offerte van de freelancer, opgeleverd in 11 werkdagen. 🚀
+Sebastian's resultaat: een volledige productiebouw - boeking, betalingen, accounts, deployment - voor een fractie van de offerte van de freelancer, opgeleverd in 11 werkdagen. 🚀
 
 👉 Benieuwd wat het daadwerkelijk kost om uw AI-app naar productie te brengen?: https://launchstudio.eu/nl/blog/what-it-costs-to-build-an-ai-app
 

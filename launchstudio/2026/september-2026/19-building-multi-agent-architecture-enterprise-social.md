@@ -1,6 +1,6 @@
-🚨 Benjamin, an operations lead, used **Lovable** to build a supply chain planner — two autonomous agents got stuck in a loop, endlessly messaging each other to "double-check" the same inventory figure and draining his API budget overnight. 📦
+🚨 Benjamin, an operations lead, used **Lovable** to build a supply chain planner - two autonomous agents got stuck in a loop, endlessly messaging each other to "double-check" the same inventory figure and draining his API budget overnight. 📦
 
-A single "God Agent" juggling dozens of tools collapses under real edge cases — the fix is small, specialized agents with hard guardrails. 🧠
+A single "God Agent" juggling dozens of tools collapses under real edge cases - the fix is small, specialized agents with hard guardrails. 🧠
 
 ❌ Two agents stuck looping with no exit condition, burning tokens for hours unattended
 ❌ One massive agent trying to reason across 40 tools and every possible request

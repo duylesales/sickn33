@@ -4,14 +4,14 @@ Uw "eigen AI willen maken" verhult meestal een veel kleiner, veel oplosbaarder p
 
 ❌ Zes weken besteed aan het verzamelen en labelen van historische ticketgegevens
 ❌ Trainingsruns die nooit beter presteerden dan een goed geconfigureerd kant-en-klaar model
-❌ Het echte probleem was nooit een kenniskloof — het waren ontbrekende categorieën en voorbeelden in de prompt
+❌ Het echte probleem was nooit een kenniskloof - het waren ontbrekende categorieën en voorbeelden in de prompt
 ❌ De trainingsomweg vertraagde haar lancering met meer dan een maand
 
 ✅ Probeer eerst een serieus geëngineerde prompt- en contextpipeline voordat u vanaf nul traint
 ✅ Voed het bestaande model met gestructureerde voorbeelden van correct gerouteerde eerdere gevallen
 ✅ Los nauwkeurigheids-, onderscheidings- of vertrouwensproblemen op op promptniveau, niet trainingsniveau
 
-Bij **LaunchStudio** brengt ons team — waaronder engineers gevestigd in Singapore — de enterprise-grade engineering van Manifera om oprichters terug te leiden van trainingsomwegen naar pipelines die daadwerkelijk lanceren. 🛡️
+Bij **LaunchStudio** brengt ons team - waaronder engineers gevestigd in Singapore - de enterprise-grade engineering van Manifera om oprichters terug te leiden van trainingsomwegen naar pipelines die daadwerkelijk lanceren. 🛡️
 
 Haar resultaat: de ticketroutering van EigenModel versloeg haar eigen trainingspogingen, gebouwd in dagen in plaats van de al bestede zes weken. 🚀
 

@@ -1,6 +1,6 @@
-🚨 Daniel woke up to "Suspended" instead of revenue — daniel achterberg, founder of ClauseCheck, a document-automation tool built with **Cursor**, watched Stripe freeze every payout 14 days after launch, right as 180 new subscribers hit checkout. 🧠
+🚨 Daniel woke up to "Suspended" instead of revenue - daniel achterberg, founder of ClauseCheck, a document-automation tool built with **Cursor**, watched Stripe freeze every payout 14 days after launch, right as 180 new subscribers hit checkout. 🧠
 
-If your checkout has no idempotency handling, a slow connection and a double-click can trigger duplicate charges — and Stripe's risk systems will freeze your whole account before you notice.
+If your checkout has no idempotency handling, a slow connection and a double-click can trigger duplicate charges - and Stripe's risk systems will freeze your whole account before you notice.
 
 ❌ No idempotency key on checkout, letting double-clicks create duplicate charges
 ❌ Client-side-only payment confirmation with no server-side webhook verification

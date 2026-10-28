@@ -25,7 +25,7 @@ Hoorn telt ongeveer 75.000 inwoners aan het IJsselmeer in West-Friesland, zo'n v
 
 ## Wat de lokale markt werkelijk bevat
 
-**Regionale zorg.** Het regionale ziekenhuis en bijbehorende zorgorganisaties bedienen West-Friesland. Zorgdatawerk op dit niveau gaat over capaciteit en planning, administratieve automatisering, kwaliteitsrapportage en steeds meer beeldondersteuning. Teams zijn klein — vaak één tot vijf mensen.
+**Regionale zorg.** Het regionale ziekenhuis en bijbehorende zorgorganisaties bedienen West-Friesland. Zorgdatawerk op dit niveau gaat over capaciteit en planning, administratieve automatisering, kwaliteitsrapportage en steeds meer beeldondersteuning. Teams zijn klein - vaak één tot vijf mensen.
 
 **Voedselproductie en landbouw.** West-Friesland kent forse landbouw en voedselgerelateerde activiteit, waaronder zaadveredeling en tuinbouw. Variabele biologische input, kwaliteitsbeoordeling, opbrengst- en procesoptimalisatie.
 
@@ -41,13 +41,13 @@ Het totale aantal functies dat een ML-engineer als match zou herkennen, is reali
 
 Eén ding verdient correctie, want het is de meest inhoudelijke technische kans in dit gebied en makkelijk te missen.
 
-Het gebied rond Hoorn — richting Enkhuizen en Andijk — is een van de belangrijkste concentraties zaadveredeling voor groenten ter wereld. Meerdere grote zaadbedrijven en een netwerk specialisten zitten hier, en Nederland is qua waarde een leidende exporteur van groentezaad. De industrie is werkelijk mondiaal: hier ontwikkelde rassen worden over continenten geteeld.
+Het gebied rond Hoorn - richting Enkhuizen en Andijk - is een van de belangrijkste concentraties zaadveredeling voor groenten ter wereld. Meerdere grote zaadbedrijven en een netwerk specialisten zitten hier, en Nederland is qua waarde een leidende exporteur van groentezaad. De industrie is werkelijk mondiaal: hier ontwikkelde rassen worden over continenten geteeld.
 
 Plantenveredeling is een data-intensieve wetenschap geworden, met substantiële problemen.
 
 **Genomische voorspelling.** Voorspellen of een plant gewenste eigenschappen tot uiting brengt op basis van genetische markers, in plaats van wachten tot hij is uitgegroeid. Hoogdimensionale regressie waarbij het aantal markers het aantal geteste individuen ver overtreft, met populatiestructuur die confounding veroorzaakt.
 
-**Fenotypering op schaal.** Planteigenschappen meten — groei, ziekteresistentie, vruchtkenmerken, stresstolerantie — over duizenden proeflijnen. Steeds vaker met beeldvorming en sensoren in plaats van handmatige beoordeling, waardoor het een computer vision-probleem op niet-standaard beeldmateriaal wordt.
+**Fenotypering op schaal.** Planteigenschappen meten - groei, ziekteresistentie, vruchtkenmerken, stresstolerantie - over duizenden proeflijnen. Steeds vaker met beeldvorming en sensoren in plaats van handmatige beoordeling, waardoor het een computer vision-probleem op niet-standaard beeldmateriaal wordt.
 
 **Proefopzet en -analyse.** Veld- en kasproeven zijn duur, seizoensgebonden en onderhevig aan ruimtelijke variatie binnen een perceel. Betrouwbaar genetisch signaal scheiden van omgevingsruis vraagt zorgvuldige statistische opzet.
 
@@ -55,9 +55,9 @@ Plantenveredeling is een data-intensieve wetenschap geworden, met substantiële 
 
 **Optimalisatie van veredelingsprogramma's.** Beslissen welke kruisingen je maakt, hoeveel nakomelingen je evalueert en waar je beperkte proefcapaciteit inzet, is een sequentieel beslisprobleem onder onzekerheid over jaren.
 
-Dit werk combineert statistiek, genetica en machine learning op een manier die ongebruikelijk is en elders moeilijk te verwerven. Het zit ook, zoals de agrifoodmarkt in Wageningen, verborgen achter domeinjargon — functies heten "dataspecialist veredeling", "kwantitatief geneticus" of "onderzoeker fenotypering".
+Dit werk combineert statistiek, genetica en machine learning op een manier die ongebruikelijk is en elders moeilijk te verwerven. Het zit ook, zoals de agrifoodmarkt in Wageningen, verborgen achter domeinjargon - functies heten "dataspecialist veredeling", "kwantitatief geneticus" of "onderzoeker fenotypering".
 
-Interesseert veredelingsdata je, dan is dit gebied een van de sterkste locaties ter wereld — een werkelijk andere uitspraak dan al het overige in deze analyse.
+Interesseert veredelingsdata je, dan is dit gebied een van de sterkste locaties ter wereld - een werkelijk andere uitspraak dan al het overige in deze analyse.
 
 ## Hoe je zelf een dunne markt verifieert
 
@@ -75,7 +75,7 @@ Interesseert veredelingsdata je, dan is dit gebied een van de sterkste locaties 
 
 Deze analyse heeft de keuze neergezet als lokaal werk versus forenzen, maar er is een derde pad dat realistisch is geworden.
 
-Drie waarschuwingen. Functies op afstand zijn competitiever, omdat je concurreert met kandidaten uit een veel groter gebied. Werken op afstand past sommige mensen en werkelijk niet bij andere, en de faalvorm — professionele isolatie, minder informeel leren, langzamere doorgroei — is reëel. En afspraken op afstand zijn bij verschillende Nederlandse werkgevers strakker geworden.
+Drie waarschuwingen. Functies op afstand zijn competitiever, omdat je concurreert met kandidaten uit een veel groter gebied. Werken op afstand past sommige mensen en werkelijk niet bij andere, en de faalvorm - professionele isolatie, minder informeel leren, langzamere doorgroei - is reëel. En afspraken op afstand zijn bij verschillende Nederlandse werkgevers strakker geworden.
 
 De praktische benadering in een dunne markt is alle drie de opties tegelijk levend houden: lokaal voor gemak, forenzen voor diepte, en op afstand voor onafhankelijkheid van geografie.
 
@@ -133,7 +133,7 @@ Wat niet werkt is Hoorn behandelen als plek om zelf technisch werk te vinden.
 - Maak de reisrekening expliciet tegen wat je binnen Amsterdam toch al zou reizen, en leg hybride afspraken contractueel vast.
 - Regionale zorg is de stevigste lokale categorie: generalistisch, operationeel en zwaar gereguleerd.
 - De eerlijke argumentatie rust op woonlasten, ruimte en omgeving, niet op carrièrekansen.
-- Forens je, kies dan werkgevers met ingeburgerde hybride praktijk — een dunne lokale markt geeft je geen buffer.
+- Forens je, kies dan werkgevers met ingeburgerde hybride praktijk - een dunne lokale markt geeft je geen buffer.
 
 ## Waar te beginnen
 

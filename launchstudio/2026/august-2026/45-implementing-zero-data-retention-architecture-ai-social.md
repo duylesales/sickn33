@@ -1,4 +1,4 @@
-🔥 Skylar built a prototype using **Bolt** — skylar, a bank manager, used **bolt** to build a document summarizer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Skylar built a prototype using **Bolt** - skylar, a bank manager, used **bolt** to build a document summarizer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Skylar's application achieved silky-smooth performance: Signed up 3 commercial banking clients who required strict on-premise-style data security. (€3,500 (Zero Retention Package) — production-ready and deployed in 8 business days.). 🚀
+Skylar's application achieved silky-smooth performance: Signed up 3 commercial banking clients who required strict on-premise-style data security. (€3,500 (Zero Retention Package) - production-ready and deployed in 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/implementing-zero-data-retention-architecture-ai
 

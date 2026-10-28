@@ -9,7 +9,7 @@ Waarom? Omdat User AI-tools uitblinken in interfaces, maar de onzichtbare infras
 ❌ Geen database Row-Level Security (gebruikers zien elkaars data)
 ❌ Geen dunning-processen (mislukte kaartbetalingen worden genegeerd)
 
-Uw prototype is geen mislukking — het is simpelweg nog niet af. 🛠️
+Uw prototype is geen mislukking - het is simpelweg nog niet af. 🛠️
 
 Laat u geen €45.000 aanrekenen door een bureau om "vanaf nul opnieuw te beginnen". Ontdek hoe slimme oprichters hun met AI gebouwde frontend behouden en de kloof naar productie overbruggen: https://launchstudio.eu/nl/blog/user-ai
 

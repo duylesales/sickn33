@@ -7,11 +7,11 @@ Bolt is genuinely excellent at rapid full-stack scaffolding. Here's specifically
 ❌ Database logic written for sequential use, not concurrent access
 ❌ External API calls wired for success, not retryable vs. permanent failures
 
-✅ None of this means rebuilding — it means hardening these 4 specific areas
+✅ None of this means rebuilding - it means hardening these 4 specific areas
 ✅ First check: git history secrets scan (Bolt's rapid connect-and-test makes this common)
 ✅ Test concurrent requests to any shared/limited resource before real customers do
 
-At **LaunchStudio**, we've reviewed enough Bolt-generated codebases to know exactly where to look first — closing the gap without discarding what Bolt got right. Backed by Manifera across 160+ projects. 🛡️
+At **LaunchStudio**, we've reviewed enough Bolt-generated codebases to know exactly where to look first - closing the gap without discarding what Bolt got right. Backed by Manifera across 160+ projects. 🛡️
 
 His result: database-level locking closed a race condition before his first pilot shop ever double-booked real skis to real customers. 🚀
 

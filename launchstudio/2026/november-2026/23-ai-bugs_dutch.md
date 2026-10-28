@@ -35,7 +35,7 @@ In traditionele software-engineering is een programmeerfout deterministisch: als
 
 AI-bugs werken fundamenteel anders. Ze laten uw app niet crashen. Ze geven geen foutcode. In plaats daarvan retourneren ze zelfverzekerd een perfect geformatteerde JSON-respons vol met verzonnen onwaarheden. Ze zijn niet-deterministisch: exact dezelfde invoer van dezelfde gebruiker kan om 9:00 uur een feilloos antwoord opleveren en om 9:05 uur een regelrechte hallucinatie.
 
-Wanneer oprichters prototypes bouwen met AI-tools, richten zij zich op het "happy path" waarin het taalmodel zich perfect gedraagt. Maar bij de overstap naar een live bedrijf wordt het beheersen van AI-bugs — met name hallucinaties, prompt-injecties en contextverloop — de bepalende technische uitdaging van uw platform.
+Wanneer oprichters prototypes bouwen met AI-tools, richten zij zich op het "happy path" waarin het taalmodel zich perfect gedraagt. Maar bij de overstap naar een live bedrijf wordt het beheersen van AI-bugs - met name hallucinaties, prompt-injecties en contextverloop - de bepalende technische uitdaging van uw platform.
 
 ## De Drie Categorieën van AI-Productiebugs
 
@@ -94,7 +94,7 @@ Kevin, compliance-adviseur in Amsterdam, bouwde met Cursor een AI-applicatie gen
 
 In Kevin's eigen tests werkte het vlekkeloos. Hij startte een bèta met drie Nederlandse fintech-startups.
 
-Twee weken later ontving hij een woedende mail van een klant. De AI had een legitieme marketinguitspraak afgekeurd en verwees daarbij naar *"AFM Richtlijn 2025/14 inzake Retail Beleggingen"*. De juridische afdeling van de klant had urenlang gezocht naar deze richtlijn voordat ze ontdekten dat de wet helemaal niet bestond — de AI had een uiterst geloofwaardige, niet-bestaande wet verzonnen.
+Twee weken later ontving hij een woedende mail van een klant. De AI had een legitieme marketinguitspraak afgekeurd en verwees daarbij naar *"AFM Richtlijn 2025/14 inzake Retail Beleggingen"*. De juridische afdeling van de klant had urenlang gezocht naar deze richtlijn voordat ze ontdekten dat de wet helemaal niet bestond - de AI had een uiterst geloofwaardige, niet-bestaande wet verzonnen.
 
 Kevin probeerde de fout te verhelpen door zijn prompt aan te passen (*"VERZIN NOOIT WETTEN"*), maar de hallucinaties bleven willekeurig opduiken.
 
@@ -105,9 +105,9 @@ Binnen 14 werkdagen herbouwde LaunchStudio Kevin's backend: een RAG-pijplijn gek
 **Resultaat:** De hallucinaties verdwenen volledig. ComplianceCheck werd betrouwbaar en Kevin verkocht de software vervolgens aan een middelgroot accountantskantoor in Rotterdam (€3.200 MRR).
 
 > *"Ik dacht dat een AI-bug betekende dat ik een betere prompt moest schrijven. LaunchStudio leerde me dat je een betere architectuur moet bouwen. Zij gaven me een systeem dat het AI-model controleert en betrapt zodra het liegt."*
-> — **Kevin de Boer, Oprichter, ComplianceCheck (Amsterdam)**
+> - **Kevin de Boer, Oprichter, ComplianceCheck (Amsterdam)**
 
-**Kosten & Doorlooptijd:** €5.500 (Launch & Grow Pakket met AI-Pijplijnharding) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €5.500 (Launch & Grow Pakket met AI-Pijplijnharding) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

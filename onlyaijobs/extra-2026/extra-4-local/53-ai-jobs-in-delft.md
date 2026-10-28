@@ -56,11 +56,11 @@ The university also has a strong robotics tradition, including research on auton
 
 **TNO**, the Netherlands Organisation for Applied Scientific Research, has major locations in Delft and works with companies and government on applied research, including AI for defence and security, mobility, industry, health and energy. It hires graduates as research scientists and engineers, often in multidisciplinary teams.
 
-**Deltares**, an independent institute for applied research in water and subsurface, is based in Delft. Its work on flood risk, water management, coastal engineering and subsurface resources increasingly uses data science and machine learning — for example to accelerate simulations, forecast water levels and analyse satellite data.
+**Deltares**, an independent institute for applied research in water and subsurface, is based in Delft. Its work on flood risk, water management, coastal engineering and subsurface resources increasingly uses data science and machine learning - for example to accelerate simulations, forecast water levels and analyse satellite data.
 
 ## Startups and Companies
 
-YES!Delft, TU Delft's startup incubator, is one of Europe's best-known university incubators and has supported many deep-tech startups in robotics, drones, energy, medical technology and software. Delft Technology Park hosts companies and spin-offs, and software company Exact has its headquarters in Delft. Many graduates also work for companies in Rotterdam and The Hague — in port logistics, energy, government, security and e-commerce — while living in Delft or vice versa.
+YES!Delft, TU Delft's startup incubator, is one of Europe's best-known university incubators and has supported many deep-tech startups in robotics, drones, energy, medical technology and software. Delft Technology Park hosts companies and spin-offs, and software company Exact has its headquarters in Delft. Many graduates also work for companies in Rotterdam and The Hague - in port logistics, energy, government, security and e-commerce - while living in Delft or vice versa.
 
 ## Where AI Jobs in Delft Are Found for Graduates
 
@@ -83,11 +83,11 @@ YES!Delft, TU Delft's startup incubator, is one of Europe's best-known universit
 
 ## Language and Practicalities
 
-Most TU Delft master's programmes and research groups work in English, and many startups and international companies do too. Government and some regional organisations require Dutch. International graduates of Dutch universities can use the orientation year to look for work, after which the highly skilled migrant scheme — with a lower salary threshold for recent graduates — can apply. Check current rules with the IND.
+Most TU Delft master's programmes and research groups work in English, and many startups and international companies do too. Government and some regional organisations require Dutch. International graduates of Dutch universities can use the orientation year to look for work, after which the highly skilled migrant scheme - with a lower salary threshold for recent graduates - can apply. Check current rules with the IND.
 
 ## How OnlyAIJobs Works for a Delft Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Its listings are concentrated in the Netherlands, which makes it directly useful for AI jobs in Delft and the surrounding region. Each vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a higher position — a small YES!Delft startup appears on equal terms with a multinational. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies, Rexel and Holland Innovative.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Its listings are concentrated in the Netherlands, which makes it directly useful for AI jobs in Delft and the surrounding region. Each vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a higher position - a small YES!Delft startup appears on equal terms with a multinational. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies, Rexel and Holland Innovative.
 
 Combine it with TU Delft's career services, startup job boards and your network. Its distance view is especially helpful in South Holland, where Delft, Rotterdam, The Hague, Rijswijk, Schiedam and Capelle form one polycentric labour market.
 
@@ -97,23 +97,23 @@ Robotics is one of Delft's signature fields. TU Delft research groups and startu
 
 ## Water, Climate and Infrastructure
 
-The Netherlands' relationship with water makes Delft a global centre for hydraulic engineering and water management. AI supports flood forecasting, early warning systems, analysis of dikes and infrastructure, coastal morphology, groundwater modelling and climate adaptation. A common theme is using machine learning to accelerate or complement physics-based simulations — so-called surrogate modelling — and to combine models with satellite and sensor data. For graduates interested in climate impact, this field offers meaningful work with international relevance, as Dutch water expertise is applied around the world.
+The Netherlands' relationship with water makes Delft a global centre for hydraulic engineering and water management. AI supports flood forecasting, early warning systems, analysis of dikes and infrastructure, coastal morphology, groundwater modelling and climate adaptation. A common theme is using machine learning to accelerate or complement physics-based simulations - so-called surrogate modelling - and to combine models with satellite and sensor data. For graduates interested in climate impact, this field offers meaningful work with international relevance, as Dutch water expertise is applied around the world.
 
 ## Energy and Mobility
 
-TU Delft and TNO work extensively on the energy transition: electricity grids, offshore wind, hydrogen, batteries and energy-efficient buildings. Data science helps forecast renewable generation, manage grid congestion, optimise charging of electric vehicles and plan infrastructure. Mobility research covers traffic management, public transport, cycling and autonomous vehicles. Employers in the region — grid operators, energy companies, public transport operators, consultancies and government agencies — hire graduates with these skills, often for roles combining data science with systems thinking.
+TU Delft and TNO work extensively on the energy transition: electricity grids, offshore wind, hydrogen, batteries and energy-efficient buildings. Data science helps forecast renewable generation, manage grid congestion, optimise charging of electric vehicles and plan infrastructure. Mobility research covers traffic management, public transport, cycling and autonomous vehicles. Employers in the region - grid operators, energy companies, public transport operators, consultancies and government agencies - hire graduates with these skills, often for roles combining data science with systems thinking.
 
 ## Building a Profile for Delft Employers
 
 Delft employers value graduates who can connect ML with engineering practice:
 
-- **A thesis rooted in a real system** — a robot, a water network, a grid, a vehicle — rather than a purely academic benchmark.
+- **A thesis rooted in a real system** - a robot, a water network, a grid, a vehicle - rather than a purely academic benchmark.
 - **Programming and engineering discipline**: clean code, testing, version control and, for robotics, ROS or embedded experience.
 - **Physics and domain understanding**: knowledge of the systems your models describe.
 - **Interdisciplinary communication**: explaining ML to civil, mechanical or aerospace engineers and learning from them.
 - **Responsible AI awareness**: TU Delft's emphasis on values and design means many employers expect graduates to think about safety, fairness and societal impact.
 
-Student teams — such as those building solar cars, drones, rockets or autonomous boats — are a Delft tradition and provide excellent evidence of teamwork and engineering skills.
+Student teams - such as those building solar cars, drones, rockets or autonomous boats - are a Delft tradition and provide excellent evidence of teamwork and engineering skills.
 
 ## Living in Delft
 

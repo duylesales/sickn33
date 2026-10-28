@@ -65,7 +65,7 @@ Wees alert op deze vier sluipende gewoontes die uw kostbare tijd stilletjes opsl
 
 Verkoopmomentum verdient hier speciale aandacht, omdat het afsterft op een manier die oprichters structureel onderschatten. Een warme pipeline van potentiële klanten die u in de weken vóór de start van het project met veel moeite heeft opgebouwd, blijft niet beleefd wachten terwijl u "even gefocust bent op de livegang".
 
-Warme leads koelen binnen twee weken ijskoud af. Concurrenten plannen afspraken in het gat dat u openlaat. En de acute urgentie die een prospect een maand geleden deed reageren, is allang verschoven naar een ander intern project tegen de tijd dat u weer contact opneemt. Oprichters die hun acquisitie pauzeren tijdens een softwaretraject, kiezen er in feite voor om op de dag van lancering vanaf nul te moeten herstarten — exact het verkeerde moment om met lege handen te staan.
+Warme leads koelen binnen twee weken ijskoud af. Concurrenten plannen afspraken in het gat dat u openlaat. En de acute urgentie die een prospect een maand geleden deed reageren, is allang verschoven naar een ander intern project tegen de tijd dat u weer contact opneemt. Oprichters die hun acquisitie pauzeren tijdens een softwaretraject, kiezen er in feite voor om op de dag van lancering vanaf nul te moeten herstarten - exact het verkeerde moment om met lege handen te staan.
 
 De juiste aanpak gebruikt de lanceerdatum juist als **commerciële hefboom**. Een concrete, keiharde datum is fantastisch haakje voor acquisitieberichten: *"We gaan op de 14e live met de productie-omgeving; ik wil je graag als een van de eerste vijf launching customers toegang geven met speciale voorwaarden"*. Dat straalt daadkracht en urgentie uit. Oprichters die doorgaan met verkopen tijdens de bouw, zien hun deals vaak precies rond de lanceringsdatum vallen.
 
@@ -76,7 +76,7 @@ Voor een typisch [Launch Ready-traject](https://launchstudio.eu/nl/#packages) va
 - **Dagelijks beslisvenster van 15 minuten:** Elke ochtend op hetzelfde vaste tijdstip (bijvoorbeeld 09:15 uur) beantwoordt u gebundeld alle zakelijke vragen (conform artikel 31).
 - **Wekelijkse risico-check-in van 30 minuten:** Eén gestructureerd voortgangsoverleg per week (conform artikel 39) om blokkades en naderende risico's door te nemen.
 - **Notificaties gemutet buiten deze blokken:** Geen tussentijdse pop-ups of afleidingen op uw scherm.
-- **De overige 95% van uw werkweek:** Volledig en ongestoord gewijd aan verkoop, marketing, klantenservice en diepgaand strategisch werk — exact alsof er op de achtergrond helemaal geen software wordt gebouwd.
+- **De overige 95% van uw werkweek:** Volledig en ongestoord gewijd aan verkoop, marketing, klantenservice en diepgaand strategisch werk - exact alsof er op de achtergrond helemaal geen software wordt gebouwd.
 
 Ziet uw agenda er momenteel wezenlijk anders uit? Worden er dagelijks uren opgeslokt door overleg over de techniek? Dan is dat hét signaal om in te grijpen: bij een professioneel project met een vaste scope is die tijdsinvestering namelijk volstrekt overbodig.
 
@@ -102,12 +102,12 @@ Tijdens de eerste wekelijkse check-in zag de lead engineer van LaunchStudio het 
 
 Sander zette direct alle notificaties uit en reserveerde uitsluitend zijn vaste kwartier om 09:15 uur. In de resterende uren startte hij zijn acquisitiecampagnes opnieuw op met een scherpe belofte: *"Op 24 februari gaan we live; meld je nu aan als launching customer."*
 
-**Resultaat:** Het project werd stipt binnen 12 werkdagen turn-key opgeleverd conform het Launch Ready-pakket van €2.750. In diezelfde 12 werkdagen sloot Sander persoonlijk drie nieuwe betalende accountantskantoren aan die op dag één direct live gingen — deals die er simpelweg nooit waren geweest als hij de hele dag developers had zitten micromanagen.
+**Resultaat:** Het project werd stipt binnen 12 werkdagen turn-key opgeleverd conform het Launch Ready-pakket van €2.750. In diezelfde 12 werkdagen sloot Sander persoonlijk drie nieuwe betalende accountantskantoren aan die op dag één direct live gingen - deals die er simpelweg nooit waren geweest als hij de hele dag developers had zitten micromanagen.
 
 > *"Ik dacht dat betrokkenheid betekende dat ik de bouw moest bewaken. Het bleek dat betrokkenheid bij mijn bedrijf betekende dat ik gewoon moest verkopen, en moest vertrouwen op de twee vaste wekelijkse overlegmomenten. Dat inzicht heeft mijn startup gered."*
-> — **Sander Kremer, Oprichter, Dossierklaar**
+> - **Sander Kremer, Oprichter, Dossierklaar**
 
-**Kosten & Doorlooptijd:** €2.750 (Launch Ready Package) — live in 12 werkdagen; 3 nieuwe betalende klanten binnengehaald tijdens de bouwperiode.
+**Kosten & Doorlooptijd:** €2.750 (Launch Ready Package) - live in 12 werkdagen; 3 nieuwe betalende klanten binnengehaald tijdens de bouwperiode.
 
 ## Veelgestelde Vragen
 

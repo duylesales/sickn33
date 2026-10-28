@@ -5,7 +5,7 @@ Buyer Stage: Awareness
 ---
 
 # Scaling Supabase: What to Do When Your AI App Gets Real Traffic
-You launched. The product hunt went well, a TikTok went viral, and suddenly you have 5,000 active users. Congratulations—you now have a scaling problem. For AI-built apps running on Supabase, the first signs of stress usually appear as slow page loads, timeout errors, or database connection warnings. Here is a founder's guide to the three immediate levers you must pull to scale your Supabase backend.
+You launched. The product hunt went well, a TikTok went viral, and suddenly you have 5,000 active users. Congratulations - you now have a scaling problem. For AI-built apps running on Supabase, the first signs of stress usually appear as slow page loads, timeout errors, or database connection warnings. Here is a founder's guide to the three immediate levers you must pull to scale your Supabase backend.
 
 ## Lever 1: The Missing Indexes
 
@@ -33,7 +33,7 @@ If you have added indexes and implemented connection pooling, but your dashboard
 
 ## The Hidden Performance Killer: Over-Fetching
 
-One final issue unique to AI-generated code is over-fetching. AI often writes queries like `SELECT * FROM users`. This pulls every column—including large text fields or binary data—even if the UI only needs to display the user's name.
+One final issue unique to AI-generated code is over-fetching. AI often writes queries like `SELECT * FROM users`. This pulls every column - including large text fields or binary data - even if the UI only needs to display the user's name.
 
 At 100 users, over-fetching does not matter. At 10,000 users, transferring massive amounts of unneeded data over the network creates severe bottlenecks.
 
@@ -65,7 +65,7 @@ Michael partnered with **LaunchStudio (by Manifera)** to make the product launch
 
 **Result:** Michael stabilized the system, allowing the widget to handle 10,000+ requests per hour effortlessly.
 
-**Cost & Timeline:** €2,600 (Scaling & Optimization Package) — production-ready and deployed in 9 business days.
+**Cost & Timeline:** €2,600 (Scaling & Optimization Package) - production-ready and deployed in 9 business days.
 
 ---
 

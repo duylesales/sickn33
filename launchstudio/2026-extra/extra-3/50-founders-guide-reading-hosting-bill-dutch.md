@@ -57,7 +57,7 @@ Vergelijkbaar met de bredere woordenschat en diagnostische benadering die in dez
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters hun eigen hosting- en infrastructuurkosten in duidelijke taal te begrijpen, waarbij oprecht zorgwekkende patronen worden gemarkeerd versus normale, gezonde groei als onderdeel van bredere voortdurende ondersteuningsopdrachten. Dit wordt ondersteund door Manifera's bredere toewijding aan transparante, begrijpelijke communicatie, ongeacht de technische achtergrond van een oprichter.
 
-[Krijg hulp bij het begrijpen van wat uw hostingfactuur u daadwerkelijk vertelt](https://launchstudio.eu/nl/#contact) — de categorieën zijn te leren zonder zelf technisch te worden.
+[Krijg hulp bij het begrijpen van wat uw hostingfactuur u daadwerkelijk vertelt](https://launchstudio.eu/nl/#contact) - de categorieën zijn te leren zonder zelf technisch te worden.
 
 ## Een eenvoudige maandelijkse routine om uw hostingfactuur voor te blijven
 
@@ -86,9 +86,9 @@ De factuur van een specifieke maand arriveerde opvallend hoger dan welke voorgaa
 **Resultaat:** Het onderzoek van LaunchStudio wees uit dat een verkeerd geconfigureerde instelling voor caching veroorzaakte dat GastenApp herhaaldelijk dezelfde grote afbeeldingselementen veel vaker opnieuw overdroeg dan nodig was. Dit was een echte, herstelbare inefficiëntie die niets te maken had met echte klantengroei en stilletjes Marit's hostingkosten opdreef. Het werd opgelost zodra het specifiek werd gemarkeerd en onderzocht, in plaats van onopgemerkt te blijven opstapelen.
 
 > *"Ik betaalde gewoon welk getal er elke maand ook verscheen zonder echt nauwkeurig te kijken. De maand dat het opvallend hoger sprong zonder enige echte verandering in mijn daadwerkelijke klantenaantal is wat me er uiteindelijk toe aanzette om een specifieke vraag te stellen in plaats van het gewoon opnieuw te betalen. Dat is wanneer we een echt, herstelbaar probleem vonden dat me waarschijnlijk al een tijdje stilletjes geld kostte."*
-> — **Marit Jansen, Oprichter, GastenApp (Haarlem)**
+> - **Marit Jansen, Oprichter, GastenApp (Haarlem)**
 
-**Kosten en tijdlijn:** € 500 (factuuronderzoek en herstel van caching) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 500 (factuuronderzoek en herstel van caching) - voltooid in 2 werkdagen.
 
 ---
 
@@ -140,7 +140,7 @@ Niet noodzakelijkerwijs via specifieke standaard functionele of beveiligingstest
       "name": "Wijst een plotselinge kostenpiek altijd op een probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet altijd — eenmalige acties zoals marketingcampagnes kunnen ook pieken veroorzaken zonder dat er iets mis is."
+        "text": "Niet altijd - eenmalige acties zoals marketingcampagnes kunnen ook pieken veroorzaken zonder dat er iets mis is."
       }
     },
     {
@@ -156,7 +156,7 @@ Niet noodzakelijkerwijs via specifieke standaard functionele of beveiligingstest
       "name": "Zou dit cachingprobleem ontdekt zijn bij gewone productietests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet per se — het veroorzaakte geen functionele fouten en vereiste specifiek kostenpatroononderzoek."
+        "text": "Niet per se - het veroorzaakte geen functionele fouten en vereiste specifiek kostenpatroononderzoek."
       }
     }
   ]

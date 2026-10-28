@@ -35,7 +35,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 ## Step One: Open Your Browser's Developer Tools and Look at the Network Tab
 
-Every modern browser includes a "Network" or "Sources" tab in its developer tools, showing every request your app makes and, often, the raw JavaScript bundle sent to the browser. This is publicly visible to literally anyone who opens the same tab on your live site — it's not a hidden or advanced hacking technique, it's a standard, built-in browser feature.
+Every modern browser includes a "Network" or "Sources" tab in its developer tools, showing every request your app makes and, often, the raw JavaScript bundle sent to the browser. This is publicly visible to literally anyone who opens the same tab on your live site - it's not a hidden or advanced hacking technique, it's a standard, built-in browser feature.
 
 ## Step Two: Search That Bundle for Anything Resembling a Secret Key
 
@@ -43,48 +43,48 @@ Searching the visible JavaScript bundle for strings like "sk_" (a common Stripe 
 
 ## Step Three: Understand Why This Specific Mistake Is So Common
 
-Payment providers like Stripe issue two distinct kinds of keys — a "publishable" key, safe to use in frontend code, and a "secret" key, meant only for server-side use. AI coding tools generating a quick payment integration sometimes use whichever key was provided in the prompt without distinguishing between the two, and if a founder pastes the secret key where the publishable key belongs, the tool has no independent way of knowing that's the wrong one.
+Payment providers like Stripe issue two distinct kinds of keys - a "publishable" key, safe to use in frontend code, and a "secret" key, meant only for server-side use. AI coding tools generating a quick payment integration sometimes use whichever key was provided in the prompt without distinguishing between the two, and if a founder pastes the secret key where the publishable key belongs, the tool has no independent way of knowing that's the wrong one.
 
-The two keys often sit right next to each other in a payment provider's dashboard, both labeled with similar-looking prefixes, and a founder copying credentials quickly during setup has no strong visual cue prompting extra caution before pasting one into a frontend configuration file. Unless a founder already understands the distinction going in, there's nothing about the copy-paste moment itself that signals a mistake is happening — which is exactly why this remains one of the most common integration errors even among founders who are otherwise careful.
+The two keys often sit right next to each other in a payment provider's dashboard, both labeled with similar-looking prefixes, and a founder copying credentials quickly during setup has no strong visual cue prompting extra caution before pasting one into a frontend configuration file. Unless a founder already understands the distinction going in, there's nothing about the copy-paste moment itself that signals a mistake is happening - which is exactly why this remains one of the most common integration errors even among founders who are otherwise careful.
 
 ## Step Four: Recognize Why a Working Payment Flow Doesn't Rule This Out
 
-A payment integration using the secret key directly in frontend code will, in many cases, still process test payments successfully — the mistake doesn't necessarily produce an error, which is exactly why "it works" isn't reassuring evidence here. The risk isn't that it fails to function; it's that a fully privileged key sits somewhere any visitor can read it.
+A payment integration using the secret key directly in frontend code will, in many cases, still process test payments successfully - the mistake doesn't necessarily produce an error, which is exactly why "it works" isn't reassuring evidence here. The risk isn't that it fails to function; it's that a fully privileged key sits somewhere any visitor can read it.
 
 ## Step Five: Get a Systematic Review, Not Just a Manual Search
 
-A manual search catches obvious cases but isn't exhaustive — a proper audit checks every integration systematically, confirms the correct key type is used in each context, and verifies no other secrets followed the same pattern. [LaunchStudio](https://launchstudio.eu/en/) performs exactly this kind of systematic key-and-secrets audit as a standard first step in its production-readiness review, backed by Manifera's 11+ years integrating Stripe and Mollie into secure production systems.
+A manual search catches obvious cases but isn't exhaustive - a proper audit checks every integration systematically, confirms the correct key type is used in each context, and verifies no other secrets followed the same pattern. [LaunchStudio](https://launchstudio.eu/en/) performs exactly this kind of systematic key-and-secrets audit as a standard first step in its production-readiness review, backed by Manifera's 11+ years integrating Stripe and Mollie into secure production systems.
 
 Manifera's payment security audits are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations handled through the Amsterdam headquarters at Herengracht 420.
 
-[Describe what you're building — we reply within one business day](https://launchstudio.eu/en/#contact).
+[Describe what you're building - we reply within one business day](https://launchstudio.eu/en/#contact).
 
 ## Beyond Stripe Keys: A Fuller Frontend Bundle Audit
 
-Checking for an exposed Stripe secret key is a good first pass, but the same underlying mistake — a server-only credential ending up in code sent to every visitor's browser — can happen with several other services too.
+Checking for an exposed Stripe secret key is a good first pass, but the same underlying mistake - a server-only credential ending up in code sent to every visitor's browser - can happen with several other services too.
 
 **Search your bundle for these patterns too**
 
-- **Supabase**: a `service_role` key (which bypasses row-level security entirely) accidentally used where the restricted `anon` key belongs — visually similar enough in a config file that the mistake is easy to make and easy to miss
+- **Supabase**: a `service_role` key (which bypasses row-level security entirely) accidentally used where the restricted `anon` key belongs - visually similar enough in a config file that the mistake is easy to make and easy to miss
 - **AWS credentials**: an access key and secret pair meant for server-side SDK calls, occasionally hardcoded during a quick integration rather than routed through a backend endpoint
 - **Database connection strings**: a full connection URL, including a username and password, sometimes used directly in frontend code during early prototyping to "just get data showing" before a proper API layer exists
-- **Third-party API keys with elevated permissions**: any service offering both a restricted, frontend-safe key and a fuller-access key — the same publishable-versus-secret pattern Stripe uses shows up under different names across many providers
+- **Third-party API keys with elevated permissions**: any service offering both a restricted, frontend-safe key and a fuller-access key - the same publishable-versus-secret pattern Stripe uses shows up under different names across many providers
 
 **Search systematically, not just for one string**
 
-A single search for "sk_" catches Stripe specifically, but a more complete pass searches for generic patterns too — "secret," "private_key," "service_role," and the specific prefix patterns of every third-party service your product actually integrates with. Most browser developer tools let you search the entire loaded bundle in one pass, so this is a matter of running several searches, not a single one.
+A single search for "sk_" catches Stripe specifically, but a more complete pass searches for generic patterns too - "secret," "private_key," "service_role," and the specific prefix patterns of every third-party service your product actually integrates with. Most browser developer tools let you search the entire loaded bundle in one pass, so this is a matter of running several searches, not a single one.
 
 **Remember that "removed from the bundle" doesn't mean "safe again"**
 
-If a key is found exposed and removed from the frontend code, the key itself still needs to be rotated — simply deploying a fix that stops sending it going forward doesn't undo any exposure that already happened, since the previous version of the bundle may still be cached in visitors' browsers, saved by a CDN, or already captured by anyone who looked before the fix shipped.
+If a key is found exposed and removed from the frontend code, the key itself still needs to be rotated - simply deploying a fix that stops sending it going forward doesn't undo any exposure that already happened, since the previous version of the bundle may still be cached in visitors' browsers, saved by a CDN, or already captured by anyone who looked before the fix shipped.
 
 **Consider what a CDN or browser cache means for your timeline**
 
-Even after deploying a fix, a content delivery network or a visitor's own browser cache can continue serving the old, exposed bundle for some time depending on cache configuration — which is one more reason rotation, not just removal, is the step that actually closes the exposure rather than just hiding it going forward.
+Even after deploying a fix, a content delivery network or a visitor's own browser cache can continue serving the old, exposed bundle for some time depending on cache configuration - which is one more reason rotation, not just removal, is the step that actually closes the exposure rather than just hiding it going forward.
 
 **Build the check into your deployment process, not just a one-time launch task**
 
-A bundle search run once before the original launch says nothing about a new integration added three months later — adding a quick automated search for common secret patterns as a step in your deployment pipeline, even a simple script run before each production deploy, catches this category of mistake at the moment it's introduced rather than waiting for a volunteer developer to stumble onto it out of habit.
+A bundle search run once before the original launch says nothing about a new integration added three months later - adding a quick automated search for common secret patterns as a step in your deployment pipeline, even a simple script run before each production deploy, catches this category of mistake at the moment it's introduced rather than waiting for a volunteer developer to stumble onto it out of habit.
 
 ## Real example
 
@@ -97,9 +97,9 @@ A volunteer developer helping another nonprofit evaluate SchenkPunt as a potenti
 **Result:** LaunchStudio rotated the exposed Stripe key immediately, correctly separated publishable and secret key usage across frontend and backend code, and audited the rest of the integration for similar mistakes, closing the exposure without disrupting the donation flow nonprofits were already using.
 
 > *"Donations were processing successfully the entire time, so nothing about using the app ever suggested anything was wrong. It took a volunteer with a developer background poking around out of habit to find it."*
-> — **Wouter Smeets, Founder, SchenkPunt (Dordrecht)**
+> - **Wouter Smeets, Founder, SchenkPunt (Dordrecht)**
 
-**Cost & Timeline:** €1,400 (Stripe key audit and secure integration remediation) — completed in 5 business days.
+**Cost & Timeline:** €1,400 (Stripe key audit and secure integration remediation) - completed in 5 business days.
 
 ---
 
@@ -107,23 +107,23 @@ A volunteer developer helping another nonprofit evaluate SchenkPunt as a potenti
 
 ### Would a payments engineer consider mixing up publishable and secret keys a beginner mistake, or one experienced developers make too?
 
-Both — it's a well-known enough pitfall that experienced developers are taught to watch for it specifically, but it remains common precisely because the two key types look superficially similar and both "work" during testing, regardless of experience level.
+Both - it's a well-known enough pitfall that experienced developers are taught to watch for it specifically, but it remains common precisely because the two key types look superficially similar and both "work" during testing, regardless of experience level.
 
 ### Does checking the browser's Network tab yourself catch every possible key-exposure scenario?
 
-No — it catches keys embedded directly in visible frontend code, which covers a meaningful portion of real cases, but a full audit also checks server-side configuration, third-party integrations, and any place a key might be logged or exposed indirectly rather than just the visible bundle.
+No - it catches keys embedded directly in visible frontend code, which covers a meaningful portion of real cases, but a full audit also checks server-side configuration, third-party integrations, and any place a key might be logged or exposed indirectly rather than just the visible bundle.
 
 ### Is this specifically a Stripe issue, or do other payment providers have the same publishable-versus-secret key distinction?
 
-The specific naming differs, but the underlying two-tier key structure — one safe for frontend use, one restricted to server-side use — is standard across virtually all major payment providers, including Mollie and PayPal, so the same category of mistake is possible with any of them.
+The specific naming differs, but the underlying two-tier key structure - one safe for frontend use, one restricted to server-side use - is standard across virtually all major payment providers, including Mollie and PayPal, so the same category of mistake is possible with any of them.
 
 ### Does Manifera's broader B2B client base give it more experience specifically with nonprofit-sector tools like SchenkPunt?
 
-Not specifically nonprofit-focused, but the underlying payment security review is identical regardless of sector — the same rotate-and-correctly-reintegrate process applies whether the client is a nonprofit donation platform or a commercial SaaS product, since the technical risk doesn't change based on who the end customer is.
+Not specifically nonprofit-focused, but the underlying payment security review is identical regardless of sector - the same rotate-and-correctly-reintegrate process applies whether the client is a nonprofit donation platform or a commercial SaaS product, since the technical risk doesn't change based on who the end customer is.
 
-### CEO Herre Roelevink has emphasized that closing gaps like this doesn't require rebuilding a product — does that apply to a payment integration fix like Wouter's?
+### CEO Herre Roelevink has emphasized that closing gaps like this doesn't require rebuilding a product - does that apply to a payment integration fix like Wouter's?
 
-Yes, directly — SchenkPunt's checkout flow, donation form, and nonprofit dashboard were completely untouched; the fix lived entirely in how keys were used and where, consistent with Roelevink's stated philosophy of fixing only what's structurally necessary.
+Yes, directly - SchenkPunt's checkout flow, donation form, and nonprofit dashboard were completely untouched; the fix lived entirely in how keys were used and where, consistent with Roelevink's stated philosophy of fixing only what's structurally necessary.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ Yes, directly — SchenkPunt's checkout flow, donation form, and nonprofit dashb
       "name": "Does broader B2B experience give a specific advantage for nonprofit-sector tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not sector-specific — the same payment security review applies regardless of the end customer's industry."
+        "text": "Not sector-specific - the same payment security review applies regardless of the end customer's industry."
       }
     },
     {

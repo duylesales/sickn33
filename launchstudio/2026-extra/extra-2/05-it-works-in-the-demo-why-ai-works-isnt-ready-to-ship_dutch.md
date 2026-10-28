@@ -69,7 +69,7 @@ Het sluiten van deze kloof betekent het vervangen van directe tekst-aaneenschake
 
 Manifera's ingenieurs, voornamelijk werkend vanuit het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat met klantcoördinatie via het kantoor in Amsterdam aan de Herengracht 420, passen hetzelfde beoordelingspatroon toe ongeacht welk specifiek backend-framework de AI-tool van een oprichter toevallig heeft gegenereerd.
 
-[Stuur ons uw prototypelink — we geven u gratis advies](https://launchstudio.eu/nl/#contact).
+[Stuur ons uw prototypelink - we geven u gratis advies](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 
@@ -82,9 +82,9 @@ Een IT-aannemer van een partner, die uit professionele gewoonte in het zoekveld 
 **Resultaat:** LaunchStudio verving de kwetsbare queryconstructie door op de juiste manier geparametriseerde query's over elke zoek- en filterfunctie in de app, waardoor de blootstelling werd gesloten zonder de zoekervaring te veranderen waar Tim's dispatch-teams al aan gewend waren.
 
 > *"Ik testte die zoekbalk voortdurend tijdens het bouwen. Ik zocht honderd keer naar echte klantnamen en echte trackingnummers. Het was nooit bij me opgekomen om er opzettelijk iets geks in te typen."*
-> — **Tim Oosterhuis, Oprichter, RouteWise (Den Haag)**
+> - **Tim Oosterhuis, Oprichter, RouteWise (Den Haag)**
 
-**Kosten en tijdlijn:** € 2.100 (audit van invoeropschoning en query-uitharding) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (audit van invoeropschoning en query-uitharding) - voltooid in 6 werkdagen.
 
 ---
 

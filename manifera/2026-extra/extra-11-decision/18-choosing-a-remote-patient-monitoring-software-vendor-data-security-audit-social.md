@@ -1,7 +1,7 @@
 A cardiac monitor sitting on a patient's home Wi-Fi is a different security problem than a server in a data center. Most RPM vendor audits miss that. 📡
 
 **The Pain Points:**
-❌ **SOC 2 tunnel vision:** The report often excludes device firmware and Bluetooth transmission entirely — but it gets waved around as proof of "full" security.
+❌ **SOC 2 tunnel vision:** The report often excludes device firmware and Bluetooth transmission entirely - but it gets waved around as proof of "full" security.
 ❌ **No SBOM discipline:** Without a maintained Software Bill of Materials, no one can say how fast a newly disclosed vulnerability actually gets patched.
 ❌ **Devices that remember:** Returned or refurbished monitors that still hold prior patients' Wi-Fi credentials and tokens are a common, overlooked exposure.
 

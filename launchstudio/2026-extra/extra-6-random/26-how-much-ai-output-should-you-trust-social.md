@@ -1,4 +1,4 @@
-🔢 Ruben Achterberg's fleet inspection app RouteCheck, built with Lovable in Gouda, calculated per-vehicle fees using an AI-generated tiered pricing structure. It ran without errors, returned plausible numbers, and passed his own casual testing. It took weeks — and one sharp-eyed customer comparing their invoice to their own usage log — before anyone noticed something was off. 📊
+🔢 Ruben Achterberg's fleet inspection app RouteCheck, built with Lovable in Gouda, calculated per-vehicle fees using an AI-generated tiered pricing structure. It ran without errors, returned plausible numbers, and passed his own casual testing. It took weeks - and one sharp-eyed customer comparing their invoice to their own usage log - before anyone noticed something was off. 📊
 
 A plausible-looking wrong number is far more dangerous than an obvious crash, because nothing about it looks broken. 🧠
 

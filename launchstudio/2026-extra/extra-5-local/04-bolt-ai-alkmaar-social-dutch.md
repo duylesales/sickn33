@@ -1,4 +1,4 @@
-🔓 Joost van Dijk bouwde MarketWeigh in Bolt — een SaaS voor voorraad en facturering voor verkopers op de Alkmaarse kaasmarkt — en bracht in de eerste maand elf betalende verkopers aan boord. Toen vond een collega-oprichter, gewoon uit nieuwsgierigheid rondsnuffelend, zijn live geheime Stripe-sleutel gewoon zichtbaar in de netwerkverzoeken van de browser.
+🔓 Joost van Dijk bouwde MarketWeigh in Bolt - een SaaS voor voorraad en facturering voor verkopers op de Alkmaarse kaasmarkt - en bracht in de eerste maand elf betalende verkopers aan boord. Toen vond een collega-oprichter, gewoon uit nieuwsgierigheid rondsnuffelend, zijn live geheime Stripe-sleutel gewoon zichtbaar in de netwerkverzoeken van de browser.
 
 Bolt is gebouwd om een app draaiend te krijgen, niet om te controleren waar elke referentie uiteindelijk belandt. 🧠
 

@@ -12,7 +12,7 @@ In 2023 besteedden AI-startups maanden aan het bouwen van complexe RAG-pijplijne
 
 AI-providers factureren per token, zowel voor invoer (input) als voor uitvoer (output). Invoertokens zijn allerminst gratis puur omdat ze "slechts context" vormen. Als u bij elke simpele gebruikersvraag een document van 100.000 tokens meestuurt naar GPT-4o, kost die ene API-aanroep direct $ 0,25 tot $ 0,50. Stelt de gebruiker tijdens een sessie 10 vervolgvragen, dan stuurt een naïeve implementatie datzelfde document 10 keer opnieuw mee. U heeft zojuist $ 2,50 tot $ 5,00 verbrand aan één enkele gebruiker voor een interactie die slechts enkele centen had mogen kosten.
 
-Bovendien kost het verwerken van 100.000 tokens meetbare computertijd vóórdat het model zijn eerste woord genereert — vaak 2 tot 5 seconden extra wachttijd. De latentie van uw applicatie explodeert precies op het moment dat een betalende klant direct antwoord verwacht. Efficiënt contextbeheer is geen theoretische luxe; het is een absolute noodzaak om uw brutomarges te beschermen. Aangezien circa 80% van de met AI gebouwde projecten strandt vóórdat een duurzame productiestatus wordt bereikt, vormen ongecontroleerde tokenkosten een structurele faalfactor.
+Bovendien kost het verwerken van 100.000 tokens meetbare computertijd vóórdat het model zijn eerste woord genereert - vaak 2 tot 5 seconden extra wachttijd. De latentie van uw applicatie explodeert precies op het moment dat een betalende klant direct antwoord verwacht. Efficiënt contextbeheer is geen theoretische luxe; het is een absolute noodzaak om uw brutomarges te beschermen. Aangezien circa 80% van de met AI gebouwde projecten strandt vóórdat een duurzame productiestatus wordt bereikt, vormen ongecontroleerde tokenkosten een structurele faalfactor.
 
 ## Het 'Lost in the Middle' Fenomeen
 
@@ -35,7 +35,7 @@ In plaats van 200.000 tokens aan irrelevante bedrijfsdata mee te sturen, injecte
 
 ## Reranking: De Ontbrekende Tussenstap
 
-Vector-zoekopdrachten alleen zijn een relatief bot instrument — ze halen fragmenten op die wiskundig dicht bij de query liggen, wat niet altijd gelijkstaat aan de meest inhoudelijk waardevolle informatie. Een volwassen productiepijplijn voegt een **Reranking-stap** toe: haal eerst relatief breed 20 tot 30 kandidaat-chunks op via vector-similariteit, en laat een gespecialiseerd reranking-model (zoals Cohere Rerank of een open-source cross-encoder) deze kandidaten opnieuw scoren en rangschikken, alvorens de beste 3 tot 5 fragmenten in de prompt te injecteren. Dit levert maximale precisie op tegen minimale kosten.
+Vector-zoekopdrachten alleen zijn een relatief bot instrument - ze halen fragmenten op die wiskundig dicht bij de query liggen, wat niet altijd gelijkstaat aan de meest inhoudelijk waardevolle informatie. Een volwassen productiepijplijn voegt een **Reranking-stap** toe: haal eerst relatief breed 20 tot 30 kandidaat-chunks op via vector-similariteit, en laat een gespecialiseerd reranking-model (zoals Cohere Rerank of een open-source cross-encoder) deze kandidaten opnieuw scoren en rangschikken, alvorens de beste 3 tot 5 fragmenten in de prompt te injecteren. Dit levert maximale precisie op tegen minimale kosten.
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de kernuitdaging: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze kostenefficiënte data- en AI-systemen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**. Bekijk voorbeelden in het [Manifera portfolio](https://www.manifera.com/portfolio/).
 
@@ -63,7 +63,7 @@ Zij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in om een geau
 
 **Resultaat:** De gemiddelde promptgrootte daalde met 50% en de API-kosten per zoekopdracht werden gehalveerd, terwijl de juridische accuratesse aanzienlijk toenam.
 
-**Kosten & Tijdlijn:** €1.750 (Context Pruning Integratie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.750 (Context Pruning Integratie Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

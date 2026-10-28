@@ -1,4 +1,4 @@
-⚖️ Isabelle built BrandVoice AI with **Lovable** — a publisher's copyright notice landed with a two-week deadline, and her attorney needed technical evidence that simply didn't exist yet. 🧠
+⚖️ Isabelle built BrandVoice AI with **Lovable** - a publisher's copyright notice landed with a two-week deadline, and her attorney needed technical evidence that simply didn't exist yet. 🧠
 
 If a legal notice about your AI's training data or outputs arrives and you have no provenance documentation or generation logs, your lawyer is arguing blind.
 
@@ -12,7 +12,7 @@ If a legal notice about your AI's training data or outputs arrives and you have 
 
 At **LaunchStudio**, we've been building exactly this kind of technical evidence infrastructure since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-The dispute resolved through a negotiated licensing adjustment instead of litigation, backed by real evidence. (€4,600 (Enterprise Hardening Package) — 10 business days.) 🚀
+The dispute resolved through a negotiated licensing adjustment instead of litigation, backed by real evidence. (€4,600 (Enterprise Hardening Package) - 10 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/legal-technical-help-ai-copyright-ip-disputes
 

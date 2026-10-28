@@ -8,9 +8,9 @@ They were wrong.
 Fintech is software where getting the tech right is only 50% of the job.
 
 **The regulatory trifecta in Europe:**
-⚖️ **PSD2** — payment licensing + Strong Customer Authentication (SCA)
-🛡️ **DORA** — operational resilience & incident reporting (mandatory 2025)
-🕵️ **KYC/AML** — identity verification & sanctions screening
+⚖️ **PSD2** - payment licensing + Strong Customer Authentication (SCA)
+🛡️ **DORA** - operational resilience & incident reporting (mandatory 2025)
+🕵️ **KYC/AML** - identity verification & sanctions screening
 
 **Fintech architecture vs Standard SaaS:**
 

@@ -1,18 +1,18 @@
 ---
-Titel: "Het SSL-Certificaat Is het Makkelijke Deel — Wat Daarna Komt Is het Echte Beveiligingswerk"
+Titel: "Het SSL-Certificaat Is het Makkelijke Deel - Wat Daarna Komt Is het Echte Beveiligingswerk"
 Trefwoorden: webbeveiliging naast SSL, security headers SaaS, CORS-beleid AI-prototype, CSRF-bescherming Next.js, productie-beveiligingschecklist, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Het SSL-Certificaat Is het Makkelijke Deel — Wat Daarna Komt Is het Echte Beveiligingswerk
+# Het SSL-Certificaat Is het Makkelijke Deel - Wat Daarna Komt Is het Echte Beveiligingswerk
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Het SSL-Certificaat Is het Makkelijke Deel — Wat Daarna Komt Is het Echte Beveiligingswerk",
-  "description": "Een groen slotje in de adresbalk van de browser betekent alleen dat uw verbinding versleuteld is. Het betekent niet dat uw applicatie veilig is. Dit is hoe echte productiehardening eruitziet achter het slotje — CSP, CORS, security headers, rate limiting, RLS en een pre-launch beveiligingschecklist.",
+  "headline": "Het SSL-Certificaat Is het Makkelijke Deel - Wat Daarna Komt Is het Echte Beveiligingswerk",
+  "description": "Een groen slotje in de adresbalk van de browser betekent alleen dat uw verbinding versleuteld is. Het betekent niet dat uw applicatie veilig is. Dit is hoe echte productiehardening eruitziet achter het slotje - CSP, CORS, security headers, rate limiting, RLS en een pre-launch beveiligingschecklist.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,13 +31,13 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Wanneer u een Next.js- of Lovable-prototype deployt naar Vercel, Netlify of Railway, wordt binnen tien seconden automatisch een Let's Encrypt SSL/TLS-certificaat gegenereerd. De browser toont een geruststellend groen slotje. Voor niet-technische toeschouwers en veel startende oprichters is dat slotje synoniem met "onze app is veilig." In werkelijkheid zorgt een SSL-certificaat er alleen voor dat data onderweg niet kan worden afgeluisterd door iemand die wifi-verkeer aftapt in een koffiezaak. Het beschermt op geen enkele manier uw database, uw API-sleutels, uw gebruikersrechten of uw applicatieheaders tegen systematische misbruik. Een penetratietester maakt het niet uit of uw slotje groen is — die kijkt of uw `/api/admin`-route een sessietoken controleert, of uw storage bucket standaard privé staat, en of uw inlogformulier 10.000 geautomatiseerde wachtwoordpogingen per minuut overleeft.
+Wanneer u een Next.js- of Lovable-prototype deployt naar Vercel, Netlify of Railway, wordt binnen tien seconden automatisch een Let's Encrypt SSL/TLS-certificaat gegenereerd. De browser toont een geruststellend groen slotje. Voor niet-technische toeschouwers en veel startende oprichters is dat slotje synoniem met "onze app is veilig." In werkelijkheid zorgt een SSL-certificaat er alleen voor dat data onderweg niet kan worden afgeluisterd door iemand die wifi-verkeer aftapt in een koffiezaak. Het beschermt op geen enkele manier uw database, uw API-sleutels, uw gebruikersrechten of uw applicatieheaders tegen systematische misbruik. Een penetratietester maakt het niet uit of uw slotje groen is - die kijkt of uw `/api/admin`-route een sessietoken controleert, of uw storage bucket standaard privé staat, en of uw inlogformulier 10.000 geautomatiseerde wachtwoordpogingen per minuut overleeft.
 
 ## De Beveiligingslagen die AI-Tools Standaard Overslaan
 
 AI-gegenereerde code geeft voorrang aan het snel op het scherm krijgen van functies. Daarbij laat het bijna altijd de standaard HTTP-security-headers en defensieve architecturale patronen weg waar enterprise-penetratietesters op letten:
 
-**1. Content Security Policy (CSP):** Zonder een strikte CSP-header is uw applicatie kwetsbaar voor Cross-Site Scripting (XSS). Als een kwaadwillende een inline script injecteert in een reactie- of profielveld, voert de browser dit gewoon uit, waardoor sessiecookies en authenticatietokens van gebruikers blootgesteld worden. AI-scaffolds genereren vrijwel nooit een CSP, omdat dit vereist dat elke legitieme script-, style-, font- en afbeeldingsbron van uw app handmatig wordt opgesomd — een tijdrovende, makkelijk over te slaan stap wanneer de prioriteit ligt bij het opleveren van een demo.
+**1. Content Security Policy (CSP):** Zonder een strikte CSP-header is uw applicatie kwetsbaar voor Cross-Site Scripting (XSS). Als een kwaadwillende een inline script injecteert in een reactie- of profielveld, voert de browser dit gewoon uit, waardoor sessiecookies en authenticatietokens van gebruikers blootgesteld worden. AI-scaffolds genereren vrijwel nooit een CSP, omdat dit vereist dat elke legitieme script-, style-, font- en afbeeldingsbron van uw app handmatig wordt opgesomd - een tijdrovende, makkelijk over te slaan stap wanneer de prioriteit ligt bij het opleveren van een demo.
 
 **2. Cross-Origin Resource Sharing (CORS):** Prototypebackends staan vaak standaard `Access-Control-Allow-Origin: *` in om vervelende browserfoutmeldingen tijdens lokale ontwikkeling te vermijden. In productie stelt deze wildcard elke kwaadaardige website die door uw ingelogde gebruiker wordt bezocht in staat om geauthenticeerde verzoeken rechtstreeks naar uw API te sturen, waarbij data ongemerkt wordt afgetapt met de sessiecookies van het slachtoffer.
 
@@ -45,13 +45,13 @@ AI-gegenereerde code geeft voorrang aan het snel op het scherm krijgen van funct
 
 **4. Rate Limiting & Brute-Force-Verdediging:** Een login-endpoint zonder rate limiting op IP- en accountniveau laat geautomatiseerde credential-stuffing-bots duizenden gestolen wachtwoordcombinaties per minuut testen, vaak afkomstig uit ongerelateerde datalekken en hergebruikt tegen uw app in de hoop op wachtwoordhergebruik.
 
-**5. Database Row-Level Security (RLS):** De verbinding met PostgreSQL versleutelen heeft geen zin als elke geauthenticeerde gebruiker `SELECT * FROM invoices` kan uitvoeren zonder filters op tabelniveau. Supabase levert RLS standaard uitgeschakeld op nieuwe tabellen, specifiek zodat ontwikkelaars snel kunnen prototypen — wat betekent dat het bijna altijd nog steeds uitgeschakeld is op de dag dat de app live gaat.
+**5. Database Row-Level Security (RLS):** De verbinding met PostgreSQL versleutelen heeft geen zin als elke geauthenticeerde gebruiker `SELECT * FROM invoices` kan uitvoeren zonder filters op tabelniveau. Supabase levert RLS standaard uitgeschakeld op nieuwe tabellen, specifiek zodat ontwikkelaars snel kunnen prototypen - wat betekent dat het bijna altijd nog steeds uitgeschakeld is op de dag dat de app live gaat.
 
 **6. Secrets Blootgesteld in de Clientbundel:** AI-copiloten plaatsen API-sleutels regelmatig direct in `.env`-variabelen met het voorvoegsel `NEXT_PUBLIC_`, of importeren server-only credentials in clientcomponenten, die bundlers vervolgens in platte tekst meesturen in de JavaScript die elke bezoeker via de browser dev tools kan bekijken.
 
 ## Echte Beveiliging Is Gelaagde Verdediging
 
-Echte applicatiebeveiliging is geen enkele plugin of certificaat — het is een gelaagd verdedigingsmodel waarin elke laag (netwerk, serverheaders, API-gateway, database) ervan uitgaat dat de andere lagen mogelijk doorbroken zijn en zijn eigen grenzen afdwingt. Een penetratietester die de OWASP Top 10-checklist doorloopt, stopt niet met kijken zodra vaststaat dat HTTPS actief is; die beschouwt het certificaat als een basisvereiste en besteedt de resterende uren aan het testen van autorisatielogica, inputvalidatie en toegangscontrole — de lagen die daadwerkelijk bepalen of een aanvaller die de voordeur voorbij is ook echt iets waardevols kan bereiken. Daarom eisen inkoopteams van grote bedrijven steeds vaker een ondertekend kwetsbaarheidsscanrapport, en niet alleen een screenshot van een slotje-icoon, voordat ze een leverancierscontract goedkeuren.
+Echte applicatiebeveiliging is geen enkele plugin of certificaat - het is een gelaagd verdedigingsmodel waarin elke laag (netwerk, serverheaders, API-gateway, database) ervan uitgaat dat de andere lagen mogelijk doorbroken zijn en zijn eigen grenzen afdwingt. Een penetratietester die de OWASP Top 10-checklist doorloopt, stopt niet met kijken zodra vaststaat dat HTTPS actief is; die beschouwt het certificaat als een basisvereiste en besteedt de resterende uren aan het testen van autorisatielogica, inputvalidatie en toegangscontrole - de lagen die daadwerkelijk bepalen of een aanvaller die de voordeur voorbij is ook echt iets waardevols kan bereiken. Daarom eisen inkoopteams van grote bedrijven steeds vaker een ondertekend kwetsbaarheidsscanrapport, en niet alleen een screenshot van een slotje-icoon, voordat ze een leverancierscontract goedkeuren.
 
 ## Een Pre-Launch Beveiligingschecklist
 
@@ -66,16 +66,16 @@ Voordat een AI-gebouwd prototype echte klantdata verwerkt of betalingen afhandel
 7. Omgevingsvariabelen gecontroleerd zodat geen server-side secret bereikbaar is vanuit clientbundels.
 8. Dependency-scan uitgevoerd op bekende CVE's in third-party pakketten.
 
-[LaunchStudio](https://launchstudio.eu/nl/) beveiligt AI-prototypes volgens de enterprise-beveiligingsstandaarden die Manifera in 11+ jaar heeft ontwikkeld — vertrouwd door beveiligingsgevoelige organisaties zoals TNO en CFLW Cyber Strategies.
+[LaunchStudio](https://launchstudio.eu/nl/) beveiligt AI-prototypes volgens de enterprise-beveiligingsstandaarden die Manifera in 11+ jaar heeft ontwikkeld - vertrouwd door beveiligingsgevoelige organisaties zoals TNO en CFLW Cyber Strategies.
 
-[Plan een uitgebreide beveiligingsaudit voor uw applicatie](https://launchstudio.eu/nl/#contact) — ga live in de wetenschap dat de data van uw gebruikers écht beschermd is.
+[Plan een uitgebreide beveiligingsaudit voor uw applicatie](https://launchstudio.eu/nl/#contact) - ga live in de wetenschap dat de data van uw gebruikers écht beschermd is.
 
 ## Echt voorbeeld
 ### Een Indie Hacker in de Praktijk: Van Groen Slotje naar Enterprise Beveiligingsgoedkeuring
 
-Lennart de Boer, een ontwikkelaar in Delft, bouwde OfferteGenie — een AI-tool die offertes genereert voor bouwprojecten van aannemers. Hij deployde op Vercel met automatische SSL en ging ervan uit dat zijn beveiliging compleet was.
+Lennart de Boer, een ontwikkelaar in Delft, bouwde OfferteGenie - een AI-tool die offertes genereert voor bouwprojecten van aannemers. Hij deployde op Vercel met automatische SSL en ging ervan uit dat zijn beveiliging compleet was.
 
-Toen zijn eerste enterprise-prospect — een commerciële ontwikkelaar met 200 medewerkers — vóór ondertekening van een enterprise-licentie om een onafhankelijke beveiligingsscan vroeg, kwam het geautomatiseerde rapport terug met 6 High en 4 Medium kwetsbaarheden:
+Toen zijn eerste enterprise-prospect - een commerciële ontwikkelaar met 200 medewerkers - vóór ondertekening van een enterprise-licentie om een onafhankelijke beveiligingsscan vroeg, kwam het geautomatiseerde rapport terug met 6 High en 4 Medium kwetsbaarheden:
 - Ontbrekende CSP liet onveilige inline-scriptuitvoering toe.
 - Een te permissieve CORS-wildcard liet cross-origin API-aanroepen toe.
 - Het `/api/generate`-endpoint had geen enkele rate limiting, waardoor onbeperkt OpenAI-quotum verbruikt kon worden.
@@ -86,9 +86,9 @@ Lennart nam contact op met LaunchStudio. Het Manifera-team implementeerde strikt
 **Resultaat:** OfferteGenie voerde de enterprise-kwetsbaarheidsscan opnieuw uit, behaalde een schone A+-beoordeling en sloot een jaarlijks enterprise-contract van €14.400 af.
 
 > *"Ik dacht dat het SSL-certificaat van Vercel betekende dat ik veilig was. Toen de corporate beveiligingsscan over de hele linie rood kleurde, besefte ik hoeveel onzichtbaar beveiligingswerk er nog is naast versleuteling onderweg. LaunchStudio verhielp elke kwetsbaarheid in vier dagen."*
-> — **Lennart de Boer, Oprichter, OfferteGenie (Delft)**
+> - **Lennart de Boer, Oprichter, OfferteGenie (Delft)**
 
-**Kosten & Doorlooptijd:** €1.600 (Launch Ready Package, volledige security-header-hardening + rate limiting + storage-toegangscontrole) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €1.600 (Launch Ready Package, volledige security-header-hardening + rate limiting + storage-toegangscontrole) - afgerond in 4 werkdagen.
 
 ---
 

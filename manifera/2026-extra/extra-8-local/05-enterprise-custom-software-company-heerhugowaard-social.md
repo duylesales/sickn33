@@ -6,7 +6,7 @@ Most Heerhugowaard CIOs assume "enterprise-capable" means "large local agency." 
 ❌ **The Re-Procurement Tax:** Switching vendors at every program phase quietly adds 15-20% to a multi-year program's total cost through lost institutional knowledge and duplicated compliance documentation.
 
 **The Manifera Solution:**
-✅ **Named Architectural Ownership:** A dedicated Autonomous Pod scales from a discovery-stage team to eight-plus engineers within one governance relationship — no vendor-switch penalty between phases.
+✅ **Named Architectural Ownership:** A dedicated Autonomous Pod scales from a discovery-stage team to eight-plus engineers within one governance relationship - no vendor-switch penalty between phases.
 ✅ **Amsterdam Governance, Standing Relationship:** GDPR-aligned defaults, audit logging, and infrastructure-as-code are owned continuously by the same Dutch-based architectural team from discovery through years of maintenance.
 ✅ **Enterprise Rates, 45-60% Lower:** Senior engineering talent in Ho Chi Minh City delivers the same seniority tier as the €750-€1,000/day Randstad enterprise rate, at a fraction of the cost.
 

@@ -1,4 +1,4 @@
-📉 Tobias built ToolMatch AI with **Bolt** — thousands of comparison pages, gorgeous in the browser, and almost totally invisible to Google. 🧠
+📉 Tobias built ToolMatch AI with **Bolt** - thousands of comparison pages, gorgeous in the browser, and almost totally invisible to Google. 🧠
 
 If your programmatic SEO pages render client-side only, with no sitemap pipeline and duplicate metadata, no amount of keyword research will make them rank.
 
@@ -12,7 +12,7 @@ If your programmatic SEO pages render client-side only, with no sitemap pipeline
 
 At **LaunchStudio**, we've been fixing exactly this class of technical SEO gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Tobias's already-written content strategy finally became executable: 1,200+ pages indexed within six weeks, up from roughly 40. (€2,200 (Launch & Grow Package) — 9 business days.) 🚀
+Tobias's already-written content strategy finally became executable: 1,200+ pages indexed within six weeks, up from roughly 40. (€2,200 (Launch & Grow Package) - 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-seo-agency-programmatic-seo
 

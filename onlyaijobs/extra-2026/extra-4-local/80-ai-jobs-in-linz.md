@@ -41,7 +41,7 @@ Content Format: Local Guide
 }
 </script>
 
-Linz, the capital of Upper Austria, is an industrial city on the Danube that has reinvented itself as a centre of technology, art and research. It hosts one of Austria's largest industrial companies, a globally successful software company, a software park in nearby Hagenberg and — at Johannes Kepler University — one of Europe's most renowned machine learning institutes, led by the co-inventor of the LSTM. Upper Austria is also Austria's leading industrial region, full of family-owned technology champions. For experienced machine learning engineers, AI jobs in Linz span fundamental ML research and its commercialisation, industrial AI in steel and manufacturing, software observability and applied research. This guide explains the landscape.
+Linz, the capital of Upper Austria, is an industrial city on the Danube that has reinvented itself as a centre of technology, art and research. It hosts one of Austria's largest industrial companies, a globally successful software company, a software park in nearby Hagenberg and - at Johannes Kepler University - one of Europe's most renowned machine learning institutes, led by the co-inventor of the LSTM. Upper Austria is also Austria's leading industrial region, full of family-owned technology champions. For experienced machine learning engineers, AI jobs in Linz span fundamental ML research and its commercialisation, industrial AI in steel and manufacturing, software observability and applied research. This guide explains the landscape.
 
 ## JKU Linz and Machine Learning Research
 
@@ -53,13 +53,13 @@ For researchers and research engineers, Linz offers the rare chance to work clos
 
 **Steel and materials.** voestalpine, headquartered in Linz, is a global steel and technology group producing high-quality steel products for automotive, rail, energy and aerospace. Steel production is energy-intensive and complex; data science supports process optimisation, quality prediction, predictive maintenance and energy and emissions reduction, especially as the company transitions toward lower-carbon steelmaking.
 
-**Upper Austria's industrial champions.** The region is home to many family-owned technology companies that lead global niches — in injection moulding machines, welding and solar technology, fire-fighting vehicles, motorcycles and more. These companies increasingly use AI for smart products, production optimisation and service.
+**Upper Austria's industrial champions.** The region is home to many family-owned technology companies that lead global niches - in injection moulding machines, welding and solar technology, fire-fighting vehicles, motorcycles and more. These companies increasingly use AI for smart products, production optimisation and service.
 
 ## Software: Observability and the Hagenberg Park
 
-Dynatrace, a software intelligence and observability company founded in Linz, has large engineering operations in Upper Austria. Observability platforms use AI to detect anomalies, identify root causes and automate IT operations across complex cloud environments — work that combines large-scale data engineering with ML.
+Dynatrace, a software intelligence and observability company founded in Linz, has large engineering operations in Upper Austria. Observability platforms use AI to detect anomalies, identify root causes and automate IT operations across complex cloud environments - work that combines large-scale data engineering with ML.
 
-The Softwarepark Hagenberg, about 20 kilometres from Linz, brings together the University of Applied Sciences Upper Austria's informatics campus, the Software Competence Center Hagenberg (SCCH) — an applied research centre in software and data science — and many software companies.
+The Softwarepark Hagenberg, about 20 kilometres from Linz, brings together the University of Applied Sciences Upper Austria's informatics campus, the Software Competence Center Hagenberg (SCCH) - an applied research centre in software and data science - and many software companies.
 
 ## Art and Technology
 
@@ -92,15 +92,15 @@ Linz lies on the Danube between Vienna and Salzburg, with trains reaching Vienna
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Linz you will find few or no local vacancies there today. Use Austrian job portals, JKU and research centre vacancy lists and company career pages as primary sources. OnlyAIJobs is useful for comparing Upper Austria with the Netherlands — where industrial and engineering employers such as Holland Innovative, VINCI Energies and Rexel list AI roles — and as a method: many Upper Austrian employers are located in smaller towns around Linz, so the exact address and commute matter. Upper Austrian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Linz you will find few or no local vacancies there today. Use Austrian job portals, JKU and research centre vacancy lists and company career pages as primary sources. OnlyAIJobs is useful for comparing Upper Austria with the Netherlands - where industrial and engineering employers such as Holland Innovative, VINCI Energies and Rexel list AI roles - and as a method: many Upper Austrian employers are located in smaller towns around Linz, so the exact address and commute matter. Upper Austrian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## From Research to Industrial AI
 
-Linz is an interesting example of how fundamental ML research can connect with industry. Researchers develop new architectures for sequence modelling and apply them to industrial time series, simulation and control problems. Industrial partners provide real data and challenges — steel production, manufacturing processes, energy systems — while researchers bring new methods. Spin-off companies aim to turn research into products that industrial customers can use. For engineers, this ecosystem offers roles along the whole path from research to deployment: research scientists developing methods, research engineers scaling them and applied ML engineers integrating them into industrial systems.
+Linz is an interesting example of how fundamental ML research can connect with industry. Researchers develop new architectures for sequence modelling and apply them to industrial time series, simulation and control problems. Industrial partners provide real data and challenges - steel production, manufacturing processes, energy systems - while researchers bring new methods. Spin-off companies aim to turn research into products that industrial customers can use. For engineers, this ecosystem offers roles along the whole path from research to deployment: research scientists developing methods, research engineers scaling them and applied ML engineers integrating them into industrial systems.
 
 ## Steel Production and Decarbonisation
 
-Steel production involves blast furnaces or electric arc furnaces, rolling mills, heat treatment and finishing, each generating large amounts of process data. Machine learning helps predict product properties, optimise energy use, schedule production and detect equipment problems early. The transition to lower-carbon steelmaking — for example using electric arc furnaces and, in the future, hydrogen — introduces new processes where data-driven optimisation is especially valuable. Engineers in this field contribute directly to reducing industrial emissions.
+Steel production involves blast furnaces or electric arc furnaces, rolling mills, heat treatment and finishing, each generating large amounts of process data. Machine learning helps predict product properties, optimise energy use, schedule production and detect equipment problems early. The transition to lower-carbon steelmaking - for example using electric arc furnaces and, in the future, hydrogen - introduces new processes where data-driven optimisation is especially valuable. Engineers in this field contribute directly to reducing industrial emissions.
 
 ## Observability and AI for IT Operations
 
@@ -108,7 +108,7 @@ Modern software systems run on complex cloud infrastructures with thousands of s
 
 ## Industrial Champions and Smart Products
 
-Upper Austria's industrial companies build machines and products sold worldwide — injection moulding machines, welding systems, inverters, vehicles and more. AI helps make these products smarter: predicting maintenance needs for machines at customer sites, optimising process settings automatically, analysing welding quality and offering digital services. These companies often combine long engineering traditions with growing digital teams, and they value engineers who understand both ML and the physical products.
+Upper Austria's industrial companies build machines and products sold worldwide - injection moulding machines, welding systems, inverters, vehicles and more. AI helps make these products smarter: predicting maintenance needs for machines at customer sites, optimising process settings automatically, analysing welding quality and offering digital services. These companies often combine long engineering traditions with growing digital teams, and they value engineers who understand both ML and the physical products.
 
 ## Applied Research at Hagenberg
 
@@ -164,7 +164,7 @@ Industrial AI must be reliable and safe, and the EU AI Act classifies AI used as
 
 ## Beyond Linz: Salzburg, Wels and Steyr
 
-Upper Austria's industrial towns — Wels, Steyr and others — host manufacturing companies with growing data teams, and Salzburg, about an hour away by train, has technology companies and research institutes. Searching by distance across the region, rather than limiting yourself to Linz itself, reveals many more opportunities, especially in industrial AI where employers are often located outside major cities.
+Upper Austria's industrial towns - Wels, Steyr and others - host manufacturing companies with growing data teams, and Salzburg, about an hour away by train, has technology companies and research institutes. Searching by distance across the region, rather than limiting yourself to Linz itself, reveals many more opportunities, especially in industrial AI where employers are often located outside major cities.
 
 ## A Final Tip
 

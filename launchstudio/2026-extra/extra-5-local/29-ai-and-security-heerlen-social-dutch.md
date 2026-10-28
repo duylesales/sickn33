@@ -1,4 +1,4 @@
-😬 Mark Souren bouwde PensioPortal — een tool die kleine werkgevers helpt bij het toelichten van pensioenbijdrageoverzichten van werknemers — met Lovable over tweeënhalve week. Tijdens een pilot veranderde een HR-medewerker die de tool testte een numeriek ID in de adresbalk van de browser en kreeg de volledige pensioengeschiedenis, naam en salarisband van een andere werknemer te zien. 😳
+😬 Mark Souren bouwde PensioPortal - een tool die kleine werkgevers helpt bij het toelichten van pensioenbijdrageoverzichten van werknemers - met Lovable over tweeënhalve week. Tijdens een pilot veranderde een HR-medewerker die de tool testte een numeriek ID in de adresbalk van de browser en kreeg de volledige pensioengeschiedenis, naam en salarisband van een andere werknemer te zien. 😳
 
 Lovable bouwde goedogende pagina's. Niets controleerde of u het record mocht bekijken. 🧠
 
@@ -11,7 +11,7 @@ Lovable bouwde goedogende pagina's. Niets controleerde of u het record mocht bek
 ✅ Gestructureerde auditlogging toevoegen zodat elke toegangspoging traceerbaar is
 ✅ Een bredere beoordeling uitvoeren om te bevestigen dat geen ander eindpunt hetzelfde gebrek deelt
 
-Bij **LaunchStudio**, ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW Cyber Strategies voor beveiligingsgericht engineeringwerk — plannen we precies deze beoordeling als geplande stap vóór lancering, niet als reactie op een incident. 🛡️
+Bij **LaunchStudio**, ondersteund door Manifera - vertrouwd door Vodafone, TNO en CFLW Cyber Strategies voor beveiligingsgericht engineeringwerk - plannen we precies deze beoordeling als geplande stap vóór lancering, niet als reactie op een incident. 🛡️
 
 Het resultaat voor PensioPortal: de tool werd opnieuw gelanceerd met geverifieerde toegangscontroles en heeft sindsdien twee beveiligingsbeoordelingen van werkgevers doorstaan zonder vervolgvraag. 🚀
 

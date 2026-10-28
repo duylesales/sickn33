@@ -49,7 +49,7 @@ De meeste AI-coderingstools behouden zich het recht voor om hun algemene voorwaa
 
 [LaunchStudio](https://launchstudio.eu/nl/) beantwoordt deze exacte vraag routinematig tijdens productiegereedheidsopdrachten, vooral omdat Manifera's eigen engineeringteams – gevestigd aan de Herengracht 420 in Amsterdam en het ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad – voldoende due diligence-processen hebben afgehandeld zodat zakelijke klanten precies weten om welke documentatie een investeerder of overnemende partij daadwerkelijk zal vragen, en het is zelden een formeel juridisch advies; het zijn meestal gewoon de voorwaarden van de tool zoals ze waren op de datum waarop uw code werd gegenereerd, ergens bewaard waar ze terug te vinden zijn in plaats van onder druk te worden gereconstrueerd zodra iemand er uiteindelijk om vraagt.
 
-[Zorg dat de documentatie over het eigendom van uw code op orde is voordat iemand erom vraagt](https://launchstudio.eu/nl/#contact) — een vraag van vijf minuten tijdens due diligence mag geen vertraging worden die het momentum precies op het verkeerde moment blokkeert.
+[Zorg dat de documentatie over het eigendom van uw code op orde is voordat iemand erom vraagt](https://launchstudio.eu/nl/#contact) - een vraag van vijf minuten tijdens due diligence mag geen vertraging worden die het momentum precies op het verkeerde moment blokkeert.
 
 ## Die andere eigendomsvraag: open-sourcecode die verborgen zit in wat de AI heeft gegenereerd
 
@@ -61,7 +61,7 @@ Zelfs nadat een oprichter heeft bevestigd dat de voorwaarden van een AI-codering
 
 **Wat licenties daadwerkelijk vereisen, in de gevallen waarin dit er toe doet.** Permissieve licenties zoals MIT of Apache vereisen doorgaans alleen dat een naamsvermelding ergens in uw project behouden blijft – een eis met weinig wrijving waaraan de meeste oprichters zonder veel moeite kunnen voldoen als ze eenmaal weten dat deze van toepassing is. Copyleft-licenties zoals de GPL-familie zijn strenger en vereisen in sommige gevallen dat een afgeleid werk onder dezelfde licentie wordt vrijgegeven – een daadwerkelijk ingrijpende eis voor een oprichter die een eigen, commercieel product bouwt, wat precies is waarom dit het controleren waard is voordat het relevant wordt.
 
-**Een proportionele manier om dit daadwerkelijk aan te pakken.** Niemand hoeft elke regel te scannen die een AI-tool ooit heeft gegenereerd – dat is niet realistisch noch noodzakelijk gezien het feit hoeveel gegenereerde code oprecht generiek is. Wat wel de moeite waard is om te doen, is elk groter, meer karakteristiek of ongewoon specifiek blok gegenereerde logica behandelen met dezelfde zorgvuldigheid die een oprichter zou toepassen op code die hij rechtstreeks uit een openbare repository had gecopieerd, aangezien dat functioneel dichter ligt bij wat er is gebeurd dan "de AI heeft dit simpelweg uit het niets uitgevonden." Een eenvoudige open-sourcelicentiescanner, uitgevoerd op uw codebase voorafgaand mijlpalen van fondsenwerving of overname, is een laagdrempelige manier om alles boven water te krijgen dat een nadere blik waard is — en het beantwoordt een vraag die een due diligence-proces steeds vaker rechtstreeks zal stellen, direct naast de eigendomsvraag die in dit artikel wordt behandeld.
+**Een proportionele manier om dit daadwerkelijk aan te pakken.** Niemand hoeft elke regel te scannen die een AI-tool ooit heeft gegenereerd – dat is niet realistisch noch noodzakelijk gezien het feit hoeveel gegenereerde code oprecht generiek is. Wat wel de moeite waard is om te doen, is elk groter, meer karakteristiek of ongewoon specifiek blok gegenereerde logica behandelen met dezelfde zorgvuldigheid die een oprichter zou toepassen op code die hij rechtstreeks uit een openbare repository had gecopieerd, aangezien dat functioneel dichter ligt bij wat er is gebeurd dan "de AI heeft dit simpelweg uit het niets uitgevonden." Een eenvoudige open-sourcelicentiescanner, uitgevoerd op uw codebase voorafgaand mijlpalen van fondsenwerving of overname, is een laagdrempelige manier om alles boven water te krijgen dat een nadere blik waard is - en het beantwoordt een vraag die een due diligence-proces steeds vaker rechtstreeks zal stellen, direct naast de eigendomsvraag die in dit artikel wordt behandeld.
 
 ## Echt voorbeeld
 
@@ -71,12 +71,12 @@ Freek, een voormalig logistiek planner die oprichter werd in Zwolle, bouwde Rout
 
 Toen een regionaal logistiek bedrijf Freek benaderde over een mogelijke overname van RouteRegie, was de eerste technische vraag van hun juridische team specifiek: kon Freek schriftelijk bevestigen dat de code die tijdens de free-tier-periode werd gegenereerd dezelfde eigendomsvoorwaarden had als de code die daarna werd gegenereerd. Freek had nooit een kopie van de voorwaarden van het gratis niveau bewaard en kon op het moment van het onderzoek niet bevestigen of deze waren gewijzigd.
 
-**Resultaat:** LaunchStudio hielp Freek de gearchiveerde versie van de voorwaarden van de toolaanbieder op te halen via de Wayback Machine en de eigen versiehistoriepagina van de aanbieder, wat bevestigde dat beide niveaus identieke eigendomstaal bevatten — waardoor de vraag van de koper binnen twee dagen werd opgelost in plaats van het gesprek wekenlang te vertragen.
+**Resultaat:** LaunchStudio hielp Freek de gearchiveerde versie van de voorwaarden van de toolaanbieder op te halen via de Wayback Machine en de eigen versiehistoriepagina van de aanbieder, wat bevestigde dat beide niveaus identieke eigendomstaal bevatten - waardoor de vraag van de koper binnen twee dagen werd opgelost in plaats van het gesprek wekenlang te vertragen.
 
 > *"Ik had er oprecht nooit over nagedacht welke versie van de voorwaarden van toepassing was op code van twee maanden oud versus waar ik gisteren mee akkoord was gegaan. Het pakte goed uit, maar 'het pakte goed uit' is niet hetzelfde als een echt antwoord klaar hebben staan toen ze het vroegen."*
-> — **Freek Bakker, Oprichter, RouteRegie (Zwolle)**
+> - **Freek Bakker, Oprichter, RouteRegie (Zwolle)**
 
-**Kosten en tijdlijn:** € 450 (documentatie en beoordeling van voorwaardenarchivering) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 450 (documentatie en beoordeling van voorwaardenarchivering) - voltooid in 2 werkdagen.
 
 ---
 

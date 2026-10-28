@@ -1,4 +1,4 @@
-🧪 Jelle Vroomen bouwde Sportlokaal in Lovable voor het boeken van sportzalen in Zaanstad en Purmerend voor 48 zaalbeheerders. Na een snelle UI-update lag het betaalproces twee keer plat — één keer 6 uur en één keer een heel weekend — telkens pas ontdekt toen zaaleigenaren boos opbelden. 😳
+🧪 Jelle Vroomen bouwde Sportlokaal in Lovable voor het boeken van sportzalen in Zaanstad en Purmerend voor 48 zaalbeheerders. Na een snelle UI-update lag het betaalproces twee keer plat - één keer 6 uur en één keer een heel weekend - telkens pas ontdekt toen zaaleigenaren boos opbelden. 😳
 
 AI-tools schrijven snel code, maar testen geen randgevallen. Waar het vaak misgaat bij het testen van AI-apps:
 

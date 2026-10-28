@@ -1,9 +1,9 @@
-🛡️ Nadia el Amrani bouwde Taalmaatje in Lovable voor 340 taalleerders in Eindhoven. Iemand maakte binnen 15 seconden een account aan, onderschepte het request-formaat en vuurde in 9 dagen 60.000 verzoeken af op haar AI-model als gratis vertaalproxy — zonder enige rate limiting of budgetbeveiliging. 😳
+🛡️ Nadia el Amrani bouwde Taalmaatje in Lovable voor 340 taalleerders in Eindhoven. Iemand maakte binnen 15 seconden een account aan, onderschepte het request-formaat en vuurde in 9 dagen 60.000 verzoeken af op haar AI-model als gratis vertaalproxy - zonder enige rate limiting of budgetbeveiliging. 😳
 
 AI-bouwers vergeten vaak dat publieke endpoints door bots en scrapers misbruikt worden als gratis API-proxy. Waar het misgaat:
 
 ❌ Publiek toegankelijke AI-endpoints die zonder authenticatie dure taalmodellen aanroepen
-❌ Vertrouwen op knopjes die in de browser 'disabled' worden — triviaal te omzeilen via curl
+❌ Vertrouwen op knopjes die in de browser 'disabled' worden - triviaal te omzeilen via curl
 ❌ Ontbreken van tokenquota per gebruiker of maandelijkse verbruiksplafonds
 ❌ Geen IP-gebaseerde throttling of botbescherming op kwetsbare formulieren
 

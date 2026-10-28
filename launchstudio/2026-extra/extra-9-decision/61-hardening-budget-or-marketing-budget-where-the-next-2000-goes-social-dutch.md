@@ -1,4 +1,4 @@
-🚨 Tomas had € 2.400 en een LinkedIn-campagne klaargezet voor restauranteigenaren — totdat een datalek bij een bevriende oprichter hem deed twijfelen. Een snelle check toonde dat klantdata onderling lekte. 😳
+🚨 Tomas had € 2.400 en een LinkedIn-campagne klaargezet voor restauranteigenaren - totdat een datalek bij een bevriende oprichter hem deed twijfelen. Een snelle check toonde dat klantdata onderling lekte. 😳
 
 Oprichters kiezen tussen "hardening of marketing" vaak op onderbuikgevoel: marketing voelt als tractie, hardening als een saaie verzekeringspremie: 🧠
 

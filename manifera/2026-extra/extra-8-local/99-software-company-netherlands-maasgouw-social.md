@@ -6,7 +6,7 @@ Two vendor proposals look identical on price and features. The terms that actual
 ❌ **Aspirational SLAs:** "We aim for high availability" commits to nothing enforceable.
 
 **The Manifera Solution:**
-✅ **Explicit IP Ownership:** You own the code, documentation, and architecture — in writing, from day one.
+✅ **Explicit IP Ownership:** You own the code, documentation, and architecture - in writing, from day one.
 ✅ **Source-Code Escrow:** A guaranteed path to your codebase no matter what happens to the vendor.
 ✅ **Penalty-Backed SLAs:** Real uptime and response commitments, not marketing language.
 

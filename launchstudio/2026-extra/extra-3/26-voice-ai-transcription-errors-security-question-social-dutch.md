@@ -1,4 +1,4 @@
-🚨 Een klant belde BelBestel om zijn bestelling halverwege de zin te corrigeren: "nee, wacht." Achtergrondgeluid op de lijn zorgde ervoor dat het systeem alleen "nee" transcribeerde, daarna stilte hoorde, en de correctie stilzwijgend liet vallen — geen annulering, geen verheldering, geen aangepaste bestelling. De klant kreeg nooit wat hij eigenlijk vroeg. 📞
+🚨 Een klant belde BelBestel om zijn bestelling halverwege de zin te corrigeren: "nee, wacht." Achtergrondgeluid op de lijn zorgde ervoor dat het systeem alleen "nee" transcribeerde, daarna stilte hoorde, en de correctie stilzwijgend liet vallen - geen annulering, geen verheldering, geen aangepaste bestelling. De klant kreeg nooit wat hij eigenlijk vroeg. 📞
 
 Binaire ja-nee-logica werkt prima in een stille kamer. Echte telefoongesprekken zijn geen stille kamers. 🧠
 
@@ -11,7 +11,7 @@ Binaire ja-nee-logica werkt prima in een stille kamer. Echte telefoongesprekken 
 ✅ Vereis een ondubbelzinnige, herhaalde bevestiging voordat vervolgacties op basis van spraak worden uitgevoerd
 ✅ Voeg fallback-logica toe die bij dubbelzinnige invoer een verhelderende vervolgvraag stelt in plaats van stilzwijgend terug te vallen op een aanname
 
-Bij **LaunchStudio** beoordelen wij stemgestuurde AI-producten specifiek op dit risico van transcriptie naar actie — waarbij invoervalidatie wordt behandeld als een veiligheidsvraag, niet alleen als een kwaliteitsvraag. Ondersteund door Manifera's technische discipline rond het verwerken van invoer met gevolgen. 🛡️
+Bij **LaunchStudio** beoordelen wij stemgestuurde AI-producten specifiek op dit risico van transcriptie naar actie - waarbij invoervalidatie wordt behandeld als een veiligheidsvraag, niet alleen als een kwaliteitsvraag. Ondersteund door Manifera's technische discipline rond het verwerken van invoer met gevolgen. 🛡️
 
 Zijn resultaat: BelBestel leest nu elke bestelling terug voordat deze wordt bevestigd, met fallback-logica die verheldert in plaats van dubbelzinnige spraak stilzwijgend te laten vallen. 🚀
 

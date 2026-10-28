@@ -1,4 +1,4 @@
-💸 Sophia, a retail tech founder, built a product recommendation bot using **Bolt** — then watched her margins vanish as her OpenAI API bill skyrocketed from users asking near-identical product questions every single day. 🛒
+💸 Sophia, a retail tech founder, built a product recommendation bot using **Bolt** - then watched her margins vanish as her OpenAI API bill skyrocketed from users asking near-identical product questions every single day. 🛒
 
 If you pay an LLM to generate the exact same answer 500 times a week, you're burning capital on repetitive compute cycles that could be served in 80 milliseconds. 🧠
 

@@ -35,13 +35,13 @@ Slechte voorbeelden (te breed):
 
 Schets op papier of in Excalidraw 3 tot 5 schermen die uw toepassing nodig heeft. Niet meer. Voor een SaaS-trainingsplan kan dat zijn:
 
-1. **Dashboard** — Lijst met trainingsplannen met een knop 'Nieuw maken'
+1. **Dashboard** - Lijst met trainingsplannen met een knop 'Nieuw maken'
 
-2. **Plan maken/bewerken** — Formulier om een trainingsplan met oefeningen op te stellen
+2. **Plan maken/bewerken** - Formulier om een trainingsplan met oefeningen op te stellen
 
-3. **Share Link** — Een pagina die klanten zien wanneer ze een gedeeld abonnement ontvangen
+3. **Share Link** - Een pagina die klanten zien wanneer ze een gedeeld abonnement ontvangen
 
-4. **Inloggen** — Eenvoudige e-mail-/wachtwoordverificatie
+4. **Inloggen** - Eenvoudige e-mail-/wachtwoordverificatie
 
 Noteer voor elk scherm de belangrijkste gegevens die worden weergegeven en de acties die een gebruiker kan ondernemen. Dit wordt je snelle gids voor Lovable.
 
@@ -125,17 +125,17 @@ Deze feedback is waardevoller dan welke extra functie dan ook die u zou kunnen b
 
 ## Na de 48 uur: wat daarna komt
 
-Als uw prototype uw idee valideert, begrijpen mensen het, willen het gebruiken en vragen zich af: "Wanneer kan ik hiervoor betalen?" — de volgende stap is het productieklaar maken.
+Als uw prototype uw idee valideert, begrijpen mensen het, willen het gebruiken en vragen zich af: "Wanneer kan ik hiervoor betalen?" - de volgende stap is het productieklaar maken.
 
 Uw 48-uurs prototype is een validatietool, geen gelanceerd product. Voordat u echte gebruikers en echte betalingen accepteert, heeft u het volgende nodig:
 
-- **Verscherping van de beveiliging** — Beveiliging op rijniveau, invoervalidatie, geheimbeheer
+- **Verscherping van de beveiliging** - Beveiliging op rijniveau, invoervalidatie, geheimbeheer
 
-- **Betalingsintegratie** — Stripe in live-modus met correcte webhook-afhandeling
+- **Betalingsintegratie** - Stripe in live-modus met correcte webhook-afhandeling
 
-- **Productie-implementatie** — Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
+- **Productie-implementatie** - Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
 
-- **Wettelijke naleving** — Privacybeleid, servicevoorwaarden, gereedheid voor de AVG
+- **Wettelijke naleving** - Privacybeleid, servicevoorwaarden, gereedheid voor de AVG
 
 Dit is precies wat [LaunchStudio](https://launchstudio.eu/nl/) doet. Wij nemen uw AI-gebouwde prototype en maken het in 1 tot 3 weken lanceringsklaar, voor een vaste prijs van €800 tot €7.500. U behoudt uw prototype precies zoals u het heeft gebouwd; wij repareren alleen wat tussen u en echte gebruikers staat.
 
@@ -167,7 +167,7 @@ Thomas nam contact op met **LaunchStudio (door Manifera)**. Het technische team 
 
 **Resultaat:** Thomas demonstreerde de beveiligde app op zijn eigen domein aan de klant, waardoor hij een boekingscontract voor 3 grote conferenties binnenhaalde.
 
-**Kosten en tijdlijn:** € 1.500 (lanceringspakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.500 (lanceringspakket) - productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
 

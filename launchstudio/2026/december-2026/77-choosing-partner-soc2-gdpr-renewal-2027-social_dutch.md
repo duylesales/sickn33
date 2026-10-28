@@ -12,7 +12,7 @@ Compliance in jaar twee is complexer door 'compliance drift': code en integratie
 
 Bij LaunchStudio combineren we compliance-kennis met directe senior backend engineering. 🔒
 
-Ingrid behield haar enterprise-contracten ter waarde van € 85.000 ARR met een vlekkeloze audit. (€ 3.400 (Compliance Hardening) — 8 werkdagen.) 🚀
+Ingrid behield haar enterprise-contracten ter waarde van € 85.000 ARR met een vlekkeloze audit. (€ 3.400 (Compliance Hardening) - 8 werkdagen.) 🚀
 
 👉 Bekijk onze compliance aanpak: https://launchstudio.eu/nl/blog/choosing-partner-soc2-gdpr-renewal-2027
 

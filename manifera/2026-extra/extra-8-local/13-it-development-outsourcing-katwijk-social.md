@@ -1,7 +1,7 @@
 "We tried outsourcing once and it was a disaster" has killed more good outsourcing decisions than any actual outsourcing failure ever did. 🚫📉
 
 **The Pain Points:**
-❌ **The Board Remembers the Word, Not the Root Cause:** A past vendor failure usually traces to no fixed acceptance criteria, no milestone payments, and no independent technical oversight — not the outsourcing model itself.
+❌ **The Board Remembers the Word, Not the Root Cause:** A past vendor failure usually traces to no fixed acceptance criteria, no milestone payments, and no independent technical oversight - not the outsourcing model itself.
 ❌ **Vague Requirements Discovered at Delivery:** Skipping a paid, time-boxed discovery phase is the single most common cause of requirements disputes in unstructured engagements.
 ❌ **The Leiden Talent Squeeze:** Katwijk-corridor CIOs compete for scarce engineers against Leiden's university and bio-science employers, with 10+ weeks typically needed to fill one open technical seat.
 

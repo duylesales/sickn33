@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Every Dutch weather forecast, every official heat warning and every climate scenario used by water boards and municipalities can be traced back to a single location on the eastern edge of Utrecht. De Bilt is where the Royal Netherlands Meteorological Institute (KNMI) is based, and neighbouring Bilthoven has for decades been the home of the National Institute for Public Health and the Environment (RIVM). Together they make this quiet, green municipality one of the most important places in the country for scientific data work — and a place where machine learning is currently changing long-established methods.
+Every Dutch weather forecast, every official heat warning and every climate scenario used by water boards and municipalities can be traced back to a single location on the eastern edge of Utrecht. De Bilt is where the Royal Netherlands Meteorological Institute (KNMI) is based, and neighbouring Bilthoven has for decades been the home of the National Institute for Public Health and the Environment (RIVM). Together they make this quiet, green municipality one of the most important places in the country for scientific data work - and a place where machine learning is currently changing long-established methods.
 
 ## Why Weather Forecasting Is Having a Machine Learning Moment
 
@@ -68,15 +68,15 @@ For national meteorological services such as KNMI, this raises fundamental quest
 
 ## The National Climate Scenarios as a Data Product
 
-The **KNMI'23 climate scenarios** describe possible futures for the Dutch climate — temperature, precipitation, sea level rise and extremes — under different emission pathways. They are used by governments, water boards, insurers and infrastructure managers to plan adaptation.
+The **KNMI'23 climate scenarios** describe possible futures for the Dutch climate - temperature, precipitation, sea level rise and extremes - under different emission pathways. They are used by governments, water boards, insurers and infrastructure managers to plan adaptation.
 
-Producing such scenarios is a data-intensive process: global climate model output must be translated to the scale of a small, low-lying country, and statistical methods determine how rare extreme events are represented. Machine learning is increasingly explored for emulating expensive model runs and for downscaling. The high stakes — dike heights and drainage capacity depend on these numbers — make methodological transparency essential.
+Producing such scenarios is a data-intensive process: global climate model output must be translated to the scale of a small, low-lying country, and statistical methods determine how rare extreme events are represented. Machine learning is increasingly explored for emulating expensive model runs and for downscaling. The high stakes - dike heights and drainage capacity depend on these numbers - make methodological transparency essential.
 
 ## Regulation and Data Policy
 
 **EU Open Data Directive (EU) 2019/1024.** Meteorological data is designated as a category of high-value datasets that public bodies should make available free of charge in machine-readable form. This supports a broad ecosystem of companies building services on public weather data, and it means much of KNMI's work is published openly.
 
-**General Data Protection Regulation (GDPR).** Weather and climate data are rarely personal data, but public health data often is — and health data is a special category. Work at a public health institute involves strict rules on pseudonymisation, access and purpose limitation.
+**General Data Protection Regulation (GDPR).** Weather and climate data are rarely personal data, but public health data often is - and health data is a special category. Work at a public health institute involves strict rules on pseudonymisation, access and purpose limitation.
 
 **Public Health Act (Wet publieke gezondheid).** This act provides the framework for infectious disease control in the Netherlands, including notification of certain diseases, which shapes the data available for surveillance.
 
@@ -88,11 +88,11 @@ Producing such scenarios is a data-intensive process: global climate model outpu
 
 On a warm summer afternoon, thunderstorms develop quickly over the south of the country. Traditional nowcasting extrapolates the movement of precipitation observed on radar, but it struggles to predict where new cells will form. A deep learning model trained on years of radar images predicts the next ninety minutes with visibly sharper patterns.
 
-The operational meteorologist, however, asks whether the model systematically underestimates the most intense rainfall — precisely the events that flood tunnels and streets. Evaluation shows the model performs well on average but smooths out peaks. The team combines it with probabilistic post-processing and presents both to forecasters. The lesson is typical for this field: average skill is not enough when the purpose of a warning is to catch the rare, dangerous event.
+The operational meteorologist, however, asks whether the model systematically underestimates the most intense rainfall - precisely the events that flood tunnels and streets. Evaluation shows the model performs well on average but smooths out peaks. The team combines it with probabilistic post-processing and presents both to forecasters. The lesson is typical for this field: average skill is not enough when the purpose of a warning is to catch the rare, dangerous event.
 
 ## A Common Misconception About Scientific Institutes
 
-Some candidates assume that working at a national institute means pure academic research with no operational pressure. At KNMI and RIVM, the opposite is often true: weather warnings must go out on time, surveillance figures inform ministers, and models run in operational chains every day. The work combines scientific depth with production responsibility — closer to operating critical infrastructure than to writing papers alone, although publishing research is also part of the job.
+Some candidates assume that working at a national institute means pure academic research with no operational pressure. At KNMI and RIVM, the opposite is often true: weather warnings must go out on time, surveillance figures inform ministers, and models run in operational chains every day. The work combines scientific depth with production responsibility - closer to operating critical infrastructure than to writing papers alone, although publishing research is also part of the job.
 
 ## Typical Job Titles to Search For
 
@@ -137,7 +137,7 @@ Some roles involve operational duties, such as participation in weather service 
 
 - **Does the model I would work on run operationally, or is it in a research phase?** The answer determines how much production engineering the role involves.
 - **How are machine learning methods evaluated against the current physics-based or statistical approach?** Mature teams have clear verification standards.
-- **Who are the users of the output — forecasters, policymakers, the public?** Different users require different communication of uncertainty.
+- **Who are the users of the output - forecasters, policymakers, the public?** Different users require different communication of uncertainty.
 - **What computing infrastructure is available?** Access to high-performance computing or European infrastructure affects what is feasible.
 - **How is scientific publication balanced with operational delivery?** Institutes differ in how much time is reserved for research.
 
@@ -158,30 +158,30 @@ Browse current AI, machine learning and data jobs in and around De Bilt and Utre
 ## Frequently Asked Questions
 
 ### (Scenario: candidate unsure whether institutes hire ML engineers) Do KNMI and similar institutes hire machine learning specialists?
-Yes — machine learning is increasingly used in forecasting, nowcasting, climate downscaling and observation quality control, although titles often say researcher or scientific software engineer.
+Yes - machine learning is increasingly used in forecasting, nowcasting, climate downscaling and observation quality control, although titles often say researcher or scientific software engineer.
 
 ### (Scenario: candidate without a meteorology degree) Do I need a meteorology background?
-Not always — strong spatio-temporal ML and statistics skills are valued, provided you are willing to learn the physics behind the data.
+Not always - strong spatio-temporal ML and statistics skills are valued, provided you are willing to learn the physics behind the data.
 
 ### (Scenario: candidate who wants to know about public health roles) What kind of data work does a public health institute do?
 Infectious disease surveillance, epidemiological modelling, environmental monitoring and policy analysis, under strict rules for health data.
 
 ### (Scenario: candidate worried that public institutes are purely academic) Is this research work or operational work?
-Both — forecasts, warnings and surveillance figures run in operational chains, combined with scientific research and publications.
+Both - forecasts, warnings and surveillance figures run in operational chains, combined with scientific research and publications.
 
 ### (Scenario: candidate living in Utrecht) Is De Bilt easy to reach from Utrecht?
-Yes — De Bilt borders Utrecht and is reachable by bike or bus within a short time.
+Yes - De Bilt borders Utrecht and is reachable by bike or bus within a short time.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do KNMI and similar institutes hire machine learning specialists?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — ML is increasingly used in forecasting, nowcasting and climate downscaling, often under researcher titles."}},
-    {"@type": "Question", "name": "Do I need a meteorology background?", "acceptedAnswer": {"@type": "Answer", "text": "Not always — strong spatio-temporal ML and statistics skills are valued if you learn the physics."}},
+    {"@type": "Question", "name": "Do KNMI and similar institutes hire machine learning specialists?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - ML is increasingly used in forecasting, nowcasting and climate downscaling, often under researcher titles."}},
+    {"@type": "Question", "name": "Do I need a meteorology background?", "acceptedAnswer": {"@type": "Answer", "text": "Not always - strong spatio-temporal ML and statistics skills are valued if you learn the physics."}},
     {"@type": "Question", "name": "What kind of data work does a public health institute do?", "acceptedAnswer": {"@type": "Answer", "text": "Surveillance, epidemiological modelling and environmental monitoring under strict health data rules."}},
-    {"@type": "Question", "name": "Is this research work or operational work?", "acceptedAnswer": {"@type": "Answer", "text": "Both — operational forecasting and surveillance combined with scientific research."}},
-    {"@type": "Question", "name": "Is De Bilt easy to reach from Utrecht?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it borders Utrecht and is a short bike or bus ride away."}}
+    {"@type": "Question", "name": "Is this research work or operational work?", "acceptedAnswer": {"@type": "Answer", "text": "Both - operational forecasting and surveillance combined with scientific research."}},
+    {"@type": "Question", "name": "Is De Bilt easy to reach from Utrecht?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it borders Utrecht and is a short bike or bus ride away."}}
   ]
 }
 </script>

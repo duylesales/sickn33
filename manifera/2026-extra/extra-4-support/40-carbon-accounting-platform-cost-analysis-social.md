@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom carbon accounting builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom carbon accounting builds. 💸💥
 
 **The Pain Points:**
 ❌ **Scope 3 Data Collection Across Supply Chain Partners:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

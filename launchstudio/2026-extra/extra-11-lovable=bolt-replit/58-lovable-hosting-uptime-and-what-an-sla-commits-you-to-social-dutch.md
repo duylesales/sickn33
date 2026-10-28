@@ -1,4 +1,4 @@
-📜 Ruud Bosman runde Inspectiepunt in Lovable voor 7 inspectiebureaus in Deventer. Een grote woningcorporatie wilde het platform afnemen, maar eiste een 99,9% uptime Service Level Agreement (SLA) met zware boetebepalingen bij downtime — terwijl Ruud geen enkele objectieve monitoring of storingsgarantie had op zijn preview-hosting. 😳
+📜 Ruud Bosman runde Inspectiepunt in Lovable voor 7 inspectiebureaus in Deventer. Een grote woningcorporatie wilde het platform afnemen, maar eiste een 99,9% uptime Service Level Agreement (SLA) met zware boetebepalingen bij downtime - terwijl Ruud geen enkele objectieve monitoring of storingsgarantie had op zijn preview-hosting. 😳
 
 Een 'three nines' (99,9%) SLA toestaat slechts 43 minuten downtime per maand. Onderteken nooit een SLA die u niet kunt bewijzen:
 

@@ -1,4 +1,4 @@
-🌱 Anniek Boskoop built "PlantRooster," an inventory tool for plant nurseries, with v0 — no maintenance plan at all, because the app just worked at launch. Six months in, a routine payment library update silently broke checkout for some transactions. No error, no alert — the app just quietly stopped completing orders. 😳
+🌱 Anniek Boskoop built "PlantRooster," an inventory tool for plant nurseries, with v0 - no maintenance plan at all, because the app just worked at launch. Six months in, a routine payment library update silently broke checkout for some transactions. No error, no alert - the app just quietly stopped completing orders. 😳
 
 Nothing was watching, so nobody knew until a customer did.
 
@@ -11,7 +11,7 @@ Nothing was watching, so nobody knew until a customer did.
 ✅ Set up a lightweight automated check that runs a test transaction daily
 ✅ Get alerted the moment it fails, instead of waiting for a customer email
 
-At **LaunchStudio**, our Amsterdam-based team runs exactly this kind of maintenance pass for founders who built fast and never circled back — backed by Manifera's 120+ engineers. 🛠️
+At **LaunchStudio**, our Amsterdam-based team runs exactly this kind of maintenance pass for founders who built fast and never circled back - backed by Manifera's 120+ engineers. 🛠️
 
 Her result: PlantRooster now has a daily automated checkout check and a monthly dependency review on the calendar, so the next break gets caught in hours, not weeks. 🚀
 

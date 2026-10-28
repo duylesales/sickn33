@@ -52,13 +52,13 @@ When you deeply embed a third-party micro-SaaS into your core business logic (li
 ### 3. The Debugging Nightmare
 When a user clicks "Checkout" and the system crashes, who is at fault? Is it a bug in your code? Is Stripe down? Did the SendGrid email fail to send? In a highly fragmented API stack, tracing an error across 5 different third-party dashboards takes hours. 
 
-> *"Everything fails, all the time."* — **Werner Vogels**, CTO of Amazon
+> *"Everything fails, all the time."* - **Werner Vogels**, CTO of Amazon
 
 Vogels has repeated the line for nearly two decades because it reframes the question correctly: the issue was never whether a vendor in your stack will fail, but how many of them you have made your application's uptime mathematically depend on, and whether a single one of them failing can take your whole product down with it.
 
 ### Putting a Number on the Illusion
 
-The uptime math is worth running explicitly, because "97% instead of 99.9%" sounds like a rounding error until it is translated into hours. If your application synchronously calls 25 third-party APIs to render a page and each individually guarantees 99.9% uptime (a fairly standard SLA), the probability that all 25 are simultaneously available is 0.999²⁵ ≈ 97.5%. That is the difference between roughly 8.8 hours of downtime a year (at 99.9%) and about 219 hours — over nine full days — at 97.5%, assuming independent failures. Real-world outages cluster rather than distribute evenly across the year, which is exactly why they are so disruptive when they hit: a business doesn't experience "nine days spread thinly," it experiences a handful of multi-hour incidents that each look, from the outside, like the company's own infrastructure fell over — even when every line of that company's own code was working perfectly.
+The uptime math is worth running explicitly, because "97% instead of 99.9%" sounds like a rounding error until it is translated into hours. If your application synchronously calls 25 third-party APIs to render a page and each individually guarantees 99.9% uptime (a fairly standard SLA), the probability that all 25 are simultaneously available is 0.999²⁵ ≈ 97.5%. That is the difference between roughly 8.8 hours of downtime a year (at 99.9%) and about 219 hours - over nine full days - at 97.5%, assuming independent failures. Real-world outages cluster rather than distribute evenly across the year, which is exactly why they are so disruptive when they hit: a business doesn't experience "nine days spread thinly," it experiences a handful of multi-hour incidents that each look, from the outside, like the company's own infrastructure fell over - even when every line of that company's own code was working perfectly.
 
 ## The Pragmatic "Build vs. Buy" Architecture
 
@@ -73,31 +73,31 @@ They build a custom interface layer (a Facade) in their code. The main applicati
 
 ## This Is Not Hypothetical: When One Vendor Takes Down the Internet
 
-The Cascading Uptime Illusion is not a theoretical probability exercise — it has played out publicly, more than once, at a scale that made international news.
+The Cascading Uptime Illusion is not a theoretical probability exercise - it has played out publicly, more than once, at a scale that made international news.
 
-On 8 June 2021, Fastly — a content delivery network that a large share of the web sits behind — pushed a software update containing a latent bug. A single customer changing their CDN configuration, a completely routine action, triggered it. Within minutes, Amazon, Reddit, The New York Times, Spotify, Twitch, GitHub, PayPal, and UK government services (citizens could not renew passports or driving licences) were all down simultaneously, none of them for a reason that had anything to do with their own code. Fastly's engineers restored 95% of the network within 49 minutes, but for that hour, thousands of unrelated companies discovered that their uptime was only ever as good as one shared vendor's.
+On 8 June 2021, Fastly - a content delivery network that a large share of the web sits behind - pushed a software update containing a latent bug. A single customer changing their CDN configuration, a completely routine action, triggered it. Within minutes, Amazon, Reddit, The New York Times, Spotify, Twitch, GitHub, PayPal, and UK government services (citizens could not renew passports or driving licences) were all down simultaneously, none of them for a reason that had anything to do with their own code. Fastly's engineers restored 95% of the network within 49 minutes, but for that hour, thousands of unrelated companies discovered that their uptime was only ever as good as one shared vendor's.
 
-A different failure mode played out on 19 July 2024, when a faulty update to CrowdStrike's Falcon endpoint security agent crashed roughly 8.5 million Windows machines worldwide with the "blue screen of death." Airlines including Delta, United, and American grounded flights; hospitals, banks, and broadcasters across dozens of countries went down. The bug affected under 1% of all Windows devices globally, yet the concentration of that 1% inside airline check-in systems and hospital administration software was enough to disrupt critical infrastructure for days. Neither Fastly nor CrowdStrike is a Micro-SaaS API in the classic "stack companies" sense, but both incidents demonstrate the same underlying mathematics from the Cascading Uptime Illusion: when a large fraction of the internet routes through the same handful of vendors, an outage anywhere in that chain becomes an outage everywhere downstream of it — and no amount of your own engineering discipline changes that exposure once the dependency is wired into your critical path.
+A different failure mode played out on 19 July 2024, when a faulty update to CrowdStrike's Falcon endpoint security agent crashed roughly 8.5 million Windows machines worldwide with the "blue screen of death." Airlines including Delta, United, and American grounded flights; hospitals, banks, and broadcasters across dozens of countries went down. The bug affected under 1% of all Windows devices globally, yet the concentration of that 1% inside airline check-in systems and hospital administration software was enough to disrupt critical infrastructure for days. Neither Fastly nor CrowdStrike is a Micro-SaaS API in the classic "stack companies" sense, but both incidents demonstrate the same underlying mathematics from the Cascading Uptime Illusion: when a large fraction of the internet routes through the same handful of vendors, an outage anywhere in that chain becomes an outage everywhere downstream of it - and no amount of your own engineering discipline changes that exposure once the dependency is wired into your critical path.
 
 ## The Webhook Reliability Trap: Idempotency and Retry Storms
 
-Most CTOs evaluating **stack companies** architecture focus on synchronous API calls (the request-response pattern discussed above). But the more insidious failure mode lives in asynchronous webhooks, and almost every Best-of-Breed provider — Stripe, Twilio, DocuSign, Shopify — relies on them to notify your application of events.
+Most CTOs evaluating **stack companies** architecture focus on synchronous API calls (the request-response pattern discussed above). But the more insidious failure mode lives in asynchronous webhooks, and almost every Best-of-Breed provider - Stripe, Twilio, DocuSign, Shopify - relies on them to notify your application of events.
 
 Webhooks break a core assumption most developers carry over from synchronous APIs: that a message arrives exactly once, in order. Neither is guaranteed.
 
-*   **Duplicate Delivery.** If your server takes 3 seconds to respond to a webhook and the vendor's timeout is 2 seconds, the vendor assumes failure and retries — sending the *same* "payment.succeeded" event twice. If your code isn't defensive, you ship the physical product twice, or grant a customer double the credits.
+*   **Duplicate Delivery.** If your server takes 3 seconds to respond to a webhook and the vendor's timeout is 2 seconds, the vendor assumes failure and retries - sending the *same* "payment.succeeded" event twice. If your code isn't defensive, you ship the physical product twice, or grant a customer double the credits.
 *   **Out-of-Order Delivery.** A "subscription.cancelled" webhook can arrive and be processed *before* the "subscription.created" webhook for the same customer, because they traveled through different network paths. Naive handlers that assume ordering will silently corrupt customer state.
-*   **Retry Storms.** When your endpoint goes down for maintenance, most vendors queue and retry failed webhooks aggressively — sometimes hundreds per minute once you come back online. An application not built to absorb a burst will crash a second time, this time under its own vendor's retry logic.
+*   **Retry Storms.** When your endpoint goes down for maintenance, most vendors queue and retry failed webhooks aggressively - sometimes hundreds per minute once you come back online. An application not built to absorb a burst will crash a second time, this time under its own vendor's retry logic.
 
 ### The Defensive Pattern: Idempotency Keys and a Dead-Letter Queue
 
 Elite engineering teams never process a webhook payload directly inside the HTTP handler. Instead, they implement a three-step defensive pipeline:
 
-1.  **Verify and Deduplicate.** Every incoming webhook is checked against a stored table of event IDs already processed. If the event ID exists, the handler returns `200 OK` immediately and discards the duplicate — no business logic runs twice.
+1.  **Verify and Deduplicate.** Every incoming webhook is checked against a stored table of event IDs already processed. If the event ID exists, the handler returns `200 OK` immediately and discards the duplicate - no business logic runs twice.
 2.  **Queue, Don't Process.** The handler's only job is to verify the vendor's cryptographic signature, write the raw payload to a durable queue (e.g., SQS, RabbitMQ), and return a `200` within milliseconds. A separate worker processes the queue asynchronously, so a slow downstream dependency never causes the vendor to time out and retry.
 3.  **Dead-Letter for Failures.** If a queued event fails processing three times (a bug, a downstream outage), it is routed to a dead-letter queue rather than silently dropped or retried forever. An engineer is alerted and can manually replay the event once the root cause is fixed.
 
-Without this pipeline, a "stack companies" architecture doesn't just risk downtime from an outage — it risks silent data corruption that isn't discovered until a customer complains about being billed twice, which is far more damaging to trust than an outage ever is.
+Without this pipeline, a "stack companies" architecture doesn't just risk downtime from an outage - it risks silent data corruption that isn't discovered until a customer complains about being billed twice, which is far more damaging to trust than an outage ever is.
 
 ## Defensive Architecture with Manifera
 

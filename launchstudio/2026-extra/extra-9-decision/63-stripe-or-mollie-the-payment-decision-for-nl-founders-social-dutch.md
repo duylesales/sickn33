@@ -1,6 +1,6 @@
-💳 Iedereen raadt Nederlandse oprichters aan: "gebruik gewoon Stripe." Robin deed dat — zijn advertenties leverden volop aanmeldingen op, maar de betaalde conversie bleef bizar laag. Aan de advertenties lag het niet. 🤔
+💳 Iedereen raadt Nederlandse oprichters aan: "gebruik gewoon Stripe." Robin deed dat - zijn advertenties leverden volop aanmeldingen op, maar de betaalde conversie bleef bizar laag. Aan de advertenties lag het niet. 🤔
 
-AI-tools bouwen standaard checkouts met creditcards vooraan omdat hun trainingsdata Amerikaans is — niet hoe Nederlandse klanten betalen: 🧠
+AI-tools bouwen standaard checkouts met creditcards vooraan omdat hun trainingsdata Amerikaans is - niet hoe Nederlandse klanten betalen: 🧠
 
 ❌ iDEAL is de betaalmethode die Nederlanders instinctief kiezen; een creditcard hebben ze vaak niet bij de hand
 ❌ Door AI gegenereerde Stripe-integraties verstoppen iDEAL onder een dominant creditcardformulier

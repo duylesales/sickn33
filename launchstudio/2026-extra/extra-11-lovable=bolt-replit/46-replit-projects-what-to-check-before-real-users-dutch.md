@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-De aantrekkingskracht van Replit is dat je niets hoeft te configureren en alles direct werkt. Je opent een project, het draait meteen, je krijgt een werkende URL, en een collega kan aanschuiven zonder ook maar iets lokaal te installeren. Voor het bouwen en testen van een vroeg idee is het wegnemen van die frictie buitengewoon waardevol — het verklaart waarom zoveel eerste versies hier het levenslicht zien.
+De aantrekkingskracht van Replit is dat je niets hoeft te configureren en alles direct werkt. Je opent een project, het draait meteen, je krijgt een werkende URL, en een collega kan aanschuiven zonder ook maar iets lokaal te installeren. Voor het bouwen en testen van een vroeg idee is het wegnemen van die frictie buitengewoon waardevol - het verklaart waarom zoveel eerste versies hier het levenslicht zien.
 
 Precies diezelfde eigenschap maakt de overstap naar echte gebruikers onvoorspelbaar. Omdat je nooit handmatig iets hebt geconfigureerd, heb je ook nooit bewust keuzes gemaakt. Een handvol van die stilzwijgende standaardinstellingen vormt het verschil tussen een applicatie die de eerste honderd klanten moeiteloos overleeft, en eentje die op een willekeurige dinsdagochtend voor totale paniek zorgt. Dit zijn de negen punten die je moet controleren, in de volgorde waarin ze ertoe doen.
 
@@ -40,7 +40,7 @@ Tijdens de ontwerpfase belandt data vaak op de plek die op dat moment het makkel
 
 **Ingebouwde platform-databases zijn handig, maar klinken je vast aan het platform.** Prima zolang je op Replit blijft; een lastige datamigratie op het moment dat je vertrekt.
 
-**Een externe beheerde database** — zoals Supabase of een PostgreSQL-instantie bij een Europese cloudprovider — levert je een expliciet gekozen regio (AVG-compliance), betrouwbare en geteste back-ups, en volledige portabiliteit op.
+**Een externe beheerde database** - zoals Supabase of een PostgreSQL-instantie bij een Europese cloudprovider - levert je een expliciet gekozen regio (AVG-compliance), betrouwbare en geteste back-ups, en volledige portabiliteit op.
 
 Voor elke app met echte klantdata loont het om die externe database in één middag in te richten. Die overstap is vele malen eenvoudiger en goedkoper vóórdat er duizenden actieve rijen in productie staan.
 
@@ -48,13 +48,13 @@ Voor elke app met echte klantdata loont het om die externe database in één mid
 
 Replit biedt een uitstekend 'Secrets'-mechanisme. De controle richt zich op de vraag of jouw codebase dit consequent gebruikt, of dat er stiekem toch API-keys in de code staan, in een gecommit configuratiebestand zijn achtergebleven, of per ongeluk via een omgevingsvariabele naar de browser worden gelekt.
 
-Twee specifieke risico's van dit platform: forking en templating zijn kernfuncties van Replit. Een project dat per ongeluk openbaar wordt gedeeld of geforkt kan veel meer bevatten dan je bedoeling was — verifieer exact wat er in een fork van jouw project meekomt. Daarnaast behouden teamleden die je tijdens een hackathon hebt uitgenodigd vaak tot in lengte van dagen toegang; de lijst met mensen die jouw secrets ooit hebben ingezien is meestal langer dan je denkt.
+Twee specifieke risico's van dit platform: forking en templating zijn kernfuncties van Replit. Een project dat per ongeluk openbaar wordt gedeeld of geforkt kan veel meer bevatten dan je bedoeling was - verifieer exact wat er in een fork van jouw project meekomt. Daarnaast behouden teamleden die je tijdens een hackathon hebt uitgenodigd vaak tot in lengte van dagen toegang; de lijst met mensen die jouw secrets ooit hebben ingezien is meestal langer dan je denkt.
 
 Is een bevoorrechte sleutel ooit zichtbaar geweest in een gedeelde of publieke context? Roteer (vervang) hem direct in plaats van achteraf te speculeren wie hem mogelijk heeft gekopieerd.
 
 ## Controle 4: Wat Heeft de AI-Agent Feitelijk Geschreven?
 
-De Replit Agent bouwt razendsnel werkende software. De resulterende code verdient echter dezelfde kritische inspectie als elke andere AI-output — met één belangrijk verschil: omdat de agent zelfstandig bestanden kan aanmaken, packages kan installeren en de hostingconfiguratie kan wijzigen, is zijn bereik veel groter dan dat van een code-assistent in een editor.
+De Replit Agent bouwt razendsnel werkende software. De resulterende code verdient echter dezelfde kritische inspectie als elke andere AI-output - met één belangrijk verschil: omdat de agent zelfstandig bestanden kan aanmaken, packages kan installeren en de hostingconfiguratie kan wijzigen, is zijn bereik veel groter dan dat van een code-assistent in een editor.
 
 Bekijk wat er precies is toegevoegd. Controleer de `package.json` op bibliotheken waar je nooit om hebt gevraagd. Inspecteer de serverconfiguratie. En controleer specifiek op de twee klassieke risico's: bevoorrechte tokens (zoals database service roles) die in client-code worden aangeroepen, en databasequeries die worden uitgevoerd zonder enige autorisatieregels.
 
@@ -72,13 +72,13 @@ Hostingplatforms verschillen sterk in hoe soepel ze dit faciliteren. De toets is
 
 ## Controle 7: Is Er een Back-up, en Is Die Ooit Teruggezet?
 
-De vraag die een hobbyproject definitief scheidt van een professioneel SaaS-product. Ongeacht waar je data leeft — platformdatabase, externe Postgres of opslagbuckets — moet je weten hoe het back-upbeleid in elkaar zit, hoeveel dagen terug je kunt herstellen (point-in-time recovery), en of er ooit een daadwerkelijke restore-test is uitgevoerd.
+De vraag die een hobbyproject definitief scheidt van een professioneel SaaS-product. Ongeacht waar je data leeft - platformdatabase, externe Postgres of opslagbuckets - moet je weten hoe het back-upbeleid in elkaar zit, hoeveel dagen terug je kunt herstellen (point-in-time recovery), en of er ooit een daadwerkelijke restore-test is uitgevoerd.
 
 Een niet-geteste back-up is niets meer dan een wensgedachte. Het eenmalig herstellen van een back-up in een testomgeving kost een middag en maakt er een bewezen zekerheid van. Bovendien levert het je een hersteltijd op (RTO) die je met een gerust hart aan zakelijke klanten kunt rapporteren.
 
 ## Controle 8: Jouw Domein, Jouw Accounts
 
-Custom domeinen functioneren prima op Replit; de cruciale vraag is eigenaarschap. Staat de domeinnaam geregistreerd in jouw eigen registrar-account met jouw bedrijfsfacturatie? Staat het Replit-hoofdaccount op jouw naam of op die van een ingehuurde freelancer? En staan externe diensten — Stripe voor betalingen, Resend voor e-mails, OpenAI voor modellen — geregistreerd op jouw bedrijfsentiteit?
+Custom domeinen functioneren prima op Replit; de cruciale vraag is eigenaarschap. Staat de domeinnaam geregistreerd in jouw eigen registrar-account met jouw bedrijfsfacturatie? Staat het Replit-hoofdaccount op jouw naam of op die van een ingehuurde freelancer? En staan externe diensten - Stripe voor betalingen, Resend voor e-mails, OpenAI voor modellen - geregistreerd op jouw bedrijfsentiteit?
 
 Dit gaat opvallend vaak mis bij projecten die zijn gestart als gezamenlijk experiment of hackathon-samenwerking.
 
@@ -86,13 +86,13 @@ Dit gaat opvallend vaak mis bij projecten die zijn gestart als gezamenlijk exper
 
 Elk cloudplatform heeft harde grenzen: gelijktijdige verzoeken (concurrency), RAM-geheugen, opslagcapaciteit, CPU-tijd en dataverkeer (egress). Tijdens ontwikkeling zijn ze ruimhartig; in productie zijn ze keihard.
 
-Zoek de specifieke limieten van je huidige Replit-abonnement op en vergelijk ze met een realistische piekbelasting — de dag dat je een marketingmail verstuurt, of de ochtend dat een brancheorganisatie over jouw tool schrijft. Het nuttige inzicht is niet het exacte getal, maar weten welke limiet je als allereerste raakt. Dat is namelijk de drempel die je eerste crisismoment gaat bepalen.
+Zoek de specifieke limieten van je huidige Replit-abonnement op en vergelijk ze met een realistische piekbelasting - de dag dat je een marketingmail verstuurt, of de ochtend dat een brancheorganisatie over jouw tool schrijft. Het nuttige inzicht is niet het exacte getal, maar weten welke limiet je als allereerste raakt. Dat is namelijk de drempel die je eerste crisismoment gaat bepalen.
 
 ## Wanneer Het Tijd Is om Weg te Migreren
 
 Draaien op Replit is volkomen verdedigbaar voor interne bedrijfstools, vroege pilots en kleinschalige SaaS-applicaties. Drie specifieke signalen geven aan dat het tijd is voor een zelfstandige infrastructuur:
 
-**Een zakelijke klant eist garanties die het platform niet biedt** — een specifieke EU-dataregio, een formeel gedocumenteerd deploymentproces, of een complete audit-trail voor ISO/SOC2.
+**Een zakelijke klant eist garanties die het platform niet biedt** - een specifieke EU-dataregio, een formeel gedocumenteerd deploymentproces, of een complete audit-trail voor ISO/SOC2.
 
 **Je hebt een volwaardige staging-omgeving en betrouwbare rollback nodig** omdat echte bedrijven afhankelijk zijn geworden van je software en rechtstreeks op productie itereren niet langer verantwoord is.
 
@@ -104,7 +104,7 @@ Zolang die drie situaties zich niet voordoen, is verhuizen vaak niet nodig. De v
 
 Het leeuwendeel van dit werk betreft configuratie en een handvol architectuuraanpassingen, geen complete herbouw. LaunchStudio pakt dit aan als een strak afgebakend project: klantdata migreren naar een beheerde Postgres-database in een EU-regio naar keuze met geteste back-ups, secrets opschonen en roteren, autorisatieregels aan de databasekant implementeren en testen door te proberen in te breken, deployments reproduceerbaar maken inclusief staging en rollback, monitoring en error tracking activeren, en het eigenaarschap van domeinen en accounts veiligstellen op jouw bedrijfsnaam.
 
-De gebruikersinterface die je hebt ontwikkeld blijft onaangeroerd, en de codebase blijft schoon en gedocumenteerd zodat je na afloop gewoon in Replit door kunt bouwen — of moeiteloos kunt migreren als je bedrijf daaraan toe is. De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
+De gebruikersinterface die je hebt ontwikkeld blijft onaangeroerd, en de codebase blijft schoon en gedocumenteerd zodat je na afloop gewoon in Replit door kunt bouwen - of moeiteloos kunt migreren als je bedrijf daaraan toe is. De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
 [Stuur ons je project](https://launchstudio.eu/nl/#contact) en we beantwoorden de negen controles binnen één werkdag, of bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) precies omvat.
 
@@ -112,7 +112,7 @@ De gebruikersinterface die je hebt ontwikkeld blijft onaangeroerd, en de codebas
 
 De laagdrempelige samenwerkingsmodus van Replit is een van zijn grootste krachten, maar laat vaak sporen na die je moet opschonen voordat echte klanten binnenkomen:
 
-**Forks van je project.** Als je Replit ooit openbaar is geweest of via een link is gedeeld waarmee gekopieerd kon worden, kunnen er forks bestaan die alles bevatten wat op dat moment in de code stond — inclusief API-sleutels of testdata. Je kunt forks van derden niet wissen; je kunt alleen de geheimen die erin stonden ongeldig maken.
+**Forks van je project.** Als je Replit ooit openbaar is geweest of via een link is gedeeld waarmee gekopieerd kon worden, kunnen er forks bestaan die alles bevatten wat op dat moment in de code stond - inclusief API-sleutels of testdata. Je kunt forks van derden niet wissen; je kunt alleen de geheimen die erin stonden ongeldig maken.
 
 **Templates.** Een project dat is gestart vanuit een publiek template erft de configuratie en soms restanten van de maker. Controleer waarvan je bent vertrokken.
 
@@ -136,7 +136,7 @@ Startte je project als een template of remix, besteed dan twintig minuten aan he
 
 Selma Bouhali bouwde Leerpunt in Replit: een online platform waarop zelfstandige trainers rond Nijmegen korte praktijkopleidingen aanbieden en cursisten hun opdrachten uploaden. Het platform draaide vier maanden met ongeveer 200 actieve cursisten.
 
-Ingeleverde huiswerkbestanden werden rechtstreeks weggeschreven naar het lokale bestandssysteem van de Replit-container. Dat werkte vlekkeloos tijdens het testen en gedurende de eerste drie maanden. Toen volgde er een nieuwe deployment waarbij de container opnieuw werd opgebouwd, en waren plotseling alle ingeleverde bestanden van de voorgaande twee weken — opdrachten die nog nagekeken moesten worden — spoorloos verdwenen. Er was nergens een foutmelding te zien; de bestanden bestonden simpelweg niet meer.
+Ingeleverde huiswerkbestanden werden rechtstreeks weggeschreven naar het lokale bestandssysteem van de Replit-container. Dat werkte vlekkeloos tijdens het testen en gedurende de eerste drie maanden. Toen volgde er een nieuwe deployment waarbij de container opnieuw werd opgebouwd, en waren plotseling alle ingeleverde bestanden van de voorgaande twee weken - opdrachten die nog nagekeken moesten worden - spoorloos verdwenen. Er was nergens een foutmelding te zien; de bestanden bestonden simpelweg niet meer.
 
 De technische inspectie bracht direct drie andere kwetsbaarheden aan het licht. De interne database kende geen Row Level Security, waardoor elke aangesloten trainer de complete cursistenlijsten en e-mailadressen van alle concurrerende trainers kon inzien. Een OpenAI-sleutel voor automatische feedback op teksten stond hardcoded in de JavaScript-code aan de clientkant. En twee freelancers die in de eerste maand hadden geholpen, hadden nog steeds volledige admin-toegang tot de repository.
 
@@ -145,9 +145,9 @@ Zeven werkdagen werk: bestandsopslag gemigreerd naar een externe, beveiligde S3-
 **Resultaat:** de verloren opdrachten konden helaas niet worden hersteld, wat Selma met excuses en uitstel van deadlines meldde aan de elf gedupeerde cursisten. In de veertien maanden die volgden is er geen enkel bestand meer kwijtgeraakt, en elke release passeert eerst de staging-omgeving.
 
 > *"De bestanden stonden gewoon netjes in een mapje naast mijn code. Het kwam geen seconde in me op dat opnieuw deployen hetzelfde was als ze weggooien, simpelweg omdat het drie maanden lang toevallig goed was gegaan."*
-> — **Selma Bouhali, Oprichter, Leerpunt (Nijmegen)**
+> - **Selma Bouhali, Oprichter, Leerpunt (Nijmegen)**
 
-**Kosten & Doorlooptijd:** € 3.100 (migratie van bestandsopslag, managed database met back-ups, RLS-autorisatie, geheimenbeheer en gecontroleerde deployment-straat) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.100 (migratie van bestandsopslag, managed database met back-ups, RLS-autorisatie, geheimenbeheer en gecontroleerde deployment-straat) - afgerond in 7 werkdagen.
 
 ## Veelgestelde vragen
 

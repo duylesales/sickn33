@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-In many international technology companies, the cover letter has quietly disappeared: applications consist of a CV, a profile link and perhaps a few screening questions. In the Netherlands, however, the motivation letter (motivatiebrief) remains a standard part of many application processes — particularly in the public sector, universities, research institutes, healthcare and at smaller companies. For AI and data candidates, this creates a dilemma. Is the letter actually read? And if so, what should it say that the CV does not already show? The answer is that a good motivation letter does something a CV cannot: it connects your experience to this specific role and organisation, and shows how you think.
+In many international technology companies, the cover letter has quietly disappeared: applications consist of a CV, a profile link and perhaps a few screening questions. In the Netherlands, however, the motivation letter (motivatiebrief) remains a standard part of many application processes - particularly in the public sector, universities, research institutes, healthcare and at smaller companies. For AI and data candidates, this creates a dilemma. Is the letter actually read? And if so, what should it say that the CV does not already show? The answer is that a good motivation letter does something a CV cannot: it connects your experience to this specific role and organisation, and shows how you think.
 
 ## When the Motivation Letter Matters Most
 
@@ -48,13 +48,13 @@ In many international technology companies, the cover letter has quietly disappe
 | Consultancies | Medium | Letters show communication skills and interest in client work |
 | Large technology companies and scale-ups | Low to medium | Many rely on CVs, screening questions and technical assessments |
 
-If a vacancy asks for a motivation letter, assume it will be read. If it is optional, a short, specific letter can still help, particularly when your background requires explanation — for example, a career switch, a gap or a move from another country.
+If a vacancy asks for a motivation letter, assume it will be read. If it is optional, a short, specific letter can still help, particularly when your background requires explanation - for example, a career switch, a gap or a move from another country.
 
 ## What a Motivation Letter Should Do
 
 A strong motivation letter answers three questions clearly:
 
-1. **Why this organisation?** What specifically attracts you — the problems it works on, its sector, its approach or its impact?
+1. **Why this organisation?** What specifically attracts you - the problems it works on, its sector, its approach or its impact?
 2. **Why this role?** How does the role fit your skills, interests and development?
 3. **Why you?** Which experience and qualities make you likely to succeed in this role?
 
@@ -62,7 +62,7 @@ The letter should not repeat your CV line by line. Instead, select one or two ex
 
 ## A Structure That Works
 
-**Opening paragraph.** State the role you are applying for and give a specific reason for your interest. Avoid generic openings such as "With great enthusiasm I am applying for..." — Dutch recruiters see this phrase (in Dutch: "Met veel enthousiasme solliciteer ik...") constantly.
+**Opening paragraph.** State the role you are applying for and give a specific reason for your interest. Avoid generic openings such as "With great enthusiasm I am applying for..." - Dutch recruiters see this phrase (in Dutch: "Met veel enthousiasme solliciteer ik...") constantly.
 
 **Middle paragraph or paragraphs.** Describe one or two relevant experiences in more detail: the problem, what you did, what you learned and why it matters for this role. For data roles, show how you think about data, evaluation and impact.
 
@@ -76,7 +76,7 @@ The letter should not repeat your CV line by line. Instead, select one or two ex
 
 | Weak | Strong |
 |---|---|
-| I am passionate about data and AI | During my thesis, I found that improving label quality helped more than changing the model — which is why your team's focus on data quality appeals to me |
+| I am passionate about data and AI | During my thesis, I found that improving label quality helped more than changing the model - which is why your team's focus on data quality appeals to me |
 | I have experience with machine learning | At my internship, I built a demand forecast for a regional distributor and learned to explain uncertainty to planners who were sceptical of models |
 | Your company is a leader in innovation | Your work on predicting maintenance for public infrastructure connects directly to my interest in models that support long-term decisions |
 | I am a team player | In a project with three faculties, I translated research questions into data requirements and kept a shared codebase usable for non-programmers |
@@ -85,7 +85,7 @@ Concrete details make the difference between a letter that sounds like hundreds 
 
 ## Writing for Public Sector and Research Employers
 
-**Public sector.** Government organisations often use selection committees that assess applications against defined criteria from the vacancy. Address each key requirement explicitly, preferably in the same order as the vacancy. Show understanding of public values such as transparency, equal treatment and careful handling of citizens' data — particularly relevant for AI and data roles after high-profile cases involving government algorithms.
+**Public sector.** Government organisations often use selection committees that assess applications against defined criteria from the vacancy. Address each key requirement explicitly, preferably in the same order as the vacancy. Show understanding of public values such as transparency, equal treatment and careful handling of citizens' data - particularly relevant for AI and data roles after high-profile cases involving government algorithms.
 
 **Universities and research institutes.** Describe your research interests and how they connect to the group's work. Mention relevant publications, methods or datasets, and show that you have read about the group's recent projects.
 
@@ -101,7 +101,7 @@ An effective open application is short and specific. Explain what kind of role y
 
 **Availability.** Mentioning your earliest start date can be useful, particularly for graduates and international candidates.
 
-**Residence status.** International candidates can briefly mention their residence situation when relevant — for example, holding a residence permit for the orientation year after graduating in the Netherlands, or eligibility for the highly skilled migrant scheme. This helps employers understand whether sponsorship with the **Immigration and Naturalisation Service (IND)** is needed. Keep it factual and short.
+**Residence status.** International candidates can briefly mention their residence situation when relevant - for example, holding a residence permit for the orientation year after graduating in the Netherlands, or eligibility for the highly skilled migrant scheme. This helps employers understand whether sponsorship with the **Immigration and Naturalisation Service (IND)** is needed. Keep it factual and short.
 
 ## Language Choice
 
@@ -148,7 +148,7 @@ A recent master's graduate applies for a junior data scientist position at a mun
 
 In her motivation letter, she explains that her thesis on predicting demand for public services made her aware of how data can reinforce existing inequalities if historical patterns reflect unequal access. She connects this to the municipality's published ambition to use data responsibly in its social services and describes how she tested her model for differences across neighbourhoods. She addresses the vacancy's requirements in order and ends with a short, direct closing.
 
-The selection committee invites her for an interview, noting that her letter demonstrated both technical ability and awareness of public values — something not visible in any of the CVs alone.
+The selection committee invites her for an interview, noting that her letter demonstrated both technical ability and awareness of public values - something not visible in any of the CVs alone.
 
 ## A Common Misconception About Motivation Letters
 
@@ -175,7 +175,7 @@ A common misconception is that motivation letters are a formality nobody reads. 
 
 ## Where to Start
 
-For your next application, write a first draft by answering the three questions — why this organisation, why this role, why you — with one concrete example each, before polishing the language.
+For your next application, write a first draft by answering the three questions - why this organisation, why this role, why you - with one concrete example each, before polishing the language.
 
 Browse current AI, machine learning and data jobs, including public sector and research roles, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

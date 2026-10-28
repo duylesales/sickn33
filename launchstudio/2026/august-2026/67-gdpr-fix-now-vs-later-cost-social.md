@@ -1,6 +1,6 @@
-⚖️ Renata built a marketing-analytics platform using **Cursor** — and pushed GDPR compliance down her priority list for eight months while EU customers signed up. 🧠
+⚖️ Renata built a marketing-analytics platform using **Cursor** - and pushed GDPR compliance down her priority list for eight months while EU customers signed up. 🧠
 
-If you can't produce a DPA or a working right-to-erasure process when an enterprise prospect's legal team asks, the deal doesn't get rejected — it just goes quiet.
+If you can't produce a DPA or a working right-to-erasure process when an enterprise prospect's legal team asks, the deal doesn't get rejected - it just goes quiet.
 
 ❌ No data processing agreement in place with a single subprocessor
 ❌ No working right-to-erasure process, and a retention policy that was really just "keep everything forever"
@@ -12,7 +12,7 @@ If you can't produce a DPA or a working right-to-erasure process when an enterpr
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Renata's application achieved production readiness: With a working erasure process, an enforced retention policy, and DPA documentation in hand, Renata reopened the conversation with the stalled enterprise prospect and unblocked the deal. (€2,100 (Launch & Grow Package) — 8 business days.). 🚀
+Renata's application achieved production readiness: With a working erasure process, an enforced retention policy, and DPA documentation in hand, Renata reopened the conversation with the stalled enterprise prospect and unblocked the deal. (€2,100 (Launch & Grow Package) - 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/gdpr-fix-now-vs-later-cost
 

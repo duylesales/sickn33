@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 The email is polite and it changes everything. "Before we can proceed, our privacy officer has a few questions about how you handle data." Attached is a document with between seven and forty items, and somewhere around question three you realise that your app has been running for eight months without anyone ever asking where the data lives.
 
-This is the moment AI-built products most often stall — not at the demo, not at the price, but at the security review of the first real business customer. What follows is the seven questions that appear in nearly every Dutch questionnaire, what each one is actually checking, and how to be able to answer it.
+This is the moment AI-built products most often stall - not at the demo, not at the price, but at the security review of the first real business customer. What follows is the seven questions that appear in nearly every Dutch questionnaire, what each one is actually checking, and how to be able to answer it.
 
 This is general information rather than legal advice. Several of these answers eventually need a lawyer's eye, and the point of preparing them is to make that conversation short.
 
@@ -36,7 +36,7 @@ Check your project's region today. Changing it later means a data migration; dec
 
 ## Two: Who Can Access It?
 
-Not "is it secure" — who, specifically. The expected answer names categories: the customer's own users according to defined roles, your engineering team under stated conditions, and your sub-processors for their specific purposes.
+Not "is it secure" - who, specifically. The expected answer names categories: the customer's own users according to defined roles, your engineering team under stated conditions, and your sub-processors for their specific purposes.
 
 The uncomfortable follow-up is usually "and can one of your customers see another's data?" For multi-tenant products this is the question that fails reviews, and the honest answer requires having tested it: two accounts in two organisations, each trying to read the other's records.
 
@@ -50,23 +50,23 @@ Prepare this as a one-page table before anyone asks: the service, what it is use
 
 When your customer's data is involved, you are typically acting as a processor for them and your suppliers are processors for you. That chain needs agreements at each link.
 
-Most major providers publish a standard data processing agreement that you accept in their dashboard. The work is not negotiating them — it is knowing which ones you have accepted, storing copies, and being able to produce them. Founders routinely discover during a review that a tool they added in an afternoon has been receiving customer data with nothing signed at all.
+Most major providers publish a standard data processing agreement that you accept in their dashboard. The work is not negotiating them - it is knowing which ones you have accepted, storing copies, and being able to produce them. Founders routinely discover during a review that a tool they added in an afternoon has been receiving customer data with nothing signed at all.
 
 ## Five: How Long Do You Keep Data, and How Is It Deleted?
 
 Two different questions in one.
 
-**Retention** means having a stated period after which data is removed — and actually removing it. AI-built apps almost never delete anything, because nobody asked them to. "We keep it indefinitely" is an answer; it is just a poor one, and it conflicts with the principle that personal data should not be kept longer than necessary.
+**Retention** means having a stated period after which data is removed - and actually removing it. AI-built apps almost never delete anything, because nobody asked them to. "We keep it indefinitely" is an answer; it is just a poor one, and it conflicts with the principle that personal data should not be kept longer than necessary.
 
 **Deletion** means what happens when someone exercises their rights or a customer ends the contract. Can you delete one individual's data without breaking referential integrity? Does deletion reach your backups, your error tracker, your email provider? Can you produce evidence it happened?
 
-The answer most products need is a documented retention period per data type, a working deletion path, and an honest statement about backup rotation — that deleted data persists in backups until they expire, which is normal and should be stated rather than hidden.
+The answer most products need is a documented retention period per data type, a working deletion path, and an honest statement about backup rotation - that deleted data persists in backups until they expire, which is normal and should be stated rather than hidden.
 
 ## Six: What Happens if There Is a Breach?
 
 They are checking whether you could detect one and whether you know your obligations.
 
-Under the GDPR, a personal data breach must generally be reported to the supervisory authority — in the Netherlands, the Autoriteit Persoonsgegevens — without undue delay and where feasible within 72 hours of becoming aware of it, unless it is unlikely to result in a risk to individuals. As a processor for your customer, you typically have to notify *them* without undue delay so they can meet their own obligation.
+Under the GDPR, a personal data breach must generally be reported to the supervisory authority - in the Netherlands, the Autoriteit Persoonsgegevens - without undue delay and where feasible within 72 hours of becoming aware of it, unless it is unlikely to result in a risk to individuals. As a processor for your customer, you typically have to notify *them* without undue delay so they can meet their own obligation.
 
 The part that catches AI-built products is "becoming aware". Without logging, monitoring and access records, you have no mechanism for becoming aware of anything, and you cannot tell a customer what was accessed. Being able to say "we log access to sensitive tables and retain those logs" turns a frightening question into a short answer.
 
@@ -78,19 +78,19 @@ For most products this means a working export of a customer's records in a stand
 
 ## Prepare the Answers Before the Questionnaire
 
-Write a single document — two pages is plenty — covering: hosting region and provider, access model in plain language, the sub-processor table, where your data processing agreements are stored, retention periods per data type, the deletion procedure, your logging and monitoring setup, your breach notification process with names attached, and your export capability.
+Write a single document - two pages is plenty - covering: hosting region and provider, access model in plain language, the sub-processor table, where your data processing agreements are stored, retention periods per data type, the deletion procedure, your logging and monitoring setup, your breach notification process with names attached, and your export capability.
 
 Keep it current. Send it with your proposal rather than waiting to be asked. Founders who do this report that reviews shrink from weeks to days, because the reviewer's job becomes verification rather than interrogation.
 
 ## What You Genuinely Cannot Do Yourself
 
-Deciding whether you are a controller or a processor for a given flow, drafting the agreement you sign with your customers, assessing whether a particular use needs a data protection impact assessment, and judging cross-border transfer mechanisms — these belong with a data protection lawyer. The mistake is not hiring one; it is hiring one before the technical facts exist, so the conversation becomes hypothetical and expensive.
+Deciding whether you are a controller or a processor for a given flow, drafting the agreement you sign with your customers, assessing whether a particular use needs a data protection impact assessment, and judging cross-border transfer mechanisms - these belong with a data protection lawyer. The mistake is not hiring one; it is hiring one before the technical facts exist, so the conversation becomes hypothetical and expensive.
 
 Get the technical answers straight first. Then the legal conversation is short.
 
 ## Getting to Answers You Can Defend
 
-Most of the seven questions are engineering work with a compliance shape: region set deliberately, access model enforced and tested, logging and monitoring in place, retention and deletion implemented, export built, sub-processors documented. LaunchStudio does exactly that as part of making an AI-built product production-ready — without touching the interface you built in Lovable — and hands over the documentation alongside the code, which is what turns the questionnaire into an afternoon rather than a crisis.
+Most of the seven questions are engineering work with a compliance shape: region set deliberately, access model enforced and tested, logging and monitoring in place, retention and deletion implemented, export built, sub-processors documented. LaunchStudio does exactly that as part of making an AI-built product production-ready - without touching the interface you built in Lovable - and hands over the documentation alongside the code, which is what turns the questionnaire into an afternoon rather than a crisis.
 
 Behind it is Manifera: eleven years of production engineering for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City, where enterprise security reviews are an ordinary part of the week. See what the [Launch Ready package](https://launchstudio.eu/en/#packages) covers, or [describe your project](https://launchstudio.eu/en/#contact) and get a straight assessment of where you stand within one business day.
 
@@ -98,11 +98,11 @@ Behind it is Manifera: eleven years of production engineering for clients includ
 
 At some point in a questionnaire you will reach a question where the true answer is "we do not do that". Founders panic at this moment and reach for vagueness, which is the worst available option.
 
-Privacy officers assess questionnaires professionally. They can recognise evasion instantly, and vagueness reads as either incompetence or concealment — both of which end a review faster than an honest gap would.
+Privacy officers assess questionnaires professionally. They can recognise evasion instantly, and vagueness reads as either incompetence or concealment - both of which end a review faster than an honest gap would.
 
 The formulation that works has three parts: what is true now, what you are doing about it, and by when. "We do not currently log read access to patient records. We are implementing it this month and can demonstrate it before go-live." That is an answer a reviewer can work with, and it is frequently accepted with a condition attached rather than a rejection.
 
-Two things make this credible. A date, which means you have thought about the work rather than the sentence. And consistency — the same gap described the same way to everyone who asks, because reviewers at different organisations occasionally compare notes, and Dutch sector networks are smaller than founders assume.
+Two things make this credible. A date, which means you have thought about the work rather than the sentence. And consistency - the same gap described the same way to everyone who asks, because reviewers at different organisations occasionally compare notes, and Dutch sector networks are smaller than founders assume.
 
 The one answer to avoid entirely is claiming a control you do not have. It is discoverable during the review itself, it converts a fixable gap into a trust problem, and a privacy officer who catches it will remember your product for the wrong reason.
 
@@ -110,7 +110,7 @@ The one answer to avoid entirely is claiming a control you do not have. It is di
 
 A small operational note that saves more time than it should. The two-page document described above has a habit of existing in a founder's downloads folder, six months out of date, in a version nobody can locate when the next questionnaire arrives.
 
-Keep it in one place, dated, with a note of what changed. Review it whenever you add a third-party service — which in an AI-assisted workflow happens more often than you expect — and whenever your hosting or database arrangements change.
+Keep it in one place, dated, with a note of what changed. Review it whenever you add a third-party service - which in an AI-assisted workflow happens more often than you expect - and whenever your hosting or database arrangements change.
 
 Then attach it to proposals rather than waiting to be asked. Founders who do this consistently report the same thing: the review stops being an interrogation and becomes a verification, and the questions that come back are specific and answerable rather than open-ended.
 
@@ -124,12 +124,12 @@ Planbaar failed on five of the seven questions above. The Supabase project was i
 
 The work took twelve business days: migration to an EU region with a tested restore, the marketing tool removed from the data path and replaced with a transactional provider covered by an agreement, error tracking configured to scrub personal data before transmission, retention periods defined per data type with automatic deletion, read-access logging on care-note tables, a customer-level export, and the two-page documentation pack.
 
-**Result:** Planbaar passed the reassessment six weeks later and now sends the documentation pack with every proposal. The two smaller organisations, who had never asked, received it too — and one of them upgraded their contract.
+**Result:** Planbaar passed the reassessment six weeks later and now sends the documentation pack with every proposal. The two smaller organisations, who had never asked, received it too - and one of them upgraded their contract.
 
 > *"I kept thinking privacy was a document I needed to write. It turned out to be six things my app didn't do."*
-> — **Tessa Blom, Founder, Planbaar (Deventer)**
+> - **Tessa Blom, Founder, Planbaar (Deventer)**
 
-**Cost & Timeline:** €4,200 (Launch Ready Package: region migration, data path cleanup, retention and deletion, access logging, export) — completed in 12 business days.
+**Cost & Timeline:** €4,200 (Launch Ready Package: region migration, data path cleanup, retention and deletion, access logging, export) - completed in 12 business days.
 
 ## Frequently Asked Questions
 
@@ -139,7 +139,7 @@ Before your first *business* customer, largely yes, because their procurement pr
 
 ### Is EU hosting legally required for a Dutch customer?
 
-Not automatically — transfers outside the EU are possible under the right safeguards. In practice many Dutch organisations require it contractually because it simplifies their own compliance, so the commercial answer is often stricter than the legal one.
+Not automatically - transfers outside the EU are possible under the right safeguards. In practice many Dutch organisations require it contractually because it simplifies their own compliance, so the commercial answer is often stricter than the legal one.
 
 ### What counts as a sub-processor?
 
@@ -151,7 +151,7 @@ State it plainly: deleted data is removed from live systems immediately and pers
 
 ### Who writes the data processing agreement with my customers?
 
-A lawyer, working from the technical facts you supply. Get the region, access model, sub-processor list and retention periods established first — that turns a vague, expensive engagement into a short one.
+A lawyer, working from the technical facts you supply. Get the region, access model, sub-processor list and retention periods established first - that turns a vague, expensive engagement into a short one.
 
 <script type="application/ld+json">
 {
@@ -179,7 +179,7 @@ A lawyer, working from the technical facts you supply. Get the region, access mo
       "name": "What counts as a sub-processor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Any third-party service processing personal data on your behalf — hosting, database, email, payments, error tracking, analytics and AI model APIs."
+        "text": "Any third-party service processing personal data on your behalf - hosting, database, email, payments, error tracking, analytics and AI model APIs."
       }
     },
     {

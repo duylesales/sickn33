@@ -9,7 +9,7 @@ Low-Code platforms are a mortgage on your architecture. The initial down payment
 
 If the app is core to your revenue, you must use Custom Engineering (React Native/Node.js) so you legally own 100% of the Intellectual Property. 
 
-At Manifera, our Dutch Architects specialize in "Re-Platforming"—migrating enterprises out of exorbitant Low-Code traps and into scalable, owned custom architecture.
+At Manifera, our Dutch Architects specialize in "Re-Platforming" - migrating enterprises out of exorbitant Low-Code traps and into scalable, owned custom architecture.
 
 👇 Read our CIO guide to escaping the Low-Code trap:
 [Read the full breakdown: manifera.com/blog/mobile-app-building-software-vendor-lock-in-trap]

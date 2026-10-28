@@ -26,31 +26,31 @@ Hier is het argument waarom "nooit menselijke support nodig" een smallere catego
 
 ## De smalle categorie die daadwerkelijk geen mensen nodig heeft
 
-Er bestaat een echte categorie AI SaaS-producten waarbij een chatassistent support daadwerkelijk end-to-end kan afhandelen: tools waarbij gebruikersverzoeken sterk repetitief, laag-risico zijn en volledig oplosbaar met informatie die de assistent al heeft — denk aan eenvoudige opzoektools, eenvoudige contentgeneratoren, of hulpmiddelen met een smalle, duidelijk afgebakende functieset zonder financiële of planningsgerelateerde consequenties bij een fout antwoord.
+Er bestaat een echte categorie AI SaaS-producten waarbij een chatassistent support daadwerkelijk end-to-end kan afhandelen: tools waarbij gebruikersverzoeken sterk repetitief, laag-risico zijn en volledig oplosbaar met informatie die de assistent al heeft - denk aan eenvoudige opzoektools, eenvoudige contentgeneratoren, of hulpmiddelen met een smalle, duidelijk afgebakende functieset zonder financiële of planningsgerelateerde consequenties bij een fout antwoord.
 
 In die categorie kan een AI-assistent plausibel de volledige supportlast aan, omdat de ruimte van dingen die mis kunnen gaan klein is en de kosten van een af en toe onvolmaakt antwoord laag zijn.
 
 ## Waarom de meeste producten niet echt in die categorie passen
 
-Zodra een product planning, betalingen, coördinatie tussen meerdere partijen, of iets met financiële of contractuele gevolgen omvat, groeit de reeks dingen die mis kunnen gaan voorbij wat een chatassistent betrouwbaar kan oplossen. Twee klanten die hetzelfde tijdslot boeken. Een terugbetalingsverzoek gekoppeld aan een specifieke, betwiste situatie. Een gebruiker wiens account in een staat terechtkwam die niemand had voorzien. Dit zijn geen randgevallen in de wegwuivende zin — het is een voorspelbare, terugkerende categorie situaties die opduikt zodra een product genoeg echt gebruik heeft, en ze vereisen oordeelsvermogen, gezag en vaak een oprechte verontschuldiging die een bot niet geloofwaardig kan bieden.
+Zodra een product planning, betalingen, coördinatie tussen meerdere partijen, of iets met financiële of contractuele gevolgen omvat, groeit de reeks dingen die mis kunnen gaan voorbij wat een chatassistent betrouwbaar kan oplossen. Twee klanten die hetzelfde tijdslot boeken. Een terugbetalingsverzoek gekoppeld aan een specifieke, betwiste situatie. Een gebruiker wiens account in een staat terechtkwam die niemand had voorzien. Dit zijn geen randgevallen in de wegwuivende zin - het is een voorspelbare, terugkerende categorie situaties die opduikt zodra een product genoeg echt gebruik heeft, en ze vereisen oordeelsvermogen, gezag en vaak een oprechte verontschuldiging die een bot niet geloofwaardig kan bieden.
 
-De fout is niet het bouwen van een AI-assistent voor support. De fout is aannemen dat, omdat de assistent de meeste tickets goed afhandelt, hij ze allemaal kan afhandelen — terwijl de tickets die hij niet aankan, precies de tickets zijn waarbij een slechte ervaring de meeste schade toebrengt aan een klantrelatie.
+De fout is niet het bouwen van een AI-assistent voor support. De fout is aannemen dat, omdat de assistent de meeste tickets goed afhandelt, hij ze allemaal kan afhandelen - terwijl de tickets die hij niet aankan, precies de tickets zijn waarbij een slechte ervaring de meeste schade toebrengt aan een klantrelatie.
 
 ## Merels aanname
 
-Merel Timmermans, een oprichter in Nunspeet, bouwde AfspraakSlim — een planning-SaaS — met v0 en een gekoppelde backend. Ze ging ervan uit dat haar AI-chatassistent de menselijke klantenservice volledig zou vervangen, en een tijdlang leek dat een redelijke gok — de assistent handelde routinematige planningsvragen soepel af.
+Merel Timmermans, een oprichter in Nunspeet, bouwde AfspraakSlim - een planning-SaaS - met v0 en een gekoppelde backend. Ze ging ervan uit dat haar AI-chatassistent de menselijke klantenservice volledig zou vervangen, en een tijdlang leek dat een redelijke gok - de assistent handelde routinematige planningsvragen soepel af.
 
-Echt gebruik vertelde een ander verhaal. Gebruikers stuitten voortdurend op randgevallen die de bot niet kon oplossen: dubbele boekingen waarbij twee klanten hetzelfde tijdslot toegewezen kregen, en terugbetalingsgeschillen gekoppeld aan omstandigheden waar de assistent geen kader voor had om te beoordelen. Merel had helemaal geen supportproces op orde toen deze situaties begonnen te escaleren — geen wachtrij, geen menselijke terugvaloptie, geen gedefinieerd pad voor wat er gebeurt zodra de bot de grens van wat hij aankan bereikt. Gefrustreerde gebruikers hadden nergens heen.
+Echt gebruik vertelde een ander verhaal. Gebruikers stuitten voortdurend op randgevallen die de bot niet kon oplossen: dubbele boekingen waarbij twee klanten hetzelfde tijdslot toegewezen kregen, en terugbetalingsgeschillen gekoppeld aan omstandigheden waar de assistent geen kader voor had om te beoordelen. Merel had helemaal geen supportproces op orde toen deze situaties begonnen te escaleren - geen wachtrij, geen menselijke terugvaloptie, geen gedefinieerd pad voor wat er gebeurt zodra de bot de grens van wat hij aankan bereikt. Gefrustreerde gebruikers hadden nergens heen.
 
 ## Waarom "80% geautomatiseerd" het eerlijke, betere doel is
 
-Het realistische en oprecht sterke resultaat voor de meeste AI SaaS-producten is niet nul menselijke support — het is een systeem waarin een AI-assistent bekwaam de grote meerderheid van routineverzoeken afhandelt en de rest schoon en snel overdraagt aan een mens die ze daadwerkelijk kan oplossen. Dat is geen troostprijs. Een product dat 80% van het supportvolume automatiseert en er tegelijk voor zorgt dat de lastige 20% echte aandacht krijgt, staat er veel sterker voor dan een product dat óf elk ticket handmatig bemant, óf, erger, geen antwoord heeft voor wat de bot niet kan oplossen.
+Het realistische en oprecht sterke resultaat voor de meeste AI SaaS-producten is niet nul menselijke support - het is een systeem waarin een AI-assistent bekwaam de grote meerderheid van routineverzoeken afhandelt en de rest schoon en snel overdraagt aan een mens die ze daadwerkelijk kan oplossen. Dat is geen troostprijs. Een product dat 80% van het supportvolume automatiseert en er tegelijk voor zorgt dat de lastige 20% echte aandacht krijgt, staat er veel sterker voor dan een product dat óf elk ticket handmatig bemant, óf, erger, geen antwoord heeft voor wat de bot niet kan oplossen.
 
 De oprichters die zich branden, zijn niet degenen die goede AI-assistenten bouwen. Het zijn degenen die "de assistent is goed" verwarren met "de assistent is voldoende", en het bouwen van het terugvalpad helemaal overslaan.
 
 ## Het terugvalpad bouwen voordat u het nodig heeft
 
-De praktische oplossing is eenvoudig: bepaal vooraf welke categorieën verzoeken de assistent moet doorverwijzen in plaats van proberen op te lossen — alles met geld, alles met een geschil tussen twee gebruikers, alles wat de assistent al meer dan eens tevergeefs heeft geprobeerd op te lossen — en zorg ervoor dat een echt persoon die overdracht direct ontvangt, niet nadat een gefrustreerde gebruiker het al heeft opgegeven.
+De praktische oplossing is eenvoudig: bepaal vooraf welke categorieën verzoeken de assistent moet doorverwijzen in plaats van proberen op te lossen - alles met geld, alles met een geschil tussen twee gebruikers, alles wat de assistent al meer dan eens tevergeefs heeft geprobeerd op te lossen - en zorg ervoor dat een echt persoon die overdracht direct ontvangt, niet nadat een gefrustreerde gebruiker het al heeft opgegeven.
 
 Onze technici, werkend vanuit Ho Chi Minh-stad samen met teams in Amsterdam en Singapore, helpen SaaS-oprichters regelmatig bij het bouwen van precies dit soort overdrachtslogica in producten die, net als AfspraakSlim, begonnen met een AI-only supportaanname. LaunchStudio brengt Manifera's enterprise-grade engineering naar dat werk, dezelfde standaard achter Manifera's [diensten voor webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/). Als het supportplan van uw product momenteel "de bot handelt het af" is, kunt u [berekenen wat het bouwen van een goed terugvalpad zou kosten](https://launchstudio.eu/nl/#calculator).
 
@@ -77,14 +77,14 @@ Merel Timmermans had AfspraakSlim gebouwd om kleine dienstverlenende bedrijven b
 
 De problemen begonnen bij de situaties waar Merel niet op had gerekend: twee klanten geboekt in hetzelfde tijdslot door een synchronisatievertraging, en een klant die een betaling betwistte nadat een dienstverlener zonder juiste kennisgeving had geannuleerd. In beide gevallen gaf de assistent een generiek, onbruikbaar antwoord, en er zat nergens een mens in de keten om de opgebouwde frustratie op te vangen. Meerdere getroffen gebruikers achterlieten negatieve recensies voordat Merel zich zelfs maar bewust werd van een probleem.
 
-De technici van LaunchStudio bouwden een overdrachtssysteem dat precies deze categorieën verzoeken detecteert — dubbele-boekingsconflicten en terugbetalingsgeschillen — en ze direct doorstuurt naar Merels eigen inbox met volledige context erbij, terwijl de assistent routinematige planningsvragen zelfstandig blijft afhandelen.
+De technici van LaunchStudio bouwden een overdrachtssysteem dat precies deze categorieën verzoeken detecteert - dubbele-boekingsconflicten en terugbetalingsgeschillen - en ze direct doorstuurt naar Merels eigen inbox met volledige context erbij, terwijl de assistent routinematige planningsvragen zelfstandig blijft afhandelen.
 
 **Resultaat:** AfspraakSlim lost nu de overgrote meerderheid van verzoeken automatisch op, terwijl geschillen en conflicten binnen enkele minuten een echt persoon bereiken in plaats van onbeantwoord te blijven sudderen.
 
 > *"Ik dacht oprecht dat de bot alles aankon. Hij kon alles aan tot het moment dat het er echt toe deed, en toen kon hij niets meer."*
-> — **Merel Timmermans, oprichter, AfspraakSlim (Nunspeet)**
+> - **Merel Timmermans, oprichter, AfspraakSlim (Nunspeet)**
 
-**Kosten en tijdlijn:** € 1.050 (support-overdrachtslogica en escalatieroutering) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (support-overdrachtslogica en escalatieroutering) - voltooid in 7 werkdagen.
 
 ---
 

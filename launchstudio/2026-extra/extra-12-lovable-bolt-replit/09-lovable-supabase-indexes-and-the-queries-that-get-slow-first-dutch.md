@@ -28,7 +28,7 @@ AI-codetools maken tabellen aan en schrijven queries. Ze maken zelden de indexen
 
 ## Vind de Trage Voordat U Gaat Gokken
 
-Voeg geen indexen toe op gevoel. Supabase toont querystatistieken — elk statement dat uw applicatie heeft uitgevoerd, hoe vaak, en hoeveel tijd het in totaal kostte — en dat is de enige eerlijke bron.
+Voeg geen indexen toe op gevoel. Supabase toont querystatistieken - elk statement dat uw applicatie heeft uitgevoerd, hoe vaak, en hoeveel tijd het in totaal kostte - en dat is de enige eerlijke bron.
 
 Sorteer op totale tijd in plaats van op de traagste afzonderlijke uitvoering. Een query van 900 milliseconden die één keer per dag draait, doet er veel minder toe dan een van 40 milliseconden die bij elke paginalading draait, en oprichters optimaliseren voortdurend de verkeerde omdat het trage getal alarmerender is.
 
@@ -54,7 +54,7 @@ Voeg ze één voor één toe en meet. Een index die een plan niet verandert, is 
 
 Indexen zijn niet gratis, en de afweging is de moeite waard om te begrijpen, omdat de neiging na het bovenstaande is alles te indexeren.
 
-Elke index kost opslag, en belangrijker: elke index moet bij elke insert, update en delete van de geïndexeerde kolom worden bijgewerkt. Een tabel met elf indexen schrijft aanzienlijk trager dan dezelfde tabel met drie. Voor een product dat veel meer leest dan schrijft — de meeste — valt de afweging sterk uit in het voordeel van indexen. Voor een tabel met veel schrijfacties, zoals een event- of logtabel, wees zuinig.
+Elke index kost opslag, en belangrijker: elke index moet bij elke insert, update en delete van de geïndexeerde kolom worden bijgewerkt. Een tabel met elf indexen schrijft aanzienlijk trager dan dezelfde tabel met drie. Voor een product dat veel meer leest dan schrijft - de meeste - valt de afweging sterk uit in het voordeel van indexen. Voor een tabel met veel schrijfacties, zoals een event- of logtabel, wees zuinig.
 
 Ongebruikte indexen zijn pure kosten. Postgres houdt bij hoe vaak elke index is gebruikt, en dat na een paar maanden echt verkeer bekijken laat meestal twee of drie zien die speculatief zijn toegevoegd en nooit zijn aangeraakt. Verwijder ze.
 
@@ -64,7 +64,7 @@ Controleer voordat u iets toevoegt of uw probleem eigenlijk het aantal queries i
 
 Het patroon: een pagina toont 50 projecten, en voor elk project haalt de code de eigenaar op. Dat zijn 51 queries waar er twee zouden volstaan. Elke query is snel, de pagina is traag, en geen index helpt.
 
-Dit is wijdverbreid in door AI gegenereerde code, omdat het de natuurlijke manier is om de logica uit te drukken — haal de lijst op, en loop er dan doorheen. De oplossing is gerelateerde data in één query op te halen in plaats van in een lus, wat in Supabase betekent dat u de gerelateerde tabel samen met de hoofdtabel selecteert in plaats van de client binnen een lus aan te roepen.
+Dit is wijdverbreid in door AI gegenereerde code, omdat het de natuurlijke manier is om de logica uit te drukken - haal de lijst op, en loop er dan doorheen. De oplossing is gerelateerde data in één query op te halen in plaats van in een lus, wat in Supabase betekent dat u de gerelateerde tabel samen met de hoofdtabel selecteert in plaats van de client binnen een lus aan te roepen.
 
 De twee gevallen onderscheiden kost dertig seconden: als uw trage pagina tientallen snelle queries opleverde, is het dit. Als ze er drie trage opleverde, zijn het indexen.
 
@@ -72,7 +72,7 @@ De twee gevallen onderscheiden kost dertig seconden: als uw trage pagina tiental
 
 `SELECT count(*)` op een grote tabel is trager dan mensen verwachten, omdat Postgres echt telt. Op een lijstpagina met paginering kost die telling vaak meer dan het ophalen van de pagina zelf.
 
-Drie opties, in volgorde van voorkeur voor kleine producten. Toon helemaal geen totaal — "1-25 getoond" met een volgende-knop is voor de meeste interfaces voldoende. Toon een geschat aantal, dat de database goedkoop kan inschatten. Of houd zelf een teller bij als het getal echt belangrijk is, bijgewerkt wanneer rijen worden aangemaakt en verwijderd.
+Drie opties, in volgorde van voorkeur voor kleine producten. Toon helemaal geen totaal - "1-25 getoond" met een volgende-knop is voor de meeste interfaces voldoende. Toon een geschat aantal, dat de database goedkoop kan inschatten. Of houd zelf een teller bij als het getal echt belangrijk is, bijgewerkt wanneer rijen worden aangemaakt en verwijderd.
 
 Het algemene principe geldt breder dan tellen: een getal in de hoek van een pagina is zelden een query waard die meegroeit met uw data.
 
@@ -80,7 +80,7 @@ Het algemene principe geldt breder dan tellen: een getal in de hoek van een pagi
 
 Op een tabel met echte data blokkeert het aanmaken van een index normaal gesproken schrijfacties terwijl hij wordt opgebouwd, wat op een grote tabel een periode betekent waarin uw applicatie niets kan invoegen.
 
-Postgres biedt een gelijktijdige opbouw (concurrent build) die die blokkade niet neemt. Die is trager en mislukt af en toe, waarbij een ongeldige index achterblijft die moet worden verwijderd en opnieuw geprobeerd — maar ze legt uw product niet stil, en dat is de eigenschap die u om vier uur 's middags wilt.
+Postgres biedt een gelijktijdige opbouw (concurrent build) die die blokkade niet neemt. Die is trager en mislukt af en toe, waarbij een ongeldige index achterblijft die moet worden verwijderd en opnieuw geprobeerd - maar ze legt uw product niet stil, en dat is de eigenschap die u om vier uur 's middags wilt.
 
 Er horen twee gewoontes bij. Maak indexen aan via migratiebestanden in plaats van door in een dashboard te typen, zodat uw staging- en productiedatabases identiek blijven en de wijziging is vastgelegd. En meet dezelfde query vóór en na, want een index die het plan niet veranderde, betekent dat de database besloot hem niet te gebruiken, en dat meteen weten is beter dan aannemen dat het werkte.
 
@@ -90,27 +90,27 @@ Eén verfijning die de moeite waard is om te kennen, omdat ze op bijna elk produ
 
 De meeste applicaties vragen keer op keer een fractie van hun data op. Openstaande tickets, actieve abonnementen, niet-gearchiveerde projecten, onverwerkte taken. De gesloten, opgezegde en gearchiveerde rijen stapelen zich eindeloos op en worden bijna nooit gelezen, maar een normale index neemt ze plichtsgetrouw allemaal op.
 
-Een gedeeltelijke index (partial index) dekt alleen de rijen die aan een voorwaarde voldoen — bijvoorbeeld actieve records — wat hem drastisch kleiner, sneller doorzoekbaar en goedkoper in onderhoud maakt. Op een tabel waar 95 procent van de rijen historisch is, is het verschil niet marginaal.
+Een gedeeltelijke index (partial index) dekt alleen de rijen die aan een voorwaarde voldoen - bijvoorbeeld actieve records - wat hem drastisch kleiner, sneller doorzoekbaar en goedkoper in onderhoud maakt. Op een tabel waar 95 procent van de rijen historisch is, is het verschil niet marginaal.
 
 Het addertje is dat de database een gedeeltelijke index alleen gebruikt wanneer de voorwaarde van de query overeenkomt met die van de index, dus het filter moet in de query zelf staan. Dat is meestal al zo: de schermen die traag aanvoelen, zijn de schermen die actueel werk tonen.
 
-Dezelfde gedachte geldt voor een wachtrijtabel. Een index over alleen de openstaande taken, in plaats van elke taak die ooit is uitgevoerd, houdt de pollingquery snel, hoeveel geschiedenis zich er ook achter opstapelt — en geschiedenis die zich achter een werkende wachtrij opstapelt, is precies wat er met elk succesvol product gebeurt.
+Dezelfde gedachte geldt voor een wachtrijtabel. Een index over alleen de openstaande taken, in plaats van elke taak die ooit is uitgevoerd, houdt de pollingquery snel, hoeveel geschiedenis zich er ook achter opstapelt - en geschiedenis die zich achter een werkende wachtrij opstapelt, is precies wat er met elk succesvol product gebeurt.
 
 ## Wanneer Indexen Niet het Antwoord Zijn
 
 Drie situaties lijken op een indexprobleem en zijn het niet, en ze herkennen bespaart een dag.
 
-**Zoeken in tekst.** Filteren op een woord dat ergens in een omschrijving voorkomt, kan geen gewone index gebruiken. Daarvoor is full-text search nodig, wat Postgres standaard ondersteunt, of een aparte zoekdienst — en de keuze tussen die twee is een beslissing die u bewust moet nemen.
+**Zoeken in tekst.** Filteren op een woord dat ergens in een omschrijving voorkomt, kan geen gewone index gebruiken. Daarvoor is full-text search nodig, wat Postgres standaard ondersteunt, of een aparte zoekdienst - en de keuze tussen die twee is een beslissing die u bewust moet nemen.
 
 **Aggregaties over alles.** Een dashboard dat elke transactie sinds de lancering optelt, wordt eindeloos trager, ongeacht indexen, omdat het werk meegroeit met uw geschiedenis. Die getallen horen in een samenvattingstabel die wordt bijgewerkt wanneer data binnenkomt, of 's nachts wordt berekend.
 
-**Row-level security die meer werk doet dan u denkt.** Supabase-policies zijn voorwaarden die op elke query worden toegepast, en een policy met een subquery tegen een andere tabel wordt uitgevoerd voor elke rij die wordt bekeken. Een trage query met een eenvoudig plan en een dure policy is een policyprobleem, en de oplossing is de eigen opzoeking van de policy te indexeren — of haar zo te herstructureren dat ze vergelijkt met een waarde die al op de rij staat.
+**Row-level security die meer werk doet dan u denkt.** Supabase-policies zijn voorwaarden die op elke query worden toegepast, en een policy met een subquery tegen een andere tabel wordt uitgevoerd voor elke rij die wordt bekeken. Een trage query met een eenvoudig plan en een dure policy is een policyprobleem, en de oplossing is de eigen opzoeking van de policy te indexeren - of haar zo te herstructureren dat ze vergelijkt met een waarde die al op de rij staat.
 
 ## Dit Inrichten
 
 Voor een draaiende Supabase-applicatie kost dit doorgaans één tot twee dagen: querystatistieken bekeken en gerangschikt op totale tijd, plannen vastgelegd voor de grootste boosdoeners, foreign-key-indexen aangemaakt in het hele schema, samengestelde indexen voor tenant en sorteervolgorde op de tabellen achter uw hoofdschermen, unieke indexen op natuurlijke opzoekkolommen, N+1-querypatronen herschreven om gerelateerde data in één statement op te halen, dure tellingen verwijderd of geschat, alles toegepast via migraties met gelijktijdige opbouw, en een notitie van de tijden vóór en na zodat de volgende persoon kan zien wat er is gedaan en waarom.
 
-LaunchStudio doet dit als onderdeel van productieklaar maken, en het is meestal het goedkoopste prestatiewerk dat een groeiend product kan krijgen — uren in plaats van een herbouw. De engineers zijn van Manifera: elf jaar, 160+ projecten, Postgres in productie lang voordat het in de mode was.
+LaunchStudio doet dit als onderdeel van productieklaar maken, en het is meestal het goedkoopste prestatiewerk dat een groeiend product kan krijgen - uren in plaats van een herbouw. De engineers zijn van Manifera: elf jaar, 160+ projecten, Postgres in productie lang voordat het in de mode was.
 
 [Stuur ons uw traagste pagina](https://launchstudio.eu/nl/#contact) en wij vertellen u of het indexen of queries zijn.
 
@@ -120,7 +120,7 @@ LaunchStudio doet dit als onderdeel van productieklaar maken, en het is meestal 
 
 Wendy Roos runt Verzuimlijn, gebouwd in Lovable: verzuimregistratie voor kleine werkgevers, gebruikt door 140 bedrijven met samen zo'n 4.000 werknemers.
 
-Acht maanden lang ging alles goed. Toen begon het dashboard — het eerste scherm dat elke gebruiker opent — vier tot zes seconden te duren, altijd het ergst tussen negen en tien uur 's ochtends, wanneer de meeste gebruikers tegelijk inloggen. Twee klanten klaagden en één vroeg of het product hun omvang wel aankon.
+Acht maanden lang ging alles goed. Toen begon het dashboard - het eerste scherm dat elke gebruiker opent - vier tot zes seconden te duren, altijd het ergst tussen negen en tien uur 's ochtends, wanneer de meeste gebruikers tegelijk inloggen. Twee klanten klaagden en één vroeg of het product hun omvang wel aankon.
 
 De tabel met verzuimregistraties had 310.000 rijen bereikt en precies één index: de primaire sleutel. De dashboardquery filterde op werkgever en sorteerde op datum, dus de database las alle 310.000 rijen en sorteerde ze, elke keer, voor elke gebruiker. De ochtendpiek was gewoon veel mensen die dat tegelijk deden.
 
@@ -129,9 +129,9 @@ Twee werkdagen: querystatistieken bekeken, waaruit bleek dat de dashboardquery 7
 **Resultaat:** het dashboard ging van 4,2 seconden tijdens de ochtendpiek naar 180 milliseconden, op dezelfde hardware en hetzelfde plan. Wendy's database-CPU tijdens piekuren daalde van routinematig boven de 80 procent naar onder de 15, waardoor een geplande upgrade waarvoor ze €340 per maand had begroot niet meer nodig was.
 
 > *"Ik ging ervan uit dat ik mijn plan was ontgroeid en voor een groter plan moest betalen. Het bleek dat ik nooit één index had aangemaakt, en niemand had me verteld dat dat iets was wat ik moest doen."*
-> — **Wendy Roos, Oprichter, Verzuimlijn (Helmond)**
+> - **Wendy Roos, Oprichter, Verzuimlijn (Helmond)**
 
-**Kosten & Doorlooptijd:** €1.600 (queryanalyse, samengestelde en foreign-key-indexen via gelijktijdige migraties, herstel van N+1-patronen, verwijderen van tellingen, controle van indexgebruik) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €1.600 (queryanalyse, samengestelde en foreign-key-indexen via gelijktijdige migraties, herstel van N+1-patronen, verwijderen van tellingen, controle van indexgebruik) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -145,7 +145,7 @@ Nee. Elke index vertraagt elke schrijfactie op die tabel en kost opslag. Indexee
 
 ### Waarom is mijn pagina traag als elke query snel is?
 
-Omdat het er tientallen zijn — een lijst die gerelateerde data in een lus ophaalt. Geen index lost dat op; de gerelateerde rijen in één query ophalen wel.
+Omdat het er tientallen zijn - een lijst die gerelateerde data in een lus ophaalt. Geen index lost dat op; de gerelateerde rijen in één query ophalen wel.
 
 ### Is het veilig om een index toe te voegen aan een live tabel?
 
@@ -181,7 +181,7 @@ Postgres telt echt in plaats van een totaal op te slaan. Laat op grote tabellen 
       "name": "Waarom is mijn pagina traag als elke query snel is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "U voert er tientallen uit — gerelateerde data opgehaald binnen een lus. Haal het in één query op; geen index helpt."
+        "text": "U voert er tientallen uit - gerelateerde data opgehaald binnen een lus. Haal het in één query op; geen index helpt."
       }
     },
     {

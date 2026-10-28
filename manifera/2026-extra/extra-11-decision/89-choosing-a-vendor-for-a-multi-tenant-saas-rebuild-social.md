@@ -1,4 +1,4 @@
-Fifty-one customers. Fifty-one separate databases. One SaaS company realized it was running fifty-one products, not one — and the isolation model decision that fixed it was nearly impossible to reverse. 🏗️
+Fifty-one customers. Fifty-one separate databases. One SaaS company realized it was running fifty-one products, not one - and the isolation model decision that fixed it was nearly impossible to reverse. 🏗️
 
 **The Pain Points:**
 ❌ **One-size architecture:** Vendors default to whatever isolation model they've built before instead of interrogating your actual tenant mix and compliance obligations.

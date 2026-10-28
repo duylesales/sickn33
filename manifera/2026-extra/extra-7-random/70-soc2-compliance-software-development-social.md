@@ -1,4 +1,4 @@
-📑 Most companies treat SOC 2 as an eight-week pre-audit scramble. It works exactly once — and the second year's audit reveals none of the controls actually held between audits. 🔁
+📑 Most companies treat SOC 2 as an eight-week pre-audit scramble. It works exactly once - and the second year's audit reveals none of the controls actually held between audits. 🔁
 
 **The Pain Points:**
 ❌ **Evidence, Not Operation:** Controls assembled just for the audit window don't persist afterward.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Access Control as a Default:** Provisioning, review, and revocation built into IAM tooling, not reconstructed manually.
 ✅ **Evidence as a Byproduct:** PR review, CI checks, and deployment approval generate change management evidence automatically.
-✅ **Continuous Vendor Tracking:** No spreadsheet rebuilt annually — vendors are risk-assessed as they're adopted.
+✅ **Continuous Vendor Tracking:** No spreadsheet rebuilt annually - vendors are risk-assessed as they're adopted.
 
 Compliance that's just how you work beats compliance you perform once a year. ✅
 

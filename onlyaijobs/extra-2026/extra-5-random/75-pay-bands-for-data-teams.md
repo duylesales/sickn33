@@ -61,7 +61,7 @@ You do not need an elaborate system. Most teams under fifty people are served by
 
 Use several sources and treat all of them sceptically: published salary surveys for your country and sector, recruitment agency data, publicly advertised ranges, and what candidates tell you during processes.
 
-Two common errors. Benchmarking against the wrong market — a regional manufacturer competing with Amsterdam technology salaries will fail, while a regional manufacturer competing with other regional employers will not. And benchmarking once and never revisiting, which produces the drift described below.
+Two common errors. Benchmarking against the wrong market - a regional manufacturer competing with Amsterdam technology salaries will fail, while a regional manufacturer competing with other regional employers will not. And benchmarking once and never revisiting, which produces the drift described below.
 
 ## Writing Level Descriptions That Work
 
@@ -175,7 +175,7 @@ What does not work is competing on salary while paying below market, which produ
 
 ## How OnlyAIJobs Supports Transparent Hiring
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position — vacancies compete on content, which is exactly the environment where a clear, honest posting with a published range performs well.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position - vacancies compete on content, which is exactly the environment where a clear, honest posting with a published range performs well.
 
 For employers outside the main technology centres, one detail matters particularly: listings show the exact address and the distance from the candidate's home, which surfaces regional employers to candidates who would otherwise never find them. That is the problem the platform was built to address, after an observation in Noord-Brabant that people were leaving for the Randstad without knowing which local companies did this work.
 
@@ -216,7 +216,7 @@ Yes, and it is easier now than at twenty. The structure prevents the incoherence
 Prioritise the clearest inequities, plan the rest over two cycles, and be honest with the people affected about the timeline.
 
 ### (Scenario: employer competing for scarce skills) Can we pay above band for a hard-to-fill role?
-Yes, if the reason is documented and objective — scarcity, specific scope — rather than negotiating ability. That distinction matters under equal pay rules.
+Yes, if the reason is documented and objective - scarcity, specific scope - rather than negotiating ability. That distinction matters under equal pay rules.
 
 ### (Scenario: recruiter asked about ranges) Must we publish salary in vacancies?
 Requirements depend on national implementation, and providing range information to applicants is central to the directive. Publishing now is simpler than retrofitting later.

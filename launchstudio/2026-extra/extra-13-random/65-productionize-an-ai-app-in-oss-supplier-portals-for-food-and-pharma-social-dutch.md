@@ -7,14 +7,14 @@ Nieuwe uploads overschreven oude. Er was geen registratie van wie wat goedkeurde
 ❌ Scheiding tussen leveranciers alleen in de interface
 ❌ Herinneringen over vervaldatums die niemand monitorde
 
-✅ Documentversies met statussen en geldigheidsperiodes — bestaande bestanden gemigreerd als versie één met hun uploaddatum
+✅ Documentversies met statussen en geldigheidsperiodes - bestaande bestanden gemigreerd als versie één met hun uploaddatum
 ✅ Een append-only audittrail, apart opgeslagen en leesbaar voor kwaliteitsmanagers
 ✅ Scheiding tussen leveranciers en producenten met row level security
 ✅ Gemonitorde vervaltaken met escalatie, een auditexport met tijdstempels per product, en hosting in de EU met een geteste restore
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering en werk voor TNO en Xpar Vision, zorgen we dat uw portaal het bewijs bewaart, niet alleen de documenten. ⚙️
 
-💡 Het resultaat: € 4.600 in vijftien werkdagen, plus € 49/maand. De producent doorstond de retailaudit met de export van Recepturo — de auditor prees de documentbeheersing — en Recepturo groeide naar 16 producenten, waarvan twee in farmaceutische hulpstoffen. 🚀
+💡 Het resultaat: € 4.600 in vijftien werkdagen, plus € 49/maand. De producent doorstond de retailaudit met de export van Recepturo - de auditor prees de documentbeheersing - en Recepturo groeide naar 16 producenten, waarvan twee in farmaceutische hulpstoffen. 🚀
 
 👉 Een AI-App Productierijp Maken in Oss: Leveranciersportalen voor Food en Farma: https://launchstudio.eu/nl/blog/productionize-an-ai-app-in-oss-supplier-portals-for-food-and-pharma
 

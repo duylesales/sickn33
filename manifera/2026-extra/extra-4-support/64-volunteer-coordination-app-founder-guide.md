@@ -22,13 +22,13 @@ target_persona: "D"
 }
 </script>
 
-A first-time founder building a volunteer coordination or matching app — connecting nonprofits and community organizations with volunteers for specific opportunities — often scopes the MVP around a listing and signup flow, treating volunteer matching as fundamentally similar to a simple event listing platform. The genuinely hard, valuable part of a volunteer coordination platform is considerably more specific than a listing flow: accurately matching volunteer availability and skills against organization needs, and building the trust and reliability infrastructure that determines whether a matched volunteer actually shows up.
+A first-time founder building a volunteer coordination or matching app - connecting nonprofits and community organizations with volunteers for specific opportunities - often scopes the MVP around a listing and signup flow, treating volunteer matching as fundamentally similar to a simple event listing platform. The genuinely hard, valuable part of a volunteer coordination platform is considerably more specific than a listing flow: accurately matching volunteer availability and skills against organization needs, and building the trust and reliability infrastructure that determines whether a matched volunteer actually shows up.
 
 ## Step 1: Understand Why Volunteer Matching Is Harder Than It Initially Appears
 
 Getting this foundation right from the earliest version of the product avoids a considerably more disruptive correction once real organizations and volunteers are already depending on the platform daily.
 
-A simple listing model — an organization posts an opportunity, a volunteer signs up — looks straightforward but tends to produce poor matches at real scale: a volunteer signs up for an opportunity that doesn't actually align well with their real availability pattern or genuine skill fit, leading to no-shows or a poor experience for both the volunteer and the organization. Genuinely useful volunteer matching depends on structured data about both sides of the match — an organization's specific need (skill requirements, time commitment, physical demands) and a volunteer's actual availability pattern and specific skills — matched deliberately rather than left to a volunteer's own imperfect self-assessment of fit from a simple listing description.
+A simple listing model - an organization posts an opportunity, a volunteer signs up - looks straightforward but tends to produce poor matches at real scale: a volunteer signs up for an opportunity that doesn't actually align well with their real availability pattern or genuine skill fit, leading to no-shows or a poor experience for both the volunteer and the organization. Genuinely useful volunteer matching depends on structured data about both sides of the match - an organization's specific need (skill requirements, time commitment, physical demands) and a volunteer's actual availability pattern and specific skills - matched deliberately rather than left to a volunteer's own imperfect self-assessment of fit from a simple listing description.
 
 ## Step 2: Decide on Structured Availability and Skill Data From the Start
 
@@ -40,7 +40,7 @@ A volunteer coordination platform connecting volunteers with organizations they 
 
 ## Step 4: Scope Communication and Reminder Infrastructure as a Core Reliability Feature
 
-Volunteer no-shows are a genuinely significant, well-documented problem in volunteer coordination generally, and a meaningful share of no-shows result not from a volunteer's actual unwillingness to participate but from simple forgetting, given that volunteering is frequently a lower-priority commitment relative to a volunteer's paid work and other life obligations. Building reliable, well-timed reminder and communication infrastructure — not just a single confirmation email at signup, but a structured reminder sequence leading up to the actual commitment — is a genuinely high-leverage feature for improving actual show-up rates, and treating this as a core reliability feature deserving real engineering investment, rather than an afterthought layered on top of the core matching functionality, directly affects whether organizations experience the platform as genuinely useful or as a source of unreliable volunteer commitments.
+Volunteer no-shows are a genuinely significant, well-documented problem in volunteer coordination generally, and a meaningful share of no-shows result not from a volunteer's actual unwillingness to participate but from simple forgetting, given that volunteering is frequently a lower-priority commitment relative to a volunteer's paid work and other life obligations. Building reliable, well-timed reminder and communication infrastructure - not just a single confirmation email at signup, but a structured reminder sequence leading up to the actual commitment - is a genuinely high-leverage feature for improving actual show-up rates, and treating this as a core reliability feature deserving real engineering investment, rather than an afterthought layered on top of the core matching functionality, directly affects whether organizations experience the platform as genuinely useful or as a source of unreliable volunteer commitments.
 
 ## Why This Foundation Is Easy to Underweight at MVP Stage
 
@@ -66,7 +66,7 @@ A non-technical founder at Karlovac-based startup Volonteri Povezani had built a
 Manifera's Amsterdam team, engaged for the rebuild, redesigned the data model around structured availability windows and a consistent skill taxonomy matched against organization opportunity postings, added volunteer reliability history visible to organizations, and built a structured, multi-touchpoint reminder sequence leading up to each committed opportunity.
 
 > *"We thought the hard part was just getting volunteers and organizations onto the same platform. It turned out the actual hard part, and the actual reason organizations kept getting frustrated, was that we'd never given anyone the structured information needed to actually match well or show up reliably."*
-> — **Founder, Volonteri Povezani**
+> - **Founder, Volonteri Povezani**
 
 Volonteri Povezani's no-show rate dropped substantially following the rebuild, and organizations using the platform report meaningfully better match quality, directly improving the platform's retention among the organization side of its marketplace.
 
@@ -81,7 +81,7 @@ Volonteri Povezani's no-show rate dropped substantially following the rebuild, a
 
 ## Scoping Your Own Volunteer Coordination App's Matching Foundation
 
-Before building a volunteer coordination app MVP, structure availability and skill data deliberately, build genuine trust and reliability infrastructure, and invest in reliable reminder systems from the start — these foundational decisions determine whether the platform produces genuinely good matches at real scale. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) about scoping a genuinely effective volunteer coordination platform.
+Before building a volunteer coordination app MVP, structure availability and skill data deliberately, build genuine trust and reliability infrastructure, and invest in reliable reminder systems from the start - these foundational decisions determine whether the platform produces genuinely good matches at real scale. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) about scoping a genuinely effective volunteer coordination platform.
 
 ## Frequently Asked Questions
 

@@ -96,7 +96,7 @@ The accuracy bar is high, because these documents carry contractual and safety w
 
 Capturing what actually exists, as opposed to what was designed, is a substantial technical domain in the built environment.
 
-Reality capture uses laser scanning, photogrammetry from drones or handheld cameras, and increasingly sensors on ordinary devices to produce point clouds and meshes of a site or building. Processing this data — registration, classification, extraction of elements, comparison against the design model — is genuine computer vision and geometry work.
+Reality capture uses laser scanning, photogrammetry from drones or handheld cameras, and increasingly sensors on ordinary devices to produce point clouds and meshes of a site or building. Processing this data - registration, classification, extraction of elements, comparison against the design model - is genuine computer vision and geometry work.
 
 Applications include verifying that construction matches design, measuring quantities for payment, documenting existing buildings before renovation, monitoring structural movement, and creating the as-built record that will be used for decades of maintenance.
 
@@ -118,7 +118,7 @@ The designs that succeed focus on conditions rather than individuals: identifyin
 
 Environmental obligations have become a major driver of data work in the built environment, and they are creating roles that did not exist five years ago.
 
-Buildings and construction account for a substantial share of European energy use and emissions, which has put the sector at the centre of policy. Operational energy performance is regulated through building performance requirements; embodied carbon — the emissions from producing and transporting materials — is increasingly assessed at design stage and specified in public procurement.
+Buildings and construction account for a substantial share of European energy use and emissions, which has put the sector at the centre of policy. Operational energy performance is regulated through building performance requirements; embodied carbon - the emissions from producing and transporting materials - is increasingly assessed at design stage and specified in public procurement.
 
 Calculating embodied carbon is fundamentally a data problem: linking quantities from a design model to emissions factors for specific products, handling incomplete supply chain information, and producing a figure someone will verify. Material passports, circularity assessments and demolition and reuse planning extend the same work.
 
@@ -132,7 +132,7 @@ The sector's employers differ considerably in what the work looks like.
 
 **Main contractors** deliver projects and hire for estimating, planning, site systems and increasingly for data platforms. Work is project-driven, varied and paced by delivery.
 
-**Infrastructure owners and operators** — road, rail, water, energy, ports and municipalities — offer the most stable and long-horizon analytical work, focused on assets rather than projects.
+**Infrastructure owners and operators** - road, rail, water, energy, ports and municipalities - offer the most stable and long-horizon analytical work, focused on assets rather than projects.
 
 **Engineering consultancies and design firms** work across many clients, with strong technical cultures and opportunities in design optimisation, modelling and digital delivery.
 
@@ -140,11 +140,11 @@ The sector's employers differ considerably in what the work looks like.
 
 **Construction technology companies** build the software the industry uses: project management platforms, reality capture, estimating tools and site monitoring products.
 
-**Materials producers** — cement, steel, aggregates, prefabrication — are manufacturing employers with process analytics needs and significant decarbonisation pressure.
+**Materials producers** - cement, steel, aggregates, prefabrication - are manufacturing employers with process analytics needs and significant decarbonisation pressure.
 
 **Real estate and facilities managers** analyse building operation, energy use and occupancy.
 
-Geographically, work follows population and infrastructure investment, which means it is distributed across Europe rather than concentrated in technology hubs — an advantage for candidates outside the major cities.
+Geographically, work follows population and infrastructure investment, which means it is distributed across Europe rather than concentrated in technology hubs - an advantage for candidates outside the major cities.
 
 ## Entering the Sector and Interviewing Well
 
@@ -152,7 +152,7 @@ Construction employers hire data people for skills they do not have, and they sc
 
 Expect questions like: how would you estimate progress when the site is partly obscured; how would you build a cost model when every project is different; how would you handle data held by subcontractors who have no incentive to share it; how would you prioritise maintenance across a network with a fixed budget; how would you explain a prediction to a site manager who does not trust it.
 
-Preparation that helps: learn geospatial fundamentals, understand what building information modelling is and what it actually contains in practice, and read about one asset type — pavements, bridges, water networks — in enough depth to discuss deterioration sensibly.
+Preparation that helps: learn geospatial fundamentals, understand what building information modelling is and what it actually contains in practice, and read about one asset type - pavements, bridges, water networks - in enough depth to discuss deterioration sensibly.
 
 As with manufacturing, willingness to visit sites is a genuine filter. Say plainly that you expect to spend time where the work happens.
 
@@ -186,7 +186,7 @@ It performed well in trials on two sites during summer. On the third site, in au
 
 The team's response combined engineering and process. They added weather and light metadata, trained on a deliberately collected set of images from covered and obstructed sites, introduced an explicit uncertainty output, and changed the workflow so that low-confidence areas were flagged for a site engineer to confirm rather than reported as fact.
 
-The project director's assessment was that the first version had been a measurement tool and the second was a decision support tool, and that only the second was usable — because on a construction site, being confidently wrong about progress has contractual consequences.
+The project director's assessment was that the first version had been a measurement tool and the second was a decision support tool, and that only the second was usable - because on a construction site, being confidently wrong about progress has contractual consequences.
 
 ## Key Takeaways
 

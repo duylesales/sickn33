@@ -15,7 +15,7 @@ De 4 grootste valkuilen bij zoekfuncties:
 ❌ Een N+1 query-patroon hebben dat tags en relaties per zoekresultaat afzonderlijk ophaalt
 ❌ Synchronisatiefouten tussen uw database en externe zoekindex pas in productie ontdekken
 
-Bij **LaunchStudio**, ondersteund door Manifera, optimaliseren onze senior engineers uw zoekqueries en Postgres-indexen — zodat u pas opschaalt naar externe infrastructuur wanneer het écht nodig is.
+Bij **LaunchStudio**, ondersteund door Manifera, optimaliseren onze senior engineers uw zoekqueries en Postgres-indexen - zodat u pas opschaalt naar externe infrastructuur wanneer het écht nodig is.
 
 💡 Zo bracht kennisbankplatform Clarifox haar zoektijd terug van 340ms naar onder de 15ms puur met een GIN-index op Postgres, zónder dure Algolia-facturen.
 

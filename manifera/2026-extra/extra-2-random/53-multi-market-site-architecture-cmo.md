@@ -20,7 +20,7 @@ target_persona: "CMO"
 }
 </script>
 
-Twelve markets, twelve local marketing teams, and one CMS that was architected for a single country three years ago — every new market launch is now a bespoke engineering project disguised as a "quick localization."
+Twelve markets, twelve local marketing teams, and one CMS that was architected for a single country three years ago - every new market launch is now a bespoke engineering project disguised as a "quick localization."
 
 **The Pain:** A CMO overseeing pan-European expansion has watched each new market launch take longer than the last, not faster, because the CMS was never architected for multi-market content at scale. Every local team wants campaign-specific landing pages, region-specific promotions, and localized checkout flows, and every request routes through the same overloaded two-person web team that also maintains the flagship market's site.
 
@@ -28,13 +28,13 @@ Twelve markets, twelve local marketing teams, and one CMS that was architected f
 
 ## The Architectural Mandate
 
-The decision that actually determines whether multi-market expansion scales isn't which CMS vendor you pick — it's whether the content architecture is composable. A monolithic CMS bolted with country-specific templates forces every new market to be a development project: new templates, new deployment pipeline, new QA cycle. A properly architected headless or composable CMS separates content structure from presentation, letting a single content model serve twelve markets through market-specific front-end rendering, localized content entries, and shared component libraries — turning a new market launch from an engineering sprint into a content-entry task local marketing teams can largely self-serve.
+The decision that actually determines whether multi-market expansion scales isn't which CMS vendor you pick - it's whether the content architecture is composable. A monolithic CMS bolted with country-specific templates forces every new market to be a development project: new templates, new deployment pipeline, new QA cycle. A properly architected headless or composable CMS separates content structure from presentation, letting a single content model serve twelve markets through market-specific front-end rendering, localized content entries, and shared component libraries - turning a new market launch from an engineering sprint into a content-entry task local marketing teams can largely self-serve.
 
-Custom software development solutions are the right framing here specifically because no off-the-shelf CMS ships pre-configured for your market count, your localization workflow, or your regional compliance requirements (cookie law variance, local payment methods, regional pricing display rules). The architecture has to be built around your actual expansion roadmap — a company planning three more markets next year needs a fundamentally different content model than one planning twelve.
+Custom software development solutions are the right framing here specifically because no off-the-shelf CMS ships pre-configured for your market count, your localization workflow, or your regional compliance requirements (cookie law variance, local payment methods, regional pricing display rules). The architecture has to be built around your actual expansion roadmap - a company planning three more markets next year needs a fundamentally different content model than one planning twelve.
 
-The second mandate is API-first integration between the CMS and every downstream system — DAM, translation management, marketing automation, personalization engine. Multi-market sites live or die on how cleanly content flows between systems; a CMS that requires manual re-entry of the same asset into twelve separate market instances is not a content architecture, it's a queue of manual labor with a UI on top.
+The second mandate is API-first integration between the CMS and every downstream system - DAM, translation management, marketing automation, personalization engine. Multi-market sites live or die on how cleanly content flows between systems; a CMS that requires manual re-entry of the same asset into twelve separate market instances is not a content architecture, it's a queue of manual labor with a UI on top.
 
-The third mandate is a shared component library with strict brand governance built into the system, not enforced through a style guide PDF nobody reads. Reusable, versioned UI components mean a global campaign can roll out consistent visual identity across twelve markets simultaneously, while still allowing local teams the flexibility to swap copy, imagery, and promotional content without touching code — which is the actual unlock that lets a lean central web team support unlimited market growth without headcount scaling linearly.
+The third mandate is a shared component library with strict brand governance built into the system, not enforced through a style guide PDF nobody reads. Reusable, versioned UI components mean a global campaign can roll out consistent visual identity across twelve markets simultaneously, while still allowing local teams the flexibility to swap copy, imagery, and promotional content without touching code - which is the actual unlock that lets a lean central web team support unlimited market growth without headcount scaling linearly.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -52,7 +52,7 @@ Alpenfeld Assurance, a Vienna-headquartered insurtech expanding across Central a
 Manifera re-architected the site on a headless CMS with a shared component library and market-specific content entries, integrated directly with Alpenfeld's translation-management and marketing-automation platforms. The next three markets launched in under three weeks each, entirely through content-team self-service, with the central engineering team involved only for the initial architecture and ongoing governance.
 
 > *"Market five took us three months. Markets six through eight took us three weeks each. That's the difference between an architecture problem and a resourcing problem."*
-> — **CMO, Alpenfeld Assurance**
+> - **CMO, Alpenfeld Assurance**
 
 ## Legacy Agency vs. Manifera Pod
 
@@ -66,7 +66,7 @@ Manifera re-architected the site on a headless CMS with a shared component libra
 
 ## The Economics
 
-Every quarter a market launch slips because the CMS architecture can't support it is a quarter of pipeline and revenue recognition pushed back, and for a company running a multi-market expansion roadmap, a two-quarter delay across five planned markets can represent €400,000-€700,000 in deferred revenue the board was expecting on this year's plan. The deeper cost is compounding: each additional market on a non-composable architecture adds engineering overhead rather than reducing it, meaning the fifth market costs more per-launch than the first, not less — the exact inverse of what an expansion strategy should look like. A proper composable-architecture rebuild typically costs less than the engineering overtime and agency fees burned launching just two markets the hard way. [Talk to Manifera](https://www.manifera.com/contact-us/) before your next market launch becomes another quarter-long engineering project.
+Every quarter a market launch slips because the CMS architecture can't support it is a quarter of pipeline and revenue recognition pushed back, and for a company running a multi-market expansion roadmap, a two-quarter delay across five planned markets can represent €400,000-€700,000 in deferred revenue the board was expecting on this year's plan. The deeper cost is compounding: each additional market on a non-composable architecture adds engineering overhead rather than reducing it, meaning the fifth market costs more per-launch than the first, not less - the exact inverse of what an expansion strategy should look like. A proper composable-architecture rebuild typically costs less than the engineering overtime and agency fees burned launching just two markets the hard way. [Talk to Manifera](https://www.manifera.com/contact-us/) before your next market launch becomes another quarter-long engineering project.
 
 ## Frequently Asked Questions
 

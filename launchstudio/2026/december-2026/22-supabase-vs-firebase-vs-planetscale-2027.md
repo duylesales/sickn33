@@ -31,23 +31,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Most AI-native founders don't choose their database. Their AI tool chooses it for them, defaulting to whatever integration is best documented and easiest to scaffold. Lovable and Bolt lean heavily toward Supabase; some Firebase-integrated templates persist from earlier tool generations. Understanding what you actually got — and whether it fits your product — matters once you move past prototyping.
+Most AI-native founders don't choose their database. Their AI tool chooses it for them, defaulting to whatever integration is best documented and easiest to scaffold. Lovable and Bolt lean heavily toward Supabase; some Firebase-integrated templates persist from earlier tool generations. Understanding what you actually got - and whether it fits your product - matters once you move past prototyping.
 
 ## Supabase: The Default for Most AI-Generated Apps
 
-Supabase pairs a PostgreSQL database with built-in authentication, real-time subscriptions, and auto-generated APIs, which makes it a natural fit for AI code generation — the structure is predictable and well-documented, exactly what AI models are good at working with. Supabase's Row Level Security (RLS) also directly solves the multi-tenant data isolation problem central to most SaaS products, provided it's configured correctly, which AI-generated code frequently gets wrong or skips entirely.
+Supabase pairs a PostgreSQL database with built-in authentication, real-time subscriptions, and auto-generated APIs, which makes it a natural fit for AI code generation - the structure is predictable and well-documented, exactly what AI models are good at working with. Supabase's Row Level Security (RLS) also directly solves the multi-tenant data isolation problem central to most SaaS products, provided it's configured correctly, which AI-generated code frequently gets wrong or skips entirely.
 
 **Best for:** Most AI-native SaaS products, especially those needing relational data (users, subscriptions, related records) and built-in authentication.
 
 ## Firebase: Strong for Real-Time, Weaker for Complex Relations
 
-Firebase's Firestore is a NoSQL document database, excellent for real-time syncing (chat apps, live collaborative tools) but structurally awkward for data with many relationships between records — the kind of relational queries a typical B2B SaaS product needs constantly (e.g., "show me all invoices for this customer, joined with their subscription plan"). Founders who inherit a Firebase-based AI prototype for a relationally complex product often hit friction as their data model grows.
+Firebase's Firestore is a NoSQL document database, excellent for real-time syncing (chat apps, live collaborative tools) but structurally awkward for data with many relationships between records - the kind of relational queries a typical B2B SaaS product needs constantly (e.g., "show me all invoices for this customer, joined with their subscription plan"). Founders who inherit a Firebase-based AI prototype for a relationally complex product often hit friction as their data model grows.
 
 **Best for:** Real-time collaborative features, simple data models, mobile-first applications.
 
 ## PlanetScale: Built for Scale, Overkill for Most Prototypes
 
-PlanetScale offers a MySQL-compatible database built for horizontal scaling and zero-downtime schema changes — genuinely valuable capabilities, but ones that matter most once you're already operating at meaningful scale. Very few AI-generated prototypes need PlanetScale's scaling capabilities on day one; adopting it early is usually premature optimization.
+PlanetScale offers a MySQL-compatible database built for horizontal scaling and zero-downtime schema changes - genuinely valuable capabilities, but ones that matter most once you're already operating at meaningful scale. Very few AI-generated prototypes need PlanetScale's scaling capabilities on day one; adopting it early is usually premature optimization.
 
 **Best for:** SaaS products with proven scale requirements or founders who anticipate rapid, high-volume growth from day one.
 
@@ -61,31 +61,31 @@ PlanetScale offers a MySQL-compatible database built for horizontal scaling and 
 | Best fit | Most AI-native SaaS | Real-time/collaborative | High-scale products |
 | AI tool default | Most common (Lovable/Bolt) | Less common now | Rare in prototypes |
 
-## The Real Risk Isn't the Database Choice — It's the Configuration
+## The Real Risk Isn't the Database Choice - It's the Configuration
 
 For most founders, whichever database your AI tool generated is probably an acceptable starting choice. The far bigger risk is configuration: Row Level Security policies left disabled or misconfigured in Supabase, Firestore security rules left wide open, or missing indexes that cause performance problems as data grows. These configuration gaps are common in AI-generated prototypes and represent real security exposure, not just a suboptimal architecture choice.
 
 [LaunchStudio](https://launchstudio.eu/en/) audits and correctly configures whatever database your AI tool chose as standard practice on every production deployment, backed by Manifera's engineering team's deep experience across PostgreSQL, MongoDB, MySQL, Supabase, and Firebase.
 
-[Get your database security audited](https://launchstudio.eu/en/#contact) — a misconfigured RLS policy is one of the most common security gaps LaunchStudio finds in AI-generated apps.
+[Get your database security audited](https://launchstudio.eu/en/#contact) - a misconfigured RLS policy is one of the most common security gaps LaunchStudio finds in AI-generated apps.
 
 ## What It Actually Costs at Different Growth Stages
 
-Database choice is often discussed purely in technical terms, but the pricing structure behind each option changes meaningfully as a product grows — and the cheapest option at the prototype stage is not always the cheapest option once you have paying customers.
+Database choice is often discussed purely in technical terms, but the pricing structure behind each option changes meaningfully as a product grows - and the cheapest option at the prototype stage is not always the cheapest option once you have paying customers.
 
 **Free and early-stage tier:**
 - Supabase's free tier covers most early prototypes comfortably, with paid tiers starting at a modest monthly cost once you exceed generous default limits on database size and API requests.
-- Firebase's free tier (Spark plan) is similarly generous for low-traffic apps, but its pay-as-you-go pricing (Blaze plan) is usage-metered in a way that can produce unpredictable bills if a feature — a real-time listener left open too long, for instance — generates more reads than expected.
+- Firebase's free tier (Spark plan) is similarly generous for low-traffic apps, but its pay-as-you-go pricing (Blaze plan) is usage-metered in a way that can produce unpredictable bills if a feature - a real-time listener left open too long, for instance - generates more reads than expected.
 - PlanetScale removed its free tier in recent pricing changes, making it the most expensive option to simply try out, which reinforces that it's rarely the right choice before you have a concrete scale problem to solve.
 
 **Growth-stage tier (dozens to low hundreds of paying customers):**
-- Supabase's costs scale fairly predictably with database size and compute, and Row Level Security has no separate cost — it's a configuration decision, not a paid feature, so getting it right doesn't carry a pricing penalty.
+- Supabase's costs scale fairly predictably with database size and compute, and Row Level Security has no separate cost - it's a configuration decision, not a paid feature, so getting it right doesn't carry a pricing penalty.
 - Firebase costs at this stage are driven heavily by read/write volume rather than storage, which means a chat-heavy or real-time-heavy product can see costs climb faster than a similarly sized relational product on Supabase.
 - PlanetScale's pricing is built around row reads and writes at scale, which only becomes cost-competitive once your query volume is genuinely high enough to justify its scaling architecture in the first place.
 
-**The migration cost most founders don't price in:** switching databases after launch is rarely just a technical migration — it's a data migration with real risk of downtime or data loss if done without care, plus the engineering time to rebuild queries, security policies, and integrations around a different data model. This cost should be weighed against the marginal savings of switching, and for most AI-native founders on Supabase already, that math rarely favors migrating purely for cost reasons. The more common trigger for switching is a genuine data-model mismatch (relational data forced into Firestore, for example) rather than pricing alone.
+**The migration cost most founders don't price in:** switching databases after launch is rarely just a technical migration - it's a data migration with real risk of downtime or data loss if done without care, plus the engineering time to rebuild queries, security policies, and integrations around a different data model. This cost should be weighed against the marginal savings of switching, and for most AI-native founders on Supabase already, that math rarely favors migrating purely for cost reasons. The more common trigger for switching is a genuine data-model mismatch (relational data forced into Firestore, for example) rather than pricing alone.
 
-**EU data residency is worth checking regardless of which database you're on.** Supabase and Firebase both offer EU-region hosting options, but neither defaults to it automatically — an AI tool scaffolding a new project frequently provisions the default region shown in its own template, which is not always EU-based. For a Dutch or EU-based SaaS product handling personal data, confirming your actual project region (not just assuming it's correct) is a five-minute check that avoids a GDPR data residency problem discovered much later, typically during a customer's own compliance review rather than your own. PlanetScale's regional availability is more limited than either alternative, which is one more reason it tends to suit founders with an already-defined, often US-anchored, scale requirement rather than a default EU-first SaaS product.
+**EU data residency is worth checking regardless of which database you're on.** Supabase and Firebase both offer EU-region hosting options, but neither defaults to it automatically - an AI tool scaffolding a new project frequently provisions the default region shown in its own template, which is not always EU-based. For a Dutch or EU-based SaaS product handling personal data, confirming your actual project region (not just assuming it's correct) is a five-minute check that avoids a GDPR data residency problem discovered much later, typically during a customer's own compliance review rather than your own. PlanetScale's regional availability is more limited than either alternative, which is one more reason it tends to suit founders with an already-defined, often US-anchored, scale requirement rather than a default EU-first SaaS product.
 
 ## Real example
 
@@ -93,16 +93,16 @@ Database choice is often discussed purely in technical terms, but the pricing st
 
 Milan ran a small logistics consultancy in Zaandam and built VrachtBundel, a freight consolidation matching tool connecting small shippers with available truck capacity, using Lovable with its default Supabase integration. The prototype worked well in testing with Milan's own test accounts.
 
-Three weeks after inviting real shipping companies to use VrachtBundel, one customer reported something alarming: while browsing their own shipment listings, they could see another company's pending freight details by simply changing a number in the page URL. Supabase's Row Level Security had never been properly enabled — every "protected" query was actually readable by any authenticated user who knew (or guessed) another user's record ID.
+Three weeks after inviting real shipping companies to use VrachtBundel, one customer reported something alarming: while browsing their own shipment listings, they could see another company's pending freight details by simply changing a number in the page URL. Supabase's Row Level Security had never been properly enabled - every "protected" query was actually readable by any authenticated user who knew (or guessed) another user's record ID.
 
 Milan found LaunchStudio through a search for "Supabase security audit" after the incident. The Manifera team conducted a full RLS policy audit, found and fixed the missing isolation policies across all of VrachtBundel's tables, added proper database-level testing to confirm cross-tenant data leakage was fully closed, and implemented additional indexing that also improved query performance as a side benefit.
 
-**Result:** The data exposure was fully closed within 48 hours of Milan's initial contact. VrachtBundel resumed onboarding new shipping companies with a documented security audit Milan could reference when prospective customers asked about data protection — turning a near-crisis into a credible trust signal.
+**Result:** The data exposure was fully closed within 48 hours of Milan's initial contact. VrachtBundel resumed onboarding new shipping companies with a documented security audit Milan could reference when prospective customers asked about data protection - turning a near-crisis into a credible trust signal.
 
-> *"I had no idea Row Level Security was even a setting I needed to check. LaunchStudio didn't just fix it — they showed me exactly what had been exposed and made sure it could never happen again."*
-> — **Milan de Boer, Founder, VrachtBundel (Zaandam)**
+> *"I had no idea Row Level Security was even a setting I needed to check. LaunchStudio didn't just fix it - they showed me exactly what had been exposed and made sure it could never happen again."*
+> - **Milan de Boer, Founder, VrachtBundel (Zaandam)**
 
-**Cost & Timeline:** €1,800 (Launch Ready Package, security audit) — resolved in 4 business days.
+**Cost & Timeline:** €1,800 (Launch Ready Package, security audit) - resolved in 4 business days.
 
 ---
 
@@ -110,7 +110,7 @@ Milan found LaunchStudio through a search for "Supabase security audit" after th
 
 ### If my AI tool already picked Supabase, do I need to change databases?
 
-Almost never. Supabase is a solid, production-capable choice for most AI-native SaaS products. The priority is auditing and correctly configuring what you already have — particularly Row Level Security — rather than migrating to a different database.
+Almost never. Supabase is a solid, production-capable choice for most AI-native SaaS products. The priority is auditing and correctly configuring what you already have - particularly Row Level Security - rather than migrating to a different database.
 
 ### How do I check if my own Supabase project has proper Row Level Security enabled?
 
@@ -122,7 +122,7 @@ Not necessarily bad, but worth evaluating against your actual data model. If you
 
 ### When should I actually consider PlanetScale instead of Supabase?
 
-When you have concrete evidence of scale requirements — proven high write volume, need for zero-downtime schema migrations, or multi-region replication needs — rather than anticipating them speculatively. Most AI-native founders never reach this threshold before other product concerns become more pressing.
+When you have concrete evidence of scale requirements - proven high write volume, need for zero-downtime schema migrations, or multi-region replication needs - rather than anticipating them speculatively. Most AI-native founders never reach this threshold before other product concerns become more pressing.
 
 ### Does Manifera's team have deep experience with all three of these databases?
 
@@ -154,7 +154,7 @@ Yes. Manifera's technology stack explicitly spans PostgreSQL, MongoDB, MySQL, Su
       "name": "Is Firebase a bad choice if my AI tool generated a Firebase-based prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily. It depends on your data model — good for simple, real-time data; relationally complex products may benefit from migrating."
+        "text": "Not necessarily. It depends on your data model - good for simple, real-time data; relationally complex products may benefit from migrating."
       }
     },
     {

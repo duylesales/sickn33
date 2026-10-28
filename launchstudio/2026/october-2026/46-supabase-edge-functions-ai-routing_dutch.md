@@ -25,7 +25,7 @@ Wanneer de browser van de gebruiker rechtstreeks communiceert met OpenAI, heeft 
 
 ### 2. Acute Vendor Lock-In
 
-Wanneer u directe OpenAI API-aanroepen hardcoded verspreidt over twintig verschillende frontend-componenten, vereist de overstap naar een goedkoper of slimmer model — zoals Anthropic's Claude 3.5 Sonnet of een opensource model via Groq of Together AI — een tijdrovende en uiterst foutgevoelige herschrijving van uw complete frontend-laag, met een gigantisch risico dat u vergeten aanroepen over het hoofd ziet.
+Wanneer u directe OpenAI API-aanroepen hardcoded verspreidt over twintig verschillende frontend-componenten, vereist de overstap naar een goedkoper of slimmer model - zoals Anthropic's Claude 3.5 Sonnet of een opensource model via Groq of Together AI - een tijdrovende en uiterst foutgevoelige herschrijving van uw complete frontend-laag, met een gigantisch risico dat u vergeten aanroepen over het hoofd ziet.
 
 ### 3. De AVG/GDPR Aansprakelijkheid rond Persoonsgegevens (PII)
 
@@ -49,11 +49,11 @@ Hoewel het schrijven van een basis Edge Function relatief eenvoudig is, is het b
 
 Dit is exact waarom technische founders hun backend-routering uitbesteden aan [LaunchStudio](https://launchstudio.eu/nl/).
 
-Gesteund door de senior backend-engineers van [Manifera](https://www.manifera.com/) — met teams opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad — is LaunchStudio gespecialiseerd in het bouwen van geharde LLM-routing infrastructuren. U blijft bouwen aan uw Next.js frontend; wij bouwen de veilige, atomaire Supabase Edge Functions.
+Gesteund door de senior backend-engineers van [Manifera](https://www.manifera.com/) - met teams opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad - is LaunchStudio gespecialiseerd in het bouwen van geharde LLM-routing infrastructuren. U blijft bouwen aan uw Next.js frontend; wij bouwen de veilige, atomaire Supabase Edge Functions.
 
 Wij configureren de CORS-headers, schrijven de PII-masking middleware en richten de atomaire PostgreSQL-transacties in (`SELECT ... FOR UPDATE` en database RPC functies) die garanderen dat uw facturatie onder elke piekbelasting 100% klopt. Wij transformeren uw breekbare prototype in een schaalbare enterprise SaaS-architectuur volgens dezelfde strenge normen die we toepassen bij onze [maatwerk software-ontwikkeling](https://www.manifera.com/services/custom-software-development/) voor multinationals.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Belangrijkste Inzichten
 
@@ -81,7 +81,7 @@ Wij herbouwden zijn complete routeringslaag met behulp van Supabase Edge Functio
 
 **Resultaat:** Jonas herlanceerde zijn applicatie één week later. Zijn API-sleutels waren 100% onzichtbaar. Omdat de Edge Function alle persoonsgegevens filterde, doorstond hij een zware data-privacy audit van een groot Berlijns ziekenhuisnetwerk en sloot hij een enterprise-jaarcontract van **€ 40.000**. *"LaunchStudio's Edge Function architectuur heeft mijn bedrijf gered. Zonder hun veilige tussenlaag was ik failliet en juridisch zwaar aansprakelijk geweest."*
 
-**Kosten & Tijdlijn:** €3.500 (Edge Function LLM-Routing & PII Anonimisering) — binnen 8 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €3.500 (Edge Function LLM-Routing & PII Anonimisering) - binnen 8 werkdagen live opgeleverd.
 
 ---
 

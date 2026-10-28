@@ -1,4 +1,4 @@
-🔥 Noah built a prototype using **Lovable** — noah, a startup founder, used **lovable** to build a resume parser saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Noah built a prototype using **Lovable** - noah, a startup founder, used **lovable** to build a resume parser saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Noah's application achieved production readiness: Noah handled a launch-day spike of over 8,000 document uploads without a single database timeout. (€1,900 (Launch Guard Package) — production-ready and deployed in 6 business days.). 🚀
+Noah's application achieved production readiness: Noah handled a launch-day spike of over 8,000 document uploads without a single database timeout. (€1,900 (Launch Guard Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launch-day-mistakes-shipping-mvp
 

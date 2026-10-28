@@ -34,7 +34,7 @@ It costs perhaps half a day of an engagement and it is the difference between ow
 
 **The services and accounts list.** Every provider, what it is for, which account holds it, roughly what it costs, and when it renews. This is the document that prevents a domain expiring because the reminder went to someone who left.
 
-**A decisions record.** Why the significant choices were made — the ones described in the documentation article in this series. Three sentences each, and the most valuable thing in the set.
+**A decisions record.** Why the significant choices were made - the ones described in the documentation article in this series. Three sentences each, and the most valuable thing in the set.
 
 **What was not done.** Known issues, deferred work, accepted risks, and things to watch. A supplier willing to write this is one you should keep.
 
@@ -52,7 +52,7 @@ The suppliers who resist are telling you something useful.
 
 An hour, recorded, going through the product with you: here is how it fits together, here is the part that is unusual, here is what I would watch, here is what I would do first if this happened.
 
-The recording is the valuable artefact. It captures the things that do not get written down — the hesitation before explaining something, the aside about a part that is fragile — and you can watch it again in six months when the context has faded.
+The recording is the valuable artefact. It captures the things that do not get written down - the hesitation before explaining something, the aside about a part that is fragile - and you can watch it again in six months when the context has faded.
 
 Do it before the last day, so that questions arising from it can still be answered.
 
@@ -60,13 +60,13 @@ Do it before the last day, so that questions arising from it can still be answer
 
 A handover is checkable, and checking it takes an afternoon.
 
-Follow the runbook for one scenario and see whether it works — restoring a backup is the best test, because it exercises documentation, access and the backup itself.
+Follow the runbook for one scenario and see whether it works - restoring a backup is the best test, because it exercises documentation, access and the backup itself.
 
 Set the product up from the repository on a fresh machine using only the README. Whatever you cannot do is what is missing.
 
 Check that every account in the services list is one you can access. This is where you discover that a provider account is in the supplier's name, which is a small problem now and a significant one in a year.
 
-And read the decisions record. If it is empty or generic, ask for it properly — it is the document that is hardest to reconstruct later and the one most often skipped.
+And read the decisions record. If it is empty or generic, ask for it properly - it is the document that is hardest to reconstruct later and the one most often skipped.
 
 ## Transfer What They Own
 
@@ -98,7 +98,7 @@ The framing so far assumes someone else will need this. The more immediate benef
 
 **You forget.** Four months on another priority and the details of how the payment reconciliation works are gone. The runbook you asked a supplier to write is the document you read at seven on a Sunday morning, and the alternative is reconstructing it under pressure.
 
-**You want a holiday.** A product one person can operate is a product that person cannot leave. Founders describe this as the moment the documentation stopped being a compliance exercise — the week they went away and somebody else could answer a customer's question about a failed payment because the runbook covered it.
+**You want a holiday.** A product one person can operate is a product that person cannot leave. Founders describe this as the moment the documentation stopped being a compliance exercise - the week they went away and somebody else could answer a customer's question about a failed payment because the runbook covered it.
 
 There is a third reason that matters commercially. The same set of documents is what a buyer, an investor or a larger customer's technical reviewer asks for, and having it ready turns a diligence exercise into a reading task. As the documentation article in this series notes, a product only one person can explain carries a risk that any serious counterparty identifies immediately.
 
@@ -110,17 +110,17 @@ Not every founder has a supplier to ask. A great many have built the whole produ
 
 The same five documents apply and you write them yourself, and there is a shortcut that works well for exactly this situation: an assistant reading your codebase can produce the system overview and much of the reference material in an afternoon, as the documentation article in this series describes. What it cannot produce is the decisions record and the known issues, because neither is in the code.
 
-So: generate the structural half, write the two documents that require memory, and assemble the services list from your own billing — which is the most reliable source and the one nobody thinks of.
+So: generate the structural half, write the two documents that require memory, and assemble the services list from your own billing - which is the most reliable source and the one nobody thinks of.
 
 Then test it the same way. Set the product up on a different machine from the README alone. Follow your own runbook to restore a backup. Confirm every account is in your name rather than in an email address you no longer check.
 
-An afternoon, once, and the result is the same asset a paid handover would have produced — and considerably more likely to be accurate, since you are the person who made the decisions it records.
+An afternoon, once, and the result is the same asset a paid handover would have produced - and considerably more likely to be accurate, since you are the person who made the decisions it records.
 
 ## Setting This Up
 
 For any engagement this belongs in the original scope: a system overview, a runbook covering the specific failures that occur, a services and accounts list with costs and renewals, a decisions record, and a written statement of what was not done; the repository with history, conventions file, tests and documented configuration; a recorded walkthrough held before the final day; verification by following the runbook, setting the product up from the README on a fresh machine and confirming access to every account; and a deliberate transfer of accounts, domains, two-factor and payment methods with the supplier's access removed and credentials rotated.
 
-LaunchStudio produces all of this as part of every engagement, because a product you cannot operate is not one we have finished. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
+LaunchStudio produces all of this as part of every engagement, because a product you cannot operate is not one we have finished. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
 
 [Ask us what our handover contains](https://launchstudio.eu/en/#contact) before you compare quotes on price.
 
@@ -136,20 +136,20 @@ Fourteen months later the domain expired. The registration was in the freelancer
 
 Twenty-six catering companies could not access their event schedules during a weekend in June, which is the busiest period of their year.
 
-Three business days afterwards: an inventory of every service the product uses, which found four accounts in the freelancer's name — the domain, the error tracking, the email provider and one storage account; all four transferred or recreated under her own accounts, with credentials rotated; a system overview written from the code by a second supplier; a runbook covering the eleven failures that had occurred or could plausibly occur, including domain and certificate expiry; a services list with costs, renewal dates and a calendar reminder 60 days before each; a decisions record reconstructed as far as possible, with the freelancer generously answering questions by email; a statement of known issues; and a recorded walkthrough with the second supplier.
+Three business days afterwards: an inventory of every service the product uses, which found four accounts in the freelancer's name - the domain, the error tracking, the email provider and one storage account; all four transferred or recreated under her own accounts, with credentials rotated; a system overview written from the code by a second supplier; a runbook covering the eleven failures that had occurred or could plausibly occur, including domain and certificate expiry; a services list with costs, renewal dates and a calendar reminder 60 days before each; a decisions record reconstructed as far as possible, with the freelancer generously answering questions by email; a statement of known issues; and a recorded walkthrough with the second supplier.
 
 **Result:** the reconstruction cost €3,100 and took three days, against perhaps half a day if it had been part of the original engagement. Ingrid's note is that the original work was competent and that she had no way to benefit from it independently.
 
 > *"The work was good. Fourteen months later my domain expired in someone else's account over a weekend in June, and twenty-six caterers could not see their bookings."*
-> — **Ingrid Ravenstijn, Founder, Cateringplanner (Breda)**
+> - **Ingrid Ravenstijn, Founder, Cateringplanner (Breda)**
 
-**Cost & Timeline:** €3,100 (service inventory and account transfers with credential rotation, system overview, runbook, services list with renewal reminders, reconstructed decisions record, known issues statement, recorded walkthrough) — completed in 3 business days.
+**Cost & Timeline:** €3,100 (service inventory and account transfers with credential rotation, system overview, runbook, services list with renewal reminders, reconstructed decisions record, known issues statement, recorded walkthrough) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
 ### What should a handover contain?
 
-A system overview, a runbook for specific failures, a services and accounts list with costs and renewals, a decisions record, and a written statement of what was not done — plus the repository, tests and documented configuration.
+A system overview, a runbook for specific failures, a services and accounts list with costs and renewals, a decisions record, and a written statement of what was not done - plus the repository, tests and documented configuration.
 
 ### When should I ask for it?
 
@@ -157,7 +157,7 @@ In the original agreement, as a named deliverable with final acceptance dependin
 
 ### How do I know the handover is adequate?
 
-Follow the runbook for one scenario — restoring a backup is the best test. Set the product up from the README on a fresh machine. Confirm you can access every account listed.
+Follow the runbook for one scenario - restoring a backup is the best test. Set the product up from the README on a fresh machine. Confirm you can access every account listed.
 
 ### What is the most valuable document?
 
@@ -185,7 +185,7 @@ Transferring accounts and domains into your name, moving two-factor authenticati
       "name": "When should a handover be agreed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In the original scope, as a named deliverable with acceptance depending on it — not at the end when the budget is spent."
+        "text": "In the original scope, as a named deliverable with acceptance depending on it - not at the end when the budget is spent."
       }
     },
     {
@@ -201,7 +201,7 @@ Transferring accounts and domains into your name, moving two-factor authenticati
       "name": "Which handover document matters most?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The decisions record — hardest to reconstruct and the reason a later change does not remove something load-bearing."
+        "text": "The decisions record - hardest to reconstruct and the reason a later change does not remove something load-bearing."
       }
     },
     {

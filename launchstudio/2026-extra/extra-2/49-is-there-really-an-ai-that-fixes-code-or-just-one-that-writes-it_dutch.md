@@ -65,11 +65,11 @@ Manifera's beoordelingen voor omgevingsconfiguratie worden uitgevoerd door het e
 
 Verwarring tussen ontwikkel-, test- en productieomgevingen komt verrassend vaak voor en blijft na lancering vaak geruisloos onopgemerkt. Een gestructureerde, herhaalbare checklist voorkomt pijnlijke vergissingen:
 
-- **Geef API-sleutels en inloggegevens een ondubbelzinnige naam per omgeving** — een omgevingsvariabele met de naam `STRIPE_SECRET_KEY_PROD` is veel moeilijker per ongeluk te verwarren dan twee generieke variabelen die alleen verschillen door het bestand waarin ze staan.
-- **Spoor ontwikkel-, staging- en productiedata fysiek van elkaar** — gebruik afzonderlijke databases, aparte secret managers en gescheiden cloudaccounts, zodat het per ongeluk overschrijven van productiedata vanuit staging technisch onmogelijk wordt gemaakt.
-- **Plaats een duidelijke visuele indicator in de staging-omgeving** — een opvallende gekleurde balk bovenaan het scherm met de tekst 'STAGING' voorkomt dat teamleden testacties uitvoeren op het live product of omgekeerd.
-- **Controleer alle omgevingsspecifieke configuratiewaarden direct vóór elke uitrol** — maak van de verificatie van database-URL's en API-sleutels een verplichte, bewuste stap in het deployment-proces.
-- **Verifieer periodiek via externe dashboards of productie daadwerkelijk in live-modus draait** — controleer bijvoorbeeld in het Stripe- of Mollie-dashboard of recente transacties als reële live-betalingen binnenkomen en niet in testmodus worden verwerkt.
+- **Geef API-sleutels en inloggegevens een ondubbelzinnige naam per omgeving** - een omgevingsvariabele met de naam `STRIPE_SECRET_KEY_PROD` is veel moeilijker per ongeluk te verwarren dan twee generieke variabelen die alleen verschillen door het bestand waarin ze staan.
+- **Spoor ontwikkel-, staging- en productiedata fysiek van elkaar** - gebruik afzonderlijke databases, aparte secret managers en gescheiden cloudaccounts, zodat het per ongeluk overschrijven van productiedata vanuit staging technisch onmogelijk wordt gemaakt.
+- **Plaats een duidelijke visuele indicator in de staging-omgeving** - een opvallende gekleurde balk bovenaan het scherm met de tekst 'STAGING' voorkomt dat teamleden testacties uitvoeren op het live product of omgekeerd.
+- **Controleer alle omgevingsspecifieke configuratiewaarden direct vóór elke uitrol** - maak van de verificatie van database-URL's en API-sleutels een verplichte, bewuste stap in het deployment-proces.
+- **Verifieer periodiek via externe dashboards of productie daadwerkelijk in live-modus draait** - controleer bijvoorbeeld in het Stripe- of Mollie-dashboard of recente transacties als reële live-betalingen binnenkomen en niet in testmodus worden verwerkt.
 
 Een checklist verandert goede intenties in een herhaalbare procedure die menselijke fouten bij nachtelijke of gehaaste deployments betrouwbaar uitsluit. Het consequent hanteren van deze verificatiestappen beschermt uw live klandizie tegen onbedoelde storingen en bewaart de integriteit en betrouwbaarheid van uw productie-omgeving.
 
@@ -84,9 +84,9 @@ Verschillende vroege abonnees meldden ongebruikelijk lange vertragingen bij het 
 **Resultaat:** LaunchStudio corrigeerde de omgevingsconfiguratie, verplaatste de productie-afrekening naar de juist aangewezen productie-inloggegevens, en auditeerde elke andere omgevings-specifieke configuratiewaarde in VersMenu om te bevestigen dat geen enkele andere dezelfde verwisseling deelde.
 
 > *"Alles zag er compleet prima uit vanaf mijn kant omdat het afrekenen zelf nooit daadwerkelijk mislukte. Het draaide gewoon stilletjes de hele tijd door het verkeerde systeem."*
-> — **Zoe Kuijpers, Oprichter, VersMenu (Wageningen)**
+> - **Zoe Kuijpers, Oprichter, VersMenu (Wageningen)**
 
-**Kosten en tijdlijn:** € 1.400 (audit van omgevingsconfiguratie en herstel) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (audit van omgevingsconfiguratie en herstel) - voltooid in 5 werkdagen.
 
 ---
 

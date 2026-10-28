@@ -1,4 +1,4 @@
-💼 Bram Visser runt een klein ontwikkelbureau in Laren. In het afgelopen jaar zag hij klanten freelancers inhuren die Cursor gebruikten en een fractie offreerden van wat zijn bureau rekende voor dezelfde scope — en de output oogde afgewerkt, niet alleen goedkoop. Zijn oude pitch, "wij doen dit goed," landde niet meer. 😳
+💼 Bram Visser runt een klein ontwikkelbureau in Laren. In het afgelopen jaar zag hij klanten freelancers inhuren die Cursor gebruikten en een fractie offreerden van wat zijn bureau rekende voor dezelfde scope - en de output oogde afgewerkt, niet alleen goedkoop. Zijn oude pitch, "wij doen dit goed," landde niet meer. 😳
 
 🧠 De bouwfase is een grondstof geworden. De productiefase niet.
 
@@ -7,7 +7,7 @@
 ❌ Freelancerprijzen evenaren onder het oude uurtariefmodel betekende met verlies werken
 ❌ "Wij doen dit goed" landt niet als "goed" er identiek uitziet aan "snel" op het moment van verkoop
 
-✅ Stop met concurreren op snelheid — die strijd is al verloren aan de tools
+✅ Stop met concurreren op snelheid - die strijd is al verloren aan de tools
 ✅ Herpositioneer rond de laag die AI-tools niet betrouwbaar goed krijgen: beveiliging, gegevensverwerking, deployment
 ✅ Routeer die laag via een gespecialiseerde white-label-partner onder uw eigen merk
 

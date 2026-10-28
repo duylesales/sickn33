@@ -86,27 +86,27 @@ Do not let your team fragment (some using Copilot, some using Cursor, some pasti
 
 ## The Next Frontier: Agentic Coding vs. Autocomplete
 
-Most of the metrics above describe "autocomplete-era" tools — Copilot, early Cursor — where the AI suggests a line or a function and a human accepts or rejects it. By 2026, a second category has matured: **agentic coding tools** (Claude Code, GitHub Copilot Workspace, autonomous variants of Cursor and Devin-style agents) that don't just suggest code, they execute multi-step tasks: reading a ticket, editing across dozens of files, running the test suite, fixing the failures themselves, and opening a pull request. This is a categorically different productivity mechanism, and it requires a different governance model.
+Most of the metrics above describe "autocomplete-era" tools - Copilot, early Cursor - where the AI suggests a line or a function and a human accepts or rejects it. By 2026, a second category has matured: **agentic coding tools** (Claude Code, GitHub Copilot Workspace, autonomous variants of Cursor and Devin-style agents) that don't just suggest code, they execute multi-step tasks: reading a ticket, editing across dozens of files, running the test suite, fixing the failures themselves, and opening a pull request. This is a categorically different productivity mechanism, and it requires a different governance model.
 
 **A four-level maturity model for evaluating AI tooling:**
 
-- **Level 0 — Autocomplete:** Line-by-line suggestions inside the editor. Near-zero risk; the developer reviews every keystroke.
-- **Level 1 — Chat/Explain:** Developer pastes code or a question into a chat interface and manually applies the answer. Still a human-in-the-loop for every change.
-- **Level 2 — Agentic multi-file execution:** The tool is given a task ("add pagination to this endpoint and update its tests") and autonomously edits multiple files, runs commands, and reports back a diff for review. The human reviews the *outcome*, not each keystroke.
-- **Level 3 — Autonomous PR-to-merge:** The agent opens the PR, CI runs automatically, and — for narrowly scoped, low-risk changes (dependency bumps, lint fixes, generated test scaffolding) — it can merge without a human clicking "approve" on every line.
+- **Level 0 - Autocomplete:** Line-by-line suggestions inside the editor. Near-zero risk; the developer reviews every keystroke.
+- **Level 1 - Chat/Explain:** Developer pastes code or a question into a chat interface and manually applies the answer. Still a human-in-the-loop for every change.
+- **Level 2 - Agentic multi-file execution:** The tool is given a task ("add pagination to this endpoint and update its tests") and autonomously edits multiple files, runs commands, and reports back a diff for review. The human reviews the *outcome*, not each keystroke.
+- **Level 3 - Autonomous PR-to-merge:** The agent opens the PR, CI runs automatically, and - for narrowly scoped, low-risk changes (dependency bumps, lint fixes, generated test scaffolding) - it can merge without a human clicking "approve" on every line.
 
 **Why this matters for CTOs:** velocity gains compound sharply between Level 1 and Level 2 (the developer stops being the bottleneck for mechanical multi-file changes), but so does blast radius if governance doesn't scale with it. Before granting a team access to Level 2 or above, Manifera requires four guardrails to be in place:
 
-1. **Sandboxed execution** — the agent runs in an isolated branch/container, never with direct write access to `main` or production infrastructure.
-2. **Scoped permissions** — the agent's task definition explicitly excludes authentication, payment, and data-migration code paths unless a senior engineer is directly supervising the session.
-3. **Mandatory human merge gate** for anything touching business logic — only narrowly-scoped mechanical changes (Level 3) are eligible for auto-merge.
-4. **Full audit trail** — every agent-authored commit is tagged and attributable, so code review and incident post-mortems can distinguish AI-authored changes from human-authored ones.
+1. **Sandboxed execution** - the agent runs in an isolated branch/container, never with direct write access to `main` or production infrastructure.
+2. **Scoped permissions** - the agent's task definition explicitly excludes authentication, payment, and data-migration code paths unless a senior engineer is directly supervising the session.
+3. **Mandatory human merge gate** for anything touching business logic - only narrowly-scoped mechanical changes (Level 3) are eligible for auto-merge.
+4. **Full audit trail** - every agent-authored commit is tagged and attributable, so code review and incident post-mortems can distinguish AI-authored changes from human-authored ones.
 
-Teams that skip straight to Level 2/3 without these guardrails see the same "Illusion of Competence" failure mode described above, just at a larger blast radius — an autonomous agent can introduce a subtle bug across 40 files in the time it used to take a junior developer to introduce one in a single file.
+Teams that skip straight to Level 2/3 without these guardrails see the same "Illusion of Competence" failure mode described above, just at a larger blast radius - an autonomous agent can introduce a subtle bug across 40 files in the time it used to take a junior developer to introduce one in a single file.
 
 At Manifera, AI-assisted development is mandatory across our [offshore development teams](https://www.manifera.com/services/offshore-software-development/). We leverage enterprise AI tools to accelerate boilerplate and testing, while relying on the deep architectural expertise of our senior engineers to review, refine, and integrate. This approach delivers software faster without compromising on long-term maintainability.
 
-Accelerate your engineering velocity safely — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Accelerate your engineering velocity safely - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -130,14 +130,14 @@ Not completely, but it is a game-changer. AI cannot safely click a button to ref
 
 ### What metrics should we use to measure the ROI of AI coding tools? (Scenario: VP of Engineering justifying license costs)
 
-Do not measure "Lines of Code Written"—AI inflates this dangerously. Measure workflow metrics: 
+Do not measure "Lines of Code Written" - AI inflates this dangerously. Measure workflow metrics: 
 1. **Pull Request Lead Time:** Has the time from first commit to merged PR decreased?
 2. **Test Coverage %:** Has AI helped the team increase coverage without slowing feature delivery?
 3. **Change Failure Rate:** Is the code generated by AI causing more production rollbacks? (This should remain flat or decrease).
 
 ### Should we let AI agents autonomously merge code without human review? (Scenario: CTO deciding how much autonomy to grant an agentic coding tool)
 
-Only for narrowly scoped, low-risk changes — dependency version bumps, lint/formatting fixes, or generated test scaffolding. Anything touching business logic, authentication, payments, or data migrations should always pass through a mandatory human merge gate. Before granting any team access to agentic (multi-file, task-executing) tools, require four guardrails: sandboxed execution with no direct write access to production or `main`, explicitly scoped permissions that exclude sensitive code paths, a human approval gate for business-logic changes, and a full audit trail tagging every AI-authored commit for review and incident post-mortems.
+Only for narrowly scoped, low-risk changes - dependency version bumps, lint/formatting fixes, or generated test scaffolding. Anything touching business logic, authentication, payments, or data migrations should always pass through a mandatory human merge gate. Before granting any team access to agentic (multi-file, task-executing) tools, require four guardrails: sandboxed execution with no direct write access to production or `main`, explicitly scoped permissions that exclude sensitive code paths, a human approval gate for business-logic changes, and a full audit trail tagging every AI-authored commit for review and incident post-mortems.
 
 <script type="application/ld+json">
 {

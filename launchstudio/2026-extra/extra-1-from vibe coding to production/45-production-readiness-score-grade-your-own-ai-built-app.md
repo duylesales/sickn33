@@ -31,11 +31,11 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-"Do you feel ready to launch?" is a genuinely unreliable question to ask yourself, since confidence and actual readiness are only loosely correlated — a founder can feel confident because they've tested extensively within their own usage patterns, exactly the blind spot covered throughout this series. A structured score, based on specific, verifiable checks rather than a feeling, provides a considerably more honest answer.
+"Do you feel ready to launch?" is a genuinely unreliable question to ask yourself, since confidence and actual readiness are only loosely correlated - a founder can feel confident because they've tested extensively within their own usage patterns, exactly the blind spot covered throughout this series. A structured score, based on specific, verifiable checks rather than a feeling, provides a considerably more honest answer.
 
 ## How to Score Each Category
 
-For each of the seven categories below, score your app 0, 1, or 2: **0** if the item hasn't been checked or verified at all; **1** if it's been partially addressed or checked informally; **2** if it's been specifically, concretely verified using the exact tests described throughout this series — not assumed, not "probably fine," but actually tested and confirmed.
+For each of the seven categories below, score your app 0, 1, or 2: **0** if the item hasn't been checked or verified at all; **1** if it's been partially addressed or checked informally; **2** if it's been specifically, concretely verified using the exact tests described throughout this series - not assumed, not "probably fine," but actually tested and confirmed.
 
 ## Category 1: Secrets (0-2)
 
@@ -43,7 +43,7 @@ Score 2 only if you've run a full git history scan (not just checked current fil
 
 ## Category 2: Authentication and Authorization (0-2)
 
-Score 2 only if you've tested directly against your API — using a valid but insufficiently-privileged account to attempt an unauthorized action — and confirmed it's properly rejected. Score 1 if your login screen works correctly but you haven't tested API-level enforcement directly. Score 0 if you haven't considered the frontend-versus-backend distinction at all.
+Score 2 only if you've tested directly against your API - using a valid but insufficiently-privileged account to attempt an unauthorized action - and confirmed it's properly rejected. Score 1 if your login screen works correctly but you haven't tested API-level enforcement directly. Score 0 if you haven't considered the frontend-versus-backend distinction at all.
 
 ## Category 3: Error Handling (0-2)
 
@@ -67,31 +67,31 @@ Score 2 only if you've confirmed a failing test or lint violation actually block
 
 ## Interpreting Your Total Score (Out of 14)
 
-**11-14:** Genuinely strong coverage across the core categories — remaining work is likely refinement rather than fundamental gaps.
+**11-14:** Genuinely strong coverage across the core categories - remaining work is likely refinement rather than fundamental gaps.
 
 **6-10:** Meaningful gaps exist in at least a few categories, warranting focused attention before or shortly after launch, prioritized by the tiered risk approach covered elsewhere in this series.
 
-**0-5:** Significant gaps across multiple foundational categories — the kind of situation where a comprehensive review, not just self-scoring, is the appropriate next step given how many categories likely need attention.
+**0-5:** Significant gaps across multiple foundational categories - the kind of situation where a comprehensive review, not just self-scoring, is the appropriate next step given how many categories likely need attention.
 
 ## Why This Scoring Method Specifically Avoids Self-Deception
 
-The scoring criteria are deliberately binary and evidence-based — you either ran the specific test described or you didn't — which is designed to resist the self-review optimism covered throughout this series. A founder tempted to score generously on a vague "have I thought about this" basis is structurally prevented from doing so by the requirement that each 2 specifically corresponds to a described, executed verification, not a general impression.
+The scoring criteria are deliberately binary and evidence-based - you either ran the specific test described or you didn't - which is designed to resist the self-review optimism covered throughout this series. A founder tempted to score generously on a vague "have I thought about this" basis is structurally prevented from doing so by the requirement that each 2 specifically corresponds to a described, executed verification, not a general impression.
 
 ## Turning Your Score Into an Action Plan: Which Gaps to Close First
 
 A raw total score tells you roughly how much work remains, but it's the category-level breakdown, not the total, that should actually drive what you work on first. A practical way to sequence remediation once you've scored honestly:
 
-**Treat any category scoring 0 as an immediate priority, regardless of total.** A single 0 in authentication or secrets, even sitting alongside strong 2s everywhere else, represents a genuinely untested, unknown-risk area — and the categories in this framework aren't equally weighted in real-world consequence, meaning a strong total score with one 0 buried in it can be more dangerous than a mediocre total score with no 0s at all.
+**Treat any category scoring 0 as an immediate priority, regardless of total.** A single 0 in authentication or secrets, even sitting alongside strong 2s everywhere else, represents a genuinely untested, unknown-risk area - and the categories in this framework aren't equally weighted in real-world consequence, meaning a strong total score with one 0 buried in it can be more dangerous than a mediocre total score with no 0s at all.
 
-**Among categories scoring 1, prioritize by consequence, not by ease of fixing.** A 1 in authentication (login works, API-level enforcement untested) is a higher-priority gap to close than a 1 in observability (monitoring exists, alerting untested), even if the observability fix happens to be quicker — this mirrors the tiered-risk prioritization covered elsewhere in this series.
+**Among categories scoring 1, prioritize by consequence, not by ease of fixing.** A 1 in authentication (login works, API-level enforcement untested) is a higher-priority gap to close than a 1 in observability (monitoring exists, alerting untested), even if the observability fix happens to be quicker - this mirrors the tiered-risk prioritization covered elsewhere in this series.
 
-**Don't let a strong total score create false confidence about untested categories.** A founder scoring 12 out of 14 can still have a single, serious, unaddressed 0 sitting in the mix — the total is a useful summary statistic, but the category-level detail is what actually determines whether you're safe to launch or grow, exactly the distinction Ruben's case below illustrates directly.
+**Don't let a strong total score create false confidence about untested categories.** A founder scoring 12 out of 14 can still have a single, serious, unaddressed 0 sitting in the mix - the total is a useful summary statistic, but the category-level detail is what actually determines whether you're safe to launch or grow, exactly the distinction Ruben's case below illustrates directly.
 
-**Re-score after each fix, not just once at the end.** Closing a category from a 1 to a verified 2 means re-running the specific described test, not simply assuming the fix worked — the same evidence-based discipline that made the original score meaningful applies equally to confirming a remediation actually closed the gap.
+**Re-score after each fix, not just once at the end.** Closing a category from a 1 to a verified 2 means re-running the specific described test, not simply assuming the fix worked - the same evidence-based discipline that made the original score meaningful applies equally to confirming a remediation actually closed the gap.
 
 [LaunchStudio](https://launchstudio.eu/en/) can verify or produce this exact score for your specific app, providing the concrete tests behind each category rather than requiring you to self-administer them, backed by Manifera's engineering discipline across 160+ delivered projects scored and hardened using this same underlying framework.
 
-[Get your app scored professionally against this exact framework](https://launchstudio.eu/en/#calculator) — a self-score is a useful starting point; a verified one is a reliable decision basis.
+[Get your app scored professionally against this exact framework](https://launchstudio.eu/en/#calculator) - a self-score is a useful starting point; a verified one is a reliable decision basis.
 
 ## Real example
 
@@ -99,14 +99,14 @@ A raw total score tells you roughly how much work remains, but it's the category
 
 Ruben, a former IT support technician turned founder in Hoofddorp, built HelpdeskAI, an AI tool automating first-line IT support ticket triage and resolution suggestions for small businesses, using Cursor, and had felt generally confident about his launch readiness based on months of active development and testing.
 
-Applying this exact scoring framework honestly to his own app, Ruben scored strongly on categories 3, 4, and 7 (error handling, testing, CI), reflecting his genuine technical background and deliberate effort in those areas, but was forced to score category 2 (authentication) at a 1 rather than a 2, since he'd confirmed his login screen worked correctly but had never specifically tested his API directly with an unauthorized request — precisely the distinction this series repeatedly emphasizes.
+Applying this exact scoring framework honestly to his own app, Ruben scored strongly on categories 3, 4, and 7 (error handling, testing, CI), reflecting his genuine technical background and deliberate effort in those areas, but was forced to score category 2 (authentication) at a 1 rather than a 2, since he'd confirmed his login screen worked correctly but had never specifically tested his API directly with an unauthorized request - precisely the distinction this series repeatedly emphasizes.
 
 **Result:** Prompted specifically by the honest scoring exercise rather than a vague sense of uncertainty, Ruben ran the specific API-level test himself and discovered exactly the gap the framework was designed to surface: a support technician account could access another company's ticket data by modifying a request directly, since role verification was client-supplied rather than server-verified. He brought this specific finding to LaunchStudio for remediation.
 
 > *"I would have told you I was basically ready before doing this scoring exercise honestly. Forcing myself to answer 'did I actually run this specific test' instead of 'do I feel good about this' is what made me realize I'd never actually checked the one thing that turned out to be broken."*
-> — **Ruben Aarsen, Founder, HelpdeskAI (Hoofddorp)**
+> - **Ruben Aarsen, Founder, HelpdeskAI (Hoofddorp)**
 
-**Cost & Timeline:** €1,300 (targeted authorization remediation following self-identified gap) — completed in 4 business days.
+**Cost & Timeline:** €1,300 (targeted authorization remediation following self-identified gap) - completed in 4 business days.
 
 ---
 
@@ -114,7 +114,7 @@ Applying this exact scoring framework honestly to his own app, Ruben scored stro
 
 ### Is this self-scoring framework a substitute for a professional audit, or a complement to one?
 
-A useful complement and starting point, particularly for technical founders, but not a full substitute — as Ruben's case shows, honest self-scoring can surface exactly where to focus, though executing the actual fix and confirming it's genuinely resolved often still benefits from the kind of dedicated review covered throughout this series.
+A useful complement and starting point, particularly for technical founders, but not a full substitute - as Ruben's case shows, honest self-scoring can surface exactly where to focus, though executing the actual fix and confirming it's genuinely resolved often still benefits from the kind of dedicated review covered throughout this series.
 
 ### What should I do if I'm not technical enough to actually run some of these specific tests myself?
 
@@ -122,15 +122,15 @@ The scoring framework itself is designed for technical founders capable of execu
 
 ### Is a score of 11-14 a guarantee that my app has no remaining production risks?
 
-No single score guarantees zero risk — this framework covers the core categories consistently recurring across AI-generated codebases specifically, but product-specific considerations outside this general framework (as covered in this series' e-commerce and education-specific guidance) may still warrant additional, category-specific attention.
+No single score guarantees zero risk - this framework covers the core categories consistently recurring across AI-generated codebases specifically, but product-specific considerations outside this general framework (as covered in this series' e-commerce and education-specific guidance) may still warrant additional, category-specific attention.
 
 ### How often should I re-run this scoring exercise as my app continues to change?
 
-Periodically, particularly after significant feature additions or before any notable growth milestone, similar to the year-end audit cadence covered in broader production-readiness guidance — a score that was accurate six months ago doesn't necessarily reflect your current codebase after ongoing changes.
+Periodically, particularly after significant feature additions or before any notable growth milestone, similar to the year-end audit cadence covered in broader production-readiness guidance - a score that was accurate six months ago doesn't necessarily reflect your current codebase after ongoing changes.
 
 ### Can this scoring framework be applied to an app that's already live, or is it only useful pre-launch?
 
-Equally useful for a live app — the categories and verification methods don't change based on launch status, and an honest score for an already-live product simply indicates where to prioritize remediation with somewhat higher urgency given existing user exposure.
+Equally useful for a live app - the categories and verification methods don't change based on launch status, and an honest score for an already-live product simply indicates where to prioritize remediation with somewhat higher urgency given existing user exposure.
 
 <script type="application/ld+json">
 {
@@ -142,7 +142,7 @@ Equally useful for a live app — the categories and verification methods don't 
       "name": "Is this self-scoring framework a substitute for a professional audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A useful complement and starting point, but not a full substitute — executing fixes and confirming resolution often still benefits from dedicated review."
+        "text": "A useful complement and starting point, but not a full substitute - executing fixes and confirming resolution often still benefits from dedicated review."
       }
     },
     {
@@ -158,7 +158,7 @@ Equally useful for a live app — the categories and verification methods don't 
       "name": "Is a high score a guarantee of no remaining production risks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No single score guarantees zero risk — product-specific considerations outside this general framework may still warrant additional attention."
+        "text": "No single score guarantees zero risk - product-specific considerations outside this general framework may still warrant additional attention."
       }
     },
     {

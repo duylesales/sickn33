@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Ask a founder how long their product keeps data and the answer is usually a pause. Not because the policy is complicated, but because there is no policy — everything is kept, indefinitely, because deletion was never built and nobody chose otherwise.
+Ask a founder how long their product keeps data and the answer is usually a pause. Not because the policy is complicated, but because there is no policy - everything is kept, indefinitely, because deletion was never built and nobody chose otherwise.
 
 Keeping everything feels safe. It is not. Data you hold is data you must secure, disclose, export, produce on request and account for in a breach. Every additional year of records is more surface for the same product.
 
@@ -30,17 +30,17 @@ The argument for retention limits is not primarily legal. It is that a smaller p
 
 Keep personal data only as long as necessary for the purpose it was collected for. Necessary is defined by that purpose, not by convenience and not by the possibility that it might be interesting later.
 
-Two things follow. There must be a period per category rather than one rule for the whole product, because an invoice and a support chat transcript have genuinely different lifespans. And the period must be enforced, not merely documented — a policy stating twelve months on a database holding three years is a statement contradicted by your own data.
+Two things follow. There must be a period per category rather than one rule for the whole product, because an invoice and a support chat transcript have genuinely different lifespans. And the period must be enforced, not merely documented - a policy stating twelve months on a database holding three years is a statement contradicted by your own data.
 
 ## Periods That Are Defensible
 
 For a typical Dutch B2B product, the shape usually looks like this.
 
-**Invoices and financial records: seven years.** Dutch tax law requires it, and this obligation overrides a deletion request — a customer asking to be forgotten does not remove your duty to retain their invoices.
+**Invoices and financial records: seven years.** Dutch tax law requires it, and this obligation overrides a deletion request - a customer asking to be forgotten does not remove your duty to retain their invoices.
 
 **Customer account and contract data:** for the life of the relationship plus a period afterwards for claims and queries, commonly two years.
 
-**Operational records** — appointments, orders, work performed — as long as the customer needs them, which for a business product is usually their decision as controller rather than yours. State a default and let them specify.
+**Operational records** - appointments, orders, work performed - as long as the customer needs them, which for a business product is usually their decision as controller rather than yours. State a default and let them specify.
 
 **Support correspondence:** one to two years.
 
@@ -56,7 +56,7 @@ These are starting points rather than rules. What matters is that each is a deci
 
 The objection to retention limits is usually about statistics: deleting three years of bookings destroys the ability to say anything about trends.
 
-Anonymisation resolves it. Strip the identifying fields and keep the rest — the appointment happened on this date, in this category, at this duration, with the name, contact details and notes removed. The record stops being personal data and stops carrying obligations, while remaining useful for the counting you actually do.
+Anonymisation resolves it. Strip the identifying fields and keep the rest - the appointment happened on this date, in this category, at this duration, with the name, contact details and notes removed. The record stops being personal data and stops carrying obligations, while remaining useful for the counting you actually do.
 
 The standard is genuine irreversibility. Replacing a name with a reference that maps back to it in another table is pseudonymisation, which is a good security measure and still personal data. If you can re-identify someone, so can anyone with the same access.
 
@@ -68,7 +68,7 @@ A retention policy that depends on someone remembering is a retention policy tha
 
 The implementation is a scheduled job running daily or weekly, applying each rule to its category, deleting or anonymising as decided, and recording what it did. The record matters: knowing that 1,400 records were anonymised last month is how you demonstrate the policy operates.
 
-Three practical requirements. Run it in batches so it does not lock tables. Give it a dry-run mode, and use that mode first — the first real run of a deletion job is the moment to discover that a rule was more aggressive than intended. And exclude anything under a legal hold, because a dispute or an investigation suspends ordinary retention.
+Three practical requirements. Run it in batches so it does not lock tables. Give it a dry-run mode, and use that mode first - the first real run of a deletion job is the moment to discover that a rule was more aggressive than intended. And exclude anything under a legal hold, because a dispute or an investigation suspends ordinary retention.
 
 Alert if the job does not run. A deletion job that silently stops is invisible for exactly as long as a backup that silently stops.
 
@@ -84,7 +84,7 @@ Your business customers need more. Their processing agreement will specify delet
 
 A complete deletion touches more than the database, and this is where implementations fall short.
 
-Uploaded files in object storage. Cached copies and derivatives such as thumbnails. Search indexes, which hold a copy of the content. Exports generated previously and still sitting in a bucket. Third-party services holding a copy — an email provider's sending history, a support tool's tickets, an analytics service's events. And backups, which retain everything until they age out.
+Uploaded files in object storage. Cached copies and derivatives such as thumbnails. Search indexes, which hold a copy of the content. Exports generated previously and still sitting in a bucket. Third-party services holding a copy - an email provider's sending history, a support tool's tickets, an analytics service's events. And backups, which retain everything until they age out.
 
 Write the deletion procedure as a list covering every one of those, and state the backup position explicitly: data remains in backups for the retention period and will not be restored into production without re-applying the deletion. That is an accepted position, and it is far better than silence.
 
@@ -94,9 +94,9 @@ For a business product this question arrives early and the answer shapes the who
 
 Your customer is the controller. It is their decision how long their clients' records are kept, because it depends on their profession, their own obligations and their contracts. A physiotherapy practice has a statutory retention period for patient files; a marketing agency does not.
 
-So the design that works is a default with a per-customer override, bounded by a maximum you are willing to hold. The default covers the customers who have never thought about it — most of them — and the override serves the ones with a specific obligation. The maximum protects you from a customer who would keep everything forever inside your product.
+So the design that works is a default with a per-customer override, bounded by a maximum you are willing to hold. The default covers the customers who have never thought about it - most of them - and the override serves the ones with a specific obligation. The maximum protects you from a customer who would keep everything forever inside your product.
 
-Two implementation details matter. The retention setting belongs in your product's interface, visible and changeable by the customer, not in a configuration file you edit on request. And changing it should apply prospectively without silently deleting what a shorter new period would have removed — a customer who reduces their retention from five years to two should be told what that will delete and asked to confirm.
+Two implementation details matter. The retention setting belongs in your product's interface, visible and changeable by the customer, not in a configuration file you edit on request. And changing it should apply prospectively without silently deleting what a shorter new period would have removed - a customer who reduces their retention from five years to two should be told what that will delete and asked to confirm.
 
 State the default and the maximum in your terms, so a customer who needs eleven years knows before signing that your product is not where those records should live.
 
@@ -108,7 +108,7 @@ Four things make that moment ordinary rather than alarming.
 
 **Run the dry run more than once**, a week apart, and compare. A rule that selects a wildly different number on the second pass is a rule with a bug in its date arithmetic, which is the most common defect in retention jobs.
 
-**Check a sample by hand.** Take twenty records the job intends to remove and confirm each one genuinely should go. Boundary cases — a record updated recently but created long ago, one belonging to a customer who left last week — are where the surprises are.
+**Check a sample by hand.** Take twenty records the job intends to remove and confirm each one genuinely should go. Boundary cases - a record updated recently but created long ago, one belonging to a customer who left last week - are where the surprises are.
 
 **Take a backup immediately before**, and keep it for its full retention period. This is not a contradiction of the policy; it is the ordinary safety net for a large irreversible operation.
 
@@ -120,7 +120,7 @@ After the first run the job becomes routine and removes a small number of record
 
 For an existing product this is typically one to two days: every category of data listed with a retention period and a reason, legal obligations such as the seven-year financial retention identified, anonymisation designed where statistics must survive, a scheduled enforcement job with batching, dry-run mode, legal hold exclusion and a record of what it did, alerting if it does not run, deletion extended beyond the database to files, caches, indexes, prior exports and third-party services, a documented backup position, per-customer deletion with confirmation for contract termination, and retention stated plainly in the privacy policy.
 
-LaunchStudio builds retention as part of compliance work for products selling to businesses, where it is frequently the clause that makes a contract signable. Behind it is Manifera — eleven years, clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
+LaunchStudio builds retention as part of compliance work for products selling to businesses, where it is frequently the clause that makes a contract signable. Behind it is Manifera - eleven years, clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
 [Ask us how much data your product is holding that nobody needs](https://launchstudio.eu/en/#contact).
 
@@ -134,14 +134,14 @@ Four years of operation, no deletion of anything. The database held every delive
 
 Two things forced the issue in the same month. A recipient submitted an access request, and answering it required searching four years of records across three systems, which took two days. And a courier company terminated and invoked their deletion clause, which Xander had no way to satisfy for one company's data without touching everyone else's.
 
-Five business days: retention decided per category with reasons written down — delivery records and proof of delivery retained 24 months by default with each courier company able to specify a longer period within limits, signature images 12 months, delivery photos 12 months, financial records seven years, support correspondence 18 months, technical logs 60 days; anonymisation designed for delivery records past their period, keeping date, postcode area, category and duration while removing names, full addresses, phone numbers and notes, so the route analytics his customers value survived; a scheduled weekly job with batching, a dry-run mode used for the first three runs, legal hold exclusion and a record of each execution; alerting if it does not run; deletion extended to object storage, thumbnails, the search index and previously generated exports, none of which had been considered; a documented backup position with retention reduced from indefinite to 60 days; per-company deletion producing a confirmation certificate; an access request function that assembles a recipient's records in minutes; and the privacy policy rewritten to state the periods.
+Five business days: retention decided per category with reasons written down - delivery records and proof of delivery retained 24 months by default with each courier company able to specify a longer period within limits, signature images 12 months, delivery photos 12 months, financial records seven years, support correspondence 18 months, technical logs 60 days; anonymisation designed for delivery records past their period, keeping date, postcode area, category and duration while removing names, full addresses, phone numbers and notes, so the route analytics his customers value survived; a scheduled weekly job with batching, a dry-run mode used for the first three runs, legal hold exclusion and a record of each execution; alerting if it does not run; deletion extended to object storage, thumbnails, the search index and previously generated exports, none of which had been considered; a documented backup position with retention reduced from indefinite to 60 days; per-company deletion producing a confirmation certificate; an access request function that assembles a recipient's records in minutes; and the privacy policy rewritten to state the periods.
 
 **Result:** the first full run anonymised 1.1 million delivery records and removed 640 GB of signature and photo files, cutting storage costs by €190 a month. The terminating company received a certificate within the contractual window. The access request that had taken two days now takes four minutes, and Xander notes that his customers' route analytics were unaffected because the fields that mattered were never the personal ones.
 
 > *"I kept everything because deleting felt risky. It turned out that holding four years of people's home addresses and signatures was the risk, and I had chosen it by never making a choice."*
-> — **Xander Lubbers, Founder, Bezorgdienst (Tilburg)**
+> - **Xander Lubbers, Founder, Bezorgdienst (Tilburg)**
 
-**Cost & Timeline:** €3,700 (retention policy per category, anonymisation design preserving analytics, scheduled enforcement with dry run and legal holds, deletion across storage, caches, index and exports, backup retention, per-customer deletion with certificates, access request tooling, policy rewrite) — completed in 5 business days.
+**Cost & Timeline:** €3,700 (retention policy per category, anonymisation design preserving analytics, scheduled enforcement with dry run and legal holds, deletion across storage, caches, index and exports, backup retention, per-customer deletion with certificates, access request tooling, policy rewrite) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -151,7 +151,7 @@ It is a decision with costs: more to secure, disclose, export and account for in
 
 ### What about invoices when someone asks to be forgotten?
 
-Dutch financial record obligations — seven years — override an erasure request for those records. Delete what you can, retain what you must, and explain which is which.
+Dutch financial record obligations - seven years - override an erasure request for those records. Delete what you can, retain what you must, and explain which is which.
 
 ### How do I keep statistics if I delete the data?
 
@@ -191,7 +191,7 @@ A scheduled job with batching, a dry-run mode, legal hold exclusion, a record of
       "name": "How can I keep analytics if data is deleted?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anonymise irreversibly — keep dates and categories, remove names, contact details and free text. The result is no longer personal data."
+        "text": "Anonymise irreversibly - keep dates and categories, remove names, contact details and free text. The result is no longer personal data."
       }
     },
     {

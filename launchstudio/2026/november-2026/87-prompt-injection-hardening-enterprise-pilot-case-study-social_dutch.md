@@ -1,4 +1,4 @@
-🎯 Felix bouwde Deskline, een AI-copilot voor klantenservice, met **Lovable** — drie dagen in een betaalde enterprise-pilot diende het beveiligingsteam van de klant een supportticket in dat de AI tegen zichzelf keerde. 🧠
+🎯 Felix bouwde Deskline, een AI-copilot voor klantenservice, met **Lovable** - drie dagen in een betaalde enterprise-pilot diende het beveiligingsteam van de klant een supportticket in dat de AI tegen zichzelf keerde. 🧠
 
 Als uw door een LLM aangedreven product geen scheiding heeft tussen systeeminstructies en gebruikersinhoud, geen outputfiltering, en een kennisbank die niet per tenant is afgebakend, is prompt injection het eerste dat een enterprise-beveiligingsteam vindt.
 
@@ -12,7 +12,7 @@ Als uw door een LLM aangedreven product geen scheiding heeft tussen systeeminstr
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Het beveiligingsteam van de verzekeraar hertestte de originele aanval plus vier nieuwe varianten — alle vijf werden geblokkeerd — en hervatte de pilot. (€6.100 (Enterprise Hardening Pakket) — pilotklaar in 15 werkdagen.) 🚀
+Het beveiligingsteam van de verzekeraar hertestte de originele aanval plus vier nieuwe varianten - alle vijf werden geblokkeerd - en hervatte de pilot. (€6.100 (Enterprise Hardening Pakket) - pilotklaar in 15 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/prompt-injection-hardening-enterprise-pilot-case-study
 

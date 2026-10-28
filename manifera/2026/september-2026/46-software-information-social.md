@@ -1,6 +1,6 @@
 🗄️ **The UI can be rewritten in a week. The business logic can be refactored in a month. But the Database Schema is forever.**
 
-An MVP launches with a terrible **software information** architecture. The junior developer used a "flat" database schema—jamming Customer Info, Product Info, and Order Info into a single massive 50-column table. 
+An MVP launches with a terrible **software information** architecture. The junior developer used a "flat" database schema - jamming Customer Info, Product Info, and Order Info into a single massive 50-column table. 
 
 For the first 1,000 users, it works. At 10,000 users, it causes Data Anomaly Corruption. Updating a user's billing address requires searching and locking 50 different rows. The app crashes under load.
 

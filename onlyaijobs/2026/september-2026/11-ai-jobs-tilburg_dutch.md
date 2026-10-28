@@ -21,13 +21,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Tilburg staat zelden op een lijst van "Nederlandse tech-steden", en toch huisvest de stad al jaren een universiteit met een sterke data science-afdeling én een van de grootste logistieke knooppunten van het land. Die combinatie levert een AI-arbeidsmarkt op die weinig lijkt op wat je in Amsterdam of Utrecht ziet — en die daardoor makkelijk over het hoofd wordt gezien.
+Tilburg staat zelden op een lijst van "Nederlandse tech-steden", en toch huisvest de stad al jaren een universiteit met een sterke data science-afdeling én een van de grootste logistieke knooppunten van het land. Die combinatie levert een AI-arbeidsmarkt op die weinig lijkt op wat je in Amsterdam of Utrecht ziet - en die daardoor makkelijk over het hoofd wordt gezien.
 
 ## Twee werelden die elkaar zelden overlappen in vacatureteksten
 
-De universitaire kant produceert onderzoekers en afgestudeerden gewend aan methodologische striktheid — statistiek, causale inferentie, tekst- en taalanalyse. De logistieke kant heeft juist behoefte aan toegepaste modellen die vandaag een vrachtwagen efficiënter laten rijden: vraagvoorspelling, routeoptimalisatie, voorraadbeheer op schaal.
+De universitaire kant produceert onderzoekers en afgestudeerden gewend aan methodologische striktheid - statistiek, causale inferentie, tekst- en taalanalyse. De logistieke kant heeft juist behoefte aan toegepaste modellen die vandaag een vrachtwagen efficiënter laten rijden: vraagvoorspelling, routeoptimalisatie, voorraadbeheer op schaal.
 
-Een vacature bij een logistiek bedrijf noemt zelden "machine learning" expliciet — vaker "supply chain analist" of "planning & optimalisatie". Wie alleen op AI-trefwoorden zoekt, mist dus precies het deel van de Tilburgse markt dat het grootst is.
+Een vacature bij een logistiek bedrijf noemt zelden "machine learning" expliciet - vaker "supply chain analist" of "planning & optimalisatie". Wie alleen op AI-trefwoorden zoekt, mist dus precies het deel van de Tilburgse markt dat het grootst is.
 
 ## Wat dit betekent voor je zoekstrategie
 
@@ -39,15 +39,15 @@ Een vacature bij een logistiek bedrijf noemt zelden "machine learning" expliciet
 
 ## Waar te beginnen
 
-Als je uit een data science- of statistiekopleiding komt en denkt dat je alleen in de Randstad "echt" AI-werk vindt, is Tilburg de moeite van het checken waard — juist omdat het minder concurrentie kent voor precies het soort toegepast modelleerwerk dat een logistiek bedrijf nodig heeft.
+Als je uit een data science- of statistiekopleiding komt en denkt dat je alleen in de Randstad "echt" AI-werk vindt, is Tilburg de moeite van het checken waard - juist omdat het minder concurrentie kent voor precies het soort toegepast modelleerwerk dat een logistiek bedrijf nodig heeft.
 
 Bekijk actuele AI-, machine learning- en datavacatures in en rond Tilburg op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## De twee werkgeversprofielen naast elkaar
 
-**De universitaire kant** levert onderzoekers en pas afgestudeerden met een sterke methodologische basis — causale inferentie, tekstanalyse, experimentontwerp. Deze mensen komen vaak terecht bij spin-offs, onderzoeksgroepen of de kleine maar groeiende groep bedrijven die statistisch geschoolde mensen aannemen voor toegepast werk.
+**De universitaire kant** levert onderzoekers en pas afgestudeerden met een sterke methodologische basis - causale inferentie, tekstanalyse, experimentontwerp. Deze mensen komen vaak terecht bij spin-offs, onderzoeksgroepen of de kleine maar groeiende groep bedrijven die statistisch geschoolde mensen aannemen voor toegepast werk.
 
-**De logistieke kant** heeft een andere behoefte: mensen die een voorspelmodel kunnen bouwen dat morgen al in een planningssysteem moet draaien, met alle ruwe randen van echte operationele data — annuleringen, vertragingen, seizoensinvloeden — die een academische dataset zelden bevat.
+**De logistieke kant** heeft een andere behoefte: mensen die een voorspelmodel kunnen bouwen dat morgen al in een planningssysteem moet draaien, met alle ruwe randen van echte operationele data - annuleringen, vertragingen, seizoensinvloeden - die een academische dataset zelden bevat.
 
 ## Tabel: waar de twee segmenten concreet verschillen
 
@@ -61,11 +61,11 @@ Bekijk actuele AI-, machine learning- en datavacatures in en rond Tilburg op [on
 
 ## Waarom deze twee segmenten zelden naar elkaar verwijzen
 
-Een student die via de universitaire route instroomt, hoort zelden dat de logistieke sector in dezelfde stad een vergelijkbaar niveau van statistisch denken vraagt — gewoon toegepast op een ander soort probleem. Omgekeerd weet een planner bij een logistiek bedrijf zelden dat de universiteit vlakbij mensen aflevert die precies het soort modelleerwerk kunnen doen dat hun eigen team nodig heeft. Deze twee werelden bestaan letterlijk naast elkaar in dezelfde stad, zonder veel onderlinge zichtbaarheid — een kans voor wie bereid is buiten de eigen kring te zoeken.
+Een student die via de universitaire route instroomt, hoort zelden dat de logistieke sector in dezelfde stad een vergelijkbaar niveau van statistisch denken vraagt - gewoon toegepast op een ander soort probleem. Omgekeerd weet een planner bij een logistiek bedrijf zelden dat de universiteit vlakbij mensen aflevert die precies het soort modelleerwerk kunnen doen dat hun eigen team nodig heeft. Deze twee werelden bestaan letterlijk naast elkaar in dezelfde stad, zonder veel onderlinge zichtbaarheid - een kans voor wie bereid is buiten de eigen kring te zoeken.
 
 ## Een concreet scenario: hoe een logistiek modelleerproject er in de praktijk uitziet
 
-Stel je voor: een groot distributiecentrum in de regio Tilburg wil beter voorspellen hoeveel personeel er nodig is per dagdeel, gebaseerd op historische bestelpatronen, weersomstandigheden en seizoensinvloeden. Dit project begint zelden bij een data science-afdeling — het begint bij een operationeel manager die merkt dat personeelsplanning te vaak misgaat, en die vervolgens iemand met analytische vaardigheden vraagt om te helpen. De persoon die dit project oppakt, werkt niet in isolatie aan een modelleeropgave; ze werken nauw samen met de mensen die de planning dagelijks uitvoeren, en het succes van het project wordt niet gemeten in modelnauwkeurigheid alleen, maar in hoeveel beter de planning in de praktijk wordt.
+Stel je voor: een groot distributiecentrum in de regio Tilburg wil beter voorspellen hoeveel personeel er nodig is per dagdeel, gebaseerd op historische bestelpatronen, weersomstandigheden en seizoensinvloeden. Dit project begint zelden bij een data science-afdeling - het begint bij een operationeel manager die merkt dat personeelsplanning te vaak misgaat, en die vervolgens iemand met analytische vaardigheden vraagt om te helpen. De persoon die dit project oppakt, werkt niet in isolatie aan een modelleeropgave; ze werken nauw samen met de mensen die de planning dagelijks uitvoeren, en het succes van het project wordt niet gemeten in modelnauwkeurigheid alleen, maar in hoeveel beter de planning in de praktijk wordt.
 
 Dit voorbeeld illustreert waarom "logistiek modelleerwerk" in Tilburg zo anders aanvoelt dan een vergelijkbaar project bij een tech-bedrijf: de feedback-loop is direct en operationeel, niet abstract en metrisch.
 
@@ -75,7 +75,7 @@ Een vaak gehoorde aanname is dat werken in de logistieke sector "minder interess
 
 ## Wat dit betekent voor je carrière op langere termijn
 
-Ervaring opdoen met toegepast, operationeel modelleerwerk in de logistieke sector bouwt vaardigheden op die breed inzetbaar zijn — het vermogen om een model te bouwen dat daadwerkelijk in een operationele context wordt gebruikt, niet alleen in een demo-omgeving, is een onderscheidende vaardigheid die veel kandidaten met een puur academische achtergrond missen. Voor wie later wil doorgroeien naar een bredere rol in operations of supply chain-strategie, is deze combinatie van technische en operationele kennis een waardevolle basis die weinig andere routes bieden.
+Ervaring opdoen met toegepast, operationeel modelleerwerk in de logistieke sector bouwt vaardigheden op die breed inzetbaar zijn - het vermogen om een model te bouwen dat daadwerkelijk in een operationele context wordt gebruikt, niet alleen in een demo-omgeving, is een onderscheidende vaardigheid die veel kandidaten met een puur academische achtergrond missen. Voor wie later wil doorgroeien naar een bredere rol in operations of supply chain-strategie, is deze combinatie van technische en operationele kennis een waardevolle basis die weinig andere routes bieden.
 
 ## Wat dit betekent voor hoe je je cv en sollicitatiebrief opbouwt
 
@@ -83,7 +83,7 @@ Een sollicitatie voor de logistieke kant van deze markt verdient een andere nadr
 
 ## Waarom dit een van de weinige Nederlandse steden is met deze specifieke combinatie
 
-De meeste Nederlandse steden die in dit overzicht worden besproken, hebben een duidelijk overwicht van óf onderzoeksgerelateerd werk óf toegepast industrieel werk, zelden een sterke aanwezigheid van beide binnen dezelfde stad. Tilburg's combinatie van een gevestigde universitaire traditie in data science en statistiek, direct naast een van de grootste logistieke knooppunten van het land, is een relatief zeldzame combinatie die een kandidaat de mogelijkheid geeft om gedurende een carrière tussen beide werelden te bewegen zonder ooit te hoeven verhuizen — een flexibiliteit die het overwegen waard is, zelfs voor wie op dit moment een duidelijke voorkeur heeft voor een van de twee.
+De meeste Nederlandse steden die in dit overzicht worden besproken, hebben een duidelijk overwicht van óf onderzoeksgerelateerd werk óf toegepast industrieel werk, zelden een sterke aanwezigheid van beide binnen dezelfde stad. Tilburg's combinatie van een gevestigde universitaire traditie in data science en statistiek, direct naast een van de grootste logistieke knooppunten van het land, is een relatief zeldzame combinatie die een kandidaat de mogelijkheid geeft om gedurende een carrière tussen beide werelden te bewegen zonder ooit te hoeven verhuizen - een flexibiliteit die het overwegen waard is, zelfs voor wie op dit moment een duidelijke voorkeur heeft voor een van de twee.
 
 ## Veelgestelde vragen
 

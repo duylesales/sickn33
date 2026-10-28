@@ -20,11 +20,11 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a mobility-as-a-service (MaaS) company building a multi-modal trip-planning platform faces a foundational architecture decision that directly determines whether the app stays trustworthy or quietly misleads riders the moment conditions aren't ideal: whether the platform is built around graceful fallback to scheduled, non-real-time data when a transit agency's real-time vehicle-position feed — typically delivered as a GTFS-realtime feed — degrades or drops out, or treated as a robustness improvement to be layered on once the real-time trip-planning experience is working.
+A CTO at a mobility-as-a-service (MaaS) company building a multi-modal trip-planning platform faces a foundational architecture decision that directly determines whether the app stays trustworthy or quietly misleads riders the moment conditions aren't ideal: whether the platform is built around graceful fallback to scheduled, non-real-time data when a transit agency's real-time vehicle-position feed - typically delivered as a GTFS-realtime feed - degrades or drops out, or treated as a robustness improvement to be layered on once the real-time trip-planning experience is working.
 
 ## Why Naive Real-Time-Only Trip Planning Produces a Broken Rider Experience
 
-The most naive approach to trip planning — building the app's core logic around the assumption that a transit agency's GTFS-realtime feed is reliably available, and using it directly to compute arrival predictions and route options — introduces a failure mode directly tied to how genuinely unreliable real-time transit feeds actually are in practice, since agency feed infrastructure is prone to dropouts, stale data during a vehicle's radio blackout, and full outages during agency-side system maintenance or failure. Even a moderately well-instrumented transit network, with dozens of agencies each running their own feed infrastructure of varying reliability, produces visibly broken behavior under this model — riders shown a confident arrival prediction that never materializes, or a route option that silently disappears when the underlying feed goes stale, since human trust in a trip-planning app is genuinely sensitive to exactly this kind of visible, unexplained unreliability during a moment riders are actively relying on the app to catch a specific vehicle.
+The most naive approach to trip planning - building the app's core logic around the assumption that a transit agency's GTFS-realtime feed is reliably available, and using it directly to compute arrival predictions and route options - introduces a failure mode directly tied to how genuinely unreliable real-time transit feeds actually are in practice, since agency feed infrastructure is prone to dropouts, stale data during a vehicle's radio blackout, and full outages during agency-side system maintenance or failure. Even a moderately well-instrumented transit network, with dozens of agencies each running their own feed infrastructure of varying reliability, produces visibly broken behavior under this model - riders shown a confident arrival prediction that never materializes, or a route option that silently disappears when the underlying feed goes stale, since human trust in a trip-planning app is genuinely sensitive to exactly this kind of visible, unexplained unreliability during a moment riders are actively relying on the app to catch a specific vehicle.
 
 ## What Graceful Feed Degradation and Scheduled-Data Fallback Actually Solve
 
@@ -32,7 +32,7 @@ Graceful feed degradation addresses the unreliability problem directly: the mome
 
 ## Why Retrofitting This Onto an Existing Platform Is Genuinely Difficult
 
-A trip-planning platform built initially around real-time-only data handling, with graceful degradation planned as a later robustness pass, tends to discover that this capability requires architectural decisions woven throughout the core trip-planning logic — how route computation is structured to support per-agency, per-route fallback rather than an all-or-nothing real-time dependency, how prediction confidence is tracked and surfaced to the rider interface, how the system detects feed staleness reliably per agency rather than assuming feed health uniformly across the network. Retrofitting this architecture onto a platform already built around a simpler, real-time-only model is a considerably larger undertaking than designing trip-planning around graceful degradation from the start, often requiring significant rework of core route-computation systems that were built without this architecture in mind.
+A trip-planning platform built initially around real-time-only data handling, with graceful degradation planned as a later robustness pass, tends to discover that this capability requires architectural decisions woven throughout the core trip-planning logic - how route computation is structured to support per-agency, per-route fallback rather than an all-or-nothing real-time dependency, how prediction confidence is tracked and surfaced to the rider interface, how the system detects feed staleness reliably per agency rather than assuming feed health uniformly across the network. Retrofitting this architecture onto a platform already built around a simpler, real-time-only model is a considerably larger undertaking than designing trip-planning around graceful degradation from the start, often requiring significant rework of core route-computation systems that were built without this architecture in mind.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -64,7 +64,7 @@ Turun Liikkuvuuspalvelu, a Turku-based mobility-as-a-service platform, had built
 Manifera's Amsterdam team rebuilt the platform's core trip-planning architecture around per-agency feed-health detection and scheduled-data fallback, restructuring route computation and the rider interface's prediction display to support clearly labeled confidence per prediction, a substantial rework of systems that had been built without this architecture in mind.
 
 > *"Our original testing only ever used the one operator with genuinely solid infrastructure, so everything looked reliable. It wasn't until we added smaller operators with patchier feeds that we understood the problem wasn't our route computation, it was that our whole prediction system had never been built to handle a feed actually going bad."*
-> — **CTO, Turun Liikkuvuuspalvelu**
+> - **CTO, Turun Liikkuvuuspalvelu**
 
 Turun Liikkuvuuspalvelu's rebuilt platform now falls back gracefully to scheduled data whenever a specific agency's feed degrades, with clearly labeled prediction confidence shown to riders, and the platform now validates every new agency integration against simulated feed outages before going live, not just a well-behaved feed's normal operation.
 
@@ -79,7 +79,7 @@ Turun Liikkuvuuspalvelu's rebuilt platform now falls back gracefully to schedule
 
 ## Scoping Your Own MaaS Platform's Trip-Planning Architecture
 
-Before expanding a MaaS platform across a genuinely diverse set of transit agencies, design the core trip-planning architecture around per-agency feed-health detection and graceful fallback to scheduled data from the start — a naive real-time-only model that looks fine against a single well-resourced agency reveals its real problems only once genuinely unreliable agency feeds are added, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building genuinely resilient MaaS trip-planning architecture.
+Before expanding a MaaS platform across a genuinely diverse set of transit agencies, design the core trip-planning architecture around per-agency feed-health detection and graceful fallback to scheduled data from the start - a naive real-time-only model that looks fine against a single well-resourced agency reveals its real problems only once genuinely unreliable agency feeds are added, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building genuinely resilient MaaS trip-planning architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Internal testing against a small number of well-resourced agencies rarely produc
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their transit-feed reliability experience?
 
-Ask specifically how their architecture detects feed staleness per agency and how it falls back to scheduled data with clear confidence labeling — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture detects feed staleness per agency and how it falls back to scheduled data with clear confidence labeling - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-🔥 Evelyn built a prototype using **Lovable** — evelyn, an e-commerce store owner, used **lovable** to build a customer support bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Evelyn built a prototype using **Lovable** - evelyn, an e-commerce store owner, used **lovable** to build a customer support bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Evelyn's application achieved silky-smooth performance: Support ticket auto-resolution increased to 45% without loops or duplicate spam. (€1,250 (Webhook Loop Fix) — production-ready and deployed in 3 business days.). 🚀
+Evelyn's application achieved silky-smooth performance: Support ticket auto-resolution increased to 45% without loops or duplicate spam. (€1,250 (Webhook Loop Fix) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/automating-customer-support-intercom-ai
 

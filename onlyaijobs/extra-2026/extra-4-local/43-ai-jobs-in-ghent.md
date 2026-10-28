@@ -87,16 +87,16 @@ Dutch is the official language in Ghent and the language of daily life and the p
 
 ## How OnlyAIJobs Fits a Ghent Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It shows each vacancy at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and there is no paid placement — every listing competes on content.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It shows each vacancy at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and there is no paid placement - every listing competes on content.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Ghent you will find few or no local vacancies there today. Use Belgian job portals, UGent's career services, company career pages and research vacancy lists as primary sources. OnlyAIJobs becomes useful if you consider the Netherlands — Ghent is within reach of Zeeland, Brabant and the Rotterdam region — where employers such as Accenture, Cegeka, Heijmans and VINCI Energies list AI roles, and as a method: search by category and real commute. Ghent employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Ghent you will find few or no local vacancies there today. Use Belgian job portals, UGent's career services, company career pages and research vacancy lists as primary sources. OnlyAIJobs becomes useful if you consider the Netherlands - Ghent is within reach of Zeeland, Brabant and the Rotterdam region - where employers such as Accenture, Cegeka, Heijmans and VINCI Energies list AI roles, and as a method: search by category and real commute. Ghent employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Building a Portfolio for Ghent Employers
 
 Ghent's scale-ups and research groups look for evidence that you can deliver working systems, not only good grades. A strong graduate portfolio includes:
 
 - **One end-to-end project** with data collection, modelling, evaluation and a simple deployment, documented clearly.
-- **A language model application**, for example a retrieval-based assistant with an honest evaluation of answer quality — highly relevant for SaaS companies adding AI features.
+- **A language model application**, for example a retrieval-based assistant with an honest evaluation of answer quality - highly relevant for SaaS companies adding AI features.
 - **A project with local or domain data**: Flemish open mobility data, public biological datasets or industrial sensor data from a course project.
 - **Clean, tested code** in a public repository, showing version control habits.
 - **Your thesis**, explained in plain language with its limitations.
@@ -105,7 +105,7 @@ Hackathons organised by UGent student associations, imec and local companies are
 
 ## SaaS Scale-ups and AI Features
 
-Ghent's SaaS companies illustrate how AI work is changing in product companies. Many are adding AI features built on large language models: summarising conversations, generating content, answering questions over customer documents, classifying tickets and automating workflows. For graduates, this creates junior roles that combine software engineering, prompt and retrieval design, evaluation and data engineering. The key skills are pragmatic: building reliable pipelines, measuring quality systematically, controlling costs and handling customer data responsibly under GDPR. Graduates who can show that they know how to evaluate an LLM-based feature — not just build a demo — stand out.
+Ghent's SaaS companies illustrate how AI work is changing in product companies. Many are adding AI features built on large language models: summarising conversations, generating content, answering questions over customer documents, classifying tickets and automating workflows. For graduates, this creates junior roles that combine software engineering, prompt and retrieval design, evaluation and data engineering. The key skills are pragmatic: building reliable pipelines, measuring quality systematically, controlling costs and handling customer data responsibly under GDPR. Graduates who can show that they know how to evaluate an LLM-based feature - not just build a demo - stand out.
 
 ## Computational Biology and Biotech
 
@@ -125,7 +125,7 @@ Ghent is compact and bicycle-friendly, with a car-free centre, trams and buses a
 
 ## Your First Two Years
 
-Use your first years to build strong foundations. Work in a team with experienced engineers who review your code, learn how models reach production and how they are monitored, and develop one area of depth — NLP, computer vision, time series, bioinformatics or MLOps. Improve your Dutch if you plan to stay. Keep contact with your university and research groups, because Flanders' ecosystem rewards people who move between research and industry. These habits will prepare you for more senior roles in Ghent, elsewhere in Belgium or abroad.
+Use your first years to build strong foundations. Work in a team with experienced engineers who review your code, learn how models reach production and how they are monitored, and develop one area of depth - NLP, computer vision, time series, bioinformatics or MLOps. Improve your Dutch if you plan to stay. Keep contact with your university and research groups, because Flanders' ecosystem rewards people who move between research and industry. These habits will prepare you for more senior roles in Ghent, elsewhere in Belgium or abroad.
 
 ## Preparing for Interviews
 

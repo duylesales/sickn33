@@ -53,9 +53,9 @@ The middle category is the difficult one, because stalled roles are comfortable.
 
 Ask for what would make you stay before you conclude that nothing would.
 
-Write down the three things that would make this role right — a project, a scope change, a training commitment, a different reporting line, a working arrangement, a pay correction — and raise them with your manager as a conversation rather than an ultimatum. Give it a defined period, a quarter is usually enough, and see what actually happens.
+Write down the three things that would make this role right - a project, a scope change, a training commitment, a different reporting line, a working arrangement, a pay correction - and raise them with your manager as a conversation rather than an ultimatum. Give it a defined period, a quarter is usually enough, and see what actually happens.
 
-Two outcomes are useful. Sometimes you get most of it, because managers frequently do not know that a good person is drifting and would rather fix it than replace them. Sometimes you get nothing, and the ambiguity is gone — which makes the search easier and the decision cleaner.
+Two outcomes are useful. Sometimes you get most of it, because managers frequently do not know that a good person is drifting and would rather fix it than replace them. Sometimes you get nothing, and the ambiguity is gone - which makes the search easier and the decision cleaner.
 
 What you learn either way is worth the discomfort of asking.
 
@@ -63,7 +63,7 @@ What you learn either way is worth the discomfort of asking.
 
 **Notice periods.** Yours and the new employer's expectations rarely align neatly. Check your contract, since notice can be longer than the statutory default for employees in some contracts, and start conversations with that timeline in mind rather than discovering it after accepting.
 
-**Mortgage applications.** Lenders look at contract type and income stability. Changing employers mid-application, or moving from a permanent contract to a fixed-term one, complicates things. If a purchase is imminent, sequencing matters — talk to an adviser before you resign.
+**Mortgage applications.** Lenders look at contract type and income stability. Changing employers mid-application, or moving from a permanent contract to a fixed-term one, complicates things. If a purchase is imminent, sequencing matters - talk to an adviser before you resign.
 
 **Residence permits.** For people whose permit is tied to an employer or a salary requirement, a move has formal consequences and timing constraints. Check your situation with the IND or a qualified adviser before accepting, not after.
 
@@ -77,7 +77,7 @@ What you learn either way is worth the discomfort of asking.
 
 Candidates often try to time the market. In practice, employers in the Netherlands hire for data and AI roles year-round, with recognisable slow periods around the summer holidays and late December, when decisions wait for people to return.
 
-More useful than seasonal timing is the state of your own case. You are most attractive shortly after finishing something — a system deployed, a project delivered, a measurable result. Interviewing with a fresh, concrete story is worth far more than interviewing in a supposedly good month with nothing recent to describe.
+More useful than seasonal timing is the state of your own case. You are most attractive shortly after finishing something - a system deployed, a project delivered, a measurable result. Interviewing with a fresh, concrete story is worth far more than interviewing in a supposedly good month with nothing recent to describe.
 
 That suggests a practical rule: if you are close to finishing something meaningful, finish it. The three months are usually worth it.
 
@@ -86,7 +86,7 @@ That suggests a practical rule: if you are close to finishing something meaningf
 - You are still learning, and you can name what you learned this quarter.
 - Something you have built is about to reach production, and you want it on your record.
 - A specific change has been promised with a date, and the person promising it has kept promises before.
-- The conditions around the job — hours, distance, predictability — suit a phase of life that will not last forever.
+- The conditions around the job - hours, distance, predictability - suit a phase of life that will not last forever.
 - You are near a formal milestone that is worth a few months of patience.
 
 ## Reasons to Stay That Are Not
@@ -97,11 +97,11 @@ That suggests a practical rule: if you are close to finishing something meaningf
 - The belief that it will improve after the reorganisation, when you have believed this twice already.
 - Comfort, unexamined, where nothing is wrong and nothing has changed in two years.
 
-The last one deserves a sentence of its own, because it is the most common. A role that is pleasant, manageable and unchanging does not feel like a problem in any single quarter, which is exactly why people notice it only when they try to describe their recent work to an interviewer and find they have nothing new to say. Comfort is a perfectly good reason to stay for a defined period and a poor reason to stay by default. The distinction is whether you have chosen it. If you can say what you are getting from this year — a skill, a system, a stable period you need, a qualification — you are staying deliberately. If you cannot, you are drifting, and drifting is decided for you eventually, usually by a reorganisation rather than by you.
+The last one deserves a sentence of its own, because it is the most common. A role that is pleasant, manageable and unchanging does not feel like a problem in any single quarter, which is exactly why people notice it only when they try to describe their recent work to an interviewer and find they have nothing new to say. Comfort is a perfectly good reason to stay for a defined period and a poor reason to stay by default. The distinction is whether you have chosen it. If you can say what you are getting from this year - a skill, a system, a stable period you need, a qualification - you are staying deliberately. If you cannot, you are drifting, and drifting is decided for you eventually, usually by a reorganisation rather than by you.
 
 ## If You Decide to Move, Do It Deliberately
 
-Define what you are solving for — learning, scope, distance, hours, security, pay — and rank them, because no role maximises all of them. Search while employed, which changes both your patience and your negotiating position. Finish what you can, and leave documentation behind. Keep the exit clean, since Dutch data circles are small and former colleagues become future references, hiring managers and interviewers.
+Define what you are solving for - learning, scope, distance, hours, security, pay - and rank them, because no role maximises all of them. Search while employed, which changes both your patience and your negotiating position. Finish what you can, and leave documentation behind. Keep the exit clean, since Dutch data circles are small and former colleagues become future references, hiring managers and interviewers.
 
 And set a date to decide. Open-ended searching drifts; a decision point in eight or twelve weeks concentrates the effort and makes it easier to stop and reassess.
 
@@ -113,11 +113,11 @@ A search begun in frustration tends to be worse than one begun with two weeks of
 
 **Rewrite your CV around results rather than tools.** A list of technologies describes a toolbox; a line describing a system that runs, the problem it solved and how you validated it describes a professional. Hiring managers in this field read for the second.
 
-**Identify your gaps honestly.** If every role you want asks for something you have not done — deployment, cloud infrastructure, a particular kind of modelling, working with a regulated domain — you can often acquire a version of it in your current job in a few months, which is a far stronger position than explaining the gap in interviews.
+**Identify your gaps honestly.** If every role you want asks for something you have not done - deployment, cloud infrastructure, a particular kind of modelling, working with a regulated domain - you can often acquire a version of it in your current job in a few months, which is a far stronger position than explaining the gap in interviews.
 
 **Line up references quietly.** Former managers and colleagues move on, change employers and become harder to find. Knowing who would speak for you, and being on good terms with them, is worth a message or two now.
 
-**Check the practical constraints.** Notice period, permit conditions, any contractual clause about competitors, and what the alternatives near you actually pay — the ranges published under pay transparency rules make this easier than it used to be.
+**Check the practical constraints.** Notice period, permit conditions, any contractual clause about competitors, and what the alternatives near you actually pay - the ranges published under pay transparency rules make this easier than it used to be.
 
 **Build a small buffer if you can.** Not because you should resign without a role, but because financial pressure is what makes people accept the first adequate offer and skip the questions that matter.
 
@@ -133,25 +133,25 @@ A senior data engineer starts browsing vacancies after two frustrating quarters:
 
 Instead of applying, she writes down what would make the role right. More engineering ownership, a second person on the team, a training budget, and the cancelled project revisited in some form.
 
-The conversation with her manager goes better than expected on two points — a vacancy is opened for a second engineer, and the training budget is confirmed in writing — and produces nothing on the other two. She gives it a quarter.
+The conversation with her manager goes better than expected on two points - a vacancy is opened for a second engineer, and the training budget is confirmed in writing - and produces nothing on the other two. She gives it a quarter.
 
 The second engineer is hired. The ownership question does not move, because the platform decisions sit with a team in another country and nobody intends to change that.
 
 She starts searching in month four, with a clear reason she can articulate in interviews, a recently delivered pipeline to talk about, and no bitterness about the employer she is leaving. She accepts a role forty minutes from home with the ownership she wanted, and her old manager gives the reference.
 
-Her view afterwards: the quarter she spent asking was not wasted, because it turned a vague dissatisfaction into a specific, explainable reason for moving — which is exactly what interviewers respond to.
+Her view afterwards: the quarter she spent asking was not wasted, because it turned a vague dissatisfaction into a specific, explainable reason for moving - which is exactly what interviewers respond to.
 
 ## Key Takeaways
 
 - Distinguish a bad period, which resolves, from a stalled role, which does not, and be honest about how long the current situation has lasted.
 - Ask for what would make you stay, with a defined period, before concluding nothing would; the answer clarifies the decision either way.
 - Dutch timing factors worth checking: notice periods, mortgage applications, residence permits, fixed-term contract position and accrued entitlements.
-- Your own case matters more than the season — interview shortly after finishing something concrete.
+- Your own case matters more than the season - interview shortly after finishing something concrete.
 - If you move, rank what you are solving for, search while employed, leave cleanly and set a date to decide.
 
 ## Where to Start
 
-Looking at what is genuinely available near you is often what resolves this question — either it confirms the market has more for you, or it makes staying a deliberate choice rather than a default.
+Looking at what is genuinely available near you is often what resolves this question - either it confirms the market has more for you, or it makes staying a deliberate choice rather than a default.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

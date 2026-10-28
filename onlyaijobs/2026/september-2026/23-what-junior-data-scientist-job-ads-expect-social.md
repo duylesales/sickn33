@@ -1,4 +1,4 @@
-💡 A "junior data scientist" job ad often lists twelve tools and "an affinity with machine learning, statistics and business." Read literally, almost nobody qualifies — not even a senior.
+💡 A "junior data scientist" job ad often lists twelve tools and "an affinity with machine learning, statistics and business." Read literally, almost nobody qualifies - not even a senior.
 
 👥 What employers weigh more heavily in practice: reasoning about a problem, not just using a tool. Explaining results to someone without a technical background. Willingness to learn within the team.
 

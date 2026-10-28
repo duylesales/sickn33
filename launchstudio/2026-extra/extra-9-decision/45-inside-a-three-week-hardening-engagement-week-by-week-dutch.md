@@ -35,7 +35,7 @@ Het is een dinsdagochtend in februari en een software-oprichtster in Amsterdam h
 
 Wat ze echter níét weet, is hoe de komende vijftien werkdagen er in de praktijk uit gaan zien: wanneer ze van het team hoort, wanneer er concrete actie van haar wordt verwacht, en op welk moment ze voor het eerst tastbaar resultaat gaat zien.
 
-Het overbruggen van die verwachtingskloof is essentieel. Een oprichter die de interne dynamiek van het traject doorgrondt, neemt simpelweg betere beslissingen — met name halverwege het project, waar het meest cruciale overleg plaatsvindt en waar een onvoorbereide klant al snel verzandt in een passief "doe maar wat jullie het beste lijkt". Hier volgt het reële verloop van dag tot dag.
+Het overbruggen van die verwachtingskloof is essentieel. Een oprichter die de interne dynamiek van het traject doorgrondt, neemt simpelweg betere beslissingen - met name halverwege het project, waar het meest cruciale overleg plaatsvindt en waar een onvoorbereide klant al snel verzandt in een passief "doe maar wat jullie het beste lijkt". Hier volgt het reële verloop van dag tot dag.
 
 ## Dag Nul: Scoping en de Offerte Die de Kaders Bepaalt
 
@@ -94,10 +94,10 @@ Rond dag zeven of acht vindt het overleg plaats dat de uiteindelijke uitkomst va
 
 Drie uitkomsten zijn gebruikelijk:
 1. De planning loopt vlekkeloos en week drie kan ongewijzigd van start gaan.
-2. Er is een fundamenteel dataprobleem ontdekt — bijvoorbeeld een datamodel dat zonder datamigratie geen veilige multi-tenancy ondersteunt — waardoor er een bewuste keuze moet worden gemaakt om een minder kritieke wens te laten vallen.
+2. Er is een fundamenteel dataprobleem ontdekt - bijvoorbeeld een datamodel dat zonder datamigratie geen veilige multi-tenancy ondersteunt - waardoor er een bewuste keuze moet worden gemaakt om een minder kritieke wens te laten vallen.
 3. Het werk viel mee en er is ruimte om een onderdeel van de "na lancering"-lijst naar voren te halen.
 
-Uw rol als oprichter is om in dit gesprek de knoop door te hakken. De afweging *"Besteed het team twee dagen aan een complexe datamigratie of aan het bouwen van een geavanceerd beheerdersdashboard?"* is geen technische vraag, maar een zakelijke strategie. [LaunchStudio](https://launchstudio.eu/nl/) leunt op de werkwijze van [Manifera](https://www.manifera.com/services/web-app-develop/) — vertrouwd door veeleisende partijen zoals Vodafone, TNO en CFLW — waarbij strategische trade-offs halverwege transparant op tafel worden gelegd bij de eigenaar van het product, in plaats van achteraf als een voldongen feit te worden gepresenteerd.
+Uw rol als oprichter is om in dit gesprek de knoop door te hakken. De afweging *"Besteed het team twee dagen aan een complexe datamigratie of aan het bouwen van een geavanceerd beheerdersdashboard?"* is geen technische vraag, maar een zakelijke strategie. [LaunchStudio](https://launchstudio.eu/nl/) leunt op de werkwijze van [Manifera](https://www.manifera.com/services/web-app-develop/) - vertrouwd door veeleisende partijen zoals Vodafone, TNO en CFLW - waarbij strategische trade-offs halverwege transparant op tafel worden gelegd bij de eigenaar van het product, in plaats van achteraf als een voldongen feit te worden gepresenteerd.
 
 ## Week Drie, Dag 11–13: Monitoring en de Generale Repetitie
 
@@ -136,13 +136,13 @@ Uitloop in softwareprojecten ontstaat zelden door toeval. Vier concrete oorzaken
 
 Door deze fasering vooraf te kennen, bent u op de juiste momenten maximaal effectief: snel met toegangsrechten, aanwezig bij het midpoint-overleg, gedisciplineerd tijdens de acceptatietest, en paraat tijdens de livegang.
 
-**Wilt u een vast geprijsde offerte inclusief een gedetailleerd week-voor-week draaiboek voor uw SaaS-product? Neem contact op met LaunchStudio — we brengen binnen één werkdag de exacte stappen voor uw platform in kaart.**
+**Wilt u een vast geprijsde offerte inclusief een gedetailleerd week-voor-week draaiboek voor uw SaaS-product? Neem contact op met LaunchStudio - we brengen binnen één werkdag de exacte stappen voor uw platform in kaart.**
 
 ## Echt voorbeeld
 
 ### Een Scale-Up in Actie: De Datamigratie Die op Dag Acht Werd Ontdekt
 
-Iris de Wit, voormalig hoofd wagenparkbeheer in Amsterdam, bouwde met behulp van Bolt en Cursor de SaaS-applicatie Vlootzicht — een tool voor onderhoudsplanning en inspectielogboeken voor commerciële bestelwagenvloten. Het platform telde 41 betalende transportbedrijven (€89/maand), en een potentiële enterprise-klant met 200 voertuigen stelde kritische vragen over de scheiding van bedrijfsdata.
+Iris de Wit, voormalig hoofd wagenparkbeheer in Amsterdam, bouwde met behulp van Bolt en Cursor de SaaS-applicatie Vlootzicht - een tool voor onderhoudsplanning en inspectielogboeken voor commerciële bestelwagenvloten. Het platform telde 41 betalende transportbedrijven (€89/maand), en een potentiële enterprise-klant met 200 voertuigen stelde kritische vragen over de scheiding van bedrijfsdata.
 
 De inspectienotitie op dag twee toonde een acuut probleem: de scheiding tussen wagenparken bleek uitsluitend te worden gefilterd via een bedrijfs-ID in de JavaScript-code van de frontend, niet in de database. Drie directe querypaden omzeilden dit filter zelfs volledig, waardoor een technisch onderlegde gebruiker via de browser console wagenparkdata van concurrenten kon uitlezen.
 
@@ -150,10 +150,10 @@ Tijdens het midpoint-overleg op dag acht legde de lead engineer de keuze glashel
 
 **Resultaat:** Vlootzicht voerde in week drie een vlekkeloze cutover uit met gegarandeerde multi-tenant data-isolatie in de database, geverifieerd door een acceptatietest die Iris zelf tussen twee testaccounts uitvoerde. De security questionnaire van de enterprise-prospect werd beantwoord met een feitelijk architectuurmodel in plaats van loze beloftes. Het rapportagedashboard werd zes weken later als een afzonderlijk deelproject van twee dagen gerealiseerd.
 
-> *"Het midpoint-gesprek op dag acht heeft mijn hele bedrijf gered. Als het team die keuze geruisloos voor me had gemaakt en het pas achteraf had gemeld, had ik het geaccepteerd — maar dan had ik met een mooi dashboard gezeten terwijl ik de enterprise-klant door een datalek was kwijtgeraakt."*
-> — **Iris de Wit, Oprichter, Vlootzicht (Amsterdam)**
+> *"Het midpoint-gesprek op dag acht heeft mijn hele bedrijf gered. Als het team die keuze geruisloos voor me had gemaakt en het pas achteraf had gemeld, had ik het geaccepteerd - maar dan had ik met een mooi dashboard gezeten terwijl ik de enterprise-klant door een datalek was kwijtgeraakt."*
+> - **Iris de Wit, Oprichter, Vlootzicht (Amsterdam)**
 
-**Kosten & Doorlooptijd:** €5.400 (Launch & Grow pakket, multi-tenant isolatie, Stripe-abonnementen, monitoring en managed hosting) — cutover binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €5.400 (Launch & Grow pakket, multi-tenant isolatie, Stripe-abonnementen, monitoring en managed hosting) - cutover binnen 15 werkdagen.
 
 ---
 
@@ -166,7 +166,7 @@ Omdat de senior engineer deze dagen besteedt aan het doorgronden van uw datamode
 Daar wordt zorgvuldig omheen gepland. DNS TTL-waarden worden ruim vooraf verlaagd, de overzetting vindt plaats tijdens een rustig nachtelijk onderhoudsvenster, en databasemigraties worden uitgevoerd met een vooraf geteste herstelprocedure (*rollback*). Na de migratie worden foutpercentages en betalingen urenlang actief gemonitoid. Bij software van deze omvang is de feitelijke downtime hooguit enkele minuten of zelfs nihil.
 
 ### Kan een traject van drie weken een databasemigratie op actieve live data aan?
-Ja, mits dit tijdig wordt gesignaleerd — en dat is precies het doel van het midpoint-overleg rond dag acht. Een migratie die op dag acht wordt ingepland, is een beheerste strategische afweging waarbij een minder belangrijk onderdeel verschuift. Dezelfde ontdekking op dag dertien is wat een project ongewild met een week verlengt.
+Ja, mits dit tijdig wordt gesignaleerd - en dat is precies het doel van het midpoint-overleg rond dag acht. Een migratie die op dag acht wordt ingepland, is een beheerste strategische afweging waarbij een minder belangrijk onderdeel verschuift. Dezelfde ontdekking op dag dertien is wat een project ongewild met een week verlengt.
 
 ### Hoeveel van mijn eigen tijd vergt een drie weken durend hardening-traject?
 In totaal circa zes uur over de gehele vijftien werkdagen, maar zeer geconcentreerd: het klaarzetten van accounts vóór dag één, het wekelijkse overleg, het zelfstandig testen van de staging-checklist, het doorhakken van de knoop halverwege, en bereikbaarheid tijdens de livegang. Uw waarde zit in snelle besluitvorming op die specifieke momenten.

@@ -1,8 +1,8 @@
 Retail media is now a bigger margin lever for many retailers than the merchandise next to it. But most teams evaluating vendors are grading a marketing tool when they should be auditing ad-tech infrastructure. 📡
 
 **The Pain Points:**
-❌ **"Auction" that isn't:** Many platforms sell static, pre-booked placements and call it an auction — irrelevant sponsored products erode shopper trust in the whole program.
-❌ **No incrementality measurement:** Basic attributed-sales reporting can't tell a brand whether the ad actually drove a sale that wouldn't have happened anyway — sophisticated advertisers are starting to demand this.
+❌ **"Auction" that isn't:** Many platforms sell static, pre-booked placements and call it an auction - irrelevant sponsored products erode shopper trust in the whole program.
+❌ **No incrementality measurement:** Basic attributed-sales reporting can't tell a brand whether the ad actually drove a sale that wouldn't have happened anyway - sophisticated advertisers are starting to demand this.
 ❌ **Undisclosed invalid traffic filtering:** Without IAB/MRC-aligned IVT detection, bot and click-fraud traffic gets billed to advertisers, setting up disputes down the line.
 
 **The Manifera Solution:**

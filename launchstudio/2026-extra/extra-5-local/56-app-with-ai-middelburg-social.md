@@ -1,4 +1,4 @@
-🏰 Anouk Vermeer built HeritageStay, a booking platform for historic guesthouses across Middelburg's old city center, using Bolt over about ten days — her demo at a local Zeeland founder meetup worked flawlessly. Two weeks before public launch, a review found any user could view any other guest's reservation just by changing a number in the URL. 😳
+🏰 Anouk Vermeer built HeritageStay, a booking platform for historic guesthouses across Middelburg's old city center, using Bolt over about ten days - her demo at a local Zeeland founder meetup worked flawlessly. Two weeks before public launch, a review found any user could view any other guest's reservation just by changing a number in the URL. 😳
 
 A demo only ever tests the paths the founder walked through themselves. 🧠
 
@@ -11,7 +11,7 @@ A demo only ever tests the paths the founder walked through themselves. 🧠
 ✅ Live, tested Stripe integration with proper refund handling
 ✅ GDPR-compliant storage set up for guest personal data
 
-At **LaunchStudio**, we take the app a founder already built with AI and add exactly what the demo never needed — backed by Manifera's engineering team operating from its Ho Chi Minh City hub. 🛡️
+At **LaunchStudio**, we take the app a founder already built with AI and add exactly what the demo never needed - backed by Manifera's engineering team operating from its Ho Chi Minh City hub. 🛡️
 
 Her result: HeritageStay launched on schedule with guest data properly isolated and payments running live, right before Middelburg's summer tourist season. 🚀
 

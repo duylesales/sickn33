@@ -35,11 +35,11 @@ Content Format: Career Guide
 }
 </script>
 
-The EU's pay transparency directive is a real, binding piece of EU-wide legislation requiring member states to implement rules around salary disclosure in job postings and pay equity reporting. 🟥 This article deliberately does not state specific implementation dates, thresholds or exact requirements for the Netherlands — those details are set at the national implementation level and change as legislation is finalized and enforced, so check an authoritative source (the Dutch government or a labor-law advisor) for the current, binding specifics rather than relying on this general overview.
+The EU's pay transparency directive is a real, binding piece of EU-wide legislation requiring member states to implement rules around salary disclosure in job postings and pay equity reporting. 🟥 This article deliberately does not state specific implementation dates, thresholds or exact requirements for the Netherlands - those details are set at the national implementation level and change as legislation is finalized and enforced, so check an authoritative source (the Dutch government or a labor-law advisor) for the current, binding specifics rather than relying on this general overview.
 
 ## What This Generally Means for Job Seekers
 
-As pay transparency rules take effect, candidates can expect more job postings to include a salary range up front, reducing the information asymmetry that previously let candidates negotiate blind. This doesn't eliminate negotiation — it changes what you're negotiating from.
+As pay transparency rules take effect, candidates can expect more job postings to include a salary range up front, reducing the information asymmetry that previously let candidates negotiate blind. This doesn't eliminate negotiation - it changes what you're negotiating from.
 
 ## What This Generally Means for Employers
 
@@ -51,7 +51,7 @@ AI and ML roles have historically had some of the widest, least standardized sal
 
 ## A Deeper Look at Why This Directive Specifically Targets Information Asymmetry
 
-The core theory behind pay transparency legislation is that unequal information between employer and candidate — the employer knows the budget, the candidate doesn't — systematically disadvantages candidates in negotiation, and disproportionately affects groups who negotiate less aggressively on average. Disclosing a range up front doesn't eliminate negotiation, but it does shift the starting point of the conversation from "guess what they might pay" to "understand where within a known range you might land and why."
+The core theory behind pay transparency legislation is that unequal information between employer and candidate - the employer knows the budget, the candidate doesn't - systematically disadvantages candidates in negotiation, and disproportionately affects groups who negotiate less aggressively on average. Disclosing a range up front doesn't eliminate negotiation, but it does shift the starting point of the conversation from "guess what they might pay" to "understand where within a known range you might land and why."
 
 ## Comparing the Negotiation Dynamic Before and After Disclosure Requirements
 
@@ -63,7 +63,7 @@ The core theory behind pay transparency legislation is that unequal information 
 
 ## Why AI Roles Specifically Will Likely See the Widest Ranges Disclosed at First
 
-Because AI/ML title inconsistency (discussed elsewhere on this site) means two roles with the same title can have wildly different actual scope, expect early pay-transparency disclosures in this field to show unusually wide ranges compared to more standardized roles — not because employers are being evasive, but because the underlying job definitions genuinely haven't standardized yet. This is likely to be a visible, temporary symptom of the broader title-inconsistency problem this site discusses elsewhere, not a separate issue.
+Because AI/ML title inconsistency (discussed elsewhere on this site) means two roles with the same title can have wildly different actual scope, expect early pay-transparency disclosures in this field to show unusually wide ranges compared to more standardized roles - not because employers are being evasive, but because the underlying job definitions genuinely haven't standardized yet. This is likely to be a visible, temporary symptom of the broader title-inconsistency problem this site discusses elsewhere, not a separate issue.
 
 ## How Disclosed Ranges Change a Candidate's Practical Search
 
@@ -89,7 +89,7 @@ The third is preparing managers to discuss ranges credibly. Once a range is publ
 
 Pay transparency legislation is one instance of a broader shift toward greater disclosure obligations affecting AI-related employment, and seeing it in that context helps candidates and employers anticipate what follows.
 
-The same regulatory environment discussed throughout this site in relation to AI governance is producing obligations around documenting how automated systems make decisions, including decisions affecting workers. Organisations using automated tools in recruitment face increasing expectations to explain how those tools work and to demonstrate they do not produce discriminatory outcomes — a development directly relevant to the AI job market because the tools in question are themselves AI systems.
+The same regulatory environment discussed throughout this site in relation to AI governance is producing obligations around documenting how automated systems make decisions, including decisions affecting workers. Organisations using automated tools in recruitment face increasing expectations to explain how those tools work and to demonstrate they do not produce discriminatory outcomes - a development directly relevant to the AI job market because the tools in question are themselves AI systems.
 
 For candidates, this means the recruitment process itself is becoming more transparent along several dimensions simultaneously, which shifts the balance of information in a direction that has historically favoured employers. For employers, it means that recruitment practices which were previously internal are increasingly subject to external scrutiny, and that investing in defensible, documented practices is prudent regardless of current obligations.
 
@@ -99,7 +99,7 @@ For practitioners in the governance specialisation discussed elsewhere on this s
 
 During a period where some postings disclose ranges and others do not, candidates face an asymmetric landscape that requires deliberate handling.
 
-When a posting discloses a range, treat it as genuine information but not as a complete answer — ask what determines placement within it and where the employer expects someone with your profile to sit. When a posting does not disclose, asking directly early in the process is reasonable and increasingly expected, and an employer's willingness to answer is itself informative.
+When a posting discloses a range, treat it as genuine information but not as a complete answer - ask what determines placement within it and where the employer expects someone with your profile to sit. When a posting does not disclose, asking directly early in the process is reasonable and increasingly expected, and an employer's willingness to answer is itself informative.
 
 Avoid the trap of anchoring your own expectations to the lowest disclosed ranges you encounter simply because they are visible. Ranges vary by employer size, sector and region for reasons discussed throughout this site, and a range at a small regional employer tells you relatively little about what a larger organisation in a different sector would pay for comparable work.
 
@@ -148,7 +148,7 @@ The Dutch government has been preparing national implementing legislation; natio
 
 **Works councils.** In organisations with a works council, pay structures and job evaluation systems are areas where the council has advisory or consent rights, and the directive strengthens the role of worker representatives in joint pay assessments.
 
-**Job evaluation systems.** Many Dutch employers classify roles using structured job evaluation methods, such as the **ORBA** method developed by the employers' association **AWVN**. For AI roles — often new and inconsistently titled — how a role is classified in such a system determines its salary scale, which makes it worth asking how the classification was made.
+**Job evaluation systems.** Many Dutch employers classify roles using structured job evaluation methods, such as the **ORBA** method developed by the employers' association **AWVN**. For AI roles - often new and inconsistently titled - how a role is classified in such a system determines its salary scale, which makes it worth asking how the classification was made.
 
 **Statistics Netherlands (CBS).** CBS publishes statistics on pay differences between men and women, which provide the national context for the gender pay gap discussion.
 
@@ -162,23 +162,23 @@ The Dutch government has been preparing national implementing legislation; natio
 
 ## Where to Start
 
-Don't rely on general commentary like this article for exact compliance details — check current guidance from an authoritative Dutch source, and expect to see more salary ranges appear in job postings over time as these rules take hold.
+Don't rely on general commentary like this article for exact compliance details - check current guidance from an authoritative Dutch source, and expect to see more salary ranges appear in job postings over time as these rules take hold.
 
 Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate wanting exact dates and thresholds) When exactly does pay transparency become mandatory for Dutch job postings, and what are the thresholds?
-This article deliberately doesn't state specific dates or thresholds, since implementation details are set at the national level and subject to change — check an authoritative Dutch government or labor-law source for current specifics.
+This article deliberately doesn't state specific dates or thresholds, since implementation details are set at the national level and subject to change - check an authoritative Dutch government or labor-law source for current specifics.
 
 ### (Scenario: candidate wondering how this changes negotiation) Does pay transparency eliminate salary negotiation?
-No — it changes what you're negotiating from. A disclosed range still leaves room to negotiate within it, but reduces the information asymmetry that previously existed.
+No - it changes what you're negotiating from. A disclosed range still leaves room to negotiate within it, but reduces the information asymmetry that previously existed.
 
 ### (Scenario: employer wondering about internal impact) How does this affect how employers structure AI role compensation?
 It pushes employers toward more systematic, consistent pay decisions, since inconsistent internal pay becomes harder to justify once ranges must be disclosed externally or reported internally.
 
 ### (Scenario: candidate wondering why AI roles are specifically affected) Why would this matter more for AI roles than other tech roles?
-AI and ML titles have historically had unusually wide, inconsistent salary ranges due to title inconsistency — transparency rules will likely push employers to define these ranges more precisely.
+AI and ML titles have historically had unusually wide, inconsistent salary ranges due to title inconsistency - transparency rules will likely push employers to define these ranges more precisely.
 
 ### (Scenario: candidate wanting to prepare) How should I prepare for these changes as a job seeker?
 Expect more salary ranges to appear in postings over time, and treat a posting's disclosed range as a starting point for questions about where you'd actually land within it, not as a final number.
@@ -188,8 +188,8 @@ Expect more salary ranges to appear in postings over time, and treat a posting's
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "When exactly does pay transparency become mandatory for Dutch job postings, and what are the thresholds?", "acceptedAnswer": {"@type": "Answer", "text": "This article deliberately doesn't state specific dates or thresholds — check an authoritative Dutch government or labor-law source for current specifics."}},
-    {"@type": "Question", "name": "Does pay transparency eliminate salary negotiation?", "acceptedAnswer": {"@type": "Answer", "text": "No — it changes what you're negotiating from, reducing information asymmetry without eliminating negotiation."}},
+    {"@type": "Question", "name": "When exactly does pay transparency become mandatory for Dutch job postings, and what are the thresholds?", "acceptedAnswer": {"@type": "Answer", "text": "This article deliberately doesn't state specific dates or thresholds - check an authoritative Dutch government or labor-law source for current specifics."}},
+    {"@type": "Question", "name": "Does pay transparency eliminate salary negotiation?", "acceptedAnswer": {"@type": "Answer", "text": "No - it changes what you're negotiating from, reducing information asymmetry without eliminating negotiation."}},
     {"@type": "Question", "name": "How does this affect how employers structure AI role compensation?", "acceptedAnswer": {"@type": "Answer", "text": "It pushes employers toward more systematic, consistent pay decisions."}},
     {"@type": "Question", "name": "Why would this matter more for AI roles than other tech roles?", "acceptedAnswer": {"@type": "Answer", "text": "AI and ML titles have historically had unusually wide, inconsistent salary ranges due to title inconsistency."}},
     {"@type": "Question", "name": "How should I prepare for these changes as a job seeker?", "acceptedAnswer": {"@type": "Answer", "text": "Expect more salary ranges to appear in postings, and treat a disclosed range as a starting point for further questions."}}

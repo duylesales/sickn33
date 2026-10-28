@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-A Director of Maintenance or IT lead at a charter airline operating aircraft across multiple regulatory jurisdictions — commonly both the FAA and EASA, given how frequently charter fleets are registered, leased, or contracted to fly under more than one authority — faces a specific compliance reality that's easy to underweight when scoping a maintenance-repair-overhaul (MRO) records system: airworthiness directives (ADs), the mandatory inspection, repair, or modification orders each aviation authority issues for specific aircraft types and components, genuinely differ between regulators, with the FAA and EASA periodically issuing directives on overlapping but non-identical timelines, inspection intervals, and applicability criteria for the same aircraft type. An MRO system architected around a single, hardcoded compliance ruleset risks either genuinely missing a required directive in one jurisdiction or unnecessarily over-scheduling maintenance the aircraft doesn't actually require under the other.
+A Director of Maintenance or IT lead at a charter airline operating aircraft across multiple regulatory jurisdictions - commonly both the FAA and EASA, given how frequently charter fleets are registered, leased, or contracted to fly under more than one authority - faces a specific compliance reality that's easy to underweight when scoping a maintenance-repair-overhaul (MRO) records system: airworthiness directives (ADs), the mandatory inspection, repair, or modification orders each aviation authority issues for specific aircraft types and components, genuinely differ between regulators, with the FAA and EASA periodically issuing directives on overlapping but non-identical timelines, inspection intervals, and applicability criteria for the same aircraft type. An MRO system architected around a single, hardcoded compliance ruleset risks either genuinely missing a required directive in one jurisdiction or unnecessarily over-scheduling maintenance the aircraft doesn't actually require under the other.
 
 ## Why a Single Global Ruleset Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ An MRO records system built around one compliance ruleset applied uniformly acro
 
 ## Why Regulator-Configurable Architecture Is the More Sustainable Approach
 
-An MRO system architected from the start around regulator-configurable directive tracking — able to apply the correct, specific set of applicable airworthiness directives, inspection intervals, and compliance deadlines based on each individual aircraft's actual registration and regulatory authorization — lets an operator maintain full compliance under every regulator actually governing its fleet without over-scheduling unnecessary maintenance elsewhere. This isn't simply a matter of tagging each aircraft with a single regulator, since a dual-registered or cross-leased aircraft can genuinely be subject to more than one regulator's directives simultaneously, meaning the underlying system needs to support per-aircraft, potentially multi-regulator directive applicability, not just a single regulator flag per tail number, to accurately reflect the actual compliance obligations a charter operator's real fleet faces.
+An MRO system architected from the start around regulator-configurable directive tracking - able to apply the correct, specific set of applicable airworthiness directives, inspection intervals, and compliance deadlines based on each individual aircraft's actual registration and regulatory authorization - lets an operator maintain full compliance under every regulator actually governing its fleet without over-scheduling unnecessary maintenance elsewhere. This isn't simply a matter of tagging each aircraft with a single regulator, since a dual-registered or cross-leased aircraft can genuinely be subject to more than one regulator's directives simultaneously, meaning the underlying system needs to support per-aircraft, potentially multi-regulator directive applicability, not just a single regulator flag per tail number, to accurately reflect the actual compliance obligations a charter operator's real fleet faces.
 
 ## What Building Regulator-Configurable Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Luftfahrt-Wartung Linz, a Linz-based charter airline, had built an initial MRO r
 Manifera's Vietnam-based dedicated development team rebuilt the MRO system's core architecture around per-aircraft, per-regulator directive applicability, supporting simultaneous FAA and EASA directive tracking for dual-registered aircraft, reliable directive-update ingestion from both regulators, and audit-ready compliance reporting formatted to each regulator's actual requirements.
 
 > *"We'd assumed one ruleset covering our EASA fleet would just extend naturally to the aircraft we started cross-leasing under FAA registration. It turned out the actual directive picture across our two regulators was different enough that a single ruleset genuinely missed real requirements, and building true per-aircraft configurability was what let us keep flying those routes with a clean compliance record."*
-> — **Director of Maintenance, Luftfahrt-Wartung Linz**
+> - **Director of Maintenance, Luftfahrt-Wartung Linz**
 
 Luftfahrt-Wartung Linz passed its subsequent audit with a fully documented, regulator-correct compliance record for every aircraft in its fleet, and now treats regulator-configurable directive tracking as a standard architectural requirement for any newly acquired or cross-leased aircraft, rather than a single global ruleset assumed to apply everywhere.
 
@@ -79,7 +79,7 @@ Luftfahrt-Wartung Linz passed its subsequent audit with a fully documented, regu
 
 ## Scoping Your Own Charter Airline's MRO System for Multi-Regulator Compliance
 
-Before building or expanding an MRO records system for a fleet operating across multiple regulatory jurisdictions, architect the system around genuinely configurable, per-aircraft, per-regulator directive tracking — a single global ruleset forces an unnecessary trade-off between over-maintenance and real compliance risk. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready MRO system for multi-jurisdiction fleets.
+Before building or expanding an MRO records system for a fleet operating across multiple regulatory jurisdictions, architect the system around genuinely configurable, per-aircraft, per-regulator directive tracking - a single global ruleset forces an unnecessary trade-off between over-maintenance and real compliance risk. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready MRO system for multi-jurisdiction fleets.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between over-scheduling unnecessary maintenance under the str
 
 ### (Scenario: engineering lead scoping regulator configurability) Is a simple single-regulator tag per aircraft sufficient to handle multi-regulator compliance?
 
-Not always — a dual-registered or cross-leased aircraft can genuinely be subject to more than one regulator's directives simultaneously, meaning the system needs to support multi-regulator applicability per aircraft, not a single tag.
+Not always - a dual-registered or cross-leased aircraft can genuinely be subject to more than one regulator's directives simultaneously, meaning the system needs to support multi-regulator applicability per aircraft, not a single tag.
 
 ### (Scenario: compliance officer reviewing technical architecture) Why does reliable directive-update ingestion matter for ongoing compliance?
 
@@ -110,7 +110,7 @@ Airworthiness directives are issued continuously in response to service history 
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: Director of Maintenance scoping an MRO system) Why does airworthiness directive compliance vary meaningfully between regulators?", "acceptedAnswer": { "@type": "Answer", "text": "The FAA and EASA issue directives on overlapping but non-identical timelines and applicability criteria for the same aircraft type." } },
     { "@type": "Question", "name": "(Scenario: charter operator worried about compliance) What's the risk of building an MRO system around a single, hardcoded compliance ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between over-maintenance under one regulator's rules or a compliance gap under the other's, a real audit risk." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regulator configurability) Is a simple single-regulator tag per aircraft sufficient to handle multi-regulator compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — dual-registered aircraft can be subject to more than one regulator's directives simultaneously, requiring multi-regulator applicability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regulator configurability) Is a simple single-regulator tag per aircraft sufficient to handle multi-regulator compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - dual-registered aircraft can be subject to more than one regulator's directives simultaneously, requiring multi-regulator applicability." } },
     { "@type": "Question", "name": "(Scenario: compliance officer reviewing technical architecture) Why does reliable directive-update ingestion matter for ongoing compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Regulators issue new directives continuously, and a system that can't promptly ingest updates risks operating against a stale directive set." } },
     { "@type": "Question", "name": "(Scenario: operator planning for future regulatory change) Why should an MRO system be designed to accommodate an expanding directive landscape, not just current directives?", "acceptedAnswer": { "@type": "Answer", "text": "Directives are issued continuously, and a system requiring manual reconciliation for each new one creates ongoing compliance risk." } }
   ]

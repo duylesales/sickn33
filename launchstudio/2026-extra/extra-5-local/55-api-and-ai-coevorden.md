@@ -20,19 +20,19 @@ Target Persona: Technical Solo Founder
 }
 </script>
 
-An API is a promise: call this endpoint with this data, and this is exactly what you'll get back, every time, under any condition. AI coding tools are not naturally good at keeping that kind of promise. They're good at making an interface work for the one client calling it during development — usually the app's own frontend. The moment a second system enters the picture, the gap between api and ai design intentions becomes very visible, very fast. That's the exact problem a founder building a cross-border trade tool in Coevorden ran into.
+An API is a promise: call this endpoint with this data, and this is exactly what you'll get back, every time, under any condition. AI coding tools are not naturally good at keeping that kind of promise. They're good at making an interface work for the one client calling it during development - usually the app's own frontend. The moment a second system enters the picture, the gap between api and ai design intentions becomes very visible, very fast. That's the exact problem a founder building a cross-border trade tool in Coevorden ran into.
 
 ## Where API and AI Design Diverge
 
-When an AI tool like Lovable or Cursor generates backend endpoints alongside a frontend, it typically optimizes for one thing: does the app that's calling this endpoint work. It does not typically enforce a stable, documented, versioned contract — the kind of interface an external partner, a payment provider, or a logistics system needs in order to integrate reliably.
+When an AI tool like Lovable or Cursor generates backend endpoints alongside a frontend, it typically optimizes for one thing: does the app that's calling this endpoint work. It does not typically enforce a stable, documented, versioned contract - the kind of interface an external partner, a payment provider, or a logistics system needs in order to integrate reliably.
 
-The result is APIs that respond inconsistently depending on internal state, error messages that leak implementation details or stack traces instead of returning clean, predictable error codes, no rate limiting so a single misbehaving client can degrade the service for everyone, and authentication that was designed for a single frontend session rather than for machine-to-machine calls from a partner's system. None of this is visible when the AI tool's own generated frontend is the only thing calling the API. It becomes visible the day a founder needs to plug in a payment processor's webhook, a logistics partner's system, or a customer's own software — exactly the situation where api and ai-generated code needs to behave like infrastructure, not like a demo.
+The result is APIs that respond inconsistently depending on internal state, error messages that leak implementation details or stack traces instead of returning clean, predictable error codes, no rate limiting so a single misbehaving client can degrade the service for everyone, and authentication that was designed for a single frontend session rather than for machine-to-machine calls from a partner's system. None of this is visible when the AI tool's own generated frontend is the only thing calling the API. It becomes visible the day a founder needs to plug in a payment processor's webhook, a logistics partner's system, or a customer's own software - exactly the situation where api and ai-generated code needs to behave like infrastructure, not like a demo.
 
-This distinction matters because "working" and "integrable" are not the same claim. An API can pass every test a founder runs against their own frontend and still be unusable to an outside system, because the outside system doesn't share the frontend's assumptions about session state, field naming, or error handling. A German ERP system calling into a Coevorden-built API doesn't know or care how the Dutch side's frontend expects data to look — it expects a documented, stable contract, and if that contract shifts every time the founder tweaks their own UI, the integration breaks on the partner's side without warning.
+This distinction matters because "working" and "integrable" are not the same claim. An API can pass every test a founder runs against their own frontend and still be unusable to an outside system, because the outside system doesn't share the frontend's assumptions about session state, field naming, or error handling. A German ERP system calling into a Coevorden-built API doesn't know or care how the Dutch side's frontend expects data to look - it expects a documented, stable contract, and if that contract shifts every time the founder tweaks their own UI, the integration breaks on the partner's side without warning.
 
 ## Why This Matters Specifically in Coevorden
 
-Coevorden sits directly on the German border in Drenthe, a fortress town with centuries of history as a trade crossing point, and today home to Europark, an industrial estate shared across the Dutch-German border with the neighboring town of Emlichheim. Businesses here are structurally cross-border: Dutch and German suppliers, customers, and logistics systems that all need to talk to each other, often across systems built in different languages by different vendors on different sides of the border. A founder building software in Coevorden is disproportionately likely to need a real, stable API — connecting to a German ERP system, a customs data feed, a partner's inventory system — not just a nice-looking frontend. That's a fundamentally different engineering requirement than most AI-generated prototypes are built to satisfy, since the AI tool has no visibility into what a foreign partner's legacy system expects to receive.
+Coevorden sits directly on the German border in Drenthe, a fortress town with centuries of history as a trade crossing point, and today home to Europark, an industrial estate shared across the Dutch-German border with the neighboring town of Emlichheim. Businesses here are structurally cross-border: Dutch and German suppliers, customers, and logistics systems that all need to talk to each other, often across systems built in different languages by different vendors on different sides of the border. A founder building software in Coevorden is disproportionately likely to need a real, stable API - connecting to a German ERP system, a customs data feed, a partner's inventory system - not just a nice-looking frontend. That's a fundamentally different engineering requirement than most AI-generated prototypes are built to satisfy, since the AI tool has no visibility into what a foreign partner's legacy system expects to receive.
 
 That makes the api and ai gap a launch-blocker rather than a nice-to-have fix. An interface that only works when called by its own frontend is not useful to a Coevorden business trying to automate a cross-border supply chain, no matter how polished the UI looks in a demo.
 
@@ -46,13 +46,13 @@ Fixing this means treating the AI-generated backend as a first draft rather than
 
 **What separates a real API contract from an endpoint that merely works**
 
-- **Consistent naming and structure across every endpoint** — a field called `customer_id` in one response and `customerId` in another forces every integrating developer to guess, and guessing produces bugs on both sides of the connection
-- **Predictable, documented error responses** — a failed request should return a clear status code and a structured error message, not a raw stack trace or a silent 200 with an error buried in the response body
-- **Versioning from day one** — even a simple `/v1/` prefix on your endpoints means you can change your API later without silently breaking every partner integration that already depends on it
-- **Authentication built for machines, not just browsers** — API keys or OAuth tokens that a partner's backend system can use directly, rather than a session cookie that only makes sense inside a browser tab
-- **Rate limiting and logging** — so that when an integration breaks, you can actually see which requests failed and why, instead of fielding a confused phone call from a partner's IT team with no data to work from
+- **Consistent naming and structure across every endpoint** - a field called `customer_id` in one response and `customerId` in another forces every integrating developer to guess, and guessing produces bugs on both sides of the connection
+- **Predictable, documented error responses** - a failed request should return a clear status code and a structured error message, not a raw stack trace or a silent 200 with an error buried in the response body
+- **Versioning from day one** - even a simple `/v1/` prefix on your endpoints means you can change your API later without silently breaking every partner integration that already depends on it
+- **Authentication built for machines, not just browsers** - API keys or OAuth tokens that a partner's backend system can use directly, rather than a session cookie that only makes sense inside a browser tab
+- **Rate limiting and logging** - so that when an integration breaks, you can actually see which requests failed and why, instead of fielding a confused phone call from a partner's IT team with no data to work from
 
-A founder who checks even three of these five before offering API access to a German supplier or logistics partner will avoid the majority of integration failures LaunchStudio gets called in to fix. The ones most often skipped entirely by AI-generated backends are versioning and machine-friendly authentication — both invisible until the exact moment a second system tries to connect, at which point they become the whole problem.
+A founder who checks even three of these five before offering API access to a German supplier or logistics partner will avoid the majority of integration failures LaunchStudio gets called in to fix. The ones most often skipped entirely by AI-generated backends are versioning and machine-friendly authentication - both invisible until the exact moment a second system tries to connect, at which point they become the whole problem.
 
 ## Real example
 
@@ -65,9 +65,9 @@ LaunchStudio's engineers restructured the API layer with consistent, documented 
 **Result:** GrensHandel's ordering API now integrates directly with two German supplier systems, automating orders that previously required manual email confirmation.
 
 > *"I didn't even know my API was the problem. I thought the German side just had an old system. Turned out my side was never actually built to be called by anything except my own app."*
-> — **Niels Grunwald, Founder, GrensHandel (Coevorden)**
+> - **Niels Grunwald, Founder, GrensHandel (Coevorden)**
 
-**Cost & Timeline:** €1,700 (API restructuring, authentication, documentation) — completed in 7 business days.
+**Cost & Timeline:** €1,700 (API restructuring, authentication, documentation) - completed in 7 business days.
 
 ---
 

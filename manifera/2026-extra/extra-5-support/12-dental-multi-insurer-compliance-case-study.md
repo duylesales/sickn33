@@ -28,7 +28,7 @@ A practice-management system built around a single, globally uniform set of proc
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around a region-configurable rules engine — able to apply the correct scope-of-practice, licensing, and insurance-network-participation rules based on a visit's actual jurisdiction — lets a DSO operate each location fully within its legally permitted scope without unnecessarily restricting operations in more permissive locations. This isn't simply a matter of toggling a single feature per region, since scope-of-practice rules are often considerably more granular than a binary permitted/prohibited distinction — some jurisdictions permit a given procedure under general supervision, others require direct supervision, and still others require a specific additional certification the staff member must hold, meaning the underlying rules engine needs to represent genuinely multi-dimensional conditions per region, not just a location-level on/off switch, to accurately reflect the actual range of regulatory approaches across a DSO's operating footprint.
+A system architected from the start around a region-configurable rules engine - able to apply the correct scope-of-practice, licensing, and insurance-network-participation rules based on a visit's actual jurisdiction - lets a DSO operate each location fully within its legally permitted scope without unnecessarily restricting operations in more permissive locations. This isn't simply a matter of toggling a single feature per region, since scope-of-practice rules are often considerably more granular than a binary permitted/prohibited distinction - some jurisdictions permit a given procedure under general supervision, others require direct supervision, and still others require a specific additional certification the staff member must hold, meaning the underlying rules engine needs to represent genuinely multi-dimensional conditions per region, not just a location-level on/off switch, to accurately reflect the actual range of regulatory approaches across a DSO's operating footprint.
 
 ## What Building a Region-Configurable Compliance Rules Engine Actually Requires
 
@@ -64,7 +64,7 @@ Zahnärztliche Versorgungsgruppe Linz, a Linz-based dental service organization,
 Manifera's Amsterdam team rebuilt the platform's authorization architecture around a configurable, jurisdiction-specific rules engine, supporting both direct-supervision requirements for stricter locations and expanded general-supervision authorization where legally permitted, alongside reliable visit-jurisdiction determination and location-specific insurance-network credentialing accuracy, all without requiring separate, parallel systems per region.
 
 > *"We had one ruleset and assumed we'd just tighten it wherever a new location needed something stricter. What we actually found was that the real regulatory picture across our expansion markets was more varied and more granular than a single ruleset could represent, and building genuine configurability was what let us actually operate every location at its full legal scope instead of just defaulting everyone to the most restrictive rule."*
-> — **IT Manager, Zahnärztliche Versorgungsgruppe Linz**
+> - **IT Manager, Zahnärztliche Versorgungsgruppe Linz**
 
 Zahnärztliche Versorgungsgruppe Linz successfully expanded into its additional target jurisdictions with location-appropriate authorization rules in place, and now treats regulatory configurability as a standard architectural requirement for any new location it onboards, rather than a single ruleset applied uniformly and adjusted reactively.
 
@@ -79,7 +79,7 @@ Zahnärztliche Versorgungsgruppe Linz successfully expanded into its additional 
 
 ## Scoping Your Own Dental Platform's Compliance Architecture
 
-Before expanding a dental practice-management platform across multiple jurisdictions, architect the system around a genuinely configurable, location-specific rules engine — a single hardcoded ruleset forces an unnecessary trade-off between compliance risk and legitimate procedure access. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready dental practice-management platform.
+Before expanding a dental practice-management platform across multiple jurisdictions, architect the system around a genuinely configurable, location-specific rules engine - a single hardcoded ruleset forces an unnecessary trade-off between compliance risk and legitimate procedure access. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready dental practice-management platform.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between unnecessarily restricting legitimate procedures in pe
 
 ### (Scenario: engineering lead scoping regional configurability) Is a simple location on/off toggle sufficient to handle scope-of-practice rules across jurisdictions?
 
-Not always — supervision requirements are often multi-dimensional, involving specific certifications and supervision types, meaning the rules engine needs genuinely configurable, multi-dimensional logic per region, not just a binary toggle.
+Not always - supervision requirements are often multi-dimensional, involving specific certifications and supervision types, meaning the rules engine needs genuinely configurable, multi-dimensional logic per region, not just a binary toggle.
 
 ### (Scenario: compliance counsel reviewing technical architecture) Why does reliable visit-jurisdiction determination matter for compliance?
 
@@ -110,7 +110,7 @@ Scope-of-practice regulation is a genuinely active, evolving area across jurisdi
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-location practice-management system) Why does dental scope-of-practice regulation vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Different jurisdictions apply genuinely different supervision requirements for the same procedure, creating real divergence a DSO's system needs to accommodate." } },
     { "@type": "Question", "name": "(Scenario: DSO worried about compliance) What's the risk of building a practice-management system around a single, hardcoded ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between restricting legitimate procedures or risking a scope-of-practice violation in stricter jurisdictions." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple location on/off toggle sufficient to handle scope-of-practice rules across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — supervision requirements are often multi-dimensional, requiring genuinely configurable logic per region, not a binary toggle." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a simple location on/off toggle sufficient to handle scope-of-practice rules across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - supervision requirements are often multi-dimensional, requiring genuinely configurable logic per region, not a binary toggle." } },
     { "@type": "Question", "name": "(Scenario: compliance counsel reviewing technical architecture) Why does reliable visit-jurisdiction determination matter for compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Correctly applying region-specific rules depends on identifying the jurisdiction governing the actual treating location, not headquarters." } },
     { "@type": "Question", "name": "(Scenario: DSO planning for future regulatory change) Why should a practice-management system be designed to accommodate evolving regulation, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Scope-of-practice regulation is actively evolving, and a system requiring rework for each update creates ongoing compliance risk." } }
   ]

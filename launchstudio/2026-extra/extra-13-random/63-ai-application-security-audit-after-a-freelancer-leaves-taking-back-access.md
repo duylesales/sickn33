@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Application Security Audit After a Freelancer Leaves: Taking Back Access",
-  "description": "When a freelancer or co-founder leaves, the access they held often stays. This article explains the access audit every founder should run — repositories, hosting, databases, keys, domains, payment and email accounts — plus the contractual side of ownership.",
+  "description": "When a freelancer or co-founder leaves, the access they held often stays. This article explains the access audit every founder should run - repositories, hosting, databases, keys, domains, payment and email accounts - plus the contractual side of ownership.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-02",
@@ -35,7 +35,7 @@ This matters for three reasons. Former contributors' accounts can be compromised
 
 **AI builder projects.** Lovable, Bolt, Replit and similar tools have their own project sharing. Former contributors may still be able to edit and publish.
 
-**Hosting and deployment.** Vercel, Netlify, Replit Deployments, AWS or DigitalOcean — check team members, API tokens and connected Git integrations.
+**Hosting and deployment.** Vercel, Netlify, Replit Deployments, AWS or DigitalOcean - check team members, API tokens and connected Git integrations.
 
 **Database and backend.** Supabase or Firebase project members, plus keys. Service role keys and admin credentials a freelancer used should be rotated, not just their user removed.
 
@@ -66,7 +66,7 @@ For the future, a short offboarding checklist turns a stressful audit into a ten
 
 ## An Access Register Template
 
-The central output of an AI application security audit focused on access is an access register — a living document listing every system and who can reach it:
+The central output of an AI application security audit focused on access is an access register - a living document listing every system and who can reach it:
 
 | System | Purpose | Owner account | People with access | Access level | 2FA | Last reviewed |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ The central output of an AI application security audit focused on access is an a
 | Email provider | Transactional email | Company | Founder | Owner | Yes | Date |
 | Error tracking | Monitoring | Company org | Founder, developer | Admin, member | Yes | Date |
 
-Alongside it, keep a secrets register listing each key's name, the service it belongs to, where it is stored and when it was last rotated — never the value itself. Review both monthly and after anyone joins or leaves.
+Alongside it, keep a secrets register listing each key's name, the service it belongs to, where it is stored and when it was last rotated - never the value itself. Review both monthly and after anyone joins or leaves.
 
 ## Rotating Keys Without Downtime
 
@@ -102,7 +102,7 @@ Former contributors often retain access in places nobody checks:
 - **OAuth apps** authorised to act on your accounts.
 - **Automation tools** (n8n, Make, Zapier) connected with their credentials.
 - **Shared password managers or chat messages** containing keys.
-- **Local `.env` files** on their machines — which is why rotation, not just removal, matters.
+- **Local `.env` files** on their machines - which is why rotation, not just removal, matters.
 - **Backup copies or exports** of your database they may have downloaded.
 
 Ask departing contributors, politely and in writing, to delete local copies of code, data and credentials, and to confirm they have done so.
@@ -135,19 +135,19 @@ After someone leaves, review logs for the preceding weeks and following days: un
 
 ## Making It Routine
 
-Access hygiene works best as a monthly habit: ten minutes to compare the register with reality, remove stale access and note any rotations due. Founders who make this routine rarely face stressful clean-ups — and can answer an investor's or customer's access question in seconds.
+Access hygiene works best as a monthly habit: ten minutes to compare the register with reality, remove stale access and note any rotations due. Founders who make this routine rarely face stressful clean-ups - and can answer an investor's or customer's access question in seconds.
 
 ## Special Cases: Co-Founders and Agencies
 
-Co-founder departures are more complex than freelancer departures, because co-founders often created the accounts in the first place and may hold shares. Handle access and ownership in the same shareholder or separation agreement: which accounts transfer, by when, and how credentials are handed over. For agencies that built your app, ask for a formal handover — repository transfer, credentials, documentation, a list of third-party accounts they created on your behalf — before the final invoice is paid. Both situations are much easier to resolve while relationships are good.
+Co-founder departures are more complex than freelancer departures, because co-founders often created the accounts in the first place and may hold shares. Handle access and ownership in the same shareholder or separation agreement: which accounts transfer, by when, and how credentials are handed over. For agencies that built your app, ask for a formal handover - repository transfer, credentials, documentation, a list of third-party accounts they created on your behalf - before the final invoice is paid. Both situations are much easier to resolve while relationships are good.
 
 ## Least Privilege for Everyday Work
 
-Access audits often reveal that everyone has owner or admin rights, simply because it was easiest. Reduce privileges to what each person needs: developers rarely need to change billing, bookkeepers need read-only payment access, support staff need a support view rather than database access. Fewer privileged accounts means fewer ways for a compromised account to cause serious damage — and a smaller list to review each month.
+Access audits often reveal that everyone has owner or admin rights, simply because it was easiest. Reduce privileges to what each person needs: developers rarely need to change billing, bookkeepers need read-only payment access, support staff need a support view rather than database access. Fewer privileged accounts means fewer ways for a compromised account to cause serious damage - and a smaller list to review each month.
 
 ## What Investors and Customers Ask
 
-Due-diligence questionnaires and enterprise security reviews commonly ask: Who has administrative access to production? How is access granted and revoked? Is MFA enforced? How are secrets managed and rotated? When was access last reviewed? An up-to-date access register and offboarding checklist answer all five. Founders who can share these documents immediately stand out — and avoid the scramble that turns a routine question into a week of detective work.
+Due-diligence questionnaires and enterprise security reviews commonly ask: Who has administrative access to production? How is access granted and revoked? Is MFA enforced? How are secrets managed and rotated? When was access last reviewed? An up-to-date access register and offboarding checklist answer all five. Founders who can share these documents immediately stand out - and avoid the scramble that turns a routine question into a week of detective work.
 
 ## Tooling That Helps
 
@@ -155,7 +155,7 @@ Several tools make access management easier for small teams: a team password man
 
 ## The Principle
 
-Access should always belong to the company and be granted to people — never the other way round. When that principle holds, contributors can come and go without leaving doors open behind them.
+Access should always belong to the company and be granted to people - never the other way round. When that principle holds, contributors can come and go without leaving doors open behind them.
 
 ## Start Today
 
@@ -182,15 +182,15 @@ LaunchStudio's engineers transferred the repository and Supabase project to Nadi
 **Result:** Nadia sent the access register to the removals company, and the partnership went ahead. Verhuisvriend now runs a ten-minute offboarding checklist whenever a contractor finishes.
 
 > *"Nobody had done anything wrong. But if one of them had lost their laptop, they'd have lost my business along with it."*
-> — **Nadia Bakkali, Founder, Verhuisvriend (Alphen aan den Rijn)**
+> - **Nadia Bakkali, Founder, Verhuisvriend (Alphen aan den Rijn)**
 
-**Cost & Timeline:** €1,300 (access audit, ownership transfer, key rotation and access register) — completed in 5 business days.
+**Cost & Timeline:** €1,300 (access audit, ownership transfer, key rotation and access register) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### What should an AI application security audit check after a freelancer leaves?
 
-Every account and key the freelancer could reach: repository, AI builder projects, hosting, database, payment, email and analytics providers, domain registrar and app stores — plus whether IP was formally assigned to your company.
+Every account and key the freelancer could reach: repository, AI builder projects, hosting, database, payment, email and analytics providers, domain registrar and app stores - plus whether IP was formally assigned to your company.
 
 ### Is removing a freelancer's user account enough?
 
@@ -198,7 +198,7 @@ No. Keys and tokens they saw or created keep working after their account is remo
 
 ### Can rotating API keys break my live app?
 
-It can if done out of order. Create the new key, update every environment, deploy and verify, then revoke the old key — ideally at a quiet time.
+It can if done out of order. Create the new key, update every environment, deploy and verify, then revoke the old key - ideally at a quiet time.
 
 ### Why does Manifera treat access control as part of security, not administration?
 

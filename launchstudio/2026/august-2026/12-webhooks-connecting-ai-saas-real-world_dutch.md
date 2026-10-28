@@ -35,9 +35,9 @@ Wanneer uw AI-applicatie uitsluitend tekstuele invoer accepteert en tekst retour
 
 ## Het verschil tussen API's en Webhooks
 
-Beschouw een traditionele API als een telefoongesprek waarin u een vraag stelt. Uw server vraagt periodiek aan HubSpot: "Zijn er nieuwe leads binnengekomen?" U moet elke 5 minuten blijven peilen (polling) om op de hoogte te blijven. Dit is inefficiënt, verbruikt uw rate-limit budget en introduceert onnodige vertraging — een lead ligt immers tot wel 5 minuten te wachten voordat uw AI deze opmerkt.
+Beschouw een traditionele API als een telefoongesprek waarin u een vraag stelt. Uw server vraagt periodiek aan HubSpot: "Zijn er nieuwe leads binnengekomen?" U moet elke 5 minuten blijven peilen (polling) om op de hoogte te blijven. Dit is inefficiënt, verbruikt uw rate-limit budget en introduceert onnodige vertraging - een lead ligt immers tot wel 5 minuten te wachten voordat uw AI deze opmerkt.
 
-Een Webhook fungeert daarentegen als een semafoor. U geeft HubSpot simpelweg de URL van uw server. Op de exacte milliseconde dat een nieuwe lead binnenkomt, stuurt HubSpot een HTTP POST-verzoek (de webhook) rechtstreeks naar uw URL met daarin de complete leadgegevens als JSON-payload. Dit is direct, event-driven en uiterst efficiënt. Vrijwel alle moderne platforms — zoals Stripe, GitHub, Zendesk, HubSpot en Shopify — ondersteunen webhooks om deze reden.
+Een Webhook fungeert daarentegen als een semafoor. U geeft HubSpot simpelweg de URL van uw server. Op de exacte milliseconde dat een nieuwe lead binnenkomt, stuurt HubSpot een HTTP POST-verzoek (de webhook) rechtstreeks naar uw URL met daarin de complete leadgegevens als JSON-payload. Dit is direct, event-driven en uiterst efficiënt. Vrijwel alle moderne platforms - zoals Stripe, GitHub, Zendesk, HubSpot en Shopify - ondersteunen webhooks om deze reden.
 
 ## Inkomende Webhooks: De AI automatisch activeren
 
@@ -49,8 +49,8 @@ In plaats daarvan configureert u een inkomend webhook-endpoint. U instrueert Zen
 
 1. Een klant dient om 02:00 uur 's nachts een Zendesk-ticket in.
 2. Zendesk stuurt direct een webhook naar uw Next.js API-route.
-3. Uw endpoint retourneert binnen enkele milliseconden een HTTP 200-status — dit is cruciaal, omdat providers uw webhook uitschakelen als uw server structureel te traag antwoordt.
-4. De werkelijke taak — het analyseren van de tekst met een LLM om categorie en prioriteit te bepalen — wordt asynchroon afgehandeld in een achtergrondwachtrij (job queue), buiten de synchrone webhook-handler om.
+3. Uw endpoint retourneert binnen enkele milliseconden een HTTP 200-status - dit is cruciaal, omdat providers uw webhook uitschakelen als uw server structureel te traag antwoordt.
+4. De werkelijke taak - het analyseren van de tekst met een LLM om categorie en prioriteit te bepalen - wordt asynchroon afgehandeld in een achtergrondwachtrij (job queue), buiten de synchrone webhook-handler om.
 5. Uw server voert een uitgaande API-aanroep uit naar Zendesk om het ticket van de juiste tags te voorzien en door te sturen naar de juiste afdeling, nog voordat het supportteam 's ochtends begint.
 
 Dit is de kracht van een "Invisible UI": de AI levert enorme bedrijfswaarde zonder dat een medewerker ooit in uw applicatie hoeft in te loggen.
@@ -101,7 +101,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 **Resultaat:** Frauduleuze registraties daalden naar nul en de omzet van zijn SaaS-platform werd direct veiliggesteld.
 
-**Kosten & tijdlijn:** €1.100 (Webhook Security Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.100 (Webhook Security Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 

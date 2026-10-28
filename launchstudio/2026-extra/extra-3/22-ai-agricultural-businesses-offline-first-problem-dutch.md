@@ -51,7 +51,7 @@ Echte offline-functionaliteit is niet iets wat gemakkelijk achteraf wordt toegev
 
 [LaunchStudio](https://launchstudio.eu/nl/) bouwt echte offline-first functionaliteit voor AI-tools die agrarische en andere landelijke of in verbinding beperkte gebruikers bedienen. Wij behandelen dit vanaf het begin als een bewuste ontwerpbeslissing in plaats van een nagedachte, ondersteund door Manifera's bredere engineeringervaring in het bouwen van veerkrachtige applicaties voor oprecht wisselende praktijkomstandigheden.
 
-[Laat uw tool bouwen voor de verbindingsomstandigheden waarmee uw daadwerkelijke gebruikers te maken krijgen](https://launchstudio.eu/nl/#calculator) — de meeste productierichtlijnen gaan uit van een verbinding die agrarische gebruikers vaak simpelweg niet hebben.
+[Laat uw tool bouwen voor de verbindingsomstandigheden waarmee uw daadwerkelijke gebruikers te maken krijgen](https://launchstudio.eu/nl/#calculator) - de meeste productierichtlijnen gaan uit van een verbinding die agrarische gebruikers vaak simpelweg niet hebben.
 
 ## Een kader om te beslissen wat daadwerkelijk offline moet werken
 
@@ -78,9 +78,9 @@ Zodra GewasLog echte boeren bereikte, rapporteerden verschillende gebruikers dat
 **Resultaat:** LaunchStudio herbouwde GewasLog's kernlogstroom rond local-first data-opslag, waardoor boeren veldobservaties volledig offline konden registreren met automatische synchronisatie zodra ze weer binnen bereik van een verbinding waren. Ook werd er een gecacht, periodiek bijgewerkt risicobeoordelingsmodel toegevoegd dat met redelijke nauwkeurigheid kon functioneren, zelfs zonder een live AI-modelverbinding voor onmiddellijk veldgebruik.
 
 > *"Ik testte de hele tijd dat ik het bouwde vanaf mijn keukentafel, wat betekende dat ik nooit één keer heb ervaren hoe de daadwerkelijke akkers zijn. De app werkte perfect voor mij en was bijna nutteloos voor de daadwerkelijke mensen die het gebruikten op de daadwerkelijke plek waar het bedoeld was te worden gebruikt."*
-> — **Gerben Hofstede, Oprichter, GewasLog (Drenthe)**
+> - **Gerben Hofstede, Oprichter, GewasLog (Drenthe)**
 
-**Kosten en tijdlijn:** € 3.100 (offline-first architectuur-herbouw) — voltooid in 13 werkdagen.
+**Kosten en tijdlijn:** € 3.100 (offline-first architectuur-herbouw) - voltooid in 13 werkdagen.
 
 ---
 
@@ -116,7 +116,7 @@ Aanzienlijk meer, vergelijkbaar met andere architectuurbeslissingen die in brede
       "name": "Heeft elke agrarische AI-tool volledige offline-functionaliteit nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Afhankelijk van waar en hoe de kernfunctionaliteit wordt gebruikt — veldgebruik heeft het meer nodig dan kantoorgebruik."
+        "text": "Afhankelijk van waar en hoe de kernfunctionaliteit wordt gebruikt - veldgebruik heeft het meer nodig dan kantoorgebruik."
       }
     },
     {
@@ -148,7 +148,7 @@ Aanzienlijk meer, vergelijkbaar met andere architectuurbeslissingen die in brede
       "name": "Kost offline-functionaliteit achteraf inbouwen meer dan vooraf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanzienlijk meer — het is een fundamentele keuze die datastructuur en synchronisatie door de hele app beïnvloedt."
+        "text": "Aanzienlijk meer - het is een fundamentele keuze die datastructuur en synchronisatie door de hele app beïnvloedt."
       }
     }
   ]

@@ -21,15 +21,15 @@ Content Format: Sector Analysis
 }
 </script>
 
-Nederland is een van de meest logistiek-intensieve economieën van Europa. De grootste haven van Europa, een grote vrachtluchthaven, dichte binnenwateren, een positie als Europese distributiebasis voor veel internationale bedrijven, en een agrarische exportsector die bederfelijke goederen op schaal beweegt. Voor een kwantitatieve professional levert dat een ongewoon grote markt op — en een waarin de schaarse vaardigheid niet is wat kandidaten verwachten.
+Nederland is een van de meest logistiek-intensieve economieën van Europa. De grootste haven van Europa, een grote vrachtluchthaven, dichte binnenwateren, een positie als Europese distributiebasis voor veel internationale bedrijven, en een agrarische exportsector die bederfelijke goederen op schaal beweegt. Voor een kwantitatieve professional levert dat een ongewoon grote markt op - en een waarin de schaarse vaardigheid niet is wat kandidaten verwachten.
 
 ## Het tekort zit in operations research
 
-Opleidingen in data science hebben zich het afgelopen decennium sterk geconcentreerd op statistisch leren: regressie, classificatie, neurale methoden en de tooling eromheen. Operations research — lineaire en integer programmering, combinatorische optimalisatie, heuristiek- en metaheuristiekontwerp, wachttijdtheorie, simulatie — wordt minder onderwezen en minder gestudeerd dan een generatie terug.
+Opleidingen in data science hebben zich het afgelopen decennium sterk geconcentreerd op statistisch leren: regressie, classificatie, neurale methoden en de tooling eromheen. Operations research - lineaire en integer programmering, combinatorische optimalisatie, heuristiek- en metaheuristiekontwerp, wachttijdtheorie, simulatie - wordt minder onderwezen en minder gestudeerd dan een generatie terug.
 
 De vraag naar operations research daalde niet. Logistieke bedrijven hebben nog steeds iemand nodig die een voertuigrouteringsprobleem correct formuleert, een passende oplossingsmethode kiest en er een uitvoerbaar antwoord uit een solver haalt. Ze vinden het aanzienlijk makkelijker iemand aan te nemen die een voorspelmodel kan fitten.
 
-Het gevolg is een echte asymmetrie. De optimalisatiekant van logistiek is een minder druk specialisme dan de voorspelkant, het werk is vaak directer waardevol, en de kennis is stabiel — een integer-programmeringsformulering die je nu leert, blijft onbeperkt correct.
+Het gevolg is een echte asymmetrie. De optimalisatiekant van logistiek is een minder druk specialisme dan de voorspelkant, het werk is vaak directer waardevol, en de kennis is stabiel - een integer-programmeringsformulering die je nu leert, blijft onbeperkt correct.
 
 ## Wat de problemen werkelijk zijn
 

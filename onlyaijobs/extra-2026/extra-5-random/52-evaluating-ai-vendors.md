@@ -42,7 +42,7 @@ Before speaking to anyone, write down three things: the decision or process you 
 
 This sounds obvious and is routinely skipped. Organisations that begin with "we should be using AI" end up buying a capability and then searching for a use, which is the most reliable way to waste a budget.
 
-If you cannot state the current cost of the problem — hours spent, errors made, revenue lost, decisions delayed — you are not ready to buy, because you will have no basis for judging whether the product worked.
+If you cannot state the current cost of the problem - hours spent, errors made, revenue lost, decisions delayed - you are not ready to buy, because you will have no basis for judging whether the product worked.
 
 ## Evaluating AI Vendors: The Questions That Matter
 
@@ -52,7 +52,7 @@ If you cannot state the current cost of the problem — hours spent, errors made
 
 **What happens with our data?** Where it is processed and stored, whether it is used to improve their models, who can access it, and what happens when the contract ends.
 
-**Who else like us uses it?** Not a logo wall — a reference customer of similar size in a similar sector, whom you can call without the vendor present.
+**Who else like us uses it?** Not a logo wall - a reference customer of similar size in a similar sector, whom you can call without the vendor present.
 
 **What does integration actually require?** From us, in staff time, over what period.
 
@@ -114,7 +114,7 @@ Ask explicitly whether your data is used to train models. Many vendors offer a c
 
 Check retention: how long inputs, outputs and logs are kept, and whether deletion is genuine.
 
-In regulated sectors — health, finance, public administration — additional sector rules and supervisory expectations apply, and procurement rules may require formal tendering. Involve legal and data protection colleagues at the evaluation stage rather than at signature, where they become an obstacle rather than a contributor.
+In regulated sectors - health, finance, public administration - additional sector rules and supervisory expectations apply, and procurement rules may require formal tendering. Involve legal and data protection colleagues at the evaluation stage rather than at signature, where they become an obstacle rather than a contributor.
 
 ## Regulatory Obligations as a Buyer
 
@@ -174,7 +174,7 @@ Review annually against the criteria you set at the start, and be willing to con
 
 ## How OnlyAIJobs Fits a Build Decision
 
-If your evaluation concludes that you should build rather than buy, you need people. OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position — vacancies compete on how clearly they are written.
+If your evaluation concludes that you should build rather than buy, you need people. OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position - vacancies compete on how clearly they are written.
 
 For organisations outside the main technology centres, one detail matters particularly: listings show the exact address and the distance from the candidate's home, which surfaces employers that candidates would otherwise never find. That is the problem the platform was built for, after an observation in Noord-Brabant that people were leaving for the Randstad without knowing which local companies did this work.
 

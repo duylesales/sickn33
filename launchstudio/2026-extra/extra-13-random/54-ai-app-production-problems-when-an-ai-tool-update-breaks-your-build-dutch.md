@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Productieproblemen met AI-Apps: Wanneer een Update van je AI-Tool de Build Breekt",
-  "description": "AI-codingtools veranderen continu — modellen, templates, dependencies en platforminstellingen. Dit artikel legt uit hoe die wijzigingen productieproblemen veroorzaken in live apps, waarom ze lastig te detecteren zijn en hoe versie-pinning, lockfiles, tests en staging je beschermen.",
+  "description": "AI-codingtools veranderen continu - modellen, templates, dependencies en platforminstellingen. Dit artikel legt uit hoe die wijzigingen productieproblemen veroorzaken in live apps, waarom ze lastig te detecteren zijn en hoe versie-pinning, lockfiles, tests en staging je beschermen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-23",
@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
 }
 </script>
 
-Op vrijdag werkte je applicatie nog perfect. Op maandagochtend vroeg je de AI-tool om een kleine tekstuele wijziging op de prijzenpagina — en plotseling mislukte de build. Of erger nog: de build slaagde, maar brak geruisloos iets totaal ongerelateerds elders in de app. Zelf had je niets anders aangepast. Maar de tool wel: het onderliggende AI-model werd geüpdatet, de templates veranderden, er werd stiekem een package-versie verhoogd of het bestand werd net iets anders gegenereerd dan de vorige keer. Dit is een categorie van AI-app productieproblemen die vóór de komst van AI-codeertools nauwelijks bestond, en die toeneemt naarmate je applicatie langer draait.
+Op vrijdag werkte je applicatie nog perfect. Op maandagochtend vroeg je de AI-tool om een kleine tekstuele wijziging op de prijzenpagina - en plotseling mislukte de build. Of erger nog: de build slaagde, maar brak geruisloos iets totaal ongerelateerds elders in de app. Zelf had je niets anders aangepast. Maar de tool wel: het onderliggende AI-model werd geüpdatet, de templates veranderden, er werd stiekem een package-versie verhoogd of het bestand werd net iets anders gegenereerd dan de vorige keer. Dit is een categorie van AI-app productieproblemen die vóór de komst van AI-codeertools nauwelijks bestond, en die toeneemt naarmate je applicatie langer draait.
 
 ## De Vier Manieren Waarop Jouw Tool Onder Je Voeten Verandert
 
@@ -29,7 +29,7 @@ Op vrijdag werkte je applicatie nog perfect. Op maandagochtend vroeg je de AI-to
 
 **Templates en standaarden wijzigen.** App-builders zoals Lovable of Bolt werken hun projecttemplates, standaardconfiguraties en aanbevolen bibliotheken bij. Wijzigingen in een ouder project kunnen daardoor nieuwere standaarden binnenhalen die botsen met je bestaande architectuur.
 
-**Dependencies drijven af (dependency drift).** Als je project geen exacte versienummers vastlegt — of als de tool dependencies stilletjes bijwerkt tijdens een andere taak — krijg je ineens een andere set softwarebibliotheken dan degene die je hebt getest. Een ogenschijnlijk kleine update van een authenticatie- of database-client kan het gedrag al wezenlijk veranderen.
+**Dependencies drijven af (dependency drift).** Als je project geen exacte versienummers vastlegt - of als de tool dependencies stilletjes bijwerkt tijdens een andere taak - krijg je ineens een andere set softwarebibliotheken dan degene die je hebt getest. Een ogenschijnlijk kleine update van een authenticatie- of database-client kan het gedrag al wezenlijk veranderen.
 
 **Platformdiensten evolueren.** De hosting- en backend-diensten waarop je vertrouwt (Supabase, Firebase, Vercel, Replit, payment providers) updaten hun API's, runtime-versies en standaardinstellingen. Een app die vandaag wordt uitgerold kan draaien op een nieuwere Node.js-versie dan degene waarop je de app oorspronkelijk hebt gebouwd.
 
@@ -42,15 +42,15 @@ Op vrijdag werkte je applicatie nog perfect. Op maandagochtend vroeg je de AI-to
 
 ## Beveiliging 1: Versiebeheer Dat Je Daadwerkelijk Gebruikt
 
-Elke wijziging moet worden vastgelegd als een commit in Git, waarbij de volledige diff inzichtelijk is. De meeste AI-builders ondersteunen synchronisatie met GitHub; maak hier consequent gebruik van. Zodra er iets breekt, kun je de code direct vergelijken met de laatst werkende versie en deze exact herstellen — in plaats van te hopen dat een AI-prompt het weer juist nabootst.
+Elke wijziging moet worden vastgelegd als een commit in Git, waarbij de volledige diff inzichtelijk is. De meeste AI-builders ondersteunen synchronisatie met GitHub; maak hier consequent gebruik van. Zodra er iets breekt, kun je de code direct vergelijken met de laatst werkende versie en deze exact herstellen - in plaats van te hopen dat een AI-prompt het weer juist nabootst.
 
 ## Beveiliging 2: Lockfiles en Vastgepinde Versies (Version Pinning)
 
-Commit altijd je lockfile (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`) en beschouw wijzigingen daarin als cruciaal. Pin grote runtime-versies (zoals Node.js of Python) expliciet vast in je configuratie. Updates van dependencies moeten een weloverwogen, separate actie zijn — bij voorkeur via geautomatiseerde pull requests (zoals Dependabot of Renovate) die je tests doorlopen — en nooit een toevallig bijproduct van het bouwen van een nieuwe functionaliteit.
+Commit altijd je lockfile (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`) en beschouw wijzigingen daarin als cruciaal. Pin grote runtime-versies (zoals Node.js of Python) expliciet vast in je configuratie. Updates van dependencies moeten een weloverwogen, separate actie zijn - bij voorkeur via geautomatiseerde pull requests (zoals Dependabot of Renovate) die je tests doorlopen - en nooit een toevallig bijproduct van het bouwen van een nieuwe functionaliteit.
 
 ## Beveiliging 3: Tests op de Kernprocessen Die Erover Gaan
 
-Een compacte set geautomatiseerde tests op je meest kritieke stromen — registratie, inloggen, wachtwoordherstel, de kernactie van je product, betalingen en accountverwijdering — vangt de meeste regressies door onverwachte wijzigingen af. Deze tests draaien bij elke codewijziging, óók bij die "snelle tekstaanpassing", wat precies het moment is waarop regressies er stiekem insluipen.
+Een compacte set geautomatiseerde tests op je meest kritieke stromen - registratie, inloggen, wachtwoordherstel, de kernactie van je product, betalingen en accountverwijdering - vangt de meeste regressies door onverwachte wijzigingen af. Deze tests draaien bij elke codewijziging, óók bij die "snelle tekstaanpassing", wat precies het moment is waarop regressies er stiekem insluipen.
 
 ## Beveiliging 4: Staging Vóór Productie
 
@@ -68,7 +68,7 @@ Meld je aan voor releasenotes en deprecation-berichten van je hosting-, database
 
 Wanneer er iets misgaat na een wijziging door een AI-tool, zorgt een gestructureerde diagnose snel voor de oorzaak:
 
-1. **Identificeer de laatst bekende goede versie** — een specifieke Git-commit of deployment waarin het probleem nog niet optrad.
+1. **Identificeer de laatst bekende goede versie** - een specifieke Git-commit of deployment waarin het probleem nog niet optrad.
 2. **Vergelijk met de defecte versie**: gebruik `git diff` tussen beide en focus op aangepaste bestanden buiten het gebied dat je eigenlijk wilde wijzigen.
 3. **Controleer het lockfile-verschil**: welke dependencies zijn van versienummer gewijzigd? Lees de changelogs van die packages op zoek naar breaking changes of subtiele gedragsveranderingen.
 4. **Controleer runtime- en platformversies**: heeft je hostingprovider de Node.js-versie geüpgraded, of is er een backend-SDK stilletjes vernieuwd?
@@ -93,7 +93,7 @@ Geautomatiseerde update-pull-requests voorzien van tests geven je actuele softwa
 
 ## Changelogs Efficiënt Lezen
 
-Je hoeft niet elke changelog van A tot Z door te nemen. Scan bij geüpdatete packages gericht op termen als "breaking", "deprecated", "changed default", "security" en alles wat betrekking heeft op datums, authenticatie, sessies, afrondingen of serialisatie — precies de gebieden waar ongemerkte gedragswijzigingen de meeste schade aanrichten. Lees bij grote major-versies altijd de migratiegids vooraf. Veel AI-tools kunnen een changelog prima voor je samenvatten; verifieer die samenvatting bij twijfel altijd aan de hand van de originele documentatie.
+Je hoeft niet elke changelog van A tot Z door te nemen. Scan bij geüpdatete packages gericht op termen als "breaking", "deprecated", "changed default", "security" en alles wat betrekking heeft op datums, authenticatie, sessies, afrondingen of serialisatie - precies de gebieden waar ongemerkte gedragswijzigingen de meeste schade aanrichten. Lees bij grote major-versies altijd de migratiegids vooraf. Veel AI-tools kunnen een changelog prima voor je samenvatten; verifieer die samenvatting bij twijfel altijd aan de hand van de originele documentatie.
 
 ## Projectregels die Onbedoelde Wijzigingen Voorkomen
 
@@ -101,7 +101,7 @@ De meeste AI-codeertools ondersteunen systeemprompts of projectregels. Regels di
 
 ## Tests als Vangnet tegen Verloop
 
-Regressies door dependency drift manifesteren zich meestal in overkoepelende functionaliteit: authenticatie, sessieverlenging, datumverwerking, formattering en transactionele e-mails. Geef tests op deze onderdelen prioriteit. Een compacte testsuite — inloggen en sessieverlenging, wachtwoordherstel, datumweergave over tijdzones en zomertijdgrenzen heen, een complete testbetaling en het renderen van e-mails — vangt de meeste problemen af vóór de release. Voer deze testsuite uit bij elke codewijziging, inclusief updates van packages.
+Regressies door dependency drift manifesteren zich meestal in overkoepelende functionaliteit: authenticatie, sessieverlenging, datumverwerking, formattering en transactionele e-mails. Geef tests op deze onderdelen prioriteit. Een compacte testsuite - inloggen en sessieverlenging, wachtwoordherstel, datumweergave over tijdzones en zomertijdgrenzen heen, een complete testbetaling en het renderen van e-mails - vangt de meeste problemen af vóór de release. Voer deze testsuite uit bij elke codewijziging, inclusief updates van packages.
 
 ## Monitoren op Gedragsveranderingen
 
@@ -117,7 +117,7 @@ Builders zoals Lovable regenereren soms grotere delen van een project dan je pro
 
 ## Updates Afstemmen op de Bedrijfsagenda
 
-Timing is cruciaal. Vermijd dependency-upgrades en grootschalige AI-refactors vlak voor piekmomenten van je onderneming — het begin van het watersportseizoen voor een zeilschool, de feestdagen voor een webshop of de kwartaalafsluiting voor een B2B SaaS. Plan dit soort werkzaamheden in rustige weken, zodat er tijd is om eventuele kinderziektes op te vangen. Veel incidenten ontstaan niet doordat updates slecht zijn, maar doordat ze op het slechtst denkbare moment worden doorgevoerd.
+Timing is cruciaal. Vermijd dependency-upgrades en grootschalige AI-refactors vlak voor piekmomenten van je onderneming - het begin van het watersportseizoen voor een zeilschool, de feestdagen voor een webshop of de kwartaalafsluiting voor een B2B SaaS. Plan dit soort werkzaamheden in rustige weken, zodat er tijd is om eventuele kinderziektes op te vangen. Veel incidenten ontstaan niet doordat updates slecht zijn, maar doordat ze op het slechtst denkbare moment worden doorgevoerd.
 
 ## Gevoelige Onderdelen Documenteren
 
@@ -129,7 +129,7 @@ Als er ondanks alle voorzorgsmaatregelen toch een regressie op productie belandt
 
 ## Het Onderliggende Principe
 
-AI-tools en hostingplatforms zullen blijven veranderen — dat is juist een groot deel van hun kracht. Jouw taak is niet om verandering tegen te houden, maar om elke wijziging inzichtelijk en omkeerbaar te maken: elke aanpassing in Git, elke dependency vastgepind en bewust bijgewerkt, elk bedrijfskritisch proces gedekt door een test en elke release eenvoudig terug te draaien. Met dat fundament worden updates waardevolle verbeteringen in plaats van onaangename verrassingen.
+AI-tools en hostingplatforms zullen blijven veranderen - dat is juist een groot deel van hun kracht. Jouw taak is niet om verandering tegen te houden, maar om elke wijziging inzichtelijk en omkeerbaar te maken: elke aanpassing in Git, elke dependency vastgepind en bewust bijgewerkt, elk bedrijfskritisch proces gedekt door een test en elke release eenvoudig terug te draaien. Met dat fundament worden updates waardevolle verbeteringen in plaats van onaangename verrassingen.
 
 ## Een Wekelijkse Drift-Check
 
@@ -149,16 +149,16 @@ Heeft een recente update je applicatie onverwachts gebroken? [Stuur ons je proto
 
 Lars Nieuwenhuis runt een zeilschool aan het IJsselmeer nabij Hoorn en bouwde Zeilschool in Lovable: cursisten boeken lessen, betalen direct via iDEAL, kiezen boottypes en ontvangen weersafhankelijke bevestigingen. De applicatie draaide een heel seizoen probleemloos en verwerkte zo'n 1.100 boekingen.
 
-In het vroege voorjaar vroeg Lars aan Lovable om de teksten op de pagina met het cursusoverzicht aan te passen. De nieuwe teksten zagen er uitstekend uit. Twee dagen later belde een bezorgde cursist: haar boekingsbevestiging toonde een verkeerde datum. Nader onderzoek wees uit dat dezelfde edit per ongeluk de gedeelde datumformattering had geregenereerd met een andere library, die datums interpreteerde in UTC — waardoor boekingen die 's avonds werden geplaatst, in bevestigingen en lesroosters een dag vooruit schoven. De lockfile was nooit gecommit, en een update van de Supabase-client die stilletjes was meegekomen verstoorde bovendien de vernieuwing van gebruikerssessies, waardoor cursisten halverwege het boekingsproces werden uitgelogd. Een poging om Lovable te vragen de code terug te draaien resulteerde in een derde codevariant met weer nieuwe kuren.
+In het vroege voorjaar vroeg Lars aan Lovable om de teksten op de pagina met het cursusoverzicht aan te passen. De nieuwe teksten zagen er uitstekend uit. Twee dagen later belde een bezorgde cursist: haar boekingsbevestiging toonde een verkeerde datum. Nader onderzoek wees uit dat dezelfde edit per ongeluk de gedeelde datumformattering had geregenereerd met een andere library, die datums interpreteerde in UTC - waardoor boekingen die 's avonds werden geplaatst, in bevestigingen en lesroosters een dag vooruit schoven. De lockfile was nooit gecommit, en een update van de Supabase-client die stilletjes was meegekomen verstoorde bovendien de vernieuwing van gebruikerssessies, waardoor cursisten halverwege het boekingsproces werden uitgelogd. Een poging om Lovable te vragen de code terug te draaien resulteerde in een derde codevariant met weer nieuwe kuren.
 
 In vijf werkdagen tijd herstelden de ingenieurs van LaunchStudio de laatst bekende goede codeversie uit de repository-geschiedenis die Lovable naar GitHub had gesynchroniseerd, herschreven ze de datumverwerking zodat deze expliciet de Europe/Amsterdam-tijdzone gebruikt, committen en pinden ze de lockfile en Node.js-versie, configureerden ze Dependabot inclusief geautomatiseerde testcontrole, voegden ze tests toe voor boekingsdata, logins, betalingen en e-mailbevestigingen, creëerden ze een staging-omgeving en stelden ze projectregels in die Lovable verbieden om dependencies of utility-functies aan te passen zonder expliciet verzoek. Getroffen boekingen werden handmatig gecorrigeerd en de cursisten werden netjes geïnformeerd.
 
-**Resultaat:** Zeilschool doorliep het hoogseizoen met circa 1.500 boekingen zonder één enkele datum- of inlogfout. Twee latere bewerkingen in Lovable werden tijdig door de testsuite opgevangen voordat ze de productieomgeving konden bereiken — waaronder opnieuw een onbedoelde wijziging in een utility-bestand.
+**Resultaat:** Zeilschool doorliep het hoogseizoen met circa 1.500 boekingen zonder één enkele datum- of inlogfout. Twee latere bewerkingen in Lovable werden tijdig door de testsuite opgevangen voordat ze de productieomgeving konden bereiken - waaronder opnieuw een onbedoelde wijziging in een utility-bestand.
 
 > *"Ik paste wat zinnen aan op een pagina en mijn app wist plotseling niet meer welke dag het was. Nu kan een wijziging die meer raakt dan ik vraag, nooit meer ongemerkt bij mijn cursisten terechtkomen."*
-> — **Lars Nieuwenhuis, Oprichter, Zeilschool (Hoorn)**
+> - **Lars Nieuwenhuis, Oprichter, Zeilschool (Hoorn)**
 
-**Kosten & Tijdlijn:** € 1.450 (herstel, datumreparaties, versie-pinning, tests, staging en AI-toolregels) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.450 (herstel, datumreparaties, versie-pinning, tests, staging en AI-toolregels) - afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -176,7 +176,7 @@ Herstel altijd de vorige versie rechtstreeks vanuit je Git-historie in plaats va
 
 ### Hoe borgt Manifera langdurig onderhoud bij platformwijzigingen?
 
-Met vastgepinde softwareversies, geautomatiseerde update-pipelines bewaakt door tests, staging-omgevingen en proactieve opvolging van deprecation-aankondigingen — best practices opgebouwd in meer dan 11 jaar onderhoud van bedrijfskritische systemen.
+Met vastgepinde softwareversies, geautomatiseerde update-pipelines bewaakt door tests, staging-omgevingen en proactieve opvolging van deprecation-aankondigingen - best practices opgebouwd in meer dan 11 jaar onderhoud van bedrijfskritische systemen.
 
 ### Kunnen regressies door AI-updates mijn zoekresultaten en SEO schaden?
 

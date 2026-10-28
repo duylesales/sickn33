@@ -7,7 +7,7 @@ Two proposals, same blended rate: €58/hour. One team is two seniors and two mi
 
 **The Manifera Solution:**
 ✅ **Unbundled Rate Breakdown, On Request:** We show the rate by seniority level and headcount, not just the blended average.
-✅ **A Real Embedded Senior Ratio:** At least one senior or lead per four-to-six team members, genuinely in daily decisions — not parachuted in for calls.
+✅ **A Real Embedded Senior Ratio:** At least one senior or lead per four-to-six team members, genuinely in daily decisions - not parachuted in for calls.
 ✅ **Contractual Replacement Commitments:** Named CVs, interview rights before signing, and a replacement clause that keeps seniority intact if someone rotates off.
 
 The blended rate tells you the average. It's the unbundled numbers that tell you what you're actually buying. 🎯

@@ -9,10 +9,10 @@ Overal nullen. Lege grafieken. En in AI-gebouwde apps vaak:
 ❌ Tabellen die oneindig blijven laden (*infinite skeletons*)
 ❌ Een keuzemenu met 12 even zware knoppen (verwarring!)
 
-Voor een nieuwe gebruiker ziet "leeg" er exact hetzelfde uit als "kapot". En hij mailt u niet — hij sluit het venster en komt nooit meer terug.
+Voor een nieuwe gebruiker ziet "leeg" er exact hetzelfde uit als "kapot". En hij mailt u niet - hij sluit het venster en komt nooit meer terug.
 
 De regels voor de eerste 5 minuten:
-✅ 1 overduidelijke primaire actie in mensentaal ("Voeg uw eerste klant toe — kost 1 minuut")
+✅ 1 overduidelijke primaire actie in mensentaal ("Voeg uw eerste klant toe - kost 1 minuut")
 ✅ Toon wat er daarna gebeurt ("Hier verschijnen straks uw openstaande facturen")
 ✅ Een persistente 3-5 stappen checklist (slaat elke opdringerige product tour!)
 ✅ Zorg dat de eerste actie omkeerbaar, supersnel en van de klant zelf is

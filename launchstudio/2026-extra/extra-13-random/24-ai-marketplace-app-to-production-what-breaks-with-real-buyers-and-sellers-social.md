@@ -1,6 +1,6 @@
 🚨 Tim de Graaf, a software tester in Breda, built Gereedschapdelen on Replit: neighbours rent each other hedge trimmers, tile cutters and carpet cleaners by the day, with a deposit. Three neighbourhoods, 600 users, about 150 rentals a month. And at any moment, Tim was holding around €2,000 of other people's money in his personal Stripe account. 😳
 
-He paid lenders weekly from a spreadsheet. Deposits were charged in full and refunded by hand, sometimes days late. Two renters regularly booked the same tool for the same day. Anyone could leave reviews — one lender was flooded with fake ones by a disgruntled neighbour — and suspended users could still book. Here's what breaks when an AI marketplace meets real buyers and sellers: 🧠
+He paid lenders weekly from a spreadsheet. Deposits were charged in full and refunded by hand, sometimes days late. Two renters regularly booked the same tool for the same day. Anyone could leave reviews - one lender was flooded with fake ones by a disgruntled neighbour - and suspended users could still book. Here's what breaks when an AI marketplace meets real buyers and sellers: 🧠
 
 ❌ Marketplace money flowing through the founder's own account
 ❌ Full deposit charges with manual refunds

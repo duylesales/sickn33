@@ -1,6 +1,6 @@
-🚨 Audrey, a legal writer, built a contract assistant with **Bolt**. Users found the chatbot interface slow and tedious — copying AI-suggested edits out of chat and manually merging them into a working draft, clause by clause. 📝
+🚨 Audrey, a legal writer, built a contract assistant with **Bolt**. Users found the chatbot interface slow and tedious - copying AI-suggested edits out of chat and manually merging them into a working draft, clause by clause. 📝
 
-The chatbot UI is dying in B2B software because enterprise users don't want to talk to their software — they want it to just do the work. 🧠
+The chatbot UI is dying in B2B software because enterprise users don't want to talk to their software - they want it to just do the work. 🧠
 
 ❌ A blank chat box forcing users to copy-paste every suggested edit by hand
 ❌ No way to see AI suggestions inline against the actual document

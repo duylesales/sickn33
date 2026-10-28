@@ -1,4 +1,4 @@
-🔥 Leo built a prototype using **Cursor** — leo, a designer, used **cursor** to build an ai portrait generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Leo built a prototype using **Cursor** - leo, a designer, used **cursor** to build an ai portrait generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Leo's application achieved silky-smooth performance: Credit bypass bugs dropped to zero, protecting server generation margins. (€1,600 (Database Transaction Package) — production-ready and deployed in 4 business days.). 🚀
+Leo's application achieved silky-smooth performance: Credit bypass bugs dropped to zero, protecting server generation margins. (€1,600 (Database Transaction Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/usage-based-pricing-vs-fixed-tiers-ai-saas
 

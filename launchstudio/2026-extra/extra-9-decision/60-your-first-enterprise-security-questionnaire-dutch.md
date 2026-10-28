@@ -41,7 +41,7 @@ Beide reacties zijn fundamenteel onjuist. Een beveiligingsvragenlijst van een en
 
 Hier volgt een gestructureerde gids langs de vaste categorieën van de typische enterprise vendor review, en hoe een klein SaaS-team deze eerlijk en overtuigend beantwoordt.
 
-## Sectie 1: Formele Certificeringen — Waar Eerlijkheid het Minste Kost
+## Sectie 1: Formele Certificeringen - Waar Eerlijkheid het Minste Kost
 
 De vraag *"Beschikt u over een ISO 27001 of SOC 2 certificering?"* staat vrijwel altijd bovenaan. Voor een vroege startup luidt het eerlijke antwoord bijna altijd "nee". Deze trajecten vergen aanzienlijke investeringen in auditkosten en compliance-overhead die pas rendabel zijn bij serieuze schaalgrootte.
 
@@ -51,7 +51,7 @@ De cruciale fout is hier niet het antwoord "nee", maar het ontbreken van context
 
 Dit antwoord is 100% waarheidsgetrouw. Het verplaatst de discussie van "heeft u een certificaatstempel?" naar "hoe beheerst u daadwerkelijk het risico?". Veel middelgrote en zakelijke klanten gaan op basis van deze transparantie akkoord, mits de rest van de vragenlijst getuigt van volwassenheid.
 
-## Sectie 2: Gegevensverwerking en Databeheer — Waar Specificiteit Wint
+## Sectie 2: Gegevensverwerking en Databeheer - Waar Specificiteit Wint
 
 Vragen zoals *"Waar wordt onze data fysiek gehost?"*, *"Wie heeft er toegang tot productiedata?"* en *"Wat is uw dataretentiebeleid?"* zijn juist punten waarop een tweemansbedrijf met meer precisie kan antwoorden dan een logge enterprise-organisatie. Uw infrastructuur is immers compact en overzichtelijk.
 
@@ -62,7 +62,7 @@ Dit is het moment waarop het voorwerk zich uitbetaalt:
 
 Dergelijke feitelijke, concrete antwoorden stralen controle en vakmanschap uit. Vage containerbegrippen zoals *"wij volgen industry best practices"* wekken bij auditors direct wantrouwen: het suggereert dat niemand weet hoe het technisch echt zit.
 
-## Sectie 3: Incident Response — Realistische Toezeggingen voor Kleine Teams
+## Sectie 3: Incident Response - Realistische Toezeggingen voor Kleine Teams
 
 Vragen over uw incidentresponsplan (*"Heeft u een gedocumenteerd incident response plan?"* en *"Binnen welke termijn meldt u een datalek?"*) lenen zich uitstekend voor een compact team. Incidentrespons vereist geen leger aan personeel; het vereist een helder, vooraf vastgelegd protocol dat twee personen feilloos kunnen uitvoeren.
 
@@ -85,11 +85,11 @@ Maak een scherp onderscheid tussen twee soorten gaten:
 ### 2. Kostbare tekortkomingen die tijd vragen
 - **Penetratietesten (pentests):** Heeft u nog nooit een externe pentest laten uitvoeren? Schrijf niet dat dit "doorlopend" gebeurt. Zeg eerlijk dat er nog geen externe test is uitgevoerd. Is de deal substantieel genoeg (bijvoorbeeld een contract van tienduizenden euro's)? Koppel het antwoord aan een concrete toezegging: *"Er staat momenteel een externe pentest gepland bij [Partij], waarvan het eindrapport uiterlijk [Datum] beschikbaar wordt gesteld vóór ingebruikname van de productieomgeving."*
 
-## Sectie 5: Subverwerkers en Leveranciersbeheer — Hergebruik Uw Documentatie
+## Sectie 5: Subverwerkers en Leveranciersbeheer - Hergebruik Uw Documentatie
 
 Elke vragenlijst vraagt om een overzicht van de partijen die toegang hebben tot klantdata en hoe u toezicht houdt op hun beveiliging. Als u een actuele **subverwerkerslijst** onderhoudt (inclusief diensten zoals Stripe, Postmark, AWS en Datadog), beantwoordt u dit onderdeel in twee minuten door simpelweg uw bestaande bijlage in te voegen. 
 
-Oprichters die dit niet hebben voorbereid, moeten onder tijdsdruk handmatig door configuraties graven — met het risico dat ze cruciale partijen vergeten, wat tijdens een latere audit direct opvalt.
+Oprichters die dit niet hebben voorbereid, moeten onder tijdsdruk handmatig door configuraties graven - met het risico dat ze cruciale partijen vergeten, wat tijdens een latere audit direct opvalt.
 
 ## Wanneer het Eerlijke Antwoord Is: "Deze Klant Past Nu Nog Niet"
 
@@ -121,7 +121,7 @@ Een technische adviseur van LaunchStudio greep tijdig in en hielp het team om te
 **Het resultaat:** Het securityteam van de supermarktketen waardeerde de transparantie en kwam terug met constructieve vervolgvragen in plaats van een afwijzing. De deal werd zes weken later definitief getekend, waarbij het pentestrapport exact op de afgesproken datum als addendum werd aangeleverd.
 
 > *"Ik wilde de vragen bijna te mooi invullen, uit angst dat een eerlijke 'nee' de verkoop direct zou torpederen. In werkelijkheid heeft onze eerlijkheid de deal juist gered: de inkopers vertrouwden ons concrete stappenplan veel meer dan een verdacht vlekkeloze vragenlijst."*
-> — **Lotte Hermans, Medeoprichter van Voorraadgrip (Zwolle)**
+> - **Lotte Hermans, Medeoprichter van Voorraadgrip (Zwolle)**
 
 ## Veelgestelde Vragen
 

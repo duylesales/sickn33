@@ -75,7 +75,7 @@ The data engineering side is equally important. Genotype data from many animals,
 
 ## Automated Phenotyping: Measuring What Matters
 
-Breeding can only improve traits that can be measured. Some traits — such as body weight or egg production — are relatively easy to record. Others, including behaviour, welfare indicators, disease resistance and feed efficiency, are harder and more expensive to measure in large numbers of animals.
+Breeding can only improve traits that can be measured. Some traits - such as body weight or egg production - are relatively easy to record. Others, including behaviour, welfare indicators, disease resistance and feed efficiency, are harder and more expensive to measure in large numbers of animals.
 
 Sensors and computer vision are changing this. Cameras can track animal behaviour and movement, automated feeders record individual feed intake, and image analysis can measure physical characteristics consistently. For data professionals, automated phenotyping combines computer vision, sensor data processing and domain knowledge about animal biology. The results feed directly into breeding decisions, which means measurement errors or biases can have long-term consequences.
 
@@ -101,17 +101,17 @@ A breeding programme that selects too strongly on a few top animals makes fast p
 
 Managing this trade-off is a quantitative problem. Breeders monitor inbreeding levels and effective population size using pedigree and genomic data. Methods such as optimal contribution selection determine how many offspring each selected animal should contribute, maximising genetic progress while constraining the rate of inbreeding. Genomic data makes it possible to measure relatedness more precisely than pedigree alone, including identifying regions of the genome where diversity is being lost.
 
-For data professionals, this adds an optimisation and simulation dimension to breeding work. Simulating breeding programmes over many generations helps companies evaluate strategies before implementing them — an area where computational skills directly influence the long-term sustainability of animal populations.
+For data professionals, this adds an optimisation and simulation dimension to breeding work. Simulating breeding programmes over many generations helps companies evaluate strategies before implementing them - an area where computational skills directly influence the long-term sustainability of animal populations.
 
 ## A Concrete Scenario: Selecting for Robustness
 
-A breeding programme wants to improve robustness — the ability of animals to remain healthy and productive under varying conditions. Robustness is difficult to measure directly. The data team combines records of mortality, disease treatments, growth under different farm conditions and sensor-based behaviour data to construct indicators.
+A breeding programme wants to improve robustness - the ability of animals to remain healthy and productive under varying conditions. Robustness is difficult to measure directly. The data team combines records of mortality, disease treatments, growth under different farm conditions and sensor-based behaviour data to construct indicators.
 
 Initial models suggest that some animal lines are more robust than others. But further analysis reveals that part of the difference is explained by the farms where animals were raised, not their genetics. The team adjusts the models to separate environmental and genetic effects more carefully and validates predictions across farms and countries. The final indicators are integrated into the breeding goal, with weights discussed between geneticists, veterinarians and commercial teams. The project shows how breeding data science combines statistics, biology and ethical choices.
 
 ## A Common Misconception About Agrifood Data Work
 
-Many candidates assume that agrifood companies are less technologically advanced than tech companies. Animal breeding contradicts that assumption: genomic selection was one of the earliest large-scale applications of predictive modelling on genetic data, and breeding companies have used sophisticated statistics for decades. The difference is that results are measured over generations rather than product sprints — which suits people who value rigour and long-term impact.
+Many candidates assume that agrifood companies are less technologically advanced than tech companies. Animal breeding contradicts that assumption: genomic selection was one of the earliest large-scale applications of predictive modelling on genetic data, and breeding companies have used sophisticated statistics for decades. The difference is that results are measured over generations rather than product sprints - which suits people who value rigour and long-term impact.
 
 ## Questions Worth Asking Before Joining
 
@@ -171,13 +171,13 @@ It hosts the headquarters of Hendrix Genetics, where genomic selection, phenotyp
 Often yes for data engineering and computer vision roles; for genetic evaluation roles, quantitative genetics knowledge is usually required or must be learned.
 
 ### (Scenario: machine learning engineer) Does machine learning outperform classical genomic prediction?
-Not always — gains depend on trait and data, and well-specified statistical models often remain strong benchmarks.
+Not always - gains depend on trait and data, and well-specified statistical models often remain strong benchmarks.
 
 ### (Scenario: candidate concerned about animal welfare) How does breeding data work relate to animal welfare?
 Breeding goals increasingly include robustness, health and welfare traits, and data helps measure and balance these objectives.
 
 ### (Scenario: candidate living in Nijmegen) Is Boxmeer commutable from Nijmegen?
-Yes — Boxmeer is on the Maaslijn, about half an hour from Nijmegen by train.
+Yes - Boxmeer is on the Maaslijn, about half an hour from Nijmegen by train.
 
 <script type="application/ld+json">
 {
@@ -186,9 +186,9 @@ Yes — Boxmeer is on the Maaslijn, about half an hour from Nijmegen by train.
   "mainEntity": [
     {"@type": "Question", "name": "Why is Boxmeer relevant for data careers?", "acceptedAnswer": {"@type": "Answer", "text": "It hosts Hendrix Genetics, where genomic selection and breeding programmes rely heavily on data science."}},
     {"@type": "Question", "name": "Can I work in animal breeding without a genetics background?", "acceptedAnswer": {"@type": "Answer", "text": "Often for data engineering and vision roles; genetic evaluation roles usually require quantitative genetics."}},
-    {"@type": "Question", "name": "Does machine learning outperform classical genomic prediction?", "acceptedAnswer": {"@type": "Answer", "text": "Not always — well-specified statistical models often remain strong benchmarks."}},
+    {"@type": "Question", "name": "Does machine learning outperform classical genomic prediction?", "acceptedAnswer": {"@type": "Answer", "text": "Not always - well-specified statistical models often remain strong benchmarks."}},
     {"@type": "Question", "name": "How does breeding data work relate to animal welfare?", "acceptedAnswer": {"@type": "Answer", "text": "Breeding goals increasingly include robustness and welfare traits measured with data."}},
-    {"@type": "Question", "name": "Is Boxmeer commutable from Nijmegen?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — about half an hour by train on the Maaslijn."}}
+    {"@type": "Question", "name": "Is Boxmeer commutable from Nijmegen?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - about half an hour by train on the Maaslijn."}}
   ]
 }
 </script>

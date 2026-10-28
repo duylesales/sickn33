@@ -43,7 +43,7 @@ This is general information, not tax advice. Rates, categories and rules in this
 
 The employer leases a vehicle and makes it available to you. You use it for work and, in most arrangements, privately as well.
 
-Private use has a tax consequence: an amount is added to your taxable income, calculated as a percentage of the vehicle's list value, which increases the tax you pay. The percentages have differed for electric and conventional vehicles and have been adjusted in recent years, and the rules on how long a rate applies to a given car are specific — which is exactly why you should check the current position rather than relying on what a colleague experienced two years ago.
+Private use has a tax consequence: an amount is added to your taxable income, calculated as a percentage of the vehicle's list value, which increases the tax you pay. The percentages have differed for electric and conventional vehicles and have been adjusted in recent years, and the rules on how long a rate applies to a given car are specific - which is exactly why you should check the current position rather than relying on what a colleague experienced two years ago.
 
 You can avoid the addition only by genuinely not using the car privately beyond a small threshold, which requires a formal declaration to the tax authority and a full journey administration. Most people do not choose this route, and those who do take the record-keeping seriously.
 
@@ -75,7 +75,7 @@ For someone who drives a lot privately and would otherwise run a car, the arrang
 
 ## The Alternatives Worth Asking About
 
-**A mobility budget.** Increasingly common at Dutch employers: an amount you can spend across transport options — public transport, a bicycle, occasional car use, sometimes paid out in part. For people who commute by train or bike, this is normally the better arrangement.
+**A mobility budget.** Increasingly common at Dutch employers: an amount you can spend across transport options - public transport, a bicycle, occasional car use, sometimes paid out in part. For people who commute by train or bike, this is normally the better arrangement.
 
 **A public transport arrangement,** including business travel cards for employees who commute by rail.
 
@@ -91,7 +91,7 @@ An employer who offers only a car may still have these alternatives; ask what ex
 
 Lease contracts typically run for several years, and that has consequences.
 
-**Your choice is fixed for the term,** including if your circumstances change — a move, a new baby, a switch to mostly remote work.
+**Your choice is fixed for the term,** including if your circumstances change - a move, a new baby, a switch to mostly remote work.
 
 **Leaving the employer ends the arrangement.** Usually the employer carries the consequences, and some contracts include provisions about early termination costs, particularly if you chose an expensive vehicle. Read that clause.
 
@@ -131,7 +131,7 @@ Lease contracts typically run for several years, and that has consequences.
 
 Ask for the comparison in writing: the package with the car, and the package without it. Employers with a car policy usually have both figures, and seeing them side by side settles most of these decisions in a minute.
 
-If you do not want the car, ask specifically whether the value can go to salary or to a mobility budget. Some employers can do this and some cannot, because the car comes from a different budget or a policy applies to the role — but the answer is often yes, and it is rarely offered unprompted.
+If you do not want the car, ask specifically whether the value can go to salary or to a mobility budget. Some employers can do this and some cannot, because the car comes from a different budget or a policy applies to the role - but the answer is often yes, and it is rarely offered unprompted.
 
 And if you do want the car, check the personal contribution rules before choosing a vehicle, since the difference between categories can be larger than people expect over a four-year term.
 
@@ -161,23 +161,23 @@ She cycles to her current job and does not own a car. She asks what the package 
 
 The answer is a higher salary plus a mobility budget, because the company introduced one two years ago and rarely mentions it to candidates who are offered a car.
 
-She works out both options. With the car, the taxable addition would reduce her net pay every month for a benefit she would use mainly for the occasional site visit. Without it, she gets a higher base — which counts for her pension, her holiday allowance and the mortgage application she is planning — plus a budget that covers her train travel to sites.
+She works out both options. With the car, the taxable addition would reduce her net pay every month for a benefit she would use mainly for the occasional site visit. Without it, she gets a higher base - which counts for her pension, her holiday allowance and the mortgage application she is planning - plus a budget that covers her train travel to sites.
 
 She takes the salary and the budget, and hires a car on the handful of days when a site visit makes driving simpler.
 
-Two years later, when she buys a house, the higher base is what determines her borrowing capacity — which, she notes, no one mentions when they hand you a set of car keys.
+Two years later, when she buys a house, the higher base is what determines her borrowing capacity - which, she notes, no one mentions when they hand you a set of car keys.
 
 ## Key Takeaways
 
 - A lease car with private use adds an amount to your taxable income based on a percentage of the vehicle's list value, so it reduces your net pay every month; rates and rules change, so verify the current position.
 - Compare properly: the tax cost, what you would otherwise spend on a car, the salary alternative, and the effect on pension, holiday allowance and borrowing capacity.
 - It is usually good value if you would run a car anyway and travel for work; usually poor value if you commute by bicycle or train.
-- Ask about mobility budgets, public transport arrangements, bicycle schemes and travel allowances — many employers have them and mention them only on request.
+- Ask about mobility budgets, public transport arrangements, bicycle schemes and travel allowances - many employers have them and mention them only on request.
 - Check the lease term, the personal contribution rules and what happens if you leave during the contract.
 
 ## Where to Start
 
-Packages differ enormously in how travel is handled, so compare total conditions rather than headline salary — and check which employers are within a distance where the question barely arises.
+Packages differ enormously in how travel is handled, so compare total conditions rather than headline salary - and check which employers are within a distance where the question barely arises.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -187,7 +187,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Yes, if you use it privately. An amount based on a percentage of the vehicle's list value is added to your taxable income, reducing your net pay each month. Current rates and categories should be verified.
 
 ### (Scenario: candidate who cycles to work) Should I take the car if I do not drive much?
-Usually not. Ask what the package is without it — a higher salary or a mobility budget generally suits people who commute by bicycle or train much better.
+Usually not. Ask what the package is without it - a higher salary or a mobility budget generally suits people who commute by bicycle or train much better.
 
 ### (Scenario: candidate planning a mortgage) Does a car affect borrowing capacity?
 Salary drives borrowing capacity, pension accrual and holiday allowance; a car generally does not. If a mortgage is coming, that difference can outweigh the monthly comparison.
@@ -203,7 +203,7 @@ The employer usually carries the consequences, though some contracts include pro
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does a lease car cost me anything?", "acceptedAnswer": {"@type": "Answer", "text": "Yes with private use — an addition based on the vehicle's list value raises your taxable income."}},
+    {"@type": "Question", "name": "Does a lease car cost me anything?", "acceptedAnswer": {"@type": "Answer", "text": "Yes with private use - an addition based on the vehicle's list value raises your taxable income."}},
     {"@type": "Question", "name": "Should I take the car if I do not drive much?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not; ask for the package without it, such as salary or a mobility budget."}},
     {"@type": "Question", "name": "Does a car affect borrowing capacity?", "acceptedAnswer": {"@type": "Answer", "text": "Salary drives borrowing, pension and holiday allowance; a car generally does not."}},
     {"@type": "Question", "name": "What else can I ask for?", "acceptedAnswer": {"@type": "Answer", "text": "A mobility budget, public transport arrangement, bicycle scheme, travel allowance or more salary."}},

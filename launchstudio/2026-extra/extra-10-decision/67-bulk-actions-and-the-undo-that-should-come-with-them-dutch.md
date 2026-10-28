@@ -27,7 +27,7 @@ De vraag klinkt bescheiden: *"Kunnen we niet gewoon een selectievakje voor elke 
 
 Wat u daarmee echter aan uw applicatie toevoegt, is een functionaliteit die **één enkele ondoordachte muisklik omzet in honderden onomkeerbare wijzigingen** in bedrijfskritische data. Vaak voorafgegaan door een nietszeggend pop-upje dat niemand leest.
 
-De functionaliteit is absoluut noodzakelijk — gebruikers die 400 verouderde contacten één voor één moeten wegklikken, haken uiteindelijk gefrustreerd af. Maar bulkoperaties behoren tot die zeldzame categorie softwarefuncties waar de standaard zorgvuldigheid niet volstaat, en waar het verschil tussen een professionele architectuur en een snelle AI-prompt wordt afgemeten aan permanent dataverlies.
+De functionaliteit is absoluut noodzakelijk - gebruikers die 400 verouderde contacten één voor één moeten wegklikken, haken uiteindelijk gefrustreerd af. Maar bulkoperaties behoren tot die zeldzame categorie softwarefuncties waar de standaard zorgvuldigheid niet volstaat, en waar het verschil tussen een professionele architectuur en een snelle AI-prompt wordt afgemeten aan permanent dataverlies.
 
 ## Wat Betekent "Alles Selecteren" Écht?
 
@@ -60,14 +60,14 @@ De allergrootste veiligheidsmaatregel voor bulkacties is niet een nóg groter of
 
 **Een Undo-venster voor bulkmutaties:** Koppel elk record dat door een specifieke bulkbewerking wordt gewijzigd aan een gedeelde `batch_id` in een logtabel, en bied de gebruiker gedurende een bepaalde periode een directe knop *"Maak deze bulkactie ongedaan"*. Dit is eenvoudig te realiseren als u het vooraf meeneemt in uw datamodel, maar nagenoeg onmogelijk achteraf in te bouwen, simpelweg omdat er na afloop geen enkel spoor meer is van welke specifieke rijen door die ene actie werden geraakt.
 
-Dat laatste principe geldt universeel: elke bulkactie moet een transparant spoor achterlaten in uw auditlog — wát is er gedaan, op hoeveel records, door welk teamlid, op welk tijdstip, en welke specifieke records zijn bewerkt. Zonder deze auditlogging is de vraag *"wie heeft er donderdag 300 klanten gewist?"* volstrekt onbeantwoordbaar, en elke poging tot handmatig dataherstel gedoemd te mislukken.
+Dat laatste principe geldt universeel: elke bulkactie moet een transparant spoor achterlaten in uw auditlog - wát is er gedaan, op hoeveel records, door welk teamlid, op welk tijdstip, en welke specifieke records zijn bewerkt. Zonder deze auditlogging is de vraag *"wie heeft er donderdag 300 klanten gewist?"* volstrekt onbeantwoordbaar, en elke poging tot handmatig dataherstel gedoemd te mislukken.
 ## Bulkoperaties Horen Thuis in de Achtergrond
 
 Exact dezelfde softwaretechnische wetmatigheid die geldt voor imports en exports, is onverkort van toepassing op bulkbewerkingen: het bijwerken van 5.000 records binnen één enkele synchrone HTTP-webrequest loopt onvermijdelijk tegen een platform-timeout van uw hostingprovider aan. En het faalpatroon is het allerergste dat denkbaar is: een willekeurig deel van de records is aangepast, een ander deel niet, en de klant staart verbijsterd naar een foutmelding zónder enig idee welke gegevens wel en niet zijn verwerkt.
 
 De juiste architectuur is om het bulkverzoek direct te accepteren, de taak asynchroon over te dragen aan een achtergrondwerker (zoals Celery, Sidekiq of BullMQ) die de records in gecontroleerde batches verwerkt, en de voortgang live te rapporteren aan de gebruiker. Dit maakt het tevens mogelijk om de verwerkingssnelheid te doseren (*throttling*), zodat een grootschalige opschoonactie van 40.000 records door één enthousiaste klant niet de gedeelde productiedatabase platlegt voor alle overige gebruikers.
 
-En dan is er nog het onvermijdelijke fenomeen van **gedeeltelijke mislukking** (*partial failure*), wat zich bij bulkbewerkingen oneindig veel vaker voordoet dan bij enkelvoudige acties. Van de 500 geselecteerde facturen falen er bijvoorbeeld zeven: eentje is geblokkeerd door een buitenlandse btw-regel, een andere is zojuist al door een collega bewerkt. De klant moet hierover glashelder worden geïnformeerd: *"493 facturen succesvol gemarkeerd als betaald, 7 konden niet worden gewijzigd"*, waarbij de zeven foutieve regels exact worden benoemd inclusief de specifieke reden. Wat onder geen beding mag gebeuren, is een vrolijke groene succesmelding die een mislukte deeloperatie maskeert — het standaardgedrag van AI-gegenereerde code die de complete lus in één enkel generiek `try/catch`-blok verpakt.
+En dan is er nog het onvermijdelijke fenomeen van **gedeeltelijke mislukking** (*partial failure*), wat zich bij bulkbewerkingen oneindig veel vaker voordoet dan bij enkelvoudige acties. Van de 500 geselecteerde facturen falen er bijvoorbeeld zeven: eentje is geblokkeerd door een buitenlandse btw-regel, een andere is zojuist al door een collega bewerkt. De klant moet hierover glashelder worden geïnformeerd: *"493 facturen succesvol gemarkeerd als betaald, 7 konden niet worden gewijzigd"*, waarbij de zeven foutieve regels exact worden benoemd inclusief de specifieke reden. Wat onder geen beding mag gebeuren, is een vrolijke groene succesmelding die een mislukte deeloperatie maskeert - het standaardgedrag van AI-gegenereerde code die de complete lus in één enkel generiek `try/catch`-blok verpakt.
 
 Het bouwen van bulkacties die betrouwbaar in de achtergrond draaien, partiële fouten eerlijk communiceren en veilig ongedaan kunnen worden gemaakt, is standaard productiewerk. LaunchStudio, ondersteund door meer dan 11 jaar productie-ervaring bij Manifera, bouwt deze pijplijnen met intelligente batching, voortgangsindicatie en auditabele rollbacks. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een diepgaande technische beoordeling binnen één werkdag.
 ## Autorisatie Wordt Afgedwongen Per Record, Niet Per Aanvraag
@@ -87,7 +87,7 @@ Tomas Rietveld runde Adresboek Pro, een online CRM- en kandidaatbeheersysteem vo
 
 Een senior recruiter wilde haar database opschonen. Ze stelde een filter in op kandidaten die al twee jaar niet meer waren benaderd, zag 43 resultaten op haar scherm, vinkte 'Alles selecteren' aan en drukte op 'Verwijderen'.
 
-Wat zij niet wist: het selectievakje stuurde niet alleen de 43 zichtbare rijen door, maar **alle 214 kandidaat-ID's die de frontend op de achtergrond alvast had geladen** — inclusief tientallen actieve, net geplaatste kandidaten!
+Wat zij niet wist: het selectievakje stuurde niet alleen de 43 zichtbare rijen door, maar **alle 214 kandidaat-ID's die de frontend op de achtergrond alvast had geladen** - inclusief tientallen actieve, net geplaatste kandidaten!
 
 De database-verwijdering was definitief. Door relationele cascade-regels werden alle gespreksverslagen, geüploade cv's en bemiddelingscontracten geruisloos mee gewist. 
 
@@ -98,7 +98,7 @@ Het terughalen van de data vereiste het herstellen van een ochtend-backup in een
 **Resultaat:** Binnen vier werkdagen herbouwde LaunchStudio de complete bulkarchitectuur: Soft Deletion met 30 dagen hersteltermijn, een kristalhelder selectiescherm met expliciete tellingen, verplichte tekstbevestiging bij acties op meer dan 50 items, asynchrone achtergrondverwerking en een 'Ongedaan maken'-functionaliteit.
 
 > *"Het dialoogvenster vroeg braaf: 'Weet u het zeker?'. Maar het kon haar niet vertellen dat ze op het punt stond om 214 topkandidaten te wissen in plaats van 43, simpelweg omdat niemand de software had geleerd om te tellen."*
-> — **Tomas Rietveld, Oprichter, Adresboek Pro**
+> - **Tomas Rietveld, Oprichter, Adresboek Pro**
 
 **Kosten & Doorlooptijd:** Bulkverwerkingsarchitectuur, achtergrondwachtrij en soft-delete herstelmodule opgeleverd in 4 werkdagen.
 

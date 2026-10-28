@@ -41,7 +41,7 @@ Understanding these concepts allows you to transition from asking, *"Can the AI 
 
 ## The Engine: The Transformer Architecture
 
-Before 2017, AI models read text sequentially, like a human reading a book—one word at a time. If the book was long, the AI forgot what happened in chapter one by the time it reached chapter ten. 
+Before 2017, AI models read text sequentially, like a human reading a book - one word at a time. If the book was long, the AI forgot what happened in chapter one by the time it reached chapter ten. 
 
 Then Google researchers invented the **Transformer**. 
 
@@ -101,9 +101,9 @@ They did not send the whole document. They used Vector Embeddings to map the 100
 **Result:** The hallucinations stopped completely because the AI's attention was hyper-focused on a tiny amount of highly relevant text. The API cost per summary plummeted from €0.45 to €0.01. The feature never timed out. Julia realized the model wasn't stupid; her original architecture was. The feature launched successfully and became the most popular tool on the platform.
 
 > *"I used to think my job as a PM was just writing a good prompt and letting the engineers figure it out. LaunchStudio taught me that designing an AI product requires designing the data flow. They showed me how to use vectors and attention to build a feature that is actually reliable and profitable."*
-> — **Julia Evans, Lead Product Manager, LexiCore (London)**
+> - **Julia Evans, Lead Product Manager, LexiCore (London)**
 
-**Cost & Timeline:** €6,200 (Launch & Grow Package with RAG Implementation Add-on) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €6,200 (Launch & Grow Package with RAG Implementation Add-on) - production-ready and deployed in 10 business days.
 
 ---
 

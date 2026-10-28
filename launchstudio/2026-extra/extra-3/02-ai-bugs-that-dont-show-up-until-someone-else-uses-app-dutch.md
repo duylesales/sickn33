@@ -31,7 +31,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
 }
 </script>
 
-Beveiligingslekken krijgen de meeste aandacht in gesprekken over door AI gegenereerde code. Een stillere, meer voorkomende categorie krijgt veel minder zendtijd: gewone bugs — verkeerde berekeningen, niet-overeenkomende datatypes, logica die iets aannam over de gebruiker dat niet waar bleek te zijn — die nooit een beveiligingsalarm laten afgaan en de app nooit ronduit laten crashen, maar gewoon stil het verkeerde antwoord produceren, voor iemand die u niet bent, vaak lang genoeg dat niemand zich realiseert dat er iets mis is totdat de afwijking te groot is om te negeren.
+Beveiligingslekken krijgen de meeste aandacht in gesprekken over door AI gegenereerde code. Een stillere, meer voorkomende categorie krijgt veel minder zendtijd: gewone bugs - verkeerde berekeningen, niet-overeenkomende datatypes, logica die iets aannam over de gebruiker dat niet waar bleek te zijn - die nooit een beveiligingsalarm laten afgaan en de app nooit ronduit laten crashen, maar gewoon stil het verkeerde antwoord produceren, voor iemand die u niet bent, vaak lang genoeg dat niemand zich realiseert dat er iets mis is totdat de afwijking te groot is om te negeren.
 
 ## Waarom deze bugs specifiek de eigen testen van een oprichter omzeilen
 
@@ -55,7 +55,7 @@ Een demo is per definitie een enkele, gecontroleerde doorloop, meestal door de p
 
 [LaunchStudio](https://launchstudio.eu/nl/) behandelt dit als een afzonderlijke controle dan een beveiligingsbeoordeling – door AI gegenereerde logica opzettelijk voeden met misvormde, grens- en local-gevarieerde invoer die het nooit te zien kreeg tijdens de oorspronkelijke generatie, een discipline die Manifera's engineeringteams consistent toepassen op meer dan 160 projecten die zijn geleverd vanuit de kantoren in Amsterdam en Ho Chi Minh-stad, ongeacht of de oorspronkelijke code afkomstig was van de eigen AI-tools van een klant of Manifera's eigen ontwikkeling vanaf nul.
 
-[Laat uw app testen tegen de invoer die uw eigen testen nooit bevatten](https://launchstudio.eu/nl/#calculator) — de bugs die er het meest toe doen zijn zelden degene waar u zelf aan zou denken om te proberen, wat precies is waarom het de moeite waard is dat iemand anders er specifiek naar kijkt.
+[Laat uw app testen tegen de invoer die uw eigen testen nooit bevatten](https://launchstudio.eu/nl/#calculator) - de bugs die er het meest toe doen zijn zelden degene waar u zelf aan zou denken om te proberen, wat precies is waarom het de moeite waard is dat iemand anders er specifiek naar kijkt.
 
 ## Een druktest van tien minuten die u zelf kunt uitvoeren voor de lancering
 
@@ -82,9 +82,9 @@ Een klant die FactuurTel gebruikte, plakte factuurbedragen die rechtstreeks uit 
 **Resultaat:** LaunchStudio voegde expliciete invoervalidatie toe die niet-numerieke bedragvelden weigert met een duidelijke foutmelding, in plaats van stil te vervallen in nul – een gerichte oplossing voor de specifieke parseerlogica, zonder wijziging aan de interface of de kernberekeningsaanpak van FactuurTel.
 
 > *"Mijn eigen testfacturen waren altijd schone getallen omdat ik ze zelf typte. De bug bestond pas op het moment dat iemand iets plakte dat mijn eigen testen nog nooit hadden geproduceerd."*
-> — **Marloes Verstappen, Oprichter, FactuurTel (Roosendaal)**
+> - **Marloes Verstappen, Oprichter, FactuurTel (Roosendaal)**
 
-**Kosten en tijdlijn:** € 650 (invoervalidatie verharden) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 650 (invoervalidatie verharden) - voltooid in 3 werkdagen.
 
 ---
 
@@ -120,7 +120,7 @@ Geautomatiseerde tests vangen het betrouwbaar op zodra iemand specifiek een test
       "name": "Zijn gewone door AI gegenereerde bugs minder ernstig dan beveiligingslekken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minder gevaarlijk qua blootstelling, maar niet minder kostbaar — een stil verkeerd totaal schaadt het vertrouwen en de omzet rechtstreeks."
+        "text": "Minder gevaarlijk qua blootstelling, maar niet minder kostbaar - een stil verkeerd totaal schaadt het vertrouwen en de omzet rechtstreeks."
       }
     },
     {
@@ -152,7 +152,7 @@ Geautomatiseerde tests vangen het betrouwbaar op zodra iemand specifiek een test
       "name": "Kan geautomatiseerd testen deze categorie bugs vangen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Geautomatiseerde tests vangen het op zodra een testcase is geschreven — weten waarvoor moet worden getest is het moeilijkere deel."
+        "text": "Geautomatiseerde tests vangen het op zodra een testcase is geschreven - weten waarvoor moet worden getest is het moeilijkere deel."
       }
     }
   ]

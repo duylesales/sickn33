@@ -20,7 +20,7 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a mobility or fleet technology company building a connected vehicle data platform — one aggregating telematics, diagnostics, and usage data from vehicles across a fleet or a broader vehicle population — faces a foundational architecture decision that shapes the platform's real-world data access reliability: whether the platform's vehicle data integration follows the Extended Vehicle model formalized in ISO 20078, or a more ad hoc, vehicle-manufacturer-specific integration approach.
+A CTO at a mobility or fleet technology company building a connected vehicle data platform - one aggregating telematics, diagnostics, and usage data from vehicles across a fleet or a broader vehicle population - faces a foundational architecture decision that shapes the platform's real-world data access reliability: whether the platform's vehicle data integration follows the Extended Vehicle model formalized in ISO 20078, or a more ad hoc, vehicle-manufacturer-specific integration approach.
 
 ## What the Extended Vehicle Model Actually Standardizes
 
@@ -30,17 +30,17 @@ ISO 20078, the Extended Vehicle (ExVe) standard, defines a structured architectu
 
 ## Why Ad Hoc, Manufacturer-Specific Integration Creates a Real Scaling Problem
 
-A connected vehicle platform built around direct, manufacturer-specific integrations — without an architecture designed around the shared conceptual model ExVe provides — tends to treat each new vehicle manufacturer relationship as an entirely bespoke integration project, since without a shared architectural framework to build against, there's no consistent internal structure the platform's data model can be organized around across different manufacturer integrations. This becomes a genuine scaling constraint for any platform intending to support vehicles across a realistic multi-manufacturer fleet or vehicle population, since the platform's actual vehicle coverage becomes gated by how many bespoke manufacturer integrations the engineering team has had capacity to individually build, rather than being gated primarily by manufacturer participation and API availability.
+A connected vehicle platform built around direct, manufacturer-specific integrations - without an architecture designed around the shared conceptual model ExVe provides - tends to treat each new vehicle manufacturer relationship as an entirely bespoke integration project, since without a shared architectural framework to build against, there's no consistent internal structure the platform's data model can be organized around across different manufacturer integrations. This becomes a genuine scaling constraint for any platform intending to support vehicles across a realistic multi-manufacturer fleet or vehicle population, since the platform's actual vehicle coverage becomes gated by how many bespoke manufacturer integrations the engineering team has had capacity to individually build, rather than being gated primarily by manufacturer participation and API availability.
 
 ## What Building on the Extended Vehicle Model Actually Requires
 
 - **Structuring the platform's internal vehicle data model around ExVe's standardized data categories**, so data from different manufacturers' ExVe-compliant interfaces can be normalized into a genuinely consistent internal representation, rather than each manufacturer integration producing its own bespoke internal data structure requiring separate downstream handling.
 - **Building the platform's authentication and consent management around the access control patterns ExVe assumes**, since vehicle data access typically requires vehicle owner or fleet operator consent flows that need to work consistently across different manufacturer ExVe implementations rather than requiring a separately designed consent flow per manufacturer.
-- **Designing the data ingestion layer to accommodate genuine differences in update frequency and data completeness across manufacturers**, since even within a shared standard, different manufacturers' ExVe implementations vary in exactly which data categories they expose and how frequently — a platform's data model needs to represent this variability explicitly rather than assuming uniform data availability across all connected vehicles.
+- **Designing the data ingestion layer to accommodate genuine differences in update frequency and data completeness across manufacturers**, since even within a shared standard, different manufacturers' ExVe implementations vary in exactly which data categories they expose and how frequently - a platform's data model needs to represent this variability explicitly rather than assuming uniform data availability across all connected vehicles.
 
 ## Why This Decision Directly Shapes a Platform's Realistic Market Coverage
 
-A specific, concrete business consequence of this architectural choice: a fleet or mobility platform's actual value proposition to a customer depends directly on how comprehensively it can cover that customer's real, often multi-manufacturer vehicle fleet. A platform architected around the Extended Vehicle model's shared conceptual framework can extend coverage to a new manufacturer with meaningfully less incremental engineering effort than a platform where each new manufacturer requires a fully bespoke integration built without a shared underlying architecture to build from — directly affecting how quickly and cost-effectively a platform can grow its actual vehicle coverage to match real customer fleet composition.
+A specific, concrete business consequence of this architectural choice: a fleet or mobility platform's actual value proposition to a customer depends directly on how comprehensively it can cover that customer's real, often multi-manufacturer vehicle fleet. A platform architected around the Extended Vehicle model's shared conceptual framework can extend coverage to a new manufacturer with meaningfully less incremental engineering effort than a platform where each new manufacturer requires a fully bespoke integration built without a shared underlying architecture to build from - directly affecting how quickly and cost-effectively a platform can grow its actual vehicle coverage to match real customer fleet composition.
 
 ## Why Consent and Data Protection Requirements Compound This Architecture Decision
 
@@ -66,7 +66,7 @@ Flotta Digitális, a Miskolc-based fleet telematics startup, had built an initia
 Manifera's Amsterdam team rebuilt the platform's core vehicle data architecture around the Extended Vehicle model's shared conceptual framework, normalizing incoming data from each manufacturer's ExVe-compliant interface into a genuinely consistent internal representation, and building a consent and authentication layer designed to work consistently across manufacturer implementations.
 
 > *"Every new manufacturer used to mean starting mostly from scratch. Once we rebuilt around the shared architecture the industry standard actually provides, adding a new manufacturer became a meaningfully smaller, more predictable piece of work instead of its own multi-month project every time."*
-> — **CTO, Flotta Digitális**
+> - **CTO, Flotta Digitális**
 
 Flotta Digitális has since added coverage for several additional vehicle manufacturers at a meaningfully faster pace than its original bespoke-integration approach supported, directly expanding its addressable fleet customer base.
 
@@ -81,7 +81,7 @@ Flotta Digitális has since added coverage for several additional vehicle manufa
 
 ## Scoping Your Own Connected Vehicle Platform's Data Architecture
 
-Before building a connected vehicle or fleet telematics platform, structure the core data architecture around the Extended Vehicle model's shared conceptual framework — an ad hoc, manufacturer-by-manufacturer integration approach constrains realistic multi-manufacturer fleet coverage growth. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an Extended-Vehicle-aligned connected vehicle platform.
+Before building a connected vehicle or fleet telematics platform, structure the core data architecture around the Extended Vehicle model's shared conceptual framework - an ad hoc, manufacturer-by-manufacturer integration approach constrains realistic multi-manufacturer fleet coverage growth. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an Extended-Vehicle-aligned connected vehicle platform.
 
 ## Frequently Asked Questions
 
@@ -103,7 +103,7 @@ Fragmented, per-manufacturer internal data structures require separate downstrea
 
 ### (Scenario: CTO evaluating a mobility technology development team) What should I ask a development team about their connected vehicle platform experience?
 
-Ask specifically how they structure vehicle data internally and whether their architecture aligns with the Extended Vehicle model's shared framework — genuine experience produces a specific, technical answer about data normalization and consent handling.
+Ask specifically how they structure vehicle data internally and whether their architecture aligns with the Extended Vehicle model's shared framework - genuine experience produces a specific, technical answer about data normalization and consent handling.
 
 <script type="application/ld+json">
 {

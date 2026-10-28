@@ -1,4 +1,4 @@
-🔥 Nora bouwde een prototype met **Lovable** — Nora, oprichter van een marketingbureau, gebruikte Lovable om een e-mailgenerator te bouwen, maar kampte met 28% maandelijkse churn omdat gebruikers verdwaalden in de configuratie. 🧠
+🔥 Nora bouwde een prototype met **Lovable** - Nora, oprichter van een marketingbureau, gebruikte Lovable om een e-mailgenerator te bouwen, maar kampte met 28% maandelijkse churn omdat gebruikers verdwaalden in de configuratie. 🧠
 
 Het verlagen van klantverloop in generatieve AI vereist een transformatie naar een 'System of Record', contextuele RAG-personalisatie en gestructureerde onboarding.
 
@@ -12,7 +12,7 @@ Het verlagen van klantverloop in generatieve AI vereist een transformatie naar e
 
 Bij **LaunchStudio** lossen we exact dit type software-architectuur en retentievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Nora's platform werd een blijvend succes: Het maandelijkse verloop daalde binnen 30 dagen van 28% naar 8,5%. (€1.800 (Onboarding Optimization Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Nora's platform werd een blijvend succes: Het maandelijkse verloop daalde binnen 30 dagen van 28% naar 8,5%. (€1.800 (Onboarding Optimization Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/reducing-churn-generative-ai-products
 

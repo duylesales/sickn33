@@ -77,7 +77,7 @@ That last question is a genuine test. Candidates who advocate reinforcement lear
 
 Contextual bandits are where most production decision-learning in Europe actually happens, and understanding them well is more employable than understanding deep reinforcement learning.
 
-The setting is simpler than full reinforcement learning: at each decision you observe a context, choose one of a set of actions, and receive a reward. There is no long-term state transition to reason about, which removes most of the difficulty while retaining the core benefit — learning which action suits which context, while continuing to gather information about alternatives.
+The setting is simpler than full reinforcement learning: at each decision you observe a context, choose one of a set of actions, and receive a reward. There is no long-term state transition to reason about, which removes most of the difficulty while retaining the core benefit - learning which action suits which context, while continuing to gather information about alternatives.
 
 Applications across European companies include choosing which content or product to show, which of several offers to make, which message variant to send, which model or ranking strategy to route a request to, and which of several treatments to apply to a case.
 
@@ -101,7 +101,7 @@ Candidates who raise propensity logging unprompted signal that they have worked 
 
 The sectors with the most genuine reinforcement learning deployment in Europe share a characteristic: they have physical models good enough to simulate.
 
-In energy, battery storage dispatch is a textbook sequential decision problem — when to charge and discharge given prices, forecasts and constraints — and the economics are directly measurable. Heating, ventilation and cooling control in large buildings and data centres is similar, with thermal models providing the simulator. Demand response, flexible load scheduling and portfolio optimisation follow the same pattern.
+In energy, battery storage dispatch is a textbook sequential decision problem - when to charge and discharge given prices, forecasts and constraints - and the economics are directly measurable. Heating, ventilation and cooling control in large buildings and data centres is similar, with thermal models providing the simulator. Demand response, flexible load scheduling and portfolio optimisation follow the same pattern.
 
 In industrial processes, set point optimisation for continuous processes uses physical or data-driven process models. The typical architecture combines learned policies with classical model predictive control, which supplies constraint satisfaction and a safety envelope that a learned policy alone cannot guarantee.
 
@@ -143,7 +143,7 @@ You can build credible experience without access to a company's production syste
 
 Avoid the standard benchmark environments as portfolio pieces. Every applicant has trained an agent on a classic control task, and it demonstrates nothing employers care about.
 
-Instead, build something with the shape of a real problem. Take a public dataset of logged decisions and outcomes — energy prices and consumption, transport data, retail transactions — and construct a decision problem. Implement a contextual bandit with proper propensity logging. Evaluate policies offline with inverse propensity weighting and a doubly robust estimator, and report confidence intervals. Add a safety constraint and show that it binds. Compare against a simple heuristic and against a forecast-and-optimise baseline.
+Instead, build something with the shape of a real problem. Take a public dataset of logged decisions and outcomes - energy prices and consumption, transport data, retail transactions - and construct a decision problem. Implement a contextual bandit with proper propensity logging. Evaluate policies offline with inverse propensity weighting and a doubly robust estimator, and report confidence intervals. Add a safety constraint and show that it binds. Compare against a simple heuristic and against a forecast-and-optimise baseline.
 
 Write it up with what failed: the estimator whose variance was too high, the reward that produced perverse behaviour, the constraint you forgot.
 

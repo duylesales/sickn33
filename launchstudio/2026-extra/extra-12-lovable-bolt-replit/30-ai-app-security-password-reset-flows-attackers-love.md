@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every account in your product has two doors. The front one is the login form, which founders think about, test and occasionally add a second factor to. The back one is password reset, which exists to let someone in without knowing the password — and is built in ten minutes, once, and never looked at again.
+Every account in your product has two doors. The front one is the login form, which founders think about, test and occasionally add a second factor to. The back one is password reset, which exists to let someone in without knowing the password - and is built in ten minutes, once, and never looked at again.
 
 An attacker choosing between them will not choose the front door.
 
@@ -32,7 +32,7 @@ Six properties, and generated implementations typically miss two or three.
 
 **Unpredictable.** Generated from a cryptographically secure source, long enough that guessing is hopeless. A token derived from a timestamp, an email address or a sequential value can be produced by anyone who thinks about it.
 
-**Short-lived.** Fifteen to sixty minutes. A reset link valid for a week is a key sitting in an inbox — and inboxes are forwarded, synced to devices, and occasionally read by other people.
+**Short-lived.** Fifteen to sixty minutes. A reset link valid for a week is a key sitting in an inbox - and inboxes are forwarded, synced to devices, and occasionally read by other people.
 
 **Single use.** Invalidated the moment it is used. A link that still works after the password has been changed is a link an attacker can use later, having intercepted the email once.
 
@@ -46,9 +46,9 @@ Six properties, and generated implementations typically miss two or three.
 
 If your reset form says "no account with that email" for unknown addresses and "check your inbox" for known ones, you have built a tool for confirming who uses your product.
 
-That matters more than it sounds. For a product serving a sensitive category — debt counselling, legal advice, healthcare, a dating service — membership is itself confidential. And for any product, a confirmed list of real customer addresses is what makes a phishing campaign effective.
+That matters more than it sounds. For a product serving a sensitive category - debt counselling, legal advice, healthcare, a dating service - membership is itself confidential. And for any product, a confirmed list of real customer addresses is what makes a phishing campaign effective.
 
-The correct response is identical in both cases: *if an account exists for that address, we have sent a link*. Same text, same status, and roughly the same timing — a response that returns instantly for unknown addresses and takes 400 milliseconds for real ones leaks the same information through the clock.
+The correct response is identical in both cases: *if an account exists for that address, we have sent a link*. Same text, same status, and roughly the same timing - a response that returns instantly for unknown addresses and takes 400 milliseconds for real ones leaks the same information through the clock.
 
 The same discipline applies to registration and to login, where "this email is already registered" is the most common enumeration leak in AI-built products.
 
@@ -56,7 +56,7 @@ The same discipline applies to registration and to login, where "this email is a
 
 Two limits, and the second is usually missing.
 
-Limit reset requests per account and per address, so an attacker cannot generate hundreds of tokens for one victim — which both raises the chance of interception and floods the person with mail.
+Limit reset requests per account and per address, so an attacker cannot generate hundreds of tokens for one victim - which both raises the chance of interception and floods the person with mail.
 
 Limit reset requests per IP address and per time window, because the same endpoint sends email on demand to arbitrary addresses. Without a limit, your product is a free mailing tool with your domain's reputation attached, and the first consequence is that your legitimate mail starts going to spam folders.
 
@@ -64,13 +64,13 @@ Limit reset requests per IP address and per time window, because the same endpoi
 
 A password reset frequently means "I think someone else has access". The flow should behave as though that is true.
 
-Invalidate every other session for the account, so an attacker who is signed in is signed out. Notify the account's email address that the password was changed, with a time and a way to respond if it was not them — sent to the address on file at the time of the change, which is the notification that catches an account takeover in progress.
+Invalidate every other session for the account, so an attacker who is signed in is signed out. Notify the account's email address that the password was changed, with a time and a way to respond if it was not them - sent to the address on file at the time of the change, which is the notification that catches an account takeover in progress.
 
 And do not sign the user in automatically from the reset link itself. The link proves access to an inbox; asking them to log in with the new password proves they chose it.
 
 ## The Email Change Is the Real Vulnerability
 
-Password reset gets attention. Changing the email address on an account gets almost none, and it is the more powerful action — whoever controls the address controls every future reset.
+Password reset gets attention. Changing the email address on an account gets almost none, and it is the more powerful action - whoever controls the address controls every future reset.
 
 Three protections, and AI-generated implementations rarely have any.
 
@@ -82,7 +82,7 @@ That last one is what saves an account when a session has already been compromis
 
 Eventually someone loses access to their email and writes to you. Whatever you do next is your account recovery process, whether or not you have designed one.
 
-Decide in advance what evidence you require — something only the account holder would know, confirmation from another user in the same organisation, a verified payment detail — and write it down. Then follow it, including when the person is frustrated and senior and in a hurry, because that is precisely the pressure a social engineering attempt applies.
+Decide in advance what evidence you require - something only the account holder would know, confirmation from another user in the same organisation, a verified payment detail - and write it down. Then follow it, including when the person is frustrated and senior and in a hurry, because that is precisely the pressure a social engineering attempt applies.
 
 Record every manual recovery: who asked, what was verified, who approved it. For a business product this is also what a customer's security questionnaire asks about.
 
@@ -90,11 +90,11 @@ Record every manual recovery: who asked, what was verified, who approved it. For
 
 While you are in this part of the product, the rules around the password itself are worth revisiting, because the conventional advice most generated code implements is now considered actively unhelpful.
 
-Composition requirements — one uppercase, one number, one symbol — push people toward predictable substitutions and a note in a drawer. Forced rotation every 90 days produces the same password with an incrementing digit. Both were dropped from serious guidance years ago and both still appear in new applications because they are what the training data contains.
+Composition requirements - one uppercase, one number, one symbol - push people toward predictable substitutions and a note in a drawer. Forced rotation every 90 days produces the same password with an incrementing digit. Both were dropped from serious guidance years ago and both still appear in new applications because they are what the training data contains.
 
 What current guidance supports: a minimum length of at least twelve characters with no composition rules and no arbitrary maximum below 64; checking the chosen password against a list of known breached passwords, which is a free API call and catches the genuinely dangerous choices; allowing spaces and the full character set so passphrases work; and never expiring passwords on a schedule, only on evidence of compromise.
 
-Store them with a modern password hashing algorithm designed for the purpose. If you use an authentication provider this is handled; if any part of your application hashes passwords itself — which happens in AI-built products that added a second login path for administrators — check what it uses, because a fast general-purpose hash is the wrong tool and appears with some regularity.
+Store them with a modern password hashing algorithm designed for the purpose. If you use an authentication provider this is handled; if any part of your application hashes passwords itself - which happens in AI-built products that added a second login path for administrators - check what it uses, because a fast general-purpose hash is the wrong tool and appears with some regularity.
 
 One more small thing that measurably reduces support volume: let people see what they typed. A visibility toggle on the password field is not a security weakness, and it prevents a great many failed logins.
 
@@ -104,7 +104,7 @@ And treat the login form's own rate limiting as part of this work: a small numbe
 
 For an existing product this is typically half a day: reset tokens generated securely, expiring within an hour, single use, hashed at rest, and invalidating prior tokens; identical responses and timing regardless of whether an account exists, applied to registration and login too; rate limits per account and per IP; all other sessions invalidated on reset with a notification to the address on file; no automatic sign-in from the link; email changes requiring the current password, confirmation at the new address and a reversible notification to the old one; and a written support recovery procedure with a record of each use.
 
-LaunchStudio covers recovery flows in security review, where they are consistently weaker than the login they protect. The engineers are Manifera's — eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
+LaunchStudio covers recovery flows in security review, where they are consistently weaker than the login they protect. The engineers are Manifera's - eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
 
 [Ask us to attempt a reset against your own account](https://launchstudio.eu/en/#contact). It is the fastest security test we run.
 
@@ -116,18 +116,18 @@ Gerben Stuiver built Klantportaal in Lovable: a customer portal for accountancy 
 
 The password reset was reasonable: a random token, expiring in 24 hours. The email change was not protected at all. A signed-in user could change the address on the account with no password confirmation, no verification of the new address, and no notification to the old one.
 
-A client's laptop was compromised through unrelated malware and the session cookie was stolen. The attacker used the session to change the email address on the account to one they controlled, waited for the session to expire, and then used the ordinary password reset flow — which now sent to their address — to set a password. They had the account permanently, and the real owner was locked out with no notification of anything.
+A client's laptop was compromised through unrelated malware and the session cookie was stolen. The attacker used the session to change the email address on the account to one they controlled, waited for the session to expire, and then used the ordinary password reset flow - which now sent to their address - to set a password. They had the account permanently, and the real owner was locked out with no notification of anything.
 
 The business discovered it when their accountant mentioned a document request they had not made.
 
 Two business days: email changes now require the current password, send a confirmation link to the proposed new address, apply only when confirmed, and notify the old address with a 48-hour reversal link; reset token lifetime cut from 24 hours to 30 minutes, made single use, hashed at rest, and invalidating any previous outstanding token; identical responses and timing for known and unknown addresses across reset, registration and login, which had previously stated plainly whether an email was registered; rate limits per account and per IP on the reset endpoint, which had none and had been used to send 900 reset emails in one afternoon the previous month; all sessions invalidated on password change with a notification to the address on file; automatic sign-in from the reset link removed; and a written support recovery procedure requiring confirmation from a second contact at the same office, with every use recorded.
 
-**Result:** the account was recovered manually and the incident reported to the affected business and their accountant. In the following year the old-address notification has been triggered by four email changes, one of which was reversed by a client who had not made it — an attempted takeover caught in eleven minutes by a message that cost nothing to send.
+**Result:** the account was recovered manually and the incident reported to the affected business and their accountant. In the following year the old-address notification has been triggered by four email changes, one of which was reversed by a client who had not made it - an attempted takeover caught in eleven minutes by a message that cost nothing to send.
 
 > *"Everyone protects the password. Nobody protects the address the password reset goes to, and that is the one that actually owns the account."*
-> — **Gerben Stuiver, Founder, Klantportaal (Zwolle)**
+> - **Gerben Stuiver, Founder, Klantportaal (Zwolle)**
 
-**Cost & Timeline:** €2,300 (email change protection with confirmation and reversal, reset token hardening, enumeration removal across three flows, rate limiting, session invalidation and notification, support recovery procedure) — completed in 2 business days.
+**Cost & Timeline:** €2,300 (email change protection with confirmation and reversal, reset token hardening, enumeration removal across three flows, rate limiting, session invalidation and notification, support recovery procedure) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -137,7 +137,7 @@ Fifteen to sixty minutes, single use, and invalidated when a newer one is reques
 
 ### Why should the reset form not say whether an account exists?
 
-Because it confirms who uses your product — which is confidential for sensitive categories and, for any product, gives a phishing campaign a verified address list. Keep the response and its timing identical.
+Because it confirms who uses your product - which is confidential for sensitive categories and, for any product, gives a phishing campaign a verified address list. Keep the response and its timing identical.
 
 ### Should a reset link sign the user in automatically?
 
@@ -169,7 +169,7 @@ All of them should end. A reset often means the user suspects someone else has a
       "name": "Why must a reset form not reveal whether an account exists?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It confirms who your customers are — sensitive in itself and the basis of an effective phishing list. Keep response text and timing identical."
+        "text": "It confirms who your customers are - sensitive in itself and the basis of an effective phishing list. Keep response text and timing identical."
       }
     },
     {

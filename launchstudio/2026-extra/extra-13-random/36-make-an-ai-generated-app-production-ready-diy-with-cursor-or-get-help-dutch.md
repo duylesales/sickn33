@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Een AI-Gegenereerde App Productierijp Maken: Zelf Doen met Cursor of Hulp Inschakelen?",
-  "description": "Voor technische oprichters: een praktisch raamwerk om te bepalen welke taken u zelf met Cursor uitvoert en welke u toevertrouwt aan een specialist — gebaseerd op risico, omkeerbaarheid, verifieerbaarheid en uw beschikbare tijd.",
+  "description": "Voor technische oprichters: een praktisch raamwerk om te bepalen welke taken u zelf met Cursor uitvoert en welke u toevertrouwt aan een specialist - gebaseerd op risico, omkeerbaarheid, verifieerbaarheid en uw beschikbare tijd.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-05",
@@ -50,9 +50,9 @@ Taken met weinig schade, zichtbaar falen, eenvoudig terugdraaien en duidelijke v
 
 ## Taken Waarbij Hulp Zich Meestal Terugbetaalt
 
-**Toegangsbeheer en databasebeleid.** Veel schade, stil falen. Een verkeerde row level security-policy ziet er goed uit totdat iemand de data van een andere klant leest. Het verifiëren vraagt om bij elke rol en tabel als een aanvaller te denken — precies het denken dat moeilijk op uw eigen code toe te passen is. AI-tools zijn hier opvallend onbetrouwbaar: vraag Cursor om "RLS te repareren" en het kan policy's opleveren die uw tests doorstaan omdat uw tests het ideale pad gebruiken.
+**Toegangsbeheer en databasebeleid.** Veel schade, stil falen. Een verkeerde row level security-policy ziet er goed uit totdat iemand de data van een andere klant leest. Het verifiëren vraagt om bij elke rol en tabel als een aanvaller te denken - precies het denken dat moeilijk op uw eigen code toe te passen is. AI-tools zijn hier opvallend onbetrouwbaar: vraag Cursor om "RLS te repareren" en het kan policy's opleveren die uw tests doorstaan omdat uw tests het ideale pad gebruiken.
 
-**Betaalwebhooks en abonnementsstatus.** Omzet staat op het spel, fouten zijn vaak stil (de klant houdt toegang na opzeggen; niemand klaagt). Randgevallen — retries, events in de verkeerde volgorde, mislukte verlengingen, terugbetalingen — zijn talrijk.
+**Betaalwebhooks en abonnementsstatus.** Omzet staat op het spel, fouten zijn vaak stil (de klant houdt toegang na opzeggen; niemand klaagt). Randgevallen - retries, events in de verkeerde volgorde, mislukte verlengingen, terugbetalingen - zijn talrijk.
 
 **Geheimen roteren na blootstelling.** Stonden sleutels in de browserbundle of de git-geschiedenis, dan moet de rotatie volledig en gecoördineerd zijn. Eén missen is onomkeerbaar in de zin dat de blootstelling al heeft plaatsgevonden.
 
@@ -62,7 +62,7 @@ Taken met weinig schade, zichtbaar falen, eenvoudig terugdraaien en duidelijke v
 
 ## Een Middenweg: Zelf Doen met een Review
 
-Veel technische oprichters kiezen een hybride aanpak: het meeste werk zelf doen, en daarna betalen voor een gerichte review van de gebieden met hoog risico. Dat houdt de kosten laag en dekt de blinde vlekken. Een review van toegangsbeheer, betalingen en geheimen kost doorgaans een fractie van een volledig project en levert een specifieke lijst op van wat er moet worden opgelost — die u daarna zelf kunt oplossen of kunt overdragen.
+Veel technische oprichters kiezen een hybride aanpak: het meeste werk zelf doen, en daarna betalen voor een gerichte review van de gebieden met hoog risico. Dat houdt de kosten laag en dekt de blinde vlekken. Een review van toegangsbeheer, betalingen en geheimen kost doorgaans een fractie van een volledig project en levert een specifieke lijst op van wat er moet worden opgelost - die u daarna zelf kunt oplossen of kunt overdragen.
 
 LaunchStudio biedt dit direct aan: een gerichte review vanaf € 800, met de keuze om bevindingen tegen een vaste prijs te laten oplossen of de lijst mee te nemen en het zelf te doen.
 
@@ -73,7 +73,7 @@ Doet u het werk zelf, dan maken een paar werkwijzen Cursor veel betrouwbaarder:
 - **Schrijf de regel vóór de code.** Beschrijf het toegangsmodel in een document (wie wat mag zien), vraag Cursor daarna policy's daartegen te implementeren en tests te schrijven die verboden toegang proberen.
 - **Vraag om negatieve tests.** "Schrijf een test die bewijst dat gebruiker B de factuur van gebruiker A niet kan lezen" is waardevoller dan "schrijf tests voor facturen".
 - **Beoordeel diffs op scope.** Cursor verandert vaak meer dan u vroeg; wijs diffs af die niet-gerelateerde bestanden raken.
-- **Houd een regelbestand bij.** De projectregels van Cursor kunnen het herinneren aan uw beveiligingsafspraken — vertrouw nooit ID's die de client aanlevert, valideer invoer altijd met schema's.
+- **Houd een regelbestand bij.** De projectregels van Cursor kunnen het herinneren aan uw beveiligingsafspraken - vertrouw nooit ID's die de client aanlevert, valideer invoer altijd met schema's.
 - **Plak nooit geheimen in prompts.** Gebruik de namen van omgevingsvariabelen.
 
 De [Supabase-gids over row level security](https://supabase.com/docs/guides/database/postgres/row-level-security) is een goede referentie voor de policykant als u Supabase gebruikt.
@@ -89,11 +89,11 @@ Bent u van plan een AI-gegenereerde app zelf productierijp te maken, structureer
 5. **Zoek naar omwegen:** service-role-sleutels, beheerclients, `security definer`-functies, ruwe SQL.
 6. **Controleer geheimen:** zoeken in de bundle, scan van de git-geschiedenis, scheiding van omgevingen.
 7. **Loop het geld na:** elke betaalstatus, van aangemaakt tot terugbetaald, in testmodus.
-8. **Breek de omgeving:** stop de database in staging, vertraag een API, laat een token verlopen — observeer het gedrag.
+8. **Breek de omgeving:** stop de database in staging, vertraag een API, laat een token verlopen - observeer het gedrag.
 
 Dit kost voor een typische app een paar dagen, maar het verandert "ik denk dat het goed is" in bewijs.
 
-## Waar Cursor het Meest — en het Minst — Helpt
+## Waar Cursor het Meest - en het Minst - Helpt
 
 Cursor is uitstekend in sommige productietaken en riskant in andere:
 
@@ -116,11 +116,11 @@ Met de projectregels van Cursor kunt u afspraken vastleggen die het bij elke gen
 
 ## Tijdsbudget: Zelf Doen versus Hulp
 
-Het is de moeite waard eerlijk in te schatten hoe lang zelf doen duurt. Voor een technische oprichter die nieuw is in productieversterking duren de gebieden met hoog risico doorgaans veel langer dan verwacht: RLS grondig leren en op elke tabel toepassen (meerdere dagen), webhooks met alle randgevallen implementeren en testen (meerdere dagen), omgevingen, CI en monitoring inrichten (een paar dagen), plus onderzoekstijd. Vergelijk die tijd met de alternatieve kosten — verkoopgesprekken, gebruikersinterviews, functies. Voor veel oprichters is de taken met laag risico zelf doen en hulp inkopen voor de taken met hoog risico het beste gebruik van zowel geld als tijd.
+Het is de moeite waard eerlijk in te schatten hoe lang zelf doen duurt. Voor een technische oprichter die nieuw is in productieversterking duren de gebieden met hoog risico doorgaans veel langer dan verwacht: RLS grondig leren en op elke tabel toepassen (meerdere dagen), webhooks met alle randgevallen implementeren en testen (meerdere dagen), omgevingen, CI en monitoring inrichten (een paar dagen), plus onderzoekstijd. Vergelijk die tijd met de alternatieve kosten - verkoopgesprekken, gebruikersinterviews, functies. Voor veel oprichters is de taken met laag risico zelf doen en hulp inkopen voor de taken met hoog risico het beste gebruik van zowel geld als tijd.
 
 ## Weten Wanneer U Er Niet Meer Uitkomt
 
-Sommige signalen wijzen erop dat het tijd is om hulp te vragen: u hebt een beveiligingsregel versoepeld om iets werkend te krijgen en weet niet zeker waarom het mislukte; een migratie gedroeg zich onverwacht op echte data; u kunt niet uitleggen waarom een betaalstatus is wat hij is; u hebt een sleutel geroteerd maar iets gebruikt nog de oude; of u merkt dat u uw AI-tool herhaaldelijk vraagt het "gewoon werkend te maken" voor hetzelfde gebied. Geen van deze is een mislukking — het zijn de momenten waarop een ervaren tweede paar ogen het meest bespaart.
+Sommige signalen wijzen erop dat het tijd is om hulp te vragen: u hebt een beveiligingsregel versoepeld om iets werkend te krijgen en weet niet zeker waarom het mislukte; een migratie gedroeg zich onverwacht op echte data; u kunt niet uitleggen waarom een betaalstatus is wat hij is; u hebt een sleutel geroteerd maar iets gebruikt nog de oude; of u merkt dat u uw AI-tool herhaaldelijk vraagt het "gewoon werkend te maken" voor hetzelfde gebied. Geen van deze is een mislukking - het zijn de momenten waarop een ervaren tweede paar ogen het meest bespaart.
 
 ## Na de Review: Eigenaarschap Houden
 
@@ -147,17 +147,17 @@ Zeven van deze punten zijn voor een technische oprichter echt geschikt om zelf t
 
 ## Gaandeweg Documenteren
 
-Het zelf doen heeft één verborgen risico: de kennis zit alleen in uw hoofd. Schrijf voor elke productiebeslissing een korte notitie — waarom RLS zo is opgebouwd, hoe webhooks worden geverifieerd, waar geheimen staan, hoe u terugdraait. Het kost minuten per beslissing en betaalt zich terug de eerste keer dat u iemand aanneemt, geld ophaalt of na zes maanden functiewerk terugkeert naar een deel van de codebase.
+Het zelf doen heeft één verborgen risico: de kennis zit alleen in uw hoofd. Schrijf voor elke productiebeslissing een korte notitie - waarom RLS zo is opgebouwd, hoe webhooks worden geverifieerd, waar geheimen staan, hoe u terugdraait. Het kost minuten per beslissing en betaalt zich terug de eerste keer dat u iemand aanneemt, geld ophaalt of na zes maanden functiewerk terugkeert naar een deel van de codebase.
 
 ## De Hybride Aanpak in de Praktijk
 
-Het hybride model — het meeste zelf doen, een gerichte review voor de riskante delen — kost doorgaans een fractie van een volledig project en dekt de gebieden waar fouten stil en duur zijn. Het leert u ook iets: elke bevinding uit een review komt met uitleg, en na een of twee rondes kunnen veel oprichters dezelfde problemen zelf in nieuwe code herkennen.
+Het hybride model - het meeste zelf doen, een gerichte review voor de riskante delen - kost doorgaans een fractie van een volledig project en dekt de gebieden waar fouten stil en duur zijn. Het leert u ook iets: elke bevinding uit een review komt met uitleg, en na een of twee rondes kunnen veel oprichters dezelfde problemen zelf in nieuwe code herkennen.
 
 ## Waarom een Tweede Paar Ogen Zelfs Experts Helpt
 
 Zelfs bij Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en 160+ projecten, wordt code beoordeeld door iemand anders dan de auteur. Niet omdat engineers het niet kunnen, maar omdat peer review een categorie fouten vangt die zelfreview niet vangt. LaunchStudio brengt die praktijk naar solo-oprichters: een externe review door engineers in het ontwikkelcentrum van Manifera in Ho Chi Minh-stad, gecoördineerd vanuit de Herengracht 420 in Amsterdam. Zie voor meer over het team [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — ook als u van plan bent het meeste zelf te doen.
+[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) - ook als u van plan bent het meeste zelf te doen.
 
 ## Praktijkvoorbeeld
 
@@ -172,15 +172,15 @@ LaunchStudio herstelde de toegang tot de opslag en de afhandeling van de Stripe-
 **Resultaat:** Paadje lanceerde abonnementen in het voorjaar en bereikte in de herfst 1.900 betalende wandelaars. Stijn onderhoudt de app sindsdien alleen en breidt de negatieve tests uit bij elke nieuwe functie; ze hebben één policyregressie opgevangen die door een refactor in Cursor was ontstaan.
 
 > *"Ik had niemand nodig om mijn app te bouwen. Ik had iemand nodig die keek naar de drie dingen waar ik me stilletjes zorgen over maakte. Alle drie waren die zorgen terecht."*
-> — **Stijn Vermeulen, Oprichter, Paadje (Voorburg)**
+> - **Stijn Vermeulen, Oprichter, Paadje (Voorburg)**
 
-**Kosten & Tijdlijn:** € 1.600 (gerichte review plus oplossingen voor opslag, abonnementslevenscyclus en RLS-policy's, met overdracht van tests) — afgerond in 6 werkdagen.
+**Kosten & Tijdlijn:** € 1.600 (gerichte review plus oplossingen voor opslag, abonnementslevenscyclus en RLS-policy's, met overdracht van tests) - afgerond in 6 werkdagen.
 
 ## Veelgestelde Vragen
 
 ### Kan een technische oprichter een AI-gegenereerde app alleen productierijp maken?
 
-Een groot deel ervan wel: domeinen, SSL, e-mail, monitoring, CI en prestaties. De gebieden met het hoogste risico — toegangsbeheer, betalingen, het roteren van geheimen en datamigratie — hebben baat bij een externe review, omdat fouten daar stil en kostbaar zijn.
+Een groot deel ervan wel: domeinen, SSL, e-mail, monitoring, CI en prestaties. De gebieden met het hoogste risico - toegangsbeheer, betalingen, het roteren van geheimen en datamigratie - hebben baat bij een externe review, omdat fouten daar stil en kostbaar zijn.
 
 ### Is Cursor betrouwbaar voor het schrijven van beveiligingsbeleid voor de database?
 

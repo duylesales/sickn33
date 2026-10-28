@@ -78,7 +78,7 @@ Mason werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Mason heeft alle klantgegevens beveiligd en strikte gegevensisolatie geverifieerd onder strenge tests met meerdere gebruikers.
 
-**Kosten en tijdlijn:** € 1.200 (Security Hardening Package) — productieklaar en binnen 4 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.200 (Security Hardening Package) - productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
 

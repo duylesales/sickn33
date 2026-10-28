@@ -1,4 +1,4 @@
-🚨 Bram Kuiper built FactuurFlow, an invoicing tool for freelancers, with Lovable — clean dashboard, fast search, eleven paying beta users within a month. He'd tested it a hundred times himself. What he never tested: what happens when the search box gets something other than a client's name. 😳
+🚨 Bram Kuiper built FactuurFlow, an invoicing tool for freelancers, with Lovable - clean dashboard, fast search, eleven paying beta users within a month. He'd tested it a hundred times himself. What he never tested: what happens when the search box gets something other than a client's name. 😳
 
 A working demo tells you almost nothing about whether your app can survive someone trying to break it. 🧠
 
@@ -11,7 +11,7 @@ A working demo tells you almost nothing about whether your app can survive someo
 ✅ Add server-side input validation across every form field in the app, not just the obvious ones
 ✅ Run automated tests specifically designed to throw malformed input at the database
 
-At **LaunchStudio**, our engineers spend their days reading exactly this kind of AI-generated code and closing the gaps a smooth demo never reveals — the same standard Manifera brings to its enterprise clients out of Amsterdam. 🛡️
+At **LaunchStudio**, our engineers spend their days reading exactly this kind of AI-generated code and closing the gaps a smooth demo never reveals - the same standard Manifera brings to its enterprise clients out of Amsterdam. 🛡️
 
 Bram's result: query hardening and validation across the app, completed in 5 business days, with the exact malformed-input attack now caught before it reaches the database. 🚀
 

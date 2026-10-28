@@ -1,4 +1,4 @@
-🚨 Does an engineer in Ho Chi Minh City debugging a production issue count as an international data transfer under GDPR? Most CFOs have only ever gotten "we're compliant" — not a documented lawful basis. ⚙️💥
+🚨 Does an engineer in Ho Chi Minh City debugging a production issue count as an international data transfer under GDPR? Most CFOs have only ever gotten "we're compliant" - not a documented lawful basis. ⚙️💥
 
 **The Pain Points:**
 ❌ **A Vague Assurance, Not a Legal Basis:** Vietnam sits outside the EEA with no adequacy decision.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **A Documented Compliance Mechanism:** Data minimization, executed Standard Contractual Clauses, a proper DPA, and a rehearsed breach chain.
 ✅ **Amsterdam Strategic Governance:** Positioned as the accountable processor your DPA is actually signed with.
-✅ **Vietnam Execution Velocity:** Working against anonymized or masked data wherever technically possible — production access restricted, logged, and rare.
+✅ **Vietnam Execution Velocity:** Working against anonymized or masked data wherever technically possible - production access restricted, logged, and rare.
 
 The compliance question isn't "is Vietnam safe." It's "does our contract include SCCs, a proper DPA, and a rehearsed breach chain." 🛡️
 

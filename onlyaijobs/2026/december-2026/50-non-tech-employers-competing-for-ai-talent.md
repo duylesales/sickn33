@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "You Are Not a Tech Company, and You Still Need AI People: Competing Without Pretending",
-  "description": "Manufacturers, logistics firms, hospitals, wholesalers and municipalities compete for the same scarce candidates as technology companies — and win when they stop imitating them.",
+  "description": "Manufacturers, logistics firms, hospitals, wholesalers and municipalities compete for the same scarce candidates as technology companies - and win when they stop imitating them.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-25",
@@ -41,7 +41,7 @@ A wholesaler in Brabant, a hospital in Gelderland and a machine builder in Twent
 
 Candidates leave technology companies for ordinary organisations constantly, and the reasons are consistent.
 
-**The problems are concrete.** Optimising a production line, reducing waste in a fresh supply chain, improving patient flow — these are more tangible than incremental improvements to a conversion funnel, and a large share of experienced data professionals say so explicitly.
+**The problems are concrete.** Optimising a production line, reducing waste in a fresh supply chain, improving patient flow - these are more tangible than incremental improvements to a conversion funnel, and a large share of experienced data professionals say so explicitly.
 
 **The data is unexploited.** A company with twenty years of production data and no analysis offers a first-year impact that a mature technology company cannot: the low-hanging fruit is still on the tree.
 
@@ -115,7 +115,7 @@ Candidates for these roles are frequently not in Amsterdam. They live in the reg
 
 Referrals matter disproportionately. The first technical person you hire knows others, and in a small market a personal recommendation from someone who took a chance on an unfamiliar employer carries weight that no advert does.
 
-And there is a timing advantage: people reassess their commute when their circumstances change — a child starting school, a partner's job moving, a house purchase. A regional employer with a steady presence in the local market catches those moments; one that advertises only when desperate does not.
+And there is a timing advantage: people reassess their commute when their circumstances change - a child starting school, a partner's job moving, a house purchase. A regional employer with a steady presence in the local market catches those moments; one that advertises only when desperate does not.
 
 ## Writing the Advert: A Worked Structure
 
@@ -139,35 +139,35 @@ An advert of this kind takes an afternoon to write and outperforms months of gen
 
 ## The Long Game: Becoming Known Regionally
 
-Employers outside the technology sector tend to recruit reactively — a vacancy appears, a search begins, six months pass. The organisations that eventually recruit easily have done something different over several years, and none of it is expensive.
+Employers outside the technology sector tend to recruit reactively - a vacancy appears, a search begins, six months pass. The organisations that eventually recruit easily have done something different over several years, and none of it is expensive.
 
 They host or sponsor a local meetup, or simply offer their canteen as a venue. They send an engineer to speak about a real problem they solved, which is far more persuasive than any employer branding. They take students on graduation projects every year, which means twenty young professionals have seen the inside of the company by the time they are hiring. They maintain a relationship with the nearest university of applied sciences. And when someone leaves on good terms, they stay in touch.
 
 Over three or four years this produces a situation in which the region's data professionals know who you are and what you work on. Vacancies then attract applications from people who already understand the context, and referrals arrive without being asked for.
 
-None of this helps with the vacancy you are trying to fill this quarter. All of it helps with the one you will have next year, and the year after — which, for organisations that expect to need these skills permanently, is the more important problem.
+None of this helps with the vacancy you are trying to fill this quarter. All of it helps with the one you will have next year, and the year after - which, for organisations that expect to need these skills permanently, is the more important problem.
 
 ## Key Takeaways
 
 - Non-technology employers offer concrete problems, unexploited data, broader ownership and a sustainable pace, which candidates value more than employers assume.
 - The most common mistakes are imitating technology company language, vagueness about the work, hiding maturity level and slow processes.
 - A specific, honest advert with a salary range outperforms a generic one from a better-known employer.
-- Preconditions — a sponsor, data access, a defined first problem and realistic timelines — matter more than the calibre of the hire.
+- Preconditions - a sponsor, data access, a defined first problem and realistic timelines - matter more than the calibre of the hire.
 - Graduation projects, internal development, bounded consultancy and part-time seniors are lower-risk routes to a first capability.
 
 ## Where to Start
 
-Rewrite your vacancy so that a stranger can tell what the first year of work would actually involve. If you cannot write that, the problem is not recruitment — it is that the job has not been defined yet.
+Rewrite your vacancy so that a stranger can tell what the first year of work would actually involve. If you cannot write that, the problem is not recruitment - it is that the job has not been defined yet.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer competing on salary) Can we win against technology companies?
-Frequently, on problem concreteness, ownership, pace and commute — but not by imitating their language or pretending to be one.
+Frequently, on problem concreteness, ownership, pace and commute - but not by imitating their language or pretending to be one.
 
 ### (Scenario: employer with no data team) Should we say we are starting from zero?
-Yes — it attracts the candidate who wants to build and repels the one who would leave in month three, which is the outcome you want.
+Yes - it attracts the candidate who wants to build and repels the one who would leave in month three, which is the outcome you want.
 
 ### (Scenario: employer whose first hire failed) What usually goes wrong?
 Missing preconditions: no senior sponsor, no practical data access, no defined first problem, or unrealistic expectations of speed.
@@ -176,18 +176,18 @@ Missing preconditions: no senior sponsor, no practical data access, no defined f
 A graduation project or internship with a Dutch university, which produces a proof of concept and often a future hire.
 
 ### (Scenario: regional employer) Where do we find candidates?
-In your own region — many already commute long distances and would prefer not to; local networks and referrals reach them better than national adverts.
+In your own region - many already commute long distances and would prefer not to; local networks and referrals reach them better than national adverts.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can non-technology employers compete for AI talent?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently, on problem concreteness, ownership, pace and commute — but not by imitating technology company language."}},
-    {"@type": "Question", "name": "Should we admit we have no data team yet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it attracts builders and repels candidates who would leave quickly, which is the desired filtering."}},
+    {"@type": "Question", "name": "Can non-technology employers compete for AI talent?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently, on problem concreteness, ownership, pace and commute - but not by imitating technology company language."}},
+    {"@type": "Question", "name": "Should we admit we have no data team yet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it attracts builders and repels candidates who would leave quickly, which is the desired filtering."}},
     {"@type": "Question", "name": "Why do first data hires fail at traditional employers?", "acceptedAnswer": {"@type": "Answer", "text": "Missing preconditions: no senior sponsor, no data access, no defined first problem, unrealistic timelines."}},
     {"@type": "Question", "name": "What is the lowest-risk way to start building data capability?", "acceptedAnswer": {"@type": "Answer", "text": "A graduation project or internship with a Dutch university, which often produces both a proof of concept and a future hire."}},
-    {"@type": "Question", "name": "Where should regional employers look for candidates?", "acceptedAnswer": {"@type": "Answer", "text": "In their own region — many candidates already commute long distances and local networks reach them better."}}
+    {"@type": "Question", "name": "Where should regional employers look for candidates?", "acceptedAnswer": {"@type": "Answer", "text": "In their own region - many candidates already commute long distances and local networks reach them better."}}
   ]
 }
 </script>

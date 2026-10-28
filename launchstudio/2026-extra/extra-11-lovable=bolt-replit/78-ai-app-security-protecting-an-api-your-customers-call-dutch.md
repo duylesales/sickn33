@@ -22,7 +22,7 @@ Doelgroep: Technical Solo Founder / Indie Hacker
 
 Een reguliere webapplicatie geniet van een zekere toevallige bescherming. De meeste menselijke bezoekers klikken uitsluitend op de knoppen die zichtbaar zijn, volgen de navigatieroutes die de interface aanbiedt, en denken er nooit over na welke verzoeken er onder de motorkap worden verzonden. Die bescherming is flinterdun, maar in de praktijk wel degelijk aanwezig.
 
-Een API geniet van geen enkele toevallige bescherming. Elk endpoint is gedocumenteerd of eenvoudig te achterhalen. Elke URL-parameter en request-body kan willekeurig worden aangepast. En de aanroeper is geen mens, maar een computerprogramma dat tienduizend verzoeken per minuut kan afvuren terwijl u ligt te slapen — en dat feilloos het ene vergeten endpoint opspoort omdat het geautomatiseerd álle mogelijke combinaties afgaat.
+Een API geniet van geen enkele toevallige bescherming. Elk endpoint is gedocumenteerd of eenvoudig te achterhalen. Elke URL-parameter en request-body kan willekeurig worden aangepast. En de aanroeper is geen mens, maar een computerprogramma dat tienduizend verzoeken per minuut kan afvuren terwijl u ligt te slapen - en dat feilloos het ene vergeten endpoint opspoort omdat het geautomatiseerd álle mogelijke combinaties afgaat.
 
 Dit is geen pleidooi om géén API aan te bieden. Softwareproducten die soepel integreren met externe systemen winnen contracten die gesloten silo's nooit kunnen binnenslepen. Het is een pleidooi om een publieke API doelbewust te ontwerpen en te beveiligen, in plaats van klakkeloos uw interne backend open te zetten.
 
@@ -30,9 +30,9 @@ Dit is geen pleidooi om géén API aan te bieden. Softwareproducten die soepel i
 
 Dit is de cruciale mentale omslag.
 
-In een webapp is het mogelijk — en helaas gebruikelijk — dat beveiliging impliciet in de grafische interface zit: een beheerpagina die nergens gelinkt staat, een knop die verborgen wordt voor niet-beheerders, of een formulier met een dropdown die alleen geldige opties toont. Niets daarvan bestaat bij een API. Beveiliging moet robuust verankerd zijn in de servercode die het inkomende verzoek afhandelt, op elk afzonderlijk endpoint, zonder uitzondering.
+In een webapp is het mogelijk - en helaas gebruikelijk - dat beveiliging impliciet in de grafische interface zit: een beheerpagina die nergens gelinkt staat, een knop die verborgen wordt voor niet-beheerders, of een formulier met een dropdown die alleen geldige opties toont. Niets daarvan bestaat bij een API. Beveiliging moet robuust verankerd zijn in de servercode die het inkomende verzoek afhandelt, op elk afzonderlijk endpoint, zonder uitzondering.
 
-De praktische consequentie: op het moment dat u een API publiceert, wordt elk endpoint dat op uw server bestaat onderdeel van uw aanvalsoppervlak — inclusief endpoints die uw eigen frontend gebruikt en vergeten endpoints van functies die u vorig jaar al heeft afgedankt. Inventariseer ze allemaal. De endpoints die niemand zich meer herinnert, zijn steevast de endpoints waar autorisatiecontroles ontbreken.
+De praktische consequentie: op het moment dat u een API publiceert, wordt elk endpoint dat op uw server bestaat onderdeel van uw aanvalsoppervlak - inclusief endpoints die uw eigen frontend gebruikt en vergeten endpoints van functies die u vorig jaar al heeft afgedankt. Inventariseer ze allemaal. De endpoints die niemand zich meer herinnert, zijn steevast de endpoints waar autorisatiecontroles ontbreken.
 
 ## Authenticatie Is Niet Hetzelfde Als Autorisatie
 
@@ -42,7 +42,7 @@ Twee wezenlijk verschillende vragen, en het verwarren van deze twee is de meest 
 
 **Autorisatie** beantwoordt de vraag: *mag deze specifieke aanroeper deze specifieke handeling uitvoeren op dit specifieke record?* Een geldige API-sleutel identificeert een klant; het betekent geenszins dat die klant factuur 4.182 van een concurrent mag inzien.
 
-De ontwerpfout is nagenoeg universeel in met AI gegenereerde API's: het endpoint valideert of de API-sleutel geldig is, en haalt vervolgens blindelings het record op waarvan het ID in de URL staat (`/api/orders/{id}`). Een legitieme klant vraagt de order van een andere partij op en krijgt deze direct terug — omdat de code controleerde of de bezoeker *iemand* was, in plaats van te controleren of hij de *rechtmatige eigenaar* was.
+De ontwerpfout is nagenoeg universeel in met AI gegenereerde API's: het endpoint valideert of de API-sleutel geldig is, en haalt vervolgens blindelings het record op waarvan het ID in de URL staat (`/api/orders/{id}`). Een legitieme klant vraagt de order van een andere partij op en krijgt deze direct terug - omdat de code controleerde of de bezoeker *iemand* was, in plaats van te controleren of hij de *rechtmatige eigenaar* was.
 
 Elk endpoint dat een ID accepteert, moet server-side verifiëren dat de geauthenticeerde aanroeper eigenaar is van dat specifieke object. Dit moet worden afgedwongen in de database via RLS of via expliciete `tenant_id`-checks in de SQL-query, en moet worden getest door die exacte aanroep te doen vanuit een ander account.
 
@@ -116,7 +116,7 @@ Of u uw bestaande interne API moet voorbereiden op externe partners of een nieuw
 
 Onze software engineers zijn afkomstig van Manifera: elf jaar ervaring met enterprise API-ontwikkeling voor toonaangevende opdrachtgevers zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
-[Vertel ons wat uw API momenteel ontsluit](https://launchstudio.eu/nl/#contact) voor een gerichte analyse van uw endpoints — doorgaans binnen één werkdag — of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
+[Vertel ons wat uw API momenteel ontsluit](https://launchstudio.eu/nl/#contact) voor een gerichte analyse van uw endpoints - doorgaans binnen één werkdag - of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
 
 ## Echt voorbeeld
 
@@ -128,22 +128,22 @@ Elke webwinkelier beschikte over een eigen API-sleutel. De endpoints valideerden
 
 Een externe softwareontwikkelaar van een van de aangesloten meubelzaken ontdekte het lek tijdens het testen. Hij had per ongeluk een ordernummer van een papieren pakbon in een testscript ingevoerd, ontving de gegevens van een andere winkelier en herkende direct de naam van een lokale concurrent in het bezorgadres.
 
-Acht werkdagen aan intensieve herstelwerkzaamheden: autorisatie per object werd afgedwongen op alle 23 endpoints — waarvan zeven interne endpoints bleken te zijn die zijn eigen frontend gebruikte en die stilzwijgend openbaar waren geworden bij de API-publicatie (waaronder een endpoint dat alle bezorgcapaciteit in heel Nederland in één lijst dumpte); update-endpoints werden herschreven met strikte veld-whitelists nadat bleek dat een aanroeper de eigenaar van een order kon manipuleren; rate limits per sleutel werden toegevoegd met standaard retry-headers, nadat uit logs bleek dat één webshop dag en nacht elke twee seconden de server pollde; paginering met een hard maximum werd afgedwongen, waarmee een endpoint dat 40.000 rijen tegelijk teruggaf werd gesaneerd; foutmeldingen werden aan de buitenzijde generiek gemaakt en gedetailleerde SQL-logs verplaatst naar interne systemen; URL-versiebeheer (`/v1/`) werd formeel vastgelegd; en er werd complete ontwikkelaarsdocumentatie opgesteld inclusief beveiligingsrichtlijnen voor API-sleutels.
+Acht werkdagen aan intensieve herstelwerkzaamheden: autorisatie per object werd afgedwongen op alle 23 endpoints - waarvan zeven interne endpoints bleken te zijn die zijn eigen frontend gebruikte en die stilzwijgend openbaar waren geworden bij de API-publicatie (waaronder een endpoint dat alle bezorgcapaciteit in heel Nederland in één lijst dumpte); update-endpoints werden herschreven met strikte veld-whitelists nadat bleek dat een aanroeper de eigenaar van een order kon manipuleren; rate limits per sleutel werden toegevoegd met standaard retry-headers, nadat uit logs bleek dat één webshop dag en nacht elke twee seconden de server pollde; paginering met een hard maximum werd afgedwongen, waarmee een endpoint dat 40.000 rijen tegelijk teruggaf werd gesaneerd; foutmeldingen werden aan de buitenzijde generiek gemaakt en gedetailleerde SQL-logs verplaatst naar interne systemen; URL-versiebeheer (`/v1/`) werd formeel vastgelegd; en er werd complete ontwikkelaarsdocumentatie opgesteld inclusief beveiligingsrichtlijnen voor API-sleutels.
 
 Bij het opstellen van de documentatie ontdekte Tim bovendien dat twee webshops zijn API rechtstreeks vanuit de browser aanriepen met de geheime sleutel in de openbare JavaScript-code. Hun sleutels waren dus zichtbaar voor elke bezoeker van hun webshop. Beide sleutels werden direct geroteerd en de koppelingen werden verplaatst naar hun serveromgeving.
 
 **Resultaat:** De meubelzaak die het lek meldde breidde het contract uit naar drie zusterbedrijven, en Tims centrale endpoint-monitoring signaleert verkeerd geconfigureerde polling-scripts nu binnen een uur in plaats van pas bij de maandelijkse factuur.
 
 > *"Zeven endpoints die mijn eigen website intern gebruikte, werden geruisloos openbaar op de dag dat ik een API lanceerde. En een daarvan toonde letterlijk alle bezorgmomenten van alle winkeliers tegelijk."*
-> — **Tim Roozendaal, Oprichter, Bezorgtijd (Tilburg)**
+> - **Tim Roozendaal, Oprichter, Bezorgtijd (Tilburg)**
 
-**Kosten & Doorlooptijd:** €4.400 (autorisatie per object over 23 endpoints, veld-whitelists, rate limiting, paginering, error handling, versiebeheer, documentatie, penetratietesten) — afgerond in 8 werkdagen.
+**Kosten & Doorlooptijd:** €4.400 (autorisatie per object over 23 endpoints, veld-whitelists, rate limiting, paginering, error handling, versiebeheer, documentatie, penetratietesten) - afgerond in 8 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat is het meest voorkomende beveiligingslek in publieke API's?
 
-Het controleren van authenticatie zonder autorisatie per object (BOLA/IDOR). Het endpoint controleert weliswaar of de API-sleutel geldig is, maar vertrouwt vervolgens blindelings op het record-ID in het verzoek — waardoor een klant met een simpele nummerwijziging de data van concurrenten kan opvragen.
+Het controleren van authenticatie zonder autorisatie per object (BOLA/IDOR). Het endpoint controleert weliswaar of de API-sleutel geldig is, maar vertrouwt vervolgens blindelings op het record-ID in het verzoek - waardoor een klant met een simpele nummerwijziging de data van concurrenten kan opvragen.
 
 ### Worden interne endpoints automatisch openbaar zodra ik een API publiceer?
 
@@ -151,7 +151,7 @@ In de praktijk wel. Elk endpoint dat op uw webserver draait is via het internet 
 
 ### Waarom moet een update-endpoint onbekende velden categorisch weigeren?
 
-Omdat het accepteren van een compleet JSON-object (*Mass Assignment*) een aanroeper in staat stelt om kolommen aan te passen die nooit voor hen bedoeld waren — zoals het klant-ID, de prijs, de vervaldatum of beheerdersrechten. Hanteer altijd een strikte whitelist van toegestane velden.
+Omdat het accepteren van een compleet JSON-object (*Mass Assignment*) een aanroeper in staat stelt om kolommen aan te passen die nooit voor hen bedoeld waren - zoals het klant-ID, de prijs, de vervaldatum of beheerdersrechten. Hanteer altijd een strikte whitelist van toegestane velden.
 
 ### Welke limieten heeft een publieke API minimaal nodig?
 

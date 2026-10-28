@@ -1,7 +1,7 @@
 Your dev contract is priced in USD. Your budget is approved in EUR. Nobody asked what happens if the exchange rate moves 6% over the next year. 💱📉
 
 **The Pain Points:**
-❌ **Silent FX Drift:** EUR/USD has swung more than 10% peak-to-trough within single years — a "fixed-price" contract in a foreign currency isn't actually fixed.
+❌ **Silent FX Drift:** EUR/USD has swung more than 10% peak-to-trough within single years - a "fixed-price" contract in a foreign currency isn't actually fixed.
 ❌ **Boilerplate Currency Clauses:** Teams scrutinize technical fit for weeks then sign payment terms without negotiation, treating real financial exposure as fine print.
 ❌ **Reverse-Charge Surprises:** A non-EU invoicing entity can trigger VAT administrative complexity your finance team discovers only at the first invoice.
 

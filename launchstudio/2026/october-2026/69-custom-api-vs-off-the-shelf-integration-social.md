@@ -1,6 +1,6 @@
-🔌 Kenji's **Lovable**-built used-car marketplace needed a vehicle-history report — the only reliable regional provider exposed nothing but a decade-old SOAP endpoint with no modern SDK. His AI builder's connector worked once, then failed silently every time after. 🧠
+🔌 Kenji's **Lovable**-built used-car marketplace needed a vehicle-history report - the only reliable regional provider exposed nothing but a decade-old SOAP endpoint with no modern SDK. His AI builder's connector worked once, then failed silently every time after. 🧠
 
-Every integration looks the same in a demo — a green checkmark, a successful call — but "connect this to Twilio" and "connect this to a legacy SOAP endpoint" are structurally different problems.
+Every integration looks the same in a demo - a green checkmark, a successful call - but "connect this to Twilio" and "connect this to a legacy SOAP endpoint" are structurally different problems.
 
 ❌ Forcing a high-volume or compliance-sensitive workflow through a no-code connector until it silently breaks
 ❌ Hand-rolling an integration with no retry logic, no rate-limit handling, no plan for a 2am failure
@@ -12,7 +12,7 @@ Every integration looks the same in a demo — a green checkmark, a successful c
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Report requests that failed roughly 30% of the time now succeed on 99.6% of requests, with failures automatically retried instead of shown to buyers as a broken page. (€2,600 (Launch & Grow Package) — integration built, tested, and deployed in 8 business days.) 🚀
+Report requests that failed roughly 30% of the time now succeed on 99.6% of requests, with failures automatically retried instead of shown to buyers as a broken page. (€2,600 (Launch & Grow Package) - integration built, tested, and deployed in 8 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/custom-api-vs-off-the-shelf-integration
 

@@ -10,7 +10,7 @@
 ✅ **Team-Routed Notification Subscriptions:** Deprecation notices reach whoever's responsible today.
 ✅ **Abstracted Integration Layer:** A vendor migration touches one boundary, not code scattered everywhere.
 
-Turn every future API sunset into a scheduled project — not a production incident. 🛡️
+Turn every future API sunset into a scheduled project - not a production incident. 🛡️
 
 👉 Read our full deep dive on vendor api deprecation integration breakage: https://www.manifera.com/blog/vendor-api-deprecation-integration-breakage
 

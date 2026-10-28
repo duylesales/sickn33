@@ -31,57 +31,57 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"We keep your frontend. We fix only what's necessary." It's a simple promise to state and a genuinely specific engineering discipline to deliver reliably. Many founders who've been burned by an agency wanting to "rebuild everything properly" are understandably skeptical the first time they hear it — so here is exactly how it actually works, technically.
+"We keep your frontend. We fix only what's necessary." It's a simple promise to state and a genuinely specific engineering discipline to deliver reliably. Many founders who've been burned by an agency wanting to "rebuild everything properly" are understandably skeptical the first time they hear it - so here is exactly how it actually works, technically.
 
 ## The Core Principle: Separation of Concerns
 
-Modern web applications naturally separate into layers: the frontend (what users see and interact with) and the backend (data, logic, and infrastructure that powers it). A well-structured application — including most Lovable, Bolt, and v0-generated codebases — already has some degree of this separation, even if incompletely implemented. LaunchStudio's approach works with this natural boundary rather than against it.
+Modern web applications naturally separate into layers: the frontend (what users see and interact with) and the backend (data, logic, and infrastructure that powers it). A well-structured application - including most Lovable, Bolt, and v0-generated codebases - already has some degree of this separation, even if incompletely implemented. LaunchStudio's approach works with this natural boundary rather than against it.
 
 ## Step-by-Step: How the Frontend Stays Untouched
 
 ### 1. Frontend Code Is Treated as a Fixed Constraint, Not a Starting Point for Redesign
-Rather than reviewing your interface for what an engineer might personally do differently, the assessment starts from "this design is fixed — what does the backend need to support it correctly and securely?"
+Rather than reviewing your interface for what an engineer might personally do differently, the assessment starts from "this design is fixed - what does the backend need to support it correctly and securely?"
 
 ### 2. API Contracts Are Preserved or Extended, Not Broken
 Where your frontend already calls specific API endpoints (even loosely structured ones from AI generation), the engineering work preserves those contracts wherever possible, or extends them additively, rather than requiring the frontend to be rewritten to match a different backend design philosophy.
 
 ### 3. Authentication and Security Are Added as a Layer, Not a Redesign
-Adding real authentication typically means wrapping existing pages with access control logic and connecting existing forms to a secure auth provider — changes that happen around your UI components, not changes to how they look or behave for an authenticated user.
+Adding real authentication typically means wrapping existing pages with access control logic and connecting existing forms to a secure auth provider - changes that happen around your UI components, not changes to how they look or behave for an authenticated user.
 
 ### 4. Styling and Component Code Remain Untouched by Default
 Unless a specific bug exists in the frontend code itself (which does occasionally happen even in otherwise-preserved projects), CSS, component structure, and visual design are not modified as part of backend infrastructure work.
 
 ## When the Frontend Does Need Minor Changes
 
-Complete preservation isn't always literally 100% — occasionally, a genuine frontend change is required, such as adding a loading state for an API call that previously returned instantly from mock data, or adjusting a form to properly handle a real validation error from the backend. These changes are narrowly scoped, clearly communicated, and aimed at making your existing design actually function correctly under real conditions, not redesigning it.
+Complete preservation isn't always literally 100% - occasionally, a genuine frontend change is required, such as adding a loading state for an API call that previously returned instantly from mock data, or adjusting a form to properly handle a real validation error from the backend. These changes are narrowly scoped, clearly communicated, and aimed at making your existing design actually function correctly under real conditions, not redesigning it.
 
 ## Why This Discipline Matters Commercially, Not Just Aesthetically
 
-Your frontend design often represents validated product-market fit signal — user feedback, iteration, and design decisions you made based on real usage. Discarding that validated work to satisfy an engineer's stylistic preference destroys real value, which is exactly the failure mode traditional agencies are prone to and exactly what [LaunchStudio](https://launchstudio.eu/en/) is structured to avoid.
+Your frontend design often represents validated product-market fit signal - user feedback, iteration, and design decisions you made based on real usage. Discarding that validated work to satisfy an engineer's stylistic preference destroys real value, which is exactly the failure mode traditional agencies are prone to and exactly what [LaunchStudio](https://launchstudio.eu/en/) is structured to avoid.
 
-This discipline is enforced through Manifera's broader engineering culture — 11+ years of client work has reinforced that respecting existing, validated design decisions produces better commercial outcomes than imposing an engineer's personal preferences on a founder's product.
+This discipline is enforced through Manifera's broader engineering culture - 11+ years of client work has reinforced that respecting existing, validated design decisions produces better commercial outcomes than imposing an engineer's personal preferences on a founder's product.
 
-[See this approach applied to your specific prototype](https://launchstudio.eu/en/#contact) — bring your AI-generated app and see exactly what would and wouldn't change.
+[See this approach applied to your specific prototype](https://launchstudio.eu/en/#contact) - bring your AI-generated app and see exactly what would and wouldn't change.
 
 ## Under the Hood: The Technical Patterns That Make Preservation Possible
 
 Saying "the frontend stays untouched" is a commitment; making it reliably true across dozens of different codebases, generated by four different AI tools, requires specific, repeatable engineering patterns rather than case-by-case improvisation.
 
-**An adapter layer between frontend expectations and backend reality.** Most AI-generated frontends were built against mock or locally-simulated data, calling functions or endpoints with a specific shape. Rather than rewriting the frontend's calls to match a new backend's preferred shape, an adapter or facade layer is inserted on the backend side that accepts the frontend's existing request shape and translates it internally to whatever the real backend (Supabase, a Postgres instance, an external API) actually needs — the frontend never learns the backend changed.
+**An adapter layer between frontend expectations and backend reality.** Most AI-generated frontends were built against mock or locally-simulated data, calling functions or endpoints with a specific shape. Rather than rewriting the frontend's calls to match a new backend's preferred shape, an adapter or facade layer is inserted on the backend side that accepts the frontend's existing request shape and translates it internally to whatever the real backend (Supabase, a Postgres instance, an external API) actually needs - the frontend never learns the backend changed.
 
-**Environment-based configuration injection, not hardcoded rewrites.** AI tools frequently hardcode configuration values — API URLs, feature flags, mock delays — directly into frontend code. Where possible, these are extracted into environment variables the frontend already reads (or is minimally modified to read), so switching from a demo backend to a production one is a configuration change, not a code change.
+**Environment-based configuration injection, not hardcoded rewrites.** AI tools frequently hardcode configuration values - API URLs, feature flags, mock delays - directly into frontend code. Where possible, these are extracted into environment variables the frontend already reads (or is minimally modified to read), so switching from a demo backend to a production one is a configuration change, not a code change.
 
-**Git branch isolation with visual regression checkpoints.** Infrastructure work happens on branches that never touch frontend files, verified programmatically — a diff against the original frontend directory should show zero unintended changes. Before merging, a visual regression pass (screenshot comparison against the pre-work baseline) catches any accidental drift before it ships, which is how Yara's three-round engagement below could be verified pixel-by-pixel rather than relying on visual memory alone.
+**Git branch isolation with visual regression checkpoints.** Infrastructure work happens on branches that never touch frontend files, verified programmatically - a diff against the original frontend directory should show zero unintended changes. Before merging, a visual regression pass (screenshot comparison against the pre-work baseline) catches any accidental drift before it ships, which is how Yara's three-round engagement below could be verified pixel-by-pixel rather than relying on visual memory alone.
 
-**Database schema design that serves existing UI shapes, not the reverse.** Rather than designing a database schema first and asking the frontend to adapt to it, the schema is designed backward from what the frontend already expects to send and receive — meaning form fields, list views, and data structures already built into the UI dictate schema shape.
+**Database schema design that serves existing UI shapes, not the reverse.** Rather than designing a database schema first and asking the frontend to adapt to it, the schema is designed backward from what the frontend already expects to send and receive - meaning form fields, list views, and data structures already built into the UI dictate schema shape.
 
-**Contract tests as a permanent safety net.** Once the adapter layer is in place, automated tests assert that the frontend's expected request and response shapes continue to be satisfied — catching any future accidental contract break, whether from a founder's own later edits or subsequent engineering work, before it reaches production.
+**Contract tests as a permanent safety net.** Once the adapter layer is in place, automated tests assert that the frontend's expected request and response shapes continue to be satisfied - catching any future accidental contract break, whether from a founder's own later edits or subsequent engineering work, before it reaches production.
 
-Together, these patterns are why "we keep your frontend intact" is an engineering discipline with verifiable checkpoints — branch diffs, visual regression screenshots, and contract tests — rather than a promise resting on good intentions alone. Manifera's engineering teams apply this same toolkit whether the originating tool was Lovable, Bolt, v0, or Cursor, because the toolkit operates at the API contract layer, which sits beneath any individual tool's specific output conventions.
+Together, these patterns are why "we keep your frontend intact" is an engineering discipline with verifiable checkpoints - branch diffs, visual regression screenshots, and contract tests - rather than a promise resting on good intentions alone. Manifera's engineering teams apply this same toolkit whether the originating tool was Lovable, Bolt, v0, or Cursor, because the toolkit operates at the API contract layer, which sits beneath any individual tool's specific output conventions.
 
-In practice, this toolkit is implemented with ordinary, well-established tooling rather than anything exotic: Playwright or Percy-style screenshot diffing for the visual regression checkpoint, lightweight consumer-driven contract tests for the adapter layer, and standard environment variable management for configuration injection. None of this requires proprietary tooling specific to Manifera — it's a disciplined application of existing, well-understood engineering practice to the specific problem of preserving AI-generated frontends, which is precisely why it's repeatable across a wide range of incoming codebases rather than depending on a single engineer's memory of what shouldn't be touched.
+In practice, this toolkit is implemented with ordinary, well-established tooling rather than anything exotic: Playwright or Percy-style screenshot diffing for the visual regression checkpoint, lightweight consumer-driven contract tests for the adapter layer, and standard environment variable management for configuration injection. None of this requires proprietary tooling specific to Manifera - it's a disciplined application of existing, well-understood engineering practice to the specific problem of preserving AI-generated frontends, which is precisely why it's repeatable across a wide range of incoming codebases rather than depending on a single engineer's memory of what shouldn't be touched.
 
-This toolkit matters more for AI-generated frontends than for traditionally hand-built ones, precisely because AI tools produce code without the tribal knowledge a human team accumulates about why something is built a certain way. A traditional engineering team inheriting a codebase can ask the original author what a specific pattern was for; a founder whose frontend came from a chat conversation with an AI tool often cannot answer that question themselves. The adapter-layer and contract-testing approach compensates for that missing tribal knowledge by making the frontend's actual behavioral requirements empirically verifiable — through screenshots and passing tests — rather than requiring anyone to explain intent that was never fully articulated in the first place.
+This toolkit matters more for AI-generated frontends than for traditionally hand-built ones, precisely because AI tools produce code without the tribal knowledge a human team accumulates about why something is built a certain way. A traditional engineering team inheriting a codebase can ask the original author what a specific pattern was for; a founder whose frontend came from a chat conversation with an AI tool often cannot answer that question themselves. The adapter-layer and contract-testing approach compensates for that missing tribal knowledge by making the frontend's actual behavioral requirements empirically verifiable - through screenshots and passing tests - rather than requiring anyone to explain intent that was never fully articulated in the first place.
 
 ## Real example
 
@@ -89,14 +89,14 @@ This toolkit matters more for AI-generated frontends than for traditionally hand
 
 Yara, a hospitality consultant in Terneuzen, built GastVrij, an AI tool that generated personalized guest welcome guides for small bed-and-breakfast owners, using v0 for a genuinely distinctive, warm visual design she'd spent weeks refining with feedback from six B&B owner beta testers. She was specifically anxious about losing this design when she reached out to development partners, having heard from another founder that an agency had "improved" their interface into something unrecognizable and worse.
 
-Yara brought this concern directly to LaunchStudio's initial call, and the Manifera team walked through the layer-separation approach explicitly before any work began, showing her which specific files and components would remain completely untouched. Over the course of adding authentication, Mollie billing, and secure hosting, the engagement went through three rounds of infrastructure additions — each reviewed by Yara to confirm the visual experience genuinely hadn't changed.
+Yara brought this concern directly to LaunchStudio's initial call, and the Manifera team walked through the layer-separation approach explicitly before any work began, showing her which specific files and components would remain completely untouched. Over the course of adding authentication, Mollie billing, and secure hosting, the engagement went through three rounds of infrastructure additions - each reviewed by Yara to confirm the visual experience genuinely hadn't changed.
 
-**Result:** GastVrij launched with the exact visual design Yara's six beta B&B owners had already validated and loved, now backed by real authentication, secure data storage for guest information, and monthly billing — with Yara confirming via side-by-side screenshots that not a single visual element had shifted throughout the entire process.
+**Result:** GastVrij launched with the exact visual design Yara's six beta B&B owners had already validated and loved, now backed by real authentication, secure data storage for guest information, and monthly billing - with Yara confirming via side-by-side screenshots that not a single visual element had shifted throughout the entire process.
 
 > *"I'd heard the horror story about an agency 'improving' someone's design into something worse. LaunchStudio showed me exactly what would change before touching anything, and when it was done, I genuinely couldn't find a single pixel that moved."*
-> — **Yara Claassen, Founder, GastVrij (Terneuzen)**
+> - **Yara Claassen, Founder, GastVrij (Terneuzen)**
 
-**Cost & Timeline:** €2,050 (Launch Ready Package) — live in 10 business days.
+**Cost & Timeline:** €2,050 (Launch Ready Package) - live in 10 business days.
 
 ---
 
@@ -108,19 +108,19 @@ In the large majority of cases, yes for visual design and component structure. N
 
 ### How can I verify before starting that my specific design will actually be preserved?
 
-Ask for exactly this kind of walkthrough during your initial call — a specific, technical explanation of what would and wouldn't change for your particular codebase, as Yara requested. A team confident in this discipline will demonstrate it concretely rather than offering vague reassurance.
+Ask for exactly this kind of walkthrough during your initial call - a specific, technical explanation of what would and wouldn't change for your particular codebase, as Yara requested. A team confident in this discipline will demonstrate it concretely rather than offering vague reassurance.
 
 ### What happens if my frontend code itself has a genuine bug unrelated to backend infrastructure?
 
-If a real frontend bug is discovered during the engagement, it's flagged and discussed with you directly before any change is made — never fixed unilaterally without communication, since even a "bug fix" changes behavior you may have intentionally designed that way.
+If a real frontend bug is discovered during the engagement, it's flagged and discussed with you directly before any change is made - never fixed unilaterally without communication, since even a "bug fix" changes behavior you may have intentionally designed that way.
 
 ### Does this frontend-preservation approach apply equally to Lovable, Bolt, and v0-generated interfaces?
 
-Yes, the underlying principle — treating validated frontend work as a fixed constraint for backend engineering — applies regardless of which AI tool generated the original interface, though the specific technical implementation details vary slightly based on each tool's output patterns.
+Yes, the underlying principle - treating validated frontend work as a fixed constraint for backend engineering - applies regardless of which AI tool generated the original interface, though the specific technical implementation details vary slightly based on each tool's output patterns.
 
 ### Is there ever a legitimate case where LaunchStudio would recommend frontend changes?
 
-Rarely, and only when explicitly discussed and agreed with the founder — for instance, if a specific interaction pattern creates a genuine security or usability problem that the founder wasn't aware of. This remains the founder's decision, presented as a recommendation, never as an unrequested unilateral change.
+Rarely, and only when explicitly discussed and agreed with the founder - for instance, if a specific interaction pattern creates a genuine security or usability problem that the founder wasn't aware of. This remains the founder's decision, presented as a recommendation, never as an unrequested unilateral change.
 
 <script type="application/ld+json">
 {

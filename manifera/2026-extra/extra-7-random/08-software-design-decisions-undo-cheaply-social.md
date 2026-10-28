@@ -1,4 +1,4 @@
-🚨 Every software design decision feels important in the room. Almost none actually are. Most are cheap to reverse later — a small handful are genuinely expensive. Can your team tell them apart? ⚙️🏗️
+🚨 Every software design decision feels important in the room. Almost none actually are. Most are cheap to reverse later - a small handful are genuinely expensive. Can your team tell them apart? ⚙️🏗️
 
 **The Pain Points:**
 ❌ **Equal Deliberation, Unequal Stakes:** Weeks burned on naming conventions, minutes spent on a payment provider that becomes entangled in your data model.

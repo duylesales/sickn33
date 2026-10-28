@@ -55,9 +55,9 @@ De oplossing is een tweede, onafhankelijke statuscontrole op het moment dat de a
 
 ```
 Wanneer de ingeplande taak voor de hervattingsafschrijving draait:
-  1. Controleer de huidige status van het lidmaatschap op dit exacte moment opnieuw — niet de status
+  1. Controleer de huidige status van het lidmaatschap op dit exacte moment opnieuw - niet de status
      die werd vastgelegd toen de melding oorspronkelijk werd ingepland
-  2. Als het lid in de tussentijd heeft geannuleerd, opnieuw heeft gepauzeerd of is gedowngraded, stop dan — voer geen afschrijving uit
+  2. Als het lid in de tussentijd heeft geannuleerd, opnieuw heeft gepauzeerd of is gedowngraded, stop dan - voer geen afschrijving uit
   3. Ga alleen verder als het lidmaatschap nog steeds actief is en nog steeds staat ingesteld om te hervatten
   4. Log de statuscontrole naast de afschrijvingspoging, zodat een betwiste
      afschrijving in beide richtingen kan worden geverifieerd
@@ -78,9 +78,9 @@ LaunchStudio voegde een meldingslaag toe die leden 48 uur vóór elke door bevri
 **Resultaat:** FitFlow's ondersteuningstickets met betrekking tot facturering daalden de volgende maand tot bijna nul, en de sportschooleigenaar begon de bevriezingsfunctie te promoten in marketing in plaats van er tegenop te zien.
 
 > *"De functie waar ik het meest trots op was, was degene die de meeste schade veroorzaakte. Ik heb er gewoon nooit over nagedacht wat 'hervatten' daadwerkelijk betekende voor iemands bankrekening."*
-> — **Naomi Scholten, Oprichter, FitFlow (Almere)**
+> - **Naomi Scholten, Oprichter, FitFlow (Almere)**
 
-**Kosten en tijdlijn:** € 780 (meldingslaag voor facturering, gratieperiode, validatie van betaalmethode) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 780 (meldingslaag voor facturering, gratieperiode, validatie van betaalmethode) - voltooid in 5 werkdagen.
 
 ---
 

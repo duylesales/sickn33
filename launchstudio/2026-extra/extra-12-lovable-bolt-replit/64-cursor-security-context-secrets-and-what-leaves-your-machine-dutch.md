@@ -36,7 +36,7 @@ Drie categorieën, oplopend in de mate waarin mensen het verwachten.
 
 ## Instellingen Die Eén Keer Controleren Waard Zijn
 
-Editors verschillen en veranderen, dus controleer in plaats van aan te nemen — het gaat erom het te weten, niet om op een herinnering te vertrouwen.
+Editors verschillen en veranderen, dus controleer in plaats van aan te nemen - het gaat erom het te weten, niet om op een herinnering te vertrouwen.
 
 **Of uw code wordt bewaard of gebruikt voor training.** Er is meestal een privacymodus die garandeert dat dat niet gebeurt. Zet die aan, en controleer wat de instelling werkelijk belooft in plaats van wat de naam suggereert.
 
@@ -54,7 +54,7 @@ Een productie-export op een laptop is een risico ongeacht wat er verder is geïn
 
 Werk met seeddata zoals eerder in deze reeks beschreven. Waar u echt de data van een klant nodig hebt om een probleem te reproduceren, haal het minimum eruit, anonimiseer het, bewaar het voor het onderzoek en verwijder het daarna.
 
-Hebt u tijdelijk toch een echte export, bewaar die dan volledig buiten de projectmap — niet alleen genegeerd — zodat geen enkele indexeringsbeslissing erbij kan.
+Hebt u tijdelijk toch een echte export, bewaar die dan volledig buiten de projectmap - niet alleen genegeerd - zodat geen enkele indexeringsbeslissing erbij kan.
 
 ## De Plakgewoonte Is het Echte Risico
 
@@ -62,7 +62,7 @@ De meeste blootstelling via deze tools komt niet door de index. Ze komt door iem
 
 Een stack trace met een request body met de naam en het adres van een klant. Een databaserij om uit te leggen waarom een berekening fout is. Een configuratiebestand met een live sleutel om te vragen waarom een verbinding faalt. Elk is iets redelijks om hulp bij te willen, en elk stuurt echte data naar een derde partij.
 
-Twee gewoonten dekken het. Anonimiseer vóór het plakken — vervang namen, adressen, identificatoren en sleutels door placeholders, wat vijftien seconden kost en het antwoord bijna nooit verandert. En vraag naar de vorm in plaats van de inhoud: "waarom zou deze query niets teruggeven terwijl de rij bestaat" is te beantwoorden zonder de rij.
+Twee gewoonten dekken het. Anonimiseer vóór het plakken - vervang namen, adressen, identificatoren en sleutels door placeholders, wat vijftien seconden kost en het antwoord bijna nooit verandert. En vraag naar de vorm in plaats van de inhoud: "waarom zou deze query niets teruggeven terwijl de rij bestaat" is te beantwoorden zonder de rij.
 
 Specifiek voor sleutels: plak er nooit een, om welke reden ook. Is er een sleutel geplakt, roteer hem dan, zoals beschreven in het artikel over het roteren van geheimen in deze reeks.
 
@@ -70,7 +70,7 @@ Specifiek voor sleutels: plak er nooit een, om welke reden ook. Is er een sleute
 
 Verwerkt u persoonsgegevens voor zakelijke klanten, dan vereist uw verwerkersovereenkomst vrijwel zeker dat u uw subverwerkers vermeldt en vooraf meldt voordat u er een toevoegt.
 
-De vraag die dit oproept is smal en het eerlijk beantwoorden waard: verwerkt uw ontwikkeltooling de persoonsgegevens van uw klanten? Werkt u alleen met seeddata, dan is het antwoord nee en is de tool geen subverwerker — hij verwerkt uw code, en die is van u.
+De vraag die dit oproept is smal en het eerlijk beantwoorden waard: verwerkt uw ontwikkeltooling de persoonsgegevens van uw klanten? Werkt u alleen met seeddata, dan is het antwoord nee en is de tool geen subverwerker - hij verwerkt uw code, en die is van u.
 
 Plakt u routinematig productiedata in een assistent, dan is het antwoord ja, en is dat een subverwerker die u niet hebt opgegeven. Het juiste antwoord is meestal niet om hem op te geven; het is ermee stoppen, wat zowel makkelijker als beter is.
 
@@ -102,7 +102,7 @@ Vijf maatregelen, geen ervan kost lang, en allemaal komen ze uiteindelijk terug 
 
 **Volledige schijfversleuteling**, wat een instelling is op elk huidig besturingssysteem en een gestolen laptop van een incident verandert in een ongemak.
 
-**Een wachtwoordmanager** met unieke inloggegevens per dienst, en tweefactorauthenticatie op alles wat het aanbiedt — te beginnen met uw repositoryhost, uw hostingplatform, uw databaseaanbieder en uw domeinregistrar, omdat die vier de sleutels tot het product zijn.
+**Een wachtwoordmanager** met unieke inloggegevens per dienst, en tweefactorauthenticatie op alles wat het aanbiedt - te beginnen met uw repositoryhost, uw hostingplatform, uw databaseaanbieder en uw domeinregistrar, omdat die vier de sleutels tot het product zijn.
 
 **Automatische updates van besturingssysteem en browser**, omdat de realistische dreiging voor de laptop van een oprichter gewone malware is in plaats van iets gericht.
 
@@ -116,7 +116,7 @@ Dit is onopvallend en het is het eerlijke antwoord op een vraag die onder alles 
 
 Voor een oprichter die een AI-editor gebruikt, is dit doorgaans een halve dag: privacy- en bewaarinstellingen bevestigd in plaats van aangenomen, een ignore-bestand voor omgevingsbestanden, sleutels, dumps en exports, productiedata buiten de projectmap en bij voorkeur helemaal van de machine, seeddata gebruikt voor ontwikkeling, een gewoonte van anonimiseren vóór plakken met een absolute regel tegen het plakken van sleutels, de verwerkingslocatie vastgelegd, voorwaarden van een zakelijk abonnement geëvalueerd als u verplichtingen jegens klanten hebt, en een geschreven standpunt over of uw tooling klantdata raakt.
 
-LaunchStudio behandelt praktijken in de ontwikkelomgeving als onderdeel van het klaarmaken van een product voor zakelijke klanten, waar de vraag bij inkoop opduikt. Daarachter staat Manifera — elf jaar, 120+ engineers, klanten waaronder Vodafone, TNO en CFLW.
+LaunchStudio behandelt praktijken in de ontwikkelomgeving als onderdeel van het klaarmaken van een product voor zakelijke klanten, waar de vraag bij inkoop opduikt. Daarachter staat Manifera - elf jaar, 120+ engineers, klanten waaronder Vodafone, TNO en CFLW.
 
 [Vraag ons hoe uw ontwikkelopzet eruit zou zien voor de auditor van een klant](https://launchstudio.eu/nl/#contact).
 
@@ -128,18 +128,18 @@ Marnix Bouwhuis bouwde Debiteurenbeheer in Cursor: debiteuren- en betalingsherin
 
 Bij het debuggen van een afstemmingsprobleem had hij een productietabel naar een CSV-bestand geëxporteerd en dat in de projectmap laten staan, waar het vier maanden bleef. De projectindex van de editor nam het mee, en hij had twee keer rijen eruit in een gesprek geplakt om te vragen waarom bedragen niet overeenkwamen.
 
-De data bestond uit namen, adressen, openstaande bedragen en betalingsgeschiedenissen van bedrijven die de klanten van zijn klanten waren — data die hij als verwerker verwerkte, onder overeenkomsten die zijn subverwerkers noemden en geen enkele AI-tooling bevatten.
+De data bestond uit namen, adressen, openstaande bedragen en betalingsgeschiedenissen van bedrijven die de klanten van zijn klanten waren - data die hij als verwerker verwerkte, onder overeenkomsten die zijn subverwerkers noemden en geen enkele AI-tooling bevatten.
 
 Hij vond het bij het voorbereiden van antwoorden voor de audit van een accountantsgroep.
 
-Twee werkdagen: de export verwijderd en een regel ingevoerd dat productiedata nooit in de projectmap komt; een ignore-bestand voor omgevingsbestanden, sleutelmateriaal, exports en dumps; privacy-instellingen van de editor bevestigd met bewaring uitgeschakeld, en een zakelijk abonnement genomen voor de contractuele voorwaarden die het biedt; een geseede ontwikkeldataset gebouwd met een realistische vorm zodat productiedata niet nodig is voor gewoon werk; een gedocumenteerde procedure voor de gevallen waarin data van een klant echt moet worden gereproduceerd — minimale extractie, geanonimiseerd, daarna verwijderd, vastgelegd; een anonimiseergewoonte ingevoerd met een absolute regel tegen het plakken van inloggegevens; een geschreven beoordeling die concludeerde dat de periode van vier maanden verwerking door een niet-opgegeven subverwerker vormde, wat aan de betrokken kantoren werd gemeld met een beschrijving van het herstel; en de voorwaarden voor gegevensverwerking van de aanbieder gearchiveerd bij de documentatie over subverwerkers.
+Twee werkdagen: de export verwijderd en een regel ingevoerd dat productiedata nooit in de projectmap komt; een ignore-bestand voor omgevingsbestanden, sleutelmateriaal, exports en dumps; privacy-instellingen van de editor bevestigd met bewaring uitgeschakeld, en een zakelijk abonnement genomen voor de contractuele voorwaarden die het biedt; een geseede ontwikkeldataset gebouwd met een realistische vorm zodat productiedata niet nodig is voor gewoon werk; een gedocumenteerde procedure voor de gevallen waarin data van een klant echt moet worden gereproduceerd - minimale extractie, geanonimiseerd, daarna verwijderd, vastgelegd; een anonimiseergewoonte ingevoerd met een absolute regel tegen het plakken van inloggegevens; een geschreven beoordeling die concludeerde dat de periode van vier maanden verwerking door een niet-opgegeven subverwerker vormde, wat aan de betrokken kantoren werd gemeld met een beschrijving van het herstel; en de voorwaarden voor gegevensverwerking van de aanbieder gearchiveerd bij de documentatie over subverwerkers.
 
 **Resultaat:** de accountantsgroep accepteerde de melding en ging door, wat Marnix toeschrijft aan het feit dat hij het zelf had gevonden en volledig had uitgelegd in plaats van ernaar te worden gevraagd. Hij merkt op dat de geseede dataset de reden wegnam waarom hij überhaupt productiedata exporteerde.
 
 > *"Het bestand stond vier maanden in mijn project en ik heb er twee keer rijen uit geplakt. Er werd niets gehackt. Ik had gewoon de data van de klanten van mijn klanten naar een bedrijf gestuurd waarmee niemand had ingestemd."*
-> — **Marnix Bouwhuis, Oprichter, Debiteurenbeheer (Amersfoort)**
+> - **Marnix Bouwhuis, Oprichter, Debiteurenbeheer (Amersfoort)**
 
-**Kosten & Doorlooptijd:** €2.400 (dataverwijdering en regels voor projecthygiëne, ignore-bestand, privacyconfiguratie van de editor en zakelijk abonnement, geseede ontwikkeldataset, reproductieprocedure, anonimiseerpraktijken, meldingsbeoordeling en documentatie) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.400 (dataverwijdering en regels voor projecthygiëne, ignore-bestand, privacyconfiguratie van de editor en zakelijk abonnement, geseede ontwikkeldataset, reproductieprocedure, anonimiseerpraktijken, meldingsbeoordeling en documentatie) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -153,7 +153,7 @@ De meeste editors hebben een privacymodus die bewaring en training voorkomt. Zet
 
 ### Moet ik een ignore-bestand toevoegen?
 
-Ja — voor omgevingsbestanden, sleutelmateriaal, databasedumps en exports. Beter nog: bewaar productiedata volledig buiten de projectmap, zodat geen enkele indexeringsbeslissing erbij kan.
+Ja - voor omgevingsbestanden, sleutelmateriaal, databasedumps en exports. Beter nog: bewaar productiedata volledig buiten de projectmap, zodat geen enkele indexeringsbeslissing erbij kan.
 
 ### Is mijn AI-editor een subverwerker?
 
@@ -173,7 +173,7 @@ Roteer hem. Genereer een vervanging, deploy die, trek de oude in, en controleer 
       "name": "Wat stuurt een AI-editor naar het model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het geopende bestand, gerelateerde bestanden, vaak een index van het hele project, en alles wat u plakt — dat laatste is waar klantdata meestal opduikt."
+        "text": "Het geopende bestand, gerelateerde bestanden, vaak een index van het hele project, en alles wat u plakt - dat laatste is waar klantdata meestal opduikt."
       }
     },
     {
@@ -189,7 +189,7 @@ Roteer hem. Genereer een vervanging, deploy die, trek de oude in, en controleer 
       "name": "Moet ik een ignore-bestand gebruiken met een AI-editor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, voor omgevingsbestanden, sleutels, dumps en exports — en houd productiedata volledig buiten de projectmap."
+        "text": "Ja, voor omgevingsbestanden, sleutels, dumps en exports - en houd productiedata volledig buiten de projectmap."
       }
     },
     {
@@ -205,7 +205,7 @@ Roteer hem. Genereer een vervanging, deploy die, trek de oude in, en controleer 
       "name": "Wat moet ik doen als ik een API-sleutel heb geplakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Roteer hem — genereer een vervanging, deploy, trek de oude in, en controleer daarna de logs van de aanbieder. Het gesprek verwijderen verandert niets."
+        "text": "Roteer hem - genereer een vervanging, deploy, trek de oude in, en controleer daarna de logs van de aanbieder. Het gesprek verwijderen verandert niets."
       }
     }
   ]

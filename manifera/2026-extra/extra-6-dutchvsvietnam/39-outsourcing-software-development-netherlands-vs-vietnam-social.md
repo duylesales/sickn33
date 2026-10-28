@@ -1,4 +1,4 @@
-🚨 Which specific role on your org chart is hardest to fill in the Netherlands right now — and has anyone checked whether a Vietnam software company fills it faster, better, or both? 📊⚙️
+🚨 Which specific role on your org chart is hardest to fill in the Netherlands right now - and has anyone checked whether a Vietnam software company fills it faster, better, or both? 📊⚙️
 
 **The Pain Points:**
 ❌ **Wrong Level of Granularity:** "Dutch developers vs. Vietnamese developers" as if every role has the same scarcity profile.
@@ -6,7 +6,7 @@
 ❌ **€50,000-€100,000/Year in Avoidable Inefficiency:** Once the wrong roles are assigned to the wrong structure.
 
 **The Manifera Solution:**
-✅ **Compared Role by Role, Not by Nationality:** Backend/platform, frontend/mobile, DevOps, specialized/niche, and leadership — each weighed on its own merits.
+✅ **Compared Role by Role, Not by Nationality:** Backend/platform, frontend/mobile, DevOps, specialized/niche, and leadership - each weighed on its own merits.
 ✅ **Amsterdam Strategic Governance:** Keeping architect and staff-engineer roles close to the founder, where tacit organizational knowledge actually matters.
 ✅ **Vietnam Execution Velocity:** Deep talent on mainstream backend and frontend stacks at materially lower cost, with no meaningful skill-depth gap.
 

@@ -32,11 +32,11 @@ They arrive from more directions than founders expect, and only one form of prev
 
 **Imports.** A file imported twice, usually because the first attempt appeared to fail, or a file containing rows that already exist in the account.
 
-**The same thing entered two ways.** "Jansen BV", "Jansen B.V.", "jansen bv". Three records, one company, no technical fault at all — and the hardest kind to prevent without irritating people.
+**The same thing entered two ways.** "Jansen BV", "Jansen B.V.", "jansen bv". Three records, one company, no technical fault at all - and the hardest kind to prevent without irritating people.
 
 **Two people acting at once.** Two team members creating the same client in the same minute, each unaware of the other. Rare in a two-person team, routine in a ten-person one.
 
-Each has a different remedy, and the mistake is trying to solve all five with one mechanism — usually a check in the application that reads before writing, which is the mechanism that reliably fails under exactly the conditions that produce duplicates.
+Each has a different remedy, and the mistake is trying to solve all five with one mechanism - usually a check in the application that reads before writing, which is the mechanism that reliably fails under exactly the conditions that produce duplicates.
 
 ## Why the Application-Level Check Does Not Hold
 
@@ -44,11 +44,11 @@ The natural implementation is: look for an existing record with this email; if n
 
 Two requests arriving milliseconds apart both perform the lookup before either has written. Both find nothing. Both create. You now have two records, produced by code that explicitly checks for duplicates.
 
-Under ordinary use this happens rarely enough to look like it works. Under the exact conditions that generate duplicates — a double-clicked button firing two requests, an automatic retry, an import running in parallel — it happens constantly. And the check is doubly ineffective in AI-generated products, where it typically lives in the frontend, which means it does not run at all for anything reaching the server another way.
+Under ordinary use this happens rarely enough to look like it works. Under the exact conditions that generate duplicates - a double-clicked button firing two requests, an automatic retry, an import running in parallel - it happens constantly. And the check is doubly ineffective in AI-generated products, where it typically lives in the frontend, which means it does not run at all for anything reaching the server another way.
 
 The only prevention that holds is a **unique constraint in the database**. The database is the single place where two simultaneous writes are genuinely serialised; it will accept the first and reject the second, regardless of how the requests arrived or how many application instances are running. Everything else is a usability improvement layered on top of that guarantee.
 
-This is why "add a check for duplicates" is not the right instruction. The right instruction is "add a unique constraint on this column, and handle the rejection gracefully" — and the second half matters, because a constraint violation surfaced to the customer as a raw database error is its own failure.
+This is why "add a check for duplicates" is not the right instruction. The right instruction is "add a unique constraint on this column, and handle the rejection gracefully" - and the second half matters, because a constraint violation surfaced to the customer as a raw database error is its own failure.
 
 ## Deciding What Uniqueness Means
 
@@ -56,7 +56,7 @@ Before adding a constraint you have to answer a question that is sometimes uncom
 
 For user accounts, email is usually the answer, with a wrinkle: `Anna@example.com` and `anna@example.com` are the same mailbox, so store and compare a normalised form, or the constraint permits the exact duplicate it was meant to prevent.
 
-For business records the answer is rarely a single field. Two clients with the same name may be genuinely different companies; two invoices with the same amount and date are usually distinct. A combination — customer plus invoice number, or organisation plus email — is often the honest key, and it may not be unique globally but unique *within an account*, which is a different constraint and the one most multi-tenant products actually need.
+For business records the answer is rarely a single field. Two clients with the same name may be genuinely different companies; two invoices with the same amount and date are usually distinct. A combination - customer plus invoice number, or organisation plus email - is often the honest key, and it may not be unique globally but unique *within an account*, which is a different constraint and the one most multi-tenant products actually need.
 
 For some records, nothing should be enforced. Two identical time entries on the same day may be perfectly legitimate. Forcing uniqueness where duplicates are valid produces a product that refuses correct data, which customers find considerably more annoying than an occasional duplicate.
 
@@ -66,9 +66,9 @@ Not every duplicate should be blocked, and matching the response to the case is 
 
 **Prevent** where sameness is unambiguous and enforceable: one account per email, one invoice per number per customer. Constraint in the database, clear message in the interface.
 
-**Warn** where sameness is likely but uncertain. When someone creates "Jansen B.V." and "Jansen BV" already exists, the right behaviour is not rejection — it is "a similar client already exists: [Jansen BV]. Use that one, or create a new record?" This catches the largest category, the near-duplicate, without ever refusing legitimate data.
+**Warn** where sameness is likely but uncertain. When someone creates "Jansen B.V." and "Jansen BV" already exists, the right behaviour is not rejection - it is "a similar client already exists: [Jansen BV]. Use that one, or create a new record?" This catches the largest category, the near-duplicate, without ever refusing legitimate data.
 
-**Merge** for what gets through anyway, and something always does. A merge function needs to combine two records, keep the fuller information, and — the part that makes it real work — repoint everything referencing the discarded record: invoices, notes, history, attachments. A merge that deletes one record and leaves twelve invoices pointing at nothing is worse than the duplicate was.
+**Merge** for what gets through anyway, and something always does. A merge function needs to combine two records, keep the fuller information, and - the part that makes it real work - repoint everything referencing the discarded record: invoices, notes, history, attachments. A merge that deletes one record and leaves twelve invoices pointing at nothing is worse than the duplicate was.
 
 On the interface side, two cheap measures remove most double-submissions: disable the submit button immediately on click and keep it disabled until the request resolves, and give each submission an identifier the server can recognise so a retry of the same submission is ignored rather than processed again. Neither replaces the constraint; both prevent the customer from ever seeing the constraint do its job.
 
@@ -88,14 +88,14 @@ This is why duplicates are worth addressing before the numbers start informing d
 
 Marijke Sanders launched Offertepro, a quoting tool for construction subcontractors, built in Bolt. Clients were created through a form with a check that looked for an existing client with the same name before inserting.
 
-Nine months in, a customer complained that they had sent the same quote to a client twice, at different prices, from two records that both appeared in search. The review found 1,847 client records covering roughly 1,100 real companies. Around 60% of the duplicates came from double-submitted forms on mobile connections — the check ran in the browser and two requests reached the server before either finished. The rest came from imports and from name variations the exact-match check never caught.
+Nine months in, a customer complained that they had sent the same quote to a client twice, at different prices, from two records that both appeared in search. The review found 1,847 client records covering roughly 1,100 real companies. Around 60% of the duplicates came from double-submitted forms on mobile connections - the check ran in the browser and two requests reached the server before either finished. The rest came from imports and from name variations the exact-match check never caught.
 
-Because clients were referenced by quotes, invoices, and notes, no duplicate could simply be deleted. Several companies had their history split across three or four records, so no single one showed a complete picture — which is how the same client received two different quotes for the same job.
+Because clients were referenced by quotes, invoices, and notes, no duplicate could simply be deleted. Several companies had their history split across three or four records, so no single one showed a complete picture - which is how the same client received two different quotes for the same job.
 
 **Result:** normalised email plus account-scoped unique constraints in the database, submit-button and request-level protection against double submission, fuzzy warning on similar names at creation, and a merge function repointing quotes, invoices, notes, and attachments. The existing duplicates were merged over two days with a report for the customer to review before anything was applied.
 
 > "My product had been telling me I had 1,847 clients. I had about 1,100, and I had been making decisions with the bigger number for most of a year."
-> — **Marijke Sanders, Founder, Offertepro**
+> - **Marijke Sanders, Founder, Offertepro**
 
 **Cost & Timeline:** deduplication, constraints, and merge tooling delivered in 4 business days.
 
@@ -111,7 +111,7 @@ Block where sameness is unambiguous, such as one account per email. Warn where i
 
 ### What makes merging duplicates difficult?
 
-Everything referencing the discarded record — invoices, notes, attachments, history — must be repointed to the surviving one. A merge that deletes a record and leaves references pointing nowhere causes more damage than the duplicate.
+Everything referencing the discarded record - invoices, notes, attachments, history - must be repointed to the surviving one. A merge that deletes a record and leaves references pointing nowhere causes more damage than the duplicate.
 
 ### How do double-clicked buttons create duplicate records?
 

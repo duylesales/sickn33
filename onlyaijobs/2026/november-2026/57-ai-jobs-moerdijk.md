@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Halfway between the ports of Rotterdam and Antwerp, where the Hollands Diep widens towards the sea, lies an industrial area that most travellers only notice from the A16 bridge. Moerdijk is home to one of the largest industrial sites in the south of the Netherlands: a chemical complex, a waste-to-energy plant, a seaport and a logistics park where goods are transferred between ship, rail and road. For data professionals, the area offers work on some of the most safety-critical operations in the country — work where the quality of data and models is measured not only in efficiency, but in the prevention of serious incidents.
+Halfway between the ports of Rotterdam and Antwerp, where the Hollands Diep widens towards the sea, lies an industrial area that most travellers only notice from the A16 bridge. Moerdijk is home to one of the largest industrial sites in the south of the Netherlands: a chemical complex, a waste-to-energy plant, a seaport and a logistics park where goods are transferred between ship, rail and road. For data professionals, the area offers work on some of the most safety-critical operations in the country - work where the quality of data and models is measured not only in efficiency, but in the prevention of serious incidents.
 
 ## Why Moerdijk Became an Industrial Port
 
@@ -104,7 +104,7 @@ The alert is only the start. The process engineer must decide whether the deviat
 
 ## A Common Misconception About Industrial AI
 
-Data scientists new to heavy industry sometimes expect to deploy models directly into process control. In practice, most AI in chemical plants starts as decision support for engineers and operators, and only carefully validated applications move towards closed-loop control. The reason is not conservatism for its own sake: the consequences of a wrong automated action in a plant handling hazardous substances can be severe. Engineers who respect this — and who design models that fit within safety management — earn trust and see their work adopted.
+Data scientists new to heavy industry sometimes expect to deploy models directly into process control. In practice, most AI in chemical plants starts as decision support for engineers and operators, and only carefully validated applications move towards closed-loop control. The reason is not conservatism for its own sake: the consequences of a wrong automated action in a plant handling hazardous substances can be severe. Engineers who respect this - and who design models that fit within safety management - earn trust and see their work adopted.
 
 ## Questions Worth Asking Before Joining
 
@@ -165,7 +165,7 @@ Process monitoring, alarm analysis, predictive maintenance, energy and emissions
 Models must be validated carefully and integrated into safety management systems, usually starting as decision support rather than automated control.
 
 ### (Scenario: candidate interested in logistics) Is there logistics data work in Moerdijk?
-Yes — the port and logistics park involve vessel planning, terminal operations, multimodal transport and warehouse analytics.
+Yes - the port and logistics park involve vessel planning, terminal operations, multimodal transport and warehouse analytics.
 
 ### (Scenario: candidate curious about regulation) Which regulations matter most for data work at industrial sites?
 Seveso III and Brzo 2015 for major accident prevention, EU ETS for emissions, NIS2 for cybersecurity and the AI Act for safety-related AI.
@@ -180,7 +180,7 @@ Mostly by car via the A16 and A17; Breda is about twenty minutes away.
   "mainEntity": [
     {"@type": "Question", "name": "What kind of AI work happens at a chemical complex?", "acceptedAnswer": {"@type": "Answer", "text": "Process monitoring, alarm analysis, predictive maintenance, energy optimisation and safety reporting analysis."}},
     {"@type": "Question", "name": "How does process safety affect data science work?", "acceptedAnswer": {"@type": "Answer", "text": "Models must be carefully validated and integrated into safety management, usually as decision support first."}},
-    {"@type": "Question", "name": "Is there logistics data work in Moerdijk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — vessel planning, terminal operations, multimodal transport and warehouse analytics."}},
+    {"@type": "Question", "name": "Is there logistics data work in Moerdijk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - vessel planning, terminal operations, multimodal transport and warehouse analytics."}},
     {"@type": "Question", "name": "Which regulations matter most for data work at industrial sites?", "acceptedAnswer": {"@type": "Answer", "text": "Seveso III and Brzo 2015, EU ETS, NIS2 and the AI Act."}},
     {"@type": "Question", "name": "How do people commute to Moerdijk?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly by car via the A16 and A17; Breda is about twenty minutes away."}}
   ]

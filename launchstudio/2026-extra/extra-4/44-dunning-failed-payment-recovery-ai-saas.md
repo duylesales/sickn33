@@ -31,27 +31,27 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Roughly 9% of subscription renewals fail on the first attempt — not because the customer canceled, but because a card expired, a bank flagged the charge, or a limit got hit. That's not a hypothetical number; it's what one SaaS founder found buried in her own churn data months after launch. Most AI-generated billing systems have no plan for this at all, and the revenue just quietly evaporates.
+Roughly 9% of subscription renewals fail on the first attempt - not because the customer canceled, but because a card expired, a bank flagged the charge, or a limit got hit. That's not a hypothetical number; it's what one SaaS founder found buried in her own churn data months after launch. Most AI-generated billing systems have no plan for this at all, and the revenue just quietly evaporates.
 
 ## The billing feature that never makes it into the demo
 
-When a founder prompts an AI tool to "add Stripe subscriptions," what gets built is the happy path: successful checkout, active subscription, monthly renewal. Dunning — the structured process of retrying failed payments, notifying customers, and giving them a grace period before downgrading or canceling — isn't part of that happy path, so it isn't part of what gets generated. Nobody demos a failed payment, so nobody notices the gap until real customers' real cards start failing at real scale.
+When a founder prompts an AI tool to "add Stripe subscriptions," what gets built is the happy path: successful checkout, active subscription, monthly renewal. Dunning - the structured process of retrying failed payments, notifying customers, and giving them a grace period before downgrading or canceling - isn't part of that happy path, so it isn't part of what gets generated. Nobody demos a failed payment, so nobody notices the gap until real customers' real cards start failing at real scale.
 
 The default behavior an AI-generated billing webhook tends to fall into is the worst of both worlds: a failed charge silently flips the account to free tier (or cancels it outright) with no retry attempt and, critically, no email to the customer at all. The customer doesn't know their access was downgraded. They assume the product just changed, or they don't notice until they need a feature that's now gated. Either way, the SaaS company doesn't get a second chance at the card, and doesn't even know it lost the revenue until someone reconciles subscriber counts against Stripe's dashboard weeks later.
 
 ## What real dunning logic looks like
 
-A production dunning system does a few specific things that AI tools don't generate unprompted: it retries a failed charge on a schedule (commonly at days 1, 3, 5, and 7, mirroring what Stripe's own Smart Retries logic does), it sends the customer an email at first failure with a self-service link to update their card, it keeps the account active through a grace period rather than downgrading immediately, and it only cancels or downgrades after retries are exhausted and the grace period ends. This alone typically recovers a meaningful share of "failed" payments, because a large portion of card failures are transient — an expired card the customer hasn't gotten around to updating, not a customer who's decided to leave.
+A production dunning system does a few specific things that AI tools don't generate unprompted: it retries a failed charge on a schedule (commonly at days 1, 3, 5, and 7, mirroring what Stripe's own Smart Retries logic does), it sends the customer an email at first failure with a self-service link to update their card, it keeps the account active through a grace period rather than downgrading immediately, and it only cancels or downgrades after retries are exhausted and the grace period ends. This alone typically recovers a meaningful share of "failed" payments, because a large portion of card failures are transient - an expired card the customer hasn't gotten around to updating, not a customer who's decided to leave.
 
-LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and dunning logic is one of the most common gaps our team finds when auditing AI-built subscription products — it's invisible in a demo and expensive in production, which makes it exactly the kind of thing that gets missed without a dedicated review. Our engineers, supported out of Manifera's Singapore office at 100 Tras Street, treat billing resilience as a standard part of getting a subscription SaaS product ready for real customers, not an optional add-on.
+LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and dunning logic is one of the most common gaps our team finds when auditing AI-built subscription products - it's invisible in a demo and expensive in production, which makes it exactly the kind of thing that gets missed without a dedicated review. Our engineers, supported out of Manifera's Singapore office at 100 Tras Street, treat billing resilience as a standard part of getting a subscription SaaS product ready for real customers, not an optional add-on.
 
 If you've never actually calculated how much of your churn is silent card failure rather than genuine cancellation, [our packages page](https://launchstudio.eu/en/#packages) outlines what a billing resilience review typically covers.
 
-## The Grace Period Has a Cost of Its Own — Cap It Explicitly
+## The Grace Period Has a Cost of Its Own - Cap It Explicitly
 
-Keeping an account active while a customer's card gets sorted out is the right call, but it introduces a question the basic retry-and-notify logic doesn't answer on its own: what happens if the card never gets fixed? Without a firm, enforced boundary, a "grace period" can quietly turn into indefinite free access — the account never technically gets marked as failed enough to downgrade, it just sits in a permanent limbo of "still retrying." For usage-based billing in particular, this isn't just lost subscription revenue; the customer keeps consuming metered resources (API calls, storage, compute) the whole time, which is a real, ongoing cost rather than a deferred one.
+Keeping an account active while a customer's card gets sorted out is the right call, but it introduces a question the basic retry-and-notify logic doesn't answer on its own: what happens if the card never gets fixed? Without a firm, enforced boundary, a "grace period" can quietly turn into indefinite free access - the account never technically gets marked as failed enough to downgrade, it just sits in a permanent limbo of "still retrying." For usage-based billing in particular, this isn't just lost subscription revenue; the customer keeps consuming metered resources (API calls, storage, compute) the whole time, which is a real, ongoing cost rather than a deferred one.
 
-The fix is to give the grace period an explicit expiry, stored as a timestamp rather than inferred from a status flag, and to enforce it with a scheduled job that actually runs — and is itself monitored, for the same reason the original dead-letter-queue pattern needs monitoring: a silently broken enforcement job just replaces "customers get downgraded too aggressively" with "customers never get downgraded at all."
+The fix is to give the grace period an explicit expiry, stored as a timestamp rather than inferred from a status flag, and to enforce it with a scheduled job that actually runs - and is itself monitored, for the same reason the original dead-letter-queue pattern needs monitoring: a silently broken enforcement job just replaces "customers get downgraded too aggressively" with "customers never get downgraded at all."
 
 ```
 async function enforceGracePeriodExpiry() {
@@ -67,22 +67,22 @@ async function enforceGracePeriodExpiry() {
 }
 ```
 
-A dunning system that recovers revenue and one that quietly gives away free access for months look identical from the outside — the only difference is whether this final step actually fires on schedule.
+A dunning system that recovers revenue and one that quietly gives away free access for months look identical from the outside - the only difference is whether this final step actually fires on schedule.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Clinic Software That Was Losing Revenue Nobody Was Watching
 
-Esther van Loon, a founder in Katwijk, built PlanPro — an appointment scheduling SaaS for small clinics — using Lovable. The subscription billing worked cleanly for every customer whose card kept working. It was only during a routine revenue review, months after launch, that Esther noticed active clinic accounts quietly showing up as "free tier" in her database, with no corresponding cancellation event anywhere in her records.
+Esther van Loon, a founder in Katwijk, built PlanPro - an appointment scheduling SaaS for small clinics - using Lovable. The subscription billing worked cleanly for every customer whose card kept working. It was only during a routine revenue review, months after launch, that Esther noticed active clinic accounts quietly showing up as "free tier" in her database, with no corresponding cancellation event anywhere in her records.
 
-Digging into it, the pattern became clear: every failed renewal charge — expired cards, insufficient funds, banks flagging an unfamiliar recurring charge — triggered an immediate downgrade to free tier. No retry. No customer email. No indication to the clinic staff that anything had changed, until they tried to use a paid feature and found it gated. Esther estimated that roughly 9% of her monthly recurring revenue was disappearing this way every month, invisibly, with no attempt made to recover any of it.
+Digging into it, the pattern became clear: every failed renewal charge - expired cards, insufficient funds, banks flagging an unfamiliar recurring charge - triggered an immediate downgrade to free tier. No retry. No customer email. No indication to the clinic staff that anything had changed, until they tried to use a paid feature and found it gated. Esther estimated that roughly 9% of her monthly recurring revenue was disappearing this way every month, invisibly, with no attempt made to recover any of it.
 
-LaunchStudio built a proper dunning sequence into PlanPro's Stripe webhook handling: failed charges now trigger automatic retries over a seven-day window, the customer gets an immediate email with a self-service card update link, and the account stays fully active through the grace period. Only after retries are exhausted does an account downgrade — and by then, the customer has had four separate chances to fix a card issue they usually didn't even know existed. **Result:** PlanPro recovered a substantial share of previously-lost renewals within the first month of the new dunning flow going live.
+LaunchStudio built a proper dunning sequence into PlanPro's Stripe webhook handling: failed charges now trigger automatic retries over a seven-day window, the customer gets an immediate email with a self-service card update link, and the account stays fully active through the grace period. Only after retries are exhausted does an account downgrade - and by then, the customer has had four separate chances to fix a card issue they usually didn't even know existed. **Result:** PlanPro recovered a substantial share of previously-lost renewals within the first month of the new dunning flow going live.
 
 > *"I genuinely thought those customers had just quietly churned. Finding out it was a billing bug, not a business problem, was the most expensive relief I've ever felt."*
-> — **Esther van Loon, Founder, PlanPro (Katwijk)**
+> - **Esther van Loon, Founder, PlanPro (Katwijk)**
 
-**Cost & Timeline:** €950 (dunning retry logic, customer notification emails, grace-period account handling) — completed in 5 business days.
+**Cost & Timeline:** €950 (dunning retry logic, customer notification emails, grace-period account handling) - completed in 5 business days.
 
 ---
 
@@ -90,7 +90,7 @@ LaunchStudio built a proper dunning sequence into PlanPro's Stripe webhook handl
 
 ### Why doesn't my AI-generated Stripe integration retry failed payments automatically?
 
-Because retry logic isn't part of the default subscription flow an AI tool generates from a simple prompt — it requires explicitly building a retry schedule, customer notifications, and grace-period handling, which most founders don't know to ask for until it's costing them revenue.
+Because retry logic isn't part of the default subscription flow an AI tool generates from a simple prompt - it requires explicitly building a retry schedule, customer notifications, and grace-period handling, which most founders don't know to ask for until it's costing them revenue.
 
 ### How much revenue does this typically cost a SaaS company?
 
@@ -98,19 +98,19 @@ It varies, but failure rates in the high single digits of monthly renewals are c
 
 ### What does a good dunning email sequence actually include?
 
-Typically an immediate notification at first failure with a card-update link, a reminder partway through the grace period, and a final notice before any downgrade takes effect — timed to give the customer a real chance to fix the issue.
+Typically an immediate notification at first failure with a card-update link, a reminder partway through the grace period, and a final notice before any downgrade takes effect - timed to give the customer a real chance to fix the issue.
 
 ### How does Manifera's team think about billing resilience differently than a typical AI-generated prototype?
 
-Manifera's engineers, who have delivered 160+ projects for enterprise clients, treat subscription billing as a system with edge cases to be engineered for, not a single successful transaction to be demoed — dunning is one of the first things checked in a subscription SaaS audit.
+Manifera's engineers, who have delivered 160+ projects for enterprise clients, treat subscription billing as a system with edge cases to be engineered for, not a single successful transaction to be demoed - dunning is one of the first things checked in a subscription SaaS audit.
 
 ### Is this something LaunchStudio can add without touching my existing Stripe setup?
 
-Yes — dunning logic is typically layered on top of existing Stripe webhooks and subscription objects, so it doesn't require migrating payment processors or rebuilding checkout.
+Yes - dunning logic is typically layered on top of existing Stripe webhooks and subscription objects, so it doesn't require migrating payment processors or rebuilding checkout.
 
 ### Does keeping an account active during the grace period create any risk of its own?
 
-Yes — without a firm, explicit expiry and a reliably-running job to enforce it, a grace period can quietly turn into indefinite free access, especially in usage-based billing where the customer keeps consuming metered resources the whole time. The grace period needs a stored expiry timestamp and its own monitored enforcement job, not just a status flag that's assumed to get checked eventually.
+Yes - without a firm, explicit expiry and a reliably-running job to enforce it, a grace period can quietly turn into indefinite free access, especially in usage-based billing where the customer keeps consuming metered resources the whole time. The grace period needs a stored expiry timestamp and its own monitored enforcement job, not just a status flag that's assumed to get checked eventually.
 
 <script type="application/ld+json">
 {
@@ -120,7 +120,7 @@ Yes — without a firm, explicit expiry and a reliably-running job to enforce it
     {
       "@type": "Question",
       "name": "Why doesn't my AI-generated Stripe integration retry failed payments automatically?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Retry logic isn't part of the default subscription flow an AI tool generates from a simple prompt — it requires explicitly building a retry schedule, customer notifications, and grace-period handling." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Retry logic isn't part of the default subscription flow an AI tool generates from a simple prompt - it requires explicitly building a retry schedule, customer notifications, and grace-period handling." }
     },
     {
       "@type": "Question",

@@ -3,9 +3,9 @@
 De eerste read-only ronde vond binnen ongeveer negentig minuten een rood vlaggetje. 🧠
 
 ❌ API-sleutels voor de e-maildienst waren rechtstreeks hardcoded in een client-side bestand, zichtbaar in de ontwikkelaarstools van de browser
-❌ Geen rate limiting op het enquête-inzendpunt — één script kon de database overspoelen of zijn e-mailrekening in een middag opblazen
+❌ Geen rate limiting op het enquête-inzendpunt - één script kon de database overspoelen of zijn e-mailrekening in een middag opblazen
 ❌ Verschillende formuliervelden hadden geen validatie aan de serverzijde, dus de backend vertrouwde alles wat de frontend stuurde
-❌ Niets hiervan zou in een productdemo zijn opgedoken — alles zou in de eerste week met echt verkeer zijn opgedoken
+❌ Niets hiervan zou in een productdemo zijn opgedoken - alles zou in de eerste week met echt verkeer zijn opgedoken
 
 ✅ Verplaats blootgestelde credentials onmiddellijk naar de serverzijde achter een omgevingsvariabele
 ✅ Voeg verzoekthrottling toe aan publiek toegankelijke inzendpunten

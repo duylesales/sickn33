@@ -22,25 +22,25 @@ target_persona: "VP of Engineering"
 
 Why does the same AI use case get three completely different technical recommendations depending on which vendor you ask? Because most vendors recommend whatever they're best at selling, not whatever actually fits your data.
 
-**The Pain:** A VP of Engineering at a logistics-tech company based in Meppel — the rail and road gateway into Drenthe, where freight scheduling data changes by the hour — needed an AI feature to help customer support staff answer shipping-status questions accurately. One consultant recommended fine-tuning a model on historical support transcripts. The team went with it, invested six weeks and a meaningful budget, and shipped a model that sounded exactly like their best support agents.
+**The Pain:** A VP of Engineering at a logistics-tech company based in Meppel - the rail and road gateway into Drenthe, where freight scheduling data changes by the hour - needed an AI feature to help customer support staff answer shipping-status questions accurately. One consultant recommended fine-tuning a model on historical support transcripts. The team went with it, invested six weeks and a meaningful budget, and shipped a model that sounded exactly like their best support agents.
 
-**The Agitation:** Within three weeks, the fine-tuned model was confidently answering questions with shipping schedules that were two weeks stale, because the model had baked in a snapshot of data that changes constantly — and updating it meant a full, costly retraining cycle every time. The team was now paying to retrain a model on a weekly cadence just to keep pace with data that should never have been trained into the model's weights in the first place. Budget burn accelerated while accuracy actually got worse than the simple system it replaced.
+**The Agitation:** Within three weeks, the fine-tuned model was confidently answering questions with shipping schedules that were two weeks stale, because the model had baked in a snapshot of data that changes constantly - and updating it meant a full, costly retraining cycle every time. The team was now paying to retrain a model on a weekly cadence just to keep pace with data that should never have been trained into the model's weights in the first place. Budget burn accelerated while accuracy actually got worse than the simple system it replaced.
 
 ## The Architectural Mandate
 
-Choosing between prompt engineering, retrieval-augmented generation, and fine-tuning isn't a matter of preference — it's a matter of matching the technique to the shape of your data and the stability of the behavior you need. Real AI development services start with that diagnosis, not with a default answer.
+Choosing between prompt engineering, retrieval-augmented generation, and fine-tuning isn't a matter of preference - it's a matter of matching the technique to the shape of your data and the stability of the behavior you need. Real AI development services start with that diagnosis, not with a default answer.
 
-Prompt engineering is the right tool when the task is well-defined, the required knowledge fits comfortably in a context window, and the underlying information doesn't change fast enough to need external grounding — think structured formatting tasks, simple classification, or tone control on top of information the user already provides. It's fast to iterate and cheap to change, which makes it the right starting point for most net-new features, including a first version worth testing in Meppel before committing further budget.
+Prompt engineering is the right tool when the task is well-defined, the required knowledge fits comfortably in a context window, and the underlying information doesn't change fast enough to need external grounding - think structured formatting tasks, simple classification, or tone control on top of information the user already provides. It's fast to iterate and cheap to change, which makes it the right starting point for most net-new features, including a first version worth testing in Meppel before committing further budget.
 
-RAG is the right tool when the task depends on knowledge that changes frequently or is too large to fit in a prompt — exactly the shipping-schedule scenario above. A RAG architecture pairs a vector database (embeddings generated from your live data, indexed for semantic search) with the model at query time, so the model retrieves current, relevant facts rather than relying on what it memorized during training. Freight schedules, product catalogs, policy documents, and support knowledge bases are textbook RAG use cases: the data moves, so the retrieval has to happen live.
+RAG is the right tool when the task depends on knowledge that changes frequently or is too large to fit in a prompt - exactly the shipping-schedule scenario above. A RAG architecture pairs a vector database (embeddings generated from your live data, indexed for semantic search) with the model at query time, so the model retrieves current, relevant facts rather than relying on what it memorized during training. Freight schedules, product catalogs, policy documents, and support knowledge bases are textbook RAG use cases: the data moves, so the retrieval has to happen live.
 
-Fine-tuning is the right tool when you need to teach a model a stable behavior pattern at scale — a specific structured output format, a consistent tone across thousands of interactions, or domain-specific language a general model doesn't handle well — and that pattern doesn't change week to week. It's the most expensive and slowest technique to iterate on, so it should be reserved for genuinely stable requirements, verified through an evaluation harness before committing engineering weeks to a retraining cycle.
+Fine-tuning is the right tool when you need to teach a model a stable behavior pattern at scale - a specific structured output format, a consistent tone across thousands of interactions, or domain-specific language a general model doesn't handle well - and that pattern doesn't change week to week. It's the most expensive and slowest technique to iterate on, so it should be reserved for genuinely stable requirements, verified through an evaluation harness before committing engineering weeks to a retraining cycle.
 
-Most production systems end up as a hybrid: prompt engineering for control and tone, RAG for live grounding, and fine-tuning reserved narrowly for the one behavior that genuinely needs it. The decision should come from an evaluation harness that tests all three approaches against your actual data and use case — not from whichever technique a vendor happens to specialize in selling.
+Most production systems end up as a hybrid: prompt engineering for control and tone, RAG for live grounding, and fine-tuning reserved narrowly for the one behavior that genuinely needs it. The decision should come from an evaluation harness that tests all three approaches against your actual data and use case - not from whichever technique a vendor happens to specialize in selling.
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** Our Dutch-based architects run the technique evaluation with your engineering team — testing prompt engineering, RAG, and fine-tuning against your real data before recommending an architecture — and own the long-term maintainability of whatever gets chosen.
+- **Amsterdam (Governance/Strategy):** Our Dutch-based architects run the technique evaluation with your engineering team - testing prompt engineering, RAG, and fine-tuning against your real data before recommending an architecture - and own the long-term maintainability of whatever gets chosen.
 - **Vietnam (Execution/Velocity):** Autonomous Pods in Ho Chi Minh City build the vector database pipeline, the retrieval logic, or the fine-tuning infrastructure, whichever the evaluation points to, and run the benchmarking that keeps the decision honest.
 
 This is Dutch Management × Vietnamese Mastery in practice: architectural judgment from Amsterdam, execution speed from Ho Chi Minh City. See how we scope AI architecture decisions on our [custom software development page](https://www.manifera.com/services/custom-software-development/).
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery in practice: architectural judgme
 
 ### The Insurance Claims Model That Was Obsolete on Arrival
 
-AlpenSure Versicherung AG, a mid-sized insurance provider in Austria, fine-tuned a model to classify and summarize incoming claims, following a vendor's recommendation. Within a month, the model was misclassifying claims tied to newly introduced policy types, because those policies didn't exist when the training data was collected — and each retraining cycle to catch up cost several weeks and a meaningful engineering budget.
+AlpenSure Versicherung AG, a mid-sized insurance provider in Austria, fine-tuned a model to classify and summarize incoming claims, following a vendor's recommendation. Within a month, the model was misclassifying claims tied to newly introduced policy types, because those policies didn't exist when the training data was collected - and each retraining cycle to catch up cost several weeks and a meaningful engineering budget.
 
-Manifera's Autonomous Pod ran an evaluation harness comparing the fine-tuned approach against a RAG architecture grounded in AlpenSure's live policy database. RAG won decisively on accuracy for anything policy-related, while a narrow fine-tuning layer stayed in place purely for claims summarization formatting — a stable, well-defined task fine-tuning is actually good at. Claims classification accuracy improved by double digits, and new policy types now get recognized the day they're added, with zero retraining.
+Manifera's Autonomous Pod ran an evaluation harness comparing the fine-tuned approach against a RAG architecture grounded in AlpenSure's live policy database. RAG won decisively on accuracy for anything policy-related, while a narrow fine-tuning layer stayed in place purely for claims summarization formatting - a stable, well-defined task fine-tuning is actually good at. Claims classification accuracy improved by double digits, and new policy types now get recognized the day they're added, with zero retraining.
 
-> *"We were retraining a model every few weeks just to keep up with our own policy updates. Now the model looks the answer up instead of trying to remember it — and it's right more often."*
-> — **VP of Engineering, AlpenSure Versicherung AG, Austria**
+> *"We were retraining a model every few weeks just to keep up with our own policy updates. Now the model looks the answer up instead of trying to remember it - and it's right more often."*
+> - **VP of Engineering, AlpenSure Versicherung AG, Austria**
 
 ## Guesswork AI Architecture vs. Manifera's Fit-for-Purpose Approach
 
@@ -68,13 +68,13 @@ Manifera's Autonomous Pod ran an evaluation harness comparing the fine-tuned app
 
 ## The Economics
 
-Choosing the wrong technique doesn't just waste the initial build — it creates a recurring cost that compounds. A retraining cycle for a fine-tuned model typically costs several thousand euros in compute and engineering time per iteration; run that weekly or biweekly to chase changing data, and you're spending €50,000–€100,000 a year maintaining an architecture that a properly designed RAG pipeline would have handled for a fraction of the ongoing cost, with better accuracy. The evaluation harness that tells you which technique fits typically costs a few days of engineering time — cheap insurance against months of retraining bills for a problem RAG would have solved from day one.
+Choosing the wrong technique doesn't just waste the initial build - it creates a recurring cost that compounds. A retraining cycle for a fine-tuned model typically costs several thousand euros in compute and engineering time per iteration; run that weekly or biweekly to chase changing data, and you're spending €50,000–€100,000 a year maintaining an architecture that a properly designed RAG pipeline would have handled for a fraction of the ongoing cost, with better accuracy. The evaluation harness that tells you which technique fits typically costs a few days of engineering time - cheap insurance against months of retraining bills for a problem RAG would have solved from day one.
 
 If your team is retraining a model on a schedule just to keep pace with your own data, you picked the wrong tool. Talk to Manifera about AI development services that start with an honest evaluation, not a default answer: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 
-### (Scenario: VP of Engineering who already committed budget to fine-tuning) We already fine-tuned a model and it's underperforming — do we have to start over?
+### (Scenario: VP of Engineering who already committed budget to fine-tuning) We already fine-tuned a model and it's underperforming - do we have to start over?
 
 Not usually. Manifera typically runs an evaluation comparing your existing fine-tuned model against a RAG-augmented alternative, and in many cases a narrow, well-scoped fine-tuning layer can be preserved for the specific stable task it's good at, while RAG takes over anything tied to changing data.
 

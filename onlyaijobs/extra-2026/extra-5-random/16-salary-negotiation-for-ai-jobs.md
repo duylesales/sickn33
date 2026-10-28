@@ -53,7 +53,7 @@ Under the EU Pay Transparency Directive, employers must give applicants informat
 
 Practically, this means you can and should ask early: "Could you share the range for this role?" It also means you do not need to disclose your current salary, and a recruiter who insists is either uninformed or testing you. A calm "I would rather anchor on the market rate for this role and its scope" is sufficient.
 
-Transparency does not remove negotiation; it moves it. When a range is published, the conversation becomes about where in the range you sit and why — which rewards candidates who can describe their scope precisely.
+Transparency does not remove negotiation; it moves it. When a range is published, the conversation becomes about where in the range you sit and why - which rewards candidates who can describe their scope precisely.
 
 ## The Three Moments That Matter
 
@@ -61,13 +61,13 @@ Transparency does not remove negotiation; it moves it. When a range is published
 
 **After the final interview, before the offer.** This is when your leverage is highest and the employer is most invested. If the recruiter asks what it would take, answer concretely.
 
-**When the offer arrives.** Ask for it in writing with all components. Then take a day. Almost nobody loses an offer by saying "Thank you — may I come back to you tomorrow with any questions?"
+**When the offer arrives.** Ask for it in writing with all components. Then take a day. Almost nobody loses an offer by saying "Thank you - may I come back to you tomorrow with any questions?"
 
 ## What Is Actually Negotiable
 
 Base salary is the obvious lever, but in European offers it is often the least flexible, particularly under collective agreements. Consider the whole package:
 
-- **Job level or grade**, which determines the band and future progression — often more valuable than a one-off increase.
+- **Job level or grade**, which determines the band and future progression - often more valuable than a one-off increase.
 - **Signing bonus**, sometimes used when the band caps the base.
 - **Holiday days** above the statutory or contractual minimum.
 - **Training and conference budget**, and dedicated time to use it.
@@ -113,7 +113,7 @@ Two offers with identical gross salaries can differ by a fifth in net terms and 
 
 ## Cost of Living and Commute
 
-A higher salary in an expensive city can leave you worse off. When comparing offers in different locations, subtract realistic housing costs for a home you would actually accept, plus commuting time valued honestly. Candidates who do this often discover that the second-highest offer is the better one — particularly when one role allows more remote days or sits closer to where they already live.
+A higher salary in an expensive city can leave you worse off. When comparing offers in different locations, subtract realistic housing costs for a home you would actually accept, plus commuting time valued honestly. Candidates who do this often discover that the second-highest offer is the better one - particularly when one role allows more remote days or sits closer to where they already live.
 
 ## When Not to Negotiate
 
@@ -123,13 +123,13 @@ There are situations where pushing is counterproductive:
 - **When you have no alternative and the role is what you want.** Negotiate anyway on non-cash elements, but do not risk the relationship over a small percentage.
 - **When you have already accepted.** Reopening an agreed offer damages trust badly and is remembered.
 - **When the employer has bent significantly once.** A second round of demands reads as bad faith.
-- **In public sector or strictly graded roles** where pay is genuinely fixed by scale — there, negotiate the step, start date and development budget instead.
+- **In public sector or strictly graded roles** where pay is genuinely fixed by scale - there, negotiate the step, start date and development budget instead.
 
 Knowing when to stop is as valuable as knowing how to ask. The goal is to begin a job with goodwill intact, not to win a contest.
 
 ## Counteroffers From Your Current Employer
 
-If you resign and your employer responds with a counteroffer, treat it carefully. Ask yourself why the increase required a resignation, whether the underlying reasons for leaving — scope, management, growth — would change, and how your departure attempt will be remembered. Counteroffers sometimes work well, particularly when the issue was purely pay and the relationship is strong; often they postpone a departure by six months. Decide based on the original reasons you started looking, not on the relief of not having to move.
+If you resign and your employer responds with a counteroffer, treat it carefully. Ask yourself why the increase required a resignation, whether the underlying reasons for leaving - scope, management, growth - would change, and how your departure attempt will be remembered. Counteroffers sometimes work well, particularly when the issue was purely pay and the relationship is strong; often they postpone a departure by six months. Decide based on the original reasons you started looking, not on the relief of not having to move.
 
 ## Negotiating as a Junior or Career Changer
 
@@ -141,7 +141,7 @@ What does not work: claiming competing offers you do not have; refusing to name 
 
 ## Documenting the Agreement
 
-Everything agreed verbally should appear in the contract or in a confirming email: base salary, level, bonus terms, holiday days, remote arrangement, start date, review date and criteria, training budget, equipment and any relocation support. Ambiguity rarely resolves in your favour once you have started, and managers change. A short, friendly email summarising what was agreed — "just to confirm my understanding" — is normal professional practice, not distrust.
+Everything agreed verbally should appear in the contract or in a confirming email: base salary, level, bonus terms, holiday days, remote arrangement, start date, review date and criteria, training budget, equipment and any relocation support. Ambiguity rarely resolves in your favour once you have started, and managers change. A short, friendly email summarising what was agreed - "just to confirm my understanding" - is normal professional practice, not distrust.
 
 ## How OnlyAIJobs Fits Your Benchmarking
 
@@ -153,11 +153,11 @@ To be transparent about scope: listings are currently concentrated in the Nether
 
 ## A Final Word
 
-Negotiation in European AI hiring is less adversarial than the advice industry suggests. Most hiring managers want you to accept, have a band they must work within, and respond well to evidence about scope. Prepare properly, ask once, be specific, consider the whole package, and be gracious whatever the answer. You will get a better outcome than the candidate who arrives with tactics — and you will start the job with the relationship you actually need.
+Negotiation in European AI hiring is less adversarial than the advice industry suggests. Most hiring managers want you to accept, have a band they must work within, and respond well to evidence about scope. Prepare properly, ask once, be specific, consider the whole package, and be gracious whatever the answer. You will get a better outcome than the candidate who arrives with tactics - and you will start the job with the relationship you actually need.
 
 ## Negotiating With Two Offers
 
-Having a second offer changes the conversation, but only if you handle it well. Be honest: say that you have another offer, that you prefer this role for specific reasons, and ask whether the package can be improved. Do not invent competing offers or inflate numbers — European hiring communities are small, recruiters talk, and being caught ends the process immediately.
+Having a second offer changes the conversation, but only if you handle it well. Be honest: say that you have another offer, that you prefer this role for specific reasons, and ask whether the package can be improved. Do not invent competing offers or inflate numbers - European hiring communities are small, recruiters talk, and being caught ends the process immediately.
 
 Give the employer something to work with. "I have an offer at X from another company. I would rather join you because of the team and the problem, and I would accept at Y" is actionable. "I have a better offer, what can you do?" is not, and it invites a shrug.
 
@@ -169,7 +169,7 @@ Respect the other employer's timeline too. If you need an extension to complete 
 
 An ML engineer received an offer from a European insurer at the top of the band for a medior grade. She had five years of experience, had led two production deployments and would be the only person with MLOps knowledge in the team.
 
-Rather than pushing for a higher number within the band — which the hiring manager had already stretched — she asked a different question: how the company distinguished medior from senior, and what evidence would support a senior grade. The manager described the criteria: ownership of a production system, mentoring, and influence on architecture. She replied with three specific examples from her current role that matched each criterion, and asked whether the level could be reconsidered.
+Rather than pushing for a higher number within the band - which the hiring manager had already stretched - she asked a different question: how the company distinguished medior from senior, and what evidence would support a senior grade. The manager described the criteria: ownership of a production system, mentoring, and influence on architecture. She replied with three specific examples from her current role that matched each criterion, and asked whether the level could be reconsidered.
 
 Two days later she received a revised offer at senior grade, with a base about nine percent higher and, more importantly, a different progression path and a larger training budget. The change came not from pressure but from giving the manager the evidence needed to justify it internally.
 
@@ -178,7 +178,7 @@ Two days later she received a revised offer at senior grade, with a base about n
 - Benchmark from published ranges, collective agreements and peers before any conversation.
 - You do not have to disclose your salary history, and employers must share pay information before interviews.
 - Ask for the range early and state your expectation as a market-grounded range.
-- Negotiate level, review timing, holidays, learning budget and flexibility — not only base salary.
+- Negotiate level, review timing, holidays, learning budget and flexibility - not only base salary.
 - Take a day before responding to an offer, and get everything in writing.
 
 ## Where to Start

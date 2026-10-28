@@ -92,9 +92,9 @@ De kloof kwam naar boven toen het bureau dat KandidaatBeheer gebruikte zich voor
 **Resultaat:** KandidaatBeheer beheert de bevaring nu automatisch over haar gehele kandidaatdatabase, en het bureau slaagde voor zijn daaropvolgende beoordeling van de gegevensbescherming met het bewaarsysteem genoemd als een specifieke sterkte.
 
 > *"Ik bouwde een kandidaatdatabase, en geen gegevensbeheersysteem – maar het blijkt dat dat hetzelfde ding is op het moment dat u cv's van mensen vasthoudt. Ik ben blij dat we het tijdens een beoordeling hebben opgemerkt en niet tijdens een daadwerkelijke klacht."*
-> — **Pepijn de Wit, Oprichter, KandidaatBeheer (Eindhoven)**
+> - **Pepijn de Wit, Oprichter, KandidaatBeheer (Eindhoven)**
 
-**Kosten en tijdlijn:** € 1.100 (geautomatiseerde bewaarregels, werkstroom voor verwijdering/anonimisering, audit-logging, beleidsdocumentatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (geautomatiseerde bewaarregels, werkstroom voor verwijdering/anonimisering, audit-logging, beleidsdocumentatie) - voltooid in 5 werkdagen.
 
 ---
 

@@ -33,13 +33,13 @@ Content Format: Career Guide
 }
 </script>
 
-If you study AI, data science or machine learning in Brabant, you have probably thought at some point: "for a good internship, I'll have to go to Amsterdam or Utrecht." The thought is understandable — and it is usually wrong. It also costs you something concrete: travel time, rent, or a student room you did not really want.
+If you study AI, data science or machine learning in Brabant, you have probably thought at some point: "for a good internship, I'll have to go to Amsterdam or Utrecht." The thought is understandable - and it is usually wrong. It also costs you something concrete: travel time, rent, or a student room you did not really want.
 
-This is not a call to "be proud of your region." It is a simple observation about how vacancies become visible, and why that visibility is systematically skewed towards the Randstad — even when the best opportunity for you is simply closer by.
+This is not a call to "be proud of your region." It is a simple observation about how vacancies become visible, and why that visibility is systematically skewed towards the Randstad - even when the best opportunity for you is simply closer by.
 
 ## Why It Looks as if Brabant Has Nothing to Offer
 
-Job sites mainly show you what other people are also searching for, and most search volume for "AI internship" comes from the cities with the largest student populations. Companies that do recruit in Brabant often have no separate budget for Randstad-style employer branding — they post one vacancy in one place, and it disappears in the results beneath companies that do advertise.
+Job sites mainly show you what other people are also searching for, and most search volume for "AI internship" comes from the cities with the largest student populations. Companies that do recruit in Brabant often have no separate budget for Randstad-style employer branding - they post one vacancy in one place, and it disappears in the results beneath companies that do advertise.
 
 The result: you mostly see vacancies from the companies that shout loudest, not from the companies with the best work. That is a difference you can easily miss as a starter, because you do not yet have a frame of reference to weigh what is on offer.
 
@@ -49,23 +49,23 @@ The result: you mostly see vacancies from the companies that shout loudest, not 
 
 **Logistics and e-commerce data.** Brabant has a large logistics and e-commerce cluster, with companies dealing daily with inventory forecasting, route planning and customer data at scale.
 
-**Companies you don't know yet.** OnlyAIJobs currently lists, among others, Boltrics, 4Dotnet, Holland Innovative and Eminent Groep — names you won't find on a list of "best AI employers in the Netherlands," but which genuinely fill AI and data roles.
+**Companies you don't know yet.** OnlyAIJobs currently lists, among others, Boltrics, 4Dotnet, Holland Innovative and Eminent Groep - names you won't find on a list of "best AI employers in the Netherlands," but which genuinely fill AI and data roles.
 
 ## Searching for an Internship: Two Strategies Compared
 
 | | Searching by name ("well-known companies") | Searching by distance from home |
 |---|---|---|
 | Starting point | Companies you already know from the media or LinkedIn | Every company within a radius that works for you |
-| Competition per vacancy | High — everyone knows the same ten names | Lower — fewer people search locally |
+| Competition per vacancy | High - everyone knows the same ten names | Lower - fewer people search locally |
 | Travel time | Often ignored until the first working day | Visible upfront, because that is exactly what you filter on |
 | Chance of an unknown but strong company | Low | Higher |
-| Compromise needed? | Often — moving, long commute | Not necessarily |
+| Compromise needed? | Often - moving, long commute | Not necessarily |
 
-Neither strategy is wrong. But if you only use the left column, you never consciously choose the right one — you simply never saw it.
+Neither strategy is wrong. But if you only use the left column, you never consciously choose the right one - you simply never saw it.
 
 ## Why "Closer" Doesn't Have to Be a Compromise
 
-The idea that the best internship is by definition far away does not come from data — it comes from the visibility of vacancies. An internship ten minutes from home is not automatically less valuable than one in Amsterdam; it has simply appeared on your feed less often, because the company had no marketing budget to get there.
+The idea that the best internship is by definition far away does not come from data - it comes from the visibility of vacancies. An internship ten minutes from home is not automatically less valuable than one in Amsterdam; it has simply appeared on your feed less often, because the company had no marketing budget to get there.
 
 That is exactly why OnlyAIJobs shows every vacancy with an exact address and the distance from your home, instead of just a city name: so that a strong internship in Tilburg, Breda or Den Bosch is as visible as one in the Randstad, instead of disappearing beneath companies with larger advertising budgets.
 
@@ -105,13 +105,13 @@ Economic development organisations such as **Brainport Development** (Eindhoven 
 
 **Internship allowance.** In the Netherlands, an internship allowance is not legally required, but many companies do pay one. The amount varies widely by sector and organisation. Ask about it in the first conversation, and compare not only the allowance but also the travel costs you will have to bear yourself.
 
-**Internship agreement.** An internship usually runs through a three-party internship agreement between you, the company and your educational institution. It sets out learning objectives, supervision, duration and any allowance. A company with no experience of this is not necessarily unsuitable — but ask extra carefully who will supervise you on content.
+**Internship agreement.** An internship usually runs through a three-party internship agreement between you, the company and your educational institution. It sets out learning objectives, supervision, duration and any allowance. A company with no experience of this is not necessarily unsuitable - but ask extra carefully who will supervise you on content.
 
-**Travelling with your student travel product.** With the student travel product from DUO, you travel free on public transport on weekdays or at weekends, depending on your choice. That often makes an internship in another Brabant city cheaper than it seems — but travel time is still travel time. A Tilburg–Eindhoven or Breda–'s-Hertogenbosch journey is easy by train; a business park without a good bus connection may require a bike ride or a car.
+**Travelling with your student travel product.** With the student travel product from DUO, you travel free on public transport on weekdays or at weekends, depending on your choice. That often makes an internship in another Brabant city cheaper than it seems - but travel time is still travel time. A Tilburg–Eindhoven or Breda–'s-Hertogenbosch journey is easy by train; a business park without a good bus connection may require a bike ride or a car.
 
 **Technical supervision.** For an AI internship, the most important question is not how big the company is, but whether someone can review your code and models on content. Ask in the interview: "who reviews my work, and how often?" A small team with one experienced data scientist who looks at your work weekly often teaches you more than a large company where you sit in a corner as an intern.
 
-**From internship to job.** Many Brabant SMEs actively use internships as a recruitment channel. A company closer to home also has an interest in you staying — and you run less risk of having to move anyway after graduating.
+**From internship to job.** Many Brabant SMEs actively use internships as a recruitment channel. A company closer to home also has an interest in you staying - and you run less risk of having to move anyway after graduating.
 
 ## A Note on Your Internship Allowance
 
@@ -151,14 +151,14 @@ Neither is better. If you want to learn how a large, mature data team works, cho
 
 ## Where to Start
 
-Don't start with a list of company names you already know. Start with a radius around your home, and look at every AI, ML or data vacancy within it — including companies you have never heard of. Filter by category so you don't have to wade through thousands of irrelevant IT vacancies, and by distance so travel time isn't a surprise at the first interview.
+Don't start with a list of company names you already know. Start with a radius around your home, and look at every AI, ML or data vacancy within it - including companies you have never heard of. Filter by category so you don't have to wade through thousands of irrelevant IT vacancies, and by distance so travel time isn't a surprise at the first interview.
 
 Browse current AI, machine learning and data vacancies and internships near you at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: student who thinks a good internship is by definition in the Randstad) Do I really have to move to the Randstad for a good AI internship?
-Not by definition. The assumption that the best internships are in the Randstad mainly comes from vacancies there being more visible — not from the work being better. Regions such as Brabant have a real high-tech, logistics and data sector, where companies often have less budget to stand out but genuinely fill strong AI and data roles.
+Not by definition. The assumption that the best internships are in the Randstad mainly comes from vacancies there being more visible - not from the work being better. Regions such as Brabant have a real high-tech, logistics and data sector, where companies often have less budget to stand out but genuinely fill strong AI and data roles.
 
 ### (Scenario: starter who only searches for well-known company names) Why do I only find the same few well-known companies when I search for "AI internship"?
 Because job sites show vacancies based on what many people already search for and what companies advertise, not on which work suits you best. Companies with large recruitment budgets rank at the top, regardless of whether their internship suits you better than one at a less well-known company.

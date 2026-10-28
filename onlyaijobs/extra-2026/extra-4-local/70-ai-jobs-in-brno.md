@@ -41,7 +41,7 @@ Content Format: Career Guide
 }
 </script>
 
-Brno, the Czech Republic's second-largest city and the capital of South Moravia, is a young, affordable university city with a surprisingly strong technology scene. It hosts one of Europe's best-known speech research groups, a large open-source software engineering centre, world-leading electron microscope manufacturing, a well-known travel technology company, the national cybersecurity agency and a busy startup ecosystem. For students and recent graduates, AI jobs in Brno offer a realistic start in machine learning — often in English-speaking teams — at a cost of living well below Prague and Western Europe. This guide explains where to look and how to prepare.
+Brno, the Czech Republic's second-largest city and the capital of South Moravia, is a young, affordable university city with a surprisingly strong technology scene. It hosts one of Europe's best-known speech research groups, a large open-source software engineering centre, world-leading electron microscope manufacturing, a well-known travel technology company, the national cybersecurity agency and a busy startup ecosystem. For students and recent graduates, AI jobs in Brno offer a realistic start in machine learning - often in English-speaking teams - at a cost of living well below Prague and Western Europe. This guide explains where to look and how to prepare.
 
 ## Universities and Research
 
@@ -86,7 +86,7 @@ Brno's large companies run internship programmes that frequently lead to full-ti
 
 ## Pay, Language and Permits
 
-Salaries in Brno are generally somewhat lower than in Prague, but living costs — especially rent — are also lower. Salaries are paid in Czech koruna. Czech is the language of daily life, but English is the working language in many tech companies and research groups, and Brno has a large international community. EU citizens can work freely; non-EU graduates may use the Employee Card or the EU Blue Card, and Czech universities' graduates may have specific options. Check official sources.
+Salaries in Brno are generally somewhat lower than in Prague, but living costs - especially rent - are also lower. Salaries are paid in Czech koruna. Czech is the language of daily life, but English is the working language in many tech companies and research groups, and Brno has a large international community. EU citizens can work freely; non-EU graduates may use the Employee Card or the EU Blue Card, and Czech universities' graduates may have specific options. Check official sources.
 
 ## Living in Brno
 
@@ -96,7 +96,7 @@ Brno is compact and lively, with a historic centre, a castle on a hill, a large 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Brno you will find few or no local vacancies there today. Use Czech job portals, university career centres, company internship pages and JIC's startup network as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by category and real commute. Brno employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Brno you will find few or no local vacancies there today. Use Czech job portals, university career centres, company internship pages and JIC's startup network as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by category and real commute. Brno employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Speech Technology: A Brno Speciality
 
@@ -174,7 +174,7 @@ Contribute to one open-source project or research tool used in Brno before gradu
 
 A master's student at BUT's Faculty of Information Technology joined the speech research group as a student researcher, working on speaker recognition. She presented her thesis at an international workshop, which impressed a speech technology company.
 
-After graduation, she was offered both a PhD position in the group and a junior ML engineer role at a company building voice products. She chose the PhD, keeping close contact with industry through joint projects. Three years later, she has publications, industry experience and several job offers across Europe — a path she says Brno's research strength made possible.
+After graduation, she was offered both a PhD position in the group and a junior ML engineer role at a company building voice products. She chose the PhD, keeping close contact with industry through joint projects. Three years later, she has publications, industry experience and several job offers across Europe - a path she says Brno's research strength made possible.
 
 ## Key Takeaways
 

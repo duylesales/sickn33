@@ -21,11 +21,11 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Januari is het hoogseizoen voor personal trainers en coaches: nieuwe klanten, nieuwe programma's, nieuwe goede voornemens. Veel coaches geven klanten nu een eigen app, gebouwd met Bolt of Lovable — trainingsschema's, check-ins, voedingslogboeken, voortgangsfoto's, het boeken van sessies en betalingen voor pakketten. Het is een sterke manier om op te vallen. Die AI-app naar productie brengen betekent echter omgaan met gezondheidsinformatie en lichaamsfoto's, geld voor vooruitbetaalde pakketten en een agenda waarvan klanten verwachten dat die exact klopt. Dit zijn de beslissingen die u vóór de drukte van januari moet nemen.
+Januari is het hoogseizoen voor personal trainers en coaches: nieuwe klanten, nieuwe programma's, nieuwe goede voornemens. Veel coaches geven klanten nu een eigen app, gebouwd met Bolt of Lovable - trainingsschema's, check-ins, voedingslogboeken, voortgangsfoto's, het boeken van sessies en betalingen voor pakketten. Het is een sterke manier om op te vallen. Die AI-app naar productie brengen betekent echter omgaan met gezondheidsinformatie en lichaamsfoto's, geld voor vooruitbetaalde pakketten en een agenda waarvan klanten verwachten dat die exact klopt. Dit zijn de beslissingen die u vóór de drukte van januari moet nemen.
 
 ## Beslissing 1: Wat Verzamelt de Intakevragenlijst?
 
-Intakeformulieren voor coaching vragen vaak naar blessures, medische aandoeningen, medicatie, zwangerschap, mentale gezondheid en eetgewoonten. Dat zijn gezondheidsgegevens — bijzondere persoonsgegevens onder de AVG, waarvoor uitdrukkelijke toestemming en sterkere bescherming nodig zijn. In de meeste AI-gebouwde apps staan ze in dezelfde database als namen en e-mailadressen, met dezelfde toegang voor iedereen.
+Intakeformulieren voor coaching vragen vaak naar blessures, medische aandoeningen, medicatie, zwangerschap, mentale gezondheid en eetgewoonten. Dat zijn gezondheidsgegevens - bijzondere persoonsgegevens onder de AVG, waarvoor uitdrukkelijke toestemming en sterkere bescherming nodig zijn. In de meeste AI-gebouwde apps staan ze in dezelfde database als namen en e-mailadressen, met dezelfde toegang voor iedereen.
 
 **De beslissing:** vraag alleen wat u nodig hebt voor veilig coachen, vraag uitdrukkelijke toestemming met een duidelijk doel, sla antwoorden over gezondheid apart op met beperkte en gelogde toegang, en stel een bewaartermijn vast.
 
@@ -53,7 +53,7 @@ Veel coaching-apps voegen door AI gegenereerde programma's of maaltijdplannen to
 
 ## Beslissing 7: Wanneer Wordt Wellness een Medisch Hulpmiddel?
 
-Apps die diagnostisch advies of behandeladvies geven, kunnen onder de regels voor medische hulpmiddelen vallen. Coaching en algemene fitnessbegeleiding doen dat meestal niet — maar functies die aandoeningen beoordelen of een behandeling aanbevelen, horen vóór de lancering zorgvuldig te worden bekeken.
+Apps die diagnostisch advies of behandeladvies geven, kunnen onder de regels voor medische hulpmiddelen vallen. Coaching en algemene fitnessbegeleiding doen dat meestal niet - maar functies die aandoeningen beoordelen of een behandeling aanbevelen, horen vóór de lancering zorgvuldig te worden bekeken.
 
 ## Gezondheidsdata Apart Structureren
 
@@ -69,7 +69,7 @@ Een coaching-app met AI naar productie brengen begint met het scheiden van wat g
 | Trainingslogboeken | Persoonlijk, soms gezondheidsgerelateerd | Programmatabellen; toegang voor coach |
 | Betaalgegevens | Financieel | Factuurtabellen; toegang voor beheerder |
 
-Scheiding maakt het mogelijk strengere regels — toegangslogging, kortere bewaartermijnen, uitsluiting van AI-functies — alleen toe te passen waar ze nodig zijn, zonder de hele app ingewikkelder te maken.
+Scheiding maakt het mogelijk strengere regels - toegangslogging, kortere bewaartermijnen, uitsluiting van AI-functies - alleen toe te passen waar ze nodig zijn, zonder de hele app ingewikkelder te maken.
 
 ## Uitdrukkelijke Toestemming voor Gezondheidsinformatie
 
@@ -102,7 +102,7 @@ Door AI gegenereerde trainingsplannen en maaltijdsuggesties zijn populair, maar 
 
 ## Wearables en Koppelingen
 
-Klanten willen misschien fitnesstrackers of gezondheidsplatforms koppelen. Elke koppeling brengt gedetailleerde gezondheidsgerelateerde data mee. Vraag alleen de soorten data op die nodig zijn, leg uit wat er wordt geïmporteerd, laat klanten eenvoudig ontkoppelen met verwijdering van data, en sla tokens veilig op. Overweeg of geïmporteerde data het risicoprofiel van uw app verandert — hartslag- en slaapdata liggen dichter bij medische informatie dan het aantal trainingen.
+Klanten willen misschien fitnesstrackers of gezondheidsplatforms koppelen. Elke koppeling brengt gedetailleerde gezondheidsgerelateerde data mee. Vraag alleen de soorten data op die nodig zijn, leg uit wat er wordt geïmporteerd, laat klanten eenvoudig ontkoppelen met verwijdering van data, en sla tokens veilig op. Overweeg of geïmporteerde data het risicoprofiel van uw app verandert - hartslag- en slaapdata liggen dichter bij medische informatie dan het aantal trainingen.
 
 ## Communicatie tussen Coach en Klant
 
@@ -110,7 +110,7 @@ Berichten bevatten vaak gezondheidsdetails ("mijn knie doet weer pijn"). Houd be
 
 ## Bewaartermijnen en Vertrekkende Klanten
 
-Coachingrelaties eindigen: klanten verhuizen, veranderen van doel of pauzeren. Stel bewaartermijnen per soort data vast — bijvoorbeeld antwoorden over gezondheid en voortgangsfoto's verwijderd een vaste periode na de laatste sessie, tenzij de klant vraagt ze te bewaren; trainingsgeschiedenis langer bewaard als de klant wil terugkomen; betaalgegevens bewaard zolang de belastingwet vereist. Bied klanten vóór de verwijdering een export van hun voortgang aan; velen hechten waarde aan hun geschiedenis. Automatiseer de bewaartermijnen, zodat ze consequent voor alle coaches gelden.
+Coachingrelaties eindigen: klanten verhuizen, veranderen van doel of pauzeren. Stel bewaartermijnen per soort data vast - bijvoorbeeld antwoorden over gezondheid en voortgangsfoto's verwijderd een vaste periode na de laatste sessie, tenzij de klant vraagt ze te bewaren; trainingsgeschiedenis langer bewaard als de klant wil terugkomen; betaalgegevens bewaard zolang de belastingwet vereist. Bied klanten vóór de verwijdering een export van hun voortgang aan; velen hechten waarde aan hun geschiedenis. Automatiseer de bewaartermijnen, zodat ze consequent voor alle coaches gelden.
 
 ## Beveiligingsmaatregelen in Verhouding tot de Data
 
@@ -126,11 +126,11 @@ Typische problemen zijn onder meer: intakeantwoorden opgeslagen bij profielgegev
 
 ## Een Checklist vóór het Seizoen voor Coaches
 
-Vóór januari of een andere piek in intakes: gezondheidsdata gescheiden met uitdrukkelijke toestemming en toegangslogging; voortgangsfoto's privé met ondertekende links; relaties tussen coach en klant afgedwongen; tegoed van pakketten transactioneel met betalingen bevestigd via webhooks; annuleringsregels afgedwongen in lokale tijd; AI-functies geminimaliseerd en gelabeld; bewaartermijnen en export ingericht; berichten binnen de app; monitoring en back-ups actief. Met deze zaken op hun plek kunnen nieuwe klanten met vertrouwen instappen — en kunnen coaches zich richten op het coachen.
+Vóór januari of een andere piek in intakes: gezondheidsdata gescheiden met uitdrukkelijke toestemming en toegangslogging; voortgangsfoto's privé met ondertekende links; relaties tussen coach en klant afgedwongen; tegoed van pakketten transactioneel met betalingen bevestigd via webhooks; annuleringsregels afgedwongen in lokale tijd; AI-functies geminimaliseerd en gelabeld; bewaartermijnen en export ingericht; berichten binnen de app; monitoring en back-ups actief. Met deze zaken op hun plek kunnen nieuwe klanten met vertrouwen instappen - en kunnen coaches zich richten op het coachen.
 
 ## Waarom Vertrouwen het Echte Product Is
 
-Klanten kiezen een personal trainer of coach om diens expertise, maar ze blijven vanwege vertrouwen. Ze delen blessures, gewichten, foto's en persoonlijke worstelingen die ze misschien niet met vrienden delen. Een app die zorgvuldig met die informatie omgaat — gescheiden, met toestemming, privé, verwijderd als die niet meer nodig is — trekt de professionaliteit van de coach door naar de digitale ruimte. Een app die die informatie lekt, al is het maar één keer, kan jaren aan reputatie tenietdoen die sessie voor sessie is opgebouwd. Voor coaches en studio's is het goed naar productie brengen van een AI-gebouwde app daarom geen IT-kostenpost, maar een investering in de relatie waarop het hele bedrijf rust.
+Klanten kiezen een personal trainer of coach om diens expertise, maar ze blijven vanwege vertrouwen. Ze delen blessures, gewichten, foto's en persoonlijke worstelingen die ze misschien niet met vrienden delen. Een app die zorgvuldig met die informatie omgaat - gescheiden, met toestemming, privé, verwijderd als die niet meer nodig is - trekt de professionaliteit van de coach door naar de digitale ruimte. Een app die die informatie lekt, al is het maar één keer, kan jaren aan reputatie tenietdoen die sessie voor sessie is opgebouwd. Voor coaches en studio's is het goed naar productie brengen van een AI-gebouwde app daarom geen IT-kostenpost, maar een investering in de relatie waarop het hele bedrijf rust.
 
 ## Eerste Stap
 
@@ -142,11 +142,11 @@ Behandel elk intakeantwoord en elke voortgangsfoto alsof de klant over uw schoud
 
 ## Kort Gezegd
 
-Scheiden, toestemming vragen, beperken, loggen en verwijderen — in die volgorde.
+Scheiden, toestemming vragen, beperken, loggen en verwijderen - in die volgorde.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio brengt coaching-apps naar productie met behoud van de uitstraling die coaches en klanten waarderen: gescheiden gezondheidsdata met toestemming, privé voortgangsfoto's, toegang per coach, transactioneel tegoed van pakketten en geverifieerde betalingen, annuleringsregels afgedwongen op de server en verantwoorde AI-functies. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring, dat werkt vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minh-stad — en een van de eigen vroege testimonials van LaunchStudio kwam van Marieke, oprichter van een SaaS voor personal trainers. Zie [mobiele appontwikkeling van Manifera](https://www.manifera.com/services/mobile-app-development/); de [AVG-tekst over bijzondere categorieën](https://gdpr-info.eu/art-9-gdpr/) beschrijft de regels voor gezondheidsdata.
+LaunchStudio brengt coaching-apps naar productie met behoud van de uitstraling die coaches en klanten waarderen: gescheiden gezondheidsdata met toestemming, privé voortgangsfoto's, toegang per coach, transactioneel tegoed van pakketten en geverifieerde betalingen, annuleringsregels afgedwongen op de server en verantwoorde AI-functies. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring, dat werkt vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minh-stad - en een van de eigen vroege testimonials van LaunchStudio kwam van Marieke, oprichter van een SaaS voor personal trainers. Zie [mobiele appontwikkeling van Manifera](https://www.manifera.com/services/mobile-app-development/); de [AVG-tekst over bijzondere categorieën](https://gdpr-info.eu/art-9-gdpr/) beschrijft de regels voor gezondheidsdata.
 
 [Bereken wat uw project zou kosten](https://launchstudio.eu/nl/#calculator) voordat januari uw agenda vult.
 
@@ -156,16 +156,16 @@ LaunchStudio brengt coaching-apps naar productie met behoud van de uitstraling d
 
 Dewi Pranoto, personal trainer met een kleine studio in Capelle aan den IJssel en drie coaches, bouwde Coachkaart in Bolt: klanten vullen een intake in, ontvangen wekelijkse programma's, houden trainingen en maaltijden bij, uploaden maandelijks voortgangsfoto's, boeken sessies en kopen sessiepakketten. Zo'n 140 klanten gebruikten het, en Dewi verwachtte in januari een verdubbeling.
 
-In december vroeg ze om een review. Het intakeformulier verzamelde medische aandoeningen, medicatie en eerdere eetstoornissen, opgeslagen naast namen en zichtbaar voor alle coaches. Voortgangsfoto's stonden in een openbare bucket met opeenvolgende bestandsnamen. Coaches konden alle klanten zien, ook die van collega's. Tegoed van pakketten werd door de browser afgeboekt, zodat een verversing op het juiste moment een sessie gratis hield; betalingen werden bevestigd via de redirect. Late annuleringen werden met de hand beoordeeld. Een AI-functie voor maaltijdplannen stuurde volledige intakeantwoorden — inclusief medische geschiedenis — naar de modelaanbieder.
+In december vroeg ze om een review. Het intakeformulier verzamelde medische aandoeningen, medicatie en eerdere eetstoornissen, opgeslagen naast namen en zichtbaar voor alle coaches. Voortgangsfoto's stonden in een openbare bucket met opeenvolgende bestandsnamen. Coaches konden alle klanten zien, ook die van collega's. Tegoed van pakketten werd door de browser afgeboekt, zodat een verversing op het juiste moment een sessie gratis hield; betalingen werden bevestigd via de redirect. Late annuleringen werden met de hand beoordeeld. Een AI-functie voor maaltijdplannen stuurde volledige intakeantwoorden - inclusief medische geschiedenis - naar de modelaanbieder.
 
 In tien werkdagen splitsten de engineers van LaunchStudio de antwoorden over gezondheid af naar een afgeschermde tabel met toegangslogging en uitdrukkelijke toestemming, verplaatsten ze foto's naar privéopslag met ondertekende links en verwijdering van metadata, dwongen ze relaties tussen coach en klant af in de database, maakten ze het afboeken van tegoed transactioneel bij het boeken, met Mollie-webhooks die aankopen bevestigen, dwongen ze annuleringsregels af in de tijdzone Europe/Amsterdam, en veranderden ze het AI-maaltijdplan zodat het alleen doelen en voorkeuren gebruikt, gelabeld als door AI gegenereerd en met goedkeuring door de coach.
 
 **Resultaat:** De intakes in januari brachten 170 nieuwe klanten zonder incidenten of betalingsgeschillen. Klanten die vroegen hoe hun foto's werden opgeslagen, kregen een duidelijk antwoord, en twee coaches van Dewi runnen nu hun eigen klantgroepen binnen de app.
 
 > *"Mijn klanten vertellen me dingen die ze hun vrienden niet vertellen. De app moest net zo discreet zijn als ik in de studio."*
-> — **Dewi Pranoto, Oprichter, Coachkaart (Capelle aan den IJssel)**
+> - **Dewi Pranoto, Oprichter, Coachkaart (Capelle aan den IJssel)**
 
-**Kosten & Tijdlijn:** € 2.700 (Launch Ready-pakket: omgang met gezondheidsdata, beveiliging van foto's, toegangsbeheer, betalingen voor pakketten en grenzen aan AI-data) — afgerond in 10 werkdagen.
+**Kosten & Tijdlijn:** € 2.700 (Launch Ready-pakket: omgang met gezondheidsdata, beveiliging van foto's, toegangsbeheer, betalingen voor pakketten en grenzen aan AI-data) - afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 

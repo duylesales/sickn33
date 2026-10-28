@@ -47,7 +47,7 @@ You find it while preparing for the interview: a fine, an inquiry by a superviso
 
 **An algorithm controversy.** A system judged to have treated people unfairly. Dutch public administration has lived through this, and the consequences have been serious and lasting.
 
-**Internal wrongdoing.** Fraud, integrity investigations, procurement issues — often with forensic data work attached.
+**Internal wrongdoing.** Fraud, integrity investigations, procurement issues - often with forensic data work attached.
 
 **Employment or works council disputes,** sometimes about monitoring or reorganisation.
 
@@ -55,7 +55,7 @@ Each produces a different job. The first three usually mean building things prop
 
 ## Why They Are Hiring
 
-Remediation is the most common reason, and it is a good one. After enforcement or a public failure, organisations receive something they previously lacked: a mandate and a budget. Work that had been declined for years — a data register, retention cleanup, documentation, monitoring, oversight design, decommissioning of systems nobody could justify — suddenly becomes the priority.
+Remediation is the most common reason, and it is a good one. After enforcement or a public failure, organisations receive something they previously lacked: a mandate and a budget. Work that had been declined for years - a data register, retention cleanup, documentation, monitoring, oversight design, decommissioning of systems nobody could justify - suddenly becomes the priority.
 
 For a data professional, this is often the most interesting version of governance work, because it is real, funded and urgent rather than theoretical.
 
@@ -68,7 +68,7 @@ The less good reason is optics: hiring a specialist so the organisation can say 
 - Budget exists for tooling, external expertise and people.
 - Legal, privacy and compliance colleagues are involved and technically literate.
 - The organisation can describe what it did wrong, in its own words, without blaming a supplier or a junior employee.
-- The remediation has already produced visible changes — systems switched off, processes stopped, practices changed.
+- The remediation has already produced visible changes - systems switched off, processes stopped, practices changed.
 
 In that environment, two or three years of work will teach you more about governance, documentation and oversight than a decade in an untroubled organisation, and it is directly marketable afterwards.
 
@@ -113,9 +113,9 @@ Expect less modelling than the title suggests, at least initially.
 
 ## Your Own Position
 
-Obligations under privacy and AI rules rest on the organisation rather than on individual employees, and the practical protections are the ones that apply in any sensitive work: raise concerns in writing, address them to the people whose role it is — the data protection officer, legal, internal audit — and keep your own record of what you reported and what was decided.
+Obligations under privacy and AI rules rest on the organisation rather than on individual employees, and the practical protections are the ones that apply in any sensitive work: raise concerns in writing, address them to the people whose role it is - the data protection officer, legal, internal audit - and keep your own record of what you reported and what was decided.
 
-The Netherlands also has a framework for reporting suspected wrongdoing, under the **Whistleblower Protection Act**, which implements the EU directive and includes protection against detrimental treatment for people who report through the prescribed channels; larger employers are required to have an internal reporting procedure. It is worth knowing that this framework exists before you need it, and worth taking advice if you ever do — it is not a substitute for ordinary escalation, but it is not nothing either.
+The Netherlands also has a framework for reporting suspected wrongdoing, under the **Whistleblower Protection Act**, which implements the EU directive and includes protection against detrimental treatment for people who report through the prescribed channels; larger employers are required to have an internal reporting procedure. It is worth knowing that this framework exists before you need it, and worth taking advice if you ever do - it is not a substitute for ordinary escalation, but it is not nothing either.
 
 ## The Reputation Question
 
@@ -145,7 +145,7 @@ The version that reads badly is the one where you were there while it continued 
 
 Remediation roles have a recognisable shape, and knowing it makes the early months far less disorienting.
 
-**Weeks one to four: inventory.** What systems exist, what data they process, on what basis, for how long, and who decided. In most organisations this has never been written down in one place, and producing it is the foundation for everything else — including your own understanding of what you have walked into.
+**Weeks one to four: inventory.** What systems exist, what data they process, on what basis, for how long, and who decided. In most organisations this has never been written down in one place, and producing it is the foundation for everything else - including your own understanding of what you have walked into.
 
 **Weeks four to eight: the quick corrections.** Almost every inventory surfaces things that can be stopped immediately: a dataset nobody uses that contains personal data, an export that still runs to a system decommissioned last year, retention that nobody configured. Switching these off produces real risk reduction within weeks and buys credibility for the slower work.
 
@@ -167,21 +167,21 @@ He reads the published report before the interview, which turns out to be the mo
 
 The organisation's own account matches the report. Two systems were switched off during the review and one has not returned. There is a programme with a director accountable to the board, a deadline agreed with the supervisor, and an external auditor who reviews progress quarterly.
 
-He asks what would happen if he found something else. The director's answer is procedural and unhesitating: it goes into the register, it is assessed within a fixed period, and the programme board decides — and two such findings have already come from employees.
+He asks what would happen if he found something else. The director's answer is procedural and unhesitating: it goes into the register, it is assessed within a fixed period, and the programme board decides - and two such findings have already come from employees.
 
 He accepts. His first year is an inventory, a retention programme and documentation for systems that had none. It is not the machine learning role he imagined, and it is the work he now gets approached about by other organisations facing the same obligations.
 
 ## Key Takeaways
 
 - Establish what kind of trouble it is: a breach, a privacy enforcement action, sector supervision, an algorithm controversy or internal wrongdoing each produce a different job.
-- The good version comes with a mandate, a budget, a board-level sponsor and regulator-driven deadlines — conditions that rarely exist otherwise.
+- The good version comes with a mandate, a budget, a board-level sponsor and regulator-driven deadlines - conditions that rarely exist otherwise.
 - The bad version is optics: a specialist hired so the organisation can say it has one, with the same decision makers unchanged.
 - Expect inventory, documentation, retention, impact assessments, oversight design and decommissioning rather than modelling, at least at first.
-- Ask what happened in their own words, what has changed concretely, and what would happen if you found something else — and keep written records of anything you raise.
+- Ask what happened in their own words, what has changed concretely, and what would happen if you found something else - and keep written records of anything you raise.
 
 ## Where to Start
 
-Read the public record before the interview, then ask the organisation for its own account — and compare the role with employers near you building governance practice without a regulator's deadline.
+Read the public record before the interview, then ask the organisation for its own account - and compare the role with employers near you building governance practice without a regulator's deadline.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -207,7 +207,7 @@ Good, if you can say what you did. Arriving after a failure and helping fix it r
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it a mistake to join an organisation under investigation?", "acceptedAnswer": {"@type": "Answer", "text": "Often not — enforcement creates mandate and budget for work otherwise declined for years."}},
+    {"@type": "Question", "name": "Is it a mistake to join an organisation under investigation?", "acceptedAnswer": {"@type": "Answer", "text": "Often not - enforcement creates mandate and budget for work otherwise declined for years."}},
     {"@type": "Question", "name": "How do I tell remediation from decoration?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about programme, sponsor, budget, deadline, visible changes and what happens if you find more."}},
     {"@type": "Question", "name": "Am I personally at risk?", "acceptedAnswer": {"@type": "Answer", "text": "Obligations rest on the organisation; raise concerns in writing and keep records."}},
     {"@type": "Question", "name": "What if serious wrongdoing is not addressed?", "acceptedAnswer": {"@type": "Answer", "text": "A statutory reporting framework with protection exists; take advice before using it."}},

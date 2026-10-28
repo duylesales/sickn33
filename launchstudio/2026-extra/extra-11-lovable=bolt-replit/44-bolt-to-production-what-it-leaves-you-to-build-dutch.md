@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Er ontstaat een heel specifiek soort zelfvertrouwen bij het werken met een Bolt-project. De code ziet eruit alsof een ervaren softwareontwikkelaar hem heeft geschreven — een conventionele mappenstructuur, logische bestandsnamen en componenten die één duidelijke taak uitvoeren. Niets voelt geïmproviseerd, en dat is precies de reden waarom oprichters er vaak vanuit gaan dat het product dichter bij de eindstreep is dan het in werkelijkheid is.
+Er ontstaat een heel specifiek soort zelfvertrouwen bij het werken met een Bolt-project. De code ziet eruit alsof een ervaren softwareontwikkelaar hem heeft geschreven - een conventionele mappenstructuur, logische bestandsnamen en componenten die één duidelijke taak uitvoeren. Niets voelt geïmproviseerd, en dat is precies de reden waarom oprichters er vaak vanuit gaan dat het product dichter bij de eindstreep is dan het in werkelijkheid is.
 
 Het is dichterbij in één specifieke dimensie, maar geen stap verder in de andere. Bolt levert doorgaans een netter vertrekpunt op dan vergelijkbare tools, maar stopt bij exact dezelfde lijn waar alle AI-builders stoppen: het punt waarop een applicatie in aanraking komt met echte gebruikers, echt geld en echte productie-infrastructuur. Hieronder lees je waar die scheidslijn precies ligt, en wat er aan de overkant nog gebouwd moet worden.
 
@@ -30,7 +30,7 @@ Het is goed dit eerlijk te benoemen, want de hiaten hieronder zijn geen diskwali
 
 **Snelheid naar een werkende gebruikersinterface.** Een functionerende multi-page webapplicatie binnen een middag, inclusief state management, navigatie en formulieren die reageren zoals verwacht.
 
-**Conventionele projectstructuur.** De gegenereerde code is over het algemeen georganiseerd zoals een ervaren engineer het zou inrichten. Dat levert later enorme tijdwinst op — een softwareontwikkelaar die een Bolt-codebase overneemt, heeft veel minder inwerktijd nodig dan bij een willekeurig in elkaar gezet project.
+**Conventionele projectstructuur.** De gegenereerde code is over het algemeen georganiseerd zoals een ervaren engineer het zou inrichten. Dat levert later enorme tijdwinst op - een softwareontwikkelaar die een Bolt-codebase overneemt, heeft veel minder inwerktijd nodig dan bij een willekeurig in elkaar gezet project.
 
 **Leesbare componenten.** Compact, modulair gescheiden en benoemd naar wat ze doen. Hierdoor zijn Bolt-projecten prettig om handmatig uit te breiden zodra je rechtstreeks in de code gaat werken.
 
@@ -48,7 +48,7 @@ Die aanname vormt de eerlijke omschrijving van het gat naar productie. De applic
 
 Bolt levert geregeld dataverwerking op die prima werkt voor de actieve browsersessie, maar geen volwaardige backend is: gegevens opgeslagen in het lokale geheugen van de browser, een mock-service die vaste antwoorden teruggeeft, of een rechtstreekse databaseverbinding zonder enige autorisatieregels.
 
-Het echte werk bestaat uit het bepalen van het daadwerkelijke datamodel — wat een productbeslissing is, geen puur technische — en dat vervolgens robuust implementeren: tabellen met database-constraints, relaties verankerd in het schema, en toegangsregels per tabel in plaats van per scherm.
+Het echte werk bestaat uit het bepalen van het daadwerkelijke datamodel - wat een productbeslissing is, geen puur technische - en dat vervolgens robuust implementeren: tabellen met database-constraints, relaties verankerd in het schema, en toegangsregels per tabel in plaats van per scherm.
 
 Dit is tevens het moment om te beseffen dat het databaseschema later het allerduurst is om te wijzigen. Tijd die je hier nu in investeert is vele malen goedkoper dan dezelfde tijd besteden nadat er al duizenden records in productie staan.
 
@@ -76,7 +76,7 @@ Het grootste hiaat en tegelijkertijd het minst zichtbare. Een prototype wordt ge
 
 In de praktijk vraagt dit om toegangscontrole die is getest door te proberen deze te omzeilen, validatie die op de server wordt afgedwongen in plaats van alleen in het formulier, bestandsuploads die strikt beperkt zijn op bestandstype en omvang, rate limiting op elk herhaald endpoint, en foutmeldingen die een onbekende aanvaller geen technische systeemdetails prijsgeven.
 
-De nette structuur van Bolt helpt hier niet, want de ontbrekende code is niet rommelig — hij ontbreekt simpelweg volledig. En afwezigheid ziet eruit als niets.
+De nette structuur van Bolt helpt hier niet, want de ontbrekende code is niet rommelig - hij ontbreekt simpelweg volledig. En afwezigheid ziet eruit als niets.
 
 ## Wat Uitstekend Behoudt Blijft
 
@@ -106,7 +106,7 @@ Zeven concrete tests. De uitkomsten bepalen de scope van het resterende werk nau
 
 **Daarna betalingen,** als je een verdienmodel hebt.
 
-**Vervolgens de beschermende laag** — inputvalidatie, rate limiting, veilige uploads en foutafhandeling.
+**Vervolgens de beschermende laag** - inputvalidatie, rate limiting, veilige uploads en foutafhandeling.
 
 **Dan betrouwbaarheid:** geteste database-backups, monitoring en foutopsporing (error tracking).
 
@@ -114,7 +114,7 @@ Zeven concrete tests. De uitkomsten bepalen de scope van het resterende werk nau
 
 ## Een Bolt-Project Succesvol Lanceren
 
-Dit is afgebakend, beproefd werk. LaunchStudio neemt de frontend die Bolt heeft gegenereerd — onaangeroerd — en bouwt de noodzakelijke productielaag eronder: een echt datamodel met toegangsregels die getest zijn door te proberen in te breken, hosting met geautomatiseerde pipelines en rollback, betalingen die sluitend reconciliëren inclusief afgebroken sessies, server-side validatie en rate limiting, back-ups met restore-garantie, en documentatie die zo schoon blijft dat je daarna door kunt bouwen in Bolt of Cursor.
+Dit is afgebakend, beproefd werk. LaunchStudio neemt de frontend die Bolt heeft gegenereerd - onaangeroerd - en bouwt de noodzakelijke productielaag eronder: een echt datamodel met toegangsregels die getest zijn door te proberen in te breken, hosting met geautomatiseerde pipelines en rollback, betalingen die sluitend reconciliëren inclusief afgebroken sessies, server-side validatie en rate limiting, back-ups met restore-garantie, en documentatie die zo schoon blijft dat je daarna door kunt bouwen in Bolt of Cursor.
 
 Vaste prijzen tussen € 800 en € 7.500, afhankelijk van hoeveel van de zeven bovenstaande controles slecht uitvallen; doorgaans gereed in één tot drie weken in plaats van maanden, omdat er niets opnieuw wordt uitgevonden. De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
@@ -124,7 +124,7 @@ Vaste prijzen tussen € 800 en € 7.500, afhankelijk van hoeveel van de zeven 
 
 Offertes voor dit type werk lopen enorm uiteen, en die variatie komt meestal voort uit miscommunicatie in plaats van uurtarieven. Vier vragen brengen vooraf helderheid:
 
-**"Behoudt u de bestaande frontend?"** Het antwoord bepaalt of je betaalt voor een productielaag of voor een complete herbouw. Als iemand voorstelt de Bolt-code te vervangen, vraag dan specifiek wát er onbruikbaar aan is — en wees sceptisch bij vage opmerkingen over 'codekwaliteit', want Bolt levert doorgaans nette structuren op.
+**"Behoudt u de bestaande frontend?"** Het antwoord bepaalt of je betaalt voor een productielaag of voor een complete herbouw. Als iemand voorstelt de Bolt-code te vervangen, vraag dan specifiek wát er onbruikbaar aan is - en wees sceptisch bij vage opmerkingen over 'codekwaliteit', want Bolt levert doorgaans nette structuren op.
 
 **"Wat staat er vandaag feitelijk in de backend, volgens uw analyse?"** Een ontwikkelaar die het project echt heeft geopend kan je precies vertellen of data persistent is, of er autorisatieregels zijn en of betalingen daadwerkelijk afhandeling hebben. Wie een offerte afgeeft zonder te kijken, baseert zich op aannames.
 
@@ -138,7 +138,7 @@ Stel alle vier de vragen vóórdat je over bedragen praat, en de voorstellen die
 
 ### Een Bolt-Prototype Dat Elke Nacht Alles Vergat
 
-Rens Kuiper bouwde Tafelvrij in Bolt: een reserveringssysteem voor een groep van vier restaurants in Maastricht. De gebruikersinterface was buitengewoon goed — strak ontworpen, razendsnel op mobiel, en het bedienend personeel snapte het direct.
+Rens Kuiper bouwde Tafelvrij in Bolt: een reserveringssysteem voor een groep van vier restaurants in Maastricht. De gebruikersinterface was buitengewoon goed - strak ontworpen, razendsnel op mobiel, en het bedienend personeel snapte het direct.
 
 Het bewaarde reserveringen echter uitsluitend in de browsercache. Elke avond, wanneer de gastvrouw de laptop bij de receptie dichtklapte, waren de reserveringen voor de volgende ochtend verdwenen. Rens had het systeem altijd binnen één doorlopende browsersessie getest en nooit verspreid over meerdere dagen.
 
@@ -146,12 +146,12 @@ De technische intake bracht de rest van de situatie binnen een middag aan het li
 
 Negen werkdagen werk: een echt datamodel waarin reserveringen strikt gekoppeld zijn aan een restaurant met waterdichte autorisatieregels; medewerkersaccounts met specifieke rollen per locatie; hosting op het eigen domein van de restaurantgroep met staging en rollback; aanbetalingen afgehandeld via geverifieerde webhooks waarbij reserveringsbevestiging volgt op de betaalstatus; validatie op de server; back-ups met een geteste herstelprocedure; en error tracking. De Bolt-frontend werd alleen aangepast waar deze moest communiceren met de nieuwe backend.
 
-**Resultaat:** de vier restaurants draaiden een druk openingsweekend over alle vestigingen zonder één verloren boeking, en het aanbetalingssysteem — dat voorheen nooit een transactie had voltooid — verwerkte 38 succesvolle betalingen in de eerste twee weken.
+**Resultaat:** de vier restaurants draaiden een druk openingsweekend over alle vestigingen zonder één verloren boeking, en het aanbetalingssysteem - dat voorheen nooit een transactie had voltooid - verwerkte 38 succesvolle betalingen in de eerste twee weken.
 
 > *"De app zag er prachtig uit, maar had het geheugen van een goudvis. Ik had zes weken besteed aan het polijsten van een systeem dat elke reservering vergat zodra ik mijn laptop dichtdeed."*
-> — **Rens Kuiper, Oprichter, Tafelvrij (Maastricht)**
+> - **Rens Kuiper, Oprichter, Tafelvrij (Maastricht)**
 
-**Kosten & Doorlooptijd:** € 3.900 (datamodel en toegangsregels, rollenbeheer, hosting-pipeline, verwerking van aanbetalingen, server-validatie, back-ups) — opgeleverd in 9 werkdagen.
+**Kosten & Doorlooptijd:** € 3.900 (datamodel en toegangsregels, rollenbeheer, hosting-pipeline, verwerking van aanbetalingen, server-validatie, back-ups) - opgeleverd in 9 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -169,7 +169,7 @@ Of je gegevens bewaard blijven nadat je de browser volledig afsluit en heropent.
 
 ### Wat kost het om een Bolt-prototype productieklaar te maken?
 
-Voor een startend product ligt dit doorgaans binnen een vaste bandbreedte van € 800 tot € 7.500. Dit wordt bepaald door de mate waarin de backend al bestaat, of er betalingsverkeer plaatsvindt en de gevoeligheid van de data — niet door het aantal schermen in het prototype.
+Voor een startend product ligt dit doorgaans binnen een vaste bandbreedte van € 800 tot € 7.500. Dit wordt bepaald door de mate waarin de backend al bestaat, of er betalingsverkeer plaatsvindt en de gevoeligheid van de data - niet door het aantal schermen in het prototype.
 
 ### Kan ik na de overgang naar productie zelf blijven bouwen in Bolt?
 

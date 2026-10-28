@@ -31,11 +31,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Julia spent a focused week piecing together a pet-sitting marketplace using v0 for the interface and a straightforward backend to handle bookings and photo uploads. Everything worked when she tested it. The specific moment things got complicated wasn't during building at all — it was three days after launch, when a single uploaded file quietly took her hosting bill somewhere she never expected it to go.
+Julia spent a focused week piecing together a pet-sitting marketplace using v0 for the interface and a straightforward backend to handle bookings and photo uploads. Everything worked when she tested it. The specific moment things got complicated wasn't during building at all - it was three days after launch, when a single uploaded file quietly took her hosting bill somewhere she never expected it to go.
 
 ## The Part That Goes Smoothly: Getting Something Built
 
-Founders who build app projects with AI tools are, by now, rarely surprised that the initial build goes well — v0, Lovable, Bolt, and Cursor have all gotten genuinely good at translating a described feature into working code quickly. The surprise, when it comes, tends to arrive later, at the specific moment real, uncontrolled users start interacting with a feature that was only ever tested against small, well-behaved sample data.
+Founders who build app projects with AI tools are, by now, rarely surprised that the initial build goes well - v0, Lovable, Bolt, and Cursor have all gotten genuinely good at translating a described feature into working code quickly. The surprise, when it comes, tends to arrive later, at the specific moment real, uncontrolled users start interacting with a feature that was only ever tested against small, well-behaved sample data.
 
 ## Where File Uploads Specifically Go Wrong
 
@@ -43,44 +43,44 @@ A profile photo upload feature, tested by a founder uploading a handful of reaso
 
 ## Why This Specific Gap Costs Real Money, Not Just Storage Space
 
-Unrestricted uploads don't just risk running out of disk space — every stored file typically incurs bandwidth and processing costs, and a small number of unusually large or numerous uploads, whether from a confused user or someone deliberately probing for exactly this weakness, can produce a cost spike that's wildly disproportionate to the number of actual users involved.
+Unrestricted uploads don't just risk running out of disk space - every stored file typically incurs bandwidth and processing costs, and a small number of unusually large or numerous uploads, whether from a confused user or someone deliberately probing for exactly this weakness, can produce a cost spike that's wildly disproportionate to the number of actual users involved.
 
-Cloud storage pricing typically charges for both the storage itself and every byte transferred in and out — meaning a single large file, uploaded once, can rack up disproportionate cost the moment it's downloaded or processed even a handful of times, well before storage capacity itself becomes a concern. For an early-stage product with a handful of real users, this is exactly why a single bad-faith or accidental upload can produce a bill that looks completely disconnected from the product's actual usage level.
+Cloud storage pricing typically charges for both the storage itself and every byte transferred in and out - meaning a single large file, uploaded once, can rack up disproportionate cost the moment it's downloaded or processed even a handful of times, well before storage capacity itself becomes a concern. For an early-stage product with a handful of real users, this is exactly why a single bad-faith or accidental upload can produce a bill that looks completely disconnected from the product's actual usage level.
 
 ## Why a Founder's Own Testing Never Catches This
 
-Testing your own upload feature with your own reasonable photos, a handful of times, produces a bill and a storage footprint that looks completely normal — there's no version of that test that resembles what an unrestricted upload endpoint looks like once it's reachable by anyone on the internet with no restrictions in place at all.
+Testing your own upload feature with your own reasonable photos, a handful of times, produces a bill and a storage footprint that looks completely normal - there's no version of that test that resembles what an unrestricted upload endpoint looks like once it's reachable by anyone on the internet with no restrictions in place at all.
 
 ## What Fixing This Actually Involves
 
-A proper fix sets explicit limits — maximum file size, allowed file types, and reasonable rate limits per user — enforced on the server, not just suggested in the frontend's file picker. [LaunchStudio](https://launchstudio.eu/en/) applies exactly this kind of upload hardening as part of its standard review, backed by Manifera's 11+ years of production infrastructure experience across AWS, Azure, and DigitalOcean-hosted systems.
+A proper fix sets explicit limits - maximum file size, allowed file types, and reasonable rate limits per user - enforced on the server, not just suggested in the frontend's file picker. [LaunchStudio](https://launchstudio.eu/en/) applies exactly this kind of upload hardening as part of its standard review, backed by Manifera's 11+ years of production infrastructure experience across AWS, Azure, and DigitalOcean-hosted systems.
 
 Manifera's infrastructure hardening work is delivered by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client scoping handled through the Amsterdam headquarters at Herengracht 420.
 
-[Share your prototype link — we'll take a free look](https://launchstudio.eu/en/#contact).
+[Share your prototype link - we'll take a free look](https://launchstudio.eu/en/#contact).
 
 ## Building a Complete Upload Hardening Checklist
 
-File size limits alone don't fully close this gap — a thorough upload hardening pass covers several distinct failure modes, each of which an AI-generated upload feature typically leaves open unless specifically instructed otherwise.
+File size limits alone don't fully close this gap - a thorough upload hardening pass covers several distinct failure modes, each of which an AI-generated upload feature typically leaves open unless specifically instructed otherwise.
 
 **Enforce limits on the server, in this order of priority**
 
-1. **Maximum file size** — rejected before the full file is even accepted, not just checked after the fact
-2. **Allowed file types, checked by actual file content, not just the extension** — a file renamed from `.exe` to `.jpg` still needs to be caught, which requires inspecting the file's actual header bytes, not trusting the filename a user provided
-3. **Per-user rate limits** — capping how many uploads a single account can perform within a given window, independent of individual file size
-4. **Total storage quota per account** — preventing one account from accumulating an unreasonable volume of stored files even through many small, individually-compliant uploads
+1. **Maximum file size** - rejected before the full file is even accepted, not just checked after the fact
+2. **Allowed file types, checked by actual file content, not just the extension** - a file renamed from `.exe` to `.jpg` still needs to be caught, which requires inspecting the file's actual header bytes, not trusting the filename a user provided
+3. **Per-user rate limits** - capping how many uploads a single account can perform within a given window, independent of individual file size
+4. **Total storage quota per account** - preventing one account from accumulating an unreasonable volume of stored files even through many small, individually-compliant uploads
 
 **Don't rely on frontend validation alone**
 
-A file picker that only accepts `.jpg` and `.png` in the browser is a usability nicety, not a security control — anyone can bypass it entirely by sending a request directly to the upload endpoint using a tool like curl or Postman, skipping the frontend's file picker altogether. Every restriction that matters has to be enforced again on the server, regardless of what the frontend already checks.
+A file picker that only accepts `.jpg` and `.png` in the browser is a usability nicety, not a security control - anyone can bypass it entirely by sending a request directly to the upload endpoint using a tool like curl or Postman, skipping the frontend's file picker altogether. Every restriction that matters has to be enforced again on the server, regardless of what the frontend already checks.
 
 **Set up cost alerts as a second line of defense**
 
-Even a well-configured upload feature benefits from a billing alert set at a threshold meaningfully above normal expected usage — this doesn't prevent a spike, but it converts a silent, slow-building cost problem into a same-day notification instead of something discovered three weeks later on an invoice. Most major hosting and storage providers (AWS, Cloudflare R2, DigitalOcean Spaces) support this as a built-in, free configuration option.
+Even a well-configured upload feature benefits from a billing alert set at a threshold meaningfully above normal expected usage - this doesn't prevent a spike, but it converts a silent, slow-building cost problem into a same-day notification instead of something discovered three weeks later on an invoice. Most major hosting and storage providers (AWS, Cloudflare R2, DigitalOcean Spaces) support this as a built-in, free configuration option.
 
 **Consider what happens to processing pipelines, not just storage**
 
-If uploaded files trigger any downstream processing — image resizing, virus scanning, AI-based content analysis — an oversized or malformed file can also consume disproportionate compute time or crash a processing job, a cost and reliability risk separate from storage itself. Any processing pipeline should independently validate file size and type before beginning work, rather than assuming the upload endpoint already filtered everything that reaches it.
+If uploaded files trigger any downstream processing - image resizing, virus scanning, AI-based content analysis - an oversized or malformed file can also consume disproportionate compute time or crash a processing job, a cost and reliability risk separate from storage itself. Any processing pipeline should independently validate file size and type before beginning work, rather than assuming the upload endpoint already filtered everything that reaches it.
 
 **Test with an intentionally bad file before launch**
 
@@ -88,7 +88,7 @@ Before considering an upload feature done, deliberately try uploading something 
 
 **Revisit these limits as your product grows, not just once at launch**
 
-A limit set sensibly for a product's earliest users can become either too restrictive or too permissive as usage patterns change — a photo-sharing feature that later adds video support needs meaningfully different size limits than the original photo-only version, and a limit that felt generous at ten users might allow a much larger absolute cost exposure once genuine usage reaches a few hundred. Revisiting upload limits whenever a product's core use case changes, rather than treating the original launch-day numbers as permanent, keeps this checklist relevant well past the initial hardening pass.
+A limit set sensibly for a product's earliest users can become either too restrictive or too permissive as usage patterns change - a photo-sharing feature that later adds video support needs meaningfully different size limits than the original photo-only version, and a limit that felt generous at ten users might allow a much larger absolute cost exposure once genuine usage reaches a few hundred. Revisiting upload limits whenever a product's core use case changes, rather than treating the original launch-day numbers as permanent, keeps this checklist relevant well past the initial hardening pass.
 
 ## Real example
 
@@ -101,9 +101,9 @@ Three days after a modest local launch, Julia's hosting bill alert fired for an 
 **Result:** LaunchStudio implemented server-side file size limits, type restrictions, and per-user upload rate limiting across every upload feature in PetPals, closing the exposure without changing how legitimate photo uploads worked for real users.
 
 > *"I tested that upload feature with normal phone photos maybe a dozen times. It never crossed my mind that nothing was stopping someone from uploading something enormous instead."*
-> — **Julia Meijer, Founder, PetPals (Alkmaar)**
+> - **Julia Meijer, Founder, PetPals (Alkmaar)**
 
-**Cost & Timeline:** €1,500 (upload validation and rate limiting) — completed in 5 business days.
+**Cost & Timeline:** €1,500 (upload validation and rate limiting) - completed in 5 business days.
 
 ---
 
@@ -111,11 +111,11 @@ Three days after a modest local launch, Julia's hosting bill alert fired for an 
 
 ### Would a DevOps-focused engineer treat this as a hosting-configuration fix or an application-code fix?
 
-Primarily an application-code fix — while some hosting platforms offer request-size limits at the infrastructure level, the more precise, context-aware restrictions (allowed file types, per-user rate limits) need to be enforced in the application itself, not left entirely to generic platform defaults.
+Primarily an application-code fix - while some hosting platforms offer request-size limits at the infrastructure level, the more precise, context-aware restrictions (allowed file types, per-user rate limits) need to be enforced in the application itself, not left entirely to generic platform defaults.
 
 ### Was Julia's situation caused by a malicious actor, or could it just as easily have been an accident?
 
-It's genuinely unclear which, and that ambiguity is part of the point — an unrestricted upload endpoint is equally exposed to an innocent mistake (someone uploading the wrong, oversized file by accident) and a deliberate abuse attempt, since the missing restriction doesn't distinguish between the two.
+It's genuinely unclear which, and that ambiguity is part of the point - an unrestricted upload endpoint is equally exposed to an innocent mistake (someone uploading the wrong, oversized file by accident) and a deliberate abuse attempt, since the missing restriction doesn't distinguish between the two.
 
 ### Does Manifera's infrastructure experience across AWS, Azure, and DigitalOcean matter for a fix this specific?
 
@@ -123,11 +123,11 @@ Yes, because the correct fix often involves configuring restrictions at both the
 
 ### Is this the kind of production gap Herre Roelevink refers to when discussing why architecture matters more than raw feature output now?
 
-Yes — an upload feature that functions correctly is a feature-output success by any demo standard, while the missing size and rate restrictions are a purely architectural omission, exactly the distinction Roelevink's public commentary on AI-native founders consistently draws.
+Yes - an upload feature that functions correctly is a feature-output success by any demo standard, while the missing size and rate restrictions are a purely architectural omission, exactly the distinction Roelevink's public commentary on AI-native founders consistently draws.
 
 ### Could Julia have avoided this by choosing a different AI tool instead of v0 for the initial build?
 
-Unlikely to matter much — the underlying pattern (uploads accepted without restriction unless specifically requested) is common across AI coding tools generally, since none of them default to imposing limits that weren't part of the original feature description, regardless of which one generated the code.
+Unlikely to matter much - the underlying pattern (uploads accepted without restriction unless specifically requested) is common across AI coding tools generally, since none of them default to imposing limits that weren't part of the original feature description, regardless of which one generated the code.
 
 <script type="application/ld+json">
 {
@@ -171,7 +171,7 @@ Unlikely to matter much — the underlying pattern (uploads accepted without res
       "name": "Would a different AI tool have avoided this gap?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Unlikely — the pattern of unrestricted uploads by default is common across AI coding tools generally."
+        "text": "Unlikely - the pattern of unrestricted uploads by default is common across AI coding tools generally."
       }
     }
   ]

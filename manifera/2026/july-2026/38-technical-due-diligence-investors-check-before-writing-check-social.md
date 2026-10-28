@@ -14,20 +14,20 @@ Result: Investment downgraded to €5M.
 
 **The 7 things DD auditors actually check:**
 
-1️⃣ **Code Quality** — consistent style? Clean architecture? Technical debt?
-2️⃣ **Test Coverage** — 80%+ on business logic = benchmark. Zero = red flag.
-3️⃣ **Security** — exposed secrets? SQL injection? GDPR compliance?
-4️⃣ **Infrastructure** — one-click deploy? Disaster recovery? Monitoring?
-5️⃣ **Scalability** — can it handle 10x traffic without a rewrite?
-6️⃣ **Documentation** — can a new engineer understand the system?
-7️⃣ **Team & Process** — code reviews? Sprint discipline? Bus factor?
+1️⃣ **Code Quality** - consistent style? Clean architecture? Technical debt?
+2️⃣ **Test Coverage** - 80%+ on business logic = benchmark. Zero = red flag.
+3️⃣ **Security** - exposed secrets? SQL injection? GDPR compliance?
+4️⃣ **Infrastructure** - one-click deploy? Disaster recovery? Monitoring?
+5️⃣ **Scalability** - can it handle 10x traffic without a rewrite?
+6️⃣ **Documentation** - can a new engineer understand the system?
+7️⃣ **Team & Process** - code reviews? Sprint discipline? Bus factor?
 
 **Red flags that KILL deals:**
 
 🚩 No version control
 🚩 Single developer who knows everything
 🚩 Customer data exposed without auth
-🚩 No backup strategy — ever
+🚩 No backup strategy - ever
 🚩 GPL code in proprietary product
 🚩 Fake user metrics
 

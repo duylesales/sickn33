@@ -35,7 +35,7 @@ Niels staarde al drie kwartier naar een lege pagina voor "Algemene Voorwaarden" 
 
 Hieronder trekken we de grens helder, clausule voor clausule.
 
-## Wat een Privacyverklaring Wettelijk Moet Bevatten — En Waarom U Dit Zelf Kunt Schrijven
+## Wat een Privacyverklaring Wettelijk Moet Bevatten - En Waarom U Dit Zelf Kunt Schrijven
 
 Een AVG-conforme privacyverklaring kent een wettelijk voorgeschreven structuur en is geen open literair werk. Dat is uitstekend nieuws voor een oprichter die dit zelf wil opstellen:
 
@@ -45,7 +45,7 @@ Een AVG-conforme privacyverklaring kent een wettelijk voorgeschreven structuur e
 - **Hoe lang u gegevens bewaart:** Concrete bewaartermijnen per categorie.
 - **Welke rechten gebruikers hebben:** Inzage, rectificatie, verwijdering (vergetelheid), dataportabiliteit en bezwaar, inclusief de concrete instructie hoe zij deze rechten uitoefenen.
 
-Omdat een privacyverklaring een **feitelijke beschrijving** is van wat uw software daadwerkelijk doet met data — en geen ingewikkeld contractueel vlechtwerk — kan een oprichter die zijn datastromen kent dit prima zelf in heldere taal opschrijven, zonder advocaat. Het grootste risico bij zelfgeschreven privacyverklaringen is zelden de schrijfstijl, maar **feitelijke onjuistheid**: een document waarin staat dat er "geen gegevens met derden worden gedeeld", terwijl er op de achtergrond een analytics-script meedraait dat data naar de VS doorstuurt. De juiste werkwijze is daarom sequentieel: breng eerst uw data-inventarisatie in kaart (wat slaat u op, waarom en wie verwerkt het?), en schrijf vervolgens een waarheidsgetrouwe toelichting. Begin nooit met een willekeurige online template in de hoop dat deze toevallig aansluit op uw architectuur.
+Omdat een privacyverklaring een **feitelijke beschrijving** is van wat uw software daadwerkelijk doet met data - en geen ingewikkeld contractueel vlechtwerk - kan een oprichter die zijn datastromen kent dit prima zelf in heldere taal opschrijven, zonder advocaat. Het grootste risico bij zelfgeschreven privacyverklaringen is zelden de schrijfstijl, maar **feitelijke onjuistheid**: een document waarin staat dat er "geen gegevens met derden worden gedeeld", terwijl er op de achtergrond een analytics-script meedraait dat data naar de VS doorstuurt. De juiste werkwijze is daarom sequentieel: breng eerst uw data-inventarisatie in kaart (wat slaat u op, waarom en wie verwerkt het?), en schrijf vervolgens een waarheidsgetrouwe toelichting. Begin nooit met een willekeurige online template in de hoop dat deze toevallig aansluit op uw architectuur.
 
 ## Wat Algemene Voorwaarden Daadwerkelijk Moeten Dekken voor een SaaS-Product
 
@@ -110,7 +110,7 @@ Buiten de gerichte review van risicoclausules zijn er situaties waarin u direct 
 
 Buiten deze scenario's levert een zorgvuldige oprichter met een goed sjabloon en een gerichte controle op de risicoclausules een juridisch robuust fundament af.
 
-Het verifiëren van de technische feiten — welke datastromen lopen er, welke vendors worden aangeroepen en hoe gedraagt de applicatie zich — is precies het voorwerk dat [LaunchStudio](https://launchstudio.eu/nl/) samen met oprichters verricht vóór de lancering. Hierbij putten we uit de ervaring van Manifera's team van ruim 120 engineers, die dit proces voor tientallen succesvolle livegangen hebben begeleid.
+Het verifiëren van de technische feiten - welke datastromen lopen er, welke vendors worden aangeroepen en hoe gedraagt de applicatie zich - is precies het voorwerk dat [LaunchStudio](https://launchstudio.eu/nl/) samen met oprichters verricht vóór de lancering. Hierbij putten we uit de ervaring van Manifera's team van ruim 120 engineers, die dit proces voor tientallen succesvolle livegangen hebben begeleid.
 
 [Beschrijf uw project en ontvang binnen één werkdag](https://launchstudio.eu/nl/#contact) specifieke feedback over wat uw algemene voorwaarden en privacybeleid moeten dekken.
 
@@ -120,12 +120,12 @@ Het verifiëren van de technische feiten — welke datastromen lopen er, welke v
 
 Niels Aalders, de oprichter uit de inleiding, lanceerde uiteindelijk Roostr: een app voor het ruilen van horecadiensten, gebouwd in Lovable. Hij gebruikte een zelf aangepast privacybeleid en betaalde een jurist € 300 voor een gerichte review van zijn algemene voorwaarden. Zes maanden na de lancering diende zich een grote hotelketen aan als zakelijke klant. Tijdens de inkoopa核audit stelde de compliance manager van de hotelketen een gerichte vraag: hoe ging Roostr om met de biometrische foto's die via de pas geïntroduceerde inklokfunctie werden gemaakt? Niels had deze functie drie maanden na de lancering toegevoegd, maar de privacyverklaring nooit bijgewerkt.
 
-In het geldende privacybeleid stond geen woord over biometrische data — terwijl dit onder de AVG een bijzondere categorie persoonsgegevens betreft die een uitdrukkelijke wettelijke grondslag en verzwaarde beveiliging vereist. De inkoopafdeling zette de deal direct stil. Tijdens een security- en compliance-audit door LaunchStudio werd vastgesteld dat de technische opslag van de foto's veilig was ingericht, maar dat de juridische documentatie ontbrak. Het team hielp Niels om een expliciete toestemmingsstroom in de app in te bouwen, een strikte bewaartermijn voor de biometrische afbeeldingen vast te leggen en het privacybeleid accuraat te actualiseren.
+In het geldende privacybeleid stond geen woord over biometrische data - terwijl dit onder de AVG een bijzondere categorie persoonsgegevens betreft die een uitdrukkelijke wettelijke grondslag en verzwaarde beveiliging vereist. De inkoopafdeling zette de deal direct stil. Tijdens een security- en compliance-audit door LaunchStudio werd vastgesteld dat de technische opslag van de foto's veilig was ingericht, maar dat de juridische documentatie ontbrak. Het team hielp Niels om een expliciete toestemmingsstroom in de app in te bouwen, een strikte bewaartermijn voor de biometrische afbeeldingen vast te leggen en het privacybeleid accuraat te actualiseren.
 
 **Het resultaat:** Met de aangepaste documentatie en toestemmingsflow gaf de juridische afdeling van de hotelketen binnen drie weken alsnog groen licht voor het contract. Niels heeft sindsdien een vaste regel: bij elke nieuwe feature die datastromen raakt, wordt direct de privacyverklaring gecontroleerd.
 
 > *"Ik dacht dat ik na de juridische controle bij de lancering klaar was. Dat was een illusie: het product bleef zich ontwikkelen, maar mijn juridische documenten bleven stilstaan."*
-> — **Niels Aalders, Oprichter van Roostr (Rotterdam)**
+> - **Niels Aalders, Oprichter van Roostr (Rotterdam)**
 
 ## Veelgestelde Vragen
 

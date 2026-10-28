@@ -1,4 +1,4 @@
-⏳ Die model deprecation-e-mail met een aftellende klok van 90 dagen? De meeste oprichters archiveren hem onder "later" — en "later" is precies hoe een routinematige modelwissel een race van twee weken wordt.
+⏳ Die model deprecation-e-mail met een aftellende klok van 90 dagen? De meeste oprichters archiveren hem onder "later" - en "later" is precies hoe een routinematige modelwissel een race van twee weken wordt.
 
 Als uw prompts, output-parsing en foutafhandeling stilzwijgend zijn afgestemd op het gedrag van één specifiek model, is geen enkele deprecation ooit "gewoon de naam wisselen".
 
@@ -12,7 +12,7 @@ Als uw prompts, output-parsing en foutafhandeling stilzwijgend zijn afgestemd op
 
 Bij **LaunchStudio** migreren wij AI SaaS-platforms al sinds 2014 weg van gedeprecieerde modellen via Manifera, over 160+ opgeleverde projecten. 🔧
 
-Een oprichter opende haar deprecation-melding met nog 31 dagen te gaan, vond een kostenstijging van 40% en gedegradeerde output — wij losten beide op en leverden 6 dagen vóór de sunset-datum. (€ 3.400, Launch & Grow Pakket — 13 werkdagen.) 🚀
+Een oprichter opende haar deprecation-melding met nog 31 dagen te gaan, vond een kostenstijging van 40% en gedegradeerde output - wij losten beide op en leverden 6 dagen vóór de sunset-datum. (€ 3.400, Launch & Grow Pakket - 13 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/model-deprecation-migration-now-vs-later
 

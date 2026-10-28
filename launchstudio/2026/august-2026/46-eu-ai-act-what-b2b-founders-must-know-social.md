@@ -1,4 +1,4 @@
-🔥 Lincoln built a prototype using **Lovable** — lincoln, an hr startup founder, used **lovable** to build a recruiter app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Lincoln built a prototype using **Lovable** - lincoln, an hr startup founder, used **lovable** to build a recruiter app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lincoln's application achieved silky-smooth performance: App met the EU AI Act's documentation requirements, securing European expansion. (€2,400 (AI Act Audit Trail) — production-ready and deployed in 6 business days.). 🚀
+Lincoln's application achieved silky-smooth performance: App met the EU AI Act's documentation requirements, securing European expansion. (€2,400 (AI Act Audit Trail) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/eu-ai-act-what-b2b-founders-must-know
 

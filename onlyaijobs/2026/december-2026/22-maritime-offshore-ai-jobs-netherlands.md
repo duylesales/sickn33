@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Maritime and Offshore AI Jobs in the Netherlands: Data at Sea, Where Mistakes Are Expensive",
-  "description": "Dredging, offshore wind, shipping, shipbuilding and subsea work give the Netherlands one of Europe's deepest maritime technology markets — with data roles that rarely mention AI.",
+  "description": "Dredging, offshore wind, shipping, shipbuilding and subsea work give the Netherlands one of Europe's deepest maritime technology markets - with data roles that rarely mention AI.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-11",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The Dutch maritime sector is easy to underestimate because it is spread out. There is no single maritime city; instead there is a network — Rotterdam and the Drechtsteden, Gorinchem and the Merwede yards, Den Helder and IJmuiden on the North Sea coast, Groningen and Delfzijl in the north, plus research institutes inland. Together they make up one of Europe's most complete maritime industries, covering shipbuilding, dredging, offshore installation, subsea technology, shipping, ports and hydraulic engineering. All of it runs on measurement, and almost none of the resulting vacancies say AI.
+The Dutch maritime sector is easy to underestimate because it is spread out. There is no single maritime city; instead there is a network - Rotterdam and the Drechtsteden, Gorinchem and the Merwede yards, Den Helder and IJmuiden on the North Sea coast, Groningen and Delfzijl in the north, plus research institutes inland. Together they make up one of Europe's most complete maritime industries, covering shipbuilding, dredging, offshore installation, subsea technology, shipping, ports and hydraulic engineering. All of it runs on measurement, and almost none of the resulting vacancies say AI.
 
 ## Why Maritime Data Work Is Its Own Discipline
 
@@ -71,7 +71,7 @@ Almost every maritime analysis reduces to the same question: was the difference 
 
 A vessel that burned less fuel this month may have had calmer weather, lighter loading or a different route. A dredger with higher production may have encountered easier soil. A turbine producing below its neighbours may simply sit in their wake.
 
-The professional response is a normalisation model: a physics-informed baseline that predicts expected performance given conditions, against which actual performance is compared. Building that baseline well — and being honest about its uncertainty — is the heart of maritime analytics. It is also why domain knowledge cannot be skipped: you cannot normalise for a variable you do not know exists.
+The professional response is a normalisation model: a physics-informed baseline that predicts expected performance given conditions, against which actual performance is compared. Building that baseline well - and being honest about its uncertainty - is the heart of maritime analytics. It is also why domain knowledge cannot be skipped: you cannot normalise for a variable you do not know exists.
 
 ## Emissions Regulation Is Reshaping the Field
 
@@ -85,7 +85,7 @@ For candidates, this is the clearest growth area in the sector, and one where a 
 
 An offshore installation campaign is planned using a workability analysis: which operations can be performed at which sea states, and how often those conditions occur.
 
-In execution, the campaign runs a week over schedule. The review finds that the analysis used significant wave height alone, while the limiting factor for one critical lift was wave period — a swell with a long period made the vessel motion unacceptable even at modest wave heights. Historical statistics on wave height were fine; the operational limit had been simplified.
+In execution, the campaign runs a week over schedule. The review finds that the analysis used significant wave height alone, while the limiting factor for one critical lift was wave period - a swell with a long period made the vessel motion unacceptable even at modest wave heights. Historical statistics on wave height were fine; the operational limit had been simplified.
 
 The correction is to model vessel response rather than raw weather, using motion criteria derived from the specific vessel and operation, and to plan with a probabilistic schedule rather than a deterministic one.
 
@@ -115,7 +115,7 @@ Beyond that, the sector responds well to demonstrated seriousness. Reading the b
 
 ## Career Growth in Maritime and Offshore
 
-Progression runs towards specialist roles — performance engineer, reliability lead, metocean analyst — or towards technical management of a data or digital function. Because the sector is international and the number of experienced people is limited, mobility between companies and countries is high, and Dutch maritime experience is recognised globally.
+Progression runs towards specialist roles - performance engineer, reliability lead, metocean analyst - or towards technical management of a data or digital function. Because the sector is international and the number of experienced people is limited, mobility between companies and countries is high, and Dutch maritime experience is recognised globally.
 
 The long-term outlook is supported by three structural forces: offshore wind expansion, climate adaptation and coastal protection work, and decarbonisation of shipping. All three are multi-decade programmes, and all three require measurement.
 
@@ -131,7 +131,7 @@ The long-term outlook is supported by three structural forces: offshore wind exp
 
 Candidates who have only worked with well-behaved cloud data should understand what maritime data actually looks like before their first interview.
 
-**Sensors fail quietly.** A fuel flow meter that drifts, a speed log fouled by marine growth, a draft sensor that reads incorrectly in certain trim conditions — none of these announce themselves. They produce plausible numbers that are wrong, and detecting them is a prerequisite for any analysis.
+**Sensors fail quietly.** A fuel flow meter that drifts, a speed log fouled by marine growth, a draft sensor that reads incorrectly in certain trim conditions - none of these announce themselves. They produce plausible numbers that are wrong, and detecting them is a prerequisite for any analysis.
 
 **Timestamps are unreliable.** Clocks on separate systems drift, time zones change during a voyage, and data acquisition systems may record local time in one place and UTC in another. Joining two sources on time is rarely as simple as it looks.
 
@@ -145,7 +145,7 @@ Candidates who have only worked with well-behaved cloud data should understand w
 
 It is worth singling out dredging, because the Netherlands holds an unusual global position in it and candidates rarely consider it as a career.
 
-A modern trailing suction hopper dredger is a floating factory: it pumps a slurry of water and sediment aboard, discharges the overflow, sails to a placement site and deposits its load. Every part of that cycle is measurable — production rate, density, draft, pump pressures, fuel — and every part is optimisable. Small improvements in cycle efficiency on an asset of this cost compound quickly.
+A modern trailing suction hopper dredger is a floating factory: it pumps a slurry of water and sediment aboard, discharges the overflow, sails to a placement site and deposits its load. Every part of that cycle is measurable - production rate, density, draft, pump pressures, fuel - and every part is optimisable. Small improvements in cycle efficiency on an asset of this cost compound quickly.
 
 The analytical questions are genuinely interesting. How do you estimate soil properties from the behaviour of the dredging process itself? How do you distinguish a production drop caused by harder soil from one caused by equipment wear? How do you plan a project when weather, soil and regulatory conditions all vary?
 
@@ -168,7 +168,7 @@ Browse current maritime, offshore and energy data roles at [onlyaijobs.eu/jobs](
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who does not want to work at sea) Are maritime data jobs offshore?
-Mostly no — the majority are shore-based office roles with occasional site or vessel visits.
+Mostly no - the majority are shore-based office roles with occasional site or vessel visits.
 
 ### (Scenario: data scientist from tech) What is the hardest adjustment?
 Accepting that conditions confound everything, which makes physics-informed normalisation more important than model selection.
@@ -180,18 +180,18 @@ Offshore and international shipping work largely in English; yards, ports and pu
 An analysis combining public vessel tracking with weather data to answer an operational question, with honest uncertainty.
 
 ### (Scenario: candidate thinking long-term) Is the sector growing?
-Yes — offshore wind, coastal protection and shipping decarbonisation are multi-decade programmes that all depend on measurement.
+Yes - offshore wind, coastal protection and shipping decarbonisation are multi-decade programmes that all depend on measurement.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Are maritime data jobs based offshore?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly no — the majority are shore-based roles with occasional vessel or site visits."}},
+    {"@type": "Question", "name": "Are maritime data jobs based offshore?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly no - the majority are shore-based roles with occasional vessel or site visits."}},
     {"@type": "Question", "name": "What is the hardest adjustment moving into maritime analytics?", "acceptedAnswer": {"@type": "Answer", "text": "Conditions confound every comparison, so physics-informed normalisation matters more than model selection."}},
     {"@type": "Question", "name": "Is Dutch required in maritime and offshore work?", "acceptedAnswer": {"@type": "Answer", "text": "Offshore and international shipping largely use English; yards, ports and public projects usually expect Dutch."}},
     {"@type": "Question", "name": "What portfolio project impresses maritime employers?", "acceptedAnswer": {"@type": "Answer", "text": "An analysis combining public vessel tracking data with weather to answer an operational question with stated uncertainty."}},
-    {"@type": "Question", "name": "Is the Dutch maritime sector growing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — offshore wind, coastal protection and shipping decarbonisation are long-term programmes built on measurement."}}
+    {"@type": "Question", "name": "Is the Dutch maritime sector growing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - offshore wind, coastal protection and shipping decarbonisation are long-term programmes built on measurement."}}
   ]
 }
 </script>

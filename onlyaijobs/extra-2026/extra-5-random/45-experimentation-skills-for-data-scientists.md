@@ -63,7 +63,7 @@ It is also the skill that determines whether machine learning work has demonstra
 
 **Multiple comparisons.** Twenty metrics examined means roughly one spurious result at conventional thresholds.
 
-**Interference.** Treatment affecting control — through shared inventory, social connections, marketplace dynamics or a shared model — breaks the comparison. Marketplaces and social products need cluster or switchback designs.
+**Interference.** Treatment affecting control - through shared inventory, social connections, marketplace dynamics or a shared model - breaks the comparison. Marketplaces and social products need cluster or switchback designs.
 
 **Sample ratio mismatch.** If your split was meant to be even and is not, something is wrong with assignment or logging, and the result is untrustworthy regardless of how good it looks.
 
@@ -77,7 +77,7 @@ Sample size calculation is the part candidates most often skip and interviewers 
 
 The inputs are few: the baseline rate of your metric, the smallest effect that would change your decision, the variance of the metric, and your tolerance for false positives and false negatives. From these you get the sample size, and dividing by traffic gives the duration.
 
-Two consequences follow that many teams resist. First, detecting small effects requires large samples — halving the detectable effect roughly quadruples the sample needed. Second, most organisations cannot detect the modest improvements they spend their time pursuing, which means many of their historical experiment results were noise.
+Two consequences follow that many teams resist. First, detecting small effects requires large samples - halving the detectable effect roughly quadruples the sample needed. Second, most organisations cannot detect the modest improvements they spend their time pursuing, which means many of their historical experiment results were noise.
 
 Practical guidance: define the minimum effect that would justify the change, not the effect you hope for. Use metric variance from historical data rather than assumptions. For revenue-style metrics with heavy tails, variance is large and sample requirements are correspondingly brutal; consider capping outliers, using a binary version of the metric, or applying variance reduction with pre-experiment data.
 
@@ -93,7 +93,7 @@ Quasi-experimental methods exist for exactly this, and competence with them is a
 
 **Synthetic control.** Construct a weighted combination of untreated units that closely tracks the treated unit before the intervention, then compare afterwards. Widely used for regional or market-level changes.
 
-**Regression discontinuity.** Where treatment is assigned by a threshold — a credit score, an age, an eligibility cut-off — compare units just either side of it.
+**Regression discontinuity.** Where treatment is assigned by a threshold - a credit score, an age, an eligibility cut-off - compare units just either side of it.
 
 **Instrumental variables.** Where something influences treatment but not the outcome directly. Powerful and easily misused.
 
@@ -155,7 +155,7 @@ Consumer protection law constrains experiments on pricing, terms and how offers 
 
 Fairness deserves explicit attention. An experiment that improves outcomes on average while degrading them for a particular group is a problem, and looking for that requires deliberately checking rather than waiting for a complaint.
 
-In sensitive domains — health, finance, employment, public services — internal ethics review is common and often required. Where experiments affect employees rather than customers, works council consultation may apply.
+In sensitive domains - health, finance, employment, public services - internal ethics review is common and often required. Where experiments affect employees rather than customers, works council consultation may apply.
 
 The practical posture is to ask early. A five-minute conversation with a data protection or legal colleague at the design stage costs nothing; discovering at analysis that the test should not have been run wastes the whole effort and damages trust in the practice.
 
@@ -175,7 +175,7 @@ Candidates who volunteer the limits of their conclusions do better than those wh
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Experimentation roles are advertised under many titles — product data scientist, experimentation analyst, growth analyst, quantitative researcher, causal inference specialist — so read the descriptions rather than filtering on titles. Because the board lists only data and AI roles, reading descriptions in full is practical rather than exhausting.
+Experimentation roles are advertised under many titles - product data scientist, experimentation analyst, growth analyst, quantitative researcher, causal inference specialist - so read the descriptions rather than filtering on titles. Because the board lists only data and AI roles, reading descriptions in full is practical rather than exhausting.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen and Capelle aan den IJssel, with employers such as Mollie, Sendcloud, Accenture and Cegeka among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

@@ -6,14 +6,14 @@ WebSockets = permanente tweerichtingsverbinding (duurder, nodig voor live spraak
 SSE (Server-Sent Events) = eenrichtingsstroom (eenvoudiger, goedkoper, perfect voor "AI genereert, scherm toont")
 
 ❌ Haar app had alleen eenrichtingsverkeer nodig (server → scherm)
-❌ Bolt genereerde toch WebSockets — zwaarder, complexer en duurder
+❌ Bolt genereerde toch WebSockets - zwaarder, complexer en duurder
 ❌ Servercapaciteit werd onnodig belast voor data die nooit tweerichtingsverkeer vereiste
 
 Het eenvoudige besliskader: ✅
 1️⃣ Moet de browser tijdens de interactie continu data terugsturen? → WebSockets
 2️⃣ Is het puur "server streamt, browser toont"? → Server-Sent Events (SSE)
 
-⚠️ Belangrijk: AI-gegenereerde WebSockets slaan vaak automatische herverbinding over — waardoor mobiele gebruikers bij slecht bereik steeds vastlopen. SSE herverbindt automatisch! 🔍
+⚠️ Belangrijk: AI-gegenereerde WebSockets slaan vaak automatische herverbinding over - waardoor mobiele gebruikers bij slecht bereik steeds vastlopen. SSE herverbindt automatisch! 🔍
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, kiezen we direct de juiste architectuur voor uw use-case. 🛡️
 

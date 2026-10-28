@@ -1,4 +1,4 @@
-🚨 Youssef Bakkali scaled Bijlesnet to 500 tutors and parents in Tilburg. But he was spending 15 hours a week manually answering support requests by directly editing production database rows in Supabase Studio — until a typo accidentally deleted a parent's entire booking history, leaving no audit log to recover it. 😳
+🚨 Youssef Bakkali scaled Bijlesnet to 500 tutors and parents in Tilburg. But he was spending 15 hours a week manually answering support requests by directly editing production database rows in Supabase Studio - until a typo accidentally deleted a parent's entire booking history, leaving no audit log to recover it. 😳
 
 Editing raw production databases to help customers is a disaster waiting to happen. Here's the support stack you need: 🧠
 

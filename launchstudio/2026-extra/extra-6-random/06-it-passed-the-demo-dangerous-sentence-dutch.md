@@ -23,15 +23,15 @@ Elke oprichter die ooit met een AI-codeertool heeft gebouwd, heeft weleens een v
 
 ## Een demo is by design het beste scenario
 
-Wanneer u uw eigen product demonstreert, test u het niet — u voert een script uit dat u al weet dat werkt, omdat u het hebt gebouwd, het onderweg hebt getest, en instinctief de edge cases vermijdt waarvan u zich half herinnert dat ze wankel waren. U typt geen onzin in een formulierveld alleen om te zien wat er gebeurt. U opent geen twee browsertabbladen om dezelfde actie tegelijk twee keer te proberen. U verliest niet halverwege het afrekenen uw internetverbinding. Een solo-demo, uitgevoerd door de oprichter, is structureel niet in staat om de bugs te vinden die alleen verschijnen bij echt, rommelig, gelijktijdig, vijandig gebruik — omdat een oprichter die zijn eigen app demonstreert, nooit rommelig, gelijktijdig of vijandig is.
+Wanneer u uw eigen product demonstreert, test u het niet - u voert een script uit dat u al weet dat werkt, omdat u het hebt gebouwd, het onderweg hebt getest, en instinctief de edge cases vermijdt waarvan u zich half herinnert dat ze wankel waren. U typt geen onzin in een formulierveld alleen om te zien wat er gebeurt. U opent geen twee browsertabbladen om dezelfde actie tegelijk twee keer te proberen. U verliest niet halverwege het afrekenen uw internetverbinding. Een solo-demo, uitgevoerd door de oprichter, is structureel niet in staat om de bugs te vinden die alleen verschijnen bij echt, rommelig, gelijktijdig, vijandig gebruik - omdat een oprichter die zijn eigen app demonstreert, nooit rommelig, gelijktijdig of vijandig is.
 
 ## Wat "het werkt" daadwerkelijk betekent voor een AI-codeertool
 
-AI-codeertools optimaliseren precies voor dit soort succes op één pad. Vraag om een afrekenstroom, en u krijgt er een die werkt wanneer één persoon er in volgorde doorheen klikt, één keer. Wat u vrijwel nooit standaard krijgt, is afhandeling voor wat er gebeurt wanneer twee mensen tegelijkertijd hetzelfde proberen te doen, wanneer een netwerkverzoek halverwege een time-out krijgt, of wanneer iemand een formulier twee keer indient door dubbel te klikken. Dit zijn geen exotische edge cases — het is een dinsdagmiddag op een echt product met echte gebruikers. Maar ze vereisen expliciet vragen om afhandeling van gelijktijdigheid, idempotentie en bescherming tegen race conditions, wat geen van alle in een typische prompt voorkomt, en wat een solo-demo nooit aan het licht zou brengen.
+AI-codeertools optimaliseren precies voor dit soort succes op één pad. Vraag om een afrekenstroom, en u krijgt er een die werkt wanneer één persoon er in volgorde doorheen klikt, één keer. Wat u vrijwel nooit standaard krijgt, is afhandeling voor wat er gebeurt wanneer twee mensen tegelijkertijd hetzelfde proberen te doen, wanneer een netwerkverzoek halverwege een time-out krijgt, of wanneer iemand een formulier twee keer indient door dubbel te klikken. Dit zijn geen exotische edge cases - het is een dinsdagmiddag op een echt product met echte gebruikers. Maar ze vereisen expliciet vragen om afhandeling van gelijktijdigheid, idempotentie en bescherming tegen race conditions, wat geen van alle in een typische prompt voorkomt, en wat een solo-demo nooit aan het licht zou brengen.
 
 ## De kloof tussen "het werkte toen ik het probeerde" en "het is klaar"
 
-Dit is eigenlijk een kloof tussen twee heel verschillende soorten vertrouwen. "Het werkte toen ik het probeerde" is vertrouwen over één pad dat u al kent. "Het is klaar voor echte gebruikers" vereist vertrouwen over paden die u niet hebt geprobeerd, uitgevoerd door mensen die de eigenaardigheden van uw app niet kennen, vaak tegelijkertijd met andere mensen die de app ook gebruiken. Die kloof dichten betekent gelijktijdig gebruik testen, faalcondities testen, testen wat er gebeurt als er iets misgaat midden in een transactie — niet omdat u pessimistisch bent, maar omdat uw daadwerkelijke gebruikers, anders dan uzelf in een demo, geen reden hebben om voorzichtig te zijn.
+Dit is eigenlijk een kloof tussen twee heel verschillende soorten vertrouwen. "Het werkte toen ik het probeerde" is vertrouwen over één pad dat u al kent. "Het is klaar voor echte gebruikers" vereist vertrouwen over paden die u niet hebt geprobeerd, uitgevoerd door mensen die de eigenaardigheden van uw app niet kennen, vaak tegelijkertijd met andere mensen die de app ook gebruiken. Die kloof dichten betekent gelijktijdig gebruik testen, faalcondities testen, testen wat er gebeurt als er iets misgaat midden in een transactie - niet omdat u pessimistisch bent, maar omdat uw daadwerkelijke gebruikers, anders dan uzelf in een demo, geen reden hebben om voorzichtig te zijn.
 
 LaunchStudio brengt Manifera's team van 120+ ervaren technici naar precies deze kloof, en voert de gelijktijdigheids-, belastings- en faalpadtests uit die een solo-demo structureel niet kan dekken, met technici gevestigd in Ho Chi Minhstad die gespecialiseerd zijn in het stresstesten van door AI gegenereerde backends voordat echte gebruikers de scheuren vinden. Als uw app alleen ooit door uzelf is getest, [praat dan met een technicus die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat een echte pre-launchtest daadwerkelijk dekt. Manifera's eigen proces voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt dit soort testen als een verplichte fase, niet als een optionele extra.
 
@@ -39,7 +39,7 @@ LaunchStudio brengt Manifera's team van 120+ ervaren technici naar precies deze 
 
 Gelijktijdigheid (concurrency) is het meest in het oog springende voorbeeld van een blinde vlek bij lokale demonstraties, maar het is slechts één van de vier categorieën van condities die een solo-demo van nature niet kan testen. Wie zijn applicatie uitsluitend test als één enkele gebruiker op één enkel apparaat, mist structureel de volgende dynamieken:
 
-**1. Gelijktijdige gegevensmanipulatie (Race Conditions).** Wanneer twee gebruikers tegelijkertijd exact dezelfde actie uitvoeren — zoals het reserveren van het laatste beschikbare tijdslot, het inwisselen van een eenmalige kortingscode of het bijwerken van dezelfde inventaris — faalt een eenvoudige `SELECT` gevolgd door een `UPDATE`. Zonder database-transacties en vergrendelingsmechanismen (zoals database locks of unieke constraints) kunnen beide handelingen slagen, met dubbele boekingen of inconsistente saldi tot gevolg.
+**1. Gelijktijdige gegevensmanipulatie (Race Conditions).** Wanneer twee gebruikers tegelijkertijd exact dezelfde actie uitvoeren - zoals het reserveren van het laatste beschikbare tijdslot, het inwisselen van een eenmalige kortingscode of het bijwerken van dezelfde inventaris - faalt een eenvoudige `SELECT` gevolgd door een `UPDATE`. Zonder database-transacties en vergrendelingsmechanismen (zoals database locks of unieke constraints) kunnen beide handelingen slagen, met dubbele boekingen of inconsistente saldi tot gevolg.
 
 **2. Sessie-inconsistenties over meerdere apparaten.** Een solo-oprichter test doorgaans in één browser. In de echte wereld logt een klant in op zowel desktop als mobiel, opent meerdere tabbladen tegelijk of blijft dagenlang ingelogd op een verouderde sessie. Als tokens niet correct worden gesynchroniseerd of herroepen bij wachtwoordwijzigingen, leidt dit tot onverklaarbare uitlogfouten of ongeautoriseerde toegang via oude sessies.
 
@@ -54,18 +54,18 @@ Een demo bewijst uitsluitend dat de functionaliteit werkt onder de meest ideale 
 
 ### Een AI-native oprichter in actie: het ticket dat twee mensen tegelijk kochten
 
-Bram Sanders, een oprichter uit Almere, bouwde "TicketSnel," een platform voor evenemententickets, met v0 en een aangepaste backend erbovenop. Hij testte het uitgebreid — solo, methodisch, en doorliep tientallen keren elke stroom van het bladeren door evenementen tot het voltooien van een aankoop. Elke test slaagde probleemloos. Tegen de tijd dat hij klaar was om te lanceren, had hij TicketSnel gedemonstreerd aan vrienden, adviseurs en vroege supporters, en het had nog nooit gefaald.
+Bram Sanders, een oprichter uit Almere, bouwde "TicketSnel," een platform voor evenemententickets, met v0 en een aangepaste backend erbovenop. Hij testte het uitgebreid - solo, methodisch, en doorliep tientallen keren elke stroom van het bladeren door evenementen tot het voltooien van een aankoop. Elke test slaagde probleemloos. Tegen de tijd dat hij klaar was om te lanceren, had hij TicketSnel gedemonstreerd aan vrienden, adviseurs en vroege supporters, en het had nog nooit gefaald.
 
-Het faalde de eerste keer dat het ertoe deed: het laatste ticket voor een populair evenement, gekocht door twee verschillende mensen binnen dezelfde seconde. Beide afrekenstromen werden succesvol voltooid op de frontend. Beide klanten ontvingen een bevestiging. TicketSnel had hetzelfde ticket twee keer verkocht, omdat niets in de backend op het moment van aankoop controleerde of het ticket al was geclaimd door een gelijktijdig verzoek. Een demo uitgevoerd door één persoon, één aankoop tegelijk, had dit nooit aan het licht kunnen brengen — de bug bestaat alleen wanneer twee dingen tegelijk gebeuren.
+Het faalde de eerste keer dat het ertoe deed: het laatste ticket voor een populair evenement, gekocht door twee verschillende mensen binnen dezelfde seconde. Beide afrekenstromen werden succesvol voltooid op de frontend. Beide klanten ontvingen een bevestiging. TicketSnel had hetzelfde ticket twee keer verkocht, omdat niets in de backend op het moment van aankoop controleerde of het ticket al was geclaimd door een gelijktijdig verzoek. Een demo uitgevoerd door één persoon, één aankoop tegelijk, had dit nooit aan het licht kunnen brengen - de bug bestaat alleen wanneer twee dingen tegelijk gebeuren.
 
 Bram bracht TicketSnel naar LaunchStudio na het dubbele-verkoopincident, begrijpelijk van slag over wat er nog meer verborgen zou kunnen zijn. Onze technici implementeerden correcte transactievergrendeling rond de ticketaankoopstroom, zodat gelijktijdige verzoeken voor hetzelfde ticket sequentieel worden afgehandeld in plaats van dat beide slagen, en voegden belastingtests toe die gelijktijdige aankopen simuleren, specifiek om dit soort bug op te vangen voordat deze een live evenement opnieuw bereikt.
 
 **Resultaat:** TicketSnel handelt gelijktijdige aankooppogingen nu correct af, geverifieerd onder gesimuleerde gelijktijdige belasting die overeenkomt met echte verkeerspatronen op de dag van een evenement.
 
 > *"Ik heb die afrekenstroom waarschijnlijk vijftig keer gedemonstreerd. Het kwam nooit bij me op dat de bug alleen verschijnt wanneer twee mensen binnen dezelfde seconde op 'kopen' klikken."*
-> — **Bram Sanders, oprichter, TicketSnel (Almere)**
+> - **Bram Sanders, oprichter, TicketSnel (Almere)**
 
-**Kosten en tijdlijn:** € 1.300 (gelijktijdigheidsfix en implementatie van belastingtests) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (gelijktijdigheidsfix en implementatie van belastingtests) - voltooid in 6 werkdagen.
 
 ---
 
@@ -77,7 +77,7 @@ Een demo uitgevoerd door één persoon test één bekend pad, terwijl echt produ
 
 ### Wat voor bugs verschijnen alleen bij gelijktijdig gebruik?
 
-Race conditions — zoals twee mensen die succesvol hetzelfde laatste ticket kopen, of hetzelfde voorraaditem — waarbij twee acties bijna op hetzelfde moment gebeuren en het systeem niet controleert op het conflict.
+Race conditions - zoals twee mensen die succesvol hetzelfde laatste ticket kopen, of hetzelfde voorraaditem - waarbij twee acties bijna op hetzelfde moment gebeuren en het systeem niet controleert op het conflict.
 
 ### Handelen AI-codeertools gelijktijdigheid standaard af?
 
@@ -89,7 +89,7 @@ De technici van Manifera, waaronder het team in Ho Chi Minhstad, voeren belastin
 
 ### Wat moet ik zelf testen voordat ik aanneem dat mijn app klaar is?
 
-Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelklik op verzendknoppen en onderbreek een stroom halverwege — deze eenvoudige tests vangen een verrassend aantal productiebrekende bugs.
+Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelklik op verzendknoppen en onderbreek een stroom halverwege - deze eenvoudige tests vangen een verrassend aantal productiebrekende bugs.
 
 <script type="application/ld+json">
 {
@@ -109,7 +109,7 @@ Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelk
       "name": "Wat voor bugs verschijnen alleen bij gelijktijdig gebruik?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Race conditions — zoals twee mensen die succesvol hetzelfde laatste ticket kopen, of hetzelfde voorraaditem — waarbij twee acties bijna op hetzelfde moment gebeuren en het systeem niet controleert op het conflict."
+        "text": "Race conditions - zoals twee mensen die succesvol hetzelfde laatste ticket kopen, of hetzelfde voorraaditem - waarbij twee acties bijna op hetzelfde moment gebeuren en het systeem niet controleert op het conflict."
       }
     },
     {
@@ -133,7 +133,7 @@ Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelk
       "name": "Wat moet ik zelf testen voordat ik aanneem dat mijn app klaar is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelklik op verzendknoppen en onderbreek een stroom halverwege — deze eenvoudige tests vangen een verrassend aantal productiebrekende bugs."
+        "text": "Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelklik op verzendknoppen en onderbreek een stroom halverwege - deze eenvoudige tests vangen een verrassend aantal productiebrekende bugs."
       }
     }
   ]

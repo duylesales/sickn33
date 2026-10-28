@@ -103,7 +103,7 @@ Two practical notes. Under the EU AI Act, AI systems used in recruitment are tre
 
 The format intimidates people unnecessarily, because what is being assessed is narrower than it appears.
 
-Assessors score against a defined competency list — typically analytical thinking, communication, collaboration, drive and judgement — using behaviour they observe. They are not ranking candidates against each other in most cases, which means being helpful to other participants costs you nothing.
+Assessors score against a defined competency list - typically analytical thinking, communication, collaboration, drive and judgement - using behaviour they observe. They are not ranking candidates against each other in most cases, which means being helpful to other participants costs you nothing.
 
 **Group exercises.** The most common mistake is performing leadership by talking most. Assessors reward contribution: making a useful point, building on someone else's, bringing in a quiet participant, and keeping the group to the task. Dominating is scored down.
 
@@ -181,7 +181,7 @@ And consider smaller employers seriously. A manufacturer, utility or public body
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Browsing is free and requires no account, vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, and no employer can pay for a higher position.
 
-For someone starting out, the board is most useful for the direct-role market that runs alongside graduate schemes, and for seeing which employers near you actually hire for data work — including the ones whose names mean nothing to you yet, which is precisely why the platform exists.
+For someone starting out, the board is most useful for the direct-role market that runs alongside graduate schemes, and for seeing which employers near you actually hire for data work - including the ones whose names mean nothing to you yet, which is precisely why the platform exists.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -189,7 +189,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 Graduate scheme terms differ from ordinary employment in ways worth checking before accepting.
 
-Pay is usually standardised across the cohort, which removes negotiation and also removes the possibility of being underpaid relative to peers. It is frequently below what an equivalent direct junior role pays, on the argument that training has value — an argument that holds when the training is real and does not when it is not.
+Pay is usually standardised across the cohort, which removes negotiation and also removes the possibility of being underpaid relative to peers. It is frequently below what an equivalent direct junior role pays, on the argument that training has value - an argument that holds when the training is real and does not when it is not.
 
 Contracts are sometimes fixed-term for the duration of the programme, converting to permanent at the end. Check what happens if the conversion does not occur, and whether the fixed term affects anything that matters to you, such as mortgage eligibility in some countries.
 

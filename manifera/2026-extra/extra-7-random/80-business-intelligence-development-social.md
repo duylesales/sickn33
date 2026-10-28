@@ -1,4 +1,4 @@
-Forty dashboards built. Three still open a year later. That's not an unusual BI outcome — it's the typical one. 📉📊
+Forty dashboards built. Three still open a year later. That's not an unusual BI outcome - it's the typical one. 📉📊
 
 **The Pain Points:**
 ❌ **Built for Visibility, Not Decisions:** Dashboards answering no specific question anyone has to act on.

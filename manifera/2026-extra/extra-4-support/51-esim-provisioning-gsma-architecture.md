@@ -24,15 +24,15 @@ A CTO at a mobile virtual network operator or IoT connectivity provider building
 
 ## What SGP.22 Actually Standardizes
 
-GSMA's SGP.22 specification defines the technical architecture and security protocols governing how an eSIM profile — the digital equivalent of a physical SIM card's identity and network credentials — is securely downloaded and provisioned onto a device's embedded universal integrated circuit card (eUICC). The standard defines the roles and interactions between the entity managing subscription data (the SM-DP+, Subscription Manager Data Preparation), the entity coordinating profile discovery for the device (the SM-DS, Subscription Manager Discovery Service), and the device's own eSIM management interface, establishing a consistent, secure provisioning flow that works across compliant devices regardless of manufacturer.
+GSMA's SGP.22 specification defines the technical architecture and security protocols governing how an eSIM profile - the digital equivalent of a physical SIM card's identity and network credentials - is securely downloaded and provisioned onto a device's embedded universal integrated circuit card (eUICC). The standard defines the roles and interactions between the entity managing subscription data (the SM-DP+, Subscription Manager Data Preparation), the entity coordinating profile discovery for the device (the SM-DS, Subscription Manager Discovery Service), and the device's own eSIM management interface, establishing a consistent, secure provisioning flow that works across compliant devices regardless of manufacturer.
 
 ## Why Deviating From This Standard Creates a Real Device Compatibility Problem
 
-An eSIM provisioning platform built around a simplified or non-compliant implementation of remote SIM provisioning risks a direct, practical consequence: modern consumer devices with eSIM capability, across major device manufacturers, expect to interact with an SGP.22-compliant provisioning backend specifically, and a platform that deviates from the standard's defined security and communication protocols may simply fail to provision correctly on a meaningful share of real devices, or require ongoing, fragile device-specific workarounds to achieve compatibility that a standards-compliant implementation wouldn't need. For an MVNO or connectivity provider whose actual business depends on being able to provision service onto whatever specific device a real customer brings, this isn't a minor technical nuance — it's a direct constraint on the provider's actual addressable customer base.
+An eSIM provisioning platform built around a simplified or non-compliant implementation of remote SIM provisioning risks a direct, practical consequence: modern consumer devices with eSIM capability, across major device manufacturers, expect to interact with an SGP.22-compliant provisioning backend specifically, and a platform that deviates from the standard's defined security and communication protocols may simply fail to provision correctly on a meaningful share of real devices, or require ongoing, fragile device-specific workarounds to achieve compatibility that a standards-compliant implementation wouldn't need. For an MVNO or connectivity provider whose actual business depends on being able to provision service onto whatever specific device a real customer brings, this isn't a minor technical nuance - it's a direct constraint on the provider's actual addressable customer base.
 
 ## Why This Matters Even More for IoT-Specific Deployments
 
-For IoT connectivity providers specifically, GSMA maintains a related but distinct specification, SGP.32, addressing the specific remote provisioning needs of IoT devices, which often have different constraints than consumer smartphones — devices that may need remote provisioning without direct user interaction, or that need to support profile switching across different network operators as a device moves between coverage areas or business relationships change. An IoT connectivity platform built without this IoT-specific provisioning model in mind, assuming the consumer-device-oriented provisioning flow translates directly, risks building a platform poorly suited to the actual operational requirements of many real IoT deployment scenarios, where devices frequently can't rely on the same user-interactive provisioning flow a consumer smartphone naturally supports.
+For IoT connectivity providers specifically, GSMA maintains a related but distinct specification, SGP.32, addressing the specific remote provisioning needs of IoT devices, which often have different constraints than consumer smartphones - devices that may need remote provisioning without direct user interaction, or that need to support profile switching across different network operators as a device moves between coverage areas or business relationships change. An IoT connectivity platform built without this IoT-specific provisioning model in mind, assuming the consumer-device-oriented provisioning flow translates directly, risks building a platform poorly suited to the actual operational requirements of many real IoT deployment scenarios, where devices frequently can't rely on the same user-interactive provisioning flow a consumer smartphone naturally supports.
 
 ## What Building Standards-Compliant Provisioning Actually Requires
 
@@ -64,7 +64,7 @@ Mobilnost Nova, a Maribor-based MVNO, had launched its eSIM provisioning platfor
 Manifera's Amsterdam team rebuilt the platform's SM-DP+ implementation to genuine GSMA SGP.22 compliance, guided the platform through formal GSMA compliance certification, and rebuilt profile lifecycle management to handle the full range of standard-defined lifecycle events robustly.
 
 > *"We'd tested against the devices we had in the office and things looked fine. It turned out real customers had a much wider range of devices than our test set, and 'mostly compliant' wasn't actually good enough once we saw the real failure pattern across our actual customer base."*
-> — **CTO, Mobilnost Nova**
+> - **CTO, Mobilnost Nova**
 
 Mobilnost Nova's provisioning failure rate dropped substantially following certification and the platform rebuild, and the company now treats formal GSMA compliance certification as a non-negotiable requirement for any provisioning platform change, rather than relying on internal testing against a limited device set.
 
@@ -79,7 +79,7 @@ Mobilnost Nova's provisioning failure rate dropped substantially following certi
 
 ## Scoping Your Own eSIM Provisioning Platform's Architecture
 
-Before building or launching an eSIM provisioning platform, build genuine GSMA SGP.22 (and where relevant, SGP.32) compliance into the core architecture and pursue formal certification — a simplified implementation that works in limited internal testing risks real device compatibility failures once it meets the actual diversity of real customer devices. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a certified, standards-compliant eSIM provisioning platform.
+Before building or launching an eSIM provisioning platform, build genuine GSMA SGP.22 (and where relevant, SGP.32) compliance into the core architecture and pursue formal certification - a simplified implementation that works in limited internal testing risks real device compatibility failures once it meets the actual diversity of real customer devices. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a certified, standards-compliant eSIM provisioning platform.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ Different devices can expose edge cases in their specific eSIM implementation, a
 
 ### (Scenario: IoT connectivity provider evaluating provisioning needs) Does the standard consumer eSIM provisioning model work well for IoT deployments?
 
-Not always directly — GSMA's SGP.32 addresses IoT-specific provisioning needs like non-interactive provisioning, and a platform built assuming the consumer flow translates directly may be poorly suited to real IoT operational requirements.
+Not always directly - GSMA's SGP.32 addresses IoT-specific provisioning needs like non-interactive provisioning, and a platform built assuming the consumer flow translates directly may be poorly suited to real IoT operational requirements.
 
 ### (Scenario: MVNO evaluating platform readiness) Why does formal GSMA compliance certification matter beyond a platform's own internal testing?
 
@@ -101,7 +101,7 @@ Certification validates genuine interoperability against the standard's full req
 
 ### (Scenario: CTO evaluating a development team's telecom experience) What should I ask a development team about their eSIM provisioning platform experience?
 
-Ask specifically whether their SM-DP+ implementation has undergone formal GSMA compliance certification and how they handle full profile lifecycle management, not just initial provisioning — genuine experience produces a specific, technical answer.
+Ask specifically whether their SM-DP+ implementation has undergone formal GSMA compliance certification and how they handle full profile lifecycle management, not just initial provisioning - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {
@@ -110,7 +110,7 @@ Ask specifically whether their SM-DP+ implementation has undergone formal GSMA c
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: CTO scoping an eSIM provisioning platform) What is GSMA SGP.22, and why does it matter for a provisioning platform's architecture?", "acceptedAnswer": { "@type": "Answer", "text": "SGP.22 governs secure eSIM profile provisioning, and compliance confirms genuine interoperability with the real device ecosystem." } },
     { "@type": "Question", "name": "(Scenario: engineering lead deciding on implementation rigor) Why is internal testing against a limited device set insufficient for eSIM provisioning?", "acceptedAnswer": { "@type": "Answer", "text": "Different devices can expose edge cases limited internal testing misses, surfacing only against real customer device diversity." } },
-    { "@type": "Question", "name": "(Scenario: IoT connectivity provider evaluating provisioning needs) Does the standard consumer eSIM provisioning model work well for IoT deployments?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — SGP.32 addresses IoT-specific needs like non-interactive provisioning that the consumer flow doesn't directly cover." } },
+    { "@type": "Question", "name": "(Scenario: IoT connectivity provider evaluating provisioning needs) Does the standard consumer eSIM provisioning model work well for IoT deployments?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - SGP.32 addresses IoT-specific needs like non-interactive provisioning that the consumer flow doesn't directly cover." } },
     { "@type": "Question", "name": "(Scenario: MVNO evaluating platform readiness) Why does formal GSMA compliance certification matter beyond a platform's own internal testing?", "acceptedAnswer": { "@type": "Answer", "text": "Certification validates interoperability against the full standard and real device behavior beyond what internal testing can replicate." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating a development team's telecom experience) What should I ask a development team about their eSIM provisioning platform experience?", "acceptedAnswer": { "@type": "Answer", "text": "Ask whether their SM-DP+ implementation has undergone GSMA certification and how they handle full profile lifecycle management." } }
   ]

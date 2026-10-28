@@ -25,21 +25,21 @@ This is the most critical and most common vulnerability in AI-built applications
 
     - Use Ctrl+Shift+F (search across all files) to search for these patterns:
 
-            - `sk_live` or `sk_test` — Stripe secret keys
+            - `sk_live` or `sk_test` - Stripe secret keys
 
-            - `supabase` followed by long strings — Supabase service role keys
+            - `supabase` followed by long strings - Supabase service role keys
 
-            - `password`, `secret`, `token` — Any hardcoded credentials
+            - `password`, `secret`, `token` - Any hardcoded credentials
 
-            - Your actual API key values — search for the first 10 characters of each key you use
+            - Your actual API key values - search for the first 10 characters of each key you use
 
 ### What to Fix
 
 If you find any credentials in client-side code:
 
-- **Immediately rotate the exposed keys** — generate new keys in Stripe, Supabase, or whatever service was exposed
+- **Immediately rotate the exposed keys** - generate new keys in Stripe, Supabase, or whatever service was exposed
 
-- **Move all secrets to server-side environment variables** — these should only be accessible in your backend code or edge functions
+- **Move all secrets to server-side environment variables** - these should only be accessible in your backend code or edge functions
 
 - **For Supabase**: The anon key is designed to be public but must be paired with RLS policies. The service_role key must never appear in frontend code
 
@@ -53,9 +53,9 @@ Row Level Security (RLS) is the gatekeeper between your users' data and potentia
 
 1. Open your Supabase dashboard and go to the **Table Editor**
 
-2. For each table, check the **RLS** toggle — it should be enabled (lock icon active)
+2. For each table, check the **RLS** toggle - it should be enabled (lock icon active)
 
-3. Click on the lock icon to view the policies — there should be policies that reference `auth.uid()`
+3. Click on the lock icon to view the policies - there should be policies that reference `auth.uid()`
 
 4. **Cross-user test**: Create two separate user accounts in your application. Log in as User A, note the IDs of User A's data. Log in as User B, and try to access User A's data by modifying URLs or API calls
 
@@ -77,9 +77,9 @@ Authentication is your front door. If it has gaps, everything behind it is vulne
 
 1. **Direct URL access**: Copy the URL of a protected page (e.g., your dashboard). Open an incognito window and paste the URL. You should be redirected to the login page, not see the dashboard content.
 
-2. **Logout completeness**: Log in, then log out. Press the back button — you should not be able to access the previous authenticated page.
+2. **Logout completeness**: Log in, then log out. Press the back button - you should not be able to access the previous authenticated page.
 
-3. **Password reset**: Request a password reset. Verify the email is received. Use the reset link. Try using the same reset link again — it should be invalidated after first use.
+3. **Password reset**: Request a password reset. Verify the email is received. Use the reset link. Try using the same reset link again - it should be invalidated after first use.
 
 4. **Session handling**: Open your app in two browsers. Log in on both. Change your password on one. The other session should be invalidated.
 
@@ -101,15 +101,15 @@ Every form and input field in your application is a potential entry point for ma
 
 For every form in your application, try submitting:
 
-1. **Empty required fields** — should show validation errors
+1. **Empty required fields** - should show validation errors
 
-2. **Extremely long text** (10,000+ characters) — should be limited or handled gracefully
+2. **Extremely long text** (10,000+ characters) - should be limited or handled gracefully
 
-3. **HTML tags**: `<script>alert('xss')</script>` — should be stripped or escaped
+3. **HTML tags**: `<script>alert('xss')</script>` - should be stripped or escaped
 
-4. **SQL fragments**: `'; DROP TABLE users; --` — should be treated as text, not executed
+4. **SQL fragments**: `'; DROP TABLE users; --` - should be treated as text, not executed
 
-5. **Special characters**: `<>"'/\` — should be handled without breaking the UI
+5. **Special characters**: `<>"'/\` - should be handled without breaking the UI
 
 ### What to Fix
 
@@ -164,7 +164,7 @@ Lucas partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 
 **Result:** Lucas passed his enterprise client's vendor security assessment and launched on schedule.
 
-**Cost & Timeline:** €2,400 (Audit & Hardening Package) — production-ready and deployed in 8 business days.
+**Cost & Timeline:** €2,400 (Audit & Hardening Package) - production-ready and deployed in 8 business days.
 
 ---
 
@@ -191,7 +191,7 @@ Before initial launch, after major feature additions, when adding new third-part
 
 ### What is Row Level Security and why is it critical?
 
-RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row — including other users' personal data. It is the most critical security feature for any multi-user application.
+RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row - including other users' personal data. It is the most critical security feature for any multi-user application.
 
 <script type="application/ld+json">
 {
@@ -235,7 +235,7 @@ RLS restricts which database rows a user can access based on their identity. Wit
       "name": "What is Row Level Security and why is it critical?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row — including other users' personal data. It is the most critical security feature for any multi-user application."
+        "text": "RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row - including other users' personal data. It is the most critical security feature for any multi-user application."
       }
     }
   ]

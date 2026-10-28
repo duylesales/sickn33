@@ -28,7 +28,7 @@ Engagements on existing code fail differently from ordinary projects. Nobody arg
 
 You produce one artefact in this engagement, and it is the brief. Everything else is produced by someone else, and the quality of what they produce is bounded by the clarity of what you asked for.
 
-A good brief for work on an existing product is short — half a page — and it describes outcomes rather than activities. The difference matters because outcomes are testable and activities are not. "Improve security" cannot be verified. "No authenticated user can read another user's records, demonstrated by attempting it" can be verified by you, in four minutes, without understanding any of the code.
+A good brief for work on an existing product is short - half a page - and it describes outcomes rather than activities. The difference matters because outcomes are testable and activities are not. "Improve security" cannot be verified. "No authenticated user can read another user's records, demonstrated by attempting it" can be verified by you, in four minutes, without understanding any of the code.
 
 ## What Belongs in the Brief
 
@@ -48,7 +48,7 @@ A good brief for work on an existing product is short — half a page — and it
 
 Time spent waiting for access is time you pay for, and it sets an unhurried tone that is difficult to recover from.
 
-Before the start: repository and hosting accounts created in your name with an invitation sent, database and storage access granted individually rather than shared, two working test accounts in your product populated with realistic data, and any third-party service — payment provider, email, model API — invited rather than password-shared.
+Before the start: repository and hosting accounts created in your name with an invitation sent, database and storage access granted individually rather than shared, two working test accounts in your product populated with realistic data, and any third-party service - payment provider, email, model API - invited rather than password-shared.
 
 Also send one paragraph of context that no code reveals: what the product is for, who uses it, what would hurt most if it leaked, and which flows involve money. An engineer with that paragraph weighs findings against your business rather than in the abstract.
 
@@ -58,7 +58,7 @@ Also send one paragraph of context that no code reveals: what the product is for
 
 **A confirmed or revised plan.** Discoveries are normal in inherited code. What matters is that a change in scope arrives as a conversation at day two rather than as an invoice at day twenty.
 
-**Something visible early.** Not necessarily large — one fix deployed to staging in the first days establishes that the pipeline between their work and your product functions.
+**Something visible early.** Not necessarily large - one fix deployed to staging in the first days establishes that the pipeline between their work and your product functions.
 
 If the first week produces no written assessment and nothing visible, ask why. The answer now is cheaper than the answer in week three.
 
@@ -80,7 +80,7 @@ Tie payment to verifiable outcomes rather than to elapsed time or percentages.
 
 A workable structure for a two-week engagement: a first milestone at the assessment and plan, a second when the access-control and credential outcomes are demonstrably met, a third at deployment with backups and monitoring in place, and a final one at handover with documentation.
 
-Each milestone has a test you can run. That is the whole design principle — a milestone you cannot verify is a date, not a milestone.
+Each milestone has a test you can run. That is the whole design principle - a milestone you cannot verify is a date, not a milestone.
 
 ## Verifying Outcomes Yourself
 
@@ -97,7 +97,7 @@ Six checks, an hour, and they verify the six things that matter most. Any that s
 
 ## Communication That Prevents Surprises
 
-A short written update twice a week — what moved, what is next, what is blocked — is enough for an engagement of this size, and it is worth requesting explicitly because many engineers default to silence while working.
+A short written update twice a week - what moved, what is next, what is blocked - is enough for an engagement of this size, and it is worth requesting explicitly because many engineers default to silence while working.
 
 Two rules make it useful. Blockers are raised the day they appear, not at the next update. And anything that changes scope or timeline arrives in writing, so that both of you are working from the same understanding rather than from two recollections of a call.
 
@@ -105,7 +105,7 @@ Two rules make it useful. Blockers are raised the day they appear, not at the ne
 
 Three signals worth acting on early.
 
-**The scope is drifting.** Work appears that nobody asked for — a refactor, a redesign, a new tool. Ask how it serves an outcome in the brief.
+**The scope is drifting.** Work appears that nobody asked for - a refactor, a redesign, a new tool. Ask how it serves an outcome in the brief.
 
 **The explanations get vaguer.** Clarity usually declines before delivery does.
 
@@ -117,15 +117,15 @@ The response is the same in all three cases: a short call, the brief on screen, 
 
 The engagement ends with objects, not with a message. Repository and accounts in your name with their access removable by you. A written record of what changed and why. A runbook covering deploy, rollback and restore. A secrets inventory. An honest list of what was found and not fixed. Confirmation that the project remains editable in Lovable, verified by you making one change.
 
-Then a short support window — a fortnight is normal — agreed in advance rather than negotiated afterwards.
+Then a short support window - a fortnight is normal - agreed in advance rather than negotiated afterwards.
 
 ## An Engagement Designed This Way
 
-LaunchStudio works to exactly this shape because it removes the ambiguity that makes these projects fail: a written assessment before work starts, a fixed scope expressed as outcomes, the frontend kept, milestones tied to demonstrable results, evidence provided for security fixes, and a handover pack with ownership in your name throughout — plus two weeks of support included rather than sold.
+LaunchStudio works to exactly this shape because it removes the ambiguity that makes these projects fail: a written assessment before work starts, a fixed scope expressed as outcomes, the frontend kept, milestones tied to demonstrable results, evidence provided for security fixes, and a handover pack with ownership in your name throughout - plus two weeks of support included rather than sold.
 
 The engineers are Manifera's, with eleven years of delivery behind them for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City, where this discipline exists because enterprise clients require it. Founders get the same process at a smaller scope.
 
-[Describe your project](https://launchstudio.eu/en/#contact) and you will receive a scoped, fixed-price offer within one business day — useful as a template for briefing anyone else. See what the [Launch Ready package](https://launchstudio.eu/en/#packages) contains.
+[Describe your project](https://launchstudio.eu/en/#contact) and you will receive a scoped, fixed-price offer within one business day - useful as a template for briefing anyone else. See what the [Launch Ready package](https://launchstudio.eu/en/#packages) contains.
 
 ## When You Disagree With the Engineer
 
@@ -133,7 +133,7 @@ It will happen, usually about scope or about whether something needs rebuilding,
 
 **Separate the technical claim from the recommendation.** "This table has no access rules" is a fact you can verify. "Therefore we should restructure the data model" is a judgement that may or may not follow. Founders frequently accept both because the first is credible.
 
-**Ask what happens if you do not.** A good engineer can describe the consequence concretely — this specific data stays reachable, this specific thing breaks at this scale. An answer that stays general is a preference wearing technical clothing.
+**Ask what happens if you do not.** A good engineer can describe the consequence concretely - this specific data stays reachable, this specific thing breaks at this scale. An answer that stays general is a preference wearing technical clothing.
 
 **Ask for the smaller version.** Most recommendations have a cheaper form that addresses the actual risk. "What is the smallest change that closes this?" is the most useful question in the engagement, and it is rarely asked because founders fear seeming cheap.
 
@@ -153,14 +153,14 @@ She arranged access before the start, created two test accounts with realistic d
 
 The assessment arrived on day two and changed the scope: the prototype had no persistence for scheduled jobs beyond the browser, which neither of them had realised. The plan was revised and re-quoted before any work happened.
 
-She verified each milestone herself — including asking to watch a backup restore, which took 19 minutes — and made a small edit in Lovable before the final payment.
+She verified each milestone herself - including asking to watch a backup restore, which took 19 minutes - and made a small edit in Lovable before the final payment.
 
 **Result:** the pilot started on time with four firms, and Sanne added two features herself in the following month without involving anyone.
 
 > *"The last time, I described what I wanted in a call and hoped. This time I wrote nine lines, and every argument I might have had was settled before anyone started."*
-> — **Sanne Wouters, Founder, Groenplan (Breda)**
+> - **Sanne Wouters, Founder, Groenplan (Breda)**
 
-**Cost & Timeline:** €3,600 (persistence, access control, deployment with backups, monitoring, documented handover) — completed in 13 business days.
+**Cost & Timeline:** €3,600 (persistence, access control, deployment with backups, monitoring, documented handover) - completed in 13 business days.
 
 ## Frequently Asked Questions
 
@@ -174,7 +174,7 @@ Review behaviour, explanation and evidence: test the outcome yourself, ask for a
 
 ### How should payments be structured?
 
-Against verifiable milestones rather than elapsed time — assessment and plan, security outcomes demonstrated, deployment with backups and monitoring, handover with documentation. A milestone you cannot verify is just a date.
+Against verifiable milestones rather than elapsed time - assessment and plan, security outcomes demonstrated, deployment with backups and monitoring, handover with documentation. A milestone you cannot verify is just a date.
 
 ### What should happen in the first week?
 
@@ -202,7 +202,7 @@ Scope drifting into work nobody asked for, explanations becoming vaguer, and a d
       "name": "How do I review work when I cannot read code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Review behaviour, explanation and evidence — test the outcome, ask for a plain-language description, and for security work see the request that used to succeed now failing."
+        "text": "Review behaviour, explanation and evidence - test the outcome, ask for a plain-language description, and for security work see the request that used to succeed now failing."
       }
     },
     {

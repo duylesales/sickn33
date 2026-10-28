@@ -33,9 +33,9 @@ Doelpersona: SaaS Oprichter / VP of Product
 
 De software-industrie is momenteel verdeeld in twee kampen.
 
-Aan de ene kant staan de Gevestigde Spelers: bedrijven die het afgelopen decennium succesvolle, winstgevende CRUD-applicaties (Create, Read, Update, Delete) hebben opgebouwd. Om in 2026 relevant te blijven, bouwen zij **Software With AI** — zij nemen hun bestaande platform en plakken een generieke AI-chatbot in het dashboard.
+Aan de ene kant staan de Gevestigde Spelers: bedrijven die het afgelopen decennium succesvolle, winstgevende CRUD-applicaties (Create, Read, Update, Delete) hebben opgebouwd. Om in 2026 relevant te blijven, bouwen zij **Software With AI** - zij nemen hun bestaande platform en plakken een generieke AI-chatbot in het dashboard.
 
-Aan de andere kant staan de Uitdagers: startups die **AI-Native Software** bouwen — platformen die vanaf de grond zijn ontworpen rondom semantische data, autonome agents en intent-gedreven routering.
+Aan de andere kant staan de Uitdagers: startups die **AI-Native Software** bouwen - platformen die vanaf de grond zijn ontworpen rondom semantische data, autonome agents en intent-gedreven routering.
 
 Voor een SaaS-oprichter of VP of Product met een bestaande applicatie is de kernvraag: *Op welk moment is 'Software met AI' niet langer voldoende om uw klanten te behouden?*
 
@@ -97,9 +97,9 @@ Het Manifera-team voerde in 45 werkdagen een gerichte transitie uit:
 **Resultaat:** Het CRM transformeerde van een passieve database naar een actieve, autonome operationele assistent. Omdat LaunchStudio de bestaande API's hergebruikte, duurde de modernisering 45 dagen in plaats van twee jaar. De klantuitstroom daalde naar nul en het bedrijf won twee grote transportbedrijven terug van de concurrent.
 
 > *"We dachten dat we innoveerden door een AI-chatvenstertje toe te voegen. We lieten eigenlijk alleen maar zien hoe verouderd onze software was. LaunchStudio liet ons zien dat AI geen UI-feature is, maar een routeringsmotor. Door de AI rechtstreeks aan onze bestaande API's te koppelen, hebben ze ons platform nieuw leven ingeblazen."*
-> — **Antoine Laurent, VP of Product, LogiCRM (Parijs)**
+> - **Antoine Laurent, VP of Product, LogiCRM (Parijs)**
 
-**Kosten & Doorlooptijd:** €28.000 (Enterprise Modernisering & Agentic Overhaul Pakket) — productie-klaar en live binnen 45 werkdagen.
+**Kosten & Doorlooptijd:** €28.000 (Enterprise Modernisering & Agentic Overhaul Pakket) - productie-klaar en live binnen 45 werkdagen.
 
 ---
 

@@ -20,28 +20,28 @@ target_persona: "CTO"
 }
 </script>
 
-Three vendors quote software outsourcing rates within €50 of each other per day, and a CTO who stops comparing there has just made the easiest possible mistake — assuming a similar number means a similar engagement.
+Three vendors quote software outsourcing rates within €50 of each other per day, and a CTO who stops comparing there has just made the easiest possible mistake - assuming a similar number means a similar engagement.
 
-**The Pain:** A CTO at a horticulture-technology company in Barendrecht — a municipality anchoring the Netherlands' fresh-produce and greenhouse-auction economy — is comparing software outsourcing rates across three vendors that look nearly identical on the day-rate line, with no obvious way to tell what actually differs beneath that number.
+**The Pain:** A CTO at a horticulture-technology company in Barendrecht - a municipality anchoring the Netherlands' fresh-produce and greenhouse-auction economy - is comparing software outsourcing rates across three vendors that look nearly identical on the day-rate line, with no obvious way to tell what actually differs beneath that number.
 
-**The Agitation:** A CTO who selects on rate parity alone, assuming similar day rates mean similar value, discovers the real differences only after the engagement starts — differences in seniority mix, governance structure, and what's actually included in the quoted number. Discovering this gap mid-engagement typically costs a mid-market company a full quarter of underperforming delivery before the mismatch becomes undeniable.
+**The Agitation:** A CTO who selects on rate parity alone, assuming similar day rates mean similar value, discovers the real differences only after the engagement starts - differences in seniority mix, governance structure, and what's actually included in the quoted number. Discovering this gap mid-engagement typically costs a mid-market company a full quarter of underperforming delivery before the mismatch becomes undeniable.
 
 ## What the Day Rate Doesn't Disclose
 
 Software outsourcing rates that look similar on paper frequently represent very different engagements underneath, because the day rate alone doesn't disclose the variables that determine what that rate actually buys.
 
-The first hidden variable is seniority composition. A blended day rate can represent a genuinely senior-weighted team or a junior-heavy bench averaged up to look comparable — a CTO needs the named seniority breakdown, not just the blended number, to know what's actually being purchased.
+The first hidden variable is seniority composition. A blended day rate can represent a genuinely senior-weighted team or a junior-heavy bench averaged up to look comparable - a CTO needs the named seniority breakdown, not just the blended number, to know what's actually being purchased.
 
 The second is what's included versus billed separately. Some quoted rates include architectural governance and independent quality review; others quote execution only, with governance either absent or billed as a separate, uncosted line item that surfaces later. A CTO comparing rates needs to know whether governance is inside or outside the number.
 
-The third is what happens to the rate under scope change — whether it's genuinely fixed against defined deliverables or effectively a starting point for later renegotiation. Two identical day rates can produce very different total costs once this variable is accounted for.
+The third is what happens to the rate under scope change - whether it's genuinely fixed against defined deliverables or effectively a starting point for later renegotiation. Two identical day rates can produce very different total costs once this variable is accounted for.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads make governance and independent quality verification an explicit, included part of the quoted rate, not a separate uncosted line.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod's seniority composition is disclosed by name and role, not hidden behind a blended average.
 
-This is Dutch Management × Vietnamese Mastery — a rate that discloses what it actually buys. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a rate that discloses what it actually buys. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ GrünTech Systeme GmbH, a greenhouse-automation company based near Cologne, Germ
 Manifera replaced the engagement with a rate that included named seniority breakdown and governance as a built-in component, not an add-on. The CTO reported the effective total cost came out lower than the original "cheaper" vendor once the hidden governance billing was accounted for.
 
 > *"The rates looked the same on the spreadsheet. They were never the same engagement, and we only found out after we'd already signed."*
-> — **CTO, GrünTech Systeme GmbH, Germany**
+> - **CTO, GrünTech Systeme GmbH, Germany**
 
 ## Rate-Parity Comparison vs. Manifera's Disclosed Rate Structure
 
@@ -66,7 +66,7 @@ Manifera replaced the engagement with a rate that included named seniority break
 
 ## The Economics
 
-Two similar day rates can produce meaningfully different total costs once seniority composition, governance inclusion, and scope-change pricing are accounted for — a gap that typically surfaces only after a quarter of underperforming delivery reveals which vendor actually quoted the cheaper number and which one just looked like it did. Asking for a disclosed rate breakdown costs nothing beyond one additional question per vendor. [Talk to Manifera about a fully disclosed rate structure](https://www.manifera.com/contact-us/).
+Two similar day rates can produce meaningfully different total costs once seniority composition, governance inclusion, and scope-change pricing are accounted for - a gap that typically surfaces only after a quarter of underperforming delivery reveals which vendor actually quoted the cheaper number and which one just looked like it did. Asking for a disclosed rate breakdown costs nothing beyond one additional question per vendor. [Talk to Manifera about a fully disclosed rate structure](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

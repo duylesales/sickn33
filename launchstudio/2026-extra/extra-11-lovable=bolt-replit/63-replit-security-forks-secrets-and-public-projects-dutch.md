@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Datgene wat Replit zo toegankelijk en plezierig maakt om in te werken, is precies de reden waarom dit artikel noodzakelijk is. Projecten worden gedeeld met één linkje, met één klik geforkt door anderen, opgezet vanuit kant-en-klare templates en bewerkt door mede-oprichters of freelancers die in alle haast zijn uitgenodigd. Die openheid is een fantastische feature — het is waarom mensen er leren programmeren, prototypes demonstreren en hun eerste SaaS opstarten — maar het brengt een specifieke reeks risico's met zich mee voor vertrouwelijke bedrijfsgegevens.
+Datgene wat Replit zo toegankelijk en plezierig maakt om in te werken, is precies de reden waarom dit artikel noodzakelijk is. Projecten worden gedeeld met één linkje, met één klik geforkt door anderen, opgezet vanuit kant-en-klare templates en bewerkt door mede-oprichters of freelancers die in alle haast zijn uitgenodigd. Die openheid is een fantastische feature - het is waarom mensen er leren programmeren, prototypes demonstreren en hun eerste SaaS opstarten - maar het brengt een specifieke reeks risico's met zich mee voor vertrouwelijke bedrijfsgegevens.
 
 Geen van deze risico's is exotisch of ingewikkeld, maar ze blijven volkomen onzichtbaar totdat iemand er bewust naar zoekt. Hieronder lees je waar inloggegevens en API-sleutels in Replit-projecten daadwerkelijk lekken, en hoe je die gaten dicht zónder je vertrouwde werkwijze overboord te gooien.
 
@@ -30,7 +30,7 @@ De meeste traditionele ontwikkelplatformen beginnen standaard privé; je moet mo
 
 De praktische gevolgen daarvan: een project kan publiek zichtbaar zijn zónder dat je die beslissing ooit bewust hebt genomen; een link die je ooit in een chat deelde blijft voor altijd circuleren; een 'fork' maakt een exacte kopie die jij niet kunt inzien of terughalen; en gastontwikkelaars die je ooit voor één middag toevoegde blijven toegang houden totdat iemand eraan denkt hen te verwijderen.
 
-Niets hiervan is op zichzelf een softwarefout. Het wordt pas een acuut bedrijfsrisico zodra een project stopt een hobby-experiment te zijn en begint te draaien op API-sleutels die geld kosten of toegang bieden tot een database met klantgegevens — een overgang die geleidelijk plaatsvindt, zonder dat er één formeel moment is waarop iemand besluit: "Vanaf vandaag is dit een productiesysteem."
+Niets hiervan is op zichzelf een softwarefout. Het wordt pas een acuut bedrijfsrisico zodra een project stopt een hobby-experiment te zijn en begint te draaien op API-sleutels die geld kosten of toegang bieden tot een database met klantgegevens - een overgang die geleidelijk plaatsvindt, zonder dat er één formeel moment is waarop iemand besluit: "Vanaf vandaag is dit een productiesysteem."
 
 ## Wat een fork daadwerkelijk meeneemt
 
@@ -60,7 +60,7 @@ De rode draad door alle vijf: geheimhouding is geen eigenschap die je kunt herst
 
 ## Gastgebruikers: Toegang die het werk overleeft
 
-Toegang verlenen op Replit kost twee seconden — een groot voordeel — maar toegang intrekken gebeurt alleen handmatig, en daar gaat het structureel mis.
+Toegang verlenen op Replit kost twee seconden - een groot voordeel - maar toegang intrekken gebeurt alleen handmatig, en daar gaat het structureel mis.
 
 Open de ledenlijst van je project eens. Bij vrijwel elk project dat ouder is dan een paar maanden staan er accounts tussen van iemand die ooit even hielp, een vriend die naar een bug keek, een freelancer van een afgeronde opdracht, of accounts die de oprichter niet eens meer herkent. Ieder van hen kan het project op elk moment openen, de code inzien en alle opgeslagen secrets uitlezen.
 
@@ -80,7 +80,7 @@ Voer deze zes stappen uit; bij de meeste projecten levert dit direct minstens é
 
 **5. Open je live website, bekijk de paginabroncode en de Network-tab in de browser,** en zoek naar verdachte tokens. Dit brengt frontend-lekken aan het licht.
 
-**6. Maak een lijst van alle externe clouddiensten** die je app gebruikt (OpenAI, Resend, Supabase, Stripe) en controleer in hun dashboards of het dataverbruik overeenkomt met jouw werkelijke bezoekersaantallen — dit is hoe een gelekte sleutel zich verraadt vóórdat de creditcardafschrijving binnenkomt.
+**6. Maak een lijst van alle externe clouddiensten** die je app gebruikt (OpenAI, Resend, Supabase, Stripe) en controleer in hun dashboards of het dataverbruik overeenkomt met jouw werkelijke bezoekersaantallen - dit is hoe een gelekte sleutel zich verraadt vóórdat de creditcardafschrijving binnenkomt.
 
 ## Sleutelrotatie: Vervangen zonder je applicatie plat te leggen
 
@@ -112,7 +112,7 @@ De bovenstaande audit is essentieel voor je eigen gemoedsrust. Maar het wordt pa
 
 **Waar wordt onze data fysiek opgeslagen?** Welke cloudregio en welke hostingprovider? Dit is een directe AVG-vraag; een database die per ongeluk in de VS draait stuit direct op juridische bezwaren.
 
-**Welke externe subverwerkers worden ingeschakeld?** Elke externe dienst waar data naartoe gaat — je database, e-mailprovider, error tracker of AI-model — is volgens de AVG een subverwerker. Zakelijke klanten eisen een actueel overzicht in de verwerkersovereenkomst (DPA).
+**Welke externe subverwerkers worden ingeschakeld?** Elke externe dienst waar data naartoe gaat - je database, e-mailprovider, error tracker of AI-model - is volgens de AVG een subverwerker. Zakelijke klanten eisen een actueel overzicht in de verwerkersovereenkomst (DPA).
 
 **Wat is de procedure wanneer een medewerker of freelancer vertrekt?** Ze willen weten of toegangsrechten direct worden ingetrokken of geruisloos blijven bestaan.
 
@@ -128,7 +128,7 @@ In termen van ontwikkeltijd kost dit verrassend weinig: een middag voor de audit
 
 Wat het voorkomt, is de categorie rampen die pas aan het licht komt wanneer het te laat is: een OpenAI- of Google Maps-sleutel die door onbekenden wordt leeggetrokken totdat er een torenhoge factuur op de mat ploft, een database-wachtwoord dat rondslingert in een oude fork, of een zakelijke klant die afhaakt omdat je geen antwoord hebt op basisvragen over datatoegang.
 
-LaunchStudio lost dit structureel op als onderdeel van het klaarmaken voor productie: we inventariseren alle inloggegevens over bestanden, Git-historie en configuraties heen, brengen de blootstelling in kaart, trekken oude sleutels in, centraliseren secrets in veilige server-side omgevingsvariabelen, stellen harde bestedingslimieten in, schonen de toegangslijst op en leveren een helder offboarding-protocol op — terwijl de gebruikersinterface die je hebt gebouwd volledig intact blijft.
+LaunchStudio lost dit structureel op als onderdeel van het klaarmaken voor productie: we inventariseren alle inloggegevens over bestanden, Git-historie en configuraties heen, brengen de blootstelling in kaart, trekken oude sleutels in, centraliseren secrets in veilige server-side omgevingsvariabelen, stellen harde bestedingslimieten in, schonen de toegangslijst op en leveren een helder offboarding-protocol op - terwijl de gebruikersinterface die je hebt gebouwd volledig intact blijft.
 
 Hierachter staat Manifera: elf jaar ervaring met applicatiebeveiliging voor veeleisende opdrachtgevers zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Neem contact op met een engineer die AI-code begrijpt](https://launchstudio.eu/nl/#contact) of bekijk direct onze [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -138,7 +138,7 @@ Hierachter staat Manifera: elf jaar ervaring met applicatiebeveiliging voor veel
 
 Joris Veenstra bouwde via Replit Routeplan: een softwaretool voor routeoptimalisatie gebruikt door een koeriersbedrijf en twee cateraars rondom Leiden. In de beginfase, toen het project nog een experiment was, had hij het project openbaar gezet zodat een bevriende ontwikkelaar mee kon kijken naar een bug. Daarna was hij volkomen vergeten dat het project nog publiek stond.
 
-Vier maanden lang bleef de repository openbaar. Gedurende die tijd stonden er een betaalde Google Maps API-sleutel, een token voor een transactionele e-maildienst en een database-connectiestring rechtstreeks in platte tekst in de code — toegevoegd voordat hij wist hoe Replit Secrets werkte.
+Vier maanden lang bleef de repository openbaar. Gedurende die tijd stonden er een betaalde Google Maps API-sleutel, een token voor een transactionele e-maildienst en een database-connectiestring rechtstreeks in platte tekst in de code - toegevoegd voordat hij wist hoe Replit Secrets werkte.
 
 Het alarm ging pas af toen de maandelijkse factuur van de kaartendienst plotseling negen keer hoger uitviel dan normaal, met tienduizenden verzoeken afkomstig uit IP-reeksen verspreid over drie continenten.
 
@@ -147,9 +147,9 @@ Het herstelwerk vergde vier werkdagen: alle drie de credentials per direct inget
 **Resultaat:** de API-provider schold een deel van de frauduleuze kosten kwijt nadat Joris kon aantonen dat de sleutel direct was ingetrokken en de architectuur was beveiligd. De operationele kosten normaliseerden binnen een week, en demonstraties aan potentiële klanten verlopen voortaan via een opzettelijk lege, afgeschermde demo-omgeving.
 
 > *"Ik had het project één middagje openbaar gezet zodat een vriend mee kon kijken, en dacht er nooit meer aan. Vier maanden later betaalde ik voor kaartzoekopdrachten van vreemden op drie verschillende continenten."*
-> — **Joris Veenstra, Oprichter, Routeplan (Leiden)**
+> - **Joris Veenstra, Oprichter, Routeplan (Leiden)**
 
-**Kosten & Doorlooptijd:** € 1.750 (audit van sleutels en Git-historie, sleutelrotatie, server-side proxy met rate-limiting, opschoning toegangsrechten en bestedingslimieten) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.750 (audit van sleutels en Git-historie, sleutelrotatie, server-side proxy met rate-limiting, opschoning toegangsrechten en bestedingslimieten) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 

@@ -1,8 +1,8 @@
-🗄️ Gijs Veenstra, een boer in de Noordoostpolder met een softwareachtergrond, bouwde Perceelbeheer — een tool voor landperceelbeheer die bodemgegevens, gewasgeschiedenis en pachtovereenkomsten bijhoudt — met Bolt, waarbij hij de AI-tool het databaseschema liet genereren en het nooit structureel beoordeelde. De schemaaudit van LaunchStudio vond 3 van de 4 klassieke problemen: een foreign key zonder index, sequentiële perceel-ID's direct blootgesteld in de API, en helemaal geen migratiegeschiedenis.
+🗄️ Gijs Veenstra, een boer in de Noordoostpolder met een softwareachtergrond, bouwde Perceelbeheer - een tool voor landperceelbeheer die bodemgegevens, gewasgeschiedenis en pachtovereenkomsten bijhoudt - met Bolt, waarbij hij de AI-tool het databaseschema liet genereren en het nooit structureel beoordeelde. De schemaaudit van LaunchStudio vond 3 van de 4 klassieke problemen: een foreign key zonder index, sequentiële perceel-ID's direct blootgesteld in de API, en helemaal geen migratiegeschiedenis.
 
 "Ik liet de AI het gewoon uitzoeken en ging ervan uit dat die wist wat hij deed. Dat was niet zo, niet echt." 🧠
 
-❌ Een foreign key zonder index — prima bij 50 testrijen, pijnlijk traag na een paar duizend echte rijen
+❌ Een foreign key zonder index - prima bij 50 testrijen, pijnlijk traag na een paar duizend echte rijen
 ❌ Sequentiële ID's in de API betekenden dat een boer naburige perceel-ID's kon raden en pachten kon zien die niet van hem waren
 ❌ Elke schemawijziging werd ad hoc toegepast via de AI-chatinterface, zonder enige migratiegeschiedenis
 ❌ Niets hiervan was zichtbaar totdat echte datavolumes en echte gebruikers arriveerden

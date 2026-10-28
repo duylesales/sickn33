@@ -43,7 +43,7 @@ Students in technical MBO programmes rarely receive concrete advice about data a
 
 ## How This Connects to MBO Institutions' Existing Work
 
-**A complement to existing internship placement.** MBO institutions often already have relationships with regional employers for internships — encouraging those employers to also make data-related vacancies visible is a small addition to existing work.
+**A complement to existing internship placement.** MBO institutions often already have relationships with regional employers for internships - encouraging those employers to also make data-related vacancies visible is a small addition to existing work.
 
 **Concrete material for career orientation.** Instead of pointing students only to traditional technical occupations, a reference to accessible data analyst roles broadens the picture of available career paths.
 
@@ -61,7 +61,7 @@ The Dutch vocational system has institutions and instruments that make this kind
 
 **MBO Raad.** The **Netherlands Association of VET Colleges** represents MBO institutions and coordinates sector-wide initiatives, including on digitalisation in education.
 
-**Regional Investment Fund MBO (RIF).** Through this fund, the government co-finances public-private partnerships between MBO institutions and regional employers that aim to align education with regional labour market needs. Several partnerships have focused on ICT, smart industry and digital skills — exactly the domains where applied data roles are emerging.
+**Regional Investment Fund MBO (RIF).** Through this fund, the government co-finances public-private partnerships between MBO institutions and regional employers that aim to align education with regional labour market needs. Several partnerships have focused on ICT, smart industry and digital skills - exactly the domains where applied data roles are emerging.
 
 **Centres for Innovative Craftsmanship (CIV).** These public-private centres, often linked to the RIF, combine education, innovation and practice in a specific sector, for example smart manufacturing or logistics.
 
@@ -73,9 +73,9 @@ The Dutch vocational system has institutions and instruments that make this kind
 
 ## Why This Is Becoming Relevant Now
 
-As more traditional sectors — logistics, manufacturing, agriculture — gradually introduce data-driven processes, a growing layer of applied data analyst roles emerges that fits the education level of a technical MBO programme better than a university master's. This shift happens gradually and unnoticed inside individual companies, which means nobody "announces" the trend — it's up to education institutions to recognise the pattern and anticipate it.
+As more traditional sectors - logistics, manufacturing, agriculture - gradually introduce data-driven processes, a growing layer of applied data analyst roles emerges that fits the education level of a technical MBO programme better than a university master's. This shift happens gradually and unnoticed inside individual companies, which means nobody "announces" the trend - it's up to education institutions to recognise the pattern and anticipate it.
 
-Two policy developments reinforce this. First, digital literacy has become a more explicit part of MBO education, including within citizenship education requirements. Second, the **EU Artificial Intelligence Act** requires organisations that deploy AI systems to ensure sufficient AI literacy among staff working with them — including operational staff, many of whom have an MBO background. Employers will increasingly look for MBO graduates who can work sensibly with data and AI tools, even in roles that aren't labelled as data roles.
+Two policy developments reinforce this. First, digital literacy has become a more explicit part of MBO education, including within citizenship education requirements. Second, the **EU Artificial Intelligence Act** requires organisations that deploy AI systems to ensure sufficient AI literacy among staff working with them - including operational staff, many of whom have an MBO background. Employers will increasingly look for MBO graduates who can work sensibly with data and AI tools, even in roles that aren't labelled as data roles.
 
 ## Comparison Table: Where MBO Fit Is Strongest
 
@@ -91,17 +91,17 @@ Two policy developments reinforce this. First, digital literacy has become a mor
 
 **A reference in career orientation.** Add a short section to career orientation materials about data-related roles in regional sectors, with a link to a vacancy platform where students can see actual roles near their home.
 
-**Employer conversations during internship placement.** When internship coordinators speak with companies, they can ask whether data-related tasks or vacancies exist, and encourage employers to make them visible — for example through a free first listing on a specialist platform.
+**Employer conversations during internship placement.** When internship coordinators speak with companies, they can ask whether data-related tasks or vacancies exist, and encourage employers to make them visible - for example through a free first listing on a specialist platform.
 
-**Curriculum signals.** Periodically collect which skills appear in regional data-related vacancies — SQL, spreadsheets, reporting tools, basic statistics — and discuss with teaching teams whether elective modules or certificates could address them.
+**Curriculum signals.** Periodically collect which skills appear in regional data-related vacancies - SQL, spreadsheets, reporting tools, basic statistics - and discuss with teaching teams whether elective modules or certificates could address them.
 
 ## Why Early Signalling Is Worth More Than Extensive Research
 
-An MBO institution doesn't have to wait for extensive labour market research to start signalling this opportunity to students — a small experiment, such as adding a paragraph to existing career orientation, can begin before a fully substantiated policy plan exists. The cost of starting early is low; the cost of waiting is a missed opportunity for a cohort of students who have meanwhile graduated.
+An MBO institution doesn't have to wait for extensive labour market research to start signalling this opportunity to students - a small experiment, such as adding a paragraph to existing career orientation, can begin before a fully substantiated policy plan exists. The cost of starting early is low; the cost of waiting is a missed opportunity for a cohort of students who have meanwhile graduated.
 
 ## A Concrete Scenario
 
-A regional training centre with strong logistics and ICT programmes notices that several internship companies have started using warehouse management dashboards and forecasting tools. The internship coordinator adds one question to regular employer conversations: "Are there data-related tasks a student could take on, or data roles you're recruiting for?" Within a year, a handful of companies offer BBL places with a reporting component, and two graduates move into junior data analyst roles at their internship employers. None of this required a new programme — only attention to a shift that was already happening.
+A regional training centre with strong logistics and ICT programmes notices that several internship companies have started using warehouse management dashboards and forecasting tools. The internship coordinator adds one question to regular employer conversations: "Are there data-related tasks a student could take on, or data roles you're recruiting for?" Within a year, a handful of companies offer BBL places with a reporting component, and two graduates move into junior data analyst roles at their internship employers. None of this required a new programme - only attention to a shift that was already happening.
 
 ## What Institutions Should Watch Out For
 
@@ -177,16 +177,16 @@ Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whet
 ## Frequently Asked Questions
 
 ### (Scenario: MBO institution unsure whether this is relevant) Is the AI labour market really relevant for MBO students, not only university students?
-Yes — applied data and AI-related roles exist that connect well to a technical MBO programme, and they are often underexposed in the prevailing image of "AI work."
+Yes - applied data and AI-related roles exist that connect well to a technical MBO programme, and they are often underexposed in the prevailing image of "AI work."
 
 ### (Scenario: institution that thinks this requires a large new programme) Does this require a large new education programme?
-No — it can start as a small addition to existing internship placement and career orientation, not a curriculum overhaul.
+No - it can start as a small addition to existing internship placement and career orientation, not a curriculum overhaul.
 
 ### (Scenario: institution unsure whether this duplicates employer relationships) Does this overlap with existing employer relationships for internships?
-Not as duplication — it's a complement: encouraging employers you already work with to also make data-related vacancies visible.
+Not as duplication - it's a complement: encouraging employers you already work with to also make data-related vacancies visible.
 
 ### (Scenario: institution wondering about curriculum relevance) Can this influence what we teach?
-Possibly as a signal — visibility of the skills regional employers ask for can inform curriculum development, without being an obligation.
+Possibly as a signal - visibility of the skills regional employers ask for can inform curriculum development, without being an obligation.
 
 ### (Scenario: institution that wants to know how to start) What is the first concrete step?
 A short conversation to see whether a reference to accessible data vacancies fits your existing internship placement.
@@ -196,9 +196,9 @@ A short conversation to see whether a reference to accessible data vacancies fit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is the AI labour market really relevant for MBO students, not only university students?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — applied data and AI-related roles exist that connect well to a technical MBO programme."}},
-    {"@type": "Question", "name": "Does this require a large new education programme?", "acceptedAnswer": {"@type": "Answer", "text": "No — it can start as a small addition to existing internship placement."}},
-    {"@type": "Question", "name": "Does this overlap with existing employer relationships for internships?", "acceptedAnswer": {"@type": "Answer", "text": "Not as duplication — it complements existing relationships."}},
+    {"@type": "Question", "name": "Is the AI labour market really relevant for MBO students, not only university students?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - applied data and AI-related roles exist that connect well to a technical MBO programme."}},
+    {"@type": "Question", "name": "Does this require a large new education programme?", "acceptedAnswer": {"@type": "Answer", "text": "No - it can start as a small addition to existing internship placement."}},
+    {"@type": "Question", "name": "Does this overlap with existing employer relationships for internships?", "acceptedAnswer": {"@type": "Answer", "text": "Not as duplication - it complements existing relationships."}},
     {"@type": "Question", "name": "Can this influence what we teach?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly as a signal for curriculum development, without obligation."}},
     {"@type": "Question", "name": "What is the first concrete step?", "acceptedAnswer": {"@type": "Answer", "text": "A short conversation to see whether this fits your existing internship placement."}}
   ]

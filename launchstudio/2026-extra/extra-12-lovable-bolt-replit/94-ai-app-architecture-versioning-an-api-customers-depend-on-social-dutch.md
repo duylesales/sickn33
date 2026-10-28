@@ -1,6 +1,6 @@
-🚨 Transportplanner van Ruud Schipper beheert transportorders voor 26 regionale transportbedrijven, en hun grootste verladers sturen orders automatisch vanuit hun eigen systemen. Er was geen echte API — verladers riepen de REST-endpoints van Supabase rechtstreeks aan, elk met de service role key. Toen hernoemde een AI-assistent tijdens een refactor twee kolommen. 😳
+🚨 Transportplanner van Ruud Schipper beheert transportorders voor 26 regionale transportbedrijven, en hun grootste verladers sturen orders automatisch vanuit hun eigen systemen. Er was geen echte API - verladers riepen de REST-endpoints van Supabase rechtstreeks aan, elk met de service role key. Toen hernoemde een AI-assistent tijdens een refactor twee kolommen. 😳
 
-De systemen van negen verladers maakten geen orders meer aan. Twee dagen lang kwamen zo'n 1.100 transportorders stil nooit binnen — en de service keys bleken elke verlader volledige toegang te geven tot de data van elk transportbedrijf. Zo geeft u versies aan een API waarvan uw klanten afhankelijk zijn:
+De systemen van negen verladers maakten geen orders meer aan. Twee dagen lang kwamen zo'n 1.100 transportorders stil nooit binnen - en de service keys bleken elke verlader volledige toegang te geven tot de data van elk transportbedrijf. Zo geeft u versies aan een API waarvan uw klanten afhankelijk zijn:
 
 ❌ Het databaseschema blootgesteld als "API", dus een hernoemde kolom brak klanten
 ❌ De service role key uitgedeeld aan integratoren

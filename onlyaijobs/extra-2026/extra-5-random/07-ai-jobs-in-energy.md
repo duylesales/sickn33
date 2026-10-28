@@ -91,7 +91,7 @@ Probabilistic thinking is the differentiator. Energy decisions are made under un
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Every vacancy is shown at its exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-Energy employers are often located outside city centres — grid operator control rooms, wind farm service bases, substation regions and manufacturing sites — so seeing the real distance before applying matters more than in office-based sectors. The AI-only focus also helps: energy companies advertise many technical vacancies, and a specialist board keeps the data and modelling roles visible rather than buried among electrical engineering postings.
+Energy employers are often located outside city centres - grid operator control rooms, wind farm service bases, substation regions and manufacturing sites - so seeing the real distance before applying matters more than in office-based sectors. The AI-only focus also helps: energy companies advertise many technical vacancies, and a specialist board keeps the data and modelling roles visible rather than buried among electrical engineering postings.
 
 To be transparent about scope: OnlyAIJobs listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as VINCI Energies, Rexel, Heijmans, Accenture and Cegeka among those listing AI and data roles. Elsewhere in Europe, combine it with national job boards and company career pages. Employers hiring energy data talent can list their first vacancy free via info@onlyaijobs.eu.
 
@@ -101,7 +101,7 @@ In several European countries, the constraint on the energy transition is no lon
 
 Typical problems include forecasting load and generation at substation level, predicting where and when limits will be exceeded, valuing and dispatching flexibility offered by customers, estimating the effect of new connections on the network, and prioritising reinforcement investments across thousands of assets. The work combines forecasting with optimisation and network modelling, and it has immediate operational consequences: a better congestion forecast can allow another factory or housing development to connect sooner.
 
-For engineers, this area offers a rare combination — technically demanding, socially significant and funded for the long term.
+For engineers, this area offers a rare combination - technically demanding, socially significant and funded for the long term.
 
 ## Trading and Battery Optimisation
 
@@ -109,7 +109,7 @@ Short-term electricity trading is where energy data work most resembles quantita
 
 Data roles here include price forecasting, imbalance and volume prediction, bidding strategy optimisation, battery scheduling under degradation constraints, and post-trade analysis. Teams are small, feedback is fast and the financial impact of improvements is measured directly. The pace suits people who like rapid iteration; it can frustrate those who prefer long, careful projects.
 
-If you are considering this path, invest in optimisation under uncertainty — stochastic programming, scenario generation, risk measures — rather than only in forecasting accuracy. The winning teams are usually those that make better decisions given imperfect forecasts, not those with marginally better predictions.
+If you are considering this path, invest in optimisation under uncertainty - stochastic programming, scenario generation, risk measures - rather than only in forecasting accuracy. The winning teams are usually those that make better decisions given imperfect forecasts, not those with marginally better predictions.
 
 ## Asset Health and Maintenance
 
@@ -123,7 +123,7 @@ Energy is critical infrastructure, and that shapes data work in practical ways. 
 
 The EU AI Act adds requirements where AI is used as a safety component in regulated products or in high-risk contexts, including documentation, human oversight and robustness. Market regulation also matters: balancing and trading activities are supervised, and models that influence bids must be auditable.
 
-For engineers, the practical consequence is that "just deploy it" is rarely the answer. Understanding the constraints — and designing systems that fit them — is part of the professional skill set in this sector, and candidates who ask about them in interviews signal experience.
+For engineers, the practical consequence is that "just deploy it" is rarely the answer. Understanding the constraints - and designing systems that fit them - is part of the professional skill set in this sector, and candidates who ask about them in interviews signal experience.
 
 ## Entry Paths Into Energy
 
@@ -155,7 +155,7 @@ Energy data salaries generally track the local market for experienced data profe
 
 Energy is one of the best sectors for demonstrating skill before you are hired, because so much data is public. European transparency platforms publish generation, load, cross-border flows and prices; national grid operators publish network and congestion information; weather services and reanalysis datasets are widely available; and open datasets exist for wind and solar performance.
 
-A convincing project might forecast day-ahead load for one bidding zone with a weather-informed model, produce calibrated prediction intervals, compare against a naive seasonal baseline, and then evaluate a simple decision — for example a battery schedule — using those forecasts rather than reporting error metrics alone. Document the data sources, the pitfalls you hit with time zones and missing values, and what you would need in an operational setting.
+A convincing project might forecast day-ahead load for one bidding zone with a weather-informed model, produce calibrated prediction intervals, compare against a naive seasonal baseline, and then evaluate a simple decision - for example a battery schedule - using those forecasts rather than reporting error metrics alone. Document the data sources, the pitfalls you hit with time zones and missing values, and what you would need in an operational setting.
 
 Projects like this take a few weekends and change interviews completely, because they show you understand that energy forecasting exists to support decisions.
 
@@ -167,11 +167,11 @@ Energy rewards engineers who are comfortable with uncertainty, respectful of phy
 
 ### A forecasting engineer who learned the domain first
 
-A data scientist with experience in retail demand forecasting applied to a grid operator and was rejected after a technical interview. The feedback was that her approach ignored how the electricity system actually works — she had treated congestion as a pure prediction problem, without considering that operators can act on the forecast and change the outcome.
+A data scientist with experience in retail demand forecasting applied to a grid operator and was rejected after a technical interview. The feedback was that her approach ignored how the electricity system actually works - she had treated congestion as a pure prediction problem, without considering that operators can act on the forecast and change the outcome.
 
 She spent two months learning the domain properly: the roles of transmission and distribution operators, how balancing markets work, what a connection queue is, and why forecasts feed into decisions that then alter the system. She rebuilt her portfolio project using public grid and weather data, producing probabilistic forecasts and explicitly discussing the feedback loop between forecast and action.
 
-At her next interview with a different operator, the same question arose. This time she described the loop, proposed evaluating decisions rather than only predictions, and was hired. Within a year she was working on flexibility forecasting — and her retail background in hierarchical forecasting turned out to be directly useful.
+At her next interview with a different operator, the same question arose. This time she described the loop, proposed evaluating decisions rather than only predictions, and was hired. Within a year she was working on flexibility forecasting - and her retail background in hierarchical forecasting turned out to be directly useful.
 
 ## Key Takeaways
 
@@ -183,7 +183,7 @@ At her next interview with a different operator, the same question arose. This t
 
 ## Where to Start
 
-Pick one application — forecasting, maintenance or trading — and build one project using public weather and energy data, with probabilistic evaluation. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire energy data talent, list your first vacancy free via info@onlyaijobs.eu.
+Pick one application - forecasting, maintenance or trading - and build one project using public weather and energy data, with probabilistic evaluation. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire energy data talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

@@ -55,17 +55,17 @@ Betere AI-coderingsassistenten zullen blijven zorgen voor gepolijstere, overtuig
 
 ## De Vraag Die Deze Hele Serie Heeft Beantwoord, Case voor Case
 
-Als er één overkoepelende vraag ten grondslag ligt aan elk van de zestig artikelen in deze serie, dan is het wel de vraag waarmee deze synthese begon: wat heeft de initiële prompt nooit voorzien, en wie controleert dat specifiek? [LaunchStudio](https://launchstudio.eu/nl/) bestaat om exact die controle uit te voeren — het dichten van precies deze categorie architectuurkloven tussen het werkende prototype van een AI-native oprichter en een werkelijk productierijpe applicatie, zonder aan te raken wat al succesvol is gebouwd. Dit gebeurt met de steun van Manifera's 11+ jaar ervaring in software-engineering vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420, de regionale hub in Singapore aan Tras Street 100, en het primaire ontwikkelcentrum aan de Pho Quang-straat in Ho Chi Minhstad.
+Als er één overkoepelende vraag ten grondslag ligt aan elk van de zestig artikelen in deze serie, dan is het wel de vraag waarmee deze synthese begon: wat heeft de initiële prompt nooit voorzien, en wie controleert dat specifiek? [LaunchStudio](https://launchstudio.eu/nl/) bestaat om exact die controle uit te voeren - het dichten van precies deze categorie architectuurkloven tussen het werkende prototype van een AI-native oprichter en een werkelijk productierijpe applicatie, zonder aan te raken wat al succesvol is gebouwd. Dit gebeurt met de steun van Manifera's 11+ jaar ervaring in software-engineering vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420, de regionale hub in Singapore aan Tras Street 100, en het primaire ontwikkelcentrum aan de Pho Quang-straat in Ho Chi Minhstad.
 
-[Bespreek uw codebase met een ervaren engineer](https://launchstudio.eu/nl/#contact) — zestig specifieke cases, één terugkerend patroon, en een gerichte kwaliteitsbeoordeling die kwetsbaarheden opspoort voordat een echte klant dat doet.
+[Bespreek uw codebase met een ervaren engineer](https://launchstudio.eu/nl/#contact) - zestig specifieke cases, één terugkerend patroon, en een gerichte kwaliteitsbeoordeling die kwetsbaarheden opspoort voordat een echte klant dat doet.
 
 ## Hoe U Dit Soort Patroongerichte Zelf-Audit Uitvoert Vóórdat U Iemand Belt
 
-De aanpak van Silke — aan tafel komen met een helder begrip van het onderliggende ontwerppatroon in plaats van slechts vragen te stellen over één geïsoleerde knop — kan elke oprichter die deze serie leest zelfstandig toepassen voorafgaand aan een formele technische audit.
+De aanpak van Silke - aan tafel komen met een helder begrip van het onderliggende ontwerppatroon in plaats van slechts vragen te stellen over één geïsoleerde knop - kan elke oprichter die deze serie leest zelfstandig toepassen voorafgaand aan een formele technische audit.
 
 **Doorloop elke functionaliteit die geld, toegangsrechten of andermans gegevens raakt**
 
-Stel uzelf bij elk onderdeel de centrale vraag van deze reeks: wat heb ik expliciet beschreven aan mijn AI-codeertool, en wat heb ik nooit bedacht om te beschrijven? Een feature die exact volgens de prompt is gebouwd, handelt het beschreven scenario vrijwel altijd netjes af — de kwetsbaarheid bevindt zich per definitie in alles wat niet expliciet in de prompt stond.
+Stel uzelf bij elk onderdeel de centrale vraag van deze reeks: wat heb ik expliciet beschreven aan mijn AI-codeertool, en wat heb ik nooit bedacht om te beschrijven? Een feature die exact volgens de prompt is gebouwd, handelt het beschreven scenario vrijwel altijd netjes af - de kwetsbaarheid bevindt zich per definitie in alles wat niet expliciet in de prompt stond.
 
 **Groepeer uw bevindingen in terugkerende categorieën, niet in een losse lijst**
 
@@ -73,11 +73,11 @@ In plaats van elke observatie te zien als een opzichzelfstaand probleem, categor
 
 **Breng dit gestructureerde inzicht mee naar elke code-review**
 
-Een technische audit verloopt aanzienlijk efficiënter — en is vaak merkbaar kosteneffectiever — wanneer een oprichter al kan aangeven: "Ik vermoed dat mijn grootste blootstelling zit in de categorie autorisatiecontroles, specifiek rondom wie toegang heeft tot records van derden", in plaats van "kijk alsjeblieft overal naar en vertel me wat er mis is". Een oprichter die het ontwerppatroon begrijpt, kan gerichtere vragen stellen en voorgestelde oplossingen veel beter beoordelen.
+Een technische audit verloopt aanzienlijk efficiënter - en is vaak merkbaar kosteneffectiever - wanneer een oprichter al kan aangeven: "Ik vermoed dat mijn grootste blootstelling zit in de categorie autorisatiecontroles, specifiek rondom wie toegang heeft tot records van derden", in plaats van "kijk alsjeblieft overal naar en vertel me wat er mis is". Een oprichter die het ontwerppatroon begrijpt, kan gerichtere vragen stellen en voorgestelde oplossingen veel beter beoordelen.
 
-**Deze zelf-audit vervangt geen professionele review — het maakt deze vele malen effectiever**
+**Deze zelf-audit vervangt geen professionele review - het maakt deze vele malen effectiever**
 
-Een gestructureerde zelf-audit brengt potentiële kwetsbaarheden aan de oppervlakte die nader onderzoek verdienen. Het vervangt echter niet de diepgaande inspectie door een senior engineer die verifieert of een vermoedelijk gat reëel is, hoe ernstig de impact kan zijn en hoe de structurele oplossing eruit moet zien — exact het onderscheid dat in alle zestig individuele praktijkcases van deze serie centraal heeft gestaan.
+Een gestructureerde zelf-audit brengt potentiële kwetsbaarheden aan de oppervlakte die nader onderzoek verdienen. Het vervangt echter niet de diepgaande inspectie door een senior engineer die verifieert of een vermoedelijk gat reëel is, hoe ernstig de impact kan zijn en hoe de structurele oplossing eruit moet zien - exact het onderscheid dat in alle zestig individuele praktijkcases van deze serie centraal heeft gestaan.
 
 ## Echt voorbeeld
 
@@ -89,10 +89,10 @@ In plaats van te vragen naar een enkele specifieke functie, vroeg Silke LaunchSt
 
 **Resultaat:** De review vond dat WelzijnWijzer's kern-coördinatielogica en interface oprecht solide waren, terwijl een handvol van exact de categorieën uit deze serie naar voren kwam – een controle uitsluitend aan de client-side op coördinatormachtigingen, een ontbrekende snelheidslimiet op een openbaar aanmeldformulier, en sessietokens die niet volledig ongeldig werden bij uitloggen. Alles werd omvattend gesloten in een enkele gecoördineerde pass.
 
-> *"Het eerst lezen over het patroon betekende dat ik niet hoorde over drie afzonderlijke en enge problemen — ik hoorde over één ding, op drie verschillende manieren beschreven in mijn eigen specifieke product."*
-> — **Silke van Beek, Oprichter, WelzijnWijzer ('s-Hertogenbosch)**
+> *"Het eerst lezen over het patroon betekende dat ik niet hoorde over drie afzonderlijke en enge problemen - ik hoorde over één ding, op drie verschillende manieren beschreven in mijn eigen specifieke product."*
+> - **Silke van Beek, Oprichter, WelzijnWijzer ('s-Hertogenbosch)**
 
-**Kosten en tijdlijn:** € 2.900 (Launch & Grow-pakket, volledige audit op basis van patronen en herstel) — voltooid in 10 werkdagen.
+**Kosten en tijdlijn:** € 2.900 (Launch & Grow-pakket, volledige audit op basis van patronen en herstel) - voltooid in 10 werkdagen.
 
 ---
 
@@ -100,11 +100,11 @@ In plaats van te vragen naar een enkele specifieke functie, vroeg Silke LaunchSt
 
 ### Is het na het lezen van deze afsluitende synthese nog nuttig om de eerdere zestig artikelen individueel te raadplegen?
 
-Jazeker — deze synthese brengt het overkoepelende patroon in kaart, maar elk individueel artikel bevat diepgaande, concrete technische checklists, code-analyses en specifieke auditvragen voor die specifieke use-case (van PSD2-compliance tot multi-tenant datalekken).
+Jazeker - deze synthese brengt het overkoepelende patroon in kaart, maar elk individueel artikel bevat diepgaande, concrete technische checklists, code-analyses en specifieke auditvragen voor die specifieke use-case (van PSD2-compliance tot multi-tenant datalekken).
 
 ### Is 'de prompt voorzag het ongeteste randgeval niet' werkelijk de verklaring voor alle zestig gaten?
 
-Ja, zonder uitzondering — van niet-geïnvalideerde sessietokens tot openstaande database-backups en onbeperkte exportfuncties: elk probleem herleidde zich tot code die het beschreven succespad keurig uitvoerde, maar faalde op de onuitgesproken, vijandige randgevallen.
+Ja, zonder uitzondering - van niet-geïnvalideerde sessietokens tot openstaande database-backups en onbeperkte exportfuncties: elk probleem herleidde zich tot code die het beschreven succespad keurig uitvoerde, maar faalde op de onuitgesproken, vijandige randgevallen.
 
 ### Verandert het vooraf begrijpen van deze architectuurpatronen wat een technische review van LaunchStudio oplevert?
 
@@ -116,7 +116,7 @@ Nee, elk artikel is volledig zelfstandig leesbaar en biedt direct toepasbare han
 
 ### Geldt het kernpatroon van deze serie ook voor producten in sectoren die hier niet expliciet als case zijn behandeld?
 
-Absoluut — het onderliggende fenomeen (AI-tools die focussen op visuele interactie en snelle demonstraties, terwijl onderliggende beveiligings- en schaalbaarheidslagen handmatige architectonische verificatie vereisen) is een universele eigenschap van moderne softwareontwikkeling.
+Absoluut - het onderliggende fenomeen (AI-tools die focussen op visuele interactie en snelle demonstraties, terwijl onderliggende beveiligings- en schaalbaarheidslagen handmatige architectonische verificatie vereisen) is een universele eigenschap van moderne softwareontwikkeling.
 
 <script type="application/ld+json">
 {
@@ -128,7 +128,7 @@ Absoluut — het onderliggende fenomeen (AI-tools die focussen op visuele intera
       "name": "Is het na het lezen van deze afsluitende synthese nog nuttig om de eerdere zestig artikelen individueel te raadplegen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jazeker — deze synthese brengt het overkoepelende patroon in kaart, maar elk individueel artikel bevat diepgaande, concrete technische checklists, code-analyses en specifieke auditvragen voor die specifieke use-case (van PSD2-compliance tot multi-tenant datalekken)."
+        "text": "Jazeker - deze synthese brengt het overkoepelende patroon in kaart, maar elk individueel artikel bevat diepgaande, concrete technische checklists, code-analyses en specifieke auditvragen voor die specifieke use-case (van PSD2-compliance tot multi-tenant datalekken)."
       }
     },
     {
@@ -136,7 +136,7 @@ Absoluut — het onderliggende fenomeen (AI-tools die focussen op visuele intera
       "name": "Is 'de prompt voorzag het ongeteste randgeval niet' werkelijk de verklaring voor alle zestig gaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zonder uitzondering — van niet-geïnvalideerde sessietokens tot openstaande database-backups en onbeperkte exportfuncties: elk probleem herleidde zich tot code die het beschreven succespad keurig uitvoerde, maar faalde op de onuitgesproken, vijandige randgevallen."
+        "text": "Ja, zonder uitzondering - van niet-geïnvalideerde sessietokens tot openstaande database-backups en onbeperkte exportfuncties: elk probleem herleidde zich tot code die het beschreven succespad keurig uitvoerde, maar faalde op de onuitgesproken, vijandige randgevallen."
       }
     },
     {
@@ -160,7 +160,7 @@ Absoluut — het onderliggende fenomeen (AI-tools die focussen op visuele intera
       "name": "Geldt het kernpatroon van deze serie ook voor producten in sectoren die hier niet expliciet als case zijn behandeld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absoluut — het onderliggende fenomeen (AI-tools die focussen op visuele interactie en snelle demonstraties, terwijl onderliggende beveiligings- en schaalbaarheidslagen handmatige architectonische verificatie vereisen) is een universele eigenschap van moderne softwareontwikkeling."
+        "text": "Absoluut - het onderliggende fenomeen (AI-tools die focussen op visuele interactie en snelle demonstraties, terwijl onderliggende beveiligings- en schaalbaarheidslagen handmatige architectonische verificatie vereisen) is een universele eigenschap van moderne softwareontwikkeling."
       }
     }
   ]

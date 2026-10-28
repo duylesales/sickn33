@@ -3,12 +3,12 @@
 Negentig minuten voorbereiding is het meest rendabele anderhalf uur van uw hele lancering: 🧠
 
 ❌ Uw GitHub-repo hangt onder een oud e-mailadres waarvan u het wachtwoord kwijt bent
-❌ Uw Supabase-project is ooit opgezet door een vriend — u bent niet de formele eigenaar
+❌ Uw Supabase-project is ooit opgezet door een vriend - u bent niet de formele eigenaar
 ❌ Nog geen Mollie-account aangevraagd, terwijl u op dag één iDEAL-betalingen wilt innen
 ❌ Niemand heeft aangegeven welke schermen van het prototype écht werken en welke nep zijn
 
 ✅ Zet zes assets klaar vóór de start: repo, database, betalingen, domein, één A4 briefing en één beslisser
-✅ Start de KvK- en Mollie-verificatie op de dag dat u tekent — dit loopt geruisloos parallel
+✅ Start de KvK- en Mollie-verificatie op de dag dat u tekent - dit loopt geruisloos parallel
 ✅ Blijf eigenaar van uw betaalaccounts en nodig uw engineer uit met een beperkte Developer-rol
 ✅ Zeg eerlijk "dat weet ik niet, hier zou ik zoeken" in plaats van te gokken
 

@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 De e-mail is vriendelijk geformuleerd en verandert in één klap alles: *"Voordat we kunnen overgaan tot ondertekening, heeft onze Functionaris Gegevensbescherming (FG) een aantal vragen over hoe jullie omgaan met dataopslag en privacy."* Als bijlage zit een document met tussen de zeven en veertig vragen. En ergens rond vraag drie realiseer je je dat jouw app al acht maanden live staat zonder dat iemand ooit heeft gecontroleerd waar de database fysiek eigenlijk draait.
 
-Dit is het moment waarop met AI gebouwde SaaS-producten het vaakst vastlopen — niet tijdens de productdemo, niet op de prijs, maar tijdens de security review van de allereerste serieuze zakelijke klant. Wat volgt zijn de zeven vragen die in vrijwel elke Nederlandse privacyvragenlijst terugkomen, wat er achter de schermen daadwerkelijk wordt getoetst, en hoe je vooraf antwoorden formuleert waar je zakelijk en technisch voor kunt instaan.
+Dit is het moment waarop met AI gebouwde SaaS-producten het vaakst vastlopen - niet tijdens de productdemo, niet op de prijs, maar tijdens de security review van de allereerste serieuze zakelijke klant. Wat volgt zijn de zeven vragen die in vrijwel elke Nederlandse privacyvragenlijst terugkomen, wat er achter de schermen daadwerkelijk wordt getoetst, en hoe je vooraf antwoorden formuleert waar je zakelijk en technisch voor kunt instaan.
 
 *Dit betreft algemene technische en operationele informatie, geen formeel juridisch advies. Sommige onderdelen vereisen uiteindelijk de blik van een privacyjurist; het doel van dit artikel is om dat juridische gesprek zo kort en kostenefficiënt mogelijk te maken.*
 
@@ -36,7 +36,7 @@ Controleer de hostingregio van je database vandaag nog. Later migreren vereist e
 
 ## Twee: Wie heeft er allemaal toegang toe?
 
-Niet: *"is het veilig?"* — maar wie, specifiek en bij naam of rol. Het verwachte antwoord noemt heldere categorieën: de eigen gebruikers van de klant op basis van vooraf gedefinieerde rollen; jouw eigen engineeringteam onder strikt gedocumenteerde beheercondities; en subverwerkers uitsluitend voor hun specifieke technische doel.
+Niet: *"is het veilig?"* - maar wie, specifiek en bij naam of rol. Het verwachte antwoord noemt heldere categorieën: de eigen gebruikers van de klant op basis van vooraf gedefinieerde rollen; jouw eigen engineeringteam onder strikt gedocumenteerde beheercondities; en subverwerkers uitsluitend voor hun specifieke technische doel.
 
 De ongemakkelijke vervolgvraag luidt steevast: *"en kan de ene klantorganisatie data van een andere klantorganisatie inzien?"* Voor B2B multi-tenant applicaties is dit de vraag waarop de meeste AI-prototypes genadeloos zakken. Een geloofwaardig antwoord vereist dat je dit daadwerkelijk proefondervindelijk hebt getest: twee afzonderlijke accounts in twee verschillende organisaties, die actief hebben geprobeerd elkaars dossiers te openen via aangepaste API-parameters.
 
@@ -50,17 +50,17 @@ Stel deze lijst proactief op als een overzichtelijke tabel van één A4'tje vó�
 
 Zodra er klantgegevens in het spel zijn, treed jij op als verwerker voor jouw klant, en zijn jouw externe softwareleveranciers weer subverwerkers voor jou. Die hele keten moet juridisch gedekt zijn door verwerkersovereenkomsten (Data Processing Agreements of DPA's).
 
-De meeste gerenommeerde providers bieden een standaard AVG-conforme DPA aan die je met één klik in hun dashboard accepteert. Het werk zit hem niet in het onderhandelen over contracten — het zit hem in weten wélke je hebt ondertekend, het digitaal archiveren van de kopieën en het kunnen tonen ervan. Oprichters ontdekken tijdens een audit regelmatig dat een handig tooltje dat ze op een vrijdagmiddag aan de code toevoegden al maandenlang persoonsgegevens ontvangt zonder dat er ooit iets getekend is.
+De meeste gerenommeerde providers bieden een standaard AVG-conforme DPA aan die je met één klik in hun dashboard accepteert. Het werk zit hem niet in het onderhandelen over contracten - het zit hem in weten wélke je hebt ondertekend, het digitaal archiveren van de kopieën en het kunnen tonen ervan. Oprichters ontdekken tijdens een audit regelmatig dat een handig tooltje dat ze op een vrijdagmiddag aan de code toevoegden al maandenlang persoonsgegevens ontvangt zonder dat er ooit iets getekend is.
 
 ## Vijf: Hoe lang bewaren jullie gegevens, en hoe worden ze verwijderd?
 
 Twee wezenlijk verschillende vragen in één:
 
-**Bewaartermijn (dataretentie):** het hebben van een expliciet beleid dat vastlegt na welke termijn inactieve data wordt gewist — en het daadwerkelijk geautomatiseerd wissen ervan. Met AI gebouwde apps wissen uit zichzelf vrijwel nooit data, simpelweg omdat niemand daarom vroeg in de prompt. *"We bewaren data oneindig"* is weliswaar een antwoord, maar een bijzonder slecht antwoord dat direct botst met het AVG-begrip van opslagbeperking.
+**Bewaartermijn (dataretentie):** het hebben van een expliciet beleid dat vastlegt na welke termijn inactieve data wordt gewist - en het daadwerkelijk geautomatiseerd wissen ervan. Met AI gebouwde apps wissen uit zichzelf vrijwel nooit data, simpelweg omdat niemand daarom vroeg in de prompt. *"We bewaren data oneindig"* is weliswaar een antwoord, maar een bijzonder slecht antwoord dat direct botst met het AVG-begrip van opslagbeperking.
 
 **Verwijdering (recht op vergetelheid):** wat gebeurt er als een eindgebruiker zijn account wil wissen of wanneer een klant het contract opzegt? Kun je alle data van één specifieke persoon of organisatie uit de database verwijderen zonder dat gerelateerde databasetabellen omvallen door foreign key constraints? Wordt data ook geschoond in je error tracker en e-maillogs?
 
-Het antwoord dat enterprise-klanten willen horen: een gedocumenteerde bewaartermijn per datatype, een werkende verwijderfunctie, en een transparante verklaring over back-ups — namelijk dat verwijderde data in historische back-upmomentopnamen blijft bestaan totdat die back-ups volgens een vast schema automatisch verlopen. Dat is volkomen normaal in de IT-sector en wordt gewaardeerd mits je het eerlijk benoemt.
+Het antwoord dat enterprise-klanten willen horen: een gedocumenteerde bewaartermijn per datatype, een werkende verwijderfunctie, en een transparante verklaring over back-ups - namelijk dat verwijderde data in historische back-upmomentopnamen blijft bestaan totdat die back-ups volgens een vast schema automatisch verlopen. Dat is volkomen normaal in de IT-sector en wordt gewaardeerd mits je het eerlijk benoemt.
 
 ## Zes: Wat gebeurt er als er een datalek is?
 
@@ -78,7 +78,7 @@ Voor de meeste SaaS-applicaties betekent dit het bouwen van een eenvoudige, betr
 
 ## Bereid de antwoorden voor vóór de vragenlijst arriveert
 
-Stel één centraal document op — twee pagina's is meer dan voldoende — met daarin: de hostingregio en provider; het autorisatiemodel in heldere taal; de complete subverwerkerslijst; de bewaarplek van alle getekende DPA's; de bewaartermijnen per datatype; de procedure voor dataverwijdering; de inrichting van monitoring en logging; het datalek-escalatieprotocol inclusief contactpersonen; en de werking van de data-export.
+Stel één centraal document op - twee pagina's is meer dan voldoende - met daarin: de hostingregio en provider; het autorisatiemodel in heldere taal; de complete subverwerkerslijst; de bewaarplek van alle getekende DPA's; de bewaartermijnen per datatype; de procedure voor dataverwijdering; de inrichting van monitoring en logging; het datalek-escalatieprotocol inclusief contactpersonen; en de werking van de data-export.
 
 Houd dit document up-to-date. Voeg het direct toe als bijlage bij je commerciële voorstel, nog vóór de klant erom vraagt. Oprichters die dit doen merken steevast dat security-audits niet langer weken duren, maar binnen enkele dagen zijn afgerond. De rol van de privacy officer verandert immers van een streng verhoor in een snelle verificatie.
 
@@ -90,7 +90,7 @@ Zorg dat de technische architectuur eerst 100% klopt. Dan is het juridische gesp
 
 ## Bouwen aan antwoorden waar je voor kunt instaan
 
-Vrijwel alle zeven vragen betreffen software engineering met een compliance-jasje: een datacenterregio bewust configureren, Row Level Security testen en afdwingen, logging en monitoring inrichten, automatische retentie en verwijdering implementeren, data-export bouwen en externe koppelingen inventariseren. LaunchStudio richt exact dit fundament in als onderdeel van het productierijp maken van met AI gebouwde software — zonder de gebruikersinterface die je in Lovable hebt ontworpen aan te tasten. We leveren de benodigde documentatie kant-en-klaar op, waardoor een security-questionnaire verandert in een formele formaliteit.
+Vrijwel alle zeven vragen betreffen software engineering met een compliance-jasje: een datacenterregio bewust configureren, Row Level Security testen en afdwingen, logging en monitoring inrichten, automatische retentie en verwijdering implementeren, data-export bouwen en externe koppelingen inventariseren. LaunchStudio richt exact dit fundament in als onderdeel van het productierijp maken van met AI gebouwde software - zonder de gebruikersinterface die je in Lovable hebt ontworpen aan te tasten. We leveren de benodigde documentatie kant-en-klaar op, waardoor een security-questionnaire verandert in een formele formaliteit.
 
 Hierachter staat Manifera: elf jaar ervaring in enterprise software engineering voor gerenommeerde partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. Bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) inhoudt, of [omschrijf je project](https://launchstudio.eu/nl/#contact) voor een heldere statusbeoordeling binnen één werkdag.
 
@@ -98,7 +98,7 @@ Hierachter staat Manifera: elf jaar ervaring in enterprise software engineering 
 
 Op enig moment in een security-questionnaire stuit je op een vraag waar het eerlijke antwoord luidt: *"dat hebben we momenteel niet ingericht"*. Veel oprichters schieten op dat moment in de verdediging en grijpen naar wollige, vage bewoordingen. Dat is de slechtst denkbare strategie.
 
-Privacy officers beoordelen zulke formulieren dagelijks. Ze prikken onmiddellijk door ontwijkende antwoorden heen. Wolligheid wordt direct geïnterpreteerd als incompetentie of het verdoezelen van risico's — en beide maken direct een einde aan het inkoopproces.
+Privacy officers beoordelen zulke formulieren dagelijks. Ze prikken onmiddellijk door ontwijkende antwoorden heen. Wolligheid wordt direct geïnterpreteerd als incompetentie of het verdoezelen van risico's - en beide maken direct een einde aan het inkoopproces.
 
 De formulering die wél werkt bestaat uit drie concrete elementen: wat de huidige situatie is, wat je eraan doet, en wanneer het gereed is. *"Wij loggen op dit moment nog geen leesacties op individuele patiëntendossiers. Deze logging wordt deze maand geïmplementeerd en kunnen we voorafgaand aan de definitieve livegang demonstreren."* Dat is een professioneel antwoord waar een auditor mee kan werken. In de praktijk leidt dit vrijwel altijd tot een akkoord onder voorbehoud in plaats van een harde afwijzing.
 
@@ -108,7 +108,7 @@ Twee factoren maken dit geloofwaardig: een keiharde streefdatum (wat aantoont da
 
 Een praktische tip die veel frustratie voorkomt: het document van twee pagina's zwerft bij veel oprichters rond in een downloadmap, zes maanden verouderd, in een versie die niemand meer kan vinden zodra de volgende klant erom vraagt.
 
-Bewaar dit document in een centrale teammap, voorzien van een versienummer, datum en een beknopt wijzigingslogboek. Werk het direct bij zodra je een nieuwe externe API koppelt — wat in een workflow met AI-tools vaker gebeurt dan je denkt — of wanneer er iets verandert in je hostinginfrastructuur.
+Bewaar dit document in een centrale teammap, voorzien van een versienummer, datum en een beknopt wijzigingslogboek. Werk het direct bij zodra je een nieuwe externe API koppelt - wat in een workflow met AI-tools vaker gebeurt dan je denkt - of wanneer er iets verandert in je hostinginfrastructuur.
 
 Voeg het document standaard toe aan elke serieuze offerte. Het wekt direct de indruk van een volwassen enterprise-leverancier en voorkomt dat inkooptrajecten maandenlang blijven hangen op bureaucratische formulieren.
 
@@ -122,12 +122,12 @@ Planbaar faalde op vijf van de zeven kernpunten: het Supabase-project draaide op
 
 Twaalf werkdagen waren nodig voor de sanering: migratie van de complete database naar een gecertificeerd EU-datacenter met een geverifieerde restore-test; de marketingtool volledig losgekoppeld van gevoelige patiëntdata en vervangen door een AVG-conforme transactionele provider; crash-reporting zo geconfigureerd dat persoonsgegevens automatisch worden geanonimiseerd vóór verzending; automatische bewaartermijnen en verwijderfuncties ingericht; read-access logging toegevoegd aan medische dossiers; een complete organisatie-exportfunctie gerealiseerd; en het complete twee-pagina's tellende compliance-pakket opgesteld.
 
-**Resultaat:** Planbaar doorstond de herbeoordeling zes weken later glansrijk en stuurt het privacy-dossier nu standaard mee met elke offerte. De twee bestaande zorgteams ontvingen het document eveneens — waarna een van hen direct besloot te upgraden naar een groter jaarcontract.
+**Resultaat:** Planbaar doorstond de herbeoordeling zes weken later glansrijk en stuurt het privacy-dossier nu standaard mee met elke offerte. De twee bestaande zorgteams ontvingen het document eveneens - waarna een van hen direct besloot te upgraden naar een groter jaarcontract.
 
 > *"Ik dacht telkens dat privacy vooral een juridisch document was dat ik moest laten opstellen. Het bleek te gaan om zes concrete technische dingen die mijn app simpelweg niet deed."*
-> — **Tessa Blom, Oprichter, Planbaar (Deventer)**
+> - **Tessa Blom, Oprichter, Planbaar (Deventer)**
 
-**Kosten & Doorlooptijd:** € 4.200 (Launch Ready Pakket: datamigratie naar EU-regio, opschonen datastromen, retentie en verwijdering, audit logging, exporttool) — opgeleverd in 12 werkdagen.
+**Kosten & Doorlooptijd:** € 4.200 (Launch Ready Pakket: datamigratie naar EU-regio, opschonen datastromen, retentie en verwijdering, audit logging, exporttool) - opgeleverd in 12 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -137,7 +137,7 @@ Vóór je eerste *zakelijke* klant (B2B) vrijwel zeker wel, omdat hun inkoopafde
 
 ### Is hosting binnen de EU wettelijk verplicht voor Nederlandse klanten?
 
-Niet automatisch — doorgifte van persoonsgegevens naar landen buiten de EU is juridisch mogelijk mits er passende waarborgen zijn (zoals het EU-US Data Privacy Framework). In de praktijk eisen veel Nederlandse bedrijven, zorginstellingen en overheden EU-hosting echter contractueel, omdat het hun eigen administratieve verantwoording aanzienlijk vereenvoudigt. De commerciële eis is daardoor vaak strenger dan de strikt wettelijke.
+Niet automatisch - doorgifte van persoonsgegevens naar landen buiten de EU is juridisch mogelijk mits er passende waarborgen zijn (zoals het EU-US Data Privacy Framework). In de praktijk eisen veel Nederlandse bedrijven, zorginstellingen en overheden EU-hosting echter contractueel, omdat het hun eigen administratieve verantwoording aanzienlijk vereenvoudigt. De commerciële eis is daardoor vaak strenger dan de strikt wettelijke.
 
 ### Wat telt precies als een subverwerker?
 

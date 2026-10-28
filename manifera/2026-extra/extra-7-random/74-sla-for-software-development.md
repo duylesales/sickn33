@@ -20,23 +20,23 @@ target_persona: "CFO"
 }
 </script>
 
-An SLA that promises "best effort" response times and "commercially reasonable" uptime reads like a protection but functions like a formality — it sounds specific enough to reassure a CFO signing the contract, while containing no language a court, an arbitrator, or even an internal escalation could actually enforce, and the gap between an SLA that reads well and an SLA that protects you only becomes visible during the exact incident it was supposed to cover.
+An SLA that promises "best effort" response times and "commercially reasonable" uptime reads like a protection but functions like a formality - it sounds specific enough to reassure a CFO signing the contract, while containing no language a court, an arbitrator, or even an internal escalation could actually enforce, and the gap between an SLA that reads well and an SLA that protects you only becomes visible during the exact incident it was supposed to cover.
 
-**The Pain:** A CFO negotiating a software development SLA is usually reviewing a vendor-drafted template full of language that sounds protective — defined response times, uptime commitments, escalation procedures — without the legal or technical background to evaluate whether the specific numbers and mechanisms in that template actually create enforceable obligations, or simply create the appearance of them while leaving the vendor's actual accountability vague.
+**The Pain:** A CFO negotiating a software development SLA is usually reviewing a vendor-drafted template full of language that sounds protective - defined response times, uptime commitments, escalation procedures - without the legal or technical background to evaluate whether the specific numbers and mechanisms in that template actually create enforceable obligations, or simply create the appearance of them while leaving the vendor's actual accountability vague.
 
-**The Agitation:** An unenforceable or poorly structured SLA becomes expensive precisely when it matters most — during a production outage, a critical bug in a revenue-generating feature, or a missed deadline that cascades into a client commitment the company can't meet — and a CFO who discovers mid-crisis that the SLA's remedies are toothless, its response-time definitions are ambiguous, or its penalty clauses were never actually triggered because of a technicality in how "downtime" was defined, is negotiating leverage from the worst possible position.
+**The Agitation:** An unenforceable or poorly structured SLA becomes expensive precisely when it matters most - during a production outage, a critical bug in a revenue-generating feature, or a missed deadline that cascades into a client commitment the company can't meet - and a CFO who discovers mid-crisis that the SLA's remedies are toothless, its response-time definitions are ambiguous, or its penalty clauses were never actually triggered because of a technicality in how "downtime" was defined, is negotiating leverage from the worst possible position.
 
 ## The SLA Clauses That Actually Provide Protection
 
-**Response and resolution times defined by severity tier, with unambiguous clocks.** A real SLA doesn't say "prompt response" — it defines specific severity levels (critical, high, medium, low), a specific response time commitment for each, a specific resolution time target, and precisely when the clock starts and what pauses it, since vague timing language is the single most common way an SLA fails to protect a client during an actual incident.
+**Response and resolution times defined by severity tier, with unambiguous clocks.** A real SLA doesn't say "prompt response" - it defines specific severity levels (critical, high, medium, low), a specific response time commitment for each, a specific resolution time target, and precisely when the clock starts and what pauses it, since vague timing language is the single most common way an SLA fails to protect a client during an actual incident.
 
-**Uptime commitments with a real measurement methodology, not just a percentage.** A 99.9% uptime commitment means little without defining what counts as downtime, how it's measured, over what window, and what's explicitly excluded — scheduled maintenance, force majeure — a CFO should insist on a methodology specific enough that both parties would calculate the same number independently from the same incident data.
+**Uptime commitments with a real measurement methodology, not just a percentage.** A 99.9% uptime commitment means little without defining what counts as downtime, how it's measured, over what window, and what's explicitly excluded - scheduled maintenance, force majeure - a CFO should insist on a methodology specific enough that both parties would calculate the same number independently from the same incident data.
 
 **Financial remedies that are actually meaningful, not symbolic.** Service credits that amount to a token discount on the next invoice provide little real incentive for a vendor to meet its commitments; a CFO negotiating real leverage ties financial remedies to a percentage of the relevant period's fees that scales with the severity and duration of the breach, and confirms the remedy is a genuine deterrent rather than a rounding error in the vendor's economics.
 
-**An escalation path with named roles, not generic "management."** An SLA that promises escalation "to management" if a resolution time is missed is promising nothing specific — a real SLA names the escalation tier, the role responsible at each tier, and the timeframe for escalation to trigger automatically, so a CFO knows exactly who becomes accountable and when, without having to chase it manually during a live incident.
+**An escalation path with named roles, not generic "management."** An SLA that promises escalation "to management" if a resolution time is missed is promising nothing specific - a real SLA names the escalation tier, the role responsible at each tier, and the timeframe for escalation to trigger automatically, so a CFO knows exactly who becomes accountable and when, without having to chase it manually during a live incident.
 
-**Termination rights tied to sustained SLA breach, not just convenience.** A CFO should confirm the contract includes a defined right to terminate for cause if SLA breaches recur beyond a specified threshold within a specified period, since this is the ultimate leverage that makes every other SLA clause meaningful — without a real termination right tied to performance, a vendor has little structural incentive to treat the SLA as binding rather than aspirational.
+**Termination rights tied to sustained SLA breach, not just convenience.** A CFO should confirm the contract includes a defined right to terminate for cause if SLA breaches recur beyond a specified threshold within a specified period, since this is the ultimate leverage that makes every other SLA clause meaningful - without a real termination right tied to performance, a vendor has little structural incentive to treat the SLA as binding rather than aspirational.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: European contractual rigor that 
 
 ### A Brno Retailer's Toothless SLA Discovery
 
-Brněnský Software s.r.o., a Czech e-commerce retailer, had an SLA with its previous vendor promising "prompt" incident response and "commercially reasonable" uptime, and when a critical checkout bug went unaddressed for eleven hours during a peak sales period, the CFO discovered the vendor's contractual obligation was too vague to enforce any remedy at all — no defined severity tier had ever actually been triggered because none had been defined precisely enough to trigger.
+Brněnský Software s.r.o., a Czech e-commerce retailer, had an SLA with its previous vendor promising "prompt" incident response and "commercially reasonable" uptime, and when a critical checkout bug went unaddressed for eleven hours during a peak sales period, the CFO discovered the vendor's contractual obligation was too vague to enforce any remedy at all - no defined severity tier had ever actually been triggered because none had been defined precisely enough to trigger.
 
 Manifera's contract for the company's replatforming project included severity-tiered response times with unambiguous clocks, an uptime methodology both parties could calculate independently, and financial remedies scaled to breach severity. When a subsequent incident occurred, the SLA's terms functioned exactly as written, with the response time met and the incident resolved within the committed window.
 
-> *"Our old SLA read beautifully and did nothing when we actually needed it. The difference wasn't the promises — every vendor makes similar-sounding promises. The difference was whether the language could actually be enforced, and ours couldn't."*
-> — **CFO, Brněnský Software s.r.o., Czech Republic**
+> *"Our old SLA read beautifully and did nothing when we actually needed it. The difference wasn't the promises - every vendor makes similar-sounding promises. The difference was whether the language could actually be enforced, and ours couldn't."*
+> - **CFO, Brněnský Software s.r.o., Czech Republic**
 
 ## Vague SLA Language vs. Manifera's Enforceable SLA Structure
 
@@ -68,13 +68,13 @@ Manifera's contract for the company's replatforming project included severity-ti
 
 ## The Economics
 
-An unenforceable SLA costs a company nothing until the exact moment it's needed, at which point the cost is measured in lost revenue during unaddressed downtime, missed client commitments, and negotiating leverage lost mid-crisis — a properly structured SLA costs modest additional negotiation time upfront and provides real, calculable protection when an incident actually occurs. [Talk to Manifera](https://www.manifera.com/contact-us/) about an SLA for software development built to hold up under real pressure, not just read well on signature day.
+An unenforceable SLA costs a company nothing until the exact moment it's needed, at which point the cost is measured in lost revenue during unaddressed downtime, missed client commitments, and negotiating leverage lost mid-crisis - a properly structured SLA costs modest additional negotiation time upfront and provides real, calculable protection when an incident actually occurs. [Talk to Manifera](https://www.manifera.com/contact-us/) about an SLA for software development built to hold up under real pressure, not just read well on signature day.
 
 ## A Severity-Tier Reference Table for a Software Development SLA
 
 A CFO reviewing a proposed severity-tier structure can benchmark it against typical enforceable ranges: Critical (production down, data loss risk, revenue-blocking) should carry a 15-30 minute response commitment and a 4-hour resolution target; High (major feature broken, no workaround) should carry a 1-2 hour response and a 1 business-day resolution target; Medium (degraded but functional, workaround exists) should carry a 4-8 hour response and a 3 business-day resolution target; Low (cosmetic, minor) should carry a 1-2 business-day response with resolution scheduled into the next release cycle. Any service level agreement with a software vendor that collapses Critical and High into one tier, or defines "response" as merely acknowledging a ticket rather than an engineer actively working the issue, is quietly weakening the commitment that matters most.
 
-On remedies, a genuinely deterrent structure ties service credits to a percentage of the relevant billing period's fees — 5-10% per Critical breach, escalating with repeat breaches within a rolling 90-day window, capped in aggregate at a level still meaningful to the vendor's margin (typically 25-50% of the period's fees), not a flat 5% ceiling that a vendor can absorb without changing behavior. A CFO should ask a prospective vendor to run their own proposed remedy structure against a hypothetical breach scenario and confirm out loud what dollar amount actually changes hands — if the vendor hesitates to do this concretely, the clause was written to read well, not to pay out.
+On remedies, a genuinely deterrent structure ties service credits to a percentage of the relevant billing period's fees - 5-10% per Critical breach, escalating with repeat breaches within a rolling 90-day window, capped in aggregate at a level still meaningful to the vendor's margin (typically 25-50% of the period's fees), not a flat 5% ceiling that a vendor can absorb without changing behavior. A CFO should ask a prospective vendor to run their own proposed remedy structure against a hypothetical breach scenario and confirm out loud what dollar amount actually changes hands - if the vendor hesitates to do this concretely, the clause was written to read well, not to pay out.
 
 ## Frequently Asked Questions
 
@@ -84,7 +84,7 @@ Check whether severity tiers, response and resolution times, uptime measurement 
 
 ### (Scenario: CFO negotiating uptime commitments in a vendor contract) Why isn't a headline uptime percentage like 99.9% sufficient on its own?
 
-Because without a defined measurement methodology — what counts as downtime, over what window, what's excluded — both parties may calculate compliance differently, making the commitment effectively unenforceable.
+Because without a defined measurement methodology - what counts as downtime, over what window, what's excluded - both parties may calculate compliance differently, making the commitment effectively unenforceable.
 
 ### (Scenario: CFO evaluating whether SLA financial remedies provide real incentive) Why do token service credits fail to incentivize SLA compliance?
 
@@ -96,15 +96,15 @@ Because a vague escalation promise leaves the CFO chasing accountability manuall
 
 ### (Scenario: CFO wondering what ultimate recourse exists if a vendor repeatedly misses SLA commitments) Why does a termination-for-cause clause matter even if a CFO never expects to use it?
 
-Because it's the leverage that makes every other SLA clause meaningful — without a real right to terminate for sustained breach, a vendor has little structural incentive to treat the SLA as binding.
+Because it's the leverage that makes every other SLA clause meaningful - without a real right to terminate for sustained breach, a vendor has little structural incentive to treat the SLA as binding.
 
 ### (Scenario: CFO trying to benchmark response and resolution times for a Critical severity incident) What response and resolution times are realistic for a Critical severity tier in a software development SLA?
 
-A properly structured SLA for software development typically commits to a 15-30 minute response and a 4-hour resolution target for Critical, production-down issues — anything looser effectively treats a revenue-blocking outage the same as a minor bug.
+A properly structured SLA for software development typically commits to a 15-30 minute response and a 4-hour resolution target for Critical, production-down issues - anything looser effectively treats a revenue-blocking outage the same as a minor bug.
 
 ### (Scenario: CFO trying to size a meaningful service credit percentage for an SLA breach) What percentage of fees should a service credit represent to actually deter SLA breaches?
 
-Typically 5-10% of the relevant billing period's fees per Critical breach, escalating with repeat breaches within a rolling 90-day window and capped in aggregate around 25-50% of the period's fees — well above a token 5% ceiling a vendor can absorb without changing behavior.
+Typically 5-10% of the relevant billing period's fees per Critical breach, escalating with repeat breaches within a rolling 90-day window and capped in aggregate around 25-50% of the period's fees - well above a token 5% ceiling a vendor can absorb without changing behavior.
 
 ### (Scenario: CFO negotiating an SLA with a vendor operating in a different time zone from headquarters) Does an SLA's response-time clock need to account for time zone differences with an offshore development vendor?
 

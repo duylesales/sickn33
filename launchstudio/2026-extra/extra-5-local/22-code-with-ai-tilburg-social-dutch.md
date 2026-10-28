@@ -1,4 +1,4 @@
-🚨 Rick Damen bouwde Vracht360, een zendingstracking-tool voor kleine logistieke ondernemers, met Bolt over drie intensieve weken — de app zag er precies zo uit als de SaaS-producten waar zijn oude werkgever vijf cijfers per jaar voor betaalde. Toen stelde een prospect tijdens een demo één routinevraag: wat gebeurt er met hun data als hij de tool ooit stopzet, en waar wordt die gehost? Hij had geen antwoord. 😳
+🚨 Rick Damen bouwde Vracht360, een zendingstracking-tool voor kleine logistieke ondernemers, met Bolt over drie intensieve weken - de app zag er precies zo uit als de SaaS-producten waar zijn oude werkgever vijf cijfers per jaar voor betaalde. Toen stelde een prospect tijdens een demo één routinevraag: wat gebeurt er met hun data als hij de tool ooit stopzet, en waar wordt die gehost? Hij had geen antwoord. 😳
 
 De code zag er af uit. Het operationele denkwerk erachter niet. 🧠
 
@@ -11,7 +11,7 @@ De code zag er af uit. Het operationele denkwerk erachter niet. 🧠
 ✅ Geautomatiseerde dagelijkse back-ups implementeren
 ✅ Toegangscontroles op veldniveau toevoegen aan elk klantgericht eindpunt
 
-Bij **LaunchStudio** behandelen de technici van Manifera — met 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO — dit soort gaten in datascheiding en toegangscontrole als standaard controlepunt vóór lancering. 🛡️
+Bij **LaunchStudio** behandelen de technici van Manifera - met 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO - dit soort gaten in datascheiding en toegangscontrole als standaard controlepunt vóór lancering. 🛡️
 
 Het resultaat voor Vracht360: de tool doorstond de beveiligingsvragen van de volgende prospect zonder aarzeling, allemaal zonder de bestaande, door Bolt gebouwde interface te wijzigen. 🚀
 

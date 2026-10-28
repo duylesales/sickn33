@@ -12,7 +12,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-productdemo's voor investeerders: Wat ze daadwerkelijk testen",
-  "description": "Een investeerdersdemo test iets smallers en specifiekers dan oprichters vaak aannemen — niet uitgebreide technische deugdelijkheid.",
+  "description": "Een investeerdersdemo test iets smallers en specifiekers dan oprichters vaak aannemen - niet uitgebreide technische deugdelijkheid.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -55,7 +55,7 @@ Het begrijpen dat een demo voornamelijk visie en marktbeheersing test, en niet d
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om investeerdersvoorbereiding correct te categoriseren – verhaallijn en demobereidheid naast, en niet in plaats van, de echte technische verharding die een later due-diligence-proces daadwerkelijk zal onderzoeken. Dit wordt ondersteund door Manifera's bredere ervaring in het ondersteunen van oprichters bij zowel de pitch als de daaropvolgende technische onderzoeksfasen van een kapitaalronde.
 
-[Bereid u voor op wat de demo daadwerkelijk test, en afzonderlijk op wat daarna komt](https://launchstudio.eu/nl/#contact) — de twee zijn gerelateerde maar oprecht verschillende voorbereidingstaken.
+[Bereid u voor op wat de demo daadwerkelijk test, en afzonderlijk op wat daarna komt](https://launchstudio.eu/nl/#contact) - de twee zijn gerelateerde maar oprecht verschillende voorbereidingstaken.
 
 ## Wat u daadwerkelijk moet doen in de kloof tussen een sterke demo en technische due diligence
 
@@ -84,9 +84,9 @@ Toen het team van dezelfde investeerder weken later overging op een meer technis
 **Resultaat:** Nienke bracht FactuurAI naar LaunchStudio tussen de demo en het technische due-diligence-gesprek. Hiermee werden de specifieke kloven gedicht die de vragen van de technische beoordelaar naar boven hadden gebracht, waardoor het fondsenwervingsproces kon doorgaan in plaats van te stagneren op exact het punt waar de twee oprecht verschillende evaluatiecriteria – visie en technische deugdelijkheid – uiteindelijk samenkwamen.
 
 > *"De demo ging oprecht goed en ik nam aan dat dat betekende dat ik in feite door het moeilijkste deel heen was. Het kostte een compleet ander, veel meer technisch gesprek weken later om te realiseren dat de demo nooit daadwerkelijk iets had getest van wat dat tweede gesprek specifiek onderzocht."*
-> — **Nienke Hendriks, Oprichter, FactuurAI (Amsterdam)**
+> - **Nienke Hendriks, Oprichter, FactuurAI (Amsterdam)**
 
-**Kosten en tijdlijn:** € 2.300 (Launch Ready Pakket, prioriteitsomvang voorafgaand aan technische due diligence) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (Launch Ready Pakket, prioriteitsomvang voorafgaand aan technische due diligence) - voltooid in 8 werkdagen.
 
 ---
 
@@ -122,7 +122,7 @@ Via het soort specifieke, concrete vragen dat elders in bredere richtlijnen word
       "name": "Moet een oprichter verwachten dat een investeerder de techniek live tijdens de demo test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zelden — de meeste demo-evaluaties richten zich op visie en marktsignalen; techniek wordt later apart getoetst."
+        "text": "Zelden - de meeste demo-evaluaties richten zich op visie en marktsignalen; techniek wordt later apart getoetst."
       }
     },
     {

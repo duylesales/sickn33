@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Writing a CV for AI and Data Jobs in the Netherlands: What Dutch Employers and Screening Systems Look For",
-  "description": "A practical guide to writing a CV for AI, machine learning and data roles in the Netherlands — Dutch conventions, structure, projects, education terms, language levels, privacy, applicant tracking systems and the AI Act's rules on recruitment AI.",
+  "description": "A practical guide to writing a CV for AI, machine learning and data roles in the Netherlands - Dutch conventions, structure, projects, education terms, language levels, privacy, applicant tracking systems and the AI Act's rules on recruitment AI.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-19",
@@ -35,13 +35,13 @@ Content Format: Career Guide
 }
 </script>
 
-A hiring manager for a junior data scientist position may receive dozens or even hundreds of applications. Many CVs list the same courses, the same libraries and the same capstone projects. Most are read for less than a minute in the first round — and some are screened by software before a person sees them at all. In that context, the CV is not a complete record of everything you have done. It is a short argument for why you deserve a conversation. For AI and data roles in the Netherlands, a few conventions and choices make that argument much stronger.
+A hiring manager for a junior data scientist position may receive dozens or even hundreds of applications. Many CVs list the same courses, the same libraries and the same capstone projects. Most are read for less than a minute in the first round - and some are screened by software before a person sees them at all. In that context, the CV is not a complete record of everything you have done. It is a short argument for why you deserve a conversation. For AI and data roles in the Netherlands, a few conventions and choices make that argument much stronger.
 
 ## Dutch CV Conventions in Brief
 
 **Length.** One to two pages is standard. Recent graduates usually fit on one page; experienced professionals may use two.
 
-**Order.** Reverse chronological order — most recent experience and education first — is the norm.
+**Order.** Reverse chronological order - most recent experience and education first - is the norm.
 
 **Photo.** Photos are common on Dutch CVs, but not required. Many international companies prefer CVs without photos to reduce bias. If in doubt, leave it out.
 
@@ -76,7 +76,7 @@ The most common weakness in data CVs is describing tasks instead of results. Com
 | Used Python, SQL and scikit-learn | Cleaned and joined five data sources in Python and SQL, discovering a data quality issue that changed forecast inputs |
 | Thesis on NLP | Master's thesis: evaluated Dutch-language models for classifying customer complaints, building a new labelled test set |
 
-A useful structure for each bullet is: action, method, context and result. Where results cannot be quantified — which is common — describe the decision or process your work influenced.
+A useful structure for each bullet is: action, method, context and result. Where results cannot be quantified - which is common - describe the decision or process your work influenced.
 
 **Projects.** For each project, include one line on the question, one on your approach and tools, and one on the result or insight. Link to a repository with a clear README. Hiring managers frequently click on one project; make sure it is your best one.
 
@@ -96,7 +96,7 @@ A useful structure for each bullet is: action, method, context and result. Where
 
 **Avoid skill ratings.** Graphic bars or star ratings for skills are hard to interpret and rarely convince hiring managers.
 
-**Language levels.** Use the **Common European Framework of Reference for Languages (CEFR)**, from A1 to C2, to describe language proficiency — for example, "Dutch: B1, English: C1". This is widely understood by Dutch employers.
+**Language levels.** Use the **Common European Framework of Reference for Languages (CEFR)**, from A1 to C2, to describe language proficiency - for example, "Dutch: B1, English: C1". This is widely understood by Dutch employers.
 
 ## Applicant Tracking Systems and AI Screening
 
@@ -106,7 +106,7 @@ Many medium-sized and large employers use applicant tracking systems to manage a
 
 **Mirror relevant terminology.** If the vacancy asks for "time series forecasting" and you have done it, use those words rather than only a synonym. Do not stuff keywords you cannot back up.
 
-**Know your rights.** Under the **EU AI Act**, AI systems intended for recruitment or selection — for example to filter applications or evaluate candidates — are classified as high-risk, with requirements for risk management, human oversight and transparency. The GDPR also gives you rights regarding automated decision-making and access to your data.
+**Know your rights.** Under the **EU AI Act**, AI systems intended for recruitment or selection - for example to filter applications or evaluate candidates - are classified as high-risk, with requirements for risk management, human oversight and transparency. The GDPR also gives you rights regarding automated decision-making and access to your data.
 
 ## Privacy and Equal Treatment
 
@@ -135,7 +135,7 @@ Keep a master CV with all your experience and create a tailored version for each
 
 ## Make Your Profile and Repository Match Your CV
 
-Hiring managers rarely look at a CV in isolation. Many check your professional networking profile and, for technical roles, your code repository. Inconsistencies — different job titles, dates or project descriptions — create doubt. Make sure dates and titles match, and that the projects highlighted on your CV are easy to find in your repository.
+Hiring managers rarely look at a CV in isolation. Many check your professional networking profile and, for technical roles, your code repository. Inconsistencies - different job titles, dates or project descriptions - create doubt. Make sure dates and titles match, and that the projects highlighted on your CV are easy to find in your repository.
 
 A repository does not need dozens of projects. It is better to have two or three well-organised projects with clear READMEs, sensible folder structures and instructions to reproduce results than many unfinished experiments. Pin your best projects so they appear first. Remove or archive old coursework that does not reflect your current level.
 
@@ -143,7 +143,7 @@ A repository does not need dozens of projects. It is better to have two or three
 
 International candidates face additional questions from Dutch employers, and a CV can answer them proactively.
 
-**Right to work.** If you already have the right to work in the Netherlands — for example as an EU citizen, through a residence permit or an orientation year permit — mention it briefly in your profile or header. If you require sponsorship, you do not need to state it on the CV, but be ready to discuss it.
+**Right to work.** If you already have the right to work in the Netherlands - for example as an EU citizen, through a residence permit or an orientation year permit - mention it briefly in your profile or header. If you require sponsorship, you do not need to state it on the CV, but be ready to discuss it.
 
 **Location.** State where you currently live and, if relevant, when you plan to move to the Netherlands.
 
@@ -155,7 +155,7 @@ International candidates face additional questions from Dutch employers, and a C
 
 A recent graduate sends the same two-page CV to forty vacancies for junior data science roles and receives two interview invitations. The CV lists ten courses, twenty libraries and three projects described in one line each, with a colourful design and skill bars.
 
-After feedback from a career adviser, the graduate rewrites the CV: one page, a clear profile summary, the thesis described with method and result, two strong projects with links and concrete outcomes, grouped skills without ratings and Dutch language level stated using CEFR. For each application, the graduate selects the most relevant project and adjusts terminology to match the vacancy. From the next fifteen applications, the graduate receives five interview invitations. Nothing about the graduate's actual skills changed — only how clearly they were presented.
+After feedback from a career adviser, the graduate rewrites the CV: one page, a clear profile summary, the thesis described with method and result, two strong projects with links and concrete outcomes, grouped skills without ratings and Dutch language level stated using CEFR. For each application, the graduate selects the most relevant project and adjusts terminology to match the vacancy. From the next fifteen applications, the graduate receives five interview invitations. Nothing about the graduate's actual skills changed - only how clearly they were presented.
 
 ## A Common Misconception About Data CVs
 

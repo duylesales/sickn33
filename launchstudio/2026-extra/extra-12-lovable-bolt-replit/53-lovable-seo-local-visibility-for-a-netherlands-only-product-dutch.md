@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Een product dat alleen in Nederland wordt verkocht, heeft een voordeel dat wereldwijde SaaS niet heeft: de concurrentie op Nederlandse termen is een fractie van die op Engelse, en Nederlandse kopers geven actief de voorkeur aan een Nederlandse leverancier voor alles wat hun data, hun facturen of hun verplichtingen raakt.
 
-Dat voordeel benutten vereist dat de site de Nederlandse band duidelijk maakt, en daarin schieten door AI gebouwde sites vaak tekort — gegenereerd in het Engels, gehost op een `.com`, nergens een adres, lezen ze als een product van nergens in het bijzonder.
+Dat voordeel benutten vereist dat de site de Nederlandse band duidelijk maakt, en daarin schieten door AI gebouwde sites vaak tekort - gegenereerd in het Engels, gehost op een `.com`, nergens een adres, lezen ze als een product van nergens in het bijzonder.
 
 ## Maak het Nederlandse Signaal Onmiskenbaar
 
@@ -32,7 +32,7 @@ Een `.nl`-domein als u alleen hier verkoopt. Het is een sterker signaal dan iets
 
 De volledige bedrijfsgegevens in de footer en op een contactpagina, in tekst in plaats van in een afbeelding: juridische naam, straatadres, plaats, KvK-nummer, btw-nummer, en een Nederlands telefoonnummer als u dat hebt.
 
-De taal van de site correct gedeclareerd in de HTML, Nederlandse content als moedertaal geschreven in plaats van vertaald, en prijzen in euro's inclusief of exclusief btw zoals uw markt verwacht — wat voor B2B exclusief is, en dat vermeld.
+De taal van de site correct gedeclareerd in de HTML, Nederlandse content als moedertaal geschreven in plaats van vertaald, en prijzen in euro's inclusief of exclusief btw zoals uw markt verwacht - wat voor B2B exclusief is, en dat vermeld.
 
 Gestructureerde data voor de organisatie met de naam, het adres en het land, de machineleesbare versie van dezelfde informatie.
 
@@ -58,7 +58,7 @@ Regionale pagina's werken wanneer er iets aan de regio echt anders is. Bedient u
 
 Het alternatief dat voor elk Nederlands product werkt: pagina's over wat specifiek Nederlands is. Hoe uw product omgaat met btw en de kwartaalaangifte. Koppelingen met Nederlandse boekhoudpakketten. iDEAL en SEPA-incasso. Naleving van Nederlandse sectorregels. AVG-afhandeling met data in de EU.
 
-Die brengen precies de koper die u wilt — iemand die zoekt naar een product dat hier werkt — en het zijn dingen die een internationale concurrent niet makkelijk kan schrijven.
+Die brengen precies de koper die u wilt - iemand die zoekt naar een product dat hier werkt - en het zijn dingen die een internationale concurrent niet makkelijk kan schrijven.
 
 ## De Nederlandse Vermeldingen
 
@@ -74,7 +74,7 @@ Voor een Nederlands B2B-product is het bewijs waar kopers naar zoeken: andere Ne
 
 Casestudy's met de echte bedrijfsnaam en plaats van de klant, een testimonial met een naam en een functie, een rij logo's van bedrijven die mensen in de regio herkennen. Dat is hier meer waard dan een indrukwekkende functielijst, omdat de vraag van de koper is of mensen zoals hij het gebruiken.
 
-Vraag om reviews op de platforms die uw sector echt leest — dat verschilt, en het is de moeite waard dat bij uw eigen klanten na te vragen in plaats van het aan te nemen.
+Vraag om reviews op de platforms die uw sector echt leest - dat verschilt, en het is de moeite waard dat bij uw eigen klanten na te vragen in plaats van het aan te nemen.
 
 ## Schrijf Zoals Uw Kopers Praten
 
@@ -84,13 +84,13 @@ Nederlands vakjargon is specifiek en niet altijd wat een vertaling oplevert. Ins
 
 De manier om ze te vinden is geen zoekwoordtool, die mager is voor Nederlandse long-tailtermen. Het zijn uw eigen materialen: lees de e-mails die uw klanten sturen, hoe ze hun eigen problemen aan de telefoon beschrijven, en de taal in de vakbladen en op de websites van brancheverenigingen. De termen die terugkomen, zijn degene om omheen te schrijven.
 
-Twee extra voordelen. Schrijven in de eigen woordenschat van de sector laat zien dat u het werk begrijpt, en dat is het oordeel dat een professionele koper in de eerste tien seconden velt. En het levert content op die leest alsof iemand uit de branche haar schreef in plaats van iemand over de branche — wat, zoals het vorige artikel in deze reeks betoogt, precies is wat een model niet namens u kan maken en de reden dat uw eigen kennis het kapitaal is.
+Twee extra voordelen. Schrijven in de eigen woordenschat van de sector laat zien dat u het werk begrijpt, en dat is het oordeel dat een professionele koper in de eerste tien seconden velt. En het levert content op die leest alsof iemand uit de branche haar schreef in plaats van iemand over de branche - wat, zoals het vorige artikel in deze reeks betoogt, precies is wat een model niet namens u kan maken en de reden dat uw eigen kennis het kapitaal is.
 
 ## De Concurrentie Is Dunner dan U Denkt
 
 Oprichters die zich vergelijken met wereldwijde SaaS, onderschatten hoe anders het Nederlandse zoeklandschap is, en dat verandert wat het proberen waard is.
 
-Voor een specifieke Nederlandse vakterm — de software die een bepaald vak voor een bepaalde taak gebruikt — zijn de concurrerende pagina's vaak schaars, en verschillende ervan zijn zwak: een dunne productpagina van een leverancier, een verouderde blogpost, een gidsvermelding. Een echt nuttige pagina, geschreven door iemand die het werk begrijpt, kan in maanden in plaats van jaren de eerste pagina halen.
+Voor een specifieke Nederlandse vakterm - de software die een bepaald vak voor een bepaalde taak gebruikt - zijn de concurrerende pagina's vaak schaars, en verschillende ervan zijn zwak: een dunne productpagina van een leverancier, een verouderde blogpost, een gidsvermelding. Een echt nuttige pagina, geschreven door iemand die het werk begrijpt, kan in maanden in plaats van jaren de eerste pagina halen.
 
 Dezelfde term in het Engels wordt betwist door tientallen goed gefinancierde bedrijven die continu publiceren.
 
@@ -104,7 +104,7 @@ Beoordeel pagina's op wat ze opleveren in plaats van op volume, wat voor een pro
 
 Zoeken is één kanaal, en voor verschillende Nederlandse sectoren niet het eerste. Weten waar uw kopers werkelijk kijken, verandert hoeveel van dit werk de moeite waard is.
 
-Beroepsverenigingen en hun ledencommunicatie hebben veel gewicht in Nederlandse vakken en beroepen — genoemd worden in de nieuwsbrief van een brancheorganisatie bereikt meer van uw markt dan een maand zoekzichtbaarheid.
+Beroepsverenigingen en hun ledencommunicatie hebben veel gewicht in Nederlandse vakken en beroepen - genoemd worden in de nieuwsbrief van een brancheorganisatie bereikt meer van uw markt dan een maand zoekzichtbaarheid.
 
 Sectorspecifieke online gemeenschappen, die in Nederland vaak klein, al lang bestaand en zeer vertrouwd zijn. Een aanbeveling in een daarvan is veel waard en is niet te koop.
 
@@ -112,13 +112,13 @@ Accountants en adviseurs, die software aanbevelen aan hun klanten en een verkoop
 
 En regionale ondernemersnetwerken, die hier meer uitmaken dan in grotere markten, omdat het land klein genoeg is dat mensen elkaar kennen.
 
-Niets hiervan vervangt zoeken — de persoon die zoekt op het moment dat hij het probleem heeft, is de waardevolste bezoeker die u krijgt — maar het pleit er wel tegen om zoeken als het hele plan te behandelen. De praktische verdeling voor de meeste Nederlandse B2B-producten in hun eerste twee jaar: content en zoeken als het opbouwende langetermijnkanaal, en bewuste aanwezigheid op twee of drie sectorspecifieke plekken als het kanaal dat dit kwartaal klanten oplevert.
+Niets hiervan vervangt zoeken - de persoon die zoekt op het moment dat hij het probleem heeft, is de waardevolste bezoeker die u krijgt - maar het pleit er wel tegen om zoeken als het hele plan te behandelen. De praktische verdeling voor de meeste Nederlandse B2B-producten in hun eerste twee jaar: content en zoeken als het opbouwende langetermijnkanaal, en bewuste aanwezigheid op twee of drie sectorspecifieke plekken als het kanaal dat dit kwartaal klanten oplevert.
 
 ## Dit Inrichten
 
 Voor een Nederlands product kost dit doorgaans één dag: een `.nl`-domein waar passend, met doorverwijzingen vanaf andere, volledige bedrijfsgegevens in tekst in de footer en op een contactpagina, correcte taaldeclaratie en als moedertaal geschreven Nederlandse content, gestructureerde data voor de organisatie met het Nederlandse adres, een bedrijfsprofiel waar echt een locatie is, regionale pagina's alleen waar de dekking echt verschilt, pagina's over de specifiek Nederlandse aspecten van uw product, vermeldingen bij sectorspecifieke Nederlandse gidsen en verenigingen, en Nederlandse casestudy's op naam met reviews op de platforms die uw kopers lezen.
 
-LaunchStudio doet dit voor producten die op de Nederlandse markt verkopen, waar de meeste van onze klanten actief zijn. Daarachter staat Manifera — elf jaar, Europese activiteiten vanaf de Herengracht 420 in Amsterdam, met klanten als Vodafone, TNO en CFLW.
+LaunchStudio doet dit voor producten die op de Nederlandse markt verkopen, waar de meeste van onze klanten actief zijn. Daarachter staat Manifera - elf jaar, Europese activiteiten vanaf de Herengracht 420 in Amsterdam, met klanten als Vodafone, TNO en CFLW.
 
 [Vraag ons of uw site als Nederlands overkomt](https://launchstudio.eu/nl/#contact). Verschillende doen dat niet, en hun eigenaren zijn verrast.
 
@@ -126,18 +126,18 @@ LaunchStudio doet dit voor producten die op de Nederlandse markt verkopen, waar 
 
 ### Een Nederlands Product Dat er Amerikaans Uitzag
 
-Wessel Fokkinga bouwde Bouwadmin in Lovable: administratie voor kleine bouw- en renovatiebedrijven — offertes, facturen, uren en materiaalkosten — gebruikt door 58 bedrijven, allemaal Nederlands.
+Wessel Fokkinga bouwde Bouwadmin in Lovable: administratie voor kleine bouw- en renovatiebedrijven - offertes, facturen, uren en materiaalkosten - gebruikt door 58 bedrijven, allemaal Nederlands.
 
 De site was in het Engels op een `.com`, nergens een adres, prijzen in euro's zonder vermelding van de btw-behandeling, en een homepage die een product van overal had kunnen beschrijven. Hij rankte nergens op, en twee prospects hadden tijdens verkoopgesprekken gevraagd of het bedrijf Nederlands was en waar de data werd opgeslagen.
 
-Drie werkdagen: een `.nl`-domein verworven en primair gemaakt met permanente doorverwijzingen vanaf de `.com`; de site herschreven met Nederlands als hoofdtaal, met de Engelse versie teruggebracht tot twee pagina's; volledige bedrijfsgegevens in tekst toegevoegd aan de footer en een contactpagina, inclusief KvK- en btw-nummer en een Nederlands telefoonnummer; gestructureerde data voor de organisatie met het adres in Amersfoort; prijzen opnieuw vermeld exclusief btw, zoals zijn B2B-kopers verwachten; vier pagina's geschreven over specifiek Nederlandse aspecten — btw-afhandeling en de kwartaalaangifte, koppelingen met twee Nederlandse boekhoudpakketten, iDEAL en incasso voor klantbetalingen, en waar data onder de AVG wordt opgeslagen; een Google Bedrijfsprofiel aangemaakt voor zijn geregistreerde kantoor, zonder openingstijden; vermeldingen nagestreefd bij twee brancheverenigingen in de bouw en één Nederlandse vergelijkingssite voor software; en zes casestudy's op naam gepubliceerd met de echte namen en plaatsen van de bedrijven, met toestemming, ter vervanging van drie anonieme.
+Drie werkdagen: een `.nl`-domein verworven en primair gemaakt met permanente doorverwijzingen vanaf de `.com`; de site herschreven met Nederlands als hoofdtaal, met de Engelse versie teruggebracht tot twee pagina's; volledige bedrijfsgegevens in tekst toegevoegd aan de footer en een contactpagina, inclusief KvK- en btw-nummer en een Nederlands telefoonnummer; gestructureerde data voor de organisatie met het adres in Amersfoort; prijzen opnieuw vermeld exclusief btw, zoals zijn B2B-kopers verwachten; vier pagina's geschreven over specifiek Nederlandse aspecten - btw-afhandeling en de kwartaalaangifte, koppelingen met twee Nederlandse boekhoudpakketten, iDEAL en incasso voor klantbetalingen, en waar data onder de AVG wordt opgeslagen; een Google Bedrijfsprofiel aangemaakt voor zijn geregistreerde kantoor, zonder openingstijden; vermeldingen nagestreefd bij twee brancheverenigingen in de bouw en één Nederlandse vergelijkingssite voor software; en zes casestudy's op naam gepubliceerd met de echte namen en plaatsen van de bedrijven, met toestemming, ter vervanging van drie anonieme.
 
 **Resultaat:** het organische verkeer ging in vijf maanden van 60 naar 890 bezoeken per maand, waarbij de btw-pagina er alleen al 310 opleverde en vier keer zo goed converteerde als het gemiddelde van de site. De twee vermeldingen bij brancheverenigingen leverden in het eerste kwartaal elf aanvragen op. Wessels opmerking is dat het btw-artikel twee uur kostte en beter presteert dan alles wat hij verder heeft geschreven.
 
-> *"Mijn eigen klanten vroegen of ik een Nederlands bedrijf was. Niets op de site zei dat — niet het domein, niet de taal, geen adres, geen telefoonnummer."*
-> — **Wessel Fokkinga, Oprichter, Bouwadmin (Amersfoort)**
+> *"Mijn eigen klanten vroegen of ik een Nederlands bedrijf was. Niets op de site zei dat - niet het domein, niet de taal, geen adres, geen telefoonnummer."*
+> - **Wessel Fokkinga, Oprichter, Bouwadmin (Amersfoort)**
 
-**Kosten & Doorlooptijd:** €3.100 (domeinmigratie met doorverwijzingen, herschrijven met Nederlands voorop, bedrijfsgegevens en gestructureerde data, btw-presentatie, vier Nederland-specifieke pagina's, bedrijfsprofiel, vermeldingen bij sectorgidsen, casestudy's op naam) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.100 (domeinmigratie met doorverwijzingen, herschrijven met Nederlands voorop, bedrijfsgegevens en gestructureerde data, btw-presentatie, vier Nederland-specifieke pagina's, bedrijfsprofiel, vermeldingen bij sectorgidsen, casestudy's op naam) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -151,7 +151,7 @@ Alleen als u klanten op een locatie of op locatie bedient. Een profiel zonder ve
 
 ### Werken stadspagina's voor een softwareproduct?
 
-Alleen als er iets aan de regio echt verschilt — dekking, service op locatie, reactietijden. Schrijf anders over de specifiek Nederlandse aspecten van uw product, wat betere kopers oplevert.
+Alleen als er iets aan de regio echt verschilt - dekking, service op locatie, reactietijden. Schrijf anders over de specifiek Nederlandse aspecten van uw product, wat betere kopers oplevert.
 
 ### Welke Nederlandse vermeldingen zijn de moeite waard?
 
@@ -171,7 +171,7 @@ Andere Nederlandse bedrijven. Casestudy's op naam met echte bedrijfsnamen en pla
       "name": "Helpt een .nl-domein een Nederlands product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — voor een product alleen voor Nederland is het het sterkste afzonderlijke signaal dat u een Nederlandse leverancier bent."
+        "text": "Ja - voor een product alleen voor Nederland is het het sterkste afzonderlijke signaal dat u een Nederlandse leverancier bent."
       }
     },
     {
@@ -195,7 +195,7 @@ Andere Nederlandse bedrijven. Casestudy's op naam met echte bedrijfsnamen en pla
       "name": "In welke Nederlandse gidsen is een vermelding de moeite waard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brancheverenigingen en beroepsorganisaties, Nederlandse vergelijkingssites voor software, het KvK-register en vakbladen — geen algemene gidsen."
+        "text": "Brancheverenigingen en beroepsorganisaties, Nederlandse vergelijkingssites voor software, het KvK-register en vakbladen - geen algemene gidsen."
       }
     },
     {

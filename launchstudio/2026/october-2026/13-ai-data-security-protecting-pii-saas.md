@@ -15,13 +15,13 @@ AI data security is the most overlooked aspect of the AI-native development boom
 
 ## The Threat Landscape of AI-Generated Backends
 
-When an AI model generates your backend code, it relies on patterns it learned from millions of open-source repositories. Many of those repositories are simple tutorials or outdated projects that lack modern security controls. They were written to demonstrate a concept in fifteen minutes, not to survive contact with a real attacker. Here are the most common ways AI-generated SaaS apps expose PII — and why each one is more dangerous than it first appears.
+When an AI model generates your backend code, it relies on patterns it learned from millions of open-source repositories. Many of those repositories are simple tutorials or outdated projects that lack modern security controls. They were written to demonstrate a concept in fifteen minutes, not to survive contact with a real attacker. Here are the most common ways AI-generated SaaS apps expose PII - and why each one is more dangerous than it first appears.
 
 ### 1. Missing Row Level Security (RLS)
 
 If you use a BaaS (Backend as a Service) like Supabase or Firebase, your AI tool will almost certainly write client-side queries to fetch data. By default, these databases often allow broad read/write access until you explicitly lock them down.
 
-AI generators rarely write the complex SQL policies required for proper Row Level Security. Without RLS, an authenticated user might be able to manipulate a client-side API call to fetch the `users` table, exposing the emails and physical addresses of every other customer on your platform. The insidious part is that this vulnerability is invisible in normal testing — your app works flawlessly for you, the developer, because you are querying your own data. It only surfaces once a second real user signs up, which is often the exact moment you can least afford a breach: your first paying customers.
+AI generators rarely write the complex SQL policies required for proper Row Level Security. Without RLS, an authenticated user might be able to manipulate a client-side API call to fetch the `users` table, exposing the emails and physical addresses of every other customer on your platform. The insidious part is that this vulnerability is invisible in normal testing - your app works flawlessly for you, the developer, because you are querying your own data. It only surfaces once a second real user signs up, which is often the exact moment you can least afford a breach: your first paying customers.
 
 A properly configured RLS policy in Postgres looks something like `USING (auth.uid() = user_id)` attached to every table that stores user-owned rows, plus a matching `WITH CHECK` clause for inserts and updates. AI tools frequently generate the table and skip the policy entirely, or worse, generate a permissive policy like `USING (true)` just to make the demo work during development.
 
@@ -29,7 +29,7 @@ A properly configured RLS policy in Postgres looks something like `USING (auth.u
 
 A common flaw in AI-generated Node.js or Python backends is over-fetching. If a frontend component needs a user's avatar and username, the AI might generate a backend query like `SELECT * FROM users WHERE id = X`.
 
-This returns the entire user object — including hashed passwords, Stripe customer IDs, private emails, and internal role flags — to the client's browser. Even if the React component only displays the avatar, the raw PII is visible to anyone inspecting the network tab in DevTools. This is especially dangerous with `password_hash` and `stripe_customer_id` fields: a leaked Stripe customer ID doesn't grant direct financial access, but combined with other exposed data it dramatically widens an attacker's ability to impersonate a user in support channels or trigger account-recovery social engineering.
+This returns the entire user object - including hashed passwords, Stripe customer IDs, private emails, and internal role flags - to the client's browser. Even if the React component only displays the avatar, the raw PII is visible to anyone inspecting the network tab in DevTools. This is especially dangerous with `password_hash` and `stripe_customer_id` fields: a leaked Stripe customer ID doesn't grant direct financial access, but combined with other exposed data it dramatically widens an attacker's ability to impersonate a user in support channels or trigger account-recovery social engineering.
 
 ### 3. Hardcoded Secrets and Exposed Logs
 
@@ -37,28 +37,28 @@ During the debugging phase, it is common to prompt an AI to "log the API respons
 
 ### 4. Third-Party Data Sharing Without a Legal Basis
 
-A subtler but increasingly common issue: AI-generated code often pipes user data — support tickets, form submissions, even full profile objects — straight into third-party APIs (OpenAI, a transactional email provider, an analytics tool) without you ever deciding whether that transfer is appropriate under GDPR. If your AI tool wires a customer's email and message content directly into an OpenAI completion call for "smart replies," you may have just created an international data transfer you never consciously approved, with no data processing agreement in place and no record of what was sent where. Under GDPR, that is a compliance gap, not a technicality — regulators treat undocumented third-party data flows as one of the clearest signs that a company never built a data protection program in the first place.
+A subtler but increasingly common issue: AI-generated code often pipes user data - support tickets, form submissions, even full profile objects - straight into third-party APIs (OpenAI, a transactional email provider, an analytics tool) without you ever deciding whether that transfer is appropriate under GDPR. If your AI tool wires a customer's email and message content directly into an OpenAI completion call for "smart replies," you may have just created an international data transfer you never consciously approved, with no data processing agreement in place and no record of what was sent where. Under GDPR, that is a compliance gap, not a technicality - regulators treat undocumented third-party data flows as one of the clearest signs that a company never built a data protection program in the first place.
 
 ## Securing the "Last Mile" of Your Data Architecture
 
-Fixing these data security flaws requires a systemic, architectural approach that AI tools currently struggle to provide. You have to audit every endpoint, implement strict data validation, enforce least-privilege access at the database level, and map every place PII leaves your system. That last part — a full data flow map from form field to database column to third-party API call — is tedious, unglamorous work that no AI tool will do unprompted, because it requires reasoning across your entire stack simultaneously, not just the file currently open in your editor.
+Fixing these data security flaws requires a systemic, architectural approach that AI tools currently struggle to provide. You have to audit every endpoint, implement strict data validation, enforce least-privilege access at the database level, and map every place PII leaves your system. That last part - a full data flow map from form field to database column to third-party API call - is tedious, unglamorous work that no AI tool will do unprompted, because it requires reasoning across your entire stack simultaneously, not just the file currently open in your editor.
 
 For a solo founder, this "last mile" engineering can consume weeks of runway you do not have.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
-This is where [LaunchStudio](https://launchstudio.eu/en/) steps in. As a specialized initiative by [Manifera](https://www.manifera.com/) — an enterprise software development firm with 11+ years of experience, 120+ engineers, and 160+ delivered projects for clients including Vodafone, TNO, and CFLW — we provide the human expertise necessary to secure AI-generated applications.
+This is where [LaunchStudio](https://launchstudio.eu/en/) steps in. As a specialized initiative by [Manifera](https://www.manifera.com/) - an enterprise software development firm with 11+ years of experience, 120+ engineers, and 160+ delivered projects for clients including Vodafone, TNO, and CFLW - we provide the human expertise necessary to secure AI-generated applications.
 
-We do not rewrite your frontend. We integrate directly with the codebase you built using Cursor or Bolt and harden the backend. Our engineers implement strict Row Level Security, refactor API endpoints to prevent over-fetching, encrypt sensitive fields at rest, and map every place PII flows through your system — including third-party AI and email APIs — so your handling complies with European data protection standards. Our team works from Amsterdam, Singapore, and Ho Chi Minh City, giving us the coverage to move fast regardless of your time zone.
+We do not rewrite your frontend. We integrate directly with the codebase you built using Cursor or Bolt and harden the backend. Our engineers implement strict Row Level Security, refactor API endpoints to prevent over-fetching, encrypt sensitive fields at rest, and map every place PII flows through your system - including third-party AI and email APIs - so your handling complies with European data protection standards. Our team works from Amsterdam, Singapore, and Ho Chi Minh City, giving us the coverage to move fast regardless of your time zone.
 
 You built the product fast. We make sure it is safe to launch.
 
 ## Key Takeaways
 
 - AI tools generate functional code but frequently ignore critical data security practices like Row Level Security (RLS) and least-privilege database access.
-- Over-fetching data in API endpoints is a common AI-generated flaw that exposes PII — including password hashes and payment provider IDs — to the client-side browser.
+- Over-fetching data in API endpoints is a common AI-generated flaw that exposes PII - including password hashes and payment provider IDs - to the client-side browser.
 - Undocumented third-party data flows (AI APIs, analytics, email tools) are a frequently missed GDPR exposure that AI-generated code creates by default.
-- PII leaks can result in severe GDPR fines and destroy a startup's reputation before it even scales — with 45% of AI-generated code carrying at least one exploitable vulnerability.
+- PII leaks can result in severe GDPR fines and destroy a startup's reputation before it even scales - with 45% of AI-generated code carrying at least one exploitable vulnerability.
 - LaunchStudio provides the expert "last mile" engineering required to audit and secure AI-generated databases without slowing down your frontend development.
 
 [Calculate the cost to secure and launch your AI prototype using our transparent pricing tool](https://launchstudio.eu/en/#calculator).
@@ -69,7 +69,7 @@ You built the product fast. We make sure it is safe to launch.
 
 Thomas, a developer based in Utrecht, used **Bolt** to build a lightweight compliance management SaaS for small dental clinics. The app allowed clinic managers to upload staff certifications and patient consent logs. It was a brilliant idea, and Bolt helped him build a beautiful Next.js interface connected to a Supabase backend in just two weeks.
 
-However, a week before his planned launch, Thomas ran a basic penetration test. He was horrified to discover that by simply altering a user ID in the browser's local storage, he could view the uploaded PDF documents of *other* clinics. The AI had successfully connected the database, but it had completely failed to implement the RLS policies necessary to isolate tenant data. Worse, his API routes were returning full patient consent records — including names and treatment notes — to any authenticated session, regardless of which clinic that session belonged to.
+However, a week before his planned launch, Thomas ran a basic penetration test. He was horrified to discover that by simply altering a user ID in the browser's local storage, he could view the uploaded PDF documents of *other* clinics. The AI had successfully connected the database, but it had completely failed to implement the RLS policies necessary to isolate tenant data. Worse, his API routes were returning full patient consent records - including names and treatment notes - to any authenticated session, regardless of which clinic that session belonged to.
 
 Panicked and lacking the advanced SQL knowledge to write complex multi-tenant policies securely, Thomas reached out to **LaunchStudio (by Manifera)**.
 
@@ -77,14 +77,14 @@ Our engineering team immediately audited his Supabase instance. We preserved his
 
 **Result:** Thomas launched his SaaS securely to his first five dental clinics. He bypassed a potentially catastrophic GDPR violation involving patient health data that would have ended his business, and he retains full ownership of the secure, documented codebase. *"I knew how to prompt the UI, but I didn't know what I didn't know about database security. LaunchStudio saved me from a massive liability."*
 
-**Cost & Timeline:** €2,500 (Launch & Grow package) — completed in 5 business days.
+**Cost & Timeline:** €2,500 (Launch & Grow package) - completed in 5 business days.
 
 ---
 
 ## Frequently Asked Questions
 
 ### Why doesn't the AI just write the security rules for me?
-AI models write code based on the immediate context of your prompt. Security rules, like Row Level Security (RLS) in PostgreSQL, require understanding the entire relational architecture of your database and your specific business logic. Current AI struggles with this systemic, cross-file reasoning, often generating policies that are either too permissive or completely broken — or skipping them entirely and defaulting to open access.
+AI models write code based on the immediate context of your prompt. Security rules, like Row Level Security (RLS) in PostgreSQL, require understanding the entire relational architecture of your database and your specific business logic. Current AI struggles with this systemic, cross-file reasoning, often generating policies that are either too permissive or completely broken - or skipping them entirely and defaulting to open access.
 
 ### What is the biggest data security mistake solo founders make with AI code?
 Over-fetching is the most common and dangerous mistake. AI tools often generate `SELECT *` queries, sending entire database rows (including private emails, password hashes, Stripe customer IDs, and internal IDs) to the frontend. Even if the UI only displays a username, a malicious actor can view the full payload in the browser's network inspector.

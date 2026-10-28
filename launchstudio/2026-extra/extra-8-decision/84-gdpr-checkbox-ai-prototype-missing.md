@@ -31,7 +31,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-When you prompt an AI tool like Lovable, Bolt, or Cursor to "build a signup page," it writes clean, functional code: an email input, a password field, and a shiny blue button that says "Create Account." What it almost never generates is the legal infrastructure required to operate legally within the European Union. In the eyes of the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) and GDPR regulators across Europe, capturing user data without explicit consent, unbundled terms, and transparent retention policies is not an oversight — it is a compliance violation that exposes early-stage founders to significant fines and reputational risk.
+When you prompt an AI tool like Lovable, Bolt, or Cursor to "build a signup page," it writes clean, functional code: an email input, a password field, and a shiny blue button that says "Create Account." What it almost never generates is the legal infrastructure required to operate legally within the European Union. In the eyes of the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) and GDPR regulators across Europe, capturing user data without explicit consent, unbundled terms, and transparent retention policies is not an oversight - it is a compliance violation that exposes early-stage founders to significant fines and reputational risk.
 
 The trap is that everything looks fine in a demo. You show investors a slick signup flow, onboard your first ten beta users personally, and nothing breaks. The problem surfaces later, and rarely in a way you control: a school board's Data Protection Officer runs a vendor assessment before signing a contract, an enterprise procurement team sends a security questionnaire, or a user simply emails asking you to delete their account under Article 17 and you realize your database has no mechanism to do it cleanly. By the time GDPR gaps surface, they are usually blocking a specific deal rather than a hypothetical risk, which makes them expensive to fix under time pressure instead of cheap to build in from day one.
 
@@ -41,7 +41,7 @@ AI coding tools are trained on global web patterns, which disproportionately ref
 
 **1. Unbundled, Freely Given Consent:** You cannot bundle marketing newsletter opt-ins with your core Terms of Service. Consent to process personal data must be an explicit, unticked checkbox, and your database needs to record not just that consent was given but exactly when, for which purpose, and under which version of your privacy policy.
 
-**2. Right to Erasure ("Right to be Forgotten"):** If a user deletes their account, your system cannot simply flip a `is_deleted = true` boolean while leaving their personal data in Supabase plaintext. You must have an automated routine to purge or cryptographically anonymize personal records across all databases and third-party logs — including any copies sitting in Stripe metadata, Resend transactional logs, or an analytics tool's event stream.
+**2. Right to Erasure ("Right to be Forgotten"):** If a user deletes their account, your system cannot simply flip a `is_deleted = true` boolean while leaving their personal data in Supabase plaintext. You must have an automated routine to purge or cryptographically anonymize personal records across all databases and third-party logs - including any copies sitting in Stripe metadata, Resend transactional logs, or an analytics tool's event stream.
 
 **3. Data Minimization:** Storing unneeded telemetry, full IP addresses, or unhashed passwords violates basic data protection principles. AI-generated code frequently over-collects by default because verbose logging is convenient during development and nobody goes back to strip it out before launch.
 
@@ -49,21 +49,21 @@ AI coding tools are trained on global web patterns, which disproportionately ref
 
 ## The EU-Hosting Reality: Where Does Your Data Actually Live?
 
-Beyond the signup form, GDPR compliance is governed by data geography. Many AI prototypes default to US-East regions for database storage and serverless function execution because that is the default region in the platform's onboarding wizard, not because anyone made a deliberate choice. Under Schrems II and current EU-US Data Privacy Framework guidelines, transferring personal data of European citizens to uncertified US cloud instances without standard contractual clauses (SCCs) creates severe corporate compliance exposure — exposure that a corporate buyer's legal team will find within minutes of asking where your servers are.
+Beyond the signup form, GDPR compliance is governed by data geography. Many AI prototypes default to US-East regions for database storage and serverless function execution because that is the default region in the platform's onboarding wizard, not because anyone made a deliberate choice. Under Schrems II and current EU-US Data Privacy Framework guidelines, transferring personal data of European citizens to uncertified US cloud instances without standard contractual clauses (SCCs) creates severe corporate compliance exposure - exposure that a corporate buyer's legal team will find within minutes of asking where your servers are.
 
-Configuring your database and application hosting in Frankfurt, Amsterdam, or Dublin ensures low-latency performance for your European users while satisfying local privacy frameworks automatically. This is typically a one-time region setting in Supabase or Vercel, but it has to be set before production data accumulates — migrating a live database between regions later means planning a maintenance window, re-pointing every connection string, and validating that no background job silently reverts to the old region.
+Configuring your database and application hosting in Frankfurt, Amsterdam, or Dublin ensures low-latency performance for your European users while satisfying local privacy frameworks automatically. This is typically a one-time region setting in Supabase or Vercel, but it has to be set before production data accumulates - migrating a live database between regions later means planning a maintenance window, re-pointing every connection string, and validating that no background job silently reverts to the old region.
 
 ## What a GDPR-Compliant Signup Flow Actually Requires
 
-Beyond the consent checkbox itself, a genuinely compliant onboarding flow needs several pieces working together: a privacy policy that accurately lists every sub-processor you actually use (Supabase, Stripe or Mollie, Resend, any AI API), a mechanism for users to export their own data as machine-readable JSON on request, session tokens that expire after a defined period of inactivity, an audit trail that timestamps every consent event, and a data processing agreement on file with each vendor that touches personal data. None of these are generated by a prompt like "add a signup form" — they are infrastructure decisions that have to be made deliberately, once, and then left to run automatically.
+Beyond the consent checkbox itself, a genuinely compliant onboarding flow needs several pieces working together: a privacy policy that accurately lists every sub-processor you actually use (Supabase, Stripe or Mollie, Resend, any AI API), a mechanism for users to export their own data as machine-readable JSON on request, session tokens that expire after a defined period of inactivity, an audit trail that timestamps every consent event, and a data processing agreement on file with each vendor that touches personal data. None of these are generated by a prompt like "add a signup form" - they are infrastructure decisions that have to be made deliberately, once, and then left to run automatically.
 
 ## Why This Becomes a Sales Blocker, Not Just a Legal Risk
 
-For founders selling into schools, municipalities, healthcare, or any regulated B2B buyer, GDPR gaps rarely show up as a fine — they show up as a stalled deal. Procurement teams and DPOs increasingly run a vendor assessment before signing anything, and a prototype built purely from AI prompts fails that assessment on data residency, consent logging, and deletion mechanics almost every time. The fix is usually fast once someone competent looks at it, but discovering the gap mid-negotiation costs weeks of stalled momentum that a five-day pre-launch audit would have avoided entirely.
+For founders selling into schools, municipalities, healthcare, or any regulated B2B buyer, GDPR gaps rarely show up as a fine - they show up as a stalled deal. Procurement teams and DPOs increasingly run a vendor assessment before signing anything, and a prototype built purely from AI prompts fails that assessment on data residency, consent logging, and deletion mechanics almost every time. The fix is usually fast once someone competent looks at it, but discovering the gap mid-negotiation costs weeks of stalled momentum that a five-day pre-launch audit would have avoided entirely.
 
-[LaunchStudio](https://launchstudio.eu/en/) secures your AI prototype with GDPR-compliant user flows and EU cloud infrastructure — backed by Manifera's 11+ years of engineering for European enterprises like TNO and CFLW.
+[LaunchStudio](https://launchstudio.eu/en/) secures your AI prototype with GDPR-compliant user flows and EU cloud infrastructure - backed by Manifera's 11+ years of engineering for European enterprises like TNO and CFLW.
 
-[Get a full privacy and GDPR architecture review for your prototype](https://launchstudio.eu/en/#contact) — launch across the EU with complete legal confidence.
+[Get a full privacy and GDPR architecture review for your prototype](https://launchstudio.eu/en/#contact) - launch across the EU with complete legal confidence.
 
 ## Real example
 
@@ -82,9 +82,9 @@ Klaas-Jan brought the codebase to LaunchStudio. Within 5 business days, the Mani
 **Result:** LeerkrachtLiaison received unanimous approval from the municipal school DPO, securing a 12-school paid rollout valued at €18,400 in annual recurring revenue.
 
 > *"I spent months perfecting the AI prompt for parent emails, but none of that mattered until we passed the school board's GDPR audit. LaunchStudio turned a terrifying legal roadblock into a simple 5-day fix."*
-> — **Klaas-Jan Veenstra, Founder, LeerkrachtLiaison (Zwolle)**
+> - **Klaas-Jan Veenstra, Founder, LeerkrachtLiaison (Zwolle)**
 
-**Cost & Timeline:** €1,500 (Launch Ready Package, GDPR hardening + EU data migration + audit trail) — completed in 5 business days.
+**Cost & Timeline:** €1,500 (Launch Ready Package, GDPR hardening + EU data migration + audit trail) - completed in 5 business days.
 
 ---
 

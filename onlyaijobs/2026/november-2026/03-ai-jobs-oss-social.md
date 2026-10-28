@@ -1,4 +1,4 @@
-💡 Oss is known for food history. It has also been a pharmaceutical town for more than a century — and Organon's old research site became Pivot Park, an open life sciences campus.
+💡 Oss is known for food history. It has also been a pharmaceutical town for more than a century - and Organon's old research site became Pivot Park, an open life sciences campus.
 
 🔬 Two very different data worlds sit side by side. Discovery data: screening results, chemical structures, assay analytics, property prediction, with the Pivot Park Screening Centre running high-throughput screening. Manufacturing data at Organon and Aspen Oss: process analytics, deviation analysis and predictive maintenance under GMP and GAMP 5.
 

@@ -38,7 +38,7 @@ Defence and security is a growing part of the Dutch technical job market, and it
 
 This is the most common source of confusion, and the confusion costs candidates months.
 
-**Screening is conducted by a national authority, not the employer.** A security screening investigates your background — residence, employment, finances, associations — over a period of years. The employer initiates it; the decision is not theirs.
+**Screening is conducted by a national authority, not the employer.** A security screening investigates your background - residence, employment, finances, associations - over a period of years. The employer initiates it; the decision is not theirs.
 
 **Verifiable history matters as much as nationality.** The widespread belief that only Dutch nationals can work in defence is inaccurate as a general statement. What screening requires is a history that can be verified. Someone who has lived in three countries in the past five years presents a harder verification problem than someone who has lived in one, regardless of citizenship. This is a practical constraint rather than a judgement about the person.
 
@@ -106,7 +106,7 @@ None of this is intolerable, and many people prefer the clarity of a well-define
 
 Worth separating out because it is genuinely different from the rest of the sector in ways that matter for a career.
 
-Cyber security work serving defence and critical infrastructure sits partly inside cleared environments and partly in a commercial layer that serves both defence and civil clients. That commercial layer has the lightest access requirements in the sector, and the skills developed there transfer completely — every sector needs security capability, so there is no lock-in.
+Cyber security work serving defence and critical infrastructure sits partly inside cleared environments and partly in a commercial layer that serves both defence and civil clients. That commercial layer has the lightest access requirements in the sector, and the skills developed there transfer completely - every sector needs security capability, so there is no lock-in.
 
 The technical content is substantial and distinct from other defence work.
 
@@ -114,7 +114,7 @@ The technical content is substantial and distinct from other defence work.
 
 **Base rates are extreme.** Genuine intrusions are rare against enormous volumes of benign activity. A detector with a one-in-a-thousand false positive rate generates an unmanageable alert volume at realistic traffic levels, which means precision requirements are driven by analyst capacity rather than chosen freely.
 
-**Labels are scarce and biased.** You know about attacks that were detected. Attacks that succeeded silently are, by definition, absent from your training data — which is the most consequential selection bias imaginable for this problem.
+**Labels are scarce and biased.** You know about attacks that were detected. Attacks that succeeded silently are, by definition, absent from your training data - which is the most consequential selection bias imaginable for this problem.
 
 **Time matters enormously.** Detecting an intrusion three weeks after it began is much less valuable than detecting it in an hour, so evaluation must weight timeliness rather than only accuracy.
 

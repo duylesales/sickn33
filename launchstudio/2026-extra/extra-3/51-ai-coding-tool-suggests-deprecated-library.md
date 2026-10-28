@@ -31,66 +31,66 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An AI coding tool's suggestions are shaped by its training data, which has a specific cutoff point in time — meaning a library or package that was actively maintained and widely recommended when the tool's underlying model was trained can, by the time you're actually using the tool, already be deprecated, unmaintained, or superseded by a newer standard approach, without the tool having any inherent way of knowing that its own recommendation has become outdated.
+An AI coding tool's suggestions are shaped by its training data, which has a specific cutoff point in time - meaning a library or package that was actively maintained and widely recommended when the tool's underlying model was trained can, by the time you're actually using the tool, already be deprecated, unmaintained, or superseded by a newer standard approach, without the tool having any inherent way of knowing that its own recommendation has become outdated.
 
 ## Why This Is a Distinct Problem From the General Dependency Risk Covered Elsewhere
 
-The general dependency audit guidance covered throughout broader content addresses checking whether a package is currently maintained and free of known vulnerabilities — a check performed against the present state of a dependency already in your codebase. This article addresses something that happens earlier: the AI tool actively recommending a dependency that may already be on a deprecation path at the moment of suggestion, meaning the problem exists from the very first line of generated code referencing it, not something that develops later.
+The general dependency audit guidance covered throughout broader content addresses checking whether a package is currently maintained and free of known vulnerabilities - a check performed against the present state of a dependency already in your codebase. This article addresses something that happens earlier: the AI tool actively recommending a dependency that may already be on a deprecation path at the moment of suggestion, meaning the problem exists from the very first line of generated code referencing it, not something that develops later.
 
 ## Why This Happens Mechanically
 
-An AI coding tool's knowledge of "what's the standard, recommended way to do this" is baked into its training at a specific point in time, and that knowledge doesn't automatically update as the broader ecosystem evolves after training concludes — meaning a tool can confidently, fluently recommend an approach that was genuinely correct and standard when its training data was assembled, while the actual current ecosystem has already moved on to something different by the time you're using the tool.
+An AI coding tool's knowledge of "what's the standard, recommended way to do this" is baked into its training at a specific point in time, and that knowledge doesn't automatically update as the broader ecosystem evolves after training concludes - meaning a tool can confidently, fluently recommend an approach that was genuinely correct and standard when its training data was assembled, while the actual current ecosystem has already moved on to something different by the time you're using the tool.
 
 ## Where This Specifically Shows Up
 
-**A package still technically functional but no longer receiving security updates.** Deprecated doesn't always mean immediately broken — a deprecated package can continue working exactly as before for a long time, with the actual risk being the absence of future security patches for any vulnerability discovered after deprecation, a risk that's invisible in normal functional testing.
+**A package still technically functional but no longer receiving security updates.** Deprecated doesn't always mean immediately broken - a deprecated package can continue working exactly as before for a long time, with the actual risk being the absence of future security patches for any vulnerability discovered after deprecation, a risk that's invisible in normal functional testing.
 
-**A recommended approach that's been superseded by a meaningfully better, more secure standard pattern.** Beyond individual packages, entire recommended patterns or approaches can become outdated — an authentication approach that was reasonable practice at one point can be superseded by a more secure, more current standard the AI tool's training simply predates.
+**A recommended approach that's been superseded by a meaningfully better, more secure standard pattern.** Beyond individual packages, entire recommended patterns or approaches can become outdated - an authentication approach that was reasonable practice at one point can be superseded by a more secure, more current standard the AI tool's training simply predates.
 
-**Confident, fluent recommendation language that gives no indication of the underlying staleness.** An AI tool doesn't hedge or flag "this was current as of my training data" when making a suggestion — it simply recommends, with the same confident tone regardless of whether the underlying recommendation is genuinely current or has quietly become outdated since training concluded.
+**Confident, fluent recommendation language that gives no indication of the underlying staleness.** An AI tool doesn't hedge or flag "this was current as of my training data" when making a suggestion - it simply recommends, with the same confident tone regardless of whether the underlying recommendation is genuinely current or has quietly become outdated since training concluded.
 
 ## How to Actually Check for This
 
-Cross-referencing any significant dependency an AI tool suggests against its actual current maintenance status and community-recommended alternatives — a quick check against the package's own repository or a package registry's current status — rather than trusting the AI tool's confident recommendation as inherently current, closes this gap directly and doesn't take significantly longer than accepting the suggestion without verification.
+Cross-referencing any significant dependency an AI tool suggests against its actual current maintenance status and community-recommended alternatives - a quick check against the package's own repository or a package registry's current status - rather than trusting the AI tool's confident recommendation as inherently current, closes this gap directly and doesn't take significantly longer than accepting the suggestion without verification.
 
 ## Why This Deserves Attention Alongside, Not Instead of, the Broader Dependency Audit
 
-This specific check — verifying a suggestion's currency at the moment of adoption — complements rather than replaces the periodic dependency audit covered elsewhere in broader guidance, since a package that was genuinely current when adopted can still become deprecated later, requiring the same ongoing vigilance regardless of how carefully the initial adoption decision was made.
+This specific check - verifying a suggestion's currency at the moment of adoption - complements rather than replaces the periodic dependency audit covered elsewhere in broader guidance, since a package that was genuinely current when adopted can still become deprecated later, requiring the same ongoing vigilance regardless of how carefully the initial adoption decision was made.
 
 [LaunchStudio](https://launchstudio.eu/en/) checks both the currency of AI-suggested dependencies at adoption and their ongoing maintenance status over time, closing this specific staleness gap alongside the broader dependency audit covered throughout production hardening, backed by Manifera's broader engineering discipline staying current with evolving ecosystem standards across its delivered projects.
 
-[Get your AI tool's suggested dependencies checked against what's actually current](https://launchstudio.eu/en/#calculator) — a confident recommendation and a current one aren't automatically the same claim.
+[Get your AI tool's suggested dependencies checked against what's actually current](https://launchstudio.eu/en/#calculator) - a confident recommendation and a current one aren't automatically the same claim.
 
 ## Not All Deprecation Warnings Mean the Same Thing: A Framework for What to Fix First
 
 Once a founder has checked and found that an AI-suggested dependency is actually deprecated, a second, equally practical question follows immediately: does this need fixing right now, or can it reasonably wait. Not every deprecation carries the same urgency, and treating all of them as equally critical either causes needless panic over a low-stakes finding or, worse, trains a founder to stop taking deprecation warnings seriously at all. A rough framework, based on two independent factors, makes the actual priority considerably clearer.
 
-**Factor one: how exposed is the deprecated package to real risk.** A deprecated package handling authentication, payment processing, or direct external input has a meaningfully higher consequence if a future vulnerability goes unpatched than a deprecated package handling, say, internal date formatting or a cosmetic UI animation. The same word — "deprecated" — describes a fundamentally different level of actual risk depending entirely on what the package is doing and what it's exposed to.
+**Factor one: how exposed is the deprecated package to real risk.** A deprecated package handling authentication, payment processing, or direct external input has a meaningfully higher consequence if a future vulnerability goes unpatched than a deprecated package handling, say, internal date formatting or a cosmetic UI animation. The same word - "deprecated" - describes a fundamentally different level of actual risk depending entirely on what the package is doing and what it's exposed to.
 
 **Factor two: how actively is the deprecated package's own ecosystem winding down.** Some deprecated packages are formally deprecated but still receive critical security patches for a defined sunset period; others stopped receiving any updates the moment deprecation was announced. Checking the specific deprecation notice, not just the word "deprecated" itself, reveals which situation you're actually in, since a package with an active, if time-limited, sunset window carries different urgency than one that's already gone fully silent.
 
-**High exposure plus fully abandoned: fix this before anything else, including before launch if you haven't launched yet.** This combination — a package touching sensitive functionality that's already receiving no maintenance at all — is the one genuine "stop and fix this now" category, since both the consequence of a future vulnerability and the odds of one eventually surfacing unpatched are working against you simultaneously.
+**High exposure plus fully abandoned: fix this before anything else, including before launch if you haven't launched yet.** This combination - a package touching sensitive functionality that's already receiving no maintenance at all - is the one genuine "stop and fix this now" category, since both the consequence of a future vulnerability and the odds of one eventually surfacing unpatched are working against you simultaneously.
 
-**High exposure but still in an active sunset window: schedule the replacement, don't panic about the current moment.** A sensitive-area package that's deprecated but still patched for now gives you a real, if bounded, window to plan a proper replacement rather than an emergency one — worth scheduling deliberately rather than either ignoring it or dropping everything else to address it immediately.
+**High exposure but still in an active sunset window: schedule the replacement, don't panic about the current moment.** A sensitive-area package that's deprecated but still patched for now gives you a real, if bounded, window to plan a proper replacement rather than an emergency one - worth scheduling deliberately rather than either ignoring it or dropping everything else to address it immediately.
 
-**Low exposure regardless of maintenance status: track it, address it during normal maintenance.** A deprecated package in a low-stakes area doesn't need to jump the queue ahead of other, more consequential work — noting it for the next routine dependency pass is a reasonable, proportionate response rather than either ignoring it indefinitely or over-reacting to a genuinely low-risk finding.
+**Low exposure regardless of maintenance status: track it, address it during normal maintenance.** A deprecated package in a low-stakes area doesn't need to jump the queue ahead of other, more consequential work - noting it for the next routine dependency pass is a reasonable, proportionate response rather than either ignoring it indefinitely or over-reacting to a genuinely low-risk finding.
 
-This two-factor read is what turns "we found a deprecated package" from a single, undifferentiated alarm into an actual prioritization decision — the same risk-based thinking that should generally govern how any finding gets triaged, rather than treating every deprecation notice, regardless of what it actually touches, as equally urgent.
+This two-factor read is what turns "we found a deprecated package" from a single, undifferentiated alarm into an actual prioritization decision - the same risk-based thinking that should generally govern how any finding gets triaged, rather than treating every deprecation notice, regardless of what it actually touches, as equally urgent.
 
 ## Real example
 
 ### An AI-Native Founder in Action: A Recommended Package Already on Its Way Out
 
-Sem, a former logistics analyst turned founder in Zwolle, built RouteCalc, an AI tool optimizing multi-stop delivery routes for small courier businesses, using Cursor, which had recommended and implemented a specific geolocation calculation library early in development — a suggestion Sem accepted without independently checking its current status, trusting the tool's confident, fluent recommendation.
+Sem, a former logistics analyst turned founder in Zwolle, built RouteCalc, an AI tool optimizing multi-stop delivery routes for small courier businesses, using Cursor, which had recommended and implemented a specific geolocation calculation library early in development - a suggestion Sem accepted without independently checking its current status, trusting the tool's confident, fluent recommendation.
 
-When LaunchStudio conducted a dependency review ahead of RouteCalc's launch, the specific geolocation library turned out to have been officially deprecated by its maintainers several months before Sem had even started building, with the deprecation notice specifically recommending a different, actively-maintained alternative — information that existed publicly and was easily checkable, but that Cursor's training data had simply predated.
+When LaunchStudio conducted a dependency review ahead of RouteCalc's launch, the specific geolocation library turned out to have been officially deprecated by its maintainers several months before Sem had even started building, with the deprecation notice specifically recommending a different, actively-maintained alternative - information that existed publicly and was easily checkable, but that Cursor's training data had simply predated.
 
 **Result:** LaunchStudio replaced the deprecated library with the actively-maintained recommended alternative before launch, closing a gap that, left unaddressed, would have meant RouteCalc's core routing functionality depended on a package with no ongoing security maintenance from its very first version.
 
 > *"Cursor recommended it with total confidence, the same way it recommends anything, and I had no reason to question it. It turned out the library had already been deprecated for months by the time I started building, which the tool itself had no way of knowing since its training simply predated that deprecation."*
-> — **Sem Vermeer, Founder, RouteCalc (Zwolle)**
+> - **Sem Vermeer, Founder, RouteCalc (Zwolle)**
 
-**Cost & Timeline:** €650 (dependency currency review and replacement) — completed in 2 business days.
+**Cost & Timeline:** €650 (dependency currency review and replacement) - completed in 2 business days.
 
 ---
 
@@ -106,15 +106,15 @@ Applies broadly, since it's a structural consequence of how any AI model's train
 
 ### Does a deprecated package that's "still working fine" actually need to be replaced immediately, or can it wait?
 
-Depends on the specific package and its role — a deprecated package handling security-sensitive functionality warrants more urgent replacement than one handling a low-stakes, cosmetic feature, mirroring the same risk-based prioritization covered throughout broader guidance generally.
+Depends on the specific package and its role - a deprecated package handling security-sensitive functionality warrants more urgent replacement than one handling a low-stakes, cosmetic feature, mirroring the same risk-based prioritization covered throughout broader guidance generally.
 
 ### How would a founder know if an entire recommended approach, not just a single package, has become outdated?
 
-This is harder to self-check than a single package's status, since it requires broader awareness of current ecosystem standards — an experienced technical reviewer familiar with current best practices is considerably more reliable for catching this category than a founder's own research alone.
+This is harder to self-check than a single package's status, since it requires broader awareness of current ecosystem standards - an experienced technical reviewer familiar with current best practices is considerably more reliable for catching this category than a founder's own research alone.
 
 ### Does this concern mean AI coding tools are becoming less reliable as time passes since their training?
 
-To some degree, for exactly the specific category of "what's currently recommended" — the tool's core code-generation capability doesn't degrade, but its knowledge of current ecosystem standards does become progressively more dated the longer it's been since training, making periodic verification increasingly valuable over a tool's active lifetime.
+To some degree, for exactly the specific category of "what's currently recommended" - the tool's core code-generation capability doesn't degrade, but its knowledge of current ecosystem standards does become progressively more dated the longer it's been since training, making periodic verification increasingly valuable over a tool's active lifetime.
 
 <script type="application/ld+json">
 {
@@ -142,7 +142,7 @@ To some degree, for exactly the specific category of "what's currently recommend
       "name": "Does a deprecated but still-working package need immediate replacement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on its role — security-sensitive functionality warrants more urgent replacement than low-stakes features."
+        "text": "Depends on its role - security-sensitive functionality warrants more urgent replacement than low-stakes features."
       }
     },
     {

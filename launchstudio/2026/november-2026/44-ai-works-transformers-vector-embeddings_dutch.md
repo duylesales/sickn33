@@ -41,7 +41,7 @@ Dit inzicht stelt u in staat om de vraag *"Kan de AI dit?"* te transformeren naa
 
 ## De Motor: De Transformer-Architectuur
 
-Vóór 2017 lazen taalmodellen tekst sequentieel — woord voor woord, zoals een mens een boek leest. Was het document lang, dan was het model aan het einde van hoofdstuk tien alweer vergeten wat er in hoofdstuk één gebeurde.
+Vóór 2017 lazen taalmodellen tekst sequentieel - woord voor woord, zoals een mens een boek leest. Was het document lang, dan was het model aan het einde van hoofdstuk tien alweer vergeten wat er in hoofdstuk één gebeurde.
 
 Toen introduceerde Google de **Transformer**.
 
@@ -106,9 +106,9 @@ In 10 werkdagen herbouwde LaunchStudio de feature volgens de regels van AI-engin
 **Resultaat:** De hallucinaties verdwenen volledig omdat de aandacht van het model gefocust was op een compact stuk tekst. De API-kosten per samenvatting daalden van €0,45 naar €0,01. Time-outs behoorden tot het verleden. De feature werd het meest gewaardeerde onderdeel van het platform.
 
 > *"Ik dacht vroeger dat mijn werk als PM ophield bij het schrijven van een goede prompt. LaunchStudio leerde me dat het ontwerpen van een AI-product begint bij het ontwerpen van de datastroom. Zij lieten me zien hoe je vectoren en aandachtsmechanismen gebruikt om software te bouwen die betrouwbaar en winstgevend is."*
-> — **Julia Evans, Lead Product Manager, LexiCore (Londen)**
+> - **Julia Evans, Lead Product Manager, LexiCore (Londen)**
 
-**Kosten & Doorlooptijd:** €6.200 (Launch & Grow Pakket met RAG Implementatie Add-on) — productie-klaar en live binnen 10 werkdagen.
+**Kosten & Doorlooptijd:** €6.200 (Launch & Grow Pakket met RAG Implementatie Add-on) - productie-klaar en live binnen 10 werkdagen.
 
 ---
 

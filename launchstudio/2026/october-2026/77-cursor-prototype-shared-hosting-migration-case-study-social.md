@@ -1,6 +1,6 @@
-💥 Tomasz got Product Hunt-featured — and crashed — tomasz wieczorek, founder of InvoiceNest, a freelance-invoicing tool built with **Cursor**, deployed his app on a €6/month shared hosting plan to save money, and watched it die repeatedly the moment real traffic arrived. 🧠
+💥 Tomasz got Product Hunt-featured - and crashed - tomasz wieczorek, founder of InvoiceNest, a freelance-invoicing tool built with **Cursor**, deployed his app on a €6/month shared hosting plan to save money, and watched it die repeatedly the moment real traffic arrived. 🧠
 
-If your AI-built app is running on hosting bought for a WordPress blog, there's no "scale up" button waiting for you when traffic spikes — the plan simply kills your process.
+If your AI-built app is running on hosting bought for a WordPress blog, there's no "scale up" button waiting for you when traffic spikes - the plan simply kills your process.
 
 ❌ Shared hosting process limits killing the Node app mid-transaction under real load
 ❌ No process manager, so crashes meant repeated downtime during peak traffic

@@ -1,4 +1,4 @@
-🚨 Olaf Terlouw, treasurer of a football club in Maarssen with a web development background, built Sportveldhuur with v0: clubs rent out unused pitches and training slots to other teams and companies, with online booking and payment. Nine clubs in the Utrecht region used it. Then a renter who was also a developer noticed he could cancel other teams' bookings — the cancellation action accepted any booking ID. 😳
+🚨 Olaf Terlouw, treasurer of a football club in Maarssen with a web development background, built Sportveldhuur with v0: clubs rent out unused pitches and training slots to other teams and companies, with online booking and payment. Nine clubs in the Utrecht region used it. Then a renter who was also a developer noticed he could cancel other teams' bookings - the cancellation action accepted any booking ID. 😳
 
 Four Server Actions only checked for a logged-in session. The Stripe secret key had been renamed with a NEXT_PUBLIC_ prefix while debugging and sat in the browser bundle. Preview deployments used production environment variables and were publicly reachable. And a cached club dashboard with revenue figures was briefly shown to another club's treasurer after a deploy. Here's what v0 apps need for Server Actions, environment variables and Vercel settings: 🧠
 
@@ -14,7 +14,7 @@ Four Server Actions only checked for a logged-in session. The Stripe secret key 
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure every form in your v0 app is a door that checks who's knocking. ⚙️
 
-His result: €2,300, eight business days. No further unauthorised cancellations or cross-club exposure, Sportveldhuur expanded to 16 clubs, and Olaf still builds new screens in v0 — reviewed against the checklist before each deploy. 🚀
+His result: €2,300, eight business days. No further unauthorised cancellations or cross-club exposure, Sportveldhuur expanded to 16 clubs, and Olaf still builds new screens in v0 - reviewed against the checklist before each deploy. 🚀
 
 👉 AI prototype to production with v0: Server Actions, environment variables and Vercel settings: https://launchstudio.eu/en/blog/ai-prototype-to-production-with-v0-server-actions-environment-variables-and-vercel-settings
 

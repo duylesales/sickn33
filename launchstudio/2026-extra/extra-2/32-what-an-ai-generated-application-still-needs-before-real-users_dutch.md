@@ -59,14 +59,14 @@ Manifera's audits voor sessie- en tokenbeveiliging worden uitgevoerd door het en
 
 ## Andere Sessiezwakheden Die Samengaan met Ontbrekende Handtekeningverificatie
 
-Een ontbrekende handtekeningverificatie op JSON Web Tokens komt zelden alleen — het duikt doorgaans op naast een cluster van gerelateerde zwakheden in de sessie-afhandeling die tijdens dezelfde controle direct moeten worden meegenomen:
+Een ontbrekende handtekeningverificatie op JSON Web Tokens komt zelden alleen - het duikt doorgaans op naast een cluster van gerelateerde zwakheden in de sessie-afhandeling die tijdens dezelfde controle direct moeten worden meegenomen:
 
-- **Waar het token aan de client-zijde wordt opgeslagen** — een JWT die in `localStorage` wordt bewaard, kan worden uitgelezen door elk script dat op de pagina draait, inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerd cross-site scripting (XSS) lek. Een correct geconfigureerd `httpOnly`-cookie is daarentegen voor geen enkel paginascript toegankelijk.
-- **Rotatie van refresh tokens** — een langdurig geldig refresh token dat voor onbepaalde tijd wordt hergebruikt in plaats van bij elk gebruik te worden geroteerd en ongeldig gemaakt, geeft een eenmalige diefstal dezelfde oneindige waarde als een gestolen permanent wachtwoord.
-- **Intrekking bij uitloggen of wachtwoordwijziging** — op "uitloggen" klikken moet het eerdere token daadwerkelijk onbruikbaar maken, en niet alleen verwijderen uit het huidige browsertabblad. Evenzo moet het wijzigen van een wachtwoord elke andere actieve sessie die aan dat account is gekoppeld direct ongeldig maken.
-- **Claims volgens het 'least-privilege' principe** — een token dat brede beheerdersrechten codeert voor elke ingelogde gebruiker, in plaats van uitsluitend de minimale rechten die die specifieke gebruiker daadwerkelijk nodig heeft, verandert elke toekomstige fout in de token-afhandeling in een direct catastrofaal beveiligingslek.
+- **Waar het token aan de client-zijde wordt opgeslagen** - een JWT die in `localStorage` wordt bewaard, kan worden uitgelezen door elk script dat op de pagina draait, inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerd cross-site scripting (XSS) lek. Een correct geconfigureerd `httpOnly`-cookie is daarentegen voor geen enkel paginascript toegankelijk.
+- **Rotatie van refresh tokens** - een langdurig geldig refresh token dat voor onbepaalde tijd wordt hergebruikt in plaats van bij elk gebruik te worden geroteerd en ongeldig gemaakt, geeft een eenmalige diefstal dezelfde oneindige waarde als een gestolen permanent wachtwoord.
+- **Intrekking bij uitloggen of wachtwoordwijziging** - op "uitloggen" klikken moet het eerdere token daadwerkelijk onbruikbaar maken, en niet alleen verwijderen uit het huidige browsertabblad. Evenzo moet het wijzigen van een wachtwoord elke andere actieve sessie die aan dat account is gekoppeld direct ongeldig maken.
+- **Claims volgens het 'least-privilege' principe** - een token dat brede beheerdersrechten codeert voor elke ingelogde gebruiker, in plaats van uitsluitend de minimale rechten die die specifieke gebruiker daadwerkelijk nodig heeft, verandert elke toekomstige fout in de token-afhandeling in een direct catastrofaal beveiligingslek.
 
-Geen van deze vier punten vereist een fundamenteel andere benadering van authenticatie — gevestigde providers zoals Auth0 of Supabase Auth handelen dit standaard correct af wanneer hun out-of-the-box stromen worden gebruikt zoals bedoeld. Het risico ontstaat vrijwel altijd in de maatwerklogica die er bovenop wordt gebouwd: een zelfgeschreven verversingsmechanisme, een handmatige middleware-functie of een helper voor tokenuitlezing die later is toegevoegd zonder dezelfde strenge controle. Een werkend inlogscherm bewijst dat de voordeur stevig is; het zegt niets over de vraag of elke deur erachter op exact dezelfde manier op slot gaat.
+Geen van deze vier punten vereist een fundamenteel andere benadering van authenticatie - gevestigde providers zoals Auth0 of Supabase Auth handelen dit standaard correct af wanneer hun out-of-the-box stromen worden gebruikt zoals bedoeld. Het risico ontstaat vrijwel altijd in de maatwerklogica die er bovenop wordt gebouwd: een zelfgeschreven verversingsmechanisme, een handmatige middleware-functie of een helper voor tokenuitlezing die later is toegevoegd zonder dezelfde strenge controle. Een werkend inlogscherm bewijst dat de voordeur stevig is; het zegt niets over de vraag of elke deur erachter op exact dezelfde manier op slot gaat.
 
 ## Echt voorbeeld
 
@@ -79,9 +79,9 @@ De oude sessie van een vertrokken teamlid, die maanden eerder tijdens de ontwikk
 **Resultaat:** LaunchStudio implementeerde een correcte handtekeningverificatie bij elk verzoek en voegde een redelijke tokenvervaldatum toe met een werkende verversingsstroom. Dit sloot zowel het risico op vervalsing als het risico op een onbeperkte sessie.
 
 > *"Ik kwam er bijna per ongeluk achter, puur door iets op te merken in de statistieken wat niet helemaal logisch was. Er was geen foutmelding of waarschuwing die me op zichzelf verteld zou hebben dat dit überhaupt een mogelijkheid was."*
-> — **Britt Hendriks, Oprichter, LeesKring (Hoorn)**
+> - **Britt Hendriks, Oprichter, LeesKring (Hoorn)**
 
-**Kosten en tijdlijn:** € 2.300 (JWT-verificatie en uitharding van sessieverloop) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (JWT-verificatie en uitharding van sessieverloop) - voltooid in 7 werkdagen.
 
 ---
 
@@ -93,15 +93,15 @@ Omdat een AI-codeertool of een haastig geschreven middleware-functie de payload 
 
 ### Zou een verificatiekloof in handtekeningen zoals deze zichtbaar zijn voor gebruikers tijdens het normale inloggen?
 
-Nee, in het geheel niet — legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest.
+Nee, in het geheel niet - legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest.
 
-### Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten — helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?
+### Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten - helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?
 
-Ja, aanzienlijk — enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien.
+Ja, aanzienlijk - enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien.
 
 ### Is dit gerelateerd aan de visie van Herre Roelevink dat AI-tools uitstekend zijn in functies maar zwak in beveiligingsrandgevallen?
 
-Ja, direct — een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt.
+Ja, direct - een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt.
 
 ### Wat is de snelste manier voor een oprichter om te controleren of zijn eigen tokens cryptografisch worden geverifieerd?
 
@@ -125,15 +125,15 @@ Door een bestaand geldig token uit de browserdeveloper tools te kopiëren, de pa
       "name": "Zou een verificatiekloof in handtekeningen zoals deze zichtbaar zijn voor gebruikers tijdens het normale inloggen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, in het geheel niet — legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest."
+        "text": "Nee, in het geheel niet - legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest."
       }
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten — helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?",
+      "name": "Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten - helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, aanzienlijk — enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien."
+        "text": "Ja, aanzienlijk - enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien."
       }
     },
     {
@@ -141,7 +141,7 @@ Door een bestaand geldig token uit de browserdeveloper tools te kopiëren, de pa
       "name": "Is dit gerelateerd aan de visie van Herre Roelevink dat AI-tools uitstekend zijn in functies maar zwak in beveiligingsrandgevallen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, direct — een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt."
+        "text": "Ja, direct - een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt."
       }
     },
     {

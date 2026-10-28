@@ -37,7 +37,7 @@ Heerlen is a city of roughly 87,000 people in the far south of Limburg, and its 
 
 ## What "Built by Policy" Means in Practice
 
-Markets that grow organically cluster around a natural advantage — a port, a university's research strength, an industrial tradition. Heerlen's data sector clusters around decisions, and that produces a different shape.
+Markets that grow organically cluster around a natural advantage - a port, a university's research strength, an industrial tradition. Heerlen's data sector clusters around decisions, and that produces a different shape.
 
 **Anchor employers are large and institutional.** National statistics and pension administration are here because they were placed here, and they are stable, sizeable and process-driven. They are not going anywhere, which makes the employment base more secure than in a market dependent on a few scale-ups.
 
@@ -45,7 +45,7 @@ Markets that grow organically cluster around a natural advantage — a port, a u
 
 **Talent has to be attracted rather than assumed.** In Amsterdam, employers compete for talent that is already present. Here, employers and the region actively recruit, which changes the candidate's negotiating position favourably and means relocation support and flexibility are more available than candidates expect.
 
-**Public funding shapes the innovation layer.** Several initiatives are supported by regional and European development funding. This is not a criticism — it is how regional economic development works — but it does mean candidates should ask whether a specific team is funded operationally or through a time-limited programme.
+**Public funding shapes the innovation layer.** Several initiatives are supported by regional and European development funding. This is not a criticism - it is how regional economic development works - but it does mean candidates should ask whether a specific team is funded operationally or through a time-limited programme.
 
 ## The Technical Substance: Official Statistics
 
@@ -178,7 +178,7 @@ None of these questions is impolite in this market. Institutional employers are 
 
 ## Where to Start
 
-If measurement done carefully appeals to you more than shipping quickly, this market deserves a look that most candidates never give it. Start with the statistics office's published methodological work — it will tell you immediately whether this kind of problem engages you — and use the campus as the single entry point to the smaller companies.
+If measurement done carefully appeals to you more than shipping quickly, this market deserves a look that most candidates never give it. Start with the statistics office's published methodological work - it will tell you immediately whether this kind of problem engages you - and use the campus as the single entry point to the smaller companies.
 
 Browse current AI, machine learning and data vacancies in and around Heerlen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -204,7 +204,7 @@ Probably not in the anchor employers, which are methodological and administrativ
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is statistical agency work technically interesting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and more rigorous than most commercial analytics — register-based inference, formal disclosure control and system-wide consistency are genuinely hard constraints."}},
+    {"@type": "Question", "name": "Is statistical agency work technically interesting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and more rigorous than most commercial analytics - register-based inference, formal disclosure control and system-wide consistency are genuinely hard constraints."}},
     {"@type": "Question", "name": "What does pension data work involve?", "acceptedAnswer": {"@type": "Answer", "text": "Long-horizon stochastic projection, longevity modelling where small errors compound across millions of participants, and resolving decades-old employment records."}},
     {"@type": "Question", "name": "How useful is the German border from Heerlen?", "acceptedAnswer": {"@type": "Answer", "text": "Very, if you speak German. Aachen is thirty to forty minutes away with a leading technical university and substantial industrial base."}},
     {"@type": "Question", "name": "Will I hit a ceiling in an institutional employer?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly. Progression is structured and slower, and senior technical tracks sometimes exist on paper more than in practice. Ask who occupies it."}},

@@ -8,9 +8,9 @@
 **The Manifera Solution:**
 ✅ **Event-Streaming Over Polling:** A Kafka-based ingestion layer and a dedicated time-series database cut dashboard latency by 90%+ by decoupling ingestion from the dashboards consuming it.
 ✅ **Amsterdam-Sequenced, Vessel-by-Vessel Cutover:** Dutch architects design the migration plan so production stability is protected at every step, with phased rollout instead of a fleet-wide big bang.
-✅ **Vietnam Builds in Parallel, 10-14 Weeks:** The Ho Chi Minh City pod builds the rebuild alongside your existing team's maintenance work, for €42,000-€58,000 — without pulling five engineers off the platform they're keeping alive.
+✅ **Vietnam Builds in Parallel, 10-14 Weeks:** The Ho Chi Minh City pod builds the rebuild alongside your existing team's maintenance work, for €42,000-€58,000 - without pulling five engineers off the platform they're keeping alive.
 
-A Danish offshore wind operator cut dashboard lag from 90 seconds to under 2 — and caught a real bearing-temperature fault during the rebuild itself. 🌊
+A Danish offshore wind operator cut dashboard lag from 90 seconds to under 2 - and caught a real bearing-temperature fault during the rebuild itself. 🌊
 
 👉 Read our full deep dive on offshore software development services in Sliedrecht: https://www.manifera.com/blog/offshore-software-development-services-sliedrecht
 

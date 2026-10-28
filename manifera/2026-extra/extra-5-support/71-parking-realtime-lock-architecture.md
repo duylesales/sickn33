@@ -20,19 +20,19 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a parking technology company building a reservation platform — letting drivers book a specific space at a garage or lot ahead of arrival, rather than simply circling until one appears — faces a foundational architecture decision that directly determines whether the platform feels dependable or quietly erodes driver trust: whether real-time, atomic space locking is designed into the core reservation architecture from the start, or treated as a refinement to be layered on once the basic booking flow is working.
+A CTO at a parking technology company building a reservation platform - letting drivers book a specific space at a garage or lot ahead of arrival, rather than simply circling until one appears - faces a foundational architecture decision that directly determines whether the platform feels dependable or quietly erodes driver trust: whether real-time, atomic space locking is designed into the core reservation architecture from the start, or treated as a refinement to be layered on once the basic booking flow is working.
 
 ## Why Naive Reservation Handling Produces Double-Booked Spaces
 
-The most naive approach to space reservation — a driver selects a space, the system checks its status against the database, and only marks it reserved once the booking is confirmed — introduces a race condition directly tied to how many drivers are attempting to book the same limited inventory of spaces in the same narrow window. Even a moderately busy facility, with a handful of drivers converging on the same popular entrance-adjacent spaces during a commuter rush or event peak, produces visibly broken behavior under this model — a driver arriving to find their reserved space already occupied by another vehicle, or two drivers both receiving a confirmation for the identical space, since a double-booked physical space is a considerably more visible and consequential failure than a double-booked digital good, given that one driver is left circling a full facility with a confirmation in hand that the physical world simply cannot honor.
+The most naive approach to space reservation - a driver selects a space, the system checks its status against the database, and only marks it reserved once the booking is confirmed - introduces a race condition directly tied to how many drivers are attempting to book the same limited inventory of spaces in the same narrow window. Even a moderately busy facility, with a handful of drivers converging on the same popular entrance-adjacent spaces during a commuter rush or event peak, produces visibly broken behavior under this model - a driver arriving to find their reserved space already occupied by another vehicle, or two drivers both receiving a confirmation for the identical space, since a double-booked physical space is a considerably more visible and consequential failure than a double-booked digital good, given that one driver is left circling a full facility with a confirmation in hand that the physical world simply cannot honor.
 
 ## What Real-Time, Atomic Space Locking Actually Solves
 
-Real-time space locking addresses the double-booking problem directly: the moment a driver selects a specific space, it is provisionally locked against the authoritative facility inventory for a short, bounded window, preventing any other driver from completing a reservation on the same space until the lock either converts into a confirmed booking or expires and releases back into available inventory. This differs meaningfully from a simple "mark as reserved on confirmation" model, since the vulnerable window in a naive system is precisely the gap between a driver selecting a space and completing checkout — a gap during which, without an active lock, a second driver can select and confirm the same space, an outcome the locking architecture is specifically designed to make structurally impossible rather than merely unlikely.
+Real-time space locking addresses the double-booking problem directly: the moment a driver selects a specific space, it is provisionally locked against the authoritative facility inventory for a short, bounded window, preventing any other driver from completing a reservation on the same space until the lock either converts into a confirmed booking or expires and releases back into available inventory. This differs meaningfully from a simple "mark as reserved on confirmation" model, since the vulnerable window in a naive system is precisely the gap between a driver selecting a space and completing checkout - a gap during which, without an active lock, a second driver can select and confirm the same space, an outcome the locking architecture is specifically designed to make structurally impossible rather than merely unlikely.
 
 ## Why Retrofitting This Onto an Existing Platform Is Genuinely Difficult
 
-A parking platform built initially around naive, check-then-reserve inventory handling, with real-time atomic locking planned as a later refinement, tends to discover that this technique requires architectural decisions woven throughout the core reservation logic — how facility inventory state is structured to support short-lived provisional locks per individual space, how the booking flow separates lock acquisition from payment confirmation, how the system reliably reconciles expired locks back into available inventory without a stale lock permanently blocking a space no driver actually holds. Retrofitting this architecture onto a platform already built around a simpler, mark-on-confirmation model is a considerably larger undertaking than designing the reservation architecture around locking from the start, often requiring significant rework of core booking and facility-inventory systems that were built without this architecture in mind.
+A parking platform built initially around naive, check-then-reserve inventory handling, with real-time atomic locking planned as a later refinement, tends to discover that this technique requires architectural decisions woven throughout the core reservation logic - how facility inventory state is structured to support short-lived provisional locks per individual space, how the booking flow separates lock acquisition from payment confirmation, how the system reliably reconciles expired locks back into available inventory without a stale lock permanently blocking a space no driver actually holds. Retrofitting this architecture onto a platform already built around a simpler, mark-on-confirmation model is a considerably larger undertaking than designing the reservation architecture around locking from the start, often requiring significant rework of core booking and facility-inventory systems that were built without this architecture in mind.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -64,7 +64,7 @@ Parkeringsløsning Aarhus, an Aarhus-based parking reservation platform, had bui
 Manifera's Amsterdam team rebuilt the platform's core reservation architecture around atomic, short-lived space locks with reliable expiry and reconciliation handling, restructuring the booking flow to support the lock-then-confirm pattern, a substantial rework of systems that had been built without this architecture in mind.
 
 > *"In our own testing everything worked because we were never actually competing with each other for the same space. It wasn't until real commuters were all booking around the same train station entrance that we understood the problem wasn't our booking screen, it was that our inventory system was never built to handle real contention in the first place."*
-> — **CTO, Parkeringsløsning Aarhus**
+> - **CTO, Parkeringsløsning Aarhus**
 
 Parkeringsløsning Aarhus's rebuilt platform handled its next high-turnover facility onboarding without a single double-booked space, and the platform now load-tests every new facility integration against genuinely simulated concurrent demand before going live, not just orderly internal walkthroughs.
 
@@ -79,7 +79,7 @@ Parkeringsløsning Aarhus's rebuilt platform handled its next high-turnover faci
 
 ## Scoping Your Own Parking Platform's Reservation Architecture
 
-Before onboarding a genuinely high-turnover facility, design the core reservation architecture around real-time, atomic space locking from the start — a naive check-then-reserve model that looks fine in orderly internal testing reveals its real problems only under genuine concurrent demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable parking platform reservation architecture.
+Before onboarding a genuinely high-turnover facility, design the core reservation architecture around real-time, atomic space locking from the start - a naive check-then-reserve model that looks fine in orderly internal testing reveals its real problems only under genuine concurrent demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable parking platform reservation architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Internal testing with a small, coordinated team rarely produces genuine contenti
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their high-concurrency reservation experience?
 
-Ask specifically how their architecture handles atomic space locking and lock expiry, and how their system reconciles abandoned bookings — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture handles atomic space locking and lock expiry, and how their system reconciles abandoned bookings - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

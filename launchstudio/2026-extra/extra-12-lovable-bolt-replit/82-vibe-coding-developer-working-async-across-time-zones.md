@@ -24,7 +24,7 @@ A founder in Utrecht and a developer in Ho Chi Minh City have about two hours of
 
 The difference is not the distance. It is whether the work was described well enough to proceed without you.
 
-That skill is worth developing regardless, because it is the same skill that makes an AI agent productive — a precise description, explicit boundaries, and a way to verify — and a founder who has learned it for one gets the other free.
+That skill is worth developing regardless, because it is the same skill that makes an AI agent productive - a precise description, explicit boundaries, and a way to verify - and a founder who has learned it for one gets the other free.
 
 ## Describe Work So It Can Proceed Without You
 
@@ -66,7 +66,7 @@ One artefact repays the effort more than any other: the conventions file this se
 
 The rhythm that works: they finish a piece of work and submit it before their evening. You review it in your morning, which is their night. Your comments are waiting when they start.
 
-That gives one full cycle per day, reliably, which is enough for steady progress. What breaks it is a review that waits — a change submitted Monday evening and reviewed Wednesday costs two days for nothing.
+That gives one full cycle per day, reliably, which is enough for steady progress. What breaks it is a review that waits - a change submitted Monday evening and reviewed Wednesday costs two days for nothing.
 
 So make review a morning habit rather than a task that competes with everything else. Twenty minutes, first thing, before the day fills.
 
@@ -74,7 +74,7 @@ So make review a morning habit rather than a task that competes with everything 
 
 The cost of being blocked is asymmetric across time zones. A question that would take thirty seconds to answer in an office costs a working day.
 
-Two practices reduce it substantially. Ask the developer to proceed on their best judgement when blocked, documenting the assumption, rather than stopping — a wrong assumption costs an hour to correct, while waiting costs a day. And keep a short list of what is next, so a blocked task is set aside for something else rather than becoming idle time.
+Two practices reduce it substantially. Ask the developer to proceed on their best judgement when blocked, documenting the assumption, rather than stopping - a wrong assumption costs an hour to correct, while waiting costs a day. And keep a short list of what is next, so a blocked task is set aside for something else rather than becoming idle time.
 
 And answer questions when they arrive rather than at a convenient moment. A question answered at ten at night is a day recovered.
 
@@ -94,7 +94,7 @@ The practical response is to allocate deliberately: defined implementation work 
 
 ## Trust Is Built by Structure, Not by Monitoring
 
-Founders new to distant collaboration frequently reach for oversight: screen recording, hourly time tracking, frequent check-ins. It is understandable and it produces the worst version of the arrangement — a developer who feels watched, a founder who spends their day supervising, and no improvement in output.
+Founders new to distant collaboration frequently reach for oversight: screen recording, hourly time tracking, frequent check-ins. It is understandable and it produces the worst version of the arrangement - a developer who feels watched, a founder who spends their day supervising, and no improvement in output.
 
 What produces confidence is visible progress rather than visible activity.
 
@@ -114,7 +114,7 @@ The argument worth ending on: everything in this article is also how to get good
 
 A precise outcome. The context that lets a sensible decision be made at an ambiguity. Explicit boundaries about what must not change. A way to verify. Written conventions the work should follow. Small, reviewable pieces rather than large ones. A review habit that closes the loop within a cycle.
 
-That list applies without alteration to a developer eight time zones away and to an agent running on your own machine. It is the skill of specifying work for someone who is not in the room — and it is, increasingly, the central skill of building software this way at all.
+That list applies without alteration to a developer eight time zones away and to an agent running on your own machine. It is the skill of specifying work for someone who is not in the room - and it is, increasingly, the central skill of building software this way at all.
 
 Which suggests a practical order for a founder who is not technical: learn it on the AI tools first, where the cycle is minutes rather than a day and the cost of a poorly described task is a wasted prompt. Then apply it to people, where the same discipline is worth considerably more.
 
@@ -126,7 +126,7 @@ It is a transferable skill in the other direction too: the founders who work wel
 
 For a founder working with a distant developer: tasks described with outcome, context, boundaries and pre-answered questions; the overlap reserved for decisions and demonstrations with a short daily call; everything else written, including a daily update of done, next and blocked; a conventions file so distant work fits the codebase; review as a morning habit within one cycle; a standing instruction to proceed on documented assumptions rather than waiting; and a visible list of what is next so blocked time is never idle.
 
-LaunchStudio works exactly this way — client contact in Amsterdam, engineering in Ho Chi Minh City — which is Manifera's arrangement across eleven years and 160+ projects for clients including Vodafone, TNO and CFLW.
+LaunchStudio works exactly this way - client contact in Amsterdam, engineering in Ho Chi Minh City - which is Manifera's arrangement across eleven years and 160+ projects for clients including Vodafone, TNO and CFLW.
 
 [Ask us how a week with us actually runs](https://launchstudio.eu/en/#contact).
 
@@ -142,12 +142,12 @@ Her tasks were one line each: "add the attendee export", "fix the venue capacity
 
 Two business days of changing how the work was described, and the same developer: tasks rewritten to include the outcome, the context of which customer asked and why, explicit boundaries about what not to change, and answers to the questions she could anticipate; a fifteen-minute call at the start of his day, every day; a written daily update of done, next and blocked; a standing instruction to proceed on a documented assumption when blocked rather than stopping; a visible list of the next five tasks so a block never produced idle time; a conventions file written from the existing code; and review moved to twenty minutes first thing in her morning.
 
-**Result:** in the following three weeks, eleven features were completed with the same developer at the same rate. Sylvia's assessment is that nothing about him changed — her descriptions did. She also notes that the same discipline made her own use of AI tools noticeably more effective, because it turned out to be the same skill.
+**Result:** in the following three weeks, eleven features were completed with the same developer at the same rate. Sylvia's assessment is that nothing about him changed - her descriptions did. She also notes that the same discipline made her own use of AI tools noticeably more effective, because it turned out to be the same skill.
 
 > *"I was writing one-line tasks and losing a day to every question. Three weeks, four features. Then I started writing a paragraph instead of a line, and the next three weeks produced eleven."*
-> — **Sylvia Grimberg, Founder, Evenementplanner (Utrecht)**
+> - **Sylvia Grimberg, Founder, Evenementplanner (Utrecht)**
 
-**Cost & Timeline:** €1,800 (task description framework, conventions file from existing code, daily written update and call structure, assumption-documentation practice, review rhythm) — completed in 2 business days.
+**Cost & Timeline:** €1,800 (task description framework, conventions file from existing code, daily written update and call structure, assumption-documentation practice, review rhythm) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ A conventions file describing how the codebase works. Distant work fits the exis
       "name": "What should overlapping hours be used for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Decisions, demonstrations and difficult conversations — never status updates or anything that could be written."
+        "text": "Decisions, demonstrations and difficult conversations - never status updates or anything that could be written."
       }
     },
     {

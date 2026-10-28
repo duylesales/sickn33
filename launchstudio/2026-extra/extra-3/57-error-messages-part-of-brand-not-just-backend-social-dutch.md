@@ -1,13 +1,13 @@
-🚨 Bo besteedde overal in KlantContact oprechte zorg aan de toon — onboarding, de dagelijkse interface, alles warm en zorgvuldig geschreven. Behalve de foutmeldingen, die nog steeds Lovable's rauwe standaardtekst toonden: "Fout: Verzoek mislukt met statuscode 500." Eén hapering bij een betaling, en een klant vroeg zich even af of het hele product wel zo gepolijst was als het leek. 💬
+🚨 Bo besteedde overal in KlantContact oprechte zorg aan de toon - onboarding, de dagelijkse interface, alles warm en zorgvuldig geschreven. Behalve de foutmeldingen, die nog steeds Lovable's rauwe standaardtekst toonden: "Fout: Verzoek mislukt met statuscode 500." Eén hapering bij een betaling, en een klant vroeg zich even af of het hele product wel zo gepolijst was als het leek. 💬
 
-Het moment dat iets misgaat weegt zwaarder dan elk moment dat alles soepel loopt — en krijgt meestal de minste ontwerpaandacht. 🧠
+Het moment dat iets misgaat weegt zwaarder dan elk moment dat alles soepel loopt - en krijgt meestal de minste ontwerpaandacht. 🧠
 
-❌ Generieke, technische foutteksten geven aan — bewust of niet — dat het product niet is gebouwd met de daadwerkelijke ervaring van de klant bij een fout in gedachten
+❌ Generieke, technische foutteksten geven aan - bewust of niet - dat het product niet is gebouwd met de daadwerkelijke ervaring van de klant bij een fout in gedachten
 ❌ Gestructureerde foutafhandeling gaat over technische correctheid, niet over wat het uiteindelijke bericht daadwerkelijk zegt tegen degene die het ziet
 ❌ AI-coderingstools genereren standaard technisch correcte foutafhandeling, zonder enige reden om ook merkgeschikte klanttaal te schrijven, tenzij daar specifiek om wordt gevraagd
-❌ De emotionele toestand van een klant op het exacte moment van een fout is al verhoogd — gefrustreerd, verward — dus alles wat ze daar zien landt harder dan evenveel glans elders
+❌ De emotionele toestand van een klant op het exacte moment van een fout is al verhoogd - gefrustreerd, verward - dus alles wat ze daar zien landt harder dan evenveel glans elders
 
-✅ Schrijf foutmeldingen in de daadwerkelijke stem en toon van uw product — dezelfde zorg als bij marketingteksten en onboarding
+✅ Schrijf foutmeldingen in de daadwerkelijke stem en toon van uw product - dezelfde zorg als bij marketingteksten en onboarding
 ✅ Wees specifiek over wat er is gebeurd en wat de klant daadwerkelijk kan doen, toon nooit ruwe stacktraces of codes zonder context
 ✅ Activeer bewust elke foutconditie en beoordeel wat klanten daadwerkelijk te zien krijgen, in plaats van hiaten één klacht per keer te ontdekken
 

@@ -1,17 +1,17 @@
 ---
-Titel: "AI in app: een aangekoppelde AI-functie vs. een AI-native product — wat er feitelijk verandert"
+Titel: "AI in app: een aangekoppelde AI-functie vs. een AI-native product - wat er feitelijk verandert"
 Trefwoorden: ai in app, ai native, build ai, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
 
-# AI in app: een aangekoppelde AI-functie vs. een AI-native product — wat er feitelijk verandert
+# AI in app: een aangekoppelde AI-functie vs. een AI-native product - wat er feitelijk verandert
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI in app: een aangekoppelde AI-functie vs. een AI-native product — wat er feitelijk verandert",
+  "headline": "AI in app: een aangekoppelde AI-functie vs. een AI-native product - wat er feitelijk verandert",
   "description": "Het toevoegen van AI in een app die u al voert en het vanaf de grond opbouwen van een AI-native product klinken vergelijkbaar, maar brengen aanzienlijk verschillende belangen op het gebied van productiegereedheid met zich mee. Een specifieke blik op waar de twee paden feitelijk uiteenlopen.",
   "author": {
     "@type": "Organization",
@@ -51,7 +51,7 @@ Omdat de nieuwe AI-functie een al live product met echte klanten raakt, zijn de 
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt AI-functies die worden toegevoegd aan bestaande, al live producten met dit specifieke onderscheid in gedachten, door de gegevenstoegang, externe afhankelijkheid en kostenblootstelling van de nieuwe integratie te behandelen als een toegewijde beoordeling in plaats van het te vouwen in algemene kwaliteitsborging (QA), voortbouwend op Manifera's bredere ervaring met het integreren van nieuwe mogelijkheden in productiesystemen die al echte enterprise-gebruikers bedienen.
 
-[Laat uw nieuwe AI-functie beoordelen voordat deze klanten raakt die u al hebt](https://launchstudio.eu/nl/#contact) — de belangen zijn anders zodra er een bestaand product achter zit.
+[Laat uw nieuwe AI-functie beoordelen voordat deze klanten raakt die u al hebt](https://launchstudio.eu/nl/#contact) - de belangen zijn anders zodra er een bestaand product achter zit.
 
 ## Zes vragen om te beantwoorden voordat u de AI-functie verzendt
 
@@ -79,12 +79,12 @@ Willemijn, een oprichter in Haarlem die BoekhoudGemak runt, een gevestigde boekh
 
 De AI-logica van de nieuwe functie ondervroeg de transactiedatabase rechtstreeks met een breder machtigingsbereik dan de rest van de toepassing gebruikte, een snelkoppeling die het gemakkelijker maakte om de AI-functie snel te bouwen, maar die het team van Willemijn niet specifiek had beoordeeld ten opzichte van de bestaande, meer zorgvuldig gescopte regels voor gegevenstoegang van BoekhoudGemak.
 
-**Resultaat:** De beoordeling van LaunchStudio ving het bredere machtigingsbereik op voordat de functie de algemene release bereikte, waardoor de databasetoegang van de AI-functie werd aangescherpt om overeen te komen met dezelfde isolatie per klant die de rest van BoekhoudGemak al afdwong — waardoor een kloof werd gedicht die rechtstreeks zou hebben gezeten tegen de live financiële gegevens van honderden bestaande klanten.
+**Resultaat:** De beoordeling van LaunchStudio ving het bredere machtigingsbereik op voordat de functie de algemene release bereikte, waardoor de databasetoegang van de AI-functie werd aangescherpt om overeen te komen met dezelfde isolatie per klant die de rest van BoekhoudGemak al afdwong - waardoor een kloof werd gedicht die rechtstreeks zou hebben gezeten tegen de live financiële gegevens van honderden bestaande klanten.
 
-> *"We behandelden de AI-functie als elke andere functie die we eerder hadden verzonden, en dat was het oprecht niet — het raakte dezelfde gevoelige gegevens waar ons hele bestaande product zorgvuldig omheen was gebouwd, met een machtigingssnelkoppeling die niemand specifiek had gecontroleerd."*
-> — **Willemijn Dekkers, Oprichter, BoekhoudGemak (Haarlem)**
+> *"We behandelden de AI-functie als elke andere functie die we eerder hadden verzonden, en dat was het oprecht niet - het raakte dezelfde gevoelige gegevens waar ons hele bestaande product zorgvuldig omheen was gebouwd, met een machtigingssnelkoppeling die niemand specifiek had gecontroleerd."*
+> - **Willemijn Dekkers, Oprichter, BoekhoudGemak (Haarlem)**
 
-**Kosten en tijdlijn:** € 1.050 (gerichte beoordeling van de gegevenstoegang van de nieuwe AI-functie) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (gerichte beoordeling van de gegevenstoegang van de nieuwe AI-functie) - voltooid in 4 werkdagen.
 
 ---
 
@@ -136,7 +136,7 @@ Het kan achteraf plaatsvinden als een inhaalslag, hoewel beoordeling voor de rel
       "name": "Zou de kloof zijn opgevangen door de functie in isolatie te testen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — de kloof ging over hoe het machtigingsbereik zich verhield tot de rest van de bestaande toepassing."
+        "text": "Niet noodzakelijkerwijs - de kloof ging over hoe het machtigingsbereik zich verhield tot de rest van de bestaande toepassing."
       }
     },
     {

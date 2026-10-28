@@ -21,11 +21,11 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Invoices look simple: a list of lines, a subtotal, VAT, a total, a number and a date. That is why they are a popular first SaaS for founders building with Cursor or Bolt — and why so many of those apps have subtle errors that only surface at quarter end, when an accountant compares totals and they are off by a few cents across hundreds of invoices. If you want to productionize an AI app for invoicing, the parts that need work are not the layout. They are the rules.
+Invoices look simple: a list of lines, a subtotal, VAT, a total, a number and a date. That is why they are a popular first SaaS for founders building with Cursor or Bolt - and why so many of those apps have subtle errors that only surface at quarter end, when an accountant compares totals and they are off by a few cents across hundreds of invoices. If you want to productionize an AI app for invoicing, the parts that need work are not the layout. They are the rules.
 
 ## To Productionize an AI App for Invoicing, Stop Using Floating-Point Money
 
-The first thing to check in any AI-generated finance code: how are amounts stored and calculated? Very often, they are JavaScript numbers — binary floating point — which cannot represent many decimal values exactly. `0.1 + 0.2` is `0.30000000000000004`. Multiply by quantities, add VAT, sum across lines and round at the end, and totals drift.
+The first thing to check in any AI-generated finance code: how are amounts stored and calculated? Very often, they are JavaScript numbers - binary floating point - which cannot represent many decimal values exactly. `0.1 + 0.2` is `0.30000000000000004`. Multiply by quantities, add VAT, sum across lines and round at the end, and totals drift.
 
 The production approach is to store money as integers in the smallest unit (cents), or use a decimal type in the database (`numeric` in Postgres) and a decimal library in code. Never let a float touch an amount that will appear on an invoice.
 
@@ -37,7 +37,7 @@ const vatCents = Math.round(lineTotalCents * 21 / 100);     // 1259 (rounded per
 
 ## VAT Rounding: Per Line or Per Invoice?
 
-Even with integers, you must decide where rounding happens. Rounding VAT per line and summing can differ by a cent or two from calculating VAT on the invoice subtotal. Both approaches can be acceptable, but the method must be consistent, documented and match what accounting software and your users expect. Mixed approaches — per line on screen, per invoice in the PDF — produce exactly the discrepancies accountants find.
+Even with integers, you must decide where rounding happens. Rounding VAT per line and summing can differ by a cent or two from calculating VAT on the invoice subtotal. Both approaches can be acceptable, but the method must be consistent, documented and match what accounting software and your users expect. Mixed approaches - per line on screen, per invoice in the PDF - produce exactly the discrepancies accountants find.
 
 Invoices with multiple VAT rates (in the Netherlands, 21%, 9% and 0%) need a breakdown per rate, and totals per rate must reconcile with the line items.
 
@@ -45,7 +45,7 @@ Invoices with multiple VAT rates (in the Netherlands, 21%, 9% and 0%) need a bre
 
 Dutch and EU rules require invoice numbers to form a unique, continuous sequence (you may use multiple series, for example per year). AI-generated code often assigns numbers by counting existing invoices and adding one, or by taking the highest number plus one. Under concurrency, two invoices created at the same moment get the same number. After a deletion, the count goes backwards.
 
-The production solution is a database-level sequence or a counter row updated inside a transaction with locking, per series, assigned at the moment an invoice is finalised — not when a draft is created, so drafts that are discarded do not leave gaps.
+The production solution is a database-level sequence or a counter row updated inside a transaction with locking, per series, assigned at the moment an invoice is finalised - not when a draft is created, so drafts that are discarded do not leave gaps.
 
 ## Issued Invoices Are Immutable
 
@@ -57,13 +57,13 @@ Production invoicing distinguishes draft and issued states. Issued invoices are 
 
 Dutch invoices must include specific information, including the supplier's and customer's names and addresses, the supplier's VAT number, the invoice date and number, a description of goods or services, the date of supply, amounts per VAT rate and the VAT amount. For intra-EU B2B services under reverse charge, the customer's VAT number and a reverse-charge note are required. The [Belastingdienst's invoice requirements](https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/vat/vat_in_the_netherlands/invoicing_and_payment/invoice_requirements/) list them in full.
 
-AI-generated templates tend to include most of these by default — and miss the edge cases: reverse charge, small-business exemptions, foreign customers.
+AI-generated templates tend to include most of these by default - and miss the edge cases: reverse charge, small-business exemptions, foreign customers.
 
 ## PDFs, Email and Retention
 
 Invoice PDFs generated in serverless functions often time out for longer invoices or fail on special characters. Generation should be robust, tested with long line lists and accented names, and ideally run in a background job.
 
-Businesses must generally keep invoices for seven years in the Netherlands. Your app needs to retain issued invoices and their PDFs for that period, even if a user cancels their subscription — which conflicts with naïve "delete my account" logic. Retention rules and GDPR deletion must be reconciled deliberately: personal data not needed for the legal record can be removed, while the invoice itself is kept.
+Businesses must generally keep invoices for seven years in the Netherlands. Your app needs to retain issued invoices and their PDFs for that period, even if a user cancels their subscription - which conflicts with naïve "delete my account" logic. Retention rules and GDPR deletion must be reconciled deliberately: personal data not needed for the legal record can be removed, while the invoice itself is kept.
 
 ## Payments and Reconciliation
 
@@ -71,7 +71,7 @@ If your app tracks payment status, it should update from bank or payment-provide
 
 ## Access and Multi-Company Separation
 
-Invoicing apps often serve freelancers and small businesses, some of whom manage several companies. Each company's invoices, customers and numbering series must be isolated — enforced in the database — and accountants invited to view them should see only what they are granted.
+Invoicing apps often serve freelancers and small businesses, some of whom manage several companies. Each company's invoices, customers and numbering series must be isolated - enforced in the database - and accountants invited to view them should see only what they are granted.
 
 ## A Data Model That Accounting Can Trust
 
@@ -84,7 +84,7 @@ Most invoicing problems in AI-built apps trace back to the data model. A structu
 - **Credit notes**, with their own number series, referencing the original invoice.
 - **Payments**, linked to invoices, including partial and overpayments.
 
-Storing computed totals at issue — rather than recalculating them later — protects issued documents from changes in rounding code, tax rates or product prices.
+Storing computed totals at issue - rather than recalculating them later - protects issued documents from changes in rounding code, tax rates or product prices.
 
 ## Enforcing Immutability in the Database
 
@@ -141,11 +141,11 @@ Your users' accountants will want data out: CSV or UBL exports of invoices, cred
 
 ## Testing Money Logic
 
-Finance code deserves a dedicated test suite: rounding with many lines and mixed rates, credit notes for partial amounts, concurrent issuing, reverse-charge cases, currency formatting in different locales and exports that sum to the same totals as the VAT overview. Property-based tests — generating many random invoices and checking that totals always reconcile — are especially effective at finding the cent-level drift that manual tests miss.
+Finance code deserves a dedicated test suite: rounding with many lines and mixed rates, credit notes for partial amounts, concurrent issuing, reverse-charge cases, currency formatting in different locales and exports that sum to the same totals as the VAT overview. Property-based tests - generating many random invoices and checking that totals always reconcile - are especially effective at finding the cent-level drift that manual tests miss.
 
 ## Payment Matching and Reminders
 
-Freelancers care most about getting paid. An invoicing app that productionizes this well connects payments to invoices automatically: payment links on each invoice (for example via Mollie with iDEAL), webhook-confirmed status updates, and bank-transaction matching using the invoice number in the payment reference. Partial payments reduce the open amount rather than marking the invoice paid; overpayments are flagged. Reminder emails follow a schedule the user controls — a friendly reminder after the due date, a firmer one later — and stop immediately when payment arrives. Each reminder is logged, because if a dispute ever reaches collection, the history matters.
+Freelancers care most about getting paid. An invoicing app that productionizes this well connects payments to invoices automatically: payment links on each invoice (for example via Mollie with iDEAL), webhook-confirmed status updates, and bank-transaction matching using the invoice number in the payment reference. Partial payments reduce the open amount rather than marking the invoice paid; overpayments are flagged. Reminder emails follow a schedule the user controls - a friendly reminder after the due date, a firmer one later - and stop immediately when payment arrives. Each reminder is logged, because if a dispute ever reaches collection, the history matters.
 
 ## Retention, Deletion and the Seven-Year Rule
 
@@ -161,11 +161,11 @@ When your users' accountants first look at invoices from your app, they typicall
 
 ## How LaunchStudio Helps
 
-LaunchStudio's review of an invoicing app starts with the arithmetic and the rules: money types, rounding method, numbering, immutability, credit notes, required content and retention, followed by the usual production concerns — access separation, secrets, backups and monitoring. The frontend stays as you built it.
+LaunchStudio's review of an invoicing app starts with the arithmetic and the rules: money types, rounding method, numbering, immutability, credit notes, required content and retention, followed by the usual production concerns - access separation, secrets, backups and monitoring. The frontend stays as you built it.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, including work for data and finance-oriented clients such as Statler BI. Manifera's engineers in Ho Chi Minh City do the technical work; European contact runs through Amsterdam. More on the stack is on [Manifera's technologies page](https://www.manifera.com/about-us/manifera-technologies/).
 
-To get a quote, [describe your project](https://launchstudio.eu/en/#contact) — we reply within one working day.
+To get a quote, [describe your project](https://launchstudio.eu/en/#contact) - we reply within one working day.
 
 ## Real example
 
@@ -180,9 +180,9 @@ Over nine business days, the team migrated amounts to integer cents with a verif
 **Result:** Quarterly VAT overviews now reconcile to the cent. Nota Nu grew to 610 subscribers over the next year, and two accountancy firms began recommending it to clients.
 
 > *"The app looked finished because invoices looked right. Accounting isn't about looking right; it's about adding up."*
-> — **Ayoub Benali, Founder, Nota Nu (Schiedam)**
+> - **Ayoub Benali, Founder, Nota Nu (Schiedam)**
 
-**Cost & Timeline:** €2,700 (Launch Ready package: money handling, numbering, immutability, tax rules and retention) — completed in 9 business days.
+**Cost & Timeline:** €2,700 (Launch Ready package: money handling, numbering, immutability, tax rules and retention) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -200,11 +200,11 @@ They should not. Issued invoices should be immutable, with corrections made thro
 
 ### What does Manifera's experience with finance-oriented clients bring?
 
-Experience with systems where totals must reconcile exactly — reporting, BI and transactional data — shapes careful handling of money types, rounding and audit trails.
+Experience with systems where totals must reconcile exactly - reporting, BI and transactional data - shapes careful handling of money types, rounding and audit trails.
 
 ### How can an invoicing app build visibility with freelancers searching online?
 
-Publish practical guides on Dutch invoicing rules, VAT and reverse charge, with structured data. AI answer engines often cite clear, accurate explanations — and link to the tools behind them.
+Publish practical guides on Dutch invoicing rules, VAT and reverse charge, with structured data. AI answer engines often cite clear, accurate explanations - and link to the tools behind them.
 
 <script type="application/ld+json">
 {

@@ -1,6 +1,6 @@
 🚨 Zijn 8 meest actieve klanten betaalden €29 per maand. Hun API-kosten? MEER dan €29 per persoon. Hij verloor stilletjes geld op zijn beste klanten. 📉
 
-Traditionele SaaS gaat uit van stabiele kosten per klant. AI-SaaS doorbreekt dat volledig — een power user kan 100x méér kosten dan een lichte gebruiker, op EXACT hetzelfde vaste maandbedrag: 😱
+Traditionele SaaS gaat uit van stabiele kosten per klant. AI-SaaS doorbreekt dat volledig - een power user kan 100x méér kosten dan een lichte gebruiker, op EXACT hetzelfde vaste maandbedrag: 😱
 
 ❌ Vast €29/maand voor onbeperkt gebruik = negatieve marges op actieve gebruikers
 ❌ Hij ontdekte het pas toen hij zijn OpenAI-factuur per klant uitsplitste

@@ -1,4 +1,4 @@
-🙅 "Are you going to tell me I need this, even if I don't?" An agency owner asked us this directly. Our answer surprised her — we talked her OUT of paying us, the first time.
+🙅 "Are you going to tell me I need this, even if I don't?" An agency owner asked us this directly. Our answer surprised her - we talked her OUT of paying us, the first time.
 
 Not every AI-built prototype is actually a fit for backend hardening yet. Here's the honest checklist:
 
@@ -14,7 +14,7 @@ Not every AI-built prototype is actually a fit for backend hardening yet. Here's
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering experience, we'd rather say no than take a mismatched project. ✅
 
-Her result: her client avoided paying to harden a version that would've needed rework — then came back 6 weeks later for the real engagement. 🔁
+Her result: her client avoided paying to harden a version that would've needed rework - then came back 6 weeks later for the real engagement. 🔁
 
 👉 Run your own project through the 5-signal checklist: https://launchstudio.eu/en/blog/go-no-go-checklist-launchstudio-right-for-you
 

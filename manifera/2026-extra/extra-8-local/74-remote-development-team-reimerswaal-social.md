@@ -6,7 +6,7 @@
 ❌ **No Rehearsed Incident Process:** The team improvised under pressure, turning a fixable bug into a multi-week compliance crisis.
 
 **The Manifera Solution:**
-✅ **Tooling-Enforced Review:** Every critical change requires a named, mandatory approver — no exceptions.
+✅ **Tooling-Enforced Review:** Every critical change requires a named, mandatory approver - no exceptions.
 ✅ **Named Component Ownership:** "Who owns this" is answerable in seconds, not reconstructed during a crisis.
 ✅ **Rehearsed Incident Drills:** Escalation paths tested before a real incident, not during one.
 

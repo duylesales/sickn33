@@ -59,19 +59,19 @@ Het toevoegen van twee-factor-authenticatie specifiek aan gevoelige, risicovolle
 
 Manifera's engineering voor ondernemingsgereedheid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Aan de slag — productierijp in weken, niet maanden](https://launchstudio.eu/nl/#contact).
+[Aan de slag - productierijp in weken, niet maanden](https://launchstudio.eu/nl/#contact).
 
 ## Wat Er Nog Meer op een Enterprise Inkoopchecklist Verschijnt
 
 Tweefactorauthenticatie voor gevoelige acties is slechts één regel op een veel langere lijst waarmee een groeiend SaaS-product te maken krijgt zodra het begint te verkopen aan grotere zakelijke klanten. Veelvoorkomende aanvullende eisen op de inkoopchecklist zijn:
 
-- **Gedetailleerde audit-logging** — een duurzaam, onveranderlijk overzicht van wie wat heeft gedaan en wanneer, met name voor gevoelige acties zoals het goedkeuren van een transactie of het wijzigen van toegangsrechten. Inkoopteams vragen hier vaak om een concreet voorbeeld van, in plaats van alleen te vertrouwen op de toezegging dat het bestaat.
-- **Versleuteling in rust (Encryption at Rest)** — de formele bevestiging dat opgeslagen data, en niet alleen data in transitie over het netwerk, is versleuteld volgens geaccepteerde standaarden (zoals AES-256). Dit is een instelling op databaseniveau die snel over het hoofd wordt gezien als deze tijdens de initiële uitrol niet expliciet is geactiveerd.
-- **Ondersteuning voor Single Sign-On (SSO / SAML)** — grotere organisaties eisen vrijwel universeel dat medewerkers inloggen via een centrale identiteitsprovider (zoals Okta of Azure AD). Een product zonder SSO-ondersteuning kan een harde blokkade vormen voor IT-beveiligingsteams, ongeacht hoe waardevol de rest van de applicatie is.
-- **Beleid voor dataretentie en data-residentie** — duidelijke, gedocumenteerde antwoorden op de vraag waar klantgegevens fysiek worden opgeslagen (binnen de EU) en hoe lang gegevens bewaard blijven nadat een contract is beëindigd.
-- **Een ingevulde leveranciersbeveiligingsvragenlijst of SOC 2-rapportage** — grotere contracten vereisen steeds vaker gestandaardiseerde beveiligingsvragenlijsten. Het vooraf klaarliggen van nauwkeurige, onderbouwde antwoorden versnelt het inkooptraject enorm, waar deals anders wekenlang vastlopen onder tijdsdruk.
+- **Gedetailleerde audit-logging** - een duurzaam, onveranderlijk overzicht van wie wat heeft gedaan en wanneer, met name voor gevoelige acties zoals het goedkeuren van een transactie of het wijzigen van toegangsrechten. Inkoopteams vragen hier vaak om een concreet voorbeeld van, in plaats van alleen te vertrouwen op de toezegging dat het bestaat.
+- **Versleuteling in rust (Encryption at Rest)** - de formele bevestiging dat opgeslagen data, en niet alleen data in transitie over het netwerk, is versleuteld volgens geaccepteerde standaarden (zoals AES-256). Dit is een instelling op databaseniveau die snel over het hoofd wordt gezien als deze tijdens de initiële uitrol niet expliciet is geactiveerd.
+- **Ondersteuning voor Single Sign-On (SSO / SAML)** - grotere organisaties eisen vrijwel universeel dat medewerkers inloggen via een centrale identiteitsprovider (zoals Okta of Azure AD). Een product zonder SSO-ondersteuning kan een harde blokkade vormen voor IT-beveiligingsteams, ongeacht hoe waardevol de rest van de applicatie is.
+- **Beleid voor dataretentie en data-residentie** - duidelijke, gedocumenteerde antwoorden op de vraag waar klantgegevens fysiek worden opgeslagen (binnen de EU) en hoe lang gegevens bewaard blijven nadat een contract is beëindigd.
+- **Een ingevulde leveranciersbeveiligingsvragenlijst of SOC 2-rapportage** - grotere contracten vereisen steeds vaker gestandaardiseerde beveiligingsvragenlijsten. Het vooraf klaarliggen van nauwkeurige, onderbouwde antwoorden versnelt het inkooptraject enorm, waar deals anders wekenlang vastlopen onder tijdsdruk.
 
-Geen van deze voorzieningen hoeft al te bestaan vóór de allereerste verkoop aan een kleine klant — ze allemaal vooraf bouwen zou verspilde vroege energie zijn. De professionele kunst is herkennen wanneer een product de grens overschrijdt naar grotere klanten waar deze eisen niet langer optioneel zijn, en ze proactief inrichten in plaats van deal voor deal verrast te worden.
+Geen van deze voorzieningen hoeft al te bestaan vóór de allereerste verkoop aan een kleine klant - ze allemaal vooraf bouwen zou verspilde vroege energie zijn. De professionele kunst is herkennen wanneer een product de grens overschrijdt naar grotere klanten waar deze eisen niet langer optioneel zijn, en ze proactief inrichten in plaats van deal voor deal verrast te worden.
 
 ## Echt voorbeeld
 
@@ -84,9 +84,9 @@ Een veelbelovende deal met een grotere prospectieve klant liep vast tijdens de i
 **Resultaat:** LaunchStudio implementeerde verplichte twee-factor-authenticatie specifiek voor salarisgoedkeuring en administratieve acties, terwijl standaard inlogs ongemoeid bleven. Dit sloot de specifieke kloof die de inkoopbeoordeling had geïdentificeerd en deblokkeerde de onderhandeling.
 
 > *"Die ene specifieke vraag kostte ons bijna een deal waar we twee maanden naartoe hadden gewerkt. We hadden elke functie die ze daadwerkelijk wilden gebruiken – we hadden alleen niet nagedacht over de laag waar hun beveiligingsteam het meest om gaf."*
-> — **Gijs van der Berg, Oprichter, LoonLijn (Ede)**
+> - **Gijs van der Berg, Oprichter, LoonLijn (Ede)**
 
-**Kosten en tijdlijn:** € 2.700 (risico-gecalibreerde 2FA-implementatie) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.700 (risico-gecalibreerde 2FA-implementatie) - voltooid in 9 werkdagen.
 
 ---
 

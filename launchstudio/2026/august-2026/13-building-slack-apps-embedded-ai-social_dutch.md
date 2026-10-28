@@ -1,4 +1,4 @@
-🔥 Harper bouwde een Slack AI-bot met **Lovable** — maar sloeg Slack OAuth-tokens onversleuteld op in de database. 🧠
+🔥 Harper bouwde een Slack AI-bot met **Lovable** - maar sloeg Slack OAuth-tokens onversleuteld op in de database. 🧠
 
 Het bouwen van een "Invisible SaaS" in Slack vereist asynchrone event loops, gesimuleerde streaming en enterprise token-beveiliging.
 

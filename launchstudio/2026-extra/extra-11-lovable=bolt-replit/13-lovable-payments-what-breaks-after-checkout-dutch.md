@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable-betalingen: wat er stukgaat nadat de klant op Betalen klikt",
-  "description": "Een checkout in testmodus is het makkelijke deel. Wat bepaalt of je app daadwerkelijk geld kan innen, is webhook-afhandeling, reconciliatie, mislukte betalingen en terugbetalingen — de onderdelen die AI-builders weglaten.",
+  "description": "Een checkout in testmodus is het makkelijke deel. Wat bepaalt of je app daadwerkelijk geld kan innen, is webhook-afhandeling, reconciliatie, mislukte betalingen en terugbetalingen - de onderdelen die AI-builders weglaten.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-15",
@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Er is een moment van pure voldoening wanneer een testbetaling slaagt. De checkout opent, het creditcardnummer wordt ingevoerd, de pagina meldt 'betaald' en je prototype is zojuist veranderd in een echt bedrijf.
 
-Maar dan betaalt een echte klant met een echte betaalpas, sluit het tabblad vóórdat de bedankpagina volledig is geladen, en verdwijnt. Je applicatie heeft geen enkel record van de transactie. Je betaalprovider heeft wel het geld van de klant ontvangen. En de klant heeft een betalingsbewijs van een payment processor waar hij nog nooit van heeft gehoord, maar nul toegang tot het product dat hij zojuist heeft gekocht. Die situatie — en niet de checkout-knop — is waar een betalingsintegratie écht om draait. En het is precies het onderdeel dat AI-app-builders vrijwel nooit genereren.
+Maar dan betaalt een echte klant met een echte betaalpas, sluit het tabblad vóórdat de bedankpagina volledig is geladen, en verdwijnt. Je applicatie heeft geen enkel record van de transactie. Je betaalprovider heeft wel het geld van de klant ontvangen. En de klant heeft een betalingsbewijs van een payment processor waar hij nog nooit van heeft gehoord, maar nul toegang tot het product dat hij zojuist heeft gekocht. Die situatie - en niet de checkout-knop - is waar een betalingsintegratie écht om draait. En het is precies het onderdeel dat AI-app-builders vrijwel nooit genereren.
 
 ## De helft die wel wordt gebouwd
 
@@ -36,11 +36,11 @@ Dat is nuttig en correct werk. Het is tegelijkertijd de helft van de flow waarin
 
 **Verificatie van handtekeningen.** Binnenkomende webhook-berichten moeten altijd cryptografisch worden gecontroleerd met een geheime sleutel (signing secret) om te verifiëren dat ze daadwerkelijk van Stripe of Mollie afkomstig zijn. Zonder deze verificatie kan iedereen die je webhook-URL raadt jouw app wijsmaken dat er zojuist tienduizend euro is betaald.
 
-**Idempotentie.** Betaalproviders proberen berichten bij netwerkfouten automatisch opnieuw te verzenden — soms meerdere keren binnen enkele minuten. Als je code bij elk binnenkomend bericht direct toegang verleent of saldo ophoogt, resulteert een automatische herhaling in een dubbele bestelling, een dubbel gecrediteerd saldo of twee parallelle abonnementen.
+**Idempotentie.** Betaalproviders proberen berichten bij netwerkfouten automatisch opnieuw te verzenden - soms meerdere keren binnen enkele minuten. Als je code bij elk binnenkomend bericht direct toegang verleent of saldo ophoogt, resulteert een automatische herhaling in een dubbele bestelling, een dubbel gecrediteerd saldo of twee parallelle abonnementen.
 
-**Reconciliatie (financiële afstemming).** Een wekelijkse geautomatiseerde vergelijking tussen wat de payment provider meldt te hebben ontvangen en wat er in jouw database staat geregistreerd. Dit is de enige manier om hiaten op te sporen die je anders pas na maanden ontdekt — en vrijwel geen enkel vroeg stadium product heeft dit ingericht.
+**Reconciliatie (financiële afstemming).** Een wekelijkse geautomatiseerde vergelijking tussen wat de payment provider meldt te hebben ontvangen en wat er in jouw database staat geregistreerd. Dit is de enige manier om hiaten op te sporen die je anders pas na maanden ontdekt - en vrijwel geen enkel vroeg stadium product heeft dit ingericht.
 
-**Mislukte betalingen en dunning.** Pasjes verlopen. Automatische incasso's worden na enkele dagen gestorneerd. Banken weigeren transacties zonder duidelijke opgaaf van reden. Je applicatie moet voor elk scenario een passend proces hebben: opnieuw proberen, de klant mailen, de toegang tijdelijk opschorten en — cruciaal — de toegang direct herstellen zodra de klant de betaling in orde maakt.
+**Mislukte betalingen en dunning.** Pasjes verlopen. Automatische incasso's worden na enkele dagen gestorneerd. Banken weigeren transacties zonder duidelijke opgaaf van reden. Je applicatie moet voor elk scenario een passend proces hebben: opnieuw proberen, de klant mailen, de toegang tijdelijk opschorten en - cruciaal - de toegang direct herstellen zodra de klant de betaling in orde maakt.
 
 **Terugbetalingen en opzeggingen.** Refunds die je handmatig via het provider-dashboard uitvoert, bereiken jouw app nooit tenzij je luistert naar de bijbehorende webhooks. Een klant die zijn geld terugkrijgt maar volledige toegang behoudt, kost je marge; een klant die opzegt maar toch opnieuw wordt gefactureerd, levert je een boze klacht en een chargeback op.
 
@@ -78,7 +78,7 @@ Het gevolg is dat betalende klanten plotseling buitengesloten worden, of dat ver
 - Totaalbedragen bij de provider vergeleken met de databaserecords over de testperiode.
 - Btw-behandeling en factuurvereisten gecontroleerd en goedgekeurd door je boekhouder.
 
-Zeven punten, die gemiddeld niet meer dan een uur per stuk kosten. Ze overslaan leidt niet direct tot een zichtbare crash — het leidt tot een langzame opeenstapeling van klanten van wie je administratie de status niet meer begrijpt.
+Zeven punten, die gemiddeld niet meer dan een uur per stuk kosten. Ze overslaan leidt niet direct tot een zichtbare crash - het leidt tot een langzame opeenstapeling van klanten van wie je administratie de status niet meer begrijpt.
 
 ## Betalingen écht productierijp maken
 
@@ -110,7 +110,7 @@ Oprichters aarzelen soms om echte transactietests uit te voeren omdat ze bang zi
 
 **Kies het kleinst mogelijke bedrag** dat je payment provider toestaat voor de live test (bijvoorbeeld € 1,00 of € 0,50) en stort dit direct na afloop terug. Terugbetalingen binnen enkele minuten zijn volkomen normaal en worden door providers niet als verdacht aangemerkt.
 
-**Test met creditcard én met iDEAL afzonderlijk,** omdat de technische werking verschilt: een iDEAL-betaling leidt de gebruiker via een bank-redirect naar de bank-app of online bankomgeving. Juist tijdens die tussenstap kan de gebruiker afhaken of het venster sluiten — precies het scenario dat je wilt beproeven.
+**Test met creditcard én met iDEAL afzonderlijk,** omdat de technische werking verschilt: een iDEAL-betaling leidt de gebruiker via een bank-redirect naar de bank-app of online bankomgeving. Juist tijdens die tussenstap kan de gebruiker afhaken of het venster sluiten - precies het scenario dat je wilt beproeven.
 
 **Voer de afhaaktest bewust uit.** Start een betaling, voltooi deze bij je bank, maar sluit het browsertabblad doelbewust af vóórdat de terugverwijzing naar je app is voltooid. Je app hoort alsnog binnen enkele seconden via de webhook toegang te verlenen.
 
@@ -124,16 +124,16 @@ Oprichters aarzelen soms om echte transactietests uit te voeren omdat ze bang zi
 
 Lieke Verbeek bouwde Kruidenbox in Lovable met Mollie voor de betalingen: een maandelijks abonnement waarmee hobbytuinders biologische kruidenplantjes thuisbezorgd kregen. De eerste maand verliep fantastisch: 140 abonnees, de betalingen kwamen binnen en de boxen werden netjes verstuurd.
 
-Het probleem openbaarde zich pas in maand drie, toen haar boekhouder vroeg waarom de omzet achterbleef terwijl het aantal abonnees in de app bleef groeien. Er was nog nooit een financiële reconciliatie uitgevoerd, en een audit bracht direct drie structurele weeffouten aan het licht. Negentien abonnementen waren bij de verlenging mislukt — door verlopen pinpassen en een gewijzigde IBAN. Omdat er geen webhook-afhandeling was voor mislukte verlengingen, behielden die negentien accounts hun actieve status en ontvingen ze al twee maanden gratis boxen. Vier klanten die hun abonnement netjes hadden opgezegd, werden juist nog steeds gefactureerd, omdat de opzegknop wel de interne database bijwerkte maar Mollie nooit had geïnstrueerd om het terugkerende incassomandaat te stoppen. En twee transacties waren dubbel geregistreerd omdat het webhook-endpoint geen controle op idempotentie had en Mollie de melding opnieuw had verstuurd.
+Het probleem openbaarde zich pas in maand drie, toen haar boekhouder vroeg waarom de omzet achterbleef terwijl het aantal abonnees in de app bleef groeien. Er was nog nooit een financiële reconciliatie uitgevoerd, en een audit bracht direct drie structurele weeffouten aan het licht. Negentien abonnementen waren bij de verlenging mislukt - door verlopen pinpassen en een gewijzigde IBAN. Omdat er geen webhook-afhandeling was voor mislukte verlengingen, behielden die negentien accounts hun actieve status en ontvingen ze al twee maanden gratis boxen. Vier klanten die hun abonnement netjes hadden opgezegd, werden juist nog steeds gefactureerd, omdat de opzegknop wel de interne database bijwerkte maar Mollie nooit had geïnstrueerd om het terugkerende incassomandaat te stoppen. En twee transacties waren dubbel geregistreerd omdat het webhook-endpoint geen controle op idempotentie had en Mollie de melding opnieuw had verstuurd.
 
 Zeven werkdagen waren nodig om de betalingsarchitectuur recht te zetten: webhook-afhandeling opnieuw opgebouwd met cryptografische handtekeningverificatie en idempotentie, toegangsrechten direct gekoppeld aan de actuele abonnementsstatus in plaats van een eenmalige vlag, een geautomatiseerde dunning-flow die klanten waarschuwt bij mislukte betalingen en de levering na twee pogingen pauzeert, opzeggingen direct gekoppeld aan Mollie, en een wekelijkse reconciliatie-rapportage die automatisch in Liekes inbox landt.
 
 **Resultaat:** de negentien verlopen abonnees werden benaderd en elf herstelden hun betaling direct, de vier ten onrechte gefactureerde klanten kregen hun geld terug vóórdat er een officiële klacht werd ingediend, en de geregistreerde omzet sloot vanaf de volgende cyclus tot op de cent nauwkeurig aan bij de uitbetalingen van de betaalprovider.
 
 > *"Ik dacht dat de betalingsintegratie het onderdeel was dat ik allang af had. Het bleek het onderdeel te zijn waar ik nog maar net aan was begonnen."*
-> — **Lieke Verbeek, Oprichter, Kruidenbox (Utrecht)**
+> - **Lieke Verbeek, Oprichter, Kruidenbox (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 3.300 (Launch & Grow scope: webhooks, autorisatiemodel, dunning en reconciliatie) — opgeleverd in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.300 (Launch & Grow scope: webhooks, autorisatiemodel, dunning en reconciliatie) - opgeleverd in 7 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -155,7 +155,7 @@ Door wekelijks te reconciliëren: vergelijk de uitbetalingsoverzichten van je be
 
 ### Wat gebeurt er als een klant een betaling betwist (chargeback)?
 
-Je betaalprovider brengt je hiervan op de hoogte via een webhook, vaak met een strikte deadline om bewijsmateriaal aan te leveren. Als je app chargeback-events niet registreert, merk je het geschil pas op wanneer het bedrag plus een boete automatisch van je saldo wordt afgeschreven — meestal nadat de termijn om bezwaar te maken al is verstreken.
+Je betaalprovider brengt je hiervan op de hoogte via een webhook, vaak met een strikte deadline om bewijsmateriaal aan te leveren. Als je app chargeback-events niet registreert, merk je het geschil pas op wanneer het bedrag plus een boete automatisch van je saldo wordt afgeschreven - meestal nadat de termijn om bezwaar te maken al is verstreken.
 
 <script type="application/ld+json">
 {

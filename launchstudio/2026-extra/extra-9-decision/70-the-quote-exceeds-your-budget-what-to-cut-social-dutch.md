@@ -1,9 +1,9 @@
 📧 De e-mail valt om 16:47 uur binnen. Bram verwachtte € 2.500. De offerte zei € 6.200. Zijn eerste impuls was om de lancering af te blazen, niet om te onderhandelen. 😳
 
-Een offerte boven budget is geen bewijs van te veel betalen — het is simpelweg het verschil tussen een aanname en de feiten: 🧠
+Een offerte boven budget is geen bewijs van te veel betalen - het is simpelweg het verschil tussen een aanname en de feiten: 🧠
 
 ❌ Oprichters zien een offerte als één ondeelbaar blok in plaats van te vragen wat er breekt als het wordt geschrapt
-❌ Betalingsbeveiliging en databescherming zijn niet onderhandelbaar — bezuinigen verplaatst het risico naar later
+❌ Betalingsbeveiliging en databescherming zijn niet onderhandelbaar - bezuinigen verplaatst het risico naar later
 ❌ Om korting vragen wringt: zat er te veel marge in, of wordt er stiekem beknibbeld op kwaliteit?
 ❌ Een goedkopere tweede offerte snijdt soms juist in de essentiële kern in plaats van in uitstelbare zaken
 

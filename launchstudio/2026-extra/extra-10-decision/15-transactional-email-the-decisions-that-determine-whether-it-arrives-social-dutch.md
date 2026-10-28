@@ -16,7 +16,7 @@ Wat uw transactionele e-mail wél nodig heeft vóór de lancering:
 ✅ Geautomatiseerde bounce- en spamklachten-afhandeling via webhooks gekoppeld aan een suppression list
 ✅ Een strikte scheiding tussen transactionele notificaties en promotionele marketinguitingen
 
-Bij **LaunchStudio**, ondersteund door Manifera, verzorgen onze senior engineers de complete e-mail- en DNS-configuratie — zodat uw verificatiemails gegarandeerd in de inbox landen.
+Bij **LaunchStudio**, ondersteund door Manifera, verzorgen onze senior engineers de complete e-mail- en DNS-configuratie - zodat uw verificatiemails gegarandeerd in de inbox landen.
 
 💡 Zo herstelde abonnementsdienst Bloomtrail direct de registratieflow voor Outlook- en Hotmail-gebruikers, waarmee een kwart van de voorheen verloren klanten werd teruggewonnen.
 

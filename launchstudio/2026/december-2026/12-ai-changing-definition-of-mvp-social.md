@@ -15,9 +15,9 @@ The new MVP checklist: ✅
 ✅ Real hosting on a live domain
 ✅ Real security, not just a polished UI
 
-At **LaunchStudio**, we close this exact gap — without touching a single button you designed. Backed by Manifera's 120+ engineers, 11+ years. 🛡️🚀
+At **LaunchStudio**, we close this exact gap - without touching a single button you designed. Backed by Manifera's 120+ engineers, 11+ years. 🛡️🚀
 
-🧪 5-second gut check: hard-refresh mid-session. Data vanish or get logged out? That's not a bug — that's your "MVP" telling you it has no real database.
+🧪 5-second gut check: hard-refresh mid-session. Data vanish or get logged out? That's not a bug - that's your "MVP" telling you it has no real database.
 
 👉 Read how AI redefined "viable": https://launchstudio.eu/en/blog/ai-changing-definition-of-mvp
 

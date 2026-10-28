@@ -20,13 +20,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-It is a fair question, and the founders who ask it are not being naive. They have watched the same tool that built their entire product in a weekend fix a broken layout in eleven seconds. If prompting produced the thing, prompting should be able to repair the thing. That reasoning holds for a surprisingly large share of what goes wrong — and then it stops holding, abruptly, in a way that is almost impossible to see from inside the chat window.
+It is a fair question, and the founders who ask it are not being naive. They have watched the same tool that built their entire product in a weekend fix a broken layout in eleven seconds. If prompting produced the thing, prompting should be able to repair the thing. That reasoning holds for a surprisingly large share of what goes wrong - and then it stops holding, abruptly, in a way that is almost impossible to see from inside the chat window.
 
 The honest answer is not "no, hire someone." It is that prompting is excellent at one category of problem and structurally bad at another, the two look identical from the founder's chair, and the second category is exactly the one that matters before launch. What follows is how to tell them apart before you have spent three weeks and forty prompts discovering it the expensive way.
 
 ## The Problems That Genuinely Do Dissolve With Two More Prompts
 
-Start with what actually works, because underselling it wastes money in the other direction. If the problem is visible on screen, contained to one place, and you can describe it precisely, prompting is usually the fastest and cheapest fix available — faster than briefing a human, certainly cheaper than an engagement.
+Start with what actually works, because underselling it wastes money in the other direction. If the problem is visible on screen, contained to one place, and you can describe it precisely, prompting is usually the fastest and cheapest fix available - faster than briefing a human, certainly cheaper than an engagement.
 
 A button that sits three pixels off. A form that lets someone submit an empty field. A date that renders as `2027-02-20T00:00:00Z` instead of "20 February". A page that looks wrong on a phone. A missing loading spinner, a confusing label, a list that should sort newest-first. These are what engineers would call *local* changes: the fix lives in the same file you are looking at, nothing else in the product depends on the behaviour changing, and you can verify with your own eyes whether it worked. Hand any of these to Lovable, Bolt, Cursor, or Replit with a clear description and you will very often be done in a minute.
 
@@ -34,15 +34,15 @@ The pattern underneath is worth naming, because it is the test you will use for 
 
 ## Why the Second Category Behaves So Differently
 
-Now consider a different complaint: "sometimes a customer's order doesn't show up in their dashboard." You cannot see it — it happened to someone else, on a device you do not have, at a moment you were not watching. You cannot see the fix, because you do not know what caused it. And critically, you cannot see that it worked, because the absence of a bug that appears once every two hundred orders is indistinguishable from the bug still being there and you not having hit it yet.
+Now consider a different complaint: "sometimes a customer's order doesn't show up in their dashboard." You cannot see it - it happened to someone else, on a device you do not have, at a moment you were not watching. You cannot see the fix, because you do not know what caused it. And critically, you cannot see that it worked, because the absence of a bug that appears once every two hundred orders is indistinguishable from the bug still being there and you not having hit it yet.
 
 This is where the prompting loop turns from a tool into a trap. You describe the symptom. The AI, which has no access to what actually happened in production, produces a plausible cause and a confident fix. You deploy it. The symptom does not recur that afternoon, so it feels solved. Two days later a customer emails again.
 
-Nothing about that loop is broken, exactly — the AI did what it was asked. But it was asked to diagnose from a symptom description with no evidence, which is the equivalent of a doctor prescribing based on a text message. Sometimes the guess is right. The problem is you have no way to know which time was which.
+Nothing about that loop is broken, exactly - the AI did what it was asked. But it was asked to diagnose from a symptom description with no evidence, which is the equivalent of a doctor prescribing based on a text message. Sometimes the guess is right. The problem is you have no way to know which time was which.
 
 ## The Compounding Cost Nobody Warns You About
 
-Here is the part that makes waiting expensive rather than merely slow. Each failed attempt is not neutral. A prompt that does not fix the problem still *changes the code* — it adds a check, wraps something in error handling, introduces a retry, changes when data is saved. The symptom is unresolved and the product is now slightly more complicated than it was before.
+Here is the part that makes waiting expensive rather than merely slow. Each failed attempt is not neutral. A prompt that does not fix the problem still *changes the code* - it adds a check, wraps something in error handling, introduces a retry, changes when data is saved. The symptom is unresolved and the product is now slightly more complicated than it was before.
 
 Do this fifteen times over three weeks and you arrive at a specific, very common condition: a codebase containing five separate half-implementations of the same fix, three of which are dead code, one of which is actively fighting another, and no record anywhere of which attempt was supposed to do what. Founders describe this as "it got weird." Engineers recognise it instantly, because the first thing they have to do is *remove* attempted fixes before they can diagnose anything.
 
@@ -52,27 +52,27 @@ That has a direct financial consequence. The same underlying problem costs meani
 
 You do not need technical knowledge to read these. All four are observable from where you already sit.
 
-**The same symptom has come back more than twice after being "fixed."** Not three different bugs — the same one, returning. That pattern almost always means the actual cause has never been found, and each fix has been treating a symptom.
+**The same symptom has come back more than twice after being "fixed."** Not three different bugs - the same one, returning. That pattern almost always means the actual cause has never been found, and each fix has been treating a symptom.
 
 **You cannot reproduce it on demand.** If you can make it happen whenever you want, prompting still has a fighting chance, because you can at least verify. If it happens to *some* users *sometimes*, you have lost the verification step, and every "fixed" is a guess.
 
-**The fix requires changing something you cannot see.** Anything involving who is allowed to read which data, what happens when a payment provider replies slowly, what runs after the user closes the tab, or how two people acting at the same moment affect each other — these live in behaviour, not on screen. There is nothing to look at and confirm.
+**The fix requires changing something you cannot see.** Anything involving who is allowed to read which data, what happens when a payment provider replies slowly, what runs after the user closes the tab, or how two people acting at the same moment affect each other - these live in behaviour, not on screen. There is nothing to look at and confirm.
 
-**You have started avoiding parts of your own product.** This one is the most reliable of the four and the least often admitted. When a founder stops touching the checkout flow because last time it broke something else, that is not caution — that is a codebase that has become unpredictable, and unpredictability is what an engineer is actually hired to remove.
+**You have started avoiding parts of your own product.** This one is the most reliable of the four and the least often admitted. When a founder stops touching the checkout flow because last time it broke something else, that is not caution - that is a codebase that has become unpredictable, and unpredictability is what an engineer is actually hired to remove.
 
 ## What an Engineer Does That a Prompt Structurally Cannot
 
 The difference is not intelligence, and framing it that way makes the decision harder than it needs to be. The difference is **evidence**.
 
-An engineer's first move on an intermittent bug is not to change code. It is to make the invisible visible: add logging around the suspect path, reproduce the conditions deliberately, look at what the database actually contains for the affected customer, check whether two requests arrived at the same moment. Only after the cause is known does anything get changed — once, in one place, with a test that will fail if it ever comes back.
+An engineer's first move on an intermittent bug is not to change code. It is to make the invisible visible: add logging around the suspect path, reproduce the conditions deliberately, look at what the database actually contains for the affected customer, check whether two requests arrived at the same moment. Only after the cause is known does anything get changed - once, in one place, with a test that will fail if it ever comes back.
 
 An AI coding tool in a chat window has none of that. It cannot read your production logs, cannot query your live database, cannot see that the failing orders all came from customers in a timezone ahead of yours. It can only work from your description of the symptom, and your description is necessarily the description of someone who cannot see the cause either. This is not a limitation that a better prompt fixes. It is a limitation of what information is available inside the window.
 
-There is a second, quieter difference. An engineer knows which problems *must* be solved before launch and which are genuinely fine to leave — that a rounding error on a display total can wait, but the same error in what gets charged cannot. AI tools do not rank by consequence. They fix what you point at, with equal confidence in both cases.
+There is a second, quieter difference. An engineer knows which problems *must* be solved before launch and which are genuinely fine to leave - that a rounding error on a display total can wait, but the same error in what gets charged cannot. AI tools do not rank by consequence. They fix what you point at, with equal confidence in both cases.
 
 ## A Reasonable Rule for How Long to Keep Trying
 
-Give yourself a budget before you start, not after you are frustrated. A practical version that works for most founders: **three attempts, or one hour, whichever comes first — then stop and classify.**
+Give yourself a budget before you start, not after you are frustrated. A practical version that works for most founders: **three attempts, or one hour, whichever comes first - then stop and classify.**
 
 If it is a visible, local, verifiable problem, keep going; you are in the category where prompting wins, and attempt four is likely fine. If it fails the see-it/fix-it/verify-it test, stop and write it down instead. Note the symptom, when it happens, which customer reported it, what you already tried. That written list is worth real money later: it is the difference between an engineer spending two hours reconstructing your history and starting on the actual problem immediately.
 
@@ -86,14 +86,14 @@ LaunchStudio exists for exactly this handoff point: the product mostly works, th
 
 Sanne Duijvestein had built Roosterly, a shift-scheduling tool for hospitality teams, in Lovable, and it worked beautifully in her own testing. Then two pilot restaurants reported the same thing: occasionally, a published schedule showed the previous week's shifts to some staff members.
 
-She spent three weeks on it. Forty-one prompts across two AI tools, each producing a confident explanation — a caching problem, then a timezone problem, then a state management problem. Each fix appeared to work, because the bug surfaced roughly once per fifty schedule views and she could never trigger it deliberately. The codebase accumulated three separate caching layers, two of which no longer did anything.
+She spent three weeks on it. Forty-one prompts across two AI tools, each producing a confident explanation - a caching problem, then a timezone problem, then a state management problem. Each fix appeared to work, because the bug surfaced roughly once per fifty schedule views and she could never trigger it deliberately. The codebase accumulated three separate caching layers, two of which no longer did anything.
 
-The actual cause took a senior engineer ninety minutes to find, and it was none of the three guesses: the query fetching shifts had no constraint tying it to the requesting user's venue when a specific optional filter was absent — a path that only executed when a manager opened the schedule without selecting a date range first. Roughly one view in fifty.
+The actual cause took a senior engineer ninety minutes to find, and it was none of the three guesses: the query fetching shifts had no constraint tying it to the requesting user's venue when a specific optional filter was absent - a path that only executed when a manager opened the schedule without selecting a date range first. Roughly one view in fifty.
 
-**Result:** the fix was four lines plus a test that reproduces the exact condition. Removing the three weeks of accumulated attempted fixes took longer than the fix itself — about six hours of the engagement, which Sanne now describes as "the most expensive part of trying to save money."
+**Result:** the fix was four lines plus a test that reproduces the exact condition. Removing the three weeks of accumulated attempted fixes took longer than the fix itself - about six hours of the engagement, which Sanne now describes as "the most expensive part of trying to save money."
 
 > "I kept going because every single fix looked like it had worked. Nobody tells you that with this kind of bug, 'it stopped happening' and 'it's still there' look exactly the same."
-> — **Sanne Duijvestein, Founder, Roosterly**
+> - **Sanne Duijvestein, Founder, Roosterly**
 
 **Cost & Timeline:** diagnosis and cleanup completed in 3 business days, fixed price agreed in advance.
 
@@ -101,7 +101,7 @@ The actual cause took a senior engineer ninety minutes to find, and it was none 
 
 ### How do I know whether my problem is the "keep prompting" kind or not?
 
-Apply three tests: can you see the problem, can you see the fix, and can you confirm it worked? If all three are yes, keep prompting. If any is no — especially the third — you are guessing, and more attempts mostly add complexity rather than progress.
+Apply three tests: can you see the problem, can you see the fix, and can you confirm it worked? If all three are yes, keep prompting. If any is no - especially the third - you are guessing, and more attempts mostly add complexity rather than progress.
 
 ### Does it help to switch to a different AI tool when one gets stuck?
 
@@ -109,7 +109,7 @@ Rarely, for this category. A different tool has the same constraint: no access t
 
 ### Am I making things worse by continuing to try?
 
-Usually slightly, yes — not catastrophically, but each unsuccessful attempt leaves changed code behind. The practical effect is that the eventual professional fix takes longer because the attempts have to be unwound first, so stopping earlier genuinely costs less.
+Usually slightly, yes - not catastrophically, but each unsuccessful attempt leaves changed code behind. The practical effect is that the eventual professional fix takes longer because the attempts have to be unwound first, so stopping earlier genuinely costs less.
 
 ### Should I delete my failed fix attempts before asking an engineer to look?
 
@@ -117,7 +117,7 @@ No. Leave them and describe them. An engineer wants to see what was tried, becau
 
 ### Is it worth learning to code just enough to fix these myself?
 
-For visible layout and copy changes, a little knowledge pays off quickly. For intermittent data and permission bugs, the skill needed is not writing code but production diagnosis — reading logs, reasoning about concurrency and access rules — which takes considerably longer to acquire than the launch window most founders are working within.
+For visible layout and copy changes, a little knowledge pays off quickly. For intermittent data and permission bugs, the skill needed is not writing code but production diagnosis - reading logs, reasoning about concurrency and access rules - which takes considerably longer to acquire than the launch window most founders are working within.
 
 <script type="application/ld+json">
 {

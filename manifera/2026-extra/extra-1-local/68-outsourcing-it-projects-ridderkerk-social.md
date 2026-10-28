@@ -1,4 +1,4 @@
-🚨 A fixed-price quote feels like it caps risk — until the first change order arrives and "fixed" turns out to only mean the plan that existed before anyone started building. 💰⚙️
+🚨 A fixed-price quote feels like it caps risk - until the first change order arrives and "fixed" turns out to only mean the plan that existed before anyone started building. 💰⚙️
 
 **The Pain Points:**
 ❌ **Fixed Price, Hidden Exposure:** No milestone structure underneath means renegotiation is inevitable, not exceptional.
@@ -6,7 +6,7 @@
 ❌ **Self-Reported Milestones:** Payment released on the delivery team's own word, with no independent check.
 
 **The Manifera Solution:**
-✅ **Milestone-Gated Payment:** Tied to specific, checkable deliverables — not calendar dates.
+✅ **Milestone-Gated Payment:** Tied to specific, checkable deliverables - not calendar dates.
 ✅ **Pre-Agreed Change-Order Pricing:** Negotiated before the project starts, never under deadline pressure.
 ✅ **Independent Verification:** Amsterdam-based leads confirm a milestone is genuinely done before payment releases.
 

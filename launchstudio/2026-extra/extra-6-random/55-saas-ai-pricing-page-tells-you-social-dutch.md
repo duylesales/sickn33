@@ -1,4 +1,4 @@
-📊 Esther Bergsma bouwde "HandelsGrip," een B2B-bestel-SaaS, met Cursor, met strakke gebruiksgebaseerde prijstiers geschaald naar bestelvolume. Het inkoopteam van een enterprise-prospect bekeek haar prijspagina vóór het eerste gesprek en kwam al vragend naar per-tenant gegevensisolatie. Esther had oprecht geen antwoord — ze had het nooit gecontroleerd.
+📊 Esther Bergsma bouwde "HandelsGrip," een B2B-bestel-SaaS, met Cursor, met strakke gebruiksgebaseerde prijstiers geschaald naar bestelvolume. Het inkoopteam van een enterprise-prospect bekeek haar prijspagina vóór het eerste gesprek en kwam al vragend naar per-tenant gegevensisolatie. Esther had oprecht geen antwoord - ze had het nooit gecontroleerd.
 
 Uw prijspagina vertelt kopers meer over uw architectuur dan u denkt. 🧠
 

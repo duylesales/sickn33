@@ -6,7 +6,7 @@
 ❌ **Lost Clarity:** Too many variables at once makes it impossible to isolate what's actually driving user behavior.
 
 **The Manifera Solution:**
-✅ **A Written Boundary, Defended:** The exact hypothesis and success action the MVP exists to test — defined before the build.
+✅ **A Written Boundary, Defended:** The exact hypothesis and success action the MVP exists to test - defined before the build.
 ✅ **Amsterdam Strategic Governance:** Every proposed addition judged against that boundary, not its own individual merit.
 ✅ **Vietnam Execution Velocity:** Out-of-scope ideas deferred to a backlog, not absorbed mid-build.
 

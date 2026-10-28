@@ -1,6 +1,6 @@
-🕵️ Chloe, an agency owner, built an AI copywriter with **Cursor** — but she had no way to track token costs across her different client organizations, quietly bleeding money into her OpenAI bill. 💰
+🕵️ Chloe, an agency owner, built an AI copywriter with **Cursor** - but she had no way to track token costs across her different client organizations, quietly bleeding money into her OpenAI bill. 💰
 
-You can't interview an AI agent after the fact — without a real log, "why did it do that" has no answer. 🧠
+You can't interview an AI agent after the fact - without a real log, "why did it do that" has no answer. 🧠
 
 ❌ No record of which client's usage was actually driving the OpenAI bill
 ❌ A "Black Box" AI decision pipeline that enterprise procurement teams will reject outright

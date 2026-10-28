@@ -24,13 +24,13 @@ Webstatistieken toevoegen aan een Lovable- of Bolt-applicatie kost ongeveer nege
 
 Beide beslissingen van anderhalve minuut zijn in de praktijk vrijwel altijd fundamenteel verkeerd. En wel op twee specifieke manieren: de tracking-scripts beginnen al met data verzamelen vóórdat een bezoeker ook maar ergens mee heeft ingestemd, en de banner toont een prominente knop "Accepteren" zonder een even eenvoudige en gelijkwaardige mogelijkheid om te weigeren. Die combinatie komt zó vaak voor dat het normaal lijkt, maar het is exact het patroon waar de Autoriteit Persoonsgegevens (AP) en Europese privacytoezichthouders al jaren fel tegen waarschuwen.
 
-*Dit betreft algemene technische en praktische informatie, geen formeel juridisch advies. De handhaving en richtlijnen op dit gebied ontwikkelen zich continu — controleer altijd de actuele regels voor jouw specifieke situatie.*
+*Dit betreft algemene technische en praktische informatie, geen formeel juridisch advies. De handhaving en richtlijnen op dit gebied ontwikkelen zich continu - controleer altijd de actuele regels voor jouw specifieke situatie.*
 
 ## Wat vereist nu écht toestemming?
 
 Er zijn twee afzonderlijke wetgevingskaders van toepassing, en dat is precies waarom dit onderwerp zoveel verwarring veroorzaakt:
 
-**Het opslaan of uitlezen van informatie op het apparaat van de gebruiker** — cookies, en vergelijkbare technieken zoals `localStorage`, `sessionStorage` of browser-fingerprinting — valt onder de ePrivacy-richtlijn (in Nederland geïmplementeerd in de Telecommunicatiewet, de zogeheten cookiewet). Voorafgaande toestemming is verplicht, tenzij de opslag strikt noodzakelijk is om de door de bezoeker gevraagde dienst te leveren.
+**Het opslaan of uitlezen van informatie op het apparaat van de gebruiker** - cookies, en vergelijkbare technieken zoals `localStorage`, `sessionStorage` of browser-fingerprinting - valt onder de ePrivacy-richtlijn (in Nederland geïmplementeerd in de Telecommunicatiewet, de zogeheten cookiewet). Voorafgaande toestemming is verplicht, tenzij de opslag strikt noodzakelijk is om de door de bezoeker gevraagde dienst te leveren.
 
 **Het verwerken van persoonsgegevens** valt onder de AVG (GDPR). Dit vereist een geldige wettelijke grondslag. Wanneer toestemming die grondslag is, stelt de wet strenge eisen: toestemming moet vrijelijk, specifiek, geïnformeerd en ondubbelzinnig zijn gegeven, waarbij weigeren net zo gemakkelijk moet zijn als instemmen.
 
@@ -38,7 +38,7 @@ De praktische consequentie voor een typische met AI gebouwde app: de sessiecooki
 
 ## De twee weeffouten in bijna elke gegenereerde banner
 
-**De scripts laden al direct in.** Dit is de puur technische fout en hij is vrijwel universeel in met AI gebouwde applicaties. Het analytics-script staat hardcoded in de `<head>` van de webpagina en wordt direct uitgevoerd zodra de pagina laadt. De cookiebanner verschijnt een halve seconde later over het scherm heen en slaat een voorkeur op waar de reeds geladen scripts zich niets van aantrekken. Klikken op "Weigeren" verandert slechts een vlaggetje in de browseropslag, maar stopt niets — de tracking heeft immers al plaatsgevonden.
+**De scripts laden al direct in.** Dit is de puur technische fout en hij is vrijwel universeel in met AI gebouwde applicaties. Het analytics-script staat hardcoded in de `<head>` van de webpagina en wordt direct uitgevoerd zodra de pagina laadt. De cookiebanner verschijnt een halve seconde later over het scherm heen en slaat een voorkeur op waar de reeds geladen scripts zich niets van aantrekken. Klikken op "Weigeren" verandert slechts een vlaggetje in de browseropslag, maar stopt niets - de tracking heeft immers al plaatsgevonden.
 
 **Weigeren is moeilijker gemaakt dan accepteren.** Een grote, felgekleurde knop "Alles accepteren" naast een klein, grijs linkje naar "Instellingen beheren" waar je drie extra vinkjes moet uitzetten om te weigeren, is precies het donkere ontwerppatroon (dark pattern) dat toezichthouders als onrechtmatig bestempelen. Zowel de Nederlandse AP als de European Data Protection Board (EDPB) eisen gelijke visuele prominentie en hetzelfde aantal klikken voor weigeren als voor accepteren.
 
@@ -56,7 +56,7 @@ Drie benaderingen lossen dit op, elk met hun eigen consequenties:
 
 **Server-side metingen.** Jouw eigen backend weet al exact hoeveel registraties er zijn voltooid en welke API-endpoints zijn aangeroepen. Voor een product met enkele honderden gebruikers beantwoordt een simpel intern overzicht vrijwel alle vragen, zonder dat er ook maar één externe partij aan te pas komt.
 
-**Volwaardige commerciële analytics (zoals GA4 of PostHog)** met een correct geïmplementeerde cookiebanner, wanneer je daadwerkelijk complexe conversietrechters, cohortanalyses en cross-device attributie nodig hebt — doorgaans pas zodra je serieus budget aan betaalde advertenties besteedt.
+**Volwaardige commerciële analytics (zoals GA4 of PostHog)** met een correct geïmplementeerde cookiebanner, wanneer je daadwerkelijk complexe conversietrechters, cohortanalyses en cross-device attributie nodig hebt - doorgaans pas zodra je serieus budget aan betaalde advertenties besteedt.
 
 Kiezen voor de eerste of tweede optie lost het bannerprobleem op door simpelweg de tracking te schrappen die de banner überhaupt noodzakelijk maakte.
 
@@ -88,15 +88,15 @@ Kunnen aantonen dat jouw applicatie helemaal géén tracking-scripts van derden 
 
 Voor het overgrote deel van de met AI gebouwde applicaties in Nederland volstaat een heldere strategie:
 
-Kies voor een privacyvriendelijke analyticstool of simpele server-side logica, zodat er voor basismetingen geen toestemming nodig is. Plaats geen advertentiepixels zolang je niet actief adverteert. Gebruik uitsluitend functioneel noodzakelijke sessiecookies — waardoor je helemaal geen irritante cookiebanner nodig hebt. Schrijf een beknopte, eerlijke privacyverklaring waarin je precies uitlegt wat je verzamelt en waarom. En mocht je later alsnog trackingtools toevoegen die toestemming vereisen, richt de banner dan direct technisch juist in, waarbij scripts pas ná goedkeuring worden ingeladen.
+Kies voor een privacyvriendelijke analyticstool of simpele server-side logica, zodat er voor basismetingen geen toestemming nodig is. Plaats geen advertentiepixels zolang je niet actief adverteert. Gebruik uitsluitend functioneel noodzakelijke sessiecookies - waardoor je helemaal geen irritante cookiebanner nodig hebt. Schrijf een beknopte, eerlijke privacyverklaring waarin je precies uitlegt wat je verzamelt en waarom. En mocht je later alsnog trackingtools toevoegen die toestemming vereisen, richt de banner dan direct technisch juist in, waarbij scripts pas ná goedkeuring worden ingeladen.
 
-Het resultaat: minder code, een aanzienlijk snellere website, geen juridische kwetsbaarheden tijdens inkoopaudits — en voor jou als oprichter exact dezelfde vier getallen die je nodig hebt om je bedrijf te sturen.
+Het resultaat: minder code, een aanzienlijk snellere website, geen juridische kwetsbaarheden tijdens inkoopaudits - en voor jou als oprichter exact dezelfde vier getallen die je nodig hebt om je bedrijf te sturen.
 
 ## Eén keer goed inrichten
 
 Dit is overzichtelijk technisch werk met grote risico's wanneer het wordt verwaarloosd. LaunchStudio pakt dit structureel aan bij het productierijp maken van met AI gebouwde software: overbodige trackers verwijderen, cookieloze metingen inrichten waar mogelijk, een technisch conforme toestemmingsflow implementeren waar noodzakelijk (waarbij scripts gegarandeerd pas ná toestemming laden), en een privacyverklaring opstellen die exact beschrijft wat de app werkelijk doet.
 
-De interface die je in Lovable hebt gebouwd blijft onaangetast, de programmacode blijft van jou, en de privacy-documentatie sluit naadloos aan bij wat zakelijke klanten verlangen. Achter LaunchStudio staat Manifera — met elf jaar ervaring in enterprise software engineering voor partijen als Vodafone en TNO, vanuit Amsterdam en Ho Chi Minhstad.
+De interface die je in Lovable hebt gebouwd blijft onaangetast, de programmacode blijft van jou, en de privacy-documentatie sluit naadloos aan bij wat zakelijke klanten verlangen. Achter LaunchStudio staat Manifera - met elf jaar ervaring in enterprise software engineering voor partijen als Vodafone en TNO, vanuit Amsterdam en Ho Chi Minhstad.
 
 [Omschrijf je project](https://launchstudio.eu/nl/#contact) en we vertellen je binnen één werkdag welke externe scripts jouw app momenteel laadt en of je überhaupt een banner nodig hebt, of bekijk eerst wat [Launch Ready inhoudt](https://launchstudio.eu/nl/#packages).
 
@@ -142,18 +142,18 @@ Een regionaal werving- en selectiebureau dat een structurele samenwerking overwo
 
 De sanering kostte drie werkdagen: de heatmap-tool en de slapende advertentiepixel werden compleet uit de code verwijderd. Het zware analytics-platform werd vervangen door een privacyvriendelijke, cookieloze meettool die geen enkel uniek ID op het apparaat van de bezoeker opslaat. Hierdoor verviel de juridische toestemmingsplicht voor webstatistieken volledig. De cookiebanner werd vervolgens simpelweg in zijn geheel verwijderd, aangezien de site uitsluitend nog functionele sessiecookies gebruikte. De privacyverklaring werd herschreven om exact de vier datapunten te beschrijven die de site nog verwerkt. Als bijkomend voordeel halveerde het gewicht van de pagina, waardoor de site op mobiele telefoons aanzienlijk sneller laadt.
 
-**Resultaat:** het wervingsbureau tekende het partnerschap, de gebruikerservaring verbeterde zonder irritante pop-up, en Rik beschikt over exact dezelfde kernstatistieken — bezoekers, herkomst, vacatureweergaven en sollicitaties — als voorheen.
+**Resultaat:** het wervingsbureau tekende het partnerschap, de gebruikerservaring verbeterde zonder irritante pop-up, en Rik beschikt over exact dezelfde kernstatistieken - bezoekers, herkomst, vacatureweergaven en sollicitaties - als voorheen.
 
 > *"Ik had een cookiebanner die toestemming vroeg voor drie tools die ik niet gebruikte en één die ik compleet vergeten was. Ze gewoon verwijderen was oneindig veel makkelijker dan ze moeten verantwoorden."*
-> — **Rik Doornbos, Oprichter, Vakwerk (Arnhem)**
+> - **Rik Doornbos, Oprichter, Vakwerk (Arnhem)**
 
-**Kosten & Doorlooptijd:** € 980 (tracker-audit, migratie naar cookieloze analytics, verwijderen cookiebanner, privacyverklaring) — afgerond binnen 3 werkdagen.
+**Kosten & Doorlooptijd:** € 980 (tracker-audit, migratie naar cookieloze analytics, verwijderen cookiebanner, privacyverklaring) - afgerond binnen 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Heeft elke website verplicht een cookiebanner nodig?
 
-Nee, absoluut niet. Banners zijn uitsluitend vereist voor technieken die niet strikt noodzakelijk zijn voor de werking van de website — zoals tracking voor advertenties, geavanceerde profilering of niet-geanonimiseerde websitestatistieken. Een website die uitsluitend functioneel noodzakelijke sessiecookies en cookieloze analytics gebruikt, heeft géén toestemmingsbanner nodig, maar volstaat met een heldere privacyverklaring.
+Nee, absoluut niet. Banners zijn uitsluitend vereist voor technieken die niet strikt noodzakelijk zijn voor de werking van de website - zoals tracking voor advertenties, geavanceerde profilering of niet-geanonimiseerde websitestatistieken. Een website die uitsluitend functioneel noodzakelijke sessiecookies en cookieloze analytics gebruikt, heeft géén toestemmingsbanner nodig, maar volstaat met een heldere privacyverklaring.
 
 ### Is mijn gekopieerde cookiebanner goed genoeg?
 
@@ -189,7 +189,7 @@ Omdat externe JavaScript-code in jouw applicatie direct wordt uitgevoerd op de a
       "name": "Is mijn gekopieerde cookiebanner goed genoeg?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal niet: scripts laden vaak al vóór de keuze en weigeren is zelden even makkelijk als accepteren — de twee punten waar toezichthouders op handhaven."
+        "text": "Meestal niet: scripts laden vaak al vóór de keuze en weigeren is zelden even makkelijk als accepteren - de twee punten waar toezichthouders op handhaven."
       }
     },
     {

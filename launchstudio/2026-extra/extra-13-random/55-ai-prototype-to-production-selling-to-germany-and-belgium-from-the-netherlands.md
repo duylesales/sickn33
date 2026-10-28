@@ -22,13 +22,13 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-From Roermond, Venlo or Maastricht, Germany and Belgium are not export markets; they are the next town over. Founders in Limburg and along the eastern border often find their first customers across the border as easily as at home. That is a real advantage for an AI-built product — and it adds a layer of requirements when you take an AI prototype to production. Germany in particular has expectations that Dutch founders do not always anticipate, and AI tools, which default to generic English-language templates, anticipate none of them.
+From Roermond, Venlo or Maastricht, Germany and Belgium are not export markets; they are the next town over. Founders in Limburg and along the eastern border often find their first customers across the border as easily as at home. That is a real advantage for an AI-built product - and it adds a layer of requirements when you take an AI prototype to production. Germany in particular has expectations that Dutch founders do not always anticipate, and AI tools, which default to generic English-language templates, anticipate none of them.
 
 This article is a practical overview, not legal or tax advice. For your specific situation, consult an adviser.
 
 ## Legal Notices: The German Impressum
 
-German law requires most commercial websites and apps to have an easily accessible legal notice (Impressum) with specific information: company name and legal form, address, contact details including email, register and registration number, VAT identification number and, depending on the business, further details. Missing or incomplete notices can attract warning letters (Abmahnungen) from competitors or associations — a distinctly German phenomenon.
+German law requires most commercial websites and apps to have an easily accessible legal notice (Impressum) with specific information: company name and legal form, address, contact details including email, register and registration number, VAT identification number and, depending on the business, further details. Missing or incomplete notices can attract warning letters (Abmahnungen) from competitors or associations - a distinctly German phenomenon.
 
 Belgian and Dutch rules also require clear business identification on websites, but the German requirement is more formal and more actively enforced. Put a complete legal notice in every language version, reachable from every page and app screen.
 
@@ -36,7 +36,7 @@ Belgian and Dutch rules also require clear business identification on websites, 
 
 Serving German customers usually means offering German, not just English. Belgian customers may expect Dutch or French. Beyond interface text:
 
-- **Legal documents** — terms, privacy notice, cancellation information — should be available in the customer's language.
+- **Legal documents** - terms, privacy notice, cancellation information - should be available in the customer's language.
 - **Transactional emails and invoices** must follow the customer's language setting.
 - **Formats** differ: dates, numbers (decimal commas), addresses, phone numbers.
 - **Validation** must accept German and French characters (ä, ö, ü, ß, é, ç) without breaking.
@@ -48,14 +48,14 @@ AI-built apps usually hard-code text and formats in one language. Proper interna
 VAT rules for cross-border digital services within the EU are specific:
 
 - **B2B:** selling to a VAT-registered business in another EU country typically uses the reverse-charge mechanism. You validate the customer's VAT number (via VIES), charge no Dutch VAT, and state "reverse charge" on the invoice.
-- **B2C:** for digital services to consumers in other EU countries, VAT is generally due at the customer's country's rate — 19% in Germany, 21% in Belgium — above an EU-wide threshold. The One-Stop Shop (OSS) scheme lets you report this through the Dutch tax authority.
+- **B2C:** for digital services to consumers in other EU countries, VAT is generally due at the customer's country's rate - 19% in Germany, 21% in Belgium - above an EU-wide threshold. The One-Stop Shop (OSS) scheme lets you report this through the Dutch tax authority.
 - **Evidence:** you need to determine and record the customer's location.
 
 Your app must calculate VAT per customer type and country, validate VAT numbers, produce correct invoices and keep the records. AI-generated checkout code almost always applies one Dutch rate to everyone.
 
 ## Payment Methods
 
-Dutch customers expect iDEAL; Belgians expect Bancontact; German customers commonly use PayPal, cards, SEPA direct debit and buy-now-pay-later options such as Klarna. Mollie and Stripe support most of these through one integration. As always, confirm payments through verified webhooks rather than browser redirects — especially important with redirect-based methods.
+Dutch customers expect iDEAL; Belgians expect Bancontact; German customers commonly use PayPal, cards, SEPA direct debit and buy-now-pay-later options such as Klarna. Mollie and Stripe support most of these through one integration. As always, confirm payments through verified webhooks rather than browser redirects - especially important with redirect-based methods.
 
 ## Cookies and Consent
 
@@ -71,7 +71,7 @@ Selling to consumers across the border brings their consumer law into play: with
 
 ## AI Prototype to Production Across Borders: Support and Operations
 
-Customers expect support in their language and during their business hours. Transactional emails, status pages and error messages should be localised. Even simple things — a German customer receiving a Dutch password-reset email — create friction.
+Customers expect support in their language and during their business hours. Transactional emails, status pages and error messages should be localised. Even simple things - a German customer receiving a Dutch password-reset email - create friction.
 
 ## Implementing Internationalisation Properly
 
@@ -79,7 +79,7 @@ When taking an AI prototype to production for Germany and Belgium, international
 
 1. **Extract all strings** from components into translation files per language (`nl.json`, `de.json`, `fr.json`, `en.json`), using a library such as next-intl, react-i18next or FormatJS.
 2. **Use keys, not sentences**, so text can change without breaking references.
-3. **Handle plurals and variables** through the library's message format, not string concatenation — German and French plural rules differ from English.
+3. **Handle plurals and variables** through the library's message format, not string concatenation - German and French plural rules differ from English.
 4. **Format dates, numbers and currencies** with the `Intl` APIs using the user's locale.
 5. **Translate server-side messages**: emails, PDFs, error messages and notifications, based on the user's stored language.
 6. **Set language in URLs** for public pages (`/de/`, `/fr/`) with hreflang tags, so search engines serve the right version.
@@ -118,7 +118,7 @@ Each of these has specific requirements; have a lawyer familiar with German e-co
 | Belgium | Bancontact, cards, PayPal, SEPA direct debit |
 | Germany | PayPal, cards, SEPA direct debit, buy-now-pay-later (e.g. Klarna), bank transfer |
 
-Offer methods based on the customer's country, and confirm every payment via verified webhooks. Some methods, such as SEPA direct debit, confirm asynchronously — your app must handle "pending" states and later failures gracefully.
+Offer methods based on the customer's country, and confirm every payment via verified webhooks. Some methods, such as SEPA direct debit, confirm asynchronously - your app must handle "pending" states and later failures gracefully.
 
 ## Customer Support Across Languages
 
@@ -126,7 +126,7 @@ Support in the customer's language is part of production readiness for neighbour
 
 ## Data Protection Documentation for German Business Customers
 
-German B2B customers frequently expect an Auftragsverarbeitungsvertrag (data processing agreement) in German, a list of sub-processors with locations and a description of technical and organisational measures (TOMs). Prepare these once, aligned with your actual setup. A precise TOM document — access control, encryption, backups, logging, incident handling — answers most questions before they are asked.
+German B2B customers frequently expect an Auftragsverarbeitungsvertrag (data processing agreement) in German, a list of sub-processors with locations and a description of technical and organisational measures (TOMs). Prepare these once, aligned with your actual setup. A precise TOM document - access control, encryption, backups, logging, incident handling - answers most questions before they are asked.
 
 ## Cookie Consent That Holds Up in Germany
 
@@ -134,11 +134,11 @@ German regulators and courts have taken a strict view of consent banners: consen
 
 ## Pricing and Currency Presentation
 
-German and Belgian consumers expect prices including VAT, with the VAT amount stated where required, and clear information about additional costs such as delivery. For B2B customers, prices excluding VAT are customary. Your app must display the right format depending on customer type and country, and the invoice must match what was shown at checkout. Rounding differences between displayed and invoiced prices are a common source of complaints in cross-border shops — calculate once, store the result and reuse it everywhere.
+German and Belgian consumers expect prices including VAT, with the VAT amount stated where required, and clear information about additional costs such as delivery. For B2B customers, prices excluding VAT are customary. Your app must display the right format depending on customer type and country, and the invoice must match what was shown at checkout. Rounding differences between displayed and invoiced prices are a common source of complaints in cross-border shops - calculate once, store the result and reuse it everywhere.
 
 ## A Rollout Plan for Neighbouring Markets
 
-A sensible sequence for entering Germany and Belgium from the Netherlands: first, internationalise the product and legal texts; second, implement VAT logic and local payment methods; third, launch to a limited group — for example existing partners across the border — and collect feedback; fourth, localise marketing and support; finally, expand. Each step is testable, and problems surface with a small number of customers rather than during a big launch.
+A sensible sequence for entering Germany and Belgium from the Netherlands: first, internationalise the product and legal texts; second, implement VAT logic and local payment methods; third, launch to a limited group - for example existing partners across the border - and collect feedback; fourth, localise marketing and support; finally, expand. Each step is testable, and problems surface with a small number of customers rather than during a big launch.
 
 ## What LaunchStudio Typically Changes for Cross-Border Apps
 
@@ -154,7 +154,7 @@ LaunchStudio helps border-region founders make their AI-built product ready for 
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience delivering software for international clients from Amsterdam, Singapore and Ho Chi Minh City. See [Manifera's portfolio](https://www.manifera.com/portfolio/). For VAT on digital services, the [European Commission's OSS portal](https://vat-one-stop-shop.ec.europa.eu/) is the authoritative starting point.
 
-[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) — in English or Dutch.
+[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) - in English or Dutch.
 
 ## Real example
 
@@ -169,9 +169,9 @@ Over thirteen business days, LaunchStudio's engineers internationalised the app 
 **Result:** German checkout completion rose by roughly a third in the following season, B2B invoices to German hotels were correct, and the warning letter was settled without further issues. Grensfiets added eleven German and four Belgian partner locations the next year.
 
 > *"The border is ten minutes from my shop. It turned out to be a lot further for my app."*
-> — **Annelies Brink, Founder, Grensfiets (Roermond)**
+> - **Annelies Brink, Founder, Grensfiets (Roermond)**
 
-**Cost & Timeline:** €4,100 (Launch & Grow package: internationalisation, VAT logic, payments, consent and legal structures) — completed in 13 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €4,100 (Launch & Grow package: internationalisation, VAT logic, payments, consent and legal structures) - completed in 13 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 

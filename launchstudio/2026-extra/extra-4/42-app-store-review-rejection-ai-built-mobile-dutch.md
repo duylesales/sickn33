@@ -60,7 +60,7 @@ async function deleteAccount(userId) {
   await markAccountDeleted(userId);
 
   // Het verwijderen van het account annuleert een actief App Store- of
-  // Play Store-abonnement NIET — die facturatie-relatie is rechtstreeks eigendom
+  // Play Store-abonnement NIET - die facturatie-relatie is rechtstreeks eigendom
   // van Apple/Google en heeft een eigen duidelijk pad nodig.
   showSubscriptionCancellationNotice({
     ios: 'itms-apps://apps.apple.com/account/subscriptions',
@@ -82,9 +82,9 @@ De afwijzing kwam binnen enkele dagen terug, Richtlijn 5.1.1(v) citerend: de app
 LaunchStudio voegde een self-service verwijderstroom toe die bereikbaar is vanaf de accountinstellingen, sloot het aan om de huisdierenprofielen en afspraakgeschiedenis van de gebruiker daadwerkelijk uit de database te wissen in plaats van het account alleen als inactief te markeren, en trok alle geassocieerde Inloggen met Apple-tokens in als onderdeel van dezelfde actie. **Resultaat:** HuisdierZorg slaagde bij een herhaalde indiening voor de App Store-beoordeling zonder verdere nalevingsmarkeringen.
 
 > *"Ik wist niet eens dat het verwijderen van een account een vereiste was totdat Apple het me vertelde. Het voelde achteraf als zo'n duidelijke tekortkoming – maar Cursor heeft het nooit één keer gesuggereerd omdat ik er nooit om vroeg."*
-> — **Lynn Verheul, Oprichter, HuisdierZorg (Sittard)**
+> - **Lynn Verheul, Oprichter, HuisdierZorg (Sittard)**
 
-**Kosten en tijdlijn:** € 650 (nalevende account-verwijderstroom, logica voor het wissen van gegevens, intrekking van Inloggen met Apple-tokens) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (nalevende account-verwijderstroom, logica voor het wissen van gegevens, intrekking van Inloggen met Apple-tokens) - voltooid in 4 werkdagen.
 
 ---
 

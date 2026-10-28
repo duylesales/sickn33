@@ -31,13 +31,13 @@ De nuttigste vraag, en die hoort gesteld te worden vóór je een functie aanvaar
 
 De tweede helft telt zwaarder dan de eerste. Veel organisaties beschrijven een technisch spoor in hun loopbaankader zonder dat iemand er werkelijk op zit. Is niemand een niveau boven je géén manager, dan is het spoor aspiratie in plaats van werkelijkheid.
 
-**Waar het antwoord mee varieert.** Grote technologiebedrijven, halfgeleiders, kwantitatieve financiën en sommige scale-ups hebben echte senior individuele functies. Publieke sector, zorg, onderzoeksinstituten en veel industriële bedrijven grotendeels niet — doorgroei gaat naar coördinatie en management. Kleinere bedrijven hebben vaak geen formele structuur, wat soms beter is omdat invloed onbegrensd is en soms slechter omdat niets is vastgelegd.
+**Waar het antwoord mee varieert.** Grote technologiebedrijven, halfgeleiders, kwantitatieve financiën en sommige scale-ups hebben echte senior individuele functies. Publieke sector, zorg, onderzoeksinstituten en veel industriële bedrijven grotendeels niet - doorgroei gaat naar coördinatie en management. Kleinere bedrijven hebben vaak geen formele structuur, wat soms beter is omdat invloed onbegrensd is en soms slechter omdat niets is vastgelegd.
 
 **Bestaat het spoor niet, dan heb je drie opties.** Naar een organisatie waar het wél bestaat. Management aanvaarden en ontdekken of je er geschikt voor bent, wat veel mensen zijn ondanks hun aanname. Of technisch blijven zonder titelgroei en accepteren dat beloning en formele positie plafonneren terwijl het werk uitstekend kan blijven.
 
 ## Wat werkelijk verandert op dit niveau
 
-**Het probleem kiezen wordt het werk.** Een senior engineer lost het gegeven probleem goed op. Daarvoorbij is de bijdrage vaststellen welk probleem het oplossen waard is — herkennen dat het gevraagde model niet zou helpen, dat de echte beperking datakwaliteit is, dat een eenvoudiger ingreep het meeste van de waarde zou pakken. Dat is oordeel in plaats van vaardigheid.
+**Het probleem kiezen wordt het werk.** Een senior engineer lost het gegeven probleem goed op. Daarvoorbij is de bijdrage vaststellen welk probleem het oplossen waard is - herkennen dat het gevraagde model niet zou helpen, dat de echte beperking datakwaliteit is, dat een eenvoudiger ingreep het meeste van de waarde zou pakken. Dat is oordeel in plaats van vaardigheid.
 
 **Je bent verantwoordelijk voor uitkomsten die je niet zelf voortbrengt.** Je invloed loopt via het werk van anderen. Dat betekent overtuigen, onderwijzen, reviewen en voorwaarden creëren in plaats van bouwen.
 
@@ -55,7 +55,7 @@ De tweede helft telt zwaarder dan de eerste. Veel organisaties beschrijven een t
 
 **Consensuscultuur maakt het langzamer.** Besluiten kennen werkelijk overleg, dus een organisatie bewegen vraagt geduld en herhaald gesprek in plaats van gezag.
 
-**Cao's begrenzen de uitkomst.** In publieke sector, zorg en onderzoek ligt er een plafond op wat een technische functie betaalt, ongeacht je bijdrage. Erkenning moet dan andere vormen krijgen — autonomie, interessante problemen, opleiding, minder uren — en die zijn werkelijk beschikbaar.
+**Cao's begrenzen de uitkomst.** In publieke sector, zorg en onderzoek ligt er een plafond op wat een technische functie betaalt, ongeacht je bijdrage. Erkenning moet dan andere vormen krijgen - autonomie, interessante problemen, opleiding, minder uren - en die zijn werkelijk beschikbaar.
 
 **Deeltijd-seniorschap kan hier.** Een vierdaagse werkweek op senior technisch niveau is in Nederland normaal op een manier die het in de meeste markten niet is.
 
@@ -65,7 +65,7 @@ De tweede helft telt zwaarder dan de eerste. Veel organisaties beschrijven een t
 
 **Schrijf dingen die mensen hergebruiken.** Een ontwerpdocument dat de referentie wordt. Een analyse die een terugkerend argument beslecht.
 
-**Ontwikkel anderen bewust.** Niet toegewezen mentorschap — het werk van collega's werkelijk verbeteren via review, samen werken en uitleggen.
+**Ontwikkel anderen bewust.** Niet toegewezen mentorschap - het werk van collega's werkelijk verbeteren via review, samen werken en uitleggen.
 
 **Bouw een netwerk buiten je werkgever.** Je positie binnen één organisatie draagt niet over.
 
@@ -77,7 +77,7 @@ Wil je de titel en de beloning, begrijp dan dat het werk werkelijk verandert en 
 
 Wil je meer invloed op wat er gebouwd wordt, dan is dit het pad.
 
-Wil je uitstekend technisch werk blijven doen, dan heb je de titel misschien helemaal niet nodig — juist in een Nederlandse context waar vlakke hiërarchie bekwame mensen al invloed geeft. Sommige van de meest effectieve technische mensen in Nederlandse organisaties hebben onopvallende titels en aanzienlijke positie.
+Wil je uitstekend technisch werk blijven doen, dan heb je de titel misschien helemaal niet nodig - juist in een Nederlandse context waar vlakke hiërarchie bekwame mensen al invloed geeft. Sommige van de meest effectieve technische mensen in Nederlandse organisaties hebben onopvallende titels en aanzienlijke positie.
 
 ## Belangrijkste punten
 

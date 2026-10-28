@@ -30,13 +30,13 @@ The right software development pricing model depends on one specific variable a 
 
 Software development pricing models should be selected based on an honest assessment of requirements clarity, and a CFO who makes this assessment explicitly, rather than defaulting to whichever model feels most reassuring, gets a pricing structure that genuinely fits the project's actual risk profile.
 
-Fixed-price pricing genuinely works well specifically when requirements are well-understood, stable, and unlikely to change meaningfully during the project — a project with a clear, detailed specification, low ambiguity, and a track record (either from the vendor's past similar work or the client's own experience) suggesting the initial understanding is likely to hold. In this situation, fixed-price genuinely delivers what it promises: real budget certainty, because the underlying uncertainty the price would otherwise need to absorb is genuinely low.
+Fixed-price pricing genuinely works well specifically when requirements are well-understood, stable, and unlikely to change meaningfully during the project - a project with a clear, detailed specification, low ambiguity, and a track record (either from the vendor's past similar work or the client's own experience) suggesting the initial understanding is likely to hold. In this situation, fixed-price genuinely delivers what it promises: real budget certainty, because the underlying uncertainty the price would otherwise need to absorb is genuinely low.
 
-Time-and-materials pricing genuinely fits better when requirements are still evolving, when the project involves meaningful discovery or exploration as part of the work itself, or when the specific approach may need to change based on findings during the project — situations where a fixed price would either need to be padded significantly to cover unknown risk, or would be optimistically low and drive change orders. Time-and-materials, paired with genuine transparency and regular budget check-ins, gives a CFO accurate, real-time cost visibility without paying a premium for risk protection that a genuinely well-scoped fixed price wouldn't need to include.
+Time-and-materials pricing genuinely fits better when requirements are still evolving, when the project involves meaningful discovery or exploration as part of the work itself, or when the specific approach may need to change based on findings during the project - situations where a fixed price would either need to be padded significantly to cover unknown risk, or would be optimistically low and drive change orders. Time-and-materials, paired with genuine transparency and regular budget check-ins, gives a CFO accurate, real-time cost visibility without paying a premium for risk protection that a genuinely well-scoped fixed price wouldn't need to include.
 
-A practical middle approach, often underused, is a hybrid structure — fixed-price for the parts of a project with genuinely stable, well-understood requirements, paired with time-and-materials for the specific components involving genuine discovery or uncertainty, priced and billed separately according to which category each component actually falls into, rather than forcing an entire project into a single pricing model when different parts of it have genuinely different risk profiles.
+A practical middle approach, often underused, is a hybrid structure - fixed-price for the parts of a project with genuinely stable, well-understood requirements, paired with time-and-materials for the specific components involving genuine discovery or uncertainty, priced and billed separately according to which category each component actually falls into, rather than forcing an entire project into a single pricing model when different parts of it have genuinely different risk profiles.
 
-A CFO evaluating pricing model options should specifically ask, honestly, how well-defined the actual requirements are at the point pricing is being agreed — not how well-defined the CFO would like them to be, or how well-defined a vendor's sales process makes them sound, but a genuine assessment of remaining ambiguity — and select the pricing model, or hybrid combination, that matches that genuine assessment, rather than defaulting to fixed-price for its apparent certainty when that certainty is more illusory than real given the project's actual requirements clarity.
+A CFO evaluating pricing model options should specifically ask, honestly, how well-defined the actual requirements are at the point pricing is being agreed - not how well-defined the CFO would like them to be, or how well-defined a vendor's sales process makes them sound, but a genuine assessment of remaining ambiguity - and select the pricing model, or hybrid combination, that matches that genuine assessment, rather than defaulting to fixed-price for its apparent certainty when that certainty is more illusory than real given the project's actual requirements clarity.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -51,10 +51,10 @@ This is Dutch Management × Vietnamese Mastery: European honesty about matching 
 
 Ipari Rendszerek Debrecen Kft., a Debrecen-based manufacturer, had insisted on fixed-price pricing for a project with genuinely unclear, still-evolving requirements around a new production-planning module, and received a quote padded substantially above what the actual, eventually-clarified work turned out to require, since the vendor had priced in protection against the genuine uncertainty the CFO's fixed-price preference had forced into the number.
 
-Manifera's subsequent engagement for the company's next project proposed a hybrid structure — fixed-price for the well-understood integration components, time-and-materials with weekly budget transparency for the genuinely exploratory planning-logic components. The final cost came in below the padded fixed-price quote's amount, while the CFO retained accurate, ongoing visibility into the uncertain portion throughout.
+Manifera's subsequent engagement for the company's next project proposed a hybrid structure - fixed-price for the well-understood integration components, time-and-materials with weekly budget transparency for the genuinely exploratory planning-logic components. The final cost came in below the padded fixed-price quote's amount, while the CFO retained accurate, ongoing visibility into the uncertain portion throughout.
 
 > *"We wanted budget certainty so badly we paid for a fixed number on something nobody could have actually specified in detail yet. The quote was padded to cover exactly that uncertainty, and we paid for it whether or not it ever showed up. The hybrid approach the second time actually cost us less and gave us more real visibility."*
-> — **CFO, Ipari Rendszerek Debrecen Kft., Hungary**
+> - **CFO, Ipari Rendszerek Debrecen Kft., Hungary**
 
 ## Default Fixed-Price Selection vs. Manifera's Requirements-Matched Pricing
 
@@ -82,7 +82,7 @@ How genuinely well-defined the project's requirements are at the time pricing is
 
 ### (Scenario: CFO evaluating a project with a mix of well-understood and uncertain requirements) What pricing approach fits a project with genuinely mixed requirements clarity across different components?
 
-A hybrid structure — fixed-price for stable, well-understood components and time-and-materials for genuinely exploratory ones — priced separately by category.
+A hybrid structure - fixed-price for stable, well-understood components and time-and-materials for genuinely exploratory ones - priced separately by category.
 
 ### (Scenario: CFO wondering when fixed-price pricing genuinely works well) When does fixed-price pricing genuinely deliver on its budget certainty promise?
 

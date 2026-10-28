@@ -34,7 +34,7 @@ Sommigen bedoelen simpelweg dat ze een icoontje op het startscherm van hun smart
 
 **"Het moet ook zonder internetverbinding werken."** Tot op zekere hoogte prima mogelijk met een PWA via geavanceerde service worker-caching, al wordt echt complexe offline data-synchronisatie snel uitdagend. Vraag altijd door: heeft de klant écht volledige offline werking nodig, of moet de app simpelweg niet vastlopen wanneer het 4G-signaal in de trein tien seconden wegvalt?
 
-**"Ik heb toegang nodig tot Bluetooth, de camera op laag niveau, achtergrondlocatie of specifieke hardware."** Dit is het enige scenario dat doorgaans wél een volwaardige native app vereist — en het is veruit het zeldzaamst.
+**"Ik heb toegang nodig tot Bluetooth, de camera op laag niveau, achtergrondlocatie of specifieke hardware."** Dit is het enige scenario dat doorgaans wél een volwaardige native app vereist - en het is veruit het zeldzaamst.
 
 Stel altijd eerst de verdiepende vraag vóórdat je ook maar één regel code scopeert. De meeste oprichters ontdekken dat de vraag simpelweg neerkwam op het allereerste punt.
 
@@ -42,21 +42,21 @@ Stel altijd eerst de verdiepende vraag vóórdat je ook maar één regel code sc
 
 Voor een product gebouwd in Lovable, Bolt of Cursor is een PWA vrijwel altijd het juiste antwoord, en het kost een bescheiden hoeveelheid werk bovenop de code die je al hebt:
 
-Voeg een `manifest.json`-bestand toe waarin je de appnaam, iconen en weergavemodus definieert. Voeg een service worker toe voor slimme caching en basis-offlinegedrag. Zorg dat de site over een beveiligde HTTPS-verbinding draait — wat al het geval is als je je eigen domein netjes hebt gekoppeld. Vervolgens is je app direct installeerbaar vanuit Safari en Chrome, verschijnt hij met een strak icoon op het thuisscherm, opent hij beeldvullend en gedraagt hij zich voor een niet-technische gebruiker identiek aan een native app.
+Voeg een `manifest.json`-bestand toe waarin je de appnaam, iconen en weergavemodus definieert. Voeg een service worker toe voor slimme caching en basis-offlinegedrag. Zorg dat de site over een beveiligde HTTPS-verbinding draait - wat al het geval is als je je eigen domein netjes hebt gekoppeld. Vervolgens is je app direct installeerbaar vanuit Safari en Chrome, verschijnt hij met een strak icoon op het thuisscherm, opent hij beeldvullend en gedraagt hij zich voor een niet-technische gebruiker identiek aan een native app.
 
-Bovendien profiteer je van enorme voordelen: geen strenge App Store-toelatingscommissies, geen jaarlijkse ontwikkelaarslicenties, geen aparte releaseprocedures, updates die direct live gaan zodra je je website deployt, en bovenal: één enkele codebase om te onderhouden. Voor een klein team is dat laatste punt doorslaggevend — de dubbele onderhoudslast van twee verschillende platforms is wat kleine ontwikkelteams geruisloos sloopt.
+Bovendien profiteer je van enorme voordelen: geen strenge App Store-toelatingscommissies, geen jaarlijkse ontwikkelaarslicenties, geen aparte releaseprocedures, updates die direct live gaan zodra je je website deployt, en bovenal: één enkele codebase om te onderhouden. Voor een klein team is dat laatste punt doorslaggevend - de dubbele onderhoudslast van twee verschillende platforms is wat kleine ontwikkelteams geruisloos sloopt.
 
 De belangrijkste beperkingen om eerlijk over te zijn: installatie via de browser is minder bekend bij het grote publiek dan zoeken in de App Store, sommige hardwarekoppelingen blijven geblokkeerd, en het gedrag van pushberichten kent per besturingssysteem kleine nuances. Test dit altijd op de daadwerkelijke smartphones van je doelgroep in plaats van blindelings te vertrouwen op compatibiliteitstabellen.
 
 ## Wat de App Stores werkelijk kosten
 
-Niet de registratiekosten — het proces. Oprichters onderschatten stelselmatig wat er bij komt kijken om een app in de Apple App Store en Google Play Store te krijgen en te houden:
+Niet de registratiekosten - het proces. Oprichters onderschatten stelselmatig wat er bij komt kijken om een app in de Apple App Store en Google Play Store te krijgen en te houden:
 
 **Strenge toelatingsprocedures en afwijzingen.** Elke release wordt handmatig beoordeeld door Apple en Google, en afwijzingen op basis van vage beleidsregels zijn aan de orde van de dag. Elke afwijzingsronde kost dagen of weken vertraging, en dit herhaalt zich bij elke update die je uitbrengt.
 
 **Zakelijke en juridische verificatie.** Apple en Google Developer accounts vereisen verificatie van je bedrijfsidentiteit (D-U-N-S nummer, KvK-uittreksel, notariële stukken). Dit administratieve proces kan bij de eerste registratie zomaar twee tot vier weken in beslag nemen.
 
-**Platformverplichtingen en commissies.** Verplichte privacylabels waarin je exact moet specificeren welke data je verzamelt; verplichte accountverwijderingsknoppen binnen de app; en — de grootste financiële schok voor velen — de verplichting om voor digitale diensten gebruik te maken van Apple's en Google's eigen In-App Purchases, waarbij zij tot 15% tot 30% commissie inhouden op elke betaling in plaats van je voordelige Mollie- of Stripe-tarief.
+**Platformverplichtingen en commissies.** Verplichte privacylabels waarin je exact moet specificeren welke data je verzamelt; verplichte accountverwijderingsknoppen binnen de app; en - de grootste financiële schok voor velen - de verplichting om voor digitale diensten gebruik te maken van Apple's en Google's eigen In-App Purchases, waarbij zij tot 15% tot 30% commissie inhouden op elke betaling in plaats van je voordelige Mollie- of Stripe-tarief.
 
 **Permanent twee platforms onderhouden.** Wat je ook bouwt: je moet het voortaan onderhouden voor twee gescheiden ecosystemen met elk hun eigen bugs, schermformaten en updateregels.
 
@@ -80,7 +80,7 @@ Er bestaat een pragmatische middenweg: verpak je bestaande webapplicatie in een 
 
 Het is een serieuze optie, mits je rekening houdt met twee kanttekeningen: Apple's reviewers zijn kritisch op apps die niets toevoegen ten opzichte van de mobiele website en kunnen een pure webview afwijzen. Bovendien blijf je gebonden aan de strenge reviewprocedures en betaalcommissies van het platform.
 
-Voor de meeste vroege startups is dit pas de moeite waard zodra er een concrete zakelijke aanleiding is — zoals een harde inkoopeis van een grote klant — en niet als standaard beginpunt.
+Voor de meeste vroege startups is dit pas de moeite waard zodra er een concrete zakelijke aanleiding is - zoals een harde inkoopeis van een grote klant - en niet als standaard beginpunt.
 
 ## Beslis met drie simpele vragen
 
@@ -90,13 +90,13 @@ Voor de meeste vroege startups is dit pas de moeite waard zodra er een concrete 
 
 **Zou een vermelding in de App Store veranderen hoe klanten je ontdekken?** Voor consumenten-apps soms; voor zakelijke SaaS-software vrijwel nooit.
 
-Beantwoord die drie vragen en de strategische keuze maakt zichzelf — en kost doorgaans een week in plaats van een kwartaal.
+Beantwoord die drie vragen en de strategische keuze maakt zichzelf - en kost doorgaans een week in plaats van een kwartaal.
 
 ## De mobiele weergave écht uitstekend maken
 
 De nuchtere waarheid is dat de meeste feedback van het type "we hebben een app nodig" verdwijnt zodra het bestaande webproduct feilloos werkt op een smartphone: duidelijke klikbare knoppen, formulieren die meewerken met het mobiele toetsenbord, afbeeldingen geschaald voor 4G-verbindingen, een razendsnelle eerste laadtijd en eenvoudige installeerbaarheid.
 
-Dat is exact het werk dat LaunchStudio uitvoert bovenop een bestaand Lovable- of Bolt-product: mobiele interacties strakgetrokken, Progressive Web App configuratie toegevoegd, web push notificaties ingericht waar ze waarde toevoegen, en prestaties geoptimaliseerd voor een doorsnee smartphone — zonder de gebruikersinterface die je hebt ontworpen opnieuw te hoeven bouwen. En mocht een native app daadwerkelijk noodzakelijk zijn, dan bouwt het team van Manifera die eveneens, met elf jaar ervaring in mobiele en backend-architectuur voor onder meer Vodafone en TNO.
+Dat is exact het werk dat LaunchStudio uitvoert bovenop een bestaand Lovable- of Bolt-product: mobiele interacties strakgetrokken, Progressive Web App configuratie toegevoegd, web push notificaties ingericht waar ze waarde toevoegen, en prestaties geoptimaliseerd voor een doorsnee smartphone - zonder de gebruikersinterface die je hebt ontworpen opnieuw te hoeven bouwen. En mocht een native app daadwerkelijk noodzakelijk zijn, dan bouwt het team van Manifera die eveneens, met elf jaar ervaring in mobiele en backend-architectuur voor onder meer Vodafone en TNO.
 
 [Omschrijf je project](https://launchstudio.eu/nl/#contact) en je hoort binnen één werkdag welke van de vier mobiele wensen jij daadwerkelijk voor je hebt. Onze [pakkettenpagina](https://launchstudio.eu/nl/#packages) toont wat de werkzaamheden aan de webzijde inhouden.
 
@@ -116,13 +116,13 @@ Of je nu kiest voor een PWA, een native app of puur een responsieve website: dez
 
 **Graceful offline gedrag.** Mobiele verbindingen vallen continu kortstondig weg. Het absolute minimum is een vriendelijke melding in plaats van een oneindig draaiend laadscherm; de volgende stap is het cachen van het laatste scherm zodat de app niet direct leeg slaat.
 
-Los deze zes zaken op en het overgrote deel van de roep om "een echte app" verdwijnt als sneeuw voor de zon — simpelweg omdat de vraag eigenlijk nooit over het technische formaat ging.
+Los deze zes zaken op en het overgrote deel van de roep om "een echte app" verdwijnt als sneeuw voor de zon - simpelweg omdat de vraag eigenlijk nooit over het technische formaat ging.
 
 ## Hoe je zorgt dat gebruikers de PWA daadwerkelijk installeren
 
 Het zwakke punt van een Progressive Web App is de ontdekking: niets in de browser schreeuwt direct dat de site kan worden geïnstalleerd. Drie methoden werken uitstekend, en één veelvoorkomende aanpak werkt juist averechts:
 
-**Vraag het op het juiste moment.** Niet bij het allereerste bezoek wanneer de bezoeker nog aan het ontdekken is of je product überhaupt nuttig is. Vraag het direct ná een succesvolle actie — een voltooide boeking, een bevestigde dienst, of bij een derde terugkerend bezoek — wanneer het antwoord op *"wil je dit toevoegen aan je startscherm?"* vanzelfsprekend positief is.
+**Vraag het op het juiste moment.** Niet bij het allereerste bezoek wanneer de bezoeker nog aan het ontdekken is of je product überhaupt nuttig is. Vraag het direct ná een succesvolle actie - een voltooide boeking, een bevestigde dienst, of bij een derde terugkerend bezoek - wanneer het antwoord op *"wil je dit toevoegen aan je startscherm?"* vanzelfsprekend positief is.
 
 **Toon instructies per specifiek platform.** Het installatieproces verschilt tussen iOS (Safari deel-knop) en Android (Chrome prompt). Een algemene instructie helpt niemand. Detecteer het besturingssysteem en toon de twee concrete stappen met een kleine visuele illustratie.
 
@@ -138,16 +138,16 @@ Voor interne bedrijfsapplicaties of teamtools is er nog een vierde optie die all
 
 Miriam Aalders bouwde Zorgrooster in Lovable: een planningstool voor dienstenroosters van ambulante thuiszorgteams rond Enschede. Binnen twee maanden na de lancering hadden vier teamleiders gevraagd om "een app", en Miriam had inmiddels een offerte van een ontwikkelbureau op zak van € 38.000 om een native app voor iOS en Android te realiseren.
 
-Voordat ze dat bedrag uitgaf, ging ze in gesprek met elk van de vier teamleiders om te achterhalen wat ze precies bedoelden. Drie van hen wilden simpelweg het actuele dienstenrooster direct vanaf hun startscherm kunnen openen zonder telkens een URL te hoeven intypen. Eén teamleider wilde een melding op haar telefoon ontvangen zodra een dienst op het laatste moment werd gewijzigd — wat de werkelijke behoefte bleek achter alle vier de verzoeken, aangezien de zorgmedewerkers de mobiele site puur om die reden continu handmatig stonden te verversen.
+Voordat ze dat bedrag uitgaf, ging ze in gesprek met elk van de vier teamleiders om te achterhalen wat ze precies bedoelden. Drie van hen wilden simpelweg het actuele dienstenrooster direct vanaf hun startscherm kunnen openen zonder telkens een URL te hoeven intypen. Eén teamleider wilde een melding op haar telefoon ontvangen zodra een dienst op het laatste moment werd gewijzigd - wat de werkelijke behoefte bleek achter alle vier de verzoeken, aangezien de zorgmedewerkers de mobiele site puur om die reden continu handmatig stonden te verversen.
 
 Zes werkdagen waren nodig voor de implementatie: de webapplicatie werd geconfigureerd als Progressive Web App zodat deze met één tik als app op het startscherm installeert; de interface kreeg een mobiele optimalisatieronde waarbij klikvlakken werden vergroot en formulieren toetsenbordvriendelijk werden gemaakt; afbeeldingen werden gecomprimeerd voor 4G; en er werden Web Push notificaties geïmplementeerd voor dienstenwijzigingen met persoonlijke instellingen per medewerker.
 
 **Resultaat:** 71 van de 94 zorgmedewerkers installeerden de PWA binnen één maand op hun startscherm, bevestigingen van dienstenwissels kwamen mediaan elf minuten sneller binnen, en het budget van € 38.000 bleef keurig op de bankrekening staan.
 
 > *"Iedereen vroeg om een app. Wat ze in werkelijkheid wilden was een icoontje en een notificatie. Ik had bijna mijn complete jaarbudget uitgegeven om daar op de dure manier achter te komen."*
-> — **Miriam Aalders, Oprichter, Zorgrooster (Enschede)**
+> - **Miriam Aalders, Oprichter, Zorgrooster (Enschede)**
 
-**Kosten & Doorlooptijd:** € 2.300 (PWA-configuratie, mobiele interface-optimalisatie, web push notificaties) — afgerond binnen 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.300 (PWA-configuratie, mobiele interface-optimalisatie, web push notificaties) - afgerond binnen 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -161,7 +161,7 @@ Nee, dat is het voornaamste nadeel. Installatie verloopt via de browser en niet 
 
 ### Heb ik een aanwezigheid in de App Store nodig om professioneel over te komen?
 
-Voor zakelijke B2B-klanten vrijwel nooit — zij beoordelen software op betrouwbaarheid, functionaliteit en privacygaranties (AVG). Voor consumentenproducten kan het soms meewegen; in dat geval kan een gewrapte webapplicatie aan de verwachting voldoen zonder dat je twee gescheiden codebases hoeft te bouwen.
+Voor zakelijke B2B-klanten vrijwel nooit - zij beoordelen software op betrouwbaarheid, functionaliteit en privacygaranties (AVG). Voor consumentenproducten kan het soms meewegen; in dat geval kan een gewrapte webapplicatie aan de verwachting voldoen zonder dat je twee gescheiden codebases hoeft te bouwen.
 
 ### Wat zijn de werkelijke kosten van publiceren in de Apple App Store en Google Play Store?
 

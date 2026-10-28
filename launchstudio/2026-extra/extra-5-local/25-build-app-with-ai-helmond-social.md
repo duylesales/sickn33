@@ -1,4 +1,4 @@
-⚠️ Niels Bakker, a former test engineer at a Helmond automotive supplier, built TestTrack — a scheduling tool for vehicle testing slots — using Lovable in two weeks. Three facilities signed on to pilot it. Then a facility manager reported a test slot double-booked, with zero warning to either party until they physically showed up at the same bay. 😳
+⚠️ Niels Bakker, a former test engineer at a Helmond automotive supplier, built TestTrack - a scheduling tool for vehicle testing slots - using Lovable in two weeks. Three facilities signed on to pilot it. Then a facility manager reported a test slot double-booked, with zero warning to either party until they physically showed up at the same bay. 😳
 
 The UI blocked double-booking. The server never did. 🧠
 

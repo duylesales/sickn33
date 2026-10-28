@@ -1,4 +1,4 @@
-🚨 Katarzyna Wójcik built "MagazynSync," an inventory sync tool connecting online stores to three marketplace APIs, in Cursor. It synced flawlessly in testing — one update at a time. The day she onboarded five real retailers at once, one marketplace's inventory counts silently froze. 😳
+🚨 Katarzyna Wójcik built "MagazynSync," an inventory sync tool connecting online stores to three marketplace APIs, in Cursor. It synced flawlessly in testing - one update at a time. The day she onboarded five real retailers at once, one marketplace's inventory counts silently froze. 😳
 
 Testing is sequential. Real usage is concurrent. That mismatch is where most API integrations quietly break. 🧠
 
@@ -11,7 +11,7 @@ Testing is sequential. Real usage is concurrent. That mismatch is where most API
 ✅ Add alerting that flags Katarzyna directly if a sync starts failing repeatedly
 ✅ Test for this with a simple concurrency check before real users ever hit it
 
-At **LaunchStudio**, API resilience is one of the first things we check in a technical audit — informed by Manifera shipping 160+ production projects before touching a founder's integration. 🛡️
+At **LaunchStudio**, API resilience is one of the first things we check in a technical audit - informed by Manifera shipping 160+ production projects before touching a founder's integration. 🛡️
 
 Her result: three marketplace syncs that now hold up under real, simultaneous retailer traffic. 🚀
 

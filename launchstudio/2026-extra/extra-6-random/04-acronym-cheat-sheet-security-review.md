@@ -20,23 +20,23 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-You booked a security review for your AI-built app, and ten minutes in, the engineer says something like "your RLS policies aren't scoped correctly, and there's no RBAC layer between your JWT and your CORS config." You nod. You have no idea what any of that means, and you're not going to interrupt to ask, because you're already worried the answer will be expensive. This cheat sheet exists so you never have to nod through that sentence again. These aren't general AI buzzwords — they're the specific, narrow set of acronyms that show up in almost every security review of an AI-generated app, decoded in plain language, with why each one is worth actually understanding before your next call.
+You booked a security review for your AI-built app, and ten minutes in, the engineer says something like "your RLS policies aren't scoped correctly, and there's no RBAC layer between your JWT and your CORS config." You nod. You have no idea what any of that means, and you're not going to interrupt to ask, because you're already worried the answer will be expensive. This cheat sheet exists so you never have to nod through that sentence again. These aren't general AI buzzwords - they're the specific, narrow set of acronyms that show up in almost every security review of an AI-generated app, decoded in plain language, with why each one is worth actually understanding before your next call.
 
-## RLS — Row-Level Security
+## RLS - Row-Level Security
 
-This is the single most common gap LaunchStudio finds in AI-generated apps. RLS is a database-level rule that restricts which rows of a table a given user is allowed to read or write — for example, making sure a customer can only ever pull their own invoices, never anyone else's, no matter what request they send. Without it, your frontend might *hide* other people's data, but the database will still hand it over to anyone who asks directly. RLS is the difference between "the app doesn't show it" and "the app can't give it up."
+This is the single most common gap LaunchStudio finds in AI-generated apps. RLS is a database-level rule that restricts which rows of a table a given user is allowed to read or write - for example, making sure a customer can only ever pull their own invoices, never anyone else's, no matter what request they send. Without it, your frontend might *hide* other people's data, but the database will still hand it over to anyone who asks directly. RLS is the difference between "the app doesn't show it" and "the app can't give it up."
 
-## RBAC — Role-Based Access Control
+## RBAC - Role-Based Access Control
 
-RBAC governs what different types of users are allowed to *do*, not just what they can see. An admin, a regular customer, and a support agent should have different permissions — admins can delete accounts, customers can't. RBAC is the system that enforces those distinctions consistently across your entire app, rather than each screen independently deciding who's allowed to click what.
+RBAC governs what different types of users are allowed to *do*, not just what they can see. An admin, a regular customer, and a support agent should have different permissions - admins can delete accounts, customers can't. RBAC is the system that enforces those distinctions consistently across your entire app, rather than each screen independently deciding who's allowed to click what.
 
-## JWT — JSON Web Token
+## JWT - JSON Web Token
 
-A JWT is the small, signed piece of data your app uses to prove a user is logged in without re-checking a password on every single request. It's how your server recognizes a returning user quickly. The risk shows up when JWTs are handled carelessly — stored somewhere insecure, given too long a lifespan, or not properly verified on the server side, which can let an attacker impersonate a logged-in user.
+A JWT is the small, signed piece of data your app uses to prove a user is logged in without re-checking a password on every single request. It's how your server recognizes a returning user quickly. The risk shows up when JWTs are handled carelessly - stored somewhere insecure, given too long a lifespan, or not properly verified on the server side, which can let an attacker impersonate a logged-in user.
 
-## CORS — Cross-Origin Resource Sharing
+## CORS - Cross-Origin Resource Sharing
 
-CORS is a browser-enforced rule about which websites are allowed to talk to your backend. Configured correctly, it stops a malicious site from quietly making requests to your app using a visitor's logged-in session. Configured too loosely — which AI tools sometimes do by default, to avoid breaking things during development — it can leave your backend answering requests from anywhere on the internet.
+CORS is a browser-enforced rule about which websites are allowed to talk to your backend. Configured correctly, it stops a malicious site from quietly making requests to your app using a visitor's logged-in session. Configured too loosely - which AI tools sometimes do by default, to avoid breaking things during development - it can leave your backend answering requests from anywhere on the internet.
 
 ## API Key / Secret Exposure
 
@@ -44,25 +44,25 @@ Not an acronym, but it belongs on this list because it's endemic in AI-generated
 
 ## Why the acronyms matter more than they should
 
-None of these terms are complicated once explained. The problem is that AI coding tools rarely surface them proactively — they don't flag "hey, you might want RLS here" unless you specifically ask, and most founders don't know to ask. Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Knowing the vocabulary doesn't make you technical — it makes you able to ask the right question before a gap becomes a breach.
+None of these terms are complicated once explained. The problem is that AI coding tools rarely surface them proactively - they don't flag "hey, you might want RLS here" unless you specifically ask, and most founders don't know to ask. Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Knowing the vocabulary doesn't make you technical - it makes you able to ask the right question before a gap becomes a breach.
 
-LaunchStudio's engineers, working out of Amsterdam among other offices, run through exactly this checklist — RLS, RBAC, JWT handling, CORS configuration, and credential exposure — on every prototype review. If you want a walkthrough of your own app in this same plain language, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you which of these five terms actually apply to your codebase. For a deeper look at how these principles scale into enterprise-grade builds, see [Manifera's company background](https://www.manifera.com/about-us/).
+LaunchStudio's engineers, working out of Amsterdam among other offices, run through exactly this checklist - RLS, RBAC, JWT handling, CORS configuration, and credential exposure - on every prototype review. If you want a walkthrough of your own app in this same plain language, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you which of these five terms actually apply to your codebase. For a deeper look at how these principles scale into enterprise-grade builds, see [Manifera's company background](https://www.manifera.com/about-us/).
 
 ## Five More Terms You'll Hear on a Follow-Up Call
 
-The five terms above cover what comes up on almost every first call. If your review goes deeper — or a second issue gets found and you're on a follow-up call working through fixes — these five tend to come up next. Same approach: plain language, no assumption you already know any of it.
+The five terms above cover what comes up on almost every first call. If your review goes deeper - or a second issue gets found and you're on a follow-up call working through fixes - these five tend to come up next. Same approach: plain language, no assumption you already know any of it.
 
-**IDOR — Insecure Direct Object Reference.** This is the formal name for the specific failure pattern RLS is meant to prevent: an app that lets you access a record just by knowing or guessing its ID, without checking whether it's actually yours. If an engineer says "this endpoint is vulnerable to IDOR," they mean exactly the invoice-swapping problem described above — it's the same gap, just named from the attacker's side instead of the defender's.
+**IDOR - Insecure Direct Object Reference.** This is the formal name for the specific failure pattern RLS is meant to prevent: an app that lets you access a record just by knowing or guessing its ID, without checking whether it's actually yours. If an engineer says "this endpoint is vulnerable to IDOR," they mean exactly the invoice-swapping problem described above - it's the same gap, just named from the attacker's side instead of the defender's.
 
-**Rate Limiting.** This controls how many requests a single user or IP address can make in a given period. Without it, a single script can hammer your signup form, your login page, or your API thousands of times a minute — running up costs, flooding a database, or brute-forcing a password by simply trying every combination until one works. AI coding tools rarely add this by default, because a working demo never sends more than a handful of requests.
+**Rate Limiting.** This controls how many requests a single user or IP address can make in a given period. Without it, a single script can hammer your signup form, your login page, or your API thousands of times a minute - running up costs, flooding a database, or brute-forcing a password by simply trying every combination until one works. AI coding tools rarely add this by default, because a working demo never sends more than a handful of requests.
 
-**Webhook Signature Verification.** If your app receives data from a payment processor or another external service via a webhook — a message the other service sends you when something happens — signature verification confirms that message actually came from that service, and not from someone who simply guessed your webhook's URL and sent a fake "payment succeeded" message of their own.
+**Webhook Signature Verification.** If your app receives data from a payment processor or another external service via a webhook - a message the other service sends you when something happens - signature verification confirms that message actually came from that service, and not from someone who simply guessed your webhook's URL and sent a fake "payment succeeded" message of their own.
 
-**ORM — Object-Relational Mapping.** This is the layer of code that translates your app's logic into database queries. It matters here because a well-configured ORM makes a category of database attacks (like SQL injection) much harder to introduce accidentally, while a raw, hand-written query bypassing the ORM reopens exactly that risk if it isn't handled carefully.
+**ORM - Object-Relational Mapping.** This is the layer of code that translates your app's logic into database queries. It matters here because a well-configured ORM makes a category of database attacks (like SQL injection) much harder to introduce accidentally, while a raw, hand-written query bypassing the ORM reopens exactly that risk if it isn't handled carefully.
 
-**Least Privilege.** Not a specific technology, but a principle worth knowing: every part of your system — a database user, an API key, a service account — should have only the access it actually needs to do its job, nothing more. A backend that connects to your database with full administrative rights, when it only ever needs to read and write a few specific tables, is violating least privilege, and it turns a small bug into a much bigger one if that connection is ever compromised.
+**Least Privilege.** Not a specific technology, but a principle worth knowing: every part of your system - a database user, an API key, a service account - should have only the access it actually needs to do its job, nothing more. A backend that connects to your database with full administrative rights, when it only ever needs to read and write a few specific tables, is violating least privilege, and it turns a small bug into a much bigger one if that connection is ever compromised.
 
-Knowing these five doesn't make the follow-up call shorter, but it makes it a conversation instead of a lecture — and it means the next time an engineer uses one of these terms, you already have a plain-language anchor for what they're actually describing.
+Knowing these five doesn't make the follow-up call shorter, but it makes it a conversation instead of a lecture - and it means the next time an engineer uses one of these terms, you already have a plain-language anchor for what they're actually describing.
 
 ## Real example
 
@@ -70,16 +70,16 @@ Knowing these five doesn't make the follow-up call shorter, but it makes it a co
 
 Thijs Overmars, a founder in Tilburg, built "FactuurGrip," an invoicing tool for freelancers, using Bolt. On a review call with a potential technical advisor, the advisor asked whether FactuurGrip had "RLS set up." Thijs didn't know what RLS stood for, let alone whether his app had it, and said so honestly. The advisor suggested he get it checked.
 
-It turned out FactuurGrip didn't have it — and the gap was exactly the kind RLS is meant to close. Any logged-in customer could view another customer's invoices simply by changing a URL parameter to a different invoice ID. There was no database-level rule stopping the request; the frontend just didn't normally construct URLs that way, which meant it looked safe in every regular use of the app while being wide open to anyone who tried.
+It turned out FactuurGrip didn't have it - and the gap was exactly the kind RLS is meant to close. Any logged-in customer could view another customer's invoices simply by changing a URL parameter to a different invoice ID. There was no database-level rule stopping the request; the frontend just didn't normally construct URLs that way, which meant it looked safe in every regular use of the app while being wide open to anyone who tried.
 
 LaunchStudio's engineers implemented row-level security policies directly at the database layer, so invoice records are now scoped to the authenticated account regardless of what ID appears in the request. They also audited FactuurGrip's other data tables for the same missing pattern and closed two additional instances before they could be found the same way the first one nearly was.
 
 **Result:** Every data table in FactuurGrip now enforces row-level ownership checks at the database itself, independent of what the frontend chooses to display.
 
 > *"I didn't even know what to Google. Once someone explained RLS in plain English, I realized I'd been assuming a protection that simply didn't exist."*
-> — **Thijs Overmars, Founder, FactuurGrip (Tilburg)**
+> - **Thijs Overmars, Founder, FactuurGrip (Tilburg)**
 
-**Cost & Timeline:** €800 (row-level security implementation across all tables) — completed in 4 business days.
+**Cost & Timeline:** €800 (row-level security implementation across all tables) - completed in 4 business days.
 
 ---
 
@@ -87,7 +87,7 @@ LaunchStudio's engineers implemented row-level security policies directly at the
 
 ### What's the single most important acronym to understand before a security review?
 
-RLS (Row-Level Security) — it's the most common gap LaunchStudio finds in AI-generated apps, and understanding it helps you ask whether your database actually enforces data ownership, not just your frontend.
+RLS (Row-Level Security) - it's the most common gap LaunchStudio finds in AI-generated apps, and understanding it helps you ask whether your database actually enforces data ownership, not just your frontend.
 
 ### Is RBAC the same thing as RLS?
 

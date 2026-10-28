@@ -34,11 +34,11 @@ Een Series B financieringsronde legt een fundamenteel ander type druk op de scho
 
 ## Pijler 1: Data-Isolatie en Toegangsbeheer
 
-Auditors vragen direct, specifiek en indringend hoe u garandeert dat gegevens van de ene zakelijke klant onder geen enkel scenario zichtbaar kunnen worden voor een andere klant. Het simpele antwoord "we hebben Row Level Security ingeschakeld in Supabase" volstaat geenszins — een geloofwaardig en overtuigend antwoord omvat formeel gedocumenteerd bewijs dat de databasepolicies correct zijn geconfigureerd, bij voorkeur ondersteund door een auditrapport van *adversarial penetration testing* waarin actief is geprobeerd om data over tenant-grenzen heen te forceren. Een groen vinkje bij "RLS enabled" in een dashboard zonder diepgaande testresultaten wordt door een ervaren auditor direct gezien als een rode vlag in plaats van een pluspunt.
+Auditors vragen direct, specifiek en indringend hoe u garandeert dat gegevens van de ene zakelijke klant onder geen enkel scenario zichtbaar kunnen worden voor een andere klant. Het simpele antwoord "we hebben Row Level Security ingeschakeld in Supabase" volstaat geenszins - een geloofwaardig en overtuigend antwoord omvat formeel gedocumenteerd bewijs dat de databasepolicies correct zijn geconfigureerd, bij voorkeur ondersteund door een auditrapport van *adversarial penetration testing* waarin actief is geprobeerd om data over tenant-grenzen heen te forceren. Een groen vinkje bij "RLS enabled" in een dashboard zonder diepgaande testresultaten wordt door een ervaren auditor direct gezien als een rode vlag in plaats van een pluspunt.
 
 ## Pijler 2: Betalingsinfrastructuur en Facturatierobuustheid
 
-Het diligence-team toetst nauwgezet of uw gerapporteerde omzetcijfers architectonisch betrouwbaar zijn: worden abonnementen en betalingen bevestigd via cryptografisch ondertekende en geverifieerde server-side webhooks (bijvoorbeeld vanuit Stripe), of leunt uw systeem op client-side bevestigingen die transacties geruisloos kunnen missen? Een operationele geschiedenis vol handmatige factuurcorrecties — waarbij supportmedewerkers betalingsfouten met de hand moeten rechtbreien — signaleert een gebrekkige software-architectuur die direct als een operationeel risico wordt ingeprijsd.
+Het diligence-team toetst nauwgezet of uw gerapporteerde omzetcijfers architectonisch betrouwbaar zijn: worden abonnementen en betalingen bevestigd via cryptografisch ondertekende en geverifieerde server-side webhooks (bijvoorbeeld vanuit Stripe), of leunt uw systeem op client-side bevestigingen die transacties geruisloos kunnen missen? Een operationele geschiedenis vol handmatige factuurcorrecties - waarbij supportmedewerkers betalingsfouten met de hand moeten rechtbreien - signaleert een gebrekkige software-architectuur die direct als een operationeel risico wordt ingeprijsd.
 
 ## Pijler 3: LLM Kostenbeheersing en Marges
 
@@ -62,7 +62,7 @@ Buiten pure tenant-isolatie toetst de audit op professioneel geheimenbeheer: sta
 
 ## Pijler 8: Compliance en Juridische Documentatie
 
-Voor B2B AI SaaS-bedrijven die leveren aan gereguleerde markten of enterprise-afnemers toetst het diligence-team of u beschikt over — of een aantoonbaar pad heeft naar — de compliancedocumenten die zakelijke klanten vereisen: een SOC 2 Type II status of een actief traject daarheen, een standaard verwerkersovereenkomst (DPA) en volledige transparantie over waar en hoe AI-modellen persoonsgegevens verwerken in het kader van de AVG/GDPR en de Europese AI Act.
+Voor B2B AI SaaS-bedrijven die leveren aan gereguleerde markten of enterprise-afnemers toetst het diligence-team of u beschikt over - of een aantoonbaar pad heeft naar - de compliancedocumenten die zakelijke klanten vereisen: een SOC 2 Type II status of een actief traject daarheen, een standaard verwerkersovereenkomst (DPA) en volledige transparantie over waar en hoe AI-modellen persoonsgegevens verwerken in het kader van de AVG/GDPR en de Europese AI Act.
 
 ## Pijler 9: Leveranciersafhankelijkheid en Uitvalrisico's
 
@@ -74,7 +74,7 @@ Tot slot beoordeelt het diligence-team of de kennis van uw technische infrastruc
 
 ## Waarom Series B Diligence een Veel Hogere Lat Hanteert
 
-Het is cruciaal om te begrijpen waarom deze scorecard een wezenlijk andere exercitie is dan eerdere technische checks. In een eerdere fase vraagt men doorgaans: "blijft de app in de lucht bij ons huidige aantal gebruikers?" — een vraag over de operationele status van vandaag. Series B diligence stelt echter een vooruitblikkende, kritische en inquisitoire vraag: "ondersteunt deze software-architectuur, zoals deze er nu exact bijstaat, aantoonbaar en geloofwaardig het groeipad van 10x dat in de pitch deck wordt voorgespiegeld, en kunt u dat met harde testrapporten bewijzen in plaats van slechts beweren?"
+Het is cruciaal om te begrijpen waarom deze scorecard een wezenlijk andere exercitie is dan eerdere technische checks. In een eerdere fase vraagt men doorgaans: "blijft de app in de lucht bij ons huidige aantal gebruikers?" - een vraag over de operationele status van vandaag. Series B diligence stelt echter een vooruitblikkende, kritische en inquisitoire vraag: "ondersteunt deze software-architectuur, zoals deze er nu exact bijstaat, aantoonbaar en geloofwaardig het groeipad van 10x dat in de pitch deck wordt voorgespiegeld, en kunt u dat met harde testrapporten bewijzen in plaats van slechts beweren?"
 
 Dat is een fundamenteel hogere lat. Een database die probleemloos 8.000 actieve gebruikers bedient, bewijst niet automatisch dat deze bestand is tegen de 40.000 gebruikers die uw Series B model binnen achttien maanden voorspelt. Een auditpartner modelleert die schaalbaarheidskloof expliciet. Een architectuur zonder gedocumenteerde capaciteitsanalyses leest als een ongeïdentificeerd risico onder elk gepresenteerd groeicijfer. Hetzelfde geldt voor beveiliging: de uitspraak dat "alles tot nu toe prima heeft gewerkt" is in een due diligence meeting categorisch onvoldoende. Een audit bestaat immers om exact die risico's op te sporen die tot nu toe toevallig nog niet zijn geëxplodeerd.
 
@@ -102,7 +102,7 @@ De financiële rekensom is glashelder: een negatieve bevinding tijdens de techni
 
 Loop deze scorecard kritisch door en dicht direct de fundamentele gaten die voor een technische auditor van doorslaggevend belang zijn.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software engineering bedrijf opgericht in **2014** onder leiding van Oprichter & Managing Director **Herre Roelevink**. Manifera brengt meer dan 11 jaar ervaring in enterprise software-engineering en toonaangevende klanten zoals Vodafone en TNO mee naar elk diligence-traject voor AI SaaS-oprichters. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamese engineeringkracht", beschikt Manifera over een Europees hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primary development center in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio auditeren onze senior engineeringteams uw infrastructuur exact volgens de maatstaven van een technische due diligence, en dichten wij de belangrijkste materiële gaten — waarmee uw prototype binnen 1 tot 3 weken verandert in een volwassen, enterprise-grade en diligence-ready softwareproduct, zonder dat een complete herbouw nodig is. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe Manifera's [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) technische due diligence audits en software-hardening aanpakt voor met AI gebouwde codebases.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software engineering bedrijf opgericht in **2014** onder leiding van Oprichter & Managing Director **Herre Roelevink**. Manifera brengt meer dan 11 jaar ervaring in enterprise software-engineering en toonaangevende klanten zoals Vodafone en TNO mee naar elk diligence-traject voor AI SaaS-oprichters. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamese engineeringkracht", beschikt Manifera over een Europees hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primary development center in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio auditeren onze senior engineeringteams uw infrastructuur exact volgens de maatstaven van een technische due diligence, en dichten wij de belangrijkste materiële gaten - waarmee uw prototype binnen 1 tot 3 weken verandert in een volwassen, enterprise-grade en diligence-ready softwareproduct, zonder dat een complete herbouw nodig is. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe Manifera's [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) technische due diligence audits en software-hardening aanpakt voor met AI gebouwde codebases.
 
 ## Echt voorbeeld
 
@@ -114,7 +114,7 @@ Casper schakelde LaunchStudio in om alle drie de knelpunten definitief op te los
 
 **Resultaat:** Caspers technische due diligence werd afgerond met nul materiële opmerkingen op de drie geteste gebieden. De auditor prees in zijn rapport expliciet de proactief aangeleverde penetratietestdocumentatie als een uitzonderlijk volwassen signaal voor een AI startup.
 
-**Kosten & Doorlooptijd:** €5.900 (Enterprise Hardening Pakket) — complete sanering en verificatie over alle drie de pijlers succesvol afgerond binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €5.900 (Enterprise Hardening Pakket) - complete sanering en verificatie over alle drie de pijlers succesvol afgerond binnen 15 werkdagen.
 
 ---
 

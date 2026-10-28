@@ -1,6 +1,6 @@
-🍽️ Niels Coenen, a founder in Maastricht, built MenuKaart — a restaurant website with a chatbot marketed as "AI-powered" — using Lovable. Ask it about dishes or allergens and it answered instantly and fluently. 😳
+🍽️ Niels Coenen, a founder in Maastricht, built MenuKaart - a restaurant website with a chatbot marketed as "AI-powered" - using Lovable. Ask it about dishes or allergens and it answered instantly and fluently. 😳
 
-It looked exactly as smart the day it was wrong as the day it was right — that's the part that should scare you. 🧠
+It looked exactly as smart the day it was wrong as the day it was right - that's the part that should scare you. 🧠
 
 ❌ The chatbot wasn't reading the restaurant's current menu system at all
 ❌ It answered from a static block of menu text typed in once during the initial build, never connected to anything live

@@ -1,4 +1,4 @@
-🔥 Ella built a prototype using **Lovable** — ella, a retail founder, used **lovable** to build a competitor price monitoring tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Ella built a prototype using **Lovable** - ella, a retail founder, used **lovable** to build a competitor price monitoring tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ella's application achieved silky-smooth performance: Scraper block rate dropped from 85% to under 2%, securing reliable pricing data. (€1,750 (Scraper Proxy Package) — production-ready and deployed in 4 business days.). 🚀
+Ella's application achieved silky-smooth performance: Scraper block rate dropped from 85% to under 2%, securing reliable pricing data. (€1,750 (Scraper Proxy Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/web-scraping-ai-firecrawl-browserless
 

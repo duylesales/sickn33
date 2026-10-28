@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-An approach copied from US tech-industry negotiation advice — competing offers, aggressive anchoring, treating every number as a starting position — often lands poorly in the Dutch market, where compensation structures and negotiation norms work differently, and where the relationship with a future employer starts the moment negotiation does.
+An approach copied from US tech-industry negotiation advice - competing offers, aggressive anchoring, treating every number as a starting position - often lands poorly in the Dutch market, where compensation structures and negotiation norms work differently, and where the relationship with a future employer starts the moment negotiation does.
 
 ## What Actually Has Room to Move
 
@@ -51,7 +51,7 @@ Presenting a competing offer as leverage in an aggressive, US-style way can read
 
 ## A Deeper Look at Why Dutch Negotiation Culture Differs
 
-Dutch workplace culture generally values directness over performance — saying plainly what you want and why, rather than constructing leverage through implied competition or urgency. This shows up concretely in negotiation: a Dutch hiring manager is often more receptive to "here's what matters to me and why" than to a negotiation tactic borrowed from a more adversarial, zero-sum negotiation culture. This isn't a claim that Dutch employers are pushovers — they'll still say no to an unreasonable ask — but the register of the conversation itself matters more here than in markets where aggressive negotiation is the norm and expected.
+Dutch workplace culture generally values directness over performance - saying plainly what you want and why, rather than constructing leverage through implied competition or urgency. This shows up concretely in negotiation: a Dutch hiring manager is often more receptive to "here's what matters to me and why" than to a negotiation tactic borrowed from a more adversarial, zero-sum negotiation culture. This isn't a claim that Dutch employers are pushovers - they'll still say no to an unreasonable ask - but the register of the conversation itself matters more here than in markets where aggressive negotiation is the norm and expected.
 
 ## Comparing Negotiation Approaches by Likely Reception
 
@@ -64,17 +64,17 @@ Dutch workplace culture generally values directness over performance — saying 
 
 ## Why Non-Cash Terms Deserve as Much Preparation as Salary Itself
 
-Candidates often walk into a negotiation with a clear number in mind for salary and nothing prepared for the non-cash terms that are often more flexible. Before any negotiation conversation, it's worth deciding in advance which non-cash terms actually matter to you — additional vacation days, a specific remote-work arrangement, a training budget, a later start date — so you can ask for them specifically rather than accepting whatever the standard offer happens to include by default.
+Candidates often walk into a negotiation with a clear number in mind for salary and nothing prepared for the non-cash terms that are often more flexible. Before any negotiation conversation, it's worth deciding in advance which non-cash terms actually matter to you - additional vacation days, a specific remote-work arrangement, a training budget, a later start date - so you can ask for them specifically rather than accepting whatever the standard offer happens to include by default.
 
 ## Understanding How Dutch Compensation Structures Are Built
 
 Effective negotiation requires understanding what you are negotiating against, and Dutch compensation structures have characteristics that differ enough from other markets to warrant explicit description.
 
-Many established Dutch employers, particularly larger organisations and those in sectors with collective labour agreements, operate salary scales that assign roles to bands with defined minimum and maximum values. Where such a structure exists, a hiring manager genuinely cannot offer above the band's ceiling regardless of how much they want you, and pressing for a number above it wastes goodwill on an impossible request. The productive question in this situation is not whether the ceiling can be exceeded but which band the role sits in and whether a case exists for placing it in a higher one based on the scope of responsibilities — a fundamentally different conversation that a well-prepared candidate can sometimes win.
+Many established Dutch employers, particularly larger organisations and those in sectors with collective labour agreements, operate salary scales that assign roles to bands with defined minimum and maximum values. Where such a structure exists, a hiring manager genuinely cannot offer above the band's ceiling regardless of how much they want you, and pressing for a number above it wastes goodwill on an impossible request. The productive question in this situation is not whether the ceiling can be exceeded but which band the role sits in and whether a case exists for placing it in a higher one based on the scope of responsibilities - a fundamentally different conversation that a well-prepared candidate can sometimes win.
 
 Smaller employers and companies outside collective agreement structures have more discretion, but frequently still operate informal internal consistency rules, because paying a new hire substantially more than existing staff in comparable roles creates problems that outlast the hiring decision. Understanding that a hiring manager may be constrained by internal equity considerations rather than by unwillingness helps a candidate frame requests in ways that are actually actionable.
 
-The practical implication is that asking directly and early about how compensation is structured at this specific employer — whether bands exist, how they are set, what determines placement within a band — produces information that shapes an effective negotiation far better than beginning with a number and negotiating blind against constraints you cannot see.
+The practical implication is that asking directly and early about how compensation is structured at this specific employer - whether bands exist, how they are set, what determines placement within a band - produces information that shapes an effective negotiation far better than beginning with a number and negotiating blind against constraints you cannot see.
 
 ## The Full Compensation Picture Beyond Base Salary
 
@@ -90,7 +90,7 @@ For international candidates, the tax treatment discussed elsewhere on this site
 
 The sequence in which compensation is discussed affects outcomes, and Dutch hiring processes have conventions that differ from some other markets.
 
-Compensation expectations are frequently raised earlier in Dutch processes than candidates from markets where the topic is deferred until an offer stage might expect — sometimes in a first screening conversation. Candidates caught unprepared by this often name a number without adequate information, anchoring themselves either below what was available or above what is possible in a way that ends the conversation prematurely.
+Compensation expectations are frequently raised earlier in Dutch processes than candidates from markets where the topic is deferred until an offer stage might expect - sometimes in a first screening conversation. Candidates caught unprepared by this often name a number without adequate information, anchoring themselves either below what was available or above what is possible in a way that ends the conversation prematurely.
 
 The most robust preparation is to have a considered range rather than a single figure, and to be able to explain what that range is based on. Being able to say that your expectation reflects your assessment of the role's scope and your relevant experience, and to ask what range the employer has in mind for the position, moves the conversation toward mutual information exchange rather than a premature commitment on your part.
 
@@ -149,7 +149,7 @@ Several components are specific to the Dutch employment system and should be che
 
 ## Legal Developments That Strengthen Your Position
 
-**EU Pay Transparency Directive (EU) 2023/970.** Member states must transpose the directive by June 2026. It requires employers to provide information about the starting salary or salary range before the interview, prohibits asking applicants about their pay history, and gives employees the right to request information about average pay levels for comparable work. For candidates, this makes it more normal to ask about salary ranges early — and harder for employers to anchor an offer on your current salary.
+**EU Pay Transparency Directive (EU) 2023/970.** Member states must transpose the directive by June 2026. It requires employers to provide information about the starting salary or salary range before the interview, prohibits asking applicants about their pay history, and gives employees the right to request information about average pay levels for comparable work. For candidates, this makes it more normal to ask about salary ranges early - and harder for employers to anchor an offer on your current salary.
 
 **Future Pensions Act (Wet toekomst pensioenen).** The Dutch pension system is moving to a new contribution-based structure, with pension schemes transitioning over a period of several years. When comparing offers, look at the contribution level rather than only at the name of the pension fund.
 
@@ -173,33 +173,33 @@ Employee stock options are more common at start-ups and scale-ups than at tradit
 
 ## Where to Start
 
-Ask directly what's flexible in an offer — salary band, non-cash terms, or scope — rather than assuming a fixed negotiation script from a different market will translate directly.
+Ask directly what's flexible in an offer - salary band, non-cash terms, or scope - rather than assuming a fixed negotiation script from a different market will translate directly.
 
 Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate applying US-style negotiation tactics) Does aggressive, US-style negotiation work well in the Dutch job market?
-Not usually — it can read as adversarial in a culture that generally favors directness paired with collaboration. Stating your priorities clearly and asking what's flexible tends to work better.
+Not usually - it can read as adversarial in a culture that generally favors directness paired with collaboration. Stating your priorities clearly and asking what's flexible tends to work better.
 
 ### (Scenario: candidate wondering what actually has room to move) What parts of a Dutch job offer are usually most flexible?
 Non-cash terms like vacation days, remote/hybrid arrangements, training budget and start date are often easier to move than base salary, which usually moves within an internal band rather than being redefined.
 
 ### (Scenario: candidate with a competing offer) Should I use a competing offer as leverage the way I might in a US negotiation?
-Use it as honest context rather than an aggressive tactic — stating you have another offer and asking how this one compares tends to land better than framing it as an ultimatum.
+Use it as honest context rather than an aggressive tactic - stating you have another offer and asking how this one compares tends to land better than framing it as an ultimatum.
 
 ### (Scenario: candidate unsure whether salary bands are fixed) Are Dutch salary ranges for a role usually fixed, or negotiable?
 There's often an internal band the role sits within; negotiation typically moves you within that band rather than redefining it entirely.
 
 ### (Scenario: candidate deciding what to prioritize) What should I focus on if base salary has limited room to move?
-Non-cash terms and scope — job title, responsibilities and future growth path often matter more for your longer-term trajectory than a small difference in starting salary.
+Non-cash terms and scope - job title, responsibilities and future growth path often matter more for your longer-term trajectory than a small difference in starting salary.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does aggressive, US-style negotiation work well in the Dutch job market?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually — it can read as adversarial in a culture favoring directness paired with collaboration."}},
+    {"@type": "Question", "name": "Does aggressive, US-style negotiation work well in the Dutch job market?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually - it can read as adversarial in a culture favoring directness paired with collaboration."}},
     {"@type": "Question", "name": "What parts of a Dutch job offer are usually most flexible?", "acceptedAnswer": {"@type": "Answer", "text": "Non-cash terms like vacation days, remote arrangements and training budget are often easier to move than base salary."}},
     {"@type": "Question", "name": "Should I use a competing offer as leverage the way I might in a US negotiation?", "acceptedAnswer": {"@type": "Answer", "text": "Use it as honest context rather than an aggressive tactic."}},
     {"@type": "Question", "name": "Are Dutch salary ranges for a role usually fixed, or negotiable?", "acceptedAnswer": {"@type": "Answer", "text": "There's often an internal band the role sits within; negotiation typically moves you within that band."}},

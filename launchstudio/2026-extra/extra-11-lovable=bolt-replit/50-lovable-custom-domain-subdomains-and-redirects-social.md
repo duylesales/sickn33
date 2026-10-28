@@ -1,4 +1,4 @@
-🚨 Wouter Claassen launched Zaalplanner on `app.zaalplanner.nl` for community halls and sports centres around Tilburg. A month later, search engines indexed an unprotected staging domain (`staging.zaalplanner.nl`), and auth cookies configured on the root domain bled across environments — causing live user sessions to corrupt and staging test accounts to overwrite production data. 😳
+🚨 Wouter Claassen launched Zaalplanner on `app.zaalplanner.nl` for community halls and sports centres around Tilburg. A month later, search engines indexed an unprotected staging domain (`staging.zaalplanner.nl`), and auth cookies configured on the root domain bled across environments - causing live user sessions to corrupt and staging test accounts to overwrite production data. 😳
 
 Managing multi-domain SaaS architecture requires precise subdomain routing, cookie scoping, and canonical redirects: 🧠
 

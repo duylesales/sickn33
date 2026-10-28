@@ -16,7 +16,7 @@ De 5 condities die versie 1 wél definiëren:
 ✅ De app draait stabiel op een eigen domein (geen preview-URL)
 ✅ Foutmeldingen worden gemonitord en gelogd
 
-Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u een keiharde scope af te bakenen — zodat u binnen enkele weken live gaat in plaats van over een half jaar.
+Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u een keiharde scope af te bakenen - zodat u binnen enkele weken live gaat in plaats van over een half jaar.
 
 💡 Zo brachten we bijlesplatform van Iris Dekker na 4 maanden uitstel binnen 11 dagen live, met 6 betalende docenten in week 1.
 

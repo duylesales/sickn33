@@ -29,7 +29,7 @@ De meeste sectoren optimaliseren binnen één organisatie. Maritieme operaties k
 
 Een container die in Rotterdam aankomt, betreft een rederij, een terminalexploitant, de douane, een binnenvaart- of spoor- of wegvervoerder, een expediteur, een inlandterminal en een ontvanger. Elk is een onafhankelijke commerciële partij met eigen systemen, eigen doelen en geen verplichting informatie te delen buiten het contractuele.
 
-Het gevolg: de grootste inefficiënties zitten niet binnen de operatie van één partij maar ertussen. Een vrachtwagen die vier uur bij een terminalpoort wacht, een binnenvaartschip dat half leeg vaart, een container die op de kade staat omdat niemand wist dat hij was aangekomen — coördinatiefalen, dat geen enkele organisatie intern kan oplossen.
+Het gevolg: de grootste inefficiënties zitten niet binnen de operatie van één partij maar ertussen. Een vrachtwagen die vier uur bij een terminalpoort wacht, een binnenvaartschip dat half leeg vaart, een container die op de kade staat omdat niemand wist dat hij was aangekomen - coördinatiefalen, dat geen enkele organisatie intern kan oplossen.
 
 **Informatie is incompleet bij ontwerp.** Je bouwt systemen die moeten functioneren zonder te weten wat andere partijen weten. Schatten onder partiële observeerbaarheid is hier geen onderzoeksfinesse maar de werkconditie.
 
@@ -79,7 +79,7 @@ Het gevolg: de grootste inefficiënties zitten niet binnen de operatie van één
 
 **Het jargon verbergt het volledig.** Functies heten "operations analist", "planner", "adviseur logistiek" of "engineer". Wie op machine learning-termen zoekt, vindt vrijwel niets.
 
-**De industrie is cultureel conservatief en markt niet naar technologen.** Maritieme bedrijven zijn vaak familiebezit, lang gevestigd, en communiceren met hun eigen sector. Ze concurreren niet om je aandacht — en dus ook niet hard om je sollicitatie.
+**De industrie is cultureel conservatief en markt niet naar technologen.** Maritieme bedrijven zijn vaak familiebezit, lang gevestigd, en communiceren met hun eigen sector. Ze concurreren niet om je aandacht - en dus ook niet hard om je sollicitatie.
 
 **Het ziet van buiten oubollig uit.** Schepen en kranen signaleren geen technische verfijning zoals een halfgeleidercleanroom. Maar de optimalisatieproblemen bij een grote containerterminal zijn zo lastig als wat dan ook in commercieel datawerk.
 
@@ -101,7 +101,7 @@ De combinatie maakt dit een van de betere verhoudingen tussen probleeminteresse 
 - De grootste inefficiënties zitten tussen partijen in plaats van erbinnen.
 - Datastandaarden en uitwisselformaten afspreken levert hier vaak meer waarde dan betere algoritmes.
 - Aankomstvoorspelling, terminaloptimalisatie, binnenvaartplanning onder variabele diepgang en scheepsautonomie zijn de meest inhoudelijke gebieden.
-- De sector is onderwaardeerd omdat het jargon hem verbergt en hij niet naar technologen markt — alle redenen waarom de concurrentie dun is.
+- De sector is onderwaardeerd omdat het jargon hem verbergt en hij niet naar technologen markt - alle redenen waarom de concurrentie dun is.
 - Maritieme werkgevers wegen domeingeloofwaardigheid en langetermijnintentie zwaar.
 
 ## Waar te beginnen

@@ -91,11 +91,11 @@ Oprichters melden consequent dat Cursor hun ontwikkelingssnelheid drie tot vijf 
 
 - **Eliminatie van de boilerplate**: standaardpatronen zoals API-routes, formulierhandlers en CRUD-bewerkingen worden binnen enkele seconden gegenereerd
 
-- **Reductie van contextomschakeling** — U hoeft geen documentatie of Stack Overflow-antwoorden op te zoeken wanneer Cursor in context kan uitleggen en genereren
+- **Reductie van contextomschakeling** - U hoeft geen documentatie of Stack Overflow-antwoorden op te zoeken wanneer Cursor in context kan uitleggen en genereren
 
-- **Coördinatie van meerdere bestanden** — Wijzigingen die een uur in beslag zouden nemen om in 10 bestanden te implementeren, kunnen in één Composer-prompt worden gegenereerd
+- **Coördinatie van meerdere bestanden** - Wijzigingen die een uur in beslag zouden nemen om in 10 bestanden te implementeren, kunnen in één Composer-prompt worden gegenereerd
 
-- **Hulp bij het opsporen van fouten** — Foutmeldingen kunnen rechtstreeks worden geplakt en Cursor stelt oplossingen voor op basis van uw daadwerkelijke code
+- **Hulp bij het opsporen van fouten** - Foutmeldingen kunnen rechtstreeks worden geplakt en Cursor stelt oplossingen voor op basis van uw daadwerkelijke code
 
 Voor een solo-oprichter die een SaaS-product bouwt, betekent deze snelheidsverhoging het verschil tussen maanden ontwikkeling en weken. Gecombineerd met een AI-prototype van Lovable en productiegereedheid van [LaunchStudio](https://launchstudio.eu/nl/), kan het hele traject van idee tot gelanceerd product in minder dan een maand plaatsvinden.
 
@@ -103,15 +103,15 @@ Voor een solo-oprichter die een SaaS-product bouwt, betekent deze snelheidsverho
 
 Cursor is krachtig maar niet perfect. Oprichters moeten zich bewust zijn van deze beperkingen:
 
-- **Vereist codeerkennis** — U moet evalueren of de gegenereerde code correct, veilig en efficiënt is
+- **Vereist codeerkennis** - U moet evalueren of de gegenereerde code correct, veilig en efficiënt is
 
-- **AI-vertrouwen versus nauwkeurigheid** — Cursor genereert code met vertrouwen, zelfs als deze verkeerd is; verifieer altijd kritische logica
+- **AI-vertrouwen versus nauwkeurigheid** - Cursor genereert code met vertrouwen, zelfs als deze verkeerd is; verifieer altijd kritische logica
 
-- **Contextvensterlimieten** — Zeer grote projecten kunnen het vermogen van Cursor om de volledige codebasis te begrijpen overschrijden
+- **Contextvensterlimieten** - Zeer grote projecten kunnen het vermogen van Cursor om de volledige codebasis te begrijpen overschrijden
 
-- **Blinde vlekken op het gebied van beveiliging** — Zoals alle AI-tools kan Cursor zonder waarschuwing onveilige patronen genereren
+- **Blinde vlekken op het gebied van beveiliging** - Zoals alle AI-tools kan Cursor zonder waarschuwing onveilige patronen genereren
 
-- **Geen implementatie** — Cursor helpt u bij het schrijven van code, maar implementeert, host of bewaakt uw applicatie niet
+- **Geen implementatie** - Cursor helpt u bij het schrijven van code, maar implementeert, host of bewaakt uw applicatie niet
 
 ## Belangrijkste inzichten
 
@@ -141,7 +141,7 @@ Elena nam contact op met **LaunchStudio (door Manifera)**. Het technische team b
 
 **Resultaat:** Elena's app werd veilig gelanceerd op 14 privéscholen, waardoor honderden beoordelingen veilig en betrouwbaar werden beheerd.
 
-**Kosten en tijdlijn:** € 2.000 (schaalpakket) — productieklaar en binnen 8 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 2.000 (schaalpakket) - productieklaar en binnen 8 werkdagen geïmplementeerd.
 
 ---
 

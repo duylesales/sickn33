@@ -88,9 +88,9 @@ The Manifera engineering team executed an emergency architectural rebuild in 7 b
 **Result:** The timeouts vanished completely. Merchants could upload 10,000-row spreadsheets, close their laptops, and receive an email when the background job finished. The plugin achieved a 5-star rating on the Shopify App Store, and Martin's MRR stabilized at €18,500.
 
 > *"I thought integrating AI just meant making a standard API call. I didn't realize that doing it at scale requires an entirely different server architecture. LaunchStudio tore out my fragile script and built a heavy-duty engine that actually handles enterprise workloads."*
-> — **Martin Fischer, Founder, ProductGenius (Berlin)**
+> - **Martin Fischer, Founder, ProductGenius (Berlin)**
 
-**Cost & Timeline:** €4,900 (Launch & Grow Package with Async Queue Add-on) — production-ready and deployed in 7 business days.
+**Cost & Timeline:** €4,900 (Launch & Grow Package with Async Queue Add-on) - production-ready and deployed in 7 business days.
 
 ---
 

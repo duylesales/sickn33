@@ -26,7 +26,7 @@ Elke Brandt learned this directly. She built ClauseCheck, an AI contract review 
 
 ## Myth: if it runs on a public URL, it's deployed
 
-This is the single most common misunderstanding about the deployment of AI-built apps, and it's an easy one to fall into because a preview URL genuinely does work — you can click it, share it, demo it. But a preview environment usually isn't configured for the traffic, security, or persistence a real launch needs. Preview deployments frequently run against a development database that can be reset or wiped without warning. They often skip the SSL configuration a custom domain needs. And critically, they're frequently built with debug settings and permissive error messages still switched on, which is exactly the kind of thing that quietly leaks information about your backend to anyone who looks.
+This is the single most common misunderstanding about the deployment of AI-built apps, and it's an easy one to fall into because a preview URL genuinely does work - you can click it, share it, demo it. But a preview environment usually isn't configured for the traffic, security, or persistence a real launch needs. Preview deployments frequently run against a development database that can be reset or wiped without warning. They often skip the SSL configuration a custom domain needs. And critically, they're frequently built with debug settings and permissive error messages still switched on, which is exactly the kind of thing that quietly leaks information about your backend to anyone who looks.
 
 ## Myth: environment secrets are handled automatically
 
@@ -36,46 +36,46 @@ You can check for this yourself in about a minute, without any technical backgro
 
 ## Myth: a custom domain is a cosmetic upgrade
 
-A shareable link that says "vercel.app" or "lovable.app" somewhere in it isn't just a branding issue — it signals to search engines, to security-conscious customers, and often to payment processors that the site isn't a fully established production property. Getting a real domain live involves DNS configuration, SSL certificate provisioning, and usually some redirect and caching setup, none of which is automatic just because you own the domain name.
+A shareable link that says "vercel.app" or "lovable.app" somewhere in it isn't just a branding issue - it signals to search engines, to security-conscious customers, and often to payment processors that the site isn't a fully established production property. Getting a real domain live involves DNS configuration, SSL certificate provisioning, and usually some redirect and caching setup, none of which is automatic just because you own the domain name.
 
 Payment processors in particular tend to scrutinize this closely during account verification. A business trying to accept payments through a shared platform subdomain rather than its own verified domain can face extra review steps or delayed approval, since the processor has no easy way to confirm the business behind the payment page is who it claims to be. For a law firm software product like ClauseCheck, where clients are trusting the app with confidential documents, a generic platform subdomain also raises a quieter but real credibility question before a single word of the product itself gets evaluated.
 
 ## Myth: testing carefully before each deploy means you don't need a rollback plan
 
-Careful testing catches most bugs before they reach production, which is exactly why this myth feels reasonable — right up until a deploy breaks something your test suite didn't cover, at 6 PM on a Friday, with no fast way back to the last working version. A rollback plan doesn't have to be sophisticated. For a lot of AI-built apps, it's as simple as keeping the previous deployment's build available and documented well enough that reverting takes minutes instead of a frantic hour of trying to remember what changed. The absence of this plan is invisible for months, right up until the one deploy that needed it and didn't have it.
+Careful testing catches most bugs before they reach production, which is exactly why this myth feels reasonable - right up until a deploy breaks something your test suite didn't cover, at 6 PM on a Friday, with no fast way back to the last working version. A rollback plan doesn't have to be sophisticated. For a lot of AI-built apps, it's as simple as keeping the previous deployment's build available and documented well enough that reverting takes minutes instead of a frantic hour of trying to remember what changed. The absence of this plan is invisible for months, right up until the one deploy that needed it and didn't have it.
 
 ## Myth: uptime monitoring is something you add later, once you have real users
 
-This one has the causality backwards. The entire point of uptime monitoring is catching problems before "real users" notice them, which means it's most valuable during the exact period founders tend to skip it — the early weeks when a handful of pilot customers are trying the product for the first time and forming their lasting impression of whether it works. A missing monitoring setup doesn't cause outages, but it does guarantee that when one happens, you'll hear about it from a confused customer instead of from an alert giving you a head start on fixing it quietly.
+This one has the causality backwards. The entire point of uptime monitoring is catching problems before "real users" notice them, which means it's most valuable during the exact period founders tend to skip it - the early weeks when a handful of pilot customers are trying the product for the first time and forming their lasting impression of whether it works. A missing monitoring setup doesn't cause outages, but it does guarantee that when one happens, you'll hear about it from a confused customer instead of from an alert giving you a head start on fixing it quietly.
 
 ## A real launch checklist for the deployment of AI-built apps
 
 Six items belong on this list before "live" means what you think it means: a production database separate from any development or preview instance, so nothing can be accidentally wiped; environment secrets stored server-side and never bundled into frontend code; a custom domain with a properly provisioned SSL certificate; debug and verbose error modes switched off in production; basic uptime monitoring so you find out about outages before your users tell you; and a rollback plan, however simple, so a bad deploy doesn't take the whole app down with no way back.
 
-Treat this less like a formality and more like a pre-flight check that takes an afternoon to run through properly. Most solo technical founders can verify two or three of these six items themselves without much difficulty — checking whether your domain has a valid SSL certificate, or whether debug mode is off, are both things you can confirm in minutes. The harder ones to self-diagnose are usually secret management and database separation, since both require actually understanding how the AI tool structured your backend rather than just observing behavior from the outside, which is exactly the kind of review worth getting a second opinion on before, not after, real customers are relying on the result.
+Treat this less like a formality and more like a pre-flight check that takes an afternoon to run through properly. Most solo technical founders can verify two or three of these six items themselves without much difficulty - checking whether your domain has a valid SSL certificate, or whether debug mode is off, are both things you can confirm in minutes. The harder ones to self-diagnose are usually secret management and database separation, since both require actually understanding how the AI tool structured your backend rather than just observing behavior from the outside, which is exactly the kind of review worth getting a second opinion on before, not after, real customers are relying on the result.
 
 ## What this actually costs to fix
 
-Deployment hardening is one of the more contained pieces of production work, precisely because it doesn't touch your app's features or interface — it's infrastructure and configuration. LaunchStudio, backed by [Manifera's 11+ years of production engineering experience](https://www.manifera.com/services/offshore-software-development/) headquartered at Herengracht 420 in Amsterdam, typically handles this kind of gap as part of the [Launch Ready package](https://launchstudio.eu/#packages), priced €800–€3,500 with a fixed quote depending on how many of the six items above are missing. If you're not sure which of the six your own app is missing, book a free 15-minute intro call and we'll walk through it together.
+Deployment hardening is one of the more contained pieces of production work, precisely because it doesn't touch your app's features or interface - it's infrastructure and configuration. LaunchStudio, backed by [Manifera's 11+ years of production engineering experience](https://www.manifera.com/services/offshore-software-development/) headquartered at Herengracht 420 in Amsterdam, typically handles this kind of gap as part of the [Launch Ready package](https://launchstudio.eu/#packages), priced €800–€3,500 with a fixed quote depending on how many of the six items above are missing. If you're not sure which of the six your own app is missing, book a free 15-minute intro call and we'll walk through it together.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Preview Link That Leaked a Key
 
-ClauseCheck ran on a Vercel preview URL for two months while Elke Brandt onboarded a handful of pilot law firms in Berlin. It looked live enough that nobody questioned it, including Elke, until one of her pilot users — a lawyer with just enough technical curiosity to open developer tools — noticed a recognizable API key sitting in plain text inside the page source and asked her about it in an email with the subject line "is this supposed to be here."
+ClauseCheck ran on a Vercel preview URL for two months while Elke Brandt onboarded a handful of pilot law firms in Berlin. It looked live enough that nobody questioned it, including Elke, until one of her pilot users - a lawyer with just enough technical curiosity to open developer tools - noticed a recognizable API key sitting in plain text inside the page source and asked her about it in an email with the subject line "is this supposed to be here."
 
-It wasn't. Elke brought ClauseCheck to LaunchStudio that week. Our engineers moved the exposed key server-side where it belonged, provisioned a proper custom domain with SSL, separated her development and production databases, and switched off the debug logging that had been quietly exposing internal error details to anyone who triggered a failed request — all without altering the interface her pilot firms had already started using.
+It wasn't. Elke brought ClauseCheck to LaunchStudio that week. Our engineers moved the exposed key server-side where it belonged, provisioned a proper custom domain with SSL, separated her development and production databases, and switched off the debug logging that had been quietly exposing internal error details to anyone who triggered a failed request - all without altering the interface her pilot firms had already started using.
 
 > *"I genuinely thought a working link meant I was deployed. I didn't know 'deployed' had six other requirements hiding behind it until one of my own users found the gap for me."*
-> — **Elke Brandt, Founder, ClauseCheck (Berlin)**
+> - **Elke Brandt, Founder, ClauseCheck (Berlin)**
 
-**Cost & Timeline:** €1,350 (secret management, domain and SSL setup, database separation) — completed in 5 business days.
+**Cost & Timeline:** €1,350 (secret management, domain and SSL setup, database separation) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### Isn't a working preview URL the same as being deployed?
 
-No. A preview URL often runs against a development database, skips SSL and custom domain configuration, and can leave debug settings switched on — none of which is safe for real users relying on the app for their business.
+No. A preview URL often runs against a development database, skips SSL and custom domain configuration, and can leave debug settings switched on - none of which is safe for real users relying on the app for their business.
 
 ### How do API keys end up exposed in a frontend bundle?
 

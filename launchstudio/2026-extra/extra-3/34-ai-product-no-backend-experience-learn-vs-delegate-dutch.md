@@ -55,7 +55,7 @@ Een oprichter die bij de lancering volledig delegeert is niet voor onbepaalde ti
 
 [LaunchStudio](https://launchstudio.eu/nl/) werkt met oprichters over dit gehele spectrum – van oprichters die de woordenschat willen om gedelegeerd werk intelligent te evalueren tot oprichters die de technische laag volledig afgehandeld willen hebben. Wij vertalen bevindingen en beslissingen naar welk niveau van technische vaardigheid een bepaalde oprichter daadwerkelijk heeft, ondersteund door Manifera's bredere ervaring in het duidelijk communiceren over een breed scala aan technische achtergronden van klanten.
 
-[Bepaal welke onderdelen het leren waard zijn en welke het delegeren waard zijn](https://launchstudio.eu/nl/#contact) — de juiste mix is genuanceerder dan een alles-of-niets keuze.
+[Bepaal welke onderdelen het leren waard zijn en welke het delegeren waard zijn](https://launchstudio.eu/nl/#contact) - de juiste mix is genuanceerder dan een alles-of-niets keuze.
 
 ## Een gerichte paar uur aan leren: Wat u daadwerkelijk moet behandelen, op volgorde
 
@@ -84,9 +84,9 @@ Na een eerste gesprek met LaunchStudio waarin de specifieke woordenschat en diag
 **Resultaat:** Renske delegeerde de daadwerkelijke technische verharding aan LaunchStudio terwijl ze een oprechte, geïnformeerde betrokkenheid behield bij het beoordelen van bevindingen en het begrijpen van afwegingen. Dit was een taakverdeling die haar in staat stelde betekenisvol betrokken te blijven bij de technische richting van haar product zonder de onrealistische tijdsinvestering die volledige onafhankelijke technische competentie zou hebben vereist.
 
 > *"Ik dacht dat mijn enige echte keuzes waren om zelf technisch te worden of me volledig terug te trekken van die hele kant van het bedrijf. Het leren van net genoeg om slimme vragen te stellen en de antwoorden daadwerkelijk te begrijpen bleek een oprecht haalbaar middenpad te zijn waarvan ik me niet had gerealiseerd dat het bestond."*
-> — **Renske Voskuil, Oprichter, BewegingsPlan (Nijmegen)**
+> - **Renske Voskuil, Oprichter, BewegingsPlan (Nijmegen)**
 
-**Kosten en tijdlijn:** € 2.050 (Launch Ready Pakket) — live in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.050 (Launch Ready Pakket) - live in 9 werkdagen.
 
 ---
 
@@ -138,7 +138,7 @@ Het middenpad is gebruikelijk specifiek omdat de alles-of-niets framing die dit 
       "name": "Voorkomt nu delegeren dat een oprichter later technisch wordt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Helemaal niet — de keuze is niet permanent en veel oprichters ontwikkelen geleidelijk diepere vaardigheden."
+        "text": "Helemaal niet - de keuze is niet permanent en veel oprichters ontwikkelen geleidelijk diepere vaardigheden."
       }
     },
     {

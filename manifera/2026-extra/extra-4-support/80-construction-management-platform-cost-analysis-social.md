@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom construction management builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom construction management builds. 💸💥
 
 **The Pain Points:**
 ❌ **BIM and IFC Data Integration:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

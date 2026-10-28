@@ -1,4 +1,4 @@
-🌐 Wouter Claassen zette Zaalplanner live op `app.zaalplanner.nl` voor sportzalen in Tilburg. Een maand later bleek Google een onbeveiligde testomgeving (`staging.zaalplanner.nl`) te hebben geïndexeerd, terwijl sessie-cookies lekten tussen de test- en live-omgeving — waardoor testaccounts actieve productiegegevens overschreven. 😳
+🌐 Wouter Claassen zette Zaalplanner live op `app.zaalplanner.nl` voor sportzalen in Tilburg. Een maand later bleek Google een onbeveiligde testomgeving (`staging.zaalplanner.nl`) te hebben geïndexeerd, terwijl sessie-cookies lekten tussen de test- en live-omgeving - waardoor testaccounts actieve productiegegevens overschreven. 😳
 
 Een professionele domeinstructuur vereist strikte subdomein-scheiding, cookie-scoping en canonieke redirects. Waar het misgaat:
 

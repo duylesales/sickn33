@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Voor een hele categorie succesvolle B2B softwareproducten — online afspraakplanners, reserveringskalenders, leadformulieren, review-widgets, chatboxen en interactieve calculators — is de primaire gebruikerservaring niet dat klanten inloggen op uw dashboard.
+Voor een hele categorie succesvolle B2B softwareproducten - online afspraakplanners, reserveringskalenders, leadformulieren, review-widgets, chatboxen en interactieve calculators - is de primaire gebruikerservaring niet dat klanten inloggen op uw dashboard.
 
 **De echte waarde zit in een stukje van uw software dat direct op de eigen website van uw klant draait.**
 
@@ -82,7 +82,7 @@ Hanteer daarom twee gouden regels:
 
 Zorg daarnaast voor **geautomatiseerde foutrapportage vanuit de widget**: log JavaScript-fouten inclusief het account-ID en de host-URL naar uw centrale monitoring (zoals Sentry). Zonder dat zijn problemen op externe websites onmogelijk op te lossen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste webapplicaties) ontwerpen we veilige hybride iframe-loaders, cookie-vrije sessiearchitectuur en domein-gevalideerde widgets tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw widget-architectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw insluitbare software vlekkeloos draait op elke website.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste webapplicaties) ontwerpen we veilige hybride iframe-loaders, cookie-vrije sessiearchitectuur en domein-gevalideerde widgets tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw widget-architectuur met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw insluitbare software vlekkeloos draait op elke website.
 
 ## Echt voorbeeld
 
@@ -105,7 +105,7 @@ Bij een audit door LaunchStudio kwamen nog twee ernstige problemen naar boven:
 **Resultaat:** Binnen vier werkdagen herbouwde LaunchStudio de complete widget: de architectuur werd omgezet naar een dynamische iframe-loader met automatische hoogte-aanpassing via `postMessage`, waardoor CSS-conflicten tot het verleden behoorden. De sessiestatus werd verplaatst naar een server-side sessie gekoppeld aan een unieke sessietoken in de URL (volledig bestand tegen Safari en adblockers), er kwam domein-whitelisting op de API-sleutels, en client-side JavaScript-errors werden automatisch gekoppeld aan het salon-ID. De uitval op mobiele apparaten daalde direct naar nul.
 
 > *"Op mijn laptop werkte het formulier fantastisch. Maar in de echte wereld faalde het bij twee derde van alle mobiele bezoekers. Zonder centrale foutlogging had ik nooit geweten dat Apple achter de storing zat."*
-> — **Milan Novak, Oprichter, Boekmoment**
+> - **Milan Novak, Oprichter, Boekmoment**
 
 **Kosten & Doorlooptijd:** Herbouw van widget naar hybride iframe, sessie-tokenisatie en domeinwhitelisting opgeleverd in 4 werkdagen.
 

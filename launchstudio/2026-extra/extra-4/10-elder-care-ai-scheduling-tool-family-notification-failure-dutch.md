@@ -87,9 +87,9 @@ LaunchStudio's ingenieurs herbouwden het meldingssysteem rond elke mutatie in de
 **Resultaat:** families ontvangen nu een melding voor elke materiële wijziging in een gepland bezoek, wat de kloof dicht tussen wat de kalender toont en wat er daadwerkelijk is gebeurd.
 
 > *"Ik testte het boeken van een bezoek en het annuleren van een bezoek. Ik heb nooit getest dat twee zorgverleners een dienst onderling ruilden – en dat bleek exact het scenario te zijn waarin een familie in het duister werd gelaten."*
-> — **Otto Jansen, Oprichter, ZorgAgenda (Maastricht)**
+> - **Otto Jansen, Oprichter, ZorgAgenda (Maastricht)**
 
-**Kosten en tijdlijn:** € 900 (gebeurtenisgestuurde meldingsarchitectuur, triggers voor dienstwissel en her-toewijzing, bevestigingen van voltooiing van het bezoek) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 900 (gebeurtenisgestuurde meldingsarchitectuur, triggers voor dienstwissel en her-toewijzing, bevestigingen van voltooiing van het bezoek) - voltooid in 4 werkdagen.
 
 ---
 

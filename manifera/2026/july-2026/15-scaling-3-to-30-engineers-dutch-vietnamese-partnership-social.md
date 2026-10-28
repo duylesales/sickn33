@@ -1,4 +1,4 @@
-📈 **At 3 engineers, everything works. At 30, everything breaks — unless you design for it.**
+📈 **At 3 engineers, everything works. At 30, everything breaks - unless you design for it.**
 
 Here's what we learned scaling a European SaaS team from 3 to 30 through a Dutch-Vietnamese model:
 
@@ -19,7 +19,7 @@ Here's what we learned scaling a European SaaS team from 3 to 30 through a Dutch
 → Weekly architecture guild
 
 **The results:**
-→ 4.2× velocity increase (not 10× — and that's realistic)
+→ 4.2× velocity increase (not 10× - and that's realistic)
 → 12 prod deployments/week
 → Bug escape rate: 2.1 per 1,000 (industry avg: 5-8)
 

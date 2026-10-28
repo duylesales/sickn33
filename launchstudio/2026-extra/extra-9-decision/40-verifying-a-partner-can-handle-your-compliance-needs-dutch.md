@@ -52,7 +52,7 @@ Het doorslaggevende signaal zit niet in het antwoord op de vraag: "Voldoet u aan
 
 Onder de AVG is iedere externe partij die namens u persoonsgegevens verwerkt wettelijk verplicht om te werken onder een verwerkersovereenkomst. Dit is een bindend contract dat nauwkeurig definieert welke persoonsgegevens worden verwerkt, met welk doel, voor welke tijdsduur en onder welke technische en organisatorische beveiligingsmaatregelen. Dit is geen bureaucratische formaliteit; het is een wettelijke plicht voor de relatie zelf. Een softwarepartner die niet per direct een standaard verwerkersovereenkomst kan overleggen, heeft zijn compliance-processen niet geformaliseerd of simpelweg nog nooit gewerkt voor klanten met serieuze privacyverplichtingen.
 
-Wat u concreet moet opvragen: de volledige verwerkersovereenkomst zélf — niet een samenvatting — ter beoordeling vóórdat u enige hoofdovereenkomst tekent. Een deugdelijke verwerkersovereenkomst specificeert:
+Wat u concreet moet opvragen: de volledige verwerkersovereenkomst zélf - niet een samenvatting - ter beoordeling vóórdat u enige hoofdovereenkomst tekent. Een deugdelijke verwerkersovereenkomst specificeert:
 - De categorieën van betrokkenen en persoonsgegevens;
 - De duur en aard van de verwerking;
 - De specifieke beveiligingsmaatregelen (zoals encryptie in rust en overdracht);
@@ -63,7 +63,7 @@ Vage antwoorden klinken als: "Dat regelen we later wel samen" of een generieke g
 
 ## EU Data-Residentie: Waar de Servers Werkelijk Staan
 
-Voor veel SaaS-oprichters die leveren aan Europese bedrijven, overheidsinstanties of onderwijsinstellingen is data-residentie — de keiharde garantie dat persoonsgegevens uitsluitend binnen de Europese Economische Ruimte (EER) worden opgeslagen en verwerkt — een feitelijke, controleerbare eis. Een eerlijk antwoord van een ontwikkelaar benoemt de specifieke cloudprovider, de exacte datacenterregio, en geeft openheid over back-uplocaties en disaster-recovery infrastructuren. Een hoofddatabase die draait in Frankfurt terwijl de geautomatiseerde back-ups worden gerepliceerd naar een regio in de Verenigde Staten maakt elke claim op EU-residentie immers direct waardeloos.
+Voor veel SaaS-oprichters die leveren aan Europese bedrijven, overheidsinstanties of onderwijsinstellingen is data-residentie - de keiharde garantie dat persoonsgegevens uitsluitend binnen de Europese Economische Ruimte (EER) worden opgeslagen en verwerkt - een feitelijke, controleerbare eis. Een eerlijk antwoord van een ontwikkelaar benoemt de specifieke cloudprovider, de exacte datacenterregio, en geeft openheid over back-uplocaties en disaster-recovery infrastructuren. Een hoofddatabase die draait in Frankfurt terwijl de geautomatiseerde back-ups worden gerepliceerd naar een regio in de Verenigde Staten maakt elke claim op EU-residentie immers direct waardeloos.
 
 Het concrete bewijs dat u moet verlangen:
 1. De naam van de hostingprovider en de regio (bijv. AWS `eu-central-1` te Frankfurt, Azure West Europe in Nederland, of een Europese provider zoals Scaleway of Hetzner);
@@ -74,11 +74,11 @@ Een ontwijkend antwoord klinkt steevast als: "Wij maken gebruik van toonaangeven
 
 ## Sectorale Regelgeving: Zorg, Fintech en Onderwijs Zijn Géén Standaard AVG
 
-Algemene basiskennis van de AVG vertaalt zich niet automatisch naar de strenge aanvullende eisen die gelden zodra uw product opereert in gereguleerde markten. Dit is precies het punt waarop oprichters vaak te laat ontdekken dat hun ontwikkelpartner tekortschiet — wanneer het platform al is gebouwd en de compliance-afdeling van een potentiële klant kritische vragen stelt.
+Algemene basiskennis van de AVG vertaalt zich niet automatisch naar de strenge aanvullende eisen die gelden zodra uw product opereert in gereguleerde markten. Dit is precies het punt waarop oprichters vaak te laat ontdekken dat hun ontwikkelpartner tekortschiet - wanneer het platform al is gebouwd en de compliance-afdeling van een potentiële klant kritische vragen stelt.
 
 - **Zorg en Medtech:** Applicaties die ook maar enigszins raken aan medische gegevens, welzijn of behandelplannen verwerken 'bijzondere categorieën persoonsgegevens' conform Artikel 9 van de AVG. Dit vereist een specifieke wettelijke uitzonderingsgrond en verzwaarde technische beveiliging, zoals gedetailleerde access-logging (wie heeft welk dossier wanneer ingezien?). Een bureau met zorgervaring kan deze maatregelen tot in detail beschrijven; een partij zonder ervaring schermt met generieke beveiligingspraatjes die de plank misslaan.
 - **Fintech en Financiële Diensten:** Oplossingen die transactiegegevens, kredietbeoordelingen of betalingsstromen verwerken, raken aan PSD2, anti-witwaswetgeving (Wwft) of strenge sectorrichtlijnen van toezichthouders zoals DNB of AFM. Een volwassen partner begrijpt het fundamentele verschil tussen "wij kunnen Stripe integreren" (een technische API-koppeling) en "wij begrijpen de bewaarplichten en scheiding van financiële transactielogs" (een complexe architectuureis).
-- **Onderwijs en Edtech:** Software die gegevens van minderjarigen verwerkt, stelt strenge eisen aan toestemming van ouders/voogden en dataminimalisatie. Een partner die dit onderscheid niet kent, behandelt leerlinggegevens identiek aan reguliere data — een showstopper voor scholen en universiteiten.
+- **Onderwijs en Edtech:** Software die gegevens van minderjarigen verwerkt, stelt strenge eisen aan toestemming van ouders/voogden en dataminimalisatie. Een partner die dit onderscheid niet kent, behandelt leerlinggegevens identiek aan reguliere data - een showstopper voor scholen en universiteiten.
 
 De ultieme controlevraag: vraag het bureau rechtstreeks of zij eerder software hebben gebouwd in uw specifieke sector, en met welke sectorale richtlijn zij toen rekening moesten houden in de software-architectuur. Een partner die dit werk heeft gedaan, vertelt direct een concreet praktijkverhaal. Wie de ervaring mist, herhaalt algemene AVG-termen gehuld in marketingjargon.
 
@@ -111,23 +111,23 @@ Stel deze vragen bij voorkeur ook per e-mail. De bereidheid van een leverancier 
 ## Veelgehoorde Vage Reacties (En Wat Ze Werkelijk Betekenen)
 
 Houd deze voorbeelden bij de hand als waarschuwingssignalen:
-- *"Wij nemen beveiliging uiterst serieus"* — Betekenis: We hebben geen formeel gedocumenteerd proces om te tonen.
-- *"Wij zijn volledig AVG-proof"* — Betekenis: Een marketingslogan; de AVG kent geen officieel algemeen conformiteitscertificaat.
-- *"Maakt u zich geen zorgen, dit is allemaal geregeld"* — Betekenis: Ik ontwijk de concrete technische vraag die u zojuist stelde.
-- *"Onze infrastructuur is van enterprise-niveau"* — Betekenis: We huren standaard cloudservers bij AWS of Google, maar over onze eigen configuratie en permissies hebben we niet nagedacht.
-- *"In de praktijk vraagt eigenlijk niemand hierom"* — Betekenis: We hebben nog nooit gewerkt voor veeleisende zakelijke klanten.
+- *"Wij nemen beveiliging uiterst serieus"* - Betekenis: We hebben geen formeel gedocumenteerd proces om te tonen.
+- *"Wij zijn volledig AVG-proof"* - Betekenis: Een marketingslogan; de AVG kent geen officieel algemeen conformiteitscertificaat.
+- *"Maakt u zich geen zorgen, dit is allemaal geregeld"* - Betekenis: Ik ontwijk de concrete technische vraag die u zojuist stelde.
+- *"Onze infrastructuur is van enterprise-niveau"* - Betekenis: We huren standaard cloudservers bij AWS of Google, maar over onze eigen configuratie en permissies hebben we niet nagedacht.
+- *"In de praktijk vraagt eigenlijk niemand hierom"* - Betekenis: We hebben nog nooit gewerkt voor veeleisende zakelijke klanten.
 
 Elk van deze uitspraken is een afleidingsmanoeuvre. Blijf doorvragen naar het concrete brondocument vóórdat u akkoord geeft op een samenwerking.
 
 [LaunchStudio](https://launchstudio.eu/nl/) hanteert een gedocumenteerde verwerkersovereenkomst en gegarandeerde EU-gehoste infrastructuur als standaardwerkwijze voor SaaS scale-ups. Deze werkwijze is verankerd in de enterprise-ervaring van [Manifera](https://www.manifera.com/about-us/), dat al meer dan elf jaar bedrijfskritische software ontwikkelt voor veeleisende en gereguleerde organisaties zoals TNO en CFLW.
 
-**Plan een vrijblijvend gesprek van 15 minuten en leg uw security questionnaire rechtstreeks aan ons voor — wij beantwoorden uw vragen direct en feitelijk tijdens het gesprek.**
+**Plan een vrijblijvend gesprek van 15 minuten en leg uw security questionnaire rechtstreeks aan ons voor - wij beantwoorden uw vragen direct en feitelijk tijdens het gesprek.**
 
 ## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Vragenlijst Die de Deal Bijna Blokkeerde
 
-Willem Post, oprichter van Zorgplan — een in Bolt gebouwde SaaS-applicatie voor planning en zorgcoördinatie bij kleinschalige thuiszorgorganisaties — stond op drie weken van het tekenen van zijn eerste enterprise-contract met een regionaal zorgnetwerk. Totdat het inkoop- en securityteam van het zorgnetwerk een formele vragenlijst van 60 items opstuurde over data-residentie, datalekprotocollen en de opslag van bijzondere persoonsgegevens conform Artikel 9 van de AVG.
+Willem Post, oprichter van Zorgplan - een in Bolt gebouwde SaaS-applicatie voor planning en zorgcoördinatie bij kleinschalige thuiszorgorganisaties - stond op drie weken van het tekenen van zijn eerste enterprise-contract met een regionaal zorgnetwerk. Totdat het inkoop- en securityteam van het zorgnetwerk een formele vragenlijst van 60 items opstuurde over data-residentie, datalekprotocollen en de opslag van bijzondere persoonsgegevens conform Artikel 9 van de AVG.
 
 De freelance ontwikkelaar die destijds de planningsfunctionaliteit had gebouwd, bleek niet meer dan een handvol vragen te kunnen beantwoorden.
 
@@ -136,9 +136,9 @@ Willem bracht de vragenlijst direct in tijdens een intakegesprek met LaunchStudi
 **Resultaat:** Beide compliance-gaten werden tijdens het traject direct gedicht: access-logging werd geïmplementeerd op alle gevoelige velden en de back-upreplicatie werd definitief vastgezet op een strikt Europese regio. Willem kon de volledig onderbouwde en afgetekende questionnaire binnen de gestelde termijn van twee weken overhandigen aan het zorgnetwerk, waarna het enterprise-contract volgens planning werd ondertekend.
 
 > *"Mijn eerdere developer was goed in het bouwen van schermen, maar kon simpelweg geen verwerkersovereenkomst ondertekenen en de inhoud ervan technisch garanderen. Dat we dit drie weken vóór de deadline ontdekten in plaats van erna, heeft mijn onderneming gered."*
-> — **Willem Post, Oprichter, Zorgplan (Nijmegen)**
+> - **Willem Post, Oprichter, Zorgplan (Nijmegen)**
 
-**Kosten & Doorlooptijd:** €5.400 (Launch & Grow Pakket, implementatie logging bijzondere persoonsgegevens en herstel EU data-residentie) — binnen 13 werkdagen live in productie.
+**Kosten & Doorlooptijd:** €5.400 (Launch & Grow Pakket, implementatie logging bijzondere persoonsgegevens en herstel EU data-residentie) - binnen 13 werkdagen live in productie.
 
 ---
 

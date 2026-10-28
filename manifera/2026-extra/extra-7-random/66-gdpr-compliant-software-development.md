@@ -20,23 +20,23 @@ target_persona: "CFO"
 }
 </script>
 
-GDPR fines under Article 83 can reach up to 4% of a company's global annual turnover, and the regulators enforcing it have made clear through a decade of case law that "we didn't design the system to make deletion possible" is not a defense — it's an admission that data protection by design, a legal requirement under Article 25 since 2018, was simply skipped. For a CFO, this turns GDPR compliance from a legal checkbox into a direct architectural cost question.
+GDPR fines under Article 83 can reach up to 4% of a company's global annual turnover, and the regulators enforcing it have made clear through a decade of case law that "we didn't design the system to make deletion possible" is not a defense - it's an admission that data protection by design, a legal requirement under Article 25 since 2018, was simply skipped. For a CFO, this turns GDPR compliance from a legal checkbox into a direct architectural cost question.
 
-**The Pain:** A CFO overseeing a software platform that handles EU personal data is legally accountable for GDPR compliance, but compliance is often treated as a documentation exercise — privacy policies, consent banners, a signed Data Processing Agreement — while the underlying system architecture was never actually built to support the rights GDPR guarantees, like the right to erasure or the right to data portability, leaving the company compliant on paper and exposed in practice.
+**The Pain:** A CFO overseeing a software platform that handles EU personal data is legally accountable for GDPR compliance, but compliance is often treated as a documentation exercise - privacy policies, consent banners, a signed Data Processing Agreement - while the underlying system architecture was never actually built to support the rights GDPR guarantees, like the right to erasure or the right to data portability, leaving the company compliant on paper and exposed in practice.
 
-**The Agitation:** A company that receives a legitimate erasure request and discovers that the customer's personal data is scattered across a dozen services, log files, backups, and third-party analytics tools with no mechanism to actually locate and delete all of it faces a choice between an expensive, error-prone manual remediation under regulatory deadline pressure, or a compliance failure — and this scenario, multiplied across every data subject request the company receives, is precisely the exposure that "compliance on paper" creates.
+**The Agitation:** A company that receives a legitimate erasure request and discovers that the customer's personal data is scattered across a dozen services, log files, backups, and third-party analytics tools with no mechanism to actually locate and delete all of it faces a choice between an expensive, error-prone manual remediation under regulatory deadline pressure, or a compliance failure - and this scenario, multiplied across every data subject request the company receives, is precisely the exposure that "compliance on paper" creates.
 
 ## What Data Protection by Design Actually Requires in Architecture
 
-**Data mapping as a living artifact, not a one-time audit.** A CFO can't manage what isn't mapped — every system needs a current, accurate record of what personal data it stores, where it flows, which third parties receive it, and how long it's retained, maintained as part of the engineering process rather than reconstructed under pressure when a data subject request arrives.
+**Data mapping as a living artifact, not a one-time audit.** A CFO can't manage what isn't mapped - every system needs a current, accurate record of what personal data it stores, where it flows, which third parties receive it, and how long it's retained, maintained as part of the engineering process rather than reconstructed under pressure when a data subject request arrives.
 
-**Erasure and portability as first-class system capabilities.** A system designed for GDPR from the start includes a defined mechanism to locate and delete a specific individual's data across every service and backup that holds it, and to export it in a portable format — retrofitting this into a system with years of undocumented data sprawl is a multi-month forensic exercise, while building it in from the start is a design decision that costs comparatively little.
+**Erasure and portability as first-class system capabilities.** A system designed for GDPR from the start includes a defined mechanism to locate and delete a specific individual's data across every service and backup that holds it, and to export it in a portable format - retrofitting this into a system with years of undocumented data sprawl is a multi-month forensic exercise, while building it in from the start is a design decision that costs comparatively little.
 
-**Data minimization at the schema level.** Collecting only the personal data a feature actually needs, rather than capturing broadly "in case it's useful later," directly reduces both breach exposure and the scope of every future data subject request — this is a decision made at database schema and API design time, not something that can be added after the fact without a migration.
+**Data minimization at the schema level.** Collecting only the personal data a feature actually needs, rather than capturing broadly "in case it's useful later," directly reduces both breach exposure and the scope of every future data subject request - this is a decision made at database schema and API design time, not something that can be added after the fact without a migration.
 
 **Pseudonymization and encryption as defaults, not exceptions.** Personal data that's pseudonymized in analytics pipelines and encrypted at rest and in transit reduces regulatory risk even in the event of a breach, since GDPR's notification obligations and penalty exposure are meaningfully different when compromised data was properly protected versus stored in plain, directly identifiable form.
 
-**Vendor and sub-processor accountability built into procurement.** Every third-party service that touches EU personal data — an analytics tool, a cloud host, a customer support platform — needs a Data Processing Agreement and a documented basis for the transfer, and a CFO who hasn't inventoried every sub-processor the engineering team has quietly added over time has an unknown, unmanaged compliance surface.
+**Vendor and sub-processor accountability built into procurement.** Every third-party service that touches EU personal data - an analytics tool, a cloud host, a customer support platform - needs a Data Processing Agreement and a documented basis for the transfer, and a CFO who hasn't inventoried every sub-processor the engineering team has quietly added over time has an unknown, unmanaged compliance surface.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: EU-based governance that underst
 
 ### A Valencia SaaS Platform's Erasure Request Wake-Up Call
 
-Datos Protegidos Valencia S.L., a Valencia-based HR software provider, received a formal erasure request from a former customer's employee and discovered that fulfilling it meant manually tracing the individual's data across six microservices, three years of log archives, and an analytics vendor with no deletion API — a process that took the engineering team over three weeks and left the CFO uncertain whether every copy had actually been found.
+Datos Protegidos Valencia S.L., a Valencia-based HR software provider, received a formal erasure request from a former customer's employee and discovered that fulfilling it meant manually tracing the individual's data across six microservices, three years of log archives, and an analytics vendor with no deletion API - a process that took the engineering team over three weeks and left the CFO uncertain whether every copy had actually been found.
 
 Manifera's team mapped the company's full data flow, redesigned the core services with a centralized erasure mechanism keyed to a single subject identifier, and renegotiated the analytics vendor relationship to one with a proper deletion API. The next erasure request, six months later, was fulfilled in under a day with full audit confidence.
 
 > *"Three weeks and we still weren't sure we'd found everything. That's not a position a CFO wants to explain to a regulator. Now a deletion request is a solved problem instead of a fire drill."*
-> — **CFO, Datos Protegidos Valencia S.L., Spain**
+> - **CFO, Datos Protegidos Valencia S.L., Spain**
 
 ## Compliance on Paper vs. Manifera's Data Protection by Design
 
@@ -68,7 +68,7 @@ Manifera's team mapped the company's full data flow, redesigned the core service
 
 ## The Economics
 
-A single mishandled data subject request or a documented Article 25 failure can trigger fines up to 4% of global annual turnover, while building erasure, portability, and minimization into architecture from the start typically adds a modest percentage to initial development cost — a fraction of the cost of retrofitting it under regulatory pressure later. [Talk to Manifera](https://www.manifera.com/contact-us/) about GDPR compliant software development that holds up under real regulatory scrutiny, not just in a policy document.
+A single mishandled data subject request or a documented Article 25 failure can trigger fines up to 4% of global annual turnover, while building erasure, portability, and minimization into architecture from the start typically adds a modest percentage to initial development cost - a fraction of the cost of retrofitting it under regulatory pressure later. [Talk to Manifera](https://www.manifera.com/contact-us/) about GDPR compliant software development that holds up under real regulatory scrutiny, not just in a policy document.
 
 ## Frequently Asked Questions
 

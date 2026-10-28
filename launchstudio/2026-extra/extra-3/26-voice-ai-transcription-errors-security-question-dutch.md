@@ -55,7 +55,7 @@ Voor elke via spraak geactiveerde actie met een echte consequentie sluit een kor
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt spraakgestuurde AI-producten specifiek op dit risico van transcriptie naar actie. Wij maken onderscheid tussen passieve transcriptiefuncties en ingrijpende, actie-activerende functies en passen gepaste bevestigingswaarborgen toe op de laatste, ondersteund door Manifera's bredere engineeringdiscipline in het behandelen van invoervalidatie als een beveiligingsoverweging, en niet alleen als een kwaliteitskwestie.
 
-[Laat uw spraakproduct beoordelen op plekken waar een verkeerd verstaan woord een echt probleem wordt](https://launchstudio.eu/nl/#calculator) — transcriptienauwkeurigheid en actieve veiligheid zijn gerelateerde maar oprecht verschillende vragen.
+[Laat uw spraakproduct beoordelen op plekken waar een verkeerd verstaan woord een echt probleem wordt](https://launchstudio.eu/nl/#calculator) - transcriptienauwkeurigheid en actieve veiligheid zijn gerelateerde maar oprecht verschillende vragen.
 
 ## Een test-controlelijst voor spraakproducten voorbij de stille kamer
 
@@ -82,9 +82,9 @@ In een testgesprek met veel achtergrondruis werd de "nee, wacht" van een klant �
 **Resultaat:** LaunchStudio ontwierp de bevestigingsstroom van BelBestel opnieuw om de geïnterpreteerde bestelling expliciet te herhalen en een ondubbelzinnige, herhaalde bevestiging te vereisen voor de afronding, samen met terugvallogica die dubbelzinnige of gedeeltelijke reacties specifiek afhandelt door een ophelderende vervolgvraag te stellen in plaats van stilletjes te vervallen in een aangenomen interpretatie.
 
 > *"De binaire ja-nee logica werkte geweldig in mijn eigen testen in een stille kamer. Er was een echt, licht rumoerig telefoongesprek voor nodig met iemand die zijn bestelling halverwege de zin probeerde te corrigeren om te onthullen dat dubbelzinnige spraak simpelweg stilletjes werd laten vallen in plaats van daadwerkelijk te worden opgehelderd."*
-> — **Wouter Peeters, Oprichter, BelBestel (Tilburg)**
+> - **Wouter Peeters, Oprichter, BelBestel (Tilburg)**
 
-**Kosten en tijdlijn:** € 1.400 (herontwerp van spraakbevestigingsstroom) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (herontwerp van spraakbevestigingsstroom) - voltooid in 5 werkdagen.
 
 ---
 
@@ -120,7 +120,7 @@ Het onderliggende principe – ingrijpende acties geactiveerd door potentieel ve
       "name": "Heeft elke spraak-AI-functie een bevestigingsstap nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet universeel — de richtlijn schaalt met de consequenties; lage inzet heeft minder wrijving nodig dan transacties."
+        "text": "Niet universeel - de richtlijn schaalt met de consequenties; lage inzet heeft minder wrijving nodig dan transacties."
       }
     },
     {
@@ -136,7 +136,7 @@ Het onderliggende principe – ingrijpende acties geactiveerd door potentieel ve
       "name": "Zou testen in een stille kamer deze dubbelzinnigheid tonen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Onwaarschijnlijk — rumoerige praktijkomstandigheden moeten bewust worden geïntroduceerd tijdens het testen."
+        "text": "Onwaarschijnlijk - rumoerige praktijkomstandigheden moeten bewust worden geïntroduceerd tijdens het testen."
       }
     },
     {
@@ -144,7 +144,7 @@ Het onderliggende principe – ingrijpende acties geactiveerd door potentieel ve
       "name": "Is een bevestigingsstap een grote kost voor de gebruikerservaring?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bescheiden kosten t.o.v. de winst — een korte bevestiging voegt seconden toe tegen het risico van foute acties."
+        "text": "Bescheiden kosten t.o.v. de winst - een korte bevestiging voegt seconden toe tegen het risico van foute acties."
       }
     },
     {

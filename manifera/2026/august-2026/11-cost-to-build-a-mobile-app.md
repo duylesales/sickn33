@@ -25,7 +25,7 @@ The mobile app economy operates on a dangerous misconception: founders believe t
 
 If you search for the **cost to build a mobile app**, generic calculators will spit out figures like "€20,000 to €50,000." This is fundamentally misleading. It reflects the cost of painting the house, not laying the foundation.
 
-McKinsey's research on enterprise technology budget allocation puts a number on exactly how this misconception compounds: "heavy IT sustainers" — organizations that under-invest in architecture up front — end up allocating as much as 80% of their technology budget to "run" spending (keeping existing systems alive) and only 20% to "change" (new development and innovation), while even more disciplined "lean operators" still redirect a majority of budget toward maintenance rather than growth. A mobile app built without a TCO model is a heavy IT sustainer in waiting.
+McKinsey's research on enterprise technology budget allocation puts a number on exactly how this misconception compounds: "heavy IT sustainers" - organizations that under-invest in architecture up front - end up allocating as much as 80% of their technology budget to "run" spending (keeping existing systems alive) and only 20% to "change" (new development and innovation), while even more disciplined "lean operators" still redirect a majority of budget toward maintenance rather than growth. A mobile app built without a TCO model is a heavy IT sustainer in waiting.
 
 For B2B SaaS companies, healthcare platforms, or fintech startups planning their 2026 budgets, this guide provides a rigorous financial audit of the Total Cost of Ownership (TCO) for a [custom mobile application](https://www.manifera.com/services/mobile-app-development/).
 
@@ -43,11 +43,11 @@ The first decision dictates your entire financial roadmap. Do you build Native (
 - **Maintenance:** Efficient. A single React Native team maintains both platforms.
 - **Verdict:** For 95% of B2B SaaS, E-commerce, and enterprise dashboard apps, React Native is the only financially responsible choice in 2026.
 
-**The proof this scales beyond small teams:** Discord's own engineering team has published, on their public engineering blog, that their iOS app — serving many millions of monthly active users and holding a 4.8-star App Store rating — is maintained by a team of just three core iOS engineers on React Native, sharing the large majority of business logic with their web front-end. This is not a startup-scale anecdote; it is one of the highest-traffic consumer apps in the world, run by a lean team, precisely because cross-platform code reuse eliminates the duplicate-team tax described above.
+**The proof this scales beyond small teams:** Discord's own engineering team has published, on their public engineering blog, that their iOS app - serving many millions of monthly active users and holding a 4.8-star App Store rating - is maintained by a team of just three core iOS engineers on React Native, sharing the large majority of business logic with their web front-end. This is not a startup-scale anecdote; it is one of the highest-traffic consumer apps in the world, run by a lean team, precisely because cross-platform code reuse eliminates the duplicate-team tax described above.
 
 ## 2. The Complexity-Adjusted Cost Model: Why "It Depends" Has Numbers
 
-"React Native is cheaper" is true on average, but the savings margin is not constant — it shrinks as feature complexity rises, and CTOs who budget off the headline number get blindsided mid-project. Cost-benchmarking data compiled across dozens of 2025-2026 native-vs-cross-platform project comparisons converges on a consistent pattern: the cross-platform discount is largest for simple apps and compresses toward parity as an app leans on device-specific hardware or complex custom UI.
+"React Native is cheaper" is true on average, but the savings margin is not constant - it shrinks as feature complexity rises, and CTOs who budget off the headline number get blindsided mid-project. Cost-benchmarking data compiled across dozens of 2025-2026 native-vs-cross-platform project comparisons converges on a consistent pattern: the cross-platform discount is largest for simple apps and compresses toward parity as an app leans on device-specific hardware or complex custom UI.
 
 | App Complexity Tier | Example Feature Set | Typical Cross-Platform Savings vs. Native | What Changes the Math |
 |---|---|---|---|
@@ -83,7 +83,7 @@ Mobile apps do not age gracefully; they break actively.
 Every September, Apple releases a new iOS version. Every year, Google updates Android. These OS updates frequently deprecate old APIs, change privacy permissions, or alter UI safe areas (due to new "Dynamic Islands" or notch designs).
 
 **The Annual Maintenance Budget:**
-You must budget **15% to 20% of your initial development cost annually** just to keep the app functional — a range that holds consistently across 2025-2026 mobile maintenance cost benchmarking, and which can climb to 25-40% in year one alone for apps that launched with weak test coverage or thin documentation. For a €100,000 platform, that is €20,000 per year dedicated to OS compatibility updates, upgrading deprecated SDKs, and patching vulnerabilities.
+You must budget **15% to 20% of your initial development cost annually** just to keep the app functional - a range that holds consistently across 2025-2026 mobile maintenance cost benchmarking, and which can climb to 25-40% in year one alone for apps that launched with weak test coverage or thin documentation. For a €100,000 platform, that is €20,000 per year dedicated to OS compatibility updates, upgrading deprecated SDKs, and patching vulnerabilities.
 
 ## 6. The Device Fragmentation Tax (QA Testing Across Android Hardware)
 
@@ -94,7 +94,7 @@ Native iOS testing is comparatively simple: Apple sells roughly a dozen active d
 - **Cloud Device Farms (Recommended):** Services like BrowserStack App Live, Firebase Test Lab, or AWS Device Farm give you on-demand access to hundreds of real device/OS combinations. Budget **€3,000 - €8,000/year** for a mid-tier subscription, plus the engineering hours to write and maintain Appium test scripts that run against it automatically in CI.
 - **Manual QA Regression Pass:** Even with automation, budget **€2,000 - €5,000 per major release** for a human QA engineer to manually verify critical flows (checkout, onboarding, camera/biometric features) on the top 5-10 devices actually used by your customer base, based on your analytics data.
 
-**Why this line item gets skipped:** Founders budgeting for "the app" almost never budget separately for fragmentation testing, because a demo on the founder's own iPhone or Pixel looks flawless. The bill arrives six months later as a wave of 1-star reviews from Samsung or Xiaomi users reporting crashes the team never reproduced internally. Factor device fragmentation testing into your MVP budget as its own line item — not an afterthought inside "QA Automation" — especially if your target market includes Southeast Asia, Latin America, or India, where budget Android devices dominate market share far more than in Western Europe or the US.
+**Why this line item gets skipped:** Founders budgeting for "the app" almost never budget separately for fragmentation testing, because a demo on the founder's own iPhone or Pixel looks flawless. The bill arrives six months later as a wave of 1-star reviews from Samsung or Xiaomi users reporting crashes the team never reproduced internally. Factor device fragmentation testing into your MVP budget as its own line item - not an afterthought inside "QA Automation" - especially if your target market includes Southeast Asia, Latin America, or India, where budget Android devices dominate market share far more than in Western Europe or the US.
 
 ## The 3-Year TCO Summary (Mid-Tier B2B App)
 

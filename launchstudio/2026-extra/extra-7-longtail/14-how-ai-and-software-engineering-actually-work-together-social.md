@@ -1,4 +1,4 @@
-🚨 Ingrid Vos built "Voorraadslim," an inventory tool for small retailers, using v0 and Cursor — then got a quote for nearly €45,000 to "properly rebuild" it with a traditional dev shop. A number that would have shelved the whole project. 😅
+🚨 Ingrid Vos built "Voorraadslim," an inventory tool for small retailers, using v0 and Cursor - then got a quote for nearly €45,000 to "properly rebuild" it with a traditional dev shop. A number that would have shelved the whole project. 😅
 
 Of the roughly 40 line items in that quote, only about six actually mapped to something Voorraadslim genuinely lacked. 🧠
 
@@ -11,7 +11,7 @@ Of the roughly 40 line items in that quote, only about six actually mapped to so
 ✅ Resolved the stock-count race condition with proper database-level locking
 ✅ Added managed hosting and monitoring so uptime wasn't Ingrid's personal responsibility anymore
 
-At **LaunchStudio**, we scope fixes to what's actually missing, not what a rebuild-shaped quote assumes — Manifera's Amsterdam-based engineers have spent 11+ years pricing engineering work this honestly. 🛡️
+At **LaunchStudio**, we scope fixes to what's actually missing, not what a rebuild-shaped quote assumes - Manifera's Amsterdam-based engineers have spent 11+ years pricing engineering work this honestly. 🛡️
 
 Ingrid's result: what Voorraadslim actually needed cost a tenth of the original quote, and she still doesn't have to think about hosting. 🚀
 

@@ -1,9 +1,9 @@
-🌐 Renate's app loaded fine — but her emails vanished — renate voss, founder of SignalBoard, a feedback-analytics tool built with **Bolt**, followed a "quick connect" domain guide the week before launch and had no idea it had silently deleted her email records. 🧠
+🌐 Renate's app loaded fine - but her emails vanished - renate voss, founder of SignalBoard, a feedback-analytics tool built with **Bolt**, followed a "quick connect" domain guide the week before launch and had no idea it had silently deleted her email records. 🧠
 
 If your DNS "quick connect" replaces your whole record set instead of adding to it, your app can look perfectly live while every welcome email and password reset silently bounces.
 
 ❌ MX and SPF/DKIM records overwritten by a domain tool that replaces the full record set
-❌ No visible error — the app loads fine while transactional email fails in the background
+❌ No visible error - the app loads fine while transactional email fails in the background
 ❌ A 24-hour TTL meant the broken config stayed live for a full day even after the fix
 
 ✅ Documenting the full existing DNS record set before making any changes

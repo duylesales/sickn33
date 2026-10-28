@@ -96,9 +96,9 @@ Het Manifera-team herbouwde de complete architectuur in 7 werkdagen naar een asy
 **Resultaat:** Alle time-outs verdwenen direct. Winkeliers konden bestanden met 10.000 rijen uploaden, hun laptop sluiten en ontvingen een e-mail zodra het proces voltooid was. De plugin behaalde een 5-sterren beoordeling in de Shopify App Store en Martin's omzet groeide naar €18.500 MRR.
 
 > *"Ik dacht dat AI integreren hetzelfde was als een standaard API-aanroep maken. Ik wist niet dat je voor grote volumes een compleet andere serverarchitectuur nodig hebt. LaunchStudio sloopte mijn kwetsbare script en bouwde een zware industriële motor die echte enterprise-volumes moeiteloos aankan."*
-> — **Martin Fischer, Oprichter, ProductGenius (Berlijn)**
+> - **Martin Fischer, Oprichter, ProductGenius (Berlijn)**
 
-**Kosten & Doorlooptijd:** €4.900 (Launch & Grow Pakket met Asynchrone Wachtrij Add-on) — productie-klaar en live binnen 7 werkdagen.
+**Kosten & Doorlooptijd:** €4.900 (Launch & Grow Pakket met Asynchrone Wachtrij Add-on) - productie-klaar en live binnen 7 werkdagen.
 
 ---
 

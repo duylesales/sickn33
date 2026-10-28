@@ -5,7 +5,7 @@ Buyer Stage: Consideration
 ---
 
 # Edge Computing for Low-Latency AI Deployment: Moving Inference Closer to Users
-In the world of AI SaaS, perceived speed is everything. If a user asks a question and the UI hangs for four seconds before the first word appears, they will assume the product is broken — regardless of how good the eventual answer is. A major hidden source of this lag is geography. If your user is in London, your server is in Virginia, and the OpenAI data center is in California, the physical distance the data travels adds real, measurable delay on top of whatever the model itself takes to think. Light travels through fiber optic cable at roughly two-thirds the speed of light in a vacuum, and every network hop adds routing overhead — a round trip between London and Virginia alone typically costs 70–90ms before any actual processing happens. The solution is the Edge.
+In the world of AI SaaS, perceived speed is everything. If a user asks a question and the UI hangs for four seconds before the first word appears, they will assume the product is broken - regardless of how good the eventual answer is. A major hidden source of this lag is geography. If your user is in London, your server is in Virginia, and the OpenAI data center is in California, the physical distance the data travels adds real, measurable delay on top of whatever the model itself takes to think. Light travels through fiber optic cable at roughly two-thirds the speed of light in a vacuum, and every network hop adds routing overhead - a round trip between London and Virginia alone typically costs 70–90ms before any actual processing happens. The solution is the Edge.
 
 ## The Anatomy of AI Latency
 
@@ -15,21 +15,21 @@ When a user submits a prompt, at least three distinct delays stack on top of eac
 
 2. **Server-to-LLM Latency**: The time it takes your backend to establish a connection with OpenAI, Anthropic, or Google, including TLS handshake overhead if connections aren't kept warm.
 
-3. **Inference Latency (Time to First Token)**: The time it takes the LLM to actually process the prompt and generate the first word — driven by model size, prompt length, and provider load.
+3. **Inference Latency (Time to First Token)**: The time it takes the LLM to actually process the prompt and generate the first word - driven by model size, prompt length, and provider load.
 
-You cannot control Inference Latency — that is entirely up to the model provider, and even the best-architected app cannot make GPT-4o or Claude think faster. But you can substantially reduce, and in many cases nearly eliminate, Client-to-Server latency by using Edge Functions, and this is the layer that is fully within your control as a founder.
+You cannot control Inference Latency - that is entirely up to the model provider, and even the best-architected app cannot make GPT-4o or Claude think faster. But you can substantially reduce, and in many cases nearly eliminate, Client-to-Server latency by using Edge Functions, and this is the layer that is fully within your control as a founder.
 
 ## Deploying to the Edge
 
 Instead of deploying your backend Node.js server to a single region (like AWS `us-east-1` in Virginia), you deploy your code to platforms like Vercel Edge Runtime, Cloudflare Workers, or Supabase Edge Functions (which themselves run on Deno Deploy's global network).
 
-These platforms replicate your backend code to dozens or hundreds of data centers (points of presence) worldwide — Cloudflare alone operates in over 300 cities. When a user in Sydney clicks "Generate," the request is handled by a server physically in or near Sydney rather than being routed halfway across the planet. That server immediately orchestrates the API call to the LLM provider and begins streaming the response back to the user. In practice, teams migrating from a single-region Node server to edge functions typically see the network-attributable portion of latency drop from 300–500ms down to 10–30ms — a meaningful chunk of total response time, especially for shorter AI interactions like autocomplete or classification tasks where the network delay can otherwise dwarf the actual inference time.
+These platforms replicate your backend code to dozens or hundreds of data centers (points of presence) worldwide - Cloudflare alone operates in over 300 cities. When a user in Sydney clicks "Generate," the request is handled by a server physically in or near Sydney rather than being routed halfway across the planet. That server immediately orchestrates the API call to the LLM provider and begins streaming the response back to the user. In practice, teams migrating from a single-region Node server to edge functions typically see the network-attributable portion of latency drop from 300–500ms down to 10–30ms - a meaningful chunk of total response time, especially for shorter AI interactions like autocomplete or classification tasks where the network delay can otherwise dwarf the actual inference time.
 
-One practical caveat: not all Node.js APIs run in edge runtimes, since they use a stripped-down V8 isolate model rather than a full Node process. Heavy dependencies (certain PDF libraries, native binary bindings) may force you back to a traditional serverless function for that specific route — a hybrid architecture, with edge handling the latency-sensitive orchestration paths and regional serverless functions handling the rare heavy-lifting tasks, is common and perfectly reasonable.
+One practical caveat: not all Node.js APIs run in edge runtimes, since they use a stripped-down V8 isolate model rather than a full Node process. Heavy dependencies (certain PDF libraries, native binary bindings) may force you back to a traditional serverless function for that specific route - a hybrid architecture, with edge handling the latency-sensitive orchestration paths and regional serverless functions handling the rare heavy-lifting tasks, is common and perfectly reasonable.
 
 ## Running AI Models Directly on the Edge
 
-Orchestrating API calls at the edge is powerful, but the true frontier as of 2026 is **Edge Inference** — running the model itself, not just the request routing, at the edge node.
+Orchestrating API calls at the edge is powerful, but the true frontier as of 2026 is **Edge Inference** - running the model itself, not just the request routing, at the edge node.
 
 Cloudflare Workers AI and Vercel now allow you to run smaller, open-source AI models directly on the edge node itself, using WebAssembly runtimes and quantized model formats (GGUF, ONNX) that fit in the memory constraints of an edge isolate. If you need to perform sentiment analysis, translation, content moderation, or basic text summarization, you do not need to make a round-trip call to OpenAI at all. You can run a quantized Llama 3.1 8B or Mistral 7B model directly on the local server in Sydney, with inference completing in tens of milliseconds rather than hundreds.
 
@@ -37,13 +37,13 @@ This provides three concrete advantages:
 
 - **Zero Network Hop**: The inference happens on the same machine handling the user request, eliminating the round trip to a centralized AI provider entirely for that task.
 
-- **Cost Reduction**: You avoid paying per-token API fees for high-volume, low-complexity tasks — a meaningful lever when API costs already make up a large share of your Cost of Goods Sold in an AI SaaS business.
+- **Cost Reduction**: You avoid paying per-token API fees for high-volume, low-complexity tasks - a meaningful lever when API costs already make up a large share of your Cost of Goods Sold in an AI SaaS business.
 
 - **Data Privacy**: The user's raw input never leaves the edge node and is never transmitted to a centralized third-party AI provider, which matters for regulated industries handling PII or under GDPR in EU markets.
 
 ## The Edge Database Dilemma
 
-Moving your compute to the edge is close to useless if your database remains centralized in a single region. If your edge function in Berlin has to wait for a database query to round-trip to a Postgres instance in Ohio before it can respond to the user, you have simply moved the bottleneck — the total latency is barely improved, because the slowest link in the chain still dominates.
+Moving your compute to the edge is close to useless if your database remains centralized in a single region. If your edge function in Berlin has to wait for a database query to round-trip to a Postgres instance in Ohio before it can respond to the user, you have simply moved the bottleneck - the total latency is barely improved, because the slowest link in the chain still dominates.
 
 If you build an edge-first AI application, your data layer must match it architecturally. You must utilize globally distributed databases like Turso (built on libSQL/SQLite with edge replicas) or PlanetScale, or implement aggressive caching layers such as Redis at the edge via Upstash, which replicates read replicas to multiple regions. If your AI needs to check a user's subscription status or remaining credits before generating a response, that check must happen locally in Berlin, not as a fresh query to a primary database in Ohio. A common pattern is to keep Supabase Postgres as the source of truth in one region while replicating hot, frequently-read data (auth sessions, credit balances, feature flags) into an edge-local KV store that gets updated asynchronously.
 
@@ -53,13 +53,13 @@ If you build an edge-first AI application, your data layer must match it archite
 
 - Edge computing distributes your backend code globally, ensuring user requests are handled by the physically closest server, typically cutting network latency from hundreds of milliseconds to tens.
 
-- Edge Functions drastically reduce "Time to First Token" by eliminating cross-ocean network trips between the user and your server — but not every Node.js dependency runs in an edge runtime, so plan for a hybrid architecture where needed.
+- Edge Functions drastically reduce "Time to First Token" by eliminating cross-ocean network trips between the user and your server - but not every Node.js dependency runs in an edge runtime, so plan for a hybrid architecture where needed.
 
 - You can run smaller, quantized open-source AI models directly at the edge for near-zero latency, cost-effective inference on tasks like classification and sentiment analysis.
 
-- To fully utilize edge compute, your database must also be globally distributed or heavily cached at the edge — otherwise the database becomes the new bottleneck.
+- To fully utilize edge compute, your database must also be globally distributed or heavily cached at the edge - otherwise the database becomes the new bottleneck.
 
-Manifera has applied this same edge-first thinking since **2014**, running distributed engineering teams out of Amsterdam (Herengracht 420) and Ho Chi Minh City to serve clients across time zones — the same principle of "put the resource close to where it's needed" that underlies edge computing applies just as well to how software teams are structured.
+Manifera has applied this same edge-first thinking since **2014**, running distributed engineering teams out of Amsterdam (Herengracht 420) and Ho Chi Minh City to serve clients across time zones - the same principle of "put the resource close to where it's needed" that underlies edge computing applies just as well to how software teams are structured.
 
 ## Deploy Globally, Instantly
 
@@ -77,7 +77,7 @@ She partnered with **LaunchStudio (by Manifera)**. The team migrated the transla
 
 **Result:** Response time dropped to under 150ms globally, making translations feel instant.
 
-**Cost & Timeline:** €1,200 (Edge Configuration Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €1,200 (Edge Configuration Package) - production-ready and deployed in 3 business days.
 
 ---
 
@@ -101,4 +101,4 @@ If your Edge function is local but your database is far away, you gain little to
 
 ### Does LaunchStudio handle both the edge deployment and the database migration?
 
-Yes. LaunchStudio, powered by Manifera, handles the full stack — migrating backend routes to edge runtimes, restructuring the database layer for global reads, and validating that Node.js dependencies that don't run in edge isolates are correctly routed to regional serverless functions instead.
+Yes. LaunchStudio, powered by Manifera, handles the full stack - migrating backend routes to edge runtimes, restructuring the database layer for global reads, and validating that Node.js dependencies that don't run in edge isolates are correctly routed to regional serverless functions instead.

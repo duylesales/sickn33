@@ -1,4 +1,4 @@
-🚨 Thibault Van Damme bouwde WerfPlan, een planningsapp voor bouwploegen op de werf, met behulp van v0 — en onboardde zijn eerste drie aannemersbedrijven rechtstreeks vanaf een strakke, werkende demo. Twee weken later wiste een nachtelijke reset op de gratis database van de app een volledige week aan planningswijzigingen voor een van zijn pilotbedrijven. 😳
+🚨 Thibault Van Damme bouwde WerfPlan, een planningsapp voor bouwploegen op de werf, met behulp van v0 - en onboardde zijn eerste drie aannemersbedrijven rechtstreeks vanaf een strakke, werkende demo. Twee weken later wiste een nachtelijke reset op de gratis database van de app een volledige week aan planningswijzigingen voor een van zijn pilotbedrijven. 😳
 
 Een demo die "werkt" en een database die gebouwd is om echt gebruik te overleven zijn twee verschillende vragen. 🧠
 
@@ -9,7 +9,7 @@ Een demo die "werkt" en een database die gebouwd is om echt gebruik te overleven
 
 ✅ Migreren naar een degelijke beheerde Postgres-instantie met geautomatiseerde dagelijkse back-ups
 ✅ Connection pooling toevoegen om gelijktijdige updates van ploegen veilig te verwerken
-✅ De bestaande frontend volledig onaangetast laten — dit is een infrastructuurreparatie, geen herontwerp
+✅ De bestaande frontend volledig onaangetast laten - dit is een infrastructuurreparatie, geen herontwerp
 
 Bij **LaunchStudio** is dit precies de kloof waar onze technici als eerste naar zoeken: de softwarekeuzes die oprichters maken in week één van prompten, en of deze standhouden in week twaalf met echte gebruikers. Ondersteund door Manifera's 11+ jaar ervaring in productie-engineering. 🛡️
 

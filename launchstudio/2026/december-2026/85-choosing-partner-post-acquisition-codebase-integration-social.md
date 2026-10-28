@@ -1,4 +1,4 @@
-🤝 Getting acquired isn't the finish line — it's when your deferred technical debt bill finally arrives. 🧠
+🤝 Getting acquired isn't the finish line - it's when your deferred technical debt bill finally arrives. 🧠
 
 A codebase that ran fine independently can still be a genuinely hard integration target once it needs to plug into a buyer's existing systems, identity provider, and data warehouse.
 

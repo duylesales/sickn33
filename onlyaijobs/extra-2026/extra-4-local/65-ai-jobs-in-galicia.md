@@ -44,15 +44,15 @@ Content Format: Regional Guide
 }
 </script>
 
-Galicia, in Spain's green and Atlantic north-west, is not usually the first region that comes to mind for AI careers. Yet it combines the headquarters of one of the world's largest fashion retailers, the seat of Spain's national AI supervisory agency, significant automotive and maritime industries, a supercomputing centre and several respected AI research centres. For experienced machine learning engineers, AI jobs in Galicia span retail and supply chain analytics, AI governance, industrial AI, language technology and research — in cities with a lower cost of living than Madrid or Barcelona and a strong quality of life. This guide explains the landscape and what to consider.
+Galicia, in Spain's green and Atlantic north-west, is not usually the first region that comes to mind for AI careers. Yet it combines the headquarters of one of the world's largest fashion retailers, the seat of Spain's national AI supervisory agency, significant automotive and maritime industries, a supercomputing centre and several respected AI research centres. For experienced machine learning engineers, AI jobs in Galicia span retail and supply chain analytics, AI governance, industrial AI, language technology and research - in cities with a lower cost of living than Madrid or Barcelona and a strong quality of life. This guide explains the landscape and what to consider.
 
 ## Fashion Retail at Global Scale
 
-Inditex, the fashion group behind Zara and other brands, has its headquarters in Arteixo near A Coruña. Its business model — rapid design, production and distribution cycles serving stores and online customers worldwide — depends heavily on data. Technology and data teams work on demand forecasting, inventory allocation, logistics, e-commerce personalisation, search, pricing and supply chain traceability. The group's presence has also stimulated a local ecosystem of technology suppliers and startups. For ML engineers, it offers retail and supply chain problems at a scale few companies anywhere can match.
+Inditex, the fashion group behind Zara and other brands, has its headquarters in Arteixo near A Coruña. Its business model - rapid design, production and distribution cycles serving stores and online customers worldwide - depends heavily on data. Technology and data teams work on demand forecasting, inventory allocation, logistics, e-commerce personalisation, search, pricing and supply chain traceability. The group's presence has also stimulated a local ecosystem of technology suppliers and startups. For ML engineers, it offers retail and supply chain problems at a scale few companies anywhere can match.
 
 ## Spain's AI Supervisory Agency
 
-A Coruña is the headquarters of the Spanish Agency for the Supervision of Artificial Intelligence (AESIA), established as one of the first dedicated national AI supervisory bodies in the EU in the context of the EU AI Act. AESIA's work includes supervising AI systems, supporting implementation of the AI Act and promoting trustworthy AI. For professionals interested in AI governance, the agency's presence creates opportunities — both within public institutions, subject to public-sector recruitment rules, and in companies, consultancies and research groups working on compliance and trustworthy AI.
+A Coruña is the headquarters of the Spanish Agency for the Supervision of Artificial Intelligence (AESIA), established as one of the first dedicated national AI supervisory bodies in the EU in the context of the EU AI Act. AESIA's work includes supervising AI systems, supporting implementation of the AI Act and promoting trustworthy AI. For professionals interested in AI governance, the agency's presence creates opportunities - both within public institutions, subject to public-sector recruitment rules, and in companies, consultancies and research groups working on compliance and trustworthy AI.
 
 ## Automotive, Maritime and Industry
 
@@ -99,7 +99,7 @@ Galicia's cities are compact and walkable. A Coruña is a coastal city with a lo
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Galicia you will find few or no local vacancies there today. Use Spanish job portals, company career pages, research centre vacancy lists and public employment announcements as primary sources. OnlyAIJobs is useful for comparing Galicia with the Netherlands — where retail and logistics employers such as Sendcloud, Rexel and Accenture list AI roles — and as a method: in a region with three main cities and industrial sites between them, searching by real commute is essential. Galician employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Galicia you will find few or no local vacancies there today. Use Spanish job portals, company career pages, research centre vacancy lists and public employment announcements as primary sources. OnlyAIJobs is useful for comparing Galicia with the Netherlands - where retail and logistics employers such as Sendcloud, Rexel and Accenture list AI roles - and as a method: in a region with three main cities and industrial sites between them, searching by real commute is essential. Galician employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Retail and Supply Chain AI in Depth
 
@@ -115,7 +115,7 @@ Research groups in Santiago de Compostela have contributed to natural language p
 
 ## Industrial AI in Vigo
 
-Vigo's automotive plant and suppliers use data science for quality inspection, predictive maintenance, production planning and logistics. The maritime sector — fishing, seafood processing, shipbuilding and port operations — offers distinctive problems: optimising fishing fleet routes and fuel use, monitoring catches and compliance, predicting demand for seafood products and maintaining vessels and port equipment. Technology centres such as Gradiant work with industry on applied AI projects, and the University of Vigo's telecommunications research supports connected and intelligent systems. These roles usually require Spanish and suit engineers who enjoy practical industrial problems.
+Vigo's automotive plant and suppliers use data science for quality inspection, predictive maintenance, production planning and logistics. The maritime sector - fishing, seafood processing, shipbuilding and port operations - offers distinctive problems: optimising fishing fleet routes and fuel use, monitoring catches and compliance, predicting demand for seafood products and maintaining vessels and port equipment. Technology centres such as Gradiant work with industry on applied AI projects, and the University of Vigo's telecommunications research supports connected and intelligent systems. These roles usually require Spanish and suit engineers who enjoy practical industrial problems.
 
 ## Questions to Ask Galician Employers
 

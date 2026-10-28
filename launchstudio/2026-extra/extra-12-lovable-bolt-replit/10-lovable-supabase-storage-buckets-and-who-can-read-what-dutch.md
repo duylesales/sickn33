@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Vraag een AI-tool om bestandsuploads toe te voegen en binnen een minuut hebt u iets wat werkt. Het maakt een bucket aan, markeert die als publiek, uploadt het bestand en slaat de resulterende URL op. Elke schermafbeelding, factuur, elk identiteitsbewijs en elk medisch formulier dat uw gebruikers uploaden, is dan leesbaar voor iedereen die het adres heeft — en de adressen zijn vaak te raden.
+Vraag een AI-tool om bestandsuploads toe te voegen en binnen een minuut hebt u iets wat werkt. Het maakt een bucket aan, markeert die als publiek, uploadt het bestand en slaat de resulterende URL op. Elke schermafbeelding, factuur, elk identiteitsbewijs en elk medisch formulier dat uw gebruikers uploaden, is dan leesbaar voor iedereen die het adres heeft - en de adressen zijn vaak te raden.
 
 "Publiek" betekent in Supabase-opslag niet "publiek voor ingelogde gebruikers". Het betekent een URL waarvoor helemaal geen authenticatie nodig is: geen sessie, geen token, geen verloopdatum. Het bestand staat op het open internet.
 
@@ -34,7 +34,7 @@ Iedereen met de URL kan het bestand voor altijd lezen, ook nadat de gebruiker zi
 
 URL's lekken op gewone manieren. Ze verschijnen in supportmails, in de browsergeschiedenis, in de referrer-header die naar analysetools van derden wordt gestuurd, in schermafbeeldingen die in chats worden gedeeld, en op elke pagina die ze toont. Zodra een URL bestaat, reist hij.
 
-En als bestandsnamen voorspelbaar zijn — oplopende nummers, gebruikers-ID's, originele bestandsnamen — kan de bucket worden afgelopen. Een aanvaller die één document op een te raden pad vindt, probeert de volgende honderd, en door AI gegenereerde uploadcode geeft bestanden veel vaker wel dan niet een voorspelbare naam.
+En als bestandsnamen voorspelbaar zijn - oplopende nummers, gebruikers-ID's, originele bestandsnamen - kan de bucket worden afgelopen. Een aanvaller die één document op een te raden pad vindt, probeert de volgende honderd, en door AI gegenereerde uploadcode geeft bestanden veel vaker wel dan niet een voorspelbare naam.
 
 Voor een product dat iets verwerkt wat een persoon als privé zou beschouwen, is dit een datalek dat wacht tot iemand het opmerkt, met meldplichten eraan vast.
 
@@ -44,7 +44,7 @@ Niet alles hoeft te worden beschermd, en elk bestand als gevoelig behandelen maa
 
 Publieke buckets zijn juist voor werkelijk publieke bestanden: marketingafbeeldingen, logo's, publieke profielfoto's in een gids die zelf publiek is, downloadbare brochures. Alles wat een bezoeker toch al zou kunnen zien.
 
-De test is eenvoudig en de moeite waard om per bestand toe te passen. Als dit object in een zoekmachine verscheen, zou iemand het erg vinden? Is het antwoord nee, dan is publiek prima en eenvoudiger. Is het antwoord ja — zelfs een beetje — dan hoort het in een privébucket.
+De test is eenvoudig en de moeite waard om per bestand toe te passen. Als dit object in een zoekmachine verscheen, zou iemand het erg vinden? Is het antwoord nee, dan is publiek prima en eenvoudiger. Is het antwoord ja - zelfs een beetje - dan hoort het in een privébucket.
 
 De meeste producten eindigen met beide, en dat is de juiste uitkomst: een publieke bucket voor algemene bestanden en een privébucket voor alles wat gebruikers uploaden.
 
@@ -52,7 +52,7 @@ De meeste producten eindigen met beide, en dat is de juiste uitkomst: een publie
 
 Een privébucket weigert anonieme toegang. Bestanden worden op een van twee manieren bereikt, en daartussen kiezen is de belangrijkste ontwerpbeslissing.
 
-**Via de geauthenticeerde client**, waarbij de sessie van de gebruiker wordt gecontroleerd tegen opslagpolicies die u schrijft — hetzelfde soort voorwaarden als row-level security, maar toegepast op objectpaden. Dit past bij bestanden die binnen uw applicatie aan een ingelogde gebruiker worden getoond.
+**Via de geauthenticeerde client**, waarbij de sessie van de gebruiker wordt gecontroleerd tegen opslagpolicies die u schrijft - hetzelfde soort voorwaarden als row-level security, maar toegepast op objectpaden. Dit past bij bestanden die binnen uw applicatie aan een ingelogde gebruiker worden getoond.
 
 **Via een ondertekende URL (signed URL)**, een tijdelijk adres dat uw server genereert, dat voor een vastgestelde periode werkt en daarna verloopt. Dit past bij downloads, links in e-mails, en alles wat een browser direct moet ophalen, zoals een afbeeldingstag of een pdf-viewer.
 
@@ -62,9 +62,9 @@ Ondertekende URL's worden op de server gegenereerd, nooit in de browser, omdat e
 
 Opslagpolicies matchen op het pad van het object, waardoor de padindeling bepaalt of uw regels überhaupt uit te drukken zijn.
 
-Een goede standaard zet de eigenaar vooraan: `organisatie-id/gebruiker-id/document-id.pdf`. Een policy kan dan zeggen dat een gebruiker objecten mag lezen waarvan het eerste padsegment overeenkomt met een organisatie waartoe hij behoort — één regel voor elk bestand dat het product ooit zal opslaan.
+Een goede standaard zet de eigenaar vooraan: `organisatie-id/gebruiker-id/document-id.pdf`. Een policy kan dan zeggen dat een gebruiker objecten mag lezen waarvan het eerste padsegment overeenkomt met een organisatie waartoe hij behoort - één regel voor elk bestand dat het product ooit zal opslaan.
 
-De indeling die u moet vermijden, is een platte bucket met bestanden genoemd naar de originele upload, waardoor eigenaarschap niet uit het pad af te leiden is en elke controle een database-opzoeking wordt — als die al plaatsvindt.
+De indeling die u moet vermijden, is een platte bucket met bestanden genoemd naar de originele upload, waardoor eigenaarschap niet uit het pad af te leiden is en elke controle een database-opzoeking wordt - als die al plaatsvindt.
 
 Nog twee gewoontes. Genereer de bestandsnaam zelf in plaats van de naam te vertrouwen die de computer van de gebruiker aanleverde, omdat originele namen informatie lekken en omdat ze botsen. En houd per bestand een databaserij bij die vastlegt wie het uploadde, wanneer, het pad, de grootte en het contenttype, zodat de opslagbucket nooit uw enige registratie is van wat er bestaat.
 
@@ -80,7 +80,7 @@ Uploads op een apart domein opslaan in plaats van op het domein van uw applicati
 
 De migratie is overzichtelijk en de moeite waard om in één keer te doen, omdat de tussenstand slechter is dan beide uiteinden.
 
-Maak de privébucket aan met zijn policies. Kopieer de objecten over, herschrijf de paden onderweg naar de indeling met de eigenaar vooraan, en leg het nieuwe pad van elk bestand vast in uw database. Pas de applicatie aan om ondertekende URL's op te vragen in plaats van permanente op te slaan — dit is het deel dat de meeste code raakt, omdat permanente URL's meestal al in databasekolommen zijn opgeslagen en in verstuurde e-mails zijn opgenomen.
+Maak de privébucket aan met zijn policies. Kopieer de objecten over, herschrijf de paden onderweg naar de indeling met de eigenaar vooraan, en leg het nieuwe pad van elk bestand vast in uw database. Pas de applicatie aan om ondertekende URL's op te vragen in plaats van permanente op te slaan - dit is het deel dat de meeste code raakt, omdat permanente URL's meestal al in databasekolommen zijn opgeslagen en in verstuurde e-mails zijn opgenomen.
 
 Laat de oude bucket daarna een korte periode staan maar geblokkeerd, terwijl u kijkt of er nog iets naar vraagt, en verwijder hem daarna.
 
@@ -90,7 +90,7 @@ Wat u specifiek moet controleren: e-mails en geëxporteerde documenten met oude 
 
 Foto's en schermafbeeldingen vormen in de meeste producten het grootste deel van de uploads, en ze brengen twee problemen mee die documenten niet hebben.
 
-Het eerste is grootte. Een telefoonfoto is enkele megabytes, en een pagina die er veertig op miniatuurformaat toont terwijl de originelen worden gedownload, is traag voor de gebruiker en duur voor u. Genereer afgeleide versies — een miniatuur en een weergaveformaat — bij het uploaden, sla ze op naast het origineel, en serveer de kleinste die in de context past. Supabase kan afbeeldingen op verzoek omzetten, wat eenvoudiger is dan een eigen pipeline bouwen en voor de meeste producten volstaat.
+Het eerste is grootte. Een telefoonfoto is enkele megabytes, en een pagina die er veertig op miniatuurformaat toont terwijl de originelen worden gedownload, is traag voor de gebruiker en duur voor u. Genereer afgeleide versies - een miniatuur en een weergaveformaat - bij het uploaden, sla ze op naast het origineel, en serveer de kleinste die in de context past. Supabase kan afbeeldingen op verzoek omzetten, wat eenvoudiger is dan een eigen pipeline bouwen en voor de meeste producten volstaat.
 
 Het tweede is metadata. Foto's bevatten EXIF-gegevens, vaak inclusief de GPS-coördinaten van waar ze zijn genomen. Een product waarin gebruikers foto's uploaden van schade, vastgoed, apparatuur of zichzelf, is een product dat ongemerkt locatiegeschiedenis verzamelt. Verwijder EXIF bij het uploaden tenzij u een reden hebt om het te bewaren, en bewaart u het, zeg dat dan in uw privacyverklaring.
 
@@ -98,17 +98,17 @@ Nog een gewoonte die het overnemen waard is: vertrouw ook de afmetingen van een 
 
 ## Opslagkosten Groeien Stil
 
-Anders dan een database kondigt opslag zelden een probleem aan — het verschijnt gewoon op de factuur.
+Anders dan een database kondigt opslag zelden een probleem aan - het verschijnt gewoon op de factuur.
 
 Drie dingen drijven het in door AI gebouwde producten, en alle drie zijn te vermijden. Originelen die voor altijd worden bewaard terwijl alleen afgeleide versies ooit worden getoond. Wezen die achterblijven bij verwijderde records, uploads die halverwege een formulier zijn afgebroken, en duplicaten die ontstaan wanneer een gebruiker na een mislukking opnieuw uploadt. En egress, de kosten van het steeds opnieuw serveren van hetzelfde grote bestand omdat er niets in de cache staat.
 
-Een maandelijkse telling van objecten en totale bytes, vergeleken met het aantal bestanden dat uw database kent, vangt alle drie op. Lopen de twee getallen uiteen, dan hebt u wezen, en een opruimtaak die objecten zonder bijbehorende databaserij verwijdert — voorzichtig uitgevoerd, eerst als proefrun — levert meestal meer ruimte op dan oprichters verwachten.
+Een maandelijkse telling van objecten en totale bytes, vergeleken met het aantal bestanden dat uw database kent, vangt alle drie op. Lopen de twee getallen uiteen, dan hebt u wezen, en een opruimtaak die objecten zonder bijbehorende databaserij verwijdert - voorzichtig uitgevoerd, eerst als proefrun - levert meestal meer ruimte op dan oprichters verwachten.
 
 ## Dit Inrichten
 
 Voor een bestaande app kost dit doorgaans twee tot drie dagen: buckets gecontroleerd en ingedeeld, een privébucket aangemaakt met padgebaseerde policies, objecten gemigreerd naar een indeling met de eigenaar vooraan en een databaserij per bestand, ondertekende URL's op de server gegenereerd met verlooptijden passend bij het gebruik, uploadvalidatie op werkelijk contenttype en grootte, gegenereerde bestandsnamen, de applicatie aangepast zodat ze geen permanente URL's meer opslaat, oude publieke links opgespoord en buiten gebruik gesteld, en een controle dat het verwijderen van het record van een gebruiker ook zijn objecten verwijdert.
 
-LaunchStudio pakt dit aan in beveiligingswerk aan door AI gebouwde producten, waar het een van de meest voorkomende bevindingen is. De engineering komt van Manifera — elf jaar, 120+ engineers, en klanten als Vodafone, TNO en CFLW die bestandsafhandeling behoorlijk serieus nemen.
+LaunchStudio pakt dit aan in beveiligingswerk aan door AI gebouwde producten, waar het een van de meest voorkomende bevindingen is. De engineering komt van Manifera - elf jaar, 120+ engineers, en klanten als Vodafone, TNO en CFLW die bestandsafhandeling behoorlijk serieus nemen.
 
 [Vraag ons naar uw bucketinstellingen te kijken](https://launchstudio.eu/nl/#contact). Het kost tien minuten om te controleren en het is meestal het eerste waar we naar kijken.
 
@@ -116,7 +116,7 @@ LaunchStudio pakt dit aan in beveiligingswerk aan door AI gebouwde producten, wa
 
 ### Twaalfhonderd Documenten op het Open Internet
 
-Bram Nieuwenhuijs bouwde Hypotheekmap met Lovable: een tool waarmee hypotheekadviseurs documenten van klanten verzamelen — loonstroken, arbeidscontracten, bankafschriften, identiteitsbewijzen — en een compleet dossier aan de geldverstrekker doorgeven.
+Bram Nieuwenhuijs bouwde Hypotheekmap met Lovable: een tool waarmee hypotheekadviseurs documenten van klanten verzamelen - loonstroken, arbeidscontracten, bankafschriften, identiteitsbewijzen - en een compleet dossier aan de geldverstrekker doorgeven.
 
 Uploads gingen naar een publieke bucket, genoemd naar de achternaam van de klant en het documenttype. De applicatie werkte goed en 26 adviseurs gebruikten haar met zo'n 400 klanten.
 
@@ -126,16 +126,16 @@ Drie werkdagen: een privébucket met policies die matchen op het organisatiesegm
 
 **Resultaat:** het lek was binnen de week gedicht. Bram meldde het incident bij de Autoriteit Persoonsgegevens met een beschrijving van de oplossing, en informeerde de 26 adviseurs en de klanten van wie documenten bereikbaar waren geweest. Twee adviseurs zeiden dat de transparantie de reden was dat ze bleven.
 
-> *"Hij raadde één URL. Er kwam geen hacken aan te pas — mijn bestandsnaamgeving was de kwetsbaarheid, en ik had die gekozen omdat het beheerscherm er makkelijker door te lezen was."*
-> — **Bram Nieuwenhuijs, Oprichter, Hypotheekmap (Nieuwegein)**
+> *"Hij raadde één URL. Er kwam geen hacken aan te pas - mijn bestandsnaamgeving was de kwetsbaarheid, en ik had die gekozen omdat het beheerscherm er makkelijker door te lezen was."*
+> - **Bram Nieuwenhuijs, Oprichter, Hypotheekmap (Nieuwegein)**
 
-**Kosten & Doorlooptijd:** €3.300 (bucketmigratie en policyontwerp, herstructurering van paden, bestandsregister, ondertekende URL's op de server, uploadvalidatie, buiten gebruik stellen van links, afhandeling bij verwijderen, incidentdocumentatie) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.300 (bucketmigratie en policyontwerp, herstructurering van paden, bestandsregister, ondertekende URL's op de server, uploadvalidatie, buiten gebruik stellen van links, afhandeling bij verwijderen, incidentdocumentatie) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Betekent een publieke Supabase-bucket publiek voor mijn ingelogde gebruikers?
 
-Nee. Het betekent leesbaar voor iedereen op internet die de URL heeft — geen sessie, geen token, geen verloopdatum. Gebruik voor alles wat een gebruiker uploadt een privébucket.
+Nee. Het betekent leesbaar voor iedereen op internet die de URL heeft - geen sessie, geen token, geen verloopdatum. Gebruik voor alles wat een gebruiker uploadt een privébucket.
 
 ### Zijn ondertekende URL's veilig om naar klanten te mailen?
 
@@ -163,7 +163,7 @@ Niet tenzij u dat hebt gebouwd. Opslagobjecten en databaserijen zijn aparte syst
       "name": "Betekent een publieke Supabase-bucket publiek voor ingelogde gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — hij is leesbaar voor iedereen met de URL, zonder authenticatie of verloopdatum. Uploads van gebruikers horen in een privébucket."
+        "text": "Nee - hij is leesbaar voor iedereen met de URL, zonder authenticatie of verloopdatum. Uploads van gebruikers horen in een privébucket."
       }
     },
     {
@@ -187,7 +187,7 @@ Niet tenzij u dat hebt gebouwd. Opslagobjecten en databaserijen zijn aparte syst
       "name": "Moet ik de originele bestandsnaam van de gebruiker bewaren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Genereer uw eigen identificatie — originele namen lekken informatie, botsen en maken buckets af te lopen. Sla de weergavenaam op in de database."
+        "text": "Nee. Genereer uw eigen identificatie - originele namen lekken informatie, botsen en maken buckets af te lopen. Sla de weergavenaam op in de database."
       }
     },
     {

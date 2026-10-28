@@ -28,11 +28,11 @@ This isn't a trick question, and it doesn't require a computer science degree to
 
 ## "Which parts are actually AI, and which parts are just software?"
 
-This is the question that trips up the most founders, because it's the one non-technical founders are least prepared to separate. Investors have learned that "AI-powered" often means one small feature calling a model, wrapped in a much larger amount of completely conventional software — authentication, a database, a UI. They want to know the ratio, because it tells them what they're actually valuing: a genuine AI capability, or a normal product with an AI garnish.
+This is the question that trips up the most founders, because it's the one non-technical founders are least prepared to separate. Investors have learned that "AI-powered" often means one small feature calling a model, wrapped in a much larger amount of completely conventional software - authentication, a database, a UI. They want to know the ratio, because it tells them what they're actually valuing: a genuine AI capability, or a normal product with an AI garnish.
 
 ## "What happens if the model provider changes terms, pricing, or access?"
 
-Investors have seen enough AI-dependent products get destabilized by a provider's pricing change to ask this reflexively now. If you don't have an answer — a fallback plan, a cost ceiling, an alternate provider path — that's read as a single point of failure sitting in the middle of your business model.
+Investors have seen enough AI-dependent products get destabilized by a provider's pricing change to ask this reflexively now. If you don't have an answer - a fallback plan, a cost ceiling, an alternate provider path - that's read as a single point of failure sitting in the middle of your business model.
 
 ## "Who reviewed the security and data handling?"
 
@@ -42,21 +42,21 @@ AI coding tools generate working software fast, but "working" and "secure" are n
 
 This question is really about founder dependency versus tool dependency. Investors want reassurance that the product's value lives in your understanding of the problem and the architecture, not entirely inside a black box you can't independently explain or maintain.
 
-Lotte Jansen, a founder in Utrecht, ran straight into this wall. She built "GroeiMetric," an analytics dashboard, using Cursor, and had a promising first pitch meeting — until an investor asked her to explain the technical architecture and specify which parts of the product were genuinely "AI" versus custom logic. She didn't have a clean answer ready, and the meeting stalled on a question she'd never been asked to think through before.
+Lotte Jansen, a founder in Utrecht, ran straight into this wall. She built "GroeiMetric," an analytics dashboard, using Cursor, and had a promising first pitch meeting - until an investor asked her to explain the technical architecture and specify which parts of the product were genuinely "AI" versus custom logic. She didn't have a clean answer ready, and the meeting stalled on a question she'd never been asked to think through before.
 
-This is exactly the gap LaunchStudio exists to close before it costs a founder a round. Backed by Manifera — trusted by enterprise clients including Vodafone, TNO, and CFLW — our team, including engineers based in Singapore, works directly with non-technical founders to document architecture clearly enough to survive investor scrutiny, not just to pass a demo. You can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) if you have a pitch coming up and want your architecture story straight before you're in the room. For the standard our engineers hold client work to, see [Manifera's approach to the business](https://www.manifera.com/about-us/).
+This is exactly the gap LaunchStudio exists to close before it costs a founder a round. Backed by Manifera - trusted by enterprise clients including Vodafone, TNO, and CFLW - our team, including engineers based in Singapore, works directly with non-technical founders to document architecture clearly enough to survive investor scrutiny, not just to pass a demo. You can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) if you have a pitch coming up and want your architecture story straight before you're in the room. For the standard our engineers hold client work to, see [Manifera's approach to the business](https://www.manifera.com/about-us/).
 
 ## Building Your One-Page Architecture Answer Before You Walk In
 
-The six questions above tell you what's coming. This is about how to actually prepare an answer, in advance, that holds up under a follow-up question rather than falling apart the way an unprepared answer tends to. You don't need a formal document — a single page, in your own words, covering five things.
+The six questions above tell you what's coming. This is about how to actually prepare an answer, in advance, that holds up under a follow-up question rather than falling apart the way an unprepared answer tends to. You don't need a formal document - a single page, in your own words, covering five things.
 
-**A simple diagram, even a hand-drawn one.** Boxes for frontend, backend, database, and any third-party services (payment processor, model provider, email service), with arrows showing what talks to what. This doesn't need to be technically precise — it needs to exist, and you need to be able to point at it while you talk, because an investor watching you gesture at a real diagram reads very differently than an investor watching you describe an architecture from memory with visible uncertainty.
+**A simple diagram, even a hand-drawn one.** Boxes for frontend, backend, database, and any third-party services (payment processor, model provider, email service), with arrows showing what talks to what. This doesn't need to be technically precise - it needs to exist, and you need to be able to point at it while you talk, because an investor watching you gesture at a real diagram reads very differently than an investor watching you describe an architecture from memory with visible uncertainty.
 
-**A one-sentence answer to "what's actually AI here."** Practice saying, specifically, which feature calls a model and what it does with the result — not "the whole thing is AI-powered," which investors have learned to hear as a dodge. If the honest answer is "one feature makes a model call, and everything else is conventional software," that's a perfectly fine answer to give directly, and it reads as more credible than an evasive one.
+**A one-sentence answer to "what's actually AI here."** Practice saying, specifically, which feature calls a model and what it does with the result - not "the whole thing is AI-powered," which investors have learned to hear as a dodge. If the honest answer is "one feature makes a model call, and everything else is conventional software," that's a perfectly fine answer to give directly, and it reads as more credible than an evasive one.
 
-**Your actual answer to the provider-dependency question, written down.** Don't wing this one live. Know, in advance, what happens if your model provider's pricing changes or access is throttled — even if the honest current answer is "we don't have a fallback yet, and it's the next thing on our roadmap." An honest gap with a plan reads better than a confident answer that falls apart under one follow-up question.
+**Your actual answer to the provider-dependency question, written down.** Don't wing this one live. Know, in advance, what happens if your model provider's pricing changes or access is throttled - even if the honest current answer is "we don't have a fallback yet, and it's the next thing on our roadmap." An honest gap with a plan reads better than a confident answer that falls apart under one follow-up question.
 
-**A one-line summary of your last security or architecture review, if you've had one.** If nobody has looked at your codebase professionally yet, say so plainly and name when you plan to have that done — investors read proactive awareness of a gap very differently than a gap they have to surface themselves.
+**A one-line summary of your last security or architecture review, if you've had one.** If nobody has looked at your codebase professionally yet, say so plainly and name when you plan to have that done - investors read proactive awareness of a gap very differently than a gap they have to surface themselves.
 
 **Practice the "could you rebuild this without the tool" question out loud, once, before the meeting.** This is the question that most often catches founders flat-footed, not because the honest answer is bad, but because they've never said it out loud before. Saying it once, to yourself or a friend, before it's asked by someone with a term sheet on the table, changes how steady you sound when it actually comes up.
 
@@ -66,18 +66,18 @@ None of this requires becoming technical between now and your next pitch meeting
 
 ### An AI-Native Founder in Action: The Question That Stalled Lotte's Pitch
 
-Lotte Jansen had built GroeiMetric to genuinely solve a problem — Dutch SMEs needed a simpler way to track growth metrics without hiring a data analyst. Cursor let her move fast, and by the time she was pitching investors, the product looked polished, worked reliably in demos, and had a handful of paying pilot customers. She felt ready.
+Lotte Jansen had built GroeiMetric to genuinely solve a problem - Dutch SMEs needed a simpler way to track growth metrics without hiring a data analyst. Cursor let her move fast, and by the time she was pitching investors, the product looked polished, worked reliably in demos, and had a handful of paying pilot customers. She felt ready.
 
-The meeting went well until an investor, mid-conversation, asked her to walk through the technical architecture: what was the data pipeline, where did the "AI" actually sit in the stack, and what was custom-built versus generated by the tool. Lotte realized she'd never had to separate those pieces in her own head — Cursor had built the whole thing as one continuous flow, and she'd been focused on the product experience, not the underlying map. She gave a vague answer, the investor's questions kept probing, and the meeting ended with a polite "let's follow up" that never quite turned into a term sheet.
+The meeting went well until an investor, mid-conversation, asked her to walk through the technical architecture: what was the data pipeline, where did the "AI" actually sit in the stack, and what was custom-built versus generated by the tool. Lotte realized she'd never had to separate those pieces in her own head - Cursor had built the whole thing as one continuous flow, and she'd been focused on the product experience, not the underlying map. She gave a vague answer, the investor's questions kept probing, and the meeting ended with a polite "let's follow up" that never quite turned into a term sheet.
 
 Lotte brought GroeiMetric to LaunchStudio afterward, not for a rebuild, but for exactly this: a clear architecture review and documentation she could actually explain in her own words in the next meeting. Engineers mapped the system, labeled what was genuinely AI-driven versus standard application logic, flagged a couple of security gaps along the way, and produced a plain-language architecture summary Lotte could speak to confidently.
 
-**Result:** Lotte's next investor conversation included the same architecture question — this time she answered it in under two minutes, without notes.
+**Result:** Lotte's next investor conversation included the same architecture question - this time she answered it in under two minutes, without notes.
 
 > *"I didn't need to become an engineer. I needed someone to hand me the map of what I'd already built."*
-> — **Lotte Jansen, Founder, GroeiMetric (Utrecht)**
+> - **Lotte Jansen, Founder, GroeiMetric (Utrecht)**
 
-**Cost & Timeline:** €900 (architecture review and founder-facing documentation) — completed in 3 business days.
+**Cost & Timeline:** €900 (architecture review and founder-facing documentation) - completed in 3 business days.
 
 ---
 
@@ -97,7 +97,7 @@ Manifera's engineers, including the Singapore-based team, review the architectur
 
 ### Should I mention security gaps to investors before they ask?
 
-Generally yes — proactively naming a known gap and your plan to fix it reads far better than being caught unprepared when an investor asks directly.
+Generally yes - proactively naming a known gap and your plan to fix it reads far better than being caught unprepared when an investor asks directly.
 
 ### Can this kind of review happen quickly before a pitch deadline?
 

@@ -1,4 +1,4 @@
-🚨 Ravi Mehta built Vintagehoek in Lovable: a marketplace for second-hand furniture in Haarlem. Sellers took photos at home and listed items. But an audit revealed uploaded images retained unstripped EXIF metadata — exposing sellers' private home GPS coordinates — while uncompressed 8MB smartphone photos exhausted cloud bandwidth and crashed mobile browsers. 😳
+🚨 Ravi Mehta built Vintagehoek in Lovable: a marketplace for second-hand furniture in Haarlem. Sellers took photos at home and listed items. But an audit revealed uploaded images retained unstripped EXIF metadata - exposing sellers' private home GPS coordinates - while uncompressed 8MB smartphone photos exhausted cloud bandwidth and crashed mobile browsers. 😳
 
 File uploads are the single most dangerous vector for security breaches and storage cost spikes. Here is the production upload standard: 🧠
 

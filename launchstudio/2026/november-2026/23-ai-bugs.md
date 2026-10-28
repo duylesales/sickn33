@@ -35,7 +35,7 @@ In traditional software engineering, a bug is deterministic. If a user clicks a 
 
 AI bugs are fundamentally different. They do not crash your application. They do not throw exceptions. Instead, they confidently return perfectly formatted JSON containing fabricated information. They are non-deterministic: the exact same prompt from the exact same user might yield a correct answer at 9:00 AM and a catastrophic hallucination at 9:05 AM.
 
-When founders build prototypes using AI coding tools, they focus on the "happy path" where the Language Model (LLM) behaves perfectly. But when moving to production, managing AI bugs—specifically hallucinations, prompt injections, and contextual drift—becomes the defining engineering challenge of the application.
+When founders build prototypes using AI coding tools, they focus on the "happy path" where the Language Model (LLM) behaves perfectly. But when moving to production, managing AI bugs - specifically hallucinations, prompt injections, and contextual drift - becomes the defining engineering challenge of the application.
 
 ## The Three Categories of Production AI Bugs
 
@@ -101,9 +101,9 @@ Within 14 business days, LaunchStudio rebuilt Kevin's backend. They implemented 
 **Result:** The hallucinations stopped completely. ComplianceCheck's accuracy skyrocketed. Because the system was now architecturally sound rather than just "prompted well," Kevin was able to sell the software to a mid-sized accounting firm in Rotterdam. The SaaS now generates €3,200 in MRR.
 
 > *"I thought fixing an AI bug meant writing a better prompt. LaunchStudio taught me that fixing an AI bug means building a better architecture. They gave me a system that actually catches the AI when it lies."*
-> — **Kevin de Boer, Founder, ComplianceCheck (Amsterdam)**
+> - **Kevin de Boer, Founder, ComplianceCheck (Amsterdam)**
 
-**Cost & Timeline:** €5,500 (Launch & Grow Package with AI Pipeline Hardening) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €5,500 (Launch & Grow Package with AI Pipeline Hardening) - production-ready and deployed in 14 business days.
 
 ---
 

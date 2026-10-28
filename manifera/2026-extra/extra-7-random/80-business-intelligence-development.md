@@ -20,7 +20,7 @@ target_persona: "CEO"
 }
 </script>
 
-A CEO who commissions a company-wide BI dashboard rollout, attends the enthusiastic launch demo, and then checks usage analytics six months later frequently finds a handful of people still logging in regularly — usually the same analysts who would have pulled the numbers manually anyway — while the executives and department heads the dashboards were actually built for quietly went back to requesting one-off spreadsheets from those same analysts.
+A CEO who commissions a company-wide BI dashboard rollout, attends the enthusiastic launch demo, and then checks usage analytics six months later frequently finds a handful of people still logging in regularly - usually the same analysts who would have pulled the numbers manually anyway - while the executives and department heads the dashboards were actually built for quietly went back to requesting one-off spreadsheets from those same analysts.
 
 **The Pain:** A CEO investing in business intelligence development typically measures success by whether the dashboards get built and launched, rather than by whether they actually change how decisions get made across the organization months later, and the gap between "the dashboard exists" and "the dashboard is load-bearing in someone's actual weekly decision process" is where most BI investment quietly fails without anyone formally declaring the project a failure.
 
@@ -28,15 +28,15 @@ A CEO who commissions a company-wide BI dashboard rollout, attends the enthusias
 
 ## What Separates a BI Dashboard That Gets Used From One That Doesn't
 
-**It answers a specific recurring decision, not a general curiosity.** Dashboards built around "let's give people visibility into the business" tend to sprawl into dozens of charts that answer no question in particular, while dashboards built around a specific recurring decision — "should we reorder this SKU this week," "which accounts are at renewal risk this month" — get opened because they're load-bearing in a decision someone actually has to make on a schedule. The design starting point should be the decision, not the available data.
+**It answers a specific recurring decision, not a general curiosity.** Dashboards built around "let's give people visibility into the business" tend to sprawl into dozens of charts that answer no question in particular, while dashboards built around a specific recurring decision - "should we reorder this SKU this week," "which accounts are at renewal risk this month" - get opened because they're load-bearing in a decision someone actually has to make on a schedule. The design starting point should be the decision, not the available data.
 
 **It's built for the actual decision-maker's context, not the analyst's.** A dashboard designed by and for analysts tends to expose raw filterable detail because that's what an analyst wants; a department head making a fast go/no-go call wants a small number of clearly flagged exceptions, not a filterable table they have to interrogate. Business intelligence development that doesn't distinguish between these audiences produces a tool the analyst loves and everyone else ignores.
 
-**Trust in the number is established before the dashboard ships, not after.** A dashboard that shows a number contradicting what a VP already believes to be true, even once, tends to lose that VP's trust permanently, regardless of which number was actually correct — and re-earning that trust is far harder than establishing it upfront through a reconciliation process where stakeholders confirm the dashboard's numbers against their own trusted sources before go-live.
+**Trust in the number is established before the dashboard ships, not after.** A dashboard that shows a number contradicting what a VP already believes to be true, even once, tends to lose that VP's trust permanently, regardless of which number was actually correct - and re-earning that trust is far harder than establishing it upfront through a reconciliation process where stakeholders confirm the dashboard's numbers against their own trusted sources before go-live.
 
-**Refresh latency needs to match the decision cadence, not the technical default.** A dashboard reporting yesterday's data is useless for an operational decision that needs to happen within the hour, and a dashboard refreshing every five minutes is unnecessary infrastructure cost for a decision made once a quarter — matching refresh latency to the actual decision cadence is a design decision, not just a technical setting, and getting it wrong either frustrates users or wastes engineering effort.
+**Refresh latency needs to match the decision cadence, not the technical default.** A dashboard reporting yesterday's data is useless for an operational decision that needs to happen within the hour, and a dashboard refreshing every five minutes is unnecessary infrastructure cost for a decision made once a quarter - matching refresh latency to the actual decision cadence is a design decision, not just a technical setting, and getting it wrong either frustrates users or wastes engineering effort.
 
-**Ownership and iteration continue after launch.** The dashboards that stay in use are the ones with a named owner who reviews usage data, retires unused views, and updates the dashboard as the underlying business questions evolve — treating BI development as a one-time delivery rather than an owned, iterating product is the single most common reason usage decays within months of a well-attended launch.
+**Ownership and iteration continue after launch.** The dashboards that stay in use are the ones with a named owner who reviews usage data, retires unused views, and updates the dashboard as the underlying business questions evolve - treating BI development as a one-time delivery rather than an owned, iterating product is the single most common reason usage decays within months of a well-attended launch.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -51,10 +51,10 @@ This is Dutch Management × Vietnamese Mastery: European discipline in designing
 
 Nordisk Indsigt ApS, an Aarhus-based retail chain, had commissioned a comprehensive BI rollout covering sales, inventory, and marketing performance across forty dashboards, only to find a year later that usage had concentrated on three of them while the rest sat effectively unused, each built around general departmental visibility rather than a specific recurring decision anyone actually needed to make.
 
-Manifera audited actual usage against the original decision each dashboard was meant to serve, retired the unused majority, and rebuilt a small set of dashboards explicitly around the CEO's and department heads' actual weekly decisions — reorder timing, at-risk accounts, and campaign spend reallocation — with a reconciliation process run before launch to establish trust in the numbers upfront. Usage across the rebuilt set has held steady well past the original launch honeymoon period.
+Manifera audited actual usage against the original decision each dashboard was meant to serve, retired the unused majority, and rebuilt a small set of dashboards explicitly around the CEO's and department heads' actual weekly decisions - reorder timing, at-risk accounts, and campaign spend reallocation - with a reconciliation process run before launch to establish trust in the numbers upfront. Usage across the rebuilt set has held steady well past the original launch honeymoon period.
 
 > *"We had forty dashboards and three that anyone actually opened after the first month. The lesson wasn't that we needed better dashboards, it was that thirty-seven of them were never answering a real question anyone had to act on."*
-> — **CEO, Nordisk Indsigt ApS, Denmark**
+> - **CEO, Nordisk Indsigt ApS, Denmark**
 
 ## Broad Dashboard Rollouts vs. Manifera's Decision-Anchored BI
 
@@ -78,7 +78,7 @@ Because most are built around general visibility rather than a specific recurrin
 
 ### (Scenario: CEO deciding how to scope a new BI initiative) Should a BI initiative start with the available data or with the decisions it needs to support?
 
-It should start with the decisions — identifying the specific recurring choices dashboards need to inform, then building around those, produces dashboards people actually need to consult on a schedule.
+It should start with the decisions - identifying the specific recurring choices dashboards need to inform, then building around those, produces dashboards people actually need to consult on a schedule.
 
 ### (Scenario: CEO whose executives stopped trusting a dashboard after one bad number) How does a company build trust in a dashboard's numbers before it launches?
 
@@ -86,7 +86,7 @@ Through a reconciliation process where stakeholders confirm the dashboard's figu
 
 ### (Scenario: CEO unsure how often a dashboard should refresh) How should refresh latency be decided for a given dashboard?
 
-By matching it to the actual cadence of the decision the dashboard supports — an hourly operational decision needs near-real-time data, while a quarterly strategic decision doesn't need minute-by-minute refresh.
+By matching it to the actual cadence of the decision the dashboard supports - an hourly operational decision needs near-real-time data, while a quarterly strategic decision doesn't need minute-by-minute refresh.
 
 ### (Scenario: CEO who considers BI development a one-time project) Why does BI development need continued ownership after the initial launch?
 

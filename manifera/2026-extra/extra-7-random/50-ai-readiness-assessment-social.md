@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Three Real Readiness Questions:** Data accessibility, data quality, and organizational data discipline.
 ✅ **Amsterdam Strategic Governance:** Assessments weighted toward the constraint that actually predicts success.
-✅ **Vietnam Execution Velocity:** Hands-on examination of real data samples — not optimistic assumptions.
+✅ **Vietnam Execution Velocity:** Hands-on examination of real data samples - not optimistic assumptions.
 
 Our first assessment checked all the infrastructure boxes and told us we were ready. We were ready on paper and nowhere close in practice. 🛡️
 

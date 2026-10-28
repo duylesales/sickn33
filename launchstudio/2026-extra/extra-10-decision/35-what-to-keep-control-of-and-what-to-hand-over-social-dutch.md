@@ -19,7 +19,7 @@ Wat u gerust kunt delegeren:
 ✅ Foutmonitoring (Sentry) en logs
 ✅ Sandbox/test API-sleutels
 
-Gebruik Role-Based Access Control: geef developers gerichte rechten (developer-rol) binnen úw accounts — maak ze nooit eigenaar.
+Gebruik Role-Based Access Control: geef developers gerichte rechten (developer-rol) binnen úw accounts - maak ze nooit eigenaar.
 
 Bij **LaunchStudio**, ondersteund door Manifera, garanderen we dat alle intellectuele eigendom en cloudaccounts 100% in uw beheer blijven.
 

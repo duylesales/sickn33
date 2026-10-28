@@ -20,17 +20,17 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-Most guides on how to make an AI product focus entirely on the frontend — the part you can screenshot and post. That's backwards for a surprising number of founders in Den Haag, where the products being built often serve government-adjacent, legal, and international-organization clients whose actual requirements live in the backend: data integrity, access control, and audit trails that never show up in a demo video.
+Most guides on how to make an AI product focus entirely on the frontend - the part you can screenshot and post. That's backwards for a surprising number of founders in Den Haag, where the products being built often serve government-adjacent, legal, and international-organization clients whose actual requirements live in the backend: data integrity, access control, and audit trails that never show up in a demo video.
 
 ## The Part Nobody Shows When They Explain How to Make an AI Product
 
-Ask most people how to make an AI product today and the answer starts and ends with a prompt: describe the app, watch a tool like Cursor or Lovable generate it, ship it. That's true as far as it goes, but it skips the part where the product actually has to hold up — a database schema that doesn't corrupt data as the product grows, an API that doesn't buckle when more than one client calls it at once, and authentication that actually stops unauthorized access rather than just looking like it does in the demo.
+Ask most people how to make an AI product today and the answer starts and ends with a prompt: describe the app, watch a tool like Cursor or Lovable generate it, ship it. That's true as far as it goes, but it skips the part where the product actually has to hold up - a database schema that doesn't corrupt data as the product grows, an API that doesn't buckle when more than one client calls it at once, and authentication that actually stops unauthorized access rather than just looking like it does in the demo.
 
-This isn't a criticism of the tools themselves. Cursor and Lovable are genuinely good at what they're built for: translating a description into working software fast. The mismatch happens when a founder assumes that "working" and "ready for an institutional client's due diligence process" are the same bar, because in a fast demo they can look identical. They diverge sharply the moment a real reviewer — a procurement officer, a legal team's technical advisor — starts asking specific questions the interface was never designed to answer.
+This isn't a criticism of the tools themselves. Cursor and Lovable are genuinely good at what they're built for: translating a description into working software fast. The mismatch happens when a founder assumes that "working" and "ready for an institutional client's due diligence process" are the same bar, because in a fast demo they can look identical. They diverge sharply the moment a real reviewer - a procurement officer, a legal team's technical advisor - starts asking specific questions the interface was never designed to answer.
 
-Den Haag has a founder profile that's genuinely distinct within Zuid-Holland: as the seat of the Dutch government, home to the International Criminal Court, the OPCW, and a dense concentration of embassies, NGOs, and legal and policy consultancies, the city produces a disproportionate number of founders building tools for governance, compliance, and legal-adjacent workflows. Those products live or die on backend correctness — data integrity, permission structures, audit logging — far more than they live or die on visual polish.
+Den Haag has a founder profile that's genuinely distinct within Zuid-Holland: as the seat of the Dutch government, home to the International Criminal Court, the OPCW, and a dense concentration of embassies, NGOs, and legal and policy consultancies, the city produces a disproportionate number of founders building tools for governance, compliance, and legal-adjacent workflows. Those products live or die on backend correctness - data integrity, permission structures, audit logging - far more than they live or die on visual polish.
 
-Compare that to a typical Amsterdam or Rotterdam consumer product, where a slick interface and fast onboarding often matter as much as, or more than, backend rigor for early traction. A Den Haag founder building for an NGO or a legal consultancy doesn't get that trade-off. The buyer isn't evaluating whether the product feels nice to use in a five-minute demo — they're evaluating whether it will survive their own organization's technical and legal scrutiny months later, often against a formal checklist their IT or compliance team maintains independently of the sales conversation.
+Compare that to a typical Amsterdam or Rotterdam consumer product, where a slick interface and fast onboarding often matter as much as, or more than, backend rigor for early traction. A Den Haag founder building for an NGO or a legal consultancy doesn't get that trade-off. The buyer isn't evaluating whether the product feels nice to use in a five-minute demo - they're evaluating whether it will survive their own organization's technical and legal scrutiny months later, often against a formal checklist their IT or compliance team maintains independently of the sales conversation.
 
 ## A Practical Approach to Making an AI Product That Doesn't Stall at the Backend
 
@@ -39,9 +39,9 @@ Compare that to a typical Amsterdam or Rotterdam consumer product, where a slick
 3. **Add authentication middleware deliberately, not implicitly.** "The login screen works" is not the same as "every backend route properly checks who's making the request."
 4. **Get someone who reads backend code, not just frontend demos, to review it.** This is the step most non-technical founders skip entirely, simply because it's invisible in a walkthrough.
 
-This is the exact gap LaunchStudio fills. LaunchStudio is powered by Manifera, a software development company operating from Herengracht 420 in Amsterdam among other locations, with 160+ delivered projects across enterprise clients that depend heavily on backend correctness — including TNO, a Dutch research organization with rigorous technical standards. Manifera's [portfolio](https://www.manifera.com/portfolio/) reflects that same standard applied to founder-scale products.
+This is the exact gap LaunchStudio fills. LaunchStudio is powered by Manifera, a software development company operating from Herengracht 420 in Amsterdam among other locations, with 160+ delivered projects across enterprise clients that depend heavily on backend correctness - including TNO, a Dutch research organization with rigorous technical standards. Manifera's [portfolio](https://www.manifera.com/portfolio/) reflects that same standard applied to founder-scale products.
 
-If you're a Den Haag founder trying to figure out whether your product's backend can actually support real clients — especially government, legal, or institutional ones — LaunchStudio's [calculator](https://launchstudio.eu/en/#calculator) is a fast way to scope what a proper backend pass would cost before committing.
+If you're a Den Haag founder trying to figure out whether your product's backend can actually support real clients - especially government, legal, or institutional ones - LaunchStudio's [calculator](https://launchstudio.eu/en/#calculator) is a fast way to scope what a proper backend pass would cost before committing.
 
 ## Why This Matters More in Den Haag Specifically
 
@@ -53,7 +53,7 @@ LaunchStudio has now seen this pattern repeat enough times across Den Haag's ins
 
 **No audit trail, or a partial one**
 
-A "who did what, when" log is one of the first things a legal or institutional IT reviewer asks about, and most AI-generated backends have nothing resembling it by default. Adding it after the fact is possible, but retroactively logging actions means you have no history before that point — a gap that's hard to explain credibly during a review.
+A "who did what, when" log is one of the first things a legal or institutional IT reviewer asks about, and most AI-generated backends have nothing resembling it by default. Adding it after the fact is possible, but retroactively logging actions means you have no history before that point - a gap that's hard to explain credibly during a review.
 
 **Rate limiting treated as optional**
 
@@ -61,7 +61,7 @@ An API with no rate limiting isn't just a performance risk; to a security-consci
 
 **Data stored without encryption at rest**
 
-Especially relevant for legal documents, case files, or anything touching identifiable individuals. A database breach — even a minor, contained one — becomes a much bigger story when the underlying data was sitting in plain text the whole time.
+Especially relevant for legal documents, case files, or anything touching identifiable individuals. A database breach - even a minor, contained one - becomes a much bigger story when the underlying data was sitting in plain text the whole time.
 
 **Weak or missing input validation on API endpoints**
 
@@ -69,7 +69,7 @@ AI-generated backends often trust that data arriving at an endpoint looks the wa
 
 **No documented data retention or deletion policy**
 
-Government and legal clients frequently need to know exactly how long data is kept and how it's deleted on request. "We haven't thought about that yet" is a common, honest answer from AI-native founders — and a disqualifying one during a formal procurement review.
+Government and legal clients frequently need to know exactly how long data is kept and how it's deleted on request. "We haven't thought about that yet" is a common, honest answer from AI-native founders - and a disqualifying one during a formal procurement review.
 
 Catching these before a pilot begins, rather than during it, is the difference between a stalled evaluation and a signed reference client. In an institutional market as networked as Den Haag's, that first reference client also tends to open doors to the next one, which makes getting the backend right upfront worth far more than the engineering hours it costs.
 
@@ -79,20 +79,20 @@ Catching these before a pilot begins, rather than during it, is the difference b
 
 Nina de Groot, a former policy analyst in Den Haag, built PolicyPilot, a document review tool aimed at NGOs and legal consultancies for tracking regulatory changes and flagging compliance risks in contracts. She built it in Cursor and had it working well enough to pilot with two small legal consultancies near the city center.
 
-During the pilot, one consultancy's IT team ran a basic security check as part of their own vendor process and found that PolicyPilot's API had no rate limiting or request authentication on several endpoints — meaning anyone who found the right URL pattern could pull data without logging in at all. The database schema also stored client documents without any encryption at rest, a serious issue for firms handling confidential legal material.
+During the pilot, one consultancy's IT team ran a basic security check as part of their own vendor process and found that PolicyPilot's API had no rate limiting or request authentication on several endpoints - meaning anyone who found the right URL pattern could pull data without logging in at all. The database schema also stored client documents without any encryption at rest, a serious issue for firms handling confidential legal material.
 
-**Result:** LaunchStudio added authentication middleware across all API routes, implemented rate limiting, and encrypted document storage at rest — after which the same IT team signed off on PolicyPilot for full deployment.
+**Result:** LaunchStudio added authentication middleware across all API routes, implemented rate limiting, and encrypted document storage at rest - after which the same IT team signed off on PolicyPilot for full deployment.
 
 > *"I'd built something that looked ready for legal clients. It took their IT team about ten minutes to find out it wasn't."*
-> — **Nina de Groot, Founder, PolicyPilot (Den Haag)**
+> - **Nina de Groot, Founder, PolicyPilot (Den Haag)**
 
-**Cost & Timeline:** €1,750 (API authentication, rate limiting, encryption at rest) — completed in 7 business days.
+**Cost & Timeline:** €1,750 (API authentication, rate limiting, encryption at rest) - completed in 7 business days.
 
 ---
 
 ## Frequently Asked Questions
 
-### I have no engineering background — can I still make an AI product with a solid backend?
+### I have no engineering background - can I still make an AI product with a solid backend?
 Yes. You don't need to build the backend hardening yourself. LaunchStudio's engineers add authentication, data integrity, and security to what you've already built in tools like Cursor or Lovable.
 
 ### Why do government-adjacent clients in Den Haag care so much about backend details?
@@ -105,18 +105,18 @@ No, that's simply a common pattern given Den Haag's institutional character. Lau
 Manifera has delivered projects for TNO, a major Dutch research and technology organization, among other enterprise clients, which shapes the rigor applied to backend architecture across all Manifera and LaunchStudio work.
 
 ### How do I find out if my product's backend has gaps like Nina's?
-Describe what you're building — LaunchStudio typically responds within a business day with an initial read on where your backend likely needs work.
+Describe what you're building - LaunchStudio typically responds within a business day with an initial read on where your backend likely needs work.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "I have no engineering background — can I still make an AI product with a solid backend?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LaunchStudio's engineers add authentication, data integrity, and security to what you've already built in tools like Cursor or Lovable, without requiring you to code." } },
+    { "@type": "Question", "name": "I have no engineering background - can I still make an AI product with a solid backend?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LaunchStudio's engineers add authentication, data integrity, and security to what you've already built in tools like Cursor or Lovable, without requiring you to code." } },
     { "@type": "Question", "name": "Why do government-adjacent clients in Den Haag care so much about backend details?", "acceptedAnswer": { "@type": "Answer", "text": "Institutions and legal organizations run procurement processes with specific security requirements and often have technical staff who verify vendor claims." } },
     { "@type": "Question", "name": "Does LaunchStudio only work with govtech or legal-tech founders in Den Haag?", "acceptedAnswer": { "@type": "Answer", "text": "No, that pattern reflects Den Haag's institutional character. LaunchStudio works with founders across all sectors and cities in the Netherlands and Benelux." } },
     { "@type": "Question", "name": "What's Manifera's connection to organizations like TNO?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera has delivered projects for TNO among other enterprise clients, which shapes the rigor applied to backend architecture across all its work." } },
-    { "@type": "Question", "name": "How do I find out if my product's backend has gaps like Nina's?", "acceptedAnswer": { "@type": "Answer", "text": "Describe what you're building to LaunchStudio — they typically respond within a business day with an initial read on where your backend needs work." } }
+    { "@type": "Question", "name": "How do I find out if my product's backend has gaps like Nina's?", "acceptedAnswer": { "@type": "Answer", "text": "Describe what you're building to LaunchStudio - they typically respond within a business day with an initial read on where your backend needs work." } }
   ]
 }
 </script>

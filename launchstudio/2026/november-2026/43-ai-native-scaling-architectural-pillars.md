@@ -92,9 +92,9 @@ LaunchStudio's backend intent-router triggered a sequence of Autonomous Agents.
 **Result:** Jens's AI Native ERP, "SupplyMind," was a revelation. Warehouse staff required zero training to use it because the software adapted to their natural language rather than forcing them to adapt to its menus. Jens secured a €2.5M Seed round, with investors specifically citing the true AI Native architecture as a massive competitive moat against legacy ERP giants.
 
 > *"I thought 'AI Native' just meant the app used OpenAI heavily. LaunchStudio showed me it means the entire concept of menus and buttons is obsolete. They built an architecture where the software actively collaborates with the user, rather than just waiting to be clicked. That is the future of SaaS."*
-> — **Jens Fischer, Founder, SupplyMind (Hamburg)**
+> - **Jens Fischer, Founder, SupplyMind (Hamburg)**
 
-**Cost & Timeline:** €16,000 (Launch & Grow Package with Agentic Architecture Add-on) — production-ready and deployed in 20 business days.
+**Cost & Timeline:** €16,000 (Launch & Grow Package with Agentic Architecture Add-on) - production-ready and deployed in 20 business days.
 
 ---
 

@@ -1,6 +1,6 @@
 🧑‍🏫 Ingrid gave two advisors equity for guidance. Two months later, her app still had unenabled security and no verified payment flow. 🧠
 
-A technical advisory board is genuinely valuable — for strategic direction. It's structurally the wrong tool for an urgent, defined, hands-on implementation gap.
+A technical advisory board is genuinely valuable - for strategic direction. It's structurally the wrong tool for an urgent, defined, hands-on implementation gap.
 
 ❌ Part-time, periodic guidance when you actually need dedicated execution
 ❌ One advisor's expertise stretched across security, payments, infrastructure, and architecture

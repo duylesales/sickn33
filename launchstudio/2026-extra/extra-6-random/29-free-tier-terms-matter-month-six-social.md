@@ -1,4 +1,4 @@
-⏰ Loes Peters, founder of PlanStroom, an appointment scheduling app in Spijkenisse built with Lovable, had built the entire product on a free-tier AI model API from day one. It made sense during development — usage was light and there was no reason to think about it further. 😳
+⏰ Loes Peters, founder of PlanStroom, an appointment scheduling app in Spijkenisse built with Lovable, had built the entire product on a free-tier AI model API from day one. It made sense during development - usage was light and there was no reason to think about it further. 😳
 
 Then launch week arrived, and the free tier had other plans. 🧠
 

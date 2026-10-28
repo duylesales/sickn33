@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-De meest kostbare zin in een Replit-project luidt: "Gisteren werkte het nog perfect." Meestal betekent dit dat gegevens werden weggeschreven naar een plek die aanvoelde als permanente opslag, maar dat in werkelijkheid niet was — een lokaal JSON-bestand naast de applicatiecode, een interne SQLite-database binnen de container, of een geheugenstructuur (in-memory) die exact even lang leefde als het actieve serverproces.
+De meest kostbare zin in een Replit-project luidt: "Gisteren werkte het nog perfect." Meestal betekent dit dat gegevens werden weggeschreven naar een plek die aanvoelde als permanente opslag, maar dat in werkelijkheid niet was - een lokaal JSON-bestand naast de applicatiecode, een interne SQLite-database binnen de container, of een geheugenstructuur (in-memory) die exact even lang leefde als het actieve serverproces.
 
 En dan gebeurt er iets triviaals: een herstart. Een nieuwe deployment, gepland platformonderhoud van de hostingprovider, een geheugencrash of een minieme aanpassing in de run-configuratie. De applicatie start razendsnel en vlekkeloos opnieuw op, maar de data is verdwenen. En het verlies is volkomen geruisloos: geen foutmelding, geen alarmbel, simpelweg een softwareproduct dat alles is vergeten wat gebruikers sinds de vorige release hebben ingevoerd.
 
@@ -30,7 +30,7 @@ Het koppelen van een externe, beheerde database (zoals Supabase) is de enige str
 
 Drie patronen duiken keer op keer op in Replit-projecten, en alle drie falen ze op exact dezelfde manier:
 
-**Bestanden weggeschreven naast de code.** Uploads van gebruikers, gegenereerde PDF's of een JSON-bestand dat fungeert als provisorische database. Het lokale bestandssysteem in een gecontaineriseerde ontwikkelomgeving is per definitie vluchtig (ephemeral). Zodra de container opnieuw wordt opgebouwd, wordt het bestandssysteem gereset naar de staat van de repository — en die containers worden vaker herbouwd dan oprichters beseffen.
+**Bestanden weggeschreven naast de code.** Uploads van gebruikers, gegenereerde PDF's of een JSON-bestand dat fungeert als provisorische database. Het lokale bestandssysteem in een gecontaineriseerde ontwikkelomgeving is per definitie vluchtig (ephemeral). Zodra de container opnieuw wordt opgebouwd, wordt het bestandssysteem gereset naar de staat van de repository - en die containers worden vaker herbouwd dan oprichters beseffen.
 
 **Een database geïnstalleerd binnen de lokale virtuele omgeving.** Heel verleidelijk tijdens het testen, maar direct gekoppeld aan de levenscyclus van die specifieke virtuele machine.
 
@@ -86,7 +86,7 @@ Dit is geen pleidooi om halsoverkop alles weg te migreren van Replit.
 
 De applicatielogica zelf, de snelle ontwikkelomgeving, de samenwerkingstools en de hosting van de webserver kunnen uitstekend op Replit blijven staan. Wat verhuist, is uitsluitend de data: de relationele database en de uploads van gebruikers (die thuishoren in S3-compatibele objectopslag zoals Supabase Storage met getekende URL's, nooit op het lokale bestandssysteem).
 
-Die taakverdeling — code op het platform, data veilig daarbuiten — maakt een Replit-applicatie schaalbaar en veilig, zónder dat je het enorme gebruiksgemak van het platform hoeft op te geven.
+Die taakverdeling - code op het platform, data veilig daarbuiten - maakt een Replit-applicatie schaalbaar en veilig, zónder dat je het enorme gebruiksgemak van het platform hoeft op te geven.
 
 ## Testen of je data echt overleeft
 
@@ -98,7 +98,7 @@ Vier eenvoudige praktijktesten die geen ingewikkelde tools vereisen:
 
 **3. Upload een bestand, voer een redeploy uit en probeer het bestand te downloaden.** Hier ontdek je of je bestandsuploads per ongeluk nog lokaal worden opgeslagen.
 
-**4. Log in met twee verschillende accounts in twee browsers en probeer elkaars data te openen** door het ID in het endpoint te wijzigen. Een gekoppelde database zónder geconfigureerde RLS-regels is weliswaar permanent, maar ligt voor iedereen open op straat — en dat is geen vooruitgang.
+**4. Log in met twee verschillende accounts in twee browsers en probeer elkaars data te openen** door het ID in het endpoint te wijzigen. Een gekoppelde database zónder geconfigureerde RLS-regels is weliswaar permanent, maar ligt voor iedereen open op straat - en dat is geen vooruitgang.
 
 ## Bestaande data veilig overzetten
 
@@ -128,7 +128,7 @@ LaunchStudio voert dit uit zónder de gebruikersinterface aan te raken die je me
 
 Tessa Oomen bouwde via Replit Wachtlijst: een online intake- en wachtlijsttool voor drie fysiotherapiepraktijken rondom Tiel. Patiënten vulden een digitaal intakeformulier in, en assistenten verwerkten de aanmeldingen via een overzichtelijk dashboard. De tool draaide inmiddels twee maanden.
 
-De ingezonden formulieren werden echter simpelweg opgeslagen in een lokaal databestand binnen het Replit-project. Bij elke software-update — en Tessa paste geregeld kleine tekstuele details aan op het formulier — werd de container opnieuw opgebouwd, waardoor alle aanmeldingen die sinds de vorige update waren binnengekomen geruisloos werden gewist. De praktijken hadden wel gemerkt dat de wachtlijst "soms ineens korter leek", maar gingen ervan uit dat collega's patiënten al hadden ingepland.
+De ingezonden formulieren werden echter simpelweg opgeslagen in een lokaal databestand binnen het Replit-project. Bij elke software-update - en Tessa paste geregeld kleine tekstuele details aan op het formulier - werd de container opnieuw opgebouwd, waardoor alle aanmeldingen die sinds de vorige update waren binnengekomen geruisloos werden gewist. De praktijken hadden wel gemerkt dat de wachtlijst "soms ineens korter leek", maar gingen ervan uit dat collega's patiënten al hadden ingepland.
 
 De ware omvang van het probleem werd pas duidelijk toen één praktijk hun telefonische registratielogboeken vergeleek met het systeem: in zes weken tijd waren er ongeveer veertig officiële intake-aanvragen spoorloos verdwenen van patiënten die netjes een formulier hadden ingestuurd maar nooit iets hoorden.
 
@@ -138,16 +138,16 @@ De verloren gegane aanmeldingen konden helaas niet meer worden hersteld. De prak
 
 **Resultaat:** in de elf maanden sinds de migratie is er geen enkele aanvraag meer verloren gegaan, en het platform doorstond een drukke seizoenspiek in september waarbij in één week meer formulieren werden verwerkt dan er voorheen in zes weken waren gewist.
 
-> *"Ik dacht oprecht dat een bestandje in mijn project hetzelfde was als een database. Het gedroeg zich exact zo — totdat het veertig mensen wiste die dringend op zoek waren naar fysiotherapie."*
-> — **Tessa Oomen, Oprichter, Wachtlijst (Tiel)**
+> *"Ik dacht oprecht dat een bestandje in mijn project hetzelfde was als een database. Het gedroeg zich exact zo - totdat het veertig mensen wiste die dringend op zoek waren naar fysiotherapie."*
+> - **Tessa Oomen, Oprichter, Wachtlijst (Tiel)**
 
-**Kosten & Doorlooptijd:** € 3.200 (database-architectuur met EU-regio en geteste back-ups, Row Level Security, connection pooling, migratie bestandsopslag en versiebeheer) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 3.200 (database-architectuur met EU-regio en geteste back-ups, Row Level Security, connection pooling, migratie bestandsopslag en versiebeheer) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Waarom verliest mijn Replit-app data zodra ik een update uitrol?
 
-Omdat de data wordt opgeslagen binnen de lokale virtuele machine van het project — bijvoorbeeld in een JSON-bestand, lokale SQLite-database of het werkgeheugen. Replit bouwt deze containers bij een release opnieuw op, waardoor lokale wijzigingen worden overschreven. Betrouwbare opslag vereist een externe datalaag.
+Omdat de data wordt opgeslagen binnen de lokale virtuele machine van het project - bijvoorbeeld in een JSON-bestand, lokale SQLite-database of het werkgeheugen. Replit bouwt deze containers bij een release opnieuw op, waardoor lokale wijzigingen worden overschreven. Betrouwbare opslag vereist een externe datalaag.
 
 ### Welke API-sleutel moet mijn Replit-applicatie gebruiken voor Supabase?
 
@@ -175,7 +175,7 @@ Nee, absoluut niet. De aanbevolen opzet is om de applicatiecode en hosting op Re
       "name": "Waarom verliest mijn Replit-app data zodra ik een update uitrol?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat data lokaal in de container staat — in bestanden, SQLite of geheugen — en containers bij deployments worden gereset. Permanente opslag vereist een externe database."
+        "text": "Omdat data lokaal in de container staat - in bestanden, SQLite of geheugen - en containers bij deployments worden gereset. Permanente opslag vereist een externe database."
       }
     },
     {

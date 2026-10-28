@@ -8,11 +8,11 @@ A CTO-as-a-Service and a launch-hardening engagement solve two different problem
 
 ✅ A fixed-scope engagement with a defined cost and a hardened, deployed application
 ✅ Specialists who personally fix payments, database security, and infrastructure gaps
-✅ No retainer, no equity conversation — just the specific, dangerous gaps closed
+✅ No retainer, no equity conversation - just the specific, dangerous gaps closed
 
 At **LaunchStudio**, we've been solving exactly this bounded engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Willem launched four weeks later than planned but with a verified-secure app, saving the retainer for a stage he's not at yet. (€2,600 — Launch & Grow Package, hardened and deployed in 10 business days.) 🚀
+Willem launched four weeks later than planned but with a verified-secure app, saving the retainer for a stage he's not at yet. (€2,600 - Launch & Grow Package, hardened and deployed in 10 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-cto-as-a-service
 

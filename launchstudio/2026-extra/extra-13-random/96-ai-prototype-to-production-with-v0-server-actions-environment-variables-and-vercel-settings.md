@@ -21,11 +21,11 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-v0 started as a UI generator and has grown into a way to produce complete Next.js applications — pages, Server Actions, database calls — that deploy to Vercel with a click. For technical founders, the path from idea to a live URL has rarely been shorter. That short path skips several decisions that matter once real users arrive. Taking a v0 AI prototype to production is mostly about four areas: who may call your Server Actions, where your environment variables go, who can see your preview deployments, and what gets cached.
+v0 started as a UI generator and has grown into a way to produce complete Next.js applications - pages, Server Actions, database calls - that deploy to Vercel with a click. For technical founders, the path from idea to a live URL has rarely been shorter. That short path skips several decisions that matter once real users arrive. Taking a v0 AI prototype to production is mostly about four areas: who may call your Server Actions, where your environment variables go, who can see your preview deployments, and what gets cached.
 
 ## Server Actions Are Public Endpoints
 
-Next.js Server Actions feel like calling a function from a form. Under the hood, each action is an HTTP endpoint that anyone can call with arbitrary arguments — not only through your form. AI-generated actions frequently trust their inputs: an `updateBooking(id, data)` action that updates whatever booking ID it receives, or a `deleteProject(id)` that checks only that someone is logged in.
+Next.js Server Actions feel like calling a function from a form. Under the hood, each action is an HTTP endpoint that anyone can call with arbitrary arguments - not only through your form. AI-generated actions frequently trust their inputs: an `updateBooking(id, data)` action that updates whatever booking ID it receives, or a `deleteProject(id)` that checks only that someone is logged in.
 
 **What production needs:**
 
@@ -38,7 +38,7 @@ Treat each Server Action exactly like an API route, because that is what it is.
 
 ## Environment Variables and the `NEXT_PUBLIC_` Trap
 
-In Next.js, any variable prefixed with `NEXT_PUBLIC_` is embedded in the JavaScript sent to the browser. AI-generated code sometimes adds that prefix to make a failing call work — turning a secret into a public value. Also check:
+In Next.js, any variable prefixed with `NEXT_PUBLIC_` is embedded in the JavaScript sent to the browser. AI-generated code sometimes adds that prefix to make a failing call work - turning a secret into a public value. Also check:
 
 - Secrets are only used in server code (Server Components, Route Handlers, Server Actions), never imported into client components.
 - Vercel environments are separated: Production, Preview and Development each have their own values, and production secrets are not available to preview deployments unless genuinely needed.
@@ -112,7 +112,7 @@ Only values safe to publish belong in `NEXT_PUBLIC_` variables. Use Vercel's env
 
 ## Protecting Preview Deployments
 
-Preview URLs are convenient for reviewing changes but are often guessable or shared widely. Enable Vercel's deployment protection for previews (requiring authentication), connect previews to staging data only, and avoid sending preview links to customers unless they contain no real data. Consider disabling preview comments or integrations that expose data. Treat each preview as a small staging environment — useful, but never a place for production data.
+Preview URLs are convenient for reviewing changes but are often guessable or shared widely. Enable Vercel's deployment protection for previews (requiring authentication), connect previews to staging data only, and avoid sending preview links to customers unless they contain no real data. Consider disabling preview comments or integrations that expose data. Treat each preview as a small staging environment - useful, but never a place for production data.
 
 ## Caching Rules in the App Router
 
@@ -140,7 +140,7 @@ Founders keep iterating in v0 after launch. Keep the security layer stable while
 
 ## Route Handlers Need the Same Care
 
-Besides Server Actions, v0 apps often contain Route Handlers under `app/api`. Apply the same five checks to each: authentication, validation, scoped queries, no information leaks and role or ownership checks. Pay special attention to handlers used by external services — webhooks from Stripe or Mollie must verify signatures or look up payment status, and cron endpoints must require a secret so strangers cannot trigger scheduled jobs.
+Besides Server Actions, v0 apps often contain Route Handlers under `app/api`. Apply the same five checks to each: authentication, validation, scoped queries, no information leaks and role or ownership checks. Pay special attention to handlers used by external services - webhooks from Stripe or Mollie must verify signatures or look up payment status, and cron endpoints must require a secret so strangers cannot trigger scheduled jobs.
 
 ## Middleware Is Not Authorisation
 
@@ -160,7 +160,7 @@ Before launch: every Server Action and Route Handler authenticated, validated, s
 
 ## Why v0 Apps Deserve a Production Pass
 
-v0 produces some of the most polished interfaces of any AI tool, which makes its apps feel finished earlier than they are. The gap is almost always in the same places: server-side checks, environment configuration, caching of personal data and deployment settings. Closing that gap rarely requires changing a single visible element. It requires treating every Server Action and Route Handler as a public door, keeping secrets strictly on the server, separating environments properly and verifying that personalised content is never shared. Do that, and a v0 app can go from impressive demo to dependable product in one to two weeks — keeping every screen the founder designed.
+v0 produces some of the most polished interfaces of any AI tool, which makes its apps feel finished earlier than they are. The gap is almost always in the same places: server-side checks, environment configuration, caching of personal data and deployment settings. Closing that gap rarely requires changing a single visible element. It requires treating every Server Action and Route Handler as a public door, keeping secrets strictly on the server, separating environments properly and verifying that personalised content is never shared. Do that, and a v0 app can go from impressive demo to dependable product in one to two weeks - keeping every screen the founder designed.
 
 ## First Step
 
@@ -172,7 +172,7 @@ v0 makes the dining room beautiful; production work makes sure the kitchen check
 
 ## In Short
 
-Authenticate, validate, scope, hide existence and check roles — in every action, every time, without exception.
+Authenticate, validate, scope, hide existence and check roles - in every action, every time, without exception.
 
 ## One Rule
 
@@ -182,7 +182,7 @@ If a function changes data, it checks who is asking.
 
 LaunchStudio takes v0-generated Next.js apps to production without replacing the UI you designed: authorised and validated Server Actions, environment and preview hygiene on Vercel, cache review, database hardening, headers and monitoring. LaunchStudio is powered by Manifera, whose engineers work with Next.js and React daily at its development centre in Ho Chi Minh City, with client contact through Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/); the [Next.js security guidance for Server Actions](https://nextjs.org/docs/app/guides/data-security) is essential reading.
 
-[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — including code v0 wrote.
+[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - including code v0 wrote.
 
 ## Real example
 
@@ -190,16 +190,16 @@ LaunchStudio takes v0-generated Next.js apps to production without replacing the
 
 Olaf Terlouw, a treasurer at a football club in Maarssen with a background in web development, built Sportveldhuur with v0: clubs rent out unused pitches and training slots to other teams and companies, with online booking and payment. Nine clubs in the Utrecht region used it.
 
-A renter who was also a developer noticed that the booking cancellation action accepted any booking ID — he could cancel other teams' bookings. LaunchStudio's review found that four Server Actions checked only for a logged-in session, the Stripe secret key had been renamed with a `NEXT_PUBLIC_` prefix during a debugging session and was in the browser bundle, preview deployments used production environment variables and were publicly reachable, and the club dashboard with revenue figures was cached and briefly shown to another club's treasurer after a deploy.
+A renter who was also a developer noticed that the booking cancellation action accepted any booking ID - he could cancel other teams' bookings. LaunchStudio's review found that four Server Actions checked only for a logged-in session, the Stripe secret key had been renamed with a `NEXT_PUBLIC_` prefix during a debugging session and was in the browser bundle, preview deployments used production environment variables and were publicly reachable, and the club dashboard with revenue figures was cached and briefly shown to another club's treasurer after a deploy.
 
 Over eight business days, LaunchStudio's engineers added ownership and role checks with Zod validation to every Server Action, rotated the Stripe key and moved it to server-only code, split Vercel environment variables per environment with previews on a staging database and deployment protection enabled, marked personalised dashboards as dynamic, added pooled EU database connections with row-level security, headers and monitoring.
 
-**Result:** No further unauthorised cancellations or cross-club data exposure occurred. Sportveldhuur expanded to 16 clubs, and Olaf continues to build new screens in v0 — now reviewed against the checklist before each deploy.
+**Result:** No further unauthorised cancellations or cross-club data exposure occurred. Sportveldhuur expanded to 16 clubs, and Olaf continues to build new screens in v0 - now reviewed against the checklist before each deploy.
 
 > *"v0 made the app feel like a set of forms. Under the hood, every form was a public door."*
-> — **Olaf Terlouw, Founder, Sportveldhuur (Maarssen)**
+> - **Olaf Terlouw, Founder, Sportveldhuur (Maarssen)**
 
-**Cost & Timeline:** €2,300 (Launch Ready package: Server Action security, environment separation, cache fixes, database hardening and monitoring) — completed in 8 business days.
+**Cost & Timeline:** €2,300 (Launch Ready package: Server Action security, environment separation, cache fixes, database hardening and monitoring) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -221,7 +221,7 @@ Manifera's engineers build with React and Next.js daily, so they can harden v0-g
 
 ### Does a production-ready Next.js setup help SEO?
 
-Yes. Correct caching, fast server rendering, metadata and structured data support rankings — while keeping personalised pages out of shared caches protects users.
+Yes. Correct caching, fast server rendering, metadata and structured data support rankings - while keeping personalised pages out of shared caches protects users.
 
 <script type="application/ld+json">
 {

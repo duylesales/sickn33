@@ -1,7 +1,7 @@
-🚨 Most software development team role lists cover the roles that are easy to name. They skip a connective role you feel constantly by its absence — things falling through the cracks between roles that all look filled. ⚙️🧵
+🚨 Most software development team role lists cover the roles that are easy to name. They skip a connective role you feel constantly by its absence - things falling through the cracks between roles that all look filled. ⚙️🧵
 
 **The Pain Points:**
-❌ **Every Box Checked, Still Broken:** Engineering, product, design, QA — all filled, and things still slip through.
+❌ **Every Box Checked, Still Broken:** Engineering, product, design, QA - all filled, and things still slip through.
 ❌ **No One Owns the Thread:** Requirements reinterpreted differently at every handoff.
 ❌ **Diffuse Rework:** Costs that don't trace back to any individual role's failure.
 

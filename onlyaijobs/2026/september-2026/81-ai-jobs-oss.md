@@ -51,13 +51,13 @@ For a candidate, this means the technical content in a small company here can be
 
 **Virtual screening and compound prioritisation.** Predicting which compounds from a large library are likely to bind a target, so that expensive physical screening can be focused. This is a classification or ranking problem on molecular representations, with the same representation challenges described for materials work, plus the complication that active compounds are extremely rare in a library.
 
-**Property prediction for developability.** A compound that binds its target is useless if it is insoluble, metabolically unstable, toxic or cannot cross the relevant biological barriers. Predicting these properties from structure — collectively the absorption, distribution, metabolism, excretion and toxicity profile — is a long-standing multi-task modelling problem where the data is heterogeneous and assay conditions vary between sources.
+**Property prediction for developability.** A compound that binds its target is useless if it is insoluble, metabolically unstable, toxic or cannot cross the relevant biological barriers. Predicting these properties from structure - collectively the absorption, distribution, metabolism, excretion and toxicity profile - is a long-standing multi-task modelling problem where the data is heterogeneous and assay conditions vary between sources.
 
 **High-throughput screening data analysis.** Screening campaigns generate large volumes of measurements with systematic artefacts: plate position effects, edge effects, compound interference with the detection method, and batch variation. Distinguishing real activity from artefact is a substantial statistical problem, and getting it wrong wastes enormous downstream effort on compounds that were never active.
 
 **Structure-based modelling.** Where a protein structure is known, computational prediction of how a compound binds informs design. This sits at the intersection of physics-based simulation and learned methods, and it is one of the areas where recent advances in structure prediction have changed practice materially.
 
-**Generative molecular design.** Proposing novel structures predicted to have desired properties, subject to synthesisability. The synthesisability constraint is what makes this genuinely hard — generating molecules that score well on a property model but cannot be made is easy and useless.
+**Generative molecular design.** Proposing novel structures predicted to have desired properties, subject to synthesisability. The synthesisability constraint is what makes this genuinely hard - generating molecules that score well on a property model but cannot be made is easy and useless.
 
 **Mining the literature and internal archives.** Decades of published research and internal reports contain structured information about compounds, targets and outcomes that is not in any database. Extraction from this material is a natural language problem with immediate practical value.
 
@@ -134,7 +134,7 @@ Working in a fifteen-person biotech company differs from working in either a lar
 
 **Funding is milestone-driven.** Money arrives in rounds tied to achieving specific scientific results by specific times. That creates real pressure and real deadlines, and it means the pace of work is set by funding cycles rather than by product releases.
 
-**You will be the computational function.** Not a member of a data team — the person who does this. That means defining methods, choosing tools, and being trusted or not trusted based on whether your predictions hold up in the laboratory.
+**You will be the computational function.** Not a member of a data team - the person who does this. That means defining methods, choosing tools, and being trusted or not trusted based on whether your predictions hold up in the laboratory.
 
 **Laboratory validation is the verdict.** Your model's output gets tested experimentally. When the compounds you prioritised turn out active, your credibility rises substantially. When they do not, it falls. This feedback is more direct and more consequential than in most data roles, and candidates should be honest with themselves about whether they want that exposure.
 
@@ -169,7 +169,7 @@ Nijmegen deserves particular note: a university medical centre with substantial 
 
 ## Where to Start
 
-If cheminformatics, molecular property prediction or biological data integration interest you, the campus resident company list is the most efficient survey of this market, since the companies are small and individually hard to find. Prepare to discuss how you would handle assay variability and validation across data sources — it is the question that distinguishes candidates with relevant experience from those without.
+If cheminformatics, molecular property prediction or biological data integration interest you, the campus resident company list is the most efficient survey of this market, since the companies are small and individually hard to find. Prepare to discuss how you would handle assay variability and validation across data sources - it is the question that distinguishes candidates with relevant experience from those without.
 
 Browse current AI, machine learning and data vacancies in and around Oss at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

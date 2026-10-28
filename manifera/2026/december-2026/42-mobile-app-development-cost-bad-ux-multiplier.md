@@ -29,7 +29,7 @@ This is the wrong question. In the hyper-competitive mobile landscape of 2026, t
 
 Bad mobile architecture does not just look ugly; it acts as a negative multiplier on every other department's budget.
 
-The underlying physics here are well documented, not anecdotal. Google's "Need for Mobile Speed" research found that 53% of mobile site visits are abandoned if a page takes longer than three seconds to load, and that mobile experiences loading within five seconds see roughly double the revenue and 70% longer average sessions compared to those taking nineteen seconds. Retention data aggregated by mobile measurement platforms Adjust, AppsFlyer, and Sensor Tower tells the same story from a different angle: across app categories, average Day-30 retention sits at only around 5%, meaning roughly 95 of every 100 installs stop opening the app within a month. Sensor Tower's 2026 State of Mobile report recorded approximately 150 billion global app downloads in 2025 generating around $167 billion in combined revenue — an enormous, brutally competitive market where a few hundred milliseconds of jank is the difference between a retained customer and a wasted acquisition dollar.
+The underlying physics here are well documented, not anecdotal. Google's "Need for Mobile Speed" research found that 53% of mobile site visits are abandoned if a page takes longer than three seconds to load, and that mobile experiences loading within five seconds see roughly double the revenue and 70% longer average sessions compared to those taking nineteen seconds. Retention data aggregated by mobile measurement platforms Adjust, AppsFlyer, and Sensor Tower tells the same story from a different angle: across app categories, average Day-30 retention sits at only around 5%, meaning roughly 95 of every 100 installs stop opening the app within a month. Sensor Tower's 2026 State of Mobile report recorded approximately 150 billion global app downloads in 2025 generating around $167 billion in combined revenue - an enormous, brutally competitive market where a few hundred milliseconds of jank is the difference between a retained customer and a wasted acquisition dollar.
 
 ## The Architectural Mandate: UX as an Engineering Discipline
 
@@ -46,7 +46,7 @@ The platform decision is not symmetrical, either. Statista's global mobile OS tr
 
 Most agencies treat "make it feel fast" as a vague aspiration to chase after the fact, if there's budget left. Manifera treats it as a hard, numeric contract set before a single screen is built. Every mobile engagement starts with an explicit performance budget: a maximum cold-start time, a maximum time-to-interactive for the primary screen, a frame-drop ceiling during scroll and animation, and a maximum payload size for the initial data fetch. These numbers are not aspirational; they are enforced in CI, the same way a linter enforces code style. If a pull request pushes cold-start time past the budget, the build fails, exactly like a broken unit test.
 
-This matters because mobile hardware and network conditions are far less uniform than a typical staging environment suggests. Android device fragmentation alone spans multiple chipset generations, wildly different RAM configurations, and network conditions ranging from urban 5G to rural 3G. An app that performs beautifully on a QA team's flagship test device can be unusable on the mid-range hardware that a meaningful share of a mainstream consumer's actual user base carries. Our Vietnamese Pods maintain physical device labs spanning multiple OS versions and hardware tiers precisely because simulator testing alone systematically hides the jank that kills retention in the real world. Combined with real user monitoring (RUM) instrumentation shipped in the production build, the team sees actual field performance percentiles — not just the best-case lab numbers — and can catch a regression before it shows up as a spike in uninstalls.
+This matters because mobile hardware and network conditions are far less uniform than a typical staging environment suggests. Android device fragmentation alone spans multiple chipset generations, wildly different RAM configurations, and network conditions ranging from urban 5G to rural 3G. An app that performs beautifully on a QA team's flagship test device can be unusable on the mid-range hardware that a meaningful share of a mainstream consumer's actual user base carries. Our Vietnamese Pods maintain physical device labs spanning multiple OS versions and hardware tiers precisely because simulator testing alone systematically hides the jank that kills retention in the real world. Combined with real user monitoring (RUM) instrumentation shipped in the production build, the team sees actual field performance percentiles - not just the best-case lab numbers - and can catch a regression before it shows up as a spike in uninstalls.
 
 ## The Hybrid Hub: European UX Standards, Asian Execution
 
@@ -63,7 +63,7 @@ Manifera was brought in for a UX Engineering rescue. Our Amsterdam architects an
 
 We deployed a specialized Native iOS/Android Vietnamese Pod. We rewrote the data layer, implementing a robust local database (Room/CoreData) with background syncing, and heavily optimized the UI rendering pipelines. The new app loaded instantly, even offline. Within three months of the update, user retention skyrocketed by 300%, and the bank secured their Series C funding. 
 
-This is the pattern that plays out across fintech, retail, and travel apps alike: the code was never really the expensive part. The synchronous API calls, the missing local database, the blocked main thread — these are cheap mistakes with catastrophic downstream costs, and fixing them is almost always more affordable than the churn they cause.
+This is the pattern that plays out across fintech, retail, and travel apps alike: the code was never really the expensive part. The synchronous API calls, the missing local database, the blocked main thread - these are cheap mistakes with catastrophic downstream costs, and fixing them is almost always more affordable than the churn they cause.
 
 ## Cheap App Builds vs. Manifera UX Engineering
 
@@ -83,7 +83,7 @@ If you spend €50,000 on a cheap app, but your CAC is €20 and your app leaks 
 
 ### A Worked Example: The Retention Multiplier
 
-Consider a hypothetical consumer app acquiring 100,000 installs in its first quarter at a blended CAC of €4 per install — a €400,000 marketing spend. Applying the industry Day-30 retention benchmarks referenced above illustrates the stakes:
+Consider a hypothetical consumer app acquiring 100,000 installs in its first quarter at a blended CAC of €4 per install - a €400,000 marketing spend. Applying the industry Day-30 retention benchmarks referenced above illustrates the stakes:
 
 | | Cheap App (Below-Average UX) | Manifera-Built App (Above-Average UX) |
 | :--- | :--- | :--- |

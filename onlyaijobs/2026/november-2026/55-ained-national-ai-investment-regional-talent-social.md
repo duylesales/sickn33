@@ -2,7 +2,7 @@
 
 🏭 For a manufacturer in Twente or a logistics company in Limburg, that can feel abstract. They completed a pilot with innovation hub support and then found nobody to continue the work.
 
-🔍 That is the missing link. Programmes fund research, adoption and human capital, but rarely address how a trained person finds the regional employer who needs them — so talent drifts to employers it already knows.
+🔍 That is the missing link. Programmes fund research, adoption and human capital, but rarely address how a trained person finds the regional employer who needs them - so talent drifts to employers it already knows.
 
 📊 Measure regional outcomes, not only projects: AI vacancies, hires from regional institutions, internships and graduates staying.
 

@@ -10,7 +10,7 @@ Ask ten dev vendors if they handle GDPR and nine say yes. Ask for the actual dat
 ✅ Ask to see the actual DPA they'd sign, not a summary
 ✅ Ask for the hosting provider and region, by name, for data and backups
 ✅ Ask if they've built for your sector, and what rule they designed around
-✅ Ask these questions in writing — vagueness there is a tell calls hide
+✅ Ask these questions in writing - vagueness there is a tell calls hide
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we work from a documented DPA and EU-hosted infrastructure by default, not a promise. 🛡️
 

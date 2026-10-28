@@ -7,7 +7,7 @@ Buyer Stage: Awareness
 # From Idea to Prototype in 48 Hours Using AI Tools
 You can go from a startup idea to a working, clickable prototype in 48 hours using AI development tools like Lovable and Supabase. The key is ruthless focus: spend hours 1 through 4 planning your one core feature, hours 5 through 24 building the main interface and database, and hours 25 through 48 adding authentication, polishing the design, and testing with real people. This guide gives you the exact roadmap.
 
-Two years ago, a 48-hour prototype meant a rough wireframe in Figma or a handful of static HTML pages. Today, AI-native founders are building fully functional, database-connected web applications with user authentication in the same timeframe. The tools have changed — and so has the speed at which you can validate your startup idea.
+Two years ago, a 48-hour prototype meant a rough wireframe in Figma or a handful of static HTML pages. Today, AI-native founders are building fully functional, database-connected web applications with user authentication in the same timeframe. The tools have changed - and so has the speed at which you can validate your startup idea.
 
 ## Hours 1–4: Plan Before You Build
 
@@ -35,13 +35,13 @@ Bad examples (too broad):
 
 On paper or in Excalidraw, sketch 3 to 5 screens your application needs. No more. For a workout plan SaaS, that might be:
 
-1. **Dashboard** — List of workout plans with a "Create New" button
+1. **Dashboard** - List of workout plans with a "Create New" button
 
-2. **Create/Edit Plan** — Form to build a workout plan with exercises
+2. **Create/Edit Plan** - Form to build a workout plan with exercises
 
-3. **Share Link** — A page clients see when they receive a shared plan
+3. **Share Link** - A page clients see when they receive a shared plan
 
-4. **Login** — Simple email/password authentication
+4. **Login** - Simple email/password authentication
 
 For each screen, note the key data it displays and the actions a user can take. This becomes your prompt guide for Lovable.
 
@@ -63,17 +63,17 @@ Open Lovable and write your first prompt based on your sketches. A strong initia
 
 > "Build a SaaS application called [name] for [target user] that [core value proposition]. The app should have these pages: [list your 3-5 screens with brief descriptions]. Use a modern, clean design with [color preference]. Make it responsive for mobile."
 
-Review the generated application. Click through every page. Note what works and what needs changing. Do not try to fix everything at once — focus on structure first.
+Review the generated application. Click through every page. Note what works and what needs changing. Do not try to fix everything at once - focus on structure first.
 
 ### Hours 9–14: Build Screen by Screen
 
 Now iterate on each screen individually:
 
-- Prompt each screen change separately — one prompt per screen modification
+- Prompt each screen change separately - one prompt per screen modification
 
 - Focus on functionality before aesthetics
 
-- Test after each generation — do not let errors accumulate
+- Test after each generation - do not let errors accumulate
 
 - If Lovable generates something wrong, be specific about what to change rather than regenerating everything
 
@@ -109,7 +109,7 @@ Test the full flow: sign up → verify email → log in → create data → log 
 
 - Polish the typography, spacing, and color consistency
 
-- Test on your phone — fix any mobile layout issues
+- Test on your phone - fix any mobile layout issues
 
 ### Hours 33–40: Add the Landing Page
 
@@ -119,37 +119,37 @@ Create a public landing page that explains your product to visitors who are not 
 
 ### Hours 41–48: Test with Real People
 
-Share your prototype with at least 3 people from your target audience. Watch them use it — do not explain anything. Note where they get confused, what they like, and what they expect to find but cannot.
+Share your prototype with at least 3 people from your target audience. Watch them use it - do not explain anything. Note where they get confused, what they like, and what they expect to find but cannot.
 
 This feedback is more valuable than any additional feature you could build. It tells you whether your core idea resonates and what to build (or fix) next.
 
 ## After the 48 Hours: What Comes Next
 
-If your prototype validates your idea — people understand it, want to use it, and ask "when can I pay for this?" — the next step is making it production-ready.
+If your prototype validates your idea - people understand it, want to use it, and ask "when can I pay for this?" - the next step is making it production-ready.
 
 Your 48-hour prototype is a validation tool, not a launched product. Before accepting real users and real payments, you need:
 
-- **Security hardening** — Row Level Security, input validation, secret management
+- **Security hardening** - Row Level Security, input validation, secret management
 
-- **Payment integration** — Stripe in live mode with proper webhook handling
+- **Payment integration** - Stripe in live mode with proper webhook handling
 
-- **Production deployment** — Custom domain, SSL, environment variables, error tracking
+- **Production deployment** - Custom domain, SSL, environment variables, error tracking
 
-- **Legal compliance** — Privacy policy, terms of service, GDPR readiness
+- **Legal compliance** - Privacy policy, terms of service, GDPR readiness
 
-This is exactly what [LaunchStudio](https://launchstudio.eu/en/) does. We take your AI-built prototype and make it launch-ready in 1 to 3 weeks, for a fixed price of €800 to €7,500. You keep your prototype exactly as you built it — we only fix what stands between you and real users.
+This is exactly what [LaunchStudio](https://launchstudio.eu/en/) does. We take your AI-built prototype and make it launch-ready in 1 to 3 weeks, for a fixed price of €800 to €7,500. You keep your prototype exactly as you built it - we only fix what stands between you and real users.
 
 ## Key Takeaways
 
 - A working prototype can be built in 48 hours with AI tools and proper planning
 
-- Spend the first 4 hours planning — define one core feature, sketch 3–5 screens
+- Spend the first 4 hours planning - define one core feature, sketch 3–5 screens
 
 - Build incrementally: interface first, then database, then authentication
 
 - Test with real people before adding more features
 
-- Your prototype validates your idea — professional launch services make it production-ready
+- Your prototype validates your idea - professional launch services make it production-ready
 
 ## Prototype Built? Time to Launch for Real
 
@@ -167,7 +167,7 @@ Thomas reached out to **LaunchStudio (by Manifera)**. The engineering team left 
 
 **Result:** Thomas demonstrated the secure app on his own domain to the client, securing a booking contract for 3 major conferences.
 
-**Cost & Timeline:** €1,500 (Launch Package) — production-ready and deployed in 5 business days.
+**Cost & Timeline:** €1,500 (Launch Package) - production-ready and deployed in 5 business days.
 
 ---
 
@@ -178,7 +178,7 @@ Thomas reached out to **LaunchStudio (by Manifera)**. The engineering team left 
 
 ### Can you really build a prototype in 48 hours?
 
-Yes, with AI tools like Lovable and Bolt, you can build a functional prototype with a professional UI, basic user authentication, and core business logic in 48 hours. This is not a mockup — it is a clickable, database-connected application that demonstrates your product concept. However, it will not be production-ready and will need security, payment, and deployment work before launching.
+Yes, with AI tools like Lovable and Bolt, you can build a functional prototype with a professional UI, basic user authentication, and core business logic in 48 hours. This is not a mockup - it is a clickable, database-connected application that demonstrates your product concept. However, it will not be production-ready and will need security, payment, and deployment work before launching.
 
 ### What tools do I need for a 48-hour prototype sprint?
 
@@ -186,7 +186,7 @@ For a 48-hour prototype sprint, you need: Lovable or Bolt for generating the app
 
 ### What should I focus on during a 48-hour build?
 
-Focus exclusively on your core value proposition — the one feature that makes your product useful. Do not build user settings, admin panels, billing pages, or secondary features. Spend the first 4 hours on planning and sketching, hours 5–24 on building the main interface and connecting the database, and hours 25–48 on adding authentication, polishing the UI, and testing with friends.
+Focus exclusively on your core value proposition - the one feature that makes your product useful. Do not build user settings, admin panels, billing pages, or secondary features. Spend the first 4 hours on planning and sketching, hours 5–24 on building the main interface and connecting the database, and hours 25–48 on adding authentication, polishing the UI, and testing with friends.
 
 ### What is the biggest mistake founders make during rapid prototyping?
 
@@ -206,7 +206,7 @@ After your 48-hour sprint, share the prototype with 5–10 potential users and g
       "name": "Can you really build a prototype in 48 hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, with AI tools like Lovable and Bolt, you can build a functional prototype with a professional UI, basic user authentication, and core business logic in 48 hours. This is not a mockup — it is a clickable, database-connected application that demonstrates your product concept. However, it will not be production-ready and will need security, payment, and deployment work before launching."
+        "text": "Yes, with AI tools like Lovable and Bolt, you can build a functional prototype with a professional UI, basic user authentication, and core business logic in 48 hours. This is not a mockup - it is a clickable, database-connected application that demonstrates your product concept. However, it will not be production-ready and will need security, payment, and deployment work before launching."
       }
     },
     {
@@ -222,7 +222,7 @@ After your 48-hour sprint, share the prototype with 5–10 potential users and g
       "name": "What should I focus on during a 48-hour build?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Focus exclusively on your core value proposition — the one feature that makes your product useful. Do not build user settings, admin panels, billing pages, or secondary features. Spend the first 4 hours on planning and sketching, hours 5–24 on building the main interface and connecting the database, and hours 25–48 on adding authentication, polishing the UI, and testing with friends."
+        "text": "Focus exclusively on your core value proposition - the one feature that makes your product useful. Do not build user settings, admin panels, billing pages, or secondary features. Spend the first 4 hours on planning and sketching, hours 5–24 on building the main interface and connecting the database, and hours 25–48 on adding authentication, polishing the UI, and testing with friends."
       }
     },
     {

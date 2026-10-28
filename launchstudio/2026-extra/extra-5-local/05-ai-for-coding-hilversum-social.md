@@ -1,4 +1,4 @@
-📹 Lotte Jansen built MediaFlow with Lovable — a scheduling and rough-cut review tool for freelance video crews in Hilversum's production scene. Three companies were using it within weeks. Then a client spotted their own unreleased promo video sitting in a Google image cache.
+📹 Lotte Jansen built MediaFlow with Lovable - a scheduling and rough-cut review tool for freelance video crews in Hilversum's production scene. Three companies were using it within weeks. Then a client spotted their own unreleased promo video sitting in a Google image cache.
 
 AI tools are great at building an upload button and a media player. They're not built to check who can actually see what's inside. 🧠
 

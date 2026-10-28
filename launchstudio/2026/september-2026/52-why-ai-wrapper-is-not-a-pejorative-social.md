@@ -1,6 +1,6 @@
-🚨 Stella, a dental consultant, built a booking platform with **Lovable**. Its chatbot interface had high user drop-off — patients didn't know how to phrase requests, so staff found it faster to just answer the phone. 💬
+🚨 Stella, a dental consultant, built a booking platform with **Lovable**. Its chatbot interface had high user drop-off - patients didn't know how to phrase requests, so staff found it faster to just answer the phone. 💬
 
-Critics call this kind of product a "thin AI wrapper" — but customers don't buy intelligence, they buy frictionless workflows, and a chat box is rarely one. 🧠
+Critics call this kind of product a "thin AI wrapper" - but customers don't buy intelligence, they buy frictionless workflows, and a chat box is rarely one. 🧠
 
 ❌ A blank chat box forcing patients to guess the "right" way to phrase a booking request
 ❌ Complex prompt requirements driving high abandonment before a booking ever completed

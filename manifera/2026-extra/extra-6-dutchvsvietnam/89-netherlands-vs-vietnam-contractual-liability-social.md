@@ -1,7 +1,7 @@
-🚨 A production outage costs your business €120,000 in customer penalties. Who actually pays for it — and under whose court system do you have to prove it? Most CTOs never get a straight answer. ⚙️💥
+🚨 A production outage costs your business €120,000 in customer penalties. Who actually pays for it - and under whose court system do you have to prove it? Most CTOs never get a straight answer. ⚙️💥
 
 **The Pain Points:**
-❌ **A Liability Cap Buried in Boilerplate:** Often limited to fees paid in the prior three months — a €150,000 incident, €15,000 max vendor exposure.
+❌ **A Liability Cap Buried in Boilerplate:** Often limited to fees paid in the prior three months - a €150,000 incident, €15,000 max vendor exposure.
 ❌ **"Commercially Reasonable Efforts" Isn't Enforceable:** An SLA without a quantified remedy is an aspiration, not a protection.
 ❌ **Foreign Jurisdiction, Foreign Counsel:** A Vietnam-incorporated sole counterparty means unfamiliar courts for every dispute.
 

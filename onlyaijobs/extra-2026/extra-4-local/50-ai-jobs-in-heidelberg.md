@@ -91,13 +91,13 @@ EU citizens can work freely and must register their address. Non-EU professional
 
 ## Living in the Rhine-Neckar Region
 
-Heidelberg is a picturesque university city on the Neckar river, with a large student and international population. Housing is in high demand and relatively expensive for the region. Mannheim, a larger and more affordable city with a grid-pattern centre, has excellent rail connections, including high-speed trains to Frankfurt, Stuttgart and beyond. Many people live in one city and work in another, using S-Bahn lines that connect Heidelberg, Mannheim, Walldorf, Ludwigshafen and smaller towns. Check commute times to the exact site — a campus in Walldorf, a lab on the Neuenheimer Feld in Heidelberg or a chemical site in Ludwigshafen each require different routes.
+Heidelberg is a picturesque university city on the Neckar river, with a large student and international population. Housing is in high demand and relatively expensive for the region. Mannheim, a larger and more affordable city with a grid-pattern centre, has excellent rail connections, including high-speed trains to Frankfurt, Stuttgart and beyond. Many people live in one city and work in another, using S-Bahn lines that connect Heidelberg, Mannheim, Walldorf, Ludwigshafen and smaller towns. Check commute times to the exact site - a campus in Walldorf, a lab on the Neuenheimer Feld in Heidelberg or a chemical site in Ludwigshafen each require different routes.
 
 ## How OnlyAIJobs Fits a Rhine-Neckar Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Heidelberg you will find few or no local vacancies there today. Use German job portals, the career pages of research institutes and companies and scientific job boards as primary sources. OnlyAIJobs is useful for comparing the region with the Netherlands — where employers such as Accenture, Cegeka, AMCS and Holland Innovative list AI roles — and as a method: in a region where labs, software campuses and chemical sites are spread across several cities, searching by real commute is essential. Employers in the region can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Heidelberg you will find few or no local vacancies there today. Use German job portals, the career pages of research institutes and companies and scientific job boards as primary sources. OnlyAIJobs is useful for comparing the region with the Netherlands - where employers such as Accenture, Cegeka, AMCS and Holland Innovative list AI roles - and as a method: in a region where labs, software campuses and chemical sites are spread across several cities, searching by real commute is essential. Employers in the region can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Machine Learning in Biomedical Research
 
@@ -123,7 +123,7 @@ The Rhine-Neckar region has an active scientific and tech community. EMBL and DK
 
 ## Questions to Ask Employers in the Region
 
-- Which site will I work at — Heidelberg, Mannheim, Walldorf, Ludwigshafen or elsewhere?
+- Which site will I work at - Heidelberg, Mannheim, Walldorf, Ludwigshafen or elsewhere?
 - For research roles: how long is the contract, and what are the funding prospects?
 - Which pay scale or collective agreement applies?
 - What computing resources are available for training and experiments?
@@ -144,7 +144,7 @@ Offers in the region vary widely. Enterprise software and chemical companies gen
 
 ## Data Protection and Clinical AI
 
-Working with patient data in Heidelberg's hospitals and research institutes requires careful attention to data protection. GDPR, German data protection law and hospital rules govern access to clinical data, and projects usually require ethics approval and data access agreements. Federated learning, pseudonymisation and secure computing environments are used to enable research while protecting privacy. When AI tools move toward clinical use, they may fall under the EU Medical Device Regulation and the high-risk requirements of the EU AI Act, which demand rigorous validation, documentation and post-market monitoring. Engineers who understand these frameworks — and can design systems that satisfy them without paralysing research — are highly valued in the region, both in academia and in diagnostics and health technology companies.
+Working with patient data in Heidelberg's hospitals and research institutes requires careful attention to data protection. GDPR, German data protection law and hospital rules govern access to clinical data, and projects usually require ethics approval and data access agreements. Federated learning, pseudonymisation and secure computing environments are used to enable research while protecting privacy. When AI tools move toward clinical use, they may fall under the EU Medical Device Regulation and the high-risk requirements of the EU AI Act, which demand rigorous validation, documentation and post-market monitoring. Engineers who understand these frameworks - and can design systems that satisfy them without paralysing research - are highly valued in the region, both in academia and in diagnostics and health technology companies.
 
 ## Real example
 

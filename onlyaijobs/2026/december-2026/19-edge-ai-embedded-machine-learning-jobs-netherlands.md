@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Edge AI and Embedded Machine Learning Jobs in the Netherlands: Models That Run on a Milliwatt",
-  "description": "Running machine learning on devices rather than in the cloud is a Dutch strength, built on the semiconductor cluster, sensor industry and a tradition of embedded engineering — and the roles are rarely labelled as AI jobs.",
+  "description": "Running machine learning on devices rather than in the cloud is a Dutch strength, built on the semiconductor cluster, sensor industry and a tradition of embedded engineering - and the roles are rarely labelled as AI jobs.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-10",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-There is a version of machine learning engineering in which you cannot add another GPU, cannot call an API, and cannot ship an update whenever you like. The model has to fit in a few hundred kilobytes, run within a fixed latency budget, consume almost no power, and keep working for ten years in a product that may be installed in a factory, a hospital or a lamp post. This is edge AI, and the Netherlands — with its semiconductor cluster, sensor industry and long embedded engineering tradition — is one of the better places in Europe to do it.
+There is a version of machine learning engineering in which you cannot add another GPU, cannot call an API, and cannot ship an update whenever you like. The model has to fit in a few hundred kilobytes, run within a fixed latency budget, consume almost no power, and keep working for ten years in a product that may be installed in a factory, a hospital or a lamp post. This is edge AI, and the Netherlands - with its semiconductor cluster, sensor industry and long embedded engineering tradition - is one of the better places in Europe to do it.
 
 ## What Edge AI Actually Means
 
@@ -75,7 +75,7 @@ Edge AI means inference happens on or near the device that collects the data, ra
 
 **Toolchain reality.** Getting a model from a training framework onto a specific accelerator involves conversion, operator support gaps, and vendor toolchains of variable quality. A large share of the job is making the thing run at all, correctly, on target hardware.
 
-**Numerical fidelity.** Quantisation changes results. Verifying that accuracy loss is acceptable — and that it is not concentrated in the cases that matter most — is a core task.
+**Numerical fidelity.** Quantisation changes results. Verifying that accuracy loss is acceptable - and that it is not concentrated in the cases that matter most - is a core task.
 
 **Field updates.** Devices must be updatable securely and safely, sometimes over constrained networks, with rollback if an update fails.
 
@@ -103,7 +103,7 @@ The trade-off to consider honestly is specialisation. Edge work anchors you to h
 
 **EU Cyber Resilience Act.** Products with digital elements face security requirements across their lifecycle, including vulnerability handling and update obligations. For device makers this is a substantial engineering programme, not a compliance form.
 
-**EU AI Act.** Where a device is a safety component of a regulated product, or falls into a high-risk category, obligations around risk management, data governance, logging and human oversight apply — and they must be satisfied by software running on constrained hardware.
+**EU AI Act.** Where a device is a safety component of a regulated product, or falls into a high-risk category, obligations around risk management, data governance, logging and human oversight apply - and they must be satisfied by software running on constrained hardware.
 
 **Medical device regulation.** On-device algorithms in medical products require clinical evaluation, change control and post-market surveillance, which strongly shapes how often models can be updated.
 
@@ -131,7 +131,7 @@ If you come from an embedded background instead, the shorter path is the reverse
 
 Progression runs towards senior and principal engineering roles, systems architecture, or technical leadership of a product line. Because the field spans software, hardware and product, people who develop credibility across those boundaries become difficult to replace and end up shaping product roadmaps.
 
-Geographic mobility within the Netherlands is concentrated — Eindhoven and the surrounding region, Delft and Nijmegen dominate — but international mobility is excellent, since the same skills are scarce everywhere.
+Geographic mobility within the Netherlands is concentrated - Eindhoven and the surrounding region, Delft and Nijmegen dominate - but international mobility is excellent, since the same skills are scarce everywhere.
 
 ## Questions Worth Asking in an Interview
 
@@ -147,7 +147,7 @@ In cloud machine learning, hardware is a purchasing decision. In edge work it is
 
 The negotiation usually runs like this. A product manager wants a capability. The model that delivers it comfortably requires more memory and compute than the intended chip provides. The options are to reduce the model, to change the chip, to change the sensor so the problem becomes easier, or to change the requirement. Each option has a cost owner: silicon budget, unit price, development time or product scope.
 
-Engineers who can only argue from the model side lose these discussions, because a few extra euros per unit across a million devices is a large number. Engineers who understand sensor selection, optics, sampling rates and pre-processing can often reframe the problem entirely — better illumination or a different sensor placement frequently does more for accuracy than any architecture change.
+Engineers who can only argue from the model side lose these discussions, because a few extra euros per unit across a million devices is a large number. Engineers who understand sensor selection, optics, sampling rates and pre-processing can often reframe the problem entirely - better illumination or a different sensor placement frequently does more for accuracy than any architecture change.
 
 This is why edge AI roles often sit inside systems engineering rather than data science teams, and why candidates with a genuine interest in the physical side of a product progress quickly.
 
@@ -161,7 +161,7 @@ Industrial and medical devices are sold with support commitments that outlast mo
 
 **Update paths must be planned from day one.** Devices in the field may be reachable only occasionally, over constrained links, and an interrupted update must never leave a device unbootable.
 
-**Field data collection must be designed, not improvised.** The only way to improve a deployed system is to learn from it, and that requires deciding in advance — within privacy constraints — what may be logged, what is sent back, and who reviews it.
+**Field data collection must be designed, not improvised.** The only way to improve a deployed system is to learn from it, and that requires deciding in advance - within privacy constraints - what may be logged, what is sent back, and who reviews it.
 
 **Behaviour must be stable.** Customers who have calibrated their process around a device's behaviour do not welcome a model update that changes detection sensitivity, even in the direction of improvement.
 
@@ -184,30 +184,30 @@ Browse current embedded, edge AI and machine learning roles at [onlyaijobs.eu/jo
 ## Frequently Asked Questions
 
 ### (Scenario: cloud ML engineer) How different is edge work from what I do now?
-Substantially — you work within fixed memory, latency and power budgets, verify on hardware, and cannot deploy updates freely.
+Substantially - you work within fixed memory, latency and power budgets, verify on hardware, and cannot deploy updates freely.
 
 ### (Scenario: embedded engineer) Can I move into edge AI from embedded software?
 Yes, and it is a common route; the gap to close is training methodology, evaluation discipline and data handling.
 
 ### (Scenario: candidate worried about AI hype cycles) Is this field stable?
-Relatively — products need on-device inference regardless of cloud model economics, and the skills are hard to commoditise.
+Relatively - products need on-device inference regardless of cloud model economics, and the skills are hard to commoditise.
 
 ### (Scenario: candidate outside Brainport) Where are these jobs located?
 Mostly around Eindhoven and the southern high-tech cluster, with roles also in Delft, Nijmegen, Twente and at sensor manufacturers nationwide.
 
 ### (Scenario: international candidate) Is Dutch required?
-Frequently not — high-tech engineering teams in this sector are among the most international in the country and often work in English.
+Frequently not - high-tech engineering teams in this sector are among the most international in the country and often work in English.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How different is edge AI from cloud machine learning work?", "acceptedAnswer": {"@type": "Answer", "text": "Substantially — fixed memory, latency and power budgets, hardware verification and constrained update paths."}},
-    {"@type": "Question", "name": "Can I move into edge AI from embedded software?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it is a common route; the gap is training methodology, evaluation discipline and data handling."}},
-    {"@type": "Question", "name": "Is edge AI a stable career field?", "acceptedAnswer": {"@type": "Answer", "text": "Relatively — products need on-device inference regardless of cloud model economics."}},
+    {"@type": "Question", "name": "How different is edge AI from cloud machine learning work?", "acceptedAnswer": {"@type": "Answer", "text": "Substantially - fixed memory, latency and power budgets, hardware verification and constrained update paths."}},
+    {"@type": "Question", "name": "Can I move into edge AI from embedded software?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it is a common route; the gap is training methodology, evaluation discipline and data handling."}},
+    {"@type": "Question", "name": "Is edge AI a stable career field?", "acceptedAnswer": {"@type": "Answer", "text": "Relatively - products need on-device inference regardless of cloud model economics."}},
     {"@type": "Question", "name": "Where are edge AI jobs located in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly around Eindhoven, with roles in Delft, Nijmegen, Twente and at sensor manufacturers nationwide."}},
-    {"@type": "Question", "name": "Is Dutch required for embedded AI roles?", "acceptedAnswer": {"@type": "Answer", "text": "Often not — high-tech engineering teams in this sector are highly international and usually work in English."}}
+    {"@type": "Question", "name": "Is Dutch required for embedded AI roles?", "acceptedAnswer": {"@type": "Answer", "text": "Often not - high-tech engineering teams in this sector are highly international and usually work in English."}}
   ]
 }
 </script>

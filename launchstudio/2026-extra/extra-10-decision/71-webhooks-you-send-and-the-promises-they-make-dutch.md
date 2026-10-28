@@ -38,7 +38,7 @@ De allerbelangrijkste ontwerpregel voor uitgaande webhooks luidt: **de code die 
 
 Doet u dat wel, dan ontstaan er drie acute problemen:
 1. **Verlammende traagheid:** Als de server van uw klant 25 seconden nodig heeft om te antwoorden, duurt de checkout in uw applicatie opeens ook 25 seconden.
-2. **Fatale transactiefouten:** Als de externe server een 500-error teruggeeft of een time-out veroorzaakt, faalt de order in uw eigen applicatie — of rolt uw databasetransactie terug waardoor de bestelling verdwijnt.
+2. **Fatale transactiefouten:** Als de externe server een 500-error teruggeeft of een time-out veroorzaakt, faalt de order in uw eigen applicatie - of rolt uw databasetransactie terug waardoor de bestelling verdwijnt.
 3. **Uitputting van servercapaciteit:** Eén klant met een tergend trage ontvangende server houdt al uw Node.js- of webserverthreads secondenlang bezet, waardoor alle ándere klanten op uw platform haperingen ervaren.
 
 ### De Juiste Vorm: Asynchrone Achtergrondtaken
@@ -87,7 +87,7 @@ Vier functies maken uw webhook-systeem zelfvoorzienend:
 - **Test-event verzenden:** Een knop *"Stuur test-webhook"* waarmee ontwikkelaars hun integratie kunnen testen vóórdat ze live gaan.
 - **Automatisch uitschakelen bij aanhoudend falen:** Als een endpoint drie dagen lang op 100% van de verzoeken faalt, pauzeert u de webhook en stuurt u de beheerder een e-mail. Dit voorkomt dat uw wachtrij volloopt met dode aanroepen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste B2B-integraties) bouwen we enterprise-grade webhook-infrastructuur met HMAC-handtekeningen, Redis-queues en SSRF-beveiliging standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw webhook-architectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw data betrouwbaar arriveert.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste B2B-integraties) bouwen we enterprise-grade webhook-infrastructuur met HMAC-handtekeningen, Redis-queues en SSRF-beveiliging standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw webhook-architectuur met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw data betrouwbaar arriveert.
 
 ## Echt voorbeeld
 
@@ -113,7 +113,7 @@ Tijdens het noodonderzoek kwamen er nog drie ernstige gebreken aan het licht:
 **Resultaat:** Binnen vier werkdagen herbouwde LaunchStudio de complete webhook-infrastructuur: verplaatsing van alle verzendingen naar een asynchrone Redis-wachtrij met exponentiële retries over 24 uur, HMAC SHA-256 handtekeningen, unieke event-ID's tegen duplicaten, strikte SSRF-validatie op invoer-URL's, en een overzichtelijk bezorglogboek in het beheerderspaneel. De checkout-tijd voor restaurants zakte direct weer naar minder dan 200 milliseconden, ongeacht of de server van de groothandel online of offline was.
 
 > *"De trage server van één klant legde mijn hele product plat voor ál zijn afnemers. En ik had het zelf zo geprogrammeerd in tien minuten zonder over de risico's na te denken."*
-> — **Sofie Maes, Oprichter, Bestelbon**
+> - **Sofie Maes, Oprichter, Bestelbon**
 
 **Kosten & Doorlooptijd:** Asynchrone webhook-architectuur, HMAC-beveiliging en bezorgdashboard opgeleverd in 4 werkdagen.
 

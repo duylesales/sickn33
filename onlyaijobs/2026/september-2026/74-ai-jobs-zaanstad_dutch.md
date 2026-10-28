@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Zaanstad telt ongeveer 160.000 inwoners direct noordwestelijk van Amsterdam, gevormd uit een reeks industriestadjes langs de Zaan. Het is een van de oudst geïndustrialiseerde gebieden van Europa, en levensmiddelenverwerking is er eeuwenlang de bepalende industrie geweest — cacao, oliën en vetten, zetmeel, meel.
+Zaanstad telt ongeveer 160.000 inwoners direct noordwestelijk van Amsterdam, gevormd uit een reeks industriestadjes langs de Zaan. Het is een van de oudst geïndustrialiseerde gebieden van Europa, en levensmiddelenverwerking is er eeuwenlang de bepalende industrie geweest - cacao, oliën en vetten, zetmeel, meel.
 
 ## Waarom levensmiddelendata een apart technisch domein is
 
@@ -31,7 +31,7 @@ Zaanstad telt ongeveer 160.000 inwoners direct noordwestelijk van Amsterdam, gev
 
 **Levensmiddelenveiligheid is niet onderhandelbaar en gereguleerd.** Verontreinigingsdetectie, allergeenbeheersing en traceerbaarheid zijn wettelijke verplichtingen. Een detectiesysteem werkt onder een regime waarin een gemiste positieve een volksgezondheidsincident is, wat het acceptabele werkpunt ver weg schuift van waar een commerciële kosten-batenafweging het zou leggen.
 
-**Traceerbaarheid moet exact zijn.** Regelgeving eist dat een batch in beide richtingen door de keten traceerbaar is — een data lineage-probleem met wettelijke kracht, dat lastig samengaat met continue processen waarin materiaal uit verschillende ingangen mengt.
+**Traceerbaarheid moet exact zijn.** Regelgeving eist dat een batch in beide richtingen door de keten traceerbaar is - een data lineage-probleem met wettelijke kracht, dat lastig samengaat met continue processen waarin materiaal uit verschillende ingangen mengt.
 
 **Houdbaarheids- en stabiliteitsvoorspelling.** Voorspellen hoe een product zich gedraagt over maanden opslag vraagt versnelde testen, extrapolatie en zorgvuldige onzekerheidsbehandeling, want de consequentie van ernaast zitten is recalls.
 
@@ -69,7 +69,7 @@ Meeste data science-opleiding veronderstelt discrete records: een klant, een tra
 
 **Ingrepen zijn zeldzaam en duur.** Je kunt niet vrij experimenteren op een fabriek die verkoopbaar product maakt. Het interessante deel van de bedrijfsruimte is systematisch ondervertegenwoordigd, juist omdat operators het vermijden.
 
-Kandidaten die dit herkennen en er geloofwaardig over praten, vallen direct op — want de fout die ze beschrijven, een model dat goed valideerde en daarna niet werkte, is er een die de meeste fabrieken met een externe consultant hebben meegemaakt.
+Kandidaten die dit herkennen en er geloofwaardig over praten, vallen direct op - want de fout die ze beschrijven, een model dat goed valideerde en daarna niet werkte, is er een die de meeste fabrieken met een externe consultant hebben meegemaakt.
 
 ## De relatie met Amsterdam is de beslissende factor
 
@@ -82,7 +82,7 @@ Kandidaten die dit herkennen en er geloofwaardig over praten, vallen direct op �
 | Alkmaar | 20–25 minuten | Energietransitie en netwerk |
 | Utrecht | 45–55 minuten | Zorgdata, consultancy, publieke sector |
 
-Twaalf tot zeventien minuten naar Amsterdam is geen forenzen in enige betekenisvolle zin — het is korter dan veel ritten binnen Amsterdam zelf. Dat verandert de hele propositie. De lokale industriële markt en de Amsterdamse markt zijn hier geen alternatieven; ze zijn tegelijk beschikbaar.
+Twaalf tot zeventien minuten naar Amsterdam is geen forenzen in enige betekenisvolle zin - het is korter dan veel ritten binnen Amsterdam zelf. Dat verandert de hele propositie. De lokale industriële markt en de Amsterdamse markt zijn hier geen alternatieven; ze zijn tegelijk beschikbaar.
 
 ## Waarom industriële datafuncties meer invloed geven dan hun titel suggereert
 
@@ -90,7 +90,7 @@ Maakbedrijven van dit type hebben vaak sterke engineeringculturen en zwakke data
 
 De kans is invloed. Een bekwame data-engineer is daar vaak de eerste, wat betekent dat jij de praktijken definieert, de tooling kiest en de verwachtingen zet.
 
-Het risico is isolatie. De enige zijn die je eigen werk begrijpt is professioneel onaangenaam en technisch gevaarlijk — niemand toetst je keuzes, niemand vangt je fouten. Vraag direct wie je werk zal reviewen en of er budget is voor externe expertise of opleiding.
+Het risico is isolatie. De enige zijn die je eigen werk begrijpt is professioneel onaangenaam en technisch gevaarlijk - niemand toetst je keuzes, niemand vangt je fouten. Vraag direct wie je werk zal reviewen en of er budget is voor externe expertise of opleiding.
 
 De mitigatie in Zaanstad is dat Amsterdam op een kwartier ligt, wat een professioneel netwerk buiten je werkgever praktisch haalbaar maakt.
 
@@ -98,7 +98,7 @@ De mitigatie in Zaanstad is dat Amsterdam op een kwartier ligt, wat een professi
 
 Procesengineers in een fabriek weten dingen die niet zijn opgeschreven: welke sensor laag leest, welke lijn zich op maandag anders gedraagt, waarom een eerdere automatiseringspoging mislukte.
 
-Twee gedragingen helpen consistent. Besteed tijd op de fabrieksvloer vóór je iets voorstelt. En kader je werk als uitbreiding van hun vermogen in plaats van vervanging van hun oordeel — want in een veiligheidskritisch proces ís hun oordeel een beheersmaatregel.
+Twee gedragingen helpen consistent. Besteed tijd op de fabrieksvloer vóór je iets voorstelt. En kader je werk als uitbreiding van hun vermogen in plaats van vervanging van hun oordeel - want in een veiligheidskritisch proces ís hun oordeel een beheersmaatregel.
 
 Twee gedragingen falen betrouwbaar. Modeluitvoer als gezaghebbend presenteren wanneer die conflicteert met operatorervaring, zonder te onderzoeken waarom. En sensordata als grondwaarheid behandelen terwijl de mensen die ze installeerden de beperkingen kennen.
 

@@ -1,6 +1,6 @@
 🚨 "Whose name is the domain actually registered under?" "...I'm not sure." Ruben's domain was eleven days from renewal, and nobody on his team had the login. 😳
 
-Founders sort account ownership by how technical it feels — instead of by what happens if it disappears tomorrow. 🧠
+Founders sort account ownership by how technical it feels - instead of by what happens if it disappears tomorrow. 🧠
 
 ❌ A domain registered two years earlier by a freelancer who'd since gone quiet
 ❌ A recovery email pointing at an address that no longer existed
@@ -8,7 +8,7 @@ Founders sort account ownership by how technical it feels — instead of by what
 ❌ Assuming "we'll transfer it to you at the end" is a plan, when it depends on someone remembering under pressure
 
 ✅ Keep your domain, business email/Workspace, payment processor, code org and hosting account always in your own name
-✅ Delegate day-to-day repo access, staging config and monitoring tools freely — those are working tools, not assets
+✅ Delegate day-to-day repo access, staging config and monitoring tools freely - those are working tools, not assets
 ✅ Check the recovery email and phone on every critical account, not just who's logged in today
 ✅ Run a five-minute audit this week: open each account and confirm the billing contact is unambiguously "me"
 

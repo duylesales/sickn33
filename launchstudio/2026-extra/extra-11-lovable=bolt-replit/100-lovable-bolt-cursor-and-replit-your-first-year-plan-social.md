@@ -1,8 +1,8 @@
-🚨 Lianne de Ruiter built Bezoekregistratie with Lovable — visitor sign-in for offices and factories — as a prototype in nine days. A year later she had eleven customers. Her one regret: four months of visitor photos lost before anyone told her files don't survive a redeploy. 😳
+🚨 Lianne de Ruiter built Bezoekregistratie with Lovable - visitor sign-in for offices and factories - as a prototype in nine days. A year later she had eleven customers. Her one regret: four months of visitor photos lost before anyone told her files don't survive a redeploy. 😳
 
 Every piece of work she paid for became urgent about a week before she did it. Here's what skipping the order costs: 🧠
 
-❌ Charging customers before access rules are tested — any signed-in user could read every visitor record
+❌ Charging customers before access rules are tested - any signed-in user could read every visitor record
 ❌ Files stored in the project directory, wiped by redeploys
 ❌ Waiting for the first procurement questionnaire to think about audit trails and 2FA
 ❌ Letting a colleague join with no version control, staging or rollback
@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: eleven customers by the anniversary, €4,300 in monthly recurring revenue, and €11,200 in total engineering spend across the year. The manufacturer's safety officer called the audit trail the deciding feature in a €1,100/month contract. 🚀
 
-👉 Lovable, Bolt, Cursor and Replit — your first-year plan: https://launchstudio.eu/en/blog/lovable-bolt-cursor-and-replit-your-first-year-plan
+👉 Lovable, Bolt, Cursor and Replit - your first-year plan: https://launchstudio.eu/en/blog/lovable-bolt-cursor-and-replit-your-first-year-plan
 
 #Startup #Lovable #Bolt #Cursor #LaunchStudio #Manifera

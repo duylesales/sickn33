@@ -23,7 +23,7 @@ De prijs is direct gecorreleerd met de diepte van het opgeloste probleem.
 
 - **Tweede verticaal voorbeeld**: een AI-agent voor *algemene aannemers* die architectonische PDF-bouwtekeningen inleest, een geautomatiseerde materiaalopname uitvoert (het tellen van stijlen, het berekenen van het vierkante meterage van gipsplaten, het schatten van de lengte in meters aan leidingwerk), en een kostenraming oplevert. Een junior calculator doet er twee volle dagen over om dit handmatig te doen. De agent doet het in vier minuten. Een bouwbedrijf dat op 30 projecten per maand biedt, betaalt zonder aarzelen € 1.200/maand, want het alternatief is een salaris van € 65.000 per jaar.
 
-Let op het patroon: u bepaalt de prijs niet op basis van 'hoeveel kost AI om te draaien'. U bepaalt de prijs op basis van de volledig belaste kosten van de menselijke arbeid, software of gederfde inkomsten die de agent vervangt. Dit is waardegebaseerde prijsstelling, en het is de reden waarom verticale AI-bedrijven doorgaans 20 tot 50 keer meer vragen dan een horizontale SaaS-tool voor dezelfde onderliggende model-API-aanroepen. Workflow-lock-in doodt ook churn: zodra uw agent rechtstreeks schrijft in het PMS, ERP of boekhoudsysteem van een bedrijf, betekent het verwijderen ervan het omscholen van personeel en het opnieuw in kaart brengen van integraties — overstapkosten die horizontale tools nooit verdienen.
+Let op het patroon: u bepaalt de prijs niet op basis van 'hoeveel kost AI om te draaien'. U bepaalt de prijs op basis van de volledig belaste kosten van de menselijke arbeid, software of gederfde inkomsten die de agent vervangt. Dit is waardegebaseerde prijsstelling, en het is de reden waarom verticale AI-bedrijven doorgaans 20 tot 50 keer meer vragen dan een horizontale SaaS-tool voor dezelfde onderliggende model-API-aanroepen. Workflow-lock-in doodt ook churn: zodra uw agent rechtstreeks schrijft in het PMS, ERP of boekhoudsysteem van een bedrijf, betekent het verwijderen ervan het omscholen van personeel en het opnieuw in kaart brengen van integraties - overstapkosten die horizontale tools nooit verdienen.
 
 ## Hoe u een verticale AI-agent bouwt
 
@@ -37,7 +37,7 @@ Om een succesvolle verticale agent op te bouwen, moet u over domeinexpertise bes
 
 4. **Bouw de specifieke gebruikersinterface**: geef de gebruiker geen lege chatbox. Geef ze een zeer gestructureerd dashboard dat precies is afgestemd op hun workflow, met beoordelingswachtrijen, betrouwbaarheidsscores en goedkeurings-/afwijzingsacties met één klik in plaats van vrije-tekstconversatie.
 
-5. **Richt het in voor vertrouwen**: gereguleerde sectoren (gezondheidszorg, financiën, recht, verzekeringen) nemen geen agent in gebruik die ze niet kunnen controleren. Elke actie die de agent onderneemt — elk record dat wordt gelezen, elk veld dat wordt gewijzigd — heeft een onveranderlijk auditlogboek, op rollen gebaseerde toegangscontrole en, in veel gevallen, een menselijke goedkeuringspoort nodig voordat er iets een productiesysteem raakt. Dit is ook waar oprichters zich branden: AI-codeerassistenten zoals Bolt, Lovable en Cursor zijn buitengewoon goed in het genereren van de RAG-pijplijn en het dashboard in een weekend, maar uit brancheonderzoek blijkt dat ongeveer 45% van de door AI gegenereerde code wordt uitgeleverd met minstens één te misbruiken beveiligingslek — een niet-geverifieerd eindpunt, een ontbrekend rijniveaubeveiligingsbeleid, een API-sleutel die hardcoded in de frontend-bundel staat. Bij een verticale agent die patiëntendossiers of financiële transactiegegevens verwerkt, is dat geen bug, maar een datalek in wording.
+5. **Richt het in voor vertrouwen**: gereguleerde sectoren (gezondheidszorg, financiën, recht, verzekeringen) nemen geen agent in gebruik die ze niet kunnen controleren. Elke actie die de agent onderneemt - elk record dat wordt gelezen, elk veld dat wordt gewijzigd - heeft een onveranderlijk auditlogboek, op rollen gebaseerde toegangscontrole en, in veel gevallen, een menselijke goedkeuringspoort nodig voordat er iets een productiesysteem raakt. Dit is ook waar oprichters zich branden: AI-codeerassistenten zoals Bolt, Lovable en Cursor zijn buitengewoon goed in het genereren van de RAG-pijplijn en het dashboard in een weekend, maar uit brancheonderzoek blijkt dat ongeveer 45% van de door AI gegenereerde code wordt uitgeleverd met minstens één te misbruiken beveiligingslek - een niet-geverifieerd eindpunt, een ontbrekend rijniveaubeveiligingsbeleid, een API-sleutel die hardcoded in de frontend-bundel staat. Bij een verticale agent die patiëntendossiers of financiële transactiegegevens verwerkt, is dat geen bug, maar een datalek in wording.
 
 ## Van prototype naar productie: waar verticale agenten daadwerkelijk falen
 
@@ -49,13 +49,13 @@ Dit is precies de kloof die Manifera al meer dan een decennium dicht. Manifera i
 
 Oprichters zijn vaak bang dat Google of OpenAI hen 'verpletteren'. Dit is waar als u horizontale gereedschappen bouwt. Maar Google is een miljardenbedrijf. Ze hebben markten nodig ter waarde van honderden miljarden dollars om de naald te laten bewegen. Ze zullen nooit technische middelen inzetten om een AI-agent te bouwen die specifiek bedoeld is voor *onafhankelijke optometristen die verzekeringsclaims beheren*. De Total Addressable Market (TAM) is voor hen te klein, maar voor een solo-oprichter is het een goudmijn van $ 10 miljoen per jaar.
 
-Het eerlijke tegenargument: big tech brengt af en toe wel 'verticale' functies uit — Microsoft heeft bijvoorbeeld gezondheidszorgspecifieke copilots gebundeld in zijn zakelijke suite. Maar let op het patroon: dit zijn platformfuncties die worden vastgeschroefd aan een bestaande zakelijke relatie, geen diep geïntegreerde, workflow-native agenten gebouwd door mensen die in de kliniek hebben gezeten. Uw slotgracht was nooit 'wij hebben een model dat Microsoft niet heeft'. Uw slotgracht is de bedrijfseigen data, de workflow-integraties en het domeinvertrouwen dat geen enkel platformteam dat voor een kwartaaldoelstelling in een niche neerstrijkt, kan repliceren.
+Het eerlijke tegenargument: big tech brengt af en toe wel 'verticale' functies uit - Microsoft heeft bijvoorbeeld gezondheidszorgspecifieke copilots gebundeld in zijn zakelijke suite. Maar let op het patroon: dit zijn platformfuncties die worden vastgeschroefd aan een bestaande zakelijke relatie, geen diep geïntegreerde, workflow-native agenten gebouwd door mensen die in de kliniek hebben gezeten. Uw slotgracht was nooit 'wij hebben een model dat Microsoft niet heeft'. Uw slotgracht is de bedrijfseigen data, de workflow-integraties en het domeinvertrouwen dat geen enkel platformteam dat voor een kwartaaldoelstelling in een niche neerstrijkt, kan repliceren.
 
 ## Belangrijkste inzichten
 
 - Horizontale AI (tools voor algemene doeleinden) wordt gedomineerd door technologiegiganten; startups kunnen daar niet concurreren.
 
-- Verticale AI-agenten lossen hyperspecifieke, diepgaande problemen voor afzonderlijke sectoren op, waardoor oprichters premium B2B-prijzen kunnen vragen — vaak 20 tot 50 keer meer dan wat een horizontale tool vraagt voor vergelijkbare onderliggende rekenkracht.
+- Verticale AI-agenten lossen hyperspecifieke, diepgaande problemen voor afzonderlijke sectoren op, waardoor oprichters premium B2B-prijzen kunnen vragen - vaak 20 tot 50 keer meer dan wat een horizontale tool vraagt voor vergelijkbare onderliggende rekenkracht.
 
 - Het bouwen van verticale AI vereist diepgaande domeinexpertise en bedrijfseigen gegevens die via hybride RAG (vector- en trefwoordzoekopdrachten met herrangschikking) in het model worden geïnjecteerd, niet alleen naïeve vectorzoekopdrachten.
 
@@ -67,7 +67,7 @@ Het eerlijke tegenargument: big tech brengt af en toe wel 'verticale' functies u
 
 ## Bouw uw verticale slotgracht
 
-Heeft u de domeinexpertise, maar heeft u de infrastructuur nodig? LaunchStudio zet de complexe vectordatabases en beveiligde RAG-architectuur op die nodig zijn om een krachtige Vertical AI Agent te bouwen — bekijk het volledige aanbod aan pakketten op [launchstudio.eu/nl/#packages](https://launchstudio.eu/nl/#packages).
+Heeft u de domeinexpertise, maar heeft u de infrastructuur nodig? LaunchStudio zet de complexe vectordatabases en beveiligde RAG-architectuur op die nodig zijn om een krachtige Vertical AI Agent te bouwen - bekijk het volledige aanbod aan pakketten op [launchstudio.eu/nl/#packages](https://launchstudio.eu/nl/#packages).
 
 LaunchStudio wordt beheerd door **Manifera** ([manifera.com](https://www.manifera.com/about-us/)), een internationaal software-engineeringbedrijf dat in 2014 is opgericht en wordt geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP, voor ongeveer 20% van de kosten van een traditioneel ontwikkelbureau. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
@@ -75,13 +75,13 @@ LaunchStudio wordt beheerd door **Manifera** ([manifera.com](https://www.manifer
 
 ### Een AI-native oprichter in actie: tandartspraktijkautomatisering
 
-Hazel, de oprichter van een startup, gebruikte **Bolt** om een prototype van een tandartspraktijkautomatisering te bouwen. Hoewel de applicatie functioneel was, moest deze patiëntmanagementsystemen (PMS) integreren met een AI-planningsagent, maar het ontbrak aan webhook-afhandeling — elke planningswijziging vanuit het PMS moest handmatig opnieuw worden ingevoerd voordat de AI-agent ernaar kon handelen.
+Hazel, de oprichter van een startup, gebruikte **Bolt** om een prototype van een tandartspraktijkautomatisering te bouwen. Hoewel de applicatie functioneel was, moest deze patiëntmanagementsystemen (PMS) integreren met een AI-planningsagent, maar het ontbrak aan webhook-afhandeling - elke planningswijziging vanuit het PMS moest handmatig opnieuw worden ingevoerd voordat de AI-agent ernaar kon handelen.
 
 Hazel werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsklaar te maken. Het technische team bouwde veilige, gecodeerde B2B-webhook-eindpunten om PMS-schemawijzigingen te ontvangen en de AI-engine in realtime te synchroniseren, voegde rijniveau-tenantisolatie toe zodat de patiëntgegevens van elke tandartspraktijk volledig gescheiden bleven, en bouwde retry-logica en auditlogging in zodat elke geautomatiseerde planningsbeslissing traceerbaar was.
 
 **Resultaat:** Hazel automatiseerde de planning voor 8 tandheelkundige klinieken, waardoor receptiemedewerkers werden vrijgemaakt voor ander werk.
 
-**Kosten en tijdlijn:** € 4.800 (verticaal integratiepakket) — klaar voor productie en geïmplementeerd binnen 14 werkdagen.
+**Kosten en tijdlijn:** € 4.800 (verticaal integratiepakket) - klaar voor productie en geïmplementeerd binnen 14 werkdagen.
 
 ---
 ## Veelgestelde vragen
@@ -104,7 +104,7 @@ Zelden, en zelden goed. Grote technologiebedrijven hebben enorme schaalgrootte n
 
 ### Waar past LaunchStudio in het bouwen van een Vertical AI Agent?
 
-U brengt de domeinexpertise, de bedrijfseigen gegevens en de wrijving die u wilt automatiseren. LaunchStudio (beheerd door Manifera) brengt de productie-engineering: het verharden van uw RAG-pijplijn, het beveiligen van de vectordatabase, het bouwen van versleutelde webhookintegraties met legacy-branchesoftware, en het toevoegen van de auditsporen en toegangscontroles waarmee een compliance officer de agent goedkeurt voor echte klanten — doorgaans binnen 1 tot 3 weken.
+U brengt de domeinexpertise, de bedrijfseigen gegevens en de wrijving die u wilt automatiseren. LaunchStudio (beheerd door Manifera) brengt de productie-engineering: het verharden van uw RAG-pijplijn, het beveiligen van de vectordatabase, het bouwen van versleutelde webhookintegraties met legacy-branchesoftware, en het toevoegen van de auditsporen en toegangscontroles waarmee een compliance officer de agent goedkeurt voor echte klanten - doorgaans binnen 1 tot 3 weken.
 
 
 <script type="application/ld+json">

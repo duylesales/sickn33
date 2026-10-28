@@ -3,7 +3,7 @@
 "Claim uw vermelding" klinkt eenvoudig. In werkelijkheid is het een complex verificatievraagstuk in een simpele UI: 🧠
 
 ❌ Een claim-knop vraagt "is dit uw bedrijf?" met een vinkje, en vertrouwt de klik direct
-❌ Aanmeldformulieren valideren alleen of velden zijn ingevuld — geen enkele bot- of spambeveiliging
+❌ Aanmeldformulieren valideren alleen of velden zijn ingevuld - geen enkele bot- of spambeveiliging
 ❌ 500 vermeldingen op één template worden door zoekmachines gezien als dubbele content, niet als 500 unieke resultaten
 ❌ Uitgelichte plaatsingen blijven actief nadat een abonnement verloopt omdat de betaalstatus niet geautomatiseerd is
 

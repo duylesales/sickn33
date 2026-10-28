@@ -1,4 +1,4 @@
-📅 "Ik beveilig mijn AI-prototype in januari wel na de feestdagen." Tobias dacht er net zo over voor zijn **Bolt** facturatie-app — totdat hij de wachttijden en intake-files van januari doorgerekend had. ⏳
+📅 "Ik beveilig mijn AI-prototype in januari wel na de feestdagen." Tobias dacht er net zo over voor zijn **Bolt** facturatie-app - totdat hij de wachttijden en intake-files van januari doorgerekend had. ⏳
 
 Zodra januari begint, meldt iedereen zich tegelijk bij dev shops. Wie dan pas start, lanceert op zijn vroegst in maart en mist de complete Q1-budgetgolf.
 
@@ -12,7 +12,7 @@ Zodra januari begint, meldt iedereen zich tegelijk bij dev shops. Wie dan pas st
 
 Bij LaunchStudio transformeren senior engineers uw AI-prototype binnen 1 tot 3 weken naar een enterprise-ready MVP. 🛡️
 
-Tobias rondde zijn hardening af vóór kerst en onboardde in januari direct 110 betalende klanten. (€ 2.400 (Launch Ready Pakket) — 8 werkdagen.) 🚀
+Tobias rondde zijn hardening af vóór kerst en onboardde in januari direct 110 betalende klanten. (€ 2.400 (Launch Ready Pakket) - 8 werkdagen.) 🚀
 
 👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/launchstudio-vs-waiting-until-january-cost
 

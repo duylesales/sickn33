@@ -1,4 +1,4 @@
-🚨 Het team van Camille Perrot bij "VenteClaire," een e-commerce analytics SaaS met ongeveer 40 betalende klanten, had de gewoonte om elke AI-coding-extensie te installeren die handig leek — zonder reviewproces. Eén extensie, geïnstalleerd door een contractor, leverde later een update die begon met het loggen van de inhoud van omgevingsvariabelen, inclusief database-inloggegevens, naar een externe debugging-dienst. 😳
+🚨 Het team van Camille Perrot bij "VenteClaire," een e-commerce analytics SaaS met ongeveer 40 betalende klanten, had de gewoonte om elke AI-coding-extensie te installeren die handig leek - zonder reviewproces. Eén extensie, geïnstalleerd door een contractor, leverde later een update die begon met het loggen van de inhoud van omgevingsvariabelen, inclusief database-inloggegevens, naar een externe debugging-dienst. 😳
 
 Elke AI-coding-extensie die u installeert is technisch gezien software met toegang tot uw productiegeheimen. 🧠
 

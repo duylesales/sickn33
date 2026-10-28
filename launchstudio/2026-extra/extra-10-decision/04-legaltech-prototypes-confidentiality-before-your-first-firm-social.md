@@ -1,10 +1,10 @@
 🚨 Thijs's contract review tool had two happy firms trying it informally. Then a third firm sent a security questionnaire, and the honest answers to it were uncomfortable. 😳
 
-A good product and a reviewed product are not the same thing — here's what the questionnaire actually found: 🧠
+A good product and a reviewed product are not the same thing - here's what the questionnaire actually found: 🧠
 
 ❌ Contracts stored in a single Supabase bucket, readable by any authenticated firm user regardless of which matter they were staffed on
 ❌ Contract text sent straight to a general-purpose AI API with no confirmation it excluded training on submitted data
-❌ "Delete" only set a hidden flag — the file and database row stayed intact indefinitely
+❌ "Delete" only set a hidden flag - the file and database row stayed intact indefinitely
 ❌ "We follow standard GDPR practices" is not an answer to a firm asking whether a breach waives privilege
 
 ✅ Restructure storage around per-matter access policies, not one flat firm-wide permission

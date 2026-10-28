@@ -33,11 +33,11 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 
 Uw marge van 40% is in werkelijkheid geen 40%. Bijna niemand haalt dat daadwerkelijk op geproductiseerde ('productized') launch-diensten. Niet omdat de rekensom op papier niet klopt, maar omdat de berekening vanaf het begin tegen het verkeerde grootboek is afgezet. Vraag de meeste bureau-eigenaren naar hun marge op een white-label lanceringstraject en u krijgt een antwoord gebaseerd op twee regels: de uitgaande factuur naar de klant en de inkomende factuur van de technische ontwikkelpartner. Trek de één van de ander af, deel het verschil door de klantfactuur en er verschijnt een geruststellend, rond percentage. Het is echter een incomplete weergave die in stilte bepaalt of uw dienst écht winstgevend is, of slechts winstgevend lijkt in een spreadsheet waarin uw eigen dinsdagmiddagen nergens geregistreerd staan.
 
-Dit artikel toont het complete kasboek: elke kostencategorie die thuishoort in een eerlijke margeberekening voor een productized launch-aanbod — inclusief de uren die nooit op een factuur belanden omdat niemand zichzelf een rekening stuurt voor eigen tijd.
+Dit artikel toont het complete kasboek: elke kostencategorie die thuishoort in een eerlijke margeberekening voor een productized launch-aanbod - inclusief de uren die nooit op een factuur belanden omdat niemand zichzelf een rekening stuurt voor eigen tijd.
 
 ## De Berekening van Twee Regels Die Iedereen Maakt
 
-Neem een representatief project: het Bolt-prototype van een klant heeft betalingsverkeer, hosting en backend-beveiliging nodig. Dit wordt uitbesteed via het Launch & Grow-pakket van LaunchStudio voor €4.800. U offreert dit aan uw klant voor €7.500. De oppervlakkige rekensom oogt fantastisch: €2.700 bruto marge, oftewel 36% marge op de klantfactuur. Vermenigvuldig dit met twaalf projecten per jaar en uw spreadsheet voorspelt €32.400 aan jaarlijkse marge uit deze productized dienstverlening. Een prachtig resultaat op papier — totdat u onderzoekt wat er tijdens die twaalf projecten werkelijk gebeurde buiten die twee facturen om.
+Neem een representatief project: het Bolt-prototype van een klant heeft betalingsverkeer, hosting en backend-beveiliging nodig. Dit wordt uitbesteed via het Launch & Grow-pakket van LaunchStudio voor €4.800. U offreert dit aan uw klant voor €7.500. De oppervlakkige rekensom oogt fantastisch: €2.700 bruto marge, oftewel 36% marge op de klantfactuur. Vermenigvuldig dit met twaalf projecten per jaar en uw spreadsheet voorspelt €32.400 aan jaarlijkse marge uit deze productized dienstverlening. Een prachtig resultaat op papier - totdat u onderzoekt wat er tijdens die twaalf projecten werkelijk gebeurde buiten die twee facturen om.
 
 ## Het Grootboek Dat Iedereen Vergeet: Onbetaalde Uren
 
@@ -45,7 +45,7 @@ Wat de oppervlakkige rekensom volledig negeert, is de reële tijd die een bureau
 
 - **Scoping en discovery**, mits zorgvuldig uitgevoerd volgens de checklist die elk verantwoordelijk bureau zou moeten hanteren, kost één tot twee uur per project: het prototype analyseren, authenticatie en autorisatie testen en de bevindingen omzetten in een verdedigbare offerte. Tegen een bescheiden intern uurtarief van €75 is dat al direct €75 tot €150 aan ongeregistreerde kosten per traject.
 - **Klantcommunicatie gedurende het traject:** de kickoff-call, twee of drie inhoudelijke updates tijdens een bouwfase van twee tot drie weken, het beantwoorden van vragen over en weer tussen klant en ontwikkelaar en statusupdates die niemand expliciet declareert. Dit kost gemiddeld drie tot vijf uur over de looptijd van een project. Tegen hetzelfde interne tarief: €225 tot €375.
-- **Revisies en wijzigingsverzoeken:** verzoeken om aanpassingen tijdens de bouw zijn vrijwel gegarandeerd. Het stroomlijnen van deze verzoeken — de wensen scherp krijgen, een inschatting vragen bij de ontwikkelpartner en de impact terugkoppelen naar de klant — voegt nog eens één tot drie uur toe. Goed voor €75 tot €225.
+- **Revisies en wijzigingsverzoeken:** verzoeken om aanpassingen tijdens de bouw zijn vrijwel gegarandeerd. Het stroomlijnen van deze verzoeken - de wensen scherp krijgen, een inschatting vragen bij de ontwikkelpartner en de impact terugkoppelen naar de klant - voegt nog eens één tot drie uur toe. Goed voor €75 tot €225.
 - **Projectmanagement en coördinatie:** navraag doen bij de ontwikkelaar over de status, wachten op een beslissing van de klant waar men op blijft zitten, of het managen van dat ene project per kwartaal dat vertraging oploopt en extra aandacht vereist. Gemiddeld over een jaar vraagt dit nog eens één tot twee uur per project: €75 tot €150.
 - **Facturatie, contracten en administratie:** het opstellen van de klantovereenkomst, opvolging van betalingen en het afstemmen van de inkoopfactuur met de geleverde scope. Dit voelt vaak als algemene bedrijfsvoering, maar is rechtstreeks toe te rekenen aan deze specifieke dienst: €50 tot €100 per traject.
 
@@ -55,7 +55,7 @@ Er is nog een zesde categorie die bureaus stelselmatig vergeten totdat het misga
 
 ## De Herberekening van de Werkelijke Marge
 
-Neem het gemiddelde van die bandbreedte, circa €700 per project, en leg dit naast ons eerdere rekenvoorbeeld: €2.700 brutomarge minus €700 aan onbetaalde uren resulteert in €2.000 daadwerkelijke marge. Dat is een effectieve marge van 27%, niet de 36% uit de simplistische berekening. Over twaalf projecten per jaar levert dit €24.000 op aan echte nettowinst in plaats van €32.400. Het verschil van circa €8.400 per jaar is niet per se 'verloren' geld — het is de beloning voor de uren die u of uw projectmanager erin stak. Maar omdat deze uren niet waren ingeprijsd in het businessmodel, wist u nooit zeker of de dienst tegen deze tarieven wel rendabel was.
+Neem het gemiddelde van die bandbreedte, circa €700 per project, en leg dit naast ons eerdere rekenvoorbeeld: €2.700 brutomarge minus €700 aan onbetaalde uren resulteert in €2.000 daadwerkelijke marge. Dat is een effectieve marge van 27%, niet de 36% uit de simplistische berekening. Over twaalf projecten per jaar levert dit €24.000 op aan echte nettowinst in plaats van €32.400. Het verschil van circa €8.400 per jaar is niet per se 'verloren' geld - het is de beloning voor de uren die u of uw projectmanager erin stak. Maar omdat deze uren niet waren ingeprijsd in het businessmodel, wist u nooit zeker of de dienst tegen deze tarieven wel rendabel was.
 
 Dit heeft twee grote praktische consequenties:
 
@@ -64,7 +64,7 @@ Dit heeft twee grote praktische consequenties:
 
 ## Onbetaalde Uren Inprijzen in Plaats van Slikken
 
-De oplossing is niet rigide urenregistratie voor elke minuut — al is het bijhouden van de uren op drie of vier projecten zeer verhelderend om uw eigen standaarden te ijken. De echte oplossing is om de categorie onbetaalde uren expliciet mee te nemen in uw cost-plus calculatie, precies zoals een [verdedigbaar klantvoorstel](https://launchstudio.eu/nl/#contact) posten opneemt voor scoping en revisiebuffers in plaats van alles op één hoop te gooien. Neem de bandbreedte van €500 tot €900 op als vaste interne kostenpost bovenop de inkoopkosten van uw partner, vóórdat u uw gewenste winstmarge toepast. Zo beschermt u uw werkelijke marge op basis van de volledige kosten, in plaats van marge te verliezen aan werkzaamheden die u nooit had begroot.
+De oplossing is niet rigide urenregistratie voor elke minuut - al is het bijhouden van de uren op drie of vier projecten zeer verhelderend om uw eigen standaarden te ijken. De echte oplossing is om de categorie onbetaalde uren expliciet mee te nemen in uw cost-plus calculatie, precies zoals een [verdedigbaar klantvoorstel](https://launchstudio.eu/nl/#contact) posten opneemt voor scoping en revisiebuffers in plaats van alles op één hoop te gooien. Neem de bandbreedte van €500 tot €900 op als vaste interne kostenpost bovenop de inkoopkosten van uw partner, vóórdat u uw gewenste winstmarge toepast. Zo beschermt u uw werkelijke marge op basis van de volledige kosten, in plaats van marge te verliezen aan werkzaamheden die u nooit had begroot.
 
 ## Waar Geproductiseerde Diensten Rendement Opleveren
 
@@ -80,11 +80,11 @@ Het margeverschil wordt glashelder wanneer we een jaar met twaalf projecten op t
 
 **Scenario 2: Geproductiseerde pakketten.** Drie vaste pakketten in plaats van maatwerk, een vaste scoping-checklist en gestandaardiseerde communicatieformats. In de tweede helft van het jaar daalt de interne tijdsbesteding naar gemiddeld 5 uur per project: circa €375 per project, oftewel €4.500 over twaalf trajecten. De reële marge stijgt naar €27.900: een effectieve marge van 29%.
 
-De margeverbetering van 4 procentpunt — goed voor circa €3.600 extra winst in dit voorbeeld — ontstaat niet door de klant meer te factureren, maar puur doordat het interne proces efficiënter is geworden.
+De margeverbetering van 4 procentpunt - goed voor circa €3.600 extra winst in dit voorbeeld - ontstaat niet door de klant meer te factureren, maar puur doordat het interne proces efficiënter is geworden.
 
 ## Het Eerlijke Margedoel
 
-Zodra onbetaalde uren realistisch worden meegerekend tegen de totale projectkosten (inclusief partnerinkoop en interne uren), ligt een gezonde en houdbare doelstelling voor de meeste bureaus tussen de **25% en 35%**. Niet de 40% tot 50% die regelmatig in informele gesprekken rondzingt en die zelden standhoudt na een nuchtere urenanalyse. 25% tot 35% is een uitstekend en duurzaam rendement, mits er voldoende volume is om de vaste investering — de relatie met een betrouwbare technische partner, beproefde contracten en de scoping-methodiek — over meerdere opdrachten per jaar te spreiden.
+Zodra onbetaalde uren realistisch worden meegerekend tegen de totale projectkosten (inclusief partnerinkoop en interne uren), ligt een gezonde en houdbare doelstelling voor de meeste bureaus tussen de **25% en 35%**. Niet de 40% tot 50% die regelmatig in informele gesprekken rondzingt en die zelden standhoudt na een nuchtere urenanalyse. 25% tot 35% is een uitstekend en duurzaam rendement, mits er voldoende volume is om de vaste investering - de relatie met een betrouwbare technische partner, beproefde contracten en de scoping-methodiek - over meerdere opdrachten per jaar te spreiden.
 
 [LaunchStudio](https://launchstudio.eu/nl/) hanteert vaste, vooraf bekende pakketprijzen (€800 tot €7.500) specifiek om deze calculatie mogelijk te maken. Een betrouwbare inkooppost waar u een solide cost-plus model omheen kunt bouwen, ondersteund door [Manifera's trackrecord van 160+ succesvol opgeleverde softwareprojecten](https://www.manifera.com/portfolio/), in plaats van onvoorspelbare urenfacturen die elke margeberekening tot een gok maken.
 
@@ -101,7 +101,7 @@ Uit de analyse bleek dat hij gemiddeld 6,5 onbetaalde uren per project kwijt was
 **Resultaat:** Koen herstructureerde zijn prijsmodel en nam standaard een expliciete post voor scoping en projectbegeleiding op in elk voorstel. Hij verhoogde zijn basisprijzen met circa 15% en introduceerde direct een hogere staffel voor intensieve, niet-technische klanten in plaats van iedereen over één kam te scheren.
 
 > *"Ik dacht dat ik mijn cijfers kende omdat de spreadsheet er fantastisch uitzag. De spreadsheet hield alleen geen rekening met mijn eigen dinsdagen."*
-> — **Koen Dijkstra, Oprichter, Dijkstra Digital (Breda)**
+> - **Koen Dijkstra, Oprichter, Dijkstra Digital (Breda)**
 
 ## Veelgestelde Vragen
 
@@ -119,7 +119,7 @@ Ja, aanzienlijk. Bij latere projecten van een vergelijkbaar type profiteert u va
 
 ### Moet ik verschillende marges hanteren voor verschillende typen klanten op basis van begeleidingsbehoefte?
 
-Het is zeer verstandig om een hogere margestaffel te hanteren voor opdrachtgevers waarvan u vooraf weet dat ze veel afstemming vereisen — zoals beginnende ondernemers, niet-technische founders of klanten met een geschiedenis van scope creep — in plaats van een uniforme opslag toe te passen.
+Het is zeer verstandig om een hogere margestaffel te hanteren voor opdrachtgevers waarvan u vooraf weet dat ze veel afstemming vereisen - zoals beginnende ondernemers, niet-technische founders of klanten met een geschiedenis van scope creep - in plaats van een uniforme opslag toe te passen.
 
 ### Hoe kan ik mijn werkelijke marge in kaart brengen zonder een zware administratieve last?
 

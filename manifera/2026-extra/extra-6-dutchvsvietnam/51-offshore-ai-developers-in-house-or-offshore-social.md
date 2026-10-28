@@ -1,7 +1,7 @@
 🚨 The board approved an "AI initiative." Your instinct is to open a vacancy for a senior AI engineer. How confident are you it fills before the initiative loses its sponsor? 🤖⚙️
 
 **The Pain Points:**
-❌ **One Hire, Five Disciplines:** MLOps, retrieval architecture, model selection, data pipelines, and AI-calibrated code review — one person can't cover all five.
+❌ **One Hire, Five Disciplines:** MLOps, retrieval architecture, model selection, data pipelines, and AI-calibrated code review - one person can't cover all five.
 ❌ **A Widening Competitive Gap:** Every month the role sits open, competitors capture the data feedback loop that makes their models better.
 ❌ **A Costly Empty Vacancy:** €15,000-€25,000 in recruiter fees and internal hours before a single line of production code exists.
 

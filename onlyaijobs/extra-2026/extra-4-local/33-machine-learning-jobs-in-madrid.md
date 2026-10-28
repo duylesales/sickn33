@@ -43,7 +43,7 @@ Content Format: Local Guide
 }
 </script>
 
-Madrid is Spain's political and corporate capital and one of the largest metropolitan economies in the EU. The headquarters of major Spanish banks, telecommunications, energy and infrastructure companies are concentrated in and around the city, alongside the Spanish offices of many global technology firms and a growing startup scene. For experienced machine learning engineers, machine learning jobs in Madrid offer scale, variety and international exposure — Spanish companies often operate across Latin America and Europe — in a city known for its energy, culture and long evenings. This guide explains where the ML work is and what to consider before moving.
+Madrid is Spain's political and corporate capital and one of the largest metropolitan economies in the EU. The headquarters of major Spanish banks, telecommunications, energy and infrastructure companies are concentrated in and around the city, alongside the Spanish offices of many global technology firms and a growing startup scene. For experienced machine learning engineers, machine learning jobs in Madrid offer scale, variety and international exposure - Spanish companies often operate across Latin America and Europe - in a city known for its energy, culture and long evenings. This guide explains where the ML work is and what to consider before moving.
 
 ## The Corporate Landscape
 
@@ -84,7 +84,7 @@ Spanish is essential for daily life and for most corporate environments in Madri
 
 ## Pay, Contracts and Taxes
 
-Salaries in Madrid are generally the highest in Spain along with Barcelona, but lower than in Northern European hubs. Large banks, international tech companies and well-funded startups tend to pay the most. Salaries are expressed as annual gross amounts, often divided into 12 or 14 payments. Permanent contracts (indefinidos) are standard after recent labour reforms limited temporary contracts. Spain's special tax regime for inbound workers — often called the "Beckham law" and updated by the Startups Law — can reduce the tax burden for eligible newcomers for several years. Check eligibility carefully with a tax adviser.
+Salaries in Madrid are generally the highest in Spain along with Barcelona, but lower than in Northern European hubs. Large banks, international tech companies and well-funded startups tend to pay the most. Salaries are expressed as annual gross amounts, often divided into 12 or 14 payments. Permanent contracts (indefinidos) are standard after recent labour reforms limited temporary contracts. Spain's special tax regime for inbound workers - often called the "Beckham law" and updated by the Startups Law - can reduce the tax burden for eligible newcomers for several years. Check eligibility carefully with a tax adviser.
 
 ## Permits
 
@@ -98,7 +98,7 @@ Madrid is lively, sunny and culturally rich, with museums, parks such as the Ret
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can buy a better position.
 
-Its listings are currently concentrated in the Netherlands, so for machine learning jobs in Madrid you will find few or no local vacancies there today. Use Spanish job portals, corporate career sites, university career services and your network as primary sources. OnlyAIJobs is useful for comparing Madrid with the Netherlands — where employers such as Mollie, Accenture, Cegeka and Sendcloud list AI roles — and as a method: in a metropolitan area where major employers sit on the outskirts, searching by real commute is essential. Madrid employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for machine learning jobs in Madrid you will find few or no local vacancies there today. Use Spanish job portals, corporate career sites, university career services and your network as primary sources. OnlyAIJobs is useful for comparing Madrid with the Netherlands - where employers such as Mollie, Accenture, Cegeka and Sendcloud list AI roles - and as a method: in a metropolitan area where major employers sit on the outskirts, searching by real commute is essential. Madrid employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Banking AI at Scale
 
@@ -111,7 +111,7 @@ Madrid's banking groups are among the most advanced in Europe in their use of da
 - **Document processing** for onboarding, lending and compliance.
 - **Anti-money-laundering** with network analysis and anomaly detection.
 
-These banks have built internal data platforms, ML tooling and centres of expertise, and some have published research or open-source tools. Working in banking AI in Madrid offers exposure to modern ML at scale combined with rigorous governance — model validation, explainability, fairness testing and documentation — which is increasingly required under the EU AI Act for high-risk uses such as creditworthiness assessment.
+These banks have built internal data platforms, ML tooling and centres of expertise, and some have published research or open-source tools. Working in banking AI in Madrid offers exposure to modern ML at scale combined with rigorous governance - model validation, explainability, fairness testing and documentation - which is increasingly required under the EU AI Act for high-risk uses such as creditworthiness assessment.
 
 ## Telecom and Energy Data Science
 

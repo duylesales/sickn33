@@ -22,21 +22,21 @@ target_persona: "CEO"
 
 Most CEOs choosing a software development vendor spend the bulk of their evaluation time on the portfolio and the rate card, and almost none of it on the two factors that actually predict whether the relationship survives its first difficult moment: how the vendor communicates when something goes wrong, and how the vendor's incentives are actually structured relative to the client's. A polished portfolio tells you what a vendor is capable of on a good day; it tells you nothing about what happens on a bad one.
 
-**The Pain:** A CEO evaluating software development vendors is typically presented with materials designed to look impressive — case studies, logos, a slick sales process — that are genuinely difficult to differentiate between competitors, since every vendor in a competitive process has, by definition, cleared the bar of having a presentable portfolio, and the CEO is left making a high-stakes, multi-year decision based largely on gut feeling about which sales team was most persuasive.
+**The Pain:** A CEO evaluating software development vendors is typically presented with materials designed to look impressive - case studies, logos, a slick sales process - that are genuinely difficult to differentiate between competitors, since every vendor in a competitive process has, by definition, cleared the bar of having a presentable portfolio, and the CEO is left making a high-stakes, multi-year decision based largely on gut feeling about which sales team was most persuasive.
 
-**The Agitation:** A software development vendor relationship that fails typically doesn't fail because the vendor lacked technical skill — it fails because of a communication breakdown during a difficult moment, a misalignment of incentives that surfaced only once the contract was signed, or a mismatch between how the client works and how the vendor actually operates, and by the time these problems become visible, the company has often already lost months of runway and sunk cost into a relationship that a better evaluation process would have flagged before signing.
+**The Agitation:** A software development vendor relationship that fails typically doesn't fail because the vendor lacked technical skill - it fails because of a communication breakdown during a difficult moment, a misalignment of incentives that surfaced only once the contract was signed, or a mismatch between how the client works and how the vendor actually operates, and by the time these problems become visible, the company has often already lost months of runway and sunk cost into a relationship that a better evaluation process would have flagged before signing.
 
 ## The Evaluation Criteria That Actually Predict a Successful Vendor Relationship
 
-**Reference calls that ask about problems, not results.** Any vendor can produce three happy reference clients; the useful question isn't "were you satisfied" but "describe a moment things went wrong and how the vendor handled it" — a reference who can't recall a single friction point either hasn't worked with the vendor long enough to hit one, or is being selectively presented, and either answer is informative.
+**Reference calls that ask about problems, not results.** Any vendor can produce three happy reference clients; the useful question isn't "were you satisfied" but "describe a moment things went wrong and how the vendor handled it" - a reference who can't recall a single friction point either hasn't worked with the vendor long enough to hit one, or is being selectively presented, and either answer is informative.
 
-**Incentive structure alignment, not just pricing model.** A vendor paid purely on time-and-materials has a financial incentive that doesn't automatically align with shipping efficiently, while a vendor paid on a fixed scope has an incentive to minimize effort within that scope — the right question isn't which model is universally better, it's which model's incentives match what the CEO actually needs from this specific engagement, and a vendor who can articulate this trade-off honestly is more trustworthy than one who insists their model has no downside.
+**Incentive structure alignment, not just pricing model.** A vendor paid purely on time-and-materials has a financial incentive that doesn't automatically align with shipping efficiently, while a vendor paid on a fixed scope has an incentive to minimize effort within that scope - the right question isn't which model is universally better, it's which model's incentives match what the CEO actually needs from this specific engagement, and a vendor who can articulate this trade-off honestly is more trustworthy than one who insists their model has no downside.
 
-**Communication cadence and escalation path, tested before signing.** A CEO should ask a prospective vendor to walk through, specifically, what happens when a deadline is at risk or a critical bug surfaces in production — who gets notified, how fast, through what channel — and should treat vague or generic answers as a warning sign, since the actual test of a vendor relationship happens exactly in these moments, not during the pleasant onboarding period.
+**Communication cadence and escalation path, tested before signing.** A CEO should ask a prospective vendor to walk through, specifically, what happens when a deadline is at risk or a critical bug surfaces in production - who gets notified, how fast, through what channel - and should treat vague or generic answers as a warning sign, since the actual test of a vendor relationship happens exactly in these moments, not during the pleasant onboarding period.
 
-**Team continuity and bus-factor risk.** Many vendor relationships that start well degrade when the specific senior engineers who impressed the client during the sales process get rotated onto a new deal, leaving delivery to a more junior team the client never actually evaluated — a CEO should ask explicitly how the vendor staffs engagements over time and what happens when a key team member leaves or moves.
+**Team continuity and bus-factor risk.** Many vendor relationships that start well degrade when the specific senior engineers who impressed the client during the sales process get rotated onto a new deal, leaving delivery to a more junior team the client never actually evaluated - a CEO should ask explicitly how the vendor staffs engagements over time and what happens when a key team member leaves or moves.
 
-**Cultural and working-style fit, evaluated through a real trial engagement.** A short paid pilot project — a scoped, real piece of work rather than a sales-process demo — reveals far more about how a vendor actually operates under real conditions than any number of reference calls or portfolio reviews, and a CEO who skips this step in favor of a fully negotiated long-term contract is accepting far more risk than the time saved is worth.
+**Cultural and working-style fit, evaluated through a real trial engagement.** A short paid pilot project - a scoped, real piece of work rather than a sales-process demo - reveals far more about how a vendor actually operates under real conditions than any number of reference calls or portfolio reviews, and a CEO who skips this step in favor of a fully negotiated long-term contract is accepting far more risk than the time saved is worth.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -53,8 +53,8 @@ Cork Software Solutions Ltd, an Irish e-commerce startup, had selected a previou
 
 Manifera proposed a scoped, paid pilot engagement before any long-term commitment, delivered by the exact team that would handle the ongoing relationship, with an explicit escalation path the CEO tested during the pilot itself. The pilot's real-conditions performance gave the CEO confidence the sales process alone hadn't, and the long-term engagement that followed has run for over a year with the same core team still in place.
 
-> *"The pitch was great the first time too — that's not what went wrong. What went wrong was I never actually saw the team I'd be working with until after I'd signed. This time, I worked with the actual people, on a real piece of work, before I committed to anything longer."*
-> — **CEO, Cork Software Solutions Ltd, Ireland**
+> *"The pitch was great the first time too - that's not what went wrong. What went wrong was I never actually saw the team I'd be working with until after I'd signed. This time, I worked with the actual people, on a real piece of work, before I committed to anything longer."*
+> - **CEO, Cork Software Solutions Ltd, Ireland**
 
 ## Portfolio-Based Selection vs. Manifera's Pilot-Validated Selection
 
@@ -90,7 +90,7 @@ Because it reveals how a vendor actually operates under real conditions, with re
 
 ### (Scenario: CEO comparing pricing models across vendor proposals) Why does a vendor's pricing model matter beyond just the total cost?
 
-Because different pricing structures create different incentives — time-and-materials versus fixed scope, for example — and the right model depends on what specifically the CEO needs from that engagement.
+Because different pricing structures create different incentives - time-and-materials versus fixed scope, for example - and the right model depends on what specifically the CEO needs from that engagement.
 
 <script type="application/ld+json">
 {

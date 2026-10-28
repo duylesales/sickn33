@@ -1,4 +1,4 @@
-Most teams don't skip user research because they don't value it — they skip it because the version they've seen arrives six weeks too late. 🔬⏱️
+Most teams don't skip user research because they don't value it - they skip it because the version they've seen arrives six weeks too late. 🔬⏱️
 
 **The Pain Points:**
 ❌ **Building on Guesswork:** Features scoped from a PM's read of a few sales calls, no direct evidence.
@@ -10,7 +10,7 @@ Most teams don't skip user research because they don't value it — they skip it
 ✅ **Prototype-Stage Usability Testing:** Catch problems while fixes are still a design change, not a rebuild.
 ✅ **Amsterdam + Vietnam Cadence:** Standing research routed straight into ticket-writing, in sync with your sprints.
 
-A third to half of shipped features see low adoption — most of that is preventable with a week of conversations. 🎯
+A third to half of shipped features see low adoption - most of that is preventable with a week of conversations. 🎯
 
 👉 Read our full deep dive on user research for software products: https://www.manifera.com/blog/user-research-for-software-products
 

@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-There is a state most solo founders reach a few months after launch, where deploying has become slightly frightening. Nothing catastrophic has happened, but something broke once, and now every release carries a small dread. The rational response is to deploy less often — and that is the trap, because batching two weeks of changes into one release means that when something breaks you have fourteen changes to search through instead of one.
+There is a state most solo founders reach a few months after launch, where deploying has become slightly frightening. Nothing catastrophic has happened, but something broke once, and now every release carries a small dread. The rational response is to deploy less often - and that is the trap, because batching two weeks of changes into one release means that when something breaks you have fourteen changes to search through instead of one.
 
 The way out is not more care at the moment of deployment. It is making the deployment itself unremarkable: automated checks that run before anything reaches customers, a rollback you have actually performed, and enough visibility to know within five minutes whether the release was good.
 
@@ -44,7 +44,7 @@ Between "it works on my machine" and "customers are using it" there should be au
 
 **Verify afterwards.** An automated check hitting the deployed application and confirming it responds correctly, so that a broken release is detected in seconds rather than when a customer reports it.
 
-**Be able to roll back with one command.** Not a rebuild from an older commit — an actual, tested return to the previous version.
+**Be able to roll back with one command.** Not a rebuild from an older commit - an actual, tested return to the previous version.
 
 Most hosting platforms provide much of this. The part founders skip is the tests, and the part they discover late is that they have never verified the rollback.
 
@@ -62,13 +62,13 @@ This is slower than changing everything at once, and it is the difference betwee
 
 When a deployment causes a problem, two options exist and choosing quickly matters more than choosing correctly.
 
-**Roll back** — return to the previous version — is right when the problem is significant, the cause is not immediately obvious, or customers are affected now. It is fast and it stops the bleeding.
+**Roll back** - return to the previous version - is right when the problem is significant, the cause is not immediately obvious, or customers are affected now. It is fast and it stops the bleeding.
 
-**Roll forward** — deploy a fix — is right when the cause is obvious and trivial, or when rolling back is impossible because a migration has already changed data in a way the old code cannot handle.
+**Roll forward** - deploy a fix - is right when the cause is obvious and trivial, or when rolling back is impossible because a migration has already changed data in a way the old code cannot handle.
 
 That last caveat is the one to plan around: a deployment including a destructive migration is difficult to reverse, which is another reason to keep destructive changes in their own later deployment. If the code can always be reverted independently of the database, rollback stays available.
 
-Two habits make this work. Decide the threshold in advance — for example, if it is not fixed within ten minutes, roll back — because during an incident the temptation to keep trying one more thing is strong and usually wrong. And test the rollback before you need it: perform one deliberately, once, and time it. A rollback nobody has executed is a plan, not a capability.
+Two habits make this work. Decide the threshold in advance - for example, if it is not fixed within ten minutes, roll back - because during an incident the temptation to keep trying one more thing is strong and usually wrong. And test the rollback before you need it: perform one deliberately, once, and time it. A rollback nobody has executed is a plan, not a capability.
 
 Setting up automated checks, safe migration ordering, and a verified rollback path is a small, bounded piece of production engineering that removes most of the risk from routine releases. LaunchStudio, backed by Manifera's 11+ years of production engineering, puts this in place for AI-built products that have been deployed by hand until now. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -78,7 +78,7 @@ A deployment is not finished when it completes. It is finished when you know it 
 
 Three things to watch, for a few minutes: the error rate, which should return to its previous level rather than stepping up; response times, since a change that is functionally correct can still be much slower; and the core flow, verified by loading it yourself. This takes two minutes and catches most bad releases before customers do.
 
-It helps to have a way to notice regressions that appear later, too. A change that only fails for customers with a particular configuration might not surface for hours, which is why error tracking with account context — and reading the new errors after each deployment — is the companion practice to deploying frequently.
+It helps to have a way to notice regressions that appear later, too. A change that only fails for customers with a particular configuration might not surface for hours, which is why error tracking with account context - and reading the new errors after each deployment - is the companion practice to deploying frequently.
 
 Finally, keep a record of what was deployed and when. When something is discovered to be broken on Thursday and you need to know what changed on Tuesday, a deployment log answers in seconds. Most platforms keep this automatically; the discipline is looking at it.
 
@@ -88,14 +88,14 @@ Finally, keep a record of what was deployed and when. When something is discover
 
 Ilja Pietersen ran Contractbeheer, a contract-renewal tracker for facility management firms, built in Lovable and deployed by pushing to the hosting platform. Migrations were applied by running them manually against production after the deploy completed.
 
-Every deployment involving a schema change therefore produced a window — usually 60 to 120 seconds — in which the new code was live and the database had not yet changed. Every request in that window failed. It had happened eleven times over four months, each time attributed to "the platform being slow after a deploy."
+Every deployment involving a schema change therefore produced a window - usually 60 to 120 seconds - in which the new code was live and the database had not yet changed. Every request in that window failed. It had happened eleven times over four months, each time attributed to "the platform being slow after a deploy."
 
 It stopped being tolerable when a migration failed halfway, leaving the new code running against a database it did not match, and the product returned errors for 40 minutes while the cause was identified. There was no rollback path, because reverting the code would not have undone the partially applied migration, and nobody had ever attempted one.
 
 **Result:** a pipeline running tests and build checks before deployment, migrations applied automatically as an ordered step with additive changes separated from destructive ones, an automated post-deploy verification check, and a one-command rollback tested deliberately and timed at 90 seconds. Deployment frequency went from roughly weekly to several times a week, and the deploy-window failures stopped entirely.
 
 > "I had been deploying in a way that broke the product for ninety seconds every single time, and I had explained it away eleven times because it always fixed itself."
-> — **Ilja Pietersen, Founder, Contractbeheer**
+> - **Ilja Pietersen, Founder, Contractbeheer**
 
 **Cost & Timeline:** deployment pipeline and rollback capability delivered in 3 business days.
 

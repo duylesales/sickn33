@@ -21,13 +21,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Elke lijst met "beste steden voor AI-talent in Nederland" loopt langs dezelfde vier namen in dezelfde volgorde, en Groningen staat er nooit tussen. Dat is geen oordeel over het werk dat er beschikbaar is. Het is een bijeffect van hoe die lijsten worden gemaakt — meestal uit employer brand-uitgaven en congressponsoring, die beide standaard geconcentreerd zijn in de Randstad, ongeacht waar het interessante engineeringwerk daadwerkelijk plaatsvindt.
+Elke lijst met "beste steden voor AI-talent in Nederland" loopt langs dezelfde vier namen in dezelfde volgorde, en Groningen staat er nooit tussen. Dat is geen oordeel over het werk dat er beschikbaar is. Het is een bijeffect van hoe die lijsten worden gemaakt - meestal uit employer brand-uitgaven en congressponsoring, die beide standaard geconcentreerd zijn in de Randstad, ongeacht waar het interessante engineeringwerk daadwerkelijk plaatsvindt.
 
 Groningen heeft een echte, zelfdragende reden om een AI-arbeidsmarkt te hebben: een onderzoeksuniversiteit die al langer data science- en AI-afgestudeerden aflevert dan de meeste Nederlandse scale-ups bestaan, gelegen in een regio die een van de ingrijpendste data- en infrastructuurtransities van het land doormaakt. Geen van beide feiten verschijnt in een generiek "top tech-steden"-lijstje, want geen van beide is een marketingbudget.
 
 ## Waarom de stad structureel wordt overgeslagen
 
-Zoekgedrag naar banen in Nederland is onevenredig verankerd aan Amsterdam, Eindhoven en Utrecht, en algemene vacaturebanken versterken dat anker in plaats van het te corrigeren. Een kandidaat typt "AI vacatures" zonder stad, krijgt een resultatenpagina die zwaar leunt op waar werkgevers het meest aan zichtbaarheid uitgeven, en behandelt die pagina als een kaart van de kansen in het land. Dat is het niet. Het is een kaart van advertentiebudgetten, en Groningse werkgevers — veelal onderzoeksinstituten, middelgrote energie- en agritech-bedrijven en universitaire spin-offs — zijn structureel ondervertegenwoordigd in dat soort budgetconcurrentie.
+Zoekgedrag naar banen in Nederland is onevenredig verankerd aan Amsterdam, Eindhoven en Utrecht, en algemene vacaturebanken versterken dat anker in plaats van het te corrigeren. Een kandidaat typt "AI vacatures" zonder stad, krijgt een resultatenpagina die zwaar leunt op waar werkgevers het meest aan zichtbaarheid uitgeven, en behandelt die pagina als een kaart van de kansen in het land. Dat is het niet. Het is een kaart van advertentiebudgetten, en Groningse werkgevers - veelal onderzoeksinstituten, middelgrote energie- en agritech-bedrijven en universitaire spin-offs - zijn structureel ondervertegenwoordigd in dat soort budgetconcurrentie.
 
 Het gevolg is een markt die echt maar stil is: minder vacatures dan Amsterdam in absolute zin, maar ook veel minder concurrentie per vacature, omdat de kandidatenpool die specifiek op "Groningen" zoekt een fractie is van de pool die op "Amsterdam" zoekt.
 
@@ -37,7 +37,7 @@ Het gevolg is een markt die echt maar stil is: minder vacatures dan Amsterdam in
 
 **Universitair aanpalend werk en spin-offs.** Een onderzoeksuniversiteit levert oprichters en onderzoekers op die in de regio blijven in plaats van te verhuizen, wat een gestage stroom kleine, technisch serieuze AI-teams oplevert die nooit op een landelijke "topwerkgever"-lijst verschijnen omdat ze nooit buiten hun eigen netwerk hoefden te adverteren.
 
-**Landbouw- en logistiekdata.** De bredere regio Groningen en Drenthe heeft een substantiële agrifood- en logistieke basis, die beide in stilte datazwaar zijn geworden — oogstvoorspelling, koelketenoptimalisatie, routeplanning — zonder ooit met het woord "AI" in een persbericht te zijn omschreven.
+**Landbouw- en logistiekdata.** De bredere regio Groningen en Drenthe heeft een substantiële agrifood- en logistieke basis, die beide in stilte datazwaar zijn geworden - oogstvoorspelling, koelketenoptimalisatie, routeplanning - zonder ooit met het woord "AI" in een persbericht te zijn omschreven.
 
 Niets hiervan is zichtbaar voor iemand die landelijk op "machine learning engineer" zoekt, omdat geen van deze werkgevers om dat trefwoord concurreert. Ze concurreren om mensen die al in of nabij Groningen wonen en lokaal zoeken.
 
@@ -46,23 +46,23 @@ Niets hiervan is zichtbaar voor iemand die landelijk op "machine learning engine
 | Dimensie | Randstad (Amsterdam/Utrecht) | Groningen |
 |---|---|---|
 | Absoluut aantal vacatures | Hoog | Lager |
-| Kandidaten per vacature | Hoog — landelijke en internationale pool | Lager — grotendeels regionale pool |
+| Kandidaten per vacature | Hoog - landelijke en internationale pool | Lager - grotendeels regionale pool |
 | Woonlasten ten opzichte van salaris | Steeds meer gespannen | Wezenlijk lager |
 | Typisch AI-werk | Consumentenplatforms, fintech, enterprise | Energie, agrifood, onderzoeksspin-offs, publieke data |
-| Zichtbaarheid op algemene platforms | Hoog (budgetgedreven) | Laag (geen budgetprobleem — een vermeldingsprobleem) |
+| Zichtbaarheid op algemene platforms | Hoog (budgetgedreven) | Laag (geen budgetprobleem - een vermeldingsprobleem) |
 | Reistijd voor wie al in het noorden woont | Lang, vaak meerdere uren | Kort |
 
-De eerlijke lezing van deze tabel is niet "Groningen is beter". Het is dat de twee markten selecteren op verschillende prioriteiten, en dat een kandidaat die alleen ooit de Randstad-kolom ziet, feitelijk geen keuze heeft gemaakt — hij heeft alleen één optie gezien.
+De eerlijke lezing van deze tabel is niet "Groningen is beter". Het is dat de twee markten selecteren op verschillende prioriteiten, en dat een kandidaat die alleen ooit de Randstad-kolom ziet, feitelijk geen keuze heeft gemaakt - hij heeft alleen één optie gezien.
 
 ## Waarom "minder vacatures" niet betekent "minder kansen voor jou"
 
-Het getal dat er voor een individuele kandidaat toe doet, is niet het totaal aantal vacatures in een stad. Het is vacatures gedeeld door realistische concurrentie per vacature. Een markt met honderd vacatures en tienduizend sollicitanten per plaatsing kan voor een individu structureel slechter zijn dan een markt met vijftien vacatures en veertig sollicitanten per plaatsing — zeker wanneer je meerekent dat je maar één baan kunt hebben, niet een marktaandeel aan banen.
+Het getal dat er voor een individuele kandidaat toe doet, is niet het totaal aantal vacatures in een stad. Het is vacatures gedeeld door realistische concurrentie per vacature. Een markt met honderd vacatures en tienduizend sollicitanten per plaatsing kan voor een individu structureel slechter zijn dan een markt met vijftien vacatures en veertig sollicitanten per plaatsing - zeker wanneer je meerekent dat je maar één baan kunt hebben, niet een marktaandeel aan banen.
 
 Dit is dezelfde logica die OnlyAIJobs toepast op het niveau van één straatadres in plaats van een stad: ruw volume is een zwakke indicator voor de vraag of een specifieke kans goed is voor een specifiek persoon. Afstand, concurrentie en fit wegen zwaarder dan de positie van een stad op een landelijke ranglijst die nooit heeft gemeten wat je daadwerkelijk moet weten.
 
 ## Waar te beginnen
 
-Gebruik geen landelijke "beste steden"-ranglijst als zoekstrategie — die meet marketinguitgaven, niet kansdichtheid ten opzichte van concurrentie. Kijk direct naar wat er op dit moment in en rond Groningen openstaat, filter op categorie, en behandel het kleinere aantal resultaten als een signaal over concurrentie, niet over de kwaliteit van het werk.
+Gebruik geen landelijke "beste steden"-ranglijst als zoekstrategie - die meet marketinguitgaven, niet kansdichtheid ten opzichte van concurrentie. Kijk direct naar wat er op dit moment in en rond Groningen openstaat, filter op categorie, en behandel het kleinere aantal resultaten als een signaal over concurrentie, niet over de kwaliteit van het werk.
 
 Bekijk actuele AI-, machine learning- en datavacatures in de regio Groningen op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), gefilterd op stad en afstand in plaats van op welke werkgever de meeste zichtbaarheid heeft gekocht.
 
@@ -78,7 +78,7 @@ Omdat het getal dat ertoe doet vacatures ten opzichte van concurrentie is, niet 
 Drie terugkerende categorieën: energietransitie-datawerk (netbelasting, duurzame-opwekkingsvoorspelling, infrastructuurrisico), universitair aanpalende onderzoeksspin-offs, en toegepast datawerk in landbouw en logistiek. Deze zijn landelijk minder zichtbaar omdat de betrokken werkgevers zelden buiten hun eigen regio hoeven te adverteren.
 
 ### (Scenario: werkzoekende die op "top tech-stad"-ranglijsten vertrouwt) Waarom staat Groningen niet op landelijke AI-arbeidsmarktranglijsten?
-Die ranglijsten worden doorgaans opgebouwd uit employer brand-uitgaven, congressponsoring en mediazichtbaarheid — die alle standaard in de Randstad concentreren. De afwezigheid van een stad op zo'n lijst weerspiegelt marketingbudgetten, niet het onderliggende volume of de kwaliteit van het technische werk dat er plaatsvindt.
+Die ranglijsten worden doorgaans opgebouwd uit employer brand-uitgaven, congressponsoring en mediazichtbaarheid - die alle standaard in de Randstad concentreren. De afwezigheid van een stad op zo'n lijst weerspiegelt marketingbudgetten, niet het onderliggende volume of de kwaliteit van het technische werk dat er plaatsvindt.
 
 ### (Scenario: kandidaat die beslist hoe te zoeken in plaats van waar) Hoe zoek ik daadwerkelijk naar AI-rollen in een kleinere regionale markt zoals Groningen?
 Zoek direct op stad en afstand in plaats van met een generieke "AI vacatures"-opdracht die de werkgevers naar boven brengt die landelijk het meest hebben uitgegeven. Een gespecialiseerd platform filteren op locatie brengt precies de regionale werkgevers naar boven die een trefwoordzoekopdracht begraaft.

@@ -1,4 +1,4 @@
-🚨 "Maximizing Fraud Detection Sensitivity Is Always the Right Default, Since Mis..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "Maximizing Fraud Detection Sensitivity Is Always the Right Default, Since Mis..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "Maximizing Fraud Detection Sensitivity Is Always the Right Default, Since Missing Fraud Is Worse Than a False Flag":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

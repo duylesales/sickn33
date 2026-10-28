@@ -1,4 +1,4 @@
-🚨 Aurelie Dubois built "StockySync," an inventory-sync tool for e-commerce sellers, with Bolt and Cursor — had validated, paying demand, then got a €28,000 quote to "properly build out" the backend and nearly mothballed the whole product. 😬
+🚨 Aurelie Dubois built "StockySync," an inventory-sync tool for e-commerce sellers, with Bolt and Cursor - had validated, paying demand, then got a €28,000 quote to "properly build out" the backend and nearly mothballed the whole product. 😬
 
 She didn't need a rebuild. She needed two specific things fixed. 🧠
 
@@ -11,7 +11,7 @@ She didn't need a rebuild. She needed two specific things fixed. 🧠
 ✅ Finished the Stripe subscription integration she'd stubbed out but never completed
 ✅ Added managed hosting and monitoring so future sync failures get caught early, not months later
 
-At **LaunchStudio**, we scope fixes to the two or three things actually broken, not a full rebuild — Manifera's engineers, including the team on Pho Quang Street in Ho Chi Minh City, have spent 11+ years pricing engineering work honestly. 🛡️
+At **LaunchStudio**, we scope fixes to the two or three things actually broken, not a full rebuild - Manifera's engineers, including the team on Pho Quang Street in Ho Chi Minh City, have spent 11+ years pricing engineering work honestly. 🛡️
 
 Aurelie's result: the actual fix cost an eighth of her original quote, and real customers are still paying for it today. 🚀
 

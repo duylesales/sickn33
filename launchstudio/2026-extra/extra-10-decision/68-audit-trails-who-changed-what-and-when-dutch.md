@@ -39,7 +39,7 @@ Ontwikkelaars halen deze twee begrippen voortdurend door elkaar, met als gevolg 
 - **Technische serverlogs** registreren wat het *systeem* deed: API-verzoeken, serverfouten, SQL-query-uitvoeringen en responstijden. Ze zijn geschreven voor programmeurs, worden meestal 7 tot 14 dagen bewaard, en zijn volstrekt ongeschikt om aan een klant te laten zien.
 - **Een Audit Trail** registreert wat *mensen* deden in begrijpelijke bedrijfstermen: *"Jan heeft de factuurstatus gewijzigd van Concept naar Verzonden"*. Het is ontworpen voor directies, accountants en compliance-audits, wordt jarenlang bewaard en is direct zichtbaar in de gebruikersinterface.
 
-Uit technische logs kunt u herleiden waarom de server om 14:32 een time-out gaf. U kunt er **niet** uit herleiden wie een specifieke offerteprijs heeft verlaagd, omdat een serverlog alleen registreert dat er een `PUT /api/quotes/12`-aanroep plaatsvond — niet wie wat invoerde en wat de oude waarde was.
+Uit technische logs kunt u herleiden waarom de server om 14:32 een time-out gaf. U kunt er **niet** uit herleiden wie een specifieke offerteprijs heeft verlaagd, omdat een serverlog alleen registreert dat er een `PUT /api/quotes/12`-aanroep plaatsvond - niet wie wat invoerde en wat de oude waarde was.
 
 ## De Zes Velden Die een Auditlog Waardevol Maken
 
@@ -96,7 +96,7 @@ Voor middelgrote en grote zakelijke klanten is dit een harde voorwaarde bij aank
 
 Heeft u dit ingebouwd? Dan vinkt u 'Ja' aan. Heeft u dit niet? Dan verliest u de deal of moet u hals over kop maatwerk beloven.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise-grade software) implementeren we onveranderbare append-only audittrails met database-triggers en klantgerichte geschiedenisweergaven standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw audit- en compliance-eisen met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software aanbestedingsproof is.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise-grade software) implementeren we onveranderbare append-only audittrails met database-triggers en klantgerichte geschiedenisweergaven standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw audit- en compliance-eisen met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw software aanbestedingsproof is.
 
 ## Echt voorbeeld
 
@@ -117,7 +117,7 @@ Het conflict escaleerde razendsnel. De groothandel concludeerde dat *"het een au
 **Resultaat:** Binnen vier werkdagen richtte LaunchStudio een onveranderbare, database-afgedwongen audittrail in via PostgreSQL-triggers. Alle mutaties aan prijzen, kortingen, gebruikersrechten en exports kregen automatische voor-en-na logging in een append-only tabel. Op elke prijslijst en offerte verscheen een interactief *"Wijzigingshistorie"*-overzicht. De twee twijfelende groothandels verlengden direct hun licentie, en Prijslijst passeerde sindsdien moeiteloos elke enterprise IT-audit.
 
 > *"Vier medewerkers, één verkeerde prijslijst, en mijn applicatie kon niet aantonen wie er aan de knoppen had gezeten. Ik verloor een klant van 30.000 euro per jaar over iets wat me nul moeite had gekost als ik het vanaf dag één had gelogd."*
-> — **Karel Boonstra, Oprichter, Prijslijst**
+> - **Karel Boonstra, Oprichter, Prijslijst**
 
 **Kosten & Doorlooptijd:** PostgreSQL append-only triggers, mutatie-audittrail en klantgericht geschiedeniscomponent opgeleverd in 4 werkdagen.
 

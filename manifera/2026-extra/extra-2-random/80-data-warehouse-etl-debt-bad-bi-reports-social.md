@@ -2,13 +2,13 @@
 
 **The Pain Points:**
 ❌ **Undocumented ETL, Tribal Knowledge:** Transformation logic scattered across scripts and macros nobody would confidently touch.
-❌ **No Single Source of Truth:** "Churn" calculated differently in two places — and nobody decided that on purpose.
+❌ **No Single Source of Truth:** "Churn" calculated differently in two places - and nobody decided that on purpose.
 ❌ **One Bad Number Taints the Whole Deck:** Every other metric now carries an invisible asterisk.
 
 **The Manifera Solution:**
 ✅ **Full Pipeline Audit & Documentation:** Every transformation mapped, for the first time.
 ✅ **Board-Approved Metric Definitions:** One source of truth, documented and agreed on.
-✅ **Automated Data-Quality Validation:** Anomalies caught before they reach a dashboard — not after a board member notices.
+✅ **Automated Data-Quality Validation:** Anomalies caught before they reach a dashboard - not after a board member notices.
 
 Present numbers you can actually stand behind. 🛡️
 

@@ -1,6 +1,6 @@
 Woon je in Haarlem, dan forens je naar Amsterdam. 🚲 Dat voelt als een feit. Het is een zoekgewoonte.
 
-Een landelijke zoekopdracht naar "AI vacatures" brengt vanzelf de grotere, zichtbaardere Amsterdamse markt bovenaan. De eigen lokale markt van Haarlem wordt daardoor structureel te weinig overwogen — niet omdat die leeg is, maar omdat niemands standaardmethode hem laat zien.
+Een landelijke zoekopdracht naar "AI vacatures" brengt vanzelf de grotere, zichtbaardere Amsterdamse markt bovenaan. De eigen lokale markt van Haarlem wordt daardoor structureel te weinig overwogen - niet omdat die leeg is, maar omdat niemands standaardmethode hem laat zien.
 
 Wat er wél zit: Schipholnabije logistiek en reisdiensten, regionale consumentengoederen- en dienstenbedrijven. Kleiner in volume, en navenant minder concurrentie per vacature.
 

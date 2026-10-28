@@ -1,9 +1,9 @@
-🚨 He wrote a test that verified his AI's exact output. It failed randomly — even when the feature worked perfectly. Here's why. 🤯
+🚨 He wrote a test that verified his AI's exact output. It failed randomly - even when the feature worked perfectly. Here's why. 🤯
 
 Traditional testing assumes: same input = same output. AI breaks that assumption completely. Testing it "like normal code" just doesn't work: 😱
 
 ❌ Exact-output tests fail constantly, not because the AI is broken, but because the approach is wrong
-❌ Frustrated, he gave up testing entirely — relying only on manual spot-checks
+❌ Frustrated, he gave up testing entirely - relying only on manual spot-checks
 ❌ A bug slipped through: property square footage silently omitted in some listings
 
 What to test instead: ✅
@@ -12,7 +12,7 @@ What to test instead: ✅
 ✅ Reference-based scoring against known-good examples
 ✅ Cost & latency regression checks
 ✅ Periodic human review for tone/nuance
-✅ A "golden dataset" of real inputs/past bugs — prompts versioned like code, tested before every merge
+✅ A "golden dataset" of real inputs/past bugs - prompts versioned like code, tested before every merge
 
 At **LaunchStudio**, backed by Manifera's QA discipline across 160+ projects, we build this layered strategy in. His result: caught 2 real bugs before customers ever saw them. 🛡️🚀
 

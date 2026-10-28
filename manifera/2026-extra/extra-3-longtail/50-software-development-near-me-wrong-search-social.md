@@ -6,9 +6,9 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **Time zone overlap:** which determines how much real-time collaboration is possible — a factor partially correlated with geography but better evaluated directly than assumed from a "near me" search.
+✅ **Time zone overlap:** which determines how much real-time collaboration is possible - a factor partially correlated with geography but better evaluated directly than assumed from a "near me" search.
 ✅ **Communication process and language fluency:** which a well-managed distributed team can deliver excellently regardless of physical location.
-✅ **Actual technical fit and track record:** which "near me" search results don't filter for at all — a mediocre local vendor and an excellent one show up in the same local results.
+✅ **Actual technical fit and track record:** which "near me" search results don't filter for at all - a mediocre local vendor and an excellent one show up in the same local results.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

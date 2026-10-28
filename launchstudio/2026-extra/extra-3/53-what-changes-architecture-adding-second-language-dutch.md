@@ -57,7 +57,7 @@ Als een tweede taalmarkt een echt doel voor de korte termijn is, en geen verre h
 
 [LaunchStudio](https://launchstudio.eu/nl/) ontwerpt echte meertalige ondersteuning op database- en AI-promptniveau, en niet alleen interfacevertaling, voor oprichters met concrete plannen op de korte termijn om een tweede taalmarkt te bedienen. Dit wordt ondersteund door Manifera's bredere ervaring in het bouwen van producten die oprecht meertalige Europese markten bedienen vanuit Amsterdam en over haar bredere EU-klantenbestand.
 
-[Maak uw architectuur klaar voor een tweede taal voordat inhoud zich opstapelt rond slechts één taal](https://launchstudio.eu/nl/#calculator) — dit is aanzienlijk meer dan een vertaaltaak.
+[Maak uw architectuur klaar voor een tweede taal voordat inhoud zich opstapelt rond slechts één taal](https://launchstudio.eu/nl/#calculator) - dit is aanzienlijk meer dan een vertaaltaak.
 
 ## Wat er nog meer gelokaliseerd moet worden voorbij het product zelf
 
@@ -86,9 +86,9 @@ Na ongeveer een jaar en duizenden gegenereerde menubeschrijvingen opgeslagen in 
 **Resultaat:** LaunchStudio ontwierp en voerde een databasemigratie uit die een gepaste meertalige inhoudsstructuur introduceerde, samen met een echte AI-prompt-architectuur per taal in plaats van eenvoudige vertaling na generatie. Hiermee werd Wouter's Engelse uitbreiding mogelijk gemaakt – een project dat betekenisvol groter was in omvang en kosten dan de vergelijkbare architectonische beslissing in een vroeg stadium zou zijn geweest.
 
 > *"Als ik had geweten dat ik uiteindelijk misschien een tweede taal zou willen, zou het inbouwen van die structuur vanaf het begin een relatief kleine beslissing zijn geweest. Een jaar en duizenden uitsluitend Nederlandse records later werd het een echt migratieproject in plaats van een ontwerpkeuze die ik aan het begin gratis had kunnen maken."*
-> — **Wouter de Jong, Oprichter, MenuVertaler (Rotterdam)**
+> - **Wouter de Jong, Oprichter, MenuVertaler (Rotterdam)**
 
-**Kosten en tijdlijn:** € 2.800 (meertalige databasemigratie en prompt-architectuur) — voltooid in 11 werkdagen.
+**Kosten en tijdlijn:** € 2.800 (meertalige databasemigratie en prompt-architectuur) - voltooid in 11 werkdagen.
 
 ---
 
@@ -148,7 +148,7 @@ Het beoordelen van hoeveel van de kernwaarde van uw product afhangt van opgeslag
       "name": "Vraagt een 2e taal altijd om een grote architectuurwijziging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hangt af van het product — bij weinig opgeslagen taaldatabase-inhoud is de impact veel kleiner dan bij data-intensieve apps."
+        "text": "Hangt af van het product - bij weinig opgeslagen taaldatabase-inhoud is de impact veel kleiner dan bij data-intensieve apps."
       }
     },
     {

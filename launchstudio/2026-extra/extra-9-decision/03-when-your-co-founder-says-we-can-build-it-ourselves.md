@@ -39,7 +39,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 "Honestly? We can build that ourselves. I've done most of it already in Cursor. Give me two weekends."
 
-If you are the non-technical half of that conversation, you are now in an argument you cannot win on technical grounds and should not try to. You do not know whether two weekends is realistic. Your co-founder may not know either — and here is the important part, they are not being dishonest. They are answering a narrower question than the one you asked, and the entire disagreement lives in that gap.
+If you are the non-technical half of that conversation, you are now in an argument you cannot win on technical grounds and should not try to. You do not know whether two weekends is realistic. Your co-founder may not know either - and here is the important part, they are not being dishonest. They are answering a narrower question than the one you asked, and the entire disagreement lives in that gap.
 
 ## Three Different Sentences That Sound Identical
 
@@ -51,7 +51,7 @@ If you are the non-technical half of that conversation, you are now in an argume
 
 **"I will actually have the time to do this, soon, to completion."** This is the claim that fails most often, and it is the one nobody examines, because it sounds like a scheduling detail rather than a substantive claim.
 
-Your job is not to challenge the first. It is to get all three stated separately, because the moment they are separated, the conversation becomes about calendars and scope instead of competence — and nobody gets defensive about a calendar.
+Your job is not to challenge the first. It is to get all three stated separately, because the moment they are separated, the conversation becomes about calendars and scope instead of competence - and nobody gets defensive about a calendar.
 
 ## Translating "Ourselves": Who Is Actually Doing It
 
@@ -67,17 +67,17 @@ That framing is not an argument against doing it. Plenty of teams should do it. 
 
 Go into this conversation knowing which ground to concede immediately, because conceding it early is what makes the rest of the discussion possible.
 
-They are right that a lot of this is learnable. They are right that outsourcing everything creates dependency — a founder who has never touched their own deployment is one bad relationship away from being stuck. They are right that nobody understands your product's logic like they do. And they are right that some quotes for this work are absurd; agencies price rebuilds at €20,000–€500,000, and if that is the number in their head, "we can do it ourselves" is a completely rational reaction.
+They are right that a lot of this is learnable. They are right that outsourcing everything creates dependency - a founder who has never touched their own deployment is one bad relationship away from being stuck. They are right that nobody understands your product's logic like they do. And they are right that some quotes for this work are absurd; agencies price rebuilds at €20,000–€500,000, and if that is the number in their head, "we can do it ourselves" is a completely rational reaction.
 
 Say all of that out loud. Then narrow the question to the only part that actually matters: not *can we*, but *should we, given what else this person's hours could buy, and given what happens if we're wrong.*
 
 ## The Part That Doesn't Get Learned in a Weekend
 
-There is a category of work where the risk is not difficulty but *knowing what to look for* — and that distinction is worth explaining to a non-technical founder plainly, because it is the crux.
+There is a category of work where the risk is not difficulty but *knowing what to look for* - and that distinction is worth explaining to a non-technical founder plainly, because it is the crux.
 
 Building a login screen is a task with a visible finish line: it works or it doesn't. Making sure no logged-in user can read another user's records is not a task, it is a *sweep*. It means going through every route, every query, every file upload and every export, and asking the same question each time. Miss one and everything still looks fine. There is no error message. The product behaves perfectly right up until someone changes a number in a web address and sees a stranger's data.
 
-The same shape applies elsewhere. A payment integration takes an afternoon to make work and considerably longer to make correct — because the correctness lives in the paths that only run occasionally: a webhook that arrives twice, a card that fails on renewal in month four, a refund, a cancellation mid-period. None of those happen while you're building, so none of them get noticed until they happen to a customer.
+The same shape applies elsewhere. A payment integration takes an afternoon to make work and considerably longer to make correct - because the correctness lives in the paths that only run occasionally: a webhook that arrives twice, a card that fails on renewal in month four, a refund, a cancellation mid-period. None of those happen while you're building, so none of them get noticed until they happen to a customer.
 
 This is what experience buys, and it is genuinely hard to substitute: not the ability to write the fix, but the instinct for where to look. Someone who has hardened forty products knows the seven places it's usually wrong. Someone hardening their first knows the two places they read about.
 
@@ -85,19 +85,19 @@ This is what experience buys, and it is genuinely hard to substitute: not the ab
 
 Do this arithmetic together, on paper, without either of you arguing. It settles things faster than any debate.
 
-**Hours.** Ask your co-founder for a realistic estimate of the full sweep — not the fun part, the sweep — and then apply the multiplier every honest engineer applies to their own estimates. If they say two weekends, budget four. Say sixty to eighty evening hours for a typical prototype with accounts, data and payments.
+**Hours.** Ask your co-founder for a realistic estimate of the full sweep - not the fun part, the sweep - and then apply the multiplier every honest engineer applies to their own estimates. If they say two weekends, budget four. Say sixty to eighty evening hours for a typical prototype with accounts, data and payments.
 
-**What those hours cost.** Not their salary. Their alternative. Sixty hours of your only technical person is roughly three weeks of product work — three weeks of features, customer conversations, or fixes that don't ship.
+**What those hours cost.** Not their salary. Their alternative. Sixty hours of your only technical person is roughly three weeks of product work - three weeks of features, customer conversations, or fixes that don't ship.
 
 **Delay.** If those hours come out of evenings, sixty hours at ten hours a week is six weeks. Compare that to a fixed 1–3 week delivery. The difference is four weeks of launch date, and if you have paying customers waiting or a runway clock, four weeks has a euro value you can actually name.
 
 **The miss.** Multiply your honest odds of missing something serious by what missing it costs. A data exposure with real customer records is not a bug, it is notification obligations, refunds and reputation. Even a 20% chance of a €10,000-shaped problem prices at €2,000.
 
-Now compare the total to the quote. Sometimes the quote wins by a mile. Sometimes it doesn't — a founder with real time and a simple product will occasionally come out genuinely ahead, and if they do, the answer is build it yourselves, cheerfully. What you have gained either way is a decision made on numbers instead of on who sounded more confident.
+Now compare the total to the quote. Sometimes the quote wins by a mile. Sometimes it doesn't - a founder with real time and a simple product will occasionally come out genuinely ahead, and if they do, the answer is build it yourselves, cheerfully. What you have gained either way is a decision made on numbers instead of on who sounded more confident.
 
 ## The Three-Question Test
 
-If you want the fastest possible version of this, ask your co-founder three questions. You will not need to understand the answers technically — you only need to notice how specific they are.
+If you want the fastest possible version of this, ask your co-founder three questions. You will not need to understand the answers technically - you only need to notice how specific they are.
 
 **"Where in our code do we check that a user can only see their own data, and how many places is that check written?"** A confident, specific answer with a number is a good sign. "It's handled by Supabase" is not an answer; it is the name of a tool that handles it only if configured to.
 
@@ -111,15 +111,15 @@ Three specific answers: they probably can do it, and you should let them. Three 
 
 The best outcome is rarely all-or-nothing, and framing it as such is what turns this into a fight.
 
-Buy the sweep. Build the rest. Bring in an external pair of eyes for the categories where *knowing where to look* is the whole job — access control across every route, secrets that shouldn't be in the browser, the payment state machine, a restore you have actually tested — and keep the product logic, the frontend and everything your co-founder finds interesting in-house.
+Buy the sweep. Build the rest. Bring in an external pair of eyes for the categories where *knowing where to look* is the whole job - access control across every route, secrets that shouldn't be in the browser, the payment state machine, a restore you have actually tested - and keep the product logic, the frontend and everything your co-founder finds interesting in-house.
 
-This works for two reasons that matter more than the cost. Your co-founder keeps ownership of the product and does not become a bystander in their own company. And a well-run engagement hands back documented, readable code, which means the sweep is also the fastest technical education your co-founder will get — they see, in their own codebase, the seven places it's usually wrong.
+This works for two reasons that matter more than the cost. Your co-founder keeps ownership of the product and does not become a bystander in their own company. And a well-run engagement hands back documented, readable code, which means the sweep is also the fastest technical education your co-founder will get - they see, in their own codebase, the seven places it's usually wrong.
 
-The frontend they built stays untouched. That is not a compromise offered to soothe anyone; it is how last-mile work is supposed to work, and it removes the specific fear — "someone will rewrite my product and I won't recognise it" — that is usually sitting underneath "we can build it ourselves."
+The frontend they built stays untouched. That is not a compromise offered to soothe anyone; it is how last-mile work is supposed to work, and it removes the specific fear - "someone will rewrite my product and I won't recognise it" - that is usually sitting underneath "we can build it ourselves."
 
-Unlike a freelancer picked off a marketplace, LaunchStudio is backed by Manifera — [an engineering organisation](https://www.manifera.com/about-us/) trusted by Vodafone, TNO and CFLW, which is why the sweep comes back documented rather than as a black box your co-founder has to reverse-engineer.
+Unlike a freelancer picked off a marketplace, LaunchStudio is backed by Manifera - [an engineering organisation](https://www.manifera.com/about-us/) trusted by Vodafone, TNO and CFLW, which is why the sweep comes back documented rather than as a black box your co-founder has to reverse-engineer.
 
-If the two of you can't settle it in the abstract, settle it with evidence: [send us your prototype link for a free look](https://launchstudio.eu/en/#contact). A specific list of what is and isn't already handled ends this argument in a way that no amount of discussing it ever will — and sometimes the list vindicates your co-founder entirely.
+If the two of you can't settle it in the abstract, settle it with evidence: [send us your prototype link for a free look](https://launchstudio.eu/en/#contact). A specific list of what is and isn't already handled ends this argument in a way that no amount of discussing it ever will - and sometimes the list vindicates your co-founder entirely.
 
 ## Real example
 
@@ -127,16 +127,16 @@ If the two of you can't settle it in the abstract, settle it with evidence: [sen
 
 Femke Doornbos and her co-founder Tim ran Rondje, a Utrecht-based booking tool for neighbourhood sports clubs, built in Lovable with Tim doing the technical work in Cursor. Femke had a €2,900 quote for hardening. Tim had a plan involving three weekends. They had been circling it for six weeks, and the product had not launched in either direction.
 
-They broke the deadlock by asking for a free review rather than committing to work. The findings split neatly, and neither of them had predicted the split. Tim had, in fact, already handled more than Femke expected: sessions, password reset, and a sensible database structure were all sound. But club-level authorization existed in exactly two of eleven API routes, the mapping API key was visible in the browser, and Rondje's Mollie integration accepted payment notifications without verifying they came from Mollie — meaning a crafted request could mark a club as paid.
+They broke the deadlock by asking for a free review rather than committing to work. The findings split neatly, and neither of them had predicted the split. Tim had, in fact, already handled more than Femke expected: sessions, password reset, and a sensible database structure were all sound. But club-level authorization existed in exactly two of eleven API routes, the mapping API key was visible in the browser, and Rondje's Mollie integration accepted payment notifications without verifying they came from Mollie - meaning a crafted request could mark a club as paid.
 
 They bought the sweep and Tim kept the rest. Eleven routes brought under one club-scoped policy, the key rotated and moved server-side, notification verification and duplicate handling added. Tim spent those two weeks shipping the waiting-list feature three clubs had been asking for.
 
-**Result:** Rondje launched eighteen days later with nine paying clubs, and Tim used the documented changes as a template when he added two new routes himself the following month — checking club scope on both without being reminded.
+**Result:** Rondje launched eighteen days later with nine paying clubs, and Tim used the documented changes as a template when he added two new routes himself the following month - checking club scope on both without being reminded.
 
 > *"I wasn't wrong that I could do it. I was wrong about how many places it needed doing. Seeing the list of eleven was worth more than the argument."*
-> — **Femke Doornbos, Co-Founder, Rondje (Utrecht)**
+> - **Femke Doornbos, Co-Founder, Rondje (Utrecht)**
 
-**Cost & Timeline:** €2,900 (Launch Ready Package, authorization sweep, secrets and payment verification) — live in 11 business days.
+**Cost & Timeline:** €2,900 (Launch Ready Package, authorization sweep, secrets and payment verification) - live in 11 business days.
 
 ---
 
@@ -152,15 +152,15 @@ Then let them do it, and use the three questions as confirmation rather than cha
 
 ### Doesn't paying someone external make us dependent on them?
 
-Not if the engagement returns documented code in your own repository, which is the standard to insist on. The failure mode to avoid is a black box you cannot modify — and a good handover actually reduces dependency, because your co-founder can see and reuse the patterns that were applied.
+Not if the engagement returns documented code in your own repository, which is the standard to insist on. The failure mode to avoid is a black box you cannot modify - and a good handover actually reduces dependency, because your co-founder can see and reuse the patterns that were applied.
 
 ### Can we split the work so my co-founder does part of it?
 
-That is usually the best outcome. Buy the categories where the difficulty is knowing where to look — access control across every route, exposed secrets, the payment state machine, a tested restore — and keep product logic and frontend in-house where your co-founder's context is most valuable.
+That is usually the best outcome. Buy the categories where the difficulty is knowing where to look - access control across every route, exposed secrets, the payment state machine, a tested restore - and keep product logic and frontend in-house where your co-founder's context is most valuable.
 
 ### What if my co-founder simply refuses and I think they're wrong?
 
-Get a free external review before escalating the disagreement. A specific findings list either vindicates them, which resolves it, or gives you something concrete to discuss that isn't a clash of confidence — and both outcomes are better than another six weeks unlaunched.
+Get a free external review before escalating the disagreement. A specific findings list either vindicates them, which resolves it, or gives you something concrete to discuss that isn't a clash of confidence - and both outcomes are better than another six weeks unlaunched.
 
 <script type="application/ld+json">
 {

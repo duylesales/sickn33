@@ -31,13 +31,13 @@ Doelgroep: Finance Leads / Full-Stack Developers
 }
 </script>
 
-Het mooie van het bouwen van een SaaS-startup is dat uw software direct toegankelijk is voor iedereen ter wereld. De schaduwzijde is dat uw software daarmee direct onderhevig is aan het belastingrecht van elk land ter wereld. Zodra uw AI-tool wereldwijd tractie krijgt, bent u wettelijk verplicht om te navigeren tussen Europese btw (EU VAT), Britse VAT, Canadese GST, Australische GST en een doolhof van Amerikaanse State Sales Taxes. Dit negeren is geen hypothetisch risico — het is financiële zelfmoord die doorgaans anderhalf jaar later aan het licht komt via een onaangekondigde belastingaudit met forse naheffingen. Hier leest u hoe u dit volledig automatiseert met Stripe Tax.
+Het mooie van het bouwen van een SaaS-startup is dat uw software direct toegankelijk is voor iedereen ter wereld. De schaduwzijde is dat uw software daarmee direct onderhevig is aan het belastingrecht van elk land ter wereld. Zodra uw AI-tool wereldwijd tractie krijgt, bent u wettelijk verplicht om te navigeren tussen Europese btw (EU VAT), Britse VAT, Canadese GST, Australische GST en een doolhof van Amerikaanse State Sales Taxes. Dit negeren is geen hypothetisch risico - het is financiële zelfmoord die doorgaans anderhalf jaar later aan het licht komt via een onaangekondigde belastingaudit met forse naheffingen. Hier leest u hoe u dit volledig automatiseert met Stripe Tax.
 
 ## De Wereldwijde SaaS-Belastingvalkuil
 
 Veel oprichters nemen ten onrechte aan dat ze uitsluitend Amerikaanse belasting verschuldigd zijn omdat hun onderneming als LLC in Delaware staat geregistreerd. Dit is pertinent onjuist. Software wordt in vrijwel alle fiscale jurisdicties geclassificeerd als een "digitale dienst" of "elektronisch geleverde dienst", waarbij het heffingsrecht de *locatie van de koper* volgt, niet die van de verkoper.
 
-Sluit een klant in Berlijn een abonnement van € 20 per maand af op uw AI-tool, dan verplicht de Europese Unie u wettelijk om 19% Duitse btw (MwSt) te heffen en af te dragen aan de Duitse belastingdienst — zelfs als uw bedrijf geen enkele fysieke aanwezigheid in Duitsland heeft. In de VS geldt het principe van "Economic Nexus": verkoopt u boven een bepaalde drempelwaarde (bijv. $ 100.000 aan omzet of 200 transacties, afhankelijk van de staat) aan klanten in New York, dan moet u zich registreren en New York State Sales Tax inhouden. Het handmatig bijhouden van de belastingregels in circa 195 landen en 50 Amerikaanse staten is voor een softwareteam onmogelijk, en niet-afgedragen btw leidt direct tot rente en boetes van 10% tot 50%.
+Sluit een klant in Berlijn een abonnement van € 20 per maand af op uw AI-tool, dan verplicht de Europese Unie u wettelijk om 19% Duitse btw (MwSt) te heffen en af te dragen aan de Duitse belastingdienst - zelfs als uw bedrijf geen enkele fysieke aanwezigheid in Duitsland heeft. In de VS geldt het principe van "Economic Nexus": verkoopt u boven een bepaalde drempelwaarde (bijv. $ 100.000 aan omzet of 200 transacties, afhankelijk van de staat) aan klanten in New York, dan moet u zich registreren en New York State Sales Tax inhouden. Het handmatig bijhouden van de belastingregels in circa 195 landen en 50 Amerikaanse staten is voor een softwareteam onmogelijk, en niet-afgedragen btw leidt direct tot rente en boetes van 10% tot 50%.
 
 ## De Oplossing: Stripe Tax
 
@@ -54,7 +54,7 @@ Uw backend-architectuur vereist minimale aanpassingen: u registreert uw **origin
 
 ## B2B-Verkopen en de Btw-Verleggingsregeling (Reverse Charge)
 
-Bouwt u een B2B AI-tool, dan wordt belastingheffing complexer. Binnen de EU brengt u bij verkoop aan particulieren (B2C) het lokale btw-tarief van het land van de consument in rekening. Verkoopt u echter grensoverschrijdend aan een ander geregistreerd bedrijf (B2B), dan geldt doorgaans 0% btw onder de **Btw-verleggingsregeling (Reverse Charge)** — de kopende partij verwerkt de btw zelf in de eigen nationale aangifte.
+Bouwt u een B2B AI-tool, dan wordt belastingheffing complexer. Binnen de EU brengt u bij verkoop aan particulieren (B2C) het lokale btw-tarief van het land van de consument in rekening. Verkoopt u echter grensoverschrijdend aan een ander geregistreerd bedrijf (B2B), dan geldt doorgaans 0% btw onder de **Btw-verleggingsregeling (Reverse Charge)** - de kopende partij verwerkt de btw zelf in de eigen nationale aangifte.
 
 Om dit handmatig te doen, zou u een systeem moeten bouwen dat btw-nummers verzamelt, in realtime de VIES-database van de Europese Commissie bevraagt om de geldigheid te verifiëren, en vervolgens dynamisch de prijs in de checkout aanpast. Stripe Tax handelt dit standaard af via `tax_id_collection`. Zodra de zakelijke klant een geldig btw-nummer invoert, valideert Stripe dit direct tegen VIES, verlaagt het btw-tarief naar 0% en voegt automatisch de verplichte juridische verleggingstekst toe aan de factuur.
 
@@ -98,7 +98,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 **Resultaat:** Facturatie en btw-berekeningen zijn nu 100% compliant in alle doellanden, waardoor juridische en fiscale risico's volledig zijn weggenomen.
 
-**Kosten & Tijdlijn:** €1.400 (Stripe Tax Integratie Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.400 (Stripe Tax Integratie Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 
@@ -122,7 +122,7 @@ Binnen de EU wordt bij grensoverschrijdende B2B-verkopen 0% btw geheven mits de 
 
 ### Implementeert LaunchStudio alleen Stripe Tax of de complete facturatiestack?
 
-LaunchStudio implementeert Stripe Tax doorgaans als onderdeel van een bredere audit — inclusief abonnementslogica, webhooks, creditledgers en facturatie — zodat uw complete betaalstroom enterprise-ready is.
+LaunchStudio implementeert Stripe Tax doorgaans als onderdeel van een bredere audit - inclusief abonnementslogica, webhooks, creditledgers en facturatie - zodat uw complete betaalstroom enterprise-ready is.
 
 <script type="application/ld+json">
 {
@@ -166,7 +166,7 @@ LaunchStudio implementeert Stripe Tax doorgaans als onderdeel van een bredere au
       "name": "Implementeert LaunchStudio alleen Stripe Tax of de complete facturatiestack?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio implementeert Stripe Tax doorgaans als onderdeel van een bredere audit — inclusief abonnementslogica, webhooks, creditledgers en facturatie — zodat uw complete betaalstroom enterprise-ready is."
+        "text": "LaunchStudio implementeert Stripe Tax doorgaans als onderdeel van een bredere audit - inclusief abonnementslogica, webhooks, creditledgers en facturatie - zodat uw complete betaalstroom enterprise-ready is."
       }
     }
   ]

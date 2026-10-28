@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An operations director or technical lead at a wealth management firm scoping a client advisory and recommendation platform faces a specific regulatory reality that's easy to underweight during architecture planning: rules governing what constitutes a suitable investment recommendation for a given client — the specific disclosures required, the risk-profiling methodology mandated, and which product categories may even be offered to a retail-classified client at all — differ meaningfully across jurisdictions, with the EU's MiFID II regime imposing specific, prescriptive suitability and appropriateness testing obligations that don't map cleanly onto other regimes' more principles-based suitability standards elsewhere. A system architected around a single, uniform suitability ruleset across all markets risks either genuine regulatory non-compliance in stricter jurisdictions or unnecessarily restricting permissible product recommendations in more permissive ones.
+An operations director or technical lead at a wealth management firm scoping a client advisory and recommendation platform faces a specific regulatory reality that's easy to underweight during architecture planning: rules governing what constitutes a suitable investment recommendation for a given client - the specific disclosures required, the risk-profiling methodology mandated, and which product categories may even be offered to a retail-classified client at all - differ meaningfully across jurisdictions, with the EU's MiFID II regime imposing specific, prescriptive suitability and appropriateness testing obligations that don't map cleanly onto other regimes' more principles-based suitability standards elsewhere. A system architected around a single, uniform suitability ruleset across all markets risks either genuine regulatory non-compliance in stricter jurisdictions or unnecessarily restricting permissible product recommendations in more permissive ones.
 
 ## Why a Single Global Configuration Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A client advisory platform built around a single, globally uniform suitability r
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around jurisdiction-configurable suitability rules — able to apply, modify, or restrict specific risk-profiling questions, disclosure requirements, and product-eligibility rules based on a client's actual regulatory classification — lets a firm comply with each market's specific requirements without forgoing legitimate advisory flexibility in markets where a less restrictive standard remains legally permissible. This isn't simply a matter of geofencing a single product category on or off, since suitability requirements can be more nuanced than a binary allow/disallow — some jurisdictions focus specifically on enhanced disclosure and documented rationale for a given recommendation rather than an outright product restriction, meaning the underlying system needs to support genuinely configurable suitability logic, not just a global on/off switch, to accommodate the actual range of regulatory approaches across a firm's client base.
+A system architected from the start around jurisdiction-configurable suitability rules - able to apply, modify, or restrict specific risk-profiling questions, disclosure requirements, and product-eligibility rules based on a client's actual regulatory classification - lets a firm comply with each market's specific requirements without forgoing legitimate advisory flexibility in markets where a less restrictive standard remains legally permissible. This isn't simply a matter of geofencing a single product category on or off, since suitability requirements can be more nuanced than a binary allow/disallow - some jurisdictions focus specifically on enhanced disclosure and documented rationale for a given recommendation rather than an outright product restriction, meaning the underlying system needs to support genuinely configurable suitability logic, not just a global on/off switch, to accommodate the actual range of regulatory approaches across a firm's client base.
 
 ## What Building Jurisdiction-Configurable Suitability Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Grenzüberschreitende Vermögensverwaltung Graz, a Graz-based wealth management 
 Manifera's Amsterdam team rebuilt the platform's core suitability engine around a configurable, jurisdiction-specific ruleset, supporting both the prescriptive risk-profiling and disclosure obligations MiFID II requires and enhanced documented-rationale logic for jurisdictions with stricter recordkeeping requirements, alongside reliable client classification determination, all without requiring separate, parallel advisory systems per jurisdiction.
 
 > *"We'd built one suitability model and assumed it was rigorous enough to work everywhere. It turned out MiFID II specifically required a depth of risk-profiling and documentation our original model simply hadn't been built for, and building real configurability was what let us keep advising clients properly across all our target markets rather than just retreating to our home market."*
-> — **Operations Director, Grenzüberschreitende Vermögensverwaltung Graz**
+> - **Operations Director, Grenzüberschreitende Vermögensverwaltung Graz**
 
 Grenzüberschreitende Vermögensverwaltung Graz successfully expanded its advisory operations into its additional target markets with jurisdiction-appropriate suitability configurations, and now treats regulatory configurability as a standard architectural requirement for any new advisory market, rather than a single global model decided once.
 
@@ -79,7 +79,7 @@ Grenzüberschreitende Vermögensverwaltung Graz successfully expanded its adviso
 
 ## Scoping Your Own Wealth Management Platform's Suitability Engine for Cross-Border Compliance
 
-Before building or expanding a client advisory and recommendation platform across multiple jurisdictions, architect the suitability engine around genuinely configurable, jurisdiction-specific rulesets — a single global ruleset forces an unnecessary trade-off between compliance risk and advisory flexibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready wealth management advisory platform.
+Before building or expanding a client advisory and recommendation platform across multiple jurisdictions, architect the suitability engine around genuinely configurable, jurisdiction-specific rulesets - a single global ruleset forces an unnecessary trade-off between compliance risk and advisory flexibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready wealth management advisory platform.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between limiting recommendations to the strictest jurisdictio
 
 ### (Scenario: engineering lead scoping jurisdiction configurability) Is a simple product-category on/off switch sufficient to handle suitability regulation across markets?
 
-Not always — some jurisdictions focus on enhanced disclosure and documented rationale rather than outright product restriction, meaning the system needs genuinely configurable suitability logic per jurisdiction, not just a binary enable/disable switch.
+Not always - some jurisdictions focus on enhanced disclosure and documented rationale rather than outright product restriction, meaning the system needs genuinely configurable suitability logic per jurisdiction, not just a binary enable/disable switch.
 
 ### (Scenario: compliance counsel reviewing technical architecture) Why does reliable client jurisdiction and classification determination matter for regulatory compliance?
 
@@ -110,7 +110,7 @@ Suitability and investor-protection regulation is a genuinely active, evolving a
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: operations director scoping a client advisory platform) Why does suitability regulation vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Different regimes, notably MiFID II's prescriptive obligations versus more principles-based standards elsewhere, take varying positions on suitable recommendations." } },
     { "@type": "Question", "name": "(Scenario: firm worried about compliance) What's the risk of building an advisory platform around a single, globally uniform suitability ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between limiting recommendations to the strictest jurisdiction or risking non-compliance in stricter markets." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping jurisdiction configurability) Is a simple product-category on/off switch sufficient to handle suitability regulation across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some jurisdictions focus on disclosure and documented rationale rather than restriction, requiring genuine configurability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping jurisdiction configurability) Is a simple product-category on/off switch sufficient to handle suitability regulation across markets?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some jurisdictions focus on disclosure and documented rationale rather than restriction, requiring genuine configurability." } },
     { "@type": "Question", "name": "(Scenario: compliance counsel reviewing technical architecture) Why does reliable client jurisdiction and classification determination matter for regulatory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying jurisdiction-specific rules correctly depends on accurately identifying regime and classification, a nuance beyond simple residency lookup." } },
     { "@type": "Question", "name": "(Scenario: firm planning for future regulatory change) Why should an advisory platform be designed to accommodate evolving regulation, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Suitability regulation is genuinely active and evolving, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

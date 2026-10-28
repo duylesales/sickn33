@@ -12,7 +12,7 @@ De allergrootste barrière voor de brede adoptie van zakelijke enterprise AI is 
 
 Data-Herkomst (Data Provenance) is de traceerbare, historische levensloop van een specifiek stukje informatie binnen een softwaresysteem. In een Retrieval-Augmented Generation (RAG) pijplijn doorzoekt uw AI een kennisbank van 10.000 PDF-documenten, extraheert een statistisch gegeven of omzetcijfer en formuleert een samenvattende conclusie. De zakelijke professional die deze samenvatting leest stelt onvermijdelijk de vraag: *"Waar is dit specifieke getal exact op gebaseerd en uit welk document komt het?"*
 
-Als uw gebruikersinterface deze vraag niet binnen één seconde kan beantwoorden, moet de gebruiker alsnog handmatig door de originele PDF's graven om het getal te controleren. Als de gebruiker het werk alsnog handmatig moet doen, levert uw AI-software netto nul operationele waarde op — u heeft simpelweg een tragere, onbetrouwbare tussenlaag toegevoegd aan een bestaand proces. U moet uw interface zo ontwerpen dat deze zijn eigen accuratesse bij elke interactie direct en onomstotelijk bewijst.
+Als uw gebruikersinterface deze vraag niet binnen één seconde kan beantwoorden, moet de gebruiker alsnog handmatig door de originele PDF's graven om het getal te controleren. Als de gebruiker het werk alsnog handmatig moet doen, levert uw AI-software netto nul operationele waarde op - u heeft simpelweg een tragere, onbetrouwbare tussenlaag toegevoegd aan een bestaand proces. U moet uw interface zo ontwerpen dat deze zijn eigen accuratesse bij elke interactie direct en onomstotelijk bewijst.
 
 Dit is geen optionele feature voor later; het is vaak de beslissende factor in enterprise-aanbestedingen. Security- en compliance-auditors vragen altijd: "Kan uw systeem zijn bronnen verantwoorden?" Aangezien circa 45% van de met AI gegenereerde code kwetsbaarheden bevat wanneer er geen engineeringreview plaatsvindt, fungeert een transparante bronvermeldings-UI als het ultieme tegenwicht voor de "black box".
 
@@ -73,7 +73,7 @@ Hij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om vect
 
 **Resultaat:** Antwoorden tonen nu klikbare citaties die direct linken naar de exacte PDF-pagina's van klinische onderzoeken, wat de gebruikersbetrouwbaarheid met 90% deed stijgen.
 
-**Kosten & Tijdlijn:** €1.550 (Citation Rendering Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.550 (Citation Rendering Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

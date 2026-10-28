@@ -48,7 +48,7 @@ Het testen van een document-uploadfunctie met eerlijke, legitieme documenten –
 
 ## Waarom juridische en documentverwerkende producten deze vraag heel direct stellen
 
-Een platform dat specifiek is gebouwd rond het genereren, uitwisselen en archiveren van juridische of zakelijke documenten verwerkt van nature een hoog volume aan bestandsuploads als kern van zijn bestaansrecht. Dit betekent dat deze categorie risico's geen perifere zorg is — het bevindt zich pal in het centrum van wat het product dagelijks doet. Dezelfde logica geldt voor elk platform waar documentuploads geen secundaire optie zijn maar de primaire interactie: een HR-portaal dat cv's en identiteitsbewijzen verzamelt, een schadeclaim-app die foto's en nota's accepteert, of een medisch intakeformulier. In al deze gevallen is een uploadkloof geen zeldzaam randgeval dat ooit misschien gevonden wordt, maar een dagelijks risico dat wacht op de eerste die het gericht probeert.
+Een platform dat specifiek is gebouwd rond het genereren, uitwisselen en archiveren van juridische of zakelijke documenten verwerkt van nature een hoog volume aan bestandsuploads als kern van zijn bestaansrecht. Dit betekent dat deze categorie risico's geen perifere zorg is - het bevindt zich pal in het centrum van wat het product dagelijks doet. Dezelfde logica geldt voor elk platform waar documentuploads geen secundaire optie zijn maar de primaire interactie: een HR-portaal dat cv's en identiteitsbewijzen verzamelt, een schadeclaim-app die foto's en nota's accepteert, of een medisch intakeformulier. In al deze gevallen is een uploadkloof geen zeldzaam randgeval dat ooit misschien gevonden wordt, maar een dagelijks risico dat wacht op de eerste die het gericht probeert.
 
 
 ## Wat het op de juiste manier herstellen hiervan vereist
@@ -57,7 +57,7 @@ Een correcte herstelling verifieert de daadwerkelijke inhoud van een geüpload b
 
 Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg een gratis blik op uw prototype — stuur simpelweg de link](https://launchstudio.eu/nl/#contact).
+[Krijg een gratis blik op uw prototype - stuur simpelweg de link](https://launchstudio.eu/nl/#contact).
 
 ## Een Praktisch Kader voor het Evalueren van Elke Uploadfunctie
 
@@ -91,9 +91,9 @@ Een beveiligingsonderzoeker die verschillende MKB-tools testte als onderdeel van
 **Resultaat:** LaunchStudio implementeerde de juiste typeverificatie van inhoud op elk geüpload bestand, wat alles weigert waarvan de daadwerkelijke inhoud niet overeenkomt met het geclaimde type. Dit sloot de kloof voordat het misbruikt kon worden.
 
 > *"De onderzoeker was compleet transparant en verantwoordelijk, waar ik oprecht dankbaar voor ben. Het had net zo goed iemand kunnen zijn die exact hetzelfde testte zonder enige intentie om het ons te vertellen."*
-> — **Floor Aerts, Oprichter, ContractKlaar (Woerden)**
+> - **Floor Aerts, Oprichter, ContractKlaar (Woerden)**
 
-**Kosten en tijdlijn:** € 2.400 (implementatie van verificatie van bestandsinhoud) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (implementatie van verificatie van bestandsinhoud) - voltooid in 8 werkdagen.
 
 ---
 
@@ -105,7 +105,7 @@ Omdat een bestandsextensie slechts een label is dat een gebruiker of aanvaller n
 
 ### Is het opslaan van geüploade bestanden in een cloud-bucket zoals S3 altijd veiliger dan lokale schijfopslag?
 
-Aanzienlijk veiliger qua serverintegriteit — een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot.
+Aanzienlijk veiliger qua serverintegriteit - een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot.
 
 ### Hoe pakt Manifera het beveiligen van documentverwerkende architecturen aan?
 
@@ -113,7 +113,7 @@ Door geüploade bestanden strikt te isoleren in afgeschermde buckets, bestandsna
 
 ### Waarom ontdekken oprichters dit soort uploadrisico's zelden vóór de lancering?
 
-Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt — een scenario dat tijdens functionele demo's nooit spontaan wordt getest.
+Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt - een scenario dat tijdens functionele demo's nooit spontaan wordt getest.
 
 ### Wat is de meest effectieve directe maatregel om het risico van openbare uploads te beperken?
 
@@ -137,7 +137,7 @@ Zorg ervoor dat bestanden die door gebruikers worden gedownload altijd worden ge
       "name": "Is het opslaan van geüploade bestanden in een cloud-bucket zoals S3 altijd veiliger dan lokale schijfopslag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanzienlijk veiliger qua serverintegriteit — een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot."
+        "text": "Aanzienlijk veiliger qua serverintegriteit - een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot."
       }
     },
     {
@@ -153,7 +153,7 @@ Zorg ervoor dat bestanden die door gebruikers worden gedownload altijd worden ge
       "name": "Waarom ontdekken oprichters dit soort uploadrisico's zelden vóór de lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt — een scenario dat tijdens functionele demo's nooit spontaan wordt getest."
+        "text": "Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt - een scenario dat tijdens functionele demo's nooit spontaan wordt getest."
       }
     },
     {

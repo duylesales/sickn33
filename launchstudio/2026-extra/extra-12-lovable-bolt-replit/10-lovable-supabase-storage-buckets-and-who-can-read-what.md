@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Ask an AI tool to add file uploads and it will produce something that works within a minute. It creates a bucket, marks it public, uploads the file and stores the resulting URL. Every screenshot, invoice, identity document and medical form your users upload is then readable by anyone who has the address — and the addresses are frequently guessable.
+Ask an AI tool to add file uploads and it will produce something that works within a minute. It creates a bucket, marks it public, uploads the file and stores the resulting URL. Every screenshot, invoice, identity document and medical form your users upload is then readable by anyone who has the address - and the addresses are frequently guessable.
 
 "Public" in Supabase storage does not mean "public to logged-in users". It means a URL that requires no authentication at all: no session, no token, no expiry. The file is on the open internet.
 
@@ -34,7 +34,7 @@ Anyone with the URL can read the file forever, including after the user deletes 
 
 URLs leak by ordinary means. They appear in support emails, in browser history, in the referrer header sent to third-party analytics, in screenshots shared in chat, and in any page that renders them. Once a URL exists it travels.
 
-And if filenames are predictable — sequential numbers, user IDs, original filenames — the bucket can be walked. An attacker who finds one document at a guessable path will try the next hundred, and AI-generated upload code names files predictably far more often than not.
+And if filenames are predictable - sequential numbers, user IDs, original filenames - the bucket can be walked. An attacker who finds one document at a guessable path will try the next hundred, and AI-generated upload code names files predictably far more often than not.
 
 For a product handling anything a person would consider private, this is a data breach waiting for someone to notice, with notification obligations attached.
 
@@ -44,7 +44,7 @@ Not everything needs protecting, and treating every file as sensitive makes your
 
 Public buckets are correct for genuinely public assets: marketing images, logos, public profile pictures on a directory that is itself public, downloadable brochures. Anything a visitor could see anyway.
 
-The test is simple and worth applying file by file. If this object appeared on a search engine, would anyone care? If the answer is no, public is fine and simpler. If the answer is yes — even slightly — it belongs in a private bucket.
+The test is simple and worth applying file by file. If this object appeared on a search engine, would anyone care? If the answer is no, public is fine and simpler. If the answer is yes - even slightly - it belongs in a private bucket.
 
 Most products end up with both, and that is the right outcome: a public bucket for assets and a private one for everything users upload.
 
@@ -52,7 +52,7 @@ Most products end up with both, and that is the right outcome: a public bucket f
 
 A private bucket refuses anonymous access. Files are reached in one of two ways, and choosing between them is the main design decision.
 
-**Through the authenticated client**, where the user's session is checked against storage policies you write — the same kind of conditions as row-level security, but applied to object paths. This suits files displayed inside your application to a logged-in user.
+**Through the authenticated client**, where the user's session is checked against storage policies you write - the same kind of conditions as row-level security, but applied to object paths. This suits files displayed inside your application to a logged-in user.
 
 **Through a signed URL**, a temporary address your server generates that works for a defined period and then expires. This suits downloads, email links, and anything a browser must fetch directly, such as an image tag or a PDF viewer.
 
@@ -64,7 +64,7 @@ Storage policies match on the object's path, which makes the path layout the thi
 
 A good default puts the owner at the front: `organisation-id/user-id/document-id.pdf`. A policy can then say that a user may read objects whose first path segment matches an organisation they belong to, which is a single rule covering every file the product will ever store.
 
-The layout to avoid is a flat bucket of files named after the original upload, which makes ownership unknowable from the path and forces every check to become a database lookup — if it happens at all.
+The layout to avoid is a flat bucket of files named after the original upload, which makes ownership unknowable from the path and forces every check to become a database lookup - if it happens at all.
 
 Two more habits. Generate the filename yourself rather than trusting the one the user's computer supplied, both because original names leak information and because they collide. And keep a database row per file recording who uploaded it, when, its path, size and content type, so that the storage bucket is never your only record of what exists.
 
@@ -80,7 +80,7 @@ Storing uploads on a separate domain rather than your application's own removes 
 
 The migration is straightforward and worth doing in one sitting, because the intermediate state is worse than either end.
 
-Create the private bucket with its policies. Copy the objects across, rewriting paths into the owner-first layout as you go, and record each file's new path in your database. Change the application to request signed URLs instead of storing permanent ones — this is the part that touches the most code, because permanent URLs tend to have been saved into database columns and embedded in emails already sent.
+Create the private bucket with its policies. Copy the objects across, rewriting paths into the owner-first layout as you go, and record each file's new path in your database. Change the application to request signed URLs instead of storing permanent ones - this is the part that touches the most code, because permanent URLs tend to have been saved into database columns and embedded in emails already sent.
 
 Then leave the old bucket in place but blocked for a short period while you watch for anything still requesting it, and delete it afterwards.
 
@@ -90,7 +90,7 @@ The thing to check specifically: emails and exported documents that contain old 
 
 Photographs and screenshots make up most uploads in most products, and they bring two problems that documents do not.
 
-The first is size. A phone photograph is several megabytes, and a page displaying forty of them at thumbnail size while downloading the originals is slow for the user and expensive for you. Generate derivatives — a thumbnail and a display size — at upload time, store them alongside the original, and serve the smallest one that fits the context. Supabase can transform images on request, which is simpler than building a pipeline and adequate for most products.
+The first is size. A phone photograph is several megabytes, and a page displaying forty of them at thumbnail size while downloading the originals is slow for the user and expensive for you. Generate derivatives - a thumbnail and a display size - at upload time, store them alongside the original, and serve the smallest one that fits the context. Supabase can transform images on request, which is simpler than building a pipeline and adequate for most products.
 
 The second is metadata. Photographs carry EXIF data including, frequently, the GPS coordinates where they were taken. A product where users upload photographs of damage, property, equipment or themselves is a product quietly collecting location history. Strip EXIF on upload unless you have a reason to keep it, and if you keep it, say so in your privacy policy.
 
@@ -98,17 +98,17 @@ One more habit worth adopting: never trust an image's dimensions from the client
 
 ## Storage Costs Grow Quietly
 
-Unlike a database, storage rarely announces a problem — it simply appears on the invoice.
+Unlike a database, storage rarely announces a problem - it simply appears on the invoice.
 
 Three things drive it in AI-built products and all are avoidable. Originals kept forever when only derivatives are ever displayed. Orphans left behind by deleted records, uploads abandoned half-way through a form, and duplicates created when a user re-uploads after a failure. And egress, the cost of serving the same large file repeatedly because nothing is cached.
 
-A monthly count of objects and total bytes, compared against the number of files your database knows about, catches all three. When the two numbers diverge you have orphans, and a cleanup job that removes objects with no corresponding database row — run carefully, with a dry run first — usually reclaims more than founders expect.
+A monthly count of objects and total bytes, compared against the number of files your database knows about, catches all three. When the two numbers diverge you have orphans, and a cleanup job that removes objects with no corresponding database row - run carefully, with a dry run first - usually reclaims more than founders expect.
 
 ## Setting This Up
 
 For an existing app this is typically two to three days: buckets audited and classified, a private bucket created with path-based policies, objects migrated into an owner-first layout with a database row per file, server-side signed URL generation with expiries matched to use, upload validation by actual content type and size, generated filenames, the application updated to stop storing permanent URLs, old public links identified and retired, and a check that deleting a user's record also removes their objects.
 
-LaunchStudio handles this in security work on AI-built products, where it is among the most frequent findings. The engineering comes from Manifera — eleven years, 120+ engineers, and clients including Vodafone, TNO and CFLW who take file handling rather seriously.
+LaunchStudio handles this in security work on AI-built products, where it is among the most frequent findings. The engineering comes from Manifera - eleven years, 120+ engineers, and clients including Vodafone, TNO and CFLW who take file handling rather seriously.
 
 [Ask us to look at your bucket settings](https://launchstudio.eu/en/#contact). It takes ten minutes to check and it is usually the first thing we look at.
 
@@ -116,7 +116,7 @@ LaunchStudio handles this in security work on AI-built products, where it is amo
 
 ### Twelve Hundred Documents on the Open Internet
 
-Bram Nieuwenhuijs built Hypotheekmap with Lovable: a tool mortgage advisers use to collect documents from clients — payslips, employment contracts, bank statements, identity documents — and pass a complete file to the lender.
+Bram Nieuwenhuijs built Hypotheekmap with Lovable: a tool mortgage advisers use to collect documents from clients - payslips, employment contracts, bank statements, identity documents - and pass a complete file to the lender.
 
 Uploads went into a public bucket, named by the client's surname and the document type. The application worked well and 26 advisers were using it with around 400 clients.
 
@@ -126,16 +126,16 @@ Three business days: a private bucket with policies matching the organisation se
 
 **Result:** the exposure closed within the week. Bram reported the incident to the Autoriteit Persoonsgegevens with a description of the fix, and informed the 26 advisers and the clients whose documents had been reachable. Two advisers said the transparency was the reason they stayed.
 
-> *"He guessed one URL. There was no hacking involved — my file naming was the vulnerability, and I had chosen it because it made the admin screen easier to read."*
-> — **Bram Nieuwenhuijs, Founder, Hypotheekmap (Nieuwegein)**
+> *"He guessed one URL. There was no hacking involved - my file naming was the vulnerability, and I had chosen it because it made the admin screen easier to read."*
+> - **Bram Nieuwenhuijs, Founder, Hypotheekmap (Nieuwegein)**
 
-**Cost & Timeline:** €3,300 (bucket migration and policy design, path restructuring, file registry, server-side signed URLs, upload validation, link retirement, deletion handling, incident documentation) — completed in 3 business days.
+**Cost & Timeline:** €3,300 (bucket migration and policy design, path restructuring, file registry, server-side signed URLs, upload validation, link retirement, deletion handling, incident documentation) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
 ### Does a public Supabase bucket mean public to my logged-in users?
 
-No. It means readable by anyone on the internet with the URL — no session, no token, no expiry. For anything a user uploads, use a private bucket.
+No. It means readable by anyone on the internet with the URL - no session, no token, no expiry. For anything a user uploads, use a private bucket.
 
 ### Are signed URLs safe to email to customers?
 
@@ -163,7 +163,7 @@ Not unless you built it. Storage objects and database rows are separate systems,
       "name": "Does a public Supabase bucket mean public to logged-in users?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it is readable by anyone with the URL, with no authentication or expiry. User uploads belong in a private bucket."
+        "text": "No - it is readable by anyone with the URL, with no authentication or expiry. User uploads belong in a private bucket."
       }
     },
     {
@@ -187,7 +187,7 @@ Not unless you built it. Storage objects and database rows are separate systems,
       "name": "Should I keep the user's original filename?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Generate your own identifier — original names leak information, collide, and make buckets walkable. Store the display name in the database."
+        "text": "No. Generate your own identifier - original names leak information, collide, and make buckets walkable. Store the display name in the database."
       }
     },
     {

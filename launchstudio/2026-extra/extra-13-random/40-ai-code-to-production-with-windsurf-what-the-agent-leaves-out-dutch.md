@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-Code naar Productie met Windsurf: Wat de Agent Achterwege Laat",
-  "description": "De agentic workflow van Windsurf kan grote delen van een applicatie autonoom bouwen. Dit artikel behandelt wat de agent doorgaans overslaat wanneer je AI-code naar productie brengt: omgevingsscheiding, geheimen, autorisatiegrenzen, databasemigraties, wildgroei aan dependencies en observability — en hoe je elk hiaat structureel dicht.",
+  "description": "De agentic workflow van Windsurf kan grote delen van een applicatie autonoom bouwen. Dit artikel behandelt wat de agent doorgaans overslaat wanneer je AI-code naar productie brengt: omgevingsscheiding, geheimen, autorisatiegrenzen, databasemigraties, wildgroei aan dependencies en observability - en hoe je elk hiaat structureel dicht.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-09",
@@ -21,13 +21,13 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Windsurf heeft de manier waarop technische oprichters software bouwen fundamenteel veranderd. In plaats van regel voor regel suggesties te accepteren zoals bij traditionele autocompletion, beschrijf je een complete feature en gaat de AI-agent zelfstandig aan de slag: hij maakt een plan, bewerkt tientallen bestanden tegelijk, voert terminalcommando's uit, leest foutmeldingen en itereert tot het werkt. Complete functionaliteiten ontstaan binnen één enkele sessie. Juist die verbluffende autonomie maakt ontwikkelaars ongekend productief — maar maakt de kloof tussen "het draait lokaal" en "het is productierijp" verraderlijk lastig waarneembaar. Wanneer je met Windsurf gebouwde code naar productie brengt, review je werk dat je weliswaar hebt zien ontstaan, maar niet zelf hebt geschreven.
+Windsurf heeft de manier waarop technische oprichters software bouwen fundamenteel veranderd. In plaats van regel voor regel suggesties te accepteren zoals bij traditionele autocompletion, beschrijf je een complete feature en gaat de AI-agent zelfstandig aan de slag: hij maakt een plan, bewerkt tientallen bestanden tegelijk, voert terminalcommando's uit, leest foutmeldingen en itereert tot het werkt. Complete functionaliteiten ontstaan binnen één enkele sessie. Juist die verbluffende autonomie maakt ontwikkelaars ongekend productief - maar maakt de kloof tussen "het draait lokaal" en "het is productierijp" verraderlijk lastig waarneembaar. Wanneer je met Windsurf gebouwde code naar productie brengt, review je werk dat je weliswaar hebt zien ontstaan, maar niet zelf hebt geschreven.
 
 Dit artikel behandelt wat de AI-agent van Windsurf doorgaans over het hoofd ziet, waarom dat gebeurt en hoe je elk van deze hiaten structureel oplost.
 
 ## Waarom Autonome AI-Agents Andere Hiaten Achterlaten
 
-Eenvoudige code-aanvullers laten steken vallen op regelniveau: een ontbrekende validatie hier, een hardgecodeerde waarde daar. Autonome AI-agents laten echter hiaten vallen op *systeemniveau*. Een agent optimaliseert uitsluitend voor het succesvol afronden van zijn taak binnen de context die hij direct kan waarnemen: jouw lokale machine, jouw lokale ontwikkeldatabase en jouw `.env`-bestand. Zijn enige succescriterium is: "het commando slaagde, de pagina laadde en de test gaf groen licht." Alles wat pas relevant wordt in een andere context — een echte productieomgeving, gelijktijdige gebruikers, afwijkende tijdzones of kwaadwillende aanvallers — valt buiten zijn feedbacklus.
+Eenvoudige code-aanvullers laten steken vallen op regelniveau: een ontbrekende validatie hier, een hardgecodeerde waarde daar. Autonome AI-agents laten echter hiaten vallen op *systeemniveau*. Een agent optimaliseert uitsluitend voor het succesvol afronden van zijn taak binnen de context die hij direct kan waarnemen: jouw lokale machine, jouw lokale ontwikkeldatabase en jouw `.env`-bestand. Zijn enige succescriterium is: "het commando slaagde, de pagina laadde en de test gaf groen licht." Alles wat pas relevant wordt in een andere context - een echte productieomgeving, gelijktijdige gebruikers, afwijkende tijdzones of kwaadwillende aanvallers - valt buiten zijn feedbacklus.
 
 Bovendien voert de agent zelfstandig terminalcommando's uit. Hij installeert npm-packages, voert ad-hoc SQL-migraties uit en past build-configuraties aan. Die acties laten blijvende sporen na in het project die in een git-diff van honderden regels gemakkelijk over het hoofd worden gezien.
 
@@ -39,7 +39,7 @@ Agents bouwen tegen de omgeving die toevallig geconfigureerd staat. In de prakti
 
 ## Hiaat 2: Geheime Sleutels Waar de Agent Ze Nodig Had
 
-Wanneer een agent stuit op een authenticatiefout bij het aanroepen van een externe API, is zijn meest voor de hand liggende reflex om de geheime sleutel simpelweg te plaatsen op de plek waar de code er direct bij kan — soms in client-side frontendcode, soms in een configuratiebestand dat vervolgens geruisloos in git belandt. Het doel van de agent was immers om de API-aanroep te laten slagen; en dat is gelukt.
+Wanneer een agent stuit op een authenticatiefout bij het aanroepen van een externe API, is zijn meest voor de hand liggende reflex om de geheime sleutel simpelweg te plaatsen op de plek waar de code er direct bij kan - soms in client-side frontendcode, soms in een configuratiebestand dat vervolgens geruisloos in git belandt. Het doel van de agent was immers om de API-aanroep te laten slagen; en dat is gelukt.
 
 **De oplossing:** Scan de volledige git-geschiedenis met gespecialiseerde tools (zoals Gitleaks of TruffleHog), roteer direct alle aangetroffen sleutels, dwing af dat geheimen uitsluitend via server-side omgevingsvariabelen worden ingeladen en voeg automatische secret-scanning toe aan je CI/CD-pipeline.
 
@@ -63,13 +63,13 @@ Elke keer dat een agent een technisch probleem oplost door een extern npm-packag
 
 ## Hiaat 6: Foutafhandeling voor de Sessie, Niet voor de Gebruiker
 
-Wanneer een agent tijdens zijn iteratielus tegen een runtime-fout aanloopt, lost hij die op — soms simpelweg door een generieke `try/catch` toe te voegen waardoor de foutmelding verdwijnt. De sessie van de agent slaagt, maar in productie worden fatale systeemfouten hierdoor geruisloos weggemoffeld, waardoor gebruikers tegen witte schermen of niet-reagerende knoppen aanlopen zonder dat er ergens een logboek wordt bijgewerkt.
+Wanneer een agent tijdens zijn iteratielus tegen een runtime-fout aanloopt, lost hij die op - soms simpelweg door een generieke `try/catch` toe te voegen waardoor de foutmelding verdwijnt. De sessie van de agent slaagt, maar in productie worden fatale systeemfouten hierdoor geruisloos weggemoffeld, waardoor gebruikers tegen witte schermen of niet-reagerende knoppen aanlopen zonder dat er ergens een logboek wordt bijgewerkt.
 
 **De oplossing:** Evalueer alle error-handling, stuur onverwachte uitzonderingen direct door naar een centrale error-trackingdienst en zorg dat eindgebruikers een duidelijke, behulpzame foutmelding te zien krijgen in plaats van een stilzwijgende crash.
 
 ## Hiaat 7: Volledig Gebrek aan Observability
 
-Tijdens het ontwikkelen beschikte de agent over een open terminal waarin hij elke waarschuwing en stacktrace direct zag. In een live productieomgeving heb je noch een terminal, noch zicht op wat er gebeurt — tenzij je dit expliciet inricht.
+Tijdens het ontwikkelen beschikte de agent over een open terminal waarin hij elke waarschuwing en stacktrace direct zag. In een live productieomgeving heb je noch een terminal, noch zicht op wat er gebeurt - tenzij je dit expliciet inricht.
 
 **De oplossing:** Implementeer gecentraliseerde error-tracking (zoals Sentry), gestructureerde serverlogging met unieke request-ID's, externe uptime-monitoring en automatische escalatiemeldingen naar een echt persoon.
 
@@ -125,11 +125,11 @@ AI-agents lossen functionele vraagstukken graag op door externe packages te inst
 
 ## Observability voor met AI Gebouwde Apps
 
-Applicaties die grotendeels door agents zijn gegenereerd, hebben net iets meer logging en monitoring nodig dan handgeschreven systemen, simpelweg omdat niemand elke codetak van binnen en van buiten kent. Voorzie alle serverlogs van unieke request-ID's, stuur onverwerkte runtime-fouten direct door naar een centrale error-tracker, stel alerts in op afwijkende foutpatronen na een nieuwe release en meet cruciale bedrijfshandelingen (registraties, afgeronde betalingen, kerntaken) zodat een stilzwijgende storing direct zichtbaar wordt als een scherpe daling in een grafiek. Gaat er onverhoopt iets mis, dan stelt deze data jou — of de agent — in staat om binnen enkele minuten de vinger op de zere plek te leggen in plaats van in het duister te tasten.
+Applicaties die grotendeels door agents zijn gegenereerd, hebben net iets meer logging en monitoring nodig dan handgeschreven systemen, simpelweg omdat niemand elke codetak van binnen en van buiten kent. Voorzie alle serverlogs van unieke request-ID's, stuur onverwerkte runtime-fouten direct door naar een centrale error-tracker, stel alerts in op afwijkende foutpatronen na een nieuwe release en meet cruciale bedrijfshandelingen (registraties, afgeronde betalingen, kerntaken) zodat een stilzwijgende storing direct zichtbaar wordt als een scherpe daling in een grafiek. Gaat er onverhoopt iets mis, dan stelt deze data jou - of de agent - in staat om binnen enkele minuten de vinger op de zere plek te leggen in plaats van in het duister te tasten.
 
 ## Meten of de Vangrails Effectief Functioneren
 
-Houd in de loop van de tijd een aantal vaste indicatoren bij: hoe vaak blokkeert de CI-pijplijn een pull request van de agent en om welke reden, hoeveel productie-incidenten zijn direct te herleiden tot codewijzigingen van de agent en wat is de gemiddelde hersteltijd bij een probleem. In een gezonde opzet onderschept de CI-pipeline regelmatig potentiële fouten en worden live-incidenten een zeldzaamheid — het tastbare bewijs dat de verbluffende snelheid van AI-agents en professionele productieveiligheid hand in hand kunnen gaan.
+Houd in de loop van de tijd een aantal vaste indicatoren bij: hoe vaak blokkeert de CI-pijplijn een pull request van de agent en om welke reden, hoeveel productie-incidenten zijn direct te herleiden tot codewijzigingen van de agent en wat is de gemiddelde hersteltijd bij een probleem. In een gezonde opzet onderschept de CI-pipeline regelmatig potentiële fouten en worden live-incidenten een zeldzaamheid - het tastbare bewijs dat de verbluffende snelheid van AI-agents en professionele productieveiligheid hand in hand kunnen gaan.
 
 ## Voorbeeld van een Windsurf Rules-Bestand
 
@@ -150,15 +150,15 @@ Dergelijke instructies vervangen handmatige code-reviews niet, maar zorgen er we
 
 ## Wanneer Je Autonome Agent-Sessies Moet Pauzeren
 
-Er zijn situaties waarin het verstandig is om grootschalige, autonome agent-sessies tijdelijk stil te leggen: tijdens een live incident, tijdens het uitvoeren van een delicate databasemigratie, in de dagen vlak voor een belangrijke productlancering of gedurende een formele security-audit. In die periodes moeten codewijzigingen klein, chirurgisch en regel voor regel getoetst zijn. Zodra de rust is teruggekeerd, kun je het agentic werk met een gerust hart hervatten — met behoud van de productiviteitsvoordelen, maar zonder onnodige risico's in kwetsbare fases.
+Er zijn situaties waarin het verstandig is om grootschalige, autonome agent-sessies tijdelijk stil te leggen: tijdens een live incident, tijdens het uitvoeren van een delicate databasemigratie, in de dagen vlak voor een belangrijke productlancering of gedurende een formele security-audit. In die periodes moeten codewijzigingen klein, chirurgisch en regel voor regel getoetst zijn. Zodra de rust is teruggekeerd, kun je het agentic werk met een gerust hart hervatten - met behoud van de productiviteitsvoordelen, maar zonder onnodige risico's in kwetsbare fases.
 
 ## De Juiste Balans Vinden
 
-Het uiteindelijke doel is niet om de AI-agent af te remmen, maar om hem op volle snelheid te laten racen op een circuit met degelijke vangrails. Met fysiek gescheiden omgevingen, heldere regels, strikte CI-controles en degelijke observability blijft Windsurf een van de snelste manieren om software te bouwen — en wordt het live zetten van AI-gegenereerde code een beheerste routine in plaats van een riskante gok.
+Het uiteindelijke doel is niet om de AI-agent af te remmen, maar om hem op volle snelheid te laten racen op een circuit met degelijke vangrails. Met fysiek gescheiden omgevingen, heldere regels, strikte CI-controles en degelijke observability blijft Windsurf een van de snelste manieren om software te bouwen - en wordt het live zetten van AI-gegenereerde code een beheerste routine in plaats van een riskante gok.
 
 ## De Rol van LaunchStudio
 
-LaunchStudio's aanpak voor met Windsurf gebouwde applicaties pakt de zeven kernhiaten methodisch aan: fysieke omgevingsscheiding, geheimen roteren, autorisatielagen dichttimmeren, databasemigraties synchroniseren, dependencies opschonen, robuuste foutafhandeling inrichten en observability implementeren, aangevuld met CI-vangrails voor veilig doorontwikkelen met AI. De unieke frontend en waardevolle functionaliteiten die je hebt gerealiseerd blijven onaangetast behouden. De enterprise engineeringkracht wordt geleverd door Manifera — LaunchStudio maakt Manifera's hoogwaardige software-expertise toegankelijk voor ambitieuze oprichters — met senior engineers in Ho Chi Minh City en Europees aanspreekpunt aan de Herengracht 420 te Amsterdam. Bekijk [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/). Voor geautomatiseerde secret-scanning is [Gitleaks](https://github.com/gitleaks/gitleaks) een uitstekend open-source vertrekpunt.
+LaunchStudio's aanpak voor met Windsurf gebouwde applicaties pakt de zeven kernhiaten methodisch aan: fysieke omgevingsscheiding, geheimen roteren, autorisatielagen dichttimmeren, databasemigraties synchroniseren, dependencies opschonen, robuuste foutafhandeling inrichten en observability implementeren, aangevuld met CI-vangrails voor veilig doorontwikkelen met AI. De unieke frontend en waardevolle functionaliteiten die je hebt gerealiseerd blijven onaangetast behouden. De enterprise engineeringkracht wordt geleverd door Manifera - LaunchStudio maakt Manifera's hoogwaardige software-expertise toegankelijk voor ambitieuze oprichters - met senior engineers in Ho Chi Minh City en Europees aanspreekpunt aan de Herengracht 420 te Amsterdam. Bekijk [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/). Voor geautomatiseerde secret-scanning is [Gitleaks](https://github.com/gitleaks/gitleaks) een uitstekend open-source vertrekpunt.
 
 Is jouw applicatie grotendeels door een AI-agent gebouwd? [Stuur ons je repository-link](https://launchstudio.eu/nl/#contact) en we brengen direct in kaart welke hiaten op jouw codebase van toepassing zijn.
 
@@ -175,9 +175,9 @@ In een tijdsbestek van negen werkdagen scheidde het team van LaunchStudio develo
 **Het resultaat:** Stallenlog wordt nog steeds vrijwel volledig doorontwikkeld met behulp van Windsurf, maar nu via veilige pull requests die door de CI-pijplijn worden getoetst. Het platform groeide in de daaropvolgende zes maanden door naar 58 stallen, zonder dat er ooit nog testdata weglekte of ongeautoriseerde gegevensuitwisseling tussen stallen plaatsvond.
 
 > *"De AI-agent bouwde de software sneller dan ik ooit zelf had gekund. Maar hij draaide mijn testscripts doodleuk op productie, simpelweg omdat niemand hem had verteld dat dat niet mocht. Nu vertelt het systeem hem dat luid en duidelijk."*
-> — **Arjen Wolters, Oprichter, Stallenlog (Assen)**
+> - **Arjen Wolters, Oprichter, Stallenlog (Assen)**
 
-**Kosten & Tijdlijn:** € 2.500 (Launch Ready-pakket: omgevingsscheiding, geheimen, autorisatie, migraties, dependencies, observability en CI-vangrails) — succesvol afgerond in 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.500 (Launch Ready-pakket: omgevingsscheiding, geheimen, autorisatie, migraties, dependencies, observability en CI-vangrails) - succesvol afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -191,7 +191,7 @@ Houd productie-inloggegevens te allen tijde weg van je lokale ontwikkelmachine, 
 Beoordeel altijd de algehele reikwijdte en gevoelige onderdelen (zoals rechten en routes), en controleer nadrukkelijk welke terminalcommando's de agent heeft uitgevoerd. Een robuuste CI-pijplijn met tests, secret-scanning en dependency-audits vangt het leeuwendeel van de overige risico's betrouwbaar af.
 
 ### Wat voegt de ervaring van Manifera toe aan door AI-agents gebouwde codebases?
-De senior engineers van Manifera zijn erin gespecialiseerd om bestaande software van derden over te nemen en te voorzien van een professionele structuur — gescheiden omgevingen, betrouwbare pipelines en degelijke tests. Door AI-agents geschreven code is simpelweg een moderne variant van die vertrouwde uitdaging.
+De senior engineers van Manifera zijn erin gespecialiseerd om bestaande software van derden over te nemen en te voorzien van een professionele structuur - gescheiden omgevingen, betrouwbare pipelines en degelijke tests. Door AI-agents geschreven code is simpelweg een moderne variant van die vertrouwde uitdaging.
 
 ### Heeft agent-gedreven ontwikkeling invloed op SEO of vindbaarheid in AI-zoekmachines?
 Niet rechtstreeks. Wel worden door agents gegenereerde webapplicaties vaak gelanceerd zonder semantische metadata, sitemaps of prestatieoptimalisatie. Onverwachte downtime door ongecontroleerde codewijzigingen schaadt bovendien de crawlbaarheid door zoekmachines direct. Degelijke productievangrails beschermen dus zowel je beveiliging als je online vindbaarheid.

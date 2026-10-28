@@ -48,7 +48,7 @@ Candidates should treat that as the load-bearing constraint and read everything 
 
 The Netherlands' flood defence system is most concentrated here, because Zeeland is where the 1953 flood caused the greatest loss of life and where the subsequent engineering response was largest.
 
-The resulting infrastructure — storm surge barriers, dams, dikes and sluices across the delta — is among the most significant civil engineering systems in the world, and it requires continuous assessment, monitoring and increasingly reconsideration under changing sea level.
+The resulting infrastructure - storm surge barriers, dams, dikes and sluices across the delta - is among the most significant civil engineering systems in the world, and it requires continuous assessment, monitoring and increasingly reconsideration under changing sea level.
 
 **Storm surge barrier operation.** Movable barriers must be closed when conditions warrant and opened when they do not, and the decision depends on forecasts of water level, wind and wave conditions. Closing unnecessarily disrupts shipping and ecology; failing to close when needed is catastrophic. The asymmetry drives the decision problem.
 
@@ -66,7 +66,7 @@ This expertise is exported globally. Deltas everywhere face comparable problems,
 
 One problem in this province deserves attention beyond its local relevance, because it is an unusually clean example of a decision structure that appears throughout applied machine learning and is usually handled badly.
 
-A storm surge barrier closure decision has these properties. The two error types have wildly asymmetric costs — an unnecessary closure costs shipping delays and ecological disruption measured in millions; a failure to close when needed costs lives and potentially tens of billions. The decision must be made in advance, on a forecast, with lead time required for the physical closure. The forecast has quantifiable uncertainty. And the decision is not made by a model but by people operating under a protocol, with the model informing them.
+A storm surge barrier closure decision has these properties. The two error types have wildly asymmetric costs - an unnecessary closure costs shipping delays and ecological disruption measured in millions; a failure to close when needed costs lives and potentially tens of billions. The decision must be made in advance, on a forecast, with lead time required for the physical closure. The forecast has quantifiable uncertainty. And the decision is not made by a model but by people operating under a protocol, with the model informing them.
 
 Almost every element of applied decision-making under uncertainty is present, in a setting where the stakes make sloppiness impossible. The consequence is that this domain has developed careful practice around things that commercial machine learning often treats casually: how to express forecast uncertainty so that a decision-maker can act on it, how to set thresholds when costs are asymmetric by orders of magnitude, how to validate a system whose critical case occurs once in decades, and how to maintain human judgement in the loop without making the human a rubber stamp.
 
@@ -88,7 +88,7 @@ The North Sea off the Dutch coast holds substantial and expanding wind capacity,
 
 **Grid integration.** Connecting variable offshore generation to shore involves the congestion and stability problems described in the Alkmaar analysis, here at the point of landing.
 
-Offshore wind is one of the clearest growth areas in Dutch technical employment, and the operational phase — as opposed to construction — is where data work concentrates and where demand is building.
+Offshore wind is one of the clearest growth areas in Dutch technical employment, and the operational phase - as opposed to construction - is where data work concentrates and where demand is building.
 
 ## The Entity Landscape
 
@@ -157,7 +157,7 @@ Because the local market is small and isolated, remote work changes the calculat
 
 A candidate who wants to live here and has a remote or heavily hybrid role with an employer elsewhere has resolved the central problem. The province becomes a good place to live with no employment penalty. This is a genuinely viable strategy and more people are pursuing it than a decade ago.
 
-The cautions stated in the Hoorn analysis apply with more force. Remote roles are more competitive. Remote arrangements have tightened at several Dutch employers. And professional isolation is a real cost that a two-hour distance from any major city amplifies — you cannot easily attend an evening event in Rotterdam or Amsterdam, which removes a channel for maintaining a network that candidates in less isolated places take for granted.
+The cautions stated in the Hoorn analysis apply with more force. Remote roles are more competitive. Remote arrangements have tightened at several Dutch employers. And professional isolation is a real cost that a two-hour distance from any major city amplifies - you cannot easily attend an evening event in Rotterdam or Amsterdam, which removes a channel for maintaining a network that candidates in less isolated places take for granted.
 
 The practical mitigation is deliberate: plan for periodic travel to professional events, maintain online professional presence more actively than you would otherwise need to, and be honest about whether you are someone who sustains professional relationships without physical proximity.
 
@@ -167,7 +167,7 @@ The practical mitigation is deliberate: plan for periodic travel to professional
 - Delta water engineering here is globally significant, covering barrier operation under asymmetric consequences, structural monitoring, morphology and sea level adaptation.
 - Offshore wind is the growing domain, with forecasting, condition monitoring and maintenance scheduling against limited weather windows.
 - Ghent and Antwerp are closer than Rotterdam and represent a substantial Belgian market for candidates willing to work cross-border.
-- The province genuinely suits engineers committed to water or offshore wind, and people with personal reasons to be here — and does not suit others, because equivalent work exists elsewhere with better fallbacks.
+- The province genuinely suits engineers committed to water or offshore wind, and people with personal reasons to be here - and does not suit others, because equivalent work exists elsewhere with better fallbacks.
 - Remote work resolves the central problem more decisively here than anywhere else in this series, but professional isolation is a real amplified cost.
 
 ## Where to Start

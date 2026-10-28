@@ -1,4 +1,4 @@
-🔥 James bouwde een prototype met **Bolt** — James, een logistiek manager, gebruikte Bolt om een AI-factuurextractie-app te bouwen, maar liep vast op crashende parsers bij gescande documenten van lage kwaliteit. 🧠
+🔥 James bouwde een prototype met **Bolt** - James, een logistiek manager, gebruikte Bolt om een AI-factuurextractie-app te bouwen, maar liep vast op crashende parsers bij gescande documenten van lage kwaliteit. 🧠
 
 Het betrouwbaar extraheren van bedrijfsdata uit PDF's vereist multimodale vision-modellen, strikte JSON-schema's en kostenbesparende Two-Pass architectuur.
 
@@ -12,7 +12,7 @@ Het betrouwbaar extraheren van bedrijfsdata uit PDF's vereist multimodale vision
 
 Bij **LaunchStudio** lossen we exact dit type datapijplijn- en extractieproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-James's applicatie werd uiterst accuraat: De extractienauwkeurigheid steeg naar 97% voor alle documenttypen, inclusief verfrommelde bonnetjes. (€1.950 (OCR Integration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+James's applicatie werd uiterst accuraat: De extractienauwkeurigheid steeg naar 97% voor alle documenttypen, inclusief verfrommelde bonnetjes. (€1.950 (OCR Integration Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/extracting-structured-data-pdfs-ai
 

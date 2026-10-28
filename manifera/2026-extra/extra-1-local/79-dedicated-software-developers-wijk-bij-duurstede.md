@@ -20,9 +20,9 @@ target_persona: "CFO"
 }
 </script>
 
-Every outsourcing case study a CFO can find online describes a twenty-engineer pod saving hundreds of thousands of euros — useless when the actual decision on the table is whether two dedicated software developers make financial sense for a company this size at all.
+Every outsourcing case study a CFO can find online describes a twenty-engineer pod saving hundreds of thousands of euros - useless when the actual decision on the table is whether two dedicated software developers make financial sense for a company this size at all.
 
-**The Pain:** A CFO at a small food-processing technology company in Wijk bij Duurstede — a modest river-region town along the Kromme Rijn in Utrecht province — needs dedicated software developers to support a production-planning tool, but every ROI case study available assumes an enterprise-scale engagement that doesn't translate cleanly to a two-to-three-person need.
+**The Pain:** A CFO at a small food-processing technology company in Wijk bij Duurstede - a modest river-region town along the Kromme Rijn in Utrecht province - needs dedicated software developers to support a production-planning tool, but every ROI case study available assumes an enterprise-scale engagement that doesn't translate cleanly to a two-to-three-person need.
 
 **The Agitation:** A CFO who applies enterprise-scale ROI assumptions to a small engagement either overestimates the savings, setting an unrealistic expectation with leadership, or dismisses the option entirely because the enterprise math doesn't obviously apply, missing a genuinely sound decision for a company this size.
 
@@ -30,18 +30,18 @@ Every outsourcing case study a CFO can find online describes a twenty-engineer p
 
 A small-team dedicated developer engagement has a fundamentally different cost structure than an enterprise pod, and a CFO needs a model scaled to that reality rather than a diluted version of enterprise math.
 
-The first factor is that governance overhead doesn't scale down linearly with team size — a two-person pod still needs architectural oversight and quality verification, meaning the governance cost as a percentage of total engagement cost is proportionally higher for a small team than a large one, a fact a CFO's model should price in explicitly rather than assume away.
+The first factor is that governance overhead doesn't scale down linearly with team size - a two-person pod still needs architectural oversight and quality verification, meaning the governance cost as a percentage of total engagement cost is proportionally higher for a small team than a large one, a fact a CFO's model should price in explicitly rather than assume away.
 
-The second is that the comparison baseline for a small company is rarely "hire two more local senior engineers" — it's more often "don't build this at all" or "keep using a fragile spreadsheet-based process," making the real ROI comparison about opportunity cost of inaction, not a headcount cost differential.
+The second is that the comparison baseline for a small company is rarely "hire two more local senior engineers" - it's more often "don't build this at all" or "keep using a fragile spreadsheet-based process," making the real ROI comparison about opportunity cost of inaction, not a headcount cost differential.
 
-The third is that a small engagement's flexibility matters disproportionately — the ability to scale from two developers to three for a specific initiative and back down, without a fixed enterprise contract structure, is often the deciding factor for a company this size where budget certainty matters more than marginal rate optimization.
+The third is that a small engagement's flexibility matters disproportionately - the ability to scale from two developers to three for a specific initiative and back down, without a fixed enterprise contract structure, is often the deciding factor for a company this size where budget certainty matters more than marginal rate optimization.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads provide the same architectural oversight a small team needs, scaled proportionally rather than diluted to match a smaller engagement's size.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod scales from two to three developers and back with genuine flexibility, matched to a small company's real budget rhythm.
 
-This is Dutch Management × Vietnamese Mastery — an ROI model that actually reflects a small engagement's real economics. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - an ROI model that actually reflects a small engagement's real economics. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Rivierdal Voedselverwerking B.V., a small food-processing company based near Wag
 Manifera structured a two-developer pod with proportional governance oversight and the flexibility to add a third developer temporarily for a peak planning-season initiative. The production-planning tool replaced the spreadsheet process within four months, and the CFO reported the real comparison had never been "hire locally versus outsource" but "build this at all versus keep losing hours to manual planning errors."
 
 > *"Every case study we found was about companies ten times our size. We needed the math for two people, not twenty, and once we had that, the decision was actually simple."*
-> — **CFO, Rivierdal Voedselverwerking B.V., Netherlands**
+> - **CFO, Rivierdal Voedselverwerking B.V., Netherlands**
 
 ## Enterprise-Scale ROI Assumptions vs. Manifera's Small-Team Model
 
@@ -70,9 +70,9 @@ A CFO at a small company who evaluates dedicated developers using enterprise-sca
 
 ## The Small-Team Cost Breakdown
 
-Run the numbers for a two-developer pod supporting a production-planning tool: at a blended offshore rate of roughly €50-60/hour, two developers cost approximately €17,000-20,000 per month fully loaded. Proportional governance — a fractional architect and QA oversight rather than a dedicated in-house layer — adds another 12-18% on top for a small pod, versus 6-8% at enterprise scale, because the fixed governance floor doesn't shrink even when headcount does.
+Run the numbers for a two-developer pod supporting a production-planning tool: at a blended offshore rate of roughly €50-60/hour, two developers cost approximately €17,000-20,000 per month fully loaded. Proportional governance - a fractional architect and QA oversight rather than a dedicated in-house layer - adds another 12-18% on top for a small pod, versus 6-8% at enterprise scale, because the fixed governance floor doesn't shrink even when headcount does.
 
-Against a "do nothing" baseline, a food-processing company running production planning on spreadsheets typically loses 3-6 hours per week per planner to manual reconciliation and error correction — for a small operation with two to three planners, that's 6-18 hours weekly, or roughly €1,500-4,500 in fully loaded labor cost, before counting the cost of a planning error that misallocates a production run.
+Against a "do nothing" baseline, a food-processing company running production planning on spreadsheets typically loses 3-6 hours per week per planner to manual reconciliation and error correction - for a small operation with two to three planners, that's 6-18 hours weekly, or roughly €1,500-4,500 in fully loaded labor cost, before counting the cost of a planning error that misallocates a production run.
 
 Three numbers matter more than the headline monthly rate: the minimum viable team size (most tools of this scope need at least two developers for continuity if one is unavailable, not one), the flex-capacity cost (typically a 15-25% rate premium to add a third developer temporarily versus committing to it year-round), and the governance floor (roughly 0.3-0.5 FTE of architectural oversight regardless of whether the pod is two people or twenty).
 
@@ -108,7 +108,7 @@ A properly structured small pod includes documented architecture and shared cont
 
 ### (Scenario: CFO evaluating food-processing-specific compliance costs) Does food-processing traceability and compliance data add meaningfully to a small team's development cost?
 
-Yes, typically 10-15% more engineering time than a generic production tool, because traceability requirements — batch-level audit trails, allergen flagging, recall-readiness reporting — add data-model and validation complexity even at small scale.
+Yes, typically 10-15% more engineering time than a generic production tool, because traceability requirements - batch-level audit trails, allergen flagging, recall-readiness reporting - add data-model and validation complexity even at small scale.
 
 ### (Scenario: CFO deciding between a fixed small pod and flexible capacity) Is it cheaper to commit to three developers year-round or keep two and flex up temporarily?
 

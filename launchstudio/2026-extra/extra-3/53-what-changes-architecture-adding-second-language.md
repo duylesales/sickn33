@@ -31,19 +31,19 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Adding a second language to a product built with a single language assumed throughout — most commonly English, given how most AI coding tools default — touches considerably more of the underlying architecture than simply translating interface strings, a technical scope that a founder planning to expand into a second language market benefits from understanding clearly before committing to a timeline for the change.
+Adding a second language to a product built with a single language assumed throughout - most commonly English, given how most AI coding tools default - touches considerably more of the underlying architecture than simply translating interface strings, a technical scope that a founder planning to expand into a second language market benefits from understanding clearly before committing to a timeline for the change.
 
 ## Why Interface String Translation Is the Visible, Smaller Part of the Work
 
-Interface strings — button labels, static page text — are typically the most visible and most straightforward part of adding a language, and consequently the part founders most naturally think of first when planning localization. The considerably larger, less visible architectural work concerns how your database, your AI-generated content, and your business logic handle data that now needs to exist correctly in more than one language simultaneously.
+Interface strings - button labels, static page text - are typically the most visible and most straightforward part of adding a language, and consequently the part founders most naturally think of first when planning localization. The considerably larger, less visible architectural work concerns how your database, your AI-generated content, and your business logic handle data that now needs to exist correctly in more than one language simultaneously.
 
 ## Where the Real Architectural Work Actually Concentrates
 
-**Database schema decisions about storing multi-language content.** If your product stores any AI-generated or user-generated content that needs to exist in multiple languages — product descriptions, generated summaries, customer-facing communications — your database schema needs a deliberate decision about how that multi-language content actually gets structured and stored, a decision considerably easier to make correctly from the start than to retrofit once single-language content already exists at scale.
+**Database schema decisions about storing multi-language content.** If your product stores any AI-generated or user-generated content that needs to exist in multiple languages - product descriptions, generated summaries, customer-facing communications - your database schema needs a deliberate decision about how that multi-language content actually gets structured and stored, a decision considerably easier to make correctly from the start than to retrofit once single-language content already exists at scale.
 
-**AI prompt architecture needing genuine per-language logic, not just translated output.** As covered elsewhere in broader guidance on multi-language AI output quality, simply translating an AI feature's output after generation is a different, generally lower-quality approach than genuinely prompting in the target language directly — meaning your underlying prompt architecture needs to support this properly rather than bolting translation on as an afterthought layer.
+**AI prompt architecture needing genuine per-language logic, not just translated output.** As covered elsewhere in broader guidance on multi-language AI output quality, simply translating an AI feature's output after generation is a different, generally lower-quality approach than genuinely prompting in the target language directly - meaning your underlying prompt architecture needs to support this properly rather than bolting translation on as an afterthought layer.
 
-**User preference and locale detection logic that needs to actually exist.** A single-language product has no need for logic determining which language a specific user should see — adding a second language requires this logic to be built deliberately, including sensible defaults and how a user's preference gets stored and respected consistently across their entire experience.
+**User preference and locale detection logic that needs to actually exist.** A single-language product has no need for logic determining which language a specific user should see - adding a second language requires this logic to be built deliberately, including sensible defaults and how a user's preference gets stored and respected consistently across their entire experience.
 
 **Search and matching logic that may behave differently across languages.** Any feature involving text search, matching, or comparison needs specific verification that it functions correctly across multiple languages, since text-processing logic built and tested against one language doesn't automatically handle a second language's different structure and conventions correctly.
 
@@ -53,25 +53,25 @@ Mirroring the same pattern covered throughout broader guidance regarding other f
 
 ## How to Know If This Investment Is Worth Making Now
 
-If a second language market is a genuine near-term goal, not a distant hypothetical, investing in the underlying architecture before content and usage accumulate substantially in a single-language-only structure is the more cost-effective sequencing — if the second language is genuinely speculative and distant, deferring this specific architectural investment while remaining aware of the future migration cost is a reasonable, deliberate tradeoff instead.
+If a second language market is a genuine near-term goal, not a distant hypothetical, investing in the underlying architecture before content and usage accumulate substantially in a single-language-only structure is the more cost-effective sequencing - if the second language is genuinely speculative and distant, deferring this specific architectural investment while remaining aware of the future migration cost is a reasonable, deliberate tradeoff instead.
 
 [LaunchStudio](https://launchstudio.eu/en/) architects genuine multi-language support at the database and AI-prompt level, not just interface translation, for founders with concrete near-term plans to serve a second language market, backed by Manifera's broader experience building products serving genuinely multilingual European markets from Amsterdam and across its wider EU client base.
 
-[Get your architecture ready for a second language before content accumulates around only one](https://launchstudio.eu/en/#calculator) — this is considerably more than a translation task.
+[Get your architecture ready for a second language before content accumulates around only one](https://launchstudio.eu/en/#calculator) - this is considerably more than a translation task.
 
 ## What Else Needs Localizing Beyond the Product Itself
 
-Everything covered so far concerns the core application — its database, its AI prompts, its interface. A second language touches a wider ring of systems around the product that founders planning a localization effort frequently forget to scope in at all, and that gap tends to surface later, piecemeal, rather than as part of the original plan.
+Everything covered so far concerns the core application - its database, its AI prompts, its interface. A second language touches a wider ring of systems around the product that founders planning a localization effort frequently forget to scope in at all, and that gap tends to surface later, piecemeal, rather than as part of the original plan.
 
-**Transactional emails and notifications.** Password resets, invoice confirmations, appointment reminders, welcome sequences — these are usually generated by a separate templating system from the main interface, often bolted on early and rarely revisited, meaning a product can ship a fully translated interface while every automated email a second-language customer receives still arrives in the original language. Auditing this specifically matters because transactional emails are exactly the kind of message a customer reads carefully, at a moment that matters to them, making a language mismatch here disproportionately noticeable compared to the same gap on a page they skim.
+**Transactional emails and notifications.** Password resets, invoice confirmations, appointment reminders, welcome sequences - these are usually generated by a separate templating system from the main interface, often bolted on early and rarely revisited, meaning a product can ship a fully translated interface while every automated email a second-language customer receives still arrives in the original language. Auditing this specifically matters because transactional emails are exactly the kind of message a customer reads carefully, at a moment that matters to them, making a language mismatch here disproportionately noticeable compared to the same gap on a page they skim.
 
-**Legal and compliance documents.** Terms of service, a privacy policy, a data processing agreement — these carry actual legal weight, and a machine-translated or partially-translated version creates genuine ambiguity about which version actually governs the relationship with a customer in the new language market. This isn't a place to reuse the same lightweight AI-translation approach that might be perfectly reasonable for marketing copy; legal text in a second language generally warrants a proper, verified translation specifically because of what's at stake if a dispute ever turns on the exact wording.
+**Legal and compliance documents.** Terms of service, a privacy policy, a data processing agreement - these carry actual legal weight, and a machine-translated or partially-translated version creates genuine ambiguity about which version actually governs the relationship with a customer in the new language market. This isn't a place to reuse the same lightweight AI-translation approach that might be perfectly reasonable for marketing copy; legal text in a second language generally warrants a proper, verified translation specifically because of what's at stake if a dispute ever turns on the exact wording.
 
-**Customer support workflows and canned responses.** A support inbox, a help center, saved reply templates — these accumulate over time in whatever language the founding team primarily operates in, and a second-language customer reaching out for help frequently gets routed to the same untranslated support infrastructure even after the product itself has been properly localized, creating a jarring gap between "the product understands my language" and "support doesn't."
+**Customer support workflows and canned responses.** A support inbox, a help center, saved reply templates - these accumulate over time in whatever language the founding team primarily operates in, and a second-language customer reaching out for help frequently gets routed to the same untranslated support infrastructure even after the product itself has been properly localized, creating a jarring gap between "the product understands my language" and "support doesn't."
 
-**SEO and URL structure for the new language.** A second language market usually implies a second-language audience actually finding the product through search, which means URL structure, metadata, and structured data need their own deliberate localization strategy — a subdirectory or subdomain per language, correctly tagged alternate-language links, and metadata actually written for that market rather than mechanically translated — a concern distinct from, but related to, the general marketing-site technical correctness covered elsewhere in broader guidance.
+**SEO and URL structure for the new language.** A second language market usually implies a second-language audience actually finding the product through search, which means URL structure, metadata, and structured data need their own deliberate localization strategy - a subdirectory or subdomain per language, correctly tagged alternate-language links, and metadata actually written for that market rather than mechanically translated - a concern distinct from, but related to, the general marketing-site technical correctness covered elsewhere in broader guidance.
 
-**Currency, date, and number formatting wherever they appear.** Even when the target market shares a currency or number convention with the original, this is worth verifying explicitly rather than assuming — a decimal comma versus a decimal point, a date format that reads day-first versus month-first, an invoice total formatted according to the wrong convention, are small details that read as carelessness precisely because they're the kind of thing a native user of that convention notices immediately.
+**Currency, date, and number formatting wherever they appear.** Even when the target market shares a currency or number convention with the original, this is worth verifying explicitly rather than assuming - a decimal comma versus a decimal point, a date format that reads day-first versus month-first, an invoice total formatted according to the wrong convention, are small details that read as carelessness precisely because they're the kind of thing a native user of that convention notices immediately.
 
 None of these five areas require the same architectural investment as the database and prompt work covered above, but skipping them creates a specific, visible inconsistency: a product that looks properly localized in the parts a founder thought to check, and quietly untranslated in the parts nobody scoped into the original plan.
 
@@ -81,14 +81,14 @@ None of these five areas require the same architectural investment as the databa
 
 Wouter, a founder in Rotterdam running MenuVertaler, an AI tool generating restaurant menu descriptions for small hospitality businesses, built entirely in Dutch using Bolt with no consideration for future multi-language support, since his original target market was exclusively Dutch-speaking restaurants.
 
-After roughly a year and several thousand generated menu descriptions stored entirely in a database schema with no language field or multi-language structure at all, Wouter identified a genuine opportunity to expand into English-language markets — discovering that his existing database structure had no way to associate a second-language version of content with its original Dutch counterpart, requiring a considerably more involved migration than building this structure from the start would have required.
+After roughly a year and several thousand generated menu descriptions stored entirely in a database schema with no language field or multi-language structure at all, Wouter identified a genuine opportunity to expand into English-language markets - discovering that his existing database structure had no way to associate a second-language version of content with its original Dutch counterpart, requiring a considerably more involved migration than building this structure from the start would have required.
 
-**Result:** LaunchStudio designed and executed a database migration introducing proper multi-language content structure, alongside genuine per-language AI prompt architecture rather than simple post-generation translation, enabling Wouter's English expansion — a project meaningfully larger in scope and cost than the equivalent early-stage architectural decision would have been.
+**Result:** LaunchStudio designed and executed a database migration introducing proper multi-language content structure, alongside genuine per-language AI prompt architecture rather than simple post-generation translation, enabling Wouter's English expansion - a project meaningfully larger in scope and cost than the equivalent early-stage architectural decision would have been.
 
 > *"If I'd known I might eventually want a second language, building that structure in from the start would have been a relatively small decision. A year and thousands of Dutch-only records later, it became a genuine migration project instead of a design choice I could have made for free at the beginning."*
-> — **Wouter de Jong, Founder, MenuVertaler (Rotterdam)**
+> - **Wouter de Jong, Founder, MenuVertaler (Rotterdam)**
 
-**Cost & Timeline:** €2,800 (multi-language database migration and prompt architecture) — completed in 11 business days.
+**Cost & Timeline:** €2,800 (multi-language database migration and prompt architecture) - completed in 11 business days.
 
 ---
 
@@ -96,7 +96,7 @@ After roughly a year and several thousand generated menu descriptions stored ent
 
 ### Does every AI product need to plan for multi-language architecture from day one, even without concrete near-term plans?
 
-Not necessarily — for a genuinely single-market-focused product with no realistic near-term expansion plans, deferring this investment is a reasonable tradeoff, provided the founder understands the future migration cost this article describes if those plans do eventually materialize.
+Not necessarily - for a genuinely single-market-focused product with no realistic near-term expansion plans, deferring this investment is a reasonable tradeoff, provided the founder understands the future migration cost this article describes if those plans do eventually materialize.
 
 ### How is genuine per-language AI prompting different from simply translating output after generation?
 
@@ -104,15 +104,15 @@ Prompting directly in the target language typically produces more natural, conte
 
 ### Would Wouter's migration have been meaningfully cheaper if he'd anticipated the expansion even a few months earlier?
 
-Yes, proportionally — the migration cost scales with how much existing single-language content has accumulated, meaning earlier action, even if not from the very start, would have involved migrating meaningfully less accumulated data than waiting a full year did.
+Yes, proportionally - the migration cost scales with how much existing single-language content has accumulated, meaning earlier action, even if not from the very start, would have involved migrating meaningfully less accumulated data than waiting a full year did.
 
 ### Does adding a second language always require the full architectural scope described in this article, or does it depend on the specific product?
 
-Depends on what the product actually does — a product with minimal stored, language-dependent content has a smaller migration scope than one, like Wouter's, with substantial AI-generated content requiring language-aware storage and retrieval throughout.
+Depends on what the product actually does - a product with minimal stored, language-dependent content has a smaller migration scope than one, like Wouter's, with substantial AI-generated content requiring language-aware storage and retrieval throughout.
 
 ### How can a founder estimate whether their specific product's multi-language migration would be a small or large undertaking?
 
-Assessing how much of your product's core value depends on stored, language-specific content versus purely interface-level text is the direct way to estimate scope — more stored language-dependent content generally means a larger, more involved migration if deferred.
+Assessing how much of your product's core value depends on stored, language-specific content versus purely interface-level text is the direct way to estimate scope - more stored language-dependent content generally means a larger, more involved migration if deferred.
 
 <script type="application/ld+json">
 {
@@ -140,7 +140,7 @@ Assessing how much of your product's core value depends on stored, language-spec
       "name": "Would earlier action have made the migration meaningfully cheaper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, proportionally — migration cost scales with how much accumulated single-language content exists."
+        "text": "Yes, proportionally - migration cost scales with how much accumulated single-language content exists."
       }
     },
     {
@@ -148,7 +148,7 @@ Assessing how much of your product's core value depends on stored, language-spec
       "name": "Does adding a second language always require the full architectural scope described?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on the product — minimal stored language-dependent content means a smaller migration scope than substantial content."
+        "text": "Depends on the product - minimal stored language-dependent content means a smaller migration scope than substantial content."
       }
     },
     {

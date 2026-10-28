@@ -20,7 +20,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A customer who left already knows what your product does, has used it in their real work, and has an account waiting. That combination makes some of them the cheapest revenue available to you — no explanation required, no trust to build from zero. It also makes win-back one of the easiest activities to do badly, because the same qualities make it tempting to contact all of them, indiscriminately, with a discount.
+A customer who left already knows what your product does, has used it in their real work, and has an account waiting. That combination makes some of them the cheapest revenue available to you - no explanation required, no trust to build from zero. It also makes win-back one of the easiest activities to do badly, because the same qualities make it tempting to contact all of them, indiscriminately, with a discount.
 
 The useful distinction is not between customers who liked you and customers who did not. It is between people whose reason for leaving has changed and people whose reason has not. Everything else follows from that.
 
@@ -30,11 +30,11 @@ Most win-back advice sorts by time since cancellation. Reason is far more predic
 
 **Left because something was missing.** The highest-value group, and the only one with a natural trigger: you build the thing. A message that names the specific gap they mentioned and says it now exists converts at rates nothing else approaches, because it answers the exact objection they gave you.
 
-**Left because of price.** Worth contacting only if something real has changed — a cheaper tier that genuinely fits, or their circumstances. A discount on the same plan they already rejected mostly teaches them that your price is negotiable, which is a bad lesson to teach the customers who did stay.
+**Left because of price.** Worth contacting only if something real has changed - a cheaper tier that genuinely fits, or their circumstances. A discount on the same plan they already rejected mostly teaches them that your price is negotiable, which is a bad lesson to teach the customers who did stay.
 
 **Left because it did not work reliably.** Recoverable, and requires a different message: an acknowledgement that it was broken, a statement of what was fixed, and an offer to make it right. This group is more forgiving than founders expect, provided the message is specific rather than a generic apology.
 
-**Left because they no longer need it.** A seasonal business, a completed project, a change of role. Not churn in any meaningful sense, and not worth a campaign — but worth a light touch at the point their need might return.
+**Left because they no longer need it.** A seasonal business, a completed project, a change of role. Not churn in any meaningful sense, and not worth a campaign - but worth a light touch at the point their need might return.
 
 **Left because they chose a competitor.** The hardest group. They have now invested in migrating and switching back is expensive for them. Contact them once, much later, and only if something substantial has changed.
 
@@ -42,17 +42,17 @@ The group nobody should contact: customers who left angry after an unresolved pr
 
 ## The Trigger Is Better Than the Schedule
 
-A win-back campaign that runs on a timer — 30, 60, 90 days after cancellation — sends the same message to everyone regardless of whether anything has changed. It converts poorly, and each send burns a contact you cannot repeat often.
+A win-back campaign that runs on a timer - 30, 60, 90 days after cancellation - sends the same message to everyone regardless of whether anything has changed. It converts poorly, and each send burns a contact you cannot repeat often.
 
 Event-driven win-backs work far better. Ship the feature that three churned customers named, and message exactly those three. Fix the reliability problem that drove people away, and message the ones affected. Launch a cheaper tier, and message the price-sensitive group. In each case the message contains actual news, and it is obvious to the recipient that it was not sent to everyone.
 
-This requires that cancellation reasons were recorded in a structured, queryable way rather than as free text in a support inbox — which is one more argument for the exit survey being a real field in your database. It also requires that you kept enough of the account to reactivate: this is where a cancellation flow that preserves data in a read-only state, rather than deleting it, pays for itself directly, because "your workspace is exactly as you left it" is the single most effective line in a win-back message.
+This requires that cancellation reasons were recorded in a structured, queryable way rather than as free text in a support inbox - which is one more argument for the exit survey being a real field in your database. It also requires that you kept enough of the account to reactivate: this is where a cancellation flow that preserves data in a read-only state, rather than deleting it, pays for itself directly, because "your workspace is exactly as you left it" is the single most effective line in a win-back message.
 
 ## What the Message Should and Should Not Contain
 
 Short, specific, and from a person. Four elements do the work.
 
-**Name what changed, concretely.** Not "we've made lots of improvements" — "the CSV import you needed now handles the format your payroll system exports." Vagueness reads as a mailing list; specificity reads as being remembered.
+**Name what changed, concretely.** Not "we've made lots of improvements" - "the CSV import you needed now handles the format your payroll system exports." Vagueness reads as a mailing list; specificity reads as being remembered.
 
 **Reference what they said, if they told you.** "You mentioned the missing weekly report when you left" is entirely fair use of information they volunteered, and it demonstrates the feedback was read.
 
@@ -60,15 +60,15 @@ Short, specific, and from a person. Four elements do the work.
 
 **Ask for nothing else.** No survey, no call booking, no discount code with conditions. One action.
 
-What to leave out: a discount, by default. Reflexively discounting to a returning customer sets a lower price permanently, is unfair to those who stayed, and is unnecessary when the reason for leaving has genuinely been fixed. Keep price concessions for the specific group whose stated reason was price, and prefer a smaller plan over a discounted large one — a lower price for less is a sustainable arrangement, while a permanent discount on the full product is not.
+What to leave out: a discount, by default. Reflexively discounting to a returning customer sets a lower price permanently, is unfair to those who stayed, and is unnecessary when the reason for leaving has genuinely been fixed. Keep price concessions for the specific group whose stated reason was price, and prefer a smaller plan over a discounted large one - a lower price for less is a sustainable arrangement, while a permanent discount on the full product is not.
 
 ## The Legal and Deliverability Floor
 
 A win-back email to a former customer is marketing, not transactional, and the distinction has consequences.
 
-Under GDPR and the ePrivacy rules, contacting former customers about your own similar products generally has a workable basis, but it requires that they were given the chance to object, that every message carries a functioning unsubscribe, and that you honour previous opt-outs — including the one they may have clicked on their way out. Emailing someone who unsubscribed is both a compliance problem and the most reliable way to generate a spam complaint.
+Under GDPR and the ePrivacy rules, contacting former customers about your own similar products generally has a workable basis, but it requires that they were given the chance to object, that every message carries a functioning unsubscribe, and that you honour previous opt-outs - including the one they may have clicked on their way out. Emailing someone who unsubscribed is both a compliance problem and the most reliable way to generate a spam complaint.
 
-There is also a retention question that cuts against campaigning. If your privacy policy states that data from cancelled accounts is deleted after 90 days, you cannot email that person in month eight — and if you do still hold their address, you have a different problem. Aligning your actual retention with what you told customers is the sort of detail that goes unexamined until someone asks, and win-back is often the activity that exposes it.
+There is also a retention question that cuts against campaigning. If your privacy policy states that data from cancelled accounts is deleted after 90 days, you cannot email that person in month eight - and if you do still hold their address, you have a different problem. Aligning your actual retention with what you told customers is the sort of detail that goes unexamined until someone asks, and win-back is often the activity that exposes it.
 
 Practically: send win-back mail through your marketing stream rather than the one carrying receipts and password resets, so a spam complaint on a campaign does not damage delivery of messages your active customers depend on. Keeping those streams separate, with suppression lists honoured across both, is standard email infrastructure that AI-built products rarely have. LaunchStudio, backed by Manifera's 11+ years of production engineering, sets up sending streams, suppression, and the account states that make reactivation possible. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -90,14 +90,14 @@ And one broader caution: win-back is a lagging activity, and it is seductive pre
 
 Nadia el Amrani ran Voorschot, an invoice-financing calculator for small construction firms, built in Lovable and hardened before launch. Over her first eight months, 23 customers cancelled, and her exit survey had recorded a reason for 19 of them.
 
-Seven had given the same reason: the tool could not handle partial payments against an invoice, which is routine in construction. When she eventually built it, she did not run a campaign. She emailed those seven individually — naming the feature, referencing what each had said, and noting that their previous project data was still in their account.
+Seven had given the same reason: the tool could not handle partial payments against an invoice, which is routine in construction. When she eventually built it, she did not run a campaign. She emailed those seven individually - naming the feature, referencing what each had said, and noting that their previous project data was still in their account.
 
 Four returned within two weeks. Two of the four had been on the highest tier. She sent nothing to the price-sensitive group, on the reasoning that her price had not changed, and nothing to the four whose businesses had stopped using external financing entirely.
 
 **Result:** roughly €5,800 in annualised recurring revenue recovered from eleven emails written by hand, and a clearer view of which cancellation reasons were worth building against. The read-only preservation of cancelled accounts, built as part of the original cancellation flow, meant all four returned to their existing data rather than starting over.
 
 > "I nearly sent a 20% discount to everyone who had ever cancelled. What actually worked was building one thing seven people had asked for and telling exactly those seven."
-> — **Nadia el Amrani, Founder, Voorschot**
+> - **Nadia el Amrani, Founder, Voorschot**
 
 **Cost & Timeline:** partial-payment feature and reactivation path delivered in 4 business days.
 

@@ -1,4 +1,4 @@
-💡 Roosendaal sits between three major ports — Rotterdam, Antwerp-Bruges and Moerdijk — and hosts large distribution operations on the Borchwerf business parks.
+💡 Roosendaal sits between three major ports - Rotterdam, Antwerp-Bruges and Moerdijk - and hosts large distribution operations on the Borchwerf business parks.
 
 🤖 The data work: forecasting demand for two national markets with different holidays and promotions, route planning with the Belgian truck kilometre charge, labour planning and synchromodal transport choices.
 

@@ -29,11 +29,11 @@ Most people choose where to work by applying to whatever is advertised and accep
 
 Not salary, not prestige, not how interesting the technology sounds. These four, in this order.
 
-**What kind of problem do you want to spend years on?** Not which technique — which problem shape. Inferring something unmeasurable from indirect signals. Optimising under constraints that cannot be violated. Predicting rare events that must not be missed. Coordinating parties who do not share information. Making measurements trustworthy. Building systems that must survive audit. These are genuinely different working lives, and technique follows from them rather than the reverse.
+**What kind of problem do you want to spend years on?** Not which technique - which problem shape. Inferring something unmeasurable from indirect signals. Optimising under constraints that cannot be violated. Predicting rare events that must not be missed. Coordinating parties who do not share information. Making measurements trustworthy. Building systems that must survive audit. These are genuinely different working lives, and technique follows from them rather than the reverse.
 
 **How much does your work need to be verifiable?** Some sectors have objectives that are already measured: kilometres saved, yield gained, energy reduced, stock-outs avoided. Others have objectives that are argued: engagement, satisfaction, strategic alignment. Engineers who need to know whether they succeeded should choose the former, and many discover this preference only after years in the latter.
 
-**How much constraint do you want?** Regulated environments — finance, healthcare, public administration, aviation, energy — impose explainability, validation, documentation and governance. Some engineers find that working within genuine constraints is harder and more interesting than unconstrained optimisation. Others find it suffocating. This is a temperament question and there is no correct answer.
+**How much constraint do you want?** Regulated environments - finance, healthcare, public administration, aviation, energy - impose explainability, validation, documentation and governance. Some engineers find that working within genuine constraints is harder and more interesting than unconstrained optimisation. Others find it suffocating. This is a temperament question and there is no correct answer.
 
 **What happens if this role ends?** The concentration risk question. It determines the honest value of a specialisation and it is the question candidates most consistently skip.
 
@@ -98,7 +98,7 @@ None of these five is a framework, a model architecture or a tool. All five are 
 
 **Optimising for the most interesting technology.** Techniques move. The domain, the constraints and the problem shape are what you actually live with, and they outlast any particular method.
 
-**Following salary alone.** The compensation range in Dutch technical work is narrower than in some markets, the top-paying sectors have specific entry requirements, and housing costs vary enough that gross comparisons mislead — the Apeldoorn and Gouda analyses make this concrete.
+**Following salary alone.** The compensation range in Dutch technical work is narrower than in some markets, the top-paying sectors have specific entry requirements, and housing costs vary enough that gross comparisons mislead - the Apeldoorn and Gouda analyses make this concrete.
 
 **Staying somewhere because leaving feels like failure.** Two years in a role that is not developing you is a real cost, and the Dutch market is small enough that reputations are known but forgiving enough that moving is normal.
 
@@ -124,7 +124,7 @@ A short procedure, since a hundred analyses are only useful if there is a way in
 
 **Then read the regional analyses for where that sector concentrates.** The sector tells you what work exists; the regional analysis tells you where, what the commute radius gives you, and what the concentration risk is.
 
-**Check the accessibility honestly.** If the sector you want has a high barrier — clearance, a clinical or physics background, institutional data access — identify the accessible adjacent route the analysis names. Hospital operations into clinical work. Supplier network into semiconductor. Cyber into defence. Infrastructure engineering into perception. These routes exist in every constrained sector and they are the realistic path.
+**Check the accessibility honestly.** If the sector you want has a high barrier - clearance, a clinical or physics background, institutional data access - identify the accessible adjacent route the analysis names. Hospital operations into clinical work. Supplier network into semiconductor. Cyber into defence. Infrastructure engineering into perception. These routes exist in every constrained sector and they are the realistic path.
 
 **Learn the sector's vocabulary before searching.** As above, this is the highest-return preparation available, and it costs an afternoon.
 
@@ -134,7 +134,7 @@ A short procedure, since a hundred analyses are only useful if there is a way in
 
 The Dutch AI market is smaller than the markets candidates usually benchmark against, and it is more interesting than its size suggests, for a reason worth stating plainly.
 
-A small country with a large port, a dense agricultural export sector, a globally significant water engineering tradition, the world's most advanced lithography industry, a very large pension system and an acute grid capacity problem generates an unusual concentration of hard, physically grounded, consequential technical problems per head of population. The constraints are real — regulatory, physical, biological, ethical — and constrained problems are more interesting than unconstrained ones.
+A small country with a large port, a dense agricultural export sector, a globally significant water engineering tradition, the world's most advanced lithography industry, a very large pension system and an acute grid capacity problem generates an unusual concentration of hard, physically grounded, consequential technical problems per head of population. The constraints are real - regulatory, physical, biological, ethical - and constrained problems are more interesting than unconstrained ones.
 
 What this market does not offer is the volume of conventional machine learning product work found in larger economies, or the compensation ceilings of the largest technology employers. What it offers instead is a high density of problems where being right matters, where the objective is not engagement, and where the domain knowledge you accumulate compounds rather than depreciating.
 
@@ -142,7 +142,7 @@ For candidates who want that, choosing deliberately rather than applying broadly
 
 ## Key Takeaways
 
-- Choose on problem shape, verifiability of outcomes, tolerance for constraint and concentration risk — in that order, and before considering technology or salary.
+- Choose on problem shape, verifiability of outcomes, tolerance for constraint and concentration risk - in that order, and before considering technology or salary.
 - Differentiation runs roughly inverse to accessibility: the easiest sector to enter is where your experience is least scarce afterwards.
 - The three strategies that work are entering accessible then specialising deliberately, bringing a scarce non-AI input to the sector that needs it, or following a constraint you find genuinely interesting across sectors.
 - Optimising for interesting technology fails because techniques move while problem shape, domain and constraints persist.
@@ -151,14 +151,14 @@ For candidates who want that, choosing deliberately rather than applying broadly
 
 ## Where to Start
 
-Answer the four questions honestly before looking at any vacancy. Then read the two or three sector analyses that match your answers, and search in those sectors' vocabulary rather than in machine learning vocabulary — which, as nearly every analysis in this series found, is where the work is actually hiding.
+Answer the four questions honestly before looking at any vacancy. Then read the two or three sector analyses that match your answers, and search in those sectors' vocabulary rather than in machine learning vocabulary - which, as nearly every analysis in this series found, is where the work is actually hiding.
 
 Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate overwhelmed by options) What should I decide first?
-What kind of problem you want to spend years on — inference from indirect signals, constrained optimisation, rare event prediction, coordination across organisations, trustworthy measurement. Technique follows from problem shape rather than the reverse.
+What kind of problem you want to spend years on - inference from indirect signals, constrained optimisation, rare event prediction, coordination across organisations, trustworthy measurement. Technique follows from problem shape rather than the reverse.
 
 ### (Scenario: candidate choosing between sectors) Why does accessibility matter negatively?
 Because differentiation runs roughly inverse to it. Retail is the easiest sector to enter and produces the most common profile afterwards; semiconductor metrology or clinical validation is harder to enter and much scarcer five years later.

@@ -21,46 +21,46 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-Plaats een Machine Learning Engineer-rol op een algemeen vacatureplatform en je hebt binnen enkele uren sollicitaties. Kijk beter en een groot deel komt van kandidaten wier cv het woord "Excel" vaker bevat dan "model", omdat de matchinglogica van het platform optimaliseert voor volume en niet voor relevantie — en een generiek trefwoord als "engineer" of "data" trekt iedereen aan die in de buurt van die term zit.
+Plaats een Machine Learning Engineer-rol op een algemeen vacatureplatform en je hebt binnen enkele uren sollicitaties. Kijk beter en een groot deel komt van kandidaten wier cv het woord "Excel" vaker bevat dan "model", omdat de matchinglogica van het platform optimaliseert voor volume en niet voor relevantie - en een generiek trefwoord als "engineer" of "data" trekt iedereen aan die in de buurt van die term zit.
 
 Dit is geen tekortkoming van de kandidaten die solliciteren; het is een voorspelbaar gevolg van hoe algemene platforms zijn gebouwd. Het mechanisme begrijpen is nuttiger dan klagen over het symptoom, want het vertelt je wat er daadwerkelijk moet veranderen aan wáár je plaatst, niet alleen aan hoe je de tekst schrijft.
 
 ## Een structureel probleem, geen schrijfprobleem
 
-Het verdienmodel van een algemeen vacatureplatform draait om zo veel mogelijk matches tussen zo veel mogelijk werkzoekenden en vacatures, want dat houdt beide kanten — werkgevers die voor zichtbaarheid betalen en kandidaten die gratis rondkijken — op het platform. Relevantie is ondergeschikt aan volume. Het resultaat is een matchingalgoritme dat "AI" behandelt als een trefwoord om bereik mee te verbreden, niet als een filter om te versmallen.
+Het verdienmodel van een algemeen vacatureplatform draait om zo veel mogelijk matches tussen zo veel mogelijk werkzoekenden en vacatures, want dat houdt beide kanten - werkgevers die voor zichtbaarheid betalen en kandidaten die gratis rondkijken - op het platform. Relevantie is ondergeschikt aan volume. Het resultaat is een matchingalgoritme dat "AI" behandelt als een trefwoord om bereik mee te verbreden, niet als een filter om te versmallen.
 
-Combineer dat met zichtbaarheid die je kunt kopen, en er komt een tweede effect bovenop het eerste: de vacature van een werkgever wordt deels gerangschikt op wat die uitgeeft, niet op hoe goed hij past bij de kandidaten die kijken. Een AI-team van vijf mensen met een bescheiden budget wordt voorbijgestreefd door de generieke "Software Engineer"-vacature van een groot bedrijf die toevallig ook machine learning noemt in het vijfde opsommingsteken — en beide vacatures concurreren om dezelfde pool sollicitanten, van wie de meesten geen van beide rollen specifiek zoeken.
+Combineer dat met zichtbaarheid die je kunt kopen, en er komt een tweede effect bovenop het eerste: de vacature van een werkgever wordt deels gerangschikt op wat die uitgeeft, niet op hoe goed hij past bij de kandidaten die kijken. Een AI-team van vijf mensen met een bescheiden budget wordt voorbijgestreefd door de generieke "Software Engineer"-vacature van een groot bedrijf die toevallig ook machine learning noemt in het vijfde opsommingsteken - en beide vacatures concurreren om dezelfde pool sollicitanten, van wie de meesten geen van beide rollen specifiek zoeken.
 
 ## Wat dit je daadwerkelijk kost
 
-De zichtbare kost is tijd: een stapel sollicitaties doorspitten waarvan een klein deel relevant is. De minder zichtbare kost is erger — gekwalificeerde kandidaten die specifiek AI/ML/Data-werk zoeken, nemen vaak niet eens de moeite om een algemeen platform te scannen, omdat hun ervaring dezelfde ruis is van de andere kant: langs honderden irrelevante IT-rollen scrollen om de handvol te vinden die passen. Als jouw vacature op dezelfde resultatenpagina om aandacht concurreert met backend-, DevOps- en IT-supportrollen, vis je niet alleen in een drukke vijver — de vissen die je wilt, zijn daar vaak zelf al gestopt met vissen.
+De zichtbare kost is tijd: een stapel sollicitaties doorspitten waarvan een klein deel relevant is. De minder zichtbare kost is erger - gekwalificeerde kandidaten die specifiek AI/ML/Data-werk zoeken, nemen vaak niet eens de moeite om een algemeen platform te scannen, omdat hun ervaring dezelfde ruis is van de andere kant: langs honderden irrelevante IT-rollen scrollen om de handvol te vinden die passen. Als jouw vacature op dezelfde resultatenpagina om aandacht concurreert met backend-, DevOps- en IT-supportrollen, vis je niet alleen in een drukke vijver - de vissen die je wilt, zijn daar vaak zelf al gestopt met vissen.
 
 ## Wat een gespecialiseerd platform anders doet
 
-**Het publiek heeft zichzelf al gefilterd.** Iedereen die rondkijkt op een platform met alleen AI-, ML- en datarollen is daar omdat die specifiek zo'n rol zoekt. Je betaalt niet om een breed publiek te bereiken in de hoop dat relevantie zichzelf oplost — de relevantie zit vóór je vacature in plaats van erna.
+**Het publiek heeft zichzelf al gefilterd.** Iedereen die rondkijkt op een platform met alleen AI-, ML- en datarollen is daar omdat die specifiek zo'n rol zoekt. Je betaalt niet om een breed publiek te bereiken in de hoop dat relevantie zichzelf oplost - de relevantie zit vóór je vacature in plaats van erna.
 
 **Zichtbaarheid wordt niet bepaald door budget.** Op OnlyAIJobs wordt de vermelding van elke werkgever op dezelfde voorwaarden getoond, ongeacht bedrijfsgrootte of uitgaven. Een klein team met een oprecht interessant AI-vraagstuk wordt niet voorbijgestreefd door het grotere wervingsbudget van een groot bedrijf voor een ongerelateerde rol die toevallig hetzelfde trefwoord noemt.
 
-**Locatieprecisie doet echt filterwerk.** Vermeldingen tonen het exacte adres en de afstand vanaf het huis van een kandidaat, niet alleen een plaatsnaam. Dat betekent dat de kandidaten die op jouw vacature reageren zichzelf al hebben geselecteerd op reisafstand voordat ze doorklikten — minder sollicitaties van mensen die zouden afhaken zodra ze het kantooradres zien.
+**Locatieprecisie doet echt filterwerk.** Vermeldingen tonen het exacte adres en de afstand vanaf het huis van een kandidaat, niet alleen een plaatsnaam. Dat betekent dat de kandidaten die op jouw vacature reageren zichzelf al hebben geselecteerd op reisafstand voordat ze doorklikten - minder sollicitaties van mensen die zouden afhaken zodra ze het kantooradres zien.
 
 ## De twee routes vergeleken
 
 | | Algemeen platform | Gespecialiseerd AI/ML/Data-platform |
 |---|---|---|
-| Samenstelling van het publiek | Breed — alle sectoren, alle rollen | Smal — alleen AI, ML, data |
+| Samenstelling van het publiek | Breed - alle sectoren, alle rollen | Smal - alleen AI, ML, data |
 | Rangschikkingslogica | Deels advertentiebudget | Gelijke zichtbaarheid voor elke werkgever |
 | Locatiesignaal | Alleen plaatsnaam | Exact adres + afstand |
-| Screeningslast voor je team | Hoog — meeste sollicitanten naast de roos | Lager — publiek vooraf gefilterd op interesse |
+| Screeningslast voor je team | Hoog - meeste sollicitanten naast de roos | Lager - publiek vooraf gefilterd op interesse |
 | Kosten van je eerste plaatsing | Betaalde plaatsing of boost | Gratis |
 | Meest geschikt voor | Hoogvolume, generieke werving | Rollen waar "specifiek AI/ML/Data" de kwalificerende filter is |
 
 ## Hoe plaatsen er in de praktijk uitziet
 
-Er is geen dashboard om in te richten en geen zelfbedieningsaccount om aan te maken. Je stuurt een link naar de vacature op je eigen carrièrepagina naar info@onlyaijobs.eu, samen met de stad of het exacte adres waar de rol is gevestigd — precies genoeg om de afstand-tot-huiszoekfunctie te laten werken die kandidaten daadwerkelijk gebruiken. De vermelding gaat live onder de juiste AI/ML/Data-categorie. Je eerste vacature plaatsen kost niets.
+Er is geen dashboard om in te richten en geen zelfbedieningsaccount om aan te maken. Je stuurt een link naar de vacature op je eigen carrièrepagina naar info@onlyaijobs.eu, samen met de stad of het exacte adres waar de rol is gevestigd - precies genoeg om de afstand-tot-huiszoekfunctie te laten werken die kandidaten daadwerkelijk gebruiken. De vermelding gaat live onder de juiste AI/ML/Data-categorie. Je eerste vacature plaatsen kost niets.
 
 ## Waar te beginnen
 
-Werf je voor een AI-, machine learning-, data science- of aanverwante rol in Nederland, dan is de snelste manier om te zien of een gespecialiseerd publiek de kwaliteit van je sollicitaties verandert: de vacature plaatsen die je al hebt — niet eerst je hele wervingsproces eromheen herontwerpen.
+Werf je voor een AI-, machine learning-, data science- of aanverwante rol in Nederland, dan is de snelste manier om te zien of een gespecialiseerd publiek de kwaliteit van je sollicitaties verandert: de vacature plaatsen die je al hebt - niet eerst je hele wervingsproces eromheen herontwerpen.
 
 Stuur een link naar je openstaande rol naar [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) en hij staat live onder de juiste categorie, op gelijke voet met elke andere werkgever op het platform, kosteloos voor de eerste plaatsing.
 
@@ -73,7 +73,7 @@ Algemene platforms zijn gebouwd om matches over hun hele publiek te maximalisere
 Ja, structureel meer dan op een algemeen platform. Op een gespecialiseerd platform worden vermeldingen op gelijke voorwaarden getoond ongeacht bedrijfsgrootte of advertentie-uitgaven, dus de vacature van een team van vijf wordt niet systematisch voorbijgestreefd door een groot bedrijf dat voor plaatsing betaalt. Zichtbaarheid hangt ervan af dat de vermelding er staat, niet van het overbieden van concurrenten.
 
 ### (Scenario: recruiter die afweegt of een nicheplatform de moeite waard is) Is het de moeite waard om op een gespecialiseerd AI-platform te plaatsen als ik al LinkedIn en Indeed gebruik?
-Het is een goedkope test, geen vervangingsbeslissing. De samenstelling van het publiek is fundamenteel anders — iedereen die op een gespecialiseerd platform rondkijkt, zoekt specifiek een AI-, ML- of datarol, wat de verhouding relevant-irrelevant in je sollicitaties verandert. Omdat de eerste plaatsing gratis is, is de enige kost van het testen de tijd om een link te sturen.
+Het is een goedkope test, geen vervangingsbeslissing. De samenstelling van het publiek is fundamenteel anders - iedereen die op een gespecialiseerd platform rondkijkt, zoekt specifiek een AI-, ML- of datarol, wat de verhouding relevant-irrelevant in je sollicitaties verandert. Omdat de eerste plaatsing gratis is, is de enige kost van het testen de tijd om een link te sturen.
 
 ### (Scenario: werkgever die niet weet welke informatie nodig is) Wat moet ik precies aanleveren om een vacature te plaatsen?
 Een link naar de vacature op je eigen website of carrièrepagina, en de stad of het exacte adres waar de rol is gevestigd. Het adres is wat de afstand-tot-huiszoekfunctie voor kandidaten mogelijk maakt, dus specifiek zijn verbetert de kwaliteit van de match in plaats van alleen het bereik.

@@ -1,6 +1,6 @@
 🚨 €4,900 quote, three weeks before ski season, €2,200 in the bank. He drafted "any flexibility on price," deleted it, sent his real budget instead. The reply came that afternoon. 😳
 
-Saying a quote is "too expensive" gets a discount on the same scope — the worst outcome available. Here's what moves the number: 🧠
+Saying a quote is "too expensive" gets a discount on the same scope - the worst outcome available. Here's what moves the number: 🧠
 
 ❌ Asking for a discount tells the vendor to cut something, unspecified
 ❌ "My nephew says it's a week's work" signals you'll relitigate every estimate

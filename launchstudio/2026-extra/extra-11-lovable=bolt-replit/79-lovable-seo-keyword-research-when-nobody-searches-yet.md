@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (non-technical)
 
 Most SEO advice assumes a market that already searches. Pick your category, check the volume, compare the competition, publish. That works for accounting software and running shoes.
 
-It does not work for the product you built, because you built something that did not exist, and the phrase you use for it — the one on your home page, the one you say at networking events — is a phrase nobody types. Volume tools report zero. You conclude search is not for you, and you are wrong, because your customers are searching constantly. They are searching for the problem.
+It does not work for the product you built, because you built something that did not exist, and the phrase you use for it - the one on your home page, the one you say at networking events - is a phrase nobody types. Volume tools report zero. You conclude search is not for you, and you are wrong, because your customers are searching constantly. They are searching for the problem.
 
 ## The Category Trap
 
@@ -30,7 +30,7 @@ A founder builds a tool that helps construction crews document safety briefings,
 
 Meanwhile the site manager with the actual problem is typing things like how to prove a toolbox meeting took place, what must be recorded for a safety inspection, or whether a photograph is sufficient evidence. He has no idea that software for this exists. He is not looking for a product; he is looking for a way out of a problem, and he will meet a product only if one has written something useful about it.
 
-That gap is the whole opportunity. Category terms are searched by people comparing suppliers — valuable, scarce, and contested by everyone with a marketing budget. Problem terms are searched by everyone who has the problem, which is a much larger group nobody is serving.
+That gap is the whole opportunity. Category terms are searched by people comparing suppliers - valuable, scarce, and contested by everyone with a marketing budget. Problem terms are searched by everyone who has the problem, which is a much larger group nobody is serving.
 
 ## Where the Real Phrases Come From
 
@@ -60,7 +60,7 @@ Sort everything you have found into four kinds.
 
 **Branded:** your name. Trivial volume, essential to own.
 
-A page serving the first kind brings people who did not know you existed. A page serving the third brings people about to decide. Small products should write in the order: one branded page, two or three comparison pages, then problem pages steadily — because the comparison pages convert while the problem pages accumulate.
+A page serving the first kind brings people who did not know you existed. A page serving the third brings people about to decide. Small products should write in the order: one branded page, two or three comparison pages, then problem pages steadily - because the comparison pages convert while the problem pages accumulate.
 
 ## Dutch Phrasing Is Not a Translation
 
@@ -68,7 +68,7 @@ For a product sold in the Netherlands, this deserves its own attention.
 
 Dutch professionals search in Dutch for their problem, in a register that is usually blunter and more concrete than the English equivalent. They frequently search in English for technology, which means a bilingual product needs different content per language rather than the same content twice.
 
-Translating your English keywords is the reliable way to produce phrases nobody types. Find the Dutch phrasing from Dutch sources — your own customers, trade forums, search suggestions typed in Dutch — and write the page in that language rather than translating into it. A page written directly in Dutch about a Dutch regulation, referring to the actual rule by its actual name, will outrank a translated general page indefinitely.
+Translating your English keywords is the reliable way to produce phrases nobody types. Find the Dutch phrasing from Dutch sources - your own customers, trade forums, search suggestions typed in Dutch - and write the page in that language rather than translating into it. A page written directly in Dutch about a Dutch regulation, referring to the actual rule by its actual name, will outrank a translated general page indefinitely.
 
 Regional and sector specificity is an advantage here too. A small product can rank for "for installation companies in Gelderland" in a way it will never rank for the generic term, and the visitor arriving from that search is far more likely to buy.
 
@@ -84,7 +84,7 @@ So the test is not "is the volume high". It is: does somebody with this problem 
 
 The structural rule that makes the rest work.
 
-Each page answers one question completely. A page trying to cover five related questions ranks for none of them; five pages, each answering one, rank for five. And a page that answers its question fully — including the part where the honest answer is "you may not need software for this" — earns the trust that makes the next step possible.
+Each page answers one question completely. A page trying to cover five related questions ranks for none of them; five pages, each answering one, rank for five. And a page that answers its question fully - including the part where the honest answer is "you may not need software for this" - earns the trust that makes the next step possible.
 
 This also happens to be what makes a page quotable by AI answer engines, which increasingly mediate this kind of research. Direct answers, specific facts, named regulations, clear attribution.
 
@@ -98,7 +98,7 @@ Two failures worth avoiding.
 
 ## Turning Research Into a Plan
 
-The output should be a simple list: twenty to thirty phrases, each with its intent, each mapped to one page, ordered by how close the searcher is to needing you. Then publish steadily — one page a fortnight beats ten in a week and nothing afterwards — and after three months check which pages produce impressions, which produce clicks, and which produce customers.
+The output should be a simple list: twenty to thirty phrases, each with its intent, each mapped to one page, ordered by how close the searcher is to needing you. Then publish steadily - one page a fortnight beats ten in a week and nothing afterwards - and after three months check which pages produce impressions, which produce clicks, and which produce customers.
 
 ## Writing the Page So the Research Pays Off
 
@@ -116,13 +116,13 @@ A correct keyword attached to a bad page produces impressions and no customers. 
 
 **Say what your product does at the end, once, honestly.** Not a sales page wearing an article's clothes. A reader who got a real answer and then learns you built something for exactly this problem converts at a rate no amount of persuasion achieves.
 
-Then revisit. A page written two years ago about a rule that changed is worse than no page, and updating an existing page that already ranks is consistently cheaper than writing a new one — which is why a small maintained set beats a large abandoned one.
+Then revisit. A page written two years ago about a rule that changed is worse than no page, and updating an existing page that already ranks is consistently cheaper than writing a new one - which is why a small maintained set beats a large abandoned one.
 
 ## Getting the Foundation and the Plan Together
 
 Research is wasted on a site that cannot be indexed, which is the usual situation for an AI-built product: content rendered in the browser, one title across every page, no sitemap.
 
-LaunchStudio handles both halves: the technical foundation — public pages served as real HTML with per-page metadata, canonical addresses, structured data, sitemap — and a keyword and content plan built from your customers' actual phrasing in Dutch and English, with the first pages written so you can see the pattern before continuing yourself.
+LaunchStudio handles both halves: the technical foundation - public pages served as real HTML with per-page metadata, canonical addresses, structured data, sitemap - and a keyword and content plan built from your customers' actual phrasing in Dutch and English, with the first pages written so you can see the pattern before continuing yourself.
 
 Behind it is Manifera: eleven years of building for the Dutch market from Amsterdam Herengracht 420, with clients including Vodafone, TNO and CFLW.
 
@@ -132,7 +132,7 @@ Behind it is Manifera: eleven years of building for the Dutch market from Amster
 
 ### Ranked for a Phrase Eleven People a Month Typed
 
-Sophie Wierda built Toolboxx with Lovable: an app for recording toolbox meetings — the short safety briefings construction crews hold before starting work — used by nineteen contracting firms around Hoorn and Alkmaar.
+Sophie Wierda built Toolboxx with Lovable: an app for recording toolbox meetings - the short safety briefings construction crews hold before starting work - used by nineteen contracting firms around Hoorn and Alkmaar.
 
 She had optimised for "toolbox meeting software". The phrase had almost no Dutch search volume, and the three pages she had written for it produced eleven visitors in four months.
 
@@ -140,12 +140,12 @@ The research took two afternoons and consisted mostly of talking to customers an
 
 Nine business days of work: the public pages and the existing articles moved from browser-rendered to statically served HTML with distinct titles and descriptions, since none of her content had been properly indexed; canonical address settled with redirects; sitemap and structured data added; then eleven new pages written directly in Dutch, each answering one question completely, referring to the actual rules by name and stating plainly where the requirement depends on circumstances; two comparison pages written, including an honest one about when a spreadsheet is genuinely sufficient; and a simple plan left behind with fourteen further phrases ordered by intent.
 
-**Result:** after five months the eleven pages produced around 900 visitors a month, and Sophie reports 27 new trials attributable to search, of which nine converted. The single best-performing page was the one about whether a photograph counts as proof — a question no volume tool had reported at all. The honest spreadsheet comparison became her second-highest converting page, which she had expected to lose customers.
+**Result:** after five months the eleven pages produced around 900 visitors a month, and Sophie reports 27 new trials attributable to search, of which nine converted. The single best-performing page was the one about whether a photograph counts as proof - a question no volume tool had reported at all. The honest spreadsheet comparison became her second-highest converting page, which she had expected to lose customers.
 
 > *"I had written three pages for the phrase I use, and my customers were typing a completely different sentence that I had never once said out loud."*
-> — **Sophie Wierda, Founder, Toolboxx (Hoorn)**
+> - **Sophie Wierda, Founder, Toolboxx (Hoorn)**
 
-**Cost & Timeline:** €3,300 (technical SEO foundation, keyword and intent research from customer sources, eleven Dutch pages and two comparison pages, content plan) — completed in 9 business days.
+**Cost & Timeline:** €3,300 (technical SEO foundation, keyword and intent research from customer sources, eleven Dutch pages and two comparison pages, content plan) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -167,7 +167,7 @@ Frequently, yes. Ten people with the exact problem you solve are worth more than
 
 ### How many pages should I publish, and how fast?
 
-One page per question, published steadily — one a fortnight sustained beats ten in a week followed by nothing. Start with one branded page and two or three comparison pages, then work through problem questions by intent.
+One page per question, published steadily - one a fortnight sustained beats ten in a week followed by nothing. Start with one branded page and two or three comparison pages, then work through problem questions by intent.
 
 <script type="application/ld+json">
 {
@@ -179,7 +179,7 @@ One page per question, published steadily — one a fortnight sustained beats te
       "name": "What if my product category has no search volume?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your customers are searching the problem, not the category — a larger and far less contested group than people already comparing suppliers."
+        "text": "Your customers are searching the problem, not the category - a larger and far less contested group than people already comparing suppliers."
       }
     },
     {
@@ -195,7 +195,7 @@ One page per question, published steadily — one a fortnight sustained beats te
       "name": "Can I translate my English keywords into Dutch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — translation produces phrases nobody types. Find Dutch phrasing from Dutch sources and write directly in Dutch."
+        "text": "No - translation produces phrases nobody types. Find Dutch phrasing from Dutch sources and write directly in Dutch."
       }
     },
     {
@@ -211,7 +211,7 @@ One page per question, published steadily — one a fortnight sustained beats te
       "name": "How many pages should I publish, and how fast?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One page per question, published steadily — a fortnightly cadence sustained beats a burst followed by nothing."
+        "text": "One page per question, published steadily - a fortnightly cadence sustained beats a burst followed by nothing."
       }
     }
   ]

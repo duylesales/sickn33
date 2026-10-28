@@ -1,4 +1,4 @@
-🚨 No-code and AI just collided — and it changes everything about how you should build in 2027. 🔥
+🚨 No-code and AI just collided - and it changes everything about how you should build in 2027. 🔥
 
 Old no-code (Bubble, Webflow) trapped you:
 ❌ Slow, bloated performance
@@ -13,7 +13,7 @@ The new AI-generated code gives you speed AND ownership:
 
 But here's what NO tool generates automatically: 😱 production security, real payments, deployment pipelines, monitoring, GDPR compliance.
 
-At **LaunchStudio**, we build exactly that missing layer — without touching your AI-generated frontend:
+At **LaunchStudio**, we build exactly that missing layer - without touching your AI-generated frontend:
 ✅ Row Level Security & production hardening
 ✅ Stripe/Mollie payment infrastructure
 ✅ Live deployment in 1-3 weeks, fixed price from €800

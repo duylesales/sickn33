@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Most software has essentially no marginal cost: the thousandth customer costs almost the same to serve as the hundredth. An AI feature breaks that. Every use spends money at a provider, the amount depends on how much text goes in and comes out, and a heavy user can consume more than they pay you — which is a genuinely unfamiliar situation for anyone whose pricing intuition was formed on ordinary SaaS.
+Most software has essentially no marginal cost: the thousandth customer costs almost the same to serve as the hundredth. An AI feature breaks that. Every use spends money at a provider, the amount depends on how much text goes in and comes out, and a heavy user can consume more than they pay you - which is a genuinely unfamiliar situation for anyone whose pricing intuition was formed on ordinary SaaS.
 
 The good news is that the arithmetic is knowable in advance, and doing it takes an hour. The common failure is not that AI features are unaffordable; it is that nobody calculated before building, and the number is discovered from an invoice.
 
@@ -34,7 +34,7 @@ Three inputs give you a usable figure.
 
 **The provider's price per million tokens**, which varies by an order of magnitude between the small fast models and the large capable ones.
 
-Multiply, and compare to your subscription price. If a summarisation feature costs €0.004 per use and a customer uses it 200 times a month, that is €0.80 against a €29 plan — comfortable. If each use involves a large document and costs €0.09, the same customer costs €18, and your margin has effectively gone.
+Multiply, and compare to your subscription price. If a summarisation feature costs €0.004 per use and a customer uses it 200 times a month, that is €0.80 against a €29 plan - comfortable. If each use involves a large document and costs €0.09, the same customer costs €18, and your margin has effectively gone.
 
 Then do the calculation again for the heaviest plausible customer rather than the average one. Averages hide the case that hurts, and with a flat subscription a small number of heavy users determine the outcome.
 
@@ -60,7 +60,7 @@ Once the cost is known, the pricing decision has four shapes, each appropriate i
 
 **Charge per use.** Honest and it aligns cost with revenue, and it makes customers hesitate before each use, which for a feature you want adopted is a real drawback.
 
-**A credit system.** Customers buy credits consumed by AI actions. Flexible, and it introduces an entire billing mechanism — balances, expiry, top-ups — that must be built and accounted for properly.
+**A credit system.** Customers buy credits consumed by AI actions. Flexible, and it introduces an entire billing mechanism - balances, expiry, top-ups - that must be built and accounted for properly.
 
 **Higher tier only.** Effective if AI is a differentiator rather than a core function, and it keeps the cost concentrated among customers paying more.
 
@@ -74,7 +74,7 @@ Estimation tells you what to expect. Controls determine what happens when realit
 
 **A per-account monthly limit**, enforced before the call is made, so one customer cannot consume the budget.
 
-**A global daily cap**, so total spend has a ceiling regardless of where usage comes from — this is the control that turns a weekend incident into a nuisance.
+**A global daily cap**, so total spend has a ceiling regardless of where usage comes from - this is the control that turns a weekend incident into a nuisance.
 
 **Authentication before any metered call.** An AI feature reachable without an account will be found and used at your expense, usually within days.
 
@@ -82,7 +82,7 @@ Estimation tells you what to expect. Controls determine what happens when realit
 
 **A kill switch**, so the feature can be disabled without a deployment when a provider misbehaves or costs run away.
 
-Together these are perhaps a day of work, and they convert an open-ended liability into a bounded cost. The alternative — relying on the provider's own budget alerts — notifies you after spending has occurred, which is a report rather than a control.
+Together these are perhaps a day of work, and they convert an open-ended liability into a bounded cost. The alternative - relying on the provider's own budget alerts - notifies you after spending has occurred, which is a report rather than a control.
 
 ## Real example
 
@@ -90,14 +90,14 @@ Together these are perhaps a day of work, and they convert an open-ended liabili
 
 Lena Fischer ran Vergaderpunt, a meeting-notes tool for consultancies, built in Bolt. It summarised uploaded transcripts using a large model, included in a €39 monthly plan.
 
-Her estimate had been €0.02 per summary based on a test transcript of about two pages, with an assumption of 30 summaries per customer per month — roughly €0.60 per customer. The first full month with 40 customers produced a model bill of €1,240, against €1,560 in subscription revenue.
+Her estimate had been €0.02 per summary based on a test transcript of about two pages, with an assumption of 30 summaries per customer per month - roughly €0.60 per customer. The first full month with 40 customers produced a model bill of €1,240, against €1,560 in subscription revenue.
 
 Three causes. Real transcripts were 20 to 60 pages rather than two, so input cost was roughly fifteen times the estimate. The feature resent the full transcript with every follow-up question, so a customer asking three questions paid four times. And six customers were using it far more than assumed, one producing 340 summaries in the month.
 
 **Result:** transcripts chunked with only relevant sections sent per question, a smaller model used for the initial extraction with the large model reserved for the final summary, prompt caching applied to the fixed instructions, identical requests cached, and a plan allowance of 100 summaries a month with visible usage and paid top-ups. Cost per customer fell to about €1.90 and the heaviest user moved to a higher tier.
 
 > "My estimate was right for the document I tested with. Every real customer uploaded something twenty times bigger, and I found out from an invoice."
-> — **Lena Fischer, Founder, Vergaderpunt**
+> - **Lena Fischer, Founder, Vergaderpunt**
 
 **Cost & Timeline:** AI cost optimisation and usage limits delivered in 3 business days.
 

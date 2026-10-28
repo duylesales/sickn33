@@ -12,7 +12,7 @@ target_persona: "CTO"
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Software Development: A CTO's Real-World Guide to Getting It Right",
-  "description": "A CTO's practical guide to what actually determines whether a software development effort succeeds — not the tech stack, but the structural decisions made before the first line of code is written.",
+  "description": "A CTO's practical guide to what actually determines whether a software development effort succeeds - not the tech stack, but the structural decisions made before the first line of code is written.",
   "author": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com/" },
   "datePublished": "2026-08-20",
@@ -20,23 +20,23 @@ target_persona: "CTO"
 }
 </script>
 
-Ask ten CTOs what "software development" actually means at their company and you'll get ten different answers — a hiring plan, a vendor relationship, a methodology, a budget line — and the confusion in that answer is usually the first sign the effort is about to go sideways.
+Ask ten CTOs what "software development" actually means at their company and you'll get ten different answers - a hiring plan, a vendor relationship, a methodology, a budget line - and the confusion in that answer is usually the first sign the effort is about to go sideways.
 
-**The Pain:** A CTO has been asked to stand up software development capability for a product that has to exist within a defined timeframe, and the term itself is doing a lot of unexamined work — covering everything from writing code to managing a team to choosing an architecture to negotiating a vendor contract, with no explicit agreement inside the company about which of those the CTO is actually responsible for delivering first.
+**The Pain:** A CTO has been asked to stand up software development capability for a product that has to exist within a defined timeframe, and the term itself is doing a lot of unexamined work - covering everything from writing code to managing a team to choosing an architecture to negotiating a vendor contract, with no explicit agreement inside the company about which of those the CTO is actually responsible for delivering first.
 
-**The Agitation:** A software development effort that starts without agreement on what's actually being built, by whom, and to what standard doesn't fail on day one — it fails gradually, as ambiguity about scope, ownership, and quality standard compounds sprint after sprint until a company discovers, usually around month four, that everyone had been building a slightly different mental model of the same project. Untangling that misalignment typically costs a mid-market company €40,000-€80,000 in rework and lost quarters before anyone names the actual root cause.
+**The Agitation:** A software development effort that starts without agreement on what's actually being built, by whom, and to what standard doesn't fail on day one - it fails gradually, as ambiguity about scope, ownership, and quality standard compounds sprint after sprint until a company discovers, usually around month four, that everyone had been building a slightly different mental model of the same project. Untangling that misalignment typically costs a mid-market company €40,000-€80,000 in rework and lost quarters before anyone names the actual root cause.
 
 ## What Actually Determines Whether Software Development Succeeds
 
-Software development, as a discipline, is not primarily a technical exercise — it's a sequence of structural decisions made before, during, and after the technical work, and a CTO who treats it purely as "writing code" misses the decisions that actually determine the outcome.
+Software development, as a discipline, is not primarily a technical exercise - it's a sequence of structural decisions made before, during, and after the technical work, and a CTO who treats it purely as "writing code" misses the decisions that actually determine the outcome.
 
-The first structural decision is scope definition with enough precision that two different people reading it would build the same thing. Most software development efforts that drift do so not because the code was hard to write, but because the specification was ambiguous enough that reasonable people filled the gaps differently — and by the time that gap surfaces, in a demo or a user test, weeks of work have already been built on the wrong interpretation.
+The first structural decision is scope definition with enough precision that two different people reading it would build the same thing. Most software development efforts that drift do so not because the code was hard to write, but because the specification was ambiguous enough that reasonable people filled the gaps differently - and by the time that gap surfaces, in a demo or a user test, weeks of work have already been built on the wrong interpretation.
 
 The second is architectural discipline applied proportionally to what the system actually needs, not to what's fashionable. Software development efforts fail in both directions here: over-engineered systems that spend months on infrastructure a startup with twelve users doesn't need yet, and under-engineered systems that accumulate technical debt so fast the team spends more time fighting the codebase than building on it. The right level of architectural investment is a judgment call that needs to be made explicitly, not defaulted into by whoever happened to write the first module.
 
-The third is a genuine testing and quality discipline built in from the start, not bolted on before a release. Software development without automated testing isn't faster in any way that matters past the first few sprints — it's borrowing velocity from the future at a steep interest rate, because every change to untested code carries an unknown risk of breaking something else, and that risk compounds with every feature added.
+The third is a genuine testing and quality discipline built in from the start, not bolted on before a release. Software development without automated testing isn't faster in any way that matters past the first few sprints - it's borrowing velocity from the future at a steep interest rate, because every change to untested code carries an unknown risk of breaking something else, and that risk compounds with every feature added.
 
-The fourth, and the one most companies get wrong first, is treating software development as an ongoing capability rather than a one-time project. A system that ships and then sits unmaintained accumulates security vulnerabilities, breaks against every dependency update, and becomes progressively more expensive to touch — software development doesn't end at launch, and a CTO who plans as if it does is setting up the exact crisis that shows up eighteen months later as "we need to rebuild this."
+The fourth, and the one most companies get wrong first, is treating software development as an ongoing capability rather than a one-time project. A system that ships and then sits unmaintained accumulates security vulnerabilities, breaks against every dependency update, and becomes progressively more expensive to touch - software development doesn't end at launch, and a CTO who plans as if it does is setting up the exact crisis that shows up eighteen months later as "we need to rebuild this."
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -53,8 +53,8 @@ Rota Inteligente Lda, a Lisbon-based logistics-technology startup, had spent fiv
 
 Manifera ran a structured discovery phase that converted the vague product vision into a specification precise enough for both product and engineering to build against the same understanding, then delivered the corrected version with automated testing covering the core tracking logic. The rebuilt platform shipped within nine weeks, and the founder reported the specification document itself became the company's standard practice for every subsequent feature.
 
-> *"We'd spent five months building 'real-time tracking' and it turned out three different people in the company had three different definitions of what that meant. The fix wasn't more engineering — it was agreeing on the words before anyone touched a keyboard."*
-> — **Founder, Rota Inteligente Lda, Portugal**
+> *"We'd spent five months building 'real-time tracking' and it turned out three different people in the company had three different definitions of what that meant. The fix wasn't more engineering - it was agreeing on the words before anyone touched a keyboard."*
+> - **Founder, Rota Inteligente Lda, Portugal**
 
 ## Ambiguous Software Development vs. Manifera's Structured Approach
 
@@ -78,7 +78,7 @@ Because ambiguous scope lets reasonable people fill gaps differently, and by the
 
 ### (Scenario: CTO deciding how much architecture to invest in upfront) How much architectural investment does a new software development effort actually need?
 
-A level proportional to what the system genuinely requires at its current stage, decided deliberately rather than defaulted into by whoever writes the first module — both over-engineering and under-engineering are common failure modes.
+A level proportional to what the system genuinely requires at its current stage, decided deliberately rather than defaulted into by whoever writes the first module - both over-engineering and under-engineering are common failure modes.
 
 ### (Scenario: CTO under pressure to skip testing to hit a deadline) Does skipping automated testing actually make software development faster?
 

@@ -55,7 +55,7 @@ Data engineers arrive with advantages that data scientists frequently lack, and 
 
 They write production software. Version control, testing, code review, deployment and operability are habits rather than aspirations, and a large proportion of machine learning projects fail on exactly these.
 
-They understand data lineage and quality, which means they instinctively ask where a feature comes from and whether it will be available at prediction time — precisely the question that prevents leakage.
+They understand data lineage and quality, which means they instinctively ask where a feature comes from and whether it will be available at prediction time - precisely the question that prevents leakage.
 
 They have built and operated scheduled systems, so orchestration, retries, backfills and monitoring are familiar.
 

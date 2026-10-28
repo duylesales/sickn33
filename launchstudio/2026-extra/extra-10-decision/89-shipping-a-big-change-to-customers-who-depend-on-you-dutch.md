@@ -32,7 +32,7 @@ Voor hen betekent uw trotse "verbetering" vaak een verplichte maandagochtend waa
 Dit is geen pleidooi tegen productinnovatie. Het is een pleidooi om een ingrijpende wijziging te behandelen als een **zorgvuldige operatie met een vast stappenplan**, in plaats van als een plotselinge 'Big Bang'-release. 
 
 Het technische risico is immers slechts de helft van het verhaal:
-De helft die oprichters structureel onderschatten, is dat een verandering die klanten ervaren als iets dat hen **wordt aangedaan**, direct leidt tot abonnement-opzeggingen (*churn*) — zelfs wanneer de nieuwe versie technisch en visueel objectief superieur is.
+De helft die oprichters structureel onderschatten, is dat een verandering die klanten ervaren als iets dat hen **wordt aangedaan**, direct leidt tot abonnement-opzeggingen (*churn*) - zelfs wanneer de nieuwe versie technisch en visueel objectief superieur is.
 
 ## Bepaal Wat Absoluut Niet Mag Breken
 
@@ -60,13 +60,13 @@ Klanten die hun vinger opsteken voelen zich partners in plaats van proefkonijnen
 ### 3. Een Klein Percentage van de Accounts (Inclusief Één Grote Klant)
 Zorg dat deze groep minstens één groot account bevat. Prestatieproblemen die pas optreden bij tienduizenden records worden bij kleine accounts immers nooit zichtbaar.
 
-### 4. Iedereen — MET DE MOGELIJKHEID OM TERUG TE SCHAKELEN
+### 4. Iedereen - MET DE MOGELIJKHEID OM TERUG TE SCHAKELEN
 Laat de vertrouwde klassieke interface gedurende een afgebakende periode (bijvoorbeeld vier tot zes weken) beschikbaar via een opvallende knop: **"Tijdelijk terug naar de klassieke weergave"**.
 
 Dit ene element verandert de dynamiek compleet:
 Een drukke gebruiker die op maandagochtend snel een declaratie moet indienen, raakt niet in paniek als hij de nieuwe layout niet direct begrijpt. Hij klikt op 'Terug naar klassiek', doet zijn werk, en probeert de nieuwe versie later in de week rustig uit. Neemt u die optie weg, dan is zijn enige uitweg om boos te mailen of over te stappen naar de concurrent.
 
-## Wat U Communiceert — En Wanneer
+## Wat U Communiceert - En Wanneer
 
 Goede communicatie bestaat uit drie contactmomenten:
 
@@ -90,26 +90,26 @@ Het nieuwe ontwerp heeft prachtige witruimte en grote knoppen, maar de reception
 
 Dat is een waardevol inzicht: behoud de nieuwe layout voor nieuwe klanten, maar herstel de sneltoetsen en informatiedichtheid voor de professionals.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productbegeleiding en enterprise DevOps) bouwen we veilige migratiestrategieën, feature flags en dual-run architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw productvernieuwing met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat u vernieuwt met behoud van uw klanten.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productbegeleiding en enterprise DevOps) bouwen we veilige migratiestrategieën, feature flags en dual-run architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw productvernieuwing met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat u vernieuwt met behoud van uw klanten.
 
 ## Echt voorbeeld
 
 ### Het Redesign Waar Niemand Meer van Terug Kon
 
-Anouk Steenbergen runde Praktijkplan, een agendabeheer- en patiëntenplanningsapplicatie voor fysiotherapiepraktijken, gebouwd via Cursor. Na vier maanden hard werken verving ze op een dinsdagochtend de vertrouwde planningskalender door een compleet vernieuwde versie voor alle 140 aangesloten praktijken — in één keer, zonder terugvaloptie.
+Anouk Steenbergen runde Praktijkplan, een agendabeheer- en patiëntenplanningsapplicatie voor fysiotherapiepraktijken, gebouwd via Cursor. Na vier maanden hard werken verving ze op een dinsdagochtend de vertrouwde planningskalender door een compleet vernieuwde versie voor alle 140 aangesloten praktijken - in één keer, zonder terugvaloptie.
 
 Het nieuwe kalenderscherm zag er prachtig modern uit en laadde sneller.
 
 Maar er was één catastrofale inschattingsfout gemaakt:
-De dagweergave — die baliemedewerkers en praktijkassistenten honderden keren per dag raadpleegden — was verplaatst naar een sub-tabblad achter een extra muisklik. Bovendien was een veelgebruikte sneltoets (de spatiebalk om direct de volgende beschikbare fysiotherapeut te selecteren) verwijderd ten gunste van een pop-up venster.
+De dagweergave - die baliemedewerkers en praktijkassistenten honderden keren per dag raadpleegden - was verplaatst naar een sub-tabblad achter een extra muisklik. Bovendien was een veelgebruikte sneltoets (de spatiebalk om direct de volgende beschikbare fysiotherapeut te selecteren) verwijderd ten gunste van een pop-up venster.
 
 Het supportvolume schoot omhoog van vier berichten per week naar **zestig woedende tickets in drie dagen**:
 Er was technisch niets gecrasht, maar praktijkassistenten met rijen patiënten aan de balie konden hun werk niet meer op hun gebruikelijke tempo doen. Binnen twee weken zegden twee praktijken hun abonnement op. Een derde praktijkhouder eiste per ommegaande herstel van de oude interface, maar die was door Anouk al volledig uit de codebase verwijderd.
 
-**Resultaat:** Binnen 48 uur hielp LaunchStudio om de dagweergave weer als primaire standaard in te stellen en de spatiebalk-sneltoets te herstellen. Voor toekomstige updates werd een professionele uitrolstraat opgezet: updates worden eerst getoetst bij negen vrijwillige fysiotherapiepraktijken, vervolgens uitgerold naar 20% van de accounts, en pas daarna naar iedereen — met een persistente "Terug naar klassiek"-knop die zes weken actief blijft. Bij de eerstvolgende grote update (het facturatiedashboard) piekte de terugschakelratio in week één op 8%, om in week drie te dalen naar minder dan 1%. Er vertrok geen enkele klant meer.
+**Resultaat:** Binnen 48 uur hielp LaunchStudio om de dagweergave weer als primaire standaard in te stellen en de spatiebalk-sneltoets te herstellen. Voor toekomstige updates werd een professionele uitrolstraat opgezet: updates worden eerst getoetst bij negen vrijwillige fysiotherapiepraktijken, vervolgens uitgerold naar 20% van de accounts, en pas daarna naar iedereen - met een persistente "Terug naar klassiek"-knop die zes weken actief blijft. Bij de eerstvolgende grote update (het facturatiedashboard) piekte de terugschakelratio in week één op 8%, om in week drie te dalen naar minder dan 1%. Er vertrok geen enkele klant meer.
 
 > *"Het was een veel betere kalender, maar hij maakte mijn klanten langzamer in hun dagelijkse werk. Omdat niemand terug kon schakelen, moesten ze alles binnen één chaotische week opnieuw leren of weggaan."*
-> — **Anouk Steenbergen, Oprichter, Praktijkplan**
+> - **Anouk Steenbergen, Oprichter, Praktijkplan**
 
 **Kosten & Doorlooptijd:** Gefaseerde uitrolarchitectuur, fallback-mechanisme en change management opgeleverd in 3 werkdagen.
 

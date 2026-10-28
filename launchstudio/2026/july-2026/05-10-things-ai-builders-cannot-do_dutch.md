@@ -111,7 +111,7 @@ David werkte samen met **LaunchStudio (door Manifera)** om de transitie af te ha
 
 **Resultaat:** David heeft zijn platform veilig gelanceerd. In de eerste maand verwerkte hij met succes meer dan € 4.200 aan abonnementsinkomsten zonder enige downtime of beveiligingsproblemen.
 
-**Kosten en tijdlijn:** € 3.500 (groeipakket) — productieklaar en binnen 12 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 3.500 (groeipakket) - productieklaar en binnen 12 werkdagen geïmplementeerd.
 
 ---
 

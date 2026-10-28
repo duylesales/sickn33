@@ -20,15 +20,15 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a creator-payout platform aggregating earnings from multiple revenue sources — ad revenue share, viewer tips, brand-deal disbursements — into a single payout to each creator faces a foundational architecture decision that directly determines whether the platform can be trusted with creators' actual money: whether the earnings-to-payout pipeline is built around idempotent, auditable ledger reconciliation from the start, or treated as a refinement to be layered on once basic payout submission is working.
+A CTO at a creator-payout platform aggregating earnings from multiple revenue sources - ad revenue share, viewer tips, brand-deal disbursements - into a single payout to each creator faces a foundational architecture decision that directly determines whether the platform can be trusted with creators' actual money: whether the earnings-to-payout pipeline is built around idempotent, auditable ledger reconciliation from the start, or treated as a refinement to be layered on once basic payout submission is working.
 
 ## Why Naive Fire-and-Forget Payout Submission Produces Duplicate or Lost Payments
 
-The most naive approach to payout submission — the system calculates a creator's owed balance, calls a payment rail's API to disburse it, and marks the payout complete once the call returns — introduces a specific failure mode directly tied to how real networks actually behave, not how they behave in a clean development environment. When a payout API call times out, the system genuinely cannot tell, from the timeout alone, whether the payment rail received and processed the request before the connection dropped or never received it at all. A naive implementation that retries on any timeout risks paying the creator twice; one that treats any timeout as failure and simply logs an error risks silently failing to pay the creator at all, and at genuine multi-source, multi-creator transaction volume, this isn't a rare edge case — it's a routine, statistically inevitable occurrence.
+The most naive approach to payout submission - the system calculates a creator's owed balance, calls a payment rail's API to disburse it, and marks the payout complete once the call returns - introduces a specific failure mode directly tied to how real networks actually behave, not how they behave in a clean development environment. When a payout API call times out, the system genuinely cannot tell, from the timeout alone, whether the payment rail received and processed the request before the connection dropped or never received it at all. A naive implementation that retries on any timeout risks paying the creator twice; one that treats any timeout as failure and simply logs an error risks silently failing to pay the creator at all, and at genuine multi-source, multi-creator transaction volume, this isn't a rare edge case - it's a routine, statistically inevitable occurrence.
 
 ## What Idempotent Ledger Reconciliation Actually Solves
 
-Idempotent ledger reconciliation addresses this directly by treating the ledger, not the payment rail's response to any single API call, as the authoritative record of what a creator is owed and what has actually been disbursed. Every payout attempt carries a unique idempotency key tied to a specific ledger entry, so a retried request — whether triggered by a timeout, a client crash, or a queue redelivery — resolves to the same underlying payout rather than creating a duplicate one, since the payment rail itself recognizes the repeated key and returns the original outcome instead of processing it again. A separate, ongoing reconciliation process then compares the platform's internal ledger state against the payment rail's actual settlement records, surfacing and resolving any discrepancy — a payout the ledger believes succeeded but the rail shows as failed, or vice versa — before it can compound into an accounting or trust problem.
+Idempotent ledger reconciliation addresses this directly by treating the ledger, not the payment rail's response to any single API call, as the authoritative record of what a creator is owed and what has actually been disbursed. Every payout attempt carries a unique idempotency key tied to a specific ledger entry, so a retried request - whether triggered by a timeout, a client crash, or a queue redelivery - resolves to the same underlying payout rather than creating a duplicate one, since the payment rail itself recognizes the repeated key and returns the original outcome instead of processing it again. A separate, ongoing reconciliation process then compares the platform's internal ledger state against the payment rail's actual settlement records, surfacing and resolving any discrepancy - a payout the ledger believes succeeded but the rail shows as failed, or vice versa - before it can compound into an accounting or trust problem.
 
 ## Why Retrofitting Idempotent Ledger Architecture Onto an Existing Payout System Is Genuinely Difficult
 
@@ -36,7 +36,7 @@ A payout platform built initially around direct, fire-and-forget submission, wit
 
 ## What Building This Architecture From the Start Actually Requires
 
-- **Structuring the ledger as an append-only source of truth**, recording every earnings event and payout attempt with a unique idempotency key, since accurate, non-duplicated payout fundamentally depends on the ledger — not any single API response — being the authoritative record of what's owed and what's been paid.
+- **Structuring the ledger as an append-only source of truth**, recording every earnings event and payout attempt with a unique idempotency key, since accurate, non-duplicated payout fundamentally depends on the ledger - not any single API response - being the authoritative record of what's owed and what's been paid.
 - **Building an ongoing reconciliation engine** that compares internal ledger state against the payment rail's actual settlement records on a regular cycle, surfacing discrepancies for resolution before they compound into a larger accounting or trust problem.
 - **Designing payout submission around idempotent retry semantics from the start**, rather than a simpler fire-and-forget model that would need fundamental rework to support genuine exactly-once payout guarantees later.
 
@@ -64,7 +64,7 @@ Sisällöntekijämaksut Espoo, an Espoo-based creator payout platform, had built
 Manifera's Amsterdam team rebuilt the platform's earnings-to-payout pipeline around an append-only ledger with idempotency keys on every payout attempt, alongside an ongoing reconciliation engine comparing ledger state against the payment rail's actual settlement records, a substantial rework of systems that had been built without this architecture in mind.
 
 > *"We'd tested payouts dozens of times on our own accounts and everything always just worked. It wasn't until we hit real volume and a routine network timeout during a live batch run that we understood our system had no real way to know whether a payout it thought failed had actually gone through."*
-> — **CTO, Sisällöntekijämaksut Espoo**
+> - **CTO, Sisällöntekijämaksut Espoo**
 
 Sisällöntekijämaksut Espoo's rebuilt pipeline has processed its subsequent payout cycles without a single duplicate or lost payment, and the platform now runs simulated network-failure testing against every payout pipeline change before deployment, not just clean-network functional testing.
 
@@ -79,7 +79,7 @@ Sisällöntekijämaksut Espoo's rebuilt pipeline has processed its subsequent pa
 
 ## Scoping Your Own Creator Payout Platform's Ledger Architecture
 
-Before scaling a creator payout platform to real transaction volume, design the earnings-to-payout pipeline around an idempotent, auditable ledger from the start — a naive fire-and-forget model that looks fine in clean development testing reveals its real problems only under genuine network failure conditions, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable, auditable creator payout platform architecture.
+Before scaling a creator payout platform to real transaction volume, design the earnings-to-payout pipeline around an idempotent, auditable ledger from the start - a naive fire-and-forget model that looks fine in clean development testing reveals its real problems only under genuine network failure conditions, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable, auditable creator payout platform architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Clean-network development testing with a handful of internal accounts rarely pro
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their payout ledger experience?
 
-Ask specifically how their architecture handles idempotency keys on retried payouts and how they reconcile internal ledger state against actual payment-rail settlement records — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture handles idempotency keys on retried payouts and how they reconcile internal ledger state against actual payment-rail settlement records - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

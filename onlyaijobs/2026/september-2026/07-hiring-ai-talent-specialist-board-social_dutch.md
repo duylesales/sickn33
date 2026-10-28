@@ -4,7 +4,7 @@ Dat ligt niet aan de kandidaten. Het verdienmodel van zo'n platform draait om zo
 
 Daar bovenop komt zichtbaarheid die je kunt kopen: jouw vacature van een team van vijf wordt voorbijgestreefd door een generieke "Software Engineer" van een groot bedrijf die machine learning noemt in bullet vijf.
 
-De erge helft is onzichtbaar. Kandidaten die écht ML-werk zoeken, scannen zo'n platform vaak niet eens meer — zij scrollen langs dezelfde honderden irrelevante IT-rollen, van de andere kant. De vissen die je wilt, zijn daar gestopt met vissen.
+De erge helft is onzichtbaar. Kandidaten die écht ML-werk zoeken, scannen zo'n platform vaak niet eens meer - zij scrollen langs dezelfde honderden irrelevante IT-rollen, van de andere kant. De vissen die je wilt, zijn daar gestopt met vissen.
 
 Bij ons heeft het publiek zichzelf al gefilterd. Gelijke zichtbaarheid voor elke werkgever. Eerste plaatsing gratis, één e-mail.
 

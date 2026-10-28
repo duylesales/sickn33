@@ -21,11 +21,11 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Vrijwel elk succesvol AI-product begint als een 'side project'. De oprichter heeft een fulltime baan, een gezin of beide, en bouwt met Cursor of Lovable tussen 21:00 en middernacht en op zaterdagochtend. Dat ritme werkt prima voor het bouwen van een prototype. Het is echter levensgevaarlijk voor een lancering: productiewerk zit vol repetitieve, technische en administratieve taken die makkelijk worden uitgesteld en grote schade aanrichten als je ze overslaat. Een realistisch lanceringsplan voor parttime oprichters moet respect tonen voor de beschikbare tijd — circa acht tot tien uur per week — en die uren uitsluitend inzetten op de juiste plekken.
+Vrijwel elk succesvol AI-product begint als een 'side project'. De oprichter heeft een fulltime baan, een gezin of beide, en bouwt met Cursor of Lovable tussen 21:00 en middernacht en op zaterdagochtend. Dat ritme werkt prima voor het bouwen van een prototype. Het is echter levensgevaarlijk voor een lancering: productiewerk zit vol repetitieve, technische en administratieve taken die makkelijk worden uitgesteld en grote schade aanrichten als je ze overslaat. Een realistisch lanceringsplan voor parttime oprichters moet respect tonen voor de beschikbare tijd - circa acht tot tien uur per week - en die uren uitsluitend inzetten op de juiste plekken.
 
 ## Het Uitgangspunt: Beslissingen Nemen, Niet Pijpleidingen Lassen
 
-Met een beperkt aantal uren per week ligt jouw concurrentievoordeel in jouw domeinkennis en begrip van de eindgebruiker. Het technische leidingwerk — secret rotatie, database autorisatiebeleid (Row-Level Security), webhook-afhandeling en CI/CD-configuratie — kost een ervaren software-engineer een fractie van de tijd die jij kwijt bent als je het 's avonds laat vanaf nul moet uitzoeken. Het onderstaande 6-wekenplan houdt de strategische keuzes en het productwerk bij jou, terwijl het infrastructuurwerk volgens een strikte checklist verloopt of wordt uitbesteed.
+Met een beperkt aantal uren per week ligt jouw concurrentievoordeel in jouw domeinkennis en begrip van de eindgebruiker. Het technische leidingwerk - secret rotatie, database autorisatiebeleid (Row-Level Security), webhook-afhandeling en CI/CD-configuratie - kost een ervaren software-engineer een fractie van de tijd die jij kwijt bent als je het 's avonds laat vanaf nul moet uitzoeken. Het onderstaande 6-wekenplan houdt de strategische keuzes en het productwerk bij jou, terwijl het infrastructuurwerk volgens een strikte checklist verloopt of wordt uitbesteed.
 
 ## Week 1: Bevriezen en Inventariseren (ca. 8 uur)
 
@@ -47,7 +47,7 @@ Besteed je de technische hardening uit? Dan is dit hét moment voor een korte in
 
 ## Week 3–4: Parallelle Sporen (ca. 8–10 uur per week)
 
-Terwijl het technische fundament wordt dichtgetimmerd — door jezelf aan de hand van een checklist of door een externe specialist — focus jij je op de zaken die alleen de oprichter kan doen:
+Terwijl het technische fundament wordt dichtgetimmerd - door jezelf aan de hand van een checklist of door een externe specialist - focus jij je op de zaken die alleen de oprichter kan doen:
 - Schrijf de officiële privacy- en cookieverklaring (met behulp van een betrouwbare generator of juridisch sjabloon).
 - Formuleer alle transactionele e-mails: welkom, betaalbevestiging, wachtwoord vergeten en accountopzegging.
 - Richt een representatieve demo-omgeving in met realistische testdata.
@@ -59,11 +59,11 @@ Terwijl het technische fundament wordt dichtgetimmerd — door jezelf aan de han
 - Doorloop elk kritiek proces op de staging-omgeving vanaf zowel smartphone als laptop: registratie, kernfunctionaliteit, iDEAL-betaling, opzegging en accountverwijdering.
 - Test nadrukkelijk de foutscenario's: verkeerd wachtwoord invoeren, betaling bewust afbreken, inloggen vanaf twee apparaten tegelijk.
 - Controleer of e-mails daadwerkelijk in de inbox arriveren en niet in de spambox belanden.
-- Verifieer dat automatische foutmeldingen (alerts) direct op je telefoon binnenkomen — en bedenk wat je doet als er een alarm afgaat tijdens een belangrijke vergadering op je werk.
+- Verifieer dat automatische foutmeldingen (alerts) direct op je telefoon binnenkomen - en bedenk wat je doet als er een alarm afgaat tijdens een belangrijke vergadering op je werk.
 
 ## Week 6: Beheerst en Uitgerust Lanceren (ca. 10 uur)
 
-- Kies een lanceermoment waarop je beschikbaar bent om mee te kijken — bij voorkeur een vrijdagochtend of zaterdagochtend, nooit op zondagavond om 23:00 uur vlak voor een drukke werkweek.
+- Kies een lanceermoment waarop je beschikbaar bent om mee te kijken - bij voorkeur een vrijdagochtend of zaterdagochtend, nooit op zondagavond om 23:00 uur vlak voor een drukke werkweek.
 - Nodig eerst je launching customers uit; wacht een paar dagen voordat je de deuren wijd openzet.
 - Monitor dagelijks kort het foutenregistratiesysteem (bijvoorbeeld Sentry).
 - Houd een logboek bij van gebruikersvragen; los tijdens de eerste week uitsluitend kritieke blockers op.
@@ -123,7 +123,7 @@ Zorg dat alerts jou automatisch vinden in plaats van dat jij urenlang naar dashb
 
 ## Momentum Vasthouden na de Lancering
 
-Hanteer na week zes een vast en beheersbaar ritme: één kleine verbetering per week, één keer per maand de statistieken analyseren en één keer per kwartaal bepalen welke grotere stappen nodig zijn. Parttime oprichters die veilig lanceren en een gestaag ritme aanhouden, zien hun product vaak zo structureel groeien dat ze op termijn hun vaste uren kunnen afbouwen — het moment waarop het solide fundament zich dubbel en dwars uitbetaalt.
+Hanteer na week zes een vast en beheersbaar ritme: één kleine verbetering per week, één keer per maand de statistieken analyseren en één keer per kwartaal bepalen welke grotere stappen nodig zijn. Parttime oprichters die veilig lanceren en een gestaag ritme aanhouden, zien hun product vaak zo structureel groeien dat ze op termijn hun vaste uren kunnen afbouwen - het moment waarop het solide fundament zich dubbel en dwars uitbetaalt.
 
 ## Een Realistisch Wekelijks Urenbudget
 
@@ -151,24 +151,24 @@ De avond voor de lancering: controleer of de productieomgeving exact overeenkomt
 
 ## Waar LaunchStudio het Verschil Maakt
 
-LaunchStudio is speciaal ontworpen voor oprichters die overdag een veeleisende baan hebben: een intakegesprek van 15 minuten, een heldere vaste projectprijs en software-engineers die jouw applicatie productierijp maken terwijl jij aan het werk bent. De engineering wordt uitgevoerd door Manifera's team in Ho Chi Minhstad — dat operationeel is terwijl jij slaapt — ondersteund door direct projectmanagement vanuit Amsterdam en Singapore. Bekijk [Manifera's over-onspagina](https://www.manifera.com/about-us/). Een handig overzicht van de belangrijkste webbeveiligingsrisico's vind je in de [OWASP Top 10](https://owasp.org/www-project-top-ten/).
+LaunchStudio is speciaal ontworpen voor oprichters die overdag een veeleisende baan hebben: een intakegesprek van 15 minuten, een heldere vaste projectprijs en software-engineers die jouw applicatie productierijp maken terwijl jij aan het werk bent. De engineering wordt uitgevoerd door Manifera's team in Ho Chi Minhstad - dat operationeel is terwijl jij slaapt - ondersteund door direct projectmanagement vanuit Amsterdam en Singapore. Bekijk [Manifera's over-onspagina](https://www.manifera.com/about-us/). Een handig overzicht van de belangrijkste webbeveiligingsrisico's vind je in de [OWASP Top 10](https://owasp.org/www-project-top-ten/).
 
-[Beschrijf je project](https://launchstudio.eu/nl/#contact) — het invullen kost je hooguit tien minuten van je avond.
+[Beschrijf je project](https://launchstudio.eu/nl/#contact) - het invullen kost je hooguit tien minuten van je avond.
 
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Oprichter in Actie: Een Carpool-App Gebouwd Rondom een Ploegendienst
 
-Gijs Hendrix, procesoperator op het industrieterrein Chemelot bij Sittard, bouwde in zijn vrije avonduren Carpoolkaart met behulp van Cursor: een applicatie waarmee werknemers in volcontinudienst carpools kunnen vormen afgestemd op wisselende ploegenroosters, inclusief automatische ritprijsverdeling. Collega's waren laaiend enthousiast over de proefversie, waarna de mobiliteitscoördinator van het industriepark aanbood het platform direct te promoten onder duizenden werknemers — met een harde deadline over exact zes weken.
+Gijs Hendrix, procesoperator op het industrieterrein Chemelot bij Sittard, bouwde in zijn vrije avonduren Carpoolkaart met behulp van Cursor: een applicatie waarmee werknemers in volcontinudienst carpools kunnen vormen afgestemd op wisselende ploegenroosters, inclusief automatische ritprijsverdeling. Collega's waren laaiend enthousiast over de proefversie, waarna de mobiliteitscoördinator van het industriepark aanbood het platform direct te promoten onder duizenden werknemers - met een harde deadline over exact zes weken.
 
 Omdat Gijs zelf in ploegendienst werkte, had hij maximaal acht uur per week beschikbaar. Hij volgde het 6-wekenplan nauwgezet: de inventarisatie in week 1 bracht aan het licht dat zijn database onder een privé-mailadres draaide, de geheime Stripe-sleutel zichtbaar was in de client-code en ritgegevens van alle gebruikers voor iedereen openstonden. In week 2 droeg hij de complete beveiliging, autorisatieregels, Stripe Connect-betalingsverdeling en CI/CD-staging over aan LaunchStudio. Zelf focuste hij op de privacyverklaring, de complexe roostermatching en de communicatie naar collega's. Terwijl de engineers van LaunchStudio in week 3 en 4 de backend dichttimmerden, schreef Gijs de instructieteksten en testte hij met twaalf collega's. Tijdens het testen op staging in week 5 kwam een hardnekkige tijdzonefout aan het licht bij nachtdiensten rond middernacht, die direct werd opgelost. Gijs lanceerde op zaterdagochtend na een uitgeslapen nachtdienst.
 
 **Resultaat:** Carpoolkaart lanceerde exact op tijd voor de regionale mobiliteitscampagne en realiseerde in de eerste maand direct 180 actieve carpoolkoppelingen. Gijs besteedde in totaal 46 uur over zes weken, waarvan vanaf week 2 geen enkel uur aan infrastructuur.
 
 > *"Ik had tijd om keuzes te maken, niet om 's nachts om twee uur na een nachtdienst nog webhooks uit te vogelen."*
-> — **Gijs Hendrix, Oprichter, Carpoolkaart (Sittard)**
+> - **Gijs Hendrix, Oprichter, Carpoolkaart (Sittard)**
 
-**Kosten & Tijdlijn:** € 2.000 (Launch Ready-pakket: toegangscontrole, secrets, betalingen, staging en CI) — opgeleverd in 3 weken binnen een 6-wekenplan.
+**Kosten & Tijdlijn:** € 2.000 (Launch Ready-pakket: toegangscontrole, secrets, betalingen, staging en CI) - opgeleverd in 3 weken binnen een 6-wekenplan.
 
 ## Veelgestelde Vragen
 
@@ -182,7 +182,7 @@ Database-autorisatieregels (RLS), sleutelrotatie, webhook-afhandeling voor betal
 
 ### Wat is het beste moment in de week om te lanceren naast een baan?
 
-Op een moment waarop je de eerste uren en dagen direct toezicht kunt houden — bij voorkeur op vrijdagochtend of zaterdagochtend — en nooit direct voorafgaand aan een drukke werkweek op kantoor.
+Op een moment waarop je de eerste uren en dagen direct toezicht kunt houden - bij voorkeur op vrijdagochtend of zaterdagochtend - en nooit direct voorafgaand aan een drukke werkweek op kantoor.
 
 ### Hoe sluit samenwerken met Manifera aan op een baan overdag?
 

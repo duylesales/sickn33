@@ -1,4 +1,4 @@
-🧩 Merlijn Wormer schaalde TeamGrip van een solo Lovable-prototype naar een bedrijf met een vijfkoppig engineeringteam — en bleef door AI gegenereerde functies rechtstreeks naar productie duwen zoals hij altijd deed. 😳
+🧩 Merlijn Wormer schaalde TeamGrip van een solo Lovable-prototype naar een bedrijf met een vijfkoppig engineeringteam - en bleef door AI gegenereerde functies rechtstreeks naar productie duwen zoals hij altijd deed. 😳
 
 De tool veranderde niet. Wat hij binnen uw bedrijf betekent wel. 🧠
 

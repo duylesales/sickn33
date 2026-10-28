@@ -42,11 +42,11 @@ Content Format: Local Guide
 }
 </script>
 
-Leuven is a compact Flemish university city 20 minutes by train from Brussels, but its influence on European technology is disproportionate to its size. KU Leuven is one of Europe's leading research universities, and imec, headquartered in Leuven, is one of the world's most important research centres for semiconductors and nanoelectronics. Around them, a steady stream of spin-offs and corporate R&D teams has formed a deep-tech ecosystem. For experienced machine learning engineers and researchers, AI jobs in Leuven combine research excellence with applications in chips, health, manufacturing and software — in a city where you can cycle to almost everything. This guide explains the landscape and the practical considerations of working in Belgium.
+Leuven is a compact Flemish university city 20 minutes by train from Brussels, but its influence on European technology is disproportionate to its size. KU Leuven is one of Europe's leading research universities, and imec, headquartered in Leuven, is one of the world's most important research centres for semiconductors and nanoelectronics. Around them, a steady stream of spin-offs and corporate R&D teams has formed a deep-tech ecosystem. For experienced machine learning engineers and researchers, AI jobs in Leuven combine research excellence with applications in chips, health, manufacturing and software - in a city where you can cycle to almost everything. This guide explains the landscape and the practical considerations of working in Belgium.
 
 ## KU Leuven and Leuven.AI
 
-KU Leuven has a long tradition in artificial intelligence and machine learning research. Its computer science department includes the DTAI group (Declarative Languages and Artificial Intelligence), known for work on machine learning, constraint programming and probabilistic logic, and its electrical engineering department (ESAT) hosts research on computer vision, signal processing and data science. Leuven.AI, the university's AI institute, brings together researchers from many disciplines — engineering, medicine, law, humanities — to work on AI and its applications and societal impact.
+KU Leuven has a long tradition in artificial intelligence and machine learning research. Its computer science department includes the DTAI group (Declarative Languages and Artificial Intelligence), known for work on machine learning, constraint programming and probabilistic logic, and its electrical engineering department (ESAT) hosts research on computer vision, signal processing and data science. Leuven.AI, the university's AI institute, brings together researchers from many disciplines - engineering, medicine, law, humanities - to work on AI and its applications and societal impact.
 
 The university also participates in the Flanders AI Research Program, funded by the Flemish government as part of its AI policy plan, which supports research across Flemish universities and research centres in areas such as decision-making, edge AI, human-AI collaboration and trustworthy AI, with an emphasis on applications that matter to Flemish industry.
 
@@ -94,13 +94,13 @@ Leuven is a lively student city with a historic centre, many cafés and a strong
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Leuven you will find few or no local vacancies there today. Use Belgian job portals, KU Leuven and imec vacancy pages, spin-off career pages and your network as primary sources. Because the Dutch border is close, OnlyAIJobs is especially useful for comparing Leuven roles with those in Eindhoven, Utrecht or elsewhere in the Netherlands — where employers such as Holland Innovative, Cegeka, Accenture and Boltrics list AI roles — or for engineers in border regions for whom both countries are within reach. Flemish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Leuven you will find few or no local vacancies there today. Use Belgian job portals, KU Leuven and imec vacancy pages, spin-off career pages and your network as primary sources. Because the Dutch border is close, OnlyAIJobs is especially useful for comparing Leuven roles with those in Eindhoven, Utrecht or elsewhere in the Netherlands - where employers such as Holland Innovative, Cegeka, Accenture and Boltrics list AI roles - or for engineers in border regions for whom both countries are within reach. Flemish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## The Spin-off Culture
 
 Leuven is one of Europe's most successful university cities at turning research into companies. KU Leuven's technology transfer office has supported many spin-offs across medical technology, software, materials, engineering and biotechnology, and imec has spun off companies in chips, sensors and imaging. This creates a steady supply of deep-tech startups that need ML engineers and data scientists.
 
-Working at a Leuven spin-off offers a distinctive experience: close contact with the founding researchers, cutting-edge methods and a strong focus on turning research into reliable products. The challenges are typical of deep-tech startups — long development cycles, regulatory hurdles in medical devices and dependence on funding. Before joining, ask about the funding situation, the regulatory path (for example CE marking for medical devices) and how the company balances research and product development.
+Working at a Leuven spin-off offers a distinctive experience: close contact with the founding researchers, cutting-edge methods and a strong focus on turning research into reliable products. The challenges are typical of deep-tech startups - long development cycles, regulatory hurdles in medical devices and dependence on funding. Before joining, ask about the funding situation, the regulatory path (for example CE marking for medical devices) and how the company balances research and product development.
 
 ## Research Careers in Leuven
 
@@ -123,7 +123,7 @@ Leuven's proximity to Brussels widens the job market considerably. Brussels host
 - Is the position an employment contract or a scholarship, and how does that affect tax, pension and social security?
 - For spin-offs: what is the funding runway, and what regulatory milestones lie ahead?
 - What is the team's working language, and is Dutch expected for any stakeholders?
-- Which benefits are included — company car or mobility budget, meal vouchers, hospitalisation insurance, group insurance?
+- Which benefits are included - company car or mobility budget, meal vouchers, hospitalisation insurance, group insurance?
 - Does the employer support applications for the impatriate tax regime?
 - How are research results transferred into products, and who owns that process?
 

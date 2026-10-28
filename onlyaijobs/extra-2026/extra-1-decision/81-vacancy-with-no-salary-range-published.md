@@ -63,7 +63,7 @@ Only the third and fifth are concerning, and you can distinguish them with one q
 
 ## Ask Early, Not Late
 
-The efficient sequence is to establish the range before the second conversation — ideally in the first message or the first call. This is not impolite. It respects both sides' time, and employers who have thought about pay answer it easily.
+The efficient sequence is to establish the range before the second conversation - ideally in the first message or the first call. This is not impolite. It respects both sides' time, and employers who have thought about pay answer it easily.
 
 A workable formulation: "Before we go further, could you tell me the salary range and scale for this role? I want to make sure we are in the same territory before either of us invests more time."
 
@@ -73,7 +73,7 @@ Ask in writing where possible, so the answer is recorded. If the recruiter defle
 
 Under the directive's approach, employers are not to ask applicants about their pay history, and the Dutch implementation determines how that works in practice. Whatever the precise legal position at the time you are asked, you are not obliged to volunteer it, and the professional way to decline is to redirect rather than refuse.
 
-"I would rather not anchor on my current salary — it reflects a different role. What is the range for this position?" That sentence is used constantly and is not held against candidates by employers worth working for.
+"I would rather not anchor on my current salary - it reflects a different role. What is the range for this position?" That sentence is used constantly and is not held against candidates by employers worth working for.
 
 If pressed for an expectation, give a range based on the market rather than on your history, and say what it is based on: the level, the scope, comparable published ranges. An employer who insists on a number before disclosing theirs is telling you how the negotiation will go.
 
@@ -114,7 +114,7 @@ There are legitimate reasons to keep going.
 - A collective agreement applies and you can look the scale up yourself.
 - The employer names the scale rather than the amount, which is effectively the same information in structured organisations.
 - The role is unusual enough that the level genuinely has not been set, and the employer says so honestly.
-- You want the conversation for other reasons — the domain, the team, the learning — and are clear with yourself about what you would accept.
+- You want the conversation for other reasons - the domain, the team, the learning - and are clear with yourself about what you would accept.
 
 ## What This Tells You About the Employer
 
@@ -128,15 +128,15 @@ Getting an answer is progress even when the answer disappoints, and there are se
 
 **Ask what would justify the top of the range.** The reply tells you whether placement is criteria-based or arbitrary, and occasionally reveals that you already meet the criteria.
 
-**Ask whether the role could be graded differently.** In organisations with job families, a role can sometimes be scoped at a higher level — more ownership, a lead component, responsibility for a system — which moves it into another scale. This is a conversation about the job rather than about your salary, and employers engage with it more readily.
+**Ask whether the role could be graded differently.** In organisations with job families, a role can sometimes be scoped at a higher level - more ownership, a lead component, responsibility for a system - which moves it into another scale. This is a conversation about the job rather than about your salary, and employers engage with it more readily.
 
 **Ask what else is available.** A training budget, a compressed week, travel arrangements, an earlier review date, additional leave. Where the scale is fixed by a collective agreement, these are the only levers that exist, and they are real.
 
 **Ask when the next review is and on what basis.** An employer who will commit in writing to a review at six months with defined criteria is offering something concrete; one who says "we will look at it" is not.
 
-**Say what you need, once, and mean it.** A clear, specific figure with a short reason — the level, the scope, what comparable roles advertise — is more effective than a negotiation stance, and it lets the employer either solve it or say no.
+**Say what you need, once, and mean it.** A clear, specific figure with a short reason - the level, the scope, what comparable roles advertise - is more effective than a negotiation stance, and it lets the employer either solve it or say no.
 
-**Then decline warmly if it does not move.** Say that the work interests you and the level does not work, and leave the door open. Budgets change, and employers frequently return months later when a role is regraded — which happens more often than candidates expect, particularly now that pay ranges are becoming visible and internal inequities harder to sustain.
+**Then decline warmly if it does not move.** Say that the work interests you and the level does not work, and leave the door open. Budgets change, and employers frequently return months later when a role is regraded - which happens more often than candidates expect, particularly now that pay ranges are becoming visible and internal inequities harder to sustain.
 
 ## Real example
 
@@ -158,11 +158,11 @@ His conclusion: one question at the start saved him a month, and asking it did n
 - An absent range usually means a collective agreement, an outdated template, a wide undefined role, no pay structure at all, or a desire to hear your number first.
 - Ask before the second conversation, in writing, and convert "it depends on experience" into a range for someone with your experience.
 - Judge the width of the range, where you would sit, what moves you up, and whether the figure depends on variable pay.
-- Walk away early when two direct requests produce nothing — it costs an email now and weeks later.
+- Walk away early when two direct requests produce nothing - it costs an email now and weeks later.
 
 ## Where to Start
 
-Ranges are appearing in more vacancies, which makes comparison easier than it used to be — start from what is actually advertised near you rather than from a guess.
+Ranges are appearing in more vacancies, which makes comparison easier than it used to be - start from what is actually advertised near you rather than from a guess.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -172,7 +172,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Yes, but ask for the range before the second conversation. Employers who have thought about pay answer easily, and those who refuse twice are telling you something worth knowing early.
 
 ### (Scenario: candidate asked about current pay) Do I have to tell them my current salary?
-Pay transparency rules restrict employers from asking about pay history, with the Dutch implementation setting the detail. Either way you are not obliged to volunteer it — redirect to the range for the role.
+Pay transparency rules restrict employers from asking about pay history, with the Dutch implementation setting the detail. Either way you are not obliged to volunteer it - redirect to the range for the role.
 
 ### (Scenario: candidate given a vague answer) What if they say it depends on experience?
 Ask for the range for someone with your experience. That converts a deflection into a usable answer without making the conversation adversarial.
@@ -189,9 +189,9 @@ After two direct requests with no indication, when the range is clearly unworkab
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Should I apply to a job with no salary range?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but ask for the range before the second conversation; two refusals is an answer."}},
-    {"@type": "Question", "name": "Do I have to tell them my current salary?", "acceptedAnswer": {"@type": "Answer", "text": "Pay transparency rules restrict pay-history questions, and you need not volunteer it — redirect to the role's range."}},
+    {"@type": "Question", "name": "Do I have to tell them my current salary?", "acceptedAnswer": {"@type": "Answer", "text": "Pay transparency rules restrict pay-history questions, and you need not volunteer it - redirect to the role's range."}},
     {"@type": "Question", "name": "What if they say it depends on experience?", "acceptedAnswer": {"@type": "Answer", "text": "Ask for the range for someone with your experience."}},
-    {"@type": "Question", "name": "How do I read a very wide range?", "acceptedAnswer": {"@type": "Answer", "text": "Usually an undefined role — ask what separates the bottom from the top and where you would sit."}},
+    {"@type": "Question", "name": "How do I read a very wide range?", "acceptedAnswer": {"@type": "Answer", "text": "Usually an undefined role - ask what separates the bottom from the top and where you would sit."}},
     {"@type": "Question", "name": "When should I stop the process?", "acceptedAnswer": {"@type": "Answer", "text": "After two direct requests with no indication, or when the figure relies on uncertain variable pay."}}
   ]
 }

@@ -35,7 +35,7 @@ Een hardnekkig probleem bij veel generatieve AI-applicaties is het "Kopieer-Plak
 
 ## De kracht van 'Push naar Workspace'
 
-Notion is het standaard besturingssysteem voor moderne startups, scale-ups en bureaus. Als uw applicatie rechtstreeks kan wegschrijven naar hun bestaande kennisbank, verandert uw product van een losse "tool" in een onmisbaar onderdeel van hun infrastructuur. Dit is de ultieme bescherming tegen klantverloop (churn) — gebruikers vergeven een ruwe interface veel sneller dan het verlies van een geautomatiseerde workflow waar hun hele team dagelijks op steunt.
+Notion is het standaard besturingssysteem voor moderne startups, scale-ups en bureaus. Als uw applicatie rechtstreeks kan wegschrijven naar hun bestaande kennisbank, verandert uw product van een losse "tool" in een onmisbaar onderdeel van hun infrastructuur. Dit is de ultieme bescherming tegen klantverloop (churn) - gebruikers vergeven een ruwe interface veel sneller dan het verlies van een geautomatiseerde workflow waar hun hele team dagelijks op steunt.
 
 Stel u een AI-tool voor die deelneemt aan Zoom-meetings. De slechtste gebruikerservaring is de gebruiker dwingen om in te loggen op uw dashboard om het transcript te lezen. De beste ervaring is dat uw backend op de seconde dat het gesprek eindigt volautomatisch een strak geformatteerde pagina aanmaakt in de "Meeting Notes"-database van het team in Notion, inclusief direct getagde en toegewezen actiepunten.
 
@@ -49,7 +49,7 @@ Wanneer uw AI standaard Markdown genereert, moet uw backend deze string parsen e
 
 Het aanmaken van losse pagina's is handig, maar de echte kracht van de Notion API ligt in database-integraties. Notion-databases zijn sterk gestructureerd met eigenschappen (properties) voor tags, datums, select-velden en relaties naar andere databases.
 
-Bouwt u bijvoorbeeld een AI-leadverrijkings-tool, dan kan de klant zijn Notion "Sales Pipeline"-database koppelen. Uw backend roept eerst `GET /v1/databases/{id}` aan om het daadwerkelijke schema van die database uit te lezen — de kolomnamen en veldtypen verschillen immers per klant. Zodra uw AI een nieuwe lead vindt, verstuurt uw server een `POST /v1/pages`-verzoek om direct een nieuwe rij in te voegen, waarbij de geëxtraheerde AI-data dynamisch wordt gemapt op de juiste kolommen (bijvoorbeeld het e-mailadres plaatsen in het veld dat de gebruiker 'Contact Email' heeft genoemd).
+Bouwt u bijvoorbeeld een AI-leadverrijkings-tool, dan kan de klant zijn Notion "Sales Pipeline"-database koppelen. Uw backend roept eerst `GET /v1/databases/{id}` aan om het daadwerkelijke schema van die database uit te lezen - de kolomnamen en veldtypen verschillen immers per klant. Zodra uw AI een nieuwe lead vindt, verstuurt uw server een `POST /v1/pages`-verzoek om direct een nieuwe rij in te voegen, waarbij de geëxtraheerde AI-data dynamisch wordt gemapt op de juiste kolommen (bijvoorbeeld het e-mailadres plaatsen in het veld dat de gebruiker 'Contact Email' heeft genoemd).
 
 ## De OAuth 2.0-stroom veilig afhandelen
 
@@ -94,7 +94,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 **Resultaat:** Document-exports slaagden in 100% van de gevallen, zelfs tijdens zware piekbelastingen en bulk-overdrachten.
 
-**Kosten & tijdlijn:** €1.450 (API Queuing Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.450 (API Queuing Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

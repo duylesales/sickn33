@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The standard advice circulating in technology careers is that switching employers is the fastest route to higher pay, and it is broadly true. The standard counter-advice is that constant movement produces shallow experience, and that is broadly true too. In the Dutch market both effects are real but weaker than in larger economies, and a third factor — that people talk — changes the calculation in ways the international advice does not capture.
+The standard advice circulating in technology careers is that switching employers is the fastest route to higher pay, and it is broadly true. The standard counter-advice is that constant movement produces shallow experience, and that is broadly true too. In the Dutch market both effects are real but weaker than in larger economies, and a third factor - that people talk - changes the calculation in ways the international advice does not capture.
 
 ## What Switching Actually Buys
 
@@ -45,7 +45,7 @@ The standard advice circulating in technology careers is that switching employer
 
 **New context.** Seeing a second, third and fourth way of doing things is genuinely educational. People who have only worked in one organisation frequently mistake local conventions for universal truths.
 
-**An exit from a dead end.** Some situations do not improve. A manager who will not change, a company whose data strategy is decorative, a team with no path forward — recognising these early and leaving is not disloyalty, it is judgement.
+**An exit from a dead end.** Some situations do not improve. A manager who will not change, a company whose data strategy is decorative, a team with no path forward - recognising these early and leaving is not disloyalty, it is judgement.
 
 ## What Staying Actually Buys
 
@@ -104,7 +104,7 @@ None of these improve through patience alone. If a concrete conversation about c
 
 Equally, some circumstances justify staying longer than the average advice suggests.
 
-You are building something whose outcome you have not yet seen. You have influence you would have to rebuild elsewhere. You are learning from someone genuinely better than you. The organisation is investing in you in ways that are visible in your calendar and budget rather than in a performance review. Your life outside work needs stability at this particular moment — and that is a legitimate professional consideration rather than an admission of weakness.
+You are building something whose outcome you have not yet seen. You have influence you would have to rebuild elsewhere. You are learning from someone genuinely better than you. The organisation is investing in you in ways that are visible in your calendar and budget rather than in a performance review. Your life outside work needs stability at this particular moment - and that is a legitimate professional consideration rather than an admission of weakness.
 
 The Dutch labour market accommodates this better than most. Part-time arrangements, reduced hours during a difficult period and internal moves are all more available here than in most countries, and using them is often better than an external move made for the wrong reason.
 
@@ -120,11 +120,11 @@ The practical approach is to raise it early with your own manager rather than ap
 
 Whatever pattern your CV shows, you will be asked about it, and the answer is a preparable artefact rather than an improvisation.
 
-**If you have moved often**, give each move a reason that is about the work rather than about grievance: a project completed, a capability built, a domain you wanted to learn. Then volunteer the consequence evidence unprompted — what happened to the systems you built after you left, what you learned from seeing them run, what you would design differently. That single addition converts the concern into a strength.
+**If you have moved often**, give each move a reason that is about the work rather than about grievance: a project completed, a capability built, a domain you wanted to learn. Then volunteer the consequence evidence unprompted - what happened to the systems you built after you left, what you learned from seeing them run, what you would design differently. That single addition converts the concern into a strength.
 
-**If you have stayed a long time**, the concern is the opposite: whether you have seen anything else and whether you can adapt. Answer it with variety inside the tenure — different teams, different technologies, different problem types, internal moves, external community involvement. Demonstrating that you kept learning without changing employer is the whole task.
+**If you have stayed a long time**, the concern is the opposite: whether you have seen anything else and whether you can adapt. Answer it with variety inside the tenure - different teams, different technologies, different problem types, internal moves, external community involvement. Demonstrating that you kept learning without changing employer is the whole task.
 
-**If you left something quickly**, address it briefly and without drama. A role that was misrepresented, a reorganisation, a company that ran out of funding — these are common and understood. A long defensive explanation reads far worse than a single calm sentence.
+**If you left something quickly**, address it briefly and without drama. A role that was misrepresented, a reorganisation, a company that ran out of funding - these are common and understood. A long defensive explanation reads far worse than a single calm sentence.
 
 **If there is a gap**, say what it was. Illness, caring responsibilities, burnout recovery, study, a deliberate break. Dutch employers are considerably more relaxed about gaps than candidates fear, and evasiveness is what raises concern rather than the gap itself.
 
@@ -147,7 +147,7 @@ Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](h
 ## Frequently Asked Questions
 
 ### (Scenario: candidate weighing an offer) Is switching employers the fastest way to a higher salary?
-Usually yes, because internal increases are modest — but Dutch ranges are compressed, so the gains diminish after several moves.
+Usually yes, because internal increases are modest - but Dutch ranges are compressed, so the gains diminish after several moves.
 
 ### (Scenario: candidate with short stays) Will frequent moves count against me?
 Not automatically; what concerns interviewers is the absence of evidence that you lived with the consequences of your own work.
@@ -159,7 +159,7 @@ No learning after raising it, blocked development, structural under-resourcing w
 Often yes, and it preserves tenure, contract status and trust; raise it with your own manager rather than applying quietly elsewhere internally.
 
 ### (Scenario: candidate on a temporary contract) Does leaving affect my job security?
-Yes — tenure converts temporary contracts into permanent ones under the chain rule, and moving resets that clock.
+Yes - tenure converts temporary contracts into permanent ones under the chain rule, and moving resets that clock.
 
 <script type="application/ld+json">
 {
@@ -167,10 +167,10 @@ Yes — tenure converts temporary contracts into permanent ones under the chain 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Is switching employers the fastest way to raise salary in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Usually, because internal increases are modest, but compressed Dutch ranges mean returns diminish after several moves."}},
-    {"@type": "Question", "name": "Do frequent job changes count against a candidate?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically — interviewers worry about missing evidence that you lived with the consequences of your work."}},
+    {"@type": "Question", "name": "Do frequent job changes count against a candidate?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - interviewers worry about missing evidence that you lived with the consequences of your work."}},
     {"@type": "Question", "name": "What are clear signals that it is time to leave?", "acceptedAnswer": {"@type": "Answer", "text": "No learning after raising it, blocked development, structural under-resourcing, or being passed over without explanation."}},
     {"@type": "Question", "name": "Are internal moves a realistic alternative to leaving?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes, and they preserve tenure, contract status and accumulated trust."}},
-    {"@type": "Question", "name": "Does changing jobs affect Dutch job security?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — tenure converts temporary contracts into permanent ones under the chain rule, and moving resets that clock."}}
+    {"@type": "Question", "name": "Does changing jobs affect Dutch job security?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - tenure converts temporary contracts into permanent ones under the chain rule, and moving resets that clock."}}
   ]
 }
 </script>

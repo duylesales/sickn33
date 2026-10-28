@@ -1,8 +1,8 @@
-A funder capping overhead at 15% doesn't care that your program needs custom software to actually run — that classification decision happens months before you ever talk to a vendor. 💸📊
+A funder capping overhead at 15% doesn't care that your program needs custom software to actually run - that classification decision happens months before you ever talk to a vendor. 💸📊
 
 **The Pain Points:**
 ❌ **Discount Program Gaps:** TechSoup and nonprofit tiers cover licensing, not the implementation and maintenance cost that's usually bigger than the discount itself.
-❌ **Sticker Price Tunnel Vision:** The cheapest build quote often hides the real cost — no documentation, no handoff plan, a codebase only one person understands.
+❌ **Sticker Price Tunnel Vision:** The cheapest build quote often hides the real cost - no documentation, no handoff plan, a codebase only one person understands.
 ❌ **Unbudgeted Maintenance:** A platform with no line item for post-launch upkeep quietly breaks within a year, right before a funder report is due.
 
 **The Manifera Solution:**

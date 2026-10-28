@@ -1,4 +1,4 @@
-🔥 Femke bouwde een prototype met **Lovable** — als eigenaar van een interieurstudio in Den Haag beheerde ze 30+ projecten tegelijk, maar liep vast op authenticatie en databeveiliging voor ze live kon. 🧠
+🔥 Femke bouwde een prototype met **Lovable** - als eigenaar van een interieurstudio in Den Haag beheerde ze 30+ projecten tegelijk, maar liep vast op authenticatie en databeveiliging voor ze live kon. 🧠
 
 Als uw AI-prototype geen server-side validatie, database Row-Level Security (RLS) of bestandsopslag bevat, kunnen klanten elkaars projecten inzien en crasht de applicatie.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side validatie, database Row-Level Security (RLS
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort softwarevraagstukken op, met meer dan 160 gerealiseerde projecten. 🛡️
 
-Femke's 30 klanten beheren nu zelfstandig hun projecten; haar dagelijkse maildruk daalde van 2 uur naar 15 minuten. (€1.800 (Launch Ready Pakket) — binnen 7 werkdagen live). 🚀
+Femke's 30 klanten beheren nu zelfstandig hun projecten; haar dagelijkse maildruk daalde van 2 uur naar 15 minuten. (€1.800 (Launch Ready Pakket) - binnen 7 werkdagen live). 🚀
 
 👉 Ontdek hoe u een SaaS bouwt zonder code: https://launchstudio.eu/nl/blog/build-ai-saas-without-coding-complete-guide
 

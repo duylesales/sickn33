@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The offer is somewhere else: a research group in Switzerland, a product company in Berlin, a team in London or Dublin, occasionally something further. The work is more specialised than anything available here, or the salary is larger by a margin that seems to settle the argument, or you have simply wanted to live somewhere else for a while. Moving abroad for AI work is a reasonable thing to do and a decision people routinely make on the wrong information — usually a gross salary comparison, which is the least reliable number in the entire calculation.
+The offer is somewhere else: a research group in Switzerland, a product company in Berlin, a team in London or Dublin, occasionally something further. The work is more specialised than anything available here, or the salary is larger by a margin that seems to settle the argument, or you have simply wanted to live somewhere else for a while. Moving abroad for AI work is a reasonable thing to do and a decision people routinely make on the wrong information - usually a gross salary comparison, which is the least reliable number in the entire calculation.
 
 ## The Money Illusion
 
@@ -89,7 +89,7 @@ Outside it, everything is heavier. A visa tied to an employer, sponsorship that 
 
 ## Questions to Ask the Employer
 
-- **What exactly does the relocation package cover** — moving costs, temporary housing, flights, a return trip if it does not work out?
+- **What exactly does the relocation package cover** - moving costs, temporary housing, flights, a return trip if it does not work out?
 - **Is tax and social security advice provided?** Serious employers hiring internationally arrange this.
 - **What is the notice period, and what happens to my residence status if the role ends?** Outside the EU, this question is critical.
 - **Can my partner work, and does the employer help?**
@@ -111,7 +111,7 @@ Outside it, everything is heavier. A visa tied to an employer, sponsorship that 
 - The comparable work exists here, within a distance you would travel.
 - The calculation is roughly neutral once housing and pension are included.
 - Your value is built on Dutch domain knowledge and relationships.
-- Your household has commitments — a partner's career, schooling, care responsibilities — that the move would damage.
+- Your household has commitments - a partner's career, schooling, care responsibilities - that the move would damage.
 - You would be going mainly to escape a specific job rather than towards something.
 
 ## If You Go, Do These Things
@@ -122,7 +122,7 @@ Take advice before leaving on pension, tax and social security, and again before
 
 Set a horizon, even a loose one. People who move with a rough plan tend to make deliberate decisions at the three- or five-year mark; people who move open-endedly often find the decision made for them by inertia.
 
-And do work that is legible from here. International experience impresses Dutch employers most when it is a system, a scale or a domain they recognise — not a role that requires three paragraphs to explain.
+And do work that is legible from here. International experience impresses Dutch employers most when it is a system, a scale or a domain they recognise - not a role that requires three paragraphs to explain.
 
 ## The Third Option, and Its Limits
 
@@ -132,7 +132,7 @@ Before choosing between moving and staying, most people ask whether they can hav
 
 **What it does not solve.** The foreign employer must be able to employ you here, which usually means an employer of record, a local entity or a contractor arrangement, each with consequences for your social security, pension and protection. Your salary will often be set against Dutch levels rather than the foreign market, which removes much of the financial argument. And you carry the time zone: an American or Asian team means your evenings or your early mornings belong to work.
 
-**What it costs professionally.** The depth-of-team argument — the reason many people go abroad — depends substantially on being in the room. Remote participation in a team centred elsewhere gives you the work and much less of the learning, and your visibility for promotion sits with the people in the office.
+**What it costs professionally.** The depth-of-team argument - the reason many people go abroad - depends substantially on being in the room. Remote participation in a team centred elsewhere gives you the work and much less of the learning, and your visibility for promotion sits with the people in the office.
 
 **When it genuinely works.** Where the employer is remote-first rather than centred in one place, where the overlap is workable, where the employment arrangement is properly set up, and where you would travel to the team regularly.
 
@@ -157,14 +157,14 @@ His view: the decision was correct and the gross salary had nothing to do with i
 ## Key Takeaways
 
 - Gross salary comparisons across countries are meaningless; calculate net income after housing, healthcare, childcare and transport, and add the cost of moving back.
-- Occupational pension accrual stops, state pension build-up is affected by residence, and social security follows where you work — take advice before deciding.
+- Occupational pension accrual stops, state pension build-up is affected by residence, and social security follows where you work - take advice before deciding.
 - Go when your specialism has few Dutch employers, when the depth or scale is unavailable here, or when you simply want to live elsewhere.
 - Stay when comparable work exists within reach, when your value rests on Dutch domain knowledge and relationships, or when your household would carry the cost.
 - EU moves are administratively light and reversible; non-EU moves involve sponsorship, partner work rights and a status that may depend on the job.
 
 ## Where to Start
 
-Before deciding that the interesting work is elsewhere, check what actually exists here in your specialism — many people discover the comparison is closer than they assumed.
+Before deciding that the interesting work is elsewhere, check what actually exists here in your specialism - many people discover the comparison is closer than they assumed.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -190,7 +190,7 @@ Yes, provided the financial and household calculations work. The poor reason is 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How should I compare a salary abroad with my Dutch one?", "acceptedAnswer": {"@type": "Answer", "text": "Net income after tax, housing, healthcare, childcare and transport — never gross figures."}},
+    {"@type": "Question", "name": "How should I compare a salary abroad with my Dutch one?", "acceptedAnswer": {"@type": "Answer", "text": "Net income after tax, housing, healthcare, childcare and transport - never gross figures."}},
     {"@type": "Question", "name": "What happens to my pension if I work abroad?", "acceptedAnswer": {"@type": "Answer", "text": "Occupational accrual stops and state pension build-up is affected by residence; ask the SVB first."}},
     {"@type": "Question", "name": "How hard is it to come back?", "acceptedAnswer": {"@type": "Answer", "text": "Easy after two or three years, much harder after seven or eight."}},
     {"@type": "Question", "name": "What is different outside the EU?", "acceptedAnswer": {"@type": "Answer", "text": "Sponsorship ties status to the employer, partner work rights vary and returning is a full relocation."}},

@@ -1,4 +1,4 @@
-🔥 Maya built a prototype using **Bolt** — maya, a startup founder, used **bolt** to build a b2b lead qualification tool prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Maya built a prototype using **Bolt** - maya, a startup founder, used **bolt** to build a b2b lead qualification tool prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Maya's application achieved production readiness: Maya launched her sales pipeline safely, securing data imports without exposing backend systems to threats. (€1,700 (Secure Uploads Package) — production-ready and deployed in 6 business days.). 🚀
+Maya's application achieved production readiness: Maya launched her sales pipeline safely, securing data imports without exposing backend systems to threats. (€1,700 (Secure Uploads Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/b2b-cold-email-playbook-ai-saas
 

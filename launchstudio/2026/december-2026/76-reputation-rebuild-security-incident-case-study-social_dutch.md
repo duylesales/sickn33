@@ -10,9 +10,9 @@ Wanneer een beveiligingsincident online ontploft, vernietigt ontkennen het vertr
 ✅ Row Level Security in PostgreSQL als onafhankelijke tweede verdedigingslinie
 ✅ Eerlijk technisch post-mortem rapport inclusief onafhankelijk auditcertificaat
 
-Bij LaunchStudio repareren we niet alleen beveiligingslekken — we herstellen de integriteit en geloofwaardigheid van uw platform. 🛡️
+Bij LaunchStudio repareren we niet alleen beveiligingslekken - we herstellen de integriteit en geloofwaardigheid van uw platform. 🛡️
 
-Julian beperkte churn tot <1% en zag zijn nieuwe aanmeldingen de maand erna met 40% stijgen. (€ 4.100 (Emergency Hardening) — 9 werkdagen.) 🚀
+Julian beperkte churn tot <1% en zag zijn nieuwe aanmeldingen de maand erna met 40% stijgen. (€ 4.100 (Emergency Hardening) - 9 werkdagen.) 🚀
 
 👉 Lees de volledige case study: https://launchstudio.eu/nl/blog/reputation-rebuild-security-incident-case-study
 

@@ -1,4 +1,4 @@
-🚨 Camille Perrot's team at "VenteClaire," an e-commerce analytics SaaS with around 40 paying customers, had a habit of installing whatever AI coding extensions looked useful — no review process. One, installed by a contractor, later shipped an update that began logging environment variable contents, including database credentials, to a third-party debugging service. 😳
+🚨 Camille Perrot's team at "VenteClaire," an e-commerce analytics SaaS with around 40 paying customers, had a habit of installing whatever AI coding extensions looked useful - no review process. One, installed by a contractor, later shipped an update that began logging environment variable contents, including database credentials, to a third-party debugging service. 😳
 
 Every AI coding extension you install is, technically, a piece of software with access to your production secrets. 🧠
 

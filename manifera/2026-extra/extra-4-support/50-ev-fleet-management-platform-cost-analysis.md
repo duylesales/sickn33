@@ -20,11 +20,11 @@ target_persona: "A"
 }
 </script>
 
-A CTO scoping a custom electric vehicle fleet management platform — coordinating charging schedules, monitoring vehicle range and battery health, and optimizing route assignment around charging needs — typically receives an initial cost estimate weighted toward the visible dashboard and route planning features. The cost categories that most reliably get underestimated in EV fleet platform projects live in the specific complexity of charging infrastructure orchestration and multi-vendor vehicle data integration, both genuinely more complex than their internal-combustion fleet management equivalents.
+A CTO scoping a custom electric vehicle fleet management platform - coordinating charging schedules, monitoring vehicle range and battery health, and optimizing route assignment around charging needs - typically receives an initial cost estimate weighted toward the visible dashboard and route planning features. The cost categories that most reliably get underestimated in EV fleet platform projects live in the specific complexity of charging infrastructure orchestration and multi-vendor vehicle data integration, both genuinely more complex than their internal-combustion fleet management equivalents.
 
 ## Cost Category 1: Charging Schedule Optimization Across Shared Infrastructure
 
-Unlike a conventional fleet's refueling, which happens quickly and largely independently for each vehicle, EV charging is slow relative to a vehicle's operational duty cycle and frequently constrained by shared charging infrastructure capacity — a depot with a limited number of charging points serving a larger fleet needs genuine scheduling optimization to ensure every vehicle is adequately charged for its next assignment without exceeding the depot's actual available charging capacity or electrical grid connection limits at any given time. Building this scheduling optimization correctly, accounting for each vehicle's specific route assignment, charging point availability, and realistic charging duration for its actual battery state, is a genuinely substantial optimization engineering task frequently underrepresented in an initial estimate that treats "charging scheduling" as a simple queue or calendar feature rather than the constrained optimization problem it actually is.
+Unlike a conventional fleet's refueling, which happens quickly and largely independently for each vehicle, EV charging is slow relative to a vehicle's operational duty cycle and frequently constrained by shared charging infrastructure capacity - a depot with a limited number of charging points serving a larger fleet needs genuine scheduling optimization to ensure every vehicle is adequately charged for its next assignment without exceeding the depot's actual available charging capacity or electrical grid connection limits at any given time. Building this scheduling optimization correctly, accounting for each vehicle's specific route assignment, charging point availability, and realistic charging duration for its actual battery state, is a genuinely substantial optimization engineering task frequently underrepresented in an initial estimate that treats "charging scheduling" as a simple queue or calendar feature rather than the constrained optimization problem it actually is.
 
 ## Cost Category 2: Multi-Vendor Charging Network and Vehicle Data Integration
 
@@ -32,7 +32,7 @@ A fleet operator's EV charging infrastructure frequently spans multiple charging
 
 ## Cost Category 3: Battery Health and Range Prediction Modeling
 
-Genuinely useful EV fleet management depends on accurate range prediction accounting for real-world factors beyond a vehicle's nominal specified range — battery degradation over the vehicle's service life, temperature effects on real-world range (particularly relevant for fleets operating in regions with meaningful seasonal temperature variation), and route-specific factors like elevation change and driving conditions. Building range prediction that accounts for these real-world factors, rather than relying on a vehicle's static nominal range specification, is a genuine modeling undertaking with real ongoing data requirements, frequently underweighted in an initial estimate that assumes range prediction is a simple, largely solved lookup rather than a model requiring real fleet operating data to calibrate and maintain accuracy over a vehicle's service life.
+Genuinely useful EV fleet management depends on accurate range prediction accounting for real-world factors beyond a vehicle's nominal specified range - battery degradation over the vehicle's service life, temperature effects on real-world range (particularly relevant for fleets operating in regions with meaningful seasonal temperature variation), and route-specific factors like elevation change and driving conditions. Building range prediction that accounts for these real-world factors, rather than relying on a vehicle's static nominal range specification, is a genuine modeling undertaking with real ongoing data requirements, frequently underweighted in an initial estimate that assumes range prediction is a simple, largely solved lookup rather than a model requiring real fleet operating data to calibrate and maintain accuracy over a vehicle's service life.
 
 ## Cost Category 4: Grid Integration and Demand Charge Management
 
@@ -53,7 +53,7 @@ A consistent pattern across EV fleet platform cost underestimation: an initial d
 
 A practical budgeting lever specifically relevant to the constrained optimization complexity this article describes, illustrated by Nordlogistik's situation below: rather than transitioning an entire fleet to electric simultaneously, a phased transition that grows the electric fleet gradually relative to available charging infrastructure lets an organization validate its charging orchestration and range prediction systems under genuinely manageable early conditions, correcting scoping assumptions before the full fleet's charging demand actually exceeds what a smaller-scale validation phase would reveal as constrained.
 
-This phasing approach doesn't change the total eventual engineering investment a full fleet transition requires, but it meaningfully reduces the risk of discovering a genuine charging capacity or optimization gap only once the full fleet is already electric and actively competing for constrained charging infrastructure — a considerably more disruptive and costly discovery than encountering the same gap during an earlier, smaller-scale phase where charging infrastructure can still be adjusted or expanded before it becomes an active operational constraint on daily fleet operations.
+This phasing approach doesn't change the total eventual engineering investment a full fleet transition requires, but it meaningfully reduces the risk of discovering a genuine charging capacity or optimization gap only once the full fleet is already electric and actively competing for constrained charging infrastructure - a considerably more disruptive and costly discovery than encountering the same gap during an earlier, smaller-scale phase where charging infrastructure can still be adjusted or expanded before it becomes an active operational constraint on daily fleet operations.
 
 ## Manifera's Approach: Realistic EV Fleet Platform Cost Scoping From the Start
 
@@ -69,7 +69,7 @@ Nordlogistik, an Umeå-based logistics company transitioning its delivery fleet 
 Manifera's Amsterdam team conducted a structured cost re-scoping explicitly modeling charging optimization complexity, multi-vendor vehicle and charging network integration, and demand charge management against the company's full planned fleet transition, revealing that charging orchestration and grid impact management alone represented a substantially larger engineering investment than the original pilot-scale quote had suggested.
 
 > *"Our pilot ran great because we had way more charging capacity than vehicles at that small scale. The real picture, once we modeled our actual full fleet against our actual depot's charging capacity, was a genuinely harder optimization problem than the pilot ever let us see."*
-> — **CTO, Nordlogistik**
+> - **CTO, Nordlogistik**
 
 Nordlogistik proceeded with a realistically scoped platform build including genuine constrained charging optimization and demand charge management, avoiding the significant utility demand charges an unmanaged full-fleet charging rollout would otherwise have triggered.
 
@@ -118,7 +118,7 @@ Typically €200,000-€450,000 for a first, realistically scoped phase covering
 
 ### (Scenario: CTO wanting a rule of thumb for charging point ratio) At what charging-point-to-vehicle ratio does charging scheduling stop being simple and start requiring genuine optimization engineering?
 
-Once a depot has fewer than roughly one charging point per two to three vehicles, simultaneous demand for a limited number of points requires genuine constrained optimization rather than a simple calendar-based scheduling feature — worth checking explicitly against your own depot's planned infrastructure before accepting a quote that treats scheduling as a minor feature.
+Once a depot has fewer than roughly one charging point per two to three vehicles, simultaneous demand for a limited number of points requires genuine constrained optimization rather than a simple calendar-based scheduling feature - worth checking explicitly against your own depot's planned infrastructure before accepting a quote that treats scheduling as a minor feature.
 
 ### (Scenario: fleet operator asking about ongoing range prediction maintenance cost) Does battery health and range prediction modeling require ongoing budget after the initial platform launch?
 

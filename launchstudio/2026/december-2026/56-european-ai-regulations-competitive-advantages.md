@@ -35,11 +35,11 @@ De gangbare aanname is dat Europese AI-regelgeving Europese founders vertraagt t
 
 ## The Conventional Framing and Why It's Incomplete
 
-It's true that GDPR, and increasingly the EU AI Act, impose requirements that founders building for less-regulated markets don't face — data processing agreements, transparency obligations, risk assessments for certain AI use cases. The conventional narrative treats this purely as friction: slower, more expensive, more constrained than a founder building the same product for a US-first market with fewer regulatory obligations.
+It's true that GDPR, and increasingly the EU AI Act, impose requirements that founders building for less-regulated markets don't face - data processing agreements, transparency obligations, risk assessments for certain AI use cases. The conventional narrative treats this purely as friction: slower, more expensive, more constrained than a founder building the same product for a US-first market with fewer regulatory obligations.
 
 ## Why This Framing Misses the Trust Dividend
 
-What the conventional framing misses is that regulatory compliance, done well, becomes a trust signal that unregulated competitors cannot easily claim. A European AI SaaS founder who can confidently and specifically answer a prospective customer's data handling questions — because compliance was built in, not bolted on — differentiates from competitors who either haven't thought about it or are scrambling to retrofit answers under customer pressure.
+What the conventional framing misses is that regulatory compliance, done well, becomes a trust signal that unregulated competitors cannot easily claim. A European AI SaaS founder who can confidently and specifically answer a prospective customer's data handling questions - because compliance was built in, not bolted on - differentiates from competitors who either haven't thought about it or are scrambling to retrofit answers under customer pressure.
 
 ## Where This Advantage Shows Up Concretely
 
@@ -57,31 +57,31 @@ For consumer-facing AI products handling any meaningful personal data, demonstra
 
 ## Why "Move Fast, Comply Later" Is the More Expensive Path
 
-Founders who deprioritize compliance to move faster often pay for it later at a much higher cost — retrofitting compliance into an already-built product, as covered in earlier GDPR guidance's example, is significantly more expensive and disruptive than building it in from the start. The speed advantage of skipping compliance is usually smaller and shorter-lived than founders assume, while the cost of retrofitting is usually larger than expected.
+Founders who deprioritize compliance to move faster often pay for it later at a much higher cost - retrofitting compliance into an already-built product, as covered in earlier GDPR guidance's example, is significantly more expensive and disruptive than building it in from the start. The speed advantage of skipping compliance is usually smaller and shorter-lived than founders assume, while the cost of retrofitting is usually larger than expected.
 
 ## Building Compliance In as a Default, Not a Retrofit
 
-[LaunchStudio](https://launchstudio.eu/en/), operating from Amsterdam and built specifically for the European AI-native founder market, treats GDPR-aware architecture as a default part of production deployment rather than a special request — informed by Herre Roelevink's cybersecurity background and Manifera's experience serving compliance-sensitive enterprise clients like TNO.
+[LaunchStudio](https://launchstudio.eu/en/), operating from Amsterdam and built specifically for the European AI-native founder market, treats GDPR-aware architecture as a default part of production deployment rather than a special request - informed by Herre Roelevink's cybersecurity background and Manifera's experience serving compliance-sensitive enterprise clients like TNO.
 
-[Build compliance in from your first production launch](https://launchstudio.eu/en/#contact) — turning what could be a competitive cost into a competitive advantage.
+[Build compliance in from your first production launch](https://launchstudio.eu/en/#contact) - turning what could be a competitive cost into a competitive advantage.
 
 ## Understanding Where Your Product Actually Falls Under the EU AI Act's Risk Tiers
 
 Much of the compliance conversation above focuses on GDPR and general trust-building, but founders building AI-native products specifically should also understand where their product sits within the EU AI Act's risk classification system, since the obligations attached to each tier differ substantially, and most small AI-native founders assume a stricter tier applies to them than actually does.
 
 **The four risk tiers, briefly:**
-- **Unacceptable risk** — practices banned outright, such as certain forms of biometric surveillance, social scoring, or manipulative AI targeting vulnerable groups. Almost no legitimate AI-native founder product falls here, and if yours plausibly does, that's a fundamental product redesign question, not a compliance checklist item.
-- **High-risk** — AI systems used in specific sensitive contexts, such as employment decisions, credit scoring, critical infrastructure, or certain medical applications, carry substantial obligations: risk management systems, technical documentation, human oversight requirements, and conformity assessments. Founders building in HR tech, fintech credit decisions, or health diagnostics should assume this tier applies and plan accordingly.
-- **Limited risk** — AI systems that interact directly with people, such as chatbots, AI-generated content, or certain recommendation systems, carry primarily transparency obligations: users must be told they're interacting with AI, and AI-generated content in certain contexts must be disclosed as such. Most consumer-facing AI-native SaaS tools fall here.
-- **Minimal risk** — the large majority of AI applications, such as spam filters, AI-enhanced internal tools, and most B2B productivity AI, face no specific EU AI Act obligations beyond existing general law like GDPR.
+- **Unacceptable risk** - practices banned outright, such as certain forms of biometric surveillance, social scoring, or manipulative AI targeting vulnerable groups. Almost no legitimate AI-native founder product falls here, and if yours plausibly does, that's a fundamental product redesign question, not a compliance checklist item.
+- **High-risk** - AI systems used in specific sensitive contexts, such as employment decisions, credit scoring, critical infrastructure, or certain medical applications, carry substantial obligations: risk management systems, technical documentation, human oversight requirements, and conformity assessments. Founders building in HR tech, fintech credit decisions, or health diagnostics should assume this tier applies and plan accordingly.
+- **Limited risk** - AI systems that interact directly with people, such as chatbots, AI-generated content, or certain recommendation systems, carry primarily transparency obligations: users must be told they're interacting with AI, and AI-generated content in certain contexts must be disclosed as such. Most consumer-facing AI-native SaaS tools fall here.
+- **Minimal risk** - the large majority of AI applications, such as spam filters, AI-enhanced internal tools, and most B2B productivity AI, face no specific EU AI Act obligations beyond existing general law like GDPR.
 
-**Why this distinction matters practically:** a founder assuming their tool is "high-risk" because it uses AI and involves real customer data may over-invest in compliance theater, such as formal risk assessments or external audits, that their actual limited-risk or minimal-risk classification doesn't require — wasted effort that could go toward the product itself. Conversely, a founder building genuinely high-risk functionality, such as an AI tool influencing hiring decisions, who assumes "it's just AI, same as everyone else" under-invests in obligations that are genuinely mandatory for that category, creating real legal exposure.
+**Why this distinction matters practically:** a founder assuming their tool is "high-risk" because it uses AI and involves real customer data may over-invest in compliance theater, such as formal risk assessments or external audits, that their actual limited-risk or minimal-risk classification doesn't require - wasted effort that could go toward the product itself. Conversely, a founder building genuinely high-risk functionality, such as an AI tool influencing hiring decisions, who assumes "it's just AI, same as everyone else" under-invests in obligations that are genuinely mandatory for that category, creating real legal exposure.
 
-**The practical first step:** honestly classify which tier your specific product's core functionality actually falls into, rather than assuming a category based on general anxiety about "AI regulation." Most AI-native founders building typical SaaS products — scheduling tools, content generators, recommendation engines, analysis tools — sit in the limited-risk tier, meaning the primary concrete obligation is transparency: clearly disclosing to users that they're interacting with an AI system, which is a modest, achievable requirement rather than the heavy compliance burden the word "regulation" often implies.
+**The practical first step:** honestly classify which tier your specific product's core functionality actually falls into, rather than assuming a category based on general anxiety about "AI regulation." Most AI-native founders building typical SaaS products - scheduling tools, content generators, recommendation engines, analysis tools - sit in the limited-risk tier, meaning the primary concrete obligation is transparency: clearly disclosing to users that they're interacting with an AI system, which is a modest, achievable requirement rather than the heavy compliance burden the word "regulation" often implies.
 
-**Where LaunchStudio's production scoping fits in:** correctly identifying your product's risk tier, and building the specific, often modest, obligations that tier requires into the production architecture from the start, is part of the same GDPR-aware default approach covered above — avoiding both the wasted over-compliance and the genuine under-compliance risk that misclassifying your own product's tier can create.
+**Where LaunchStudio's production scoping fits in:** correctly identifying your product's risk tier, and building the specific, often modest, obligations that tier requires into the production architecture from the start, is part of the same GDPR-aware default approach covered above - avoiding both the wasted over-compliance and the genuine under-compliance risk that misclassifying your own product's tier can create.
 
-**Why this classification is worth revisiting, not just doing once:** a product's risk tier isn't necessarily fixed for its lifetime — a scheduling tool that starts in the limited-risk tier could drift toward high-risk obligations if a founder later adds a feature that, say, screens job applicants or scores creditworthiness, without the founder necessarily recognizing that the new feature changed which regulatory tier applies. Revisiting this classification whenever a genuinely new category of functionality is added, rather than assuming the original classification holds indefinitely, avoids the scenario where a founder correctly compliant at launch becomes quietly non-compliant a year later purely through ordinary feature growth.
+**Why this classification is worth revisiting, not just doing once:** a product's risk tier isn't necessarily fixed for its lifetime - a scheduling tool that starts in the limited-risk tier could drift toward high-risk obligations if a founder later adds a feature that, say, screens job applicants or scores creditworthiness, without the founder necessarily recognizing that the new feature changed which regulatory tier applies. Revisiting this classification whenever a genuinely new category of functionality is added, rather than assuming the original classification holds indefinitely, avoids the scenario where a founder correctly compliant at launch becomes quietly non-compliant a year later purely through ordinary feature growth.
 
 ## Real example
 
@@ -93,10 +93,10 @@ The manufacturing company's HR director specifically asked both vendors detailed
 
 **Result:** Hanna won the contract specifically because of compliance readiness, with the HR director later telling her directly that the data handling clarity was the deciding factor between two otherwise comparably priced and featured products.
 
-> *"We were competing against a cheaper, more established competitor. The thing that won it wasn't a feature — it was that I could answer every single data question immediately and specifically, and they couldn't. LaunchStudio built that readiness in from day one."*
-> — **Hanna Groenewold, Founder, WelzijnScan (Oldenzaal)**
+> *"We were competing against a cheaper, more established competitor. The thing that won it wasn't a feature - it was that I could answer every single data question immediately and specifically, and they couldn't. LaunchStudio built that readiness in from day one."*
+> - **Hanna Groenewold, Founder, WelzijnScan (Oldenzaal)**
 
-**Cost & Timeline:** €2,850 (Launch & Grow Package, GDPR-aware architecture) — live in 12 business days.
+**Cost & Timeline:** €2,850 (Launch & Grow Package, GDPR-aware architecture) - live in 12 business days.
 
 ---
 
@@ -108,19 +108,19 @@ Marginally, but far less than retrofitting compliance later, as covered in earli
 
 ### Is this competitive advantage only relevant for B2B products, or does it matter for consumer AI apps too?
 
-It matters for both, though it manifests differently — B2B advantage often shows up in procurement and sales cycles, as with Hanna's manufacturing deal, while consumer advantage shows up more as a trust and differentiation signal in marketing and customer acquisition, particularly among privacy-conscious segments.
+It matters for both, though it manifests differently - B2B advantage often shows up in procurement and sales cycles, as with Hanna's manufacturing deal, while consumer advantage shows up more as a trust and differentiation signal in marketing and customer acquisition, particularly among privacy-conscious segments.
 
 ### Do US-based AI startups face a genuine disadvantage when competing for European customers, or is this overstated?
 
-It's a real, demonstrated disadvantage in specific scenarios — particularly B2B sales involving formal procurement processes with data handling requirements, as in Hanna's case — though not an absolute disadvantage across every deal, since price and features remain significant competing factors too.
+It's a real, demonstrated disadvantage in specific scenarios - particularly B2B sales involving formal procurement processes with data handling requirements, as in Hanna's case - though not an absolute disadvantage across every deal, since price and features remain significant competing factors too.
 
 ### Can a US-based AI company build the same EU compliance readiness LaunchStudio provides for European founders?
 
-In principle yes, though it typically requires deliberate additional investment in EU data residency infrastructure and compliance processes that aren't natural defaults for a US-first company — the advantage described here is more about which founders prioritize this from the start, not an insurmountable geographic barrier.
+In principle yes, though it typically requires deliberate additional investment in EU data residency infrastructure and compliance processes that aren't natural defaults for a US-first company - the advantage described here is more about which founders prioritize this from the start, not an insurmountable geographic barrier.
 
 ### How does Manifera's own experience with compliance-sensitive clients like TNO inform this approach for smaller AI-native founders?
 
-Enterprise clients like TNO have historically demanded rigorous compliance and security standards that shaped Manifera's engineering culture over 11+ years — LaunchStudio applies that same accumulated discipline to founders operating at a much smaller scale, who benefit from standards originally developed for far more demanding enterprise requirements.
+Enterprise clients like TNO have historically demanded rigorous compliance and security standards that shaped Manifera's engineering culture over 11+ years - LaunchStudio applies that same accumulated discipline to founders operating at a much smaller scale, who benefit from standards originally developed for far more demanding enterprise requirements.
 
 <script type="application/ld+json">
 {

@@ -43,7 +43,7 @@ Most European farmland evolved over centuries. Fields are irregular, small, boun
 
 The Flevoland polders were laid out in the mid-twentieth century according to agricultural engineering principles. Parcels are large and regular. Soil, having been deposited under water and then drained, is more homogeneous than typical. Drainage is systematic. Access roads were planned.
 
-The technical consequences are concrete. Autonomous and semi-autonomous machinery has a far easier operating environment, which is why field trials of agricultural robotics concentrate in regions like this. Variable rate application — adjusting seed, fertiliser or crop protection across a field — has cleaner geometry to work with. Experimental comparison is more tractable because there is less confounding variation between plots. And remote sensing is simpler when parcel boundaries are regular and land use within a parcel is uniform.
+The technical consequences are concrete. Autonomous and semi-autonomous machinery has a far easier operating environment, which is why field trials of agricultural robotics concentrate in regions like this. Variable rate application - adjusting seed, fertiliser or crop protection across a field - has cleaner geometry to work with. Experimental comparison is more tractable because there is less confounding variation between plots. And remote sensing is simpler when parcel boundaries are regular and land use within a parcel is uniform.
 
 The honest counterpoint is that this also makes the region less representative. A model developed here may transfer poorly to the fragmented landscapes where most European agriculture happens, and researchers working here are aware of that limitation.
 
@@ -63,7 +63,7 @@ Lelystad hosts national livestock research, and animal data is a technical area 
 
 **Disease outbreak modelling.** Livestock epidemics have severe economic and welfare consequences, and modelling transmission across farm networks informs surveillance and response policy.
 
-This domain has a property worth noting: the subjects cannot report symptoms, which makes inference from indirect signals the only option. Candidates who find that problem shape interesting — and it resembles condition monitoring of machinery more than it resembles human health data — often find it more engaging than expected.
+This domain has a property worth noting: the subjects cannot report symptoms, which makes inference from indirect signals the only option. Candidates who find that problem shape interesting - and it resembles condition monitoring of machinery more than it resembles human health data - often find it more engaging than expected.
 
 ## The Entity Landscape
 
@@ -115,7 +115,7 @@ A comparison worth making, because it reframes how promising this domain is.
 
 Autonomous driving on public roads has to handle pedestrians, cyclists, unpredictable human drivers, complex signage, and an effectively unbounded set of rare situations, all at speed and under a safety case that must satisfy regulators. Progress has been slower than predicted largely because of that tail.
 
-An autonomous machine in a field faces a far more constrained problem. The environment is private land rather than public road. Speeds are low. The set of things that might be encountered is much smaller — though not trivial, since it includes people, animals and obstacles that must not be run over. Regulatory requirements exist but are lighter than for public-road vehicles. And the task is repetitive and geometrically structured.
+An autonomous machine in a field faces a far more constrained problem. The environment is private land rather than public road. Speeds are low. The set of things that might be encountered is much smaller - though not trivial, since it includes people, animals and obstacles that must not be run over. Regulatory requirements exist but are lighter than for public-road vehicles. And the task is repetitive and geometrically structured.
 
 This is why agricultural autonomy has moved from research to commercial deployment faster than road autonomy, and it is why the technical problems are tractable enough to be worth working on now rather than eventually.
 
@@ -127,7 +127,7 @@ For a candidate with perception or robotics experience, agricultural autonomy of
 
 Two patterns worth preparing for, because they differ from general technology hiring.
 
-**Genuine domain curiosity is screened for and easy to demonstrate or fail.** An interviewer will typically ask what interests you about the domain. A candidate who answers in terms of the data — large time series, interesting signal problems — has revealed that the subject matter is incidental to them. A candidate who can say something specific about why animal behaviour or crop development is interesting has revealed the opposite. This is not a trick; small research groups and agricultural technology companies have watched engineers arrive, treat the domain as arbitrary, and leave within eighteen months.
+**Genuine domain curiosity is screened for and easy to demonstrate or fail.** An interviewer will typically ask what interests you about the domain. A candidate who answers in terms of the data - large time series, interesting signal problems - has revealed that the subject matter is incidental to them. A candidate who can say something specific about why animal behaviour or crop development is interesting has revealed the opposite. This is not a trick; small research groups and agricultural technology companies have watched engineers arrive, treat the domain as arbitrary, and leave within eighteen months.
 
 **Practical grounding matters more than candidates expect.** Having visited a farm, understood how a milking parlour works, or seen a field trial changes how you talk about the work. It is not a qualification, but it is a signal that you will not propose something operationally impossible. If you are serious about this domain, arranging to see the physical reality before interviewing is among the highest-return preparations available.
 
@@ -153,7 +153,7 @@ One area deserves separating out, because its importance is growing quickly and 
 
 Agricultural greenhouse gas emissions, particularly methane from ruminants and nitrogen compounds from manure and fertiliser, are at the centre of one of the most politically contested policy areas in the Netherlands. Emission reduction targets have direct consequences for farm operations, and enforcement requires measurement.
 
-That measurement is technically hard. Emissions from a barn or a field are diffuse, weather-dependent and expensive to measure directly. Estimating them from proxies — feed composition, animal characteristics, manure management, soil conditions — requires models that must be accurate enough to support decisions affecting individual farm businesses and defensible enough to withstand legal challenge.
+That measurement is technically hard. Emissions from a barn or a field are diffuse, weather-dependent and expensive to measure directly. Estimating them from proxies - feed composition, animal characteristics, manure management, soil conditions - requires models that must be accurate enough to support decisions affecting individual farm businesses and defensible enough to withstand legal challenge.
 
 For a candidate, this is a domain where technical work has unusually direct political and economic consequence, and where the standard for defensibility is set by the fact that people's livelihoods depend on the numbers. Engineers who want their work to matter will find few places where it matters more visibly. Engineers who dislike working in contested territory should know that this field is genuinely contested and that being associated with the measurement side attracts scrutiny.
 
@@ -178,7 +178,7 @@ Browse current AI, machine learning and data vacancies in and around Lelystad at
 Large regular parcels, uniform soil and planned access make autonomous machinery far easier to operate, remote sensing simpler, and experimental comparison more tractable because there is less confounding variation between plots.
 
 ### (Scenario: candidate new to livestock data) What does animal data work involve?
-Per-individual time series across hundreds or thousands of animals — activity, rumination, yield, intake — used for early disease detection from subtle behavioural change, reproduction timing, emissions and welfare assessment.
+Per-individual time series across hundreds or thousands of animals - activity, rumination, yield, intake - used for early disease detection from subtle behavioural change, reproduction timing, emissions and welfare assessment.
 
 ### (Scenario: candidate considering a research institute) What is different about having experimental facilities?
 You can design experiments to generate the data you need rather than only using what exists, which is a real advantage. The cost is that biological cycles set the pace and a design error can waste a season.

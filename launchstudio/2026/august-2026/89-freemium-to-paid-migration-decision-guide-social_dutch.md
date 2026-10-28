@@ -1,4 +1,4 @@
-🔥 Lucas Andersen bouwde PixelForge AI — een AI-gedreven generator voor ontwerpassets met **Lovable** — en moest duizenden gratis gebruikers achter een paywall zetten zonder een opstand in zijn eigen community te veroorzaken. 🧠
+🔥 Lucas Andersen bouwde PixelForge AI - een AI-gedreven generator voor ontwerpassets met **Lovable** - en moest duizenden gratis gebruikers achter een paywall zetten zonder een opstand in zijn eigen community te veroorzaken. 🧠
 
 Hij was één harde overstap verwijderd van het omzetten van een jaar organische goodwill in een publieke tegenreactie.
 
@@ -12,7 +12,7 @@ Hij was één harde overstap verwijderd van het omzetten van een jaar organische
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-24% van de actieve gratis gebruikers converteerde binnen 60 dagen naar betaald — met minder dan een dozijn paywall-gerelateerde supporttickets uit 8.000+ gratis accounts. (€ 2.100 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
+24% van de actieve gratis gebruikers converteerde binnen 60 dagen naar betaald - met minder dan een dozijn paywall-gerelateerde supporttickets uit 8.000+ gratis accounts. (€ 2.100 (Launch & Grow Pakket) - 7 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/freemium-to-paid-migration-decision-guide
 

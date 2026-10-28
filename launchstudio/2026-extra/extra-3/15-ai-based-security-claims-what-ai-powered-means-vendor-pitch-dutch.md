@@ -51,7 +51,7 @@ Oprichters die hun eigen product bouwen met AI-tools zijn al vloeiend, door dire
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om beveiligingsclaims van leveranciers met exact dit niveau van specificiteit te evalueren tijdens bredere lanceringgereedheidsopdrachten. Wij vertalen marketingtaal van leveranciers in concrete, controleerbare vragen, ondersteund door Manifera's eigen op cyberbeveiliging geïnformeerde engineeringpraktijken en CEO Herre Roelevink's achtergrond in het leiden van CyberDevOps, nu CFLW Cyber Strategies, werkend naast TNO.
 
-[Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u het contract ondertekent](https://launchstudio.eu/nl/#contact) — dezelfde zorgvuldigheid die u toegepast wilt zien op de claims van uw eigen product geldt hier ook.
+[Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u het contract ondertekent](https://launchstudio.eu/nl/#contact) - dezelfde zorgvuldigheid die u toegepast wilt zien op de claims van uw eigen product geldt hier ook.
 
 ## Rode vlaggen om op te merken voordat u überhaupt een vraag stelt
 
@@ -82,9 +82,9 @@ Job bracht de pitch van de leverancier naar LaunchStudio voor een tweede mening 
 **Resultaat:** Job koos voor een andere, transparanter beveiligingsbewakingsleverancier tegen lagere kosten, nadat hij specifiek had vermeden een "AI-premium" te betalen voor een capaciteit die bij nader inzien niet betekenisvol verschilde van een traditionele benadering die hij voor aanzienlijk minder had kunnen betrekken.
 
 > *"De pitch klonk oprecht indrukwekkend, vol AI-taal die precies overeenkwam met wat ik zou verwachten dat een goede beveiligingstool over zichzelf zou zeggen. Er was iemand voor nodig die de leverancier gerichte, specifieke vragen stelde om te onthullen dat er onder de pitch eigenlijk niet veel AI gebeurde."*
-> — **Job Willemsen, Oprichter, VoorraadWacht (Delft)**
+> - **Job Willemsen, Oprichter, VoorraadWacht (Delft)**
 
-**Kosten en tijdlijn:** € 400 (adviesgesprek voor leveranciersevaluatie) — voltooid in 1 werkdag.
+**Kosten en tijdlijn:** € 400 (adviesgesprek voor leveranciersevaluatie) - voltooid in 1 werkdag.
 
 ---
 
@@ -144,7 +144,7 @@ De onderliggende discipline – controleren of marketingtaal overeenkomt met het
       "name": "Heeft meer betalen voor AI-beveiliging zin als traditionele tools volstaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — kosten moeten de daadwerkelijke capaciteit volgen, niet alleen de AI-merkidentiteit."
+        "text": "Niet noodzakelijkerwijs - kosten moeten de daadwerkelijke capaciteit volgen, niet alleen de AI-merkidentiteit."
       }
     },
     {

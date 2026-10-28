@@ -20,23 +20,23 @@ target_persona: "CEO"
 }
 </script>
 
-A software project has a defined end state and a completion date; a software product has neither, and treating software product development like a project — with a fixed scope and a "done" milestone — is the single most common reason product initiatives quietly stall a year or two after their celebrated launch.
+A software project has a defined end state and a completion date; a software product has neither, and treating software product development like a project - with a fixed scope and a "done" milestone - is the single most common reason product initiatives quietly stall a year or two after their celebrated launch.
 
-**The Pain:** A CEO greenlighting software product development, whether an internal tool intended to scale or a customer-facing product line, often structures the engagement using project-management instincts — a defined scope, a launch date, a sense of completion once that date arrives — because those instincts work well for most other software initiatives and the difference isn't obvious until well after the initial launch.
+**The Pain:** A CEO greenlighting software product development, whether an internal tool intended to scale or a customer-facing product line, often structures the engagement using project-management instincts - a defined scope, a launch date, a sense of completion once that date arrives - because those instincts work well for most other software initiatives and the difference isn't obvious until well after the initial launch.
 
-**The Agitation:** A software product built and then treated as complete stops evolving the moment its first version ships, while the market, the users, and the competitive landscape around it keep moving — and a product that stops evolving while its context keeps changing doesn't stay valuable, it decays, typically losing meaningful relevance or usage within 12-18 months of a launch that was treated as a finish line rather than a starting point.
+**The Agitation:** A software product built and then treated as complete stops evolving the moment its first version ships, while the market, the users, and the competitive landscape around it keep moving - and a product that stops evolving while its context keeps changing doesn't stay valuable, it decays, typically losing meaningful relevance or usage within 12-18 months of a launch that was treated as a finish line rather than a starting point.
 
 ## Why Product Development Needs a Different Model
 
-Software product development requires an ongoing engagement model rather than a project-based one specifically because a product's value isn't fixed at launch — it's determined by how well the product continues to fit a changing market and user base, which is inherently a continuous process, not a one-time delivery.
+Software product development requires an ongoing engagement model rather than a project-based one specifically because a product's value isn't fixed at launch - it's determined by how well the product continues to fit a changing market and user base, which is inherently a continuous process, not a one-time delivery.
 
-The practical difference shows up first in how success is measured. A project's success is measured by whether it was delivered on scope, on time, and on budget — inherently backward-looking, evaluated once, at completion. A product's success is measured by ongoing usage, retention, and value delivered over time — inherently forward-looking, evaluated continuously, with no single point where the measurement stops mattering. A CEO who applies project-success metrics to a product initiative gets a false sense of completion the moment the launch date passes, right when the actual, ongoing measurement should be starting.
+The practical difference shows up first in how success is measured. A project's success is measured by whether it was delivered on scope, on time, and on budget - inherently backward-looking, evaluated once, at completion. A product's success is measured by ongoing usage, retention, and value delivered over time - inherently forward-looking, evaluated continuously, with no single point where the measurement stops mattering. A CEO who applies project-success metrics to a product initiative gets a false sense of completion the moment the launch date passes, right when the actual, ongoing measurement should be starting.
 
-The second difference is in team structure and continuity. A project team is reasonably disbanded or reassigned once the defined scope ships — that's the correct model for a project, because there's no ongoing need for that specific team once the deliverable is complete. A product team needs to persist well beyond initial launch, because the product's ongoing evolution requires people who understand its history, its users, and its technical foundation continuing to work on it — a company that disbands its product team at launch loses exactly the institutional knowledge needed to keep the product relevant afterward, and rebuilding that knowledge with a new team later costs considerably more than retaining it would have.
+The second difference is in team structure and continuity. A project team is reasonably disbanded or reassigned once the defined scope ships - that's the correct model for a project, because there's no ongoing need for that specific team once the deliverable is complete. A product team needs to persist well beyond initial launch, because the product's ongoing evolution requires people who understand its history, its users, and its technical foundation continuing to work on it - a company that disbands its product team at launch loses exactly the institutional knowledge needed to keep the product relevant afterward, and rebuilding that knowledge with a new team later costs considerably more than retaining it would have.
 
-The third difference is in budget structure. A project has a defined budget tied to its defined scope; a product needs an ongoing budget for continued development, informed by usage data and market feedback that only exists after launch — a CEO who allocates all product-development budget to the initial build, with nothing reserved for the post-launch evolution that determines whether the product actually succeeds, has effectively budgeted for the easy 20% of software product development and left the harder, more important 80% unfunded.
+The third difference is in budget structure. A project has a defined budget tied to its defined scope; a product needs an ongoing budget for continued development, informed by usage data and market feedback that only exists after launch - a CEO who allocates all product-development budget to the initial build, with nothing reserved for the post-launch evolution that determines whether the product actually succeeds, has effectively budgeted for the easy 20% of software product development and left the harder, more important 80% unfunded.
 
-Recognizing which model applies — before committing budget and team structure — is the single highest-leverage decision a CEO makes in software product development, because it determines whether the initiative is set up to actually succeed as an ongoing product, or set up to ship once and then quietly decay.
+Recognizing which model applies - before committing budget and team structure - is the single highest-leverage decision a CEO makes in software product development, because it determines whether the initiative is set up to actually succeed as an ongoing product, or set up to ship once and then quietly decay.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: European clarity on the project-
 
 ### A Cork Fintech's Post-Launch Stall
 
-Airgead Digiteach Chorcaí Teo, a Cork-based fintech company, had launched an internal risk-scoring product with a project team that disbanded upon delivery, treating the launch date as completion — and watched the product's relevance decay over fourteen months as market risk factors shifted and the tool's underlying logic remained frozen at its launch-day state.
+Airgead Digiteach Chorcaí Teo, a Cork-based fintech company, had launched an internal risk-scoring product with a project team that disbanded upon delivery, treating the launch date as completion - and watched the product's relevance decay over fourteen months as market risk factors shifted and the tool's underlying logic remained frozen at its launch-day state.
 
 Manifera restructured the engagement around ongoing product evolution, retaining a small persistent team with institutional knowledge of the tool's history and establishing a quarterly review cadence tied to actual usage and market data. The product has continued evolving for over two years since, remaining materially more relevant to current risk conditions than its original launch-day version.
 
-> *"We shipped it, called it done, and moved the team to the next project. A year later it barely reflected the market anymore. The fix wasn't rebuilding it — it was recognizing it was never actually done in the first place."*
-> — **CEO, Airgead Digiteach Chorcaí Teo, Ireland**
+> *"We shipped it, called it done, and moved the team to the next project. A year later it barely reflected the market anymore. The fix wasn't rebuilding it - it was recognizing it was never actually done in the first place."*
+> - **CEO, Airgead Digiteach Chorcaí Teo, Ireland**
 
 ## Project-Model Product Development vs. Manifera's Ongoing Product Model
 

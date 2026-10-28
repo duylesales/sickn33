@@ -33,7 +33,7 @@ Content Format: Career Guide
 }
 </script>
 
-Independent work is common in European technology, and in some markets — the Netherlands and the Nordics particularly — it is a mainstream career rather than an interlude. Freelancing in AI can mean higher earnings, control over what you work on and genuine variety. It also means being a business, with the unpaid hours, uncertainty and administration that implies. This guide describes what the work actually is, the economics behind the headline rates, and how to decide whether it suits you.
+Independent work is common in European technology, and in some markets - the Netherlands and the Nordics particularly - it is a mainstream career rather than an interlude. Freelancing in AI can mean higher earnings, control over what you work on and genuine variety. It also means being a business, with the unpaid hours, uncertainty and administration that implies. This guide describes what the work actually is, the economics behind the headline rates, and how to decide whether it suits you.
 
 ## Who Hires Independent AI Specialists
 
@@ -73,7 +73,7 @@ The honest test is not whether the rate is higher. It is whether you will bill e
 
 Independent work is regulated differently in every European country, and the differences are consequential enough that general advice is of limited use. What follows is orientation, not guidance; consult an accountant in your own country.
 
-Most countries distinguish genuine self-employment from arrangements that are employment in substance. Authorities look at factors such as whether you control how the work is done, whether you bear commercial risk, how many clients you have, whether you use your own equipment, and whether you could send a substitute. Arrangements that resemble employment — a single client, fixed hours, integrated into a team, working under direction — attract scrutiny in several member states, and the consequences of reclassification can fall on both parties.
+Most countries distinguish genuine self-employment from arrangements that are employment in substance. Authorities look at factors such as whether you control how the work is done, whether you bear commercial risk, how many clients you have, whether you use your own equipment, and whether you could send a substitute. Arrangements that resemble employment - a single client, fixed hours, integrated into a team, working under direction - attract scrutiny in several member states, and the consequences of reclassification can fall on both parties.
 
 The Netherlands has a particularly well-known framework around this question, and enforcement practice has varied over time; anyone working there should check the current position rather than relying on what was true a few years ago.
 
@@ -121,7 +121,7 @@ The discipline that matters most is doing this while busy. Independents who only
 
 The commercial skill that distinguishes successful independents is scoping, and it is learnable.
 
-**Insist on a discovery phase.** A short, paid assessment — one or two weeks — before committing to a delivery scope. This protects both sides: you find out whether the data exists, and the client gets a realistic plan rather than an optimistic one.
+**Insist on a discovery phase.** A short, paid assessment - one or two weeks - before committing to a delivery scope. This protects both sides: you find out whether the data exists, and the client gets a realistic plan rather than an optimistic one.
 
 **Write down what success means.** Specific, measurable, agreed in advance and in the contract. In AI work this must include what happens if the result is that the approach does not work, which is a genuine possible outcome and must not be treated as failure to deliver.
 
@@ -157,7 +157,7 @@ After a few years, patterns are clear about who does well independently.
 
 It suits people who enjoy entering unfamiliar organisations and becoming useful quickly; who are comfortable with commercial conversations; who like variety more than depth; who can tolerate income that varies by quarter; and who are disciplined about administration and pipeline.
 
-It suits less well people who want to build one system over years; who are early in their careers and need development; who find uncertainty genuinely stressful; who dislike selling; or whose circumstances require predictable income — a mortgage application, for instance, is treated differently for independents in most European countries.
+It suits less well people who want to build one system over years; who are early in their careers and need development; who find uncertainty genuinely stressful; who dislike selling; or whose circumstances require predictable income - a mortgage application, for instance, is treated differently for independents in most European countries.
 
 A useful middle path exists. Many experienced people alternate: a few years employed, a few years independent, then employed again. Each direction is possible, and employers generally read freelance experience positively provided it shows delivered work rather than a series of short unexplained engagements.
 
@@ -183,7 +183,7 @@ If you decide to go independent, a few practical steps materially reduce the ris
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-For independents, the board is useful in two ways. It shows which organisations in your region are actively investing in AI and data capability, which is a reasonable proxy for where project work exists — a company hiring its first data scientist frequently also needs interim help. And when an engagement ends, seeing current employed roles keeps your view of the market and of rates realistic.
+For independents, the board is useful in two ways. It shows which organisations in your region are actively investing in AI and data capability, which is a reasonable proxy for where project work exists - a company hiring its first data scientist frequently also needs interim help. And when an engagement ends, seeing current employed roles keeps your view of the market and of rates realistic.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

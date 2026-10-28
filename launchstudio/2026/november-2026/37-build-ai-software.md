@@ -106,9 +106,9 @@ Finally, they used DSPy to automatically compile the extraction instructions bas
 **Result:** The JSON parsing errors dropped to 0%. The extraction accuracy increased from 80% to 99.5%. Because the heavy reasoning was isolated to specific chunks rather than the entire document at once, API costs dropped by 40%. Sarah successfully sold the enterprise version of ClauseCheck to three major Munich real estate agencies, generating €11,000 in MRR.
 
 > *"I was treating the AI like a human employee, begging it in the prompt to do a good job. LaunchStudio taught me to treat the AI like a compiler. They stripped away the 'prompt engineering' magic and replaced it with hardcore software engineering. That was the difference between a prototype and a product."*
-> — **Sarah Müller, Founder, ClauseCheck (Munich)**
+> - **Sarah Müller, Founder, ClauseCheck (Munich)**
 
-**Cost & Timeline:** €7,200 (Launch & Grow Package with AI Pipeline Modularization Add-on) — production-ready and deployed in 12 business days.
+**Cost & Timeline:** €7,200 (Launch & Grow Package with AI Pipeline Modularization Add-on) - production-ready and deployed in 12 business days.
 
 ---
 
@@ -120,7 +120,7 @@ Finally, they used DSPy to automatically compile the extraction instructions bas
 
 ### (Scenario: Founder managing a development team) Should I hire a 'Prompt Engineer' to improve my AI app?
 
-In 2026, hiring a dedicated "Prompt Engineer" who only knows how to write text is a mistake. You need an "AI Engineer"—a software developer who understands DSPy, vector databases, JSON schema enforcement, and CI/CD evaluation pipelines. The skill is no longer writing the perfect sentence; the skill is architecting the system around the LLM to guarantee deterministic outputs.
+In 2026, hiring a dedicated "Prompt Engineer" who only knows how to write text is a mistake. You need an "AI Engineer" - a software developer who understands DSPy, vector databases, JSON schema enforcement, and CI/CD evaluation pipelines. The skill is no longer writing the perfect sentence; the skill is architecting the system around the LLM to guarantee deterministic outputs.
 
 ### (Scenario: Technical founder fighting JSON errors) How do I absolutely guarantee the LLM outputs valid JSON that won't crash my app?
 
@@ -152,7 +152,7 @@ DSPy treats prompts as parameters to be optimized, just like weights in a neural
       "name": "Should I hire a 'Prompt Engineer' to improve my AI app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. In 2026, you need an 'AI Engineer'—a software developer who understands DSPy, vector databases, JSON schema enforcement, and CI/CD evaluation pipelines, not just someone who writes text."
+        "text": "No. In 2026, you need an 'AI Engineer' - a software developer who understands DSPy, vector databases, JSON schema enforcement, and CI/CD evaluation pipelines, not just someone who writes text."
       }
     },
     {

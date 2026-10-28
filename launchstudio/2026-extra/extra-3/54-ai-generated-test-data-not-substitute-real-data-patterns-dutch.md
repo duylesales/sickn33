@@ -55,7 +55,7 @@ Het gebruiken van door AI gegenereerde testgegevens als een echte verbetering ti
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters hun strategie voor testgegevens gepast te categoriseren – door AI gegenereerde synthetische gegevens voor de lancering, overstappend naar testen geïnformeerd door echt gebruik zodra er echte gegevens bestaan. Wij herkennen de specifieke beperkingen van synthetische gegevens op elk stadium, ondersteund door Manifera's bredere engineering-discipline in het testen tegen oprecht representatieve omstandigheden.
 
-[Laat uw strategie voor testgegevens beoordelen op het stadium waar uw product zich daadwerkelijk bevindt](https://launchstudio.eu/nl/#calculator) — synthetische gegevens zijn een echte verbetering, geen permanente vervanging voor de echte ervaring.
+[Laat uw strategie voor testgegevens beoordelen op het stadium waar uw product zich daadwerkelijk bevindt](https://launchstudio.eu/nl/#calculator) - synthetische gegevens zijn een echte verbetering, geen permanente vervanging voor de echte ervaring.
 
 ## Vijf manieren om meer uit door AI gegenereerde testgegevens te halen voordat er echt gebruik bestaat
 
@@ -83,10 +83,10 @@ De door AI gegenereerde synthetische namen van huisdieren, hoewel oprecht gevari
 
 **Resultaat:** Zodra DierenAfspraak lanceerde en echte praktijkgegevens exact dit patroon van meerdere huisdieren per eigenaar onthulden (wat een echte weergave-bug veroorzaakte die de synthetische testen nooit naar boven hadden gebracht), herstelde LaunchStudio het onderliggende probleem. Wij namen specifiek echte, geanonimiseerde gebruikspatronen op in DierenAfspraak's voortdurende testsuite voor de toekomst, in plaats van te blijven vertrouwen op voornamelijk generieke synthetische gegevens.
 
-> *"De door AI gegenereerde testgegevens voelden als een echte verbetering ten opzichte van mijn eigen kleine handgetypte voorbeelden, en dat waren ze oprecht ook. Het bevat toevallig alleen niet het specifieke patroon — meerdere huisdieren onder één eigenaar — dat extreem gebruikelijk bleek te zijn in de daadwerkelijke dierenartspraktijk. Geen enkele generieke synthetische datagenerator had een specifieke reden om daar vanaf te weten."*
-> — **Fenna Bosman, Oprichter, DierenAfspraak (Groningen)**
+> *"De door AI gegenereerde testgegevens voelden als een echte verbetering ten opzichte van mijn eigen kleine handgetypte voorbeelden, en dat waren ze oprecht ook. Het bevat toevallig alleen niet het specifieke patroon - meerdere huisdieren onder één eigenaar - dat extreem gebruikelijk bleek te zijn in de daadwerkelijke dierenartspraktijk. Geen enkele generieke synthetische datagenerator had een specifieke reden om daar vanaf te weten."*
+> - **Fenna Bosman, Oprichter, DierenAfspraak (Groningen)**
 
-**Kosten en tijdlijn:** € 850 (herstel van bug en integratie van testsuite met echte gebruikspatronen) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 850 (herstel van bug en integratie van testsuite met echte gebruikspatronen) - voltooid in 3 werkdagen.
 
 ---
 

@@ -6,9 +6,9 @@
 ❌ **Skipping QA Backfires:** Cutting dedicated QA to shave the initial quote means 1.5-2x higher defect-remediation costs later.
 
 **The Manifera Solution:**
-✅ **Five Cost Drivers, Itemized:** Discovery, development, QA, DevOps, and governance — broken out before you sign, not buried in one bundled number.
+✅ **Five Cost Drivers, Itemized:** Discovery, development, QA, DevOps, and governance - broken out before you sign, not buried in one bundled number.
 ✅ **Tracked Every Two Weeks:** Sprint velocity vs. budget reported biweekly, so drift gets caught early, not at the final invoice.
-✅ **30-40% Lower, Same Seniority:** A €140,000-€190,000 itemized build vs. an equivalent Amsterdam-agency quote — no reduction in engineering seniority.
+✅ **30-40% Lower, Same Seniority:** A €140,000-€190,000 itemized build vs. an equivalent Amsterdam-agency quote - no reduction in engineering seniority.
 
 Stop taking a bundled number to your board. Take a breakdown. 💼
 

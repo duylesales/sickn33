@@ -37,7 +37,7 @@ Sittard-Geleen is a municipality of roughly 92,000 people in southern Limburg, a
 
 ## Materials Informatics Barely Exists Elsewhere in the Country
 
-The distinctive technical opportunity here is materials informatics — using computational and statistical methods to predict material properties and guide the discovery of new ones. It is a field with real momentum internationally and very few Dutch locations where it is practised at scale.
+The distinctive technical opportunity here is materials informatics - using computational and statistical methods to predict material properties and guide the discovery of new ones. It is a field with real momentum internationally and very few Dutch locations where it is practised at scale.
 
 **Property prediction from structure.** Predicting mechanical, thermal, electrical or barrier properties of a polymer or composite from its molecular structure and formulation. The relationship is governed by physics and chemistry but is not simply calculable, and experimental measurement is slow and expensive. This is a regression problem on molecular representations where the choice of representation matters more than the choice of model.
 
@@ -57,11 +57,11 @@ For a candidate, the relevant point is that materials informatics combines chemi
 
 The other half of this market is the chemical site itself, which operates continuous processes at a scale that changes the nature of the data work.
 
-The process problems are those described in the Emmen and Zaanstad analyses — soft sensors for properties that lag production, grade transition optimisation, energy reduction under hard safety envelopes, continuous flow that breaks discrete-record assumptions. What differs here is magnitude and integration.
+The process problems are those described in the Emmen and Zaanstad analyses - soft sensors for properties that lag production, grade transition optimisation, energy reduction under hard safety envelopes, continuous flow that breaks discrete-record assumptions. What differs here is magnitude and integration.
 
 A large integrated site has processes that feed each other: the output of one plant is the feedstock of another, utilities are shared, and a disturbance propagates. Optimising a single plant in isolation can make the site worse. Site-level optimisation, where you account for those couplings, is a substantially harder problem than plant-level optimisation and is where the largest value sits.
 
-Energy and utilities integration is a related problem. A site of this kind consumes energy at a scale where it interacts with the electricity grid as a major participant, which connects the process optimisation problem to the energy market and grid congestion problems described in the Alkmaar analysis. Flexibility — shifting energy-intensive operations in time — has become commercially significant.
+Energy and utilities integration is a related problem. A site of this kind consumes energy at a scale where it interacts with the electricity grid as a major participant, which connects the process optimisation problem to the energy market and grid congestion problems described in the Alkmaar analysis. Flexibility - shifting energy-intensive operations in time - has become commercially significant.
 
 Emissions and circularity add a further dimension. Chemical sites are under substantial regulatory and commercial pressure to reduce emissions and incorporate recycled and biobased feedstock. Both change the input variability and the constraint set, which makes previously stable optimisation problems dynamic again.
 
@@ -69,7 +69,7 @@ Emissions and circularity add a further dimension. Chemical sites are under subs
 
 This deserves separating out, because it is where candidates from a general machine learning background most consistently misjudge the work.
 
-A molecule is not a natural fit for standard model inputs. It is a graph of atoms and bonds, in three dimensions, with a conformational space it moves through, and its properties depend on features at multiple scales — local chemistry, overall shape, how it packs against its neighbours. Turning that into something a model can consume requires choosing a representation, and that choice constrains what the model can possibly learn.
+A molecule is not a natural fit for standard model inputs. It is a graph of atoms and bonds, in three dimensions, with a conformational space it moves through, and its properties depend on features at multiple scales - local chemistry, overall shape, how it packs against its neighbours. Turning that into something a model can consume requires choosing a representation, and that choice constrains what the model can possibly learn.
 
 There is a long history of approaches. Hand-designed descriptors encode chemical intuition about what matters. Fingerprints capture substructure presence. Graph neural networks operate on the molecular graph directly. Representations derived from quantum calculations encode electronic structure at computational cost. Each carries assumptions, and each performs differently depending on the property being predicted and how much data exists.
 

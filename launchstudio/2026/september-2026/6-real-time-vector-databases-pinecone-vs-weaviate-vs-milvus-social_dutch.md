@@ -1,4 +1,4 @@
-⚡ Ava, een technisch projectleider, bouwde een enterprise kennisbank-bot met **Cursor** — en zag het CPU-gebruik van Supabase pgvector naar 100% schieten toen vector-retrieval vastliep onder zware documentinvoer. 📚
+⚡ Ava, een technisch projectleider, bouwde een enterprise kennisbank-bot met **Cursor** - en zag het CPU-gebruik van Supabase pgvector naar 100% schieten toen vector-retrieval vastliep onder zware documentinvoer. 📚
 
 Wanneer uw RAG-pijplijn groeit naar miljoenen vectoren, veroorzaakt de verkeerde databasekeuze ernstige latentieproblemen en compliance-blokkades bij zakelijke klanten. 🧠
 
@@ -12,7 +12,7 @@ Wanneer uw RAG-pijplijn groeit naar miljoenen vectoren, veroorzaakt de verkeerde
 
 Bij **LaunchStudio** benchmarken en migreren we sinds 2014 enterprise database-infrastructuren via Manifera, verspreid over meer dan 160 succesvol opgeleverde projecten. 🛡️
 
-Ava's vectorzoeksnelheid verviervoudigde, terwijl de CPU-belasting op haar primaire database met 50% daalde. (€2.500 (Vector DB Benchmarking & Migratie Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Ava's vectorzoeksnelheid verviervoudigde, terwijl de CPU-belasting op haar primaire database met 50% daalde. (€2.500 (Vector DB Benchmarking & Migratie Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Kies de juiste vectordatabase voor enterprise-schaal: https://launchstudio.eu/nl/blog/real-time-vector-databases-pinecone-vs-weaviate-vs-milvus
 

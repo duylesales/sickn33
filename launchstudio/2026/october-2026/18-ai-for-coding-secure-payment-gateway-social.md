@@ -1,4 +1,4 @@
-🔥 Emma built a prototype using **Lovable** — emma, an online educator in amsterdam, used **lovable** to build a custom platform to host her video courses, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Emma built a prototype using **Lovable** - emma, an online educator in amsterdam, used **lovable** to build a custom platform to host her video courses, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Emma's application achieved production readiness: Emma re-launched securely the next week. She no longer has to manually grant access to users who pay, and her premium content is entirely protected from client-side manipulation. The AI made it look like I had a payment system, but it was just a facade. LaunchStudio built the actual plumbing behind the wall. (€1,500 (Launch Ready package with custom payments) — completed in 5 business days.). 🚀
+Emma's application achieved production readiness: Emma re-launched securely the next week. She no longer has to manually grant access to users who pay, and her premium content is entirely protected from client-side manipulation. The AI made it look like I had a payment system, but it was just a facade. LaunchStudio built the actual plumbing behind the wall. (€1,500 (Launch Ready package with custom payments) - completed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-for-coding-secure-payment-gateway
 

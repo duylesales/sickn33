@@ -6,7 +6,7 @@ Worse still: Many local agencies charge you $200/hour while secretly outsourcing
 
 The tech elite bypassed the Geography Premium years ago. 🌍
 
-At **Manifera**, we deliver the ultimate solution — the **Hybrid Hub**:
+At **Manifera**, we deliver the ultimate solution - the **Hybrid Hub**:
 🇳🇱 Legal safety, security, and contracting right in **Amsterdam**.
 🇻🇳 Massive execution throughput from elite **Autonomous Pods** in **Vietnam**.
 

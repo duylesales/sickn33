@@ -1,4 +1,4 @@
-🚨 "Strong Benchmark Performance on a Published Dataset Demonstrates Real Clinica..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "Strong Benchmark Performance on a Published Dataset Demonstrates Real Clinica..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "Strong Benchmark Performance on a Published Dataset Demonstrates Real Clinical Readiness":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

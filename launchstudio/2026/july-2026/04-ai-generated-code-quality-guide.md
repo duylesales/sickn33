@@ -19,17 +19,17 @@ AI tools, particularly Lovable, generate outstanding user interfaces. The genera
 
 Specific strengths include:
 
-- **Consistent design systems** — Generated apps use Tailwind CSS or styled-components with consistent spacing, typography, and color palettes
+- **Consistent design systems** - Generated apps use Tailwind CSS or styled-components with consistent spacing, typography, and color palettes
 
-- **Responsive layouts** — Mobile and desktop layouts generally work well out of the box
+- **Responsive layouts** - Mobile and desktop layouts generally work well out of the box
 
-- **Modern patterns** — Components follow React best practices with hooks, proper state management, and clean JSX structure
+- **Modern patterns** - Components follow React best practices with hooks, proper state management, and clean JSX structure
 
-- **Accessibility basics** — Semantic HTML, proper heading hierarchy, and basic ARIA attributes are usually included
+- **Accessibility basics** - Semantic HTML, proper heading hierarchy, and basic ARIA attributes are usually included
 
 ### Standard CRUD Operations
 
-Creating, reading, updating, and deleting data — the bread and butter of most SaaS applications — is handled reliably. AI tools generate functional data management flows with form validation, list views, detail pages, and delete confirmations.
+Creating, reading, updating, and deleting data - the bread and butter of most SaaS applications - is handled reliably. AI tools generate functional data management flows with form validation, list views, detail pages, and delete confirmations.
 
 ### Authentication Flows
 
@@ -37,25 +37,25 @@ When connected to Supabase or Firebase, AI tools generate functional login, sign
 
 ## Where AI-Generated Code Consistently Fails
 
-Having reviewed and fixed hundreds of AI-generated applications, we see the same categories of issues repeatedly. These are not edge cases — they appear in the majority of AI-built prototypes.
+Having reviewed and fixed hundreds of AI-generated applications, we see the same categories of issues repeatedly. These are not edge cases - they appear in the majority of AI-built prototypes.
 
 ### Security Vulnerabilities
 
 Security is by far the most critical weakness in AI-generated code. The most common issues we encounter:
 
-1. **API keys in client code** — Supabase anon keys, Stripe publishable keys, and sometimes even secret keys are hardcoded directly in frontend JavaScript files. This is the number one security issue we see, appearing in roughly 70% of Lovable projects.
+1. **API keys in client code** - Supabase anon keys, Stripe publishable keys, and sometimes even secret keys are hardcoded directly in frontend JavaScript files. This is the number one security issue we see, appearing in roughly 70% of Lovable projects.
 
-2. **Missing Row Level Security** — Supabase tables are created without RLS policies, meaning any authenticated user can read, modify, or delete any other user's data. This is a catastrophic vulnerability for any multi-user application.
+2. **Missing Row Level Security** - Supabase tables are created without RLS policies, meaning any authenticated user can read, modify, or delete any other user's data. This is a catastrophic vulnerability for any multi-user application.
 
-3. **No input validation** — User-submitted data flows directly to the database without sanitization or validation, creating SQL injection and XSS attack vectors.
+3. **No input validation** - User-submitted data flows directly to the database without sanitization or validation, creating SQL injection and XSS attack vectors.
 
-4. **Insecure direct object references** — Users can manipulate URLs or API calls to access resources belonging to other users.
+4. **Insecure direct object references** - Users can manipulate URLs or API calls to access resources belonging to other users.
 
-5. **Missing CSRF protection** — Forms and API endpoints lack cross-site request forgery tokens.
+5. **Missing CSRF protection** - Forms and API endpoints lack cross-site request forgery tokens.
 
 ### Error Handling Gaps
 
-AI-generated applications assume the "happy path" — they work beautifully when everything goes right and break ungracefully when anything goes wrong.
+AI-generated applications assume the "happy path" - they work beautifully when everything goes right and break ungracefully when anything goes wrong.
 
 - Network failures crash the application instead of showing a retry prompt
 
@@ -71,15 +71,15 @@ AI-generated applications assume the "happy path" — they work beautifully when
 
 AI-generated code frequently includes performance anti-patterns that may not matter with 10 users but create serious problems at scale:
 
-- **N+1 query problems** — Fetching related data in loops instead of joins
+- **N+1 query problems** - Fetching related data in loops instead of joins
 
-- **Unnecessary re-renders** — Missing React.memo, useMemo, and useCallback optimizations
+- **Unnecessary re-renders** - Missing React.memo, useMemo, and useCallback optimizations
 
-- **Unoptimized images** — No lazy loading, compression, or responsive image sizing
+- **Unoptimized images** - No lazy loading, compression, or responsive image sizing
 
-- **No caching strategy** — Every page load fetches fresh data from the database
+- **No caching strategy** - Every page load fetches fresh data from the database
 
-- **Missing database indexes** — Queries on frequently accessed columns run full table scans
+- **Missing database indexes** - Queries on frequently accessed columns run full table scans
 
 ### Payment Integration Gaps
 
@@ -172,7 +172,7 @@ Emma reached out to **LaunchStudio (by Manifera)**. The engineering team kept he
 
 **Result:** Emma's app load times dropped from 8 seconds to under 0.5 seconds, and her client data became completely secure. She successfully onboarded 80 paying clients within two weeks of launch.
 
-**Cost & Timeline:** €2,200 (Scale Package) — production-ready and deployed in 7 business days.
+**Cost & Timeline:** €2,200 (Scale Package) - production-ready and deployed in 7 business days.
 
 ---
 
@@ -187,7 +187,7 @@ AI-generated code is not inherently safe for production use without review. Whil
 
 ### How does AI-generated code quality compare to hand-written code?
 
-AI-generated code in 2026 produces UI and basic functionality that is comparable to junior-to-mid-level developer output. It excels at creating standard patterns like CRUD operations, form handling, and UI components. It falls short in complex business logic, security implementation, performance optimization, and error handling — areas where senior developer expertise is still essential.
+AI-generated code in 2026 produces UI and basic functionality that is comparable to junior-to-mid-level developer output. It excels at creating standard patterns like CRUD operations, form handling, and UI components. It falls short in complex business logic, security implementation, performance optimization, and error handling - areas where senior developer expertise is still essential.
 
 ### What are the most common quality issues in AI-generated code?
 
@@ -219,7 +219,7 @@ Yes, you should always have AI-generated code professionally reviewed before lau
       "name": "How does AI-generated code quality compare to hand-written code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-generated code in 2026 produces UI and basic functionality that is comparable to junior-to-mid-level developer output. It excels at creating standard patterns like CRUD operations, form handling, and UI components. It falls short in complex business logic, security implementation, performance optimization, and error handling — areas where senior developer expertise is still essential."
+        "text": "AI-generated code in 2026 produces UI and basic functionality that is comparable to junior-to-mid-level developer output. It excels at creating standard patterns like CRUD operations, form handling, and UI components. It falls short in complex business logic, security implementation, performance optimization, and error handling - areas where senior developer expertise is still essential."
       }
     },
     {

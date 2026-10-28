@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Everyone's advice is the same: just hire a developer. Nobody mentions that the developer market has not caught up with how your app was built, and that a large share of capable, honest, experienced freelancers will look at a Lovable codebase and quietly want to throw it away.
 
-That is the actual hiring problem. Not finding someone good — finding someone whose definition of good matches what you need, which is a working product launched in weeks, not a beautifully architected rewrite delivered in six months for four times the quote.
+That is the actual hiring problem. Not finding someone good - finding someone whose definition of good matches what you need, which is a working product launched in weeks, not a beautifully architected rewrite delivered in six months for four times the quote.
 
 ## Be Clear About What You Are Hiring For
 
@@ -30,13 +30,13 @@ Write this down before you post anything, because it changes who applies: you ar
 
 That list is usually short and concrete. Access rules on your database. Secrets moved out of the browser. Payments that actually settle and reconcile. Authentication that survives a password reset. Hosting with a domain, a certificate, backups and monitoring. Server-side validation on the handful of rules that matter commercially.
 
-A brief like that attracts a different candidate than "looking for a developer for my startup" — and it gives you something to evaluate quotes against.
+A brief like that attracts a different candidate than "looking for a developer for my startup" - and it gives you something to evaluate quotes against.
 
 ## The Three People Who Will Answer
 
 **The AI-tool builder.** Fast, fluent in Lovable, Bolt and Cursor, often very good at extending your product's features. Frequently has not run anything with real users, real money and real security constraints. Excellent for iterating on the product, risky as the person who declares it launch-ready.
 
-**The traditional web developer.** Ten years of solid experience, opinions formed before AI builders existed, and a strong instinct that generated code is not real code. Can absolutely do production work. Will often propose starting again, because reading unfamiliar code is less pleasant than writing familiar code — and a rewrite puts you back where you were, minus your budget.
+**The traditional web developer.** Ten years of solid experience, opinions formed before AI builders existed, and a strong instinct that generated code is not real code. Can absolutely do production work. Will often propose starting again, because reading unfamiliar code is less pleasant than writing familiar code - and a rewrite puts you back where you were, minus your budget.
 
 **The production engineer who reads other people's code for a living.** Comfortable inheriting a codebase they did not write, thinks in terms of what breaks under load and under attack, treats the frontend as a constraint to preserve rather than an insult to correct. This is the profile you want, and it is the scarcest of the three.
 
@@ -44,7 +44,7 @@ You are not looking for the person with the strongest opinions about your stack.
 
 ## Six Questions That Reveal Competence
 
-Ask these in the first conversation. You do not need to understand the technical detail — you are listening for whether the answer is specific and whether it concerns your situation rather than their preferences.
+Ask these in the first conversation. You do not need to understand the technical detail - you are listening for whether the answer is specific and whether it concerns your situation rather than their preferences.
 
 **"Can you look at my app and tell me what you would fix first?"** The best answer identifies something concrete and explains the consequence. A weak answer is a generic list of best practices, or an immediate proposal to rebuild.
 
@@ -60,7 +60,7 @@ Ask these in the first conversation. You do not need to understand the technical
 
 ## Run a Paid Trial Before You Commit
 
-The single most useful hiring step: pay for a small, real, bounded piece of work before signing anything larger. Not a coding puzzle — an actual fix from your list. Moving one API key server-side. Writing access policies for one table. Setting up hosting for a staging version.
+The single most useful hiring step: pay for a small, real, bounded piece of work before signing anything larger. Not a coding puzzle - an actual fix from your list. Moving one API key server-side. Writing access policies for one table. Setting up hosting for a staging version.
 
 Pay for it at their normal rate. You are buying information, and the information is excellent: how they communicate, whether they explain trade-offs, whether they stayed inside scope, whether what they delivered actually works, and whether the code they wrote is something the next person can read.
 
@@ -68,7 +68,7 @@ A candidate who refuses a paid trial task on a project of this size is telling y
 
 ## The Contract Points That Matter Most
 
-**Code ownership, in writing.** The repository, the accounts, the domain, the database project — all in your name, with you as owner rather than collaborator. This is standard and it is regularly not done.
+**Code ownership, in writing.** The repository, the accounts, the domain, the database project - all in your name, with you as owner rather than collaborator. This is standard and it is regularly not done.
 
 **Accounts in your name from day one.** Not "we'll transfer it at the end". Supabase, hosting, domain registrar, payment provider: your email, your billing, their access granted by you.
 
@@ -97,15 +97,15 @@ Use those bands as a sanity check rather than a target. A quote far below them u
 
 A repository you own, with a readable commit history. A short document describing what changed, what was deliberately left, and what to watch. Accounts and credentials in your name, with their access removable by you. A deployed application on your domain with certificates, backups and monitoring in place. A list of anything found and not fixed, so nothing lives only in someone's memory.
 
-If a handover contains all six, you can hire the next person — or edit it yourself — without starting over. That is the actual test of whether the engagement succeeded.
+If a handover contains all six, you can hire the next person - or edit it yourself - without starting over. That is the actual test of whether the engagement succeeded.
 
 ## The Agency-Backed Alternative
 
-Hiring well takes time most founders would rather spend selling. The reason LaunchStudio exists is that this specific work — last-mile launch of an AI-built prototype — is repeatable enough to price as a fixed-scope package rather than a search.
+Hiring well takes time most founders would rather spend selling. The reason LaunchStudio exists is that this specific work - last-mile launch of an AI-built prototype - is repeatable enough to price as a fixed-scope package rather than a search.
 
 The frontend you built in Lovable stays untouched, the engineering underneath is done by Manifera's team, whose eleven years of production work includes clients like Vodafone, TNO and CFLW, and the code ends up documented and AI-readable so you can keep iterating in Lovable or Cursor afterwards. Freelancers and agencies also use it as a silent production partner when a client arrives with a prototype they cannot finish themselves.
 
-[Describe your project](https://launchstudio.eu/en/#contact) and you will get a fixed-price offer with a defined scope and timeline within one business day — which is, at minimum, a useful benchmark for any freelance quote you are weighing.
+[Describe your project](https://launchstudio.eu/en/#contact) and you will get a fixed-price offer with a defined scope and timeline within one business day - which is, at minimum, a useful benchmark for any freelance quote you are weighing.
 
 ## Where to Actually Look
 
@@ -113,13 +113,13 @@ The channel you use shapes the candidates you get, and each pool has a predictab
 
 **General freelance marketplaces** give you volume and speed, and the filtering problem is yours. Expect many proposals within hours, most of them written before anyone read your brief. Useful if you have a precise scope and the patience to run a paid trial task.
 
-**Dutch and Belgian developer communities** — meetups, local Slack and Discord groups, university spin-off networks — produce fewer candidates with far better signal, because reputation is local and people are introduced rather than pitched. Slower, and the quality of a referral from someone who has worked with the person is difficult to beat.
+**Dutch and Belgian developer communities** - meetups, local Slack and Discord groups, university spin-off networks - produce fewer candidates with far better signal, because reputation is local and people are introduced rather than pitched. Slower, and the quality of a referral from someone who has worked with the person is difficult to beat.
 
 **Agencies and studios** give you continuity and someone answering the phone when your contact is ill. They cost more and frequently want a larger scope than you need, because a two-week engagement does not fit their model well.
 
 **The founder network.** Ask three other founders who built with the same tools who they used and whether they would use them again. This is the highest-signal channel available and almost nobody uses it systematically.
 
-Whichever channel you choose, the brief matters more than the source. A post asking for "a developer for my startup" attracts everyone; a post listing six concrete outcomes and mentioning that a paid trial task comes first attracts people who read carefully and repels people who do not — which is most of the filtering done before you speak to anyone.
+Whichever channel you choose, the brief matters more than the source. A post asking for "a developer for my startup" attracts everyone; a post listing six concrete outcomes and mentioning that a paid trial task comes first attracts people who read carefully and repels people who do not - which is most of the filtering done before you speak to anyone.
 
 ## Real example
 
@@ -127,16 +127,16 @@ Whichever channel you choose, the brief matters more than the source. A post ask
 
 Anouk Peeters built Rooster, a shift-planning tool for hospitality venues, in Lovable and hired a freelancer through a marketplace to "make it production ready" for a fixed €6,500. The work took eleven weeks instead of three. What she received was competent and unusable to her: the frontend had been rebuilt in a framework she could not edit, the Lovable project was now irrelevant, and every future change required hiring a developer again.
 
-She had asked five sensible questions during hiring. She had not asked the sixth — whether she would still be able to edit her own app afterwards.
+She had asked five sensible questions during hiring. She had not asked the sixth - whether she would still be able to edit her own app afterwards.
 
-The second engagement started from her original Lovable project rather than the rewrite. Scope was written as a list of outcomes: access policies on all eight tables, keys moved into server-side functions, Mollie payments live and reconciling, domain with certificate and backups, monitoring, and a documented handover. A paid trial task came first — moving one key and writing one policy — for €280, delivered in a day.
+The second engagement started from her original Lovable project rather than the rewrite. Scope was written as a list of outcomes: access policies on all eight tables, keys moved into server-side functions, Mollie payments live and reconciling, domain with certificate and backups, monitoring, and a documented handover. A paid trial task came first - moving one key and writing one policy - for €280, delivered in a day.
 
 **Result:** Rooster went live nineteen business days later, Anouk added two features herself in Lovable in the following month, and the total spend on the second engagement was under half the first.
 
 > *"I bought a beautiful rebuild I couldn't touch. The second time I wrote down what 'done' meant before anyone quoted, and paid someone €280 to prove they could do it."*
-> — **Anouk Peeters, Founder, Rooster (Breda)**
+> - **Anouk Peeters, Founder, Rooster (Breda)**
 
-**Cost & Timeline:** €3,400 (Launch Ready Package, following a €280 paid trial task) — live in 19 business days.
+**Cost & Timeline:** €3,400 (Launch Ready Package, following a €280 paid trial task) - live in 19 business days.
 
 ## Frequently Asked Questions
 
@@ -202,7 +202,7 @@ You, from the beginning. Repository, domain, database project, hosting and payme
       "name": "Who should own the accounts and the code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You, from the beginning — repository, domain, database, hosting and payment accounts in your name, with contractors granted revocable access."
+        "text": "You, from the beginning - repository, domain, database, hosting and payment accounts in your name, with contractors granted revocable access."
       }
     }
   ]

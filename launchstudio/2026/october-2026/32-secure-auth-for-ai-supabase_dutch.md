@@ -13,7 +13,7 @@ Het inrichten van een eerste inlogscherm met Supabase Auth kost u hooguit vijf m
 
 In een moderne AI SaaS is het inlogscherm slechts de voordeur. Als u die authenticatie niet op een waterdichte manier koppelt aan uw databasetabellen en uw serverless API Edge Functions, kunnen ingelogde gebruikers alsnog uw gehele bedrijfsvoering vernietigen.
 
-Dit is geen theoretisch risico — onafhankelijke audits van door AI gegenereerde codebases tonen aan dat **45% van de applicaties ernstige kwetsbaarheden bevat**, en een onvolledige authenticatie-handhaving (een veilige login, maar een wagenwijd openstaande backend daarachter) is een van de meest voorkomende faalpatronen.
+Dit is geen theoretisch risico - onafhankelijke audits van door AI gegenereerde codebases tonen aan dat **45% van de applicaties ernstige kwetsbaarheden bevat**, en een onvolledige authenticatie-handhaving (een veilige login, maar een wagenwijd openstaande backend daarachter) is een van de meest voorkomende faalpatronen.
 
 Hier leest u hoe u échte, waterdichte authenticatie inricht binnen Supabase voor uw AI-SaaS.
 
@@ -34,7 +34,7 @@ if (!user) {
 
 Deze programmacode slaagt er prima in om de gebruikersinterface te verbergen voor niet-ingelogde bezoekers. Op databaseniveau biedt dit echter **exact nul komma nul beveiliging**.
 
-Omdat de Supabase-client rechtstreeks in de browser van de gebruiker draait, kan een kwaadwillende bezoeker die *wel* is ingelogd (en dus over een geldig JWT beschikt) simpelweg de Chrome-ontwikkelaarsconsole openen en handmatig queries uitvoeren op de database. Aangezien uw code simpelweg `.select('*')` aanroept zonder server-side restricties, downloadt de aanvaller met één druk op de knop alle vertrouwelijke rapporten van álle andere klanten op het platform. Geen geavanceerde hacks, geen gestolen wachtwoorden — slechts een ingelogd account en een open console.
+Omdat de Supabase-client rechtstreeks in de browser van de gebruiker draait, kan een kwaadwillende bezoeker die *wel* is ingelogd (en dus over een geldig JWT beschikt) simpelweg de Chrome-ontwikkelaarsconsole openen en handmatig queries uitvoeren op de database. Aangezien uw code simpelweg `.select('*')` aanroept zonder server-side restricties, downloadt de aanvaller met één druk op de knop alle vertrouwelijke rapporten van álle andere klanten op het platform. Geen geavanceerde hacks, geen gestolen wachtwoorden - slechts een ingelogd account en een open console.
 
 ## Echte Veilige Authenticatie: De Supabase Driehoek (The Triad)
 
@@ -93,11 +93,11 @@ Naast de drie kernlagen vereist een professioneel geharde authenticatie-architec
 
 Als solo-ontwikkelaar wilt u uw kostbare tijd besteden aan het perfectioneren van uw AI-product, en niet wekenlang worstelen met complexe PostgreSQL-policies, Edge Functions en token-encryptie. Eén overgeslagen RLS-policy op een vector-tabel stelt immers uw gehele klantenbestand bloot aan een catastrofaal datalek.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Dit is waarom ambitieuze software-oprichters kiezen voor [LaunchStudio](https://launchstudio.eu/nl/).
 
-Gesteund door de enterprise cybersecurity-experts van [Manifera](https://www.manifera.com/) — met ruim 120 senior engineers werkend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze regionale vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street (Floor 11, Block C, 10 Pho Quang) in Ho Chi Minhstad, Vietnam** en meer dan een decennium ervaring in het ontwikkelen van [beveiligde webapplicaties](https://www.manifera.com/services/web-app-develop/) voor multinationals zoals Vodafone en TNO — is LaunchStudio gespecialiseerd in het beveiligen van Supabase-architecturen voor AI-startups.
+Gesteund door de enterprise cybersecurity-experts van [Manifera](https://www.manifera.com/) - met ruim 120 senior engineers werkend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze regionale vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street (Floor 11, Block C, 10 Pho Quang) in Ho Chi Minhstad, Vietnam** en meer dan een decennium ervaring in het ontwikkelen van [beveiligde webapplicaties](https://www.manifera.com/services/web-app-develop/) voor multinationals zoals Vodafone en TNO - is LaunchStudio gespecialiseerd in het beveiligen van Supabase-architecturen voor AI-startups.
 
 Wij implementeren de complete "Secure Auth Driehoek" en de bijbehorende sessiehygiëne. We schrijven de complexe RLS-policies over alle vier de CRUD-operaties, verplaatsen AI-calls naar rate-limited Edge Functions en beveiligen Stripe-webhooks tegen vervalsing. Binnen **1 tot 3 weken** leveren wij een cryptografisch geharde SaaS-architectuur op waarmee u direct en vol vertrouwen enterprise B2B-contracten kunt afsluiten. Dit geeft u de rust dat uw platform bestand is tegen kwaadwillende inspecties vanuit de browser.
 
@@ -120,7 +120,7 @@ Lucas, een technische solo-oprichter in Utrecht, bouwde met behulp van Next.js e
 
 Lucas richtte Supabase Auth in met e-mail en wachtwoord. Hij schermde het dashboard af met een simpele frontend-redirect voor niet-ingelogde bezoekers, in de veronderstelling dat dit ruim voldoende was om een proefperiode te starten met drie lokale tandartspraktijken.
 
-Een week later ontving Lucas een paniekerig telefoontje van een tandarts. De tandarts had op een patiëntprofiel geklikt en zag plotseling de medische dossiers en e-mails van patiënten van een concurrerende praktijk aan de andere kant van de stad. Lucas had nagelaten Row Level Security (RLS) in te stellen; zijn React-frontend voerde simpelweg `supabase.from('patients').select('*')` uit en filterde de praktijkdata lokaal in de browser. Door een kleine softwarebug in de React-state faalde het lokale filter, waardoor uiterst vertrouwelijke medische persoonsgegevens direct op straat kwamen te liggen — een ernstig AVG- en medisch beroepsgeheim-datalek.
+Een week later ontving Lucas een paniekerig telefoontje van een tandarts. De tandarts had op een patiëntprofiel geklikt en zag plotseling de medische dossiers en e-mails van patiënten van een concurrerende praktijk aan de andere kant van de stad. Lucas had nagelaten Row Level Security (RLS) in te stellen; zijn React-frontend voerde simpelweg `supabase.from('patients').select('*')` uit en filterde de praktijkdata lokaal in de browser. Door een kleine softwarebug in de React-state faalde het lokale filter, waardoor uiterst vertrouwelijke medische persoonsgegevens direct op straat kwamen te liggen - een ernstig AVG- en medisch beroepsgeheim-datalek.
 
 Geconfronteerd met een dreigende claim schakelde Lucas de app direct uit en nam contact op met **LaunchStudio (door Manifera)**.
 
@@ -128,7 +128,7 @@ Onze backend-engineers auditten zijn Supabase-omgeving onmiddellijk. We activeer
 
 **Resultaat:** De applicatie werd binnen 6 werkdagen volledig beveiligd herlanceerd. Omdat de beveiliging nu direct op databaseniveau is verankerd, is het fysiek onmogelijk voor een frontend-bug om data tussen praktijken te lekken. Lucas doorstond een formele medische privacy-audit en schaalde op naar 15 tandartspraktijken, goed voor **€ 3.000 aan MRR**. *"Ik dacht dat Supabase Auth betekende dat mijn app veilig was. LaunchStudio liet me zien dat het inlogscherm slechts het begin is. Zij hebben mijn bedrijf gered van een fatale claim."*
 
-**Kosten & Tijdlijn:** €2.500 (Launch Ready Supabase Hardening Pakket) — binnen 6 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.500 (Launch Ready Supabase Hardening Pakket) - binnen 6 werkdagen live opgeleverd.
 
 ---
 

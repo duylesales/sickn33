@@ -74,9 +74,9 @@ De kloof werd een echt probleem zodra echte gebruikers slechte uitvoer begonnen 
 LaunchStudio voegde gestructureerde logging aan de serverzijde toe aan elke AI-oproep in SchrijfHulp: volledige prompttekst, modelversie, temperatuur- en token-instellingen, rauwe reactie, en een verzoeks-ID gekoppeld aan de sessie van de gebruiker, allemaal bewaard met de juiste afhandeling voor eventuele persoonlijke inhoud in de logboeken. **Resultaat:** de volgende reeks klachten over slechte uitvoer die Isa ontving was volledig reproduceerbaar. Ze kon exact zien wat er was verzonden, het patroon identificeren dat het probleem veroorzaakte, en de onderliggende prompt-sjabloon binnen een dag herstellen in plaats van te gokken.
 
 > *"Ik realiseerde me niet hoeveel ik op het gevoel vloog totdat ik daadwerkelijk de logboeken had en voor het eerst kon zien wat mijn eigen product exact had gedaan."*
-> — **Isa Rovers, Oprichter, SchrijfHulp (Winterswijk)**
+> - **Isa Rovers, Oprichter, SchrijfHulp (Winterswijk)**
 
-**Kosten en tijdlijn:** € 600 (gestructureerde verzoeks-logging, bewaarbeleid, verzoeks-ID tracing) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 600 (gestructureerde verzoeks-logging, bewaarbeleid, verzoeks-ID tracing) - voltooid in 3 werkdagen.
 
 ---
 

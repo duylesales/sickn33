@@ -1,4 +1,4 @@
-💼 Mateus bouwde een onkostenautomatiseringstool met **Bolt** — drie weken voor een pre-seed-pitch stelde zijn investeerder een vraag die hij niet zelfverzekerd kon beantwoorden.
+💼 Mateus bouwde een onkostenautomatiseringstool met **Bolt** - drie weken voor een pre-seed-pitch stelde zijn investeerder een vraag die hij niet zelfverzekerd kon beantwoorden.
 
 "Als ik nu twee klantaccounts aanmaak, kan de een dan de data van de ander zien?" Dat is de snelste test die een investeerder heeft om te zien of uw backend daadwerkelijk solide is, of alleen zo oogt in de demo.
 
@@ -12,7 +12,7 @@
 
 Bij **LaunchStudio** maken wij oprichters al sinds 2014 investeerdersklaar via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Mateus sloot het openstaande due-diligence-punt binnen enkele dagen af en bracht de ronde zonder vertraging naar ondertekening. (€1.600 Launch Ready-pakket — 6 werkdagen.) 🚀
+Mateus sloot het openstaande due-diligence-punt binnen enkele dagen af en bracht de ronde zonder vertraging naar ondertekening. (€1.600 Launch Ready-pakket - 6 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/what-investors-want-before-dev-partner
 

@@ -55,7 +55,7 @@ Het doel is niet om de echte, waardevolle capaciteit van rol twee te devalueren 
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters en bureaus om exact dit onderscheid scherp te krijgen wanneer ze een technische aanwerving of opdracht structureren. Wij zorgen ervoor dat de daadwerkelijk benodigde capaciteit – of het nu gaat om snelle AI-geassisteerde generatie of een onafhankelijk oordeel over productieverificatie – overeenkomt met waarvoor daadwerkelijk wordt aangenomen. Dit wordt ondersteund door Manifera's brede engineeringteam dat zowel oprecht ervaren engineers als specialisten in AI-tools omvat.
 
-[Zorg dat u helder heeft welke rol u daadwerkelijk nodig heeft voor uw volgende technische aanwerving](https://launchstudio.eu/nl/#contact) — de titel alleen vertelt u niet welke capaciteit u krijgt.
+[Zorg dat u helder heeft welke rol u daadwerkelijk nodig heeft voor uw volgende technische aanwerving](https://launchstudio.eu/nl/#contact) - de titel alleen vertelt u niet welke capaciteit u krijgt.
 
 ## Het schrijven van een vacature of opdrachtbeschrijving die de juiste rol aantrekt
 
@@ -83,10 +83,10 @@ De freelancer, oprecht bekwaam in het snel genereren van en itereren op functies
 
 **Resultaat:** Iris bracht FactuurFlow naar LaunchStudio om het specifieke verificatiewerk te voltooien waar het daadwerkelijke profiel van de freelancer niet voor geschikt was geweest. Tegelijkertijd hield ze de freelancer betrokken voor waar hij oprecht sterk in was – snelle functie-iteratie. Dit leidde tot een beter passende taakverdeling dan haar oorspronkelijke aanname bij een enkele aanwerving had voorzien.
 
-> *"Ik huurde in op basis van een functietitel die exact goed klonk en stelde niet de vervolgvragen die de specifieke wanverhouding zouden hebben onthuld. De freelancer was oprecht getalenteerd in wat hij daadwerkelijk goed deed — het was alleen niet het specifieke ding waarvoor ik hem had ingehuurd."*
-> — **Iris Terpstra, Oprichter, FactuurFlow (Leiden)**
+> *"Ik huurde in op basis van een functietitel die exact goed klonk en stelde niet de vervolgvragen die de specifieke wanverhouding zouden hebben onthuld. De freelancer was oprecht getalenteerd in wat hij daadwerkelijk goed deed - het was alleen niet het specifieke ding waarvoor ik hem had ingehuurd."*
+> - **Iris Terpstra, Oprichter, FactuurFlow (Leiden)**
 
-**Kosten en tijdlijn:** € 1.500 (verificatie van betalingsbeveiliging, aanvullend op de bestaande relatie met de freelancer) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.500 (verificatie van betalingsbeveiliging, aanvullend op de bestaande relatie met de freelancer) - voltooid in 5 werkdagen.
 
 ---
 

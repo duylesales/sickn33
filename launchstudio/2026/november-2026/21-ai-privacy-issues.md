@@ -35,7 +35,7 @@ The intersection of artificial intelligence and European data protection law has
 
 AI and privacy issues are no longer just policy concerns; they are complex architectural challenges. When a user inputs personal data into your AI-powered application, and your code forwards that data to an OpenAI or Anthropic API, you have initiated a third-party data transfer. If that data includes Personally Identifiable Information (PII) from an EU citizen, and it is processed on servers outside the European Economic Area (EEA) without proper safeguards, you are in direct violation of the General Data Protection Regulation (GDPR).
 
-Most AI-generated prototypes fail GDPR compliance by default. AI coding tools like Cursor, Bolt, or Lovable generate direct API calls that treat user input as opaque strings, passing them blindly to LLMs. For a startup looking to scale—especially one targeting B2B enterprise clients or operating within the EU—this architecture is a legal liability that can result in fines up to €20 million or 4% of global revenue.
+Most AI-generated prototypes fail GDPR compliance by default. AI coding tools like Cursor, Bolt, or Lovable generate direct API calls that treat user input as opaque strings, passing them blindly to LLMs. For a startup looking to scale - especially one targeting B2B enterprise clients or operating within the EU - this architecture is a legal liability that can result in fines up to €20 million or 4% of global revenue.
 
 ## The Three Layers of AI Privacy Architecture
 
@@ -101,9 +101,9 @@ Within 14 business days, LaunchStudio implemented a secure Python-based backend 
 **Result:** ContractClear passed the logistics firm's subsequent security audit with zero critical findings. Mathijs not only secured the initial pilot but leveraged the new "Enterprise-Grade Privacy" architecture to close three more B2B clients, reaching €8,500 MRR.
 
 > *"I thought building the AI features was the hard part. I was wrong. Building the privacy infrastructure so enterprises will actually let you touch their data is the hard part. LaunchStudio didn't just fix my code; they made my company legally viable for B2B sales."*
-> — **Mathijs van der Meer, Founder, ContractClear (The Hague)**
+> - **Mathijs van der Meer, Founder, ContractClear (The Hague)**
 
-**Cost & Timeline:** €7,200 (Launch & Grow Package with Enterprise Security Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €7,200 (Launch & Grow Package with Enterprise Security Add-on) - production-ready and deployed in 14 business days.
 
 ---
 

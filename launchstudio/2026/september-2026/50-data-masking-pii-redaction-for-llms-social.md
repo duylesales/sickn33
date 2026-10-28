@@ -1,4 +1,4 @@
-🩺 Julian, a healthcare consultant, used **Bolt** to build a patient notes summarizer — but raw patient PII was being sent straight to OpenAI's external API. 🔏
+🩺 Julian, a healthcare consultant, used **Bolt** to build a patient notes summarizer - but raw patient PII was being sent straight to OpenAI's external API. 🔏
 
 Sending unmasked names, SSNs, or account numbers to a third-party LLM is a GDPR, CCPA, and HIPAA violation, carrying fines up to 4% of global turnover. 🧠
 

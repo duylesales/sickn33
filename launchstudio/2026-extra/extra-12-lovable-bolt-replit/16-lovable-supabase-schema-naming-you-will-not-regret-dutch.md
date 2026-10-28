@@ -24,7 +24,7 @@ Open de tabellenlijst van een Lovable-project dat een jaar lang is uitgebreid en
 
 Dat is geen slordigheid. Het is wat er gebeurt wanneer een schema verzoek voor verzoek wordt opgebouwd door een tool zonder geheugen van de eerdere verzoeken, waarvan elk op zichzelf iets redelijks opleverde. Het resultaat is een database waarin u, om te weten hoe iets heet, moet weten wanneer het werd toegevoegd.
 
-Het doet ertoe om één praktische reden. Elke toekomstige wijziging — door u, door een opdrachtnemer, door een andere AI-sessie — begint met begrijpen wat er staat, en een inconsistent schema maakt dat elke keer opnieuw duur.
+Het doet ertoe om één praktische reden. Elke toekomstige wijziging - door u, door een opdrachtnemer, door een andere AI-sessie - begint met begrijpen wat er staat, en een inconsistent schema maakt dat elke keer opnieuw duur.
 
 ## Wat Inconsistentie Werkelijk Kost
 
@@ -34,7 +34,7 @@ Queries worden gokwerk: heet de kolom `created_at`, `createdAt`, `date_created` 
 
 Tooling gaat achteruit. Gegenereerde types, beheerpanelen en API-lagen lezen allemaal uw schema, en wat ze opleveren weerspiegelt wat ze vinden. Inconsistente invoer, inconsistente uitvoer, bij elke afnemer.
 
-En AI-ondersteuning wordt slechter, en dat is degene die zich opstapelt. Een agent die aan een schoon schema werkt, leidt het patroon af en volgt het. Een agent die aan een inconsistent schema werkt, heeft geen patroon om te volgen, dus verzint hij een vierde conventie — en volgend kwartaal hebt u er vier. Het schema leert degene die er daarna aan werkt, inclusief de machine.
+En AI-ondersteuning wordt slechter, en dat is degene die zich opstapelt. Een agent die aan een schoon schema werkt, leidt het patroon af en volgt het. Een agent die aan een inconsistent schema werkt, heeft geen patroon om te volgen, dus verzint hij een vierde conventie - en volgend kwartaal hebt u er vier. Het schema leert degene die er daarna aan werkt, inclusief de machine.
 
 ## Conventies Die het Overnemen Waard Zijn
 
@@ -54,7 +54,7 @@ Elke consistente set is beter dan een inconsistente. Hebt u geen voorkeur, dan z
 
 De namen die de meeste problemen veroorzaken, zijn de vage: `status`, `type`, `data`, `value`, `flag`.
 
-Een kolom die `status` heet op vijf tabellen betekent vijf verschillende dingen, en de query die er twee van samenvoegt, is onleesbaar. `invoice_status`, of beter, een naam die de werkelijke dimensie beschrijft — `payment_state`, `approval_state` — is de extra tekens waard.
+Een kolom die `status` heet op vijf tabellen betekent vijf verschillende dingen, en de query die er twee van samenvoegt, is onleesbaar. `invoice_status`, of beter, een naam die de werkelijke dimensie beschrijft - `payment_state`, `approval_state` - is de extra tekens waard.
 
 Dezelfde zorg bij bedragen. `amount` roept de vraag op die iedereen uiteindelijk op het verkeerde moment stelt: is het in euro's of in centen, en is het inclusief btw? `amount_cents_excl_vat` is lelijk en beantwoordt de vraag voorgoed. Geld opgeslagen als kommagetal (float) is een artikel op zich; sla het op als geheel getal in de kleinste eenheid of als decimaal, nooit als float.
 
@@ -78,7 +78,7 @@ De veilige volgorde heeft vier fasen en geen downtime. Voeg de nieuwe kolom toe.
 
 Hetzelfde werkt voor tabellen: maak de nieuwe aan, schrijf naar beide, zet het lezen om, verwijder de oude. Voor een klein product is elke fase minuten werk, en op geen enkel moment zijn de draaiende code en de database het oneens.
 
-Wat u moet vermijden, is ter plekke hernoemen terwijl de vorige versie van uw applicatie nog draait — de klassieke manier om een product plat te leggen tijdens een deploy die triviaal leek.
+Wat u moet vermijden, is ter plekke hernoemen terwijl de vorige versie van uw applicatie nog draait - de klassieke manier om een product plat te leggen tijdens een deploy die triviaal leek.
 
 ## Hoe Ver Het de Moeite Waard Is
 
@@ -90,7 +90,7 @@ De andere prioritering is op gevaar. Dubbelzinnige geldkolommen, ontbrekende for
 
 ## Schrijf Het Op Waar de Tools Het Vinden
 
-Zodra er conventies zijn, leg ze vast in de repository — een kort bestand, tien regels, met de regels.
+Zodra er conventies zijn, leg ze vast in de repository - een kort bestand, tien regels, met de regels.
 
 Dat zorgt ervoor dat ze overleven. Een menselijke opdrachtnemer leest het. Een AI-assistent leest het ook, als uw project een bestand met regels of instructies bijhoudt, en het verschil in wat een codeeragent oplevert wanneer hij de conventies heeft meegekregen, is substantieel en direct.
 
@@ -100,11 +100,11 @@ Neem de woordenschat op naast de syntaxis: de woorden die uw product voor zijn c
 
 Eén schemabeslissing is echt moeilijk terug te draaien, en AI-tools nemen haar voor u zonder het te noemen: wat uw primaire sleutels zijn.
 
-Oplopende gehele getallen zijn compact, sorteren vanzelf en lezen makkelijk in een supportgesprek. Ze verraden ook uw volume — een klant wiens factuur nummer 412 heeft, weet ongeveer hoeveel facturen u hebt uitgegeven — en ze maken identificaties te raden, wat ertoe doet voor alles wat in een URL verschijnt.
+Oplopende gehele getallen zijn compact, sorteren vanzelf en lezen makkelijk in een supportgesprek. Ze verraden ook uw volume - een klant wiens factuur nummer 412 heeft, weet ongeveer hoeveel facturen u hebt uitgegeven - en ze maken identificaties te raden, wat ertoe doet voor alles wat in een URL verschijnt.
 
 Willekeurige identificaties zoals UUID's lekken niets en kunnen door de client worden gegenereerd voordat een rij bestaat, wat sommige processen vereenvoudigt. De oudere willekeurige varianten verspreiden schrijfacties over een index, wat bij grote tabellen pijn doet; de nieuwere, op tijd geordende varianten vermijden dat en zijn de verstandige standaard voor een nieuw project.
 
-De praktische middenweg waar de meeste producten uiteindelijk naartoe willen: een willekeurige identificatie als primaire sleutel, plus een aparte referentie voor mensen bij dingen waar mensen over praten — een factuurnummer, een ticketnummer, een bestelcode — gegenereerd uit een eigen teller en zo opgemaakt dat het goed is voor te lezen aan de telefoon.
+De praktische middenweg waar de meeste producten uiteindelijk naartoe willen: een willekeurige identificatie als primaire sleutel, plus een aparte referentie voor mensen bij dingen waar mensen over praten - een factuurnummer, een ticketnummer, een bestelcode - gegenereerd uit een eigen teller en zo opgemaakt dat het goed is voor te lezen aan de telefoon.
 
 Beslis dit vroeg, want het type van een primaire sleutel veranderen op een tabel met echte data en meerdere foreign keys die ernaar verwijzen, is een van de weinige migraties die echt pijnlijk is in plaats van alleen tijdrovend.
 
@@ -128,18 +128,18 @@ De fout die het werk afdwong: een installateur paste het adres van een klant aan
 
 Vier werkdagen: een volledige schema-inventarisatie met elk duplicaat en synoniem benoemd; een conventiebestand gecommit in de repository over naamgeving van tabellen en kolommen, tijdstempels, booleans, geld en de woordenschat van het product; de drie klanttabellen samengevoegd tot één `customers`-tabel met een contactentabel eronder, gemigreerd via de volgorde toevoegen-naar-beide-schrijven-omzetten-verwijderen zonder downtime; elf kolommen hernoemd voor consistentie; een kommagescheiden tekstkolom `services` genormaliseerd naar een echte tabel met een join; negen ontbrekende foreign keys gedeclareerd, wat 340 verweesde servicerecords blootlegde die werden beoordeeld en opnieuw gekoppeld of gearchiveerd; vier tijdstempelkolommen omgezet naar tijdzonebewust; twee `amount`-kolommen hernoemd en omgezet van kommagetal naar gehele getallen in de kleinste eenheid, wat een al lang bestaand verschil van één cent in factuurtotalen oploste; en gegenereerde types opnieuw gegenereerd in de hele applicatie.
 
-**Resultaat:** de fout met de drie adressen werd structureel onmogelijk. Barend vertelt dat het waardevollere resultaat de snelheid van veranderen was — een opdrachtnemer die hij de maand erna inhuurde, was op dag één productief in plaats van twee dagen te vragen welke tabel leidend was, en zijn AI-sessies stopten met het verzinnen van nieuwe kolomnamen omdat het conventiebestand nu deel uitmaakt van de projectinstructies.
+**Resultaat:** de fout met de drie adressen werd structureel onmogelijk. Barend vertelt dat het waardevollere resultaat de snelheid van veranderen was - een opdrachtnemer die hij de maand erna inhuurde, was op dag één productief in plaats van twee dagen te vragen welke tabel leidend was, en zijn AI-sessies stopten met het verzinnen van nieuwe kolomnamen omdat het conventiebestand nu deel uitmaakt van de projectinstructies.
 
 > *"Ik had drie tabellen met klanten omdat ik elke keer dat ik om een functie vroeg een nieuwe tabel kreeg, en elke tabel was een redelijk antwoord op de vraag die ik die dag had gesteld."*
-> — **Barend Kloosterman, Oprichter, Serviceplan (Doetinchem)**
+> - **Barend Kloosterman, Oprichter, Serviceplan (Doetinchem)**
 
-**Kosten & Doorlooptijd:** €3.400 (schema-inventarisatie, documentatie van conventies, samenvoegen van entiteiten met migratie zonder downtime, normalisatie, herstel van foreign keys, correcties van tijdstempel- en geldtypes, opnieuw genereren van types) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (schema-inventarisatie, documentatie van conventies, samenvoegen van entiteiten met migratie zonder downtime, normalisatie, herstel van foreign keys, correcties van tijdstempel- en geldtypes, opnieuw genereren van types) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Doet naamgeving er echt toe als de app werkt?
 
-Het doet ertoe voor elke wijziging hierna. Een inconsistent schema vertraagt mensen, verslechtert gegenereerde tooling, en zorgt ervoor dat AI-assistenten nog een conventie verzinnen — en zo krijgt u vier namen voor één idee.
+Het doet ertoe voor elke wijziging hierna. Een inconsistent schema vertraagt mensen, verslechtert gegenereerde tooling, en zorgt ervoor dat AI-assistenten nog een conventie verzinnen - en zo krijgt u vier namen voor één idee.
 
 ### Welke naamgevingsconventie moet ik gebruiken?
 
@@ -151,7 +151,7 @@ Voeg de nieuwe toe, schrijf naar beide en vul aan, zet het lezen om en deploy, e
 
 ### Moet ik het hele schema in één keer repareren?
 
-Nee. Repareer wat u aanraakt — de tabellen achter uw hoofdschermen — plus alles wat gevaarlijk is: dubbelzinnige geldkolommen, ontbrekende foreign keys, tijdstempels zonder zone, gedupliceerde entiteiten.
+Nee. Repareer wat u aanraakt - de tabellen achter uw hoofdschermen - plus alles wat gevaarlijk is: dubbelzinnige geldkolommen, ontbrekende foreign keys, tijdstempels zonder zone, gedupliceerde entiteiten.
 
 ### Hoe voorkom ik dat de inconsistentie terugkomt?
 
@@ -167,7 +167,7 @@ Schrijf de conventies in een bestand in de repository, inclusief de woordenschat
       "name": "Doet databasenaamgeving ertoe als de app al werkt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het raakt elke toekomstige wijziging — de snelheid van mensen, gegenereerde tooling, en wat AI-assistenten opleveren als er geen patroon te volgen is."
+        "text": "Het raakt elke toekomstige wijziging - de snelheid van mensen, gegenereerde tooling, en wat AI-assistenten opleveren als er geen patroon te volgen is."
       }
     },
     {
@@ -191,7 +191,7 @@ Schrijf de conventies in een bestand in de repository, inclusief de woordenschat
       "name": "Moet ik een heel schema in één keer repareren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — repareer de tabellen die u echt aanraakt, plus wat echt gevaarlijk is: dubbelzinnige geldkolommen, ontbrekende foreign keys, tijdstempels zonder zone, gedupliceerde entiteiten."
+        "text": "Nee - repareer de tabellen die u echt aanraakt, plus wat echt gevaarlijk is: dubbelzinnige geldkolommen, ontbrekende foreign keys, tijdstempels zonder zone, gedupliceerde entiteiten."
       }
     },
     {

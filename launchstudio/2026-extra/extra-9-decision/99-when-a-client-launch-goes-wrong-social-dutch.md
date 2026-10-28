@@ -3,7 +3,7 @@
 Een incident op lanceringsdag is in de eerste plaats een communicatiecrisis, pas daarna een technisch probleem: 📞
 
 ❌ De klant direct geruststellen vóórdat u iets weet, om tien minuten later gecorrigeerd te worden
-❌ Radiostilte bewaren terwijl u wacht op het complete plaatje — stilte wordt ervaren als onkunde
+❌ Radiostilte bewaren terwijl u wacht op het complete plaatje - stilte wordt ervaren als onkunde
 ❌ Midden in de paniek wijzen naar fouten in het oorspronkelijke prototype van de klant
 ❌ Hersteltijden beloven waar u zelf niet voor de volle 100% zeker van bent
 

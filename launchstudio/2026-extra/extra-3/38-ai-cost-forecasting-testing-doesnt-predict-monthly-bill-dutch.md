@@ -55,7 +55,7 @@ Het construeren van een bewust realistisch gebruiksscenario – niet uw eigen te
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het construeren van realistische, op gebruik gebaseerde kostenprognoses voordat ze zich verbinden aan een prijsstelling, waarbij specifiek wordt gecorrigeerd voor de kloof tussen ontwikkeling en echt gebruik die dit artikel beschrijft. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om prijsmodellen af te stemmen op daadwerkelijke, duurzame unit economics.
 
-[Krijg een kostenprognose gebaseerd op echte gebruikspatronen, en niet op ontwikkeltesten](https://launchstudio.eu/nl/#calculator) — de kloof tussen de twee is meestal groter dan oprichters verwachten.
+[Krijg een kostenprognose gebaseerd op echte gebruikspatronen, en niet op ontwikkeltesten](https://launchstudio.eu/nl/#calculator) - de kloof tussen de twee is meestal groter dan oprichters verwachten.
 
 ## De gebruikspatronen die de meeste kostenprognoses missen
 
@@ -84,9 +84,9 @@ Zodra TekstVerbeteraar werd gelanceerd, dienden echte klanten regelmatig aanzien
 **Resultaat:** LaunchStudio hielp Lotte bij het construeren van een oprecht realistische gebruiksprognose op basis van daadwerkelijke klantinzendingspatronen die na de lancering werden waargenomen. Dit informeerde een geherstructureerd systeem van prijsniveaus dat de kosten beter afstemde op het daadwerkelijke gebruiksvolume. Hiermee werd het margeprobleem opgelost zonder dat er een abrupte, vertrouwen-schadende prijswijziging voor alle bestaande klanten tegelijk nodig was.
 
 > *"Mijn testalinea's waren misschien honderd woorden elk, omdat dat was wat ik toevallig typte tijdens het bouwen. Echte klanten dienden volledige landingspagina's in, soms duizenden woorden, tegen exact dezelfde prijs die ik had berekend op basis van mijn veel kortere testinvoer."*
-> — **Lotte Bakker, Oprichter, TekstVerbeteraar (Haarlem)**
+> - **Lotte Bakker, Oprichter, TekstVerbeteraar (Haarlem)**
 
-**Kosten en tijdlijn:** € 1.300 (gebruiksprognose en herstructurering van prijzen) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (gebruiksprognose en herstructurering van prijzen) - voltooid in 5 werkdagen.
 
 ---
 
@@ -138,7 +138,7 @@ Herstructureren via gelaagde opties of het behouden van de oude prijs voor besta
       "name": "Geldt deze prognosekloof voor elk type AI-functie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Verschilt aanzienlijk — functies met langere, meer variabele invoer zijn gevoeliger voor deze kloof dan begrensde functies."
+        "text": "Verschilt aanzienlijk - functies met langere, meer variabele invoer zijn gevoeliger voor deze kloof dan begrensde functies."
       }
     },
     {

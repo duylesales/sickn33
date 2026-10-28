@@ -13,7 +13,7 @@ Content Format: Regional Market Analysis
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Jobs in Wageningen: The Agrifood Data Cluster Most Candidates Never Search For",
-  "description": "Wageningen anchors a globally significant agrifood research cluster where machine learning is applied to plant phenotyping, remote sensing, food systems and precision agriculture — a market almost invisible to candidates searching generic AI job terms.",
+  "description": "Wageningen anchors a globally significant agrifood research cluster where machine learning is applied to plant phenotyping, remote sensing, food systems and precision agriculture - a market almost invisible to candidates searching generic AI job terms.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-23",
@@ -34,7 +34,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Wageningen is a town of roughly 40,000 people in the province of Gelderland, and it is the centre of an agrifood research cluster with genuine global standing. For candidates searching generic terms like "machine learning jobs Netherlands", this market is close to invisible — not because it lacks technical work, but because almost none of that work is described using the vocabulary that generic searches match.
+Wageningen is a town of roughly 40,000 people in the province of Gelderland, and it is the centre of an agrifood research cluster with genuine global standing. For candidates searching generic terms like "machine learning jobs Netherlands", this market is close to invisible - not because it lacks technical work, but because almost none of that work is described using the vocabulary that generic searches match.
 
 ## Why a Generic AI Search Misses This Market Almost Completely
 
@@ -91,7 +91,7 @@ The honest summary is that this is a harder applied machine learning environment
 | Data character | Small, seasonal, biologically noisy | Sensor-rich, physically constrained | High-volume, high-precision industrial |
 | Dominant employer | One very large research organisation | Several mid-sized institutes plus spinouts | A few very large firms plus supply chain |
 | Vocabulary barrier for candidates | Very high | Moderate | Low |
-| International exposure | High — global food systems work | High | High |
+| International exposure | High - global food systems work | High | High |
 | Pace | Slower, project and season-driven | Mixed | Faster, product-cycle driven |
 
 The vocabulary barrier row is the one that matters most practically. Wageningen's market is not hidden because it is small; it is hidden because it is described in words candidates do not search.
@@ -102,7 +102,7 @@ Most regional job market advice assumes a spread of employers competing for tale
 
 **Internal mobility matters more than external applications.** Within a large research organisation, moving between groups, institutes and project teams is often easier than entering from outside. Candidates sometimes take a role that is not their ideal fit specifically to get inside, then move. This is a legitimate and common strategy here in a way it is not in a market of many small employers.
 
-**Project funding cycles drive hiring timing.** Research positions frequently appear when a grant is awarded and disappear when it ends. Watching funding announcements gives you several months of advance warning that roles will open — information that simply does not exist in commercially funded markets.
+**Project funding cycles drive hiring timing.** Research positions frequently appear when a grant is awarded and disappear when it ends. Watching funding announcements gives you several months of advance warning that roles will open - information that simply does not exist in commercially funded markets.
 
 **Contract structures differ from commercial norms.** Fixed-term research contracts tied to project duration are standard rather than exceptional. This is not a sign of an unstable employer; it reflects how research funding works. But candidates from commercial backgrounds should understand it before negotiating, and should ask directly about what typically happens at contract end.
 
@@ -112,7 +112,7 @@ Consider a six-person precision agriculture startup that came out of the campus 
 
 They need someone who can build a real pipeline. What they advertise is a "data scientist" role. What they actually need is closer to a data engineer with enough machine learning knowledge to keep the modelling honest, enough patience to work with genuinely messy field data, and enough domain curiosity to ask a plant scientist a sensible question.
 
-They will find this person through the accelerator network, through a Foodvalley event, or through a recommendation from someone at the university — because a generic job board posting would surface fifty candidates optimised for a role that does not match what they need. A candidate who understands this and positions themselves at the intersection of engineering pragmatism and domain interest stands out immediately in a way that a polished but domain-generic CV does not.
+They will find this person through the accelerator network, through a Foodvalley event, or through a recommendation from someone at the university - because a generic job board posting would surface fifty candidates optimised for a role that does not match what they need. A candidate who understands this and positions themselves at the intersection of engineering pragmatism and domain interest stands out immediately in a way that a polished but domain-generic CV does not.
 
 ## The Misconception That This Work Is Less Technical
 
@@ -147,7 +147,7 @@ The Netherlands is, by value, one of the largest agricultural exporters in the w
 
 For a candidate, this has a consequence that is easy to miss when looking at a job posting for a small town in Gelderland: the work often has international reach that the local setting does not suggest. A model built for Dutch greenhouse climate control may be deployed in Spain, Mexico or Kenya. A crop disease detection system trained on European field trials may end up in a food security programme elsewhere. Research projects frequently involve consortium partners across several countries.
 
-This matters for two practical reasons. It means the work carries a portfolio value that travels well, because agrifood technology expertise is in demand in markets far larger than the Dutch one. And it means the day-to-day environment is more international than the town's size implies — project meetings with partners on three continents are ordinary rather than remarkable.
+This matters for two practical reasons. It means the work carries a portfolio value that travels well, because agrifood technology expertise is in demand in markets far larger than the Dutch one. And it means the day-to-day environment is more international than the town's size implies - project meetings with partners on three continents are ordinary rather than remarkable.
 
 ## The Language Question, Answered Honestly
 
@@ -155,7 +155,7 @@ International candidates consistently ask whether Dutch is required, and the hon
 
 Within the university and its research institutes, English is the working language for research. Publications, seminars, project documentation and most team communication run in English, and a substantial share of researchers are international. You can build an entire research career here without Dutch.
 
-The picture shifts once you move toward applied projects with domestic partners. A project working directly with Dutch growers, cooperatives, processors or regional authorities will involve stakeholders who are far more comfortable in Dutch, and field visits, farmer interviews and practical workshops are frequently conducted in Dutch. Candidates who want to work at that applied interface — which is where a lot of the most interesting data comes from — will find Dutch genuinely useful rather than merely socially pleasant.
+The picture shifts once you move toward applied projects with domestic partners. A project working directly with Dutch growers, cooperatives, processors or regional authorities will involve stakeholders who are far more comfortable in Dutch, and field visits, farmer interviews and practical workshops are frequently conducted in Dutch. Candidates who want to work at that applied interface - which is where a lot of the most interesting data comes from - will find Dutch genuinely useful rather than merely socially pleasant.
 
 Startups sit between the two. Internal engineering work runs in English at most of them; customer-facing work with Dutch growers often does not.
 
@@ -179,7 +179,7 @@ Browse current AI, machine learning and data vacancies in and around Wageningen 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who searched and found nothing) Why does a search for AI jobs in Wageningen return so little?
-Because the roles are titled in domain language — plant phenotyping, precision agriculture, horticulture data — rather than AI language. The machine learning content is real; the vocabulary simply does not match what you searched.
+Because the roles are titled in domain language - plant phenotyping, precision agriculture, horticulture data - rather than AI language. The machine learning content is real; the vocabulary simply does not match what you searched.
 
 ### (Scenario: candidate from a tech company) Is agrifood machine learning less technically demanding than industry work?
 Generally the opposite. Small seasonal datasets, biological noise and physical constraints force careful experimental design and uncertainty quantification, which are harder skills than scaling a training run.
@@ -191,7 +191,7 @@ Research positions are usually tied to project funding cycles. This reflects how
 The employer base is narrow, so changing domain usually means changing city. Check whether Arnhem, Nijmegen and Utrecht are realistic for you before committing.
 
 ### (Scenario: candidate wondering how to stand out) What do agrifood startups actually want from a data hire?
-Engineering pragmatism and domain curiosity more than modelling sophistication — someone who can build a reliable pipeline from messy field data and ask a plant scientist a sensible question.
+Engineering pragmatism and domain curiosity more than modelling sophistication - someone who can build a reliable pipeline from messy field data and ask a plant scientist a sensible question.
 
 <script type="application/ld+json">
 {
@@ -202,7 +202,7 @@ Engineering pragmatism and domain curiosity more than modelling sophistication �
     {"@type": "Question", "name": "Is agrifood machine learning less technically demanding than industry work?", "acceptedAnswer": {"@type": "Answer", "text": "Generally the opposite. Small seasonal datasets, biological noise and physical constraints force careful experimental design and uncertainty quantification."}},
     {"@type": "Question", "name": "Why are so many roles here fixed-term?", "acceptedAnswer": {"@type": "Answer", "text": "Research positions are usually tied to project funding cycles, which reflects how research is financed rather than employer instability."}},
     {"@type": "Question", "name": "What is the risk of moving to such a small town for work?", "acceptedAnswer": {"@type": "Answer", "text": "The employer base is narrow, so changing domain usually means changing city. Check the Arnhem, Nijmegen and Utrecht commute radius first."}},
-    {"@type": "Question", "name": "What do agrifood startups actually want from a data hire?", "acceptedAnswer": {"@type": "Answer", "text": "Engineering pragmatism and domain curiosity more than modelling sophistication — someone who can build a reliable pipeline from messy field data."}}
+    {"@type": "Question", "name": "What do agrifood startups actually want from a data hire?", "acceptedAnswer": {"@type": "Answer", "text": "Engineering pragmatism and domain curiosity more than modelling sophistication - someone who can build a reliable pipeline from messy field data."}}
   ]
 }
 </script>

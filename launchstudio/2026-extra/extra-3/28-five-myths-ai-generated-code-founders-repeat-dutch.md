@@ -59,7 +59,7 @@ Geen van deze vijf overtuigingen vereist geavanceerde technische kennis om daadw
 
 [LaunchStudio](https://launchstudio.eu/nl/) pakt elk van deze vijf mythes rechtstreeks aan tijdens gesprekken met oprichters, waarbij geruststellende overtuigingen worden vervangen door concrete, controleerbare antwoorden over het specifieke prototype van een oprichter, ondersteund door Manifera's engineeringdiscipline in meer dan 160 opgeleverde projecten die elke mythe consistent op dezelfde specifieke, terugkerende manieren tegenspreken.
 
-[Krijg het daadwerkelijke antwoord in plaats van de geruststellende versie](https://launchstudio.eu/nl/#contact) — deze vijf mythes zijn controleerbaar, en controleren is meestal minder alarmerend dan de mythes vertraging noodzakelijk doen voelen.
+[Krijg het daadwerkelijke antwoord in plaats van de geruststellende versie](https://launchstudio.eu/nl/#contact) - deze vijf mythes zijn controleerbaar, en controleren is meestal minder alarmerend dan de mythes vertraging noodzakelijk doen voelen.
 
 ## Nog twee mythes die de lijst bijna haalden
 
@@ -81,10 +81,10 @@ Een direct gesprek met LaunchStudio, waarbij elk van deze drie specifieke overtu
 
 **Resultaat:** LaunchStudio dichtte de authenticatiekloof en de twee andere bevindingen uit de beoordeling binnen een enkele gerichte opdracht. Timo merkte achteraf specifiek op dat het herstructureren van zijn eigen overtuigingen tegen concrete controles, in plaats van te blijven vertrouwen op de geruststellende versie, de daadwerkelijke sleutel was die hem ertoe bracht om eindelijk in actie te komen.
 
-> *"Ik hield drie afzonderlijke redenen vast om me hier nog geen zorgen over te maken, en elk van hen bleek troostrijker dan nauwkeurig te zijn zodra iemand het daadwerkelijk controleerde. Het werken van de demo, wachten op inkomsten en aannemen dat het waarschijnlijk prima was zoals dat van iedereen — geen van die waren daadwerkelijk echte redenen, ze voelden gewoon zo."*
-> — **Timo Verheijen, Oprichter, KlantVolger (Breda)**
+> *"Ik hield drie afzonderlijke redenen vast om me hier nog geen zorgen over te maken, en elk van hen bleek troostrijker dan nauwkeurig te zijn zodra iemand het daadwerkelijk controleerde. Het werken van de demo, wachten op inkomsten en aannemen dat het waarschijnlijk prima was zoals dat van iedereen - geen van die waren daadwerkelijk echte redenen, ze voelden gewoon zo."*
+> - **Timo Verheijen, Oprichter, KlantVolger (Breda)**
 
-**Kosten en tijdlijn:** € 1.750 (Launch Ready Pakket, prioritaire omvang) — live in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.750 (Launch Ready Pakket, prioritaire omvang) - live in 7 werkdagen.
 
 ---
 

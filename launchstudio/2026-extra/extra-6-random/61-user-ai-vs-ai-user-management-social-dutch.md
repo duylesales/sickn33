@@ -1,6 +1,6 @@
-⚠️ Mees Kolen bouwde "GebruikersGrip," een ledenportaal voor lokale sportclubs, met Cursor — beheerders zagen een beheerdersdashboard, leden zagen een ledenweergave, alles zag er op het scherm correct rolgescheiden uit. Hij nam aan dat de weergave betekende dat de rechten ook echt waren. 😬
+⚠️ Mees Kolen bouwde "GebruikersGrip," een ledenportaal voor lokale sportclubs, met Cursor - beheerders zagen een beheerdersdashboard, leden zagen een ledenweergave, alles zag er op het scherm correct rolgescheiden uit. Hij nam aan dat de weergave betekende dat de rechten ook echt waren. 😬
 
-"User AI"-personalisatie en echt gebruikersbeheer zijn niet hetzelfde systeem — en ze door elkaar halen is een van de meest voorkomende kloven in door AI gegenereerde apps. 🧠
+"User AI"-personalisatie en echt gebruikersbeheer zijn niet hetzelfde systeem - en ze door elkaar halen is een van de meest voorkomende kloven in door AI gegenereerde apps. 🧠
 
 ❌ De rollen die bepaalden wat elk account *zag*, waren volledig in de frontend gebouwd
 ❌ Elk geauthenticeerd lid kon het profiel van elk ander lid bewerken, inclusief betalings- en factuurgegevens
@@ -11,7 +11,7 @@
 ✅ Handhaaf dit onafhankelijk van wat de interface toont
 ✅ Doorzoek de rest van de app op hetzelfde alleen-in-UI-patroon
 
-Bij **LaunchStudio** behandelen onze in Amsterdam gevestigde technici — gesteund door het team van 120+ engineers van Manifera — deze exacte kloof als een van de eerste dingen die het waard zijn om te controleren in elke door AI gegenereerde codebase. 🛡️
+Bij **LaunchStudio** behandelen onze in Amsterdam gevestigde technici - gesteund door het team van 120+ engineers van Manifera - deze exacte kloof als een van de eerste dingen die het waard zijn om te controleren in elke door AI gegenereerde codebase. 🛡️
 
 Zijn resultaat: GebruikersGrip handhaaft nu autorisatiecontroles aan de serverzijde bij elk lid- en betalingsrecord, specifiek getest tegen de directe-verzoek-omzeiling die sinds de lancering open had gestaan. 🚀
 

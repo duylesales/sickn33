@@ -1,4 +1,4 @@
-🔥 Logan built a prototype using **Bolt** — logan, a research analyst, used **bolt** to build an ai document summarizer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Logan built a prototype using **Bolt** - logan, a research analyst, used **bolt** to build an ai document summarizer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Logan's application achieved silky-smooth performance: Document exports succeeded 100% of the time, even during peak bulk transfers. (€1,450 (API Queuing Package) — production-ready and deployed in 4 business days.). 🚀
+Logan's application achieved silky-smooth performance: Document exports succeeded 100% of the time, even during peak bulk transfers. (€1,450 (API Queuing Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/notion-api-pushing-ai-data-workspaces
 

@@ -1,8 +1,8 @@
-🚨 Tijmen Verhagen's Keurmerkbeheer serves 140 businesses across the Netherlands, Belgium and Germany at €65/month. His app took payments — and issued no invoices. By the end of the first quarter he had made 61 by hand, with three duplicate numbers. 😳
+🚨 Tijmen Verhagen's Keurmerkbeheer serves 140 businesses across the Netherlands, Belgium and Germany at €65/month. His app took payments - and issued no invoices. By the end of the first quarter he had made 61 by hand, with three duplicate numbers. 😳
 
 He had also charged 21% Dutch BTW to nineteen German and Belgian businesses that should have been invoiced under reverse charge. His accountant's clean-up estimate exceeded the cost of fixing the software. Here's what Dutch bookkeeping needs: 🧠
 
-❌ No invoice sequence — numbers made by hand, with duplicates
+❌ No invoice sequence - numbers made by hand, with duplicates
 ❌ Invoices rebuilt from live data instead of stored as they were issued
 ❌ One VAT rate for every customer, regardless of country or business status
 ❌ No VAT number validation and no location evidence captured at checkout

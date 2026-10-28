@@ -1,4 +1,4 @@
-🚨 "AI Video Monitoring Can Simply Replace Attentive Staff Supervision at Similar..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Video Monitoring Can Simply Replace Attentive Staff Supervision at Similar..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Video Monitoring Can Simply Replace Attentive Sta...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

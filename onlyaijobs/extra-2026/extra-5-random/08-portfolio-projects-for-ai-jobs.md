@@ -35,7 +35,7 @@ Content Format: Practical Guide
 }
 </script>
 
-Portfolio projects for AI jobs are supposed to solve a problem every graduate faces: how do you show you can do the work when nobody has paid you to do it yet? Done well, a portfolio turns an application from a list of courses into a conversation about engineering decisions. Done badly — and most are done badly — it adds nothing, because it repeats a tutorial everyone has seen. This guide explains what hiring managers actually look at, how to choose a project worth doing, how to document it so that it can be evaluated in five minutes, and how to use it in interviews.
+Portfolio projects for AI jobs are supposed to solve a problem every graduate faces: how do you show you can do the work when nobody has paid you to do it yet? Done well, a portfolio turns an application from a list of courses into a conversation about engineering decisions. Done badly - and most are done badly - it adds nothing, because it repeats a tutorial everyone has seen. This guide explains what hiring managers actually look at, how to choose a project worth doing, how to document it so that it can be evaluated in five minutes, and how to use it in interviews.
 
 ## Why Most Portfolios Are Ignored
 
@@ -53,7 +53,7 @@ Four qualities make a project stand out, and none of them require exotic techniq
 
 **Honest evaluation.** A baseline, a sensible split, a metric that matches the decision, and a clear statement of what the model does badly.
 
-**Evidence of finishing.** A README a stranger can follow, code that runs, a short write-up, and — if appropriate — a small deployed service with monitoring.
+**Evidence of finishing.** A README a stranger can follow, code that runs, a short write-up, and - if appropriate - a small deployed service with monitoring.
 
 ## Choosing Portfolio Projects for AI Jobs You Actually Want
 
@@ -78,13 +78,13 @@ Your repository should answer, in order:
 5. **What are the limitations?** Be explicit; this section wins interviews.
 6. **How do I run it?** One command, stated dependencies, expected runtime.
 
-Add a diagram if the system has more than two moving parts. Keep the notebook if you like, but put the real code in modules — reviewers read structure as a proxy for how you would work in a team.
+Add a diagram if the system has more than two moving parts. Keep the notebook if you like, but put the real code in modules - reviewers read structure as a proxy for how you would work in a team.
 
 ## Project Ideas That Work by Target Role
 
 **Forecasting and time series.** Predict something local with a real seasonal structure: public transport ridership, energy consumption of a building, library loans, waste collection volumes. Produce prediction intervals, not just point forecasts, and compare against a seasonal naive baseline.
 
-**Computer vision.** Collect your own images — plants, parking spaces, products on a shelf, bicycles at a rack — and build a classifier or detector. Collecting and labelling a few hundred images teaches more than any tutorial, and reviewers notice immediately that the data is yours.
+**Computer vision.** Collect your own images - plants, parking spaces, products on a shelf, bicycles at a rack - and build a classifier or detector. Collecting and labelling a few hundred images teaches more than any tutorial, and reviewers notice immediately that the data is yours.
 
 **NLP and language models.** Build a retrieval assistant over a document set you know well: course materials, municipal regulations, a sports club's rules, open scientific abstracts. Then build an evaluation set of questions with correct answers and measure how often the system is right and grounded.
 
@@ -98,19 +98,19 @@ Each of these can be finished in a handful of weekends, and each produces the ki
 
 European open data is abundant and underused by job seekers. National and municipal open data portals publish transport, environment, housing, mobility and public service data. European institutions publish statistics, energy transparency data and satellite imagery. Research repositories host scientific datasets with clear licences. Many cities publish real-time feeds for public transport, air quality or parking.
 
-Two habits make this data more valuable for a portfolio. First, combine sources: a single dataset is a tutorial, but joining transport data with weather and school holidays is a project. Second, capture data over time: writing a small collector that stores a daily snapshot for a month gives you something nobody else has, and it demonstrates persistence — a quality every hiring manager values.
+Two habits make this data more valuable for a portfolio. First, combine sources: a single dataset is a tutorial, but joining transport data with weather and school holidays is a project. Second, capture data over time: writing a small collector that stores a daily snapshot for a month gives you something nobody else has, and it demonstrates persistence - a quality every hiring manager values.
 
 Check licences before publishing anything, and never republish personal data. If a source prohibits scraping, use its API or choose another source; employers do notice how you obtained your data, and a project built on terms-of-service violations is a liability rather than an asset.
 
 ## Making Your Work Visible
 
-A project nobody sees does not help you. Put the repository link on your CV and in your applications, pin it on your profile, and write one short post explaining what you learned — not a tutorial, but the decisions and surprises. A five-minute recorded demo can also work well for deployed projects. If you are active in a local meetup, offering a short lightning talk about your project is one of the fastest ways to meet people who hire.
+A project nobody sees does not help you. Put the repository link on your CV and in your applications, pin it on your profile, and write one short post explaining what you learned - not a tutorial, but the decisions and surprises. A five-minute recorded demo can also work well for deployed projects. If you are active in a local meetup, offering a short lightning talk about your project is one of the fastest ways to meet people who hire.
 
 ## Using AI Assistants Honestly
 
 Coding assistants are part of normal practice now, and using them for a portfolio project is fine. What matters is that you can explain and defend every part of the result. A reviewer who asks why you chose a particular split, or what happens when a feature is missing at inference time, will quickly discover whether you understand your own repository.
 
-Two habits protect you. First, write the evaluation and the data handling yourself, or at least review them line by line — these are the parts interviews probe. Second, keep a short note in your README about what you used tools for. Honesty here reads as professionalism; a portfolio that is clearly generated but presented as hand-built reads as the opposite.
+Two habits protect you. First, write the evaluation and the data handling yourself, or at least review them line by line - these are the parts interviews probe. Second, keep a short note in your README about what you used tools for. Honesty here reads as professionalism; a portfolio that is clearly generated but presented as hand-built reads as the opposite.
 
 ## Common Mistakes
 
@@ -128,7 +128,7 @@ Every one of these is visible within minutes to an experienced reviewer, and eve
 
 Prepare a three-minute version and a fifteen-minute version. The short version states the problem, the approach, the result and one honest limitation. The long version walks through the decisions: why this data, why this baseline, why this metric, what surprised you, what you would do with more time.
 
-Expect challenges, and treat them as collaboration rather than attack. "Why not a neural network?" is an invitation to explain that a simpler model matched performance with less complexity — a good answer. "How do you know it generalises?" is an invitation to discuss your split and its weaknesses.
+Expect challenges, and treat them as collaboration rather than attack. "Why not a neural network?" is an invitation to explain that a simpler model matched performance with less complexity - a good answer. "How do you know it generalises?" is an invitation to discuss your split and its weaknesses.
 
 Have one story about something that went wrong. Interviewers use portfolio projects mainly to see how you think, and the failure story is usually where the thinking shows.
 
@@ -142,7 +142,7 @@ Keep your project alive for a few months after publishing: fix an issue, add mon
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Every vacancy is shown at its exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-For someone building a portfolio, the board is useful before you write a single line of code: read ten vacancies in the field you want to enter, note which skills and domains recur, and choose a project that speaks to them. It is also useful for finding roles close to where you already live — the platform was built because its founders saw graduates leaving their region for jobs they assumed did not exist nearby, when in fact the employers were simply invisible on general job boards.
+For someone building a portfolio, the board is useful before you write a single line of code: read ten vacancies in the field you want to enter, note which skills and domains recur, and choose a project that speaks to them. It is also useful for finding roles close to where you already live - the platform was built because its founders saw graduates leaving their region for jobs they assumed did not exist nearby, when in fact the employers were simply invisible on general job boards.
 
 To be transparent about scope: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Elsewhere in Europe, combine it with university career services and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
 
@@ -152,7 +152,7 @@ The purpose of a portfolio is not to prove you know machine learning; your degre
 
 ## Portfolios for Career Changers
 
-If you are moving into AI from another profession, your portfolio can do something a graduate's cannot: connect your previous expertise to data work. A nurse who builds a project on rostering or patient flow, a teacher who analyses assessment data, a logistics planner who optimises routes, an accountant who detects anomalies in transactions — each of these is more credible than a generic project, because the problem framing comes from real experience.
+If you are moving into AI from another profession, your portfolio can do something a graduate's cannot: connect your previous expertise to data work. A nurse who builds a project on rostering or patient flow, a teacher who analyses assessment data, a logistics planner who optimises routes, an accountant who detects anomalies in transactions - each of these is more credible than a generic project, because the problem framing comes from real experience.
 
 Two practical notes. First, never use data from your current or former employer without written permission; use public or synthetic data that resembles it instead. Second, make the connection explicit in your write-up: "I chose this problem because I spent six years doing it manually, and here is what the manual process gets wrong." That sentence tells a hiring manager exactly what you bring, and it is the reason many career changers are hired ahead of candidates with more formal AI training.
 
@@ -164,7 +164,7 @@ A master's graduate applying for junior data roles had three portfolio projects:
 
 She replaced them with one project. Her city published open data on bicycle counts at intersections, and the local transport department had complained publicly about unreliable manual counts. She built a model that predicted daily counts from weather, school holidays and events, compared it against a seasonal baseline, and quantified how much of the variance weather explained. She documented that the model performed poorly on rainy weekends and explained why she thought that was: the sensor locations were biased toward commuter routes.
 
-The repository contained a two-page write-up, a clean module structure and a small dashboard. Her next three applications produced two interviews. In both, the conversation began with the bicycle project — and in one, the hiring manager spent twenty minutes discussing sensor bias, because his team faced the same problem with retail footfall data.
+The repository contained a two-page write-up, a clean module structure and a small dashboard. Her next three applications produced two interviews. In both, the conversation began with the bicycle project - and in one, the hiring manager spent twenty minutes discussing sensor bias, because his team faced the same problem with retail footfall data.
 
 ## Key Takeaways
 

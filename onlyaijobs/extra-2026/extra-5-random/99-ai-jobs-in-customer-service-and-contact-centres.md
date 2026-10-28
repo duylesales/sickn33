@@ -58,7 +58,7 @@ Customer service is where most people encounter AI directly, and where the gap b
 
 The pattern across European deployments is consistent. Systems that attempt to replace agents on complex contacts frustrate customers, damage brand trust and produce escalations that take longer than the original contact would have. Systems that help agents work faster deliver measurable benefit and are welcomed by the people using them.
 
-The reason is the distribution of contacts. A minority are simple and repetitive; the majority involve either a problem the customer could not solve themselves — which is why they are contacting you — or an emotional context that requires judgement.
+The reason is the distribution of contacts. A minority are simple and repetitive; the majority involve either a problem the customer could not solve themselves - which is why they are contacting you - or an emotional context that requires judgement.
 
 Automating the simple tail is worthwhile and finite. The remainder is better served by giving a person the right information quickly.
 
@@ -74,7 +74,7 @@ The practical difficulties are specific. Customers describe problems in their ow
 
 This is why annotation quality, as described in its own guide, determines the ceiling here. If experienced agents disagree about which category a contact belongs to, no model will do better, and the useful intervention is to fix the taxonomy.
 
-Urgency detection deserves care. Identifying contacts that need immediate attention — vulnerable customers, safety issues, regulatory deadlines — has real consequences when it fails, and these are precisely the rare classes that aggregate metrics conceal.
+Urgency detection deserves care. Identifying contacts that need immediate attention - vulnerable customers, safety issues, regulatory deadlines - has real consequences when it fails, and these are precisely the rare classes that aggregate metrics conceal.
 
 Routing systems should also degrade sensibly: when uncertain, route to a general queue rather than guessing, because a misrouted contact costs more than an unrouted one.
 
@@ -112,7 +112,7 @@ The distinction that works in practice is between monitoring conditions and moni
 
 Behind every contact centre is a scheduling problem with immediate financial and service consequences, and it is a classical operations domain that employs analysts continuously.
 
-The forecasting task is to predict contact volume by channel, language, skill and interval — often in fifteen or thirty minute buckets — days to months ahead. The patterns are strongly seasonal at several levels, sensitive to marketing campaigns, billing cycles, product releases, weather and events, and subject to spikes when something goes wrong elsewhere in the business.
+The forecasting task is to predict contact volume by channel, language, skill and interval - often in fifteen or thirty minute buckets - days to months ahead. The patterns are strongly seasonal at several levels, sensitive to marketing campaigns, billing cycles, product releases, weather and events, and subject to spikes when something goes wrong elsewhere in the business.
 
 Scheduling then assigns staff to shifts subject to labour agreements, skill requirements, part-time contracts, break rules and employee preferences. In much of Europe collective agreements and working time rules constrain this substantially, and a mathematically optimal roster that ignores them is unusable.
 
@@ -142,7 +142,7 @@ Engineers who raise these at design stage are valued. Those who discover them af
 
 ## Who Hires Across Europe
 
-**Large service organisations** — telecoms, utilities, banks, insurers, retailers, travel companies and public bodies — which run their own customer operations and increasingly employ data teams within them.
+**Large service organisations** - telecoms, utilities, banks, insurers, retailers, travel companies and public bodies - which run their own customer operations and increasingly employ data teams within them.
 
 **Outsourced contact centre providers**, a substantial European industry with operations concentrated in Portugal, Poland, the Baltics, Greece, Ireland and elsewhere, serving clients in many languages.
 
@@ -154,7 +154,7 @@ Engineers who raise these at design stage are valued. Those who discover them af
 
 **Consultancies** advising on customer operations transformation.
 
-Team structures vary. In service organisations, data roles often sit inside customer operations rather than in a central data function, which means close proximity to the business and sometimes limited technical peer support — the situation described in the guide on working as the only data person.
+Team structures vary. In service organisations, data roles often sit inside customer operations rather than in a central data function, which means close proximity to the business and sometimes limited technical peer support - the situation described in the guide on working as the only data person.
 
 Geographically the work is widely distributed, since customer operations exist wherever customers do, which makes it accessible outside major technology centres.
 
@@ -172,7 +172,7 @@ Spending an hour listening to recorded calls, if an employer will allow it, chan
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Roles here appear under varied titles — conversational AI engineer, customer analytics specialist, workforce planning analyst, NLP engineer — so read descriptions rather than filtering on titles. The text also distinguishes product engineering at a vendor from operational analytics inside a service organisation, which are different working lives.
+Roles here appear under varied titles - conversational AI engineer, customer analytics specialist, workforce planning analyst, NLP engineer - so read descriptions rather than filtering on titles. The text also distinguishes product engineering at a vendor from operational analytics inside a service organisation, which are different working lives.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Mollie, Sendcloud, Accenture, Cegeka and Boltrics among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

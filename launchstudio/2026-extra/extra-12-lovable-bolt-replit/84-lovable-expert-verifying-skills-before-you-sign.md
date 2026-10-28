@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"Experienced with Lovable and Supabase" appears on a great many profiles, and a founder who cannot read code has no way to test it. The usual substitutes — a portfolio, a confident conversation, a reasonable price — are weak signals, and the cost of being wrong is a month and several thousand euros.
+"Experienced with Lovable and Supabase" appears on a great many profiles, and a founder who cannot read code has no way to test it. The usual substitutes - a portfolio, a confident conversation, a reasonable price - are weak signals, and the cost of being wrong is a month and several thousand euros.
 
 There are better checks, and they are available to anyone regardless of technical knowledge. They take about two hours in total.
 
@@ -56,11 +56,11 @@ A supplier who cannot produce a reference for a completed engagement is telling 
 
 The single most reliable check, and the one most founders skip because it feels like an extra step.
 
-Give them a small, real, bounded piece of work — a day or two, paid at their normal rate. Not a test, not free work: a genuine task you need done.
+Give them a small, real, bounded piece of work - a day or two, paid at their normal rate. Not a test, not free work: a genuine task you need done.
 
 Choose something with a clear outcome and some judgement in it: fix a specific bug, add a defined feature, or produce an assessment of the product with findings and estimates.
 
-Then judge what comes back on four things. Did they do what was asked, or what they preferred? Did they ask good questions or none? Can they explain what they did in terms you understand? And what did they leave — a change you can read, or a change you have to trust?
+Then judge what comes back on four things. Did they do what was asked, or what they preferred? Did they ask good questions or none? Can they explain what they did in terms you understand? And what did they leave - a change you can read, or a change you have to trust?
 
 Two days tells you more than any interview, and if it goes badly you have spent a day's rate rather than a month's.
 
@@ -70,7 +70,7 @@ Three signals founders over-weight.
 
 **A portfolio of screenshots.** They show that something was built and nothing about how, by whom, or whether it still works.
 
-**Years of experience.** Someone with fifteen years who has never worked on an AI-built codebase may be less useful here than someone with four who has done it repeatedly — the problems are specific.
+**Years of experience.** Someone with fifteen years who has never worked on an AI-built codebase may be less useful here than someone with four who has done it repeatedly - the problems are specific.
 
 **Confidence.** The most confident supplier in a set of three is not more likely to be the best one, and in our experience is slightly less likely.
 
@@ -98,7 +98,7 @@ Six things that, in our experience of watching these engagements, predict a poor
 
 **A quote before reading the code.** An estimate for work nobody has looked at is a number attached to an assumption.
 
-**A rebuild proposed immediately.** Occasionally correct, usually a preference for starting fresh rather than reading someone else's structure — and it discards the thing your prototype established.
+**A rebuild proposed immediately.** Occasionally correct, usually a preference for starting fresh rather than reading someone else's structure - and it discards the thing your prototype established.
 
 **Dismissiveness about the tools.** A supplier who opens by explaining that AI-generated code is worthless has told you they will not work with what you have.
 
@@ -128,9 +128,9 @@ And one that founders under-weight: whether you can talk to them easily. An enga
 
 ## Setting This Up
 
-Before signing anything: five questions whose answers you can evaluate — first checks, the slow page, handling customer data, what they would not do, and how you maintain it afterwards; one reference call with someone still running a product they worked on, asking what was left behind, what happened when something went wrong, and whether they would repeat it; a small paid trial of real bounded work judged on whether they did what was asked, the questions they asked, whether they can explain it, and what they left; and a deliberate discounting of portfolios, years, confidence and price.
+Before signing anything: five questions whose answers you can evaluate - first checks, the slow page, handling customer data, what they would not do, and how you maintain it afterwards; one reference call with someone still running a product they worked on, asking what was left behind, what happened when something went wrong, and whether they would repeat it; a small paid trial of real bounded work judged on whether they did what was asked, the questions they asked, whether they can explain it, and what they left; and a deliberate discounting of portfolios, years, confidence and price.
 
-LaunchStudio will do an assessment as that trial — a day or two, paid, producing a written report you own whatever you decide next. The engineers are Manifera's — eleven years, 160+ projects, 120+ engineers, from Amsterdam and Ho Chi Minh City.
+LaunchStudio will do an assessment as that trial - a day or two, paid, producing a written report you own whatever you decide next. The engineers are Manifera's - eleven years, 160+ projects, 120+ engineers, from Amsterdam and Ho Chi Minh City.
 
 [Ask us for the assessment first](https://launchstudio.eu/en/#contact) and judge us on it.
 
@@ -151,9 +151,9 @@ Two business days with a different supplier, then the work: a paid assessment of
 **Result:** the second engagement cost €5,900 and took nine business days, and Erwin can maintain the result because a handover was part of it. His assessment is that the day of assessment and the two hours of checking would have saved him five weeks and €8,200.
 
 > *"I picked the one who sounded most certain and was free that week. He rebuilt my frontend in a framework he preferred, and the security work I was paying for was two days at the end."*
-> — **Erwin Batelaan, Founder, Bezorgplanning (Gorinchem)**
+> - **Erwin Batelaan, Founder, Bezorgplanning (Gorinchem)**
 
-**Cost & Timeline:** €6,900 total (€1,000 paid assessment producing a 19-finding report, €5,900 fixed-price remediation covering authorisation across 27 endpoints, storage privatisation, payments and launch with handover) — completed in 9 business days.
+**Cost & Timeline:** €6,900 total (€1,000 paid assessment producing a 19-finding report, €5,900 fixed-price remediation covering authorisation across 27 endpoints, storage privatisation, payments and launch with handover) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -163,7 +163,7 @@ By the specificity of their answers, by one reference call with someone still ru
 
 ### What question is most revealing?
 
-"What are the first three things you would check in an AI-built product?" A competent answer names specifics — keys in the frontend, missing authorisation, public storage. A vague answer about best practices is a poor sign.
+"What are the first three things you would check in an AI-built product?" A competent answer names specifics - keys in the frontend, missing authorisation, public storage. A vague answer about best practices is a poor sign.
 
 ### Should I ask for free work as a test?
 
@@ -195,7 +195,7 @@ Portfolios of screenshots, years of general experience, confidence, and price in
       "name": "What is the most revealing interview question?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "What are the first three things you would check in an AI-built product — a good answer names keys, authorisation and storage specifically."
+        "text": "What are the first three things you would check in an AI-built product - a good answer names keys, authorisation and storage specifically."
       }
     },
     {
@@ -203,7 +203,7 @@ Portfolios of screenshots, years of general experience, confidence, and price in
       "name": "Should I ask candidates for free test work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Pay for a small real task at their normal rate — it respects their time and produces something you need."
+        "text": "No. Pay for a small real task at their normal rate - it respects their time and produces something you need."
       }
     },
     {

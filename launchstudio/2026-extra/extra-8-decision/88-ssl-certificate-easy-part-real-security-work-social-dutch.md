@@ -1,11 +1,11 @@
-🔒 Een enterprise-prospect vroeg om een onafhankelijke beveiligingsscan. Het rapport kwam terug met 6 High en 4 Medium kwetsbaarheden — terwijl hij dacht dat zijn groene slotje betekende dat hij veilig was. 😳
+🔒 Een enterprise-prospect vroeg om een onafhankelijke beveiligingsscan. Het rapport kwam terug met 6 High en 4 Medium kwetsbaarheden - terwijl hij dacht dat zijn groene slotje betekende dat hij veilig was. 😳
 
 Een SSL-certificaat versleutelt alleen het verkeer onderweg. Het zegt niets over wat een pentester écht test: 🧠
 
-❌ Geen Content Security Policy — open deur voor Cross-Site Scripting
+❌ Geen Content Security Policy - open deur voor Cross-Site Scripting
 ❌ CORS-wildcard laat elke website geauthenticeerde API-calls sturen
 ❌ Login-endpoints zonder rate limiting, vatbaar voor credential stuffing
-❌ Row-Level Security standaard uitgeschakeld — elke gebruiker leest alles
+❌ Row-Level Security standaard uitgeschakeld - elke gebruiker leest alles
 
 ✅ Strikte CSP-, CORS- en HSTS-headers op CDN-niveau
 ✅ Redis-gebaseerde rate limiting op elk gevoelig endpoint

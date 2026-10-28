@@ -8,13 +8,13 @@ Generieke try/catch voelt als foutafhandeling. Dat is het niet. Dit ontbreekt ei
 ❌ Geen retry-en-backoff-logica voor tijdelijke storingen die niemand voorzag
 
 ✅ Expliciete time-outs op elke externe aanroep
-✅ Getypeerd foutonderscheid — verschillende storingen hebben verschillende reacties nodig
+✅ Getypeerd foutonderscheid - verschillende storingen hebben verschillende reacties nodig
 ✅ Inputvalidatie VÓÓR de aanroep, niet na een verwarrende weigering
 ✅ Bewust dingen breken om te verifiëren dat het daadwerkelijk werkt
 
-Bij **LaunchStudio** is gestructureerde, dienstspecifieke foutafhandeling standaard wanneer we jouw prototype van vibe coding naar productie brengen — getest door storingen te triggeren die jouw ontwikkelingsproces nooit een reden had om te triggeren. 🛡️
+Bij **LaunchStudio** is gestructureerde, dienstspecifieke foutafhandeling standaard wanneer we jouw prototype van vibe coding naar productie brengen - getest door storingen te triggeren die jouw ontwikkelingsproces nooit een reden had om te triggeren. 🛡️
 
-Zijn resultaat: een bevroren scherm werd "synchronisatie is tijdelijk traag, opgeslagen en synchroniseert automatisch" — stille storing veranderd in vertrouwenbehoudende transparantie. 🚀
+Zijn resultaat: een bevroren scherm werd "synchronisatie is tijdelijk traag, opgeslagen en synchroniseert automatisch" - stille storing veranderd in vertrouwenbehoudende transparantie. 🚀
 
 👉 Laat je foutpaden testen, niet alleen je happy path: https://launchstudio.eu/nl/blog/structured-error-handling-what-ai-coding-tool-skipped
 

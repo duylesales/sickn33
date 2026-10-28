@@ -7,7 +7,7 @@ $750,000 in federal awards in one fiscal year triggers a Single Audit. If your g
 
 **The Manifera Solution:**
 ✅ **Compliance-Structured Systems:** Allowability rules, retention scheduling, and time-and-effort tracking enforced in the platform, not policed manually.
-✅ **Auditor-Ready Trails:** Full transaction history — who, when, under what approval — reconstructable on demand, not from email archaeology.
+✅ **Auditor-Ready Trails:** Full transaction history - who, when, under what approval - reconstructable on demand, not from email archaeology.
 ✅ **Multi-Framework Support:** Built to handle both U.S. Uniform Guidance and EU fund reporting as first-class configurations when your portfolio needs both.
 
 A platform that looks great in a sales demo but can't survive an auditor's document request two years later isn't actually compliant. 🧾

@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Standardized Platform & Pod Architecture:** Builds standardized Golden Paths and centralized Internal Developer Platforms (IDPs), abstracting complex tooling into automated self-service workflows with CI/CD from sprint one.
 ✅ **Amsterdam Strategic Governance & IP Shield:** Our Dutch entity (MANIFERA SOFTWARE DEVELOPMENT PTE LTD) is your legal and technical firewall. Your contract is governed entirely by strict Dutch and European Union laws.
-✅ **Vietnam Deep Engineering Velocity:** The actual coding is executed by our Autonomous Pods in Vietnam. However, because they are full-time Manifera employees operating inside our ISO-standardized, highly secure offices—and strictly governed by the Dutch architects' CI/CD pipelines—they represent zero legal risk to you.
+✅ **Vietnam Deep Engineering Velocity:** The actual coding is executed by our Autonomous Pods in Vietnam. However, because they are full-time Manifera employees operating inside our ISO-standardized, highly secure offices - and strictly governed by the Dutch architects' CI/CD pipelines - they represent zero legal risk to you.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

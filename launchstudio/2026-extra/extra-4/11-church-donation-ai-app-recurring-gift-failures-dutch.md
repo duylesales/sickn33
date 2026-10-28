@@ -49,10 +49,10 @@ Dit is het soort kloof waar LaunchStudio voor bestaat om te dichten. LaunchStudi
 
 Een donatieplatform dat klaar is voor echt, voortdurend gebruik heeft een paar dingen nodig die een prototype standaard bijna nooit heeft:
 
-- **Geautomatiseerde herhaallogica** — een mislukte afschrijving zou het op een verstandig schema opnieuw moeten proberen (gebruikelijk 3, 5 en 7 dagen later) voordat het als echt mislukt wordt gemarkeerd.
-- **Meldingen gericht op de donateur** — een e-mail of SMS die de donateur vertelt dat zijn kaart is geweigerd en hen een optie met één klik geeft om betalingsgegevens bij te werken.
-- **Zichtbaarheid voor het personeel** — een dashboardweergave die mislukte en risicovolle terugkerende giften naar boven brengt, en niet alleen succesvolle, zodat een penningmeester een patroon kan opmerken voordat het twee maanden oud is.
-- **Een afstemmingslogboek** — een duidelijk logboek van elke poging, succes en fout per donateur, zodat niemand hoeft te raden wat er met een specifieke gift is gebeurd.
+- **Geautomatiseerde herhaallogica** - een mislukte afschrijving zou het op een verstandig schema opnieuw moeten proberen (gebruikelijk 3, 5 en 7 dagen later) voordat het als echt mislukt wordt gemarkeerd.
+- **Meldingen gericht op de donateur** - een e-mail of SMS die de donateur vertelt dat zijn kaart is geweigerd en hen een optie met één klik geeft om betalingsgegevens bij te werken.
+- **Zichtbaarheid voor het personeel** - een dashboardweergave die mislukte en risicovolle terugkerende giften naar boven brengt, en niet alleen succesvolle, zodat een penningmeester een patroon kan opmerken voordat het twee maanden oud is.
+- **Een afstemmingslogboek** - een duidelijk logboek van elke poging, succes en fout per donateur, zodat niemand hoeft te raden wat er met een specifieke gift is gebeurd.
 
 Niets hiervan is exotisch. Het is dezelfde categorie werk die betrokken is bij elk abonnementsfacturatiesysteem, en het valt onder [LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/nl/#packages), die doorgaans ver onder wat een traditionele ontwikkelaarswinkel zou offreren voor dezelfde omvang draaien – een verschil dat Manifera kan volhouden vanwege haar schaal, verder gedetailleerd op [Manifera's maatwerk softwareontwikkelingspagina](https://www.manifera.com/services/custom-software-development/).
 
@@ -68,7 +68,7 @@ async function retryFailedGift(giftId) {
   const existingCharge = await stripe.paymentIntents.retrieve(gift.paymentIntentId);
 
   if (existingCharge.status === 'succeeded') {
-    await markGiftPaid(giftId); // het is echt doorgegaan — niet opnieuw afschrijven
+    await markGiftPaid(giftId); // het is echt doorgegaan - niet opnieuw afschrijven
     return;
   }
 
@@ -91,9 +91,9 @@ Een van GavenBeheer's pilot-congregaties merkte op dat hun maandelijkse totaal g
 **Resultaat:** GavenBeheer's pilot-congregatie herstelde twee van de drie verlopen terugkerende giften binnen een week nadat donateurs e-mails voor het bijwerken van hun kaart ontvingen. En het platform vangt betalingsfouten nu op bij de eerste poging in plaats van in de derde gemiste maand.
 
 > *"Ik wist niet eens dat terugkerende betalingen herhaallogica nodig hadden – ik nam gewoon aan dat als de afschrijving één keer mislukte, iemand het zou zien. Niemand zag het, twee maanden lang. Dat is het soort kloof dat je pas vindt als het een congregatie al echt geld heeft gekost."*
-> — **Willem Post, Oprichter, GavenBeheer (Deventer)**
+> - **Willem Post, Oprichter, GavenBeheer (Deventer)**
 
-**Kosten en tijdlijn:** € 650 (Stripe-herhaallogica, donateurmeldingen, markering op beheerdersdashboard) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (Stripe-herhaallogica, donateurmeldingen, markering op beheerdersdashboard) - voltooid in 4 werkdagen.
 
 ---
 

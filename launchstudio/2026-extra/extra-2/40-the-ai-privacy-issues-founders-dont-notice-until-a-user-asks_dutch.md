@@ -35,7 +35,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
 
 ## Waarom verzoeken om accountverwijdering meer onthullen dan ze lijken
 
-Een functie voor "account verwijderen" die simpelweg het inlogrecord van een gebruiker uit de database wist, kan tijdens het testen oprecht compleet aanvoelen — het account verdwijnt, inloggen lukt niet meer, klaar. Waar het doorgaans geen rekening mee houdt: de persoonsgegevens van de gebruiker die verspreid liggen over tal van gerelateerde tabellen — boekingsgeschiedenis, verzonden berichten, geüploade documenten en activiteitenlogs — waarvan niets wordt geraakt door het verwijderen van één enkel accountrecord. Een oprichter die deze functie test, controleert natuurlijk de enige belofte die "account verwijderen" visueel maakt — dat het account weg is en niet langer kan inloggen — zonder enige directe aanleiding om na te gaan of een boekingsrecord dat verwijst naar dat zojuist verwijderde account nog onaangeroerd ergens anders in dezelfde database staat.
+Een functie voor "account verwijderen" die simpelweg het inlogrecord van een gebruiker uit de database wist, kan tijdens het testen oprecht compleet aanvoelen - het account verdwijnt, inloggen lukt niet meer, klaar. Waar het doorgaans geen rekening mee houdt: de persoonsgegevens van de gebruiker die verspreid liggen over tal van gerelateerde tabellen - boekingsgeschiedenis, verzonden berichten, geüploade documenten en activiteitenlogs - waarvan niets wordt geraakt door het verwijderen van één enkel accountrecord. Een oprichter die deze functie test, controleert natuurlijk de enige belofte die "account verwijderen" visueel maakt - dat het account weg is en niet langer kan inloggen - zonder enige directe aanleiding om na te gaan of een boekingsrecord dat verwijst naar dat zojuist verwijderde account nog onaangeroerd ergens anders in dezelfde database staat.
 
 
 ## Waarom de AVG (GDPR) meer vereist dan een verwijderde inlog
@@ -62,12 +62,12 @@ Manifera's gegevensinfrastructuur- en verwijderingswerk wordt geleverd via het o
 
 Een daadwerkelijke, AVG-conforme gegevensverwijdering begint met een systematische inventarisatie van elke locatie waar de persoonsgegevens van een gebruiker kunnen belanden, en niet alleen van de voor de hand liggende hoofdgebruikerstabel. Voor een typisch door AI gebouwd product moet die inventarisatie doorgaans het volgende omvatten:
 
-1. **De primaire gebruikers- of accounttabel** — het vanzelfsprekende startpunt, en de enige plek die de meeste snel in elkaar gezette verwijderfuncties daadwerkelijk leegmaken.
-2. **Gerelateerde tabellen en koppeltabellen** — boekingen, bestellingen, berichten, reviews en elk ander database-record dat via een foreign key naar de gebruiker verwijst in plaats van direct op het accountrecord te staan.
-3. **Geüploade bestanden en objectopslag** — profielfoto's, scans van identiteitsbewijzen of bijlagen die zijn opgeslagen in een externe cloud-opslag (zoals S3) in plaats van in de hoofddatabase. Een script dat zich alleen op de SQL-database richt, slaat deze bestanden volledig over.
-4. **Integraties met externe diensten** — data die is doorgestuurd naar een e-mailmarketingsysteem, een analyseplatform, een betaalprovider of een klantenservicetool. Elk van deze platforms bewaart een kopie buiten uw eigen systeem en vereist een eigen verwijder- of anonimiseringsverzoek.
-5. **Geautomatiseerde back-ups** — gegevens die zijn vastgelegd in reguliere back-ups die zijn gemaakt vóórdat het verwijderverzoek werd verwerkt. Dit vereist een duidelijk gedocumenteerd bewaarbeleid dat vastlegt na hoeveel dagen back-ups definitief worden overschreven.
-6. **Systeem- en foutenlogs** — serverlogs die per ongeluk persoonsgegevens (zoals een e-mailadres in een querystring of een IP-adres in een foutmelding) hebben vastgelegd als bijeffect van normale monitoring.
+1. **De primaire gebruikers- of accounttabel** - het vanzelfsprekende startpunt, en de enige plek die de meeste snel in elkaar gezette verwijderfuncties daadwerkelijk leegmaken.
+2. **Gerelateerde tabellen en koppeltabellen** - boekingen, bestellingen, berichten, reviews en elk ander database-record dat via een foreign key naar de gebruiker verwijst in plaats van direct op het accountrecord te staan.
+3. **Geüploade bestanden en objectopslag** - profielfoto's, scans van identiteitsbewijzen of bijlagen die zijn opgeslagen in een externe cloud-opslag (zoals S3) in plaats van in de hoofddatabase. Een script dat zich alleen op de SQL-database richt, slaat deze bestanden volledig over.
+4. **Integraties met externe diensten** - data die is doorgestuurd naar een e-mailmarketingsysteem, een analyseplatform, een betaalprovider of een klantenservicetool. Elk van deze platforms bewaart een kopie buiten uw eigen systeem en vereist een eigen verwijder- of anonimiseringsverzoek.
+5. **Geautomatiseerde back-ups** - gegevens die zijn vastgelegd in reguliere back-ups die zijn gemaakt vóórdat het verwijderverzoek werd verwerkt. Dit vereist een duidelijk gedocumenteerd bewaarbeleid dat vastlegt na hoeveel dagen back-ups definitief worden overschreven.
+6. **Systeem- en foutenlogs** - serverlogs die per ongeluk persoonsgegevens (zoals een e-mailadres in een querystring of een IP-adres in een foutmelding) hebben vastgelegd als bijeffect van normale monitoring.
 
 Het opstellen van deze datamap is een eenmalige investering die zichzelf direct uitbetaalt zodra er een officieel verwijderverzoek binnenkomt, in plaats van dat er onder tijdsdruk handmatig gezocht moet worden. Het is ook iets dat actueel moet blijven wanneer een nieuwe functie een nieuwe opslaglocatie voor gebruikersdata introduceert.
 
@@ -82,9 +82,9 @@ Een gebruiker die om volledige accountverwijdering vroeg vanwege algemene privac
 **Resultaat:** LaunchStudio bracht elke locatie waar de gebruikersgegevens van HondenMaatje daadwerkelijk leefden in kaart en implementeerde een uitgebreid verwijderingsproces dat elke locatie adresseerde. Dit werd getest tegen echte accounts om volledige verwijdering te bevestigen, wat de kloof sloot en de functie in lijn bracht met de werkelijke AVG-verwijderingsvereisten.
 
 > *"Ik dacht oprecht dat 'account verwijderen' betekende dat alles werd verwijderd. Het was niet bij me opgekomen dat een boeking of een bericht technisch ergens kon leven wat ik überhaupt niet zag als 'het account'."*
-> — **Pim Dekker, Oprichter, HondenMaatje (Purmerend)**
+> - **Pim Dekker, Oprichter, HondenMaatje (Purmerend)**
 
-**Kosten en tijdlijn:** € 2.000 (uitgebreide gegevensinrichting en implementatie van verwijderingsproces) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (uitgebreide gegevensinrichting en implementatie van verwijderingsproces) - voltooid in 7 werkdagen.
 
 ---
 

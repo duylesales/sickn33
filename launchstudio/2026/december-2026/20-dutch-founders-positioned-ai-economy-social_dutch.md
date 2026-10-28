@@ -1,4 +1,4 @@
-🚨 Een Nederlandse oprichter vond zijn eerste klanten én zijn software-partner via hetzelfde BNI-netwerk — geen taalbarrière, geen wachttijden, direct schakelen. 🇳🇱
+🚨 Een Nederlandse oprichter vond zijn eerste klanten én zijn software-partner via hetzelfde BNI-netwerk - geen taalbarrière, geen wachttijden, direct schakelen. 🇳🇱
 
 Waarom Nederlandse ondernemers ideaal gepositioneerd zijn voor de AI-economie: 🧠
 
@@ -7,7 +7,7 @@ Waarom Nederlandse ondernemers ideaal gepositioneerd zijn voor de AI-economie: �
 ✅ Nuchtere, pragmatische cultuur = eerlijke evaluatie van wat AI écht kan bouwen
 ✅ Europese infrastructuur (AMS-IX) = standaard AVG/GDPR-compliant vanaf dag één
 
-💰 Fiscale bonus: de WBSO-regeling verlaagt de engineeringkosten van AI-producten aanzienlijk — en dankzij AI-prototyping bereikt u de subsidiefase binnen weken in plaats van na een jaar fondsenwerving.
+💰 Fiscale bonus: de WBSO-regeling verlaagt de engineeringkosten van AI-producten aanzienlijk - en dankzij AI-prototyping bereikt u de subsidiefase binnen weken in plaats van na een jaar fondsenwerving.
 
 Maar de last-mile kloof blijft bestaan: een sterk netwerk bouwt uw authenticatie, betalingen en database-isolatie niet voor u. 😱
 

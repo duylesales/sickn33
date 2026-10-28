@@ -40,7 +40,7 @@ Content Format: Regional Talent Guide
 }
 </script>
 
-Friesland is known for its lakes, its own language, its dairy farms and its open landscapes. It is rarely mentioned in discussions about AI careers. Yet the province has a growing knowledge economy around water technology, dairy and agri-food, energy and public services, supported by a university campus, universities of applied sciences and a European research institute for water technology. The challenge for the region is not that AI jobs in Friesland don't exist, but that too few graduates know about them — and that many young people leave for Groningen, Amsterdam or Utrecht. This guide is written for regional organisations — the province, municipalities, educational institutions, development agencies and employer networks — that want to attract and keep data talent.
+Friesland is known for its lakes, its own language, its dairy farms and its open landscapes. It is rarely mentioned in discussions about AI careers. Yet the province has a growing knowledge economy around water technology, dairy and agri-food, energy and public services, supported by a university campus, universities of applied sciences and a European research institute for water technology. The challenge for the region is not that AI jobs in Friesland don't exist, but that too few graduates know about them - and that many young people leave for Groningen, Amsterdam or Utrecht. This guide is written for regional organisations - the province, municipalities, educational institutions, development agencies and employer networks - that want to attract and keep data talent.
 
 ## Where AI Jobs in Friesland Are Found
 
@@ -60,7 +60,7 @@ Friesland is known for its lakes, its own language, its dairy farms and its open
 
 **NHL Stenden University of Applied Sciences** trains ICT, data and engineering professionals and has applied research groups working with regional companies, including on computer vision, data science and serious gaming.
 
-**Van Hall Larenstein University of Applied Sciences** focuses on agriculture, food, water and the environment — domains where data science is increasingly important.
+**Van Hall Larenstein University of Applied Sciences** focuses on agriculture, food, water and the environment - domains where data science is increasingly important.
 
 **Wetsus** combines research on water technology with a graduate school and collaboration with companies from across Europe.
 
@@ -83,7 +83,7 @@ These are largely information problems, which regional organisations can address
 
 **Show career paths.** Publish concrete stories of data professionals who built careers in Friesland, from first job to senior roles.
 
-**Treat the North as one labour market.** For many graduates, living in Leeuwarden and working in Groningen — or vice versa — is realistic. Cooperation with Groningen and Drenthe widens the market and makes the region more attractive.
+**Treat the North as one labour market.** For many graduates, living in Leeuwarden and working in Groningen - or vice versa - is realistic. Cooperation with Groningen and Drenthe widens the market and makes the region more attractive.
 
 **Support SMEs.** Help small companies define realistic first AI roles and write vacancies that compete.
 
@@ -93,7 +93,7 @@ These are largely information problems, which regional organisations can address
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It was created because of the problem described in this guide: its founders saw talented people in Noord-Brabant leave for the Randstad because they didn't know the local companies. The platform's design addresses that directly. Each vacancy is shown at its exact address with the distance from the job seeker's home, so a data role at a water technology company in Leeuwarden appears for someone living in Sneek or Groningen. There is no paid placement: a small Frisian employer's vacancy is shown on equal terms with that of a multinational. Browsing is free and requires no account, and applications go directly to the employer's own page.
 
-Listings are currently concentrated in the Netherlands, including nearby Groningen, and employers listing AI and data roles include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies and Holland Innovative. Regional organisations can point students and job seekers to location-first search and encourage employers to list their AI and data vacancies — the first is free via info@onlyaijobs.eu.
+Listings are currently concentrated in the Netherlands, including nearby Groningen, and employers listing AI and data roles include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies and Holland Innovative. Regional organisations can point students and job seekers to location-first search and encourage employers to list their AI and data vacancies - the first is free via info@onlyaijobs.eu.
 
 ## Water Technology Data in Practice
 
@@ -141,7 +141,7 @@ If you live in Friesland and want a data career, start by searching within your 
 
 ## The Role of Educational Institutions
 
-Educational institutions shape retention more than any other actor. When programmes include projects with regional employers, when career services actively present regional organisations and when lecturers use regional data challenges in their courses, graduates are far more likely to stay. NHL Stenden and Van Hall Larenstein have long traditions of practice-oriented education with regional partners, while Campus Fryslân connects academic research with regional questions and Wetsus trains doctoral researchers in close collaboration with companies. Coordinating these efforts — for example through a shared overview of data and AI thesis opportunities in the province — makes it easier for employers to engage and for students to find meaningful regional projects. Institutions can also invite alumni who stayed in the region to speak to students about their careers, which is often more persuasive than any campaign.
+Educational institutions shape retention more than any other actor. When programmes include projects with regional employers, when career services actively present regional organisations and when lecturers use regional data challenges in their courses, graduates are far more likely to stay. NHL Stenden and Van Hall Larenstein have long traditions of practice-oriented education with regional partners, while Campus Fryslân connects academic research with regional questions and Wetsus trains doctoral researchers in close collaboration with companies. Coordinating these efforts - for example through a shared overview of data and AI thesis opportunities in the province - makes it easier for employers to engage and for students to find meaningful regional projects. Institutions can also invite alumni who stayed in the region to speak to students about their careers, which is often more persuasive than any campaign.
 
 ## Common Pitfalls
 
@@ -149,7 +149,7 @@ Regional initiatives sometimes fail because they focus on branding rather than p
 
 ## Telling the Frisian Story
 
-Generic slogans about innovation rarely persuade graduates. Concrete stories do: a data scientist who predicts membrane fouling at a water technology company, a graduate who builds herd-health models for dairy farmers, an analyst who helps a water board prepare for extreme weather, an international graduate who joined an English-speaking team in Leeuwarden. Combined with practical tools for finding jobs by distance, such stories show that meaningful AI careers exist in Friesland — and that leaving is a choice rather than a necessity.
+Generic slogans about innovation rarely persuade graduates. Concrete stories do: a data scientist who predicts membrane fouling at a water technology company, a graduate who builds herd-health models for dairy farmers, an analyst who helps a water board prepare for extreme weather, an international graduate who joined an English-speaking team in Leeuwarden. Combined with practical tools for finding jobs by distance, such stories show that meaningful AI careers exist in Friesland - and that leaving is a choice rather than a necessity.
 
 ## Final Advice
 

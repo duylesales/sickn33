@@ -1,4 +1,4 @@
-🍳 Stef Oostzaan nam zich voor AI-software te bouwen voor SmaakGids, een receptenapp — een custom aanbevelingsengine getraind op zijn eigen data. Na twee maanden joeg hij nog steeds achter nauwkeurigheidswinsten aan die niemand zou opmerken. 😅
+🍳 Stef Oostzaan nam zich voor AI-software te bouwen voor SmaakGids, een receptenapp - een custom aanbevelingsengine getraind op zijn eigen data. Na twee maanden joeg hij nog steeds achter nauwkeurigheidswinsten aan die niemand zou opmerken. 😅
 
 "AI-software bouwen" en "software bouwen die AI gebruikt" klinken hetzelfde, maar zijn compleet andere klussen. 🧠
 

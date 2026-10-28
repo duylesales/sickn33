@@ -20,11 +20,11 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a debt collection agency building a platform for managing agent-debtor contact — calls, messages, letters, across a large, actively worked account portfolio — faces a foundational architecture decision that directly determines whether the platform keeps the agency inside regulated contact limits or exposes it to real legal liability: whether real-time, jurisdiction-aware cadence-limit enforcement is designed into the core contact-management architecture from the start, or treated as a reporting feature to be layered on once basic contact logging is working.
+A CTO at a debt collection agency building a platform for managing agent-debtor contact - calls, messages, letters, across a large, actively worked account portfolio - faces a foundational architecture decision that directly determines whether the platform keeps the agency inside regulated contact limits or exposes it to real legal liability: whether real-time, jurisdiction-aware cadence-limit enforcement is designed into the core contact-management architecture from the start, or treated as a reporting feature to be layered on once basic contact logging is working.
 
 ## Why Naive Contact Logging Produces Genuine Legal Exposure
 
-The most naive approach to contact management — an agent places a call or sends a message, and the system logs the attempt after the fact for later reporting — introduces a real compliance gap directly tied to how contact-frequency and permitted-hours rules actually work: rules like those modeled on the US Fair Debt Collection Practices Act restrict how many contact attempts are permitted within a given window and what hours contact is permitted at all, and a system that only logs attempts retroactively has no way to prevent an agent, whether through oversight or a high-volume dialing tool, from exceeding those limits before the violation has already occurred. Even a moderately sized collections operation, with agents working hundreds of accounts across shifting time zones, produces genuine violations under this model — an agent unaware that a specific account has already received the maximum permitted contacts this week, or a call placed just outside permitted hours due to a debtor's actual local time zone not being correctly reflected in the system, exactly the kind of documented violation that produces real regulatory and litigation exposure for an agency.
+The most naive approach to contact management - an agent places a call or sends a message, and the system logs the attempt after the fact for later reporting - introduces a real compliance gap directly tied to how contact-frequency and permitted-hours rules actually work: rules like those modeled on the US Fair Debt Collection Practices Act restrict how many contact attempts are permitted within a given window and what hours contact is permitted at all, and a system that only logs attempts retroactively has no way to prevent an agent, whether through oversight or a high-volume dialing tool, from exceeding those limits before the violation has already occurred. Even a moderately sized collections operation, with agents working hundreds of accounts across shifting time zones, produces genuine violations under this model - an agent unaware that a specific account has already received the maximum permitted contacts this week, or a call placed just outside permitted hours due to a debtor's actual local time zone not being correctly reflected in the system, exactly the kind of documented violation that produces real regulatory and litigation exposure for an agency.
 
 ## What Real-Time, Jurisdiction-Aware Cadence Enforcement Actually Solves
 
@@ -32,7 +32,7 @@ Real-time cadence-limit enforcement addresses the prevention problem directly: b
 
 ## Why Retrofitting This Onto an Existing Platform Is Genuinely Difficult
 
-A debt collection platform built initially around simple, log-after-the-fact contact tracking, with real-time cadence enforcement planned as a later compliance upgrade, tends to discover that this capability requires architectural decisions woven throughout the core contact-workflow logic — how an account's contact history is structured to support a fast, pre-attempt eligibility check, how agent-facing tools are designed to block or flag an attempt before it's placed rather than after, how jurisdiction determination is integrated into every contact channel an agent might use. Retrofitting this architecture onto a platform already built around a simpler post-hoc logging model is a considerably larger undertaking than designing the contact-workflow architecture around real-time enforcement from the start, often requiring significant rework of core agent-tooling and dialing systems that were built without this architecture in mind.
+A debt collection platform built initially around simple, log-after-the-fact contact tracking, with real-time cadence enforcement planned as a later compliance upgrade, tends to discover that this capability requires architectural decisions woven throughout the core contact-workflow logic - how an account's contact history is structured to support a fast, pre-attempt eligibility check, how agent-facing tools are designed to block or flag an attempt before it's placed rather than after, how jurisdiction determination is integrated into every contact channel an agent might use. Retrofitting this architecture onto a platform already built around a simpler post-hoc logging model is a considerably larger undertaking than designing the contact-workflow architecture around real-time enforcement from the start, often requiring significant rework of core agent-tooling and dialing systems that were built without this architecture in mind.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -64,7 +64,7 @@ Parādu Piedziņa Daugavpils, a Daugavpils-based debt collection agency, had bui
 Manifera's Amsterdam team rebuilt the agency's core contact-workflow architecture around a real-time, pre-attempt eligibility check and reliable jurisdiction determination integrated into every contact channel, restructuring agent-facing tools to block or flag a non-compliant attempt before it could be placed, a substantial rework of dialing and messaging systems that had been built without this architecture in mind.
 
 > *"Our manual sampling review always looked fine because we were only ever checking a handful of accounts by hand. It wasn't until we scaled up and started operating across more jurisdictions that we understood our logging system was never actually built to stop a violation, it was only ever built to record one after it already happened."*
-> — **CTO, Parādu Piedziņa Daugavpils**
+> - **CTO, Parādu Piedziņa Daugavpils**
 
 Parādu Piedziņa Daugavpils's rebuilt platform has operated across its expanded jurisdiction footprint without a single cadence violation flagged in subsequent audits, and the agency now treats real-time compliance enforcement testing, not manual post-hoc sampling, as a standard part of every new jurisdiction rollout.
 
@@ -79,7 +79,7 @@ Parādu Piedziņa Daugavpils's rebuilt platform has operated across its expanded
 
 ## Scoping Your Own Debt Collection Platform's Contact Architecture
 
-Before scaling a debt collection platform's actively worked portfolio across jurisdictions, design the core contact-management architecture around real-time, pre-attempt cadence enforcement from the start — a naive log-after-the-fact model that looks fine in manual sampling review reveals its real problems only under genuine full-portfolio audit, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building compliant, reliable debt collection contact architecture.
+Before scaling a debt collection platform's actively worked portfolio across jurisdictions, design the core contact-management architecture around real-time, pre-attempt cadence enforcement from the start - a naive log-after-the-fact model that looks fine in manual sampling review reveals its real problems only under genuine full-portfolio audit, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building compliant, reliable debt collection contact architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Manual sampling of a small number of accounts rarely surfaces genuine cadence vi
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their contact-compliance architecture experience?
 
-Ask specifically how their system performs a pre-attempt eligibility check and how it determines debtor jurisdiction per account — genuine experience produces a specific, technical answer rather than a general one.
+Ask specifically how their system performs a pre-attempt eligibility check and how it determines debtor jurisdiction per account - genuine experience produces a specific, technical answer rather than a general one.
 
 <script type="application/ld+json">
 {

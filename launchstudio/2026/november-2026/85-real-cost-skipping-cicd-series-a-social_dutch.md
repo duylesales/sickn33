@@ -1,6 +1,6 @@
-🚨 Anders bouwde Fielda, een platform voor het plannen van buitendienstmedewerkers, met **Lovable** — 3.200 betalende gebruikers en een term sheet voor een Series A van €2,8 miljoen, totdat een technisch adviseur één routinevraag stelde over zijn deploymentproces. 🧠
+🚨 Anders bouwde Fielda, een platform voor het plannen van buitendienstmedewerkers, met **Lovable** - 3.200 betalende gebruikers en een term sheet voor een Series A van €2,8 miljoen, totdat een technisch adviseur één routinevraag stelde over zijn deploymentproces. 🧠
 
-Als uw enige deploymentproces een founder is die een script uitvoert vanaf zijn laptop, vindt technische due diligence voor uw Series A dat — en het vertraagt of herprijst uw ronde.
+Als uw enige deploymentproces een founder is die een script uitvoert vanaf zijn laptop, vindt technische due diligence voor uw Series A dat - en het vertraagt of herprijst uw ronde.
 
 ❌ Geen staging-omgeving, geen geautomatiseerde tests, geen gedocumenteerde rollback-procedure
 ❌ Deploymentkennis die alleen in het hoofd van één founder leeft in plaats van een herhaalbare pipeline
@@ -12,7 +12,7 @@ Als uw enige deploymentproces een founder is die een script uitvoert vanaf zijn 
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Anders hief de risicomarkering op vóór de verlengde deadline, en de ronde sloot negen dagen later tegen de oorspronkelijke waardering. (€1.600 (Launch & Grow Pakket) — productieklaar en uitgerold in 7 werkdagen.) 🚀
+Anders hief de risicomarkering op vóór de verlengde deadline, en de ronde sloot negen dagen later tegen de oorspronkelijke waardering. (€1.600 (Launch & Grow Pakket) - productieklaar en uitgerold in 7 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/real-cost-skipping-cicd-series-a
 

@@ -44,7 +44,7 @@ Dit is exact waarom de bug codebeoordelingen overleeft, testen overleeft, en de 
 De herstelling heeft vrijwel altijd dezelfde vorm: vervang N individuele query's door één batch-query met een join of een eager-loading-instructie, afhankelijk van de ORM.
 
 ```javascript
-// N+1 patroon — één query per klant, in een loop
+// N+1 patroon - één query per klant, in een loop
 const customers = await db.customer.findMany();
 for (const customer of customers) {
   customer.orders = await db.order.findMany({
@@ -52,7 +52,7 @@ for (const customer of customers) {
   });
 }
 
-// Hersteld — één batch-query met een join
+// Hersteld - één batch-query met een join
 const customers = await db.customer.findMany({
   include: { orders: true },
 });
@@ -105,9 +105,9 @@ LaunchStudio's ingenieurs herbouwden de kernquery's van het dashboard om eager l
 **Resultaat:** hetzelfde dashboard dat 14 seconden dacht bij 4.000 records laadt nu in minder dan 400 milliseconden, en Yara vangt N+1-regressies nu op voordat ze worden verzonden.
 
 > *"Ik bleef maar aannemen dat het een serverprobleem was. Het kwam nooit bij me op dat de code zelf de database stilletjes duizenden keren om hetzelfde vroeg."*
-> — **Yara Simons, Oprichter, KlantOverzicht (Vlaardingen)**
+> - **Yara Simons, Oprichter, KlantOverzicht (Vlaardingen)**
 
-**Kosten en tijdlijn:** € 750 (query-optimalisatie over kern-dashboardweergaven plus geautomatiseerde regressietesten op query-aantallen) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 750 (query-optimalisatie over kern-dashboardweergaven plus geautomatiseerde regressietesten op query-aantallen) - voltooid in 5 werkdagen.
 
 ---
 

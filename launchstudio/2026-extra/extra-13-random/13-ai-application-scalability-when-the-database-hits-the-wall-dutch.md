@@ -12,7 +12,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Schaalbaarheid van AI-applicaties: Wanneer je database, en niet je code, tegen de muur loopt",
-  "description": "Voor de meeste met AI gebouwde applicaties ligt de eerste schaalbaarheidsgrens in de database, niet in de frontend- of backendcode. Dit artikel legt uit hoe connecties, ontbrekende indexen, N+1 queries, lock contention en almaar uitdijende tabellen ontstaan — en in welke volgorde je ze oplost.",
+  "description": "Voor de meeste met AI gebouwde applicaties ligt de eerste schaalbaarheidsgrens in de database, niet in de frontend- of backendcode. Dit artikel legt uit hoe connecties, ontbrekende indexen, N+1 queries, lock contention en almaar uitdijende tabellen ontstaan - en in welke volgorde je ze oplost.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-13",
@@ -21,23 +21,23 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Wanneer een AI-gebouwde app onder echt gebruik begint te haperen, is de reflex de code de schuld te geven — of de AI-tool die haar schreef — en naar grotere servers te grijpen. In de meeste gevallen die LaunchStudio beoordeelt, is dat de verkeerde diagnose. Schaalbaarheidsproblemen van AI-applicaties in kleine en middelgrote producten beginnen bijna altijd in de database. De applicatieservers staan grotendeels stil, wachtend op query's die te lang duren, te vaak draaien of verbindingen vasthouden die andere verzoeken nodig hebben.
+Wanneer een AI-gebouwde app onder echt gebruik begint te haperen, is de reflex de code de schuld te geven - of de AI-tool die haar schreef - en naar grotere servers te grijpen. In de meeste gevallen die LaunchStudio beoordeelt, is dat de verkeerde diagnose. Schaalbaarheidsproblemen van AI-applicaties in kleine en middelgrote producten beginnen bijna altijd in de database. De applicatieservers staan grotendeels stil, wachtend op query's die te lang duren, te vaak draaien of verbindingen vasthouden die andere verzoeken nodig hebben.
 
 Dit doet ertoe omdat de oplossingen anders zijn. Grotere applicatieservers doen niets voor een trage query. Eén index kan meer doen dan een tienvoudige upgrade van de hosting.
 
 ## Waarom de Database als Eerste de Schaalbaarheid van AI-Applicaties Beperkt
 
-Moderne hosting — Vercel, Netlify, Replit Deployments, Fly.io — schaalt applicatiecode relatief makkelijk. Serverless functies starten meer kopieën naarmate het verkeer groeit. Je database werkt zo niet. Dat is meestal één primaire instantie, met een vast aantal verbindingen en een vaste hoeveelheid geheugen en CPU, gedeeld door elk verzoek dat je app doet.
+Moderne hosting - Vercel, Netlify, Replit Deployments, Fly.io - schaalt applicatiecode relatief makkelijk. Serverless functies starten meer kopieën naarmate het verkeer groeit. Je database werkt zo niet. Dat is meestal één primaire instantie, met een vast aantal verbindingen en een vaste hoeveelheid geheugen en CPU, gedeeld door elk verzoek dat je app doet.
 
 AI-gegenereerde code maakt dit op voorspelbare manieren erger. Modellen schrijven query's die op weinig data correcte resultaten geven, zonder te weten hoe je tabellen zullen groeien. Ze openen terloops verbindingen. Ze halen gerelateerde records één voor één in lussen op. Bij een paar honderd rijen doet niets daarvan ertoe. Bij een paar honderdduizend doet alles ertoe.
 
 ## Grens 1: Geen Verbindingen Meer
 
-Elk verzoek dat met Postgres praat, heeft een verbinding nodig. Databases staan er een beperkt aantal toe — bij kleinere beheerde abonnementen vaak ergens tussen 20 en 100. Serverless functies kunnen elk een eigen verbinding openen, en als er veel tegelijk draaien, raakt de pool uitgeput en mislukken nieuwe verzoeken met fouten als "too many connections" of "remaining connection slots are reserved".
+Elk verzoek dat met Postgres praat, heeft een verbinding nodig. Databases staan er een beperkt aantal toe - bij kleinere beheerde abonnementen vaak ergens tussen 20 en 100. Serverless functies kunnen elk een eigen verbinding openen, en als er veel tegelijk draaien, raakt de pool uitgeput en mislukken nieuwe verzoeken met fouten als "too many connections" of "remaining connection slots are reserved".
 
 **Hoe het eruitziet:** de app werkt voor de eerste golf gebruikers in een drukke periode en faalt voor iedereen daarna.
 
-**De oplossing:** een connection pooler tussen de app en de database — Supabase levert er een, en PgBouncer is de gangbare losse optie — plus zorgen dat de app één client per functie-instantie hergebruikt in plaats van per query een nieuwe aan te maken.
+**De oplossing:** een connection pooler tussen de app en de database - Supabase levert er een, en PgBouncer is de gangbare losse optie - plus zorgen dat de app één client per functie-instantie hergebruikt in plaats van per query een nieuwe aan te maken.
 
 ## Grens 2: Ontbrekende Indexen
 
@@ -45,11 +45,11 @@ Een index laat de database rijen vinden zonder de hele tabel te doorzoeken. AI-g
 
 **Hoe het eruitziet:** specifieke pagina's worden gestaag trager naarmate de data groeit, vooral lijsten en dashboards.
 
-**De oplossing:** voeg indexen toe op de kolommen die in `WHERE`, `JOIN` en `ORDER BY` van je meest voorkomende query's staan. `EXPLAIN ANALYZE` van Postgres laat zien of een query een index gebruikt of de tabel doorzoekt; het dashboard van Supabase toont de traagste query's direct. Indexen zijn niet gratis — ze vertragen schrijven een beetje en kosten ruimte — dus voeg ze toe voor echte querypatronen, niet speculatief.
+**De oplossing:** voeg indexen toe op de kolommen die in `WHERE`, `JOIN` en `ORDER BY` van je meest voorkomende query's staan. `EXPLAIN ANALYZE` van Postgres laat zien of een query een index gebruikt of de tabel doorzoekt; het dashboard van Supabase toont de traagste query's direct. Indexen zijn niet gratis - ze vertragen schrijven een beetje en kosten ruimte - dus voeg ze toe voor echte querypatronen, niet speculatief.
 
 ## Grens 3: De N+1-Query
 
-Een pagina toont twintig berichten, elk met de naam van de auteur. AI-gegenereerde code haalt vaak de twintig berichten in één query op en daarna de auteur van elk bericht in een aparte query — eenentwintig query's voor één pagina. Met honderd items en meerdere relaties kan één paginaweergave honderden query's veroorzaken.
+Een pagina toont twintig berichten, elk met de naam van de auteur. AI-gegenereerde code haalt vaak de twintig berichten in één query op en daarna de auteur van elk bericht in een aparte query - eenentwintig query's voor één pagina. Met honderd items en meerdere relaties kan één paginaweergave honderden query's veroorzaken.
 
 **Hoe het eruitziet:** pagina's die in ontwikkeling snel zijn en in productie traag, ook als afzonderlijke query's snel zijn.
 
@@ -57,7 +57,7 @@ Een pagina toont twintig berichten, elk met de naam van de auteur. AI-gegenereer
 
 ## Grens 4: Strijd om Vergrendelingen
 
-Wanneer veel verzoeken dezelfde rij proberen bij te werken — een teller, een voorraad, een gedeeld document — staan ze achter elkaar in de rij. AI-gegenereerde code werkt vaak bij elke actie samengestelde waarden bij ("verhoog het aantal likes van het bericht") in plaats van ze te berekenen wanneer ze nodig zijn.
+Wanneer veel verzoeken dezelfde rij proberen bij te werken - een teller, een voorraad, een gedeeld document - staan ze achter elkaar in de rij. AI-gegenereerde code werkt vaak bij elke actie samengestelde waarden bij ("verhoog het aantal likes van het bericht") in plaats van ze te berekenen wanneer ze nodig zijn.
 
 **Hoe het eruitziet:** schrijfacties die in drukke periodes trager worden of een time-out geven, terwijl lezen prima gaat.
 
@@ -65,7 +65,7 @@ Wanneer veel verzoeken dezelfde rij proberen bij te werken — een teller, een v
 
 ## Grens 5: Tabellen Die Alleen Maar Groeien
 
-Eventlogs, meldingen, chatberichten, analyse-events — AI-gebouwde apps bewaren ze vaak allemaal voor altijd in de hoofddatabase. Tabellen met tientallen miljoenen rijen maken back-ups trager, herstellen trager en elke niet-geïndexeerde query pijnlijk.
+Eventlogs, meldingen, chatberichten, analyse-events - AI-gebouwde apps bewaren ze vaak allemaal voor altijd in de hoofddatabase. Tabellen met tientallen miljoenen rijen maken back-ups trager, herstellen trager en elke niet-geïndexeerde query pijnlijk.
 
 **Hoe het eruitziet:** geleidelijk stijgende databasegrootte en back-uptijden; opslagkosten die sneller stijgen dan het aantal gebruikers.
 
@@ -119,7 +119,7 @@ Row level security policies hebben ook baat bij indexen: een policy die `organis
 
 Een databaseverbinding is als een telefoonlijn naar de database. Postgres kan maar een beperkt aantal lijnen openhouden. Serverless functies openen vaak bij elke start een nieuwe lijn, en op piekmomenten starten ze bij honderden. Een pooler zit ertussen en verdeelt een kleiner aantal echte lijnen over veel korte verzoeken.
 
-Voor Supabase-projecten betekent dit dat je voor serverless functies de connection string met pooling (transaction mode) gebruikt en directe verbindingen bewaart voor migraties en langlopende taken. Voor ORM's zoals Prisma of Drizzle betekent het ook dat je ze instelt voor gepoolde verbindingen en één client per functie-instantie aanmaakt in plaats van per verzoek. Het is zelden meer dan een configuratiewijziging — en het neemt de meest dramatische faalwijze weg, waarbij de app werkt voor de eerste dertig gebruikers van een druk uur en faalt voor iedereen daarna.
+Voor Supabase-projecten betekent dit dat je voor serverless functies de connection string met pooling (transaction mode) gebruikt en directe verbindingen bewaart voor migraties en langlopende taken. Voor ORM's zoals Prisma of Drizzle betekent het ook dat je ze instelt voor gepoolde verbindingen en één client per functie-instantie aanmaakt in plaats van per verzoek. Het is zelden meer dan een configuratiewijziging - en het neemt de meest dramatische faalwijze weg, waarbij de app werkt voor de eerste dertig gebruikers van een druk uur en faalt voor iedereen daarna.
 
 ## Meten Voor en Na
 
@@ -143,7 +143,7 @@ De gezondheid van de database hoort bij elke Launch & Grow-opdracht: een review 
 
 De engineers die dit werk doen, komen van Manifera, waarvan de teams al 11+ jaar productiedatabases draaien voor enterprisesystemen in Europa en Zuidoost-Azië. Het ontwikkelcentrum van Manifera in Ho Chi Minh-stad werkt dagelijks met PostgreSQL, MySQL, MongoDB, Supabase en Firebase, zoals vermeld op [de technologiepagina van Manifera](https://www.manifera.com/about-us/manifera-technologies/). De [PostgreSQL-documentatie over indexen](https://www.postgresql.org/docs/current/indexes.html) is een uitstekende gratis referentie als je zelf dieper wilt gaan.
 
-Wil je zien wat dit voor je app zou kosten, probeer dan de [prijscalculator](https://launchstudio.eu/nl/#calculator) — "Database/backend" is een van de opties.
+Wil je zien wat dit voor je app zou kosten, probeer dan de [prijscalculator](https://launchstudio.eu/nl/#calculator) - "Database/backend" is een van de opties.
 
 ## Praktijkvoorbeeld
 
@@ -158,9 +158,9 @@ Het team voerde connection pooling en een gedeelde client in, herschreef de disc
 **Resultaat:** De fouten op zondagavond verdwenen volledig. De discussiepagina ging voor de grootste clubs van ongeveer 3,5 seconden naar 180 milliseconden, en de hostingkosten daalden met ongeveer 35% toen de onnodige upgrades waren teruggedraaid.
 
 > *"Ik bleef grotere servers kopen voor een probleem dat ergens anders zat. Vier indexen deden meer dan twee upgrades."*
-> — **Koen Hendriks, Oprichter, Leesclub (Enschede)**
+> - **Koen Hendriks, Oprichter, Leesclub (Enschede)**
 
-**Kosten & Tijdlijn:** € 2.800 (Launch & Grow-pakket: databasereview, pooling, oplossingen voor query's en indexen, archiveren en monitoring) — afgerond in 9 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 2.800 (Launch & Grow-pakket: databasereview, pooling, oplossingen voor query's en indexen, archiveren en monitoring) - afgerond in 9 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
@@ -178,7 +178,7 @@ Ze versnellen leesacties voor de query's waarop ze aansluiten, maar vertragen sc
 
 ### Pakt Manifera grotere databasemigraties op als dat nodig is?
 
-Ja. Wanneer een product zijn opzet ontgroeit — bijvoorbeeld bij de overstap naar read replicas of een andere database — kunnen de full-cycle teams van Manifera die migratie plannen en uitvoeren, met LaunchStudio als startpunt.
+Ja. Wanneer een product zijn opzet ontgroeit - bijvoorbeeld bij de overstap naar read replicas of een andere database - kunnen de full-cycle teams van Manifera die migratie plannen en uitvoeren, met LaunchStudio als startpunt.
 
 ### Heeft de prestatie van de database invloed op SEO en AI-antwoordmachines?
 

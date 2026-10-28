@@ -41,7 +41,7 @@ The classic AI-generated flow: read how many tickets remain, check if it is grea
 
 ## Decision 2: How Long Are Tickets Held During Checkout?
 
-When a buyer starts checkout, their tickets must be held so nobody else can buy them — but not forever, or abandoned checkouts lock inventory during the rush.
+When a buyer starts checkout, their tickets must be held so nobody else can buy them - but not forever, or abandoned checkouts lock inventory during the rush.
 
 **The decision:** hold for a defined time (often 8–15 minutes), show a countdown, release automatically on expiry and handle the edge case where payment completes just after a hold expires. That last case needs a rule: honour the payment if seats remain, refund automatically if not.
 
@@ -49,11 +49,11 @@ When a buyer starts checkout, their tickets must be held so nobody else can buy 
 
 For small events, atomic inventory and holds may be enough. For events where demand greatly exceeds supply, letting everyone hit the checkout at once overwhelms the database and payment integration and produces a frustrating experience.
 
-**The decision:** consider a waiting room — buyers are placed in a queue and admitted in batches at a rate the system can handle. This can be a managed service or a simple implementation using a fast key-value store. Either way, it turns a stampede into a line.
+**The decision:** consider a waiting room - buyers are placed in a queue and admitted in batches at a rate the system can handle. This can be a managed service or a simple implementation using a fast key-value store. Either way, it turns a stampede into a line.
 
 ## Decision 4: How Are Payments Confirmed Under Load?
 
-Payment providers handle load well; the risk is in how your app processes their responses. Browser-based confirmation fails when thousands of buyers are redirected at once and some never return. Webhooks must be verified, processed idempotently (providers retry) and handled quickly — ideally by placing them on a queue and processing in the background — so a burst of confirmations does not time out.
+Payment providers handle load well; the risk is in how your app processes their responses. Browser-based confirmation fails when thousands of buyers are redirected at once and some never return. Webhooks must be verified, processed idempotently (providers retry) and handled quickly - ideally by placing them on a queue and processing in the background - so a burst of confirmations does not time out.
 
 ## Decision 5: How Do You Handle Bots and Resellers?
 
@@ -106,7 +106,7 @@ WHERE event_id = $2 AND seat_id = ANY($3) AND status = 'free';
 COMMIT;
 ```
 
-After payment is confirmed by webhook, the held seats move to `sold` for that order. A scheduled job releases expired holds every minute. Because the status check and the update happen in one statement, two buyers can never hold the same seat — no matter how many arrive in the same second.
+After payment is confirmed by webhook, the held seats move to `sold` for that order. A scheduled job releases expired holds every minute. Because the status check and the update happen in one statement, two buyers can never hold the same seat - no matter how many arrive in the same second.
 
 ## Designing the Waiting Room
 
@@ -114,7 +114,7 @@ A waiting room protects both the system and the buyer experience. Key design cho
 
 ## Bot Defences in Proportion
 
-Heavy anti-bot systems add friction for genuine fans. A proportionate approach layers simple measures: purchase limits per account, payment card and address; rate limits per IP and session; CAPTCHA challenges only for suspicious patterns; verified accounts (email plus phone) for high-demand events; and named tickets with transfer through the platform where resale is a concern. Monitor purchase patterns after each on-sale — clusters of accounts sharing cards or addresses reveal what the defences missed.
+Heavy anti-bot systems add friction for genuine fans. A proportionate approach layers simple measures: purchase limits per account, payment card and address; rate limits per IP and session; CAPTCHA challenges only for suspicious patterns; verified accounts (email plus phone) for high-demand events; and named tickets with transfer through the platform where resale is a concern. Monitor purchase patterns after each on-sale - clusters of accounts sharing cards or addresses reveal what the defences missed.
 
 ## Refunds, Cancellations and Event Changes
 
@@ -126,15 +126,15 @@ The on-sale is only half the problem; the door is the other. QR codes must be un
 
 ## Load Testing That Reflects Reality
 
-Load tests should mimic real on-sale behaviour: thousands of users arriving within the first minute, refreshing the event page, entering the waiting room, holding seats and paying — with a realistic share abandoning checkout. Test with production-like data volumes on staging, measure database locks and connection use, and repeat after significant changes. The goal is not a single impressive number but confidence that the specific on-sale you are about to run will behave as expected.
+Load tests should mimic real on-sale behaviour: thousands of users arriving within the first minute, refreshing the event page, entering the waiting room, holding seats and paying - with a realistic share abandoning checkout. Test with production-like data volumes on staging, measure database locks and connection use, and repeat after significant changes. The goal is not a single impressive number but confidence that the specific on-sale you are about to run will behave as expected.
 
 ## Communicating With Fans During the Rush
 
-Clear communication reduces both frustration and load. Announce the on-sale time and the waiting room in advance; show buyers their position and what happens next; display remaining availability honestly (or not at all, rather than inaccurately); explain hold timers in checkout; and send confirmation emails quickly via a transactional provider that can handle the burst. When an event sells out, say so immediately and point to a waiting list — buyers who keep refreshing a sold-out page generate load and disappointment.
+Clear communication reduces both frustration and load. Announce the on-sale time and the waiting room in advance; show buyers their position and what happens next; display remaining availability honestly (or not at all, rather than inaccurately); explain hold timers in checkout; and send confirmation emails quickly via a transactional provider that can handle the burst. When an event sells out, say so immediately and point to a waiting list - buyers who keep refreshing a sold-out page generate load and disappointment.
 
 ## Reports Venues Need After the On-Sale
 
-Venues and promoters want to know how the sale went: tickets sold per minute, peak queue length, conversion from waiting room to purchase, abandoned holds, payment methods used and purchase limits triggered. These reports help them plan the next event's capacity, pricing and marketing — and they show that your platform handled the busiest minute of their year in a measured, reliable way.
+Venues and promoters want to know how the sale went: tickets sold per minute, peak queue length, conversion from waiting room to purchase, abandoned holds, payment methods used and purchase limits triggered. These reports help them plan the next event's capacity, pricing and marketing - and they show that your platform handled the busiest minute of their year in a measured, reliable way.
 
 ## Operating the On-Sale Like an Event
 
@@ -142,7 +142,7 @@ Treat each high-demand on-sale as an operational event, with a short runbook: fi
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's ticketing work covers atomic inventory, holds, webhook processing, caching, bot defences and a waiting room where needed, followed by a load test and monitoring — under the interface you already built. With managed hosting at €49 per month, on-sale days are watched rather than hoped through.
+LaunchStudio's ticketing work covers atomic inventory, holds, webhook processing, caching, bot defences and a waiting room where needed, followed by a load test and monitoring - under the interface you already built. With managed hosting at €49 per month, on-sale days are watched rather than hoped through.
 
 LaunchStudio is backed by Manifera, whose 120+ engineers across Ho Chi Minh City, Singapore and Amsterdam have built systems for enterprise clients such as Vodafone, where load and reliability are non-negotiable. For more on Manifera's engineering approach, see [Manifera's technologies page](https://www.manifera.com/about-us/manifera-technologies/). The [PostgreSQL documentation on explicit locking](https://www.postgresql.org/docs/current/explicit-locking.html) explains the database side of inventory control.
 
@@ -158,12 +158,12 @@ When a well-known Dutch band announced an intimate show at a 450-seat venue, 6,0
 
 LaunchStudio's engineers modelled each seat as a row with a unique hold/order constraint, added 10-minute holds with automatic release and a late-payment rule, moved Mollie webhooks to a verified, idempotent queue, cached event pages with a lightweight availability endpoint, added a waiting room for events flagged as high demand, introduced per-account and per-card limits with rate limiting, and ran a load test simulating 10,000 buyers against staging before the venue's next major on-sale.
 
-**Result:** The venue's next sold-out show — 450 seats, around 7,500 buyers in the first minute — sold out in four minutes with no overselling, no unissued tickets and no single account buying more than four. Zaalkaart has since added nine venues, several citing that on-sale.
+**Result:** The venue's next sold-out show - 450 seats, around 7,500 buyers in the first minute - sold out in four minutes with no overselling, no unissued tickets and no single account buying more than four. Zaalkaart has since added nine venues, several citing that on-sale.
 
 > *"Ticketing is the only business where your worst day and your best day are the same minute. The app has to be built for that minute."*
-> — **Kevin Oosterhuis, Founder, Zaalkaart (Amsterdam)**
+> - **Kevin Oosterhuis, Founder, Zaalkaart (Amsterdam)**
 
-**Cost & Timeline:** €4,800 (Launch & Grow package: inventory, holds, queue, payments, bot defences and load testing) — completed in 14 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €4,800 (Launch & Grow package: inventory, holds, queue, payments, bot defences and load testing) - completed in 14 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -185,7 +185,7 @@ Manifera has built systems where load and reliability are contractual, for clien
 
 ### Can a reliable ticketing platform improve event discoverability?
 
-Yes. Event pages with structured data (event name, date, venue, availability) are used by search engines and AI assistants to answer "what's on this weekend" queries — but only if they load quickly and reliably.
+Yes. Event pages with structured data (event name, date, venue, availability) are used by search engines and AI assistants to answer "what's on this weekend" queries - but only if they load quickly and reliably.
 
 <script type="application/ld+json">
 {

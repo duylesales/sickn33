@@ -1,4 +1,4 @@
-🔥 Violet bouwde een prototype met **Lovable** — Violet, een zorgconsultant, gebruikte Lovable om een audit-app voor privéklinieken te bouwen, maar verloor een groot ziekenhuiscontract door onversleutelde patiëntdata. 🧠
+🔥 Violet bouwde een prototype met **Lovable** - Violet, een zorgconsultant, gebruikte Lovable om een audit-app voor privéklinieken te bouwen, maar verloor een groot ziekenhuiscontract door onversleutelde patiëntdata. 🧠
 
 Het verkopen van AI-software aan enterprises vereist een diepgaande focus op data-encryptie, compliance en risicobeperking in plaats van flashy AI-demo's.
 
@@ -12,7 +12,7 @@ Het verkopen van AI-software aan enterprises vereist een diepgaande focus op dat
 
 Bij **LaunchStudio** lossen we exact dit type enterprise-compliance en beveiligingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Violets platform werd enterprise-klaar: Haar applicatie slaagde glansrijk voor de strenge ziekenhuisaudit en tekende een enterprise-contract van €35.000. (€4.200 (Enterprise Security Pakket) — productieklaar en binnen 10 werkdagen gedeployed). 🚀
+Violets platform werd enterprise-klaar: Haar applicatie slaagde glansrijk voor de strenge ziekenhuisaudit en tekende een enterprise-contract van €35.000. (€4.200 (Enterprise Security Pakket) - productieklaar en binnen 10 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/psychology-selling-ai-to-enterprises
 

@@ -30,7 +30,7 @@ Nothing persuades like that. It also creates the specific problem this article i
 
 The framing matters more than anything else and it must be established before the demonstration, not defensively afterwards.
 
-What works: this is a working model of the product, built to confirm we agree on what it should do. It runs, you can click through it, and it is not the product — it has no security, no reliability, no protection of anyone's data. Those are the next eight weeks.
+What works: this is a working model of the product, built to confirm we agree on what it should do. It runs, you can click through it, and it is not the product - it has no security, no reliability, no protection of anyone's data. Those are the next eight weeks.
 
 Say it, put it in writing in the same email as the link, and repeat it at the start of the demonstration. Clients accept this readily when it is said in advance and resist it entirely when it emerges during a discussion about cost.
 
@@ -52,9 +52,9 @@ Never quote production before the prototype exists. The prototype is what tells 
 
 A single figure for "productionising the prototype" invites the comparison you do not want. An itemised list of work turns it into a specification.
 
-The items that appear in almost every such quote: authorisation and access control across every endpoint; moving credentials server-side and rotating them; server-side validation; a real data model with constraints and migrations; authentication, sessions and password recovery done properly; file handling with type verification and private storage; payments including the failure paths; error handling, logging and monitoring; backups with a tested restore; three environments and a repeatable deployment; performance work — indexes, caching, pagination; accessibility; and the legal and privacy work if the client is selling in Europe.
+The items that appear in almost every such quote: authorisation and access control across every endpoint; moving credentials server-side and rotating them; server-side validation; a real data model with constraints and migrations; authentication, sessions and password recovery done properly; file handling with type verification and private storage; payments including the failure paths; error handling, logging and monitoring; backups with a tested restore; three environments and a repeatable deployment; performance work - indexes, caching, pagination; accessibility; and the legal and privacy work if the client is selling in Europe.
 
-A client reading that list stops asking why it takes eight weeks. Most of them have no idea any of it exists, which is not their failing — it is invisible by design.
+A client reading that list stops asking why it takes eight weeks. Most of them have no idea any of it exists, which is not their failing - it is invisible by design.
 
 ## Be Careful About What You Warrant
 
@@ -78,9 +78,9 @@ The clients who object to the tools are rare. The clients who object to finding 
 
 ## Who Owns What, Precisely
 
-Clients ask, and a vague answer creates a problem at exactly the moment you least want one — usually when they are considering working with someone else.
+Clients ask, and a vague answer creates a problem at exactly the moment you least want one - usually when they are considering working with someone else.
 
-The position that is fair and easy to state: the client owns the deliverables they paid for, including the source code, the data and anything produced specifically for them. You retain whatever you brought — your own libraries, components and internal tooling — and grant them a licence to use it as part of what you delivered.
+The position that is fair and easy to state: the client owns the deliverables they paid for, including the source code, the data and anything produced specifically for them. You retain whatever you brought - your own libraries, components and internal tooling - and grant them a licence to use it as part of what you delivered.
 
 Two points specific to this kind of work. Generated code cannot be warranted as original in the way handwritten work sometimes is, and saying so plainly in the agreement is better than a warranty nobody could support. And the tool subscriptions are yours rather than theirs, which matters when a client assumes that paying for the project included an account they can continue using.
 
@@ -90,9 +90,9 @@ The handover deserves the same precision. Agree in advance what it consists of: 
 
 For an agency, the economics of this work are not what the first fast prototype suggests, and getting them right determines whether the practice is sustainable.
 
-Discovery is fast and should be priced as a product rather than by the hour. Two days of work sold at €2,500 is good business and the client gets something genuinely valuable — but it does not scale into a living on its own, and pricing it by time undervalues it badly.
+Discovery is fast and should be priced as a product rather than by the hour. Two days of work sold at €2,500 is good business and the client gets something genuinely valuable - but it does not scale into a living on its own, and pricing it by time undervalues it badly.
 
-Production is where the hours are, and it is ordinary engineering priced ordinarily. The mistake is to assume the tools compress it the way they compressed discovery. They help — scaffolding, boilerplate, tests — but authorisation, data modelling, payment failure paths and accessibility are thinking rather than typing, and thinking has not become faster.
+Production is where the hours are, and it is ordinary engineering priced ordinarily. The mistake is to assume the tools compress it the way they compressed discovery. They help - scaffolding, boilerplate, tests - but authorisation, data modelling, payment failure paths and accessibility are thinking rather than typing, and thinking has not become faster.
 
 The third piece, and the one agencies neglect, is what happens afterwards. A product that has launched needs updates, monitoring, incident response and small changes indefinitely. A retainer covering that is predictable revenue on work you are already best placed to do, and it keeps you in the relationship when the client's next project appears.
 
@@ -102,7 +102,7 @@ The shape that works: discovery as a fixed-price product, production quoted from
 
 For an agency or freelancer this is typically a day of preparation that then applies to every engagement: a written framing of what a prototype is, sent with every demonstration link; a two-stage commercial structure with discovery priced and paid; a standard itemised list of production work to accompany every quote; contract clauses covering the prototype's status, intellectual property and liability; a disclosure position on tool use; and a checklist for the production phase so nothing on the list is forgotten when the work is actually done.
 
-LaunchStudio does the production stage as a white-label partner for agencies who prefer to keep the client relationship and hand over the hardening. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
+LaunchStudio does the production stage as a white-label partner for agencies who prefer to keep the client relationship and hand over the hardening. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
 
 [Ask us to quote the production stage](https://launchstudio.eu/en/#contact) while you keep the client.
 
@@ -120,14 +120,14 @@ Nothing was breached, as far as anyone could establish. But the client had by th
 
 The engagement was rescued over four business days: the prototype taken offline with an explanation of exactly what had been exposed and what had not, supported by the access logs; the three weeks of real data migrated into a properly built version rather than discarded, which mattered to the client more than anything else; the production work itemised into 14 named items with the reasoning for each; and the relationship rebuilt around a two-stage structure applied from that point on.
 
-Since then, Studio Meridiaan has used a standard framing: every prototype link expires after 14 days, is password-protected, carries a visible banner reading *demonstratiemodel — niet voor gebruik met echte gegevens*, and is accompanied by a one-page written statement of what it is. Discovery is quoted at €2,500 and paid before the prototype is built.
+Since then, Studio Meridiaan has used a standard framing: every prototype link expires after 14 days, is password-protected, carries a visible banner reading *demonstratiemodel - niet voor gebruik met echte gegevens*, and is accompanied by a one-page written statement of what it is. Discovery is quoted at €2,500 and paid before the prototype is built.
 
 **Result:** across eleven engagements since, the production quote has been accepted nine times and never questioned on the basis of the prototype's speed. Joost's view is that the banner and the expiry do more work than any conversation.
 
-> *"They deployed it to forty customers because it worked. That was not their mistake — I had shown them something that worked and said nothing about what it was."*
-> — **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
+> *"They deployed it to forty customers because it worked. That was not their mistake - I had shown them something that worked and said nothing about what it was."*
+> - **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
 
-**Cost & Timeline:** €4,300 (incident assessment and client communication, data migration from prototype to production build, itemised production specification, commercial structure and contract clauses, prototype framing standards) — completed in 4 business days.
+**Cost & Timeline:** €4,300 (incident assessment and client communication, data migration from prototype to production build, itemised production specification, commercial structure and contract clauses, prototype framing standards) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -177,7 +177,7 @@ A clause stating the prototype's status and that it must not be deployed, an hon
       "name": "How do I justify production costs after a fast prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Itemise the work — authorisation, credentials, validation, data model, auth, payments, logging, backups, environments, performance, accessibility, privacy."
+        "text": "Itemise the work - authorisation, credentials, validation, data model, auth, payments, logging, backups, environments, performance, accessibility, privacy."
       }
     },
     {

@@ -87,9 +87,9 @@ They built three distinct Generative UI interfaces (one for Journalists, one for
 **Result:** The brand voice unified instantly, because every department was now searching the exact same centralized vector database. The CISO approved the architecture because all data processing was secured behind a single, internal Zero-Trust perimeter. Finally, David cancelled 19 of the 22 third-party AI SaaS subscriptions. The company's AI expenditure dropped from €450,000 a year to €85,000 a year (the cost of the Azure API compute), saving the conglomerate €365,000 annually while massively improving security.
 
 > *"We were suffering from death by a thousand wrappers. Our data was everywhere, our security was compromised, and our budget was bleeding. LaunchStudio didn't just build us a new tool; they built us a centralized nervous system for our entire company. They took back our data sovereignty and saved us hundreds of thousands of euros."*
-> — **David Mueller, CIO, MediaNexus (Berlin)**
+> - **David Mueller, CIO, MediaNexus (Berlin)**
 
-**Cost & Timeline:** €45,000 (Enterprise Consolidation & Unified Platform Architecture Package) — production-ready and deployed in 60 business days.
+**Cost & Timeline:** €45,000 (Enterprise Consolidation & Unified Platform Architecture Package) - production-ready and deployed in 60 business days.
 
 ---
 

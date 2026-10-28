@@ -12,7 +12,7 @@ Doelgroep: SaaS Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App Security: De Sleutels Die U Uitdeelt Aan Integraties",
-  "description": "Elke integratie is een authenticatiesleutel die leeft op een plek waar u geen controle over heeft — in beide richtingen. Hoe u API-sleutels uitgeeft die scoped en intrekbaar zijn, wat u doet met sleutels die klanten aan u toevertrouwen, en waarom overmatige toegangsrechten het grootste risico vormen.",
+  "description": "Elke integratie is een authenticatiesleutel die leeft op een plek waar u geen controle over heeft - in beide richtingen. Hoe u API-sleutels uitgeeft die scoped en intrekbaar zijn, wat u doet met sleutels die klanten aan u toevertrouwen, en waarom overmatige toegangsrechten het grootste risico vormen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-08-18",
@@ -22,7 +22,7 @@ Doelgroep: SaaS Scale-Up
 
 Integraties zijn de manier waarop een softwareproduct ophoudt een geïsoleerd eiland te zijn. En elke integratie is een authenticatiesleutel die leeft op een server of apparaat waar u zelf geen enkel zicht op heeft.
 
-Het dataverkeer stroomt in twee richtingen, maar de meeste oprichters denken slechts aan één kant: de sleutels die u zélf beheert voor externe diensten die u aanroept (zoals Stripe, Resend of OpenAI). Die krijgen aandacht omdat ze maandelijks op uw creditcardafschriften verschijnen. Maar de sleutels die u uitgeeft aan klanten en partners om uw API aan te roepen, krijgen aanzienlijk minder aandacht — omdat ze aanvoelen als een feature in plaats van een beveiligingsrisico. En de sleutels die klanten aan u toevertrouwen om verbinding te maken met hun boekhoudpakket of CRM, krijgen vaak helemaal geen aandacht. Dat is riskant, want juist die sleutels dragen de zwaarste juridische aansprakelijkheid.
+Het dataverkeer stroomt in twee richtingen, maar de meeste oprichters denken slechts aan één kant: de sleutels die u zélf beheert voor externe diensten die u aanroept (zoals Stripe, Resend of OpenAI). Die krijgen aandacht omdat ze maandelijks op uw creditcardafschriften verschijnen. Maar de sleutels die u uitgeeft aan klanten en partners om uw API aan te roepen, krijgen aanzienlijk minder aandacht - omdat ze aanvoelen als een feature in plaats van een beveiligingsrisico. En de sleutels die klanten aan u toevertrouwen om verbinding te maken met hun boekhoudpakket of CRM, krijgen vaak helemaal geen aandacht. Dat is riskant, want juist die sleutels dragen de zwaarste juridische aansprakelijkheid.
 
 ## Drie Richtingen, Drie Wezenlijk Verschillende Problemen
 
@@ -30,7 +30,7 @@ Het dataverkeer stroomt in twee richtingen, maar de meeste oprichters denken sle
 
 **Sleutels die u uitgeeft.** Een zakelijke klant wil dat zijn interne ERP-systeem automatisch data naar uw applicatie pusht, of een partner bouwt een koppeling op uw platform. Nu bent u plotseling de API-provider. Het risico is dat uw API-sleutel belandt in de broncode van een externe partij, wordt uitgerold door mensen die u nog nooit heeft ontmoet, en mogelijk per ongeluk belandt in een openbare GitHub-repository waar u geen toegang toe heeft.
 
-**Sleutels die klanten aan u geven.** Toegang tot hun Exact Online, Twinfield, Google Workspace of HubSpot. Het risico is dat u nu de sleutels bewaart van de interne bedrijfssystemen van een andere organisatie. Als uw database gecompromitteerd raakt, ligt hun bedrijfsadministratie op straat — wat exact is waar hun Chief Information Security Officer (CISO) zich zorgen over maakt.
+**Sleutels die klanten aan u geven.** Toegang tot hun Exact Online, Twinfield, Google Workspace of HubSpot. Het risico is dat u nu de sleutels bewaart van de interne bedrijfssystemen van een andere organisatie. Als uw database gecompromitteerd raakt, ligt hun bedrijfsadministratie op straat - wat exact is waar hun Chief Information Security Officer (CISO) zich zorgen over maakt.
 
 Elk van deze drie situaties vereist een fundamenteel andere architectuur. De gevaarlijke reflex is om ze alle drie te behandelen als "een API-sleutel in een environment variabele".
 
@@ -64,7 +64,7 @@ Wanneer een klant zijn boekhouding of agenda koppelt aan uw applicatie, neemt u 
 
 **Handhaaf token-refresh en intrekking zorgvuldig.** OAuth-tokens verlopen; klanten trekken koppelingen in. Beide situaties moeten leiden tot een heldere foutmelding in uw interface, niet tot een geruisloze synchronisatiefout die drie weken lang dataverlies maskeert.
 
-**Verbreek de koppeling volledig.** Wanneer een klant een integratie verwijdert, roept u het officiële intrekkingsendpoint (token revocation) bij de externe provider aan in plaats van uitsluitend de rij in uw eigen database te wissen. Als u het token alleen lokaal verwijdert, blijft er bij de externe dienst een actieve autorisatie op uw naam geregistreerd staan — wat klanten vroeg of laat ontdekken.
+**Verbreek de koppeling volledig.** Wanneer een klant een integratie verwijdert, roept u het officiële intrekkingsendpoint (token revocation) bij de externe provider aan in plaats van uitsluitend de rij in uw eigen database te wissen. Als u het token alleen lokaal verwijdert, blijft er bij de externe dienst een actieve autorisatie op uw naam geregistreerd staan - wat klanten vroeg of laat ontdekken.
 
 ## Webhooks in Beide Richtingen
 
@@ -98,7 +98,7 @@ Maak een lijst van elke API-sleutel die u zelf gebruikt: waar staat deze, wat zi
 
 ## Wat U Moet Doen Als Een Sleutel Gelekt Is
 
-Vroeg of laat lekt er een sleutel — meestal door een fout bij de klant of een externe partner. Een vooraf vastgelegd stappenplan verandert een chaotische paniekochtend in een gestructureerde procedure:
+Vroeg of laat lekt er een sleutel - meestal door een fout bij de klant of een externe partner. Een vooraf vastgelegd stappenplan verandert een chaotische paniekochtend in een gestructureerde procedure:
 
 **Trek de sleutel direct in, onderzoek pas daarna.** De menselijke reflex is om eerst de omvang van het lek te willen begrijpen vóórdat men ingrijpt. Dat is de verkeerde volgorde. Het intrekken van één specifieke API-sleutel raakt slechts één koppeling van één klant; die klant accepteert een kortstondige onderbreking graag. Het actief laten van een gecompromitteerde sleutel terwijl u logbestanden uitpluist, is onverantwoord.
 
@@ -133,9 +133,9 @@ Tien werkdagen aan gerichte interventies: het API-sleutelsysteem werd van de gro
 **Resultaat:** Het bouwbedrijf bleef behouden en breidde het contract zelfs uit, en het transparante API-sleutelscherm met fijnmazige scopes werd een verkoopargument dat door twee latere enterprise-klanten expliciet werd genoemd tijdens de contractondertekening.
 
 > *"Een door mij uitgegeven sleutel stond maandenlang in een openbare GitHub-repository met de bevoegdheid om elke bouwtekening van driehonderd projecten te wissen. Terwijl die sleutel alleen maar tekeningen hoefde te uploaden."*
-> — **Merel Duijvestein, Oprichter, Bouwdossier (Almere)**
+> - **Merel Duijvestein, Oprichter, Bouwdossier (Almere)**
 
-**Kosten & Doorlooptijd:** €4.700 (API-sleutelsysteem met scopes en hashing, self-service beheer, webhook-ondertekening, integratie-audittrail, noodintrekking) — afgerond in 10 werkdagen.
+**Kosten & Doorlooptijd:** €4.700 (API-sleutelsysteem met scopes en hashing, self-service beheer, webhook-ondertekening, integratie-audittrail, noodintrekking) - afgerond in 10 werkdagen.
 
 ## Veelgestelde vragen
 

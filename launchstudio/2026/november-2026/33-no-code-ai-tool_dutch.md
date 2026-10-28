@@ -95,9 +95,9 @@ Binnen 14 werkdagen bouwde het Manifera-team een krachtige backend: een dedicate
 **Resultaat:** DockMaster's hostingkosten daalden van €2.500 per maand op het No-Code platform naar een voorspelbare €150 per maand op AWS. De app werkte direct en de Spaanse transport-API werd naadloos geïntegreerd. Elena haalde recent een seed-investering van €1,2 miljoen op en doorstond de technische audit glansrijk omdat ze haar eigen code 100% bezat.
 
 > *"Het No-Code AI-platform was leuk om een prototype te maken, maar bracht mijn echte bedrijf bijna aan de rand van de afgrond. LaunchStudio gaf me de vrijheid om mijn eigen code te bezitten en de technische power om te schalen. Ik ging van het huren van een zwarte doos naar het bezitten van een volwaardig softwarebedrijf."*
-> — **Elena Garcia, Oprichter, DockMaster (Madrid)**
+> - **Elena Garcia, Oprichter, DockMaster (Madrid)**
 
-**Kosten & Doorlooptijd:** €6.800 (Launch & Grow Pakket met Architectuur-Herbouw Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €6.800 (Launch & Grow Pakket met Architectuur-Herbouw Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

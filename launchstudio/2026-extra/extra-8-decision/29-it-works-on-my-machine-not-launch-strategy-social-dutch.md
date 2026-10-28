@@ -1,4 +1,4 @@
-🚨 Weken van grondig lokaal testen, nul storingen. Binnen het eerste uur na lancering zag klant A het dashboard van klant B — een race condition die nooit tevoorschijn kwam met slechts één browsertabblad open. 😳
+🚨 Weken van grondig lokaal testen, nul storingen. Binnen het eerste uur na lancering zag klant A het dashboard van klant B - een race condition die nooit tevoorschijn kwam met slechts één browsertabblad open. 😳
 
 "Het werkt op mijn machine" is al decennia een grap onder engineers, om een goede reden. Zo verraadt uw laptop u: 🧠
 

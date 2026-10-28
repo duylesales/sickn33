@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Prototype to Production: 12 Questions to Ask Before You Sign Any Quote",
-  "description": "Twelve questions non-technical founders should ask any freelancer, agency or specialist before signing a quote to take an AI prototype to production — covering scope, ownership, verification, price and what happens after launch — with what good and bad answers sound like.",
+  "description": "Twelve questions non-technical founders should ask any freelancer, agency or specialist before signing a quote to take an AI prototype to production - covering scope, ownership, verification, price and what happens after launch - with what good and bad answers sound like.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-14",
@@ -23,21 +23,21 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 A quote is a promise written in a language you may not fully speak. When you are asking someone to take your AI prototype to production, the quote will mention things like "security hardening," "backend integration" and "deployment," and it is hard to know whether €3,000 for those is a bargain or a trap. You cannot evaluate the engineering directly. You can evaluate the answers to good questions.
 
-These twelve questions work for freelancers, agencies and specialists — including us. For each, here is what a good answer and a worrying answer sound like.
+These twelve questions work for freelancers, agencies and specialists - including us. For each, here is what a good answer and a worrying answer sound like.
 
 ## About Scope
 
 **1. "What will you look at before giving me a price?"**
-Good: "We'll review the code, database and hosting setup first — or at least look at the repository during a short call — and then give a fixed scope."
+Good: "We'll review the code, database and hosting setup first - or at least look at the repository during a short call - and then give a fixed scope."
 Worrying: a price based only on your description, with no look at the code.
 
-**2. "What exactly is included — and what is not?"**
+**2. "What exactly is included - and what is not?"**
 Good: a written list of deliverables, plus an explicit list of exclusions.
 Worrying: "everything you need to go live," with no detail.
 
 **3. "What happens to the frontend I built?"**
 Good: "We keep it, and only change it where something is broken or unsafe."
-Worrying: "We'd rebuild it on our stack" — unless you have a reason to want that.
+Worrying: "We'd rebuild it on our stack" - unless you have a reason to want that.
 
 ## About Security and Quality
 
@@ -50,7 +50,7 @@ Good: mentions verified webhooks from the payment provider.
 Worrying: "After checkout, we redirect to a success page."
 
 **6. "How will I know the work is done correctly?"**
-Good: a written findings list at the start, a re-test at the end, and a demonstration you can understand — ideally automated tests left in the repository.
+Good: a written findings list at the start, a re-test at the end, and a demonstration you can understand - ideally automated tests left in the repository.
 Worrying: "Trust us, we've done this many times."
 
 ## About Ownership
@@ -80,7 +80,7 @@ Good: a defined support window, with how to reach them.
 Worrying: support billed hourly from the moment of launch.
 
 **12. "What ongoing costs will I have?"**
-Good: a clear list — hosting, database, email, payment fees, optional maintenance — with estimates.
+Good: a clear list - hosting, database, email, payment fees, optional maintenance - with estimates.
 Worrying: "It depends," with no numbers.
 
 ## How to Use the Answers Before an AI Prototype to Production Project
@@ -88,8 +88,8 @@ Worrying: "It depends," with no numbers.
 You do not need perfect answers to all twelve. Look for patterns:
 
 - **Specific answers** indicate someone who has done this work and understood your project.
-- **Answers that give you control** — your accounts, your code, a fixed price — reduce your risk.
-- **Answers you can verify** — findings lists, tests, demonstrations — replace trust with evidence.
+- **Answers that give you control** - your accounts, your code, a fixed price - reduce your risk.
+- **Answers you can verify** - findings lists, tests, demonstrations - replace trust with evidence.
 
 If a provider cannot answer questions 4 and 5 clearly, they are not the right provider for production hardening, whatever else they do well.
 
@@ -132,7 +132,7 @@ None of these automatically disqualifies a provider, but each should prompt a qu
 
 ## Milestones and Payment Terms
 
-For fixed-price projects, reasonable payment terms tie payments to milestones: for example, a portion at the start, a portion after the structural fixes are delivered to staging, and the remainder after launch and acceptance. Acceptance should be based on criteria agreed upfront — the re-test passing, your own checks on staging succeeding. This aligns incentives and gives you leverage if something is not delivered as promised.
+For fixed-price projects, reasonable payment terms tie payments to milestones: for example, a portion at the start, a portion after the structural fixes are delivered to staging, and the remainder after launch and acceptance. Acceptance should be based on criteria agreed upfront - the re-test passing, your own checks on staging succeeding. This aligns incentives and gives you leverage if something is not delivered as promised.
 
 ## What to Prepare Before Asking for Quotes
 
@@ -140,11 +140,11 @@ Providers can quote more accurately when you arrive prepared. Useful materials: 
 
 ## After You Sign
 
-Signing is the start of the working relationship. Agree on communication rhythm (daily written updates, a weekly call), a single point of contact on each side, how decisions are recorded and how scope changes are requested and priced. Keep all documents — quote, findings list, change requests, re-test report — in one folder. If a disagreement arises, a clear paper trail resolves most of it quickly.
+Signing is the start of the working relationship. Agree on communication rhythm (daily written updates, a weekly call), a single point of contact on each side, how decisions are recorded and how scope changes are requested and priced. Keep all documents - quote, findings list, change requests, re-test report - in one folder. If a disagreement arises, a clear paper trail resolves most of it quickly.
 
 ## When to Walk Away
 
-Sometimes the right decision is to not sign at all — or to stop a project early. Reasons include a provider missing the first milestone without explanation, refusing to put scope in writing, insisting on keeping ownership of accounts or code, or being unable to explain findings in understandable terms. Walking away early is almost always cheaper than continuing with a mismatch.
+Sometimes the right decision is to not sign at all - or to stop a project early. Reasons include a provider missing the first milestone without explanation, refusing to put scope in writing, insisting on keeping ownership of accounts or code, or being unable to explain findings in understandable terms. Walking away early is almost always cheaper than continuing with a mismatch.
 
 ## Questions Specific to Your Situation
 
@@ -156,7 +156,7 @@ The twelve questions are general. Add a few tailored to your product:
 - **If you have a mobile app:** "Who handles app store submission and account deletion requirements?"
 - **If you sell across borders:** "How will VAT, languages and local payment methods be handled?"
 
-Specific questions reveal whether a provider has experience with products like yours — or will be learning on your budget.
+Specific questions reveal whether a provider has experience with products like yours - or will be learning on your budget.
 
 ## Understanding What Is Not in a Fixed Price
 
@@ -172,7 +172,7 @@ Before signing, ask the provider to summarise, in their own words, what your app
 
 ## The Point of All These Questions
 
-The questions are not about catching providers out. They are about turning an unfamiliar purchase into a comparison you can reason about. Once you can compare scope, verification, ownership and price side by side, the right choice for your AI prototype usually becomes obvious — and the provider you choose knows from the start that you expect evidence, not promises.
+The questions are not about catching providers out. They are about turning an unfamiliar purchase into a comparison you can reason about. Once you can compare scope, verification, ownership and price side by side, the right choice for your AI prototype usually becomes obvious - and the provider you choose knows from the start that you expect evidence, not promises.
 
 ## How LaunchStudio Answers Them
 
@@ -180,7 +180,7 @@ To practise what we preach, here are our short answers. We look at your code dur
 
 Behind those answers is Manifera, a software development company with 11+ years of experience, 160+ projects and 120+ engineers across Amsterdam (Herengracht 420), Singapore (Tras Street) and Ho Chi Minh City (Pho Quang Street). See [Manifera's portfolio](https://www.manifera.com/portfolio/). To check that any supplier is a registered company, the Dutch [KVK business register](https://www.kvk.nl/en/) is a useful neutral reference.
 
-[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) — and ask us all twelve.
+[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) - and ask us all twelve.
 
 ## Real example
 
@@ -195,9 +195,9 @@ The review explained the earlier problems: the freelancer had added a login, but
 **Result:** Yogarooster onboarded both additional studios. Missing deductions and vanished bookings stopped entirely, and Esther now uses the twelve questions whenever she hires any supplier.
 
 > *"The first time, I signed a quote I couldn't evaluate. The second time, I asked questions I could evaluate the answers to. That made all the difference."*
-> — **Esther van Leeuwen, Founder, Yogarooster (Zeist)**
+> - **Esther van Leeuwen, Founder, Yogarooster (Zeist)**
 
-**Cost & Timeline:** €2,100 (Launch Ready package: pass logic, payments, access control and account transfer) — completed in 8 business days.
+**Cost & Timeline:** €2,100 (Launch Ready package: pass logic, payments, access control and account transfer) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -219,7 +219,7 @@ By reviewing before quoting and drawing on 11+ years and 160+ projects of estima
 
 ### Can asking these questions also help my online reputation?
 
-Indirectly. Choosing a provider who delivers a secure, reliable product reduces incidents and complaints — the kind of public signals that search engines and AI answer engines reflect when people ask about your product.
+Indirectly. Choosing a provider who delivers a secure, reliable product reduces incidents and complaints - the kind of public signals that search engines and AI answer engines reflect when people ask about your product.
 
 <script type="application/ld+json">
 {

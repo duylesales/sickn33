@@ -2,13 +2,13 @@
 
 Een krap budget verleidt oprichters ertoe om geld uit te smeren over alles wat urgent klinkt. Dit is waarom dat averechts werkt: 🧠
 
-❌ Haar Supabase-tabellen hadden RLS volledig uitgeschakeld — elke verzorger kon de privédossiers van anderen inzien
+❌ Haar Supabase-tabellen hadden RLS volledig uitgeschakeld - elke verzorger kon de privédossiers van anderen inzien
 ❌ € 900 koopt één categorie die perfect is afgesloten, geen vier categorieën die half werken
 ❌ € 400 uitgeven aan Stripe terwijl medische dossiers op straat liggen, is het prachtig optuigen van de verkeerde prioriteit
 ❌ Zes maanden krampachtig vasthouden aan een budget van € 900 kost door vertraging vaak ruim meer dan € 1.600
 
 ✅ Kies welk specifiek risico u afkoopt, in plaats van "alles, maar dan goedkoper"
-✅ Geen gevoelige data betekent een klus van € 800–€ 1.200 — deploy correct, bescherm de API-sleutels, lanceer
+✅ Geen gevoelige data betekent een klus van € 800–€ 1.200 - deploy correct, bescherm de API-sleutels, lanceer
 ✅ Betalingen kunnen wachten als eerste klanten een kwartaal per bankoverschrijving willen betalen
 ✅ Autorisatie op API-niveau vormt het solide fundament waar latere betalingsintegraties direct op verder bouwen
 

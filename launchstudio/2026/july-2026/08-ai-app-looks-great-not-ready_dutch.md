@@ -35,13 +35,13 @@ De beveiligingsproblemen in door AI gebouwde apps zijn geen bugs die zichtbare f
 
 De meest voorkomende veiligheidsafwezigheden:
 
-- **Geen beveiliging op rijniveau** — Uw Supabase-databasetabellen zijn leesbaar en schrijfbaar door elke geverifieerde gebruiker, niet alleen door de eigenaar van de gegevens
+- **Geen beveiliging op rijniveau** - Uw Supabase-databasetabellen zijn leesbaar en schrijfbaar door elke geverifieerde gebruiker, niet alleen door de eigenaar van de gegevens
 
-- **Blootgestelde inloggegevens** — API-sleutels, database-URL's en soms zelfs geheime sleutels zijn ingebed in uw JavaScript-bundel, zichtbaar voor iedereen die browserontwikkelaarstools opent
+- **Blootgestelde inloggegevens** - API-sleutels, database-URL's en soms zelfs geheime sleutels zijn ingebed in uw JavaScript-bundel, zichtbaar voor iedereen die browserontwikkelaarstools opent
 
-- **Geen invoervalidatie** — Gebruikers kunnen via uw formulieren alle gegevens indienen, inclusief kwaadaardige scripts en SQL-fragmenten
+- **Geen invoervalidatie** - Gebruikers kunnen via uw formulieren alle gegevens indienen, inclusief kwaadaardige scripts en SQL-fragmenten
 
-- **Zwakke authenticatie** — Wachtwoordresetstromen, sessiebeheer en uitlogprocedures hebben exploiteerbare zwakke punten
+- **Zwakke authenticatie** - Wachtwoordresetstromen, sessiebeheer en uitlogprocedures hebben exploiteerbare zwakke punten
 
 ### Gap 2: betalingen bevinden zich in de demomodus
 
@@ -87,13 +87,13 @@ Dit is precies de aanpak die [LaunchStudio](https://launchstudio.eu/nl/) hanteer
 
 1. **Behoud uw frontend**: de gebruikersinterface die u met AI hebt gebouwd, blijft precies zoals hij is
 
-2. **De beveiliging verbeteren** — Implementeer RLS, verplaats geheimen, voeg validatie toe, verscherp de authenticatie
+2. **De beveiliging verbeteren** - Implementeer RLS, verplaats geheimen, voeg validatie toe, verscherp de authenticatie
 
-3. **Integreer betalingen** — Schakel Stripe over naar de live-modus, configureer webhooks, handel randgevallen af
+3. **Integreer betalingen** - Schakel Stripe over naar de live-modus, configureer webhooks, handel randgevallen af
 
-4. **Op de juiste manier implementeren** — Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
+4. **Op de juiste manier implementeren** - Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
 
-5. **Prestaties optimaliseren** — Database-indexen, caching, beeldoptimalisatie
+5. **Prestaties optimaliseren** - Database-indexen, caching, beeldoptimalisatie
 
 Deze aanpak kost €800 tot €7.500 in plaats van de €20.000 tot €500.000 die een traditioneel bureau zou vragen om alles vanaf nul opnieuw op te bouwen. Het duurt 1 tot 3 weken in plaats van 3 tot 12 maanden. En u behoudt het volledige eigendom van alle code.
 
@@ -125,7 +125,7 @@ Sophia werkte samen met **LaunchStudio (door Manifera)** om deze hiaten te overb
 
 **Resultaat:** Sophia's boekingsportal is met succes gelanceerd en verwerkte in de eerste week 1.200 boekingen voor beveiligde werkruimtes zonder een enkel datalek of crash.
 
-**Kosten en tijdlijn:** € 1.900 (lanceringspakket) — productieklaar en binnen 6 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.900 (lanceringspakket) - productieklaar en binnen 6 werkdagen geïmplementeerd.
 
 ---
 

@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Application Scalability Before and After Image Optimisation",
-  "description": "Images are often the heaviest part of AI-built sites and apps. A before-and-after look at how unoptimised images hurt AI application scalability, page speed, costs and search — and how resizing, modern formats, lazy loading and CDNs fix it.",
+  "description": "Images are often the heaviest part of AI-built sites and apps. A before-and-after look at how unoptimised images hurt AI application scalability, page speed, costs and search - and how resizing, modern formats, lazy loading and CDNs fix it.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-25",
@@ -21,11 +21,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-When founders think about AI application scalability, they picture databases and servers. For many AI-built websites and apps, though, the heaviest thing on every page is much more ordinary: images. A holiday rental site, a webshop, a portfolio or a marketplace can serve several megabytes of photos per visit. With a handful of visitors, nobody notices. With thousands, images drive slow pages, high bandwidth bills and weaker search rankings — and they are among the easiest problems to fix.
+When founders think about AI application scalability, they picture databases and servers. For many AI-built websites and apps, though, the heaviest thing on every page is much more ordinary: images. A holiday rental site, a webshop, a portfolio or a marketplace can serve several megabytes of photos per visit. With a handful of visitors, nobody notices. With thousands, images drive slow pages, high bandwidth bills and weaker search rankings - and they are among the easiest problems to fix.
 
 ## Before: How AI-Built Sites Handle Images
 
-Tools like v0, Lovable and Bolt produce good-looking layouts, and founders fill them with the best photos they have — straight from a camera or phone. The typical result:
+Tools like v0, Lovable and Bolt produce good-looking layouts, and founders fill them with the best photos they have - straight from a camera or phone. The typical result:
 
 - **Original files served as-is,** often 3–8 MB each, at 4000+ pixels wide, displayed in a 400-pixel card.
 - **Old formats only** (JPEG and PNG), with no modern formats like WebP or AVIF.
@@ -36,7 +36,7 @@ Tools like v0, Lovable and Bolt produce good-looking layouts, and founders fill 
 
 ## What Unoptimised Images Cost AI Application Scalability
 
-**Speed.** On mobile connections, a page with ten full-size photos can take many seconds to show its main image. Google's Largest Contentful Paint measure — how quickly the main content appears — suffers directly.
+**Speed.** On mobile connections, a page with ten full-size photos can take many seconds to show its main image. Google's Largest Contentful Paint measure - how quickly the main content appears - suffers directly.
 
 **Layout stability.** Images without declared dimensions push content around while loading, hurting Cumulative Layout Shift and annoying users who tap the wrong button.
 
@@ -57,7 +57,7 @@ Tools like v0, Lovable and Bolt produce good-looking layouts, and founders fill 
 5. **Declare width and height** (or aspect ratio) to prevent layout shifts.
 6. **Serve through a CDN** with long cache lifetimes.
 7. **Strip metadata** from user uploads.
-8. **Compress sensibly** — good quality at a fraction of the size.
+8. **Compress sensibly** - good quality at a fraction of the size.
 9. **Process in the background** so uploads stay fast.
 
 Frameworks like Next.js include image components that handle much of this; managed image services and storage providers offer on-the-fly transformation. The main work is wiring it in consistently.
@@ -87,7 +87,7 @@ For AI application scalability, a production image pipeline for user uploads and
 7. **Record** dimensions and variant URLs in the database for rendering.
 8. **Serve through a CDN** with long cache lifetimes.
 
-Many providers — image CDNs, Supabase storage transformations, Cloudinary-style services — can handle steps 3 to 8 on the fly. The important part is that originals are never served directly to visitors.
+Many providers - image CDNs, Supabase storage transformations, Cloudinary-style services - can handle steps 3 to 8 on the fly. The important part is that originals are never served directly to visitors.
 
 ## Responsive Images in Practice
 
@@ -123,7 +123,7 @@ Before optimising, record: total image weight on key pages, Largest Contentful P
 
 ## Content Workflow After Launch
 
-Optimisation must survive new content. Whoever uploads images later — staff, property owners, sellers — should use the same pipeline, never bypassing it by pasting links to large originals. Provide upload guidance (minimum and recommended sizes, landscape versus portrait), require alt text for important images, and review new pages periodically with a quick performance check.
+Optimisation must survive new content. Whoever uploads images later - staff, property owners, sellers - should use the same pipeline, never bypassing it by pasting links to large originals. Provide upload guidance (minimum and recommended sizes, landscape versus portrait), require alt text for important images, and review new pages periodically with a quick performance check.
 
 ## Accessibility and SEO for Images
 
@@ -139,7 +139,7 @@ AI tools often generate image markup that looks correct but performs poorly: `<i
 
 ## Caching Headers for Images
 
-Images rarely change once published. Serve them with long cache lifetimes (for example `Cache-Control: public, max-age=31536000, immutable`) and change the file name or add a version parameter when an image is replaced. Returning visitors then load images instantly from their browser cache, and the CDN serves repeat requests without reaching your storage — reducing both latency and costs.
+Images rarely change once published. Serve them with long cache lifetimes (for example `Cache-Control: public, max-age=31536000, immutable`) and change the file name or add a version parameter when an image is replaced. Returning visitors then load images instantly from their browser cache, and the CDN serves repeat requests without reaching your storage - reducing both latency and costs.
 
 ## Mobile-First Considerations
 
@@ -155,11 +155,11 @@ Start where traffic and conversions meet: the homepage, the most visited listing
 
 ## A Quick Audit You Can Do Today
 
-Open your most important page on your phone, then on a laptop with developer tools, and check the network panel sorted by size. Note any image larger than a few hundred kilobytes, any image without width and height and any image loaded far below the visible area immediately. Those three lists are your optimisation backlog — and usually the fastest performance wins available for an AI-built site.
+Open your most important page on your phone, then on a laptop with developer tools, and check the network panel sorted by size. Note any image larger than a few hundred kilobytes, any image without width and height and any image loaded far below the visible area immediately. Those three lists are your optimisation backlog - and usually the fastest performance wins available for an AI-built site.
 
 ## Why Images Deserve Engineering Attention
 
-Images are often treated as content rather than engineering, left to whoever uploads them. For visual businesses — rentals, shops, restaurants, portfolios, marketplaces — they are the product's first impression and its heaviest technical burden at the same time. A pipeline that resizes, converts, strips metadata and serves through a CDN turns that burden into an asset: pages that load quickly on any phone, rank better in search, cost less to serve and protect the privacy of people who upload photos. Because the work is mostly one-off infrastructure with a lasting effect, it is one of the most cost-effective improvements an AI-built site can receive.
+Images are often treated as content rather than engineering, left to whoever uploads them. For visual businesses - rentals, shops, restaurants, portfolios, marketplaces - they are the product's first impression and its heaviest technical burden at the same time. A pipeline that resizes, converts, strips metadata and serves through a CDN turns that burden into an asset: pages that load quickly on any phone, rank better in search, cost less to serve and protect the privacy of people who upload photos. Because the work is mostly one-off infrastructure with a lasting effect, it is one of the most cost-effective improvements an AI-built site can receive.
 
 ## How LaunchStudio Approaches Image Work
 
@@ -171,15 +171,15 @@ Measure the total image weight of your homepage today. If it is above a few mega
 
 ## Remember
 
-The fastest page is the one that sends the fewest bytes. For most AI-built sites, those bytes are images — and they are the easiest ones to remove without changing anything visitors see or love about the design.
+The fastest page is the one that sends the fewest bytes. For most AI-built sites, those bytes are images - and they are the easiest ones to remove without changing anything visitors see or love about the design.
 
 ## In Short
 
-Resize, convert, lazy-load and cache — then measure again.
+Resize, convert, lazy-load and cache - then measure again.
 
 ## Where LaunchStudio Fits
 
-Image optimisation is often part of LaunchStudio's performance and launch work: upload processing with resizing and metadata stripping, modern formats, responsive and lazy loading, CDN caching and layout fixes — without changing the design you built. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, working from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); [web.dev's guide to optimising images](https://web.dev/learn/performance/image-performance) explains the techniques in detail.
+Image optimisation is often part of LaunchStudio's performance and launch work: upload processing with resizing and metadata stripping, modern formats, responsive and lazy loading, CDN caching and layout fixes - without changing the design you built. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, working from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); [web.dev's guide to optimising images](https://web.dev/learn/performance/image-performance) explains the techniques in detail.
 
 [Send us your site link](https://launchstudio.eu/en/#contact) and we will tell you how much your images weigh.
 
@@ -187,7 +187,7 @@ Image optimisation is often part of LaunchStudio's performance and launch work: 
 
 ### An AI-Native Founder in Action: A Holiday Home Site Built for Photos
 
-Vera Lammers, who rents out four holiday homes near Valkenburg, built Vakantiehuisje with v0 and a simple booking backend: beautiful full-width galleries of each home, the South Limburg hills and nearby attractions, with direct booking to avoid platform commissions. The photos came straight from a professional photographer — 6 to 10 MB each.
+Vera Lammers, who rents out four holiday homes near Valkenburg, built Vakantiehuisje with v0 and a simple booking backend: beautiful full-width galleries of each home, the South Limburg hills and nearby attractions, with direct booking to avoid platform commissions. The photos came straight from a professional photographer - 6 to 10 MB each.
 
 The homepage weighed 48 MB. On mobile, the first photo took around nine seconds to appear, and Google Search Console flagged most pages as "poor" for Core Web Vitals. Most visitors came from phones via Instagram and left before the page finished loading. Her hosting plan's bandwidth limit was exceeded twice during the spring holiday. Guest reviews with photos were stored with GPS data.
 
@@ -196,9 +196,9 @@ Over five business days, LaunchStudio's engineers set up an upload pipeline that
 **Result:** The homepage dropped from 48 MB to about 1.9 MB, and the main image now appears in around a second on 4G. Search Console moved most pages to "good," direct bookings rose by roughly a quarter in the following summer, and bandwidth costs fell below the plan's limit.
 
 > *"The photos were the reason people booked. They were also the reason people left before they saw them."*
-> — **Vera Lammers, Founder, Vakantiehuisje (Valkenburg)**
+> - **Vera Lammers, Founder, Vakantiehuisje (Valkenburg)**
 
-**Cost & Timeline:** €1,400 (Launch Ready package: image pipeline, CDN, responsive loading and metadata removal) — completed in 5 business days.
+**Cost & Timeline:** €1,400 (Launch Ready package: image pipeline, CDN, responsive loading and metadata removal) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -216,7 +216,7 @@ No. Optimisation happens in how images are processed and delivered; the design c
 
 ### How does Manifera approach performance work?
 
-By measuring real-user performance, then fixing the biggest contributors first — frequently images, queries and caching — as part of production readiness.
+By measuring real-user performance, then fixing the biggest contributors first - frequently images, queries and caching - as part of production readiness.
 
 ### Does image optimisation help SEO and AI visibility?
 

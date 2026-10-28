@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-A Product Lead or IT Manager at a mobility-as-a-service (MaaS) platform spanning multiple transit agencies faces a specific fare-logic reality that's easy to underweight during architecture planning: fare-capping rules — the daily and weekly spending caps that ensure a rider is never charged more than the equivalent of a period pass, and the concession structures applying discounts for seniors, students, and other eligible rider categories — genuinely differ from one agency to the next, with each operator setting its own cap thresholds, eligibility rules, and discount percentages independently. A platform architected around a single, uniform fare-logic implementation across all agencies risks either overcharging riders under one agency's actual rules or failing to apply a legally or contractually required concession under another's.
+A Product Lead or IT Manager at a mobility-as-a-service (MaaS) platform spanning multiple transit agencies faces a specific fare-logic reality that's easy to underweight during architecture planning: fare-capping rules - the daily and weekly spending caps that ensure a rider is never charged more than the equivalent of a period pass, and the concession structures applying discounts for seniors, students, and other eligible rider categories - genuinely differ from one agency to the next, with each operator setting its own cap thresholds, eligibility rules, and discount percentages independently. A platform architected around a single, uniform fare-logic implementation across all agencies risks either overcharging riders under one agency's actual rules or failing to apply a legally or contractually required concession under another's.
 
 ## Why a Single Hardcoded Fare Logic Creates Real Rider-Trust Risk
 
@@ -28,7 +28,7 @@ A MaaS platform built around one fare-capping and concession implementation appl
 
 ## Why Agency-Configurable Fare Architecture Is the More Sustainable Approach
 
-A fare engine architected from the start around agency-configurable rules — able to apply each specific agency's own cap thresholds, concession eligibility criteria, and discount percentages based on which agency's service a rider is actually using — lets a MaaS platform correctly honor every agency's actual fare policy without forcing a one-size-fits-all implementation onto operators with genuinely different rules. This isn't simply a matter of a per-agency price multiplier, since fare-capping logic is genuinely more structurally complex than a flat rate adjustment — caps typically accumulate across multiple trips within a rolling period, and concession eligibility often depends on rider-category verification distinct from the fare calculation itself, meaning the underlying system needs to support genuinely configurable fare-calculation logic per agency, not just a configurable price, to accommodate the actual range of fare structures across a platform's served operators.
+A fare engine architected from the start around agency-configurable rules - able to apply each specific agency's own cap thresholds, concession eligibility criteria, and discount percentages based on which agency's service a rider is actually using - lets a MaaS platform correctly honor every agency's actual fare policy without forcing a one-size-fits-all implementation onto operators with genuinely different rules. This isn't simply a matter of a per-agency price multiplier, since fare-capping logic is genuinely more structurally complex than a flat rate adjustment - caps typically accumulate across multiple trips within a rolling period, and concession eligibility often depends on rider-category verification distinct from the fare calculation itself, meaning the underlying system needs to support genuinely configurable fare-calculation logic per agency, not just a configurable price, to accommodate the actual range of fare structures across a platform's served operators.
 
 ## What Building Agency-Configurable Fare Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Mestni Prevoz Maribor, a Maribor-based transit and mobility platform, had built 
 Manifera's Vietnam-based dedicated development team rebuilt the fare engine's core architecture around a configurable, agency-specific ruleset, supporting each operator's actual cap accumulation period and concession eligibility rules, alongside reliable trip-to-agency attribution for multi-leg journeys and agency-specific revenue reconciliation, all without requiring separate, parallel fare systems per agency.
 
 > *"We'd built one fare logic and assumed the neighboring operators' rules were close enough to just reuse it. It turned out their actual cap and discount structures were different enough that riders using those routes were being charged incorrectly, and building real per-agency configurability was what let us integrate properly across every operator's actual fare rules instead of approximating them."*
-> — **Product Lead, Mestni Prevoz Maribor**
+> - **Product Lead, Mestni Prevoz Maribor**
 
 Mestni Prevoz Maribor successfully integrated its additional regional operators with agency-correct fare handling, and now treats fare-policy configurability as a standard architectural requirement for any new agency integration, rather than a single fare logic assumed to generalize across operators.
 
@@ -79,7 +79,7 @@ Mestni Prevoz Maribor successfully integrated its additional regional operators 
 
 ## Scoping Your Own MaaS Platform's Fare Engine for Multi-Agency Accuracy
 
-Before integrating a MaaS platform across multiple transit agencies, architect the fare engine around genuinely configurable, agency-specific rulesets — a single hardcoded fare logic forces an unnecessary trade-off between rider overcharging and unhonored concessions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a fare engine ready for genuine multi-agency accuracy.
+Before integrating a MaaS platform across multiple transit agencies, architect the fare engine around genuinely configurable, agency-specific rulesets - a single hardcoded fare logic forces an unnecessary trade-off between rider overcharging and unhonored concessions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a fare engine ready for genuine multi-agency accuracy.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between overcharging riders relative to a specific agency's a
 
 ### (Scenario: engineering lead scoping agency configurability) Is a simple per-agency price multiplier sufficient to handle fare-capping differences across operators?
 
-Not usually — fare-capping logic accumulates across trips within a rolling period and concession eligibility depends on rider verification, meaning the system needs genuinely configurable fare-calculation logic, not just a configurable price.
+Not usually - fare-capping logic accumulates across trips within a rolling period and concession eligibility depends on rider verification, meaning the system needs genuinely configurable fare-calculation logic, not just a configurable price.
 
 ### (Scenario: finance lead reviewing technical architecture) Why does reliable trip-to-agency attribution matter for fare accuracy?
 
@@ -110,7 +110,7 @@ Agencies periodically revise their own fare thresholds and concession structures
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: product lead scoping a multi-agency fare engine) Why does fare-capping and concession policy vary meaningfully across transit agencies?", "acceptedAnswer": { "@type": "Answer", "text": "Each agency independently sets its own cap thresholds, accumulation periods, and concession eligibility rules." } },
     { "@type": "Question", "name": "(Scenario: platform worried about rider trust) What's the risk of building a fare engine around a single, uniform fare-logic implementation?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between overcharging riders under one agency's rules or failing to honor another agency's required concessions." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping agency configurability) Is a simple per-agency price multiplier sufficient to handle fare-capping differences across operators?", "acceptedAnswer": { "@type": "Answer", "text": "Not usually — fare-capping accumulates across trips and concessions depend on verification, requiring genuinely configurable fare logic." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping agency configurability) Is a simple per-agency price multiplier sufficient to handle fare-capping differences across operators?", "acceptedAnswer": { "@type": "Answer", "text": "Not usually - fare-capping accumulates across trips and concessions depend on verification, requiring genuinely configurable fare logic." } },
     { "@type": "Question", "name": "(Scenario: finance lead reviewing technical architecture) Why does reliable trip-to-agency attribution matter for fare accuracy?", "acceptedAnswer": { "@type": "Answer", "text": "Applying agency-specific rules correctly depends on identifying which agency's service a trip used, a nuance for multi-leg journeys." } },
     { "@type": "Question", "name": "(Scenario: platform planning for future agency policy changes) Why should a fare engine be designed to accommodate each agency's fare-policy changes independently?", "acceptedAnswer": { "@type": "Answer", "text": "Agencies revise fare thresholds on independent schedules, and platform-wide rework for each change creates ongoing operational risk." } }
   ]

@@ -1,6 +1,6 @@
-🚨 Thijs Groen, sommelier in Nijmegen, bouwde WijnWijzer: een webshop voor wijnabonnementen met een v0-etalage en een Supabase-backend. Omdat hij graag wilde verdienen, besteedde hij zijn eerste twee weken aan Stripe-abonnementen — en bij een zachte lancering meldden 70 klanten zich aan. Toen werd het volgordeprobleem zichtbaar. 😳
+🚨 Thijs Groen, sommelier in Nijmegen, bouwde WijnWijzer: een webshop voor wijnabonnementen met een v0-etalage en een Supabase-backend. Omdat hij graag wilde verdienen, besteedde hij zijn eerste twee weken aan Stripe-abonnementen - en bij een zachte lancering meldden 70 klanten zich aan. Toen werd het volgordeprobleem zichtbaar. 😳
 
-Abonnementen hingen aan een klant-ID dat in de browser werd aangemaakt, waardoor terugkerende klanten op een nieuw apparaat dubbele accounts en dubbele afschrijvingen kregen. Leeftijdsverificatie — wettelijk verplicht bij alcohol — was een vinkje in de frontend, geheime Stripe-sleutels stonden in clientcode, en de database draaide in de VS. Dit is de volgorde die voorkomt dat u alles twee keer doet:
+Abonnementen hingen aan een klant-ID dat in de browser werd aangemaakt, waardoor terugkerende klanten op een nieuw apparaat dubbele accounts en dubbele afschrijvingen kregen. Leeftijdsverificatie - wettelijk verplicht bij alcohol - was een vinkje in de frontend, geheime Stripe-sleutels stonden in clientcode, en de database draaide in de VS. Dit is de volgorde die voorkomt dat u alles twee keer doet:
 
 ❌ Betalingen eerst gebouwd, op een zwak gebruikersmodel
 ❌ Leeftijdsverificatie alleen afgedwongen in de interface
@@ -10,7 +10,7 @@ Abonnementen hingen aan een klant-ID dat in de browser werd aangemaakt, waardoor
 ✅ Accounts samengebracht, Stripe-sleutels geroteerd en naar de server verplaatst
 ✅ Een degelijk gebruikersmodel op de server met opgeslagen en afgedwongen leeftijdsbevestiging
 ✅ Database gemigreerd naar een EU-regio met een getest herstel
-✅ Stripe opnieuw gebouwd rond geverifieerde webhooks — 11 dubbele records samengevoegd en 4 dubbele afschrijvingen terugbetaald — daarna staging, hosting en monitoring
+✅ Stripe opnieuw gebouwd rond geverifieerde webhooks - 11 dubbele records samengevoegd en 4 dubbele afschrijvingen terugbetaald - daarna staging, hosting en monitoring
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, volgen we elke keer dezelfde volgorde: eigenaarschap, geheimen, toegang, data, geld, levering, zichtbaarheid. ⚙️
 

@@ -41,7 +41,7 @@ With webhooks, the payment flow looks like this:
 
 5. The user's browser refreshes and sees the upgraded status.
 
-Because the confirmation happens server-to-server (Step 3), the user cannot intercept or fake it. And if their browser crashes, it does not matter—your server still received the webhook from Stripe.
+Because the confirmation happens server-to-server (Step 3), the user cannot intercept or fake it. And if their browser crashes, it does not matter - your server still received the webhook from Stripe.
 
 ## The Bouncer: Signature Verification
 
@@ -87,7 +87,7 @@ Logan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 
 **Result:** Logan guaranteed credit provisioning for all successful payments, eliminating manual customer support tickets.
 
-**Cost & Timeline:** €1,100 (Webhook Integration Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,100 (Webhook Integration Package) - production-ready and deployed in 4 business days.
 
 ---
 

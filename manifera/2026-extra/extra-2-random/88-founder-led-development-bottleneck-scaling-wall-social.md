@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Honest Dependency Audit:** What genuinely requires founder knowledge vs. what's just habit.
-✅ **Deliberate Knowledge Transfer:** Documentation, walkthroughs, paired sessions — not left to chance.
+✅ **Deliberate Knowledge Transfer:** Documentation, walkthroughs, paired sessions - not left to chance.
 ✅ **Architectural Simplification:** Untangling the founder-bottleneck code reduces both risk and review burden.
 
 The real test: can the team ship confidently while the founder is on vacation? 🛡️

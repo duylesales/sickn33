@@ -1,6 +1,6 @@
-🚨 Ruud Schipper's Transportplanner manages transport orders for 26 regional hauliers, and their biggest shippers send orders automatically from their own systems. There was no real API — shippers called the Supabase REST endpoints directly, each with the service role key. Then an AI assistant renamed two columns during a refactor. 😳
+🚨 Ruud Schipper's Transportplanner manages transport orders for 26 regional hauliers, and their biggest shippers send orders automatically from their own systems. There was no real API - shippers called the Supabase REST endpoints directly, each with the service role key. Then an AI assistant renamed two columns during a refactor. 😳
 
-Nine shippers' systems stopped creating orders. For two days, around 1,100 transport orders silently never arrived — and the service keys turned out to give every shipper full access to every haulier's data. Here's how to version an API your customers depend on: 🧠
+Nine shippers' systems stopped creating orders. For two days, around 1,100 transport orders silently never arrived - and the service keys turned out to give every shipper full access to every haulier's data. Here's how to version an API your customers depend on: 🧠
 
 ❌ The database schema exposed as the "API", so a column rename broke customers
 ❌ The service role key handed to integrators

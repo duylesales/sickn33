@@ -1,4 +1,4 @@
-🚨 Sebastian Krammer had an idea for TicketFlow, an event ticketing tool, in Zurich — a partial Lovable prototype with a few screens and no working backend. One freelancer quoted him €14,000. A traditional agency said "call us for enterprise pricing." Neither told him what he'd actually be paying for. 😳
+🚨 Sebastian Krammer had an idea for TicketFlow, an event ticketing tool, in Zurich - a partial Lovable prototype with a few screens and no working backend. One freelancer quoted him €14,000. A traditional agency said "call us for enterprise pricing." Neither told him what he'd actually be paying for. 😳
 
 Most founders price out the €20-a-month AI tool subscription and think that's the number. It isn't. 🧠
 
@@ -13,7 +13,7 @@ Most founders price out the €20-a-month AI tool subscription and think that's 
 
 At **LaunchStudio**, Manifera's 11+ years of production engineering experience out of Ho Chi Minh City means we scope exactly what's missing instead of quoting a black box. 🛡️
 
-Sebastian's result: a full production build — booking, payments, accounts, deployment — for a fraction of the freelancer quote, delivered in 11 business days. 🚀
+Sebastian's result: a full production build - booking, payments, accounts, deployment - for a fraction of the freelancer quote, delivered in 11 business days. 🚀
 
 👉 Wondering what it actually costs to take your AI app to production?: https://launchstudio.eu/en/blog/what-it-costs-to-build-an-ai-app
 

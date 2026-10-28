@@ -1,8 +1,8 @@
-⏱️ Bart Hoekstra built "BouwKoppel," a construction project sync tool, using v0. He tested it carefully and repeatedly, alone, and it seemed solid. Then real construction crews started using it simultaneously — and two crew members updating the same project status at nearly the same moment could silently overwrite each other's changes.
+⏱️ Bart Hoekstra built "BouwKoppel," a construction project sync tool, using v0. He tested it carefully and repeatedly, alone, and it seemed solid. Then real construction crews started using it simultaneously - and two crew members updating the same project status at nearly the same moment could silently overwrite each other's changes.
 
 Some bugs literally cannot exist until two real users touch the app at once. 🧠
 
-❌ Race conditions require genuine concurrency — no amount of solo testing, however thorough, can trigger them
+❌ Race conditions require genuine concurrency - no amount of solo testing, however thorough, can trigger them
 ❌ Two updates racing to write the same record could silently overwrite one another
 ❌ AI coding tools generate code for sequential, one-user-at-a-time scenarios by default
 ❌ Nothing flagged the risk because "it worked when I tested it" and "it's safe under concurrency" are different claims

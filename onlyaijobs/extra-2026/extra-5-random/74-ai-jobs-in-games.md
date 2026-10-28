@@ -174,7 +174,7 @@ Studios hire analytical skill and value genuine interest in games, though enthus
 
 Expect questions such as: how would you evaluate whether a new event improved the game; how would you design matchmaking when the player population is small; how would you detect cheating with very few confirmed examples; how would you measure whether a monetisation change harmed long-term retention; how would you explain a negative finding to a designer whose feature you are assessing.
 
-Preparation that helps: understand survival analysis and cohort retention, which are the sector's core analytical tools; learn the basics of skill rating systems; be able to discuss experimentation with network effects; and be able to talk about a game you play in analytical terms — what keeps players, where they stop, how the economy works.
+Preparation that helps: understand survival analysis and cohort retention, which are the sector's core analytical tools; learn the basics of skill rating systems; be able to discuss experimentation with network effects; and be able to talk about a game you play in analytical terms - what keeps players, where they stop, how the economy works.
 
 The temperament that succeeds is one comfortable with fast iteration, ambiguous creative goals and the reality that the answer is sometimes that a feature designers love is not working.
 

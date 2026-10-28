@@ -26,7 +26,7 @@ The first: customers discover it themselves, email support, receive nothing back
 
 The second: a message appears within six minutes saying the product is unavailable and being worked on. An update at twenty minutes. A note when it is fixed, saying what happened. Almost nobody leaves, and two customers reply to say thanks.
 
-Same outage, same duration, entirely different outcome — and the difference costs roughly an afternoon to set up once.
+Same outage, same duration, entirely different outcome - and the difference costs roughly an afternoon to set up once.
 
 ## Know Before They Do
 
@@ -36,7 +36,7 @@ Three checks, all cheap, cover most of it.
 
 **An external uptime check** hitting your site every minute from outside your infrastructure, alerting you when it fails twice in a row. Free at this volume from several services. Point it at a real page rather than the home page if your home page is static, because a static page can be perfectly healthy while the application behind it is not.
 
-**A health endpoint** that verifies the things that actually matter — the database answers, storage responds, the queue is being processed — and returns a failure if any of them do not. A site that loads while the database is unreachable is down from a customer's point of view, and only a health check that looks deeper will say so.
+**A health endpoint** that verifies the things that actually matter - the database answers, storage responds, the queue is being processed - and returns a failure if any of them do not. A site that loads while the database is unreachable is down from a customer's point of view, and only a health check that looks deeper will say so.
 
 **An alert on the business number**, as discussed elsewhere in this series: if your product normally records forty bookings between nine and eleven and has recorded none, something is wrong even when every technical signal is green.
 
@@ -46,7 +46,7 @@ Route all three to a phone rather than to email. An alert that waits in an inbox
 
 A status page is a place customers can look that does not depend on the thing that is broken. That is the entire requirement.
 
-Three options, in increasing order of effort. A hosted status page service, which is free at small scale and includes subscriptions so customers can be notified without you sending anything. A simple page on a separate host — different platform, different domain — that you update by editing a file. Or, at minimum, a pinned message on whatever channel your customers already use.
+Three options, in increasing order of effort. A hosted status page service, which is free at small scale and includes subscriptions so customers can be notified without you sending anything. A simple page on a separate host - different platform, different domain - that you update by editing a file. Or, at minimum, a pinned message on whatever channel your customers already use.
 
 Two rules matter more than the choice. It must be hosted somewhere your outage cannot take down, which is the mistake people make when they put status on their own application. And it must be discoverable before the incident: linked in your footer, in your onboarding email, in your support auto-reply. A status page nobody knows about is one nobody visits.
 
@@ -58,7 +58,7 @@ Post within ten minutes, before you know the cause. The first message needs four
 
 *Some users cannot log in. We are investigating and will update by 10:30.*
 
-Then update on the schedule you promised, even when there is nothing new. "Still working on it, next update at 11:00" is a complete and useful message — it tells people the situation is being handled, which is the only question they have.
+Then update on the schedule you promised, even when there is nothing new. "Still working on it, next update at 11:00" is a complete and useful message - it tells people the situation is being handled, which is the only question they have.
 
 Two things to avoid. Do not speculate about the cause in public before you know, because you will be wrong in an interesting way and it will be quoted back to you. And do not blame a provider in the first message; customers bought from you, and the relationship is with you.
 
@@ -68,13 +68,13 @@ When it is over, one message: what happened, how long it lasted, what was affect
 
 Specificity is what separates a note that builds trust from one that reads as damage control. "A database configuration change caused connections to be refused for 38 minutes; no data was lost; we have added a check that would have caught it before deployment" is a message that makes people more confident, not less.
 
-Keep the history visible. A status page showing three incidents over a year, each handled and explained, is more reassuring than a blank page — it demonstrates that problems are noticed and resolved, which is the actual question a business customer has.
+Keep the history visible. A status page showing three incidents over a year, each handled and explained, is more reassuring than a blank page - it demonstrates that problems are noticed and resolved, which is the actual question a business customer has.
 
 ## The Ones You Cannot Fix
 
 A meaningful share of your outages will not be your fault. Your hosting platform, your database provider, a payment processor, a DNS provider.
 
-Subscribe to each of their status pages, so you learn from them rather than from your own monitoring — it saves the twenty minutes you would otherwise spend looking for a bug in your code that does not exist.
+Subscribe to each of their status pages, so you learn from them rather than from your own monitoring - it saves the twenty minutes you would otherwise spend looking for a bug in your code that does not exist.
 
 Communicate the same way regardless. "Our hosting provider is experiencing an incident affecting the application; we are monitoring and will update at 14:00" is honest and adequate. What customers do not accept is silence, and the fact that the cause was somebody else's does not change that.
 
@@ -82,7 +82,7 @@ Communicate the same way regardless. "Our hosting provider is experiencing an in
 
 Maintenance announced in advance is barely an event. The same maintenance unannounced is an outage.
 
-Give notice proportionate to the impact: a few days for something brief, longer where customers may need to plan around it. Say what will be unavailable and for how long, choose a window that suits your customers rather than you — for a Dutch business product that is early morning or a weekend, not Tuesday at eleven — and post when it is finished.
+Give notice proportionate to the impact: a few days for something brief, longer where customers may need to plan around it. Say what will be unavailable and for how long, choose a window that suits your customers rather than you - for a Dutch business product that is early morning or a weekend, not Tuesday at eleven - and post when it is finished.
 
 The small discipline that makes this work: overestimate the window and finish early. Nobody minds being told it took less time than expected.
 
@@ -90,19 +90,19 @@ The small discipline that makes this work: overestimate the window and finish ea
 
 Not every customer needs the same message, and deciding that during an incident wastes the minutes you do not have.
 
-Three tiers cover most small products. Everyone gets the status page, which requires no effort per incident once subscriptions exist. Customers directly affected — the ones whose data was involved, or whose enrolment window fell inside the outage — get an email naming what happened to them specifically. And a small number of key accounts, the ones who would escalate or who have a contract mentioning availability, get a direct message from you personally, before they ask.
+Three tiers cover most small products. Everyone gets the status page, which requires no effort per incident once subscriptions exist. Customers directly affected - the ones whose data was involved, or whose enrolment window fell inside the outage - get an email naming what happened to them specifically. And a small number of key accounts, the ones who would escalate or who have a contract mentioning availability, get a direct message from you personally, before they ask.
 
 Write the three templates now. During an incident, filling in four blanks takes ninety seconds; composing a message while a product is down takes twenty minutes and produces worse writing.
 
-One more decision worth making in calm conditions: who speaks. For a solo founder that is obvious. As soon as there are two of you, the person fixing the problem should not also be the person writing updates, because switching between the two does both badly. If there is only one of you, alternate deliberately — fix for fifteen minutes, then write for two — rather than disappearing into the problem and surfacing an hour later to a support queue that has become its own incident.
+One more decision worth making in calm conditions: who speaks. For a solo founder that is obvious. As soon as there are two of you, the person fixing the problem should not also be the person writing updates, because switching between the two does both badly. If there is only one of you, alternate deliberately - fix for fifteen minutes, then write for two - rather than disappearing into the problem and surfacing an hour later to a support queue that has become its own incident.
 
-The related habit is to keep a running note during the incident — times, what you tried, what you observed. It costs nothing while you are working and it is the raw material for the explanation afterwards, which is otherwise reconstructed from memory a day later and is always vaguer than it should be.
+The related habit is to keep a running note during the incident - times, what you tried, what you observed. It costs nothing while you are working and it is the raw material for the explanation afterwards, which is otherwise reconstructed from memory a day later and is always vaguer than it should be.
 
 ## Setting This Up
 
 For an existing product this is typically half a day: an external uptime check on a page that exercises the application, a health endpoint verifying database, storage and queue, an alert on the core business metric, all three routed to a phone, a status page hosted independently of your infrastructure and linked where customers will find it, a short written procedure covering the first message and the update cadence, subscriptions to every provider's status feed, and a template for the after-the-fact explanation so it is written once rather than composed under pressure.
 
-LaunchStudio sets this up as part of the managed hosting arrangement at €49 per month, where the alerts arrive with us and the first status update is not something you have to remember to write at seven in the morning. The engineers are Manifera's — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio sets this up as part of the managed hosting arrangement at €49 per month, where the alerts arrive with us and the first status update is not something you have to remember to write at seven in the morning. The engineers are Manifera's - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Ask us how you would find out your product is down](https://launchstudio.eu/en/#contact) at three on a Saturday afternoon.
 
@@ -112,7 +112,7 @@ LaunchStudio sets this up as part of the managed hosting arrangement at €49 pe
 
 Tessa Groenewoud built Cursusinschrijving in Lovable: course registration and payment for training providers and community colleges, 29 organisations, with enrolment peaks at the start of each term.
 
-On the first Monday of September — the busiest morning of her year — a Supabase connection issue made the product unavailable for 41 minutes between 08:50 and 09:31. Enrolment for three organisations opened at nine.
+On the first Monday of September - the busiest morning of her year - a Supabase connection issue made the product unavailable for 41 minutes between 08:50 and 09:31. Enrolment for three organisations opened at nine.
 
 She was not aware until 09:20, when the fourth support email arrived. She spent the next twenty minutes fixing it and had no capacity to reply to anyone. By the time she wrote to customers at 11:00, two organisations had told their students to try again later, one had posted on social media that the system was down, and two cancelled within the fortnight, citing reliability.
 
@@ -121,9 +121,9 @@ One business day afterwards: an external uptime check every minute against a pag
 **Result:** the following January a comparable incident lasted 26 minutes. The first status message went out at minute seven, two updates followed, and the explanation was posted the same afternoon. Tessa received one support email, from an organisation asking whether the status page also covered payments. Nobody cancelled.
 
 > *"The second outage was a better experience for my customers than a normal Tuesday, which tells you how bad the first one was. It was not the downtime. It was that for half an hour nobody could tell them anything."*
-> — **Tessa Groenewoud, Founder, Cursusinschrijving (Amersfoort)**
+> - **Tessa Groenewoud, Founder, Cursusinschrijving (Amersfoort)**
 
-**Cost & Timeline:** €1,500 (external uptime monitoring, health endpoint, business metric alerting, independent status page with subscriptions, incident procedure and templates, provider status subscriptions) — completed in 1 business day.
+**Cost & Timeline:** €1,500 (external uptime monitoring, health endpoint, business metric alerting, independent status page with subscriptions, incident procedure and templates, provider status subscriptions) - completed in 1 business day.
 
 ## Frequently Asked Questions
 
@@ -145,7 +145,7 @@ The opposite. A page showing incidents that were noticed, handled and explained 
 
 ### What is the minimum monitoring to have before a status page matters?
 
-An external uptime check against a page that exercises the application, a health endpoint testing database and storage, and an alert on your core business action — all routed to a phone.
+An external uptime check against a page that exercises the application, a health endpoint testing database and storage, and an alert on your core business action - all routed to a phone.
 
 <script type="application/ld+json">
 {
@@ -181,7 +181,7 @@ An external uptime check against a page that exercises the application, a health
       "name": "Does publishing incidents make a product look unreliable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — a history of incidents noticed, handled and explained builds more confidence than an empty page."
+        "text": "No - a history of incidents noticed, handled and explained builds more confidence than an empty page."
       }
     },
     {
@@ -189,7 +189,7 @@ An external uptime check against a page that exercises the application, a health
       "name": "What monitoring is needed before a status page is useful?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An external uptime check exercising the application, a health endpoint covering database and storage, and an alert on your core business action — sent to a phone."
+        "text": "An external uptime check exercising the application, a health endpoint covering database and storage, and an alert on your core business action - sent to a phone."
       }
     }
   ]

@@ -6,9 +6,9 @@
 ❌ **Verbal Answers, No Contract:** Strong answers in a sales call mean nothing if none of it gets written into the statement of work.
 
 **The Manifera Solution:**
-✅ **Five-Layer Pipeline Audit:** Source control, build automation, test gates, deployment strategy, and observability — verified live, not from a slide.
+✅ **Five-Layer Pipeline Audit:** Source control, build automation, test gates, deployment strategy, and observability - verified live, not from a slide.
 ✅ **Benchmark Numbers on Request:** Real deployment frequency and MTTR figures shared within a day, not assembled for the pitch.
-✅ **Full-Stack Pod Ownership:** DevOps specialists embedded with the developers who write the code from day one — no handoff risk when the engagement ends.
+✅ **Full-Stack Pod Ownership:** DevOps specialists embedded with the developers who write the code from day one - no handoff risk when the engagement ends.
 
 A vendor confident in their process welcomes the scrutiny. One who deflects it just told you how the relationship goes. 🧩
 

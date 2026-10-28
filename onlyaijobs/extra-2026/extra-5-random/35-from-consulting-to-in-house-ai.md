@@ -51,7 +51,7 @@ Consulting is one of the most common starting points for AI careers in Europe, a
 
 Consultants arrive with real advantages, and should say so plainly in interviews.
 
-They have seen many organisations, which gives them pattern recognition about what works and what stalls. They can run a workshop, write a clear document and present to executives — skills that are scarce in internal teams. They are used to entering an unfamiliar domain and becoming useful in weeks. They handle ambiguity and unreasonable deadlines without drama. And they have usually worked across several industries, which makes them good at spotting when an organisation believes its problem is unique when it is not.
+They have seen many organisations, which gives them pattern recognition about what works and what stalls. They can run a workshop, write a clear document and present to executives - skills that are scarce in internal teams. They are used to entering an unfamiliar domain and becoming useful in weeks. They handle ambiguity and unreasonable deadlines without drama. And they have usually worked across several industries, which makes them good at spotting when an organisation believes its problem is unique when it is not.
 
 These are genuine strengths, and internal teams value them once a consultant stops presenting them as consulting skills and starts presenting them as delivery skills.
 
@@ -175,7 +175,7 @@ A data scientist at a European consultancy interviewed for a machine learning en
 
 The hiring manager asked a simple question: what happened to it afterwards? He did not know. The engagement had ended at handover.
 
-He answered honestly, and then said what he would have done differently — the monitoring he would have insisted on, the documentation he would have written for the client's team, the decision he now believed was wrong because it assumed a data feed that the client could not maintain.
+He answered honestly, and then said what he would have done differently - the monitoring he would have insisted on, the documentation he would have written for the client's team, the decision he now believed was wrong because it assumed a data feed that the client could not maintain.
 
 That answer got him the job. The manager later said that every consultant they interviewed had a polished delivery story, and that he was the only one who had thought seriously about what his work required after he left.
 

@@ -1,4 +1,4 @@
-📊 Five bids for "the same project," ranging from €80K to €400K. That's not a pricing spread — it's proof your RFP let five vendors quote five different projects that happen to share a title. 📝
+📊 Five bids for "the same project," ranging from €80K to €400K. That's not a pricing spread - it's proof your RFP let five vendors quote five different projects that happen to share a title. 📝
 
 **The Pain Points:**
 ❌ **Interpreted Scope:** General problem statements let vendors quote against whatever they assume you mean.
@@ -10,7 +10,7 @@
 ✅ **Standardized Pricing Breakdown:** The same categories for every bidder, line by line.
 ✅ **Assumptions in Writing:** Testing depth, seniority, and change management stated upfront, not discovered later.
 
-Comparable bids don't happen by accident — they happen by RFP design. 🎯
+Comparable bids don't happen by accident - they happen by RFP design. 🎯
 
 👉 Read our full deep dive on RFPs for software development: https://www.manifera.com/blog/rfp-for-software-development
 

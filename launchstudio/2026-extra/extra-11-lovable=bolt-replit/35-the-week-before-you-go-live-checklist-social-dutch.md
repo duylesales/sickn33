@@ -1,4 +1,4 @@
-🚀 Daan Coppens had een harde lanceringsdatum voor Voorraadje met 11 winkels in Maastricht en Heerlen. Slechts 48 uur voor livegang bleken zijn Stripe-webhooks ongeverifieerd, e-mail authenticatie ontbrak en er was nog nooit een back-up hersteld — waardoor zijn hele go-live gevaar liep. 😳
+🚀 Daan Coppens had een harde lanceringsdatum voor Voorraadje met 11 winkels in Maastricht en Heerlen. Slechts 48 uur voor livegang bleken zijn Stripe-webhooks ongeverifieerd, e-mail authenticatie ontbrak en er was nog nooit een back-up hersteld - waardoor zijn hele go-live gevaar liep. 😳
 
 In de laatste 7 dagen voor livegang komen verborgen technische tekortkomingen aan het licht. Uw verplichte pre-launch checklist:
 

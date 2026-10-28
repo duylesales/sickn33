@@ -43,7 +43,7 @@ Content Format: Local Guide
 }
 </script>
 
-Lyon is France's second-largest metropolitan economy and, for many French engineers, the most attractive alternative to Paris. The city combines a historic centre listed by UNESCO, a renowned food culture and a strong economy built on life sciences, diagnostics, chemicals, industry, digital services and video games. It hosts international organisations such as Interpol and the World Health Organization's International Agency for Research on Cancer. For experienced professionals, data science jobs in Lyon offer serious work — particularly in health and industry — at a lower cost of living than Paris and with a two-hour train ride to the capital. This guide maps the opportunities and explains what to consider.
+Lyon is France's second-largest metropolitan economy and, for many French engineers, the most attractive alternative to Paris. The city combines a historic centre listed by UNESCO, a renowned food culture and a strong economy built on life sciences, diagnostics, chemicals, industry, digital services and video games. It hosts international organisations such as Interpol and the World Health Organization's International Agency for Research on Cancer. For experienced professionals, data science jobs in Lyon offer serious work - particularly in health and industry - at a lower cost of living than Paris and with a two-hour train ride to the capital. This guide maps the opportunities and explains what to consider.
 
 ## The Sectors Behind Data Science Jobs in Lyon
 
@@ -88,13 +88,13 @@ French is essential for daily life and for most workplaces in Lyon, especially i
 
 ## Living in Lyon
 
-Lyon sits at the confluence of the Rhône and Saône rivers, with a lively old town, extensive parks and a famous gastronomic tradition. Public transport — metro, trams, buses and a funicular — is efficient, and cycling has grown significantly. Housing is more affordable than in Paris, though prices have risen. The Part-Dieu business district hosts many offices, while life science and industrial sites are spread around the metropolitan area; check commute times to the exact site. The Alps and the Mediterranean are within a few hours, and high-speed trains connect to Paris in about two hours.
+Lyon sits at the confluence of the Rhône and Saône rivers, with a lively old town, extensive parks and a famous gastronomic tradition. Public transport - metro, trams, buses and a funicular - is efficient, and cycling has grown significantly. Housing is more affordable than in Paris, though prices have risen. The Part-Dieu business district hosts many offices, while life science and industrial sites are spread around the metropolitan area; check commute times to the exact site. The Alps and the Mediterranean are within a few hours, and high-speed trains connect to Paris in about two hours.
 
 ## How OnlyAIJobs Fits a Lyon Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. It shows each vacancy at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a better position.
 
-Its listings are currently concentrated in the Netherlands, so for data science jobs in Lyon you will find few or no local vacancies there today. Use French job portals, APEC for executive-level roles, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Lyon with the Netherlands — where employers such as Accenture, Cegeka, Holland Innovative and Mollie list AI roles — and as a method: in a metropolitan area where life science and industrial sites lie outside the centre, searching by real commute is essential. Lyon employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for data science jobs in Lyon you will find few or no local vacancies there today. Use French job portals, APEC for executive-level roles, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Lyon with the Netherlands - where employers such as Accenture, Cegeka, Holland Innovative and Mollie list AI roles - and as a method: in a metropolitan area where life science and industrial sites lie outside the centre, searching by real commute is essential. Lyon employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Diagnostics and Microbiology Data Science
 
@@ -106,7 +106,7 @@ Lyon's international health research institutions analyse data from large cohort
 
 ## Industrial Data Science in the Lyon Region
 
-The Lyon region's industrial base — chemicals, trucks, household appliances, electrical equipment and materials — offers data scientists concrete engineering problems. Typical projects include process optimisation in chemical plants to improve yield and reduce energy use, predictive maintenance of production equipment, quality control with computer vision, demand forecasting and supply chain optimisation. The energy transition adds urgency: chemical and industrial sites are working to reduce emissions, and data-driven optimisation plays a role. Industrial roles usually require French and regular presence on site, but they offer stable employers and visible impact.
+The Lyon region's industrial base - chemicals, trucks, household appliances, electrical equipment and materials - offers data scientists concrete engineering problems. Typical projects include process optimisation in chemical plants to improve yield and reduce energy use, predictive maintenance of production equipment, quality control with computer vision, demand forecasting and supply chain optimisation. The energy transition adds urgency: chemical and industrial sites are working to reduce emissions, and data-driven optimisation plays a role. Industrial roles usually require French and regular presence on site, but they offer stable employers and visible impact.
 
 ## Games and Player Analytics
 
@@ -118,7 +118,7 @@ France's CIFRE scheme, which lets companies employ PhD students supervised by ac
 
 ## Questions to Ask Lyon Employers
 
-- At which site will I work — Part-Dieu, Gerland, a suburban campus or an industrial site?
+- At which site will I work - Part-Dieu, Gerland, a suburban campus or an industrial site?
 - Which collective agreement applies, and what is the cadre working-time arrangement?
 - For health roles: which regulations apply to the models, and how is validation organised?
 - What is the working language for the team and for documentation?
@@ -143,7 +143,7 @@ Lyon suits data scientists who want serious work in health, diagnostics or indus
 
 ## Skills That Stand Out in Lyon
 
-Beyond core machine learning, Lyon employers value several specific skills. In health, biostatistics, survival analysis, genomics and experience with validated software development are prized. In industry, time series analysis, process knowledge and the ability to deploy models close to operations matter most. Across sectors, strong data engineering, reproducible workflows and clear communication with non-specialists — biologists, clinicians, process engineers or game designers — make the difference between a model that stays in a notebook and one that changes decisions. Knowledge of GDPR and the EU AI Act is increasingly expected, especially in health and public research, where data protection and documentation requirements are strict. Building one of these specialisms alongside your core skills makes you considerably more competitive for data science jobs in Lyon.
+Beyond core machine learning, Lyon employers value several specific skills. In health, biostatistics, survival analysis, genomics and experience with validated software development are prized. In industry, time series analysis, process knowledge and the ability to deploy models close to operations matter most. Across sectors, strong data engineering, reproducible workflows and clear communication with non-specialists - biologists, clinicians, process engineers or game designers - make the difference between a model that stays in a notebook and one that changes decisions. Knowledge of GDPR and the EU AI Act is increasingly expected, especially in health and public research, where data protection and documentation requirements are strict. Building one of these specialisms alongside your core skills makes you considerably more competitive for data science jobs in Lyon.
 
 ## Beyond Lyon
 
@@ -159,7 +159,7 @@ Ask to meet the scientists or engineers who will use your models; in Lyon's heal
 
 A biostatistician working for a Paris pharmaceutical company wants a better balance between work and family life. She receives an offer from a diagnostics company near Lyon to lead data science for a new generation of diagnostic tests.
 
-The salary is similar to her Paris salary, and housing costs in Lyon are noticeably lower. The role involves working with microbiologists, software engineers and regulatory specialists to validate machine learning models for diagnostic software. She accepts. After a year, she says the regulated environment requires patience and meticulous documentation, but seeing her work contribute to products used in hospitals is deeply satisfying — and her family enjoys Lyon's quality of life.
+The salary is similar to her Paris salary, and housing costs in Lyon are noticeably lower. The role involves working with microbiologists, software engineers and regulatory specialists to validate machine learning models for diagnostic software. She accepts. After a year, she says the regulated environment requires patience and meticulous documentation, but seeing her work contribute to products used in hospitals is deeply satisfying - and her family enjoys Lyon's quality of life.
 
 ## Key Takeaways
 

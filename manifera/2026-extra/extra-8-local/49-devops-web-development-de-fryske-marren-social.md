@@ -1,4 +1,4 @@
-⛵ Your busiest eight weeks of the year are exactly when a bad release costs the most — so why are you deploying the same reckless way? 🚤
+⛵ Your busiest eight weeks of the year are exactly when a bad release costs the most - so why are you deploying the same reckless way? 🚤
 
 **The Pain Points:**
 ❌ **Full-Cutover Roulette:** One release, every customer affected instantly if it breaks.

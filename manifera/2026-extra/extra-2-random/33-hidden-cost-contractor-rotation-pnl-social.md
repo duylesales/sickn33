@@ -1,8 +1,8 @@
-🚨 The day rate on your outsourcing contract is the smallest number in the true cost equation — the real damage is buried three lines down in "professional services" as unbudgeted rework nobody labeled correctly. ⚙️💥
+🚨 The day rate on your outsourcing contract is the smallest number in the true cost equation - the real damage is buried three lines down in "professional services" as unbudgeted rework nobody labeled correctly. ⚙️💥
 
 **The Pain Points:**
 ❌ **High Contractor Churn & Lost Context:** A CFO signs off on a staff-augmentation contract at an attractive blended day rate, only to discover eighteen months later that the engineering team has turned over completely twice, and every rotation triggered a re-onboarding period during which delivery slowed and defects rose without a single change order ever appearing on the invoice.
-❌ **Zero Architectural Accountability:** Contractor rotation that isn't structurally prevented typically costs 25-40% of a project's total budget in re-onboarding, rework, and defect remediation that never appears as a labeled line item — meaning a €400,000 annual outsourcing contract can quietly consume an additional €100,000-€160,000 in disguised cost, invisible until someone finally reconciles delivered features against total spend.
+❌ **Zero Architectural Accountability:** Contractor rotation that isn't structurally prevented typically costs 25-40% of a project's total budget in re-onboarding, rework, and defect remediation that never appears as a labeled line item - meaning a €400,000 annual outsourcing contract can quietly consume an additional €100,000-€160,000 in disguised cost, invisible until someone finally reconciles delivered features against total spend.
 ❌ **Inflated Hourly Body-Shop Invoices:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

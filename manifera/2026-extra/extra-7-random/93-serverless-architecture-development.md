@@ -20,7 +20,7 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-Serverless architecture development is sold on the promise of never thinking about servers again, and for the first six months after launch that promise usually holds — right up until traffic grows enough that the per-invocation pricing model that made the proof of concept nearly free starts producing a monthly bill that nobody modeled at the scale the product actually reached.
+Serverless architecture development is sold on the promise of never thinking about servers again, and for the first six months after launch that promise usually holds - right up until traffic grows enough that the per-invocation pricing model that made the proof of concept nearly free starts producing a monthly bill that nobody modeled at the scale the product actually reached.
 
 **The Pain:** A VP of Engineering greenlights a serverless application development approach for a new product because it promises fast time-to-market and no infrastructure to manage upfront, and the team ships quickly, but nobody on the team ran the cost model forward to what the architecture looks like at ten times or a hundred times the launch traffic, leaving cost as an unpleasant surprise rather than a planned tradeoff.
 
@@ -28,17 +28,17 @@ Serverless architecture development is sold on the promise of never thinking abo
 
 ## Where Serverless Genuinely Wins, and Where the Bill Turns
 
-**Spiky, unpredictable traffic is the strongest case.** Serverless architecture development earns its premium-per-invocation cost when traffic is genuinely spiky or unpredictable — a workload that would otherwise require provisioning for peak capacity and sitting idle the rest of the time is exactly where pay-per-execution pricing beats an always-on server, because you're not paying for the idle time at all.
+**Spiky, unpredictable traffic is the strongest case.** Serverless architecture development earns its premium-per-invocation cost when traffic is genuinely spiky or unpredictable - a workload that would otherwise require provisioning for peak capacity and sitting idle the rest of the time is exactly where pay-per-execution pricing beats an always-on server, because you're not paying for the idle time at all.
 
-**Sustained, high-volume traffic flips the economics.** Once a function is invoked continuously at high volume, the per-invocation premium that made serverless attractive at low volume starts compounding into a real number, and at that point an always-on container or a reserved-capacity model frequently becomes cheaper for the exact same workload — the crossover point is a specific, calculable traffic volume, not a vague warning.
+**Sustained, high-volume traffic flips the economics.** Once a function is invoked continuously at high volume, the per-invocation premium that made serverless attractive at low volume starts compounding into a real number, and at that point an always-on container or a reserved-capacity model frequently becomes cheaper for the exact same workload - the crossover point is a specific, calculable traffic volume, not a vague warning.
 
-**Cold starts are a latency cost, not just a cost-center issue.** Functions that scale to zero between invocations pay a cold-start latency penalty on the next invocation, which for a customer-facing, latency-sensitive path can mean the architecture that saves money also degrades the experience unless it's specifically designed around — provisioned concurrency, warming strategies, or routing latency-sensitive paths away from cold-start-prone functions.
+**Cold starts are a latency cost, not just a cost-center issue.** Functions that scale to zero between invocations pay a cold-start latency penalty on the next invocation, which for a customer-facing, latency-sensitive path can mean the architecture that saves money also degrades the experience unless it's specifically designed around - provisioned concurrency, warming strategies, or routing latency-sensitive paths away from cold-start-prone functions.
 
 **Vendor lock-in through platform-specific glue.** Serverless architecture development built heavily around a single cloud provider's proprietary event bus, queue, and orchestration services makes each function individually simple but makes the system as a whole expensive to migrate later, and a VP of Engineering should treat that lock-in as an explicit, accepted tradeoff rather than a surprise discovered during a future vendor negotiation.
 
 **Observability requires different tooling, not the same tooling adapted.** Distributed tracing across dozens of short-lived, independently-scaling functions is a fundamentally different observability problem than monitoring a handful of long-running servers, and teams that don't invest in serverless-native tracing and monitoring from the start commonly find debugging a production issue across a chain of functions far harder than it would be in a monolith.
 
-The right approach isn't avoiding serverless — it's modeling the cost curve at realistic future traffic volumes before committing an entire product to it, and designing a hybrid approach where genuinely spiky workloads run serverless and sustained, predictable workloads run on always-on infrastructure, side by side.
+The right approach isn't avoiding serverless - it's modeling the cost curve at realistic future traffic volumes before committing an entire product to it, and designing a hybrid approach where genuinely spiky workloads run serverless and sustained, predictable workloads run on always-on infrastructure, side by side.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -56,7 +56,7 @@ Digital Medieplatform Aarhus ApS, an Aarhus-based media streaming platform, had 
 Manifera modeled the cost curve for the platform's actual traffic pattern and found that the content-delivery path, being sustained and predictable rather than spiky, was the wrong fit for serverless, while the platform's ad-personalization path, which was genuinely spiky, was the right fit. Migrating just the content-delivery path to an always-on container deployment while keeping ad-personalization serverless cut total compute costs by 46%.
 
 > *"We'd assumed serverless was cheaper because that's the pitch. Once we actually modeled our real traffic pattern against the pricing, it was obvious half our system was on the wrong architecture."*
-> — **VP of Engineering, Digital Medieplatform Aarhus ApS, Denmark**
+> - **VP of Engineering, Digital Medieplatform Aarhus ApS, Denmark**
 
 ## Serverless-by-Default vs. Manifera's Cost-Modeled Hybrid Architecture
 
@@ -70,7 +70,7 @@ Manifera modeled the cost curve for the platform's actual traffic pattern and fo
 
 ## The Economics
 
-A workload running sustained, high-volume traffic on serverless architecture can cost two to five times more than an equivalent always-on deployment, while a genuinely spiky workload can cost significantly less on serverless than provisioning for peak capacity year-round — the difference between the two outcomes is a cost-modeling exercise that typically takes one to two weeks and costs a small fraction of even a single month of a mismatched architecture's overpayment. Model the curve before you build, not after the bill arrives. [Talk to Manifera](https://www.manifera.com/contact-us/) about serverless architecture development that's sized correctly for your actual traffic.
+A workload running sustained, high-volume traffic on serverless architecture can cost two to five times more than an equivalent always-on deployment, while a genuinely spiky workload can cost significantly less on serverless than provisioning for peak capacity year-round - the difference between the two outcomes is a cost-modeling exercise that typically takes one to two weeks and costs a small fraction of even a single month of a mismatched architecture's overpayment. Model the curve before you build, not after the bill arrives. [Talk to Manifera](https://www.manifera.com/contact-us/) about serverless architecture development that's sized correctly for your actual traffic.
 
 ## Frequently Asked Questions
 

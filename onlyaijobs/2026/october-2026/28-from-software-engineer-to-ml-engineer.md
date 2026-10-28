@@ -35,19 +35,19 @@ Content Format: Career Guide
 }
 </script>
 
-An experienced backend or full-stack engineer moving into machine learning already brings a lot: production experience, systems thinking, familiarity with code reviews and deployments. The gap isn't in "being able to program" — it sits in specific, clearly identifiable places.
+An experienced backend or full-stack engineer moving into machine learning already brings a lot: production experience, systems thinking, familiarity with code reviews and deployments. The gap isn't in "being able to program" - it sits in specific, clearly identifiable places.
 
 ## Where the Gap Actually Is
 
-**Statistical reasoning about uncertainty.** Software engineering is largely deterministic: the same input gives the same output. Machine learning requires comfort with probability distributions, confidence intervals and accepting that a model is sometimes wrong — a different way of thinking from debugging until a test passes.
+**Statistical reasoning about uncertainty.** Software engineering is largely deterministic: the same input gives the same output. Machine learning requires comfort with probability distributions, confidence intervals and accepting that a model is sometimes wrong - a different way of thinking from debugging until a test passes.
 
 **Evaluation methodology.** Knowing which metric is actually relevant to a problem, and why accuracy alone can be misleading with imbalanced data, is a skill that rarely comes automatically from software engineering.
 
-**Data as a first-class problem, not an afterthought.** A software engineer is used to data "just arriving" through an API. An ML engineer often has to judge whether the data is representative, complete and reliable enough — a different responsibility from writing code alone.
+**Data as a first-class problem, not an afterthought.** A software engineer is used to data "just arriving" through an API. An ML engineer often has to judge whether the data is representative, complete and reliable enough - a different responsibility from writing code alone.
 
 ## What You Don't Have to Relearn
 
-Systems design, production experience, testing and deployment knowledge remain fully valuable — and are often exactly what candidates coming only from a research background lack. This is a real competitive advantage, not a handicap.
+Systems design, production experience, testing and deployment knowledge remain fully valuable - and are often exactly what candidates coming only from a research background lack. This is a real competitive advantage, not a handicap.
 
 ## A Deeper Look at the Statistical Thinking That's Often Missing
 
@@ -64,7 +64,7 @@ Software engineering trains you to think in terms of correctness: a function doe
 
 ## Why This Mindset Can't Be Forced, but Can Be Practised
 
-You can't learn statistical reasoning by reading about it over a weekend — it requires repeated exposure to real, messy data and the uncomfortable experience of building a model that is sometimes wrong despite all your care. The most effective way to practise isn't following more tutorials, but choosing your own dataset that you don't fully understand and forcing yourself to argue explicitly why you choose a particular metric and approach — exactly the kind of decision an experienced ML engineer makes daily.
+You can't learn statistical reasoning by reading about it over a weekend - it requires repeated exposure to real, messy data and the uncomfortable experience of building a model that is sometimes wrong despite all your care. The most effective way to practise isn't following more tutorials, but choosing your own dataset that you don't fully understand and forcing yourself to argue explicitly why you choose a particular metric and approach - exactly the kind of decision an experienced ML engineer makes daily.
 
 ## A Concrete Learning Path That Builds on What You Already Know
 
@@ -81,11 +81,11 @@ Only then invest in model architectures and frameworks. This layer is most visib
 Some resources are particularly well suited to engineers because they connect machine learning to software practice rather than to academic theory:
 
 - **scikit-learn documentation and user guide.** Beyond the API reference, its guide on model evaluation and cross-validation is one of the clearest practical introductions to choosing metrics and avoiding data leakage.
-- **"Hidden Technical Debt in Machine Learning Systems."** This well-known paper by Sculley and colleagues, presented at NeurIPS in 2015, explains why the model code is only a small part of a real ML system — a perspective that immediately resonates with engineers.
+- **"Hidden Technical Debt in Machine Learning Systems."** This well-known paper by Sculley and colleagues, presented at NeurIPS in 2015, explains why the model code is only a small part of a real ML system - a perspective that immediately resonates with engineers.
 - **Google's "Rules of Machine Learning."** A practical set of guidelines for building ML products, written from an engineering perspective, with advice such as starting with simple models and solid pipelines.
 - **PyTorch.** The deep learning framework most widely used in research and increasingly in industry; learning it after mastering evaluation basics is efficient.
 - **MLflow.** An open-source platform for experiment tracking, model registry and deployment, which bridges familiar software practices such as versioning with ML workflows.
-- **Kaggle.** Useful for practising on real datasets and studying how others approach problems — as long as you remember that competition datasets are cleaner than most production data.
+- **Kaggle.** Useful for practising on real datasets and studying how others approach problems - as long as you remember that competition datasets are cleaner than most production data.
 
 ## Communities and Education in the Netherlands
 
@@ -97,13 +97,13 @@ For engineers in the Netherlands, several named communities and programmes lower
 
 ## Regulation as a Differentiator for Engineers
 
-A new element in the switch is European regulation. Under the **EU Artificial Intelligence Act**, high-risk AI systems require risk management, data governance, technical documentation, logging and human oversight. These requirements translate into engineering tasks: reproducible training pipelines, versioned datasets, traceable model decisions and monitoring. Engineers who already think in terms of reliable, auditable systems are well placed to deliver exactly what these rules demand — another reason your software background is an asset.
+A new element in the switch is European regulation. Under the **EU Artificial Intelligence Act**, high-risk AI systems require risk management, data governance, technical documentation, logging and human oversight. These requirements translate into engineering tasks: reproducible training pipelines, versioned datasets, traceable model decisions and monitoring. Engineers who already think in terms of reliable, auditable systems are well placed to deliver exactly what these rules demand - another reason your software background is an asset.
 
 ## How to Translate Your Existing Experience Into a Convincing Profile
 
 A common mistake is presenting your software background as something to compensate for, instead of as the distinguishing advantage it often is.
 
-Dutch employers bringing machine learning into production — the vast majority of the market outside research institutions — structurally struggle with the gap between a model that works in a notebook and a system that runs reliably. Candidates from research often have strong modelling skills but little experience with version control, automated testing, deployment and monitoring. You have that experience.
+Dutch employers bringing machine learning into production - the vast majority of the market outside research institutions - structurally struggle with the gap between a model that works in a notebook and a system that runs reliably. Candidates from research often have strong modelling skills but little experience with version control, automated testing, deployment and monitoring. You have that experience.
 
 Naming this explicitly in an application changes the story from "software engineer trying to learn machine learning" to "engineer who builds production systems and is now adding the modelling layer." In your CV and motivation letter, position your production experience as prominently as your new modelling skills, and have examples ready of situations in which systems thinking solved a problem that pure modelling couldn't.
 
@@ -113,13 +113,13 @@ The most accessible roles are those explicitly at the intersection: MLOps and ML
 
 Also within reach are ML engineer roles at organisations that already have a data team but struggle to bring their work into production. Here the need is explicitly for someone who bridges the gap, and a candidate with your background solves exactly that problem.
 
-Less realistic as a first step are research-oriented roles and specialised model development roles, where in-depth statistical and methodological training is the core requirement. This isn't a permanent exclusion — that direction remains reachable after several years of applied experience — but it is a less likely route immediately after the switch.
+Less realistic as a first step are research-oriented roles and specialised model development roles, where in-depth statistical and methodological training is the core requirement. This isn't a permanent exclusion - that direction remains reachable after several years of applied experience - but it is a less likely route immediately after the switch.
 
 ## What the First Two Years After the Switch Realistically Involve
 
 The first year is marked for most people by the uncomfortable realisation that in some conversations you are the least experienced person in the room on exactly the subject you were hired to contribute to, while in other conversations you are by far the most experienced person on production systems. This asymmetry is normal and fades gradually.
 
-The second year usually brings the point at which the two skill areas start to merge instead of existing side by side — when you make architecture choices that take both modelling and system constraints seriously, and notice that this combination delivers something colleagues with only one of the two backgrounds can't. That point is exactly where the investment pays off.
+The second year usually brings the point at which the two skill areas start to merge instead of existing side by side - when you make architecture choices that take both modelling and system constraints seriously, and notice that this combination delivers something colleagues with only one of the two backgrounds can't. That point is exactly where the investment pays off.
 
 ## Why This Switch Works Out Better in the Netherlands Than in Many Other Markets
 
@@ -147,20 +147,20 @@ The experience you build as a software engineer remains valuable, so there is li
 
 ## Where to Start
 
-Focus your learning path specifically on statistical reasoning and evaluation methodology instead of rebuilding your whole background — your existing skills remain most of the work.
+Focus your learning path specifically on statistical reasoning and evaluation methodology instead of rebuilding your whole background - your existing skills remain most of the work.
 
 Browse current AI, machine learning and data jobs in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: engineer who thinks they must relearn everything) Do I have to start from scratch as an experienced software engineer to become an ML engineer?
-No — systems design, production experience and deployment knowledge remain fully valuable. The gap lies specifically in statistical reasoning and evaluation methodology.
+No - systems design, production experience and deployment knowledge remain fully valuable. The gap lies specifically in statistical reasoning and evaluation methodology.
 
 ### (Scenario: engineer unsure what to learn) What specifically do I need to learn to make the switch?
 Statistical reasoning about uncertainty, evaluation methodology (which metric matters and why), and how to treat data as a first-class problem rather than an afterthought.
 
 ### (Scenario: engineer worried about competing with researchers) Am I at a disadvantage compared with candidates from a research background?
-Not necessarily — production experience and systems thinking are often exactly what candidates coming only from research lack, which is a real competitive advantage.
+Not necessarily - production experience and systems thinking are often exactly what candidates coming only from research lack, which is a real competitive advantage.
 
 ### (Scenario: engineer wondering why deterministic thinking is a problem) Why is "deterministic thinking" an obstacle in machine learning?
 Because software engineering usually assumes the same input gives the same output, while machine learning requires comfort with probability distributions and models that are sometimes wrong.
@@ -173,9 +173,9 @@ Emphasise your production experience and systems thinking explicitly as a comple
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I have to start from scratch as an experienced software engineer to become an ML engineer?", "acceptedAnswer": {"@type": "Answer", "text": "No — systems design, production experience and deployment knowledge remain fully valuable."}},
+    {"@type": "Question", "name": "Do I have to start from scratch as an experienced software engineer to become an ML engineer?", "acceptedAnswer": {"@type": "Answer", "text": "No - systems design, production experience and deployment knowledge remain fully valuable."}},
     {"@type": "Question", "name": "What specifically do I need to learn to make the switch?", "acceptedAnswer": {"@type": "Answer", "text": "Statistical reasoning about uncertainty, evaluation methodology, and treating data as a first-class problem."}},
-    {"@type": "Question", "name": "Am I at a disadvantage compared with candidates from a research background?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — production experience is often exactly what candidates from research lack."}},
+    {"@type": "Question", "name": "Am I at a disadvantage compared with candidates from a research background?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - production experience is often exactly what candidates from research lack."}},
     {"@type": "Question", "name": "Why is \"deterministic thinking\" an obstacle in machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Software engineering usually assumes the same input gives the same output; ML requires comfort with probability distributions."}},
     {"@type": "Question", "name": "How do I best present my background in an application for an ML role?", "acceptedAnswer": {"@type": "Answer", "text": "Emphasise your production experience explicitly as a complement to your growing statistical knowledge."}}
   ]

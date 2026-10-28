@@ -1,6 +1,6 @@
 💡 Between the dunes and the bulb fields sits ESA's largest establishment. ESTEC in Noordwijk is where European space missions are designed, tested and managed.
 
-🛰️ For data people, space is no longer only for astrophysicists. Earth observation on Copernicus data, onboard processing on constrained hardware, anomaly detection on telemetry, test campaign analysis and downstream services for agriculture, water and infrastructure — with SRON, TNO, Airbus Netherlands and Delft companies nearby.
+🛰️ For data people, space is no longer only for astrophysicists. Earth observation on Copernicus data, onboard processing on constrained hardware, anomaly detection on telemetry, test campaign analysis and downstream services for agriculture, water and infrastructure - with SRON, TNO, Airbus Netherlands and Delft companies nearby.
 
 📜 Export control and security screening shape who can work on what, so check this early.
 

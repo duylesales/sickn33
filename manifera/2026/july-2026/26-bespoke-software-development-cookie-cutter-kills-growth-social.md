@@ -13,7 +13,7 @@ You're forced to choose:
 Companies choosing #1? Plateau.
 Companies choosing #2? Scale.
 
-But "bespoke is scary" — so let's bust 5 myths:
+But "bespoke is scary" - so let's bust 5 myths:
 
 **Myth 1:** "Only for enterprise companies"
 ❌ A 15-person startup with a proprietary algorithm has a STRONGER case than a 5,000-person company running standard processes.
@@ -30,7 +30,7 @@ SaaS legacy = you migrate. Bespoke legacy = you evolve.
 **Myth 4:** "Need a permanent team to maintain"
 ❌ Maintenance = 5-15% of build cost/year.
 That's €1,500-€6,000/month offshore.
-Comparable to SaaS subscriptions — but you OWN the asset.
+Comparable to SaaS subscriptions - but you OWN the asset.
 
 **Myth 5:** "Off-the-shelf is faster"
 ❌ Faster to INSTALL. Not faster to MAKE WORK.

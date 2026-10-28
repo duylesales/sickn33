@@ -1,4 +1,4 @@
-🚨 A buyer disputed Kacper's €180 template purchase two weeks after the creator was already paid. His "balance" field had no memory of which sale it came from — no way to claw back just that one amount. 😳
+🚨 A buyer disputed Kacper's €180 template purchase two weeks after the creator was already paid. His "balance" field had no memory of which sale it came from - no way to claw back just that one amount. 😳
 
 Add Stripe Connect and you've handled money movement. You haven't handled owing that money to someone else: 🧠
 

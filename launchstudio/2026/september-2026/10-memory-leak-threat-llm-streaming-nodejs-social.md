@@ -1,4 +1,4 @@
-🩸 Mia, a DevOps engineer, built an AI log classifier using **Lovable** — then watched her Node.js server randomly crash every 12 hours with `JavaScript heap out of memory` errors during peak traffic. 📊
+🩸 Mia, a DevOps engineer, built an AI log classifier using **Lovable** - then watched her Node.js server randomly crash every 12 hours with `JavaScript heap out of memory` errors during peak traffic. 📊
 
 Unclosed LLM streams and lingering event listeners create "Ghost References" that prevent V8 Garbage Collection, causing your server memory to climb like a staircase until it crashes. 🧠
 

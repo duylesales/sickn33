@@ -20,7 +20,7 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-If your offshore team's first meaningfully shippable pull request lands in month three, you didn't hire an engineering team — you hired a very expensive orientation program.
+If your offshore team's first meaningfully shippable pull request lands in month three, you didn't hire an engineering team - you hired a very expensive orientation program.
 
 **The Pain:** A VP of Engineering signed a new offshore development team engagement with a clear mandate from the CEO: accelerate the roadmap within the current fiscal year. Kickoff happened twelve weeks ago. The offshore team has attended every standup, produced detailed onboarding notes, and shipped exactly one small, low-risk ticket. The VP is now explaining to the CEO why "ramping up" is still the answer to "what have they shipped" three months in.
 
@@ -28,20 +28,20 @@ If your offshore team's first meaningfully shippable pull request lands in month
 
 ## The Architectural Mandate
 
-Onboarding velocity is a design problem, not a talent problem — competent engineers ramp slowly when the ramp itself is badly structured, regardless of individual skill. The default failure mode in most offshore engagements is passive onboarding: the new team is given repository access, some documentation of varying quality, and told to "get familiar with the codebase" before being handed real work. This produces exactly the twelve-week crawl described above, because comprehension without applied practice is slow, and nobody has defined what "ready" actually means, so the ramp expands to fill whatever time is available.
+Onboarding velocity is a design problem, not a talent problem - competent engineers ramp slowly when the ramp itself is badly structured, regardless of individual skill. The default failure mode in most offshore engagements is passive onboarding: the new team is given repository access, some documentation of varying quality, and told to "get familiar with the codebase" before being handed real work. This produces exactly the twelve-week crawl described above, because comprehension without applied practice is slow, and nobody has defined what "ready" actually means, so the ramp expands to fill whatever time is available.
 
-The architectural mandate for compressing this is a structured, milestone-based ramp with a defined and contractually committed timeline — typically two to four weeks, not twelve — built around three concrete phases rather than open-ended familiarization. Week one is environment and access: local development environment running, CI pipeline understood, first trivial PR merged to validate the full path from code to production before anything meaningful is attempted. Weeks two and three are supervised real work: small, real (not toy) tickets, paired closely with a team member who has architectural context, with fast feedback loops on every PR. By week four, the team should be taking on standard-complexity tickets independently, with architectural questions escalated rather than every decision requiring hand-holding.
+The architectural mandate for compressing this is a structured, milestone-based ramp with a defined and contractually committed timeline - typically two to four weeks, not twelve - built around three concrete phases rather than open-ended familiarization. Week one is environment and access: local development environment running, CI pipeline understood, first trivial PR merged to validate the full path from code to production before anything meaningful is attempted. Weeks two and three are supervised real work: small, real (not toy) tickets, paired closely with a team member who has architectural context, with fast feedback loops on every PR. By week four, the team should be taking on standard-complexity tickets independently, with architectural questions escalated rather than every decision requiring hand-holding.
 
-The single highest-leverage lever for compressing this timeline is direct access to a technical lead who has actually read your architecture before kickoff, not during the first sprint planning call. A ramp that starts with the offshore team's tech lead already understanding your domain model, your key architectural decisions, and your known technical debt compresses weeks of discovery into days, because the team isn't independently rediscovering context that already exists somewhere in your organization's collective memory — it's being handed that context deliberately.
+The single highest-leverage lever for compressing this timeline is direct access to a technical lead who has actually read your architecture before kickoff, not during the first sprint planning call. A ramp that starts with the offshore team's tech lead already understanding your domain model, your key architectural decisions, and your known technical debt compresses weeks of discovery into days, because the team isn't independently rediscovering context that already exists somewhere in your organization's collective memory - it's being handed that context deliberately.
 
-Documentation quality gates the entire process, and this is where most engagements quietly fail before they start: if your internal documentation is thin, outdated, or scattered across Slack threads and tribal memory, no offshore team's onboarding process can compensate for it, and the ramp will silently extend regardless of how the contract defines it. The mandate here is a pre-kickoff documentation audit — closing the worst gaps in architecture docs, runbooks, and domain glossaries before the offshore team's clock starts, rather than discovering the gaps live during their first month.
+Documentation quality gates the entire process, and this is where most engagements quietly fail before they start: if your internal documentation is thin, outdated, or scattered across Slack threads and tribal memory, no offshore team's onboarding process can compensate for it, and the ramp will silently extend regardless of how the contract defines it. The mandate here is a pre-kickoff documentation audit - closing the worst gaps in architecture docs, runbooks, and domain glossaries before the offshore team's clock starts, rather than discovering the gaps live during their first month.
 
-Finally, ramp velocity should be a measured, contractually visible metric — first commit merged, first independent feature shipped, time to standard-ticket velocity — not a vague qualitative sense of "they seem to be getting up to speed." A VP of Engineering who can point to a dashboard showing the ramp curve has a very different conversation with the CEO than one relying on anecdote three months into an underperforming engagement.
+Finally, ramp velocity should be a measured, contractually visible metric - first commit merged, first independent feature shipped, time to standard-ticket velocity - not a vague qualitative sense of "they seem to be getting up to speed." A VP of Engineering who can point to a dashboard showing the ramp curve has a very different conversation with the CEO than one relying on anecdote three months into an underperforming engagement.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch account leadership reviews the client's architecture before kickoff, defines the milestone-based ramp plan, and acts as an IP and quality shield ensuring the ramp is measured and contractually committed, not open-ended.
-- **Vietnam (Execution/Velocity):** Autonomous pods in Vietnam execute the structured ramp — environment setup, supervised real work, independent ticket ownership — reaching standard velocity inside a documented four-week window.
+- **Vietnam (Execution/Velocity):** Autonomous pods in Vietnam execute the structured ramp - environment setup, supervised real work, independent ticket ownership - reaching standard velocity inside a documented four-week window.
 
 This is Dutch Management × Vietnamese Mastery: a ramp designed by architects who've engineered this transition before, executed by a pod built to hit the milestones rather than drift through them. Explore how [Manifera's offshore software development teams](https://www.manifera.com/services/offshore-software-development/) structure onboarding as a committed, measured process.
 
@@ -51,10 +51,10 @@ This is Dutch Management × Vietnamese Mastery: a ramp designed by architects wh
 
 Vastgoedbron Digital, an Arnhem-based proptech platform, had previously run an offshore engagement with a different vendor that took over four months to reach meaningful shipping velocity, largely because onboarding consisted of "read the codebase" with no structured milestones or supervised practice. When the VP of Engineering brought in Manifera for a subsequent expansion, the mandate was explicit: prove a faster ramp or don't bother starting.
 
-The Amsterdam team reviewed Vastgoedbron's architecture and identified documentation gaps in the property-valuation module before kickoff, closing the worst of them in a pre-engagement audit. The Vietnam pod then ran a structured four-week ramp: environment and first trivial PR in week one, supervised real tickets with a paired architecture-aware lead in weeks two and three, and independent standard-ticket ownership by week four. The pod shipped its first meaningful feature — a redesigned valuation-comparison view — in week five, a timeline the previous vendor hadn't matched even by month three.
+The Amsterdam team reviewed Vastgoedbron's architecture and identified documentation gaps in the property-valuation module before kickoff, closing the worst of them in a pre-engagement audit. The Vietnam pod then ran a structured four-week ramp: environment and first trivial PR in week one, supervised real tickets with a paired architecture-aware lead in weeks two and three, and independent standard-ticket ownership by week four. The pod shipped its first meaningful feature - a redesigned valuation-comparison view - in week five, a timeline the previous vendor hadn't matched even by month three.
 
 > *"We went from four months of 'getting familiar' with the last vendor to a shipped feature in five weeks with Manifera."*
-> — **VP of Engineering, Vastgoedbron Digital**
+> - **VP of Engineering, Vastgoedbron Digital**
 
 ## Legacy Agency vs. Manifera Pod
 
@@ -69,18 +69,18 @@ The Amsterdam team reviewed Vastgoedbron's architecture and identified documenta
 
 ## The Economics
 
-A slow ramp is a direct, quantifiable transfer of contract value into unproductive time: an offshore engagement that takes twelve weeks instead of four to reach full productivity has effectively converted roughly a fifth of a year's contract spend into orientation rather than delivery, which on a typical mid-market offshore engagement can mean €50,000-€100,000 of budget consumed before the business sees any return. That's cash burning against the exact promise — speed — that justified the offshoring decision to the board in the first place. A structured, measured ramp converts that risk into a committed, trackable milestone instead of an open-ended hope. [Talk to Manifera](https://www.manifera.com/contact-us/) about a ramp that gets your team shipping in weeks, not a quarter.
+A slow ramp is a direct, quantifiable transfer of contract value into unproductive time: an offshore engagement that takes twelve weeks instead of four to reach full productivity has effectively converted roughly a fifth of a year's contract spend into orientation rather than delivery, which on a typical mid-market offshore engagement can mean €50,000-€100,000 of budget consumed before the business sees any return. That's cash burning against the exact promise - speed - that justified the offshoring decision to the board in the first place. A structured, measured ramp converts that risk into a committed, trackable milestone instead of an open-ended hope. [Talk to Manifera](https://www.manifera.com/contact-us/) about a ramp that gets your team shipping in weeks, not a quarter.
 
 ## The Ramp Curve, Week by Week: What "On Track" Looks Like
 
 Most dedicated team services contracts fail to define productivity numerically, which is exactly why "still ramping up" survives as an acceptable answer for three months. A concrete curve to hold any offshore software development team engagement against:
 
-- **End of week 1:** First trivial PR merged to production or staging. Local dev environment reproducible without hand-holding. If this hasn't happened, the environment/access setup itself is broken — a red flag independent of engineer skill.
+- **End of week 1:** First trivial PR merged to production or staging. Local dev environment reproducible without hand-holding. If this hasn't happened, the environment/access setup itself is broken - a red flag independent of engineer skill.
 - **End of week 2:** First real (non-toy) ticket shipped under close pairing, typically at 30-40% of a fully ramped engineer's normal ticket throughput.
 - **End of week 3:** Ticket throughput at roughly 60-70% of standard velocity, with architectural questions dropping to one or two per day rather than continuous.
 - **End of week 4:** Standard-complexity tickets owned independently, throughput at 85-100% of a fully ramped teammate, PR review turnaround matching the rest of the team's cadence.
 
-A team still needing daily architectural hand-holding past week four, or one whose ticket throughput hasn't crossed 50% by week three, isn't "still onboarding" — the ramp plan itself has failed and needs to be renegotiated, not extended indefinitely.
+A team still needing daily architectural hand-holding past week four, or one whose ticket throughput hasn't crossed 50% by week three, isn't "still onboarding" - the ramp plan itself has failed and needs to be renegotiated, not extended indefinitely.
 
 ## Frequently Asked Questions
 
@@ -102,7 +102,7 @@ Expect meaningful involvement in weeks one through three, particularly from whoe
 
 ### (Scenario: VP of Engineering comparing a fast ramp against a slower, cheaper vendor option) Is a faster ramp worth paying a premium for?
 
-Almost always, because the effective cost of a slow ramp — weeks of contract spend with minimal delivered output — usually exceeds any headline rate savings from a cheaper, slower-ramping vendor within the first quarter alone.
+Almost always, because the effective cost of a slow ramp - weeks of contract spend with minimal delivered output - usually exceeds any headline rate savings from a cheaper, slower-ramping vendor within the first quarter alone.
 
 ### (Scenario: VP of Engineering evaluating an offshore software development company against an in-house hire) Does an offshore dedicated team ramp faster or slower than a new in-house hire in the same role?
 
@@ -110,7 +110,7 @@ With a structured onboarding process and pre-kickoff architecture review, an off
 
 ### (Scenario: VP of Engineering deciding what to include in the kickoff meeting itself) What should the actual kickoff meeting cover to set up a fast ramp?
 
-The kickoff should walk through the architecture diagram, the top three areas of technical debt, the deployment pipeline, and a named point of contact for architectural questions — not project logistics alone. Teams that spend kickoff on tooling and calendars instead of system knowledge lose the first week to preventable confusion.
+The kickoff should walk through the architecture diagram, the top three areas of technical debt, the deployment pipeline, and a named point of contact for architectural questions - not project logistics alone. Teams that spend kickoff on tooling and calendars instead of system knowledge lose the first week to preventable confusion.
 
 ### (Scenario: VP of Engineering worried the ramp will stall again on the next feature area) Does ramp velocity carry over when the offshore team moves to a new part of the codebase later?
 
@@ -118,7 +118,7 @@ Partially. A pod that has ramped on one module still needs a smaller, days-not-w
 
 ### (Scenario: VP of Engineering trying to benchmark ramp velocity against industry norms) What ramp timeline should we consider a red flag when evaluating offshore software development team vendors during procurement?
 
-Any vendor proposal that describes onboarding only in qualitative terms — "the team will get up to speed quickly" — without committing to specific week-by-week milestones is a red flag; ask every offshore software development company you evaluate to put a number on first-PR and full-velocity dates before signing.
+Any vendor proposal that describes onboarding only in qualitative terms - "the team will get up to speed quickly" - without committing to specific week-by-week milestones is a red flag; ask every offshore software development company you evaluate to put a number on first-PR and full-velocity dates before signing.
 
 <script type="application/ld+json">
 {

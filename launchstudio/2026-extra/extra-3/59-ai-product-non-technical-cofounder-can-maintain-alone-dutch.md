@@ -55,7 +55,7 @@ Het behandelen hiervan als standaard continuïteitsplanning voor het bedrijf –
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichtersteams bij het instellen van exact dit soort continuïteitsvoorbereiding als onderdeel van bredere voortdurende ondersteuningsopdrachten. Wij zorgen ervoor dat een niet-technische medeoprichter echte, toegankelijke terugvalopties heeft die onafhankelijk zijn van de persoonlijke beschikbaarheid van een enkel individu, ondersteund door Manifera's bredere toewijding aan het ondersteunen van de daadwerkelijke operationele veerkracht van oprichtersteams, en niet alleen hun initiële lancering.
 
-[Zorg ervoor dat uw product niet volledig afhangt van de voortdurende beschikbaarheid van één persoon](https://launchstudio.eu/nl/#contact) — een kloof die de meeste oprichtersteams nooit testen totdat deze plotseling, dringend relevant is.
+[Zorg ervoor dat uw product niet volledig afhangt van de voortdurende beschikbaarheid van één persoon](https://launchstudio.eu/nl/#contact) - een kloof die de meeste oprichtersteams nooit testen totdat deze plotseling, dringend relevant is.
 
 ## Een 20-minuten continuïteitscheck die een niet-technische medeoprichter deze week kan uitvoeren
 
@@ -84,9 +84,9 @@ Toen Bram te maken kreeg met een echt, ongepland medisch noodgeval dat verschill
 **Resultaat:** Zodra Bram terugkeerde werkte het paar specifiek met LaunchStudio om gepaste gedeelde toegang, operationele documentatie in duidelijke taal en een voortdurende ondersteuningsrelatie in te stellen waar Sanne onafhankelijk toegang toe had. Hiermee werd een kloof gedicht die sinds de oprichting van het bedrijf onzichtbaar had bestaan en pas duidelijk was geworden via een oprecht stressvolle test in de echte wereld.
 
 > *"Dat Bram een paar weken niet beschikbaar was was al erg genoeg zonder dat ik me ook nog realiseerde dat ik geen daadwerkelijke manier had om ons eigen product draaiende te houden als er in die tijd iets mis zou zijn gegaan. We hadden geluk dat dat niet gebeurde. Ik wil niet opnieuw van geluk afhangen."*
-> — **Sanne de Wit, Medeoprichter, VerhuurBeheer**
+> - **Sanne de Wit, Medeoprichter, VerhuurBeheer**
 
-**Kosten en tijdlijn:** € 1.300 (continuïteitsdocumentatie, herstructurering van toegang, instellen van ondersteuning) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (continuïteitsdocumentatie, herstructurering van toegang, instellen van ondersteuning) - voltooid in 5 werkdagen.
 
 ---
 

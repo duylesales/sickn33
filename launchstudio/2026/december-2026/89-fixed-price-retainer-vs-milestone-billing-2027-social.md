@@ -1,6 +1,6 @@
 📅 A flat monthly retainer sized to cover your heaviest quarter overcharges you for every lighter one. 🧠
 
-Planning a full 2027 roadmap means picking a billing structure that actually matches how uneven your real phases are — not defaulting to whichever sounds simplest.
+Planning a full 2027 roadmap means picking a billing structure that actually matches how uneven your real phases are - not defaulting to whichever sounds simplest.
 
 ❌ A flat retainer that assumes even effort across a year that's rarely even
 ❌ Vague milestones ("improve reporting") that reintroduce scope disputes
@@ -12,7 +12,7 @@ Planning a full 2027 roadmap means picking a billing structure that actually mat
 
 At **LaunchStudio**, we've been structuring fixed-price and phased engagements since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Rutger restructured his flat retainer into milestone billing once planning revealed a heavy Q1 — spend now tracks his roadmap's real shape: €4,800 (Q1 migration milestone, Relaunch & Scale Package), delivered in 16 business days. 🚀
+Rutger restructured his flat retainer into milestone billing once planning revealed a heavy Q1 - spend now tracks his roadmap's real shape: €4,800 (Q1 migration milestone, Relaunch & Scale Package), delivered in 16 business days. 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/fixed-price-retainer-vs-milestone-billing-2027
 

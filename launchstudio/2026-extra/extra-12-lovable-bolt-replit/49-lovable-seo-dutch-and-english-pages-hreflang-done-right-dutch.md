@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Nederlandse oprichters komen deze vraag vroeg tegen, omdat Nederland een land is waar iedereen Engels leest en bijna iedereen de voorkeur geeft aan Nederlands wanneer hij iets koopt wat ertoe doet.
 
-Het technische deel — zoekmachines vertellen welke versie ze aan wie moeten tonen — is een opgelost probleem met een specifieke implementatie die makkelijk subtiel fout gaat. Het strategische deel, dat eerst komt, is of u überhaupt twee talen moet hebben.
+Het technische deel - zoekmachines vertellen welke versie ze aan wie moeten tonen - is een opgelost probleem met een specifieke implementatie die makkelijk subtiel fout gaat. Het strategische deel, dat eerst komt, is of u überhaupt twee talen moet hebben.
 
 ## Beantwoord Eerst de Strategische Vraag
 
@@ -38,11 +38,11 @@ Het middengeval, dat veel voorkomt: Nederlands voor alles wat verkoopt, Engels v
 
 Drie opties, en voor een klein Nederlands product is er één duidelijk de beste.
 
-**Submappen** — `uwproduct.nl/nl/` en `uwproduct.nl/en/` — houden alles op één domein, delen de autoriteit die het domein heeft, en zijn het eenvoudigst te hosten en te onderhouden. Dit is de juiste standaard.
+**Submappen** - `uwproduct.nl/nl/` en `uwproduct.nl/en/` - houden alles op één domein, delen de autoriteit die het domein heeft, en zijn het eenvoudigst te hosten en te onderhouden. Dit is de juiste standaard.
 
-**Subdomeinen** — `nl.uwproduct.nl` — zijn meer gescheiden dan de meeste kleine producten nodig hebben.
+**Subdomeinen** - `nl.uwproduct.nl` - zijn meer gescheiden dan de meeste kleine producten nodig hebben.
 
-**Aparte domeinen** — een `.nl` en een `.com` — zijn zinvol wanneer u echt als twee bedrijven in twee markten werkt, en ze betekenen dat u twee keer autoriteit opbouwt.
+**Aparte domeinen** - een `.nl` en een `.com` - zijn zinvol wanneer u echt als twee bedrijven in twee markten werkt, en ze betekenen dat u twee keer autoriteit opbouwt.
 
 Wat u ook kiest, maak de taal expliciet in de URL. Een site die op dezelfde URL andere inhoud serveert afhankelijk van de browserinstellingen van de bezoeker, kan niet goed worden geïndexeerd, omdat een crawler één versie ziet en de andere niet kan bereiken.
 
@@ -58,7 +58,7 @@ Vier regels, en het overtreden van een ervan maakt het geheel werkeloos.
 
 **Gebruik de juiste codes.** `nl` voor Nederlands, `en` voor Engels, `nl-BE` voor Nederlands in België. De taal komt eerst; alleen een regio is niet geldig.
 
-**Neem een x-default op** die de versie noemt die moet worden getoond als niets past — meestal uw Engelse pagina, of een taalkeuze.
+**Neem een x-default op** die de versie noemt die moet worden getoond als niets past - meestal uw Engelse pagina, of een taalkeuze.
 
 Zet ze in de HTML-head, met verwijzingen naar absolute canonieke URL's. En zorg dat de canonieke link op elke pagina naar zichzelf wijst in plaats van naar de andere taal, een fout die stilletjes één versie volledig uit de index haalt.
 
@@ -68,7 +68,7 @@ De neiging is de taal of het land van de bezoeker te detecteren en hem naar de p
 
 Een crawler die vanaf een Amerikaans adres komt, wordt naar het Engels doorgestuurd en ziet de Nederlandse pagina's nooit, zodat de helft van uw site niet wordt geïndexeerd. Een Nederlandstalige op reis krijgt Engels. Iemand die bewust voor Engels koos, wordt bij zijn volgende bezoek terug naar het Nederlands gestuurd.
 
-De aanpak die werkt: serveer de URL waarom werd gevraagd, en bied de andere versie duidelijk aan — een duidelijke taalschakelaar, en een wegklikbare melding die het alternatief voorstelt. Onthoud de keuze, en laat de expliciete selectie van de gebruiker voorgaan op elke detectie.
+De aanpak die werkt: serveer de URL waarom werd gevraagd, en bied de andere versie duidelijk aan - een duidelijke taalschakelaar, en een wegklikbare melding die het alternatief voorstelt. Onthoud de keuze, en laat de expliciete selectie van de gebruiker voorgaan op elke detectie.
 
 ## Vertaal Goed, Inclusief de Zoekwoorden
 
@@ -76,7 +76,7 @@ Een vertaalde pagina is geen vertaling van uw zoekwoorden.
 
 Nederlandse kopers zoeken met Nederlandse termen, en de directe vertaling van uw Engelse zoekwoord is vaak niet de term die mensen gebruiken. Soms is het Engelse woord precies waar Nederlandse professionals op zoeken; soms is er een Nederlandse term met veel meer volume. Dit moet per markt worden onderzocht in plaats van aangenomen.
 
-Hetzelfde geldt voor de hele pagina. Titels, beschrijvingen, koppen, alternatieve teksten voor afbeeldingen en gestructureerde data hebben allemaal een eigen taalversie nodig — een Nederlandse pagina met een Engelse titel in de zoekresultaten is een pagina waar niemand op klikt.
+Hetzelfde geldt voor de hele pagina. Titels, beschrijvingen, koppen, alternatieve teksten voor afbeeldingen en gestructureerde data hebben allemaal een eigen taalversie nodig - een Nederlandse pagina met een Engelse titel in de zoekresultaten is een pagina waar niemand op klikt.
 
 En vertaal de inhoud in plaats van haar te genereren: machinevertaling is enorm verbeterd en levert nog steeds Nederlands op dat als vertaald leest, wat voor een product dat vertrouwen verkoopt aan Nederlandse bedrijven een kostenpost is die in geen enkele analyse verschijnt.
 
@@ -86,15 +86,15 @@ Alles hierboven gaat over publieke pagina's. De applicatie achter de login heeft
 
 De interfacetaal moet de eigen instelling van de gebruiker volgen, opgeslagen bij zijn account, niet de gok van de browser en niet het huidige pad op de marketingsite. Een Nederlandse gebruiker die uw product toevallig opent op een machine met Engelse instellingen, moet nog steeds Nederlands zien.
 
-Drie dingen reizen mee met die instelling en worden meestal gemist. E-mails die uw product verstuurt — bevestigingen, herinneringen, facturen — moeten in de taal van de ontvanger zijn, wat betekent dat het sjabloon per ontvanger wordt gekozen in plaats van per applicatie. Datums, getallen en valutanotatie, waar Nederlandse conventies verschillen van Engelse op manieren die een moedertaalspreker direct als fout opvallen. En geëxporteerde documenten, die vaak worden gegenereerd uit een sjabloon dat nooit is vertaald.
+Drie dingen reizen mee met die instelling en worden meestal gemist. E-mails die uw product verstuurt - bevestigingen, herinneringen, facturen - moeten in de taal van de ontvanger zijn, wat betekent dat het sjabloon per ontvanger wordt gekozen in plaats van per applicatie. Datums, getallen en valutanotatie, waar Nederlandse conventies verschillen van Engelse op manieren die een moedertaalspreker direct als fout opvallen. En geëxporteerde documenten, die vaak worden gegenereerd uit een sjabloon dat nooit is vertaald.
 
-Twee implementatieopmerkingen. Bewaar vertalingen als data in plaats van als voorwaarden in uw code, zodat een taal toevoegen een bestand is in plaats van een herschrijving — en zodat een AI-sessie die een functie toevoegt een duidelijke plek heeft voor haar teksten in plaats van Engels hard te coderen. En zorg dat de terugval is gedefinieerd: een ontbrekende vertaling moet de standaardtaal tonen, geen lege string of een kale sleutel, en zo eindigt een product met `dashboard.header.title` voor een klant.
+Twee implementatieopmerkingen. Bewaar vertalingen als data in plaats van als voorwaarden in uw code, zodat een taal toevoegen een bestand is in plaats van een herschrijving - en zodat een AI-sessie die een functie toevoegt een duidelijke plek heeft voor haar teksten in plaats van Engels hard te coderen. En zorg dat de terugval is gedefinieerd: een ontbrekende vertaling moet de standaardtaal tonen, geen lege string of een kale sleutel, en zo eindigt een product met `dashboard.header.title` voor een klant.
 
 ## België Is Niet Nederland
 
 Oprichters die Nederlandse pagina's toevoegen, gaan er vaak van uit dat Vlaanderen er gratis bij komt. Dat is grotendeels zo, met drie kanttekeningen die het waard zijn om te kennen voordat u een Belgische klant iets belooft.
 
-De taal verschilt op manieren die een Belgische lezer opvallen — woordenschat, sommige terminologie, en een toon die duidelijk als Nederlands-uit-Nederland leest. Voor marketingteksten is dat meestal acceptabel; voor een product dat zich als lokaal positioneert, minder.
+De taal verschilt op manieren die een Belgische lezer opvallen - woordenschat, sommige terminologie, en een toon die duidelijk als Nederlands-uit-Nederland leest. Voor marketingteksten is dat meestal acceptabel; voor een product dat zich als lokaal positioneert, minder.
 
 De praktische verschillen doen er meer toe. Belgische zakelijke kopers verwachten bij het afrekenen vaak Bancontact. Btw-nummers, formaten van bedrijfsregistratie en factuurgewoontes verschillen. En een Belgische klant die zoekt, krijgt vaak bij voorkeur resultaten van Belgische domeinen, en dat is het enige waar hreflang echt bij helpt: een `nl-BE`-verwijzing, naar pagina's die voor die markt zijn geschreven, vertelt zoekmachines welke versie daar hoort.
 
@@ -110,7 +110,7 @@ Het neemt ook een onduidelijkheid weg die hreflang op zichzelf niet kan oplossen
 
 Voor een bestaand product kost dit doorgaans twee tot drie dagen: een beslissing over welke talen en welke inhoud in elke taal, taalexpliciete URL's met een structuur van submappen, volledige wederkerige hreflang inclusief zelfverwijzingen en een x-default, canonieke links per taal die naar zichzelf verwijzen, automatisch doorsturen verwijderd ten gunste van een duidelijke schakelaar met een onthouden voorkeur, titels, beschrijvingen, koppen, alternatieve teksten en gestructureerde data per taal, zoekwoordonderzoek per taal in plaats van vertaalde zoekwoorden, aparte sitemaps per taal, en controle in de zoekconsole om te bevestigen dat de verwijzingen worden gelezen.
 
-LaunchStudio doet dit voor Nederlandse producten die in meer dan één markt verkopen — en raadt een tweede taal af waar het publiek die niet rechtvaardigt. Achter het werk staat Manifera — elf jaar, tweetalige activiteiten vanuit Amsterdam, Singapore en Ho Chi Minh-stad.
+LaunchStudio doet dit voor Nederlandse producten die in meer dan één markt verkopen - en raadt een tweede taal af waar het publiek die niet rechtvaardigt. Achter het werk staat Manifera - elf jaar, tweetalige activiteiten vanuit Amsterdam, Singapore en Ho Chi Minh-stad.
 
 [Vraag ons of uw tweede taal haar geld waard is](https://launchstudio.eu/nl/#contact). Soms is het antwoord nee.
 
@@ -122,16 +122,16 @@ Sjoerd Waanders bouwde Magazijnmaat in Lovable: magazijn- en orderpicksoftware v
 
 Hij had de site eerst in het Engels gebouwd, omdat zijn tools dat opleverden, en een jaar later Nederlandse pagina's toegevoegd. Beide versies stonden op dezelfde URL's, waarbij de taal werd gekozen via browserdetectie en een doorverwijzing.
 
-Niets rankte. De zoekconsole toonde dat de Engelse pagina's waren geïndexeerd en de Nederlandse vrijwel volledig ontbraken, omdat crawlers met niet-Nederlandse instellingen elke keer naar het Engels werden gestuurd en ze nooit zagen. De Engelse pagina's concurreerden ondertussen op termen waar zijn echte kopers nooit op zochten — zijn klanten waren Nederlandse groothandels die op Nederlandse termen zochten.
+Niets rankte. De zoekconsole toonde dat de Engelse pagina's waren geïndexeerd en de Nederlandse vrijwel volledig ontbraken, omdat crawlers met niet-Nederlandse instellingen elke keer naar het Engels werden gestuurd en ze nooit zagen. De Engelse pagina's concurreerden ondertussen op termen waar zijn echte kopers nooit op zochten - zijn klanten waren Nederlandse groothandels die op Nederlandse termen zochten.
 
 Drie werkdagen: taalexpliciete URL's ingevoerd met submappen `/nl/` en `/en/` en permanente doorverwijzingen vanaf de oude gedeelde URL's; automatisch doorsturen verwijderd, vervangen door een zichtbare schakelaar en een wegklikbare melding die de keuze onthoudt; volledige wederkerige hreflang toegevoegd inclusief zelfverwijzingen en een x-default; canonieke links gecorrigeerd, aangezien elke Nederlandse pagina naar haar Engelse tegenhanger had verwezen, wat ze actief uit de index had gehaald; titels, beschrijvingen en gestructureerde data per taal; Nederlands zoekwoordonderzoek, waaruit bleek dat zijn klanten zochten op "magazijnsoftware" en "orderpicken software" met substantieel volume, terwijl de Engelse termen waarop hij had geoptimaliseerd in Nederland vrijwel geen volume hadden; de Nederlandse pagina's herschreven rond de werkelijke termen in plaats van vertaald uit het Engels; aparte sitemaps per taal; en de Engelse versie teruggebracht van een volledige spiegel naar zes pagina's die het product voor een internationaal publiek beschrijven, aangezien het onderhouden van twee volledige sites voor één Nederlands klantenbestand het onderliggende probleem was.
 
 **Resultaat:** de Nederlandse pagina's werden binnen drie weken geïndexeerd en het organische verkeer ging binnen vier maanden van 90 naar 740 bezoeken per maand, met in de vierde maand 11 proefaanmeldingen via organisch zoeken tegenover nul daarvoor. Sjoerds oordeel is dat het verkleinen van de Engelse site net zo waardevol was als het oplossen van de technische fouten, omdat het het werk om de Nederlandse pagina's goed te houden halveerde.
 
 > *"Elke crawler die binnenkwam, werd naar de Engelse site gestuurd, dus Google had mijn Nederlandse pagina's nooit gezien. Ik had ze een jaar lang voor niemand geschreven."*
-> — **Sjoerd Waanders, Oprichter, Magazijnmaat (Ede)**
+> - **Sjoerd Waanders, Oprichter, Magazijnmaat (Ede)**
 
-**Kosten & Doorlooptijd:** €3.200 (taalexpliciete URL-structuur met doorverwijzingen, verwijderen van doorsturen en schakelaar, wederkerige hreflang, correctie van canonieke links, metadata en gestructureerde data per taal, Nederlands zoekwoordonderzoek en herschrijven van pagina's, sitemaps, verkleinen van de Engelse site) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.200 (taalexpliciete URL-structuur met doorverwijzingen, verwijderen van doorsturen en schakelaar, wederkerige hreflang, correctie van canonieke links, metadata en gestructureerde data per taal, Nederlands zoekwoordonderzoek en herschrijven van pagina's, sitemaps, verkleinen van de Engelse site) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -165,7 +165,7 @@ Om te begrijpen wel. Voor pagina's die aan Nederlandse bedrijven verkopen, leest
       "name": "Heb ik Engelse pagina's nodig als ik alleen in Nederland verkoop?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal niet — het verdubbelt het werk en concurreert met uw Nederlandse pagina's. Eén taal grondig gedaan, presteert beter dan twee oppervlakkig."
+        "text": "Meestal niet - het verdubbelt het werk en concurreert met uw Nederlandse pagina's. Eén taal grondig gedaan, presteert beter dan twee oppervlakkig."
       }
     },
     {
@@ -181,7 +181,7 @@ Om te begrijpen wel. Voor pagina's die aan Nederlandse bedrijven verkopen, leest
       "name": "Wat is de meest voorkomende hreflang-fout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De zelfverwijzing weglaten of niet-wederkerige verwijzingen, waardoor de set wordt genegeerd — gevolgd door canonieke links die naar de andere taal wijzen."
+        "text": "De zelfverwijzing weglaten of niet-wederkerige verwijzingen, waardoor de set wordt genegeerd - gevolgd door canonieke links die naar de andere taal wijzen."
       }
     },
     {

@@ -48,7 +48,7 @@ Malmö and Lund, in Sweden's southernmost region of Skåne, form a compact techn
 
 ## Cameras, Chips and Telecom
 
-Axis Communications, headquartered in Lund, is a global leader in network video cameras and related solutions. Video analytics — detecting objects, people and events on cameras, often directly on the device — is central to its products, making Lund a notable location for edge AI and computer vision. Ericsson has a major site in Lund working on mobile technology, and chip design companies including Arm have teams in the city. Lund's Ideon Science Park, one of Sweden's first science parks, has hosted many technology companies and startups over the decades.
+Axis Communications, headquartered in Lund, is a global leader in network video cameras and related solutions. Video analytics - detecting objects, people and events on cameras, often directly on the device - is central to its products, making Lund a notable location for edge AI and computer vision. Ericsson has a major site in Lund working on mobile technology, and chip design companies including Arm have teams in the city. Lund's Ideon Science Park, one of Sweden's first science parks, has hosted many technology companies and startups over the decades.
 
 ## Games and Software in Malmö
 
@@ -97,7 +97,7 @@ Lund is a green, student-filled university town; Malmö is a lively, diverse cit
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Malmö you will find few or no local vacancies there today. Use Swedish and Danish job portals, company career pages and university and facility vacancy lists as primary sources. OnlyAIJobs is useful for comparing Skåne with the Netherlands — where engineering and technology employers such as Holland Innovative, Cegeka and Accenture list AI roles — and its distance-based approach suits a cross-border region where Copenhagen may be closer than other Swedish cities. Employers in Skåne can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Malmö you will find few or no local vacancies there today. Use Swedish and Danish job portals, company career pages and university and facility vacancy lists as primary sources. OnlyAIJobs is useful for comparing Skåne with the Netherlands - where engineering and technology employers such as Holland Innovative, Cegeka and Accenture list AI roles - and its distance-based approach suits a cross-border region where Copenhagen may be closer than other Swedish cities. Employers in Skåne can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Edge AI and Video Analytics in Depth
 
@@ -153,7 +153,7 @@ The region has a lively startup ecosystem, supported by incubators at Ideon, Med
 
 ## Remote and Hybrid Work
 
-Many employers in Skåne offer hybrid arrangements, consistent with Swedish work culture. Cross-border remote work — for example living in Malmö and working remotely for a Danish employer — has specific tax and social security implications, so clarify arrangements carefully.
+Many employers in Skåne offer hybrid arrangements, consistent with Swedish work culture. Cross-border remote work - for example living in Malmö and working remotely for a Danish employer - has specific tax and social security implications, so clarify arrangements carefully.
 
 ## Responsible AI
 

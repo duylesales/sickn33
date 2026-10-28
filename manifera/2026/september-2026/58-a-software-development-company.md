@@ -50,7 +50,7 @@ Because the agency is bound by a fixed budget, they must weaponize the contract.
 ### 2. The Margin Protection (Cutting Corners)
 If the agency underestimated the complexity of the project (which happens 100% of the time in software), they will begin losing money halfway through the build. An agency will never accept a financial loss. To protect their margin, they will secretly slash the quality of the architecture. They will skip database normalization. They will skip QA testing. They will deliver code that barely functions, simply to get you to sign the final acceptance form so they can get paid. 
 
-> *"Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage."* — Principle 2, the 12 Principles behind the Agile Manifesto (agilemanifesto.org)
+> *"Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage."* - Principle 2, the 12 Principles behind the Agile Manifesto (agilemanifesto.org)
 
 A Fixed-Price contract does the exact opposite of what that principle demands: instead of harnessing a changing requirement as a competitive advantage, it turns the requirement into a billable weapon. The agency's financial incentive stops being "build the best product" and becomes "defend the original 50-page document at all costs," because every deviation from it now threatens their margin.
 
@@ -81,9 +81,9 @@ These four mechanisms turn Time & Materials from a leap of faith into a governed
 
 Return to the CFO's original decision and put numbers on both paths.
 
-**Path A: the Fixed-Price bet.** The CFO signs for €100,000. Three months in, the CEO needs a checkout-flow change driven by real user feedback. Agency B quotes €20,000 and a one-month delay for the "Change Request." The CFO refuses, and the corner-cutting begins. The project ships on time and on the original €100,000 budget — and then crashes in production. The startup pays €150,000 for a second team to rebuild it. Total spend: €250,000, plus the calendar months lost to a product that didn't survive contact with real users.
+**Path A: the Fixed-Price bet.** The CFO signs for €100,000. Three months in, the CEO needs a checkout-flow change driven by real user feedback. Agency B quotes €20,000 and a one-month delay for the "Change Request." The CFO refuses, and the corner-cutting begins. The project ships on time and on the original €100,000 budget - and then crashes in production. The startup pays €150,000 for a second team to rebuild it. Total spend: €250,000, plus the calendar months lost to a product that didn't survive contact with real users.
 
-**Path B: the T&M bet.** A pod is engaged at a comparable monthly capacity cost. The checkout-flow change is simply absorbed into the next Sprint at no separate fee, because the client purchased build capacity, not a frozen specification. If the build takes a comparable four months to reach a comparable feature set, direct cost lands close to the original €100,000 quote — except the software that ships already reflects what users actually wanted, because nothing had to survive a change-order fight to get built.
+**Path B: the T&M bet.** A pod is engaged at a comparable monthly capacity cost. The checkout-flow change is simply absorbed into the next Sprint at no separate fee, because the client purchased build capacity, not a frozen specification. If the build takes a comparable four months to reach a comparable feature set, direct cost lands close to the original €100,000 quote - except the software that ships already reflects what users actually wanted, because nothing had to survive a change-order fight to get built.
 
 This isn't a fringe outcome unique to small startups. McKinsey, together with the University of Oxford's BT Centre for Major Programme Management, studied more than 5,400 large IT projects (each with an initial budget over $15 million) and found that, on average, they ran 45% over budget, 7% over schedule, and delivered 56% less value than originally promised. Those are enterprise-scale programs, not small agency engagements, but the underlying mechanism is identical to the CFO's story above: a plan frozen at the start of a project collides with reality discovered during the project, and the contract structure determines whether that collision is absorbed calmly or turned into a fight over Change Request fees and corner-cut architecture.
 
@@ -106,7 +106,7 @@ We align our financial incentives perfectly with the long-term architectural qua
 ## Frequently Asked Questions
 
 ### (Scenario: CFO evaluating vendor contracts) Why do Fixed-Price software contracts often result in poor-quality code (Technical Debt)?
-Because software development is highly unpredictable. If an agency underestimates a Fixed-Price project, they start losing money. To protect their profit margin, they secretly cut corners—they stop writing automated tests, they ignore database normalization, and they write messy 'spaghetti' code just to finish the project and get paid.
+Because software development is highly unpredictable. If an agency underestimates a Fixed-Price project, they start losing money. To protect their profit margin, they secretly cut corners - they stop writing automated tests, they ignore database normalization, and they write messy 'spaghetti' code just to finish the project and get paid.
 
 ### (Scenario: CEO frustrated by agency fees) What is a 'Change Request' and how is it used in Fixed-Price contracts?
 In a Fixed-Price contract, the agency agrees to build *only* what is in the initial specification document. If you realize halfway through the project that users need a slightly different feature, the agency will weaponize the contract and charge you an exorbitant 'Change Request' fee to make the alteration, holding your product hostage.

@@ -22,13 +22,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Launch weeks go wrong in a predictable way: the founder spends them on the product and discovers the infrastructure on launch day. The interface gets polished, a last feature gets added, and nobody checks whether the password reset email arrives or whether a second customer can read the first one's records.
 
-What follows is a five-day verification plan. It assumes the product works — that part you have handled — and concentrates on everything around it, in the order that finds serious problems earliest. Each day is two to three hours, not a full day, and the sequence matters: there is no point testing payments on a database anyone can read.
+What follows is a five-day verification plan. It assumes the product works - that part you have handled - and concentrates on everything around it, in the order that finds serious problems earliest. Each day is two to three hours, not a full day, and the sequence matters: there is no point testing payments on a database anyone can read.
 
 ## Monday: Who Can See What
 
 The most serious category, so it goes first.
 
-Create two accounts in two different organisations, if your product has organisations, and use each properly — create records, upload something, leave a comment. Then attempt, from each account, to read the other's data by changing an identifier in the address bar. Repeat for every record type your product has.
+Create two accounts in two different organisations, if your product has organisations, and use each properly - create records, upload something, leave a comment. Then attempt, from each account, to read the other's data by changing an identifier in the address bar. Repeat for every record type your product has.
 
 Check every database table for access rules, not just the obvious ones. The join tables, the settings tables, the ones created during a debugging session are where gaps live.
 
@@ -52,7 +52,7 @@ Finally, compare three places: your database, the provider dashboard and the ema
 
 Email and domain, which fail silently and therefore never get noticed.
 
-Send a signup confirmation, a password reset and a receipt to three different mail systems — a personal address, a business account and a webmail account — and check the spam folder in each rather than only the inbox. Use the password reset link twice and confirm the second attempt is refused.
+Send a signup confirmation, a password reset and a receipt to three different mail systems - a personal address, a business account and a webmail account - and check the spam folder in each rather than only the inbox. Use the password reset link twice and confirm the second attempt is refused.
 
 Verify your domain: the certificate valid on a phone over mobile data, the apex and www behaving as you intended, and your authentication records published and passing. Check that no callback URL at your payment or authentication provider still points at a preview address.
 
@@ -80,7 +80,7 @@ Then check the unglamorous items: analytics recording one hostname rather than t
 
 **Go live in the morning,** not at the end of the day. Problems surface within hours and you want to be awake and available for those hours.
 
-**Announce in stages.** Your smallest audience first — a handful of friendly users, then a segment, then everything. A problem that reaches ten people is a correction; the same problem reaching a thousand is a reputation.
+**Announce in stages.** Your smallest audience first - a handful of friendly users, then a segment, then everything. A problem that reaches ten people is a correction; the same problem reaching a thousand is a reputation.
 
 **Watch the error tracker for the first hours,** not the sign-up count. New errors in the first day are cheap to fix and expensive to ignore.
 
@@ -102,7 +102,7 @@ The discipline is to move as little as possible into the third category on the d
 
 ## If You Would Rather Not Do It Alone
 
-This plan describes the work; doing it properly on a product you built yourself is harder than it reads, because you test the paths you designed rather than the ones users find. LaunchStudio runs exactly this verification as the last stage of taking an AI-built product live — access control tested by attempting to break it, payments verified in live mode including the abandoned cases, email delivery confirmed across real mail systems, recovery rehearsed and timed, and the findings handed over as a list with what was fixed and what was deliberately left.
+This plan describes the work; doing it properly on a product you built yourself is harder than it reads, because you test the paths you designed rather than the ones users find. LaunchStudio runs exactly this verification as the last stage of taking an AI-built product live - access control tested by attempting to break it, payments verified in live mode including the abandoned cases, email delivery confirmed across real mail systems, recovery rehearsed and timed, and the findings handed over as a list with what was fixed and what was deliberately left.
 
 The frontend you built in Lovable, Bolt or Cursor stays untouched, the code remains documented and AI-readable, and the whole engagement is fixed-price between €800 and €7,500 depending on what the first pass finds. Behind it is Manifera: eleven years of production engineering for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
@@ -116,7 +116,7 @@ Sometimes the date is fixed by something outside your control: a campaign, an ev
 
 **Turn off what is broken.** A product missing a feature on launch day is disappointing. A product leaking data is a different category. If uploads are unsafe, ship without uploads and add them a fortnight later.
 
-**Put a human in the loop.** Where an automated path is unverified — refunds, account deletion, a data export — handle those manually for the first weeks. Slow and correct beats fast and unverified.
+**Put a human in the loop.** Where an automated path is unverified - refunds, account deletion, a data export - handle those manually for the first weeks. Slow and correct beats fast and unverified.
 
 **Tell the customers who are affected.** "The reporting feature arrives in two weeks, everything else works today" is a message serious customers accept easily. Silence followed by a discovery is what damages relationships.
 
@@ -132,7 +132,7 @@ The verification plan does not end when you go live. The first week with real us
 
 **Compare your records against your providers once.** Payments taken against payments recorded, emails sent against emails delivered. A discrepancy found in week one is a bug; the same discrepancy found in month six is an accounting problem.
 
-Then write down what actually happened — volume, timing, what broke, what surprised you. It becomes the baseline for every later change, and it is the document you will wish existed the first time something behaves differently than usual.
+Then write down what actually happened - volume, timing, what broke, what surprised you. It becomes the baseline for every later change, and it is the document you will wish existed the first time something behaves differently than usual.
 
 ## Real example
 
@@ -142,26 +142,26 @@ Daan Coppens had a launch date for Voorraadje, a stock-tracking tool for small i
 
 He ran the five-day plan the week before, largely because a friend suggested it.
 
-Monday found the serious problem: four tables had no access rules, so any shop could read every other shop's stock levels, supplier prices and margins — the most commercially sensitive data in the product, for eleven businesses who in several cases competed with each other. Tuesday found that a customer closing the tab after paying never received access. Wednesday found password resets landing in spam at two of the three mail systems.
+Monday found the serious problem: four tables had no access rules, so any shop could read every other shop's stock levels, supplier prices and margins - the most commercially sensitive data in the product, for eleven businesses who in several cases competed with each other. Tuesday found that a customer closing the tab after paying never received access. Wednesday found password resets landing in spam at two of the three mail systems.
 
-He postponed by four days. The access rules and payment webhook took three, the email authentication took an afternoon, and Thursday's rehearsal established that a restore took 38 minutes — a number he has since quoted twice to customers asking about reliability.
+He postponed by four days. The access rules and payment webhook took three, the email authentication took an afternoon, and Thursday's rehearsal established that a restore took 38 minutes - a number he has since quoted twice to customers asking about reliability.
 
-**Result:** eleven shops started on the Friday, one issue surfaced in the first week — a slow report page — and no shop ever saw another's data.
+**Result:** eleven shops started on the Friday, one issue surfaced in the first week - a slow report page - and no shop ever saw another's data.
 
 > *"I nearly launched a product that showed eleven competing shops each other's margins. I found it on a Monday afternoon with a test I could have run at any point in the previous three months."*
-> — **Daan Coppens, Founder, Voorraadje (Maastricht)**
+> - **Daan Coppens, Founder, Voorraadje (Maastricht)**
 
-**Cost & Timeline:** €3,050 (access control remediation, payment webhook, email authentication, recovery rehearsal) — completed in 4 business days before launch.
+**Cost & Timeline:** €3,050 (access control remediation, payment webhook, email authentication, recovery rehearsal) - completed in 4 business days before launch.
 
 ## Frequently Asked Questions
 
 ### What should I check first before launching?
 
-Access control. Create two accounts and try to read each other's data by changing identifiers. Everything else — payments, email, performance — matters less than whether customers can see each other's records.
+Access control. Create two accounts and try to read each other's data by changing identifiers. Everything else - payments, email, performance - matters less than whether customers can see each other's records.
 
 ### Do I really need to make a real payment before launch?
 
-Yes. Test mode does not exercise the same paths at the provider, and the most common payment failure — a customer closing the tab before the redirect completes — only appears with a real transaction you deliberately abandon.
+Yes. Test mode does not exercise the same paths at the provider, and the most common payment failure - a customer closing the tab before the redirect completes - only appears with a real transaction you deliberately abandon.
 
 ### How long should this verification take?
 
@@ -185,7 +185,7 @@ No. Announce in stages, smallest audience first, and watch your error tracker fo
       "name": "What should I check first before launching?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Access control — create two accounts and try to read each other's data by changing identifiers. Everything else matters less than whether customers can see each other's records."
+        "text": "Access control - create two accounts and try to read each other's data by changing identifiers. Everything else matters less than whether customers can see each other's records."
       }
     },
     {
@@ -217,7 +217,7 @@ No. Announce in stages, smallest audience first, and watch your error tracker fo
       "name": "Should I launch to everyone at once?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — announce in stages, smallest audience first, and watch the error tracker for the first hours."
+        "text": "No - announce in stages, smallest audience first, and watch the error tracker for the first hours."
       }
     }
   ]

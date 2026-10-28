@@ -1,6 +1,6 @@
-⚠️ Femke Bakker built MillOps — a quality-control tracking tool for regional food producers — using v0 over several weeks of evenings, and had three local producers piloting it within a month. Then a bad migration silently dropped a production table.
+⚠️ Femke Bakker built MillOps - a quality-control tracking tool for regional food producers - using v0 over several weeks of evenings, and had three local producers piloting it within a month. Then a bad migration silently dropped a production table.
 
-Nobody had configured backups, because v0 had no reason to — it wasn't in Femke's prompts. 🧠
+Nobody had configured backups, because v0 had no reason to - it wasn't in Femke's prompts. 🧠
 
 ❌ The database had zero backup configuration from day one
 ❌ A routine feature update accidentally dropped a production table

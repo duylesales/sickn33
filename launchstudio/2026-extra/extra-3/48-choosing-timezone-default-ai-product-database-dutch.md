@@ -55,7 +55,7 @@ Het vanaf het allereerste begin van een databaseschema instellen van opslag in U
 
 [LaunchStudio](https://launchstudio.eu/nl/) stelt UTC-eerst tijdstempelafhandeling in en verifieert deze als een standaard onderdeel van productieverharding. Wij controleren op exact de inconsistenties en patronen voor opslag in lokale tijd die AI-gegenereerde code regelmatig introduceert, ondersteund door Manifera's bredere engineering-discipline die gevestigde sectorconventies consistent toepast over elk project.
 
-[Laat uw tijdstempelafhandeling controleren voordat het een echt migratieprobleem wordt](https://launchstudio.eu/nl/#calculator) — deze specifieke beslissing is goedkoop om vroeg goed te krijgen en kostbaar om later te herstellen.
+[Laat uw tijdstempelafhandeling controleren voordat het een echt migratieprobleem wordt](https://launchstudio.eu/nl/#calculator) - deze specifieke beslissing is goedkoop om vroeg goed te krijgen en kostbaar om later te herstellen.
 
 ## Voorbij opslag: Andere tijdbeslissingen die AI-gegenereerde code de neiging heeft over te slaan
 
@@ -82,9 +82,9 @@ De eerste keer dat er een klokverzetting naar de zomertijd plaatsvond na de lanc
 **Resultaat:** LaunchStudio migreerde de bestaande tijdstempelgegevens van AfspraakPlan naar gepaste op UTC gebaseerde opslag met expliciete omzetting naar lokale tijd uitsluitend op het moment van weergave. Hiermee werd de kloof permanent gedicht en werd voorkomen dat een toekomstige overgang naar de zomertijd opnieuw dezelfde verwarring over de weergegeven tijd veroorzaakte.
 
 > *"Alles wat ik testte viel toevallig binnen één consistente tijdsperiode, dus ik heb nooit één keer een probleem opgemerkt. De allereerste klokverzetting nadat er al echte afspraken waren geboekt is wanneer dingen een uur afwijkend begonnen weer te geven. Tegen die tijd waren het echte klantgegevens die ik zorgvuldig moest migreren, in plaats van een schone beslissing die ik aan het begin gratis had kunnen maken."*
-> — **Bram Kuijpers, Oprichter, AfspraakPlan (Deventer)**
+> - **Bram Kuijpers, Oprichter, AfspraakPlan (Deventer)**
 
-**Kosten en tijdlijn:** € 1.200 (migratie van tijdstempelopslag naar UTC) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (migratie van tijdstempelopslag naar UTC) - voltooid in 5 werkdagen.
 
 ---
 

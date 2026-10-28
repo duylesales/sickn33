@@ -1,6 +1,6 @@
 🚨 11:40pm, a customer's Slack message: "do you have a public API?" It reads like flattery. Saying yes that night is how founders end up maintaining something they can never retire. 😬
 
-A public API isn't a feature you ship once — it's a contract signed indefinitely: ⚙️
+A public API isn't a feature you ship once - it's a contract signed indefinitely: ⚙️
 
 ❌ The first endpoint takes an afternoon; everything after that is the real cost
 ❌ Developer support tickets need real debugging, not a templated response
@@ -14,7 +14,7 @@ A public API isn't a feature you ship once — it's a contract signed indefinite
 
 At **LaunchStudio**, backed by Manifera's engineers who know which API shortcuts bite back, we scope the lightest version that solves the real need. 🛠️
 
-His result: Ruben shipped a webhook and a scheduled export in four days combined, versus the two-to-three weeks a full API would've taken — no obligation, no solo support queue. 🚀
+His result: Ruben shipped a webhook and a scheduled export in four days combined, versus the two-to-three weeks a full API would've taken - no obligation, no solo support queue. 🚀
 
 👉 Talk to an engineer who reads AI-generated code about your API options: https://launchstudio.eu/en/blog/should-you-open-an-api-to-your-customers
 

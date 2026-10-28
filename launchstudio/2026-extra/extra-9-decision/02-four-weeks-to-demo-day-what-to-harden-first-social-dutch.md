@@ -1,6 +1,6 @@
 🚨 Joris had nog 26 dagen tot Demo Day, een prototype gebouwd in Bolt en het plan om zijn sprint te wijden aan een salarisexportfunctie waar één investeerder terloops naar vroeg. De technische audit zette alles op zijn kop. 😳
 
-Demo Day is geen deadline voor nieuwe features — het is het allereerste moment waarop tientallen vreemden tegelijk uw product testen: 🧠
+Demo Day is geen deadline voor nieuwe features - het is het allereerste moment waarop tientallen vreemden tegelijk uw product testen: 🧠
 
 ❌ Zijn API haalde elk dienstenrooster op basis van ID op, zonder te controleren wie de eigenaar was
 ❌ Een exportfunctie die niemand in de zaal ging aanklikken slokte zijn laatste vier weken op

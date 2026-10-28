@@ -19,11 +19,11 @@ Doelgroep: SaaS-oprichter scale-up
 }
 </script>
 
-Er verschuift iets binnen teams die beginnen als een solo-oprichter en een prototype, en het gebeurt stilletjes genoeg dat de meeste oprichters het pas merken als ze al meerdere aanwervingen verder zijn. De zin "AI voor software engineering" betekende op dag één één specifiek ding — de tool die de app bouwt — en betekent iets merkbaar anders tegen de tijd dat er een echt engineeringteam rond datzelfde product bestaat. Niemand kondigt de herdefinitie aan. Het gebeurt gewoon, één aanwerving en één codereview tegelijk.
+Er verschuift iets binnen teams die beginnen als een solo-oprichter en een prototype, en het gebeurt stilletjes genoeg dat de meeste oprichters het pas merken als ze al meerdere aanwervingen verder zijn. De zin "AI voor software engineering" betekende op dag één één specifiek ding - de tool die de app bouwt - en betekent iets merkbaar anders tegen de tijd dat er een echt engineeringteam rond datzelfde product bestaat. Niemand kondigt de herdefinitie aan. Het gebeurt gewoon, één aanwerving en één codereview tegelijk.
 
 ## Fase één: AI als bouwer
 
-In de prototypefase is "AI voor software engineering" een letterlijke beschrijving. Een oprichter typt een beschrijving, een AI-tool zoals Lovable of Bolt genereert de applicatie, en de oprichter brengt uit wat eruit komt. De AI ondersteunt geen engineeringproces — een tijdlang is het functioneel het engineeringproces zelf, van begin tot eind, omdat er niemand anders in de lus zit.
+In de prototypefase is "AI voor software engineering" een letterlijke beschrijving. Een oprichter typt een beschrijving, een AI-tool zoals Lovable of Bolt genereert de applicatie, en de oprichter brengt uit wat eruit komt. De AI ondersteunt geen engineeringproces - een tijdlang is het functioneel het engineeringproces zelf, van begin tot eind, omdat er niemand anders in de lus zit.
 
 ## Fase twee: de eerste aanwerving verandert de zin
 
@@ -31,11 +31,11 @@ Alles verschuift zodra de eerste engineer aansluit. Plotseling zijn er twee vers
 
 ## Fase drie: het team vestigt zich in een nieuwe definitie zonder het te zeggen
 
-Tegen de tijd dat een team vijf engineers telt, is "AI voor software engineering" meestal beland bij iets dat niemand expliciet heeft besloten: de tool die junioren erbij pakken om snel boilerplate en herhaalde scaffolding op te ruimen, beoordeeld door senioren die de output behandelen als een concept in plaats van een afgeronde bijdrage. De tool is niet veranderd. Wat is veranderd, is waar hij in de workflow staat — van "het ding dat het bouwt" naar "het ding dat een tweede blik krijgt voordat het wordt uitgebracht."
+Tegen de tijd dat een team vijf engineers telt, is "AI voor software engineering" meestal beland bij iets dat niemand expliciet heeft besloten: de tool die junioren erbij pakken om snel boilerplate en herhaalde scaffolding op te ruimen, beoordeeld door senioren die de output behandelen als een concept in plaats van een afgeronde bijdrage. De tool is niet veranderd. Wat is veranderd, is waar hij in de workflow staat - van "het ding dat het bouwt" naar "het ding dat een tweede blik krijgt voordat het wordt uitgebracht."
 
 ## Waarom deze herdefinitie oprichters overvalt
 
-Oprichters die het originele prototype solo hebben gebouwd, blijven soms lang na de stille overstap van hun team naar fase drie opereren op de fase-één-definitie. Ze blijven AI-output uitbrengen zoals ze dat alleen deden, terwijl hun eigen engineers hun vertrouwensniveau allang hebben bijgesteld en reviewstappen hebben toegevoegd rond exact dezelfde tool. De mismatch is niet dramatisch, maar hij toont zich als wrijving — een oprichter die verrast is dat "zijn" tool nu een reviewronde nodig heeft die zijn eigen engineers erop hebben aangedrongen toe te voegen.
+Oprichters die het originele prototype solo hebben gebouwd, blijven soms lang na de stille overstap van hun team naar fase drie opereren op de fase-één-definitie. Ze blijven AI-output uitbrengen zoals ze dat alleen deden, terwijl hun eigen engineers hun vertrouwensniveau allang hebben bijgesteld en reviewstappen hebben toegevoegd rond exact dezelfde tool. De mismatch is niet dramatisch, maar hij toont zich als wrijving - een oprichter die verrast is dat "zijn" tool nu een reviewronde nodig heeft die zijn eigen engineers erop hebben aangedrongen toe te voegen.
 
 ## Herkennen in welke fase uw team zich daadwerkelijk bevindt
 
@@ -60,7 +60,7 @@ Als u deze signalen herkent, accepteer dan de nieuwe realiteit. Laat de experime
 
 ### Een AI-native oprichter in actie: de tool die van baan veranderde zonder memo
 
-Merlijn Wormer, oprichter in Wormer, schaalde TeamGrip — een interne operationele tool die uitgroeide tot een klein SaaS-product — van een Lovable-prototype naar een bedrijf met een vijfkoppig engineeringteam. Onderweg zag Merlijn "AI voor software engineering" van betekenis veranderen binnen zijn eigen bedrijf zonder dat iemand het had besloten. In de begindagen betekende de zin de tool die TeamGrip van begin tot eind bouwde. Tegen de tijd dat er vijf engineers in dienst waren, was het stilletjes de tool geworden die junioren gebruikten om snel boilerplate op te ruimen, waarbij senioren die output beoordeelden voordat deze productie bereikte — een herdefinitie die niemand had gepland, besproken of opgeschreven.
+Merlijn Wormer, oprichter in Wormer, schaalde TeamGrip - een interne operationele tool die uitgroeide tot een klein SaaS-product - van een Lovable-prototype naar een bedrijf met een vijfkoppig engineeringteam. Onderweg zag Merlijn "AI voor software engineering" van betekenis veranderen binnen zijn eigen bedrijf zonder dat iemand het had besloten. In de begindagen betekende de zin de tool die TeamGrip van begin tot eind bouwde. Tegen de tijd dat er vijf engineers in dienst waren, was het stilletjes de tool geworden die junioren gebruikten om snel boilerplate op te ruimen, waarbij senioren die output beoordeelden voordat deze productie bereikte - een herdefinitie die niemand had gepland, besproken of opgeschreven.
 
 De wrijving toonde zich toen Merlijn, nog steeds opererend op de oorspronkelijke definitie, een door Lovable gegenereerde functie rechtstreeks naar productie duwde zoals hij altijd deed, om vervolgens van zijn lead engineer te horen dat de inmiddels standaard reviewstap van het team was overgeslagen. Er ging die keer niets kapot, maar het legde bloot dat de oprichter en het team dat hij had opgebouwd stilletjes twee verschillende draaiboeken volgden voor dezelfde tool.
 
@@ -69,9 +69,9 @@ Het team van LaunchStudio, ondersteund door Manifera, werkte samen met Merlijn o
 **Resultaat:** Het engineeringteam van TeamGrip werkt nu volgens één expliciete, gedeelde definitie van waar hun AI-tooling voor dient, in plaats van vijf mensen die stilletjes iets net andere versies ervan draaien.
 
 > *"De tool veranderde niet. Wat hij binnen mijn eigen bedrijf betekende, veranderde wel, en ik was de laatste die het merkte."*
-> — **Merlijn Wormer, oprichter, TeamGrip (Wormer)**
+> - **Merlijn Wormer, oprichter, TeamGrip (Wormer)**
 
-**Kosten en tijdlijn:** € 1.400 (documentatie van workflow en implementatie van reviewproces) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (documentatie van workflow en implementatie van reviewproces) - voltooid in 6 werkdagen.
 
 ---
 

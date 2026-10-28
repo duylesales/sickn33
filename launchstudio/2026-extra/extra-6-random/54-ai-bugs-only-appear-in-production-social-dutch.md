@@ -1,8 +1,8 @@
-⏱️ Bart Hoekstra bouwde "BouwKoppel," een synchronisatietool voor bouwprojecten, met v0. Hij testte de app zorgvuldig en herhaaldelijk, alleen, en die leek solide. Toen begonnen echte bouwploegen de app tegelijkertijd te gebruiken — en twee ploegleden die vrijwel op hetzelfde moment dezelfde projectstatus bijwerkten, konden elkaars wijzigingen stilletjes overschrijven.
+⏱️ Bart Hoekstra bouwde "BouwKoppel," een synchronisatietool voor bouwprojecten, met v0. Hij testte de app zorgvuldig en herhaaldelijk, alleen, en die leek solide. Toen begonnen echte bouwploegen de app tegelijkertijd te gebruiken - en twee ploegleden die vrijwel op hetzelfde moment dezelfde projectstatus bijwerkten, konden elkaars wijzigingen stilletjes overschrijven.
 
 Sommige bugs kunnen letterlijk niet bestaan totdat twee echte gebruikers de app tegelijk aanraken. 🧠
 
-❌ Race conditions vereisen echte concurrency — geen enkele hoeveelheid solotesten, hoe grondig ook, kan ze veroorzaken
+❌ Race conditions vereisen echte concurrency - geen enkele hoeveelheid solotesten, hoe grondig ook, kan ze veroorzaken
 ❌ Twee updates die racen om hetzelfde record te schrijven konden elkaar stilletjes overschrijven
 ❌ AI-codeertools genereren standaard code voor sequentiële scenario's met één gebruiker tegelijk
 ❌ Niets signaleerde het risico, want "het werkte toen ik het testte" en "het is veilig onder concurrency" zijn verschillende beweringen

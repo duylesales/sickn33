@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-De e-mail valt op maandagmiddag binnen: je bent door naar de finale ronde, de pitch is donderdag om 14:00 uur en de jury "wil het product dolgraag live in actie zien." Je hebt een Bolt-prototype dat prima werkt op je eigen laptop en een preview-link die je naar een paar vrienden hebt gestuurd. Er resten nog exact tweeënzeventig uur. Wat kan er in die tijd daadwerkelijk worden gedaan om AI-gegenereerde code naar productie te brengen — of dicht genoeg in de buurt — en wat moet je absoluut uit je hoofd laten?
+De e-mail valt op maandagmiddag binnen: je bent door naar de finale ronde, de pitch is donderdag om 14:00 uur en de jury "wil het product dolgraag live in actie zien." Je hebt een Bolt-prototype dat prima werkt op je eigen laptop en een preview-link die je naar een paar vrienden hebt gestuurd. Er resten nog exact tweeënzeventig uur. Wat kan er in die tijd daadwerkelijk worden gedaan om AI-gegenereerde code naar productie te brengen - of dicht genoeg in de buurt - en wat moet je absoluut uit je hoofd laten?
 
 ## Bepaal Eerst Wat Er Donderdag Écht Nodig Is
 
@@ -32,7 +32,7 @@ Een pitch-demo is geen officiële publieke lancering. Wees heel precies over wat
 - **Ze stellen technische en security-vragen.** "Draait dit live? Hoe zijn de gegevens beveiligd? Waarop is dit gebouwd?"
 - **Ze delen de link door.** Een jurylid stuurt de link naar een technische associate, of een journalist die de demo day verslaat probeert de app uit.
 
-Geldt alleen het eerste scenario, dan volstaat een stabiele en betrouwbare demo-omgeving. Geldt een van de overige punten — en dat is bijna altijd het geval — dan moet de link volkomen veilig zijn voor vreemden.
+Geldt alleen het eerste scenario, dan volstaat een stabiele en betrouwbare demo-omgeving. Geldt een van de overige punten - en dat is bijna altijd het geval - dan moet de link volkomen veilig zijn voor vreemden.
 
 ## Uur 0–12: Triage en Inventarisatie
 
@@ -48,7 +48,7 @@ Het resultaat is een compacte lijst: wat vormt een direct gevaar bij vreemde bez
 
 ## Uur 12–48: Repareer Alleen Wat Vreemden Kunnen Breken
 
-Met beperkte tijd repareer je uitsluitend zaken die je zwaar in verlegenheid kunnen brengen — of schade kunnen aanrichten — zodra een jurylid rondklikt:
+Met beperkte tijd repareer je uitsluitend zaken die je zwaar in verlegenheid kunnen brengen - of schade kunnen aanrichten - zodra een jurylid rondklikt:
 
 1. **Gelekte geheime sleutels (secret keys):** direct roteren en verplaatsen naar de server. Niet-onderhandelbaar: een geheime sleutel die tijdens de pitchweek openbaar staat, kan binnen enkele uren worden misbruikt.
 2. **Datatoegang tussen gebruikers (cross-user access):** dwing autorisatie en toegangsregels server-side af voor alle gegevens die een testgebruiker kan bereiken.
@@ -70,7 +70,7 @@ Een ervaren engineer fixt dit doorgaans binnen 36 uur voor een typische AI-appli
 
 Juryleden en investeerders stellen steeds gerichtere vragen over met AI gebouwde producten. Bereid eerlijke, zelfverzekerde antwoorden voor:
 
-- **"Is dit klaar voor productie?"** "Het draait live en is volkomen veilig voor testgebruikers; we hebben toegangscontrole, secrets en betalingen gehard. De volledige enterprise-afronding — monitoring, staging en uitgebreide integratietests — staat gepland voor de komende twee weken."
+- **"Is dit klaar voor productie?"** "Het draait live en is volkomen veilig voor testgebruikers; we hebben toegangscontrole, secrets en betalingen gehard. De volledige enterprise-afronding - monitoring, staging en uitgebreide integratietests - staat gepland voor de komende twee weken."
 - **"Hoe zijn persoonsgegevens beveiligd?"** Wees concreet over wat je hebt gedaan: server-side autorisatieregels, EU-hosting, API-sleutels strikt op de backend.
 - **"Waarop is de applicatie gebouwd?"** Noem de tools eerlijk bij naam. Bouwen met behulp van AI is geen zwaktebod wanneer je exact kunt uitleggen hoe je de fundering eromheen professioneel hebt ingericht.
 
@@ -78,7 +78,7 @@ Beloof nooit meer dan er daadwerkelijk staat. Een jurylid dat een bewering ter p
 
 ## AI-Code naar Productie: Wat Je Absoluut Niet Moet Proberen in 72 Uur
 
-- Een complexe databasemigratie tussen verschillende cloudregio's — mogelijk, maar levensgevaarlijk onder acute tijdsdruk tenzij de database minuscuul is.
+- Een complexe databasemigratie tussen verschillende cloudregio's - mogelijk, maar levensgevaarlijk onder acute tijdsdruk tenzij de database minuscuul is.
 - Het van de grond af herschrijven van de volledige betaalintegratie.
 - Nieuwe features toevoegen waarvan je denkt dat de jury ze "misschien wel leuk vindt".
 - Wisselen van hostingprovider zonder een direct werkend rollback-plan.
@@ -114,8 +114,8 @@ De inhoud van je demodatabase is belangrijker dan veel oprichters beseffen. Rich
 
 Steeds vaker zit er een technisch zwaargewicht in het panel die gerichte vragen stelt over security. Bereid drie korte, feitelijke uitspraken voor met bewijs dat je direct op het scherm kunt laten zien:
 
-- "Gebruikers hebben uitsluitend toegang tot hun eigen data — kijk maar wat er gebeurt als ik een record van een andere gebruiker probeer te openen." (Toon de nette 403-foutmelding.)
-- "Geheime API-sleutels voor betalingen bereiken nooit de browser — transacties worden uitsluitend op de server geïnitieerd en gevalideerd." (Toon het architectuurschema.)
+- "Gebruikers hebben uitsluitend toegang tot hun eigen data - kijk maar wat er gebeurt als ik een record van een andere gebruiker probeer te openen." (Toon de nette 403-foutmelding.)
+- "Geheime API-sleutels voor betalingen bereiken nooit de browser - transacties worden uitsluitend op de server geïnitieerd en gevalideerd." (Toon het architectuurschema.)
 - "We hebben een gedocumenteerd actieplan voor de resterende productiewerkzaamheden in de komende twee weken." (Toon de gestructureerde backlog.)
 
 Concrete demonstraties maken oneindig veel meer indruk dan vage beloftes, en eerlijkheid over wat er nog moet gebeuren wekt aanzienlijk meer vertrouwen dan ten onrechte beweren dat alles al perfect is.
@@ -130,7 +130,7 @@ Een pitchsprint laat bewust enkele niet-kritieke gaten open. In de week na de pr
 
 ## Wanneer 72 Uur Simpelweg Niet Genoeg Is
 
-Sommige applicaties kunnen in drie dagen tijd domweg niet veilig genoeg worden gemaakt voor vreemden: complexe rollensystemen met tientallen niveaus, zeer gevoelige medische of financiële dossiers, of marktplaatsen met automatische uitbetalingen. In die situaties is de enige verstandige en eerlijke optie om te demonstreren zónder openbare live registratie — oftewel een strak geleide demo via een vooraf klaargezet testaccount — en transparant uitleg te geven over de tijdlijn naar lancering. Investeerders hebben diep respect voor oprichters die gebruikersbescherming zwaarder laten wegen dan uiterlijke schijn.
+Sommige applicaties kunnen in drie dagen tijd domweg niet veilig genoeg worden gemaakt voor vreemden: complexe rollensystemen met tientallen niveaus, zeer gevoelige medische of financiële dossiers, of marktplaatsen met automatische uitbetalingen. In die situaties is de enige verstandige en eerlijke optie om te demonstreren zónder openbare live registratie - oftewel een strak geleide demo via een vooraf klaargezet testaccount - en transparant uitleg te geven over de tijdlijn naar lancering. Investeerders hebben diep respect voor oprichters die gebruikersbescherming zwaarder laten wegen dan uiterlijke schijn.
 
 ## Kiezen Wat Je Toont en Wat Je Verbergt
 
@@ -155,15 +155,15 @@ Wanneer al deze tien punten zijn afgevinkt, is het enige resterende risico de be
 
 ## Waarom Investeerders het Verschil Direct Merken
 
-Ervaren investeerders hebben inmiddels tientallen met AI gegenereerde demo's voorbij zien komen. Het valt hen direct op wanneer een oprichter exact kan duiden wat er productiewaardig is en wat nog niet, wanneer zelf registreren tijdens de pitch vlekkeloos verloopt en wanneer een scherpe vraag over privacy een feitelijk en helder antwoord oplevert. Dit toont een ondernemer die verantwoordelijkheid neemt voor groei en risico's — en dat is precies waarop een vroege-fase investeerder zijn kapitaal inzet.
+Ervaren investeerders hebben inmiddels tientallen met AI gegenereerde demo's voorbij zien komen. Het valt hen direct op wanneer een oprichter exact kan duiden wat er productiewaardig is en wat nog niet, wanneer zelf registreren tijdens de pitch vlekkeloos verloopt en wanneer een scherpe vraag over privacy een feitelijk en helder antwoord oplevert. Dit toont een ondernemer die verantwoordelijkheid neemt voor groei en risico's - en dat is precies waarop een vroege-fase investeerder zijn kapitaal inzet.
 
 ## Na Demo Day: Het Momentum Vasthouden
 
-Demo days zorgen voor een plotselinge piek in de belangstelling: aanmeldingen uit de zaal, vervolggesprekken en berichten op sociale media. Zorg dat de volledige hardening gepland staat om direct van start te gaan, zodat het product waarmee nieuwe gebruikers kennismaken minstens zo solide functioneert als wat er op het podium te zien was — en bij voorkeur vele malen robuuster.
+Demo days zorgen voor een plotselinge piek in de belangstelling: aanmeldingen uit de zaal, vervolggesprekken en berichten op sociale media. Zorg dat de volledige hardening gepland staat om direct van start te gaan, zodat het product waarmee nieuwe gebruikers kennismaken minstens zo solide functioneert als wat er op het podium te zien was - en bij voorkeur vele malen robuuster.
 
 ## In Eén Enkele Zin Samengevat
 
-Drie dagen is ruim voldoende om een interactieve demo veilig te maken voor vreemden, maar niet genoeg om een heel bedrijf productierijp te maken — wees dus glashelder over wat je precies doet en plan het resterende werk direct in.
+Drie dagen is ruim voldoende om een interactieve demo veilig te maken voor vreemden, maar niet genoeg om een heel bedrijf productierijp te maken - wees dus glashelder over wat je precies doet en plan het resterende werk direct in.
 
 ## De Rol van LaunchStudio
 
@@ -171,7 +171,7 @@ LaunchStudio werkt doorgaans in projecten van één tot drie weken, maar een ger
 
 LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, ruim 120 senior engineers en kantoren in Amsterdam (Herengracht 420), Singapore en Ho Chi Minh City. Bekijk [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/). Voor een gestructureerd overzicht van wat technische juryleden doorgaans controleren, biedt het [OWASP Top 10-framework](https://owasp.org/www-project-top-ten/) het referentiekader dat veel beoordelaars hanteren.
 
-Ligt jouw pitchdeadline deze week? [Meld je project direct aan](https://launchstudio.eu/nl/#contact) — en vermeld het woord "pitch" direct in de eerste regel.
+Ligt jouw pitchdeadline deze week? [Meld je project direct aan](https://launchstudio.eu/nl/#contact) - en vermeld het woord "pitch" direct in de eerste regel.
 
 ## Praktijkvoorbeeld
 
@@ -183,17 +183,17 @@ Met nog 72 uur op de klok wees de snelle triage van LaunchStudio uit dat de live
 
 Binnen drie dagen roteerde het team de gelekte Mollie-sleutel en werd het aanmaken van betalingen verplaatst naar een beveiligde serveromgeving. De demo-omgeving werd omgezet naar Mollie-testmodus met een duidelijke waarschuwingsbanner, autorisatieregels werden afgedwongen zodat huishoudens uitsluitend hun eigen bestellingen en adres konden inzien, de beheerpagina werd afgeschermd achter server-side rolcontroles, er werd een geïsoleerde demodatabase met fictieve gezinnen klaargezet, de app werd gekoppeld aan Max' officiële domein met SSL en monitoring, en Max werd gecoacht op technische vragen. Max bevroor alle wijzigingen 18 uur voor aanvang van het evenement.
 
-**Het resultaat:** Drie juryleden maakten tijdens de pitch live een account aan zonder dat er zich ook maar één probleem voordeed. Een van hen vroeg hoe klantgegevens technisch werden afgeschermd, waarop Max een helder en feitelijk antwoord gaf. Groentegilde ontving ter plekke een pre-seed investeringsvoorstel, en de definitieve productie-hardening — webhooks, EU-migratie, staging-omgeving en geautomatiseerde tests — werd in de twee weken na demo day gerealiseerd.
+**Het resultaat:** Drie juryleden maakten tijdens de pitch live een account aan zonder dat er zich ook maar één probleem voordeed. Een van hen vroeg hoe klantgegevens technisch werden afgeschermd, waarop Max een helder en feitelijk antwoord gaf. Groentegilde ontving ter plekke een pre-seed investeringsvoorstel, en de definitieve productie-hardening - webhooks, EU-migratie, staging-omgeving en geautomatiseerde tests - werd in de twee weken na demo day gerealiseerd.
 
 > *"Ik ben gestopt met proberen om alles perfect te maken en heb me puur gericht op het veilig maken voor de mensen die er donderdag op zouden klikken. Dat was precies het juiste ambitieniveau voor drie dagen tijd."*
-> — **Max Kuipers, Oprichter, Groentegilde (Amsterdam)**
+> - **Max Kuipers, Oprichter, Groentegilde (Amsterdam)**
 
-**Kosten & Tijdlijn:** € 1.900 (pre-pitch hardeningsprint: secrets, toegangscontrole, admin-beveiliging, demo-omgeving en domeinkoppeling) — opgeleverd in 3 dagen; de volledige enterprise-afronding volgde als afzonderlijk vervolgtraject.
+**Kosten & Tijdlijn:** € 1.900 (pre-pitch hardeningsprint: secrets, toegangscontrole, admin-beveiliging, demo-omgeving en domeinkoppeling) - opgeleverd in 3 dagen; de volledige enterprise-afronding volgde als afzonderlijk vervolgtraject.
 
 ## Veelgestelde Vragen
 
 ### Kan een met AI gebouwde app echt in 72 uur veilig worden gemaakt?
-Voor demogebruik door vreemden vaak wel — door je rigoureus te focussen op gelekte sleutels, cross-user datatoegang, admin-pagina's en betalingen. Volledige gereedheid voor grootschalige productie vergt doorgaans één tot drie weken.
+Voor demogebruik door vreemden vaak wel - door je rigoureus te focussen op gelekte sleutels, cross-user datatoegang, admin-pagina's en betalingen. Volledige gereedheid voor grootschalige productie vergt doorgaans één tot drie weken.
 
 ### Moet ik een pitchjury laten aanmelden met echte betalingen?
 Uitsluitend wanneer betalingen cryptografisch worden gevalideerd via webhooks en je bereid bent eventuele bedragen direct terug te storten. Gebruik in alle andere gevallen een duidelijk gemarkeerde testmodus; investeerders hebben hier alle begrip voor.

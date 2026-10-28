@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Four Real Governance Functions:** Architecture review with actual veto authority, independent audit cadence, an escalation path that bypasses delivery, and SLAs with real consequences.
-✅ **Amsterdam Strategic Governance:** A function that has actually said no to a proposed approach recently — not one that's only ever observed.
+✅ **Amsterdam Strategic Governance:** A function that has actually said no to a proposed approach recently - not one that's only ever observed.
 ✅ **Vietnam Execution Velocity:** Delivery contractually and organizationally distinct from the entity that governs it.
 
 Ask any vendor: describe a time your governance function overruled your delivery team. Vendors with real governance have an answer. 🛡️

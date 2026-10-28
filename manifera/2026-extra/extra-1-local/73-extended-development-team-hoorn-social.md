@@ -6,7 +6,7 @@
 ❌ **Ticket-Only Execution:** Building exactly what's written, missing the product intent behind it.
 
 **The Manifera Solution:**
-✅ **Same Design System, No Drift:** Structurally consistent with your existing component library — not a parallel build.
+✅ **Same Design System, No Drift:** Structurally consistent with your existing component library - not a parallel build.
 ✅ **Explicit Quality Bar:** Performance, accessibility, and visual consistency defined, not assumed.
 ✅ **Direct Product Collaboration:** Enough context to catch the gap between a literal ticket and the real customer experience.
 

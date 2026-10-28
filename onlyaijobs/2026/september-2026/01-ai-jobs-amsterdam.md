@@ -32,7 +32,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Search for AI jobs in Amsterdam and you will meet the same twenty companies every time. They have recruitment budgets, sponsored placements, and careers pages built by agencies. They are genuinely good employers. They are also, for most of the engineers reading this, the wrong shortlist — not because the roles are bad, but because that shortlist was assembled by advertising spend rather than by fit.
+Search for AI jobs in Amsterdam and you will meet the same twenty companies every time. They have recruitment budgets, sponsored placements, and careers pages built by agencies. They are genuinely good employers. They are also, for most of the engineers reading this, the wrong shortlist - not because the roles are bad, but because that shortlist was assembled by advertising spend rather than by fit.
 
 Here is the mechanism. Generalist job boards rank vacancies by a blend of bid, recency and engagement. An employer that pays more per click appears higher. A company with a two-person HR team and one machine learning vacancy competes for attention against a multinational with a full-time employer brand manager. The multinational wins the impression, every time, regardless of which one is a better place to write models.
 
@@ -42,7 +42,7 @@ The result is an availability illusion. Engineers conclude the Amsterdam AI mark
 
 Amsterdam's AI demand is not one market. It is at least four, and they behave differently.
 
-**Platform and scale-up engineering.** Payments, logistics, marketplaces and e-commerce companies that reached a data volume where machine learning stopped being optional. These roles are heavy on production engineering: feature pipelines, model serving, latency budgets, monitoring. Titles vary wildly — ML Engineer, Data Engineer, Platform Engineer with an ML mandate — which is precisely why keyword searching on a generalist board misses them.
+**Platform and scale-up engineering.** Payments, logistics, marketplaces and e-commerce companies that reached a data volume where machine learning stopped being optional. These roles are heavy on production engineering: feature pipelines, model serving, latency budgets, monitoring. Titles vary wildly - ML Engineer, Data Engineer, Platform Engineer with an ML mandate - which is precisely why keyword searching on a generalist board misses them.
 
 **Enterprise and consultancy.** Large firms building internal AI capability or delivering it to clients. Governance-heavy, documentation-heavy, and increasingly shaped by the EU AI Act. On OnlyAIJobs, employers in this segment include Accenture and Cegeka Nederland, both of which currently list roles that combine technical work with regulatory responsibility.
 
@@ -56,11 +56,11 @@ An engineer searching `machine learning engineer amsterdam` sees mostly the firs
 
 Every Amsterdam offer contains a variable the job ad omits: where the office actually is, and what that costs you daily.
 
-Two offers at the same salary are not the same offer. One is twelve minutes from your door. The other is a train to Amsterdam Centraal, a tram, and a walk — call it seventy minutes each way. Over a working year, that difference is not a preference. It is roughly five hundred hours, which is the equivalent of about three months of full working days spent moving rather than living.
+Two offers at the same salary are not the same offer. One is twelve minutes from your door. The other is a train to Amsterdam Centraal, a tram, and a walk - call it seventy minutes each way. Over a working year, that difference is not a preference. It is roughly five hundred hours, which is the equivalent of about three months of full working days spent moving rather than living.
 
 This is why OnlyAIJobs displays every vacancy at exact street-address level and shows the distance from where you live, rather than tagging a job "Amsterdam" and leaving you to discover on the second interview that the office is in Sloterdijk and you are in Haarlem.
 
-The same mechanism works in reverse, and this is the part most engineers underestimate. A role in Amstelveen, Hoofddorp or Diemen may be a shorter commute from where you already live than a role in Amsterdam Zuid — but it is filed under a different city name, so it never appears in your search at all.
+The same mechanism works in reverse, and this is the part most engineers underestimate. A role in Amstelveen, Hoofddorp or Diemen may be a shorter commute from where you already live than a role in Amsterdam Zuid - but it is filed under a different city name, so it never appears in your search at all.
 
 ## Comparative Analysis: How You Are Finding Roles vs How You Could Be
 
@@ -72,7 +72,7 @@ The same mechanism works in reverse, and this is the part most engineers underes
 | Role coverage | Every sector; AI buried in IT | AI, ML, data and research only |
 | Employer visibility | Correlates with HR budget | Equal for every employer |
 | Adjacent municipalities | Filtered out by city search | Surfaced by distance |
-| Signal-to-noise for an AI engineer | Low — thousands of unrelated IT roles | High — nothing but AI roles |
+| Signal-to-noise for an AI engineer | Low - thousands of unrelated IT roles | High - nothing but AI roles |
 
 ## The Companies You Have Not Heard Of
 
@@ -86,7 +86,7 @@ The practical consequence: your shortlist should be built from the actual popula
 
 Amsterdam's AI labour market is shaped as much by its research institutions as by its employers, and understanding them tells you something concrete about who you are competing with and who is hiring.
 
-**University of Amsterdam (UvA).** The Informatics Institute and the Amsterdam Machine Learning Lab (AMLab) have produced a steady stream of graduates and PhDs in deep learning, probabilistic modelling and computer vision. Several of the UvA's research labs are co-funded with industry — the QUVA Lab with Qualcomm and the Delta Lab with Bosch are two long-standing examples — which means a share of the city's most technical ML work sits in industrial research groups rather than in product teams.
+**University of Amsterdam (UvA).** The Informatics Institute and the Amsterdam Machine Learning Lab (AMLab) have produced a steady stream of graduates and PhDs in deep learning, probabilistic modelling and computer vision. Several of the UvA's research labs are co-funded with industry - the QUVA Lab with Qualcomm and the Delta Lab with Bosch are two long-standing examples - which means a share of the city's most technical ML work sits in industrial research groups rather than in product teams.
 
 **Vrije Universiteit Amsterdam (VU).** Strong in knowledge representation, network science and applied data science, with a graduate profile that leans towards hybrid AI and information systems rather than pure deep learning.
 
@@ -98,7 +98,7 @@ What this means for your search is practical. For junior and mid-level roles, yo
 
 ## The Real Market Is the Metropolitan Region, Not the Municipality
 
-Administratively, Amsterdam is one municipality. Economically, the relevant unit is the **Metropoolregio Amsterdam (MRA)** — a cooperation of around thirty municipalities across Noord-Holland and Flevoland that share one labour market, one rail network and one housing problem.
+Administratively, Amsterdam is one municipality. Economically, the relevant unit is the **Metropoolregio Amsterdam (MRA)** - a cooperation of around thirty municipalities across Noord-Holland and Flevoland that share one labour market, one rail network and one housing problem.
 
 Treating the MRA as your search area changes the map considerably:
 
@@ -118,7 +118,7 @@ Two travel facts illustrate how misleading the city tag is. A train from Haarlem
 
 A large share of Amsterdam's AI engineers relocated from outside the Netherlands, and the job advertisement typically omits the three factors that most affect whether an offer actually works.
 
-**Whether the employer is a recognised sponsor.** Non-EU candidates hired under the highly skilled migrant (*kennismigrant*) scheme need an employer that is a recognised sponsor (*erkend referent*) with the **Immigratie- en Naturalisatiedienst (IND)**. Large employers almost always are. Smaller, under-advertised employers sometimes are not — which does not rule them out, but it adds a step you should ask about in the first conversation, not the last.
+**Whether the employer is a recognised sponsor.** Non-EU candidates hired under the highly skilled migrant (*kennismigrant*) scheme need an employer that is a recognised sponsor (*erkend referent*) with the **Immigratie- en Naturalisatiedienst (IND)**. Large employers almost always are. Smaller, under-advertised employers sometimes are not - which does not rule them out, but it adds a step you should ask about in the first conversation, not the last.
 
 **How the 30% ruling applies to you.** The Dutch tax facility for incoming employees (the *30%-regeling*) remains a meaningful part of many relocation offers, but its rules were tightened by legislation in recent years, including a reduction of the maximum tax-free percentage from 2027. Treat any offer that leans heavily on it as something to verify with a tax adviser against your own start date rather than as a fixed number.
 
@@ -126,7 +126,7 @@ A large share of Amsterdam's AI engineers relocated from outside the Netherlands
 
 ## Compliance Work Is Becoming a Core Amsterdam AI Skill
 
-Amsterdam's concentration of banks, payment companies, insurers and consultancies makes it one of the places in the Netherlands where the **EU Artificial Intelligence Act** is changing job content fastest. The regulation entered into force in August 2024 and applies in phases, with obligations for high-risk systems — including many credit-scoring and certain employment-related uses — following later in the rollout.
+Amsterdam's concentration of banks, payment companies, insurers and consultancies makes it one of the places in the Netherlands where the **EU Artificial Intelligence Act** is changing job content fastest. The regulation entered into force in August 2024 and applies in phases, with obligations for high-risk systems - including many credit-scoring and certain employment-related uses - following later in the rollout.
 
 In practice, this shows up in vacancies as responsibilities rather than titles: model documentation, risk classification, bias testing, human-oversight design, and cooperation with compliance and legal teams. Engineers who combine solid production ML with the ability to document and defend a model are scarce in the Zuidas cluster, and that scarcity is not yet reflected in how the roles are titled. Read the responsibilities; the governance component is often where the seniority is hidden.
 
@@ -143,14 +143,14 @@ OnlyAIJobs applies three rules that a generalist board structurally cannot.
 ## Key Takeaways
 
 - The Amsterdam companies you see most often are the ones with the largest advertising budgets, not necessarily the best matches.
-- Amsterdam's AI demand splits into platform engineering, enterprise and consultancy, product teams with an AI layer, and research-adjacent work — the last two are nearly invisible to keyword search.
+- Amsterdam's AI demand splits into platform engineering, enterprise and consultancy, product teams with an AI layer, and research-adjacent work - the last two are nearly invisible to keyword search.
 - The relevant search area is the Metropoolregio Amsterdam, including Amstelveen, Hoofddorp, Haarlem and Almere, not the municipality.
 - UvA, VU, CWI and HvA create strong competition for junior roles and a shortage of senior production engineers.
 - International candidates should check recognised-sponsor status, the current 30% ruling rules, and housing before comparing salaries.
 
 ## Where to Start
 
-Do not begin with a company shortlist. Begin with a radius. Decide what commute you are willing to accept as a permanent feature of your life, then look at every AI role inside it — including the ones in municipalities you would never have typed into a search box.
+Do not begin with a company shortlist. Begin with a radius. Decide what commute you are willing to accept as a permanent feature of your life, then look at every AI role inside it - including the ones in municipalities you would never have typed into a search box.
 
 Browse the current AI, machine learning and data vacancies in and around Amsterdam at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs). Filter by category, sort by date, and look at where the offices actually are before you write a single cover letter.
 
@@ -163,13 +163,13 @@ No. Large employers dominate visibility, not volume. Amsterdam's AI demand is sp
 Because "Amsterdam" can mean a twelve-minute cycle or a seventy-minute door-to-door commute, and the difference is roughly five hundred hours a year. It also cuts the other way: a role in Amstelveen, Diemen or Hoofddorp may be closer to you than one in central Amsterdam, but a city-name search filters it out entirely. Address-level listings let distance, not administrative boundaries, define your shortlist.
 
 ### (Scenario: Backend developer moving into AI work) Why can't I find AI roles by searching for "AI engineer"?
-Because a large share of real AI work is advertised under other titles — Backend Engineer, Data Engineer, Platform Engineer, or a product-specific title — where the AI component appears only in the responsibilities. Keyword search on a generalist board misses these entirely. Browsing a board that contains only AI roles solves the problem from the other direction: instead of filtering thousands of IT vacancies down to AI, you start with AI and filter by what kind.
+Because a large share of real AI work is advertised under other titles - Backend Engineer, Data Engineer, Platform Engineer, or a product-specific title - where the AI component appears only in the responsibilities. Keyword search on a generalist board misses these entirely. Browsing a board that contains only AI roles solves the problem from the other direction: instead of filtering thousands of IT vacancies down to AI, you start with AI and filter by what kind.
 
 ### (Scenario: Senior engineer who keeps seeing the same employers) Why do the same companies appear in every AI job search?
 Because generalist boards rank partly by advertising spend. An employer with a dedicated recruitment budget appears above an employer with one vacancy and no budget, regardless of role quality. OnlyAIJobs gives every employer the same visibility precisely so the list reflects the market rather than the bidding.
 
 ### (Scenario: Candidate deciding whether to widen the search radius) How do I decide how far outside Amsterdam to look?
-Start from the commute you are willing to live with permanently rather than from a list of cities, then examine every AI role within that radius. Engineers routinely discover that widening the radius by fifteen minutes adds employers in Amstelveen, Hoofddorp, Almere or Utrecht that were invisible under a city-based search — and that some of them are closer to home than the Amsterdam office they were about to accept.
+Start from the commute you are willing to live with permanently rather than from a list of cities, then examine every AI role within that radius. Engineers routinely discover that widening the radius by fifteen minutes adds employers in Amstelveen, Hoofddorp, Almere or Utrecht that were invisible under a city-based search - and that some of them are closer to home than the Amsterdam office they were about to accept.
 
 <script type="application/ld+json">
 {

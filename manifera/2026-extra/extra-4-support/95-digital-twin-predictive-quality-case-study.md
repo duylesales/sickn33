@@ -26,7 +26,7 @@ An IT Manager at a manufacturing company scoping a digital twin platform for pre
 
 Recognizing this reality explicitly, before real production volume accumulates against silently degrading sensor data, is what separates a digital twin that stays trustworthy for years from one that quietly stops being trustworthy long before anyone notices.
 
-Physical sensors — temperature, pressure, vibration, dimensional measurement sensors commonly feeding a manufacturing digital twin's real-time data — are subject to gradual calibration drift over their operational lifetime, a well-established phenomenon in industrial sensor physics driven by factors like component aging, environmental exposure, and mechanical wear. This isn't a rare failure mode affecting only defective sensors; it's an expected, inevitable characteristic of physical sensor operation generally, meaning any digital twin system relying on continuous sensor data over an extended operational period will, without explicit correction, eventually be operating against increasingly inaccurate underlying data even while every individual sensor continues reporting values that look superficially plausible.
+Physical sensors - temperature, pressure, vibration, dimensional measurement sensors commonly feeding a manufacturing digital twin's real-time data - are subject to gradual calibration drift over their operational lifetime, a well-established phenomenon in industrial sensor physics driven by factors like component aging, environmental exposure, and mechanical wear. This isn't a rare failure mode affecting only defective sensors; it's an expected, inevitable characteristic of physical sensor operation generally, meaning any digital twin system relying on continuous sensor data over an extended operational period will, without explicit correction, eventually be operating against increasingly inaccurate underlying data even while every individual sensor continues reporting values that look superficially plausible.
 
 ## Why This Creates a Genuinely Dangerous, Gradually-Worsening Prediction Accuracy Problem
 
@@ -43,7 +43,7 @@ A digital twin's predictive quality monitoring depends on its underlying model a
 
 A specific reason sensor drift-related accuracy degradation, like the pattern Manufactura Digital Segovia experienced below, tends to go undiagnosed for an extended period: a digital twin platform's initial deployment validation naturally happens against freshly calibrated sensors, since the deployment and calibration process typically occur together at project launch, meaning the platform's validated accuracy figures reflect a specific, favorable sensor calibration state that isn't representative of the sensor fleet's condition many months or years later. A team that validates accuracy once at deployment and treats that validation as an ongoing guarantee, without accounting for the fact that sensor calibration state itself changes over time independent of anything the digital twin software does, is making an implicit assumption about sensor stability that gradual, real-world drift specifically violates.
 
-This is a specific instance of a broader validation principle worth naming directly: a system's validated accuracy at a specific point in time is a snapshot, not a permanent guarantee, whenever the underlying data sources feeding that system are themselves subject to change over time — a principle that applies to sensor drift in manufacturing digital twins in much the same way it applies to model drift in other predictive AI systems more broadly. A team genuinely committed to sustained digital twin accuracy needs to treat this as an ongoing operational discipline requiring continuous attention, not a one-time validation milestone that can be considered permanently satisfied once initial deployment testing looks good.
+This is a specific instance of a broader validation principle worth naming directly: a system's validated accuracy at a specific point in time is a snapshot, not a permanent guarantee, whenever the underlying data sources feeding that system are themselves subject to change over time - a principle that applies to sensor drift in manufacturing digital twins in much the same way it applies to model drift in other predictive AI systems more broadly. A team genuinely committed to sustained digital twin accuracy needs to treat this as an ongoing operational discipline requiring continuous attention, not a one-time validation milestone that can be considered permanently satisfied once initial deployment testing looks good.
 
 ## Why the Cost of Undetected Drift Compounds With Production Volume
 
@@ -63,7 +63,7 @@ Manufactura Digital Segovia, a Segovia-based manufacturer, had deployed a predic
 Manifera's Amsterdam team rebuilt the digital twin platform to include explicit sensor drift detection comparing readings against expected patterns and cross-referencing redundant sensors, integrated sensor recalibration scheduling directly with the platform's own data quality monitoring, and added confidence indicators to prediction outputs reflecting current sensor data reliability.
 
 > *"Our predictions had quietly gotten worse over a year and a half without anyone noticing, because nothing about the drift looked like an obvious sensor failure. It took a real quality incident and a genuine investigation to trace it back to sensor calibration, and building proper drift detection was what finally closed that gap for good."*
-> — **IT Manager, Manufactura Digital Segovia**
+> - **IT Manager, Manufactura Digital Segovia**
 
 Manufactura Digital Segovia's rebuilt digital twin has since caught and flagged several instances of sensor drift before they meaningfully affected prediction accuracy, and the company now treats sensor calibration monitoring as an integrated part of its digital twin's ongoing data quality assurance, not a separate physical maintenance concern disconnected from the digital system's own operation.
 
@@ -78,7 +78,7 @@ Manufactura Digital Segovia's rebuilt digital twin has since caught and flagged 
 
 ## Scoping Your Own Manufacturing Digital Twin's Sensor Reliability Architecture
 
-Before deploying a predictive quality digital twin, verify it includes explicit sensor drift detection and integrated recalibration scheduling — sensor drift is an inevitable physical reality, and a digital twin without explicit handling for it risks silent, gradually worsening prediction accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely drift-resistant manufacturing digital twin platform.
+Before deploying a predictive quality digital twin, verify it includes explicit sensor drift detection and integrated recalibration scheduling - sensor drift is an inevitable physical reality, and a digital twin without explicit handling for it risks silent, gradually worsening prediction accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely drift-resistant manufacturing digital twin platform.
 
 ## Frequently Asked Questions
 

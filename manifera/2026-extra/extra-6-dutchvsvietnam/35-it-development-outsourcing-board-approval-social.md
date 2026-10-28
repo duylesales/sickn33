@@ -7,10 +7,10 @@
 
 **The Manifera Solution:**
 ✅ **Five Questions, Pre-Built Answers:** IP ownership, named accountability, exit path, realistic financial model, and regulatory exposure.
-✅ **Amsterdam Strategic Governance:** A specific, citable contract clause — EU jurisdiction, individual engineer NDAs, client-owned repositories from day one.
+✅ **Amsterdam Strategic Governance:** A specific, citable contract clause - EU jurisdiction, individual engineer NDAs, client-owned repositories from day one.
 ✅ **Vietnam Execution Velocity:** A persistent, documented team structure that makes a failed engagement a costly disappointment, not an unrecoverable one.
 
-Walk in with specific answers — not confidence that the vendor is good. 🛡️
+Walk in with specific answers - not confidence that the vendor is good. 🛡️
 
 👉 Read our full deep dive on it development outsourcing board approval: https://www.manifera.com/blog/it-development-outsourcing-board-approval
 

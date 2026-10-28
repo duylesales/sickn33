@@ -12,7 +12,7 @@ Een prototype dat werkt voor 20 gebruikers bezwijkt gegarandeerd onder de piekbe
 
 Bij LaunchStudio optimaliseren en testen we AI-backends voor piekschaalbaarheid. 🛡️
 
-Anders herlanceerde in januari: #4 Product van de Dag, 3.200 nieuwe gebruikers en 100% uptime. (€ 2.800 (Scaling & Performance) — 10 werkdagen.) 🚀
+Anders herlanceerde in januari: #4 Product van de Dag, 3.200 nieuwe gebruikers en 100% uptime. (€ 2.800 (Scaling & Performance) - 10 werkdagen.) 🚀
 
 👉 Lees de herstel case study: https://launchstudio.eu/nl/blog/failed-product-hunt-january-relaunch-case-study
 

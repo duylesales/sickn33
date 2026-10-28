@@ -25,11 +25,11 @@ Dit is de meest kritische en meest voorkomende kwetsbaarheid in door AI gebouwde
 
     - Gebruik Ctrl+Shift+F (door alle bestanden zoeken) om naar deze patronen te zoeken:
 
-            - `sk_live` of `sk_test` — Stripe geheime sleutels
+            - `sk_live` of `sk_test` - Stripe geheime sleutels
 
-            - `supabase` gevolgd door lange reeksen — Supabase-servicerolsleutels
+            - `supabase` gevolgd door lange reeksen - Supabase-servicerolsleutels
 
-            - `wachtwoord`, `geheim`, `token` — Alle hardgecodeerde inloggegevens
+            - `wachtwoord`, `geheim`, `token` - Alle hardgecodeerde inloggegevens
 
             - Uw werkelijke API-sleutelwaarden: zoek naar de eerste 10 tekens van elke sleutel die u gebruikt
 
@@ -37,7 +37,7 @@ Dit is de meest kritische en meest voorkomende kwetsbaarheid in door AI gebouwde
 
 Als u referenties aantreft in de code aan de clientzijde:
 
-- **Rouleer de blootgestelde sleutels onmiddellijk** — genereer nieuwe sleutels in Stripe, Supabase of welke service dan ook is blootgesteld
+- **Rouleer de blootgestelde sleutels onmiddellijk** - genereer nieuwe sleutels in Stripe, Supabase of welke service dan ook is blootgesteld
 
 - **Verplaats alle geheimen naar omgevingsvariabelen aan de serverzijde**: deze zouden alleen toegankelijk moeten zijn in uw backendcode of edge-functies
 
@@ -101,15 +101,15 @@ Elk formulier en invoerveld in uw applicatie is een potentieel toegangspunt voor
 
 Probeer voor elk formulier in uw aanvraag het volgende in te dienen:
 
-1. **Lege verplichte velden** — zou validatiefouten moeten tonen
+1. **Lege verplichte velden** - zou validatiefouten moeten tonen
 
-2. **Extreem lange tekst** (meer dan 10.000 tekens) — moet worden beperkt of netjes worden behandeld
+2. **Extreem lange tekst** (meer dan 10.000 tekens) - moet worden beperkt of netjes worden behandeld
 
-3. **HTML-tags**: `<script>alert('xss')</script>` — moeten worden verwijderd of geëscaped
+3. **HTML-tags**: `<script>alert('xss')</script>` - moeten worden verwijderd of geëscaped
 
-4. **SQL-fragmenten**: `'; DROP TABLE-gebruikers; --` — moet worden behandeld als tekst en niet worden uitgevoerd
+4. **SQL-fragmenten**: `'; DROP TABLE-gebruikers; --` - moet worden behandeld als tekst en niet worden uitgevoerd
 
-5. **Speciale tekens**: `<>"'/\` — moeten worden verwerkt zonder de gebruikersinterface te verbreken
+5. **Speciale tekens**: `<>"'/\` - moeten worden verwerkt zonder de gebruikersinterface te verbreken
 
 ### Wat te repareren
 
@@ -164,7 +164,7 @@ Lucas werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Lucas slaagde voor de leveranciersveiligheidsbeoordeling van zijn zakelijke klant en ging op tijd van start.
 
-**Kosten en tijdlijn:** € 2.400 (Audit- en verhardingspakket) — productieklaar en binnen 8 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 2.400 (Audit- en verhardingspakket) - productieklaar en binnen 8 werkdagen geïmplementeerd.
 
 ---
 

@@ -31,13 +31,13 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Hier is een financieel feit dat menig beginnend SaaS-oprichter binnen de Europese Unie onaangenaam verrast: verkoopt u een maandelijks abonnement van € 10 aan een consument in Duitsland, dan bent u daarover Duitse btw verschuldigd — niet het btw-tarief van uw thuisland (zoals 21% in Nederland of België), maar het Duitse percentage van 19%. Zelfs als uw onderneming daar geen kantoor heeft en de volledige transactie digitaal via een Stripe-afrekenpagina verloopt. Vermenigvuldig dit met klanten verspreid over tien of vijftien Europese lidstaten, en de naïeve compliance-route lijkt te bestaan uit het aanvragen van afzonderlijke btw-nummers in elk land, met vijftien verschillende aangiftes volgens uiteenlopende lokale kalenders.
+Hier is een financieel feit dat menig beginnend SaaS-oprichter binnen de Europese Unie onaangenaam verrast: verkoopt u een maandelijks abonnement van € 10 aan een consument in Duitsland, dan bent u daarover Duitse btw verschuldigd - niet het btw-tarief van uw thuisland (zoals 21% in Nederland of België), maar het Duitse percentage van 19%. Zelfs als uw onderneming daar geen kantoor heeft en de volledige transactie digitaal via een Stripe-afrekenpagina verloopt. Vermenigvuldig dit met klanten verspreid over tien of vijftien Europese lidstaten, en de naïeve compliance-route lijkt te bestaan uit het aanvragen van afzonderlijke btw-nummers in elk land, met vijftien verschillende aangiftes volgens uiteenlopende lokale kalenders.
 
 Vrijwel niemand doet dat. De Europese Unie heeft hiervoor een specifiek gecentraliseerd systeem ingericht: het **One Stop Shop (OSS)**-systeem. Weten dat deze regeling bestaat en deze daadwerkelijk correct inrichten in uw betaal- en facturatieflow zijn echter twee verschillende zaken. In dat schemergebied betalen veel oprichters ongemerkt te veel aan administratieve complexiteit, of bouwen ze onbewust een gevaarlijke belastingschuld op.
 
 ## De Regel voor Digitale Diensten aan Consumenten (B2C): Belastingheffing op de Bestemming
 
-Voor digitale diensten aan particuliere consumenten (B2C) — waaronder SaaS-abonnementen, downloadbare software en cloudtools vallen — hanteert de EU het zogenoemde **bestemmingslandbeginsel**. De btw is verschuldigd in het land waar de consument woont, tegen het lokale tarief van dat land.
+Voor digitale diensten aan particuliere consumenten (B2C) - waaronder SaaS-abonnementen, downloadbare software en cloudtools vallen - hanteert de EU het zogenoemde **bestemmingslandbeginsel**. De btw is verschuldigd in het land waar de consument woont, tegen het lokale tarief van dat land.
 
 Dit wijkt af van de intuïtie van veel ondernemers, die gewend zijn belasting af te dragen volgens het tarief van hun eigen vestigingsplaats. De Europese regelgeving is ontworpen om te voorkomen dat techbedrijven zich vestigen in lidstaten met een laag btw-tarief (zoals Luxemburg met 17%) om concurrenten in hogere belastinglanden (zoals Hongarije met 27%) structureel op prijs te beconcurreren. 
 
@@ -54,7 +54,7 @@ Het **btw-éénloketsysteem (One Stop Shop / OSS)** stelt een Europese ondernemi
 
 Dit is het mechanisme dat vrijwel elke kleine tot middelgrote SaaS-onderneming met Europese particuliere klanten moet hanteren. De registratie verloopt via het zakelijke portaal van de Belastingdienst (in Nederland) of de FOD Financiën (in België) en duurt doorgaans enkele weken.
 
-**Een belangrijk misverstand:** De OSS verlaagt uw belastingtarief niet — u moet nog steeds het juiste lokale percentage van de klant hanteren en afdragen. Het verlaagt uitsluitend de administratieve last door 27 afzonderlijke nationale registraties en aangiftes terug te brengen naar één kwartaalrapportage. Heeft u al grensoverschrijdend aan Europese consumenten verkocht zonder OSS-registratie, dan is het essentieel dit direct met een boekhouder recht te zetten. Er bestaat geen "ik wist het niet"-vrijstelling bij btw-audits, en met terugwerkende kracht corrigeren is aanzienlijk bewerkelijker dan direct compliant starten.
+**Een belangrijk misverstand:** De OSS verlaagt uw belastingtarief niet - u moet nog steeds het juiste lokale percentage van de klant hanteren en afdragen. Het verlaagt uitsluitend de administratieve last door 27 afzonderlijke nationale registraties en aangiftes terug te brengen naar één kwartaalrapportage. Heeft u al grensoverschrijdend aan Europese consumenten verkocht zonder OSS-registratie, dan is het essentieel dit direct met een boekhouder recht te zetten. Er bestaat geen "ik wist het niet"-vrijstelling bij btw-audits, en met terugwerkende kracht corrigeren is aanzienlijk bewerkelijker dan direct compliant starten.
 
 ## De Vrijstellingsdrempel van € 10.000 Die Velen Over het Hoofd Zien
 
@@ -88,7 +88,7 @@ Een rechtsgeldige factuur bevat verplicht:
 - **Gegevens van de klant:** Volledige naam en adres (plus het gevalideerde btw-nummer bij zakelijke B2B-klanten).
 - **Een duidelijke omschrijving van de software of dienst:** Bijvoorbeeld "Abonnement Software Platform - Pro Tier (1 feb - 28 feb)".
 - **Uitsplitsing van bedragen:** Het nettobedrag, het gehanteerde btw-tarief, het daadwerkelijke btw-bedrag en het totale brutobedrag. Alleen een eindtotaal tonen is wettelijk ongeldig.
-- **Bij B2B btw-verlegging:** De verplichte formulering *"Btw verlegd"* of in het Engels *"VAT reverse charged — customer to account for VAT"*.
+- **Bij B2B btw-verlegging:** De verplichte formulering *"Btw verlegd"* of in het Engels *"VAT reverse charged - customer to account for VAT"*.
 
 Moderne facturatiesystemen zoals Stripe Tax of Paddle richten dit automatisch in mits ze correct geconfigureerd zijn. Vermijd daarom het handmatig knutselen van PDF-facturen via generieke templates.
 
@@ -109,7 +109,7 @@ Binnen het bredere Europese initiatief *VAT in the Digital Age (ViDA)* wordt dez
 
 Het begrijpen van de btw-regels en het configureren van Stripe Tax is een technische taak. Het daadwerkelijk indienen van de kwartaalaangiftes en het beoordelen van complexe uitzonderingen is echter het domein van een administratiekantoor of accountant. Schakel een boekhouder in die ervaring heeft met grensoverschrijdende SaaS-modellen; die is op dit vlak veel relevanter dan een algemene advocaat.
 
-Het waterdicht inrichten van uw betaalinfrastructuur — van VIES-validatie in de checkout tot conforme facturatie en geautomatiseerde btw-calculatie — is een van de vaste onderdelen van het go-to-market traject bij [LaunchStudio](https://launchstudio.eu/nl/). Met de technische ondersteuning van Manifera's team van 120+ engineers zorgen we dat uw betaalflow zakelijke inkoopcontroles en belastingaudits probleemloos doorstaat.
+Het waterdicht inrichten van uw betaalinfrastructuur - van VIES-validatie in de checkout tot conforme facturatie en geautomatiseerde btw-calculatie - is een van de vaste onderdelen van het go-to-market traject bij [LaunchStudio](https://launchstudio.eu/nl/). Met de technische ondersteuning van Manifera's team van 120+ engineers zorgen we dat uw betaalflow zakelijke inkoopcontroles en belastingaudits probleemloos doorstaat.
 
 [Spreek met een engineer die uw facturatieconfiguratie kan doorlichten](https://launchstudio.eu/nl/#contact) voordat een enterprise-klant een conforme factuur eist die u niet kunt leveren.
 
@@ -124,7 +124,7 @@ Toen een Duitse zakelijke klant de factuur indiende bij zijn financiële adminis
 **Het resultaat:** Met ondersteuning van LaunchStudio werd Daan met spoed geregistreerd voor het OSS-éénloket, werd Stripe Tax geactiveerd voor automatische realtime VIES-controles en bestemmingsbelasting, en werd het factuursjabloon volledig compliant gemaakt met opeenvolgende factuurnummers. Zijn accountant diende direct een herstelmelding in voor de voorgaande maanden, waarmee hoge boetes van de fiscus werden afgewend.
 
 > *"Ik dacht oprecht dat Stripe dit standaard allemaal regelde. Stripe wikkelt de betaling af; het garandeert absoluut niet dat de factuur die eruit rolt wettelijk geldig is."*
-> — **Daan Peeters, Oprichter van Kasboekje (Antwerpen)**
+> - **Daan Peeters, Oprichter van Kasboekje (Antwerpen)**
 
 ## Veelgestelde Vragen
 

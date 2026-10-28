@@ -31,11 +31,11 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Het streamen van AI-antwoorden — waarbij gegenereerde tekst woord voor woord (token voor token) op het scherm verschijnt terwijl het model rekent, in plaats van te wachten op het complete antwoord — is uitgegroeid tot de standaard verwachting van gebruikers. De juiste implementatie vereist het kiezen van de passende realtime communicatietechnologie. Hoewel zowel **Server-Sent Events (SSE)** als **WebSockets** tekst kunnen streamen, sluiten ze aan op wezenlijk verschillende toepassingen.
+Het streamen van AI-antwoorden - waarbij gegenereerde tekst woord voor woord (token voor token) op het scherm verschijnt terwijl het model rekent, in plaats van te wachten op het complete antwoord - is uitgegroeid tot de standaard verwachting van gebruikers. De juiste implementatie vereist het kiezen van de passende realtime communicatietechnologie. Hoewel zowel **Server-Sent Events (SSE)** als **WebSockets** tekst kunnen streamen, sluiten ze aan op wezenlijk verschillende toepassingen.
 
 ## Server-Sent Events (SSE): De Juiste Standaardkeuze voor de Meeste AI-Streaming
 
-SSE levert een eenrichtingsstroom (*one-way stream*) van server naar browser over standaard HTTP/HTTPS. Dit maakt de implementatie en uitrol aanzienlijk eenvoudiger dan bij WebSockets, aangezien SSE draait over normale HTTP-infrastructuur zonder dat er een permanente, bidirectionele verbinding in de lucht moet worden gehouden. Voor de meest voorkomende AI-streaming use-case — het tonen van gegenereerde tekst zodra deze wordt aangemaakt — is SSE vrijwel altijd ruim voldoende en de beste keuze: de data hoeft immers maar één kant op te stromen, van uw AI-backend naar de browser van de gebruiker.
+SSE levert een eenrichtingsstroom (*one-way stream*) van server naar browser over standaard HTTP/HTTPS. Dit maakt de implementatie en uitrol aanzienlijk eenvoudiger dan bij WebSockets, aangezien SSE draait over normale HTTP-infrastructuur zonder dat er een permanente, bidirectionele verbinding in de lucht moet worden gehouden. Voor de meest voorkomende AI-streaming use-case - het tonen van gegenereerde tekst zodra deze wordt aangemaakt - is SSE vrijwel altijd ruim voldoende en de beste keuze: de data hoeft immers maar één kant op te stromen, van uw AI-backend naar de browser van de gebruiker.
 
 **Ideaal voor:** Het streamen van gegenereerde AI-teksten (ChatGPT-achtige interfaces), live statusupdates, voortgangsbalken en eenrichtings realtime dashboards.
 
@@ -47,12 +47,12 @@ WebSocket bouwt een permanente, bidirectionele verbinding op waarmee zowel de se
 
 ## Waarom AI-Tools Regelmatig de Verkeerde Optie Kiezen
 
-AI-codeertools zoals Lovable en Bolt grijpen soms automatisch naar het patroon dat in hun trainingsdata het meest voorkomt voor algemene "realtime" functies. Dit leidt ertoe dat voor een simpele tekststream een complexe WebSocket wordt gegenereerd die met SSE veel eenvoudiger, goedkoper en schaalbaarder had gekund. Dit is functioneel niet direct kapot — WebSockets kan immers ook tekst streamen — maar het introduceert onnodige complexiteit: WebSockets vereisen zwaarder serverbeheer en werken veel minder soepel samen met serverless cloudplatformen (zoals Vercel of AWS Lambda) dan SSE.
+AI-codeertools zoals Lovable en Bolt grijpen soms automatisch naar het patroon dat in hun trainingsdata het meest voorkomt voor algemene "realtime" functies. Dit leidt ertoe dat voor een simpele tekststream een complexe WebSocket wordt gegenereerd die met SSE veel eenvoudiger, goedkoper en schaalbaarder had gekund. Dit is functioneel niet direct kapot - WebSockets kan immers ook tekst streamen - maar het introduceert onnodige complexiteit: WebSockets vereisen zwaarder serverbeheer en werken veel minder soepel samen met serverless cloudplatformen (zoals Vercel of AWS Lambda) dan SSE.
 
 ## Een Eenvoudig Besliskader
 
 1. **Moet de browser tijdens de actieve AI-interactie continu data naar de server zenden?** Zo ja, kies **WebSocket**.
-2. **Is de interactie puur "de server genereert, de browser toont"?** Zo ja, kies **Server-Sent Events (SSE)** — dit is eenvoudiger en stabieler.
+2. **Is de interactie puur "de server genereert, de browser toont"?** Zo ja, kies **Server-Sent Events (SSE)** - dit is eenvoudiger en stabieler.
 3. **Stelt uw hostingplatform specifieke beperkingen aan permanente verbindingen?** Veel moderne serverless platformen gaan veel efficiënter om met SSE dan met langdurige openstaande WebSocket-verbindingen.
 
 ## Deze Architectuurkeuze Vroegtijdig Goed Inrichten
@@ -63,13 +63,13 @@ Het kiezen van de verkeerde realtime technologie is zelden fataal, maar introduc
 
 ## Herverbinding, Heartbeats en Backpressure: Details Die Beide Technologieën Raken
 
-De keuze tussen SSE en WebSocket krijgt de meeste aandacht, maar diverse implementatiedetails zijn cruciaal ongeacht welke technologie u kiest — en AI-tools slaan deze details in snelle prototypes vrijwel altijd over:
+De keuze tussen SSE en WebSocket krijgt de meeste aandacht, maar diverse implementatiedetails zijn cruciaal ongeacht welke technologie u kiest - en AI-tools slaan deze details in snelle prototypes vrijwel altijd over:
 
-**Herverbindingslogica (Reconnection Handling):** Zowel SSE- als WebSocket-verbindingen vallen in de praktijk regelmatig weg (een mobiele gebruiker die door een tunnel rijdt, een serverherstart, of een time-out op een proxy). SSE heeft hier een groot voordeel: de native `EventSource` API van de browser herverbindt automatisch en bevat een ingebouwd `Last-Event-ID` mechanisme waarmee de server een stream exact kan hervatten waar deze werd onderbroken. Bij WebSockets moet u deze herverbindingslogica en statusherstel handmatig programmeren — iets wat AI-gegenereerde code structureel vergeet.
+**Herverbindingslogica (Reconnection Handling):** Zowel SSE- als WebSocket-verbindingen vallen in de praktijk regelmatig weg (een mobiele gebruiker die door een tunnel rijdt, een serverherstart, of een time-out op een proxy). SSE heeft hier een groot voordeel: de native `EventSource` API van de browser herverbindt automatisch en bevat een ingebouwd `Last-Event-ID` mechanisme waarmee de server een stream exact kan hervatten waar deze werd onderbroken. Bij WebSockets moet u deze herverbindingslogica en statusherstel handmatig programmeren - iets wat AI-gegenereerde code structureel vergeet.
 
 **Heartbeats tegen Proxy- en Loadbalancer-Timeouts:** Veel tussenliggende netwerklagen (reverse proxies zoals Nginx, load balancers en CDN's) sluiten verbindingen die langer dan 30 of 60 seconden inactief lijken. Als een AI-model even pauzeert tussen alinea's, kan de proxy de verbinding verbreken. Een periodieke lichte heartbeat (een commentaarregel in SSE, een ping/pong frame in WebSocket) houdt de verbinding open.
 
-**Backpressure wanneer de client de stroom niet aankan:** Als de internetverbinding van een gebruiker trager is dan de snelheid waarmee de AI tokens genereert, kan data zich ophopen in het servergeheugen. Een doordachte bufferingstrategie — waarbij meerdere tokens per netwerkpakket worden gebundeld in plaats van elk afzonderlijk karakter los te verzenden — verlaagt de netwerkbelasting enorm zonder de visuele ervaring aan te tasten.
+**Backpressure wanneer de client de stroom niet aankan:** Als de internetverbinding van een gebruiker trager is dan de snelheid waarmee de AI tokens genereert, kan data zich ophopen in het servergeheugen. Een doordachte bufferingstrategie - waarbij meerdere tokens per netwerkpakket worden gebundeld in plaats van elk afzonderlijk karakter los te verzenden - verlaagt de netwerkbelasting enorm zonder de visuele ervaring aan te tasten.
 
 **Time-out configuraties in de infrastructuur:** Bij uitrol achter Nginx moet `proxy_read_timeout` expliciet worden verhoogd voor streaming-endpoints, anders verbreekt de server de verbinding halverwege een lang antwoord. Ook serverless execution limits moeten hierop worden afgestemd.
 
@@ -121,10 +121,10 @@ Charlotte benaderde LaunchStudio voor een architectuur-audit. Het team van Manif
 
 **Resultaat:** De maandelijkse hostingkosten daalden met ruim 40%, verbroken verbindingen op smartphones behoorden direct tot het verleden en het scherm werkte voor de studenten net zo vloeiend als voorheen.
 
-> *"Ik wist niet eens dat er een slimmere optie bestond — Bolt had het met WebSockets gebouwd en ik dacht dat dat zo hoorde. LaunchStudio legde het verschil helder uit en mijn serverrekening daalde bijna met de helft."*  
-> — **Charlotte Peters, Oprichter TaalCoach (Capelle aan den IJssel)**
+> *"Ik wist niet eens dat er een slimmere optie bestond - Bolt had het met WebSockets gebouwd en ik dacht dat dat zo hoorde. LaunchStudio legde het verschil helder uit en mijn serverrekening daalde bijna met de helft."*  
+> - **Charlotte Peters, Oprichter TaalCoach (Capelle aan den IJssel)**
 
-**Kosten & tijdlijn:** €1.600 (realtime architectuurmigratie & SSE-inrichting) — binnen 6 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.600 (realtime architectuurmigratie & SSE-inrichting) - binnen 6 werkdagen live opgeleverd.
 
 ---
 

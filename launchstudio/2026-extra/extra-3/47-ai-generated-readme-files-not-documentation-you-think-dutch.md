@@ -55,7 +55,7 @@ Het specifiek documenteren van de redenering achter niet-voordehandliggende besl
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het identificeren en documenteren van exact deze "waarom"-laag die specifiek ontbreekt in door AI gegenereerde README-bestanden. Dit als onderdeel van bredere productiegereedheid en voorbereiding op overdrachten, ondersteund door Manifera's bredere ervaring met het efficiënt en veilig inwerken van nieuwe teamleden en aannemers op onbekende codebases.
 
-[Krijg de documentatie die daadwerkelijk begrip overdraagt, en niet alleen structuur](https://launchstudio.eu/nl/#contact) — een gegenereerde README beschrijft wat er bestaat; echte documentatie legt uit waarom het op die manier bestaat.
+[Krijg de documentatie die daadwerkelijk begrip overdraagt, en niet alleen structuur](https://launchstudio.eu/nl/#contact) - een gegenereerde README beschrijft wat er bestaat; echte documentatie legt uit waarom het op die manier bestaat.
 
 ## Waar te beginnen: De plekken in de codebase die het meest waarschijnlijk "waarom"-documentatie nodig hebben
 
@@ -84,9 +84,9 @@ Een nieuwe aannemer die Casper binnenhaalde voor een ongerelateerde functie beke
 **Resultaat:** LaunchStudio hielp Casper bij het documenteren van de specifieke redenering achter deze en verschillende andere niet-voordehandliggende beslissingen in de codebase van BestelBeheer, herstelde de herintroduceerde oplossing en stelde een lichte praktijk in van het documenteren van het "waarom" achter elke bewuste omweg voor de toekomst. Hiermee werden zowel de onmiddellijke regressie als de bredere documentatiekloof gedicht die het mogelijk hadden gemaakt dat dit gebeurde.
 
 > *"De gegenereerde README beschreef de structuur van mijn codebase nauwkeurig, waardoor ik aannam dat het 'gedocumenteerd' was. Het zei niets over waarom een specifiek stukje code dat er ongewoon uitzag er daadwerkelijk met een doel was. Dat is exact de informatie die een nieuwe aannemer nodig had en niet had toen hij het vol vertrouwen verwijdert."*
-> — **Casper Willemsen, Oprichter, BestelBeheer (Utrecht)**
+> - **Casper Willemsen, Oprichter, BestelBeheer (Utrecht)**
 
-**Kosten en tijdlijn:** € 750 (documentatie van sleutelbeslissingen en herstel van oplossingen) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 750 (documentatie van sleutelbeslissingen en herstel van oplossingen) - voltooid in 3 werkdagen.
 
 ---
 
@@ -122,7 +122,7 @@ Mogelijk, als de beoordelaar toevallig de betekenis van de omweg herkende – ho
       "name": "Zijn door AI gegenereerde README-bestanden onhandig en moeten ze vermeden worden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Helemaal niet — ze zijn nuttig voor de structuur; de fout is dit te behandelen als volledige documentatie."
+        "text": "Helemaal niet - ze zijn nuttig voor de structuur; de fout is dit te behandelen als volledige documentatie."
       }
     },
     {
@@ -146,7 +146,7 @@ Mogelijk, als de beoordelaar toevallig de betekenis van de omweg herkende – ho
       "name": "Hoeveel tijd kost het documenteren van belangrijke beslissingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanzienlijk minder dan de kosten van een bug — een paar zinnen per niet-voordehandliggende keuze volstaat."
+        "text": "Aanzienlijk minder dan de kosten van een bug - een paar zinnen per niet-voordehandliggende keuze volstaat."
       }
     },
     {

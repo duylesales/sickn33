@@ -33,7 +33,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Het is donderdagavond, 22:15 uur. U kwam om 19:00 uur thuis van uw werk, heeft gegeten, wat huishoudelijke zaken afgehandeld en om 21:30 uur eindelijk uw laptop opengeklapt. Tegen de tijd dat u weer precies weet waar u zondagochtend was gebleven, is het 22:15 uur. U heeft nu misschien nog zeventig productieve minuten over voordat de vermoeidheid toeslaat en de kwaliteit van uw werk omslaat in negatieve productiviteit.
 
-Dit is de werkelijke tijdseenheid van lanceren in de avonduren en het weekend: niet een romantische "vijftien uur per week", maar zeventig spaarzame minuten op een donderdagavond en drie bevochten uren op zondagochtend. Elk plan dat u maakt, moet in die harde eenheden worden uitgedrukt — en vrijwel geen enkel plan doet dat. Dat is exact de reden waarom side-projecten niet met weken vertragen, maar met kwartalen.
+Dit is de werkelijke tijdseenheid van lanceren in de avonduren en het weekend: niet een romantische "vijftien uur per week", maar zeventig spaarzame minuten op een donderdagavond en drie bevochten uren op zondagochtend. Elk plan dat u maakt, moet in die harde eenheden worden uitgedrukt - en vrijwel geen enkel plan doet dat. Dat is exact de reden waarom side-projecten niet met weken vertragen, maar met kwartalen.
 
 Wat hier volgt is geen takenlijst. Takenlijsten gaan uit van onbeperkte tijd. Dit is een besliskalender van vier formele beslismomenten (gates), elk gekoppeld aan een concrete datum. Het is zo ontworpen dat een oprichter met een vaste baan op een specifieke avond direct weet of het project doorgaat, bijgestuurd moet worden, of beëindigd dient te worden.
 
@@ -69,10 +69,10 @@ Zet deze vier data direct in dezelfde agenda als uw werkverplichtingen.
 
 De enige vraag die telt: heeft u vijf diepgaande gesprekken gevoerd met potentiële klanten, en heeft minimaal één partij iets gezegd wat concreet neerkomt op een volmondig 'ja'?
 
-Twee weken is ruimschoots genoeg voor vijf gesprekken, zelfs bij zes uur per week. Verkoopgesprekken kunnen immers prima plaatsvinden tijdens een lunchpauze, en uw product hoeft er nog lang niet voor af te zijn — een schermopname of een live demo die u zelf bestuurt op uw eigen scherm volstaat. Deze gate komt bewust als allereerste: het valideren van marktvraag kost enkel tijd, terwijl alles hierna echt geld kost.
+Twee weken is ruimschoots genoeg voor vijf gesprekken, zelfs bij zes uur per week. Verkoopgesprekken kunnen immers prima plaatsvinden tijdens een lunchpauze, en uw product hoeft er nog lang niet voor af te zijn - een schermopname of een live demo die u zelf bestuurt op uw eigen scherm volstaat. Deze gate komt bewust als allereerste: het valideren van marktvraag kost enkel tijd, terwijl alles hierna echt geld kost.
 
 - **Voldoende:** Iemand toont concrete koopintentie. Ga door naar Gate 2.
-- **Niet voldoende:** Vijf gesprekken, geen tractie, geen duidelijke reactie in de trant van "als het X kan, wil ik ervoor betalen". Geef nu geen geld uit. Voer nog vijf gesprekken met een andere doelgroep, of parkeer het idee. Hier stoppen heeft u slechts twee weken aan avonden gekost en niets anders — dat is een succesvolle validatie, geen falen.
+- **Niet voldoende:** Vijf gesprekken, geen tractie, geen duidelijke reactie in de trant van "als het X kan, wil ik ervoor betalen". Geef nu geen geld uit. Voer nog vijf gesprekken met een andere doelgroep, of parkeer het idee. Hier stoppen heeft u slechts twee weken aan avonden gekost en niets anders - dat is een succesvolle validatie, geen falen.
 
 ## Gate 2 (Einde Week 4): Wat Houdt U Zelf en Wat Koopt U In?
 
@@ -89,18 +89,18 @@ Hier is een vaste-prijs model voor u nog crucialer dan voor een fulltime opricht
 
 ## Gate 3 (Einde Week 8): Geruisloos Live
 
-Live betekent: een eigen domein, echte gebruikersaccounts, één of meer actieve gebruikers buiten uzelf, en geld dat is betaald of gefactureerd. Niet "gelanceerd" met toeters en bellen op social media — maar *geruisloos live*. Dat is exact de juiste houding voor iemand met een werkgever.
+Live betekent: een eigen domein, echte gebruikersaccounts, één of meer actieve gebruikers buiten uzelf, en geld dat is betaald of gefactureerd. Niet "gelanceerd" met toeters en bellen op social media - maar *geruisloos live*. Dat is exact de juiste houding voor iemand met een werkgever.
 
 Tegen week acht is het uitbestede engineeringwerk opgeleverd (weken vijf tot en met zeven). Weken zeven en acht zijn voor uzelf: de laatste puntjes op de i, een persoonlijke welkomstmail die u met de hand verstuurt, en de eerste gebruikers stuk voor stuk toelaten.
 
 De gouden regel: kies doelbewust voor een kleinschalige onboarding. Vijf gebruikers die u persoonlijk verwelkomt, leren u meer dan vijftig accounts die zonder toezicht registreren. Bovendien is vijf gebruikers een aantal dat u prima kunt ondersteunen vanaf uw smartphone tijdens de lunchpauze. Een werkende oprichter die met veel lawaai lanceert en op dinsdagochtend tweehonderd aanmeldingen binnenkrijgt, creëert een operationele noodsituatie waar pas na 18:00 uur tijd voor is.
 
 - **Voldoende:** Live, met actieve gebruikers.
-- **Niet voldoende:** Vertraging opgelopen. Vraag uzelf eerlijk af welke gate is gemist — vrijwel altijd is het Gate 2, waar de taakverdeling te optimistisch werd ingeschat.
+- **Niet voldoende:** Vertraging opgelopen. Vraag uzelf eerlijk af welke gate is gemist - vrijwel altijd is het Gate 2, waar de taakverdeling te optimistisch werd ingeschat.
 
 ## Gate 4 (Einde Week 12): Het Getal Dat het Volgende Kwartaal Bepaalt
 
-Dit is het meetmoment waar de hele kalender naartoe werkt. En dit vereist een drempelwaarde die al in **week nul** is vastgelegd — niet een doel dat in week twaalf opportunistisch wordt aangepast omdat u emotioneel aan het project gehecht bent geraakt.
+Dit is het meetmoment waar de hele kalender naartoe werkt. En dit vereist een drempelwaarde die al in **week nul** is vastgelegd - niet een doel dat in week twaalf opportunistisch wordt aangepast omdat u emotioneel aan het project gehecht bent geraakt.
 
 Kies uw drempelwaarde vooraf: bijvoorbeeld drie betalende klanten, € 500 aan maandelijks terugkerende omzet (MRR), of één getekend jaarcontract. Het exacte getal is minder belangrijk dan het feit dat u zich er vooraf aan heeft gecommitteerd.
 
@@ -120,24 +120,24 @@ De bijbehorende discipline: deploy nooit iets dat u niet direct kunt terugdraaie
 
 De software-engineering van LaunchStudio wordt uitgevoerd door Manifera-teams vanuit Amsterdam en Ho Chi Minh City. Voor een oprichter met een dagbaan betekent dit een enorm voordeel: uw code wordt professioneel gehard tijdens exact de kantooruren dat u er zelf niet aan kunt werken. Lees gerust meer over [hoe onze engineering-organisatie is gestructureerd](https://www.manifera.com/).
 
-Het grote voordeel van een werkende oprichter is niet tijd — het is dat een vast salaris een professionele vaste-prijs hardening betaalbaar maakt zonder dat uw levensonderhoud in gevaar komt. [Plan een kort kennismakingsgesprek en ontvang een offerte waar u in één avond over kunt beslissen](https://launchstudio.eu/nl/#contact), in plaats van nog eens elf donderdagen te verspillen aan piekeren.
+Het grote voordeel van een werkende oprichter is niet tijd - het is dat een vast salaris een professionele vaste-prijs hardening betaalbaar maakt zonder dat uw levensonderhoud in gevaar komt. [Plan een kort kennismakingsgesprek en ontvang een offerte waar u in één avond over kunt beslissen](https://launchstudio.eu/nl/#contact), in plaats van nog eens elf donderdagen te verspillen aan piekeren.
 
 ## Echt voorbeeld
 
 ### Een Oprichter in de Avonduren in Actie: De Gate Die Bijna Werd Gemist
 
-Nadia el Amrani werkte vier dagen per week als inkoopadviseur bij een organisatie in Breda en besteedde haar donderdagavonden en zondagochtenden aan Tarievenwijzer — een in Lovable gebouwde SaaS-applicatie waarmee kleinere gemeenten geanonimiseerd tarieven van leverancierscontracten kunnen vergelijken. Ze was al zeven maanden bezig toen ze voor het eerst haar werkelijke wekelijkse uren eerlijk berekende: vijfenhalf uur per week, in plaats van de vijftien uur waarmee ze steeds rekende.
+Nadia el Amrani werkte vier dagen per week als inkoopadviseur bij een organisatie in Breda en besteedde haar donderdagavonden en zondagochtenden aan Tarievenwijzer - een in Lovable gebouwde SaaS-applicatie waarmee kleinere gemeenten geanonimiseerd tarieven van leverancierscontracten kunnen vergelijken. Ze was al zeven maanden bezig toen ze voor het eerst haar werkelijke wekelijkse uren eerlijk berekende: vijfenhalf uur per week, in plaats van de vijftien uur waarmee ze steeds rekende.
 
 Ze herstartte haar aanpak met de vier-gates methode. Gate 1 leverde binnen twee weken drie geïnteresseerde gemeenten op, waarvan er één expliciet toezegde te willen betalen voor een pilot. Bij Gate 2 bewees de kalender direct zijn waarde: haar oorspronkelijke voornemen was om de hele winter te besteden aan het zelfstandig doorgronden van autorisaties en rollen. De taakverdeling die ze nu koos, behield de vergelijkingslogica en rapportages (overzichtelijk, leuk werk, prima te doen op donderdagavond) en besteedde het onvoorspelbare werk uit: rolscheiding tussen gemeentelijke inkopers en leveranciers, een openbaar blootgestelde API-sleutel voor Excel-parsing verplaatst naar de server en geroteerd, en deployment op haar eigen domein met monitoring.
 
 Tarievenwijzer ging live in week negen (één week na Gate 3), waarbij twee gemeenten en elf gebruikers handmatig werden verwelkomd gedurende drie zondagochtenden. Gate 4 was een harde omzetdrempel die ze al in week nul had vastgelegd: € 600 aan maandelijkse omzet. Ze sloot af op € 740 MRR.
 
-**Resultaat:** Nadia onderhandelde in maand vijf succesvol over een driedaagse werkweek bij haar werkgever in plaats van halsoverkop ontslag te nemen. De supportlaag van € 49/maand ving twee incidenten geruisloos op terwijl zij op haar kantoorbaan zat — waaronder een mislukte verlenging van een beveiligingscertificaat op maandagochtend, waar ze pas via het oplossingsbericht over hoorde.
+**Resultaat:** Nadia onderhandelde in maand vijf succesvol over een driedaagse werkweek bij haar werkgever in plaats van halsoverkop ontslag te nemen. De supportlaag van € 49/maand ving twee incidenten geruisloos op terwijl zij op haar kantoorbaan zat - waaronder een mislukte verlenging van een beveiligingscertificaat op maandagochtend, waar ze pas via het oplossingsbericht over hoorde.
 
 > *"Die vier gates waren mijn redding. Vóór die tijd had ik een hobbyproject dat altijd 'nog zes weken nodig had'. Daarna had ik vier harde data en een getal waar ik mezelf aan had beloofd te houden."*
-> — **Nadia el Amrani, Oprichter Tarievenwijzer (Breda)**
+> - **Nadia el Amrani, Oprichter Tarievenwijzer (Breda)**
 
-**Kosten & Doorlooptijd:** € 2.300 + € 49/maand (Launch & Grow Pakket, rollenscheiding, beveiliging van geheimen en beheerde hosting) — live in 12 werkdagen.
+**Kosten & Doorlooptijd:** € 2.300 + € 49/maand (Launch & Grow Pakket, rollenscheiding, beveiliging van geheimen en beheerde hosting) - live in 12 werkdagen.
 
 ---
 
@@ -157,7 +157,7 @@ Dat hangt af van de exacte tekst in uw contract en uw persoonlijke relatie met u
 
 ### Welk werk mag een werkende oprichter absoluut nooit zelf willen doen?
 
-Alles met een onvoorspelbare doorlooptijd — zoals een complete autorisatie-audit over tientallen routes, het opsporen van een grillige betalingsbug of een databaseschemamigratie. Korte avondsessies zijn uitstekend voor afgebakende features; open-ended storingen oplossen in dat format kost u hele kwartalen.
+Alles met een onvoorspelbare doorlooptijd - zoals een complete autorisatie-audit over tientallen routes, het opsporen van een grillige betalingsbug of een databaseschemamigratie. Korte avondsessies zijn uitstekend voor afgebakende features; open-ended storingen oplossen in dat format kost u hele kwartalen.
 
 ### Is een maandelijks supportabonnement de moeite waard voor een heel klein product?
 

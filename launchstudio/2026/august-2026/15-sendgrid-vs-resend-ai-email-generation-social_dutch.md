@@ -1,4 +1,4 @@
-🔥 Mia bouwde een prototype met **Cursor** — Mia, een accountant, gebruikte Cursor om een tool te bouwen die geëxtraheerde factuurdata automatisch per e-mail verstuurt, maar haar e-mails belandden in de spamfolder door DNS-fouten. 🧠
+🔥 Mia bouwde een prototype met **Cursor** - Mia, een accountant, gebruikte Cursor om een tool te bouwen die geëxtraheerde factuurdata automatisch per e-mail verstuurt, maar haar e-mails belandden in de spamfolder door DNS-fouten. 🧠
 
 Het automatisch versturen van AI-gegenereerde rapporten vereist een moderne transactionele e-mail-API en een waterdichte DNS-authenticatie.
 
@@ -12,7 +12,7 @@ Het automatisch versturen van AI-gegenereerde rapporten vereist een moderne tran
 
 Bij **LaunchStudio** lossen we exact dit type e-mailarchitectuur- en deliverabilityproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Mia's applicatie behaalde maximale bezorging: De deliverability steeg naar 99,8%, waardoor klanten hun rapporten direct in de inbox ontvingen. (€950 (Email Delivery Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Mia's applicatie behaalde maximale bezorging: De deliverability steeg naar 99,8%, waardoor klanten hun rapporten direct in de inbox ontvingen. (€950 (Email Delivery Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/sendgrid-vs-resend-ai-email-generation
 

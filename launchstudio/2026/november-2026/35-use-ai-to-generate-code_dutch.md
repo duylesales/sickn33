@@ -89,7 +89,7 @@ Zij bouwden zelf dashboards om zendingen te volgen. In eerste instantie leek dit
 
 Mark startte een onderzoek en trof een enorme Shadow IT-crisis aan: een servicemanager had een AI-script geschreven dat elke 5 seconden een zware query uitvoerde op de productiedatabase. Het script bevatte het hardcoded hoofdwachtwoord van de database en draaide op een ongepatchte AWS-server die met een bedrijfscreditcard was aangeschaft.
 
-AI verbieden was geen optie — de versnelling voor de business was te groot. Mark schakelde LaunchStudio in voor een waterdicht governance-kader.
+AI verbieden was geen optie - de versnelling voor de business was te groot. Mark schakelde LaunchStudio in voor een waterdicht governance-kader.
 
 Binnen 20 werkdagen richtte het Manifera-team een Internal Developer Portal in op basis van Backstage:
 - AWS IAM-rechten werden dichtgezet zodat servers niet meer handmatig konden worden gestart.
@@ -100,9 +100,9 @@ Binnen 20 werkdagen richtte het Manifera-team een Internal Developer Portal in o
 **Resultaat:** De Shadow IT-crisis werd volledig geneutraliseerd. Medewerkers bleven in hoog tempo interne tools bouwen met AI, maar deden dit voortaan binnen een wiskundig veilige zandbak. Mark kreeg weer 100% grip op de infrastructuur, de AWS-factuur normaliseerde en een gigantisch beveiligingslek werd voorkomen.
 
 > *"AI-codetools veranderden niet-technische collega's van de ene op de andere dag in ontwikkelaars. Dat was geweldig voor de business, maar doodeng voor de beveiliging. LaunchStudio bouwde de technische vangrails die we nodig hadden. Nu kan mijn team met AI bouwen wat ze willen, terwijl ik met een gerust hart kan slapen."*
-> — **Mark van Dijk, VP of Engineering, LogiTech Solutions (Rotterdam)**
+> - **Mark van Dijk, VP of Engineering, LogiTech Solutions (Rotterdam)**
 
-**Kosten & Doorlooptijd:** €9.500 (Launch & Grow Pakket met Platform Engineering & IDP Add-on) — productie-klaar en live binnen 20 werkdagen.
+**Kosten & Doorlooptijd:** €9.500 (Launch & Grow Pakket met Platform Engineering & IDP Add-on) - productie-klaar en live binnen 20 werkdagen.
 
 ---
 

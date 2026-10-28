@@ -44,7 +44,7 @@ Amateur vendors sell AI development services by demonstrating how quickly they c
 
 This is the "Context Window Trap." 
 
-Every time a user asks a question, you are paying for the API to process 50,000 tokens. As your user base scales, your daily API bill grows exponentially. Furthermore, because LLMs suffer from the "Lost in the Middle" phenomenon — a limitation first documented empirically by Stanford researcher Nelson Liu and co-authors in their 2023 paper "Lost in the Middle: How Language Models Use Long Contexts," which found that model accuracy is highest when relevant information sits at the very start or end of the context window and drops significantly when it is buried in the middle — shoving massive amounts of unstructured data into a prompt guarantees degraded reasoning and high hallucination rates.
+Every time a user asks a question, you are paying for the API to process 50,000 tokens. As your user base scales, your daily API bill grows exponentially. Furthermore, because LLMs suffer from the "Lost in the Middle" phenomenon - a limitation first documented empirically by Stanford researcher Nelson Liu and co-authors in their 2023 paper "Lost in the Middle: How Language Models Use Long Contexts," which found that model accuracy is highest when relevant information sits at the very start or end of the context window and drops significantly when it is buried in the middle - shoving massive amounts of unstructured data into a prompt guarantees degraded reasoning and high hallucination rates.
 
 ### The Agitate: The SOC2 Nightmare
 
@@ -52,7 +52,7 @@ The financial bleeding is secondary to the security threat.
 
 Thin wrappers lack a Data Loss Prevention (DLP) layer. If your customer support AI is connected to your CRM, and a user asks about their account, the amateur AI architecture will send the user's name, email, and billing history directly to Anthropic or OpenAI. You have just violated GDPR and breached your SOC2 compliance, exposing the enterprise to massive legal liability.
 
-This liability is not hypothetical. According to DLA Piper's *GDPR Fines and Data Breach Survey*, aggregate GDPR fines across Europe reached roughly €7.1 billion between the regulation's 2018 start date and January 2026, with European supervisory authorities issuing approximately €1.2 billion in fines during 2025 alone — a figure broadly in line with 2024. The single largest GDPR fine on record, €1.2 billion against Meta Platforms Ireland, was issued specifically over unlawful cross-border data transfer, the exact failure mode an AI wrapper without DLP middleware reproduces every time it forwards PII to a US-based model provider.
+This liability is not hypothetical. According to DLA Piper's *GDPR Fines and Data Breach Survey*, aggregate GDPR fines across Europe reached roughly €7.1 billion between the regulation's 2018 start date and January 2026, with European supervisory authorities issuing approximately €1.2 billion in fines during 2025 alone - a figure broadly in line with 2024. The single largest GDPR fine on record, €1.2 billion against Meta Platforms Ireland, was issued specifically over unlawful cross-border data transfer, the exact failure mode an AI wrapper without DLP middleware reproduces every time it forwards PII to a US-based model provider.
 
 ## The Architecture of Elite AI Services
 
@@ -70,7 +70,7 @@ This architecture slashes API costs by 90% and mathematically forces the LLM to 
 
 ### 2. Deterministic Security Middleware (DLP)
 
-Stochastic models (LLMs) cannot be trusted with security. Elite vendors build deterministic middleware—an API Gateway that acts as a firewall between your data and the LLM.
+Stochastic models (LLMs) cannot be trusted with security. Elite vendors build deterministic middleware - an API Gateway that acts as a firewall between your data and the LLM.
 
 Before a prompt leaves your private cloud, the middleware executes a local, deterministic redaction engine (such as Microsoft Presidio). It strips out all PII, replacing it with synthetic tokens (e.g., `[USER_SSN_REDACTED]`). The LLM processes the safe prompt, and the middleware re-injects the PII into the final response before displaying it to the user. Total data sovereignty is maintained.
 
@@ -81,7 +81,7 @@ You cannot deploy an AI update based on a developer saying, "The new prompt look
 Genuine AI development services include the handover of a mature MLOps pipeline. The vendor creates a "Golden Dataset" of hundreds of edge-case questions and expected answers. Every time a developer alters the system prompt or updates the embedding model, the CI/CD pipeline automatically runs the Golden Dataset through the new architecture. It utilizes "LLM-as-a-Judge" metrics to score factual accuracy and hallucination rates. If the score degrades, the pipeline physically blocks the deployment.
 
 > "The model and the code for many applications are basically a solved problem... now that the models have advanced to a certain point, we've got to make the data work as well."
-> *— Andrew Ng, co-founder of Google Brain and Coursera, at MIT Technology Review's EmTech Digital conference*
+> *- Andrew Ng, co-founder of Google Brain and Coursera, at MIT Technology Review's EmTech Digital conference*
 
 Ng's "data-centric AI" argument, which he has championed since 2021 through his AI System = Code + Data framework, is the enterprise version of the wrapper-versus-pipeline distinction above: once you accept that frontier models are a commodity, the ETL pipeline, the chunking strategy, and the retrieval quality are the only parts of the stack left to differentiate on. A vendor who spends the sales call talking about which model they use, rather than how they clean and structure your data, has nothing else to sell.
 
@@ -89,7 +89,7 @@ Ng's "data-centric AI" argument, which he has championed since 2021 through his 
 
 ### The Pain: From "Answering Questions" to "Taking Actions"
 
-A RAG chatbot that answers questions is relatively low-risk: worst case, it gives a wrong answer that a human reviews. But 2026's enterprise AI projects increasingly ask the LLM to *act*—issuing a refund, updating a CRM record, cancelling a subscription, or triggering a database migration via function calling. The moment an LLM is granted tool access, a hallucination stops being an embarrassing wrong answer and becomes a real-world side effect: a refund issued to the wrong customer, a production record silently corrupted, an email sent to the wrong recipient list.
+A RAG chatbot that answers questions is relatively low-risk: worst case, it gives a wrong answer that a human reviews. But 2026's enterprise AI projects increasingly ask the LLM to *act* - issuing a refund, updating a CRM record, cancelling a subscription, or triggering a database migration via function calling. The moment an LLM is granted tool access, a hallucination stops being an embarrassing wrong answer and becomes a real-world side effect: a refund issued to the wrong customer, a production record silently corrupted, an email sent to the wrong recipient list.
 
 Amateur vendors bolt function calling onto their thin wrapper and grant the model direct, unrestricted access to internal APIs. This is the single most dangerous pattern in enterprise AI development services today.
 
@@ -97,9 +97,9 @@ Amateur vendors bolt function calling onto their thin wrapper and grant the mode
 
 Elite AI development services implement a **Tiered Approval Gateway** that sits between the LLM's proposed action and the actual system of record. Every tool call the model wants to execute is classified into a risk tier before it runs:
 
-*   **Tier 1 (Autonomous):** Low-risk, easily reversible actions—looking up an order status, drafting (not sending) an email, querying a read-only report. These execute immediately with no human in the loop.
-*   **Tier 2 (Confirm-Before-Execute):** Medium-risk, reversible-with-effort actions—updating a customer's shipping address, applying a discount code. The system executes the action but requires the end user to click "Confirm" before it commits.
-*   **Tier 3 (Human-in-the-Loop Approval):** High-risk, hard-to-reverse actions—issuing a refund above €500, deleting a record, modifying billing terms. The LLM's proposed action is queued for a human operator to explicitly approve or reject before the underlying API is ever called.
+*   **Tier 1 (Autonomous):** Low-risk, easily reversible actions - looking up an order status, drafting (not sending) an email, querying a read-only report. These execute immediately with no human in the loop.
+*   **Tier 2 (Confirm-Before-Execute):** Medium-risk, reversible-with-effort actions - updating a customer's shipping address, applying a discount code. The system executes the action but requires the end user to click "Confirm" before it commits.
+*   **Tier 3 (Human-in-the-Loop Approval):** High-risk, hard-to-reverse actions - issuing a refund above €500, deleting a record, modifying billing terms. The LLM's proposed action is queued for a human operator to explicitly approve or reject before the underlying API is ever called.
 
 This tiering is enforced in deterministic code, never left to the LLM's judgment about "how risky" its own action is. The gateway also enforces hard rate limits per tool (e.g., "no more than 3 refund actions per session") to contain the blast radius of a single runaway agent loop.
 
@@ -109,9 +109,9 @@ When evaluating AI development services for any project involving function calli
 
 ### A Worked Example: The Blast Radius of a Missing Rate Limit
 
-Consider a customer-support agent given tool access to a "process_refund" function, deployed without the Tiered Approval Gateway described above. A prompt injection attack — hidden instructions embedded in a support ticket the agent reads as part of its context — convinces the agent that a refund is warranted for every open ticket it processes that day. Without a per-tool rate limit, the agent has no structural reason to stop after one refund; it will keep calling the function for as long as the malicious instruction persists in its context and tickets keep arriving.
+Consider a customer-support agent given tool access to a "process_refund" function, deployed without the Tiered Approval Gateway described above. A prompt injection attack - hidden instructions embedded in a support ticket the agent reads as part of its context - convinces the agent that a refund is warranted for every open ticket it processes that day. Without a per-tool rate limit, the agent has no structural reason to stop after one refund; it will keep calling the function for as long as the malicious instruction persists in its context and tickets keep arriving.
 
-Now compare the two architectures on cost. In an unrestricted wrapper, the agent's refund tool is called directly against the payments API with no ceiling: at an average refund of €80 and a queue of 200 tickets processed that day, a single injected instruction can authorize €16,000 in fraudulent refunds before a human notices the anomaly in the finance dashboard — and by then, the damage is done and irreversible. Under a Tiered Approval Gateway with a hard limit of, say, three autonomous refund actions per session and mandatory human approval above €500, the same attack is capped at a handful of transactions before the rate limit halts the pattern and flags it for review. The engineering cost of the rate limit is a few lines of deterministic code in the gateway; the cost of skipping it is the entire blast radius of the attack, uncapped.
+Now compare the two architectures on cost. In an unrestricted wrapper, the agent's refund tool is called directly against the payments API with no ceiling: at an average refund of €80 and a queue of 200 tickets processed that day, a single injected instruction can authorize €16,000 in fraudulent refunds before a human notices the anomaly in the finance dashboard - and by then, the damage is done and irreversible. Under a Tiered Approval Gateway with a hard limit of, say, three autonomous refund actions per session and mandatory human approval above €500, the same attack is capped at a handful of transactions before the rate limit halts the pattern and flags it for review. The engineering cost of the rate limit is a few lines of deterministic code in the gateway; the cost of skipping it is the entire blast radius of the attack, uncapped.
 
 ## Procuring AI Maturity
 
@@ -136,7 +136,7 @@ You cannot eliminate hallucinations at the model level; you must mitigate them a
 Semantic caching (using tools like Redis or GPTCache) is vital for cost control. If 1,000 users ask the AI chatbot, "What is the refund policy?", the system should not make 1,000 identical API calls to OpenAI. The gateway should intercept the query, recognize the semantic similarity to a previously cached question, and return the answer locally, reducing latency to 10ms and API costs to zero.
 
 ### 5. (Scenario: CFO) Why do robust AI development services cost more upfront than hiring a freelancer?
-A freelancer will build a direct API connection in one week—cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability.
+A freelancer will build a direct API connection in one week - cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability.
 
 ### 6. (Scenario: CISO) How do we stop an AI agent from taking a harmful or irreversible action on its own?
 You implement a Tiered Approval Gateway between the LLM and your internal APIs. Low-risk actions execute autonomously, medium-risk actions require the end user to confirm before committing, and high-risk or hard-to-reverse actions (like refunds or record deletion) are queued for explicit human approval. This tiering is enforced in deterministic code, not left to the LLM's own judgment about the riskiness of its actions.
@@ -183,7 +183,7 @@ You implement a Tiered Approval Gateway between the LLM and your internal APIs. 
       "name": "(Scenario: CFO) Why do robust AI development services cost more upfront than hiring a freelancer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A freelancer will build a direct API connection in one week—cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability."
+        "text": "A freelancer will build a direct API connection in one week - cheap upfront, but financially ruinous at scale due to unoptimized token usage and security breaches. Elite services require building the invisible infrastructure: ETL pipelines, Vector Databases, and MLOps evaluation frameworks. This upfront investment slashes your recurring API egress costs and prevents catastrophic legal liability."
       }
     },
     {

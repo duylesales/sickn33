@@ -2,10 +2,10 @@
 
 😱 Een prachtig Lovable-prototype verwarren met een "afgerond" product
 😱 Proberen enterprise-beveiliging via prompts op te lossen (spoiler: dat werkt niet)
-😱 "Ik voeg betalingen later wel toe" — de zin die de meeste startups de das omdeed
+😱 "Ik voeg betalingen later wel toe" - de zin die de meeste startups de das omdeed
 😱 Een generieke "AI voor alles" tool bouwen in plaats van een specifieke niche
 😱 Alles solo willen doen op een stack die te complex is voor één persoon
-😱 Perfectionisme boven aanwezigheid — prompts verfijnen terwijl concurrenten live gaan
+😱 Perfectionisme boven aanwezigheid - prompts verfijnen terwijl concurrenten live gaan
 
 De oprichters die in 2026 wonnen deden ÉÉN ding anders: ze lanceerden snel en schakelden gespecialiseerde engineers in voor de last-mile. 🎯
 

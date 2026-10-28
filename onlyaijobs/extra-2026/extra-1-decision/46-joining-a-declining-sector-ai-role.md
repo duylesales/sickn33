@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The role is well paid, technically solid and at an organisation whose industry is visibly under pressure: fossil fuel operations, print media, tobacco, certain kinds of retail, an industrial process facing tightening emissions rules. Colleagues raise eyebrows when you mention it. The work itself is good, and the data is often better than at fashionable employers, because these are mature organisations with decades of operational history. Whether taking such a role is a sensible move or a slow trap depends on distinctions that are easy to miss from outside — starting with the difference between an industry that is shrinking and one that is transforming.
+The role is well paid, technically solid and at an organisation whose industry is visibly under pressure: fossil fuel operations, print media, tobacco, certain kinds of retail, an industrial process facing tightening emissions rules. Colleagues raise eyebrows when you mention it. The work itself is good, and the data is often better than at fashionable employers, because these are mature organisations with decades of operational history. Whether taking such a role is a sensible move or a slow trap depends on distinctions that are easy to miss from outside - starting with the difference between an industry that is shrinking and one that is transforming.
 
 ## Decline, Transformation and Disruption Are Not the Same
 
@@ -45,7 +45,7 @@ The role is well paid, technically solid and at an organisation whose industry i
 
 **Disruption by technology.** A sector whose economics are being undermined faster than it can adapt. Here the timeline is unpredictable and the risk is highest.
 
-Candidates often apply the label "dying industry" to all three. The middle category — transformation — is where a great deal of interesting Dutch data work actually sits, and dismissing it costs good opportunities.
+Candidates often apply the label "dying industry" to all three. The middle category - transformation - is where a great deal of interesting Dutch data work actually sits, and dismissing it costs good opportunities.
 
 ## Why the Data Work Can Be Excellent
 
@@ -84,7 +84,7 @@ Dismissal for business economic reasons generally requires permission from the *
 
 A **transition payment** is in principle due when the employer ends the employment, and many larger reorganisations are accompanied by a **social plan** negotiated with unions, which can include severance beyond the statutory minimum, retraining budgets and support in finding new work.
 
-None of this makes redundancy pleasant, but it means the downside is bounded and often includes resources for the next step — which is more than can be said for a startup that simply runs out of money.
+None of this makes redundancy pleasant, but it means the downside is bounded and often includes resources for the next step - which is more than can be said for a startup that simply runs out of money.
 
 ## When Taking the Role Makes Sense
 
@@ -92,7 +92,7 @@ None of this makes redundancy pleasant, but it means the downside is bounded and
 - **You would gain production experience or scale you cannot get elsewhere nearby.**
 - **The skills are portable:** forecasting, asset optimisation, data governance, quality control.
 - **The organisation is financially solid** even if its industry is contracting; large incumbents often have years of runway.
-- **You set a horizon** — two or three years, with a plan for what you take away.
+- **You set a horizon** - two or three years, with a plan for what you take away.
 - **The alternative is no relevant experience at all.**
 
 ## When to Decline
@@ -108,7 +108,7 @@ None of this makes redundancy pleasant, but it means the downside is bounded and
 
 If you accept, do so with a plan rather than with optimism.
 
-Choose projects with transferable value — a forecasting system, a governance framework, a monitoring practice — over ones that only make sense in that specific context. Keep documentation and evidence of what you built, because reorganisations scatter institutional memory. Maintain your external network deliberately, since internal networks weaken as people leave. And decide in advance what signal would tell you to move: a second reorganisation, the departure of your sponsor, the freezing of the tooling budget.
+Choose projects with transferable value - a forecasting system, a governance framework, a monitoring practice - over ones that only make sense in that specific context. Keep documentation and evidence of what you built, because reorganisations scatter institutional memory. Maintain your external network deliberately, since internal networks weaken as people leave. And decide in advance what signal would tell you to move: a second reorganisation, the departure of your sponsor, the freezing of the tooling budget.
 
 People who leave contracting industries on their own timing generally do well. People who wait until the decision is made for them do less well, not because of the industry but because they lost the initiative.
 
@@ -116,7 +116,7 @@ People who leave contracting industries on their own timing generally do well. P
 
 Most of what you need is publicly available, and an hour of reading before the second interview tells you more than any amount of speculation with friends.
 
-**Annual accounts.** Dutch companies of meaningful size file with the Chamber of Commerce, and many publish annual reports directly. You are not performing an audit — you are looking for direction of travel in revenue, whether the company is still investing, and what management says about the coming years.
+**Annual accounts.** Dutch companies of meaningful size file with the Chamber of Commerce, and many publish annual reports directly. You are not performing an audit - you are looking for direction of travel in revenue, whether the company is still investing, and what management says about the coming years.
 
 **Where the capital expenditure goes.** A company investing in new production capacity, new services or a transition programme is behaving differently from one harvesting an existing asset base. The investment line says more than the strategy section does.
 
@@ -136,7 +136,7 @@ Put together, these signals separate the two situations that matter: an organisa
 
 ### An engineer in Rotterdam who joined an industry everyone questioned
 
-A data engineer takes a role at an organisation in fossil-adjacent industrial operations, to general scepticism from friends in scale-ups. The salary is strong, the commute is short and the data — decades of sensor and process measurements — is better than anything he has worked with.
+A data engineer takes a role at an organisation in fossil-adjacent industrial operations, to general scepticism from friends in scale-ups. The salary is strong, the commute is short and the data - decades of sensor and process measurements - is better than anything he has worked with.
 
 He asks the questions first. The company is investing heavily in emissions monitoring, energy efficiency and preparation for sustainability reporting obligations. His role sits in that programme rather than in the legacy operations. There has been one reorganisation, which did not touch the data team, and the works council process for the next phase is already visible internally.
 
@@ -146,7 +146,7 @@ Two and a half years later he moves to a grid operator. The interview focuses al
 
 ## Key Takeaways
 
-- Distinguish genuine decline, transformation under regulatory pressure and technological disruption — they carry very different risks.
+- Distinguish genuine decline, transformation under regulatory pressure and technological disruption - they carry very different risks.
 - Mature industries often offer excellent data, real consequences and cost pressure that makes analytical work immediately valuable.
 - The real risks are investment freezes, reorganisation exposure, narrowing expertise and the steady loss of strong colleagues.
 - Dutch rules on dismissal for business reasons, works council advice, transition payments and social plans bound the downside and often fund the next step.
@@ -154,7 +154,7 @@ Two and a half years later he moves to a grid operator. The interview focuses al
 
 ## Where to Start
 
-If a role in a pressured sector tempts you, check which part of the business it sits in — and compare it with what employers in growing sectors near you are offering for the same skills.
+If a role in a pressured sector tempts you, check which part of the business it sits in - and compare it with what employers in growing sectors near you are offering for the same skills.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -180,7 +180,7 @@ With a horizon, transferable projects chosen deliberately, documented evidence o
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it a mistake to join a shrinking sector?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — many industries are transforming, and transition work is valuable."}},
+    {"@type": "Question", "name": "Is it a mistake to join a shrinking sector?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - many industries are transforming, and transition work is valuable."}},
     {"@type": "Question", "name": "What protection exists if a reorganisation happens?", "acceptedAnswer": {"@type": "Answer", "text": "UWV permission and selection rules, works council advice, transition payment and often a social plan."}},
     {"@type": "Question", "name": "How do I tell whether my role is exposed?", "acceptedAnswer": {"@type": "Answer", "text": "Ask whether it supports the declining part or the transition, and where investment goes."}},
     {"@type": "Question", "name": "Will a contracting industry limit my next move?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the skills are sector-specific; forecasting and governance transfer well."}},

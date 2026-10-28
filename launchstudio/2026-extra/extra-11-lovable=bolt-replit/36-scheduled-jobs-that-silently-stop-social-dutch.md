@@ -1,4 +1,4 @@
-⏱️ Steven Bogaerts runde Huurmaat in Lovable voor machineverhuur aan 90 bedrijven in Gelderland. Een nachtelijke cron-job verstuurde herinneringen en factureerde telaatkomingen. Door een verlopen API-sleutel viel de taak 5 weken lang geruisloos uit — wat leidde tot € 6.000 aan gemiste inkomsten vóórdat iemand het merkte. 😳
+⏱️ Steven Bogaerts runde Huurmaat in Lovable voor machineverhuur aan 90 bedrijven in Gelderland. Een nachtelijke cron-job verstuurde herinneringen en factureerde telaatkomingen. Door een verlopen API-sleutel viel de taak 5 weken lang geruisloos uit - wat leidde tot € 6.000 aan gemiste inkomsten vóórdat iemand het merkte. 😳
 
 Frontend-fouten ziet u meteen; achtergrondtaken sterven in stilte. Waar het misgaat bij cron-jobs in AI-apps:
 

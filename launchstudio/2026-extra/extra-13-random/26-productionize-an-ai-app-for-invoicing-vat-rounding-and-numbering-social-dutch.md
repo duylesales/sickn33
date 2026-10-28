@@ -1,6 +1,6 @@
-🚨 Ayoub Benali, boekhouder in Schiedam, bouwde Nota Nu met Cursor: facturatie voor freelancers, met offertes, herinneringen en een btw-overzicht per kwartaal. Ongeveer 260 freelancers betaalden € 9 per maand. Toen zag een boekhouder die met verschillende van hen werkte dat de btw-totalen per kwartaal niet overeenkwamen met de facturen — een paar cent tot een paar euro per klant. 😳
+🚨 Ayoub Benali, boekhouder in Schiedam, bouwde Nota Nu met Cursor: facturatie voor freelancers, met offertes, herinneringen en een btw-overzicht per kwartaal. Ongeveer 260 freelancers betaalden € 9 per maand. Toen zag een boekhouder die met verschillende van hen werkte dat de btw-totalen per kwartaal niet overeenkwamen met de facturen - een paar cent tot een paar euro per klant. 😳
 
-Bedragen werden opgeslagen als floats. Btw werd op het scherm per regel afgerond maar in het overzicht per factuur. Factuurnummers waren "aantal plus één", met dubbele nummers als twee apparaten tegelijk facturen maakten — en een terugloop na een verwijdering. Verstuurde facturen waren volledig bewerkbaar, btw-verlegging binnen de EU ontbrak, en een account verwijderen wiste facturen die gebruikers wettelijk moesten bewaren. Zo maakt u een AI-facturatie-app productierijp:
+Bedragen werden opgeslagen als floats. Btw werd op het scherm per regel afgerond maar in het overzicht per factuur. Factuurnummers waren "aantal plus één", met dubbele nummers als twee apparaten tegelijk facturen maakten - en een terugloop na een verwijdering. Verstuurde facturen waren volledig bewerkbaar, btw-verlegging binnen de EU ontbrak, en een account verwijderen wiste facturen die gebruikers wettelijk moesten bewaren. Zo maakt u een AI-facturatie-app productierijp:
 
 ❌ Geld als floating point
 ❌ Gemengde btw-afronding tussen schermen en rapporten
@@ -10,7 +10,7 @@ Bedragen werden opgeslagen als floats. Btw werd op het scherm per regel afgerond
 ✅ Bedragen gemigreerd naar gehele centen met een gecontroleerde conversie
 ✅ Overal btw-afronding per regel
 ✅ Transactionele nummering per reeks, toegekend bij het definitief maken
-✅ Vergrendelde uitgereikte facturen met opgeslagen pdf's, creditnota's, facturen met verlegging en zeven jaar bewaring — plus een rapport van elke historische afwijking
+✅ Vergrendelde uitgereikte facturen met opgeslagen pdf's, creditnota's, facturen met verlegging en zeven jaar bewaring - plus een rapport van elke historische afwijking
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, repareren we de rekenkunde en de regels achter een factuur, niet alleen de lay-out. ⚙️
 

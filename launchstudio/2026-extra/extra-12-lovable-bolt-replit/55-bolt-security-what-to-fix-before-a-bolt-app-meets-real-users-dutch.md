@@ -22,7 +22,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 
 Bolt is uitzonderlijk goed in waar het voor is: een applicatie beschrijven en minuten later een werkende versie hebben, draaiend in een browser, compleet genoeg om aan iemand te laten zien.
 
-Die uitvoer is geoptimaliseerd voor demonstratie. Ze moet direct werken, wat betekent dat elke beslissing die snelheid inruilt voor veiligheid in het voordeel van snelheid uitvalt — niet uit slordigheid, maar omdat het alternatief iets zou opleveren dat in de eerste minuut niet draait.
+Die uitvoer is geoptimaliseerd voor demonstratie. Ze moet direct werken, wat betekent dat elke beslissing die snelheid inruilt voor veiligheid in het voordeel van snelheid uitvalt - niet uit slordigheid, maar omdat het alternatief iets zou opleveren dat in de eerste minuut niet draait.
 
 Het gat tussen een Bolt-prototype en een applicatie die vreemden kunnen gebruiken, is echt, goed afgebakend, en meestal een dag of twee werk. Het probleem is dat niets aan het prototype aangeeft dat het gat bestaat, omdat het er af uitziet.
 
@@ -30,7 +30,7 @@ Het gat tussen een Bolt-prototype en een applicatie die vreemden kunnen gebruike
 
 Begin hier, omdat het zowel het meest voorkomende als het meest ingrijpende is.
 
-Bolt-applicaties bevatten vaak API-sleutels in frontendcode — een databasesleutel, een sleutel voor een model-API, een betaalsleutel — omdat dat de kortste weg is van niets naar een werkende functie. Alles in die code is te downloaden door iedereen die uw site opent.
+Bolt-applicaties bevatten vaak API-sleutels in frontendcode - een databasesleutel, een sleutel voor een model-API, een betaalsleutel - omdat dat de kortste weg is van niets naar een werkende functie. Alles in die code is te downloaden door iedereen die uw site opent.
 
 Controleer drie plekken: de code zelf, de build-uitvoer, en het live JavaScript op uw site. Zoek naar de namen van providers en naar alles wat op een sleutel lijkt.
 
@@ -40,7 +40,7 @@ Alles wat u daar vindt, is gecompromitteerd en moet worden vervangen, niet allee
 
 Het tweede gat is autorisatie, en het is structureel in plaats van toevallig.
 
-Een prototype toont een functie aan een persoon die haar mag gebruiken. Er is geen tweede gebruiker, dus de vraag of deze gebruiker dit record mag zien bestaat niet — en de gegenereerde code bevat zo'n controle niet.
+Een prototype toont een functie aan een persoon die haar mag gebruiken. Er is geen tweede gebruiker, dus de vraag of deze gebruiker dit record mag zien bestaat niet - en de gegenereerde code bevat zo'n controle niet.
 
 Volg de systematische aanpak die elders in deze reeks is beschreven: twee accounts in twee organisaties, en een ronde langs elk endpoint waarbij u de records van de ander opvraagt. Lezen, bijwerken en verwijderen. In een Bolt-applicatie die rechtstreeks uit het prototype komt, kunt u verwachten dat de meeste slagen.
 
@@ -60,7 +60,7 @@ Drie standaarden die specifiek in een Bolt-applicatie het controleren waard zijn
 
 Opslagbuckets, die doorgaans publiek worden aangemaakt omdat de upload daardoor in de demonstratie werkte.
 
-API-routes, die vaak helemaal geen authenticatie vereisen — ze werden vanuit de interface aangeroepen en niets suggereerde dat iemand anders ze zou kunnen aanroepen.
+API-routes, die vaak helemaal geen authenticatie vereisen - ze werden vanuit de interface aangeroepen en niets suggereerde dat iemand anders ze zou kunnen aanroepen.
 
 En de gedeployde preview zelf, een publieke URL die misschien nog bestaat, met een eerdere versie van uw applicatie en een eerdere set sleutels.
 
@@ -98,11 +98,11 @@ Een voor de hand liggende vraag: kan de tool die het prototype bouwde het ook re
 
 Wat goed werkt. Validatie op de server toevoegen aan een endpoint, als u het endpoint noemt en de regels geeft. Een specifieke handeling achter een serverfunctie zetten. Rate limiting toevoegen aan een route. Een policy schrijven voor een tabel als u beschrijft wie wat mag zien. Dat zijn afgebakende, goed gespecificeerde taken met heel veel voorbeelden, en de uitvoer is meestal correct.
 
-Wat niet werkt. Vragen om "maak dit veilig", wat zelfverzekerde wijzigingen oplevert die gaan over wat het model met het woord associeert in plaats van wat uw applicatie werkelijk mist. Vragen om de problemen te vinden, wat het wisselend doet — het merkt een ontbrekende validatie op en mist de service role-sleutel in de frontend, omdat die sleutel zijn werk doet.
+Wat niet werkt. Vragen om "maak dit veilig", wat zelfverzekerde wijzigingen oplevert die gaan over wat het model met het woord associeert in plaats van wat uw applicatie werkelijk mist. Vragen om de problemen te vinden, wat het wisselend doet - het merkt een ontbrekende validatie op en mist de service role-sleutel in de frontend, omdat die sleutel zijn werk doet.
 
 De productieve verdeling is dus dat u beslist wat er moet worden opgelost, vanaf een checklist, en dat de agent elke oplossing als benoemde taak uitvoert. Dat is aanzienlijk sneller dan het zelf schrijven, en het vereist geen vertrouwen in een oordeel dat de tool niet kan vellen.
 
-Eén waarschuwing specifiek voor dit werk: controleer elke wijziging in plaats van haar te accepteren. Een policy die er goed uitziet en alles toestaat, of een validatie die na het wegschrijven naar de database draait, zijn allebei aannemelijke uitvoer — en precies het soort gebrek waarvan het oorspronkelijke prototype al liet zien dat de tool het kan maken.
+Eén waarschuwing specifiek voor dit werk: controleer elke wijziging in plaats van haar te accepteren. Een policy die er goed uitziet en alles toestaat, of een validatie die na het wegschrijven naar de database draait, zijn allebei aannemelijke uitvoer - en precies het soort gebrek waarvan het oorspronkelijke prototype al liet zien dat de tool het kan maken.
 
 De praktische opzet is dus: houd de checklist in de repository zodat elke sessie erbij kan, werk haar punt voor punt af, en test elk resultaat zelf. De tool levert snelheid; de lijst levert oordeel, en de lijst is het deel dat van buiten de tool moet komen.
 
@@ -110,7 +110,7 @@ De praktische opzet is dus: houd de checklist in de repository zodat elke sessie
 
 Voor een Bolt-applicatie op weg naar echte gebruikers kost dit doorgaans één tot twee dagen: elke sleutel in code en bundel gevonden, vervangen en naar de server verplaatst, met de handelingen die ze gebruikten herschreven als geautoriseerde functies; systematisch testen tussen accounts, met autorisatie op elk endpoint en row-level security ingeschakeld waar van toepassing; validatie op de server voor elke invoer; opslagbuckets privé gemaakt met ondertekende toegang; API-routes die authenticatie vereisen; oude preview-deployments opgeheven; rate limits, groottelimieten en time-outs toegepast; en een korte schriftelijke vastlegging van wat er is gecontroleerd, zodat de volgende persoon het weet.
 
-LaunchStudio doet precies dit werk binnen het Launch Ready-pakket, vanaf €800, meestal binnen een week. De engineers zijn van Manifera — elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio doet precies dit werk binnen het Launch Ready-pakket, vanaf €800, meestal binnen een week. De engineers zijn van Manifera - elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW, vanaf de Herengracht 420 in Amsterdam.
 
 [Stuur ons uw Bolt-project](https://launchstudio.eu/nl/#contact) en wij vertellen u wat een vreemde er nu mee kan doen.
 
@@ -120,7 +120,7 @@ LaunchStudio doet precies dit werk binnen het Launch Ready-pakket, vanaf €800,
 
 Quinten Aardema bouwde Leveranciersportaal in een weekend met Bolt: een portaal waar de 90 leveranciers van een voedingsgroothandel prijslijsten, certificaten en leverschema's indienen.
 
-Hij bouwde het om de groothandel te laten zien wat er mogelijk was. Ze vonden het goed, vroegen wanneer het live kon, en hij antwoordde "volgende week" — omdat het werkte.
+Hij bouwde het om de groothandel te laten zien wat er mogelijk was. Ze vonden het goed, vroegen wanneer het live kon, en hij antwoordde "volgende week" - omdat het werkte.
 
 De review vóór de lancering vond wat een weekendprototype bevat. De Supabase-sleutel in de frontend was de service role-sleutel, met onbeperkte databasetoegang voor iedereen die de pagina opende. Geen van de 23 endpoints controleerde welke leverancier het vroeg, dus elke ingelogde leverancier kon de prijslijst van elke concurrent lezen door een nummer te veranderen. Certificaten die leveranciers uploadden, gingen naar een publieke bucket met voorspelbare bestandsnamen. Validatie zat volledig in de browser, dus een negatieve prijs en een leverdatum in 1970 werden allebei geaccepteerd. Er waren nergens rate limits, en het endpoint dat de groothandel mailde over nieuwe inzendingen, kon herhaaldelijk worden aangeroepen door iedereen die het vond.
 
@@ -128,10 +128,10 @@ Twee werkdagen: de service role-sleutel vervangen en verwijderd, met alle databa
 
 **Resultaat:** het portaal ging een week later dan gepland live met 90 leveranciers en draait inmiddels twee jaar. Quinten vindt de week vertraging de beste beslissing in het project, omdat een lek van prijslijsten tussen concurrerende leveranciers de relatie met de groothandel direct had beëindigd.
 
-> *"Het werkte perfect. Dat was precies het probleem — er was niets te zien, en elke leverancier had de prijzen van elke concurrent kunnen lezen door één nummer in de adresbalk te veranderen."*
-> — **Quinten Aardema, Oprichter, Leveranciersportaal (Venlo)**
+> *"Het werkte perfect. Dat was precies het probleem - er was niets te zien, en elke leverancier had de prijzen van elke concurrent kunnen lezen door één nummer in de adresbalk te veranderen."*
+> - **Quinten Aardema, Oprichter, Leveranciersportaal (Venlo)**
 
-**Kosten & Doorlooptijd:** €2.900 (vervangen van sleutels en migratie naar de server, row-level security, autorisatie over 23 endpoints, validatie op de server, privé-opslag met ondertekende toegang, rate- en groottelimieten, opheffen van preview, documentatie) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.900 (vervangen van sleutels en migratie naar de server, row-level security, autorisatie over 23 endpoints, validatie op de server, privé-opslag met ondertekende toegang, rate- en groottelimieten, opheffen van preview, documentatie) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -145,7 +145,7 @@ Waar uw API-sleutels staan. Doorzoek het live JavaScript op uw site op providern
 
 ### Hoe test ik autorisatie?
 
-Maak twee accounts in twee verschillende organisaties, noteer in de ene de recordidentificaties, en vraag ze op als de andere — voor lezen, bijwerken en verwijderen. Alles wat data teruggeeft, is een bevinding.
+Maak twee accounts in twee verschillende organisaties, noteer in de ene de recordidentificaties, en vraag ze op als de andere - voor lezen, bijwerken en verwijderen. Alles wat data teruggeeft, is een bevinding.
 
 ### Waarom is validatie in de browser niet genoeg?
 
@@ -165,7 +165,7 @@ Eén tot twee dagen voor een typisch prototype, in een vaste volgorde: sleutels,
       "name": "Is Bolt onveilig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet meer dan welke prototypingtool ook — het optimaliseert voor direct werkende uitvoer, dus controles die pas met echte gebruikers ertoe doen, ontbreken."
+        "text": "Niet meer dan welke prototypingtool ook - het optimaliseert voor direct werkende uitvoer, dus controles die pas met echte gebruikers ertoe doen, ontbreken."
       }
     },
     {
@@ -197,7 +197,7 @@ Eén tot twee dagen voor een typisch prototype, in een vaste volgorde: sleutels,
       "name": "Hoe lang duurt het verstevigen van een Bolt-app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eén tot twee dagen: sleutels, autorisatie, validatie, standaarden, limieten — de eerste twee dekken het meeste echte risico."
+        "text": "Eén tot twee dagen: sleutels, autorisatie, validatie, standaarden, limieten - de eerste twee dekken het meeste echte risico."
       }
     }
   ]

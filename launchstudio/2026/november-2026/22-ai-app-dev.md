@@ -87,7 +87,7 @@ Emma runs a boutique social media marketing agency in Rotterdam. She used Bolt t
 
 The prototype was a massive hit internally. But when Emma rolled it out to her first three clients, the system collapsed. 
 
-Client A clicked "Approve" on a post on their iPad, but when they opened the app on their desktop later, the post still showed as "Pending." Client B left a long comment on a post, but when Emma's team looked at the backend, the comment text was missing—only the timestamp was saved. Client C somehow managed to approve a post belonging to Client A.
+Client A clicked "Approve" on a post on their iPad, but when they opened the app on their desktop later, the post still showed as "Pending." Client B left a long comment on a post, but when Emma's team looked at the backend, the comment text was missing - only the timestamp was saved. Client C somehow managed to approve a post belonging to Client A.
 
 Emma had fallen victim to the AI frontend state management trap. Bolt had built the app using `localStorage` and a poorly structured Firebase connection that relied entirely on client-side filtering without security rules.
 
@@ -97,10 +97,10 @@ Within 12 business days, LaunchStudio built a secure, human-engineered backend. 
 
 **Result:** The Content Approver app relaunched successfully to all of Emma's clients. It works flawlessly. Emma now licenses the software as a white-label SaaS to two other marketing agencies in the Netherlands, generating an additional €2,400/month in purely passive MRR.
 
-> *"I thought I built a whole app with AI, but I really only built a beautiful shell. LaunchStudio kept my beautiful shell and built the engine inside it. I still use Cursor to tweak the UI, but I never touch the backend—LaunchStudio made it bulletproof."*
-> — **Emma Visser, Founder, Content Approver (Rotterdam)**
+> *"I thought I built a whole app with AI, but I really only built a beautiful shell. LaunchStudio kept my beautiful shell and built the engine inside it. I still use Cursor to tweak the UI, but I never touch the backend - LaunchStudio made it bulletproof."*
+> - **Emma Visser, Founder, Content Approver (Rotterdam)**
 
-**Cost & Timeline:** €4,100 (Launch & Grow Package) — production-ready and deployed in 12 business days.
+**Cost & Timeline:** €4,100 (Launch & Grow Package) - production-ready and deployed in 12 business days.
 
 ---
 

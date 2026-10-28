@@ -1,6 +1,6 @@
-🚨 Levi, a clinic manager, built a booking bot with **Bolt**. It looked great in the demo, but it couldn't sync schedules with the regional dental Practice Management Systems his clients actually used — so staff had to manually re-enter every AI-booked appointment. 🦷
+🚨 Levi, a clinic manager, built a booking bot with **Bolt**. It looked great in the demo, but it couldn't sync schedules with the regional dental Practice Management Systems his clients actually used - so staff had to manually re-enter every AI-booked appointment. 🦷
 
-The real moat in Vertical AI isn't the model — it's the depth of your integration into the archaic legacy software an industry already runs on. 🧠
+The real moat in Vertical AI isn't the model - it's the depth of your integration into the archaic legacy software an industry already runs on. 🧠
 
 ❌ An AI bot that couldn't talk to the regional PMS systems dentists depend on daily
 ❌ Every AI-booked appointment requiring manual re-entry into the real system of record

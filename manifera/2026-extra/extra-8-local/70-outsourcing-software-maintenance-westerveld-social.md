@@ -2,7 +2,7 @@ One engineer understands your 15-year-old revenue engine. He just mentioned reti
 
 **The Pain Points:**
 ❌ **The One-Person System:** A single senior engineer is the only one who can safely touch large parts of a legacy reservations engine.
-❌ **The Scramble Precedent:** At a prior company, an abrupt departure cost four months of team capacity reverse-engineering undocumented logic — and a missed bug corrupted booking records at a cost of €45,000.
+❌ **The Scramble Precedent:** At a prior company, an abrupt departure cost four months of team capacity reverse-engineering undocumented logic - and a missed bug corrupted booking records at a cost of €45,000.
 ❌ **No Documentation Discipline:** Institutional knowledge lives in one person's memory, not in any written decision log.
 
 **The Manifera Solution:**

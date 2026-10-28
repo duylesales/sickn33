@@ -21,7 +21,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Elk voorjaar maken accountants- en administratiekantoren dezelfde hectiek mee: honderden cliënten die jaaropgaven, hypotheekoverzichten, pensioenbrieven en losse bonnetjes aanleveren via e-mail, WhatsApp en de traditionele schoenendoos. Een cliëntenportaal dat alle stukken overzichtelijk verzamelt, is een enorme efficiëntieslag. Veel accountants en ontwikkelaars bouwen tegenwoordig binnen enkele weken zo'n portaal met Lovable. Maar het naar productie brengen van dit AI-prototype betekent wel dat je te maken krijgt met de meest privacygevoelige documenten van een huishouden — precies tijdens de drukste werkweken van het hele jaar.
+Elk voorjaar maken accountants- en administratiekantoren dezelfde hectiek mee: honderden cliënten die jaaropgaven, hypotheekoverzichten, pensioenbrieven en losse bonnetjes aanleveren via e-mail, WhatsApp en de traditionele schoenendoos. Een cliëntenportaal dat alle stukken overzichtelijk verzamelt, is een enorme efficiëntieslag. Veel accountants en ontwikkelaars bouwen tegenwoordig binnen enkele weken zo'n portaal met Lovable. Maar het naar productie brengen van dit AI-prototype betekent wel dat je te maken krijgt met de meest privacygevoelige documenten van een huishouden - precies tijdens de drukste werkweken van het hele jaar.
 
 ## Beslissing 1: Wat Staat Er Precies in Deze Documenten?
 
@@ -35,7 +35,7 @@ Een kantoor heeft partners, registeraccountants, assistent-accountants en vaak t
 
 Het uploaden van bestanden vormt het hart van het portaal en tegelijkertijd het grootste beveiligingsrisico:
 - **Private storage** met kortlevende ondertekende URL's (signed links); nooit openbare internetadressen.
-- **Automatische virus- en malwarescans** direct bij binnenkomst — cliënten uploaden immers bestanden vanaf allerlei niet-beheerde apparaten.
+- **Automatische virus- en malwarescans** direct bij binnenkomst - cliënten uploaden immers bestanden vanaf allerlei niet-beheerde apparaten.
 - **Strikte bestands- en omvanglimieten,** met betrouwbare ondersteuning voor smartphonefoto's (inclusief HEIC-formaat) en zware multi-page PDF's.
 - **Hash-deduplicatie en gestructureerde naamgeving** zodat medewerkers stukken direct kunnen terugvinden.
 - **Downloadlogging** voor volledige controle en verantwoording.
@@ -149,7 +149,7 @@ Vóór de start van het aangifteseizoen:
 
 ## Waarom Cliënten Trouw Blijven aan Digitale Kantoren
 
-Cliënten die een soepel portaal ervaren — een heldere vragenlijst, eenvoudig uploaden vanaf de keukentafel met hun telefoon, directe statusinzage en een vlekkeloze akkoordprocedure — blijven jarenlang trouw aan hun adviseur en bevelen het kantoor actief aan. Voor kleinere praktijken die moeten concurreren met grote kantoren en online administratiefabrieken, is een veilig, snel en professioneel portaal het ultieme visitekaartje. Het verandert de meest hectische weken van het jaar in een beheerst en voorspelbaar proces.
+Cliënten die een soepel portaal ervaren - een heldere vragenlijst, eenvoudig uploaden vanaf de keukentafel met hun telefoon, directe statusinzage en een vlekkeloze akkoordprocedure - blijven jarenlang trouw aan hun adviseur en bevelen het kantoor actief aan. Voor kleinere praktijken die moeten concurreren met grote kantoren en online administratiefabrieken, is een veilig, snel en professioneel portaal het ultieme visitekaartje. Het verandert de meest hectische weken van het jaar in een beheerst en voorspelbaar proces.
 
 ## De Eerste Stap
 
@@ -167,16 +167,16 @@ LaunchStudio transformeert met AI gebouwde accountancyportalen naar veilige prod
 
 Jolanda Smeets, eigenaar van een administratiekantoor in Venray, bouwde Aangiftebox met behulp van Lovable: particuliere en zakelijke cliënten ontvangen een digitale checklist van benodigde stukken voor hun belastingaangifte, uploaden foto's en pdf's vanaf hun smartphone, beantwoorden gerichte vragen en geven akkoord op de conceptaangifte. Vier bevriende administratiekantoren in Noord-Limburg sloten zich aan, goed voor circa 2.100 huishoudens.
 
-De eerste maand april verliep chaotisch. Uploads vanaf mobiele telefoons braken regelmatig af bij zwakke verbindingen, waarna cliënten dezelfde foto's herhaaldelijk instuurden. Op de drukste avond voor de deadline liep de webserver een uur lang volledig vast. Tot overmaat van ramp ontdekte een alerte cliënt dat ze de jaaropgave van een ander huishouden kon downloaden door simpelweg het ID-nummer in de browserbalk te veranderen. Alle documenten — met op vrijwel elke pagina een zichtbaar BSN — bleken opgeslagen in een publiek toegankelijke storage bucket. Medewerkers van alle vijf de kantoren konden elkaars cliëntendossiers inzien, akkoorden waren eenvoudige databasevinkjes die na een correctie zomaar opnieuw konden worden aangepast, en er werd nooit iets gewist.
+De eerste maand april verliep chaotisch. Uploads vanaf mobiele telefoons braken regelmatig af bij zwakke verbindingen, waarna cliënten dezelfde foto's herhaaldelijk instuurden. Op de drukste avond voor de deadline liep de webserver een uur lang volledig vast. Tot overmaat van ramp ontdekte een alerte cliënt dat ze de jaaropgave van een ander huishouden kon downloaden door simpelweg het ID-nummer in de browserbalk te veranderen. Alle documenten - met op vrijwel elke pagina een zichtbaar BSN - bleken opgeslagen in een publiek toegankelijke storage bucket. Medewerkers van alle vijf de kantoren konden elkaars cliëntendossiers inzien, akkoorden waren eenvoudige databasevinkjes die na een correctie zomaar opnieuw konden worden aangepast, en er werd nooit iets gewist.
 
 Binnen twaalf werkdagen hebben de software-engineers van LaunchStudio alle documenten gemigreerd naar private storage met kortlevende signed URL's en malwarescanning, resumable chunked uploads en hash-deduplicatie geïmplementeerd, kantoor-, team- en cliëntenscheiding afgedwongen met PostgreSQL Row-Level Security, MFA verplicht gesteld voor medewerkers, akkoorden vastgelegd tegen bevroren PDF's met servertijdstempels, automatische retentieregels ingesteld per documenttype, en database connection pooling met achtergrondwachtrijen geconfigureerd voorafgaand aan een succesvolle stresstest op driemaal het piekvolume. Het datalek werd in nauw overleg met een privacyjurist direct gemeld aan de Autoriteit Persoonsgegevens en de betrokken cliënt werd geïnformeerd.
 
 **Resultaat:** Het daaropvolgende aangifteseizoen verliep zonder een seconde downtime, mobiele uploads slaagden vlekkeloos en ongeautoriseerde toegang was technisch onmogelijk gemaakt. Aangiftebox mocht binnen een jaar zes nieuwe accountantskantoren verwelkomen, die specifiek kozen voor de gedegen beveiligingsarchitectuur.
 
-> *"Mijn cliënten vertrouwen mij één keer per jaar hun complete financiële leven toe. Het portaal moest minstens zo zorgvuldig zijn als de schoenendoos — en dat was het aanvankelijk niet."*
-> — **Jolanda Smeets, Oprichter, Aangiftebox (Venray)**
+> *"Mijn cliënten vertrouwen mij één keer per jaar hun complete financiële leven toe. Het portaal moest minstens zo zorgvuldig zijn als de schoenendoos - en dat was het aanvankelijk niet."*
+> - **Jolanda Smeets, Oprichter, Aangiftebox (Venray)**
 
-**Kosten & Tijdlijn:** € 3.400 (Launch & Grow-pakket: documentbeveiliging, uploads, toegangscontrole, akkoorden, dataretentie en piekvoorbereiding) — afgerond in 12 werkdagen, plus € 49/maand managed hosting.
+**Kosten & Tijdlijn:** € 3.400 (Launch & Grow-pakket: documentbeveiliging, uploads, toegangscontrole, akkoorden, dataretentie en piekvoorbereiding) - afgerond in 12 werkdagen, plus € 49/maand managed hosting.
 
 ## Veelgestelde Vragen
 

@@ -14,13 +14,13 @@ Node.js draait standaard op één enkele thread en gebruikt een Event Loop om in
 
 Taken zoals het berekenen van complexe embeddings, het uitvoeren van cosinus-overeenkomstberekeningen over 10.000 vectoren in het applicatiegeheugen, tokenisatie via `tiktoken` of het parsen van omvangrijke, diep geneste JSON-responses van 5 MB van een LLM zijn echter **CPU-intensief**. Zodra Node.js deze bewerkingen synchroon uitvoert, raakt de hoofdthread volledig geblokkeerd. Als Gebruiker A een embeddingberekening start die 2 seconden duurt, kan Gebruiker B gedurende die 2 seconden zelfs de inlogpagina niet laden: de complete server staat stil. Dit verklaart waarom prototypes gebouwd met Lovable of Bolt die lokaal vlekkeloos functioneren, direct timeouts vertonen zodra er gelijktijdig verkeer ontstaat.
 
-Tijdens lokale tests merkt een individuele ontwikkelaar hier niets van. Het probleem openbaart zich pas bij 20 tot 50 gelijktijdige gebruikers — precies op het moment dat downtime fataal is, zoals tijdens een Product Hunt-lancering of een enterprise-pilot.
+Tijdens lokale tests merkt een individuele ontwikkelaar hier niets van. Het probleem openbaart zich pas bij 20 tot 50 gelijktijdige gebruikers - precies op het moment dat downtime fataal is, zoals tijdens een Product Hunt-lancering of een enterprise-pilot.
 
 ## Oplossing 1: Worker Threads
 
 Om zware CPU-belastingen op te vangen, moet u gebruikmaken van de native `worker_threads` module (of een poolbeheerder zoals `piscina`). Hiermee voert u JavaScript parallel uit over meerdere CPU-kernen, zonder de centrale thread te belasten.
 
-Wanneer een gebruiker een complexe vectorzoekopdracht of documentsegmentatie aanvraagt, delegeert het Node.js-hoofdproces deze berekening direct via `postMessage` aan een Worker Thread. De worker voert de zware wiskundige bewerkingen uit — cosinusberekeningen, tokenisatie, PDF-tekstextractie — en stuurt het resultaat terug via een berichtenkanaal, waar mogelijk gebruikmakend van `SharedArrayBuffer` voor data-overdracht zonder kopieervertraging. De hoofdthread blijft volledig vrij om razendsnel HTML en API-responses te serveren aan honderden gelijktijdige gebruikers. Een goed geconfigureerde worker pool ter grootte van `os.cpus().length - 1` houdt de vertraging van de event loop doorgaans onder de 10 ms, zelfs bij maximale belasting.
+Wanneer een gebruiker een complexe vectorzoekopdracht of documentsegmentatie aanvraagt, delegeert het Node.js-hoofdproces deze berekening direct via `postMessage` aan een Worker Thread. De worker voert de zware wiskundige bewerkingen uit - cosinusberekeningen, tokenisatie, PDF-tekstextractie - en stuurt het resultaat terug via een berichtenkanaal, waar mogelijk gebruikmakend van `SharedArrayBuffer` voor data-overdracht zonder kopieervertraging. De hoofdthread blijft volledig vrij om razendsnel HTML en API-responses te serveren aan honderden gelijktijdige gebruikers. Een goed geconfigureerde worker pool ter grootte van `os.cpus().length - 1` houdt de vertraging van de event loop doorgaans onder de 10 ms, zelfs bij maximale belasting.
 
 ## Oplossing 2: Asynchrone Wachtrij-architectuur (Message Queues)
 
@@ -30,7 +30,7 @@ De oplossing is de overstap naar een **Asynchrone Wachtrij** (met Redis/BullMQ, 
 
 1. De gebruiker dient een prompt in.
 2. De Node.js API valideert het verzoek, plaatst de taak direct in een Redis-wachtrij en retourneert binnen 50 milliseconden een `202 Accepted (Job ID: 123)` response naar de frontend.
-3. Een afzonderlijke, dedicated worker-server — die onafhankelijk van de API-laag kan schalen — pakt de taak op, voert de 30 seconden durende API-aanroep uit en slaat het eindresultaat op in de database.
+3. Een afzonderlijke, dedicated worker-server - die onafhankelijk van de API-laag kan schalen - pakt de taak op, voert de 30 seconden durende API-aanroep uit en slaat het eindresultaat op in de database.
 4. De frontend pollt de database of ontvangt via WebSockets of Server-Sent Events (SSE) direct een melding zodra Taak 123 gereed is.
 
 Deze architectuur garandeert dat de publieke API nooit overbelast raakt, ongeacht hoe traag de onderliggende LLM reageert. U kunt 20 lichte API-instanties combineren met 3 zware worker-instanties, afgestemd op de werkelijke belasting.
@@ -63,7 +63,7 @@ Herre Roelevink, oprichter en Managing Director van Manifera, verwoordt deze tra
 
 ## Schaal uw AI-backend zonder downtime
 
-Raakt uw Node.js-backend overbelast door trage LLM-verzoeken of piekverkeer? **LaunchStudio** ontwerpt robuuste, asynchrone microservice-architecturen die specifiek zijn gebouwd voor zware, gelijktijdige enterprise AI-workloads — zonder dat uw bestaande frontend hoeft te worden herschreven. Bereken eenvoudig de kosten voor het professionaliseren van uw architectuur via onze [prijscalculator](https://launchstudio.eu/nl/#calculator).
+Raakt uw Node.js-backend overbelast door trage LLM-verzoeken of piekverkeer? **LaunchStudio** ontwerpt robuuste, asynchrone microservice-architecturen die specifiek zijn gebouwd voor zware, gelijktijdige enterprise AI-workloads - zonder dat uw bestaande frontend hoeft te worden herschreven. Bereken eenvoudig de kosten voor het professionaliseren van uw architectuur via onze [prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM Singapore 079027) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10, Tan Son Hoa Ward). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met meer dan 120 engineers en ruim 160 succesvol opgeleverde projecten voor organisaties zoals Vodafone en TNO, biedt LaunchStudio AI-native oprichters directe toegang tot enterprise-grade software-expertise om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een vrijblijvende offerte aan](https://launchstudio.eu/nl/#contact).
 
@@ -77,7 +77,7 @@ Hij nam contact op met **LaunchStudio (door Manifera)**. Het engineeringteam ont
 
 **Resultaat:** De systeembeschikbaarheid steeg naar 99,99% en de responstijden bleven stabiel, zelfs tijdens piekbelastingen met meer dan 5.000 gelijktijdige beelduploads.
 
-**Kosten & tijdlijn:** €3.200 (Microservices Scaling Pakket) — productieklaar en binnen 8 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €3.200 (Microservices Scaling Pakket) - productieklaar en binnen 8 werkdagen live opgeleverd.
 
 ---
 

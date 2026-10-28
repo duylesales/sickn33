@@ -7,8 +7,8 @@
 
 **The Manifera Solution:**
 ✅ **Six Board Questions, Specific Answers:** GDPR accountability, IP ownership, vendor continuity, quality accountability, communication risk, and reputational risk.
-✅ **Amsterdam Strategic Governance:** A named EU-jurisdiction entity — contract enforcement without cross-border litigation.
-✅ **Vietnam Execution Velocity:** A scoped pilot engagement before full commitment — a bounded, reversible first step.
+✅ **Amsterdam Strategic Governance:** A named EU-jurisdiction entity - contract enforcement without cross-border litigation.
+✅ **Vietnam Execution Velocity:** A scoped pilot engagement before full commitment - a bounded, reversible first step.
 
 Convert a binary yes/no into a lower-stakes first approval. 🛡️
 

@@ -20,23 +20,23 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-Here's a claim that sounds reassuring but isn't quite true: "the AI tool checks for security issues as it builds, so I don't need to worry about it." Ask any engineer who has actually audited an AI-generated codebase and they'll tell you the truth is messier. AI in IT security is a genuinely useful assistant — it can flag obvious mistakes, suggest safer patterns, even catch a hardcoded secret sometimes. What it can't do is take responsibility for the parts of your app it never saw a reason to question.
+Here's a claim that sounds reassuring but isn't quite true: "the AI tool checks for security issues as it builds, so I don't need to worry about it." Ask any engineer who has actually audited an AI-generated codebase and they'll tell you the truth is messier. AI in IT security is a genuinely useful assistant - it can flag obvious mistakes, suggest safer patterns, even catch a hardcoded secret sometimes. What it can't do is take responsibility for the parts of your app it never saw a reason to question.
 
 ## The Myth: AI Tools Handle Security By Default
 
-Founders building with Lovable, Bolt, Cursor, or v0 often assume that because the tool is modern and well-trained, it's also cautious. In practice, these tools optimize for getting a feature working and visually correct. Security is a secondary concern that only gets addressed if you explicitly ask for it — and even then, the AI has no way of testing whether its own fix actually closes the gap under real-world conditions.
+Founders building with Lovable, Bolt, Cursor, or v0 often assume that because the tool is modern and well-trained, it's also cautious. In practice, these tools optimize for getting a feature working and visually correct. Security is a secondary concern that only gets addressed if you explicitly ask for it - and even then, the AI has no way of testing whether its own fix actually closes the gap under real-world conditions.
 
-This matters more than it sounds like it should. A founder in Veendam building a booking platform for local craft workshops doesn't think of themselves as running "IT security" — they think of themselves as running a small business. But the moment that platform stores a customer's name, email, and payment details, IT security stops being optional. It becomes the thing standing between a normal Tuesday and a data breach email you have to send to every customer.
+This matters more than it sounds like it should. A founder in Veendam building a booking platform for local craft workshops doesn't think of themselves as running "IT security" - they think of themselves as running a small business. But the moment that platform stores a customer's name, email, and payment details, IT security stops being optional. It becomes the thing standing between a normal Tuesday and a data breach email you have to send to every customer.
 
-The trap is that nothing about the day-to-day experience of running the app signals this shift has happened. Bookings still come in, payments still clear, the dashboard still looks the same. There's no moment where the app visibly announces "you are now responsible for protecting sensitive data" — it just quietly becomes true the first time a real customer enters their card details, and it stays true whether or not the founder has ever thought about it in those terms.
+The trap is that nothing about the day-to-day experience of running the app signals this shift has happened. Bookings still come in, payments still clear, the dashboard still looks the same. There's no moment where the app visibly announces "you are now responsible for protecting sensitive data" - it just quietly becomes true the first time a real customer enters their card details, and it stays true whether or not the founder has ever thought about it in those terms.
 
 ## The Reality: AI Catches Patterns, Not Consequences
 
-AI in IT security tools are trained on patterns — common vulnerabilities, known bad practices, standard fixes. They're not trained on your specific business logic, your specific database structure, or the specific way your admin panel was wired up at 11pm on a Sunday. That's exactly where problems hide. An AI model can tell you "don't hardcode API keys" in general, but it won't necessarily notice that your admin dashboard has no login check at all, because from the AI's perspective, the dashboard "worked" the moment it rendered correctly on screen.
+AI in IT security tools are trained on patterns - common vulnerabilities, known bad practices, standard fixes. They're not trained on your specific business logic, your specific database structure, or the specific way your admin panel was wired up at 11pm on a Sunday. That's exactly where problems hide. An AI model can tell you "don't hardcode API keys" in general, but it won't necessarily notice that your admin dashboard has no login check at all, because from the AI's perspective, the dashboard "worked" the moment it rendered correctly on screen.
 
-This is also why asking an AI tool to "review this code for security issues" produces uneven results. It will happily flag textbook problems it recognizes from training data — an unescaped SQL query, a plaintext password field — because those patterns appear thousands of times in the code it learned from. It has no equivalent instinct for a business-logic flaw unique to your app, like a discount code that can be applied an unlimited number of times, or a booking flow that lets someone reserve a slot without actually completing payment. Those require understanding what your app is supposed to do, not just recognizing a known bad pattern.
+This is also why asking an AI tool to "review this code for security issues" produces uneven results. It will happily flag textbook problems it recognizes from training data - an unescaped SQL query, a plaintext password field - because those patterns appear thousands of times in the code it learned from. It has no equivalent instinct for a business-logic flaw unique to your app, like a discount code that can be applied an unlimited number of times, or a booking flow that lets someone reserve a slot without actually completing payment. Those require understanding what your app is supposed to do, not just recognizing a known bad pattern.
 
-This is the gap LaunchStudio exists to close. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and the security review we run on founder prototypes isn't generated by another AI model — it's done by people who have spent years finding exactly these gaps in production systems for enterprise clients. Coordinated in part from our Singapore office on Tras Street, the team has reviewed AI-built apps from founders across the Netherlands, Veendam included, and the same handful of security gaps show up again and again: missing authentication middleware, exposed API routes, database tables anyone can query directly.
+This is the gap LaunchStudio exists to close. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and the security review we run on founder prototypes isn't generated by another AI model - it's done by people who have spent years finding exactly these gaps in production systems for enterprise clients. Coordinated in part from our Singapore office on Tras Street, the team has reviewed AI-built apps from founders across the Netherlands, Veendam included, and the same handful of security gaps show up again and again: missing authentication middleware, exposed API routes, database tables anyone can query directly.
 
 We don't touch what your Bolt or Lovable frontend looks like. We go underneath it, close the gaps, and hand back an app that looks identical to users but behaves very differently to anyone trying to break in. If you want a sense of scope and cost before reaching out, [our calculator](https://launchstudio.eu/en/#calculator) gives a fast estimate based on what your app actually needs. For a broader look at how this kind of engineering work gets delivered at scale, Manifera's [project portfolio](https://www.manifera.com/portfolio/) shows the same standards applied to much larger clients.
 
@@ -44,18 +44,18 @@ We don't touch what your Bolt or Lovable frontend looks like. We go underneath i
 
 If you're running a small platform out of Veendam or anywhere else in the province of Groningen, don't wait for a scare to find out where the gaps are. Ask specifically: can a logged-out user reach any admin URL? Does every database table restrict access to the right user? Are payment and personal data encrypted both in transit and at rest? If you can't answer those with certainty, that's the review to get before you scale marketing spend, not after.
 
-Most founders can answer the first question — the admin URL check — themselves in under a minute, simply by logging out and typing the admin path into the browser directly. The second and third questions are harder to self-verify, because they require actually understanding how your database's permission rules are configured, not just how the app behaves when you personally are logged in. That's usually the point where a founder either learns database permission models from scratch or brings in someone who already has.
+Most founders can answer the first question - the admin URL check - themselves in under a minute, simply by logging out and typing the admin path into the browser directly. The second and third questions are harder to self-verify, because they require actually understanding how your database's permission rules are configured, not just how the app behaves when you personally are logged in. That's usually the point where a founder either learns database permission models from scratch or brings in someone who already has.
 
 ## Building a Lightweight Security Review Cadence as a Solo Founder
 
-A one-time review, however thorough, is a snapshot. New features get added, new API routes get created, and each one is a fresh opportunity for the same gap — missing authentication, an unrestricted database table — to reappear in a slightly different form. Solo founders in Veendam don't need a dedicated security team to stay ahead of this. They need a cadence.
+A one-time review, however thorough, is a snapshot. New features get added, new API routes get created, and each one is a fresh opportunity for the same gap - missing authentication, an unrestricted database table - to reappear in a slightly different form. Solo founders in Veendam don't need a dedicated security team to stay ahead of this. They need a cadence.
 
 **A simple rhythm that catches most drift before it becomes a problem:**
 
-1. **After every new feature that touches user data** — spend five minutes checking whether the new page or API route requires the same authentication as everything else, before announcing it to customers.
-2. **Monthly** — re-run the basic self-check from above: try reaching admin URLs while logged out, and skim your database's access rules for anything that looks looser than intended.
-3. **Quarterly** — update dependencies. A large share of real-world breaches trace back to a known vulnerability in a library the app hadn't updated, not a novel attack.
-4. **After any team change** — if someone who had admin access leaves the project, revoke their credentials the same day, not "eventually."
+1. **After every new feature that touches user data** - spend five minutes checking whether the new page or API route requires the same authentication as everything else, before announcing it to customers.
+2. **Monthly** - re-run the basic self-check from above: try reaching admin URLs while logged out, and skim your database's access rules for anything that looks looser than intended.
+3. **Quarterly** - update dependencies. A large share of real-world breaches trace back to a known vulnerability in a library the app hadn't updated, not a novel attack.
+4. **After any team change** - if someone who had admin access leaves the project, revoke their credentials the same day, not "eventually."
 
 None of this requires a security background. It requires treating security review as a recurring line item, the same way a founder treats bookkeeping or paying for hosting, rather than a one-time box to check before launch and never revisit. Founders who adopt this rhythm early tend to be the ones who never end up needing an emergency review after an incident, because the gaps get caught during the routine one.
 
@@ -63,16 +63,16 @@ None of this requires a security background. It requires treating security revie
 
 ### An AI-Native Founder in Action: VeenVault, Veendam
 
-Marieke Hendriks runs VeenVault, a booking and membership platform for local artisan workshops in and around Veendam — pottery classes, woodworking sessions, seasonal markets. She built the entire system in Bolt over several weeks, proud of how quickly a functioning member portal came together. What she didn't realize was that the admin dashboard, used to manage bookings and view customer payment history, had no authentication check guarding it at all. Anyone who guessed the URL pattern could view every customer's name, email, and booking history without logging in.
+Marieke Hendriks runs VeenVault, a booking and membership platform for local artisan workshops in and around Veendam - pottery classes, woodworking sessions, seasonal markets. She built the entire system in Bolt over several weeks, proud of how quickly a functioning member portal came together. What she didn't realize was that the admin dashboard, used to manage bookings and view customer payment history, had no authentication check guarding it at all. Anyone who guessed the URL pattern could view every customer's name, email, and booking history without logging in.
 
 LaunchStudio's engineers found the exposed route during a routine security review, added proper authentication middleware and role-based access control, and audited every other admin-facing endpoint in the app for the same pattern. Two more were found and closed the same day.
 
 **Result:** All customer data now sits behind verified authentication, with the exposure closed before any customer or regulator noticed.
 
 > *"I had no idea 'it works when I click it' and 'it's secure' were two completely different questions. LaunchStudio answered the second one for me."*
-> — **Marieke Hendriks, Founder, VeenVault (Veendam)**
+> - **Marieke Hendriks, Founder, VeenVault (Veendam)**
 
-**Cost & Timeline:** €780 (full authentication audit, access control fixes, endpoint hardening) — completed in 5 business days.
+**Cost & Timeline:** €780 (full authentication audit, access control fixes, endpoint hardening) - completed in 5 business days.
 
 ---
 
@@ -80,7 +80,7 @@ LaunchStudio's engineers found the exposed route during a routine security revie
 
 ### Can't AI coding tools just fix their own security issues if I ask them to?
 
-Sometimes, for well-known patterns. But AI tools don't independently test whether a fix actually works under real attack conditions, and they often miss issues specific to your app's own logic — which is why a human review still matters.
+Sometimes, for well-known patterns. But AI tools don't independently test whether a fix actually works under real attack conditions, and they often miss issues specific to your app's own logic - which is why a human review still matters.
 
 ### Does LaunchStudio replace the AI tool I used to build my app?
 

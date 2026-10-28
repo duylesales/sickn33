@@ -34,7 +34,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Security is an unusually honest domain for machine learning, because the adversary responds. Models that would work indefinitely in a static world degrade as attackers adapt, base rates are extreme, and the cost of a false positive is paid by a human analyst at two in the morning. AI jobs in cybersecurity are therefore less about model sophistication than about operational judgement — and demand across Europe has risen steadily as regulation has raised expectations.
+Security is an unusually honest domain for machine learning, because the adversary responds. Models that would work indefinitely in a static world degrade as attackers adapt, base rates are extreme, and the cost of a false positive is paid by a human analyst at two in the morning. AI jobs in cybersecurity are therefore less about model sophistication than about operational judgement - and demand across Europe has risen steadily as regulation has raised expectations.
 
 ## Where AI Jobs in Cybersecurity Sit
 
@@ -68,11 +68,11 @@ Security is an unusually honest domain for machine learning, because the adversa
 
 Candidates who can reason numerically about detection economics stand out immediately, because the arithmetic is unforgiving and many proposals ignore it.
 
-Consider an organisation generating ten million security-relevant events a day, with perhaps one genuine intrusion attempt worth investigating in a week. A detector with a false positive rate of one in ten thousand — which sounds excellent — produces a thousand alerts a day. No team can investigate that.
+Consider an organisation generating ten million security-relevant events a day, with perhaps one genuine intrusion attempt worth investigating in a week. A detector with a false positive rate of one in ten thousand - which sounds excellent - produces a thousand alerts a day. No team can investigate that.
 
 The consequences shape everything. Precision at the operating point matters far more than area under a curve. Alert budgets should be set by analyst capacity and worked backwards into thresholds. Layered approaches, where cheap filters reduce volume before expensive analysis, are standard. And correlation matters: ten weak signals on one host over an hour are far more informative than one weak signal anywhere.
 
-This is also why pure anomaly detection disappoints so often. Networks are full of unusual but benign activity — a new deployment, an unfamiliar administrator, a scheduled job that ran late. Unusual is not malicious, and systems that conflate the two waste the scarcest resource in the organisation.
+This is also why pure anomaly detection disappoints so often. Networks are full of unusual but benign activity - a new deployment, an unfamiliar administrator, a scheduled job that ran late. Unusual is not malicious, and systems that conflate the two waste the scarcest resource in the organisation.
 
 The professional framing is not "find anomalies" but "produce a ranked queue an analyst can work through in a shift".
 
@@ -110,7 +110,7 @@ The ethical dimension is real. False positives lock legitimate users out of acco
 
 Language models have found genuine, if unglamorous, uses in security work, and they are creating roles that mix AI engineering with the security domain.
 
-Alert enrichment and summarisation is the clearest case: assembling context about an alert — asset, owner, recent activity, related tickets, relevant intelligence — and producing a readable summary saves analysts the gathering that consumes much of their shift.
+Alert enrichment and summarisation is the clearest case: assembling context about an alert - asset, owner, recent activity, related tickets, relevant intelligence - and producing a readable summary saves analysts the gathering that consumes much of their shift.
 
 Threat intelligence processing benefits similarly: reports arrive as prose, and extracting indicators, techniques and entities at scale is a well-matched task.
 
@@ -132,7 +132,7 @@ Regulatory drivers are aligned here. NIS2 raises security obligations for essent
 
 ## Who Hires and What to Expect
 
-**Enterprises with internal security operations** — banks, telecoms, energy, health, retail and manufacturing — employ detection engineers and security data scientists directly.
+**Enterprises with internal security operations** - banks, telecoms, energy, health, retail and manufacturing - employ detection engineers and security data scientists directly.
 
 **Managed security service providers** monitor many clients, which gives breadth, volume and exposure to varied environments. A common entry point and a demanding one.
 
@@ -162,7 +162,7 @@ If you come from security rather than data, emphasise the domain knowledge and d
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Security-related data roles are advertised under many titles — detection engineer, security data scientist, fraud analyst, threat researcher, abuse prevention engineer — so read descriptions rather than filtering on titles. The vacancy text also tells you whether a role is operational, with on-call and shift patterns, or product-oriented, which is a large difference in daily life.
+Security-related data roles are advertised under many titles - detection engineer, security data scientist, fraud analyst, threat researcher, abuse prevention engineer - so read descriptions rather than filtering on titles. The vacancy text also tells you whether a role is operational, with on-call and shift patterns, or product-oriented, which is a large difference in daily life.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Mollie, Accenture, Cegeka and VINCI Energies among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

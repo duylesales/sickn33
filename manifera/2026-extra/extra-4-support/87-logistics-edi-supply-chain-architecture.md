@@ -48,7 +48,7 @@ This is a specific instance of a broader pattern worth naming directly across se
 
 ## Why EDI Capability Often Determines Which Trading Partner Tier a Platform Can Actually Reach
 
-A related, practical business consideration worth naming directly: within most supply chain and retail sectors, the largest, most established, and often most valuable potential trading partners — the specific companies with the greatest existing purchase volume and business stability a logistics platform would most want to partner with — are also typically the trading partners with the most deeply entrenched EDI infrastructure and the least individual flexibility to accommodate a vendor's preferred alternative integration method, given their own scale and the number of other vendor relationships they need to manage consistently. This means EDI capability isn't simply a technical checkbox affecting some generic slice of potential trading partners uniformly — it specifically and disproportionately gates access to the largest, most valuable tier of potential trading partnerships a logistics platform is likely to pursue as it matures and grows.
+A related, practical business consideration worth naming directly: within most supply chain and retail sectors, the largest, most established, and often most valuable potential trading partners - the specific companies with the greatest existing purchase volume and business stability a logistics platform would most want to partner with - are also typically the trading partners with the most deeply entrenched EDI infrastructure and the least individual flexibility to accommodate a vendor's preferred alternative integration method, given their own scale and the number of other vendor relationships they need to manage consistently. This means EDI capability isn't simply a technical checkbox affecting some generic slice of potential trading partners uniformly - it specifically and disproportionately gates access to the largest, most valuable tier of potential trading partnerships a logistics platform is likely to pursue as it matures and grows.
 
 This is a specific, practical reason a logistics technology company with genuine ambition toward serving larger, more established trading partners specifically should treat EDI capability as a strategic market access requirement tied directly to its most valuable growth opportunities, not merely a generic integration nice-to-have relevant only to smaller, less consequential trading partner relationships.
 
@@ -66,7 +66,7 @@ Logistyka Cyfrowa Bydgoszcz, a Bydgoszcz-based logistics technology startup, had
 Manifera's Amsterdam team built genuine EDI transaction set support into the platform, including trading-partner-specific mapping capability, while retaining the existing modern API infrastructure for partners preferring that integration method, positioning the platform to serve both integration approaches within the same underlying system.
 
 > *"We'd assumed our API-first approach was simply the modern, better way to integrate, and didn't realize how much of our actual target market was going to need EDI regardless of our own preference. Losing that first big retail partnership almost happened before we understood we needed to meet trading partners where they actually were, not where we wished they were."*
-> — **CTO, Logistyka Cyfrowa Bydgoszcz**
+> - **CTO, Logistyka Cyfrowa Bydgoszcz**
 
 Logistyka Cyfrowa Bydgoszcz completed its retail partnership following the EDI capability build, and the company has since onboarded several additional established trading partners that specifically required EDI integration, directly expanding its addressable market beyond what its original API-only architecture would have supported.
 
@@ -81,7 +81,7 @@ Logistyka Cyfrowa Bydgoszcz completed its retail partnership following the EDI c
 
 ## Scoping Your Own Logistics Platform's Integration Architecture
 
-Before building a logistics or supply chain platform's partner integration layer, build genuine EDI capability alongside modern API support — EDI remains dominant across much of real-world trading partner infrastructure, and an API-only approach constrains realistic market access. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely dual-standard logistics integration platform.
+Before building a logistics or supply chain platform's partner integration layer, build genuine EDI capability alongside modern API support - EDI remains dominant across much of real-world trading partner infrastructure, and an API-only approach constrains realistic market access. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely dual-standard logistics integration platform.
 
 ## Frequently Asked Questions
 
@@ -99,11 +99,11 @@ Individual trading partners frequently have specific implementation guidelines a
 
 ### (Scenario: product lead planning integration strategy) Should a logistics platform choose EDI or modern API integration exclusively?
 
-Neither exclusively — a genuinely capable platform supports both, since trading partners vary in their own technology maturity and established processes, and serving both preferences maximizes realistic market access.
+Neither exclusively - a genuinely capable platform supports both, since trading partners vary in their own technology maturity and established processes, and serving both preferences maximizes realistic market access.
 
 ### (Scenario: CTO evaluating a logistics technology development team) What should I ask a development team about their EDI integration experience?
 
-Ask specifically which EDI transaction sets they've implemented and how they handle trading-partner-specific mapping variations — genuine experience produces a specific, technical answer about real EDI implementation depth.
+Ask specifically which EDI transaction sets they've implemented and how they handle trading-partner-specific mapping variations - genuine experience produces a specific, technical answer about real EDI implementation depth.
 
 <script type="application/ld+json">
 {
@@ -113,7 +113,7 @@ Ask specifically which EDI transaction sets they've implemented and how they han
     { "@type": "Question", "name": "(Scenario: CTO scoping a logistics platform) Why does EDI still matter for a logistics platform's integration architecture despite being an older technology?", "acceptedAnswer": { "@type": "Answer", "text": "EDI remains dominant across much of real-world supply chain operations, especially for established trading partners." } },
     { "@type": "Question", "name": "(Scenario: engineering lead assuming API-first is sufficient) What's the actual risk of building a logistics platform's integration layer around a modern API approach exclusively?", "acceptedAnswer": { "@type": "Answer", "text": "Many established trading partners operate on EDI, constraining the platform's realistic addressable market if API-only." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand EDI implementation complexity) Why does genuine EDI capability require more than basic transaction format support?", "acceptedAnswer": { "@type": "Answer", "text": "Trading partners have specific implementation guidelines and variations, requiring partner-specific mapping capability." } },
-    { "@type": "Question", "name": "(Scenario: product lead planning integration strategy) Should a logistics platform choose EDI or modern API integration exclusively?", "acceptedAnswer": { "@type": "Answer", "text": "Neither exclusively — supporting both maximizes realistic market access across varying trading partner technology maturity." } },
+    { "@type": "Question", "name": "(Scenario: product lead planning integration strategy) Should a logistics platform choose EDI or modern API integration exclusively?", "acceptedAnswer": { "@type": "Answer", "text": "Neither exclusively - supporting both maximizes realistic market access across varying trading partner technology maturity." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating a logistics technology development team) What should I ask a development team about their EDI integration experience?", "acceptedAnswer": { "@type": "Answer", "text": "Ask which EDI transaction sets they've implemented and how they handle trading-partner-specific mapping variations." } }
   ]
 }

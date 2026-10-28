@@ -1,4 +1,4 @@
-Six weeks into a "cloud-native transformation," the vendor was still debugging basic pod scheduling — issues real Kubernetes migration experience would've caught in planning. ⚙️🚩
+Six weeks into a "cloud-native transformation," the vendor was still debugging basic pod scheduling - issues real Kubernetes migration experience would've caught in planning. ⚙️🚩
 
 **The Pain Points:**
 ❌ **Logos ≠ Depth:** General DevOps competence and battle-tested Kubernetes migration experience are not the same category.

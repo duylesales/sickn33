@@ -21,11 +21,11 @@ Content Format: Policy Brief
 }
 </script>
 
-Een gemeente die aan haar inwoners wil laten zien dat er lokaal interessant werk is, heeft vaak weinig meer dan een generiek verwijzing naar "de vacaturebank" of een lijst van bedrijven op een bedrijventerrein. Dat is geen concreet instrument — het vertelt een inwoner niet welke specifieke rol op welke specifieke afstand van hun huis openstaat.
+Een gemeente die aan haar inwoners wil laten zien dat er lokaal interessant werk is, heeft vaak weinig meer dan een generiek verwijzing naar "de vacaturebank" of een lijst van bedrijven op een bedrijventerrein. Dat is geen concreet instrument - het vertelt een inwoner niet welke specifieke rol op welke specifieke afstand van hun huis openstaat.
 
 ## Waarom dit relevant is voor gemeentelijk beleid
 
-Gemeenten met een technologiesector of kenniscluster — vaak met AI-, ML- of datawerk erin — willen laten zien dat die werkgelegenheid er is, zowel richting inwoners als richting potentiële vestigers. Een adresniveau-vacaturebank maakt dat concreet: niet "er is werk in onze gemeente" als abstracte bewering, maar een direct te checken lijst van openstaande rollen met exacte afstand.
+Gemeenten met een technologiesector of kenniscluster - vaak met AI-, ML- of datawerk erin - willen laten zien dat die werkgelegenheid er is, zowel richting inwoners als richting potentiële vestigers. Een adresniveau-vacaturebank maakt dat concreet: niet "er is werk in onze gemeente" als abstracte bewering, maar een direct te checken lijst van openstaande rollen met exacte afstand.
 
 ## Hoe dit past bij bestaand gemeentelijk werk
 
@@ -33,7 +33,7 @@ Gemeenten met een technologiesector of kenniscluster — vaak met AI-, ML- of da
 
 **Ondersteuning van werkgevers op bedrijventerreinen.** Als de gemeente al contact onderhoudt met lokale werkgevers voor vestigingsbeleid of vergunningen, is het aanmoedigen van een gratis eerste vacatureplaatsing een kleine, logische toevoeging.
 
-**Onderbouwing van vestigingsbeleid.** Een zichtbare lijst van lokale AI/ML/Data-vacatures is een concreet, verifieerbaar signaal richting bedrijven die overwegen zich in de gemeente te vestigen — sterker dan een algemene bewering over "een aantrekkelijk vestigingsklimaat".
+**Onderbouwing van vestigingsbeleid.** Een zichtbare lijst van lokale AI/ML/Data-vacatures is een concreet, verifieerbaar signaal richting bedrijven die overwegen zich in de gemeente te vestigen - sterker dan een algemene bewering over "een aantrekkelijk vestigingsklimaat".
 
 ## Wat dit niet is
 
@@ -57,14 +57,14 @@ Neem contact op via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) om te bespre
 
 | Aspect | "Er is hier veel werkgelegenheid" | Zichtbare, adresniveau vacaturelijst |
 |---|---|---|
-| Verifieerbaarheid door een inwoner | Laag | Hoog — direct te checken |
+| Verifieerbaarheid door een inwoner | Laag | Hoog - direct te checken |
 | Bruikbaar in een rapportage | Beperkt, moeilijk te onderbouwen | Concreet datapunt |
-| Kosten om te onderhouden | Geen, maar ook geen bewijskracht | Minimaal — bestaat al elders |
+| Kosten om te onderhouden | Geen, maar ook geen bewijskracht | Minimaal - bestaat al elders |
 | Geloofwaardigheid richting pers/bestuur | Wisselend | Hoger door verifieerbaarheid |
 
 ## Waarom dit ook de relatie met lokale werkgevers kan versterken
 
-Een gemeente die actief attendeert op de mogelijkheid om gratis een vacature te plaatsen, biedt lokale werkgevers een concreet, kosteloos voordeel — iets tastbaars in een relatie die anders vaak beperkt blijft tot vergunningen en regelgeving. Dit kleine gebaar kan de toon van het bredere contact tussen gemeente en ondernemer merkbaar verbeteren, simpelweg omdat het voor de eerste keer iets is wat de gemeente de ondernemer aanreikt in plaats van andersom.
+Een gemeente die actief attendeert op de mogelijkheid om gratis een vacature te plaatsen, biedt lokale werkgevers een concreet, kosteloos voordeel - iets tastbaars in een relatie die anders vaak beperkt blijft tot vergunningen en regelgeving. Dit kleine gebaar kan de toon van het bredere contact tussen gemeente en ondernemer merkbaar verbeteren, simpelweg omdat het voor de eerste keer iets is wat de gemeente de ondernemer aanreikt in plaats van andersom.
 
 ## Een concreet scenario van hoe dit een bestaand gesprek verrijkt
 
@@ -76,15 +76,15 @@ Gemeenten nemen soms aan dat dit soort informatie het beste via een aparte, nieu
 
 ## Waarom dit ook de perceptie van de gemeente bij lokale ondernemers kan verbeteren
 
-Een gemeente die vooral wordt geassocieerd met regelgeving, vergunningen en handhaving, krijgt met dit soort kleine, kosteloze tips een kans om zich ook te positioneren als een partner die actief meedenkt over de groei van een bedrijf — een relatief goedkope manier om de toon van de relatie tussen gemeente en ondernemer merkbaar te verbeteren.
+Een gemeente die vooral wordt geassocieerd met regelgeving, vergunningen en handhaving, krijgt met dit soort kleine, kosteloze tips een kans om zich ook te positioneren als een partner die actief meedenkt over de groei van een bedrijf - een relatief goedkope manier om de toon van de relatie tussen gemeente en ondernemer merkbaar te verbeteren.
 
 ## Hoe je dit kunt meten zonder een ingewikkeld nieuw systeem op te zetten
 
-Een gemeente hoeft geen uitgebreid nieuw monitoringsysteem op te zetten om te zien of deze aanpak iets oplevert — een simpele, periodieke check (bijvoorbeeld elk kwartaal) van hoeveel bedrijven daadwerkelijk gebruik hebben gemaakt van de gratis eerste vacatureplaatsing na een gemeentelijke vermelding, volstaat als eerste indicator. Dit hoeft geen perfecte attributie te zijn — zelfs een ruwe schatting geeft een gemeente voldoende basis om te beslissen of de aanpak de moeite waard is om voort te zetten of uit te breiden.
+Een gemeente hoeft geen uitgebreid nieuw monitoringsysteem op te zetten om te zien of deze aanpak iets oplevert - een simpele, periodieke check (bijvoorbeeld elk kwartaal) van hoeveel bedrijven daadwerkelijk gebruik hebben gemaakt van de gratis eerste vacatureplaatsing na een gemeentelijke vermelding, volstaat als eerste indicator. Dit hoeft geen perfecte attributie te zijn - zelfs een ruwe schatting geeft een gemeente voldoende basis om te beslissen of de aanpak de moeite waard is om voort te zetten of uit te breiden.
 
 ## Waarom dit initiatief zich goed leent voor samenwerking tussen buurgemeenten
 
-Gemeenten die dicht bij elkaar liggen, kunnen deze aanpak gezamenlijk oppakken in plaats van elk apart het wiel opnieuw uit te vinden — een gedeelde communicatie-inspanning richting lokale werkgevers in een hele regio, in plaats van gemeente voor gemeente, bespaart tijd en zorgt voor een consistentere boodschap richting bedrijven die vaak toch al over gemeentegrenzen heen opereren.
+Gemeenten die dicht bij elkaar liggen, kunnen deze aanpak gezamenlijk oppakken in plaats van elk apart het wiel opnieuw uit te vinden - een gedeelde communicatie-inspanning richting lokale werkgevers in een hele regio, in plaats van gemeente voor gemeente, bespaart tijd en zorgt voor een consistentere boodschap richting bedrijven die vaak toch al over gemeentegrenzen heen opereren.
 
 ## Veelgestelde vragen
 
@@ -92,16 +92,16 @@ Gemeenten die dicht bij elkaar liggen, kunnen deze aanpak gezamenlijk oppakken i
 Een adresniveau-vacaturebank toont exacte afstand tot huis voor specifiek AI/ML/Data-werk, wat een inwoner direct kan checken, in plaats van een algemene bewering dat er lokaal werk is.
 
 ### (Scenario: gemeente die denkt dat dit een groot project vergt) Is dit een groot beleidsproject, of iets kleiners?
-Iets kleiners — het is een concrete toevoeging aan bestaande communicatie richting inwoners of bestaande werkgeversrelaties, geen nieuw beleidsproject op zichzelf.
+Iets kleiners - het is een concrete toevoeging aan bestaande communicatie richting inwoners of bestaande werkgeversrelaties, geen nieuw beleidsproject op zichzelf.
 
 ### (Scenario: gemeente die dit wil gebruiken voor vestigingsbeleid) Kan dit helpen bij het aantrekken van nieuwe bedrijven naar de gemeente?
-Het kan een concreet, verifieerbaar signaal zijn over bestaande lokale werkgelegenheid, wat sterker overkomt dan een algemene bewering over het vestigingsklimaat — maar het vervangt geen breder vestigingsbeleid.
+Het kan een concreet, verifieerbaar signaal zijn over bestaande lokale werkgelegenheid, wat sterker overkomt dan een algemene bewering over het vestigingsklimaat - maar het vervangt geen breder vestigingsbeleid.
 
 ### (Scenario: gemeente die twijfelt of dit werkgeversrelaties dupliceert) Overlapt dit met contact dat we al hebben met lokale werkgevers?
-Niet als duplicatie — het is een kleine, logische toevoeging aan bestaand contact, bijvoorbeeld via vestigingsbeleid of vergunningen, waarbij je werkgevers aanmoedigt vacatures zichtbaar te maken.
+Niet als duplicatie - het is een kleine, logische toevoeging aan bestaand contact, bijvoorbeeld via vestigingsbeleid of vergunningen, waarbij je werkgevers aanmoedigt vacatures zichtbaar te maken.
 
 ### (Scenario: gemeente die wil weten of dit een structureel tekort oplost) Lost dit een structureel tekort aan werkgelegenheid op als dat er is?
-Nee — het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat. Een structureel tekort vergt bredere economische ontwikkelingsmaatregelen.
+Nee - het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat. Een structureel tekort vergt bredere economische ontwikkelingsmaatregelen.
 
 <script type="application/ld+json">
 {
@@ -109,10 +109,10 @@ Nee — het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid di
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Wat voegt dit toe ten opzichte van een generieke verwijzing naar \"de vacaturebank\"?", "acceptedAnswer": {"@type": "Answer", "text": "Een adresniveau-vacaturebank toont exacte afstand tot huis voor specifiek AI/ML/Data-werk, direct te checken door een inwoner."}},
-    {"@type": "Question", "name": "Is dit een groot beleidsproject, of iets kleiners?", "acceptedAnswer": {"@type": "Answer", "text": "Iets kleiners — een concrete toevoeging aan bestaande communicatie of werkgeversrelaties."}},
+    {"@type": "Question", "name": "Is dit een groot beleidsproject, of iets kleiners?", "acceptedAnswer": {"@type": "Answer", "text": "Iets kleiners - een concrete toevoeging aan bestaande communicatie of werkgeversrelaties."}},
     {"@type": "Question", "name": "Kan dit helpen bij het aantrekken van nieuwe bedrijven naar de gemeente?", "acceptedAnswer": {"@type": "Answer", "text": "Het kan een concreet signaal zijn over bestaande lokale werkgelegenheid, maar vervangt geen breder vestigingsbeleid."}},
-    {"@type": "Question", "name": "Overlapt dit met contact dat we al hebben met lokale werkgevers?", "acceptedAnswer": {"@type": "Answer", "text": "Niet als duplicatie — het is een kleine, logische toevoeging aan bestaand contact."}},
-    {"@type": "Question", "name": "Lost dit een structureel tekort aan werkgelegenheid op als dat er is?", "acceptedAnswer": {"@type": "Answer", "text": "Nee — het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat."}}
+    {"@type": "Question", "name": "Overlapt dit met contact dat we al hebben met lokale werkgevers?", "acceptedAnswer": {"@type": "Answer", "text": "Niet als duplicatie - het is een kleine, logische toevoeging aan bestaand contact."}},
+    {"@type": "Question", "name": "Lost dit een structureel tekort aan werkgelegenheid op als dat er is?", "acceptedAnswer": {"@type": "Answer", "text": "Nee - het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat."}}
   ]
 }
 </script>

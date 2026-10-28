@@ -1,6 +1,6 @@
 🚨 "Het is in principe al helemaal af, toch? We hoeven alleen nog de knop om te zetten." Femke's klant hield vol, totdat bleek dat het rechtenbeheer van de database vanaf nul moest worden opgebouwd. 😅
 
-De overtuiging van de klant is geen naïviteit — het is een logische reactie op de AI-ervaring: 🎭
+De overtuiging van de klant is geen naïviteit - het is een logische reactie op de AI-ervaring: 🎭
 
 ❌ AI-tools laten de zichtbare laag perfect renderen, maar tonen niets van wat er onder de motorkap ontbreekt
 ❌ Vage dooddoeners als "het heeft hardening nodig" geven de klant geen enkel houvast om zijn beeld bij te stellen
@@ -12,7 +12,7 @@ De overtuiging van de klant is geen naïviteit — het is een logische reactie o
 ✅ Toon hard bewijs uit een scoping pass met screenshots, in plaats van te beweren dat er meer werk nodig is
 ✅ Manage verwachtingen vooraf schriftelijk in de intake, zodat de uitkomst bevestigt in plaats van overvalt
 
-Achter **LaunchStudio** staat Manifera's team van 120+ engineers — 160+ projecten is waarom we weten hoe dit gesprek gevoerd moet worden. 🔍
+Achter **LaunchStudio** staat Manifera's team van 120+ engineers - 160+ projecten is waarom we weten hoe dit gesprek gevoerd moet worden. 🔍
 
 Haar resultaat: een beknopt analyserapport met twee screenshots zorgde dat de oprichter de herziene scope binnen het uur zonder discussie goedkeurde. 🚀
 

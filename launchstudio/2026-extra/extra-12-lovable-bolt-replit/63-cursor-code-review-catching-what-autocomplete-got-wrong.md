@@ -30,7 +30,7 @@ Five categories account for most of what gets through.
 
 **Subtly wrong logic.** An off-by-one, a boundary excluded that should be included, a condition inverted in a branch nobody exercises. The code reads correctly; it computes something slightly different from what you wanted.
 
-**Invented interfaces.** A method that does not exist on that object, a parameter the library does not accept, a field the API does not return. Usually caught immediately by a compiler or a test, and not always — a field read from a response that is simply undefined produces a page displaying nothing rather than an error.
+**Invented interfaces.** A method that does not exist on that object, a parameter the library does not accept, a field the API does not return. Usually caught immediately by a compiler or a test, and not always - a field read from a response that is simply undefined produces a page displaying nothing rather than an error.
 
 **Correct for the happy path only.** No handling of the empty case, the failure, the missing permission or the timeout. This is the most common category by volume.
 
@@ -50,7 +50,7 @@ So: make one change at a time, look at the diff before accepting, and be suspici
 
 If you have time for exactly one question per change, ask this one: what happens when there is nothing?
 
-An empty list, a missing record, a null field, a user with no organisation, a first-time account. Generated code is written against the case where data exists, and the failure when it does not ranges from a blank screen to an exception on a customer's first visit — which is the worst possible moment.
+An empty list, a missing record, a null field, a user with no organisation, a first-time account. Generated code is written against the case where data exists, and the failure when it does not ranges from a blank screen to an exception on a customer's first visit - which is the worst possible moment.
 
 The second question, if there is time: what happens when it fails? The request errors, the service is slow, the permission is denied. Generated code catches errors and frequently does nothing useful with them.
 
@@ -60,7 +60,7 @@ Not every change deserves the same attention, and the honest allocation for a fo
 
 Anything touching money. Anything touching permissions or authorisation. Anything that deletes or overwrites. Anything that sends something to a customer. Anything that changes the database schema.
 
-Those five categories are where a mistake is expensive or irreversible. Everything else — a layout change, a new display field, a copy edit — can be verified by looking at the product.
+Those five categories are where a mistake is expensive or irreversible. Everything else - a layout change, a new display field, a copy edit - can be verified by looking at the product.
 
 This is also the allocation to give an assistant when you ask it to review: point it at the change and ask specifically about authorisation, about the failure paths, about whether this matches how the rest of the codebase does it. Open questions produce generic answers; specific questions produce useful ones.
 
@@ -68,7 +68,7 @@ This is also the allocation to give an assistant when you ask it to review: poin
 
 Asking a model to review code is genuinely useful and has a specific limitation: it is good at finding what is present and wrong, and poor at noticing what is absent.
 
-So it will tell you that a variable is unused or a condition is redundant. It will less reliably tell you that no endpoint in this file checks who is asking, because nothing about the code looks incorrect — the absence is only visible against an expectation the model was not given.
+So it will tell you that a variable is unused or a condition is redundant. It will less reliably tell you that no endpoint in this file checks who is asking, because nothing about the code looks incorrect - the absence is only visible against an expectation the model was not given.
 
 The productive pattern is to supply the expectation. "Does this endpoint verify that the requesting user belongs to the organisation that owns this record?" is a question with a checkable answer. "Review this file" is a request for an opinion.
 
@@ -80,7 +80,7 @@ A significant share of founders using these tools cannot read the code with conf
 
 **Review the behaviour instead, systematically.** After a change, work through a written list: the thing that changed, the thing next to it, and the main flow of the product end to end. Written down, done the same way each time, this catches most functional regressions.
 
-**Ask the assistant to explain the change in plain language**, then check whether the explanation matches what you asked for. A description that mentions files or behaviour you did not expect is the signal — you do not need to read the code to notice that the answer includes something you never requested.
+**Ask the assistant to explain the change in plain language**, then check whether the explanation matches what you asked for. A description that mentions files or behaviour you did not expect is the signal - you do not need to read the code to notice that the answer includes something you never requested.
 
 **Ask specifically about the five categories.** Did this change touch anything to do with permissions? Does anything here handle money? Did this modify the database structure? These are questions with yes or no answers, and a yes means getting a second opinion before deploying.
 
@@ -92,7 +92,7 @@ And use branches. Work that can be discarded is work you do not have to be certa
 
 Everything above becomes easier or impossible depending on one variable: how much changed at once.
 
-A change touching two files can be read in a minute. A change touching twenty cannot be read meaningfully by anybody, and what happens in practice is that it is skimmed and accepted — which is the same as not reviewing it, with the added cost of believing you did.
+A change touching two files can be read in a minute. A change touching twenty cannot be read meaningfully by anybody, and what happens in practice is that it is skimmed and accepted - which is the same as not reviewing it, with the added cost of believing you did.
 
 Three habits keep changes reviewable.
 
@@ -108,7 +108,7 @@ This is ordinary engineering discipline, and it matters more here than usual for
 
 For a founder working alone this is a habit rather than a project: one change at a time with the diff read before accepting, changes larger than the request treated as suspicious, the empty case and the failure case asked of every change, hard review reserved for money, permissions, deletion, outbound communication and schema, a written checklist of the five failure categories, specific rather than open questions when asking an assistant to review, and version control so anything unclear can be reverted rather than reasoned about.
 
-LaunchStudio does this as a service for founders who want a second reader on the changes that matter. The engineers are Manifera's — eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this as a service for founders who want a second reader on the changes that matter. The engineers are Manifera's - eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Send us a week of changes](https://launchstudio.eu/en/#contact) and we will tell you which ones we would have stopped.
 
@@ -120,18 +120,18 @@ Dennis Vermaat built Sleutelbeheer in Cursor: key and access management for prop
 
 He asked for a change to how expired key assignments were handled. The resulting code was clean, well-named and read correctly. He accepted it without looking at the diff carefully, because the feature worked when he tested it.
 
-The change had also modified an unrelated condition in the same file, inverting the check that determined whether a key holder had permission to view a building's key list. In the path he tested — an administrator viewing their own organisation — the result was identical. In the path he did not test, a contractor with limited access could now see every key holder for every building the organisation managed, including private addresses.
+The change had also modified an unrelated condition in the same file, inverting the check that determined whether a key holder had permission to view a building's key list. In the path he tested - an administrator viewing their own organisation - the result was identical. In the path he did not test, a contractor with limited access could now see every key holder for every building the organisation managed, including private addresses.
 
 It was found seven weeks later during a routine review, with no evidence anyone had used it.
 
-Two business days: the condition corrected and a test written asserting the permission for both roles; a review of every change made in that period, which found two further unrequested modifications — a default retention value changed and an import removed that had silently disabled a validation; a working practice adopted of one change at a time with the diff read before accepting; a written checklist covering the five failure categories; automated tests added for authorisation across the twelve endpoints that expose key data, since the incident was a permission change that nothing checked; and version control discipline tightened so each session's work is a separate branch that can be discarded.
+Two business days: the condition corrected and a test written asserting the permission for both roles; a review of every change made in that period, which found two further unrequested modifications - a default retention value changed and an import removed that had silently disabled a validation; a working practice adopted of one change at a time with the diff read before accepting; a written checklist covering the five failure categories; automated tests added for authorisation across the twelve endpoints that expose key data, since the incident was a permission change that nothing checked; and version control discipline tightened so each session's work is a separate branch that can be discarded.
 
 **Result:** no evidence of access by the affected contractor accounts, confirmed from logs. Dennis's assessment is that the practice change mattered more than the fix: in the following year, reading diffs caught four further unrequested modifications, two of which would have been consequential.
 
 > *"I asked it to change how expiry worked. It also inverted a permission check in the same file, and the version I tested behaved identically. The diff would have taken me thirty seconds."*
-> — **Dennis Vermaat, Founder, Sleutelbeheer (Dordrecht)**
+> - **Dennis Vermaat, Founder, Sleutelbeheer (Dordrecht)**
 
-**Cost & Timeline:** €2,300 (condition correction with tests, retrospective review of seven weeks of changes, authorisation test suite across twelve endpoints, review practice and checklist, branch discipline) — completed in 2 business days.
+**Cost & Timeline:** €2,300 (condition correction with tests, retrospective review of seven weeks of changes, authorisation test suite across twelve endpoints, review practice and checklist, branch discipline) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -145,7 +145,7 @@ Read the diff rather than the finished file, one change at a time. Unrequested m
 
 ### What should I check on every change?
 
-What happens when there is nothing — an empty list, a missing record, a first-time user — and what happens when it fails. Generated code is written for the case where data exists and requests succeed.
+What happens when there is nothing - an empty list, a missing record, a first-time user - and what happens when it fails. Generated code is written for the case where data exists and requests succeed.
 
 ### Which changes deserve real scrutiny?
 
@@ -153,7 +153,7 @@ Money, permissions, deletion, anything sent to a customer, and schema changes. E
 
 ### Can I ask the assistant to review its own code?
 
-Usefully, if you ask specific questions. It finds what is present and wrong, and misses what is absent — so ask "does this check authorisation" rather than "review this".
+Usefully, if you ask specific questions. It finds what is present and wrong, and misses what is absent - so ask "does this check authorisation" rather than "review this".
 
 <script type="application/ld+json">
 {
@@ -181,7 +181,7 @@ Usefully, if you ask specific questions. It finds what is present and wrong, and
       "name": "What should be checked on every AI-written change?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The empty case and the failure case — generated code is written for data that exists and requests that succeed."
+        "text": "The empty case and the failure case - generated code is written for data that exists and requests that succeed."
       }
     },
     {
@@ -189,7 +189,7 @@ Usefully, if you ask specific questions. It finds what is present and wrong, and
       "name": "Which changes deserve close review?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Money, permissions, deletion, outbound communication and schema changes — where mistakes are expensive or irreversible."
+        "text": "Money, permissions, deletion, outbound communication and schema changes - where mistakes are expensive or irreversible."
       }
     },
     {

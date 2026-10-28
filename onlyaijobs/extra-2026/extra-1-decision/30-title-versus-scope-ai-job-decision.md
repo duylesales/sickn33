@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two offers, and the comparison is uncomfortable in a specific way. One makes you Lead Data Scientist at a company where the data team is three people and nothing reaches production. The other keeps you as a plain data scientist at an organisation with real systems, real engineering practice and someone senior you would learn from. Titles are supposed to describe scope, but in AI and data work they describe it badly — the same words mean wildly different things at two employers in the same city. That inconsistency is what makes this decision harder than it looks, and also what makes optimising for the title riskier than most people assume.
+Two offers, and the comparison is uncomfortable in a specific way. One makes you Lead Data Scientist at a company where the data team is three people and nothing reaches production. The other keeps you as a plain data scientist at an organisation with real systems, real engineering practice and someone senior you would learn from. Titles are supposed to describe scope, but in AI and data work they describe it badly - the same words mean wildly different things at two employers in the same city. That inconsistency is what makes this decision harder than it looks, and also what makes optimising for the title riskier than most people assume.
 
 ## Why AI Titles Mean So Little
 
@@ -96,19 +96,19 @@ The exception is when the title is the thing being tested. If you are moving tow
 
 A pattern worth recognising: an employer cannot match a salary, cannot offer strong technical work, and compensates with seniority in the job name. The role looks like progression on paper and is regression in practice.
 
-Three checks catch it. Ask who else is in the team and what their level is — a lead with nobody to lead is a signal. Ask what decisions the role owns: budget, architecture, hiring, priorities, or none of them. And ask what the previous holder of the title went on to do; if they left for a non-senior role elsewhere, the market has already priced this title.
+Three checks catch it. Ask who else is in the team and what their level is - a lead with nobody to lead is a signal. Ask what decisions the role owns: budget, architecture, hiring, priorities, or none of them. And ask what the previous holder of the title went on to do; if they left for a non-senior role elsewhere, the market has already priced this title.
 
 ## Negotiating Both
 
 The two are not always in conflict, and titles are among the easiest things to negotiate because they cost nothing.
 
-If the work is right but the title undersells it, ask for the title that matches the scope, particularly where the employer's own criteria support it. If a collective agreement or job evaluation system applies, ask which classification the role falls under and what would justify a higher one — that conversation is about structure rather than ego, and it is one HR can act on.
+If the work is right but the title undersells it, ask for the title that matches the scope, particularly where the employer's own criteria support it. If a collective agreement or job evaluation system applies, ask which classification the role falls under and what would justify a higher one - that conversation is about structure rather than ego, and it is one HR can act on.
 
 If the title is right but the scope is thin, ask what would make the role bigger: a project to own, a mandate over an area, involvement in hiring. Get the answer in writing if it is part of why you accepted.
 
 ## The Long View
 
-Over a career, most people are helped by titles occasionally and by evidence constantly. The uncomfortable version of this is that a mismatch — impressive title, thin experience — eventually catches up, because interviews are designed to find exactly that gap. The reverse mismatch, strong experience under a modest title, corrects itself at the next move with one negotiation.
+Over a career, most people are helped by titles occasionally and by evidence constantly. The uncomfortable version of this is that a mismatch - impressive title, thin experience - eventually catches up, because interviews are designed to find exactly that gap. The reverse mismatch, strong experience under a modest title, corrects itself at the next move with one negotiation.
 
 That asymmetry is the strongest argument for weighting scope when the two genuinely conflict.
 
@@ -126,7 +126,7 @@ Part of the confusion disappears once you accept that titles are sector dialects
 
 **Manufacturers and other non-tech employers** often avoid data titles altogether: process engineer, planner, quality specialist. The work can be excellent and the title says nothing about it.
 
-The practical consequence when you change sector is that your title may appear to move sideways or backwards while the work moves forward. That is a translation artefact, not a demotion — and explaining it in one sentence at your next interview is usually enough.
+The practical consequence when you change sector is that your title may appear to move sideways or backwards while the work moves forward. That is a translation artefact, not a demotion - and explaining it in one sentence at your next interview is usually enough.
 
 ## Real example
 
@@ -136,19 +136,19 @@ A data scientist with five years of experience receives two offers. The first is
 
 She asks both employers what the role owns. The first cannot name a decision she would control beyond her own work. The second describes ownership of two models in production, including monitoring and the quarterly review with the business.
 
-She takes the second, without the title. Eighteen months later she has three production models, has presented to a risk committee and has been through a full model validation cycle. When she moves again, it is to a genuine lead role at a larger organisation — one that asked detailed questions about model governance and never asked why her previous title had not said "lead".
+She takes the second, without the title. Eighteen months later she has three production models, has presented to a risk committee and has been through a full model validation cycle. When she moves again, it is to a genuine lead role at a larger organisation - one that asked detailed questions about model governance and never asked why her previous title had not said "lead".
 
 ## How to Describe a Modest Title Well
 
 If you choose scope over status, the practical problem is presentation: your CV says something plainer than what you did. Three habits close that gap without inflating anything.
 
-**Put scope next to the title.** "Data Scientist — owned two production models used daily by operations, including monitoring and quarterly review" says more than a senior label, and it is verifiable.
+**Put scope next to the title.** "Data Scientist - owned two production models used daily by operations, including monitoring and quarterly review" says more than a senior label, and it is verifiable.
 
 **Lead with the verbs that indicate ownership.** Designed, owned, deployed, maintained, decided, mentored. Interviewers read for these more than for adjectives.
 
 **Name the constraints you worked under.** Regulated environment, on-call responsibility, model governance, safety-critical validation. These signal seniority more reliably than any title, because juniors are rarely exposed to them.
 
-For recruiter searches, where keywords matter, a one-line professional summary can legitimately include the level you operate at — "senior-level data scientist working on production ML in a regulated environment" — without misstating your formal title.
+For recruiter searches, where keywords matter, a one-line professional summary can legitimately include the level you operate at - "senior-level data scientist working on production ML in a regulated environment" - without misstating your formal title.
 
 And when someone asks directly why your title does not say lead, answer in one sentence without defensiveness: the organisation used flat titles, here is what the role actually covered. Nobody who has hired in this market finds that surprising.
 
@@ -156,13 +156,13 @@ And when someone asks directly why your title does not say lead, answer in one s
 
 - AI job titles are inconsistent between employers, which makes them a weak signal of scope and an easy concession for employers to offer.
 - Titles genuinely help with search visibility, anchoring at the next employer, internal standing and management tracks.
-- Scope buys evidence, skill, options and recoverability — and evidence is what interviews actually test.
+- Scope buys evidence, skill, options and recoverability - and evidence is what interviews actually test.
 - Be alert to a senior title compensating for thin work; check team composition, owned decisions and where the previous holder went.
 - Negotiate both: ask for the title that matches the scope, or ask what would make a well-titled role genuinely bigger.
 
 ## Where to Start
 
-Compare the two offers on what you would be able to demonstrate in two years, not on what they would call you — then check how comparable employers near you describe the same level of work.
+Compare the two offers on what you would be able to demonstrate in two years, not on what they would call you - then check how comparable employers near you describe the same level of work.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -172,7 +172,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Usually better work, because interviews test evidence rather than titles. Prefer the title when you are being filtered out of searches or moving deliberately into management.
 
 ### (Scenario: candidate worried about recruiters) Do job titles affect whether recruiters find me?
-Yes — recruiters and applicant tracking systems filter on keywords, so an understated title can reduce how often you appear in searches.
+Yes - recruiters and applicant tracking systems filter on keywords, so an understated title can reduce how often you appear in searches.
 
 ### (Scenario: candidate offered "lead" in a tiny team) Is a lead title meaningful in a three-person team?
 Only if it comes with decisions you own: budget, architecture, hiring or priorities. A lead with nobody to lead is a naming convention, not a role.
@@ -181,7 +181,7 @@ Only if it comes with decisions you own: budget, architecture, hiring or priorit
 The classification, because it usually determines pay and progression. Ask which classification applies and what would justify a higher one.
 
 ### (Scenario: candidate whose title understates their work) Can I negotiate a job title?
-Yes, and it is often the easiest thing to negotiate since it costs the employer nothing — ask for the title that matches the scope you were described.
+Yes, and it is often the easiest thing to negotiate since it costs the employer nothing - ask for the title that matches the scope you were described.
 
 <script type="application/ld+json">
 {
@@ -189,10 +189,10 @@ Yes, and it is often the easiest thing to negotiate since it costs the employer 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Should I take a better title or better work?", "acceptedAnswer": {"@type": "Answer", "text": "Usually better work, since interviews test evidence; prefer titles for search visibility or management tracks."}},
-    {"@type": "Question", "name": "Do job titles affect whether recruiters find me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — recruiters and tracking systems filter on keywords."}},
+    {"@type": "Question", "name": "Do job titles affect whether recruiters find me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - recruiters and tracking systems filter on keywords."}},
     {"@type": "Question", "name": "Is a lead title meaningful in a three-person team?", "acceptedAnswer": {"@type": "Answer", "text": "Only with owned decisions such as budget, architecture, hiring or priorities."}},
     {"@type": "Question", "name": "What matters more, the title or the job classification?", "acceptedAnswer": {"@type": "Answer", "text": "The classification, since it usually determines pay and progression."}},
-    {"@type": "Question", "name": "Can I negotiate a job title?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it costs the employer nothing and often matches the scope better."}}
+    {"@type": "Question", "name": "Can I negotiate a job title?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it costs the employer nothing and often matches the scope better."}}
   ]
 }
 </script>

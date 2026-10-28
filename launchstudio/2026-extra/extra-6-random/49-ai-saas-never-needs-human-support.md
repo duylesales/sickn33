@@ -26,51 +26,51 @@ Here's the case for why "never needs human support" is a narrower category than 
 
 ## The narrow category that genuinely doesn't need humans
 
-There's a real category of AI SaaS products where a chat assistant genuinely can handle support end-to-end: tools where user requests are highly repetitive, low-stakes, and fully resolvable through information the assistant already has — think simple lookup tools, straightforward content generators, or utilities with a narrow, well-defined feature set and no financial or scheduling stakes attached to a wrong answer.
+There's a real category of AI SaaS products where a chat assistant genuinely can handle support end-to-end: tools where user requests are highly repetitive, low-stakes, and fully resolvable through information the assistant already has - think simple lookup tools, straightforward content generators, or utilities with a narrow, well-defined feature set and no financial or scheduling stakes attached to a wrong answer.
 
 In that category, an AI assistant can plausibly handle the full support load, because the space of things that can go wrong is small and the cost of an occasional imperfect answer is low.
 
 ## Why most products don't actually fit that category
 
-The moment a product involves scheduling, payments, multi-party coordination, or anything with a financial or contractual consequence, the range of things that can go wrong expands past what a chat assistant can reliably resolve. Two customers booking the same slot. A refund request tied to a specific, disputed set of circumstances. A user whose account got into a state nobody anticipated. These aren't edge cases in the dismissive sense — they're a predictable, recurring category of situation that shows up as soon as a product has enough real usage, and they require judgment, authority, and often a genuine apology that a bot can't credibly offer.
+The moment a product involves scheduling, payments, multi-party coordination, or anything with a financial or contractual consequence, the range of things that can go wrong expands past what a chat assistant can reliably resolve. Two customers booking the same slot. A refund request tied to a specific, disputed set of circumstances. A user whose account got into a state nobody anticipated. These aren't edge cases in the dismissive sense - they're a predictable, recurring category of situation that shows up as soon as a product has enough real usage, and they require judgment, authority, and often a genuine apology that a bot can't credibly offer.
 
-The mistake isn't building an AI assistant to handle support. It's assuming that because the assistant handles most tickets well, it can handle all of them — when the ones it can't handle are exactly the ones where a bad experience does the most damage to a customer relationship.
+The mistake isn't building an AI assistant to handle support. It's assuming that because the assistant handles most tickets well, it can handle all of them - when the ones it can't handle are exactly the ones where a bad experience does the most damage to a customer relationship.
 
 ## Merel's assumption
 
-Merel Timmermans, a founder in Nunspeet, built AfspraakSlim — a scheduling SaaS — using v0 with a connected backend. She assumed her AI chat assistant would fully replace human customer support, and for a while, it looked like a reasonable bet — the assistant handled routine scheduling questions smoothly.
+Merel Timmermans, a founder in Nunspeet, built AfspraakSlim - a scheduling SaaS - using v0 with a connected backend. She assumed her AI chat assistant would fully replace human customer support, and for a while, it looked like a reasonable bet - the assistant handled routine scheduling questions smoothly.
 
-Real usage told a different story. Users kept hitting edge cases the bot couldn't resolve: double-bookings where two customers had been assigned the same slot, and refund disputes tied to circumstances the assistant had no framework for evaluating. Merel had no support process in place at all when these started escalating — no queue, no human fallback, no defined path for what happens when the bot reaches the edge of what it can handle. Frustrated users had nowhere to go.
+Real usage told a different story. Users kept hitting edge cases the bot couldn't resolve: double-bookings where two customers had been assigned the same slot, and refund disputes tied to circumstances the assistant had no framework for evaluating. Merel had no support process in place at all when these started escalating - no queue, no human fallback, no defined path for what happens when the bot reaches the edge of what it can handle. Frustrated users had nowhere to go.
 
 ## Why "80% automated" is the honest, better goal
 
-The realistic and genuinely strong outcome for most AI SaaS products isn't zero human support — it's a system where an AI assistant competently handles the large majority of routine requests and hands off the remainder, cleanly and quickly, to a human who can actually resolve them. That's not a consolation prize. A product that automates 80% of support volume while making sure the hard 20% gets real attention is in a far stronger position than one that either staffs every ticket manually or, worse, has no answer at all for what the bot can't solve.
+The realistic and genuinely strong outcome for most AI SaaS products isn't zero human support - it's a system where an AI assistant competently handles the large majority of routine requests and hands off the remainder, cleanly and quickly, to a human who can actually resolve them. That's not a consolation prize. A product that automates 80% of support volume while making sure the hard 20% gets real attention is in a far stronger position than one that either staffs every ticket manually or, worse, has no answer at all for what the bot can't solve.
 
 The founders who get burned aren't the ones building good AI assistants. They're the ones who mistake "the assistant is good" for "the assistant is sufficient," and skip building the fallback path entirely.
 
 ## Building the fallback path before you need it
 
-The practical fix is straightforward: define, in advance, which categories of requests the assistant should hand off rather than attempt — anything involving money, anything involving a dispute between two users, anything the assistant has tried and failed to resolve more than once — and make sure a real person receives that handoff promptly, not after a frustrated user has already given up.
+The practical fix is straightforward: define, in advance, which categories of requests the assistant should hand off rather than attempt - anything involving money, anything involving a dispute between two users, anything the assistant has tried and failed to resolve more than once - and make sure a real person receives that handoff promptly, not after a frustrated user has already given up.
 
 Our engineers, working from Ho Chi Minh City alongside teams in Amsterdam and Singapore, regularly help SaaS founders build exactly this kind of handoff logic into products that started, like AfspraakSlim, with an AI-only support assumption. LaunchStudio brings Manifera's enterprise-grade engineering to that work, the same standard behind Manifera's [web app development services](https://www.manifera.com/services/web-app-develop/). If your product's support plan is currently "the bot handles it," you can [calculate what building a proper fallback path would cost](https://launchstudio.eu/en/#calculator).
 
 ## A Category-by-Category Framework for What to Automate and What to Escalate
 
-The general rule — automate the routine, escalate anything involving money, disputes, or repeated failure — is easy to state and harder to apply consistently across every kind of request a real product actually gets. A category-by-category pass, run once against your own product's typical support volume, turns the general rule into specific, checkable handoff logic.
+The general rule - automate the routine, escalate anything involving money, disputes, or repeated failure - is easy to state and harder to apply consistently across every kind of request a real product actually gets. A category-by-category pass, run once against your own product's typical support volume, turns the general rule into specific, checkable handoff logic.
 
-**Account and login issues.** Password resets and basic access recovery are safe to automate almost entirely — low stakes, well-defined, and a wrong answer just means trying again. Account recovery involving a compromised or disputed account, however, belongs with a human immediately, since verifying identity correctly matters more than resolving it quickly.
+**Account and login issues.** Password resets and basic access recovery are safe to automate almost entirely - low stakes, well-defined, and a wrong answer just means trying again. Account recovery involving a compromised or disputed account, however, belongs with a human immediately, since verifying identity correctly matters more than resolving it quickly.
 
-**Billing and refunds.** Straightforward questions — "when does my subscription renew," "how do I update my card" — are safe to automate. Anything involving a disputed charge, a requested exception to stated policy, or a customer who's clearly frustrated about money should escalate on the first message, not after the bot has already tried and failed to resolve it, since a delayed escalation on a money issue compounds the frustration rather than defusing it.
+**Billing and refunds.** Straightforward questions - "when does my subscription renew," "how do I update my card" - are safe to automate. Anything involving a disputed charge, a requested exception to stated policy, or a customer who's clearly frustrated about money should escalate on the first message, not after the bot has already tried and failed to resolve it, since a delayed escalation on a money issue compounds the frustration rather than defusing it.
 
 **Scheduling and double-booking conflicts.** Routine rescheduling is automatable. Any conflict involving two parties with competing claims on the same resource needs a human, because resolving it fairly requires judgment about circumstances the assistant has no framework for weighing.
 
 **Bugs and technical issues.** A known, documented issue with a known fix is safe for an assistant to resolve directly. A new or unclear technical report should escalate after at most one clarifying exchange, since an assistant that keeps guessing at an unfamiliar problem burns a frustrated user's patience without making progress.
 
-**Feature questions and how-to requests.** This is the category an assistant is best suited for and should handle almost entirely — it's low-stakes, well-documented, and a wrong or incomplete answer costs little beyond having to ask again.
+**Feature questions and how-to requests.** This is the category an assistant is best suited for and should handle almost entirely - it's low-stakes, well-documented, and a wrong or incomplete answer costs little beyond having to ask again.
 
-**Disputes between two users.** Any situation involving two customers with opposing accounts of what happened — a cancellation dispute, a disagreement over service quality, a he-said-she-said — should route to a human by default, categorically, rather than case by case, because an assistant siding with either party, or appearing to, damages trust regardless of whether it happened to be right.
+**Disputes between two users.** Any situation involving two customers with opposing accounts of what happened - a cancellation dispute, a disagreement over service quality, a he-said-she-said - should route to a human by default, categorically, rather than case by case, because an assistant siding with either party, or appearing to, damages trust regardless of whether it happened to be right.
 
-Running your own product's actual support history against these six categories, even informally, usually reveals that the automatable share is larger than founders initially assume and the escalation-worthy share is smaller but far more consequential per incident. The goal isn't to minimize how much reaches a human — it's to make sure the right fraction does, reliably, before a frustrated customer has to escalate the problem themselves by leaving.
+Running your own product's actual support history against these six categories, even informally, usually reveals that the automatable share is larger than founders initially assume and the escalation-worthy share is smaller but far more consequential per incident. The goal isn't to minimize how much reaches a human - it's to make sure the right fraction does, reliably, before a frustrated customer has to escalate the problem themselves by leaving.
 
 ## Real example
 
@@ -80,14 +80,14 @@ Merel Timmermans had built AfspraakSlim to let small service businesses manage b
 
 The trouble started with the situations Merel hadn't planned for: two customers booked into the same slot due to a syncing delay, and a customer disputing a charge after a service provider cancelled without proper notice. In both cases, the assistant gave a generic, unhelpful response, and there was no human anywhere in the loop to catch the frustration building behind it. Several affected users left negative reviews before Merel even became aware there was a problem.
 
-LaunchStudio's engineers built a handoff system that detects exactly these categories of requests — double-booking conflicts and refund disputes — and routes them immediately to Merel's own inbox with full context attached, while leaving the assistant to keep handling routine scheduling questions on its own.
+LaunchStudio's engineers built a handoff system that detects exactly these categories of requests - double-booking conflicts and refund disputes - and routes them immediately to Merel's own inbox with full context attached, while leaving the assistant to keep handling routine scheduling questions on its own.
 
 **Result:** AfspraakSlim now resolves the vast majority of requests automatically while making sure disputes and conflicts reach a real person within minutes instead of festering unanswered.
 
 > *"I genuinely thought the bot could handle everything. It handled everything until the moment it mattered most, and then it handled nothing."*
-> — **Merel Timmermans, Founder, AfspraakSlim (Nunspeet)**
+> - **Merel Timmermans, Founder, AfspraakSlim (Nunspeet)**
 
-**Cost & Timeline:** €1,050 (support handoff logic and escalation routing) — completed in 7 business days.
+**Cost & Timeline:** €1,050 (support handoff logic and escalation routing) - completed in 7 business days.
 
 ---
 

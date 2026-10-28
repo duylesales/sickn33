@@ -35,13 +35,13 @@ Content Format: Employer Playbook
 }
 </script>
 
-Hiring a machine learning engineer in Europe takes two to four months and costs a great deal in management attention. Losing that person in the first year wastes all of it — and early departures are usually caused by the first ninety days rather than by the offer. The pattern is predictable: access takes six weeks, nobody is available to explain the data, the first project has no owner, and the new hire slowly concludes that the role described in the interview does not exist. Onboarding machine learning engineers well is not complicated, but it is specific: data professionals need different things from new software engineers, and most companies onboard them as if they were the same. This playbook sets out what to prepare, how to structure the first three months and which mistakes cause the most damage.
+Hiring a machine learning engineer in Europe takes two to four months and costs a great deal in management attention. Losing that person in the first year wastes all of it - and early departures are usually caused by the first ninety days rather than by the offer. The pattern is predictable: access takes six weeks, nobody is available to explain the data, the first project has no owner, and the new hire slowly concludes that the role described in the interview does not exist. Onboarding machine learning engineers well is not complicated, but it is specific: data professionals need different things from new software engineers, and most companies onboard them as if they were the same. This playbook sets out what to prepare, how to structure the first three months and which mistakes cause the most damage.
 
 ## What Makes Onboarding Machine Learning Engineers Different
 
 Three differences matter.
 
-**Access is the bottleneck.** A backend engineer can be productive with a repository and a development environment. A data professional needs access to data — often personal or commercially sensitive — which involves approvals, data protection assessments, role assignments and sometimes a secure environment. If this starts on day one, it finishes in week six.
+**Access is the bottleneck.** A backend engineer can be productive with a repository and a development environment. A data professional needs access to data - often personal or commercially sensitive - which involves approvals, data protection assessments, role assignments and sometimes a secure environment. If this starts on day one, it finishes in week six.
 
 **Context lives in people's heads.** Table names mean nothing without knowing how a business process actually works, which fields are reliable, which system overwrote which, and why the number changed in 2023. Documentation rarely captures this; a person does.
 
@@ -62,9 +62,9 @@ The welcome lunch matters less than the permissions. Nothing signals disorganisa
 
 ## The First Ninety Days
 
-**Weeks 1–2: orientation.** Meet the stakeholders, learn the domain vocabulary, read the code and documentation, and shadow whoever currently does the work your model will support. Ask the new hire to write down every question and confusion — this list is the best documentation audit you will ever get.
+**Weeks 1–2: orientation.** Meet the stakeholders, learn the domain vocabulary, read the code and documentation, and shadow whoever currently does the work your model will support. Ask the new hire to write down every question and confusion - this list is the best documentation audit you will ever get.
 
-**Weeks 3–6: first delivery.** A small, real piece of work that ships: a data quality check, a monitoring dashboard, an improvement to an existing pipeline, a reproducible version of an existing analysis. The goal is a complete cycle — problem, implementation, review, deployment — not an impressive model.
+**Weeks 3–6: first delivery.** A small, real piece of work that ships: a data quality check, a monitoring dashboard, an improvement to an existing pipeline, a reproducible version of an existing analysis. The goal is a complete cycle - problem, implementation, review, deployment - not an impressive model.
 
 **Weeks 7–12: ownership.** A larger piece of work where they are the owner, with support available. By the end of the period they should be able to explain one part of the system better than anyone else, have presented something to a non-technical audience and have made at least one independent decision that stood.
 
@@ -82,7 +82,7 @@ The tension in onboarding machine learning engineers is real: they need data qui
 
 Practices that work: define standard access profiles for data roles so that each new hire does not trigger a bespoke approval process; maintain anonymised or synthetic development datasets that mirror production structure; provide a secure analysis environment where sensitive data can be used without export; document the lawful basis and retention rules once, at team level, rather than per project; and record access decisions so audits are straightforward.
 
-Under GDPR, access to personal data must be justified and limited, and in high-risk contexts the EU AI Act adds expectations about data governance and documentation. Teams that treat these as standing infrastructure rather than per-hire obstacles onboard in days instead of weeks — and they pass audits without drama.
+Under GDPR, access to personal data must be justified and limited, and in high-risk contexts the EU AI Act adds expectations about data governance and documentation. Teams that treat these as standing infrastructure rather than per-hire obstacles onboard in days instead of weeks - and they pass audits without drama.
 
 ## Documentation That Actually Helps a New Hire
 
@@ -94,7 +94,7 @@ Most organisations have documentation that is either absent or useless. A modest
 - **Runbooks**: what to do when a pipeline fails or a model behaves oddly.
 - **Decision log**: significant choices and why they were made, so newcomers do not relitigate settled questions.
 
-The cheapest way to create this is to ask each new hire to improve it during onboarding, while the confusion is fresh. Within three hires, a team can go from nothing to genuinely useful documentation — and the process doubles as a way for newcomers to contribute early.
+The cheapest way to create this is to ask each new hire to improve it during onboarding, while the confusion is fresh. Within three hires, a team can go from nothing to genuinely useful documentation - and the process doubles as a way for newcomers to contribute early.
 
 ## Introducing Domain Experts Early
 
@@ -110,7 +110,7 @@ Be explicit about norms that are invisible remotely: when people are expected to
 
 Juniors need structure: clear tasks, frequent feedback, pairing, and permission to ask questions repeatedly. Give them a first project with a known answer so they can calibrate their own judgement against reality.
 
-Seniors need context and autonomy: the history, the politics, the constraints, and a real problem to own quickly. The most common mistake with senior hires is giving them nothing substantial for two months "while they settle in" — experienced people read that as a signal that the role is not serious. The second most common is expecting them to fix everything in six weeks without having learned why things are as they are.
+Seniors need context and autonomy: the history, the politics, the constraints, and a real problem to own quickly. The most common mistake with senior hires is giving them nothing substantial for two months "while they settle in" - experienced people read that as a signal that the role is not serious. The second most common is expecting them to fix everything in six weeks without having learned why things are as they are.
 
 ## Setting Expectations About Impact
 
@@ -126,7 +126,7 @@ Track voluntary departures within eighteen months as the honest measure. If two 
 
 ## How OnlyAIJobs Fits Your Hiring and Onboarding
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Vacancies are shown at their exact address with the distance from the candidate's home, applications go directly to your own careers page, candidates browse without an account and there is no paid placement — so your vacancy competes on content rather than budget.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Vacancies are shown at their exact address with the distance from the candidate's home, applications go directly to your own careers page, candidates browse without an account and there is no paid placement - so your vacancy competes on content rather than budget.
 
 Onboarding begins in the vacancy text. When a posting describes the data honestly, names the first project and explains the mix of engineering and modelling, candidates arrive with accurate expectations, which is the largest single contributor to a successful first ninety days. A detailed posting also gives you something to refer back to in the thirty-day conversation: does the job match what we described?
 
@@ -134,7 +134,7 @@ Listings are currently concentrated in the Netherlands, with employers such as A
 
 ## A Final Word
 
-Onboarding is the cheapest retention investment available. It requires no salary budget, no new headcount and no approval from finance — only preparation and a manager's attention for three months. Companies that do it well find that their reputation spreads: data professionals talk to each other, and "they had my access ready on day one and a real project by week six" is the kind of detail that brings the next candidate to your door.
+Onboarding is the cheapest retention investment available. It requires no salary budget, no new headcount and no approval from finance - only preparation and a manager's attention for three months. Companies that do it well find that their reputation spreads: data professionals talk to each other, and "they had my access ready on day one and a real project by week six" is the kind of detail that brings the next candidate to your door.
 
 ## Common Onboarding Mistakes
 
@@ -156,7 +156,7 @@ A European manufacturer hired an experienced ML engineer to work on quality pred
 
 Her manager noticed in the thirty-day conversation that she was, in her own words, "reading rather than working". Rather than adding another project, he changed three things: he escalated the access request with a named deadline, assigned her the existing scrap-rate dashboard as her responsibility, and arranged two afternoons on the factory floor with a quality engineer.
 
-Within two weeks she had rebuilt the dashboard on reliable data, found a sensor that had been reporting incorrectly since a maintenance change, and become the person the quality team called. The eventual prediction model took another four months, but the early ownership of something real is what kept her — and she later described the factory afternoons as the single most useful part of her onboarding.
+Within two weeks she had rebuilt the dashboard on reliable data, found a sensor that had been reporting incorrectly since a maintenance change, and become the person the quality team called. The eventual prediction model took another four months, but the early ownership of something real is what kept her - and she later described the factory afternoons as the single most useful part of her onboarding.
 
 ## Key Takeaways
 

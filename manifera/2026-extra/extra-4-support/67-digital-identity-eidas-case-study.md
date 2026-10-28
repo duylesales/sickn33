@@ -26,11 +26,11 @@ An IT Manager at a public sector agency or a company building government-facing 
 
 Recognizing this early, before a platform's identity architecture is already deeply entangled with a single national scheme's assumptions, matters considerably for how manageable a future correction actually turns out to be.
 
-eIDAS establishes a framework under which an electronic identification scheme notified and recognized in one EU member state must be accepted by public sector online services in other member states for accessing services requiring a certain level of identity assurance, meaning a citizen from one EU country can, in principle, use their home country's recognized digital identity to authenticate with another member state's government digital service, rather than needing a separate, country-specific credential for every member state's services they need to access. This cross-border recognition is specifically relevant for any government service genuinely likely to be accessed by citizens or residents from other EU member states — a genuinely common scenario for services related to residency, employment, tax, or benefits in a country with meaningful cross-border movement.
+eIDAS establishes a framework under which an electronic identification scheme notified and recognized in one EU member state must be accepted by public sector online services in other member states for accessing services requiring a certain level of identity assurance, meaning a citizen from one EU country can, in principle, use their home country's recognized digital identity to authenticate with another member state's government digital service, rather than needing a separate, country-specific credential for every member state's services they need to access. This cross-border recognition is specifically relevant for any government service genuinely likely to be accessed by citizens or residents from other EU member states - a genuinely common scenario for services related to residency, employment, tax, or benefits in a country with meaningful cross-border movement.
 
 ## Why a National-Only Identity Architecture Creates a Real Access Gap
 
-A government digital service built around identity verification tied specifically to a single national identity scheme, without eIDAS-compliant cross-border recognition architecture, creates a genuine access barrier for EU citizens and residents who hold a different member state's recognized digital identity but need to access the service — these individuals either can't access the service digitally at all, or need to go through a separate, often more cumbersome identity verification process specifically because the platform wasn't architected to recognize their otherwise valid, EU-recognized digital identity. For a public sector service with a genuinely cross-border user base, this isn't a minor edge case, it's a real access equity problem affecting a specific, identifiable population the service is often legally obligated to serve effectively.
+A government digital service built around identity verification tied specifically to a single national identity scheme, without eIDAS-compliant cross-border recognition architecture, creates a genuine access barrier for EU citizens and residents who hold a different member state's recognized digital identity but need to access the service - these individuals either can't access the service digitally at all, or need to go through a separate, often more cumbersome identity verification process specifically because the platform wasn't architected to recognize their otherwise valid, EU-recognized digital identity. For a public sector service with a genuinely cross-border user base, this isn't a minor edge case, it's a real access equity problem affecting a specific, identifiable population the service is often legally obligated to serve effectively.
 
 ## Why Retrofitting eIDAS Compliance Is a Genuinely Substantial Undertaking
 
@@ -66,7 +66,7 @@ Stadtverwaltung Trier, a Trier-based municipal government service, had built an 
 Manifera's Amsterdam team rebuilt the platform's authentication architecture around a genuinely extensible identity provider model, decoupling core platform logic from any single national eID scheme's specific assumptions, and completed the formal eIDAS node integration required to actually enable cross-border identity recognition in practice.
 
 > *"We'd built everything assuming our own national eID scheme was simply how identity would always work on our platform. Once we actually needed to serve residents using a different, equally valid EU-recognized identity, we found out how deeply that single assumption had been baked into nearly everything we'd built."*
-> — **IT Manager, Stadtverwaltung Trier**
+> - **IT Manager, Stadtverwaltung Trier**
 
 Stadtverwaltung Trier's rebuilt platform now genuinely supports cross-border eID recognition, and the municipality reports meaningfully improved digital access for its cross-border resident population, who previously needed to rely on slower, non-digital identity verification alternatives.
 
@@ -81,7 +81,7 @@ Stadtverwaltung Trier's rebuilt platform now genuinely supports cross-border eID
 
 ## Scoping Your Own Government Digital Service's Identity Architecture
 
-Before building a government-facing digital service with a genuinely cross-border user base, architect identity verification around eIDAS-compliant, extensible authentication from the start — a national-only architecture creates a real access barrier that's substantially more costly to correct after the fact. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an eIDAS-ready government digital service.
+Before building a government-facing digital service with a genuinely cross-border user base, architect identity verification around eIDAS-compliant, extensible authentication from the start - a national-only architecture creates a real access barrier that's substantially more costly to correct after the fact. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an eIDAS-ready government digital service.
 
 ## Frequently Asked Questions
 
@@ -99,7 +99,7 @@ Identity verification logic tightly coupled to a single national scheme's specif
 
 ### (Scenario: IT director planning technical implementation) Is designing extensible identity architecture alone sufficient to enable cross-border recognition?
 
-Not entirely — genuine cross-border recognition also requires completing the formal eIDAS node integration process, a specific technical and administrative step distinct from architectural extensibility alone.
+Not entirely - genuine cross-border recognition also requires completing the formal eIDAS node integration process, a specific technical and administrative step distinct from architectural extensibility alone.
 
 ### (Scenario: municipal leader trying to understand service impact) How does eIDAS-ready architecture affect a government service's actual accessibility?
 
@@ -113,7 +113,7 @@ It enables genuine digital access for cross-border residents and workers who wou
     { "@type": "Question", "name": "(Scenario: IT manager scoping a government digital service) What is eIDAS, and why does it matter for a public sector platform's identity architecture?", "acceptedAnswer": { "@type": "Answer", "text": "eIDAS establishes mutual recognition of electronic identification across EU member states for public sector services." } },
     { "@type": "Question", "name": "(Scenario: agency evaluating an existing platform) What's the actual risk of a government service built around a single national identity scheme only?", "acceptedAnswer": { "@type": "Answer", "text": "It creates a genuine access barrier for EU citizens holding a different member state's recognized digital identity." } },
     { "@type": "Question", "name": "(Scenario: engineering lead deciding on architecture) Why is retrofitting eIDAS compliance onto an existing national-only platform difficult?", "acceptedAnswer": { "@type": "Answer", "text": "Tightly coupled single-scheme logic requires meaningful rework to accommodate multiple recognized identity schemes." } },
-    { "@type": "Question", "name": "(Scenario: IT director planning technical implementation) Is designing extensible identity architecture alone sufficient to enable cross-border recognition?", "acceptedAnswer": { "@type": "Answer", "text": "Not entirely — genuine recognition also requires completing formal eIDAS node integration, a distinct technical process." } },
+    { "@type": "Question", "name": "(Scenario: IT director planning technical implementation) Is designing extensible identity architecture alone sufficient to enable cross-border recognition?", "acceptedAnswer": { "@type": "Answer", "text": "Not entirely - genuine recognition also requires completing formal eIDAS node integration, a distinct technical process." } },
     { "@type": "Question", "name": "(Scenario: municipal leader trying to understand service impact) How does eIDAS-ready architecture affect a government service's actual accessibility?", "acceptedAnswer": { "@type": "Answer", "text": "It enables genuine digital access for cross-border residents who would otherwise rely on slower, non-digital alternatives." } }
   ]
 }

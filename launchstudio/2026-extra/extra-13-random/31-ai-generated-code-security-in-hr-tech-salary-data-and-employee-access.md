@@ -21,7 +21,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-In most SaaS products, a data leak between users is embarrassing. In HR software, a leak between colleagues is explosive. If one employee can see another's salary, sick-leave history or performance notes, the damage is not abstract; it lands in the office the next morning. That is why AI generated code security deserves particular care in HR tech — and why the default patterns of AI coding tools, which think in terms of "users" and "admins," are rarely good enough.
+In most SaaS products, a data leak between users is embarrassing. In HR software, a leak between colleagues is explosive. If one employee can see another's salary, sick-leave history or performance notes, the damage is not abstract; it lands in the office the next morning. That is why AI generated code security deserves particular care in HR tech - and why the default patterns of AI coding tools, which think in terms of "users" and "admins," are rarely good enough.
 
 This guide walks through the decisions HR tech founders need to make before real employee data goes in.
 
@@ -29,18 +29,18 @@ This guide walks through the decisions HR tech founders need to make before real
 
 AI-generated HR apps usually have two or three roles: employee, manager, admin. Real organisations are more nuanced:
 
-- **Employee** — sees and edits their own data.
-- **Manager** — sees certain data for their direct reports, perhaps their indirect reports.
-- **HR** — sees most employee data, sometimes excluding certain fields.
-- **Payroll** — sees salary and bank data, not performance notes.
-- **Finance or owner** — sees aggregate costs, perhaps not individual details.
-- **External** — an accountant, a payroll bureau or an occupational health service with narrow, specific access.
+- **Employee** - sees and edits their own data.
+- **Manager** - sees certain data for their direct reports, perhaps their indirect reports.
+- **HR** - sees most employee data, sometimes excluding certain fields.
+- **Payroll** - sees salary and bank data, not performance notes.
+- **Finance or owner** - sees aggregate costs, perhaps not individual details.
+- **External** - an accountant, a payroll bureau or an occupational health service with narrow, specific access.
 
-**The decision:** write down a matrix of roles against data categories (personal details, contract, salary, bank details, leave, sick leave, performance, documents) and enforce it on the server — ideally in the database with row-level and column-level policies. Interface-only restrictions are the most common critical finding in AI-built HR tools.
+**The decision:** write down a matrix of roles against data categories (personal details, contract, salary, bank details, leave, sick leave, performance, documents) and enforce it on the server - ideally in the database with row-level and column-level policies. Interface-only restrictions are the most common critical finding in AI-built HR tools.
 
 ## Decision 2: What Is a Manager's Scope?
 
-"Managers see their team" hides several decisions. Is the team defined by a reporting line, a department or a location? What happens when an employee moves teams — does the old manager lose access immediately? Can managers see their reports' salaries, or only approve leave? Do managers see other managers' teams?
+"Managers see their team" hides several decisions. Is the team defined by a reporting line, a department or a location? What happens when an employee moves teams - does the old manager lose access immediately? Can managers see their reports' salaries, or only approve leave? Do managers see other managers' teams?
 
 AI-generated code often implements manager access as "anyone with the manager role sees everyone," because it is the simplest query. **The decision:** define scope precisely and derive it from data (reporting lines) rather than hard-coded lists.
 
@@ -52,7 +52,7 @@ AI-built HR apps frequently include a free-text "reason for absence" field that 
 
 ## Decision 4: How Are Payslips and Contracts Protected?
 
-Payslips and contracts are typically stored as PDFs. In AI-built apps, they often sit in a public storage bucket with predictable file names — `payslip_2027_10_employee_42.pdf` — meaning anyone who guesses the pattern can download colleagues' payslips.
+Payslips and contracts are typically stored as PDFs. In AI-built apps, they often sit in a public storage bucket with predictable file names - `payslip_2027_10_employee_42.pdf` - meaning anyone who guesses the pattern can download colleagues' payslips.
 
 **The decision:** private storage, signed links that expire quickly, access checks per document, and unguessable identifiers. Consider whether documents should be encrypted at rest with separate keys.
 
@@ -64,7 +64,7 @@ In HR, who looked at what is as important as who changed what. If an employee su
 
 ## Decision 6: What Happens at Offboarding?
 
-When employees leave, their accounts must be deactivated immediately, and their data retained or deleted according to defined periods — payroll records have long legal retention requirements, while many other records should be deleted sooner. When managers leave, their access to former reports must end.
+When employees leave, their accounts must be deactivated immediately, and their data retained or deleted according to defined periods - payroll records have long legal retention requirements, while many other records should be deleted sooner. When managers leave, their access to former reports must end.
 
 **The decision:** automate deactivation (ideally linked to the contract end date) and implement retention per data category.
 
@@ -77,7 +77,7 @@ If your HR tool serves multiple companies, tenant separation is the first line o
 - Use row-level security with policies based on the authenticated user's role and relationships, not on parameters sent by the client.
 - Consider column-level restrictions or separate tables for highly sensitive fields like salary and bank details, so broad queries cannot accidentally include them.
 - Never return full employee objects to the frontend "just in case"; select only what each view needs.
-- Write automated tests that attempt forbidden access for each role — an employee reading a colleague's salary, a manager reading another team, one tenant reading another.
+- Write automated tests that attempt forbidden access for each role - an employee reading a colleague's salary, a manager reading another team, one tenant reading another.
 
 ## A Role Matrix You Can Implement
 
@@ -85,21 +85,21 @@ AI generated code security in HR tools starts with writing down, in one table, w
 
 | Data category | Employee (self) | Manager (own team) | HR | Payroll | External accountant |
 | --- | --- | --- | --- | --- | --- |
-| Personal details | View, edit some | View name and contact | View, edit | View | — |
-| Contract and salary | View own | — (policy-dependent) | View, edit | View | View aggregates |
-| Bank details | Edit own | — | View | View | — |
-| Leave balances | View own | View, approve | View, edit | View | — |
-| Sick-leave dates | Report own | View dates for team | View, manage | — | — |
-| Performance notes | View own finalised | Write, view team | View all | — | — |
-| Documents (payslips, contracts) | View own | — | Upload, view | Upload | — |
+| Personal details | View, edit some | View name and contact | View, edit | View | - |
+| Contract and salary | View own | - (policy-dependent) | View, edit | View | View aggregates |
+| Bank details | Edit own | - | View | View | - |
+| Leave balances | View own | View, approve | View, edit | View | - |
+| Sick-leave dates | Report own | View dates for team | View, manage | - | - |
+| Performance notes | View own finalised | Write, view team | View all | - | - |
+| Documents (payslips, contracts) | View own | - | Upload, view | Upload | - |
 
-Each cell becomes a policy in the database or a check in a server function, and each "—" becomes a negative test. The matrix is also the document a customer's HR director will want to review before signing.
+Each cell becomes a policy in the database or a check in a server function, and each " - " becomes a negative test. The matrix is also the document a customer's HR director will want to review before signing.
 
 ## Implementing Row- and Column-Level Restrictions
 
 Row-level security answers "which employees can you see?"; column-level concerns answer "which fields can you see about them?" In Postgres-based stacks such as Supabase, a practical pattern is:
 
-- **Split sensitive fields into separate tables** — `employee_compensation`, `employee_bank_details`, `sickness_reports` — each with stricter policies than the main `employees` table.
+- **Split sensitive fields into separate tables** - `employee_compensation`, `employee_bank_details`, `sickness_reports` - each with stricter policies than the main `employees` table.
 - **Expose views or server functions per role** that return only the permitted fields, rather than letting the client select arbitrary columns.
 - **Derive manager scope from reporting lines** stored in the database, and compute it in policies (for example with a helper function that returns the IDs of a manager's reports).
 - **Deny by default**, then grant per role.
@@ -108,11 +108,11 @@ This design prevents the most common failure in AI-built HR tools: a generic "fe
 
 ## Logging Reads, Not Just Writes
 
-HR data requires knowing who looked, not only who changed. Log read access to compensation, bank details, sickness reports and performance notes with the viewer, the employee concerned, the category and the time. Store logs append-only, separate from the data, and make them reviewable by an appropriate person — often HR leadership or the data protection contact. Also consider alerts for unusual patterns, such as a manager viewing many employees outside their team or bulk downloads of payslips.
+HR data requires knowing who looked, not only who changed. Log read access to compensation, bank details, sickness reports and performance notes with the viewer, the employee concerned, the category and the time. Store logs append-only, separate from the data, and make them reviewable by an appropriate person - often HR leadership or the data protection contact. Also consider alerts for unusual patterns, such as a manager viewing many employees outside their team or bulk downloads of payslips.
 
 ## Payslip Distribution Done Securely
 
-Payslips are sensitive documents that arrive monthly for every employee, making them a frequent source of leaks. A secure flow uploads payslips into private storage with random identifiers, links each file to exactly one employee, notifies employees by email without attaching the file, requires login (ideally with MFA) to download, logs downloads and removes files according to a retention policy. Bulk uploads from payroll software should validate that every file matches the intended employee before publishing — a mis-assigned payslip is one of the most embarrassing incidents an HR tool can have.
+Payslips are sensitive documents that arrive monthly for every employee, making them a frequent source of leaks. A secure flow uploads payslips into private storage with random identifiers, links each file to exactly one employee, notifies employees by email without attaching the file, requires login (ideally with MFA) to download, logs downloads and removes files according to a retention policy. Bulk uploads from payroll software should validate that every file matches the intended employee before publishing - a mis-assigned payslip is one of the most embarrassing incidents an HR tool can have.
 
 ## Offboarding and Retention by Category
 
@@ -120,23 +120,23 @@ When employees leave, different data has different lifespans. Payroll and tax-re
 
 ## Security Expectations From HR Customers
 
-Companies buying an HR tool increasingly ask for MFA for all users with access to others' data, SSO for larger customers, EU hosting, a data processing agreement, a sub-processor list and evidence of access testing. Preparing these answers upfront — along with the role matrix — shortens sales cycles and demonstrates that the tool was designed for sensitive data rather than adapted after the fact.
+Companies buying an HR tool increasingly ask for MFA for all users with access to others' data, SSO for larger customers, EU hosting, a data processing agreement, a sub-processor list and evidence of access testing. Preparing these answers upfront - along with the role matrix - shortens sales cycles and demonstrates that the tool was designed for sensitive data rather than adapted after the fact.
 
 ## Testing the Matrix Continuously
 
-The role matrix is only as good as its tests. For every cell marked "—," write a test that logs in as that role and attempts the access. Run the suite on every deployment. When an AI coding tool regenerates a query or adds a new screen, these tests are what catch a regression before an employee sees a colleague's salary.
+The role matrix is only as good as its tests. For every cell marked " - ," write a test that logs in as that role and attempts the access. Run the suite on every deployment. When an AI coding tool regenerates a query or adds a new screen, these tests are what catch a regression before an employee sees a colleague's salary.
 
 ## Special Care for Performance and Conflict Records
 
-Performance reviews, warnings, complaints and conflict notes are among the most sensitive HR records. Restrict them to the employee, their direct manager and HR; distinguish drafts from finalised records, so managers' working notes are not accidentally visible; record who viewed each document; and set retention periods that match your customers' policies. Employees can request access to records about them, so write notes as if the employee may read them — factual, respectful and relevant.
+Performance reviews, warnings, complaints and conflict notes are among the most sensitive HR records. Restrict them to the employee, their direct manager and HR; distinguish drafts from finalised records, so managers' working notes are not accidentally visible; record who viewed each document; and set retention periods that match your customers' policies. Employees can request access to records about them, so write notes as if the employee may read them - factual, respectful and relevant.
 
 ## Integrating With Payroll and Time Tracking
 
-HR portals often connect to payroll software and time-tracking systems. Each integration moves salary or attendance data between systems, so use dedicated service accounts with minimal scopes, encrypt data in transit, log each transfer and reconcile periodically so errors are caught before payday. When an integration fails, it should fail loudly — an alert to HR — rather than silently leaving payroll incomplete.
+HR portals often connect to payroll software and time-tracking systems. Each integration moves salary or attendance data between systems, so use dedicated service accounts with minimal scopes, encrypt data in transit, log each transfer and reconcile periodically so errors are caught before payday. When an integration fails, it should fail loudly - an alert to HR - rather than silently leaving payroll incomplete.
 
 ## What Happens When an HR Tool Leaks
 
-The consequences of an HR data incident reach beyond the regulator: damaged trust between colleagues, possible claims from employees, and a customer who is unlikely to renew. That is why HR tools deserve stricter defaults than typical SaaS — MFA, read logging, separated sensitive data and continuous access testing — from the very first customer.
+The consequences of an HR data incident reach beyond the regulator: damaged trust between colleagues, possible claims from employees, and a customer who is unlikely to renew. That is why HR tools deserve stricter defaults than typical SaaS - MFA, read logging, separated sensitive data and continuous access testing - from the very first customer.
 
 ## Where LaunchStudio Fits
 
@@ -159,9 +159,9 @@ Over ten business days, the team implemented a role matrix enforced with row-lev
 **Result:** Verlofbord's clients were informed transparently; none left, and two cited the response as a reason to stay. The tool has since grown to 23 companies, and the forbidden-access tests have blocked one regression introduced by a later Cursor edit.
 
 > *"I built the tool to make HR easier for small companies. I nearly made it the reason one of them had the worst week in its history."*
-> — **Laura Timmermans, Founder, Verlofbord (Ede)**
+> - **Laura Timmermans, Founder, Verlofbord (Ede)**
 
-**Cost & Timeline:** €3,100 (Launch Ready package with role model, data restructuring, document security, logging and access tests) — completed in 10 business days.
+**Cost & Timeline:** €3,100 (Launch Ready package with role model, data restructuring, document security, logging and access tests) - completed in 10 business days.
 
 ## Frequently Asked Questions
 
@@ -175,7 +175,7 @@ In the Netherlands, employers generally may not register the nature or cause of 
 
 ### How do I test that my HR app's access control actually works?
 
-Write automated tests that log in as each role and attempt forbidden actions — reading a colleague's salary, another team's leave, another tenant's data — and expect them to fail. Run them on every deployment.
+Write automated tests that log in as each role and attempt forbidden actions - reading a colleague's salary, another team's leave, another tenant's data - and expect them to fail. Run them on every deployment.
 
 ### What does Manifera's security background add for HR tech?
 
@@ -183,7 +183,7 @@ HR data combines personal, financial and health information in a context where l
 
 ### Does strong data protection help an HR tool get found?
 
-Yes. HR buyers research security carefully, and a clear, specific security page — describing roles, logging and data location — is the kind of content buyers and AI answer engines look for when comparing tools.
+Yes. HR buyers research security carefully, and a clear, specific security page - describing roles, logging and data location - is the kind of content buyers and AI answer engines look for when comparing tools.
 
 <script type="application/ld+json">
 {

@@ -98,7 +98,7 @@ Scarlett werkte samen met **LaunchStudio (door Manifera)** om het product lancer
 
 **Resultaat:** Scarlett heeft een veilig, versiegestuurd upgradeproces voor databaseschema's opgezet voor alle toekomstige functies.
 
-**Kosten en tijdlijn:** € 1.850 (migratie- en schemapakket) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
+**Kosten en tijdlijn:** € 1.850 (migratie- en schemapakket) - klaar voor productie en geïmplementeerd binnen 6 werkdagen.
 
 ---
 

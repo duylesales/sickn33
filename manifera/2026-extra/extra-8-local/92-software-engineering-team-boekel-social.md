@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **A Full Team, Not One Person:** Backend, frontend, QA, DevOps working as a coordinated pod with real on-call coverage.
-✅ **Live in 4 Weeks:** Fully staffed and productive — versus 5-6 months to hire the same five specialists locally.
+✅ **Live in 4 Weeks:** Fully staffed and productive - versus 5-6 months to hire the same five specialists locally.
 ✅ **40-55% Less Unplanned Downtime:** A properly built monitoring system cuts downtime that otherwise costs €1,200-€1,800/hour.
 
 Your production line shouldn't depend on one person's vacation schedule. ⚙️

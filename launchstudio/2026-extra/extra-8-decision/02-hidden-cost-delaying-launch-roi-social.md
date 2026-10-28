@@ -1,11 +1,11 @@
-🚨 She spent 4 months "deciding" whether to invest in launch prep. In that time, her retail launch partner signed with a competitor instead — for timing, not quality. 😳
+🚨 She spent 4 months "deciding" whether to invest in launch prep. In that time, her retail launch partner signed with a competitor instead - for timing, not quality. 😳
 
 Founders compare the hardening invoice against zero. That's the wrong math. Here's the trap: 🧠
 
-❌ The invoice feels like the cost — it isn't, it's the visible one
+❌ The invoice feels like the cost - it isn't, it's the visible one
 ❌ A cold waitlist converts worse than a fresh one, every single time
 ❌ "I'd rather get it right" quietly assumes waiting has no risk of its own
-❌ Delay doesn't cost linearly — it compounds, week over week
+❌ Delay doesn't cost linearly - it compounds, week over week
 
 ✅ The real comparison: fixed cost now vs. weeks of lost momentum
 ✅ Even a rough weekly revenue estimate makes the ROI case obvious
@@ -14,7 +14,7 @@ Founders compare the hardening invoice against zero. That's the wrong math. Here
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we compress "almost ready" into a fixed, predictable window. ⏱️
 
-Her result: launched with proper payment verification in 12 business days — then used the concrete timeline to win a new retail partner within 3 weeks. 🚀
+Her result: launched with proper payment verification in 12 business days - then used the concrete timeline to win a new retail partner within 3 weeks. 🚀
 
 👉 Get a fixed-price quote and a real timeline: https://launchstudio.eu/en/blog/hidden-cost-delaying-launch-roi
 

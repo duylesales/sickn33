@@ -11,27 +11,27 @@ The process that enabled speed now creates **gridlock.**
 
 **Team topology fixes 80% of coordination problems:**
 
-🔵 **Stream-aligned teams** — own a business capability end-to-end (checkout, billing, onboarding). Everything they need to ship independently.
+🔵 **Stream-aligned teams** - own a business capability end-to-end (checkout, billing, onboarding). Everything they need to ship independently.
 
-🟡 **Platform teams** — build shared infra (CI/CD, auth, monitoring) that stream-aligned teams consume.
+🟡 **Platform teams** - build shared infra (CI/CD, auth, monitoring) that stream-aligned teams consume.
 
-🟢 **Enabling teams** — temporary. Help teams adopt new capabilities. Transfer knowledge. Move on.
+🟢 **Enabling teams** - temporary. Help teams adopt new capabilities. Transfer knowledge. Move on.
 
 **The critical principle:** If Team A can't ship without Team B, you have a dependency problem. Redesign boundaries so 80% of features ship from a single team.
 
 **4 coordination mechanisms that actually work:**
 
-1️⃣ Scrum of Scrums (15 min, 3x/week) — dependency detection, not status
-2️⃣ Shared sprint cadence — all teams start/end same day
-3️⃣ Cross-team refinement — define integration contracts BEFORE planning
-4️⃣ Weekly architecture review — 30 min of cross-team knowledge sharing
+1️⃣ Scrum of Scrums (15 min, 3x/week) - dependency detection, not status
+2️⃣ Shared sprint cadence - all teams start/end same day
+3️⃣ Cross-team refinement - define integration contracts BEFORE planning
+4️⃣ Weekly architecture review - 30 min of cross-team knowledge sharing
 
 **Common failure patterns:**
 
-❌ "Component teams" (frontend team, backend team) — every feature crosses 3 teams
-❌ 30-person standup — break into team standups + Scrum of Scrums
-❌ All-day sprint planning — invest in pre-sprint refinement
-❌ No code ownership — CODEOWNERS file + automated linting
+❌ "Component teams" (frontend team, backend team) - every feature crosses 3 teams
+❌ 30-person standup - break into team standups + Scrum of Scrums
+❌ All-day sprint planning - invest in pre-sprint refinement
+❌ No code ownership - CODEOWNERS file + automated linting
 
 **Scaling health metrics:**
 

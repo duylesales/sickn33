@@ -56,7 +56,7 @@ The Wrocław region has become an important manufacturing location. LG Energy So
 
 ## Software Houses and Startups
 
-Wrocław has a strong software services sector, including companies specialising in AI and machine learning projects for international clients, as well as product startups. Software houses offer variety — projects in healthcare, e-commerce, fintech or industry — and often English-speaking teams. The Wrocław Technology Park and other innovation hubs support startups and technology companies.
+Wrocław has a strong software services sector, including companies specialising in AI and machine learning projects for international clients, as well as product startups. Software houses offer variety - projects in healthcare, e-commerce, fintech or industry - and often English-speaking teams. The Wrocław Technology Park and other innovation hubs support startups and technology companies.
 
 ## Research and Education
 
@@ -89,7 +89,7 @@ Wrocław is a lively, green city with a historic centre, many bridges, a large s
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Wrocław you will find few or no local vacancies there today. Use Polish job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Wrocław with the Netherlands — where employers such as Accenture, Cegeka, AMCS and Mollie list AI roles — and as a method: filter by AI category and real commute, which matters in a city where R&D centres, business districts and factories in the economic zones lie far apart. Wrocław employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Wrocław you will find few or no local vacancies there today. Use Polish job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Wrocław with the Netherlands - where employers such as Accenture, Cegeka, AMCS and Mollie list AI roles - and as a method: filter by AI category and real commute, which matters in a city where R&D centres, business districts and factories in the economic zones lie far apart. Wrocław employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Network AI in Practice
 
@@ -97,7 +97,7 @@ Modern telecom networks are enormously complex, with millions of configuration p
 
 ## Battery Manufacturing and Industrial AI
 
-Battery production for electric vehicles involves many precise steps — electrode coating, cell assembly, formation and ageing — each generating large amounts of process and quality data. Machine learning helps detect defects early, predict cell performance from process parameters, optimise yields and reduce scrap, and analyse equipment data for predictive maintenance. As Europe expands battery production, engineers with experience in this field are increasingly valuable. Work in manufacturing usually requires on-site presence and close collaboration with process engineers, and it offers tangible impact on product quality and costs.
+Battery production for electric vehicles involves many precise steps - electrode coating, cell assembly, formation and ageing - each generating large amounts of process and quality data. Machine learning helps detect defects early, predict cell performance from process parameters, optimise yields and reduce scrap, and analyse equipment data for predictive maintenance. As Europe expands battery production, engineers with experience in this field are increasingly valuable. Work in manufacturing usually requires on-site presence and close collaboration with process engineers, and it offers tangible impact on product quality and costs.
 
 ## Software Houses and AI Projects
 
@@ -125,7 +125,7 @@ Newcomers need a PESEL number, a Polish bank account and, for B2B contractors, r
 
 ## Skills That Stand Out
 
-Wrocław employers value strong algorithmic and programming skills — reflecting the local tradition — as well as production ML experience, data engineering and MLOps. Telecom roles reward systems knowledge and signal processing; manufacturing roles reward time series, vision and process understanding; software houses reward versatility and client communication. English is expected in most tech roles, and Polish helps with career progression in local organisations.
+Wrocław employers value strong algorithmic and programming skills - reflecting the local tradition - as well as production ML experience, data engineering and MLOps. Telecom roles reward systems knowledge and signal processing; manufacturing roles reward time series, vision and process understanding; software houses reward versatility and client communication. English is expected in most tech roles, and Polish helps with career progression in local organisations.
 
 ## Who Wrocław Suits Best
 
@@ -141,7 +141,7 @@ Compare net income under the offered contract form, benefits such as private hea
 
 ## Automotive and Industrial Suppliers
 
-Beyond batteries, the special economic zones around Wrocław host automotive component makers, household appliance manufacturers and electronics companies. Their data teams work on computer vision for inspection, predictive maintenance of production lines, energy optimisation and supply chain forecasting. Many of these plants are part of international groups that are building shared data platforms and AI competence centres, sometimes with teams located in Wrocław serving plants across Europe. For ML engineers who enjoy industrial problems, these roles combine hands-on work on the factory floor with the resources of large organisations. They typically require close collaboration with engineers who may prefer Polish, so language skills help, but many technical teams also work in English. The experience gained — deploying reliable models in production environments with strict quality requirements — is valued across European manufacturing, and it becomes even more relevant as the EU AI Act introduces requirements for AI systems used as safety components in regulated products.
+Beyond batteries, the special economic zones around Wrocław host automotive component makers, household appliance manufacturers and electronics companies. Their data teams work on computer vision for inspection, predictive maintenance of production lines, energy optimisation and supply chain forecasting. Many of these plants are part of international groups that are building shared data platforms and AI competence centres, sometimes with teams located in Wrocław serving plants across Europe. For ML engineers who enjoy industrial problems, these roles combine hands-on work on the factory floor with the resources of large organisations. They typically require close collaboration with engineers who may prefer Polish, so language skills help, but many technical teams also work in English. The experience gained - deploying reliable models in production environments with strict quality requirements - is valued across European manufacturing, and it becomes even more relevant as the EU AI Act introduces requirements for AI systems used as safety components in regulated products.
 
 ## Remote and Hybrid Arrangements
 

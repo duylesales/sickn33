@@ -20,17 +20,17 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-"Can you tell me exactly what data you store about me, and delete it?" It's a simple question, one any user is entitled to ask under GDPR, and it's usually the moment a founder discovers their AI-built app was never designed to answer it. AI privacy issues rarely announce themselves during development. They surface later, when a real user in Hoogezand — or a regulator — asks a question the app was never built to handle.
+"Can you tell me exactly what data you store about me, and delete it?" It's a simple question, one any user is entitled to ask under GDPR, and it's usually the moment a founder discovers their AI-built app was never designed to answer it. AI privacy issues rarely announce themselves during development. They surface later, when a real user in Hoogezand - or a regulator - asks a question the app was never built to handle.
 
 ## The Question Most Founders Never Get Asked Early Enough
 
 AI coding tools are built to satisfy the prompt in front of them: "build a signup form," "build a user profile page," "build a dashboard showing customer history." What they're not built to ask is "where does this data live, who can access it, and what happens if the person it belongs to wants it gone?" That question requires understanding data protection law, not just software architecture, and it's simply outside the scope of what a prompt-to-code tool considers.
 
-For founders building general consumer apps, this gap is a slow-burning risk. For founders in sectors like healthcare, elder care, or financial services — sectors with a real presence in a region like Hoogezand and the broader Midden-Groningen area, where care services and small industrial suppliers make up a meaningful share of the local economy — it's an immediate compliance problem, not a theoretical one.
+For founders building general consumer apps, this gap is a slow-burning risk. For founders in sectors like healthcare, elder care, or financial services - sectors with a real presence in a region like Hoogezand and the broader Midden-Groningen area, where care services and small industrial suppliers make up a meaningful share of the local economy - it's an immediate compliance problem, not a theoretical one.
 
 ## The Specific Gaps AI Tools Tend to Leave
 
-A few patterns show up repeatedly in AI-generated apps we review. Personal data stored without encryption at rest, so a database breach exposes everything in plain text. Predictable record IDs in URLs, meaning one user can view another user's private data just by changing a number in the address bar — a classic vulnerability called IDOR. No mechanism at all for a user to request their data be deleted, because nobody explicitly asked the AI tool to build one. Data sent to third-party AI APIs for processing without a clear data processing agreement covering what happens to it downstream.
+A few patterns show up repeatedly in AI-generated apps we review. Personal data stored without encryption at rest, so a database breach exposes everything in plain text. Predictable record IDs in URLs, meaning one user can view another user's private data just by changing a number in the address bar - a classic vulnerability called IDOR. No mechanism at all for a user to request their data be deleted, because nobody explicitly asked the AI tool to build one. Data sent to third-party AI APIs for processing without a clear data processing agreement covering what happens to it downstream.
 
 None of these are exotic. They're the direct result of a tool optimizing for "does the feature render correctly," which has nothing to do with "is this compliant with how the Netherlands and the EU expect personal data to be handled."
 
@@ -38,51 +38,51 @@ There's also a timing problem specific to GDPR that founders rarely anticipate: 
 
 ## Closing the Gap Without Rebuilding the App
 
-This is the review LaunchStudio runs specifically for AI-built apps handling personal or sensitive data. Our engineers, coordinated in part out of our Singapore office on Tras Street, audit exactly where personal data flows through your app, lock down access with proper authorization so users can only ever see their own records, and add the mechanisms GDPR actually requires — data export, data deletion, clear consent tracking. We do this behind your existing interface, whether you built it in Lovable, Bolt, Cursor, or v0.
+This is the review LaunchStudio runs specifically for AI-built apps handling personal or sensitive data. Our engineers, coordinated in part out of our Singapore office on Tras Street, audit exactly where personal data flows through your app, lock down access with proper authorization so users can only ever see their own records, and add the mechanisms GDPR actually requires - data export, data deletion, clear consent tracking. We do this behind your existing interface, whether you built it in Lovable, Bolt, Cursor, or v0.
 
-As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Privacy architecture is a direct example — it's rarely visible in a demo, but it's the first thing that matters once a real user in Hoogezand, or anywhere in the province of Groningen, starts trusting your app with their information.
+As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Privacy architecture is a direct example - it's rarely visible in a demo, but it's the first thing that matters once a real user in Hoogezand, or anywhere in the province of Groningen, starts trusting your app with their information.
 
 If you want to talk through what your specific app might be missing, [reach out through our contact page](https://launchstudio.eu/en/#contact) and we'll walk through it with you. Manifera's broader work, including for clients with strict compliance requirements, is outlined on our [about us page](https://www.manifera.com/about-us/).
 
 ## A GDPR Readiness Checklist for AI-Built Apps
 
-Most founders don't need a lawyer to get the technical basics right — they need to know what to actually check. The following isn't a substitute for legal advice, but it's a reasonable starting point for any founder in Hoogezand or the wider Midden-Groningen area storing personal data in an app built with an AI tool.
+Most founders don't need a lawyer to get the technical basics right - they need to know what to actually check. The following isn't a substitute for legal advice, but it's a reasonable starting point for any founder in Hoogezand or the wider Midden-Groningen area storing personal data in an app built with an AI tool.
 
-**Data mapping — know what you actually store, and where:**
+**Data mapping - know what you actually store, and where:**
 
 - List every place personal data enters your app: signup forms, contact forms, uploaded documents, data sent to third-party AI APIs for processing.
 - For each one, note whether it's encrypted at rest, who can access it, and how long it's kept before deletion.
 
-**Access control — confirm the technical reality, not the assumption:**
+**Access control - confirm the technical reality, not the assumption:**
 
 - Verify that every record request checks the logged-in user's actual permission against the record owner, not just whether a session exists. This is the exact IDOR pattern that exposed ZorgMatch's care records before LaunchStudio's review.
 - Check whether admin or staff accounts have broader access than they actually need, and narrow it where possible.
 
-**User rights — build the mechanisms, don't just plan to add them "later":**
+**User rights - build the mechanisms, don't just plan to add them "later":**
 
 - A way for a user to export their own data in a readable format.
 - A way for a user to request deletion, and a defined process for actually carrying it out across every place that data lives, including backups.
 
-**Third parties — know what data processing agreements you actually have in place:**
+**Third parties - know what data processing agreements you actually have in place:**
 
 - If your app sends personal data to an AI provider, payment processor, or analytics tool, confirm there's a data processing agreement covering what happens to that data downstream, not just an assumption that the vendor "probably handles it fine."
 
-Working through this list honestly, even before a formal review, tells you within an hour roughly how far your app is from actually being compliant — and gives a much more productive starting point for a conversation with an engineer or a lawyer than "I think we're probably fine."
+Working through this list honestly, even before a formal review, tells you within an hour roughly how far your app is from actually being compliant - and gives a much more productive starting point for a conversation with an engineer or a lawyer than "I think we're probably fine."
 
 ## Real example
 
 ### An AI-Native Founder in Action: ZorgMatch, Hoogezand
 
-Anouk Dijkstra built ZorgMatch, a platform matching home care clients in Hoogezand with independent caregivers, using Lovable to move fast on a product she felt was urgently needed in her community. The app stored care notes, medication schedules, and contact details for both clients and caregivers. During a routine review, LaunchStudio's engineers found that care records were accessible via sequential, guessable URLs — meaning anyone with a ZorgMatch account could view another client's medication schedule simply by changing a number in the browser address bar, with no permission check in place.
+Anouk Dijkstra built ZorgMatch, a platform matching home care clients in Hoogezand with independent caregivers, using Lovable to move fast on a product she felt was urgently needed in her community. The app stored care notes, medication schedules, and contact details for both clients and caregivers. During a routine review, LaunchStudio's engineers found that care records were accessible via sequential, guessable URLs - meaning anyone with a ZorgMatch account could view another client's medication schedule simply by changing a number in the browser address bar, with no permission check in place.
 
 LaunchStudio rebuilt the authorization layer so every record request is checked against the logged-in user's actual permissions, encrypted sensitive fields at rest, and added a proper data export and deletion flow to meet GDPR requirements.
 
 **Result:** ZorgMatch now passes a full data access audit, with every care record accessible only to the client, their assigned caregiver, and authorized staff.
 
 > *"I built ZorgMatch to help people, and I nearly exposed their most sensitive information without knowing it. LaunchStudio fixed it before a single client was affected."*
-> — **Anouk Dijkstra, Founder, ZorgMatch (Hoogezand)**
+> - **Anouk Dijkstra, Founder, ZorgMatch (Hoogezand)**
 
-**Cost & Timeline:** €1,100 (authorization rebuild, field-level encryption, GDPR data controls) — completed in 6 business days.
+**Cost & Timeline:** €1,100 (authorization rebuild, field-level encryption, GDPR data controls) - completed in 6 business days.
 
 ---
 
@@ -94,7 +94,7 @@ Unencrypted personal data, predictable record URLs that let one user view anothe
 
 ### Does LaunchStudio provide legal GDPR advice?
 
-No, we handle the technical architecture — access control, encryption, data export and deletion tools. We recommend pairing this with legal advice for full compliance sign-off.
+No, we handle the technical architecture - access control, encryption, data export and deletion tools. We recommend pairing this with legal advice for full compliance sign-off.
 
 ### Who leads LaunchStudio and what's their background?
 
@@ -110,7 +110,7 @@ Yes, LaunchStudio works with founders throughout the province of Groningen and a
 
 ### What actually happens if my app has a data breach?
 
-Under GDPR, organizations are generally expected to notify the Dutch Data Protection Authority within 72 hours of becoming aware of a breach that poses a risk to individuals. That window is much easier to meet if your app already has the logging and access records in place to quickly determine what was exposed and who it affects — which is exactly the kind of groundwork a privacy-focused review puts in place before it's needed.
+Under GDPR, organizations are generally expected to notify the Dutch Data Protection Authority within 72 hours of becoming aware of a breach that poses a risk to individuals. That window is much easier to meet if your app already has the logging and access records in place to quickly determine what was exposed and who it affects - which is exactly the kind of groundwork a privacy-focused review puts in place before it's needed.
 
 <script type="application/ld+json">
 {

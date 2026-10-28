@@ -1,4 +1,4 @@
-🔒 Carter, een kliniekmanager, bouwde een artsen-planningstool met **Bolt** — maar zorgpartners weigerden de software in gebruik te nemen zonder officiële SOC 2 nalevingsdocumentatie. 🏥
+🔒 Carter, een kliniekmanager, bouwde een artsen-planningstool met **Bolt** - maar zorgpartners weigerden de software in gebruik te nemen zonder officiële SOC 2 nalevingsdocumentatie. 🏥
 
 Een SOC 2 Type II rapport is geen formaliteit voor AI-startups; het is het enige dat tussen u en een enterprise- of ziekenhuiscontract instaat. 🧠
 
@@ -12,7 +12,7 @@ Een SOC 2 Type II rapport is geen formaliteit voor AI-startups; het is het enige
 
 Bij **LaunchStudio** ontwerpen we sinds 2014 auditeerbare enterprise-infrastructuren via Manifera, met meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-LaunchStudio configureerde AWS KMS kolom-encryptie en audit-logging — Carter slaagde voor de SOC 2 audit en sloot 3 nieuwe zorgklinieken aan. (€4.800 (Security Hardening Pakket) — productieklaar en binnen 12 werkdagen gedeployed). 🚀
+LaunchStudio configureerde AWS KMS kolom-encryptie en audit-logging - Carter slaagde voor de SOC 2 audit en sloot 3 nieuwe zorgklinieken aan. (€4.800 (Security Hardening Pakket) - productieklaar en binnen 12 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u uw AI-startup audit-klaar maakt: https://launchstudio.eu/nl/blog/soc-2-compliance-for-ai-startups
 

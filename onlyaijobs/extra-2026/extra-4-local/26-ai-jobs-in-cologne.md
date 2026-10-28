@@ -45,7 +45,7 @@ Content Format: Local Guide
 }
 </script>
 
-Cologne is Germany's fourth-largest city and the cultural heart of the Rhineland, famous for its cathedral, its carnival and a famously open, sociable atmosphere. It is also home to one of Europe's best-known AI companies: DeepL, the neural machine translation and language AI company founded in the city. Combine that with a major media industry, insurance and retail headquarters, the German Aerospace Center's headquarters and — just 30 minutes south — Bonn with Deutsche Telekom, DHL Group, the University of Bonn and Fraunhofer IAIS, and you have a rich region for machine learning professionals. This guide maps AI jobs in Cologne and the wider Cologne–Bonn area and explains what to consider before moving.
+Cologne is Germany's fourth-largest city and the cultural heart of the Rhineland, famous for its cathedral, its carnival and a famously open, sociable atmosphere. It is also home to one of Europe's best-known AI companies: DeepL, the neural machine translation and language AI company founded in the city. Combine that with a major media industry, insurance and retail headquarters, the German Aerospace Center's headquarters and - just 30 minutes south - Bonn with Deutsche Telekom, DHL Group, the University of Bonn and Fraunhofer IAIS, and you have a rich region for machine learning professionals. This guide maps AI jobs in Cologne and the wider Cologne–Bonn area and explains what to consider before moving.
 
 ## Language AI in Cologne
 
@@ -88,13 +88,13 @@ EU citizens can work freely and must register their address after moving. Non-EU
 
 ## Living in Cologne and Bonn
 
-Cologne is lively, diverse and known for its welcoming culture. Housing costs are moderate compared with Munich or Frankfurt but have risen, and competition for flats in popular districts such as the Belgian Quarter, Ehrenfeld, Sülz or Nippes is significant. Bonn is smaller and quieter, with a green, academic atmosphere along the Rhine. The two cities are connected by trains and a light rail line, and many people live in one and work in the other. The region's central location means that Düsseldorf, Aachen, the Netherlands and Belgium are all within easy reach — a practical advantage for cross-border careers.
+Cologne is lively, diverse and known for its welcoming culture. Housing costs are moderate compared with Munich or Frankfurt but have risen, and competition for flats in popular districts such as the Belgian Quarter, Ehrenfeld, Sülz or Nippes is significant. Bonn is smaller and quieter, with a green, academic atmosphere along the Rhine. The two cities are connected by trains and a light rail line, and many people live in one and work in the other. The region's central location means that Düsseldorf, Aachen, the Netherlands and Belgium are all within easy reach - a practical advantage for cross-border careers.
 
 ## How OnlyAIJobs Fits a Cologne Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. There is no paid placement, applications go directly to the employer's own page and browsing is free without an account.
 
-Its listings are currently concentrated in the Netherlands. For AI jobs in Cologne you will find few or no local vacancies there today, so use German job portals, company career pages and Fraunhofer and university vacancy lists as primary sources. Because the Dutch border is close, OnlyAIJobs is particularly useful for engineers in the Rhineland who want to compare German offers with Dutch roles — for example at employers such as Accenture, Cegeka, Rexel or Holland Innovative — or who live in border areas where both countries are within commuting range. Cologne employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands. For AI jobs in Cologne you will find few or no local vacancies there today, so use German job portals, company career pages and Fraunhofer and university vacancy lists as primary sources. Because the Dutch border is close, OnlyAIJobs is particularly useful for engineers in the Rhineland who want to compare German offers with Dutch roles - for example at employers such as Accenture, Cegeka, Rexel or Holland Innovative - or who live in border areas where both countries are within commuting range. Cologne employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Media, Broadcasting and AI
 
@@ -130,7 +130,7 @@ The Cologne–Bonn region is part of a larger metropolitan area along the Rhine 
 
 ## What Language AI Work Involves
 
-Because language AI is a signature of Cologne's AI landscape, it helps to understand the types of roles involved. Research scientists develop new model architectures, training methods and evaluation approaches for translation and text generation. ML engineers build training pipelines, optimise models for quality and speed and manage experiments on large computing clusters. Data engineers curate and clean multilingual training data — a central task, because data quality has a large effect on model quality. Infrastructure engineers operate GPU clusters and serving systems that must deliver low latency to millions of users. Evaluation specialists design human and automatic evaluation methods to measure translation and writing quality across many languages.
+Because language AI is a signature of Cologne's AI landscape, it helps to understand the types of roles involved. Research scientists develop new model architectures, training methods and evaluation approaches for translation and text generation. ML engineers build training pipelines, optimise models for quality and speed and manage experiments on large computing clusters. Data engineers curate and clean multilingual training data - a central task, because data quality has a large effect on model quality. Infrastructure engineers operate GPU clusters and serving systems that must deliver low latency to millions of users. Evaluation specialists design human and automatic evaluation methods to measure translation and writing quality across many languages.
 
 Language AI companies also face distinctive challenges: supporting many language pairs with very different amounts of data, handling terminology and style for business customers, protecting customer data and meeting enterprise security requirements. Engineers who enjoy combining research depth with product quality find this environment stimulating.
 
@@ -153,15 +153,15 @@ After arriving, register your address at the local citizens' office (Bürgeramt)
 
 ## Who Cologne Suits Best
 
-Cologne suits engineers who want serious AI work — especially in language technology, media or applied research — combined with a sociable, affordable-by-German-standards city close to the Netherlands and Belgium.
+Cologne suits engineers who want serious AI work - especially in language technology, media or applied research - combined with a sociable, affordable-by-German-standards city close to the Netherlands and Belgium.
 
 ## Real example
 
 ### An NLP engineer choosing between Cologne and Amsterdam
 
-An NLP engineer with experience building retrieval systems in Amsterdam is approached for an ML engineering role at a language AI company in Cologne. The gross salary is similar, the team works in English, and the role involves large-scale model training and evaluation — work he would not easily find in his current job.
+An NLP engineer with experience building retrieval systems in Amsterdam is approached for an ML engineering role at a language AI company in Cologne. The gross salary is similar, the team works in English, and the role involves large-scale model training and evaluation - work he would not easily find in his current job.
 
-He compares net pay, rent in Cologne's Ehrenfeld district with his Amsterdam rent and the practical side of moving to Germany, including registration and the tax system. He also notes that Cologne is less than three hours by train from Amsterdam, which makes visiting friends easy. He accepts the role and describes the move as a step up in technical depth, with lower housing costs than in Amsterdam — though he admits that learning German is necessary for everyday bureaucracy.
+He compares net pay, rent in Cologne's Ehrenfeld district with his Amsterdam rent and the practical side of moving to Germany, including registration and the tax system. He also notes that Cologne is less than three hours by train from Amsterdam, which makes visiting friends easy. He accepts the role and describes the move as a step up in technical depth, with lower housing costs than in Amsterdam - though he admits that learning German is necessary for everyday bureaucracy.
 
 ## Key Takeaways
 

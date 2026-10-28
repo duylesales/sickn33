@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Governance That Changes the Risk Math for Every Model:** Staff augmentation, project-based, and dedicated pods each get a named, EU-jurisdiction accountable party.
-✅ **Amsterdam Strategic Governance:** Contract enforcement under Dutch and EU commercial law — where your legal counsel has actual standing.
+✅ **Amsterdam Strategic Governance:** Contract enforcement under Dutch and EU commercial law - where your legal counsel has actual standing.
 ✅ **Vietnam Execution Velocity:** Delivery under whichever model fits, with Amsterdam retaining outcome accountability throughout.
 
 Convert an unenforceable, diffuse offshore risk into a named accountability your audit committee can actually engage with. 🛡️

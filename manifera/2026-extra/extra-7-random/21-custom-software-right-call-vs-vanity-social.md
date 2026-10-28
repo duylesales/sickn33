@@ -7,10 +7,10 @@
 
 **The Manifera Solution:**
 ✅ **One Honest Differentiation Test:** Would a competitor copying this exactly still struggle to replicate the advantage?
-✅ **Amsterdam Strategic Governance:** Running the test honestly — steering toward off-the-shelf where it genuinely fits better.
+✅ **Amsterdam Strategic Governance:** Running the test honestly - steering toward off-the-shelf where it genuinely fits better.
 ✅ **Vietnam Execution Velocity:** Custom software scoped to exactly what's differentiating, nothing more.
 
-We thought our whole warehouse process was special. One piece of it actually was — the rest was just how we'd always done it. 🛡️
+We thought our whole warehouse process was special. One piece of it actually was - the rest was just how we'd always done it. 🛡️
 
 👉 Read our full deep dive on custom software: https://www.manifera.com/blog/custom-software-right-call-vs-vanity
 

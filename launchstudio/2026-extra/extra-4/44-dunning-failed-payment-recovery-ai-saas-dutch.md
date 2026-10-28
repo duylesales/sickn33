@@ -47,7 +47,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van
 
 Als u nog nooit daadwerkelijk heeft berekend hoeveel van uw verloop een stille kaartmislukking is in plaats van een oprechte annulering, schetst [onze pakkettenpagina](https://launchstudio.eu/nl/#packages) wat een beoordeling van facturatie-veerkracht doorgaans omvat.
 
-## De gratieperiode heeft een eigen kostprijs — Begrens deze expliciet
+## De gratieperiode heeft een eigen kostprijs - Begrens deze expliciet
 
 Het actief houden van een account terwijl de kaart van een klant wordt opgelost is de juiste beslissing, maar het introduceert een vraag die de basislogica voor opnieuw proberen en informeren niet op zichzelf beantwoordt: wat gebeurt er als de kaart nooit wordt hersteld? Zonder een harde, afgedwongen grens kan een "gratieperiode" stilletjes veranderen in een voor onbepaalde tijd gratis toegang – het account wordt technisch nooit erg genoeg gemarkeerd als mislukt om te degraderen, het zit simpelweg in een permanente onzekerheid van "nog steeds opnieuw proberen". Voor facturering op basis van gebruik in het bijzonder is dit niet alleen verloren abonnementsomzet: de klant blijft de hele tijd gemeten bronnen verbruiken (API-oproepen, opslag, rekenkracht), wat een reële, voortdurende kostprijs is in plaats van een uitgestelde kostprijs.
 
@@ -80,9 +80,9 @@ Toen ze er dieper in dook werd het patroon duidelijk: elke mislukte verlengingsa
 LaunchStudio bouwde een correcte aanmaningsreeks in PlanPro's Stripe-webhookafhandeling: mislukte afschrijvingen activeren nu automatische herhaalde pogingen over een venster van zeven dagen, de klant krijgt een onmiddellijke e-mail met een self-service link voor het bijwerken van zijn kaart, en het account blijft gedurende de gratieperiode volledig actief. Pas nadat de herhaalde pogingen zijn uitgeput degradeert een account – en tegen die tijd heeft de klant vier afzonderlijke kansen gehad om een kaartprobleem te herstellen waarvan hij meestal niet eens wist dat het bestond. **Resultaat:** PlanPro herstelde een substantieel deel van de eerder verloren verlengingen binnen de eerste maand dat de nieuwe aanmaningsstroom live ging.
 
 > *"Ik dacht oprecht dat die klanten simpelweg stilletjes waren vertrokken. Erachter komen dat het een facturatie-bug was en geen bedrijfsprobleem was de duurste verlichting die ik ooit heb gefelt."*
-> — **Esther van Loon, Oprichter, PlanPro (Katwijk)**
+> - **Esther van Loon, Oprichter, PlanPro (Katwijk)**
 
-**Kosten en tijdlijn:** € 950 (logica voor het opnieuw proberen van aanmaningen, e-mails voor klantinformatie, afhandeling van accounts in gratieperiode) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (logica voor het opnieuw proberen van aanmaningen, e-mails voor klantinformatie, afhandeling van accounts in gratieperiode) - voltooid in 5 werkdagen.
 
 ---
 

@@ -1,6 +1,6 @@
-🔥 Alexander, een jurist, bouwde een AI-contractreviewer met **Cursor** — en zag hoe intensief gebruik door één enkel advocatenkantoor zijn complete maandelijkse API-budget in één weekend leegtrok.
+🔥 Alexander, een jurist, bouwde een AI-contractreviewer met **Cursor** - en zag hoe intensief gebruik door één enkel advocatenkantoor zijn complete maandelijkse API-budget in één weekend leegtrok.
 
-Inefficiënte AI-code vertraagt de boel niet alleen, het veroorzaakt direct financieel verlies — elke verspilde token wordt realtime gefactureerd. 🧠
+Inefficiënte AI-code vertraagt de boel niet alleen, het veroorzaakt direct financieel verlies - elke verspilde token wordt realtime gefactureerd. 🧠
 
 ❌ Vertrouwen op het algemene OpenAI-dashboard in plaats van realtime tokenkosten per gebruiker te meten
 ❌ Agent-lussen zonder harde iteratielimiet die oneindig kunnen doordraaien en kosten opstapelen
@@ -12,7 +12,7 @@ Inefficiënte AI-code vertraagt de boel niet alleen, het veroorzaakt direct fina
 
 Bij **LaunchStudio** bouwen we sinds 2014 kostenbewuste backend-architecturen via Manifera, verspreid over meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-LaunchStudio bouwde database-afgedwongen dagelijkse tokenlimieten per organisatie in Next.js — waardoor budgetuitputting werd voorkomen en Alexanders maandelijkse serverkosten stabiliseerden. (€1.200 (API Guardrail Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+LaunchStudio bouwde database-afgedwongen dagelijkse tokenlimieten per organisatie in Next.js - waardoor budgetuitputting werd voorkomen en Alexanders maandelijkse serverkosten stabiliseerden. (€1.200 (API Guardrail Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u een kostenbewuste AI-architectuur bouwt: https://launchstudio.eu/nl/blog/building-cost-aware-architecture-nodejs-ai
 

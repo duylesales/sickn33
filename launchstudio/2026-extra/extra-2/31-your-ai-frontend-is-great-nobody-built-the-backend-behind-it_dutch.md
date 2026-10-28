@@ -61,16 +61,16 @@ Manifera's engineeringwerk voor prijzen en transactiebeveiliging wordt geleverd 
 
 De uiteindelijke prijs bij het afrekenen is de meest zichtbare manifestatie van deze kloof, maar het is zelden de enige plek waar een getal dat door de frontend is berekend klakkeloos wordt vertrouwd zonder verificatie op de server. Een gerichte controle van elke door AI gegenereerde applicatie zou specifiek elk van deze punten moeten controleren:
 
-- **Verzend- en bezorgkosten** — berekend op basis van adres, gewicht of een gekozen leversnelheid. Deze zijn net zo gemakkelijk te onderscheppen en te manipuleren als een kortingstotaal als de server het bedrag niet onafhankelijk opnieuw berekent op basis van de werkelijke ordergegevens.
-- **Btw- en belastingberekeningen** — met name in producten die meerdere landen of regio's bedienen, waar een frontend-schatting handig is voor de weergave, maar nooit het bedrag mag zijn dat daadwerkelijk in rekening wordt gebracht.
-- **Hoeveelheids- en voorraadlimieten** — een frontend die voorkomt dat een gebruiker een elfde artikel toevoegt aan een winkelmandje met een limiet van tien, is een puur visueel gebruikersgemak en geen handhaving, tenzij de server dat elfde artikel ook onafhankelijk weigert.
-- **Loyaliteitspunten en beloningen** — een lopend puntensaldo en de korting die het ontgrendelt, moeten altijd op de server worden herberekend vanuit de werkelijke transactiegeschiedenis van de gebruiker, en nooit als een gerapporteerd getal van de client worden aangenomen.
-- **Het stapelen van coupons en kortingen** — een frontend die netjes voorkomt dat twee elkaar uitsluitende kortingscodes in de interface worden gecombineerd, zegt helemaal niets over de vraag of de server diezelfde beperking zelfstandig afdwingt.
-- **Toegangscontrole tot abonnementsniveaus** — een "Pro"-badge die wordt getoond op basis van een lokaal in de cache opgeslagen abonnementsstatus is een weergavekeuze, geen autorisatiecontrole, tenzij elke beveiligde actie het werkelijke niveau van de gebruiker opnieuw op de server verifieert.
+- **Verzend- en bezorgkosten** - berekend op basis van adres, gewicht of een gekozen leversnelheid. Deze zijn net zo gemakkelijk te onderscheppen en te manipuleren als een kortingstotaal als de server het bedrag niet onafhankelijk opnieuw berekent op basis van de werkelijke ordergegevens.
+- **Btw- en belastingberekeningen** - met name in producten die meerdere landen of regio's bedienen, waar een frontend-schatting handig is voor de weergave, maar nooit het bedrag mag zijn dat daadwerkelijk in rekening wordt gebracht.
+- **Hoeveelheids- en voorraadlimieten** - een frontend die voorkomt dat een gebruiker een elfde artikel toevoegt aan een winkelmandje met een limiet van tien, is een puur visueel gebruikersgemak en geen handhaving, tenzij de server dat elfde artikel ook onafhankelijk weigert.
+- **Loyaliteitspunten en beloningen** - een lopend puntensaldo en de korting die het ontgrendelt, moeten altijd op de server worden herberekend vanuit de werkelijke transactiegeschiedenis van de gebruiker, en nooit als een gerapporteerd getal van de client worden aangenomen.
+- **Het stapelen van coupons en kortingen** - een frontend die netjes voorkomt dat twee elkaar uitsluitende kortingscodes in de interface worden gecombineerd, zegt helemaal niets over de vraag of de server diezelfde beperking zelfstandig afdwingt.
+- **Toegangscontrole tot abonnementsniveaus** - een "Pro"-badge die wordt getoond op basis van een lokaal in de cache opgeslagen abonnementsstatus is een weergavekeuze, geen autorisatiecontrole, tenzij elke beveiligde actie het werkelijke niveau van de gebruiker opnieuw op de server verifieert.
 
 Het patroon dat al deze zes punten verbindt is identiek: een waarde die correct wordt berekend of weergegeven in de browser wordt ergens in de backend behandeld alsof het correct kunnen berekenen ervan hetzelfde is als vertrouwd kunnen worden om het eerlijk te rapporteren. Dat zijn twee wezenlijk verschillende garanties. Slechts één daarvan overleeft een gebruiker die de ontwikkelaarstools van zijn browser opent om de grenzen van uw systeem te testen in plaats van de app alleen netjes te gebruiken.
 
-Een oprichter zonder technische achtergrond kan zelf een ruwe versie van deze audit uitvoeren: vraag u bij elk van de bovenstaande zes items af: "als ik deze waarde in mijn browser zou aanpassen voordat ik het formulier verstuur, zou de server dat dan überhaupt merken?" Een volmondig "ja, het verzoek wordt dan geweigerd" op alle zes de vragen is de minimale maatstaf om de prijs- en toegangslogica van een product productierijp te noemen. Elk twijfelachtig antwoord verdient een grondige technische controle voordat echte klanten — met hun browser tools — op schaal met uw product gaan werken.
+Een oprichter zonder technische achtergrond kan zelf een ruwe versie van deze audit uitvoeren: vraag u bij elk van de bovenstaande zes items af: "als ik deze waarde in mijn browser zou aanpassen voordat ik het formulier verstuur, zou de server dat dan überhaupt merken?" Een volmondig "ja, het verzoek wordt dan geweigerd" op alle zes de vragen is de minimale maatstaf om de prijs- en toegangslogica van een product productierijp te noemen. Elk twijfelachtig antwoord verdient een grondige technische controle voordat echte klanten - met hun browser tools - op schaal met uw product gaan werken.
 
 ## Echt voorbeeld
 
@@ -83,9 +83,9 @@ Een nieuwsgierige vroege gebruiker, die een verzoek in de ontwikkelaars-tools va
 **Resultaat:** LaunchStudio verplaatste de autoriteit voor de prijsberekening volledig naar de server, wat elke afrekening onafhankelijk herberekent op basis van de onderliggende selecties in plaats van het gerapporteerde totaalbedrag van de frontend te vertrouwen. Dit sloot de kloof zonder de soepele prijsweergave van RouteDroom te veranderen.
 
 > *"Hij vertelde me exact wat hij gedaan had en hoe, bijna alsof hij me een gunst deed, wat hij eerlijk gezegd ook deed. Het was niet bij me opgekomen dat het getal op het scherm en het getal dat daadwerkelijk bij het afrekenen vertrouwd werd twee verschillende dingen konden zijn."*
-> — **Jelle Roos, Oprichter, RouteDroom (Emmen)**
+> - **Jelle Roos, Oprichter, RouteDroom (Emmen)**
 
-**Kosten en tijdlijn:** € 1.900 (implementatie van prijsverificatie aan de serverzijde) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (implementatie van prijsverificatie aan de serverzijde) - voltooid in 6 werkdagen.
 
 ---
 

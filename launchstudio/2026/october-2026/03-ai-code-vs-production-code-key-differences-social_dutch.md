@@ -1,4 +1,4 @@
-🔥 Priya bouwde een prototype met **Lovable** — als supply chain manager in Singapore bouwde ze in één weekend een vlootbeheerdashboard, maar ontdekte ernstige beveiligings- en architectuurknelpunten vlak voor de livegang. 🧠
+🔥 Priya bouwde een prototype met **Lovable** - als supply chain manager in Singapore bouwde ze in één weekend een vlootbeheerdashboard, maar ontdekte ernstige beveiligings- en architectuurknelpunten vlak voor de livegang. 🧠
 
 Als uw AI-prototype geen server-side validatie, database Row-Level Security (RLS) of omgevingsvariabelenbeheer heeft, leidt live verkeer direct tot datalekken en uitval.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side validatie, database Row-Level Security (RLS
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Priya's applicatie draait nu stabiel met 45 chauffeurs over 3 partners met 99,8% uptime. (€3.200 (Launch & Grow Pakket) + €49/maand hosting — binnen 8 werkdagen live). 🚀
+Priya's applicatie draait nu stabiel met 45 chauffeurs over 3 partners met 99,8% uptime. (€3.200 (Launch & Grow Pakket) + €49/maand hosting - binnen 8 werkdagen live). 🚀
 
 👉 Lees het volledige artikel: https://launchstudio.eu/nl/blog/ai-code-vs-production-code-key-differences
 

@@ -21,13 +21,13 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Onafhankelijke autobedrijven concurreren met dealernetwerken die over gelikte apps beschikken: online een onderhoudsbeurt inplannen, extra werkzaamheden met één tik goedkeuren en de factuur al inzien vóór het ophalen. Met tools als Bolt of Lovable kan een garagehouder of automotive-oprichter binnen enkele weken een soortgelijke app bouwen. Maar om die AI-applicatie écht productierijp te maken voor een drukke werkplaats, zijn beslissingen nodig waar generieke afspraken-apps nooit mee te maken krijgen — rondom kentekens, akkoorden op meerwerk, fluctuerende onderdelenprijzen en een digitaal planbord dat naadloos moet aansluiten op wat er werkelijk op de hefbruggen gebeurt.
+Onafhankelijke autobedrijven concurreren met dealernetwerken die over gelikte apps beschikken: online een onderhoudsbeurt inplannen, extra werkzaamheden met één tik goedkeuren en de factuur al inzien vóór het ophalen. Met tools als Bolt of Lovable kan een garagehouder of automotive-oprichter binnen enkele weken een soortgelijke app bouwen. Maar om die AI-applicatie écht productierijp te maken voor een drukke werkplaats, zijn beslissingen nodig waar generieke afspraken-apps nooit mee te maken krijgen - rondom kentekens, akkoorden op meerwerk, fluctuerende onderdelenprijzen en een digitaal planbord dat naadloos moet aansluiten op wat er werkelijk op de hefbruggen gebeurt.
 
 ## Beslissing 1: Zijn Voertuiggegevens Persoonsgegevens?
 
 In veel gevallen wel. Een kenteken, een chassisnummer (VIN) en een kilometerstandhistorie kunnen direct of indirect worden herleid tot een identificeerbare eigenaar. Daarmee zijn het persoonsgegevens volgens de AVG. Een onderhoudshistorie kan bovendien onthullen waar iemand woont, werkt en reist. Behandel voertuigdossiers daarom met dezelfde zorgvuldigheid als klantgegevens: toegang strikt beperkt tot de betreffende klant en garage, hosting binnen de Europese Unie en heldere bewaartermijnen.
 
-Veel Nederlandse garage-apps halen voertuiggegevens automatisch op via het kenteken met de openbare RDW Open Data. Die RDW-brongegevens zijn openbaar, maar zodra je ze in je systeem koppelt aan een specifieke klant en afspraak, ontstaan er persoonsgegevens — bovendien moet het zoek-endpoint worden beveiligd met rate-limiting zodat derden jouw app niet als gratis scrapingtool misbruiken.
+Veel Nederlandse garage-apps halen voertuiggegevens automatisch op via het kenteken met de openbare RDW Open Data. Die RDW-brongegevens zijn openbaar, maar zodra je ze in je systeem koppelt aan een specifieke klant en afspraak, ontstaan er persoonsgegevens - bovendien moet het zoek-endpoint worden beveiligd met rate-limiting zodat derden jouw app niet als gratis scrapingtool misbruiken.
 
 ## Beslissing 2 voor een Productierijpe AI-Applicatie: Hoe Worden Extra Reparaties Goedgekeurd?
 
@@ -45,7 +45,7 @@ Werkplaatscapaciteit is afhankelijk van fysieke hefbruggen, specifieke gereedsch
 
 ## Beslissing 5: Hoe Betalen Klanten?
 
-Steeds meer particuliere klanten willen vooraf via hun smartphone betalen voordat ze hun auto ophalen. Dat vraagt om betrouwbare betaalkoppelingen via Mollie of Stripe met iDEAL, gevalideerd via geverifieerde server-webhooks, en een onlosmakelijke statuskoppeling tussen betaling, factuur en werkorder — zodat de baliemedewerker direct ziet dat de sleutel mag worden overhandigd. Lease- en zakelijke vlootklanten betalen daarentegen meestal achteraf op rekening via verzamelorders.
+Steeds meer particuliere klanten willen vooraf via hun smartphone betalen voordat ze hun auto ophalen. Dat vraagt om betrouwbare betaalkoppelingen via Mollie of Stripe met iDEAL, gevalideerd via geverifieerde server-webhooks, en een onlosmakelijke statuskoppeling tussen betaling, factuur en werkorder - zodat de baliemedewerker direct ziet dat de sleutel mag worden overhandigd. Lease- en zakelijke vlootklanten betalen daarentegen meestal achteraf op rekening via verzamelorders.
 
 ## Beslissing 6: Foto's en Bewijslast
 
@@ -117,7 +117,7 @@ Garages voeren regelmatig werkzaamheden uit onder fabrieksgarantie of handelen t
 
 ## Rapportages voor Garagehouders
 
-Ondernemers in de autobranche sturen op duidelijke cijfers: bezettingsgraad van hefbruggen, gemiddelde doorlooptijd versus geplande uren, het conversiepercentage van meerwerkoffertes, omzet per monteur, openstaande debiteuren en terugkerende klanten. Bouw dashboards op basis van opgeslagen, historische data zodat rapportages over eerdere kwartalen stabiel en accuraat blijven. Deze analyses leveren direct bruikbare inzichten op — bijvoorbeeld dat offertes met duidelijke detailfoto's tot 40% vaker worden goedgekeurd.
+Ondernemers in de autobranche sturen op duidelijke cijfers: bezettingsgraad van hefbruggen, gemiddelde doorlooptijd versus geplande uren, het conversiepercentage van meerwerkoffertes, omzet per monteur, openstaande debiteuren en terugkerende klanten. Bouw dashboards op basis van opgeslagen, historische data zodat rapportages over eerdere kwartalen stabiel en accuraat blijven. Deze analyses leveren direct bruikbare inzichten op - bijvoorbeeld dat offertes met duidelijke detailfoto's tot 40% vaker worden goedgekeurd.
 
 ## Launch Checklist voor Garage-Apps
 
@@ -136,7 +136,7 @@ Met deze basis versterkt de applicatie het vertrouwen waar lokale kwaliteitsgara
 
 ## Waarom Juist Onafhankelijke Garages Hierbij Winnen
 
-Grote dealernetwerken investeren miljoenen in software; onafhankelijke dorps- en stadsgarages onderscheiden zich door vakmanschap, eerlijkheid en persoonlijk contact. Een productierijpe klanten-app — met transparante offertes, betrouwbare planning en moeiteloos digitaal betalen — stelt de lokale garage in staat een moderne ervaring te bieden die de dealer evenaart of overtreft, terwijl het persoonlijke karakter behouden blijft.
+Grote dealernetwerken investeren miljoenen in software; onafhankelijke dorps- en stadsgarages onderscheiden zich door vakmanschap, eerlijkheid en persoonlijk contact. Een productierijpe klanten-app - met transparante offertes, betrouwbare planning en moeiteloos digitaal betalen - stelt de lokale garage in staat een moderne ervaring te bieden die de dealer evenaart of overtreft, terwijl het persoonlijke karakter behouden blijft.
 
 ## Veelvoorkomende Fouten in met AI Gebouwde Garage-Apps
 
@@ -150,7 +150,7 @@ Stuur jezelf vanuit je eigen applicatie een offerte voor een proefreparatie, keu
 
 LaunchStudio transformeert met AI gebouwde garage-apps naar robuuste productiesoftware: betrouwbare isolatie van voertuig- en klantdata, veilige offerte-acceptatie met onveranderbare prijzen en auditlogs, capaciteitsgestuurde planning, gevalideerde iDEAL-betalingen, beveiligde foto-opslag en multi-tenant architectuur. LaunchStudio wordt ondersteund door Manifera, een softwarebedrijf met meer dan 11 jaar ervaring in operationele en industriële platforms (waaronder MO Batteries in de energiesector), werkzaam vanuit Ho Chi Minhstad, Amsterdam en Singapore. Bekijk [Manifera's web app development diensten](https://www.manifera.com/services/web-app-develop/); het [RDW open data portaal](https://opendata.rdw.nl/) documenteert welke voertuigdata openbaar toegankelijk is.
 
-[Bereken direct de investering voor jouw applicatie](https://launchstudio.eu/nl/#calculator) — de categorie "Tool" of "SaaS" met betalingsmodule sluit naadloos aan op de meeste garage-applicaties.
+[Bereken direct de investering voor jouw applicatie](https://launchstudio.eu/nl/#calculator) - de categorie "Tool" of "SaaS" met betalingsmodule sluit naadloos aan op de meeste garage-applicaties.
 
 ## Praktijkvoorbeeld
 
@@ -165,9 +165,9 @@ In acht werkdagen hebben de engineers van LaunchStudio offertes onherroepelijk b
 **Resultaat:** Discussies over factuurbedragen verdwenen volledig, omdat elke offerte nu een vaste prijs en een sluitend digitaal dossier heeft. Overboekingen op maandag behoren tot het verleden, en Garagepost heeft inmiddels vier extra autobedrijven in Noord-Brabant aangesloten.
 
 > *"Klanten vertrouwen een garage die hen de foto en de prijs laat zien. Ze verliezen dat vertrouwen op het moment dat de prijs verandert nadat ze 'ja' hebben gezegd."*
-> — **Ferry Janssen, Oprichter, Garagepost (Helmond)**
+> - **Ferry Janssen, Oprichter, Garagepost (Helmond)**
 
-**Kosten & Tijdlijn:** € 2.200 (Launch Ready-pakket: offerte-integriteit, toegangscontrole, capaciteitsplanning, betalingen en databeveiliging) — afgerond in 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.200 (Launch Ready-pakket: offerte-integriteit, toegangscontrole, capaciteitsplanning, betalingen en databeveiliging) - afgerond in 8 werkdagen.
 
 ## Veelgestelde Vragen
 

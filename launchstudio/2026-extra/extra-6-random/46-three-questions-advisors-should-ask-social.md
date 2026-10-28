@@ -1,4 +1,4 @@
-📋 Ties Bakker built SubsidieCheck, a grant application tool, using Lovable. His startup advisor was great on strategy and fundraising — but never once asked who owned the infrastructure or controlled the data. That gap stayed invisible until a promising partnership moved into due diligence. 😳
+📋 Ties Bakker built SubsidieCheck, a grant application tool, using Lovable. His startup advisor was great on strategy and fundraising - but never once asked who owned the infrastructure or controlled the data. That gap stayed invisible until a promising partnership moved into due diligence. 😳
 
 The questions nobody asks are the ones that matter most under real pressure. 🧠
 
@@ -11,7 +11,7 @@ The questions nobody asks are the ones that matter most under real pressure. �
 ✅ Migrate hosting and database control to accounts the founder's company fully owns
 ✅ Produce a clear data handling summary ready for any diligence team
 
-At **LaunchStudio**, we're powered by Manifera — 11+ years of production engineering across 160+ delivered projects — and this kind of ownership clarification is routine for us. 🛡️
+At **LaunchStudio**, we're powered by Manifera - 11+ years of production engineering across 160+ delivered projects - and this kind of ownership clarification is routine for us. 🛡️
 
 His result: the partnership discussion resumed with documented, founder-owned infrastructure, and Ties now asks these three questions of any advisor before relying on their guidance. 🚀
 

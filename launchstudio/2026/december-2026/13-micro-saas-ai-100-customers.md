@@ -12,7 +12,7 @@ Target Persona: SaaS Founder Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Micro-SaaS in the Age of AI: Building Products for 100 Customers",
-  "description": "Not every AI SaaS needs to chase millions of users. Micro-SaaS products built for 100 loyal customers are thriving in 2027 — here is how AI tools make this business model more viable than ever.",
+  "description": "Not every AI SaaS needs to chase millions of users. Micro-SaaS products built for 100 loyal customers are thriving in 2027 - here is how AI tools make this business model more viable than ever.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,11 +31,11 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A SaaS product with 100 customers paying €99/month generates €118,800 in annual recurring revenue — enough to be a full-time, profitable business for a solo founder, with no investors, no growth targets, and no pressure to scale beyond what the founder actually wants. This is the micro-SaaS model, and AI tools have made it dramatically more achievable than it was even two years ago.
+A SaaS product with 100 customers paying €99/month generates €118,800 in annual recurring revenue - enough to be a full-time, profitable business for a solo founder, with no investors, no growth targets, and no pressure to scale beyond what the founder actually wants. This is the micro-SaaS model, and AI tools have made it dramatically more achievable than it was even two years ago.
 
 ## Why Micro-SaaS Makes More Sense Than Ever
 
-Venture-backed SaaS logic assumes you need thousands of customers to justify the cost of building the product. That math made sense when a functional SaaS application required a team of developers and six figures of development cost. AI coding tools have collapsed that cost basis. A founder can now build a genuinely useful, narrow SaaS product — the kind that serves a specific niche well rather than a broad market adequately — for a few thousand euros total.
+Venture-backed SaaS logic assumes you need thousands of customers to justify the cost of building the product. That math made sense when a functional SaaS application required a team of developers and six figures of development cost. AI coding tools have collapsed that cost basis. A founder can now build a genuinely useful, narrow SaaS product - the kind that serves a specific niche well rather than a broad market adequately - for a few thousand euros total.
 
 This changes the addressable opportunity. A niche too small for a venture-backed startup (say, scheduling software for independent physiotherapists, or invoice automation for Dutch freelance translators) is exactly the right size for a micro-SaaS founder using AI tools and a lean production budget.
 
@@ -52,17 +52,17 @@ This changes the addressable opportunity. A niche too small for a venture-backed
 
 ## Why Niche Focus Beats Broad Appeal
 
-A micro-SaaS product serving 100 specific customers deeply — say, appointment scheduling built exactly for veterinary practices, with veterinary-specific fields and workflows — will always beat a generic scheduling tool trying to serve every industry. Niche customers pay more, churn less, and refer more, because the product actually fits how they work. AI tools make it economically viable to build this kind of narrow-but-deep product, because the development cost no longer requires broad market size to justify it.
+A micro-SaaS product serving 100 specific customers deeply - say, appointment scheduling built exactly for veterinary practices, with veterinary-specific fields and workflows - will always beat a generic scheduling tool trying to serve every industry. Niche customers pay more, churn less, and refer more, because the product actually fits how they work. AI tools make it economically viable to build this kind of narrow-but-deep product, because the development cost no longer requires broad market size to justify it.
 
 ## What Micro-SaaS Founders Still Need to Get Right
 
-The trap in micro-SaaS is assuming that because the customer base is small, the engineering standards can be lower. This is backwards. A niche SaaS serving 100 paying customers in a specific profession — legal, medical, financial — often has stricter compliance and reliability requirements than a consumer app serving millions, because professional customers depend on the tool for their livelihood and cannot tolerate downtime or data loss.
+The trap in micro-SaaS is assuming that because the customer base is small, the engineering standards can be lower. This is backwards. A niche SaaS serving 100 paying customers in a specific profession - legal, medical, financial - often has stricter compliance and reliability requirements than a consumer app serving millions, because professional customers depend on the tool for their livelihood and cannot tolerate downtime or data loss.
 
 This is where [LaunchStudio](https://launchstudio.eu/en/) fits into the micro-SaaS model specifically. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, which means a micro-SaaS founder gets enterprise-grade security and architecture at a price point built for a 100-customer business, not a 100,000-customer one.
 
 ## The Monthly Support Model for Micro-SaaS
 
-Because micro-SaaS founders often run solo, ongoing reliability matters more than any single feature launch. LaunchStudio's Launch & Grow package includes managed hosting, monitoring, and priority support for €49/month — designed so a solo founder never has to become a part-time DevOps engineer just to keep their 100 customers happy.
+Because micro-SaaS founders often run solo, ongoing reliability matters more than any single feature launch. LaunchStudio's Launch & Grow package includes managed hosting, monitoring, and priority support for €49/month - designed so a solo founder never has to become a part-time DevOps engineer just to keep their 100 customers happy.
 
 [See what a micro-SaaS launch costs](https://launchstudio.eu/en/#calculator) for your specific niche and customer count.
 
@@ -72,21 +72,21 @@ Pricing is where most micro-SaaS founders undersell themselves, usually by impor
 
 **Price the outcome, not the feature count**
 
-A generic scheduling tool competes on features and is priced accordingly — often €10-20/month, because it has to compete with dozens of similar generic tools. A scheduling tool built specifically for independent physiotherapists, with insurance code handling and treatment protocol tracking built in, is not competing on feature count anymore. It's competing on how much time and compliance risk it removes from a specific, well-understood workflow. That reframing alone often justifies 3-5x the price of a generic equivalent.
+A generic scheduling tool competes on features and is priced accordingly - often €10-20/month, because it has to compete with dozens of similar generic tools. A scheduling tool built specifically for independent physiotherapists, with insurance code handling and treatment protocol tracking built in, is not competing on feature count anymore. It's competing on how much time and compliance risk it removes from a specific, well-understood workflow. That reframing alone often justifies 3-5x the price of a generic equivalent.
 
 **Calculate your real price floor**
 
 Work backward from what sustains the business you actually want:
 
-- **Target annual income** — what do you need this business to generate for you personally
-- **Realistic customer ceiling** — how many customers can you reasonably acquire and support as a solo founder in your specific niche (usually 50-500 for a true micro-SaaS)
-- **Required monthly price** — target income divided by (12 × realistic customer ceiling), then adjusted upward for churn, since not every signup stays a full year
+- **Target annual income** - what do you need this business to generate for you personally
+- **Realistic customer ceiling** - how many customers can you reasonably acquire and support as a solo founder in your specific niche (usually 50-500 for a true micro-SaaS)
+- **Required monthly price** - target income divided by (12 × realistic customer ceiling), then adjusted upward for churn, since not every signup stays a full year
 
-A founder targeting €80,000/year with a realistic ceiling of 100 customers needs roughly €67/month per customer before accounting for churn — not the €15-20/month a founder might instinctively reach for out of consumer-pricing habit.
+A founder targeting €80,000/year with a realistic ceiling of 100 customers needs roughly €67/month per customer before accounting for churn - not the €15-20/month a founder might instinctively reach for out of consumer-pricing habit.
 
 **Resist the urge to add tiers you don't need**
 
-Broad-market SaaS uses tiered pricing to capture customers across a wide range of budgets and needs. A true micro-SaaS serving a narrow, well-understood niche often does better with a single price point, or at most two tiers (solo practitioner versus small team). Every additional tier adds decision friction for a prospect and support complexity for a solo founder — costs that only make sense to absorb when your customer base is large and varied enough to need the segmentation.
+Broad-market SaaS uses tiered pricing to capture customers across a wide range of budgets and needs. A true micro-SaaS serving a narrow, well-understood niche often does better with a single price point, or at most two tiers (solo practitioner versus small team). Every additional tier adds decision friction for a prospect and support complexity for a solo founder - costs that only make sense to absorb when your customer base is large and varied enough to need the segmentation.
 
 **Annual pricing as a stability lever**
 
@@ -94,28 +94,28 @@ Offering an annual plan at a modest discount (typically 15-20% off monthly) does
 
 **Revisit pricing annually, not never**
 
-Micro-SaaS founders often set a price once at launch and never revisit it, even as the product gains features and proven reliability. A product that has run for two years with zero downtime and steadily added requested features has earned the right to a price increase for new customers — existing customers can typically be grandfathered, which also becomes a quiet loyalty signal.
+Micro-SaaS founders often set a price once at launch and never revisit it, even as the product gains features and proven reliability. A product that has run for two years with zero downtime and steadily added requested features has earned the right to a price increase for new customers - existing customers can typically be grandfathered, which also becomes a quiet loyalty signal.
 
 **Watch your effective price per hour of support, not just per customer**
 
-A €79/month customer who emails you twice a week is, in practical terms, less profitable than a €99/month customer who never needs to reach out. Track support time per customer segment for the first few months after launch, and let that data — not just raw revenue — inform which customer profile you actually want to target more of. Niches with clear documentation needs or heavy onboarding requirements should price higher specifically to offset the founder time those customers consume, since in a micro-SaaS business, founder time is the scarcest resource, not server capacity.
+A €79/month customer who emails you twice a week is, in practical terms, less profitable than a €99/month customer who never needs to reach out. Track support time per customer segment for the first few months after launch, and let that data - not just raw revenue - inform which customer profile you actually want to target more of. Niches with clear documentation needs or heavy onboarding requirements should price higher specifically to offset the founder time those customers consume, since in a micro-SaaS business, founder time is the scarcest resource, not server capacity.
 
 ## Real example
 
 ### An AI-Native Founder in Action: 87 Customers and Profitable, No Investors Needed
 
-Iris, a former physiotherapy clinic manager in Zwolle, noticed that most physiotherapy practice software was built for large multi-location clinics and was wildly overpriced for solo practitioners. She used Lovable to build FysioPlanner, a scheduling and exercise-plan tool built specifically for independent physiotherapists — with fields and workflows generic scheduling tools didn't offer, like treatment protocol tracking and insurance code management specific to Dutch healthcare billing.
+Iris, a former physiotherapy clinic manager in Zwolle, noticed that most physiotherapy practice software was built for large multi-location clinics and was wildly overpriced for solo practitioners. She used Lovable to build FysioPlanner, a scheduling and exercise-plan tool built specifically for independent physiotherapists - with fields and workflows generic scheduling tools didn't offer, like treatment protocol tracking and insurance code management specific to Dutch healthcare billing.
 
 Iris deliberately never intended to chase thousands of customers. Her goal was 100 loyal, well-served independent physiotherapists paying a fair monthly price. But her Lovable prototype had no secure way to store patient treatment data (a legal requirement under Dutch healthcare data rules) and no recurring billing system.
 
-She contacted LaunchStudio specifically because the team understood the micro-SaaS goal — she wasn't looking for hypergrowth infrastructure, just solid, compliant, reliable engineering sized for her actual ambition. The Manifera team implemented healthcare-compliant data storage, Mollie recurring billing, and a managed hosting plan appropriate for her scale, without over-engineering for growth she didn't want.
+She contacted LaunchStudio specifically because the team understood the micro-SaaS goal - she wasn't looking for hypergrowth infrastructure, just solid, compliant, reliable engineering sized for her actual ambition. The Manifera team implemented healthcare-compliant data storage, Mollie recurring billing, and a managed hosting plan appropriate for her scale, without over-engineering for growth she didn't want.
 
-**Result:** FysioPlanner reached 87 paying independent physiotherapists within five months at €79/month, generating roughly €82,500 in annual recurring revenue — a full-time income for Iris with no employees and no outside investment.
+**Result:** FysioPlanner reached 87 paying independent physiotherapists within five months at €79/month, generating roughly €82,500 in annual recurring revenue - a full-time income for Iris with no employees and no outside investment.
 
-> *"I didn't want to build the next unicorn. I wanted 100 happy customers and a sustainable business. LaunchStudio built exactly that — nothing more, nothing less, and it was priced like it too."*
-> — **Iris Vermeer, Founder, FysioPlanner (Zwolle)**
+> *"I didn't want to build the next unicorn. I wanted 100 happy customers and a sustainable business. LaunchStudio built exactly that - nothing more, nothing less, and it was priced like it too."*
+> - **Iris Vermeer, Founder, FysioPlanner (Zwolle)**
 
-**Cost & Timeline:** €2,900 (Launch & Grow Package) — live in 12 business days.
+**Cost & Timeline:** €2,900 (Launch & Grow Package) - live in 12 business days.
 
 ---
 
@@ -131,7 +131,7 @@ Look for a specific profession or workflow with a clear, recurring pain point an
 
 ### Does LaunchStudio only work with founders targeting rapid hyper-growth?
 
-No. LaunchStudio's fixed-price, scoped packages are equally suited to founders building deliberately small, sustainable micro-SaaS products. The engineering standards — security, reliability, proper architecture — don't change based on your growth ambitions; only the scale of infrastructure does.
+No. LaunchStudio's fixed-price, scoped packages are equally suited to founders building deliberately small, sustainable micro-SaaS products. The engineering standards - security, reliability, proper architecture - don't change based on your growth ambitions; only the scale of infrastructure does.
 
 ### What happens if my micro-SaaS grows beyond 100 customers unexpectedly?
 
@@ -139,7 +139,7 @@ The architecture LaunchStudio builds is designed to scale gracefully. If your mi
 
 ### Is €49/month in managed hosting worth it for a solo micro-SaaS founder?
 
-For most solo founders, yes — the alternative is spending your own time on server maintenance, security patching, and uptime monitoring, time that is worth more spent on customers and product. The managed hosting fee typically costs less than a single hour of a founder's time per month.
+For most solo founders, yes - the alternative is spending your own time on server maintenance, security patching, and uptime monitoring, time that is worth more spent on customers and product. The managed hosting fee typically costs less than a single hour of a founder's time per month.
 
 <script type="application/ld+json">
 {

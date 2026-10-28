@@ -1,4 +1,4 @@
-🎧 Kwame built StockSight AI with **Cursor** — sending an engineer to build Intercom automation in-house ate three and a half weeks and covered only 15% of repetitive tickets. 🧠
+🎧 Kwame built StockSight AI with **Cursor** - sending an engineer to build Intercom automation in-house ate three and a half weeks and covered only 15% of repetitive tickets. 🧠
 
 If your support volume has outgrown manual triage, Intercom automation looks simple until the backend data-sync work turns into a multi-week detour off your roadmap.
 
@@ -12,7 +12,7 @@ If your support volume has outgrown manual triage, Intercom automation looks sim
 
 At **LaunchStudio**, we've been fixing exactly this class of integration problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Automated resolution coverage jumped from 15% to 52% of repetitive tickets — more than 3x the in-house attempt. (€2,100 (Launch & Grow Package) — 8 business days.) 🚀
+Automated resolution coverage jumped from 15% to 52% of repetitive tickets - more than 3x the in-house attempt. (€2,100 (Launch & Grow Package) - 8 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/intercom-automation-in-house-vs-launchstudio
 

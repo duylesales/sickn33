@@ -57,7 +57,7 @@ Dit is een smallere versie van het exacte probleem dat versiebeheer voor offerte
 function saveBidRevision(bidId, basedOnVersionId, changes) {
   const current = getCurrentVersion(bidId);
   if (current.id !== basedOnVersionId) {
-    throw new ConflictError('Offerte is gewijzigd sinds u deze heeft geladen — vernieuw en pas uw bewerking opnieuw toe');
+    throw new ConflictError('Offerte is gewijzigd sinds u deze heeft geladen - vernieuw en pas uw bewerking opnieuw toe');
   }
   return insertNewVersion(bidId, changes, current.id);
 }
@@ -82,9 +82,9 @@ LaunchStudio's beoordeling vond de oorzaak snel: offerte-bewerkingen draaiden al
 **Resultaat:** OffertePlan-klanten kunnen prijsverschillen nu beslechten door te wijzen op een specifieke versie van de offerte met tijdstempel, in plaats van te vertrouwen op geheugen of vertrouwen.
 
 > *"Ik dacht niet na over versiegeschiedenis totdat het geschil van een klant het duidelijk maakte dat we geen manier hadden om het verhaal van beide kanten te bewijzen. Nu laat elke offerte-bewerking een spoor achter – het is de functie waar niemand om vraagt totdat ze deze wanhopig nodig hebben."*
-> — **Bas Wolters, Oprichter, OffertePlan (Apeldoorn)**
+> - **Bas Wolters, Oprichter, OffertePlan (Apeldoorn)**
 
-**Kosten en tijdlijn:** € 1.450 (implementatie van versiebeheer voor offertes en audit-spoor) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.450 (implementatie van versiebeheer voor offertes en audit-spoor) - voltooid in 7 werkdagen.
 
 ---
 

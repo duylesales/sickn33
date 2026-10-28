@@ -66,7 +66,7 @@ Michael werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 
 **Resultaat:** Michael stabiliseerde het systeem, waardoor de widget moeiteloos meer dan 10.000 verzoeken per uur kon verwerken.
 
-**Kosten en tijdlijn:** € 2.600 (schaal- en optimalisatiepakket) — klaar voor productie en geïmplementeerd binnen 9 werkdagen.
+**Kosten en tijdlijn:** € 2.600 (schaal- en optimalisatiepakket) - klaar voor productie en geïmplementeerd binnen 9 werkdagen.
 
 ---
 

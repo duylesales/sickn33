@@ -91,21 +91,21 @@ French is essential for daily life and for most workplaces in Rennes, especially
 
 ## Living in Rennes
 
-Rennes combines a medieval centre with timber-framed houses, a large student population and an active cultural life. It has two metro lines, buses and extensive cycling infrastructure, and high-speed trains reach Paris in about one and a half hours. Housing is more affordable than in Paris, though demand has grown. The Breton coast — Saint-Malo, the Emerald Coast and Mont-Saint-Michel nearby — is within an hour.
+Rennes combines a medieval centre with timber-framed houses, a large student population and an active cultural life. It has two metro lines, buses and extensive cycling infrastructure, and high-speed trains reach Paris in about one and a half hours. Housing is more affordable than in Paris, though demand has grown. The Breton coast - Saint-Malo, the Emerald Coast and Mont-Saint-Michel nearby - is within an hour.
 
 ## How OnlyAIJobs Fits a Rennes Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for better placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Rennes you will find few or no local vacancies there today. Use French job portals, APEC, company career pages and Inria and university vacancy lists as primary sources. OnlyAIJobs is useful for comparing Rennes with the Netherlands — where employers such as Accenture, Cegeka, Holland Innovative and Mollie list AI roles — and as a method: in a metropolitan area where sites are spread between the city, Cesson-Sévigné, Bruz and industrial zones, searching by real commute matters. Rennes employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Rennes you will find few or no local vacancies there today. Use French job portals, APEC, company career pages and Inria and university vacancy lists as primary sources. OnlyAIJobs is useful for comparing Rennes with the Netherlands - where employers such as Accenture, Cegeka, Holland Innovative and Mollie list AI roles - and as a method: in a metropolitan area where sites are spread between the city, Cesson-Sévigné, Bruz and industrial zones, searching by real commute matters. Rennes employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## AI for Cybersecurity in Practice
 
-Security teams face enormous volumes of logs, network flows and alerts, and machine learning helps them focus on what matters. Typical projects in Rennes include detecting anomalous network behaviour, classifying malware from static and dynamic features, correlating alerts across systems, identifying phishing campaigns and extracting indicators from threat reports with NLP. The challenges are distinctive: attackers adapt, labelled data is scarce, false positives are costly for analysts and models must be explainable enough for analysts to trust them. At the same time, AI systems themselves need protection. Research groups and companies in Rennes work on adversarial robustness, data poisoning, model extraction and privacy attacks — topics that the EU AI Act makes directly relevant by requiring robustness and cybersecurity for high-risk AI systems.
+Security teams face enormous volumes of logs, network flows and alerts, and machine learning helps them focus on what matters. Typical projects in Rennes include detecting anomalous network behaviour, classifying malware from static and dynamic features, correlating alerts across systems, identifying phishing campaigns and extracting indicators from threat reports with NLP. The challenges are distinctive: attackers adapt, labelled data is scarce, false positives are costly for analysts and models must be explainable enough for analysts to trust them. At the same time, AI systems themselves need protection. Research groups and companies in Rennes work on adversarial robustness, data poisoning, model extraction and privacy attacks - topics that the EU AI Act makes directly relevant by requiring robustness and cybersecurity for high-risk AI systems.
 
 ## Video, Images and Immersive Media
 
-Rennes' expertise in video goes back decades, to research and industry work on digital television and compression standards. Today, teams in the region apply deep learning to video compression, super-resolution, quality assessment, content analysis and immersive formats such as volumetric video. Learned compression — using neural networks to encode images and video more efficiently — is an active research area where Rennes teams contribute. Engineers with backgrounds in signal processing and computer vision find a rare concentration of relevant roles in the city, combining research depth with industrial standards work.
+Rennes' expertise in video goes back decades, to research and industry work on digital television and compression standards. Today, teams in the region apply deep learning to video compression, super-resolution, quality assessment, content analysis and immersive formats such as volumetric video. Learned compression - using neural networks to encode images and video more efficiently - is an active research area where Rennes teams contribute. Engineers with backgrounds in signal processing and computer vision find a rare concentration of relevant roles in the city, combining research depth with industrial standards work.
 
 ## Research Careers at Inria and IRISA
 
@@ -170,7 +170,7 @@ Ask in the first interview whether the role touches defence work; the answer sha
 
 A French ML engineer working on fraud detection for a Paris fintech wants more space and a shorter commute. He targets AI jobs in Rennes and receives an offer from a cybersecurity company building threat detection products.
 
-The salary is slightly lower than in Paris, but his rent drops substantially, and he can cycle to work. The role involves anomaly detection on network data and adversarial robustness — a natural extension of his fraud experience. After a year, he says the concentration of security expertise in Rennes has accelerated his learning, and he occasionally takes the train to Paris for meetings with clients.
+The salary is slightly lower than in Paris, but his rent drops substantially, and he can cycle to work. The role involves anomaly detection on network data and adversarial robustness - a natural extension of his fraud experience. After a year, he says the concentration of security expertise in Rennes has accelerated his learning, and he occasionally takes the train to Paris for meetings with clients.
 
 ## Key Takeaways
 

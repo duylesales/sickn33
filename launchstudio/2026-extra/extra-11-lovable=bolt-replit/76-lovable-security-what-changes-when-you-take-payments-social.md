@@ -1,13 +1,13 @@
-🚨 Bas Tolhuizen's Lesgeld collects lesson fees for 31 music schools, driving instructors and sports clubs around Roermond — about €40,000 a month. The payment webhook accepted any request and never checked the provider's signature. Someone sent it a forged "payment succeeded" event. It worked. 😳
+🚨 Bas Tolhuizen's Lesgeld collects lesson fees for 31 music schools, driving instructors and sports clubs around Roermond - about €40,000 a month. The payment webhook accepted any request and never checked the provider's signature. Someone sent it a forged "payment succeeded" event. It worked. 😳
 
-Over eleven days, 23 accounts were activated without a single payment — and used to collect real money from real parents. Here's what changes once you take payments: 🧠
+Over eleven days, 23 accounts were activated without a single payment - and used to collect real money from real parents. Here's what changes once you take payments: 🧠
 
 ❌ A webhook that trusts whatever reaches it
 ❌ No deduplication, so retried notifications create duplicate subscriptions
 ❌ Plan or amount decided in the browser instead of on the server
 ❌ Anyone on the team able to issue refunds, with no record of why
 
-✅ Verify every webhook signature — and re-validate historical events against the provider
+✅ Verify every webhook signature - and re-validate historical events against the provider
 ✅ Deduplicate on event ID and keep the endpoint reliably reachable
 ✅ Determine plans and amounts server-side; enable rate limits and the provider's fraud tools
 ✅ An immutable audit trail for every money operation, with restricted refund rights

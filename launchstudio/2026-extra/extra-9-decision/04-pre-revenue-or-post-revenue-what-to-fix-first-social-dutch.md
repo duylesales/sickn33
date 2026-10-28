@@ -1,10 +1,10 @@
 🚨 € 19 per maand, van twee kwekers uit de bèta. Die ene betaling zette Brams hele prioriteitenlijst op zijn kop vóórdat hij doorhad wat het betekende. 😳
 
-Omzet is geen willekeurig bedrag, het is een schakelaar — drie cruciale zaken slaan direct om zodra de eerste euro binnenkomt: 🧠
+Omzet is geen willekeurig bedrag, het is een schakelaar - drie cruciale zaken slaan direct om zodra de eerste euro binnenkomt: 🧠
 
 ❌ Kwekerij las de abonnementsstatus uit van het laatste webhook-event, in plaats van een eigen statusmodel
 ❌ Databaseback-ups hadden een bewaartermijn van slechts drie dagen en waren nog nooit hersteld
-❌ De kolom `nursery_id` stond wel op orders, maar ontbrak op foto's — maandenlang te raden
+❌ De kolom `nursery_id` stond wel op orders, maar ontbrak op foto's - maandenlang te raden
 ❌ Monitoring en staging, waar Bram zijn budget aan wilde besteden, waren helemaal niet urgent
 
 ✅ Onomkeerbaarheid, juridische plichten en publiek falen worden acuut zodra geld van eigenaar wisselt

@@ -30,7 +30,7 @@ Vijf categorieën verklaren het meeste van wat erdoor glipt.
 
 **Subtiel verkeerde logica.** Een off-by-one, een grens uitgesloten die erbij had moeten horen, een conditie omgedraaid in een tak die niemand uitvoert. De code leest correct; ze berekent iets dat net iets anders is dan u wilde.
 
-**Verzonnen interfaces.** Een methode die niet bestaat op dat object, een parameter die de bibliotheek niet accepteert, een veld dat de API niet teruggeeft. Meestal direct opgevangen door een compiler of een test, en niet altijd — een veld uit een response dat simpelweg undefined is, levert een pagina op die niets toont in plaats van een fout.
+**Verzonnen interfaces.** Een methode die niet bestaat op dat object, een parameter die de bibliotheek niet accepteert, een veld dat de API niet teruggeeft. Meestal direct opgevangen door een compiler of een test, en niet altijd - een veld uit een response dat simpelweg undefined is, levert een pagina op die niets toont in plaats van een fout.
 
 **Alleen correct voor het gelukkige pad.** Geen afhandeling van het lege geval, de mislukking, de ontbrekende rechten of de time-out. Dit is in volume de meest voorkomende categorie.
 
@@ -50,7 +50,7 @@ Dus: maak één wijziging tegelijk, kijk naar de diff voordat u accepteert, en w
 
 Hebt u per wijziging tijd voor precies één vraag, stel dan deze: wat gebeurt er als er niets is?
 
-Een lege lijst, een ontbrekend record, een leeg veld, een gebruiker zonder organisatie, een account dat voor het eerst inlogt. Gegenereerde code is geschreven voor het geval dat data bestaat, en de mislukking wanneer dat niet zo is, varieert van een leeg scherm tot een exception bij het eerste bezoek van een klant — wat het slechtst denkbare moment is.
+Een lege lijst, een ontbrekend record, een leeg veld, een gebruiker zonder organisatie, een account dat voor het eerst inlogt. Gegenereerde code is geschreven voor het geval dat data bestaat, en de mislukking wanneer dat niet zo is, varieert van een leeg scherm tot een exception bij het eerste bezoek van een klant - wat het slechtst denkbare moment is.
 
 De tweede vraag, als er tijd is: wat gebeurt er als het mislukt? Het verzoek geeft een fout, de dienst is traag, de rechten worden geweigerd. Gegenereerde code vangt fouten af en doet er vaak niets nuttigs mee.
 
@@ -60,7 +60,7 @@ Niet elke wijziging verdient dezelfde aandacht, en de eerlijke verdeling voor ee
 
 Alles wat met geld te maken heeft. Alles wat met rechten of autorisatie te maken heeft. Alles wat verwijdert of overschrijft. Alles wat iets naar een klant stuurt. Alles wat het databaseschema wijzigt.
 
-Die vijf categorieën zijn waar een fout duur of onomkeerbaar is. Al het andere — een layoutwijziging, een nieuw weergaveveld, een tekstaanpassing — is te controleren door naar het product te kijken.
+Die vijf categorieën zijn waar een fout duur of onomkeerbaar is. Al het andere - een layoutwijziging, een nieuw weergaveveld, een tekstaanpassing - is te controleren door naar het product te kijken.
 
 Dit is ook de verdeling om een assistent mee te geven wanneer u die vraagt te reviewen: wijs hem op de wijziging en vraag specifiek naar autorisatie, naar de foutpaden, naar of dit overeenkomt met hoe de rest van de codebase het doet. Open vragen leveren algemene antwoorden op; specifieke vragen leveren bruikbare op.
 
@@ -68,7 +68,7 @@ Dit is ook de verdeling om een assistent mee te geven wanneer u die vraagt te re
 
 Een model vragen code te reviewen is echt nuttig en heeft een specifieke beperking: het is goed in het vinden van wat aanwezig en fout is, en slecht in het opmerken van wat ontbreekt.
 
-Het zal u dus vertellen dat een variabele ongebruikt is of een conditie overbodig. Het zal u minder betrouwbaar vertellen dat geen enkel endpoint in dit bestand controleert wie het vraagt, omdat niets aan de code er onjuist uitziet — de afwezigheid is alleen zichtbaar tegen een verwachting die het model niet kreeg.
+Het zal u dus vertellen dat een variabele ongebruikt is of een conditie overbodig. Het zal u minder betrouwbaar vertellen dat geen enkel endpoint in dit bestand controleert wie het vraagt, omdat niets aan de code er onjuist uitziet - de afwezigheid is alleen zichtbaar tegen een verwachting die het model niet kreeg.
 
 Het productieve patroon is de verwachting meegeven. "Controleert dit endpoint of de vragende gebruiker hoort bij de organisatie die eigenaar is van dit record?" is een vraag met een controleerbaar antwoord. "Review dit bestand" is een verzoek om een mening.
 
@@ -80,7 +80,7 @@ Een aanzienlijk deel van de oprichters die deze tools gebruiken, kan de code nie
 
 **Review in plaats daarvan het gedrag, systematisch.** Werk na een wijziging een geschreven lijst af: het ding dat veranderde, het ding ernaast, en de hoofdflow van het product van begin tot eind. Opgeschreven en elke keer op dezelfde manier gedaan, vangt dit de meeste functionele regressies op.
 
-**Vraag de assistent de wijziging in gewone taal uit te leggen**, en controleer of de uitleg overeenkomt met wat u vroeg. Een beschrijving die bestanden of gedrag noemt die u niet verwachtte, is het signaal — u hoeft de code niet te lezen om op te merken dat het antwoord iets bevat waar u nooit om vroeg.
+**Vraag de assistent de wijziging in gewone taal uit te leggen**, en controleer of de uitleg overeenkomt met wat u vroeg. Een beschrijving die bestanden of gedrag noemt die u niet verwachtte, is het signaal - u hoeft de code niet te lezen om op te merken dat het antwoord iets bevat waar u nooit om vroeg.
 
 **Vraag specifiek naar de vijf categorieën.** Raakte deze wijziging iets aan dat met rechten te maken heeft? Verwerkt iets hier geld? Wijzigde dit de databasestructuur? Dit zijn vragen met een ja of nee als antwoord, en een ja betekent een second opinion halen voordat u deployt.
 
@@ -92,7 +92,7 @@ En gebruik branches. Werk dat kan worden weggegooid, is werk waarover u niet zek
 
 Alles hierboven wordt makkelijker of onmogelijk afhankelijk van één variabele: hoeveel er in één keer veranderde.
 
-Een wijziging die twee bestanden raakt, is in een minuut te lezen. Een wijziging die er twintig raakt, kan door niemand zinvol worden gelezen, en wat er in de praktijk gebeurt, is dat ze wordt doorgebladerd en geaccepteerd — wat hetzelfde is als niet reviewen, met als extra kosten dat u gelooft dat u het wel deed.
+Een wijziging die twee bestanden raakt, is in een minuut te lezen. Een wijziging die er twintig raakt, kan door niemand zinvol worden gelezen, en wat er in de praktijk gebeurt, is dat ze wordt doorgebladerd en geaccepteerd - wat hetzelfde is als niet reviewen, met als extra kosten dat u gelooft dat u het wel deed.
 
 Drie gewoonten houden wijzigingen reviewbaar.
 
@@ -108,7 +108,7 @@ Dit is gewone engineeringdiscipline, en ze doet er hier meer toe dan gewoonlijk 
 
 Voor een oprichter die alleen werkt, is dit een gewoonte in plaats van een project: één wijziging tegelijk met de diff gelezen vóór accepteren, wijzigingen die groter zijn dan het verzoek als verdacht behandeld, bij elke wijziging gevraagd naar het lege geval en het foutgeval, grondige review voorbehouden aan geld, rechten, verwijderen, uitgaande communicatie en schema, een geschreven checklist van de vijf foutcategorieën, specifieke in plaats van open vragen wanneer u een assistent laat reviewen, en versiebeheer zodat alles wat onduidelijk is kan worden teruggedraaid in plaats van beredeneerd.
 
-LaunchStudio doet dit als dienst voor oprichters die een tweede lezer willen op de wijzigingen die ertoe doen. De engineers zijn van Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit als dienst voor oprichters die een tweede lezer willen op de wijzigingen die ertoe doen. De engineers zijn van Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Stuur ons een week aan wijzigingen](https://launchstudio.eu/nl/#contact) en wij vertellen u welke we zouden hebben tegengehouden.
 
@@ -120,18 +120,18 @@ Dennis Vermaat bouwde Sleutelbeheer in Cursor: sleutel- en toegangsbeheer voor v
 
 Hij vroeg om een wijziging in hoe verlopen sleuteltoewijzingen werden afgehandeld. De resulterende code was schoon, goed benoemd en las correct. Hij accepteerde haar zonder goed naar de diff te kijken, omdat de functie werkte toen hij die testte.
 
-De wijziging had ook een niet-gerelateerde conditie in hetzelfde bestand aangepast, waardoor de controle werd omgedraaid die bepaalde of een sleutelhouder de sleutellijst van een gebouw mocht bekijken. In het pad dat hij testte — een beheerder die de eigen organisatie bekijkt — was het resultaat identiek. In het pad dat hij niet testte, kon een aannemer met beperkte toegang nu elke sleutelhouder zien voor elk gebouw dat de organisatie beheerde, inclusief privéadressen.
+De wijziging had ook een niet-gerelateerde conditie in hetzelfde bestand aangepast, waardoor de controle werd omgedraaid die bepaalde of een sleutelhouder de sleutellijst van een gebouw mocht bekijken. In het pad dat hij testte - een beheerder die de eigen organisatie bekijkt - was het resultaat identiek. In het pad dat hij niet testte, kon een aannemer met beperkte toegang nu elke sleutelhouder zien voor elk gebouw dat de organisatie beheerde, inclusief privéadressen.
 
 Het werd zeven weken later gevonden tijdens een routinereview, zonder enig bewijs dat iemand het had gebruikt.
 
-Twee werkdagen: de conditie gecorrigeerd en een test geschreven die de rechten voor beide rollen controleert; een review van elke wijziging in die periode, die nog twee ongevraagde aanpassingen vond — een gewijzigde standaardbewaartermijn en een verwijderde import die stilletjes een validatie had uitgeschakeld; een werkwijze ingevoerd van één wijziging tegelijk met de diff gelezen vóór accepteren; een geschreven checklist die de vijf foutcategorieën dekt; geautomatiseerde tests toegevoegd voor autorisatie op de twaalf endpoints die sleuteldata blootstellen, omdat het incident een rechtenwijziging was die niets controleerde; en de discipline in versiebeheer aangescherpt zodat het werk van elke sessie een aparte branch is die kan worden weggegooid.
+Twee werkdagen: de conditie gecorrigeerd en een test geschreven die de rechten voor beide rollen controleert; een review van elke wijziging in die periode, die nog twee ongevraagde aanpassingen vond - een gewijzigde standaardbewaartermijn en een verwijderde import die stilletjes een validatie had uitgeschakeld; een werkwijze ingevoerd van één wijziging tegelijk met de diff gelezen vóór accepteren; een geschreven checklist die de vijf foutcategorieën dekt; geautomatiseerde tests toegevoegd voor autorisatie op de twaalf endpoints die sleuteldata blootstellen, omdat het incident een rechtenwijziging was die niets controleerde; en de discipline in versiebeheer aangescherpt zodat het werk van elke sessie een aparte branch is die kan worden weggegooid.
 
 **Resultaat:** geen bewijs van toegang door de betrokken aannemersaccounts, bevestigd uit logs. Dennis' oordeel is dat de verandering in werkwijze meer uitmaakte dan de fix: in het jaar daarna vingen het lezen van diffs nog vier ongevraagde aanpassingen op, waarvan twee ernstige gevolgen zouden hebben gehad.
 
 > *"Ik vroeg het om te veranderen hoe verlopen werkte. Het draaide ook een rechtencontrole in hetzelfde bestand om, en de versie die ik testte gedroeg zich identiek. De diff had me dertig seconden gekost."*
-> — **Dennis Vermaat, Oprichter, Sleutelbeheer (Dordrecht)**
+> - **Dennis Vermaat, Oprichter, Sleutelbeheer (Dordrecht)**
 
-**Kosten & Doorlooptijd:** €2.300 (correctie van de conditie met tests, terugblikkende review van zeven weken aan wijzigingen, autorisatietestsuite over twaalf endpoints, reviewpraktijk en checklist, branchdiscipline) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.300 (correctie van de conditie met tests, terugblikkende review van zeven weken aan wijzigingen, autorisatietestsuite over twaalf endpoints, reviewpraktijk en checklist, branchdiscipline) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -145,7 +145,7 @@ Lees de diff in plaats van het afgewerkte bestand, één wijziging tegelijk. Ong
 
 ### Wat moet ik bij elke wijziging controleren?
 
-Wat er gebeurt als er niets is — een lege lijst, een ontbrekend record, een nieuwe gebruiker — en wat er gebeurt als het mislukt. Gegenereerde code is geschreven voor het geval dat data bestaat en verzoeken slagen.
+Wat er gebeurt als er niets is - een lege lijst, een ontbrekend record, een nieuwe gebruiker - en wat er gebeurt als het mislukt. Gegenereerde code is geschreven voor het geval dat data bestaat en verzoeken slagen.
 
 ### Welke wijzigingen verdienen echte aandacht?
 
@@ -153,7 +153,7 @@ Geld, rechten, verwijderen, alles wat naar een klant gaat, en schemawijzigingen.
 
 ### Kan ik de assistent zijn eigen code laten reviewen?
 
-Nuttig, als u specifieke vragen stelt. Hij vindt wat aanwezig en fout is, en mist wat ontbreekt — vraag dus "controleert dit de autorisatie" in plaats van "review dit".
+Nuttig, als u specifieke vragen stelt. Hij vindt wat aanwezig en fout is, en mist wat ontbreekt - vraag dus "controleert dit de autorisatie" in plaats van "review dit".
 
 <script type="application/ld+json">
 {
@@ -181,7 +181,7 @@ Nuttig, als u specifieke vragen stelt. Hij vindt wat aanwezig en fout is, en mis
       "name": "Wat moet bij elke door AI geschreven wijziging worden gecontroleerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het lege geval en het foutgeval — gegenereerde code is geschreven voor data die bestaat en verzoeken die slagen."
+        "text": "Het lege geval en het foutgeval - gegenereerde code is geschreven voor data die bestaat en verzoeken die slagen."
       }
     },
     {
@@ -189,7 +189,7 @@ Nuttig, als u specifieke vragen stelt. Hij vindt wat aanwezig en fout is, en mis
       "name": "Welke wijzigingen verdienen een grondige review?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Geld, rechten, verwijderen, uitgaande communicatie en schemawijzigingen — waar fouten duur of onomkeerbaar zijn."
+        "text": "Geld, rechten, verwijderen, uitgaande communicatie en schemawijzigingen - waar fouten duur of onomkeerbaar zijn."
       }
     },
     {

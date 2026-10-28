@@ -1,4 +1,4 @@
-🔥 Nora built a prototype using **Cursor** — nora, a language teacher, used **cursor** to build a conversation bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Nora built a prototype using **Cursor** - nora, a language teacher, used **cursor** to build a conversation bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Nora's application achieved silky-smooth performance: Audio playback latency dropped to under 600ms, making conversations feel natural. (€2,100 (Voice Streaming Package) — production-ready and deployed in 5 business days.). 🚀
+Nora's application achieved silky-smooth performance: Audio playback latency dropped to under 600ms, making conversations feel natural. (€2,100 (Voice Streaming Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/voice-ai-integrating-elevenlabs-saas
 

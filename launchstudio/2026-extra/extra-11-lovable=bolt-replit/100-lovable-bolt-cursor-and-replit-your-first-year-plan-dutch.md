@@ -50,7 +50,7 @@ API-sleutels en geheimen server-side opslaan. Roteer direct elke sleutel die ooi
 
 Data duurzaam opslaan: een externe, beheerde database in een EU-regio (in verband met AVG/GDPR), uploads in object storage (zoals S3 of Supabase Storage) in plaats van lokaal naast je code, en backups die je daadwerkelijk minimaal één keer hebt hersteld en getimed.
 
-Een eigen custom domein met HTTPS. Deel vanaf nu uitsluitend het definitieve productie-adres met klanten — nooit meer een preview-link van de tool.
+Een eigen custom domein met HTTPS. Deel vanaf nu uitsluitend het definitieve productie-adres met klanten - nooit meer een preview-link van de tool.
 
 Error tracking en uptime monitoring: dit kost twintig minuten en toont je vrijwel direct een hapering waar je nog geen weet van had.
 
@@ -72,7 +72,7 @@ Een gevestigd bedrijf met een formele inkoop- en securityprocedure wil je softwa
 
 Een compagnon, een freelance developer, of een klant waarvan het team afzonderlijke medewerkersaccounts vereist.
 
-**Wat nu urgent wordt:** versiebeheer (git) als de enige bron van waarheid met kleine, overzichtelijke pull requests; een staging-omgeving met eigen geanonimiseerde testdata; een rollback-procedure die je aantoonbaar hebt getest en getimed; individuele accounts voor elk teamlid met een protocol om accounts direct in te trekken bij vertrek; en bedrijfslogica die is losgetrokken uit de automatisch gegenereerde schermen, zodat twee mensen — of twee AI-tools — elkaars werk niet overschrijven.
+**Wat nu urgent wordt:** versiebeheer (git) als de enige bron van waarheid met kleine, overzichtelijke pull requests; een staging-omgeving met eigen geanonimiseerde testdata; een rollback-procedure die je aantoonbaar hebt getest en getimed; individuele accounts voor elk teamlid met een protocol om accounts direct in te trekken bij vertrek; en bedrijfslogica die is losgetrokken uit de automatisch gegenereerde schermen, zodat twee mensen - of twee AI-tools - elkaars werk niet overschrijven.
 
 Dit is ook het moment waarop de taakverdeling tussen tools landt: generatieve tools voor snelle interface-oppervlakken, code-editors zoals Cursor voor architectuur en backend-logica, en de vaste regel dat een scherm overgaat naar formele code zodra gebruikers afhankelijk worden van de berekeningen die erin plaatsvinden.
 
@@ -107,7 +107,7 @@ Over tientallen projecten die met Lovable, Bolt, Cursor en Replit zijn gebouwd, 
 5. **Webhooks zonder cryptografische verificatie.** Iedereen die het webhook-adres achterhaalt, kan je applicatie vertellen dat er een betaling is voldaan.
 6. **Geen logging en geen error tracking.** Waardoor incidenten achteraf onmogelijk te reconstrueren zijn en storingen pas worden opgemerkt als een boze klant belt.
 7. **Gegevens gekoppeld aan gebruikers in plaats van organisaties.** Wat prima werkt totdat een klant een collega wil laten meekijken, wat onvermijdelijk leidt tot gedeelde wachtwoorden.
-8. **Statistieken en totalen zonder tenant-filter.** Een dashboard-teller of CSV-export die de volledige tabel telt in plaats van alleen de records van de ingelogde organisatie — de klassieke oorzaak van datalekken in applicaties waarvan de hoofdpagina's wel netjes gefilterd zijn.
+8. **Statistieken en totalen zonder tenant-filter.** Een dashboard-teller of CSV-export die de volledige tabel telt in plaats van alleen de records van de ingelogde organisatie - de klassieke oorzaak van datalekken in applicaties waarvan de hoofdpagina's wel netjes gefilterd zijn.
 
 Geen van deze punten is een tekortkoming van de AI-tools zelf, en geen ervan vereist uitzonderlijke magie om op te lossen. Het zijn stuk voor stuk de logische gevolgen van een prompt waarin werd gevraagd om *iets werkend te krijgen*, uitgevoerd door een systeem dat geen enkele reden had om rekening te houden met de rest van de wereld.
 
@@ -115,9 +115,9 @@ Controleer deze acht punten. Wat de uitkomst ook is: je weet vanmiddag iets over
 
 ## Wat elke fase kost
 
-Voor een realistische begroting: fase 2 — de week van productierijpheid — kost doorgaans € 1.500 tot € 3.000. Fase 3, het klaarmaken voor B2B-ondernemingen en inkooptrajecten, kost € 3.000 tot € 6.000, afhankelijk van de complexiteit van multi-tenancy en audit trails. Fase 4 en 5 zijn meestal compacter, € 1.500 tot € 4.000 per fase, omdat het fundament er dan al staat.
+Voor een realistische begroting: fase 2 - de week van productierijpheid - kost doorgaans € 1.500 tot € 3.000. Fase 3, het klaarmaken voor B2B-ondernemingen en inkooptrajecten, kost € 3.000 tot € 6.000, afhankelijk van de complexiteit van multi-tenancy en audit trails. Fase 4 en 5 zijn meestal compacter, € 1.500 tot € 4.000 per fase, omdat het fundament er dan al staat.
 
-LaunchStudio biedt deze trajecten aan als afgebakende pakketten tussen € 800 en € 7.500 — grofweg 20% van wat een traditioneel softwarebureau voor vergelijkbaar werk rekent — gecombineerd met managed hosting voor € 49 per maand voor het doorlopende onderhoud. Alle accounts blijven op jouw naam, de codebase blijft volgens open standaarden opgebouwd, en je kunt daarna gewoon met je eigen AI-tooling blijven doorbouwen.
+LaunchStudio biedt deze trajecten aan als afgebakende pakketten tussen € 800 en € 7.500 - grofweg 20% van wat een traditioneel softwarebureau voor vergelijkbaar werk rekent - gecombineerd met managed hosting voor € 49 per maand voor het doorlopende onderhoud. Alle accounts blijven op jouw naam, de codebase blijft volgens open standaarden opgebouwd, en je kunt daarna gewoon met je eigen AI-tooling blijven doorbouwen.
 
 Achter LaunchStudio staat Manifera: elf jaar ervaring, meer dan 160 productieprojecten, ruim 120 engineers, en klanten als Vodafone, TNO, CFLW, Statler BI en Xpar Vision, werkend vanuit Amsterdam Herengracht 420, Singapore en Ho Chi Minhstad.
 
@@ -127,7 +127,7 @@ Achter LaunchStudio staat Manifera: elf jaar ervaring, meer dan 160 productiepro
 
 ### Een jaar in de praktijk, in de volgorde waarin het echt gebeurde
 
-Lianne de Ruiter bouwde Bezoekregistratie met Lovable: digitale bezoekersregistratie voor kantoren en productielocaties — aanmelden bij de receptie, automatische notificaties naar de gastheer, actuele ontruimingslijsten bij calamiteiten en veiligheidschecks voor externe aannemers.
+Lianne de Ruiter bouwde Bezoekregistratie met Lovable: digitale bezoekersregistratie voor kantoren en productielocaties - aanmelden bij de receptie, automatische notificaties naar de gastheer, actuele ontruimingslijsten bij calamiteiten en veiligheidschecks voor externe aannemers.
 
 **Februari.** Een werkend prototype gebouwd in negen dagen, gedemonstreerd aan vier bevriende facilitair managers. Twee gaven aan direct te willen betalen. Totale kosten: één platformabonnement.
 
@@ -142,7 +142,7 @@ Lianne de Ruiter bouwde Bezoekregistratie met Lovable: digitale bezoekersregistr
 **Resultaat:** elf betalende klanten na precies één jaar, een maandelijks terugkerende omzet (MRR) van € 4.300, en een totale investering in engineering van € 11.200 verspreid over het hele jaar.
 
 > *"Elk stuk werk waarvoor ik betaalde, werd ongeveer een week voordat ik het liet uitvoeren urgent. Het enige waar ik echt spijt van heb, zijn de vier maanden aan pasfoto's van bezoekers die ik kwijtraakte voordat iemand me vertelde dat bestanden een herdeploy niet overleven."*
-> — **Lianne de Ruiter, Oprichter, Bezoekregistratie (Veenendaal)**
+> - **Lianne de Ruiter, Oprichter, Bezoekregistratie (Veenendaal)**
 
 **Kosten & Doorlooptijd:** € 11.200 verdeeld over vier gerichte ontwikkeltrajecten over twaalf maanden, plus € 49 per maand managed hosting vanaf maand elf.
 

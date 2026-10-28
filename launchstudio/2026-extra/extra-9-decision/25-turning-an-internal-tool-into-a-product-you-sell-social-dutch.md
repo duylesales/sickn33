@@ -1,4 +1,4 @@
-🚨 Kunt u de exacte SQL uitschrijven die bewijst dat klant B nooit data van klant A heeft kunnen inzien? Geen applicatiecode — de database-constraint die het onmogelijk maakt. Een oprichter ontdekte dit pas toen een chauffeur van baan wisselde en zijn oude ritten nog zag. 😳
+🚨 Kunt u de exacte SQL uitschrijven die bewijst dat klant B nooit data van klant A heeft kunnen inzien? Geen applicatiecode - de database-constraint die het onmogelijk maakt. Een oprichter ontdekte dit pas toen een chauffeur van baan wisselde en zijn oude ritten nog zag. 😳
 
 Een `company_id`-kolom is nog geen multi-tenancy. Het is slechts een verklede naamgevingsconventie: 🧠
 

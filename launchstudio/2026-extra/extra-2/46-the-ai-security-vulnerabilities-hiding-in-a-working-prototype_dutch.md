@@ -63,11 +63,11 @@ Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd 
 
 Het begrijpen van het exacte mechanisme maakt direct duidelijk waarom dit lek zo veelvoorkomend is in AI-gegeneerde downloadfuncties en hoe eenvoudig het kan worden voorkomen zodra het is herkend:
 
-1. **Een downloadfunctie accepteert een bestandsnaam als invoerparameter** — bijvoorbeeld via een URL zoals `/download?file=jaarverslag-2025.pdf`.
-2. **De webserver combineert die bestandsnaam met een basismap** om het volledige pad op de harde schijf op te bouwen — conceptueel iets zoals `/var/www/uploads/` plus de aangeleverde bestandsnaam.
-3. **Zonder strikte validatie kan de bestandsnaam relatieve navigatietekens bevatten**, zoals `../`. Elk voorkomen van `../` instrueert het bestandssysteem om één map omhoog te gaan in de mappenstructuur — een invoer zoals `../../../../etc/passwd` of een pad naar een `.env`-bestand breekt zo volledig uit de bedoelde uploadmap.
-4. **De server leest en retourneert het bestand zonder argwaan** — tenzij er expliciete code is toegevoegd die controleert of het resulterende pad binnen de toegestane basismap blijft, heeft het besturingssysteem geen ingebouwde reden om het verzoek te weigeren.
-5. **Coderingstrucs kunnen de detectie bemoeilijken** — door gebruik te maken van URL-encoding (zoals `%2e%2e%2f`) kunnen aanvallers oppervlakkige string-controles eenvoudig omzeilen.
+1. **Een downloadfunctie accepteert een bestandsnaam als invoerparameter** - bijvoorbeeld via een URL zoals `/download?file=jaarverslag-2025.pdf`.
+2. **De webserver combineert die bestandsnaam met een basismap** om het volledige pad op de harde schijf op te bouwen - conceptueel iets zoals `/var/www/uploads/` plus de aangeleverde bestandsnaam.
+3. **Zonder strikte validatie kan de bestandsnaam relatieve navigatietekens bevatten**, zoals `../`. Elk voorkomen van `../` instrueert het bestandssysteem om één map omhoog te gaan in de mappenstructuur - een invoer zoals `../../../../etc/passwd` of een pad naar een `.env`-bestand breekt zo volledig uit de bedoelde uploadmap.
+4. **De server leest en retourneert het bestand zonder argwaan** - tenzij er expliciete code is toegevoegd die controleert of het resulterende pad binnen de toegestane basismap blijft, heeft het besturingssysteem geen ingebouwde reden om het verzoek te weigeren.
+5. **Coderingstrucs kunnen de detectie bemoeilijken** - door gebruik te maken van URL-encoding (zoals `%2e%2e%2f`) kunnen aanvallers oppervlakkige string-controles eenvoudig omzeilen.
 
 **Waarom de structurele oplossing relatief eenvoudig is zodra u weet waar u naar moet zoeken:** de juiste aanpak lost het opgevraagde pad eerst volledig canoniek op, en controleert vervolgens strikt of dat resulterende pad daadwerkelijk binnen de beoogde basismap valt. Voldoet het pad daar niet aan, dan wordt het netwerkverzoek direct en zonder uitzondering geweigerd, ongeacht hoe de traversal-poging was gecodeerd of vermomd. Dit is een beproefd, grondig gedocumenteerd patroon met bekende, correcte implementaties in vrijwel elke moderne programmeertaal. De technische oplossing zelf is daarom zelden het moeilijke onderdeel; de echte uitdaging is simpelweg om er actief en systematisch aan te denken om elke functionaliteit die bestanden op naam aanroept aan deze controle te onderwerpen.
 
@@ -82,9 +82,9 @@ Een vrijwilliger met een technische achtergrond testte de downloadfunctie uit ni
 **Resultaat:** LaunchStudio implementeerde strikte padvalidatie die garandeert dat elk downloadverzoek alleen binnen de bedoelde map resolvet. Dit sloot de kloof zonder te veranderen hoe beheerders hun legitieme documenten uploadde of downloadde.
 
 > *"Hij probeerde oprecht geen problemen te veroorzaken, hij was gewoon nieuwsgierig wat er zou gebeuren. Het had net zo goed iemand kunnen zijn met veel minder goedbedoelde intenties."*
-> — **Max Hoekstra, Oprichter, GemeenteBeheer (Zutphen)**
+> - **Max Hoekstra, Oprichter, GemeenteBeheer (Zutphen)**
 
-**Kosten en tijdlijn:** € 2.200 (herstel van path traversal en validatie van bestandstoegang) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (herstel van path traversal en validatie van bestandstoegang) - voltooid in 7 werkdagen.
 
 ---
 

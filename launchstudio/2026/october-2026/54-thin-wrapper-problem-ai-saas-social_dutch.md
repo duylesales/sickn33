@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype via **AI builders** — als oprichter van een LegalTech SaaS bouwde ze een contract-samenvatter, maar copycats en nieuwe gratis functies in ChatGPT maakten haar app binnen een maand overbodig. 🧠
+🔥 Elena bouwde een prototype via **AI builders** - als oprichter van een LegalTech SaaS bouwde ze een contract-samenvatter, maar copycats en nieuwe gratis functies in ChatGPT maakten haar app binnen een maand overbodig. 🧠
 
 Als uw AI-applicatie niet meer is dan een "Thin Wrapper" (een invoerveld dat prompts ongefilterd doorstuurt naar OpenAI), heeft u nul verdedigbaarheid (*moat*) en stappen betalende gebruikers massaal over naar gratis alternatieven.
 
@@ -12,7 +12,7 @@ Als uw AI-applicatie niet meer is dan een "Thin Wrapper" (een invoerveld dat pro
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Haar app werd een onkopieerbare voorspellende risicomachine met unieke jurisprudentie-verwijzingen. (€16.500 (RAG Datapijplijn & pgvector) — binnen 30 werkdagen live). 🚀
+Haar app werd een onkopieerbare voorspellende risicomachine met unieke jurisprudentie-verwijzingen. (€16.500 (RAG Datapijplijn & pgvector) - binnen 30 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/thin-wrapper-problem-ai-saas
 

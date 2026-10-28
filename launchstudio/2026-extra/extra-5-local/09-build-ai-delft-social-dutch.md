@@ -1,10 +1,10 @@
-🚀 Daan Smit bouwde SensorForge — een IoT-vlootmonitoringdashboard — volledig in Cursor, werkend tijdens de avonden na zijn dagbaan. Het werkte goed voor zijn eerste pilotklanten. Toen ging een routinematige update fout: hij pushte rechtstreeks naar productie, zonder stagingtest, en een databasemigratie legde het dashboard zes uur plat.
+🚀 Daan Smit bouwde SensorForge - een IoT-vlootmonitoringdashboard - volledig in Cursor, werkend tijdens de avonden na zijn dagbaan. Het werkte goed voor zijn eerste pilotklanten. Toen ging een routinematige update fout: hij pushte rechtstreeks naar productie, zonder stagingtest, en een databasemigratie legde het dashboard zes uur plat.
 
 Een sterke solo-coder zijn en productie-infrastructuur runnen zijn twee compleet verschillende disciplines. 🧠
 
-❌ Geen CI/CD-pijplijn — elke deploy was een handmatig proces rechtstreeks vanaf een laptop
+❌ Geen CI/CD-pijplijn - elke deploy was een handmatig proces rechtstreeks vanaf een laptop
 ❌ Geen staging-omgeving, waardoor de wijziging tegen productie werd getest, of helemaal niet
-❌ De storing trof precies het actieve monitoringvenster van een pilotklant — het slechtst denkbare moment
+❌ De storing trof precies het actieve monitoringvenster van een pilotklant - het slechtst denkbare moment
 ❌ Geen rollbackproces, dus Daan moest de database handmatig reconstrueren uit gedeeltelijke logs
 
 ✅ Bouw een correcte CI/CD-pijplijn met geautomatiseerde tests voordat code productie bereikt

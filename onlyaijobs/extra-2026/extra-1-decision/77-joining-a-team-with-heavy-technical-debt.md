@@ -13,7 +13,7 @@ Content Format: Decision Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Codebase Is a Mess. Should You Take the Job Anyway?",
-  "description": "Manual steps, undocumented pipelines, notebooks in production and no monitoring. Repairing a data team's technical debt can be a career-making role or unpaid heroics — how to tell which.",
+  "description": "Manual steps, undocumented pipelines, notebooks in production and no monitoring. Repairing a data team's technical debt can be a career-making role or unpaid heroics - how to tell which.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2027-01-08",
@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The interview goes well until the technical conversation, when the picture emerges. Pipelines run on a schedule nobody fully understands. A model retrains when someone remembers to press the button. There is a notebook in production, a spreadsheet that feeds a dashboard the board reads, and a critical step that only works on one colleague's machine. Nobody is hiding it — they are telling you, because that is why the role exists. The question is whether repairing it is the best year of your career or twelve months of invisible work that nobody thanks you for, and the difference is almost entirely about how the organisation has decided to pay for it.
+The interview goes well until the technical conversation, when the picture emerges. Pipelines run on a schedule nobody fully understands. A model retrains when someone remembers to press the button. There is a notebook in production, a spreadsheet that feeds a dashboard the board reads, and a critical step that only works on one colleague's machine. Nobody is hiding it - they are telling you, because that is why the role exists. The question is whether repairing it is the best year of your career or twelve months of invisible work that nobody thanks you for, and the difference is almost entirely about how the organisation has decided to pay for it.
 
 ## What Data Technical Debt Actually Looks Like
 
@@ -169,7 +169,7 @@ Much of the difficulty in these roles is not technical. It is persuading a direc
 
 **Offer a choice rather than a demand.** "We can keep delivering at this pace and accept roughly one failure a week, or pause one project and reduce that substantially" gives management a decision to make rather than a problem to refuse.
 
-**Report the absence of failure.** The hardest part of repair work is that success is silence. Send a short monthly note — what broke, what did not, what changed — so the improvement is visible while it is happening rather than forgotten afterwards.
+**Report the absence of failure.** The hardest part of repair work is that success is silence. Send a short monthly note - what broke, what did not, what changed - so the improvement is visible while it is happening rather than forgotten afterwards.
 
 **Never frame it as blame.** The people who built the system were solving a different problem under different pressure, and some of them are still there. Repair described as criticism gets resisted; repair described as maturation gets funded.
 
@@ -187,7 +187,7 @@ That number is what secures everything afterwards. Monitoring goes in first, the
 
 Six months in, failures are down to roughly one a fortnight, and the team has recovered more than a day a week. The pricing model retrains on a schedule.
 
-He then spends his second year building the demand forecasting work that had been impossible while everything was on fire — which is, he says, the part he was hired for and the part that would never have happened without the first year.
+He then spends his second year building the demand forecasting work that had been impossible while everything was on fire - which is, he says, the part he was hired for and the part that would never have happened without the first year.
 
 ## Key Takeaways
 
@@ -199,7 +199,7 @@ He then spends his second year building the demand forecasting work that had bee
 
 ## Where to Start
 
-Ask in the first interview how often things break and what was taken off the roadmap — then compare with employers near you whose platforms are already stable.
+Ask in the first interview how often things break and what was taken off the roadmap - then compare with employers near you whose platforms are already stable.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -215,7 +215,7 @@ What has been taken off the roadmap to make room for this work. If the answer is
 With measurement: incidents, failures, manual steps and hours lost. Numbers turn repair from a preference into a business case that survives budget pressure.
 
 ### (Scenario: candidate worried about recognition) How do I make the work visible?
-Report in business terms — failures avoided, hours recovered, reports that no longer break — rather than in technical descriptions of what you refactored.
+Report in business terms - failures avoided, hours recovered, reports that no longer break - rather than in technical descriptions of what you refactored.
 
 ### (Scenario: candidate who wants to model) Will I still do machine learning?
 Less than the title suggests during the repair period. Ask for the honest proportion of year one, and for some new building to keep your modelling current.
@@ -227,7 +227,7 @@ Less than the title suggests during the repair period. Ask for the honest propor
   "mainEntity": [
     {"@type": "Question", "name": "Is fixing technical debt good for my career?", "acceptedAnswer": {"@type": "Answer", "text": "It can be excellent when funded and acknowledged; poor when expected alongside an unchanged roadmap."}},
     {"@type": "Question", "name": "What is the single best question?", "acceptedAnswer": {"@type": "Answer", "text": "What has been removed from the roadmap to make room for the repair work."}},
-    {"@type": "Question", "name": "Where should I start?", "acceptedAnswer": {"@type": "Answer", "text": "Measurement — incidents, manual steps and hours lost — to turn repair into a business case."}},
+    {"@type": "Question", "name": "Where should I start?", "acceptedAnswer": {"@type": "Answer", "text": "Measurement - incidents, manual steps and hours lost - to turn repair into a business case."}},
     {"@type": "Question", "name": "How do I make the work visible?", "acceptedAnswer": {"@type": "Answer", "text": "Report failures avoided and hours recovered rather than technical refactoring details."}},
     {"@type": "Question", "name": "Will I still do machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Less during repair; ask for an honest proportion and some new building."}}
   ]

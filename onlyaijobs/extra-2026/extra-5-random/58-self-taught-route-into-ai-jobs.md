@@ -41,7 +41,7 @@ It depends on the role. Research positions and some machine learning scientist r
 
 Some employers filter on degrees at the screening stage, particularly large organisations with formal processes. Others, especially smaller companies and those hiring directly through a manager, do not care once they see what you have built.
 
-Two practical implications. First, do not aim at the part of the market that will not consider you; aim at the part that will, get two years of experience, and then the question disappears. Second, if you do have a degree in something quantitative — physics, economics, engineering, biology, psychology — you are in a stronger position than you think, because the statistical training transfers.
+Two practical implications. First, do not aim at the part of the market that will not consider you; aim at the part that will, get two years of experience, and then the question disappears. Second, if you do have a degree in something quantitative - physics, economics, engineering, biology, psychology - you are in a stronger position than you think, because the statistical training transfers.
 
 ## The Self-Taught Route Into AI Jobs: What Employers Actually Check
 
@@ -65,13 +65,13 @@ Notice what is absent: deep learning architectures, the newest model, and a long
 
 Part-time, around ten hours a week. Adjust the pace, not the order.
 
-**Months 1–3: fundamentals.** Python for data work — not software architecture, just competent handling of files, APIs, dataframes and functions. SQL properly, including joins, aggregation, window functions and the grain discipline that prevents wrong answers. Version control from the first week, because habits formed now persist.
+**Months 1–3: fundamentals.** Python for data work - not software architecture, just competent handling of files, APIs, dataframes and functions. SQL properly, including joins, aggregation, window functions and the grain discipline that prevents wrong answers. Version control from the first week, because habits formed now persist.
 
 **Months 4–6: the first project.** Pick a real dataset with genuine messiness: open government data, transport data, a public API, your own exported records. Build an end-to-end pipeline that ingests, cleans, stores and produces something. Deploy it somewhere cheap and let it run on a schedule.
 
 **Months 7–9: statistics and modelling.** Work through one solid course or book properly: distributions, sampling, uncertainty, regression, classification, and above all evaluation. Apply each concept to your own project data rather than to exercises.
 
-**Months 10–12: the second project and applications.** Something closer to the roles you want — a forecasting system, a document processing tool, a small retrieval application. Write it up honestly. Begin applying while you build, not afterwards.
+**Months 10–12: the second project and applications.** Something closer to the roles you want - a forecasting system, a document processing tool, a small retrieval application. Write it up honestly. Begin applying while you build, not afterwards.
 
 Throughout: write about what you learn, even briefly. It compounds, and it becomes your portfolio.
 
@@ -123,11 +123,11 @@ Bootcamps in Europe vary enormously, and the question is not whether they work b
 
 **What they cannot provide:** experience, a portfolio that distinguishes you from every other graduate of the same programme, or a guarantee. Employers have interviewed many bootcamp graduates and know that the projects are often variations on the same template.
 
-**How to evaluate one:** ask for outcome data with definitions — how many graduates were working in a relevant role twelve months later, measured how, and who is excluded from the figure. Ask whether instructors have industry experience. Ask what the projects are and whether you choose them. Speak to graduates from a year ago rather than from last month.
+**How to evaluate one:** ask for outcome data with definitions - how many graduates were working in a relevant role twelve months later, measured how, and who is excluded from the figure. Ask whether instructors have industry experience. Ask what the projects are and whether you choose them. Speak to graduates from a year ago rather than from last month.
 
 **Whether you need one:** if you can sustain self-directed learning and have access to feedback, probably not. If you have tried and stalled twice, the structure may be worth the cost.
 
-Either way, the differentiating work — a project that is yours, in a domain you know — happens after the curriculum, not during it.
+Either way, the differentiating work - a project that is yours, in a domain you know - happens after the curriculum, not during it.
 
 ## Realistic Entry Points
 
@@ -145,7 +145,7 @@ Aiming at the wrong roles is the most common reason capable self-taught candidat
 
 **Internships, traineeships and graduate programmes.** Several large European employers run these and accept career changers, not only recent graduates.
 
-**Adjacent roles as a bridge.** Support engineer, business analyst, operations analyst, technical customer roles — positions that get you inside an organisation with data, from which internal moves are far easier than external applications.
+**Adjacent roles as a bridge.** Support engineer, business analyst, operations analyst, technical customer roles - positions that get you inside an organisation with data, from which internal moves are far easier than external applications.
 
 What is not realistic as a first role: machine learning research, and senior positions at companies that hire exclusively from a narrow pool. Accepting this early saves a year.
 
@@ -205,7 +205,7 @@ The first candidate later rebuilt her approach around one deployed project and w
 
 - Research roles need degrees; much of the market does not.
 - SQL, one end-to-end project and clear reasoning beat any number of certificates.
-- Build something that runs, breaks and gets fixed — the fixing is the evidence.
+- Build something that runs, breaks and gets fixed - the fixing is the evidence.
 - Target analyst, analytics engineer and data engineer roles as entry points, not research positions.
 - Two years of employment removes the question about your background permanently.
 

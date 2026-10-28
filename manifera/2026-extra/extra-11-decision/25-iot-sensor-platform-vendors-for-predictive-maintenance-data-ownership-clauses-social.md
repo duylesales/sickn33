@@ -7,7 +7,7 @@ Three years of vibration and thermal data connecting sensor readings to real equ
 
 **The Manifera Solution:**
 ✅ **Three-Layer Data Negotiation:** We push for explicit terms across raw telemetry, processed features, and the trained model separately.
-✅ **Real Portability Clauses:** We verify export format, resolution, and availability throughout the contract — not just as an end-of-term afterthought.
+✅ **Real Portability Clauses:** We verify export format, resolution, and availability throughout the contract - not just as an end-of-term afterthought.
 ✅ **Open Protocol Preference:** We flag proprietary sensor-to-gateway lock-in before hardware is deployed at scale.
 
 Sensor accuracy is the visible spec. Data ownership is the clause that decides who actually keeps years of equipment intelligence. 🎯

@@ -1,6 +1,6 @@
 🚨 Een bètatester veranderde één URL-parameter en zag ineens de onderzoeksresultaten van een compleet ander bedrijf. 😳
 
-Login werken is geen bewijs dat uw app veilig is. Dit is het verschil tussen authenticatie en autorisatie — en waarom AI-code het vaak mist: 🧠
+Login werken is geen bewijs dat uw app veilig is. Dit is het verschil tussen authenticatie en autorisatie - en waarom AI-code het vaak mist: 🧠
 
 ❌ AI-tools bouwen betrouwbaar authenticatie, maar bijna nooit autorisatie
 ❌ Zonder RLS-beleid kan elke ingelogde gebruiker elk record benaderen via de API

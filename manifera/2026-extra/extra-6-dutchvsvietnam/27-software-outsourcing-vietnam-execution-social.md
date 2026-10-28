@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Blaming Geography for a Structural Failure:** Ambiguous requirements handed to any execution team, anywhere, produce the same result.
-❌ **The Repeat-Mistake Cycle:** Attributing a failed engagement to "Vietnam" means making the same structural mistake with the next vendor — 4-6 months stalled, €70,000-€150,000 sunk.
+❌ **The Repeat-Mistake Cycle:** Attributing a failed engagement to "Vietnam" means making the same structural mistake with the next vendor - 4-6 months stalled, €70,000-€150,000 sunk.
 ❌ **Staff Rotation Resets Everything:** Vendors reassigning engineers mid-project quietly erode velocity, misattributed to team capability.
 
 **The Manifera Solution:**

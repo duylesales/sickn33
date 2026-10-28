@@ -1,4 +1,4 @@
-🔑 Stefan Rombouts bouwde Bezorgroute in Cursor voor cateringbedrijven in Tilburg. De app gebruikte een commerciële routeplanner-API. Omdat de API-sleutel in een omgevingsvariabele voor de frontend stond, werd deze meegecompileerd in de browsercode — waarna scripts de sleutel vonden en er binnen korte tijd voor € 1.800 aan externe kosten werd gemaakt. 😳
+🔑 Stefan Rombouts bouwde Bezorgroute in Cursor voor cateringbedrijven in Tilburg. De app gebruikte een commerciële routeplanner-API. Omdat de API-sleutel in een omgevingsvariabele voor de frontend stond, werd deze meegecompileerd in de browsercode - waarna scripts de sleutel vonden en er binnen korte tijd voor € 1.800 aan externe kosten werd gemaakt. 😳
 
 Zodra een API-sleutel in uw browserbundle belandt, ligt deze open voor de hele wereld. Waar het misgaat bij secret management:
 

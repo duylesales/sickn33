@@ -82,9 +82,9 @@ LaunchStudio's ingenieurs vonden dat MatchLokaal's blokkeeractie alleen de tabel
 **Resultaat:** MatchLokaal's blokkeeractie is nu volledig onmiddellijk en compleet over elk onderdeel van de app. Lotte heeft een interne testreeks toegevoegd die verifieert dat alle veiligheidsgerelateerde acties synchroon worden toegepast voordat een nieuwe functie kan worden verzonden.
 
 > *"Een gebruiker vertrouwde op onze blokkeerknop om haar onmiddellijk te beschermen, en dat deed het niet. Dat is geen bug waar ik op wilde blijven zitten. LaunchStudio begreep exact waarom die kloof er toe deed en sloot hem snel."*
-> — **Lotte Andriessen, Oprichter, MatchLokaal (Emmen)**
+> - **Lotte Andriessen, Oprichter, MatchLokaal (Emmen)**
 
-**Kosten en tijdlijn:** € 1.300 (audit van vertrouwens- en veiligheidsoppervlakken en herbouw van synchrone blokkeerafdwinging) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (audit van vertrouwens- en veiligheidsoppervlakken en herbouw van synchrone blokkeerafdwinging) - voltooid in 5 werkdagen.
 
 ---
 

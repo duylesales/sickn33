@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Not every AI-native founder runs a startup. Inside housing corporations, municipalities, hospitals, insurers and manufacturers, innovation leads and business analysts are building prototypes with Lovable and Bolt that solve real problems for their colleagues or customers. The pilot goes well. Then comes the question that stalls most of them: who takes this AI app to production? Internal IT has a backlog measured in quarters, security and architecture boards meet monthly, and the prototype does not fit any existing platform. The alternative — an external specialist — raises its own questions about procurement, security and ownership.
+Not every AI-native founder runs a startup. Inside housing corporations, municipalities, hospitals, insurers and manufacturers, innovation leads and business analysts are building prototypes with Lovable and Bolt that solve real problems for their colleagues or customers. The pilot goes well. Then comes the question that stalls most of them: who takes this AI app to production? Internal IT has a backlog measured in quarters, security and architecture boards meet monthly, and the prototype does not fit any existing platform. The alternative - an external specialist - raises its own questions about procurement, security and ownership.
 
 ## Why Corporate AI App to Production Projects Stall
 
@@ -39,7 +39,7 @@ Internal IT is not wrong to hesitate. They will be responsible if it breaks or l
 
 **Strengths:** deep knowledge of the organisation's systems, identity, security policies and support processes; long-term ownership; no procurement needed.
 
-**Weaknesses:** capacity — the prototype joins a queue; unfamiliarity with AI-generated code and the tools that produced it; a tendency to rebuild on the standard platform, which can take many months and change what the pilot users liked.
+**Weaknesses:** capacity - the prototype joins a queue; unfamiliarity with AI-generated code and the tools that produced it; a tendency to rebuild on the standard platform, which can take many months and change what the pilot users liked.
 
 **Best when:** the prototype must integrate deeply with core systems, IT has capacity and the organisation prefers everything on its standard stack.
 
@@ -57,7 +57,7 @@ In practice, the most successful pattern splits responsibilities:
 
 - **The organisation (IT, security, privacy) sets the requirements:** identity provider, hosting location, logging, data classification, support model.
 - **The specialist hardens and deploys** the application to meet them: SSO integration, access control, audit logging, EU hosting in an approved setup, documentation and tests.
-- **IT receives a handover** — or a managed-service arrangement — with documentation it can accept.
+- **IT receives a handover** - or a managed-service arrangement - with documentation it can accept.
 
 This lets the organisation keep control without spending internal capacity on the build.
 
@@ -76,7 +76,7 @@ Prepare answers to these before the first meeting:
 
 ## Procurement Without Paralysis
 
-Fixed-price, fixed-scope engagements below internal tender thresholds are often procurable quickly. A clear statement of work — what will be delivered, which requirements are met, what the handover includes — shortens the process.
+Fixed-price, fixed-scope engagements below internal tender thresholds are often procurable quickly. A clear statement of work - what will be delivered, which requirements are met, what the handover includes - shortens the process.
 
 ## A Joint Requirements Workshop
 
@@ -124,11 +124,11 @@ Innovation projects touch many departments: legal, communications, customer serv
 
 ## Measuring Success After Rollout
 
-Agree on success metrics before rollout, grounded in the pilot: reduction in phone calls, faster processing times, user satisfaction, adoption rates. Instrument the app to measure them and report monthly. Clear evidence of value is what turns an innovation project into a funded, permanent service — and what earns the innovation team credibility for the next initiative.
+Agree on success metrics before rollout, grounded in the pilot: reduction in phone calls, faster processing times, user satisfaction, adoption rates. Instrument the app to measure them and report monthly. Clear evidence of value is what turns an innovation project into a funded, permanent service - and what earns the innovation team credibility for the next initiative.
 
 ## Security Testing Expectations
 
-Corporate security teams often require evidence of testing before production: a vulnerability scan, a code or configuration review and sometimes a penetration test by a party they approve. Plan for this in the timeline. The efficient sequence is to harden first — access control, secrets, dependency updates, headers — then run the organisation's required tests, then fix findings. Share results transparently with the security team; findings fixed before launch build confidence rather than concern.
+Corporate security teams often require evidence of testing before production: a vulnerability scan, a code or configuration review and sometimes a penetration test by a party they approve. Plan for this in the timeline. The efficient sequence is to harden first - access control, secrets, dependency updates, headers - then run the organisation's required tests, then fix findings. Share results transparently with the security team; findings fixed before launch build confidence rather than concern.
 
 ## Support Model Options
 
@@ -162,7 +162,7 @@ Before your next steering meeting, send IT and the privacy officer a one-page de
 
 LaunchStudio works with innovation teams to take their pilots live on the organisation's terms: SSO, role mapping, EU hosting, audit logging, documentation and a handover IT can accept, or managed hosting at €49 per month. Fixed prices of €800–€7,500 often fit within innovation budgets. Behind LaunchStudio is Manifera, whose teams have worked for enterprise and research organisations such as Vodafone and TNO for more than 11 years, from Amsterdam, Singapore and Ho Chi Minh City. For larger follow-up work, [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) offers full-cycle teams. Microsoft's documentation on [Entra ID app registration](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app) shows what SSO integration involves on the IT side.
 
-[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) — bring your IT contact if you can.
+[Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) - bring your IT contact if you can.
 
 ## Real example
 
@@ -177,9 +177,9 @@ Wendy proposed a combined route. IT and the privacy officer set requirements; La
 **Result:** Reparatiemelder went live for all tenants eighteen business days after the combined plan was approved, instead of nine months. Within a year, it handled around 60% of repair requests, and IT now uses the same arrangement for two other innovation pilots.
 
 > *"IT wasn't blocking us. They were asking the right questions. We just needed someone who could answer them in weeks instead of quarters."*
-> — **Wendy Hoogland, Innovation Lead, housing corporation (Zwolle)**
+> - **Wendy Hoogland, Innovation Lead, housing corporation (Zwolle)**
 
-**Cost & Timeline:** €5,800 (Launch & Grow package: SSO, access control, data migration, logging, documentation and handover) — completed in 18 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €5,800 (Launch & Grow package: SSO, access control, data migration, logging, documentation and handover) - completed in 18 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Yes, if it meets the organisation's requirements on identity, hosting, logging a
 
 ### Should internal IT rebuild the prototype on the standard platform instead?
 
-Sometimes — when deep integration with core systems is needed. For self-contained pilots, hardening the existing app is typically much faster and keeps what users validated.
+Sometimes - when deep integration with core systems is needed. For self-contained pilots, hardening the existing app is typically much faster and keeps what users validated.
 
 ### What does internal IT usually require before accepting an AI-built app?
 
@@ -201,7 +201,7 @@ Manifera has worked within enterprise and research organisations' requirements f
 
 ### Does taking a pilot to production affect the organisation's public visibility?
 
-If the app is customer-facing, yes: a reliable, accessible service with clear information improves how residents or customers — and AI assistants answering their questions — find and describe it.
+If the app is customer-facing, yes: a reliable, accessible service with clear information improves how residents or customers - and AI assistants answering their questions - find and describe it.
 
 <script type="application/ld+json">
 {

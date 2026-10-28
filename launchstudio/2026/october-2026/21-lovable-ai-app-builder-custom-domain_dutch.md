@@ -13,7 +13,7 @@ Op dit moment leeft uw meesterwerk echter nog altijd op een tijdelijke link die 
 
 U kunt onmogelijk een serieuze investeerder overtuigen of een potentiële zakelijke klant vragen zijn creditcardgegevens in te voeren op een door AI gegenereerde preview-URL. Om een legitiem en betrouwbaar softwarebedrijf te worden, moet uw applicatie draaien op uw eigen professionele domein, zoals `uwbedrijf.nl` of `uwbedrijf.com`.
 
-Voor niet-technische ondernemers is het overbruggen van de kloof tussen een online AI-sandbox en een live custom domein uiterst intimiderend. Het vereist diepgaande kennis van DNS-records, A-records, CNAMEs, SSL-certificaten en continuous deployment pijplijnen. Niets van dit alles wordt uitgelegd binnen de interface van Lovable zelf — de taak van de AI-tool stopt immers bij het genereren van uw broncode, en strekt zich niet uit tot het daadwerkelijk veilig live zetten van de software onder uw eigen merknaam.
+Voor niet-technische ondernemers is het overbruggen van de kloof tussen een online AI-sandbox en een live custom domein uiterst intimiderend. Het vereist diepgaande kennis van DNS-records, A-records, CNAMEs, SSL-certificaten en continuous deployment pijplijnen. Niets van dit alles wordt uitgelegd binnen de interface van Lovable zelf - de taak van de AI-tool stopt immers bij het genereren van uw broncode, en strekt zich niet uit tot het daadwerkelijk veilig live zetten van de software onder uw eigen merknaam.
 
 Hier leest u de nuchtere realiteit van het deployen van uw Lovable AI-app naar een custom domein, en hoe u dit zonder technische risico's realiseert.
 
@@ -49,7 +49,7 @@ Daarnaast wilt u wellicht een specifiek subdomein inrichten zoals `app.uwbedrijf
 
 ### 5. Preview-Deployments versus de Echte Live Website
 
-Op een professioneel hostingplatform genereert elke update op een aparte branch zijn eigen unieke preview-URL — een werkende kopie van uw app die nog niet zichtbaar is voor het publiek. Dit is buitengewoon waardevol om nieuwe Lovable-wijzigingen te controleren vóór livegang.
+Op een professioneel hostingplatform genereert elke update op een aparte branch zijn eigen unieke preview-URL - een werkende kopie van uw app die nog niet zichtbaar is voor het publiek. Dit is buitengewoon waardevol om nieuwe Lovable-wijzigingen te controleren vóór livegang.
 
 Voor niet-technische oprichters leidt dit echter regelmatig tot verwarring: zij delen per ongeluk een preview-URL met een investeerder, of raken in paniek wanneer een preview-build faalt terwijl de live website gewoon doordraait. Het begrijpen van het onderscheid tussen een preview en de productielocatie bespaart een hoop onnodige stress.
 
@@ -57,13 +57,13 @@ Voor niet-technische oprichters leidt dit echter regelmatig tot verwarring: zij 
 
 Als technische termen zoals "GitHub CI/CD pijplijnen", "CNAME-propagatie" en "SSL-provisioning" u doen duizelen, bent u zeker niet de enige. U heeft Lovable immers gebruikt om software te bouwen zónder een complete infrastructurele opleiding te hoeven volgen.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) bestaat. Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging aan 100 Tras Street in **Singapore** en ons gespecialiseerde ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street) met meer dan 160 succesvol afgeronde softwareprojecten, verzorgen wij de complete "laatste mijl" voor uw AI-startup.
 
 Met ons **"Launch Ready" pakket** verleent u ons simpelweg toegang tot uw Lovable GitHub-repository. Wij verzorgen de rest: wij richten de Vercel-hostingomgeving in, configureren de complexe DNS-records foutloos, stellen de redirects tussen www en apex in, activeren de SSL-certificaten en garanderen dat uw app razendsnel, stabiel en veilig live staat.
 
-Bovendien richten wij een geautomatiseerde **Continuous Integration (CI) pijplijn** in. Dit betekent dat wanneer u volgende week in Lovable de kleur van een knop aanpast of een scherm toevoegt, die wijziging binnen 30 seconden automatisch wordt gesynchroniseerd naar uw live domein — zonder dat u ooit een server hoeft aan te raken.
+Bovendien richten wij een geautomatiseerde **Continuous Integration (CI) pijplijn** in. Dit betekent dat wanneer u volgende week in Lovable de kleur van een knop aanpast of een scherm toevoegt, die wijziging binnen 30 seconden automatisch wordt gesynchroniseerd naar uw live domein - zonder dat u ooit een server hoeft aan te raken.
 
 Voor een zuivere frontend-deployment staat uw custom domein doorgaans binnen **2 tot 4 werkdagen** live en beveiligd. Heeft uw app tevens een database, gebruikersauthenticatie of betaalwebhooks nodig, dan verzorgen wij dat binnen ons volledige Launch Ready traject van **1 tot 3 weken** voor een vaste, transparante projectprijs.
 
@@ -91,7 +91,7 @@ We herstelden zijn beschadigde DNS-records, koppelden de `A`- en `CNAME`-records
 
 **Resultaat:** Binnen 48 uur stond Thomas's applicatie live op `https://snelwaarderen.nl`. Doordat we een continuous deployment pijplijn inrichtten, kon Thomas een week later in Lovable een nieuwe knop "Vraag Makelaar" toevoegen. Zodra hij op opslaan klikte in Lovable, verscheen de knop 30 seconden later automatisch op zijn live website. *"Ik trok mijn haren uit over DNS-records. LaunchStudio zette mijn app binnen twee dagen perfect live, waardoor ik me weer 100% op mijn klanten kan richten."*
 
-**Kosten & Tijdlijn:** €900 (Basic Launch Ready Pakket voor frontend-deployment) — binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €900 (Basic Launch Ready Pakket voor frontend-deployment) - binnen 2 werkdagen live opgeleverd.
 
 ---
 

@@ -1,4 +1,4 @@
-📊 Jonas built WorkMetrics AI with **Lovable** — two enterprise pitches stalled after strong first meetings, until he scored his own product against ten dimensions and got a 23 out of 100. 🧠
+📊 Jonas built WorkMetrics AI with **Lovable** - two enterprise pitches stalled after strong first meetings, until he scored his own product against ten dimensions and got a 23 out of 100. 🧠
 
 If you've never scored your AI SaaS against SSO, RLS, SOC 2 posture, audit logging, uptime SLA, and incident response, you're finding your gaps during a live deal, not before one.
 
@@ -12,7 +12,7 @@ If you've never scored your AI SaaS against SSO, RLS, SOC 2 posture, audit loggi
 
 At **LaunchStudio**, we've been closing exactly this class of enterprise-readiness gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jonas's score jumped from 23 to 84 out of 100, and his third pitch closed in under three weeks. (€5,400 (Enterprise Hardening Package) — 13 business days.) 🚀
+Jonas's score jumped from 23 to 84 out of 100, and his third pitch closed in under three weeks. (€5,400 (Enterprise Hardening Package) - 13 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/enterprise-sales-readiness-scorecard
 

@@ -31,23 +31,23 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"Can you delete my account and everything associated with it?" is a completely reasonable, increasingly common request, and it's also the exact moment many AI privacy issues stop being theoretical and become an urgent, specific problem — because "delete my account" turns out to mean something much more involved than removing one row from one table, and few AI-built prototypes were ever specifically asked to handle that complexity.
+"Can you delete my account and everything associated with it?" is a completely reasonable, increasingly common request, and it's also the exact moment many AI privacy issues stop being theoretical and become an urgent, specific problem - because "delete my account" turns out to mean something much more involved than removing one row from one table, and few AI-built prototypes were ever specifically asked to handle that complexity.
 
 ## Why Account Deletion Requests Reveal More Than They Seem To
 
-A "delete account" feature that simply removes a user's login record can genuinely feel complete during testing — the account disappears, login stops working, done. What it typically doesn't address: the user's data scattered across other related tables — booking history, messages, uploaded documents, activity logs — none of which gets touched by deleting a single account record. A founder testing this feature naturally checks the one thing "delete account" visibly promises — that the account is gone and can no longer log in — without a specific reason to go looking for whether a booking record referencing that now-deleted account is still sitting untouched somewhere else in the same database.
+A "delete account" feature that simply removes a user's login record can genuinely feel complete during testing - the account disappears, login stops working, done. What it typically doesn't address: the user's data scattered across other related tables - booking history, messages, uploaded documents, activity logs - none of which gets touched by deleting a single account record. A founder testing this feature naturally checks the one thing "delete account" visibly promises - that the account is gone and can no longer log in - without a specific reason to go looking for whether a booking record referencing that now-deleted account is still sitting untouched somewhere else in the same database.
 
 ## Why GDPR's Right to Erasure Requires More Than a Deleted Login
 
-The GDPR's right to erasure specifically requires that a user's personal data actually be removed or properly anonymized across a system, not merely that their ability to log in be revoked — a distinction that matters enormously in practice, since data can persist in numerous related places a founder never specifically thought through as being connected to "the user" in the first place.
+The GDPR's right to erasure specifically requires that a user's personal data actually be removed or properly anonymized across a system, not merely that their ability to log in be revoked - a distinction that matters enormously in practice, since data can persist in numerous related places a founder never specifically thought through as being connected to "the user" in the first place.
 
 ## Why This Gap Doesn't Get Caught During Normal Development
 
-Building and testing a deletion feature typically means confirming the immediate, visible result — the account is gone, login fails, the demo looks complete. Tracing every table and data store an account's information actually touches, and confirming each one is properly handled, requires a deliberate, systematic mapping exercise that a straightforward "does deletion work" test never naturally prompts.
+Building and testing a deletion feature typically means confirming the immediate, visible result - the account is gone, login fails, the demo looks complete. Tracing every table and data store an account's information actually touches, and confirming each one is properly handled, requires a deliberate, systematic mapping exercise that a straightforward "does deletion work" test never naturally prompts.
 
 ## Why This Becomes Urgent the Moment a Real Request Arrives
 
-Unlike many gaps that simply sit dormant until discovered, a genuine data-erasure request creates real time pressure — GDPR specifies response timeframes, and a founder receiving their first serious request realizes, often for the first time, that fulfilling it properly means finding and handling every scattered piece of that user's data across a system that was never mapped out with this requirement in mind. Discovering the scope of the problem and building a genuine fix under that same deadline, rather than calmly beforehand, is a considerably worse position to be responding from — especially for a solo founder without a dedicated legal or compliance team to lean on.
+Unlike many gaps that simply sit dormant until discovered, a genuine data-erasure request creates real time pressure - GDPR specifies response timeframes, and a founder receiving their first serious request realizes, often for the first time, that fulfilling it properly means finding and handling every scattered piece of that user's data across a system that was never mapped out with this requirement in mind. Discovering the scope of the problem and building a genuine fix under that same deadline, rather than calmly beforehand, is a considerably worse position to be responding from - especially for a solo founder without a dedicated legal or compliance team to lean on.
 
 ## What Properly Handling This Requires
 
@@ -61,14 +61,14 @@ Manifera's data mapping and erasure implementation work is delivered through the
 
 A genuine data-erasure implementation starts with a systematic map of every location a user's personal data can end up, not just the obvious primary account table. For a typical AI-generated product, that map usually needs to cover:
 
-1. **The primary user or account table** — the obvious starting point, and the only place most quickly built deletion features actually touch.
-2. **Related and join tables** — bookings, orders, messages, reviews, and any other record that references the user through a foreign key rather than living directly on the account record itself, exactly the category HondenMaatje's booking history and messages fell into.
-3. **Uploaded files and object storage** — profile photos, documents, or attachments stored in a separate file or object storage system rather than the main database, which a database-focused deletion process can easily miss entirely since it isn't part of the same query.
-4. **Third-party integrations** — data that's been sent to an email marketing tool, an analytics platform, a payment processor, or a customer support tool, each of which may retain a copy of personal data outside your own system and require its own separate deletion or anonymization request.
-5. **Backups** — data captured in a routine backup taken before a deletion request was processed, which raises a genuinely harder question about how long backup data is retained and how it's handled, one that a reasonable data-retention policy should address explicitly rather than leave undefined.
-6. **Logs** — application or server logs that may have captured personal data (an email address in an error message, an IP address tied to a specific request) as a side effect of normal operation, rather than as an intentional data store.
+1. **The primary user or account table** - the obvious starting point, and the only place most quickly built deletion features actually touch.
+2. **Related and join tables** - bookings, orders, messages, reviews, and any other record that references the user through a foreign key rather than living directly on the account record itself, exactly the category HondenMaatje's booking history and messages fell into.
+3. **Uploaded files and object storage** - profile photos, documents, or attachments stored in a separate file or object storage system rather than the main database, which a database-focused deletion process can easily miss entirely since it isn't part of the same query.
+4. **Third-party integrations** - data that's been sent to an email marketing tool, an analytics platform, a payment processor, or a customer support tool, each of which may retain a copy of personal data outside your own system and require its own separate deletion or anonymization request.
+5. **Backups** - data captured in a routine backup taken before a deletion request was processed, which raises a genuinely harder question about how long backup data is retained and how it's handled, one that a reasonable data-retention policy should address explicitly rather than leave undefined.
+6. **Logs** - application or server logs that may have captured personal data (an email address in an error message, an IP address tied to a specific request) as a side effect of normal operation, rather than as an intentional data store.
 
-Building this map is a one-time investment that pays off every time a deletion request arrives afterward, rather than requiring the same discovery exercise under time pressure each time. It's also worth revisiting whenever a new feature is added that introduces a new place user data can live — the map isn't a one-time document, but something that stays current alongside the product itself.
+Building this map is a one-time investment that pays off every time a deletion request arrives afterward, rather than requiring the same discovery exercise under time pressure each time. It's also worth revisiting whenever a new feature is added that introduces a new place user data can live - the map isn't a one-time document, but something that stays current alongside the product itself.
 
 ## Real example
 
@@ -81,9 +81,9 @@ A user requesting full account deletion, citing a general online privacy concern
 **Result:** LaunchStudio mapped every location HondenMaatje's user data actually lived and implemented a comprehensive deletion process addressing each one, tested against real accounts to confirm complete removal, closing the gap and bringing the feature in line with actual GDPR erasure requirements.
 
 > *"I genuinely thought 'delete account' meant delete everything. It hadn't occurred to me that a booking or a message might technically live somewhere I wasn't thinking of as 'the account' at all."*
-> — **Pim Dekker, Founder, HondenMaatje (Purmerend)**
+> - **Pim Dekker, Founder, HondenMaatje (Purmerend)**
 
-**Cost & Timeline:** €2,000 (comprehensive data mapping and erasure implementation) — completed in 7 business days.
+**Cost & Timeline:** €2,000 (comprehensive data mapping and erasure implementation) - completed in 7 business days.
 
 ---
 
@@ -91,27 +91,27 @@ A user requesting full account deletion, citing a general online privacy concern
 
 ### Would a data protection specialist consider this a common gap in founder-built products specifically?
 
-Very common — comprehensive data erasure requires a level of systematic data mapping that rarely happens naturally during fast, feature-focused development, regardless of whether the underlying code was written by hand or generated through AI-assisted tools.
+Very common - comprehensive data erasure requires a level of systematic data mapping that rarely happens naturally during fast, feature-focused development, regardless of whether the underlying code was written by hand or generated through AI-assisted tools.
 
 ### Does this only matter for products operating in the EU, given GDPR's specific jurisdiction?
 
-It matters most directly for EU-serving products given GDPR's specific legal requirements, but the underlying practice — genuinely and comprehensively deleting a user's data on request, not just their login access — is good practice and increasingly expected by users regardless of which specific privacy regulation technically applies.
+It matters most directly for EU-serving products given GDPR's specific legal requirements, but the underlying practice - genuinely and comprehensively deleting a user's data on request, not just their login access - is good practice and increasingly expected by users regardless of which specific privacy regulation technically applies.
 
-### Manifera has experience with compliance-sensitive data architecture across regulated industries — does that background transfer to a smaller consumer app like HondenMaatje's?
+### Manifera has experience with compliance-sensitive data architecture across regulated industries - does that background transfer to a smaller consumer app like HondenMaatje's?
 
-Yes, directly — the discipline of systematically mapping where personal data actually lives across a system, rather than assuming it's confined to one obvious table, is a transferable practice regardless of whether the client is a larger regulated business or a smaller consumer-facing pet-care app.
+Yes, directly - the discipline of systematically mapping where personal data actually lives across a system, rather than assuming it's confined to one obvious table, is a transferable practice regardless of whether the client is a larger regulated business or a smaller consumer-facing pet-care app.
 
 ### Is this the kind of compliance gap CEO Herre Roelevink refers to when discussing why founders need architecture expertise, not just feature-building speed?
 
-Yes, precisely — data erasure is fundamentally an architectural mapping exercise across an entire system rather than a single feature to build, exactly the kind of structural work Roelevink's commentary on AI-native founders' needs consistently distinguishes from the feature-generation speed AI tools already provide well.
+Yes, precisely - data erasure is fundamentally an architectural mapping exercise across an entire system rather than a single feature to build, exactly the kind of structural work Roelevink's commentary on AI-native founders' needs consistently distinguishes from the feature-generation speed AI tools already provide well.
 
 ### If a founder hasn't received a deletion request yet, is this worth addressing proactively, or reasonable to wait?
 
-Addressing it proactively is considerably easier than responding to it reactively, since GDPR-specified response timeframes create real time pressure once an actual request arrives — mapping and implementing proper erasure calmly, before it's urgently needed, avoids the scramble Pim's case illustrates directly.
+Addressing it proactively is considerably easier than responding to it reactively, since GDPR-specified response timeframes create real time pressure once an actual request arrives - mapping and implementing proper erasure calmly, before it's urgently needed, avoids the scramble Pim's case illustrates directly.
 
 ### Do backups and logs really need to be part of a data-erasure process, or is that overkill for a small product?
 
-They genuinely matter, though the right handling differs from live data — rather than trying to scrub every historical backup immediately, a reasonable, GDPR-consistent approach is a documented, bounded retention period after which older backups naturally age out, combined with a clear policy on how a deletion request is handled if a backup ever needs to be restored. Logs deserve a similar deliberate policy rather than being ignored entirely simply because they weren't designed as a data store.
+They genuinely matter, though the right handling differs from live data - rather than trying to scrub every historical backup immediately, a reasonable, GDPR-consistent approach is a documented, bounded retention period after which older backups naturally age out, combined with a clear policy on how a deletion request is handled if a backup ever needs to be restored. Logs deserve a similar deliberate policy rather than being ignored entirely simply because they weren't designed as a data store.
 
 <script type="application/ld+json">
 {

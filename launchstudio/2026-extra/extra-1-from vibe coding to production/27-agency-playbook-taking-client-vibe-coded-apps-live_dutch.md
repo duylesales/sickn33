@@ -36,23 +36,23 @@ Een groeiend aandeel agencyklanten komt nu binnen met iets waar traditionele int
 
 ## Waarom Traditionele Intake-aannames Niet Schoon Overdragen
 
-Een traditionele agencybriefing beschrijft wat een klant gebouwd wil hebben, en de agency schat het werk om het te bouwen vanuit die beschrijving. Een vibe-gecodeerd prototype keert dit om: de klant heeft al iets gebouwd, en de daadwerkelijke vraag is smaller en specifieker — wat heeft deze specifieke codebase nodig om productieveilig te worden, niet wat zou het kosten om dit vanaf nul te bouwen. De verkeerde vraag beantwoorden (een herbouw schatten) produceert een voorstel dat de klant redelijkerwijs zal afwijzen als te duur voor wat zij percipiëren als "bijna klaar" werk, zelfs wanneer een herbouw oprecht niet de juiste keuze zou zijn.
+Een traditionele agencybriefing beschrijft wat een klant gebouwd wil hebben, en de agency schat het werk om het te bouwen vanuit die beschrijving. Een vibe-gecodeerd prototype keert dit om: de klant heeft al iets gebouwd, en de daadwerkelijke vraag is smaller en specifieker - wat heeft deze specifieke codebase nodig om productieveilig te worden, niet wat zou het kosten om dit vanaf nul te bouwen. De verkeerde vraag beantwoorden (een herbouw schatten) produceert een voorstel dat de klant redelijkerwijs zal afwijzen als te duur voor wat zij percipiëren als "bijna klaar" werk, zelfs wanneer een herbouw oprecht niet de juiste keuze zou zijn.
 
 ## Een Gestructureerd Evaluatieproces Voor AI-gegenereerde Klantcodebases
 
-**Stap één: een snelle, gestructureerde audit**, geen volledige codereview — specifiek controlerend op de terugkerende patronen doorheen deze serie behandeld (hardgecodeerde geheimen, alleen-frontend-authenticatie, ontbrekende foutafhandeling, afwezig testen, geen observability) in plaats van een generieke "hoe goed is deze code"-beoordeling, wat beide trager en minder direct nuttig is voor het scopen van daadwerkelijk resterend werk.
+**Stap één: een snelle, gestructureerde audit**, geen volledige codereview - specifiek controlerend op de terugkerende patronen doorheen deze serie behandeld (hardgecodeerde geheimen, alleen-frontend-authenticatie, ontbrekende foutafhandeling, afwezig testen, geen observability) in plaats van een generieke "hoe goed is deze code"-beoordeling, wat beide trager en minder direct nuttig is voor het scopen van daadwerkelijk resterend werk.
 
 **Stap twee: scheid "heeft verharding nodig" van "moet gebouwd worden."** Een klant die Lovable of Bolt gebruikte voor een full-stack-prototype heeft doorgaans verharding nodig van wat bestaat. Een klant die v0 gebruikte voor alleen-interface-generatie heeft doorgaans een hele backend nodig die gebouwd moet worden. Deze vereisen oprecht verschillende voorstellen, tijdlijnen, en prijzen, en ze samenvoegen onder één generieke "AI-app-opschoning"-dienst geeft de daadwerkelijke scope van beide verkeerd weer.
 
-**Stap drie: prijs en scope rond de specifieke bevindingen van de audit**, geen generiek pakket — een klant wiens prototype schone, goed gestructureerde code heeft met een paar geïsoleerde gaten rechtvaardigt een ander voorstel dan een wiens prototype systemische problemen heeft over meerdere dimensies, zelfs als beide prototypes er in een klantdemo vergelijkbaar compleet "uitzien."
+**Stap drie: prijs en scope rond de specifieke bevindingen van de audit**, geen generiek pakket - een klant wiens prototype schone, goed gestructureerde code heeft met een paar geïsoleerde gaten rechtvaardigt een ander voorstel dan een wiens prototype systemische problemen heeft over meerdere dimensies, zelfs als beide prototypes er in een klantdemo vergelijkbaar compleet "uitzien."
 
 ## Waarom Dit Ertoe Doet Voor Agency-positionering, Niet Alleen Levering
 
-Agencies die oprechte vaardigheid ontwikkelen in het specifiek evalueren van AI-gegenereerde codebases — in plaats van elke AI-geassisteerde klant te behandelen als een speciaal, verwarrend randgeval — positioneren zichzelf voor een klantsegment dat alleen maar groeit naarmate meer founders beginnen met AI-tools voordat ze ooit externe hulp inschakelen. Deze vaardigheid is een aparte, aanleerbare vaardigheid ten opzichte van traditionele custom-developmentschatting, en agencies die het vroeg opbouwen vangen klantrelaties die agencies die elk AI-gegenereerd prototype nog steeds als een anomalie behandelen zullen blijven verkeerd scopen.
+Agencies die oprechte vaardigheid ontwikkelen in het specifiek evalueren van AI-gegenereerde codebases - in plaats van elke AI-geassisteerde klant te behandelen als een speciaal, verwarrend randgeval - positioneren zichzelf voor een klantsegment dat alleen maar groeit naarmate meer founders beginnen met AI-tools voordat ze ooit externe hulp inschakelen. Deze vaardigheid is een aparte, aanleerbare vaardigheid ten opzichte van traditionele custom-developmentschatting, en agencies die het vroeg opbouwen vangen klantrelaties die agencies die elk AI-gegenereerd prototype nog steeds als een anomalie behandelen zullen blijven verkeerd scopen.
 
 ## Het Freelancer-begrijpt-AI-code-probleem, Vanuit De Kant Van De Agency
 
-Klanten rapporteren specifiek en herhaaldelijk frustratie met freelancers en agencies die AI-gegenereerde codepatronen niet begrijpen — hetzelfde freelancer-competentiegat behandeld vanuit het perspectief van de founder elders in deze serie. Een agency capabel om oprechte, specifieke vaardigheid met deze patronen te demonstreren tijdens een verkoopgesprek — precies beschrijvend waar een audit op controleert, in plaats van generieke geruststelling te bieden — onderscheidt zichzelf onmiddellijk van concurrenten die nog steeds opereren vanuit traditionele custom-build-aannames.
+Klanten rapporteren specifiek en herhaaldelijk frustratie met freelancers en agencies die AI-gegenereerde codepatronen niet begrijpen - hetzelfde freelancer-competentiegat behandeld vanuit het perspectief van de founder elders in deze serie. Een agency capabel om oprechte, specifieke vaardigheid met deze patronen te demonstreren tijdens een verkoopgesprek - precies beschrijvend waar een audit op controleert, in plaats van generieke geruststelling te bieden - onderscheidt zichzelf onmiddellijk van concurrenten die nog steeds opereren vanuit traditionele custom-build-aannames.
 
 ## Waar White-Label-partnerschap Past
 
@@ -60,17 +60,17 @@ Voor agencies die deze capaciteit willen zonder diepe interne expertise op te bo
 
 [LaunchStudio](https://launchstudio.eu/nl/) werkt met agencies en freelancers als een white-label-productiepartner specifiek voor AI-gegenereerde klantprototypes, en levert het audit- en verhardingswerk onder jouw branding, gesteund door Manifera's engineeringteam en hun specifieke ervaring over 160+ opgeleverde projecten die precies dit patroon overspannen.
 
-[Verken een white-label-partnerschap voor jouw AI-native klanten](https://launchstudio.eu/nl/#contact) — "Jouw branding, onze engineering."
+[Verken een white-label-partnerschap voor jouw AI-native klanten](https://launchstudio.eu/nl/#contact) - "Jouw branding, onze engineering."
 
 ## Veelvoorkomende Bezwaren van Klanten Tijdens een Auditgesprek, en Hoe Ze te Beantwoorden
 
 Klanten die ervan overtuigd zijn dat hun met AI gebouwde prototype 'eigenlijk al klaar' is, sputteren vaak tegen wanneer een bureau een initiële audit voorstelt. Enkele klassieke bezwaren en de doeltreffende antwoorden:
 
-**"Het werkt toch al — waarom moet ik betalen om iemand ernaar te laten kijken?"**
+**"Het werkt toch al - waarom moet ik betalen om iemand ernaar te laten kijken?"**
 *Antwoord*: "Er is een essentieel verschil tussen functioneel werken onder ideale omstandigheden en veilig operationeel zijn onder productieomstandigheden. Een auto zonder remmen rijdt ook vooruit totdat je moet stoppen. De audit voorkomt dat je eerste betalende klant het ontbreken van de remmen ontdekt."
 
 **"Kunnen we niet gewoon lanceren en eventuele bugs oplossen als ze opduiken?"**
-*Antwoord*: "Functionele UI-foutjes kun je inderdaad achteraf fixen. Datalekken, gecompromitteerde API-sleutels en verloren betalingen echter niet — die veroorzaken onomkeerbare reputatieschade en AVG-boetes bij je eerste lancering."
+*Antwoord*: "Functionele UI-foutjes kun je inderdaad achteraf fixen. Datalekken, gecompromitteerde API-sleutels en verloren betalingen echter niet - die veroorzaken onomkeerbare reputatieschade en AVG-boetes bij je eerste lancering."
 
 **"Heeft de AI-tool dit niet automatisch al veilig gemaakt?"**
 *Antwoord*: "AI-tools optimaliseren voor snelle visuele resultaten, niet voor infrastructurele afscherming. Ze verbergen administratieve knoppen in de UI, maar beveiligen de onderliggende endpoints niet standaard tegen misbruik."
@@ -81,14 +81,14 @@ Klanten die ervan overtuigd zijn dat hun met AI gebouwde prototype 'eigenlijk al
 
 ### Een AI-native founder in actie: het verkeerd gescopede herbouwvoorstel van een agency, gecorrigeerd
 
-Diederik runt een kleine digitale agency in Rotterdam die lokale kleine-bedrijfsklanten bedient, en werd benaderd door een klant die een werkende boekings- en planningstool voor haar fysiotherapiepraktijk had gebouwd met Bolt, op zoek naar hulp om het "correct te lanceren." Diederiks initiële instinct, volgend op het traditionele intakeproces van zijn agency, was om een volledige herbouw te scopen — de standaardaanpak van zijn team voor elke door de klant aangeleverde codebase die ze niet zelf gebouwd hadden.
+Diederik runt een kleine digitale agency in Rotterdam die lokale kleine-bedrijfsklanten bedient, en werd benaderd door een klant die een werkende boekings- en planningstool voor haar fysiotherapiepraktijk had gebouwd met Bolt, op zoek naar hulp om het "correct te lanceren." Diederiks initiële instinct, volgend op het traditionele intakeproces van zijn agency, was om een volledige herbouw te scopen - de standaardaanpak van zijn team voor elke door de klant aangeleverde codebase die ze niet zelf gebouwd hadden.
 
 De klant deinsde, redelijkerwijs, terug voor een herbouwoffer die bijna overeenkwam met wat ze schatte dat de originele bouw vanaf nul zou hebben gekost, voor een product dat ze "vrijwel klaar" vond. Diederik, die herkende dat de wrijving niet ging over prijsgevoeligheid maar over een oprechte mismatch tussen zijn voorstel en wat het prototype van de klant daadwerkelijk nodig had, bracht de codebase naar LaunchStudio voor een gestructureerde audit voordat hij herscoopte.
 
-**Resultaat:** De audit vond een goed gestructureerde, grotendeels solide Bolt-gegenereerde codebase die gerichte verharding nodig had — authenticatie verplaatst naar server-side, foutafhandeling toegevoegd voor de agendasynchronisatie-dependency, en een CI-pipeline opgezet — een fractie van de scope van een volledige herbouw. Diederik deed opnieuw een voorstel gebaseerd op de specifieke bevindingen van de audit, won de opdracht tegen een prijs die de klant eerlijk vond, en heeft sindsdien twee daaropvolgende AI-native klanten door hetzelfde audit-eerst-proces geleid in plaats van de originele herbouw-standaard-aanname van zijn agency.
+**Resultaat:** De audit vond een goed gestructureerde, grotendeels solide Bolt-gegenereerde codebase die gerichte verharding nodig had - authenticatie verplaatst naar server-side, foutafhandeling toegevoegd voor de agendasynchronisatie-dependency, en een CI-pipeline opgezet - een fractie van de scope van een volledige herbouw. Diederik deed opnieuw een voorstel gebaseerd op de specifieke bevindingen van de audit, won de opdracht tegen een prijs die de klant eerlijk vond, en heeft sindsdien twee daaropvolgende AI-native klanten door hetzelfde audit-eerst-proces geleid in plaats van de originele herbouw-standaard-aanname van zijn agency.
 
 > *"Ik stond op het punt haar bijna te offreren wat een volledige bouw zou kosten, voor werk dat uiteindelijk misschien een vijfde van die inspanning bleek nodig te hebben zodra iemand daadwerkelijk keek naar wat er was in plaats van aan te nemen. Die verkeerd gescopede offerte zou me de klant hebben gekost en, eerlijk gezegd, zou sowieso het verkeerde advies zijn geweest."*
-> — **Diederik Voskuijlen, Agency-eigenaar, Rotterdam**
+> - **Diederik Voskuijlen, Agency-eigenaar, Rotterdam**
 
 **Kosten & tijdlijn:** Audit: €600, voltooid in 2 werkdagen; daaropvolgende verhardingsscope: €1.750, voltooid in 7 werkdagen.
 
@@ -98,23 +98,23 @@ De klant deinsde, redelijkerwijs, terug voor een herbouwoffer die bijna overeenk
 
 ### Hoe verschilt het auditen van een AI-gegenereerd klantprototype van het typische codereviewproces van een agency voor overgenomen codebases?
 
-De specifieke patronen om op te controleren zijn anders en voorspelbaarder — de terugkerende gaten doorheen deze serie behandeld (geheimen, alleen-frontend-auth, ontbrekende foutafhandeling) zijn consistent genoeg over AI-gegenereerde codebases heen dat een gerichte audit zowel sneller als specifieker nuttig is dan een generieke "beoordeel deze overgenomen code"-review.
+De specifieke patronen om op te controleren zijn anders en voorspelbaarder - de terugkerende gaten doorheen deze serie behandeld (geheimen, alleen-frontend-auth, ontbrekende foutafhandeling) zijn consistent genoeg over AI-gegenereerde codebases heen dat een gerichte audit zowel sneller als specifieker nuttig is dan een generieke "beoordeel deze overgenomen code"-review.
 
 ### Betekent white-label-partnerschap dat de klant van de agency nooit direct interacteert met de partner?
 
-Doorgaans wel — de opdracht draait onder de branding en klantrelatie van de agency, met het werk van de partner geleverd als onderdeel van het eigen dienstenaanbod van de agency, vergelijkbaar met hoe veel technische onderaannemingsrelaties in de industrie al opereren.
+Doorgaans wel - de opdracht draait onder de branding en klantrelatie van de agency, met het werk van de partner geleverd als onderdeel van het eigen dienstenaanbod van de agency, vergelijkbaar met hoe veel technische onderaannemingsrelaties in de industrie al opereren.
 
 ### Hoe zou een agency een audit-eerst-opdracht zoals die van Diederik moeten prijzen, relatief aan hun traditionele projectprijzen?
 
-De audit zelf wordt doorgaans geprijsd als een aparte, kleinere, snel-doorlooptijd-dienst, met het daaropvolgende verhardings- of bouwwerk apart geprijsd gebaseerd op de specifieke bevindingen van de audit — deze tweestapsstructuur laat de agency accuraat voorstellen in plaats van scope te gokken voordat een codebase daadwerkelijk onderzocht is.
+De audit zelf wordt doorgaans geprijsd als een aparte, kleinere, snel-doorlooptijd-dienst, met het daaropvolgende verhardings- of bouwwerk apart geprijsd gebaseerd op de specifieke bevindingen van de audit - deze tweestapsstructuur laat de agency accuraat voorstellen in plaats van scope te gokken voordat een codebase daadwerkelijk onderzocht is.
 
 ### Is deze audit-eerst-aanpak alleen relevant voor agencies die niet-technische foundersklanten bedienen, of geldt het ook voor technische klanten?
 
-Het geldt breed, hoewel de specifieke waardepropositie verschilt — niet-technische klanten profiteren van de gewone-taal-vertaling van bevindingen, terwijl technische klanten meer direct profiteren van de snelheid van een gerichte audit versus vanaf nul schatten alsof er nog geen code bestond.
+Het geldt breed, hoewel de specifieke waardepropositie verschilt - niet-technische klanten profiteren van de gewone-taal-vertaling van bevindingen, terwijl technische klanten meer direct profiteren van de snelheid van een gerichte audit versus vanaf nul schatten alsof er nog geen code bestond.
 
-### Wat is de typische uitkomstverdeling — hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?
+### Wat is de typische uitkomstverdeling - hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?
 
-Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld — de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken.
+Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld - de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken.
 
 <script type="application/ld+json">
 {
@@ -126,7 +126,7 @@ Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product
       "name": "Hoe verschilt het auditen van een AI-gegenereerd klantprototype van het typische codereviewproces van een agency voor overgenomen codebases?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De specifieke patronen om op te controleren zijn anders en voorspelbaarder — de terugkerende gaten doorheen deze serie behandeld (geheimen, alleen-frontend-auth, ontbrekende foutafhandeling) zijn consistent genoeg over AI-gegenereerde codebases heen dat een gerichte audit zowel sneller als specifieker nuttig is dan een generieke \"beoordeel deze overgenomen code\"-review."
+        "text": "De specifieke patronen om op te controleren zijn anders en voorspelbaarder - de terugkerende gaten doorheen deze serie behandeld (geheimen, alleen-frontend-auth, ontbrekende foutafhandeling) zijn consistent genoeg over AI-gegenereerde codebases heen dat een gerichte audit zowel sneller als specifieker nuttig is dan een generieke \"beoordeel deze overgenomen code\"-review."
       }
     },
     {
@@ -134,7 +134,7 @@ Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product
       "name": "Betekent white-label-partnerschap dat de klant van de agency nooit direct interacteert met de partner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Doorgaans wel — de opdracht draait onder de branding en klantrelatie van de agency, met het werk van de partner geleverd als onderdeel van het eigen dienstenaanbod van de agency, vergelijkbaar met hoe veel technische onderaannemingsrelaties in de industrie al opereren."
+        "text": "Doorgaans wel - de opdracht draait onder de branding en klantrelatie van de agency, met het werk van de partner geleverd als onderdeel van het eigen dienstenaanbod van de agency, vergelijkbaar met hoe veel technische onderaannemingsrelaties in de industrie al opereren."
       }
     },
     {
@@ -142,7 +142,7 @@ Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product
       "name": "Hoe zou een agency een audit-eerst-opdracht zoals die van Diederik moeten prijzen, relatief aan hun traditionele projectprijzen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De audit zelf wordt doorgaans geprijsd als een aparte, kleinere, snel-doorlooptijd-dienst, met het daaropvolgende verhardings- of bouwwerk apart geprijsd gebaseerd op de specifieke bevindingen van de audit — deze tweestapsstructuur laat de agency accuraat voorstellen in plaats van scope te gokken voordat een codebase daadwerkelijk onderzocht is."
+        "text": "De audit zelf wordt doorgaans geprijsd als een aparte, kleinere, snel-doorlooptijd-dienst, met het daaropvolgende verhardings- of bouwwerk apart geprijsd gebaseerd op de specifieke bevindingen van de audit - deze tweestapsstructuur laat de agency accuraat voorstellen in plaats van scope te gokken voordat een codebase daadwerkelijk onderzocht is."
       }
     },
     {
@@ -150,15 +150,15 @@ Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product
       "name": "Is deze audit-eerst-aanpak alleen relevant voor agencies die niet-technische foundersklanten bedienen, of geldt het ook voor technische klanten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het geldt breed, hoewel de specifieke waardepropositie verschilt — niet-technische klanten profiteren van de gewone-taal-vertaling van bevindingen, terwijl technische klanten meer direct profiteren van de snelheid van een gerichte audit versus vanaf nul schatten alsof er nog geen code bestond."
+        "text": "Het geldt breed, hoewel de specifieke waardepropositie verschilt - niet-technische klanten profiteren van de gewone-taal-vertaling van bevindingen, terwijl technische klanten meer direct profiteren van de snelheid van een gerichte audit versus vanaf nul schatten alsof er nog geen code bestond."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is de typische uitkomstverdeling — hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?",
+      "name": "Wat is de typische uitkomstverdeling - hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld — de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken."
+        "text": "Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld - de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken."
       }
     }
   ]

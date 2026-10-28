@@ -1,4 +1,4 @@
-🚨 "Facturatiefouten zien er niet uit als bugs," aldus een oprichter wiens accountant een afwijking van 9% ontdekte tussen zijn MRR-dashboard en het factuurgrootboek. Zes opgezegde accounts hadden nog altijd volledige toegang — één zelfs al vier maanden. 😳
+🚨 "Facturatiefouten zien er niet uit als bugs," aldus een oprichter wiens accountant een afwijking van 9% ontdekte tussen zijn MRR-dashboard en het factuurgrootboek. Zes opgezegde accounts hadden nog altijd volledige toegang - één zelfs al vier maanden. 😳
 
 Periodieke abonnementsfacturatie faalt stilletjes en asymmetrisch, en dat is precies waarom niemand het opmerkt vóórdat het in een investeerdersupdate belandt: 🧠
 

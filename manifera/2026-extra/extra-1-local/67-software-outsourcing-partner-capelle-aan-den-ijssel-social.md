@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Long-Tenure Engineer Assignment:** Institutional knowledge that compounds instead of resetting.
 ✅ **Governance That Scales With You:** Amsterdam-based leadership grows its oversight structure alongside the engagement.
-✅ **Built-In Capacity Flex:** Scale up or down within the same relationship — no renegotiation required.
+✅ **Built-In Capacity Flex:** Scale up or down within the same relationship - no renegotiation required.
 
 Choose for year three, not just for the first sprint. 🛡️
 

@@ -3,7 +3,7 @@
 De meeste oprichters scannen een technisch contract op prijs en startdatum en vertrouwen erop dat de rest standaardtekst is. Dat is precies waar geschillen ontstaan: 🧠
 
 ❌ Een vage reikwijdte-sectie ("algemene verbeteringen") heeft geen gedefinieerd eindpunt
-❌ IP-eigendom wordt vaak aangenomen in plaats van gelezen — tot het de ene keer verkeerd blijkt
+❌ IP-eigendom wordt vaak aangenomen in plaats van gelezen - tot het de ene keer verkeerd blijkt
 ❌ Zwijgen over aansprakelijkheid na oplevering betekent geen vangnet als er iets misgaat
 ❌ Vage mijlpalen laten u volledig vertrouwen op de bewering van de partner, niet op eigen verificatie
 

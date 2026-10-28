@@ -1,6 +1,6 @@
-🔍 Daniel, a medical writer, built a clinical research database with **Bolt** — but medical professionals doubted the AI's answers because there was no way to verify where the facts came from. 📄
+🔍 Daniel, a medical writer, built a clinical research database with **Bolt** - but medical professionals doubted the AI's answers because there was no way to verify where the facts came from. 📄
 
-The barrier to enterprise AI adoption was never intelligence, it's trust — and trust requires proof. 🧠
+The barrier to enterprise AI adoption was never intelligence, it's trust - and trust requires proof. 🧠
 
 ❌ AI-generated claims with no way to trace them back to a source document
 ❌ Professionals forced to manually reopen and search PDFs just to verify a single number

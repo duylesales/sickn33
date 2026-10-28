@@ -6,9 +6,9 @@
 ❌ **The Cheap Vendor Trap:** Selecting the lowest hourly rate consistently costs 2x to 3x more after accounting for bug fixes, rework, and delayed time-to-market.
 
 **The Manifera Solution:**
-✅ **Design and UX:** — wireframes, a design system, and usability passes, typically 15-20% of total budget.
-✅ **Core build:** — the actual engineering: frontend, backend, API integrations, native platform work.
-✅ **QA and device testing:** — cross-device, cross-OS-version testing that catches the crashes a demo on one iPhone never surfaces.
+✅ **Design and UX:** - wireframes, a design system, and usability passes, typically 15-20% of total budget.
+✅ **Core build:** - the actual engineering: frontend, backend, API integrations, native platform work.
+✅ **QA and device testing:** - cross-device, cross-OS-version testing that catches the crashes a demo on one iPhone never surfaces.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

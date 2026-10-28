@@ -1,4 +1,4 @@
-🚨 "AI Trend Forecasting Can Simply Replace Experienced Merchandising Judgment at..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Trend Forecasting Can Simply Replace Experienced Merchandising Judgment at..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Trend Forecasting Can Simply Replace Experienced ...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

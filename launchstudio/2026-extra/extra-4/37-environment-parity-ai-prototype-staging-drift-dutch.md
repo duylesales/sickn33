@@ -68,19 +68,19 @@ Een minimale versie hiervan vereist geen ingewikkeld DevOps-platform – zelfs e
 
 Als uw staging-omgeving u ooit heeft verrast door niet overeen te komen met productie, omvat [ons proces](https://launchstudio.eu/nl/#process) exact dit soort omgevingsaudit als onderdeel van het lanceringsklaar maken van een app.
 
-## Configuratie-als-code lost afwijking op — Als geheimen niet mee de repository in gaan
+## Configuratie-als-code lost afwijking op - Als geheimen niet mee de repository in gaan
 
 Het plaatsen van omgevingsconfiguraties in versiebeheer herstelt afwijkingen, maar het introduceert een nieuwe manier van mislukken als het gebeurt zonder tweede gedachte: het rechtstreeks vastleggen van daadwerkelijke geheime waarden – API-sleutels, databasewachtwoorden, ondertekeningsgeheimen – in dezelfde bestanden die nu in de git-geschiedenis leven. Zodra een geheim is vastgelegd, zit het permanent in de geschiedenis van de repo, zelfs als het in een latere commit wordt verwijderd. En het is blootgesteld aan iedereen met toegang tot de repo, inclusief een repo die later openbaar wordt gemaakt of wordt gedeeld met een leverancier.
 
 De herstelling is het scheiden van de structurele configuratie, die veilig is om vast te leggen, van geheime waarden, die dat nooit zouden moeten zijn:
 
 ```
-# vastgelegd in versiebeheer — veilig
+# vastgelegd in versiebeheer - veilig
 FEATURE_NEW_SCHEDULING=true
 RATE_LIMIT_WINDOW=60
 STRIPE_WEBHOOK_SECRET=${SECRET_MANAGER:stripe_webhook_secret}
 
-# nooit vastgelegd — leeft in een secret manager of platform-omgevingsvariabelen
+# nooit vastgelegd - leeft in een secret manager of platform-omgevingsvariabelen
 STRIPE_WEBHOOK_SECRET=whsec_actual_value_here
 ```
 
@@ -99,9 +99,9 @@ LaunchStudio's ingenieurs traceerden de discrepantie terug naar het niet-gedocum
 **Resultaat:** Levi heeft sinds die tijd geen verrassing meer gehad tussen staging en productie, omdat afwijkingen nu automatisch worden opgevangen voordat ze ooit een lancering bereiken.
 
 > *"Ik heb die functie een week lang getest. Het kwam nooit bij me op dat de omgevingen zelf niet meer hetzelfde waren."*
-> — **Levi Kramers, Oprichter, ShiftManager (Zutphen)**
+> - **Levi Kramers, Oprichter, ShiftManager (Zutphen)**
 
-**Kosten en tijdlijn:** € 800 (audit van omgevingsconfiguratie, migratie naar configuratie-als-code, en geautomatiseerde afwijkingsdetectie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 800 (audit van omgevingsconfiguratie, migratie naar configuratie-als-code, en geautomatiseerde afwijkingsdetectie) - voltooid in 5 werkdagen.
 
 ---
 

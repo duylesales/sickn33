@@ -35,7 +35,7 @@ Content Format: Policy Brief
 }
 </script>
 
-Public debate about AI talent in the Netherlands often focuses on research universities, PhD programmes and international top talent. Yet the practical adoption of AI in regional manufacturing companies, logistics firms, healthcare organisations, municipalities and agrifood businesses depends heavily on another part of the education system: universities of applied sciences (hogescholen). They educate large numbers of ICT, data, engineering, business and healthcare professionals, and many of their graduates work in the region where they studied. Their lectorates conduct practice-based research directly with small and medium-sized enterprises. For regional AI adoption, these institutions are not a secondary channel — they are often the main one.
+Public debate about AI talent in the Netherlands often focuses on research universities, PhD programmes and international top talent. Yet the practical adoption of AI in regional manufacturing companies, logistics firms, healthcare organisations, municipalities and agrifood businesses depends heavily on another part of the education system: universities of applied sciences (hogescholen). They educate large numbers of ICT, data, engineering, business and healthcare professionals, and many of their graduates work in the region where they studied. Their lectorates conduct practice-based research directly with small and medium-sized enterprises. For regional AI adoption, these institutions are not a secondary channel - they are often the main one.
 
 ## Why Universities of Applied Sciences Matter for AI Adoption
 
@@ -45,7 +45,7 @@ Public debate about AI talent in the Netherlands often focuses on research unive
 
 **SME connections.** Lecturers, lectors and students work with regional businesses that rarely collaborate with research universities, including companies taking their first steps with data.
 
-**Broad AI literacy.** AI is not only a subject for computer science students. Programmes in logistics, healthcare, business, engineering, agriculture and education increasingly include data and AI components — exactly the combination of domain and data skills many employers need.
+**Broad AI literacy.** AI is not only a subject for computer science students. Programmes in logistics, healthcare, business, engineering, agriculture and education increasingly include data and AI components - exactly the combination of domain and data skills many employers need.
 
 ## The Named Instruments and Organisations
 
@@ -57,7 +57,7 @@ Public debate about AI talent in the Netherlands often focuses on research unive
 
 **Taskforce for Applied Research SIA (Regieorgaan SIA).** Part of the Dutch Research Council (NWO), SIA funds practice-based research at universities of applied sciences, including through **RAAK programmes** that support collaboration with SMEs and public organisations.
 
-**Professional Doctorate.** The Netherlands has been piloting a professional doctorate at universities of applied sciences, a third-cycle programme focused on designing solutions for complex practical problems — a potential route for advanced applied AI expertise.
+**Professional Doctorate.** The Netherlands has been piloting a professional doctorate at universities of applied sciences, a third-cycle programme focused on designing solutions for complex practical problems - a potential route for advanced applied AI expertise.
 
 **Associate degree programmes.** Two-year higher professional education programmes offer shorter routes into data and IT roles and can attract working adults.
 
@@ -80,7 +80,7 @@ The **HBO-Monitor**, a national survey of recent graduates coordinated with the 
 
 ## The Visibility Challenge for Internships and Graduate Jobs
 
-Universities of applied sciences depend on internships and graduation assignments at companies. Yet many regional SMEs with suitable data projects never offer them, because they do not know how, do not think of their work as "AI" or cannot find students. At the same time, students search for internships in the same places they search for jobs — often large platforms dominated by bigger employers.
+Universities of applied sciences depend on internships and graduation assignments at companies. Yet many regional SMEs with suitable data projects never offer them, because they do not know how, do not think of their work as "AI" or cannot find students. At the same time, students search for internships in the same places they search for jobs - often large platforms dominated by bigger employers.
 
 Making regional internships, graduation projects and entry-level data roles visible at exact location helps both sides. Students find opportunities within reasonable travel distance, and SMEs reach students who might otherwise never consider them.
 
@@ -88,7 +88,7 @@ Making regional internships, graduation projects and entry-level data roles visi
 
 **1. Map regional demand.** Use lectorate contacts, Centres of Expertise and vacancy data to identify which regional employers need data skills.
 
-**2. Help SMEs formulate projects.** Many SMEs need support in turning a vague ambition — "doing something with data" — into a feasible student project.
+**2. Help SMEs formulate projects.** Many SMEs need support in turning a vague ambition - "doing something with data" - into a feasible student project.
 
 **3. Integrate AI literacy across programmes.** Since February 2025, the **EU AI Act** requires organisations using AI to ensure AI literacy among staff. Graduates who understand AI's possibilities and risks in their own field are valuable to employers facing this obligation.
 
@@ -126,7 +126,7 @@ For regional employers, these formats offer a low-threshold introduction to work
 
 Many data and IT professionals follow a route from vocational education (MBO) to higher professional education (HBO). MBO graduates in ICT, laboratory work or technical fields can progress to HBO programmes in data science, software engineering or engineering, often bringing strong practical skills. Some MBO institutions have practice-based research positions known as practoraten, which also work with regional employers.
 
-Supporting these pathways — through bridging programmes, recognition of prior learning and cooperation between MBO and HBO institutions — widens the regional talent pool for AI and data roles and gives more young people access to technical careers without leaving their region.
+Supporting these pathways - through bridging programmes, recognition of prior learning and cooperation between MBO and HBO institutions - widens the regional talent pool for AI and data roles and gives more young people access to technical careers without leaving their region.
 
 ## Common Pitfalls
 
@@ -154,7 +154,7 @@ Universities of applied sciences are increasingly asked to demonstrate their reg
 - **Participation of regional employees** in lifelong learning programmes.
 - **Regional vacancy trends** for roles matching programme profiles.
 
-Combining these indicators with qualitative stories — a lectorate helping a company deploy its first model, or an alumnus leading data work at a regional employer — gives policymakers and partners a convincing picture of the institution's role in regional AI adoption.
+Combining these indicators with qualitative stories - a lectorate helping a company deploy its first model, or an alumnus leading data work at a regional employer - gives policymakers and partners a convincing picture of the institution's role in regional AI adoption.
 
 ## Key Takeaways
 
@@ -166,7 +166,7 @@ Combining these indicators with qualitative stories — a lectorate helping a co
 
 ## Where to Start
 
-Ask your lectorates and internship coordinators how many regional SMEs offered data-related projects last year — and how students found them. That answer shows where visibility can improve.
+Ask your lectorates and internship coordinators how many regional SMEs offered data-related projects last year - and how students found them. That answer shows where visibility can improve.
 
 Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss making regional internships and graduate AI roles more visible to your students.
 

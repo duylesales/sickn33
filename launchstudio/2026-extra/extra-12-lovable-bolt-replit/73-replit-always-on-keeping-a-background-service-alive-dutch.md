@@ -36,7 +36,7 @@ Drie dingen, en oprichters denken meestal alleen aan het eerste.
 
 **Toestand in het geheugen.** Alles wat in een variabele staat in plaats van in een database: een cache, een teller, een sessie, een half samengestelde upload. Weg, en de code die ervan uitging dat het er was, gedraagt zich onvoorspelbaar.
 
-Die derde is de bron van de verwarrende bugs — een product dat perfect werkt bij continu gebruik en zich vreemd gedraagt na een rustige nacht.
+Die derde is de bron van de verwarrende bugs - een product dat perfect werkt bij continu gebruik en zich vreemd gedraagt na een rustige nacht.
 
 ## Het Deploymenttype Kiezen
 
@@ -48,7 +48,7 @@ Replit biedt er verschillende, en de keuze volgt de workload, niet de prijs.
 
 **Static** serveert bestanden zonder enige server. Juist voor een marketingsite of een frontend, het snelst en goedkoopst, en irrelevant voor alles wat logica nodig heeft.
 
-**Scheduled** draait volgens een cron-schema en stopt dan. Juist voor periodiek werk — een nachtelijk rapport, een synchronisatie per uur — en het juiste antwoord in plaats van een continu draaiend proces dat het grootste deel van de tijd slaapt.
+**Scheduled** draait volgens een cron-schema en stopt dan. Juist voor periodiek werk - een nachtelijk rapport, een synchronisatie per uur - en het juiste antwoord in plaats van een continu draaiend proces dat het grootste deel van de tijd slaapt.
 
 De veelgemaakte fout is een webapplicatie op autoscale draaien en verwachten dat een achtergrondlus erin blijft werken. Dat gebeurt niet, en geen enkele configuratie verandert dat.
 
@@ -58,7 +58,7 @@ Het betere antwoord voor de meeste producten is niets nodig hebben dat constant 
 
 Verplaats periodiek werk naar geplande deployments in plaats van naar een lus binnen de applicatie. Een nachtelijke taak is een geplande run, geen proces dat elke minuut op de klok kijkt.
 
-Houd de wachtrij in de database, zoals beschreven in het artikel over achtergrondwerk in deze reeks, zodat werk duurzaam is en een worker oppakt wat er klaarstaat wanneer hij weer draait — in plaats van taken in het geheugen vast te houden die verdwijnen.
+Houd de wachtrij in de database, zoals beschreven in het artikel over achtergrondwerk in deze reeks, zodat werk duurzaam is en een worker oppakt wat er klaarstaat wanneer hij weer draait - in plaats van taken in het geheugen vast te houden die verdwijnen.
 
 Bewaar nooit toestand in het geheugen die ertoe doet. Een cache is een prestatieverbetering die mag verdwijnen; een sessie, een teller of een tussenresultaat moet in de database staan.
 
@@ -72,7 +72,7 @@ Sommige workloads hebben echt een continu draaiend proces nodig, en het is goed 
 
 Een websocket of realtimeverbinding die uw product onderhoudt. Een consument van een externe eventstream. Werk dat binnen seconden na binnenkomst moet beginnen in plaats van binnen een minuut. Een langlopend proces dat niet in geplande stukken kan worden opgedeeld.
 
-Hiervoor is een reserved deployment het juiste antwoord en zijn de vaste kosten de prijs van de eis. Wat u moet vermijden, is betalen voor een continu draaiende instance omdat een geplande taak als lus is gebouwd — de meest voorkomende reden dat kleine producten bij de duurdere optie uitkomen.
+Hiervoor is een reserved deployment het juiste antwoord en zijn de vaste kosten de prijs van de eis. Wat u moet vermijden, is betalen voor een continu draaiende instance omdat een geplande taak als lus is gebouwd - de meest voorkomende reden dat kleine producten bij de duurdere optie uitkomen.
 
 ## Weet Dat Het Draait
 
@@ -96,27 +96,27 @@ Drie dingen verminderen het.
 
 **Serveer de schil zonder de server.** Zijn uw marketingpagina's en de applicatieschil statische bestanden, dan ziet een bezoeker direct iets terwijl de server erachter wakker wordt. Dit is de effectiefste wijziging voor de ervaren snelheid en het is grotendeels een deploymentbeslissing.
 
-De maatstaf die bepaalt of dit er allemaal toe doet: hoe vaak de applicatie werkelijk slaapt. Voor een product met een handvol gebruikers verspreid over een werkdag zelden — iemand raakt het elke paar minuten aan. Voor een product met een wekelijks ritme het grootste deel van de tijd, en elke bezoeker op maandagochtend betaalt de prijs.
+De maatstaf die bepaalt of dit er allemaal toe doet: hoe vaak de applicatie werkelijk slaapt. Voor een product met een handvol gebruikers verspreid over een werkdag zelden - iemand raakt het elke paar minuten aan. Voor een product met een wekelijks ritme het grootste deel van de tijd, en elke bezoeker op maandagochtend betaalt de prijs.
 
-Is het het laatste en doet de ervaring ertoe, dan houdt een gepland verzoek om de paar minuten het warm voor aanzienlijk minder dan een reserved instance kost — een onelegante oplossing die werkt, en die het waard is te kennen voordat u betaalt voor continue capaciteit die u verder niet nodig hebt.
+Is het het laatste en doet de ervaring ertoe, dan houdt een gepland verzoek om de paar minuten het warm voor aanzienlijk minder dan een reserved instance kost - een onelegante oplossing die werkt, en die het waard is te kennen voordat u betaalt voor continue capaciteit die u verder niet nodig hebt.
 
 ## Lange Taken Hebben een Andere Vorm Nodig
 
 Eén patroon verdient bijzondere aandacht, omdat het faalt op een manier die moeilijk te diagnosticeren is: een verzoek dat veel werk doet en lang duurt.
 
-Een groot rapport genereren. Een geüpload bestand met duizenden rijen verwerken. Een model herhaaldelijk aanroepen voor elk item in een lijst. Op een prototype met weinig data is dit in een paar seconden klaar. In productie, met het volume van een echte klant, duurt het minuten — en loopt het dan tegen een time-out van het platform, een proxylimiet, of een instance die halverwege afschaalt.
+Een groot rapport genereren. Een geüpload bestand met duizenden rijen verwerken. Een model herhaaldelijk aanroepen voor elk item in een lijst. Op een prototype met weinig data is dit in een paar seconden klaar. In productie, met het volume van een echte klant, duurt het minuten - en loopt het dan tegen een time-out van het platform, een proxylimiet, of een instance die halverwege afschaalt.
 
 De mislukking is gedeeltelijk. De helft van de rijen geïmporteerd, de helft van het rapport gegenereerd, de klant ziet een fout en probeert opnieuw, wat het hele ding opnieuw start naast het deel dat nog draait.
 
 De vorm die werkt, uitgebreider beschreven in het artikel over achtergrondwerk in deze reeks: neem het verzoek aan, maak een taak aan, geef direct een identifier terug, verwerk op de achtergrond in batches, en laat de klant de status opvragen of een e-mail ontvangen wanneer het klaar is.
 
-De vuistregel die het overnemen waard is: elk verzoek dat voor uw grootste klant meer dan ongeveer tien seconden kan duren, hoort geen verzoek te zijn. Het hoort een taak te zijn — en "uw grootste klant" doet het werk in die zin, omdat de versie die voor iedereen anders prima is, precies die is die faalt voor het account dat u het minst wilt teleurstellen.
+De vuistregel die het overnemen waard is: elk verzoek dat voor uw grootste klant meer dan ongeveer tien seconden kan duren, hoort geen verzoek te zijn. Het hoort een taak te zijn - en "uw grootste klant" doet het werk in die zin, omdat de versie die voor iedereen anders prima is, precies die is die faalt voor het account dat u het minst wilt teleurstellen.
 
 ## Dit Inrichten
 
 Voor een Replit-product is dit doorgaans een halve tot een hele dag: het deploymenttype afgestemd op de workload, met static, autoscale, scheduled en reserved gebruikt waarvoor elk geschikt is; periodiek werk verplaatst naar geplande deployments in plaats van lussen binnen de applicatie; de takenwachtrij in de database zodat werk herstarts overleeft; toestand in het geheugen geëlimineerd voor alles wat ertoe doet; taken idempotent gemaakt zodat onderbreking onschadelijk is; een reserved deployment alleen waar iets echt continu moet draaien; een runregistratie en waarschuwing bij afwezigheid voor elk gepland en achtergrondproces; en een externe uptimecontrole tegen een pagina die de database aanspreekt.
 
-LaunchStudio doet dit bij het naar productie brengen van een Replit-product, en het verlaagt vaak ook de rekening, door een continu draaiende instance te vervangen door gepland werk. De engineers zijn van Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit bij het naar productie brengen van een Replit-product, en het verlaagt vaak ook de rekening, door een continu draaiende instance te vervangen door gepland werk. De engineers zijn van Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vertel ons wat uw product doet als niemand het gebruikt](https://launchstudio.eu/nl/#contact).
 
@@ -126,18 +126,18 @@ LaunchStudio doet dit bij het naar productie brengen van een Replit-product, en 
 
 Annemarie Poortvliet bouwde Innametool op Replit: intake en medicatiecontrole voor kleine apotheekketens, die patiënten een herinnering stuurt wanneer een herhaalrecept eraan komt, voor zo'n 4.000 patiënten in zes apotheken.
 
-De herinneringslogica draaide in een lus binnen haar webapplicatie, die elke paar minuten controleerde of er iets aan de beurt was. Op drukke dagen werkte het. Op rustige nachten sliep de applicatie, stopte de lus, en werden herinneringen die tussen ongeveer twee en zeven uur 's ochtends aan de beurt waren nooit verstuurd — ook later niet, omdat de lus alleen keek naar wat er op het moment van controleren aan de beurt was.
+De herinneringslogica draaide in een lus binnen haar webapplicatie, die elke paar minuten controleerde of er iets aan de beurt was. Op drukke dagen werkte het. Op rustige nachten sliep de applicatie, stopte de lus, en werden herinneringen die tussen ongeveer twee en zeven uur 's ochtends aan de beurt waren nooit verstuurd - ook later niet, omdat de lus alleen keek naar wat er op het moment van controleren aan de beurt was.
 
 Ze ontdekte het toen een apotheek haar eigen herhaalreceptgegevens vergeleek met de verstuurde herinneringen en een consequent gat vond.
 
 Twee werkdagen: de herinneringslogica uit de webapplicatie gehaald en in een geplande deployment gezet die elke vijftien minuten draait; de taak herschreven om alles te verwerken wat sinds de laatste geslaagde run aan de beurt was in plaats van alles wat nu aan de beurt is, zodat een gemist venster automatisch wordt ingehaald; de wachtrij naar de database verplaatst met idempotentie op patiënt en recept, zodat een herhaalde run geen herinnering kan dupliceren; tellers in het geheugen vervangen door databasewaarden, die onzichtbaar waren gereset en haar verzendstatistieken onjuist maakten; de webapplicatie op autoscale gelaten, omdat niets er meer van afhangt dat ze continu draait, waarmee een reserved instance werd vermeden die ze op het punt stond te kopen; runregistraties bij elke uitvoering; een waarschuwing wanneer de herinneringstaak niet binnen een uur succesvol is afgerond; en een externe uptimecontrole tegen een pagina die de database bevraagt.
 
-**Resultaat:** het gat werd gedicht, en het herstelgedrag bewees zich binnen de eerste twee weken toen een incident bij het platform de geplande taak drie uur stillegde — de volgende run verwerkte alles wat zich had opgestapeld en niemand miste een herinnering. De kosten daalden licht in plaats van te stijgen, omdat de reserved instance niet nodig was.
+**Resultaat:** het gat werd gedicht, en het herstelgedrag bewees zich binnen de eerste twee weken toen een incident bij het platform de geplande taak drie uur stillegde - de volgende run verwerkte alles wat zich had opgestapeld en niemand miste een herinnering. De kosten daalden licht in plaats van te stijgen, omdat de reserved instance niet nodig was.
 
 > *"Herinneringen die om vier uur 's ochtends aan de beurt waren, werden nooit verstuurd, en later ook niet, omdat de taak alleen ooit vroeg wat er op dat exacte moment aan de beurt was."*
-> — **Annemarie Poortvliet, Oprichter, Innametool (Delft)**
+> - **Annemarie Poortvliet, Oprichter, Innametool (Delft)**
 
-**Kosten & Doorlooptijd:** €2.200 (geplande deployment voor het verwerken van herinneringen, herstellogica sinds de laatste run, databasewachtrij met idempotentie, eliminatie van toestand in het geheugen, runregistraties en waarschuwing bij afwezigheid, externe uptimemonitoring) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.200 (geplande deployment voor het verwerken van herinneringen, herstellogica sinds de laatste run, databasewachtrij met idempotentie, eliminatie van toestand in het geheugen, runregistraties en waarschuwing bij afwezigheid, externe uptimemonitoring) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -147,7 +147,7 @@ De webserver, alles wat op de achtergrond draait, en alle toestand in het geheug
 
 ### Heb ik een reserved deployment nodig?
 
-Alleen als iets echt continu moet draaien — een realtimeverbinding, een consument van een eventstream, of werk dat binnen seconden moet starten. Periodiek werk hoort in een geplande deployment.
+Alleen als iets echt continu moet draaien - een realtimeverbinding, een consument van een eventstream, of werk dat binnen seconden moet starten. Periodiek werk hoort in een geplande deployment.
 
 ### Hoe voorkom ik dat een lus in mijn webapp wordt gestopt?
 
@@ -159,7 +159,7 @@ Laat taken alles verwerken wat sinds hun laatste geslaagde run aan de beurt was 
 
 ### Hoe weet ik dat een achtergrondtaak is gestopt?
 
-Alleen als u op afwezigheid controleert. Leg elke run vast en waarschuw wanneer er een niet binnen het verwachte venster heeft plaatsgevonden — falen levert niets op, dus niets is waar u op moet letten.
+Alleen als u op afwezigheid controleert. Leg elke run vast en waarschuw wanneer er een niet binnen het verwachte venster heeft plaatsgevonden - falen levert niets op, dus niets is waar u op moet letten.
 
 <script type="application/ld+json">
 {
@@ -171,7 +171,7 @@ Alleen als u op afwezigheid controleert. Leg elke run vast en waarschuw wanneer 
       "name": "Wat stopt er wanneer een Replit-project stilvalt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De webserver, elk achtergrondproces en alle toestand in het geheugen — dat laatste levert bugs op die alleen na rustige periodes verschijnen."
+        "text": "De webserver, elk achtergrondproces en alle toestand in het geheugen - dat laatste levert bugs op die alleen na rustige periodes verschijnen."
       }
     },
     {
@@ -179,7 +179,7 @@ Alleen als u op afwezigheid controleert. Leg elke run vast en waarschuw wanneer 
       "name": "Heb ik een altijd-aan reserved deployment nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alleen voor werk dat continu moet draaien — realtimeverbindingen, eventstreams, of taken die binnen seconden moeten starten."
+        "text": "Alleen voor werk dat continu moet draaien - realtimeverbindingen, eventstreams, of taken die binnen seconden moeten starten."
       }
     },
     {
@@ -203,7 +203,7 @@ Alleen als u op afwezigheid controleert. Leg elke run vast en waarschuw wanneer 
       "name": "Hoe weet ik dat een achtergrondtaak is gestopt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Leg elke run vast en waarschuw bij afwezigheid binnen het verwachte venster — falen levert niets op, dus afwezigheid is het signaal."
+        "text": "Leg elke run vast en waarschuw bij afwezigheid binnen het verwachte venster - falen levert niets op, dus afwezigheid is het signaal."
       }
     }
   ]

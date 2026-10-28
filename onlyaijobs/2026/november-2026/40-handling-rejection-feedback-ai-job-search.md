@@ -37,7 +37,7 @@ Content Format: Career Guide
 
 A graduate applies to thirty data science roles, hears nothing from half of them, receives fifteen polite rejections and gets two interviews that end in a "we have chosen another candidate". It is easy to conclude that something is fundamentally wrong: the degree is not good enough, the market is closed, the dream of working in AI was unrealistic. In most cases, none of that is true. Rejection is a normal, statistical part of any job search, particularly for junior roles that attract many applicants. What matters is how you interpret rejections, what information you extract from them and how you adjust your approach while keeping momentum.
 
-## Why Rejections Happen — Often for Reasons You Cannot See
+## Why Rejections Happen - Often for Reasons You Cannot See
 
 Many rejections have little to do with the candidate's quality.
 
@@ -48,7 +48,7 @@ Many rejections have little to do with the candidate's quality.
 - **Timing.** Another candidate was further along in the process or available sooner.
 - **Screening filters.** Applicant tracking systems or screening questions filter out applications on criteria such as language, location or availability.
 
-Other rejections do reflect gaps in skills, experience or presentation — but it is often impossible to know which type of rejection you received without asking.
+Other rejections do reflect gaps in skills, experience or presentation - but it is often impossible to know which type of rejection you received without asking.
 
 ## Understanding Where in the Process You Are Rejected
 
@@ -63,7 +63,7 @@ Tracking at which stage rejections occur is more informative than counting rejec
 
 ## How to Ask for Feedback Effectively
 
-Many employers do not give detailed feedback automatically, especially after early stages, but candidates who ask politely often receive something useful — particularly after interviews.
+Many employers do not give detailed feedback automatically, especially after early stages, but candidates who ask politely often receive something useful - particularly after interviews.
 
 **Ask soon, briefly and specifically.** Send a short message within a few days of the rejection. Thank the interviewer, express continued interest in the organisation and ask one or two specific questions, for example: "Which part of my technical assessment could have been stronger?" or "Was there a specific skill or experience that made the difference for the selected candidate?"
 
@@ -93,7 +93,7 @@ Feedback is valuable but imperfect. Interviewers may give vague answers, avoid s
 
 **Separate skill feedback from fit feedback.** "You need more experience with deployment" is actionable; "we chose someone with more domain knowledge" may not require changing anything.
 
-**Translate vague feedback into questions.** If feedback says "communication could be clearer", ask yourself whether you explained projects too technically, too long or without clear conclusions — and practise specifically.
+**Translate vague feedback into questions.** If feedback says "communication could be clearer", ask yourself whether you explained projects too technically, too long or without clear conclusions - and practise specifically.
 
 **Do not overcorrect.** Changing your entire profile after one rejection can make your applications less focused.
 
@@ -109,7 +109,7 @@ Respond graciously. Thank the team for the process, mention what you appreciated
 
 Keep in touch lightly. If the organisation publishes a new vacancy months later, mention your previous application and what you have learned since. In some cases, a selected candidate declines an offer or leaves during probation, and employers contact the runner-up directly.
 
-Finally, reflect on the process itself. Reaching the final round means your profile and skills were competitive. Instead of changing everything, look for small improvements — perhaps in explaining business impact or asking sharper questions — and apply that confidence to your next applications.
+Finally, reflect on the process itself. Reaching the final round means your profile and skills were competitive. Instead of changing everything, look for small improvements - perhaps in explaining business impact or asking sharper questions - and apply that confidence to your next applications.
 
 ## Adjusting Your Search Strategy
 
@@ -127,7 +127,7 @@ Rejections also contain information about where you apply, not only how. If you 
 
 Review your log and ask a few questions. Which types of employers invited you to interviews? Which sectors responded positively to your background? Were you more successful with roles that combined analysis and modelling than with pure machine learning roles? Did applications to employers closer to your location perform better?
 
-Adjusting your target list based on these patterns is often more effective than improving your CV further. A data science graduate from Eindhoven, for example, may find that applications to high-tech manufacturers and logistics companies in Brabant lead to more interviews than applications to Amsterdam scale-ups — and that the resulting roles offer more responsibility early on.
+Adjusting your target list based on these patterns is often more effective than improving your CV further. A data science graduate from Eindhoven, for example, may find that applications to high-tech manufacturers and logistics companies in Brabant lead to more interviews than applications to Amsterdam scale-ups - and that the resulting roles offer more responsibility early on.
 
 ## Taking Care of Motivation
 
@@ -143,11 +143,11 @@ A long job search affects confidence and energy. Some practical habits help:
 
 A recent graduate with a master's degree in data science receives twelve rejections in two months. She creates a simple log and notices that she reaches the technical assessment stage in most cases but is rejected afterwards.
 
-She asks three employers for feedback. Two mention that her models were strong but her evaluation lacked a baseline and discussion of limitations; one mentions that her code was difficult to follow. She spends three weeks improving her approach: structuring code, adding baselines and writing concise summaries. In her next four assessments, she reaches the final round three times and receives an offer from a regional energy company. The rejections contained the information she needed — once she collected and compared it.
+She asks three employers for feedback. Two mention that her models were strong but her evaluation lacked a baseline and discussion of limitations; one mentions that her code was difficult to follow. She spends three weeks improving her approach: structuring code, adding baselines and writing concise summaries. In her next four assessments, she reaches the final round three times and receives an offer from a regional energy company. The rejections contained the information she needed - once she collected and compared it.
 
 ## A Common Misconception About Rejection
 
-The most common misconception is that rejection reflects personal worth or overall ability. In reality, many rejections are driven by factors outside the candidate's control, and even strong candidates receive many. A second misconception is that asking for feedback is inappropriate or annoying. When done politely and briefly, it is professional and often appreciated — and it sometimes leads to future opportunities.
+The most common misconception is that rejection reflects personal worth or overall ability. In reality, many rejections are driven by factors outside the candidate's control, and even strong candidates receive many. A second misconception is that asking for feedback is inappropriate or annoying. When done politely and briefly, it is professional and often appreciated - and it sometimes leads to future opportunities.
 
 ## Key Takeaways
 
@@ -166,7 +166,7 @@ Browse current AI, machine learning and data jobs, including junior roles at reg
 ## Frequently Asked Questions
 
 ### (Scenario: graduate with many rejections) Is it normal to receive many rejections when applying for junior AI jobs?
-Yes — junior roles attract many applicants, and rejections often reflect volume or specific requirements rather than lack of ability.
+Yes - junior roles attract many applicants, and rejections often reflect volume or specific requirements rather than lack of ability.
 
 ### (Scenario: candidate after an interview) How should I ask for feedback after a rejection?
 Send a short, polite message within a few days with one or two specific questions, and avoid arguing with the decision.
@@ -185,7 +185,7 @@ Seek advice and consider requesting an opinion from the Netherlands Institute fo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it normal to receive many rejections when applying for junior AI jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — volume and specific requirements often drive rejections."}},
+    {"@type": "Question", "name": "Is it normal to receive many rejections when applying for junior AI jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - volume and specific requirements often drive rejections."}},
     {"@type": "Question", "name": "How should I ask for feedback after a rejection?", "acceptedAnswer": {"@type": "Answer", "text": "Briefly and politely, with one or two specific questions."}},
     {"@type": "Question", "name": "Can I see interview notes about me?", "acceptedAnswer": {"@type": "Answer", "text": "You can request access under GDPR Article 15, subject to limitations."}},
     {"@type": "Question", "name": "What should I do if an employer never responds?", "acceptedAnswer": {"@type": "Answer", "text": "Follow up once, then move on."}},

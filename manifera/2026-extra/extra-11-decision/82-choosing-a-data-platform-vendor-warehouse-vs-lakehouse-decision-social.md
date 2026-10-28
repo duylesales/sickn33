@@ -6,7 +6,7 @@ A retailer signed a Databricks contract before checking that 90% of their worklo
 ❌ **False openness:** "Open" lakehouse platforms quietly add proprietary extensions on top of open table formats, reintroducing the lock-in you thought you avoided.
 
 **The Manifera Solution:**
-✅ **Workload-first architecture:** We map your actual top workloads before recommending warehouse, lakehouse, or hybrid — not the other way around.
+✅ **Workload-first architecture:** We map your actual top workloads before recommending warehouse, lakehouse, or hybrid - not the other way around.
 ✅ **Real cost-control design:** Job-level cluster policies, spot instance usage, and query caching built in from day one, not discovered after the first surprise bill.
 ✅ **Portability by design:** We architect ingestion and transformation layers to minimize platform-specific dependencies, so a future migration is a re-platform, not a rebuild.
 

@@ -1,9 +1,9 @@
 🚨 "Ik had mezelf al wijsgemaakt dat ik mijn geliefde website moest weggooien." Iris was vijf weken lang bezig om haar coachingprogramma in een Framer-ledensectie te wringen. 😳
 
-Een paginabouwer publiceert; hij bewaart geen geheimen — zodra uw product dat wél moet doen, helpt geen enkele add-on meer: 🧠
+Een paginabouwer publiceert; hij bewaart geen geheimen - zodra uw product dat wél moet doen, helpt geen enkele add-on meer: 🧠
 
 ❌ Cliënten mochten uitsluitend hun eigen invoer zien; de afscherming kende alleen 'lid of geen lid'
-❌ Coaches hadden toegang nodig tot hun eigen cliënten en niemand anders — geen ledentool ondersteunt die regel
+❌ Coaches hadden toegang nodig tot hun eigen cliënten en niemand anders - geen ledentool ondersteunt die regel
 ❌ Ze overwoog om de complete marketingsite opnieuw te bouwen, met verlies van haar favoriete design
 ❌ Vijf kostbare weken gingen verloren aan het forceren van een tool voor een taak waar hij nooit voor gemaakt is
 

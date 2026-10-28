@@ -91,9 +91,9 @@ Third, they implemented strict Row Level Security in Supabase, ensuring that Doc
 **Result:** David presented the new architecture to the hospital's DPO. He proved that no unredacted patient data ever hit a public cloud, and the AI provider retained absolutely nothing. The DPO approved the software. David closed the €250,000 enterprise contract and used the new security architecture as the primary selling point to acquire three more hospital networks.
 
 > *"I was building a great medical tool, but I was completely ignorant of medical data security. The hospital laughed me out of the room. LaunchStudio didn't just write code; they provided the enterprise security architecture that actually allowed me to sell my product. Without their ZDR and proxy implementations, my startup would be dead."*
-> — **David Schwartz, Founder, MedVision AI (Berlin)**
+> - **David Schwartz, Founder, MedVision AI (Berlin)**
 
-**Cost & Timeline:** €15,500 (Launch & Grow Package with Enterprise Security & ZDR Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €15,500 (Launch & Grow Package with Enterprise Security & ZDR Add-on) - production-ready and deployed in 14 business days.
 
 ---
 

@@ -83,13 +83,13 @@ Most charts produced by technical people are exploratory charts shown to an audi
 
 An exploratory chart is for you: dense, multi-series, unlabelled, showing everything. A communication chart is for them: one message, stated in the title.
 
-Practical rules that improve almost any chart. Put the finding in the title — "Slow-moving products drive most stockouts" rather than "Stockouts by product velocity". Show one comparison, not four. Label directly on the chart instead of using a legend the reader must decode. Remove gridlines, borders and decoration that carry no information. Use colour to highlight one thing, not to distinguish twelve. Start axes at zero for bar charts, and say clearly when you have not.
+Practical rules that improve almost any chart. Put the finding in the title - "Slow-moving products drive most stockouts" rather than "Stockouts by product velocity". Show one comparison, not four. Label directly on the chart instead of using a legend the reader must decode. Remove gridlines, borders and decoration that carry no information. Use colour to highlight one thing, not to distinguish twelve. Start axes at zero for bar charts, and say clearly when you have not.
 
 Choose the form for the comparison: bars for comparing categories, lines for change over time, scatter for relationships. Avoid pie charts with more than three segments and anything three-dimensional.
 
 Annotate the context: mark the intervention, the period affected by a system change, the point where data collection changed.
 
-And check that the chart survives being printed in black and white, or seen by someone with colour vision deficiency — roughly one in twelve men in Europe, which in any reasonably sized meeting means someone.
+And check that the chart survives being printed in black and white, or seen by someone with colour vision deficiency - roughly one in twelve men in Europe, which in any reasonably sized meeting means someone.
 
 ## Writing for People Who Will Not Read It All
 
@@ -147,7 +147,7 @@ Beyond individual results, you will be asked to explain models themselves, and t
 
 For a general audience, explain at the level of inputs and behaviour: what information goes in, what comes out, roughly what patterns it has learned, where it is reliable and where it is not. Avoid architecture entirely unless someone asks.
 
-Use examples. Walking through two real cases — one straightforward, one where the system was uncertain — conveys more than any description.
+Use examples. Walking through two real cases - one straightforward, one where the system was uncertain - conveys more than any description.
 
 Be honest about opacity. "We can tell you which factors mattered most for this case, but not a simple rule that covers every case" is accurate and generally accepted.
 
@@ -163,7 +163,7 @@ This is a skill that improves with practice and feedback, and most technical peo
 
 Practical ways to develop it: volunteer to present your own work rather than letting a manager relay it; ask one person afterwards what was unclear, which produces more useful feedback than asking how it went; write the one-paragraph summary of every analysis you do, even when nobody asked for one; and read your own documents a week later, when you have forgotten the context, which reveals what only made sense to you.
 
-Watch people who do it well in your organisation and notice what they actually do — usually they start with the conclusion, use few numbers and speak in the audience's vocabulary.
+Watch people who do it well in your organisation and notice what they actually do - usually they start with the conclusion, use few numbers and speak in the audience's vocabulary.
 
 Practise the difficult cases specifically: explaining uncertainty, delivering a negative result, and handling a challenge from someone senior.
 

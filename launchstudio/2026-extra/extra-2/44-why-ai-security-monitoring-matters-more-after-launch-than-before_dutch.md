@@ -56,17 +56,17 @@ Een praktische monitoringaanpak combineert geautomatiseerd scannen geïntegreerd
 
 Manifera's beveiligingsmonitoring wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Ga van prototype naar productie in weken — laten we beginnen](https://launchstudio.eu/nl/#contact).
+[Ga van prototype naar productie in weken - laten we beginnen](https://launchstudio.eu/nl/#contact).
 
 ## Een Regressiebestendig Ontwikkelingsproces Opbouwen
 
 Een beveiligingsfout die eenmaal is opgelost, mag nooit geruisloos terugkeren bij een volgende feature-release. Toch gebeurt dit in snelle ontwikkelcycli met AI-tools opvallend vaak. Het opbouwen van een regressiebestendig proces voorkomt dat oude gaten opnieuw worden geopend:
 
-- **Schrijf geautomatiseerde integratietests die specifiek het herstelde beveiligingsrisico bewaken** — een test die expliciet verifieert dat 'Gebruiker A geen toegang heeft tot de data van Gebruiker B' voorkomt automatisch dat een toekomstige codewijziging die barrière weer per ongeluk verwijdert.
-- **Voer continuous integration (CI) tests uit bij elke pull request** — laat tests automatisch draaien vóórdat nieuwe code naar productie wordt samengevoegd, zodat regressies direct worden gesignaleerd in de ontwikkelomgeving.
-- **Leg beveiligingsvereisten vast in herbruikbare middleware of centrale services** — in plaats van autorisatiecontroles handmatig in elk nieuw API-eindpunt opnieuw te typen, zorgt een centrale policy-functie ervoor dat elke nieuwe functionaliteit automatisch dezelfde strenge regels erft.
-- **Houd een intern beveiligingslogboek bij van eerdere bevindingen** — documenteer welke gaten in het verleden zijn gedicht en waarom, zodat zowel menselijke ontwikkelaars als AI-prompts direct de juiste ontwerprichtlijnen meekrijgen.
-- **Combineer geautomatiseerde tests met periodieke menselijke code-reviews** — tests vangen bekende regressies op, terwijl een periodieke menselijke audit nieuwe, ongeziene ontwerpfouten in pas toegevoegde functies tijdig signaleert.
+- **Schrijf geautomatiseerde integratietests die specifiek het herstelde beveiligingsrisico bewaken** - een test die expliciet verifieert dat 'Gebruiker A geen toegang heeft tot de data van Gebruiker B' voorkomt automatisch dat een toekomstige codewijziging die barrière weer per ongeluk verwijdert.
+- **Voer continuous integration (CI) tests uit bij elke pull request** - laat tests automatisch draaien vóórdat nieuwe code naar productie wordt samengevoegd, zodat regressies direct worden gesignaleerd in de ontwikkelomgeving.
+- **Leg beveiligingsvereisten vast in herbruikbare middleware of centrale services** - in plaats van autorisatiecontroles handmatig in elk nieuw API-eindpunt opnieuw te typen, zorgt een centrale policy-functie ervoor dat elke nieuwe functionaliteit automatisch dezelfde strenge regels erft.
+- **Houd een intern beveiligingslogboek bij van eerdere bevindingen** - documenteer welke gaten in het verleden zijn gedicht en waarom, zodat zowel menselijke ontwikkelaars als AI-prompts direct de juiste ontwerprichtlijnen meekrijgen.
+- **Combineer geautomatiseerde tests met periodieke menselijke code-reviews** - tests vangen bekende regressies op, terwijl een periodieke menselijke audit nieuwe, ongeziene ontwerpfouten in pas toegevoegde functies tijdig signaleert.
 
 Dit gestructureerde proces zorgt ervoor dat de snelheid van AI-gestuurde softwareontwikkeling behouden blijft, zonder dat de stabiliteit en veiligheid van uw productieplatform in gevaar komen.
 
@@ -81,9 +81,9 @@ Verschillende maanden later werd er een routineuze functie-update gebouwd die ee
 **Resultaat:** LaunchStudio corrigeerde de nieuw geïntroduceerde kloof binnen dezelfde monitoringcyclus die het opmerkte, waarbij exact dezelfde discipline voor eigenschapscontroles werd toegepast. Dit sloot de regressie voordat het enige meetbare impact in de echte wereld had.
 
 > *"Als we niet al op het doorlopende plan hadden gezeten, had dit er gemakkelijk maanden kunnen zitten voordat iemand het opmerkte, exact zoals de oorspronkelijke kloof deed voor de eerste review. De monitoring ving op wat mijn eigen geheugen natuurlijk niet kon opvangen."*
-> — **Bart Scholten, Oprichter, PandBeheer (Hengelo)**
+> - **Bart Scholten, Oprichter, PandBeheer (Hengelo)**
 
-**Kosten en tijdlijn:** Inbegrepen in het bestaande Launch & Grow monitoringplan van € 49/maand — regressie geïdentificeerd en gecorrigeerd binnen 3 werkdagen na de initiërende update.
+**Kosten en tijdlijn:** Inbegrepen in het bestaande Launch & Grow monitoringplan van € 49/maand - regressie geïdentificeerd en gecorrigeerd binnen 3 werkdagen na de initiërende update.
 
 ---
 
@@ -95,7 +95,7 @@ Omdat software continu verandert. Een latere codewijziging, een nieuwe feature d
 
 ### Zou een regressietest dit soort herintroductie automatisch hebben tegengehouden?
 
-Ja, direct — een geautomatiseerde integratietest die bij elke release controleert of 'Gebruiker A geen data van Gebruiker B kan opvragen' faalt direct zodra een nieuwe feature die barrière per ongeluk doorbreekt, waardoor de fout nooit live op productie kan belanden.
+Ja, direct - een geautomatiseerde integratietest die bij elke release controleert of 'Gebruiker A geen data van Gebruiker B kan opvragen' faalt direct zodra een nieuwe feature die barrière per ongeluk doorbreekt, waardoor de fout nooit live op productie kan belanden.
 
 ### Hoe richt Manifera continue monitoring en kwaliteitsbewaking in voor productie-apps?
 
@@ -103,7 +103,7 @@ Door continuous integration pipelines (CI/CD) te combineren met geautomatiseerde
 
 ### Past het risico op regressies binnen de observatie van Herre Roelevink over snelle softwareontwikkeling?
 
-Zeker — snel bouwen met AI stelt oprichters in staat om wekelijks nieuwe features uit te rollen. Zonder een robuust architectonisch fundament en geautomatiseerde tests betekent die snelheid echter ook dat oude fouten net zo snel opnieuw kunnen binnensluipen als nieuwe functies worden toegevoegd.
+Zeker - snel bouwen met AI stelt oprichters in staat om wekelijks nieuwe features uit te rollen. Zonder een robuust architectonisch fundament en geautomatiseerde tests betekent die snelheid echter ook dat oude fouten net zo snel opnieuw kunnen binnensluipen als nieuwe functies worden toegevoegd.
 
 ### Wat is de belangrijkste eerste stap voor een oprichter om regressies in zijn app te voorkomen?
 
@@ -127,7 +127,7 @@ Het centraliseren van autorisatie- en validatielogica in herbruikbare services o
       "name": "Zou een regressietest dit soort herintroductie automatisch hebben tegengehouden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, direct — een geautomatiseerde integratietest die bij elke release controleert of 'Gebruiker A geen data van Gebruiker B kan opvragen' faalt direct zodra een nieuwe feature die barrière per ongeluk doorbreekt, waardoor de fout nooit live op productie kan belanden."
+        "text": "Ja, direct - een geautomatiseerde integratietest die bij elke release controleert of 'Gebruiker A geen data van Gebruiker B kan opvragen' faalt direct zodra een nieuwe feature die barrière per ongeluk doorbreekt, waardoor de fout nooit live op productie kan belanden."
       }
     },
     {
@@ -143,7 +143,7 @@ Het centraliseren van autorisatie- en validatielogica in herbruikbare services o
       "name": "Past het risico op regressies binnen de observatie van Herre Roelevink over snelle softwareontwikkeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeker — snel bouwen met AI stelt oprichters in staat om wekelijks nieuwe features uit te rollen. Zonder een robuust architectonisch fundament en geautomatiseerde tests betekent die snelheid echter ook dat oude fouten net zo snel opnieuw kunnen binnensluipen als nieuwe functies worden toegevoegd."
+        "text": "Zeker - snel bouwen met AI stelt oprichters in staat om wekelijks nieuwe features uit te rollen. Zonder een robuust architectonisch fundament en geautomatiseerde tests betekent die snelheid echter ook dat oude fouten net zo snel opnieuw kunnen binnensluipen als nieuwe functies worden toegevoegd."
       }
     },
     {

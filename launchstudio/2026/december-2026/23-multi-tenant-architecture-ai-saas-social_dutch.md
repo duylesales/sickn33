@@ -1,10 +1,10 @@
-🚨 Eén boekhouder kon in theorie de vertrouwelijke facturen van een ander kantoor inzien — puur door een URL-parameter aan te passen. Gelukkig was er nog niemand getroffen... nog niet. 😱
+🚨 Eén boekhouder kon in theorie de vertrouwelijke facturen van een ander kantoor inzien - puur door een URL-parameter aan te passen. Gelukkig was er nog niemand getroffen... nog niet. 😱
 
 Elke SaaS met meer dan één klant is "multi-tenant", of u dat nu bewust heeft ontworpen of niet. AI-tools zijn fantastisch in snelle features bouwen, maar falen vaak in consistente data-isolatie over de gehele codebase: 🧠
 
 ❌ Eén vergeten filter op ÉÉN database-query = een reëel datalek
 ❌ Nieuwe functies (zoals bestandsuploads of exportknoppen) slaan tenant-isolatie vaak over
-❌ De bug geeft geen foutmelding — de app toont simpelweg stilletjes data die geheim had moeten blijven
+❌ De bug geeft geen foutmelding - de app toont simpelweg stilletjes data die geheim had moeten blijven
 
 De 5-punten controle voor multi-tenancy: ✅
 1️⃣ Heeft elke tabel een tenant_id?

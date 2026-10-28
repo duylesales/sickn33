@@ -1,4 +1,4 @@
-🏛️ Nina de Groot built PolicyPilot in Cursor — a document review tool for NGOs and legal consultancies in Den Haag tracking regulatory changes. It piloted fine with two consultancies. Then one consultancy's IT team ran a basic security check as part of their vendor process.
+🏛️ Nina de Groot built PolicyPilot in Cursor - a document review tool for NGOs and legal consultancies in Den Haag tracking regulatory changes. It piloted fine with two consultancies. Then one consultancy's IT team ran a basic security check as part of their vendor process.
 
 Most guides on making an AI product only ever show the frontend. Den Haag's institutional buyers check the backend first. 🧠
 

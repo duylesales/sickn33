@@ -1,6 +1,6 @@
 🚨 Users abandoned her translation tool after 6-8 seconds of nothing. The AI model wasn't slow. Her SERVER was in the wrong country. 🌍
 
-You're not competing with other AI tools. You're competing with your user's attention span — and it shrinks with every extra second. ⏱️
+You're not competing with other AI tools. You're competing with your user's attention span - and it shrinks with every extra second. ⏱️
 
 Why AI apps feel painfully slow: 😱
 ❌ Multiple chained operations: database query + LLM call + sometimes a second AI call
@@ -15,7 +15,7 @@ The fix isn't complicated: ⚡
 
 At **LaunchStudio**, backed by Manifera's offices in Amsterdam, Singapore & Ho Chi Minh City, we fix this exact gap. Her load time: 8 seconds → under 1 second. 🛡️🚀
 
-⏱️ Latency compounds, it doesn't add: 3 chained AI calls at 800ms each doesn't feel like 800ms — it feels like 2.4 seconds of dead air unless you show progress.
+⏱️ Latency compounds, it doesn't add: 3 chained AI calls at 800ms each doesn't feel like 800ms - it feels like 2.4 seconds of dead air unless you show progress.
 
 👉 Read why latency is your biggest competitor: https://launchstudio.eu/en/blog/edge-computing-ai-latency-competitor
 

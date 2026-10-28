@@ -39,7 +39,7 @@ Every European team hiring AI talent has had the same conversation: the senior e
 
 It works when three conditions hold.
 
-**Someone can supervise.** At least one experienced person with capacity to review work, answer questions and set direction. Not necessarily a machine learning specialist — a strong software engineer or analyst with judgement is often enough.
+**Someone can supervise.** At least one experienced person with capacity to review work, answer questions and set direction. Not necessarily a machine learning specialist - a strong software engineer or analyst with judgement is often enough.
 
 **There is suitable work.** Defined, valuable tasks that do not require years of context: data pipelines, evaluation, monitoring, analysis, tooling, documentation. Every team has a backlog of these.
 
@@ -69,7 +69,7 @@ The difference between a junior hire who becomes valuable and one who drifts is 
 
 **Months one to three: a bounded, real project.** Something with a clear definition of done, a genuine user and no dependency on years of context. Monitoring, evaluation, a data quality tool, an internal dashboard, a pipeline improvement. The goal is a completed piece of work they can point to, and a tour of your systems as a side effect.
 
-**Months four to six: ownership of something small.** A component, a recurring report, a scheduled job — something that breaks occasionally and teaches them what operating software means.
+**Months four to six: ownership of something small.** A component, a recurring report, a scheduled job - something that breaks occasionally and teaches them what operating software means.
 
 **Months seven to twelve: a project with ambiguity.** A problem where the approach is not obvious and they must propose one. Review the proposal rather than the code.
 
@@ -171,7 +171,7 @@ A short list of what goes wrong, drawn from patterns that recur across European 
 
 ## How OnlyAIJobs Supports Junior Hiring
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a higher position — placement is not for sale, so a clearly written junior vacancy sits alongside senior roles at larger companies on equal terms.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a higher position - placement is not for sale, so a clearly written junior vacancy sits alongside senior roles at larger companies on equal terms.
 
 Two aspects help specifically with early-career hiring. Vacancies display the exact address and the distance from the candidate's home, which matters disproportionately to junior candidates who often lack a car and are choosing between roles partly on commute. And because every listing is an AI, ML or data role, a graduate scanning the board sees the full range of local employers doing this work, including companies whose names mean nothing to them.
 
@@ -187,7 +187,7 @@ A logistics company in the Netherlands had been trying to hire a senior machine 
 
 The lead resisted, on the grounds that he had no time to supervise. They compromised: one graduate, a defined first project, and four hours a week of his time protected in the calendar.
 
-The graduate spent three months on monitoring and evaluation for the existing forecasting system — work the team had postponed for a year. She found two data quality problems that had been silently degrading forecasts, and built the dashboard that let the team detect the next one within a day rather than a quarter.
+The graduate spent three months on monitoring and evaluation for the existing forecasting system - work the team had postponed for a year. She found two data quality problems that had been silently degrading forecasts, and built the dashboard that let the team detect the next one within a day rather than a quarter.
 
 By month nine she was running her own small project. The team lead's assessment was that the four hours a week had been the cheapest engineering capacity he had ever bought, and that the senior vacancy would probably have stayed open anyway.
 
@@ -206,7 +206,7 @@ Identify one valuable project nobody has time for, name the person who will supe
 ## Frequently Asked Questions
 
 ### (Scenario: team with no senior ML engineer) Can we hire a junior anyway?
-Only with a credible alternative source of supervision — an experienced software engineer, an external mentor or a consultancy arrangement. A junior alone will struggle and leave.
+Only with a credible alternative source of supervision - an experienced software engineer, an external mentor or a consultancy arrangement. A junior alone will struggle and leave.
 
 ### (Scenario: employer worried about retention) Will they leave after two years?
 Some will. Many stay longer when growth is visible. Budget for the possibility rather than avoiding the hire because of it.

@@ -1,4 +1,4 @@
-💶 Nienke Hulst had een werkend Lovable-prototype voor Klusmaat voor vakmensen in Zwolle. Ze vroeg vijf offertes op om het platform live te brengen: de prijzen liepen uiteen van € 1.200 bij een buitenlandse freelancer tot € 28.000 bij een traditioneel IT-bureau — waardoor ze door tegenstrijdige scopes het overzicht volledig kwijtraakte. 😳
+💶 Nienke Hulst had een werkend Lovable-prototype voor Klusmaat voor vakmensen in Zwolle. Ze vroeg vijf offertes op om het platform live te brengen: de prijzen liepen uiteen van € 1.200 bij een buitenlandse freelancer tot € 28.000 bij een traditioneel IT-bureau - waardoor ze door tegenstrijdige scopes het overzicht volledig kwijtraakte. 😳
 
 Uurtarieven zeggen niets zonder een heldere afbakening van productielagen. Wat een Lovable developer écht kost in Nederland:
 

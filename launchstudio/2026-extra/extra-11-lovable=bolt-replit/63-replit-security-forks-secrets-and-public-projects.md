@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The thing that makes Replit pleasant is the thing that makes this article necessary. Projects are shared with a link, forked with a click, built from templates, and worked on by collaborators who were invited in a hurry. That openness is a feature — it is why people learn there, demonstrate there and start there — and it produces a specific set of consequences for anything confidential.
+The thing that makes Replit pleasant is the thing that makes this article necessary. Projects are shared with a link, forked with a click, built from templates, and worked on by collaborators who were invited in a hurry. That openness is a feature - it is why people learn there, demonstrate there and start there - and it produces a specific set of consequences for anything confidential.
 
 None of them are exotic, and all of them are invisible until somebody looks. What follows is where credentials actually leak in Replit projects, and how to close it without abandoning the way you work.
 
@@ -30,13 +30,13 @@ Most platforms start private and require effort to share. This one assumes shari
 
 The practical consequences: a project may be publicly visible without that being a deliberate decision, a link shared once circulates indefinitely, a fork creates a copy you cannot see or recall, and collaborators added for an afternoon remain until someone removes them.
 
-None of that is a flaw. It becomes a problem only when a project stops being an experiment and starts holding a credential that spends money or opens a database — which happens gradually, without any moment where somebody decides the project is now production.
+None of that is a flaw. It becomes a problem only when a project stops being an experiment and starts holding a credential that spends money or opens a database - which happens gradually, without any moment where somebody decides the project is now production.
 
 ## What a Fork Takes With It
 
 The question founders ask first, and the answer determines your rotation plan.
 
-A fork copies the project's files at the moment it was made. Whether it carries the values stored in the platform's secrets mechanism depends on the platform's behaviour and its settings, which change over time — so the safe assumption is the pessimistic one: if a credential existed anywhere in the project's files while it was forkable, treat it as copied.
+A fork copies the project's files at the moment it was made. Whether it carries the values stored in the platform's secrets mechanism depends on the platform's behaviour and its settings, which change over time - so the safe assumption is the pessimistic one: if a credential existed anywhere in the project's files while it was forkable, treat it as copied.
 
 That assumption matters because of what you cannot do. You cannot see who forked your project. You cannot recall a fork. You cannot know what the copy contains or where it now lives. The only control available is on your side: change the credential so every copy becomes worthless.
 
@@ -74,13 +74,13 @@ Six steps, and most projects produce at least one finding.
 
 **Read the members list** and remove everyone who no longer needs to be there.
 
-**Search the files for credential patterns** — key, token, secret, password, and long random-looking strings. Include configuration files and anything committed early in the project's life.
+**Search the files for credential patterns** - key, token, secret, password, and long random-looking strings. Include configuration files and anything committed early in the project's life.
 
 **Check the version history,** not only the current files.
 
 **Open your live application and view the page source,** searching for anything that looks like a key. This finds the frontend exposure, which is the one people miss because the value was stored correctly.
 
-**List every third-party service the project calls** and, for each, check its dashboard for usage that does not match your traffic — which is how a leaked key announces itself before the invoice does.
+**List every third-party service the project calls** and, for each, check its dashboard for usage that does not match your traffic - which is how a leaked key announces itself before the invoice does.
 
 ## Rotation: Doing It Without Breaking the Project
 
@@ -112,23 +112,23 @@ The audit above is worth doing for its own sake. It becomes urgent the first tim
 
 **Where is our data stored?** A region, and a supplier. This is a GDPR question wearing ordinary clothes, and it is why the region choice when creating a database matters more than it appears at the time.
 
-**Which third parties process it?** Every service your application sends data to — the database host, the email provider, the error tracker, any AI model you call — is a processor, and a serious buyer will want them listed. Founders are routinely surprised by how long their own list is once they write it out.
+**Which third parties process it?** Every service your application sends data to - the database host, the email provider, the error tracker, any AI model you call - is a processor, and a serious buyer will want them listed. Founders are routinely surprised by how long their own list is once they write it out.
 
 **What happens when someone leaves?** They are asking whether access ends or merely stops being used. The same-day removal routine, written down, answers this in one sentence.
 
-**What happens if there is a breach?** Under GDPR a notifiable personal data breach must be reported to the supervisory authority — in the Netherlands, the Autoriteit Persoonsgegevens — without undue delay and, where feasible, within 72 hours. You cannot meet that if you would not know. Knowing requires logging, an error tracker somebody actually watches, and a named person responsible. Specific obligations depend on the data and the situation, so verify current requirements for your case rather than relying on a summary.
+**What happens if there is a breach?** Under GDPR a notifiable personal data breach must be reported to the supervisory authority - in the Netherlands, the Autoriteit Persoonsgegevens - without undue delay and, where feasible, within 72 hours. You cannot meet that if you would not know. Knowing requires logging, an error tracker somebody actually watches, and a named person responsible. Specific obligations depend on the data and the situation, so verify current requirements for your case rather than relying on a summary.
 
 **Can we get our data out?** An export, in a usable format, without depending on you being available. Increasingly asked, and easy to answer well if you thought about it once.
 
-None of these require certifications, an information security policy document, or a compliance budget. They require the practices in this article plus the ability to describe them. Founders who can answer these six questions in a single email close business that founders who cannot do not — and the difference is an afternoon of work, not a department.
+None of these require certifications, an information security policy document, or a compliance budget. They require the practices in this article plus the ability to describe them. Founders who can answer these six questions in a single email close business that founders who cannot do not - and the difference is an afternoon of work, not a department.
 
 ## What This Costs to Get Right
 
-Little, in engineering terms — an afternoon for the audit and the rotation, plus a habit for offboarding.
+Little, in engineering terms - an afternoon for the audit and the rotation, plus a habit for offboarding.
 
 What it prevents is the category of incident that is entirely invisible until it is expensive: a metered API key used by strangers until the invoice arrives, a database credential in a fork somebody made a year ago, or a customer's procurement team asking who has access to their data and receiving an honest answer you would rather not give.
 
-LaunchStudio handles this as part of taking a project to production: every credential inventoried across files, history and configuration, exposure assessed, keys rotated and consolidated into one place per secret, privileged operations moved server-side, spending caps configured, access lists cleaned, and a written offboarding routine handed over — with the interface you built left untouched.
+LaunchStudio handles this as part of taking a project to production: every credential inventoried across files, history and configuration, exposure assessed, keys rotated and consolidated into one place per secret, privileged operations moved server-side, spending caps configured, access lists cleaned, and a written offboarding routine handed over - with the interface you built left untouched.
 
 Behind it is Manifera: eleven years of production security work for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact), or see the [packages](https://launchstudio.eu/en/#packages).
 
@@ -138,7 +138,7 @@ Behind it is Manifera: eleven years of production security work for clients incl
 
 Joris Veenstra built Routeplan on Replit: a delivery-route tool used by a courier company and two catering businesses around Leiden. Early on, when the project was a learning exercise, he had made it public so a friend could look at a problem, and had forgotten it was.
 
-It stayed public for four months. During that period the project files contained a mapping API key, an email provider key and a database connection string — all added before he learned to use the secrets mechanism.
+It stayed public for four months. During that period the project files contained a mapping API key, an email provider key and a database connection string - all added before he learned to use the secrets mechanism.
 
 The signal was a mapping invoice roughly nine times the usual amount, with usage originating from addresses across three continents.
 
@@ -147,9 +147,9 @@ Four business days of work: all three credentials revoked and reissued, with the
 **Result:** the provider credited part of the fraudulent usage after he demonstrated the restriction and architectural change, costs returned to normal within a week, and a deliberately empty public demonstration copy now exists for sharing.
 
 > *"I made it public for an afternoon so a friend could help me, and forgot. Four months later I was paying for other people's map lookups on three continents."*
-> — **Joris Veenstra, Founder, Routeplan (Leiden)**
+> - **Joris Veenstra, Founder, Routeplan (Leiden)**
 
-**Cost & Timeline:** €1,750 (credential audit across files and history, rotation, server-side proxy with rate limiting, access cleanup, spending caps) — completed in 4 business days.
+**Cost & Timeline:** €1,750 (credential audit across files and history, rotation, server-side proxy with rate limiting, access cleanup, spending caps) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -183,7 +183,7 @@ Remove everyone who no longer needs access today, and rotate anything they could
       "name": "Does forking my Replit project copy my secrets?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Assume the pessimistic case — if a credential was in the project's files while it was forkable, treat it as copied, since forks cannot be seen or recalled."
+        "text": "Assume the pessimistic case - if a credential was in the project's files while it was forkable, treat it as copied, since forks cannot be seen or recalled."
       }
     },
     {

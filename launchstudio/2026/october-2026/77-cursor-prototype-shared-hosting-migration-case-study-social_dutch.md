@@ -1,4 +1,4 @@
-⚡ Tomasz's app crashte tijdens Product Hunt — Tomasz Wieczorek, oprichter van InvoiceNest (gebouwd met **Cursor**), zette zijn Node.js backend op een shared hostingpakket van €6/maand en zag zijn app herhaaldelijk offline gaan toen 2.000 bezoekers tegelijk arriveerden. 🧠
+⚡ Tomasz's app crashte tijdens Product Hunt - Tomasz Wieczorek, oprichter van InvoiceNest (gebouwd met **Cursor**), zette zijn Node.js backend op een shared hostingpakket van €6/maand en zag zijn app herhaaldelijk offline gaan toen 2.000 bezoekers tegelijk arriveerden. 🧠
 
 Shared hosting is gebouwd voor statische websites; een AI-app met databaseverbindingen en LLM-aanroepen overschrijdt de proceslimiet direct bij reëel verkeer.
 

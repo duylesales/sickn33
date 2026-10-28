@@ -1,4 +1,4 @@
-🏰 Anouk Vermeer bouwde HeritageStay, een boekingsplatform voor historische gastenverblijven in het oude centrum van Middelburg, met Bolt gedurende ongeveer tien dagen — haar demo tijdens een lokale Zeeuwse oprichtersbijeenkomst werkte foutloos. Twee weken voor de publieke lancering ontdekte een beoordeling dat elke gebruiker de reservering van elke andere gast kon bekijken door simpelweg een nummer in de URL te wijzigen. 😳
+🏰 Anouk Vermeer bouwde HeritageStay, een boekingsplatform voor historische gastenverblijven in het oude centrum van Middelburg, met Bolt gedurende ongeveer tien dagen - haar demo tijdens een lokale Zeeuwse oprichtersbijeenkomst werkte foutloos. Twee weken voor de publieke lancering ontdekte een beoordeling dat elke gebruiker de reservering van elke andere gast kon bekijken door simpelweg een nummer in de URL te wijzigen. 😳
 
 Een demo test alleen ooit de paden die de oprichter zelf heeft doorlopen. 🧠
 
@@ -11,7 +11,7 @@ Een demo test alleen ooit de paden die de oprichter zelf heeft doorlopen. 🧠
 ✅ Live, geteste Stripe-integratie met correcte terugbetalingsafhandeling
 ✅ AVG-conforme opslag opgezet voor persoonsgegevens van gasten
 
-Bij **LaunchStudio** nemen we de app die een oprichter al met AI heeft gebouwd en voegen we precies toe wat de demo nooit nodig had — ondersteund door het engineeringteam van Manifera dat vanuit zijn hub in Ho Chi Minh-stad opereert. 🛡️
+Bij **LaunchStudio** nemen we de app die een oprichter al met AI heeft gebouwd en voegen we precies toe wat de demo nooit nodig had - ondersteund door het engineeringteam van Manifera dat vanuit zijn hub in Ho Chi Minh-stad opereert. 🛡️
 
 Haar resultaat: HeritageStay lanceerde op schema met correct geïsoleerde gastgegevens en live werkende betalingen, vlak vóór Middelburg's zomertoeristenseizoen. 🚀
 

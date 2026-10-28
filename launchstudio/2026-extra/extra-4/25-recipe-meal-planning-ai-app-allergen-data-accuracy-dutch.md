@@ -88,9 +88,9 @@ LaunchStudio traceerde het probleem naar hoe de wisselfunctie was gebouwd: het v
 **Resultaat:** MaaltijdPlan dwingt allergenenbeperkingen nu af op een enkele gedeelde laag in plaats van per functie. Iris heeft een geautomatiseerde test toegevoegd die de bouw laat mislukken als een codepad dat recepten serveert de allergenencontrole overslaat.
 
 > *"Ik dacht oprecht dat ik een veilige app had gebouwd omdat de hoofdplanner werkte. Ik had geen idee dat een functie waar ik trots op was degene was die gebruikers in gevaar bracht. LaunchStudio heeft niet alleen de bug hersteld, ze lieten me het exacte patroon zien dat ik moet vermijden elke keer dat ik iets nieuws toevoeg."*
-> — **Iris Bosch, Oprichter, MaaltijdPlan (Gouda)**
+> - **Iris Bosch, Oprichter, MaaltijdPlan (Gouda)**
 
-**Kosten en tijdlijn:** € 950 (audit van allergenen over functies heen en herstelling van gecentraliseerd filteren) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (audit van allergenen over functies heen en herstelling van gecentraliseerd filteren) - voltooid in 5 werkdagen.
 
 ---
 

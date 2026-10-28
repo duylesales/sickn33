@@ -25,7 +25,7 @@ Helmond telt ongeveer 95.000 inwoners, een kwartiertje oostelijk van Eindhoven, 
 
 ## Automotive perceptie is een andere ingenieursdiscipline
 
-**Safety cases bepalen alles.** Een perceptiesysteem dat bijdraagt aan voertuigbesturing moet veilig worden beargumenteerd, niet slechts accuraat gemeten. Dat argument is een formeel document, gestructureerd tegen normen, en het beperkt ontwerpkeuzes vanaf het begin. Een model dat beter presteert op een benchmark maar niet te karakteriseren is — waarvan de faalvormen niet beschrijfbaar zijn — kan onbruikbaar zijn ongeacht de cijfers.
+**Safety cases bepalen alles.** Een perceptiesysteem dat bijdraagt aan voertuigbesturing moet veilig worden beargumenteerd, niet slechts accuraat gemeten. Dat argument is een formeel document, gestructureerd tegen normen, en het beperkt ontwerpkeuzes vanaf het begin. Een model dat beter presteert op een benchmark maar niet te karakteriseren is - waarvan de faalvormen niet beschrijfbaar zijn - kan onbruikbaar zijn ongeacht de cijfers.
 
 **De staart ís het product.** Geaggregeerde nauwkeurigheid is bijna irrelevant. Wat telt is gedrag in zeldzame, moeilijke situaties: ongewone belichting, gedeeltelijke occlusie, atypische verkeersdeelnemers, verslechterde sensoren, weer.
 
@@ -39,7 +39,7 @@ Automotive belont engineers die eerst aan falen denken. Dat is een ongebruikelij
 
 ## Voorbij het voertuig: verkeers- en infrastructuurdata
 
-**Communicatie tussen voertuigen en infrastructuur.** Voertuigen die informatie uitwisselen met elkaar en met wegkantsystemen maken coöperatief gedrag mogelijk — gecoördineerd invoegen, signaaltiming aangepast aan naderend verkeer, gevaarwaarschuwingen stroomopwaarts doorgegeven.
+**Communicatie tussen voertuigen en infrastructuur.** Voertuigen die informatie uitwisselen met elkaar en met wegkantsystemen maken coöperatief gedrag mogelijk - gecoördineerd invoegen, signaaltiming aangepast aan naderend verkeer, gevaarwaarschuwingen stroomopwaarts doorgegeven.
 
 **Verkeerstoestandsschatting.** Stroom, dichtheid en wachtrijvorming over een netwerk afleiden uit schaarse sensoren, floating car-data en incidentele camera's. Schatten onder forse onzekerheid, direct gekoppeld aan regelbeslissingen.
 
@@ -78,13 +78,13 @@ Deze laag past bij wie systeemniveau prettig vindt en accepteert dat het werk pu
 | Venlo | 40–50 minuten | Logistiek en versketen |
 | Utrecht | 60–70 minuten | Zorgdata, consultancy, landelijke publieke sector |
 
-Eindhoven op twaalf minuten betekent dat een kandidaat in Helmond feitelijk in de Brainport-arbeidsmarkt zit — een van de twee diepste technische markten van Nederland. Eindigt een automotive-functie, dan zijn de alternatieven geen handvol lokale werkgevers maar een forse regionale cluster.
+Eindhoven op twaalf minuten betekent dat een kandidaat in Helmond feitelijk in de Brainport-arbeidsmarkt zit - een van de twee diepste technische markten van Nederland. Eindigt een automotive-functie, dan zijn de alternatieven geen handvol lokale werkgevers maar een forse regionale cluster.
 
 Dat neemt het concentratierisico weg dat verschillende andere gespecialiseerde regionale markten werkelijk riskant maakt.
 
 ## Hoe automotive-perceptiewerving verloopt
 
-Werkgevers screenen doorgaans op drie dingen, in die orde. Eerst bewijs dat je veiligheidskritische ontwikkeling begrijpt — niet noodzakelijk certificeringservaring, maar het besef dat verificatie en traceerbaarheid echte randvoorwaarden zijn en geen proceduretheater. Dan diepte in minstens één sensormodaliteit. Dan software-engineeringdiscipline, omdat automotive-codebases lang leven onder configuratiebeheer.
+Werkgevers screenen doorgaans op drie dingen, in die orde. Eerst bewijs dat je veiligheidskritische ontwikkeling begrijpt - niet noodzakelijk certificeringservaring, maar het besef dat verificatie en traceerbaarheid echte randvoorwaarden zijn en geen proceduretheater. Dan diepte in minstens één sensormodaliteit. Dan software-engineeringdiscipline, omdat automotive-codebases lang leven onder configuratiebeheer.
 
 Wat opvallend ontbreekt: bekendheid met de nieuwste modelarchitecturen. Automotive-tijdlijnen zijn lang. Werkgevers zijn minder geïnteresseerd in of je de meest recente technieken kent dan in of je iets kunt bouwen dat over vijf jaar nog verdedigbaar is.
 
@@ -102,14 +102,14 @@ Het is bovendien in veel organisaties de bottleneck. Teams hebben vaak meer mode
 
 Voertuigprogramma's zijn lang en kapitaalintensief, en ze worden geschrapt. Geautomatiseerd rijden in het bijzonder kende cycli van optimisme en inkrimping, met forse teams die werden opgebouwd en daarna verkleind toen tijdlijnen uitliepen.
 
-Dat pleit voor twee voorzorgen. Kies werk waarvan de waarde niet volledig afhangt van volledige autonomie: rijhulpsystemen, veiligheidssystemen, verkeersmanagement en validatie-infrastructuur hebben zelfstandige waarde. En houd je vaardigheden leesbaar voor aangrenzende sectoren — perceptie en sensorfusie dragen over naar robotica, landbouw, maritiem en industriële automatisering, maar alleen als je je werk kunt beschrijven zonder automotive-jargon.
+Dat pleit voor twee voorzorgen. Kies werk waarvan de waarde niet volledig afhangt van volledige autonomie: rijhulpsystemen, veiligheidssystemen, verkeersmanagement en validatie-infrastructuur hebben zelfstandige waarde. En houd je vaardigheden leesbaar voor aangrenzende sectoren - perceptie en sensorfusie dragen over naar robotica, landbouw, maritiem en industriële automatisering, maar alleen als je je werk kunt beschrijven zonder automotive-jargon.
 
 ## Belangrijkste punten
 
 - Automotive perceptie wordt bepaald door safety cases, gedomineerd door zeldzame-scenariogedrag, en besteedt vaak meer inspanning aan validatie dan aan modellering.
 - De verkeers- en infrastructuurlaag is een tweede, toegankelijker markt met minder geheimhoudingsbeperkingen.
 - Eindhoven op twaalf minuten plaatst Helmond in de Brainport-arbeidsmarkt en neemt het concentratierisico weg.
-- Werkgevers screenen op veiligheidskritisch begrip, diepte in één modaliteit en softwarediscipline — niet op recente architecturen.
+- Werkgevers screenen op veiligheidskritisch begrip, diepte in één modaliteit en softwarediscipline - niet op recente architecturen.
 - Simulatie en data-infrastructuur is een over het hoofd gezien instappunt dat vaak de bottleneck is.
 - Geautomatiseerd rijden kent een geschiedenis van geschrapte programma's; kies werk met zelfstandige waarde.
 

@@ -20,23 +20,23 @@ target_persona: "CTO"
 }
 </script>
 
-A consumer app that's slightly clunky loses users to a competitor. An internal enterprise application that's slightly clunky doesn't lose users — it traps them, forced to use a bad tool every day because there's no alternative, which makes bad enterprise application development a very different kind of expensive.
+A consumer app that's slightly clunky loses users to a competitor. An internal enterprise application that's slightly clunky doesn't lose users - it traps them, forced to use a bad tool every day because there's no alternative, which makes bad enterprise application development a very different kind of expensive.
 
-**The Pain:** A CTO commissioning enterprise application development — an internal operations tool, a workflow system, a data platform used by the company's own teams — is working with engineers whose instincts, understandably, were shaped by consumer-facing product experience, and those instincts don't transfer cleanly to a captive-audience internal tool where users can't simply leave for a competitor.
+**The Pain:** A CTO commissioning enterprise application development - an internal operations tool, a workflow system, a data platform used by the company's own teams - is working with engineers whose instincts, understandably, were shaped by consumer-facing product experience, and those instincts don't transfer cleanly to a captive-audience internal tool where users can't simply leave for a competitor.
 
-**The Agitation:** Enterprise application development that applies consumer-app assumptions produces a specific, recurring failure: a tool that looks polished in a demo and becomes a daily source of quiet frustration for the internal team forced to use it, showing up as workarounds, shadow spreadsheets maintained alongside the "real" system, and a productivity cost that never appears as a single dramatic incident but compounds daily across every employee who has to fight the tool to do their job — a cost that research on internal-tool friction suggests can run into the tens of thousands of euros annually in lost productivity for even a moderately-sized team.
+**The Agitation:** Enterprise application development that applies consumer-app assumptions produces a specific, recurring failure: a tool that looks polished in a demo and becomes a daily source of quiet frustration for the internal team forced to use it, showing up as workarounds, shadow spreadsheets maintained alongside the "real" system, and a productivity cost that never appears as a single dramatic incident but compounds daily across every employee who has to fight the tool to do their job - a cost that research on internal-tool friction suggests can run into the tens of thousands of euros annually in lost productivity for even a moderately-sized team.
 
 ## Where Enterprise Application Development Needs Different Discipline
 
 Enterprise application development succeeds or fails on a different set of priorities than consumer product development, and a CTO who doesn't explicitly recalibrate for those differences gets a tool that looks right and works wrong for its actual users.
 
-The first difference is that internal users are captive, not acquired — they can't simply stop using a bad tool and switch to a competitor's, which removes the natural pressure that forces consumer products toward genuine usability. This means enterprise application development needs deliberate usability testing with real internal users precisely because the market won't provide that discipline automatically the way churn does for a consumer product.
+The first difference is that internal users are captive, not acquired - they can't simply stop using a bad tool and switch to a competitor's, which removes the natural pressure that forces consumer products toward genuine usability. This means enterprise application development needs deliberate usability testing with real internal users precisely because the market won't provide that discipline automatically the way churn does for a consumer product.
 
-The second difference is that enterprise applications typically need to integrate with an existing ecosystem of other internal systems — data sources, authentication systems, other tools the same users already work in — in a way consumer apps, built as standalone experiences, usually don't. Enterprise application development that treats integration as an afterthought produces a tool that works in isolation and creates friction the moment it has to talk to anything else the company already runs.
+The second difference is that enterprise applications typically need to integrate with an existing ecosystem of other internal systems - data sources, authentication systems, other tools the same users already work in - in a way consumer apps, built as standalone experiences, usually don't. Enterprise application development that treats integration as an afterthought produces a tool that works in isolation and creates friction the moment it has to talk to anything else the company already runs.
 
-The third difference is that internal tools often carry compliance and audit requirements that consumer apps don't share — who can see what data, what changes need to be logged, what happens during a regulatory or internal audit. Building this in from the start is considerably cheaper than retrofitting it once the tool is already handling real operational data, and enterprise application development that skips this consideration early often faces an expensive redesign the first time an audit or compliance review actually happens.
+The third difference is that internal tools often carry compliance and audit requirements that consumer apps don't share - who can see what data, what changes need to be logged, what happens during a regulatory or internal audit. Building this in from the start is considerably cheaper than retrofitting it once the tool is already handling real operational data, and enterprise application development that skips this consideration early often faces an expensive redesign the first time an audit or compliance review actually happens.
 
-The fourth difference is that enterprise applications need a genuine feedback loop with the actual internal users who depend on the tool daily, not just the stakeholder who commissioned it. A tool built to satisfy a department head's specification, without direct input from the people actually using it hour to hour, routinely misses the specific friction points that matter most in daily use — friction a stakeholder one level removed from the daily work simply doesn't experience and therefore doesn't think to specify.
+The fourth difference is that enterprise applications need a genuine feedback loop with the actual internal users who depend on the tool daily, not just the stakeholder who commissioned it. A tool built to satisfy a department head's specification, without direct input from the people actually using it hour to hour, routinely misses the specific friction points that matter most in daily use - friction a stakeholder one level removed from the daily work simply doesn't experience and therefore doesn't think to specify.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: European discipline calibrated s
 
 ### A Munich Manufacturer's Shadow Spreadsheet Problem
 
-Fertigungssysteme München GmbH, a Munich-based manufacturer, had commissioned an internal production-scheduling application built with consumer-app instincts — polished visually, but without direct input from the shop-floor schedulers who'd actually use it daily — and eighteen months after launch, the scheduling team had quietly built a parallel spreadsheet system because the official tool didn't handle several real daily scenarios the original specification had missed.
+Fertigungssysteme München GmbH, a Munich-based manufacturer, had commissioned an internal production-scheduling application built with consumer-app instincts - polished visually, but without direct input from the shop-floor schedulers who'd actually use it daily - and eighteen months after launch, the scheduling team had quietly built a parallel spreadsheet system because the official tool didn't handle several real daily scenarios the original specification had missed.
 
 Manifera rebuilt the scheduling application with direct, ongoing input from the actual schedulers, integrated it properly with the existing inventory and shift-management systems it needed to talk to, and built in the audit logging the compliance team required. Shadow-spreadsheet usage dropped to zero within two months of the rebuilt version's launch, and the schedulers reported the tool finally matched how they actually worked.
 
 > *"We built something that looked great in the demo to the department head who commissioned it. The people actually using it every day had quietly given up on it and built their own workaround, and nobody told us until we finally asked them directly."*
-> — **CTO, Fertigungssysteme München GmbH, Germany**
+> - **CTO, Fertigungssysteme München GmbH, Germany**
 
 ## Consumer-App Instincts vs. Manifera's Enterprise-Calibrated Discipline
 
@@ -68,7 +68,7 @@ Manifera rebuilt the scheduling application with direct, ongoing input from the 
 
 ## The Economics
 
-An enterprise application built with consumer-app instincts typically produces daily, compounding friction for the internal team forced to use it — workarounds, shadow systems, and lost productivity that research suggests can run into the tens of thousands of euros annually for even a moderately-sized team, without ever appearing as a single dramatic incident anyone escalates. Building with enterprise-calibrated discipline from the start costs no more than the original build, redirected toward the priorities that actually matter for captive internal users. [Talk to Manifera](https://www.manifera.com/contact-us/) about enterprise application development that people actually want to use.
+An enterprise application built with consumer-app instincts typically produces daily, compounding friction for the internal team forced to use it - workarounds, shadow systems, and lost productivity that research suggests can run into the tens of thousands of euros annually for even a moderately-sized team, without ever appearing as a single dramatic incident anyone escalates. Building with enterprise-calibrated discipline from the start costs no more than the original build, redirected toward the priorities that actually matter for captive internal users. [Talk to Manifera](https://www.manifera.com/contact-us/) about enterprise application development that people actually want to use.
 
 ## Frequently Asked Questions
 

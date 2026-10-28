@@ -78,15 +78,15 @@ The code does not exist if it is not in your repository.
 Elite engineering partners operate with total transparency. They write code directly into your company's GitLab or GitHub repository. They configure the CI/CD pipeline (e.g., GitHub Actions) so that you control the deployment keys. 
 
 > "Most companies view handing intellectual property to an outsourcer as delivering the castle keys to marauders."
-> — Eric Walden and James C. Wetherbe, "Give a Little, Get a Little," *Harvard Business Review*, September 2005
+> - Eric Walden and James C. Wetherbe, "Give a Little, Get a Little," *Harvard Business Review*, September 2005
 
 ## The Liability Ceiling: Insurance, Indemnification, and Subcontractor Risk
 
-Most CTOs negotiate the Statement of Work line by line, then sign the liability and insurance clauses without reading them. This is the single most expensive oversight in the entire procurement process, because it determines who actually pays when something goes wrong — not just architecturally, but financially.
+Most CTOs negotiate the Statement of Work line by line, then sign the liability and insurance clauses without reading them. This is the single most expensive oversight in the entire procurement process, because it determines who actually pays when something goes wrong - not just architecturally, but financially.
 
 ### Why "Limitation of Liability" Clauses Exist to Protect the Vendor, Not You
 
-Standard vendor-drafted MSAs cap total liability at "fees paid in the preceding 12 months." On a $150,000/year engagement, that means if the vendor's negligence causes a data breach that costs you $4 million in regulatory fines and remediation, their entire financial exposure is capped at $150,000. The vendor's boilerplate is not malicious by default — it is standard commercial practice — but it must be renegotiated for any engagement touching production data, payments, or regulated industries.
+Standard vendor-drafted MSAs cap total liability at "fees paid in the preceding 12 months." On a $150,000/year engagement, that means if the vendor's negligence causes a data breach that costs you $4 million in regulatory fines and remediation, their entire financial exposure is capped at $150,000. The vendor's boilerplate is not malicious by default - it is standard commercial practice - but it must be renegotiated for any engagement touching production data, payments, or regulated industries.
 
 The fix is a **Direct Indemnification Carve-Out**: a clause stating that the standard liability cap does *not* apply to (1) IP infringement claims, (2) data breaches caused by vendor negligence, (3) breaches of confidentiality, and (4) gross negligence or willful misconduct. These four categories should carry uncapped, or separately capped and much higher, liability.
 
@@ -94,9 +94,9 @@ The fix is a **Direct Indemnification Carve-Out**: a clause stating that the sta
 
 Before any code is written, require the vendor to provide a Certificate of Insurance (COI) naming your company as an additional insured, covering:
 
-*   **Professional Indemnity / Errors & Omissions Insurance** — minimum €1,000,000 per claim. This covers financial loss caused by coding errors, missed deadlines, or professional negligence.
-*   **Cyber Liability Insurance** — minimum €2,000,000, covering data breach notification costs, forensic investigation, and regulatory fines arising from the vendor's handling of your systems or data.
-*   **General Commercial Liability** — standard coverage for any physical or reputational damages.
+*   **Professional Indemnity / Errors & Omissions Insurance** - minimum €1,000,000 per claim. This covers financial loss caused by coding errors, missed deadlines, or professional negligence.
+*   **Cyber Liability Insurance** - minimum €2,000,000, covering data breach notification costs, forensic investigation, and regulatory fines arising from the vendor's handling of your systems or data.
+*   **General Commercial Liability** - standard coverage for any physical or reputational damages.
 
 **Red Flag:** A vendor who cannot produce a COI within 48 hours of being asked almost certainly does not carry the policy at all. This is a harder disqualifier than a weak technical interview, because it signals the vendor has never worked with an enterprise client sophisticated enough to ask.
 
@@ -124,15 +124,15 @@ Contract language feels abstract until it intersects with a real incident. Consi
 
 **The direct costs that follow, in order:**
 1. **Forensic investigation and breach counsel:** €45,000-€70,000 to determine scope, engage a forensics firm, and retain outside counsel to assess GDPR notification obligations.
-2. **Regulatory notification and remediation:** Mandatory notification to the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) within 72 hours under GDPR Article 33, plus notification to affected data subjects, plus credential rotation and infrastructure hardening — a further €30,000-€60,000.
+2. **Regulatory notification and remediation:** Mandatory notification to the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) within 72 hours under GDPR Article 33, plus notification to affected data subjects, plus credential rotation and infrastructure hardening - a further €30,000-€60,000.
 3. **Potential regulatory fine:** GDPR fines for this class of negligent exposure, per enforcement patterns tracked in DLA Piper's annual GDPR Fines and Data Breach Survey, commonly land in the low-to-mid six figures for a company of this size, though fines vary significantly by supervisory authority and the specifics of the breach.
 4. **Customer churn and reputational damage:** Difficult to price precisely, but SaaS companies disclosing a PII breach typically see measurable increases in churn and sales-cycle friction for two to four quarters afterward.
 
 **Total realistic exposure: well over €500,000 once fines, remediation, and commercial fallout are combined.**
 
-Under the vendor's standard MSA, their contractual liability is capped at the $180,000 paid in the preceding year — meaning the client absorbs the majority of this cost even though the root cause was the vendor's own negligent handling of a credential. Had the MSA included a Direct Indemnification Carve-Out for data breaches caused by vendor negligence, and had the vendor been required to carry the €2,000,000 Cyber Liability policy described above, the client's insurer and the vendor's insurer would have shared the exposure through the claims process, rather than the client absorbing it alone.
+Under the vendor's standard MSA, their contractual liability is capped at the $180,000 paid in the preceding year - meaning the client absorbs the majority of this cost even though the root cause was the vendor's own negligent handling of a credential. Had the MSA included a Direct Indemnification Carve-Out for data breaches caused by vendor negligence, and had the vendor been required to carry the €2,000,000 Cyber Liability policy described above, the client's insurer and the vendor's insurer would have shared the exposure through the claims process, rather than the client absorbing it alone.
 
-This is the mechanism by which a liability clause negotiated (or not negotiated) months before any code is written determines who is financially exposed when — not if — an engineering mistake eventually occurs. No vendor is immune to human error; the only question a CTO controls in advance is who pays for it.
+This is the mechanism by which a liability clause negotiated (or not negotiated) months before any code is written determines who is financially exposed when - not if - an engineering mistake eventually occurs. No vendor is immune to human error; the only question a CTO controls in advance is who pays for it.
 
 ## FAQs
 

@@ -86,9 +86,9 @@ Een routineuze controle van zoekmachine-indexering bracht haar beheerderspaneel-
 **Resultaat:** LaunchStudio voegde onafhankelijke server-side rolverificatie toe aan elke beheerdersroute, waardoor openbare bereikbaarheid volledig werd gesloten ongeacht navigatielinks of zoekmachine-indexering.
 
 > *"Ik dacht oprecht dat een inlogpagina ervoor betekende dat het beschermd was. Ik had geen idee dat de pagina achter de inlog de gehele tijd rechtstreeks bereikbaar was."*
-> — **Lotte Janssen, Oprichter, PandBoard (Groningen)**
+> - **Lotte Janssen, Oprichter, PandBoard (Groningen)**
 
-**Kosten en tijdlijn:** € 1.900 (audit van toegangsbeheer voor beheerdersroutes) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (audit van toegangsbeheer voor beheerdersroutes) - voltooid in 7 werkdagen.
 
 ---
 

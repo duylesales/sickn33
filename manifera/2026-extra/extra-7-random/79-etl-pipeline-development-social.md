@@ -1,4 +1,4 @@
-ETL vs. ELT isn't a modernization question with one right answer — it's a per-source technical decision most teams answer once, dogmatically, for every source they'll ever have. 🔀📦
+ETL vs. ELT isn't a modernization question with one right answer - it's a per-source technical decision most teams answer once, dogmatically, for every source they'll ever have. 🔀📦
 
 **The Pain Points:**
 ❌ **One Pattern Everywhere:** Standardizing on ELT or ETL as policy instead of deciding per source.

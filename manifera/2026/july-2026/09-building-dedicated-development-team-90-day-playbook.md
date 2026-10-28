@@ -37,9 +37,9 @@ This playbook is the operational blueprint for those 90 days.
 This phase is about due diligence, not speed. The decisions you make here determine the trajectory of the next 2-3 years.
 
 **Key actions:**
-- **Define the team composition.** Be specific: "1 Senior Full-Stack Engineer (React + Node.js), 1 Senior Backend Engineer (.NET), 1 Mid-Level QA Engineer" — not "we need 3 developers."
+- **Define the team composition.** Be specific: "1 Senior Full-Stack Engineer (React + Node.js), 1 Senior Backend Engineer (.NET), 1 Mid-Level QA Engineer" - not "we need 3 developers."
 - **Negotiate the right contract structure.** For dedicated teams, monthly retainer models work better than project-based billing. Ensure the contract includes: team member replacement SLA (within 2 weeks if someone leaves), IP transfer, NDA, and data protection terms.
-- **Interview the actual engineers.** Not sample profiles — the real people who will write your code. A partner like [Manifera](https://www.manifera.com/about-us/setting-up-your-offshore-team/) facilitates direct technical interviews between your CTO and their candidates.
+- **Interview the actual engineers.** Not sample profiles - the real people who will write your code. A partner like [Manifera](https://www.manifera.com/about-us/setting-up-your-offshore-team/) facilitates direct technical interviews between your CTO and their candidates.
 
 **Milestone:** Signed contract + confirmed team members ready to start.
 
@@ -98,17 +98,17 @@ The first production deployment is a forcing function that validates everything:
 
 ## Day 90 and Beyond: The Retention Playbook for Year One
 
-Getting a dedicated team to production by day 90 is only half the job. The real return on this model shows up over the following 12-24 months — but only if the team stays intact. Offshore engineering turnover is the single biggest hidden cost in this model: every departure resets institutional knowledge of your codebase, and a revolving door of "dedicated" engineers is functionally no different from a staffing agency.
+Getting a dedicated team to production by day 90 is only half the job. The real return on this model shows up over the following 12-24 months - but only if the team stays intact. Offshore engineering turnover is the single biggest hidden cost in this model: every departure resets institutional knowledge of your codebase, and a revolving door of "dedicated" engineers is functionally no different from a staffing agency.
 
 **What actually drives retention on a dedicated team**, based on patterns across mature Netherlands-Vietnam partnerships:
 
-- **A visible career ladder.** Engineers who can see a defined path — mid-level to senior to tech lead, with concrete criteria for each step — stay measurably longer than engineers on teams where advancement is ad hoc. Ask your partner whether team members have a documented growth plan, and whether you as the client are looped into calibrating it.
+- **A visible career ladder.** Engineers who can see a defined path - mid-level to senior to tech lead, with concrete criteria for each step - stay measurably longer than engineers on teams where advancement is ad hoc. Ask your partner whether team members have a documented growth plan, and whether you as the client are looped into calibrating it.
 - **Annual compensation benchmarking, not just annual raises.** Vietnamese developer salaries have grown roughly 8-10% annually as the market has heated up. A partner who benchmarks their engineers' pay against current market rate every year, rather than applying a flat cost-of-living bump, is far less likely to lose people to a counteroffer.
-- **Exposure to your actual technical decisions, not just ticket execution.** Engineers who are invited into architecture discussions and treated as contributors to technical direction — not just implementers of a spec someone else wrote — report meaningfully higher engagement. This is the practical version of "Mistake 1" above: inclusion is a retention mechanism, not just a morale nicety.
+- **Exposure to your actual technical decisions, not just ticket execution.** Engineers who are invited into architecture discussions and treated as contributors to technical direction - not just implementers of a spec someone else wrote - report meaningfully higher engagement. This is the practical version of "Mistake 1" above: inclusion is a retention mechanism, not just a morale nicety.
 - **A named succession plan for every critical role.** Even with strong retention, plan for the reality that someone will eventually leave. The strongest partnerships maintain a documented "bus factor" mitigation: no single engineer is the only person who understands a critical system component, achieved through pair programming rotations and mandatory documentation, not just goodwill.
 - **Regular in-person contact.** Teams that receive at least one annual visit from client-side leadership, and send representatives to the client's offices at least once, report substantially stronger long-term engagement than teams that remain purely video-call relationships for years.
 
-**The metric to track:** ask your partner for their average tenure-on-account figure — not company-wide attrition, but specifically how long engineers stay assigned to the same client relationship. A mature partnership should be able to show you 24+ months average tenure on long-running accounts. If a partner cannot produce this number, or the number is under 12 months, treat that as a leading indicator of the knowledge-loss risk you will absorb over a multi-year engagement.
+**The metric to track:** ask your partner for their average tenure-on-account figure - not company-wide attrition, but specifically how long engineers stay assigned to the same client relationship. A mature partnership should be able to show you 24+ months average tenure on long-running accounts. If a partner cannot produce this number, or the number is under 12 months, treat that as a leading indicator of the knowledge-loss risk you will absorb over a multi-year engagement.
 
 ## Common Mistakes to Avoid
 
@@ -118,14 +118,14 @@ Getting a dedicated team to production by day 90 is only half the job. The real 
 
 **Mistake 3: Expecting instant parity.** Your in-house senior engineer who has been on the codebase for 3 years will always be faster than a new team member. Give the dedicated team 90 days before comparing productivity.
 
-Get a custom team proposal within 48 hours — tailored to your specific technology stack and scale requirements: [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Get a custom team proposal within 48 hours - tailored to your specific technology stack and scale requirements: [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ## FAQ
 ### What is the minimum viable dedicated team size?
 Start with 2-3 engineers for a 3-month pilot. This gives you enough capacity to evaluate quality and collaboration without overcommitting. Scale to 5-8 engineers after the pilot validates the partnership.
 
 ### How do I manage a dedicated team across time zones?
-Establish a 2-hour overlap window for synchronous communication (standups, quick decisions). Everything else — code reviews, documentation, sprint planning — can be async. Use Slack for real-time, Loom for async demos, and Jira for task tracking.
+Establish a 2-hour overlap window for synchronous communication (standups, quick decisions). Everything else - code reviews, documentation, sprint planning - can be async. Use Slack for real-time, Loom for async demos, and Jira for task tracking.
 
 ### What happens if a team member leaves?
 A good partner guarantees replacement within 2 weeks and manages the knowledge transfer internally. Insist on documentation practices (ADRs, code comments, onboarding guides) that reduce single-person dependencies.
@@ -137,7 +137,7 @@ By combining local European account management with elite offshore talent, we en
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your dedicated development team initiatives are executed with absolute precision.
 
 ### How do we retain our dedicated team members beyond the first 90 days?
-Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure — a mature partnership should show 24+ months on long-running accounts.
+Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure - a mature partnership should show 24+ months on long-running accounts.
 
 <script type="application/ld+json">
 {
@@ -157,7 +157,7 @@ Retention comes from a visible career ladder, annual compensation benchmarking a
       "name": "How do I manage a dedicated team across time zones?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Establish a 2-hour overlap window for synchronous communication (standups, quick decisions). Everything else — code reviews, documentation, sprint planning — can be async. Use Slack for real-time, Loom for async demos, and Jira for task tracking."
+        "text": "Establish a 2-hour overlap window for synchronous communication (standups, quick decisions). Everything else - code reviews, documentation, sprint planning - can be async. Use Slack for real-time, Loom for async demos, and Jira for task tracking."
       }
     },
     {
@@ -189,7 +189,7 @@ Retention comes from a visible career ladder, annual compensation benchmarking a
       "name": "How do we retain our dedicated team members beyond the first 90 days?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure — a mature partnership should show 24+ months on long-running accounts."
+        "text": "Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure - a mature partnership should show 24+ months on long-running accounts."
       }
     }
   ]

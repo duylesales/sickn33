@@ -30,7 +30,7 @@ Knowing the shape in advance makes the exercise far less intimidating, and it he
 
 **A penetration test** attacks the running system from outside, usually without that access, simulating what an external attacker could achieve. It answers a different question and is normally what an enterprise customer means when they ask for one.
 
-**An automated scan** runs tooling against your dependencies and endpoints. It is cheap, useful for known vulnerable libraries, and incapable of finding the flaw that matters most in AI-built products — that one customer can read another's records — because no scanner knows what your data means.
+**An automated scan** runs tooling against your dependencies and endpoints. It is cheap, useful for known vulnerable libraries, and incapable of finding the flaw that matters most in AI-built products - that one customer can read another's records - because no scanner knows what your data means.
 
 For a small product, the review is the right first step, because the findings in AI-generated applications are overwhelmingly design and configuration rather than exotic vulnerabilities.
 
@@ -94,7 +94,7 @@ That record is worth as much as the fixes. It is what you hand to the next custo
 
 **Before your first business customer,** because their procurement will ask questions you need answers to.
 
-**Before handling sensitive data** — health, financial, children's, employment.
+**Before handling sensitive data** - health, financial, children's, employment.
 
 **After a significant change,** particularly one involving authentication, payments or a new integration.
 
@@ -102,13 +102,13 @@ That record is worth as much as the fixes. It is what you hand to the next custo
 
 **Annually thereafter,** which is a lighter exercise once the foundations are sound.
 
-Not, ideally, after an incident — though that is when many founders first ask.
+Not, ideally, after an incident - though that is when many founders first ask.
 
 ## What a Review Costs and What It Saves
 
 For a small AI-built product, a focused review and remediation together generally sits inside LaunchStudio's fixed range of €800 to €7,500, depending on how many of the five areas need work. That is deliberately set against the alternative: a customer discovering the finding during their own assessment, or an incident requiring a notification you cannot substantiate.
 
-The review is done by Manifera's engineers — eleven years of production and security work for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City — and the frontend you built in Lovable, Bolt or Cursor is never rebuilt. You receive the findings, the fixes, the verification, and the documentation. See what the [Launch Ready package](https://launchstudio.eu/en/#packages) covers, or [send us your prototype link](https://launchstudio.eu/en/#contact) and you will get an initial read within one business day.
+The review is done by Manifera's engineers - eleven years of production and security work for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City - and the frontend you built in Lovable, Bolt or Cursor is never rebuilt. You receive the findings, the fixes, the verification, and the documentation. See what the [Launch Ready package](https://launchstudio.eu/en/#packages) covers, or [send us your prototype link](https://launchstudio.eu/en/#contact) and you will get an initial read within one business day.
 
 ## How to Prepare for One
 
@@ -144,16 +144,16 @@ Anne-Fleur Sluiter had Bewaarplan live for five months: a document-retention too
 
 The review took three days and produced fourteen findings. Three were serious: the storage bucket holding client documents was public with predictable file names, meaning any document was retrievable by anyone who guessed an address; a staff role field was writable by the account holder, so any user could grant themselves administrative access; and there was no logging of document access, so the question "who opened this client file" had no answer.
 
-Six were moderate — no rate limiting, long-lived sessions surviving password changes, uploads unvalidated, no monitoring, backups never restored, dependency versions. Five were minor or did not apply, and the report said so.
+Six were moderate - no rate limiting, long-lived sessions surviving password changes, uploads unvalidated, no monitoring, backups never restored, dependency versions. Five were minor or did not apply, and the report said so.
 
 Remediation took eight business days, in order of impact, with each fix verified by reproducing the original finding and confirming it failed. The report and the remediation record were handed over together.
 
-**Result:** the practice renewed, and Anne-Fleur has since sent the same document to two prospective customers before being asked — which she says has shortened both conversations considerably.
+**Result:** the practice renewed, and Anne-Fleur has since sent the same document to two prospective customers before being asked - which she says has shortened both conversations considerably.
 
 > *"Fourteen findings sounds like a disaster. Three of them mattered, and the report told me which three, which is the entire reason it was worth paying for."*
-> — **Anne-Fleur Sluiter, Founder, Bewaarplan (Apeldoorn)**
+> - **Anne-Fleur Sluiter, Founder, Bewaarplan (Apeldoorn)**
 
-**Cost & Timeline:** €4,100 (review plus remediation of eleven findings, with verification and documentation) — completed in 11 business days.
+**Cost & Timeline:** €4,100 (review plus remediation of eleven findings, with verification and documentation) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
@@ -175,7 +175,7 @@ Findings ordered by business impact, reproducible evidence for each, concrete re
 
 ### When is the right time to have one?
 
-Before your first business customer, before handling sensitive data, after significant changes to authentication or payments, and when you inherit a product you did not build — rather than after an incident, which is when most founders first ask.
+Before your first business customer, before handling sensitive data, after significant changes to authentication or payments, and when you inherit a product you did not build - rather than after an incident, which is when most founders first ask.
 
 <script type="application/ld+json">
 {

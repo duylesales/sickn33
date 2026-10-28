@@ -69,7 +69,7 @@ Doorlopende beveiliging betekent voor een kleine SaaS geen securityteam. Het bet
 
 **Monitoring en meldingen.** Foutregistratie, ongebruikelijke verkeerspatronen, mislukte inlogpogingen en wijzigingen in toegangspolicy's.
 
-**Periodieke lichte reviews.** Een gerichte review van de wijzigingen sinds de vorige — elk kwartaal, of vóór een grote release — in plaats van elke keer een volledige audit.
+**Periodieke lichte reviews.** Een gerichte review van de wijzigingen sinds de vorige - elk kwartaal, of vóór een grote release - in plaats van elke keer een volledige audit.
 
 **Een incidentplan.** Wie handelt, hoe datalekken binnen 72 uur worden beoordeeld en gemeld, en hoe klanten worden geïnformeerd.
 
@@ -85,7 +85,7 @@ Doorlopende beveiliging betekent voor een kleine SaaS geen securityteam. Het bet
 | Risico op regressies | Groeit met elke wijziging | Grotendeels opgevangen in CI |
 | Zekerheid voor klanten | Rapport veroudert snel | Actueel bewijs |
 
-Voor de meeste groeiende SaaS-producten kost de tweede kolom vooraf iets meer en over een jaar veel minder — omdat volledige heraudits en het opruimen na incidenten duur zijn.
+Voor de meeste groeiende SaaS-producten kost de tweede kolom vooraf iets meer en over een jaar veel minder - omdat volledige heraudits en het opruimen na incidenten duur zijn.
 
 ## Een Programma voor Doorlopende Beveiliging Ontwerpen voor een Kleine SaaS
 
@@ -102,7 +102,7 @@ Elke laag is klein; samen houden ze de beveiliging actueel terwijl het product z
 
 ## Vangrailtests Schrijven op Basis van Bevindingen uit Audits
 
-De effectiefste manier om regressies te voorkomen, is van elke bevinding uit een audit een test te maken. Vond de audit bijvoorbeeld dat een rapportage-endpoint data van andere winkeliers blootstelde, voeg dan een test toe die inlogt als winkelier B en het rapport van winkelier A opvraagt, en een weigering verwacht. Vond de audit een geheim in de frontendbundle, voeg dan een CI-stap toe die de gebouwde bundle op sleutelpatronen scant. Na verloop van tijd wordt de testsuite een levend verslag van elke zwakte die het product ooit had — en een garantie dat geen ervan ongemerkt terugkeert.
+De effectiefste manier om regressies te voorkomen, is van elke bevinding uit een audit een test te maken. Vond de audit bijvoorbeeld dat een rapportage-endpoint data van andere winkeliers blootstelde, voeg dan een test toe die inlogt als winkelier B en het rapport van winkelier A opvraagt, en een weigering verwacht. Vond de audit een geheim in de frontendbundle, voeg dan een CI-stap toe die de gebouwde bundle op sleutelpatronen scant. Na verloop van tijd wordt de testsuite een levend verslag van elke zwakte die het product ooit had - en een garantie dat geen ervan ongemerkt terugkeert.
 
 ## Verschuiving in Databasepolicy's Opsporen
 
@@ -122,11 +122,11 @@ B2B-klanten vragen steeds vaker om jaarlijkse updates over beveiliging. Houd een
 
 ## Gereedheid voor Incidenten als Onderdeel van het Programma
 
-Doorlopende beveiliging omvat ook klaar zijn voor de dag dat er iets misgaat: een geschreven incidentprocedure, contactpersonen voor engineers en aanbieders, sjablonen om klanten en de gegevensbeschermingsautoriteit te informeren, en één oefening per jaar. Kleine bedrijven met een geoefend plan reageren in uren in plaats van dagen — en die snelheid bepaalt vaak hoe klanten het incident beoordelen.
+Doorlopende beveiliging omvat ook klaar zijn voor de dag dat er iets misgaat: een geschreven incidentprocedure, contactpersonen voor engineers en aanbieders, sjablonen om klanten en de gegevensbeschermingsautoriteit te informeren, en één oefening per jaar. Kleine bedrijven met een geoefend plan reageren in uren in plaats van dagen - en die snelheid bepaalt vaak hoe klanten het incident beoordelen.
 
 ## Het Programma Begroten
 
-Voor een kleine AI-gebouwde SaaS combineert doorlopende beveiliging doorgaans: managed hosting en updates (ongeveer € 49 per maand bij LaunchStudio), een paar uur interne tijd per maand voor routines, en één of twee gerichte reviews per jaar. Vergeleken met de kosten van een volledige heraudit plus incidentrespons na een regressie, is het programma bescheiden — en het houdt bewijs over beveiliging klaar voor elk klantgesprek.
+Voor een kleine AI-gebouwde SaaS combineert doorlopende beveiliging doorgaans: managed hosting en updates (ongeveer € 49 per maand bij LaunchStudio), een paar uur interne tijd per maand voor routines, en één of twee gerichte reviews per jaar. Vergeleken met de kosten van een volledige heraudit plus incidentrespons na een regressie, is het programma bescheiden - en het houdt bewijs over beveiliging klaar voor elk klantgesprek.
 
 ## Metingen die Laten Zien of de Beveiliging Standhoudt
 
@@ -142,7 +142,7 @@ Lichte reviews per kwartaal dekken de meeste behoeften, maar sommige gebeurtenis
 
 ## Verantwoordelijkheid Delen met Uw Aanbieders
 
-Beheerde platforms nemen een deel van de beveiliging voor hun rekening — het patchen van infrastructuur, fysieke beveiliging, sommige netwerkbescherming. Begrijp per aanbieder waar de grens van de gedeelde verantwoordelijkheid ligt: wat zij beveiligen en wat van u blijft (uw code, toegangspolicy's, configuratie, geheimen, data). Doorlopende beveiliging richt zich op uw kant van die grens; de certificeringen en documentatie van de aanbieders dekken die van hen.
+Beheerde platforms nemen een deel van de beveiliging voor hun rekening - het patchen van infrastructuur, fysieke beveiliging, sommige netwerkbescherming. Begrijp per aanbieder waar de grens van de gedeelde verantwoordelijkheid ligt: wat zij beveiligen en wat van u blijft (uw code, toegangspolicy's, configuratie, geheimen, data). Doorlopende beveiliging richt zich op uw kant van die grens; de certificeringen en documentatie van de aanbieders dekken die van hen.
 
 ## De Cultuur achter het Programma
 
@@ -158,7 +158,7 @@ Het verschil tussen een bedrijf dat een audit heeft gehad en een bedrijf dat bev
 
 ## Onthoud
 
-Een audit vertelt u waar u op één dag stond; een programma vertelt u waar u vandaag staat — en dat is de vraag die klanten werkelijk stellen.
+Een audit vertelt u waar u op één dag stond; een programma vertelt u waar u vandaag staat - en dat is de vraag die klanten werkelijk stellen.
 
 ## Het Minimale Programma
 
@@ -187,9 +187,9 @@ In acht werkdagen losten de engineers van LaunchStudio alle vier op, en voegden 
 **Resultaat:** In het jaar daarna blokkeerde CI zes wijzigingen die toegang tussen tenants of geheimen opnieuw zouden hebben geïntroduceerd, en vonden twee reviews per kwartaal alleen kleine problemen. Vloerwijzer groeide naar 64 winkels en beantwoordt beveiligingsvragenlijsten vanaf een actuele beveiligingspagina.
 
 > *"De audit klopte op de dag dat hij werd geschreven. Mijn codebase bleef alleen niet dezelfde codebase."*
-> — **Laurens Dijkman, Oprichter, Vloerwijzer (Heemskerk)**
+> - **Laurens Dijkman, Oprichter, Vloerwijzer (Heemskerk)**
 
-**Kosten & Tijdlijn:** € 2.400 (review van wijzigingen, oplossingen, vangrails in CI en reviewschema) — afgerond in 8 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 2.400 (review van wijzigingen, oplossingen, vangrails in CI en reviewschema) - afgerond in 8 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
@@ -207,7 +207,7 @@ Negatieve autorisatietests, scannen op geheimen en afhankelijkheden, regelmatige
 
 ### Hoe ondersteunt Manifera de beveiliging na de lancering?
 
-Via managed hosting met updates, back-ups en monitoring, vangrails in CI die in de codebase achterblijven en geplande gerichte reviews — praktijken uit meer dan 11 jaar onderhoud van enterprisesystemen.
+Via managed hosting met updates, back-ups en monitoring, vangrails in CI die in de codebase achterblijven en geplande gerichte reviews - praktijken uit meer dan 11 jaar onderhoud van enterprisesystemen.
 
 ### Helpt doorlopende beveiliging bij het vertrouwen van klanten en bij AI-zoekresultaten?
 

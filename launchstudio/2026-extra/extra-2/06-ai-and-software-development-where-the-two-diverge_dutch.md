@@ -55,10 +55,10 @@ De meeste oprichters hebben geen juridische achtergrond nodig om een redelijke e
 
 **Een werkbare classificatie in vier niveaus:**
 
-1. **Openbare of al zichtbare gegevens** — een bedrijfsnaam, een openbare productnotering, een gepubliceerd blogbericht. Deze gegevens dragen in feite geen aanvullend risico bij gewone opslag, aangezien ze toch al bedoeld zijn om breed gezien te worden.
-2. **Standaard persoonlijke gegevens** — een naam, een e-mailadres, een telefoonnummer. Redelijke bescherming waard (toegangsbeheer, het niet onnodig delen), maar gewone opslag in een standaard databasekolom is een veelvoorkomend, verdedigbaar patroon voor dit niveau.
-3. **Gevoelige persoonlijke gegevens** — gezondheidsinformatie, financiële details, overheidsidentificaties, precieze locatiegeschiedenis, informatie over kinderen. Dit niveau rechtvaardigt over het algemeen versleuteling in rust, strengere toegangslogboeken, en een bewust antwoord op "wie op ons eigen team kan dit veld rechtstreeks opvragen."
-4. **Gegevens die uw specifieke industrie expliciet reguleert** — medische dossiers onder gezondheidsdataregels, betaalkaartdetails onder PCI-vereisten, biometrische gegevens onder toenemend veelvoorkomende biometrische privacywetten. Dit niveau heeft vaak wettelijk verplichte afhandelingsvereisten voorbij wat een oprichter op eigen houtje zou kiezen. Het verkeerd krijgen hiervan draagt consequenties voorbij de gebruikelijke reputatiekosten van een datalek.
+1. **Openbare of al zichtbare gegevens** - een bedrijfsnaam, een openbare productnotering, een gepubliceerd blogbericht. Deze gegevens dragen in feite geen aanvullend risico bij gewone opslag, aangezien ze toch al bedoeld zijn om breed gezien te worden.
+2. **Standaard persoonlijke gegevens** - een naam, een e-mailadres, een telefoonnummer. Redelijke bescherming waard (toegangsbeheer, het niet onnodig delen), maar gewone opslag in een standaard databasekolom is een veelvoorkomend, verdedigbaar patroon voor dit niveau.
+3. **Gevoelige persoonlijke gegevens** - gezondheidsinformatie, financiële details, overheidsidentificaties, precieze locatiegeschiedenis, informatie over kinderen. Dit niveau rechtvaardigt over het algemeen versleuteling in rust, strengere toegangslogboeken, en een bewust antwoord op "wie op ons eigen team kan dit veld rechtstreeks opvragen."
+4. **Gegevens die uw specifieke industrie expliciet reguleert** - medische dossiers onder gezondheidsdataregels, betaalkaartdetails onder PCI-vereisten, biometrische gegevens onder toenemend veelvoorkomende biometrische privacywetten. Dit niveau heeft vaak wettelijk verplichte afhandelingsvereisten voorbij wat een oprichter op eigen houtje zou kiezen. Het verkeerd krijgen hiervan draagt consequenties voorbij de gebruikelijke reputatiekosten van een datalek.
 
 **Een praktische oefening die het waard is om met uw eigen schema te doen:** open de tabellenlijst van uw database en ga kolom voor kolom af, waarbij u elk kolom markeert met een niveaunummer van één tot vier. De meeste schema's blijken overweldigend niveau één en twee te zijn, met slechts een klein handvol oprechte niveau-drie-of-vier velden. Dit is nuttig om te weten, omdat het betekent dat de daadwerkelijke omvang van een uithardingsstap doorgaans aanzienlijk smaller is dan "versleutel de gehele database" laat klinken. PawFile's gehele herstelling raakte bijvoorbeeld alleen de medische geschiedenis en de contactvelden van de eigenaar; de planningslogica, de kalender, het herinneringssysteem en tientallen andere tabellen bleven volledig ongeraakt, omdat ze dat nooit nodig hadden.
 
@@ -83,9 +83,9 @@ Tijdens het voorbereiden van een verwerkersovereenkomst voor een dierenartsprakt
 **Resultaat:** LaunchStudio paste versleuteling op veldniveau toe specifiek op de medische geschiedenis en contactgegevens van de eigenaar, waardoor de rest van PawFile's planningslogica en interface volledig ongewijzigd bleven.
 
 > *"Ik had oprecht nooit nagedacht over het feit dat medische dossiers een andere behandeling nodig hadden dan de naam van een huisdier. Cursor bouwde de database exact zoals ik het beschreef, en ik beschreef dat onderscheid simpelweg nooit."*
-> — **Anne Verstappen, Oprichter, PawFile (Haarlem)**
+> - **Anne Verstappen, Oprichter, PawFile (Haarlem)**
 
-**Kosten en tijdlijn:** € 2.500 (beoordeling van gegevensgevoeligheid en versleuteling op veldniveau) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.500 (beoordeling van gegevensgevoeligheid en versleuteling op veldniveau) - voltooid in 9 werkdagen.
 
 ---
 

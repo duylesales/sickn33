@@ -2,7 +2,7 @@ The vendor's DPA is nine pages of standard language legal has seen a hundred tim
 
 **The Pain Points:**
 ❌ **The Rubber-Stamped DPA:** Pulled in at the eleventh hour to bless a contract that's already emotionally closed, so real negotiating leverage never gets used.
-❌ **"General Authorization" Sub-Processors:** Most vendor DPAs let them add new sub-processors with only 30 days' notice — silence becomes approval unless you push for specific consent.
+❌ **"General Authorization" Sub-Processors:** Most vendor DPAs let them add new sub-processors with only 30 days' notice - silence becomes approval unless you push for specific consent.
 ❌ **The Placeholder Breach Clause:** "Vendor shall notify customer promptly" with no number attached isn't a commitment, it's a placeholder that fails you exactly when you need it most.
 
 **The Manifera Solution:**

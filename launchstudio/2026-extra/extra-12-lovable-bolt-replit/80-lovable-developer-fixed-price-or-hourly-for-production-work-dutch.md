@@ -30,7 +30,7 @@ Een vaste prijs betekent dat de leverancier het risico draagt dat de schatting f
 
 Dat werkt wanneer het werk vooraf te kennen is: een beveiligingsreview en herstel tegen een benoemde checklist, een betalingsintegratie met een gedefinieerde set flows, een deployment en lancering, een toegankelijkheidsronde, een migratie met een gerepeteerd plan. Deze hebben grenzen, en een competente leverancier heeft ze eerder gedaan.
 
-Wat u opgeeft, is flexibiliteit. Een vaste prijs is een vaste scope, en alles wat u tijdens het werk bedenkt, is een wijzigingsverzoek — dat is geen leverancier die moeilijk doet, maar de enige manier waarop de regeling kan functioneren.
+Wat u opgeeft, is flexibiliteit. Een vaste prijs is een vaste scope, en alles wat u tijdens het werk bedenkt, is een wijzigingsverzoek - dat is geen leverancier die moeilijk doet, maar de enige manier waarop de regeling kan functioneren.
 
 De faalwijze is een vaste prijs afgesproken op basis van een vage beschrijving. De leverancier heeft zijn aanname geprijsd, u hebt de uwe gekocht, en het verschil komt in week twee boven.
 
@@ -40,7 +40,7 @@ Een uurtarief betekent dat u het risico draagt en flexibiliteit koopt.
 
 Het past bij werk waarvan de vorm echt onbekend is: een probleem diagnosticeren dat niemand begrijpt, een open verbeterronde op een onbekende codebase, doorlopende ontwikkeling waarin prioriteiten wekelijks veranderen, en alles waarbij u wilt bijsturen naarmate u leert.
 
-De faalwijze is geen plafond en geen zicht — uren stapelen zich op, de voortgang is onduidelijk, en het gesprek aan het eind gaat over de factuur in plaats van over de uitkomst.
+De faalwijze is geen plafond en geen zicht - uren stapelen zich op, de voortgang is onduidelijk, en het gesprek aan het eind gaat over de factuur in plaats van over de uitkomst.
 
 Beide worden opgelost met structuur: een vooraf afgesproken plafond, een korte geschreven update bij elk interval over wat er is gedaan en wat er komt, en een checkpoint waarop beide partijen kunnen stoppen.
 
@@ -70,7 +70,7 @@ Spreekt u een vaste prijs af, dan horen vier dingen op papier.
 
 ## Wat een Uurtarief Moet Bevatten
 
-En bij een uurtarief: een afgesproken plafond dat niet zonder uw goedkeuring mag worden overschreden, een geschreven update met een vaste regelmaat, een genoemd tarief met eventuele verschillen voor verschillend werk, en een heldere definitie van wat declarabel is — is een statusgesprek declarabel, is denktijd dat, is de tijd die nodig is om uw omgeving draaiend te krijgen dat.
+En bij een uurtarief: een afgesproken plafond dat niet zonder uw goedkeuring mag worden overschreden, een geschreven update met een vaste regelmaat, een genoemd tarief met eventuele verschillen voor verschillend werk, en een heldere definitie van wat declarabel is - is een statusgesprek declarabel, is denktijd dat, is de tijd die nodig is om uw omgeving draaiend te krijgen dat.
 
 Die laatste vraag is het waard expliciet te stellen. Het antwoord is hoe dan ook redelijk; het antwoord ontdekken via een factuur niet.
 
@@ -86,9 +86,9 @@ Oprichters die deze opdrachten vergelijken, hebben een beeld nodig van wat de ma
 
 **Offshore-regelingen:** per uur aanzienlijk lager, waarbij tijdzoneverschil, communicatie en begeleiding een deel van de besparing weer kosten. Het werkt goed voor gedefinieerd werk met heldere specificaties en slecht voor ontdekkingswerk.
 
-Twee kanttekeningen bij het interpreteren hiervan. Een lager tarief is geen lagere prijs als het werk drie keer zo lang duurt, en het tarief is het minst nuttige getal om leveranciers te vergelijken — wat ertoe doet is het totaal voor de uitkomst, en daarom zijn gespecificeerde vaste prijzen makkelijker te vergelijken dan uurtarieven.
+Twee kanttekeningen bij het interpreteren hiervan. Een lager tarief is geen lagere prijs als het werk drie keer zo lang duurt, en het tarief is het minst nuttige getal om leveranciers te vergelijken - wat ertoe doet is het totaal voor de uitkomst, en daarom zijn gespecificeerde vaste prijzen makkelijker te vergelijken dan uurtarieven.
 
-En voor het werk dat deze reeks beschrijft — een AI-gebouwd product beveiligen en lanceren — is het totaal voor een klein product doorgaans €800 tot €7.500, wie het ook doet, omdat het werk grotendeels dezelfde lijst is.
+En voor het werk dat deze reeks beschrijft - een AI-gebouwd product beveiligen en lanceren - is het totaal voor een klein product doorgaans €800 tot €7.500, wie het ook doet, omdat het werk grotendeels dezelfde lijst is.
 
 ## Wat Er Gebeurt Als Er Iets Misgaat
 
@@ -112,7 +112,7 @@ Een oprichter die geen code kan lezen, weet niet goed hoe hij moet beoordelen wa
 
 **Doet het wat er is afgesproken?** Loop de gespecificeerde lijst zelf af. Elk punt moet te demonstreren zijn: laat me zien dat een gebruiker van een andere organisatie dit record niet kan zien; laat me zien wat er gebeurt als een betaling mislukt; laat me zien dat de back-up wordt teruggezet.
 
-**Hield de schatting stand?** Niet perfect — schattingen zijn schattingen — maar ongeveer, en met een vroege waarschuwing als dat niet zo was. Een leverancier die u in week één vertelt dat iets groter is dan verwacht, gedraagt zich goed; een die het u aan het eind vertelt niet.
+**Hield de schatting stand?** Niet perfect - schattingen zijn schattingen - maar ongeveer, en met een vroege waarschuwing als dat niet zo was. Een leverancier die u in week één vertelt dat iets groter is dan verwacht, gedraagt zich goed; een die het u aan het eind vertelt niet.
 
 **Begrijpt u de uitleg?** Een goede engineer kan aan een niet-technische oprichter uitleggen wat hij deed. Is elk antwoord ondoordringbaar, dan is dat soms echte complexiteit en vaak een signaal.
 
@@ -122,11 +122,11 @@ Die laatste maatstaf is degene die het zwaarst moet wegen, en het is de moeite w
 
 ## Dit Inrichten
 
-Voor een oprichter die werk laat uitvoeren: eerst een korte betaalde beoordeling, met een geschreven rapport dat van u is; een vaste prijs geoffreerd op basis van dat rapport voor werk dat kan worden gespecificeerd — beveiliging, betalingen, deployment, toegankelijkheid, migratie — gespecificeerd met expliciete uitsluitingen, een vastgelegde procedure voor onverwachte bevindingen, en betalingen per mijlpaal; een uurtarief met een plafond, regelmatige geschreven updates en een gedefinieerde declarabele scope voor werk dat ontdekking vraagt; en in beide regelingen een checkpoint waarop beide kanten zonder discussie kunnen stoppen.
+Voor een oprichter die werk laat uitvoeren: eerst een korte betaalde beoordeling, met een geschreven rapport dat van u is; een vaste prijs geoffreerd op basis van dat rapport voor werk dat kan worden gespecificeerd - beveiliging, betalingen, deployment, toegankelijkheid, migratie - gespecificeerd met expliciete uitsluitingen, een vastgelegde procedure voor onverwachte bevindingen, en betalingen per mijlpaal; een uurtarief met een plafond, regelmatige geschreven updates en een gedefinieerde declarabele scope voor werk dat ontdekking vraagt; en in beide regelingen een checkpoint waarop beide kanten zonder discussie kunnen stoppen.
 
-LaunchStudio werkt met vaste prijzen, vanaf €800 voor het Launch Ready-pakket, geoffreerd na het lezen van de code in plaats van ervoor. Daarachter staat Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio werkt met vaste prijzen, vanaf €800 voor het Launch Ready-pakket, geoffreerd na het lezen van de code in plaats van ervoor. Daarachter staat Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
-[Vraag ons eerst om een beoordeling](https://launchstudio.eu/nl/#contact) — het is een dag, het rapport is van u, en de offerte die volgt is er een waar we achter kunnen staan.
+[Vraag ons eerst om een beoordeling](https://launchstudio.eu/nl/#contact) - het is een dag, het rapport is van u, en de offerte die volgt is er een waar we achter kunnen staan.
 
 ## Echt voorbeeld
 
@@ -138,22 +138,22 @@ Ze moest het product laten beveiligen, betalingen laten toevoegen en een lanceri
 
 In week twee ontdekte de leverancier dat rapporten als bestanden op het bestandssysteem van de applicatie werden opgeslagen en bij redeploys verdwenen, dat geen enkel endpoint controleerde welke taxateur het vroeg, en dat de taxatieberekening op drie plekken bestond in twee varianten. Niets daarvan viel in de geoffreerde scope, omdat niemand de code had gelezen.
 
-De opdracht werd een reeks wijzigingsverzoeken. Uiteindelijke kosten €9.400, elf weken in plaats van drie, en een relatie die aan beide kanten slecht eindigde — de leverancier in de overtuiging dat hij was gevraagd een niet-gemelde puinhoop op te lossen, Lieselotte in de overtuiging dat ze een offerte had gekregen voor een klus die de leverancier niet had begrepen.
+De opdracht werd een reeks wijzigingsverzoeken. Uiteindelijke kosten €9.400, elf weken in plaats van drie, en een relatie die aan beide kanten slecht eindigde - de leverancier in de overtuiging dat hij was gevraagd een niet-gemelde puinhoop op te lossen, Lieselotte in de overtuiging dat ze een offerte had gekregen voor een klus die de leverancier niet had begrepen.
 
 Twee werkdagen met een andere leverancier, daarna het werk: een betaalde beoordeling van €1.200 met een rapport van negen pagina's dat elke bevinding noemt met een schatting en een prioriteitsvolgorde, dat van haar is; een vaste prijs van €6.100 geoffreerd op basis van dat rapport, gespecificeerd over elf punten met vier expliciete uitsluitingen; een vastgelegde procedure voor alles wat verder werd gevonden, die twee keer werd toegepast en elk in een dag werd afgehandeld; en betalingen per mijlpaal in derden.
 
 **Resultaat:** de tweede opdracht werd afgerond in elf werkdagen tegen een schatting van tien, voor €6.100 plus de beoordeling van €1.200. Lieselottes oordeel is dat de goedkope offerte haar €9.400, acht extra weken en een leveranciersrelatie kostte, en dat de beoordelingsfee waartegen ze zich eerst verzette het goedkoopste deel van de hele oefening was.
 
 > *"Ik weigerde twaalfhonderd euro te betalen voor iemand die me vertelde wat er mis was. Toen betaalde ik negenduizend vierhonderd om het tijdens het werk te ontdekken, over elf weken, één ruzie tegelijk."*
-> — **Lieselotte Bijkerk, Oprichter, Taxatierapport (Hilversum)**
+> - **Lieselotte Bijkerk, Oprichter, Taxatierapport (Hilversum)**
 
-**Kosten & Doorlooptijd:** €7.300 totaal (€1.200 beoordeling met een geschreven rapport, €6.100 herstel tegen vaste prijs over elf gespecificeerde punten, waaronder migratie van opslag, autorisatie, samenvoegen van berekeningen, betalingen en lancering) — afgerond in 11 werkdagen.
+**Kosten & Doorlooptijd:** €7.300 totaal (€1.200 beoordeling met een geschreven rapport, €6.100 herstel tegen vaste prijs over elf gespecificeerde punten, waaronder migratie van opslag, autorisatie, samenvoegen van berekeningen, betalingen en lancering) - afgerond in 11 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat is beter, een vaste prijs of een uurtarief?
 
-In het algemeen geen van beide. Een vaste prijs past bij werk dat kan worden gespecificeerd — beveiliging, betalingen, deployment, migratie. Een uurtarief past bij ontdekkingswerk en veranderende prioriteiten. De meeste opdrachten moeten beide gebruiken, in die volgorde.
+In het algemeen geen van beide. Een vaste prijs past bij werk dat kan worden gespecificeerd - beveiliging, betalingen, deployment, migratie. Een uurtarief past bij ontdekkingswerk en veranderende prioriteiten. De meeste opdrachten moeten beide gebruiken, in die volgorde.
 
 ### Waarom zou ik betalen voor een beoordeling?
 
@@ -165,7 +165,7 @@ Een gespecificeerde scope, expliciete uitsluitingen, een vastgelegde procedure v
 
 ### Wat moet een uurtariefregeling bevatten?
 
-Een plafond dat niet zonder goedkeuring mag worden overschreden, regelmatige geschreven updates, een genoemd tarief, en een heldere definitie van wat declarabel is — inclusief of gesprekken en het inrichten van de omgeving dat zijn.
+Een plafond dat niet zonder goedkeuring mag worden overschreden, regelmatige geschreven updates, een genoemd tarief, en een heldere definitie van wat declarabel is - inclusief of gesprekken en het inrichten van de omgeving dat zijn.
 
 ### Is de goedkoopste offerte meestal de duurste?
 
@@ -213,7 +213,7 @@ Vaak wel, als ze is opgesteld zonder de code te lezen. De prijs die u afspreekt,
       "name": "Is de goedkoopste offerte meestal de duurste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vaak, als ze is opgesteld zonder de code te lezen — u spreekt een prijs af voor ingebeeld werk en betaalt voor het werk dat er is."
+        "text": "Vaak, als ze is opgesteld zonder de code te lezen - u spreekt een prijs af voor ingebeeld werk en betaalt voor het werk dat er is."
       }
     }
   ]

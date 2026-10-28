@@ -1,6 +1,6 @@
-⏸️ Nadia almost paused her **Cursor**-built restaurant inventory tool for three months to focus entirely on a pre-seed raise — until a mentor pointed out her three demo restaurants would go quiet, and investors wanted to see a live product, not a plan. 🧠
+⏸️ Nadia almost paused her **Cursor**-built restaurant inventory tool for three months to focus entirely on a pre-seed raise - until a mentor pointed out her three demo restaurants would go quiet, and investors wanted to see a live product, not a plan. 🧠
 
-"Pause until funded" feels safe, but a paused product actively decays — in investor perception, early-user momentum, and negotiating leverage — while you wait.
+"Pause until funded" feels safe, but a paused product actively decays - in investor perception, early-user momentum, and negotiating leverage - while you wait.
 
 ❌ A paused prototype reads to investors as deprioritized, not cautious
 ❌ Early testers lose interest after months of silence
@@ -12,7 +12,7 @@
 
 At LaunchStudio, we harden AI-built prototypes in 1-3 weeks so founders never have to choose between fundraising and building. 🛡️
 
-Nadia closed her pre-seed round with stronger terms than her initial offer — with three paying restaurants live throughout the raise. 🚀
+Nadia closed her pre-seed round with stronger terms than her initial offer - with three paying restaurants live throughout the raise. 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-pausing-development-until-funding
 

@@ -2,13 +2,13 @@
 
 **The Pain Points:**
 ❌ **SSO as an Afterthought:** Treated as a late-stage integration task instead of core architecture.
-❌ **Standalone Credentials:** Another password to forget — friction that kills adoption from day one.
+❌ **Standalone Credentials:** Another password to forget - friction that kills adoption from day one.
 ❌ **Parallel Permissions System:** A separate access-control system IT never actually adopts into its managed stack.
 
 **The Manifera Solution:**
 ✅ **SSO Integration From Project Kickoff:** Core architecture, coordinated directly with your identity team.
 ✅ **Mobile-Specific Session Handling Done Right:** Token refresh, offline sessions, secure on-device storage.
-✅ **Roles Mapped to Existing Identity Groups:** No parallel system — IT manages it the same way it manages everything else.
+✅ **Roles Mapped to Existing Identity Groups:** No parallel system - IT manages it the same way it manages everything else.
 
 Frictionless access. Adoption that actually happens. 🛡️
 

@@ -1,4 +1,4 @@
-🔥 Noah bouwde een prototype met **Lovable** — noah, a startup founder, used **lovable** to build a resume parser saas prototype, maar ontdekte kritieke architectuur-, beveiligings- en deployment-knelpunten vóór de lancering. 🧠
+🔥 Noah bouwde een prototype met **Lovable** - noah, a startup founder, used **lovable** to build a resume parser saas prototype, maar ontdekte kritieke architectuur-, beveiligings- en deployment-knelpunten vóór de lancering. 🧠
 
 Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoer-sanering, database Row Level Securit
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Noah's applicatie behaalde productie-gereedheid: Noah handled a launch-day spike of over 8,000 document uploads without a single database timeout. (€1,900 (Launch Guard Package) — production-ready and deployed in 6 business days.). 🚀
+Noah's applicatie behaalde productie-gereedheid: Noah handled a launch-day spike of over 8,000 document uploads without a single database timeout. (€1,900 (Launch Guard Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launch-day-mistakes-shipping-mvp
 

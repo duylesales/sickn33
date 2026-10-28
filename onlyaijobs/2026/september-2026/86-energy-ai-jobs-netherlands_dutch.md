@@ -23,7 +23,7 @@ Content Format: Sector Analysis
 
 Het Nederlandse elektriciteitssysteem kent een actieve operationele crisis, en die crisis is de beste verklaring waarom energie een van de aantrekkelijkere sectoren voor technisch werk is geworden. Aansluitcapaciteit is in grote gebieden volledig vergeven. Nieuwe industrieterreinen, en soms nieuwbouw, krijgen de netcapaciteit niet die ze nodig hebben. Fysieke versterking kost jaren.
 
-Het gevolg: het systeem beheren met de infrastructuur die er al ligt, is een urgent economisch probleem geworden in plaats van een ingenieurskwestie, en de middelen daarvoor zijn voorspellen, optimaliseren en coördineren — dus datawerk.
+Het gevolg: het systeem beheren met de infrastructuur die er al ligt, is een urgent economisch probleem geworden in plaats van een ingenieurskwestie, en de middelen daarvoor zijn voorspellen, optimaliseren en coördineren - dus datawerk.
 
 ## Waarom de urgentie echt is en niet retorisch
 
@@ -37,7 +37,7 @@ De tweede drijver is variabiliteit. Opwek is verschoven van een klein aantal reg
 
 **Voorspellen.** Vraag en opwek, over horizonnen van seconden tot jaren, op resoluties van één aansluiting tot een landelijk systeem. De kenmerkende moeilijkheid: historische patronen breken actief. Elektrificatie verandert belastingprofielen, zon verandert het dagprofiel, en warmtepompen maken vraag temperatuurgevoelig op manieren die de historie niet vastlegt.
 
-**Congestiemanagement en flexibiliteit.** Vaststellen waar en wanneer het net beklemd raakt, en dan partijen coördineren die verbruik kunnen verschuiven, opslag kunnen ontladen of opwek kunnen afschakelen. Een coördinatieprobleem over onafhankelijke actoren met eigen doelen — evenzeer mechanismeontwerp als optimalisatie.
+**Congestiemanagement en flexibiliteit.** Vaststellen waar en wanneer het net beklemd raakt, en dan partijen coördineren die verbruik kunnen verschuiven, opslag kunnen ontladen of opwek kunnen afschakelen. Een coördinatieprobleem over onafhankelijke actoren met eigen doelen - evenzeer mechanismeontwerp als optimalisatie.
 
 **Assetmanagement.** Kabels, transformatoren en stations met lange levensduren, onvolledige conditieregistratie en vervangingskosten groot genoeg om prioritering financieel zwaar te maken.
 
@@ -79,7 +79,7 @@ Het praktische effect: uitlegbaarheid is een eis, geen voorkeur, en een substant
 
 **Wat direct overdraagt.** Tijdreeksvoorspelling over meerdere horizonnen. Optimalisatie onder randvoorwaarden. Anomaliedetectie op sensordata. Ruimtelijke analyse. Stochastische optimalisatie en beslissen onder onzekerheid.
 
-**Wat je moet leren.** Hoe het fysieke systeem zich gedraagt — waarom spanning telt, wat een transformator doet, wat blindvermogen is. Hoe de markt is opgebouwd — day-ahead, intraday, balancering. Hoe regelgeving handelen beperkt.
+**Wat je moet leren.** Hoe het fysieke systeem zich gedraagt - waarom spanning telt, wat een transformator doet, wat blindvermogen is. Hoe de markt is opgebouwd - day-ahead, intraday, balancering. Hoe regelgeving handelen beperkt.
 
 Niets hiervan vraagt een ingenieursdiploma. Het vraagt enkele weken oprecht lezen en de bereidheid vragen te stellen aan mensen die het systeem kennen.
 

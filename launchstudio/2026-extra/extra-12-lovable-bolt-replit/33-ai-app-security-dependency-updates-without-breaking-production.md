@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Count the packages your product installs. Not the ones you asked for — the total, including everything those packages depend on. For a typical Lovable or Bolt application it is somewhere between six hundred and fifteen hundred.
+Count the packages your product installs. Not the ones you asked for - the total, including everything those packages depend on. For a typical Lovable or Bolt application it is somewhere between six hundred and fifteen hundred.
 
 You chose perhaps fifteen of them. The rest arrived because something you chose needed them, and they run with the same permissions as the code you wrote.
 
@@ -28,9 +28,9 @@ This is not an argument for building everything yourself. It is an argument for 
 
 ## The Lockfile Is the Fact
 
-Your package file says what you want. Your lockfile says what you actually have — every package, every version, every transitive dependency, pinned exactly.
+Your package file says what you want. Your lockfile says what you actually have - every package, every version, every transitive dependency, pinned exactly.
 
-Two consequences. It must be committed, or your production build may install different versions from the ones you tested, which is both a reliability and a security problem. And it is the document that answers "are we affected by this" when a vulnerability is announced — one search through the lockfile, thirty seconds, rather than an afternoon of uncertainty.
+Two consequences. It must be committed, or your production build may install different versions from the ones you tested, which is both a reliability and a security problem. And it is the document that answers "are we affected by this" when a vulnerability is announced - one search through the lockfile, thirty seconds, rather than an afternoon of uncertainty.
 
 Products built by AI tools sometimes lack a committed lockfile entirely, because the tool managed dependencies on its own and the concept never surfaced. If yours is missing, that is the first thing to fix.
 
@@ -70,7 +70,7 @@ The habit that makes the middle speed sustainable: update, run your checks, depl
 
 The cheapest security improvement in this area is to have fewer dependencies.
 
-AI coding tools install packages readily — a date library for one format string, a utility package for one function, a component library used for a single button. Each is a permanent liability with its own dependency tree, its own maintainer, and its own chance of being abandoned or compromised.
+AI coding tools install packages readily - a date library for one format string, a utility package for one function, a component library used for a single button. Each is a permanent liability with its own dependency tree, its own maintainer, and its own chance of being abandoned or compromised.
 
 Once a quarter, list your direct dependencies and ask of each: what does this do, do we still use it, and could we do without it. Removing three or four is typical, and each removal takes a subtree of transitive packages with it.
 
@@ -78,7 +78,7 @@ Pay attention to signals of abandonment as well: no release in two years, an arc
 
 ## The Supply Chain Attack Is Real Now
 
-The attack that has become common is not a vulnerability discovered in good code. It is malicious code published deliberately — a popular package's maintainer account compromised, or a new version containing something that reads your environment variables and posts them elsewhere.
+The attack that has become common is not a vulnerability discovered in good code. It is malicious code published deliberately - a popular package's maintainer account compromised, or a new version containing something that reads your environment variables and posts them elsewhere.
 
 Three practices reduce the exposure meaningfully. Pin exact versions in the lockfile, which you already do. Delay adopting brand-new releases of packages that touch anything sensitive, since most malicious releases are caught within days. And check what runs during installation: scripts that execute automatically on install are the usual delivery mechanism, and most package managers can disable them.
 
@@ -88,11 +88,11 @@ For a small product this is proportionate. Nobody expects you to review a thousa
 
 One failure mode belongs specifically to products built with coding assistants, and it is worth checking for directly: a dependency that does not exist, or did not until somebody noticed the mistake.
 
-Models occasionally suggest a plausible-sounding package name that was never published. Usually the install fails and the error is obvious. The dangerous version is when someone registers that name afterwards precisely because assistants keep suggesting it — a technique with a name in security circles and a growing number of real cases. The package installs cleanly, does something useful enough not to raise questions, and runs with your application's permissions.
+Models occasionally suggest a plausible-sounding package name that was never published. Usually the install fails and the error is obvious. The dangerous version is when someone registers that name afterwards precisely because assistants keep suggesting it - a technique with a name in security circles and a growing number of real cases. The package installs cleanly, does something useful enough not to raise questions, and runs with your application's permissions.
 
 The check is quick. Go through your direct dependencies and, for each one you do not recognise, look at its repository: how long it has existed, how many people use it, who maintains it, and whether it is what the name implies. A package with forty weekly downloads and one commit, sitting in a production application, deserves an explanation.
 
-The same look catches a related problem — a dependency that is real but wrong. Assistants sometimes reach for a package that solves a different problem, or a deprecated predecessor of the one intended, because both were common in training data. These do not install malware; they simply add weight and eventual friction.
+The same look catches a related problem - a dependency that is real but wrong. Assistants sometimes reach for a package that solves a different problem, or a deprecated predecessor of the one intended, because both were common in training data. These do not install malware; they simply add weight and eventual friction.
 
 Neither check takes long, and both are best done once now and then whenever an assistant adds something you did not ask for by name.
 
@@ -108,15 +108,15 @@ Four options, in roughly the order to consider them.
 
 **Fork and patch it.** Reasonable when the package is small and the fix is understood. You now maintain it, which is a real commitment, but for a hundred lines of code it is a smaller commitment than it sounds.
 
-**Pin and isolate it.** When replacing is genuinely expensive, keep the version fixed, document why, and reduce what it touches — ensuring it never handles untrusted input directly if that is what the vulnerability requires.
+**Pin and isolate it.** When replacing is genuinely expensive, keep the version fixed, document why, and reduce what it touches - ensuring it never handles untrusted input directly if that is what the vulnerability requires.
 
-What is not an option is leaving it unexamined with a note that says an update is available. Write down the decision and the reason, so that the next person to look — including you, in a year — does not repeat the investigation from the beginning.
+What is not an option is leaving it unexamined with a note that says an update is available. Write down the decision and the reason, so that the next person to look - including you, in a year - does not repeat the investigation from the beginning.
 
 ## Setting This Up
 
 For an existing product this is typically half a day: a committed lockfile, an audit run with the results triaged by reachability rather than by severity label, automated scanning on every build with alerts routed somewhere you read, a written update routine at three speeds, a short manual test list for products without automated tests, unused and abandoned direct dependencies removed, install scripts reviewed, and a note recording what each direct dependency is for so the next review is faster than this one.
 
-LaunchStudio covers dependencies in security review and keeps them current under the managed arrangement at €49 per month, where updates are applied and tested rather than accumulating. The engineers are Manifera's — eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
+LaunchStudio covers dependencies in security review and keeps them current under the managed arrangement at €49 per month, where updates are applied and tested rather than accumulating. The engineers are Manifera's - eleven years, 120+ engineers, clients including Vodafone, TNO and CFLW.
 
 [Ask us what your lockfile contains](https://launchstudio.eu/en/#contact). Most founders have never looked.
 
@@ -130,14 +130,14 @@ He had never updated a dependency. The application worked, nothing appeared brok
 
 One mattered immediately: a request-parsing library with a known flaw allowing a crafted payload to consume unbounded memory. His product accepted work order submissions from engineers' phones on public endpoints, which is exactly the exposure the advisory described. It had been published nine months earlier.
 
-Three business days: the lockfile committed, having never been in the repository, so builds had been resolving versions freshly each time; the 63 advisories triaged, of which 11 were reachable from user input, 34 were development-only and the remainder required configurations he did not run; the 11 applied immediately, including the parsing library, with the product exercised against a written test list; the development-only set applied in one batch the following week; two major version upgrades scheduled separately and done one at a time over two weeks; automated scanning wired into the build with alerts to his phone and a service opening pull requests for new advisories; 9 direct dependencies removed as unused, including a date library used for one format string and a component library used for one button, which removed 190 transitive packages; install scripts disabled by default; and an update routine written down — security within days, minor monthly, major deliberately.
+Three business days: the lockfile committed, having never been in the repository, so builds had been resolving versions freshly each time; the 63 advisories triaged, of which 11 were reachable from user input, 34 were development-only and the remainder required configurations he did not run; the 11 applied immediately, including the parsing library, with the product exercised against a written test list; the development-only set applied in one batch the following week; two major version upgrades scheduled separately and done one at a time over two weeks; automated scanning wired into the build with alerts to his phone and a service opening pull requests for new advisories; 9 direct dependencies removed as unused, including a date library used for one format string and a component library used for one button, which removed 190 transitive packages; install scripts disabled by default; and an update routine written down - security within days, minor monthly, major deliberately.
 
 **Result:** the memory exhaustion issue was closed after nine months of exposure with no evidence it had been exploited. Total package count fell from 1,340 to 1,150. Menno now spends about 40 minutes a month on updates, and reports that the routine's main benefit is that nothing accumulates into the kind of upgrade that takes a week.
 
 > *"Nobody told me dependencies were a thing I owned. They arrived with the code, they worked, and for fourteen months I did not know there was a list to look at."*
-> — **Menno Zwartjes, Founder, Werkbonnen (Hengelo)**
+> - **Menno Zwartjes, Founder, Werkbonnen (Hengelo)**
 
-**Cost & Timeline:** €2,600 (lockfile remediation, advisory triage and application, major version upgrades, automated scanning and alerting, dependency reduction, install script hardening, update routine documentation) — completed in 3 business days.
+**Cost & Timeline:** €2,600 (lockfile remediation, advisory triage and application, major version upgrades, automated scanning and alerting, dependency reduction, install script hardening, update routine documentation) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -159,7 +159,7 @@ Have fewer dependencies, pin exact versions, delay adopting brand-new releases o
 
 ### What if my app has no tests?
 
-Write a short list of what to click after an update — the five or six paths that matter. It is not a test suite, but it is repeatable, and improvisation is not.
+Write a short list of what to click after an update - the five or six paths that matter. It is not a test suite, but it is repeatable, and improvisation is not.
 
 <script type="application/ld+json">
 {

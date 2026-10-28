@@ -7,10 +7,10 @@
 
 **The Manifera Solution:**
 ✅ **Structured Knowledge-Transfer Phase:** Understanding built and documented before the contract formally starts.
-✅ **Defined Incident-Response SLA:** Named escalation, accountable response times — in writing, before anything breaks.
+✅ **Defined Incident-Response SLA:** Named escalation, accountable response times - in writing, before anything breaks.
 ✅ **Documentation as a Deliverable:** Every maintenance cycle makes the system less fragile, not equally undocumented.
 
-Maintenance that reduces risk over time — not just hourly coverage. 🛡️
+Maintenance that reduces risk over time - not just hourly coverage. 🛡️
 
 👉 Read our full deep dive on outsourcing software maintenance gorinchem: https://www.manifera.com/blog/outsourcing-software-maintenance-gorinchem
 

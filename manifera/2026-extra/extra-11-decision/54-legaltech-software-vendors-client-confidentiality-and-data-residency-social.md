@@ -1,7 +1,7 @@
 "Your data stays secure in the cloud" isn't a data residency answer. A firm found that out mid-audit, when a client's compliance team asked exactly where EU documents physically lived. ⚖️
 
 **The Pain Points:**
-❌ **Vague security claims:** "Secure" gets conflated with "compliant with your residency obligations" — they're not the same claim, and vendors rarely volunteer the difference.
+❌ **Vague security claims:** "Secure" gets conflated with "compliant with your residency obligations" - they're not the same claim, and vendors rarely volunteer the difference.
 ❌ **Undisclosed AI subprocessors:** Generative AI features quietly route document content to third-party model providers outside the original DPA's scope.
 ❌ **Manual ethical walls:** Permission-based access control that depends on an admin remembering to update it, instead of enforced, audit-logged information barriers.
 

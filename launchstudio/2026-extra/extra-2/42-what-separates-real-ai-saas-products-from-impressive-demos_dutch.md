@@ -59,7 +59,7 @@ Manifera's audits voor planning en tijdafhandeling worden uitgevoerd door het en
 
 ## Tijdzone-Afhandeling Correct Inrichten Zonder een Boekingsfunctie te Overcompliceren
 
-Een deugdelijke oplossing stelt één consistente, expliciete tijdzonestandaard vast voor hoe tijden intern in de database worden opgeslagen — waarbij uitsluitend op het moment van weergave wordt geconverteerd naar de tijdzone die relevant is voor de specifieke bezoeker. Dit patroon moet consequent worden toegepast over elk onderdeel van het systeem dat met geplande tijdstippen werkt. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit ontwerppatroon als onderdeel van haar kwaliteitsbeoordeling voor plannings- en reserveringsplatforms, ondersteund door de 11+ jaar ervaring van Manifera in het bouwen van betrouwbare, multi-locatie planningssystemen.
+Een deugdelijke oplossing stelt één consistente, expliciete tijdzonestandaard vast voor hoe tijden intern in de database worden opgeslagen - waarbij uitsluitend op het moment van weergave wordt geconverteerd naar de tijdzone die relevant is voor de specifieke bezoeker. Dit patroon moet consequent worden toegepast over elk onderdeel van het systeem dat met geplande tijdstippen werkt. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit ontwerppatroon als onderdeel van haar kwaliteitsbeoordeling voor plannings- en reserveringsplatforms, ondersteund door de 11+ jaar ervaring van Manifera in het bouwen van betrouwbare, multi-locatie planningssystemen.
 
 Manifera's planning- en tijdzone-audits worden uitgevoerd door het engineeringteam in het ontwikkelcentrum aan de Pho Quang-straat in Ho Chi Minhstad, nauw gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
@@ -71,11 +71,11 @@ Een oprichter die zelf alvast inzicht wil krijgen voordat hij een volledige tech
 
 **Traceer elke plek waar een tijdwaarde wordt aangemaakt, opgeslagen en getoond:**
 
-1. **De opslaglaag** — bevestig dat elk tijdstempel in een enkel, expliciet en ondubbelzinnig referentieformaat wordt bewaard (UTC is de industriestandaard), in plaats van een impliciete 'lokale tijd van de server op het moment van invoer'.
-2. **Conversiepunten** — identificeer elke plek waar een opgeslagen tijdstip wordt omgezet voor weergave in de gebruikersinterface. Controleer of bij elke conversie expliciet wordt aangegeven naar welke tijdzone wordt vertaald, in plaats van te vertrouwen op een apparaat- of browserinstelling die per gebruiker verschilt.
-3. **Overeenstemming tussen systemen** — als meer dan één deelsysteem met hetzelfde afspraaktijdstip werkt (bijvoorbeeld een boekingsformulier voor klanten en een beheeragenda voor medewerkers), controleer dan of beide systemen exact dezelfde bronwaarde uitlezen en identieke conversielogica toepassen.
-4. **Zomertijdovergangen (DST)** — test specifiek afspraken die vallen op of nabij de overgangsdata van zomer- naar wintertijd en vice versa. Dit is het punt waar inconsistente afhandeling vrijwel gegarandeerd leidt tot zichtbare, reële dubbele boekingen in plaats van een theoretisch probleem te blijven.
-5. **Meerdaagse en terugkerende afspraken** — een wekelijkse terugkerende afspraak die een zomertijdovergang overspant, is een uitstekende stresstest: het 'zelfde' tijdslot van 14:00 uur moet immers consistent verschuiven over elke afzonderlijke week.
+1. **De opslaglaag** - bevestig dat elk tijdstempel in een enkel, expliciet en ondubbelzinnig referentieformaat wordt bewaard (UTC is de industriestandaard), in plaats van een impliciete 'lokale tijd van de server op het moment van invoer'.
+2. **Conversiepunten** - identificeer elke plek waar een opgeslagen tijdstip wordt omgezet voor weergave in de gebruikersinterface. Controleer of bij elke conversie expliciet wordt aangegeven naar welke tijdzone wordt vertaald, in plaats van te vertrouwen op een apparaat- of browserinstelling die per gebruiker verschilt.
+3. **Overeenstemming tussen systemen** - als meer dan één deelsysteem met hetzelfde afspraaktijdstip werkt (bijvoorbeeld een boekingsformulier voor klanten en een beheeragenda voor medewerkers), controleer dan of beide systemen exact dezelfde bronwaarde uitlezen en identieke conversielogica toepassen.
+4. **Zomertijdovergangen (DST)** - test specifiek afspraken die vallen op of nabij de overgangsdata van zomer- naar wintertijd en vice versa. Dit is het punt waar inconsistente afhandeling vrijwel gegarandeerd leidt tot zichtbare, reële dubbele boekingen in plaats van een theoretisch probleem te blijven.
+5. **Meerdaagse en terugkerende afspraken** - een wekelijkse terugkerende afspraak die een zomertijdovergang overspant, is een uitstekende stresstest: het 'zelfde' tijdslot van 14:00 uur moet immers consistent verschuiven over elke afzonderlijke week.
 
 **Waarom dit kader vangt wat ad-hoc testen mist:** ad-hoc testen controleert doorgaans alleen of een specifieke boeking er goed uitziet op het exacte moment van aanmaken. Dat zegt vrijwel niets over de vraag of het tijdstip correct blijft wanneer het later wordt ingezien door iemand anders, op een ander apparaat, mogelijk nadat er een zomertijdwisseling heeft plaatsgevonden. Het apart inspecteren van opslag, conversie en cross-systeem synchronisatie legt exact de conditiespecifieke fouten bloot die tot kostbare conflicten leiden.
 
@@ -90,9 +90,9 @@ Twee afzonderlijke groepen kwamen aan voor wat beiden geloofden dat hetzelfde to
 **Resultaat:** LaunchStudio stelde één consistente, expliciete tijdzonestandaard in over elk onderdeel van RondleidingApp dat geplande tijden afhandelt, waarbij alleen bij weergave werd geconverteerd. Dit sloot de mismatch en bevestigde correct gedrag specifiek over de zomertijdovergang die het oorspronkelijke conflict veroorzaakt had.
 
 > *"Alles wat ik zelf testte kwam elke keer perfect overeen, wat exact is waarom dit zo verwarrend was toen het gebeurde. Er was een zeer specifieke, zeer ongelukkige combinatie van factoren voor nodig waar noch ik, noch het museumpersoneel enige reden voor had om op te testen."*
-> — **Kees Alberts, Oprichter, RondleidingApp (Spijkenisse)**
+> - **Kees Alberts, Oprichter, RondleidingApp (Spijkenisse)**
 
-**Kosten en tijdlijn:** € 1.900 (audit voor tijdzone-afhandeling en herstel van consistentie) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (audit voor tijdzone-afhandeling en herstel van consistentie) - voltooid in 6 werkdagen.
 
 ---
 

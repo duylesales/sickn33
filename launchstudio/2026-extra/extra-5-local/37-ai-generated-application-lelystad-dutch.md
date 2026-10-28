@@ -22,7 +22,7 @@ Doelgroep: Niet-technische oprichter
 
 Lelystad, de provinciale hoofdstad van Flevoland en thuisbasis van een groeiende luchtvaart- en logistieke sector rondom Lelystad Airport, kent geen gebrek aan oprichters die in de afgelopen maanden iets oprecht indrukwekkends hebben gebouwd met een AI-codingtool. Wat bijna niemand van hen heeft is een checklist voor wat er nog hersteld moet worden voordat die met AI gegenereerde applicatie haar eerste echte, niet-vergevingsgezinde klant ontmoet. Hier is de lijst die wij daadwerkelijk gebruiken.
 
-Het patroon dat we herhaaldelijk zien is dat oprichters "de demo ging goed" verwarren met "dit is klaar." Dat zijn verschillende mijlpalen. Een demo slaagt wanneer de oprichter — die precies weet op welke knoppen hij moet klikken en welke invoer hij moet vermijden — door het succespad navigeert in een gecontroleerde setting. Een productielancering slaagt wanneer een vreemde, die het product nog nooit eerder heeft gezien en geen enkele reden heeft om er voorzichtig mee te zijn, per ongeluk elk randgeval raakt. Het gat tussen die twee normen is precies wat deze checklist is ontworpen om punt voor punt te dichten, voordat die vreemde ooit verschijnt.
+Het patroon dat we herhaaldelijk zien is dat oprichters "de demo ging goed" verwarren met "dit is klaar." Dat zijn verschillende mijlpalen. Een demo slaagt wanneer de oprichter - die precies weet op welke knoppen hij moet klikken en welke invoer hij moet vermijden - door het succespad navigeert in een gecontroleerde setting. Een productielancering slaagt wanneer een vreemde, die het product nog nooit eerder heeft gezien en geen enkele reden heeft om er voorzichtig mee te zijn, per ongeluk elk randgeval raakt. Het gat tussen die twee normen is precies wat deze checklist is ontworpen om punt voor punt te dichten, voordat die vreemde ooit verschijnt.
 
 ## De checklist vóór de lancering voor een met AI gegenereerde applicatie
 
@@ -40,9 +40,9 @@ Het patroon dat we herhaaldelijk zien is dat oprichters "de demo ging goed" verw
 
 ## Waarom deze checklist zwaarder weegt voor een groeiende stad zoals Lelystad
 
-Lelystad is aanzienlijk gegroeid als Flevoland's administratief en logistiek centrum, wat oprichters aantrekt die tools bouwen voor luchtvaartlogistiek, regionale handel en de bredere agrarische economie op poldergrond die een groot deel van de provincie definieert. Dit zijn vaak B2B-producten die andere bedrijven bedienen — logistiek coördinatoren, regionale leveranciers, luchtvaartdienstverleners — waar een enkele productiefout niet zomaar een consument irriteert, maar de operationele gang van zaken van een ander bedrijf verstoort en een zakelijke relatie kan beëindigen voordat deze begint.
+Lelystad is aanzienlijk gegroeid als Flevoland's administratief en logistiek centrum, wat oprichters aantrekt die tools bouwen voor luchtvaartlogistiek, regionale handel en de bredere agrarische economie op poldergrond die een groot deel van de provincie definieert. Dit zijn vaak B2B-producten die andere bedrijven bedienen - logistiek coördinatoren, regionale leveranciers, luchtvaartdienstverleners - waar een enkele productiefout niet zomaar een consument irriteert, maar de operationele gang van zaken van een ander bedrijf verstoort en een zakelijke relatie kan beëindigen voordat deze begint.
 
-Het gebied rondom Lelystad Airport en het Flevoland Business Park kent een kleine, hecht verbonden gemeenschap van logistieke en luchtvaart-gerelateerde bedrijven, van wie velen elkaar kennen via dezelfde regionale brancheverenigingen en leveranciersnetwerken. Een oprichter die een plannings- of coördinatietool pitcht in die gemeenschap verkoopt niet zomaar aan één bedrijf — een slechte eerste indruk bij één logistiek coördinator reist snel naar de twee of drie andere bedrijven waar ze regelmatig mee werken. Dat maakt de checklist vóór de lancering minder een abstracte best practice en meer een directe input voor de vraag of een Lelystadse oprichter een tweede gesprek krijgt met iemand anders in dat netwerk.
+Het gebied rondom Lelystad Airport en het Flevoland Business Park kent een kleine, hecht verbonden gemeenschap van logistieke en luchtvaart-gerelateerde bedrijven, van wie velen elkaar kennen via dezelfde regionale brancheverenigingen en leveranciersnetwerken. Een oprichter die een plannings- of coördinatietool pitcht in die gemeenschap verkoopt niet zomaar aan één bedrijf - een slechte eerste indruk bij één logistiek coördinator reist snel naar de twee of drie andere bedrijven waar ze regelmatig mee werken. Dat maakt de checklist vóór de lancering minder een abstracte best practice en meer een directe input voor de vraag of een Lelystadse oprichter een tweede gesprek krijgt met iemand anders in dat netwerk.
 
 LaunchStudio voert exact deze checklist uit tegen elke met AI gegenereerde applicatie die we beoordelen, zonder de frontend aan te raken die een oprichter al heeft gebouwd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan een decennium ervaring in productie-engineering, dat 160+ projecten heeft opgeleverd voor enterprise-klanten zoals Vodafone, TNO en MO Batteries. Ons kantoor in Amsterdam, aan de Herengracht 420, handelt de klantrelatie rechtstreeks af, terwijl Manifera's bredere engineering-capaciteit de daadwerkelijke herstelwerkzaamheden voor productie uitvoert. U kunt onze [procespagina](https://launchstudio.eu/nl/#process) verkennen voor een volledige uitleg van hoe een traject van beoordeling en herstel doorgaans verloopt, en Manifera's trackrecord bij enterprises bekijken in [hun portfolio](https://www.manifera.com/portfolio/).
 
@@ -50,37 +50,37 @@ LaunchStudio voert exact deze checklist uit tegen elke met AI gegenereerde appli
 
 Zes punten is veel om aan te pakken in de laatste fase vóór een lancering, vooral voor een oprichter die alles moet combineren wat komt kijken bij het uitbrengen van een product. Niet elk punt draagt voor elk product hetzelfde risico, dus het helpt om te triëren in plaats van de lijst te behandelen als een strikte volgorde van boven naar beneden.
 
-**Herstel in volgorde van impactbereik (blast radius), en niet in volgorde van gemak.** Een ontbrekend beleid voor databasetoegang kan de data van elke klant gelijktijdig blootstellen aan elke andere klant — dat is het grootst mogelijke impactbereik, en het zou bijna altijd eerst hersteld moeten worden ongeacht hoe technisch makkelijk of moeilijk de andere punten zijn. Een ontbrekende back-upstrategie maakt daarentegen pas uit als er al iets anders misgaat, wat het een tweede prioriteit maakt in plaats van irrelevant.
+**Herstel in volgorde van impactbereik (blast radius), en niet in volgorde van gemak.** Een ontbrekend beleid voor databasetoegang kan de data van elke klant gelijktijdig blootstellen aan elke andere klant - dat is het grootst mogelijke impactbereik, en het zou bijna altijd eerst hersteld moeten worden ongeacht hoe technisch makkelijk of moeilijk de andere punten zijn. Een ontbrekende back-upstrategie maakt daarentegen pas uit als er al iets anders misgaat, wat het een tweede prioriteit maakt in plaats van irrelevant.
 
 **Weeg betalingsproblemen af aan de vraag of er al daadwerkelijk geld van hand tot hand gaat.** Als u een pilot lanceert zonder live transacties, kan verificatie van betalingsstromen redelijkerwijs wachten tot korter bij uw eerste echte afschrijving. Als verladers of kopers vanaf dag één aanbetalingen doen, zoals in de casus van Vluchtplan hieronder, verschuift het direct naar de top naast databasetoegang.
 
-**Behandel B2B-logistiek en coördinatietools standaard als hogere belangen dan consumententools.** Een Lelystadse oprichter die bouwt voor de luchtvaart- of logistieke sector bedient doorgaans andere bedrijven wier eigen operaties afhangen van het correct werken van de tool. Een gelijktijdigheidsbug die een vrachtslot dubbel boekt irriteert niet zomaar één gebruiker — het verstoort een verzendschema voor een zakelijke klant, wat de kosten van het verkeerd aanpakken van de checklist verhoogt vergeleken met een typische consumenten-app.
+**Behandel B2B-logistiek en coördinatietools standaard als hogere belangen dan consumententools.** Een Lelystadse oprichter die bouwt voor de luchtvaart- of logistieke sector bedient doorgaans andere bedrijven wier eigen operaties afhangen van het correct werken van de tool. Een gelijktijdigheidsbug die een vrachtslot dubbel boekt irriteert niet zomaar één gebruiker - het verstoort een verzendschema voor een zakelijke klant, wat de kosten van het verkeerd aanpakken van de checklist verhoogt vergeleken met een typische consumenten-app.
 
 **Laat "nice to have" punten de lancering niet volledig blokkeren.** Randgevallen bij authenticatie zoals wachtwoord-resets doen er toe, maar een product met een verder solide checklist kan vaak lanceren met een handmatig, door de oprichter ondersteund wachtwoord-resetproces voor haar eerste handvol gebruikers terwijl de geautomatiseerde stroom parallel deugdelijk wordt opgebouwd.
 
-Het doel is niet het afronden van alle zes de punten voordat iemand uw product ziet — het is begrijpen welke onafgemaakte punten vandaag een echt risico vormen versus welke veilig volgende week afgerond kunnen worden.
+Het doel is niet het afronden van alle zes de punten voordat iemand uw product ziet - het is begrijpen welke onafgemaakte punten vandaag een echt risico vormen versus welke veilig volgende week afgerond kunnen worden.
 
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: Een logistieke tool klaarmaken voor de luchthaven
 
-Ilse Mulder, een logistiek coördinator werkzaam nabij Lelystad Airport, bouwde Vluchtplan — een planningstool die vrachtcapaciteit op regionale chartervluchten koppelde aan verladers die ruimte nodig hadden — met behulp van Cursor. Ze had het gehele koppelingsalgoritme en de interface gedurende enkele weken zelf gebouwd en had twee logistieke bedrijven klaar om proef te draaien.
+Ilse Mulder, een logistiek coördinator werkzaam nabij Lelystad Airport, bouwde Vluchtplan - een planningstool die vrachtcapaciteit op regionale chartervluchten koppelde aan verladers die ruimte nodig hadden - met behulp van Cursor. Ze had het gehele koppelingsalgoritme en de interface gedurende enkele weken zelf gebouwd en had twee logistieke bedrijven klaar om proef te draaien.
 
 Bij het doorlopen van LaunchStudio's checklist vóór de lancering ontdekten we dat drie van de zes punten faalden: de database had geen RLS-beleidsregels (elk verladersaccount kon de prijzen en vrachtdetails van elke andere verlader zien), de betalingsintegratie voor boekingsaanbetalingen stond nog steeds in Stripe testmodus met de live-sleutels verkeerd hardcoded, en er was geen foutafhandeling voor het scenario waarin twee verladers op hetzelfde moment hetzelfde vrachtslot probeerden te boeken. We herstelden alle drie: deugdelijke isolatie van data per bedrijf, een correct geconfigureerde live betalingsstroom met webhook-verificatie, en optimistic locking op het boekingssysteem om dubbele boekingen te voorkomen.
 
 **Resultaat:** Vluchtplan lanceerde haar pilot met beide logistieke bedrijven die in haar eerste week echte vrachtboekingen verwerkten, met nul incidenten rond datablootstelling of dubbele boekingen.
 
 > *"Ik dacht dat ik bijna klaar was. LaunchStudio's checklist liet me zien dat ik misschien voor zestig procent klaar was, en de ontbrekende veertig procent was exact het deel dat echte schade zou hebben veroorzaakt bij echte logistieke bedrijven."*
-> — **Ilse Mulder, Oprichter, Vluchtplan (Lelystad)**
+> - **Ilse Mulder, Oprichter, Vluchtplan (Lelystad)**
 
-**Kosten & Doorlooptijd:** € 1.400 (implementatie RLS-beleid, configuratie live betalingen, fix gelijktijdigheid boekingen) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 1.400 (implementatie RLS-beleid, configuratie live betalingen, fix gelijktijdigheid boekingen) - afgerond in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Hoe verschilt een beoordeling van een "met AI gegenereerde applicatie" van een algemene codebeoordeling?
-Het richt zich specifiek op de gaten die AI-codingtools consistent achterlaten — databasebeveiliging, betalingsverificatie, afhandeling van gelijktijdigheid en randgevallen bij authenticatie — in plaats van een algemene stijl- of kwaliteitsbeoordeling.
+Het richt zich specifiek op de gaten die AI-codingtools consistent achterlaten - databasebeveiliging, betalingsverificatie, afhandeling van gelijktijdigheid en randgevallen bij authenticatie - in plaats van een algemene stijl- of kwaliteitsbeoordeling.
 
 ### Kan ik deze checklist zelf doorlopen voordat ik contact opneem met LaunchStudio?
 U kunt sommige punten zelf controleren, zoals of uw API-sleutels in uw frontend-bundel verschijnen. Andere, zoals de correctheid van beleidsregels voor row-level security, vereisen doorgaans een beoordeling door een engineer om naar behoren te verifiëren.
@@ -89,7 +89,7 @@ U kunt sommige punten zelf controleren, zoals of uw API-sleutels in uw frontend-
 Ja, LaunchStudio werkt met oprichters in heel Nederland en de Benelux vanuit ons hoofdkantoor in Amsterdam, naast een groeiend aantal oprichters in heel Flevoland.
 
 ### Wie beoordeelt de applicatie tegen deze checklist?
-Manifera's engineeringteam — 120+ engineers met 160+ opgeleverde enterprise-projecten voor klanten als Vodafone en TNO — voert de daadwerkelijke beoordeling en herstelwerkzaamheden uit.
+Manifera's engineeringteam - 120+ engineers met 160+ opgeleverde enterprise-projecten voor klanten als Vodafone en TNO - voert de daadwerkelijke beoordeling en herstelwerkzaamheden uit.
 
 ### Hoe lang duurt een volledige beoordeling vóór de lancering?
 De meeste beoordelingen en bijbehorende herstelwerkzaamheden worden binnen één tot twee weken afgerond, afhankelijk van hoeveel punten op de checklist werk vereisen. Beschrijf uw project en we reageren binnen één werkdag.

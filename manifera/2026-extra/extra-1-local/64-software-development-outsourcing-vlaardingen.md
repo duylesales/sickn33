@@ -20,28 +20,28 @@ target_persona: "CMO"
 }
 </script>
 
-A CMO has a seasonal launch window that will not move for anyone, an in-house engineering team already at capacity on the core product, and a marketing platform that needs to exist in ten weeks — and "just hire someone" is not an answer that arrives before the window closes.
+A CMO has a seasonal launch window that will not move for anyone, an in-house engineering team already at capacity on the core product, and a marketing platform that needs to exist in ten weeks - and "just hire someone" is not an answer that arrives before the window closes.
 
-**The Pain:** A CMO at a Vlaardingen-based food brand — a town with deep roots in the Dutch fishing and food-processing industry — needs a customer loyalty and ordering platform live before a seasonal campaign, and the internal engineering team, already stretched on core product work, cannot take on the build without delaying something else that matters just as much.
+**The Pain:** A CMO at a Vlaardingen-based food brand - a town with deep roots in the Dutch fishing and food-processing industry - needs a customer loyalty and ordering platform live before a seasonal campaign, and the internal engineering team, already stretched on core product work, cannot take on the build without delaying something else that matters just as much.
 
-**The Agitation:** A CMO who waits for internal capacity to free up misses the seasonal window entirely, and a missed seasonal launch in a category this competitive doesn't get a retry until next year — a full cycle of lost customer acquisition and revenue that a ten-week delay in headcount planning quietly causes.
+**The Agitation:** A CMO who waits for internal capacity to free up misses the seasonal window entirely, and a missed seasonal launch in a category this competitive doesn't get a retry until next year - a full cycle of lost customer acquisition and revenue that a ten-week delay in headcount planning quietly causes.
 
 ## Compressing the Timeline Without Compromising the Launch
 
-Software development outsourcing solves a capacity problem, but a CMO evaluating it for a hard-deadline launch needs more than capacity — the engagement has to move at marketing-calendar speed without sacrificing the reliability a customer-facing platform needs on day one.
+Software development outsourcing solves a capacity problem, but a CMO evaluating it for a hard-deadline launch needs more than capacity - the engagement has to move at marketing-calendar speed without sacrificing the reliability a customer-facing platform needs on day one.
 
 The first requirement is a pod that can start producing working code within two to three weeks of signing, not the months a full in-house hire would take. A CMO with a fixed launch date can't absorb a vendor's own extended ramp-up on top of the build timeline itself.
 
 The second is direct visibility into progress that doesn't route entirely through a marketing-to-engineering translation layer that slows decisions down. A CMO needs a governance contact who can answer "will this be ready" honestly and immediately, not a status update that arrives a week late.
 
-The third is production readiness baked in from the start — load testing for a seasonal traffic spike, not just functional correctness in a demo environment. A platform that works in a walkthrough and buckles on launch day is worse than no platform at all, because it damages the campaign it was built to support.
+The third is production readiness baked in from the start - load testing for a seasonal traffic spike, not just functional correctness in a demo environment. A platform that works in a walkthrough and buckles on launch day is worse than no platform at all, because it damages the campaign it was built to support.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads give a CMO a direct, responsive governance contact and own production-readiness standards, including load testing for launch-day traffic.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod is producing working, tested code within two to three weeks of signing, built against the campaign's actual deadline.
 
-This is Dutch Management × Vietnamese Mastery — speed a marketing calendar can rely on, without sacrificing the reliability a launch day demands. See the delivery model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - speed a marketing calendar can rely on, without sacrificing the reliability a launch day demands. See the delivery model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Kystfangst Seafood A/S, a seafood brand based in Aarhus, Denmark, needed a custo
 Manifera stood up a four-person pod within two weeks, with an Amsterdam-based contact giving the CMO direct, twice-weekly progress visibility and load-testing the platform against projected campaign traffic before launch. The platform went live on schedule and held through the full promotional period without a single stability incident.
 
 > *"We didn't have time for a normal vendor onboarding. We got working software in two weeks and someone who actually answered 'will this be ready' honestly every time we asked."*
-> — **CMO, Kystfangst Seafood A/S, Denmark**
+> - **CMO, Kystfangst Seafood A/S, Denmark**
 
 ## Internal-Capacity-Only Plan vs. Manifera's Outsourced Sprint
 
@@ -66,7 +66,7 @@ Manifera stood up a four-person pod within two weeks, with an Amsterdam-based co
 
 ## The Economics
 
-A missed seasonal launch window in a competitive food-brand category doesn't just cost the build budget — it costs an entire cycle of customer acquisition that doesn't come back until next year, a loss that dwarfs the cost of a compressed-timeline outsourced sprint many times over. [Talk to Manifera about a fixed-deadline launch build](https://www.manifera.com/contact-us/).
+A missed seasonal launch window in a competitive food-brand category doesn't just cost the build budget - it costs an entire cycle of customer acquisition that doesn't come back until next year, a loss that dwarfs the cost of a compressed-timeline outsourced sprint many times over. [Talk to Manifera about a fixed-deadline launch build](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 De eerste maand in Cursor is voor de meeste solo-oprichters de meest productieve softwareontwikkelervaring die ze ooit hebben gehad. Maand vier is het moment waarop je een bestand opent, drie fundamenteel verschillende manieren aantreft om data uit dezelfde databasetabel op te halen, en je met geen mogelijkheid meer herinnert welke van de drie je als standaard had bedoeld.
 
-Er is niets 'fout' gegaan. De tool deed telkens precies waar je om vroeg, en nam bij elke prompt een lokaal plausibele beslissing zonder te weten wat je een week eerder had vastgesteld. Consistentie is geen eigenschap die een taalmodel zomaar kan afleiden uit een codebase die het slechts in fragmenten ziet — het is iets wat je expliciet moet dicteren. Dat expliciet vastleggen kost weinig tijd en betaalt zich uit bij elke volgende prompt.
+Er is niets 'fout' gegaan. De tool deed telkens precies waar je om vroeg, en nam bij elke prompt een lokaal plausibele beslissing zonder te weten wat je een week eerder had vastgesteld. Consistentie is geen eigenschap die een taalmodel zomaar kan afleiden uit een codebase die het slechts in fragmenten ziet - het is iets wat je expliciet moet dicteren. Dat expliciet vastleggen kost weinig tijd en betaalt zich uit bij elke volgende prompt.
 
 ## Waarom AI-Gegenereerde Code Uiteenloopt
 
@@ -34,7 +34,7 @@ Drie mechanismen liggen hieraan ten grondslag, alle drie structureel van aard:
 
 **Aannemelijke alternatieven zijn even eenvoudig beschikbaar.** Er zijn minstens vijf acceptabele manieren om een data-fetch te structureren. Zonder sturing kiest het model willekeurig een optie, waardoor de spreiding over je project vrijwel toevallig tot stand komt.
 
-Het resultaat is een applicatie waarvan elk los bestand op zichzelf logisch oogt, maar die als geheel volstrekt onsamenhangend is — precies de faalmodus die software na zes maanden onveranderbaar maakt en onoverdraagbaar voor een nieuwe ontwikkelaar.
+Het resultaat is een applicatie waarvan elk los bestand op zichzelf logisch oogt, maar die als geheel volstrekt onsamenhangend is - precies de faalmodus die software na zes maanden onveranderbaar maakt en onoverdraagbaar voor een nieuwe ontwikkelaar.
 
 ## Rules-bestanden: Vastleggen Hoe Dit Project Functioneert
 
@@ -70,7 +70,7 @@ Regels beschrijven het beleid; context levert de specifieke voorbeelden.
 
 ## Documentatie Die Tegelijk Dient als Prompt-materiaal
 
-Hier ligt een enorme efficiëntiewinst. De documentatie die jouw codebase begrijpelijk maakt voor een mens — een korte architectuurnotitie, een beknopt overzicht van het datamodel, een lijstje met conventies — is exact hetzelfde materiaal dat zorgt voor consistente output van het AI-model.
+Hier ligt een enorme efficiëntiewinst. De documentatie die jouw codebase begrijpelijk maakt voor een mens - een korte architectuurnotitie, een beknopt overzicht van het datamodel, een lijstje met conventies - is exact hetzelfde materiaal dat zorgt voor consistente output van het AI-model.
 
 Eén keer geschreven bedient het drie doelgroepen tegelijk: jou over vier maanden, de freelance engineer die je later inhuurt, en het AI-model bij iedere afzonderlijke prompt. Dat is een uitzonderlijk hoog rendement voor één pagina tekst, en het overtuigt zelfs oprichters die documentatie normaliter als tijdverspilling zien.
 
@@ -96,7 +96,7 @@ Dit weegt in een AI-gedreven workflow zwaarder dan traditioneel, juist omdat het
 
 Al het voorgaande verandert dan van een goed advies in een absolute noodzaak.
 
-Twee ontwikkelaars die onafhankelijk van elkaar prompts uitvoeren veroorzaken inconsistenties in dubbel tempo, omdat beiden patronen introduceren die de ander niet kent. De werkwijze die standhoudt: een gedeeld rules-bestand dat beiden hanteren, duidelijke afspraken over eigenaarschap van modules, en wederzijdse code review van elkaars AI-output — het beoordelen van gegenereerde code van een collega voelt ongewoon, maar is net zo essentieel als bij handgeschreven code.
+Twee ontwikkelaars die onafhankelijk van elkaar prompts uitvoeren veroorzaken inconsistenties in dubbel tempo, omdat beiden patronen introduceren die de ander niet kent. De werkwijze die standhoudt: een gedeeld rules-bestand dat beiden hanteren, duidelijke afspraken over eigenaarschap van modules, en wederzijdse code review van elkaars AI-output - het beoordelen van gegenereerde code van een collega voelt ongewoon, maar is net zo essentieel als bij handgeschreven code.
 
 Teams die dit overslaan lopen niet na vier maanden, maar al na zes weken tegen een onbeheersbare codebase aan.
 
@@ -114,13 +114,13 @@ Twee van deze signalen betekenen dat technisch onderhoud over tijd is. Het is ve
 
 Lees het regelsbestand door en pas het aan naar hoe je tegenwoordig daadwerkelijk werkt. Voeg gedupliceerde functies samen. Werk de architectuurnotitie bij als er modules zijn verschoven. Controleer of de migraties in de repository overeenkomen met de productiedatabase. Verwijder dode code die nergens meer wordt aangeroepen.
 
-Eén uur per maand houdt een gegenereerde codebase in een staat waarin zowel jij als het model logisch kunnen redeneren over de werking — en daar draait alles om. Zodra dat overzicht verdwijnt, stort je ontwikkelsnelheid in en wordt de tool die je snel maakte de reden dat je stilstaat.
+Eén uur per maand houdt een gegenereerde codebase in een staat waarin zowel jij als het model logisch kunnen redeneren over de werking - en daar draait alles om. Zodra dat overzicht verdwijnt, stort je ontwikkelsnelheid in en wordt de tool die je snel maakte de reden dat je stilstaat.
 
 ## Wanneer de Consistentie Al Verloren Is
 
 Ben je dat station al gepasseerd, dan is een complete herbouw niet de oplossing. Het antwoord is een consolidatieslag: breng de botsende patronen in kaart, kies per vraagstuk één standaard, migreer de afwijkende code naar die standaard, stel het rules-bestand op om herhaling te voorkomen, en voeg geautomatiseerde tests toe rondom kritieke onderdelen zodat de opschoning veilig verloopt.
 
-Dat is een vast onderdeel van wat LaunchStudio doet wanneer we een AI-gebouwd product productieklaar maken — naast toegangsbeheer, betalingsverkeer en infrastructuur — simpelweg omdat een ondoorzichtige codebase een omgeving is waarin security-fixes onbetrouwbaar worden. Het eindresultaat blijft netjes, gedocumenteerd en AI-leesbaar, zodat je na afloop vlot kunt blijven prompten zonder je vertrouwde werkwijze te verliezen.
+Dat is een vast onderdeel van wat LaunchStudio doet wanneer we een AI-gebouwd product productieklaar maken - naast toegangsbeheer, betalingsverkeer en infrastructuur - simpelweg omdat een ondoorzichtige codebase een omgeving is waarin security-fixes onbetrouwbaar worden. Het eindresultaat blijft netjes, gedocumenteerd en AI-leesbaar, zodat je na afloop vlot kunt blijven prompten zonder je vertrouwde werkwijze te verliezen.
 
 De engineers zijn van Manifera, met elf jaar ervaring met productiesystemen voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) voor een eerlijk oordeel over de vraag of consolidatie nodig is (meestal binnen één werkdag), of bekijk de [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -153,9 +153,9 @@ Zes werkdagen werk: één centrale data-toegangslaag waar de andere twee naar ge
 **Resultaat:** de eerste nieuwe feature van de nieuwe ontwikkelaar stond binnen drie dagen live in plaats van de twee weken die de eerdere poging had gekost. Pepijn gaf aan dat prompts sindsdien direct code produceren die aansluit op de bestaande architectuur, zonder dat hij bij elke opdracht opnieuw hoeft uit te leggen hoe het project in elkaar zit.
 
 > *"Ik was al maanden aan het vechten met mijn eigen codebase en gaf de tool de schuld. Maar de tool had geen flauw idee van wat ik eerder had besloten, omdat ik het nergens had opgeschreven."*
-> — **Pepijn Aalbers, Oprichter, Offertetool (Alkmaar)**
+> - **Pepijn Aalbers, Oprichter, Offertetool (Alkmaar)**
 
-**Kosten & Doorlooptijd:** € 2.600 (consolidatieslag, schemamigraties, regelsbestand, architectuurnotitie en testsuite) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.600 (consolidatieslag, schemamigraties, regelsbestand, architectuurnotitie en testsuite) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -177,7 +177,7 @@ Door een gedeeld regelsbestand dat beiden naleven, duidelijke taakverdeling per 
 
 ### Mijn codebase is al inconsistent geworden. Moet ik alles opnieuw bouwen?
 
-Nee. Een gerichte consolidatieslag — kies per onderdeel één patroon, migreer de afwijkingen, leg het schema vast in migraties, stel een regelsbestand op en voeg tests toe rond kritieke logica — is veel goedkoper dan opnieuw beginnen en behoudt al het werk dat je al hebt gedaan.
+Nee. Een gerichte consolidatieslag - kies per onderdeel één patroon, migreer de afwijkingen, leg het schema vast in migraties, stel een regelsbestand op en voeg tests toe rond kritieke logica - is veel goedkoper dan opnieuw beginnen en behoudt al het werk dat je al hebt gedaan.
 
 <script type="application/ld+json">
 {
@@ -189,7 +189,7 @@ Nee. Een gerichte consolidatieslag — kies per onderdeel één patroon, migreer
       "name": "Wat hoort er precies in een Cursor rules-bestand te staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De beslissingen die niet mogen variëren: datatoegang, beveiligingsregels, server-validatie, foutafhandeling, mappenstructuur en verboden patronen — 10 tot 15 actuele regels."
+        "text": "De beslissingen die niet mogen variëren: datatoegang, beveiligingsregels, server-validatie, foutafhandeling, mappenstructuur en verboden patronen - 10 tot 15 actuele regels."
       }
     },
     {

@@ -24,13 +24,13 @@ De nieuwe website is op elk zichtbaar vlak superieur aan de oude. Het design oog
 
 De donderdag erop is het aantal inkomende offerte-aanvragen gehalveerd. Drie weken later is het patroon onmiskenbaar: de kennispagina's die jarenlang een gestage stroom bezoekers opleverden brengen letterlijk niemand meer binnen, en op de zoektermen waar u jarenlang met trots op positie 1 stond, prijken nu concurrenten die u al die tijd moeiteloos voorbleef.
 
-Dit is de meest vermijdbare ramp in online marketing, en het gebeurt aan de lopende band — met name wanneer een bestaande website halsoverkop wordt herbouwd met AI-applicatiebouwers zoals Lovable of Bolt. Een AI-rebuild repliceert namelijk uitsluitend hoe een website er visueel *uitziet*, niet wat de website over een periode van jaren *was* voor de crawlers van Google.
+Dit is de meest vermijdbare ramp in online marketing, en het gebeurt aan de lopende band - met name wanneer een bestaande website halsoverkop wordt herbouwd met AI-applicatiebouwers zoals Lovable of Bolt. Een AI-rebuild repliceert namelijk uitsluitend hoe een website er visueel *uitziet*, niet wat de website over een periode van jaren *was* voor de crawlers van Google.
 
 ## Wat Google Dacht Dat Uw Oude Website Was
 
 Om het verlies te begrijpen, moet u begrijpen wat er aan historische waarde aanwezig was.
 
-Een website die jarenlang organisch heeft gescoord, bezit vier onzichtbare pijlers: **Webadressen (URL's)** die bekend, geïndexeerd en gelinkt zijn vanaf andere websites. **Domein- en pagina-autoriteit (backlinks)** die expliciet gekoppeld is aan die specifieke URL's. **Inhoudelijke teksten** die nauwkeurig matchten met het zoekgedrag van echte mensen. En **technische signalen** — schema markup, XML-sitemaps, een doordachte interne linkstructuur en unieke paginatitels — die zoekmachines exact vertelden waar elke pagina over ging.
+Een website die jarenlang organisch heeft gescoord, bezit vier onzichtbare pijlers: **Webadressen (URL's)** die bekend, geïndexeerd en gelinkt zijn vanaf andere websites. **Domein- en pagina-autoriteit (backlinks)** die expliciet gekoppeld is aan die specifieke URL's. **Inhoudelijke teksten** die nauwkeurig matchten met het zoekgedrag van echte mensen. En **technische signalen** - schema markup, XML-sitemaps, een doordachte interne linkstructuur en unieke paginatitels - die zoekmachines exact vertelden waar elke pagina over ging.
 
 Een snelle herbouw die het uiterlijk vernieuwt maar de URL-structuur overhoop gooit, gooit de eerste twee pijlers integraal in de prullenbak. En dat zijn precies de twee pijlers die jaren hebben gekost om op te bouwen en die u niet zomaar terugkrijgt door even snel een nieuw blogartikel te publiceren.
 
@@ -44,7 +44,7 @@ Een snelle herbouw die het uiterlijk vernieuwt maar de URL-structuur overhoop go
 
 **Paginatitels en meta-descriptions uniform gemaakt.** Elke pagina deelt nu dezelfde generieke titel (zoals *"Mijn Bedrijf | Welkom"*), waardoor afzonderlijke pagina's in de ogen van Google hun unieke relevantie verliezen.
 
-**Indexatie per ongeluk geblokkeerd.** Een testconfiguratie die per ongeluk is meegenomen naar productie — een `robots.txt`-bestand met `Disallow: /` of een meta-tag met `noindex`. Zeldzamer, catastrofaal, maar gelukkig binnen vijf minuten te herstellen.
+**Indexatie per ongeluk geblokkeerd.** Een testconfiguratie die per ongeluk is meegenomen naar productie - een `robots.txt`-bestand met `Disallow: /` of een meta-tag met `noindex`. Zeldzamer, catastrofaal, maar gelukkig binnen vijf minuten te herstellen.
 
 ## De Diagnose Stellen in Één Middag
 
@@ -76,7 +76,7 @@ Werk in deze vaste volgorde; elke stap verklaart de verkeersval of sluit een mog
 
 **6. Corrigeer interne links** in de navigatie en lopende teksten zodat ze direct naar de definitieve URL's wijzen en niet via redirects lopen.
 
-Wacht vervolgens geduldig af. Het herstel van zoekposities vindt niet van de ene op de andere dag plaats — Google moet de redirects ontdekken en opnieuw verwerken — maar bij een correct ingerichte redirect-structuur keert het merendeel van het organische zoekverkeer doorgaans binnen vier tot acht weken terug. Weersta de verleiding om in de tussentijd om de haverklap instellingen aan te passen, want dan is niet meer te herleiden welke maatregel resultaat heeft gehad.
+Wacht vervolgens geduldig af. Het herstel van zoekposities vindt niet van de ene op de andere dag plaats - Google moet de redirects ontdekken en opnieuw verwerken - maar bij een correct ingerichte redirect-structuur keert het merendeel van het organische zoekverkeer doorgaans binnen vier tot acht weken terug. Weersta de verleiding om in de tussentijd om de haverklap instellingen aan te passen, want dan is niet meer te herleiden welke maatregel resultaat heeft gehad.
 
 ## Wat U Niet Meer Volledig Terugkrijgt
 
@@ -84,13 +84,13 @@ Eerlijkheid is hier op zijn plaats, want het voorkomt dat u bij een volgende mig
 
 301-redirects dragen het overgrote deel van opgebouwde linkwaarde over, maar zelden 100%. Inhoud die definitief is gewist en niet meer wordt hersteld, neemt zijn posities onherroepelijk mee het graf in. En de inkomsten uit verloren zoekverkeer gedurende de maanden dat u onvindbaar was, zijn definitief verdampt.
 
-Een zorgvuldig voorbereide siterebuild verliest nagenoeg geen enkel zoekverkeer. Een slordige rebuild die pas na drie maanden wordt gerepareerd, herstelt doorgaans het leeuwendeel maar zelden de volle 100% — en daarom is het hanteren van een strakke migratie-checklist vóórdat u live gaat de allerbeste investering.
+Een zorgvuldig voorbereide siterebuild verliest nagenoeg geen enkel zoekverkeer. Een slordige rebuild die pas na drie maanden wordt gerepareerd, herstelt doorgaans het leeuwendeel maar zelden de volle 100% - en daarom is het hanteren van een strakke migratie-checklist vóórdat u live gaat de allerbeste investering.
 
 ## Als de Rebuild Ook het Domein of de Taal Wijzigt
 
 Twee factoren die het risico aanzienlijk verhogen. De gouden stelregel voor beide luidt: wijzig nooit alles tegelijkertijd.
 
-**Een nieuw domeinnaam.** Verhuizen naar een nieuw webadres — bij een rebranding of de overstap van `.com` naar `.nl` — is prima mogelijk, mits u uiterst gedisciplineerd te werk gaat. Redirect elke oude URL permanent naar de exacte tegenhanger op het nieuwe domein. Houd de registratie van het oude domein en de actieve 301-redirects jarenlang in stand, want links op externe blogs en bladwijzers van gebruikers updaten niet vanzelf. Meld de domeinverhuizing formeel aan in Google Search Console via de functie *"Adreswijziging"*. En houd rekening met een tijdelijke lichte dip van enkele weken, zelfs wanneer alles perfect is ingericht.
+**Een nieuw domeinnaam.** Verhuizen naar een nieuw webadres - bij een rebranding of de overstap van `.com` naar `.nl` - is prima mogelijk, mits u uiterst gedisciplineerd te werk gaat. Redirect elke oude URL permanent naar de exacte tegenhanger op het nieuwe domein. Houd de registratie van het oude domein en de actieve 301-redirects jarenlang in stand, want links op externe blogs en bladwijzers van gebruikers updaten niet vanzelf. Meld de domeinverhuizing formeel aan in Google Search Console via de functie *"Adreswijziging"*. En houd rekening met een tijdelijke lichte dip van enkele weken, zelfs wanneer alles perfect is ingericht.
 
 De fout die organisaties structureel de das omdoet, is het combineren van een nieuw domein met een compleet nieuwe URL-structuur én een redesign. Als het verkeer dan instort, kan niemand diagnosticeren welke factor de oorzaak is. Verhuis daarom eerst het domein met identieke URL-paden, wacht tot het verkeer volledig stabiel is, en voer pas daarna het redesign door.
 
@@ -100,7 +100,7 @@ Een klassieke valkuil hierbij is het automatisch doorsturen van bezoekers op bas
 
 ## Een Rebuild Uitvoeren Zonder Positieverlies
 
-Vóórdat u de nieuwe site lanceert: exporteer de volledige lijst van actuele URL's inclusief historische verkeerscijfers en externe backlinks. Bepaal voor elke afzonderlijke URL waar deze naartoe moet leiden. Bouw de redirect-tabel vooraf in een configuratiebestand en test deze programmatisch tegen de volledige lijst. Bevestig dat alle openbare pagina's volledige inhoud serveren in de initiële HTML-code. Behoud bestaande paginatitels, meta-beschrijvingen en structured data waar deze goed presteerden. Behoud pagina's die verkeer opleveren, zelfs als ze visueel niet perfect in het nieuwe template passen — een pagina die maandelijks honderden potentiële klanten aantrekt is geen overbodige ballast. Lanceer, controleer de vijftig belangrijkste URL's binnen het eerste uur, en monitor Google Search Console dagelijks gedurende twee weken.
+Vóórdat u de nieuwe site lanceert: exporteer de volledige lijst van actuele URL's inclusief historische verkeerscijfers en externe backlinks. Bepaal voor elke afzonderlijke URL waar deze naartoe moet leiden. Bouw de redirect-tabel vooraf in een configuratiebestand en test deze programmatisch tegen de volledige lijst. Bevestig dat alle openbare pagina's volledige inhoud serveren in de initiële HTML-code. Behoud bestaande paginatitels, meta-beschrijvingen en structured data waar deze goed presteerden. Behoud pagina's die verkeer opleveren, zelfs als ze visueel niet perfect in het nieuwe template passen - een pagina die maandelijks honderden potentiële klanten aantrekt is geen overbodige ballast. Lanceer, controleer de vijftig belangrijkste URL's binnen het eerste uur, en monitor Google Search Console dagelijks gedurende twee weken.
 
 Eén middag grondige voorbereiding voorkomt een kwartaal vol kelderende omzetten.
 
@@ -110,13 +110,13 @@ Of u een grootschalige websitemigratie aan het plannen bent of momenteel te make
 
 Onze engineers zijn afkomstig van Manifera: elf jaar ervaring in enterprise webontwikkeling en technische migraties vanuit Amsterdam (Herengracht 420), voor veeleisende opdrachtgevers als Vodafone, TNO en CFLW.
 
-[Stuur ons uw oude en nieuwe URL-lijsten](https://launchstudio.eu/nl/#contact) voor een snelle analyse van uw migratierisico's — doorgaans binnen één werkdag — of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
+[Stuur ons uw oude en nieuwe URL-lijsten](https://launchstudio.eu/nl/#contact) voor een snelle analyse van uw migratierisico's - doorgaans binnen één werkdag - of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
 
 ## Echt voorbeeld
 
 ### Eenenzestig Pagina's Werd Teruggebracht Tot Negen
 
-Annelies ter Horst runt Klusofferte in Ede: een vergelijkingsplatform dat huiseigenaren koppelt aan aannemers voor verbouwingen, met inkomsten uit gekwalificeerde leads. De website draaide al zes jaar en trok maandelijks circa 4.800 organische bezoekers uit Google, vrijwel uitsluitend op specifieke adviespagina's — wat een dakkapel kost in 2026, wanneer een vergunning vereist is voor een uitbouw, en hoe je de inschrijving van een aannemer controleert.
+Annelies ter Horst runt Klusofferte in Ede: een vergelijkingsplatform dat huiseigenaren koppelt aan aannemers voor verbouwingen, met inkomsten uit gekwalificeerde leads. De website draaide al zes jaar en trok maandelijks circa 4.800 organische bezoekers uit Google, vrijwel uitsluitend op specifieke adviespagina's - wat een dakkapel kost in 2026, wanneer een vergunning vereist is voor een uitbouw, en hoe je de inschrijving van een aannemer controleert.
 
 Ze herbouwde het platform in twee weken tijd met Lovable. De nieuwe webapp was aanzienlijk sneller, zag er fantastisch uit en het interactieve offerteformulier converteerde merkbaar beter.
 
@@ -129,9 +129,9 @@ Twaalf werkdagen aan intensief herstelwerk: de historische URL-lijst werd gereco
 **Resultaat:** Tegen het einde van de tweede maand herstelde het zoekverkeer naar circa 3.900 bezoekers per maand, en in de vierde maand werd het oude niveau zelfs overtroffen dankzij het beter converterende formulier van de nieuwe applicatie. Twee van de 35 herstelde pagina's wisten hun oude topposities helaas niet meer volledig te hernemen.
 
 > *"De nieuwe site was op elk vlak beter, behalve op het enige vlak dat de rekeningen betaalde. Ik had zes jaar aan opgebouwde pagina's weggegooid zonder ooit een lijstje te hebben gezien van wat we hadden."*
-> — **Annelies ter Horst, Oprichter, Klusofferte (Ede)**
+> - **Annelies ter Horst, Oprichter, Klusofferte (Ede)**
 
-**Kosten & Doorlooptijd:** €5.400 (URL-reconstructie, 301-redirectmapping, herstel van 35 adviespagina's, server-rendered HTML, metadata en structured data, sitemap en herindexatie) — afgerond in 12 werkdagen.
+**Kosten & Doorlooptijd:** €5.400 (URL-reconstructie, 301-redirectmapping, herstel van 35 adviespagina's, server-rendered HTML, metadata en structured data, sitemap en herindexatie) - afgerond in 12 werkdagen.
 
 ## Veelgestelde vragen
 

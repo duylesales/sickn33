@@ -28,7 +28,7 @@ Dit is de typische toegankelijkheidsfout van gegenereerde code, en de reden dat 
 
 ## Voor Wie Dit Geldt
 
-De European Accessibility Act brengt toegankelijkheidseisen naar een reeks producten en diensten die aan consumenten in de EU worden verkocht — waaronder e-commerce, bankdiensten, vervoer en telecommunicatie — met de verplichting vanaf medio 2025. Nederland implementeert dit via nationale wetgeving, en overheidsinstanties vallen al veel langer onder hun eigen eisen.
+De European Accessibility Act brengt toegankelijkheidseisen naar een reeks producten en diensten die aan consumenten in de EU worden verkocht - waaronder e-commerce, bankdiensten, vervoer en telecommunicatie - met de verplichting vanaf medio 2025. Nederland implementeert dit via nationale wetgeving, en overheidsinstanties vallen al veel langer onder hun eigen eisen.
 
 De praktische positie voor een klein product: verkoopt u aan consumenten, aan overheidsinstanties, of aan grote bedrijven met eigen inkoopnormen, dan is dit een wettelijke of een commerciële eis. Micro-ondernemingen hebben enkele vrijstellingen voor diensten, maar de vrijstelling is smaller dan oprichters hopen en geldt niet voor de eigen verplichtingen van een klant.
 
@@ -64,7 +64,7 @@ De meeste bevindingen in een gegenereerde interface komen uit een korte lijst, e
 
 **Gebruik echte elementen.** Een knop is een `button`, een link is een `a` met een href, een selectievakje is een `input`. Elk native element brengt toetsenbordgedrag, focusafhandeling en betekenis voor schermlezers mee, zonder code.
 
-**Label elk invoerveld.** Een zichtbaar label dat aan zijn veld is gekoppeld. Placeholdertekst is geen label — ze verdwijnt zodra er wordt getypt en wordt vaak niet voorgelezen.
+**Label elk invoerveld.** Een zichtbaar label dat aan zijn veld is gekoppeld. Placeholdertekst is geen label - ze verdwijnt zodra er wordt getypt en wordt vaak niet voorgelezen.
 
 **Herstel het contrast.** Grijze tekst op wit op 4,5:1 voor lopende tekst. Gegenereerde ontwerpen kiezen stelselmatig lichte grijstinten die er elegant uitzien en falen.
 
@@ -80,7 +80,7 @@ De meeste bevindingen in een gegenereerde interface komen uit een korte lijst, e
 
 Drie patronen om specifiek in uw codebase naar te zoeken.
 
-Eigen componenten gebouwd uit divs — dropdowns, tabbladen, accordeons, modals — die er goed uitzien en niets implementeren van het toetsenbordgedrag dat hun native of goed gebouwde tegenhangers bieden. Een toegankelijke componentenbibliotheek gebruiken is bijna altijd beter dan deze opnieuw bouwen.
+Eigen componenten gebouwd uit divs - dropdowns, tabbladen, accordeons, modals - die er goed uitzien en niets implementeren van het toetsenbordgedrag dat hun native of goed gebouwde tegenhangers bieden. Een toegankelijke componentenbibliotheek gebruiken is bijna altijd beter dan deze opnieuw bouwen.
 
 Verwijderde focusstijlen, meestal één regel in een stylesheet die ze overal uitschakelt.
 
@@ -88,7 +88,7 @@ En verkeerd toegepaste ARIA-attributen. Gegenereerde code strooit rollen en labe
 
 ## Schrijf de Verklaring
 
-Een toegankelijkheidsverklaring — welke norm u nastreeft, wat nog niet voldoet, hoe iemand een probleem kan melden, en wanneer ze voor het laatst werd beoordeeld — is voor sommige organisaties verplicht en voor iedereen nuttig.
+Een toegankelijkheidsverklaring - welke norm u nastreeft, wat nog niet voldoet, hoe iemand een probleem kan melden, en wanneer ze voor het laatst werd beoordeeld - is voor sommige organisaties verplicht en voor iedereen nuttig.
 
 Eerlijk zijn erin is beter dan volledige conformiteit claimen. Een verklaring die zegt dat u AA haalt met drie bekende uitzonderingen, elk met een omweg en een datum, leest als een bedrijf dat echt heeft gekeken. Een algemene claim leest als een bedrijf dat dat niet heeft gedaan, en is makkelijk te weerleggen.
 
@@ -116,13 +116,13 @@ Drie maatregelen houden de lijn vast zonder van elke wijziging een audit te make
 
 **Een toetsenbordronde in uw releaseroutine.** Eén regel op de checklist: tab door wat u veranderde. Dertig seconden, en het vangt wat automatisering niet kan.
 
-Schrijf de afspraken ook in het instructiebestand van uw project — native elementen boven divs, labels op elk invoerveld, focus nooit verwijderd. Codeerassistenten lezen het, en het verschil in wat ze genereren is direct en meetbaar.
+Schrijf de afspraken ook in het instructiebestand van uw project - native elementen boven divs, labels op elk invoerveld, focus nooit verwijderd. Codeerassistenten lezen het, en het verschil in wat ze genereren is direct en meetbaar.
 
 ## Dit Inrichten
 
 Voor een bestaand product kost dit doorgaans twee tot vier dagen: een ronde alleen met het toetsenbord over elk proces met de bevindingen op een lijst, een geautomatiseerde scan van de belangrijkste pagina's, een schermlezerronde over de belangrijkste route, eigen componenten op basis van divs vervangen door native elementen of een toegankelijke bibliotheek, alle invoervelden gelabeld, contrast gecorrigeerd naar AA, zichtbare focus hersteld, afbeeldingen voorzien van betekenisvolle alternatieven, fouten in tekst gemeld en aan velden gekoppeld, de kopstructuur gecorrigeerd, zoomen tot 200 procent gecontroleerd, onjuiste ARIA verwijderd, en een toegankelijkheidsverklaring gepubliceerd met bekende uitzonderingen.
 
-LaunchStudio doet dit als onderdeel van productieklaar maken voor producten die aan consumenten en overheidsinstanties verkopen. Daarachter staat Manifera — elf jaar, klanten als Vodafone, TNO en CFLW, met ervaring in levering aan de publieke sector vanuit Amsterdam.
+LaunchStudio doet dit als onderdeel van productieklaar maken voor producten die aan consumenten en overheidsinstanties verkopen. Daarachter staat Manifera - elf jaar, klanten als Vodafone, TNO en CFLW, met ervaring in levering aan de publieke sector vanuit Amsterdam.
 
 [Vraag ons uw product zonder muis te gebruiken](https://launchstudio.eu/nl/#contact). Het kost tien minuten en de uitkomst is meestal beslissend.
 
@@ -138,12 +138,12 @@ De beoordeling noemde twaalf tekortkomingen. Het meldformulier kon niet met het 
 
 Zes werkdagen: de categoriekiezer en drie andere eigen componenten vervangen door een toegankelijke componentenbibliotheek; de regel die focus overal verwijderde geschrapt en een zichtbare focusstijl toegevoegd; elk veld voorzien van een goed zichtbaar label; het kleurenpalet aangepast zodat lopende tekst 4,6:1 haalt en interactieve elementen 3:1, met de merkkleur iets donkerder; een alternatief met postcode en straatadres toegevoegd naast de kaartkiezer, wat voor de meeste inwoners toch al sneller bleek; fouten in tekst gemeld, gekoppeld aan hun veld en samengevat bovenaan het formulier; de kopstructuur overal gecorrigeerd; afbeeldingen voorzien van alternatieven met decoratieve als zodanig gemarkeerd; het hele product gecontroleerd met het toetsenbord, op 200 procent zoom en met een schermlezer; en een toegankelijkheidsverklaring gepubliceerd met twee resterende uitzonderingen, met omwegen en streefdatums.
 
-**Resultaat:** het product slaagde in de volgende aanbestedingsronde voor de beoordeling en werd gekozen. Wat Olaf meer verraste: meldingen via het adresalternatief in plaats van de kaart zijn nu goed voor 38 procent van alle meldingen, van inwoners die het kennelijk makkelijker vonden — een conversieverbetering die hij niet van toegankelijkheidswerk had verwacht.
+**Resultaat:** het product slaagde in de volgende aanbestedingsronde voor de beoordeling en werd gekozen. Wat Olaf meer verraste: meldingen via het adresalternatief in plaats van de kaart zijn nu goed voor 38 procent van alle meldingen, van inwoners die het kennelijk makkelijker vonden - een conversieverbetering die hij niet van toegankelijkheidswerk had verwacht.
 
 > *"Ik verloor een aanbesteding voordat iemand het product zag, op criteria waarvan ik niet wist dat ze bestonden. En de oplossing die het meest uitmaakte, bleek een functie te zijn die een derde van mijn gebruikers verkiest."*
-> — **Olaf Rietberg, Oprichter, Buurtmelding (Assen)**
+> - **Olaf Rietberg, Oprichter, Buurtmelding (Assen)**
 
-**Kosten & Doorlooptijd:** €4.800 (vervangen door toegankelijke componenten, herstel van focus en labels, contrastcorrectie, alternatieve locatie-invoer, foutafhandeling, kopstructuur, alternatieven voor afbeeldingen, controle met toetsenbord, zoom en schermlezer, toegankelijkheidsverklaring) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** €4.800 (vervangen door toegankelijke componenten, herstel van focus en labels, contrastcorrectie, alternatieve locatie-invoer, foutafhandeling, kopstructuur, alternatieven voor afbeeldingen, controle met toetsenbord, zoom en schermlezer, toegankelijkheidsverklaring) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -161,7 +161,7 @@ Ze gebruiken opgemaakte divs in plaats van native elementen. Een div die eruitzi
 
 ### Is een geautomatiseerde checker genoeg?
 
-Nee. Ze vindt ruwweg een derde van de problemen — contrast, ontbrekende labels, ontbrekende alternatieven — voor heel weinig moeite. Testen met toetsenbord en schermlezer vindt de rest.
+Nee. Ze vindt ruwweg een derde van de problemen - contrast, ontbrekende labels, ontbrekende alternatieven - voor heel weinig moeite. Testen met toetsenbord en schermlezer vindt de rest.
 
 ### Moet mijn toegankelijkheidsverklaring volledige conformiteit claimen?
 
@@ -201,7 +201,7 @@ Alleen als dat waar is. Een verklaring met bekende uitzonderingen, omwegen en da
       "name": "Is een geautomatiseerde toegankelijkheidschecker voldoende?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — die vangt ongeveer een derde van de problemen. Testen met toetsenbord en schermlezer vindt de rest."
+        "text": "Nee - die vangt ongeveer een derde van de problemen. Testen met toetsenbord en schermlezer vindt de rest."
       }
     },
     {

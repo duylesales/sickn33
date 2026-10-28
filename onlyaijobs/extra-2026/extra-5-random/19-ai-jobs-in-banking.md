@@ -49,7 +49,7 @@ Banking was using statistical models decades before anyone called it machine lea
 
 **Marketing and retention.** Next-best-action, churn prediction and campaign targeting, subject to strict rules on fairness and customer treatment.
 
-**Internal efficiency.** Reconciliation, exception handling, control testing and report generation — unglamorous, measurable and often the easiest place to show value.
+**Internal efficiency.** Reconciliation, exception handling, control testing and report generation - unglamorous, measurable and often the easiest place to show value.
 
 ## The Regulatory Layer That Shapes Everything
 
@@ -67,7 +67,7 @@ Three characteristics shape daily work:
 
 **Lineage matters legally.** You must be able to say where a field came from, how it was transformed and who owns it. Pulling a convenient column from a shared table without knowing its source is not acceptable.
 
-**Labels arrive late and imperfectly.** Default is observed months or years after the decision; fraud is confirmed only when someone reports it. Models are trained on partial, delayed and biased labels, and understanding that bias — rejected applicants have no outcome, blocked transactions have no ground truth — is core to the craft.
+**Labels arrive late and imperfectly.** Default is observed months or years after the decision; fraud is confirmed only when someone reports it. Models are trained on partial, delayed and biased labels, and understanding that bias - rejected applicants have no outcome, blocked transactions have no ground truth - is core to the craft.
 
 **Access is controlled.** Production data is segregated, personal data is minimised and analysis often happens in dedicated environments. Expect approvals rather than open access, and expect that this slows exploration.
 
@@ -89,11 +89,11 @@ Explainability is also required: investigators and regulators need to know why a
 
 Because banking decisions affect access to credit, housing and services, fairness is a formal requirement rather than an ethical aspiration. Teams routinely test outcomes across groups, examine proxies for protected characteristics and document the trade-offs they accepted.
 
-The hard part is that fairness definitions conflict mathematically — you cannot satisfy all of them simultaneously except in trivial cases — so teams must choose, justify and record which they use. Engineers are expected to understand the definitions well enough to discuss them with compliance and legal colleagues.
+The hard part is that fairness definitions conflict mathematically - you cannot satisfy all of them simultaneously except in trivial cases - so teams must choose, justify and record which they use. Engineers are expected to understand the definitions well enough to discuss them with compliance and legal colleagues.
 
 There is also the question of what happens to people the model declines. Banks must be able to explain a refusal in comprehensible terms, offer a route to human review and avoid systems that entrench exclusion. Postal code features, device data and behavioural signals all raise proxy concerns and are scrutinised accordingly.
 
-Candidates who can speak sensibly about these issues — without either dismissing them as bureaucracy or treating them as unsolvable — stand out in interviews, because hiring managers in this sector deal with the questions weekly.
+Candidates who can speak sensibly about these issues - without either dismissing them as bureaucracy or treating them as unsolvable - stand out in interviews, because hiring managers in this sector deal with the questions weekly.
 
 ## Roles, Titles and Career Paths
 
@@ -106,7 +106,7 @@ Banking uses titles that do not always map to technology industry equivalents:
 - **Data engineer**: builds the platforms everything else depends on; consistently in demand.
 - **Model risk / AI governance**: oversight, policy, inventory and regulatory engagement, growing rapidly as the EU AI Act is implemented.
 
-Career progression tends to run along two tracks — technical depth, or management of a modelling function — and banks are generally more explicit about levels and progression criteria than startups, which some candidates find reassuring and others find rigid.
+Career progression tends to run along two tracks - technical depth, or management of a modelling function - and banks are generally more explicit about levels and progression criteria than startups, which some candidates find reassuring and others find rigid.
 
 ## Preparing for Interviews in Financial Services
 
@@ -126,7 +126,7 @@ Prepare two or three projects in detail, including what went wrong. Interviewers
 
 Banking culture varies more than its reputation suggests. A digital-first team inside a large bank can feel similar to a product company; a group function in a traditional institution will not. Ask during interviews who makes decisions, how long a typical change takes to reach production and how many approvals are involved. The answers tell you more than any values statement.
 
-Compensation in European banking is generally competitive and structured, with defined salary bands, pension arrangements and — subject to regulatory caps on variable pay for certain roles — bonus structures. Under the EU Pay Transparency Directive (EU) 2023/970, member states are introducing rules that require employers to share pay range information with applicants, which should make these conversations more straightforward over time.
+Compensation in European banking is generally competitive and structured, with defined salary bands, pension arrangements and - subject to regulatory caps on variable pay for certain roles - bonus structures. Under the EU Pay Transparency Directive (EU) 2023/970, member states are introducing rules that require employers to share pay range information with applicants, which should make these conversations more straightforward over time.
 
 Working conditions are usually stable: predictable hours in most functions, established leave and training budgets, and hybrid arrangements that vary by institution. On-call exists for teams running real-time systems such as fraud scoring, and it is worth asking how it is organised and compensated.
 
@@ -144,7 +144,7 @@ To be straightforward about coverage: listings are currently concentrated in the
 
 Three shifts are visible across European banks and worth factoring into a career decision.
 
-**Formalised AI governance.** As the EU AI Act is implemented, banks are extending existing model risk frameworks to cover systems that were previously outside them — chat assistants, document processing, marketing models. This is creating roles for people who understand both machine learning and control frameworks, and it is one of the few areas where demand clearly exceeds supply.
+**Formalised AI governance.** As the EU AI Act is implemented, banks are extending existing model risk frameworks to cover systems that were previously outside them - chat assistants, document processing, marketing models. This is creating roles for people who understand both machine learning and control frameworks, and it is one of the few areas where demand clearly exceeds supply.
 
 **Real-time everything.** Payment infrastructure across Europe has moved toward instant settlement, which removes the overnight window in which many controls used to operate. Detection, decisioning and monitoring increasingly have to happen inside a transaction, which raises the engineering bar considerably.
 
@@ -168,7 +168,7 @@ When they later interviewed for a lead role, this story was what convinced the p
 
 Engineers coming from technology companies usually arrive with stronger software engineering and deployment practice than the bank has, and weaker grounding in validation, documentation and financial domain concepts. Closing that gap is mostly about vocabulary and patience: learning what a scorecard is, why population stability matters, what a model inventory contains, and how three lines of defence work.
 
-Conversely, people already in banking often have the domain knowledge and need modern engineering practice — version control, testing, reproducible pipelines, deployment. Both directions are common and both are hireable.
+Conversely, people already in banking often have the domain knowledge and need modern engineering practice - version control, testing, reproducible pipelines, deployment. Both directions are common and both are hireable.
 
 ## Key Takeaways
 
@@ -191,7 +191,7 @@ Possibly at first. The work is slower to ship and more durable once shipped. Peo
 Rarely for engineering roles. You need to learn the domain vocabulary and governance process; formal qualifications matter more in risk and validation functions.
 
 ### (Scenario: candidate interested in generative AI) Are banks using language models?
-Yes, mostly internally — document processing, staff assistance and knowledge retrieval — with strict controls on data and customer-facing use.
+Yes, mostly internally - document processing, staff assistance and knowledge retrieval - with strict controls on data and customer-facing use.
 
 ### (Scenario: candidate weighing sectors) Is banking a safe sector for AI careers?
 Demand is steady because regulation and risk management require continuous model work, though hiring follows business cycles like everywhere else.

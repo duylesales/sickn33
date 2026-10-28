@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **A Sequencing Fix, Not Just a Cost Fix:** A team assembled and reviewing your codebase within 2-3 weeks.
 ✅ **Amsterdam Strategic Governance:** Multi-tenant architecture and data isolation decisions reviewed by senior eyes before they calcify into technical debt.
-✅ **Vietnam Execution Velocity:** A pod with prior SaaS platform experience — usage metering, tiered gating — not generic web development.
+✅ **Vietnam Execution Velocity:** A pod with prior SaaS platform experience - usage metering, tiered gating - not generic web development.
 
 Get the right architecture decisions reviewed faster than an under-staffed in-house team making them alone. 🛡️
 

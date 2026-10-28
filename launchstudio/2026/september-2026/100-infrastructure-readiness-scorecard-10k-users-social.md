@@ -1,4 +1,4 @@
-📊 Dario built an AI customer feedback analysis tool using **Cursor** — dario, a startup founder, used **cursor** to build an AI-powered customer feedback analysis tool for product teams, but had no clear picture of what would break before a funding-driven growth push. 🧠
+📊 Dario built an AI customer feedback analysis tool using **Cursor** - dario, a startup founder, used **cursor** to build an AI-powered customer feedback analysis tool for product teams, but had no clear picture of what would break before a funding-driven growth push. 🧠
 
 If you don't know which part of your infrastructure would break first at three times your current load, that's the audit to run before your next growth push, not after.
 
@@ -12,7 +12,7 @@ If you don't know which part of your infrastructure would break first at three t
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Dario's platform achieved production readiness: his platform absorbed the subsequent user growth with no performance degradation and a documented readiness assessment he could show his board. (€3,400 (Relaunch & Scale Package) — infrastructure audit completed and priority fixes verified in 9 business days.) 🚀
+Dario's platform achieved production readiness: his platform absorbed the subsequent user growth with no performance degradation and a documented readiness assessment he could show his board. (€3,400 (Relaunch & Scale Package) - infrastructure audit completed and priority fixes verified in 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/infrastructure-readiness-scorecard-10k-users
 

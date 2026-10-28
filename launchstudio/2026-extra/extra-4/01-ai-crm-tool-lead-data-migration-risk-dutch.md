@@ -51,9 +51,9 @@ Als u niet zeker weet of uw eigen importlogica deze leemte heeft, [krijg dan een
 
 ## Twee leads samenvoegen voegt niet alleen twee rijen samen
 
-Een faseringstabel en een handmatige beoordelingswachtrij lossen de beslissing op of twee records moeten worden samengevoegd. Ze lossen niet automatisch op wat er gebeurt met al het andere in de database dat in het geheim afhankelijk was van het record dat op het punt staat te verdwijnen. Een lead in een echte CRM is zelden alleen een naam en een e-mailadres — het is het anker voor notities die een vertegenwoordiger na een gesprek heeft geschreven, toegewezen follow-up taken, dealfasen en e-mailthreads, die allemaal terugwijzen naar het ID van die lead. Wanneer een beoordelaar een samenvoeging goedkeurt, zal een door AI gegenereerde samenvoegfunctie vaak de velden van het overlevende record correct bijwerken en vervolgens eenvoudig de dubbele rij verwijderen, omdat dat is wat "samenvoegen" klinkt alsof het betekent. Niemand heeft verteld dat elke notitie, taak en deal die verwijst naar het nu verwijderde ID eerst opnieuw moet worden toegewezen, dus die onderliggende records verdwijnen niet zomaar samen met de rij waaraan ze waren gekoppeld.
+Een faseringstabel en een handmatige beoordelingswachtrij lossen de beslissing op of twee records moeten worden samengevoegd. Ze lossen niet automatisch op wat er gebeurt met al het andere in de database dat in het geheim afhankelijk was van het record dat op het punt staat te verdwijnen. Een lead in een echte CRM is zelden alleen een naam en een e-mailadres - het is het anker voor notities die een vertegenwoordiger na een gesprek heeft geschreven, toegewezen follow-up taken, dealfasen en e-mailthreads, die allemaal terugwijzen naar het ID van die lead. Wanneer een beoordelaar een samenvoeging goedkeurt, zal een door AI gegenereerde samenvoegfunctie vaak de velden van het overlevende record correct bijwerken en vervolgens eenvoudig de dubbele rij verwijderen, omdat dat is wat "samenvoegen" klinkt alsof het betekent. Niemand heeft verteld dat elke notitie, taak en deal die verwijst naar het nu verwijderde ID eerst opnieuw moet worden toegewezen, dus die onderliggende records verdwijnen niet zomaar samen met de rij waaraan ze waren gekoppeld.
 
-De oplossing is om een samenvoeging te behandelen als een enkele transactie die elke tabel met een vreemde sleutel terug naar de lead raakt, niet alleen het leadrecord zelf — koppel de onderliggende gegevens opnieuw aan het ID van de overlevende, leg precies vast wat er is verplaatst, en verwijder pas daarna het duplicaat:
+De oplossing is om een samenvoeging te behandelen als een enkele transactie die elke tabel met een vreemde sleutel terug naar de lead raakt, niet alleen het leadrecord zelf - koppel de onderliggende gegevens opnieuw aan het ID van de overlevende, leg precies vast wat er is verplaatst, en verwijder pas daarna het duplicaat:
 
 ```sql
 BEGIN TRANSACTION
@@ -72,7 +72,7 @@ DELETE FROM leads WHERE id = :duplicate_id
 COMMIT
 ```
 
-Zonder dit kan een beoordelaar een volkomen correcte samenvoegbeslissing goedkeuren en toch een maand aan gespreksnotities of een actieve deal kwijtraken, omdat de beoordelingsstap alleen controleerde of de twee mensen dezelfde waren — het heeft nooit gecontroleerd wat er gekoppeld was aan degene die het niet heeft overleefd.
+Zonder dit kan een beoordelaar een volkomen correcte samenvoegbeslissing goedkeuren en toch een maand aan gespreksnotities of een actieve deal kwijtraken, omdat de beoordelingsstap alleen controleerde of de twee mensen dezelfde waren - het heeft nooit gecontroleerd wat er gekoppeld was aan degene die het niet heeft overleefd.
 
 ## Echt voorbeeld
 
@@ -87,9 +87,9 @@ LaunchStudio heeft de importpijplijn opnieuw opgebouwd met een staging-and-revie
 **Resultaat:** Daan voerde de volledige migratie van 3.000 records twee dagen later opnieuw uit, zonder stille samenvoegingen, en de clientdemo ging door zoals gepland met nauwkeurige pijplijnnummers.
 
 > *"Ik had er geen idee van dat de import beslissingen voor mij nam totdat de cijfers niet meer optelden. Het angstaanjagende is hoe zelfverzekerd het eruitzag terwijl het dat deed."*
-> — **Daan Verhoeven, oprichter, LeadGrip (Utrecht)**
+> - **Daan Verhoeven, oprichter, LeadGrip (Utrecht)**
 
-**Kosten en tijdlijn:** € 950 (herbouw importpijplijn, faseringstabel, gebruikersinterface voor samenvoegbeoordeling) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (herbouw importpijplijn, faseringstabel, gebruikersinterface voor samenvoegbeoordeling) - voltooid in 5 werkdagen.
 
 ---
 

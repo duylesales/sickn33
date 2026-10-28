@@ -28,7 +28,7 @@ Elk nieuw integratieverzoek dat u van een klant ontvangt, noemt weer een ander s
 
 Als startend SaaS-bedrijf is het volstrekt onmogelijk om al die tientallen koppelingen zelf met de hand te programmeren en te onderhouden.
 
-No-code integratieplatforms — zoals **Zapier**, **Make** (voorheen Integromat) en **n8n** — beloven de ideale uitweg: *bouw één universele connector, en uw gebruikers kunnen uw software direct koppelen aan meer dan 5.000 andere applicaties zonder dat u nog een regel code hoeft te schrijven.*
+No-code integratieplatforms - zoals **Zapier**, **Make** (voorheen Integromat) en **n8n** - beloven de ideale uitweg: *bouw één universele connector, en uw gebruikers kunnen uw software direct koppelen aan meer dan 5.000 andere applicaties zonder dat u nog een regel code hoeft te schrijven.*
 
 De aantrekkingskracht is enorm, maar veel oprichters maken een kardinale denkfout:
 > **Een Zapier- of Make-app is géén alternatief voor het bouwen van een API; het is een grafische schil (*wrapper*) om een API heen.**
@@ -45,11 +45,11 @@ Een officiële no-code connector voor platforms zoals Zapier of Make wordt altij
 Óf uw applicatie kan direct de webhook-URL van het automatiseringsplatform aanroepen op het moment dat het event plaatsvindt (*REST Hook / Instant Trigger*). Dit is de moderne, superieure methode, maar het vereist wel dat uw backend beschikt over uitgaande webhook-infrastructuur met automatische retries, cryptografische handtekeningen (HMAC) en foutmonitoring.
 Óf het platform pollt elke vijf tot vijftien minuten een speciaal endpoint op uw server met de vraag *"Wat is er nieuw sinds het vorige meetpunt?"* (*Polling Trigger*). Dit vereist een endpoint dat records gegarandeerd in een stabiele, chronologische volgorde retourneert op basis van een cursor of tijdstempel, en dat nooit een record overslaat dat exact tussen twee poll-intervallen is aangemaakt. Polling-connectors zijn eenvoudiger te bouwen, maar veroorzaken een notoire klasse aan ongrijpbare bugs waarbij records geruisloos worden gemist.
 
-**Acties ("Maak een nieuwe factuur aan"):** Vereisen robuuste REST-endpoints die exact dezelfde operaties en validaties ondersteunen als uw eigen gebruikersinterface, inclusief glasheldere, menselijke foutmeldingen — aangezien deze foutmeldingen rechtstreeks worden getoond aan niet-technische gebruikers die een scenario configureren.
+**Acties ("Maak een nieuwe factuur aan"):** Vereisen robuuste REST-endpoints die exact dezelfde operaties en validaties ondersteunen als uw eigen gebruikersinterface, inclusief glasheldere, menselijke foutmeldingen - aangezien deze foutmeldingen rechtstreeks worden getoond aan niet-technische gebruikers die een scenario configureren.
 
 **Zoekopdrachten ("Zoek een klant op basis van e-mailadres"):** Vereisen efficiënt geïndexeerde zoek-endpoints die snel resultaten teruggeven.
 
-En onder al deze componenten ligt één fundamenteel fundament: een authenticatiemethode die een gewone zakelijke gebruiker zonder technische kennis kan voltooien (zoals OAuth of een eenvoudig te kopiëren API-sleutel), en consistente, gedocumenteerde JSON-veldnamen. Als uw API voor hetzelfde object op verschillende plekken afwijkende datastructuren retourneert — wat schering en inslag is in AI-codebases waar endpoints afzonderlijk zijn geprompt — kan er simpelweg geen connector op worden gebouwd zónder dat fundament eerst te saneren.
+En onder al deze componenten ligt één fundamenteel fundament: een authenticatiemethode die een gewone zakelijke gebruiker zonder technische kennis kan voltooien (zoals OAuth of een eenvoudig te kopiëren API-sleutel), en consistente, gedocumenteerde JSON-veldnamen. Als uw API voor hetzelfde object op verschillende plekken afwijkende datastructuren retourneert - wat schering en inslag is in AI-codebases waar endpoints afzonderlijk zijn geprompt - kan er simpelweg geen connector op worden gebouwd zónder dat fundament eerst te saneren.
 ## De Verborgen Kosten Na de Publicatie
 
 Oprichters beschouwen een Zapier-koppeling vaak als een eenmalig programmeerklusje van een paar dagen. Na publicatie ontdekken ze echter drie aanzienlijke doorlopende kostenposten:
@@ -104,7 +104,7 @@ Toen ze begon met het configureren van de Zapier Developer CLI, liep ze echter d
 **Resultaat:** Binnen acht werkdagen legde LaunchStudio een professioneel API-fundament: cursor-gebaseerde endpoints met stabiele sortering, consistente JSON-schemas, heldere validatiemeldingen, SHA-256 API-sleutelauthenticatie en instant uitgaande webhooks voor inschrijvingen en annuleringen. Het daadwerkelijke definiëren van de Zapier-connector kostte daarna slechts drie dagen. Tien van de elf klanten konden hun gewenste koppeling direct zelf in Zapier activeren; de elfde klant (met de maatwerk-ledenadministratie) liet zijn eigen ICT'er een koppeling bouwen met de nieuwe, gedocumenteerde webhooks.
 
 > *"Ik dacht dat ik een Zapier-integratie ging bouwen. In werkelijkheid moest ik eerst de API bouwen die er vanaf het begin had moeten liggen. De Zapier-configuratie zélf was uiteindelijk het makkelijkste deel van het hele traject."*
-> — **Guusje van Dam, Oprichter, Aanmelder**
+> - **Guusje van Dam, Oprichter, Aanmelder**
 
 **Kosten & Doorlooptijd:** API-structurering, instant webhooks en Zapier-connectordefinitie opgeleverd in 8 werkdagen.
 

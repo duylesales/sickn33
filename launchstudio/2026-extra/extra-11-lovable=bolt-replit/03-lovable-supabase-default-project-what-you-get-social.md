@@ -1,8 +1,8 @@
-🚨 Joris Nieuwenhuis built LesMatch in Lovable in three weeks to pair private tutors with families around Eindhoven. Everything worked beautifully. But when an Eindhoven school partnership ran a data check, they found 4 out of 11 tables had Row Level Security disabled — allowing any tutor to view other tutors' contracts, hourly rates, and notes. 😳
+🚨 Joris Nieuwenhuis built LesMatch in Lovable in three weeks to pair private tutors with families around Eindhoven. Everything worked beautifully. But when an Eindhoven school partnership ran a data check, they found 4 out of 11 tables had Row Level Security disabled - allowing any tutor to view other tutors' contracts, hourly rates, and notes. 😳
 
 Lovable spins up Supabase automatically, but default settings are built for rapid prototyping, not enterprise compliance: 🧠
 
-❌ Tables created without Row Level Security (RLS) enabled — readable by anyone with the public anon key
+❌ Tables created without Row Level Security (RLS) enabled - readable by anyone with the public anon key
 ❌ RLS policies written with permissive `true` expressions, granting unrestricted data access
 ❌ Database defaulted to a US cloud region, directly violating EU GDPR data residency requirements
 ❌ Backups running on a free schedule without Point-in-Time Recovery or restore verification

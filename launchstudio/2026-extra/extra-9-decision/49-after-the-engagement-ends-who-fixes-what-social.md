@@ -1,10 +1,10 @@
-🚨 "Is this the 48-hour window, or a new ticket?" Asked eleven days after launch — nobody had drawn the line clearly enough for him to answer it himself. 😳
+🚨 "Is this the 48-hour window, or a new ticket?" Asked eleven days after launch - nobody had drawn the line clearly enough for him to answer it himself. 😳
 
 You keep building on this codebase once the engagement ends, so the boundary and handover matter more than you'd think: 🧠
 
 ❌ "Here's your GitHub repo link" passed off as a complete handover package
 ❌ An SSL certificate silently failing to auto-renew after an unflagged DNS change
-❌ No dependency inventory — discovered missing three months later, worst possible moment
+❌ No dependency inventory - discovered missing three months later, worst possible moment
 ❌ AI-generated code with three names for one concept: `user_id`, `userId`, `uid`
 
 ✅ Define the bug-versus-new-work line before the engagement starts, tied to the scoping document
@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a maintenance-calendar check caught a failed SSL renewal three weeks before it would have taken the site down. 🚀
 
-👉 Describe what's still open on your build — a reply within one day: https://launchstudio.eu/en/blog/after-the-engagement-ends-who-fixes-what
+👉 Describe what's still open on your build - a reply within one day: https://launchstudio.eu/en/blog/after-the-engagement-ends-who-fixes-what
 
 #IndieHacker #TechnicalFounder #LaunchStudio #Manifera #AICoding #SaaS

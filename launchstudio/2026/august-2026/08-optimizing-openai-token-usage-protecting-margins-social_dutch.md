@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype met **Bolt** — Elena, een content creator, gebruikte Bolt om een blogpost-schrijver te bouwen, maar zag haar winstmarges verdampen door torenhoge OpenAI-tokenfacturen. 🧠
+🔥 Elena bouwde een prototype met **Bolt** - Elena, een content creator, gebruikte Bolt om een blogpost-schrijver te bouwen, maar zag haar winstmarges verdampen door torenhoge OpenAI-tokenfacturen. 🧠
 
 Wanneer uw AI-app bij elke chatbeurt de complete historie onbegrensd meestuurt, escaleren uw variabele API-kosten direct buiten proportie.
 
@@ -12,7 +12,7 @@ Wanneer uw AI-app bij elke chatbeurt de complete historie onbegrensd meestuurt, 
 
 Bij **LaunchStudio** lossen we exact dit type winstmarge- en architectuurproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Elena's platform werd direct winstgevend: De OpenAI API-kosten daalden met 55% terwijl de gebruikerservaring volledig intact bleef. (€1.500 (Token Caching Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Elena's platform werd direct winstgevend: De OpenAI API-kosten daalden met 55% terwijl de gebruikerservaring volledig intact bleef. (€1.500 (Token Caching Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/optimizing-openai-token-usage-protecting-margins
 

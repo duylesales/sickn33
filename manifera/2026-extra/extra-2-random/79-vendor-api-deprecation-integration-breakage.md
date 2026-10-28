@@ -22,17 +22,17 @@ target_persona: "CTO"
 
 The email announcing the API's sunset date went to an inbox nobody had checked in eight months, addressed to an engineer who'd left the company a year earlier. The team found out the integration was dead the same day it actually stopped working, with sixty days having already quietly expired.
 
-**The Pain:** A CTO's platform depends on a handful of third-party APIs for core functionality — payment processing, shipping-rate calculation, address verification, identity checks — integrated years ago by an engineer who may no longer be with the company, with no formal process for tracking vendor API version lifecycles, deprecation notices, or subscription to vendor changelog announcements. The integration has worked reliably for so long that nobody thinks about it until a vendor announces, sometimes with as little as thirty to sixty days' notice, that the specific API version being used is being shut down.
+**The Pain:** A CTO's platform depends on a handful of third-party APIs for core functionality - payment processing, shipping-rate calculation, address verification, identity checks - integrated years ago by an engineer who may no longer be with the company, with no formal process for tracking vendor API version lifecycles, deprecation notices, or subscription to vendor changelog announcements. The integration has worked reliably for so long that nobody thinks about it until a vendor announces, sometimes with as little as thirty to sixty days' notice, that the specific API version being used is being shut down.
 
-**The Agitation:** A deprecated API doesn't fail gracefully in most cases — on the sunset date, the requests simply stop working, and if the notification never reached anyone still at the company, the first sign of trouble is a production incident, not a planned migration. The business impact scales with how deeply embedded the dependency is: a broken payment integration doesn't just create an engineering fire drill, it stops revenue from processing, and the fix under emergency time pressure is invariably more expensive and more error-prone than the same migration done calmly with proper notice.
+**The Agitation:** A deprecated API doesn't fail gracefully in most cases - on the sunset date, the requests simply stop working, and if the notification never reached anyone still at the company, the first sign of trouble is a production incident, not a planned migration. The business impact scales with how deeply embedded the dependency is: a broken payment integration doesn't just create an engineering fire drill, it stops revenue from processing, and the fix under emergency time pressure is invariably more expensive and more error-prone than the same migration done calmly with proper notice.
 
 ## The Vendor Dependency Governance Mandate
 
-The first mandate is a complete, current inventory of every third-party API dependency the platform relies on, including which specific API version is in use, who the technical contact is for lifecycle notifications, and how business-critical the dependency actually is — an inventory that most companies discover they don't have until they urgently need one.
+The first mandate is a complete, current inventory of every third-party API dependency the platform relies on, including which specific API version is in use, who the technical contact is for lifecycle notifications, and how business-critical the dependency actually is - an inventory that most companies discover they don't have until they urgently need one.
 
 The second mandate is active subscription to every vendor's deprecation and changelog notification channel, routed to a team distribution list rather than an individual engineer's inbox, so a deprecation notice reaches whoever is actually responsible for the integration today, not whoever happened to set it up years ago and may have long since left the company.
 
-The third mandate is periodic proactive review of API version currency — checking, on a defined schedule rather than waiting for a vendor notice, whether any integrated API version is approaching or already past its officially documented deprecation timeline, since some vendors publish sunset schedules well in advance without necessarily emailing every integrated customer individually.
+The third mandate is periodic proactive review of API version currency - checking, on a defined schedule rather than waiting for a vendor notice, whether any integrated API version is approaching or already past its officially documented deprecation timeline, since some vendors publish sunset schedules well in advance without necessarily emailing every integrated customer individually.
 
 The fourth mandate is abstracting critical third-party dependencies behind an internal interface layer where practical, so that a vendor migration touches one well-defined internal boundary rather than requiring changes scattered throughout the application wherever the vendor's API happens to be called directly.
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: European governance discipline t
 
 ### A Dublin Fintech's Payment API Sunset Scare
 
-Ceannach Digiteach Ltd, a Dublin-based fintech platform, discovered its core payment-processing integration had stopped working entirely on a Monday morning, only to learn the vendor had sent a deprecation notice with sixty days' notice five months earlier — to an engineer who had left the company nine months before the notice was even sent, with no team distribution list ever set up to receive it. Revenue processing was down for six hours during the emergency migration to the new API version.
+Ceannach Digiteach Ltd, a Dublin-based fintech platform, discovered its core payment-processing integration had stopped working entirely on a Monday morning, only to learn the vendor had sent a deprecation notice with sixty days' notice five months earlier - to an engineer who had left the company nine months before the notice was even sent, with no team distribution list ever set up to receive it. Revenue processing was down for six hours during the emergency migration to the new API version.
 
 Manifera built a complete vendor-dependency inventory across all of Ceannach's third-party integrations, established team-routed notification subscriptions for every vendor's changelog and deprecation channel, and abstracted the payment integration behind an internal interface layer. When the same vendor announced a subsequent API version sunset fourteen months later, the notification reached the team automatically, and the migration was completed calmly over three weeks, well ahead of the deadline, with zero production impact.
 
 > *"The first time, we found out our payment processing was dead because it actually stopped processing payments. The second time, we found out from an email that went to the right list, five months before we needed to care."*
-> — **CTO, Ceannach Digiteach Ltd, Ireland**
+> - **CTO, Ceannach Digiteach Ltd, Ireland**
 
 ## Untracked Vendor Dependencies vs. Manifera's Governed Inventory
 
@@ -66,7 +66,7 @@ Manifera built a complete vendor-dependency inventory across all of Ceannach's t
 
 ## The Economics
 
-An emergency vendor API migration triggered by a missed deprecation notice typically costs a company far more than the same migration done on a planned timeline — lost revenue during the outage, engineering time diverted from planned work under crisis pressure, and a materially higher error rate from rushed implementation, easily totaling €25,000-€60,000 for a business-critical integration. A vendor dependency inventory and notification-governance process typically costs a modest one-time setup investment and prevents this entire category of incident going forward. [Talk to Manifera](https://www.manifera.com/contact-us/) about building the vendor dependency governance that keeps the next API sunset a scheduled project, not a production incident.
+An emergency vendor API migration triggered by a missed deprecation notice typically costs a company far more than the same migration done on a planned timeline - lost revenue during the outage, engineering time diverted from planned work under crisis pressure, and a materially higher error rate from rushed implementation, easily totaling €25,000-€60,000 for a business-critical integration. A vendor dependency inventory and notification-governance process typically costs a modest one-time setup investment and prevents this entire category of incident going forward. [Talk to Manifera](https://www.manifera.com/contact-us/) about building the vendor dependency governance that keeps the next API sunset a scheduled project, not a production incident.
 
 ## Frequently Asked Questions
 
@@ -84,7 +84,7 @@ Abstract business-critical third-party dependencies behind an internal interface
 
 ### (Scenario: CTO trying to prioritize which vendor dependencies need the closest monitoring) Should every third-party integration get the same level of dependency monitoring?
 
-No, prioritize by business criticality — payment processing, core data verification, and other revenue-critical integrations warrant the closest monitoring and the most robust abstraction, while lower-stakes integrations can tolerate more relaxed oversight.
+No, prioritize by business criticality - payment processing, core data verification, and other revenue-critical integrations warrant the closest monitoring and the most robust abstraction, while lower-stakes integrations can tolerate more relaxed oversight.
 
 ### (Scenario: CTO trying to estimate the cost of proactive vendor dependency governance) Is building a vendor dependency governance process worth the investment before an actual deprecation incident occurs?
 
@@ -98,7 +98,7 @@ Yes, the one-time setup cost is modest compared to the cost of even a single eme
     { "@type": "Question", "name": "(Scenario: CTO who discovered a critical integration had already been deprecated) How do we find out if any of our current vendor API integrations are already scheduled for deprecation?", "acceptedAnswer": { "@type": "Answer", "text": "Build a complete inventory of every third-party API dependency and check each vendor's current documentation and changelog directly." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to prevent a deprecation notice from being missed again) How do we make sure future vendor deprecation notices reach the right people?", "acceptedAnswer": { "@type": "Answer", "text": "Subscribe to every vendor's changelog using a team distribution list rather than an individual's email, and review it whenever the responsible engineer changes." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to reduce the impact of future vendor API changes) How can we reduce how disruptive a future vendor API migration will be?", "acceptedAnswer": { "@type": "Answer", "text": "Abstract business-critical third-party dependencies behind an internal interface layer, so a vendor's API change touches one well-defined boundary." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to prioritize which vendor dependencies need the closest monitoring) Should every third-party integration get the same level of dependency monitoring?", "acceptedAnswer": { "@type": "Answer", "text": "No, prioritize by business criticality — payment processing and core data verification warrant the closest monitoring." } },
+    { "@type": "Question", "name": "(Scenario: CTO trying to prioritize which vendor dependencies need the closest monitoring) Should every third-party integration get the same level of dependency monitoring?", "acceptedAnswer": { "@type": "Answer", "text": "No, prioritize by business criticality - payment processing and core data verification warrant the closest monitoring." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to estimate the cost of proactive vendor dependency governance) Is building a vendor dependency governance process worth the investment before an actual deprecation incident occurs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the one-time setup cost is modest compared to the cost of even a single emergency migration triggered by a missed notice." } }
   ]
 }

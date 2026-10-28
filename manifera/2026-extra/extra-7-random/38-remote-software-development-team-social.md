@@ -1,7 +1,7 @@
 🚨 A co-located team gets a huge amount of coordination for free through hallway conversations and overheard context. A remote software development team gets none of it automatically. ⚙️💬
 
 **The Pain Points:**
-❌ **Formal Process, Missing Layer:** Standups and specs designed carefully — the informal layer never rebuilt.
+❌ **Formal Process, Missing Layer:** Standups and specs designed carefully - the informal layer never rebuilt.
 ❌ **Small Questions Feel Too Big:** A quick hallway question now feels like it needs a scheduled meeting.
 ❌ **Duplicated Work, Discovered Late:** Two engineers solving the same problem without knowing it for weeks.
 

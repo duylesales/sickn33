@@ -13,7 +13,7 @@ Content Format: Policy Brief
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AiNed and National AI Investment: Connecting Research Programmes to Regional AI Labour Markets",
-  "description": "The Netherlands has invested in AI through the AiNed programme, the Dutch AI Coalition, ELSA Labs, ICAI labs and European Digital Innovation Hubs. A policy brief on how these initiatives can translate into regional AI employment — and why visibility of jobs, internships and talent is a missing link.",
+  "description": "The Netherlands has invested in AI through the AiNed programme, the Dutch AI Coalition, ELSA Labs, ICAI labs and European Digital Innovation Hubs. A policy brief on how these initiatives can translate into regional AI employment - and why visibility of jobs, internships and talent is a missing link.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-28",
@@ -35,13 +35,13 @@ Content Format: Policy Brief
 }
 </script>
 
-National investment in artificial intelligence in the Netherlands has grown substantially over the past years. Programmes fund research, public-private labs, human capital initiatives and support for businesses adopting AI. Yet for many regional employers and job seekers, these investments remain abstract. A manufacturer in Twente or a logistics company in Limburg may never connect a national AI programme with its own difficulty in hiring a data engineer. A graduate in Groningen may not know that a lab involving local companies is working on exactly the kind of AI they studied. For regional AI coalitions, innovation hubs and knowledge networks, the question is how national investment translates into regional employment — and what is missing in between.
+National investment in artificial intelligence in the Netherlands has grown substantially over the past years. Programmes fund research, public-private labs, human capital initiatives and support for businesses adopting AI. Yet for many regional employers and job seekers, these investments remain abstract. A manufacturer in Twente or a logistics company in Limburg may never connect a national AI programme with its own difficulty in hiring a data engineer. A graduate in Groningen may not know that a lab involving local companies is working on exactly the kind of AI they studied. For regional AI coalitions, innovation hubs and knowledge networks, the question is how national investment translates into regional employment - and what is missing in between.
 
 ## The National AI Landscape: Named Programmes and Organisations
 
 **AiNed.** AiNed is a multi-year national programme to strengthen the Dutch AI ecosystem, funded through the **National Growth Fund (Nationaal Groeifonds)**. It covers themes such as research and innovation, human capital, application of AI in sectors and responsible AI, with the aim of ensuring the Netherlands benefits economically and societally from AI.
 
-**Dutch AI Coalition (NL AIC).** The coalition brings together companies, government, knowledge institutions and civil society organisations to accelerate AI development and application. It has worked with regional structures — often referred to as AI hubs — to connect national activities with regional ecosystems.
+**Dutch AI Coalition (NL AIC).** The coalition brings together companies, government, knowledge institutions and civil society organisations to accelerate AI development and application. It has worked with regional structures - often referred to as AI hubs - to connect national activities with regional ecosystems.
 
 **ELSA Labs.** ELSA Labs focus on the ethical, legal and societal aspects of AI, developing human-centred AI in practice together with partners from government, business and society. Several labs are funded through national programmes in which the **Dutch Research Council (NWO)** plays a role.
 
@@ -78,7 +78,7 @@ Without visibility, investment in skills and adoption leaks away: talent moves t
 
 ## Why Regions Are the Right Level to Close the Gap
 
-National programmes set direction and fund activities, but labour markets are regional: people choose jobs based on travel time, family and housing. Regional AI hubs, development agencies, campuses and knowledge institutions know local employers and talent. They are therefore best placed to connect national investments with regional employment — for example by showing which companies in the region are hiring for AI roles, which internships are available and which labs involve regional partners.
+National programmes set direction and fund activities, but labour markets are regional: people choose jobs based on travel time, family and housing. Regional AI hubs, development agencies, campuses and knowledge institutions know local employers and talent. They are therefore best placed to connect national investments with regional employment - for example by showing which companies in the region are hiring for AI roles, which internships are available and which labs involve regional partners.
 
 ## Practical Actions for Regional AI Coalitions and Hubs
 
@@ -122,7 +122,7 @@ The regional AI coalition steps in. It helps the company define a data engineeri
 
 National AI programmes typically distinguish between research, innovation, application and human capital. Human capital is arguably the most important and the least visible: without skilled people, research results remain in papers and pilots remain pilots. Human capital initiatives include new education programmes, professional training, PhD positions, AI literacy efforts and programmes to attract and retain talent.
 
-The challenge is that human capital outcomes materialise in labour markets, not in programme reports. A trained person only creates value when employed in a role that uses their skills. Programmes can train thousands of people, but if employers and talent do not find each other, the investment's impact is diluted. This is why the connection between training and visible job opportunities — especially at regional employers — deserves as much attention as the training itself.
+The challenge is that human capital outcomes materialise in labour markets, not in programme reports. A trained person only creates value when employed in a role that uses their skills. Programmes can train thousands of people, but if employers and talent do not find each other, the investment's impact is diluted. This is why the connection between training and visible job opportunities - especially at regional employers - deserves as much attention as the training itself.
 
 ## What Regional Employers Say They Need
 
@@ -134,11 +134,11 @@ Regional employers, particularly SMEs, often describe a similar set of needs whe
 - **Guidance on regulation,** such as the AI Act and GDPR, in practical terms.
 - **Examples from comparable companies** in their sector and region.
 
-National programmes and innovation hubs address several of these needs, but the second — access to people — often remains unresolved. Regional coalitions can bridge this by combining adoption support with recruitment support, internships and visibility of vacancies.
+National programmes and innovation hubs address several of these needs, but the second - access to people - often remains unresolved. Regional coalitions can bridge this by combining adoption support with recruitment support, internships and visibility of vacancies.
 
 ## Connecting Responsible AI Expertise to Jobs
 
-Programmes focused on ethical, legal and societal aspects of AI generate expertise that is increasingly relevant to employers. With AI Act obligations for AI literacy, high-risk systems and transparency, organisations need people who understand governance, risk assessment, documentation and human oversight. Researchers and professionals involved in responsible AI programmes are well placed to fill such roles, but these positions are new and titles vary — AI governance specialist, AI compliance officer, responsible AI lead, algorithm auditor. Regional networks can help by making these roles visible and connecting organisations that need governance expertise with people who have developed it.
+Programmes focused on ethical, legal and societal aspects of AI generate expertise that is increasingly relevant to employers. With AI Act obligations for AI literacy, high-risk systems and transparency, organisations need people who understand governance, risk assessment, documentation and human oversight. Researchers and professionals involved in responsible AI programmes are well placed to fill such roles, but these positions are new and titles vary - AI governance specialist, AI compliance officer, responsible AI lead, algorithm auditor. Regional networks can help by making these roles visible and connecting organisations that need governance expertise with people who have developed it.
 
 ## Common Pitfalls
 
@@ -151,14 +151,14 @@ Programmes focused on ethical, legal and societal aspects of AI generate experti
 ## Key Takeaways
 
 - National AI investment in the Netherlands includes AiNed, the Dutch AI Coalition, ELSA Labs, ICAI labs, TNO and European Digital Innovation Hubs.
-- These initiatives create research positions, public-private expertise, human capital and SME adoption — but rarely address visibility of jobs and internships.
+- These initiatives create research positions, public-private expertise, human capital and SME adoption - but rarely address visibility of jobs and internships.
 - Without visibility, talent and investment leak away from regions and SME pilots stall.
 - Regional AI coalitions and hubs can map employers, make AI vacancies and internships visible, connect labs to companies, follow SMEs after pilots and measure regional outcomes.
 - Responsible AI expertise, reinforced by AI Act obligations, can become a regional employment strength.
 
 ## Where to Start
 
-List the regional organisations in your network that participated in national AI programmes or innovation hub support, and ask each whether they are hiring AI or data talent in the coming year — then make those roles visible.
+List the regional organisations in your network that participated in national AI programmes or innovation hub support, and ask each whether they are hiring AI or data talent in the coming year - then make those roles visible.
 
 Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss connecting national AI investment with visible regional AI jobs and internships.
 

@@ -1,4 +1,4 @@
-🚨 Lotte Verhoeven built Praktijkplanner in Lovable for 60 medical and therapy practices across Noord-Brabant. The UI mixed Dutch and English text, dates formatted in US order (MM/DD/YYYY), and generated English invoices without Dutch VAT rules (`Btw-verlegd / Btw-vrij`) — causing patients to miss appointments and accountants to reject invoices. 😳
+🚨 Lotte Verhoeven built Praktijkplanner in Lovable for 60 medical and therapy practices across Noord-Brabant. The UI mixed Dutch and English text, dates formatted in US order (MM/DD/YYYY), and generated English invoices without Dutch VAT rules (`Btw-verlegd / Btw-vrij`) - causing patients to miss appointments and accountants to reject invoices. 😳
 
 Bilingual support isn't just translating words. It requires locale-aware dates, currencies, and tax rules: 🧠
 

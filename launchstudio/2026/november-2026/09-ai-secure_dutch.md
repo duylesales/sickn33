@@ -39,7 +39,7 @@ Het daadwerkelijk veilig maken van uw AI-applicatie is geen functie die u later 
 
 ## Het AI-Beveiligingsprobleem: Waarom Taalmodellen Onveilige Code Schrijven
 
-AI-codetools zijn getraind op miljarden regels open-source code. Die trainingsdata bevat veilige code, maar evengoed verouderde patronen, onveilige constructies en kwetsbare bibliotheken — gewogen op basis van populariteit in plaats van correctheid.
+AI-codetools zijn getraind op miljarden regels open-source code. Die trainingsdata bevat veilige code, maar evengoed verouderde patronen, onveilige constructies en kwetsbare bibliotheken - gewogen op basis van populariteit in plaats van correctheid.
 
 Wanneer u de prompt *"voeg gebruikersauthenticatie toe"* invoert, genereert het model de statistisch meest voorkomende implementatie. Dat zijn vrijwel altijd de eenvoudige patronen uit beginnersvideo's en proof-of-concepts, niet de geharde beveiligingsarchitectuur van enterprise-systemen.
 
@@ -79,14 +79,14 @@ AI-authenticatie slaat sessietokens vaak op in `localStorage` (kwetsbaar voor XS
 
 Voordat een met AI gebouwde applicatie live gaat met echte klantdata, moet deze slagen voor deze acht beveiligingscontroles:
 
-1. **Alle API-sleutels naar de backend verplaatst** — Geen geheimen in de frontend, uitsluitend beveiligde omgevingsvariabelen.
-2. **Row Level Security geactiveerd** — Elke Supabase-tabel heeft strikte RLS-policies per gebruiker en organisatie.
-3. **Server-side invoervalidatie** — Elk API-endpoint valideert en ontsmet alle inkomende data.
-4. **Rate limiting geconfigureerd** — Beveiliging op inlogschermen, registraties en AI-proxy-aanroepen.
-5. **Veilig sessiebeheer** — `httpOnly` cookies met automatische expiratie en CSRF-bescherming.
-6. **HTTPS afgedwongen** — Automatisch vernieuwende SSL-certificaten met geforceerde HTTPS-omleiding.
-7. **Foutmeldingen gezuiverd** — Geen interne databasefouten, stack traces of paden zichtbaar voor gebruikers.
-8. **Dependencies geaudit** — Alle npm-pakketten gecontroleerd op bekende lekken via `npm audit`.
+1. **Alle API-sleutels naar de backend verplaatst** - Geen geheimen in de frontend, uitsluitend beveiligde omgevingsvariabelen.
+2. **Row Level Security geactiveerd** - Elke Supabase-tabel heeft strikte RLS-policies per gebruiker en organisatie.
+3. **Server-side invoervalidatie** - Elk API-endpoint valideert en ontsmet alle inkomende data.
+4. **Rate limiting geconfigureerd** - Beveiliging op inlogschermen, registraties en AI-proxy-aanroepen.
+5. **Veilig sessiebeheer** - `httpOnly` cookies met automatische expiratie en CSRF-bescherming.
+6. **HTTPS afgedwongen** - Automatisch vernieuwende SSL-certificaten met geforceerde HTTPS-omleiding.
+7. **Foutmeldingen gezuiverd** - Geen interne databasefouten, stack traces of paden zichtbaar voor gebruikers.
+8. **Dependencies geaudit** - Alle npm-pakketten gecontroleerd op bekende lekken via `npm audit`.
 
 ## Professionele Beveiligingsharding: Wat LaunchStudio Biedt
 
@@ -126,9 +126,9 @@ Dr. Luuk haalde de app direct offline en nam contact op met LaunchStudio. Het se
 **Resultaat:** PhysioTrack lanceerde met 100% AVG-compliance. Het platform bedient inmiddels 12 fysiotherapiepraktijken in Limburg, die elk €199 per maand betalen. Sinds de livegang hebben zich nul beveiligingsincidenten voorgedaan.
 
 > *"Lovable leverde me een prachtig uitziende applicatie op. LaunchStudio liet me zien dat het een tikkende AVG-tijdbom was. De beveiligingsharding die zij in acht dagen realiseerden, had ik zelf nooit kunnen doorgronden. Bij medische data mag je geen enkel risico nemen."*
-> — **Dr. Luuk Mertens, Oprichter, PhysioTrack (Maastricht)**
+> - **Dr. Luuk Mertens, Oprichter, PhysioTrack (Maastricht)**
 
-**Kosten & Doorlooptijd:** €5.800 (Launch & Grow Pakket met uitgebreide security-harding) — productie-klaar en live binnen 8 werkdagen.
+**Kosten & Doorlooptijd:** €5.800 (Launch & Grow Pakket met uitgebreide security-harding) - productie-klaar en live binnen 8 werkdagen.
 
 ---
 
@@ -141,7 +141,7 @@ Trek de blootgestelde sleutels direct in via de dashboards van de betreffende di
 Ja, zodra u persoonsgegevens van Europese burgers verwerkt. De AVG vereist toestemmingsbeheer, rechten op data-inzage en -verwijdering, en strikte beveiligingsmaatregelen. LaunchStudio verifieert deze eisen standaard bij elk project onder toezicht van CEO Herre Roelevink.
 
 ### Is een professionele beveiligingsaudit de investering waard voor een vroege startup?
-Absoluut. Een datalek kost gemiddeld €10.000 tot €50.000 aan juridische kosten en herstelwerkzaamheden, nog los van reputatieschade. LaunchStudio's beveiligingsharding is inbegrepen in alle pakketten vanaf €800 — de voordeligste verzekering voor uw startup.
+Absoluut. Een datalek kost gemiddeld €10.000 tot €50.000 aan juridische kosten en herstelwerkzaamheden, nog los van reputatieschade. LaunchStudio's beveiligingsharding is inbegrepen in alle pakketten vanaf €800 - de voordeligste verzekering voor uw startup.
 
 ### Welke tools kan ik zelf gebruiken om mijn AI-code te scannen op kwetsbaarheden?
 Gebruik `npm audit` voor pakketkwetsbaarheden, SonarQube voor statische code-analyse, GitLeaks voor gelekte sleutels en OWASP ZAP voor API-tests. Geautomatiseerde tools vinden echter circa 60% van de lekken; de overige 40% vereist handmatige expertise door een security engineer.

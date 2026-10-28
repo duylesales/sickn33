@@ -35,21 +35,21 @@ Roos Dijkman didn't find out her maintenance request system had a hole in it fro
 
 ## The assumption baked into most AI-built routing logic
 
-When you ask an AI app builder to create a maintenance request tool for landlords, it will confidently build the obvious flow: tenant submits a request, request gets routed to the assigned contractor for that property, contractor gets notified, everyone tracks status in the app. That flow works beautifully as long as every property in the system has a contractor assigned to it. The trouble is that in real portfolios — especially for small landlords managing a handful of properties directly — that assumption is false more often than it's true. A new property gets added before a contractor relationship is locked in. A contractor drops a property and nobody's replaced them yet. A landlord handles small properties themselves and never assigns anyone at all.
+When you ask an AI app builder to create a maintenance request tool for landlords, it will confidently build the obvious flow: tenant submits a request, request gets routed to the assigned contractor for that property, contractor gets notified, everyone tracks status in the app. That flow works beautifully as long as every property in the system has a contractor assigned to it. The trouble is that in real portfolios - especially for small landlords managing a handful of properties directly - that assumption is false more often than it's true. A new property gets added before a contractor relationship is locked in. A contractor drops a property and nobody's replaced them yet. A landlord handles small properties themselves and never assigns anyone at all.
 
-AI coding tools rarely build a fallback for the case they didn't think to ask about. If a maintenance request comes in for a property with no assigned contractor, the request typically still gets created and saved in the database — the app did its job, technically — but there's no one to route the notification to, so nothing fires. No alert to the landlord. No escalation. The request just sits there, fully valid in the database, completely invisible in anyone's inbox.
+AI coding tools rarely build a fallback for the case they didn't think to ask about. If a maintenance request comes in for a property with no assigned contractor, the request typically still gets created and saved in the database - the app did its job, technically - but there's no one to route the notification to, so nothing fires. No alert to the landlord. No escalation. The request just sits there, fully valid in the database, completely invisible in anyone's inbox.
 
 ## Silent gaps are worse than loud failures
 
-A crashed submission is annoying but obvious — the tenant knows to try again or call. A silently unrouted request is worse precisely because it looks successful. The tenant sees a confirmation. The landlord's dashboard shows the request exists. Nobody involved has any signal that it's stuck, until enough time passes that someone escalates manually, usually after real frustration has built up.
+A crashed submission is annoying but obvious - the tenant knows to try again or call. A silently unrouted request is worse precisely because it looks successful. The tenant sees a confirmation. The landlord's dashboard shows the request exists. Nobody involved has any signal that it's stuck, until enough time passes that someone escalates manually, usually after real frustration has built up.
 
-This is the kind of gap LaunchStudio looks for specifically when reviewing an AI-built app before it goes live with real tenants: not "does the happy path work," but "what happens to every record that falls outside the happy path." Our engineers have shipped 160+ projects for enterprise clients, and the pattern that shows up again and again in AI-native tools is exactly this — the database faithfully stores an edge case, but nothing in the application layer was told to watch for it.
+This is the kind of gap LaunchStudio looks for specifically when reviewing an AI-built app before it goes live with real tenants: not "does the happy path work," but "what happens to every record that falls outside the happy path." Our engineers have shipped 160+ projects for enterprise clients, and the pattern that shows up again and again in AI-native tools is exactly this - the database faithfully stores an edge case, but nothing in the application layer was told to watch for it.
 
 Much of this workflow and notification-logic work for LaunchStudio clients is handled by the team at Manifera's development center on Pho Quang Street in Ho Chi Minh City, where engineers build the fallback routing and alerting systems that a first AI-generated pass typically skips. If you're managing real tenants on a tool built with Lovable, Bolt, or Cursor, it's worth [exploring our packages](https://launchstudio.eu/en/#packages) to see what a routing and notification audit involves before a request goes quiet on you the way it did for Roos.
 
 ## Reassigning a Contractor Doesn't Re-Route What's Already Open
 
-The fallback rule and the stale-request digest close the gap for a property that never had a contractor assigned in the first place. There's an adjacent case they don't automatically cover: a property that did have a contractor, has several requests already open and routed correctly, and then loses that contractor — a falling-out, a dropped relationship, a contractor who simply stops responding. Those already-open requests were notified correctly at the time they were created. The fallback rule doesn't trigger for them, because on paper they do have a contractor on record; it's just that the contractor is no longer checking that inbox. The requests keep aging, technically "assigned," while nobody real is looking at them.
+The fallback rule and the stale-request digest close the gap for a property that never had a contractor assigned in the first place. There's an adjacent case they don't automatically cover: a property that did have a contractor, has several requests already open and routed correctly, and then loses that contractor - a falling-out, a dropped relationship, a contractor who simply stops responding. Those already-open requests were notified correctly at the time they were created. The fallback rule doesn't trigger for them, because on paper they do have a contractor on record; it's just that the contractor is no longer checking that inbox. The requests keep aging, technically "assigned," while nobody real is looking at them.
 
 The fix is to treat a contractor change as an event that sweeps existing open requests, not just something that affects requests created afterward:
 
@@ -58,7 +58,7 @@ When a property's assigned contractor changes:
   1. Find every request for that property still marked "open" or "in progress"
   2. Re-route each one to the new contractor's inbox and dashboard
   3. Flag them as "reassigned" so the new contractor knows these weren't originally theirs
-  4. Send a fresh notification — don't rely on the original one as the last word
+  4. Send a fresh notification - don't rely on the original one as the last word
 ```
 
 Without this sweep, a landlord can fix the routing for every future request and still have a handful of older ones quietly stuck with a contractor who's already gone.
@@ -67,18 +67,18 @@ Without this sweep, a landlord can fix the routing for every future request and 
 
 ### An AI-Native Founder in Action: The Request With No Address to Go To
 
-Roos Dijkman, a founder in Arnhem, built PandBeheer — a maintenance request tool for small landlords — with Lovable. The core loop worked well: tenants submitted photos and descriptions of issues, and requests routed automatically to whichever contractor was assigned to that property, with status updates visible to both sides.
+Roos Dijkman, a founder in Arnhem, built PandBeheer - a maintenance request tool for small landlords - with Lovable. The core loop worked well: tenants submitted photos and descriptions of issues, and requests routed automatically to whichever contractor was assigned to that property, with status updates visible to both sides.
 
-The gap was in a property that had recently lost its assigned contractor after a falling-out, with Roos planning to assign a replacement "soon." A tenant in that property submitted a maintenance request for a leaking tap. The request saved successfully and showed as "submitted" in the tenant's view. But because no contractor was assigned, no notification went anywhere — not to Roos, not to anyone. The request sat untouched for three weeks until the tenant, increasingly frustrated by the lack of any response, called Roos directly to ask why nothing had happened.
+The gap was in a property that had recently lost its assigned contractor after a falling-out, with Roos planning to assign a replacement "soon." A tenant in that property submitted a maintenance request for a leaking tap. The request saved successfully and showed as "submitted" in the tenant's view. But because no contractor was assigned, no notification went anywhere - not to Roos, not to anyone. The request sat untouched for three weeks until the tenant, increasingly frustrated by the lack of any response, called Roos directly to ask why nothing had happened.
 
-LaunchStudio added a fallback routing rule: any request for a property without an assigned contractor now routes directly to the landlord's own inbox and dashboard as a flagged priority item, with a visible "unassigned — needs contractor" status instead of a generic "submitted" state. We also added a daily digest that surfaces any request untouched for more than 48 hours, regardless of routing status, so nothing can go quiet again.
+LaunchStudio added a fallback routing rule: any request for a property without an assigned contractor now routes directly to the landlord's own inbox and dashboard as a flagged priority item, with a visible "unassigned - needs contractor" status instead of a generic "submitted" state. We also added a daily digest that surfaces any request untouched for more than 48 hours, regardless of routing status, so nothing can go quiet again.
 
 **Result:** Roos caught two more unassigned-property requests in the following month before they became complaints, both resolved within a day.
 
-> *"The app never lied to me exactly — it just never told me the truth either. The request was sitting right there in the database the whole time."*
-> — **Roos Dijkman, Founder, PandBeheer (Arnhem)**
+> *"The app never lied to me exactly - it just never told me the truth either. The request was sitting right there in the database the whole time."*
+> - **Roos Dijkman, Founder, PandBeheer (Arnhem)**
 
-**Cost & Timeline:** €680 (fallback routing rule, priority flagging, stale-request digest) — completed in 4 business days.
+**Cost & Timeline:** €680 (fallback routing rule, priority flagging, stale-request digest) - completed in 4 business days.
 
 ---
 
@@ -86,7 +86,7 @@ LaunchStudio added a fallback routing rule: any request for a property without a
 
 ### Why would a maintenance request just disappear with no error?
 
-It doesn't technically disappear — it saves correctly to the database. The failure is that no notification gets triggered when a request has no assigned contractor to route to, so it becomes invisible in practice even though it exists in the system.
+It doesn't technically disappear - it saves correctly to the database. The failure is that no notification gets triggered when a request has no assigned contractor to route to, so it becomes invisible in practice even though it exists in the system.
 
 ### Is this specific to Lovable, or a general AI app-building risk?
 
@@ -102,11 +102,11 @@ Usually a fallback routing rule that sends unassigned requests directly to the o
 
 ### Does LaunchStudio's engineering team have experience with workflow and notification systems?
 
-Yes — this kind of workflow and notification logic is a regular part of the work handled through Manifera's development center in Ho Chi Minh City, drawing on the team's experience across 160+ delivered projects.
+Yes - this kind of workflow and notification logic is a regular part of the work handled through Manifera's development center in Ho Chi Minh City, drawing on the team's experience across 160+ delivered projects.
 
 ### What happens to requests that were already open when a property's contractor changes?
 
-Unless the system explicitly sweeps for them, nothing — they stay routed to the old contractor's inbox, technically "assigned" on paper even though nobody is actually checking that inbox anymore. A contractor change needs to trigger a re-route of every open request tied to that property, not just affect requests created afterward.
+Unless the system explicitly sweeps for them, nothing - they stay routed to the old contractor's inbox, technically "assigned" on paper even though nobody is actually checking that inbox anymore. A contractor change needs to trigger a re-route of every open request tied to that property, not just affect requests created afterward.
 
 <script type="application/ld+json">
 {
@@ -116,7 +116,7 @@ Unless the system explicitly sweeps for them, nothing — they stay routed to th
     {
       "@type": "Question",
       "name": "Why would a maintenance request just disappear with no error?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It doesn't disappear technically — it saves correctly to the database. The failure is that no notification gets triggered when a request has no assigned contractor to route to." }
+      "acceptedAnswer": { "@type": "Answer", "text": "It doesn't disappear technically - it saves correctly to the database. The failure is that no notification gets triggered when a request has no assigned contractor to route to." }
     },
     {
       "@type": "Question",
@@ -141,7 +141,7 @@ Unless the system explicitly sweeps for them, nothing — they stay routed to th
     {
       "@type": "Question",
       "name": "What happens to requests that were already open when a property's contractor changes?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Unless the system explicitly sweeps for them, nothing — they stay routed to the old contractor's inbox, technically assigned on paper even though nobody is actually checking it. A contractor change needs to trigger a re-route of every open request tied to that property." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Unless the system explicitly sweeps for them, nothing - they stay routed to the old contractor's inbox, technically assigned on paper even though nobody is actually checking it. A contractor change needs to trigger a re-route of every open request tied to that property." }
     }
   ]
 }

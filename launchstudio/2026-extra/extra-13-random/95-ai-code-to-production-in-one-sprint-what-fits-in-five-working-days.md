@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Some founders do not have two or three weeks. A season is about to start, a partner is waiting, or they simply want to know whether a one-week launch is possible. The honest answer: taking AI code to production in one sprint of five working days is realistic for a certain kind of app — and unrealistic for others. Knowing which kind yours is saves disappointment in both directions.
+Some founders do not have two or three weeks. A season is about to start, a partner is waiting, or they simply want to know whether a one-week launch is possible. The honest answer: taking AI code to production in one sprint of five working days is realistic for a certain kind of app - and unrealistic for others. Knowing which kind yours is saves disappointment in both directions.
 
 ## Which Apps Fit in One Week
 
@@ -38,15 +38,15 @@ Apps with marketplaces, complex roles, multiple integrations, sensitive special-
 
 ## The Five-Day AI Code to Production Plan
 
-**Day 1 — Review and priorities.** Access to all accounts on the morning of day 1. The engineer reviews code, database policies, secrets, payments and hosting, and produces a ranked finding list by the afternoon. The founder confirms what is in and out.
+**Day 1 - Review and priorities.** Access to all accounts on the morning of day 1. The engineer reviews code, database policies, secrets, payments and hosting, and produces a ranked finding list by the afternoon. The founder confirms what is in and out.
 
-**Day 2 — Access and secrets.** Database-level access control on every table, admin areas protected by roles, secret keys rotated and moved server-side, input validation on key forms.
+**Day 2 - Access and secrets.** Database-level access control on every table, admin areas protected by roles, secret keys rotated and moved server-side, input validation on key forms.
 
-**Day 3 — Money and data.** Payment confirmation via verified webhooks, refund handling, database region checked or migrated if small, backups enabled and a restore tested, account deletion.
+**Day 3 - Money and data.** Payment confirmation via verified webhooks, refund handling, database region checked or migrated if small, backups enabled and a restore tested, account deletion.
 
-**Day 4 — Delivery and visibility.** Your own domain with SSL, production hosting, staging environment, transactional email with an authenticated domain, uptime monitoring and error tracking.
+**Day 4 - Delivery and visibility.** Your own domain with SSL, production hosting, staging environment, transactional email with an authenticated domain, uptime monitoring and error tracking.
 
-**Day 5 — Test and launch.** Critical flows tested on staging on phone and desktop, including unhappy paths; fixes; go-live in the afternoon, with monitoring watched and the first 48 hours of support starting.
+**Day 5 - Test and launch.** Critical flows tested on staging on phone and desktop, including unhappy paths; fixes; go-live in the afternoon, with monitoring watched and the first 48 hours of support starting.
 
 ## What Gets Deferred
 
@@ -60,7 +60,7 @@ To keep a one-week launch safe, some things are consciously postponed, in writin
 
 ## What Is Never Deferred
 
-Access control, secrets, payment confirmation, backups and basic monitoring are never traded for speed. If they cannot be done within the week, the launch moves — not the standard.
+Access control, secrets, payment confirmation, backups and basic monitoring are never traded for speed. If they cannot be done within the week, the launch moves - not the standard.
 
 ## What the Founder Must Do
 
@@ -87,7 +87,7 @@ Before committing to AI code to production in five days, check the qualifiers ho
 | Data migration | None or tiny | Region move with significant data |
 | Founder availability | Daily, within hours | Occasional |
 
-If most rows fall in the left column, a five-day sprint is realistic. If two or more fall in the right column, plan for two to three weeks instead — the sprint approach still applies, just over more days.
+If most rows fall in the left column, a five-day sprint is realistic. If two or more fall in the right column, plan for two to three weeks instead - the sprint approach still applies, just over more days.
 
 ## Day 1 in Detail: The Review That Makes the Week Possible
 
@@ -97,7 +97,7 @@ The first day decides the rest. In the morning, the engineer maps the app: pages
 
 A one-week sprint depends on preparation done before it starts:
 
-- Access to repository, database, hosting, domain registrar, payment provider and email provider — invited on day 0.
+- Access to repository, database, hosting, domain registrar, payment provider and email provider - invited on day 0.
 - A written list of launch flows and user types.
 - Texts for confirmation and reminder emails.
 - A privacy notice draft (template-based is fine).
@@ -116,11 +116,11 @@ Short sprints must not skip verification. Each day ends with checks: after acces
 
 ## Launch Afternoon: What Happens
 
-On the afternoon of day 5, DNS is pointed to production (or was prepared earlier to avoid propagation delays), final smoke tests run on the live domain, monitoring is confirmed, and the first real users are invited — ideally a small group before a wider announcement. Engineers watch error tracking and payment events for the first hours. The 48-hour support window covers the first weekend, which is often when early users try the app for the first time.
+On the afternoon of day 5, DNS is pointed to production (or was prepared earlier to avoid propagation delays), final smoke tests run on the live domain, monitoring is confirmed, and the first real users are invited - ideally a small group before a wider announcement. Engineers watch error tracking and payment events for the first hours. The 48-hour support window covers the first weekend, which is often when early users try the app for the first time.
 
 ## After the Sprint: The Deferred List
 
-The deferred list from day 1 becomes the next plan: waiting lists, reports, performance improvements, extra payment methods, admin tools. Schedule it deliberately — for example a second small project a month after launch — so deferred does not quietly become forgotten. Real usage during the first month usually changes the priorities, which is exactly why deferring was the right call.
+The deferred list from day 1 becomes the next plan: waiting lists, reports, performance improvements, extra payment methods, admin tools. Schedule it deliberately - for example a second small project a month after launch - so deferred does not quietly become forgotten. Real usage during the first month usually changes the priorities, which is exactly why deferring was the right call.
 
 ## What Commonly Goes Wrong in One-Week Sprints
 
@@ -132,7 +132,7 @@ In a five-day sprint, communication must be fast but light: a short written upda
 
 ## Is a Faster Launch Always Better?
 
-A one-week launch is valuable when a deadline is real — a season, a campaign, a partner's timeline — or when a simple app is simply ready. It is less valuable when the pressure is self-imposed and the app is complex. If your app does not qualify, a two- or three-week plan with the same discipline produces a better result than a rushed week. The goal is a safe launch as soon as possible, not the shortest possible project.
+A one-week launch is valuable when a deadline is real - a season, a campaign, a partner's timeline - or when a simple app is simply ready. It is less valuable when the pressure is self-imposed and the app is complex. If your app does not qualify, a two- or three-week plan with the same discipline produces a better result than a rushed week. The goal is a safe launch as soon as possible, not the shortest possible project.
 
 ## A One-Week Sprint Checklist
 
@@ -144,7 +144,7 @@ Simple apps sometimes skip production work entirely because they seem too small 
 
 ## Where Speed Comes From
 
-Founders sometimes assume a one-week launch means cutting corners. In well-run sprints, speed comes from somewhere else: a qualifying app with a mature backend, a founder who prepares access and texts in advance, a ranked plan on day 1, parallel work streams, verification built into each day and a disciplined deferred list. Nothing essential is skipped; nothing inessential is attempted. That combination is repeatable, which is why experienced teams can promise five days for suitable apps with confidence — and why they will tell you honestly when your app needs longer.
+Founders sometimes assume a one-week launch means cutting corners. In well-run sprints, speed comes from somewhere else: a qualifying app with a mature backend, a founder who prepares access and texts in advance, a ranked plan on day 1, parallel work streams, verification built into each day and a disciplined deferred list. Nothing essential is skipped; nothing inessential is attempted. That combination is repeatable, which is why experienced teams can promise five days for suitable apps with confidence - and why they will tell you honestly when your app needs longer.
 
 ## First Step
 
@@ -156,13 +156,13 @@ Five days is achievable when the app qualifies, the founder is prepared and the 
 
 ## In Short
 
-Qualify, prepare, review, fix, verify, launch — in five days.
+Qualify, prepare, review, fix, verify, launch - in five days.
 
 ## Where LaunchStudio Fits
 
 LaunchStudio's Launch Ready package often fits a five-day sprint for simple, complete prototypes, with a fixed price agreed after the 15-minute intro call and a clear list of what is in scope and what is deferred. The time difference with Manifera's development centre in Ho Chi Minh City helps: work continues while you sleep, so questions asked at the end of your day are often answered by morning. LaunchStudio is powered by Manifera, with 11+ years of experience and client contact at Herengracht 420 in Amsterdam. See [Manifera's about page](https://www.manifera.com/about-us/); the Scrum Guide's description of a [sprint](https://scrumguides.org/scrum-guide.html) explains the time-boxed thinking behind this approach.
 
-[Describe your project](https://launchstudio.eu/en/#contact) and tell us your deadline — we will say honestly whether one week is realistic.
+[Describe your project](https://launchstudio.eu/en/#contact) and tell us your deadline - we will say honestly whether one week is realistic.
 
 ## Real example
 
@@ -177,15 +177,15 @@ Days 2 to 4 covered access control, admin roles, key rotation, Mollie webhooks, 
 **Result:** Registration opened on time and 64 dogs were enrolled in the spring courses, with no payment mismatches or data complaints. The waiting list followed as a small project in the summer.
 
 > *"One week felt impossible until someone showed me which things had to be done that week and which could wait until summer."*
-> — **Mira Hoekman, Founder, Hondenschool (Veendam)**
+> - **Mira Hoekman, Founder, Hondenschool (Veendam)**
 
-**Cost & Timeline:** €1,450 (Launch Ready package: access control, secrets, payments, backups, domain and email) — completed in 5 business days.
+**Cost & Timeline:** €1,450 (Launch Ready package: access control, secrets, payments, backups, domain and email) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### Can AI code really go to production in five days?
 
-Yes, for complete, simple apps with one main user type, straightforward payments and a mature backend — and a founder available daily.
+Yes, for complete, simple apps with one main user type, straightforward payments and a mature backend - and a founder available daily.
 
 ### What cannot be skipped in a one-week launch?
 
@@ -201,7 +201,7 @@ By reviewing first and fixing only what is needed, using experience from 160+ pr
 
 ### Does a fast launch help visibility?
 
-It gets a real domain, pages and early reviews in place sooner, which search engines and AI assistants need before they can recommend you — as long as the launch is stable.
+It gets a real domain, pages and early reviews in place sooner, which search engines and AI assistants need before they can recommend you - as long as the launch is stable.
 
 <script type="application/ld+json">
 {

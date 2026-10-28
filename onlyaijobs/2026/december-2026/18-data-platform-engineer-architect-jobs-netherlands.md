@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Data Platform Engineer and Data Architect Jobs in the Netherlands: The Roles That Outlast the Hype",
-  "description": "Platform and architecture roles are the most consistently advertised data jobs in the Netherlands, and the ones least affected by shifts in AI fashion — here is what they involve and how to move into them.",
+  "description": "Platform and architecture roles are the most consistently advertised data jobs in the Netherlands, and the ones least affected by shifts in AI fashion - here is what they involve and how to move into them.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-09",
@@ -35,11 +35,11 @@ Content Format: Career Guide
 }
 </script>
 
-Every few years the Dutch data job market rearranges itself around a new centre of gravity: big data, then data science, then machine learning engineering, then generative AI. Through all of it, one category of vacancy has appeared continuously and in volume — the people who build and run the platform that everything else depends on. If your priority is a durable career rather than a fashionable one, this is the part of the field to understand.
+Every few years the Dutch data job market rearranges itself around a new centre of gravity: big data, then data science, then machine learning engineering, then generative AI. Through all of it, one category of vacancy has appeared continuously and in volume - the people who build and run the platform that everything else depends on. If your priority is a durable career rather than a fashionable one, this is the part of the field to understand.
 
 ## What the Role Actually Covers
 
-The titles vary — data engineer, data platform engineer, analytics engineer, data architect, data product owner — but the underlying job is to make data available, reliable, governed and usable at an agreed cost.
+The titles vary - data engineer, data platform engineer, analytics engineer, data architect, data product owner - but the underlying job is to make data available, reliable, governed and usable at an agreed cost.
 
 **Data platform engineering** leans towards infrastructure: storage and compute, orchestration, CI/CD, observability, access control, cost management, and the developer experience of everyone who uses the platform.
 
@@ -55,7 +55,7 @@ In smaller Dutch organisations one person does all four. In larger ones they are
 
 Three forces sustain the demand regardless of AI fashion.
 
-**Regulation.** GDPR obligations around purpose limitation, retention and access have to be implemented somewhere, and that somewhere is the platform. Add sector rules — financial resilience requirements, cybersecurity legislation, sustainability reporting — and the platform becomes the control point for compliance. Organisations discover that they cannot answer a regulator's question without lineage, so they invest.
+**Regulation.** GDPR obligations around purpose limitation, retention and access have to be implemented somewhere, and that somewhere is the platform. Add sector rules - financial resilience requirements, cybersecurity legislation, sustainability reporting - and the platform becomes the control point for compliance. Organisations discover that they cannot answer a regulator's question without lineage, so they invest.
 
 **AI adoption.** Every serious machine learning or generative AI initiative eventually stalls on data availability, quality or governance. The pattern in the Dutch market has been consistent: companies hire data scientists, discover their data foundation cannot support them, and then hire platform people. Ambition in AI reliably converts into demand for engineering.
 
@@ -63,7 +63,7 @@ Three forces sustain the demand regardless of AI fashion.
 
 ## The Architectural Debates You Will Be Asked About
 
-**Centralised versus decentralised ownership.** Data mesh popularised domain ownership of data products. In practice most Dutch organisations land somewhere in between: a central platform team providing infrastructure and standards, with domain teams owning their data products. Candidates should be able to discuss the trade-off honestly — decentralisation improves domain knowledge and speed, and risks inconsistency and duplicated effort.
+**Centralised versus decentralised ownership.** Data mesh popularised domain ownership of data products. In practice most Dutch organisations land somewhere in between: a central platform team providing infrastructure and standards, with domain teams owning their data products. Candidates should be able to discuss the trade-off honestly - decentralisation improves domain knowledge and speed, and risks inconsistency and duplicated effort.
 
 **Lakehouse versus warehouse.** The convergence of lake and warehouse architectures has reduced this argument to a question of workloads, formats and governance needs rather than religion.
 
@@ -91,11 +91,11 @@ The second misconception is that platform engineers do not need to understand th
 
 ## Skills That Stand Out
 
-- **SQL at a professional level.** Window functions, query planning, cost awareness — still the most under-rated skill in the field.
+- **SQL at a professional level.** Window functions, query planning, cost awareness - still the most under-rated skill in the field.
 - **One cloud platform, deeply.** Plus infrastructure as code and CI/CD for data.
 - **Orchestration and testing.** Dependency management, retries, idempotency, data quality tests and alerting that people act on.
 - **Modelling.** Dimensional and normalised approaches, slowly changing dimensions, and grain discipline.
-- **Streaming where justified.** Understanding event semantics, ordering and exactly-once claims — and being able to say when batch is the better answer.
+- **Streaming where justified.** Understanding event semantics, ordering and exactly-once claims - and being able to say when batch is the better answer.
 - **Governance mechanics.** Cataloguing, lineage, classification, retention and access control as implemented features rather than policy documents.
 - **Cost engineering.** Storage tiering, compute sizing, query optimisation, and measuring cost per workload.
 - **Dutch.** Widely expected in enterprise and public-sector roles, though many product and platform teams in international companies work in English.
@@ -114,7 +114,7 @@ In all three cases, build something with tests, lineage and documentation rather
 
 Progression runs from engineer to senior engineer to lead or principal, with two divergent paths at the top: architecture, which is design and governance across the organisation, and engineering management. Many experienced platform people also move into consultancy or contracting, where day rates for scarce skills are high and Dutch demand is steady.
 
-Compensation for senior platform engineers and architects is competitive with, and frequently above, equivalent data science roles — a reversal of the pattern from a decade ago that reflects how difficult these people are to replace.
+Compensation for senior platform engineers and architects is competitive with, and frequently above, equivalent data science roles - a reversal of the pattern from a decade ago that reflects how difficult these people are to replace.
 
 ## Questions Worth Asking in an Interview
 
@@ -129,7 +129,7 @@ Compensation for senior platform engineers and architects is competitive with, a
 
 The arrival of language models in enterprise software did not reduce the need for data engineering; it exposed how much of it was missing.
 
-Retrieval-based applications need a document corpus that is current, permissioned and chunked sensibly — which is a pipeline problem. Agents that query business data need well-defined semantic layers, because a model asking for "revenue" will produce confident nonsense if three definitions exist. Evaluation of model outputs needs logged interactions, labelled examples and reporting — another pipeline. Cost control needs per-request accounting.
+Retrieval-based applications need a document corpus that is current, permissioned and chunked sensibly - which is a pipeline problem. Agents that query business data need well-defined semantic layers, because a model asking for "revenue" will produce confident nonsense if three definitions exist. Evaluation of model outputs needs logged interactions, labelled examples and reporting - another pipeline. Cost control needs per-request accounting.
 
 The result in the Dutch market has been a quiet expansion of platform responsibilities rather than a replacement of them. Teams now own vector stores alongside warehouses, prompt and model versioning alongside code versioning, and a new class of quality problem where the output is text rather than a number.
 
@@ -161,14 +161,14 @@ Engineers who internalise these habits become the people organisations promote, 
 
 ## Where to Start
 
-Build one small platform end to end — ingestion, tested transformations, documentation, lineage and a cost estimate — and be ready to explain every design trade-off you made.
+Build one small platform end to end - ingestion, tested transformations, documentation, lineage and a cost estimate - and be ready to explain every design trade-off you made.
 
 Browse current data engineering, platform and architecture roles at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: data scientist considering a move) Is platform work less interesting than machine learning?
-Not in practice — the design space is large, constraints are severe, and decisions shape an organisation for years.
+Not in practice - the design space is large, constraints are severe, and decisions shape an organisation for years.
 
 ### (Scenario: software engineer) How hard is the transition into data engineering?
 Shorter than expected: engineering discipline transfers directly, and the main new skill is data modelling.
@@ -187,9 +187,9 @@ Often in enterprise and public-sector environments; international product compan
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is data platform work less interesting than machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Not in practice — the design space is large and decisions shape an organisation for years."}},
+    {"@type": "Question", "name": "Is data platform work less interesting than machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Not in practice - the design space is large and decisions shape an organisation for years."}},
     {"@type": "Question", "name": "How hard is it to move from software engineering to data engineering?", "acceptedAnswer": {"@type": "Answer", "text": "Shorter than expected: engineering discipline transfers directly and data modelling is the main new skill."}},
-    {"@type": "Question", "name": "What is the fastest route from analysis into platform roles?", "acceptedAnswer": {"@type": "Answer", "text": "Analytics engineering — own the transformation layer with testing, documentation and version control."}},
+    {"@type": "Question", "name": "What is the fastest route from analysis into platform roles?", "acceptedAnswer": {"@type": "Answer", "text": "Analytics engineering - own the transformation layer with testing, documentation and version control."}},
     {"@type": "Question", "name": "Do data platform roles pay well in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Senior platform engineers and architects are commonly paid at or above comparable data science levels."}},
     {"@type": "Question", "name": "Is Dutch required for data platform jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Often in enterprise and public-sector environments; international product companies frequently work in English."}}
   ]

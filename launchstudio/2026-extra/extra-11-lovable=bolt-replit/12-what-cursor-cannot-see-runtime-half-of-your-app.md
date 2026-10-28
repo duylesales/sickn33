@@ -26,7 +26,7 @@ It would not, and the reason is not a limitation of the model. It is that roughl
 
 ## The Two Halves, Named Clearly
 
-**The static half** is your source code: logic, structure, dependencies, types. AI editors are genuinely excellent here — spotting inconsistencies, suggesting refactors, catching a null case you missed, explaining unfamiliar code faster than you could read it.
+**The static half** is your source code: logic, structure, dependencies, types. AI editors are genuinely excellent here - spotting inconsistencies, suggesting refactors, catching a null case you missed, explaining unfamiliar code faster than you could read it.
 
 **The runtime half** is everything that only exists when the app is running against real infrastructure and real people. Environment variables and their values. Database access policies. Network boundaries and which service can reach which. Data that has accumulated shapes nobody designed. Concurrency. Third-party services with their own moods.
 
@@ -48,7 +48,7 @@ No amount of reading the repository surfaces any of these, because in all four c
 
 There is a psychological dimension worth naming, because it affects experienced developers as much as newcomers.
 
-Code produced or reviewed by a capable assistant reads well. It is idiomatic, consistently formatted, plausibly structured, and it typically runs on the first attempt. That combination produces a confidence signal your brain has spent years learning to trust — historically, code that looked this coherent had usually been thought about carefully.
+Code produced or reviewed by a capable assistant reads well. It is idiomatic, consistently formatted, plausibly structured, and it typically runs on the first attempt. That combination produces a confidence signal your brain has spent years learning to trust - historically, code that looked this coherent had usually been thought about carefully.
 
 That correlation no longer holds. Fluency is now cheap and correctness is not, and the gap between them is where production incidents live. The practical implication is not to distrust the tool; it is to stop treating "it looks right and it ran" as evidence about anything except that it looks right and it ran.
 
@@ -58,7 +58,7 @@ Once you accept that half the system is invisible to static inspection, the ques
 
 **Error tracking.** Every unhandled exception, with a stack trace, the user context and the request that caused it, sent somewhere you will actually look. This single item turns "a customer says it broke" into a diagnosable event.
 
-**Structured logs you can search.** Not print statements scattered through the code — a consistent record of what happened, with identifiers that let you follow one user's request end to end.
+**Structured logs you can search.** Not print statements scattered through the code - a consistent record of what happened, with identifiers that let you follow one user's request end to end.
 
 **Uptime monitoring.** An external check that your app responds, from outside your own infrastructure, alerting somewhere that reaches you.
 
@@ -92,7 +92,7 @@ The runtime layer is exactly what LaunchStudio builds underneath an existing pro
 
 The frontend you built in Cursor, Lovable or Bolt is untouched, the codebase stays conventional and AI-readable, and the code remains yours. That work is delivered by Manifera's engineers, whose eleven years of production systems for clients including Vodafone, TNO and CFLW is mostly eleven years of the runtime half.
 
-If you have a product live and no way of knowing when it fails, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — or see what [Launch Ready](https://launchstudio.eu/en/#packages) includes before you assemble it yourself.
+If you have a product live and no way of knowing when it fails, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - or see what [Launch Ready](https://launchstudio.eu/en/#packages) includes before you assemble it yourself.
 
 ## Reading an Error Without Panicking
 
@@ -134,18 +134,18 @@ Worse, nobody noticed for two days. There was no error tracking, so the duplicat
 
 Six business days of work: the booking operation rewritten as a single atomic transaction with a database-level constraint so the seat cannot be sold twice regardless of timing, error tracking and structured logging added, uptime monitoring wired to Wouter's phone, and a load test that simulates fifty simultaneous purchases now part of the deploy pipeline.
 
-**Result:** the same venue ran a sold-out run of eleven performances two months later without a single duplicate, and the one incident that did occur — a payment provider timeout — appeared in Wouter's error tracker eleven minutes before the venue called.
+**Result:** the same venue ran a sold-out run of eleven performances two months later without a single duplicate, and the one incident that did occur - a payment provider timeout - appeared in Wouter's error tracker eleven minutes before the venue called.
 
 > *"My editor had read that function dozens of times. It was correct. It just wasn't correct when two people clicked at once, and there was no way for it to know that."*
-> — **Wouter Bleeker, Founder, Podiumkaart (Haarlem)**
+> - **Wouter Bleeker, Founder, Podiumkaart (Haarlem)**
 
-**Cost & Timeline:** €2,800 (transaction rewrite, observability setup, load testing in pipeline) — completed in 6 business days.
+**Cost & Timeline:** €2,800 (transaction rewrite, observability setup, load testing in pipeline) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
 ### Can an AI editor find security problems in my code?
 
-It can find some patterns in code it can read — a missing check, an unsafe query construction. It cannot evaluate your database access policies, your hosting configuration or what an authenticated stranger can reach, because none of that is in the repository.
+It can find some patterns in code it can read - a missing check, an unsafe query construction. It cannot evaluate your database access policies, your hosting configuration or what an authenticated stranger can reach, because none of that is in the repository.
 
 ### If my tests pass, am I covered for runtime issues?
 
@@ -189,7 +189,7 @@ No. It means the confidence signal has changed. Code that reads fluently and run
       "name": "What is the minimum monitoring a small product should have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Error tracking, searchable structured logs, an external uptime check and basic response and error-rate metrics — an afternoon of setup for a small product."
+        "text": "Error tracking, searchable structured logs, an external uptime check and basic response and error-rate metrics - an afternoon of setup for a small product."
       }
     },
     {
@@ -205,7 +205,7 @@ No. It means the confidence signal has changed. Code that reads fluently and run
       "name": "Does this mean AI-assisted development is unsafe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it means the confidence signal changed. Fluent, running code is no longer evidence of careful thought, so verification must come from observing the running system."
+        "text": "No - it means the confidence signal changed. Fluent, running code is no longer evidence of careful thought, so verification must come from observing the running system."
       }
     }
   ]

@@ -35,15 +35,15 @@ Content Format: Career Guide
 }
 </script>
 
-Computer vision as a discipline doesn't cluster neatly under one job title in the Dutch market. It's the perception system in a robotics role, the quality-inspection model in manufacturing, the crop-monitoring tool in agri-tech, and the diagnostic-imaging model in healthcare — the same underlying skill, applied across industries that rarely describe themselves the same way.
+Computer vision as a discipline doesn't cluster neatly under one job title in the Dutch market. It's the perception system in a robotics role, the quality-inspection model in manufacturing, the crop-monitoring tool in agri-tech, and the diagnostic-imaging model in healthcare - the same underlying skill, applied across industries that rarely describe themselves the same way.
 
 ## Why It Spreads Across So Many Industries
 
-Vision is a general-purpose capability, not an industry. Any domain with a camera or an imaging sensor and a classification or detection problem is a candidate for computer vision work — which means the discipline shows up in manufacturing quality control, agricultural monitoring, medical imaging, retail analytics and robotics perception, each with its own vocabulary.
+Vision is a general-purpose capability, not an industry. Any domain with a camera or an imaging sensor and a classification or detection problem is a candidate for computer vision work - which means the discipline shows up in manufacturing quality control, agricultural monitoring, medical imaging, retail analytics and robotics perception, each with its own vocabulary.
 
 ## What Stays Constant Across These Contexts
 
-The core technical skill — building and evaluating models that extract information from visual data — transfers across industries even when the domain knowledge doesn't. A computer vision engineer moving from manufacturing inspection to medical imaging carries the technical foundation with them, even though the specific problem and stakes change significantly.
+The core technical skill - building and evaluating models that extract information from visual data - transfers across industries even when the domain knowledge doesn't. A computer vision engineer moving from manufacturing inspection to medical imaging carries the technical foundation with them, even though the specific problem and stakes change significantly.
 
 ## Why a Single Job Search Misses Most of This Work
 
@@ -51,7 +51,7 @@ Searching "computer vision engineer" surfaces only postings that use that exact 
 
 ## A Deeper Look at Why Vision Work Fragments Across Industries
 
-Unlike language modeling, which has consolidated around a fairly common toolset and vocabulary across industries in the last few years, computer vision remains fragmented because the physical setup — camera type, lighting conditions, what counts as a defect or a relevant object — differs enormously by domain. A manufacturing-inspection vision system and an agricultural-monitoring vision system might use structurally similar models, but the surrounding engineering (camera placement, lighting calibration, labeling conventions) is domain-specific enough that expertise doesn't transfer as cleanly as the underlying algorithms suggest it should.
+Unlike language modeling, which has consolidated around a fairly common toolset and vocabulary across industries in the last few years, computer vision remains fragmented because the physical setup - camera type, lighting conditions, what counts as a defect or a relevant object - differs enormously by domain. A manufacturing-inspection vision system and an agricultural-monitoring vision system might use structurally similar models, but the surrounding engineering (camera placement, lighting calibration, labeling conventions) is domain-specific enough that expertise doesn't transfer as cleanly as the underlying algorithms suggest it should.
 
 ## Mapping Vision Sub-Specializations to Where They Show Up
 
@@ -64,7 +64,7 @@ Unlike language modeling, which has consolidated around a fairly common toolset 
 
 ## Why Building a Cross-Domain Portfolio Is a Genuine Career Strategy
 
-Because the discipline is so fragmented by industry, a computer vision specialist who has worked across two or three of these domains — say, manufacturing inspection and agricultural monitoring — becomes unusually valuable precisely because most candidates stay siloed within the industry they started in. If you're early in a computer vision career, deliberately seeking a second domain after your first role is one of the more reliable ways to build a durable, differentiated specialization rather than becoming interchangeable with anyone else who knows the same underlying algorithms.
+Because the discipline is so fragmented by industry, a computer vision specialist who has worked across two or three of these domains - say, manufacturing inspection and agricultural monitoring - becomes unusually valuable precisely because most candidates stay siloed within the industry they started in. If you're early in a computer vision career, deliberately seeking a second domain after your first role is one of the more reliable ways to build a durable, differentiated specialization rather than becoming interchangeable with anyone else who knows the same underlying algorithms.
 
 ## Why the Physical Setup Determines More Than the Model Architecture
 
@@ -80,9 +80,9 @@ The practical implication for candidates is that demonstrating awareness of this
 
 The second under-appreciated reality of applied computer vision is that obtaining reliable labels is frequently the binding constraint on a project, and understanding why prepares candidates for how these projects actually unfold.
 
-Unlike text or tabular data, where a label is often a straightforward categorical judgement, visual labelling frequently requires domain expertise and involves genuine ambiguity. Deciding whether a particular surface mark constitutes a defect requiring rejection, a cosmetic imperfection within tolerance, or an artefact of the imaging process itself may require a quality engineer with years of experience — and two such engineers may disagree. This inter-annotator disagreement is not noise to be averaged away; it often reflects genuine ambiguity in the underlying category definition, and discovering it early frequently prompts a productive conversation about what the business actually wants to detect.
+Unlike text or tabular data, where a label is often a straightforward categorical judgement, visual labelling frequently requires domain expertise and involves genuine ambiguity. Deciding whether a particular surface mark constitutes a defect requiring rejection, a cosmetic imperfection within tolerance, or an artefact of the imaging process itself may require a quality engineer with years of experience - and two such engineers may disagree. This inter-annotator disagreement is not noise to be averaged away; it often reflects genuine ambiguity in the underlying category definition, and discovering it early frequently prompts a productive conversation about what the business actually wants to detect.
 
-The volume problem compounds this. Supervised vision models typically require substantial labelled examples, and if each label requires expert attention, the cost and calendar time to assemble a training set can dwarf the modelling effort. This is why techniques that reduce labelling requirements — transfer learning from pre-trained models, active learning approaches that prioritise the most informative examples for labelling, synthetic data generation where the physics permits it — matter enormously in practice even though they receive less attention than architectural innovations.
+The volume problem compounds this. Supervised vision models typically require substantial labelled examples, and if each label requires expert attention, the cost and calendar time to assemble a training set can dwarf the modelling effort. This is why techniques that reduce labelling requirements - transfer learning from pre-trained models, active learning approaches that prioritise the most informative examples for labelling, synthetic data generation where the physics permits it - matter enormously in practice even though they receive less attention than architectural innovations.
 
 For candidates, familiarity with these label-efficiency techniques is disproportionately valuable relative to how much attention they receive in most educational material. Being able to discuss how you would approach a problem where only a few hundred labelled examples are realistically obtainable demonstrates practical judgement that separates candidates who have worked on real vision problems from those who have only worked with benchmark datasets where labels arrive free.
 
@@ -90,11 +90,11 @@ For candidates, familiarity with these label-efficiency techniques is disproport
 
 Given the gap between benchmark-dataset work and applied vision work described above, candidates benefit from portfolio projects deliberately structured to demonstrate the applied dimension rather than the modelling dimension alone.
 
-The most effective structure involves capturing your own images rather than downloading a prepared dataset. This immediately forces engagement with the acquisition questions — lighting, angle, consistency — that determine real-world performance, and it produces a project narrative that no benchmark-dataset project can match. The subject matter matters less than the process: a project detecting defects in a household object photographed under varying conditions demonstrates more relevant capability than a state-of-the-art result on a standard academic benchmark.
+The most effective structure involves capturing your own images rather than downloading a prepared dataset. This immediately forces engagement with the acquisition questions - lighting, angle, consistency - that determine real-world performance, and it produces a project narrative that no benchmark-dataset project can match. The subject matter matters less than the process: a project detecting defects in a household object photographed under varying conditions demonstrates more relevant capability than a state-of-the-art result on a standard academic benchmark.
 
 A second valuable element is explicitly documenting a failure mode you discovered and addressed. Every real vision system fails in specific, describable ways, and a candidate who can walk through the discovery of such a failure, its root cause, and the mitigation demonstrates the diagnostic capability that applied work requires. This is more persuasive than a project that reports only a headline accuracy figure with no discussion of where the system breaks down.
 
-Third, if the domain permits, demonstrating any deployment under real constraints — running inference on modest hardware, meeting a latency target, handling a continuous stream rather than batch processing — connects directly to the deployment realities discussed in the robotics and manufacturing analyses elsewhere on this site, and it is a differentiator that relatively few candidate portfolios include.
+Third, if the domain permits, demonstrating any deployment under real constraints - running inference on modest hardware, meeting a latency target, handling a continuous stream rather than batch processing - connects directly to the deployment realities discussed in the robotics and manufacturing analyses elsewhere on this site, and it is a differentiator that relatively few candidate portfolios include.
 
 ## What Cross-Domain Movement Actually Requires in Practice
 
@@ -118,7 +118,7 @@ The practical value of this map is that it converts an abstract national search 
 
 The practical texture of computer vision work has shifted meaningfully over recent years, and candidates entering now should understand the direction of travel. Increasingly capable general-purpose vision models have reduced the amount of task-specific training required for many straightforward recognition problems, which has shifted the centre of gravity of applied work further toward the surrounding engineering: acquisition design, evaluation, edge deployment and integration into operational systems.
 
-For candidates, this reinforces rather than undermines the advice throughout this article. The parts of the work that remain hardest to automate away — understanding the physical setup, defining what actually constitutes a defect or a condition of interest, building evaluation that catches real failures, deploying under genuine constraints — are precisely the parts that domain engagement and applied experience build. A candidate who invests in those capabilities is investing in the durable portion of the discipline rather than in the portion most exposed to being commoditised by the next generation of general-purpose models.
+For candidates, this reinforces rather than undermines the advice throughout this article. The parts of the work that remain hardest to automate away - understanding the physical setup, defining what actually constitutes a defect or a condition of interest, building evaluation that catches real failures, deploying under genuine constraints - are precisely the parts that domain engagement and applied experience build. A candidate who invests in those capabilities is investing in the durable portion of the discipline rather than in the portion most exposed to being commoditised by the next generation of general-purpose models.
 
 ## Named Employers and Research Groups Across Dutch Computer Vision
 
@@ -164,10 +164,10 @@ Browse current AI, machine learning and data vacancies across the Netherlands at
 ## Frequently Asked Questions
 
 ### (Scenario: candidate searching only "computer vision engineer") Why do I find so few results searching "computer vision engineer" in the Netherlands?
-Computer vision work is embedded inside industry-specific titles — robotics perception, automated quality inspection, precision agriculture — rather than concentrated under one standard title.
+Computer vision work is embedded inside industry-specific titles - robotics perception, automated quality inspection, precision agriculture - rather than concentrated under one standard title.
 
 ### (Scenario: candidate wondering if their skills transfer across industries) Does computer vision experience in one industry transfer to another?
-The core technical skill — building and evaluating models that extract information from visual data — transfers well, even though domain knowledge and specific stakes change significantly between industries.
+The core technical skill - building and evaluating models that extract information from visual data - transfers well, even though domain knowledge and specific stakes change significantly between industries.
 
 ### (Scenario: candidate deciding which industries to consider) Which industries in the Netherlands use computer vision most?
 Manufacturing quality control, agricultural monitoring, medical imaging, robotics perception and retail analytics all use it, each under its own industry vocabulary rather than a shared title.

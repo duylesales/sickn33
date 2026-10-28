@@ -37,7 +37,7 @@ Naast het commerciële verkoopargument is er een harde wettelijke verplichting. 
 
 Zij hebben het recht om hun persoonsgegevens te ontvangen in een **gestructureerd, gangbaar en machineleesbaar formaat** (zoals CSV of JSON). Een PDF met statische schermafbeeldingen of een vaag *"we mailen u volgende week een samenvatting"* voldoet juridisch niet.
 
-Voor een B2B SaaS geldt dit rechtstreeks voor de werknemers en cliënten van uw klanten. De meest pragmatische oplossing is een self-service exportknop in het instellingenmenu. Daarmee voldoet u direct aan de wet, neemt u elk aankoopbezwaar weg, én voorkomt u dat u handmatig SQL-queries moet draaien in de productiedatabase — met alle risico's op menselijke fouten en datalekken van dien.
+Voor een B2B SaaS geldt dit rechtstreeks voor de werknemers en cliënten van uw klanten. De meest pragmatische oplossing is een self-service exportknop in het instellingenmenu. Daarmee voldoet u direct aan de wet, neemt u elk aankoopbezwaar weg, én voorkomt u dat u handmatig SQL-queries moet draaien in de productiedatabase - met alle risico's op menselijke fouten en datalekken van dien.
 
 ## Wat Betekent een "Volledige Export" Écht?
 
@@ -50,7 +50,7 @@ Hanteer drie criteria voor een complete export:
 2. **Is het bestand openbaar voor een gewone kantoormedewerker?** Lever tabulaire data in CSV (direct te openen in Excel) en complexe geneste structuren in JSON, verpakt in één overzichtelijke ZIP-map met een korte `README.txt`.
 3. **Zijn de geüploade bestanden inbegrepen?** Klanten die PDF's, contracten of foto's hebben geüpload, beschouwen dat als het meest waardevolle bezit. Omdat bestanden in cloud-storage (zoals S3) staan en niet in PostgreSQL, vergeten AI-prototypes deze vrijwel standaard.
 
-> **Eén belangrijke uitzondering:** Een export moet uitsluitend de data van de klant bevatten — **nooit uw eigen interne systeemvelden**. Interne risicoscores, churn-notities of supportclassificaties horen niet thuis in het downloadbestand.
+> **Eén belangrijke uitzondering:** Een export moet uitsluitend de data van de klant bevatten - **nooit uw eigen interne systeemvelden**. Interne risicoscores, churn-notities of supportclassificaties horen niet thuis in het downloadbestand.
 
 ## De Vier Beveiligingsfouten Die van Export een Datalek Maken
 
@@ -78,7 +78,7 @@ Bijna elke export faalt bij de eerste poging: datums staan in een afwijkend form
 
 Als uw eigen import uw eigen export vlekkeloos kan inlezen, heeft u niet alleen een waterdichte exportfunctie gebouwd; u heeft direct een fantastisch mechanisme voor noodherstel, migraties en account-splitsingen in handen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productiekwaliteit software) bouwen we achtergrond-exports, veilige tijdelijke tokens en AVG-conforme dataportabiliteit standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw dataveiligheid met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software direct aanbestedingsklaar is.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productiekwaliteit software) bouwen we achtergrond-exports, veilige tijdelijke tokens en AVG-conforme dataportabiliteit standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw dataveiligheid met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw software direct aanbestedingsklaar is.
 
 ## Echt voorbeeld
 
@@ -97,7 +97,7 @@ Tijdens onze audit kwamen nog twee ernstige kwetsbaarheden aan het licht: de exp
 **Resultaat:** Binnen drie werkdagen herbouwde LaunchStudio de export naar een asynchrone achtergrondtaak. Het systeem genereert nu een complete ZIP-map met CSV's, JSON-relaties en alle originele PDF's en foto's. De downloadlink verloopt na 24 uur en vereist twee-factor authenticatie. De woningcorporatie tekende het kwartaal erop alsnog een driejarig contract.
 
 > *"Ik dacht dat een exportfunctie alleen bedoeld was voor klanten die wilden vertrekken. De allereerste keer dat ik hem echt nodig had, was bij een klant die wilde beslissen of hij überhaupt wilde tekenen."*
-> — **Ceren Yılmaz, Oprichter, Klachtlijn**
+> - **Ceren Yılmaz, Oprichter, Klachtlijn**
 
 **Kosten & Doorlooptijd:** Asynchrone export-engine, S3-archivering en AVG-beveiliging opgeleverd binnen 3 werkdagen.
 

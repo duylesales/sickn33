@@ -10,7 +10,7 @@ The contract is signed. The vendor's engineers are sitting idle for four days be
 ✅ **Structured Documentation Audit:** A standard onboarding template that surfaces documentation gaps as a forcing function, not a surprise.
 ✅ **Deliberately Modest First Sprint:** A calibration-scoped deliverable that builds trust before complexity ramps up.
 
-The signing is the easy decision — the first 30 days is where dozens of smaller decisions compound into a team that's genuinely productive by week three. 🎯
+The signing is the easy decision - the first 30 days is where dozens of smaller decisions compound into a team that's genuinely productive by week three. 🎯
 
 👉 Read our full 30-day vendor onboarding checklist: https://www.manifera.com/blog/the-first-30-days-after-signing-vendor-onboarding-decisions-that-matter
 

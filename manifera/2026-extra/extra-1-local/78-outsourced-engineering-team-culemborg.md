@@ -20,28 +20,28 @@ target_persona: "CTO"
 }
 </script>
 
-A distribution-center integration doesn't fail because one system breaks — it fails because a change in one system quietly breaks three others nobody thought to check, and an outsourced engineering team unfamiliar with that reality treats every integration like an isolated feature.
+A distribution-center integration doesn't fail because one system breaks - it fails because a change in one system quietly breaks three others nobody thought to check, and an outsourced engineering team unfamiliar with that reality treats every integration like an isolated feature.
 
-**The Pain:** A CTO at a logistics-technology company in Culemborg — a Gelderland town that has become one of the Netherlands' densest concentrations of national distribution centers — needs an outsourced engineering team for a warehouse-management integration project involving a dense web of connected systems: WMS, TMS, EDI partners, and real-time inventory feeds.
+**The Pain:** A CTO at a logistics-technology company in Culemborg - a Gelderland town that has become one of the Netherlands' densest concentrations of national distribution centers - needs an outsourced engineering team for a warehouse-management integration project involving a dense web of connected systems: WMS, TMS, EDI partners, and real-time inventory feeds.
 
-**The Agitation:** A CTO who brings in an outsourced team without an integration-specific discipline standard discovers the risk the hard way — a change that works correctly in isolation triggers a downstream failure in a connected system three weeks later, in production, because nobody mapped the dependency before shipping the change.
+**The Agitation:** A CTO who brings in an outsourced team without an integration-specific discipline standard discovers the risk the hard way - a change that works correctly in isolation triggers a downstream failure in a connected system three weeks later, in production, because nobody mapped the dependency before shipping the change.
 
 ## An Integration Standard for a Dense Systems Environment
 
 An outsourced engineering team working in a distribution-center environment needs a discipline specifically built around systems that are deeply interconnected, where a change's blast radius extends well past the module it directly touches.
 
-The first requirement is dependency mapping as a standard pre-work step for any integration-touching change — a documented understanding of which downstream systems consume the data or events being modified, checked before the change ships, not discovered after.
+The first requirement is dependency mapping as a standard pre-work step for any integration-touching change - a documented understanding of which downstream systems consume the data or events being modified, checked before the change ships, not discovered after.
 
-The second is contract testing between integrated systems, not just unit testing within a single service — verifying that the interface between WMS and TMS, for example, still behaves as every consuming system expects, automatically, on every relevant change.
+The second is contract testing between integrated systems, not just unit testing within a single service - verifying that the interface between WMS and TMS, for example, still behaves as every consuming system expects, automatically, on every relevant change.
 
-The third is staged rollout specifically for integration changes, with a defined rollback path that accounts for state already propagated to connected systems, not just the originating service — because an integration failure often can't be cleanly rolled back without also reconciling downstream state.
+The third is staged rollout specifically for integration changes, with a defined rollback path that accounts for state already propagated to connected systems, not just the originating service - because an integration failure often can't be cleanly rolled back without also reconciling downstream state.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads require documented dependency mapping before any integration-touching change ships, closing the blast-radius blind spot before it reaches production.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds and maintains automated contract tests between connected systems, catching integration breaks before they reach a live distribution-center environment.
 
-This is Dutch Management × Vietnamese Mastery — engineering discipline built for a dense, interconnected systems environment. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - engineering discipline built for a dense, interconnected systems environment. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Logística Ibérica Fulfillment S.L., a fulfillment-technology company based in 
 Manifera introduced mandatory dependency mapping for integration-touching changes and automated contract tests between the client's core connected systems. The next eight months of integration changes produced zero downstream failures of this kind, with dependency maps catching two would-be breaking changes before they shipped.
 
 > *"The change was perfect on its own. That was never the risk. The risk was everything downstream we didn't know was listening, and that's exactly what the new process catches now."*
-> — **CTO, Logística Ibérica Fulfillment S.L., Spain**
+> - **CTO, Logística Ibérica Fulfillment S.L., Spain**
 
 ## Isolated-Change Practice vs. Manifera's Integration-Aware Discipline
 
@@ -66,7 +66,7 @@ Manifera introduced mandatory dependency mapping for integration-touching change
 
 ## The Economics
 
-A downstream integration failure in a distribution-center environment doesn't just cost engineering time to fix — it produces inventory discrepancies, fulfillment delays, and reconciliation work across every connected system affected, a cost that compounds well beyond the original change's scope. Mandatory dependency mapping and contract testing cost a modest addition to each integration-touching change relative to one major downstream incident. [Talk to Manifera about integration-aware engineering discipline](https://www.manifera.com/contact-us/).
+A downstream integration failure in a distribution-center environment doesn't just cost engineering time to fix - it produces inventory discrepancies, fulfillment delays, and reconciliation work across every connected system affected, a cost that compounds well beyond the original change's scope. Mandatory dependency mapping and contract testing cost a modest addition to each integration-touching change relative to one major downstream incident. [Talk to Manifera about integration-aware engineering discipline](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

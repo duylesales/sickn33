@@ -1,4 +1,4 @@
-💼 Mateus built an expense-automation tool using **Bolt** — three weeks before a pre-seed pitch, his investor asked a question he couldn't confidently answer.
+💼 Mateus built an expense-automation tool using **Bolt** - three weeks before a pre-seed pitch, his investor asked a question he couldn't confidently answer.
 
 "If I sign up two client accounts right now, can one see the other's data?" That's the fastest test an investor has for whether your backend is actually sound, or just looks sound in the demo.
 
@@ -12,7 +12,7 @@
 
 At LaunchStudio, we've been getting founders investor-ready since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mateus closed the open due diligence item within days and moved the round to signature without delay. (€1,600 Launch Ready package — 6 business days.) 🚀
+Mateus closed the open due diligence item within days and moved the round to signature without delay. (€1,600 Launch Ready package - 6 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/what-investors-want-before-dev-partner
 

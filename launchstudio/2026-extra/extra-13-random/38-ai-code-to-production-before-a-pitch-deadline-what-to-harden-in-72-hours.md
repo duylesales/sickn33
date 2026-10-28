@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The email arrives on a Monday afternoon: you are through to the final round, pitch on Thursday at 14:00, and the panel "would love to see the product live." You have a Bolt prototype that works on your laptop and a preview link you have sent to friends. There are seventy-two hours. What can actually be done to move AI code to production — or close enough — in that time, and what should you not attempt?
+The email arrives on a Monday afternoon: you are through to the final round, pitch on Thursday at 14:00, and the panel "would love to see the product live." You have a Bolt prototype that works on your laptop and a preview link you have sent to friends. There are seventy-two hours. What can actually be done to move AI code to production - or close enough - in that time, and what should you not attempt?
 
 ## First, Decide What Thursday Needs
 
@@ -32,7 +32,7 @@ A pitch demo is not a launch. Be precise about what the panel will do:
 - **Ask technical questions.** "Is this live? How is data secured? What's built on what?"
 - **Share it.** A panel member forwards the link to a colleague, or a journalist covering demo day tries it.
 
-If only the first applies, a stable demo environment is enough. If any of the others apply — and they usually do — the link must be safe for strangers.
+If only the first applies, a stable demo environment is enough. If any of the others apply - and they usually do - the link must be safe for strangers.
 
 ## Hours 0–12: Triage
 
@@ -48,7 +48,7 @@ The output is a short list: what is dangerous for strangers, what is merely unpo
 
 ## Hours 12–48: Fix Only What Strangers Can Break
 
-With limited time, fix the things that could embarrass you — or harm someone — if a panel member or their colleague clicks around:
+With limited time, fix the things that could embarrass you - or harm someone - if a panel member or their colleague clicks around:
 
 1. **Exposed secret keys:** rotate and move server-side. Non-negotiable; a key found during a pitch week can be abused within hours.
 2. **Cross-user data access:** enforce access on the server for the data a demo user can reach.
@@ -70,7 +70,7 @@ This is usually achievable in 36 hours by an experienced engineer on a typical A
 
 Panels increasingly ask about AI-built products. Prepare honest answers:
 
-- **"Is this production-ready?"** "It's live and safe for trial users; we've hardened access control, secrets and payments. Full production hardening — monitoring, staging, broader testing — is scheduled for the next two weeks."
+- **"Is this production-ready?"** "It's live and safe for trial users; we've hardened access control, secrets and payments. Full production hardening - monitoring, staging, broader testing - is scheduled for the next two weeks."
 - **"How is data secured?"** Say concretely what you did: server-side access rules, EU hosting, keys managed server-side.
 - **"What's it built on?"** Name the tools. AI-built is not a weakness when you can explain what you did around it.
 
@@ -78,7 +78,7 @@ Never claim more than is true. A panel member who tests your claim and finds it 
 
 ## AI Code to Production: What Not to Attempt in 72 Hours
 
-- A database migration between regions — possible but risky under time pressure unless the database is tiny.
+- A database migration between regions - possible but risky under time pressure unless the database is tiny.
 - Rewriting the payment integration from scratch.
 - Adding features the panel might like.
 - Switching hosting providers without a fallback.
@@ -114,8 +114,8 @@ The demo's seed data matters more than founders expect. Design it to show the pr
 
 Panels increasingly include someone who asks about security. Prepare three short, true statements with evidence you can show on screen:
 
-- "Users can only access their own data — here is what happens if I try to open another user's record." (Show the refusal.)
-- "Payment keys never reach the browser — payments are created and confirmed on the server." (Show the architecture slide.)
+- "Users can only access their own data - here is what happens if I try to open another user's record." (Show the refusal.)
+- "Payment keys never reach the browser - payments are created and confirmed on the server." (Show the architecture slide.)
 - "We have a documented plan for the remaining production work over the next two weeks." (Show the list.)
 
 Concrete demonstrations beat assurances, and honesty about what remains builds more credibility than claiming completeness.
@@ -126,11 +126,11 @@ Despite preparation, things can fail: venue Wi-Fi, an external service outage, a
 
 ## The Week After the Pitch
 
-A pitch sprint leaves deliberate gaps. In the week after, return to the full production list: webhook-confirmed payments in live mode, EU data migration if needed, staging for ongoing development, tests on critical flows and monitoring beyond a simple uptime check. If the pitch succeeded, this is also the moment to prepare for due diligence — ownership records, a technical overview and evidence of the security work. The 72-hour sprint made the demo safe; the following two weeks make the company ready.
+A pitch sprint leaves deliberate gaps. In the week after, return to the full production list: webhook-confirmed payments in live mode, EU data migration if needed, staging for ongoing development, tests on critical flows and monitoring beyond a simple uptime check. If the pitch succeeded, this is also the moment to prepare for due diligence - ownership records, a technical overview and evidence of the security work. The 72-hour sprint made the demo safe; the following two weeks make the company ready.
 
 ## When 72 Hours Is Not Enough
 
-Some apps cannot be made safe for strangers in three days: complex role systems, sensitive health or financial data, marketplaces with payouts. In those cases, the honest option is to demo without public sign-ups — a guided demo on a controlled account — and explain the launch timeline. Panels respect founders who protect users over appearances.
+Some apps cannot be made safe for strangers in three days: complex role systems, sensitive health or financial data, marketplaces with payouts. In those cases, the honest option is to demo without public sign-ups - a guided demo on a controlled account - and explain the launch timeline. Panels respect founders who protect users over appearances.
 
 ## Choosing What to Show and What to Hide
 
@@ -155,15 +155,15 @@ If all ten are ticked, the remaining risk is the Wi-Fi.
 
 ## Why Investors Notice the Difference
 
-Experienced investors have watched many AI-built demos. They notice when a founder can explain what is production-ready and what is not, when signing up during the pitch works smoothly, and when a probing question about data protection gets a specific answer. These signals suggest a founder who will handle growth responsibly — which is ultimately what an early-stage investor is betting on.
+Experienced investors have watched many AI-built demos. They notice when a founder can explain what is production-ready and what is not, when signing up during the pitch works smoothly, and when a probing question about data protection gets a specific answer. These signals suggest a founder who will handle growth responsibly - which is ultimately what an early-stage investor is betting on.
 
 ## After Demo Day: Keeping the Momentum
 
-Demo days produce a burst of attention: sign-ups from the audience, follow-up meetings, social media posts. Have the full production work scheduled to start immediately afterwards, so the product that new users meet in the following weeks is at least as solid as the one on stage — and ideally much more so.
+Demo days produce a burst of attention: sign-ups from the audience, follow-up meetings, social media posts. Have the full production work scheduled to start immediately afterwards, so the product that new users meet in the following weeks is at least as solid as the one on stage - and ideally much more so.
 
 ## In One Sentence
 
-Three days is enough to make a demo safe for strangers, not enough to make a company production-ready — so be clear about which one you are doing, and schedule the rest.
+Three days is enough to make a demo safe for strangers, not enough to make a company production-ready - so be clear about which one you are doing, and schedule the rest.
 
 ## Where LaunchStudio Fits
 
@@ -171,7 +171,7 @@ LaunchStudio normally works in one-to-three-week projects, but a focused pre-pit
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, 120+ engineers and offices in Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City. See [Manifera's about page](https://www.manifera.com/about-us/). For a structured view of what panels ask, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) is the framework many technical reviewers have in mind.
 
-If your deadline is this week, [describe your project now](https://launchstudio.eu/en/#contact) — and say "pitch" in the first line.
+If your deadline is this week, [describe your project now](https://launchstudio.eu/en/#contact) - and say "pitch" in the first line.
 
 ## Real example
 
@@ -183,18 +183,18 @@ With 72 hours to go, LaunchStudio's triage found the Mollie live API key in the 
 
 Over three days, the team rotated the Mollie key and moved payment creation server-side, switched the demo environment to Mollie test mode with a visible banner, enforced household-level access on subscriptions and addresses, locked the admin page behind server-side roles, seeded a separate demo database with fictional households, put the demo on Max's domain with SSL and an uptime check, and helped him prepare answers to technical questions. Max froze all changes 18 hours before the pitch.
 
-**Result:** Three panel members signed up during the pitch without incident. One asked how customer data was protected, and Max answered specifically. Groentegilde received a pre-seed offer from one investor, and the full production hardening — webhooks, EU migration, staging and tests — followed in the two weeks after demo day.
+**Result:** Three panel members signed up during the pitch without incident. One asked how customer data was protected, and Max answered specifically. Groentegilde received a pre-seed offer from one investor, and the full production hardening - webhooks, EU migration, staging and tests - followed in the two weeks after demo day.
 
 > *"I stopped trying to make it perfect and made it safe for exactly the people who'd click it on Thursday. That was the right amount of ambition for three days."*
-> — **Max Kuipers, Founder, Groentegilde (Amsterdam)**
+> - **Max Kuipers, Founder, Groentegilde (Amsterdam)**
 
-**Cost & Timeline:** €1,900 (pre-pitch hardening sprint: secrets, access control, admin protection, demo environment and domain) — completed in 3 days; full hardening followed as a separate project.
+**Cost & Timeline:** €1,900 (pre-pitch hardening sprint: secrets, access control, admin protection, demo environment and domain) - completed in 3 days; full hardening followed as a separate project.
 
 ## Frequently Asked Questions
 
 ### Can an AI-built app really be made safe in 72 hours?
 
-Safe for demo-level use by strangers, often yes — by focusing on exposed secrets, cross-user access, admin pages and payments. Full production readiness usually takes one to three weeks.
+Safe for demo-level use by strangers, often yes - by focusing on exposed secrets, cross-user access, admin pages and payments. Full production readiness usually takes one to three weeks.
 
 ### Should I let pitch panels sign up with real payment?
 

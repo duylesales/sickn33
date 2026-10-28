@@ -22,7 +22,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 
 Wat is op dit moment waardevoller voor uw onderneming: iemand die uw Lovable-applicatie deze week drie nieuwe functies kan geven, of iemand die ervoor zorgt dat uw app zijn eerste honderd echte gebruikers overleeft?
 
-Dat zijn twee wezenlijk verschillende profielen. De markt noemt het eerste type tegenwoordig vaak een "Lovable expert" of een "vibe coding developer", terwijl het tweede type simpelweg is wat we vroeger een volwaardige software-engineer noemden. Beide profielen zijn legitiem. Maar het inhuren van het verkeerde type voor uw specifieke fase is hoe oprichters eindigen met een budget dat tweemaal wordt uitgegeven. Het onderscheid draait niet om talent of gereedschap — het draait erom waar ieder van hen instinctief voor optimaliseert.
+Dat zijn twee wezenlijk verschillende profielen. De markt noemt het eerste type tegenwoordig vaak een "Lovable expert" of een "vibe coding developer", terwijl het tweede type simpelweg is wat we vroeger een volwaardige software-engineer noemden. Beide profielen zijn legitiem. Maar het inhuren van het verkeerde type voor uw specifieke fase is hoe oprichters eindigen met een budget dat tweemaal wordt uitgegeven. Het onderscheid draait niet om talent of gereedschap - het draait erom waar ieder van hen instinctief voor optimaliseert.
 
 ## Waar Ieder van Hen Daadwerkelijk Goed in Is
 
@@ -36,7 +36,7 @@ Geen van beiden bezit automatisch de competenties van de ander, en de markt hant
 
 Het zou oneerlijk zijn om specifieke tool-expertise te bagatelliseren. Er is sprake van echte, niet-triviale vakkennis:
 
-Hoe Lovable een project structureert en waar gegenereerde code aannames verbergt. Welke prompts onderhoudbare code opleveren en welke prompts resulteren in code die slechts één keer werkt. Hoe aanpassingen worden gedaan zonder dat de AI-tool ze bij de volgende prompt-ronde direct weer overschrijft. Waar de harde limieten van het platform liggen, en welke problemen aan Lovable liggen in plaats van aan uw logica. En bovenal: hoe een codebase in een zodanige staat blijft dat u er achteraf zelf met de AI-tool in kunt blijven werken — precies het aspect dat traditionele softwareontwikkelaars vaak onbedoeld slopen zonder te beseffen dat het cruciaal voor u is.
+Hoe Lovable een project structureert en waar gegenereerde code aannames verbergt. Welke prompts onderhoudbare code opleveren en welke prompts resulteren in code die slechts één keer werkt. Hoe aanpassingen worden gedaan zonder dat de AI-tool ze bij de volgende prompt-ronde direct weer overschrijft. Waar de harde limieten van het platform liggen, en welke problemen aan Lovable liggen in plaats van aan uw logica. En bovenal: hoe een codebase in een zodanige staat blijft dat u er achteraf zelf met de AI-tool in kunt blijven werken - precies het aspect dat traditionele softwareontwikkelaars vaak onbedoeld slopen zonder te beseffen dat het cruciaal voor u is.
 
 Dat laatste punt alleen al is de investering waard als u van plan bent om het product achteraf zelfstandig te blijven doorontwikkelen.
 
@@ -52,7 +52,7 @@ Daarnaast is er de cruciale vaardigheid van code-analyse. De kerncompetentie van
 
 **2. U heeft een compleet product en uw eerste betalende klanten starten over twee weken.** Huur de productie-engineer. Nieuwe features kunnen wachten; autorisatieregels, betaalafstemming en betrouwbare hosting kunnen dat absoluut niet. Dit is het moment dat oprichters het vaakst verkeerd inschatten, omdat functies toevoegen voelt als vooruitgang en hardening voelt als vertraging.
 
-**3. U bent al live en er haperen stilletjes dingen** — mails komen niet aan, prestaties hollen achteruit, of een klant ziet per ongeluk data van een ander. Schakel onmiddellijk een productie-engineer in, bij voorkeur een die eerst grondig diagnosticeert alvorens oplossingen voor te stellen.
+**3. U bent al live en er haperen stilletjes dingen** - mails komen niet aan, prestaties hollen achteruit, of een klant ziet per ongeluk data van een ander. Schakel onmiddellijk een productie-engineer in, bij voorkeur een die eerst grondig diagnosticeert alvorens oplossingen voor te stellen.
 
 **4. U bent een bureau met een klant die aanklopt met een kant-en-klaar AI-prototype.** U heeft betrouwbare backend-capaciteit nodig die u onder uw eigen naam kunt leveren, zonder direct een vaste engineer op de loonlijst te hoeven zetten voor één enkel project.
 
@@ -76,15 +76,15 @@ LaunchStudio hanteert voor deze laatste-mijl lancering een vaste prijs van €80
 
 Stel elke kandidaat, specialist of generalist, deze ene vraag: "Kan ik dit achteraf nog zelfstandig blijven bewerken in Lovable?"
 
-Het antwoord bepaalt uw komende twaalf maanden. Is het antwoord ja, dan behoudt u de vrijheid om zelf kosteloos kleine wijzigingen door te voeren — wat de hele reden was dat u met deze tools begon. Is het antwoord nee, dan verandert elke toekomstige aanpassing in een factuur en heeft u een snelle, goedkope ontwikkelcyclus ingeruild voor een log en kostbaar proces, zonder dat u dat vooraf wist.
+Het antwoord bepaalt uw komende twaalf maanden. Is het antwoord ja, dan behoudt u de vrijheid om zelf kosteloos kleine wijzigingen door te voeren - wat de hele reden was dat u met deze tools begon. Is het antwoord nee, dan verandert elke toekomstige aanpassing in een factuur en heeft u een snelle, goedkope ontwikkelcyclus ingeruild voor een log en kostbaar proces, zonder dat u dat vooraf wist.
 
-Hoogwaardig productiewerk laat de codebase netjes gedocumenteerd, conventioneel en leesbaar voor AI achter. Dat is een bewuste keuze van de engineer, geen toeval — en hoort daarom expliciet in de opdrachtomschrijving te staan.
+Hoogwaardig productiewerk laat de codebase netjes gedocumenteerd, conventioneel en leesbaar voor AI achter. Dat is een bewuste keuze van de engineer, geen toeval - en hoort daarom expliciet in de opdrachtomschrijving te staan.
 
 ## Als U Het Bureau Bent, En Niet De Oprichter
 
 Een snelgroeiend aantal Nederlandse ontwerpbureaus en digitale freelancers bezit uitstekende klantrelaties en sterke designcapaciteiten, maar beschikt niet over een vast team van backend-engineers. Klanten met een AI-prototype wegsturen is zonde; vast personeel aannemen is riskant omdat de vraag piekt en daalt.
 
-De oplossing is een discrete productiepartner: uw huisstijl en uw klantrelatie blijven voorop staan, met ervaren engineeringkracht achter de schermen. Dat is een vast onderdeel van LaunchStudio's dienstverlening — white-label oplevering onder strikte geheimhouding (NDA) tegen een vaste prijs. Dit werkt omdat het laatste-mijl-probleem gestandaardiseerd genoeg is om als product te worden afgenomen in plaats van als personeelsvraagstuk.
+De oplossing is een discrete productiepartner: uw huisstijl en uw klantrelatie blijven voorop staan, met ervaren engineeringkracht achter de schermen. Dat is een vast onderdeel van LaunchStudio's dienstverlening - white-label oplevering onder strikte geheimhouding (NDA) tegen een vaste prijs. Dit werkt omdat het laatste-mijl-probleem gestandaardiseerd genoeg is om als product te worden afgenomen in plaats van als personeelsvraagstuk.
 
 ## Beslis Binnen Vijf Minuten
 
@@ -96,7 +96,7 @@ Is het antwoord: "Mijn klant loopt weg omdat we dit niet in-house kunnen leveren
 
 Huur uitsluitend in voor dat specifieke antwoord, en evalueer over een kwartaal opnieuw. Oprichters komen in de problemen wanneer ze degene inhuren met wie ze het gezelligst koffie dronken, in plaats van degene die het acute risico oplost dat het product kan laten zinken.
 
-Welke richting u ook kiest: LaunchStudio geeft u binnen één werkdag een vast prijsvoorstel om mee te vergelijken — [beschrijf uw project](https://launchstudio.eu/nl/#contact), of bekijk vooraf [wat een Launch Ready traject dekt](https://launchstudio.eu/nl/#packages). Manifera's engineers leveren al elf jaar enterprise-kwaliteit; voor startups doen we exact hetzelfde met een compacte, betaalbare scope.
+Welke richting u ook kiest: LaunchStudio geeft u binnen één werkdag een vast prijsvoorstel om mee te vergelijken - [beschrijf uw project](https://launchstudio.eu/nl/#contact), of bekijk vooraf [wat een Launch Ready traject dekt](https://launchstudio.eu/nl/#packages). Manifera's engineers leveren al elf jaar enterprise-kwaliteit; voor startups doen we exact hetzelfde met een compacte, betaalbare scope.
 
 ## Wat In De Briefing Hoort, Ongeacht Wie U Inhuurt
 
@@ -112,7 +112,7 @@ Een deugdelijke briefing werkt voor beide typen kandidaten, en het opstellen erv
 
 **Deel openlijk de beperkingen die u gênant vindt.** Een beperkt budget, een no-code tool die puristen afkeuren, een rommelig prototype. Kandidaten die daar neerbuigend op reageren, zouden later op een veel pijnlijker moment alsnog zijn afgehaakt.
 
-**Vraag om een vaste prijs op basis van de uitkomstenlijst.** Kan een kandidaat geen vaste prijs offreren? Dan is de scope nog niet helder genoeg — een waardevol signaal over uw briefing, niet per se over de ontwikkelaar.
+**Vraag om een vaste prijs op basis van de uitkomstenlijst.** Kan een kandidaat geen vaste prijs offreren? Dan is de scope nog niet helder genoeg - een waardevol signaal over uw briefing, niet per se over de ontwikkelaar.
 
 ## Echt voorbeeld
 
@@ -120,14 +120,14 @@ Een deugdelijke briefing werkt voor beide typen kandidaten, en het opstellen erv
 
 Studio Meridiaan is een vierkoppig ontwerpbureau in Utrecht dat steeds vaker een specifiek type klant zag binnenkomen: opdrachtgevers met een in Lovable of Bolt gemaakt prototype, een harde lanceringsdatum en geen technische partner. Het bureau kon de merkidentiteit, de UI en de marketingcampagnes perfect verzorgen. Het kon echter geen databases beveiligen of betaaltransacties afstemmen, en had daardoor in één jaar tijd vier dergelijke opdrachten moeten afwijzen.
 
-Het vijfde project betrof een abonnementsplatform voor een keten van wellness-studio's in Utrecht, met een harde livegang gekoppeld aan een grote najaarscampagne. In plaats van de klant teleur te stellen of hals over kop een dure ontwikkelaar aan te nemen, schakelde Meridiaan LaunchStudio in als white-label productiepartner onder NDA. De eindklant had gedurende het gehele traject uitsluitend contact met Meridiaan, terwijl het backend-werk — RLS-beleidsregels, Mollie-betaalkoppeling met automatische afstemming, hosting, monitoring en een grondige overdracht — naadloos onder de vlag van Meridiaan werd geleverd.
+Het vijfde project betrof een abonnementsplatform voor een keten van wellness-studio's in Utrecht, met een harde livegang gekoppeld aan een grote najaarscampagne. In plaats van de klant teleur te stellen of hals over kop een dure ontwikkelaar aan te nemen, schakelde Meridiaan LaunchStudio in als white-label productiepartner onder NDA. De eindklant had gedurende het gehele traject uitsluitend contact met Meridiaan, terwijl het backend-werk - RLS-beleidsregels, Mollie-betaalkoppeling met automatische afstemming, hosting, monitoring en een grondige overdracht - naadloos onder de vlag van Meridiaan werd geleverd.
 
 **Resultaat:** het platform ging exact op schema live met de najaarscampagne, Meridiaan behield de klant voor een langdurig ontwerpretainer, en heeft sindsdien drie vergelijkbare prototype-naar-productie projecten binnengehaald die het bureau voorheen had moeten weigeren.
 
 > *"We bleven nee verkopen tegen werk dat we uitstekend konden binnenhalen. Nu zeggen we volmondig ja, en de technische oplevering verschijnt gewoon onder onze eigen naam."*
-> — **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
+> - **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
 
-**Kosten & Doorlooptijd:** €4.900 (white-label Launch & Grow-pakket: betalingen, databasetoegangscontrole, managed hosting) — opgeleverd in 15 werkdagen.
+**Kosten & Doorlooptijd:** €4.900 (white-label Launch & Grow-pakket: betalingen, databasetoegangscontrole, managed hosting) - opgeleverd in 15 werkdagen.
 
 ---
 
@@ -135,7 +135,7 @@ Het vijfde project betrof een abonnementsplatform voor een keten van wellness-st
 
 ### Is een "vibe coding developer" een echt specialisme?
 
-Het beschrijft een reële vaardigheid — vloeiend werken met AI-buildertools, prompt-gestuurd itereren en het bewerkbaar houden van gegenereerde code. Het is uiterst waardevol voor snelle productvalidatie, maar het is niet hetzelfde als productie-engineering. Problemen ontstaan wanneer men aanneemt dat beide profielen hetzelfde kunnen.
+Het beschrijft een reële vaardigheid - vloeiend werken met AI-buildertools, prompt-gestuurd itereren en het bewerkbaar houden van gegenereerde code. Het is uiterst waardevol voor snelle productvalidatie, maar het is niet hetzelfde als productie-engineering. Problemen ontstaan wanneer men aanneemt dat beide profielen hetzelfde kunnen.
 
 ### Kan één persoon beide rollen vervullen?
 
@@ -147,7 +147,7 @@ Soms, maar meestal niet. Vraag altijd om een gespecificeerde lijst van wat er te
 
 ### Verlies ik als bureau de klantrelatie bij een white-label samenwerking?
 
-Nee — dat is juist het fundament van de constructie. De klant blijft 100% van u, het werk wordt onder uw merk en onder geheimhouding (NDA) geleverd, en de engineeringkracht treedt alleen op wanneer een project daarom vraagt.
+Nee - dat is juist het fundament van de constructie. De klant blijft 100% van u, het werk wordt onder uw merk en onder geheimhouding (NDA) geleverd, en de engineeringkracht treedt alleen op wanneer een project daarom vraagt.
 
 ### Hoe weet ik welk type ik nú direct nodig heb?
 

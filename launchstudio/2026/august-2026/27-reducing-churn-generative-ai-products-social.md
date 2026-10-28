@@ -1,4 +1,4 @@
-🔥 Nora built a prototype using **Lovable** — nora, an agency founder, used **lovable** to build an email generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Nora built a prototype using **Lovable** - nora, an agency founder, used **lovable** to build an email generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Nora's application achieved silky-smooth performance: User churn dropped to 8.5% within 30 days of implementing the updates. (€1,800 (Onboarding Optimization) — production-ready and deployed in 4 business days.). 🚀
+Nora's application achieved silky-smooth performance: User churn dropped to 8.5% within 30 days of implementing the updates. (€1,800 (Onboarding Optimization) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/reducing-churn-generative-ai-products
 

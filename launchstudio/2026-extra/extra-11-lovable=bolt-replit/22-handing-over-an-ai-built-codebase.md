@@ -12,7 +12,7 @@ Target Persona: Agency / Freelancer (White-Label Partner)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable Developer Handover: What a Proper One Contains",
-  "description": "The nine things that should change hands when an engagement ends: repository, accounts, secrets, runbook, known issues and the decisions nobody wrote down — with a checklist for founders and agencies on both sides of the delivery.",
+  "description": "The nine things that should change hands when an engagement ends: repository, accounts, secrets, runbook, known issues and the decisions nobody wrote down - with a checklist for founders and agencies on both sides of the delivery.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-24",
@@ -20,17 +20,17 @@ Target Persona: Agency / Freelancer (White-Label Partner)
 }
 </script>
 
-A handover is not a moment. It is a set of objects, and the reason so many engagements end badly is that everyone treats it as an event — a final call, a "you're all set", an invoice — rather than a delivery with a contents list.
+A handover is not a moment. It is a set of objects, and the reason so many engagements end badly is that everyone treats it as an event - a final call, a "you're all set", an invoice - rather than a delivery with a contents list.
 
 The test is simple and unforgiving: three months after the engagement ends, with the original engineer unreachable, can a competent stranger pick this up and make a change safely? For most AI-built products that have passed through a freelancer or an agency, the answer is no, and the reason is rarely bad faith. It is that nobody agreed what handover meant.
 
 ## Nine Things That Should Change Hands
 
-**One: the repository, in your account.** Not shared with you, not exported as a zip — owned by you, with the full commit history. History matters: it is how the next person understands why something is the way it is, and it is where you check whether credentials were ever committed.
+**One: the repository, in your account.** Not shared with you, not exported as a zip - owned by you, with the full commit history. History matters: it is how the next person understands why something is the way it is, and it is where you check whether credentials were ever committed.
 
 **Two: every account, in your name.** Hosting, database, domain registrar, payment provider, email service, error tracking, any AI or third-party API. Your email, your billing details, contractors granted access you can revoke. This is the item most often skipped and the most expensive to fix later.
 
-**Three: a secrets inventory.** A list of every credential the application uses, where each one lives, what it unlocks and how to rotate it. Not the values in a document — the map. Anyone who has held the values should be assumed to still have them, so this list is also your rotation plan.
+**Three: a secrets inventory.** A list of every credential the application uses, where each one lives, what it unlocks and how to rotate it. Not the values in a document - the map. Anyone who has held the values should be assumed to still have them, so this list is also your rotation plan.
 
 **Four: a runbook.** One page: how to run the app locally, how to deploy, how to roll back, how to restore a backup, and what to do when the site is down. Written for someone who was not there.
 
@@ -42,7 +42,7 @@ The test is simple and unforgiving: three months after the engagement ends, with
 
 **Eight: the tests and how to run them,** along with what they cover and, more usefully, what they do not.
 
-**Nine: a support window.** Two weeks of availability for questions, agreed in advance and priced in. Not open-ended maintenance — a defined period during which "how does this bit work" gets an answer.
+**Nine: a support window.** Two weeks of availability for questions, agreed in advance and priced in. Not open-ended maintenance - a defined period during which "how does this bit work" gets an answer.
 
 ## The AI-Specific Additions
 
@@ -58,7 +58,7 @@ An AI-built codebase has three items that a traditional handover does not need, 
 
 If you deliver AI-built products for clients, the handover is where your reputation is made or quietly damaged, because it is the part the client experiences after the excitement has faded.
 
-Two practices separate agencies that get repeat work from those that do not. First, handover artefacts are produced during the engagement, not assembled at the end — the runbook is written when the deploy pipeline is built, the decisions are recorded when they are made. Assembling it afterwards takes three times as long and produces something thinner.
+Two practices separate agencies that get repeat work from those that do not. First, handover artefacts are produced during the engagement, not assembled at the end - the runbook is written when the deploy pipeline is built, the decisions are recorded when they are made. Assembling it afterwards takes three times as long and produces something thinner.
 
 Second, the handover is demonstrated rather than sent. A forty-minute call in which the client deploys a trivial change themselves, follows the runbook to restore a backup into a scratch environment, and opens the error tracker, is worth more than a twenty-page document. It also surfaces the gaps while you are still engaged rather than three months later.
 
@@ -84,11 +84,11 @@ LaunchStudio treats the handover as a deliverable with a contents list rather th
 
 That discipline comes from Manifera, where eleven years of enterprise delivery for clients including Vodafone, TNO and CFLW means handovers are audited rather than assumed. Agencies use the same pack under their own branding when we work as a silent production partner.
 
-If you are commissioning work on an AI-built product, or delivering it for a client, [describe your project](https://launchstudio.eu/en/#contact) and we will send you the handover contents list we work to — whether or not you engage us.
+If you are commissioning work on an AI-built product, or delivering it for a client, [describe your project](https://launchstudio.eu/en/#contact) and we will send you the handover contents list we work to - whether or not you engage us.
 
 ## If You Never Received a Handover
 
-Most founders reading this are not commissioning work — they are holding a product that was handed over badly, or not at all. Reconstructing the pack yourself is possible and worth an afternoon.
+Most founders reading this are not commissioning work - they are holding a product that was handed over badly, or not at all. Reconstructing the pack yourself is possible and worth an afternoon.
 
 **Start with an inventory of accounts.** Go through your card statements and your email for every service the product might use. Founders routinely find subscriptions they had forgotten and, more usefully, services registered in someone else's name.
 
@@ -122,16 +122,16 @@ Bureau Nordkaap, a six-person digital studio in Leeuwarden, delivered a membersh
 
 Eleven weeks later the association's treasurer emailed at 21:40 on a Sunday: the site was down and nobody at the bureau was reachable. The developer who had built it was on holiday. Nobody else knew how to deploy, the hosting account was in that developer's personal name, the database credentials existed only in his password manager, and there was no runbook.
 
-The site came back on Monday afternoon. The association moved its maintenance contract to another supplier the following month, and the reason they gave was not the outage — it was that a five-hour problem had become a seventeen-hour one for reasons that had nothing to do with the software.
+The site came back on Monday afternoon. The association moved its maintenance contract to another supplier the following month, and the reason they gave was not the outage - it was that a five-hour problem had become a seventeen-hour one for reasons that had nothing to do with the software.
 
 Bureau Nordkaap now produces handover artefacts during every engagement and runs a demonstration call at the end. Their production partner delivers the same pack on white-label work, which the bureau passes on under its own branding.
 
 **Result:** across eleven subsequent projects, three have had incidents outside working hours. All three were resolved by someone other than the original developer, twice by the client themselves following the runbook.
 
 > *"We hadn't done anything wrong technically. We'd just made ourselves the only route to a working website, and the client noticed before we did."*
-> — **Joke Hoekstra, Director, Bureau Nordkaap (Leeuwarden)**
+> - **Joke Hoekstra, Director, Bureau Nordkaap (Leeuwarden)**
 
-**Cost & Timeline:** €1,400 (handover pack, accounts migration, runbook and demonstration call, retrofitted for two existing clients) — completed in 3 business days.
+**Cost & Timeline:** €1,400 (handover pack, accounts migration, runbook and demonstration call, retrofitted for two existing clients) - completed in 3 business days.
 
 ## Frequently Asked Questions
 

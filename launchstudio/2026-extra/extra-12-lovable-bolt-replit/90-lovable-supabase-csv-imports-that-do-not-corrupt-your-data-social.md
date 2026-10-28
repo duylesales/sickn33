@@ -1,6 +1,6 @@
-🚨 Annelies Vos's Huurbeheer runs rental administration for 31 housing organisations — around 9,500 rental units. A new property manager imported their tenants from a Dutch Excel export. The import said it had worked. The next direct debit run collected €1.25 in rent from 214 tenants. 😳
+🚨 Annelies Vos's Huurbeheer runs rental administration for 31 housing organisations - around 9,500 rental units. A new property manager imported their tenants from a Dutch Excel export. The import said it had worked. The next direct debit run collected €1.25 in rent from 214 tenants. 😳
 
-The parser had read "1.250,00" as 1.25. The same customer had also re-imported the file twice, creating 380 duplicate tenants — and every phone number had lost its leading zero. Here's how to build CSV imports that don't corrupt your data: 🧠
+The parser had read "1.250,00" as 1.25. The same customer had also re-imported the file twice, creating 380 duplicate tenants - and every phone number had lost its leading zero. Here's how to build CSV imports that don't corrupt your data: 🧠
 
 ❌ Rows inserted straight into production, tested only on a hand-made comma-separated file
 ❌ Dutch amounts and dates parsed with English assumptions
@@ -14,7 +14,7 @@ The parser had read "1.250,00" as 1.25. The same customer had also re-imported t
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix imports when onboarding is the thing holding a product back. ⚙️
 
-Her result: €3,600, three business days. The 214 tenants were collected correctly the next week and the duplicates merged. Eleven organisations imported next quarter — and the preview caught problems in four of their files before anything was written. 🚀
+Her result: €3,600, three business days. The 214 tenants were collected correctly the next week and the duplicates merged. Eleven organisations imported next quarter - and the preview caught problems in four of their files before anything was written. 🚀
 
 👉 Lovable Supabase: CSV imports that do not corrupt your data: https://launchstudio.eu/en/blog/lovable-supabase-csv-imports-that-do-not-corrupt-your-data
 

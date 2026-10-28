@@ -20,19 +20,19 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a ticketing company building a platform for high-demand on-sales — where thousands of buyers compete for a limited, fast-depleting pool of seats or tickets the moment sales open — faces a foundational architecture decision that directly determines whether the on-sale feels fair and functional or collapses under its own load: whether real-time inventory locking and queue fairness are designed into the core reservation architecture from the start, or treated as an optimization to be layered on once the basic checkout flow is working.
+A CTO at a ticketing company building a platform for high-demand on-sales - where thousands of buyers compete for a limited, fast-depleting pool of seats or tickets the moment sales open - faces a foundational architecture decision that directly determines whether the on-sale feels fair and functional or collapses under its own load: whether real-time inventory locking and queue fairness are designed into the core reservation architecture from the start, or treated as an optimization to be layered on once the basic checkout flow is working.
 
 ## Why Naive Inventory Handling Produces an Unusable On-Sale
 
-The most naive approach to ticket inventory — a buyer selects seats, the system checks availability against the database, and only locks the seats once checkout begins — introduces a race condition directly tied to how many buyers are attempting to reserve the same limited inventory in the same narrow window. Even a moderately popular on-sale, with hundreds of concurrent buyers targeting the same few thousand seats, produces visibly broken behavior under this model — buyers reaching checkout only to find their selected seats already gone, or worse, two buyers both being told they successfully purchased the same seat, since human perception of fairness is genuinely sensitive to exactly this kind of visible double-selling during a high-stakes on-sale moment.
+The most naive approach to ticket inventory - a buyer selects seats, the system checks availability against the database, and only locks the seats once checkout begins - introduces a race condition directly tied to how many buyers are attempting to reserve the same limited inventory in the same narrow window. Even a moderately popular on-sale, with hundreds of concurrent buyers targeting the same few thousand seats, produces visibly broken behavior under this model - buyers reaching checkout only to find their selected seats already gone, or worse, two buyers both being told they successfully purchased the same seat, since human perception of fairness is genuinely sensitive to exactly this kind of visible double-selling during a high-stakes on-sale moment.
 
 ## What Real-Time Locking and Fair Queuing Actually Solve
 
-Real-time inventory locking addresses the double-booking problem directly: the moment a buyer selects a seat, it's provisionally locked against the authoritative inventory store for a short, bounded window, preventing any other buyer from completing a purchase on the same seat until the lock expires or is released. Fair queuing addresses the fairness problem this creates at genuinely high concurrency: since thousands of buyers can't all interact with the inventory store simultaneously without it collapsing under lock contention, a platform needs specific logic — typically a virtual waiting room that admits buyers into the live reservation flow at a controlled rate — to fairly order access rather than simply letting raw request speed determine who wins, which would unfairly reward buyers with faster connections or automated scripts over genuine fans refreshing a page manually.
+Real-time inventory locking addresses the double-booking problem directly: the moment a buyer selects a seat, it's provisionally locked against the authoritative inventory store for a short, bounded window, preventing any other buyer from completing a purchase on the same seat until the lock expires or is released. Fair queuing addresses the fairness problem this creates at genuinely high concurrency: since thousands of buyers can't all interact with the inventory store simultaneously without it collapsing under lock contention, a platform needs specific logic - typically a virtual waiting room that admits buyers into the live reservation flow at a controlled rate - to fairly order access rather than simply letting raw request speed determine who wins, which would unfairly reward buyers with faster connections or automated scripts over genuine fans refreshing a page manually.
 
 ## Why Retrofitting This Onto an Existing Platform Is Genuinely Difficult
 
-A ticketing platform built initially around naive, check-then-lock inventory handling, with real-time locking and fair queuing planned as a later optimization pass, tends to discover that these techniques require architectural decisions woven throughout the core reservation logic — how inventory state is structured to support short-lived provisional locks, how checkout handling separates lock acquisition from payment confirmation, how the system reconciles expired locks back into available inventory. Retrofitting this architecture onto a platform already built around a simpler, lock-on-checkout model is a considerably larger undertaking than designing the reservation architecture around locking and queuing from the start, often requiring significant rework of core checkout systems that were built without this architecture in mind.
+A ticketing platform built initially around naive, check-then-lock inventory handling, with real-time locking and fair queuing planned as a later optimization pass, tends to discover that these techniques require architectural decisions woven throughout the core reservation logic - how inventory state is structured to support short-lived provisional locks, how checkout handling separates lock acquisition from payment confirmation, how the system reconciles expired locks back into available inventory. Retrofitting this architecture onto a platform already built around a simpler, lock-on-checkout model is a considerably larger undertaking than designing the reservation architecture around locking and queuing from the start, often requiring significant rework of core checkout systems that were built without this architecture in mind.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -64,7 +64,7 @@ Digitaalne Piletimüük Tartu, a Tartu-based ticketing platform, had built an in
 Manifera's Amsterdam team rebuilt the platform's core reservation architecture around atomic, short-lived seat locks and a virtual waiting room admitting buyers at a controlled rate, restructuring checkout handling and inventory reconciliation to support the lock-then-confirm pattern, a substantial rework of systems that had been built without this architecture in mind.
 
 > *"In our own testing everything worked because we were never actually competing with each other for the same seat. It wasn't until real fans were all refreshing for the same show that we understood the problem wasn't our checkout flow, it was that our inventory system was never built to handle real contention in the first place."*
-> — **CTO, Digitaalne Piletimüük Tartu**
+> - **CTO, Digitaalne Piletimüük Tartu**
 
 Digitaalne Piletimüük Tartu's rebuilt platform handled its next high-demand on-sale without a single double-sold seat, and the platform now load-tests every new on-sale configuration against genuinely simulated concurrent demand before going live, not just orderly internal walkthroughs.
 
@@ -79,7 +79,7 @@ Digitaalne Piletimüük Tartu's rebuilt platform handled its next high-demand on
 
 ## Scoping Your Own Ticketing Platform's Inventory Architecture
 
-Before launching a platform expected to handle high-demand on-sales, design the core reservation architecture around real-time seat locking and fair queue admission from the start — a naive check-then-lock model that looks fine in orderly internal testing reveals its real problems only under genuine concurrent demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building fair, reliable ticketing platform inventory architecture.
+Before launching a platform expected to handle high-demand on-sales, design the core reservation architecture around real-time seat locking and fair queue admission from the start - a naive check-then-lock model that looks fine in orderly internal testing reveals its real problems only under genuine concurrent demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building fair, reliable ticketing platform inventory architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Internal testing with a small, coordinated team rarely produces genuine contenti
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their high-concurrency ticketing experience?
 
-Ask specifically how their architecture handles atomic seat locking and lock expiry, and how their system controls buyer admission during demand spikes — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture handles atomic seat locking and lock expiry, and how their system controls buyer admission during demand spikes - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

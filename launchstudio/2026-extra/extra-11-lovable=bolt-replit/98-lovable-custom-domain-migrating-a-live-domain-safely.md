@@ -48,7 +48,7 @@ The single most useful preparation, and the one most often skipped.
 
 Every DNS record carries a time-to-live: how long resolvers may cache the answer. If yours is set to a day and you change a record, some visitors will keep reaching the old address for a day, and you cannot make them stop.
 
-So, several days before the move, lower the TTL on the records you will change to something short — a few minutes. Wait for the old, longer TTL to expire everywhere. Then, when you make the actual change, propagation is measured in minutes rather than a day, and if something is wrong you can revert equally fast.
+So, several days before the move, lower the TTL on the records you will change to something short - a few minutes. Wait for the old, longer TTL to expire everywhere. Then, when you make the actual change, propagation is measured in minutes rather than a day, and if something is wrong you can revert equally fast.
 
 Raise it again a week after the move. A short TTL means more lookups and slightly slower first responses; you want it short only for the window in which you might change your mind.
 
@@ -60,13 +60,13 @@ Raise it again a week after the move. A short TTL means more lookups and slightl
 
 **Three: build the new environment and confirm it works** at a temporary address, before touching anything live. It should be serving your real application with real data before DNS changes at all.
 
-**Four: recreate every record at the new provider before switching,** including mail records — SPF, DKIM, DMARC, and the mail exchange records themselves — so the new configuration is complete and waiting rather than being assembled under pressure.
+**Four: recreate every record at the new provider before switching,** including mail records - SPF, DKIM, DMARC, and the mail exchange records themselves - so the new configuration is complete and waiting rather than being assembled under pressure.
 
 **Five: update the callbacks and webhooks that accept multiple values.** Authentication providers and payment providers generally allow both old and new addresses to be registered simultaneously. Add the new one before the switch; remove the old one after. This alone converts two of the five failures above into non-events.
 
 **Six: switch, at a quiet hour,** and watch. Not Friday evening. Early on a weekday morning, when you can respond.
 
-**Seven: verify immediately** — the site on both www and bare versions, the certificate, a login, a test payment, and an email sent and received.
+**Seven: verify immediately** - the site on both www and bare versions, the certificate, a login, a test payment, and an email sent and received.
 
 **Eight: clean up after a week,** removing the old callbacks and raising the TTL, but keeping the old address redirecting for as long as it costs nothing.
 
@@ -82,7 +82,7 @@ Carry the mail exchange records, SPF, DKIM and DMARC across exactly. Then, after
 
 Two things get conflated: changing where DNS is answered, and changing who the domain is registered with.
 
-Changing DNS is fast and reversible. Changing registrar is a formal process involving an authorisation code, a confirmation, and typically several days — and many registrars lock a domain for a period after a transfer or a recent registration, which can prevent a second move.
+Changing DNS is fast and reversible. Changing registrar is a formal process involving an authorisation code, a confirmation, and typically several days - and many registrars lock a domain for a period after a transfer or a recent registration, which can prevent a second move.
 
 Do not do both at once. Move DNS, confirm everything works, then transfer the registrar separately when nothing else is in flight. And check before you start whether the domain is locked or recently transferred, since discovering that mid-migration is how a planned morning becomes a planned fortnight.
 
@@ -90,9 +90,9 @@ For a `.nl` domain, the process has its own specifics; confirm current requireme
 
 ## Keeping Search Intact
 
-If the address itself is changing — not just where it points — redirect every old address to its exact counterpart on the new domain, permanently, one hop, and keep those redirects live for years rather than months. Tell your search console about the move using its change-of-address facility. Update your sitemap and canonical tags. And expect a modest dip for a few weeks even when everything is right.
+If the address itself is changing - not just where it points - redirect every old address to its exact counterpart on the new domain, permanently, one hop, and keep those redirects live for years rather than months. Tell your search console about the move using its change-of-address facility. Update your sitemap and canonical tags. And expect a modest dip for a few weeks even when everything is right.
 
-If only the hosting is changing and the addresses stay identical, none of this applies — which is a good reason to avoid changing both at once.
+If only the hosting is changing and the addresses stay identical, none of this applies - which is a good reason to avoid changing both at once.
 
 ## The Verification List
 
@@ -104,7 +104,7 @@ Run it deliberately rather than assuming. Most post-migration incidents are item
 
 If the address itself is changing rather than only where it points, there is a second migration happening in places you cannot edit.
 
-**Your customers' bookmarks and saved logins.** These follow redirects, so they keep working — provided the redirects stay live. Which is the argument for keeping the old domain registered and redirecting for years rather than months. Letting it lapse means somebody else can register it, and a domain your customers still type is not one to hand to a stranger.
+**Your customers' bookmarks and saved logins.** These follow redirects, so they keep working - provided the redirects stay live. Which is the argument for keeping the old domain registered and redirecting for years rather than months. Letting it lapse means somebody else can register it, and a domain your customers still type is not one to hand to a stranger.
 
 **Links inside documents you already sent.** Invoices, reports, contracts, confirmation emails. Every one of those contains an address, and you cannot reissue them. Redirects are the only thing standing between those documents and a dead link.
 
@@ -114,7 +114,7 @@ If the address itself is changing rather than only where it points, there is a s
 
 **Your own material.** Email signatures, social profiles, listings in directories, the address on your invoices. These are easy to update and the easiest to forget, and the ones you forget will quietly send people to a redirect for years.
 
-**Announce it once, plainly, before the change** — what is changing, when, and that nothing they do will break. Then say it again in the product afterwards, briefly. Customers interpret an unannounced address change as instability, and a two-line notice converts it into competence.
+**Announce it once, plainly, before the change** - what is changing, when, and that nothing they do will break. Then say it again in the product afterwards, briefly. Customers interpret an unannounced address change as instability, and a two-line notice converts it into competence.
 
 ## Doing It Without a Bad Morning
 
@@ -132,7 +132,7 @@ Vincent Bogaers built Taxatierapport with Lovable: property valuation reporting 
 
 He moved hosting and decided to consolidate the DNS at the same provider while he was at it. He recreated the records pointing at the site, switched the name servers on a Thursday afternoon, and the site came up on the new host within twenty minutes. He considered it done.
 
-The mail exchange records had not been recreated. For three days, every message sent to any address at the domain was rejected — including the address printed on every valuation report as the contact for questions, and the address lenders replied to.
+The mail exchange records had not been recreated. For three days, every message sent to any address at the domain was rejected - including the address printed on every valuation report as the contact for questions, and the address lenders replied to.
 
 Two further problems surfaced on Monday. Nobody could log in, because the authentication provider's callback URLs still named the old hosting address; the agents had spent Friday assuming the system was "having a moment". And the payment webhook for the firms' monthly subscriptions pointed at the old address, so eleven days of subscription events went unrecorded, including two cancellations that continued to have access.
 
@@ -141,9 +141,9 @@ Five business days of work: mail exchange records restored along with SPF, DKIM 
 **Result:** no incidents during the registrar transfer, and the inventory document is now what Vincent works from for any DNS change. He estimates the three days of lost email cost him one valuation firm's trust for the better part of a year.
 
 > *"The site was up in twenty minutes and I thought I had done it. For three days every email to my company was rejected, including the address printed on every report I had ever sent."*
-> — **Vincent Bogaers, Founder, Taxatierapport (Bergen op Zoom)**
+> - **Vincent Bogaers, Founder, Taxatierapport (Bergen op Zoom)**
 
-**Cost & Timeline:** €2,800 (mail record restoration and delivery verification, authentication callback correction, webhook repointing and reconciliation, zone documentation and inventory) — completed in 5 business days.
+**Cost & Timeline:** €2,800 (mail record restoration and delivery verification, authentication callback correction, webhook repointing and reconciliation, zone documentation and inventory) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -201,7 +201,7 @@ Both www and bare versions, the certificate on every variant, a real login, a te
       "name": "Should I change registrar at the same time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — DNS changes are fast and reversible, registrar transfers are multi-day with locking periods. Do them separately."
+        "text": "No - DNS changes are fast and reversible, registrar transfers are multi-day with locking periods. Do them separately."
       }
     },
     {

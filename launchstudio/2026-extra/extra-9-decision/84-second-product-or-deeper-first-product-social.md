@@ -1,6 +1,6 @@
-🚨 Femke was about to announce a companion invoicing product at a webinar — until a review found her billing hardcoded to one product per customer, no room for a second. 😳
+🚨 Femke was about to announce a companion invoicing product at a webinar - until a review found her billing hardcoded to one product per customer, no room for a second. 😳
 
-Most second products underperform the first — rarely the market's fault: 🧩
+Most second products underperform the first - rarely the market's fault: 🧩
 
 ❌ The second-product debate gets fought entirely on strategy, never architecture
 ❌ Auth and billing woven into one product's flows can't cheaply support a second
@@ -14,7 +14,7 @@ Most second products underperform the first — rarely the market's fault: 🧩
 
 At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we review this before you commit to a second product publicly. 🔍
 
-Her result: Femke postponed her announcement five weeks, refactored the shared layer, launched on top of it — her third product, eight months later, took under two weeks. 🚀
+Her result: Femke postponed her announcement five weeks, refactored the shared layer, launched on top of it - her third product, eight months later, took under two weeks. 🚀
 
 👉 Send us your prototype link for free feedback on your architecture: https://launchstudio.eu/en/blog/second-product-or-deeper-first-product
 

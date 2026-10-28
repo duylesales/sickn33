@@ -22,7 +22,7 @@ Target Persona: SaaS Founder Scale-Up
 
 At some point a customer will email to say that a price was changed, a record was deleted, or a status was set incorrectly, and ask who did it. There are two possible replies. One is a screen showing that a named colleague changed that field, from this value to that value, at 14:32 on Tuesday. The other is an admission that your product does not know.
 
-The second answer costs you more than the individual incident. It tells a business customer that your product cannot support the ordinary internal accountability their other tools provide, and it removes your ability to resolve any dispute — including the ones where your product is blamed for something a member of their team did.
+The second answer costs you more than the individual incident. It tells a business customer that your product cannot support the ordinary internal accountability their other tools provide, and it removes your ability to resolve any dispute - including the ones where your product is blamed for something a member of their team did.
 
 ## Audit Trail Is Not Technical Logging
 
@@ -38,29 +38,29 @@ You can answer "why did the server return an error at 14:32" from logs. You cann
 
 An audit entry is a small, fixed structure, and every field earns its place.
 
-**Who.** The person, not just the account — on a team account "someone at Acme" is useless. Include whether the action was taken by a person, by the system, or by an administrator on their behalf, because that distinction is the first thing anyone asks.
+**Who.** The person, not just the account - on a team account "someone at Acme" is useless. Include whether the action was taken by a person, by the system, or by an administrator on their behalf, because that distinction is the first thing anyone asks.
 
 **What.** The action, in language the customer uses. "Invoice status changed", not "PATCH /invoices/4821".
 
-**Which record.** Identified in a way that still makes sense if the record is later deleted — including a human-readable reference, since an internal identifier alone becomes meaningless once the record is gone.
+**Which record.** Identified in a way that still makes sense if the record is later deleted - including a human-readable reference, since an internal identifier alone becomes meaningless once the record is gone.
 
 **Before and after.** The single most valuable field and the one most often omitted. "Price changed" is a fraction as useful as "Price changed from €450 to €45", which immediately reveals a missing digit.
 
 **When.** A server-side timestamp in UTC, displayed in the viewer's timezone. Never a time supplied by the browser.
 
-**Context.** Where the action came from — the interface, the API, an import, an administrator. This is what distinguishes a deliberate edit from a bulk operation that swept a record up.
+**Context.** Where the action came from - the interface, the API, an import, an administrator. This is what distinguishes a deliberate edit from a bulk operation that swept a record up.
 
-Deliberately excluded: the full contents of the record, and anything sensitive. An audit trail that stores complete before-and-after copies of records containing personal data becomes a second, long-lived database of that data, subject to the same obligations as the first — and one that a deletion request must also reach.
+Deliberately excluded: the full contents of the record, and anything sensitive. An audit trail that stores complete before-and-after copies of records containing personal data becomes a second, long-lived database of that data, subject to the same obligations as the first - and one that a deletion request must also reach.
 
 ## Append-Only Is the Property That Makes It Worth Anything
 
 An audit trail that can be edited proves nothing. If a record can be altered or removed after the fact, it cannot settle a dispute, because the answer to "did someone change the log" is always "possibly."
 
-In practice this means the audit table permits inserts and nothing else: no updates, no deletes, enforced at the database level rather than by convention. Entries are never modified to reflect a correction; a correction is a new entry. Retention is by policy — old entries removed after a defined period — not by anyone deciding a particular entry should not exist.
+In practice this means the audit table permits inserts and nothing else: no updates, no deletes, enforced at the database level rather than by convention. Entries are never modified to reflect a correction; a correction is a new entry. Retention is by policy - old entries removed after a defined period - not by anyone deciding a particular entry should not exist.
 
 This is also why an audit trail should not depend on the application remembering to write to it. If entries are added only where a developer inserted a call, coverage will be incomplete in exactly the places that matter, because the paths nobody thought about are the paths where surprising things happen. Database triggers, or a single layer through which all writes pass, give coverage that does not depend on anyone's diligence.
 
-Getting this right — append-only enforcement, complete coverage, before-and-after values without storing sensitive content — is a well-defined piece of production work that AI-generated products almost never include, since a prototype writes an activity entry only where the prompt happened to mention it. LaunchStudio, backed by Manifera's 11+ years of production engineering, implements audit trails that hold up when a customer, an auditor, or a security questionnaire asks. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
+Getting this right - append-only enforcement, complete coverage, before-and-after values without storing sensitive content - is a well-defined piece of production work that AI-generated products almost never include, since a prototype writes an activity entry only where the prompt happened to mention it. LaunchStudio, backed by Manifera's 11+ years of production engineering, implements audit trails that hold up when a customer, an auditor, or a security questionnaire asks. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
 ## What to Record, and What Not To
 
@@ -68,7 +68,7 @@ Recording everything produces a log nobody can read and a table that grows faste
 
 Worth recording: changes to anything with money attached; changes to permissions and membership; deletions of anything; status changes that drive a business process; exports and downloads of customer data; administrative access to an account; and authentication events such as password changes and new-device logins.
 
-Not worth recording: reads of ordinary records, which multiply enormously and rarely answer a question — with the exception of products handling health, financial, or other sensitive data, where who *viewed* a record is often the central question. Also not worth recording: view and navigation events, which belong in analytics, and every keystroke of a draft, which belongs in versioning if you need it at all.
+Not worth recording: reads of ordinary records, which multiply enormously and rarely answer a question - with the exception of products handling health, financial, or other sensitive data, where who *viewed* a record is often the central question. Also not worth recording: view and navigation events, which belong in analytics, and every keystroke of a draft, which belongs in versioning if you need it at all.
 
 A reasonable starting point is a dozen or so event types covering money, permissions, deletions, and access. That is enough to answer the questions customers actually ask, and small enough that the trail stays readable.
 
@@ -95,7 +95,7 @@ The dispute could not be resolved. The distributor concluded, without evidence e
 **Result:** an append-only audit trail with before-and-after values covering price changes, permission changes, deletions, exports, and logins, enforced at the database level with triggers rather than application calls. Per-record history was exposed on every price list and a filterable account activity view added for owners. The cancelled account did not return; the deferred renewal completed, and audit capability became a standard answer in subsequent enterprise questionnaires.
 
 > "Four people, one wrong price list, and my product could not tell anyone which of them did it. I lost the customer over something I would have had for free if I had recorded it from the start."
-> — **Karel Boonstra, Founder, Prijslijst**
+> - **Karel Boonstra, Founder, Prijslijst**
 
 **Cost & Timeline:** audit trail implementation and customer-facing history delivered in 4 business days.
 

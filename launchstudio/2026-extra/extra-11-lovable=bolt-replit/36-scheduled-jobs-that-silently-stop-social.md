@@ -1,4 +1,4 @@
-🚨 Steven Bogaerts built Huurmaat in Lovable to manage short-term equipment rentals for 90 businesses across Gelderland. A nightly background cron job sent return reminders and reconciled billing. When an API credential expired, the background job failed silently for five weeks — resulting in €6,000 in uncollected late fees before anyone noticed. 😳
+🚨 Steven Bogaerts built Huurmaat in Lovable to manage short-term equipment rentals for 90 businesses across Gelderland. A nightly background cron job sent return reminders and reconciled billing. When an API credential expired, the background job failed silently for five weeks - resulting in €6,000 in uncollected late fees before anyone noticed. 😳
 
 Frontend features show errors immediately; background jobs fail in complete silence. Here's how to monitor them: 🧠
 

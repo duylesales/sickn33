@@ -1,4 +1,4 @@
-⚡ Mason, a product manager, built a client portal using **Cursor** — then watched his real-time AI typewriter stream ruin its UX by rendering text in large, 15-second lagged chunks due to default Nginx proxy buffering. 💻
+⚡ Mason, a product manager, built a client portal using **Cursor** - then watched his real-time AI typewriter stream ruin its UX by rendering text in large, 15-second lagged chunks due to default Nginx proxy buffering. 💻
 
 Holding thousands of long-lived Server-Sent Events (SSE) connections open simultaneously will exhaust your Linux file descriptor limit (`ulimit -n`) and crash your server under load. 🧠
 

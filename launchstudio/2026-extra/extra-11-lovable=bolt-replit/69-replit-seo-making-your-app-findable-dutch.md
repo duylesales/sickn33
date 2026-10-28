@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Jouw software werkt. De eerste gebruikers zijn oprecht enthousiast. Maar drie maanden na de lancering levert een zoekopdracht naar de exacte oplossing die jij biedt elf concurrenten op en jouw applicatie nergens — niet op de eerste pagina van Google, niet op pagina vijf, en zelfs niet wanneer iemand letterlijk zoekt op jouw eigen bedrijfsnaam.
+Jouw software werkt. De eerste gebruikers zijn oprecht enthousiast. Maar drie maanden na de lancering levert een zoekopdracht naar de exacte oplossing die jij biedt elf concurrenten op en jouw applicatie nergens - niet op de eerste pagina van Google, niet op pagina vijf, en zelfs niet wanneer iemand letterlijk zoekt op jouw eigen bedrijfsnaam.
 
 Dit is de volkomen normale uitgangspositie voor vrijwel elke applicatie die snel is gebouwd met AI-ontwikkeltools. Het is geen mysterieus algoritme-raadsel en het is geen officiële Google-penalty. Het is simpelweg een reeks specifieke, saaie, maar perfect oplosbare technische omissies. En vrijwel al die omissies bestaan omdat niemand de AI-tool heeft gevraagd ze op te lossen, en de AI geen enkele reden had om ze uit zichzelf toe te voegen.
 
@@ -34,7 +34,7 @@ Er zijn vier structurele oorzaken:
 
 **3. Er is geen XML-sitemap en geen robots.txt.** Niemand heeft de zoekcrawler verteld welke pagina's er bestaan. Indexering is daardoor puur afhankelijk van toevallige linkjes die een bot tegenkomt.
 
-**4. De software en de marketingwebsite zijn één en hetzelfde ding.** Waardevolle content die hoog zou kunnen scoren — diepgaande uitleg, vergelijkingen met alternatieven, antwoorden op koopvragen — zit verstopt achter een verplicht inlogscherm, waar een zoekmachine er helemaal niets mee kan.
+**4. De software en de marketingwebsite zijn één en hetzelfde ding.** Waardevolle content die hoog zou kunnen scoren - diepgaande uitleg, vergelijkingen met alternatieven, antwoorden op koopvragen - zit verstopt achter een verplicht inlogscherm, waar een zoekmachine er helemaal niets mee kan.
 
 Geen van deze problemen is ingewikkeld om te herstellen. Maar het vereist wel dat iemand de bewuste keuze maakt om het op te pakken.
 
@@ -42,7 +42,7 @@ Geen van deze problemen is ingewikkeld om te herstellen. Maar het vereist wel da
 
 De goedkoopste fout om te voorkomen, maar een van de meest frustrerende om achteraf op te schonen:
 
-De preview- en ontwikkeladressen van Replit zijn openbaar bereikbaar. Als zo'n URL ergens terechtkomt — in een forumpost, een gedeeld Google Doc of een openbare chat die door zoekmachines gecrawld wordt — kan Google die link indexeren. Vanaf dat moment bestaat jouw content op twee adressen tegelijk. Zoekmachines kiezen vervolgens één canonieke versie, en kiezen geregeld de verkeerde. Gevolg: bezoekers landen op een tijdelijk preview-adres dat een half-affe testversie toont of simpelweg offline staat.
+De preview- en ontwikkeladressen van Replit zijn openbaar bereikbaar. Als zo'n URL ergens terechtkomt - in een forumpost, een gedeeld Google Doc of een openbare chat die door zoekmachines gecrawld wordt - kan Google die link indexeren. Vanaf dat moment bestaat jouw content op twee adressen tegelijk. Zoekmachines kiezen vervolgens één canonieke versie, en kiezen geregeld de verkeerde. Gevolg: bezoekers landen op een tijdelijk preview-adres dat een half-affe testversie toont of simpelweg offline staat.
 
 Twee simpele preventieve maatregelen:
 - Serveer een `robots.txt` op alle niet-productie-omgevingen die zoekcrawlers de toegang expliciet ontzegt (`Disallow: /`).
@@ -52,16 +52,16 @@ Twee simpele preventieve maatregelen:
 
 Schakel JavaScript eens volledig uit in je browser en herlaad je live website. Wat je nu op het scherm ziet, is nagenoeg exact wat een zoekmachine ontvangt tijdens zijn initiële indexeringsronde.
 
-Als het scherm nu leeg blijft, is jouw pagina op dat cruciale moment onzichtbaar. Voor het afgeschermde dashboard achter de login maakt dat niets uit — niemand zoekt naar privédashboards. Maar voor je openbare marketingpagina's is dit fataal.
+Als het scherm nu leeg blijft, is jouw pagina op dat cruciale moment onzichtbaar. Voor het afgeschermde dashboard achter de login maakt dat niets uit - niemand zoekt naar privédashboards. Maar voor je openbare marketingpagina's is dit fataal.
 
-De oplossing vereist geen totale herbouw. Je openbare pagina's — de homepage, de prijzenpagina, functiebeschrijvingen en informatieve blogs — kunnen statisch of server-side als echte HTML worden geserveerd met de tekst al volledig in de broncode aanwezig, terwijl de interactieve software achter de inlogmuur gewoon als SPA blijft draaien. Deze scheiding is op vrijwel elke techstack eenvoudig te realiseren en is met afstand de meest waardevolle SEO-ingreep die je kunt doen. Het maakt je marketingpagina's bovendien direct razendsnel en goedkoper om te hosten.
+De oplossing vereist geen totale herbouw. Je openbare pagina's - de homepage, de prijzenpagina, functiebeschrijvingen en informatieve blogs - kunnen statisch of server-side als echte HTML worden geserveerd met de tekst al volledig in de broncode aanwezig, terwijl de interactieve software achter de inlogmuur gewoon als SPA blijft draaien. Deze scheiding is op vrijwel elke techstack eenvoudig te realiseren en is met afstand de meest waardevolle SEO-ingreep die je kunt doen. Het maakt je marketingpagina's bovendien direct razendsnel en goedkoper om te hosten.
 
 ## Titels, meta-omschrijvingen en tussenkoppen
 
 Elke openbare pagina vereist een unieke titel die accuraat beschrijft waar die pagina over gaat, een meta description geschreven voor een menselijke lezer die beslist of hij doorklikt, en exact één heldere `<h1>`-kop.
 
 Drie details die vaak misgaan:
-- Paginatitels moeten de woorden bevatten waar jouw doelgroep feitelijk op zoekt — inclusief, voor de Nederlandse markt, de natuurlijke Nederlandse terminologie. Dat is vaak niet de letterlijke vertaling van Engelse vaktermen, maar de bewoording die een Nederlandse ondernemer in de zoekbalk typt.
+- Paginatitels moeten de woorden bevatten waar jouw doelgroep feitelijk op zoekt - inclusief, voor de Nederlandse markt, de natuurlijke Nederlandse terminologie. Dat is vaak niet de letterlijke vertaling van Engelse vaktermen, maar de bewoording die een Nederlandse ondernemer in de zoekbalk typt.
 - De meta description heeft geen directe invloed op je ranking, maar bepaalt wél of iemand klikt. Schrijf het daarom als een overtuigende uitnodiging in plaats van een droge samenvatting.
 - Een pagina met drie verschillende `<h1>`-koppen vertelt een crawler dat er geen duidelijke focus is.
 
@@ -79,7 +79,7 @@ Gestructureerde data (schema markup in JSON-LD) is een machineleesbare beschrijv
 
 Die nieuwe doelgroep heeft de spelregels veranderd. Een steeds groter deel van de zakelijke oriëntatie eindigt in een samengesteld AI-antwoord dat slechts een handvol autoritaire bronnen citeert. Om als bron te worden genoemd, moet jouw content helder parseerbaar en ondubbelzinnig toewijsbaar zijn: een expliciete vermelding van welke organisatie de pagina publiceert en welke entiteiten worden beschreven; teksten die directe antwoorden geven op concrete vragen; en feiten die feitelijk en specifiek genoeg zijn om als citaat te dienen.
 
-In de praktijk betekent dit: voeg JSON-LD toe voor Organization, SoftwareApplication en FAQPage; bouw een volwaardige vraag-en-antwoord sectie op relevante pagina's waarin elk antwoord zelfstandig overeind blijft; en noem concrete details — namen, tarieven, locaties — in plaats van vage algemeenheden.
+In de praktijk betekent dit: voeg JSON-LD toe voor Organization, SoftwareApplication en FAQPage; bouw een volwaardige vraag-en-antwoord sectie op relevante pagina's waarin elk antwoord zelfstandig overeind blijft; en noem concrete details - namen, tarieven, locaties - in plaats van vage algemeenheden.
 
 ## De realiteit van de Nederlandse markt
 
@@ -119,7 +119,7 @@ Zodra het fundament staat, is de verleiding groot om dagelijks naar posities van
 - Wat is de verhouding tussen vertoningen en daadwerkelijke klikken (CTR)?
 - Welke specifieke foutmeldingen rapporteert Google over onverwerkte pagina's?
 
-Vertoningen gaan altijd vooraf aan posities. Zodra je pagina's verschijnen op relevante zoektermen, weet je dat het technische fundament werkt. Een pagina die veel vertoond wordt maar weinig klikken oplevert heeft simpelweg een pakkendere titel en omschrijving nodig — dat is een middagje teksten bijschaven, geen maandenlang technisch gezwoeg.
+Vertoningen gaan altijd vooraf aan posities. Zodra je pagina's verschijnen op relevante zoektermen, weet je dat het technische fundament werkt. Een pagina die veel vertoond wordt maar weinig klikken oplevert heeft simpelweg een pakkendere titel en omschrijving nodig - dat is een middagje teksten bijschaven, geen maandenlang technisch gezwoeg.
 
 Bewaak uiteindelijk slechts één zakelijk cijfer: hoeveel proefaccounts, offerte-aanvragen of betalende klanten levert zoekverkeer daadwerkelijk op? Dat is de enige maatstaf die telt.
 
@@ -135,20 +135,20 @@ LaunchStudio verzorgt dit integraal naast het technisch klaarmaken voor producti
 
 ### Nergens vindbaar, zelfs niet op haar eigen bedrijfsnaam
 
-Marleen Hoogendijk bouwde via Replit Zzp-Uren: een overzichtelijke urenregistratie- en facturatietool voor Nederlandse zzp'ers, geprijsd op € 12 per maand. Ze had zestig betalende gebruikers, allemaal via mond-tot-mondreclame, en had negen diepgaande artikelen geschreven over btw-regels en facturatie-eisen voor zzp'ers — exact de zoekopdrachten waar haar doelgroep dagelijks op googelt.
+Marleen Hoogendijk bouwde via Replit Zzp-Uren: een overzichtelijke urenregistratie- en facturatietool voor Nederlandse zzp'ers, geprijsd op € 12 per maand. Ze had zestig betalende gebruikers, allemaal via mond-tot-mondreclame, en had negen diepgaande artikelen geschreven over btw-regels en facturatie-eisen voor zzp'ers - exact de zoekopdrachten waar haar doelgroep dagelijks op googelt.
 
 Toch leverde het zoeken naar haar eigen bedrijfsnaam op Google niets op binnen de eerste drie pagina's. Haar negen artikelen verschenen nergens in de zoekresultaten.
 
-De technische diagnose duurde minder dan een uur: elke pagina — inclusief alle negen informatieve artikelen — werd volledig client-side in de browser gerenderd, waardoor de ruwe HTML-broncode nagenoeg leeg was. Elke pagina droeg exact dezelfde paginatitel ("Zzp-Uren"). Er was geen sitemap. De artikelen stonden bovendien achter URL's die alleen bereikbaar waren via een menu in de applicatie zelf, waardoor Google ze als besloten schermen behandelde. Zowel de `www`- als de kale domeinversie laadden zelfstandig, naast een vergeten Replit-preview-adres dat ooit op een forum was gedeeld en ironisch genoeg de enige pagina was die Google wél had geïndexeerd. Tot overmaat van ramp laadde elke artikelpagina eerst een JavaScript-bundel van 1,9 MB vóórdat er ook maar één lettergreep zichtbaar werd.
+De technische diagnose duurde minder dan een uur: elke pagina - inclusief alle negen informatieve artikelen - werd volledig client-side in de browser gerenderd, waardoor de ruwe HTML-broncode nagenoeg leeg was. Elke pagina droeg exact dezelfde paginatitel ("Zzp-Uren"). Er was geen sitemap. De artikelen stonden bovendien achter URL's die alleen bereikbaar waren via een menu in de applicatie zelf, waardoor Google ze als besloten schermen behandelde. Zowel de `www`- als de kale domeinversie laadden zelfstandig, naast een vergeten Replit-preview-adres dat ooit op een forum was gedeeld en ironisch genoeg de enige pagina was die Google wél had geïndexeerd. Tot overmaat van ramp laadde elke artikelpagina eerst een JavaScript-bundel van 1,9 MB vóórdat er ook maar één lettergreep zichtbaar werd.
 
 De optimalisatie vergde zes werkdagen: de negen artikelen en de marketingpagina's omgezet naar statisch geserveerde HTML met alle tekst direct in het server-antwoord; unieke titels, meta descriptions en `<h1>`-koppen per pagina; het canonieke domein vastgelegd met permanente 301-redirects; het preview-adres geblokkeerd en verwijderd uit de Google-index; een XML-sitemap gegenereerd en aangemeld; JSON-LD structured data toegevoegd voor de organisatie, artikelen en FAQ's; afbeeldingen geoptimaliseerd; de zware applicatiebundel losgekoppeld van de publieke pagina's; en de teksten taalkundig aangescherpt naar de zoektermen die zzp'ers daadwerkelijk hanteren.
 
 **Resultaat:** binnen drie weken stond de eigen bedrijfsnaam op positie 1 in Google. Over de vier maanden erna genereerden de negen artikelen een continue stroom van ongeveer veertig nieuwe proefabonnementen per maand via organisch zoekverkeer (tegenover nul voorheen). Twee van haar artikelen worden inmiddels standaard geciteerd als officiële bron in AI-antwoorden over zzp-facturatie.
 
 > *"Ik had negen artikelen geschreven die exact antwoord gaven op wat mijn klanten bezighoudt, en Google had nog nooit één enkel woord van die teksten kunnen lezen."*
-> — **Marleen Hoogendijk, Oprichter, Zzp-Uren (Gouda)**
+> - **Marleen Hoogendijk, Oprichter, Zzp-Uren (Gouda)**
 
-**Kosten & Doorlooptijd:** € 2.900 (statische rendering van openbare pagina's, canonieke URL-structuur, opschoning van de zoekindex, gestructureerde data, snelheidsoptimalisatie en Nederlandse tekstrevisie) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.900 (statische rendering van openbare pagina's, canonieke URL-structuur, opschoning van de zoekindex, gestructureerde data, snelheidsoptimalisatie en Nederlandse tekstrevisie) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 

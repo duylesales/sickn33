@@ -1,9 +1,9 @@
-🚨 Het is 02:40 uur 's nachts. Uw telefoon trilt: een forumbericht waarin herleidbare privégegevens van gezinnen worden genoemd. Geen wisknop, geen schorsing, geen meldsysteem — alleen een database waar u vanaf uw mobiel niet bij kunt. 😳
+🚨 Het is 02:40 uur 's nachts. Uw telefoon trilt: een forumbericht waarin herleidbare privégegevens van gezinnen worden genoemd. Geen wisknop, geen schorsing, geen meldsysteem - alleen een database waar u vanaf uw mobiel niet bij kunt. 😳
 
 Bij gewone software is het risico technisch. In een community genereren uw leden de content, en arriveert het risico om twee uur 's nachts: 🧠
 
 ❌ Open registratie zonder e-mailverificatie trekt binnen enkele dagen spambots aan
-❌ Een meldknop die nergens naartoe leidt — geen wachtrij, geen beheerder, geen status
+❌ Een meldknop die nergens naartoe leidt - geen wachtrij, geen beheerder, geen status
 ❌ Moderatietools werken uitsluitend achter een laptop, niet vanaf uw smartphone
 ❌ Toegang wordt eenmalig gecontroleerd bij aanmelding, niet bij elk besloten verzoek
 

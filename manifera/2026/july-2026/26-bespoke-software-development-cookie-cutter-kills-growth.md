@@ -24,11 +24,11 @@ Every company that reaches €5M in revenue hits the same wall. The SaaS tools t
 
 ## Myth 1: "Bespoke Software Is Only for Enterprise Companies"  ❌
 
-**The fact:** Bespoke software is for any company whose core processes differ meaningfully from industry standard. Size is irrelevant — differentiation is what matters.
+**The fact:** Bespoke software is for any company whose core processes differ meaningfully from industry standard. Size is irrelevant - differentiation is what matters.
 
 A 15-person logistics startup with a proprietary routing algorithm has a stronger case for bespoke software than a 5,000-person insurance company running standard claims processing. The question is not "How big are you?" but "How unique is your competitive advantage?"
 
-According to a 2025 Forrester survey, 43% of companies with revenue between €2M-€10M now invest in at least one custom-built core system — up from 18% in 2020. The cost barrier has dropped dramatically, especially with offshore development models that cut engineering costs by 40-60% compared to Western European rates.
+According to a 2025 Forrester survey, 43% of companies with revenue between €2M-€10M now invest in at least one custom-built core system - up from 18% in 2020. The cost barrier has dropped dramatically, especially with offshore development models that cut engineering costs by 40-60% compared to Western European rates.
 
 ## Myth 2: "It Always Goes Over Budget and Over Time"  ❌
 
@@ -47,7 +47,7 @@ The fix is structural, not magical:
 | **Sprint-based billing** | Pay per sprint, review deliverables every 2 weeks |
 | **Change request process** | New requirements = new estimate + approval before work begins |
 
-Manifera's approach to [custom software development](https://www.manifera.com/services/custom-software-development/) starts with a structured discovery phase — mapping requirements into user stories with acceptance criteria before a single line of code is written. This European project governance standard, managed from Amsterdam, eliminates the ambiguity that causes budget overruns.
+Manifera's approach to [custom software development](https://www.manifera.com/services/custom-software-development/) starts with a structured discovery phase - mapping requirements into user stories with acceptance criteria before a single line of code is written. This European project governance standard, managed from Amsterdam, eliminates the ambiguity that causes budget overruns.
 
 ## Myth 3: "Custom Software Becomes Unmaintainable Legacy Code"  ❌
 
@@ -61,7 +61,7 @@ Well-built bespoke software includes:
 
 Martin Fowler defines maintainable software as software where *"the cost of adding the next feature is proportional to the feature's complexity, not the system's age."*
 
-Off-the-shelf software also becomes legacy — you just cannot fix it. When Salesforce's architecture does not serve your needs, your only option is to migrate. With bespoke software, you evolve it.
+Off-the-shelf software also becomes legacy - you just cannot fix it. When Salesforce's architecture does not serve your needs, your only option is to migrate. With bespoke software, you evolve it.
 
 ## Myth 4: "We Don't Have the Team to Maintain Custom Software"  ❌
 
@@ -75,7 +75,7 @@ The typical maintenance model for bespoke software:
 | **Standard** | Basic + minor feature enhancements, performance tuning | 20-40 | €3,000 - €6,000 |
 | **Premium** | Standard + major features, architecture evolution, 24/7 support | 40-80 | €6,000 - €12,000 |
 
-This is typically 5-15% of the original build cost annually — comparable to SaaS subscription costs, but you own the asset.
+This is typically 5-15% of the original build cost annually - comparable to SaaS subscription costs, but you own the asset.
 
 ## Myth 5: "Off-the-Shelf Is Faster to Deploy"  ❌
 
@@ -98,15 +98,15 @@ For complex use cases, bespoke software is actually faster to full productivity 
 
 After 160+ delivered projects, Manifera has identified the clearest indicators that bespoke software will outperform off-the-shelf:
 
-1. **Your process IS your product** — the software directly generates revenue
+1. **Your process IS your product** - the software directly generates revenue
 2. **You integrate 5+ data sources** that no single SaaS connects natively
 3. **Your industry has specific compliance requirements** that generic tools do not address
 4. **You have outgrown your current tools** and are spending more time on workarounds than work
-5. **Your competitors use the same SaaS tools** — bespoke creates differentiation
+5. **Your competitors use the same SaaS tools** - bespoke creates differentiation
 
-A bridge between European business standards and APAC development velocity — that is how Manifera approaches every bespoke project, with Dutch management discipline ensuring quality while Vietnamese engineering talent keeps costs competitive.
+A bridge between European business standards and APAC development velocity - that is how Manifera approaches every bespoke project, with Dutch management discipline ensuring quality while Vietnamese engineering talent keeps costs competitive.
 
-Get a custom team proposal within 48 hours — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Get a custom team proposal within 48 hours - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -122,7 +122,7 @@ If the contract includes IP assignment and the code is in your repository, you l
 
 ### Can bespoke software integrate with SaaS tools we want to keep? (Scenario: IT Manager planning a hybrid software architecture)
 
-Absolutely — this is the most common architecture in 2026. Bespoke software connects to SaaS tools via APIs: your custom core system integrates with Salesforce CRM, Stripe payments, Slack notifications, and any SaaS tool that offers a REST or GraphQL API. The bespoke layer becomes the central hub that orchestrates data between systems.
+Absolutely - this is the most common architecture in 2026. Bespoke software connects to SaaS tools via APIs: your custom core system integrates with Salesforce CRM, Stripe payments, Slack notifications, and any SaaS tool that offers a REST or GraphQL API. The bespoke layer becomes the central hub that orchestrates data between systems.
 
 ### How long before bespoke software pays for itself compared to SaaS? (Scenario: CFO calculating payback period)
 
@@ -158,7 +158,7 @@ Bespoke software is often BETTER for regulated industries because you control ev
       "name": "Can bespoke software integrate with SaaS tools we want to keep? (Scenario: IT Manager planning a hybrid software architecture)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely — this is the most common architecture in 2026. Bespoke software connects to SaaS tools via APIs: your custom core system integrates with Salesforce CRM, Stripe payments, Slack notifications, and any SaaS tool that offers a REST or GraphQL API. The bespoke layer becomes the central hub that orchestrates data between systems."
+        "text": "Absolutely - this is the most common architecture in 2026. Bespoke software connects to SaaS tools via APIs: your custom core system integrates with Salesforce CRM, Stripe payments, Slack notifications, and any SaaS tool that offers a REST or GraphQL API. The bespoke layer becomes the central hub that orchestrates data between systems."
       }
     },
     {

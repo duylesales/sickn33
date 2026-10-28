@@ -1,4 +1,4 @@
-💡 An ML engineer from Zeeland works in Amsterdam. A data analyst from Twente lives in Utrecht. At some point — a child, housing costs, parents needing support — many of them consider moving back.
+💡 An ML engineer from Zeeland works in Amsterdam. A data analyst from Twente lives in Utrecht. At some point - a child, housing costs, parents needing support - many of them consider moving back.
 
 🏡 Returnees are an attractive and rarely targeted group: they know the region, bring experience from larger employers and are more likely to stay than newcomers without ties.
 
@@ -6,7 +6,7 @@
 
 👥 Partners decide as much as jobs do: without suitable work for both, the move does not happen.
 
-✅ Campaigns work when they link real returnee stories to current vacancies — and keep running, because these decisions take months.
+✅ Campaigns work when they link real returnee stories to current vacancies - and keep running, because these decisions take months.
 
 ✉️ Get in touch: info@onlyaijobs.eu
 

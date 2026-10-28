@@ -1,8 +1,8 @@
-🚨 What if nobody in your organization can actually explain why last month's AWS invoice jumped 22% — not the CTO, not the lead engineer, not the finance analyst who has to reconcile it? ⚙️💥
+🚨 What if nobody in your organization can actually explain why last month's AWS invoice jumped 22% - not the CTO, not the lead engineer, not the finance analyst who has to reconcile it? ⚙️💥
 
 **The Pain Points:**
 ❌ **Runaway Cloud Cost Inflation:** A CFO at a mid-market SaaS company opens the monthly cloud invoice and finds a line item that has grown three months running with no corresponding growth in customers, revenue, or product usage. Engineering says "we'll look into it." Finance has no way to independently verify the answer, and no one owns the number.
-❌ **Unmonitored Idle Infrastructure:** Unmanaged cloud spend routinely runs 30-35% higher than necessary once idle resources, over-provisioned databases, and abandoned staging environments are counted, and on a €600,000 annual infrastructure budget that gap is €180,000-€200,000 a year quietly leaking out of gross margin with no line item that flags it — until a board member asks why cloud costs are outpacing revenue growth.
+❌ **Unmonitored Idle Infrastructure:** Unmanaged cloud spend routinely runs 30-35% higher than necessary once idle resources, over-provisioned databases, and abandoned staging environments are counted, and on a €600,000 annual infrastructure budget that gap is €180,000-€200,000 a year quietly leaking out of gross margin with no line item that flags it - until a board member asks why cloud costs are outpacing revenue growth.
 ❌ **Eroding SaaS Gross Margins:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

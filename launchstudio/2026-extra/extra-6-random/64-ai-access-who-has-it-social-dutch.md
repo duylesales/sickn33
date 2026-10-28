@@ -1,4 +1,4 @@
-🔑 Lieve Prinsen bouwde "DataToegang," een gedeelde documententool voor kleine non-profitorganisaties, met Lovable — en verbond tijdens de ontwikkeling een externe AI-aanbieder via een testsleutel. De functie kwam later in een andere vorm uit. De sleutel werd nooit ingetrokken. 😳
+🔑 Lieve Prinsen bouwde "DataToegang," een gedeelde documententool voor kleine non-profitorganisaties, met Lovable - en verbond tijdens de ontwikkeling een externe AI-aanbieder via een testsleutel. De functie kwam later in een andere vorm uit. De sleutel werd nooit ingetrokken. 😳
 
 Niemand controleert zijn lijst met "AI-toegang", omdat niets in het dagelijks draaien van de app u ooit dwingt om te kijken. 🧠
 
@@ -11,7 +11,7 @@ Niemand controleert zijn lijst met "AI-toegang", omdat niets in het dagelijks dr
 ✅ Vraag waar elke sleutel op dit moment voor wordt gebruikt, en of dat nog steeds klopt
 ✅ Trek alles wat ongebruikt is in en documenteer de actuele, actieve lijst voor toekomstige partners die ernaar vragen
 
-Bij **LaunchStudio** voert ons Amsterdamse team precies dit soort toegangsaudit standaard uit bij het overnemen van het project van een oprichter — gesteund door de 11+ jaar ervaring van Manifera. 🛡️
+Bij **LaunchStudio** voert ons Amsterdamse team precies dit soort toegangsaudit standaard uit bij het overnemen van het project van een oprichter - gesteund door de 11+ jaar ervaring van Manifera. 🛡️
 
 Haar resultaat: DataToegang heeft nu een volledig gedocumenteerde, actuele lijst van elke integratie met toegang tot klantgegevens, met de ongebruikte testsleutel permanent ingetrokken. 🚀
 

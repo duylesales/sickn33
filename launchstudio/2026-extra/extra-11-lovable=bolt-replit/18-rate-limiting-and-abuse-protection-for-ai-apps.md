@@ -30,7 +30,7 @@ Nothing in a generated application stops that. Not because anyone was careless, 
 
 **Login.** Credential stuffing: lists of leaked email and password pairs tried against your app systematically. Every successful match is one of your users' accounts compromised through no fault of yours.
 
-**Password reset.** Trivially abused to bomb someone's inbox, and worse for you, it burns your sending reputation with email providers — which is how legitimate emails from your domain start going to spam.
+**Password reset.** Trivially abused to bomb someone's inbox, and worse for you, it burns your sending reputation with email providers - which is how legitimate emails from your domain start going to spam.
 
 **Contact and feedback forms.** Spam in your inbox is the mild version. The serious version is a form that emails a third party, turning your domain into someone else's spam relay.
 
@@ -46,7 +46,7 @@ Nothing in a generated application stops that. Not because anyone was careless, 
 
 **Database bloat.** Tens of thousands of fake accounts make every query slower and every export longer, and cleaning them up without deleting real users is fiddly work.
 
-**Availability.** Enough concurrent requests exhaust your database connections, and your app goes down for everyone — indistinguishable, from your customers' side, from an outage you caused.
+**Availability.** Enough concurrent requests exhaust your database connections, and your app goes down for everyone - indistinguishable, from your customers' side, from an outage you caused.
 
 **Your own attention.** The least measurable and most real: days spent on cleanup rather than on the product.
 
@@ -56,7 +56,7 @@ You do not need all of these, and the order matters because the early ones are n
 
 **Provider-level protection.** Most hosting and content delivery platforms include basic rate limiting and bot filtering, often just a configuration toggle. This catches crude, high-volume attacks before they reach your application and costs nothing but an afternoon of reading documentation.
 
-**Per-endpoint rate limits.** The core measure: a rule stating how many requests one source may make in a window. Reasonable defaults for a small product might be a handful of login attempts per minute per address, a few password resets per hour per account, and a modest cap on anything metered. Enforce it at the server or the edge — never in the browser, which the attacker controls.
+**Per-endpoint rate limits.** The core measure: a rule stating how many requests one source may make in a window. Reasonable defaults for a small product might be a handful of login attempts per minute per address, a few password resets per hour per account, and a modest cap on anything metered. Enforce it at the server or the edge - never in the browser, which the attacker controls.
 
 **Per-account limits, not just per-address.** Addresses rotate cheaply. Limits attached to an authenticated account are harder to evade and let you be generous with anonymous traffic while still bounding the damage from a compromised login.
 
@@ -70,7 +70,7 @@ You do not need all of these, and the order matters because the early ones are n
 
 This deserves emphasis because generated code gets it wrong in a specific way: rate limiting implemented in frontend code is not rate limiting. Disabling a button after a click, or counting attempts in browser storage, only affects people using your interface politely. The attacker is calling your API directly and has never loaded your page.
 
-Every limit that matters must be enforced where the request arrives — at your edge, your server, or your database policies — and must be based on something the caller cannot simply change.
+Every limit that matters must be enforced where the request arrives - at your edge, your server, or your database policies - and must be based on something the caller cannot simply change.
 
 ## Getting the Numbers Right
 
@@ -80,7 +80,7 @@ Too tight and you block real users; too loose and you protect nothing. Three pri
 
 **Differentiate anonymous from authenticated.** Unauthenticated traffic deserves tighter limits than a paying customer.
 
-**Fail politely and informatively.** A clear message saying too many attempts, try again in a minute, is better for real users than a generic error — and reveals nothing useful to an attacker.
+**Fail politely and informatively.** A clear message saying too many attempts, try again in a minute, is better for real users than a generic error - and reveals nothing useful to an attacker.
 
 And log every rejection. The first thing you will want during an incident is a record of what was blocked and from where, and that is not something you can add retrospectively.
 
@@ -98,7 +98,7 @@ If your product becomes a target for a determined adversary rather than an oppor
 
 Abuse protection is exactly the kind of work that sits beneath your interface and never changes it. LaunchStudio adds it as part of getting a prototype production-ready: provider-level protection configured, per-endpoint and per-account limits enforced server-side, progressive friction on authentication, challenges where they earn their cost, spending caps on metered services, and logging with alerting so a spike reaches you rather than your card statement.
 
-The frontend you built in Lovable, Bolt or Cursor stays exactly as it is, and the code remains documented and AI-readable so you can keep building. That is part of the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers — eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
+The frontend you built in Lovable, Bolt or Cursor stays exactly as it is, and the code remains documented and AI-readable so you can keep building. That is part of the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers - eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
 If your app has an endpoint that costs you money and no limit in front of it, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
 
@@ -106,11 +106,11 @@ If your app has an endpoint that costs you money and no limit in front of it, [t
 
 Rate limiting handles volume. It handles scraping only partially, and it is worth separating the two because the response differs.
 
-A scraper is not trying to overwhelm you. It is trying to collect what you publish, politely, at a pace designed not to trigger anything. If your product's value is an assembled dataset — a directory, a catalogue, a price list, a set of listings — this is a commercial threat rather than a technical one.
+A scraper is not trying to overwhelm you. It is trying to collect what you publish, politely, at a pace designed not to trigger anything. If your product's value is an assembled dataset - a directory, a catalogue, a price list, a set of listings - this is a commercial threat rather than a technical one.
 
 **Accept what you cannot prevent.** Anything visible to an anonymous visitor can be collected. The realistic goal is to make collection expensive and detectable, not impossible.
 
-**Put the valuable parts behind authentication.** Not necessarily payment — an account with verification raises the cost of bulk collection significantly, because accounts can be rate-limited, monitored and revoked.
+**Put the valuable parts behind authentication.** Not necessarily payment - an account with verification raises the cost of bulk collection significantly, because accounts can be rate-limited, monitored and revoked.
 
 **Limit per account, not just per address.** Scrapers rotate addresses cheaply; making an account the unit of measurement changes the economics.
 
@@ -138,7 +138,7 @@ If abuse is happening right now, the order of operations matters more than elega
 
 Nadia el Amrani built Taalmaatje in Lovable: a conversation-practice app for people learning Dutch, using a commercial language model to generate exercises and corrections. It had 340 users, mostly around Eindhoven, on a modest subscription.
 
-The endpoint that called the model required a logged-in session, which Nadia reasonably assumed was protection. It was not: creating an account took seconds, there was no email verification, and no limit on how many requests one account could make. Someone registered, extracted the request format, and used the endpoint as a free translation service — roughly 60,000 calls over nine days, from a handful of scripted accounts.
+The endpoint that called the model required a logged-in session, which Nadia reasonably assumed was protection. It was not: creating an account took seconds, there was no email verification, and no limit on how many requests one account could make. Someone registered, extracted the request format, and used the endpoint as a free translation service - roughly 60,000 calls over nine days, from a handful of scripted accounts.
 
 The model provider's invoice arrived before any alert did, because no spending cap and no usage monitoring existed.
 
@@ -147,9 +147,9 @@ Four business days of work: per-account rate limits on the model endpoint scaled
 **Result:** model costs returned to roughly 4% of the peak month and have tracked subscriber numbers since. The alert has fired twice, both times for legitimate usage spikes during exam season, which Nadia describes as reassuring rather than annoying.
 
 > *"I thought requiring a login was the limit. It turned out the login took fifteen seconds to get and nothing happened after that."*
-> — **Nadia el Amrani, Founder, Taalmaatje (Eindhoven)**
+> - **Nadia el Amrani, Founder, Taalmaatje (Eindhoven)**
 
-**Cost & Timeline:** €1,750 (rate limiting, verification, bot protection, spending caps and alerting) — completed in 4 business days.
+**Cost & Timeline:** €1,750 (rate limiting, verification, bot protection, spending caps and alerting) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -167,7 +167,7 @@ Properly configured, they will never notice. Progressive delays and generous cei
 
 ### Are CAPTCHAs worth the friction?
 
-On signup and password reset, usually yes. Everywhere else, usually not — they cost conversions and accessibility. Prefer invisible challenges and apply them only where automated abuse is most likely.
+On signup and password reset, usually yes. Everywhere else, usually not - they cost conversions and accessibility. Prefer invisible challenges and apply them only where automated abuse is most likely.
 
 ### Can I add this after launch?
 

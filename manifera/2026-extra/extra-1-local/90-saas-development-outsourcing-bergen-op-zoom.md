@@ -22,9 +22,9 @@ target_persona: "VP of Engineering"
 
 A rounding error in a typical SaaS dashboard is a cosmetic annoyance. The same class of data-integrity bug in a chemical-process monitoring platform is a safety question, and treating both with the same default engineering rigor is how the second one becomes a genuine incident.
 
-**The Pain:** A VP of Engineering at a chemical-sector technology company in Bergen op Zoom — a Noord-Brabant town with a significant chemical and process-industry cluster — is SaaS development outsourcing a process-monitoring platform where data integrity failures carry safety implications well beyond a typical SaaS product's worst-case scenario.
+**The Pain:** A VP of Engineering at a chemical-sector technology company in Bergen op Zoom - a Noord-Brabant town with a significant chemical and process-industry cluster - is SaaS development outsourcing a process-monitoring platform where data integrity failures carry safety implications well beyond a typical SaaS product's worst-case scenario.
 
-**The Agitation:** A VP of Engineering who outsources this kind of platform to a team applying default CRUD-application engineering standards — reasonable for most SaaS products, insufficient here — risks a data-integrity gap that surfaces as inaccurate process readings, with consequences that extend into real operational safety, not just a support ticket.
+**The Agitation:** A VP of Engineering who outsources this kind of platform to a team applying default CRUD-application engineering standards - reasonable for most SaaS products, insufficient here - risks a data-integrity gap that surfaces as inaccurate process readings, with consequences that extend into real operational safety, not just a support ticket.
 
 ## Engineering Rigor Matched to the Actual Stakes
 
@@ -32,16 +32,16 @@ SaaS development outsourcing for a chemical-process monitoring platform needs a 
 
 The first requirement is end-to-end data validation at every ingestion point from process sensors and control systems, with explicit handling for out-of-range or anomalous readings, rather than assuming upstream data is always clean and passing it through unchecked.
 
-The second is redundant verification for any value that feeds an alert or safety-relevant threshold — a second, independent check on data that triggers operational decisions, not a single unverified pipeline that a subtle bug could silently corrupt.
+The second is redundant verification for any value that feeds an alert or safety-relevant threshold - a second, independent check on data that triggers operational decisions, not a single unverified pipeline that a subtle bug could silently corrupt.
 
-The third is comprehensive audit logging specifically designed to support incident investigation — if a data-integrity question ever needs to be answered after the fact, the system needs to make reconstructing exactly what data was shown, when, and why straightforward, not an archaeological exercise through incomplete logs.
+The third is comprehensive audit logging specifically designed to support incident investigation - if a data-integrity question ever needs to be answered after the fact, the system needs to make reconstructing exactly what data was shown, when, and why straightforward, not an archaeological exercise through incomplete logs.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads set the elevated data-integrity standard explicitly for process-safety-adjacent platforms, distinct from the default applied to typical business SaaS work.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds redundant verification for safety-relevant values and comprehensive, investigation-ready audit logging as standard practice.
 
-This is Dutch Management × Vietnamese Mastery — SaaS engineering rigor matched to genuine process-safety stakes. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - SaaS engineering rigor matched to genuine process-safety stakes. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Chimie Process Occitanie SAS, a chemical-process technology company based near T
 Manifera rebuilt the ingestion pipeline with end-to-end validation, redundant verification for safety-relevant thresholds, and comprehensive audit logging designed specifically for incident reconstruction. The following twelve months of operation produced zero data-integrity incidents, with the audit logging specifically credited by the client's safety team as meeting their internal investigation standards.
 
 > *"The bug wasn't dramatic. It just quietly showed the wrong number for a few hours, and in our world, the wrong number is not a cosmetic issue. That distinction had to be built into the engineering standard, not assumed."*
-> — **VP of Engineering, Chimie Process Occitanie SAS, France**
+> - **VP of Engineering, Chimie Process Occitanie SAS, France**
 
 ## Default CRUD-App Rigor vs. Manifera's Process-Safety Standard
 
@@ -66,7 +66,7 @@ Manifera rebuilt the ingestion pipeline with end-to-end validation, redundant ve
 
 ## The Economics
 
-A data-integrity gap in a chemical-process monitoring platform, treated with default SaaS engineering rigor rather than an elevated process-safety standard, carries a risk profile that extends well beyond typical software cost categories into genuine operational safety territory — a risk an elevated data-validation and verification standard is specifically designed to close. [Talk to Manifera about process-safety-grade SaaS engineering](https://www.manifera.com/contact-us/).
+A data-integrity gap in a chemical-process monitoring platform, treated with default SaaS engineering rigor rather than an elevated process-safety standard, carries a risk profile that extends well beyond typical software cost categories into genuine operational safety territory - a risk an elevated data-validation and verification standard is specifically designed to close. [Talk to Manifera about process-safety-grade SaaS engineering](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

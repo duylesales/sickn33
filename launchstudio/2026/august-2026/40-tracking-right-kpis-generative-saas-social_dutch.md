@@ -1,4 +1,4 @@
-🔥 Scarlett bouwde een prototype met **Cursor** — Scarlett, een startup-oprichter, bouwde een AI-analytics app, maar de centrale database liep vast doordat zware analytics-queries rechtstreeks op de primaire database draaiden. 🧠
+🔥 Scarlett bouwde een prototype met **Cursor** - Scarlett, een startup-oprichter, bouwde een AI-analytics app, maar de centrale database liep vast doordat zware analytics-queries rechtstreeks op de primaire database draaiden. 🧠
 
 Het monitoren van de juiste AI-metrics (zoals AI Brutomarge per gebruiker en Generation Success Rate) voorkomt dat sterke groei leidt tot onverwachte verliezen.
 
@@ -12,7 +12,7 @@ Het monitoren van de juiste AI-metrics (zoals AI Brutomarge per gebruiker en Gen
 
 Bij **LaunchStudio** lossen we exact dit type database-architectuur en telemetrievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Scarletts platform schaalt nu soepel: Dashboard-laadtijden daalden naar minder dan 300ms terwijl de primaire schrijfsnelheid optimaal bleef. (€1.850 (DB Scaling Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Scarletts platform schaalt nu soepel: Dashboard-laadtijden daalden naar minder dan 300ms terwijl de primaire schrijfsnelheid optimaal bleef. (€1.850 (DB Scaling Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/tracking-right-kpis-generative-saas
 

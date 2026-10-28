@@ -1,6 +1,6 @@
 Een rol waarin iemand een derde van de tijd aan modelevaluatie besteedt, geplaatst onder "Software Engineer". 🏷️ Onzichtbaar voor precies de kandidaten die je zoekt.
 
-Niet per ongeluk verborgen — verborgen door een categoriseringsbeslissing waar niemand over nadacht. Het sjabloon kwam van de afdeling die werving historisch bezat, en niemand is verantwoordelijk voor het herzien ervan als de inhoud van een rol verschuift.
+Niet per ongeluk verborgen - verborgen door een categoriseringsbeslissing waar niemand over nadacht. Het sjabloon kwam van de afdeling die werving historisch bezat, en niemand is verantwoordelijk voor het herzien ervan als de inhoud van een rol verschuift.
 
 Hoe je erachter komt, meestal te laat: sterke kandidaten haken vroeg af omdat de rol niet is wat ze verwachtten, terwijl wie doorkomt de modelleerervaring mist die je nodig hebt. Pas als iemand de tekst kritisch herleest, valt het kwartje.
 

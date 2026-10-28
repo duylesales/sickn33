@@ -7,14 +7,14 @@ Voor bureaus en white-label partners is "wij raken uw frontend niet aan" geen ma
 ❌ Een onderaannemer die onderweg de interface "verbetert" breekt uw levering
 ❌ Eén slechte ervaring maakt elke toekomstige uitbestedingsbeslissing een risico om te herevalueren
 
-✅ Productiehardening leeft in de API-laag, databasebeleid, geheimen, hosting — niet componenten
+✅ Productiehardening leeft in de API-laag, databasebeleid, geheimen, hosting - niet componenten
 ✅ Niets ervan vereist het openen van één enkel frontendbestand
 ✅ Een klant kan uw ontwerp goedkeuren en nooit weten dat er een derde partij bij was
 ✅ Eén keer geverifieerd, stapelt de grens vertrouwen op voor elk volgend project
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineeringervaring, werken wij precies op deze grens, project na project. 🛡️
 
-Haar resultaat: checkout-flow kwam pixel-voor-pixel identiek terug — nu standaard via LaunchStudio gerouteerd. 🚀
+Haar resultaat: checkout-flow kwam pixel-voor-pixel identiek terug - nu standaard via LaunchStudio gerouteerd. 🚀
 
 👉 Ontdek hoe de grens daadwerkelijk standhoudt: https://launchstudio.eu/nl/blog/real-meaning-we-dont-touch-your-frontend
 

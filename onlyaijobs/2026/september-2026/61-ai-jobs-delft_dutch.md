@@ -31,7 +31,7 @@ Dat heeft een praktisch gevolg: de grens tussen "onderzoeksfunctie" en "industri
 
 ## Waarom de functietitels hier de technische diepgang onderschatten
 
-Delftse werkgevers schrijven vacatures in ingetogen engineeringtaal. Een vacature voor een "software engineer" bij een roboticaspin-off vraagt in de praktijk soms om vertrouwdheid met toestandsschatting, regeltechniek en sensorfusie — vaardigheden die in een Amsterdamse advertentie veel luider zouden worden aangekondigd.
+Delftse werkgevers schrijven vacatures in ingetogen engineeringtaal. Een vacature voor een "software engineer" bij een roboticaspin-off vraagt in de praktijk soms om vertrouwdheid met toestandsschatting, regeltechniek en sensorfusie - vaardigheden die in een Amsterdamse advertentie veel luider zouden worden aangekondigd.
 
 Het gevolg: filteren op functietitel misleidt je in twee richtingen. Je slaat functies over die technisch interessanter zijn dan ze klinken, en je solliciteert soms op iets waarvan de gestelde eisen een stevige leercurve verhullen. De volledige vacature lezen en, waar mogelijk, het technische blog van het bedrijf, levert hier meer op dan in markten waar advertenties zijn geschreven om te verkopen.
 
@@ -62,7 +62,7 @@ Het gevolg: filteren op functietitel misleidt je in twee richtingen. Je slaat fu
 | **YES!Delft-alumnibedrijven** | Start-ups en scale-ups | Robotica, computer vision, industriële AI, medische technologie |
 | **Engineering- en adviesbureaus** | Gevestigde industrie | Simulatie, optimalisatie en machine learning in civiele, maritieme en energietechniek |
 
-**Screening bij onderzoeksinstituten.** Een deel van het TNO-werk, vooral in defensie en veiligheid, kent screeningseisen en beperkingen op projecttoegang. Breng dit vroeg ter sprake — instituten zijn eraan gewend en zeggen eerlijk welke projectgebieden openstaan.
+**Screening bij onderzoeksinstituten.** Een deel van het TNO-werk, vooral in defensie en veiligheid, kent screeningseisen en beperkingen op projecttoegang. Breng dit vroeg ter sprake - instituten zijn eraan gewend en zeggen eerlijk welke projectgebieden openstaan.
 
 ## Delft vergeleken met de twee markten waarmee kandidaten het afwegen
 
@@ -95,7 +95,7 @@ Stel: een computer vision-spin-off die vier jaar geleden uit een TU Delft-onderz
 
 De eerste zet van de oprichter is geen vacature. Het is een bericht aan twee oud-collega's in de onderzoeksgroep met de vraag of er studenten zijn die aan precies dat probleemtype hebben gewerkt. Dat levert binnen een week twee of drie namen op. Parallel noemt het bedrijf de opening op een YES!Delft-bijeenkomst, wat nog een handvol leads oplevert.
 
-Pas als die kanalen falen, verschijnt een publieke vacature — en dan zijn er weken verstreken en heeft de oprichter al een mentale shortlist. Wie de functie voor het eerst op een vacaturebank ziet, stapt in een proces dat deels al beslist is.
+Pas als die kanalen falen, verschijnt een publieke vacature - en dan zijn er weken verstreken en heeft de oprichter al een mentale shortlist. Wie de functie voor het eerst op een vacaturebank ziet, stapt in een proces dat deels al beslist is.
 
 Dat is geen poortwachterij. Voor een bedrijf van elf mensen is een verkeerde technische aanstelling existentieel op een manier die het voor een organisatie van 400 mensen simpelweg niet is.
 

@@ -74,7 +74,7 @@ The interviewer is watching how you think as much as what you write. Stating you
 
 Writing a correct query is one skill; designing the tables other people query is another, and it is increasingly what distinguishes senior data people.
 
-**Facts and dimensions.** The dimensional approach — events in fact tables, descriptive attributes in dimension tables — remains the dominant pattern in analytical warehouses because it is comprehensible to non-specialists and performs well.
+**Facts and dimensions.** The dimensional approach - events in fact tables, descriptive attributes in dimension tables - remains the dominant pattern in analytical warehouses because it is comprehensible to non-specialists and performs well.
 
 **Grain declaration.** Every table should have a stated grain: one row per order line, one row per customer per day, one row per sensor reading. Tables without a declared grain accumulate duplicates and contradictory joins.
 
@@ -92,7 +92,7 @@ Query performance becomes a real concern quickly in any organisation with meanin
 
 **Reduce data early.** Filter and aggregate before joining where the logic permits. Scanning a billion rows to join them and then discarding most is the most common cause of slow analytical queries.
 
-**Understand partitioning and clustering.** In columnar warehouses, partition pruning determines whether you read a day or a decade. Writing filters that allow pruning — on the partition column, without wrapping it in a function — often improves a query by an order of magnitude.
+**Understand partitioning and clustering.** In columnar warehouses, partition pruning determines whether you read a day or a decade. Writing filters that allow pruning - on the partition column, without wrapping it in a function - often improves a query by an order of magnitude.
 
 **Beware of exploding joins.** A join that multiplies rows before an aggregation is both wrong and slow. Check counts before and after.
 
@@ -114,7 +114,7 @@ A few habits catch most of it:
 
 **Test on a small, hand-verifiable case.** Ten rows you can reason about manually will expose logic errors that a million rows conceal.
 
-**Be explicit about nulls.** Decide what a null means in each column — missing, not applicable, zero — and handle it deliberately, particularly in aggregates and outer joins where defaults will surprise you.
+**Be explicit about nulls.** Decide what a null means in each column - missing, not applicable, zero - and handle it deliberately, particularly in aggregates and outer joins where defaults will surprise you.
 
 **Never trust a number you have not queried two ways.** For anything consequential, compute it by a second method and compare.
 
@@ -126,7 +126,7 @@ For applied AI roles specifically, SQL appears at several points in a project, a
 
 **Dataset construction.** Assembling training data means joining events to outcomes at the right point in time. This is where leakage is introduced: using a value that was only known after the prediction moment. Expressing "as known at time t" correctly in SQL is a genuine skill, and it is what point-in-time joins and feature stores exist to formalise.
 
-**Feature computation.** Aggregations over windows — counts in the last thirty days, averages per customer per week — are natural SQL and are usually better computed in the warehouse than pulled into memory.
+**Feature computation.** Aggregations over windows - counts in the last thirty days, averages per customer per week - are natural SQL and are usually better computed in the warehouse than pulled into memory.
 
 **Label definition.** Deciding what counts as churn, a defect or a conversion is a SQL expression, and it is a business decision as much as a technical one. Write it once, document it, reuse it.
 
@@ -156,7 +156,7 @@ Twenty to thirty hours across a few weeks moves most people from hesitant to flu
 
 The rise of transformation tooling has created a distinct role in European organisations: the analytics engineer, who owns the modelled data layer between raw sources and analysis.
 
-The work combines SQL, data modelling, software engineering practice — version control, code review, testing, continuous integration — and close collaboration with the people who consume the data. It sits between data engineering and analysis and has absorbed responsibilities from both.
+The work combines SQL, data modelling, software engineering practice - version control, code review, testing, continuous integration - and close collaboration with the people who consume the data. It sits between data engineering and analysis and has absorbed responsibilities from both.
 
 Demand has been strong and steady, for a straightforward reason: organisations that invested in machine learning discovered their data layer could not support it, and fixing that is a prerequisite rather than an optional improvement.
 
@@ -188,7 +188,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 ## A Final Word
 
-SQL is not the interesting part of an AI career, and it is the part that most reliably determines whether the interesting parts are available to you. An engineer who can assemble a correct dataset from an unfamiliar schema, verify it, and explain the definitions behind it will be trusted with better problems than one who cannot — in every organisation, in every sector, regardless of which models are fashionable that year.
+SQL is not the interesting part of an AI career, and it is the part that most reliably determines whether the interesting parts are available to you. An engineer who can assemble a correct dataset from an unfamiliar schema, verify it, and explain the definitions behind it will be trusted with better problems than one who cannot - in every organisation, in every sector, regardless of which models are fashionable that year.
 
 ## Real example
 
@@ -196,7 +196,7 @@ SQL is not the interesting part of an AI career, and it is the part that most re
 
 A European subscription business reported monthly active customers from a query written by an analyst who had since left. A new data scientist rebuilt it while investigating an unrelated question and got a materially lower number.
 
-The original query joined customers to subscriptions and counted customers. Where a customer held two subscriptions — common after a product change the previous year — the join produced two rows, and the count was of rows rather than of distinct customers.
+The original query joined customers to subscriptions and counted customers. Where a customer held two subscriptions - common after a product change the previous year - the join produced two rows, and the count was of rows rather than of distinct customers.
 
 Nobody had noticed because the error grew gradually as multi-subscription customers increased, and the metric moved in the direction everyone expected.
 

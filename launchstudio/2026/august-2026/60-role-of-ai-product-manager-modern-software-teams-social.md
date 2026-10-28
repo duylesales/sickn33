@@ -1,4 +1,4 @@
-🔥 Sadie built a prototype using **Lovable** — sadie, a retail coordinator, used **lovable** to build a crm, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Sadie built a prototype using **Lovable** - sadie, a retail coordinator, used **lovable** to build a crm, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sadie's application achieved silky-smooth performance: Refined workflow reduced prototyping iteration cycles by 60%. (€1,100 (Design Token Setup) — production-ready and deployed in 3 business days.). 🚀
+Sadie's application achieved silky-smooth performance: Refined workflow reduced prototyping iteration cycles by 60%. (€1,100 (Design Token Setup) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/role-of-ai-product-manager-modern-software-teams
 

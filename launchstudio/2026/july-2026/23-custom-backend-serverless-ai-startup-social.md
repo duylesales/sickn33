@@ -1,4 +1,4 @@
-🔥 James built a prototype using **Cursor** — james, a startup founder, used **cursor** to build a social media scheduler prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 James built a prototype using **Cursor** - james, a startup founder, used **cursor** to build a social media scheduler prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-James's application achieved production readiness: James stabilized the client UI, allowing seamless scheduling of 100+ posts in batch operations. (€2,200 (Custom Backend Package) — production-ready and deployed in 7 business days.). 🚀
+James's application achieved production readiness: James stabilized the client UI, allowing seamless scheduling of 100+ posts in batch operations. (€2,200 (Custom Backend Package) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/custom-backend-serverless-ai-startup
 

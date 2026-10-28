@@ -28,7 +28,7 @@ Content Format: Listicle with Depth
 }
 </script>
 
-Every year, thousands of founders wire €30,000 to a software development company they found on Clutch or Google — and end up with a half-broken prototype, ghosted Slack channels, and zero working code six months later.
+Every year, thousands of founders wire €30,000 to a software development company they found on Clutch or Google - and end up with a half-broken prototype, ghosted Slack channels, and zero working code six months later.
 
 The problem is not that good development partners do not exist. The problem is that **non-technical founders lack a framework for separating the professionals from the pretenders.** This guide gives you one.
 
@@ -47,7 +47,7 @@ Instead, ask these questions during your discovery call:
 The most dangerous software companies are the ones that subcontract your project to a random freelancer network the moment the ink dries. Here is how to test for genuine in-house capability:
 
 - **Request a technical architecture review.** Ask them to sketch a high-level architecture diagram for your project during the proposal phase. If they cannot do this without charging you, their senior engineers are either nonexistent or already overbooked.
-- **Check their tech stack breadth.** A company that only does WordPress is not a [custom software development](https://www.manifera.com/services/custom-software-development/) partner — they are a template shop. Look for genuine full-stack capability across backend frameworks (Laravel, Node.js, .NET), frontend (React, Angular, Vue), and mobile (React Native, Flutter).
+- **Check their tech stack breadth.** A company that only does WordPress is not a [custom software development](https://www.manifera.com/services/custom-software-development/) partner - they are a template shop. Look for genuine full-stack capability across backend frameworks (Laravel, Node.js, .NET), frontend (React, Angular, Vue), and mobile (React Native, Flutter).
 
 ## 3. The Contract Tells You Everything
 
@@ -59,7 +59,7 @@ Before you sign anything, look for these critical clauses:
 
 ## 4. Geography Matters More Than You Think
 
-The timezone overlap between your team and theirs determines the speed of every decision in your project. A 1-hour overlap means your questions sit unanswered for 23 hours. A 4-5 hour overlap — like between Central European Time and Ho Chi Minh City (GMT+7) — means real-time collaboration on critical issues every afternoon.
+The timezone overlap between your team and theirs determines the speed of every decision in your project. A 1-hour overlap means your questions sit unanswered for 23 hours. A 4-5 hour overlap - like between Central European Time and Ho Chi Minh City (GMT+7) - means real-time collaboration on critical issues every afternoon.
 
 At [Manifera](https://www.manifera.com/about-us/), for example, the Amsterdam office manages client relationships while the Vietnamese engineering hub handles development. This gives European clients a full business day of overlap combined with cost-effective engineering talent.
 
@@ -67,7 +67,7 @@ At [Manifera](https://www.manifera.com/about-us/), for example, the Amsterdam of
 
 Every company will hand you their three happiest clients. Instead, ask: **"Can I speak to a client whose project did not go perfectly?"** How they handled adversity reveals far more about their character than their highlight reel.
 
-Also check independent review platforms — but look beyond the star rating. Read the 3-star reviews. They contain the honest truth about communication gaps, timeline slips, and how the company responded.
+Also check independent review platforms - but look beyond the star rating. Read the 3-star reviews. They contain the honest truth about communication gaps, timeline slips, and how the company responded.
 
 ## 6. The Cultural Fit Test
 
@@ -75,23 +75,23 @@ Technical skill without cultural alignment produces beautiful code that solves t
 
 - **Do they ask about your business model?** A partner who only asks about features without understanding your revenue model will build the wrong thing.
 - **Do they push back?** A team that agrees with every requirement without challenging assumptions is not thinking critically about your product.
-- **Do they speak your language?** Not literally — but can they translate complex technical decisions into business impact for you?
+- **Do they speak your language?** Not literally - but can they translate complex technical decisions into business impact for you?
 
 ## 7. Decode Their Pricing Model Before You Compare Quotes
 
-Here is a trap that catches almost every first-time founder: you request proposals from three agencies, and you get back three numbers that look nothing alike — €40,000, €65,000, and "€45/hour, estimate TBD." Without understanding what sits underneath each number, you cannot actually compare them. You are comparing apples to a shopping list.
+Here is a trap that catches almost every first-time founder: you request proposals from three agencies, and you get back three numbers that look nothing alike - €40,000, €65,000, and "€45/hour, estimate TBD." Without understanding what sits underneath each number, you cannot actually compare them. You are comparing apples to a shopping list.
 
 Software firms typically price work in one of three ways, and each shifts risk to a different party:
 
-- **Fixed Price.** You get one number for a defined scope. This feels safest to a non-technical founder, but it only works if the requirements are locked before coding starts. Any change request outside that scope gets billed separately — often at a markup, because the firm priced in a risk buffer for exactly this scenario. Fixed price is appropriate for a well-specified MVP with a written spec, not for a product still finding its shape.
+- **Fixed Price.** You get one number for a defined scope. This feels safest to a non-technical founder, but it only works if the requirements are locked before coding starts. Any change request outside that scope gets billed separately - often at a markup, because the firm priced in a risk buffer for exactly this scenario. Fixed price is appropriate for a well-specified MVP with a written spec, not for a product still finding its shape.
 - **Time & Materials (T&M).** You pay for actual hours logged against the project, usually invoiced monthly. This is more honest about uncertainty, but it puts the burden on you to track velocity and catch scope creep before the invoice arrives. Ask upfront: is there a monthly cap, and who signs off on overages before they happen rather than after?
-- **Dedicated Team.** You pay a flat monthly rate per engineer, and that person (or pod) works exclusively on your product under your direction, following your backlog. This is the model most agencies — including Manifera — use for engagements beyond a single MVP sprint, because it scales cleanly as the roadmap grows without re-negotiating scope every quarter.
+- **Dedicated Team.** You pay a flat monthly rate per engineer, and that person (or pod) works exclusively on your product under your direction, following your backlog. This is the model most agencies - including Manifera - use for engagements beyond a single MVP sprint, because it scales cleanly as the roadmap grows without re-negotiating scope every quarter.
 
-None of these models is inherently better. The failure mode is comparing a Fixed Price quote against a T&M quote as if the headline number means the same thing. A €40,000 fixed-price quote with a narrow, rigidly defined scope can end up costing more than a €65,000 T&M engagement once you tally the change orders — because the fixed-price firm priced *around* your inevitable mid-project pivots, and the T&M firm didn't need to.
+None of these models is inherently better. The failure mode is comparing a Fixed Price quote against a T&M quote as if the headline number means the same thing. A €40,000 fixed-price quote with a narrow, rigidly defined scope can end up costing more than a €65,000 T&M engagement once you tally the change orders - because the fixed-price firm priced *around* your inevitable mid-project pivots, and the T&M firm didn't need to.
 
 To normalize quotes before you compare them, ask every finalist the same four questions:
 
-1. **"What exactly is included in this number — QA, project management, DevOps setup, staging environment?"** Some firms bury a 15-20% project management overhead inside the rate; others itemize it separately. If you do not ask, you will not know which quote is actually cheaper.
+1. **"What exactly is included in this number - QA, project management, DevOps setup, staging environment?"** Some firms bury a 15-20% project management overhead inside the rate; others itemize it separately. If you do not ask, you will not know which quote is actually cheaper.
 2. **"What happens to a change request that falls outside the original scope document?"** Get the answer in writing, not verbally. This is where fixed-price budgets quietly double.
 3. **"What is your blended hourly rate once you include senior and junior staff on the project?"** A quote built entirely on senior rates but staffed mostly by juniors is a bait-and-switch waiting to happen.
 4. **"If I need to slow down or pause for a month, what is the cost and notice period?"** Dedicated team models usually have a ramp-down clause; fixed-price contracts often do not let you pause at all without forfeiting the milestone payment.

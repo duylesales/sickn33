@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom agritech builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom agritech builds. 💸💥
 
 **The Pain Points:**
 ❌ **Sensor Data Reliability and Gap Handling:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

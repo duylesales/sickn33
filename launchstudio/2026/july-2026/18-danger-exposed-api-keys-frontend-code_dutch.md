@@ -72,7 +72,7 @@ Isabella werkte samen met **LaunchStudio (door Manifera)** om het product lancer
 
 **Resultaat:** Isabella heeft de API-sleutels beveiligd, waardoor ongeautoriseerde toegang wordt voorkomen en de limieten voor LLM-aanvragen worden vergrendeld.
 
-**Kosten en tijdlijn:** € 800 (Secrets Security Package) — productieklaar en binnen 3 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 800 (Secrets Security Package) - productieklaar en binnen 3 werkdagen geïmplementeerd.
 
 ---
 

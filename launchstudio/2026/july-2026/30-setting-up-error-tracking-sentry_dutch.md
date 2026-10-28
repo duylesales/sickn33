@@ -69,7 +69,7 @@ Victoria werkte samen met **LaunchStudio (door Manifera)** om het product lancer
 
 **Resultaat:** Victoria identificeerde en repareerde een API-time-out van derden binnen 20 minuten na integratie, waardoor potentiële klanten werden bespaard.
 
-**Kosten en tijdlijn:** € 950 (Error Monitoring Package) — klaar voor productie en geïmplementeerd binnen 3 werkdagen.
+**Kosten en tijdlijn:** € 950 (Error Monitoring Package) - klaar voor productie en geïmplementeerd binnen 3 werkdagen.
 
 ---
 

@@ -86,7 +86,7 @@ De incidenten die een softwarebedrijf het diepst in verlegenheid brengen zijn vr
 Het inrichten van een staging-omgeving die productie betrouwbaar spiegelt, voorzien van geanonimiseerde data en hermetisch afgesloten van de buitenwereld, is standaard productiewerk. LaunchStudio, ondersteund door meer dan 11 jaar productie-ervaring bij Manifera, richt deze gescheiden testomgevingen en veilige datapijplijnen professioneel in. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Preview-Omgevingen en Wat Ze NIET Dekken
 
-Moderne cloudplatforms (zoals Vercel, Netlify of Railway) bieden tegenwoordig de fantastische mogelijkheid om automatisch een kortstondige testomgeving aan te maken voor elke git-branch of pull request (*Preview Environments*). Dit is buitengewoon waardevol — het visueel beoordelen van een feature in een werkende webversie verslaat het reviewen van kale code te allen tijde — maar het kent een hele specifieke structurele beperking die u goed moet begrijpen.
+Moderne cloudplatforms (zoals Vercel, Netlify of Railway) bieden tegenwoordig de fantastische mogelijkheid om automatisch een kortstondige testomgeving aan te maken voor elke git-branch of pull request (*Preview Environments*). Dit is buitengewoon waardevol - het visueel beoordelen van een feature in een werkende webversie verslaat het reviewen van kale code te allen tijde - maar het kent een hele specifieke structurele beperking die u goed moet begrijpen.
 
 Preview-omgevingen delen onderhuids namelijk vrijwel altijd één centrale database. Dat betekent dat ze databasemigraties niet onafhankelijk van elkaar kunnen testen, en dat data die door de ene pull-request wordt weggeschreven direct zichtbaar en storend is voor alle andere actieve previews. Preview-omgevingen zijn fenomenaal voor frontend- en interface-aanpassingen, maar volstrekt ontoereikend voor structurele database- en integratietests.
 
@@ -95,12 +95,12 @@ De ideale, beproefde opzet voor een groeiend SaaS-product bestaat uit drie lagen
 2. **Eén permanente Staging-omgeving:** Uitgerust met een eigen, geanonimiseerde kopie van de productiedatabase voor het testen van zware databasemigraties, webhook-verwerking en externe integraties.
 3. **De Productieomgeving:** Uitsluitend voor echte klanten.
 
-Het onderhouden van die middelste staging-omgeving vereist wel discipline. Een staging-omgeving die is 'verwaarloosd' — met een verouderd databaseschema, verlopen API-tokens en testdata van acht maanden geleden — produceert fouten die in werkelijkheid niet bestaan en verbergt bugs die op productie direct exploderen. Ververs staging volgens een vaste routine (bijvoorbeeld maandelijks), en beschouw een haperende staging-omgeving als een acuut softwareprobleem dat direct opgelost moet worden, niet als iets waar u gemakzuchtig omheen werkt.
+Het onderhouden van die middelste staging-omgeving vereist wel discipline. Een staging-omgeving die is 'verwaarloosd' - met een verouderd databaseschema, verlopen API-tokens en testdata van acht maanden geleden - produceert fouten die in werkelijkheid niet bestaan en verbergt bugs die op productie direct exploderen. Ververs staging volgens een vaste routine (bijvoorbeeld maandelijks), en beschouw een haperende staging-omgeving als een acuut softwareprobleem dat direct opgelost moet worden, niet als iets waar u gemakzuchtig omheen werkt.
 ## Echt voorbeeld
 
 ### De Test-SMS Die Vierhonderd Patiënten Wekker Maakte
 
-Jelle Doornbos runde Herinnering, een SaaS-oplossing die automatische SMS- en e-mailherinneringen verstuurt voor tandartspraktijken en mondhygiënisten, gebouwd via Bolt. Om updates te testen had hij een staging-omgeving aangemaakt door een exacte kopie van de productieserver en database te maken — inclusief de live API-sleutels van Twilio en SendGrid.
+Jelle Doornbos runde Herinnering, een SaaS-oplossing die automatische SMS- en e-mailherinneringen verstuurt voor tandartspraktijken en mondhygiënisten, gebouwd via Bolt. Om updates te testen had hij een staging-omgeving aangemaakt door een exacte kopie van de productieserver en database te maken - inclusief de live API-sleutels van Twilio en SendGrid.
 
 Op een donderdagmiddag testte hij een wijziging in het verzendschema van herinneringen. Hij startte de batchtaak handmatig op staging tegen de gekopieerde database.
 
@@ -114,7 +114,7 @@ De testdatabase stond al vier maanden online op een subdomein zonder wachtwoordb
 **Resultaat:** Binnen drie werkdagen saneerde LaunchStudio de complete testinfrastructuur: er werd een geautomatiseerde anonimiseringspipeline gebouwd voor database-clones, alle externe communicatiesleutels werden vervangen door Mailtrap en mock-providers, staging werd voorzien van HTTP Basic Authentication en no-index headers, en er werd een permanente rode waarschuwingsbanner geïmplementeerd. De tandartspraktijken kregen een officieel compliance-rapport waarmee het incident formeel kon worden afgesloten.
 
 > *"Het sturen van die 400 SMS'jes was pijnlijk. Maar het échte gevaar was dat ik me nooit had gerealiseerd dat een kopie van honderden patiëntendossiers maandenlang onbeveiligd op een publieke testomgeving had gestaan."*
-> — **Jelle Doornbos, Oprichter, Herinnering**
+> - **Jelle Doornbos, Oprichter, Herinnering**
 
 **Kosten & Doorlooptijd:** Omgevingsscheiding, data-anonimisering en Mailtrap-inrichting opgeleverd in 3 werkdagen.
 

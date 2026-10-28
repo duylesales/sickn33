@@ -42,17 +42,17 @@ Content Format: Regional Career Guide
 }
 </script>
 
-OnlyAIJobs began with a simple observation in Noord-Brabant: many talented people in the province left for Amsterdam, Utrecht or Rotterdam, not because there was no interesting work nearby, but because they didn't know the local companies. 's-Hertogenbosch — better known as Den Bosch — is a good illustration. It is the capital of Noord-Brabant, home to the Jheronimus Academy of Data Science (JADS), and surrounded by employers in energy, water, food, health, government and industry that need data talent. Data science jobs in 's-Hertogenbosch and the surrounding region are real, varied and often overlooked. This guide is written for students and graduates who want to understand what the region offers before deciding to move away.
+OnlyAIJobs began with a simple observation in Noord-Brabant: many talented people in the province left for Amsterdam, Utrecht or Rotterdam, not because there was no interesting work nearby, but because they didn't know the local companies. 's-Hertogenbosch - better known as Den Bosch - is a good illustration. It is the capital of Noord-Brabant, home to the Jheronimus Academy of Data Science (JADS), and surrounded by employers in energy, water, food, health, government and industry that need data talent. Data science jobs in 's-Hertogenbosch and the surrounding region are real, varied and often overlooked. This guide is written for students and graduates who want to understand what the region offers before deciding to move away.
 
 ## JADS: A Data Science Academy in the Heart of Den Bosch
 
 The Jheronimus Academy of Data Science is a joint initiative of Tilburg University and Eindhoven University of Technology, located in 's-Hertogenbosch. It offers bachelor's, master's and doctoral education in data science, combining technical depth with business and entrepreneurship. JADS students work on projects with companies and public organisations, and the academy has become a meeting point between the region's universities and employers.
 
-For graduates, JADS matters in two ways. First, it produces a steady flow of data scientists in the city, which in turn attracts employers who want to hire them. Second, its collaborations with regional organisations mean that students often discover local employers through projects — exactly the kind of connection that keeps talent in the region. Avans University of Applied Sciences, with a campus in 's-Hertogenbosch, adds practically trained IT and business graduates.
+For graduates, JADS matters in two ways. First, it produces a steady flow of data scientists in the city, which in turn attracts employers who want to hire them. Second, its collaborations with regional organisations mean that students often discover local employers through projects - exactly the kind of connection that keeps talent in the region. Avans University of Applied Sciences, with a campus in 's-Hertogenbosch, adds practically trained IT and business graduates.
 
 ## Employers Behind Data Science Jobs in 's-Hertogenbosch
 
-**Energy.** Enexis, one of the main Dutch electricity and gas distribution network operators, has its headquarters in 's-Hertogenbosch. Grid operators face major challenges from the energy transition — congestion, solar panels on roofs, heat pumps and electric vehicles — and rely on data science for forecasting, network planning, asset management and customer processes.
+**Energy.** Enexis, one of the main Dutch electricity and gas distribution network operators, has its headquarters in 's-Hertogenbosch. Grid operators face major challenges from the energy transition - congestion, solar panels on roofs, heat pumps and electric vehicles - and rely on data science for forecasting, network planning, asset management and customer processes.
 
 **Water.** Brabant Water, the drinking water company for most of the province, is also headquartered in the city. Water companies use data for leak detection, demand forecasting, asset management and water quality monitoring.
 
@@ -79,7 +79,7 @@ Den Bosch is well connected. By train, Eindhoven, Tilburg, Utrecht and Nijmegen 
 | Nijmegen (Gelderland) | Health, semiconductors, research | Radboud University and Radboudumc |
 | Utrecht | Finance, mobility, e-commerce | Direct train connection |
 
-This network of cities means that a graduate living in Den Bosch can access a large and varied job market without moving — the core point of searching by distance rather than by city name.
+This network of cities means that a graduate living in Den Bosch can access a large and varied job market without moving - the core point of searching by distance rather than by city name.
 
 ## Entry-Level Roles to Look For
 
@@ -94,7 +94,7 @@ Many regional employers publish vacancies in Dutch and use titles such as "data 
 
 ## How OnlyAIJobs Helps Brabant Graduates
 
-OnlyAIJobs was built for exactly this situation. It lists only AI, machine learning and data roles, shows each vacancy at its exact address with the distance from your home and does not allow employers to pay for higher placement — so a regional water company or grid operator appears on the same terms as a multinational. Applications go directly to the employer's own page, and browsing is free with no account.
+OnlyAIJobs was built for exactly this situation. It lists only AI, machine learning and data roles, shows each vacancy at its exact address with the distance from your home and does not allow employers to pay for higher placement - so a regional water company or grid operator appears on the same terms as a multinational. Applications go directly to the employer's own page, and browsing is free with no account.
 
 Its listings are concentrated in the Netherlands, including cities such as Eindhoven, Utrecht, Amsterdam, Groningen, Ede and Capelle aan den IJssel. Employers listing AI and data roles include organisations such as Accenture, Cegeka, Heijmans, VINCI Energies, Rexel, Boltrics and Holland Innovative. For graduates in Den Bosch, the practical approach is to set your home location, look at what lies within a commute you find acceptable and combine this with JADS career events, university career services and regional networks.
 
@@ -102,7 +102,7 @@ Its listings are concentrated in the Netherlands, including cities such as Eindh
 
 Understanding why regional employers are overlooked helps you find them. Large tech companies invest in employer branding, career fairs and online visibility. A grid operator, water company or provincial government has a different primary mission and often a smaller recruitment budget. Their vacancies may be published on their own websites or general job boards, in Dutch, with functional titles. Students scrolling through listings for "machine learning engineer" rarely come across them.
 
-Yet these organisations often offer exactly what graduates say they want: meaningful problems, real data, stable employment, reasonable working hours and the chance to grow quickly because teams are smaller. Many also offer good employment conditions under collective labour agreements, including pensions, training budgets and flexible working. The mismatch is informational, not substantive — and that is something you can fix by changing how you search.
+Yet these organisations often offer exactly what graduates say they want: meaningful problems, real data, stable employment, reasonable working hours and the chance to grow quickly because teams are smaller. Many also offer good employment conditions under collective labour agreements, including pensions, training budgets and flexible working. The mismatch is informational, not substantive - and that is something you can fix by changing how you search.
 
 ## What Regional Employers Look For in Graduates
 
@@ -118,7 +118,7 @@ Employers offering data science jobs in 's-Hertogenbosch and the surrounding reg
 
 ## Making the Most of JADS Connections
 
-If you are still studying at JADS, use your remaining time strategically. Choose projects with regional organisations, attend events where companies present their data challenges and ask project partners about their teams and vacancies. A thesis or project with a regional employer is one of the most effective ways to secure a first job, because the organisation already knows your work. Alumni of JADS working in the region are also a valuable source of information — many are happy to talk about their experience.
+If you are still studying at JADS, use your remaining time strategically. Choose projects with regional organisations, attend events where companies present their data challenges and ask project partners about their teams and vacancies. A thesis or project with a regional employer is one of the most effective ways to secure a first job, because the organisation already knows your work. Alumni of JADS working in the region are also a valuable source of information - many are happy to talk about their experience.
 
 ## Housing and Living in Den Bosch
 
@@ -142,7 +142,7 @@ These projects share a common trait: they connect data science to tangible resul
 
 ## Planning Your Career From Den Bosch
 
-A first job in the region does not limit your future. The skills you build — forecasting, optimisation, working with messy real-world data, communicating with non-specialists — are valued everywhere. Many professionals in Brabant build their entire careers in the region, moving between energy, high-tech, logistics and public organisations as their interests develop. Others gain experience locally and later move abroad or to the Randstad, with a stronger profile than if they had started there. Either way, starting close to home with meaningful work and manageable living costs is a sound foundation.
+A first job in the region does not limit your future. The skills you build - forecasting, optimisation, working with messy real-world data, communicating with non-specialists - are valued everywhere. Many professionals in Brabant build their entire careers in the region, moving between energy, high-tech, logistics and public organisations as their interests develop. Others gain experience locally and later move abroad or to the Randstad, with a stronger profile than if they had started there. Either way, starting close to home with meaningful work and manageable living costs is a sound foundation.
 
 ## Traineeships and Graduate Programmes in Brabant
 
@@ -164,7 +164,7 @@ Join regional data meetups, follow JADS events after graduation and keep in touc
 
 A JADS master's graduate had accepted that his career would start in Amsterdam, like many of his classmates. He applied to well-known tech companies there and found the competition fierce and the housing situation discouraging.
 
-A friend suggested searching AI and data vacancies by distance from Den Bosch. He discovered a junior data scientist role at a regional grid operator working on congestion forecasting, a data role at a water company and several positions in Eindhoven's high-tech sector within a 30-minute train ride. He accepted the grid operator role, stayed in his rented room and cycles to work. He now works on problems with direct societal relevance — keeping the electricity grid working through the energy transition — and says he would never have found the role if he had only searched for "machine learning engineer Amsterdam".
+A friend suggested searching AI and data vacancies by distance from Den Bosch. He discovered a junior data scientist role at a regional grid operator working on congestion forecasting, a data role at a water company and several positions in Eindhoven's high-tech sector within a 30-minute train ride. He accepted the grid operator role, stayed in his rented room and cycles to work. He now works on problems with direct societal relevance - keeping the electricity grid working through the energy transition - and says he would never have found the role if he had only searched for "machine learning engineer Amsterdam".
 
 ## Key Takeaways
 

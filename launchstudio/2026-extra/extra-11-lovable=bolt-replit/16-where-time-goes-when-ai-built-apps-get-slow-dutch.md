@@ -12,7 +12,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable-app-prestaties: waar de tijd naartoe gaat in productie",
-  "description": "Waarom met AI gebouwde applicaties razendsnel aanvoelen met veertig rijen en tergend traag worden met vierduizend: herhaalde queries, ontbrekende indexen, niet-geoptimaliseerde afbeeldingen en te grote bundles — met een meetmethode om jouw knelpunt te vinden.",
+  "description": "Waarom met AI gebouwde applicaties razendsnel aanvoelen met veertig rijen en tergend traag worden met vierduizend: herhaalde queries, ontbrekende indexen, niet-geoptimaliseerde afbeeldingen en te grote bundles - met een meetmethode om jouw knelpunt te vinden.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-18",
@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Er is niets veranderd in de code. Dat is precies wat dit specifieke probleem zo desoriënterend maakt: je hebt geen nieuwe release gedeployed, je hebt de databaseconfiguratie niet aangeraakt, en toch doet een pagina die in maart binnen een fractie van een seconde laadde er in juni plotseling zes seconden over. Je programmacode is identiek. Wat wél is veranderd, is het datavolume waarop de code draait — en met AI gegenereerde applicaties zijn daar buitengewoon gevoelig voor, om redenen die volkomen voorspelbaar zijn zodra je weet waar je moet zoeken.
+Er is niets veranderd in de code. Dat is precies wat dit specifieke probleem zo desoriënterend maakt: je hebt geen nieuwe release gedeployed, je hebt de databaseconfiguratie niet aangeraakt, en toch doet een pagina die in maart binnen een fractie van een seconde laadde er in juni plotseling zes seconden over. Je programmacode is identiek. Wat wél is veranderd, is het datavolume waarop de code draait - en met AI gegenereerde applicaties zijn daar buitengewoon gevoelig voor, om redenen die volkomen voorspelbaar zijn zodra je weet waar je moet zoeken.
 
 Traagheid is niet één uniform probleem. Het manifesteert zich in drie verschillende vormen met elk hun eigen symptomen. De verkeerde aanpak kiezen is hoe oprichters twee weken kwijt zijn aan het optimaliseren van iets dat nooit de daadwerkelijke bottleneck was.
 
@@ -38,11 +38,11 @@ Stel altijd eerst vast met welk type traagheid je te maken hebt. Voor een gefrus
 
 Het meest voorkomende datalaagprobleem in met AI gegenereerde apps heeft een klassieke naam: het N+1 query-probleem. Dit treedt op wanneer je applicatie eerst een lijst met items ophaalt, en vervolgens voor elk afzonderlijk item in die lijst een nieuw netwerkverzoek naar de database stuurt.
 
-Stel: je haalt twintig afspraken op. Vervolgens haalt de app voor elke afspraak de bijbehorende klant op, en voor elke klant het gekoppelde bedrijf. Dat is één initiële query, plus twintig, plus nog eens twintig — een totaal van 41 round trips naar de server, waar twee gecombineerde queries voldoende waren geweest. Tijdens de ontwikkelfase met veertig testrijen merk je hier helemaal niets van. Met vierduizend rijen in productie verandert het in een pagina die nooit meer lijkt in te laden.
+Stel: je haalt twintig afspraken op. Vervolgens haalt de app voor elke afspraak de bijbehorende klant op, en voor elke klant het gekoppelde bedrijf. Dat is één initiële query, plus twintig, plus nog eens twintig - een totaal van 41 round trips naar de server, waar twee gecombineerde queries voldoende waren geweest. Tijdens de ontwikkelfase met veertig testrijen merk je hier helemaal niets van. Met vierduizend rijen in productie verandert het in een pagina die nooit meer lijkt in te laden.
 
 Gegenereerde code produceert dit patroon aan de lopende band. Het is namelijk de meest natuurlijke manier om logica in tekst uit te drukken wanneer een AI-model één record tegelijk beredeneert. Er is op zichzelf niets mis met elk afzonderlijk querytje; het probleem ontstaat puur door de opeenstapeling. Dat is exact waarom statische code reviews dit probleem missen, terwijl het tabblad Netwerk in je browser het direct genadeloos blootlegt.
 
-De oplossing is simpel: haal gerelateerde gegevens altijd in één enkele query op — via een SQL-join of een geneste select die door je databaselibrary (zoals Supabase) wordt ondersteund — in plaats van in een frontend-lus.
+De oplossing is simpel: haal gerelateerde gegevens altijd in één enkele query op - via een SQL-join of een geneste select die door je databaselibrary (zoals Supabase) wordt ondersteund - in plaats van in een frontend-lus.
 
 ## Database-indexen: de oplossing waar niemand aan denkt
 
@@ -56,7 +56,7 @@ Dit is met afstand de meest effectieve prestatieverbetering voor met AI gebouwde
 
 ## Foto's in originele smartphone-resolutie
 
-Kijk eens kritisch naar wat je app uitserveert wanneer een gebruiker een profielfoto of bijlage uploadt. In de meeste door AI gegenereerde apps is het antwoord: exact het ruwe bestand dat de gebruiker heeft geüpload. Een moderne smartphonefoto is al snel 4 tot 8 megabyte groot en duizenden pixels breed — en wordt in de applicatie getoond in een cirkeltje van 48 bij 48 pixels.
+Kijk eens kritisch naar wat je app uitserveert wanneer een gebruiker een profielfoto of bijlage uploadt. In de meeste door AI gegenereerde apps is het antwoord: exact het ruwe bestand dat de gebruiker heeft geüpload. Een moderne smartphonefoto is al snel 4 tot 8 megabyte groot en duizenden pixels breed - en wordt in de applicatie getoond in een cirkeltje van 48 bij 48 pixels.
 
 De browser van de bezoeker downloadt die gigantische bestanden stuk voor stuk en moet ze lokaal verkleinen. Twintig van zulke afbeeldingen op een overzichtspagina resulteert in tientallen megabytes aan netwerkverkeer voor een pagina die slechts kleine thumbnails toont.
 
@@ -76,7 +76,7 @@ Drie structurele redenen verklaren waarom alles lokaal zo soepel liep:
 
 Je testte met tientallen testrecords, niet met duizenden echte gebruikersgegevens. Je testte op een snelle laptop via kantoor-wifi, niet op een doorsnee smartphone via een wisselvallige 4G-verbinding. En je testte helemaal alleen, waardoor er geen andere gebruikers concurreerden om dezelfde databaseverbindingen.
 
-Productie keert al deze drie omstandigheden tegelijkertijd om. Daarom voelt het prestatieverlies voor oprichters vaak plotseling en onverklaarbaar. In werkelijkheid was de degradatie geleidelijk — je had er simpelweg geen meetinstrumenten op staan om het te zien aankomen.
+Productie keert al deze drie omstandigheden tegelijkertijd om. Daarom voelt het prestatieverlies voor oprichters vaak plotseling en onverklaarbaar. In werkelijkheid was de degradatie geleidelijk - je had er simpelweg geen meetinstrumenten op staan om het te zien aankomen.
 
 ## Eerst meten, dan pas optimaliseren
 
@@ -102,7 +102,7 @@ In aflopende volgorde van effectiviteit voor een typische met AI gebouwde app:
 
 **Pas code splitting toe op de frontend-bundel,** zodat pagina's alleen laden wat ze direct nodig hebben.
 
-**En pas daarna — en geen moment eerder — kijk je naar infrastructuur:** een zwaardere databaseserver, caching of een CDN. Je infrastructuur upgraden vóórdat je je databasequeries fixt, is simpelweg meer geld betalen om dezelfde inefficiëntie iets sneller te laten draaien. Het is de meest voorkomende manier waarop oprichters geld verspillen aan prestatieproblemen.
+**En pas daarna - en geen moment eerder - kijk je naar infrastructuur:** een zwaardere databaseserver, caching of een CDN. Je infrastructuur upgraden vóórdat je je databasequeries fixt, is simpelweg meer geld betalen om dezelfde inefficiëntie iets sneller te laten draaien. Het is de meest voorkomende manier waarop oprichters geld verspillen aan prestatieproblemen.
 
 ## Wanneer het écht aan de infrastructuur ligt
 
@@ -110,7 +110,7 @@ Soms is de programmacode daadwerkelijk optimaal. Aanhoudend gebruikersverkeer da
 
 ## Een professionele diagnose zonder giswerk
 
-Prestatieverbetering vereist feitelijke metingen in plaats van buikgevoel. Daarom loont het om iemand mee te laten kijken die deze specifieke knelpunten in tientallen applicaties heeft opgelost. De senior engineers van LaunchStudio analyseren het prestatieprofiel van je app, voegen de noodzakelijke indexen toe, bundelen herhaalde queries, richten een geautomatiseerde upload-pipeline in, optimaliseren de bundelgrootte en installeren monitoring zodat je de prestatiewinst direct in harde cijfers ziet — zonder de gebruikersinterface die je hebt ontworpen aan te tasten.
+Prestatieverbetering vereist feitelijke metingen in plaats van buikgevoel. Daarom loont het om iemand mee te laten kijken die deze specifieke knelpunten in tientallen applicaties heeft opgelost. De senior engineers van LaunchStudio analyseren het prestatieprofiel van je app, voegen de noodzakelijke indexen toe, bundelen herhaalde queries, richten een geautomatiseerde upload-pipeline in, optimaliseren de bundelgrootte en installeren monitoring zodat je de prestatiewinst direct in harde cijfers ziet - zonder de gebruikersinterface die je hebt ontworpen aan te tasten.
 
 Dit werk is een vast onderdeel van het [Launch Ready en Launch & Grow pakket](https://launchstudio.eu/nl/#packages). Het team hierachter is Manifera, dat met elf jaar ervaring in bedrijfskritische software voor onder meer Vodafone en TNO een schat aan ervaring heeft in precies dit type grondige technische optimalisaties.
 
@@ -120,13 +120,13 @@ Is je applicatie trager geworden en weet je niet precies waar het aan ligt? [Oms
 
 Caching wordt in vrijwel elk gesprek over prestaties direct als eerste geopperd, maar hoort juist helemaal achteraan in de rij. Caching maskeert onderliggende problemen in plaats van ze op te lossen, en introduceert een compleet nieuwe categorie hardnekkige bugs:
 
-**Waar caching goed in is:** data die kostbaar is om te berekenen en zelden verandert — een openbare homepage, een openbare productcatalogus of een algemene teller — serveren vanuit het geheugen in plaats van telkens opnieuw te berekenen. Voor drukbezochte openbare pagina's is dit buitengewoon krachtig.
+**Waar caching goed in is:** data die kostbaar is om te berekenen en zelden verandert - een openbare homepage, een openbare productcatalogus of een algemene teller - serveren vanuit het geheugen in plaats van telkens opnieuw te berekenen. Voor drukbezochte openbare pagina's is dit buitengewoon krachtig.
 
 **Waar caching gevaarlijk is:** alles wat gepersonaliseerd of transactioneel is. Als je een pagina met persoonsgegevens van een ingelogde gebruiker verkeerd cacht, serveer je vroeg of laat privégegevens van Gebruiker A aan Gebruiker B. Dat is geen prestatieprobleem meer, maar een ernstig datalek.
 
-**De bug die het introduceert:** verouderde gegevens (stale data). Een prijs die in de database is gewijzigd maar in de cache blijft hangen, leidt ertoe dat een klant een ander bedrag ziet dan er wordt afgeschreven. Elke cache vereist een waterdichte invalidatieregel — en cache-invalidatie is berucht als een van de lastigste vraagstukken in softwareontwikkeling.
+**De bug die het introduceert:** verouderde gegevens (stale data). Een prijs die in de database is gewijzigd maar in de cache blijft hangen, leidt ertoe dat een klant een ander bedrag ziet dan er wordt afgeschreven. Elke cache vereist een waterdichte invalidatieregel - en cache-invalidatie is berucht als een van de lastigste vraagstukken in softwareontwikkeling.
 
-**Waarom het pas als laatste komt:** een inefficiënte query cachen maakt de traagheid willekeurig in plaats van opgelost. Het is snel totdat de cache verloopt, en op dat moment precies even traag als voorheen — meestal juist tijdens een piek in bezoekersaantallen wanneer je het het minst kunt gebruiken.
+**Waarom het pas als laatste komt:** een inefficiënte query cachen maakt de traagheid willekeurig in plaats van opgelost. Het is snel totdat de cache verloopt, en op dat moment precies even traag als voorheen - meestal juist tijdens een piek in bezoekersaantallen wanneer je het het minst kunt gebruiken.
 
 De volgorde die werkt: optimaliseer de queries, voeg indexen toe, comprimeer afbeeldingen, splits de JavaScript-bundel. En pas daarna, als zware publieke pagina's onder reëel verkeer nog steeds druk ervaren, implementeer je gerichte caching met strikte invalidatieregels.
 
@@ -136,16 +136,16 @@ De volgorde die werkt: optimaliseer de queries, voeg indexen toe, comprimeer afb
 
 Fenna Hoekman bouwde Kookstudio in Lovable: een community-platform met recepten en maaltijdplanning voor thuiskoks rond Zwolle. Het platform lanceerde snel en groeide gestaag. Tegen de vijfde maand deed de recepten-overzichtspagina er echter tussen de vijf en negen seconden over om in te laden, en actieve communityleden begonnen erover te klagen.
 
-De technische meting kostte minder dan een uur. De overzichtspagina vuurde eerst één query af om de recepten op te halen, vervolgens voor elk individueel recept een query om de auteur op te vragen, en daarna voor elk recept nog een query voor de tags — een totaal van 121 losse databaseverzoeken voor één enkele pagina met veertig recepten. Daarnaast had de tabel `recipes` geen index op de kolom `category` die voor filtering werd gebruikt, waardoor elke gefilterde weergave alle 4.300 rijen één voor één scande. Bovendien werden foto's geserveerd in de originele smartphone-resolutie: gemiddeld 3,8 megabyte per afbeelding, veertig stuks per pagina.
+De technische meting kostte minder dan een uur. De overzichtspagina vuurde eerst één query af om de recepten op te halen, vervolgens voor elk individueel recept een query om de auteur op te vragen, en daarna voor elk recept nog een query voor de tags - een totaal van 121 losse databaseverzoeken voor één enkele pagina met veertig recepten. Daarnaast had de tabel `recipes` geen index op de kolom `category` die voor filtering werd gebruikt, waardoor elke gefilterde weergave alle 4.300 rijen één voor één scande. Bovendien werden foto's geserveerd in de originele smartphone-resolutie: gemiddeld 3,8 megabyte per afbeelding, veertig stuks per pagina.
 
 Vijf werkdagen waren nodig om de prestaties te herstellen: de drie losse query-stromen werden samengevoegd tot één efficiënte geneste selectie, er werden vier indexen aangemaakt op de kolommen die werden gebruikt voor sorteren en filteren, er werd een automatische beeldverwerkings-pipeline toegevoegd die direct thumbnails en moderne WebP-formaten aanmaakt, en de frontend-bundel werd opgesplitst zodat bezoekers van de overzichtspagina niet langer de zware code van de recepteneditor hoefden te downloaden.
 
 **Resultaat:** de laadtijd van de overzichtspagina daalde van 5 tot 9 seconden naar minder dan één seconde op een doorsnee smartphone via 4G. Als bijkomend voordeel daalde de maandelijkse rekening voor dataverkeer en cloudopslag met ongeveer tweederde.
 
 > *"Ik was al serieus aan het kijken naar een veel duurder database-abonnement. Het daadwerkelijke probleem bleek te zitten in vier ontbrekende database-indexen en foto's die het formaat van posters hadden."*
-> — **Fenna Hoekman, Oprichter, Kookstudio (Zwolle)**
+> - **Fenna Hoekman, Oprichter, Kookstudio (Zwolle)**
 
-**Kosten & Doorlooptijd:** € 2.200 (query-optimalisatie, indexen, afbeeldingspipeline, bundle splitting) — opgeleverd in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.200 (query-optimalisatie, indexen, afbeeldingspipeline, bundle splitting) - opgeleverd in 5 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -203,7 +203,7 @@ Vrijwel altijd aan niet-geoptimaliseerde afbeeldingen en een te grote JavaScript
       "name": "Hoeveel database-indexen heeft een kleine app nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal drie tot zes — één voor elke kolom waarop vaak gefilterd, gesorteerd of gekoppeld wordt. Het levert enorme winst op tegen een middag werk."
+        "text": "Meestal drie tot zes - één voor elke kolom waarop vaak gefilterd, gesorteerd of gekoppeld wordt. Het levert enorme winst op tegen een middag werk."
       }
     },
     {

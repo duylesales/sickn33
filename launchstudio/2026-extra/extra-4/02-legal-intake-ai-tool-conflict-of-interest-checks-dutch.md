@@ -49,7 +49,7 @@ Ingenieurs gebaseerd vanuit Manifera's Zuidoost-Aziatische hub op Tras Street, S
 
 Als uw intaketool onderweg is naar echte klanten, [bekijk wat een beveiligings- en nalevingsbeoordeling daadwerkelijk kost](https://launchstudio.eu/nl/#calculator) voordat uw eerste echte conflict er stilletjes doorheen glipt.
 
-## Een conflictcontrole is een momentopname — de database blijft bewegen
+## Een conflictcontrole is een momentopname - de database blijft bewegen
 
 Een goed gebouwde conflictcontrole beantwoordt één vraag correct: conflicteert deze nieuwe intake op dit moment met iets wat het kantoor al in het archief heeft. Wat het niet automatisch beantwoordt is een vraag die pas later opkomt – conflicteert een zaak die het kantoor volgende maand opent met een klant die het weken geleden al heeft goedgekeurd en ingewerkt? De klant- en zaakdatabase van een kantoor is niet statisch; deze groeit elke week, en een conflictcontrole die slechts eenmaal draait, op het moment dat een nieuwe klant wordt ingewerkt, heeft geen manier om een conflict op te vangen dat pas achteraf echt wordt, wanneer een nieuwe zaak een partij noemt die toevallig de tegenpartij van die eerdere klant is.
 
@@ -57,7 +57,7 @@ De meeste met AI gebouwde intaketools die wel een conflictcontrole ingebouwd kri
 
 ```
 Wanneer een nieuwe zaak wordt geopend:
-  1. Extraheer elke partij die erin wordt genoemd — klant, tegenpartij, gerelateerde entiteiten
+  1. Extraheer elke partij die erin wordt genoemd - klant, tegenpartij, gerelateerde entiteiten
   2. Voer dezelfde fuzzy-match controle uit tegen alle bestaande klanten en zaken,
      en niet alleen tegen andere nieuwe intakes
   3. Als er een overeenkomst boven de betrouwbaarheidsdrempel verschijnt tegen een al goedgekeurde
@@ -80,9 +80,9 @@ LaunchStudio bouwde een conflictcontrole-laag in IntakeWijs: elke nieuwe intake-
 **Resultaat:** Charlotte herlanceerde de pilot met de conflictcontrole live, en beide kantoren noemen het nu de reden waarom ze de tool voldoende vertrouwen om verder uit te breiden dan de pilot.
 
 > *"Ik bouwde een planningstool. Ik realiseerde me niet dat ik iets had gebouwd dat moest denken als een nalevingsfunctionaris totdat het bijna een conflict liet doorgaan."*
-> — **Charlotte de Groot, Oprichter, IntakeWijs (Leiden)**
+> - **Charlotte de Groot, Oprichter, IntakeWijs (Leiden)**
 
-**Kosten en tijdlijn:** € 1.400 (engine voor conflictmatching, beoordelingswerkstroom, audit-log) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (engine voor conflictmatching, beoordelingswerkstroom, audit-log) - voltooid in 8 werkdagen.
 
 ---
 

@@ -30,19 +30,19 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Two days before a client demo, a founder in Utrecht imported 3,000 real leads into the CRM tool he'd built with Lovable — and watched roughly 200 of them quietly disappear. Not deleted. Merged. The import script had decided that "Jan de Vries, Amsterdam" and "J. de Vries, Amsterdam-Zuid" were the same person, and it kept only one. If you're building a CRM or lead management tool with an AI coding assistant, this is the failure mode that doesn't show up until you stop testing with fake data.
+Two days before a client demo, a founder in Utrecht imported 3,000 real leads into the CRM tool he'd built with Lovable - and watched roughly 200 of them quietly disappear. Not deleted. Merged. The import script had decided that "Jan de Vries, Amsterdam" and "J. de Vries, Amsterdam-Zuid" were the same person, and it kept only one. If you're building a CRM or lead management tool with an AI coding assistant, this is the failure mode that doesn't show up until you stop testing with fake data.
 
 ## Why sample data hides this bug completely
 
-When you build with Lovable, Bolt, or Cursor, you almost always test with clean, obviously-distinct sample rows: "Test Lead 1," "Test Lead 2," a handful of emails that look nothing alike. The AI-generated import logic passes every test you throw at it. The problem is that real lead lists — pulled from a spreadsheet a sales rep has been maintaining by hand for two years — are full of near-duplicates that are legitimately different people or companies. Two contacts at the same company with different job titles. A lead who changed their email domain. A company name typed three slightly different ways by three different reps.
+When you build with Lovable, Bolt, or Cursor, you almost always test with clean, obviously-distinct sample rows: "Test Lead 1," "Test Lead 2," a handful of emails that look nothing alike. The AI-generated import logic passes every test you throw at it. The problem is that real lead lists - pulled from a spreadsheet a sales rep has been maintaining by hand for two years - are full of near-duplicates that are legitimately different people or companies. Two contacts at the same company with different job titles. A lead who changed their email domain. A company name typed three slightly different ways by three different reps.
 
-An AI tool asked to "make a AI CRM with duplicate detection" will typically generate a fuzzy-match function — comparing name similarity, email similarity, maybe phone number — and silently keep whichever record came first or last in the file. That's a reasonable-looking default. It's also exactly the kind of decision that needs a human-reviewed merge queue instead of an automatic overwrite, and most AI-generated CRM code doesn't build one because nobody asked for it explicitly.
+An AI tool asked to "make a AI CRM with duplicate detection" will typically generate a fuzzy-match function - comparing name similarity, email similarity, maybe phone number - and silently keep whichever record came first or last in the file. That's a reasonable-looking default. It's also exactly the kind of decision that needs a human-reviewed merge queue instead of an automatic overwrite, and most AI-generated CRM code doesn't build one because nobody asked for it explicitly.
 
 This is a pattern LaunchStudio sees constantly in AI-native SaaS tools: the feature that works in the demo is deduplication existing at all. The feature nobody demos is what happens when deduplication is wrong.
 
 ## What a production-grade migration actually needs
 
-A CRM tool that's going to survive contact with real data needs three things most AI-generated prototypes skip: a staging table that holds imported records before they touch production data, a confidence score on every proposed match instead of a binary merge/no-merge decision, and an audit log that lets you undo a bad import in one click rather than manually reconstructing 3,000 rows from a backup. None of this is exotic engineering — it's the kind of migration tooling that's been standard practice in enterprise data work for years, which is exactly why Manifera's engineers, who've handled data migrations for clients like Vodafone and Xpar Vision, treat it as a checklist item rather than an afterthought.
+A CRM tool that's going to survive contact with real data needs three things most AI-generated prototypes skip: a staging table that holds imported records before they touch production data, a confidence score on every proposed match instead of a binary merge/no-merge decision, and an audit log that lets you undo a bad import in one click rather than manually reconstructing 3,000 rows from a backup. None of this is exotic engineering - it's the kind of migration tooling that's been standard practice in enterprise data work for years, which is exactly why Manifera's engineers, who've handled data migrations for clients like Vodafone and Xpar Vision, treat it as a checklist item rather than an afterthought.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and one of the most common fixes our team makes to AI-built SaaS tools is exactly this: adding a review layer between "data comes in" and "data overwrites something." It's a few hours of engineering work that prevents a multi-day cleanup later. Our engineers working out of Manifera's Amsterdam office at Herengracht 420 review these import pipelines as part of the standard security and data-integrity pass before a tool goes live.
 
@@ -50,9 +50,9 @@ If you're not sure whether your own import logic has this gap, [get a fixed-scop
 
 ## Merging Two Leads Doesn't Just Merge Two Rows
 
-A staging table and a manual review queue solve the decision of whether two records should merge. They don't automatically solve what happens to everything else in the database that was quietly depending on the record that's about to disappear. A lead in a real CRM is rarely just a name and an email — it's the anchor for notes a rep wrote after a call, tasks assigned to follow up, deal stages, and email threads, all of them pointing back at that lead's ID. When a reviewer approves a merge, an AI-generated merge function will often update the surviving record's fields correctly and then simply delete the duplicate row, because that's what "merge" sounds like it means. Nobody told it that every note, task, and deal referencing the now-deleted ID needs to be re-pointed first, so those child records don't just vanish along with the row they were attached to.
+A staging table and a manual review queue solve the decision of whether two records should merge. They don't automatically solve what happens to everything else in the database that was quietly depending on the record that's about to disappear. A lead in a real CRM is rarely just a name and an email - it's the anchor for notes a rep wrote after a call, tasks assigned to follow up, deal stages, and email threads, all of them pointing back at that lead's ID. When a reviewer approves a merge, an AI-generated merge function will often update the surviving record's fields correctly and then simply delete the duplicate row, because that's what "merge" sounds like it means. Nobody told it that every note, task, and deal referencing the now-deleted ID needs to be re-pointed first, so those child records don't just vanish along with the row they were attached to.
 
-The fix is to treat a merge as a single transaction that touches every table with a foreign key back to the lead, not just the lead record itself — remap the children to the survivor's ID, log exactly what moved, and only then remove the duplicate:
+The fix is to treat a merge as a single transaction that touches every table with a foreign key back to the lead, not just the lead record itself - remap the children to the survivor's ID, log exactly what moved, and only then remove the duplicate:
 
 ```SQL
 BEGIN TRANSACTION
@@ -71,24 +71,24 @@ DELETE FROM leads WHERE id = :duplicate_id
 COMMIT
 ```
 
-Without this, a reviewer can approve a perfectly correct merge decision and still lose a month of call notes or an active deal in progress, because the review step only checked whether the two people were the same — it never checked what was attached to the one that didn't survive.
+Without this, a reviewer can approve a perfectly correct merge decision and still lose a month of call notes or an active deal in progress, because the review step only checked whether the two people were the same - it never checked what was attached to the one that didn't survive.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The CRM That Merged Away Its Own Pipeline
 
-Daan Verhoeven built LeadGrip, a CRM for local sales teams, using Lovable over about ten days. It handled the basics well — pipeline stages, notes, task reminders — and looked demo-ready. Ahead of a live client walkthrough, Daan needed to migrate his first real customer's lead list: roughly 3,000 rows exported from a decade-old Excel sheet, full of the inconsistent formatting real sales data always has.
+Daan Verhoeven built LeadGrip, a CRM for local sales teams, using Lovable over about ten days. It handled the basics well - pipeline stages, notes, task reminders - and looked demo-ready. Ahead of a live client walkthrough, Daan needed to migrate his first real customer's lead list: roughly 3,000 rows exported from a decade-old Excel sheet, full of the inconsistent formatting real sales data always has.
 
-The import ran without errors. It was only when Daan's client started cross-checking pipeline totals against their old spreadsheet that the gap surfaced — active leads were missing, and some notes were attached to the wrong company entirely. The AI-generated import script had used a simple name-and-email similarity check to auto-merge "duplicates," and it had merged distinct leads that just happened to look alike on paper.
+The import ran without errors. It was only when Daan's client started cross-checking pipeline totals against their old spreadsheet that the gap surfaced - active leads were missing, and some notes were attached to the wrong company entirely. The AI-generated import script had used a simple name-and-email similarity check to auto-merge "duplicates," and it had merged distinct leads that just happened to look alike on paper.
 
 LaunchStudio rebuilt the import pipeline with a staging-and-review step: new records land in a holding table first, get scored for match confidence, and anything above a set threshold routes to a manual merge queue instead of an automatic overwrite. We also added a rollback log so a bad batch import can be reversed without touching a backup file. The fix took a review of the existing schema, a rewritten import function, and a small approval UI Daan's team could use without engineering help.
 
 **Result:** Daan re-ran the full 3,000-record migration two days later with zero silent merges, and the client demo went ahead as planned with accurate pipeline numbers.
 
 > *"I had no idea the import was making decisions for me until the numbers stopped adding up. The scary part is how confident it looked while it was doing it."*
-> — **Daan Verhoeven, Founder, LeadGrip (Utrecht)**
+> - **Daan Verhoeven, Founder, LeadGrip (Utrecht)**
 
-**Cost & Timeline:** €950 (import pipeline rebuild, staging table, merge-review UI) — completed in 5 business days.
+**Cost & Timeline:** €950 (import pipeline rebuild, staging table, merge-review UI) - completed in 5 business days.
 
 ---
 
@@ -100,7 +100,7 @@ AI coding tools generate logic that passes the tests and sample data you give th
 
 ### Can I prevent this without rebuilding my whole CRM?
 
-Yes. The fix is almost always adding a staging layer and a manual review step to the existing import function, not rewriting the CRM itself — which is the kind of targeted fix LaunchStudio specializes in.
+Yes. The fix is almost always adding a staging layer and a manual review step to the existing import function, not rewriting the CRM itself - which is the kind of targeted fix LaunchStudio specializes in.
 
 ### Does LaunchStudio's team have experience with data migrations specifically?
 
@@ -112,11 +112,11 @@ Test it with a real (or realistically messy) dataset before your first live migr
 
 ### What does LaunchStudio typically charge to fix an import or migration pipeline like this?
 
-Fixes in this category typically run in the €800–€2,000 range depending on data volume and existing schema complexity, delivered within a week — well below what a traditional dev agency charges for the same scope.
+Fixes in this category typically run in the €800–€2,000 range depending on data volume and existing schema complexity, delivered within a week - well below what a traditional dev agency charges for the same scope.
 
 ### What happens to notes, tasks, or deals attached to a lead that gets merged away?
 
-If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID — notes, tasks, deal history — gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed.
+If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID - notes, tasks, deal history - gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed.
 
 <script type="application/ld+json">
 {
@@ -151,7 +151,7 @@ If the merge function only updates the surviving record and deletes the duplicat
     {
       "@type": "Question",
       "name": "What happens to notes, tasks, or deals attached to a lead that gets merged away?",
-      "acceptedAnswer": { "@type": "Answer", "text": "If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID — notes, tasks, deal history — gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed." }
+      "acceptedAnswer": { "@type": "Answer", "text": "If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID - notes, tasks, deal history - gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed." }
     }
   ]
 }

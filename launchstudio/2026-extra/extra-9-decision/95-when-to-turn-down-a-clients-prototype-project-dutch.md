@@ -39,7 +39,7 @@ Sommige projecten zijn niet simpelweg te laag geprijsd; het zijn de verkeerde pr
 
 ## Signaal 1: Geen Enkele Gevalideerde Vraag Achter het Product
 
-Een prototype dat uitsluitend is gebaseerd op de rotsvaste overtuiging van de oprichter — zonder wachtlijst met onbekenden, zonder betalende pilotklanten en zonder enig bewijs dat iemand buiten de eigen vriendenkring het product daadwerkelijk wil gebruiken — is een ernstig waarschuwingssignaal. Dit is geen waardeoordeel over het idee (veel succesvolle startups beginnen zo), maar een nuchtere inschatting van wat er ná de lancering gebeurt.
+Een prototype dat uitsluitend is gebaseerd op de rotsvaste overtuiging van de oprichter - zonder wachtlijst met onbekenden, zonder betalende pilotklanten en zonder enig bewijs dat iemand buiten de eigen vriendenkring het product daadwerkelijk wil gebruiken - is een ernstig waarschuwingssignaal. Dit is geen waardeoordeel over het idee (veel succesvolle startups beginnen zo), maar een nuchtere inschatting van wat er ná de lancering gebeurt.
 
 Een project dat strak wordt begroot en opgeleverd tegen een harde lanceerdatum voor een product zonder marktvraag, eindigt regelmatig in een technisch vlekkeloze livegang met een diep teleurgestelde oprichter. Het echte probleem was immers nooit de techniek. Wanneer die stilte na de lancering intreedt, absorbeert het bureau vaak de emotionele frustratie van een product dat "niet aanslaat", ook al functioneert elk stukje software exact volgens specificatie. De juiste aanpak is niet direct weigeren, maar vooraf doorvragen: "Welk bewijs heb je dat mensen dit daadwerkelijk willen?" Een oprichter met een concreet antwoord (een wachtlijst, actieve testgebruikers, voorinschrijvingen) brengt een totaal ander risicoprofiel mee dan iemand die geïrriteerd reageert op de vraag of met lege handen staat.
 
@@ -63,7 +63,7 @@ Soms komt deze terughoudendheid voort uit een begrijpelijke eerdere slechte erva
 
 ## Een Vijfde Signaal: Een Externe Deadline Die Buiten U Om Is Bepaald
 
-Geen van de vier voorgaande signalen gaat direct over tijdsdruk, maar extreme tijdsdruk maakt elk van deze signalen acuut onbeheersbaar. Met name wanneer een klant een lanceerdatum al publiekelijk heeft gecommuniceerd — naar een wachtlijst, investeerders of de pers — vóórdat er met een technisch partner is gesproken over de haalbaarheid.
+Geen van de vier voorgaande signalen gaat direct over tijdsdruk, maar extreme tijdsdruk maakt elk van deze signalen acuut onbeheersbaar. Met name wanneer een klant een lanceerdatum al publiekelijk heeft gecommuniceerd - naar een wachtlijst, investeerders of de pers - vóórdat er met een technisch partner is gesproken over de haalbaarheid.
 
 Een harde externe datum is op zichzelf niet dodelijk; veel goede projecten hebben een vaste deadline. Maar in combinatie met een van bovenstaande risicosignalen ontneemt een harde datum u de ruimte om de fundamenten deugdelijk op te lossen. Iedereen wordt gedwongen tot de snelste pleisteroplossing in plaats van solide software. Is de reactie van de klant op *"deze planning biedt geen ruimte om het datavraagstuk zorgvuldig op te lossen"* hernieuwde druk in plaats van flexibiliteit? Dan weet u hoe de samenwerking er onder spanning uitziet.
 
@@ -91,7 +91,7 @@ Het is de moeite waard om heel expliciet te zijn over wat het aannemen van het v
 
 Een klant die een complete herbouw verwacht tegen prototype-prijzen, leidt doorlopend tot margevernietigende discussies gedurende het gehele traject, en niet alleen tijdens de offertefase. Een klant met onopgeloste wet- en regelgevingsrisico's creëert reële aansprakelijkheidsrisico's stroomafwaarts waartegen een ondertekend contract slechts gedeeltelijk bescherming biedt. En een klant die weigert volledige toegang te verlenen kan simpelweg niet vakkundig worden bediend, wat betekent dat het project al vóór de start structureel gedoemd was te mislukken, ongeacht het geoffreerde bedrag.
 
-Geen van deze uitkomsten is hypothetisch — het zijn de specifieke, steeds terugkerende redenen waarom bureaus uiteindelijk spijt krijgen van een "ja" die onder omzetdruk werd uitgesproken. Het herkennen van deze signalen vóór ondertekening is oneindig veel goedkoper dan het managen van de gevolgen achteraf.
+Geen van deze uitkomsten is hypothetisch - het zijn de specifieke, steeds terugkerende redenen waarom bureaus uiteindelijk spijt krijgen van een "ja" die onder omzetdruk werd uitgesproken. Het herkennen van deze signalen vóór ondertekening is oneindig veel goedkoper dan het managen van de gevolgen achteraf.
 
 [LaunchStudio](https://launchstudio.eu/nl/) hanteert exact ditzelfde filter voor elk prototype, ondersteund door [Manifera's 11+ jaar software-ervaring](https://www.manifera.com/about-us/) waarin talloze projecten tijdig en terecht zijn afgewezen. Een partner die 'nee' durft te zeggen tegen het verkeerde project, is een partner die u kunt vertrouwen met de juiste.
 
@@ -105,16 +105,16 @@ Rick Feenstra runt een marketingbureau in Zwolle. Hij nam een in Lovable gebouwd
 
 Drie weken na de livegang diende een bezorgde ouder van een minderjarige gebruiker een officiële privacyklacht in bij de opdrachtgever. De oprichter bleek geen enkel doordacht antwoord te hebben op de verwerking van medische gegevens van minderjarigen onder de AVG. Hoewel het bureau van Rick de techniek keurig had opgeleverd, was het team een volle maand kwijt aan crisisoverleg en het met terugwerkende kracht rechttrekken van datalekken en documentatie.
 
-**Resultaat:** Rick stelt nu harde eisen aan gedocumenteerde data-afspraken vóórdat hij een offerte uitbrengt voor projecten die gevoelige gegevens raken. Hij heeft sindsdien twee soortgelijke projecten direct geweigerd — opdrachten die achteraf gezien meer aan schadebeheersing hadden gekost dan de factuur ooit had kunnen opbrengen.
+**Resultaat:** Rick stelt nu harde eisen aan gedocumenteerde data-afspraken vóórdat hij een offerte uitbrengt voor projecten die gevoelige gegevens raken. Hij heeft sindsdien twee soortgelijke projecten direct geweigerd - opdrachten die achteraf gezien meer aan schadebeheersing hadden gekost dan de factuur ooit had kunnen opbrengen.
 
 > *"We leverden exact op wat gevraagd werd. Dat beschermde ons echter niet tegen een maand ellende die niets met onze eigenlijke code te maken had. Ik controleer dit nu altijd vóórdat ik een offerte uitbreng."*
-> — **Rick Feenstra, Oprichter, Feenstra Marketing (Zwolle)**
+> - **Rick Feenstra, Oprichter, Feenstra Marketing (Zwolle)**
 
 ## Veelgestelde Vragen
 
 ### Is het weigeren van omzet niet altijd een slechte zakelijke beslissing?
 
-Nee. Wanneer de werkelijke kosten van een project — zoals crisismanagement, urenverlies door conflicten of aansprakelijkheidsrisico's — hoger uitvallen dan de projectprijs, kost een 'ja' u geld. Een professionele weigering beschermt uw capaciteit voor winstgevende klanten en behoudt vaak de relatie voor latere kansen.
+Nee. Wanneer de werkelijke kosten van een project - zoals crisismanagement, urenverlies door conflicten of aansprakelijkheidsrisico's - hoger uitvallen dan de projectprijs, kost een 'ja' u geld. Een professionele weigering beschermt uw capaciteit voor winstgevende klanten en behoudt vaak de relatie voor latere kansen.
 
 ### Hoe herken ik het verschil tussen een voorzichtige klant en een echte rode vlag rondom toegangsrechten?
 
@@ -122,7 +122,7 @@ Een voorzichtige klant benoemt zijn aarzeling helder en gaat akkoord met formele
 
 ### Wat als de klant toezegt het juridische/compliance-probleem zelf op te lossen tijdens het project?
 
-Dat klinkt schappelijk, maar eis dit schriftelijk met een harde deadline vóór de start van de bouw — zoals een getekende verwerkersovereenkomst of een adviesrapport van een jurist. Neem nooit genoegen met een mondelinge toezegging dat het "onderweg wel geregeld wordt".
+Dat klinkt schappelijk, maar eis dit schriftelijk met een harde deadline vóór de start van de bouw - zoals een getekende verwerkersovereenkomst of een adviesrapport van een jurist. Neem nooit genoegen met een mondelinge toezegging dat het "onderweg wel geregeld wordt".
 
 ### Kan ik een extreem hoge prijs gebruiken als filter om een riskant project af te schrikken?
 

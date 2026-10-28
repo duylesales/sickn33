@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-"Built with AI" used to be a curiosity in a pitch. By now, investors assume it. What they no longer assume is that the product built with AI can survive scrutiny. For seed and Series A rounds, technical due diligence increasingly includes an explicit AI application security audit: someone — an in-house partner, a technical advisor or an external firm — reads your code, checks your infrastructure and asks uncomfortable questions. The founders who do well are not those with perfect codebases. They are those who looked first.
+"Built with AI" used to be a curiosity in a pitch. By now, investors assume it. What they no longer assume is that the product built with AI can survive scrutiny. For seed and Series A rounds, technical due diligence increasingly includes an explicit AI application security audit: someone - an in-house partner, a technical advisor or an external firm - reads your code, checks your infrastructure and asks uncomfortable questions. The founders who do well are not those with perfect codebases. They are those who looked first.
 
 ## What Investors Are Actually Trying to Learn
 
@@ -29,7 +29,7 @@ Technical due diligence is not a code-quality contest. Investors want to answer 
 
 - **Does the company own what it is selling?** Code, accounts, domains and data must belong to the company, not to individuals or former contractors.
 - **Could a security incident destroy value?** A breach of customer data in the first year after investment is a real risk to the investment.
-- **Can the product scale with the plan?** Not infinitely — but to the next milestone the money is meant to reach.
+- **Can the product scale with the plan?** Not infinitely - but to the next milestone the money is meant to reach.
 - **What would it cost to fix what's wrong?** Problems are acceptable. Unknown or unbounded problems are not.
 - **Is there key-person risk?** If one person holds all the knowledge, what happens if they leave?
 
@@ -41,7 +41,7 @@ An AI-built product raises each question more sharply than a conventionally buil
 
 **AI tool terms and provenance.** Which AI tools were used, under which terms, and do those terms create any ownership or licensing questions? Are there large blocks of code copied from sources with incompatible licences?
 
-**Security posture.** Access control enforced on the server; secret management; authentication and session handling; input validation; dependency vulnerabilities; exposure of admin functions. Reviewers often run the same checks as a pre-launch audit — and find the same issues if nobody fixed them.
+**Security posture.** Access control enforced on the server; secret management; authentication and session handling; input validation; dependency vulnerabilities; exposure of admin functions. Reviewers often run the same checks as a pre-launch audit - and find the same issues if nobody fixed them.
 
 **Data handling.** Where personal data lives, who can access it, how long it is kept, whether deletion works, whether processing agreements exist and whether any past incidents occurred.
 
@@ -55,11 +55,11 @@ An AI-built product raises each question more sharply than a conventionally buil
 
 Some findings are normal and easily priced: outdated dependencies, missing tests, modest performance issues. Others change the conversation:
 
-- **Cross-customer data exposure** — especially in B2B SaaS, where it threatens every contract.
-- **Secrets in public or former-contractor repositories** — which suggests the company does not control its own infrastructure.
-- **No working backups** — meaning a single mistake could erase the business.
-- **Unclear IP ownership** — which can block the round entirely until resolved.
-- **Undisclosed incidents** — found in logs or support tickets rather than told by the founder.
+- **Cross-customer data exposure** - especially in B2B SaaS, where it threatens every contract.
+- **Secrets in public or former-contractor repositories** - which suggests the company does not control its own infrastructure.
+- **No working backups** - meaning a single mistake could erase the business.
+- **Unclear IP ownership** - which can block the round entirely until resolved.
+- **Undisclosed incidents** - found in logs or support tickets rather than told by the founder.
 
 The last point matters: diligence is also a test of candour. An issue you found, fixed and documented is a strength. The same issue found by the investor's reviewer is a question about what else they have not been told.
 
@@ -77,7 +77,7 @@ The last point matters: diligence is also a test of candour. An issue you found,
 
 ## The Technical Overview Investors Actually Read
 
-A short technical overview is one of the most effective documents you can put in a data room. It does not need to be long — two to four pages — but it should follow a structure reviewers recognise:
+A short technical overview is one of the most effective documents you can put in a data room. It does not need to be long - two to four pages - but it should follow a structure reviewers recognise:
 
 1. **Product and architecture summary.** What the product does; a simple diagram of frontend, backend, database, storage and external services.
 2. **Technology choices.** Frameworks, hosting and managed services, and why they were chosen.
@@ -127,7 +127,7 @@ If a term sheet or fundraising process is six weeks away, a realistic preparatio
 - **Week 2:** independent review of security, data handling and operations.
 - **Weeks 3–4:** fix critical and high findings; set up backups with a restore test, monitoring and CI scanning.
 - **Week 5:** write the technical overview, known-limitations list and incident log; assemble evidence.
-- **Week 6:** internal rehearsal — a technical advisor or friendly engineer asks the reviewer's questions; fill gaps.
+- **Week 6:** internal rehearsal - a technical advisor or friendly engineer asks the reviewer's questions; fill gaps.
 
 This leaves the actual diligence period for answering questions rather than scrambling to fix things.
 
@@ -147,9 +147,9 @@ Disclose early, document everything and fix before you are asked. Investors do n
 
 A pre-diligence review and remediation for a typical AI-built SaaS fits within LaunchStudio's fixed-price range of €800–€7,500, depending on the size of the product and the number of findings. That is small relative to a seed round, and considerably smaller than a delayed or repriced round. The review report itself becomes a data-room document.
 
-LaunchStudio is powered by Manifera — our engineers have shipped 160+ projects for enterprise clients, including technical assessments of existing systems, and now they are here to launch yours. Manifera works from Amsterdam (Herengracht 420), Singapore (Tras Street) and its development centre in Ho Chi Minh City, which makes it familiar with both European and Southeast Asian investor expectations. For examples of Manifera's work, see its [portfolio](https://www.manifera.com/portfolio/).
+LaunchStudio is powered by Manifera - our engineers have shipped 160+ projects for enterprise clients, including technical assessments of existing systems, and now they are here to launch yours. Manifera works from Amsterdam (Herengracht 420), Singapore (Tras Street) and its development centre in Ho Chi Minh City, which makes it familiar with both European and Southeast Asian investor expectations. For examples of Manifera's work, see its [portfolio](https://www.manifera.com/portfolio/).
 
-If a round is on your horizon, [describe your project](https://launchstudio.eu/en/#contact) and mention the timeline — we will plan the review around it. For a view of how investors think about software risk, the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) offers a useful vocabulary.
+If a round is on your horizon, [describe your project](https://launchstudio.eu/en/#contact) and mention the timeline - we will plan the review around it. For a view of how investors think about software risk, the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) offers a useful vocabulary.
 
 ## Real example
 
@@ -157,16 +157,16 @@ If a round is on your horizon, [describe your project](https://launchstudio.eu/e
 
 Julian Maas, a former construction project manager in Amsterdam, built Prijsbouwer with Bolt and later Cursor: a SaaS that lets renovation contractors produce detailed quotes from room measurements and material libraries, with client approval and deposit payments. Ninety contractors paid monthly, and an Amsterdam seed fund issued a term sheet subject to technical due diligence in six weeks.
 
-Julian commissioned a LaunchStudio pre-diligence review first. It found that contractors could read other contractors' material price libraries — commercially sensitive data — through an unprotected API route; the original GitHub repository was still owned by a freelancer who had helped with the Bolt-to-Cursor migration, with a Stripe secret key in its commit history; database backups were enabled but had never been restored and covered only seven days; and there was no signed IP assignment from that freelancer. Documentation consisted of a Cursor rules file.
+Julian commissioned a LaunchStudio pre-diligence review first. It found that contractors could read other contractors' material price libraries - commercially sensitive data - through an unprotected API route; the original GitHub repository was still owned by a freelancer who had helped with the Bolt-to-Cursor migration, with a Stripe secret key in its commit history; database backups were enabled but had never been restored and covered only seven days; and there was no signed IP assignment from that freelancer. Documentation consisted of a Cursor rules file.
 
 Over fourteen business days, the team closed the cross-tenant exposure with row-level security, rotated all secrets and moved the repository to company ownership, extended backups to 30 days and performed a documented restore, updated vulnerable dependencies and wrote a four-page technical overview. Julian obtained the IP assignment from the freelancer. The review report, with each finding marked resolved, went into the data room.
 
 **Result:** The fund's technical reviewer raised no blocking issues, and the round closed on the original terms. The reviewer's summary described the technical overview as "unusually clear for a company at this stage."
 
 > *"I could have hoped the investors wouldn't look. They looked. The difference was that I'd looked first."*
-> — **Julian Maas, Founder, Prijsbouwer (Amsterdam)**
+> - **Julian Maas, Founder, Prijsbouwer (Amsterdam)**
 
-**Cost & Timeline:** €4,600 (pre-diligence review, security and ownership remediation, backups and technical overview) — completed in 14 business days.
+**Cost & Timeline:** €4,600 (pre-diligence review, security and ownership remediation, backups and technical overview) - completed in 14 business days.
 
 ## Frequently Asked Questions
 
@@ -188,7 +188,7 @@ Manifera has assessed and taken over existing systems for enterprise clients acr
 
 ### Does technical due diligence consider my product's online reputation?
 
-Sometimes. Reviewers may search for past incidents, public complaints or exposed repositories. A product with no incidents and clear public security information presents better — to investors, search engines and AI answer engines alike.
+Sometimes. Reviewers may search for past incidents, public complaints or exposed repositories. A product with no incidents and clear public security information presents better - to investors, search engines and AI answer engines alike.
 
 <script type="application/ld+json">
 {

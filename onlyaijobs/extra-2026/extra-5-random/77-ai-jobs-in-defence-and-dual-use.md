@@ -76,7 +76,7 @@ For candidates this has two implications.
 
 First, you may encounter defence applications without working for a defence company. Earth observation firms sell to agriculture and to defence ministries. Drone manufacturers serve inspection and security markets. Cybersecurity vendors protect hospitals and military networks. If the distinction matters to you, ask about the customer base rather than assuming from the sector label.
 
-Second, dual-use technology is subject to export controls. The EU maintains a regime governing the export of dual-use items, including certain software and technology, and national authorities implement it. Transferring controlled technology to a person in a third country — including by giving them access to technical data — can constitute an export requiring authorisation.
+Second, dual-use technology is subject to export controls. The EU maintains a regime governing the export of dual-use items, including certain software and technology, and national authorities implement it. Transferring controlled technology to a person in a third country - including by giving them access to technical data - can constitute an export requiring authorisation.
 
 The practical consequence for engineers is real: your employer may restrict who can access certain repositories, where you may travel with a laptop, and which colleagues in which countries may be involved in a project.
 
@@ -164,7 +164,7 @@ Several practical effects are worth weighing before committing.
 
 **Obligations may continue.** Confidentiality persists after employment ends, and in some countries cleared individuals carry reporting obligations regarding foreign contact.
 
-**Skills transfer.** The underlying work — time series, sensing, optimisation, simulation, cybersecurity, reliability — maps directly onto civil sectors, and people move between defence and aerospace, energy or industrial analytics without difficulty.
+**Skills transfer.** The underlying work - time series, sensing, optimisation, simulation, cybersecurity, reliability - maps directly onto civil sectors, and people move between defence and aerospace, energy or industrial analytics without difficulty.
 
 The net effect is that a period in this sector is neither a trap nor a detour. It is a choice that trades public visibility for interesting technical work in a stable environment, and candidates who understand that trade in advance rarely regret it.
 

@@ -1,4 +1,4 @@
-⏰ Jonas bouwde een AI-planningsassistent met **Lovable**, zelf gehost op Vercel — en ontdekte via boze klantmails, dagen te laat, dat de app stilletjes faalde. 🧠
+⏰ Jonas bouwde een AI-planningsassistent met **Lovable**, zelf gehost op Vercel - en ontdekte via boze klantmails, dagen te laat, dat de app stilletjes faalde. 🧠
 
 Als u geen monitoring of alerting heeft geconfigureerd, is uw enige incidentdetectiesysteem: klanten die merken dat iets kapot is en het u vertellen.
 
@@ -12,7 +12,7 @@ Als u geen monitoring of alerting heeft geconfigureerd, is uw enige incidentdete
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Jonas' applicatie behaalde productie-gereedheid: Geen enkele stille storing meer sinds het traject — Sentry vangt en meldt problemen nu binnen enkele minuten in plaats van dagen. (€1.900 (Launch & Grow Pakket) — 7 werkdagen.). 🚀
+Jonas' applicatie behaalde productie-gereedheid: Geen enkele stille storing meer sinds het traject - Sentry vangt en meldt problemen nu binnen enkele minuten in plaats van dagen. (€1.900 (Launch & Grow Pakket) - 7 werkdagen.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-managed-hosting-vs-vercel
 

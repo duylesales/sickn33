@@ -42,7 +42,7 @@ Content Format: Local Guide
 }
 </script>
 
-Stockholm has produced more globally successful technology companies per capita than almost any other city in Europe. Spotify changed how the world listens to music, Klarna reshaped online payments, King and Mojang built some of the most played games in history, and Ericsson has long been a pillar of global telecommunications. For experienced machine learning engineers, AI jobs in Stockholm offer the chance to work on products used by hundreds of millions of people, in a culture known for flat hierarchies, consensus and work-life balance. This guide explains the Stockholm AI landscape, what Swedish employers expect and what practical challenges — especially housing — newcomers should prepare for.
+Stockholm has produced more globally successful technology companies per capita than almost any other city in Europe. Spotify changed how the world listens to music, Klarna reshaped online payments, King and Mojang built some of the most played games in history, and Ericsson has long been a pillar of global telecommunications. For experienced machine learning engineers, AI jobs in Stockholm offer the chance to work on products used by hundreds of millions of people, in a culture known for flat hierarchies, consensus and work-life balance. This guide explains the Stockholm AI landscape, what Swedish employers expect and what practical challenges - especially housing - newcomers should prepare for.
 
 ## The Companies Behind AI Jobs in Stockholm
 
@@ -84,7 +84,7 @@ Stockholm has produced more globally successful technology companies per capita 
 
 ## The Swedish Way of Working
 
-Swedish workplaces are known for flat hierarchies, consensus-driven decision-making and trust. Managers are accessible, and employees are expected to contribute opinions and take initiative. Decisions may take longer because people seek agreement, but once made, they are widely supported. The concept of "lagom" — balance, just enough — shapes attitudes to work: long hours are not a badge of honour, and leaving on time to pick up children is normal. Fika, the coffee break, is a social institution in many workplaces.
+Swedish workplaces are known for flat hierarchies, consensus-driven decision-making and trust. Managers are accessible, and employees are expected to contribute opinions and take initiative. Decisions may take longer because people seek agreement, but once made, they are widely supported. The concept of "lagom" - balance, just enough - shapes attitudes to work: long hours are not a badge of honour, and leaving on time to pick up children is normal. Fika, the coffee break, is a social institution in many workplaces.
 
 Most employees in Sweden are covered by collective agreements (kollektivavtal), which regulate pay revision, pensions, insurance and working conditions. Statutory annual leave is 25 days, and parental leave is generous and shared between parents. Many tech companies work in English, but Swedish is the language of society and many traditional organisations.
 
@@ -104,7 +104,7 @@ Housing is often the biggest challenge for newcomers to Stockholm. Rent-controll
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing requires no account and no employer can pay for a better position.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Stockholm you will find few or no local vacancies there today. Use Swedish job portals, company career pages, university vacancy lists and your network as primary sources. OnlyAIJobs is useful for comparing the Stockholm market with the Netherlands — where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles — and as a method: filter by AI category and real commute, which matters in a city where housing often pushes people to distant suburbs. Swedish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Stockholm you will find few or no local vacancies there today. Use Swedish job portals, company career pages, university vacancy lists and your network as primary sources. OnlyAIJobs is useful for comparing the Stockholm market with the Netherlands - where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles - and as a method: filter by AI category and real commute, which matters in a city where housing often pushes people to distant suburbs. Swedish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Personalisation at Scale
 
@@ -129,11 +129,11 @@ Stockholm's game studios combine creativity with data. ML supports player segmen
 
 ## Kista and Telecom AI
 
-Kista Science City in north Stockholm is home to Ericsson and many other ICT companies, research institutes and startups. AI in telecom focuses on automating network operations, predicting and preventing faults, optimising radio resources and reducing energy consumption — an important goal as network traffic grows. Research on future network generations explores AI-native designs. These roles suit engineers with interests in systems, signal processing and large-scale infrastructure. Kista is well connected to central Stockholm by metro and commuter train, and some engineers choose to live in northern suburbs for shorter commutes.
+Kista Science City in north Stockholm is home to Ericsson and many other ICT companies, research institutes and startups. AI in telecom focuses on automating network operations, predicting and preventing faults, optimising radio resources and reducing energy consumption - an important goal as network traffic grows. Research on future network generations explores AI-native designs. These roles suit engineers with interests in systems, signal processing and large-scale infrastructure. Kista is well connected to central Stockholm by metro and commuter train, and some engineers choose to live in northern suburbs for shorter commutes.
 
 ## Settling In
 
-Newcomers need a Swedish personal identity number (personnummer) to access many services, from banking to healthcare, and obtaining it can take time. Register with the Swedish Tax Agency as soon as possible after arriving. Opening a bank account and getting a BankID — the electronic identification used for almost everything in Sweden — often depends on having a personnummer, so the first weeks can be administratively challenging. Employers experienced with international hires can help. Free Swedish language courses for immigrants (SFI) are available, and learning Swedish helps with social integration, even if your workplace uses English.
+Newcomers need a Swedish personal identity number (personnummer) to access many services, from banking to healthcare, and obtaining it can take time. Register with the Swedish Tax Agency as soon as possible after arriving. Opening a bank account and getting a BankID - the electronic identification used for almost everything in Sweden - often depends on having a personnummer, so the first weeks can be administratively challenging. Employers experienced with international hires can help. Free Swedish language courses for immigrants (SFI) are available, and learning Swedish helps with social integration, even if your workplace uses English.
 
 ## Building a Network
 
@@ -162,7 +162,7 @@ Stockholm suits engineers who want product impact at global scale, value work-li
 
 An ML engineer working on recommendations at an Amsterdam e-commerce company receives an offer from a Stockholm audio streaming company. The gross salary is slightly lower than in Amsterdam, but the role involves personalisation at a much larger scale.
 
-She calculates net pay, including whether she might qualify for the expert tax relief, and investigates housing. The company offers temporary housing for three months, and she arranges a second-hand rental in a suburb on the metro line. She also learns about Swedish parental leave, which matters to her family plans. She accepts the offer. In her first year, she notices how different decision-making is — more discussion, more consensus — and finds that once her team agrees on an approach, execution is smooth and well supported.
+She calculates net pay, including whether she might qualify for the expert tax relief, and investigates housing. The company offers temporary housing for three months, and she arranges a second-hand rental in a suburb on the metro line. She also learns about Swedish parental leave, which matters to her family plans. She accepts the offer. In her first year, she notices how different decision-making is - more discussion, more consensus - and finds that once her team agrees on an approach, execution is smooth and well supported.
 
 ## Key Takeaways
 

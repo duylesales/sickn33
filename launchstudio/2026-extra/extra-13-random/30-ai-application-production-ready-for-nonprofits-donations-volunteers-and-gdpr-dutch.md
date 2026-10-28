@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Non-profits draaien op vertrouwen. Een donateur geeft omdat hij gelooft dat het geld zijn doel bereikt; een vrijwilliger meldt zich aan omdat hij gelooft dat de organisatie zorgvuldig omgaat met hem en met de mensen die hij helpt. Als een stichting of vereniging haar eigen tool bouwt met Lovable of Bolt — vaak omdat commerciële platforms te duur of te star zijn — gaat dat vertrouwen over op de software. Een AI-applicatie voor een non-profit productie-klaar maken gaat minder over schaal en meer over dat vertrouwen niet beschamen.
+Non-profits draaien op vertrouwen. Een donateur geeft omdat hij gelooft dat het geld zijn doel bereikt; een vrijwilliger meldt zich aan omdat hij gelooft dat de organisatie zorgvuldig omgaat met hem en met de mensen die hij helpt. Als een stichting of vereniging haar eigen tool bouwt met Lovable of Bolt - vaak omdat commerciële platforms te duur of te star zijn - gaat dat vertrouwen over op de software. Een AI-applicatie voor een non-profit productie-klaar maken gaat minder over schaal en meer over dat vertrouwen niet beschamen.
 
 ## Beslissing 1: Eenmalig, Terugkerend of Allebei?
 
@@ -33,7 +33,7 @@ Echte terugkerende donaties vereisen een goede machtiging (Mollie en Stripe onde
 
 Donateurs van organisaties met een ANBI-status in Nederland kunnen giften mogelijk aftrekken van de belasting, en periodieke giften onder een schriftelijke overeenkomst hebben eigen regels. Donateurs verwachten duidelijke bevestigingen, en sommigen verwachten jaaroverzichten.
 
-Beslis wat uw app verstuurt — een bevestiging per donatie, een jaaroverzicht, overeenkomsten voor periodieke giften — en zorg dat bedragen, data en de gegevens van uw organisatie correct en consistent zijn. De [ANBI-informatie van de Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken) legt de kant van de donateur uit.
+Beslis wat uw app verstuurt - een bevestiging per donatie, een jaaroverzicht, overeenkomsten voor periodieke giften - en zorg dat bedragen, data en de gegevens van uw organisatie correct en consistent zijn. De [ANBI-informatie van de Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken) legt de kant van de donateur uit.
 
 ## Beslissing 3: Hoe Worden Donateursgegevens Gebruikt?
 
@@ -43,13 +43,13 @@ Beslis ook wie binnen de organisatie donateursgegevens ziet. Een vrijwilligersco
 
 ## Beslissing 4: Wat Verzamelt U van Vrijwilligers?
 
-Vrijwilligersplatforms verzamelen contactgegevens, beschikbaarheid en vaardigheden — en soms gevoeligere informatie: de status van een Verklaring Omtrent het Gedrag (VOG) voor vrijwilligers die met kinderen of kwetsbare volwassenen werken, gezondheidsinformatie die relevant is voor bepaalde activiteiten, contactpersonen voor noodgevallen. Sommige organisaties zijn geneigd scans van VOG's en identiteitsbewijzen "voor de zekerheid" op te slaan.
+Vrijwilligersplatforms verzamelen contactgegevens, beschikbaarheid en vaardigheden - en soms gevoeligere informatie: de status van een Verklaring Omtrent het Gedrag (VOG) voor vrijwilligers die met kinderen of kwetsbare volwassenen werken, gezondheidsinformatie die relevant is voor bepaalde activiteiten, contactpersonen voor noodgevallen. Sommige organisaties zijn geneigd scans van VOG's en identiteitsbewijzen "voor de zekerheid" op te slaan.
 
-Beslis wat het minimum is: vaak is het genoeg om vast te leggen dat een VOG is gecontroleerd, op welke datum en door wie — niet om het document te bewaren. Beperk de toegang tot screeningsinformatie tot de mensen die ervoor verantwoordelijk zijn.
+Beslis wat het minimum is: vaak is het genoeg om vast te leggen dat een VOG is gecontroleerd, op welke datum en door wie - niet om het document te bewaren. Beperk de toegang tot screeningsinformatie tot de mensen die ervoor verantwoordelijk zijn.
 
 ## Beslissing 5: Staan er Kwetsbare Mensen in Uw Data?
 
-Voedselbanken, vluchtelingenhulp, bezoekdiensten voor ouderen, jongerenprogramma's — veel non-profits bewaren gegevens over mensen in kwetsbare situaties. Die data kan bijzondere persoonsgegevens bevatten (gezondheid, religie, etniciteit) of informatie die schadelijk zou zijn als ze uitlekt, zoals adressen van mensen die op de vlucht zijn voor geweld.
+Voedselbanken, vluchtelingenhulp, bezoekdiensten voor ouderen, jongerenprogramma's - veel non-profits bewaren gegevens over mensen in kwetsbare situaties. Die data kan bijzondere persoonsgegevens bevatten (gezondheid, religie, etniciteit) of informatie die schadelijk zou zijn als ze uitlekt, zoals adressen van mensen die op de vlucht zijn voor geweld.
 
 Is dit van toepassing, dan verandert dat de bouw: strengere toegangscontrole, dataminimalisatie, mogelijk een gegevensbeschermingseffectbeoordeling (DPIA), en zorgvuldige logging van wie wat inziet. AI-gegenereerde apps maken geen onderscheid tussen het e-mailadres van een vrijwilliger en het adres van een cliënt; uw productiesysteem moet dat wel doen.
 
@@ -82,7 +82,7 @@ Elk van deze stappen vermindert het verloop van donateurs, en dat weegt voor ter
 
 ## Periodieke Giften en Belastingpapieren
 
-In Nederland kunnen periodieke giften aan ANBI-geregistreerde organisaties — doorgaans voor minstens vijf jaar vastgelegd in een schriftelijke overeenkomst — voor donateurs volledig aftrekbaar zijn. Dit goed ondersteunen betekent de overeenkomst genereren met de juiste gegevens, de handtekeningen van beide partijen vastleggen, de afgesproken periode bijhouden en jaaroverzichten maken. De regels worden door de Belastingdienst vastgesteld en veranderen af en toe, dus de tekst en voorwaarden horen met een adviseur te worden afgestemd; de taak van de app is de feiten op te slaan en tijdig juiste documenten te maken.
+In Nederland kunnen periodieke giften aan ANBI-geregistreerde organisaties - doorgaans voor minstens vijf jaar vastgelegd in een schriftelijke overeenkomst - voor donateurs volledig aftrekbaar zijn. Dit goed ondersteunen betekent de overeenkomst genereren met de juiste gegevens, de handtekeningen van beide partijen vastleggen, de afgesproken periode bijhouden en jaaroverzichten maken. De regels worden door de Belastingdienst vastgesteld en veranderen af en toe, dus de tekst en voorwaarden horen met een adviseur te worden afgestemd; de taak van de app is de feiten op te slaan en tijdig juiste documenten te maken.
 
 ## Gegevens van Donateurs, Vrijwilligers en Cliënten Scheiden
 
@@ -94,7 +94,7 @@ Non-profitplatforms mengen vaak drie heel verschillende groepen: donateurs, vrij
 | Vrijwilligers | Contact, beschikbaarheid, vaardigheden, screeningsstatus | Coördinatoren | VOG-status vastgelegd, geen documenten |
 | Cliënten / begunstigden | Contact, behoeften, soms gevoelige omstandigheden | Alleen toegewezen coördinatoren | Minimalisatie, toegangslogging, strikte bewaartermijnen |
 
-Deze groepen in aparte tabellen met aparte toegangsregels houden voorkomt de meest schadelijke soort verwarring — een vrijwilliger die gegevens ziet van een kwetsbare cliënt waar hij niets mee te maken heeft.
+Deze groepen in aparte tabellen met aparte toegangsregels houden voorkomt de meest schadelijke soort verwarring - een vrijwilliger die gegevens ziet van een kwetsbare cliënt waar hij niets mee te maken heeft.
 
 ## Vrijwilligersbeheer Zonder te Veel te Verzamelen
 
@@ -110,7 +110,7 @@ Donateurs controleren steeds vaker hoe goede doelen met zowel geld als data omga
 
 ## Goedkope Tools voor Kleine Stichtingen
 
-Budgetten zijn krap, maar verschillende essentiële zaken zijn goedkoop of gratis: kortingen voor non-profits op veel SaaS-tools, gratis niveaus voor uptimebewaking en foutregistratie, en betaalaanbieders met transparante prijzen per transactie. Besteed het engineeringbudget aan de onderdelen die mensen beschermen — toegangsbeheer, betalingen, gevoelige data — en gebruik gratis tools voor de rest.
+Budgetten zijn krap, maar verschillende essentiële zaken zijn goedkoop of gratis: kortingen voor non-profits op veel SaaS-tools, gratis niveaus voor uptimebewaking en foutregistratie, en betaalaanbieders met transparante prijzen per transactie. Besteed het engineeringbudget aan de onderdelen die mensen beschermen - toegangsbeheer, betalingen, gevoelige data - en gebruik gratis tools voor de rest.
 
 ## Incidentgereedheid voor Goede Doelen
 
@@ -122,7 +122,7 @@ Goede doelen hebben hun eigen pieken: een televisieactie, een lokale ramp, gifte
 
 ## Rapporteren aan Bestuur en Fondsen
 
-Besturen en institutionele fondsen willen betrouwbare cijfers: totale donaties per periode, behoud van terugkerende donateurs, kosten per opgehaalde euro, bijgedragen vrijwilligersuren. Wanneer de app donaties en vrijwilligersactiviteit nauwkeurig vastlegt — met terugbetalingen, mislukte incasso's en opzeggingen correct verwerkt — kunnen deze rapporten direct worden gegenereerd in plaats van uit spreadsheets te worden samengesteld. Nauwkeurige rapportage ondersteunt ook aanvragen voor subsidies en erkenningen die gecontroleerde cijfers vereisen.
+Besturen en institutionele fondsen willen betrouwbare cijfers: totale donaties per periode, behoud van terugkerende donateurs, kosten per opgehaalde euro, bijgedragen vrijwilligersuren. Wanneer de app donaties en vrijwilligersactiviteit nauwkeurig vastlegt - met terugbetalingen, mislukte incasso's en opzeggingen correct verwerkt - kunnen deze rapporten direct worden gegenereerd in plaats van uit spreadsheets te worden samengesteld. Nauwkeurige rapportage ondersteunt ook aanvragen voor subsidies en erkenningen die gecontroleerde cijfers vereisen.
 
 ## Werken met Gedeelde Platforms voor Meerdere Stichtingen
 
@@ -138,7 +138,7 @@ Een non-profitapp is productie-klaar wanneer donateurs nooit verkeerd worden bel
 
 ## Waar LaunchStudio Past
 
-Het werk van LaunchStudio voor non-profits omvat het inrichten van terugkerende betalingen, correcte donateursadministratie en bevestigingen, het bijhouden van toestemming, rolgebaseerde toegang met persoonlijke accounts, minimale omgang met screeningsgegevens, strengere bescherming waar kwetsbare mensen betrokken zijn, en de operationele basis. Onze engineers hebben 160+ projecten opgeleverd voor grote klanten — nu zijn ze er om de uwe te lanceren, of u nu een startup bent of een stichting. Het werk wordt gedaan door de engineers van Manifera in Ho Chi Minh-stad, gecoördineerd vanuit Amsterdam en Singapore. Zie [het portfolio van Manifera](https://www.manifera.com/portfolio/) voor de verscheidenheid aan organisaties waarmee het heeft gewerkt.
+Het werk van LaunchStudio voor non-profits omvat het inrichten van terugkerende betalingen, correcte donateursadministratie en bevestigingen, het bijhouden van toestemming, rolgebaseerde toegang met persoonlijke accounts, minimale omgang met screeningsgegevens, strengere bescherming waar kwetsbare mensen betrokken zijn, en de operationele basis. Onze engineers hebben 160+ projecten opgeleverd voor grote klanten - nu zijn ze er om de uwe te lanceren, of u nu een startup bent of een stichting. Het werk wordt gedaan door de engineers van Manifera in Ho Chi Minh-stad, gecoördineerd vanuit Amsterdam en Singapore. Zie [het portfolio van Manifera](https://www.manifera.com/portfolio/) voor de verscheidenheid aan organisaties waarmee het heeft gewerkt.
 
 [Beschrijf uw project](https://launchstudio.eu/nl/#contact) en we reageren binnen één werkdag.
 
@@ -146,18 +146,18 @@ Het werk van LaunchStudio voor non-profits omvat het inrichten van terugkerende 
 
 ### Een AI-Native Oprichter in Actie: Een Vrijwilligers- en Donatieplatform in Friesland
 
-Gerrit Zijlstra, gepensioneerd leraar en bestuurslid van verschillende lokale stichtingen in Sneek, bouwde Vrijwilligersplein in Lovable: een gedeeld platform waarop kleine Friese stichtingen — een voedselbank, een bezoekdienst voor eenzame ouderen, een sportstichting voor kinderen met een beperking — vrijwilligers konden werven, diensten konden inroosteren en donaties konden innen. Elf stichtingen en ongeveer 700 vrijwilligers gebruikten het.
+Gerrit Zijlstra, gepensioneerd leraar en bestuurslid van verschillende lokale stichtingen in Sneek, bouwde Vrijwilligersplein in Lovable: een gedeeld platform waarop kleine Friese stichtingen - een voedselbank, een bezoekdienst voor eenzame ouderen, een sportstichting voor kinderen met een beperking - vrijwilligers konden werven, diensten konden inroosteren en donaties konden innen. Elf stichtingen en ongeveer 700 vrijwilligers gebruikten het.
 
-Toen een nieuwe penningmeester vroeg hoe terugkerende donaties werden afgehandeld, besefte Gerrit dat dat niet gebeurde: "maandelijkse donateurs" kregen elke maand een e-mail met een betaallink, en ongeveer de helft stopte binnen drie maanden met betalen. Een review van LaunchStudio vond meer. Vrijwilligers van de voedselbank konden via de API de cliëntenlijst van de bezoekdienst zien — namen en adressen van eenzame ouderen. Scans van VOG's en paspoorten stonden in een openbare bucket. Verschillende stichtingen deelden één beheerderslogin, die door huidige en voormalige bestuursleden werd gebruikt. Donatiebevestigingen toonden bedragen maar niet de ANBI-gegevens van de stichting.
+Toen een nieuwe penningmeester vroeg hoe terugkerende donaties werden afgehandeld, besefte Gerrit dat dat niet gebeurde: "maandelijkse donateurs" kregen elke maand een e-mail met een betaallink, en ongeveer de helft stopte binnen drie maanden met betalen. Een review van LaunchStudio vond meer. Vrijwilligers van de voedselbank konden via de API de cliëntenlijst van de bezoekdienst zien - namen en adressen van eenzame ouderen. Scans van VOG's en paspoorten stonden in een openbare bucket. Verschillende stichtingen deelden één beheerderslogin, die door huidige en voormalige bestuursleden werd gebruikt. Donatiebevestigingen toonden bedragen maar niet de ANBI-gegevens van de stichting.
 
 In negen werkdagen implementeerde het team terugkerende SEPA-donaties via Mollie-machtigingen met afhandeling van mislukte betalingen en opzeggen in selfservice voor donateurs, scheidde het de data per stichting in de database, beperkte het cliëntgegevens bij elke stichting tot coördinatoren met tweestapsverificatie en gelogde toegang, verving het opgeslagen VOG-scans door een vastgelegde controledatum en verwijderde het de bestaande scans, maakte het persoonlijke accounts aan voor elk bestuurslid en verwijderde het de gedeelde login, en corrigeerde het de donatiebevestigingen en voegde het jaaroverzichten voor donateurs toe.
 
 **Resultaat:** Het behoud van terugkerende donateurs bij de stichtingen steeg na zes maanden van ongeveer 50% naar meer dan 90%. De gegevens van de cliënten van de bezoekdienst zijn nu alleen zichtbaar voor de drie coördinatoren, en nog twee stichtingen sloten zich aan nadat ze de inrichting van de toegang hadden gezien.
 
 > *"We vroegen mensen ons te vertrouwen met geld en met de adressen van hun buren. De software moest dat net zo verdienen als de vrijwilligers."*
-> — **Gerrit Zijlstra, Oprichter, Vrijwilligersplein (Sneek)**
+> - **Gerrit Zijlstra, Oprichter, Vrijwilligersplein (Sneek)**
 
-**Kosten & Tijdlijn:** € 2.400 (Launch Ready-pakket met terugkerende betalingen, scheiding van data, toegangsbeheer en aanpassingen aan screeningsgegevens) — afgerond in 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.400 (Launch Ready-pakket met terugkerende betalingen, scheiding van data, toegangsbeheer en aanpassingen aan screeningsgegevens) - afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 

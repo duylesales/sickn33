@@ -1,4 +1,4 @@
-🐛 Tobias hired a QA tester for €350 before launching his freelance marketplace built in **Bolt** — the report came back clean. Then a friend found that any freelancer could view any client's private budgets by editing a number in the URL.
+🐛 Tobias hired a QA tester for €350 before launching his freelance marketplace built in **Bolt** - the report came back clean. Then a friend found that any freelancer could view any client's private budgets by editing a number in the URL.
 
 A QA tester tests what's on screen. They don't audit what's under it.
 
@@ -12,7 +12,7 @@ A QA tester tests what's on screen. They don't audit what's under it.
 
 At **LaunchStudio**, we've been catching exactly this class of bug since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Tobias launched on schedule with zero data-exposure incidents and a 99.6% payment success rate in month one. (€1,900 — Launch & Grow Package, fixed and deployed in 9 business days.) 🚀
+Tobias launched on schedule with zero data-exposure incidents and a 99.6% payment success rate in month one. (€1,900 - Launch & Grow Package, fixed and deployed in 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-qa-tester-pre-launch-bugs
 

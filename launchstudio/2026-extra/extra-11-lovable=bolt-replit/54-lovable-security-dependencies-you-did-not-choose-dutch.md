@@ -20,19 +20,19 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Open de lijst met packages in een Lovable- of Bolt-project en begin te tellen. Een bescheiden webapplicatie — een handvol schermen, een invoerformulier, een grafiekje — leunt al snel op honderden verschillende packages (bibliotheken). Vrijwel geen daarvan heb je zelf uitgekozen, van de meeste heb je nog nooit gehoord, en ze draaien allemaal met exact dezelfde rechten als de code die je zelf hebt geschreven.
+Open de lijst met packages in een Lovable- of Bolt-project en begin te tellen. Een bescheiden webapplicatie - een handvol schermen, een invoerformulier, een grafiekje - leunt al snel op honderden verschillende packages (bibliotheken). Vrijwel geen daarvan heb je zelf uitgekozen, van de meeste heb je nog nooit gehoord, en ze draaien allemaal met exact dezelfde rechten als de code die je zelf hebt geschreven.
 
-Dat is geen schandaal. Het is simpelweg hoe moderne softwareontwikkeling werkt, en hetzelfde geldt voor applicaties die volledig met de hand zijn geschreven. Het wezenlijke verschil bij met AI gebouwde software is dat niemand op enig moment heeft stilgestaan bij de vraag of een pakket wel strikt noodzakelijk was, actief wordt onderhouden, of betrouwbaar is — simpelweg omdat de AI-tool het pakket geruisloos toevoegde tijdens het oplossen van jouw prompt.
+Dat is geen schandaal. Het is simpelweg hoe moderne softwareontwikkeling werkt, en hetzelfde geldt voor applicaties die volledig met de hand zijn geschreven. Het wezenlijke verschil bij met AI gebouwde software is dat niemand op enig moment heeft stilgestaan bij de vraag of een pakket wel strikt noodzakelijk was, actief wordt onderhouden, of betrouwbaar is - simpelweg omdat de AI-tool het pakket geruisloos toevoegde tijdens het oplossen van jouw prompt.
 
 ## Wat Er Namens Jou Wordt Geïnstalleerd
 
-Vraag een AI-builder om een datumkiezer en hij installeert een complete datumlibrary. Vraag om een dashboardgrafiek en hij installeert een charting-pakket, dat op zijn beurt een render-utility installeert, die weer drie hulpbibliotheken meebrengt. Vraag om animaties, iconensets, formuliervalidatie of bestandsverwerking — elk afzonderlijk verzoek voegt één pakket toe waar je om vroeg, en een stuk of tien waar je nooit van had gehoord.
+Vraag een AI-builder om een datumkiezer en hij installeert een complete datumlibrary. Vraag om een dashboardgrafiek en hij installeert een charting-pakket, dat op zijn beurt een render-utility installeert, die weer drie hulpbibliotheken meebrengt. Vraag om animaties, iconensets, formuliervalidatie of bestandsverwerking - elk afzonderlijk verzoek voegt één pakket toe waar je om vroeg, en een stuk of tien waar je nooit van had gehoord.
 
 Die tweede groep noemen we *transitieve dependencies*, en in een gemiddeld project overtreffen ze je directe keuzes met een factor tien. Dat is tevens de plek waar vrijwel alle beveiligingsrisico's zich verschuilen, simpelweg omdat je er geen enkele relatie mee hebt: je hebt de naam nooit gelezen, nooit gecontroleerd of het pakket nog wordt onderhouden, en je zou het niet merken als het pakket stilletjes van eigenaar wisselt.
 
 ## Waarom Dit een Beveiligingsvraagstuk Is en Geen Schoonmaakklusje
 
-Elke package in je dependency-boom voert code uit met de volledige bevoegdheden van jouw applicatie. Een gecompromitteerd pakket in je frontend kan stilletjes meekijken met wat gebruikers intikken. Een gecompromitteerd pakket in je servercode of edge function kan je omgevingsvariabelen uitlezen — precies de plek waar je geheime database-sleutels en API-tokens bewaard worden.
+Elke package in je dependency-boom voert code uit met de volledige bevoegdheden van jouw applicatie. Een gecompromitteerd pakket in je frontend kan stilletjes meekijken met wat gebruikers intikken. Een gecompromitteerd pakket in je servercode of edge function kan je omgevingsvariabelen uitlezen - precies de plek waar je geheime database-sleutels en API-tokens bewaard worden.
 
 De reële dreigingen voor een startende SaaS-applicatie, op volgorde van waarschijnlijkheid:
 
@@ -64,15 +64,15 @@ Dat is het complete programma. Eén uur onderhoud per maand, en je bent veiliger
 
 ## Waarom Lockfiles Belangrijker Zijn Dan de Audit Zelf
 
-Een lockfile (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`) legt de exacte, cryptografisch gevalideerde versie vast van elk afzonderlijk pakket — zowel direct als indirect — dat jouw project gebruikt. Zonder lockfile kan een build morgen totaal andere versies installeren dan een build vandaag, waardoor je productieomgeving stilletjes kan afwijken van wat je lokaal hebt getest, zonder dat iemand bewust code heeft gewijzigd.
+Een lockfile (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`) legt de exacte, cryptografisch gevalideerde versie vast van elk afzonderlijk pakket - zowel direct als indirect - dat jouw project gebruikt. Zonder lockfile kan een build morgen totaal andere versies installeren dan een build vandaag, waardoor je productieomgeving stilletjes kan afwijken van wat je lokaal hebt getest, zonder dat iemand bewust code heeft gewijzigd.
 
-Twee grote voordelen voor je beveiliging: een lockfile zorgt ervoor dat een gecompromitteerde nieuwe package-release nooit automatisch jouw productieomgeving binnensluipt — jij bepaalt zélf wanneer je upgradet. En wanneer er iets omvalt, is exact traceerbaar welke wijziging de oorzaak was.
+Twee grote voordelen voor je beveiliging: een lockfile zorgt ervoor dat een gecompromitteerde nieuwe package-release nooit automatisch jouw productieomgeving binnensluipt - jij bepaalt zélf wanneer je upgradet. En wanneer er iets omvalt, is exact traceerbaar welke wijziging de oorzaak was.
 
 Heeft je project geen lockfile in versiebeheer staan? Dat is je allereerste actiepunt, en het kost één minuut werk.
 
 ## Geautomatiseerde Updates: Nuttig Maar Vaak een Ruisbron
 
-Tools zoals Dependabot of Renovate die automatisch een pull request openen zodra er een nieuwere package-versie beschikbaar is, zijn nuttig. Op standaardinstellingen zijn ze voor een solo-oprichter echter verlammend: een applicatie met honderden packages genereert sneller update-notificaties dan één mens kan verwerken, waardoor uiteindelijk álle meldingen genegeerd worden — inclusief die ene kritieke beveiligingsupdate.
+Tools zoals Dependabot of Renovate die automatisch een pull request openen zodra er een nieuwere package-versie beschikbaar is, zijn nuttig. Op standaardinstellingen zijn ze voor een solo-oprichter echter verlammend: een applicatie met honderden packages genereert sneller update-notificaties dan één mens kan verwerken, waardoor uiteindelijk álle meldingen genegeerd worden - inclusief die ene kritieke beveiligingsupdate.
 
 De configuratie die wél werkt voor een compact team: beveiligingsupdates direct en afzonderlijk melden; alle overige functionele updates maandelijks in één gebundelde batch aanbieden; en patch-updates groeperen. Het doel is een minimaal aantal meldingen dat je daadwerkelijk leest en test.
 
@@ -96,7 +96,7 @@ Stel bij elke gemelde kwetsbaarheid twee nuchtere vragen: **Draait deze code daa
 
 Dit onderscheid is cruciaal: een ongefilterd audit-rapport toont op een gemiddeld project al snel tientallen waarschuwingen, wat leidt tot verlamming. Zodra je filtert op reële impact, blijven er bij de meeste projecten slechts een handvol punten over die daadwerkelijk aandacht vragen.
 
-Inspecteer daarna je directe packages in `package.json` en verwijder alles wat overbodig is — projecten verzamelen vaak bibliotheken van eerdere experimenten en verwijderde schermen die stilletjes zijn blijven hangen.
+Inspecteer daarna je directe packages in `package.json` en verwijder alles wat overbodig is - projecten verzamelen vaak bibliotheken van eerdere experimenten en verwijderde schermen die stilletjes zijn blijven hangen.
 
 ## Wanneer een Melding Écht Urgent Is
 
@@ -122,7 +122,7 @@ Een onderscheid dat het triageren vele malen eenvoudiger maakt, en dat standaard
 
 **Een package die in de browser draait** voert code uit op het apparaat van de eindgebruiker, met toegang tot wat diegene op dat moment ziet en typt. Een beveiligingslek hier kan formuliersinvoer stelen of sessietokens in de pagina uitlezen. Het kan echter nooit bij je database-wachtwoorden, want die zijn daar simpelweg niet aanwezig.
 
-**Een package die op je server of in een edge function draait** executeert met de volledige privileges van jouw backend. Een lek daar kan omgevingsvariabelen uitlezen — inclusief je Supabase master key, betaalgeheimen en AI-tokens — en namens jouw app kwaadaardige database-operaties uitvoeren.
+**Een package die op je server of in een edge function draait** executeert met de volledige privileges van jouw backend. Een lek daar kan omgevingsvariabelen uitlezen - inclusief je Supabase master key, betaalgeheimen en AI-tokens - en namens jouw app kwaadaardige database-operaties uitvoeren.
 
 **Build-time packages** draaien uitsluitend op de computer die de code compileert en belanden nooit bij de eindgebruiker. Een lek hier is een zorg voor grote concerns met gedeelde CI/CD-servers, maar verwaarloosbaar voor een solo-oprichter die lokaal bouwt.
 
@@ -143,9 +143,9 @@ Vier werkdagen werk: een lockfile vastgelegd in Git (aangezien die ontbrak en bu
 **Resultaat:** de vraag van de accountant werd beantwoord met een gedocumenteerd beleid, en de maandelijkse updatecontrole kost Denise sindsdien minder dan een kwartier, waarbij er in negen maanden tijd slechts twee beveiligingspatches hoefden te worden doorgevoerd.
 
 > *"Die tweehonderd meldingen gaven me het gevoel dat mijn hele app van bordkarton was gemaakt. Vier ervan waren echt gevaarlijk, maar ik had geen schijn van kans om te zien welke vier dat waren zonder iemand die me liet zien waar ik moest kijken."*
-> — **Denise Kuiper, Oprichter, Boekhoudmaat (Utrecht)**
+> - **Denise Kuiper, Oprichter, Boekhoudmaat (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 1.450 (lockfile en reproduceerbare builds, triage, vier herstelacties, updateconfiguratie, gedocumenteerd triagebeleid) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.450 (lockfile en reproduceerbare builds, triage, vier herstelacties, updateconfiguratie, gedocumenteerd triagebeleid) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -179,7 +179,7 @@ Grijp direct in zodra de tool een nieuwe library voorstelt: vraag of de complete
       "name": "Hoeveel afhankelijkheden (dependencies) heeft een gemiddelde AI-app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vaak honderden via transitieve dependencies, circa tien indirecte voor elke directe package — normaal voor modern web, maar ongecontroleerd bij AI-bouw."
+        "text": "Vaak honderden via transitieve dependencies, circa tien indirecte voor elke directe package - normaal voor modern web, maar ongecontroleerd bij AI-bouw."
       }
     },
     {

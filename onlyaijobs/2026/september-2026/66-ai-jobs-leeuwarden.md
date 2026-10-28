@@ -34,7 +34,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Leeuwarden is a city of roughly 125,000 people and the capital of Friesland, in the north of the Netherlands. Its AI and data market is small — genuinely small, not merely under-publicised — but it contains one internationally significant research cluster and one substantial industrial data domain. For a narrow set of candidates, this combination is more attractive than a larger market. For most candidates it is not, and being clear about which group you fall into matters more here than in almost any other Dutch city.
+Leeuwarden is a city of roughly 125,000 people and the capital of Friesland, in the north of the Netherlands. Its AI and data market is small - genuinely small, not merely under-publicised - but it contains one internationally significant research cluster and one substantial industrial data domain. For a narrow set of candidates, this combination is more attractive than a larger market. For most candidates it is not, and being clear about which group you fall into matters more here than in almost any other Dutch city.
 
 ## Start With the Honest Constraint
 
@@ -42,7 +42,7 @@ It is worth establishing the limitation before the opportunity, because a reader
 
 Leeuwarden has few employers who would describe themselves as hiring machine learning engineers. There is no scale-up cluster, no concentration of technology company offices, and no dense startup layer. If you lose or leave a job here, the realistic options are a small number of other local employers, a commute to Groningen, or relocation. That is a materially different risk profile from Utrecht, where dozens of employers are within reach.
 
-Candidates who need a liquid job market — because they are early in their career, because they value the ability to change employers easily, or because they simply do not want their options concentrated — should read the rest of this as background rather than as a recommendation.
+Candidates who need a liquid job market - because they are early in their career, because they value the ability to change employers easily, or because they simply do not want their options concentrated - should read the rest of this as background rather than as a recommendation.
 
 What follows is for the candidates who remain: people drawn to a specific technical domain, or people for whom the non-work parts of the equation weigh heavily.
 
@@ -50,13 +50,13 @@ What follows is for the candidates who remain: people drawn to a specific techni
 
 Leeuwarden hosts a water technology research and innovation cluster that has real European standing, and this is the single most distinctive feature of the local technical economy.
 
-**Wetsus** is a European centre of excellence for sustainable water technology, based in Leeuwarden. It operates on a model worth understanding: research themes are defined jointly with a large group of participating companies, and doctoral research is conducted in collaboration with multiple universities. The consequence is a research environment that is simultaneously academically serious and industrially directed — a combination that is less common than either alone.
+**Wetsus** is a European centre of excellence for sustainable water technology, based in Leeuwarden. It operates on a model worth understanding: research themes are defined jointly with a large group of participating companies, and doctoral research is conducted in collaboration with multiple universities. The consequence is a research environment that is simultaneously academically serious and industrially directed - a combination that is less common than either alone.
 
 **WaterCampus Leeuwarden** is the surrounding innovation ecosystem, bringing together the research centre, applied education, startups and companies working on water treatment, reuse, desalination, resource recovery and monitoring.
 
 The technical work relevant to a machine learning engineer sits in several places within this cluster.
 
-**Process monitoring and control of treatment systems.** Water treatment involves biological and chemical processes that respond non-linearly to changes in influent composition, temperature and load. Sensor data is continuous but sparse in the variables you actually care about, because many important measurements require laboratory analysis with a delay. Soft sensors — models that infer a hard-to-measure quantity from easily measured ones — are a genuine and active application area.
+**Process monitoring and control of treatment systems.** Water treatment involves biological and chemical processes that respond non-linearly to changes in influent composition, temperature and load. Sensor data is continuous but sparse in the variables you actually care about, because many important measurements require laboratory analysis with a delay. Soft sensors - models that infer a hard-to-measure quantity from easily measured ones - are a genuine and active application area.
 
 **Anomaly detection in distribution networks.** Drinking water networks are large, buried, and instrumented only at points. Detecting leaks, contamination events or unusual consumption patterns from limited sensor coverage is an inference problem under substantial uncertainty, with high consequences for false negatives.
 
@@ -72,7 +72,7 @@ Friesland is dairy country, and the associated data work is more substantial tha
 
 **FrieslandCampina** is one of the largest dairy cooperatives in the world, with roots in this region. Dairy processing at that scale generates supply chain, quality, yield and process optimisation work, plus increasingly sophisticated traceability requirements driven by both regulation and customer demand.
 
-**Herd and farm-level data.** Modern dairy farming is heavily instrumented: milking systems record per-animal yield and composition, sensors track activity and rumination, and feeding is managed against measured intake. This produces per-animal time series across large herds, used for health detection, fertility management and yield optimisation. The technical problems — irregular sampling, individual variation, weak labels derived from later veterinary outcomes — are genuinely interesting and rarely discussed in mainstream machine learning conversations.
+**Herd and farm-level data.** Modern dairy farming is heavily instrumented: milking systems record per-animal yield and composition, sensors track activity and rumination, and feeding is managed against measured intake. This produces per-animal time series across large herds, used for health detection, fertility management and yield optimisation. The technical problems - irregular sampling, individual variation, weak labels derived from later veterinary outcomes - are genuinely interesting and rarely discussed in mainstream machine learning conversations.
 
 **Nitrogen and environmental compliance.** Dutch agriculture operates under intense and politically contested environmental regulation. Measuring, modelling and reporting emissions at farm and regional level is a data problem with direct financial and legal consequences for farmers, which puts unusual weight on defensibility of method.
 
@@ -111,7 +111,7 @@ Friesland is dairy country, and the associated data work is more substantial tha
 
 This is usually treated as a soft consideration and mentioned briefly. For Leeuwarden it is a primary factor rather than a footnote, and it deserves specifics rather than adjectives.
 
-Housing costs are among the lowest of any Dutch provincial capital, and the difference from the Randstad is not marginal — it is often the difference between renting indefinitely and owning a house with a garden on a single technical salary. Commuting within the city is short enough that most people cycle. The surrounding province is genuinely rural and has extensive water, which matters if that is the kind of environment you want to live in.
+Housing costs are among the lowest of any Dutch provincial capital, and the difference from the Randstad is not marginal - it is often the difference between renting indefinitely and owning a house with a garden on a single technical salary. Commuting within the city is short enough that most people cycle. The surrounding province is genuinely rural and has extensive water, which matters if that is the kind of environment you want to live in.
 
 Against this: the city is small, cultural options are more limited than in Amsterdam or Groningen, winters in the north are dark, and the province has a distinct regional identity and language that takes effort to engage with. Frisian is a recognised official language with active daily use in parts of the province, which is charming to some newcomers and isolating to others.
 
@@ -142,13 +142,13 @@ A research theme is defined with input from participating companies, funding is 
 
 A machine learning engineer reading that posting sees a water treatment research topic and often concludes it is not for them. But the actual work may be substantially computational: building models of a biological process, developing a soft sensor, designing an experiment to generate the data a model needs. The research centre, meanwhile, frequently struggles to find candidates with adequate computational skills, because the people who apply come from process engineering and chemistry backgrounds.
 
-That mismatch is an opportunity. A candidate with solid machine learning skills and genuine curiosity about the physical process is scarce in this applicant pool, and can enter a research environment that would be far more competitive if it were framed in machine learning vocabulary. The requirement is genuine interest in the domain — this is not a market where you can succeed while treating water treatment as an arbitrary data source.
+That mismatch is an opportunity. A candidate with solid machine learning skills and genuine curiosity about the physical process is scarce in this applicant pool, and can enter a research environment that would be far more competitive if it were framed in machine learning vocabulary. The requirement is genuine interest in the domain - this is not a market where you can succeed while treating water treatment as an arbitrary data source.
 
 ## The Career Risk, Stated Plainly
 
 Two risks are specific to this market and worth naming so they can be managed rather than discovered.
 
-**Concentration risk.** Your realistic employer set is small. Mitigate it by keeping your skills portable — publishing, maintaining a network beyond the region, ensuring your work involves methods that transfer rather than only institution-specific systems — and by treating Groningen as part of your market from the beginning rather than as an emergency option.
+**Concentration risk.** Your realistic employer set is small. Mitigate it by keeping your skills portable - publishing, maintaining a network beyond the region, ensuring your work involves methods that transfer rather than only institution-specific systems - and by treating Groningen as part of your market from the beginning rather than as an emergency option.
 
 **Specialisation risk.** Deep water or dairy domain expertise is valuable but narrow. Five years in, you are attractive to a small international set of employers rather than a broad national one. Whether this is acceptable depends on whether that international set is somewhere you would actually go. For water technology the answer is often yes, because the expertise is in demand globally. For regional dairy data it is more constrained.
 
@@ -181,7 +181,7 @@ Yes. Soft sensors inferring laboratory-measured quantities from continuous senso
 Because the applicant pool for those roles comes mostly from process engineering and chemistry, so computational skills are scarce. You face far less competition than you would for an equivalently interesting role framed in AI vocabulary.
 
 ### (Scenario: candidate weighing relocation to the north) Can I treat Amsterdam as a fallback market?
-Realistically no — it is over two hours away. Groningen at under forty minutes is your genuine secondary market, and it should be part of your plan from the start rather than an emergency option.
+Realistically no - it is over two hours away. Groningen at under forty minutes is your genuine secondary market, and it should be part of your plan from the start rather than an emergency option.
 
 ### (Scenario: candidate worried about narrow specialisation) What happens to my options after five years here?
 You become attractive to a small international set of employers rather than a broad national one. For water technology that set is genuinely global; for regional dairy data it is more constrained.
@@ -192,7 +192,7 @@ You become attractive to a small international set of employers rather than a br
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How small is Leeuwarden's AI market really?", "acceptedAnswer": {"@type": "Answer", "text": "Small enough that if a role ends, your options are a handful of local employers, a commute to Groningen, or relocation."}},
-    {"@type": "Question", "name": "Is the water technology work genuinely technical?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — soft sensors, anomaly detection on sparsely instrumented buried networks, and optimisation under non-negotiable regulatory constraints."}},
+    {"@type": "Question", "name": "Is the water technology work genuinely technical?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - soft sensors, anomaly detection on sparsely instrumented buried networks, and optimisation under non-negotiable regulatory constraints."}},
     {"@type": "Question", "name": "Why consider research positions described in water treatment language?", "acceptedAnswer": {"@type": "Answer", "text": "The applicant pool comes mostly from process engineering and chemistry, so computational skills are scarce and competition is far lower."}},
     {"@type": "Question", "name": "Can I treat Amsterdam as a fallback market from Leeuwarden?", "acceptedAnswer": {"@type": "Answer", "text": "Realistically no, at over two hours away. Groningen at under forty minutes is the genuine secondary market."}},
     {"@type": "Question", "name": "What happens to my options after five years here?", "acceptedAnswer": {"@type": "Answer", "text": "You become attractive to a small international set of employers. For water technology that set is genuinely global; for regional dairy data it is narrower."}}

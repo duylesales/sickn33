@@ -31,27 +31,27 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Build app AI speed gets a "share this with a link" feature working in an afternoon — genuinely impressive, genuinely useful, and genuinely missing one specific detail that production reality eventually demands: what happens to that link after the person who created it decides they don't want it active anymore.
+Build app AI speed gets a "share this with a link" feature working in an afternoon - genuinely impressive, genuinely useful, and genuinely missing one specific detail that production reality eventually demands: what happens to that link after the person who created it decides they don't want it active anymore.
 
 ## Before: A Share Link That Works Exactly as Described
 
-**Before a dedicated review,** a "share via link" feature generating a unique URL that grants access to a specific resource — an order history, a delivery schedule, a farm partner's product listing — works correctly the moment it's created and correctly for as long as it's needed, which is exactly what a founder testing the feature confirms during normal use.
+**Before a dedicated review,** a "share via link" feature generating a unique URL that grants access to a specific resource - an order history, a delivery schedule, a farm partner's product listing - works correctly the moment it's created and correctly for as long as it's needed, which is exactly what a founder testing the feature confirms during normal use.
 
 ## After: A Share Link That Actually Respects Revocation
 
-**After a proper fix,** the same feature includes a genuine way to revoke a previously shared link, with that revocation actually preventing the link from continuing to grant access — rather than the interface simply hiding the link from view while the underlying URL, if anyone still has it, continues working exactly as before.
+**After a proper fix,** the same feature includes a genuine way to revoke a previously shared link, with that revocation actually preventing the link from continuing to grant access - rather than the interface simply hiding the link from view while the underlying URL, if anyone still has it, continues working exactly as before.
 
 ## Why "Revoke" Buttons Sometimes Don't Revoke Anything at the Server Level
 
-Building a "revoke" button that removes a shared link from a user's own visible list of active shares is the straightforward, directly visible part of the feature. Making that same action actually invalidate the link server-side, so the URL itself stops granting access even if someone still has it saved or bookmarked, is a separate, additional implementation step that doesn't automatically come bundled with a working "remove from my list" button. The two behaviors can look identical from inside the app — click revoke, link disappears from the list, task apparently complete — because the interface only ever shows what's in that list to begin with. Whether the actual resource behind a share link checks a live "is this specific link still valid" flag on every single access attempt, or instead grants access to anyone holding a structurally valid-looking URL regardless of its current status, is a decision made in the backend logic that a founder testing only through the visible list has no way to observe directly.
+Building a "revoke" button that removes a shared link from a user's own visible list of active shares is the straightforward, directly visible part of the feature. Making that same action actually invalidate the link server-side, so the URL itself stops granting access even if someone still has it saved or bookmarked, is a separate, additional implementation step that doesn't automatically come bundled with a working "remove from my list" button. The two behaviors can look identical from inside the app - click revoke, link disappears from the list, task apparently complete - because the interface only ever shows what's in that list to begin with. Whether the actual resource behind a share link checks a live "is this specific link still valid" flag on every single access attempt, or instead grants access to anyone holding a structurally valid-looking URL regardless of its current status, is a decision made in the backend logic that a founder testing only through the visible list has no way to observe directly.
 
 ## Why This Passes Every Test a Founder Naturally Runs
 
-Testing a revoke feature by clicking "revoke" and confirming the link disappears from your own account's list of active shares looks completely successful — because it is successful, from the interface's perspective. The gap only becomes visible if someone specifically tries accessing the original link directly after it was supposedly revoked, which a founder testing their own feature from their own account has no natural reason to do.
+Testing a revoke feature by clicking "revoke" and confirming the link disappears from your own account's list of active shares looks completely successful - because it is successful, from the interface's perspective. The gap only becomes visible if someone specifically tries accessing the original link directly after it was supposedly revoked, which a founder testing their own feature from their own account has no natural reason to do.
 
 ## Why This Matters More for Business Partnership Data Specifically
 
-A share link exposing delivery schedules or farm partner listings might be shared temporarily with a specific business partner for a specific purpose, with an entirely reasonable expectation that access ends when the relationship or purpose does — a link that keeps working indefinitely after supposedly being revoked directly violates that reasonable expectation, with consequences that compound the longer the link remains quietly functional.
+A share link exposing delivery schedules or farm partner listings might be shared temporarily with a specific business partner for a specific purpose, with an entirely reasonable expectation that access ends when the relationship or purpose does - a link that keeps working indefinitely after supposedly being revoked directly violates that reasonable expectation, with consequences that compound the longer the link remains quietly functional.
 
 ## What Properly Fixing This Requires
 
@@ -71,11 +71,11 @@ A "delete" or "revoke" button on an API key management page should immediately i
 
 **Removed team members or collaborators**
 
-Removing someone from a team or workspace in the interface should immediately end their ability to access that team's data through any means — including an already-open browser session, an existing API token issued under their account, or a mobile app that hasn't refreshed its own session yet. A "removed" user who can still pull data through a channel nobody checked is the same underlying gap as BoerenBox's link.
+Removing someone from a team or workspace in the interface should immediately end their ability to access that team's data through any means - including an already-open browser session, an existing API token issued under their account, or a mobile app that hasn't refreshed its own session yet. A "removed" user who can still pull data through a channel nobody checked is the same underlying gap as BoerenBox's link.
 
 **Cancelled subscriptions and downgraded plans**
 
-A cancelled subscription should stop granting access to whatever features that subscription unlocked — not just stop showing as "active" in a billing dashboard, while a background check that gates actual feature access still reads a cached or stale status that hasn't caught up yet.
+A cancelled subscription should stop granting access to whatever features that subscription unlocked - not just stop showing as "active" in a billing dashboard, while a background check that gates actual feature access still reads a cached or stale status that hasn't caught up yet.
 
 **Password resets and "log out all devices" actions**
 
@@ -91,14 +91,14 @@ In every case above, the pattern is identical: a visible, interface-level action
 
 Loes, a former farmers market coordinator turned founder in Terneuzen, built BoerenBox, an AI-assisted farm-to-table food delivery app built with v0, letting farm partners generate shareable links exposing their current product availability and delivery schedule to specific retail partners.
 
-Months after ending a specific retail partnership, a farm partner discovered — purely by chance, checking an old bookmark — that the link they'd previously shared with that former partner and subsequently "revoked" through BoerenBox's interface still displayed their current, live availability and schedule. LaunchStudio's review confirmed the revoke button removed the link from the farm partner's own visible list but never actually invalidated the underlying URL itself.
+Months after ending a specific retail partnership, a farm partner discovered - purely by chance, checking an old bookmark - that the link they'd previously shared with that former partner and subsequently "revoked" through BoerenBox's interface still displayed their current, live availability and schedule. LaunchStudio's review confirmed the revoke button removed the link from the farm partner's own visible list but never actually invalidated the underlying URL itself.
 
 **Result:** LaunchStudio implemented genuine server-side link invalidation triggered by the revoke action, confirming a previously shared link stops working immediately upon revocation regardless of who still has it bookmarked, closing the gap across every farm partner's shared links.
 
 > *"I 'revoked' that link the day the partnership ended, months ago, and genuinely believed that was the end of it. Finding out by accident that it had quietly kept working this entire time was a pretty unsettling discovery."*
-> — **Loes Dijkstra, Founder, BoerenBox (Terneuzen)**
+> - **Loes Dijkstra, Founder, BoerenBox (Terneuzen)**
 
-**Cost & Timeline:** €2,000 (share link revocation audit and server-side invalidation fix) — completed in 7 business days.
+**Cost & Timeline:** €2,000 (share link revocation audit and server-side invalidation fix) - completed in 7 business days.
 
 ---
 
@@ -106,23 +106,23 @@ Months after ending a specific retail partnership, a farm partner discovered —
 
 ### Would an access-control specialist consider ineffective link revocation a common gap in quickly built sharing features?
 
-Yes, reasonably common — building a "remove from my list" action is the directly visible, testable part of a revoke feature, while ensuring the underlying shared resource itself becomes genuinely inaccessible is a separate, additional requirement that's easy to treat as automatically included when it isn't.
+Yes, reasonably common - building a "remove from my list" action is the directly visible, testable part of a revoke feature, while ensuring the underlying shared resource itself becomes genuinely inaccessible is a separate, additional requirement that's easy to treat as automatically included when it isn't.
 
 ### Does this risk only apply to farm-to-table or business-partnership platforms specifically?
 
-No, it applies to any feature offering shareable links with a revocation option — shared documents, shared calendars, and shared dashboards across many different kinds of products all carry the same underlying risk if revocation isn't verified to actually invalidate the link server-side.
+No, it applies to any feature offering shareable links with a revocation option - shared documents, shared calendars, and shared dashboards across many different kinds of products all carry the same underlying risk if revocation isn't verified to actually invalidate the link server-side.
 
-### Manifera has built secure sharing systems across various production platforms — does that experience transfer to a smaller farm-to-table app like BoerenBox's?
+### Manifera has built secure sharing systems across various production platforms - does that experience transfer to a smaller farm-to-table app like BoerenBox's?
 
-Yes, directly — the underlying principle (revocation must invalidate the resource itself, not just a list view) is identical regardless of the specific product or industry, and applying an already-established verification pattern is considerably more reliable than assuming a revoke button works as intended without directly testing it.
+Yes, directly - the underlying principle (revocation must invalidate the resource itself, not just a list view) is identical regardless of the specific product or industry, and applying an already-established verification pattern is considerably more reliable than assuming a revoke button works as intended without directly testing it.
 
-### Herre Roelevink has emphasized that features which "look complete" from a UI perspective still need underlying verification — does this share-link case reflect that view precisely?
+### Herre Roelevink has emphasized that features which "look complete" from a UI perspective still need underlying verification - does this share-link case reflect that view precisely?
 
-Precisely — BoerenBox's revoke feature looked entirely complete and functioned correctly from every angle a founder would naturally test, while the actual underlying behavior diverged meaningfully from that appearance, exactly the looks-complete-versus-is-complete distinction Roelevink's broader commentary on AI-generated features consistently returns to.
+Precisely - BoerenBox's revoke feature looked entirely complete and functioned correctly from every angle a founder would naturally test, while the actual underlying behavior diverged meaningfully from that appearance, exactly the looks-complete-versus-is-complete distinction Roelevink's broader commentary on AI-generated features consistently returns to.
 
 ### Is there a simple way for a founder to test their own revocation features for this specific gap?
 
-Testing requires saving a valid share link, revoking it through the normal interface, and then directly attempting to access the original saved link afterward to confirm it genuinely stops working — a reasonable check for a founder with some technical comfort to attempt themselves, though a dedicated review provides more systematic coverage across every sharing feature in a product rather than checking one at a time from memory.
+Testing requires saving a valid share link, revoking it through the normal interface, and then directly attempting to access the original saved link afterward to confirm it genuinely stops working - a reasonable check for a founder with some technical comfort to attempt themselves, though a dedicated review provides more systematic coverage across every sharing feature in a product rather than checking one at a time from memory.
 
 <script type="application/ld+json">
 {
@@ -158,7 +158,7 @@ Testing requires saving a valid share link, revoking it through the normal inter
       "name": "Does this share-link case reflect the looks-complete-versus-is-complete distinction the CEO describes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Precisely — the feature looked entirely complete while the actual underlying behavior diverged from that appearance."
+        "text": "Precisely - the feature looked entirely complete while the actual underlying behavior diverged from that appearance."
       }
     },
     {

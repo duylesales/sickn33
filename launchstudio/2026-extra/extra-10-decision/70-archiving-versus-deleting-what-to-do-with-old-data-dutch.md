@@ -38,9 +38,9 @@ De oplossing is een **duidelijk gedocumenteerd bewaarbeleid per datatype**, onde
 
 Taalkundige en technische precisie voorkomt hier vrijwel alle kostbare vergissingen en juridische misverstanden:
 
-**Archiveren:** Betekent het weghalen van data uit het actieve dagelijkse gezichtsveld van de gebruiker, terwijl het record 100% intact, doorzoekbaar en direct herstelbaar blijft. Dit is een bewuste beslissing van de klant, meestal gedreven door een behoefte aan overzicht en rust — denk aan een afgerond project of een inactieve klantrelatie. Er gaat letterlijk niets verloren.
+**Archiveren:** Betekent het weghalen van data uit het actieve dagelijkse gezichtsveld van de gebruiker, terwijl het record 100% intact, doorzoekbaar en direct herstelbaar blijft. Dit is een bewuste beslissing van de klant, meestal gedreven door een behoefte aan overzicht en rust - denk aan een afgerond project of een inactieve klantrelatie. Er gaat letterlijk niets verloren.
 
-**Soft Deletion:** Betekent het markeren van een record als 'verwijderd' in de database (bijvoorbeeld via een tijdstempel in een kolom `deleted_at`), waardoor het onmiddellijk verdwijnt uit de interface en API's van de applicatie, maar voor een vastgestelde periode bewaard blijft in de database. Dit is doorgaans onzichtbaar voor de klant — die veronderstelt dat het record weg is — en het bestaat puur als vangnet zodat menselijke vergissingen binnen enkele minuten hersteld kunnen worden.
+**Soft Deletion:** Betekent het markeren van een record als 'verwijderd' in de database (bijvoorbeeld via een tijdstempel in een kolom `deleted_at`), waardoor het onmiddellijk verdwijnt uit de interface en API's van de applicatie, maar voor een vastgestelde periode bewaard blijft in de database. Dit is doorgaans onzichtbaar voor de klant - die veronderstelt dat het record weg is - en het bestaat puur als vangnet zodat menselijke vergissingen binnen enkele minuten hersteld kunnen worden.
 
 **Hard Deletion (Definitieve vernietiging):** Betekent dat de data daadwerkelijk fysiek uit de database en schijfopslag wordt gewist (`DELETE FROM ...`) en uitsluitend nog via een historische back-uprestore teruggehaald zou kunnen worden. Dit is 100% onomkeerbaar, en het is de enige handeling die juridisch voldoet aan een formeel AVG-verwijderingsverzoek (*recht op vergetelheid*).
 
@@ -51,7 +51,7 @@ Voor vrijwel elk klantgericht datarecord is de gezonde softwarestandaard dat de 
 
 Het operationele voordeel hiervan is enorm: het meest voorkomende dataverlies-incident in een B2B SaaS-product is immers een klant die per ongeluk iets verwijdert wat hij helemaal niet kwijt wilde. Met soft deletion is het herstel een administratieve handeling van twee minuten: u zet `deleted_at = NULL` en het record staat direct weer op zijn plek. Zónder soft deletion zijn de enige alternatieven: een traumatische database-restore die het recente werk van al uw ándere klanten vernietigt, of de klant moeten mededelen dat zijn bedrijfsdata onherroepelijk verloren is.
 
-Wees echter ook eerlijk over de softwaretechnische implicaties. Elke databasequery in uw backend moet expliciet worden uitgebreid met een filter (`WHERE deleted_at IS NULL`). Het vergeten van dat filter op slechts één plek zorgt ervoor dat gewiste records plotseling ergens in een dashboard of export weer opduiken — een veelvoorkomende bug. Unieke constraints op databaseniveau werken bovendien lastiger samen met soft deletion: een gewist account blokkeert immers nog steeds het opnieuw gebruiken van dat e-mailadres, tenzij de unieke index expliciet conditioneel is gemaakt (`WHERE deleted_at IS NULL`). En gewiste records blijven schijfruimte innemen én bevatten persoonsgegevens, wat betekent dat een periodieke achtergrond-opschoontaak (*purge job*) geen optie maar een wettelijke plicht is. Soft deletion zónder uiteindelijke hard deletion is immers geen bewaarbeleid; het is een ongecontroleerde verzamelwoede met betere manieren.
+Wees echter ook eerlijk over de softwaretechnische implicaties. Elke databasequery in uw backend moet expliciet worden uitgebreid met een filter (`WHERE deleted_at IS NULL`). Het vergeten van dat filter op slechts één plek zorgt ervoor dat gewiste records plotseling ergens in een dashboard of export weer opduiken - een veelvoorkomende bug. Unieke constraints op databaseniveau werken bovendien lastiger samen met soft deletion: een gewist account blokkeert immers nog steeds het opnieuw gebruiken van dat e-mailadres, tenzij de unieke index expliciet conditioneel is gemaakt (`WHERE deleted_at IS NULL`). En gewiste records blijven schijfruimte innemen én bevatten persoonsgegevens, wat betekent dat een periodieke achtergrond-opschoontaak (*purge job*) geen optie maar een wettelijke plicht is. Soft deletion zónder uiteindelijke hard deletion is immers geen bewaarbeleid; het is een ongecontroleerde verzamelwoede met betere manieren.
 
 Het achteraf inbouwen van soft deletion in een bestaande codebase is oneindig veel ingrijpender dan het vanaf dag één implementeren, omdat het werkelijk elke databasequery in uw product raakt. Het is het schoolvoorbeeld van een beslissing die vóór de lancering één dag kost en achteraf weken.
 ## Een Praktisch Bewaarbeleid Per Datatype
@@ -60,7 +60,7 @@ Eén generieke bewaartermijn voor alle bedrijfsdata is per definitie fout, omdat
 
 **1. Data die de klant zélf heeft gecreëerd en als zijn eigendom beschouwt:** Projecten, klantendossiers, notities en documenten. Deze blijven bewaard zolang het abonnement actief is. Bij beëindiging van het abonnement blijven ze nog een gecommuniceerde periode (zoals 60 dagen) beschikbaar in alleen-lezen status, waarna ze definitief worden gewist. Dit geeft de vertrokken klant royale bedenktijd en voorkomt paniek.
 
-**2. Financiële en fiscale transactiegegevens:** Facturen, creditnota's, btw-specificaties en betaalbewijzen. Deze moeten wettelijk worden bewaard conform de fiscale bewaartermijn van de Belastingdienst — in Nederland en België doorgaans zeven tot tien jaar. Deze wettelijke plicht heeft voorrang op een individueel verwijderingsverzoek van een klant voor de factuurdocumenten zelf, en het eerlijk communiceren hiervan is volkomen normaal en juridisch correct.
+**2. Financiële en fiscale transactiegegevens:** Facturen, creditnota's, btw-specificaties en betaalbewijzen. Deze moeten wettelijk worden bewaard conform de fiscale bewaartermijn van de Belastingdienst - in Nederland en België doorgaans zeven tot tien jaar. Deze wettelijke plicht heeft voorrang op een individueel verwijderingsverzoek van een klant voor de factuurdocumenten zelf, en het eerlijk communiceren hiervan is volkomen normaal en juridisch correct.
 
 **3. Operationele logs en telemetrie:** Serverlogs, gebruikerssessies, API-aanroepen en analytics-events. Hanteer een korte bewaartermijn van 30 tot maximaal 90 dagen. Dit betreft veruit het grootste datavolume en de minste bedrijfswaarde; hier schuilt 80% van uw onnodige schijfgroei.
 
@@ -68,7 +68,7 @@ Eén generieke bewaartermijn voor alle bedrijfsdata is per definitie fout, omdat
 
 **5. Gevoelige data:** Medische gegevens, identiteitsbewijzen of betaalkaartgegevens die u überhaupt niet zelf zou moeten opslaan. Hanteer de allerkortste bewaartermijn die het doel dient.
 
-Leg dit beleid vast in één beknopt intern document, publiceer de klantgerichte onderdelen in uw privacyverklaring, en — het deel dat men continu vergeet — implementeer de achterliggende verwijderingscode daadwerkelijk. Een papieren privacybeleid dat softwarematig niet wordt gehandhaafd, is een schriftelijke bekentenis van nalatigheid.
+Leg dit beleid vast in één beknopt intern document, publiceer de klantgerichte onderdelen in uw privacyverklaring, en - het deel dat men continu vergeet - implementeer de achterliggende verwijderingscode daadwerkelijk. Een papieren privacybeleid dat softwarematig niet wordt gehandhaafd, is een schriftelijke bekentenis van nalatigheid.
 ## Het Spanningsveld Tussen AVG en Belastingdienst
 
 Twee wettelijke verplichtingen trekken softwareontwikkelaars in exact tegenovergestelde richtingen, en beiden zijn keihard en onontkoombaar:
@@ -82,7 +82,7 @@ De praktische softwareoplossing werkt op **veldniveau** (*field-level anonymisat
 
 Een dataretentiebeleid bestaat uitsluitend in theorie totdat er een geautomatiseerd proces draait dat verlopen data daadwerkelijk wist. En in dat geautomatiseerde proces schuilt het grootste operationele gevaar:
 
-De opschoontaak (*purge job*) moet **haarscherp gescopeerd zijn**. Een geautomatiseerd opschoonscript met een verkeerde `WHERE`-conditie is het meest destructieve stuk code in uw complete product — het draait immers zonder menselijk toezicht, volgens een periodiek schema, met volledige databaserechten tegen al uw tabellen. Test het script altijd eerst uitvoerig op een herstelde kopie van uw productiedatabase, en zorg dat het script in de beginfase eerst een droogloopverslag (*dry-run report*) genereert dat toont wát er gewist zou worden vóórdat er daadwerkelijk een `DELETE`-opdracht wordt uitgevoerd.
+De opschoontaak (*purge job*) moet **haarscherp gescopeerd zijn**. Een geautomatiseerd opschoonscript met een verkeerde `WHERE`-conditie is het meest destructieve stuk code in uw complete product - het draait immers zonder menselijk toezicht, volgens een periodiek schema, met volledige databaserechten tegen al uw tabellen. Test het script altijd eerst uitvoerig op een herstelde kopie van uw productiedatabase, en zorg dat het script in de beginfase eerst een droogloopverslag (*dry-run report*) genereert dat toont wát er gewist zou worden vóórdat er daadwerkelijk een `DELETE`-opdracht wordt uitgevoerd.
 
 De verwijdering moet **compleet** zijn. Het wissen van een rij in PostgreSQL terwijl de geüploade paspoortkopie of factuur-PDF in uw cloudopslag (AWS S3) blijft staan, voldoet aan geen enkele privacywet.
 
@@ -109,7 +109,7 @@ Tijdens de audit ontdekte LaunchStudio een acuut AVG-risico: twee voormalige kla
 **Resultaat:** Binnen vier werkdagen stelde LaunchStudio een officieel bewaarbeleid op: afleverfoto's worden na 90 dagen automatisch gewist, GPS-locatiesporen na 30 dagen, financiële ritverantwoording na 7 jaar, en beëindigde accounts 90 dagen na opzegging. Er werd een zachte verwijdering met 30 dagen hersteloptie ingevoerd, gekoppeld aan een nachtelijke batch-purge die zowel Postgres als S3 opschoont. De database kromp met **70%**, de cloudkosten daalden drastisch en de laadtijd van het ritoverzicht zakte naar **minder dan 300 milliseconden**.
 
 > *"Ik bewaarde vier jaar lang foto's van de voordeuren van wildvreemden, simpelweg omdat niemand ooit de tijd had genomen om een delete-knop te programmeren."*
-> — **Hugo Willemsen, Oprichter, Bezorgd**
+> - **Hugo Willemsen, Oprichter, Bezorgd**
 
 **Kosten & Doorlooptijd:** Bewaarbeleid, soft delete, geautomatiseerde S3/database purge-job opgeleverd in 4 werkdagen.
 

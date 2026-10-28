@@ -108,9 +108,9 @@ In een 3-weeks refactoringtraject heeft LaunchStudio:
 **Resultaat:** De codebase kromp van 140.000 regels naar 45.000 regels schone, modulaire code. Het platform werd 3x sneller en alle hardnekkige bugs verdwenen. Pieter kon Cursor weer openen: doordat bestanden klein en overzichtelijk waren, begreep het AI-model de context weer direct en was zijn productiviteit volledig hersteld.
 
 > *"Ik dacht dat het AI-model dommer werd. In werkelijkheid was mijn codebase gewoon te rommelig geworden voor de AI om te lezen. LaunchStudio heeft mijn software niet alleen gerepareerd; ze hebben het zo gestructureerd dat de AI en ik weer probleemloos kunnen samenwerken."*
-> — **Pieter van Dijk, Oprichter, RentMaster (Den Haag)**
+> - **Pieter van Dijk, Oprichter, RentMaster (Den Haag)**
 
-**Kosten & Doorlooptijd:** €6.800 (Codebase Rescue & Refactor Pakket) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €6.800 (Codebase Rescue & Refactor Pakket) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 
@@ -120,7 +120,7 @@ In een 3-weeks refactoringtraject heeft LaunchStudio:
 Dit gebeurt wanneer u de limiet van het contextvenster bereikt. De AI kan niet uw hele applicatie tegelijk "lezen", vergeet eerdere functies en overschrijft deze per abuis. LaunchStudio lost dit op door uw applicatie op te splitsen in kleine, onafhankelijke componenten die moeiteloos binnen het contextvenster passen.
 
 ### Moet ik proberen vastgelopen AI-spaghetticode zelf te refactoren met behulp van AI?
-AI inzetten om verwarde AI-code op te schonen leidt vrijwel altijd tot een vicieuze cirkel van nieuwe fouten. Refactoring vereist holistisch inzicht in software-architectuur — exact het zwakke punt van taalmodellen. Menselijke engineers zijn nodig om de structuur te ontwarren. Zodra de basis staat, kunt u weer veilig met AI verder bouwen.
+AI inzetten om verwarde AI-code op te schonen leidt vrijwel altijd tot een vicieuze cirkel van nieuwe fouten. Refactoring vereist holistisch inzicht in software-architectuur - exact het zwakke punt van taalmodellen. Menselijke engineers zijn nodig om de structuur te ontwarren. Zodra de basis staat, kunt u weer veilig met AI verder bouwen.
 
 ### Hoe voorkom ik vanaf het begin dat mijn AI-project verandert in een onbeheersbare monoliet?
 Hanteer strikte spelregels: houd bestanden onder de 300 regels, definieer vooraf TypeScript-interfaces en scheid de frontend strikt van de backend via een API-laag. LaunchStudio kan een beproefd Clean Architecture fundament voor u opzetten.

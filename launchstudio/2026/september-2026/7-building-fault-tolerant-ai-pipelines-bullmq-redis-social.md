@@ -1,4 +1,4 @@
-🎙️ Lucas, a media coordinator, built an AI transcriber using **Lovable** — then watched long audio uploads crash with Vercel 10-second serverless timeouts, leaving transcriptions half-done and losing user data. 📻
+🎙️ Lucas, a media coordinator, built an AI transcriber using **Lovable** - then watched long audio uploads crash with Vercel 10-second serverless timeouts, leaving transcriptions half-done and losing user data. 📻
 
 Connecting your web server directly to slow, unreliable LLM APIs means one timeout or server reboot permanently destroys your user's job. 🧠
 

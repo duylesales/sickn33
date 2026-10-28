@@ -86,9 +86,9 @@ Een klant die twee weken in zijn cyclus van het middelste niveau naar het hoogst
 **Resultaat:** LaunchStudio implementeerde een correcte logica voor evenredige verrekening bij pakketwijzigingen, expliciet getest tegen echte situaties met upgrades en downgrades halverwege de cyclus. Er werd een corrigerend tegoed uitgegeven voor de getroffen klant, wat de kloof sloot voor alle toekomstige pakketwijzigingen.
 
 > *"We demonstreerden 'op elk moment upgraden' voortdurend als een verkooppunt. We hadden oprecht nog nooit één keer getest wat er daadwerkelijk gebeurde als iemand dat halverwege een facturatiecyclus deed."*
-> — **Stijn van Rijn, Oprichter, PodCraft (Hilversum)**
+> - **Stijn van Rijn, Oprichter, PodCraft (Hilversum)**
 
-**Kosten en tijdlijn:** € 2.800 (audit van facturatie-logica en implementatie van evenredige verrekening) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.800 (audit van facturatie-logica en implementatie van evenredige verrekening) - voltooid in 9 werkdagen.
 
 ---
 

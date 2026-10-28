@@ -13,13 +13,13 @@ But when you pivot to building an AI SaaS, TDD suddenly breaks.
 
 Traditional software is **deterministic**. If you feed the function `2 + 2`, the answer is always `4`. You can write an `assert(result == 4)` unit test, and it will pass 100% of the time, forever, on every commit.
 
-AI models are **non-deterministic**. If you feed an LLM the exact same prompt five times — even at low temperature — it will give you five slightly different answers, because the model samples from a probability distribution over possible next tokens rather than computing a fixed output. How do you write a strict unit test for an output that constantly shape-shifts? If you cannot test your AI, you cannot guarantee its behavior. If you cannot guarantee its behavior, you cannot sell it into any environment with a compliance function — healthcare, finance, HR, legal — which is exactly where the money is. This gap is part of why an estimated 45% of AI-generated code ships with defects that would have been caught by proper testing discipline in traditional software; the tooling and habits engineers already trust simply do not transfer.
+AI models are **non-deterministic**. If you feed an LLM the exact same prompt five times - even at low temperature - it will give you five slightly different answers, because the model samples from a probability distribution over possible next tokens rather than computing a fixed output. How do you write a strict unit test for an output that constantly shape-shifts? If you cannot test your AI, you cannot guarantee its behavior. If you cannot guarantee its behavior, you cannot sell it into any environment with a compliance function - healthcare, finance, HR, legal - which is exactly where the money is. This gap is part of why an estimated 45% of AI-generated code ships with defects that would have been caught by proper testing discipline in traditional software; the tooling and habits engineers already trust simply do not transfer.
 
 Here is why traditional testing fails in AI development, and the new engineering paradigms you must adopt to guarantee software quality.
 
 ## The Three Failures of Traditional Testing in AI
 
-When you try to apply standard Jest, PyTest, or Cypress workflows to an LLM-powered backend, you will encounter three massive roadblocks — plus a fourth that only appears once you are running in production.
+When you try to apply standard Jest, PyTest, or Cypress workflows to an LLM-powered backend, you will encounter three massive roadblocks - plus a fourth that only appears once you are running in production.
 
 ### 1. The Flaky Test Loop
 
@@ -27,7 +27,7 @@ If your test asserts that the AI must reply with the exact string "Your appointm
 
 ### 2. The Context Window Hallucination
 
-Integration tests ensure different modules work together. In AI, this means testing Retrieval-Augmented Generation (RAG): you must verify the AI actually retrieves the right document from the database and grounds its answer in it. Because LLMs are prone to hallucination, the model might pass a naive test by returning the factually correct answer — but it pulled that fact from its general training data rather than your proprietary database. A traditional assertion cannot tell the difference between "the AI looked this up correctly" and "the AI got lucky," and that difference is exactly what matters once your data changes and the training-data answer goes stale or wrong.
+Integration tests ensure different modules work together. In AI, this means testing Retrieval-Augmented Generation (RAG): you must verify the AI actually retrieves the right document from the database and grounds its answer in it. Because LLMs are prone to hallucination, the model might pass a naive test by returning the factually correct answer - but it pulled that fact from its general training data rather than your proprietary database. A traditional assertion cannot tell the difference between "the AI looked this up correctly" and "the AI got lucky," and that difference is exactly what matters once your data changes and the training-data answer goes stale or wrong.
 
 ### 3. The API Cost of Testing
 
@@ -35,7 +35,7 @@ If you have 500 unit tests that hit the OpenAI or Anthropic API every time a dev
 
 ### 4. The Silent Regression in Production
 
-Even a well-built test suite only catches what you thought to test for. Model providers update their APIs — sometimes with no version pin available, sometimes with a deprecation notice you missed — and a prompt that reliably produced clean JSON for six months can start producing malformed output after a silent model update on the provider's side. Without continuous evaluation running against live traffic, not just your CI pipeline, you find out about this regression from an angry customer instead of from your monitoring dashboard.
+Even a well-built test suite only catches what you thought to test for. Model providers update their APIs - sometimes with no version pin available, sometimes with a deprecation notice you missed - and a prompt that reliably produced clean JSON for six months can start producing malformed output after a silent model update on the provider's side. Without continuous evaluation running against live traffic, not just your CI pipeline, you find out about this regression from an angry customer instead of from your monitoring dashboard.
 
 ## Engineering the AI Testing Suite
 
@@ -45,23 +45,23 @@ This is the exact testing architecture [LaunchStudio](https://launchstudio.eu/en
 
 Here is how we test AI:
 
-1. **Format Enforcement (JSON Schemas):** We force the LLM to output responses in strict, typed JSON objects — using OpenAI's Structured Outputs, Anthropic's tool-use forced-format calls, or a validation layer like Pydantic/Zod on top of a plain-text response. We then write unit tests that check the *schema*, not the *string*. We assert that the AI returned a `status: boolean` and a `message: string` of the expected shape and length. If the structure holds, the test passes, regardless of the exact wording.
+1. **Format Enforcement (JSON Schemas):** We force the LLM to output responses in strict, typed JSON objects - using OpenAI's Structured Outputs, Anthropic's tool-use forced-format calls, or a validation layer like Pydantic/Zod on top of a plain-text response. We then write unit tests that check the *schema*, not the *string*. We assert that the AI returned a `status: boolean` and a `message: string` of the expected shape and length. If the structure holds, the test passes, regardless of the exact wording.
 2. **LLM-as-a-Judge:** For integration tests, we use a *second*, typically cheaper LLM to evaluate the output of the primary LLM against a written rubric. We write a test prompt: *"Did the AI answer the user's question politely, accurately, and using only the provided context? Score 1-5 and explain."* The Judge LLM returns a structured score, allowing for semantic flexibility while still producing a numeric pass/fail threshold your CI pipeline can act on.
 3. **Deterministic Seed Routing:** To save money and ensure stability during local development, we route testing traffic to local, open-source models (like Llama 3 or Mistral running via Ollama) with `temperature` set to `0.0` and a fixed seed where the API supports it. This forces the AI to be as deterministic as possible during basic unit tests, reserving the expensive production API for final staging and release-candidate tests.
-4. **Golden Datasets and Regression Tracking:** We build a versioned "golden set" of real input/output pairs that represent known-good behavior, and re-run the full golden set against every model or prompt change — not just new code changes — so a silent provider-side model update gets caught by a scheduled nightly run instead of by a customer complaint.
+4. **Golden Datasets and Regression Tracking:** We build a versioned "golden set" of real input/output pairs that represent known-good behavior, and re-run the full golden set against every model or prompt change - not just new code changes - so a silent provider-side model update gets caught by a scheduled nightly run instead of by a customer complaint.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
 ## What to Do Before Your Next Enterprise Demo
 
-If your CI/CD pipeline is currently red because of flaky string-matching tests, do not respond by deleting coverage — that is how AI startups end up shipping the 45% of code that never gets properly checked. Audit your test suite for exact-match assertions on LLM output, replace them with schema validation, and stand up at least a minimal LLM-as-a-Judge harness for your highest-risk flows before your next enterprise technical audit.
+If your CI/CD pipeline is currently red because of flaky string-matching tests, do not respond by deleting coverage - that is how AI startups end up shipping the 45% of code that never gets properly checked. Audit your test suite for exact-match assertions on LLM output, replace them with schema validation, and stand up at least a minimal LLM-as-a-Judge harness for your highest-risk flows before your next enterprise technical audit.
 
-[LaunchStudio's](https://launchstudio.eu/en/#packages) QA and testing engagements typically run alongside a Launch Ready or Launch & Grow package, priced from €800 to €7,500 depending on scope, delivered in 1-3 weeks — about 20% of what it costs to build this discipline in-house with a dedicated QA hire. [Talk to us](https://launchstudio.eu/en/#contact) before your next technical audit, not after it fails.
+[LaunchStudio's](https://launchstudio.eu/en/#packages) QA and testing engagements typically run alongside a Launch Ready or Launch & Grow package, priced from €800 to €7,500 depending on scope, delivered in 1-3 weeks - about 20% of what it costs to build this discipline in-house with a dedicated QA hire. [Talk to us](https://launchstudio.eu/en/#contact) before your next technical audit, not after it fails.
 
 ## Key Takeaways
 
 - Traditional software is deterministic, but AI models are non-deterministic, making strict string-matching unit tests unreliable and prone to blocking valid deployments.
-- Relying on traditional testing leads to "flaky tests" that block CI/CD pipelines, drain your API budget, and — because engineers respond by deleting or loosening tests — quietly erode your actual coverage over time.
+- Relying on traditional testing leads to "flaky tests" that block CI/CD pipelines, drain your API budget, and - because engineers respond by deleting or loosening tests - quietly erode your actual coverage over time.
 - You must transition to Property-Based Testing (checking JSON schemas), semantic "LLM-as-a-Judge" evaluation, and golden-dataset regression tracking that catches silent provider-side model changes.
 - LaunchStudio, backed by Manifera's QA engineering teams across Amsterdam, Singapore, and Ho Chi Minh City, provides the elite software engineering required to build robust, automated testing pipelines for unpredictable AI backends.
 
@@ -77,11 +77,11 @@ Desperate to pass the hospital's technical audit, he hired **LaunchStudio (by Ma
 
 Our enterprise QA engineers immediately refactored his entire testing suite. First, we implemented Structured Outputs, forcing the Claude API to return a strict JSON payload with a constrained `category` enum. We rewrote his PyTest suite to validate the JSON schema and the enum value rather than the exact text.
 
-Second, we built an LLM-as-a-Judge integration test. We used a cheap, fast model to read the AI's triage advice and score it mathematically against a rubric of medical safety guidelines, flagging anything that fell below a safety threshold for human review. Third, we assembled a golden dataset of 300 real (anonymized) triage cases with clinician-verified correct categories, and set it to re-run nightly against the live API — so a future silent model update would surface as a dashboard alert instead of a broken CI pipeline the week of a pitch.
+Second, we built an LLM-as-a-Judge integration test. We used a cheap, fast model to read the AI's triage advice and score it mathematically against a rubric of medical safety guidelines, flagging anything that fell below a safety threshold for human review. Third, we assembled a golden dataset of 300 real (anonymized) triage cases with clinician-verified correct categories, and set it to re-run nightly against the live API - so a future silent model update would surface as a dashboard alert instead of a broken CI pipeline the week of a pitch.
 
 **Result:** Aris's testing suite went from permanently broken to 100% reliable. The CI/CD pipeline flowed perfectly, regardless of minor phrasing changes from the AI, and the golden-dataset job gave him an early warning system for future model updates. He passed the hospital's technical audit with flying colors, securing a €180,000 pilot program. *"LaunchStudio taught me that you can't test AI like a calculator. They built a testing pipeline that actually understands context."*
 
-**Cost & Timeline:** €12,500 (Automated QA Pipeline Rebuild, JSON Schema Enforcement, LLM-as-a-Judge Setup) — completed in 18 business days.
+**Cost & Timeline:** €12,500 (Automated QA Pipeline Rebuild, JSON Schema Enforcement, LLM-as-a-Judge Setup) - completed in 18 business days.
 
 ---
 
@@ -89,7 +89,7 @@ Second, we built an LLM-as-a-Judge integration test. We used a cheap, fast model
 
 ### Why can't I just use `assert(output == "expected")` in AI testing?
 
-Because Large Language Models are non-deterministic — they sample from a probability distribution over tokens rather than computing a fixed result. Even asking the exact same question twice can produce different synonyms or sentence structures. A strict "equals" test will fail unpredictably, causing what engineers call a "flaky test" that blocks valid deployments.
+Because Large Language Models are non-deterministic - they sample from a probability distribution over tokens rather than computing a fixed result. Even asking the exact same question twice can produce different synonyms or sentence structures. A strict "equals" test will fail unpredictably, causing what engineers call a "flaky test" that blocks valid deployments.
 
 ### What is Property-Based Testing, applied to AI?
 
@@ -97,7 +97,7 @@ Instead of testing whether the exact words match, you test the *properties* of t
 
 ### What is "LLM-as-a-Judge," and is it reliable?
 
-It is a testing strategy where you use a second AI model — often smaller and cheaper than your production model — to evaluate the output of your main AI against a written rubric, returning a structured score rather than a simple pass/fail. It is not perfectly reliable in isolation (the judge model can itself be inconsistent), which is why production implementations pair it with schema validation and periodic human spot-checks rather than relying on it alone.
+It is a testing strategy where you use a second AI model - often smaller and cheaper than your production model - to evaluate the output of your main AI against a written rubric, returning a structured score rather than a simple pass/fail. It is not perfectly reliable in isolation (the judge model can itself be inconsistent), which is why production implementations pair it with schema validation and periodic human spot-checks rather than relying on it alone.
 
 ### How do I stop my tests from destroying my LLM API budget?
 

@@ -57,17 +57,17 @@ Een correcte herstelling beperkt omleidingsbestemmingen tot een specifieke, beke
 
 Manifera's beveiligingsbeoordelingen voor authenticatiestromen worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur de link van uw prototype door — gratis advies, geen verplichtingen](https://launchstudio.eu/nl/#contact).
+[Stuur de link van uw prototype door - gratis advies, geen verplichtingen](https://launchstudio.eu/nl/#contact).
 
 ## Andere Plekken Waar Ditzelfde Patroon van Onbeperkte Omleidingen Verschijnt
 
 Een login-omleiding die een gebruiker na authenticatie terugstuurt is de meest voorkomende plek voor een open redirect-lek, maar exact hetzelfde onderliggende ontwerppatroon duikt op meerdere andere plekken in een webapplicatie op:
 
-- **Omleidingen na accountregistratie** — vergelijkbaar met inloggen vraagt een registratiestroom vaak om een bestemming waar een nieuwe gebruiker naartoe moet worden gestuurd zodra zijn account is aangemaakt. Als die bestemming wordt geaccepteerd als een ruwe parameter in de URL, erft deze exact hetzelfde risico.
-- **Taal- of regioschakelaars** — een knop waarmee bezoekers kunnen wisselen tussen verschillende taalversies van een pagina, gebruikt vaak een omleidingsparameter om de bezoeker terug te brengen naar "dezelfde pagina" in de nieuwe taal. Als die parameter niet wordt gevalideerd tegen interne paden, kan deze worden misbruikt om verkeer elders naartoe te sturen.
-- **Uitschrijf- en notificatielinks in e-mails** — een link die beweert een abonnee uit te schrijven of voorkeuren te bevestigen, maar die in werkelijkheid omleidt via een ongecontroleerde URL-parameter, brengt exact hetzelfde gevaar met zich mee, vermomd als routinematig accountbeheer.
-- **Callbacks voor Single Sign-On (SSO) en sociale logins** — een OAuth-stroom die terugstuurt naar een URL die dynamisch in het verzoek wordt meegeleverd in plaats van naar een vooraf geregistreerde callback-whitelist, kan worden gemanipuleerd om een geldige inlogsessie te overhandigen aan een server van een kwaadwillende.
-- **"Ga verder naar"-koppelingen in transactionele e-mails** — boekingsbevestigingen, facturen en welkomstberichten bevatten vaak een knop terug naar de app. Als de bestemming van die knop wordt opgebouwd uit een ongevalideerde parameter, ontstaat een open uitvalbasis voor phishing.
+- **Omleidingen na accountregistratie** - vergelijkbaar met inloggen vraagt een registratiestroom vaak om een bestemming waar een nieuwe gebruiker naartoe moet worden gestuurd zodra zijn account is aangemaakt. Als die bestemming wordt geaccepteerd als een ruwe parameter in de URL, erft deze exact hetzelfde risico.
+- **Taal- of regioschakelaars** - een knop waarmee bezoekers kunnen wisselen tussen verschillende taalversies van een pagina, gebruikt vaak een omleidingsparameter om de bezoeker terug te brengen naar "dezelfde pagina" in de nieuwe taal. Als die parameter niet wordt gevalideerd tegen interne paden, kan deze worden misbruikt om verkeer elders naartoe te sturen.
+- **Uitschrijf- en notificatielinks in e-mails** - een link die beweert een abonnee uit te schrijven of voorkeuren te bevestigen, maar die in werkelijkheid omleidt via een ongecontroleerde URL-parameter, brengt exact hetzelfde gevaar met zich mee, vermomd als routinematig accountbeheer.
+- **Callbacks voor Single Sign-On (SSO) en sociale logins** - een OAuth-stroom die terugstuurt naar een URL die dynamisch in het verzoek wordt meegeleverd in plaats van naar een vooraf geregistreerde callback-whitelist, kan worden gemanipuleerd om een geldige inlogsessie te overhandigen aan een server van een kwaadwillende.
+- **"Ga verder naar"-koppelingen in transactionele e-mails** - boekingsbevestigingen, facturen en welkomstberichten bevatten vaak een knop terug naar de app. Als de bestemming van die knop wordt opgebouwd uit een ongevalideerde parameter, ontstaat een open uitvalbasis voor phishing.
 
 De oplossing is over al deze vijf scenario's identiek: beperk de omleidingsbestemming strikt tot een specifieke, vooraf gedefinieerde whitelist van interne relatieve paden of vertrouwde callback-domeinen, en negeer alles wat daarbuiten valt. Een beoordeling die alleen de login-omleiding repareert maar deze aanpalende routes overslaat, heeft slechts één van de vele deuren gesloten die op exact dezelfde manier door een AI-tool zijn gegenereerd.
 
@@ -82,9 +82,9 @@ Een lid meldde het ontvangen van wat eruitzag als een legitieme ClubHub-inloglin
 **Resultaat:** LaunchStudio beperkte omleidingsbestemmingen tot een geverifieerde toestemmingslijst van ClubHub's eigen interne pagina's, wat de open omleiding volledig sloot. LaunchStudio hielp Amber om getroffen clubs te informeren over de specifieke phishing-poging die het had misbruikt.
 
 > *"Het inloggen zelf was de gehele tijd compleet echt en legitiem, wat exact is wat de poging daarna zo overtuigend maakte. Niets aan onze daadwerkelijke inlogstroom was gecompromitteerd – het werd gewoon gebruikt als een lanceerplatform."*
-> — **Amber Willems, Oprichter, ClubHub (Amstelveen)**
+> - **Amber Willems, Oprichter, ClubHub (Amstelveen)**
 
-**Kosten en tijdlijn:** € 1.300 (herstel van open omleiding en implementatie van allow-lists) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (herstel van open omleiding en implementatie van allow-lists) - voltooid in 4 werkdagen.
 
 ---
 

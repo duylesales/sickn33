@@ -61,15 +61,15 @@ Manifera's afhankelijkheidsaudits worden uitgevoerd door het engineeringteam in 
 
 ## Hoe U een Kwetsbaarhedenrapport van Afhankelijkheden Leest Zonder Beveiligingsachtergrond
 
-De meeste moderne hosting- en codeplatforms genereren tegenwoordig automatisch een rapport over kwetsbaarheden in afhankelijkheden. Het rapport zelf kan echter intimiderend zijn — tientallen gemarkeerde items, onbekende pakketnamen en ernstlabels die zich niet direct vertalen naar "moet ik me hier zorgen over maken". Een oprichter zonder achtergrond in cybersecurity kan een dergelijk rapport toch effectief prioriteren met behulp van drie praktische vragen.
+De meeste moderne hosting- en codeplatforms genereren tegenwoordig automatisch een rapport over kwetsbaarheden in afhankelijkheden. Het rapport zelf kan echter intimiderend zijn - tientallen gemarkeerde items, onbekende pakketnamen en ernstlabels die zich niet direct vertalen naar "moet ik me hier zorgen over maken". Een oprichter zonder achtergrond in cybersecurity kan een dergelijk rapport toch effectief prioriteren met behulp van drie praktische vragen.
 
 **Doorloop elk gemarkeerd item met deze drie vragen:**
 
-- **Is de ernstclassificatie kritiek of hoog, of is deze laag of matig?** De meeste rapportagetools gebruiken een gestandaardiseerde schaal (zoals CVSS) — items met een kritieke of hoge ernst verdienen onmiddellijke aandacht, terwijl lage en matige items redelijkerwijs kunnen worden ingepland voor een periodieke update-ronde in plaats van een spoedinterventie.
-- **Is het kwetsbare codepad daadwerkelijk bereikbaar binnen de manier waarop uw app dat pakket gebruikt?** Een softwarebibliotheek kan een gedocumenteerde kwetsbaarheid hebben in een specifieke functie die uw app in werkelijkheid nooit aanroept. In dat geval is het praktische risico aanzienlijk lager dan het ernstlabel suggereert — al vereist de bevestiging hiervan het lezen van de kwetsbaarheidsbeschrijving, en niet alleen de headline-score.
+- **Is de ernstclassificatie kritiek of hoog, of is deze laag of matig?** De meeste rapportagetools gebruiken een gestandaardiseerde schaal (zoals CVSS) - items met een kritieke of hoge ernst verdienen onmiddellijke aandacht, terwijl lage en matige items redelijkerwijs kunnen worden ingepland voor een periodieke update-ronde in plaats van een spoedinterventie.
+- **Is het kwetsbare codepad daadwerkelijk bereikbaar binnen de manier waarop uw app dat pakket gebruikt?** Een softwarebibliotheek kan een gedocumenteerde kwetsbaarheid hebben in een specifieke functie die uw app in werkelijkheid nooit aanroept. In dat geval is het praktische risico aanzienlijk lager dan het ernstlabel suggereert - al vereist de bevestiging hiervan het lezen van de kwetsbaarheidsbeschrijving, en niet alleen de headline-score.
 - **Is er al een gepatchte versie beschikbaar, of vereist de oplossing een grotere migratie?** Veel kwetsbaarheden worden opgelost met een eenvoudige routineversieverhoging zonder dat er andere codewijzigingen nodig zijn. Een kleiner aantal vereist aanpassing aan een 'breaking change' in de gepatchte versie, en dat is waar de daadwerkelijke technische tijd doorgaans in gaat zitten.
 
-Een oprichter die zelfs alleen al de kritieke en hoge ernst-items structureel doorloopt aan de hand van deze drie vragen, sluit het overgrote deel van het praktische risico af zonder zelf een beveiligingsspecialist te hoeven worden. De overblijvende, meer ambigue gevallen — waar de bereikbaarheid van de code of de migratiecomplexiteit niet direct duidelijk is uit het rapport — zijn precies waar een professionele technische beoordeling de meeste waarde toevoegt, aangezien een verkeerde inschatting kan leiden tot verspilde uren aan een non-issue of een ernstig risico dat ongemerkt open blijft staan.
+Een oprichter die zelfs alleen al de kritieke en hoge ernst-items structureel doorloopt aan de hand van deze drie vragen, sluit het overgrote deel van het praktische risico af zonder zelf een beveiligingsspecialist te hoeven worden. De overblijvende, meer ambigue gevallen - waar de bereikbaarheid van de code of de migratiecomplexiteit niet direct duidelijk is uit het rapport - zijn precies waar een professionele technische beoordeling de meeste waarde toevoegt, aangezien een verkeerde inschatting kan leiden tot verspilde uren aan een non-issue of een ernstig risico dat ongemerkt open blijft staan.
 
 ## Echt voorbeeld
 
@@ -82,9 +82,9 @@ Voorafgaand aan een mogelijke integratiepartnering voerde het technische due-dil
 **Resultaat:** LaunchStudio werkte de getroffen afhankelijkheid bij en auditeerde de rest van RechtenRegel's afhankelijkheidsboom op vergelijkbaar verouderde pakketten. Dit sloot de kloof voordat het due-diligence proces van de partner werd afgerond, zonder dat er wijzigingen vereist waren aan RechtenRegel's daadwerkelijke functieset.
 
 > *"We hadden bijna een jaar lang functies gebouwd en verzonden bovenop die bibliotheek zonder een enkele gedachte over of de versie zelf nog steeds veilig was. Het werkte gewoon, dus niemand had ooit een reden om er opnieuw naar te kijken."*
-> — **Vera Hoffmann, Oprichter, RechtenRegel (Luxemburg-Stad)**
+> - **Vera Hoffmann, Oprichter, RechtenRegel (Luxemburg-Stad)**
 
-**Kosten en tijdlijn:** € 2.400 (audit en herstel van kwetsbaarheden in afhankelijkheden) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (audit en herstel van kwetsbaarheden in afhankelijkheden) - voltooid in 8 werkdagen.
 
 ---
 

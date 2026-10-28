@@ -1,4 +1,4 @@
-🔥 Maya built a prototype using **Bolt** — maya, a legal compliance lead, used **bolt** to build a case predictor, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Maya built a prototype using **Bolt** - maya, a legal compliance lead, used **bolt** to build a case predictor, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Maya's application achieved silky-smooth performance: Enterprise security approvals succeeded, unlocking pilot deals worth €60,000. (€3,200 (Client-side Inference Package) — production-ready and deployed in 7 business days.). 🚀
+Maya's application achieved silky-smooth performance: Enterprise security approvals succeeded, unlocking pilot deals worth €60,000. (€3,200 (Client-side Inference Package) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/trojan-horse-sales-strategy-b2b-ai
 

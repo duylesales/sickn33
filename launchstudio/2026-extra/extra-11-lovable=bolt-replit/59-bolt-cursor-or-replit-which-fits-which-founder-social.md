@@ -1,4 +1,4 @@
-🚨 Lotte Gerritsen spent five months trying to build Klantboek, a client-record tool for 14 therapists around Utrecht. She bounced between Bolt, Cursor, and Replit based on social media hype — restarting her codebase three times from scratch without ever launching or validating her product with a single paying customer. 😳
+🚨 Lotte Gerritsen spent five months trying to build Klantboek, a client-record tool for 14 therapists around Utrecht. She bounced between Bolt, Cursor, and Replit based on social media hype - restarting her codebase three times from scratch without ever launching or validating her product with a single paying customer. 😳
 
 Tool-hopping is the most common form of founder procrastination. Here's which AI tool actually fits your technical profile: 🧠
 
@@ -12,7 +12,7 @@ Tool-hopping is the most common form of founder procrastination. Here's which AI
 ✅ Solo educators & learners: Choose Replit for instant container sandboxes and multi-file interactive prototypes
 ✅ Commit to ONE tool for the MVP, then partner with LaunchStudio to engineer the production hardening layer
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we harden software built in Bolt, Cursor, Lovable, or Replit — taking any AI prototype to production without rewrites. 🧭
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we harden software built in Bolt, Cursor, Lovable, or Replit - taking any AI prototype to production without rewrites. 🧭
 
 Her result: Lotte Gerritsen committed to a single stack and completed production hardening with LaunchStudio in 8 business days for €3,200 (access rules, data classification, hosting, backups, monitoring). Klantboek launched with 14 therapists 11 weeks later, and Lotte has comfortably added four new features herself in Lovable since. 🚀
 

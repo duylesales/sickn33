@@ -51,7 +51,7 @@ The clearest difference is not technical difficulty but what the work is for.
 
 **In the public sector**, data work serves a statutory task or a policy goal: keeping infrastructure safe, producing official statistics, allocating inspection capacity, planning housing or mobility, managing water. Success is harder to quantify, the feedback loop is longer, and the definition of a good outcome is contested by more parties.
 
-Neither is inherently more sophisticated. Public organisations work with some of the largest and most complex datasets in the country, and with constraints that force methodological care. What differs is that in the public sector, being right is not enough — the reasoning must also be explainable and defensible to people who did not choose to be affected by it.
+Neither is inherently more sophisticated. Public organisations work with some of the largest and most complex datasets in the country, and with constraints that force methodological care. What differs is that in the public sector, being right is not enough - the reasoning must also be explainable and defensible to people who did not choose to be affected by it.
 
 ## The Accountability Difference
 
@@ -74,7 +74,7 @@ Practically, this means a model may take longer to reach production, may be reje
 | Flexibility | Often good, with established part-time culture | Varies |
 | Screening | Certificate of Conduct common; clearance for some roles | Less common |
 
-The published scales are worth emphasising. You can see before applying what a role pays and how it progresses, which is unusual and useful — and under the EU Pay Transparency Directive this kind of visibility is becoming standard everywhere.
+The published scales are worth emphasising. You can see before applying what a role pays and how it progresses, which is unusual and useful - and under the EU Pay Transparency Directive this kind of visibility is becoming standard everywhere.
 
 ## What Each Sector Teaches You
 
@@ -82,7 +82,7 @@ The published scales are worth emphasising. You can see before applying what a r
 
 **The public sector teaches rigour and accountability.** Documenting decisions, assessing impact on people, working with legal and privacy colleagues, explaining methods to non-specialists and defending choices that will be scrutinised.
 
-Both are valuable, and the second is becoming more valuable in the first. As AI Act obligations spread through regulated industries, private employers increasingly want people who know how to document a model, assess bias and design human oversight — precisely the skills public sector work develops.
+Both are valuable, and the second is becoming more valuable in the first. As AI Act obligations spread through regulated industries, private employers increasingly want people who know how to document a model, assess bias and design human oversight - precisely the skills public sector work develops.
 
 ## Who Tends to Be Happier Where
 
@@ -106,7 +106,7 @@ Both are valuable, and the second is becoming more valuable in the first. As AI 
 
 ## The Career Question People Ask
 
-Does public sector experience make it harder to move back to commercial work? Historically, some hiring managers held that assumption. It is weakening, for a specific reason: the skills that public organisations develop — documentation, impact assessment, working under legal constraints, explaining models to non-technical stakeholders — are now demanded by AI Act obligations in banking, insurance, healthcare and manufacturing.
+Does public sector experience make it harder to move back to commercial work? Historically, some hiring managers held that assumption. It is weakening, for a specific reason: the skills that public organisations develop - documentation, impact assessment, working under legal constraints, explaining models to non-technical stakeholders - are now demanded by AI Act obligations in banking, insurance, healthcare and manufacturing.
 
 The risk that remains is technical currency. If a public role keeps you on older tooling with no production work for several years, that gap is real and worth managing deliberately: push for production experience, keep engineering practice sharp, and treat modern tooling as something you maintain rather than something the job provides.
 
@@ -122,7 +122,7 @@ Between "government" and "company" sits a large set of Dutch employers that beha
 
 **Universities, university medical centres and research institutes** combine academic freedom with public accountability, and offer the clearest route into research-adjacent data work outside companies.
 
-**Consultancies and engineering firms serving public clients** let you work on public problems while employed commercially — useful for testing whether the domain appeals before committing to it.
+**Consultancies and engineering firms serving public clients** let you work on public problems while employed commercially - useful for testing whether the domain appeals before committing to it.
 
 For candidates who want societal relevance without central government pay scales, or public-sector rigour without its pace, this middle ground deserves as much attention as the two extremes. It is also where a great deal of the interesting regional data work in the Netherlands actually sits.
 
@@ -136,7 +136,7 @@ She joins a national executive agency. The first six months are an adjustment: d
 
 Three years later she moves again, to an insurer building out model governance for AI Act compliance. They hire her not for her modelling but for the assessment and documentation experience, at a salary above what she earned in either previous role.
 
-She describes the public sector years as the part of her career that made her employable in the part that pays best — which was not the plan when she took the job.
+She describes the public sector years as the part of her career that made her employable in the part that pays best - which was not the plan when she took the job.
 
 ## Moving Between the Two
 
@@ -144,7 +144,7 @@ Neither choice is permanent, and the transitions have recognisable patterns wort
 
 **Private to public** is usually straightforward. Public organisations value commercial pace and delivery experience, and candidates arriving from companies are often surprised by how welcome that perspective is. The adjustment is to accountability: expect a project to be slowed by a privacy or human rights assessment, and expect that to be treated as normal rather than as an obstacle. Interviews focus on whether you can work with legal and policy colleagues without visible impatience.
 
-**Public to private** is easier than it used to be. The skills that public work develops — documentation, impact assessment, working under legal constraints, explaining models to non-specialists — now map directly onto AI Act obligations in regulated industries. The predictable interview question is about pace: be ready with an example of something you delivered quickly, not only carefully.
+**Public to private** is easier than it used to be. The skills that public work develops - documentation, impact assessment, working under legal constraints, explaining models to non-specialists - now map directly onto AI Act obligations in regulated industries. The predictable interview question is about pace: be ready with an example of something you delivered quickly, not only carefully.
 
 **The risk to manage in both directions is technical currency.** Long tenures in organisations with older tooling and little production work create a gap that is real. Whichever sector you are in, keeping one thing in production and your engineering practice sharp is what keeps the other door open.
 
@@ -160,14 +160,14 @@ Neither choice is permanent, and the transitions have recognisable patterns wort
 
 ## Where to Start
 
-Look at what both sectors offer within your travel radius before deciding in the abstract — many candidates discover that the nearest interesting employer is a water board, a hospital or a national institute rather than a company.
+Look at what both sectors offer within your travel radius before deciding in the abstract - many candidates discover that the nearest interesting employer is a water board, a hospital or a national institute rather than a company.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate comparing offers) Is public sector data work less technically challenging?
-No — public organisations handle very large, complex datasets under strict methodological and legal constraints. What differs is the pace and the level of documentation required.
+No - public organisations handle very large, complex datasets under strict methodological and legal constraints. What differs is the pace and the level of documentation required.
 
 ### (Scenario: candidate concerned about salary) How much less does the public sector pay?
 Salaries follow published scales in collective agreements and are usually lower for senior technical roles, though pension, security, hours and development budgets often compensate partially.
@@ -186,9 +186,9 @@ It is typically committee-based and structured around the vacancy requirements, 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is public sector data work less technically challenging?", "acceptedAnswer": {"@type": "Answer", "text": "No — large complex datasets under strict constraints; the pace and documentation differ."}},
+    {"@type": "Question", "name": "Is public sector data work less technically challenging?", "acceptedAnswer": {"@type": "Answer", "text": "No - large complex datasets under strict constraints; the pace and documentation differ."}},
     {"@type": "Question", "name": "How much less does the public sector pay?", "acceptedAnswer": {"@type": "Answer", "text": "Published scales are usually lower for senior technical roles, partly offset by pension and conditions."}},
-    {"@type": "Question", "name": "Can I work in the Dutch public sector without Dutch?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — Dutch is a genuine requirement for most roles."}},
+    {"@type": "Question", "name": "Can I work in the Dutch public sector without Dutch?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - Dutch is a genuine requirement for most roles."}},
     {"@type": "Question", "name": "Does public sector experience limit later commercial options?", "acceptedAnswer": {"@type": "Answer", "text": "Less than it once did, as governance skills are in demand under the AI Act."}},
     {"@type": "Question", "name": "How is the application process different?", "acceptedAnswer": {"@type": "Answer", "text": "Committee-based, structured around vacancy requirements and slower."}}
   ]

@@ -52,7 +52,7 @@ This team is a cross-functional "Pod." It contains a Product Manager, a Frontend
 
 If the Frontend Developer needs a new database column for the checkout page, they don't submit a ticket to a separate department. They turn around and ask the Backend Developer in their pod to build it. The communication loop drops from three weeks to three minutes. Because the team is unified around a business domain, the software they produce is unified and seamless for the customer.
 
-> *"When the architecture of the system is designed to enable teams to test, deploy, and change systems without dependencies on other teams, teams require little communication to get work done."* — DORA, dora.dev ("Loosely Coupled Teams" capability, Google Cloud's DevOps Research and Assessment program)
+> *"When the architecture of the system is designed to enable teams to test, deploy, and change systems without dependencies on other teams, teams require little communication to get work done."* - DORA, dora.dev ("Loosely Coupled Teams" capability, Google Cloud's DevOps Research and Assessment program)
 
 DORA's research is the inverse of Conway's Law applied on purpose: if you want a seamless, independently-shippable product, you design a seamless, independently-shippable organization to match it, rather than hoping a fragmented one produces unified software by accident.
 
@@ -73,15 +73,15 @@ Companies that skip step 1 and jump straight to hiring "microservices developers
 
 ## The Coordination Tax: A Worked Example
 
-Take the logistics company from the opening scenario and model out one ordinary feature request: adding an "estimated delivery window" field to the customer tracking page. It touches four things — a frontend field, a backend API change, a new database column, and a security review to confirm no personal data is exposed.
+Take the logistics company from the opening scenario and model out one ordinary feature request: adding an "estimated delivery window" field to the customer tracking page. It touches four things - a frontend field, a backend API change, a new database column, and a security review to confirm no personal data is exposed.
 
 **In the siloed IT Department**, that single field has to cross four separate queues. The Frontend Team files a ticket with the Database Team and waits for it to reach the top of a shared backlog (often 1-2 weeks). Once the column exists, the Backend Team schedules the API change against its own sprint (another 1-2 weeks). Then the Security Team performs its review on its own cadence (often a fixed weekly slot). Even though the actual coding involved is measured in hours, the calendar time to ship the field routinely stretches to 4-6 weeks, because each handoff waits on someone else's queue rather than someone else's desk.
 
-**In the cross-functional pod**, the same four skills sit in one stand-up. The database column, API change, frontend field, and security check happen inside a single sprint, often within 2-3 days, because there is no queue to wait in — only a conversation to have.
+**In the cross-functional pod**, the same four skills sit in one stand-up. The database column, API change, frontend field, and security check happen inside a single sprint, often within 2-3 days, because there is no queue to wait in - only a conversation to have.
 
-This pattern is exactly what DORA's own performance benchmarks measure at the industry level: DORA's research classifies "Elite" performing teams as those with a lead time for changes of less than one day, while "Low" performing teams — typically the ones still organized around functional silos — take between one month and six months to ship a comparable change. The four-week gap between the siloed logistics company's tracking-page fix and the cross-functional pod's version of the same fix isn't a one-off anecdote; it's the exact pattern DORA's research has documented across thousands of organizations, year after year.
+This pattern is exactly what DORA's own performance benchmarks measure at the industry level: DORA's research classifies "Elite" performing teams as those with a lead time for changes of less than one day, while "Low" performing teams - typically the ones still organized around functional silos - take between one month and six months to ship a comparable change. The four-week gap between the siloed logistics company's tracking-page fix and the cross-functional pod's version of the same fix isn't a one-off anecdote; it's the exact pattern DORA's research has documented across thousands of organizations, year after year.
 
-Multiply that coordination tax across a normal annual roadmap of 40-60 similar features, and a siloed IT Department doesn't just ship slower — it effectively loses several engineer-months a year to nothing but waiting in queues.
+Multiply that coordination tax across a normal annual roadmap of 40-60 similar features, and a siloed IT Department doesn't just ship slower - it effectively loses several engineer-months a year to nothing but waiting in queues.
 
 ## The Manifera Pod Methodology
 

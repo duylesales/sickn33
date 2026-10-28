@@ -71,7 +71,7 @@ A catalogue of the failures that generate most machine learning pages, roughly i
 
 **Serving problems.** Latency spikes under load, memory exhaustion, a model artefact that fails to load after a deployment, version mismatches between training and serving code.
 
-**Distribution shift.** Real change in the world — a new product line, a seasonal transition, a pandemic, a competitor's promotion — which is not a bug but requires a response.
+**Distribution shift.** Real change in the world - a new product line, a seasonal transition, a pandemic, a competitor's promotion - which is not a bug but requires a response.
 
 **Feedback loops.** The model's own outputs change behaviour, which changes the data, which changes the model. Recommendation and pricing systems are particularly prone.
 
@@ -89,7 +89,7 @@ Good monitoring for machine learning systems has four layers, and most teams imp
 
 **Inputs.** This is the layer that catches the incidents that matter. Track the distribution of every important feature against a recent baseline: means, quantiles, null rates, category frequencies and the appearance of unseen categories. Alert on meaningful deviation.
 
-**Outputs and outcomes.** Prediction distribution, rate of extreme values, and — where outcomes eventually arrive — realised accuracy by segment over time.
+**Outputs and outcomes.** Prediction distribution, rate of extreme values, and - where outcomes eventually arrive - realised accuracy by segment over time.
 
 Add business-level checks, which are often the most sensitive of all: total predicted demand, aggregate price change, number of items flagged, share of cases routed to human review. These catch compound errors that no single technical check would notice.
 
@@ -135,7 +135,7 @@ On-call is rarely raised by employers and is entirely reasonable for you to rais
 - Are there runbooks, and can I see an example?
 - What is the escalation path at two in the morning?
 - How is standby compensated, and is there time off after a night call-out?
-- What happens after an incident — is there a review, and do fixes get prioritised?
+- What happens after an incident - is there a review, and do fixes get prioritised?
 - What proportion of alerts require action?
 
 The answers are diagnostic beyond on-call itself. A team that can answer precisely has an operational culture; a team that says "it's fine, nothing ever happens" either has nothing in production or is not measuring.
@@ -194,7 +194,7 @@ A pricing model at a European retailer ran nightly. One Sunday, a supplier's fee
 
 The pipeline did not fail. Types were compatible, the load succeeded and the model produced prices from nonsense inputs. The first indication was a store manager questioning a price on Monday afternoon.
 
-The on-call engineer was paged at that point — eighteen hours after the incident began. Prices had to be reverted manually, and the day was spent on assessment rather than diagnosis.
+The on-call engineer was paged at that point - eighteen hours after the incident began. Prices had to be reverted manually, and the day was spent on assessment rather than diagnosis.
 
 The changes that followed were unglamorous and effective: schema validation on ingestion that rejected unexpected structure, a check comparing the distribution of each input feature against the previous seven days, a rule that flagged when output prices moved more than a set amount in aggregate, and an automatic fallback to the previous day's prices when validation failed.
 

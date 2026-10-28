@@ -1,6 +1,6 @@
-🚨 Oliver, hoofd klantenservice, bouwde een ticket-router met **Bolt** — maar de zware LangChain-afhankelijkheid veroorzaakte trage responstijden en maakte debugging op serverless routes vrijwel onmogelijk. 🐌
+🚨 Oliver, hoofd klantenservice, bouwde een ticket-router met **Bolt** - maar de zware LangChain-afhankelijkheid veroorzaakte trage responstijden en maakte debugging op serverless routes vrijwel onmogelijk. 🐌
 
-Wanneer een framework de exacte prompt verbergt die naar uw model wordt gestuurd, verliest u de controle over de kern van uw applicatie — en betaalt u voor verborgen tokens die u nooit ziet. 🧠
+Wanneer een framework de exacte prompt verbergt die naar uw model wordt gestuurd, verliest u de controle over de kern van uw applicatie - en betaalt u voor verborgen tokens die u nooit ziet. 🧠
 
 ❌ Verborgen systeemprompts rond elke aanroep, waardoor hallucinaties onmogelijk te traceren zijn
 ❌ Onzichtbare "thought loop" sub-queries die uw OpenAI API-rekening stilletjes verdubbelen
@@ -12,7 +12,7 @@ Wanneer een framework de exacte prompt verbergt die naar uw model wordt gestuurd
 
 Bij **LaunchStudio** ontwerpen we sinds 2014 slanke, enterprise AI-architecturen via Manifera, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. 🛡️
 
-Olivers API-responsgrootte daalde met 60% en de onderhoudbaarheid van de code verbeterde aanzienlijk. (€1.800 (Framework Migration Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Olivers API-responsgrootte daalde met 60% en de onderhoudbaarheid van de code verbeterde aanzienlijk. (€1.800 (Framework Migration Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek waarom minder abstractie leidt tot betere AI-software: https://launchstudio.eu/nl/blog/why-langchain-is-too-heavy-for-production
 

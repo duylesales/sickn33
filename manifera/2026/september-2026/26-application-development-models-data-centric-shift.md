@@ -45,7 +45,7 @@ If the CEO asks about Q3 revenue and the AI lies, a Data-Centric team does not t
 
 The team fixes the ETL (Extract, Transform, Load) data pipeline, re-ingests the clean PDF, and the AI instantly answers correctly. 
 
-This is not a fringe opinion invented by agencies trying to sell Data Engineering services. It is the position of one of the field's most credentialed researchers. Andrew Ng — co-founder of Google Brain and Coursera, former Chief Scientist at Baidu — has spent the past several years publicly campaigning for exactly this shift. As he put it in an interview with IEEE Spectrum: "In many industries where giant data sets simply don't exist, I think the focus has to shift from big data to good data." His argument is that once a model architecture is good enough (which, for most business applications, today's foundation models already are), the highest-leverage work left is systematically improving the data the model learns from and retrieves against — not endlessly re-tuning the model itself.
+This is not a fringe opinion invented by agencies trying to sell Data Engineering services. It is the position of one of the field's most credentialed researchers. Andrew Ng - co-founder of Google Brain and Coursera, former Chief Scientist at Baidu - has spent the past several years publicly campaigning for exactly this shift. As he put it in an interview with IEEE Spectrum: "In many industries where giant data sets simply don't exist, I think the focus has to shift from big data to good data." His argument is that once a model architecture is good enough (which, for most business applications, today's foundation models already are), the highest-leverage work left is systematically improving the data the model learns from and retrieves against - not endlessly re-tuning the model itself.
 
 ## Adapting Your Development Model for AI
 
@@ -69,7 +69,7 @@ Mature AI teams adopt tools like DVC (Data Version Control) or lakeFS to apply G
 
 ## The DORA Evidence: Why "Move Fast" Alone Backfires on AI Teams
 
-Google Cloud's DORA (DevOps Research and Assessment) team publishes the industry's most rigorously sampled annual survey of software delivery performance, drawing on responses from thousands of technology professionals worldwide. The 2025 State of AI-Assisted Software Development report found that AI tool adoption among software professionals has reached roughly 90%, and adoption is now positively linked to higher software delivery throughput. But the same report surfaces a warning that maps directly onto the Model-Centric failure mode described above: AI adoption also continues to correlate with lower software delivery **stability** — more change failures, more rework, and longer time to resolve issues — unless teams pair it with strong underlying engineering practices. DORA's own framing is that "AI doesn't fix a team; it amplifies what's already there." A team without disciplined data practices does not become disciplined because it added an LLM; it becomes faster at shipping the same undiagnosed problems.
+Google Cloud's DORA (DevOps Research and Assessment) team publishes the industry's most rigorously sampled annual survey of software delivery performance, drawing on responses from thousands of technology professionals worldwide. The 2025 State of AI-Assisted Software Development report found that AI tool adoption among software professionals has reached roughly 90%, and adoption is now positively linked to higher software delivery throughput. But the same report surfaces a warning that maps directly onto the Model-Centric failure mode described above: AI adoption also continues to correlate with lower software delivery **stability** - more change failures, more rework, and longer time to resolve issues - unless teams pair it with strong underlying engineering practices. DORA's own framing is that "AI doesn't fix a team; it amplifies what's already there." A team without disciplined data practices does not become disciplined because it added an LLM; it becomes faster at shipping the same undiagnosed problems.
 
 This is exactly why a Data-Centric application development model has to include Continuous Evaluation and dataset versioning as first-class engineering practices, not optional polish. Speed without a feedback loop that catches data regressions just means you ship broken AI behavior faster.
 
@@ -178,7 +178,7 @@ When building web apps, we focus heavily on code architecture and frontend compo
       "name": "How does Manifera's development process differ when building AI vs. Web Apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For AI, our Dutch Architects enforce a Data-Centric MLOps process. We prioritize Data Engineering—building rigorous ETL pipelines to clean your proprietary data—because we know clean data is the only cure for AI hallucinations."
+        "text": "For AI, our Dutch Architects enforce a Data-Centric MLOps process. We prioritize Data Engineering - building rigorous ETL pipelines to clean your proprietary data - because we know clean data is the only cure for AI hallucinations."
       }
     }
   ]

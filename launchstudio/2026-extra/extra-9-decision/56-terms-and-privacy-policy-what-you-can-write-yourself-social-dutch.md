@@ -1,6 +1,6 @@
 🚨 Drie kwartier staren naar een leeg sjabloon voor Algemene Voorwaarden: wissen, kopiëren van een concurrent of duizenden euro's betalen voor een document dat niemand leest? Alle drie de opties voelen verkeerd. 😳
 
-De waarheid ligt er genuanceerd tussenin — het overgrote deel kunt u prima zelf opstellen, maar een aantal cruciale clausules vraagt om gerichte expertise: 🧠
+De waarheid ligt er genuanceerd tussenin - het overgrote deel kunt u prima zelf opstellen, maar een aantal cruciale clausules vraagt om gerichte expertise: 🧠
 
 ❌ Een privacyverklaring kopiëren van een template die een totaal ander product beschrijft
 ❌ Een aansprakelijkheidsclausule zelf verzinnen die door rechters direct ongeldig wordt verklaard

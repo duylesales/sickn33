@@ -1,4 +1,4 @@
-🚨 "AI Consumption Forecasting Can Simply Replace an Engineer's Load-Planning Jud..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Consumption Forecasting Can Simply Replace an Engineer's Load-Planning Jud..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Consumption Forecasting Can Simply Replace an Eng...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

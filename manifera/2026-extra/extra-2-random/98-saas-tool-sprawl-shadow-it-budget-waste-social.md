@@ -6,7 +6,7 @@
 ❌ **Shadow IT Security Gap:** Tools that never went through a security review, possibly holding data nobody in IT knows exists.
 
 **The Manifera Solution:**
-✅ **Comprehensive, Verified Inventory:** Expense reports, card statements, SSO logs — the full picture, not just what people remember.
+✅ **Comprehensive, Verified Inventory:** Expense reports, card statements, SSO logs - the full picture, not just what people remember.
 ✅ **Usage-Based Decisions:** Distinguishing actively used tools from forgotten subscriptions.
 ✅ **Ongoing Procurement Governance:** Sprawl doesn't quietly rebuild itself after the cleanup.
 

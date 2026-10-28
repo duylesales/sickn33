@@ -1,4 +1,4 @@
-🚨 Hidde Kwakernaak built Ritmeester with Bolt — stable management for six equestrian centres in Gelderland and Utrecht: horses, owners, stalls, feeding, vet appointments and invoicing. He asked the tool to add a database screen by screen. After three weeks: 19 tables. 😳
+🚨 Hidde Kwakernaak built Ritmeester with Bolt - stable management for six equestrian centres in Gelderland and Utrecht: horses, owners, stalls, feeding, vet appointments and invoicing. He asked the tool to add a database screen by screen. After three weeks: 19 tables. 😳
 
 Horses lived in two tables, owner details in three with different values. No foreign keys, no row-level security. When the second centre started using it, their horses appeared in the first centre's stall list. Here's how to wire data into a Bolt prototype: 🧠
 

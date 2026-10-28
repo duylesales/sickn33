@@ -70,7 +70,7 @@ Connor werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 
 **Resultaat:** Connor heeft meer dan 100 Europese bedrijven aan boord geholpen zonder ook maar één fout in de factureringsconfiguratie.
 
-**Kosten en tijdlijn:** € 1.600 (SaaS Tax Integration Package) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (SaaS Tax Integration Package) - klaar voor productie en geïmplementeerd binnen 5 werkdagen.
 
 ---
 

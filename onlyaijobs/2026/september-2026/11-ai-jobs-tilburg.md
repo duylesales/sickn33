@@ -33,13 +33,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Tilburg rarely appears on a list of "Dutch tech cities," and yet for years the city has been home to a university with a strong data science department and one of the largest logistics hubs in the country. That combination produces an AI job market that looks little like what you see in Amsterdam or Utrecht — and is therefore easily overlooked.
+Tilburg rarely appears on a list of "Dutch tech cities," and yet for years the city has been home to a university with a strong data science department and one of the largest logistics hubs in the country. That combination produces an AI job market that looks little like what you see in Amsterdam or Utrecht - and is therefore easily overlooked.
 
 ## Two Worlds That Rarely Overlap in Job Ads
 
-The university side produces researchers and graduates used to methodological rigour — statistics, causal inference, text and language analysis. The logistics side needs applied models that make a truck run more efficiently today: demand forecasting, route optimisation, inventory management at scale.
+The university side produces researchers and graduates used to methodological rigour - statistics, causal inference, text and language analysis. The logistics side needs applied models that make a truck run more efficiently today: demand forecasting, route optimisation, inventory management at scale.
 
-A vacancy at a logistics company rarely mentions "machine learning" explicitly — more often "supply chain analyst" or "planning & optimisation." If you only search for AI keywords, you miss exactly the part of the Tilburg market that is largest.
+A vacancy at a logistics company rarely mentions "machine learning" explicitly - more often "supply chain analyst" or "planning & optimisation." If you only search for AI keywords, you miss exactly the part of the Tilburg market that is largest.
 
 ## What This Means for Your Search Strategy
 
@@ -51,9 +51,9 @@ A vacancy at a logistics company rarely mentions "machine learning" explicitly �
 
 ## The Two Employer Profiles Side by Side
 
-**The university side** delivers researchers and recent graduates with a strong methodological foundation — causal inference, text analysis, experimental design. These people often end up at spin-offs, research groups, or the small but growing group of companies that hire statistically trained people for applied work.
+**The university side** delivers researchers and recent graduates with a strong methodological foundation - causal inference, text analysis, experimental design. These people often end up at spin-offs, research groups, or the small but growing group of companies that hire statistically trained people for applied work.
 
-**The logistics side** has a different need: people who can build a forecasting model that has to run in a planning system tomorrow, with all the rough edges of real operational data — cancellations, delays, seasonal effects — that an academic dataset rarely contains.
+**The logistics side** has a different need: people who can build a forecasting model that has to run in a planning system tomorrow, with all the rough edges of real operational data - cancellations, delays, seasonal effects - that an academic dataset rarely contains.
 
 ## Table: Where the Two Segments Concretely Differ
 
@@ -67,21 +67,21 @@ A vacancy at a logistics company rarely mentions "machine learning" explicitly �
 
 ## Why These Two Segments Rarely Point to Each Other
 
-A student who enters through the university route rarely hears that the logistics sector in the same city demands a comparable level of statistical thinking — just applied to a different kind of problem. Conversely, a planner at a logistics company rarely knows that the nearby university produces people who can do exactly the kind of modelling their own team needs. These two worlds literally exist side by side in the same city, with little mutual visibility — an opportunity for anyone willing to look outside their own circle.
+A student who enters through the university route rarely hears that the logistics sector in the same city demands a comparable level of statistical thinking - just applied to a different kind of problem. Conversely, a planner at a logistics company rarely knows that the nearby university produces people who can do exactly the kind of modelling their own team needs. These two worlds literally exist side by side in the same city, with little mutual visibility - an opportunity for anyone willing to look outside their own circle.
 
 ## A Concrete Scenario: What a Logistics Modelling Project Looks Like in Practice
 
-Imagine a large distribution centre in the Tilburg region that wants to better predict how many staff are needed per shift, based on historical order patterns, weather conditions and seasonal effects. This project rarely starts in a data science department — it starts with an operations manager who notices that staff planning goes wrong too often, and who then asks someone with analytical skills to help. The person who takes on this project does not work in isolation on a modelling exercise; they work closely with the people who carry out the planning every day, and success is measured not in model accuracy alone, but in how much better the planning becomes in practice.
+Imagine a large distribution centre in the Tilburg region that wants to better predict how many staff are needed per shift, based on historical order patterns, weather conditions and seasonal effects. This project rarely starts in a data science department - it starts with an operations manager who notices that staff planning goes wrong too often, and who then asks someone with analytical skills to help. The person who takes on this project does not work in isolation on a modelling exercise; they work closely with the people who carry out the planning every day, and success is measured not in model accuracy alone, but in how much better the planning becomes in practice.
 
 This example illustrates why "logistics modelling work" in Tilburg feels so different from a comparable project at a tech company: the feedback loop is direct and operational, not abstract and metric-based.
 
 ## A Common Misconception Corrected
 
-A frequently heard assumption is that working in the logistics sector produces "less interesting" technical work than at a tech company, because the sector itself is not seen as innovative. This misconception ignores the actual complexity of logistics forecasting models: combining several uncertain variables (weather, season, human behaviour) into a usable, operational forecast is just as technically demanding a problem as many consumer AI applications — it is simply less visible in the media.
+A frequently heard assumption is that working in the logistics sector produces "less interesting" technical work than at a tech company, because the sector itself is not seen as innovative. This misconception ignores the actual complexity of logistics forecasting models: combining several uncertain variables (weather, season, human behaviour) into a usable, operational forecast is just as technically demanding a problem as many consumer AI applications - it is simply less visible in the media.
 
 ## What This Means for Your Career in the Longer Term
 
-Gaining experience with applied, operational modelling work in the logistics sector builds skills that are widely applicable — the ability to build a model that is actually used in an operational context, not just in a demo environment, is a distinguishing skill that many candidates with a purely academic background lack. For anyone who later wants to grow into a broader role in operations or supply chain strategy, this combination of technical and operational knowledge is a valuable foundation that few other routes offer.
+Gaining experience with applied, operational modelling work in the logistics sector builds skills that are widely applicable - the ability to build a model that is actually used in an operational context, not just in a demo environment, is a distinguishing skill that many candidates with a purely academic background lack. For anyone who later wants to grow into a broader role in operations or supply chain strategy, this combination of technical and operational knowledge is a valuable foundation that few other routes offer.
 
 ## What This Means for How You Build Your CV and Cover Letter
 
@@ -89,13 +89,13 @@ An application for the logistics side of this market deserves a different emphas
 
 ## Why This Is One of the Few Dutch Cities With This Specific Combination
 
-Most Dutch cities discussed in this series have a clear predominance of either research-related work or applied industrial work, rarely a strong presence of both within the same city. Tilburg's combination of an established university tradition in data science and statistics, right next to one of the largest logistics hubs in the country, is a relatively rare combination that gives a candidate the opportunity to move between both worlds over a career without ever having to relocate — a flexibility worth considering, even for those who currently have a clear preference for one of the two.
+Most Dutch cities discussed in this series have a clear predominance of either research-related work or applied industrial work, rarely a strong presence of both within the same city. Tilburg's combination of an established university tradition in data science and statistics, right next to one of the largest logistics hubs in the country, is a relatively rare combination that gives a candidate the opportunity to move between both worlds over a career without ever having to relocate - a flexibility worth considering, even for those who currently have a clear preference for one of the two.
 
 ## The Knowledge Institutions by Name
 
 "A university with a strong data science tradition" becomes more concrete once you know which parts are relevant for AI work.
 
-**Tilburg University.** The university has traditionally been strong in economics, econometrics, social sciences and law, and that foundation colours the data work that emerges here. Within the Tilburg School of Humanities and Digital Sciences sits the Department of Cognitive Science & Artificial Intelligence, with research into language technology, computational linguistics and human-machine interaction, among other areas. The Tilburg School of Economics and Management produces econometricians and operations researchers — exactly the profile logistics planning calls for.
+**Tilburg University.** The university has traditionally been strong in economics, econometrics, social sciences and law, and that foundation colours the data work that emerges here. Within the Tilburg School of Humanities and Digital Sciences sits the Department of Cognitive Science & Artificial Intelligence, with research into language technology, computational linguistics and human-machine interaction, among other areas. The Tilburg School of Economics and Management produces econometricians and operations researchers - exactly the profile logistics planning calls for.
 
 **Tilburg Institute for Law, Technology, and Society (TILT).** One of the better-known European research institutes at the intersection of law and technology, with work on privacy, data regulation and AI governance. For anyone combining AI work with compliance, TILT's presence is another reason to take Tilburg seriously.
 
@@ -125,7 +125,7 @@ The logistics side of Tilburg's labour market is not an abstract "sector," but a
 
 ## Tilburg as a Base: The Commuting Radius
 
-Tilburg lies at the centre of Brabant. By train you are about fifteen minutes from Breda or 's-Hertogenbosch, around twenty to twenty-five minutes from Eindhoven, and with one change just over three quarters of an hour from Utrecht. For a hybrid role with two office days, almost the entire Brabant AI labour market is within reach. Always check current journey times in the NS journey planner, but the pattern is clear: if you live in Tilburg, you don't have to choose between research, logistics or high-tech — they are all within an hour.
+Tilburg lies at the centre of Brabant. By train you are about fifteen minutes from Breda or 's-Hertogenbosch, around twenty to twenty-five minutes from Eindhoven, and with one change just over three quarters of an hour from Utrecht. For a hybrid role with two office days, almost the entire Brabant AI labour market is within reach. Always check current journey times in the NS journey planner, but the pattern is clear: if you live in Tilburg, you don't have to choose between research, logistics or high-tech - they are all within an hour.
 
 ## Search Terms for Logistics Data Roles Around Tilburg
 
@@ -141,7 +141,7 @@ Besides "data scientist" and "machine learning," also search for terms such as *
 
 ## Where to Start
 
-If you come from a data science or statistics programme and think you can only find "real" AI work in the Randstad, Tilburg is worth checking — precisely because there is less competition for exactly the kind of applied modelling work a logistics company needs.
+If you come from a data science or statistics programme and think you can only find "real" AI work in the Randstad, Tilburg is worth checking - precisely because there is less competition for exactly the kind of applied modelling work a logistics company needs.
 
 Browse current AI, machine learning and data vacancies in and around Tilburg at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

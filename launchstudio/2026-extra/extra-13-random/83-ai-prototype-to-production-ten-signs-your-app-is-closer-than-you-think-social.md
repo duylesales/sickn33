@@ -1,4 +1,4 @@
-🚨 Julia Snoek manages a handful of beach huts in Castricum and built Strandhuisjes in Bolt: visitors see which huts are free, book a day or a week, and pay through a hosted Mollie checkout. After reading about AI app security, she was convinced she needed a large, expensive project — and postponed launch by a month. 😳
+🚨 Julia Snoek manages a handful of beach huts in Castricum and built Strandhuisjes in Bolt: visitors see which huts are free, book a day or a week, and pay through a hosted Mollie checkout. After reading about AI app security, she was convinced she needed a large, expensive project - and postponed launch by a month. 😳
 
 The review found she was close. One user type, Supabase Auth used as designed, the two-account test already failing correctly, code in GitHub and accounts in her own name. What needed fixing was small: payment confirmation partly relied on the browser redirect, backups weren't enabled, booking emails landed in spam, signup had no rate limit, and the app ran on a preview URL. Here are the signs your AI prototype is closer to production than you think: 🧠
 

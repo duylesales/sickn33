@@ -13,9 +13,9 @@ At **LaunchStudio**, every one of these 15 questions has a clear, public answer:
 ✅ Fixed pricing from €800
 ✅ Frontend preservation guaranteed
 ✅ Full code ownership, always
-✅ Backed by Manifera — trusted by Vodafone, TNO, CFLW
+✅ Backed by Manifera - trusted by Vodafone, TNO, CFLW
 
-🔍 Pro tip: don't just ask the 15 questions — verify the answers. Ask for a reference you can actually call, a real KVK number, and a before/after code sample. A partner who deflects when asked to prove it just answered your 16th question for free.
+🔍 Pro tip: don't just ask the 15 questions - verify the answers. Ask for a reference you can actually call, a real KVK number, and a before/after code sample. A partner who deflects when asked to prove it just answered your 16th question for free.
 
 Get the checklist before you commit. 🛡️🚀
 

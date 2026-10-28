@@ -33,7 +33,7 @@ De institutionele lessen zijn verwerkt en vormen de praktijk nu concreet.
 
 **Menselijke toetsing moet inhoudelijk zijn, niet formeel.** Een systeem dat een aanbeveling presenteert die de ambtenaar altijd overneemt, is geautomatiseerde besluitvorming met een handtekening eronder. Toezicht zoekt bewijs dat toetsing werkelijk uitkomsten verandert.
 
-**Uitlegbaarheid betekent uitlegbaar aan de betrokken persoon.** Niet interpreteerbaar voor een data scientist — begrijpelijk voor een burger die wil weten waarom een besluit tegen hem uitviel, en voldoende om het aan te vechten.
+**Uitlegbaarheid betekent uitlegbaar aan de betrokken persoon.** Niet interpreteerbaar voor een data scientist - begrijpelijk voor een burger die wil weten waarom een besluit tegen hem uitviel, en voldoende om het aan te vechten.
 
 **Aanvechtbaarheid is een ontwerpvereiste.** Er moet een route zijn om te betwisten, en die betwisting moet kunnen slagen.
 
@@ -77,7 +77,7 @@ Wie dit als obstakels behandelt om omheen te onderhandelen, wordt terecht als on
 
 **Governance-ervaring wordt breed waardevol.** Nu regulering van geautomatiseerde besluitvorming zich over sectoren verspreidt, worden mensen die onder een streng regime hebben gewerkt steeds meer gezocht.
 
-**De missie is makkelijk te verwoorden.** Dat openbaar bestuur goed, eerlijk en begrijpelijk werkt, telt — en het tegenbeeld is zichtbaar in de hierboven beschreven geschiedenis.
+**De missie is makkelijk te verwoorden.** Dat openbaar bestuur goed, eerlijk en begrijpelijk werkt, telt - en het tegenbeeld is zichtbaar in de hierboven beschreven geschiedenis.
 
 ## Wat werkelijk lastig is
 

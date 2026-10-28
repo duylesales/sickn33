@@ -1,4 +1,4 @@
-📉 Priya built a real-time logistics dashboard using **Lovable** — priya, a startup founder, used **lovable** to build a real-time SaaS dashboard, but discovered severe Postgres query latency once real customers loaded production-scale data. 🧠
+📉 Priya built a real-time logistics dashboard using **Lovable** - priya, a startup founder, used **lovable** to build a real-time SaaS dashboard, but discovered severe Postgres query latency once real customers loaded production-scale data. 🧠
 
 If your dashboard queries lack composite indexes, connection pooling, and result caching, real data volume will turn a snappy demo into a nine-second spinner.
 
@@ -12,7 +12,7 @@ If your dashboard queries lack composite indexes, connection pooling, and result
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Priya's dashboard achieved production readiness: median query response time dropped from 4.2 seconds to under 850 milliseconds — an 80% reduction — with database CPU usage falling from over 90% to 20-30%. (Query optimization completed and verified in days, no frontend rebuild required.) 🚀
+Priya's dashboard achieved production readiness: median query response time dropped from 4.2 seconds to under 850 milliseconds - an 80% reduction - with database CPU usage falling from over 90% to 20-30%. (Query optimization completed and verified in days, no frontend rebuild required.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/postgres-query-latency-case-study
 

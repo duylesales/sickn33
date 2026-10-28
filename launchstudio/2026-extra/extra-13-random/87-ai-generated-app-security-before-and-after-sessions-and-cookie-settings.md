@@ -21,14 +21,14 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Logging in is a moment; a session is everything after it. Every request your app receives carries some proof that "this is still the user who logged in" — a token or a cookie. If that proof can be stolen, forged or reused, the strength of your login screen does not matter. Session handling is an area of AI generated app security that rarely gets attention in demos, because demos never test what happens to a session on a shared computer, in a malicious link or after a password change.
+Logging in is a moment; a session is everything after it. Every request your app receives carries some proof that "this is still the user who logged in" - a token or a cookie. If that proof can be stolen, forged or reused, the strength of your login screen does not matter. Session handling is an area of AI generated app security that rarely gets attention in demos, because demos never test what happens to a session on a shared computer, in a malicious link or after a password change.
 
 ## Before: How AI-Generated Apps Often Handle Sessions
 
-When AI tools implement custom authentication — or wrap a provider's auth in their own code — common patterns include:
+When AI tools implement custom authentication - or wrap a provider's auth in their own code - common patterns include:
 
 - **Tokens in localStorage,** readable by any JavaScript on the page, including injected scripts.
-- **Cookies without security flags** — missing `HttpOnly`, `Secure` or `SameSite`.
+- **Cookies without security flags** - missing `HttpOnly`, `Secure` or `SameSite`.
 - **Very long lifetimes,** such as tokens valid for 30 days with no refresh or revocation.
 - **Logout that only deletes the token in the browser,** while the token itself stays valid on the server.
 - **No session revocation** after password changes or account removal.
@@ -92,7 +92,7 @@ cookies().set("__Host-session", sessionId, {
 });
 ```
 
-The `__Host-` prefix tells browsers to accept the cookie only if it is secure, has path `/` and no domain attribute — which prevents subdomains from overwriting it. Many AI-generated implementations set cookies with default attributes, which usually means no `HttpOnly` and sometimes no `Secure`.
+The `__Host-` prefix tells browsers to accept the cookie only if it is secure, has path `/` and no domain attribute - which prevents subdomains from overwriting it. Many AI-generated implementations set cookies with default attributes, which usually means no `HttpOnly` and sometimes no `Secure`.
 
 ## Choosing Session Lifetimes by Risk
 
@@ -111,7 +111,7 @@ Apps using JWTs or similar tokens should follow a few rules: short-lived access 
 
 ## CSRF Protection in Modern Frameworks
 
-With SameSite cookies, most cross-site request forgery is blocked by the browser. For additional protection on sensitive actions, use one of: synchroniser tokens (a random token in the form, verified on the server), double-submit cookies, or requiring a custom header that simple cross-site forms cannot set. Some frameworks provide CSRF protection for form actions by default — for example by checking the Origin header — but verify it is active in your configuration rather than assuming.
+With SameSite cookies, most cross-site request forgery is blocked by the browser. For additional protection on sensitive actions, use one of: synchroniser tokens (a random token in the form, verified on the server), double-submit cookies, or requiring a custom header that simple cross-site forms cannot set. Some frameworks provide CSRF protection for form actions by default - for example by checking the Origin header - but verify it is active in your configuration rather than assuming.
 
 ## Logout That Actually Ends Sessions
 
@@ -123,7 +123,7 @@ Session protections and XSS protections reinforce each other. HttpOnly cookies s
 
 ## Monitoring Session Anomalies
 
-Log session events — login, refresh, logout, revocation, failed refresh — with IP ranges and user agents. Alert on patterns such as many sessions for one account from different countries within minutes, refresh-token reuse detection triggering, or spikes in failed logins. Users can also be shown their active sessions and recent logins, giving them a chance to spot suspicious activity themselves.
+Log session events - login, refresh, logout, revocation, failed refresh - with IP ranges and user agents. Alert on patterns such as many sessions for one account from different countries within minutes, refresh-token reuse detection triggering, or spikes in failed logins. Users can also be shown their active sessions and recent logins, giving them a chance to spot suspicious activity themselves.
 
 ## Testing Session Behaviour
 
@@ -131,7 +131,7 @@ Add automated tests for: cookie attributes on login responses; access denied aft
 
 ## Sessions on Shared and Public Devices
 
-Apps used on shared devices — reception desks, classrooms, workshops, kiosks — need special handling. Offer a "shared device" mode with short idle timeouts, no "remember me," automatic logout at the end of the working day and quick user switching via PIN on top of a device-level session. Clear sensitive data from the page when the session ends, so the back button does not reveal previous screens; set cache headers on authenticated pages to prevent browsers from storing them.
+Apps used on shared devices - reception desks, classrooms, workshops, kiosks - need special handling. Offer a "shared device" mode with short idle timeouts, no "remember me," automatic logout at the end of the working day and quick user switching via PIN on top of a device-level session. Clear sensitive data from the page when the session ends, so the back button does not reveal previous screens; set cache headers on authenticated pages to prevent browsers from storing them.
 
 ## Mobile App Sessions
 
@@ -147,11 +147,11 @@ Before launch, confirm: session cookies are HttpOnly, Secure and SameSite with t
 
 ## Why Founders Should Care
 
-Session flaws rarely show up in demos, yet they decide whether a single stolen token or a shared computer turns into an account takeover. They are usually cheap to fix — mostly configuration and the use of a mature auth provider — and expensive to explain after an incident. Put session security on the same list as access control and payments before launch.
+Session flaws rarely show up in demos, yet they decide whether a single stolen token or a shared computer turns into an account takeover. They are usually cheap to fix - mostly configuration and the use of a mature auth provider - and expensive to explain after an incident. Put session security on the same list as access control and payments before launch.
 
 ## Before and After, Summarised
 
-Before: tokens in localStorage, cookies without flags, sessions that last a month, logout that only hides the token, no CSRF protection and no revocation after a password change. After: HttpOnly, Secure, SameSite cookies with host binding; short-lived access tokens with rotated refresh tokens; server-side revocation on logout and password change; timeouts matched to risk; CSRF protection on sensitive actions; a Content Security Policy; anomalies logged; and tests that keep all of it in place. The interface looks identical in both cases — the difference is whether a stolen token, a shared computer or a malicious link can turn into someone else's account.
+Before: tokens in localStorage, cookies without flags, sessions that last a month, logout that only hides the token, no CSRF protection and no revocation after a password change. After: HttpOnly, Secure, SameSite cookies with host binding; short-lived access tokens with rotated refresh tokens; server-side revocation on logout and password change; timeouts matched to risk; CSRF protection on sensitive actions; a Content Security Policy; anomalies logged; and tests that keep all of it in place. The interface looks identical in both cases - the difference is whether a stolen token, a shared computer or a malicious link can turn into someone else's account.
 
 ## First Step
 
@@ -159,7 +159,7 @@ Log in to your app, open the browser's developer tools and look at Application �
 
 ## Where LaunchStudio Fits
 
-LaunchStudio reviews session handling as part of every authentication check and usually replaces custom session code with the auth provider's secure defaults, adds correct cookie flags, CSRF protection, server-side logout and revocation, and appropriate lifetimes. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink's cybersecurity background — including co-founding CyberDevOps, now CFLW Cyber Strategies — shapes a security-first review culture. Manifera's engineers work in Ho Chi Minh City, with client contact through Herengracht 420, Amsterdam. See [Manifera's about page](https://www.manifera.com/about-us/).
+LaunchStudio reviews session handling as part of every authentication check and usually replaces custom session code with the auth provider's secure defaults, adds correct cookie flags, CSRF protection, server-side logout and revocation, and appropriate lifetimes. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink's cybersecurity background - including co-founding CyberDevOps, now CFLW Cyber Strategies - shapes a security-first review culture. Manifera's engineers work in Ho Chi Minh City, with client contact through Herengracht 420, Amsterdam. See [Manifera's about page](https://www.manifera.com/about-us/).
 
 [Get a fixed-price quote](https://launchstudio.eu/en/#contact) for an authentication and session review.
 
@@ -169,16 +169,16 @@ LaunchStudio reviews session handling as part of every authentication check and 
 
 Sem Evers, a facility coordinator turned founder in IJsselstein, built Zaalvrij with Cursor: companies in shared office buildings book meeting rooms, manage visitors and get monthly usage invoices. Twenty-six companies across four buildings used it, often from shared reception computers.
 
-A receptionist reported that after logging out on the shared computer, pressing the browser's back button showed another company's bookings — and that clicking around still worked. The review explained why: Cursor had implemented JWT authentication with tokens stored in localStorage, valid for 30 days, and logout simply removed the token from the browser without invalidating it. A copied token kept working. Cookies used for a "remember me" feature lacked HttpOnly and SameSite flags, forms that cancelled bookings had no CSRF protection, and changing a password did not end other sessions. A reflected XSS in the visitor name field meant a crafted link could have read the token from localStorage.
+A receptionist reported that after logging out on the shared computer, pressing the browser's back button showed another company's bookings - and that clicking around still worked. The review explained why: Cursor had implemented JWT authentication with tokens stored in localStorage, valid for 30 days, and logout simply removed the token from the browser without invalidating it. A copied token kept working. Cookies used for a "remember me" feature lacked HttpOnly and SameSite flags, forms that cancelled bookings had no CSRF protection, and changing a password did not end other sessions. A reflected XSS in the visitor name field meant a crafted link could have read the token from localStorage.
 
 Over four business days, LaunchStudio's engineers replaced the custom JWT handling with Supabase Auth sessions, stored refresh tokens in HttpOnly, Secure, SameSite=Lax cookies, shortened access token lifetimes, invalidated sessions server-side on logout and on password change, added an eight-hour idle timeout for accounts flagged as shared-computer use, protected state-changing forms with CSRF tokens, fixed the XSS with output escaping and a Content Security Policy, and added "log out everywhere."
 
 **Result:** The shared-computer issue disappeared, and a later security questionnaire from a larger tenant was answered without follow-up questions. Zaalvrij has since been adopted in two more office buildings.
 
 > *"Our logout button was a polite suggestion. Now it actually ends the session."*
-> — **Sem Evers, Founder, Zaalvrij (IJsselstein)**
+> - **Sem Evers, Founder, Zaalvrij (IJsselstein)**
 
-**Cost & Timeline:** €1,100 (session and cookie hardening, CSRF protection, XSS fix and auth provider migration) — completed in 4 business days.
+**Cost & Timeline:** €1,100 (session and cookie hardening, CSRF protection, XSS fix and auth provider migration) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

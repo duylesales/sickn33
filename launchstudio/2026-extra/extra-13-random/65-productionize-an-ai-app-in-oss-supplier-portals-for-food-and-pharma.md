@@ -22,7 +22,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Oss grew on food — meat processing, margarine, later ready meals — and on pharmaceuticals. That history left a regional economy full of producers, suppliers, quality managers and auditors, and a particular kind of founder: someone who spent years chasing specification sheets and certificates by email and decided to build a portal for it. With Lovable or Bolt, that portal can be working in weeks. To productionize an AI app for this world, though, you have to meet the expectations of quality systems that were designed around audits.
+Oss grew on food - meat processing, margarine, later ready meals - and on pharmaceuticals. That history left a regional economy full of producers, suppliers, quality managers and auditors, and a particular kind of founder: someone who spent years chasing specification sheets and certificates by email and decided to build a portal for it. With Lovable or Bolt, that portal can be working in weeks. To productionize an AI app for this world, though, you have to meet the expectations of quality systems that were designed around audits.
 
 ## Why You Productionize an AI App Differently for Supply Chains
 
@@ -42,7 +42,7 @@ The most important production change is replacing "upload overwrites" with versi
 
 ## Audit Trails That Hold Up
 
-An audit trail records who did what: uploaded, reviewed, approved, rejected, changed a field, downloaded. For it to be credible, it must be append-only, stored separately from the data it describes and protected against editing by ordinary users — including administrators of the portal's customers.
+An audit trail records who did what: uploaded, reviewed, approved, rejected, changed a field, downloaded. For it to be credible, it must be append-only, stored separately from the data it describes and protected against editing by ordinary users - including administrators of the portal's customers.
 
 Regulated pharma environments may require more formal controls, such as electronic signatures and validated systems under frameworks like EU GMP Annex 11. A small portal may not need full validation from day one, but it should be designed so that adding those controls later does not require rebuilding it.
 
@@ -56,7 +56,7 @@ Certificates expire. A production portal tracks validity dates, reminds supplier
 
 ## Exports for Audits
 
-When a customer's auditor visits, the quality manager needs a complete, time-stamped export — documents, versions and audit trail — in a format an auditor accepts. Building this once saves days of scrambling every audit.
+When a customer's auditor visits, the quality manager needs a complete, time-stamped export - documents, versions and audit trail - in a format an auditor accepts. Building this once saves days of scrambling every audit.
 
 ## Hosting and Continuity
 
@@ -90,11 +90,11 @@ Most supplier portals are well served by the first two; hash chaining adds stron
 
 ## Electronic Approvals and Signatures
 
-Approvals in quality systems often need to show who approved, when and with what meaning ("approved as compliant"). A robust approval requires the approver to be authenticated (ideally with multi-factor authentication), records the exact version approved, the meaning of the approval and the timestamp, and prevents later modification of the approved version. For pharmaceutical contexts subject to GMP, electronic signature requirements can be more formal — including unique user identification and linkage of signatures to records — and should be assessed with the customer's quality team.
+Approvals in quality systems often need to show who approved, when and with what meaning ("approved as compliant"). A robust approval requires the approver to be authenticated (ideally with multi-factor authentication), records the exact version approved, the meaning of the approval and the timestamp, and prevents later modification of the approved version. For pharmaceutical contexts subject to GMP, electronic signature requirements can be more formal - including unique user identification and linkage of signatures to records - and should be assessed with the customer's quality team.
 
 ## Supplier Onboarding and Offboarding
 
-Suppliers change contacts regularly. Build onboarding around invitations sent to company email addresses, with the supplier's own administrator able to add and remove colleagues. Offboarding should remove access immediately when a supplier relationship ends, while retaining the supplier's historic documents for the required period. Periodic access reviews — for example quarterly reports of active supplier users sent to each producer — keep the user base clean.
+Suppliers change contacts regularly. Build onboarding around invitations sent to company email addresses, with the supplier's own administrator able to add and remove colleagues. Offboarding should remove access immediately when a supplier relationship ends, while retaining the supplier's historic documents for the required period. Periodic access reviews - for example quarterly reports of active supplier users sent to each producer - keep the user base clean.
 
 ## Validity, Expiry and Escalation Logic
 
@@ -114,7 +114,7 @@ Larger customers may audit the portal itself as a supplier. Prepare a short doss
 
 ## Change Management for the Portal Itself
 
-Quality-minded customers care not only about their documents but about how the portal changes. Adopt a simple, documented change process: changes tracked in version control, tested on staging, reviewed before release, and summarised in release notes that customers can read. For changes affecting approval logic, audit trails or document status, notify customers in advance. If a pharmaceutical customer requires validation evidence, this process — with test records per release — becomes the basis for it.
+Quality-minded customers care not only about their documents but about how the portal changes. Adopt a simple, documented change process: changes tracked in version control, tested on staging, reviewed before release, and summarised in release notes that customers can read. For changes affecting approval logic, audit trails or document status, notify customers in advance. If a pharmaceutical customer requires validation evidence, this process - with test records per release - becomes the basis for it.
 
 ## Data Retention Across Regulated Sectors
 
@@ -130,17 +130,17 @@ Recurring mistakes include: overwriting files instead of versioning them; storin
 
 ## Why Founders From the Industry Have an Edge
 
-Founders who worked in quality management know exactly what auditors ask and where spreadsheets fail. Combined with a production-grade portal, that knowledge is a strong competitive advantage: producers trust a tool built by someone who has sat on the other side of an audit — as long as the software meets the standards that experience implies.
+Founders who worked in quality management know exactly what auditors ask and where spreadsheets fail. Combined with a production-grade portal, that knowledge is a strong competitive advantage: producers trust a tool built by someone who has sat on the other side of an audit - as long as the software meets the standards that experience implies.
 
 ## The Standard to Aim For
 
-A supplier portal is production ready for food and pharma when every document has a history, every approval has an owner and a timestamp, every supplier sees only its own world, every expiry is noticed before it matters and every audit question can be answered with an export rather than an evening of searching. Reaching that standard with an AI-built portal is usually a few weeks of focused engineering — and it turns a useful tool into one that quality managers are willing to stake an audit on.
+A supplier portal is production ready for food and pharma when every document has a history, every approval has an owner and a timestamp, every supplier sees only its own world, every expiry is noticed before it matters and every audit question can be answered with an export rather than an evening of searching. Reaching that standard with an AI-built portal is usually a few weeks of focused engineering - and it turns a useful tool into one that quality managers are willing to stake an audit on.
 
 ## Where LaunchStudio Fits
 
 LaunchStudio helps founders in regulated supply chains productionize an AI app built with Lovable, Bolt or Cursor: document versioning with validity dates, append-only audit trails, database-enforced supplier and customer separation, monitored expiry reminders, audit exports, EU hosting and backups. The interface your users know stays in place.
 
-LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and clients including TNO and Xpar Vision, a supplier of inspection systems to the glass industry. Manifera's engineers work from its development centre in Ho Chi Minh City, with its European office at Herengracht 420, Amsterdam — about an hour and a half from Oss. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/). For the pharma side, the European Commission's [EudraLex Volume 4](https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en) contains the GMP guidance, including Annex 11.
+LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and clients including TNO and Xpar Vision, a supplier of inspection systems to the glass industry. Manifera's engineers work from its development centre in Ho Chi Minh City, with its European office at Herengracht 420, Amsterdam - about an hour and a half from Oss. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/). For the pharma side, the European Commission's [EudraLex Volume 4](https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en) contains the GMP guidance, including Annex 11.
 
 [Calculate what your project would cost](https://launchstudio.eu/en/#calculator), or talk to us directly about your first customer audit.
 
@@ -157,9 +157,9 @@ Over fifteen business days, LaunchStudio's engineers introduced document version
 **Result:** The producer passed the retail audit using Recepturo's export, and the auditor's report noted the document control positively. Recepturo grew to 16 producers in the following year, two of them in the pharmaceutical excipient sector.
 
 > *"In quality management, a document without its history isn't evidence. My portal had the documents and had thrown the evidence away."*
-> — **Ruud van Kessel, Founder, Recepturo (Oss)**
+> - **Ruud van Kessel, Founder, Recepturo (Oss)**
 
-**Cost & Timeline:** €4,600 (Launch & Grow package: versioning, audit trail, access control, reminders, exports and hosting) — completed in 15 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €4,600 (Launch & Grow package: versioning, audit trail, access control, reminders, exports and hosting) - completed in 15 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 

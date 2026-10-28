@@ -7,12 +7,12 @@
 ❌ Hourly pricing that shifts a vendor's uncertainty onto you
 ❌ A closed support ticket the moment the invoice is paid
 
-✅ A fixed price that doesn't move once work begins — full stop
-✅ Frontend explicitly untouched — checkable with a version control diff
+✅ A fixed price that doesn't move once work begins - full stop
+✅ Frontend explicitly untouched - checkable with a version control diff
 ✅ Every finding documented, not just quietly patched
 ✅ A named contact reachable weeks after delivery, not a support queue
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we name what's covered — and what isn't. 🔍
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we name what's covered - and what isn't. 🔍
 
 His result: rate limiting closed on his core API, verified against his own understanding of the code, direct line to the same engineer three weeks later. 🚀
 

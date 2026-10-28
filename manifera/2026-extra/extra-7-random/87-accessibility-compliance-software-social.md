@@ -1,4 +1,4 @@
-A dashboard showing zero accessibility errors for over a year — and it turned out it never once tested whether someone using a screen reader could actually check out. ♿🚨
+A dashboard showing zero accessibility errors for over a year - and it turned out it never once tested whether someone using a screen reader could actually check out. ♿🚨
 
 **The Pain Points:**
 ❌ **False Confidence from Scans:** Automated tools catch markup patterns, not whether an interface is actually usable.

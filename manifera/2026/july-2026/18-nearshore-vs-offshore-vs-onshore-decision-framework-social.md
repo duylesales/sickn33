@@ -1,4 +1,4 @@
-🗺️ **Nearshore, offshore, onshore — these words have become meaningless. Here's the actual decision framework:**
+🗺️ **Nearshore, offshore, onshore - these words have become meaningless. Here's the actual decision framework:**
 
 Forget geography labels. Focus on 4 factors:
 
@@ -10,7 +10,7 @@ Forget geography labels. Focus on 4 factors:
 **📞 Factor 2: Communication**
 → Onshore: 8h sync/day, native language
 → Nearshore: 6-8h, near-native
-→ Offshore Vietnam: 4-5h overlap with CET — enough for all Agile ceremonies
+→ Offshore Vietnam: 4-5h overlap with CET - enough for all Agile ceremonies
 
 **⚖️ Factor 3: Compliance**
 → The trick: choose an offshore partner with a European legal entity

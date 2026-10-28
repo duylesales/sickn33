@@ -1,6 +1,6 @@
-🔥 Priya Nair bouwde ContractClause AI — een legal-tech SaaS-prototype in **Bolt** — en deed wat de meeste oprichters als eerste doen: ze plaatste een vacature van € 85.000 per jaar voor een senior engineer om haar beveiligings- en betalingshiaten op te lossen. 🧠
+🔥 Priya Nair bouwde ContractClause AI - een legal-tech SaaS-prototype in **Bolt** - en deed wat de meeste oprichters als eerste doen: ze plaatste een vacature van € 85.000 per jaar voor een senior engineer om haar beveiligings- en betalingshiaten op te lossen. 🧠
 
-Tien weken later had ze nog steeds niemand aangenomen — en de RLS-hiaten en de ongeteste Stripe-webhook bleven de hele tijd onaangeroerd.
+Tien weken later had ze nog steeds niemand aangenomen - en de RLS-hiaten en de ongeteste Stripe-webhook bleven de hele tijd onaangeroerd.
 
 ❌ Volledig belaste eerstejaarskosten van € 100.000+ voordat er ook maar één regel verhardingscode is geschreven
 ❌ Een wervingsfunnel van 10 tot 16 weken (sourcing, interviews, aanbod, opzegtermijn) voordat een nieuwe aanwerving de codebase überhaupt opent
@@ -12,7 +12,7 @@ Tien weken later had ze nog steeds niemand aangenomen — en de RLS-hiaten en de
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Priya pauzeerde haar wervingszoektocht volledig en koos in plaats daarvan voor LaunchStudio: RLS-beleid afgedwongen bij elk klantaccount, Stripe-webhooks verhard tegen storingen, en haar financiële buffer bleef intact. (€ 2.400 (Launch & Grow Pakket) — 10 werkdagen.) 🚀
+Priya pauzeerde haar wervingszoektocht volledig en koos in plaats daarvan voor LaunchStudio: RLS-beleid afgedwongen bij elk klantaccount, Stripe-webhooks verhard tegen storingen, en haar financiële buffer bleef intact. (€ 2.400 (Launch & Grow Pakket) - 10 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-in-house-hire-cost
 

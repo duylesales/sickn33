@@ -3,7 +3,7 @@
 Niet omdat ze uw app slecht vonden.
 Maar omdat ze zich aanmeldden op dinsdagmiddag, 4 minuten rondkeken, en u daarna simpelweg vergaten!
 
-Een welkomstmail is geen "marketing" — het is essentiële infrastructuur:
+Een welkomstmail is geen "marketing" - het is essentiële infrastructuur:
 1. Bewijst dat het e-mailadres écht werkt (voorkomt mislukte wachtwoordresets)
 2. Bouwt verzendreputatie op bij Gmail & Outlook
 3. Geeft de klant een directe terugkeerlink in zijn inbox

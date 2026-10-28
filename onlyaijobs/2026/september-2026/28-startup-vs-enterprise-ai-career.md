@@ -36,11 +36,11 @@ Content Format: Career Guide
 
 ## What Actually Changes
 
-**How much of the problem has already been solved for you.** At an enterprise you often inherit existing infrastructure, data pipelines and processes — you build on something. At a startup you often build that infrastructure yourself, which gives more ownership but also costs more time on things that aren't models.
+**How much of the problem has already been solved for you.** At an enterprise you often inherit existing infrastructure, data pipelines and processes - you build on something. At a startup you often build that infrastructure yourself, which gives more ownership but also costs more time on things that aren't models.
 
-**How quickly a decision is made.** In a smaller team you can often make an architecture choice the same day. In a larger organisation a comparable choice goes through several layers of alignment — slower, but with a better chance that someone spots a blind spot before it goes into production.
+**How quickly a decision is made.** In a smaller team you can often make an architecture choice the same day. In a larger organisation a comparable choice goes through several layers of alignment - slower, but with a better chance that someone spots a blind spot before it goes into production.
 
-**What happens if your project doesn't work.** At a startup, a failed experiment can affect the team's survival. At an enterprise, a failed experiment more often disappears into a larger portfolio without existential consequences — with the downside that you less quickly feel your work really matters.
+**What happens if your project doesn't work.** At a startup, a failed experiment can affect the team's survival. At an enterprise, a failed experiment more often disappears into a larger portfolio without existential consequences - with the downside that you less quickly feel your work really matters.
 
 ## Why Neither Is Objectively Better
 
@@ -52,7 +52,7 @@ People who like ownership of the whole stack and can tolerate risk are often bet
 
 **"How was the last important technical decision in this team made, and how long did it take?"** This reveals the actual decision-making pace, instead of an assumption based on company size.
 
-**"What happened the last time an experiment didn't work?"** The answer tells you something about how risk is carried in this organisation — a crucial fact that rarely appears explicitly in a job ad.
+**"What happened the last time an experiment didn't work?"** The answer tells you something about how risk is carried in this organisation - a crucial fact that rarely appears explicitly in a job ad.
 
 ## Comparison Table: Startup vs. Enterprise, on Practical Points
 
@@ -66,11 +66,11 @@ People who like ownership of the whole stack and can tolerate risk are often bet
 
 ## Why "It Depends" Is the Honest Answer Here
 
-There is no universally best choice between these two, and anyone giving you a firm answer is probably projecting their own preference onto your situation. The questions above are meant to replace the abstract opposition of "startup versus enterprise" with concrete information relevant to your situation — a better basis for a decision than generic advice can ever be.
+There is no universally best choice between these two, and anyone giving you a firm answer is probably projecting their own preference onto your situation. The questions above are meant to replace the abstract opposition of "startup versus enterprise" with concrete information relevant to your situation - a better basis for a decision than generic advice can ever be.
 
 ## A Concrete Scenario That Makes the Difference Tangible
 
-A technical choice has to be made: which kind of model to use for a new feature. At a startup, the ML engineer discusses it with the founder for fifteen minutes, makes a decision, and implements it the same week — if the choice turns out to be wrong, it is corrected the following week. At an enterprise, the same choice goes through an architecture review in which several teams give their opinion, taking three weeks before a decision is made — but that decision has also taken into account integrations and dependencies the startup engineer never considered, because they simply don't exist in a smaller company. Both processes have their own internal logic; neither is inherently "better" governance.
+A technical choice has to be made: which kind of model to use for a new feature. At a startup, the ML engineer discusses it with the founder for fifteen minutes, makes a decision, and implements it the same week - if the choice turns out to be wrong, it is corrected the following week. At an enterprise, the same choice goes through an architecture review in which several teams give their opinion, taking three weeks before a decision is made - but that decision has also taken into account integrations and dependencies the startup engineer never considered, because they simply don't exist in a smaller company. Both processes have their own internal logic; neither is inherently "better" governance.
 
 ## A Common Misconception About What "More Responsibility" Means
 
@@ -78,15 +78,15 @@ Candidates often automatically associate a startup with "more responsibility" an
 
 ## Why It's Best to Re-Evaluate This Choice at Each Life Stage
 
-Instead of making this choice once and sticking to it permanently, it is more useful to ask yourself periodically — for example every two to three years — which kind of work best suits this moment in your career. Someone just starting out often benefits from the broader exposure of a startup; someone looking for specific depth in a particular subfield often finds it more readily at an enterprise. This preference is not a fixed personality trait, but something that evolves.
+Instead of making this choice once and sticking to it permanently, it is more useful to ask yourself periodically - for example every two to three years - which kind of work best suits this moment in your career. Someone just starting out often benefits from the broader exposure of a startup; someone looking for specific depth in a particular subfield often finds it more readily at an enterprise. This preference is not a fixed personality trait, but something that evolves.
 
 ## What If You're Somewhere in Between: Scale-Ups as a Third Category
 
-Most discussions of this choice treat "startup" and "enterprise" as the only two options, while a large part of the Dutch AI labour market is in a scale-up phase — too big to function as a pure startup, too small and young to have an enterprise's processes. This category deserves its own set of questions: how much of the startup-like speed is still there, and how much enterprise-like structure has already been built? Scale-ups are often in a transition phase in which the answer this year may differ from last year, which means you should explicitly ask about the current state of affairs rather than assuming "scale-up" is a fixed, predictable category.
+Most discussions of this choice treat "startup" and "enterprise" as the only two options, while a large part of the Dutch AI labour market is in a scale-up phase - too big to function as a pure startup, too small and young to have an enterprise's processes. This category deserves its own set of questions: how much of the startup-like speed is still there, and how much enterprise-like structure has already been built? Scale-ups are often in a transition phase in which the answer this year may differ from last year, which means you should explicitly ask about the current state of affairs rather than assuming "scale-up" is a fixed, predictable category.
 
 ## Why This Choice Can Also Change Over Time Within One Company
 
-A company you experience today as a startup can, within two years, have transformed into something more like an enterprise as it grows and formalises processes. This means the choice you make now doesn't guarantee you'll have the same kind of working environment in two years — something to discuss explicitly in an interview if growth and scale are an important part of the business plan, so you aren't surprised by a culture change you didn't anticipate when you signed.
+A company you experience today as a startup can, within two years, have transformed into something more like an enterprise as it grows and formalises processes. This means the choice you make now doesn't guarantee you'll have the same kind of working environment in two years - something to discuss explicitly in an interview if growth and scale are an important part of the business plan, so you aren't surprised by a culture change you didn't anticipate when you signed.
 
 ## The Dutch Ecosystem at a Glance
 
@@ -109,7 +109,7 @@ A company you experience today as a startup can, within two years, have transfor
 
 **Stock options in the Netherlands.** Options are attractive, but their value is uncertain. Since 2023, the taxable moment for employee stock options has in many cases been deferred until the shares become tradable, which has removed an important obstacle for startup employees. Always ask about the number of options, the exercise price, the vesting period, what happens if you leave and what percentage of total share capital they represent. Without that information, you can't estimate their value.
 
-**The works council and AI.** At an enterprise, the works council has a right of consent under the **Works Councils Act (WOR)** over, for example, systems that can be used to monitor employees. AI projects involving personnel data therefore go past the works council — one of the reasons decision-making at enterprises is slower, and at the same time a safeguard.
+**The works council and AI.** At an enterprise, the works council has a right of consent under the **Works Councils Act (WOR)** over, for example, systems that can be used to monitor employees. AI projects involving personnel data therefore go past the works council - one of the reasons decision-making at enterprises is slower, and at the same time a safeguard.
 
 **International candidates.** For a highly skilled migrant permit, the employer must be a recognised sponsor with the **IND**. Small startups are not always one. Anyone who needs a residence permit should check this early in the process at a startup.
 
@@ -121,7 +121,7 @@ A company you experience today as a startup can, within two years, have transfor
 
 **Reorganisations.** Enterprises have their own risks: reorganisations, discontinued innovation programmes or AI teams being moved to another country. Ask how long the team has existed, who it reports to, and whether it has a fixed budget or is funded year by year.
 
-**Regulation.** The **EU Artificial Intelligence Act** affects both types of organisation, but differently: enterprises have compliance departments that slow AI projects down but also protect them, while startups developing AI products can themselves become responsible as providers for documentation and conformity — work that in a small team often lands with the engineers.
+**Regulation.** The **EU Artificial Intelligence Act** affects both types of organisation, but differently: enterprises have compliance departments that slow AI projects down but also protect them, while startups developing AI products can themselves become responsible as providers for documentation and conformity - work that in a small team often lands with the engineers.
 
 ## Quick Self-Test
 
@@ -139,7 +139,7 @@ A company you experience today as a startup can, within two years, have transfor
 
 ## Where to Start
 
-In a job interview, ask explicitly how much infrastructure you would inherit, how decisions are made and what happens when an experiment fails — and combine that with the questions about employment conditions and risk above.
+In a job interview, ask explicitly how much infrastructure you would inherit, how decisions are made and what happens when an experiment fails - and combine that with the questions about employment conditions and risk above.
 
 Browse current AI, machine learning and data vacancies at companies of every size in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -158,7 +158,7 @@ Because a comparable choice usually goes through several layers of alignment, wh
 Ask how much existing infrastructure you would inherit, how a technical decision is made in practice, and what happens when a project doesn't work. The answers say more than company size alone.
 
 ### (Scenario: engineer who thinks one of the two is objectively better) Is a startup or an enterprise objectively the better choice for an AI career?
-Neither — it depends on whether you enjoy ownership of the whole stack and risk, or prefer depth within a more predictable structure.
+Neither - it depends on whether you enjoy ownership of the whole stack and risk, or prefer depth within a more predictable structure.
 
 <script type="application/ld+json">
 {
@@ -167,9 +167,9 @@ Neither — it depends on whether you enjoy ownership of the whole stack and ris
   "mainEntity": [
     {"@type": "Question", "name": "Is it true that at a startup you work on everything and at an enterprise you only do a small part?", "acceptedAnswer": {"@type": "Answer", "text": "Often broadly true, but the nuance lies in practical matters such as how much infrastructure you inherit and how quickly decisions are made."}},
     {"@type": "Question", "name": "What happens to my position if an AI project at a startup fails?", "acceptedAnswer": {"@type": "Answer", "text": "It can have real consequences for the team or the company, unlike at an enterprise where it is more often absorbed into a larger portfolio."}},
-    {"@type": "Question", "name": "Why does a technical decision take longer at a large company?", "acceptedAnswer": {"@type": "Answer", "text": "Because a comparable choice usually goes through several layers of alignment — slower, but with a better chance of catching blind spots."}},
+    {"@type": "Question", "name": "Why does a technical decision take longer at a large company?", "acceptedAnswer": {"@type": "Answer", "text": "Because a comparable choice usually goes through several layers of alignment - slower, but with a better chance of catching blind spots."}},
     {"@type": "Question", "name": "What should I ask to make this difference concrete in a job interview?", "acceptedAnswer": {"@type": "Answer", "text": "How much existing infrastructure you would inherit, how a technical decision is made, and what happens when a project doesn't work."}},
-    {"@type": "Question", "name": "Is a startup or an enterprise objectively the better choice for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Neither — it depends on whether you enjoy ownership and risk, or prefer depth within a more predictable structure."}}
+    {"@type": "Question", "name": "Is a startup or an enterprise objectively the better choice for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Neither - it depends on whether you enjoy ownership and risk, or prefer depth within a more predictable structure."}}
   ]
 }
 </script>

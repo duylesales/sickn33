@@ -55,7 +55,7 @@ Employers frequently classify these as personal circumstances. Competitors who t
 
 The interventions vary in cost, and the cheapest are often the most effective.
 
-**Temporary accommodation for the first months.** A serviced apartment or corporate housing for eight to twelve weeks removes the impossible sequencing problem — needing an address to register, needing registration to arrange finances, needing finances to secure a rental. This is the single highest-return intervention available.
+**Temporary accommodation for the first months.** A serviced apartment or corporate housing for eight to twelve weeks removes the impossible sequencing problem - needing an address to register, needing registration to arrange finances, needing finances to secure a rental. This is the single highest-return intervention available.
 
 **A relocation allowance.** A one-off contribution towards moving, agency fees and deposits. Rules exist about what can be reimbursed tax-efficiently, which is worth checking with your payroll adviser.
 
@@ -87,7 +87,7 @@ They win, on the basis of a package that costs them relatively little: three mon
 
 The candidate calculates that the same salary buys a house with a garden and a fifteen-minute cycle to work rather than a small apartment and a forty-minute commute. Two years later they are still there, and they have referred a former colleague.
 
-This is the structural advantage regional Dutch employers have and rarely use. They cannot out-pay the Randstad, but they can offer a standard of living that the Randstad cannot — provided someone does the arithmetic for the candidate rather than expecting them to discover it.
+This is the structural advantage regional Dutch employers have and rarely use. They cannot out-pay the Randstad, but they can offer a standard of living that the Randstad cannot - provided someone does the arithmetic for the candidate rather than expecting them to discover it.
 
 ## What Not to Do
 
@@ -105,7 +105,7 @@ This is the structural advantage regional Dutch employers have and rarely use. T
 
 Finance directors ask, reasonably, what this costs. The comparison to present is straightforward.
 
-Set the cost of a relocation package — temporary accommodation, an allowance, some HR time — against the cost of the alternative: an agency fee on a replacement hire, months of vacancy on a role you already struggled to fill, the project delay that follows, and the management time of running the search again.
+Set the cost of a relocation package - temporary accommodation, an allowance, some HR time - against the cost of the alternative: an agency fee on a replacement hire, months of vacancy on a role you already struggled to fill, the project delay that follows, and the management time of running the search again.
 
 For scarce technical roles the arithmetic is rarely close. A vacancy that stays open for six months costs an organisation far more, in delayed work and diverted management attention, than a relocation package costs.
 
@@ -121,7 +121,7 @@ Employers without a global mobility function assume relocation support means an 
 
 **An introduction to a rental agency** that knows your region and will take your call. This relationship costs nothing and is worth more than money to a candidate competing against twenty other applicants for a flat.
 
-**A written arrival guide.** Registration, citizen service number, bank, health insurance, energy, internet, schools, doctor registration — in order, with typical timelines. Written once, used for every hire, updated when something changes.
+**A written arrival guide.** Registration, citizen service number, bank, health insurance, energy, internet, schools, doctor registration - in order, with typical timelines. Written once, used for every hire, updated when something changes.
 
 **A named person.** Whoever in your organisation has done this before, with explicit time allocated and permission to spend it.
 
@@ -151,7 +151,7 @@ Employers who make this argument well are winning candidates they would have los
 
 Ask your last three hires what the hardest part of arriving was. The answer is usually housing or the registration chain, and both are fixable with a checklist and a phone number.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ A written registration checklist, a named contact, and an honest comparison of l
 The accompanying partner's ability to find work and build a network, more often than the employee's job satisfaction.
 
 ### (Scenario: employer hiring within the Netherlands) Should domestic movers get relocation support too?
-Yes — a Dutch candidate moving between regions faces the same housing market, and many employers overlook this.
+Yes - a Dutch candidate moving between regions faces the same housing market, and many employers overlook this.
 
 ### (Scenario: finance director) How do we justify the cost?
 Compare it with an agency fee plus months of vacancy plus project delay on a role that was already hard to fill.
@@ -178,7 +178,7 @@ Compare it with an agency fee plus months of vacancy plus project delay on a rol
     {"@type": "Question", "name": "Why do Dutch job offers fall through late in the process?", "acceptedAnswer": {"@type": "Answer", "text": "Housing is among the most common reasons, especially where commutes from affordable areas are long."}},
     {"@type": "Question", "name": "What is the cheapest effective relocation support?", "acceptedAnswer": {"@type": "Answer", "text": "A written registration checklist, a named contact person and an honest local housing cost comparison."}},
     {"@type": "Question", "name": "What most affects retention of international hires?", "acceptedAnswer": {"@type": "Answer", "text": "The accompanying partner's ability to find work and build a network."}},
-    {"@type": "Question", "name": "Should domestic relocations receive support too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Dutch candidates moving between regions face the same housing market and are often overlooked."}},
+    {"@type": "Question", "name": "Should domestic relocations receive support too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - Dutch candidates moving between regions face the same housing market and are often overlooked."}},
     {"@type": "Question", "name": "How can employers justify relocation costs internally?", "acceptedAnswer": {"@type": "Answer", "text": "Compare them with agency fees, months of vacancy and project delay on a hard-to-fill role."}}
   ]
 }

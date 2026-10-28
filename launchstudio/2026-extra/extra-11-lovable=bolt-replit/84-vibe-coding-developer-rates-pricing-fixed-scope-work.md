@@ -24,7 +24,7 @@ A client asks you to take their half-built Lovable app to production. You estima
 
 At your hourly rate that is a small invoice for work that saved the client from a data breach and unlocked a contract they had been chasing for a quarter. You have been paid for your typing speed rather than for knowing which eleven hours mattered.
 
-This is the central problem with billing hours in a field where the hours collapsed and the value did not. It is also, for a freelancer or small studio, entirely solvable — but not by raising your hourly rate.
+This is the central problem with billing hours in a field where the hours collapsed and the value did not. It is also, for a freelancer or small studio, entirely solvable - but not by raising your hourly rate.
 
 ## Why Hourly Billing Punishes Speed
 
@@ -46,7 +46,7 @@ Think about what the work is worth to them. A production readiness engagement th
 
 None of that means charging whatever you like. It means the price lives between your cost of delivery and the value received, and that window is usually far wider than an hourly rate suggests.
 
-Two sanity checks keep you honest. Would you be happy to do this work at this price if it took twice as long? And does the price look reasonable beside what the client's alternative costs — an agency quote, a full-time hire, or the cost of the problem continuing?
+Two sanity checks keep you honest. Would you be happy to do this work at this price if it took twice as long? And does the price look reasonable beside what the client's alternative costs - an agency quote, a full-time hire, or the cost of the problem continuing?
 
 ## Productise the Work You Do Repeatedly
 
@@ -56,7 +56,7 @@ After a dozen engagements, you notice you are doing the same work: an assessment
 
 The effect on sales is immediate. A prospect comparing three freelancers who each offer "development, hourly" cannot distinguish them, and defaults to price. A prospect reading "Production Readiness: access rules, secrets, backups, monitoring, deployment, documented, five working days, fixed price" has been given a decision they can actually make.
 
-LaunchStudio structures its own work this way — fixed bands from €800 to €7,500 by scope, with managed hosting at €49 per month — for exactly this reason: it removes the argument about hours before it starts.
+LaunchStudio structures its own work this way - fixed bands from €800 to €7,500 by scope, with managed hosting at €49 per month - for exactly this reason: it removes the argument about hours before it starts.
 
 ## Scoping Well Enough to Quote Fixed
 
@@ -90,7 +90,7 @@ Five recurring causes, all predictable.
 
 Project work is lumpy. A retainer is what makes a freelance practice survivable.
 
-After a delivery, offer ongoing maintenance: monitoring, updates, backups verified, small fixes, a monthly note. Modest per client, predictable, and it keeps you close to the products you know — which is also where the next project comes from, because you are the person who notices what needs doing next.
+After a delivery, offer ongoing maintenance: monitoring, updates, backups verified, small fixes, a monthly note. Modest per client, predictable, and it keeps you close to the products you know - which is also where the next project comes from, because you are the person who notices what needs doing next.
 
 Keep development out of it. A maintenance retainer that quietly becomes a development contract is how freelancers end up working for a fraction of their rate and resenting a client who has done nothing wrong.
 
@@ -118,7 +118,7 @@ Pricing well and collecting reliably are different problems, and the second is w
 
 **Keep a reserve.** Project income arrives in lumps. Three months of costs held aside is what lets you decline work you should decline, which is itself one of the strongest influences on what you can charge.
 
-**Get the administrative basics right.** Correct invoices with sequential numbers, the right VAT treatment for your situation including reverse-charge arrangements where they apply, and records retained for the period Dutch law requires. Confirm the specifics with an accountant rather than guessing — this is an area where the cost of being wrong is entirely avoidable and the advice is cheap.
+**Get the administrative basics right.** Correct invoices with sequential numbers, the right VAT treatment for your situation including reverse-charge arrangements where they apply, and records retained for the period Dutch law requires. Confirm the specifics with an accountant rather than guessing - this is an area where the cost of being wrong is entirely avoidable and the advice is cheap.
 
 A practice that quotes fixed prices, invoices in stages and follows up on time is treated differently by clients than one that does not, and the difference shows up in what those clients accept without negotiating.
 
@@ -126,7 +126,7 @@ A practice that quotes fixed prices, invoices in stages and follows up on time i
 
 There is a second market worth knowing about: agencies and freelancers with clients whose products were built with AI tooling and now need production work they cannot do themselves.
 
-LaunchStudio takes that work on a white-label basis, delivered under your brand, on fixed scope and fixed price so you can quote your client with confidence. The engineers are Manifera's — eleven years, 160+ projects, clients including Vodafone, TNO and CFLW, working from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City.
+LaunchStudio takes that work on a white-label basis, delivered under your brand, on fixed scope and fixed price so you can quote your client with confidence. The engineers are Manifera's - eleven years, 160+ projects, clients including Vodafone, TNO and CFLW, working from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City.
 
 [Tell us what your client has built](https://launchstudio.eu/en/#contact), or look at how the [packages](https://launchstudio.eu/en/#packages) are scoped.
 
@@ -147,9 +147,9 @@ The first three prospects after the change accepted without negotiating the pric
 **Result:** over the following eight months Sem delivered fourteen fixed-price engagements averaging €2,400 against an average of just under four working days, and holds nine maintenance clients. His revenue roughly tripled on slightly fewer working hours, and he reports that conversations with prospects are now about outcomes rather than durations.
 
 > *"I invoiced three hundred and forty euros for the eleven hours that won my client a contract with eleven driving schools. The work was not the problem. The pricing was."*
-> — **Sem Bruggeman, Freelance vibe coding developer (Groningen)**
+> - **Sem Bruggeman, Freelance vibe coding developer (Groningen)**
 
-**Cost & Timeline:** Restructured from €55 per hour to fixed packages of €250 / €2,200 / €5,500 plus €65 per month maintenance — implemented over one weekend.
+**Cost & Timeline:** Restructured from €55 per hour to fixed packages of €250 / €2,200 / €5,500 plus €65 per month maintenance - implemented over one weekend.
 
 ## Frequently Asked Questions
 
@@ -215,7 +215,7 @@ Reduce scope, not the number. Offering a smaller package at a lower price protec
       "name": "What do I do when a client pushes back on price?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reduce scope rather than the number — a smaller package at a lower price protects your rate and gives a genuine choice."
+        "text": "Reduce scope rather than the number - a smaller package at a lower price protects your rate and gives a genuine choice."
       }
     }
   ]

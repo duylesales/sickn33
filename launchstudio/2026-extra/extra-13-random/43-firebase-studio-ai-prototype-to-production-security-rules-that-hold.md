@@ -21,16 +21,16 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Firebase has always made it easy to get started, and AI tools — Firebase Studio in particular — make it easier still: a working app with authentication, a Firestore database and file storage appears within minutes. Firebase apps have a specific architectural property that matters enormously for production: the browser talks directly to the database. There is often no server in between. That means the only thing standing between any visitor and your data is a file of security rules. Taking a Firebase-based AI prototype to production is, above all, about making those rules hold.
+Firebase has always made it easy to get started, and AI tools - Firebase Studio in particular - make it easier still: a working app with authentication, a Firestore database and file storage appears within minutes. Firebase apps have a specific architectural property that matters enormously for production: the browser talks directly to the database. There is often no server in between. That means the only thing standing between any visitor and your data is a file of security rules. Taking a Firebase-based AI prototype to production is, above all, about making those rules hold.
 
 ## Why Firebase Security Is Different
 
-In a traditional backend, the server decides what data to return. In Firebase, the client queries Firestore directly, and Firestore security rules decide whether each read or write is allowed. The Firebase config in your page source — API key included — is public by design. It identifies your project; it does not protect it. The rules do.
+In a traditional backend, the server decides what data to return. In Firebase, the client queries Firestore directly, and Firestore security rules decide whether each read or write is allowed. The Firebase config in your page source - API key included - is public by design. It identifies your project; it does not protect it. The rules do.
 
 AI-generated prototypes commonly ship with one of three rule states:
 
-- **Test mode:** allow all reads and writes until a date (often 30 days after creation). After that date, everything breaks — or, if someone "fixed" it by extending the date, everything stays open.
-- **Authenticated-only:** `allow read, write: if request.auth != null;` — any logged-in user can read and write everything.
+- **Test mode:** allow all reads and writes until a date (often 30 days after creation). After that date, everything breaks - or, if someone "fixed" it by extending the date, everything stays open.
+- **Authenticated-only:** `allow read, write: if request.auth != null;` - any logged-in user can read and write everything.
 - **Partially scoped:** some collections protected, others left open, often those added later.
 
 All three are common. All three are unsafe for production.
@@ -55,13 +55,13 @@ match /projects/{projectId} {
 
 **Validate writes.** Rules can check field types, required fields and that users cannot change fields they should not (such as `role`, `ownerId` or `plan`). Without this, users can promote themselves by writing directly to their user document.
 
-**Mind queries.** Firestore rules are not filters: a query must be constrained so that every possible result satisfies the rules. AI-generated code often queries a whole collection and relies on the client to filter — which fails once rules are correct, prompting a founder to loosen the rules again. Fix the queries, not the rules.
+**Mind queries.** Firestore rules are not filters: a query must be constrained so that every possible result satisfies the rules. AI-generated code often queries a whole collection and relies on the client to filter - which fails once rules are correct, prompting a founder to loosen the rules again. Fix the queries, not the rules.
 
-**Test the rules.** The Firebase Emulator Suite lets you write unit tests for rules — including negative tests where user A tries to read user B's data. Run them in CI.
+**Test the rules.** The Firebase Emulator Suite lets you write unit tests for rules - including negative tests where user A tries to read user B's data. Run them in CI.
 
 ## Storage Rules Are Separate
 
-Cloud Storage for Firebase has its own rules, and AI prototypes often leave them open while the Firestore rules get attention. Uploaded files — profile photos, documents, invoices — need the same ownership logic, plus limits on size and content type.
+Cloud Storage for Firebase has its own rules, and AI prototypes often leave them open while the Firestore rules get attention. Uploaded files - profile photos, documents, invoices - need the same ownership logic, plus limits on size and content type.
 
 ## Move Sensitive Logic to Cloud Functions
 
@@ -71,7 +71,7 @@ Watch for the reverse mistake: functions that use admin privileges without check
 
 ## App Check and Abuse
 
-Firebase App Check helps ensure requests come from your genuine app rather than scripts calling your project directly. It is not a substitute for rules, but it reduces abuse — particularly for functions that cost money, like AI calls.
+Firebase App Check helps ensure requests come from your genuine app rather than scripts calling your project directly. It is not a substitute for rules, but it reduces abuse - particularly for functions that cost money, like AI calls.
 
 ## Indexes and Costs
 
@@ -145,7 +145,7 @@ Cross-service rules like the `firestore.exists` call above let Storage rules reu
 
 ## Custom Claims for Roles
 
-For apps with roles that rarely change — admin, staff, treasurer — Firebase custom claims on the authentication token can simplify rules and reduce document reads. Claims are set only by server code (Cloud Functions or the Admin SDK), so users cannot grant themselves roles. Remember that tokens refresh periodically: after changing a user's claims, force a token refresh or allow for a short delay before the new role takes effect.
+For apps with roles that rarely change - admin, staff, treasurer - Firebase custom claims on the authentication token can simplify rules and reduce document reads. Claims are set only by server code (Cloud Functions or the Admin SDK), so users cannot grant themselves roles. Remember that tokens refresh periodically: after changing a user's claims, force a token refresh or allow for a short delay before the new role takes effect.
 
 ## Keeping Costs Predictable
 
@@ -153,19 +153,19 @@ Firestore pricing follows reads, writes and storage. Production habits that keep
 
 ## Region, Backups and Compliance
 
-Firestore's location is fixed at creation. For EU users, choose an EU location; if a prototype was created elsewhere, migration requires exporting and importing data into a new project — easier before real data accumulates. Enable scheduled backups or point-in-time recovery, test a restore into a separate project, and document the process. List Firebase and Google Cloud as processors in your privacy notice, with the region used.
+Firestore's location is fixed at creation. For EU users, choose an EU location; if a prototype was created elsewhere, migration requires exporting and importing data into a new project - easier before real data accumulates. Enable scheduled backups or point-in-time recovery, test a restore into a separate project, and document the process. List Firebase and Google Cloud as processors in your privacy notice, with the region used.
 
-## When Firebase Is — and Isn't — the Right Long-Term Fit
+## When Firebase Is - and Isn't - the Right Long-Term Fit
 
 Firebase suits apps with document-shaped data, real-time needs and moderate relational complexity. Apps that grow into heavy reporting, complex joins or strict relational integrity sometimes outgrow it and move reporting to a separate database or migrate entirely. A production review is a good moment to ask which direction your product is heading, so that today's hardening also fits tomorrow's architecture.
 
 ## Cloud Functions That Check Their Callers
 
-Moving trusted logic into Cloud Functions only helps if the functions verify who is calling. For callable functions, `context.auth` (or `request.auth` in newer SDKs) identifies the user; check it, then check membership and role against Firestore before acting. For HTTP functions used as webhooks — from Stripe or Mollie, for instance — verify the provider's signature or look up the payment status through the provider's API rather than trusting the payload. Never accept a user ID as a parameter and act on it without confirming it matches the caller. And because the Admin SDK bypasses security rules entirely, treat every function as its own security boundary with explicit checks and tests.
+Moving trusted logic into Cloud Functions only helps if the functions verify who is calling. For callable functions, `context.auth` (or `request.auth` in newer SDKs) identifies the user; check it, then check membership and role against Firestore before acting. For HTTP functions used as webhooks - from Stripe or Mollie, for instance - verify the provider's signature or look up the payment status through the provider's API rather than trusting the payload. Never accept a user ID as a parameter and act on it without confirming it matches the caller. And because the Admin SDK bypasses security rules entirely, treat every function as its own security boundary with explicit checks and tests.
 
 ## Enabling App Check Without Locking Out Users
 
-Firebase App Check helps ensure requests come from your real app. Roll it out gradually: first enable it in monitoring mode to see what share of requests would be rejected, fix any legitimate clients that fail (older app versions, local development), then enforce it for Firestore, Storage and Functions. Use debug tokens for development and CI. App Check reduces abuse of your backend by scripts, particularly for costly functions, but it complements — never replaces — security rules.
+Firebase App Check helps ensure requests come from your real app. Roll it out gradually: first enable it in monitoring mode to see what share of requests would be rejected, fix any legitimate clients that fail (older app versions, local development), then enforce it for Firestore, Storage and Functions. Use debug tokens for development and CI. App Check reduces abuse of your backend by scripts, particularly for costly functions, but it complements - never replaces - security rules.
 
 ## A Firebase Production Checklist
 
@@ -182,11 +182,11 @@ Working through these eight items takes most Firebase Studio prototypes from ope
 
 ## The Principle Behind It All
 
-In Firebase, the client is never trusted and the rules are the product's real perimeter. Write them as carefully as you write your features, test them as thoroughly and review them whenever the data model changes — and your AI prototype becomes something you can safely put in front of thousands of users.
+In Firebase, the client is never trusted and the rules are the product's real perimeter. Write them as carefully as you write your features, test them as thoroughly and review them whenever the data model changes - and your AI prototype becomes something you can safely put in front of thousands of users.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's Firebase work covers rules rewritten on deny-by-default principles with emulator tests in CI, Storage rules, sensitive logic moved into verified Cloud Functions, App Check, query and cost review, backups and region checks — without changing the app your users see. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience; Firebase is among the technologies its engineers in Ho Chi Minh City work with daily, alongside Supabase, PostgreSQL and MongoDB. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/) and Google's [Firestore security rules documentation](https://firebase.google.com/docs/firestore/security/get-started).
+LaunchStudio's Firebase work covers rules rewritten on deny-by-default principles with emulator tests in CI, Storage rules, sensitive logic moved into verified Cloud Functions, App Check, query and cost review, backups and region checks - without changing the app your users see. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience; Firebase is among the technologies its engineers in Ho Chi Minh City work with daily, alongside Supabase, PostgreSQL and MongoDB. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/) and Google's [Firestore security rules documentation](https://firebase.google.com/docs/firestore/security/get-started).
 
 To find out whether your rules hold, [send us your prototype link](https://launchstudio.eu/en/#contact) for free advice.
 
@@ -196,16 +196,16 @@ To find out whether your rules hold, [send us your prototype link](https://launc
 
 Chiara Rossi, a music teacher and choir director in Dordrecht, built Koorplanner in Firebase Studio: an app for amateur choirs to schedule rehearsals, share sheet music and practice recordings, track attendance and collect membership fees. Word spread through choir networks, and within a season 140 choirs and around 4,000 singers were using it.
 
-Two things happened in the same week. Chiara's Firebase bill tripled. And a choir member who worked in IT told her that, using the public config from the page, he could read the member lists — names, phone numbers, addresses — of every choir on the platform. The rules had been set to "authenticated users can read and write everything" after test mode expired. Storage rules were open, so sheet music purchased under licence by individual choirs could be downloaded by anyone. The membership-fee status was written by the client, so any member could mark themselves as paid. The attendance screen listened in real time to the entire attendance collection.
+Two things happened in the same week. Chiara's Firebase bill tripled. And a choir member who worked in IT told her that, using the public config from the page, he could read the member lists - names, phone numbers, addresses - of every choir on the platform. The rules had been set to "authenticated users can read and write everything" after test mode expired. Storage rules were open, so sheet music purchased under licence by individual choirs could be downloaded by anyone. The membership-fee status was written by the client, so any member could mark themselves as paid. The attendance screen listened in real time to the entire attendance collection.
 
 Over six business days, LaunchStudio's engineers rewrote Firestore and Storage rules on a deny-by-default basis scoped to choir membership and roles, with 48 emulator tests in CI; fixed the queries that relied on client-side filtering; moved fee status updates into a Cloud Function triggered by verified payment webhooks; enabled App Check; replaced the collection-wide listener with a scoped, paginated query; set budget alerts; and enabled scheduled backups with a test restore.
 
 **Result:** Cross-choir access was closed the day the new rules deployed, and affected choirs were informed. Chiara's Firebase bill dropped by about 70% from its peak, and Koorplanner grew to 230 choirs the following season.
 
-> *"The API key in the page was never the problem. The rules behind it were — and I didn't know they were the only lock on the door."*
-> — **Chiara Rossi, Founder, Koorplanner (Dordrecht)**
+> *"The API key in the page was never the problem. The rules behind it were - and I didn't know they were the only lock on the door."*
+> - **Chiara Rossi, Founder, Koorplanner (Dordrecht)**
 
-**Cost & Timeline:** €1,500 (Launch Ready package: security rules and tests, Cloud Functions, App Check, query and cost fixes, backups) — completed in 6 business days.
+**Cost & Timeline:** €1,500 (Launch Ready package: security rules and tests, Cloud Functions, App Check, query and cost fixes, backups) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -227,7 +227,7 @@ Usually because of queries that read whole collections, broad real-time listener
 
 ### How does Manifera's multi-database experience help Firebase founders?
 
-Manifera's engineers work across Firebase, Supabase, PostgreSQL and MongoDB, so they can judge whether Firebase remains the right fit as the product grows — and harden it properly if it does.
+Manifera's engineers work across Firebase, Supabase, PostgreSQL and MongoDB, so they can judge whether Firebase remains the right fit as the product grows - and harden it properly if it does.
 
 <script type="application/ld+json">
 {

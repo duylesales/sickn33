@@ -1,4 +1,4 @@
-⚖️ GDPR fines can hit 4% of global turnover. "We didn't design the system to allow deletion" isn't a defense — it's an admission that data protection by design was skipped entirely. 💶
+⚖️ GDPR fines can hit 4% of global turnover. "We didn't design the system to allow deletion" isn't a defense - it's an admission that data protection by design was skipped entirely. 💶
 
 **The Pain Points:**
 ❌ **Compliant on Paper Only:** Privacy policies exist, but the architecture can't actually fulfill erasure or portability rights.

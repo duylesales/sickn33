@@ -3,7 +3,7 @@
 "Move fast and break things" werkt voor UI-tests. Bij betalingen betekent één fout een chargeback en een klant die zich opgelicht voelt. Dit is waar het misgaat: 🧠
 
 ❌ AI-code vertrouwt op de browser-redirect als "bewijs" van betaling, niet op webhooks
-❌ Geen idempotentie — netwerk-retries veroorzaken dubbele facturering
+❌ Geen idempotentie - netwerk-retries veroorzaken dubbele facturering
 ❌ Geen automatische EU-btw of reverse-charge-validatie voor zakelijke klanten
 ❌ Stille webhook-storingen ontdekt u pas via een boze supportmail, dagen later
 

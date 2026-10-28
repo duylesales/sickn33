@@ -1,4 +1,4 @@
-🚨 Bram Kuiper bouwde FactuurFlow, een facturatietool voor freelancers, met Lovable — strak dashboard, snel zoeken, elf betalende bètaspelers binnen een maand. Hij had het zelf honderd keer getest. Wat hij nooit testte: wat er gebeurt als het zoekvak iets anders krijgt dan de naam van een klant. 😳
+🚨 Bram Kuiper bouwde FactuurFlow, een facturatietool voor freelancers, met Lovable - strak dashboard, snel zoeken, elf betalende bètaspelers binnen een maand. Hij had het zelf honderd keer getest. Wat hij nooit testte: wat er gebeurt als het zoekvak iets anders krijgt dan de naam van een klant. 😳
 
 Een werkende demo vertelt u vrijwel niets over of uw app het kan overleven wanneer iemand hem probeert te breken. 🧠
 
@@ -11,7 +11,7 @@ Een werkende demo vertelt u vrijwel niets over of uw app het kan overleven wanne
 ✅ Server-side invoervalidatie toevoegen over elk formulierveld in de app, niet alleen de voor de hand liggende
 ✅ Geautomatiseerde tests draaien die specifiek ontworpen zijn om misvormde invoer naar de database te sturen
 
-Bij **LaunchStudio** besteden onze technici hun dagen aan het lezen van precies dit soort door AI gegenereerde code en het dichten van de gaten die een soepele demo nooit onthult — dezelfde standaard die Manifera meebrengt voor haar enterprise-klanten vanuit Amsterdam. 🛡️
+Bij **LaunchStudio** besteden onze technici hun dagen aan het lezen van precies dit soort door AI gegenereerde code en het dichten van de gaten die een soepele demo nooit onthult - dezelfde standaard die Manifera meebrengt voor haar enterprise-klanten vanuit Amsterdam. 🛡️
 
 Bram's resultaat: queryversteviging en validatie over de hele app, voltooid in 5 werkdagen, waarbij de exacte aanval met misvormde invoer nu wordt opgevangen voordat deze de database bereikt. 🚀
 

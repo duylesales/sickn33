@@ -1,4 +1,4 @@
-🔓 Joost van Dijk built MarketWeigh in Bolt — an inventory and invoicing SaaS for Alkmaar's cheese-market vendors — and onboarded eleven paying vendors in the first month. Then a fellow founder, just poking around, found his live Stripe secret key sitting in plain sight in the browser's network requests.
+🔓 Joost van Dijk built MarketWeigh in Bolt - an inventory and invoicing SaaS for Alkmaar's cheese-market vendors - and onboarded eleven paying vendors in the first month. Then a fellow founder, just poking around, found his live Stripe secret key sitting in plain sight in the browser's network requests.
 
 Bolt is built to get an app running, not to audit where every credential ends up. 🧠
 

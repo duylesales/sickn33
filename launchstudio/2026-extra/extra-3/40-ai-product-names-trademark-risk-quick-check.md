@@ -31,45 +31,45 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-A founder naming a new AI product typically checks one thing carefully — is the domain name available — and treats that availability as sufficient confirmation the name is genuinely usable. Domain availability and trademark availability are entirely different checks, answering entirely different questions, and a name can have a perfectly available domain while carrying real trademark risk that only becomes apparent once real money and real brand recognition are already invested in it.
+A founder naming a new AI product typically checks one thing carefully - is the domain name available - and treats that availability as sufficient confirmation the name is genuinely usable. Domain availability and trademark availability are entirely different checks, answering entirely different questions, and a name can have a perfectly available domain while carrying real trademark risk that only becomes apparent once real money and real brand recognition are already invested in it.
 
 ## Why Domain Availability Tells You Almost Nothing About Trademark Risk
 
-A domain registrar checks whether a specific domain string is currently registered by anyone else — a narrow, purely technical availability question. Trademark risk concerns whether your specific name, used in your specific industry category, conflicts with an existing registered trademark or even an unregistered but established prior use in a similar space — a genuinely different legal question that domain availability provides zero information about either way.
+A domain registrar checks whether a specific domain string is currently registered by anyone else - a narrow, purely technical availability question. Trademark risk concerns whether your specific name, used in your specific industry category, conflicts with an existing registered trademark or even an unregistered but established prior use in a similar space - a genuinely different legal question that domain availability provides zero information about either way.
 
 ## Why This Specifically Matters More for AI Products Right Now
 
-The current wave of AI-native product naming has produced a genuinely crowded namespace, with many founders independently gravitating toward similar naming patterns — often incorporating "AI," a short invented word, or common tech-adjacent terms — increasing the odds that a name a founder considers original has already been used, registered, or is close enough to an existing mark to create genuine conflict risk, simply because so many other founders are drawing from the same relatively narrow naming conventions at the same time.
+The current wave of AI-native product naming has produced a genuinely crowded namespace, with many founders independently gravitating toward similar naming patterns - often incorporating "AI," a short invented word, or common tech-adjacent terms - increasing the odds that a name a founder considers original has already been used, registered, or is close enough to an existing mark to create genuine conflict risk, simply because so many other founders are drawing from the same relatively narrow naming conventions at the same time.
 
 ## What a Reasonable, Proportionate Check Actually Involves
 
-This doesn't require a full formal trademark search and legal opinion before naming anything — that level of rigor is reasonable once a name is seriously being committed to, but a lighter proportionate first check is achievable early: searching the specific name alongside your product category in a trademark database search tool, checking whether any existing company in a closely related space already uses the same or a confusingly similar name, and specifically avoiding names that closely resemble an already well-known product in an adjacent category.
+This doesn't require a full formal trademark search and legal opinion before naming anything - that level of rigor is reasonable once a name is seriously being committed to, but a lighter proportionate first check is achievable early: searching the specific name alongside your product category in a trademark database search tool, checking whether any existing company in a closely related space already uses the same or a confusingly similar name, and specifically avoiding names that closely resemble an already well-known product in an adjacent category.
 
 ## Why Discovering This Late Is Considerably More Costly Than Checking Early
 
-A naming conflict discovered before any real investment in the name — before marketing spend, before customer recognition, before the name is printed anywhere permanent — is a minor inconvenience requiring a quick pivot. The same conflict discovered after months of marketing investment, customer familiarity, and brand-building around the name becomes a genuinely costly, disruptive problem, mirroring the same "cheaper to address early" pattern covered throughout broader guidance regarding other categories of production-readiness risk, applied here to naming and brand decisions rather than technical architecture.
+A naming conflict discovered before any real investment in the name - before marketing spend, before customer recognition, before the name is printed anywhere permanent - is a minor inconvenience requiring a quick pivot. The same conflict discovered after months of marketing investment, customer familiarity, and brand-building around the name becomes a genuinely costly, disruptive problem, mirroring the same "cheaper to address early" pattern covered throughout broader guidance regarding other categories of production-readiness risk, applied here to naming and brand decisions rather than technical architecture.
 
 ## When a More Formal Trademark Search Genuinely Becomes Worth the Investment
 
-Once a name survives this lighter, proportionate initial check and a founder is ready to commit meaningfully — investing in marketing, applying for the founder's own trademark registration, or approaching investors — a more formal, professional trademark search becomes a reasonable and proportionate next investment, rather than something every founder needs before even considering a name during early brainstorming.
+Once a name survives this lighter, proportionate initial check and a founder is ready to commit meaningfully - investing in marketing, applying for the founder's own trademark registration, or approaching investors - a more formal, professional trademark search becomes a reasonable and proportionate next investment, rather than something every founder needs before even considering a name during early brainstorming.
 
 [LaunchStudio](https://launchstudio.eu/en/) helps founders think through this proportionate naming risk check as part of broader launch preparation conversations, flagging when a name warrants more formal legal review before significant investment, backed by Manifera's broader experience helping founders avoid costly, avoidable mistakes during the earliest, cheapest-to-fix stage of building a company.
 
-[Check your name before you build your brand around it](https://launchstudio.eu/en/#contact) — domain availability and trademark safety are genuinely different questions.
+[Check your name before you build your brand around it](https://launchstudio.eu/en/#contact) - domain availability and trademark safety are genuinely different questions.
 
 ## Four Trademark Risk Categories Founders Consistently Underestimate
 
-The lighter, proportionate check covered above — a database search, a look at adjacent competitors — catches the most obvious conflicts. A handful of specific risk categories tend to slip past that first pass anyway, not because the check was done poorly, but because these categories aren't the first thing most founders think to look for.
+The lighter, proportionate check covered above - a database search, a look at adjacent competitors - catches the most obvious conflicts. A handful of specific risk categories tend to slip past that first pass anyway, not because the check was done poorly, but because these categories aren't the first thing most founders think to look for.
 
-**Sound-alike and look-alike names, not just identical ones.** Trademark conflict risk isn't limited to an exact name match — a name that sounds similar when spoken, or that a reasonable customer might visually confuse with an existing mark in the same category, can carry real conflict risk even without being spelled identically. A quick database search for the exact name a founder has in mind can pass cleanly while a genuinely similar-sounding competitor name sits one search away, uncaught simply because the search term itself wasn't broad enough.
+**Sound-alike and look-alike names, not just identical ones.** Trademark conflict risk isn't limited to an exact name match - a name that sounds similar when spoken, or that a reasonable customer might visually confuse with an existing mark in the same category, can carry real conflict risk even without being spelled identically. A quick database search for the exact name a founder has in mind can pass cleanly while a genuinely similar-sounding competitor name sits one search away, uncaught simply because the search term itself wasn't broad enough.
 
-**Trademark class and category matter more than founders assume.** Trademarks are typically registered against specific categories of goods and services, meaning the same name can, in principle, coexist for genuinely unrelated categories without conflict — but "unrelated" is doing real work in that sentence, and two products that both plausibly count as software, even in different niches, are often close enough in classification to create genuine risk that a founder assuming "we're in totally different industries" can easily underestimate.
+**Trademark class and category matter more than founders assume.** Trademarks are typically registered against specific categories of goods and services, meaning the same name can, in principle, coexist for genuinely unrelated categories without conflict - but "unrelated" is doing real work in that sentence, and two products that both plausibly count as software, even in different niches, are often close enough in classification to create genuine risk that a founder assuming "we're in totally different industries" can easily underestimate.
 
-**Established but unregistered use can still create risk.** Trademark protection isn't limited to formally registered marks in every jurisdiction — a competitor with a long-standing, well-established but unregistered use of a similar name in the same space can, depending on the jurisdiction and specifics, still have a legitimate claim, meaning a database search covering only formal registrations doesn't necessarily surface every source of genuine risk.
+**Established but unregistered use can still create risk.** Trademark protection isn't limited to formally registered marks in every jurisdiction - a competitor with a long-standing, well-established but unregistered use of a similar name in the same space can, depending on the jurisdiction and specifics, still have a legitimate claim, meaning a database search covering only formal registrations doesn't necessarily surface every source of genuine risk.
 
-**International exposure a domestic-only search misses entirely.** A founder searching only their home country's trademark database gets a false sense of completeness if the product has any realistic path to operating in other markets, since a name clear domestically can still conflict with an existing mark in a market the founder plans to expand into later — a gap that only matters if expansion is realistic, but one worth at least considering deliberately rather than assuming a single domestic search covers every market the product might eventually reach.
+**International exposure a domestic-only search misses entirely.** A founder searching only their home country's trademark database gets a false sense of completeness if the product has any realistic path to operating in other markets, since a name clear domestically can still conflict with an existing mark in a market the founder plans to expand into later - a gap that only matters if expansion is realistic, but one worth at least considering deliberately rather than assuming a single domestic search covers every market the product might eventually reach.
 
-None of these categories mean the lighter, proportionate check covered above isn't worth doing — it remains the right first step, and it catches the most common and most costly conflicts. What these four categories add is a sense of where that first pass's blind spots tend to sit, so a founder knows specifically what a more formal search, once it's genuinely warranted, is actually checking for beyond what a quick self-service search already covered.
+None of these categories mean the lighter, proportionate check covered above isn't worth doing - it remains the right first step, and it catches the most common and most costly conflicts. What these four categories add is a sense of where that first pass's blind spots tend to sit, so a founder knows specifically what a more formal search, once it's genuinely warranted, is actually checking for beyond what a quick self-service search already covered.
 
 ## Real example
 
@@ -77,14 +77,14 @@ None of these categories mean the lighter, proportionate check covered above isn
 
 Kirsten, a former marketing coordinator turned founder in Enschede, built her AI tool for small event planners under the name FlowPlan, confirming only that the FlowPlan.com domain was available before committing fully to the name across her marketing, social presence, and early customer communications.
 
-Roughly six months after launch, Kirsten received a formal cease-and-desist letter from an established project management software company using a confusingly similar name in a closely adjacent software category, with their own registered trademark predating Kirsten's use — a conflict a basic trademark database search, had she run one before committing to the name, would very likely have surfaced early.
+Roughly six months after launch, Kirsten received a formal cease-and-desist letter from an established project management software company using a confusingly similar name in a closely adjacent software category, with their own registered trademark predating Kirsten's use - a conflict a basic trademark database search, had she run one before committing to the name, would very likely have surfaced early.
 
-**Result:** Kirsten worked with LaunchStudio to plan and execute a rebrand under a new name — checked properly this time against both domain availability and trademark risk — minimizing further disruption, though the six months of marketing investment, customer familiarity, and brand materials built around the original name represented real, avoidable cost that a simple search early on would have prevented entirely.
+**Result:** Kirsten worked with LaunchStudio to plan and execute a rebrand under a new name - checked properly this time against both domain availability and trademark risk - minimizing further disruption, though the six months of marketing investment, customer familiarity, and brand materials built around the original name represented real, avoidable cost that a simple search early on would have prevented entirely.
 
 > *"I checked the domain, saw it was available, and just went with it. It never occurred to me that 'nobody else owns this exact domain' and 'nobody else has a legal claim to this name in my industry' were completely different questions, until a lawyer's letter arrived six months and a lot of marketing spend later."*
-> — **Kirsten Meijer, Founder (Enschede)**
+> - **Kirsten Meijer, Founder (Enschede)**
 
-**Cost & Timeline:** €700 (naming risk assessment for rebrand) — completed in 3 business days.
+**Cost & Timeline:** €700 (naming risk assessment for rebrand) - completed in 3 business days.
 
 ---
 
@@ -92,7 +92,7 @@ Roughly six months after launch, Kirsten received a formal cease-and-desist lett
 
 ### Is a basic trademark database search something a non-technical founder can genuinely do themselves?
 
-Yes — most trademark database search tools are designed for public, self-service use and don't require legal training to run a basic search, though interpreting genuinely ambiguous results may still warrant a quick professional opinion.
+Yes - most trademark database search tools are designed for public, self-service use and don't require legal training to run a basic search, though interpreting genuinely ambiguous results may still warrant a quick professional opinion.
 
 ### At what stage should a founder do the lighter, proportionate name check described in this article?
 
@@ -100,15 +100,15 @@ As early as possible, ideally during initial brainstorming before any real attac
 
 ### Does having an available domain and social media handles provide any meaningful signal about trademark safety?
 
-Very limited signal — domain and handle availability check whether a specific string is technically unclaimed on that particular platform, entirely separate from whether the name itself carries legal trademark conflict risk in your specific industry.
+Very limited signal - domain and handle availability check whether a specific string is technically unclaimed on that particular platform, entirely separate from whether the name itself carries legal trademark conflict risk in your specific industry.
 
 ### How would a founder know if their situation, like Kirsten's, warrants a formal legal opinion versus the lighter self-service check?
 
-If a basic search surfaces anything genuinely ambiguous — a similar name in an adjacent category, an existing registered mark that's close but not identical — that ambiguity itself is the signal to invest in a formal opinion before proceeding further, rather than guessing at the risk level yourself.
+If a basic search surfaces anything genuinely ambiguous - a similar name in an adjacent category, an existing registered mark that's close but not identical - that ambiguity itself is the signal to invest in a formal opinion before proceeding further, rather than guessing at the risk level yourself.
 
 ### Is rebranding after discovering a conflict, like Kirsten did, always the necessary outcome once a conflict is found?
 
-Not always — depending on the specific circumstances, negotiated resolution or demonstrating sufficiently different market positioning are sometimes possible alternatives to a full rebrand, though these outcomes are genuinely uncertain and typically require legal guidance specific to the actual conflict.
+Not always - depending on the specific circumstances, negotiated resolution or demonstrating sufficiently different market positioning are sometimes possible alternatives to a full rebrand, though these outcomes are genuinely uncertain and typically require legal guidance specific to the actual conflict.
 
 <script type="application/ld+json">
 {
@@ -136,7 +136,7 @@ Not always — depending on the specific circumstances, negotiated resolution or
       "name": "Does having an available domain provide any signal about trademark safety?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very limited signal — domain availability is entirely separate from whether a name carries trademark conflict risk."
+        "text": "Very limited signal - domain availability is entirely separate from whether a name carries trademark conflict risk."
       }
     },
     {
@@ -152,7 +152,7 @@ Not always — depending on the specific circumstances, negotiated resolution or
       "name": "Is rebranding always the necessary outcome once a conflict is found?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not always — negotiated resolution or demonstrating different positioning are sometimes possible alternatives, though uncertain."
+        "text": "Not always - negotiated resolution or demonstrating different positioning are sometimes possible alternatives, though uncertain."
       }
     }
   ]

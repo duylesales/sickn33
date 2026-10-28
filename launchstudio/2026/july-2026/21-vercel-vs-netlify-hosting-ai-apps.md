@@ -95,7 +95,7 @@ Elijah partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 **Result:** Elijah achieved a 100% build success rate and smooth routing across all booking pages.
 
-**Cost & Timeline:** €850 (Hosting & Deployment Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €850 (Hosting & Deployment Package) - production-ready and deployed in 3 business days.
 
 ---
 

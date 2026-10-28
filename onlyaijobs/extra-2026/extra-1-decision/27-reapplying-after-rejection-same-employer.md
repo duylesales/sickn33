@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Six months ago you reached the final round at a company you genuinely wanted to join, and someone else got the job. Now a similar vacancy has appeared. The instinct is to assume the door is closed — you were measured and found wanting, and applying again looks like not taking the hint. That instinct is usually wrong. In a market the size of the Dutch AI sector, hiring managers remember strong runners-up, roles are filled for reasons that have little to do with the rejected candidate, and reapplying is common enough that recruiters are neither surprised nor annoyed by it. What matters is understanding which kind of rejection you received.
+Six months ago you reached the final round at a company you genuinely wanted to join, and someone else got the job. Now a similar vacancy has appeared. The instinct is to assume the door is closed - you were measured and found wanting, and applying again looks like not taking the hint. That instinct is usually wrong. In a market the size of the Dutch AI sector, hiring managers remember strong runners-up, roles are filled for reasons that have little to do with the rejected candidate, and reapplying is common enough that recruiters are neither surprised nor annoyed by it. What matters is understanding which kind of rejection you received.
 
 ## The Five Kinds of Rejection
 
@@ -49,7 +49,7 @@ Six months ago you reached the final round at a company you genuinely wanted to 
 
 **A poor fit that is unlikely to change.** Concerns about how you work, communicate or approach problems, or a mismatch with what the team needs.
 
-The first three are essentially neutral. The fourth is actionable. Only the fifth genuinely argues against reapplying — and it is also the rarest, because employers seldom articulate it directly.
+The first three are essentially neutral. The fourth is actionable. Only the fifth genuinely argues against reapplying - and it is also the rarest, because employers seldom articulate it directly.
 
 ## How to Find Out Which One You Got
 
@@ -65,7 +65,7 @@ There is no rule, but three practical guidelines help.
 
 **For a different role at the same employer, apply immediately.** If a vacancy appears that fits you better, the previous rejection is not an obstacle. Reference it briefly and positively.
 
-**For a similar role, wait until something has changed.** Either on your side — a new skill, a shipped project, a relevant domain move — or on theirs, such as a new team or a different manager. Six months is a common interval, but the change matters more than the calendar.
+**For a similar role, wait until something has changed.** Either on your side - a new skill, a shipped project, a relevant domain move - or on theirs, such as a new team or a different manager. Six months is a common interval, but the change matters more than the calendar.
 
 **For the same role reposted within weeks,** be cautious. If they rejected you and immediately republished the vacancy, something about the requirements was not met, and applying again without addressing it rarely helps.
 
@@ -77,7 +77,7 @@ There is no rule, but three practical guidelines help.
 
 **Reference the previous process, briefly.** One sentence: you applied for X in spring, enjoyed the conversation with a named person, and are applying now because of a specific change. This reads as self-aware rather than persistent.
 
-**Do not rehash the old application.** Applicant tracking systems keep your history, and a recruiter who sees an identical CV concludes that nothing changed — because nothing did.
+**Do not rehash the old application.** Applicant tracking systems keep your history, and a recruiter who sees an identical CV concludes that nothing changed - because nothing did.
 
 ## When Reapplying Is Clearly Worth It
 
@@ -101,13 +101,13 @@ There is also a self-protective reason to move on. A search focused on one emplo
 
 ## Your Data From the Previous Application
 
-Under the **GDPR**, you can ask what an employer still holds about you, including notes and assessment results, and request deletion. Dutch guidance from the **Dutch Data Protection Authority** indicates application data should generally be deleted within a short period after a procedure ends, unless you consented to longer retention — which is the mechanism behind an employer's talent pool.
+Under the **GDPR**, you can ask what an employer still holds about you, including notes and assessment results, and request deletion. Dutch guidance from the **Dutch Data Protection Authority** indicates application data should generally be deleted within a short period after a procedure ends, unless you consented to longer retention - which is the mechanism behind an employer's talent pool.
 
 Two practical implications. If you consented to retention, the employer may contact you when a role appears, which is worth saying yes to at strong employers. And when you reapply, assume your previous application and any notes may still be visible, which is another reason for consistency between the two.
 
 ## The Employer's Perspective
 
-Hiring managers usually remember good candidates they could not hire, and recruiters keep informal lists. A second application from someone who was close, who has visibly developed and who is clearly still interested is welcome — it reduces their risk and their sourcing effort.
+Hiring managers usually remember good candidates they could not hire, and recruiters keep informal lists. A second application from someone who was close, who has visibly developed and who is clearly still interested is welcome - it reduces their risk and their sourcing effort.
 
 What irritates them is not persistence but inattention: the same application again, an approach that ignores the previous process, or pressure implying that a rejection was unjust. Neither occurs when you apply thoughtfully to a role that genuinely fits.
 
@@ -123,13 +123,13 @@ The months between a rejection and a second application are not empty. Candidate
 
 **Share work occasionally.** A repository, a short write-up, a talk. This is not self-promotion for its own sake; it is evidence accumulating in public while you wait.
 
-**Do not check in for the sake of checking in.** A message every two months asking whether anything has opened is counterproductive. One message with a genuine reason — a new project finished, a relevant qualification, a specific vacancy — is welcome.
+**Do not check in for the sake of checking in.** A message every two months asking whether anything has opened is counterproductive. One message with a genuine reason - a new project finished, a relevant qualification, a specific vacancy - is welcome.
 
 ## What Changes on the Employer's Side
 
 It helps to know that the organisation is not static either. Managers change, teams are reorganised, budgets return, and the person who preferred another candidate may no longer be involved.
 
-That is why a second application six or twelve months later is frequently evaluated by different people against different needs. A profile that was "not quite what we need now" in spring can be exactly what a newly formed team needs in autumn — and the employer will not think to tell you.
+That is why a second application six or twelve months later is frequently evaluated by different people against different needs. A profile that was "not quite what we need now" in spring can be exactly what a newly formed team needs in autumn - and the employer will not think to tell you.
 
 ## Real example
 
@@ -139,7 +139,7 @@ A data engineer reaches the final two for a role at an energy-sector organisatio
 
 He spends the next months deliberately: at his current employer he volunteers for a project involving event-based pipelines, and documents it carefully. Seven months later a similar vacancy appears at the same organisation.
 
-He applies, references the earlier process in one sentence, and describes the streaming work in three. The recruiter remembers him and the interview starts from a different place — not "can you do this?" but "tell us how the project went".
+He applies, references the earlier process in one sentence, and describes the streaming work in three. The recruiter remembers him and the interview starts from a different place - not "can you do this?" but "tell us how the project went".
 
 He is hired. In his first week the hiring manager mentions that they had hoped he would come back, which nobody had told him at the time.
 
@@ -149,7 +149,7 @@ Candidates overestimate how vividly a rejection is remembered and underestimate 
 
 Recruiters handle many processes, and the details of a specific candidate fade within months unless something stood out. Hiring managers are different: they usually remember the two or three people who reached the final stage of a role they cared about, sometimes for years, because those conversations were few and consequential.
 
-That asymmetry works in your favour. The recruiter may need reminding who you are, which a single sentence in your new application solves. The manager, if they are still there, often remembers you better than you expect — including the specific thing that impressed them.
+That asymmetry works in your favour. The recruiter may need reminding who you are, which a single sentence in your new application solves. The manager, if they are still there, often remembers you better than you expect - including the specific thing that impressed them.
 
 It also means the passage of time is rarely the obstacle. Applying eighteen months later is fine; the question is whether something has changed, not whether too long has passed. And if the original hiring manager has moved on, you are effectively a new candidate to the people now deciding, which removes the awkwardness entirely.
 
@@ -165,7 +165,7 @@ One practical consequence: keep the name of the person you spoke with. A reappli
 
 ## Where to Start
 
-Before deciding whether to try the same employer again, check how many comparable employers within your radius are hiring right now — the answer often settles the question.
+Before deciding whether to try the same employer again, check how many comparable employers within your radius are hiring right now - the answer often settles the question.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -184,16 +184,16 @@ Ask once, politely. Many Dutch employers follow a code that expects reasons on r
 Often yes, within their retention period, which is why consistency between applications matters. You can also ask what is held and request deletion under the GDPR.
 
 ### (Scenario: candidate rejected repeatedly) When should I stop applying to one employer?
-After repeated early-stage rejections, or when feedback pointed to fundamentals that have not changed — at that point your attention is better spent elsewhere.
+After repeated early-stage rejections, or when feedback pointed to fundamentals that have not changed - at that point your attention is better spent elsewhere.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it acceptable to apply again to a company that rejected me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — runners-up are often remembered positively, especially when the gap is addressed."}},
+    {"@type": "Question", "name": "Is it acceptable to apply again to a company that rejected me?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - runners-up are often remembered positively, especially when the gap is addressed."}},
     {"@type": "Question", "name": "How long should I wait before reapplying?", "acceptedAnswer": {"@type": "Answer", "text": "Immediately for a different role; for a similar one, once something meaningful has changed."}},
-    {"@type": "Question", "name": "What if they never told me why I was rejected?", "acceptedAnswer": {"@type": "Answer", "text": "Ask once — many Dutch employers provide reasons on request."}},
+    {"@type": "Question", "name": "What if they never told me why I was rejected?", "acceptedAnswer": {"@type": "Answer", "text": "Ask once - many Dutch employers provide reasons on request."}},
     {"@type": "Question", "name": "Can the employer still see my previous application?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes within their retention period; you can request access or deletion."}},
     {"@type": "Question", "name": "When should I stop applying to one employer?", "acceptedAnswer": {"@type": "Answer", "text": "After repeated early rejections or unchanged fundamental feedback."}}
   ]

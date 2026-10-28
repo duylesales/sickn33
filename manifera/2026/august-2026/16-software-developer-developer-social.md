@@ -10,7 +10,7 @@ The definition of elite **software devs** has fundamentally shifted. CTOs, if yo
 2️⃣ **"Day 2" Obsession:** Mediocre devs celebrate when it compiles locally. Elite devs instrument their code with Datadog and Terraform, terrified of what happens *after* deployment.
 3️⃣ **Boring Tech Preference:** They don't rewrite a working module just to try a shiny new framework. They choose proven, "boring" tech (like Node.js + Postgres) because they care about business ROI, not GitHub stars.
 
-At Manifera, our Hub-and-Spoke model ensures we only hire disciplined, architectural thinkers in our offshore hubs—not "cowboy coders." 
+At Manifera, our Hub-and-Spoke model ensures we only hire disciplined, architectural thinkers in our offshore hubs - not "cowboy coders." 
 
 👇 See how the anatomy of a software engineer has changed in the AI era:
 [Read the full breakdown here: manifera.com/blog/anatomy-of-a-10x-software-developer-in-ai-era]

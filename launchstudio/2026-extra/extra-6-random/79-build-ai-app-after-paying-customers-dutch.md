@@ -19,7 +19,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Er is een specifieke mijlpaal die elke oprichter zich herinnert: het weekend waarin hij erin slaagde een AI-app te bouwen die daadwerkelijk werkte. Een prompt, een paar iteraties, en plotseling staat er een echt, functionerend product waar er eerder niets was. Het is een oprechte prestatie, en het is ook, stilletjes, het makkelijke deel. De veel moeilijkere, veel minder besproken mijlpaal komt later — de dag dat betalende klanten diezelfde app dagelijks gaan gebruiken, en "gebouwd" blijkt iets engers te hebben betekend dan iedereen besefte.
+Er is een specifieke mijlpaal die elke oprichter zich herinnert: het weekend waarin hij erin slaagde een AI-app te bouwen die daadwerkelijk werkte. Een prompt, een paar iteraties, en plotseling staat er een echt, functionerend product waar er eerder niets was. Het is een oprechte prestatie, en het is ook, stilletjes, het makkelijke deel. De veel moeilijkere, veel minder besproken mijlpaal komt later - de dag dat betalende klanten diezelfde app dagelijks gaan gebruiken, en "gebouwd" blijkt iets engers te hebben betekend dan iedereen besefte.
 
 ## "Gebouwd" is een demo-vormig woord
 
@@ -31,13 +31,13 @@ Een app met tien casual gebruikers die tijdens het testen wat rondklikken, gedra
 
 ## "Ondersteunbaar" is de mijlpaal die niemand benoemt
 
-Er is een mijlpaal tussen "gebouwd" en "opgeschaald" die zelden een eigen naam krijgt: ondersteunbaar. Een ondersteunbare app is er een waarbij, wanneer er iets kapotgaat, u kunt achterhalen wat er kapot is, het repareren, en verloren data herstellen zonder helemaal opnieuw te beginnen. Het vereist logging die daadwerkelijk vastlegt wat de app doet, een back-up- en herstelproces dat is getest — niet alleen aangenomen te werken — en genoeg zichtbaarheid in het systeem zodat een probleem geen giswerk vereist om te diagnosticeren. Niets hiervan is glamoureus. Niets ervan verschijnt in een demo. Het is allemaal het verschil tussen een slechte dag en een dag die het einde van het bedrijf betekent, zodra echte klanten van het product afhankelijk zijn.
+Er is een mijlpaal tussen "gebouwd" en "opgeschaald" die zelden een eigen naam krijgt: ondersteunbaar. Een ondersteunbare app is er een waarbij, wanneer er iets kapotgaat, u kunt achterhalen wat er kapot is, het repareren, en verloren data herstellen zonder helemaal opnieuw te beginnen. Het vereist logging die daadwerkelijk vastlegt wat de app doet, een back-up- en herstelproces dat is getest - niet alleen aangenomen te werken - en genoeg zichtbaarheid in het systeem zodat een probleem geen giswerk vereist om te diagnosticeren. Niets hiervan is glamoureus. Niets ervan verschijnt in een demo. Het is allemaal het verschil tussen een slechte dag en een dag die het einde van het bedrijf betekent, zodra echte klanten van het product afhankelijk zijn.
 
 ## Wat er verandert zodra klanten betalen
 
-Op het moment dat er echt geld van eigenaar wisselt, houdt de kostprijs van een niet-ondersteunbare app op hypothetisch te zijn. Een bug die tijdens gratis testen een schouderophalen zou zijn geweest, wordt een terugbetalingsverzoek, een opgezegd abonnement, of een klant die stilletjes stopt met het product te vertrouwen. Dit is het punt waarop het de moeite waard is om "een AI-app bouwen" en "een ondersteunbare AI-app draaien voor betalende klanten" als twee aparte projecten te behandelen, elk met zijn eigen checklist — want dat zijn ze.
+Op het moment dat er echt geld van eigenaar wisselt, houdt de kostprijs van een niet-ondersteunbare app op hypothetisch te zijn. Een bug die tijdens gratis testen een schouderophalen zou zijn geweest, wordt een terugbetalingsverzoek, een opgezegd abonnement, of een klant die stilletjes stopt met het product te vertrouwen. Dit is het punt waarop het de moeite waard is om "een AI-app bouwen" en "een ondersteunbare AI-app draaien voor betalende klanten" als twee aparte projecten te behandelen, elk met zijn eigen checklist - want dat zijn ze.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, specifiek voor deze overgang — het nemen van een in een weekend gebouwde AI-app en die ondersteunbaar maken zonder de frontend van de oprichter te herbouwen. Ons team, waaronder engineers gevestigd in Amsterdam, behandelt precies dit soort productie-hardening werk als een afgebakend, omschreven traject. U kunt [bekijken welk pakket past bij waar uw app zich momenteel bevindt](https://launchstudio.eu/nl/#packages) voordat uw volgende betalende klant het gat voor u ontdekt. Voor meer over hoe Manifera dit soort werk benadert, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
+LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, specifiek voor deze overgang - het nemen van een in een weekend gebouwde AI-app en die ondersteunbaar maken zonder de frontend van de oprichter te herbouwen. Ons team, waaronder engineers gevestigd in Amsterdam, behandelt precies dit soort productie-hardening werk als een afgebakend, omschreven traject. U kunt [bekijken welk pakket past bij waar uw app zich momenteel bevindt](https://launchstudio.eu/nl/#packages) voordat uw volgende betalende klant het gat voor u ontdekt. Voor meer over hoe Manifera dit soort werk benadert, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
 ## De Zelfevaluatie Ondersteunbaarheid: Zes Vragen Vóór Uw Volgende Klantaanmelding
 
@@ -60,18 +60,18 @@ Scoort u op meer dan twee vragen een 'nee', neem dan een pas op de plaats. Een a
 
 ### Een AI-native oprichter in actie: gebouwd in een weekend, getest door tien vastgoedbeheerders
 
-Tobias Krimpen, een oprichter uit Krimpen aan den IJssel, bouwde "LanceerApp", een huurinspectietool voor vastgoedbeheerders, met Lovable. De bouw zelf duurde één weekend — het beschrijven van de inspectieworkflow, itereren op de interface, en aankomen bij een werkende app sneller dan hij had verwacht. Hij tekende kort daarna zijn eerste tien betalende vastgoedbeheerders, die elk dagelijks vertrouwden op LanceerApp om huurinspecties bij hun panden te loggen en bij te houden.
+Tobias Krimpen, een oprichter uit Krimpen aan den IJssel, bouwde "LanceerApp", een huurinspectietool voor vastgoedbeheerders, met Lovable. De bouw zelf duurde één weekend - het beschrijven van de inspectieworkflow, itereren op de interface, en aankomen bij een werkende app sneller dan hij had verwacht. Hij tekende kort daarna zijn eerste tien betalende vastgoedbeheerders, die elk dagelijks vertrouwden op LanceerApp om huurinspecties bij hun panden te loggen en bij te houden.
 
-Pas toen die tien klanten de app dagelijks gebruikten, ontdekte Tobias wat "gebouwd" niet had omvat. Er was helemaal geen logging in de app, dus toen een vastgoedbeheerder meldde dat een inspectieregistratie ogenschijnlijk was verdwenen, had Tobias geen manier om te achterhalen wat er daadwerkelijk was gebeurd — geen registratie van wat het systeem had gedaan, alleen een ontbrekende invoer en een verwarde klant. Er was ook geen back-up-herstelproces; de enige kopie van de data was wat er momenteel in de live database bestond, zonder geteste manier om iets te herstellen als het ooit verloren zou gaan of corrupt zou raken. Het diagnosticeren van elk probleem betekende gissen, omdat niets in de app was gebouwd om zichzelf uit te leggen.
+Pas toen die tien klanten de app dagelijks gebruikten, ontdekte Tobias wat "gebouwd" niet had omvat. Er was helemaal geen logging in de app, dus toen een vastgoedbeheerder meldde dat een inspectieregistratie ogenschijnlijk was verdwenen, had Tobias geen manier om te achterhalen wat er daadwerkelijk was gebeurd - geen registratie van wat het systeem had gedaan, alleen een ontbrekende invoer en een verwarde klant. Er was ook geen back-up-herstelproces; de enige kopie van de data was wat er momenteel in de live database bestond, zonder geteste manier om iets te herstellen als het ooit verloren zou gaan of corrupt zou raken. Het diagnosticeren van elk probleem betekende gissen, omdat niets in de app was gebouwd om zichzelf uit te leggen.
 
 LaunchStudio werd ingeschakeld om dat specifieke gat te dichten. Onze engineers voegden gestructureerde logging toe aan de kern-inspectieworkflows van LanceerApp, richtten geautomatiseerde, geteste databaseback-ups in met een geverifieerd herstelproces, en bouwden een basale diagnostische weergave zodat Tobias kon zien wat het systeem daadwerkelijk had gedaan wanneer een klant een probleem meldde, in plaats van te gissen.
 
 **Resultaat:** LanceerApp logt nu elke inspectieactie en kan binnen enkele minuten herstellen vanaf een geverifieerde back-up, wat Tobias de zichtbaarheid geeft die het dagelijkse gebruik van zijn tien betalende vastgoedbeheerders daadwerkelijk vereiste.
 
 > *"De bouw duurde een weekend. Beseffen wat 'gebouwd' niet omvatte, kostte een telefoontje van een verwarde klant."*
-> — **Tobias Krimpen, oprichter, LanceerApp (Krimpen aan den IJssel)**
+> - **Tobias Krimpen, oprichter, LanceerApp (Krimpen aan den IJssel)**
 
-**Kosten en tijdlijn:** € 1.300 (logging, back-up- en herstelproces, diagnostische tooling) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (logging, back-up- en herstelproces, diagnostische tooling) - voltooid in 6 werkdagen.
 
 ---
 

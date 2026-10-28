@@ -54,7 +54,7 @@ They will place a massive, static S3 bucket behind a standard API Gateway withou
 
 ## The Three Pillars of Elite Cloud Engineering
 
-To identify a truly elite cloud software developer—or to audit the capabilities of an [offshore cloud engineering team](https://www.manifera.com)—you must demand expertise in the following three architectural pillars.
+To identify a truly elite cloud software developer - or to audit the capabilities of an [offshore cloud engineering team](https://www.manifera.com) - you must demand expertise in the following three architectural pillars.
 
 ### 1. Infrastructure as Code (IaC)
 
@@ -64,7 +64,7 @@ They utilize tools like Terraform, AWS CloudFormation, or Pulumi. If you ask an 
 
 This guarantees **Idempotency**. If a datacenter burns down, the CTO can deploy the exact same infrastructure into a different AWS region in three minutes simply by re-running the script. There is zero configuration drift.
 
-The link between this discipline and organizational performance is not anecdotal. Google Cloud's DORA (DevOps Research and Assessment) 2024 *State of DevOps Report* — the longest-running, most cited research program on software delivery performance, based on tens of thousands of survey responses collected annually — found that "elite" performing teams deploy on demand, multiple times per day, with a change failure rate under 5% and a service restoration time under one hour. Only 19% of organizations surveyed land in that elite tier. Infrastructure as Code is not the only variable behind that gap, but it is a prerequisite: you cannot deploy on demand, safely, if provisioning a database or a subnet still requires a human clicking through a console from memory.
+The link between this discipline and organizational performance is not anecdotal. Google Cloud's DORA (DevOps Research and Assessment) 2024 *State of DevOps Report* - the longest-running, most cited research program on software delivery performance, based on tens of thousands of survey responses collected annually - found that "elite" performing teams deploy on demand, multiple times per day, with a change failure rate under 5% and a service restoration time under one hour. Only 19% of organizations surveyed land in that elite tier. Infrastructure as Code is not the only variable behind that gap, but it is a prerequisite: you cannot deploy on demand, safely, if provisioning a database or a subnet still requires a human clicking through a console from memory.
 
 ### 2. FinOps and Cost-Aware Architecture
 
@@ -75,7 +75,7 @@ An elite cloud software developer practices FinOps. Before designing a microserv
 *   **The Amateur:** Runs a 24/7 EC2 instance at 5% CPU utilization to host a cron job.
 *   **The Elite Engineer:** Deploys an EventBridge rule triggering a Serverless AWS Lambda function, reducing the cost from €150/month to €0.45/month, while simultaneously improving scalability. 
 
-This is not a fringe problem. Flexera's [2025 State of the Cloud Report](https://www.flexera.com/blog/finops/the-latest-cloud-computing-trends-flexera-2025-state-of-the-cloud-report/) — an annual survey of IT decision-makers across hundreds of organizations — found that **27% of cloud spend continues to be wasted** on idle resources, oversized instances, and orphaned storage. On a €500,000 annual AWS bill, that is roughly €135,000 evaporating every year, entirely recoverable through the kind of right-sizing and serverless refactoring an elite cloud developer treats as routine hygiene rather than a special initiative.
+This is not a fringe problem. Flexera's [2025 State of the Cloud Report](https://www.flexera.com/blog/finops/the-latest-cloud-computing-trends-flexera-2025-state-of-the-cloud-report/) - an annual survey of IT decision-makers across hundreds of organizations - found that **27% of cloud spend continues to be wasted** on idle resources, oversized instances, and orphaned storage. On a €500,000 annual AWS bill, that is roughly €135,000 evaporating every year, entirely recoverable through the kind of right-sizing and serverless refactoring an elite cloud developer treats as routine hygiene rather than a special initiative.
 
 ### 3. The Zero-Trust Perimeter
 
@@ -110,14 +110,14 @@ The first policy is a single leaked CI/CD token away from a full data-lake compr
 
 ### The Pain: The Single-Region Gamble
 
-Most cloud software developers architect for the happy path: one region, one primary database, one load balancer. This works flawlessly until AWS `eu-west-1` or `us-east-1` suffers a regional outage—an event that has happened multiple times in the past several years, taking down large swaths of the internet for hours at a time. If your entire production stack lives in a single region, a regional outage is not a "risk"; it is a guaranteed multi-hour outage waiting for its scheduled date.
+Most cloud software developers architect for the happy path: one region, one primary database, one load balancer. This works flawlessly until AWS `eu-west-1` or `us-east-1` suffers a regional outage - an event that has happened multiple times in the past several years, taking down large swaths of the internet for hours at a time. If your entire production stack lives in a single region, a regional outage is not a "risk"; it is a guaranteed multi-hour outage waiting for its scheduled date.
 
 Amazon's own CTO put this bluntly, in a line that has become a founding principle of cloud-native architecture:
 
 > "Everything fails, all the time."
-> — Werner Vogels, CTO of Amazon.com, *Communications of the ACM*
+> - Werner Vogels, CTO of Amazon.com, *Communications of the ACM*
 
-Vogels was not being pessimistic; he was describing an engineering requirement. If failure is a certainty rather than an edge case, then the only rational response is to design systems that survive it — not to bet the company on a single region never having a bad day.
+Vogels was not being pessimistic; he was describing an engineering requirement. If failure is a certainty rather than an edge case, then the only rational response is to design systems that survive it - not to bet the company on a single region never having a bad day.
 
 An elite cloud software developer never treats disaster recovery (DR) as an afterthought. They design it as a first-class architectural requirement, quantified in two specific metrics before a single server is provisioned:
 
@@ -128,11 +128,11 @@ An elite cloud software developer never treats disaster recovery (DR) as an afte
 
 Instead of over-engineering every system to a zero-downtime standard (which is prohibitively expensive), elite cloud developers apply differentiated DR tiers based on business criticality:
 
-*   **Pilot Light:** A minimal, low-cost replica of core infrastructure sits dormant in a secondary region—just the database replicated continuously and a stopped copy of the application servers. On failure, automation scales this up to full production capacity within 30-60 minutes. This is the right tier for most internal tools.
+*   **Pilot Light:** A minimal, low-cost replica of core infrastructure sits dormant in a secondary region - just the database replicated continuously and a stopped copy of the application servers. On failure, automation scales this up to full production capacity within 30-60 minutes. This is the right tier for most internal tools.
 *   **Warm Standby:** A scaled-down but fully running version of the production stack operates continuously in the secondary region, ready to absorb full traffic within minutes once DNS is repointed. This suits customer-facing applications with moderate criticality.
 *   **Multi-Region Active-Active:** For mission-critical, revenue-generating systems, traffic is served simultaneously from two or more regions, with data replicated bidirectionally and a global load balancer (like Route 53 with health-check-based failover) routing around a failed region in seconds, at near-zero RTO.
 
-Crucially, the DR plan is only real if it is tested. Elite teams run scheduled "GameDay" failover drills—deliberately taking down a region in a controlled way, quarterly, to prove the automation actually works rather than assuming it will when it matters.
+Crucially, the DR plan is only real if it is tested. Elite teams run scheduled "GameDay" failover drills - deliberately taking down a region in a controlled way, quarterly, to prove the automation actually works rather than assuming it will when it matters.
 
 ## Sourcing True Cloud Expertise
 

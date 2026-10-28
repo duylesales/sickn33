@@ -10,7 +10,7 @@ Every institution's bookings, grant numbers and usage notes sat in one table vis
 ✅ Institution and facility tenancy with row level security and per-facility roles
 ✅ SSO via OpenID Connect for institutional logins, plus a fallback for external users
 ✅ The database migrated to an EU region with backups and a tested restore
-✅ Access logging, configurable retention per institution and versioned releases through CI with staging — while the tech transfer office finalised the licence
+✅ Access logging, configurable retention per institution and versioned releases through CI with staging - while the tech transfer office finalised the licence
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering and work with research organisations like TNO, we turn trust that was implicit in the lab into rules enforced in code. ⚙️
 

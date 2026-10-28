@@ -83,9 +83,9 @@ LaunchStudio's ingenieurs herbouwden het beoordelingssysteem zodat de inzending 
 **Resultaat:** elke nieuwe beoordeling op VakmanVind is nu cryptografisch gekoppeld aan een echte, voltooide boeking, wat een herhaling van de gefabriceerde beoordelingsaanval structureel onmogelijk maakt.
 
 > *"Ik bouwde de beoordelingsfunctie om vertrouwen op te bouwen tussen huiseigenaren en vakmensen. Ik had me nooit voorgesteld dat het de exacte functie zou zijn die iemand gebruikte om een van mijn beste aanbieders aan te vallen."*
-> — **Cas Rademaker, Oprichter, VakmanVind (Leeuwarden)**
+> - **Cas Rademaker, Oprichter, VakmanVind (Leeuwarden)**
 
-**Kosten en tijdlijn:** € 600 (door boeking geverifieerd beoordelingssysteem, geverifieerde badge, beoordelings-audit met terugwerkende kracht) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 600 (door boeking geverifieerd beoordelingssysteem, geverifieerde badge, beoordelings-audit met terugwerkende kracht) - voltooid in 3 werkdagen.
 
 ---
 

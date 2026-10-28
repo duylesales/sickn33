@@ -5,14 +5,14 @@ Her "no" answers sat exactly where it hurts most: customers could see each other
 ❌ Cross-customer data visible via the URL (question 1)
 ❌ Payments confirmed by the browser, not the server (question 9)
 ❌ An admin page reachable by anyone (question 2)
-❌ No alerts, no staging, no tested backups — plus an open upload and a visible Mollie key
+❌ No alerts, no staging, no tested backups - plus an open upload and a visible Mollie key
 
 ✅ Row level security on orders and customers
 ✅ Deposits confirmed by verified Mollie webhooks
 ✅ Admin area behind server-side role checks, uploads restricted, the key rotated and moved server-side
 ✅ EU backups with a tested restore, staging and alerts
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we review the same five areas — access, data, money, operations, trust — and fix what the score reveals. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we review the same five areas - access, data, money, operations, trust - and fix what the score reveals. ⚙️
 
 Her result: €1,750, seven business days. Her retake scored 19 (the last point was a privacy notice she wrote herself). The Instagram launch brought 212 configured orders and 58 paid deposits in two weeks, with zero payment mismatches. 🚀
 

@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Once a product has both an interface people use and logic people depend on, most founders end up wanting both kinds of tool. The builder is faster for screens. The editor is better for everything that is not a screen.
 
-Running both is a good idea and it introduces one genuinely new problem: two systems that can each change your project, with different ideas about what belongs in it. Handled carelessly, that produces the worst afternoon in this entire field — work you did, overwritten by work you also did.
+Running both is a good idea and it introduces one genuinely new problem: two systems that can each change your project, with different ideas about what belongs in it. Handled carelessly, that produces the worst afternoon in this entire field - work you did, overwritten by work you also did.
 
 ## Why Each Tool Wins Where It Wins
 
@@ -36,7 +36,7 @@ Trying to force one to do the other's job is where the frustration comes from. A
 
 The one rule that makes this work: the repository is the truth, and both tools are ways of changing it.
 
-Builders that sync to a repository make this straightforward — changes you make visually appear as commits, and changes you push arrive in the builder. Once that connection exists, three habits keep it healthy.
+Builders that sync to a repository make this straightforward - changes you make visually appear as commits, and changes you push arrive in the builder. Once that connection exists, three habits keep it healthy.
 
 **Work in one place at a time.** Not both simultaneously on the same area. This sounds obvious and is the rule people break, because the builder is open in a tab and it is quicker to fix a label there while a refactor is half-finished locally.
 
@@ -50,7 +50,7 @@ If your builder does not sync to a repository, that is the first thing to set up
 
 Four places, worth knowing in advance.
 
-**Regenerated files.** Ask the builder to change a screen and it may rewrite the whole file, discarding hand-written logic you added there. The remedy is separation: keep the logic somewhere the builder has no reason to touch — a separate module, a service file — and let the screen call it. Generated files stay generated; your code lives elsewhere.
+**Regenerated files.** Ask the builder to change a screen and it may rewrite the whole file, discarding hand-written logic you added there. The remedy is separation: keep the logic somewhere the builder has no reason to touch - a separate module, a service file - and let the screen call it. Generated files stay generated; your code lives elsewhere.
 
 **Formatting churn.** The two tools format code differently, producing commits full of whitespace changes that hide the real ones. Agree one formatter, configure both, and commit the configuration.
 
@@ -70,7 +70,7 @@ A practical refinement: once a feature graduates from "being designed" to "being
 
 ## Rules Files Are Worth the Ten Minutes
 
-An editor that supports project rules lets you tell the assistant what your project is: the conventions, the structure, which directories are generated and must not be hand-edited, which files must never be modified without discussion — access rules, payment logic, migrations.
+An editor that supports project rules lets you tell the assistant what your project is: the conventions, the structure, which directories are generated and must not be hand-edited, which files must never be modified without discussion - access rules, payment logic, migrations.
 
 Write them once. The difference in suggestion quality is immediate, and the protection against a well-meaning assistant editing something dangerous is worth more than the file takes to write.
 
@@ -86,7 +86,7 @@ Then ask why it happened. Almost always it is because a piece of logic was livin
 
 ## Working This Way With Someone Else
 
-If a developer joins — a freelancer, a partner, a colleague — the workflow needs one addition: agree who works where and when. The builder's changes are immediate and shared; the editor's are branched and reviewed. Without an agreement, the developer's careful refactor and the founder's quick fix collide on a Friday.
+If a developer joins - a freelancer, a partner, a colleague - the workflow needs one addition: agree who works where and when. The builder's changes are immediate and shared; the editor's are branched and reviewed. Without an agreement, the developer's careful refactor and the founder's quick fix collide on a Friday.
 
 The arrangement that works in practice: the founder keeps the builder for screens, on their own branch, merged like any other change; the developer works in code; and anything touching access, money or data is reviewed regardless of who wrote it.
 
@@ -94,23 +94,23 @@ The arrangement that works in practice: the founder keeps the builder for screen
 
 The habit worth naming explicitly, because it is what keeps this workflow healthy over years rather than months.
 
-Every screen in your product starts disposable. It was generated to try an idea, it will be regenerated three times this month, and nothing about it deserves protection. That is exactly the right posture — and it stops being right at a specific, identifiable moment.
+Every screen in your product starts disposable. It was generated to try an idea, it will be regenerated three times this month, and nothing about it deserves protection. That is exactly the right posture - and it stops being right at a specific, identifiable moment.
 
 **A screen graduates when someone depends on it.** A customer's process runs through it. It calculates something that appears on an invoice. A colleague at a client company has learned where the button is. From that point the cost of an accidental regeneration is no longer zero.
 
-**Graduation means moving the logic out, not freezing the screen.** The layout can keep being regenerated freely; what moves is the rule underneath — the calculation, the eligibility check, the state transition — into a module with a name, called by the screen. The visual half stays fast to change, and the part that matters stops being at risk.
+**Graduation means moving the logic out, not freezing the screen.** The layout can keep being regenerated freely; what moves is the rule underneath - the calculation, the eligibility check, the state transition - into a module with a name, called by the screen. The visual half stays fast to change, and the part that matters stops being at risk.
 
 **Write down which is which.** A short list in your repository: these modules are hand-written, these directories are generated. It is what your rules files reference, it is what a developer joining reads first, and it is what stops you making the wrong assumption six months later about your own project.
 
 **Test what graduated.** A rule that someone depends on deserves a test, and this is the point at which writing one is cheap because you have just moved the code and understand it completely.
 
-The failure this prevents is gradual rather than dramatic. Products that never graduate anything accumulate business rules inside regenerable screens until a routine layout change silently alters an invoice — and the founder, reasonably, concludes that the two tools cannot be used together. They can. What cannot coexist is a regenerable surface and an irreplaceable rule occupying the same file.
+The failure this prevents is gradual rather than dramatic. Products that never graduate anything accumulate business rules inside regenerable screens until a routine layout change silently alters an invoice - and the founder, reasonably, concludes that the two tools cannot be used together. They can. What cannot coexist is a regenerable surface and an irreplaceable rule occupying the same file.
 
 ## Getting the Structure That Makes This Possible
 
-This workflow depends on a project where generated surfaces and hand-written logic are actually separated — which is not how an AI-built product starts out.
+This workflow depends on a project where generated surfaces and hand-written logic are actually separated - which is not how an AI-built product starts out.
 
-LaunchStudio does that separation as bounded work: business logic extracted from generated screens into modules the builder will not overwrite, duplicated rules consolidated into one definition, configuration made explicit, the repository connected as the single source of truth with formatting and lockfiles settled, tests added around the rules that matter, and rules files written for both tools so each stays in its lane — with the interface you built left untouched.
+LaunchStudio does that separation as bounded work: business logic extracted from generated screens into modules the builder will not overwrite, duplicated rules consolidated into one definition, configuration made explicit, the repository connected as the single source of truth with formatting and lockfiles settled, tests added around the rules that matter, and rules files written for both tools so each stays in its lane - with the interface you built left untouched.
 
 The engineers are Manifera's: eleven years and 160+ production projects for clients including Vodafone, TNO and CFLW, from Amsterdam Herengracht 420 and Ho Chi Minh City.
 
@@ -124,18 +124,18 @@ Ivo Schaminée built Servicecontract with Lovable: maintenance contract administ
 
 He had started using Cursor for the parts the builder handled badly, and for two months the arrangement worked. Then he spent a Thursday consolidating the renewal calculation, which had been implemented in three places with three different treatments of contracts that started mid-month. The work was done locally and not yet pushed.
 
-On Friday morning a customer asked for a wording change on the contract screen. He made it in the builder, which regenerated the file — and the file was where two of the three renewal calculations lived. The builder's version was pushed. His Thursday was gone, along with the consolidation, and because the third implementation had also been touched, renewal dates for mid-month contracts were now wrong in a fourth new way.
+On Friday morning a customer asked for a wording change on the contract screen. He made it in the builder, which regenerated the file - and the file was where two of the three renewal calculations lived. The builder's version was pushed. His Thursday was gone, along with the consolidation, and because the third implementation had also been touched, renewal dates for mid-month contracts were now wrong in a fourth new way.
 
 Nobody noticed for eleven days, by which time 34 renewal reminders had gone out with incorrect dates, two of them to customers who had already renewed.
 
-Seven business days of work: the renewal calculation extracted into a single module the builder has no reason to touch, with the mid-month rule defined explicitly and confirmed with three installation firms; tests written around it covering the boundary cases; the 34 incorrect reminders identified and corrected with an apology sent by Ivo; the repository established as the source of truth with the builder connected, one formatter configured in both tools, and the lockfile committed; rules files written for both tools naming the logic modules as hand-written and the access and invoicing files as not to be modified without review; and a short working agreement written for himself — pull before starting, push when finishing, one tool at a time per area.
+Seven business days of work: the renewal calculation extracted into a single module the builder has no reason to touch, with the mid-month rule defined explicitly and confirmed with three installation firms; tests written around it covering the boundary cases; the 34 incorrect reminders identified and corrected with an apology sent by Ivo; the repository established as the source of truth with the builder connected, one formatter configured in both tools, and the lockfile committed; rules files written for both tools naming the logic modules as hand-written and the access and invoicing files as not to be modified without review; and a short working agreement written for himself - pull before starting, push when finishing, one tool at a time per area.
 
 **Result:** no further collisions in the nine months since. Ivo reports that the habit which actually fixed it was not the tooling configuration but moving logic out of generated screens as soon as a feature stops changing.
 
 > *"A two-word label change on a Friday morning deleted a full day of careful work, because the thing I had carefully fixed was living inside a screen the builder felt free to rewrite."*
-> — **Ivo Schaminée, Founder, Servicecontract (Oss)**
+> - **Ivo Schaminée, Founder, Servicecontract (Oss)**
 
-**Cost & Timeline:** €3,300 (logic extraction into modules, tests around renewal rules, data correction, repository and tooling configuration, rules files, working agreement) — completed in 7 business days.
+**Cost & Timeline:** €3,300 (logic extraction into modules, tests around renewal rules, data correction, repository and tooling configuration, rules files, working agreement) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -157,7 +157,7 @@ The builder for screens, layout, visual flow and quick copy changes; the editor 
 
 ### Are rules files worth writing?
 
-Yes — ten minutes. They tell the assistant your conventions, which directories are generated, and which files must never be modified without discussion, which noticeably improves suggestions and prevents dangerous edits.
+Yes - ten minutes. They tell the assistant your conventions, which directories are generated, and which files must never be modified without discussion, which noticeably improves suggestions and prevents dangerous edits.
 
 <script type="application/ld+json">
 {
@@ -201,7 +201,7 @@ Yes — ten minutes. They tell the assistant your conventions, which directories
       "name": "Are rules files worth writing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — they state conventions, mark generated directories and name files that must not be modified, improving suggestions and preventing dangerous edits."
+        "text": "Yes - they state conventions, mark generated directories and name files that must not be modified, improving suggestions and preventing dangerous edits."
       }
     }
   ]

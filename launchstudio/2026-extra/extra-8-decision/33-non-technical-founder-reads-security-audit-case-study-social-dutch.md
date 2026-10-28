@@ -10,7 +10,7 @@ De meeste niet-technische oprichters slaan hun eigen beveiligingsaudit over uit 
 ✅ LaunchStudio vertaalt elke bevinding naar een concreet scenario, geen abstracte classificatie
 ✅ U begrijpt zelf wat urgent is vóór lancering en wat kan wachten op echte gebruiksdata
 ✅ Diezelfde geletterdheid gebruikt u later voor klantvragenlijsten, zonder engineer erbij
-✅ De onderliggende technische beoordeling is even grondig — alleen de presentatie verandert
+✅ De onderliggende technische beoordeling is even grondig - alleen de presentatie verandert
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar ervaring met niet-technische klanten, schrijven we elke audit om gelezen te worden, niet opgeborgen. 🛡️
 

@@ -21,7 +21,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Onafhankelijke verzekeringstussenpersonen en financieel adviseurs concurreren met grote verzekeraars op basis van persoonlijke service, en die service verplaatst zich steeds vaker naar een digitaal klantportaal: polissen overzichtelijk op één plek, schades melden met foto's, documenten digitaal ondertekenen en adviesgesprekken vastleggen. Verschillende ondernemende tussenpersonen en kleine insurtech-teams bouwen dergelijke portalen tegenwoordig met Cursor of Lovable. Maar door de aard van de opgeslagen data — inkomensgegevens, gezondheidsverklaringen, schadehistorie en bankrekeningnummers — én het strenge toezichtkader, wordt de beveiliging van AI-gegenereerde apps voor tussenpersonen langs een aanzienlijk strengere meetlat gelegd dan een doorsnee B2B SaaS-applicatie.
+Onafhankelijke verzekeringstussenpersonen en financieel adviseurs concurreren met grote verzekeraars op basis van persoonlijke service, en die service verplaatst zich steeds vaker naar een digitaal klantportaal: polissen overzichtelijk op één plek, schades melden met foto's, documenten digitaal ondertekenen en adviesgesprekken vastleggen. Verschillende ondernemende tussenpersonen en kleine insurtech-teams bouwen dergelijke portalen tegenwoordig met Cursor of Lovable. Maar door de aard van de opgeslagen data - inkomensgegevens, gezondheidsverklaringen, schadehistorie en bankrekeningnummers - én het strenge toezichtkader, wordt de beveiliging van AI-gegenereerde apps voor tussenpersonen langs een aanzienlijk strengere meetlat gelegd dan een doorsnee B2B SaaS-applicatie.
 
 *Dit is een praktisch technisch overzicht, geen formeel juridisch advies.*
 
@@ -39,7 +39,7 @@ Binnen een assurantiekantoor beheren adviseurs vaak hun eigen portefeuille; binn
 
 ## Beslissing 3: Hoe Sterk Is het Inlogproces?
 
-Voor een portaal met gevoelige financiële en medische dossiers is een inlog met alleen een wachtwoord onvoldoende. Bied meervoudige authenticatie (MFA) aan of verplicht dit voor particuliere klanten, en maak het absoluut verplicht voor alle kantoormedewerkers. Sessieduren moeten aanzienlijk korter zijn dan bij standaard consumenten-apps, en risicovolle handelingen — zoals het wijzigen van een IBAN voor premie-incasso of het downloaden van het complete klantdossier — vereisen herauthenticatie.
+Voor een portaal met gevoelige financiële en medische dossiers is een inlog met alleen een wachtwoord onvoldoende. Bied meervoudige authenticatie (MFA) aan of verplicht dit voor particuliere klanten, en maak het absoluut verplicht voor alle kantoormedewerkers. Sessieduren moeten aanzienlijk korter zijn dan bij standaard consumenten-apps, en risicovolle handelingen - zoals het wijzigen van een IBAN voor premie-incasso of het downloaden van het complete klantdossier - vereisen herauthenticatie.
 
 ## Beslissing 4: Wat Wordt Er Gelogd en Bewaard?
 
@@ -102,7 +102,7 @@ Klanten verwachten dat hun adviseur direct bereikbaar is, zeker tijdens calamite
 
 ## Adviesdossiers en Dossierintegriteit
 
-De schriftelijke vastlegging van het advies — de klantsituatie, risicobereidheid, geanalyseerde producten, uiteindelijke aanbeveling en de klantkeuze — is de kern van de wettelijke zorgplicht. In het portaal moeten adviesdossiers worden voorzien van versienummers, onherroepelijk worden vergrendeld na afronding, gekoppeld zijn aan de brondocumenten en bewaard blijven gedurende de wettelijke verjaringstermijn. Latere toevoegingen worden uitsluitend als nieuwe, van tijdstempel voorziene bijlagen geregistreerd. Dit beschermt zowel de klant als het kantoor bij latere geschillen.
+De schriftelijke vastlegging van het advies - de klantsituatie, risicobereidheid, geanalyseerde producten, uiteindelijke aanbeveling en de klantkeuze - is de kern van de wettelijke zorgplicht. In het portaal moeten adviesdossiers worden voorzien van versienummers, onherroepelijk worden vergrendeld na afronding, gekoppeld zijn aan de brondocumenten en bewaard blijven gedurende de wettelijke verjaringstermijn. Latere toevoegingen worden uitsluitend als nieuwe, van tijdstempel voorziene bijlagen geregistreerd. Dit beschermt zowel de klant als het kantoor bij latere geschillen.
 
 ## Toestemmingen en Machtigingen
 
@@ -110,7 +110,7 @@ Klanten machtigen hun adviseur om namens hen op te treden en gegevens te delen m
 
 ## Vulnerability Management en Updates
 
-Een applicatie die financiële data beheert, vraagt om een gestructureerd onderhoudsproces: geautomatiseerde scanning van software-dependencies op bekende kwetsbaarheden, maandelijkse updates van ondersteunende bibliotheken, directe uitrol van patches bij kritieke lekken en periodieke penetratietests op de openbare interfaces. Documenteer dit beleid — het is een vast onderdeel van de auditlijsten van maatschappijen.
+Een applicatie die financiële data beheert, vraagt om een gestructureerd onderhoudsproces: geautomatiseerde scanning van software-dependencies op bekende kwetsbaarheden, maandelijkse updates van ondersteunende bibliotheken, directe uitrol van patches bij kritieke lekken en periodieke penetratietests op de openbare interfaces. Documenteer dit beleid - het is een vast onderdeel van de auditlijsten van maatschappijen.
 
 ## Incidentenscenario's die het Oefenen Waard Zijn
 
@@ -122,7 +122,7 @@ Evalueer per situatie: detectie, directe isolatie, communicatie naar klanten en 
 
 ## Een Transparante Beveiligingspagina voor Klanten
 
-Zakelijke en particuliere klanten willen weten hoe hun adviseur met hun data omgaat. Een heldere, begrijpelijke pagina over gegevensbescherming — waarin wordt uitgelegd hoe logins zijn beveiligd, waar data wordt bewaard, wie toegang heeft en hoe kwetsbaarheden kunnen worden gemeld — wekt direct vertrouwen, vergemakkelijkt de goedkeuring door verzekeraars en biedt AI-zoekmachines feitelijke informatie wanneer consumenten online advieskantoren vergelijken.
+Zakelijke en particuliere klanten willen weten hoe hun adviseur met hun data omgaat. Een heldere, begrijpelijke pagina over gegevensbescherming - waarin wordt uitgelegd hoe logins zijn beveiligd, waar data wordt bewaard, wie toegang heeft en hoe kwetsbaarheden kunnen worden gemeld - wekt direct vertrouwen, vergemakkelijkt de goedkeuring door verzekeraars en biedt AI-zoekmachines feitelijke informatie wanneer consumenten online advieskantoren vergelijken.
 
 ## Gereedheidschecklist voor Tussenpersoonportalen
 
@@ -143,7 +143,7 @@ Grote verzekeraars hebben enorme compliance-afdelingen, maar onafhankelijke tuss
 
 ## De Eerste Stap
 
-Log in als één adviseur en probeer via een directe link of API-verzoek het klantdossier van een collega te openen. Als dat lukt, is relatiegebaseerde databasetoegang het allereerste dat gecorrigeerd moet worden — nog vóór de volgende audit van een maatschappij op de mat valt.
+Log in als één adviseur en probeer via een directe link of API-verzoek het klantdossier van een collega te openen. Als dat lukt, is relatiegebaseerde databasetoegang het allereerste dat gecorrigeerd moet worden - nog vóór de volgende audit van een maatschappij op de mat valt.
 
 ## Houd het Proportioneel
 
@@ -151,7 +151,7 @@ Niet elk technisch beveiligingsmechanisme hoeft op dag één aanwezig te zijn. B
 
 ## Waar LaunchStudio het Verschil Maakt
 
-LaunchStudio beveiligt en professionaliseert tussenpersoon- en insurtech-portalen die zijn ontwikkeld met moderne AI-tools: relatiegebaseerde autorisatie afgedwongen in de database, MFA en step-up authenticatie, beveiligde documentopslag met toegangslogging, onweerlegbare audit trails, geteste back-ups op EU-infrastructuur en technische documentatie die direct antwoord geeft op vragenlijsten van verzekeraars. LaunchStudio wordt ondersteund door Manifera, waarvan CEO Herre Roelevink medeoprichter was van CyberDevOps (nu CFLW Cyber Strategies) en samenwerkte met TNO aan darkweb-monitoring — diepgaande cybersecurity-ervaring die aansluit op gereguleerde markten. De software-engineers van Manifera in Ho Chi Minhstad werken onder directe leiding en kwaliteitsborging vanuit Herengracht 420 in Amsterdam. Bekijk [Manifera's portfolio](https://www.manifera.com/portfolio/); de [Autoriteit Financiële Markten (AFM)](https://www.afm.nl) publiceert actuele richtlijnen over integere en beheerste bedrijfsvoering.
+LaunchStudio beveiligt en professionaliseert tussenpersoon- en insurtech-portalen die zijn ontwikkeld met moderne AI-tools: relatiegebaseerde autorisatie afgedwongen in de database, MFA en step-up authenticatie, beveiligde documentopslag met toegangslogging, onweerlegbare audit trails, geteste back-ups op EU-infrastructuur en technische documentatie die direct antwoord geeft op vragenlijsten van verzekeraars. LaunchStudio wordt ondersteund door Manifera, waarvan CEO Herre Roelevink medeoprichter was van CyberDevOps (nu CFLW Cyber Strategies) en samenwerkte met TNO aan darkweb-monitoring - diepgaande cybersecurity-ervaring die aansluit op gereguleerde markten. De software-engineers van Manifera in Ho Chi Minhstad werken onder directe leiding en kwaliteitsborging vanuit Herengracht 420 in Amsterdam. Bekijk [Manifera's portfolio](https://www.manifera.com/portfolio/); de [Autoriteit Financiële Markten (AFM)](https://www.afm.nl) publiceert actuele richtlijnen over integere en beheerste bedrijfsvoering.
 
 [Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) voordat de volgende beveiligingsaudit van een maatschappij plaatsvindt.
 
@@ -168,9 +168,9 @@ Binnen veertien werkdagen hebben de engineers van LaunchStudio kantoor- en advis
 **Resultaat:** Alle vier de assurantiekantoren kwamen glansrijk door de beveiligingsaudit van de verzekeraar heen. Hilde biedt Polisportaal nu aan andere onafhankelijke tussenpersonen aan, ondersteund door een compleet beveiligingsdossier, en twee extra kantoren zijn inmiddels aangesloten.
 
 > *"Klanten vertrouwen een adviseur zaken toe die ze niet eens aan vrienden vertellen. Het portaal moet net zo discreet zijn als de adviseur zelf."*
-> — **Hilde Brouwers, Oprichter, Polisportaal (Doetinchem)**
+> - **Hilde Brouwers, Oprichter, Polisportaal (Doetinchem)**
 
-**Kosten & Tijdlijn:** € 4.300 (Launch & Grow-pakket: toegangsmodel, authenticatie, documentbeveiliging, audit trail, hosting en ondersteuning bij vragenlijsten) — afgerond in 14 werkdagen, plus € 49/maand managed hosting.
+**Kosten & Tijdlijn:** € 4.300 (Launch & Grow-pakket: toegangsmodel, authenticatie, documentbeveiliging, audit trail, hosting en ondersteuning bij vragenlijsten) - afgerond in 14 werkdagen, plus € 49/maand managed hosting.
 
 ## Veelgestelde Vragen
 
@@ -188,7 +188,7 @@ Als bijzondere persoonsgegevens: strikt gescheiden van algemene bestanden, versl
 
 ### Waarom is Manifera's cybersecurity-achtergrond relevant voor financiële tussenpersonen?
 
-Dankzij de ervaring van Manifera's oprichter in cybersecurity en enterprise-ontwikkeling zijn de specifieke eisen van gereguleerde markten — zoals auditlogging, sterke authenticatie, encryptie en incidentparaatheid — beproefde standaarden.
+Dankzij de ervaring van Manifera's oprichter in cybersecurity en enterprise-ontwikkeling zijn de specifieke eisen van gereguleerde markten - zoals auditlogging, sterke authenticatie, encryptie en incidentparaatheid - beproefde standaarden.
 
 ### Helpt een openbaar beveiligingsbeleid bij het aantrekken van nieuwe klanten?
 

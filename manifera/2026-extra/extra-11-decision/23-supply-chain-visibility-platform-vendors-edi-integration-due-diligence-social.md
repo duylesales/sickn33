@@ -2,7 +2,7 @@ A "unified" supply chain dashboard can be quietly stitching together a real-time
 
 **The Pain Points:**
 ❌ **Vague Transaction Set Claims:** "We support the 214" often means partial segment parsing, not full milestone-level shipment status.
-❌ **VAN vs. AS2 Gaps:** Larger partners mandate direct AS2 connections; smaller suppliers still rely on VANs — and onboarding cost varies enormously between the two.
+❌ **VAN vs. AS2 Gaps:** Larger partners mandate direct AS2 connections; smaller suppliers still rely on VANs - and onboarding cost varies enormously between the two.
 ❌ **Silent Control Number Gaps:** Without rigorous per-partner sequence tracking, a missed 856 can create a phantom shipment or a shipment that never appears at all.
 
 **The Manifera Solution:**

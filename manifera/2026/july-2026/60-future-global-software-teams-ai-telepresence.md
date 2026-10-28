@@ -22,7 +22,7 @@ Content Format: Vision / Future Trends
 
 For the past twenty years, the geographic distribution of software teams was primarily a financial arbitrage play. Companies built tech hubs in San Francisco, London, or Amsterdam, and sourced cheaper execution capacity in Southeast Asia or Eastern Europe. The fundamental tension was always the same: exchanging lower hourly rates for higher communication friction.
 
-In 2026, two massive technological shifts—Generative AI and spatial telepresence—have structurally altered this equation. The "communication friction tax" that defined [offshore development](46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md) for two decades is rapidly collapsing toward zero. 
+In 2026, two massive technological shifts - Generative AI and spatial telepresence - have structurally altered this equation. The "communication friction tax" that defined [offshore development](46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md) for two decades is rapidly collapsing toward zero. 
 
 As we look toward the end of the decade, the fully co-located onshore engineering team is becoming a legacy luxury, while the **AI-Empowered Hub-and-Spoke Model** emerges as the definitive blueprint for competitive software companies.
 
@@ -75,21 +75,21 @@ The most capital-efficient, high-velocity software companies are standardizing o
 
 As AI coding assistants become the default interface between the Hub and the Spoke, a new governance question emerges that most companies haven't yet answered: which AI models is your distributed team actually allowed to use, and where does your proprietary code go when they use them?
 
-**The data residency question:** Every time a developer — onshore or offshore — pastes a snippet of proprietary code into a public AI chat interface, that code potentially leaves your controlled environment and, depending on the tool's data policies, could be retained on third-party servers or used to train future models. This is a bigger governance gap than most security audits currently cover, because it happens inside a browser tab, not through a monitored API integration.
+**The data residency question:** Every time a developer - onshore or offshore - pastes a snippet of proprietary code into a public AI chat interface, that code potentially leaves your controlled environment and, depending on the tool's data policies, could be retained on third-party servers or used to train future models. This is a bigger governance gap than most security audits currently cover, because it happens inside a browser tab, not through a monitored API integration.
 
-**The enterprise-tier requirement:** Any AI coding assistant used on client work should run under an enterprise or business-tier agreement with contractual zero data retention and no-training clauses — GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model run entirely within your own VPC for the most sensitive codebases. Free, consumer-tier AI tools have no place in a distributed engineering pod handling client IP, regardless of how convenient the browser extension is.
+**The enterprise-tier requirement:** Any AI coding assistant used on client work should run under an enterprise or business-tier agreement with contractual zero data retention and no-training clauses - GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model run entirely within your own VPC for the most sensitive codebases. Free, consumer-tier AI tools have no place in a distributed engineering pod handling client IP, regardless of how convenient the browser extension is.
 
 **Standardizing the toolchain, not just the policy:** Rather than leaving individual developers to pick their own AI tools, mature Hub-and-Spoke teams standardize on one sanctioned assistant, configured once at the organizational level with the correct data-handling settings, and block unsanctioned tools at the network layer via the same DLP tooling used to prevent code leaving the company otherwise. This turns "please don't paste code into a public AI chat tool" from a policy memo nobody reads into a technical control that is actually enforced.
 
-**Auditing AI-generated code like any other dependency:** Because AI models are trained on public repositories, generated code can occasionally reproduce license-encumbered snippets. Enterprise-tier tools increasingly include code-origin and license-scanning features — make sure this is enabled, and treat AI-generated code passing through code review with the same scrutiny you'd apply to a copy-pasted Stack Overflow answer.
+**Auditing AI-generated code like any other dependency:** Because AI models are trained on public repositories, generated code can occasionally reproduce license-encumbered snippets. Enterprise-tier tools increasingly include code-origin and license-scanning features - make sure this is enabled, and treat AI-generated code passing through code review with the same scrutiny you'd apply to a copy-pasted Stack Overflow answer.
 
 ## Manifera: Pioneering the Global Standard
 
 We did not adapt to the Hub-and-Spoke model; we were founded on it. 
 
-Manifera’s DNA is built on Dutch management and Vietnamese engineering excellence. We have spent years refining the connective tissue—the cultural alignment, the Agile processes, and the technological toolchains—that makes global teams function seamlessly. As AI and telepresence eliminate the final friction points of distance, our model allows European companies to scale their engineering capacity limitlessly without sacrificing quality or control.
+Manifera’s DNA is built on Dutch management and Vietnamese engineering excellence. We have spent years refining the connective tissue - the cultural alignment, the Agile processes, and the technological toolchains - that makes global teams function seamlessly. As AI and telepresence eliminate the final friction points of distance, our model allows European companies to scale their engineering capacity limitlessly without sacrificing quality or control.
 
-Build the future, globally — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Build the future, globally - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -101,7 +101,7 @@ No. AI replaces the need for *typists*, not engineers. As AI generates code fast
 
 ### How do we build team culture across a 10,000km distance? (Scenario: HR Director concerned about team cohesion)
 
-Culture is built through shared goals, not just shared ping-pong tables. 1) Include offshore tech leads in the early [Product Discovery](53-outsourcing-product-discovery-first-4-weeks.md) meetings so they understand the *why*, not just the *what*. 2) Celebrate wins equally—when a product ships, acknowledge the specific offshore engineers by name in company-wide comms. 3) Budget for an annual in-person summit where the Hub and Spoke meet physically; the ROI on this travel budget is massive in long-term trust.
+Culture is built through shared goals, not just shared ping-pong tables. 1) Include offshore tech leads in the early [Product Discovery](53-outsourcing-product-discovery-first-4-weeks.md) meetings so they understand the *why*, not just the *what*. 2) Celebrate wins equally - when a product ships, acknowledge the specific offshore engineers by name in company-wide comms. 3) Budget for an annual in-person summit where the Hub and Spoke meet physically; the ROI on this travel budget is massive in long-term trust.
 
 ### Is the quality of computer science education in Asia sufficient for complex AI/Cloud architecture? (Scenario: Technical Architect doubting offshore capability)
 
@@ -117,7 +117,7 @@ Treating the offshore team as a "black box" where you feed in Jira tickets and w
 
 ### Which AI coding tools are safe to let our offshore developers use on client codebases? (Scenario: CTO writing an AI usage policy for a distributed team)
 
-Only enterprise or business-tier tools with contractual zero data retention and no-training clauses — such as GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model for the most sensitive codebases. Standardize on one sanctioned assistant across the whole team rather than leaving the choice to individuals, block unsanctioned consumer tools at the network layer with DLP, and enable license-scanning features so AI-generated code is reviewed with the same scrutiny as any copy-pasted snippet.
+Only enterprise or business-tier tools with contractual zero data retention and no-training clauses - such as GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model for the most sensitive codebases. Standardize on one sanctioned assistant across the whole team rather than leaving the choice to individuals, block unsanctioned consumer tools at the network layer with DLP, and enable license-scanning features so AI-generated code is reviewed with the same scrutiny as any copy-pasted snippet.
 
 <script type="application/ld+json">
 {
@@ -137,7 +137,7 @@ Only enterprise or business-tier tools with contractual zero data retention and 
       "name": "How do we build team culture across a 10,000km distance?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Include offshore leads in Product Discovery so they know the 'why'. Acknowledge them by name in company wins. Budget for an annual in-person summit—the ROI on building trust and rapport is massive."
+        "text": "Include offshore leads in Product Discovery so they know the 'why'. Acknowledge them by name in company wins. Budget for an annual in-person summit - the ROI on building trust and rapport is massive."
       }
     },
     {

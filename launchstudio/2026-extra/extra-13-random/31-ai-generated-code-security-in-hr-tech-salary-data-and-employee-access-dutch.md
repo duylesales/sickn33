@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-In de meeste SaaS-producten is een datalek tussen gebruikers gênant. In HR-software is een lek tussen collega's explosief. Kan de ene werknemer het salaris, de verzuimgeschiedenis of de beoordelingsnotities van een ander zien, dan is de schade niet abstract; ze landt de volgende ochtend op kantoor. Daarom verdient de beveiliging van AI-gegenereerde code in HR-tech bijzondere zorg — en daarom zijn de standaardpatronen van AI-codeertools, die denken in "gebruikers" en "beheerders", zelden goed genoeg.
+In de meeste SaaS-producten is een datalek tussen gebruikers gênant. In HR-software is een lek tussen collega's explosief. Kan de ene werknemer het salaris, de verzuimgeschiedenis of de beoordelingsnotities van een ander zien, dan is de schade niet abstract; ze landt de volgende ochtend op kantoor. Daarom verdient de beveiliging van AI-gegenereerde code in HR-tech bijzondere zorg - en daarom zijn de standaardpatronen van AI-codeertools, die denken in "gebruikers" en "beheerders", zelden goed genoeg.
 
 Deze gids loopt de beslissingen door die HR-tech-oprichters moeten nemen voordat er echte werknemersdata in gaat.
 
@@ -29,18 +29,18 @@ Deze gids loopt de beslissingen door die HR-tech-oprichters moeten nemen voordat
 
 AI-gegenereerde HR-apps hebben meestal twee of drie rollen: werknemer, manager, beheerder. Echte organisaties zijn genuanceerder:
 
-- **Werknemer** — ziet en bewerkt de eigen gegevens.
-- **Manager** — ziet bepaalde gegevens van directe ondergeschikten, misschien ook van indirecte.
-- **HR** — ziet de meeste werknemersgegevens, soms met uitzondering van bepaalde velden.
-- **Salarisadministratie** — ziet salaris- en bankgegevens, geen beoordelingsnotities.
-- **Financiën of eigenaar** — ziet totale kosten, misschien geen individuele details.
-- **Extern** — een accountant, een salarisbureau of een arbodienst met beperkte, specifieke toegang.
+- **Werknemer** - ziet en bewerkt de eigen gegevens.
+- **Manager** - ziet bepaalde gegevens van directe ondergeschikten, misschien ook van indirecte.
+- **HR** - ziet de meeste werknemersgegevens, soms met uitzondering van bepaalde velden.
+- **Salarisadministratie** - ziet salaris- en bankgegevens, geen beoordelingsnotities.
+- **Financiën of eigenaar** - ziet totale kosten, misschien geen individuele details.
+- **Extern** - een accountant, een salarisbureau of een arbodienst met beperkte, specifieke toegang.
 
-**De beslissing:** schrijf een matrix uit van rollen tegenover datacategorieën (persoonsgegevens, contract, salaris, bankgegevens, verlof, verzuim, beoordeling, documenten) en dwing die af op de server — bij voorkeur in de database met beleid op rij- en kolomniveau. Beperkingen die alleen in de interface zitten, zijn de meest voorkomende kritieke bevinding in AI-gebouwde HR-tools.
+**De beslissing:** schrijf een matrix uit van rollen tegenover datacategorieën (persoonsgegevens, contract, salaris, bankgegevens, verlof, verzuim, beoordeling, documenten) en dwing die af op de server - bij voorkeur in de database met beleid op rij- en kolomniveau. Beperkingen die alleen in de interface zitten, zijn de meest voorkomende kritieke bevinding in AI-gebouwde HR-tools.
 
 ## Beslissing 2: Wat Is de Reikwijdte van een Manager?
 
-"Managers zien hun team" verbergt verschillende beslissingen. Wordt het team bepaald door een rapportagelijn, een afdeling of een locatie? Wat gebeurt er als een werknemer van team wisselt — verliest de oude manager direct de toegang? Mogen managers de salarissen van hun ondergeschikten zien, of alleen verlof goedkeuren? Zien managers de teams van andere managers?
+"Managers zien hun team" verbergt verschillende beslissingen. Wordt het team bepaald door een rapportagelijn, een afdeling of een locatie? Wat gebeurt er als een werknemer van team wisselt - verliest de oude manager direct de toegang? Mogen managers de salarissen van hun ondergeschikten zien, of alleen verlof goedkeuren? Zien managers de teams van andere managers?
 
 AI-gegenereerde code implementeert managertoegang vaak als "iedereen met de managerrol ziet iedereen", omdat dat de eenvoudigste query is. **De beslissing:** definieer de reikwijdte precies en leid die af uit data (rapportagelijnen) in plaats van uit vastgecodeerde lijsten.
 
@@ -52,7 +52,7 @@ AI-gebouwde HR-apps bevatten vaak een vrij tekstveld "reden van afwezigheid" dat
 
 ## Beslissing 4: Hoe Worden Loonstroken en Contracten Beschermd?
 
-Loonstroken en contracten worden doorgaans als pdf opgeslagen. In AI-gebouwde apps staan ze vaak in een openbare opslagbucket met voorspelbare bestandsnamen — `payslip_2027_10_employee_42.pdf` — wat betekent dat iedereen die het patroon raadt de loonstroken van collega's kan downloaden.
+Loonstroken en contracten worden doorgaans als pdf opgeslagen. In AI-gebouwde apps staan ze vaak in een openbare opslagbucket met voorspelbare bestandsnamen - `payslip_2027_10_employee_42.pdf` - wat betekent dat iedereen die het patroon raadt de loonstroken van collega's kan downloaden.
 
 **De beslissing:** privéopslag, ondertekende links die snel verlopen, toegangscontroles per document en onraadbare identificatoren. Overweeg of documenten in opslag moeten worden versleuteld met aparte sleutels.
 
@@ -64,7 +64,7 @@ In HR is wie wat heeft ingezien net zo belangrijk als wie wat heeft gewijzigd. V
 
 ## Beslissing 6: Wat Gebeurt Er bij Uitdiensttreding?
 
-Als werknemers vertrekken, moeten hun accounts direct worden gedeactiveerd en hun gegevens volgens vastgestelde termijnen worden bewaard of verwijderd — voor de salarisadministratie gelden lange wettelijke bewaartermijnen, terwijl veel andere gegevens eerder horen te worden verwijderd. Als managers vertrekken, moet hun toegang tot voormalige ondergeschikten eindigen.
+Als werknemers vertrekken, moeten hun accounts direct worden gedeactiveerd en hun gegevens volgens vastgestelde termijnen worden bewaard of verwijderd - voor de salarisadministratie gelden lange wettelijke bewaartermijnen, terwijl veel andere gegevens eerder horen te worden verwijderd. Als managers vertrekken, moet hun toegang tot voormalige ondergeschikten eindigen.
 
 **De beslissing:** automatiseer deactivering (bij voorkeur gekoppeld aan de einddatum van het contract) en implementeer bewaartermijnen per datacategorie.
 
@@ -77,7 +77,7 @@ Bedient uw HR-tool meerdere bedrijven, dan is scheiding tussen tenants de eerste
 - Gebruik row level security met beleid op basis van de rol en relaties van de geauthenticeerde gebruiker, niet op basis van parameters die de client meestuurt.
 - Overweeg beperkingen op kolomniveau of aparte tabellen voor zeer gevoelige velden zoals salaris en bankgegevens, zodat brede query's die niet per ongeluk kunnen meenemen.
 - Stuur nooit volledige werknemersobjecten naar de frontend "voor het geval dat"; selecteer alleen wat elke weergave nodig heeft.
-- Schrijf geautomatiseerde tests die voor elke rol verboden toegang proberen — een werknemer die het salaris van een collega leest, een manager die een ander team leest, de ene tenant die de andere leest.
+- Schrijf geautomatiseerde tests die voor elke rol verboden toegang proberen - een werknemer die het salaris van een collega leest, een manager die een ander team leest, de ene tenant die de andere leest.
 
 ## Een Rollenmatrix Die U Kunt Implementeren
 
@@ -85,21 +85,21 @@ De beveiliging van AI-gegenereerde code in HR-tools begint met het in één tabe
 
 | Datacategorie | Werknemer (zelf) | Manager (eigen team) | HR | Salarisadministratie | Externe accountant |
 | --- | --- | --- | --- | --- | --- |
-| Persoonsgegevens | Bekijken, deels bewerken | Naam en contact bekijken | Bekijken, bewerken | Bekijken | — |
-| Contract en salaris | Eigen bekijken | — (afhankelijk van beleid) | Bekijken, bewerken | Bekijken | Totalen bekijken |
-| Bankgegevens | Eigen bewerken | — | Bekijken | Bekijken | — |
-| Verlofsaldi | Eigen bekijken | Bekijken, goedkeuren | Bekijken, bewerken | Bekijken | — |
-| Verzuimdata | Eigen melden | Data van team bekijken | Bekijken, beheren | — | — |
-| Beoordelingsnotities | Eigen definitieve bekijken | Schrijven, team bekijken | Alles bekijken | — | — |
-| Documenten (loonstroken, contracten) | Eigen bekijken | — | Uploaden, bekijken | Uploaden | — |
+| Persoonsgegevens | Bekijken, deels bewerken | Naam en contact bekijken | Bekijken, bewerken | Bekijken | - |
+| Contract en salaris | Eigen bekijken | - (afhankelijk van beleid) | Bekijken, bewerken | Bekijken | Totalen bekijken |
+| Bankgegevens | Eigen bewerken | - | Bekijken | Bekijken | - |
+| Verlofsaldi | Eigen bekijken | Bekijken, goedkeuren | Bekijken, bewerken | Bekijken | - |
+| Verzuimdata | Eigen melden | Data van team bekijken | Bekijken, beheren | - | - |
+| Beoordelingsnotities | Eigen definitieve bekijken | Schrijven, team bekijken | Alles bekijken | - | - |
+| Documenten (loonstroken, contracten) | Eigen bekijken | - | Uploaden, bekijken | Uploaden | - |
 
-Elke cel wordt een beleidsregel in de database of een controle in een serverfunctie, en elke "—" wordt een negatieve test. De matrix is ook het document dat de HR-directeur van een klant wil beoordelen voordat er wordt getekend.
+Elke cel wordt een beleidsregel in de database of een controle in een serverfunctie, en elke " - " wordt een negatieve test. De matrix is ook het document dat de HR-directeur van een klant wil beoordelen voordat er wordt getekend.
 
 ## Beperkingen op Rij- en Kolomniveau Implementeren
 
 Row level security beantwoordt "welke werknemers mag u zien?"; beperkingen op kolomniveau beantwoorden "welke velden over hen mag u zien?" In stacks op basis van Postgres, zoals Supabase, is een praktisch patroon:
 
-- **Splits gevoelige velden af in aparte tabellen** — `employee_compensation`, `employee_bank_details`, `sickness_reports` — elk met strenger beleid dan de hoofdtabel `employees`.
+- **Splits gevoelige velden af in aparte tabellen** - `employee_compensation`, `employee_bank_details`, `sickness_reports` - elk met strenger beleid dan de hoofdtabel `employees`.
 - **Bied per rol views of serverfuncties aan** die alleen de toegestane velden teruggeven, in plaats van de client willekeurige kolommen te laten selecteren.
 - **Leid de reikwijdte van managers af uit rapportagelijnen** die in de database zijn opgeslagen, en bereken die in het beleid (bijvoorbeeld met een hulpfunctie die de ID's van de ondergeschikten van een manager teruggeeft).
 - **Weiger standaard**, en geef daarna per rol toegang.
@@ -108,11 +108,11 @@ Dit ontwerp voorkomt de meest voorkomende fout in AI-gebouwde HR-tools: een gene
 
 ## Leesacties Loggen, Niet Alleen Schrijfacties
 
-Bij HR-data moet u weten wie heeft gekeken, niet alleen wie heeft gewijzigd. Log leestoegang tot beloning, bankgegevens, verzuimmeldingen en beoordelingsnotities met de kijker, de betreffende werknemer, de categorie en het tijdstip. Sla logs append-only op, gescheiden van de data, en maak ze controleerbaar voor een daarvoor geschikte persoon — vaak de HR-leiding of de contactpersoon voor gegevensbescherming. Overweeg ook meldingen bij ongebruikelijke patronen, zoals een manager die veel werknemers buiten zijn team bekijkt of het in bulk downloaden van loonstroken.
+Bij HR-data moet u weten wie heeft gekeken, niet alleen wie heeft gewijzigd. Log leestoegang tot beloning, bankgegevens, verzuimmeldingen en beoordelingsnotities met de kijker, de betreffende werknemer, de categorie en het tijdstip. Sla logs append-only op, gescheiden van de data, en maak ze controleerbaar voor een daarvoor geschikte persoon - vaak de HR-leiding of de contactpersoon voor gegevensbescherming. Overweeg ook meldingen bij ongebruikelijke patronen, zoals een manager die veel werknemers buiten zijn team bekijkt of het in bulk downloaden van loonstroken.
 
 ## Loonstroken Veilig Verspreiden
 
-Loonstroken zijn gevoelige documenten die elke maand voor elke werknemer binnenkomen, en daardoor een veelvoorkomende bron van lekken. Een veilige flow uploadt loonstroken naar privéopslag met willekeurige identificatoren, koppelt elk bestand aan precies één werknemer, informeert werknemers per e-mail zonder het bestand bij te voegen, vereist inloggen (bij voorkeur met MFA) om te downloaden, logt downloads en verwijdert bestanden volgens een bewaarbeleid. Bulkuploads vanuit salarissoftware horen vóór publicatie te controleren dat elk bestand bij de bedoelde werknemer hoort — een verkeerd toegewezen loonstrook is een van de meest gênante incidenten die een HR-tool kan hebben.
+Loonstroken zijn gevoelige documenten die elke maand voor elke werknemer binnenkomen, en daardoor een veelvoorkomende bron van lekken. Een veilige flow uploadt loonstroken naar privéopslag met willekeurige identificatoren, koppelt elk bestand aan precies één werknemer, informeert werknemers per e-mail zonder het bestand bij te voegen, vereist inloggen (bij voorkeur met MFA) om te downloaden, logt downloads en verwijdert bestanden volgens een bewaarbeleid. Bulkuploads vanuit salarissoftware horen vóór publicatie te controleren dat elk bestand bij de bedoelde werknemer hoort - een verkeerd toegewezen loonstrook is een van de meest gênante incidenten die een HR-tool kan hebben.
 
 ## Uitdiensttreding en Bewaartermijnen per Categorie
 
@@ -120,23 +120,23 @@ Als werknemers vertrekken, hebben verschillende gegevens een verschillende leven
 
 ## Beveiligingsverwachtingen van HR-Klanten
 
-Bedrijven die een HR-tool kopen, vragen steeds vaker om MFA voor alle gebruikers met toegang tot gegevens van anderen, SSO voor grotere klanten, hosting in de EU, een verwerkersovereenkomst, een lijst met subverwerkers en bewijs van toegangstests. Deze antwoorden vooraf voorbereiden — samen met de rollenmatrix — verkort verkooptrajecten en laat zien dat de tool voor gevoelige data is ontworpen in plaats van er achteraf op aangepast.
+Bedrijven die een HR-tool kopen, vragen steeds vaker om MFA voor alle gebruikers met toegang tot gegevens van anderen, SSO voor grotere klanten, hosting in de EU, een verwerkersovereenkomst, een lijst met subverwerkers en bewijs van toegangstests. Deze antwoorden vooraf voorbereiden - samen met de rollenmatrix - verkort verkooptrajecten en laat zien dat de tool voor gevoelige data is ontworpen in plaats van er achteraf op aangepast.
 
 ## De Matrix Doorlopend Testen
 
-De rollenmatrix is maar zo goed als de tests ervan. Schrijf voor elke cel met "—" een test die als die rol inlogt en de toegang probeert. Draai de suite bij elke deployment. Wanneer een AI-codeertool een query opnieuw genereert of een nieuw scherm toevoegt, zijn het deze tests die een regressie opvangen voordat een werknemer het salaris van een collega ziet.
+De rollenmatrix is maar zo goed als de tests ervan. Schrijf voor elke cel met " - " een test die als die rol inlogt en de toegang probeert. Draai de suite bij elke deployment. Wanneer een AI-codeertool een query opnieuw genereert of een nieuw scherm toevoegt, zijn het deze tests die een regressie opvangen voordat een werknemer het salaris van een collega ziet.
 
 ## Extra Zorg voor Beoordelings- en Conflictdossiers
 
-Beoordelingen, waarschuwingen, klachten en notities over conflicten horen bij de gevoeligste HR-gegevens. Beperk ze tot de werknemer, diens directe manager en HR; maak onderscheid tussen concepten en definitieve stukken, zodat werknotities van managers niet per ongeluk zichtbaar zijn; leg vast wie elk document heeft ingezien; en stel bewaartermijnen vast die passen bij het beleid van uw klanten. Werknemers kunnen inzage vragen in gegevens over hen, dus schrijf notities alsof de werknemer ze kan lezen — feitelijk, respectvol en relevant.
+Beoordelingen, waarschuwingen, klachten en notities over conflicten horen bij de gevoeligste HR-gegevens. Beperk ze tot de werknemer, diens directe manager en HR; maak onderscheid tussen concepten en definitieve stukken, zodat werknotities van managers niet per ongeluk zichtbaar zijn; leg vast wie elk document heeft ingezien; en stel bewaartermijnen vast die passen bij het beleid van uw klanten. Werknemers kunnen inzage vragen in gegevens over hen, dus schrijf notities alsof de werknemer ze kan lezen - feitelijk, respectvol en relevant.
 
 ## Koppelen met Salarisadministratie en Tijdregistratie
 
-HR-portalen zijn vaak gekoppeld aan salarissoftware en systemen voor tijdregistratie. Elke koppeling verplaatst salaris- of aanwezigheidsgegevens tussen systemen, dus gebruik aparte serviceaccounts met minimale rechten, versleutel data tijdens transport, log elke overdracht en sluit periodiek aan, zodat fouten vóór de betaaldag worden opgemerkt. Mislukt een koppeling, dan moet dat luid gebeuren — een melding aan HR — in plaats van de salarisadministratie stilletjes onvolledig te laten.
+HR-portalen zijn vaak gekoppeld aan salarissoftware en systemen voor tijdregistratie. Elke koppeling verplaatst salaris- of aanwezigheidsgegevens tussen systemen, dus gebruik aparte serviceaccounts met minimale rechten, versleutel data tijdens transport, log elke overdracht en sluit periodiek aan, zodat fouten vóór de betaaldag worden opgemerkt. Mislukt een koppeling, dan moet dat luid gebeuren - een melding aan HR - in plaats van de salarisadministratie stilletjes onvolledig te laten.
 
 ## Wat Er Gebeurt Als een HR-Tool Lekt
 
-De gevolgen van een datalek in HR reiken verder dan de toezichthouder: geschaad vertrouwen tussen collega's, mogelijke claims van werknemers en een klant die waarschijnlijk niet verlengt. Daarom verdienen HR-tools strengere standaarden dan een typische SaaS — MFA, logging van leesacties, gescheiden gevoelige data en doorlopende toegangstests — vanaf de allereerste klant.
+De gevolgen van een datalek in HR reiken verder dan de toezichthouder: geschaad vertrouwen tussen collega's, mogelijke claims van werknemers en een klant die waarschijnlijk niet verlengt. Daarom verdienen HR-tools strengere standaarden dan een typische SaaS - MFA, logging van leesacties, gescheiden gevoelige data en doorlopende toegangstests - vanaf de allereerste klant.
 
 ## Waar LaunchStudio Past
 
@@ -159,9 +159,9 @@ In tien werkdagen implementeerde het team een rollenmatrix die met beleid op rij
 **Resultaat:** De klanten van Verlofbord werden transparant geïnformeerd; geen enkele vertrok, en twee noemden de reactie als reden om te blijven. De tool is sindsdien gegroeid naar 23 bedrijven, en de tests op verboden toegang hebben één regressie tegengehouden die door een latere bewerking in Cursor was ontstaan.
 
 > *"Ik bouwde de tool om HR makkelijker te maken voor kleine bedrijven. Ik maakte er bijna de reden van dat een van hen de slechtste week uit zijn geschiedenis had."*
-> — **Laura Timmermans, Oprichter, Verlofbord (Ede)**
+> - **Laura Timmermans, Oprichter, Verlofbord (Ede)**
 
-**Kosten & Tijdlijn:** € 3.100 (Launch Ready-pakket met rollenmodel, herstructurering van data, beveiliging van documenten, logging en toegangstests) — afgerond in 10 werkdagen.
+**Kosten & Tijdlijn:** € 3.100 (Launch Ready-pakket met rollenmodel, herstructurering van data, beveiliging van documenten, logging en toegangstests) - afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -175,7 +175,7 @@ In Nederland mogen werkgevers in het algemeen de aard of oorzaak van een ziekte 
 
 ### Hoe test ik of het toegangsbeheer van mijn HR-app echt werkt?
 
-Schrijf geautomatiseerde tests die als elke rol inloggen en verboden acties proberen — het salaris van een collega lezen, het verlof van een ander team, de data van een andere tenant — en verwachten dat die mislukken. Draai ze bij elke deployment.
+Schrijf geautomatiseerde tests die als elke rol inloggen en verboden acties proberen - het salaris van een collega lezen, het verlof van een ander team, de data van een andere tenant - en verwachten dat die mislukken. Draai ze bij elke deployment.
 
 ### Wat voegt de beveiligingsachtergrond van Manifera toe voor HR-tech?
 
@@ -183,7 +183,7 @@ HR-data combineert persoonlijke, financiële en gezondheidsinformatie in een con
 
 ### Helpt sterke gegevensbescherming een HR-tool om gevonden te worden?
 
-Ja. HR-kopers onderzoeken beveiliging zorgvuldig, en een duidelijke, specifieke beveiligingspagina — die rollen, logging en datalocatie beschrijft — is het soort content waar kopers en AI-antwoordmachines naar zoeken bij het vergelijken van tools.
+Ja. HR-kopers onderzoeken beveiliging zorgvuldig, en een duidelijke, specifieke beveiligingspagina - die rollen, logging en datalocatie beschrijft - is het soort content waar kopers en AI-antwoordmachines naar zoeken bij het vergelijken van tools.
 
 <script type="application/ld+json">
 {

@@ -1,6 +1,6 @@
-🚨 Zoey, an operations director, built a logistics bot with **Bolt**. Her AI's reorder suggestions just appeared in the dashboard with zero context — users never realized how much money they were actually saving, and trials kept dropping off right before the paid conversion moment. 📊
+🚨 Zoey, an operations director, built a logistics bot with **Bolt**. Her AI's reorder suggestions just appeared in the dashboard with zero context - users never realized how much money they were actually saving, and trials kept dropping off right before the paid conversion moment. 📊
 
-When AI works invisibly in the background, users assume it's just a standard feature — and won't pay a premium for something they can't see the value of. 🧠
+When AI works invisibly in the background, users assume it's just a standard feature - and won't pay a premium for something they can't see the value of. 🧠
 
 ❌ Reorder suggestions appearing with no explanation of the savings behind them
 ❌ Users unable to connect the dots between the AI and their bottom line

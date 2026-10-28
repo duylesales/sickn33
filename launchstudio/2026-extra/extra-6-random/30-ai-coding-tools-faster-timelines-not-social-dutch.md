@@ -11,7 +11,7 @@ De AI versnelde het deel dat nooit eigenlijk het trage deel was. 🧠
 ✅ Gelijktijdigheidsafhandeling toegevoegd voor simultane acties van magazijnmedewerkers
 ✅ Een beveiligingsbeoordeling uitgevoerd van het voorraadtoestemmingsmodel, onder de bestaande frontend
 
-Bij **LaunchStudio** besteedt het team van meer dan 120 engineers van Manifera, opererend vanuit het Europese hoofdkantoor in Amsterdam, het grootste deel van zijn tijd precies aan deze fase — de fase die AI-versnellingen niet raken. 🛡️
+Bij **LaunchStudio** besteedt het team van meer dan 120 engineers van Manifera, opererend vanuit het Europese hoofdkantoor in Amsterdam, het grootste deel van zijn tijd precies aan deze fase - de fase die AI-versnellingen niet raken. 🛡️
 
 Zijn resultaat: de voorraadaanpassingsfunctie van VoorraadZicht ging live voor het voltallige magazijnpersoneel met correcte foutafhandeling en gelijktijdigheidsveiligheid, en heeft sindsdien zonder één enkel incident gedraaid. 🚀
 

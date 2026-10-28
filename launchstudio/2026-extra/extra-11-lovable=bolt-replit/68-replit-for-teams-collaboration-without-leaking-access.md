@@ -30,13 +30,13 @@ Everybody working in one shared environment removes friction and removes isolati
 
 Two people editing the same function simultaneously produce a result neither intended. A change that breaks the running application breaks it for everyone in the session, including the person demonstrating it to a client in the next window. And there is no natural point at which somebody reviews anything, because the work is already in the shared state by the time it exists.
 
-None of this argues against the model. It argues for conventions: agree who is working where before starting, keep sessions short and focused, and use version control for anything that outlives an afternoon — collaborative editing and commit history are complementary, and teams that treat the first as a replacement for the second lose the ability to answer what changed and when.
+None of this argues against the model. It argues for conventions: agree who is working where before starting, keep sessions short and focused, and use version control for anything that outlives an afternoon - collaborative editing and commit history are complementary, and teams that treat the first as a replacement for the second lose the ability to answer what changed and when.
 
 ## Environment Separation Is the Real Issue
 
 The question that matters more than any permission setting: when your team is working, what data are they working on?
 
-In many small projects the answer is production — one environment, one database, live customer records. So a mistaken query during a debugging session hits real data, a test email goes to a real customer, and a developer looking at a bug is reading personal information they have no business reason to see.
+In many small projects the answer is production - one environment, one database, live customer records. So a mistaken query during a debugging session hits real data, a test email goes to a real customer, and a developer looking at a bug is reading personal information they have no business reason to see.
 
 The separation to establish, in rough order of value:
 
@@ -62,7 +62,7 @@ Decide ownership before the first invoice, not after the last.
 
 Everybody adds collaborators. Almost nobody removes them, and the reason is that removal is an action somebody has to remember while the work is finished and attention has moved on.
 
-The routine that works is short and mechanical. On the day a person's involvement ends: remove them from the project and from every connected service, rotate any credential they could have seen, and note it somewhere. Not next month, not at the quarterly review — the same day, because that is the only schedule that survives contact with a busy team.
+The routine that works is short and mechanical. On the day a person's involvement ends: remove them from the project and from every connected service, rotate any credential they could have seen, and note it somewhere. Not next month, not at the quarterly review - the same day, because that is the only schedule that survives contact with a busy team.
 
 Rotation is the part people skip, and it is the part that makes removal real. Access removed is a door closed; a credential they copied into a local file three months ago is a key still in their pocket.
 
@@ -100,7 +100,7 @@ A solo builder can survive without it. Two people cannot, and the reasons are pr
 
 **It allows parallel work.** Branches let two people build different things without standing on each other, which is exactly what shared live editing does not provide.
 
-**It creates a review point.** Not bureaucracy — a moment where a second person sees a change before it reaches customers. On projects with substantial AI-generated code this is where unnecessary dependencies, removed access checks and duplicated logic get caught, because it is the only moment anybody reads the change as a whole.
+**It creates a review point.** Not bureaucracy - a moment where a second person sees a change before it reaches customers. On projects with substantial AI-generated code this is where unnecessary dependencies, removed access checks and duplicated logic get caught, because it is the only moment anybody reads the change as a whole.
 
 **It makes going back possible.** A revert is a known operation. Undoing a bad afternoon in a shared editing session is archaeology.
 
@@ -108,7 +108,7 @@ A solo builder can survive without it. Two people cannot, and the reasons are pr
 
 Four conventions are enough for a small team, and more than four will be ignored. Commit in small, complete units with a message saying why rather than what. Use short-lived branches for anything that takes more than an afternoon. Have the other person look at anything touching data, money or permissions. And tag what you deploy, so "which version is live?" has an answer.
 
-There is a specific interaction worth naming. AI tooling generates large changes quickly, and a large change is a change nobody reviews. Asking for one thing per session — already the cheaper and more reviewable way to work — also produces commits a colleague can actually read. The habits reinforce each other, which is unusual and worth exploiting.
+There is a specific interaction worth naming. AI tooling generates large changes quickly, and a large change is a change nobody reviews. Asking for one thing per session - already the cheaper and more reviewable way to work - also produces commits a colleague can actually read. The habits reinforce each other, which is unusual and worth exploiting.
 
 Commit history and collaborative editing are not alternatives. Edit together when that is the fast way to solve something, and commit the result so the project remembers it.
 
@@ -128,16 +128,16 @@ Wouter Stam runs a two-person studio in Amersfoort building operational tools fo
 
 The arrangement worked until a client asked, during a procurement review, for a list of everyone who could access their system. Wouter could not produce one confidently. The workspace members list contained seven accounts; the contractor had finished four months earlier; and because all four projects sat in the same workspace, several people had at least nominal visibility into clients who did not know the others existed.
 
-There was also a technical version of the same problem. Every project connected directly to its production database, so any session — including one with the contractor present — was working against live customer records, including drivers' personal details.
+There was also a technical version of the same problem. Every project connected directly to its production database, so any session - including one with the contractor present - was working against live customer records, including drivers' personal details.
 
 Eight business days of work: the four projects separated into per-client workspaces with access granted only to the people on that engagement; development environments created for each with anonymised copies of production data, so day-to-day work no longer touched live records; production credentials narrowed to Wouter and his colleague, rotated as part of the separation; the contractor and two former client staff removed and every credential they could have seen rotated; a same-day offboarding routine written into the studio's engagement template; code moved into per-client version control owned by each client; and a one-page runbook produced per project covering deployment, scheduled work, services and costs.
 
-**Result:** the procurement review was completed with a named access list, and Wouter now sends the same one-page document at the start of every engagement — which he says has shortened two sales conversations noticeably.
+**Result:** the procurement review was completed with a named access list, and Wouter now sends the same one-page document at the start of every engagement - which he says has shortened two sales conversations noticeably.
 
 > *"A client asked who could see their data and I realised the honest answer was seven people, one of whom had stopped working for me in March."*
-> — **Wouter Stam, Founder, Stam Digitaal (Amersfoort)**
+> - **Wouter Stam, Founder, Stam Digitaal (Amersfoort)**
 
-**Cost & Timeline:** €4,100 (workspace separation, development environments with anonymised data, credential rotation, version control migration, runbooks) — completed in 8 business days.
+**Cost & Timeline:** €4,100 (workspace separation, development environments with anonymised data, credential rotation, version control migration, runbooks) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -151,7 +151,7 @@ No. A separate development database with synthetic or anonymised data removes mo
 
 ### Should a client project live in my workspace or the client's?
 
-Either works if decided in writing at the start. What matters more is that by handover, every account — domain, database, payments, email, error tracking — is owned by the client and your access is removable.
+Either works if decided in writing at the start. What matters more is that by handover, every account - domain, database, payments, email, error tracking - is owned by the client and your access is removable.
 
 ### What does proper offboarding involve?
 
@@ -179,7 +179,7 @@ Ownership of every account, the code in version control they control, credential
       "name": "Should my team work against the production database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — use a development database with synthetic or anonymised data, so debugging cannot email real customers or expose personal data unnecessarily."
+        "text": "No - use a development database with synthetic or anonymised data, so debugging cannot email real customers or expose personal data unnecessarily."
       }
     },
     {

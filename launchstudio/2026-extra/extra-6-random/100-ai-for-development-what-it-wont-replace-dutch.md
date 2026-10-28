@@ -11,7 +11,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Wat 'AI voor Ontwikkeling' Wel en Niet Zal Vervangen, Volgens de Mensen Die Dit Fulltime Doen",
-  "description": "Na 100 artikelen over het naar productie brengen van door AI gebouwde producten, hier is het eerlijke antwoord op wat AI voor ontwikkeling daadwerkelijk vervangt — het typewerk, niet het oordeel.",
+  "description": "Na 100 artikelen over het naar productie brengen van door AI gebouwde producten, hier is het eerlijke antwoord op wat AI voor ontwikkeling daadwerkelijk vervangt - het typewerk, niet het oordeel.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
@@ -19,11 +19,11 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Dit is het honderdste artikel in deze reeks, en het voelt gepast om het af te sluiten met het simpelst mogelijke antwoord op de vraag die onder alle andere ligt: wat vervangt "AI voor ontwikkeling" daadwerkelijk, en wat laat het aan een mens over om nog te beslissen? Na negenennegentig artikelen gebouwd rond echte leemtes in echte door AI gebouwde producten — race conditions, ontbrekende eigendomscontroles, geheimen achtergelaten in configuratiebestanden, gratis lagen die bezwijken op het slechtste moment — houdt één patroon stand over ze allemaal. AI voor ontwikkeling vervangt het typewerk. Het heeft het oordeel nog niet vervangen.
+Dit is het honderdste artikel in deze reeks, en het voelt gepast om het af te sluiten met het simpelst mogelijke antwoord op de vraag die onder alle andere ligt: wat vervangt "AI voor ontwikkeling" daadwerkelijk, en wat laat het aan een mens over om nog te beslissen? Na negenennegentig artikelen gebouwd rond echte leemtes in echte door AI gebouwde producten - race conditions, ontbrekende eigendomscontroles, geheimen achtergelaten in configuratiebestanden, gratis lagen die bezwijken op het slechtste moment - houdt één patroon stand over ze allemaal. AI voor ontwikkeling vervangt het typewerk. Het heeft het oordeel nog niet vervangen.
 
 ## Het typewerk was altijd al het kleinere deel van de klus
 
-Syntactisch correcte code schrijven die ruwweg doet wat u beschreef, is nooit het moeilijke deel van het bouwen van software geweest, ook al vrat het de meeste uren op. AI-tools hebben dat deel bijna volledig overgenomen, en dat is een echte, blijvende verschuiving — geen bevlieging, geen fase die omkeert. Oprichters kunnen nu in een middag tot een werkend prototype komen waar het vroeger weken kostte. Dat is echt, en het gaat niet weg.
+Syntactisch correcte code schrijven die ruwweg doet wat u beschreef, is nooit het moeilijke deel van het bouwen van software geweest, ook al vrat het de meeste uren op. AI-tools hebben dat deel bijna volledig overgenomen, en dat is een echte, blijvende verschuiving - geen bevlieging, geen fase die omkeert. Oprichters kunnen nu in een middag tot een werkend prototype komen waar het vroeger weken kostte. Dat is echt, en het gaat niet weg.
 
 ## Het oordeel was altijd al het moeilijkere deel, en het is nog steeds van ons
 
@@ -35,11 +35,11 @@ Het is verleidelijk om aan te nemen dat naarmate AI-tools verbeteren, de oordeel
 
 ## Wat "AI voor ontwikkeling" voortaan zal blijven betekenen
 
-Verwacht dat de zin precies blijft betekenen wat hij vandaag betekent: een dramatische versnelling van het deel van het bouwen van software dat altijd mechanisch was, gecombineerd met een onveranderde behoefte aan het deel dat altijd een oordeelsbeslissing was. Het eerlijke advies, honderd artikelen verder, is niet veranderd sinds artikel één — bouw snel met AI, en laat een tweede, ervaren paar ogen kijken naar de beslissingen die de AI nooit voor u zou nemen.
+Verwacht dat de zin precies blijft betekenen wat hij vandaag betekent: een dramatische versnelling van het deel van het bouwen van software dat altijd mechanisch was, gecombineerd met een onveranderde behoefte aan het deel dat altijd een oordeelsbeslissing was. Het eerlijke advies, honderd artikelen verder, is niet veranderd sinds artikel één - bouw snel met AI, en laat een tweede, ervaren paar ogen kijken naar de beslissingen die de AI nooit voor u zou nemen.
 
-"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het is een gepaste noot om een reeks van honderd artikelen mee af te sluiten: het typewerk is opgelost. De volwassenheid — de architectuur, de beveiliging, het oordeel — is nog steeds de klus.
+"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het is een gepaste noot om een reeks van honderd artikelen mee af te sluiten: het typewerk is opgelost. De volwassenheid - de architectuur, de beveiliging, het oordeel - is nog steeds de klus.
 
-LaunchStudio, vanuit zijn Europese hoofdkantoor in Amsterdam, bestaat specifiek voor dat tweede deel — de delen van een project waarover geen enkele codeertool zelfstandig beslist. Als u iets heeft gebouwd met Lovable, Bolt, Cursor of v0 en u niet zeker weet waar de oordeelslacunes in uw eigen product zitten, is ons [gratis advies](https://launchstudio.eu/nl/#contact) een snelle manier om dat te ontdekken, en de [over-ons-pagina](https://www.manifera.com/about-us/) van Manifera vertelt het langere verhaal achter de elf jaar achter dat oordeel.
+LaunchStudio, vanuit zijn Europese hoofdkantoor in Amsterdam, bestaat specifiek voor dat tweede deel - de delen van een project waarover geen enkele codeertool zelfstandig beslist. Als u iets heeft gebouwd met Lovable, Bolt, Cursor of v0 en u niet zeker weet waar de oordeelslacunes in uw eigen product zitten, is ons [gratis advies](https://launchstudio.eu/nl/#contact) een snelle manier om dat te ontdekken, en de [over-ons-pagina](https://www.manifera.com/about-us/) van Manifera vertelt het langere verhaal achter de elf jaar achter dat oordeel.
 
 ## De Terugkerende Oordeelsbeslissingen, Geordend per Categorie
 
@@ -62,16 +62,16 @@ Met deze beproefde principes navigeert u moeiteloos door het moderne technologie
 
 ### Een AI-native oprichter in actie: waar het typewerk niet meer genoeg was
 
-Roan Beemster, oprichter in Beemster, bouwde WeideBeheer — een weidebeheertool voor kleine melkveebedrijven — met Bolt, over verschillende iteraties gedurende meerdere maanden. Elke iteratie werd sneller geproduceerd dan de vorige, en elke iteratie loste het typewerkprobleem volledig op: de interface werkte, de gegevensinvoer verliep vlot, de weiderotatiekalender werd correct weergegeven. Wat Roan opmerkte, iteratie na iteratie, was dat de delen van WeideBeheer die daadwerkelijk bepaalden of boeren de app vertrouwden met echte beslissingen — hoe de app omging met de terugkeer van een boer na een periode offline, hoe het conflicterende invoer verzoende van twee mensen die dezelfde kudde beheerden, hoe het gevoelige kudde- en opbrengstgegevens beschermde tegen andere boerderijen die het platform deelden — nooit werden opgelost door sneller te typen. Ze hadden iemand nodig die ging zitten bij de specifieke oordeelsbeslissingen waar de gebruikers van WeideBeheer daadwerkelijk mee te maken kregen en deliberate besliste hoe de software zich zou moeten gedragen.
+Roan Beemster, oprichter in Beemster, bouwde WeideBeheer - een weidebeheertool voor kleine melkveebedrijven - met Bolt, over verschillende iteraties gedurende meerdere maanden. Elke iteratie werd sneller geproduceerd dan de vorige, en elke iteratie loste het typewerkprobleem volledig op: de interface werkte, de gegevensinvoer verliep vlot, de weiderotatiekalender werd correct weergegeven. Wat Roan opmerkte, iteratie na iteratie, was dat de delen van WeideBeheer die daadwerkelijk bepaalden of boeren de app vertrouwden met echte beslissingen - hoe de app omging met de terugkeer van een boer na een periode offline, hoe het conflicterende invoer verzoende van twee mensen die dezelfde kudde beheerden, hoe het gevoelige kudde- en opbrengstgegevens beschermde tegen andere boerderijen die het platform deelden - nooit werden opgelost door sneller te typen. Ze hadden iemand nodig die ging zitten bij de specifieke oordeelsbeslissingen waar de gebruikers van WeideBeheer daadwerkelijk mee te maken kregen en deliberate besliste hoe de software zich zou moeten gedragen.
 
-Die herkenning — dat AI voor ontwikkeling het typewerk bij WeideBeheer volledig had vervangen, maar elke oordeelsbeslissing precies liet waar hij begon — is wat Roan uiteindelijk bij LaunchStudio bracht. De technici van LaunchStudio, ondersteund door Manifera, werkten door de data-verzoeningslogica van WeideBeheer heen, verscherpten de toegang zodat de kudde- en opbrengstgegevens van de ene boerderij daadwerkelijk gescheiden bleven van die van een andere, en bouwden een duidelijk, getest gedrag in voor wat er gebeurt wanneer de offline-invoer van een boer de live kalender weer ontmoet.
+Die herkenning - dat AI voor ontwikkeling het typewerk bij WeideBeheer volledig had vervangen, maar elke oordeelsbeslissing precies liet waar hij begon - is wat Roan uiteindelijk bij LaunchStudio bracht. De technici van LaunchStudio, ondersteund door Manifera, werkten door de data-verzoeningslogica van WeideBeheer heen, verscherpten de toegang zodat de kudde- en opbrengstgegevens van de ene boerderij daadwerkelijk gescheiden bleven van die van een andere, en bouwden een duidelijk, getest gedrag in voor wat er gebeurt wanneer de offline-invoer van een boer de live kalender weer ontmoet.
 
 **Resultaat:** WeideBeheer ging van een snel maar oordeelsarm prototype naar een productietool waarop meerdere melkveebedrijven nu hun daadwerkelijke bedrijfsvoering draaien, waarbij de beslissingen die ertoe deden bewust werden genomen in plaats van overgelaten aan wat de AI toevallig als eerste genereerde.
 
-> *"Bolt heeft me geen moment vertraagd. Het heeft me ook nooit verteld wat ik moest doen toen twee boeren hetzelfde kuddeversie bewerkten. Dat deel zou altijd van mij zijn om uit te zoeken — of over te dragen aan iemand die dit fulltime doet."*
-> — **Roan Beemster, oprichter, WeideBeheer (Beemster)**
+> *"Bolt heeft me geen moment vertraagd. Het heeft me ook nooit verteld wat ik moest doen toen twee boeren hetzelfde kuddeversie bewerkten. Dat deel zou altijd van mij zijn om uit te zoeken - of over te dragen aan iemand die dit fulltime doet."*
+> - **Roan Beemster, oprichter, WeideBeheer (Beemster)**
 
-**Kosten en tijdlijn:** € 1.600 (data-verzoeningslogica, toegangsscheiding en productiehardening) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (data-verzoeningslogica, toegangsscheiding en productiehardening) - voltooid in 7 werkdagen.
 
 ---
 
@@ -87,11 +87,11 @@ Over de honderd producten die in deze reeks aan bod kwamen, wijst het patroon de
 
 ### Waarom zegt Herre Roelevink dat de uitdaging is verschoven van software bouwen naar het laten rijpen ervan?
 
-Omdat AI-tools grotendeels het probleem hebben opgelost van het snel omzetten van een idee in werkende software. Wat overblijft, volgens Roelevink, CEO van LaunchStudio en Managing Director van Manifera, is het architectuur- en beveiligingswerk dat nodig is om die software naar productierijpheid te brengen — het deel waar Manifera elf jaar ervaring rond heeft opgebouwd.
+Omdat AI-tools grotendeels het probleem hebben opgelost van het snel omzetten van een idee in werkende software. Wat overblijft, volgens Roelevink, CEO van LaunchStudio en Managing Director van Manifera, is het architectuur- en beveiligingswerk dat nodig is om die software naar productierijpheid te brengen - het deel waar Manifera elf jaar ervaring rond heeft opgebouwd.
 
 ### Hoe helpt LaunchStudio met de oordeelsbeslissingen die AI-tools niet nemen?
 
-De technici van LaunchStudio, ondersteund door Manifera's meer dan 120 engineers en meer dan 160 opgeleverde projecten, beoordelen door AI gegenereerde producten specifiek op de beslissingen die in deze reeks aan bod kwamen — gelijktijdigheid, eigendomscontroles, infrastructuuromvang, beveiligingspraktijk — en fixen wat ontbreekt zonder de frontend van de oprichter te herbouwen.
+De technici van LaunchStudio, ondersteund door Manifera's meer dan 120 engineers en meer dan 160 opgeleverde projecten, beoordelen door AI gegenereerde producten specifiek op de beslissingen die in deze reeks aan bod kwamen - gelijktijdigheid, eigendomscontroles, infrastructuuromvang, beveiligingspraktijk - en fixen wat ontbreekt zonder de frontend van de oprichter te herbouwen.
 
 ### Waar is LaunchStudio gevestigd, en maakt locatie uit voor dit soort werk?
 
@@ -123,7 +123,7 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met engine
       "name": "Waarom zegt Herre Roelevink dat de uitdaging is verschoven van software bouwen naar het laten rijpen ervan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat AI-tools grotendeels het probleem hebben opgelost van het snel omzetten van een idee in werkende software. Wat overblijft, volgens Roelevink, CEO van LaunchStudio en Managing Director van Manifera, is het architectuur- en beveiligingswerk dat nodig is om die software naar productierijpheid te brengen — het deel waar Manifera elf jaar ervaring rond heeft opgebouwd."
+        "text": "Omdat AI-tools grotendeels het probleem hebben opgelost van het snel omzetten van een idee in werkende software. Wat overblijft, volgens Roelevink, CEO van LaunchStudio en Managing Director van Manifera, is het architectuur- en beveiligingswerk dat nodig is om die software naar productierijpheid te brengen - het deel waar Manifera elf jaar ervaring rond heeft opgebouwd."
       }
     },
     {
@@ -131,7 +131,7 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met engine
       "name": "Hoe helpt LaunchStudio met de oordeelsbeslissingen die AI-tools niet nemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De technici van LaunchStudio, ondersteund door Manifera's meer dan 120 engineers en meer dan 160 opgeleverde projecten, beoordelen door AI gegenereerde producten specifiek op de beslissingen die in deze reeks aan bod kwamen — gelijktijdigheid, eigendomscontroles, infrastructuuromvang, beveiligingspraktijk — en fixen wat ontbreekt zonder de frontend van de oprichter te herbouwen."
+        "text": "De technici van LaunchStudio, ondersteund door Manifera's meer dan 120 engineers en meer dan 160 opgeleverde projecten, beoordelen door AI gegenereerde producten specifiek op de beslissingen die in deze reeks aan bod kwamen - gelijktijdigheid, eigendomscontroles, infrastructuuromvang, beveiligingspraktijk - en fixen wat ontbreekt zonder de frontend van de oprichter te herbouwen."
       }
     },
     {

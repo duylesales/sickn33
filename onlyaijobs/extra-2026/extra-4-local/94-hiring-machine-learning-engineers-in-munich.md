@@ -40,11 +40,11 @@ Content Format: Employer Playbook
 }
 </script>
 
-Munich is one of Europe's most competitive markets for machine learning talent. Big-tech engineering centres, global industrial corporations in automotive, insurance and electronics, a fast-growing startup scene and world-class universities all compete for the same engineers — in a city with one of the most expensive housing markets in Germany. For employers, hiring machine learning engineers in Munich requires more than a competitive salary: it requires a clear value proposition, efficient processes, credible support with relocation and housing and a realistic view of what candidates compare. This playbook is written for hiring managers and recruiters at companies of all sizes and explains how to compete.
+Munich is one of Europe's most competitive markets for machine learning talent. Big-tech engineering centres, global industrial corporations in automotive, insurance and electronics, a fast-growing startup scene and world-class universities all compete for the same engineers - in a city with one of the most expensive housing markets in Germany. For employers, hiring machine learning engineers in Munich requires more than a competitive salary: it requires a clear value proposition, efficient processes, credible support with relocation and housing and a realistic view of what candidates compare. This playbook is written for hiring managers and recruiters at companies of all sizes and explains how to compete.
 
 ## Understanding the Munich ML Talent Market
 
-**Universities and research.** The Technical University of Munich (TUM) and LMU Munich are among Europe's leading universities, and together they run the Munich Center for Machine Learning (MCML), one of Germany's national AI competence centres. Helmholtz Munich and other institutes add research in health and environment. Each year, these institutions produce strong graduates and PhDs — the most important local talent pipeline.
+**Universities and research.** The Technical University of Munich (TUM) and LMU Munich are among Europe's leading universities, and together they run the Munich Center for Machine Learning (MCML), one of Germany's national AI competence centres. Helmholtz Munich and other institutes add research in health and environment. Each year, these institutions produce strong graduates and PhDs - the most important local talent pipeline.
 
 **Big-tech engineering centres.** Several global technology companies run large engineering and research teams in Munich, offering high salaries, strong brands and technically ambitious work.
 
@@ -66,7 +66,7 @@ Munich is one of Europe's most competitive markets for machine learning talent. 
 
 ## Designing a Vacancy That Works
 
-1. **Specific title and problem**: "ML Engineer — perception validation for driver assistance" rather than "AI Expert".
+1. **Specific title and problem**: "ML Engineer - perception validation for driver assistance" rather than "AI Expert".
 2. **Data, stack and compute**: what engineers will build with, including GPU resources.
 3. **Team and mentors**: who they will learn from.
 4. **Salary range and total package**: the EU Pay Transparency Directive will require pay information before interviews; publishing ranges helps you compete.
@@ -85,7 +85,7 @@ Strong ML engineers in Munich receive multiple offers. A process that takes two 
 - **ML system design** related to your domain.
 - **Team conversation** and decision within days.
 
-Give prompt feedback — Munich's ML community is well connected, and reputations travel.
+Give prompt feedback - Munich's ML community is well connected, and reputations travel.
 
 ## Visas and Relocation
 
@@ -106,17 +106,17 @@ Honesty matters: experienced candidates notice overstated promises.
 
 ## How OnlyAIJobs Supports Munich Employers
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement — every vacancy competes on its content, which rewards specific, transparent postings. Candidates browse without an account.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement - every vacancy competes on its content, which rewards specific, transparent postings. Candidates browse without an account.
 
-In the interest of transparency, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie, Sendcloud and Holland Innovative. For hiring machine learning engineers in Munich, use it alongside German and international job boards, university channels, MCML events and referrals — particularly if you want to reach ML engineers in the Netherlands who might consider relocating. Your first vacancy is free via info@onlyaijobs.eu.
+In the interest of transparency, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie, Sendcloud and Holland Innovative. For hiring machine learning engineers in Munich, use it alongside German and international job boards, university channels, MCML events and referrals - particularly if you want to reach ML engineers in the Netherlands who might consider relocating. Your first vacancy is free via info@onlyaijobs.eu.
 
 ## Building Pipelines With TUM, LMU and MCML
 
-The most reliable long-term source of ML talent in Munich is the universities. Employers that host master's theses, working students and industrial PhDs build relationships with students long before graduation. MCML organises events and collaborations with industry; TUM and LMU chairs welcome joint projects. Working students (Werkstudenten) can contribute to real projects for up to around 20 hours per week during semesters, and many become full-time hires. Treat these students as future colleagues: give them meaningful problems, mentors and feedback. The payoff is candidates who already know your data, team and culture — and who are far more likely to accept your offer than candidates who only know your brand.
+The most reliable long-term source of ML talent in Munich is the universities. Employers that host master's theses, working students and industrial PhDs build relationships with students long before graduation. MCML organises events and collaborations with industry; TUM and LMU chairs welcome joint projects. Working students (Werkstudenten) can contribute to real projects for up to around 20 hours per week during semesters, and many become full-time hires. Treat these students as future colleagues: give them meaningful problems, mentors and feedback. The payoff is candidates who already know your data, team and culture - and who are far more likely to accept your offer than candidates who only know your brand.
 
 ## Housing: Turning a Weakness Into an Advantage
 
-Munich's housing market is the single biggest obstacle for many candidates. Employers that address it credibly gain a real advantage. Options include partnering with furnished apartment providers for the first months, offering relocation allowances, providing guidance on commuter towns along S-Bahn lines — such as Freising, Dachau, Erding or towns along the Starnberg line — and allowing flexible hours and remote days that make longer commutes acceptable. Some companies publish realistic information about typical commute times from affordable areas in their vacancies, which helps candidates plan and signals that the employer understands their situation.
+Munich's housing market is the single biggest obstacle for many candidates. Employers that address it credibly gain a real advantage. Options include partnering with furnished apartment providers for the first months, offering relocation allowances, providing guidance on commuter towns along S-Bahn lines - such as Freising, Dachau, Erding or towns along the Starnberg line - and allowing flexible hours and remote days that make longer commutes acceptable. Some companies publish realistic information about typical commute times from affordable areas in their vacancies, which helps candidates plan and signals that the employer understands their situation.
 
 ## Compensation Strategy
 
@@ -157,11 +157,11 @@ Before writing a vacancy, clarify which profile you need. Munich employers often
 
 ## Sourcing Beyond Job Boards
 
-The best ML engineers are often not actively applying. Effective sourcing in Munich includes hosting or sponsoring meetups on ML, MLOps and LLMs, giving technical talks about your real problems, publishing engineering blog posts, contributing to open source, collaborating with MCML and university chairs, running structured referral programmes and sending personalised outreach that describes the specific problem and team rather than generic recruiter messages. Alumni networks — former employees who left on good terms — can also refer candidates or return themselves.
+The best ML engineers are often not actively applying. Effective sourcing in Munich includes hosting or sponsoring meetups on ML, MLOps and LLMs, giving technical talks about your real problems, publishing engineering blog posts, contributing to open source, collaborating with MCML and university chairs, running structured referral programmes and sending personalised outreach that describes the specific problem and team rather than generic recruiter messages. Alumni networks - former employees who left on good terms - can also refer candidates or return themselves.
 
 ## Startups and Scale-ups: Specific Advice
 
-Startups competing in Munich should be transparent about funding, runway and equity terms, and highlight the learning, ownership and speed they offer. Many candidates are open to startups if they trust the founding team and understand the risks. Clear communication about how equity works — vesting, valuation, what happens on departure — builds that trust.
+Startups competing in Munich should be transparent about funding, runway and equity terms, and highlight the learning, ownership and speed they offer. Many candidates are open to startups if they trust the founding team and understand the risks. Clear communication about how equity works - vesting, valuation, what happens on departure - builds that trust.
 
 ## Where Munich's ML Employers Sit
 

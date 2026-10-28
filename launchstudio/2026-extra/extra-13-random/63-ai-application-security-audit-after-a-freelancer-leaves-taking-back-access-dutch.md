@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Beveiligingsaudit van AI-Apps na Vertrek van een Freelancer: Toegangsrechten Terugnemen",
-  "description": "Wanneer een freelancer of mede-oprichter vertrekt, blijven toegekende rechten vaak geruisloos actief. Dit artikel beschrijft de toegangs-audit die elke ondernemer moet uitvoeren — repositories, hosting, databases, API-sleutels, domeinen en betaalaccounts — inclusief de juridische kant van IE-overdracht.",
+  "description": "Wanneer een freelancer of mede-oprichter vertrekt, blijven toegekende rechten vaak geruisloos actief. Dit artikel beschrijft de toegangs-audit die elke ondernemer moet uitvoeren - repositories, hosting, databases, API-sleutels, domeinen en betaalaccounts - inclusief de juridische kant van IE-overdracht.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-02",
@@ -35,7 +35,7 @@ Dat doet er om drie redenen toe. Accounts van voormalige bijdragers kunnen worde
 
 **Projecten in AI-bouwers.** Lovable, Bolt, Replit en vergelijkbare tools hebben hun eigen manier van projecten delen. Voormalige bijdragers kunnen mogelijk nog bewerken en publiceren.
 
-**Hosting en deployment.** Vercel, Netlify, Replit Deployments, AWS of DigitalOcean — controleer teamleden, API-tokens en gekoppelde Git-integraties.
+**Hosting en deployment.** Vercel, Netlify, Replit Deployments, AWS of DigitalOcean - controleer teamleden, API-tokens en gekoppelde Git-integraties.
 
 **Database en backend.** Leden van het Supabase- of Firebase-project, plus sleutels. Service role keys en beheerdersinloggegevens die een freelancer gebruikte, horen te worden geroteerd, niet alleen zijn gebruiker verwijderd.
 
@@ -66,7 +66,7 @@ Voor de toekomst maakt een korte offboardingchecklist van een stressvolle audit 
 
 ## Een Sjabloon voor een Toegangsregister
 
-Het centrale resultaat van een beveiligingsaudit van een AI-applicatie gericht op toegang is een toegangsregister — een levend document met elk systeem en wie er toegang toe heeft:
+Het centrale resultaat van een beveiligingsaudit van een AI-applicatie gericht op toegang is een toegangsregister - een levend document met elk systeem en wie er toegang toe heeft:
 
 | Systeem | Doel | Eigenaarsaccount | Mensen met toegang | Toegangsniveau | 2FA | Laatst beoordeeld |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ Het centrale resultaat van een beveiligingsaudit van een AI-applicatie gericht o
 | E-mailaanbieder | Transactionele e-mail | Bedrijf | Oprichter | Eigenaar | Ja | Datum |
 | Foutregistratie | Monitoring | Bedrijfsorganisatie | Oprichter, ontwikkelaar | Beheerder, lid | Ja | Datum |
 
-Houd daarnaast een register van geheimen bij met per sleutel de naam, de dienst waar hij bij hoort, waar hij is opgeslagen en wanneer hij voor het laatst is geroteerd — nooit de waarde zelf. Bekijk beide maandelijks en nadat iemand bijkomt of vertrekt.
+Houd daarnaast een register van geheimen bij met per sleutel de naam, de dienst waar hij bij hoort, waar hij is opgeslagen en wanneer hij voor het laatst is geroteerd - nooit de waarde zelf. Bekijk beide maandelijks en nadat iemand bijkomt of vertrekt.
 
 ## Sleutels Roteren Zonder Downtime
 
@@ -102,7 +102,7 @@ Voormalige bijdragers houden vaak toegang op plekken waar niemand kijkt:
 - **OAuth-apps** die gemachtigd zijn namens je accounts te handelen.
 - **Automatiseringstools** (n8n, Make, Zapier) die met hun inloggegevens zijn gekoppeld.
 - **Gedeelde wachtwoordmanagers of chatberichten** met sleutels erin.
-- **Lokale `.env`-bestanden** op hun computers — daarom is roteren, niet alleen verwijderen, belangrijk.
+- **Lokale `.env`-bestanden** op hun computers - daarom is roteren, niet alleen verwijderen, belangrijk.
 - **Back-upkopieën of exports** van je database die ze mogelijk hebben gedownload.
 
 Vraag vertrekkende bijdragers beleefd en schriftelijk om lokale kopieën van code, data en inloggegevens te verwijderen en te bevestigen dat ze dat hebben gedaan.
@@ -135,19 +135,19 @@ Bekijk na iemands vertrek de logs van de weken ervoor en de dagen erna: ongebrui
 
 ## Er een Routine van Maken
 
-Toegangshygiëne werkt het best als maandelijkse gewoonte: tien minuten om het register met de werkelijkheid te vergelijken, verouderde toegang te verwijderen en geplande rotaties te noteren. Oprichters die er een routine van maken, krijgen zelden te maken met stressvolle opruimacties — en kunnen een vraag van een investeerder of klant over toegang binnen enkele seconden beantwoorden.
+Toegangshygiëne werkt het best als maandelijkse gewoonte: tien minuten om het register met de werkelijkheid te vergelijken, verouderde toegang te verwijderen en geplande rotaties te noteren. Oprichters die er een routine van maken, krijgen zelden te maken met stressvolle opruimacties - en kunnen een vraag van een investeerder of klant over toegang binnen enkele seconden beantwoorden.
 
 ## Bijzondere Gevallen: Medeoprichters en Bureaus
 
-Het vertrek van een medeoprichter is complexer dan dat van een freelancer, omdat medeoprichters vaak de accounts zelf hebben aangemaakt en mogelijk aandelen hebben. Regel toegang en eigendom in dezelfde aandeelhoudersovereenkomst of scheidingsovereenkomst: welke accounts worden overgedragen, wanneer, en hoe inloggegevens worden overhandigd. Vraag bureaus die je app hebben gebouwd om een formele overdracht — overdracht van de repository, inloggegevens, documentatie, een lijst van accounts bij derden die ze namens jou hebben aangemaakt — voordat de laatste factuur wordt betaald. Beide situaties zijn veel makkelijker op te lossen zolang de relaties goed zijn.
+Het vertrek van een medeoprichter is complexer dan dat van een freelancer, omdat medeoprichters vaak de accounts zelf hebben aangemaakt en mogelijk aandelen hebben. Regel toegang en eigendom in dezelfde aandeelhoudersovereenkomst of scheidingsovereenkomst: welke accounts worden overgedragen, wanneer, en hoe inloggegevens worden overhandigd. Vraag bureaus die je app hebben gebouwd om een formele overdracht - overdracht van de repository, inloggegevens, documentatie, een lijst van accounts bij derden die ze namens jou hebben aangemaakt - voordat de laatste factuur wordt betaald. Beide situaties zijn veel makkelijker op te lossen zolang de relaties goed zijn.
 
 ## Minimale Rechten voor het Dagelijkse Werk
 
-Toegangsaudits laten vaak zien dat iedereen eigenaars- of beheerdersrechten heeft, simpelweg omdat dat het makkelijkst was. Beperk rechten tot wat elke persoon nodig heeft: ontwikkelaars hoeven zelden de facturatie te wijzigen, boekhouders hebben alleen-lezentoegang tot betalingen nodig, supportmedewerkers hebben een supportweergave nodig in plaats van toegang tot de database. Minder accounts met veel rechten betekent minder manieren waarop een gecompromitteerd account ernstige schade kan aanrichten — en een kortere lijst om elke maand te controleren.
+Toegangsaudits laten vaak zien dat iedereen eigenaars- of beheerdersrechten heeft, simpelweg omdat dat het makkelijkst was. Beperk rechten tot wat elke persoon nodig heeft: ontwikkelaars hoeven zelden de facturatie te wijzigen, boekhouders hebben alleen-lezentoegang tot betalingen nodig, supportmedewerkers hebben een supportweergave nodig in plaats van toegang tot de database. Minder accounts met veel rechten betekent minder manieren waarop een gecompromitteerd account ernstige schade kan aanrichten - en een kortere lijst om elke maand te controleren.
 
 ## Wat Investeerders en Klanten Vragen
 
-Vragenlijsten bij due diligence en beveiligingsreviews van grote klanten vragen vaak: Wie heeft beheerdersrechten op productie? Hoe wordt toegang verleend en ingetrokken? Wordt MFA afgedwongen? Hoe worden geheimen beheerd en geroteerd? Wanneer is de toegang voor het laatst beoordeeld? Een actueel toegangsregister en een offboardingchecklist beantwoorden alle vijf. Oprichters die deze documenten direct kunnen delen, vallen op — en vermijden de zoektocht die van een routinevraag een week speurwerk maakt.
+Vragenlijsten bij due diligence en beveiligingsreviews van grote klanten vragen vaak: Wie heeft beheerdersrechten op productie? Hoe wordt toegang verleend en ingetrokken? Wordt MFA afgedwongen? Hoe worden geheimen beheerd en geroteerd? Wanneer is de toegang voor het laatst beoordeeld? Een actueel toegangsregister en een offboardingchecklist beantwoorden alle vijf. Oprichters die deze documenten direct kunnen delen, vallen op - en vermijden de zoektocht die van een routinevraag een week speurwerk maakt.
 
 ## Hulpmiddelen die Helpen
 
@@ -155,7 +155,7 @@ Verschillende tools maken toegangsbeheer makkelijker voor kleine teams: een wach
 
 ## Het Principe
 
-Toegang hoort altijd van het bedrijf te zijn en aan mensen te worden verleend — nooit andersom. Als dat principe overeind blijft, kunnen bijdragers komen en gaan zonder deuren open te laten achter zich.
+Toegang hoort altijd van het bedrijf te zijn en aan mensen te worden verleend - nooit andersom. Als dat principe overeind blijft, kunnen bijdragers komen en gaan zonder deuren open te laten achter zich.
 
 ## Begin Vandaag
 
@@ -182,15 +182,15 @@ De engineers van LaunchStudio droegen de repository en het Supabase-project over
 **Resultaat:** Nadia stuurde het toegangsregister naar het verhuisbedrijf, en de samenwerking ging door. Verhuisvriend voert nu een offboardingchecklist van tien minuten uit telkens als een opdrachtnemer stopt.
 
 > *"Niemand had iets verkeerds gedaan. Maar als een van hen zijn laptop was kwijtgeraakt, was hij mijn bedrijf er meteen bij kwijt geweest."*
-> — **Nadia Bakkali, Oprichter, Verhuisvriend (Alphen aan den Rijn)**
+> - **Nadia Bakkali, Oprichter, Verhuisvriend (Alphen aan den Rijn)**
 
-**Kosten & Tijdlijn:** € 1.300 (toegangsaudit, overdracht van eigendom, rotatie van sleutels en toegangsregister) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.300 (toegangsaudit, overdracht van eigendom, rotatie van sleutels en toegangsregister) - afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
 ### Wat moet een beveiligingsaudit van een AI-applicatie controleren nadat een freelancer is vertrokken?
 
-Elk account en elke sleutel die de freelancer kon bereiken: repository, projecten in AI-bouwers, hosting, database, aanbieders van betalingen, e-mail en analytics, de domeinregistrar en app-stores — plus of het IE formeel aan je bedrijf is overgedragen.
+Elk account en elke sleutel die de freelancer kon bereiken: repository, projecten in AI-bouwers, hosting, database, aanbieders van betalingen, e-mail en analytics, de domeinregistrar en app-stores - plus of het IE formeel aan je bedrijf is overgedragen.
 
 ### Is het verwijderen van het gebruikersaccount van een freelancer genoeg?
 
@@ -198,7 +198,7 @@ Nee. Sleutels en tokens die ze hebben gezien of aangemaakt, blijven werken nadat
 
 ### Kan het roteren van API-sleutels mijn live app breken?
 
-Dat kan, als het in de verkeerde volgorde gebeurt. Maak de nieuwe sleutel aan, werk elke omgeving bij, deploy en verifieer, en trek daarna de oude sleutel in — bij voorkeur op een rustig moment.
+Dat kan, als het in de verkeerde volgorde gebeurt. Maak de nieuwe sleutel aan, werk elke omgeving bij, deploy en verifieer, en trek daarna de oude sleutel in - bij voorkeur op een rustig moment.
 
 ### Waarom behandelt Manifera toegangsbeheer als onderdeel van beveiliging, niet van administratie?
 

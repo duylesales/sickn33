@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager or technical lead at a multi-location restaurant chain scoping a POS and ordering system faces a specific compliance reality that's easy to underweight during architecture planning: sales tax rules don't just vary by country, they routinely vary by state, county, and even city within a single country, and in many jurisdictions the applicable rate or exemption status differs further by order type — dine-in, takeout, and delivery are frequently taxed differently under the same local code. A system architected around a single, hardcoded tax configuration risks either overcharging customers in jurisdictions with lower or exempt rates or, considerably more seriously, undercharging and creating real audit and back-tax exposure in stricter jurisdictions.
+An IT Manager or technical lead at a multi-location restaurant chain scoping a POS and ordering system faces a specific compliance reality that's easy to underweight during architecture planning: sales tax rules don't just vary by country, they routinely vary by state, county, and even city within a single country, and in many jurisdictions the applicable rate or exemption status differs further by order type - dine-in, takeout, and delivery are frequently taxed differently under the same local code. A system architected around a single, hardcoded tax configuration risks either overcharging customers in jurisdictions with lower or exempt rates or, considerably more seriously, undercharging and creating real audit and back-tax exposure in stricter jurisdictions.
 
 ## Why a Single Hardcoded Tax Configuration Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A POS and ordering system built around a single, hardcoded tax rate and rule set
 
 ## Why Region- and Order-Type-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around region- and order-type-configurable tax rules — able to apply the correct rate and exemption logic based on a specific location's actual jurisdiction and the specific order's fulfillment type — lets a chain comply with each location's specific requirements without the customer complaints or audit exposure a single hardcoded configuration creates. This isn't simply a matter of applying one rate per store location, since order-type distinctions add a genuinely separate dimension of complexity — a location in a jurisdiction that taxes dine-in meals at a standard rate but exempts or reduces the rate for takeout, or taxes delivery orders differently depending on whether delivery is performed by the restaurant's own staff or a third-party marketplace, needs the underlying system to support genuinely configurable behavior along both the location and order-type axes simultaneously, not just a single per-store rate lookup.
+A system architected from the start around region- and order-type-configurable tax rules - able to apply the correct rate and exemption logic based on a specific location's actual jurisdiction and the specific order's fulfillment type - lets a chain comply with each location's specific requirements without the customer complaints or audit exposure a single hardcoded configuration creates. This isn't simply a matter of applying one rate per store location, since order-type distinctions add a genuinely separate dimension of complexity - a location in a jurisdiction that taxes dine-in meals at a standard rate but exempts or reduces the rate for takeout, or taxes delivery orders differently depending on whether delivery is performed by the restaurant's own staff or a third-party marketplace, needs the underlying system to support genuinely configurable behavior along both the location and order-type axes simultaneously, not just a single per-store rate lookup.
 
 ## What Building Region- and Order-Type-Configurable Tax Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Sistem de Comenzi Craiova, a Craiova-based restaurant chain, had built its initi
 Manifera's Amsterdam team rebuilt the POS system's core tax architecture around a configurable, per-jurisdiction and per-order-type ruleset, supporting both standard-rate calculation for stricter counties and delivery-specific exemption logic for counties where it legally applied, alongside reliable location and order-type determination at the point of sale and multi-jurisdiction reporting support, all without requiring separate, parallel POS configurations per location.
 
 > *"We'd built one tax rate and assumed we'd just adjust it manually wherever a county asked us to. It turned out the actual picture across our locations was more varied than a single rate could handle, especially once delivery orders were involved, and building real configurability was what let us keep expanding into new counties properly instead of holding back the ones with trickier rules."*
-> — **IT Manager, Sistem de Comenzi Craiova**
+> - **IT Manager, Sistem de Comenzi Craiova**
 
 Sistem de Comenzi Craiova successfully expanded into its additional target counties with jurisdiction-appropriate tax configurations, and now treats tax configurability as a standard architectural requirement for any new location, rather than a single rate applied and adjusted reactively.
 
@@ -79,7 +79,7 @@ Sistem de Comenzi Craiova successfully expanded into its additional target count
 
 ## Scoping Your Own Restaurant Chain's Multi-Jurisdiction Tax Architecture
 
-Before expanding a POS and ordering system across multiple counties, states, or countries, architect the tax logic around genuinely configurable, per-jurisdiction and per-order-type rulesets — a single hardcoded rate forces an unnecessary trade-off between customer overcharging and real audit exposure. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready restaurant chain tax engine.
+Before expanding a POS and ordering system across multiple counties, states, or countries, architect the tax logic around genuinely configurable, per-jurisdiction and per-order-type rulesets - a single hardcoded rate forces an unnecessary trade-off between customer overcharging and real audit exposure. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready restaurant chain tax engine.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between overcharging customers in lower-tax jurisdictions or 
 
 ### (Scenario: engineering lead scoping tax configurability) Is a simple per-location tax rate lookup sufficient to handle sales tax across a chain?
 
-Not always — many jurisdictions apply different rates or exemptions by order type as well as location, meaning the system needs genuinely configurable behavior along both dimensions, not just a single per-store rate.
+Not always - many jurisdictions apply different rates or exemptions by order type as well as location, meaning the system needs genuinely configurable behavior along both dimensions, not just a single per-store rate.
 
 ### (Scenario: finance lead reviewing technical architecture) Why does reliable location and order-type determination matter for tax compliance?
 
@@ -110,7 +110,7 @@ State, county, and municipal tax rates change on a genuinely regular basis, and 
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-location POS system) Why does sales tax on restaurant orders vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Tax rates vary by state, county, and city, and many jurisdictions further distinguish dine-in, takeout, and delivery order types." } },
     { "@type": "Question", "name": "(Scenario: chain worried about compliance) What's the risk of building a POS system around a single, hardcoded tax rate?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between overcharging in lower-tax areas or risking under-collection and audit exposure in stricter ones." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping tax configurability) Is a simple per-location tax rate lookup sufficient to handle sales tax across a chain?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — many jurisdictions apply different rates by order type too, requiring configurability along both dimensions." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping tax configurability) Is a simple per-location tax rate lookup sufficient to handle sales tax across a chain?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - many jurisdictions apply different rates by order type too, requiring configurability along both dimensions." } },
     { "@type": "Question", "name": "(Scenario: finance lead reviewing technical architecture) Why does reliable location and order-type determination matter for tax compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying rules correctly depends on identifying both the location's jurisdiction and the order's fulfillment type at calculation time." } },
     { "@type": "Question", "name": "(Scenario: chain planning for future rate changes) Why should a POS tax system be designed to accommodate evolving rates, not just current ones?", "acceptedAnswer": { "@type": "Answer", "text": "Tax rates change regularly, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

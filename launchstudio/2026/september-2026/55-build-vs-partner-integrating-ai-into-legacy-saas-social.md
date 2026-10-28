@@ -1,6 +1,6 @@
 🚨 Joshua, a product lead, built an AI analytics widget with **Lovable**. He hit a wall trying to integrate his modern React widget into his company's legacy PHP dashboard, which had no build pipeline for modern JavaScript and ran entirely on server-rendered templates. 🧩
 
-Legacy SaaS teams don't need 18 months of internal R&D to ship AI — they need an integration layer that respects what's already running in production. 🧠
+Legacy SaaS teams don't need 18 months of internal R&D to ship AI - they need an integration layer that respects what's already running in production. 🧠
 
 ❌ A React widget with nowhere to plug into a server-rendered PHP dashboard
 ❌ No modern JavaScript build pipeline anywhere in the legacy stack

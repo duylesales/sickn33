@@ -31,7 +31,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The night before launch is not the moment to discover your database has no backups. This checklist exists so that moment never happens — 25 concrete, verifiable items spanning security, payments, data, and reliability that separate a genuinely launch-ready AI SaaS from one that merely looks ready.
+The night before launch is not the moment to discover your database has no backups. This checklist exists so that moment never happens - 25 concrete, verifiable items spanning security, payments, data, and reliability that separate a genuinely launch-ready AI SaaS from one that merely looks ready.
 
 ## Security (Items 1-6)
 
@@ -83,17 +83,17 @@ Each of these 25 items individually seems minor. Collectively, they represent th
 
 ## Adjusting the Checklist to Your Specific Product
 
-The 25 items above form a baseline that applies to virtually every AI SaaS product, but the depth of verification each category actually needs shifts significantly depending on what your product touches and who uses it. Treating every item as equally weighted regardless of context is itself a mistake — a checklist run mechanically without this calibration can produce false confidence.
+The 25 items above form a baseline that applies to virtually every AI SaaS product, but the depth of verification each category actually needs shifts significantly depending on what your product touches and who uses it. Treating every item as equally weighted regardless of context is itself a mistake - a checklist run mechanically without this calibration can produce false confidence.
 
-**When you're handling financial or health data**, items 7 (backup verification), 10 (deletion requests), and 16 (VAT/tax handling) deserve materially more scrutiny than a general productivity tool would need — a restored backup that's missing three days of financial transaction data is a different order of problem than losing three days of to-do list edits. Dennis's AangifteHulp case later in this piece illustrates exactly this: the data-deletion process and tenant isolation items carried disproportionate weight because tax documents were involved.
+**When you're handling financial or health data**, items 7 (backup verification), 10 (deletion requests), and 16 (VAT/tax handling) deserve materially more scrutiny than a general productivity tool would need - a restored backup that's missing three days of financial transaction data is a different order of problem than losing three days of to-do list edits. Dennis's AangifteHulp case later in this piece illustrates exactly this: the data-deletion process and tenant isolation items carried disproportionate weight because tax documents were involved.
 
-**Marketplace and multi-sided products** — where your AI SaaS connects two distinct user types, such as customers and vendors — need item 8's tenant isolation test run across role boundaries, not just between two same-role accounts. A vendor seeing another vendor's private pricing data, or a customer seeing another customer's booking history, are both failures item 8 is meant to catch, but a simple two-account test in a single-role product won't surface a cross-role leak.
+**Marketplace and multi-sided products** - where your AI SaaS connects two distinct user types, such as customers and vendors - need item 8's tenant isolation test run across role boundaries, not just between two same-role accounts. A vendor seeing another vendor's private pricing data, or a customer seeing another customer's booking history, are both failures item 8 is meant to catch, but a simple two-account test in a single-role product won't surface a cross-role leak.
 
-**High-signup-volume consumer products** put more weight on item 5 (rate limiting) and item 25 (the full signup-to-paid flow test) than a low-volume B2B tool selling to a handful of enterprise accounts might — a bot-driven signup flood is a realistic threat for a viral consumer app in a way it simply isn't for a niche B2B tool with a manual sales process.
+**High-signup-volume consumer products** put more weight on item 5 (rate limiting) and item 25 (the full signup-to-paid flow test) than a low-volume B2B tool selling to a handful of enterprise accounts might - a bot-driven signup flood is a realistic threat for a viral consumer app in a way it simply isn't for a niche B2B tool with a manual sales process.
 
-**Regulated industries** (healthcare, financial services, legal) often need the checklist supplemented rather than replaced. Items like audit trail logging, data residency requirements, and specific consent flows aren't on the generic 25-item list at all, because they're not universal — but they become effectively mandatory the moment your product touches regulated data categories.
+**Regulated industries** (healthcare, financial services, legal) often need the checklist supplemented rather than replaced. Items like audit trail logging, data residency requirements, and specific consent flows aren't on the generic 25-item list at all, because they're not universal - but they become effectively mandatory the moment your product touches regulated data categories.
 
-None of this means the 25-item baseline is wrong for any of these cases — every item still applies. It means a founder assuming "I passed all 25, therefore I'm fully covered" without considering which items matter most for their specific product risks under-verifying the items that would actually cause the most damage if wrong, while over-indexing on items that matter less for their context. A generic checklist run without this lens is better than no checklist, but a checklist run with genuine attention to your product's specific risk profile is what actually prevents the costly surprise.
+None of this means the 25-item baseline is wrong for any of these cases - every item still applies. It means a founder assuming "I passed all 25, therefore I'm fully covered" without considering which items matter most for their specific product risks under-verifying the items that would actually cause the most damage if wrong, while over-indexing on items that matter less for their context. A generic checklist run without this lens is better than no checklist, but a checklist run with genuine attention to your product's specific risk profile is what actually prevents the costly surprise.
 
 This is precisely why [LaunchStudio's](https://launchstudio.eu/en/) readiness reviews start with understanding what your product actually does and who it serves, rather than mechanically ticking 25 boxes in the same order for every founder regardless of context.
 
@@ -107,14 +107,14 @@ Dennis, an accountant running a small tax advisory practice in Gorinchem, built 
 
 Working through the 25 items himself as best he could, Dennis identified eight items he couldn't confidently verify: he didn't know if database backups were configured, hadn't tested multi-tenant isolation, had no rate limiting on login attempts, no defined process for data deletion requests (a particular concern given sensitive tax document handling), no cost tracking on AI usage, no fallback for AI provider downtime, no status page, and hadn't actually tested the full signup flow as a stranger would.
 
-Dennis contacted LaunchStudio in a genuine time crunch, three days before his announced launch. The Manifera team prioritized the highest-risk items first — database backups, tenant isolation, and the data deletion process, given the sensitivity of tax document data — and worked through the full list within the compressed timeframe.
+Dennis contacted LaunchStudio in a genuine time crunch, three days before his announced launch. The Manifera team prioritized the highest-risk items first - database backups, tenant isolation, and the data deletion process, given the sensitivity of tax document data - and worked through the full list within the compressed timeframe.
 
 **Result:** AangifteHulp launched on its originally announced date with all 25 checklist items verified, rather than either delaying the launch or going live with known gaps in a product handling sensitive financial documents for small business owners.
 
-> *"Three days before launch, I thought I was just being paranoid running through a checklist. I wasn't — I found eight real gaps, including no backups at all. LaunchStudio fixed all of it in time, which felt like a genuine rescue."*
-> — **Dennis Kramer, Founder, AangifteHulp (Gorinchem)**
+> *"Three days before launch, I thought I was just being paranoid running through a checklist. I wasn't - I found eight real gaps, including no backups at all. LaunchStudio fixed all of it in time, which felt like a genuine rescue."*
+> - **Dennis Kramer, Founder, AangifteHulp (Gorinchem)**
 
-**Cost & Timeline:** €2,600 (urgent pre-launch readiness sprint) — completed in 3 business days.
+**Cost & Timeline:** €2,600 (urgent pre-launch readiness sprint) - completed in 3 business days.
 
 ---
 
@@ -122,7 +122,7 @@ Dennis contacted LaunchStudio in a genuine time crunch, three days before his an
 
 ### Can I realistically verify all 25 of these items myself without technical expertise?
 
-Some items (like testing the signup flow as a stranger) are accessible to any founder. Others (like verifying Row Level Security or backup restoration) require technical verification most non-technical founders can't confidently perform alone — which is exactly the gap a professional readiness review closes.
+Some items (like testing the signup flow as a stranger) are accessible to any founder. Others (like verifying Row Level Security or backup restoration) require technical verification most non-technical founders can't confidently perform alone - which is exactly the gap a professional readiness review closes.
 
 ### How urgent is it to fix every single item before launch, versus some being acceptable to address shortly after?
 
@@ -138,7 +138,7 @@ Yes, though compressed timelines require prioritizing the highest-risk items fir
 
 ### Does completing this checklist once mean I never need to revisit it as my product grows?
 
-No — some items (backup verification, tenant isolation testing, cost monitoring) benefit from periodic re-verification as your product evolves and scales, not just a one-time pre-launch check, since new features can introduce new gaps in previously verified areas.
+No - some items (backup verification, tenant isolation testing, cost monitoring) benefit from periodic re-verification as your product evolves and scales, not just a one-time pre-launch check, since new features can introduce new gaps in previously verified areas.
 
 <script type="application/ld+json">
 {

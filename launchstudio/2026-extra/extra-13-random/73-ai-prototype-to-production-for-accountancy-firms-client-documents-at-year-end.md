@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Every spring, small accountancy firms go through the same scramble: hundreds of clients sending annual statements, mortgage overviews, pension letters and receipts by email, WhatsApp and the occasional shoebox. A client portal that collects everything in one place is an obvious improvement, and accountants and their developers now build one in Lovable within weeks. Moving that AI prototype to production, though, means handling some of the most sensitive documents a household owns — during the busiest weeks of the year.
+Every spring, small accountancy firms go through the same scramble: hundreds of clients sending annual statements, mortgage overviews, pension letters and receipts by email, WhatsApp and the occasional shoebox. A client portal that collects everything in one place is an obvious improvement, and accountants and their developers now build one in Lovable within weeks. Moving that AI prototype to production, though, means handling some of the most sensitive documents a household owns - during the busiest weeks of the year.
 
 ## Decision 1: What Is in These Documents?
 
@@ -36,7 +36,7 @@ A firm has partners, accountants, assistants and sometimes seasonal staff. Clien
 Uploads are the heart of the portal and its biggest risk:
 
 - **Private storage** with short-lived signed links; never public URLs.
-- **Virus scanning** on upload — clients send files from all kinds of devices.
+- **Virus scanning** on upload - clients send files from all kinds of devices.
 - **Size and type limits,** with support for phone photos (including HEIC) and multi-page PDFs.
 - **Deduplication and naming** so staff can find documents quickly.
 - **Download logging** for accountability.
@@ -73,7 +73,7 @@ Each step has a status visible to both client and firm, which removes most "did 
 
 ## Handling the BSN and Other Identifiers
 
-Tax documents contain the citizen service number (BSN) almost everywhere. Accountancy firms may process it for tax purposes, but the portal should limit exposure: avoid showing the BSN in lists and search results, never include it in email notifications or file names, restrict who can view full documents, and log access. When documents are shared with other parties — for example a mortgage adviser at the client's request — record the authorisation and the transfer.
+Tax documents contain the citizen service number (BSN) almost everywhere. Accountancy firms may process it for tax purposes, but the portal should limit exposure: avoid showing the BSN in lists and search results, never include it in email notifications or file names, restrict who can view full documents, and log access. When documents are shared with other parties - for example a mortgage adviser at the client's request - record the authorisation and the transfer.
 
 ## Upload Pipeline Engineering
 
@@ -105,7 +105,7 @@ Clients often reply by email with attachments, undoing the portal's security. Ma
 
 ## Multi-Firm Platforms and White-Labelling
 
-When one portal serves several accountancy firms, each firm expects its own branding, client base and staff — and absolute separation. Enforce firm-level tenancy in the database and storage paths, allow per-firm configuration (checklists, email templates, retention), and give each firm its own processing agreement. A firm's clients should never see another firm's name, and a firm's staff should never see another firm's clients.
+When one portal serves several accountancy firms, each firm expects its own branding, client base and staff - and absolute separation. Enforce firm-level tenancy in the database and storage paths, allow per-firm configuration (checklists, email templates, retention), and give each firm its own processing agreement. A firm's clients should never see another firm's name, and a firm's staff should never see another firm's clients.
 
 ## Preparing Documentation for Firms
 
@@ -117,7 +117,7 @@ The client's approval of a tax return or annual accounts is an important record.
 
 ## Year-Over-Year Continuity
 
-Accountancy relationships last years. The portal becomes more valuable when it carries context forward: last year's checklist as the starting point for this year's, recurring documents pre-listed, notes about the client's situation visible to the accountant. Design data structures around tax years and client households, so historic information remains organised and accessible — and so retention rules can be applied per year cleanly.
+Accountancy relationships last years. The portal becomes more valuable when it carries context forward: last year's checklist as the starting point for this year's, recurring documents pre-listed, notes about the client's situation visible to the accountant. Design data structures around tax years and client households, so historic information remains organised and accessible - and so retention rules can be applied per year cleanly.
 
 ## Security Controls Worth Prioritising
 
@@ -133,7 +133,7 @@ Before the next tax season: private storage with scanning and metadata stripping
 
 ## Why Clients Stay With Digital Firms
 
-Clients who experience a smooth portal — a clear checklist, uploads that work from the kitchen table, status updates without chasing and an easy approval — tend to stay with their accountant for years and recommend the firm to friends and family. For small firms competing with larger practices and online filing services, a secure, reliable portal is one of the most visible signs of professionalism. It turns the most stressful weeks of the year into a predictable process for both client and accountant, and it demonstrates care for the confidential information clients entrust to the firm.
+Clients who experience a smooth portal - a clear checklist, uploads that work from the kitchen table, status updates without chasing and an easy approval - tend to stay with their accountant for years and recommend the firm to friends and family. For small firms competing with larger practices and online filing services, a secure, reliable portal is one of the most visible signs of professionalism. It turns the most stressful weeks of the year into a predictable process for both client and accountant, and it demonstrates care for the confidential information clients entrust to the firm.
 
 ## First Step
 
@@ -153,16 +153,16 @@ LaunchStudio is powered by Manifera, a software development company with 11+ yea
 
 Jolanda Smeets, who runs a small accountancy practice in Venray, built Aangiftebox in Lovable: clients receive a checklist of documents needed for their tax return, upload them from their phones, answer a few questions and approve the final return. She then offered it to four other small firms in North Limburg, covering about 2,100 households.
 
-The first April was rough. Uploads failed for clients on mobile data, and many sent photos again, creating duplicates. On the busiest evening the portal became unresponsive for an hour. Worse, a client noticed she could open another household's annual income statement by changing a number in the download URL. Documents — including BSNs on nearly every page — sat in a public storage bucket. Staff at all five firms could see all clients, approvals were a checkbox that could be ticked again after edits, and nothing was ever deleted.
+The first April was rough. Uploads failed for clients on mobile data, and many sent photos again, creating duplicates. On the busiest evening the portal became unresponsive for an hour. Worse, a client noticed she could open another household's annual income statement by changing a number in the download URL. Documents - including BSNs on nearly every page - sat in a public storage bucket. Staff at all five firms could see all clients, approvals were a checkbox that could be ticked again after edits, and nothing was ever deleted.
 
 Over twelve business days, LaunchStudio's engineers moved documents to private storage with signed links and malware scanning, implemented resumable uploads and duplicate detection, enforced firm, team and client separation with row-level security, added MFA for staff and as a default for clients, recorded approvals against a frozen PDF with server timestamps, set up retention rules per document type, and added connection pooling and background processing ahead of a load test at three times the April peak. The exposed documents were assessed with Jolanda, who notified the affected household and the regulator on advice.
 
 **Result:** The next tax season ran without outages, uploads from mobile phones completed reliably and no cross-client access was possible. Aangiftebox added six more firms, several of which cited the security description in their decision.
 
-> *"My clients hand me their whole financial life once a year. The portal had to be at least as careful as the shoebox — and it wasn't."*
-> — **Jolanda Smeets, Founder, Aangiftebox (Venray)**
+> *"My clients hand me their whole financial life once a year. The portal had to be at least as careful as the shoebox - and it wasn't."*
+> - **Jolanda Smeets, Founder, Aangiftebox (Venray)**
 
-**Cost & Timeline:** €3,400 (Launch & Grow package: document security, uploads, access control, approvals, retention and peak readiness) — completed in 12 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €3,400 (Launch & Grow package: document security, uploads, access control, approvals, retention and peak readiness) - completed in 12 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 

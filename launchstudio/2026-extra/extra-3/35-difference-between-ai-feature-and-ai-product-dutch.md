@@ -53,7 +53,7 @@ De directe test: als u de AI-capaciteit volledig zou verwijderen, zou het produc
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om deze specifieke bepaling vroeg in een oriënterend gesprek te maken, waarbij de beoordelingsinspanning naar verhouding wordt gericht in plaats van het toepassen van identieke, ongedifferentieerde aandacht ongeacht of AI het gehele product is of één functie erin. Dit wordt ondersteund door Manifera's bredere ervaring in het nauwkeurig afstemmen van opdrachten op wat een specifiek product daadwerkelijk is.
 
-[Ontdek in welke categorie uw product daadwerkelijk valt](https://launchstudio.eu/nl/#calculator) — het onderscheid veranderd waar de aandacht op gericht moet worden.
+[Ontdek in welke categorie uw product daadwerkelijk valt](https://launchstudio.eu/nl/#calculator) - het onderscheid veranderd waar de aandacht op gericht moet worden.
 
 ## Vijf signalen dat uw "AI-functie" stilletjes een AI-product is geworden
 
@@ -82,9 +82,9 @@ Thomas had aanvankelijk aangenomen, op basis van algemene inhoud over AI-native 
 **Resultaat:** LaunchStudio bakkens een gerichte beoordeling specifiek af rond de gegevensverwerking en leveranciersafhankelijkheid van de AI-ploegensuggestiefunctie. Hierdoor werd een onnodige bredere herbeoordeling van WerkPlanner's al stabiele, conventionele kern vermeden, wat Thomas zowel kosten als tijd bespaarde ten opzichte van het behandelen van het gehele product als nieuw AI-native.
 
 > *"Ik had genoeg gelezen over AI-native productiegereedheid om aan te nemen dat mijn hele product nu die behandeling nodig had, zodra ik één AI-functie toevoegde. Het bleek dat de daadwerkelijke omvang veel beperkter was dan ik had aangenomen, zodra iemand me hielp zien dat WerkPlanner fundamenteel nog steeds dezelfde conventionele tool was met één nieuwe, specifieke capaciteit toegevoegd."*
-> — **Thomas Verbeek, Oprichter, WerkPlanner (Amersfoort)**
+> - **Thomas Verbeek, Oprichter, WerkPlanner (Amersfoort)**
 
-**Kosten en tijdlijn:** € 900 (gerichte beoordeling van AI-functie) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 900 (gerichte beoordeling van AI-functie) - voltooid in 3 werkdagen.
 
 ---
 
@@ -120,7 +120,7 @@ Redelijk specifiek – zoals de zaak van Thomas aantoont is een algemeen gevoel 
       "name": "Heeft een product met één AI-functie AI-specifieke aandacht nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, specifiek voor die functie — providerafhankelijkheid, kosten en dataverwerking blijven gelden voor het AI-deel."
+        "text": "Ja, specifiek voor die functie - providerafhankelijkheid, kosten en dataverwerking blijven gelden voor het AI-deel."
       }
     },
     {
@@ -136,7 +136,7 @@ Redelijk specifiek – zoals de zaak van Thomas aantoont is een algemeen gevoel 
       "name": "Kan het verkeerd beoordelen van dit onderscheid echt risico maken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — een echt AI-native product behandelen als één functie riskeert dat er beveiligingsgaten overblijven."
+        "text": "Ja - een echt AI-native product behandelen als één functie riskeert dat er beveiligingsgaten overblijven."
       }
     },
     {
@@ -152,7 +152,7 @@ Redelijk specifiek – zoals de zaak van Thomas aantoont is een algemeen gevoel 
       "name": "Hoe specifiek moet het oriënterende gesprek zijn voor afbakening?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Redelijk specifiek — het moet onderzoeken wat er overblijft als AI wordt verwijderd op architectuurniveau."
+        "text": "Redelijk specifiek - het moet onderzoeken wat er overblijft als AI wordt verwijderd op architectuurniveau."
       }
     }
   ]

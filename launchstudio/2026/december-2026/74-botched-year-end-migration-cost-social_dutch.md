@@ -12,7 +12,7 @@ De feestdagen lijken rustig voor migraties, maar minimale supportbezetting bij c
 
 Bij LaunchStudio voeren senior engineers complexe database- en cloudmigraties uit met gegarandeerde zero-data-loss protocollen. 🛡️
 
-Dmitri herstelde 99,4% van zijn verloren transacties na een spoedsprint van 5 dagen. (€ 3.600 (Emergency Recovery) — 5 werkdagen.) 🚀
+Dmitri herstelde 99,4% van zijn verloren transacties na een spoedsprint van 5 dagen. (€ 3.600 (Emergency Recovery) - 5 werkdagen.) 🚀
 
 👉 Leer hoe u migraties veilig plant: https://launchstudio.eu/nl/blog/botched-year-end-migration-cost
 

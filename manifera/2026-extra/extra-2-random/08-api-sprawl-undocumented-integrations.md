@@ -20,17 +20,17 @@ target_persona: "CTO"
 }
 </script>
 
-Nobody decided to build 40 undocumented point-to-point integrations between your systems — it happened one "quick connection" at a time, and now a single field-name change anywhere in that web can silently break three unrelated systems nobody thought to check.
+Nobody decided to build 40 undocumented point-to-point integrations between your systems - it happened one "quick connection" at a time, and now a single field-name change anywhere in that web can silently break three unrelated systems nobody thought to check.
 
 **The Pain:** A CTO at a mid-market insurtech company inherited an IT system custom software development landscape where the CRM, billing platform, policy engine, and a half-dozen third-party vendor APIs are all connected through direct, undocumented point-to-point integrations built by different engineers over six years. Nobody has a current map of what talks to what, and every new integration request means an engineer spending days just tracing existing connections before writing a line of new code.
 
-**The Agitation:** Point-to-point integration sprawl grows quadratically, not linearly — each new system added multiplies the number of potential direct connections rather than adding one, and every one of those connections is a silent failure point with no centralized monitoring, no consistent error handling, and no owner once the engineer who built it moves teams. The company estimates that 30% of every sprint now goes to integration firefighting and change-impact tracing instead of product work, a hidden tax the CTO calculates at roughly €18,000-€30,000 a month in lost engineering throughput, invisible on any invoice but fully real on every burndown chart.
+**The Agitation:** Point-to-point integration sprawl grows quadratically, not linearly - each new system added multiplies the number of potential direct connections rather than adding one, and every one of those connections is a silent failure point with no centralized monitoring, no consistent error handling, and no owner once the engineer who built it moves teams. The company estimates that 30% of every sprint now goes to integration firefighting and change-impact tracing instead of product work, a hidden tax the CTO calculates at roughly €18,000-€30,000 a month in lost engineering throughput, invisible on any invoice but fully real on every burndown chart.
 
 ## The Architectural Mandate
 
 API sprawl is a topology problem before it's a tooling problem, and the mathematics explain why it always gets worse, never stays flat: with N systems connected point-to-point, the number of potential direct integrations grows as N(N-1)/2, meaning a company that grows from eight to fifteen connected systems doesn't grow its integration surface by roughly double, it nearly triples it. Every one of those connections has to be independently authenticated, independently versioned, and independently monitored, which is exactly the maintenance burden that eats a sprint one undocumented dependency at a time.
 
-The architectural mandate is centralization through an integration layer — an API gateway or enterprise service bus pattern where systems talk to a central hub rather than directly to each other, converting the N(N-1)/2 problem into a linear N problem where adding a new system means one new connection to the hub, not N-1 new point-to-point links. This is not merely a technical convenience; it's the difference between a change-impact analysis taking an afternoon versus taking a week of forensic tracing through undocumented code paths.
+The architectural mandate is centralization through an integration layer - an API gateway or enterprise service bus pattern where systems talk to a central hub rather than directly to each other, converting the N(N-1)/2 problem into a linear N problem where adding a new system means one new connection to the hub, not N-1 new point-to-point links. This is not merely a technical convenience; it's the difference between a change-impact analysis taking an afternoon versus taking a week of forensic tracing through undocumented code paths.
 
 Beyond topology, the mandate requires a contract-first discipline: every integration, internal or third-party, needs a documented schema (OpenAPI or equivalent), a versioning policy that doesn't break consumers on every change, and centralized logging that makes it possible to answer "what calls this endpoint and what happens if it goes down" in minutes, not days. Custom software engineering teams that skip this step aren't moving faster, they're borrowing time from every future engineer who has to work in that system, which is precisely the compounding cost that shows up as API sprawl's real bill.
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: disciplined integration architec
 
 ### A Liège Insurtech's Integration Map Nobody Had
 
-Assurello, a Liège-based insurtech provider, had grown its systems landscape organically over six years — CRM, policy engine, claims processing, and eleven third-party vendor APIs, all connected point-to-point by whichever engineer needed the connection at the time. A routine vendor API version change broke claims processing for two days because nobody knew three other internal systems depended on the same field structure.
+Assurello, a Liège-based insurtech provider, had grown its systems landscape organically over six years - CRM, policy engine, claims processing, and eleven third-party vendor APIs, all connected point-to-point by whichever engineer needed the connection at the time. A routine vendor API version change broke claims processing for two days because nobody knew three other internal systems depended on the same field structure.
 
-Manifera's Amsterdam team spent three weeks reverse-engineering the full integration topology — the first time it had ever existed as a single document — and designed a centralized gateway to replace the highest-risk direct connections. The Vietnam pod built the gateway and migrated the twelve most fragile point-to-point integrations over ten weeks, while new integrations were required to route through the gateway from day one. Sprint capacity lost to integration firefighting dropped from an estimated 30% to under 10% within the following quarter.
+Manifera's Amsterdam team spent three weeks reverse-engineering the full integration topology - the first time it had ever existed as a single document - and designed a centralized gateway to replace the highest-risk direct connections. The Vietnam pod built the gateway and migrated the twelve most fragile point-to-point integrations over ten weeks, while new integrations were required to route through the gateway from day one. Sprint capacity lost to integration firefighting dropped from an estimated 30% to under 10% within the following quarter.
 
 > *"We finally had a map of our own systems. Six years in, that shouldn't have felt like a luxury."*
-> — **CTO, Assurello**
+> - **CTO, Assurello**
 
 ## Legacy Agency vs. Manifera Pod
 

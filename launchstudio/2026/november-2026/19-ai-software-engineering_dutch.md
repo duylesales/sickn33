@@ -35,7 +35,7 @@ De eerste regel van AI in software-engineering is erkennen wat AI in werkelijkhe
 
 Voor technische oprichters werkt de snelheid van AI-codegeneratie verslavend. U geeft Cursor een prompt voor een complex visualisatiecomponent en binnen enkele seconden staat het op uw scherm. Maar pure snelheid zonder architectuur creëert een technische schuld met een omvang die voorheen ondenkbaar was.
 
-*AI Software Engineering* is de opkomende discipline waarbij traditionele technische discipline — beveiliging, architectuur, prestaties en onderhoudbaarheid — wordt toegepast op codebases die op machinesnelheid worden gegenereerd. Als u in 2026 een SaaS bouwt, is het beheersen van deze discipline de enige manier om te voorkomen dat uw snelle prototype onder zijn eigen gewicht bezwijkt.
+*AI Software Engineering* is de opkomende discipline waarbij traditionele technische discipline - beveiliging, architectuur, prestaties en onderhoudbaarheid - wordt toegepast op codebases die op machinesnelheid worden gegenereerd. Als u in 2026 een SaaS bouwt, is het beheersen van deze discipline de enige manier om te voorkomen dat uw snelle prototype onder zijn eigen gewicht bezwijkt.
 
 ## De Kloof Tussen Generatie en Engineering
 
@@ -69,7 +69,7 @@ U zet AI in om tijd te besparen op de frontend, om die gewonnen tijd vervolgens 
 
 Dit is exact het knelpunt dat [LaunchStudio](https://launchstudio.eu/nl/) oplost voor technische oprichters. Aangedreven door het engineeringteam van [Manifera](https://www.manifera.com/), fungeert LaunchStudio als uw dedicated infrastructuurteam.
 
-Herre Roelevink, CEO van Manifera: *"Technische oprichters moeten eigenaarschap houden over de productlogica en de UI, waar de iteratiesnelheid het hoogst is. Wij verzorgen de productie-engineering — beveiliging, database-architectuur en deployment — waar stabiliteit en discipline cruciaal zijn."*
+Herre Roelevink, CEO van Manifera: *"Technische oprichters moeten eigenaarschap houden over de productlogica en de UI, waar de iteratiesnelheid het hoogst is. Wij verzorgen de productie-engineering - beveiliging, database-architectuur en deployment - waar stabiliteit en discipline cruciaal zijn."*
 
 Met een ontwikkelcentrum aan de Pho Quangstraat 10 in Ho Chi Minhstad en management vanuit Herengracht 420 te Amsterdam, past het team enterprise-discipline toe op uw codebase binnen 1 tot 3 weken.
 
@@ -111,7 +111,7 @@ Het overbruggen van experimentele code naar betrouwbare enterprise-systemen vere
 
 Lisa is een senior backend-ontwikkelaar in München. Ze zag dat lokale boetiekwinkels worstelden met voorraadbeheer. Met Cursor bouwde ze in één weekend "StockSense": een AI-applicatie die verkoopdata via CSV analyseerde en inkoopadviezen voorspelde.
 
-Omdat ze zelf software-engineer was, wilde ze aanvankelijk alles zelf bouwen. De React-frontend stond in twee dagen. Maar toen het aankwam op de randzaken — gebruikersauthenticatie, Stripe-abonnementen, veilige AWS S3-opslag voor CSV's en CI/CD-pipelines — schoof ze het werk steeds voor zich uit. Het was exact hetzelfde routinematige werk dat ze overdag op kantoor al deed.
+Omdat ze zelf software-engineer was, wilde ze aanvankelijk alles zelf bouwen. De React-frontend stond in twee dagen. Maar toen het aankwam op de randzaken - gebruikersauthenticatie, Stripe-abonnementen, veilige AWS S3-opslag voor CSV's en CI/CD-pipelines - schoof ze het werk steeds voor zich uit. Het was exact hetzelfde routinematige werk dat ze overdag op kantoor al deed.
 
 Na drie weken uitstelgedrag schakelde Lisa LaunchStudio in. Tijdens een 15-minuten call droeg ze haar Cursor-repository over.
 
@@ -120,9 +120,9 @@ Het team van Manifera behield haar React-frontend 100% intact en bouwde een scho
 **Resultaat:** StockSense lanceerde 11 werkdagen later. Doordat Lisa haar handen vrij had, gebruikte ze die 11 dagen om haar eerste 6 winkelklanten te werven. De SaaS genereert inmiddels €1.800 per maand en Lisa kan nieuwe UI-functies toevoegen met Cursor zonder de infrastructuur te breken.
 
 > *"Als ontwikkelaar voelde ik me schuldig om de backend uit te besteden. Maar LaunchStudio paste exact dezelfde discipline toe als ik zelf zou doen, alleen tien keer sneller. Daardoor kon ik me eindelijk gedragen als ondernemer in plaats van als systeembeheerder."*
-> — **Lisa Weber, Oprichter, StockSense (München)**
+> - **Lisa Weber, Oprichter, StockSense (München)**
 
-**Kosten & Doorlooptijd:** €4.200 (Launch & Grow Pakket) — productie-klaar en live binnen 11 werkdagen.
+**Kosten & Doorlooptijd:** €4.200 (Launch & Grow Pakket) - productie-klaar en live binnen 11 werkdagen.
 
 ---
 
@@ -141,7 +141,7 @@ Ja, absoluut. LaunchStudio hanteert standaarden (Node.js, Supabase, Vercel) en l
 Via server-side caching (zodat identieke vragen geen betaalde API-aanroepen triggeren), wachtrijen (queues) bij piekdrukte en verbruiksquota per abonnementsniveau.
 
 ### Is met AI gegenereerde code veilig genoeg voor interne bedrijfstoepassingen?
-Standaard niet. Maar met professionele AI software engineering — strikte IAM-rollen, SSO-integratie, dataversleuteling en VPC-deployments — maakt LaunchStudio prototypes enterprise-proof conform ISO 27001 en AVG-normen.
+Standaard niet. Maar met professionele AI software engineering - strikte IAM-rollen, SSO-integratie, dataversleuteling en VPC-deployments - maakt LaunchStudio prototypes enterprise-proof conform ISO 27001 en AVG-normen.
 
 <script type="application/ld+json">
 {

@@ -14,7 +14,7 @@ The pressure to hire is usually social, not financial: 🧮
 
 At **LaunchStudio**, backed by Manifera's engineering team, we're often the partner founders keep using right up until the math flips. 📊
 
-His result: Bram held off eight months until workload was consistently full, then hired — using his existing partner to run interviews and cut ramp-up time roughly in half. 🚀
+His result: Bram held off eight months until workload was consistently full, then hired - using his existing partner to run interviews and cut ramp-up time roughly in half. 🚀
 
 👉 Describe your current engineering workload for a straight answer within one business day: https://launchstudio.eu/en/blog/when-its-time-to-bring-development-in-house
 

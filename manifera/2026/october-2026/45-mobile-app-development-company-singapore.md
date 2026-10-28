@@ -52,14 +52,14 @@ They will pitch your Singaporean enterprise using their highly impressive, artic
 
 ## The Elite Solution: The "Hybrid Hub" Vendor Model
 
-To escape the Unit Economics Crisis, elite Singaporean CTOs are abandoning purely local agencies. Instead, they are partnering with global vendors who deploy the "Hybrid Hub" model—anchoring strategy and compliance in Singapore while pushing pure execution to elite offshore hubs in Vietnam.
+To escape the Unit Economics Crisis, elite Singaporean CTOs are abandoning purely local agencies. Instead, they are partnering with global vendors who deploy the "Hybrid Hub" model - anchoring strategy and compliance in Singapore while pushing pure execution to elite offshore hubs in Vietnam.
 
 ### 1. Strategy in Singapore, Execution in Ho Chi Minh City
 
 The Hybrid Hub model explicitly divides the software development lifecycle based on geographic strengths.
 
 *   **Singapore (The Strategy Hub):** The vendor maintains a highly qualified Account Director and Lead Enterprise Architect in Singapore. They conduct face-to-face meetings, align with your local Product Managers, and ensure absolute compliance with local regulations (such as MAS for Fintech).
-*   **Vietnam (The Execution Hub):** The actual heavy lifting—the React Native coding, the rigorous QA automation, and the CI/CD pipeline management—is executed by a deeply integrated "Autonomous Pod" in Vietnam.
+*   **Vietnam (The Execution Hub):** The actual heavy lifting - the React Native coding, the rigorous QA automation, and the CI/CD pipeline management - is executed by a deeply integrated "Autonomous Pod" in Vietnam.
 
 **The ROI:** You retain the local accountability, legal safety, and strategic alignment of a Singaporean vendor, but you execute the code at 40% of the cost, completely bypassing the local talent shortage.
 
@@ -73,9 +73,9 @@ The Hybrid Hub model between Singapore and Vietnam eliminates this entirely. Vie
 
 While the Singaporean tech sector is characterized by high attrition (developers constantly jumping ship for a salary bump), the Vietnamese tech sector values deep mastery and long-term stability.
 
-The numbers quantify just how costly this churn is. Aon's 2025 Salary Increase and Turnover Study — which surveyed more than 700 businesses across Southeast Asia — projected Singapore's overall staff turnover rate at 19.3% for 2026, the second-highest in the region after the Philippines. HR industry analyst Josh Bersin has calculated that fully replacing a departing employee costs between 1.5x and 2x their annual salary once you account for lost productivity, knowledge transfer, recruiting fees, and onboarding time — and that multiplier climbs even higher for senior, specialized roles. Applied to a Senior iOS Developer earning SGD $180,000, a single resignation can represent a real, fully-loaded cost of SGD $270,000 to $360,000. A local Singaporean vendor absorbs this churn risk on your project whether they disclose it or not; it resurfaces as ramp-up delays and repeated onboarding cycles you end up paying for indirectly.
+The numbers quantify just how costly this churn is. Aon's 2025 Salary Increase and Turnover Study - which surveyed more than 700 businesses across Southeast Asia - projected Singapore's overall staff turnover rate at 19.3% for 2026, the second-highest in the region after the Philippines. HR industry analyst Josh Bersin has calculated that fully replacing a departing employee costs between 1.5x and 2x their annual salary once you account for lost productivity, knowledge transfer, recruiting fees, and onboarding time - and that multiplier climbs even higher for senior, specialized roles. Applied to a Senior iOS Developer earning SGD $180,000, a single resignation can represent a real, fully-loaded cost of SGD $270,000 to $360,000. A local Singaporean vendor absorbs this churn risk on your project whether they disclose it or not; it resurfaces as ramp-up delays and repeated onboarding cycles you end up paying for indirectly.
 
-By partnering with an elite Hybrid Hub vendor, you secure a dedicated Autonomous Pod where the Senior Architects remain on your project for 3 to 5 years. You do not just buy cheap code; you buy enterprise stability and deep domain knowledge retention—an asset that is nearly impossible to secure in the hyper-volatile Singaporean job market.
+By partnering with an elite Hybrid Hub vendor, you secure a dedicated Autonomous Pod where the Senior Architects remain on your project for 3 to 5 years. You do not just buy cheap code; you buy enterprise stability and deep domain knowledge retention - an asset that is nearly impossible to secure in the hyper-volatile Singaporean job market.
 
 ## Redefining Procurement in the Lion City
 
@@ -108,7 +108,7 @@ To make the "FAANG Tax" concrete, consider a mid-market Singaporean enterprise b
 | Contingency reserve | ~S$80,000 |
 | **Realistic team composition** | 1 Singapore-based Architect + 6-person specialist pod, fully dedicated (no other clients) |
 
-The same S$500,000 stretches roughly twice as far in headcount and specialization under the Hybrid Hub model, and it eliminates the "Bait and Switch" risk described above — the Autonomous Pod does not have a Technical Director splitting attention across five other pitches, because the Pod itself, not a single rainmaker, is the delivery unit.
+The same S$500,000 stretches roughly twice as far in headcount and specialization under the Hybrid Hub model, and it eliminates the "Bait and Switch" risk described above - the Autonomous Pod does not have a Technical Director splitting attention across five other pitches, because the Pod itself, not a single rainmaker, is the delivery unit.
 
 ---
 

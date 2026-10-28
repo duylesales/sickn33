@@ -28,17 +28,17 @@ Het goede nieuws is dat de tweede versie smaller en praktischer is dan haar repu
 
 De woordenschat doet ertoe, omdat al het andere eruit volgt.
 
-Uw klant — het accountantskantoor, de kliniek, de gemeente — bepaalt waarom en hoe persoonsgegevens worden verwerkt. Zij zijn de *verwerkingsverantwoordelijke*. U verwerkt de gegevens in hun opdracht, en dat maakt u de *verwerker*.
+Uw klant - het accountantskantoor, de kliniek, de gemeente - bepaalt waarom en hoe persoonsgegevens worden verwerkt. Zij zijn de *verwerkingsverantwoordelijke*. U verwerkt de gegevens in hun opdracht, en dat maakt u de *verwerker*.
 
 Die relatie vereist een schriftelijke *verwerkersovereenkomst*, en dat is het eerste waar een serieuze klant om vraagt. Er een klaar hebben, in het Nederlands, die u zelf schreef in plaats van downloadde, zet u voor op de meeste concurrenten van uw omvang.
 
-Let op de uitzondering: gegevens over uw eigen klanten als uw klanten — hun contactgegevens, hun facturatie — zijn gegevens waarvoor u verantwoordelijk bent. Uw privacyverklaring dekt die. De verwerkersovereenkomst dekt hún gegevens, die in uw product staan.
+Let op de uitzondering: gegevens over uw eigen klanten als uw klanten - hun contactgegevens, hun facturatie - zijn gegevens waarvoor u verantwoordelijk bent. Uw privacyverklaring dekt die. De verwerkersovereenkomst dekt hún gegevens, die in uw product staan.
 
 ## De Vijf Vragen Die Echt Worden Gesteld
 
 Bijna elke Nederlandse zakelijke beoordeling komt hierop neer.
 
-**Welke persoonsgegevens bevat uw product, en waarom?** Ze willen een lijst van categorieën en doelen, geen filosofie. Namen, adressen, afspraaktijden, notities — elk met een reden.
+**Welke persoonsgegevens bevat uw product, en waarom?** Ze willen een lijst van categorieën en doelen, geen filosofie. Namen, adressen, afspraaktijden, notities - elk met een reden.
 
 **Waar worden ze opgeslagen en verwerkt?** Inclusief back-ups, error tracking, e-mail en elke AI-functie. Dit is de vraag waarop de meeste door AI gebouwde producten zakken, omdat niemand het controleerde.
 
@@ -58,7 +58,7 @@ Loop uw formulieren door en vraag per veld wat er breekt als u het weghaalt. Geb
 
 Hetzelfde geldt voor de duur. Records die onbeperkt worden bewaard omdat er niets werd besloten, zijn een groeiende last. Stel per categorie een bewaartermijn in, dwing die af met een geplande taak, en noem haar.
 
-Dit is het deel van compliance dat echt ook techniek is, en hier zit de grootste vermindering van risico — data die u niet hebt, kan niet lekken, worden opgevraagd of verkeerd worden behandeld.
+Dit is het deel van compliance dat echt ook techniek is, en hier zit de grootste vermindering van risico - data die u niet hebt, kan niet lekken, worden opgevraagd of verkeerd worden behandeld.
 
 ## Uw Verklaring Moet het Product Beschrijven Dat U Hebt
 
@@ -68,7 +68,7 @@ Ze zegt dat data 12 maanden wordt bewaard terwijl uw database alles sinds de lan
 
 Dat doet ertoe, omdat een verklaring een uitspraak is waaraan u kunt worden gehouden. Een onjuiste is erger dan een korte juiste, en een klant die een verschil vindt tussen uw verklaring en uw product, vraagt zich af wat er nog meer niet klopt.
 
-De oplossing is de verklaring te schrijven vanuit het product in plaats van vanuit een sjabloon: loop door wat u werkelijk verzamelt, waar het naartoe gaat, hoe lang u het bewaart, en wie er verder aankomt — dezelfde inventarisatie die de vijf vragen vereisen.
+De oplossing is de verklaring te schrijven vanuit het product in plaats van vanuit een sjabloon: loop door wat u werkelijk verzamelt, waar het naartoe gaat, hoe lang u het bewaart, en wie er verder aankomt - dezelfde inventarisatie die de vijf vragen vereisen.
 
 ## Rechten Moeten Uitvoerbaar Zijn, Niet Alleen Beloofd
 
@@ -90,13 +90,13 @@ Geen ervan hoeft lang te zijn. Een register voor een klein product past op twee 
 
 Elke verwerkingsactiviteit heeft een reden nodig die de wet erkent, en voor een zakelijk product is het antwoord meestal eenvoudiger dan het debat erover doet vermoeden.
 
-Voor het gebruik van uw product door uw klant is de grondslag normaal gesproken de overeenkomst tussen hen en de mensen van wie zij gegevens hebben, of hun eigen gerechtvaardigd belang, of een wettelijke verplichting — en die bepaling is aan hen, niet aan u. U verwerkt in hun opdracht.
+Voor het gebruik van uw product door uw klant is de grondslag normaal gesproken de overeenkomst tussen hen en de mensen van wie zij gegevens hebben, of hun eigen gerechtvaardigd belang, of een wettelijke verplichting - en die bepaling is aan hen, niet aan u. U verwerkt in hun opdracht.
 
-Voor uw eigen verwerking — de contactgegevens van uw klant, facturatie, service-e-mails — is de grondslag doorgaans de overeenkomst met hen of uw gerechtvaardigd belang bij het leveren van de dienst.
+Voor uw eigen verwerking - de contactgegevens van uw klant, facturatie, service-e-mails - is de grondslag doorgaans de overeenkomst met hen of uw gerechtvaardigd belang bij het leveren van de dienst.
 
 Toestemming is de grondslag waar oprichters het eerst naar grijpen en meestal de verkeerde. Ze moet vrij gegeven, specifiek en intrekbaar zijn, wat haar een slechte basis maakt voor alles wat uw product nodig heeft om te werken: een klant die toestemming intrekt voor data waarzonder uw dienst niet kan functioneren, creëert een probleem dat een contractuele grondslag niet had gehad.
 
-Waar toestemming echt van toepassing is, zijn de optionele extra's — marketingmail, niet-essentiële cookies en analytics, alles wat iemand redelijkerwijs kan weigeren terwijl hij het product toch gebruikt. Houd die gescheiden, leg vast wanneer en hoe toestemming werd gegeven, en maak intrekken net zo makkelijk als geven.
+Waar toestemming echt van toepassing is, zijn de optionele extra's - marketingmail, niet-essentiële cookies en analytics, alles wat iemand redelijkerwijs kan weigeren terwijl hij het product toch gebruikt. Houd die gescheiden, leg vast wanneer en hoe toestemming werd gegeven, en maak intrekken net zo makkelijk als geven.
 
 De praktische uitkomst is één regel per verwerkingsactiviteit in uw register die de grondslag noemt. Dat opschrijven kost een uur, en het is de vraag die een goed voorbereide beoordelaar stelt na de vijf hierboven.
 
@@ -106,7 +106,7 @@ Compliance-advies voor kleine producten valt duidelijk in tweeën uiteen, en wet
 
 Doe het zelf: de data-inventarisatie, minimalisatie van velden, bewaartermijnen, export- en verwijderfuncties, de lijst van subverwerkers, het beperken van toegang, en de privacyverklaring herschrijven vanuit het product. Dit is techniek en eerlijkheid, en niemand begrijpt uw applicatie goed genoeg om het voor u te doen.
 
-Haal hulp: de verwerkersovereenkomst zelf, één keer beoordeeld door iemand die daarvoor gekwalificeerd is, zodat u geen sjabloon tekent dat u niet begrijpt; elk product dat bijzondere categorieën persoonsgegevens verwerkt — gezondheid, biometrie, alles over iemands omstandigheden — waar de regels strenger en de gevolgen groter zijn; een gegevensbeschermingseffectbeoordeling (DPIA), die vereist is bij verwerking met een hoger risico en een gestructureerde oefening is in plaats van een document om te verzinnen; en de vraag of u een functionaris gegevensbescherming nodig hebt, wat de meeste kleine producten niet hebben, maar wat afhangt van wat u verwerkt en niet van uw omvang.
+Haal hulp: de verwerkersovereenkomst zelf, één keer beoordeeld door iemand die daarvoor gekwalificeerd is, zodat u geen sjabloon tekent dat u niet begrijpt; elk product dat bijzondere categorieën persoonsgegevens verwerkt - gezondheid, biometrie, alles over iemands omstandigheden - waar de regels strenger en de gevolgen groter zijn; een gegevensbeschermingseffectbeoordeling (DPIA), die vereist is bij verwerking met een hoger risico en een gestructureerde oefening is in plaats van een document om te verzinnen; en de vraag of u een functionaris gegevensbescherming nodig hebt, wat de meeste kleine producten niet hebben, maar wat afhangt van wat u verwerkt en niet van uw omvang.
 
 Een praktische opmerking over kosten: een Nederlandse privacyjurist die een verwerkersovereenkomst voor een kleine SaaS beoordeelt, is doorgaans een paar uur werk, geen project. Oprichters vermijden het gesprek vaak omdat ze een opdracht verwachten, en ontdekken dat het een middag is. De dure versie is degene die plaatsvindt nadat het juridische team van een klant iets heeft gevonden.
 
@@ -114,7 +114,7 @@ Een praktische opmerking over kosten: een Nederlandse privacyjurist die een verw
 
 Voor een bestaand product kost dit doorgaans twee tot drie dagen: een inventarisatie van persoonsgegevens per categorie en doel, een Nederlandstalige verwerkersovereenkomst klaar om te tekenen, een gedocumenteerde lijst van subverwerkers met verwerkingslocaties, onnodige velden verwijderd uit formulieren en schema, bewaartermijnen per categorie ingesteld en afgedwongen met een geplande taak, export- en verwijderfuncties die een klant zelf kan bedienen, toegang tot productiedata beperkt en vastgelegd, een privacyverklaring herschreven vanuit het werkelijke product, en een register van verwerkingsactiviteiten.
 
-LaunchStudio doet dit als onderdeel van het klaarmaken van een product voor verkoop aan Nederlandse bedrijven, en daar komt het grootste deel van de omzet van onze klanten vandaan. Achter het werk staat Manifera — elf jaar, klanten als Vodafone, TNO en CFLW, en Europese activiteiten vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio doet dit als onderdeel van het klaarmaken van een product voor verkoop aan Nederlandse bedrijven, en daar komt het grootste deel van de omzet van onze klanten vandaan. Achter het werk staat Manifera - elf jaar, klanten als Vodafone, TNO en CFLW, en Europese activiteiten vanaf de Herengracht 420 in Amsterdam.
 
 [Stuur ons de privacyvragen die u kreeg](https://launchstudio.eu/nl/#contact) en wij vertellen u welke uw product nu kan beantwoorden.
 
@@ -128,20 +128,20 @@ Een accountantsgroep van negen kantoren voerde vóór de onboarding een privacyb
 
 Hij had geen verwerkersovereenkomst. Zijn privacyverklaring was een sjabloon dat een bewaartermijn van 12 maanden noemde, terwijl zijn database elk record sinds de lancering twee jaar eerder bevatte. Hij had zijn subverwerkers nooit opgesomd en het bleken er, na tellen, zes te zijn. Zijn verwijderproces was hijzelf die een query uitvoerde. Error tracking legde volledige verzoeken vast, inclusief namen van medewerkers en klantreferenties, verwerkt buiten de EU zonder opschoning. En zijn registratieformulier verzamelde geboortedatum, woonadres en een privételefoonnummer, waarvan het product er geen voor iets gebruikte.
 
-Drie werkdagen: een data-inventarisatie per categorie en doel, die drie velden opleverde die werden verzameld en nooit gebruikt; die velden verwijderd uit het formulier en uit het schema, met bestaande waarden gewist; bewaartermijnen per categorie — urenregistraties zeven jaar om fiscale redenen, accountgegevens 24 maanden na vertrek van het kantoor, logs 30 dagen — afgedwongen door een maandelijkse taak; export- en verwijderfuncties ingebouwd in het beheerscherm van het kantoor, zodat een kantoor op het verzoek van een medewerker kan handelen zonder hem te benaderen; een verwerkersovereenkomst in het Nederlands opgesteld met juridische beoordeling; een lijst van subverwerkers gepubliceerd met verwerkingslocaties, nadat error tracking naar een EU-provider was verplaatst en opschoning van velden was ingesteld; de privacyverklaring herschreven vanuit het werkelijke product; toegang tot productiedata beperkt tot één account met vastgelegde toegang; en een register van verwerkingsactiviteiten van twee pagina's.
+Drie werkdagen: een data-inventarisatie per categorie en doel, die drie velden opleverde die werden verzameld en nooit gebruikt; die velden verwijderd uit het formulier en uit het schema, met bestaande waarden gewist; bewaartermijnen per categorie - urenregistraties zeven jaar om fiscale redenen, accountgegevens 24 maanden na vertrek van het kantoor, logs 30 dagen - afgedwongen door een maandelijkse taak; export- en verwijderfuncties ingebouwd in het beheerscherm van het kantoor, zodat een kantoor op het verzoek van een medewerker kan handelen zonder hem te benaderen; een verwerkersovereenkomst in het Nederlands opgesteld met juridische beoordeling; een lijst van subverwerkers gepubliceerd met verwerkingslocaties, nadat error tracking naar een EU-provider was verplaatst en opschoning van velden was ingesteld; de privacyverklaring herschreven vanuit het werkelijke product; toegang tot productiedata beperkt tot één account met vastgelegde toegang; en een register van verwerkingsactiviteiten van twee pagina's.
 
 **Resultaat:** de twaalf vragen werden beantwoord vanuit de voorbereide documenten en de groep tekende voor negen kantoren. Steven stuurt de verwerkersovereenkomst en de lijst van subverwerkers nu mee met elk voorstel, en vertelt dat drie latere klanten zeiden dat het de reden was dat ze voor hem kozen in plaats van een grotere concurrent wiens antwoorden zes weken duurden.
 
-> *"Mijn privacyverklaring beloofde dingen die mijn product niet kon. Dat vond ik echt alarmerend — ik had vreemden een toezegging gedaan die mijn eigen software niet kon nakomen."*
-> — **Steven Nijhuis, Oprichter, Urenregistratie (Deventer)**
+> *"Mijn privacyverklaring beloofde dingen die mijn product niet kon. Dat vond ik echt alarmerend - ik had vreemden een toezegging gedaan die mijn eigen software niet kon nakomen."*
+> - **Steven Nijhuis, Oprichter, Urenregistratie (Deventer)**
 
-**Kosten & Doorlooptijd:** €4.100 (data-inventarisatie, minimalisatie van velden en schema, bewaarbeleid met afdwinging, export en verwijdering door de klant zelf, verwerkersovereenkomst, documentatie van subverwerkers en migratie van error tracking, herschrijven van privacyverklaring, beperken van toegang, verwerkingsregister) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €4.100 (data-inventarisatie, minimalisatie van velden en schema, bewaarbeleid met afdwinging, export en verwijdering door de klant zelf, verwerkersovereenkomst, documentatie van subverwerkers en migratie van error tracking, herschrijven van privacyverklaring, beperken van toegang, verwerkingsregister) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Ben ik verwerkingsverantwoordelijke of verwerker?
 
-Voor data die uw klanten in uw product zetten, bent u de verwerker en zijn zij de verwerkingsverantwoordelijke — wat een schriftelijke verwerkersovereenkomst vereist. Voor uw eigen klant- en factuurgegevens bent u de verwerkingsverantwoordelijke.
+Voor data die uw klanten in uw product zetten, bent u de verwerker en zijn zij de verwerkingsverantwoordelijke - wat een schriftelijke verwerkersovereenkomst vereist. Voor uw eigen klant- en factuurgegevens bent u de verwerkingsverantwoordelijke.
 
 ### Heb ik een Nederlandstalige verwerkersovereenkomst nodig?
 
@@ -177,7 +177,7 @@ Bouw export en verwijdering als functies die uw klant zelf kan uitvoeren. Bepaal
       "name": "Heb ik een Nederlandse verwerkersovereenkomst nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Als u aan Nederlandse bedrijven verkoopt, in de praktijk ja — een overeenkomst in het Nederlands die klaar is om te tekenen, haalt weken van het inkoopproces af."
+        "text": "Als u aan Nederlandse bedrijven verkoopt, in de praktijk ja - een overeenkomst in het Nederlands die klaar is om te tekenen, haalt weken van het inkoopproces af."
       }
     },
     {
@@ -193,7 +193,7 @@ Bouw export en verwijdering als functies die uw klant zelf kan uitvoeren. Bepaal
       "name": "Moet mijn privacyverklaring overeenkomen met het product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — het is een toezegging waaraan u kunt worden gehouden. Een sjabloon dat bewaring en verwijdering belooft die het product niet kan uitvoeren, is erger dan een korte juiste verklaring."
+        "text": "Ja - het is een toezegging waaraan u kunt worden gehouden. Een sjabloon dat bewaring en verwijdering belooft die het product niet kan uitvoeren, is erger dan een korte juiste verklaring."
       }
     },
     {

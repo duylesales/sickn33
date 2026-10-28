@@ -77,7 +77,7 @@ Specialist job boards for AI and data roles allow employers to reach candidates 
 
 ## Contract Terms That Matter
 
-**Fee structure.** Clarify the percentage or amount, the salary components on which it is calculated — base salary only or including bonuses and allowances — and when invoices are due.
+**Fee structure.** Clarify the percentage or amount, the salary components on which it is calculated - base salary only or including bonuses and allowances - and when invoices are due.
 
 **Guarantee or replacement period.** Many agencies offer a replacement or partial refund if the candidate leaves or is dismissed within a certain period. Check conditions carefully.
 
@@ -105,7 +105,7 @@ Specialist job boards for AI and data roles allow employers to reach candidates 
 
 Agencies process large amounts of candidate data. Clarify whether the agency acts as an independent controller or as a processor for the employer, how candidates are informed and how long data is retained. Under the **GDPR**, candidates must be informed about processing, and data should not be kept longer than necessary.
 
-Many agencies use AI tools for sourcing, matching and screening. Under the **EU AI Act**, AI systems used to filter applications or evaluate candidates are high-risk. Ask agencies which tools they use, how human oversight works and how candidates are informed — as the employer, you have an interest in fair and lawful processes, even when outsourced.
+Many agencies use AI tools for sourcing, matching and screening. Under the **EU AI Act**, AI systems used to filter applications or evaluate candidates are high-risk. Ask agencies which tools they use, how human oversight works and how candidates are informed - as the employer, you have an interest in fair and lawful processes, even when outsourced.
 
 ## Pay Transparency Applies to Agencies Too
 
@@ -142,7 +142,7 @@ The quality of candidates an agency presents depends heavily on the quality of t
 - **What makes the role attractive,** in terms the agency can use when approaching passive candidates.
 - **Deal-breakers,** such as language requirements or location.
 
-A thirty-minute briefing call with the hiring manager — not only HR — usually improves shortlist quality more than any contract clause.
+A thirty-minute briefing call with the hiring manager - not only HR - usually improves shortlist quality more than any contract clause.
 
 ## Evaluating Agencies After the Hire
 
@@ -164,7 +164,7 @@ For the next vacancy, the manufacturer changes approach. It publishes the role o
 
 ## A Common Misconception
 
-A common misconception is that agencies always find better candidates than employers can reach directly. For scarce senior roles, good agencies often do. For many junior and medior AI roles, the same candidates are actively searching and applying directly — and are sometimes approached by several agencies at once. Another misconception is that using more agencies increases the chance of success. In practice, multiple agencies often compete for the same candidates, causing duplicates, confusion and a poor candidate experience.
+A common misconception is that agencies always find better candidates than employers can reach directly. For scarce senior roles, good agencies often do. For many junior and medior AI roles, the same candidates are actively searching and applying directly - and are sometimes approached by several agencies at once. Another misconception is that using more agencies increases the chance of success. In practice, multiple agencies often compete for the same candidates, causing duplicates, confusion and a poor candidate experience.
 
 ## Key Takeaways
 
@@ -178,7 +178,7 @@ A common misconception is that agencies always find better candidates than emplo
 
 For your next AI vacancy, decide first whether the role is truly scarce or urgent; if not, publish it directly in specialist and regional channels before engaging an agency.
 
-Post your AI, machine learning or data vacancy directly — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy directly - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -189,13 +189,13 @@ Most contingency agencies charge a fee, often a percentage of first-year salary,
 Agree in contracts that agencies need candidate consent before presenting them and define how conflicts are resolved, typically based on who presented first with consent.
 
 ### (Scenario: employer using secondment) Do labour providers need to be registered?
-Yes — companies that make workers available must be registered under the Waadi in the KVK trade register, and a mandatory admission system is being introduced.
+Yes - companies that make workers available must be registered under the Waadi in the KVK trade register, and a mandatory admission system is being introduced.
 
 ### (Scenario: SME with a limited budget) Is an agency necessary for hiring a data scientist?
-Often not — for many roles, a clear vacancy on specialist and regional channels reaches qualified candidates at much lower cost.
+Often not - for many roles, a clear vacancy on specialist and regional channels reaches qualified candidates at much lower cost.
 
 ### (Scenario: employer outsourcing recruitment) Do pay transparency rules apply when an agency recruits for us?
-Yes — candidates must receive pay information before interviews and must not be asked about pay history, regardless of who conducts recruitment.
+Yes - candidates must receive pay information before interviews and must not be asked about pay history, regardless of who conducts recruitment.
 
 <script type="application/ld+json">
 {
@@ -204,9 +204,9 @@ Yes — candidates must receive pay information before interviews and must not b
   "mainEntity": [
     {"@type": "Question", "name": "How are recruitment agencies paid for AI roles?", "acceptedAnswer": {"@type": "Answer", "text": "Usually a fee, often a percentage of first-year salary, on successful placement."}},
     {"@type": "Question", "name": "What happens if two agencies present the same candidate?", "acceptedAnswer": {"@type": "Answer", "text": "Contracts should require consent and define conflict resolution."}},
-    {"@type": "Question", "name": "Do labour providers need to be registered?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — under the Waadi, with a mandatory admission system being introduced."}},
-    {"@type": "Question", "name": "Is an agency necessary for hiring a data scientist?", "acceptedAnswer": {"@type": "Answer", "text": "Often not — specialist and regional channels frequently suffice."}},
-    {"@type": "Question", "name": "Do pay transparency rules apply when an agency recruits for us?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — regardless of who conducts recruitment."}}
+    {"@type": "Question", "name": "Do labour providers need to be registered?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - under the Waadi, with a mandatory admission system being introduced."}},
+    {"@type": "Question", "name": "Is an agency necessary for hiring a data scientist?", "acceptedAnswer": {"@type": "Answer", "text": "Often not - specialist and regional channels frequently suffice."}},
+    {"@type": "Question", "name": "Do pay transparency rules apply when an agency recruits for us?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - regardless of who conducts recruitment."}}
   ]
 }
 </script>

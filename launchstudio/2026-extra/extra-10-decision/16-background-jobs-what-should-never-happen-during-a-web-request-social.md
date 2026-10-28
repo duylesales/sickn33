@@ -1,9 +1,9 @@
 🚨 Vasil's invoicing tool triggered two payouts for one payment. Stripe had simply delivered the same webhook event twice, exactly as its own docs warn it might. 😳
 
-Retries aren't an edge case in background jobs — they're the entire point, and most prototypes were never built to survive one: 🧠
+Retries aren't an edge case in background jobs - they're the entire point, and most prototypes were never built to survive one: 🧠
 
 ❌ The webhook handler ran the payout logic inline, with no check for whether that event ID had already been processed
-❌ A job that says "charge this card €50" isn't idempotent by default — run it twice, the card is charged €100
+❌ A job that says "charge this card €50" isn't idempotent by default - run it twice, the card is charged €100
 ❌ Retrying a failed call immediately, instead of with backoff, adds load to a downstream service that's already struggling
 ❌ An in-memory job running inside the main server dies mid-execution on every deploy, with zero trace it was interrupted
 

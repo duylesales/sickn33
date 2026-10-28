@@ -1,6 +1,6 @@
-🚨 Do you tell your client who actually built their backend? Bram didn't — until a client asked about token refresh, and his pause was more damaging than an honest answer would've been. 😬
+🚨 Do you tell your client who actually built their backend? Bram didn't - until a client asked about token refresh, and his pause was more damaging than an honest answer would've been. 😬
 
-There's no universally correct posture — only the wrong one for this client: 🎭
+There's no universally correct posture - only the wrong one for this client: 🎭
 
 ❌ Staying invisible with a sophisticated client is one question from an awkward stumble
 ❌ Naming a partner reflexively can make a brand-focused client wonder why they need you at all

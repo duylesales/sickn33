@@ -13,7 +13,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan",
-  "description": "Niet elke AI-applicatie heeft vanaf dag één enterprise-grade beveiligingsinfrastructuur nodig. Dit is de echte minimale ondergrens — de niet-onderhandelbare punten voor elke lancering.",
+  "description": "Niet elke AI-applicatie heeft vanaf dag één enterprise-grade beveiligingsinfrastructuur nodig. Dit is de echte minimale ondergrens - de niet-onderhandelbare punten voor elke lancering.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -40,7 +40,7 @@ Een veelvoorkomende misvatting onder oprichters is dat beveiliging evenredig moe
 
 ## De 10 Niet-Onderhandelbare Punten
 
-**1. Geen geheimen in client-side code.** API-sleutels, database-wachtwoorden en geheime sleutels mogen nooit toegankelijk zijn in de code die in de browser van de gebruiker draait — dit is de meest voorkomende en gevaarlijkste kwetsbaarheid in AI-prototypes.
+**1. Geen geheimen in client-side code.** API-sleutels, database-wachtwoorden en geheime sleutels mogen nooit toegankelijk zijn in de code die in de browser van de gebruiker draait - dit is de meest voorkomende en gevaarlijkste kwetsbaarheid in AI-prototypes.
 
 **2. Wachtwoorden worden nooit als platte tekst opgeslagen.** Gebruik een volwaardige authenticatie-provider (Supabase Auth, Auth0, NextAuth) die wachtwoord-hashing standaard correct afhandelt.
 
@@ -58,11 +58,11 @@ Een veelvoorkomende misvatting onder oprichters is dat beveiliging evenredig moe
 
 **9. Foutmeldingen tonen geen gevoelige interne details** (stack traces, databasestructuren) aan de eindgebruiker.
 
-**10. Er is een basaal incidentenplan** — u weet precies wat u moet doen als er een beveiligingsprobleem optreedt.
+**10. Er is een basaal incidentenplan** - u weet precies wat u moet doen als er een beveiligingsprobleem optreedt.
 
 ## Wat Deze Lijst Bewust Uitsluit
 
-Dit is een minimale ondergrens, geen compleet enterprise beveiligingsprogramma. Het sluit zaken uit zoals formele penetratietests, SOC 2-certificeringen en uitgebreide SIEM-monitoring — investeringen die pas later of bij specifieke enterprise-klanten relevant worden.
+Dit is een minimale ondergrens, geen compleet enterprise beveiligingsprogramma. Het sluit zaken uit zoals formele penetratietests, SOC 2-certificeringen en uitgebreide SIEM-monitoring - investeringen die pas later of bij specifieke enterprise-klanten relevant worden.
 
 ## Waarom AI-Gegenereerde Prototypes Vaak Zakken voor Deze Test
 
@@ -76,7 +76,7 @@ AI-programmeerassistenten bouwen snelle demo's en slaan beveiligingshardening st
 
 - **Client-side API-sleutels**: Open het tabblad Netwerk in de ontwikkelaars-tools van uw browser en ververs de pagina. Als u uw OpenAI-sleutel in de verzoeken ziet staan, zakt u voor punt 1.
 - **Rate limiting**: Probeer 20 keer snel achter elkaar in te loggen met een verkeerd wachtwoord. Als u niet wordt geblokkeerd of vertraagd, zakt u voor punt 8.
-- **Data-isolatie**: Maak twee afzonderlijke accounts aan en probeer via de URL van account A een record van account B te openen. Als dat lukt, faalt punt 3 — het gevaarlijkste lek.
+- **Data-isolatie**: Maak twee afzonderlijke accounts aan en probeer via de URL van account A een record van account B te openen. Als dat lukt, faalt punt 3 - het gevaarlijkste lek.
 
 ## Belangrijkste inzichten
 
@@ -138,7 +138,7 @@ WITH CHECK (
 );
 ```
 
-Door deze policies direct in PostgreSQL te definiëren, is datalekken tussen verschillende zakelijke klanten fysiek onmogelijk — zelfs als een ontwikkelaar per abuis een filter vergeet in de backend-code.
+Door deze policies direct in PostgreSQL te definiëren, is datalekken tussen verschillende zakelijke klanten fysiek onmogelijk - zelfs als een ontwikkelaar per abuis een filter vergeet in de backend-code.
 
 ### De 3 Meest Gemaakte Fouten bij Livegang
 
@@ -151,18 +151,18 @@ Vermijd deze veelvoorkomende valkuilen tijdens uw pre-launch fase:
 
 ### Een AI-native oprichter in actie: Het behalen van de ondergrens vóór een regionale lancering
 
-Casper, leverancier van imkerij-benodigdheden in Hardenberg, bouwde ImkerAssist — een AI-tool die imkers helpt bij de diagnose van bijengezondheid op basis van foto's en beschrijvingen — met behulp van Bolt. Voordat hij de tool lanceerde voor de 200+ leden van een regionale imkersvereniging, liep hij deze 10-punten checklist door.
+Casper, leverancier van imkerij-benodigdheden in Hardenberg, bouwde ImkerAssist - een AI-tool die imkers helpt bij de diagnose van bijengezondheid op basis van foto's en beschrijvingen - met behulp van Bolt. Voordat hij de tool lanceerde voor de 200+ leden van een regionale imkersvereniging, liep hij deze 10-punten checklist door.
 
 De beoordeling toonde dat ImkerAssist op vier punten faalde: API-sleutels stonden in de browser-code, er was geen rate limiting op inloggen, back-ups waren niet geconfigureerd en foutmeldingen toonden ruwe databasedetails.
 
-Casper nam contact op met LaunchStudio om deze vier gaten te dichten. Het team van Manifera verplaatste de API-calls naar veilige server-routes, voegde rate limiting toe, regelde geautomatiseerde back-ups en opschoonde foutmeldingen — alles binnen 6 werkdagen.
+Casper nam contact op met LaunchStudio om deze vier gaten te dichten. Het team van Manifera verplaatste de API-calls naar veilige server-routes, voegde rate limiting toe, regelde geautomatiseerde back-ups en opschoonde foutmeldingen - alles binnen 6 werkdagen.
 
 **Resultaat:** ImkerAssist lanceerde succesvol voor alle 200+ imkers met een 100% goedgekeurde beveiligingsstatus.
 
-> *"Toen alleen mijn bevriende imkers het testten ging alles goed — maar 200 echte leden is een volstrekt ander risicoprofiel. LaunchStudio vond vier echte gaten en dichtte ze direct."*
-> — **Casper Bruins, Oprichter, ImkerAssist (Hardenberg)**
+> *"Toen alleen mijn bevriende imkers het testten ging alles goed - maar 200 echte leden is een volstrekt ander risicoprofiel. LaunchStudio vond vier echte gaten en dichtte ze direct."*
+> - **Casper Bruins, Oprichter, ImkerAssist (Hardenberg)**
 
-**Kosten & Doorlooptijd:** € 1.500 (beveiligingsherstel) — voltooid in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 1.500 (beveiligingsherstel) - voltooid in 6 werkdagen.
 
 ---
 

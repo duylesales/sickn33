@@ -12,7 +12,7 @@
 ✅ Engineering met een vaste scope dicht het gat in enkele weken, zonder aandelenoverdracht
 ✅ U kunt altijd later nog iemand aannemen, rustig en op uw eigen tempo, zodra de acute druk weg is
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, dichten we exact dit soort afgebakende knelpunten — zonder equity, zonder langdurige zoektocht. 🛠️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, dichten we exact dit soort afgebakende knelpunten - zonder equity, zonder langdurige zoektocht. 🛠️
 
 Zijn resultaat: het echte probleem binnen 14 werkdagen opgelost, de audit van de klant op schema gehaald, en zijn co-founder-zoektocht daarna zonder stress en haast voortgezet. 🚀
 

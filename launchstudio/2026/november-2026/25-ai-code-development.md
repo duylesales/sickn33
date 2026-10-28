@@ -104,9 +104,9 @@ In a 3-week intensive refactoring sprint, LaunchStudio:
 **Result:** The codebase shrank from 140,000 lines to a highly manageable 45,000 lines of clean, modular code. The platform became 3x faster, and the bugs vanished. Most importantly, Pieter was able to open Cursor again. Because the files were small and modular, the AI understood the context perfectly, and his development velocity returned. 
 
 > *"I thought the AI was getting dumber. It turned out my codebase was just getting too messy for the AI to read. LaunchStudio didn't just fix my app; they organized it so the AI and I could actually work together again."*
-> — **Pieter van Dijk, Founder, RentMaster (The Hague)**
+> - **Pieter van Dijk, Founder, RentMaster (The Hague)**
 
-**Cost & Timeline:** €6,800 (Codebase Rescue & Refactor Package) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €6,800 (Codebase Rescue & Refactor Package) - production-ready and deployed in 15 business days.
 
 ---
 
@@ -118,7 +118,7 @@ This happens when you hit the AI's context window limit. The AI cannot "read" yo
 
 ### (Scenario: Developer trying to clean up an AI codebase) Should I try to refactor AI-generated spaghetti code myself using AI?
 
-Using AI to refactor heavily entangled AI code usually results in an endless loop of breaking changes. Refactoring requires a holistic understanding of system architecture—exactly what LLMs lack. Human engineering is required to untangle the monolith. Once LaunchStudio establishes clean boundaries and strict interfaces, you can return to using AI for feature development.
+Using AI to refactor heavily entangled AI code usually results in an endless loop of breaking changes. Refactoring requires a holistic understanding of system architecture - exactly what LLMs lack. Human engineering is required to untangle the monolith. Once LaunchStudio establishes clean boundaries and strict interfaces, you can return to using AI for feature development.
 
 ### (Scenario: Founder managing a large codebase) How do I prevent my AI-generated app from becoming spaghetti code in the first place?
 

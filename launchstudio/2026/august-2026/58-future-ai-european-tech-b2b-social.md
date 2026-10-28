@@ -1,4 +1,4 @@
-🔥 Chloe built a prototype using **Bolt** — chloe, an auditor, used **bolt** to build a compliance tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Chloe built a prototype using **Bolt** - chloe, an auditor, used **bolt** to build a compliance tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Chloe's application achieved silky-smooth performance: Met strict EU local data hosting requirements, securing €30,000 in contracts. (€2,800 (EU Server Migration) — production-ready and deployed in 6 business days.). 🚀
+Chloe's application achieved silky-smooth performance: Met strict EU local data hosting requirements, securing €30,000 in contracts. (€2,800 (EU Server Migration) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/future-ai-european-tech-b2b
 

@@ -1,6 +1,6 @@
-🚨 Bezoekers verlieten haar vertaaltool na 6-8 seconden wachten op een wit scherm. Het AI-model was niet traag — haar SERVER stond in het verkeerde werelddeel. 🌍
+🚨 Bezoekers verlieten haar vertaaltool na 6-8 seconden wachten op een wit scherm. Het AI-model was niet traag - haar SERVER stond in het verkeerde werelddeel. 🌍
 
-U concurreert niet met andere AI-tools. U concurreert met de aandachtsspanne van uw bezoeker — en die verdwijnt bij elke extra seconde wachttijd. ⏱️
+U concurreert niet met andere AI-tools. U concurreert met de aandachtsspanne van uw bezoeker - en die verdwijnt bij elke extra seconde wachttijd. ⏱️
 
 Waarom AI-apps vaak tergend traag aanvoelen: 😱
 ❌ Meerdere gekoppelde verzoeken: database-query + LLM-call + vervolgstap
@@ -15,7 +15,7 @@ De oplossing is helder en beproefd: ⚡
 
 Bij **LaunchStudio**, ondersteund door Manifera's hubs in Amsterdam, Singapore en Ho Chi Minh-stad, dichten we exact deze latency-kloof. Haar laadtijd: van 8 seconden naar minder dan 1 seconde. 🛡️🚀
 
-⏱️ Latency telt exponentieel op: 3 opeenvolgende AI-stappen van 800ms voelen niet als 800ms — maar als 2,4 seconden doodse stilte tenzij u directe voortgang toont.
+⏱️ Latency telt exponentieel op: 3 opeenvolgende AI-stappen van 800ms voelen niet als 800ms - maar als 2,4 seconden doodse stilte tenzij u directe voortgang toont.
 
 👉 Ontdek waarom latency uw grootste concurrent is: https://launchstudio.eu/nl/blog/edge-computing-ai-latency-competitor
 

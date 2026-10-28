@@ -1,4 +1,4 @@
-🔥 David bouwde een prototype via **Next.js & Supabase** — als oprichter van een AI-tutor voor studenten ging zijn app viraal tijdens de tentamenweek (12.000 gebruikers), maar zijn database crashte direct met connection limit en timeout-errors. 🧠
+🔥 David bouwde een prototype via **Next.js & Supabase** - als oprichter van een AI-tutor voor studenten ging zijn app viraal tijdens de tentamenweek (12.000 gebruikers), maar zijn database crashte direct met connection limit en timeout-errors. 🧠
 
 Als uw serverless AI SaaS groeit naar duizenden gebruikers zonder connection pooling en geoptimaliseerde `pgvector` HNSW-indexering, bevriest uw database onder piekdrukte.
 
@@ -12,7 +12,7 @@ Als uw serverless AI SaaS groeit naar duizenden gebruikers zonder connection poo
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Binnen 24 uur stond het platform weer live voor 15.000 studenten met een stabiele CPU-belasting van 30%. (€5.500 (Spoed Database Optimalisatie & Pooling) — binnen 3 werkdagen live). 🚀
+Binnen 24 uur stond het platform weer live voor 15.000 studenten met een stabiele CPU-belasting van 30%. (€5.500 (Spoed Database Optimalisatie & Pooling) - binnen 3 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scaling-postgresql-ai-saas
 

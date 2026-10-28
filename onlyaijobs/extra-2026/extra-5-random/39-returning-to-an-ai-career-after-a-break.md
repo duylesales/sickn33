@@ -39,7 +39,7 @@ People step away from technical work for many reasons: raising children, caring 
 
 Start with an honest audit, because the anxiety usually exceeds the reality.
 
-**What has changed** in recent years: language models have become an ordinary part of the toolkit, retrieval systems are common in production, tooling for deployment and orchestration has consolidated, cloud platforms have added managed services, and regulation — particularly the EU AI Act — has become a live consideration in how systems are built.
+**What has changed** in recent years: language models have become an ordinary part of the toolkit, retrieval systems are common in production, tooling for deployment and orchestration has consolidated, cloud platforms have added managed services, and regulation - particularly the EU AI Act - has become a live consideration in how systems are built.
 
 **What has not changed**: the mathematics, statistical reasoning, evaluation discipline, SQL, the craft of framing a problem, data quality work, software engineering fundamentals, and the fact that most projects fail for organisational rather than technical reasons.
 
@@ -51,7 +51,7 @@ The proportions matter. If you were competent before, the large majority of what
 
 **Weeks 3–6: refresh the core.** Rebuild fluency in your main language and SQL by doing, not reading. Revisit evaluation, validation and the statistics you always relied on.
 
-**Weeks 7–10: close the tooling gap.** Pick the two or three genuinely new things that appear in the vacancies you want — typically a cloud service, a deployment or orchestration tool, and practical work with language models — and build something small with each.
+**Weeks 7–10: close the tooling gap.** Pick the two or three genuinely new things that appear in the vacancies you want - typically a cloud service, a deployment or orchestration tool, and practical work with language models - and build something small with each.
 
 **Weeks 11–12: build one visible artefact.** A complete, deployed, documented project with honest evaluation. This is what converts a gap on a CV into a current practitioner.
 
@@ -63,7 +63,7 @@ The biggest risk for a returner is spending six months on the wrong things becau
 
 **Worth the time:** practical work with language models, including retrieval, evaluation and their limitations, because they now appear in a large share of applied roles; one cloud platform's data and machine learning services at a working level; containers and one orchestration or scheduling tool; and modern data tooling for transformation and testing if you come from an analytics background.
 
-**Worth a refresh, not a rebuild:** your primary programming language, SQL, statistics, and the libraries you used before — most have changed less than you fear.
+**Worth a refresh, not a rebuild:** your primary programming language, SQL, statistics, and the libraries you used before - most have changed less than you fear.
 
 **Safe to ignore for now:** the newest model releases, framework debates, distributed training unless you are targeting research roles, and anything that appears in fewer than a quarter of the vacancies you are reading.
 
@@ -89,13 +89,13 @@ Three to four weeks of part-time work is enough. The report matters as much as t
 
 The gap on a CV is noticed. How you handle it determines whether it becomes an issue.
 
-On the CV, include it as a brief entry rather than leaving an unexplained hole: "2024–2027 — career break (family care). Returned to technical practice in 2027 with project work in retrieval systems." One line, no apology.
+On the CV, include it as a brief entry rather than leaving an unexplained hole: "2024–2027 - career break (family care). Returned to technical practice in 2027 with project work in retrieval systems." One line, no apology.
 
 Avoid inflating it into something it was not. Describing three years of childcare as "independent consulting" invites questions you cannot answer well, and interviewers see this frequently.
 
-In interviews, deliver the same sentence and then move to the present: "I took four years out for family reasons. Over the past three months I have been rebuilding, and I built this — let me show you." Most interviewers accept this immediately, because it is ordinary and because you have given them something better to discuss.
+In interviews, deliver the same sentence and then move to the present: "I took four years out for family reasons. Over the past three months I have been rebuilding, and I built this - let me show you." Most interviewers accept this immediately, because it is ordinary and because you have given them something better to discuss.
 
-If someone presses in a way that feels inappropriate — questions about children, family plans or health — you are within your rights to decline politely. Across the EU, discrimination on grounds including sex, age and disability is prohibited, and a well-run employer will not be asking. How an interviewer handles this is also information about them.
+If someone presses in a way that feels inappropriate - questions about children, family plans or health - you are within your rights to decline politely. Across the EU, discrimination on grounds including sex, age and disability is prohibited, and a well-run employer will not be asking. How an interviewer handles this is also information about them.
 
 ## Routes Back That Work Better Than Cold Applications
 
@@ -129,7 +129,7 @@ Returners frequently accept worse terms than they need to, out of gratitude for 
 
 Almost every returner reports the same experience: the technical gap closes faster than expected, and the confidence gap lingers.
 
-Some of this is simply being out of practice at professional performance — speaking in meetings, defending a decision, writing under time pressure. It returns within weeks of doing it again.
+Some of this is simply being out of practice at professional performance - speaking in meetings, defending a decision, writing under time pressure. It returns within weeks of doing it again.
 
 Some of it is comparison. Reading about what others have built while you were away produces a distorted picture, because public accounts describe successes and omit the eight months of failure behind them. The colleagues you will be working with are not the people writing those accounts.
 
@@ -141,7 +141,7 @@ Most returners report that within three months of starting, the break stops bein
 
 If you hire in this field, returners are an under-used source of experienced people, and the case is practical rather than charitable.
 
-They arrive with prior professional experience, which means they know how organisations work, how to handle stakeholders and what production discipline means — the things that take a junior hire two years to learn. The tooling gap, which is what employers worry about, closes in a few months, and it is the part of the job that changes for everyone anyway.
+They arrive with prior professional experience, which means they know how organisations work, how to handle stakeholders and what production discipline means - the things that take a junior hire two years to learn. The tooling gap, which is what employers worry about, closes in a few months, and it is the part of the job that changes for everyone anyway.
 
 They also tend to be stable hires. Someone returning after a break has usually thought carefully about what they want and arranged their life around it.
 

@@ -30,7 +30,7 @@ This article is about that key: what it does, the three routes by which it ends 
 
 A Supabase project issues more than one API key, and the distinction between them is the whole subject.
 
-**The public key** — the one your frontend is supposed to use — identifies your project. It carries no privileges of its own. Every request made with it is evaluated against your row level security policies, which is why those policies matter so much. If your policies are right, this key is safe in a browser. It is meant to be there.
+**The public key** - the one your frontend is supposed to use - identifies your project. It carries no privileges of its own. Every request made with it is evaluated against your row level security policies, which is why those policies matter so much. If your policies are right, this key is safe in a browser. It is meant to be there.
 
 **The service role key** is the opposite. It is designed for trusted server-side code, and it **bypasses row level security entirely**. Every policy you wrote about who can read what simply does not apply to requests made with it. It can read every row in every table, modify anything, and delete anything.
 
@@ -44,7 +44,7 @@ Nobody decides to publish an administrative key. It arrives by one of three rout
 
 **Route two: the AI fixes the symptom.** Ask a coding assistant to resolve a row-level-security error and it will often produce working code. Working is not the same as correct. Tools like Lovable, Bolt and Cursor optimise for making your app run, and a client-side call using a privileged key runs beautifully. The tool has no way to weigh "this works" against "this exposes the database," because only one of those is visible in the output.
 
-**Route three: environment variable confusion.** Frontend build systems expose some environment variables to the browser deliberately — that is how your public key gets there — usually signalled by a prefix in the variable name. Put a secret in a variable with that prefix and it is bundled into the JavaScript your users download. The variable *looks* like a server-side secret, sitting in a `.env` file. It is not. It is on the internet.
+**Route three: environment variable confusion.** Frontend build systems expose some environment variables to the browser deliberately - that is how your public key gets there - usually signalled by a prefix in the variable name. Put a secret in a variable with that prefix and it is bundled into the JavaScript your users download. The variable *looks* like a server-side secret, sitting in a `.env` file. It is not. It is on the internet.
 
 ## What an Attacker Actually Does With It
 
@@ -54,7 +54,7 @@ Any visitor can open the browser's developer tools and read the JavaScript your 
 
 There is no login required, no exploit chain, and no clever technique. The credential was handed out with the page.
 
-Two aggravating details are worth knowing. First, if the key was ever committed to a public repository, it may be indexed and discoverable even after removal — deleting it from the current code does not retrieve the copies. Second, activity performed with a service role key is indistinguishable from legitimate server activity in most logs, which means you may have no way to determine what was accessed and when. That matters directly under GDPR, where a personal data breach can require notifying the supervisory authority within 72 hours of becoming aware of it — and "we cannot determine what was accessed" is a painful sentence to put in that notification.
+Two aggravating details are worth knowing. First, if the key was ever committed to a public repository, it may be indexed and discoverable even after removal - deleting it from the current code does not retrieve the copies. Second, activity performed with a service role key is indistinguishable from legitimate server activity in most logs, which means you may have no way to determine what was accessed and when. That matters directly under GDPR, where a personal data breach can require notifying the supervisory authority within 72 hours of becoming aware of it - and "we cannot determine what was accessed" is a painful sentence to put in that notification.
 
 ## Check Your Own App in Ten Minutes
 
@@ -64,7 +64,7 @@ You do not need tooling for a first pass.
 
 **Decode what you find.** Paste the token into any JWT decoder; the payload includes a `role` claim. `anon` is expected. `service_role` in a browser bundle is an emergency.
 
-**Search your codebase.** Look for `SERVICE_ROLE`, `service_role`, and any environment variable holding a key that is also prefixed for client exposure — the prefix varies by framework, but if the variable is visible to the browser and holds a secret, that is the bug.
+**Search your codebase.** Look for `SERVICE_ROLE`, `service_role`, and any environment variable holding a key that is also prefixed for client exposure - the prefix varies by framework, but if the variable is visible to the browser and holds a secret, that is the bug.
 
 **Check your git history, not just your current files.** A key removed in a later commit still lives in earlier ones.
 
@@ -72,7 +72,7 @@ If you find an exposed key: rotate it immediately in the Supabase dashboard, whi
 
 ## What the Correct Architecture Looks Like
 
-The operations that genuinely need elevated privileges — sending a receipt after payment, running an admin report, processing a webhook, aggregating data across users — are real. They just belong somewhere the user cannot see.
+The operations that genuinely need elevated privileges - sending a receipt after payment, running an admin report, processing a webhook, aggregating data across users - are real. They just belong somewhere the user cannot see.
 
 **Server-side functions.** Supabase Edge Functions, or an API route in your own backend, hold the service role key as a genuine server secret. Your frontend calls the function with the user's normal session, the function checks who the user is and what they are allowed to do, and only then performs the privileged operation.
 
@@ -86,9 +86,9 @@ The operations that genuinely need elevated privileges — sending a receipt aft
 
 Exposed credentials are the most common single finding when an AI-built application comes in for review, and the reason is structural rather than careless. AI coding tools are exceptional at producing something that runs and have no model of an adversary. They do not ask who else can read this, what happens if someone changes that number in the request, or whether this key belongs on this side of the network boundary.
 
-That is the gap LaunchStudio was built around: keeping the frontend you made, and putting a defensible backend underneath it. Concretely, for this class of problem, that means auditing every credential in the codebase and git history, rotating what is compromised, moving privileged operations into server-side functions, writing the row level security policies that should have made the master key unnecessary, and testing the result by attempting to read another user's data as a logged-in user — [the Launch Ready work](https://launchstudio.eu/en/#packages), done by Manifera engineers who have been securing production systems for eleven years.
+That is the gap LaunchStudio was built around: keeping the frontend you made, and putting a defensible backend underneath it. Concretely, for this class of problem, that means auditing every credential in the codebase and git history, rotating what is compromised, moving privileged operations into server-side functions, writing the row level security policies that should have made the master key unnecessary, and testing the result by attempting to read another user's data as a logged-in user - [the Launch Ready work](https://launchstudio.eu/en/#packages), done by Manifera engineers who have been securing production systems for eleven years.
 
-If you found something alarming in the ten-minute check above, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — we reply within one business day, and rotating a key today is considerably cheaper than a disclosure letter next month.
+If you found something alarming in the ten-minute check above, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - we reply within one business day, and rotating a key today is considerably cheaper than a disclosure letter next month.
 
 ## Rotating Without Taking Your App Down
 
@@ -98,11 +98,11 @@ Founders often delay rotation because they are afraid of breaking the live produ
 
 **Fix the architecture before you rotate, not after.** If a client-side call depends on the privileged key, rebuild that call as a server-side function using the user's session. Deploy it. Confirm the app works with the new path while the old key is still valid.
 
-**Then rotate, and update the legitimate server-side locations** — your function secrets and your hosting platform's secret storage — in the same maintenance window.
+**Then rotate, and update the legitimate server-side locations** - your function secrets and your hosting platform's secret storage - in the same maintenance window.
 
 **Verify by failing deliberately.** Load your site, open developer tools, and search the bundle again. Confirm the old key no longer works by attempting a request with it from outside your app.
 
-**Finally, prevent recurrence.** A build-time check that scans the client bundle for privileged tokens turns this from a thing you remember into a thing the pipeline enforces — which matters, because the original mistake is always made under time pressure at the end of a long day.
+**Finally, prevent recurrence.** A build-time check that scans the client bundle for privileged tokens turns this from a thing you remember into a thing the pipeline enforces - which matters, because the original mistake is always made under time pressure at the end of a long day.
 
 ## Real example
 
@@ -110,24 +110,24 @@ Founders often delay rotation because they are afraid of breaking the live produ
 
 Thomas de Wit built Factuurly, a lightweight invoicing tool for Dutch freelancers, largely in Cursor with a Supabase backend. It had about 180 paying users when he asked for a pre-scaling review, mainly because he wanted advice on database performance.
 
-The performance was fine. What the review found was that a single client-side module used the service role key to fetch invoice totals for a dashboard widget — added months earlier to resolve a permissions error and never revisited. Every one of those 180 users had been served a key granting full read and write access to a database containing other freelancers' client names, addresses and unpaid invoice amounts. The key was also present in the repository's history, which had briefly been public.
+The performance was fine. What the review found was that a single client-side module used the service role key to fetch invoice totals for a dashboard widget - added months earlier to resolve a permissions error and never revisited. Every one of those 180 users had been served a key granting full read and write access to a database containing other freelancers' client names, addresses and unpaid invoice amounts. The key was also present in the repository's history, which had briefly been public.
 
 The remediation ran five business days: key rotated immediately, the dashboard widget rebuilt as an Edge Function that verifies the caller's session before aggregating only their own data, row level security policies written and tested across all invoice tables, git history cleaned, secrets moved into managed storage, and a test added that fails the build if a `service_role` token appears in any client bundle.
 
-Because access logs could not distinguish legitimate server calls from potential misuse, Thomas took legal advice on his notification obligations rather than guessing — which is the correct order of operations, and the reason the engineering fix is only half the story.
+Because access logs could not distinguish legitimate server calls from potential misuse, Thomas took legal advice on his notification obligations rather than guessing - which is the correct order of operations, and the reason the engineering fix is only half the story.
 
 **Result:** No evidence of misuse was found, the exposure was closed inside a week, and the build-time check has since caught one further attempt to reintroduce a privileged key during a feature sprint.
 
 > *"It was three lines of code I wrote at midnight to make a red error go away. It sat in production for seven months handing out admin access to everyone who loaded my dashboard."*
-> — **Thomas de Wit, Founder, Factuurly (Utrecht)**
+> - **Thomas de Wit, Founder, Factuurly (Utrecht)**
 
-**Cost & Timeline:** €1,900 (security remediation: key rotation, Edge Function rebuild, policy authoring and CI check) — completed in 5 business days.
+**Cost & Timeline:** €1,900 (security remediation: key rotation, Edge Function rebuild, policy authoring and CI check) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### How do I tell the two Supabase keys apart?
 
-Decode the token — both are JSON Web Tokens and carry a `role` claim in the payload. `anon` is the public key and belongs in your frontend. `service_role` bypasses all row level security and must only exist in server-side environments.
+Decode the token - both are JSON Web Tokens and carry a `role` claim in the payload. `anon` is the public key and belongs in your frontend. `service_role` bypasses all row level security and must only exist in server-side environments.
 
 ### I rotated the key. Am I done?
 
@@ -155,7 +155,7 @@ Assume it is compromised regardless of how briefly it was exposed, rotate immedi
       "name": "How do I tell the two Supabase keys apart?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Decode the token — both are JSON Web Tokens carrying a role claim. The anon role is the public key and belongs in the frontend; the service_role key bypasses all row level security and must only exist server-side."
+        "text": "Decode the token - both are JSON Web Tokens carrying a role claim. The anon role is the public key and belongs in the frontend; the service_role key bypasses all row level security and must only exist server-side."
       }
     },
     {

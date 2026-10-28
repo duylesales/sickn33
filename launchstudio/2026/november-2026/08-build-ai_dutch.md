@@ -65,7 +65,7 @@ Het verschil is onzichtbaar in een demo. Maar bij echte gebruikers lekt de eerst
 
 ### 4. Betalingsverwerking
 
-**Snel/Kwetsbaar:** Een eenvoudige Stripe Checkout-redirect zonder webhook-afhandeling — betalingen worden wel geïncasseerd, maar uw database weet van niets.
+**Snel/Kwetsbaar:** Een eenvoudige Stripe Checkout-redirect zonder webhook-afhandeling - betalingen worden wel geïncasseerd, maar uw database weet van niets.
 
 **Duurzaam:** Stripe of Mollie met een complete webhook-pijplijn (geslaagde betalingen, mislukte pogingen, verlengingen, opzeggingen, facturatie en btw-berekening). Elke betaalgebeurtenis werkt uw database realtime bij en triggert direct de juiste gebruikersacties.
 
@@ -77,7 +77,7 @@ Het verschil is onzichtbaar in een demo. Maar bij echte gebruikers lekt de eerst
 
 ## Zelf Bouwen vs. Delegeren: De Beslissingsmatrix
 
-Als technische oprichter — iemand die code begrijpt, weet hoe HTTP-requests werken en het nut van database-indexen kent — bevindt u zich in een unieke positie. U kunt codekwaliteit beoordelen en beveiligingsrisico's herkennen.
+Als technische oprichter - iemand die code begrijpt, weet hoe HTTP-requests werken en het nut van database-indexen kent - bevindt u zich in een unieke positie. U kunt codekwaliteit beoordelen en beveiligingsrisico's herkennen.
 
 Maar architectuur beoordelen en zelf vanaf nul implementeren zijn twee verschillende disciplines die een enorme tijdsinvestering vragen:
 
@@ -109,18 +109,18 @@ Kai, een softwareontwikkelaar in Berlijn, besloot als nevenproject een AI-gedrev
 
 Als ontwikkelaar wist Kai dat goede infrastructuur noodzakelijk was. Hij besteedde twee weken aan Stripe-facturatie met webhooks. Drie weken aan een multi-tenant databaseschema met Row Level Security. Twee weken aan CI/CD met GitHub Actions en Docker-containers. En nog een week aan Sentry-monitoring en dashboards.
 
-In totaal acht weken aan infrastructuur, en nul weken aan klantwerving. Zijn concurrent — eveneens een solo-ontwikkelaar — lanceerde twee maanden eerder een eenvoudigere versie met minimale infrastructuur en wist direct 400 betalende gebruikers aan te trekken.
+In totaal acht weken aan infrastructuur, en nul weken aan klantwerving. Zijn concurrent - eveneens een solo-ontwikkelaar - lanceerde twee maanden eerder een eenvoudigere versie met minimale infrastructuur en wist direct 400 betalende gebruikers aan te trekken.
 
 Kai realiseerde zich dat zijn obsessie met infrastructuur een valkuil was: hij bouwde enterprise-systemen voor een product met nul gebruikers.
 
-Toen Kai LaunchStudio ontdekte, veranderde zijn aanpak. Voor zijn volgende product — een AI-documentatiegenerator — schakelde hij direct LaunchStudio in voor €4.500. Hij focuste uitsluitend op de AI-prompts en UI, liet de infrastructuur over aan Manifera en lanceerde binnen drie weken.
+Toen Kai LaunchStudio ontdekte, veranderde zijn aanpak. Voor zijn volgende product - een AI-documentatiegenerator - schakelde hij direct LaunchStudio in voor €4.500. Hij focuste uitsluitend op de AI-prompts en UI, liet de infrastructuur over aan Manifera en lanceerde binnen drie weken.
 
 **Resultaat:** DocuMind verwelkomde 67 betalende gebruikers in de eerste maand (€2.010/maand bij €30/gebruiker). Kai schat dat hij anders nog twee maanden kwijt was geweest aan backend-werk.
 
 > *"Als programmeur dacht ik dat ik alles zelf moest bouwen. LaunchStudio leerde me dat mijn tijd het meest waardevol is voor de code die alleen ik kan schrijven: de AI-logica. Laat specialisten de infrastructuur regelen."*
-> — **Kai Richter, Oprichter, DocuMind (Berlijn/Remote)**
+> - **Kai Richter, Oprichter, DocuMind (Berlijn/Remote)**
 
-**Kosten & Doorlooptijd:** €4.500 (Launch & Grow Pakket) — productie-klaar en live binnen 11 werkdagen.
+**Kosten & Doorlooptijd:** €4.500 (Launch & Grow Pakket) - productie-klaar en live binnen 11 werkdagen.
 
 ---
 

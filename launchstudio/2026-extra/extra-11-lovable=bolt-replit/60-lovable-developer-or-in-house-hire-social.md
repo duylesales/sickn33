@@ -1,4 +1,4 @@
-🚨 Marloes Timmerman ran Praktijkbeheer in Lovable for 28 healthcare practices across Gelderland. Her investors urged her to immediately hire a full-time senior engineer for €85,000/year plus taxes. She hesitated — discovering that hiring in-house too early would burn 90% of her early runway on fixed overhead before new clinical modules were even validated. 😳
+🚨 Marloes Timmerman ran Praktijkbeheer in Lovable for 28 healthcare practices across Gelderland. Her investors urged her to immediately hire a full-time senior engineer for €85,000/year plus taxes. She hesitated - discovering that hiring in-house too early would burn 90% of her early runway on fixed overhead before new clinical modules were even validated. 😳
 
 Hiring a full-time senior engineer before achieving scalable retention is a top startup killer. Here's how to pace engineering talent: 🧠
 
@@ -14,7 +14,7 @@ Hiring a full-time senior engineer before achieving scalable retention is a top 
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we act as your high-leverage fractional CTO and engineering team until hiring in-house makes financial sense. 👥
 
-Her result: Marloes Timmerman scaled Praktijkbeheer with LaunchStudio on €49/month managed hosting plus flexible engineering retainers for 14 months. When she finally hired in-house, the new engineer shipped their first feature in week one into a clean, documented codebase — saving over €50,000 in early overhead. 🚀
+Her result: Marloes Timmerman scaled Praktijkbeheer with LaunchStudio on €49/month managed hosting plus flexible engineering retainers for 14 months. When she finally hired in-house, the new engineer shipped their first feature in week one into a clean, documented codebase - saving over €50,000 in early overhead. 🚀
 
 👉 Decide whether your startup needs a fractional partner or a full-time in-house hire: https://launchstudio.eu/en/blog/lovable-developer-or-in-house-hire
 

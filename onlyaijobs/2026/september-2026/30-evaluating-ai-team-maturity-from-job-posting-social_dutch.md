@@ -1,10 +1,10 @@
-Een vacature wordt geschreven vóórdat je iemand spreekt. 🔎 Daarmee is het een van de weinige ongefilterde artefacten in het hele wervingsproces — niemand heeft de formulering nog bijgesteld voor jouw gesprek.
+Een vacature wordt geschreven vóórdat je iemand spreekt. 🔎 Daarmee is het een van de weinige ongefilterde artefacten in het hele wervingsproces - niemand heeft de formulering nog bijgesteld voor jouw gesprek.
 
 Twee vacatures naast elkaar:
 
 A: "We bouwen de toekomst van AI-gedreven klantbetrokkenheid. Sluit je aan bij ons gepassioneerde team van innovators."
 
-B: "Ons aanbevelingsmodel heeft een cold-start-probleem van 12% voor nieuwe gebruikers in hun eerste week — jij wordt eigenaar van het verbeteren daarvan, met onze twee backend engineers."
+B: "Ons aanbevelingsmodel heeft een cold-start-probleem van 12% voor nieuwe gebruikers in hun eerste week - jij wordt eigenaar van het verbeteren daarvan, met onze twee backend engineers."
 
 A kan elk bedrijf in elke fase zijn. B vertelt je dat er al iets draait, dat iemand een meetbaar probleem heeft geïdentificeerd, en met wie je zou werken. De specificiteit zélf is het signaal.
 

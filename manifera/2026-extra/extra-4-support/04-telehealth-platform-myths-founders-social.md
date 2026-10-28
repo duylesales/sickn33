@@ -1,4 +1,4 @@
-🚨 "Myth #1: "We'll Just Use a Video SDK and Add Healthcare Features Later" ❌" — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "Myth #1: "We'll Just Use a Video SDK and Add Healthcare Features Later" ❌" - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "Myth #1: "We'll Just Use a Video SDK and Add Healthcare Features Later" ❌":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

@@ -1,4 +1,4 @@
-🔥 Hazel built a prototype using **Bolt** — hazel, a startup founder, used **bolt** to build a dental office automator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Hazel built a prototype using **Bolt** - hazel, a startup founder, used **bolt** to build a dental office automator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Hazel's application achieved production readiness: Hazel automated scheduling for 8 dental clinics, saving receptionist resources. (€4,800 (Vertical Integration Package) — production-ready and deployed in 14 business days.). 🚀
+Hazel's application achieved production readiness: Hazel automated scheduling for 8 dental clinics, saving receptionist resources. (€4,800 (Vertical Integration Package) - production-ready and deployed in 14 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/rise-of-vertical-ai-agents
 

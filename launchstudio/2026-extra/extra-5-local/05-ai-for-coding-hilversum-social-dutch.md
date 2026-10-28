@@ -1,4 +1,4 @@
-📹 Lotte Jansen bouwde MediaFlow met Lovable — een planning- en ruwe-montagereviewtool voor freelance videocrews in de Hilversumse productiescene. Binnen enkele weken gebruikten drie bedrijven het al. Toen zag een klant zijn eigen niet-uitgebrachte promotievideo opduiken in een Google-afbeeldingencache.
+📹 Lotte Jansen bouwde MediaFlow met Lovable - een planning- en ruwe-montagereviewtool voor freelance videocrews in de Hilversumse productiescene. Binnen enkele weken gebruikten drie bedrijven het al. Toen zag een klant zijn eigen niet-uitgebrachte promotievideo opduiken in een Google-afbeeldingencache.
 
 AI-tools zijn geweldig in het bouwen van een uploadknop en een mediaspeler. Ze zijn niet gebouwd om te controleren wie daadwerkelijk kan zien wat erin zit. 🧠
 

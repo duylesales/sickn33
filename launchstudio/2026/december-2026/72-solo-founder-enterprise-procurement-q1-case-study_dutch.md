@@ -5,7 +5,7 @@ Buyer Stage: Beslissing
 ---
 
 # Case Study: Een Solo-Oprichter Die Enterprise Procurement Haalde op Tijd voor een Q1-Deal
-Het binnenhalen van een Intentieverklaring (Letter of Intent - LOI) van een enterprise-klant is een euforisch moment voor elke solo-oprichter. Het markeert de validatie waar maandenlang naartoe is gewerkt. Maar voor oprichters die hun product hebben gebouwd met AI-tools zoals Lovable, Bolt of Cursor, is de LOI niet de eindstreep — het is het startschot voor de zwaarste beproeving in B2B-software: het formele inkoop- en security-onderzoek (enterprise procurement review). Deze case study beschrijft hoe een solo-oprichter een beveiligingsvragenlijst van achttien pagina's wist te doorstaan en een contract van € 48.000 binnensleepte voor de start van Q1 — door haar AI-prototype binnen drie weken technisch te harden, zonder haar bestaande code opnieuw te hoeven bouwen.
+Het binnenhalen van een Intentieverklaring (Letter of Intent - LOI) van een enterprise-klant is een euforisch moment voor elke solo-oprichter. Het markeert de validatie waar maandenlang naartoe is gewerkt. Maar voor oprichters die hun product hebben gebouwd met AI-tools zoals Lovable, Bolt of Cursor, is de LOI niet de eindstreep - het is het startschot voor de zwaarste beproeving in B2B-software: het formele inkoop- en security-onderzoek (enterprise procurement review). Deze case study beschrijft hoe een solo-oprichter een beveiligingsvragenlijst van achttien pagina's wist te doorstaan en een contract van € 48.000 binnensleepte voor de start van Q1 - door haar AI-prototype binnen drie weken technisch te harden, zonder haar bestaande code opnieuw te hoeven bouwen.
 
 ## De Intentieverklaring Was Niet de Eindstreep
 
@@ -13,7 +13,7 @@ Priya had met behulp van Bolt een anonieme klokkenluiders- en HR-compliancetool 
 
 Twee dagen later ontving Priya een e-mail van de Chief Information Security Officer (CISO) van de klant met een bijlage: een vendor security questionnaire van achttien pagina's met 114 gedetailleerde vragen over data-encryptie, multi-tenancy, back-upintegriteit, dataretentie, toegangscontrole en een verplichte Data Processing Agreement (DPA). De deadline: drie weken, om mee te kunnen in de budgetronde van het eerste kwartaal.
 
-## Waarom Enterprise Procurement Bestaat — en Geen Boodschap Heeft aan Uw Demo
+## Waarom Enterprise Procurement Bestaat - en Geen Boodschap Heeft aan Uw Demo
 
 Tijdens een productdemo kijkt het salesteam naar de gebruikerservaring, de functionaliteiten en de zakelijke waarde. De inkoop- en security-afdeling kijkt echter naar slechts één ding: *bedrijfsrisico*.
 
@@ -30,13 +30,13 @@ Op deze vragen volstaan vage beloften zoals "onze cloudprovider beveiligt alles"
 Een eerlijke technische audit van Priya's Bolt-applicatie legde vier kritieke hiaten bloot:
 
 1. **Row Level Security (RLS) ontbrak op gevoelige tabellen**: Hoewel Supabase werd gebruikt, stonden RLS-policies niet ingeschakeld op de tabel met vertrouwelijke medewerkersrapportages. Iedereen met een geldige API-sleutel kon in theorie alle records uitlezen.
-2. **Geen geteste back-up- en herstelprocedure**: De standaard geautomatiseerde back-ups van de database draaiden wel, maar er was nooit een herstelprocedure gedocumenteerd of gesimuleerd — een harde eis in vraag 42 van de vragenlijst.
+2. **Geen geteste back-up- en herstelprocedure**: De standaard geautomatiseerde back-ups van de database draaiden wel, maar er was nooit een herstelprocedure gedocumenteerd of gesimuleerd - een harde eis in vraag 42 van de vragenlijst.
 3. **Ontbreken van audit logs**: Er werd niet geregistreerd welke manager wanneer een rapport had ingezien of geëxporteerd.
 4. **Geen formele DPA en incidentresponsplan**: Priya had geen juridisch getoetste verwerkersovereenkomst conform de AVG/GDPR en geen gedocumenteerd stappenplan voor datalekken.
 
 ## Waarom "Het Werkte in de Demo" Hier Helemaal Niets Waard Is
 
-Een detail dat Priya oprecht verraste: de procurement-beoordelaar van haar potentiële klant vroeg haar nooit om het werkende product te demonstreren. Niet één keer. De volledige beoordeling vond plaats op papier — encryptiespecificaties, een gedocumenteerd incident-responseplan, een ondertekende Verwerkersovereenkomst (DPA), bewijs van geteste backups — omdat een enterprise procurement-team niet evalueert of het product functioneel goed is, maar of de leverancier een beheersbaar risico vormt als er later iets misgaat. Een vlekkeloze demo en een ingevulde security-vragenlijst beantwoorden twee fundamenteel verschillende vragen, en slechts één daarvan bepaalt of het contract daadwerkelijk wordt getekend. Dit is precies waarom oprichters die aannemen dat "het product voor zichzelf spreekt" worden overrompeld door procurement: het verkoopgesprek en de technische beveiligingsbeoordeling lopen via totaal verschillende trajecten, beoordeeld door verschillende stakeholders met volstrekt verschillende criteria.
+Een detail dat Priya oprecht verraste: de procurement-beoordelaar van haar potentiële klant vroeg haar nooit om het werkende product te demonstreren. Niet één keer. De volledige beoordeling vond plaats op papier - encryptiespecificaties, een gedocumenteerd incident-responseplan, een ondertekende Verwerkersovereenkomst (DPA), bewijs van geteste backups - omdat een enterprise procurement-team niet evalueert of het product functioneel goed is, maar of de leverancier een beheersbaar risico vormt als er later iets misgaat. Een vlekkeloze demo en een ingevulde security-vragenlijst beantwoorden twee fundamenteel verschillende vragen, en slechts één daarvan bepaalt of het contract daadwerkelijk wordt getekend. Dit is precies waarom oprichters die aannemen dat "het product voor zichzelf spreekt" worden overrompeld door procurement: het verkoopgesprek en de technische beveiligingsbeoordeling lopen via totaal verschillende trajecten, beoordeeld door verschillende stakeholders met volstrekt verschillende criteria.
 
 ## De Kloof Dichten in Drie Weken
 
@@ -69,7 +69,7 @@ Priya hoefde haar met Bolt gebouwde product niet weg te gooien of maandenlang op
 
 Heeft u een grote klant in het vooruitzicht? Zorg dat uw beveiliging en compliance op orde zijn voordat de vragenlijst op uw bureau landt.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ### De Anatomie van een Enterprise Procurement Goedkeuring
 
@@ -102,13 +102,13 @@ Door de applicatie vanaf de basis in te richten volgens SOC2 Type 1 richtlijnen 
 
 ### Een AI-Native Oprichter in Actie: HR Compliance Platform
 
-Priya Nair, een solo-oprichter, bouwde met **Bolt** een anonieme meldingsapplicatie voor personeelszaken. Na het bemachtigen van een intentieverklaring van een logistieke onderneming met 1.200 medewerkers, ontving ze een beveiligingsvragenlijst van 18 pagina's met een strikte deadline van drie weken — terwijl documentatie over data-encryptie, back-up recovery en data-isolatie volledig ontbrak.
+Priya Nair, een solo-oprichter, bouwde met **Bolt** een anonieme meldingsapplicatie voor personeelszaken. Na het bemachtigen van een intentieverklaring van een logistieke onderneming met 1.200 medewerkers, ontving ze een beveiligingsvragenlijst van 18 pagina's met een strikte deadline van drie weken - terwijl documentatie over data-encryptie, back-up recovery en data-isolatie volledig ontbrak.
 
 Het Enterprise Hardening team van **LaunchStudio (door Manifera)** activeerde en verifieerde Row Level Security over alle tabellen met personeelsmeldingen, implementeerde onveranderlijke audit-logging, documenteerde en testte een disaster recovery procedure met een hersteltijd van onder de 2 uur, en stelde een AVG-conforme Data Processing Agreement op.
 
 **Resultaat:** Priya's beveiligingsdossier werd binnen vier dagen unaniem goedgekeurd door de CISO, waarna het enterprise-contract van € 48.000 ARR vóór het einde van het jaar definitief werd getekend.
 
-**Investering & Doorlooptijd:** € 4.500 (Enterprise Hardening Pakket) — 14 werkdagen.
+**Investering & Doorlooptijd:** € 4.500 (Enterprise Hardening Pakket) - 14 werkdagen.
 
 ---
 

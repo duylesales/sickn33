@@ -1,4 +1,4 @@
-🚨 Wietse Kamphuis ran Onderdeelshop, a spare parts catalogue for agricultural machinery across Friesland and Groningen with 18,000 products built in Lovable. When farmers and dealers searched by partial part number or model with small typos, client-side keyword matching failed completely — producing zero results on 34% of searches. 😳
+🚨 Wietse Kamphuis ran Onderdeelshop, a spare parts catalogue for agricultural machinery across Friesland and Groningen with 18,000 products built in Lovable. When farmers and dealers searched by partial part number or model with small typos, client-side keyword matching failed completely - producing zero results on 34% of searches. 😳
 
 Basic SQL `LIKE` queries crumble when catalogues grow. Here's how to build lightning-fast, typo-tolerant search: 🧠
 

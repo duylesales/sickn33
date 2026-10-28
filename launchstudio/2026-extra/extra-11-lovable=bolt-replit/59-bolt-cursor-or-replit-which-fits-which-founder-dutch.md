@@ -26,7 +26,7 @@ Wat dát bepaalt, is pasvorm (fit): sluit de tool naadloos aan bij hoe jij conce
 
 ## De vraag die je eerst eerlijk moet beantwoorden
 
-Voordat je tools gaat vergelijken, stel jezelf deze ene vraag: **kun je code lezen?** Niet zelf foutloos schrijven — maar het kunnen openen, begrijpen wat een functie globaal doet, en aanvoelen wanneer iets er verdacht of verkeerd uitziet.
+Voordat je tools gaat vergelijken, stel jezelf deze ene vraag: **kun je code lezen?** Niet zelf foutloos schrijven - maar het kunnen openen, begrijpen wat een functie globaal doet, en aanvoelen wanneer iets er verdacht of verkeerd uitziet.
 
 Dit ene antwoord splitst de vier belangrijkste AI-tools onverbiddelijk in twee kampen. Het verkeerd inschatten van deze vraag is de allergrootste bron van frustratie bij niet-technische oprichters. Iemand die geen code kan lezen en in een code-editor zoals Cursor belandt, raakt binnen twee uur volkomen gedesoriënteerd; iemand die wél code kan lezen maar in een prompt-only webinterface werkt, ergert zich continu aan het gebrek aan directe controle over bestanden en configuraties.
 
@@ -34,7 +34,7 @@ Wees hierin volstrekt eerlijk tegenover jezelf. "Ik heb vijftien jaar geleden oo
 
 ## Lovable: Voor de oprichter die denkt in schermen
 
-Als jij jouw softwareproduct voor je ziet als een logische opeenvolging van visuele schermen — eerst deze inlogpagina, dan dit intakeformulier, gevolgd door dit overzichtsdashboard — dan sluit Lovable perfect aan op jouw denkwereld. Je beschrijft visuele interfaces en interactief gedrag; Lovable genereert de schermen, en de backend (Supabase) wordt als logisch gevolg op de achtergrond aangekoppeld in plaats van als een apart engineering-project.
+Als jij jouw softwareproduct voor je ziet als een logische opeenvolging van visuele schermen - eerst deze inlogpagina, dan dit intakeformulier, gevolgd door dit overzichtsdashboard - dan sluit Lovable perfect aan op jouw denkwereld. Je beschrijft visuele interfaces en interactief gedrag; Lovable genereert de schermen, en de backend (Supabase) wordt als logisch gevolg op de achtergrond aangekoppeld in plaats van als een apart engineering-project.
 
 **Geschikt voor:** niet-technische oprichters, mensen die een werkend product willen zonder zich te bekommeren om de mappenstructuur van de codebase, en iedereen van wie het idee helderder is als visuele gebruikerservaring dan als technisch systeem.
 
@@ -48,7 +48,7 @@ Bolt.new genereert in hoog tempo een conventionele, overzichtelijke en leesbare 
 
 **Geschikt voor:** oprichters die verwachten het project binnen afzienbare tijd over te dragen aan een externe softwareontwikkelaar of bureau, meer technisch onderlegde founders die een snelle steiger (scaffolding) willen in plaats van een gesloten black-box, en iedereen die waarde hecht aan nette code, zelfs als ze die zelf niet direct kunnen aanpassen.
 
-**Wat het achterlaat:** een schoner en meer modulair startpunt, maar doorgaans minder kant-en-klaar aangesloten op complexe backend-diensten — de datalaag is vaak meer geschetst dan definitief ingericht.
+**Wat het achterlaat:** een schoner en meer modulair startpunt, maar doorgaans minder kant-en-klaar aangesloten op complexe backend-diensten - de datalaag is vaak meer geschetst dan definitief ingericht.
 
 **Kies hiervoor als:** je nu snel een werkende applicatie wilt bouwen maar weet dat een software-engineer het later overneemt, en je wilt dat die ontwikkelaar een overzichtelijk, modern project erft.
 
@@ -64,7 +64,7 @@ Cursor is een volwaardige ontwikkelomgeving (een fork van VS Code). Het gaat erv
 
 ## Replit: Voor wie vandaag een werkende link nodig heeft
 
-Het kenmerkende voordeel van Replit (en Replit Agent) is dat letterlijk alles direct werkt: ontwikkelomgeving, serveruitvoering, database, publieke URL, samenwerking met teamleden — zonder dat je lokaal ook maar één regel configuratie hoeft te installeren.
+Het kenmerkende voordeel van Replit (en Replit Agent) is dat letterlijk alles direct werkt: ontwikkelomgeving, serveruitvoering, database, publieke URL, samenwerking met teamleden - zonder dat je lokaal ook maar één regel configuratie hoeft te installeren.
 
 **Geschikt voor:** mensen die al doende willen leren, teams die razendsnel samen een concept willen uitproberen, oprichters die deze week investeerders of testgebruikers een werkende link moeten tonen, en situaties waarin snelheid naar een eerste demo belangrijker is dan wat er in maand zes met de architectuur moet gebeuren.
 
@@ -108,9 +108,9 @@ Beantwoord deze vijf vragen eerlijk, en de juiste toolkeuze wijst zichzelf.
 
 ## Wat écht bepaalt of je succesvol lanceert
 
-Het is niet de tool die je kiest. Het is het traject daarna — en of je het gat naar productiebewijsheid bewust overbrugt, of pas ontdekt wanneer een zakelijke klant je applicatie door een security-audit haalt.
+Het is niet de tool die je kiest. Het is het traject daarna - en of je het gat naar productiebewijsheid bewust overbrugt, of pas ontdekt wanneer een zakelijke klant je applicatie door een security-audit haalt.
 
-LaunchStudio overbrugt exact die kloof, ongeacht welke van de vier tools jouw frontend heeft gebouwd: Row Level Security ingesteld en geverifieerd door actief inbraakpogingen te simuleren, API-sleutels veilig naar de server verplaatst, betalingen waterdicht gekoppeld met webhooks, CI/CD-pipelines met staging en one-click rollback, back-up hersteltests uitgevoerd en monitoring actief — terwijl de interface die jij met zorg hebt ontworpen volledig intact blijft en de codebase 100% geschikt blijft voor jouw AI-tool.
+LaunchStudio overbrugt exact die kloof, ongeacht welke van de vier tools jouw frontend heeft gebouwd: Row Level Security ingesteld en geverifieerd door actief inbraakpogingen te simuleren, API-sleutels veilig naar de server verplaatst, betalingen waterdicht gekoppeld met webhooks, CI/CD-pipelines met staging en one-click rollback, back-up hersteltests uitgevoerd en monitoring actief - terwijl de interface die jij met zorg hebt ontworpen volledig intact blijft en de codebase 100% geschikt blijft voor jouw AI-tool.
 
 Vaste tarieven tussen € 800 en € 7.500 afhankelijk van de complexiteit van je datalaag en de gevoeligheid van je data, doorgaans opgeleverd binnen één tot drie weken. De engineering wordt verzorgd door Manifera: elf jaar ervaring in bedrijfskritische software voor gerenommeerde partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
@@ -122,7 +122,7 @@ Veel oprichters lezen dit terwijl ze al tussen twee of drie platforms hebben gep
 
 **Stop met vergelijken en kies de meest complete versie,** niet de nieuwste. De versie die het dichtst bij iets zit wat een echte gebruiker kan bedienen is de versie die afgemaakt moet worden, zelfs als die gebouwd is in de tool waar je het minst enthousiast over was.
 
-**Schrijf op wat er functioneel nog ontbreekt** — echte functionaliteiten voor gebruikers, geen infrastructuur. Beperk dit tot maximaal zes regels. Dit is je resterende werk.
+**Schrijf op wat er functioneel nog ontbreekt** - echte functionaliteiten voor gebruikers, geen infrastructuur. Beperk dit tot maximaal zes regels. Dit is je resterende werk.
 
 **Kies de tool die past bij de zelftest hierboven** en committeer je aan die tool totdat dit lijstje klaar is. Niet voor altijd; puur totdat deze specifieke functionaliteiten werken.
 
@@ -165,9 +165,9 @@ Vervolgens stopte ze bewust met nieuwe features toevoegen en liet ze het product
 **Resultaat:** Klantboek ging live met veertien betalende therapeuten, elf weken na haar herstart. Lotte heeft sindsdien zelfstandig vier nieuwe functies toegevoegd via Lovable.
 
 > *"Ik dacht echt dat ik er te dom voor was. Maar ik had twee maanden lang een tool gebruikt die ervan uitgaat dat je de code kunt controleren die hij schrijft. Dat kan ik niet, en niemand had me die vraag ooit gesteld."*
-> — **Lotte Gerritsen, Oprichter, Klantboek (Utrecht)**
+> - **Lotte Gerritsen, Oprichter, Klantboek (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 3.200 (toegangsrechten en Row Level Security, databeveiliging en encryptie, hosting, geteste back-ups en monitoring) — afgerond in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 3.200 (toegangsrechten en Row Level Security, databeveiliging en encryptie, hosting, geteste back-ups en monitoring) - afgerond in 8 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -217,7 +217,7 @@ Als primaire tool voor dagelijks gebruik grotendeels wel. Cursor vereist dat je 
       "name": "Kan ik twee AI-tools effectief naast elkaar gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — een prompt-builder voor de frontend en Cursor voor complexe backend-zaken, mits beide tools strikt afgebakende mappen beheren."
+        "text": "Ja - een prompt-builder voor de frontend en Cursor voor complexe backend-zaken, mits beide tools strikt afgebakende mappen beheren."
       }
     },
     {

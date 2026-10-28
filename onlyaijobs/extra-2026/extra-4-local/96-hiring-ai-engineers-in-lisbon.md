@@ -49,7 +49,7 @@ Lisbon has become one of Europe's most popular locations for technology teams. I
 
 **Portuguese scale-ups.** Companies such as Feedzai, which uses AI for fraud detection in financial services, Unbabel, which combines AI and human translation, and OutSystems, a low-code platform company, have built significant engineering teams and helped create a local culture of product engineering.
 
-**International tech hubs.** Many global companies — in automotive software, e-commerce, fintech, telecom and consulting — have opened engineering and data hubs in Lisbon, offering international career paths.
+**International tech hubs.** Many global companies - in automotive software, e-commerce, fintech, telecom and consulting - have opened engineering and data hubs in Lisbon, offering international career paths.
 
 **International professionals.** Lisbon attracts engineers from across Europe, Brazil and beyond, many of them working in English.
 
@@ -65,7 +65,7 @@ Lisbon has become one of Europe's most popular locations for technology teams. I
 
 ## Portuguese Employment Conditions
 
-Portuguese employment contracts are typically permanent (contrato sem termo) or fixed-term, with probation periods defined by law. Salaries are usually paid in 14 instalments — twelve monthly salaries plus holiday and Christmas payments — and candidates will compare annual figures. A daily meal allowance is common and partly tax-advantaged, and private health insurance is a valued benefit. Portugal has introduced tax measures relevant to hiring, including a regime for young workers in their first years of employment and an incentive for highly qualified professionals and researchers who move to Portugal, which replaced the former non-habitual resident regime for new applicants. Eligibility criteria are specific and change; employers and candidates should seek professional advice.
+Portuguese employment contracts are typically permanent (contrato sem termo) or fixed-term, with probation periods defined by law. Salaries are usually paid in 14 instalments - twelve monthly salaries plus holiday and Christmas payments - and candidates will compare annual figures. A daily meal allowance is common and partly tax-advantaged, and private health insurance is a valued benefit. Portugal has introduced tax measures relevant to hiring, including a regime for young workers in their first years of employment and an incentive for highly qualified professionals and researchers who move to Portugal, which replaced the former non-habitual resident regime for new applicants. Eligibility criteria are specific and change; employers and candidates should seek professional advice.
 
 ## Writing a Vacancy That Works
 
@@ -88,17 +88,17 @@ Lisbon's housing costs have risen sharply, driven by demand from residents, inte
 
 ## How OnlyAIJobs Supports Lisbon Employers
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement — every vacancy competes on its content. Candidates browse without an account.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement - every vacancy competes on its content. Candidates browse without an account.
 
-To be transparent, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For hiring AI engineers in Lisbon, use it alongside Portuguese job boards, university career services, community events, Web Summit and referrals — particularly if you want to reach AI engineers in the Netherlands and elsewhere in Europe who are considering a move to Portugal. Your first vacancy is free via info@onlyaijobs.eu.
+To be transparent, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For hiring AI engineers in Lisbon, use it alongside Portuguese job boards, university career services, community events, Web Summit and referrals - particularly if you want to reach AI engineers in the Netherlands and elsewhere in Europe who are considering a move to Portugal. Your first vacancy is free via info@onlyaijobs.eu.
 
 ## Product Work Versus Delivery Work
 
-Lisbon's tech market includes both product companies and hubs that deliver projects for clients or for headquarters abroad. Experienced AI engineers increasingly prefer roles with product ownership: designing models, owning their deployment and seeing their impact on users. If your hub does delivery work, be honest about it and highlight what makes it attractive — variety, learning, international exposure. If your team owns products or components, make that explicit in the vacancy, because it is one of the strongest attractions for senior candidates. Ask yourself, too, whether decisions about models and roadmaps are made in Lisbon or elsewhere; candidates will ask, and teams with local decision-making power have a clear advantage.
+Lisbon's tech market includes both product companies and hubs that deliver projects for clients or for headquarters abroad. Experienced AI engineers increasingly prefer roles with product ownership: designing models, owning their deployment and seeing their impact on users. If your hub does delivery work, be honest about it and highlight what makes it attractive - variety, learning, international exposure. If your team owns products or components, make that explicit in the vacancy, because it is one of the strongest attractions for senior candidates. Ask yourself, too, whether decisions about models and roadmaps are made in Lisbon or elsewhere; candidates will ask, and teams with local decision-making power have a clear advantage.
 
 ## Interview Design for Hiring AI Engineers in Lisbon
 
-A strong process for AI engineers in Lisbon includes a screening call, a technical deep dive on a past project, a practical exercise relevant to your domain, an ML system design discussion and a team conversation, completed within three to four weeks. Many candidates interview with several employers at once, including remote offers from abroad, so speed matters. Interviews are often in English in tech hubs; state this in advance. Give prompt feedback — Lisbon's tech community is well connected, and candidate experience affects your reputation.
+A strong process for AI engineers in Lisbon includes a screening call, a technical deep dive on a past project, a practical exercise relevant to your domain, an ML system design discussion and a team conversation, completed within three to four weeks. Many candidates interview with several employers at once, including remote offers from abroad, so speed matters. Interviews are often in English in tech hubs; state this in advance. Give prompt feedback - Lisbon's tech community is well connected, and candidate experience affects your reputation.
 
 ## Building Pipelines With Portuguese Universities
 
@@ -106,7 +106,7 @@ IST, NOVA and universities in Porto, Braga, Coimbra and Aveiro produce strong en
 
 ## Attracting Returning Portuguese Engineers
 
-Many Portuguese engineers built careers abroad during periods when local opportunities were scarcer. Some want to return, attracted by family, lifestyle and a stronger local tech scene. Tax incentives for qualified professionals relocating to Portugal may apply in some cases. Reaching this diaspora — through networks, referrals and targeted outreach — can bring experienced engineers with international backgrounds into your team.
+Many Portuguese engineers built careers abroad during periods when local opportunities were scarcer. Some want to return, attracted by family, lifestyle and a stronger local tech scene. Tax incentives for qualified professionals relocating to Portugal may apply in some cases. Reaching this diaspora - through networks, referrals and targeted outreach - can bring experienced engineers with international backgrounds into your team.
 
 ## Compensation Strategy
 
@@ -134,7 +134,7 @@ Be specific about the work, transparent about pay and ownership, credible about 
 
 ## Designing the Right Role
 
-Before writing a vacancy, clarify the profile you need. Lisbon employers sometimes combine several roles — data scientist, ML engineer, data engineer, MLOps engineer, AI application developer — into one posting, which confuses candidates and slows hiring. A fraud detection team may need ML engineers who can build real-time scoring systems; a language AI company may need research engineers and evaluation specialists; a hub building LLM applications may need AI engineers who combine software development with prompt design, retrieval and evaluation. Define core responsibilities, seniority and must-have skills, and separate them from nice-to-haves. A focused role attracts better-matched candidates and shortens time to hire. If you need someone to cover several areas in a small team, explain the priorities for the first year honestly, so candidates can judge whether the role suits their strengths and ambitions.
+Before writing a vacancy, clarify the profile you need. Lisbon employers sometimes combine several roles - data scientist, ML engineer, data engineer, MLOps engineer, AI application developer - into one posting, which confuses candidates and slows hiring. A fraud detection team may need ML engineers who can build real-time scoring systems; a language AI company may need research engineers and evaluation specialists; a hub building LLM applications may need AI engineers who combine software development with prompt design, retrieval and evaluation. Define core responsibilities, seniority and must-have skills, and separate them from nice-to-haves. A focused role attracts better-matched candidates and shortens time to hire. If you need someone to cover several areas in a small team, explain the priorities for the first year honestly, so candidates can judge whether the role suits their strengths and ambitions.
 
 ## Sourcing Beyond Job Boards
 
@@ -150,11 +150,11 @@ Lisbon's technology employers are spread across several areas. Many startups and
 
 ## Remote Competition
 
-Lisbon engineers increasingly receive remote offers from employers elsewhere in Europe and the United States. Local employers can compete by offering meaningful product work, strong teams, stability, in-person collaboration and career growth — and by being transparent about compensation. Understanding what remote employers offer helps you position your roles realistically.
+Lisbon engineers increasingly receive remote offers from employers elsewhere in Europe and the United States. Local employers can compete by offering meaningful product work, strong teams, stability, in-person collaboration and career growth - and by being transparent about compensation. Understanding what remote employers offer helps you position your roles realistically.
 
 ## Measuring Hiring Success
 
-Track time to hire, qualified applicants per vacancy, offer acceptance rates, reasons for declined offers — including housing and remote competition — and first-year retention. These metrics reveal where your process leaks and whether changes to vacancy texts, relocation support or hybrid policies are working. Share the findings with leadership to justify investments in university partnerships, relocation packages or employer branding.
+Track time to hire, qualified applicants per vacancy, offer acceptance rates, reasons for declined offers - including housing and remote competition - and first-year retention. These metrics reveal where your process leaks and whether changes to vacancy texts, relocation support or hybrid policies are working. Share the findings with leadership to justify investments in university partnerships, relocation packages or employer branding.
 
 ## A Quick Vacancy Checklist
 
@@ -174,7 +174,7 @@ Lisbon's tech community is lively and connected. Employers that share real engin
 
 A European fintech opened a Lisbon hub to build fraud detection and risk models. Its first vacancies attracted many applicants but few with production ML experience. The hiring manager rewrote them with specific problem descriptions, the streaming data stack, English as working language, annual salary ranges with the 14-payment structure explained, three remote days per week and relocation support including a month of temporary housing. The company partnered with IST on thesis projects and certified for the Tech Visa programme to hire non-EU specialists.
 
-Within four months, the team hired four ML engineers — two Portuguese engineers returning from abroad, one from Porto who moved to Lisbon and one from outside the EU through the Tech Visa route — and began hosting IST master's students.
+Within four months, the team hired four ML engineers - two Portuguese engineers returning from abroad, one from Porto who moved to Lisbon and one from outside the EU through the Tech Visa route - and began hosting IST master's students.
 
 ## Key Takeaways
 

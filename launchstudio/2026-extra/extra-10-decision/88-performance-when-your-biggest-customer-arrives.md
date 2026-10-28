@@ -20,7 +20,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-The customer you most want is the one most likely to break your product. They arrive with four years of history to import, twelve people who will use it simultaneously, and expectations set by software that handles their volume without noticing. Everything you built and tested against accounts holding thirty records meets an account holding sixty thousand, and the failure is rarely a crash — it is a product that becomes slow enough to be unusable, for them specifically, while working perfectly for everyone else.
+The customer you most want is the one most likely to break your product. They arrive with four years of history to import, twelve people who will use it simultaneously, and expectations set by software that handles their volume without noticing. Everything you built and tested against accounts holding thirty records meets an account holding sixty thousand, and the failure is rarely a crash - it is a product that becomes slow enough to be unusable, for them specifically, while working perfectly for everyone else.
 
 This is worth anticipating for a commercial reason as much as a technical one: the largest account is usually the largest invoice, and it is the one whose experience determines whether you can sell to similar businesses. Performance problems here are not an engineering inconvenience; they are the thing standing between you and the customers you most want.
 
@@ -28,7 +28,7 @@ This is worth anticipating for a commercial reason as much as a technical one: t
 
 Products degrade at scale in a small number of well-known ways, and AI-generated code exhibits them reliably because a generator optimises for producing something that works, not something that works at volume.
 
-**The query in a loop.** The page fetches 200 projects, then for each project fetches its owner — 201 queries where two would do. At ten projects this is imperceptible. At a thousand it is several seconds. This single pattern accounts for more slow pages in generated code than everything else combined, because it is the natural way to write the logic if you are not thinking about the database.
+**The query in a loop.** The page fetches 200 projects, then for each project fetches its owner - 201 queries where two would do. At ten projects this is imperceptible. At a thousand it is several seconds. This single pattern accounts for more slow pages in generated code than everything else combined, because it is the natural way to write the logic if you are not thinking about the database.
 
 **No pagination.** A list page that loads every record. Fine at fifty, catastrophic at fifty thousand, and it fails on three axes at once: the database work, the transfer, and the browser rendering.
 
@@ -46,19 +46,19 @@ Each has a standard remedy. What matters is knowing they are there, which requir
 
 The test is straightforward and rarely performed: create an account containing considerably more data than your largest real customer, and use the product.
 
-Generate a realistic volume — if the biggest account has 5,000 records, make one with 100,000 — and then click through every page yourself, timing them. The problems announce themselves immediately, and you will typically find that three or four pages account for all of the slowness.
+Generate a realistic volume - if the biggest account has 5,000 records, make one with 100,000 - and then click through every page yourself, timing them. The problems announce themselves immediately, and you will typically find that three or four pages account for all of the slowness.
 
 Then look from the database's side. Every managed database exposes a slow query log, and reading the top ten queries by total time tells you where the work is going. Almost always a small number of queries dominate, and fixing the top three transforms the product.
 
-Two habits keep this from regressing. Measure the response time of your main pages routinely, at a high percentile rather than an average — the average is dominated by small accounts and hides exactly the customer you care about. And when a customer says the product is slow, ask which page and check that page for that account, since slowness is usually specific rather than general.
+Two habits keep this from regressing. Measure the response time of your main pages routinely, at a high percentile rather than an average - the average is dominated by small accounts and hides exactly the customer you care about. And when a customer says the product is slow, ask which page and check that page for that account, since slowness is usually specific rather than general.
 
 ## Fix the Cause, Not the Symptom
 
-When something is slow, the tempting remedies — a bigger database, a cache in front of it — treat the symptom and postpone the diagnosis.
+When something is slow, the tempting remedies - a bigger database, a cache in front of it - treat the symptom and postpone the diagnosis.
 
 The order that works: **find the actual slow query**, using the database's own tools rather than guessing; **understand why it is slow**, which for most cases means a missing index or a query pattern that fetches far more than needed; **fix it directly**, with an index, a restructured query, or pagination. Only then consider caching, and only for genuinely expensive computations that cannot be made cheap.
 
-Caching deserves that caution because it introduces its own class of problem — stale data, invalidation, and bugs that appear only for some customers — and applied over an unfixed query it hides the issue until the cache misses at the worst moment.
+Caching deserves that caution because it introduces its own class of problem - stale data, invalidation, and bugs that appear only for some customers - and applied over an unfixed query it hides the issue until the cache misses at the worst moment.
 
 Scaling hardware has a similar shape. Increasing database capacity to compensate for a missing index works, costs money every month indefinitely, and stops working at the next threshold. The index is cheaper and permanent.
 
@@ -78,7 +78,7 @@ Preparing for scale you do not have is a genuine waste, and there is a small set
 
 **Do heavy work in the background.** Reports, exports, and imports belong in a job with progress, not in a request.
 
-That list is a day of attention during the build. What it does not require is caching layers, read replicas, sharding, or a queue-based architecture — all of which are legitimate at a scale most products never reach, and all of which cost more to maintain than they return at a hundred customers.
+That list is a day of attention during the build. What it does not require is caching layers, read replicas, sharding, or a queue-based architecture - all of which are legitimate at a scale most products never reach, and all of which cost more to maintain than they return at a hundred customers.
 
 ## Real example
 
@@ -86,14 +86,14 @@ That list is a day of attention during the build. What it does not require is ca
 
 Elif Demir ran Verzuimlijn, an absence-tracking tool for HR departments, built in Bolt. Most customers were companies of 20 to 60 employees, and the product was comfortably fast for all of them.
 
-Her first enterprise account had 1,400 employees and six years of history. Their main overview page took 38 seconds to load and frequently timed out. Three problems compounded: the page fetched all employees and then queried each one's absence records individually — 1,401 queries; there was no pagination, so every employee was returned regardless; and the absence table had no index on the employee reference, so each of those 1,400 queries scanned the whole table.
+Her first enterprise account had 1,400 employees and six years of history. Their main overview page took 38 seconds to load and frequently timed out. Three problems compounded: the page fetched all employees and then queried each one's absence records individually - 1,401 queries; there was no pagination, so every employee was returned regardless; and the absence table had no index on the employee reference, so each of those 1,400 queries scanned the whole table.
 
 The account was also degrading the product for everyone else, since each page load consumed most of the database's capacity for the better part of a minute.
 
 **Result:** the query pattern replaced with two queries fetching employees and their aggregated absence data together, pagination added at 50 per page with search, indexes added on the employee reference and date columns, and dashboard totals precomputed nightly. Load time went from 38 seconds to 400 milliseconds, and general slowness reported by three smaller customers disappeared at the same time.
 
 > "The customer paying me the most had the worst experience of anyone, and every one of the causes had been in the product since the first week."
-> — **Elif Demir, Founder, Verzuimlijn**
+> - **Elif Demir, Founder, Verzuimlijn**
 
 **Cost & Timeline:** performance review and optimisation delivered in 3 business days.
 

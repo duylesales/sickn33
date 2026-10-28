@@ -24,7 +24,7 @@ Een oprichter in Utrecht en een developer in Ho Chi Minh-stad hebben ongeveer tw
 
 Het verschil zit niet in de afstand. Het zit in of het werk goed genoeg was beschreven om zonder u verder te kunnen.
 
-Die vaardigheid is het ontwikkelen hoe dan ook waard, omdat het dezelfde vaardigheid is die een AI-agent productief maakt — een precieze beschrijving, expliciete grenzen, en een manier om te controleren — en een oprichter die haar voor het een heeft geleerd, krijgt het ander gratis.
+Die vaardigheid is het ontwikkelen hoe dan ook waard, omdat het dezelfde vaardigheid is die een AI-agent productief maakt - een precieze beschrijving, expliciete grenzen, en een manier om te controleren - en een oprichter die haar voor het een heeft geleerd, krijgt het ander gratis.
 
 ## Beschrijf Werk Zo Dat Het Zonder U Verder Kan
 
@@ -66,7 +66,7 @@ Eén artefact betaalt de moeite meer terug dan welk ander ook: het afsprakenbest
 
 Het ritme dat werkt: zij ronden een stuk werk af en leveren het in vóór hun avond. U reviewt het in uw ochtend, wat hun nacht is. Uw opmerkingen liggen klaar wanneer zij beginnen.
 
-Dat geeft één volledige cyclus per dag, betrouwbaar, en dat is genoeg voor gestage voortgang. Wat het breekt, is een review die blijft liggen — een wijziging die maandagavond is ingeleverd en woensdag wordt gereviewd, kost twee dagen voor niets.
+Dat geeft één volledige cyclus per dag, betrouwbaar, en dat is genoeg voor gestage voortgang. Wat het breekt, is een review die blijft liggen - een wijziging die maandagavond is ingeleverd en woensdag wordt gereviewd, kost twee dagen voor niets.
 
 Maak reviewen dus een ochtendgewoonte in plaats van een taak die met al het andere concurreert. Twintig minuten, als eerste, voordat de dag volloopt.
 
@@ -74,7 +74,7 @@ Maak reviewen dus een ochtendgewoonte in plaats van een taak die met al het ande
 
 De kosten van vastzitten zijn ongelijk over tijdzones. Een vraag die op kantoor in dertig seconden is beantwoord, kost een werkdag.
 
-Twee praktijken verminderen dit aanzienlijk. Vraag de developer bij een blokkade door te gaan op zijn beste inschatting en de aanname vast te leggen, in plaats van te stoppen — een verkeerde aanname kost een uur om te corrigeren, wachten kost een dag. En houd een korte lijst bij van wat er komt, zodat een geblokkeerde taak opzij wordt gelegd voor iets anders in plaats van stilstand te worden.
+Twee praktijken verminderen dit aanzienlijk. Vraag de developer bij een blokkade door te gaan op zijn beste inschatting en de aanname vast te leggen, in plaats van te stoppen - een verkeerde aanname kost een uur om te corrigeren, wachten kost een dag. En houd een korte lijst bij van wat er komt, zodat een geblokkeerde taak opzij wordt gelegd voor iets anders in plaats van stilstand te worden.
 
 En beantwoord vragen wanneer ze binnenkomen in plaats van op een handig moment. Een vraag die om tien uur 's avonds wordt beantwoord, is een teruggewonnen dag.
 
@@ -94,7 +94,7 @@ Het praktische antwoord is bewust verdelen: gedefinieerd implementatiewerk op af
 
 ## Vertrouwen Ontstaat Door Structuur, Niet Door Toezicht
 
-Oprichters die nieuw zijn in samenwerking op afstand, grijpen vaak naar toezicht: schermopnames, urenregistratie per uur, frequente check-ins. Het is begrijpelijk en het levert de slechtste versie van de regeling op — een developer die zich bekeken voelt, een oprichter die zijn dag aan toezicht besteedt, en geen verbetering in output.
+Oprichters die nieuw zijn in samenwerking op afstand, grijpen vaak naar toezicht: schermopnames, urenregistratie per uur, frequente check-ins. Het is begrijpelijk en het levert de slechtste versie van de regeling op - een developer die zich bekeken voelt, een oprichter die zijn dag aan toezicht besteedt, en geen verbetering in output.
 
 Wat vertrouwen geeft, is zichtbare voortgang in plaats van zichtbare activiteit.
 
@@ -114,7 +114,7 @@ Het argument om mee te eindigen: alles in dit artikel is ook hoe u goede resulta
 
 Een precieze uitkomst. De context waarmee bij een onduidelijkheid een verstandige beslissing kan worden genomen. Expliciete grenzen over wat niet mag veranderen. Een manier om te controleren. Geschreven afspraken die het werk moet volgen. Kleine, reviewbare stukken in plaats van grote. Een reviewgewoonte die de lus binnen één cyclus sluit.
 
-Die lijst geldt zonder aanpassing voor een developer acht tijdzones verderop en voor een agent die op uw eigen machine draait. Het is de vaardigheid om werk te specificeren voor iemand die niet in de kamer is — en het is steeds meer de centrale vaardigheid van software bouwen op deze manier.
+Die lijst geldt zonder aanpassing voor een developer acht tijdzones verderop en voor een agent die op uw eigen machine draait. Het is de vaardigheid om werk te specificeren voor iemand die niet in de kamer is - en het is steeds meer de centrale vaardigheid van software bouwen op deze manier.
 
 Dat suggereert een praktische volgorde voor een oprichter die niet technisch is: leer het eerst met de AI-tools, waar de cyclus minuten duurt in plaats van een dag en een slecht beschreven taak een verspilde prompt kost. Pas het daarna toe op mensen, waar dezelfde discipline aanzienlijk meer waard is.
 
@@ -126,7 +126,7 @@ Het is ook in de andere richting een overdraagbare vaardigheid: oprichters die g
 
 Voor een oprichter die met een developer op afstand werkt: taken beschreven met uitkomst, context, grenzen en vooraf beantwoorde vragen; de overlap gereserveerd voor beslissingen en demonstraties met een kort dagelijks gesprek; al het andere geschreven, inclusief een dagelijkse update van gedaan, volgende en vast; een afsprakenbestand zodat werk op afstand bij de codebase past; reviewen als ochtendgewoonte binnen één cyclus; een vaste instructie om door te gaan op vastgelegde aannames in plaats van te wachten; en een zichtbare lijst van wat er komt, zodat geblokkeerde tijd nooit stilstand is.
 
-LaunchStudio werkt precies zo — klantcontact in Amsterdam, engineering in Ho Chi Minh-stad — wat de opzet van Manifera is over elf jaar en 160+ projecten, voor klanten waaronder Vodafone, TNO en CFLW.
+LaunchStudio werkt precies zo - klantcontact in Amsterdam, engineering in Ho Chi Minh-stad - wat de opzet van Manifera is over elf jaar en 160+ projecten, voor klanten waaronder Vodafone, TNO en CFLW.
 
 [Vraag ons hoe een week met ons er echt uitziet](https://launchstudio.eu/nl/#contact).
 
@@ -142,12 +142,12 @@ Haar taken waren elk één regel: "voeg de deelnemersexport toe", "los de bug me
 
 Twee werkdagen om te veranderen hoe het werk werd beschreven, met dezelfde developer: taken herschreven met de uitkomst, de context van welke klant erom vroeg en waarom, expliciete grenzen over wat niet mocht veranderen, en antwoorden op de vragen die ze kon voorzien; elke dag een gesprek van vijftien minuten aan het begin van zijn dag; een geschreven dagelijkse update van gedaan, volgende en vast; een vaste instructie om bij een blokkade door te gaan op een vastgelegde aanname in plaats van te stoppen; een zichtbare lijst met de volgende vijf taken zodat een blokkade nooit stilstand opleverde; een afsprakenbestand geschreven op basis van de bestaande code; en het reviewen verplaatst naar twintig minuten als eerste in haar ochtend.
 
-**Resultaat:** in de drie weken daarna werden elf functies afgerond, met dezelfde developer tegen hetzelfde tarief. Sylvia's oordeel is dat er aan hem niets veranderde — aan haar beschrijvingen wel. Ze merkt ook op dat dezelfde discipline haar eigen gebruik van AI-tools merkbaar effectiever maakte, omdat het dezelfde vaardigheid bleek te zijn.
+**Resultaat:** in de drie weken daarna werden elf functies afgerond, met dezelfde developer tegen hetzelfde tarief. Sylvia's oordeel is dat er aan hem niets veranderde - aan haar beschrijvingen wel. Ze merkt ook op dat dezelfde discipline haar eigen gebruik van AI-tools merkbaar effectiever maakte, omdat het dezelfde vaardigheid bleek te zijn.
 
 > *"Ik schreef taken van één regel en verloor een dag aan elke vraag. Drie weken, vier functies. Toen begon ik een alinea te schrijven in plaats van een regel, en de drie weken daarna leverden er elf op."*
-> — **Sylvia Grimberg, Oprichter, Evenementplanner (Utrecht)**
+> - **Sylvia Grimberg, Oprichter, Evenementplanner (Utrecht)**
 
-**Kosten & Doorlooptijd:** €1.800 (raamwerk voor taakbeschrijvingen, afsprakenbestand op basis van bestaande code, structuur voor dagelijkse geschreven update en gesprek, praktijk voor het vastleggen van aannames, reviewritme) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €1.800 (raamwerk voor taakbeschrijvingen, afsprakenbestand op basis van bestaande code, structuur voor dagelijkse geschreven update en gesprek, praktijk voor het vastleggen van aannames, reviewritme) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -189,7 +189,7 @@ Een afsprakenbestand dat beschrijft hoe de codebase werkt. Werk op afstand past 
       "name": "Waarvoor moeten overlappende uren worden gebruikt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beslissingen, demonstraties en moeilijke gesprekken — nooit statusupdates of iets wat had kunnen worden opgeschreven."
+        "text": "Beslissingen, demonstraties en moeilijke gesprekken - nooit statusupdates of iets wat had kunnen worden opgeschreven."
       }
     },
     {

@@ -98,7 +98,7 @@ Because marketplaces are such an important part of the Vilnius ecosystem, it is 
 
 **Search and ranking.** Users search in many languages with short, ambiguous queries. Ranking models must balance relevance, freshness, seller quality, price and personalisation, and they are evaluated through offline metrics and online experiments.
 
-**Recommendations.** Homepage feeds, "similar items" and notifications rely on recommendation systems that combine collaborative filtering, content understanding and user behaviour. Cold start — new users and new items — is a constant challenge in marketplaces with many unique second-hand items.
+**Recommendations.** Homepage feeds, "similar items" and notifications rely on recommendation systems that combine collaborative filtering, content understanding and user behaviour. Cold start - new users and new items - is a constant challenge in marketplaces with many unique second-hand items.
 
 **Image and text understanding.** Listings include photos and short descriptions written by ordinary users. Computer vision and language models extract categories, brands, colours, sizes and conditions, and detect prohibited items.
 
@@ -146,7 +146,7 @@ Kaunas, Lithuania's second-largest city, is about an hour from Vilnius by car or
 
 ## Preparing for Interviews
 
-Interviews at Vilnius product companies usually include a technical screen, a coding or ML exercise, a system design discussion — for example designing a recommendation or fraud detection system — and conversations about past projects and collaboration. Prepare to discuss experiments you ran, how you chose metrics and what you learned when results were surprising. Product companies value engineers who think about user impact, not only model accuracy.
+Interviews at Vilnius product companies usually include a technical screen, a coding or ML exercise, a system design discussion - for example designing a recommendation or fraud detection system - and conversations about past projects and collaboration. Prepare to discuss experiments you ran, how you chose metrics and what you learned when results were surprising. Product companies value engineers who think about user impact, not only model accuracy.
 
 ## Remote and Hybrid Work
 
@@ -162,7 +162,7 @@ Visit Vilnius in winter if you can, meet the team in person and speak with an en
 
 A search and ranking engineer at a Polish e-commerce company receives an offer from a Vilnius marketplace to work on ranking models serving several European countries. The salary is somewhat higher, and the company offers equity and relocation support.
 
-Before accepting, he checks the team's scope — whether he would own ranking models end to end or implement changes designed elsewhere — and the company's experimentation culture. He also visits Vilnius, compares rents near the office and learns that the team works entirely in English. Satisfied, he accepts. In his first year, he leads experiments on multilingual query understanding, work that draws directly on the marketplace's international user base. He finds the city compact and easy to live in, though he notes that winters are long and dark — something to prepare for.
+Before accepting, he checks the team's scope - whether he would own ranking models end to end or implement changes designed elsewhere - and the company's experimentation culture. He also visits Vilnius, compares rents near the office and learns that the team works entirely in English. Satisfied, he accepts. In his first year, he leads experiments on multilingual query understanding, work that draws directly on the marketplace's international user base. He finds the city compact and easy to live in, though he notes that winters are long and dark - something to prepare for.
 
 ## Key Takeaways
 

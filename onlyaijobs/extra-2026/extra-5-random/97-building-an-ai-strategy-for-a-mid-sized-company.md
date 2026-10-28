@@ -52,7 +52,7 @@ Then pick two. Not eight.
 
 Before committing to a candidate problem, test it against five questions.
 
-**Does the data exist?** Not in principle — in a system, with history, retrievable. Check by extracting it rather than by asking.
+**Does the data exist?** Not in principle - in a system, with history, retrievable. Check by extracting it rather than by asking.
 
 **Is there enough history?** Seasonal problems need several years; rare events need many occurrences.
 
@@ -70,7 +70,7 @@ An honest inventory takes a few days and prevents most disappointment.
 
 **Systems.** List the systems that hold operational data: the enterprise resource planning system, the manufacturing or service platform, the customer relationship system, the finance ledger, spreadsheets that people rely on. Note who administers each and whether data can be extracted without disrupting operations.
 
-**History.** For each, how far back does usable data go, and what happened in between — migrations, reorganisations, definition changes.
+**History.** For each, how far back does usable data go, and what happened in between - migrations, reorganisations, definition changes.
 
 **Quality.** Rather than asking, test. Pull a sample, count the rows, check whether identifiers are unique, look at null rates, and try to reconcile one figure against something the business publishes. Failing to reconcile is informative.
 
@@ -100,7 +100,7 @@ The sequence that works for most mid-sized companies is to partner or use a stud
 
 Projects fail on resourcing more often than on technology, and the gaps are predictable.
 
-**Someone must own the outcome.** Not the project — the outcome. A named person in the business who wants the result, will act on it, and will defend the work when priorities shift. Projects without this die quietly.
+**Someone must own the outcome.** Not the project - the outcome. A named person in the business who wants the result, will act on it, and will defend the work when priorities shift. Projects without this die quietly.
 
 **Someone must own the system afterwards.** Whoever builds it, somebody internally must be able to operate it, check it and fix it. If nobody can, you have bought a dependency rather than a capability.
 
@@ -168,11 +168,11 @@ For a first hire, prefer breadth over specialism. Someone who can obtain data, b
 
 Set them up properly: a sponsor, a defined first project, access arranged before the start date, a budget for tooling and development, and a plan to hire a second person within two years so the capability does not rest on one individual.
 
-Be realistic about competition. You are unlikely to outbid technology companies on salary, and you do not need to. Regional employers hire successfully by offering ownership, proximity, stability and genuine flexibility — and by being findable at all.
+Be realistic about competition. You are unlikely to outbid technology companies on salary, and you do not need to. Regional employers hire successfully by offering ownership, proximity, stability and genuine flexibility - and by being findable at all.
 
 ## How OnlyAIJobs Fits a First Hire
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position — a clearly written vacancy from an unknown manufacturer sits alongside one from a recognised name.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position - a clearly written vacancy from an unknown manufacturer sits alongside one from a recognised name.
 
 Listings show the exact address and the distance from the candidate's home, which surfaces regional employers to people who would otherwise search only by city. That is the problem the platform was built to address, after an observation in Noord-Brabant that people were leaving for the Randstad without knowing which local companies were doing this work.
 
@@ -188,7 +188,7 @@ The answers were specific. Production planning was uncertain about demand for tw
 
 They tested each against data. Demand history existed and was good. Quality data existed but the defect was recorded inconsistently by shift. Customer order history existed and was clean.
 
-They chose demand forecasting and customer drift, and deferred quality until the recording was fixed — which a supervisor did in three weeks once someone explained why it mattered.
+They chose demand forecasting and customer drift, and deferred quality until the recording was fixed - which a supervisor did in three weeks once someone explained why it mattered.
 
 Both projects delivered within a year. The managing director's reflection was that the strategy document ran to two pages and that the six months of asking questions had been the strategy.
 

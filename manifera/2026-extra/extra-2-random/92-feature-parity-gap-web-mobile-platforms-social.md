@@ -1,4 +1,4 @@
-🚨 A marketing email announced the new dashboard to the whole customer base. Support spent 3 days explaining it didn't actually exist in the mobile app yet — nobody had told marketing that first. 📱⚙️
+🚨 A marketing email announced the new dashboard to the whole customer base. Support spent 3 days explaining it didn't actually exist in the mobile app yet - nobody had told marketing that first. 📱⚙️
 
 **The Pain Points:**
 ❌ **No Shared Visibility:** Engineering and marketing have no single source of truth on what exists where.
@@ -10,7 +10,7 @@
 ✅ **Mandatory Sign-Off Before Campaigns:** No launch built around a feature that isn't actually everywhere.
 ✅ **Fast-Tracked Parity for Marketed Features:** The highest-visibility gaps closed first.
 
-Protect marketing credibility and customer trust — at the same time. 🛡️
+Protect marketing credibility and customer trust - at the same time. 🛡️
 
 👉 Read our full deep dive on feature parity gap web mobile platforms: https://www.manifera.com/blog/feature-parity-gap-web-mobile-platforms
 

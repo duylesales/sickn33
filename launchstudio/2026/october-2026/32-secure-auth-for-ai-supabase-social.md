@@ -1,4 +1,4 @@
-🔥 Lucas built a prototype using **Supabase** — lucas, a technical solo founder in utrecht, built an ai-powered crm for local dental clinics using next, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Lucas built a prototype using **Supabase** - lucas, a technical solo founder in utrecht, built an ai-powered crm for local dental clinics using next, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lucas's application achieved production readiness: The app was re-launched safely in 6 days. Because the security was now enforced at the database level, it was physically impossible for a frontend bug to leak cross-clinic data. Lucas passed a strict data-privacy audit and scaled to 15 clinics, hitting €3,000 MRR. I thought Supabase Auth meant my app was secure. LaunchStudio showed me that the login screen is just the beginning. They saved me from a career-ending data breach. (€2,500 (Launch Ready Supabase Hardening package) — completed in 6 business days.). 🚀
+Lucas's application achieved production readiness: The app was re-launched safely in 6 days. Because the security was now enforced at the database level, it was physically impossible for a frontend bug to leak cross-clinic data. Lucas passed a strict data-privacy audit and scaled to 15 clinics, hitting €3,000 MRR. I thought Supabase Auth meant my app was secure. LaunchStudio showed me that the login screen is just the beginning. They saved me from a career-ending data breach. (€2,500 (Launch Ready Supabase Hardening package) - completed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/secure-auth-for-ai-supabase
 

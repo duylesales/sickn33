@@ -35,19 +35,19 @@ Content Format: Career Guide
 }
 </script>
 
-A career switch to AI or data work after forty often raises the worry that age itself is an obstacle. In practice, that's too crude a question — what really counts lies in more specific things you can influence yourself.
+A career switch to AI or data work after forty often raises the worry that age itself is an obstacle. In practice, that's too crude a question - what really counts lies in more specific things you can influence yourself.
 
 ## What Actually Counts in a Later Career Switch
 
 **Demonstrable, recent technical practice.** An employer wants to know whether your skills are current, not how long ago you studied at university. Recent projects, however small, weigh more heavily than an old degree.
 
-**Domain knowledge from your previous career as a complement, not an excuse.** Experience in, for example, finance, healthcare or industry can be a real advantage for data science work in that same sector — but only if you connect that knowledge explicitly to the new field, not as a substitute for technical skill.
+**Domain knowledge from your previous career as a complement, not an excuse.** Experience in, for example, finance, healthcare or industry can be a real advantage for data science work in that same sector - but only if you connect that knowledge explicitly to the new field, not as a substitute for technical skill.
 
-**Realistic expectations about entry level.** Switching to a junior position after a long career in another field is normal, not failure — it's a reset of your technical level, not of your entire professional value.
+**Realistic expectations about entry level.** Switching to a junior position after a long career in another field is normal, not failure - it's a reset of your technical level, not of your entire professional value.
 
 ## What Is an Unfounded Worry
 
-Age itself is rarely the actual reason for rejection, even though it is often experienced that way. More often the cause is an unclear link between your previous experience and the new role, or outdated rather than recent technical skills — both of which can be fixed.
+Age itself is rarely the actual reason for rejection, even though it is often experienced that way. More often the cause is an unclear link between your previous experience and the new role, or outdated rather than recent technical skills - both of which can be fixed.
 
 ## Your Rights: Age Discrimination Rules in the Netherlands
 
@@ -57,34 +57,34 @@ It helps to know the legal framework, not to fight every rejection, but to recog
 
 **Netherlands Institute for Human Rights.** If you believe you were rejected because of your age, you can ask the Institute for an opinion. Its judgments aren't binding, but employers usually take them seriously, and they provide guidance on what is and isn't acceptable.
 
-**Recruitment practice.** The NVP Recruitment Code, used by many Dutch employers, stresses fair and transparent selection. And under the **EU Artificial Intelligence Act**, AI systems used in recruitment are classified as high-risk, with requirements around bias and human oversight — relevant now that CV screening is increasingly automated.
+**Recruitment practice.** The NVP Recruitment Code, used by many Dutch employers, stresses fair and transparent selection. And under the **EU Artificial Intelligence Act**, AI systems used in recruitment are classified as high-risk, with requirements around bias and human oversight - relevant now that CV screening is increasingly automated.
 
 Knowing these rules is mainly useful for perspective: in most rejections, the reasons are the practical ones described in this article, not unlawful discrimination.
 
 ## A Deeper Look at Why "Recent" Weighs More Than "Total Years"
 
-An employer reviewing a CV looks less at how many years of work experience you have in total, and more at what you have done in the past twelve to eighteen months to build relevant skills. That isn't an unfair yardstick — it simply reflects that technical skills become outdated faster than professional experience in general.
+An employer reviewing a CV looks less at how many years of work experience you have in total, and more at what you have done in the past twelve to eighteen months to build relevant skills. That isn't an unfair yardstick - it simply reflects that technical skills become outdated faster than professional experience in general.
 
 ## Comparison Table: What Does and Doesn't Count in a Later Career Switch
 
 | Factor | Weighs heavily | Weighs less than expected |
 |---|---|---|
-| Recent, demonstrable projects | Yes | — |
-| Total years of work experience (in another field) | — | Yes, less than expected |
-| Domain knowledge linked to a specific sector | Yes, as a complement | — |
-| Age itself | — | Rarely the actual reason for rejection |
+| Recent, demonstrable projects | Yes | - |
+| Total years of work experience (in another field) | - | Yes, less than expected |
+| Domain knowledge linked to a specific sector | Yes, as a complement | - |
+| Age itself | - | Rarely the actual reason for rejection |
 
 ## Why the First Round of Applications Is Often the Hardest
 
-Once you have gained one relevant work experience after your switch, your CV changes from "someone switching careers" to "someone with AI/data experience, plus an interesting background in another field" — a considerably stronger position for every subsequent application. The biggest threshold is that very first step, not the years that follow.
+Once you have gained one relevant work experience after your switch, your CV changes from "someone switching careers" to "someone with AI/data experience, plus an interesting background in another field" - a considerably stronger position for every subsequent application. The biggest threshold is that very first step, not the years that follow.
 
 ## Which Previous Careers Connect Best to AI and Data Work
 
-Backgrounds with a quantitative component form the strongest base. People from finance, actuarial work, logistics planning or a technical discipline often already have a working intuition for reasoning with numbers, uncertainty and models — exactly the mindset that is hardest to learn for those without it. Additional training then focuses mainly on specific techniques and tools, which goes much faster than developing the underlying mindset.
+Backgrounds with a quantitative component form the strongest base. People from finance, actuarial work, logistics planning or a technical discipline often already have a working intuition for reasoning with numbers, uncertainty and models - exactly the mindset that is hardest to learn for those without it. Additional training then focuses mainly on specific techniques and tools, which goes much faster than developing the underlying mindset.
 
 Backgrounds with deep domain knowledge in a sector where data work happens form a second strong category. Someone who has worked for fifteen years in healthcare, food or manufacturing understands processes, terminology and organisational dynamics that take a technically trained outsider months to learn.
 
-Backgrounds without a quantitative component and without relevant domain knowledge form the hardest starting position, and it is more honest to say so than to suggest every switch is equally feasible. For this group, the investment is larger and the path longer — realistic planning assumes years rather than months.
+Backgrounds without a quantitative component and without relevant domain knowledge form the hardest starting position, and it is more honest to say so than to suggest every switch is equally feasible. For this group, the investment is larger and the path longer - realistic planning assumes years rather than months.
 
 ## Named Routes for Retraining in the Netherlands
 
@@ -100,7 +100,7 @@ Several concrete options make learning alongside a job more feasible:
 
 For most people making this switch later in life, stopping work to study full-time isn't financially possible. The most effective pattern is consistency over intensity: a few hours a week for two years yields far more than an intensive three-month burst followed by standstill.
 
-Where possible, connect your learning path to your current work. Many organisations have data that isn't analysed and questions that aren't asked, and an employee who offers to look into them often gets room to do so. That delivers practical experience with real, messy data and a demonstrable result within an organisation you already know — exactly the kind of evidence that weighs most heavily.
+Where possible, connect your learning path to your current work. Many organisations have data that isn't analysed and questions that aren't asked, and an employee who offers to look into them often gets room to do so. That delivers practical experience with real, messy data and a demonstrable result within an organisation you already know - exactly the kind of evidence that weighs most heavily.
 
 The third component is contact with people already doing the work. It corrects a picture of the field that would otherwise be based entirely on course material and vacancy texts.
 
@@ -114,19 +114,19 @@ Address the first by stating explicitly and plainly that you understand the leve
 
 In the short term, the switch means a step back in salary and seniority for most people, sometimes substantially. That is the real price of the switch, and it is better to accept it beforehand than be surprised halfway.
 
-In the medium term — usually two to four years — most people who switch successfully catch up with their previous position, often faster than a beginner without earlier career experience, precisely because professional skills from the previous career have real value once the technical foundation is in place.
+In the medium term - usually two to four years - most people who switch successfully catch up with their previous position, often faster than a beginner without earlier career experience, precisely because professional skills from the previous career have real value once the technical foundation is in place.
 
 In the longer term, the combination of domain knowledge and technical skill is often more valuable than either alone, and many people who took this route end up in roles at the intersection, where their earlier career is the reason they perform the role better than someone with only a technical background.
 
 ## Which Segments of the Dutch Market Are Most Accessible to Career Switchers
 
-The most accessible segments are those where domain knowledge weighs heavily and competition from candidates with formal technical education is least intense — applied data work in industrial, logistics, agricultural and insurance contexts. A career switcher with fifteen years of logistics experience who builds basic data analysis skills is often more attractive to a regional distribution company than a newly graduated data scientist without sector knowledge.
+The most accessible segments are those where domain knowledge weighs heavily and competition from candidates with formal technical education is least intense - applied data work in industrial, logistics, agricultural and insurance contexts. A career switcher with fifteen years of logistics experience who builds basic data analysis skills is often more attractive to a regional distribution company than a newly graduated data scientist without sector knowledge.
 
 The least accessible segments are research positions and specialised model development roles, where formal training and methodological depth are core requirements.
 
 ## What People Who Made This Switch Say Afterwards
 
-A recurring pattern is that expectations beforehand differ systematically from experience on two points. First, the technical learning curve usually proved less daunting than expected, while accepting a junior position after years of seniority proved harder than thought. Second, previous experience turned out to be relevant more often and sooner than expected — the ability to deal with stakeholders, set priorities under pressure and read organisational dynamics distinguishes them from colleagues who are technically further along.
+A recurring pattern is that expectations beforehand differ systematically from experience on two points. First, the technical learning curve usually proved less daunting than expected, while accepting a junior position after years of seniority proved harder than thought. Second, previous experience turned out to be relevant more often and sooner than expected - the ability to deal with stakeholders, set priorities under pressure and read organisational dynamics distinguishes them from colleagues who are technically further along.
 
 ## A Twelve-Month Plan for Switching Alongside a Job
 
@@ -137,7 +137,7 @@ A recurring pattern is that expectations beforehand differ systematically from e
 | 7–9 | A project inside your current organisation, if possible | A documented result that led to a decision or improvement |
 | 10–12 | Networking and targeted applications | Two or three conversations with practitioners and applications to sector-relevant roles |
 
-A plan like this makes progress visible — to yourself and to future employers — and prevents the common trap of endlessly following courses without producing evidence.
+A plan like this makes progress visible - to yourself and to future employers - and prevents the common trap of endlessly following courses without producing evidence.
 
 ## Key Takeaways
 
@@ -156,16 +156,16 @@ Browse current junior and entry-friendly AI, machine learning and data jobs in t
 ## Frequently Asked Questions
 
 ### (Scenario: professional afraid age is an obstacle) Is age really an obstacle when switching to AI work?
-Rarely the actual reason for rejection — more often the cause is an unclear link between previous experience and the new role, or outdated technical skills.
+Rarely the actual reason for rejection - more often the cause is an unclear link between previous experience and the new role, or outdated technical skills.
 
 ### (Scenario: professional wondering whether old experience still counts) Does my experience from a previous career still count?
-Yes, as a complement — domain knowledge from, for example, finance or healthcare can be a real advantage for data science work in that sector, provided it is explicitly linked to the new field.
+Yes, as a complement - domain knowledge from, for example, finance or healthcare can be a real advantage for data science work in that sector, provided it is explicitly linked to the new field.
 
 ### (Scenario: professional unsure about entry level) Do I have to accept starting at junior level after a long career elsewhere?
-Often, yes, and that's normal — it's a reset of your technical level, not of your entire professional value.
+Often, yes, and that's normal - it's a reset of your technical level, not of your entire professional value.
 
 ### (Scenario: professional unsure what to show in an application) What should I show to prove my technical skills are current?
-Recent, demonstrable projects, however small — they weigh more heavily than training from the past.
+Recent, demonstrable projects, however small - they weigh more heavily than training from the past.
 
 ### (Scenario: professional wondering whether it's worth it) Is a career switch to AI work after forty worth it?
 That depends on your personal situation, but the obstacles are more often practical (recent skills, a clear link to previous experience) than a matter of age itself.
@@ -175,9 +175,9 @@ That depends on your personal situation, but the obstacles are more often practi
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is age really an obstacle when switching to AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely the actual reason for rejection — more often an unclear link with previous experience or outdated skills."}},
-    {"@type": "Question", "name": "Does my experience from a previous career still count?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, as a complement — domain knowledge can be a real advantage, provided it is explicitly linked to the new field."}},
-    {"@type": "Question", "name": "Do I have to accept starting at junior level after a long career elsewhere?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes — it's a reset of your technical level, not of your entire professional value."}},
+    {"@type": "Question", "name": "Is age really an obstacle when switching to AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely the actual reason for rejection - more often an unclear link with previous experience or outdated skills."}},
+    {"@type": "Question", "name": "Does my experience from a previous career still count?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, as a complement - domain knowledge can be a real advantage, provided it is explicitly linked to the new field."}},
+    {"@type": "Question", "name": "Do I have to accept starting at junior level after a long career elsewhere?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes - it's a reset of your technical level, not of your entire professional value."}},
     {"@type": "Question", "name": "What should I show to prove my technical skills are current?", "acceptedAnswer": {"@type": "Answer", "text": "Recent, demonstrable projects weigh more heavily than training from the past."}},
     {"@type": "Question", "name": "Is a career switch to AI work after forty worth it?", "acceptedAnswer": {"@type": "Answer", "text": "The obstacles are more often practical than a matter of age itself."}}
   ]

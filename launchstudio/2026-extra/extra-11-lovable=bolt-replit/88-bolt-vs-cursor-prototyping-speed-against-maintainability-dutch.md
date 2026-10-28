@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Bolt vs Cursor: Prototypeersnelheid versus Onderhoudbaarheid",
-  "description": "De ene tool bouwt een werkende applicatie op basis van een tekstuele beschrijving; de andere helpt je doelgericht wijzigingen aan te brengen in een bestaande codebase. Ze lossen wezenlijk andere problemen op, en de meeste producten hebben beide nodig — in een heel specifieke volgorde.",
+  "description": "De ene tool bouwt een werkende applicatie op basis van een tekstuele beschrijving; de andere helpt je doelgericht wijzigingen aan te brengen in een bestaande codebase. Ze lossen wezenlijk andere problemen op, en de meeste producten hebben beide nodig - in een heel specifieke volgorde.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-08-29",
@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
 
 Wie deze twee tools vergelijkt als directe concurrenten, trekt vrijwel altijd de verkeerde conclusie. Ze lossen namelijk een fundamenteel ander probleem op. De ene verandert een prompt in een complete, functionerende webapplicatie. De andere helpt een ontwikkelaar om weloverwogen wijzigingen aan te brengen in een codebase die al bestaat.
 
-De werkelijk relevante vraag is niet welke tool 'beter' is. De vraag is: in welke fase bevindt jouw product zich, en wat vraagt de komende maand — een applicatie die simpelweg bestaat om een idee te valideren, of een codebase die veilig kan worden aangepast door iemand die hem niet zelf heeft geschreven?
+De werkelijk relevante vraag is niet welke tool 'beter' is. De vraag is: in welke fase bevindt jouw product zich, en wat vraagt de komende maand - een applicatie die simpelweg bestaat om een idee te valideren, of een codebase die veilig kan worden aangepast door iemand die hem niet zelf heeft geschreven?
 
 ## Waarin elk uitblinkt
 
@@ -30,7 +30,7 @@ De werkelijk relevante vraag is niet welke tool 'beter' is. De vraag is: in welk
 
 **Cursor is redactioneel.** Het functioneert binnen een bestaande, lokale codebase met diepgaand contextueel begrip van al je projectbestanden. Het helpt je om gerichte, chirurgische aanpassingen door te voeren: refactor deze specifieke module, licht die databasequery toe, pas dit patroon toe over tien verschillende bestanden, of zoek uit waar deze configuratiewaarde vandaan komt. De eenheid van werk is een gecontroleerde verandering aan iets wat reeds bestaat, niet het genereren van een compleet nieuw universum.
 
-Beide tools maken gebruik van dezelfde geavanceerde AI-modellen onder de motorkap. Het verschil zit in waar je ze op richt — en dat bepaalt welke tool jou vandaag verder helpt.
+Beide tools maken gebruik van dezelfde geavanceerde AI-modellen onder de motorkap. Het verschil zit in waar je ze op richt - en dat bepaalt welke tool jou vandaag verder helpt.
 
 ## De fase van je product
 
@@ -56,7 +56,7 @@ Niet omdat de gegenereerde code inherent slecht is, maar vanwege wat er stelselm
 
 **Beslissingen die niemand kan verklaren.** Waarom werkt de autorisatie zo? Omdat een promptsessie in maart dat toevallig genereerde, zonder dat iemand er bewust voor koos.
 
-Geen van deze tekortkomingen verhindert dat een prototype prima werkt. Ze zorgen er wel voor dat elke volgende feature twee keer zoveel tijd kost als de vorige — wat de letterlijke definitie is van technische schuld.
+Geen van deze tekortkomingen verhindert dat een prototype prima werkt. Ze zorgen er wel voor dat elke volgende feature twee keer zoveel tijd kost als de vorige - wat de letterlijke definitie is van technische schuld.
 
 ## De redactionele tool gebruiken om dit op te lossen
 
@@ -70,7 +70,7 @@ Twee gewoontes maken dit succesvol: Voed de editor met projectregels (`.cursorru
 
 Het is essentieel om dit helder te hebben, want hier gaan softwareprojecten in de praktijk onderuit:
 
-Geen van beide tools observeert je applicatie terwijl deze live draait. Geen van beide weet welke klantdata privacygevoelig is, welke contractuele SLA's je bent overeengekomen met enterprise-klanten, of wat er moet gebeuren als een automatische incasso om drie uur 's nachts mislukt. Geen van beide waarschuwt je dat je live database geen automatische back-ups heeft, dat een geplande cron-taak sinds vorige maand stilletjes crasht, of dat er een geheime API-key rondslingert in de frontend-bundel — tenzij je er expliciet naar vraagt. En je vraagt er alleen naar als je het probleem al vermoedt.
+Geen van beide tools observeert je applicatie terwijl deze live draait. Geen van beide weet welke klantdata privacygevoelig is, welke contractuele SLA's je bent overeengekomen met enterprise-klanten, of wat er moet gebeuren als een automatische incasso om drie uur 's nachts mislukt. Geen van beide waarschuwt je dat je live database geen automatische back-ups heeft, dat een geplande cron-taak sinds vorige maand stilletjes crasht, of dat er een geheime API-key rondslingert in de frontend-bundel - tenzij je er expliciet naar vraagt. En je vraagt er alleen naar als je het probleem al vermoedt.
 
 Dat vormt de operationele en bedrijfskritische kant van softwareontwikkeling. Die ontbreekt structureel in prototypes, ongeacht welke AI-tool je gebruikt hebt om ze te bouwen.
 
@@ -80,7 +80,7 @@ Dat vormt de operationele en bedrijfskritische kant van softwareontwikkeling. Di
 
 **2. Besluit of het idee levensvatbaar is.** De meeste ideeën moeten direct worden geschrapt; de taak van het prototype is om je dat zo goedkoop mogelijk te vertellen.
 
-**3. Maak het onderhoudbaar.** Consolideer dubbele logica, haal instellingen uit de code, voeg unit tests toe rondom cruciale berekeningen en breng structuur aan. Dit is waar Cursor schittert — een kwestie van een paar dagen geconcentreerd werk, geen complete herbouw.
+**3. Maak het onderhoudbaar.** Consolideer dubbele logica, haal instellingen uit de code, voeg unit tests toe rondom cruciale berekeningen en breng structuur aan. Dit is waar Cursor schittert - een kwestie van een paar dagen geconcentreerd werk, geen complete herbouw.
 
 **4. Maak het veilig en schaalbaar.** Autorisatieregels (RLS), secretsbeheer, data-integriteit, betrouwbare hosting, monitoring en geteste back-ups. De laag die geen enkele AI-tool automatisch regelt, precies op het moment dat echte klanten arriveren.
 
@@ -118,18 +118,18 @@ De software engineers zijn van Manifera: elf jaar productie-ervaring en meer dan
 
 Esmée Blankestijn bouwde met Bolt het platform Bandenopslag: een administratiesysteem voor seizoensgebonden bandenopslag voor autobedrijven, in gebruik bij negentien garages in de regio Apeldoorn en Deventer. Klanten slaan winter- en zomerbanden op, garages beheren de opslaglocaties en per set wordt per seizoen een vast tarief gefactureerd.
 
-Het prototype kostte vier dagen en leverde haar direct de eerste zes betalende garages op — precies waarvoor een prototype bedoeld is. Elf maanden later kostte het toevoegen van een eenvoudige nieuwe functie haar echter twee volle weken, en ze begreep niet waarom het plotseling zo moeizaam ging.
+Het prototype kostte vier dagen en leverde haar direct de eerste zes betalende garages op - precies waarvoor een prototype bedoeld is. Elf maanden later kostte het toevoegen van een eenvoudige nieuwe functie haar echter twee volle weken, en ze begreep niet waarom het plotseling zo moeizaam ging.
 
-Tijdens een technische audit kwamen de klassieke oorzaken naar boven. De seizoensopslagvergoeding werd op drie afzonderlijke plekken in de code berekend: op de klantfactuur, in het maandelijkse garage-overzicht en in het exportbestand voor de boekhouding. De drie berekeningen verschilden subtiel zodra bandensets over de seizoensgrens heen bleven liggen, wat al had geleid tot twee onopgeloste facturatieklachten. Tarieven stonden als vaste getallen ingeprogrammeerd in vijf verschillende bestanden, waardoor een tariefswijziging betekende dat alle vijf handmatig moesten worden aangepast (één bestand was al vier maanden vergeten). Er waren geen geautomatiseerde tests, waardoor elke wijziging vereiste dat Esmée handmatig door elf schermen klikte. En de opslagtermijnlogica was twee keer geschreven — één keer met Nederlandse variabelenamen en één keer in het Engels — door twee verschillende promptsessies met drie maanden tussentijd.
+Tijdens een technische audit kwamen de klassieke oorzaken naar boven. De seizoensopslagvergoeding werd op drie afzonderlijke plekken in de code berekend: op de klantfactuur, in het maandelijkse garage-overzicht en in het exportbestand voor de boekhouding. De drie berekeningen verschilden subtiel zodra bandensets over de seizoensgrens heen bleven liggen, wat al had geleid tot twee onopgeloste facturatieklachten. Tarieven stonden als vaste getallen ingeprogrammeerd in vijf verschillende bestanden, waardoor een tariefswijziging betekende dat alle vijf handmatig moesten worden aangepast (één bestand was al vier maanden vergeten). Er waren geen geautomatiseerde tests, waardoor elke wijziging vereiste dat Esmée handmatig door elf schermen klikte. En de opslagtermijnlogica was twee keer geschreven - één keer met Nederlandse variabelenamen en één keer in het Engels - door twee verschillende promptsessies met drie maanden tussentijd.
 
 In zeven werkdagen werd de codebase redactioneel gesaneerd: de tariefberekening werd samengevoegd tot één centrale functie waarbij seizoensoverschrijdingen expliciet werden gedefinieerd in overleg met twee garagehouders; historische facturen werden herberekend en gecorrigeerd; tarieven en bewaartermijnen werden geëxtraheerd naar een instellingenscherm dat Esmée zelf kan beheren; er werden unit tests geschreven voor alle tarief- en exportberekeningen; dubbele code werd verwijderd; en er werd een beknopte documentatie opgesteld die exact uitlegt hoe tarieven worden berekend.
 
-**Resultaat:** De functionaliteit die eerder op twee weken was geschat, werd direct daarna binnen twee dagen opgeleverd. Esmée gebruikt tegenwoordig generatieve tools voor nieuwe schermen en redactionele tools (Cursor) voor wijzigingen aan bestaande code — een scheiding die ze omschrijft als het meest waardevolle inzicht van het jaar.
+**Resultaat:** De functionaliteit die eerder op twee weken was geschat, werd direct daarna binnen twee dagen opgeleverd. Esmée gebruikt tegenwoordig generatieve tools voor nieuwe schermen en redactionele tools (Cursor) voor wijzigingen aan bestaande code - een scheiding die ze omschrijft als het meest waardevolle inzicht van het jaar.
 
 > *"Ik had drie verschillende uitkomsten voor wat een garagehouder mij verschuldigd was. Alle drie waren door mij gegenereerd, op drie verschillende middagen, zonder dat ik er ooit bewust voor had gekozen."*
-> — **Esmée Blankestijn, Oprichter, Bandenopslag (Apeldoorn)**
+> - **Esmée Blankestijn, Oprichter, Bandenopslag (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** € 3.200 (consolidatie van tarievenlogica met historische herberekening, configuratie-extractie, tests rondom kernregels, structurele opschoning, documentatie) — opgeleverd in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.200 (consolidatie van tarievenlogica met historische herberekening, configuratie-extractie, tests rondom kernregels, structurele opschoning, documentatie) - opgeleverd in 7 werkdagen.
 
 ## Veelgestelde vragen
 

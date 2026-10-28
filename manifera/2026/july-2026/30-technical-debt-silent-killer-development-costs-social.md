@@ -2,16 +2,16 @@
 
 Stripe found developers spend **33% of their time** on technical debt.
 
-That's €400,000/year maintaining shortcuts — not building features.
+That's €400,000/year maintaining shortcuts - not building features.
 
 Over 3 years? **€1.2 million.** Enough to fund an entirely new product.
 
 **The 4 quadrants of technical debt:**
 
-✅ Deliberate + Prudent — "Ship now, refactor after the deal closes"
-❌ Deliberate + Reckless — "We don't have time for tests"
-🤷 Inadvertent + Prudent — "Now we see a better approach"
-💀 Inadvertent + Reckless — "What's a design pattern?"
+✅ Deliberate + Prudent - "Ship now, refactor after the deal closes"
+❌ Deliberate + Reckless - "We don't have time for tests"
+🤷 Inadvertent + Prudent - "Now we see a better approach"
+💀 Inadvertent + Reckless - "What's a design pattern?"
 
 Only quadrant 1 is acceptable. The rest are organisational problems.
 
@@ -36,7 +36,7 @@ A permanent, embedded allocation.
 🚫 Developers avoid certain modules
 📦 Deployment frequency dropped to monthly
 
-**The rewrite trap:** Starting over almost never works. Use the strangler fig pattern instead — replace piece by piece over 12-18 months.
+**The rewrite trap:** Starting over almost never works. Use the strangler fig pattern instead - replace piece by piece over 12-18 months.
 
 Tech debt is a financial liability. Manage it like one.
 

@@ -1,4 +1,4 @@
-🚨 Who actually owns the code the moment an engineer in Ho Chi Minh City commits it — the engineer, the vendor, or the client paying for it? Most contracts answer this vaguely enough that nobody finds out until it matters. ⚙️💥
+🚨 Who actually owns the code the moment an engineer in Ho Chi Minh City commits it - the engineer, the vendor, or the client paying for it? Most contracts answer this vaguely enough that nobody finds out until it matters. ⚙️💥
 
 **The Pain Points:**
 ❌ **Vendor-Entity-Only Assignment:** A gap between what the contract technically says and what protects you if an individual engineer created the disputed work.
@@ -7,10 +7,10 @@
 
 **The Manifera Solution:**
 ✅ **IP Assignment at Three Layers:** Master agreement (upon creation, not completion), individual engineer NDAs, and client-owned repositories from day one.
-✅ **Amsterdam Strategic Governance:** The master agreement sits under an EU-recognized legal framework — no specialized foreign counsel required.
+✅ **Amsterdam Strategic Governance:** The master agreement sits under an EU-recognized legal framework - no specialized foreign counsel required.
 ✅ **Vietnam Execution Velocity:** Engineers working inside client-owned repos from the first commit, with individual IP acknowledgments executed before any code is written.
 
-Upon creation, not upon completion — the distinction that closes the ambiguity gap. 🛡️
+Upon creation, not upon completion - the distinction that closes the ambiguity gap. 🛡️
 
 👉 Read our full deep dive on ip assignment netherlands vietnam contracts: https://www.manifera.com/blog/ip-assignment-netherlands-vietnam-contracts
 

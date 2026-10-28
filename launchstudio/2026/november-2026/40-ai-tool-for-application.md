@@ -95,9 +95,9 @@ LaunchStudio deployed the new Node.js microservice in "Shadow Mode" for two week
 **Result:** The Scheduling Module was successfully strangled. It now runs on a modern, auto-scaling Node.js microservice. The team can deploy updates to scheduling in 20 minutes without risking the prescription module. Because the AI accelerated the domain discovery and test generation, LaunchStudio completed the extraction in 4 months instead of the projected 12 months, saving the company €120,000 in engineering costs and requiring zero downtime.
 
 > *"Trying to rewrite a monolith is like trying to change the tires on a car while driving 120km/h on the Autobahn. LaunchStudio used AI not just to write code, but to map the madness of our 10-year-old system. The Strangler Fig pattern they implemented gave our board the confidence to modernize without fear."*
-> — **Thomas Gruber, VP of Engineering, MedTech Solutions (Vienna)**
+> - **Thomas Gruber, VP of Engineering, MedTech Solutions (Vienna)**
 
-**Cost & Timeline:** €35,000 (Enterprise Modernization Package - Phase 1 Extraction) — production-ready and deployed in 4 months.
+**Cost & Timeline:** €35,000 (Enterprise Modernization Package - Phase 1 Extraction) - production-ready and deployed in 4 months.
 
 ---
 

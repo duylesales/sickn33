@@ -31,25 +31,25 @@ Target Persona: AI-Native Founder
 }
 </script>
 
-Picture a warehouse worker typing "screwdrver" into your app's search bar because that's how fast they're typing, getting zero results, and walking away convinced the product isn't in stock — when it's sitting three shelves away. Nobody files a bug report for this. They just quietly conclude your search feature, and by extension your app, doesn't work, and go back to scrolling or asking a coworker instead.
+Picture a warehouse worker typing "screwdrver" into your app's search bar because that's how fast they're typing, getting zero results, and walking away convinced the product isn't in stock - when it's sitting three shelves away. Nobody files a bug report for this. They just quietly conclude your search feature, and by extension your app, doesn't work, and go back to scrolling or asking a coworker instead.
 
 ## The search bar that technically works and practically doesn't
 
-Ask an AI coding tool to "add a search feature" and what you typically get is a query that checks whether the search term appears as an exact substring somewhere in the target field — something functionally equivalent to a SQL `LIKE '%searchterm%'` clause, or its JavaScript equivalent, `.includes()`. It works exactly as described: type the exact text, get matching results. It also completely falls apart the moment a real user does what real users always do — misspell something, use a partial or reordered term, or search using different words than whatever's actually stored in the database.
+Ask an AI coding tool to "add a search feature" and what you typically get is a query that checks whether the search term appears as an exact substring somewhere in the target field - something functionally equivalent to a SQL `LIKE '%searchterm%'` clause, or its JavaScript equivalent, `.includes()`. It works exactly as described: type the exact text, get matching results. It also completely falls apart the moment a real user does what real users always do - misspell something, use a partial or reordered term, or search using different words than whatever's actually stored in the database.
 
-This gap survives development entirely unnoticed because founders test search the same way they test everything else: by typing exactly what they know is there. Search for "blue widget" when you know there's a record called "Blue Widget" in the database, and it works perfectly. The AI tool never generated fuzzy matching, typo tolerance, or relevance ranking, because a substring match satisfies every test a founder is likely to run themselves — it only fails against the messy, imperfect way real users actually type.
+This gap survives development entirely unnoticed because founders test search the same way they test everything else: by typing exactly what they know is there. Search for "blue widget" when you know there's a record called "Blue Widget" in the database, and it works perfectly. The AI tool never generated fuzzy matching, typo tolerance, or relevance ranking, because a substring match satisfies every test a founder is likely to run themselves - it only fails against the messy, imperfect way real users actually type.
 
 ## What makes search feel like it actually works
 
-Search that holds up under real usage typically needs a few specific capabilities a basic substring match doesn't have: typo tolerance (so "screwdrver" still matches "screwdriver"), matching across word order and partial terms (so "widget blue" still finds "Blue Widget"), and relevance ranking so the best match appears first instead of results being returned in whatever order the database happens to store them. Depending on data volume, this is sometimes handled with database-level full-text search features, and sometimes with a dedicated search service — either way, it's a deliberate architectural choice, not something that falls out of a basic CRUD prompt.
+Search that holds up under real usage typically needs a few specific capabilities a basic substring match doesn't have: typo tolerance (so "screwdrver" still matches "screwdriver"), matching across word order and partial terms (so "widget blue" still finds "Blue Widget"), and relevance ranking so the best match appears first instead of results being returned in whatever order the database happens to store them. Depending on data volume, this is sometimes handled with database-level full-text search features, and sometimes with a dedicated search service - either way, it's a deliberate architectural choice, not something that falls out of a basic CRUD prompt.
 
-The cost of getting this wrong compounds quietly, because a broken search feature doesn't announce itself as broken — it just produces a slow erosion of trust in the product every time a real result gets missed. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and search relevance is one of the more common quality gaps our team finds in AI-built apps precisely because it looks completely fine in every founder-run test and only breaks against real-world input. Our engineers, working from Manifera's Singapore office at 100 Tras Street, treat search quality as a standard usability and reliability check when preparing an AI-built app for real customers.
+The cost of getting this wrong compounds quietly, because a broken search feature doesn't announce itself as broken - it just produces a slow erosion of trust in the product every time a real result gets missed. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and search relevance is one of the more common quality gaps our team finds in AI-built apps precisely because it looks completely fine in every founder-run test and only breaks against real-world input. Our engineers, working from Manifera's Singapore office at 100 Tras Street, treat search quality as a standard usability and reliability check when preparing an AI-built app for real customers.
 
-If you've never actually typed a deliberate typo into your own app's search bar, it's worth doing that today — and if it comes back empty, [our price calculator](https://launchstudio.eu/en/#calculator) can scope what a proper fix looks like.
+If you've never actually typed a deliberate typo into your own app's search bar, it's worth doing that today - and if it comes back empty, [our price calculator](https://launchstudio.eu/en/#calculator) can scope what a proper fix looks like.
 
 ## A Fixed Search Query Still Needs a Fresh Index
 
-Fixing the query logic solves half the problem. The other half only shows up after the fix ships: full-text search and fuzzy-matching implementations that use a dedicated index — a database's built-in text-search index, or an external search service — only stay accurate if that index gets updated every time the underlying data changes. A product gets renamed, a listing gets deleted, a price gets updated, and if nothing in the write path also updates the search index, search keeps confidently returning the old version, or worse, returns a result for something that no longer exists.
+Fixing the query logic solves half the problem. The other half only shows up after the fix ships: full-text search and fuzzy-matching implementations that use a dedicated index - a database's built-in text-search index, or an external search service - only stay accurate if that index gets updated every time the underlying data changes. A product gets renamed, a listing gets deleted, a price gets updated, and if nothing in the write path also updates the search index, search keeps confidently returning the old version, or worse, returns a result for something that no longer exists.
 
 This is easy to miss because the fuzzy search itself demos perfectly right after launch, when the index and the database are freshly in sync. The gap only appears weeks later, gradually, as normal edits accumulate and nobody notices the index quietly drifting from the source of truth. The fix is making index updates part of the same write path as the data change itself, not a separate step someone has to remember:
 
@@ -71,16 +71,16 @@ For higher write volumes, this is often handled asynchronously through a queue r
 
 ### An AI-Native Founder in Action: The Inventory Tool That Looked Empty on Purpose
 
-Puck Hendriksen, a founder in Heerenveen, built VoorraadZoek, an inventory search tool for small retailers, using Bolt. The search feature worked reliably whenever Puck tested it herself — she knew exactly how each product was named in the system, so her searches always returned exactly what she expected. It shipped looking complete and functional.
+Puck Hendriksen, a founder in Heerenveen, built VoorraadZoek, an inventory search tool for small retailers, using Bolt. The search feature worked reliably whenever Puck tested it herself - she knew exactly how each product was named in the system, so her searches always returned exactly what she expected. It shipped looking complete and functional.
 
-In actual daily use at retail stores, the pattern was very different. Store staff searching under time pressure — a customer waiting at the counter — routinely misspelled product names, used partial terms, or searched with slightly different wording than what was stored in the system. Every one of those searches returned zero results. Staff had no way to know the search itself was the problem; they simply assumed the product wasn't in stock and told customers so, sometimes turning away sales for items that were sitting on the shelf the entire time.
+In actual daily use at retail stores, the pattern was very different. Store staff searching under time pressure - a customer waiting at the counter - routinely misspelled product names, used partial terms, or searched with slightly different wording than what was stored in the system. Every one of those searches returned zero results. Staff had no way to know the search itself was the problem; they simply assumed the product wasn't in stock and told customers so, sometimes turning away sales for items that were sitting on the shelf the entire time.
 
 LaunchStudio replaced the exact-substring search with a fuzzy-matching implementation that tolerates typos, partial terms, and word-order differences, and added relevance ranking so the closest matches surface first instead of results appearing in arbitrary database order. **Result:** store staff searching under real, imperfect, time-pressured conditions now reliably find what's actually in stock instead of assuming it's missing.
 
 > *"I had no idea how much revenue we were losing to a search bar that just gave up on typos. Watching it actually work with real, messy staff input was honestly the moment the product felt finished."*
-> — **Puck Hendriksen, Founder, VoorraadZoek (Heerenveen)**
+> - **Puck Hendriksen, Founder, VoorraadZoek (Heerenveen)**
 
-**Cost & Timeline:** €850 (fuzzy search implementation, relevance ranking, staff usability testing) — completed in 5 business days.
+**Cost & Timeline:** €850 (fuzzy search implementation, relevance ranking, staff usability testing) - completed in 5 business days.
 
 ---
 
@@ -88,15 +88,15 @@ LaunchStudio replaced the exact-substring search with a fuzzy-matching implement
 
 ### Why does my AI-generated search feature return nothing for a slightly misspelled term?
 
-Because it's almost certainly built as an exact substring match, which only finds results when the search term appears character-for-character within the stored text — a single typo breaks the match entirely.
+Because it's almost certainly built as an exact substring match, which only finds results when the search term appears character-for-character within the stored text - a single typo breaks the match entirely.
 
 ### How do I test whether my own app has this problem?
 
-Deliberately search using a typo, a partial product name, or words in a different order than how the item is actually stored — if any of those return zero results for an item you know exists, the search logic needs fuzzy matching.
+Deliberately search using a typo, a partial product name, or words in a different order than how the item is actually stored - if any of those return zero results for an item you know exists, the search logic needs fuzzy matching.
 
 ### Is fixing this a major rebuild, or a targeted change?
 
-It's typically a targeted change to the search query logic and, depending on data volume, may involve adding database-level full-text search or a dedicated search index — not a rebuild of the surrounding app.
+It's typically a targeted change to the search query logic and, depending on data volume, may involve adding database-level full-text search or a dedicated search index - not a rebuild of the surrounding app.
 
 ### How does Manifera's team approach search quality differently than a basic AI prompt would?
 
@@ -104,11 +104,11 @@ Manifera's engineers test search against realistic, imperfect input patterns rat
 
 ### Does this issue only affect product search, or other kinds of lookups too?
 
-It affects any search feature built the same way — customer lookups, document search, contact search — anywhere an AI tool generated a simple substring match without explicit instructions to handle typos and partial terms.
+It affects any search feature built the same way - customer lookups, document search, contact search - anywhere an AI tool generated a simple substring match without explicit instructions to handle typos and partial terms.
 
 ### Once fuzzy search is fixed, does it stay accurate on its own?
 
-Only if every write to the underlying data — a create, update, or delete — also updates the search index; otherwise the index quietly drifts out of sync with the database and search starts returning stale or missing results even though the query logic itself is correct.
+Only if every write to the underlying data - a create, update, or delete - also updates the search index; otherwise the index quietly drifts out of sync with the database and search starts returning stale or missing results even though the query logic itself is correct.
 
 <script type="application/ld+json">
 {
@@ -123,7 +123,7 @@ Only if every write to the underlying data — a create, update, or delete — a
     {
       "@type": "Question",
       "name": "How do I test whether my own app has this problem?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Deliberately search using a typo, a partial product name, or words in a different order — if any return zero results for an item you know exists, the search logic needs fuzzy matching." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Deliberately search using a typo, a partial product name, or words in a different order - if any return zero results for an item you know exists, the search logic needs fuzzy matching." }
     },
     {
       "@type": "Question",
@@ -138,12 +138,12 @@ Only if every write to the underlying data — a create, update, or delete — a
     {
       "@type": "Question",
       "name": "Does this issue only affect product search, or other kinds of lookups too?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It affects any search feature built the same way — customer lookups, document search, contact search — anywhere a simple substring match was generated without handling typos." }
+      "acceptedAnswer": { "@type": "Answer", "text": "It affects any search feature built the same way - customer lookups, document search, contact search - anywhere a simple substring match was generated without handling typos." }
     },
     {
       "@type": "Question",
       "name": "Once fuzzy search is fixed, does it stay accurate on its own?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Only if every write to the underlying data also updates the search index — otherwise the index drifts out of sync with the database and search starts returning stale or missing results even though the query logic is correct." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if every write to the underlying data also updates the search index - otherwise the index drifts out of sync with the database and search starts returning stale or missing results even though the query logic is correct." }
     }
   ]
 }

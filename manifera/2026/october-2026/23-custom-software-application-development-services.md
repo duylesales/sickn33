@@ -42,7 +42,7 @@ To achieve true digital transformation, enterprises must partner with elite engi
 
 Legacy monoliths were designed for physical servers, which are "always on." They were not designed for the Cloud, which bills by the microsecond of CPU usage.
 
-When an amateur vendor lifts-and-shifts a massive, inefficient monolithic Java or .NET application into AWS, it consumes massive amounts of RAM and CPU constantly, even when traffic is low. Because the code is monolithic, it cannot scale horizontally (spinning up small microservices only when needed). The CTO is suddenly hit with "Cloud Shock"—a monthly AWS invoice that is 300% higher than the cost of running their old physical servers.
+When an amateur vendor lifts-and-shifts a massive, inefficient monolithic Java or .NET application into AWS, it consumes massive amounts of RAM and CPU constantly, even when traffic is low. Because the code is monolithic, it cannot scale horizontally (spinning up small microservices only when needed). The CTO is suddenly hit with "Cloud Shock" - a monthly AWS invoice that is 300% higher than the cost of running their old physical servers.
 
 ### The Agitate: The Multi-Year "Big Bang" Failure
 
@@ -66,7 +66,7 @@ All user traffic hits the Gateway first. The Gateway is instructed to simply pas
 
 ### 2. Vertical Slicing the Microservices
 
-The engineering team then selects *one* small, non-critical piece of functionality—for example, the "Email Notification Service." 
+The engineering team then selects *one* small, non-critical piece of functionality - for example, the "Email Notification Service." 
 
 They rewrite this single feature as a modern, serverless microservice (e.g., using AWS Lambda or Go). Once it is fully tested, they go to the API Gateway and change a single line of configuration. They tell the Gateway: "If the request is an Email Notification, send it to the new Microservice. Send everything else to the old Monolith."
 
@@ -88,7 +88,7 @@ Martin Fowler, who coined the Strangler Fig pattern in 2004 after observing the 
 
 ## The Math: What Lift-and-Shift Actually Costs Over Three Years
 
-CTOs rarely get a rewrite budget approved on architectural elegance alone. They get it approved with numbers. So let's build a realistic, illustrative three-year Total Cost of Ownership (TCO) comparison for a mid-sized enterprise migrating a 15-year-old monolithic ERP system — the same profile described throughout this article. These figures are a representative modeling exercise based on industry benchmarks, not a specific client engagement.
+CTOs rarely get a rewrite budget approved on architectural elegance alone. They get it approved with numbers. So let's build a realistic, illustrative three-year Total Cost of Ownership (TCO) comparison for a mid-sized enterprise migrating a 15-year-old monolithic ERP system - the same profile described throughout this article. These figures are a representative modeling exercise based on industry benchmarks, not a specific client engagement.
 
 **Starting point:** A monolithic .NET application, 400,000 lines of code, currently running on aging on-premise servers at roughly €180,000/year in infrastructure, licensing, and maintenance.
 
@@ -101,7 +101,7 @@ CTOs rarely get a rewrite budget approved on architectural elegance alone. They 
 | Year 3 | €125,000 | €240,000 | €365,000 |
 | **3-Year Total** | | | **€1,020,000** |
 
-The monolith cannot scale down during quiet periods because it is a single deployable unit — every instance must be provisioned for peak load, all day, every day. This is precisely the "Cloud Shock" pattern documented industry-wide: Flexera's 2026 State of the Cloud Report found that 29% of enterprise cloud spend is wasted — the highest waste rate in five years, driven largely by over-provisioned, unoptimized workloads exactly like a lifted-and-shifted monolith.
+The monolith cannot scale down during quiet periods because it is a single deployable unit - every instance must be provisioned for peak load, all day, every day. This is precisely the "Cloud Shock" pattern documented industry-wide: Flexera's 2026 State of the Cloud Report found that 29% of enterprise cloud spend is wasted - the highest waste rate in five years, driven largely by over-provisioned, unoptimized workloads exactly like a lifted-and-shifted monolith.
 
 ### Path B: Strangler Fig Migration
 
@@ -112,27 +112,27 @@ The monolith cannot scale down during quiet periods because it is a single deplo
 | Year 3 | €42,000 (monolith fully strangled) | €90,000 (final cutover) | €40,000 (skeleton support) | €172,000 |
 | **3-Year Total** | | | | **€935,000** |
 
-Path B costs slightly more in Year 1 because you are running the migration engineering effort *and* the legacy team in parallel. But by Year 3, the elastic serverless architecture and the shrinking legacy footprint invert the cost curve entirely — and unlike Path A, the business exits Year 3 with a modernized, horizontally scalable system instead of the same 15-year-old monolith sitting in a more expensive data center.
+Path B costs slightly more in Year 1 because you are running the migration engineering effort *and* the legacy team in parallel. But by Year 3, the elastic serverless architecture and the shrinking legacy footprint invert the cost curve entirely - and unlike Path A, the business exits Year 3 with a modernized, horizontally scalable system instead of the same 15-year-old monolith sitting in a more expensive data center.
 
-This mirrors what McKinsey and the University of Oxford found when they studied more than 5,400 large IT projects: on average, large IT initiatives run 45% over budget and 7% over time, while delivering 56% less value than originally forecast — and 17% run so far over budget or schedule that they threaten the very existence of the company. The Big Bang rewrite is precisely the profile of project McKinsey was describing. The Strangler Fig pattern's incremental, always-shippable structure is what keeps a modernization program off that list — every 3-to-6 week increment is small enough to re-forecast, re-scope, or cancel without sinking the whole initiative.
+This mirrors what McKinsey and the University of Oxford found when they studied more than 5,400 large IT projects: on average, large IT initiatives run 45% over budget and 7% over time, while delivering 56% less value than originally forecast - and 17% run so far over budget or schedule that they threaten the very existence of the company. The Big Bang rewrite is precisely the profile of project McKinsey was describing. The Strangler Fig pattern's incremental, always-shippable structure is what keeps a modernization program off that list - every 3-to-6 week increment is small enough to re-forecast, re-scope, or cancel without sinking the whole initiative.
 
 ## Six Questions to Ask Before Signing a Modernization Contract
 
 Not every vendor who says "we do Strangler Fig migrations" actually knows how to run one. Enterprise architects procuring custom software application development services should push on these six points during vendor evaluation, before a single line of code is written.
 
-**1. "Show me the API Gateway configuration plan before you show me a single microservice."** If a vendor jumps straight to writing new services without first establishing the routing layer that lets you fall back instantly, they are not doing a Strangler Fig migration — they are doing a partial rewrite with extra risk and none of the safety net.
+**1. "Show me the API Gateway configuration plan before you show me a single microservice."** If a vendor jumps straight to writing new services without first establishing the routing layer that lets you fall back instantly, they are not doing a Strangler Fig migration - they are doing a partial rewrite with extra risk and none of the safety net.
 
 **2. "What is your Anti-Corruption Layer strategy for the legacy database?"** A vendor who cannot answer this in specific, technical terms (event sourcing, change-data-capture, a translation service layer) has not actually migrated a legacy database before. They will find out the hard way, on your project, at your expense.
 
-**3. "What's the rollback time if a newly sliced microservice fails in production?"** The honest answer should be measured in minutes — a configuration change at the Gateway, not a redeploy. If the answer involves "we'd need to schedule a maintenance window," the safety guarantee of the pattern has been quietly abandoned.
+**3. "What's the rollback time if a newly sliced microservice fails in production?"** The honest answer should be measured in minutes - a configuration change at the Gateway, not a redeploy. If the answer involves "we'd need to schedule a maintenance window," the safety guarantee of the pattern has been quietly abandoned.
 
-**4. "How do you decide slice order?"** Elite teams slice by business risk and technical coupling — low-risk, loosely-coupled functionality (notifications, reporting) first, and high-risk, tightly-coupled core logic (payments, authentication) only once the team has proven the pattern works on your specific codebase. A vendor with no clear sequencing logic is guessing.
+**4. "How do you decide slice order?"** Elite teams slice by business risk and technical coupling - low-risk, loosely-coupled functionality (notifications, reporting) first, and high-risk, tightly-coupled core logic (payments, authentication) only once the team has proven the pattern works on your specific codebase. A vendor with no clear sequencing logic is guessing.
 
-**5. "What happens to institutional knowledge trapped in the legacy code?"** Fifteen-year-old systems accumulate undocumented business rules that only exist as code. A serious vendor will budget time for legacy code archaeology — interviews with long-tenured staff, automated static analysis of the old codebase — before touching a slice that depends on rules nobody remembers writing down.
+**5. "What happens to institutional knowledge trapped in the legacy code?"** Fifteen-year-old systems accumulate undocumented business rules that only exist as code. A serious vendor will budget time for legacy code archaeology - interviews with long-tenured staff, automated static analysis of the old codebase - before touching a slice that depends on rules nobody remembers writing down.
 
-**6. "Can you show me a slice you shipped in under four weeks?"** If every "slice" in a vendor's portfolio took three or four months, they are not actually vertical-slicing — they are running a slow, sequential rewrite with Strangler Fig branding attached to the sales deck.
+**6. "Can you show me a slice you shipped in under four weeks?"** If every "slice" in a vendor's portfolio took three or four months, they are not actually vertical-slicing - they are running a slow, sequential rewrite with Strangler Fig branding attached to the sales deck.
 
-A vendor who can answer all six with specifics, not platitudes, has actually run this pattern before. A vendor who gets defensive or vague on any of them has not — and your 15-year-old monolith is not the place to let them learn.
+A vendor who can answer all six with specifics, not platitudes, has actually run this pattern before. A vendor who gets defensive or vague on any of them has not - and your 15-year-old monolith is not the place to let them learn.
 
 ---
 

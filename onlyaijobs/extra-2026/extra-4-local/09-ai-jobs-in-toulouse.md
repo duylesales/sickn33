@@ -54,7 +54,7 @@ Toulouse's economy is built around aerospace and space, and AI work in the city 
 
 **Space.** CNES's Toulouse centre, Airbus Defence and Space, Thales Alenia Space and many smaller companies build satellites and process Earth observation data. Machine learning for image analysis, onboard processing, mission planning and signal processing is an important field.
 
-**Research.** ONERA, the French aerospace research agency, has a centre in Toulouse. The city's universities and engineering schools — including ISAE-SUPAERO, INSA Toulouse, ENSEEIHT (Toulouse INP) and Université Toulouse III — host laboratories such as IRIT (computer science) and LAAS-CNRS (systems and robotics).
+**Research.** ONERA, the French aerospace research agency, has a centre in Toulouse. The city's universities and engineering schools - including ISAE-SUPAERO, INSA Toulouse, ENSEEIHT (Toulouse INP) and Université Toulouse III - host laboratories such as IRIT (computer science) and LAAS-CNRS (systems and robotics).
 
 **ANITI.** The Artificial and Natural Intelligence Toulouse Institute was created as one of France's interdisciplinary AI institutes, with a strong focus on trustworthy and certifiable AI for critical systems, in partnership with industry.
 
@@ -100,7 +100,7 @@ Beyond core ML skills, Toulouse employers often value:
 
 ## Working in French
 
-Many international companies in Toulouse use English in technical work, but French remains the language of daily life and often of internal communication in large French organisations and suppliers. Some roles — particularly in defence or public research — require French. If you do not speak French, focus first on teams that explicitly work in English, invest in language learning early and expect it to become important as you grow into roles with more responsibility.
+Many international companies in Toulouse use English in technical work, but French remains the language of daily life and often of internal communication in large French organisations and suppliers. Some roles - particularly in defence or public research - require French. If you do not speak French, focus first on teams that explicitly work in English, invest in language learning early and expect it to become important as you grow into roles with more responsibility.
 
 ## Permits and the Talent Passport
 
@@ -117,11 +117,11 @@ EU and EEA citizens can work in France without a permit. Non-EU professionals of
 
 ## Living in Toulouse
 
-Toulouse — "la ville rose" for its pink brick buildings — is a large student city with a warm climate, a lively centre and access to the Pyrenees and the Mediterranean. Housing costs are generally lower than in Paris, and the metro, tram and bus network covers the main areas, with a third metro line under construction to connect the aerospace zones. For families, the region offers international schools linked to the aerospace industry. The quality of life is one reason many engineers stay long-term.
+Toulouse - "la ville rose" for its pink brick buildings - is a large student city with a warm climate, a lively centre and access to the Pyrenees and the Mediterranean. Housing costs are generally lower than in Paris, and the metro, tram and bus network covers the main areas, with a third metro line under construction to connect the aerospace zones. For families, the region offers international schools linked to the aerospace industry. The quality of life is one reason many engineers stay long-term.
 
 ## How OnlyAIJobs Fits Your Toulouse Search
 
-OnlyAIJobs is a European job board focused exclusively on AI, ML and data roles, showing each vacancy at its exact address with the distance from your home, with no paid placement and with applications going directly to employers. Its listings are currently concentrated in the Netherlands, so you will find few or no Toulouse vacancies there today. Use French job boards, company career sites, APEC for executive-level roles and research institute portals for local search, and use OnlyAIJobs to compare with Dutch opportunities — for example with engineering employers such as VINCI Energies or Holland Innovative — or if you are considering several countries. Toulouse employers can list their first AI vacancy free via info@onlyaijobs.eu.
+OnlyAIJobs is a European job board focused exclusively on AI, ML and data roles, showing each vacancy at its exact address with the distance from your home, with no paid placement and with applications going directly to employers. Its listings are currently concentrated in the Netherlands, so you will find few or no Toulouse vacancies there today. Use French job boards, company career sites, APEC for executive-level roles and research institute portals for local search, and use OnlyAIJobs to compare with Dutch opportunities - for example with engineering employers such as VINCI Energies or Holland Innovative - or if you are considering several countries. Toulouse employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## A Closer Look at Typical Projects
 
@@ -139,7 +139,7 @@ To understand what AI jobs in Toulouse involve day to day, it helps to look at t
 
 ## Career Paths in the Toulouse Ecosystem
 
-The structure of the Toulouse market shapes career paths. Many engineers start at a consultancy or supplier, gain domain knowledge on projects for large primes and later move to a prime, a startup or a research institute. Others start with a PhD — often a CIFRE industrial doctorate, co-funded by a company and a laboratory, which is a common French model — and then join the partner company. Research engineers at institutes such as ONERA or at ANITI-affiliated laboratories can move into industry with rare expertise in trustworthy AI.
+The structure of the Toulouse market shapes career paths. Many engineers start at a consultancy or supplier, gain domain knowledge on projects for large primes and later move to a prime, a startup or a research institute. Others start with a PhD - often a CIFRE industrial doctorate, co-funded by a company and a laboratory, which is a common French model - and then join the partner company. Research engineers at institutes such as ONERA or at ANITI-affiliated laboratories can move into industry with rare expertise in trustworthy AI.
 
 Because aerospace programmes last decades, domain knowledge accumulates value over time. An engineer who understands both ML and the constraints of avionics, certification or space missions becomes difficult to replace, and that is reflected in career opportunities.
 
@@ -163,7 +163,7 @@ Toulouse's aerospace community is large but interconnected. Many engineers know 
 - Follow trade events and industry days organised by the aerospace cluster and regional bodies, where suppliers and startups present their work.
 - Contribute to open-source tools or public datasets in Earth observation, which are widely used by Toulouse teams.
 
-A good network helps you learn which teams are growing, which projects are starting and which employers offer the kind of work you want — information that rarely appears in job postings.
+A good network helps you learn which teams are growing, which projects are starting and which employers offer the kind of work you want - information that rarely appears in job postings.
 
 ## Beyond the City: Occitanie
 
@@ -177,7 +177,7 @@ A computer vision engineer with several years' experience in retail analytics in
 
 Her first applications, focused on accuracy metrics from retail projects, get limited responses. She rewrites her CV to highlight robustness testing, data quality work and documentation she had done, and adds a small project on uncertainty estimation for satellite imagery using public data. She also starts French lessons.
 
-She receives an offer from a space imagery company working with larger primes. The role is in English, but meetings with clients are often in French, so she continues learning. Two years later, she leads a small team working on robust onboard image classification — work that draws directly on the certification and trustworthiness themes that make Toulouse distinctive.
+She receives an offer from a space imagery company working with larger primes. The role is in English, but meetings with clients are often in French, so she continues learning. Two years later, she leads a small team working on robust onboard image classification - work that draws directly on the certification and trustworthiness themes that make Toulouse distinctive.
 
 ## Key Takeaways
 

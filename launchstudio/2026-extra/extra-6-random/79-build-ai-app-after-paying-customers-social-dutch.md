@@ -1,9 +1,9 @@
-🏗️ Tobias Krimpen bouwde "LanceerApp", een huurinspectietool, met Lovable in één enkel weekend. Hij tekende tien betalende vastgoedbeheerders die er dagelijks op vertrouwden — en ontdekte toen wat "gebouwd" niet had omvat. 😳
+🏗️ Tobias Krimpen bouwde "LanceerApp", een huurinspectietool, met Lovable in één enkel weekend. Hij tekende tien betalende vastgoedbeheerders die er dagelijks op vertrouwden - en ontdekte toen wat "gebouwd" niet had omvat. 😳
 
 Een weekendbouw beantwoordt "kan dit überhaupt werken?" Het beantwoordt niet "wat gebeurt er als het om 23 uur stukgaat voor een betalende klant?" 🧠
 
-❌ Helemaal geen logging — toen een registratie verdween, was er geen manier om te achterhalen wat er was gebeurd
-❌ Geen back-up-herstelproces — de enige kopie van de data was wat er momenteel live bestond
+❌ Helemaal geen logging - toen een registratie verdween, was er geen manier om te achterhalen wat er was gebeurd
+❌ Geen back-up-herstelproces - de enige kopie van de data was wat er momenteel live bestond
 ❌ Elk probleem diagnosticeren betekende puur giswerk, niets in de app legde zichzelf uit
 ❌ Het kostte een telefoontje van een verwarde klant om het gat te onthullen
 

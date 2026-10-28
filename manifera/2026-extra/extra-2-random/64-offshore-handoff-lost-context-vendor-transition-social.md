@@ -1,4 +1,4 @@
-🚨 The previous offshore vendor's contract ended, a new vendor was selected through a rigorous procurement process, and the new team started their onboarding sprint — and three months later, they still haven't shipped a single feature, because they've spent the entire time trying to understand a codebase that came with no documentation, no architecture diagrams, and a git history that reads like a stream of consciousness.. That gap is where operational failure begins. ⚙️💥
+🚨 The previous offshore vendor's contract ended, a new vendor was selected through a rigorous procurement process, and the new team started their onboarding sprint - and three months later, they still haven't shipped a single feature, because they've spent the entire time trying to understand a codebase that came with no documentation, no architecture diagrams, and a git history that reads like a stream of consciousness.. That gap is where operational failure begins. ⚙️💥
 
 **The Pain Points:**
 ❌ **Offshore Handoff Lost Crisis:** A VP of Engineering terminated a relationship with an offshore vendor due to declining quality, hired a new vendor after a six-week procurement process, and expected the transition to take four to six weeks. Four months later, the new vendor's team is still reverse-engineering the codebase.
@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Strangler-Fig Modernization Architecture:** Extracts legacy workflows into standalone, standards-based services behind an API gateway without freezing live production traffic.
-✅ **Amsterdam Strategic & Risk Governance:** Dutch architects establish the knowledge-preservation framework at engagement start — documentation standards, ADR cadence, overlap protocols for any future transition — ensuring that the engagement is structured for transferability from day one, not just for delivery during the contract term.
+✅ **Amsterdam Strategic & Risk Governance:** Dutch architects establish the knowledge-preservation framework at engagement start - documentation standards, ADR cadence, overlap protocols for any future transition - ensuring that the engagement is structured for transferability from day one, not just for delivery during the contract term.
 ✅ **Vietnam Deep Engineering Velocity:** Autonomous pods in Vietnam produce documentation as a standing sprint deliverable, maintain infrastructure-as-code for every environment, and when taking over from a previous vendor, execute the context-recovery process with structured reverse-engineering and systematic codebase audit.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

@@ -25,11 +25,11 @@ Zwolle komt zelden voor in gesprekken over Nederlandse AI-hubs, en de economisch
 
 ## Een markt gevormd door risico en distributie, niet door interactie
 
-Verzekeraars met hoofdkantoor in en rond Zwolle leunen zwaar op actuariële modellering, fraudedetectie en risicoscoring — toegepaste statistiek en machine learning die ouder is dan de huidige AI-wervingsgolf maar de afgelopen jaren in stilte moderne technieken heeft opgenomen. Daarnaast levert de logistieke en distributiebasis van de regio vraag op naar voorspellings- en routeoptimalisatiewerk dat qua aard lijkt op wat je in grotere havensteden vindt, alleen op kleinere regionale schaal.
+Verzekeraars met hoofdkantoor in en rond Zwolle leunen zwaar op actuariële modellering, fraudedetectie en risicoscoring - toegepaste statistiek en machine learning die ouder is dan de huidige AI-wervingsgolf maar de afgelopen jaren in stilte moderne technieken heeft opgenomen. Daarnaast levert de logistieke en distributiebasis van de regio vraag op naar voorspellings- en routeoptimalisatiewerk dat qua aard lijkt op wat je in grotere havensteden vindt, alleen op kleinere regionale schaal.
 
 ## Waarom dit werk minder spannend leest dan het is
 
-Datawerk in de verzekeringssector draagt de reputatie behoudend en traag te zijn, wat sommige kandidaten ontmoedigt goed te kijken. In de praktijk brengen fraudedetectie en risicomodellering op schaal echte technische uitdagingen met zich mee — onevenwichtige data, tegenwerkend gedrag, strikte regelgevende randvoorwaarden — die aantoonbaar veeleisender zijn dan een typisch aanbevelingssysteem voor consumenten, ook al doet het publieke imago van de sector daar tekort aan.
+Datawerk in de verzekeringssector draagt de reputatie behoudend en traag te zijn, wat sommige kandidaten ontmoedigt goed te kijken. In de praktijk brengen fraudedetectie en risicomodellering op schaal echte technische uitdagingen met zich mee - onevenwichtige data, tegenwerkend gedrag, strikte regelgevende randvoorwaarden - die aantoonbaar veeleisender zijn dan een typisch aanbevelingssysteem voor consumenten, ook al doet het publieke imago van de sector daar tekort aan.
 
 ## Waar te beginnen
 
@@ -39,7 +39,7 @@ Bekijk actuele AI-, machine learning- en datavacatures in en rond Zwolle op [onl
 
 ## Het entiteitenlandschap achter de stille markt van Zwolle
 
-**Hoofdkantoren en backoffices van verzekeraars** die in de regio zijn gevestigd, genereren gestage vraag met lange cycli naar actuarieel en risicomodelleringstalent — werk dat decennia ouder is dan de huidige AI-wervingsgolf en moderne technieken simpelweg geleidelijk heeft opgenomen.
+**Hoofdkantoren en backoffices van verzekeraars** die in de regio zijn gevestigd, genereren gestage vraag met lange cycli naar actuarieel en risicomodelleringstalent - werk dat decennia ouder is dan de huidige AI-wervingsgolf en moderne technieken simpelweg geleidelijk heeft opgenomen.
 
 **Logistieke en distributieactiviteiten**, profiterend van de ligging van de regio langs belangrijke nationale transportroutes, genereren een tweede, aparte bron van voorspellings- en routeoptimalisatievraag.
 
@@ -60,7 +60,7 @@ De vraag naar actuarieel en risicomodelleringswerk beweegt niet mee met financie
 
 ## Een doorkijkje: een carrière volledig opgebouwd binnen de verzekeringssector van Zwolle
 
-Een kandidaat begint als junior data-analist bij een verzekeraar, werkend aan fraudedetectie op transactieniveau. Na enkele jaren verschuift die naar risicomodellering met bredere verantwoordelijkheid, en later naar een rol die modelgovernance en regelgevende verantwoording omvat — een traject dat binnen één regionale sector mogelijk is zonder ooit te verhuizen, en dat een combinatie van technische en regelgevende geletterdheid opbouwt die elders in de markt schaars blijkt. Dat soort traject is minder zichtbaar dan een reeks sprongen tussen bekende techbedrijven, maar het bouwt bedrijfs- en domeinspecifieke kennis op die moeilijk te vervangen is.
+Een kandidaat begint als junior data-analist bij een verzekeraar, werkend aan fraudedetectie op transactieniveau. Na enkele jaren verschuift die naar risicomodellering met bredere verantwoordelijkheid, en later naar een rol die modelgovernance en regelgevende verantwoording omvat - een traject dat binnen één regionale sector mogelijk is zonder ooit te verhuizen, en dat een combinatie van technische en regelgevende geletterdheid opbouwt die elders in de markt schaars blijkt. Dat soort traject is minder zichtbaar dan een reeks sprongen tussen bekende techbedrijven, maar het bouwt bedrijfs- en domeinspecifieke kennis op die moeilijk te vervangen is.
 
 ## Een misverstand dat "saaie" sectoren een carrièredoodlopende weg zijn
 
@@ -68,15 +68,15 @@ Kandidaten nemen soms aan dat tijd doorbrengen in verzekeringen of logistiek hen
 
 ## Waarom stabiliteit zelf een ondergewaardeerd carrièrekapitaal is
 
-In een vakgebied waar veel kandidaten optimaliseren voor nieuwheid en zichtbaarheid, wordt stabiliteit zelden expliciet als voordeel benoemd. Toch levert meerdere jaren bij dezelfde werkgever binnen een gestage sector vaak diepere domeinkennis en meer daadwerkelijke verantwoordelijkheid op dan hetzelfde aantal jaren verspreid over drie snelbewegende bedrijven — een afweging die het waard is bewust te maken in plaats van bij verstek.
+In een vakgebied waar veel kandidaten optimaliseren voor nieuwheid en zichtbaarheid, wordt stabiliteit zelden expliciet als voordeel benoemd. Toch levert meerdere jaren bij dezelfde werkgever binnen een gestage sector vaak diepere domeinkennis en meer daadwerkelijke verantwoordelijkheid op dan hetzelfde aantal jaren verspreid over drie snelbewegende bedrijven - een afweging die het waard is bewust te maken in plaats van bij verstek.
 
 ## Hoe een realistische sollicitatiestrategie voor deze markt eruitziet
 
-Omdat deze werkgevers zich niet als techbedrijf presenteren, werkt een sollicitatie die uitsluitend leunt op techvocabulaire hier minder goed dan een die laat zien dat je het domeinprobleem begrijpt. Verwijs concreet naar het soort vraagstuk waar de sector mee worstelt — onevenwichtige klassen bij fraudedetectie, uitlegbaarheid bij risicoscoring, seizoenspatronen bij distributie — in plaats van alleen je toolkit op te sommen. Dat onderscheidt je van kandidaten die de vacature lazen als zomaar weer een datarol.
+Omdat deze werkgevers zich niet als techbedrijf presenteren, werkt een sollicitatie die uitsluitend leunt op techvocabulaire hier minder goed dan een die laat zien dat je het domeinprobleem begrijpt. Verwijs concreet naar het soort vraagstuk waar de sector mee worstelt - onevenwichtige klassen bij fraudedetectie, uitlegbaarheid bij risicoscoring, seizoenspatronen bij distributie - in plaats van alleen je toolkit op te sommen. Dat onderscheidt je van kandidaten die de vacature lazen als zomaar weer een datarol.
 
 ## Waarom regionale sectorkennis opbouwen verder reikt dan één sollicitatie
 
-Een kandidaat die zich eenmaal heeft verdiept in hoe de verzekerings- en logistieke sector in deze regio werkt, kan die kennis hergebruiken bij elke volgende sollicitatie binnen dezelfde markt — en aangezien de werkgevers in deze regio elkaar kennen en het verloop er lager ligt, stapelt die investering zich sneller op tot een reputatie dan in een grotere, anoniemere markt.
+Een kandidaat die zich eenmaal heeft verdiept in hoe de verzekerings- en logistieke sector in deze regio werkt, kan die kennis hergebruiken bij elke volgende sollicitatie binnen dezelfde markt - en aangezien de werkgevers in deze regio elkaar kennen en het verloop er lager ligt, stapelt die investering zich sneller op tot een reputatie dan in een grotere, anoniemere markt.
 
 ## Veelgestelde vragen
 
@@ -84,7 +84,7 @@ Een kandidaat die zich eenmaal heeft verdiept in hoe de verzekerings- en logisti
 Er is een reële maar stillere markt, primair gebouwd rond verzekeringen en logistiek in plaats van consumententech. Die sectoren draaien serieuze dataoperaties die zich niet profileren zoals Randstad-scale-ups dat doen.
 
 ### (Scenario: kandidaat die aanneemt dat verzekeringsdatawerk niet spannend is) Is datawerk in de verzekeringssector technisch net zo veeleisend als consumenten-AI?
-In specifieke opzichten vaak veeleisender — fraudedetectie en risicomodellering op schaal brengen onevenwichtige data, tegenwerkend gedrag en strikte regelgevende randvoorwaarden met zich mee die oprecht uitdagend zijn, ook al doet het publieke imago van de sector daar tekort aan.
+In specifieke opzichten vaak veeleisender - fraudedetectie en risicomodellering op schaal brengen onevenwichtige data, tegenwerkend gedrag en strikte regelgevende randvoorwaarden met zich mee die oprecht uitdagend zijn, ook al doet het publieke imago van de sector daar tekort aan.
 
 ### (Scenario: kandidaat die zich afvraagt waarom deze markt onder de radar blijft) Waarom duikt Zwolle niet op in gesprekken over Nederlandse AI-hubs?
 Verzekerings- en logistieke bedrijven concurreren niet om zichtbaarheid in de techscene zoals consumententechbedrijven dat doen, dus blijft hun datawerk grotendeels onzichtbaar in het algemene brancheverhaal ondanks dat het oprecht substantieel is.

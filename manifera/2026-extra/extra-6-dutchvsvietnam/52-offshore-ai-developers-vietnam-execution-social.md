@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Five Evaluable Practices, Not Assurances:** Evaluation-driven development, real retrieval architecture, model-agnostic design, day-one observability, and AI-calibrated code review.
 ✅ **Amsterdam Strategic Governance:** Vendors pressed for evaluation dashboards and past-project evidence, not generalities.
-✅ **Vietnam Execution Velocity:** A pod that institutionalizes these practices as process — not left to individual engineer judgment.
+✅ **Vietnam Execution Velocity:** A pod that institutionalizes these practices as process - not left to individual engineer judgment.
 
 Ask a vendor to show you the evaluation dashboard. If they can't, they're not doing this. 🛡️
 

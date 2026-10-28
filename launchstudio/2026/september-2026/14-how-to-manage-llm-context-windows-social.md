@@ -1,6 +1,6 @@
-🚨 Amelia, an attorney, used **Bolt** to build a case law search app — but large legal documents kept filling the LLM's context window, driving up API costs and degrading answer accuracy. ⚖️
+🚨 Amelia, an attorney, used **Bolt** to build a case law search app - but large legal documents kept filling the LLM's context window, driving up API costs and degrading answer accuracy. ⚖️
 
-A bigger context window doesn't mean you should use it — LLMs suffer from "Lost in the Middle" and lose track of facts buried in long documents. 🧠
+A bigger context window doesn't mean you should use it - LLMs suffer from "Lost in the Middle" and lose track of facts buried in long documents. 🧠
 
 ❌ Dumping full documents into every prompt, then re-sending them on every follow-up question
 ❌ Relevant facts buried mid-document getting ignored or hallucinated, even though they're technically "in context"

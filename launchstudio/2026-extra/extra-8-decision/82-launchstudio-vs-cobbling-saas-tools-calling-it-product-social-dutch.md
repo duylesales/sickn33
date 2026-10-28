@@ -1,9 +1,9 @@
 🚨 40 kandidaatinzendingen verloren op één dinsdagmiddag. Drie klanten dubbel gefactureerd door een webhook-loop. Zijn "software business" was eigenlijk zeven tools aan elkaar geplakt met tape. 😳
 
-Typeform + Zapier + Airtable + Stripe voelt als gratis software bouwen — tot het bij volume breekt. Dit is het echte probleem: 🧠
+Typeform + Zapier + Airtable + Stripe voelt als gratis software bouwen - tot het bij volume breekt. Dit is het echte probleem: 🧠
 
 ❌ Elke tool is een eigen eiland met eigen rate limits en abonnementskosten
-❌ Data raakt async uit sync — een opzegging in Stripe bereikt Airtable niet altijd
+❌ Data raakt async uit sync - een opzegging in Stripe bereikt Airtable niet altijd
 ❌ Eén trage of gewijzigde API laat de hele pipeline stilzwijgend vastlopen
 ❌ PII over vier Amerikaanse platforms verspreiden creëert een GDPR-nachtmerrie
 

@@ -26,7 +26,7 @@ With this policy in place, even if a hacker explicitly asks the database for ano
 
 If RLS is so critical, why do AI tools like Lovable or Cursor often leave it disabled?
 
-AI tools optimize for a functional prototype. Configuring RLS requires defining specific rules for who can Create, Read, Update, and Delete (CRUD) data across various tables. If the AI guesses the rules incorrectly, the application breaks—users click a button and nothing happens because the database rejected the request. To ensure the prototype provides an immediate "wow" factor without friction, AI builders often default to the path of least resistance: leaving the database open.
+AI tools optimize for a functional prototype. Configuring RLS requires defining specific rules for who can Create, Read, Update, and Delete (CRUD) data across various tables. If the AI guesses the rules incorrectly, the application breaks - users click a button and nothing happens because the database rejected the request. To ensure the prototype provides an immediate "wow" factor without friction, AI builders often default to the path of least resistance: leaving the database open.
 
 ## How to Check Your RLS Status
 
@@ -78,7 +78,7 @@ Mason partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 
 **Result:** Mason secured all client records and verified strict data isolation under rigorous multi-user tests.
 
-**Cost & Timeline:** €1,200 (Security Hardening Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,200 (Security Hardening Package) - production-ready and deployed in 4 business days.
 
 ---
 

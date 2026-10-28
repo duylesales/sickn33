@@ -1,4 +1,4 @@
-🔥 Luuk bouwde een prototype met **Bolt** — als voedingsdeskundige in Amsterdam zag hij hoeveel tijd collega's kwijt waren aan weekmenu's, maar ontdekte grote infrastructurele tekortkomingen vlak voor de lancering. 🧠
+🔥 Luuk bouwde een prototype met **Bolt** - als voedingsdeskundige in Amsterdam zag hij hoeveel tijd collega's kwijt waren aan weekmenu's, maar ontdekte grote infrastructurele tekortkomingen vlak voor de lancering. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en beveiligingsrisico's.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Luuk lanceerde naar zijn wachtlijst en converteerde 70 betalende diëtisten in zijn eerste week, goed voor direct €2.030 MRR. (€2.500 (Launch & Grow Pakket) — binnen 10 werkdagen opgeleverd). 🚀
+Luuk lanceerde naar zijn wachtlijst en converteerde 70 betalende diëtisten in zijn eerste week, goed voor direct €2.030 MRR. (€2.500 (Launch & Grow Pakket) - binnen 10 werkdagen opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/from-prototype-to-paying-customers-roadmap
 

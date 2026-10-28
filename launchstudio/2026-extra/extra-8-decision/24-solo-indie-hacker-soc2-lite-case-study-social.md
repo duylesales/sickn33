@@ -7,14 +7,14 @@
 ❌ A self-taught implementation can look complete to the person who built it
 ❌ Treating each new enterprise ask as a fresh scramble instead of reusable work
 
-✅ "SOC 2 Lite" is a bounded, specific set of controls — not an open-ended project
+✅ "SOC 2 Lite" is a bounded, specific set of controls - not an open-ended project
 ✅ Access control, encryption, logging, documented incident response
 ✅ Scoped against the buyer's actual questionnaire, not a generic checklist
 ✅ Do it right once and every future enterprise conversation gets easier
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we close this exact gap fast — even with days, not weeks, left on the clock. 🛡️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we close this exact gap fast - even with days, not weeks, left on the clock. 🛡️
 
-His result: passed his freight brokerage's security review with two days to spare — trial started on schedule. 🚀
+His result: passed his freight brokerage's security review with two days to spare - trial started on schedule. 🚀
 
 👉 Send us your buyer's questionnaire: https://launchstudio.eu/en/blog/solo-indie-hacker-soc2-lite-case-study
 

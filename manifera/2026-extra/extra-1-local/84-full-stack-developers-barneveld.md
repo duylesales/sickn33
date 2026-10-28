@@ -20,39 +20,39 @@ target_persona: "CTO"
 }
 </script>
 
-A candidate who lists eight technologies on a resume is either a genuine full-stack developer with real depth in each, or someone who's touched eight things briefly and mastered none — and a standard interview struggles to tell the two apart.
+A candidate who lists eight technologies on a resume is either a genuine full-stack developer with real depth in each, or someone who's touched eight things briefly and mastered none - and a standard interview struggles to tell the two apart.
 
-**The Pain:** A CTO at an agri-technology company in Barneveld — a Gelderland municipality that anchors one of the Netherlands' most significant poultry and egg-production sectors — is hiring full-stack developers for a farm-management platform and is finding that resume breadth is a weak signal for whether a candidate can actually deliver production-quality work across the full stack, not just talk about it.
+**The Pain:** A CTO at an agri-technology company in Barneveld - a Gelderland municipality that anchors one of the Netherlands' most significant poultry and egg-production sectors - is hiring full-stack developers for a farm-management platform and is finding that resume breadth is a weak signal for whether a candidate can actually deliver production-quality work across the full stack, not just talk about it.
 
-**The Agitation:** A CTO who hires on resume breadth alone risks bringing on a developer who can navigate any part of the stack shallowly but can't be trusted with the architecturally sensitive parts of any layer — a gap that shows up as recurring, hard-to-pin-down quality issues spread thinly across the whole codebase rather than concentrated anywhere obvious enough to catch quickly.
+**The Agitation:** A CTO who hires on resume breadth alone risks bringing on a developer who can navigate any part of the stack shallowly but can't be trusted with the architecturally sensitive parts of any layer - a gap that shows up as recurring, hard-to-pin-down quality issues spread thinly across the whole codebase rather than concentrated anywhere obvious enough to catch quickly.
 
 ## Testing for Real Depth, Not Just Breadth
 
 Hiring full-stack developers well requires a test specifically designed to separate genuine cross-layer competence from surface familiarity, because the two look identical on a resume and very different in production.
 
-The first test is a depth probe within a single layer — asking a candidate to go deep on one specific area, such as query optimization or component state management, rather than broad coverage across many. A candidate with real depth somewhere in the stack, even if their strongest layer differs from another's, demonstrates the underlying rigor that predicts quality; a candidate who can't go deep anywhere is a red flag regardless of how broad their resume looks.
+The first test is a depth probe within a single layer - asking a candidate to go deep on one specific area, such as query optimization or component state management, rather than broad coverage across many. A candidate with real depth somewhere in the stack, even if their strongest layer differs from another's, demonstrates the underlying rigor that predicts quality; a candidate who can't go deep anywhere is a red flag regardless of how broad their resume looks.
 
-The second test is a realistic full-feature exercise — building something small end-to-end, from data model to interface, rather than isolated layer-specific puzzles, which reveals whether the candidate genuinely integrates decisions across the stack or treats each layer as disconnected.
+The second test is a realistic full-feature exercise - building something small end-to-end, from data model to interface, rather than isolated layer-specific puzzles, which reveals whether the candidate genuinely integrates decisions across the stack or treats each layer as disconnected.
 
-The third test is asking directly about a technology choice they'd make differently in hindsight, on a specific past project — a candidate with real experience has genuine, specific opinions about trade-offs they've lived with; a candidate with only surface familiarity gives generic, textbook answers.
+The third test is asking directly about a technology choice they'd make differently in hindsight, on a specific past project - a candidate with real experience has genuine, specific opinions about trade-offs they've lived with; a candidate with only surface familiarity gives generic, textbook answers.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads apply depth-probing vetting for every proposed full-stack engineer, before any developer reaches a client interview.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod's engineers demonstrate genuine cross-layer integration through realistic full-feature exercises, not isolated technology-specific tests.
 
-This is Dutch Management × Vietnamese Mastery — full-stack hiring that tests for real depth, not resume breadth. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - full-stack hiring that tests for real depth, not resume breadth. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
 ### An Italian Agri-Tech Firm's Shallow-Breadth Hire
 
-Agritecnica Lombarda S.r.l., an agri-technology company based near Milan, Italy, had hired a full-stack developer whose resume listed an impressive range of frameworks, but whose actual production output showed recurring, minor quality issues spread across the entire codebase — nothing catastrophic in any one place, just a persistent lack of depth everywhere.
+Agritecnica Lombarda S.r.l., an agri-technology company based near Milan, Italy, had hired a full-stack developer whose resume listed an impressive range of frameworks, but whose actual production output showed recurring, minor quality issues spread across the entire codebase - nothing catastrophic in any one place, just a persistent lack of depth everywhere.
 
 Manifera introduced a depth-probing interview process for the client's subsequent hires, including a realistic full-feature exercise and a specific past-project trade-off discussion. The next developer hired demonstrated genuine depth in backend data modeling specifically, and while less broad on paper, produced measurably fewer defects across six months of production work.
 
 > *"The old resume looked more impressive. The new hire's resume looked narrower and their actual code was just better everywhere, because they knew at least one part of the stack really well instead of every part shallowly."*
-> — **CTO, Agritecnica Lombarda S.r.l., Italy**
+> - **CTO, Agritecnica Lombarda S.r.l., Italy**
 
 ## Breadth-Only Hiring vs. Manifera's Depth-Probing Standard
 
@@ -70,11 +70,11 @@ A full-stack developer hired on resume breadth alone but lacking real depth anyw
 
 ## The Depth-Probing Scorecard
 
-A structured depth-probing loop replaces one generic 60-minute technical interview with three shorter, sharper sessions totaling roughly the same time: a 20-minute single-layer depth probe, a 45-60 minute realistic full-feature exercise, and a 15-minute past-project trade-off discussion. The added structure costs almost no extra interviewer time — it redistributes it toward signal instead of coverage.
+A structured depth-probing loop replaces one generic 60-minute technical interview with three shorter, sharper sessions totaling roughly the same time: a 20-minute single-layer depth probe, a 45-60 minute realistic full-feature exercise, and a 15-minute past-project trade-off discussion. The added structure costs almost no extra interviewer time - it redistributes it toward signal instead of coverage.
 
-Score each candidate on three axes, not one aggregate impression: depth (can they go three levels deep on follow-up questions in at least one layer without falling back to generic answers), integration (does their full-feature exercise show the data model and interface decisions actually informing each other, or were they built independently and glued together), and specificity (do their trade-off answers name a real constraint — a specific poultry-house sensor's polling interval, a specific query that needed an index — versus a textbook trade-off).
+Score each candidate on three axes, not one aggregate impression: depth (can they go three levels deep on follow-up questions in at least one layer without falling back to generic answers), integration (does their full-feature exercise show the data model and interface decisions actually informing each other, or were they built independently and glued together), and specificity (do their trade-off answers name a real constraint - a specific poultry-house sensor's polling interval, a specific query that needed an index - versus a textbook trade-off).
 
-For a farm-management platform specifically, weight the depth probe toward whichever layer touches IoT sensor ingestion or time-series data handling, since that's where agri-tech platforms most often fail — not in the CRUD-heavy business logic every candidate has seen before, but in handling irregular, high-volume sensor data from poultry-house environmental controls reliably. A candidate who can go deep there but is merely competent elsewhere is a stronger hire than one who's evenly mediocre across all four layers.
+For a farm-management platform specifically, weight the depth probe toward whichever layer touches IoT sensor ingestion or time-series data handling, since that's where agri-tech platforms most often fail - not in the CRUD-heavy business logic every candidate has seen before, but in handling irregular, high-volume sensor data from poultry-house environmental controls reliably. A candidate who can go deep there but is merely competent elsewhere is a stronger hire than one who's evenly mediocre across all four layers.
 
 ## Frequently Asked Questions
 
@@ -100,19 +100,19 @@ A realistic full-feature exercise built end-to-end reveals genuine cross-layer i
 
 ### (Scenario: CTO planning interview loop time budget) How much longer does a depth-probing interview loop take compared to a standard full-stack interview?
 
-Roughly the same total time, restructured — a 20-minute depth probe, a 45-60 minute full-feature exercise, and a 15-minute trade-off discussion, replacing a single generic 60-90 minute technical round with the same time budget redirected toward actual signal.
+Roughly the same total time, restructured - a 20-minute depth probe, a 45-60 minute full-feature exercise, and a 15-minute trade-off discussion, replacing a single generic 60-90 minute technical round with the same time budget redirected toward actual signal.
 
 ### (Scenario: CTO hiring specifically for a poultry-sector IoT integration) Does a farm-management platform integrating poultry-house sensors require different full-stack depth than a typical business application?
 
-Yes — the depth probe should weight toward time-series and IoT data handling specifically, since agri-tech platforms most often fail on irregular, high-volume sensor ingestion from environmental controls, not on the CRUD-heavy business logic every candidate has already seen.
+Yes - the depth probe should weight toward time-series and IoT data handling specifically, since agri-tech platforms most often fail on irregular, high-volume sensor ingestion from environmental controls, not on the CRUD-heavy business logic every candidate has already seen.
 
 ### (Scenario: CTO building a mixed team of specialists and full-stack developers) Should full-stack developers replace narrow specialists on a team, or work alongside them?
 
-Alongside — full-stack developers are best used for features that span layers and need someone who sees the whole picture, while specialists still own the architecturally sensitive core of their layer; treating full-stack hires as specialist replacements erodes the depth a platform eventually needs.
+Alongside - full-stack developers are best used for features that span layers and need someone who sees the whole picture, while specialists still own the architecturally sensitive core of their layer; treating full-stack hires as specialist replacements erodes the depth a platform eventually needs.
 
 ### (Scenario: CTO concerned about AI-assisted take-home submissions) Can AI coding assistants make a shallow candidate's take-home exercise falsely look like real depth?
 
-Yes, which is why the live trade-off discussion matters more now than the take-home artifact itself — asking a candidate to defend a specific decision from their own submission in real time, unscripted, exposes whether they understood what was built or generated it without absorbing the reasoning.
+Yes, which is why the live trade-off discussion matters more now than the take-home artifact itself - asking a candidate to defend a specific decision from their own submission in real time, unscripted, exposes whether they understood what was built or generated it without absorbing the reasoning.
 
 <script type="application/ld+json">
 {

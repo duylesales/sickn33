@@ -4,16 +4,16 @@
 
 ❌ Gevoelige persoonsdata (gezondheid, financieel, identificatie) op dezelfde ongedifferentieerde manier opslaan als een naamveld is materieel riskanter
 ❌ Een AI-tool heeft geen basis om dat onderscheid te markeren tenzij de prompt het specifiek benoemde
-❌ Dit is geen "zorgvuldiger prompten"-probleem — betrouwbaar dataverwerkingsvereisten specificeren voor elk veld, elke prompt, is een moeilijke standaard
-❌ Versleuteling alleen is geen GDPR-compliance — het is één waarborg van verschillende (rechtmatige grondslag, bewaarlimieten, toegangscontroles)
+❌ Dit is geen "zorgvuldiger prompten"-probleem - betrouwbaar dataverwerkingsvereisten specificeren voor elk veld, elke prompt, is een moeilijke standaard
+❌ Versleuteling alleen is geen GDPR-compliance - het is één waarborg van verschillende (rechtmatige grondslag, bewaarlimieten, toegangscontroles)
 
 ✅ Een correcte review identificeert welke velden daadwerkelijk gevoelig zijn en past versleuteling of toegangsbeperking specifiek daarop toe
-✅ De rest van jouw schema blijft onaangeraakt — dit is gericht, geen herbouw
-✅ Een beheerd platform zoals Supabase biedt infrastructuur — het beslist niet welke velden die behandeling verdienen
+✅ De rest van jouw schema blijft onaangeraakt - dit is gericht, geen herbouw
+✅ Een beheerd platform zoals Supabase biedt infrastructuur - het beslist niet welke velden die behandeling verdienen
 
 Bij **LaunchStudio** is deze datagevoeligheidsreview onderdeel van ons productiegereedheidsproces. Gesteund door Manifera's 11+ jaar softwareontwikkeling over gereguleerde industrieën. 🛡️
 
-Haar resultaat: veld-niveau-versleuteling specifiek toegepast op medische geschiedenis en eigenaarcontactdata — planninglogica en interface onveranderd. 🚀
+Haar resultaat: veld-niveau-versleuteling specifiek toegepast op medische geschiedenis en eigenaarcontactdata - planninglogica en interface onveranderd. 🚀
 
 👉 Boek een gratis intro-gesprek van 15 minuten: https://launchstudio.eu/nl/blog/ai-and-software-development-where-the-two-diverge
 

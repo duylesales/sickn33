@@ -20,17 +20,17 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-For a whole category of products — booking, scheduling, forms, reviews, chat, calculators — the natural distribution is not customers logging into your product but a piece of it running on their own website. It is a strong position to be in: your product becomes part of their site, and removing it is a change they have to plan rather than a subscription they can quietly cancel.
+For a whole category of products - booking, scheduling, forms, reviews, chat, calculators - the natural distribution is not customers logging into your product but a piece of it running on their own website. It is a strong position to be in: your product becomes part of their site, and removing it is a change they have to plan rather than a subscription they can quietly cancel.
 
-It also means your code runs inside pages built by strangers, on unknown platforms, next to conflicting scripts, under browser rules designed to restrict exactly this kind of cross-site behaviour. The failure modes are unfamiliar to anyone whose product has only ever run at its own address, and the reports you get — "it doesn't work on my site" — carry almost no diagnostic information.
+It also means your code runs inside pages built by strangers, on unknown platforms, next to conflicting scripts, under browser rules designed to restrict exactly this kind of cross-site behaviour. The failure modes are unfamiliar to anyone whose product has only ever run at its own address, and the reports you get - "it doesn't work on my site" - carry almost no diagnostic information.
 
 ## Iframe or Script: The Decision That Determines Everything After
 
-**An iframe** loads your page inside a frame on theirs. Your styles and code are isolated: nothing on their page can break yours, and nothing of yours leaks into theirs. Predictable, secure, and it looks like a box on their page — sizing is awkward, styling to match their site is limited, and it cannot overlay content.
+**An iframe** loads your page inside a frame on theirs. Your styles and code are isolated: nothing on their page can break yours, and nothing of yours leaks into theirs. Predictable, secure, and it looks like a box on their page - sizing is awkward, styling to match their site is limited, and it cannot overlay content.
 
-**A script embed** loads your JavaScript, which inserts elements directly into their page. Visually seamless, fully stylable, capable of modals and overlays — and now sharing an environment with whatever else that page runs. Their CSS can break your layout, their library versions can conflict with yours, and your script has access to their page in a way their security team may reasonably object to.
+**A script embed** loads your JavaScript, which inserts elements directly into their page. Visually seamless, fully stylable, capable of modals and overlays - and now sharing an environment with whatever else that page runs. Their CSS can break your layout, their library versions can conflict with yours, and your script has access to their page in a way their security team may reasonably object to.
 
-There is a third option that resolves most of the tension: **a script that creates an iframe**, giving a single-line installation, dynamic sizing through messages between the frame and the page, and the ability to position an overlay — while the content itself stays isolated. For most products this is the right answer, and it is what mature embeddable products converge on.
+There is a third option that resolves most of the tension: **a script that creates an iframe**, giving a single-line installation, dynamic sizing through messages between the frame and the page, and the ability to position an overlay - while the content itself stays isolated. For most products this is the right answer, and it is what mature embeddable products converge on.
 
 Whichever you choose, keep the installation to one line the customer pastes. Anything longer will be pasted incorrectly by someone using a website builder they only half understand.
 
@@ -38,7 +38,7 @@ Whichever you choose, keep the installation to one line the customer pastes. Any
 
 Your embed runs in a third-party context, and browsers have spent several years restricting what that context may do. This is where embeds fail in ways that never appear in your own testing.
 
-**Cookies set by your embed are third-party cookies** in that page, and Safari and Firefox block them outright while Chrome restricts them heavily. Anything relying on a cookie to remember a visitor between page loads will work in your development environment — where it is first-party — and fail on a customer's site. The workaround is to avoid depending on cookies at all: keep state in the URL, in the frame's own storage where available, or on your server keyed by something passed in explicitly.
+**Cookies set by your embed are third-party cookies** in that page, and Safari and Firefox block them outright while Chrome restricts them heavily. Anything relying on a cookie to remember a visitor between page loads will work in your development environment - where it is first-party - and fail on a customer's site. The workaround is to avoid depending on cookies at all: keep state in the URL, in the frame's own storage where available, or on your server keyed by something passed in explicitly.
 
 **Storage inside an iframe may be partitioned or unavailable**, particularly in private browsing. Every read must handle the case where it is empty or throws, and the embed must still work correctly with no stored state.
 
@@ -52,9 +52,9 @@ Building an embed that works under third-party restrictions, degrades sensibly w
 
 Your embed must protect the host page, and your product must protect itself from the host page.
 
-Protecting them: your script should not read their page's data, should not interfere with their analytics, and should be defensive about the global environment rather than assuming ownership of it. Their security team may ask for a subresource integrity hash so the browser refuses your script if it changes unexpectedly — a reasonable request that requires immutable, versioned script URLs.
+Protecting them: your script should not read their page's data, should not interfere with their analytics, and should be defensive about the global environment rather than assuming ownership of it. Their security team may ask for a subresource integrity hash so the browser refuses your script if it changes unexpectedly - a reasonable request that requires immutable, versioned script URLs.
 
-Protecting you: the embed identifies itself with a public key, which is visible to anyone viewing the page source. That key must therefore be restricted, not powerful. Two controls matter. **Domain restrictions**: the customer registers the domains their embed may run on, and requests from elsewhere are refused — which prevents someone copying your customer's embed onto their own site and consuming their quota. And **narrow permissions**: the public key should permit only the specific operations the embed needs, never anything that could read other customers' data or perform administrative actions.
+Protecting you: the embed identifies itself with a public key, which is visible to anyone viewing the page source. That key must therefore be restricted, not powerful. Two controls matter. **Domain restrictions**: the customer registers the domains their embed may run on, and requests from elsewhere are refused - which prevents someone copying your customer's embed onto their own site and consuming their quota. And **narrow permissions**: the public key should permit only the specific operations the embed needs, never anything that could read other customers' data or perform administrative actions.
 
 The other risk is what the embed collects. A widget on a customer's website processes their visitors' data, which makes you a processor in that relationship, and it means their cookie consent obligations may cover your embed. Products that set cookies or store identifiers without the host site's knowledge create a compliance problem for their own customer, which is a poor way to be discovered.
 
@@ -62,7 +62,7 @@ The other risk is what the embed collects. A widget on a customer's website proc
 
 Once your snippet is pasted into a thousand websites, you cannot change it. Some of those sites will never be touched again by anyone.
 
-Two rules follow. **Version the loader in the URL** and treat it as permanent: `v1` continues to work forever, incompatible changes go to `v2`, and customers upgrade by changing one line when they choose. **Keep the loader tiny and stable** — a small script whose only job is to fetch the current implementation — so improvements can be deployed without customers changing anything, while the entry point stays fixed.
+Two rules follow. **Version the loader in the URL** and treat it as permanent: `v1` continues to work forever, incompatible changes go to `v2`, and customers upgrade by changing one line when they choose. **Keep the loader tiny and stable** - a small script whose only job is to fetch the current implementation - so improvements can be deployed without customers changing anything, while the entry point stays fixed.
 
 Then the operational consequence people underestimate: this file becomes one of your most availability-critical assets. If it fails to load, your customer's booking form is missing from their website, and they will discover it from their own customers. Serve it from a CDN, keep it small, and make sure a failure degrades to something explicable rather than to an empty space where the form should be.
 
@@ -74,14 +74,14 @@ Finally, give yourself a way to diagnose problems you cannot reproduce. Errors o
 
 Milan Novak ran Boekmoment, a booking tool for salons and small clinics, built in Lovable. The booking widget was a script embed that inserted a form into the customer's page and used a cookie to remember partially completed bookings across page loads.
 
-It was tested on his own site and on two customer sites, both on WordPress in Chrome. After launch, salons reported that some customers complained the form "forgot everything" when they navigated away and came back. The cookie was a third-party cookie in that context and was blocked outright in Safari and Firefox — roughly a third of visitors on mobile in his market.
+It was tested on his own site and on two customer sites, both on WordPress in Chrome. After launch, salons reported that some customers complained the form "forgot everything" when they navigated away and came back. The cookie was a third-party cookie in that context and was blocked outright in Safari and Firefox - roughly a third of visitors on mobile in his market.
 
-Two further problems surfaced. The script inserted elements directly into the page, and on four customer sites the salon's own CSS made the form nearly unusable — one rendered the submit button invisible for six weeks before anyone reported it. And the public key had no domain restriction: a copy of one salon's snippet had been pasted on an unrelated site and was creating bookings in their account.
+Two further problems surfaced. The script inserted elements directly into the page, and on four customer sites the salon's own CSS made the form nearly unusable - one rendered the submit button invisible for six weeks before anyone reported it. And the public key had no domain restriction: a copy of one salon's snippet had been pasted on an unrelated site and was creating bookings in their account.
 
 **Result:** the embed was rebuilt as a small versioned loader creating a sandboxed iframe with dynamic sizing, removing the CSS conflicts entirely; state moved out of cookies into the URL and server-side sessions keyed by a token; domain restrictions applied to public keys; and error reporting added, tagged by account and host page.
 
 > "It worked on every site I tested and failed for a third of real visitors. I had no way to know, because the failure happened on someone else's website in a browser I was not using."
-> — **Milan Novak, Founder, Boekmoment**
+> - **Milan Novak, Founder, Boekmoment**
 
 **Cost & Timeline:** embed rebuild with versioned loader and domain restrictions delivered in 4 business days.
 

@@ -1,4 +1,4 @@
-🔥 Logan built a prototype using **Lovable** — logan, a startup founder, used **lovable** to build a seo keyword extractor prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Logan built a prototype using **Lovable** - logan, a startup founder, used **lovable** to build a seo keyword extractor prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Logan's application achieved production readiness: Logan guaranteed credit provisioning for all successful payments, eliminating manual customer support tickets. (€1,100 (Webhook Integration Package) — production-ready and deployed in 4 business days.). 🚀
+Logan's application achieved production readiness: Logan guaranteed credit provisioning for all successful payments, eliminating manual customer support tickets. (€1,100 (Webhook Integration Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/stripe-webhooks-explained-founders
 

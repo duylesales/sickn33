@@ -13,7 +13,7 @@ Wanneer u wél en niet moet blijven prompten:
 
 Het gevaar van 40 prompts proberen: elke mislukte prompt laat dode code achter. Uiteindelijk betaalt u een developer meer om uw 39 lapmiddelen op te ruimen dan om de echte bug van 4 regels op te lossen.
 
-Bij **LaunchStudio**, ondersteund door Manifera, diagnosticeren onze senior engineers complexe database- en architectuurfouten op basis van harde productielogs — niet op basis van gissingen.
+Bij **LaunchStudio**, ondersteund door Manifera, diagnosticeren onze senior engineers complexe database- en architectuurfouten op basis van harde productielogs - niet op basis van gissingen.
 
 💡 Zo hielpen we Sanne Duijvestein na 41 mislukte prompts binnen 90 minuten van haar haperende horeca-roosters af.
 

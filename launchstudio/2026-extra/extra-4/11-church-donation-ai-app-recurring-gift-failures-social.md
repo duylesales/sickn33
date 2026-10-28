@@ -1,8 +1,8 @@
-🚨 A volunteer treasurer noticed the monthly giving total was down two months running. Nothing looked broken — the app worked, donors could log in, the dashboard showed numbers. She finally cross-referenced individual donor records by hand and found three recurring gifts that had simply stopped being charged, with no explanation on either side. 😳
+🚨 A volunteer treasurer noticed the monthly giving total was down two months running. Nothing looked broken - the app worked, donors could log in, the dashboard showed numbers. She finally cross-referenced individual donor records by hand and found three recurring gifts that had simply stopped being charged, with no explanation on either side. 😳
 
 A card declining once is a boring, routine event. What happens next is the part almost nobody builds. 🧠
 
-❌ Lovable's happy-path donation flow charged the card, sent the receipt, and stopped there — no retry, ever
+❌ Lovable's happy-path donation flow charged the card, sent the receipt, and stopped there - no retry, ever
 ❌ A silently failed recurring gift looks exactly like a donor who quietly reduced their giving, not like a bug
 ❌ No dashboard flag existed anywhere for staff to catch a failed or at-risk gift before it was two months old
 ❌ A volunteer treasurer checking a spreadsheet monthly won't catch what a churn dashboard would catch in days

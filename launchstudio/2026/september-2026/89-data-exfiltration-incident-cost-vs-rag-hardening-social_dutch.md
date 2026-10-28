@@ -1,4 +1,4 @@
-🚨 Felix bouwde een HR-beleidsassistent met **Lovable** — felix, a startup founder, used **lovable** to build an AI-powered HR policy assistant for mid-market companies, maar een pre-launch review ving een RAG tenant-isolatiehiaat op voordat het een echt lek werd. 🧠
+🚨 Felix bouwde een HR-beleidsassistent met **Lovable** - felix, a startup founder, used **lovable** to build an AI-powered HR policy assistant for mid-market companies, maar een pre-launch review ving een RAG tenant-isolatiehiaat op voordat het een echt lek werd. 🧠
 
 Als uw RAG-pijplijn retrieval alleen filtert op gelijkenisscore, zonder een harde tenant-grens op databaseniveau, kan één breed geformuleerde query de data van een andere klant blootleggen.
 
@@ -12,7 +12,7 @@ Als uw RAG-pijplijn retrieval alleen filtert op gelijkenisscore, zonder een hard
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Felix's platform behaalde productie-gereedheid: hij lanceerde met nul bevindingen over tenant-isolatie in zijn pre-launch penetratietest, en verwijst nu rechtstreeks naar de geharde architectuur in enterprise-beveiligingsvragenlijsten. (€ 4.200 (Relaunch & Scale Pakket) — RAG-pijplijn geharden en geverifieerd in 11 werkdagen.) 🚀
+Felix's platform behaalde productie-gereedheid: hij lanceerde met nul bevindingen over tenant-isolatie in zijn pre-launch penetratietest, en verwijst nu rechtstreeks naar de geharde architectuur in enterprise-beveiligingsvragenlijsten. (€ 4.200 (Relaunch & Scale Pakket) - RAG-pijplijn geharden en geverifieerd in 11 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/data-exfiltration-incident-cost-vs-rag-hardening
 

@@ -45,7 +45,7 @@ When you choose a tech stack, you are making a massive financial commitment to a
 The greatest risk to a growing SaaS company is the inability to hire. If you build your backend in a highly niche, purely functional language because it handles concurrency beautifully, you will face a nightmare when the original architect leaves. 
 *The Rule:* Can I hire a competent mid-level developer in this language within 3 weeks in my target market (or my [offshore hub](46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md))? If no, do not use it for core systems.
 
-**The data backs the instinct.** In the 2025 Stack Overflow Developer Survey, JavaScript remained the most-used language overall at 66% of respondents, with HTML/CSS (62%), SQL (59%), Python, and TypeScript rounding out the top tier — the same handful of "boring" languages that have anchored the top of that survey for years. GitHub's Octoverse 2024 report found that Python overtook JavaScript as the most-used language on the platform for the first time in over a decade — not because a niche language broke through, but because an already-mainstream, thoroughly "boring" language absorbed the AI and data-science boom. The lesson holds either way: hiring depth and ecosystem growth concentrate in the same handful of established languages, not in whatever framework is trending on Hacker News this quarter.
+**The data backs the instinct.** In the 2025 Stack Overflow Developer Survey, JavaScript remained the most-used language overall at 66% of respondents, with HTML/CSS (62%), SQL (59%), Python, and TypeScript rounding out the top tier - the same handful of "boring" languages that have anchored the top of that survey for years. GitHub's Octoverse 2024 report found that Python overtook JavaScript as the most-used language on the platform for the first time in over a decade - not because a niche language broke through, but because an already-mainstream, thoroughly "boring" language absorbed the AI and data-science boom. The lesson holds either way: hiring depth and ecosystem growth concentrate in the same handful of established languages, not in whatever framework is trending on Hacker News this quarter.
 
 ### 2. The Ecosystem and Dependency Risk
 No modern software is written from scratch. You rely on open-source libraries for authentication, payment processing (Stripe SDKs), and database ORMs. 
@@ -63,7 +63,7 @@ If you are innovating on the business model, your technology stack must be rock 
 As we detailed in our guide on [AI-Assisted Development](47-ai-assisted-development-vs-traditional-coding-productivity-metrics.md), tools like GitHub Copilot and Cursor are revolutionizing developer productivity. 
 These LLMs are trained on public GitHub repositories. Therefore, they are exponentially better at generating code, writing tests, and finding bugs in "Boring" languages (Java, Python, TypeScript) because there are billions of lines of training data. If you use an obscure language, AI assistants become useless, stripping your team of a massive productivity multiplier.
 
-This effect compounds rather than fades as AI tools mature. Notably, Stack Overflow's own 2025 Developer Survey found developer trust in AI-generated answers had fallen to its lowest recorded level — professional developers are increasingly skeptical of AI output they cannot quickly verify against a large, well-documented body of prior art. That skepticism is a feature, not a bug, of choosing boring technology: on a mainstream stack, a developer can verify a Copilot or Cursor suggestion against thousands of Stack Overflow answers and official documentation pages in seconds. On a niche stack, there is nothing to verify against, so the same distrust simply turns into an unproductive stalemate between the engineer and the tool.
+This effect compounds rather than fades as AI tools mature. Notably, Stack Overflow's own 2025 Developer Survey found developer trust in AI-generated answers had fallen to its lowest recorded level - professional developers are increasingly skeptical of AI output they cannot quickly verify against a large, well-documented body of prior art. That skepticism is a feature, not a bug, of choosing boring technology: on a mainstream stack, a developer can verify a Copilot or Cursor suggestion against thousands of Stack Overflow answers and official documentation pages in seconds. On a niche stack, there is nothing to verify against, so the same distrust simply turns into an unproductive stalemate between the engineer and the tool.
 
 ## Pragmatic Stacks for 2026
 
@@ -87,32 +87,32 @@ If you are building a B2B SaaS platform today, these stacks provide the optimal 
 
 ## The Boring Technology Scoring Rubric
 
-The 4 Pillars above are directional principles; they become a decision tool once you turn them into a scored rubric. Before greenlighting a core technology choice — a language, framework, or database that a team will be stuck with for the next 5-10 years — score each candidate from 0 to 4 on the following five criteria, then compare totals.
+The 4 Pillars above are directional principles; they become a decision tool once you turn them into a scored rubric. Before greenlighting a core technology choice - a language, framework, or database that a team will be stuck with for the next 5-10 years - score each candidate from 0 to 4 on the following five criteria, then compare totals.
 
 | Criterion | 0 points | 2 points | 4 points |
 |---|---|---|---|
 | **Hiring depth in your market** | Cannot find a candidate in 3 weeks | Findable but requires a premium (senior-only market) | Multiple qualified candidates within 2 weeks, junior to senior |
 | **Ecosystem maturity** | No official SDKs for core vendors (payments, auth, cloud) | Community-maintained SDKs, inconsistent quality | Officially supported, audited SDKs from every major vendor you need |
 | **Innovation token cost** | Requires the team to also learn a new paradigm (e.g., a new concurrency model) alongside the new syntax | Familiar paradigm, new syntax/tooling only | Near-zero learning curve for a team that already knows an adjacent boring stack |
-| **AI-assisted development compatibility** | Under-represented in training data; Copilot/Cursor suggestions are frequently wrong | Adequate autocomplete, weak on framework-specific idioms | Consistently strong, idiomatic suggestions — reflects billions of lines of public training data |
+| **AI-assisted development compatibility** | Under-represented in training data; Copilot/Cursor suggestions are frequently wrong | Adequate autocomplete, weak on framework-specific idioms | Consistently strong, idiomatic suggestions - reflects billions of lines of public training data |
 | **Long-term support signal** | Single-maintainer project or unclear corporate backing | Backed by a company or foundation, but with a history of breaking changes | Backed by a major vendor or foundation (Oracle, Microsoft, Google, OpenJS, Apache) with a public LTS commitment |
 
-**Scoring guide:** 16-20 points — safe for core, revenue-critical systems. 10-15 points — acceptable for a bounded microservice or internal tool, not for the core platform. Below 10 — treat it as an innovation token, and remember you only have roughly three to spend across your entire architecture, per Dan McKinley's original framing.
+**Scoring guide:** 16-20 points - safe for core, revenue-critical systems. 10-15 points - acceptable for a bounded microservice or internal tool, not for the core platform. Below 10 - treat it as an innovation token, and remember you only have roughly three to spend across your entire architecture, per Dan McKinley's original framing.
 
 Run this rubric during the [Product Discovery phase](53-outsourcing-product-discovery-first-4-weeks.md), before the first line of code is written, and again whenever a Tech Lead proposes swapping a core piece of the stack. Written down and dated, it becomes the Architecture Decision Record that justifies the choice to the next CTO, the next investor due-diligence process, or the next engineer who joins and wonders "why didn't we just use the new thing?"
 
 ## The Dependency Viability Audit: 6 Signals Before You Adopt a Library
 
-"Boring" is not just a property of your core language or database — it should be a filter applied to every significant dependency your team adds, from ORMs to authentication libraries to message queues. Before approving a new dependency for production use, run it through this six-point audit:
+"Boring" is not just a property of your core language or database - it should be a filter applied to every significant dependency your team adds, from ORMs to authentication libraries to message queues. Before approving a new dependency for production use, run it through this six-point audit:
 
 1. **Commit velocity and maintainer count.** Check the last 12 months of commit history. A library maintained by a single contributor with no commits in the last six months is a ticking time bomb for a core dependency, regardless of how elegant its API looks today.
 2. **Corporate or foundation backing.** Is the project governed by a company or foundation (the Apache Software Foundation, the Linux Foundation, Meta, Vercel) with a documented succession plan, or does it depend entirely on one person's spare time and goodwill?
 3. **Hiring market signal.** Search LinkedIn or Indeed in your target hiring market (Amsterdam, or your [offshore hub](46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md) in Vietnam) for job postings mentioning the technology. Fewer than a handful of active postings citywide is an early warning that the talent pool is shrinking, not growing.
-4. **Issue resolution rate.** A healthy project closes the majority of reported bugs within weeks. Hundreds of open, unaddressed issues — especially security-tagged ones — signal a maintenance backlog that will eventually become your team's problem.
+4. **Issue resolution rate.** A healthy project closes the majority of reported bugs within weeks. Hundreds of open, unaddressed issues - especially security-tagged ones - signal a maintenance backlog that will eventually become your team's problem.
 5. **Versioning discipline.** Does the project follow semantic versioning with clear migration guides for breaking changes, or does it ship silent breaking changes in minor releases? The latter turns every dependency update into a multi-day regression-testing exercise.
-6. **License stability.** Read the actual license, not just the marketing page. Several widely used open-source projects have changed licensing terms mid-flight in ways that surprised enterprise users — Elastic's move away from Apache 2.0 in 2021 and HashiCorp's shift to the Business Source License in 2023 both forced companies to renegotiate usage terms or fork the last open version. Prefer permissive, well-established licenses (MIT, Apache 2.0) for anything sitting in your critical path.
+6. **License stability.** Read the actual license, not just the marketing page. Several widely used open-source projects have changed licensing terms mid-flight in ways that surprised enterprise users - Elastic's move away from Apache 2.0 in 2021 and HashiCorp's shift to the Business Source License in 2023 both forced companies to renegotiate usage terms or fork the last open version. Prefer permissive, well-established licenses (MIT, Apache 2.0) for anything sitting in your critical path.
 
-None of these six checks require deep technical expertise — they are due-diligence questions any Product Owner or Engineering Manager can ask before a Tech Lead adds a new dependency to the `package.json` or `pom.xml`. Building this audit into your Architecture Decision Record (ADR) template turns "boring technology" from a philosophy into an enforceable process.
+None of these six checks require deep technical expertise - they are due-diligence questions any Product Owner or Engineering Manager can ask before a Tech Lead adds a new dependency to the `package.json` or `pom.xml`. Building this audit into your Architecture Decision Record (ADR) template turns "boring technology" from a philosophy into an enforceable process.
 
 ## Executing the Stack with Manifera
 
@@ -120,7 +120,7 @@ Choosing the stack is step one; enforcing the architectural patterns within that
 
 At Manifera, our Architects guide our clients toward mature, survivable technology choices during the [Product Discovery phase](53-outsourcing-product-discovery-first-4-weeks.md). Our European and Asian engineering teams specialize in the "Boring," hyper-productive stacks (Java, .NET, Node.js, React) because we know that predictability and maintainability are what ultimately generate ROI for our clients.
 
-Build software that survives — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Build software that survives - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 

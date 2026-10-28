@@ -36,7 +36,7 @@ Content Format: Career Guide
 
 ## Why It Matters More for AI/ML Work Specifically
 
-A lot of genuinely useful AI work happens in unplanned, adjacent conversations — a data engineer overhearing why a model's inputs changed, a product manager clarifying an edge case in person before it becomes a bug in production. Fully remote teams that do this well have usually built deliberate structures to replace that — documented decisions, recorded walkthroughs, explicit async habits. Teams that call themselves remote-friendly without having built those structures often quietly default back to "whoever is in the office gets heard first," which disadvantages remote team members without anyone intending it.
+A lot of genuinely useful AI work happens in unplanned, adjacent conversations - a data engineer overhearing why a model's inputs changed, a product manager clarifying an edge case in person before it becomes a bug in production. Fully remote teams that do this well have usually built deliberate structures to replace that - documented decisions, recorded walkthroughs, explicit async habits. Teams that call themselves remote-friendly without having built those structures often quietly default back to "whoever is in the office gets heard first," which disadvantages remote team members without anyone intending it.
 
 ## What to Actually Ask, Beyond "Is This Remote?"
 
@@ -50,7 +50,7 @@ A lot of genuinely useful AI work happens in unplanned, adjacent conversations �
 
 **"Walk me through how a technical decision got made last week."** The answer tells you whether decisions live in a searchable, async-friendly format or in someone's memory of a hallway conversation.
 
-**"What's the actual split of in-office versus remote team members right now?"** Not the policy — the current reality. A team that's nominally remote-friendly but 90% co-located behaves like a co-located team with an exception, not a distributed one.
+**"What's the actual split of in-office versus remote team members right now?"** Not the policy - the current reality. A team that's nominally remote-friendly but 90% co-located behaves like a co-located team with an exception, not a distributed one.
 
 **"Is there a required overlap window, and how was it decided?"** A thoughtful answer suggests the team has actually grappled with distributed collaboration; a vague one suggests it hasn't been tested yet.
 
@@ -66,23 +66,23 @@ A lot of genuinely useful AI work happens in unplanned, adjacent conversations �
 
 ## Why AI Teams in Particular Struggle With This More Than Other Functions
 
-A sales team's remote workflow is well-understood across the industry; an AI team's is not, because so much of the useful information — why a dataset looks the way it does, what a model actually got wrong last week, which edge case someone noticed in passing — travels informally unless a team has deliberately built structures to capture it. Teams that haven't yet built those structures often don't realize the gap exists until a remote hire quietly falls behind on context that never made it into a document.
+A sales team's remote workflow is well-understood across the industry; an AI team's is not, because so much of the useful information - why a dataset looks the way it does, what a model actually got wrong last week, which edge case someone noticed in passing - travels informally unless a team has deliberately built structures to capture it. Teams that haven't yet built those structures often don't realize the gap exists until a remote hire quietly falls behind on context that never made it into a document.
 
 ## A Walkthrough: How a Remote Team Member Quietly Falls Behind
 
-Imagine a remote data scientist working on a shared project with two in-office colleagues. The in-office pair has a five-minute hallway conversation about an edge case they noticed in the data, agree on a quick fix, and move on — nobody documents it because it felt too minor to write up. The remote colleague isn't in the room, doesn't hear it, and later builds on the old, now-outdated assumption, producing work that has to be redone. This happens once, and it's an unlucky coincidence. It happens weekly, over months, and the remote colleague is quietly, invisibly disadvantaged — not through anyone's ill intent, but through the simple physics of who happens to be in the room when small decisions get made informally.
+Imagine a remote data scientist working on a shared project with two in-office colleagues. The in-office pair has a five-minute hallway conversation about an edge case they noticed in the data, agree on a quick fix, and move on - nobody documents it because it felt too minor to write up. The remote colleague isn't in the room, doesn't hear it, and later builds on the old, now-outdated assumption, producing work that has to be redone. This happens once, and it's an unlucky coincidence. It happens weekly, over months, and the remote colleague is quietly, invisibly disadvantaged - not through anyone's ill intent, but through the simple physics of who happens to be in the room when small decisions get made informally.
 
 ## A Misconception About Whose Responsibility This Is
 
-It's tempting to frame this as the remote employee's problem to solve — they should ask more questions, chase down more context. In practice, teams that successfully make remote work equitable treat it as a structural responsibility of the whole team, not an individual burden placed on whoever happens to be remote: a habit of writing decisions down regardless of whether everyone present agrees it's necessary, precisely because "necessary" is judged differently by people in the room than by people who weren't.
+It's tempting to frame this as the remote employee's problem to solve - they should ask more questions, chase down more context. In practice, teams that successfully make remote work equitable treat it as a structural responsibility of the whole team, not an individual burden placed on whoever happens to be remote: a habit of writing decisions down regardless of whether everyone present agrees it's necessary, precisely because "necessary" is judged differently by people in the room than by people who weren't.
 
 ## What to Look For as Evidence a Team Has Actually Solved This
 
-Ask a candidate-facing question during an interview: "can you show me an example of how a recent technical decision was documented?" A team that can quickly produce a concrete example — a written decision record, a documented discussion thread — has likely built the habits this requires. A team that struggles to produce a specific example, even if they insist their remote culture is strong, is giving you useful information regardless of what their stated policy says.
+Ask a candidate-facing question during an interview: "can you show me an example of how a recent technical decision was documented?" A team that can quickly produce a concrete example - a written decision record, a documented discussion thread - has likely built the habits this requires. A team that struggles to produce a specific example, even if they insist their remote culture is strong, is giving you useful information regardless of what their stated policy says.
 
 ## What Genuinely Remote-Mature Dutch Teams Do Differently
 
-A handful of practices reliably distinguish teams that have actually solved distributed collaboration from teams that merely permit remote work. These teams tend to default to written proposals for any non-trivial technical decision, posted somewhere everyone can see and comment on asynchronously, rather than defaulting to a live meeting as the primary decision-making venue. They tend to record video walkthroughs for anything that would otherwise be explained informally in person, treating a five-minute recording as cheap insurance against information loss. And they tend to explicitly rotate who attends any early or late-hour meetings required by time-zone or schedule differences, rather than always asking the same remote team member to accommodate the in-office majority's preferred hours. None of these practices are exotic or expensive to implement — they're simply deliberate, and their presence or absence is one of the more reliable indicators of whether a team's remote culture is substance or slogan.
+A handful of practices reliably distinguish teams that have actually solved distributed collaboration from teams that merely permit remote work. These teams tend to default to written proposals for any non-trivial technical decision, posted somewhere everyone can see and comment on asynchronously, rather than defaulting to a live meeting as the primary decision-making venue. They tend to record video walkthroughs for anything that would otherwise be explained informally in person, treating a five-minute recording as cheap insurance against information loss. And they tend to explicitly rotate who attends any early or late-hour meetings required by time-zone or schedule differences, rather than always asking the same remote team member to accommodate the in-office majority's preferred hours. None of these practices are exotic or expensive to implement - they're simply deliberate, and their presence or absence is one of the more reliable indicators of whether a team's remote culture is substance or slogan.
 
 ## How to Assess This Before You Even Reach an Interview
 
@@ -92,11 +92,11 @@ Some of this evaluation can begin before you ever speak to anyone at the company
 
 Remote and hybrid arrangements in the Netherlands sit inside a specific legal context that job advertisements almost never mention.
 
-**No absolute right to work from home.** Under the **Wet flexibel werken** (Flexible Working Act), employees of employers with ten or more staff can request a change in working hours or place of work, and the employer must consider the request. For working hours the bar for refusal is high; for place of work, the employer has more room to refuse, provided it considers the request seriously. A bill that would have strengthened the right to work from home was rejected by the Dutch Senate in 2023. In practice, this means your remote arrangement depends mainly on what you agree with your employer — so get it in writing.
+**No absolute right to work from home.** Under the **Wet flexibel werken** (Flexible Working Act), employees of employers with ten or more staff can request a change in working hours or place of work, and the employer must consider the request. For working hours the bar for refusal is high; for place of work, the employer has more room to refuse, provided it considers the request seriously. A bill that would have strengthened the right to work from home was rejected by the Dutch Senate in 2023. In practice, this means your remote arrangement depends mainly on what you agree with your employer - so get it in writing.
 
 **The employer remains responsible for working conditions.** Under the **Arbeidsomstandighedenwet** (Working Conditions Act), employers must also take reasonable care of health and safety when employees work from home, for example by providing information about a proper workstation and, often, equipment.
 
-**Tax-free allowances.** Dutch employers can pay a tax-free home-working allowance (*thuiswerkvergoeding*) per day worked from home, or a tax-free travel allowance for days travelled to the office — but not both for the same day. The maximum amounts are set by the **Belastingdienst** and indexed periodically. When comparing a hybrid and a fully remote offer, check how the employer handles both.
+**Tax-free allowances.** Dutch employers can pay a tax-free home-working allowance (*thuiswerkvergoeding*) per day worked from home, or a tax-free travel allowance for days travelled to the office - but not both for the same day. The maximum amounts are set by the **Belastingdienst** and indexed periodically. When comparing a hybrid and a fully remote offer, check how the employer handles both.
 
 ## Cross-Border Remote Work: The Trap for Engineers Near a Border
 
@@ -116,7 +116,7 @@ For AI and ML engineers, remote work is also constrained by what data you are al
 
 **Regulated sectors.** Banks, insurers, healthcare organisations and government bodies often require on-site access or specially approved environments for certain datasets, which is one reason AI roles in these sectors are more often hybrid than fully remote.
 
-**Hardware and compute.** Roles involving physical systems — robotics, embedded AI, lab equipment or on-premise GPU clusters — usually require some presence on site, regardless of the company's general remote policy.
+**Hardware and compute.** Roles involving physical systems - robotics, embedded AI, lab equipment or on-premise GPU clusters - usually require some presence on site, regardless of the company's general remote policy.
 
 **Security clearance.** Defence, security and certain public-sector roles may require on-site work for classified information, which rules out full remote work entirely.
 
@@ -130,7 +130,7 @@ For AI and ML engineers, remote work is also constrained by what data you are al
 
 ## Using Distance as Part of the Decision
 
-Hybrid work does not make location irrelevant — it changes how much it matters. Two office days a week at seventy minutes each way still add up to a significant amount of time over a year. That is why a vacancy's exact address and its distance from your home remain important even for hybrid roles, and why it helps to filter by distance and by the "Remote" work type together rather than by a city tag alone.
+Hybrid work does not make location irrelevant - it changes how much it matters. Two office days a week at seventy minutes each way still add up to a significant amount of time over a year. That is why a vacancy's exact address and its distance from your home remain important even for hybrid roles, and why it helps to filter by distance and by the "Remote" work type together rather than by a city tag alone.
 
 ## Key Takeaways
 
@@ -142,17 +142,17 @@ Hybrid work does not make location irrelevant — it changes how much it matters
 
 ## Where to Start
 
-Don't filter only on the "remote" tag. Ask the questions above in a first conversation — the actual answers predict your day-to-day experience far better than the label a job posting chose to use.
+Don't filter only on the "remote" tag. Ask the questions above in a first conversation - the actual answers predict your day-to-day experience far better than the label a job posting chose to use.
 
 Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and read each listing's actual working-arrangement details rather than relying on a single tag.
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate relying on the "remote" label alone) Can I trust a job posting's "remote-friendly" label at face value?
-Not entirely — the label covers a wide range of actual arrangements, from fully distributed teams to hybrid setups with light flexible language. Ask directly about documentation practices and the real in-office-to-remote ratio.
+Not entirely - the label covers a wide range of actual arrangements, from fully distributed teams to hybrid setups with light flexible language. Ask directly about documentation practices and the real in-office-to-remote ratio.
 
 ### (Scenario: candidate who accepted a remote role and felt disadvantaged) Why do remote team members sometimes feel like they're missing decisions?
-Teams that haven't deliberately rebuilt the informal, in-person information flow — documented decisions, recorded walkthroughs, async habits — often default to co-located colleagues being heard first, even without intending to disadvantage remote members.
+Teams that haven't deliberately rebuilt the informal, in-person information flow - documented decisions, recorded walkthroughs, async habits - often default to co-located colleagues being heard first, even without intending to disadvantage remote members.
 
 ### (Scenario: candidate deciding what to ask in an interview) What should I ask beyond "is this role remote or hybrid?"
 How technical decisions are documented, what the actual ratio of in-office to remote team members is today, and whether there's a required core-hours overlap. These predict day-to-day experience better than the label alone.
@@ -161,18 +161,18 @@ How technical decisions are documented, what the actual ratio of in-office to re
 A meaningful share of useful AI work happens in unplanned, adjacent conversations about data quality, edge cases and model behavior. Remote teams that handle this well have built explicit structures to replace that; teams that haven't often quietly disadvantage remote members.
 
 ### (Scenario: candidate evaluating a team that says it's "remote-first") Is a "remote-first" label a reliable signal that the team is genuinely distributed?
-It's a reasonable starting signal but not a guarantee — verify with direct questions about documentation habits and the real composition of the team rather than relying on the label alone.
+It's a reasonable starting signal but not a guarantee - verify with direct questions about documentation habits and the real composition of the team rather than relying on the label alone.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I trust a job posting's \"remote-friendly\" label at face value?", "acceptedAnswer": {"@type": "Answer", "text": "Not entirely — the label covers a wide range of actual arrangements. Ask directly about documentation practices and the real in-office-to-remote ratio."}},
+    {"@type": "Question", "name": "Can I trust a job posting's \"remote-friendly\" label at face value?", "acceptedAnswer": {"@type": "Answer", "text": "Not entirely - the label covers a wide range of actual arrangements. Ask directly about documentation practices and the real in-office-to-remote ratio."}},
     {"@type": "Question", "name": "Why do remote team members sometimes feel like they're missing decisions?", "acceptedAnswer": {"@type": "Answer", "text": "Teams that haven't deliberately rebuilt informal in-person information flow often default to co-located colleagues being heard first."}},
     {"@type": "Question", "name": "What should I ask beyond \"is this role remote or hybrid?\"", "acceptedAnswer": {"@type": "Answer", "text": "How technical decisions are documented, the actual ratio of in-office to remote team members today, and whether there's a required core-hours overlap."}},
     {"@type": "Question", "name": "Why does remote/hybrid clarity matter more for AI/ML roles than for some other jobs?", "acceptedAnswer": {"@type": "Answer", "text": "A meaningful share of useful AI work happens in unplanned, adjacent conversations about data quality and model behavior, which remote teams need explicit structures to replace."}},
-    {"@type": "Question", "name": "Is a \"remote-first\" label a reliable signal that the team is genuinely distributed?", "acceptedAnswer": {"@type": "Answer", "text": "It's a reasonable starting signal but not a guarantee — verify with direct questions about documentation habits and the real composition of the team."}}
+    {"@type": "Question", "name": "Is a \"remote-first\" label a reliable signal that the team is genuinely distributed?", "acceptedAnswer": {"@type": "Answer", "text": "It's a reasonable starting signal but not a guarantee - verify with direct questions about documentation habits and the real composition of the team."}}
   ]
 }
 </script>

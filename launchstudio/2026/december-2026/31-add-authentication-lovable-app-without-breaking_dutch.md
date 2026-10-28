@@ -12,7 +12,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Authenticatie Toevoegen aan Uw Lovable-App Zonder Dingen te Breken",
-  "description": "Inloggen toevoegen aan een Lovable-prototype is een van de meest risicovolle wijzigingen voor een oprichter — het raakt elk deel van de applicatie. Ontdek hoe u dit veilig doet.",
+  "description": "Inloggen toevoegen aan een Lovable-prototype is een van de meest risicovolle wijzigingen voor een oprichter - het raakt elk deel van de applicatie. Ontdek hoe u dit veilig doet.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -39,19 +39,19 @@ De meeste nieuwe functies zijn additief: u voegt iets nieuws toe zonder de besta
 
 ## Het Klassieke Faalpatroon
 
-Een oprichter vraagt Lovable (of Bolt, of Cursor) om *"login toe te voegen"*, en de AI-tool genereert een keurige inlogstroom — een inlogpagina, een registratieformulier en een sessietoken. Wat er echter stilletjes **niet** automatisch gebeurt, is het updaten van alle bestaande databasequeries en pagina's om die authenticatie ook daadwerkelijk af te dwingen: alleen de data van de ingelogde gebruiker tonen, pagina's blokkeren zonder geldige sessie, en voorkomen dat gebruiker A de gegevens van gebruiker B inziet door simpelweg een getal in de URL aan te passen. Het inlogscherm werkt, maar de feitelijke databescherming ontbreekt geruisloos.
+Een oprichter vraagt Lovable (of Bolt, of Cursor) om *"login toe te voegen"*, en de AI-tool genereert een keurige inlogstroom - een inlogpagina, een registratieformulier en een sessietoken. Wat er echter stilletjes **niet** automatisch gebeurt, is het updaten van alle bestaande databasequeries en pagina's om die authenticatie ook daadwerkelijk af te dwingen: alleen de data van de ingelogde gebruiker tonen, pagina's blokkeren zonder geldige sessie, en voorkomen dat gebruiker A de gegevens van gebruiker B inziet door simpelweg een getal in de URL aan te passen. Het inlogscherm werkt, maar de feitelijke databescherming ontbreekt geruisloos.
 
 ## Een Veilige Volgorde voor het Inbouwen van Authenticatie
 
-1. **Kies eerst een beproefde authenticatieprovider** (zoals Supabase Auth, Auth0 of NextAuth) in plaats van de AI-tool zelf authenticatielogica vanaf nul te laten schrijven — gevestigde providers handhaven beveiligingsdetails (wachtwoord-hashing, sessiebeheer, tokenverloop) standaard volgens de hoogste normen.
+1. **Kies eerst een beproefde authenticatieprovider** (zoals Supabase Auth, Auth0 of NextAuth) in plaats van de AI-tool zelf authenticatielogica vanaf nul te laten schrijven - gevestigde providers handhaven beveiligingsdetails (wachtwoord-hashing, sessiebeheer, tokenverloop) standaard volgens de hoogste normen.
 2. **Breng alle bestaande functies en datatabellen in kaart** die gebruikersgebonden moeten worden vóórdat er code wordt geschreven.
-3. **Update databasequeries systematisch**, zodat elke afzonderlijke query die gebruikersdata aanraakt expliciete filtering bevat — en niet alleen de pagina's waar u toevallig aan denkt.
-4. **Test kruiselingse gebruikerstoegang expliciet** — maak twee testaccounts aan en probeer doelbewust met Account A bij de data van Account B te komen vóórdat u de code als voltooid beschouwt.
+3. **Update databasequeries systematisch**, zodat elke afzonderlijke query die gebruikersdata aanraakt expliciete filtering bevat - en niet alleen de pagina's waar u toevallig aan denkt.
+4. **Test kruiselingse gebruikerstoegang expliciet** - maak twee testaccounts aan en probeer doelbewust met Account A bij de data van Account B te komen vóórdat u de code als voltooid beschouwt.
 5. **Voeg beveiliging op databaseniveau toe** (zoals Supabase Row Level Security) als tweede verdedigingslinie, zodat zelfs een vergeten controle in de applicatiecode nooit leidt tot een datalek.
 
 ## Waarom een Professionele Review Essentieel Is
 
-Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel snel gemaakt als uitzonderlijk kostbaar — een fout in de autorisatie breekt immers niet alleen een functie, maar kan de privégegevens van al uw klanten gelijktijdig blootstellen. Deze combinatie van brede impact en subtiele kwetsbaarheden is exact waarom [LaunchStudio](https://launchstudio.eu/nl/) authenticatie-implementatie behandelt als een van haar meest kritieke taken, geworteld in Herre Roelevinks cybersecurity-ervaring met CFLW Cyber Strategies en TNO.
+Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel snel gemaakt als uitzonderlijk kostbaar - een fout in de autorisatie breekt immers niet alleen een functie, maar kan de privégegevens van al uw klanten gelijktijdig blootstellen. Deze combinatie van brede impact en subtiele kwetsbaarheden is exact waarom [LaunchStudio](https://launchstudio.eu/nl/) authenticatie-implementatie behandelt als een van haar meest kritieke taken, geworteld in Herre Roelevinks cybersecurity-ervaring met CFLW Cyber Strategies en TNO.
 
 [Laat uw authenticatie-implementatie beoordelen](https://launchstudio.eu/nl/#contact) vóórdat echte gebruikers echte accounts met echte gevoelige data aanmaken.
 
@@ -60,7 +60,7 @@ Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel 
 Het datalek via URL-parameters is het meest voorkomende gat in AI-prototypes, maar zeker niet het enige. Een vlekkeloos werkend inlogscherm kan gepaard gaan met meerdere andere autorisatielekken die een vals gevoel van veiligheid geven totdat een gebruiker of aanvaller ze ontdekt:
 
 ### Toegangscontrole Uitsluitend aan de Client-Side
-Sommige AI-gegenereerde implementaties verbergen een knop of beheerpagina puur in de frontend — een beheerderspagina wordt simpelweg niet getoond in het menu van een normale gebruiker. Dit biedt nul werkelijke beveiliging: iedereen die de URL rechtstreeks in de browser intypt, kan de pagina gewoon openen, omdat de blokkade alleen in de weergave zit en niet op de server wordt afgedwongen. Elke restrictie moet server-side worden gevalideerd.
+Sommige AI-gegenereerde implementaties verbergen een knop of beheerpagina puur in de frontend - een beheerderspagina wordt simpelweg niet getoond in het menu van een normale gebruiker. Dit biedt nul werkelijke beveiliging: iedereen die de URL rechtstreeks in de browser intypt, kan de pagina gewoon openen, omdat de blokkade alleen in de weergave zit en niet op de server wordt afgedwongen. Elke restrictie moet server-side worden gevalideerd.
 
 ### Onbeveiligde API-Routes Achter een 'Veilige' Frontend
 Een gelikte, beveiligde frontend kan gekoppeld zijn aan backend API-routes die inkomende verzoeken niet onafhankelijk verifiëren. Een API-endpoint dat data retourneert wanneer het direct wordt aangeroepen (via Postman of de ontwikkelaarsconsole van de browser) lekt data omdat de autorisatiecheck alleen in de frontendcode plaatsvond. Elke API-route moet een eigen, onafhankelijke sessiecontrole uitvoeren.
@@ -90,16 +90,16 @@ Bij het toevoegen van authenticatie aan een door Lovable of v0 gegenereerde appl
 
 Fenna, personal trainer in Sittard, bouwde met Lovable FitVolg: een app waarin haar trainingsklanten hun persoonlijke schema's en voortgang konden bijhouden. Ze vroeg Lovable om een inlogsysteem toe te voegen zodat elke klant alleen zijn eigen schema zag. De inlogpagina werkte vlekkeloos in haar eigen tests.
 
-Haar broer, software-ontwikkelaar, bekeek de app uit nieuwsgierigheid. Hij ontdekte direct dat de pagina's de trainingsschema's ophaalden via een eenvoudig parameternummer in de URL. Door dat nummer met +1 te verhogen, kon hij direct de medische notities en gewichten van Fenna's andere klanten inzien — terwijl hij gewoon met zijn eigen account was ingelogd.
+Haar broer, software-ontwikkelaar, bekeek de app uit nieuwsgierigheid. Hij ontdekte direct dat de pagina's de trainingsschema's ophaalden via een eenvoudig parameternummer in de URL. Door dat nummer met +1 te verhogen, kon hij direct de medische notities en gewichten van Fenna's andere klanten inzien - terwijl hij gewoon met zijn eigen account was ingelogd.
 
 Fenna schakelde direct LaunchStudio in. Het team van Manifera migreerde FitVolg naar Supabase Auth met waterdichte Row Level Security, controleerde systematisch alle databasequeries en richtte geautomatiseerde isolatietests in.
 
 **Resultaat:** FitVolg lanceerde veilig naar 24 cliënten zonder enig risico op het lekken van gevoelige gezondheidsgegevens.
 
-> *"Mijn broer vond het per toeval tijdens het testen. Als een klant dit had ontdekt, was het een ramp geweest — mijn cliënten kennen elkaar vaak persoonlijk. LaunchStudio zorgde ervoor dat de beveiliging ook écht waterdicht was."*  
-> — **Fenna Kuipers, Oprichter FitVolg (Sittard)**
+> *"Mijn broer vond het per toeval tijdens het testen. Als een klant dit had ontdekt, was het een ramp geweest - mijn cliënten kennen elkaar vaak persoonlijk. LaunchStudio zorgde ervoor dat de beveiliging ook écht waterdicht was."*  
+> - **Fenna Kuipers, Oprichter FitVolg (Sittard)**
 
-**Kosten & tijdlijn:** €1.700 (Launch Ready Pakket, authenticatie verharden) — binnen 7 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.700 (Launch Ready Pakket, authenticatie verharden) - binnen 7 werkdagen live opgeleverd.
 
 ---
 

@@ -20,17 +20,17 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Something will break. Not as a possibility to be minimised but as a certainty to be planned for — a provider outage, a bad deploy, an expired certificate, a database that stops accepting connections at the worst possible hour. What determines whether customers leave over it is rarely the duration. It is whether they found out from you or from their own failed attempt to use your product, and whether what you told them was accurate.
+Something will break. Not as a possibility to be minimised but as a certainty to be planned for - a provider outage, a bad deploy, an expired certificate, a database that stops accepting connections at the worst possible hour. What determines whether customers leave over it is rarely the duration. It is whether they found out from you or from their own failed attempt to use your product, and whether what you told them was accurate.
 
 The instinct almost every founder has is to stay quiet and fix it, because announcing a problem feels like advertising incompetence. That instinct is backwards, and it is worth understanding why before you are in the middle of one making the decision under pressure.
 
 ## Silence Is Read as Not Knowing
 
-From a customer's side, an unexplained failure has two possible interpretations: the vendor is aware and working on it, or the vendor has no idea. Silence is indistinguishable from the second, and the second is far more alarming — it suggests that when something goes wrong nobody notices, which raises questions about everything else they cannot see.
+From a customer's side, an unexplained failure has two possible interpretations: the vendor is aware and working on it, or the vendor has no idea. Silence is indistinguishable from the second, and the second is far more alarming - it suggests that when something goes wrong nobody notices, which raises questions about everything else they cannot see.
 
 There is also a practical cost. Every customer who cannot use your product will try to find out why, and if you have not said anything, they contact you. A single sentence posted where they can find it prevents twenty support emails, each of which requires a reply during the exact period you most need to be working on the problem.
 
-The threshold for saying something is lower than founders assume. If a customer would notice, say something. Partial failures deserve it as much as complete ones — "invoices are not sending, everything else works" is more useful than silence and prevents customers assuming the whole product is unreliable.
+The threshold for saying something is lower than founders assume. If a customer would notice, say something. Partial failures deserve it as much as complete ones - "invoices are not sending, everything else works" is more useful than silence and prevents customers assuming the whole product is unreliable.
 
 ## What to Say in the First Fifteen Minutes
 
@@ -40,7 +40,7 @@ The first message should go out before you know the cause, and this is the part 
 
 **That you are working on it.** One line.
 
-**When you will next update**, and then meet it. "Next update within 30 minutes" is a commitment, and keeping it — even to say there is no news — is what builds the confidence that carries you through the incident.
+**When you will next update**, and then meet it. "Next update within 30 minutes" is a commitment, and keeping it - even to say there is no news - is what builds the confidence that carries you through the incident.
 
 Deliberately absent: a cause you do not yet know, an estimated resolution time you cannot support, and any assignment of blame. Guessing at either produces a correction later, and corrections during an incident cost more credibility than the original uncertainty.
 
@@ -50,21 +50,21 @@ Then update on the schedule you promised, even when nothing has changed. "Still 
 
 Two channels, chosen for different reasons.
 
-**A status page**, which is the thing customers check when your product is not working, and which — critically — must be hosted somewhere independent of your infrastructure. A status page on the same server as the product is unavailable exactly when it is needed. Hosted services exist for this at low cost; a simple page on separate hosting works too.
+**A status page**, which is the thing customers check when your product is not working, and which - critically - must be hosted somewhere independent of your infrastructure. A status page on the same server as the product is unavailable exactly when it is needed. Hosted services exist for this at low cost; a simple page on separate hosting works too.
 
 **Email to affected customers**, for anything significant or prolonged. This is the one customers remember. Send it while the problem is ongoing, not after.
 
-An in-product banner is useful for partial failures, when customers can still log in. And for a small product, a personal message to your handful of largest customers is worth more than any broadcast — that is the relationship that survives incidents.
+An in-product banner is useful for partial failures, when customers can still log in. And for a small product, a personal message to your handful of largest customers is worth more than any broadcast - that is the relationship that survives incidents.
 
-Whether to build a status page before launch depends on who your customers are. Selling to businesses whose own operations depend on your product, yes; it also appears in security questionnaires. Selling to individual users who will simply try again later, it can wait — but knowing where you will post, before you need to, takes ten minutes and removes one decision from a bad moment.
+Whether to build a status page before launch depends on who your customers are. Selling to businesses whose own operations depend on your product, yes; it also appears in security questionnaires. Selling to individual users who will simply try again later, it can wait - but knowing where you will post, before you need to, takes ten minutes and removes one decision from a bad moment.
 
 ## The Message After: What Actually Rebuilds Confidence
 
 When it is resolved, one more message closes the loop, and this is where trust is either restored or quietly lost.
 
-Four elements: what happened, in plain language; what the impact was, specifically — including whether any data was lost or any action needs to be taken by the customer; what you did to fix it; and what you are changing so it does not recur. The last one is what distinguishes a vendor customers keep from one they start evaluating alternatives to.
+Four elements: what happened, in plain language; what the impact was, specifically - including whether any data was lost or any action needs to be taken by the customer; what you did to fix it; and what you are changing so it does not recur. The last one is what distinguishes a vendor customers keep from one they start evaluating alternatives to.
 
-Be specific and be honest about cause. "A configuration change we deployed caused the database to reject connections" is better received than "an unexpected technical issue", because vagueness reads as evasion. Owning a mistake plainly is, in practice, the single most trust-restoring thing available — customers know software breaks, and what they are assessing is whether you understand your own system.
+Be specific and be honest about cause. "A configuration change we deployed caused the database to reject connections" is better received than "an unexpected technical issue", because vagueness reads as evasion. Owning a mistake plainly is, in practice, the single most trust-restoring thing available - customers know software breaks, and what they are assessing is whether you understand your own system.
 
 Two things to avoid. Do not blame a provider as though it absolves you: choosing and configuring providers is your responsibility, and customers know it. And do not promise it will never happen again, which nobody believes. Say what specific change you have made.
 
@@ -74,7 +74,7 @@ If data was lost or affected, say so immediately and precisely. The temptation t
 
 Communication depends on knowing. If you learn about outages from customer emails, you cannot post within fifteen minutes, because your fifteen minutes started when someone else noticed.
 
-The minimum is uptime monitoring that checks your product from outside and alerts you, error tracking that notifies you when failures spike, and a check on the things that fail silently — background jobs, scheduled work, payment webhooks. This is a small amount of setup that turns "the customer told me" into "I knew before they did", which is the difference between managing an incident and reacting to one.
+The minimum is uptime monitoring that checks your product from outside and alerts you, error tracking that notifies you when failures spike, and a check on the things that fail silently - background jobs, scheduled work, payment webhooks. This is a small amount of setup that turns "the customer told me" into "I knew before they did", which is the difference between managing an incident and reacting to one.
 
 It also helps to have written down, in advance, what you will do: where to post, what the first message says, who you contact. Composing that under pressure while also diagnosing a database problem is how people send messages they regret.
 
@@ -84,16 +84,16 @@ Setting up monitoring that detects failures before customers do, and the silent-
 
 ### Four Hours of Silence and Two Cancellations
 
-Sanne Bosman ran Planbord, a shift-planning tool for logistics firms, built in Cursor. A database connection limit was reached on a Monday morning — the busiest hour of her customers' week — and the product returned errors for four hours.
+Sanne Bosman ran Planbord, a shift-planning tool for logistics firms, built in Cursor. A database connection limit was reached on a Monday morning - the busiest hour of her customers' week - and the product returned errors for four hours.
 
 She spent the four hours fixing it, which she considered the responsible priority. She had no status page and sent nothing. Customers emailed, then phoned, then emailed again; by the time the product recovered there were 31 support messages, several from operations managers who had been unable to publish that week's shifts.
 
 She sent one message afterwards, saying the issue had been resolved and apologising for the inconvenience. It did not describe what happened, whether anything had been lost, or what would change. Two customers cancelled within a fortnight, both citing not the outage but not being told anything during it, and one noting that they had spent the morning unsure whether the company still existed.
 
-**Result:** external uptime monitoring with alerts, error-rate alerting, and silent-failure checks on background jobs; an independently hosted status page; and a written incident procedure with a first-message template. Two months later a provider outage caused 90 minutes of degraded service — a status post went up within eight minutes, three updates followed, and a full explanation was emailed the same day. Support messages during that incident: two, both saying thank you for the updates.
+**Result:** external uptime monitoring with alerts, error-rate alerting, and silent-failure checks on background jobs; an independently hosted status page; and a written incident procedure with a first-message template. Two months later a provider outage caused 90 minutes of degraded service - a status post went up within eight minutes, three updates followed, and a full explanation was emailed the same day. Support messages during that incident: two, both saying thank you for the updates.
 
 > "The second outage lasted a quarter as long and cost me nothing, and the only difference was that I told people what was happening while it was happening."
-> — **Sanne Bosman, Founder, Planbord**
+> - **Sanne Bosman, Founder, Planbord**
 
 **Cost & Timeline:** monitoring, alerting, and status infrastructure set up in 2 business days.
 

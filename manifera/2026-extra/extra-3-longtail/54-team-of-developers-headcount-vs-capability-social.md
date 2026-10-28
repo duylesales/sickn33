@@ -6,9 +6,9 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **"What percentage of each person's time is specifically allocated to my project?":** — directly revealing whether the team is genuinely dedicated or actually shared across multiple concurrent client engagements simultaneously.
-✅ **"What's the seniority mix of this team?":** — a team of five that's mostly junior with one senior lead delivers different output than a team of five that's mostly senior, even at identical headcount.
-✅ **"Will this exact same team stay consistent all the way through the project, or does composition change over time?":** — team churn mid-project reliably reintroduces real onboarding cost that a genuinely stable team avoids entirely from the outset.
+✅ **"What percentage of each person's time is specifically allocated to my project?":** - directly revealing whether the team is genuinely dedicated or actually shared across multiple concurrent client engagements simultaneously.
+✅ **"What's the seniority mix of this team?":** - a team of five that's mostly junior with one senior lead delivers different output than a team of five that's mostly senior, even at identical headcount.
+✅ **"Will this exact same team stay consistent all the way through the project, or does composition change over time?":** - team churn mid-project reliably reintroduces real onboarding cost that a genuinely stable team avoids entirely from the outset.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

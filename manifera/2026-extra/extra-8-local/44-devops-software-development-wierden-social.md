@@ -10,7 +10,7 @@
 ✅ **Canary Rollouts + Auto-Rollback:** Health-check-triggered reverts, zero attendees required.
 ✅ **55%+ Less Release Overhead:** Reclaimed engineering hours within the first quarter.
 
-The war room isn't a tradition worth keeping — it's a pipeline gap. 🔧
+The war room isn't a tradition worth keeping - it's a pipeline gap. 🔧
 
 👉 Read our full deep dive on devops software development Wierden: https://www.manifera.com/blog/devops-software-development-wierden
 

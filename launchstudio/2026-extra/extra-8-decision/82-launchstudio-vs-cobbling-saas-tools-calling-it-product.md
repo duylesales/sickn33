@@ -51,9 +51,9 @@ A dedicated backend does not mean an over-engineered enterprise monolith. For a 
 
 Instead of paying €300/month across a patchwork of automation tools, your application communicates directly with your own database. Workflows happen transactionally in milliseconds, failed requests retry automatically with structured logging, and customer data lives securely in one jurisdiction under your direct control.
 
-[LaunchStudio](https://launchstudio.eu/en/) replaces fragile multi-app glue with clean, production-ready backend architecture — backed by Manifera's 11+ years of enterprise software engineering experience.
+[LaunchStudio](https://launchstudio.eu/en/) replaces fragile multi-app glue with clean, production-ready backend architecture - backed by Manifera's 11+ years of enterprise software engineering experience.
 
-[Bring us your no-code workflow and let us turn it into a real backend](https://launchstudio.eu/en/#contact) — your product will run faster, cost less, and stop breaking when you sleep.
+[Bring us your no-code workflow and let us turn it into a real backend](https://launchstudio.eu/en/#contact) - your product will run faster, cost less, and stop breaking when you sleep.
 
 ## Real example
 
@@ -67,10 +67,10 @@ LaunchStudio audited Bastiaan's workflow and replaced the entire 5-tool automati
 
 **Result:** Monthly software subscription overhead dropped from €340/month to €25/month. Webhook failure rate dropped to 0%, and candidate processing time dropped from 45 seconds across APIs to under 1.5 seconds.
 
-> *"I thought I was being clever avoiding developers by using Zapier and Airtable. When it broke on a live client deal, I realized I didn't have a software product — I had a house of cards. LaunchStudio turned it into solid software in ten days."*
-> — **Bastiaan Kuijpers, Founder, MatchVinder (Rotterdam)**
+> *"I thought I was being clever avoiding developers by using Zapier and Airtable. When it broke on a live client deal, I realized I didn't have a software product - I had a house of cards. LaunchStudio turned it into solid software in ten days."*
+> - **Bastiaan Kuijpers, Founder, MatchVinder (Rotterdam)**
 
-**Cost & Timeline:** €2,400 (Launch Ready Package, workflow consolidation + unified database + automated billing) — live in 10 business days.
+**Cost & Timeline:** €2,400 (Launch Ready Package, workflow consolidation + unified database + automated billing) - live in 10 business days.
 
 ---
 

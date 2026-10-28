@@ -25,7 +25,7 @@ Een externe afhankelijkheid waar u geen controle over heeft en waarvan de levens
 Dat is exact wat een gehost taalmodel (LLM) van OpenAI, Anthropic of Google in essentie is.
 
 De specifieke modelversie waar u vandaag uw software tegenaan bouwt, wordt over zes tot twaalf maanden onherroepelijk uitgefaseerd (*deprecated*). 
-En de nieuwere opvolger — zelfs wanneer die op academische benchmarks aanzienlijk slimmer scoort — genereert voor dezelfde prompt **niet dezelfde output**. Systeeminstructies die tot in detail waren afgestemd op de nukken van het oude model, gedragen zich op het nieuwe model plotseling volstrekt anders.
+En de nieuwere opvolger - zelfs wanneer die op academische benchmarks aanzienlijk slimmer scoort - genereert voor dezelfde prompt **niet dezelfde output**. Systeeminstructies die tot in detail waren afgestemd op de nukken van het oude model, gedragen zich op het nieuwe model plotseling volstrekt anders.
 
 Dit fenomeen is uitstekend beheersbaar, mits u vanaf dag één drie fundamentele keuzes maakt:
 **Welk model kiest u, hoe borgt u de exacte versie, en welke abstractielaag plaatst u ertussen?**
@@ -37,7 +37,7 @@ Het eerste instinct van veel ontwikkelaars is om blindelings het meest geavancee
 Vier criteria wegen in de praktijk veel zwaarder:
 
 1. **Is het model goed genoeg voor deze specifieke taak?** Taken zoals tekstclassificatie, data-extractie, e-mailroutering en beknopte herformuleringen worden vlekkeloos afgehandeld door compacte, snelle modellen (zoals GPT-4o mini of Claude 3.5 Haiku). Test altijd eerst het lichte model; slaagt dit, dan bespaart u blijvend 90% op uw kosten en wachttijden.
-2. **Responstijd (Latentie):** Een model dat acht seconden nodig heeft voor een scherm waarop een klant actief zit te wachten, levert een inferieure gebruikerservaring op ten opzichte van een model dat er twee seconden over doet — ongeacht een marginaal kwaliteitsverschil.
+2. **Responstijd (Latentie):** Een model dat acht seconden nodig heeft voor een scherm waarop een klant actief zit te wachten, levert een inferieure gebruikerservaring op ten opzichte van een model dat er twee seconden over doet - ongeacht een marginaal kwaliteitsverschil.
 3. **Data Residency en AVG-Voorwaarden:** Waar worden de servers gehost? Biedt de leverancier een formele Verwerkersovereenkomst (DPA) volgens Europese standaarden? Garandeert de provider dat klantdata niet wordt gebruikt om toekomstige modellen te trainen? Dit zijn de eerste vragen die zakelijke klanten u zullen stellen.
 4. **Vervangbaarheid:** Is de logica zo specifiek dat alleen één leverancier dit kan, of kan elk capabel taalmodel deze taak uitvoeren?
 
@@ -48,7 +48,7 @@ Vier criteria wegen in de praktijk veel zwaarder:
 AI-leveranciers bieden zwevende aliassen aan, zoals `gpt-4o` of `claude-3-5-sonnet-latest`, die automatisch doorverwijzen naar de meest recente release.
 
 Het gebruik van zo'n zwevende alias is een sluipend gevaar in productie:
-Het betekent dat het gedrag van uw software plotseling op een willekeurige dinsdagmiddag kan veranderen — **zonder dat u ook maar één regel code heeft gedeployed!**
+Het betekent dat het gedrag van uw software plotseling op een willekeurige dinsdagmiddag kan veranderen - **zonder dat u ook maar één regel code heeft gedeployed!**
 
 **Specificeer daarom altijd een expliciete, gedateerde modelversie in uw configuratie** (bijvoorbeeld `gpt-4o-2024-08-06`). Hierdoor voert u upgrades uitsluitend gepland en na grondige regressietesten uit.
 
@@ -75,7 +75,7 @@ Wanneer een model definitief met pensioen gaat, volgt u een vaste migratiestraat
 4. **Gefaseerde Uitrol via een Feature Flag:** Schakel het nieuwe model eerst in voor interne tests, daarna voor 10% van de gebruikers, en monitor nauwlettend of de correctieratio stijgt.
 5. **Houd het Oude Model Stand-by:** Laat de oude configuratie actief totdat de provider deze definitief uitschakelt, zodat u bij onvoorziene problemen binnen vijf minuten kunt terugschakelen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software engineering) implementeren we modulaire model-abstracties, regressieteststraten en versiebeheer tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-migratiestrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat externe modelupdates uw dienstverlening nooit verstoren.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software engineering) implementeren we modulaire model-abstracties, regressieteststraten en versiebeheer tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-migratiestrategie met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat externe modelupdates uw dienstverlening nooit verstoren.
 
 ## Echt voorbeeld
 
@@ -96,7 +96,7 @@ De officiële aankondiging van de provider over de uitfasering bleek drie weken 
 **Resultaat:** Binnen drie werkdagen saneerde LaunchStudio de architectuur: het model werd direct vastgepind op een expliciete datumversie, er werd een centrale abstractielaag gebouwd met taakspecifieke modelconfiguratie, elke gegenereerde classificatie kreeg verplichte model- en promptmetadata in de database, er werd een vaste testsuite van 50 geanonimiseerde historische aanvragen ingericht voor toekomstige modelupgrades, en provider-notificaties werden gekoppeld aan een gemonitord Slack-kanaal. De definitieve overstap naar het nieuwste model werd vervolgens binnen vier dagen gecontroleerd en zonder één foute toewijzing afgerond.
 
 > *"De provider verbeterde zijn model, en mijn software begon subsidies naar de verkeerde commissieleden te sturen. Ik had zelf niets aangepast, en dat was precies de reden waarom het elf dagen duurde voordat we de oorzaak begrepen."*
-> — **Mert Yıldız, Oprichter, Aanvraagfilter**
+> - **Mert Yıldız, Oprichter, Aanvraagfilter**
 
 **Kosten & Doorlooptijd:** LLM abstractielaag, versie-pinning en regressietestsuite opgeleverd in 3 werkdagen.
 

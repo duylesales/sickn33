@@ -1,4 +1,4 @@
-🚨 Nearshore vs. offshore is usually framed as a geography question. The real question underneath is what type of collaboration the work actually requires — geography is just a proxy. 💶⚙️
+🚨 Nearshore vs. offshore is usually framed as a geography question. The real question underneath is what type of collaboration the work actually requires - geography is just a proxy. 💶⚙️
 
 **The Pain Points:**
 ❌ **Paying for Convenience You Don't Use:** A 20-40% nearshore premium for synchronous capacity bounded, well-specified work never needed.

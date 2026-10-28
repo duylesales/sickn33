@@ -27,7 +27,7 @@ Deze enterprise-klant arriveert niet met een handjevol testgegevens:
 Zij importeren direct **vier jaar aan bedrijfshistorie, 60.000 datarecords en twaalf actieve medewerkers** die het platform gelijktijdig openen.
 
 Alles wat u tijdens de bouwfase heeft getest op accounts met 25 records ontmoet nu een reële enterprise-dataset. En de fout uit zich vrijwel nooit in een harde crash:
-Het platform wordt simpelweg **ondraaglijk traag — uitsluitend voor deze specifieke grote klant — terwijl het voor al uw kleinere klanten vliegensvlug blijft functioneren**.
+Het platform wordt simpelweg **ondraaglijk traag - uitsluitend voor deze specifieke grote klant - terwijl het voor al uw kleinere klanten vliegensvlug blijft functioneren**.
 
 Dit is commercieel levensgevaarlijk:
 Uw grootste klant betaalt doorgaans de hoogste maandfactuur. Zijn gebruikerservaring bepaalt of u kunt doorbreken naar de bovenkant van de markt, of dat u voor altijd vast blijft zitten in het laagbetaalde segment. 
@@ -91,7 +91,7 @@ U hoeft niet direct complexe microservices, Kubernetes of database-sharding te b
 - **Stel standaard datalimieten in:** Zorg dat geen enkel API-endpoint per ongeluk meer dan 100 records teruggeeft zonder expliciete paginering.
 - **Verplaats zware exports naar de achtergrond:** PDF-generatie en grote CSV-exports horen thuis in een achtergrondtaak (*worker queue*), nooit in de directe HTTP-requestcyclus van de gebruiker.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in het schalen van enterprise software) simuleren we realistische enterprise-datavolumes, saneren we N+1 queries en optimaliseren we PostgreSQL-architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw performance-knelpunten met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw applicatie vlekkeloos presteert voor uw allergrootste klanten.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in het schalen van enterprise software) simuleren we realistische enterprise-datavolumes, saneren we N+1 queries en optimaliseren we PostgreSQL-architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw performance-knelpunten met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw applicatie vlekkeloos presteert voor uw allergrootste klanten.
 
 ## Echt voorbeeld
 
@@ -111,10 +111,10 @@ Drie fundamentele ontwerpfouten versterkten elkaar:
 
 Het drama beperkte zich niet tot deze klant: telkens wanneer de HR-directeur het scherm ververste, trok de database 40 seconden lang 100% CPU, waardoor ook drie andere klanten klaagden dat het platform stroperig traag reageerde.
 
-**Resultaat:** Binnen drie werkdagen saneerde LaunchStudio de complete datastroom: de 1.401 losse queries werden vervangen door twee geoptimaliseerde SQL-queries met `JOIN` en `GROUP BY`, paginering werd ingevoerd op 50 medewerkers per pagina inclusief server-side zoekfilter, er werden samengestelde B-tree indexen geplaatst op `employee_id` en verzuimdatums, en zware jaarstatistieken werden omgezet naar een nachtelijke aggregatie. De laadtijd daalde van **38 seconden naar slechts 400 milliseconden** — en de serverbelasting voor alle andere gebruikers daalde ogenblikkelijk.
+**Resultaat:** Binnen drie werkdagen saneerde LaunchStudio de complete datastroom: de 1.401 losse queries werden vervangen door twee geoptimaliseerde SQL-queries met `JOIN` en `GROUP BY`, paginering werd ingevoerd op 50 medewerkers per pagina inclusief server-side zoekfilter, er werden samengestelde B-tree indexen geplaatst op `employee_id` en verzuimdatums, en zware jaarstatistieken werden omgezet naar een nachtelijke aggregatie. De laadtijd daalde van **38 seconden naar slechts 400 milliseconden** - en de serverbelasting voor alle andere gebruikers daalde ogenblikkelijk.
 
 > *"De klant die mij verreweg het meeste geld betaalde, had de allerslechtste ervaring van iedereen. En alle drie de oorzaken zaten al vanaf de allereerste week in mijn prototype ingebakken."*
-> — **Elif Demir, Oprichter, Verzuimlijn**
+> - **Elif Demir, Oprichter, Verzuimlijn**
 
 **Kosten & Doorlooptijd:** Performance-audit, N+1 query eliminatie en database-indexering opgeleverd in 3 werkdagen.
 

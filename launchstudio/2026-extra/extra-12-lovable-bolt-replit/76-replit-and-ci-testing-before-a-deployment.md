@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Deploying from Replit is a button. That is the appeal, and for a prototype it is exactly right — the shortest possible path from a change to seeing it work.
+Deploying from Replit is a button. That is the appeal, and for a prototype it is exactly right - the shortest possible path from a change to seeing it work.
 
 For a product with customers it is also a path with nothing on it. Whatever is in the project goes live, including the change made three minutes ago that has not been run, the syntax error in a file nobody opened, and the secret somebody pasted into a config while debugging.
 
@@ -34,7 +34,7 @@ Order matters, because each is cheaper than the next and catches different thing
 
 **Do the linter and type checker pass?** Undefined variables, unused imports, wrong types, columns that do not exist. Free, fast, and they catch the invented interfaces that generated code produces.
 
-**Do the tests pass?** The proportionate suite described elsewhere in this series — authorisation, money, the main flow. This is the check that catches a behaviour change nobody intended.
+**Do the tests pass?** The proportionate suite described elsewhere in this series - authorisation, money, the main flow. This is the check that catches a behaviour change nobody intended.
 
 **Is there a secret in the code?** A scan for credential patterns in the built output, failing the build when one appears. Given how often this series has returned to keys in frontend bundles, it earns its place.
 
@@ -44,7 +44,7 @@ Four checks, under three minutes, and they catch the overwhelming majority of wh
 
 The practical question for a product living on a prototyping platform: where does CI actually happen?
 
-The realistic answer for most is a hosted repository's own automation — a workflow file in the repository that runs on every push. It is free at this scale, requires no infrastructure, and works regardless of where the product is deployed.
+The realistic answer for most is a hosted repository's own automation - a workflow file in the repository that runs on every push. It is free at this scale, requires no infrastructure, and works regardless of where the product is deployed.
 
 That implies the arrangement this series keeps recommending: the code lives in a repository, and the platform deploys from it rather than being the place the code lives. Deploying directly from an editing session means there is nothing to check before it happens.
 
@@ -54,9 +54,9 @@ The workflow is simple: on every push, install, build, lint, type check, test, s
 
 A check that can be ignored is not a gate.
 
-Two decisions make it real. A failing check blocks the deployment — not a warning, not a notification, a refusal. And the checks are fast enough that waiting for them is not a reason to bypass them; if the suite takes fifteen minutes, it will be circumvented on the afternoon it matters.
+Two decisions make it real. A failing check blocks the deployment - not a warning, not a notification, a refusal. And the checks are fast enough that waiting for them is not a reason to bypass them; if the suite takes fifteen minutes, it will be circumvented on the afternoon it matters.
 
-The corollary is that a check which fails intermittently must be fixed or removed. A flaky test teaches you to re-run and continue, which trains you to ignore the gate entirely — and at that point you have the cost of CI with none of the benefit.
+The corollary is that a check which fails intermittently must be fixed or removed. A flaky test teaches you to re-run and continue, which trains you to ignore the gate entirely - and at that point you have the cost of CI with none of the benefit.
 
 ## Add Checks From Incidents
 
@@ -70,7 +70,7 @@ This is how a pipeline stays proportionate. Each check exists because something 
 
 One addition beyond checking: a running copy of every branch, deployed automatically, at its own URL.
 
-For a solo founder this is the ability to look at a change in a real environment before merging it, which catches the things no automated check can — a layout that breaks on a phone, a flow that is confusing, a message in the wrong tone.
+For a solo founder this is the ability to look at a change in a real environment before merging it, which catches the things no automated check can - a layout that breaks on a phone, a flow that is confusing, a message in the wrong tone.
 
 For a two-person team it is how the other person reviews without running anything locally.
 
@@ -88,11 +88,11 @@ Four things to leave until later.
 
 **Deployment to multiple environments with approvals.** A staging environment is worth having; a promotion workflow with sign-off gates is ceremony for a team of one.
 
-**Performance budgets and visual regression.** Useful eventually, noisy early, and both produce failures that require judgement rather than a fix — which is the property that makes a gate get ignored.
+**Performance budgets and visual regression.** Useful eventually, noisy early, and both produce failures that require judgement rather than a fix - which is the property that makes a gate get ignored.
 
 **Anything requiring maintenance you will not do.** A check that breaks every few weeks and needs attention is a check that will be disabled.
 
-The proportionate pipeline for a small product is the four checks named above plus whatever incidents have added, running in three minutes, requiring no attention between failures. That is enough to remove the anxiety from deploying, which is the entire point — and every addition beyond it should earn its place by preventing something that actually happened.
+The proportionate pipeline for a small product is the four checks named above plus whatever incidents have added, running in three minutes, requiring no attention between failures. That is enough to remove the anxiety from deploying, which is the entire point - and every addition beyond it should earn its place by preventing something that actually happened.
 
 ## Migrations Need Their Own Gate
 
@@ -110,15 +110,15 @@ Three checks are worth adding once your product has a schema worth protecting.
 
 Add a fourth if your data is large: that the migration completes within a sensible time on a realistic volume, since a statement that locks a table for eleven minutes is an outage regardless of whether it succeeds.
 
-None of this is elaborate, and together they close the gap that remains after the ordinary checks — which is that the most dangerous change your product makes is the one your test suite cannot undo.
+None of this is elaborate, and together they close the gap that remains after the ordinary checks - which is that the most dangerous change your product makes is the one your test suite cannot undo.
 
-The same principle applies to any irreversible action a deployment can trigger — a bulk email, a charge, a file deletion. If a release can do it, the pipeline should know, and a human should have agreed to it deliberately.
+The same principle applies to any irreversible action a deployment can trigger - a bulk email, a charge, a file deletion. If a release can do it, the pipeline should know, and a human should have agreed to it deliberately.
 
 ## Setting This Up
 
 For a Replit product this is typically one day: the code in a repository with the platform deploying from it rather than from an editing session, a workflow running on every push that installs, builds, lints, type checks, tests and scans for secrets, deployment gated on all of them passing, checks kept under about three minutes so they are never bypassed, flaky tests fixed or removed, preview deployments per branch with their own credentials and protected from public access, and a habit of adding a check whenever an incident reveals a gap.
 
-LaunchStudio sets this up as part of production readiness, and it is usually the change that makes founders willing to deploy on a Friday. The engineers are Manifera's — eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio sets this up as part of production readiness, and it is usually the change that makes founders willing to deploy on a Friday. The engineers are Manifera's - eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Ask us what currently stands between your code and your customers](https://launchstudio.eu/en/#contact). For many products the honest answer is nothing.
 
@@ -130,7 +130,7 @@ Maud Terlouw built Rittenregistratie on Replit: journey and expense registration
 
 She deployed with the platform's button, from the editing session, several times a day. There were no tests and no checks.
 
-On a Thursday afternoon she made a small change to the expense calculation and deployed at 16:25, then left to collect her children. The change contained a reference to a variable that did not exist in that scope — the kind of error a type checker reports instantly and a person reading quickly does not.
+On a Thursday afternoon she made a small change to the expense calculation and deployed at 16:25, then left to collect her children. The change contained a reference to a variable that did not exist in that scope - the kind of error a type checker reports instantly and a person reading quickly does not.
 
 The application failed to start. Between 16:25 and 19:40, when a carer's message finally reached her, around 400 carers ending their shifts could not register the day's journeys. Most gave up; two organisations had staff record them on paper and re-enter them the following week.
 
@@ -139,9 +139,9 @@ Two business days: the code moved into a repository with the platform deploying 
 **Result:** the pipeline has blocked 14 deployments in the following year, of which 9 were build or type failures that would have broken the product exactly as the original incident did. Maud notes that she now deploys more often rather than less, because the decision has been removed from it.
 
 > *"I deployed at twenty-five past four and went to collect my children. Four hundred carers could not register their journeys for three hours, and the error was a variable name a type checker would have caught before I left the room."*
-> — **Maud Terlouw, Founder, Rittenregistratie (Gouda)**
+> - **Maud Terlouw, Founder, Rittenregistratie (Gouda)**
 
-**Cost & Timeline:** €2,600 (repository-based deployment, CI workflow with build, lint, type check, test and secret scanning, deployment gating, 31-test suite, preview deployments with isolated credentials, uptime monitoring) — completed in 2 business days.
+**Cost & Timeline:** €2,600 (repository-based deployment, CI workflow with build, lint, type check, test and secret scanning, deployment gating, 31-test suite, preview deployments with isolated credentials, uptime monitoring) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -163,7 +163,7 @@ Fix it or remove it. A flaky check teaches you to re-run and proceed, which is t
 
 ### Which checks should I add after the basics?
 
-Whichever ones an incident tells you to. A missing migration, an unauthorised endpoint, a vulnerable dependency, an oversized bundle — each becomes a check after it happens once.
+Whichever ones an incident tells you to. A missing migration, an unauthorised endpoint, a vulnerable dependency, an oversized bundle - each becomes a check after it happens once.
 
 <script type="application/ld+json">
 {
@@ -175,7 +175,7 @@ Whichever ones an incident tells you to. A missing migration, an unauthorised en
       "name": "What is the first CI check worth adding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "That the project builds — ninety seconds, no tests required, and it prevents the most common broken deployment."
+        "text": "That the project builds - ninety seconds, no tests required, and it prevents the most common broken deployment."
       }
     },
     {
@@ -207,7 +207,7 @@ Whichever ones an incident tells you to. A missing migration, an unauthorised en
       "name": "Which checks come after build, lint and tests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Whichever an incident calls for — migration consistency, cross-account authorisation, dependency audits, bundle size limits."
+        "text": "Whichever an incident calls for - migration consistency, cross-account authorisation, dependency audits, bundle size limits."
       }
     }
   ]

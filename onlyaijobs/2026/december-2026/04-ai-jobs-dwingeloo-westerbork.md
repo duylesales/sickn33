@@ -13,7 +13,7 @@ Content Format: Regional Market Analysis
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Jobs in Dwingeloo and Westerbork: Radio Astronomy and the Largest Data Streams in Drenthe",
-  "description": "A village in Drenthe hosts the Netherlands Institute for Radio Astronomy, the LOFAR telescope and a European VLBI institute — one of the most data-intensive workplaces in the country, in one of its quietest regions.",
+  "description": "A village in Drenthe hosts the Netherlands Institute for Radio Astronomy, the LOFAR telescope and a European VLBI institute - one of the most data-intensive workplaces in the country, in one of its quietest regions.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-02",
@@ -39,7 +39,7 @@ There is a village in Drenthe with fewer than two thousand inhabitants where peo
 
 ## Why a Quiet Region Is the Right Place for This Work
 
-Radio astronomy needs radio silence. Every mobile phone, every switching power supply, every badly shielded LED driver produces interference in the frequency bands that telescopes observe. Drenthe's low population density is not incidental to the science — it is a precondition for it, and the region is protected accordingly.
+Radio astronomy needs radio silence. Every mobile phone, every switching power supply, every badly shielded LED driver produces interference in the frequency bands that telescopes observe. Drenthe's low population density is not incidental to the science - it is a precondition for it, and the region is protected accordingly.
 
 That gives the local labour market an unusual shape. Instead of a spread of employers, there is a cluster of world-class scientific infrastructure, staffed by engineers, software developers and scientists, in a place where housing is inexpensive and the commute is a bicycle ride through the woods.
 
@@ -65,7 +65,7 @@ That gives the local labour market an unusual shape. Instead of a spread of empl
 
 **Calibration and imaging.** Turning raw interferometric data into a scientifically usable image requires solving large inverse problems with instrumental and ionospheric effects folded in. This is applied mathematics and high-performance computing rather than off-the-shelf ML, though learned components increasingly appear inside classical pipelines.
 
-**Source finding and classification.** Sky surveys produce catalogues with millions of sources. Identifying, classifying and cross-matching them across wavelengths is a machine learning problem with serious class-imbalance and label-quality challenges — and one where citizen science projects have historically supplied training labels.
+**Source finding and classification.** Sky surveys produce catalogues with millions of sources. Identifying, classifying and cross-matching them across wavelengths is a machine learning problem with serious class-imbalance and label-quality challenges - and one where citizen science projects have historically supplied training labels.
 
 **Transient detection.** Some phenomena last milliseconds. Detecting them means running classifiers on streaming data with a false-positive budget, because a human cannot review everything and a missed event is gone forever.
 
@@ -73,7 +73,7 @@ That gives the local labour market an unusual shape. Instead of a spread of empl
 
 ## The Constraint That Defines Radio Astronomy Computing
 
-In most commercial data work, you store everything and decide later what to analyse. Radio astronomy cannot. The raw data rate of a modern array exceeds what can be written to disk indefinitely, so the instrument must reduce data on the fly — and any information discarded at that moment is gone.
+In most commercial data work, you store everything and decide later what to analyse. Radio astronomy cannot. The raw data rate of a modern array exceeds what can be written to disk indefinitely, so the instrument must reduce data on the fly - and any information discarded at that moment is gone.
 
 This forces a discipline that transfers remarkably well to industry: understanding the physics well enough to know what can safely be thrown away, designing pipelines whose intermediate products are still scientifically valid, and quantifying what a compression or averaging choice costs in sensitivity. Engineers who have worked under that constraint tend to be very good at building efficient systems elsewhere.
 
@@ -85,7 +85,7 @@ This forces a discipline that transfers remarkably well to industry: understandi
 | Typical AI work | Signal processing, interference mitigation, source classification, HPC pipelines | Astronomy research, data science, energy analytics, health data |
 | Employer mix | A small number of specialised institutes | A broad mix of employers |
 | Working language | English | English in research, Dutch elsewhere |
-| Distance | — | About an hour by car |
+| Distance | - | About an hour by car |
 
 Many staff live in Assen, Hoogeveen, Meppel or Groningen and commute. The scientific community is international, and English is the working language, which removes the language barrier that limits many other regional markets.
 
@@ -97,11 +97,11 @@ Many staff live in Assen, Hoogeveen, Meppel or Groningen and commute. The scient
 
 **Research integrity.** Methods must be documented well enough for another group to reproduce a result years later. That standard is higher than most commercial practice and is a useful thing to have internalised early in a career.
 
-**EU AI Act.** Scientific research and development receive specific treatment in the AI Act, and pure research use is largely outside its high-risk regime — but institutes still apply governance to systems that affect people, such as tools used in recruitment or administration.
+**EU AI Act.** Scientific research and development receive specific treatment in the AI Act, and pure research use is largely outside its high-risk regime - but institutes still apply governance to systems that affect people, such as tools used in recruitment or administration.
 
 ## A Concrete Scenario: The Classifier That Learned the Telescope
 
-A team trains a classifier to identify a rare type of radio source in survey data. Performance on the validation set is strong. When the model is applied to data from a later observing run, its output changes noticeably — not because the sky changed, but because a subset of stations had been re-calibrated and the instrumental point spread function differed slightly.
+A team trains a classifier to identify a rare type of radio source in survey data. Performance on the validation set is strong. When the model is applied to data from a later observing run, its output changes noticeably - not because the sky changed, but because a subset of stations had been re-calibrated and the instrumental point spread function differed slightly.
 
 The model had learned instrument characteristics as if they were astrophysics. The fix involves augmenting training data across instrument configurations, testing explicitly for configuration-dependent behaviour, and reporting performance per configuration rather than in aggregate.
 
@@ -111,7 +111,7 @@ This is the astronomical version of a problem every applied ML practitioner even
 
 Candidates often assume that working at a research institute means a PhD in astronomy is mandatory. For a significant share of the roles it is not. Digital signal processing engineers, software developers, HPC specialists, data engineers, electronics engineers and system administrators are all essential, and many come from industry backgrounds. What is required is comfort working alongside scientists, tolerance for problems that take years, and enough curiosity to learn the domain vocabulary.
 
-The second misconception is about pay. Public research salaries follow collective agreements and will not match a Randstad tech company's top of band — but housing costs in Drenthe are among the lowest in the country, which changes the comparison considerably.
+The second misconception is about pay. Public research salaries follow collective agreements and will not match a Randstad tech company's top of band - but housing costs in Drenthe are among the lowest in the country, which changes the comparison considerably.
 
 ## Typical Job Titles to Search For
 
@@ -125,7 +125,7 @@ The second misconception is about pay. Public research salaries follow collectiv
 
 ## Skills and Tools That Stand Out
 
-- **Signal processing fundamentals.** Fourier methods, filtering, sampling theory — the basis for everything the instruments do.
+- **Signal processing fundamentals.** Fourier methods, filtering, sampling theory - the basis for everything the instruments do.
 - **High-performance computing.** Parallel programming, GPU acceleration, profiling and memory-bandwidth awareness.
 - **Python and C++.** Python for pipelines and analysis, C++ or accelerator code where performance matters.
 - **Statistics for rare events.** Detection thresholds, false-alarm rates, and calibration of probabilities.
@@ -134,13 +134,13 @@ The second misconception is about pay. Public research salaries follow collectiv
 
 ## Living and Working in Drenthe
 
-Dwingeloo and Westerbork sit in a landscape of heath, forest and small villages. Housing is inexpensive by Dutch standards, schools are nearby, and the practical trade-off is that a car is close to essential — public transport in rural Drenthe is thin, and shifts around observatory operations do not always align with bus timetables.
+Dwingeloo and Westerbork sit in a landscape of heath, forest and small villages. Housing is inexpensive by Dutch standards, schools are nearby, and the practical trade-off is that a car is close to essential - public transport in rural Drenthe is thin, and shifts around observatory operations do not always align with bus timetables.
 
-The professional trade-off is concentration: these institutes are close to unique in the country. Career moves usually mean either a step within the institute, a move into the broader scientific computing world, or a transfer into industry — where, as it happens, radio astronomy alumni have a strong track record in data engineering and machine learning roles.
+The professional trade-off is concentration: these institutes are close to unique in the country. Career moves usually mean either a step within the institute, a move into the broader scientific computing world, or a transfer into industry - where, as it happens, radio astronomy alumni have a strong track record in data engineering and machine learning roles.
 
 ## Career Growth From Astronomical Data Work
 
-The skills built here — streaming data, signal processing, large-scale inverse problems, HPC and rigorous validation — transfer to semiconductors, medical imaging, defence sensing, energy and finance. Internally, growth runs towards instrument or software architecture, project leadership on international collaborations, or scientific staff positions. It is one of the few career paths in the Netherlands where a regional address and world-leading work coincide.
+The skills built here - streaming data, signal processing, large-scale inverse problems, HPC and rigorous validation - transfer to semiconductors, medical imaging, defence sensing, energy and finance. Internally, growth runs towards instrument or software architecture, project leadership on international collaborations, or scientific staff positions. It is one of the few career paths in the Netherlands where a regional address and world-leading work coincide.
 
 ## Key Takeaways
 
@@ -159,7 +159,7 @@ Browse current AI, machine learning and data jobs in and around Drenthe at [only
 ## Frequently Asked Questions
 
 ### (Scenario: engineer without an astronomy background) Can I work at a radio astronomy institute without a PhD?
-Yes — signal processing, software, data engineering and HPC roles are central, and many staff come from industry rather than academia.
+Yes - signal processing, software, data engineering and HPC roles are central, and many staff come from industry rather than academia.
 
 ### (Scenario: international candidate) Do I need Dutch?
 The scientific and engineering working language is English; Dutch is useful for daily life and for roles at regional employers.
@@ -178,7 +178,7 @@ Assen, Hoogeveen, Meppel and Groningen are all within commuting distance, but pu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I work at a radio astronomy institute without a PhD?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — signal processing, software, data engineering and HPC roles are central and many staff come from industry."}},
+    {"@type": "Question", "name": "Can I work at a radio astronomy institute without a PhD?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - signal processing, software, data engineering and HPC roles are central and many staff come from industry."}},
     {"@type": "Question", "name": "Do I need Dutch to work at ASTRON or JIVE?", "acceptedAnswer": {"@type": "Answer", "text": "The scientific and engineering working language is English; Dutch is useful for daily life and regional employers."}},
     {"@type": "Question", "name": "How does research pay compare with a Randstad tech job?", "acceptedAnswer": {"@type": "Answer", "text": "Public research salaries follow collective agreements and are lower at the top end, but Drenthe housing costs are much lower."}},
     {"@type": "Question", "name": "What machine learning is used in radio astronomy?", "acceptedAnswer": {"@type": "Answer", "text": "Interference and anomaly detection, source classification, transient detection and learned components inside calibration pipelines."}},

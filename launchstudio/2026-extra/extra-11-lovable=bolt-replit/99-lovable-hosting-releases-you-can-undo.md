@@ -30,17 +30,17 @@ The answer is not to slow down. It is to make going back so boring that shipping
 
 **Development** is where you and your tooling work. It has fictional data, it can be broken at any moment, and nobody outside sees it.
 
-**Staging** is a full copy of production — same code path, same configuration shape, its own database — where a change is confirmed working before anyone meets it. This is the environment small products skip and the one that pays for itself the first time.
+**Staging** is a full copy of production - same code path, same configuration shape, its own database - where a change is confirmed working before anyone meets it. This is the environment small products skip and the one that pays for itself the first time.
 
 **Production** is what customers use, and it should only ever receive changes that have been seen working somewhere else.
 
-Two rules make this real rather than decorative. Staging gets its own data, anonymised from production rather than connected to it — a staging environment pointing at the live database means a test deletion is a real deletion. And staging is blocked from search engines and ideally password-protected, or you acquire a second version of your site competing with the first.
+Two rules make this real rather than decorative. Staging gets its own data, anonymised from production rather than connected to it - a staging environment pointing at the live database means a test deletion is a real deletion. And staging is blocked from search engines and ideally password-protected, or you acquire a second version of your site competing with the first.
 
 ## Rollback Is the Feature
 
 Ask yourself one question: if the change you are about to make turns out to be wrong, how long until it is undone, and do you know the steps?
 
-If the answer involves thinking, you do not have a rollback — you have a hope. And the time to discover the steps is not while customers are affected.
+If the answer involves thinking, you do not have a rollback - you have a hope. And the time to discover the steps is not while customers are affected.
 
 Most platforms keep previous deployments and can restore one in a minute. Find out where that control is, once, today, while nothing is wrong. Then test it deliberately: deploy something trivial, roll it back, and time it. A rollback you have performed is a rollback you will reach for; one you have only read about is a rollback you will avoid at exactly the wrong moment.
 
@@ -58,7 +58,7 @@ The same applies to anything irreversible in the world: emails sent, payments ta
 
 A small technique with a large effect.
 
-A flag is a condition your code checks before showing a feature. With it, code can be deployed while the feature stays off, switched on for yourself, then a friendly customer, then everybody — and switched off in seconds if something is wrong.
+A flag is a condition your code checks before showing a feature. With it, code can be deployed while the feature stays off, switched on for yourself, then a friendly customer, then everybody - and switched off in seconds if something is wrong.
 
 Three uses justify the effort for a small product. Turning a new feature on gradually rather than for four hundred people at once. Turning an expensive feature off under load, which is what saves a launch day. And separating a risky change from a deploy, so the undo does not require another release.
 
@@ -66,7 +66,7 @@ Keep them simple: a configuration value or a small table, not a platform. And re
 
 ## A Release Routine That Fits One Person
 
-**Before:** the change is on staging and you have used it as a real user would. If it touches data, money or permissions, someone else has looked — and if there is no one else, you have read the diff yourself, deliberately, rather than trusting that it worked.
+**Before:** the change is on staging and you have used it as a real user would. If it touches data, money or permissions, someone else has looked - and if there is no one else, you have read the diff yourself, deliberately, rather than trusting that it worked.
 
 **During:** deploy at a time you can watch. Not Friday evening, not before you leave.
 
@@ -80,7 +80,7 @@ Deploying automatically on every commit is excellent for a product with a test s
 
 The sensible progression: manual deploys with a rollback you have tested; then automatic deploys to staging with manual promotion to production; then automatic promotion once tests exist that you trust. Skipping to the end because it is what mature teams do gives you the speed of a mature team and none of the safety.
 
-What is worth automating immediately regardless: the build itself, so that deploying is one action rather than a remembered sequence. Most bad releases at small companies are not bad code — they are a step somebody forgot.
+What is worth automating immediately regardless: the build itself, so that deploying is one action rather than a remembered sequence. Most bad releases at small companies are not bad code - they are a step somebody forgot.
 
 ## When a Release Goes Wrong Anyway
 
@@ -96,7 +96,7 @@ It will, and the difference between a bad twenty minutes and a bad week is entir
 
 **Write down the sequence while it is fresh.** What changed, when it broke, how you noticed, what you did. Tomorrow you will remember a simplified version, and the details are where the real cause lives.
 
-**Then ask what would have caught it.** A staging check, a test, a review, a flag. One improvement per incident, applied immediately, is how a release process gets better — and it should be a change to the process, never a resolution to be more careful, which is not a thing anybody can actually do.
+**Then ask what would have caught it.** A staging check, a test, a review, a flag. One improvement per incident, applied immediately, is how a release process gets better - and it should be a change to the process, never a resolution to be more careful, which is not a thing anybody can actually do.
 
 ## Setting This Up
 
@@ -116,16 +116,16 @@ He deployed directly to production from his working environment, which had been 
 
 On a Thursday afternoon he asked an agent session to tidy up the sales table, and the migration it generated dropped a column recording which till a transaction came from. The application still worked. Nothing errored. But the per-till breakdown that eleven of his retailers used for staff reconciliation returned empty, and the accounting export now attributed every sale to a single till.
 
-He discovered it at half past four when a retailer phoned. Reverting the code changed nothing, because the data was gone. The backup was from that morning, and restoring it would have discarded a day of trading for all 34 shops — so he could not simply restore either.
+He discovered it at half past four when a retailer phoned. Reverting the code changed nothing, because the data was gone. The backup was from that morning, and restoring it would have discarded a day of trading for all 34 shops - so he could not simply restore either.
 
 Six business days of work: the till column reconstructed for the affected day by matching transactions against the retailers' own till receipts, which two shops could not fully supply and which was written off with their agreement; a staging environment created with anonymised data and blocked from indexing; the build made reproducible from a repository with every deploy tied to a commit; rollback tested and timed at 40 seconds; the expand-and-contract pattern adopted for schema changes, with a rule that any migration touching data is read by Mark before it runs and preceded by a manual snapshot; a simple feature flag mechanism added; database credentials separated so the application's ordinary account cannot drop anything; and a five-line release routine written and stuck to the side of his monitor.
 
-**Result:** eleven months without an incident, and Mark reports that the change he values most is the smallest one — the rule that a migration touching data is read before it runs, which has caught two further destructive suggestions since.
+**Result:** eleven months without an incident, and Mark reports that the change he values most is the smallest one - the rule that a migration touching data is read before it runs, which has caught two further destructive suggestions since.
 
 > *"Reverting the code took thirty seconds and changed nothing, because the column was gone. That was the afternoon I learned that undo and rollback are not the same thing."*
-> — **Mark Oudshoorn, Founder, Kassakoppeling (Gorinchem)**
+> - **Mark Oudshoorn, Founder, Kassakoppeling (Gorinchem)**
 
-**Cost & Timeline:** €3,400 (data reconstruction, staging environment, reproducible builds with tested rollback, expand-and-contract migrations, feature flags, credential separation) — completed in 6 business days.
+**Cost & Timeline:** €3,400 (data reconstruction, staging environment, reproducible builds with tested rollback, expand-and-contract migrations, feature flags, credential separation) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -139,7 +139,7 @@ A minute or two, and you should have performed one. Find the control on your pla
 
 ### Why can I not roll back a database change?
 
-Because reverting code does not bring data back. A dropped column or a transformed value is gone. Use expand-and-contract — add, write to both, backfill, switch reads, remove later — so every step is individually reversible.
+Because reverting code does not bring data back. A dropped column or a transformed value is gone. Use expand-and-contract - add, write to both, backfill, switch reads, remove later - so every step is individually reversible.
 
 ### What are feature flags for in a small product?
 
@@ -147,7 +147,7 @@ Turning a feature on gradually, turning an expensive one off under load, and sep
 
 ### Should I deploy automatically on every commit?
 
-Not until you have tests you trust. Progress from manual deploys with a tested rollback, to automatic staging with manual promotion, to full automation. Automate the build immediately, though — most bad releases are a forgotten step rather than bad code.
+Not until you have tests you trust. Progress from manual deploys with a tested rollback, to automatic staging with manual promotion, to full automation. Automate the build immediately, though - most bad releases are a forgotten step rather than bad code.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ Not until you have tests you trust. Progress from manual deploys with a tested r
       "name": "Do I really need a staging environment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Once customers depend on the product, yes — a full copy with its own anonymised data, never pointed at the live database."
+        "text": "Once customers depend on the product, yes - a full copy with its own anonymised data, never pointed at the live database."
       }
     },
     {
@@ -167,7 +167,7 @@ Not until you have tests you trust. Progress from manual deploys with a tested r
       "name": "How fast should a rollback be?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A minute or two, and you should have performed one already — deploy something trivial, roll it back and time it while nothing is wrong."
+        "text": "A minute or two, and you should have performed one already - deploy something trivial, roll it back and time it while nothing is wrong."
       }
     },
     {

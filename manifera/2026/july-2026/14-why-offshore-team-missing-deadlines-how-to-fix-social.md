@@ -1,6 +1,6 @@
 ⏰ **"90% done. For the third week in a row."**
 
-If this sounds familiar, your offshore team doesn't have a people problem — it has a process problem. Here are the 5 root causes:
+If this sounds familiar, your offshore team doesn't have a people problem - it has a process problem. Here are the 5 root causes:
 
 🔴 **#1: Ambiguous Acceptance Criteria**
 "Build a dashboard" means different things in Amsterdam and Ho Chi Minh City.
@@ -12,7 +12,7 @@ Tasks estimated at 2 days take 5. Teams under-estimate to avoid looking slow.
 
 🔴 **#3: Silent Blockers**
 Developer stuck for 2 days but doesn't mention it until sprint review.
-→ FIX: "4-hour rule" — stuck for 4h? Flag it immediately. Create a safe culture for asking help.
+→ FIX: "4-hour rule" - stuck for 4h? Flag it immediately. Create a safe culture for asking help.
 
 🔴 **#4: Scope Creep via Slack**
 PO sends "quick requests" directly to developers, bypassing the backlog.

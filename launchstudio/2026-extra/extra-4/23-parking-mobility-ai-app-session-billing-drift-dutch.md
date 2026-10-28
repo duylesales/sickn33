@@ -80,9 +80,9 @@ LaunchStudio's beoordeling identificeerde de ontbrekende waarborg: geen maximale
 **Resultaat:** ParkeerTik factureert niet langer voor onbepaalde tijd voor sessies zonder bevestigd eindsignaal, en betwiste afschrijvingen daalden scherp in de weken na de herstelling.
 
 > *"Eén slechte beoordeling door een overbelasting van twee uur deed meer schade aan de reputatie van mijn app dan maanden van goede service hadden opgebouwd. Ik realiseerde me niet hoe kwetsbaar sessiefacturering daadwerkelijk was totdat het op de slechtst mogelijke manier brak."*
-> — **Dex Peters, Oprichter, ParkeerTik (Dordrecht)**
+> - **Dex Peters, Oprichter, ParkeerTik (Dordrecht)**
 
-**Kosten en tijdlijn:** € 950 (sessie-time-out en afstemmingslogica) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (sessie-time-out en afstemmingslogica) - voltooid in 5 werkdagen.
 
 ---
 

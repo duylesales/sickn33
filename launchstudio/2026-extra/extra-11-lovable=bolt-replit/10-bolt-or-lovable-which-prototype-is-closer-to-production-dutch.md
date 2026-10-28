@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-Vraag op een tech-forum welke tool beter is en u belandt in een religieuze discussie. Vraag welke tool u dichter bij een product brengt waar u daadwerkelijk geld voor kunt vragen, en het antwoord wordt ineens uiterst tastbaar — want "dichter bij productie" is geen kwestie van smaak of voorkeur. Het is een concrete lijst van specifieke ontbrekende onderdelen, en u kunt elk willekeurig prototype daar binnen een middag tegen afzetten, ongeacht welke AI-tool het heeft gebouwd.
+Vraag op een tech-forum welke tool beter is en u belandt in een religieuze discussie. Vraag welke tool u dichter bij een product brengt waar u daadwerkelijk geld voor kunt vragen, en het antwoord wordt ineens uiterst tastbaar - want "dichter bij productie" is geen kwestie van smaak of voorkeur. Het is een concrete lijst van specifieke ontbrekende onderdelen, en u kunt elk willekeurig prototype daar binnen een middag tegen afzetten, ongeacht welke AI-tool het heeft gebouwd.
 
 Dit is die exacte meting, toegepast op de twee builders waarmee oprichters het vaakst bij ons aankloppen: Bolt en Lovable. De conclusie alvast vooraf: het onderlinge verschil tussen deze twee tools is aanzienlijk kleiner dan de afstand tussen elk van hen en een werkelijk lanceerbaar product. En de factor die er het meest toe doet, is niet welke tool u koos, maar wat u er vervolgens binnenskamers mee deed.
 
@@ -46,7 +46,7 @@ Elk prototype schiet tekort op een aantal van deze punten. De relevante vraag is
 
 **Bolt levert doorgaans een schonere, conventionelere codebase op die minder gekoppeld is.** De gegenereerde code oogt vaker als iets wat een traditionele ontwikkelaar zou hebben geschreven, wat het overnemen ervan prettig maakt. Het stopt echter vaker bij een pure frontend, waarbij het persistent opslaan van data aan de gebruiker wordt overgelaten. U bent daarmee verder verwijderd van een werkende backend, maar loopt tegelijkertijd minder het risico dat u ten onrechte denkt dat de beveiliging al geregeld is.
 
-Kort samengevat: Lovable brengt u functioneel verder, maar laat u vaak met meer zelfvertrouwen kwetsbaar achter. Bolt brengt u minder ver qua infrastructuur, maar maakt de resterende kloof duidelijker zichtbaar. Geen van beide is een waardeoordeel over kwaliteit — het zijn simpelweg verschillende standaardkeuzes, en ze leiden tot een ander startgesprek met een engineer.
+Kort samengevat: Lovable brengt u functioneel verder, maar laat u vaak met meer zelfvertrouwen kwetsbaar achter. Bolt brengt u minder ver qua infrastructuur, maar maakt de resterende kloof duidelijker zichtbaar. Geen van beide is een waardeoordeel over kwaliteit - het zijn simpelweg verschillende standaardkeuzes, en ze leiden tot een ander startgesprek met een engineer.
 
 ## Wat Beide Tools Structureel Onopgelost Laten
 
@@ -76,7 +76,7 @@ Welke builder u ook gebruikt, maak dit een harde voorwaarde bij elk hardening-tr
 
 Een herkenbaar patroon: een oprichter bouwt in de ene tool, stuit op frictie, stapt over naar de andere, en herhaalt dat proces. Elke overstap betekent in de praktijk dat de app opnieuw wordt gegenereerd in plaats van geporteerd, waardoor de tweede versie niets meeneemt van de foutoplossingen die in de eerste waren doorgevoerd.
 
-Als een tool u écht fundamenteel blokkeert — een functionaliteit die technisch onmogelijk is binnen het platform — is overstappen rationeel. Maar overstappen omdat de voortgang stroef voelt, reset uw vooruitgang in plaats van deze te versnellen. De lakmoesproef: schrijf concreet op wát u exact niet kunt realiseren in uw huidige tool. Kunt u dat niet benoemen? Dan is de frictie simpelweg de inherente complexiteit van uw productidee, en reist dat probleem naadloos met u mee naar de volgende tool.
+Als een tool u écht fundamenteel blokkeert - een functionaliteit die technisch onmogelijk is binnen het platform - is overstappen rationeel. Maar overstappen omdat de voortgang stroef voelt, reset uw vooruitgang in plaats van deze te versnellen. De lakmoesproef: schrijf concreet op wát u exact niet kunt realiseren in uw huidige tool. Kunt u dat niet benoemen? Dan is de frictie simpelweg de inherente complexiteit van uw productidee, en reist dat probleem naadloos met u mee naar de volgende tool.
 
 ## Meet Uw Eigen Prototype Binnen Één Middag
 
@@ -95,7 +95,7 @@ Deze zes uitkomsten leveren u een productiescore op die oneindig veel eerlijker 
 
 Het traject van prototype naar productie heeft bij beide builders exact dezelfde vorm: RLS-autorisatieregels geschreven en getest door actief te proberen in te breken, API-geheimen verhuisd naar serverloze functies, betaalstromen inclusief afgebroken sessies waterdicht afgestemd, deployment op uw eigen domein met SSL, geteste back-ups en uptime-monitoring, en een gedocumenteerde overdracht die de app volledig bewerkbaar houdt in uw oorspronkelijke builder.
 
-Dat is de kern van LaunchStudio's [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), met een vaste prijs tussen €800 en €7.500 afhankelijk van wat de bovenstaande zes checks uitwijzen, gerealiseerd binnen één tot drie weken — omdat uw frontend behouden blijft en niet opnieuw wordt ontworpen. Daarachter staat Manifera, met elf jaar productie-ervaring voor ondernemingen als Vodafone, TNO en CFLW.
+Dat is de kern van LaunchStudio's [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), met een vaste prijs tussen €800 en €7.500 afhankelijk van wat de bovenstaande zes checks uitwijzen, gerealiseerd binnen één tot drie weken - omdat uw frontend behouden blijft en niet opnieuw wordt ontworpen. Daarachter staat Manifera, met elf jaar productie-ervaring voor ondernemingen als Vodafone, TNO en CFLW.
 
 [Stuur ons uw prototypelink](https://launchstudio.eu/nl/#contact) en u ontvangt binnen één werkdag een heldere, objectieve analyse van waar uw project staat.
 
@@ -105,7 +105,7 @@ Oprichters combineren deze tools regelmatig, dus het is verhelderend om Cursor e
 
 **Cursor levert de codebase op die het prettigst is om over te nemen, maar regelt uit zichzelf niets van uw infrastructuur.** Omdat u werkt in echte bestanden in een echte git-repository, is de structuur doorgaans netjes en kan een software-engineer de code direct lezen. Cursor neemt echter geen enkele beslissing over waar de app draait, hoe data wordt afgeschermd of hoe deployments verlopen. Cursor-projecten slagen daardoor vrijwel altijd voor bewerkbaarheid, maar falen het vaakst op deployment en database-autorisatie.
 
-**Replit is het spiegelbeeld.** Het lost de hostingvraag direct op — de applicatie draait ogenblikkelijk op een URL zonder configuratie — maar op een manier die uiterst lastig te verhuizen is. Datatoegang en omgevingsvariabelen zijn platformspecifieke handigheidjes in plaats van bewuste architectuurkeuzes. Een Replit-project is dikwijls het dichtst bij "live" en het verst verwijderd van "overdraagbaar".
+**Replit is het spiegelbeeld.** Het lost de hostingvraag direct op - de applicatie draait ogenblikkelijk op een URL zonder configuratie - maar op een manier die uiterst lastig te verhuizen is. Datatoegang en omgevingsvariabelen zijn platformspecifieke handigheidjes in plaats van bewuste architectuurkeuzes. Een Replit-project is dikwijls het dichtst bij "live" en het verst verwijderd van "overdraagbaar".
 
 **Het patroon over alle vier de tools:** elk van hen dicht de kloof die het dichtst bij zijn eigen doel ligt, en laat de overige gaten openstaan. Lovable overbrugt de backend-aansluiting. Bolt overbrugt de codeconventies. Cursor overbrugt de bewerkbaarheid. Replit overbrugt de hosting. Geen van hen lost autorisatie en databeveiliging op, omdat geen enkele AI-tool kan raden wie in úw onderneming welke gegevens mag inzien.
 
@@ -129,12 +129,12 @@ Pieters app bezat helemaal geen persistente backend: alle data leefde tijdelijk 
 
 Beide hardening-trajecten namen tussen de zes en negen werkdagen in beslag en eindigden binnen enkele honderden euro's van elkaar. Mauds werk bestond voornamelijk uit het beveiligen en cryptografisch verifiëren van wat er al stond; Pieters werk bestond voornamelijk uit het bouwen van de ontbrekende backend-laag.
 
-**Resultaat:** beide applicaties gingen binnen drie weken na de audit live, en beide oprichters bleven hun eigen product achteraf probleemloos zelf bewerken in hun vertrouwde builder — wat een harde contractuele voorwaarde van beide opdrachten was.
+**Resultaat:** beide applicaties gingen binnen drie weken na de audit live, en beide oprichters bleven hun eigen product achteraf probleemloos zelf bewerken in hun vertrouwde builder - wat een harde contractuele voorwaarde van beide opdrachten was.
 
 > *"Ik dacht dat ik veel verder was omdat mijn app gegevens onthield. Het bleek dat gegevens op een onveilige manier onthouden een geheel eigen risico vormt."*
-> — **Maud Sanders, Oprichter, Bezorgd (Zwolle)**
+> - **Maud Sanders, Oprichter, Bezorgd (Zwolle)**
 
-**Kosten & Doorlooptijd:** €2.900 (Lovable-project: autorisatiepolicies, verificatie, deployment) en €3.150 (Bolt-project: backend opbouw, authenticatie, deployment) — respectievelijk 6 en 9 werkdagen.
+**Kosten & Doorlooptijd:** €2.900 (Lovable-project: autorisatiepolicies, verificatie, deployment) en €3.150 (Bolt-project: backend opbouw, authenticatie, deployment) - respectievelijk 6 en 9 werkdagen.
 
 ---
 
@@ -146,7 +146,7 @@ Kies de tool waarin u zelf het meest helder en intuïtief kunt nadenken. De afst
 
 ### Is een Lovable-project daadwerkelijk completer dan een Bolt-project?
 
-Meestal is het meer aangesloten op een database, wat niet hetzelfde is als completer. Een gekoppelde backend zonder RLS-toegangsregels is verder qua functionaliteit, maar even ver — of verder — verwijderd van een veilige lancering omdat het beveiligingsrisico onzichtbaar is.
+Meestal is het meer aangesloten op een database, wat niet hetzelfde is als completer. Een gekoppelde backend zonder RLS-toegangsregels is verder qua functionaliteit, maar even ver - of verder - verwijderd van een veilige lancering omdat het beveiligingsrisico onzichtbaar is.
 
 ### Moet ik van tool wisselen om een probleem op te lossen waar ik op vastloop?
 

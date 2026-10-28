@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Zoek op "AI-ontwikkelbureau" en je vindt honderden bedrijven die beloven je AI-product te bouwen. Veel ervan zijn uitstekend. Maar heb je al een werkend prototype uit Lovable, Bolt of Cursor, dan is de vraag niet wie je product kan bouwen — dat heb je immers al gedaan. De vraag is wie wat je hebt gebouwd veilig genoeg kan maken om te lanceren. Dat zijn verschillende klussen, en voor de verkeerde inhuren is de duurste vergissing die een oprichter met een prototype kan maken.
+Zoek op "AI-ontwikkelbureau" en je vindt honderden bedrijven die beloven je AI-product te bouwen. Veel ervan zijn uitstekend. Maar heb je al een werkend prototype uit Lovable, Bolt of Cursor, dan is de vraag niet wie je product kan bouwen - dat heb je immers al gedaan. De vraag is wie wat je hebt gebouwd veilig genoeg kan maken om te lanceren. Dat zijn verschillende klussen, en voor de verkeerde inhuren is de duurste vergissing die een oprichter met een prototype kan maken.
 
 ## Waar een AI-Ontwikkelbureau voor Is Ingericht
 
@@ -29,11 +29,11 @@ Een full-servicebureau is ingericht om een idee van verkenning tot oplevering te
 
 Die structuur is precies goed wanneer je vanuit een idee begint, wanneer het product complex genoeg is om echte verkenning te vragen, of wanneer je een ontwikkelpartner voor de lange termijn nodig hebt. Het is ook de reden dat bureauprojecten kosten wat ze kosten: € 20.000 tot € 500.000+ over drie tot twaalf maanden is normaal, volgens de bandbreedtes die LaunchStudio ziet wanneer oprichters eerdere offertes meebrengen.
 
-De structuur wordt een probleem wanneer je komt met iets wat al is gebouwd. Het proces van een bureau begint met verkenning en ontwerp — werk dat je met AI eigenlijk al zelf hebt gedaan. Veel bureaus bouwen liever opnieuw op hun eigen stack, omdat hun proces daarop is geoptimaliseerd, en omdat het onderhouden van andermans AI-gegenereerde code niet is wat ze verkopen.
+De structuur wordt een probleem wanneer je komt met iets wat al is gebouwd. Het proces van een bureau begint met verkenning en ontwerp - werk dat je met AI eigenlijk al zelf hebt gedaan. Veel bureaus bouwen liever opnieuw op hun eigen stack, omdat hun proces daarop is geoptimaliseerd, en omdat het onderhouden van andermans AI-gegenereerde code niet is wat ze verkopen.
 
 ## Waar een Lanceringsexpert voor Is Ingericht
 
-Een lanceringsexpert begint waar je prototype ophoudt. De opdracht is bewust smal: beoordelen wat er is, oplossen wat het tegenhoudt productierijp te zijn, het live brengen, het teruggeven. De frontend blijft. De scope is de "laatste kilometer" — beveiliging, accounts, data, betalingen, hosting, deployment en monitoring.
+Een lanceringsexpert begint waar je prototype ophoudt. De opdracht is bewust smal: beoordelen wat er is, oplossen wat het tegenhoudt productierijp te zijn, het live brengen, het teruggeven. De frontend blijft. De scope is de "laatste kilometer" - beveiliging, accounts, data, betalingen, hosting, deployment en monitoring.
 
 LaunchStudio is zo'n specialist. Prijzen liggen per project vast op € 800–€ 7.500, doorlooptijden zijn doorgaans één tot drie weken, en de code blijft in jouw repository, gedocumenteerd en leesbaar voor dezelfde AI-tools waarmee je haar bouwde.
 
@@ -52,7 +52,7 @@ LaunchStudio is zo'n specialist. Prijzen liggen per project vast op € 800–�
 
 ## Wanneer een Bureau de Betere Keuze Is
 
-Een eerlijke vergelijking moet dit duidelijk zeggen. Kies een bureau — of een full-cycle ontwikkelpartner — wanneer:
+Een eerlijke vergelijking moet dit duidelijk zeggen. Kies een bureau - of een full-cycle ontwikkelpartner - wanneer:
 
 - Je een idee hebt maar geen werkend prototype, en er zelf geen wilt bouwen.
 - Je product diep domeinwerk vraagt: complexe integraties met enterprisesystemen, gereguleerde werkprocessen, eigen machine-learningmodellen.
@@ -66,7 +66,7 @@ In die gevallen zijn de verkennings- en ontwerpfases geen overhead; ze zijn het 
 Kies een lanceringsexpert wanneer:
 
 - Het prototype werkt en gebruikers het waarderen.
-- Wat tussen jou en de lancering staat, beveiliging, betalingen, accounts, hosting of betrouwbaarheid is — niet het product zelf.
+- Wat tussen jou en de lancering staat, beveiliging, betalingen, accounts, hosting of betrouwbaarheid is - niet het product zelf.
 - Je na de lancering wilt blijven bouwen in Lovable, Bolt of Cursor.
 - Je budget in duizenden wordt gemeten, niet in tienduizenden.
 - Je binnen weken live moet zijn.
@@ -101,18 +101,18 @@ Prijskaartjes verbergen kosten die oprichters in de vergelijking moeten meenemen
 
 | Verborgen kosten | Route via een bureau | Route via een lanceringsexpert |
 | --- | --- | --- |
-| Gemiste kansen door vertraging | Hoog — maanden zonder omzet of feedback | Laag — binnen weken live |
+| Gemiste kansen door vertraging | Hoog - maanden zonder omzet of feedback | Laag - binnen weken live |
 | Herontwerp van gevalideerde schermen | Gebruikelijk | Zeldzaam |
 | Jouw tijd in overleggen | Workshops, sprintreviews | Een aftrapgesprek en dagelijkse updates |
 | Lock-in | Vaak hun stack en hosting | Jouw repository en accounts |
-| Toekomstig werk aan functies | Inbegrepen in het onderhoudscontract | Apart — zelf, een medewerker of een team |
+| Toekomstig werk aan functies | Inbegrepen in het onderhoudscontract | Apart - zelf, een medewerker of een team |
 | Risico het verkeerde te bouwen | Kleiner als de verkenning goed is gedaan | Hangt af van je eigen validatie |
 
-De laatste rij snijdt aan twee kanten. Heb je het product niet met echte gebruikers gevalideerd, dan kan de verkenning van een bureau je behoeden voor het bouwen van het verkeerde. Heb je dat wel — omdat je prototype al gebruikers heeft — dan is opnieuw betalen voor verkenning dure herhaling.
+De laatste rij snijdt aan twee kanten. Heb je het product niet met echte gebruikers gevalideerd, dan kan de verkenning van een bureau je behoeden voor het bouwen van het verkeerde. Heb je dat wel - omdat je prototype al gebruikers heeft - dan is opnieuw betalen voor verkenning dure herhaling.
 
 ## Hoe Je een Voorstel van een Bureau Eerlijk Beoordeelt
 
-Krijg je toch een voorstel van een bureau, beoordeel het dan op zijn eigen merites in plaats van het op prijs af te wijzen. Kijk welk deel van het budget naar verkenning en ontwerp gaat tegenover engineering; of het voorstel specifiek naar je bestaande prototype verwijst of als sjabloon leest; wat de eerste oplevering is en wanneer je werkende software ziet; wat de samenstelling van het team is en wie de eigenlijke engineering doet; hoe wijzigingsverzoeken worden geprijsd; en wat er aan het eind gebeurt — overdracht, onderhoudscontract of blijvende afhankelijkheid. Een goed voorstel van een bureau legt uit waarom elke fase voor jouw product specifiek nodig is.
+Krijg je toch een voorstel van een bureau, beoordeel het dan op zijn eigen merites in plaats van het op prijs af te wijzen. Kijk welk deel van het budget naar verkenning en ontwerp gaat tegenover engineering; of het voorstel specifiek naar je bestaande prototype verwijst of als sjabloon leest; wat de eerste oplevering is en wanneer je werkende software ziet; wat de samenstelling van het team is en wie de eigenlijke engineering doet; hoe wijzigingsverzoeken worden geprijsd; en wat er aan het eind gebeurt - overdracht, onderhoudscontract of blijvende afhankelijkheid. Een goed voorstel van een bureau legt uit waarom elke fase voor jouw product specifiek nodig is.
 
 ## Mengvormen Die Oprichters Vaak Over het Hoofd Zien
 
@@ -126,11 +126,11 @@ Elke mengvorm houdt het principe vast dat je in elke fase betaalt voor wat je pr
 
 ## Tekenen Dat Je een Lanceringsexpert Bent Ontgroeid
 
-Een lanceringsexpert is de juiste partner voor de laatste kilometer en vroege groei. Je bent het model waarschijnlijk ontgroeid wanneer je een doorlopende roadmap met elke week functies nodig hebt, complexe integraties met enterprisesystemen, een vast team dat diepe productkennis opbouwt, of architectuurwijzigingen die maanden beslaan. Op dat moment wordt een full-cycle partner — in het geval van LaunchStudio de eigen ontwikkelteams van Manifera — de efficiëntere optie. De overgang is eenvoudiger wanneer het lanceringswerk schone documentatie en tests heeft achtergelaten.
+Een lanceringsexpert is de juiste partner voor de laatste kilometer en vroege groei. Je bent het model waarschijnlijk ontgroeid wanneer je een doorlopende roadmap met elke week functies nodig hebt, complexe integraties met enterprisesystemen, een vast team dat diepe productkennis opbouwt, of architectuurwijzigingen die maanden beslaan. Op dat moment wordt een full-cycle partner - in het geval van LaunchStudio de eigen ontwikkelteams van Manifera - de efficiëntere optie. De overgang is eenvoudiger wanneer het lanceringswerk schone documentatie en tests heeft achtergelaten.
 
 ## Wat Je Vraagt in Je Eerste Gesprek met Beide
 
-Vraag in elk eerste gesprek de aanbieder de laatste drie projecten te beschrijven die op het jouwe lijken, wat er in een ervan misging en hoe dat werd aangepakt. Ervaren aanbieders — bureaus en specialisten — beantwoorden dit concreet en zonder defensief te worden. Hun antwoord vertelt je meer over hoe ze met je prototype zullen omgaan dan welke verkooppresentatie ook.
+Vraag in elk eerste gesprek de aanbieder de laatste drie projecten te beschrijven die op het jouwe lijken, wat er in een ervan misging en hoe dat werd aangepakt. Ervaren aanbieders - bureaus en specialisten - beantwoorden dit concreet en zonder defensief te worden. Hun antwoord vertelt je meer over hoe ze met je prototype zullen omgaan dan welke verkooppresentatie ook.
 
 ## Contractvoorwaarden Die in Beide Gevallen Ertoe Doen
 
@@ -142,7 +142,7 @@ Ben je nog aan het bepalen wat het product moet zijn, dan verdient het verkennin
 
 ## Het Beste van Beide: Een Specialist met een Bureau Erachter
 
-Een reden dat LaunchStudio smal kan blijven, is dat het niet alles hoeft te zijn. LaunchStudio brengt de engineering op enterpriseniveau van Manifera naar de oprichterseconomie: Manifera is een full-cycle softwarebedrijf met 11+ jaar ervaring, 160+ projecten en klanten als Vodafone en TNO, met vestigingen in Amsterdam, Singapore en Ho Chi Minh-stad. Groeit je product later uit tot iets waarvoor een team in bureaustijl nodig is — een groter platform, een mobiele app, ontwikkeling op lange termijn — dan bestaat die route onder hetzelfde dak via [het maatwerk in softwareontwikkeling van Manifera](https://www.manifera.com/services/custom-software-development/), zonder opnieuw te beginnen met een onbekende partij.
+Een reden dat LaunchStudio smal kan blijven, is dat het niet alles hoeft te zijn. LaunchStudio brengt de engineering op enterpriseniveau van Manifera naar de oprichterseconomie: Manifera is een full-cycle softwarebedrijf met 11+ jaar ervaring, 160+ projecten en klanten als Vodafone en TNO, met vestigingen in Amsterdam, Singapore en Ho Chi Minh-stad. Groeit je product later uit tot iets waarvoor een team in bureaustijl nodig is - een groter platform, een mobiele app, ontwikkeling op lange termijn - dan bestaat die route onder hetzelfde dak via [het maatwerk in softwareontwikkeling van Manifera](https://www.manifera.com/services/custom-software-development/), zonder opnieuw te beginnen met een onbekende partij.
 
 Ligt er een offerte van een bureau op tafel en weet je niet zeker of je die nodig hebt, [stuur ons dan de link naar je prototype](https://launchstudio.eu/nl/#contact). We vertellen je eerlijk of het een klus voor een lanceringsexpert is of voor een bureau.
 
@@ -152,22 +152,22 @@ Ligt er een offerte van een bureau op tafel en weet je niet zeker of je die nodi
 
 Nina Scholten, producent bij een klein documentairebedrijf in Hilversum, bouwde Scriptbank in Lovable: een doorzoekbare bibliotheek waarin productieteams scripts, interviewtranscripten en toestemmingsdocumenten opslaan, met toegang per project voor freelance editors en researchers. Drie productiebedrijven gebruikten het informeel en wilden ervoor betalen.
 
-Nina vroeg een gerenommeerd digitaal bureau om hulp. Na twee verkenningsworkshops stelden ze een project voor van € 38.000 en vier maanden: opnieuw bouwen op hun favoriete framework, de interface opnieuw ontwerpen en functies toevoegen uit een roadmap die ze samen hadden opgesteld. Het was een grondig, professioneel voorstel — voor een product dat Nina nog niet nodig had.
+Nina vroeg een gerenommeerd digitaal bureau om hulp. Na twee verkenningsworkshops stelden ze een project voor van € 38.000 en vier maanden: opnieuw bouwen op hun favoriete framework, de interface opnieuw ontwerpen en functies toevoegen uit een roadmap die ze samen hadden opgesteld. Het was een grondig, professioneel voorstel - voor een product dat Nina nog niet nodig had.
 
 Een review door LaunchStudio liet zien dat de structuur van het prototype degelijk was, maar dat de blokkades voor de lancering ernstig waren: freelance editors die uit een project waren verwijderd, konden de documenten ervan nog steeds openen via opgeslagen links, geüploade bestanden stonden in een openbaar toegankelijke opslagbucket, er was geen audittrail van wie toestemmingsdocumenten had gedownload, en de app draaide op een preview-URL van Lovable zonder back-ups. In twaalf werkdagen voegde het team toegang per project toe, afgedwongen in de database en direct intrekbaar, verplaatste het bestanden naar privéopslag met ondertekende, verlopende links, voegde het een auditlog van downloads toe, richtte het EU-hosting in op Nina's eigen domein met back-ups en monitoring, en koppelde het Stripe-abonnementen voor de drie bedrijven.
 
-**Resultaat:** Scriptbank lanceerde met de oorspronkelijke Lovable-interface en tekende binnen vier maanden zeven productiebedrijven. Toen een van hen het jaar daarop een maatwerkkoppeling met hun montagesoftware nodig had, ging Nina voor dat grotere stuk werk naar Manifera — als project in bureaustijl, op het moment dat het er echt een nodig had.
+**Resultaat:** Scriptbank lanceerde met de oorspronkelijke Lovable-interface en tekende binnen vier maanden zeven productiebedrijven. Toen een van hen het jaar daarop een maatwerkkoppeling met hun montagesoftware nodig had, ging Nina voor dat grotere stuk werk naar Manifera - als project in bureaustijl, op het moment dat het er echt een nodig had.
 
 > *"Het voorstel van het bureau was goed. Het was alleen een voorstel voor het bedrijf dat ik over twee jaar misschien zou zijn, niet voor het bedrijf dat ik die maand was."*
-> — **Nina Scholten, Oprichter, Scriptbank (Hilversum)**
+> - **Nina Scholten, Oprichter, Scriptbank (Hilversum)**
 
-**Kosten & Tijdlijn:** € 3.400 (Launch & Grow-pakket: toegangsbeheer, bestandsbeveiliging, auditlog, hosting en betalingen) — afgerond in 12 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 3.400 (Launch & Grow-pakket: toegangsbeheer, bestandsbeveiliging, auditlog, hosting en betalingen) - afgerond in 12 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
 ### Is een AI-ontwikkelbureau altijd duurder dan LaunchStudio?
 
-Voor een klus met de scope van een lancering wel, meestal met een ruime marge, omdat bureaus verkenning, ontwerp en vaak een herbouw meenemen. Voor het vanaf nul bouwen van een complex product is het vergelijken van prijzen niet zinvol — een lanceringsexpert biedt die dienst niet aan.
+Voor een klus met de scope van een lancering wel, meestal met een ruime marge, omdat bureaus verkenning, ontwerp en vaak een herbouw meenemen. Voor het vanaf nul bouwen van een complex product is het vergelijken van prijzen niet zinvol - een lanceringsexpert biedt die dienst niet aan.
 
 ### Kan een bureau niet gewoon alleen het lanceringswerk doen, zonder herbouw?
 

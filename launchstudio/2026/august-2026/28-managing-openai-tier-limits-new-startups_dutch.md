@@ -41,7 +41,7 @@ Een gloednieuw account (Tier 1) is vaak beperkt tot slechts 500 RPM en een besch
 
 ## De Pre-Launch Controlelijst
 
-U kunt niet wachten tot OpenAI uw account organisch upgrade op basis van historisch verbruik. U moet deze upgrade dagen — bij voorkeur een volle week — vóór uw marketinglancering proactief forceren:
+U kunt niet wachten tot OpenAI uw account organisch upgrade op basis van historisch verbruik. U moet deze upgrade dagen - bij voorkeur een volle week - vóór uw marketinglancering proactief forceren:
 
 1. **Prepaid Tegoed Storten:** Ga direct naar het OpenAI billing dashboard. Vertrouw niet op automatische maandelijkse facturatie achteraf. Stort handmatig direct $ 100 of $ 250 aan tegoed via creditcard. Deze handeling verhoogt uw account binnen 24 tot 48 uur automatisch naar Tier 3 of Tier 4, wat uw RPM- en TPM-limieten direct verveelvoudigt.
 2. **Handmatige Quotaverhoging Aanvragen:** Plant u een grootschalige B2B-lancering en verwacht u extreme verkeerspieken, dan kan zelfs Tier 4 ontoereikend zijn. Dien handmatig een verzoek tot limietverhoging in via het dashboard. Let op: deze aanvragen worden handmatig beoordeeld door medewerkers en kunnen enkele werkdagen tot meer dan een week in beslag nemen. Doe dit nooit op de avond voor de lancering.
@@ -61,7 +61,7 @@ Het ultieme vangnet is een **Multi-Provider Fallback-Architectuur**. Vangt uw No
 
 ## Monitoring Tijdens het Lanceringsvenster
 
-Voorbereiding stopt niet zodra de tier-upgrade is toegekend — de lanceringsdag zelf vereist actieve monitoring. Richt een realtime dashboard in (Grafana of gerichte Slack-alerts) dat continu uw actuele RPM/TPM-benutting, wachtrijdiepte en 429-foutpercentages toont.
+Voorbereiding stopt niet zodra de tier-upgrade is toegekend - de lanceringsdag zelf vereist actieve monitoring. Richt een realtime dashboard in (Grafana of gerichte Slack-alerts) dat continu uw actuele RPM/TPM-benutting, wachtrijdiepte en 429-foutpercentages toont.
 
 Ziet u het verbruik boven de 70% van uw limiet stijgen, dan is dat het directe signaal om niet-kritieke achtergrondtaken (zoals batch-samenvattingen) tijdelijk af te knijpen om volledige capaciteit vrij te houden voor realtime gebruikersverzoeken. De eerste 30 tot 90 minuten van een virale piek zijn het meest risicovol.
 
@@ -77,7 +77,7 @@ Dit niveau van productierijpheid is exact wat Herre Roelevink, Oprichter & Manag
 
 ## Bereid Uw AI-App Voor op Virale Schaal
 
-Is uw software-architectuur bestand tegen de voorpagina van Hacker News? **LaunchStudio** implementeert robuuste wachtrijsystemen, API-rate limiting en multi-model fallback-mechanismen om te garanderen dat uw AI-app onder elke verkeerspiek feilloos online blijft — tegen circa 20% van de kosten van een traditioneel bureau.
+Is uw software-architectuur bestand tegen de voorpagina van Hacker News? **LaunchStudio** implementeert robuuste wachtrijsystemen, API-rate limiting en multi-model fallback-mechanismen om te garanderen dat uw AI-app onder elke verkeerspiek feilloos online blijft - tegen circa 20% van de kosten van een traditioneel bureau.
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/nl/#contact) of [bekijk de prijscalculator](https://launchstudio.eu/nl/#calculator). Lees meer over Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) voor diepere infrastructuurtrajecten.
 
@@ -91,7 +91,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 **Resultaat:** 100% uptime hersteld en op de lanceringsdag meer dan 50.000 zoekvragen foutloos verwerkt zonder een enkele 429-blokkade.
 
-**Kosten & Tijdlijn:** €1.650 (Rate Limit Management Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.650 (Rate Limit Management Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
@@ -115,7 +115,7 @@ Multi-model routing: zodra de backend een 429 of 503 fout detecteert bij OpenAI,
 
 ### Levert LaunchStudio alleen de tier-setup of de complete fallback-architectuur?
 
-LaunchStudio bouwt de complete backend-infrastructuur — inclusief queues, caching, rate-limiters en multi-model fallbacks — ondersteund door 11+ jaar ervaring van Manifera sinds 2014.
+LaunchStudio bouwt de complete backend-infrastructuur - inclusief queues, caching, rate-limiters en multi-model fallbacks - ondersteund door 11+ jaar ervaring van Manifera sinds 2014.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ LaunchStudio bouwt de complete backend-infrastructuur — inclusief queues, cach
       "name": "Levert LaunchStudio alleen de tier-setup of de complete fallback-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio bouwt de complete backend-infrastructuur — inclusief queues, caching, rate-limiters en multi-model fallbacks — ondersteund door 11+ jaar ervaring van Manifera sinds 2014."
+        "text": "LaunchStudio bouwt de complete backend-infrastructuur - inclusief queues, caching, rate-limiters en multi-model fallbacks - ondersteund door 11+ jaar ervaring van Manifera sinds 2014."
       }
     }
   ]

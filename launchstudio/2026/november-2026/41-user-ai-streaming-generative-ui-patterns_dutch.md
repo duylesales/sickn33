@@ -37,7 +37,7 @@ In 2026 tonen gebruikersstatistieken een pijnlijke realiteit aan: **de standaard
 
 Waarom? Omdat een leeg tekstvak de gebruiker dwingt tot het zwaarste cognitieve werk. Het vereist dat de gebruiker exact weet wat het systeem kan én dat hij zijn intentie foutloos formuleert met geavanceerde prompts. Als een financieel analist inlogt om de kwartaalomzet te bekijken, is het intikken van: *"Genereer een tabel met de Q3-omzet per Europese regio met eurotekens"* objectief trager en frustrerender dan simpelweg een dropdown-filter aanklikken.
 
-Om een waardevol en gebruiksvriendelijk AI SaaS-platform te bouwen, moeten Product Managers en UX Designers afstappen van het luie chatbot-model. Zij moeten overstappen op **Generatieve UI** — een paradigma waarin de AI niet louter tekst streamt, maar dynamisch interactieve, realtime React-componenten genereert die exact aansluiten op de intentie van de gebruiker.
+Om een waardevol en gebruiksvriendelijk AI SaaS-platform te bouwen, moeten Product Managers en UX Designers afstappen van het luie chatbot-model. Zij moeten overstappen op **Generatieve UI** - een paradigma waarin de AI niet louter tekst streamt, maar dynamisch interactieve, realtime React-componenten genereert die exact aansluiten op de intentie van de gebruiker.
 
 ## Drie Gebreken van de SaaS-Chatbot
 
@@ -97,7 +97,7 @@ Makelaars konden typen: *"Welke van mijn klanten hebben een huurcontract dat bin
 
 De chatbot antwoordde keurig met een opsomming van 15 klantnamen in platte tekst.
 
-De makelaars vonden het vreselijk: om daadwerkelijk actie te ondernemen moesten zij een naam kopiëren, de chat sluiten, de naam in de zoekbalk plakken, naar het profiel navigeren en op "Verlenging versturen" klikken — en dat 15 keer achter elkaar. De AI bespaarde geen tijd, maar creëerde extra knip-en-plakwerk. Het gebruik van de functie daalde binnen een week naar nul.
+De makelaars vonden het vreselijk: om daadwerkelijk actie te ondernemen moesten zij een naam kopiëren, de chat sluiten, de naam in de zoekbalk plakken, naar het profiel navigeren en op "Verlenging versturen" klikken - en dat 15 keer achter elkaar. De AI bespaarde geen tijd, maar creëerde extra knip-en-plakwerk. Het gebruik van de functie daalde binnen een week naar nul.
 
 Victor schakelde LaunchStudio in voor een complete Generative UI transformatie.
 
@@ -110,9 +110,9 @@ In 16 werkdagen herbouwde het Manifera-team de interactielaag:
 **Resultaat:** De functie groeide uit tot het meest gebruikte onderdeel van het CRM. Makelaars bespaarden gemiddeld drie uur per dag. Dankzij deze innovatieve interface sloot de startup direct een contract van €120.000 met een grote Franse vastgoedketen.
 
 > *"We dachten dat AI ging over het genereren van woorden. LaunchStudio liet ons zien dat het in zakelijke software gaat over het genereren van acties. Door ons domme tekstvakje te vervangen door interactieve componenten veranderde onze tool van een gimmick in een onmisbaar werkplatform."*
-> — **Victor Dubois, Head of Product, EstateFlow (Lyon)**
+> - **Victor Dubois, Head of Product, EstateFlow (Lyon)**
 
-**Kosten & Doorlooptijd:** €11.500 (Launch & Grow Pakket met Generative UI & Vercel AI SDK Add-on) — productie-klaar en live binnen 16 werkdagen.
+**Kosten & Doorlooptijd:** €11.500 (Launch & Grow Pakket met Generative UI & Vercel AI SDK Add-on) - productie-klaar en live binnen 16 werkdagen.
 
 ---
 

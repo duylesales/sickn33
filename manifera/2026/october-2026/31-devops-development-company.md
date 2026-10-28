@@ -48,14 +48,14 @@ The problem with a Pet Server is that if it gets sick, your business dies. If an
 
 When you ask an amateur agency about Disaster Recovery, they will proudly state, "We run nightly database backups." 
 
-For a modern enterprise, a nightly backup is functionally useless during a crisis. If a ransomware attack corrupts your database at 4:00 PM, a backup from 2:00 AM the previous night means you have lost 14 hours of transactional data. Furthermore, having a backup file does not mean you have a server to run it on. The "Recovery Time Objective" (RTO)—the actual time it takes to restore the business to a functioning state—remains catastrophically high.
+For a modern enterprise, a nightly backup is functionally useless during a crisis. If a ransomware attack corrupts your database at 4:00 PM, a backup from 2:00 AM the previous night means you have lost 14 hours of transactional data. Furthermore, having a backup file does not mean you have a server to run it on. The "Recovery Time Objective" (RTO) - the actual time it takes to restore the business to a functioning state - remains catastrophically high.
 
 ## The Elite Standard: Resilient Infrastructure
 
 A true DevOps development company treats servers as "Cattle," not Pets. If a server dies, they do not mourn it; they automatically replace it. This is the same philosophy Amazon's own CTO has spent two decades preaching to every engineering team that will listen:
 
 > "Everything fails, all the time."
-> — Werner Vogels, CTO of Amazon Web Services
+> - Werner Vogels, CTO of Amazon Web Services
 
 Elite DevOps engineering is built on three pillars of automated resilience.
 
@@ -87,46 +87,46 @@ High Availability and Chaos Engineering get the attention in vendor pitches beca
 
 ### The Scenario: The Terraform State File Time Bomb
 
-An amateur agency provisions your infrastructure with Terraform, which is good practice on its surface. But Terraform's state file — the record of every resource it manages — often stores database passwords and API keys in plaintext by default. If that state file is committed to a Git repository, or stored in an S3 bucket without encryption and strict access controls, anyone with read access to that bucket now holds the master password to your production database. This is not a hypothetical: it is one of the most common causes of large-scale breaches disclosed in the last several years, and it has nothing to do with a hacker's sophistication — it is simply a credential sitting in plaintext where it should never have been.
+An amateur agency provisions your infrastructure with Terraform, which is good practice on its surface. But Terraform's state file - the record of every resource it manages - often stores database passwords and API keys in plaintext by default. If that state file is committed to a Git repository, or stored in an S3 bucket without encryption and strict access controls, anyone with read access to that bucket now holds the master password to your production database. This is not a hypothetical: it is one of the most common causes of large-scale breaches disclosed in the last several years, and it has nothing to do with a hacker's sophistication - it is simply a credential sitting in plaintext where it should never have been.
 
 ### What Elite Secrets Management Actually Looks Like
 
-A true DevOps development company treats every credential — database passwords, third-party API keys, TLS certificates, signing keys — as a managed, rotating asset, never a static value pasted into a config file:
+A true DevOps development company treats every credential - database passwords, third-party API keys, TLS certificates, signing keys - as a managed, rotating asset, never a static value pasted into a config file:
 
 *   **Centralized Secrets Vaults:** Credentials live in a dedicated secrets manager (HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault), never in environment files, Terraform state, or source code. Applications retrieve secrets at runtime via short-lived tokens, not hardcoded strings.
 *   **Automatic Rotation:** Database credentials and API keys rotate automatically on a schedule (e.g., every 30-90 days) without requiring a manual deployment, so a leaked credential from six months ago is already worthless.
-*   **Least-Privilege Scoping:** Every service gets its own narrowly scoped credential rather than one shared "god" API key. If one microservice is compromised, the blast radius is limited to exactly what that service could access — not your entire cloud account.
+*   **Least-Privilege Scoping:** Every service gets its own narrowly scoped credential rather than one shared "god" API key. If one microservice is compromised, the blast radius is limited to exactly what that service could access - not your entire cloud account.
 *   **Encrypted State and Remote Backends:** Terraform state is stored in an encrypted remote backend (e.g., an S3 bucket with server-side encryption and strict IAM policies) with state-locking to prevent concurrent corruption, never on a developer's local laptop.
 
-A CTO can validate this in one question during vendor due diligence: "Where does the production database password live right now, and who or what can read it?" If the honest answer involves a `.env` file, a Slack message, or a shared spreadsheet, the "DevOps company" has not actually implemented DevOps security fundamentals — regardless of how impressive their Kubernetes dashboard looks.
+A CTO can validate this in one question during vendor due diligence: "Where does the production database password live right now, and who or what can read it?" If the honest answer involves a `.env` file, a Slack message, or a shared spreadsheet, the "DevOps company" has not actually implemented DevOps security fundamentals - regardless of how impressive their Kubernetes dashboard looks.
 
 ## The Real Cost of Downtime: A Worked TCO Comparison
 
-CFOs routinely veto High Availability spend because the invoice is visible and the alternative — an outage that hasn't happened yet — is not. The math only becomes obvious once you put both numbers on the same page.
+CFOs routinely veto High Availability spend because the invoice is visible and the alternative - an outage that hasn't happened yet - is not. The math only becomes obvious once you put both numbers on the same page.
 
-According to Information Technology Intelligence Consulting's (ITIC) 2024 Hourly Cost of Downtime survey — based on responses from over 1,000 organizations worldwide — a single hour of unplanned downtime now costs more than $300,000 for over 90% of mid-size and large enterprises. For verticals like banking, healthcare, and retail, average hourly outage costs exceed $5 million once lost transactions, SLA penalties, and reputational damage are factored in.
+According to Information Technology Intelligence Consulting's (ITIC) 2024 Hourly Cost of Downtime survey - based on responses from over 1,000 organizations worldwide - a single hour of unplanned downtime now costs more than $300,000 for over 90% of mid-size and large enterprises. For verticals like banking, healthcare, and retail, average hourly outage costs exceed $5 million once lost transactions, SLA penalties, and reputational damage are factored in.
 
 Compare that to the cost of the resilience layer itself. A realistic mid-market example:
 
 *   **Single-zone "Pet Server" setup:** One production application server plus one database server, no failover. Monthly cloud bill: roughly €2,800. Annual cost: **€33,600**.
-*   **Multi-zone HA architecture:** Duplicate application and database tiers across two Availability Zones, a Load Balancer, automated health checks, and Terraform-managed infrastructure. Monthly cloud bill: roughly €4,300 — an increase of about €1,500/month, or **€18,000/year**.
+*   **Multi-zone HA architecture:** Duplicate application and database tiers across two Availability Zones, a Load Balancer, automated health checks, and Terraform-managed infrastructure. Monthly cloud bill: roughly €4,300 - an increase of about €1,500/month, or **€18,000/year**.
 
-Now run the outage math. ITIC's own data shows that even a conservative, non-enterprise-tier hourly downtime cost of €25,000–€50,000 is common for a mid-sized SaaS or e-commerce business. A single 4-hour outage on the single-zone setup — the kind caused by one Availability Zone losing power — costs €100,000–€200,000 in direct losses before you count customer churn or contractual penalties. The €18,000/year HA premium pays for itself the first time it prevents a single afternoon-long incident, and most enterprises experience more than one such event per year.
+Now run the outage math. ITIC's own data shows that even a conservative, non-enterprise-tier hourly downtime cost of €25,000–€50,000 is common for a mid-sized SaaS or e-commerce business. A single 4-hour outage on the single-zone setup - the kind caused by one Availability Zone losing power - costs €100,000–€200,000 in direct losses before you count customer churn or contractual penalties. The €18,000/year HA premium pays for itself the first time it prevents a single afternoon-long incident, and most enterprises experience more than one such event per year.
 
-This is also why the DORA (DevOps Research and Assessment) team's long-running *State of DevOps Report* — now published by Google Cloud — is relevant to a procurement conversation, not just an engineering one. In the 2024 report, elite-performing teams maintained a change failure rate around 5%, compared to roughly 40% for low performers, while deploying far more frequently and recovering from incidents in under an hour. The report's core finding has held for a decade: speed and stability are not a trade-off. Teams with mature automated infrastructure — the HA, IaC, and Chaos Engineering practices described above — ship more often *and* break less often than teams still hand-configuring Pet Servers.
+This is also why the DORA (DevOps Research and Assessment) team's long-running *State of DevOps Report* - now published by Google Cloud - is relevant to a procurement conversation, not just an engineering one. In the 2024 report, elite-performing teams maintained a change failure rate around 5%, compared to roughly 40% for low performers, while deploying far more frequently and recovering from incidents in under an hour. The report's core finding has held for a decade: speed and stability are not a trade-off. Teams with mature automated infrastructure - the HA, IaC, and Chaos Engineering practices described above - ship more often *and* break less often than teams still hand-configuring Pet Servers.
 
 ## Procuring Business Continuity
 
 Do not pay a vendor to host your code. Pay a vendor to mathematically guarantee your business continuity.
 
-At Manifera, our elite [offshore and hybrid development teams](https://www.manifera.com) operate as a true DevOps Development Company. We do not manually configure servers. We engineer self-healing, multi-zone cloud architectures governed by strict Infrastructure as Code. We design enterprise systems that view server death not as a catastrophic outage, but as a routine, fully automated background event. Our Amsterdam-based Dutch Architects define the resilience requirements up front — RTO, RPO, and the failure scenarios that actually matter to your business — and our Vietnam-based engineering pods implement and continuously test them, so the architecture is validated long before a real outage puts it to the test.
+At Manifera, our elite [offshore and hybrid development teams](https://www.manifera.com) operate as a true DevOps Development Company. We do not manually configure servers. We engineer self-healing, multi-zone cloud architectures governed by strict Infrastructure as Code. We design enterprise systems that view server death not as a catastrophic outage, but as a routine, fully automated background event. Our Amsterdam-based Dutch Architects define the resilience requirements up front - RTO, RPO, and the failure scenarios that actually matter to your business - and our Vietnam-based engineering pods implement and continuously test them, so the architecture is validated long before a real outage puts it to the test.
 
 ---
 
 ## FAQs
 
 ### 1. (Scenario: CTO planning SLAs) What does "99.99% uptime" actually mean in terms of allowed downtime?
-Uptime is measured in "Nines." 99% uptime allows for 3.65 days of downtime per year (unacceptable for an enterprise). 99.9% ("Three Nines") allows for 8.7 hours of downtime per year. 99.99% ("Four Nines")—the elite standard—allows for only 52.6 minutes of downtime per year. Achieving Four Nines requires automated failover; human intervention is mathematically too slow to hit this target.
+Uptime is measured in "Nines." 99% uptime allows for 3.65 days of downtime per year (unacceptable for an enterprise). 99.9% ("Three Nines") allows for 8.7 hours of downtime per year. 99.99% ("Four Nines") - the elite standard - allows for only 52.6 minutes of downtime per year. Achieving Four Nines requires automated failover; human intervention is mathematically too slow to hit this target.
 
 ### 2. (Scenario: VP Operations) Is it possible to achieve 100% uptime?
 No. Any vendor promising 100% uptime is lying to you. Physical hardware eventually fails, software eventually has bugs, and network cables eventually get cut. Elite DevOps engineering is not about preventing failure; it is about reducing the *Recovery Time* from hours to milliseconds so that the failure is invisible to the end user.
@@ -135,7 +135,7 @@ No. Any vendor promising 100% uptime is lying to you. Physical hardware eventual
 It does increase the CapEx (initial setup) and slightly increases the OpEx (you are running duplicate infrastructure). However, you must calculate the cost of downtime. If a 4-hour outage costs your enterprise €200,000 in lost revenue and reputational damage, spending an extra €1,500 a month on redundant AWS infrastructure is the highest-ROI insurance policy you can buy.
 
 ### 4. (Scenario: Lead Architect) We have a monolithic application. Can a DevOps company make it Highly Available?
-It is extremely difficult. Monoliths are usually "Stateful," meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a "Stateless Refactor"—moving session data to a centralized Redis cache—before implementing HA. 
+It is extremely difficult. Monoliths are usually "Stateful," meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a "Stateless Refactor" - moving session data to a centralized Redis cache - before implementing HA. 
 
 ### 5. (Scenario: CEO) Can't we just use AWS's default settings and get High Availability?
 No. AWS operates on the "Shared Responsibility Model." AWS guarantees that their physical data centers are secure and running. However, the architecture *inside* the cloud is 100% your responsibility. If you deploy a single database in a single zone and it crashes, AWS will not fix it for you. You must hire elite DevOps engineers to architect the resilience layer on top of the AWS primitives.
@@ -153,7 +153,7 @@ Ask exactly where the production credentials live and who can read them. Elite D
       "name": "(Scenario: CTO planning SLAs) What does \"99.99% uptime\" actually mean in terms of allowed downtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uptime is measured in \"Nines.\" 99% uptime allows for 3.65 days of downtime per year (unacceptable for an enterprise). 99.9% (\"Three Nines\") allows for 8.7 hours of downtime per year. 99.99% (\"Four Nines\")—the elite standard—allows for only 52.6 minutes of downtime per year. Achieving Four Nines requires automated failover; human intervention is mathematically too slow to hit this target."
+        "text": "Uptime is measured in \"Nines.\" 99% uptime allows for 3.65 days of downtime per year (unacceptable for an enterprise). 99.9% (\"Three Nines\") allows for 8.7 hours of downtime per year. 99.99% (\"Four Nines\") - the elite standard - allows for only 52.6 minutes of downtime per year. Achieving Four Nines requires automated failover; human intervention is mathematically too slow to hit this target."
       }
     },
     {
@@ -177,7 +177,7 @@ Ask exactly where the production credentials live and who can read them. Elite D
       "name": "(Scenario: Lead Architect) We have a monolithic application. Can a DevOps company make it Highly Available?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is extremely difficult. Monoliths are usually \"Stateful,\" meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a \"Stateless Refactor\"—moving session data to a centralized Redis cache—before implementing HA."
+        "text": "It is extremely difficult. Monoliths are usually \"Stateful,\" meaning they store user session data directly on the server's local hard drive. If the Load Balancer moves a user from Server A to Server B, the user is suddenly logged out. A true DevOps company will first execute a \"Stateless Refactor\" - moving session data to a centralized Redis cache - before implementing HA."
       }
     },
     {

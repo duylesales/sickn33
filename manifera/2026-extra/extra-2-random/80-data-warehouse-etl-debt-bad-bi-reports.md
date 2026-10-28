@@ -20,21 +20,21 @@ target_persona: "CFO"
 }
 </script>
 
-A board member asked why churn looked 3% lower in this quarter's deck than in the finance team's own separate tracking spreadsheet, and the honest answer — that nobody currently at the company fully understands what the ETL pipeline feeding the dashboard actually does — was not one the CFO was prepared to give out loud.
+A board member asked why churn looked 3% lower in this quarter's deck than in the finance team's own separate tracking spreadsheet, and the honest answer - that nobody currently at the company fully understands what the ETL pipeline feeding the dashboard actually does - was not one the CFO was prepared to give out loud.
 
 **The Pain:** A CFO relies on a data warehouse and business-intelligence dashboard for board reporting, investor updates, and internal decision-making, fed by an ETL pipeline built incrementally over several years by engineers who have since moved on, with transformation logic scattered across scheduled scripts, spreadsheet macros, and a few undocumented SQL views that nobody currently on the team would confidently modify. The numbers mostly look right, most of the time, which is precisely what makes the small, unexplained discrepancies that do surface so unsettling.
 
-**The Agitation:** Once a single number in a board deck is discovered to be wrong or inconsistent with another source, the damage extends well beyond that one metric — every other number in the same deck now carries an implicit asterisk, and a CFO who has to preface reporting with "we believe this is accurate" has lost something that's expensive to rebuild. The deeper problem compounds quietly: as the business adds new products, new markets, or new revenue models, the undocumented pipeline gets patched again by whoever's available, adding another layer of logic nobody fully understands to a system that was already opaque.
+**The Agitation:** Once a single number in a board deck is discovered to be wrong or inconsistent with another source, the damage extends well beyond that one metric - every other number in the same deck now carries an implicit asterisk, and a CFO who has to preface reporting with "we believe this is accurate" has lost something that's expensive to rebuild. The deeper problem compounds quietly: as the business adds new products, new markets, or new revenue models, the undocumented pipeline gets patched again by whoever's available, adding another layer of logic nobody fully understands to a system that was already opaque.
 
 ## The Data Pipeline Governance Mandate
 
-The first mandate is a comprehensive audit of the existing ETL pipeline — documenting every transformation, every data source, every business-logic decision embedded in a script or SQL view — producing, for the first time, an actual map of how a raw customer event becomes the number that appears in a board deck.
+The first mandate is a comprehensive audit of the existing ETL pipeline - documenting every transformation, every data source, every business-logic decision embedded in a script or SQL view - producing, for the first time, an actual map of how a raw customer event becomes the number that appears in a board deck.
 
-The second mandate is establishing a single source of truth for every key business metric, with an explicit, documented definition — what exactly counts as "churn," which specific event triggers it, what edge cases are included or excluded — so that when two reports disagree, there's a documented definition to reconcile against rather than a guessing exercise between two undocumented calculations.
+The second mandate is establishing a single source of truth for every key business metric, with an explicit, documented definition - what exactly counts as "churn," which specific event triggers it, what edge cases are included or excluded - so that when two reports disagree, there's a documented definition to reconcile against rather than a guessing exercise between two undocumented calculations.
 
-The third mandate is automated data-quality validation built into the pipeline itself — checks that catch anomalies, missing data, or logic that silently breaks when an upstream system changes its schema, alerting the team before a bad number reaches a dashboard rather than after a board member notices the discrepancy.
+The third mandate is automated data-quality validation built into the pipeline itself - checks that catch anomalies, missing data, or logic that silently breaks when an upstream system changes its schema, alerting the team before a bad number reaches a dashboard rather than after a board member notices the discrepancy.
 
-The fourth mandate is genuine pipeline ownership assigned explicitly to a current team member or team, with the documentation and architecture built specifically for that ownership to be sustainable — not a return to the same pattern where the one person who understood the system eventually leaves and takes the understanding with them.
+The fourth mandate is genuine pipeline ownership assigned explicitly to a current team member or team, with the documentation and architecture built specifically for that ownership to be sustainable - not a return to the same pattern where the one person who understood the system eventually leaves and takes the understanding with them.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: European rigor applied to what t
 
 ### A Zurich SaaS Company's Discrepant Churn Numbers
 
-Datenfluss Schweiz AG, a Zurich-based SaaS company, had a board member flag a churn discrepancy between the quarterly board deck and the finance team's independently maintained tracking spreadsheet, revealing that the BI dashboard's underlying ETL pipeline calculated churn using a definition that silently diverged from finance's own methodology — a divergence nobody had actually decided on, it had simply accumulated through years of undocumented patches by different engineers.
+Datenfluss Schweiz AG, a Zurich-based SaaS company, had a board member flag a churn discrepancy between the quarterly board deck and the finance team's independently maintained tracking spreadsheet, revealing that the BI dashboard's underlying ETL pipeline calculated churn using a definition that silently diverged from finance's own methodology - a divergence nobody had actually decided on, it had simply accumulated through years of undocumented patches by different engineers.
 
 Manifera audited the full pipeline, documented every transformation and data source, established a single, board-approved definition for every key reported metric, and rebuilt the pipeline with automated data-quality validation alerting on anomalies before they reached any dashboard. The following quarter's board deck included a documented metric-definition appendix for the first time, and the CFO reported the board's confidence in the reported numbers visibly improved, with no further discrepancy questions raised in the two subsequent board meetings.
 
 > *"Once one number was wrong, every number in the deck felt suspect, even the ones that were actually fine. Getting back to a place where I could just say the number and move on, without a mental asterisk, was worth more than the audit cost by itself."*
-> — **CFO, Datenfluss Schweiz AG, Switzerland**
+> - **CFO, Datenfluss Schweiz AG, Switzerland**
 
 ## Undocumented ETL Pipeline vs. Manifera's Governed Data Foundation
 
@@ -66,7 +66,7 @@ Manifera audited the full pipeline, documented every transformation and data sou
 
 ## The Economics
 
-A discovered discrepancy in board-level reporting costs a CFO something harder to price than the engineering fix itself — the erosion of confidence in every subsequent number presented, which can quietly affect how much scrutiny future reporting receives and how much benefit of the doubt leadership extends going forward. A comprehensive pipeline audit and rebuild with proper documentation and validation typically costs €40,000-€80,000, a cost that's straightforward to justify against the alternative of presenting numbers nobody, including the CFO, can fully vouch for. [Talk to Manifera](https://www.manifera.com/contact-us/) about auditing and governing the data pipeline behind your next board deck before a discrepancy finds it first.
+A discovered discrepancy in board-level reporting costs a CFO something harder to price than the engineering fix itself - the erosion of confidence in every subsequent number presented, which can quietly affect how much scrutiny future reporting receives and how much benefit of the doubt leadership extends going forward. A comprehensive pipeline audit and rebuild with proper documentation and validation typically costs €40,000-€80,000, a cost that's straightforward to justify against the alternative of presenting numbers nobody, including the CFO, can fully vouch for. [Talk to Manifera](https://www.manifera.com/contact-us/) about auditing and governing the data pipeline behind your next board deck before a discrepancy finds it first.
 
 ## Frequently Asked Questions
 
@@ -76,11 +76,11 @@ Audit the underlying pipeline for both numbers to understand exactly where and w
 
 ### (Scenario: CFO trying to prevent future data pipeline knowledge loss) How do we avoid losing understanding of our data pipeline again when the current owner eventually leaves?
 
-Build comprehensive documentation as part of the pipeline itself — every transformation and business-logic decision recorded — and assign genuine ownership with a plan for knowledge transfer if that ownership changes, rather than relying on one person's memory.
+Build comprehensive documentation as part of the pipeline itself - every transformation and business-logic decision recorded - and assign genuine ownership with a plan for knowledge transfer if that ownership changes, rather than relying on one person's memory.
 
 ### (Scenario: CFO trying to catch data-quality issues before they reach a board deck) How can we catch a bad number before it reaches a board presentation rather than after?
 
-Build automated data-quality validation directly into the pipeline — anomaly detection, schema-change alerts, and reconciliation checks — that flags a problem to the team before the dashboard is ever viewed, not after a board member happens to notice.
+Build automated data-quality validation directly into the pipeline - anomaly detection, schema-change alerts, and reconciliation checks - that flags a problem to the team before the dashboard is ever viewed, not after a board member happens to notice.
 
 ### (Scenario: CFO trying to estimate the cost of a full pipeline audit and rebuild) What does a full ETL pipeline audit and governance rebuild typically cost?
 

@@ -1,10 +1,10 @@
-🚨 Met Zaalplanner van Thijs Kranenburg reserveren 48 buurt- en dorpshuizen in Friesland en Groningen hun zalen. Elke maandagochtend — precies wanneer beheerders de week plannen — lag het product tien tot twintig minuten volledig plat. Twee locaties hadden al naar alternatieven gevraagd. 😳
+🚨 Met Zaalplanner van Thijs Kranenburg reserveren 48 buurt- en dorpshuizen in Friesland en Groningen hun zalen. Elke maandagochtend - precies wanneer beheerders de week plannen - lag het product tien tot twintig minuten volledig plat. Twee locaties hadden al naar alternatieven gevraagd. 😳
 
 Negen of tien gelijktijdige gebruikers waren genoeg om een database met 60 verbindingen uit te putten. Daarom raakt "too many clients already" door AI gebouwde apps:
 
 ❌ Een nieuwe databaseclient bij elke aanroep van een serverless functie
 ❌ Applicatiecode op de directe verbinding in plaats van de pooler
-❌ Transacties opengehouden rond een e-mailaanroep — 90 seconden per hapering bij de provider
+❌ Transacties opengehouden rond een e-mailaanroep - 90 seconden per hapering bij de provider
 ❌ Een realtime-abonnement dat bij elke render opnieuw werd aangemaakt
 
 ✅ De databaseclient verplaatst naar moduleniveau, zodat elke instantie één verbinding hergebruikt

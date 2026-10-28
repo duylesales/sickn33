@@ -6,11 +6,11 @@
 ❌ **Remediation Under Deal-Clock Pressure:** More expensive, more stressful, and slower than doing it calmly months in advance.
 
 **The Manifera Solution:**
-✅ **Full Dependency-Tree License Scan:** Every transitive dependency, categorized — not just the direct ones.
+✅ **Full Dependency-Tree License Scan:** Every transitive dependency, categorized - not just the direct ones.
 ✅ **Defined License Policy:** Clear rules for what's acceptable, set once by legal, applied consistently.
 ✅ **CI/CD-Integrated Ongoing Scanning:** New risk caught the moment it's introduced, not years later.
 
-Find it in a routine scan — not in your investors' due diligence report. 🛡️
+Find it in a routine scan - not in your investors' due diligence report. 🛡️
 
 👉 Read our full deep dive on open source license compliance audit risk: https://www.manifera.com/blog/open-source-license-compliance-audit-risk
 

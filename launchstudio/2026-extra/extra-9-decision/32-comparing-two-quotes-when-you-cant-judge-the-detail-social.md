@@ -1,6 +1,6 @@
 🚨 Two quotes for the same booking app: €3,400 and €12,800. He assumed the pricier one was thorough, until a twelve-row spreadsheet showed more blank cells, not fewer. 😳
 
-Two quotes for one prototype rarely describe the same work — the cheaper number alone means nothing: 🧠
+Two quotes for one prototype rarely describe the same work - the cheaper number alone means nothing: 🧠
 
 ❌ The pricier quote skips venue-level permissions, the exact thing keeping data apart
 ❌ Neither quote mentions transactional email or a staging environment, so nobody asks

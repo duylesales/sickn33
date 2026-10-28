@@ -1,7 +1,7 @@
 They built the whole app assuming Class I self-certification. Rule 11 said Class IIa. Six months lost. 🇪🇺
 
 **The Pain Points:**
-❌ **Classification as an afterthought:** Vendors who build first and check MDCG 2019-11 later routinely discover a Notified Body is required — after the roadmap is already set.
+❌ **Classification as an afterthought:** Vendors who build first and check MDCG 2019-11 later routinely discover a Notified Body is required - after the roadmap is already set.
 ❌ **"The clinician reviews it" myth:** Human review before action doesn't automatically exempt clinical decision support software from MDR.
 ❌ **Notified Body queue shock:** 9-12 month review timelines for Class IIa+ software catch teams who didn't plan for it from day one.
 

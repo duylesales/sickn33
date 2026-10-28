@@ -20,23 +20,23 @@ target_persona: "CEO"
 }
 </script>
 
-Every app development conversation eventually gets to features, timelines, and cost — and almost every one of them skips the three questions that actually determine whether those features, timelines, and costs turn out to be realistic at all.
+Every app development conversation eventually gets to features, timelines, and cost - and almost every one of them skips the three questions that actually determine whether those features, timelines, and costs turn out to be realistic at all.
 
-**The Pain:** A CEO has decided the business needs an app and is ready to start talking to development partners about scope, timeline, and budget, but hasn't yet answered a smaller set of foundational questions that every subsequent decision actually depends on — questions about what the app has to prove, who it has to work for first, and what happens if the initial version doesn't land the way it's expected to.
+**The Pain:** A CEO has decided the business needs an app and is ready to start talking to development partners about scope, timeline, and budget, but hasn't yet answered a smaller set of foundational questions that every subsequent decision actually depends on - questions about what the app has to prove, who it has to work for first, and what happens if the initial version doesn't land the way it's expected to.
 
-**The Agitation:** A CEO who jumps straight to feature specification without answering the foundational questions first typically discovers, three or four months into app development, that the specification itself was built on an unexamined assumption — about the target user, about what "success" actually means for version one, about how much the app needs to do on day one versus what can wait — and correcting that assumption mid-build costs considerably more than answering the question upfront would have, typically €30,000-€70,000 in redirected or wasted development effort.
+**The Agitation:** A CEO who jumps straight to feature specification without answering the foundational questions first typically discovers, three or four months into app development, that the specification itself was built on an unexamined assumption - about the target user, about what "success" actually means for version one, about how much the app needs to do on day one versus what can wait - and correcting that assumption mid-build costs considerably more than answering the question upfront would have, typically €30,000-€70,000 in redirected or wasted development effort.
 
 ## The Three Questions That Actually Come First
 
 App development succeeds or struggles based on decisions made before a single feature gets specified, and a CEO who answers these three questions honestly gives every subsequent decision a foundation to stand on.
 
-The first question is what the app has to prove, specifically, in its first real version — not a vague sense of "provide value" but a specific, falsifiable claim: that a defined group of users will complete a defined action at a meaningful rate. An app built without this clarity tends to accumulate features nobody asked to validate, because there was never a specific hypothesis the team was trying to confirm or reject, just a general sense that more features are better.
+The first question is what the app has to prove, specifically, in its first real version - not a vague sense of "provide value" but a specific, falsifiable claim: that a defined group of users will complete a defined action at a meaningful rate. An app built without this clarity tends to accumulate features nobody asked to validate, because there was never a specific hypothesis the team was trying to confirm or reject, just a general sense that more features are better.
 
 The second question is who the app has to work for first, in enough detail that a genuinely difficult scope decision has a tiebreaker. Nearly every app development effort eventually hits a fork where two reasonable feature directions conflict, and a team without a clear answer to "who are we building for first" resolves that fork by committee compromise, which frequently produces a worse outcome for everyone than picking one direction clearly would have.
 
-The third question, the one CEOs answer least often before starting, is what the plan actually is if the first version doesn't perform the way it's expected to. App development that proceeds as if the first version is guaranteed to succeed skips building in the instrumentation and flexibility that would make a pivot cheap if the assumption turns out wrong — and the CEOs who get burned hardest by a disappointing launch are usually the ones who never planned for that outcome as a real possibility, so discovering it costs both the emotional shock and the practical cost of a system that wasn't built to bend.
+The third question, the one CEOs answer least often before starting, is what the plan actually is if the first version doesn't perform the way it's expected to. App development that proceeds as if the first version is guaranteed to succeed skips building in the instrumentation and flexibility that would make a pivot cheap if the assumption turns out wrong - and the CEOs who get burned hardest by a disappointing launch are usually the ones who never planned for that outcome as a real possibility, so discovering it costs both the emotional shock and the practical cost of a system that wasn't built to bend.
 
-Answering these three questions doesn't slow app development down — it prevents the much larger delay that comes from discovering, mid-build, that the team has been building against an assumption nobody actually verified. A CEO who can answer all three clearly walks into the first conversation with a development partner able to evaluate proposals against a real standard, rather than judging them on whichever one sounds most confident.
+Answering these three questions doesn't slow app development down - it prevents the much larger delay that comes from discovering, mid-build, that the team has been building against an assumption nobody actually verified. A CEO who can answer all three clearly walks into the first conversation with a development partner able to evaluate proposals against a real standard, rather than judging them on whichever one sounds most confident.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: European strategic clarity appli
 
 ### A Dublin Wellness Startup's Unexamined Assumption
 
-Sláinte Digital Ltd, a Dublin-based wellness startup, had specified a full-featured app development effort based on an assumed target user — busy professionals wanting quick check-ins — without ever validating that assumption, and four months into development, early user testing revealed the actual engaged audience was older users wanting longer, more detailed sessions, a fundamentally different interaction pattern than what had been built.
+Sláinte Digital Ltd, a Dublin-based wellness startup, had specified a full-featured app development effort based on an assumed target user - busy professionals wanting quick check-ins - without ever validating that assumption, and four months into development, early user testing revealed the actual engaged audience was older users wanting longer, more detailed sessions, a fundamentally different interaction pattern than what had been built.
 
 Manifera helped the founder reframe the three foundational questions explicitly before restarting the build, this time with a specific, falsifiable hypothesis about the actual target user and instrumentation built in to validate it early. The revised version launched within eight weeks and confirmed the corrected assumption within the first month of real usage.
 
-> *"We'd built four months of features for a user who barely existed. The fix wasn't more features — it was going back and actually answering who we were building for, which we'd skipped the first time because it felt obvious."*
-> — **Founder, Sláinte Digital Ltd, Ireland**
+> *"We'd built four months of features for a user who barely existed. The fix wasn't more features - it was going back and actually answering who we were building for, which we'd skipped the first time because it felt obvious."*
+> - **Founder, Sláinte Digital Ltd, Ireland**
 
 ## Unexamined App Development vs. Manifera's Question-First Approach
 
@@ -68,7 +68,7 @@ Manifera helped the founder reframe the three foundational questions explicitly 
 
 ## The Economics
 
-An app development effort that skips the foundational questions typically discovers a costly assumption gap three or four months in, requiring €30,000-€70,000 in redirected or wasted development effort to correct — a cost that answering three honest questions upfront would have avoided entirely, along with the calendar time and morale cost of realizing the team built the wrong thing confidently. [Talk to Manifera](https://www.manifera.com/contact-us/) about starting app development from a validated foundation, not an unexamined assumption.
+An app development effort that skips the foundational questions typically discovers a costly assumption gap three or four months in, requiring €30,000-€70,000 in redirected or wasted development effort to correct - a cost that answering three honest questions upfront would have avoided entirely, along with the calendar time and morale cost of realizing the team built the wrong thing confidently. [Talk to Manifera](https://www.manifera.com/contact-us/) about starting app development from a validated foundation, not an unexamined assumption.
 
 ## Frequently Asked Questions
 

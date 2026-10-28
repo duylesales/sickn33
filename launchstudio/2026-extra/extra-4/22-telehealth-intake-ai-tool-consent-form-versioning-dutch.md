@@ -80,9 +80,9 @@ LaunchStudio's beoordeling van ConsultVoor's codebase vond toestemming opgeslage
 **Resultaat:** ConsultVoor's praktijk kan nu voor elke patiënt op elk moment aantonen met welke specifieke versie van het toestemmingsbeleid hij akkoord ging – en er gaat geen beleidsupdate live zonder dat bestaande patiënten opnieuw worden gevraagd.
 
 > *"Ik dacht oprecht dat toestemming een opgelost probleem was omdat we een selectievakje hadden bij de aanmelding. Het is nooit bij me opgekomen dat het bijwerken van ons beleid betekende dat onze bestaande patiënten technisch gezien nog steeds toestemming gaven voor iets dat we al hadden gewijzigd."*
-> — **Merel van Dam, Oprichter, ConsultVoor (Hilversum)**
+> - **Merel van Dam, Oprichter, ConsultVoor (Hilversum)**
 
-**Kosten en tijdlijn:** € 1.300 (versiebeheer voor toestemming en poort voor hernieuwde toestemming) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (versiebeheer voor toestemming en poort voor hernieuwde toestemming) - voltooid in 6 werkdagen.
 
 ---
 

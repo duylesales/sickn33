@@ -1,11 +1,11 @@
-🔌 Teun Molenaar, een oprichter in Huizen, bouwde OfferteSnel — een offertetool — met v0. Hij had specifiek voor v0 gekozen omdat het werd vermarkt als een no-code AI-tool, en had oprecht aangenomen dat "no code" ook "geen doorlopend onderhoud" betekende. 😳
+🔌 Teun Molenaar, een oprichter in Huizen, bouwde OfferteSnel - een offertetool - met v0. Hij had specifiek voor v0 gekozen omdat het werd vermarkt als een no-code AI-tool, en had oprecht aangenomen dat "no code" ook "geen doorlopend onderhoud" betekende. 😳
 
 Toen veranderde een downstream-API 's nachts van vorm, maanden na de lancering. 🧠
 
-❌ Aangenomen dat "geen code om te schrijven" ook "geen code om te onderhouden" betekende — nog nooit een enkele regel van de onderliggende implementatie gezien
+❌ Aangenomen dat "geen code om te schrijven" ook "geen code om te onderhouden" betekende - nog nooit een enkele regel van de onderliggende implementatie gezien
 ❌ Een downstream prijs-API veranderde zonder waarschuwing haar responsformaat
 ❌ De offertefunctie stopte met accurate cijfers produceren, en stopte vervolgens volledig, met een generieke foutmelding zonder bruikbare details
-❌ Teun had geen idee waar hij zelfs maar moest beginnen — geen foutenlog dat hij kon lezen, niemand om te vragen
+❌ Teun had geen idee waar hij zelfs maar moest beginnen - geen foutenlog dat hij kon lezen, niemand om te vragen
 
 ✅ De storing herleid tot de specifieke schemamismatch
 ✅ De integratie bijgewerkt om het nieuwe API-responsformaat te verwerken

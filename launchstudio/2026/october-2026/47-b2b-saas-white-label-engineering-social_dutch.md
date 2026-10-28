@@ -1,4 +1,4 @@
-🔥 Sophie (eigenaar van een ontwerpbureau in Amsterdam) ontwierp een prototype via **Figma & AI** — voor een grote zorginstelling ontwierp ze een HR-planningsplatform met een AI-roosteragent, maar miste interne engineers om een AVG-conforme backend te bouwen. 🧠
+🔥 Sophie (eigenaar van een ontwerpbureau in Amsterdam) ontwierp een prototype via **Figma & AI** - voor een grote zorginstelling ontwierp ze een HR-planningsplatform met een AI-roosteragent, maar miste interne engineers om een AVG-conforme backend te bouwen. 🧠
 
 Als uw creatieve bureau lucratieve maatwerk softwareprojecten wil verkopen zonder een intern softwareteam van €250k+/jaar aan te nemen, is een betrouwbare white-label partner essentieel.
 
@@ -12,7 +12,7 @@ Als uw creatieve bureau lucratieve maatwerk softwareprojecten wil verkopen zonde
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-De zorgklant ontving een veilige, feilloze applicatie en Sophie pitcht nu structureel maatwerk AI-software bij enterprise-klanten. (€35.000 (White-Label Enterprise Backend) — binnen 60 werkdagen live). 🚀
+De zorgklant ontving een veilige, feilloze applicatie en Sophie pitcht nu structureel maatwerk AI-software bij enterprise-klanten. (€35.000 (White-Label Enterprise Backend) - binnen 60 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/b2b-saas-white-label-engineering
 

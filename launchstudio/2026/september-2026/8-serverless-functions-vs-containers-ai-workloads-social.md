@@ -1,4 +1,4 @@
-📦 Isabella, a copywriter, built a product description writer using **Bolt** — then watched users abandon the app as Vercel serverless cold starts caused an 8-second frozen delay on every initial request. 📝
+📦 Isabella, a copywriter, built a product description writer using **Bolt** - then watched users abandon the app as Vercel serverless cold starts caused an 8-second frozen delay on every initial request. 📝
 
 Generative AI breaks serverless rules: slow execution times, heavy SDK bundles, and cold starts destroy user experience and cause 504 timeout crashes. 🧠
 

@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-For many Dutch citizens, the word "algorithm" became permanently associated with injustice after the childcare benefits scandal. Thousands of parents were wrongly treated as fraudsters, with devastating financial and personal consequences, and investigations revealed that risk classification, data use and institutional practices had contributed to discriminatory treatment. The scandal led to the fall of a cabinet in 2021 and reshaped how Dutch government organisations think about data, algorithms and AI. For data professionals, this history is essential context. Public sector AI work in the Netherlands today is less about moving fast and more about building systems that deserve public trust — and that makes it some of the most important data work in the country.
+For many Dutch citizens, the word "algorithm" became permanently associated with injustice after the childcare benefits scandal. Thousands of parents were wrongly treated as fraudsters, with devastating financial and personal consequences, and investigations revealed that risk classification, data use and institutional practices had contributed to discriminatory treatment. The scandal led to the fall of a cabinet in 2021 and reshaped how Dutch government organisations think about data, algorithms and AI. For data professionals, this history is essential context. Public sector AI work in the Netherlands today is less about moving fast and more about building systems that deserve public trust - and that makes it some of the most important data work in the country.
 
 ## Why the Dutch Public Sector Needs Data Professionals
 
@@ -96,7 +96,7 @@ To an outsider, this may look like a failed project. Inside a responsible public
 
 Government IT landscapes are often decades old. Implementation agencies run core systems built long before cloud platforms existed, and important data may be spread across mainframes, databases and document management systems. Linking data between organisations is legally restricted: each organisation may only use data for purposes permitted by its legal tasks, and sharing requires a legal basis.
 
-For data professionals, this means that a significant part of the work consists of understanding where data comes from, what it means and whether it may be used. Modernisation projects — moving to new data platforms, improving data quality, documenting data lineage — are common and create stable demand for data engineers and architects. People who enjoy untangling complex systems and who have patience for legal and organisational constraints find this work rewarding.
+For data professionals, this means that a significant part of the work consists of understanding where data comes from, what it means and whether it may be used. Modernisation projects - moving to new data platforms, improving data quality, documenting data lineage - are common and create stable demand for data engineers and architects. People who enjoy untangling complex systems and who have patience for legal and organisational constraints find this work rewarding.
 
 ## Generative AI in Government: Cautious Adoption
 
@@ -140,7 +140,7 @@ Data professionals in government can grow into lead data scientist roles, algori
 - The Algorithm Register, the Implementation Framework, FRAIA, the Dutch Data Protection Authority's coordinating role and Court of Audit reviews shape governance.
 - Many public sector AI applications are high-risk under the AI Act, with fundamental rights impact assessments required for public deployers.
 - Jobs exist at ministries, implementation agencies, statistics and registry organisations, infrastructure agencies, municipalities, supervisors and government IT organisations.
-- Public sector data work rewards careful, explainable and legally grounded approaches — and offers substantial societal impact.
+- Public sector data work rewards careful, explainable and legally grounded approaches - and offers substantial societal impact.
 
 ## Where to Start
 
@@ -151,7 +151,7 @@ Browse current AI, machine learning and data jobs, including public sector roles
 ## Frequently Asked Questions
 
 ### (Scenario: candidate concerned about government surveillance) Is public sector AI work mostly about fraud detection?
-No — much of it concerns infrastructure, statistics, service improvement, policy analysis and geospatial data, under strict governance requirements.
+No - much of it concerns infrastructure, statistics, service improvement, policy analysis and geospatial data, under strict governance requirements.
 
 ### (Scenario: candidate unfamiliar with Dutch history) Why is the childcare benefits scandal relevant to data jobs?
 It showed how data-driven risk selection without safeguards can cause discriminatory harm, and it reshaped rules and practices for public algorithms.
@@ -160,7 +160,7 @@ It showed how data-driven risk selection without safeguards can cause discrimina
 Among others, AI used to evaluate eligibility for public benefits and services; public deployers of high-risk AI must carry out a fundamental rights impact assessment.
 
 ### (Scenario: international candidate) Do I need to speak Dutch for government data jobs?
-In most cases yes — documentation, stakeholders and citizens are Dutch-speaking, although some technical or research roles may be more flexible.
+In most cases yes - documentation, stakeholders and citizens are Dutch-speaking, although some technical or research roles may be more flexible.
 
 ### (Scenario: candidate comparing salaries) Are government data jobs well paid?
 Salaries follow published collective agreement scales and may be lower than at banks or big tech, but job security, conditions and societal impact are strong.
@@ -170,7 +170,7 @@ Salaries follow published collective agreement scales and may be lower than at b
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is public sector AI work mostly about fraud detection?", "acceptedAnswer": {"@type": "Answer", "text": "No — much concerns infrastructure, statistics, services, policy analysis and geospatial data."}},
+    {"@type": "Question", "name": "Is public sector AI work mostly about fraud detection?", "acceptedAnswer": {"@type": "Answer", "text": "No - much concerns infrastructure, statistics, services, policy analysis and geospatial data."}},
     {"@type": "Question", "name": "Why is the childcare benefits scandal relevant to data jobs?", "acceptedAnswer": {"@type": "Answer", "text": "It reshaped rules and practices for public algorithms after discriminatory harm."}},
     {"@type": "Question", "name": "Which government AI systems are high-risk?", "acceptedAnswer": {"@type": "Answer", "text": "Among others, AI evaluating eligibility for public benefits; public deployers need a fundamental rights impact assessment."}},
     {"@type": "Question", "name": "Do I need to speak Dutch for government data jobs?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases yes."}},

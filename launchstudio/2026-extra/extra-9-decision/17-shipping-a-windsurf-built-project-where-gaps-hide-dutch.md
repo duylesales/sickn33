@@ -31,7 +31,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Het is 01:40 uur 's nachts en u staart naar twee functies die ogenschijnlijk exact hetzelfde doel dienen: `getUserOrgs` in `lib/orgs.ts` en `fetchOrganizationsForUser` in `server/queries/organizations.ts`. Beide functies werken. Beide worden aangeroepen vanuit verschillende uithoeken van uw applicatie. Maar de ene functie filtert gearchiveerde organisaties er wél uit en de andere niet. U kunt zich niet herinneren dat u een van beide heeft geschreven, omdat Cascade ze allebei heeft gegenereerd — met negen dagen ertussen, naar aanleiding van twee prompts die destijds volkomen los van elkaar leken te staan.
+Het is 01:40 uur 's nachts en u staart naar twee functies die ogenschijnlijk exact hetzelfde doel dienen: `getUserOrgs` in `lib/orgs.ts` en `fetchOrganizationsForUser` in `server/queries/organizations.ts`. Beide functies werken. Beide worden aangeroepen vanuit verschillende uithoeken van uw applicatie. Maar de ene functie filtert gearchiveerde organisaties er wél uit en de andere niet. U kunt zich niet herinneren dat u een van beide heeft geschreven, omdat Cascade ze allebei heeft gegenereerd - met negen dagen ertussen, naar aanleiding van twee prompts die destijds volkomen los van elkaar leken te staan.
 
 Dit is het typische handelsmerk van Windsurf, en het vertegenwoordigt een fundamenteel ander risicoprofiel dan klassieke code-aanvulling in één enkel bestand. De ongekende kracht van Cascade is dat het wijzigingen over een complete codebase tegelijkertijd kan doorvoeren: vraag om functionaliteit voor gebruikers-impersonatie ten behoeve van supportmedewerkers, en de agent past in één coherente beweging de authenticatie-middleware aan, werkt drie route handlers bij, genereert een databasemigratie en past een React-hook aan. Die samenhang is *binnen* één afzonderlijke sessie buitengewoon indrukwekkend. Tussen opeenvolgende sessies treedt echter onvermijdelijk erosie op: het model herontdekt uw codebase elke keer opnieuw en kan niet betrouwbaar onderscheiden welk van de aangetroffen architectuurpatronen uw werkelijke voorkeur heeft.
 
@@ -43,7 +43,7 @@ Dit is zonder twijfel de meest voorkomende bevinding en tevens degene met de gro
 
 U vroeg om een structurele aanpassing: "verplaats alle authenticatie naar middleware", "stap over van de publieke Supabase-client naar een beveiligde serverclient", of "breng permissiecontroles onder in een centrale helperfunctie". Cascade stelde een helder plan op, toonde een lijst met bestanden, voerde de bewerkingen uit en u keurde het goed. Elf bestanden werden netjes aangepast. De hoofdfunctionaliteit werkte vlekkeloos tijdens uw handmatige test en u ging door naar de volgende feature.
 
-Het twaalfde bestand ontbrak echter in het plan. Omdat het in een map stond die buiten het initiële zoekbereik viel, omdat het aanroeppunt dynamisch werd samengesteld, of omdat het bestand pas later in een andere sessie werd toegevoegd. Nu heeft u een codebase waarin authenticatie *grotendeels* via middleware verloopt — behalve in die ene vergeten route waar de oude inline-controle is achtergebleven, die op subtiele wijze wél controleert op de actieve sessie, maar vergeet de rol van de gebruiker te verifiëren.
+Het twaalfde bestand ontbrak echter in het plan. Omdat het in een map stond die buiten het initiële zoekbereik viel, omdat het aanroeppunt dynamisch werd samengesteld, of omdat het bestand pas later in een andere sessie werd toegevoegd. Nu heeft u een codebase waarin authenticatie *grotendeels* via middleware verloopt - behalve in die ene vergeten route waar de oude inline-controle is achtergebleven, die op subtiele wijze wél controleert op de actieve sessie, maar vergeet de rol van de gebruiker te verifiëren.
 
 Half afgeronde refactors zijn levensgevaarlijk, juist omdat ze er ogenschijnlijk afgewerkt uitzien. De oude logica functioneert immers nog steeds, waardoor er nergens een foutmelding optreedt. De enige betrouwbare manier om deze weeffouten bloot te leggen, is door gericht te zoeken naar het patroon waar u *vandaan migreerde*, in plaats van naar het patroon waar u naartoe wilde:
 
@@ -108,11 +108,11 @@ Heeft u één middag beschikbaar vóórdat u uw product openstelt voor klanten? 
 5. Vergelijk uw databasestructuur (diff) met de live productieomgeving, synchroniseer afwijkingen en koppel migraties aan de build. (60 min)
 6. Voer de cross-tenant test uit: twee accounts, waarbij account A records van account B opvraagt op elk endpoint dat een ID accepteert. (30 min)
 
-Zes concrete stappen, circa vierenhalf uur werk, en het rekent doelgericht af met de daadwerkelijke risico's van multi-file agentic coding — in tegenstelling tot generieke security-lijstjes die grotendeels niet van toepassing zijn op uw situatie.
+Zes concrete stappen, circa vierenhalf uur werk, en het rekent doelgericht af met de daadwerkelijke risico's van multi-file agentic coding - in tegenstelling tot generieke security-lijstjes die grotendeels niet van toepassing zijn op uw situatie.
 
-Wat deze stappen niet kunnen oplossen, zijn de fundamentele structurele keuzes. Welke van de twee parallelle authenticatiestromen blijft behouden, waar wordt autorisatie voortaan universeel afgedwongen en hoe wordt het datamodel beheerd? Deze beslissingen vereisen dat iemand het totale systeem als één geheel in het geheugen houdt — en dat is architectonisch gezien exact waar een sessie-gebonden AI-agent toe niet in staat is. [LaunchStudio](https://launchstudio.eu/nl/) is opgericht voor die overdracht: uw frontend en ontwikkelworkflow blijven intact, de structurele inconsistenties worden opgelost door senior engineers die wekelijks met dit soort codebases werken, en alle ontwerpkeuzes worden expliciet gedocumenteerd zodat uw Windsurf-rules ze daarna kunnen bewaken. Ons team is afkomstig van [Manifera](https://www.manifera.com/portfolio/), waar men al meer dan tien jaar productiesoftware bouwt voor enterprise-klanten op basis van het principe dat er binnen een codebase slechts één juiste manier bestaat om cruciale taken uit te voeren.
+Wat deze stappen niet kunnen oplossen, zijn de fundamentele structurele keuzes. Welke van de twee parallelle authenticatiestromen blijft behouden, waar wordt autorisatie voortaan universeel afgedwongen en hoe wordt het datamodel beheerd? Deze beslissingen vereisen dat iemand het totale systeem als één geheel in het geheugen houdt - en dat is architectonisch gezien exact waar een sessie-gebonden AI-agent toe niet in staat is. [LaunchStudio](https://launchstudio.eu/nl/) is opgericht voor die overdracht: uw frontend en ontwikkelworkflow blijven intact, de structurele inconsistenties worden opgelost door senior engineers die wekelijks met dit soort codebases werken, en alle ontwerpkeuzes worden expliciet gedocumenteerd zodat uw Windsurf-rules ze daarna kunnen bewaken. Ons team is afkomstig van [Manifera](https://www.manifera.com/portfolio/), waar men al meer dan tien jaar productiesoftware bouwt voor enterprise-klanten op basis van het principe dat er binnen een codebase slechts één juiste manier bestaat om cruciale taken uit te voeren.
 
-Vaste prijs, afgesproken na een korte technische intake vóórdat iemand een regel code aanraakt — [vertel ons wat u heeft gebouwd](https://launchstudio.eu/nl/#contact) en u ontvangt nog deze week een helder voorstel qua kosten en doorlooptijd.
+Vaste prijs, afgesproken na een korte technische intake vóórdat iemand een regel code aanraakt - [vertel ons wat u heeft gebouwd](https://launchstudio.eu/nl/#contact) en u ontvangt nog deze week een helder voorstel qua kosten en doorlooptijd.
 
 ## Echt voorbeeld
 
@@ -120,16 +120,16 @@ Vaste prijs, afgesproken na een korte technische intake vóórdat iemand een reg
 
 Nadia el Amrani ontwikkelde met behulp van Windsurf gedurende zeven weken Werkstroom: een compliance- en workflowtool voor facilitaire dienstverleners waarmee keuringen, certificeringen en verloopdata op klantlocaties worden beheerd. Vier gerenommeerde facilitaire bedrijven draaiden een proeflicentie. Een vijfde, aanzienlijk grotere speler toonde serieuze interesse en vroeg om een formeel beveiligingsrapport vóór ondertekening van het jaarcontract.
 
-Onze technische audit bracht vrijwel direct het inleidende probleem aan het licht. Twee afzonderlijke functies haalden de toegankelijke locaties van een gebruiker op: de ene geschreven in week twee, de andere gegenereerd in week vijf tijdens een refactor die de eerste had moeten vervangen. De nieuwere functie filterde netjes op het organisatie-ID van de ingelogde gebruiker. De oudere functie accepteerde echter een losse `siteIds`-array die vanuit de frontend werd meegestuurd — en één dashboardmodule bleek die oude functie nog altijd aan te roepen met een ongefilterde lijst die in de browser was samengesteld. Elke willekeurige proefgebruiker kon via een gemanipuleerd netwerkverzoek de inspectierapporten en certificeringen van circa elfhonderd locaties van de overige drie proefklanten downloaden. De refactor-commit had destijds keurig negen bestanden aangepast; het tiende bestand was over het hoofd gezien.
+Onze technische audit bracht vrijwel direct het inleidende probleem aan het licht. Twee afzonderlijke functies haalden de toegankelijke locaties van een gebruiker op: de ene geschreven in week twee, de andere gegenereerd in week vijf tijdens een refactor die de eerste had moeten vervangen. De nieuwere functie filterde netjes op het organisatie-ID van de ingelogde gebruiker. De oudere functie accepteerde echter een losse `siteIds`-array die vanuit de frontend werd meegestuurd - en één dashboardmodule bleek die oude functie nog altijd aan te roepen met een ongefilterde lijst die in de browser was samengesteld. Elke willekeurige proefgebruiker kon via een gemanipuleerd netwerkverzoek de inspectierapporten en certificeringen van circa elfhonderd locaties van de overige drie proefklanten downloaden. De refactor-commit had destijds keurig negen bestanden aangepast; het tiende bestand was over het hoofd gezien.
 
 Daarnaast faalde de database-audit: er bleken drie kolommen in de live productiedatabase te bestaan die nergens in een migratiebestand waren gedocumenteerd, handmatig toegevoegd tijdens een eerdere verkoopdemo.
 
 **Resultaat:** De gedupliceerde queries werden teruggebracht naar één centrale organisatie-gebonden datalaag, alle locatietoegang werd ondergebracht achter één uniforme autorisatiehelper, de databasestructuur werd gesynchroniseerd met een sluitende baseline-migratie die automatisch meedraait bij deployments, en een geautomatiseerde cross-tenant test werd verankerd in CI. Zes werkdagen werk. Nadia kon de grote prospect een officieel audit- en herstelrapport overhandigen en tekende het contract drie weken later.
 
-> *"Beide functies zagen er op zichzelf prima uit. Dat blijft me achteraf het meest verbazen. Geen van beide bevatte slechte code — ze verschilden simpelweg op één cruciaal filter. Ik had ze letterlijk zij-aan-zij moeten leggen om het ooit zelf te ontdekken."*
-> — **Nadia el Amrani, Oprichter, Werkstroom (Tilburg)**
+> *"Beide functies zagen er op zichzelf prima uit. Dat blijft me achteraf het meest verbazen. Geen van beide bevatte slechte code - ze verschilden simpelweg op één cruciaal filter. Ik had ze letterlijk zij-aan-zij moeten leggen om het ooit zelf te ontdekken."*
+> - **Nadia el Amrani, Oprichter, Werkstroom (Tilburg)**
 
-**Kosten & Doorlooptijd:** € 3.200 (Launch Ready Pakket) — live binnen 6 werkdagen.
+**Kosten & Doorlooptijd:** € 3.200 (Launch Ready Pakket) - live binnen 6 werkdagen.
 
 ---
 
@@ -141,7 +141,7 @@ Omdat het gegenereerde plan uitsluitend gebaseerd is op de bestanden die Cascade
 
 ### Heeft het zin om Windsurf-rules en memories te gebruiken als ze na verloop van tijd verouderen?
 
-Absoluut — het is de meest kostenefficiënte manier om consistentie in uw codebase te waarborgen. De vereiste discipline is echter om deze regels te behandelen als broncode: evalueer ze zodra uw architectuur verandert, verwijder verouderde richtlijnen doelbewust, en houd de lijst beknopt zodat het doornemen ervan twee minuten kost in plaats van twintig.
+Absoluut - het is de meest kostenefficiënte manier om consistentie in uw codebase te waarborgen. De vereiste discipline is echter om deze regels te behandelen als broncode: evalueer ze zodra uw architectuur verandert, verwijder verouderde richtlijnen doelbewust, en houd de lijst beknopt zodat het doornemen ervan twee minuten kost in plaats van twintig.
 
 ### Hoe bepaal ik welke van twee gedupliceerde functies ik moet behouden?
 
@@ -153,7 +153,7 @@ Gebruik de agent gerust om potentiële duplicaten op te sporen, maar inspecteer 
 
 ### Dekt de aanwezigheid van gegenereerde tests het risico op ongeoorloofde datatoegang (IDOR) al af?
 
-Vrijwel nooit. Door AI gegenereerde tests verifiëren doorgaans uitsluitend of een geautoriseerde gebruiker het verwachte antwoord ontvangt — het 'happy path'. Het waarborgen van data-isolatie tussen huurders vereist echter dat u expliciet test of een *ongeautoriseerde* gebruiker een keiharde HTTP 403-foutmelding krijgt. Die negatieve testcase genereert een AI-agent zelden uit eigen beweging.
+Vrijwel nooit. Door AI gegenereerde tests verifiëren doorgaans uitsluitend of een geautoriseerde gebruiker het verwachte antwoord ontvangt - het 'happy path'. Het waarborgen van data-isolatie tussen huurders vereist echter dat u expliciet test of een *ongeautoriseerde* gebruiker een keiharde HTTP 403-foutmelding krijgt. Die negatieve testcase genereert een AI-agent zelden uit eigen beweging.
 
 <script type="application/ld+json">
 {

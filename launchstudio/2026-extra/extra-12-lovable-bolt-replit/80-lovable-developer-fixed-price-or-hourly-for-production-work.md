@@ -30,7 +30,7 @@ Fixed price means the supplier carries the risk of the estimate being wrong. You
 
 That works when the work is knowable in advance: a security review and remediation against a named checklist, a payment integration with a defined set of flows, a deployment and launch, an accessibility pass, a migration with a rehearsed plan. These have boundaries, and a competent supplier has done them before.
 
-What you give up is flexibility. A fixed price is a fixed scope, and anything you think of during the work is a change request — which is not a supplier being difficult but the only way the arrangement can function.
+What you give up is flexibility. A fixed price is a fixed scope, and anything you think of during the work is a change request - which is not a supplier being difficult but the only way the arrangement can function.
 
 The failure mode is a fixed price agreed from a vague description. The supplier has priced their assumption, you have bought yours, and the difference surfaces in week two.
 
@@ -40,7 +40,7 @@ Hourly means you carry the risk and buy flexibility.
 
 It suits work whose shape is genuinely unknown: diagnosing a problem nobody understands, an open-ended improvement pass on an unfamiliar codebase, ongoing development where priorities change weekly, and anything where you want to redirect as you learn.
 
-The failure mode is no ceiling and no visibility — hours accumulate, progress is unclear, and the conversation at the end is about the invoice rather than the outcome.
+The failure mode is no ceiling and no visibility - hours accumulate, progress is unclear, and the conversation at the end is about the invoice rather than the outcome.
 
 Both are fixed by structure: a cap you agree in advance, a short written update at each interval saying what was done and what is next, and a checkpoint where either side can stop.
 
@@ -70,7 +70,7 @@ If you agree a fixed price, four things belong in writing.
 
 ## What Hourly Must Include
 
-And if hourly: an agreed cap that cannot be exceeded without your approval, a written update at a regular interval, a stated rate with any differences for different work, and a clear definition of what is billable — is a status call billable, is thinking time, is the time spent getting your environment running.
+And if hourly: an agreed cap that cannot be exceeded without your approval, a written update at a regular interval, a stated rate with any differences for different work, and a clear definition of what is billable - is a status call billable, is thinking time, is the time spent getting your environment running.
 
 That last question is worth asking explicitly. The answer is reasonable either way; discovering the answer from an invoice is not.
 
@@ -86,9 +86,9 @@ Founders benchmarking these engagements need a sense of what the market actually
 
 **Offshore arrangements:** considerably lower per hour, with the difference in time zone, communication and supervision costing back some of the saving. It works well for defined work with clear specifications and poorly for discovery.
 
-Two notes on interpreting these. A lower rate is not a lower cost if the work takes three times as long, and rate is the least useful number for comparing suppliers — what matters is the total for the outcome, which is why itemised fixed prices are easier to compare than hourly rates.
+Two notes on interpreting these. A lower rate is not a lower cost if the work takes three times as long, and rate is the least useful number for comparing suppliers - what matters is the total for the outcome, which is why itemised fixed prices are easier to compare than hourly rates.
 
-And for the work this series describes — securing and launching an AI-built product — the total for a small product is typically €800 to €7,500 whoever does it, because the work is broadly the same list.
+And for the work this series describes - securing and launching an AI-built product - the total for a small product is typically €800 to €7,500 whoever does it, because the work is broadly the same list.
 
 ## What Happens When Something Goes Wrong
 
@@ -112,7 +112,7 @@ A founder who cannot read code is uncertain how to evaluate what they are paying
 
 **Does it do what was agreed?** Work through the itemised list yourself. Each item should be demonstrable: show me that a user from another organisation cannot see this record; show me what happens when a payment fails; show me the backup being restored.
 
-**Did the estimate hold?** Not perfectly — estimates are estimates — but roughly, and with early warning when it did not. A supplier who tells you in week one that something is larger than expected is behaving well; one who tells you at the end is not.
+**Did the estimate hold?** Not perfectly - estimates are estimates - but roughly, and with early warning when it did not. A supplier who tells you in week one that something is larger than expected is behaving well; one who tells you at the end is not.
 
 **Can you understand the explanation?** A good engineer can explain what they did to a non-technical founder. If every answer is impenetrable, that is sometimes genuine complexity and frequently a signal.
 
@@ -122,11 +122,11 @@ That last measure is the one to weight most heavily, and it is worth stating as 
 
 ## Setting This Up
 
-For a founder commissioning work: a short paid assessment first, producing a written report you own; a fixed price quoted from that report for work that can be specified — security, payments, deployment, accessibility, migration — itemised with explicit exclusions, a stated procedure for unexpected findings, and milestone payments; hourly with a cap, regular written updates and a defined billable scope for work that requires discovery; and a checkpoint in either arrangement where both sides can stop without argument.
+For a founder commissioning work: a short paid assessment first, producing a written report you own; a fixed price quoted from that report for work that can be specified - security, payments, deployment, accessibility, migration - itemised with explicit exclusions, a stated procedure for unexpected findings, and milestone payments; hourly with a cap, regular written updates and a defined billable scope for work that requires discovery; and a checkpoint in either arrangement where both sides can stop without argument.
 
-LaunchStudio works on fixed price, from €800 for the Launch Ready package, quoted after reading the code rather than before. Behind it is Manifera — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio works on fixed price, from €800 for the Launch Ready package, quoted after reading the code rather than before. Behind it is Manifera - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
-[Ask us for an assessment first](https://launchstudio.eu/en/#contact) — it is a day, you keep the report, and the quote that follows is one we can stand behind.
+[Ask us for an assessment first](https://launchstudio.eu/en/#contact) - it is a day, you keep the report, and the quote that follows is one we can stand behind.
 
 ## Real example
 
@@ -138,22 +138,22 @@ She needed the product secured, payments added and a launch to a further 60 appr
 
 In week two the supplier found that reports were stored as files on the application's filesystem and had been disappearing on redeploys, that no endpoint checked which appraiser was asking, and that the valuation calculation existed in three places with two variants. None of it was in the quoted scope, because nobody had read the code.
 
-The engagement became a sequence of change requests. Final cost €9,400, eleven weeks instead of three, and a relationship that ended badly on both sides — the supplier believing they had been asked to fix an undisclosed mess, Lieselotte believing she had been quoted for a job the supplier had not understood.
+The engagement became a sequence of change requests. Final cost €9,400, eleven weeks instead of three, and a relationship that ended badly on both sides - the supplier believing they had been asked to fix an undisclosed mess, Lieselotte believing she had been quoted for a job the supplier had not understood.
 
 Two business days with a different supplier, then the work: a paid assessment of €1,200 producing a nine-page report naming every finding with an estimate and a priority order, which she owns; a fixed price of €6,100 quoted from that report, itemised across eleven items with four explicit exclusions; a stated procedure for anything further found, which was invoked twice and handled in a day each; and milestone payments in thirds.
 
 **Result:** the second engagement completed in eleven business days against an estimate of ten, at €6,100 plus the €1,200 assessment. Lieselotte's assessment is that the cheap quote cost her €9,400, eight extra weeks and a supplier relationship, and that the assessment fee she initially resisted was the cheapest part of the whole exercise.
 
 > *"I refused to pay twelve hundred euros for someone to tell me what was wrong. Then I paid nine thousand four hundred to find out during the work, over eleven weeks, one argument at a time."*
-> — **Lieselotte Bijkerk, Founder, Taxatierapport (Hilversum)**
+> - **Lieselotte Bijkerk, Founder, Taxatierapport (Hilversum)**
 
-**Cost & Timeline:** €7,300 total (€1,200 assessment producing a written report, €6,100 fixed-price remediation across eleven itemised items including storage migration, authorisation, calculation consolidation, payments and launch) — completed in 11 business days.
+**Cost & Timeline:** €7,300 total (€1,200 assessment producing a written report, €6,100 fixed-price remediation across eleven itemised items including storage migration, authorisation, calculation consolidation, payments and launch) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
 ### Which is better, fixed price or hourly?
 
-Neither in general. Fixed price suits work that can be specified — security, payments, deployment, migration. Hourly suits discovery and changing priorities. Most engagements should use both, in that order.
+Neither in general. Fixed price suits work that can be specified - security, payments, deployment, migration. Hourly suits discovery and changing priorities. Most engagements should use both, in that order.
 
 ### Why should I pay for an assessment?
 
@@ -165,7 +165,7 @@ An itemised scope, explicit exclusions, a stated procedure for unexpected findin
 
 ### What must an hourly arrangement include?
 
-A cap that cannot be exceeded without approval, regular written updates, a stated rate, and a clear definition of what is billable — including whether calls and environment setup are.
+A cap that cannot be exceeded without approval, regular written updates, a stated rate, and a clear definition of what is billable - including whether calls and environment setup are.
 
 ### Is the cheapest quote usually the most expensive?
 
@@ -213,7 +213,7 @@ Frequently, when it was produced without reading the code. The price you agree i
       "name": "Is the cheapest quote usually most expensive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often, when produced without reading the code — you agree a price for imagined work and pay for the work that exists."
+        "text": "Often, when produced without reading the code - you agree a price for imagined work and pay for the work that exists."
       }
     }
   ]

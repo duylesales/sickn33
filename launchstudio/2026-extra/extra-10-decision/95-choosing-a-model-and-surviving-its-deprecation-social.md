@@ -4,10 +4,10 @@ Trusting a model alias instead of pinning a version is how this happens invisibl
 
 ❌ The classifier referenced a model by alias, so the provider's update changed behaviour with zero deployment on his side
 ❌ Applications previously in one category began splitting across two others, breaking a fund's whole triage workflow
-❌ It took 11 days to notice, because model versions weren't recorded with outputs — he had to correlate patterns against release notes
+❌ It took 11 days to notice, because model versions weren't recorded with outputs - he had to correlate patterns against release notes
 ❌ The retirement notice for the old version had arrived 3 weeks earlier, to an unmonitored inbox
 
-✅ Pin every model to an explicit, dated version — never an alias that moves on its own
+✅ Pin every model to an explicit, dated version - never an alias that moves on its own
 ✅ Build one call layer with per-task model selection, logging, and cost accounting
 ✅ Record model and prompt version with every output so a shift can be diagnosed in minutes, not days
 ✅ Put model retirement dates on the same review list as certificate and domain expiries

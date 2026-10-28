@@ -6,19 +6,19 @@ Buyer Stage: Awareness
 
 # Affiliate Marketing for AI SaaS: Building a Commission-Only Team
 
-If you have achieved Product-Market Fit (PMF) and your infrastructure is stable, your only goal is distribution. But hiring a sales team is expensive — a single SDR costs €4,000-6,000 a month before quota is even hit — and running paid ads is a gamble against rising CPCs on every "AI [category]" keyword. The most capital-efficient growth engine in SaaS is an Affiliate Program. You essentially build an army of marketers who work for free, and you only pay them a percentage of revenue after a real customer's card has actually been charged.
+If you have achieved Product-Market Fit (PMF) and your infrastructure is stable, your only goal is distribution. But hiring a sales team is expensive - a single SDR costs €4,000-6,000 a month before quota is even hit - and running paid ads is a gamble against rising CPCs on every "AI [category]" keyword. The most capital-efficient growth engine in SaaS is an Affiliate Program. You essentially build an army of marketers who work for free, and you only pay them a percentage of revenue after a real customer's card has actually been charged.
 
 ## The Economics of Affiliate SaaS
 
-Traditional affiliate programs (like Amazon Associates) offer a 3% commission on physical goods, because physical goods carry real cost of goods sold. Software margins are entirely different. Because the marginal cost of a new SaaS user is near zero — no inventory, no shipping, just a bit of extra compute — you can afford to be extraordinarily aggressive with payouts, and still keep 60-70% gross margin on every referred customer.
+Traditional affiliate programs (like Amazon Associates) offer a 3% commission on physical goods, because physical goods carry real cost of goods sold. Software margins are entirely different. Because the marginal cost of a new SaaS user is near zero - no inventory, no shipping, just a bit of extra compute - you can afford to be extraordinarily aggressive with payouts, and still keep 60-70% gross margin on every referred customer.
 
-The gold standard for AI wrappers is a **30% recurring commission for 12 months**. If your software costs $30/month, the affiliate makes $9 every month that user stays active. This recurring model is highly attractive to professional content creators and incentivizes them to create dedicated, high-quality tutorial videos for your product, because their income compounds with every subscriber who doesn't churn — which is also why the churn-reduction work covered elsewhere in this series directly protects your affiliate program's economics. A creator who refers 50 active users at $9/month recurring earns $450/month in passive income from a single old video; that is a far stronger incentive than a one-time $50 bounty.
+The gold standard for AI wrappers is a **30% recurring commission for 12 months**. If your software costs $30/month, the affiliate makes $9 every month that user stays active. This recurring model is highly attractive to professional content creators and incentivizes them to create dedicated, high-quality tutorial videos for your product, because their income compounds with every subscriber who doesn't churn - which is also why the churn-reduction work covered elsewhere in this series directly protects your affiliate program's economics. A creator who refers 50 active users at $9/month recurring earns $450/month in passive income from a single old video; that is a far stronger incentive than a one-time $50 bounty.
 
 Some founders run a hybrid model instead: a smaller recurring rate (15%) plus a larger one-time bounty ($100) for enterprise-tier signups, since high-ticket B2B buyers are harder to attribute over a 12-month window and creators often prefer the certainty of an immediate payout on a big deal.
 
 ## Setting up the Infrastructure
 
-Do not try to build a custom referral tracker in Supabase. Managing tracking cookies, handling refunds, deduplicating attribution across devices, and preventing fraud (self-referrals, cookie stuffing, coupon-code leakage on deal sites) will consume weeks of engineering time — time better spent on the product itself. This is also where a lot of affiliate programs quietly die: they get bolted onto a Stripe integration that was only ever built to "accept payment" at prototype stage, the same reason roughly 80% of AI-built projects never make it to a real production state. If your billing layer isn't hardened first, affiliate payouts will misfire before the tracking even becomes the problem.
+Do not try to build a custom referral tracker in Supabase. Managing tracking cookies, handling refunds, deduplicating attribution across devices, and preventing fraud (self-referrals, cookie stuffing, coupon-code leakage on deal sites) will consume weeks of engineering time - time better spent on the product itself. This is also where a lot of affiliate programs quietly die: they get bolted onto a Stripe integration that was only ever built to "accept payment" at prototype stage, the same reason roughly 80% of AI-built projects never make it to a real production state. If your billing layer isn't hardened first, affiliate payouts will misfire before the tracking even becomes the problem.
 
 Use platforms like **Rewardful** or **PartnerStack**. They integrate directly with your existing Stripe account in minutes via Stripe Connect and webhooks. They provide you with a portal to accept affiliates, and they provide the affiliates with a dashboard to grab their custom links and track their payouts. Attribution typically works one of two ways: a 60-90 day first-party cookie set on the referral link click, or (more robust, and required if you support iOS Safari's aggressive cookie limits) a server-side visit ID stored against the Stripe Checkout session metadata. When a user buys via Stripe, the platform automatically splits the revenue and queues the affiliate payout, usually via Stripe Connect or PayPal Mass Payouts, net of a standard 30-45 day refund-holdback window so you never pay commission on a transaction that later gets refunded.
 
@@ -26,7 +26,7 @@ Use platforms like **Rewardful** or **PartnerStack**. They integrate directly wi
 
 Your first affiliates should be your happiest users. In your app's dashboard, add a prominent button: *"Get Your Next Month Free."*
 
-Link this to their auto-generated affiliate portal. Explain the math simply: "Refer 3 friends, and your subscription is completely covered." This turns your software into a viral loop, where users actively market your tool in their private Slack channels and LinkedIn networks to subsidize their own costs. Because these referrals come from people already inside your product, their conversion rate is typically 2-3x higher than a cold blogger's traffic — a friend's direct recommendation still outperforms almost any paid channel.
+Link this to their auto-generated affiliate portal. Explain the math simply: "Refer 3 friends, and your subscription is completely covered." This turns your software into a viral loop, where users actively market your tool in their private Slack channels and LinkedIn networks to subsidize their own costs. Because these referrals come from people already inside your product, their conversion rate is typically 2-3x higher than a cold blogger's traffic - a friend's direct recommendation still outperforms almost any paid channel.
 
 Segment this cohort separately in your affiliate platform from professional marketers. User-referrers rarely need a 40% commission; a free month (worth roughly the same as a 15-20% discount) is usually enough incentive, which preserves your best economics for the professionals who actually need to be paid in cash.
 
@@ -36,7 +36,7 @@ Once the system works for users, you recruit the professionals: niche bloggers, 
 
 **The Pitch**: "I saw you wrote a review on [Competitor AI Tool]. We built a faster alternative, and we offer a 40% recurring commission (double what they offer). Here is a free premium account to test it. If you add us to your 'Top 10 AI Tools' list, it could be a significant new revenue stream for your site."
 
-You only need 5 to 10 high-traffic bloggers to rank you #1 on their listicles to completely transform your inbound traffic pipeline. Find them the same way you'd do competitive SEO research: search "[competitor name] review," "best [category] tools 2026," and "[competitor name] alternative," then reach out to whoever already ranks. These writers have already done the hard work of ranking on Google — you are simply buying distribution on infrastructure they built for someone else.
+You only need 5 to 10 high-traffic bloggers to rank you #1 on their listicles to completely transform your inbound traffic pipeline. Find them the same way you'd do competitive SEO research: search "[competitor name] review," "best [category] tools 2026," and "[competitor name] alternative," then reach out to whoever already ranks. These writers have already done the hard work of ranking on Google - you are simply buying distribution on infrastructure they built for someone else.
 
 Don't forget the paperwork: in the US, any affiliate earning over $600/year needs a W-9 and a 1099-NEC at tax time; in the EU, treat payouts as a standard vendor expense and keep invoices on file. Rewardful and PartnerStack both handle this reporting automatically, which is one more reason not to build your own tracker from scratch.
 
@@ -56,13 +56,13 @@ If your company is called "LaunchStudio," an affiliate might buy Google Ads for 
 
 - Use third-party platforms like Rewardful or PartnerStack to integrate with Stripe, eliminating the need to build complex tracking, fraud-prevention, and 1099 reporting software.
 
-- Turn your existing users into your first affiliates by offering them a way to cover their subscription costs through referrals — their conversion rates typically beat cold blogger traffic.
+- Turn your existing users into your first affiliates by offering them a way to cover their subscription costs through referrals - their conversion rates typically beat cold blogger traffic.
 
 - Establish strict rules prohibiting affiliates from buying ads on your branded keywords to prevent them from stealing organic traffic you'd have converted for free anyway.
 
 ## Automate Your Revenue Splits
 
-Ready to launch an affiliate army? LaunchStudio configures the complex Stripe and Rewardful integrations required to automatically route commissions and track referrals securely — work we scope as a fixed project rather than an open-ended retainer, typically landing in the €800-3,500 "Launch Ready" range.
+Ready to launch an affiliate army? LaunchStudio configures the complex Stripe and Rewardful integrations required to automatically route commissions and track referrals securely - work we scope as a fixed project rather than an open-ended retainer, typically landing in the €800-3,500 "Launch Ready" range.
 
 "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera.
 
@@ -72,13 +72,13 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Copywriter SaaS
 
-Jaxon, a startup founder, used **Bolt** to build an AI copywriter saas prototype. While the application was functional, its referral link system was broken — attribution was dropping between click and checkout, causing inaccurate commission splits for affiliate partners and undermining trust with the very creators driving signups.
+Jaxon, a startup founder, used **Bolt** to build an AI copywriter saas prototype. While the application was functional, its referral link system was broken - attribution was dropping between click and checkout, causing inaccurate commission splits for affiliate partners and undermining trust with the very creators driving signups.
 
 Jaxon partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team integrated the Rewardful API, set up reliable server-side attribution scripts tied to Stripe Checkout session metadata (removing the dependency on fragile browser cookies), and unified affiliate state across previously inconsistent databases.
 
 **Result:** Jaxon onboarded 50 affiliates who drove over €12,000 in referral sales with automated payouts.
 
-**Cost & Timeline:** €1,500 (Affiliate Setup Package) — production-ready and deployed in 5 business days.
+**Cost & Timeline:** €1,500 (Affiliate Setup Package) - production-ready and deployed in 5 business days.
 
 ---
 ## Frequently Asked Questions
@@ -101,4 +101,4 @@ Yes. Turning users into advocates creates a viral loop with higher-converting tr
 
 ### Where does Manifera fit into building affiliate infrastructure for my AI SaaS?
 
-Manifera is the engineering company behind LaunchStudio. When an affiliate program needs more than a plug-and-play Rewardful install — custom attribution logic, multi-tier commission structures, or a Stripe integration that was never hardened past the AI-prototype stage — LaunchStudio scopes it as a fixed, short project and pulls in the same senior engineers Manifera has used on production billing systems since 2014.
+Manifera is the engineering company behind LaunchStudio. When an affiliate program needs more than a plug-and-play Rewardful install - custom attribution logic, multi-tier commission structures, or a Stripe integration that was never hardened past the AI-prototype stage - LaunchStudio scopes it as a fixed, short project and pulls in the same senior engineers Manifera has used on production billing systems since 2014.

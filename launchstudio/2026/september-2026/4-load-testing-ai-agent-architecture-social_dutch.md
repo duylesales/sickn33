@@ -1,4 +1,4 @@
-⚡ Olivia, operationeel manager, bouwde een multi-agent supporttool met **Lovable** — en zag haar agents dubbele berichten versturen en crashen met een muur van `429 Too Many Requests` fouten zodra 100 gebruikers gelijktijdig inlogden. 👥
+⚡ Olivia, operationeel manager, bouwde een multi-agent supporttool met **Lovable** - en zag haar agents dubbele berichten versturen en crashen met een muur van `429 Too Many Requests` fouten zodra 100 gebruikers gelijktijdig inlogden. 👥
 
 Het belastingtesten van een AI-applicatie is fundamenteel anders: uw voornaamste bottleneck zijn de externe API-limieten van LLM-providers, niet uw eigen servercapaciteit. 🧠
 
@@ -12,7 +12,7 @@ Het belastingtesten van een AI-applicatie is fundamenteel anders: uw voornaamste
 
 Bij **LaunchStudio** voeren we sinds 2014 enterprise belastingtests en veerkrachtige architectuurprojecten uit via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Olivia's foutpercentage daalde naar nul, en het systeem verwerkte moeiteloos 1.000 gelijktijdige supportgesprekken zonder enige storing. (€2.200 (Load Testing & Hardening Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Olivia's foutpercentage daalde naar nul, en het systeem verwerkte moeiteloos 1.000 gelijktijdige supportgesprekken zonder enige storing. (€2.200 (Load Testing & Hardening Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Maak uw AI-architectuur bestand tegen piekbelasting: https://launchstudio.eu/nl/blog/load-testing-ai-agent-architecture
 

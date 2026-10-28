@@ -53,7 +53,7 @@ De meeste AI-native oprichters zijn niet van plan om vanaf dag één een API blo
 
 [LaunchStudio](https://launchstudio.eu/nl/) ontwerpt en verhardt extern gerichte API's specifiek voor AI-native producten die overstappen van alleen-intern naar integrator-gereed, gebruikmakend van Manifera's bredere ervaring met het bouwen en beveiligen van productie-API's voor enterprise-klanten waaronder Vodafone, door dezelfde versiebeheer- en snelheidsbeperkingsdiscipline toe te passen ongeacht de grootte van het aanvragende bedrijf of hoe informeel het oorspronkelijke verzoek om API-toegang ook werd gedaan.
 
-[Maak uw API gereed voor mensen wier code u nooit zult zien](https://launchstudio.eu/nl/#calculator) — een andere discipline dan het bouwen van de interface van uw eigen product, en een die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
+[Maak uw API gereed voor mensen wier code u nooit zult zien](https://launchstudio.eu/nl/#calculator) - een andere discipline dan het bouwen van de interface van uw eigen product, en een die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
 
 ## Het betrouwbaarheidscontract dat u stilzwijgend ondertekent
 
@@ -80,9 +80,9 @@ Een verkeerd geconfigureerde retry-instelling in de ERP-integratie van die klant
 **Resultaat:** LaunchStudio implementeerde snelheidsbeperking per integrator en duidelijke, gedocumenteerde foutreacties die het ERP-systeem van de klant precies zouden hebben verteld wat er gebeurde in plaats van stil onbeperkt opnieuw te proberen, waardoor de kloof werd gedicht voordat deze zich bij deze of een toekomstige integrator kon herhalen.
 
 > *"Het geautomatiseerde systeem van één klant hamerde per ongeluk op mijn API, en omdat ik nooit had gepland dat iemand behalve ikzelf het zou aanroepen, was er niets dat het tegenhield om het hele product voor iedereen tegelijk te vertragen."*
-> — **Sietse Groenewoud, Oprichter, VoorraadSync (Enschede)**
+> - **Sietse Groenewoud, Oprichter, VoorraadSync (Enschede)**
 
-**Kosten en tijdlijn:** € 1.350 (externe API-verharding — snelheidsbeperking, versiebeheer, documentatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.350 (externe API-verharding - snelheidsbeperking, versiebeheer, documentatie) - voltooid in 5 werkdagen.
 
 ---
 
@@ -118,7 +118,7 @@ Meestal wel – zoals in het geval van Sietse, was de oplossing het toevoegen va
       "name": "Moet elk AI-native product uiteindelijk zijn eigen API blootstellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, veel producten hebben dit nooit nodig — de richtlijnen zijn van toepassing zodra er een echte behoefte arriveert."
+        "text": "Nee, veel producten hebben dit nooit nodig - de richtlijnen zijn van toepassing zodra er een echte behoefte arriveert."
       }
     },
     {
@@ -150,7 +150,7 @@ Meestal wel – zoals in het geval van Sietse, was de oplossing het toevoegen va
       "name": "Kan een interne API worden omgezet naar extern zonder volledige herbouw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal wel — de oplossing is doorgaans het toevoegen van snelheidsbeperking, versiebeheer en documentatie rond bestaande logica."
+        "text": "Meestal wel - de oplossing is doorgaans het toevoegen van snelheidsbeperking, versiebeheer en documentatie rond bestaande logica."
       }
     }
   ]

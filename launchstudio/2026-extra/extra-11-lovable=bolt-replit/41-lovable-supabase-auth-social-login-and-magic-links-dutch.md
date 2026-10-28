@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 Authenticatie is het onderdeel van een met AI gebouwde app dat er het meest overtuigend voltooid uitziet. Registratie werkt, inloggen werkt, de e-mail voor wachtwoordherstel arriveert netjes, en er is een knop om in te loggen met Google. Een oprichter trekt logischerwijs de conclusie dat dit vinkje gezet is.
 
-Het is gezet voor het pad dat je zelf hebt getest. De onderliggende instellingen zijn gekozen om snel bouwen mogelijk te maken, en meerdere daarvan zijn ronduit verkeerd voor een product met echte gebruikers — niet op een manier die foutmeldingen genereert, maar op een manier die accounts oplevert op adressen die niemand bezit, redirects die breken op de lanceringsdag, en een herstelproces dat je support-inbox overspoelt.
+Het is gezet voor het pad dat je zelf hebt getest. De onderliggende instellingen zijn gekozen om snel bouwen mogelijk te maken, en meerdere daarvan zijn ronduit verkeerd voor een product met echte gebruikers - niet op een manier die foutmeldingen genereert, maar op een manier die accounts oplevert op adressen die niemand bezit, redirects die breken op de lanceringsdag, en een herstelproces dat je support-inbox overspoelt.
 
 ## Wat Er Geconfigureerd Wordt Geleverd, en Wat Niet
 
@@ -34,7 +34,7 @@ Wat je er niet bij krijgt, is een beslissing over hoe dit alles zich moet gedrag
 
 Dit is de meest ingrijpende schakelaar in het hele systeem. Wanneer bevestiging is uitgeschakeld, kan iedereen een account aanmaken op elk willekeurig e-mailadres, inclusief adressen die aan iemand anders toebehoren.
 
-Dat weegt zwaarder dan het lijkt. Jouw app stuurt berichten naar dat adres — notificaties over data, facturen, wachtwoordresets en soms inhoud van andere gebruikers. Een onbevestigd account betekent dat je gegevens verzendt naar een adres waarvan niemand heeft bewezen dat hij er toegang toe heeft. Het betekent ook dat misbruik gratis is: geautomatiseerde registraties hebben helemaal geen bestaande mailbox nodig.
+Dat weegt zwaarder dan het lijkt. Jouw app stuurt berichten naar dat adres - notificaties over data, facturen, wachtwoordresets en soms inhoud van andere gebruikers. Een onbevestigd account betekent dat je gegevens verzendt naar een adres waarvan niemand heeft bewezen dat hij er toegang toe heeft. Het betekent ook dat misbruik gratis is: geautomatiseerde registraties hebben helemaal geen bestaande mailbox nodig.
 
 Schakel e-mailbevestiging in vóór de lancering en test het volledige traject daarna grondig, want inschakeling verandert direct wat er gebeurt na registratie. Een app die gebouwd is met de aanname van directe toegang laat gebruikers vaak achter op een leeg scherm zodra er plotseling een bevestigingsstap tussen hen en het product verschijnt.
 
@@ -42,9 +42,9 @@ Schakel e-mailbevestiging in vóór de lancering en test het volledige traject d
 
 Sociale providers werken vlekkeloos tijdens de ontwikkeling en lopen vast op precies één moment: zodra je een custom domein koppelt.
 
-Het mechanisme is eenvoudig. Elke provider beheert een lijst met toegestane adressen waar gebruikers na authenticatie naartoe mogen worden teruggestuurd. Tijdens de ontwikkelfase bevat die lijst je preview-URL. Wanneer je app naar een eigen domein verhuist, stuurt de provider mensen nog steeds naar het oude adres — of weigert de aanvraag volledig met een foutmelding waar de gebruiker niets van begrijpt.
+Het mechanisme is eenvoudig. Elke provider beheert een lijst met toegestane adressen waar gebruikers na authenticatie naartoe mogen worden teruggestuurd. Tijdens de ontwikkelfase bevat die lijst je preview-URL. Wanneer je app naar een eigen domein verhuist, stuurt de provider mensen nog steeds naar het oude adres - of weigert de aanvraag volledig met een foutmelding waar de gebruiker niets van begrijpt.
 
-Drie zaken om vóór livegang te controleren: de redirect-adressen die bij elke provider zijn geconfigureerd moeten je echte productiedomein bevatten. De Site URL die in Supabase is ingesteld moet overeenkomen. En elke omgeving die je daadwerkelijk gebruikt — productie, staging, lokaal — moet op de lijst staan; als je staging vergeet, stopt je eigen testomgeving met werken zodra je de lijst opschoont.
+Drie zaken om vóór livegang te controleren: de redirect-adressen die bij elke provider zijn geconfigureerd moeten je echte productiedomein bevatten. De Site URL die in Supabase is ingesteld moet overeenkomen. En elke omgeving die je daadwerkelijk gebruikt - productie, staging, lokaal - moet op de lijst staan; als je staging vergeet, stopt je eigen testomgeving met werken zodra je de lijst opschoont.
 
 Er is nog een tweede, subtieler aspect. Als iemand zich registreert met een e-mailadres en later inlogt via een sociale provider met datzelfde adres, krijgt diegene dan één account of twee? Dit gedrag hangt af van je configuratie, en het ontdekken via een verwarde klant is veel pijnlijker dan er vooraf een bewuste keuze over maken.
 
@@ -52,11 +52,11 @@ Er is nog een tweede, subtieler aspect. Als iemand zich registreert met een e-ma
 
 Inloggen zonder wachtwoord is prettig en voorkomt een hele categorie supportvragen. Het introduceert echter twee problemen die door AI gegenereerde implementaties zelden goed afhandelen.
 
-**De link is een inloggegeven.** Iedereen die de link bezit, is geauthenticeerd. Dat betekent dat de link snel moet verlopen, slechts eenmalig bruikbaar mag zijn, en niet bruikbaar mag blijven wanneer een e-mail wordt doorgestuurd — een link in een gedeelde of doorgestuurde inbox is een werkende sleutel tot dat account zolang de geldigheid duurt.
+**De link is een inloggegeven.** Iedereen die de link bezit, is geauthenticeerd. Dat betekent dat de link snel moet verlopen, slechts eenmalig bruikbaar mag zijn, en niet bruikbaar mag blijven wanneer een e-mail wordt doorgestuurd - een link in een gedeelde of doorgestuurde inbox is een werkende sleutel tot dat account zolang de geldigheid duurt.
 
 **Afleverbaarheid wordt je inlogsysteem.** Als je transactionele e-mail niet correct is geauthenticeerd, belanden magic links in de spammap. Het gevolg is geen klein ongemak, maar een gebruiker die simpelweg niet meer kan inloggen. Producten zonder wachtwoord vereisen dat de e-mailconfiguratie vlekkeloos is ingericht in plaats van 'wel aardig'.
 
-Wanneer je zowel magic links als wachtwoorden aanbiedt, bepaal dan wat er gebeurt als iemand de methoden door elkaar gebruikt, en zorg ervoor dat een magic link niet gebruikt kan worden om een verplichte stap — zoals een vereiste profielbevestiging — te omzeilen.
+Wanneer je zowel magic links als wachtwoorden aanbiedt, bepaal dan wat er gebeurt als iemand de methoden door elkaar gebruikt, en zorg ervoor dat een magic link niet gebruikt kan worden om een verplichte stap - zoals een vereiste profielbevestiging - te omzeilen.
 
 ## Wachtwoordregels Die Helpen en Regels Die Dat Niet Doen
 
@@ -70,7 +70,7 @@ Rate limiting verdient extra nadruk, omdat het de enige controlemaatregel is die
 
 Het wijzigen van het e-mailadres van een account is een beveiligingsoperatie vermomd als een instellingenformulier.
 
-Als dit onzorgvuldig gebeurt, kan iemand met tijdelijke toegang tot een account — via een gedeelde laptop of een achtergelaten sessie — het account permanent overzetten naar een eigen e-mailadres. Wordt het correct ingericht, dan moet het nieuwe adres eerst bevestigd worden voordat de wijziging ingaat, en ontvangt het oude adres een waarschuwing dat er een wijziging is aangevraagd.
+Als dit onzorgvuldig gebeurt, kan iemand met tijdelijke toegang tot een account - via een gedeelde laptop of een achtergelaten sessie - het account permanent overzetten naar een eigen e-mailadres. Wordt het correct ingericht, dan moet het nieuwe adres eerst bevestigd worden voordat de wijziging ingaat, en ontvangt het oude adres een waarschuwing dat er een wijziging is aangevraagd.
 
 Test dit specifiek: wijzig je e-mailadres, bevestig dit, en probeer vervolgens een wachtwoordreset aan te vragen naar beide adressen om te zien welke werkt. Het resultaat vertelt je direct of je accountherstel waterdicht is.
 
@@ -78,7 +78,7 @@ Test dit specifiek: wijzig je e-mailadres, bevestig dit, en probeer vervolgens e
 
 Voor de meeste consumentenproducten bij lancering is tweeledige verificatie (MFA) niet direct noodzakelijk, al is het verstandig er rekening mee te houden. Voor applicaties met financiële gegevens, medische data of bedrijfskritische processen wordt het echter sneller een harde klanteis dan verwacht.
 
-Voeg je MFA toe, zorg dan vooral dat het herstelproces klopt. Bied herstelcodes aan die gebruikers daadwerkelijk kunnen opslaan, en richt een supportprocedure in voor mensen die hun toestel kwijtraken die niet neerkomt op "stuur een mailtje en wij schakelen het uit" — want een herstelroute die zwakker is dan de authenticatie zelf, is precies waar overnames plaatsvinden.
+Voeg je MFA toe, zorg dan vooral dat het herstelproces klopt. Bied herstelcodes aan die gebruikers daadwerkelijk kunnen opslaan, en richt een supportprocedure in voor mensen die hun toestel kwijtraken die niet neerkomt op "stuur een mailtje en wij schakelen het uit" - want een herstelroute die zwakker is dan de authenticatie zelf, is precies waar overnames plaatsvinden.
 
 ## Wanneer de Provider Niet Beschikbaar Is
 
@@ -98,7 +98,7 @@ Elk onverwacht gedrag is een actiepunt, en vrijwel al deze punten betreffen conf
 
 Niets hiervan vereist dat je opnieuw bouwt wat Lovable heeft gegenereerd. Het vereist dat je vaststelt welk gedrag je product nodig heeft, dit configureert en vervolgens verifieert door te proberen het systeem onderuit te halen.
 
-Dat is precies wat LaunchStudio doet bij het klaarmaken van AI-gebouwde software voor livegang: bevestigings- en sessiegedrag bewust instellen, redirect-adressen gelijktrekken over alle omgevingen en providers, geldigheid en eenmalig gebruik van magic links afdwingen, e-mailwijzigingen en herstelflows beveiligen, rate limiting instellen op authenticatie-endpoints, en een fallback-optie inrichten voor elk account — samen met de configuratie voor transactionele e-mail waar wachtwoordloze flows op steunen.
+Dat is precies wat LaunchStudio doet bij het klaarmaken van AI-gebouwde software voor livegang: bevestigings- en sessiegedrag bewust instellen, redirect-adressen gelijktrekken over alle omgevingen en providers, geldigheid en eenmalig gebruik van magic links afdwingen, e-mailwijzigingen en herstelflows beveiligen, rate limiting instellen op authenticatie-endpoints, en een fallback-optie inrichten voor elk account - samen met de configuratie voor transactionele e-mail waar wachtwoordloze flows op steunen.
 
 De interface die je hebt ontworpen blijft onaangeroerd, de code blijft van jou en begrijpelijk voor AI, en het werk valt binnen het [Launch Ready pakket](https://launchstudio.eu/nl/#packages). De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
@@ -116,7 +116,7 @@ Al het voorgaande gaat uit van individuele gebruikersaccounts. Zakelijke verkoop
 
 **Verwijdering moet onmiddellijk effect hebben.** Wanneer iemand een klantorganisatie verlaat, moet de toegang tot die bedrijfsdata bij het eerstvolgende verzoek stoppen, niet pas wanneer een token na uren verloopt.
 
-**Single Sign-On (SSO) wordt uiteindelijk gevraagd.** Grotere zakelijke klanten zullen erom vragen, en dat is een aanzienlijk integratietraject in plaats van een simpele schakelaar. Door te weten dat dit eraan komt, voorkom je keuzes die dit later bemoeilijken — vooral door identiteit en organisatielidmaatschap strikt gescheiden te houden in je datamodel.
+**Single Sign-On (SSO) wordt uiteindelijk gevraagd.** Grotere zakelijke klanten zullen erom vragen, en dat is een aanzienlijk integratietraject in plaats van een simpele schakelaar. Door te weten dat dit eraan komt, voorkom je keuzes die dit later bemoeilijken - vooral door identiteit en organisatielidmaatschap strikt gescheiden te houden in je datamodel.
 
 ## Echt voorbeeld
 
@@ -126,16 +126,16 @@ Ilja Verweij bouwde Baanplanner in Lovable: een reserveringssysteem voor zes ten
 
 Op de ochtend van de lancering stuurden de clubs de link naar ongeveer 1.400 leden. Het inloggen mislukte voor iedereen die Google gebruikte, resulterend in een foutmeldingspagina van de provider die niemand begreep. De oorzaak was het redirect-adres: de configuratie bij de provider bevatte nog de preview-URL, terwijl de app nu draaide op het eigen domein van de verenigingen.
 
-Tijdens het herstel kwamen nog twee problemen aan het licht. E-mailbevestiging stond uitgeschakeld, waardoor de accounts die in het eerste uur waren aangemaakt geregistreerd stonden op adressen die niemand had geverifieerd — inclusief vier duidelijke typefouten die nooit een boekingsbevestiging zouden ontvangen. Daarnaast bleef een magic link, aangeboden als alternatief, 24 uur geldig en kon deze oneindig vaak gebruikt worden.
+Tijdens het herstel kwamen nog twee problemen aan het licht. E-mailbevestiging stond uitgeschakeld, waardoor de accounts die in het eerste uur waren aangemaakt geregistreerd stonden op adressen die niemand had geverifieerd - inclusief vier duidelijke typefouten die nooit een boekingsbevestiging zouden ontvangen. Daarnaast bleef een magic link, aangeboden als alternatief, 24 uur geldig en kon deze oneindig vaak gebruikt worden.
 
 Vier werkdagen werk: redirect-adressen gecorrigeerd over alle providers en omgevingen, de Site URL gelijkgetrokken, e-mailbevestiging ingeschakeld waarbij de flow na registratie werd aangepast zodat nieuwe leden niet op een leeg scherm strandden, magic links beperkt tot vijftien minuten en eenmalig gebruik, rate limiting toegevoegd aan inloggen en resets, en een samenvoegingslogica gedefinieerd voor leden van wie het Google-adres overeenkwam met een bestaand e-mailaccount.
 
 **Resultaat:** de herlancering vier dagen later verwerkte 900 inlogpogingen op de eerste avond zonder enkel incident, en de vier foutieve accounts werden opgespoord en hersteld voordat iemand een baan boekte waarover geen communicatie mogelijk was.
 
 > *"Het werkte drie weken lang vlekkeloos en faalde voor iedereen tegelijk, omdat het onderdeel dat brak een instelling was in een dashboard dat ik nog nooit had geopend."*
-> — **Ilja Verweij, Oprichter, Baanplanner (Amersfoort)**
+> - **Ilja Verweij, Oprichter, Baanplanner (Amersfoort)**
 
-**Kosten & Doorlooptijd:** € 2.150 (authenticatieconfiguratie, redirect-afstemming, bevestigingsflow, rate limiting) — opgeleverd in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 2.150 (authenticatieconfiguratie, redirect-afstemming, bevestigingsflow, rate limiting) - opgeleverd in 4 werkdagen.
 
 ## Veelgestelde vragen
 

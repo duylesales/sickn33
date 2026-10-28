@@ -6,7 +6,7 @@
 ❌ **Dutch Employment Law Locks You In:** An in-house decision made for this quarter becomes a multi-year commitment regardless of what the roadmap needs next.
 
 **The Manifera Solution:**
-✅ **Three Rows Most Spreadsheets Skip:** Time-to-capacity, oversight cost, and scaling elasticity — not just salary vs. day rate.
+✅ **Three Rows Most Spreadsheets Skip:** Time-to-capacity, oversight cost, and scaling elasticity - not just salary vs. day rate.
 ✅ **Amsterdam Strategic Governance:** Architecture sign-off and independent quality verification, absorbing the oversight burden instead of pushing it onto the CTO.
 ✅ **Vietnam Execution Velocity:** Productive capacity in 2-4 weeks against a documented ramp plan, with contractual capacity flex built in.
 

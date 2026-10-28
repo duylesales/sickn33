@@ -26,9 +26,9 @@ Maar voor iedereen die projecten bouwt voor betalende zakelijke klanten brengt d
 
 ## De wisselwerking bij gelijktijdig samenwerken
 
-Iedereen laten werken in één gedeelde online omgeving neemt alle opstartfrictie weg — maar wist tegelijkertijd alle isolatie uit.
+Iedereen laten werken in één gedeelde online omgeving neemt alle opstartfrictie weg - maar wist tegelijkertijd alle isolatie uit.
 
-Als twee mensen tegelijkertijd in dezelfde functie aanpassingen doen, ontstaat er snel code die geen van beiden zo bedoeld had. Een foutieve coderegel die de actieve webapplicatie laat crashen, crasht de applicatie voor iedereen in de sessie — inclusief de collega die in het browsertabblad ernaast net een live demonstratie aan een klant geeft. Bovendien ontbreekt er een natuurlijk moment voor code-reviews, omdat elke regel code al in de gedeelde live-status staat op het moment dat hij wordt getypt.
+Als twee mensen tegelijkertijd in dezelfde functie aanpassingen doen, ontstaat er snel code die geen van beiden zo bedoeld had. Een foutieve coderegel die de actieve webapplicatie laat crashen, crasht de applicatie voor iedereen in de sessie - inclusief de collega die in het browsertabblad ernaast net een live demonstratie aan een klant geeft. Bovendien ontbreekt er een natuurlijk moment voor code-reviews, omdat elke regel code al in de gedeelde live-status staat op het moment dat hij wordt getypt.
 
 Dit is geen argument tegen het model van multiplayer coderen. Het is een pleidooi voor duidelijke werkafspraken: stem vóór aanvang kort af wie in welke module werkt, houd gezamenlijke sessies kort en gefocust, en gebruik versiebeheer (Git) voor alles wat langer duurt dan een middag. Gelijktijdig editen en een gedisciplineerde commit-historie vullen elkaar perfect aan; teams die multiplayer aanzien voor een vervanging van versiebeheer verliezen binnen no-time het overzicht over wie wat wanneer heeft gewijzigd.
 
@@ -52,7 +52,7 @@ Voor een klein productieteam kost het inrichten hiervan een halve dag. Voor een 
 
 Het probleem waar veel bureaus pas tegenaan lopen op het moment van facturatie of vertrek: onder wiens account staat dit project eigenlijk geregistreerd?
 
-Als het project in de workspace van jouw bureau draait, is de klant 100% afhankelijk van jou — iets wat steevast leidt tot wantrouwen zodra de relatie eindigt. Draait het project in de workspace van de klant, dan heeft jouw team vaak onvoldoende rechten of kan de toegang van de ene op de andere dag worden ingetrokken. Beide constructies kunnen werken, mits het vooraf zwart-op-wit in de opdrachtovereenkomst is vastgelegd.
+Als het project in de workspace van jouw bureau draait, is de klant 100% afhankelijk van jou - iets wat steevast leidt tot wantrouwen zodra de relatie eindigt. Draait het project in de workspace van de klant, dan heeft jouw team vaak onvoldoende rechten of kan de toegang van de ene op de andere dag worden ingetrokken. Beide constructies kunnen werken, mits het vooraf zwart-op-wit in de opdrachtovereenkomst is vastgelegd.
 
 Hetzelfde geldt voor de omliggende diensten: de domeinregistratie, de Supabase-database, het Stripe-account, de e-maildienst en de foutmonitoring. Een professionele oplevering eindigt ermee dat álle accounts op naam van de opdrachtgever staan, waarbij jouw bureau toegang heeft als beheerder die op elk moment kan worden ingetrokken. Een onprofessionele oplevering eindigt met een rommelig wachtwoordenlijstje en een creditcard van het bureau die nog ergens aan een live database gekoppeld staat.
 
@@ -62,7 +62,7 @@ Regel de eigendomsstructuur vóór de eerste factuur, niet ná de laatste.
 
 Iedereen nodigt vlot gasten en freelancers uit. Vrijwel niemand trekt die rechten ooit weer in. De reden is simpel: rechten intrekken is een administratieve taak die pas speelt wanneer het project af is en iedereen zijn aandacht alweer bij de volgende deadline heeft.
 
-De routine die werkt is mechanisch en onverbiddelijk: op de dag dat iemands betrokkenheid stopt, verwijder je diegene uit de Replit-workspace en uit alle gekoppelde clouddiensten, en roteer je alle API-sleutels waar diegene bij kon. Niet volgende maand, niet bij de kwartaalevaluatie — dezelfde dag.
+De routine die werkt is mechanisch en onverbiddelijk: op de dag dat iemands betrokkenheid stopt, verwijder je diegene uit de Replit-workspace en uit alle gekoppelde clouddiensten, en roteer je alle API-sleutels waar diegene bij kon. Niet volgende maand, niet bij de kwartaalevaluatie - dezelfde dag.
 
 Het roteren van de inloggegevens is het onderdeel dat mensen stelselmatig vergeten, terwijl het de enige stap is die de offboarding écht maakt. Iemand uit een dashboard klikken sluit de voordeur; maar een API-sleutel die drie maanden geleden naar een lokale laptop is gekopieerd, is een sleutel die nog steeds in diens broekzak zit.
 
@@ -94,7 +94,7 @@ Een project klaarmaken voor teamontwikkeling vergt geen complete herbouw: het vr
 
 Een solo-programmeur kan met kunst- en vliegwerk overleven zonder formeel versiebeheer. Twee mensen kunnen dat niet. De redenen zijn puur pragmatisch:
 
-**Het geeft antwoord op de vraag: "Wat is er veranderd?"** Als functionaliteit die dinsdag werkte op donderdag plotseling faalt, is de lijst met recente commits je belangrijkste opsporingsmiddel. Zonder historie is er alleen het menselijk geheugen — en met twee ontwikkelaars zijn er twee herinneringen die elkaar tegenspreken.
+**Het geeft antwoord op de vraag: "Wat is er veranderd?"** Als functionaliteit die dinsdag werkte op donderdag plotseling faalt, is de lijst met recente commits je belangrijkste opsporingsmiddel. Zonder historie is er alleen het menselijk geheugen - en met twee ontwikkelaars zijn er twee herinneringen die elkaar tegenspreken.
 
 **Het maakt parallel werken mogelijk.** Branches stellen twee mensen in staat om gelijktijdig aan verschillende features te bouwen zonder elkaars werk in de weg te zitten.
 
@@ -118,18 +118,18 @@ Onze software-engineers komen van Manifera: elf jaar ervaring met gedistribueerd
 
 Wouter Stam runde een tweemans studio in Amersfoort gespecialiseerd in digitale tools voor transportbedrijven. Vier afzonderlijke klantprojecten stonden ondergebracht in één gezamenlijke Replit-workspace. Tijdens een drukke piek had hij een freelance ontwikkelaar toegevoegd, en twee contactpersonen van klanten hadden eveneens toegang gekregen om mee te kijken in hun eigen software.
 
-De situatie leek prima te werken — totdat een grote klant tijdens een formele leveranciersaudit vroeg om een overzicht van alle personen die toegang hadden tot hun bedrijfssysteem. Wouter kon die lijst onmogelijk met zekerheid overleggen: de ledenlijst van de workspace bevatte zeven accounts, de externe freelancer was al vier maanden klaar met zijn opdracht, en omdat alle vier de projecten in dezelfde workspace stonden, hadden externe accounts in theorie inzage in elkaars projecten en broncode.
+De situatie leek prima te werken - totdat een grote klant tijdens een formele leveranciersaudit vroeg om een overzicht van alle personen die toegang hadden tot hun bedrijfssysteem. Wouter kon die lijst onmogelijk met zekerheid overleggen: de ledenlijst van de workspace bevatte zeven accounts, de externe freelancer was al vier maanden klaar met zijn opdracht, en omdat alle vier de projecten in dezelfde workspace stonden, hadden externe accounts in theorie inzage in elkaars projecten en broncode.
 
-Technisch was de situatie nog riskanter: elk project maakte direct verbinding met de live productiedatabase. Elke ontwikkelsessie — inclusief die met de externe freelancer — voerde queries uit op actieve klantendata, inclusief privégegevens van vrachtwagenchauffeurs.
+Technisch was de situatie nog riskanter: elk project maakte direct verbinding met de live productiedatabase. Elke ontwikkelsessie - inclusief die met de externe freelancer - voerde queries uit op actieve klantendata, inclusief privégegevens van vrachtwagenchauffeurs.
 
 De sanering vergde acht werkdagen: de vier projecten strikt gesplitst in afzonderlijke Replit-workspaces met toegang die uitsluitend beperkt was tot betrokkenen bij dat specifieke contract; ontwikkeldatabases opgezet met geanonimiseerde data zodat dagelijks werk geen productiedata meer aanraakte; productietoegang beperkt tot Wouter en zijn compagnon en alle sleutels geroteerd; de voormalige freelancer en klantcontacten verwijderd en alle secrets vernieuwd; een vast offboarding-protocol opgenomen in de standaard werkwijze van het bureau; code overgezet naar afzonderlijke Git-repositories op naam van de respectievelijke klanten; en per project een beknopt runbook opgeleverd met alle koppelingen, cronjobs en maandelijkse cloudoverzichten.
 
 **Resultaat:** de inkoopaudit van de klant werd glansrijk doorstaan met een sluitende namenlijst. Wouter overhandigt het nieuwe éénpagina-overdrachtsdocument nu standaard bij elk intakegesprek, wat hem naar eigen zeggen al direct twee nieuwe opdrachten heeft opgeleverd.
 
-> *"Een klant vroeg wie er allemaal bij hun data kon, en ik realiseerde me dat het eerlijke antwoord 'zeven man' was — van wie er eentje al sinds maart niet meer voor me werkte."*
-> — **Wouter Stam, Oprichter, Stam Digitaal (Amersfoort)**
+> *"Een klant vroeg wie er allemaal bij hun data kon, en ik realiseerde me dat het eerlijke antwoord 'zeven man' was - van wie er eentje al sinds maart niet meer voor me werkte."*
+> - **Wouter Stam, Oprichter, Stam Digitaal (Amersfoort)**
 
-**Kosten & Doorlooptijd:** € 4.100 (scheiding workspaces, ontwikkeldatabases met geanonimiseerde testdata, rotatie inloggegevens, Git-migratie, runbooks en overdrachtsdocumentatie) — afgerond in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 4.100 (scheiding workspaces, ontwikkeldatabases met geanonimiseerde testdata, rotatie inloggegevens, Git-migratie, runbooks en overdrachtsdocumentatie) - afgerond in 8 werkdagen.
 
 ## Veelgestelde vragen
 

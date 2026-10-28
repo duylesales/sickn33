@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Halfway through the process, the news arrives — sometimes from the recruiter, sometimes from a press release, occasionally from a colleague who saw it first. The company you are about to join is being acquired, or is merging, or has just been bought by a private equity firm. The role you interviewed for was designed by people who may not be making decisions in six months. Candidates react in two predictable ways: withdrawing immediately, or ignoring it because the work still sounds good. Both skip the useful middle, which is finding out what the deal actually means for the job you were offered.
+Halfway through the process, the news arrives - sometimes from the recruiter, sometimes from a press release, occasionally from a colleague who saw it first. The company you are about to join is being acquired, or is merging, or has just been bought by a private equity firm. The role you interviewed for was designed by people who may not be making decisions in six months. Candidates react in two predictable ways: withdrawing immediately, or ignoring it because the work still sounds good. Both skip the useful middle, which is finding out what the deal actually means for the job you were offered.
 
 ## What Changes and What Does Not
 
@@ -43,7 +43,7 @@ The first thing worth knowing is that your employment position is better protect
 
 Under Dutch law implementing the European transfer-of-undertaking rules, when a business or part of a business transfers to another owner, the employees working there transfer automatically with their existing terms and conditions. Dismissal because of the transfer itself is not permitted, though reorganisations for other reasons remain possible afterwards. Collective agreement terms generally continue to apply for a period.
 
-Two caveats matter. These rules apply to transfers of an undertaking; a pure share purchase leaves your employer legally the same entity, so nothing transfers — the shareholder changes, not the contract. And protection of terms is not protection of your role's content, your manager, your team or your project.
+Two caveats matter. These rules apply to transfers of an undertaking; a pure share purchase leaves your employer legally the same entity, so nothing transfers - the shareholder changes, not the contract. And protection of terms is not protection of your role's content, your manager, your team or your project.
 
 ## Why Data Teams Are Particularly Exposed
 
@@ -55,7 +55,7 @@ An acquisition rarely eliminates the need for logistics or accounting. Data team
 
 **Strategic reversal.** A parent company may have its own view on whether AI development happens locally or centrally, which can turn an ambitious team into a support function.
 
-Against that, acquisitions also create work: merging data landscapes, harmonising definitions, rebuilding reporting and governance. If you enjoy that kind of problem, an acquisition is an opportunity rather than a threat — it is simply a different job than the one advertised.
+Against that, acquisitions also create work: merging data landscapes, harmonising definitions, rebuilding reporting and governance. If you enjoy that kind of problem, an acquisition is an opportunity rather than a threat - it is simply a different job than the one advertised.
 
 ## Questions to Ask Before Signing
 
@@ -74,7 +74,7 @@ The employer will not be able to answer everything, and that is normal during a 
 
 **Before announcement.** You may be joining without knowing. Nothing to do here beyond ordinary diligence, though an employer who knows and says nothing has told you something about their honesty.
 
-**Announced, not completed.** The most uncertain window. Regulatory review may be required — in some cases by the Authority for Consumers and Markets — and plans are provisional. This is when asking questions is most useful and answers are least certain.
+**Announced, not completed.** The most uncertain window. Regulatory review may be required - in some cases by the Authority for Consumers and Markets - and plans are provisional. This is when asking questions is most useful and answers are least certain.
 
 **Recently completed.** Integration planning is underway and the first reorganisations often follow within months. Ask directly whether a reorganisation is planned and what has already been decided.
 
@@ -102,15 +102,15 @@ The employer will not be able to answer everything, and that is normal during a 
 
 Uncertainty is a negotiating position, and reasonable employers accept that.
 
-Ask for the scope of the role to be described in the contract or an accompanying letter, so that a material change is identifiable later. Ask about a severance arrangement if the role is eliminated within the first year — unusual, but not unheard of when an employer genuinely needs a specific hire during a deal. Ask for a start date after completion, if that is feasible, so you join a known structure. And if the offer includes equity, ask specifically what the transaction does to it, in writing.
+Ask for the scope of the role to be described in the contract or an accompanying letter, so that a material change is identifiable later. Ask about a severance arrangement if the role is eliminated within the first year - unusual, but not unheard of when an employer genuinely needs a specific hire during a deal. Ask for a start date after completion, if that is feasible, so you join a known structure. And if the offer includes equity, ask specifically what the transaction does to it, in writing.
 
 If the employer refuses all of this while acknowledging the uncertainty, weigh that. You would be accepting the risk alone.
 
 ## If You Are Already Employed There
 
-For completeness, the reverse situation follows the same logic. Your terms are protected on a transfer of undertaking, but your role content is not. The practical advice is to document what you own, keep your network warm, and use the integration period deliberately — post-merger data work is genuinely valuable experience, and being the person who harmonised two data landscapes is a story that travels well.
+For completeness, the reverse situation follows the same logic. Your terms are protected on a transfer of undertaking, but your role content is not. The practical advice is to document what you own, keep your network warm, and use the integration period deliberately - post-merger data work is genuinely valuable experience, and being the person who harmonised two data landscapes is a story that travels well.
 
-Also watch the works council process, which is where the intended structure becomes visible earliest, and the GDPR questions that surface when customer and employee data from two organisations are combined. Those questions frequently need someone who understands both the data and the rules — which can be exactly the role you make for yourself.
+Also watch the works council process, which is where the intended structure becomes visible earliest, and the GDPR questions that surface when customer and employee data from two organisations are combined. Those questions frequently need someone who understands both the data and the rules - which can be exactly the role you make for yourself.
 
 ## The First Hundred Days After a Deal
 
@@ -136,13 +136,13 @@ He asks three questions. Does the acquirer have a data team? Yes, around forty p
 
 He does not withdraw, but he changes the terms. He asks for the role's scope to be described in an annex to the contract, a start date after the expected completion, and written confirmation of what happens to the option scheme.
 
-The employer agrees to the scope annex and the start date, and confirms the options will be cancelled with a cash settlement. He accepts, aware that the role may change. It does — within a year the team's mandate narrows and he spends nine months on integration work. He stays two years, learns a great deal about merging data landscapes, and leaves on his own timing.
+The employer agrees to the scope annex and the start date, and confirms the options will be cancelled with a cash settlement. He accepts, aware that the role may change. It does - within a year the team's mandate narrows and he spends nine months on integration work. He stays two years, learns a great deal about merging data landscapes, and leaves on his own timing.
 
 ## Who Is Buying Matters More Than the Fact of the Deal
 
 "Being acquired" describes very different futures depending on the buyer, and the distinction is usually knowable before you sign.
 
-**A strategic buyer in the same sector** typically wants the product, the customers or the technology. Duplication risk is highest here, because they often already have a data team — but so is investment, if your capability is the thing they lacked.
+**A strategic buyer in the same sector** typically wants the product, the customers or the technology. Duplication risk is highest here, because they often already have a data team - but so is investment, if your capability is the thing they lacked.
 
 **A strategic buyer entering a new market** is buying expertise it does not have. This is usually the most favourable case for a data team: you are the reason for the purchase rather than an overlap to be resolved.
 
@@ -155,14 +155,14 @@ One question cuts through all of it: what problem is the buyer solving by making
 ## Key Takeaways
 
 - On a transfer of undertaking, Dutch rules transfer employees with their existing terms and prohibit dismissal because of the transfer; a share purchase leaves your employer legally unchanged.
-- Protection covers your terms, not your role content, manager, team or project — which is where acquisitions actually bite for data teams.
+- Protection covers your terms, not your role content, manager, team or project - which is where acquisitions actually bite for data teams.
 - Duplication with the acquirer's existing data capability is the strongest predictor of whether your role survives intact.
 - Ask whether the deal is signed, whether the works council has advised, whether your role is in the business case and what happens to equity.
 - Negotiate a scope annex, a start date after completion and written clarity on options; uncertainty is a legitimate negotiating position.
 
 ## Where to Start
 
-If a deal makes an offer uncertain, check what comparable roles exist near you before deciding — an alternative in hand turns an anxious yes into a considered one.
+If a deal makes an offer uncertain, check what comparable roles exist near you before deciding - an alternative in hand turns an anxious yes into a considered one.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -188,7 +188,7 @@ A written description of the role's scope, a start date after completion, clarit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I withdraw if the company is being acquired?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically — check duplication with the acquirer's team, the business case and reporting lines."}},
+    {"@type": "Question", "name": "Should I withdraw if the company is being acquired?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - check duplication with the acquirer's team, the business case and reporting lines."}},
     {"@type": "Question", "name": "Am I protected if the business is transferred?", "acceptedAnswer": {"@type": "Answer", "text": "Transfer-of-undertaking rules transfer terms and prohibit dismissal because of the transfer."}},
     {"@type": "Question", "name": "What happens to my stock options in an acquisition?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the scheme; ask for written confirmation before signing."}},
     {"@type": "Question", "name": "What does the works council have to do with it?", "acceptedAnswer": {"@type": "Answer", "text": "It has an advisory right on transfers of control, revealing the intended structure early."}},

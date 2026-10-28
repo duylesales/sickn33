@@ -1,4 +1,4 @@
-🚨 "AI can write our entire codebase and replace senior engineers." — The costly myth that results in hallucinated security holes and unmaintainable technical debt. 🤖⚠️
+🚨 "AI can write our entire codebase and replace senior engineers." - The costly myth that results in hallucinated security holes and unmaintainable technical debt. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Context-Blind AI Code Generation:** AI code assistants generate plausible-looking snippets that fail under real-world concurrency, race conditions, and edge cases.

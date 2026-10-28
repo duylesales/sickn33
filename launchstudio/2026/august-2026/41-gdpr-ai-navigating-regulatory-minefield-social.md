@@ -1,4 +1,4 @@
-🔥 Dominic built a prototype using **Lovable** — dominic, an hr manager, used **lovable** to build a portal, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Dominic built a prototype using **Lovable** - dominic, an hr manager, used **lovable** to build a portal, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Dominic's application achieved silky-smooth performance: The portal became 100% compliant, passing external European privacy audits. (€2,200 (GDPR Compliance Package) — production-ready and deployed in 5 business days.). 🚀
+Dominic's application achieved silky-smooth performance: The portal became 100% compliant, passing external European privacy audits. (€2,200 (GDPR Compliance Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/gdpr-ai-navigating-regulatory-minefield
 

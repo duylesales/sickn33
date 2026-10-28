@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Het berichtje klinkt vriendelijk en volkomen logisch: *"Kun je me even de inloggegevens sturen, dan kan ik direct voor je aan de slag?"*
 
-Wat er vervolgens bij vrijwel elke vroege software-oprichter gebeurt: je deelt in één klap een kluisitem uit je wachtwoordmanager met daarin alle inloggegevens — van de Supabase-database en het Vercel-hostingaccount tot Stripe en de domeinregistrar. Het scheiden van die rechten kost op een drukke maandagochtend immers een uur dat niemand heeft. De externe ontwikkelaar is vakkundig en integer, het werk wordt netjes opgeleverd, en anderhalf jaar later heeft diezelfde freelancer nog steeds volledige beheertoegang tot een platform dat inmiddels honderden betalende klanten telt.
+Wat er vervolgens bij vrijwel elke vroege software-oprichter gebeurt: je deelt in één klap een kluisitem uit je wachtwoordmanager met daarin alle inloggegevens - van de Supabase-database en het Vercel-hostingaccount tot Stripe en de domeinregistrar. Het scheiden van die rechten kost op een drukke maandagochtend immers een uur dat niemand heeft. De externe ontwikkelaar is vakkundig en integer, het werk wordt netjes opgeleverd, en anderhalf jaar later heeft diezelfde freelancer nog steeds volledige beheertoegang tot een platform dat inmiddels honderden betalende klanten telt.
 
 Daar is geen greintje kwade opzet voor nodig om een acuut beveiligingsrisico te worden. Het enige wat ervoor nodig is, is dat niemand ooit heeft genoteerd wie waar toegang toe heeft.
 
@@ -44,7 +44,7 @@ Vóórdat je besluit wie welke rechten krijgt, moet je eerst in kaart brengen w�
 
 **Externe API's en tools.** Sentry voor error tracking, Google Analytics, OpenAI-sleutels en alle andere diensten die per verbruik worden afgerekend.
 
-Dit is geen enkelvoudige inlog; het zijn zeven fundamenteel verschillende systemen met elk hun eigen risicoprofiel bij misbruik of een datalek. Het scheiden van deze systemen is geen uiting van wantrouwen jegens een ontwikkelaar — het zorgt ervoor dat een gestolen laptop, een hergebruikt wachtwoord of een vergeten uitschrijving nooit direct alle zeven kroonjuwelen tegelijk weggeeft.
+Dit is geen enkelvoudige inlog; het zijn zeven fundamenteel verschillende systemen met elk hun eigen risicoprofiel bij misbruik of een datalek. Het scheiden van deze systemen is geen uiting van wantrouwen jegens een ontwikkelaar - het zorgt ervoor dat een gestolen laptop, een hergebruikt wachtwoord of een vergeten uitschrijving nooit direct alle zeven kroonjuwelen tegelijk weggeeft.
 
 ## Het principe van minimale rechten (Least Privilege), concreet toegepast
 
@@ -100,7 +100,7 @@ Dit is de eenvoudige routine van twintig minuten die voorkomt dat oud-medewerker
 4. Bevestig dat de meest recente code netjes gepusht is naar jóúw repository en niet uitsluitend lokaal op zijn laptop staat.
 5. Noteer de datum van uitschrijving in je administratie.
 
-De lakmoesproef: kun jij op dit moment direct een volledige lijst overleggen van iedereen die toegang heeft tot de data van jouw klanten? De meeste oprichters kunnen dat niet — niet uit nalatigheid, maar omdat offboarding een vaag voornemen was in plaats van een vaste checklist.
+De lakmoesproef: kun jij op dit moment direct een volledige lijst overleggen van iedereen die toegang heeft tot de data van jouw klanten? De meeste oprichters kunnen dat niet - niet uit nalatigheid, maar omdat offboarding een vaag voornemen was in plaats van een vaste checklist.
 
 ## Wanneer het een vaste medewerker betreft in plaats van een freelancer
 
@@ -126,7 +126,7 @@ Een kwartaalcontrole kost twintig minuten en beantwoordt vier simpele vragen:
 3. **Welke geheime sleutels zijn al lang niet geroteerd?**
 4. **Welke nieuwe externe diensten zijn er sinds het vorige kwartaal bijgekomen?**
 
-Zet deze controle elk kwartaal als een vaste afspraak in je agenda. Een accuraat overzicht van geautoriseerde personen is een van de documenten die zakelijke inkopers en privacy-auditors gegarandeerd opvragen — en een lijst die je elk kwartaal bijhoudt straalt direct volwassenheid en controle uit.
+Zet deze controle elk kwartaal als een vaste afspraak in je agenda. Een accuraat overzicht van geautoriseerde personen is een van de documenten die zakelijke inkopers en privacy-auditors gegarandeerd opvragen - en een lijst die je elk kwartaal bijhoudt straalt direct volwassenheid en controle uit.
 
 ## Echt voorbeeld
 
@@ -143,9 +143,9 @@ In zes werkdagen werd de beveiliging fundamenteel hersteld: voor alle actieve be
 **Resultaat:** de kliniek ontving binnen een week een waterdicht toegangsdocument met exact twee geautoriseerde personen, de audit werd met vlag en wimpel doorstaan, en de offboardingchecklist is nadien al twee keer succesvol gebruikt.
 
 > *"Ik had niemand opzettelijk toegang gegeven tot medische patiëntgegevens. Ik had vier verschillende mensen hetzelfde wachtwoord gegeven omdat dat op dat moment sneller was, en er daarna nooit meer bij stilgestaan."*
-> — **Nadine Peters, Oprichter, Kliniekagenda (Breda)**
+> - **Nadine Peters, Oprichter, Kliniekagenda (Breda)**
 
-**Kosten & Doorlooptijd:** € 2.700 (scheiding van accounts, rotatie van credentials, staging met dummydata, toegangslogging, formele procedures) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.700 (scheiding van accounts, rotatie van credentials, staging met dummydata, toegangslogging, formele procedures) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 

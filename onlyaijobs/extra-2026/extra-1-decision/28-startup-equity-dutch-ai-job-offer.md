@@ -69,7 +69,7 @@ Ask these before you weigh equity at all. A serious employer answers them withou
 
 The Dutch tax treatment of employee share options has changed in recent years, particularly around the moment of taxation for options in companies whose shares are not freely tradable. This detail matters enormously: being taxed on paper value you cannot sell is the classic way equity becomes a liability rather than a benefit.
 
-Because the rules have moved and depend on the structure, the only responsible advice is to check the current position with the Dutch Tax Administration or a tax adviser before accepting an offer where equity is a meaningful part of the package — and to ask the employer directly how their scheme is treated and whether employees have faced tax at a point where they could not sell.
+Because the rules have moved and depend on the structure, the only responsible advice is to check the current position with the Dutch Tax Administration or a tax adviser before accepting an offer where equity is a meaningful part of the package - and to ask the employer directly how their scheme is treated and whether employees have faced tax at a point where they could not sell.
 
 ## How to Weigh It Against Salary
 
@@ -125,11 +125,11 @@ If this sounds like work, that is the point. Two equity packages are only compar
 
 An ML engineer receives an offer from a scale-up: a salary slightly below a competing offer from an established employer, plus options presented as "a real stake in the company".
 
-He asks the questions. The percentage is small but not negligible. The valuation dates from a round eighteen months earlier. The strike price is close to that valuation. Vesting is four years with a one-year cliff. On leaving, vested options must be exercised within ninety days — which, given the strike price and the tax questions, would require real money he would not want to risk. There is a liquidation preference. Nobody has been paid out yet, because the company has not had an exit or a secondary.
+He asks the questions. The percentage is small but not negligible. The valuation dates from a round eighteen months earlier. The strike price is close to that valuation. Vesting is four years with a one-year cliff. On leaving, vested options must be exercised within ninety days - which, given the strike price and the tax questions, would require real money he would not want to risk. There is a liquidation preference. Nobody has been paid out yet, because the company has not had an exit or a secondary.
 
 None of this is unusual or dishonest. It simply means the equity is worth little today and everything depends on an outcome several years away.
 
-He compares the cash packages, finds the gap meaningful, and negotiates. The scale-up cannot move much on salary but adds a training budget and a four-day week option. He accepts, for the work and the team — and treats the options as a lottery ticket he did not pay for, which is the healthiest way to hold them.
+He compares the cash packages, finds the gap meaningful, and negotiates. The scale-up cannot move much on salary but adds a training budget and a four-day week option. He accepts, for the work and the team - and treats the options as a lottery ticket he did not pay for, which is the healthiest way to hold them.
 
 ## What to Ask Current Employees
 
@@ -151,7 +151,7 @@ None of this requires an awkward conversation about money. You are asking how a 
 
 ## Where to Start
 
-Before weighing equity against salary, check what comparable roles near you pay in cash — the clearer your alternatives, the easier it is to judge what the paper is actually worth to you.
+Before weighing equity against salary, check what comparable roles near you pay in cash - the clearer your alternatives, the easier it is to judge what the paper is actually worth to you.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -180,8 +180,8 @@ Conservatively. Compare cash packages first, treat equity as upside with an unkn
     {"@type": "Question", "name": "Should I accept a lower salary in exchange for equity?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the cash package works on its own; otherwise it is an investment decision."}},
     {"@type": "Question", "name": "What is a STAK and why do Dutch companies use it?", "acceptedAnswer": {"@type": "Answer", "text": "A foundation holding shares that issues depositary receipts, separating economics from voting control."}},
     {"@type": "Question", "name": "When is Dutch employee equity taxed?", "acceptedAnswer": {"@type": "Answer", "text": "Rules have changed recently and depend on structure; verify with the Tax Administration or an adviser."}},
-    {"@type": "Question", "name": "What happens to my options if I leave?", "acceptedAnswer": {"@type": "Answer", "text": "Leaver provisions decide this, including the exercise window — read them before accepting."}},
-    {"@type": "Question", "name": "How should I value equity when comparing two offers?", "acceptedAnswer": {"@type": "Answer", "text": "Conservatively — compare cash first and ask whether anyone has been paid out."}}
+    {"@type": "Question", "name": "What happens to my options if I leave?", "acceptedAnswer": {"@type": "Answer", "text": "Leaver provisions decide this, including the exercise window - read them before accepting."}},
+    {"@type": "Question", "name": "How should I value equity when comparing two offers?", "acceptedAnswer": {"@type": "Answer", "text": "Conservatively - compare cash first and ask whether anyone has been paid out."}}
   ]
 }
 </script>

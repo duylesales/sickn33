@@ -1,4 +1,4 @@
-🏦 Elena bouwde CreditLens AI met **Cursor** — een routinematige toezichtsbeoordeling vroeg haar precies te reconstrueren waarom één aanvrager was geweigerd, en haar model kon dat niet beantwoorden. 🧠
+🏦 Elena bouwde CreditLens AI met **Cursor** - een routinematige toezichtsbeoordeling vroeg haar precies te reconstrueren waarom één aanvrager was geweigerd, en haar model kon dat niet beantwoorden. 🧠
 
 Als uw AI-scoringmodel een specifieke beslissing niet kan herleiden naar de inputs en modelversie die deze produceerden, loopt een compliancebeoordeling vast bij de eerste harde vraag.
 
@@ -12,7 +12,7 @@ Als uw AI-scoringmodel een specifieke beslissing niet kan herleiden naar de inpu
 
 Bij **LaunchStudio** bouwen wij dit soort compliance-infrastructuur al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De toezichtsbeoordeling werd afgesloten zonder escalatie, één dag vóór de deadline van 12 dagen. (€ 5.200 (Enterprise Hardening Pakket) — 13 werkdagen.) 🚀
+De toezichtsbeoordeling werd afgesloten zonder escalatie, één dag vóór de deadline van 12 dagen. (€ 5.200 (Enterprise Hardening Pakket) - 13 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/ai-decision-traceability-fintech-case-study
 

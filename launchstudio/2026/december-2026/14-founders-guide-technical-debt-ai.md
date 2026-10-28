@@ -31,82 +31,82 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Technical debt, as a concept, predates AI coding tools by decades. But AI-generated code accumulates debt differently than human-written code, in ways most founders — especially non-technical ones — have no framework for evaluating. Understanding this distinction is the difference between a manageable codebase and one that quietly becomes unworkable.
+Technical debt, as a concept, predates AI coding tools by decades. But AI-generated code accumulates debt differently than human-written code, in ways most founders - especially non-technical ones - have no framework for evaluating. Understanding this distinction is the difference between a manageable codebase and one that quietly becomes unworkable.
 
 ## Traditional Technical Debt vs. AI-Generated Debt
 
 Traditional technical debt accumulates through conscious shortcuts: a developer knows the "right" way to build something, but ships a faster, messier version under deadline pressure, with the intent to fix it later. The developer understands the tradeoff they made.
 
-AI-generated technical debt is different because the "developer" — the AI model — does not track intent across a growing codebase the way a human does. Each prompt generates code optimized to satisfy that specific prompt, often without full awareness of patterns established earlier in the project. The result is a codebase that can accumulate inconsistent approaches to the same problem: three different authentication patterns, two different data-fetching strategies, duplicated logic that a human developer would have recognized and consolidated.
+AI-generated technical debt is different because the "developer" - the AI model - does not track intent across a growing codebase the way a human does. Each prompt generates code optimized to satisfy that specific prompt, often without full awareness of patterns established earlier in the project. The result is a codebase that can accumulate inconsistent approaches to the same problem: three different authentication patterns, two different data-fetching strategies, duplicated logic that a human developer would have recognized and consolidated.
 
 ## Why This Debt Is Invisible to Non-Technical Founders
 
-A non-technical founder using Lovable or Bolt has no way to inspect the generated code for these inconsistencies — the interface looks and works fine. This is precisely why AI-generated technical debt is more dangerous than traditional technical debt: it is invisible to the person most incentivized to catch it early, and it only becomes visible when something breaks or a new feature proves unexpectedly difficult to add.
+A non-technical founder using Lovable or Bolt has no way to inspect the generated code for these inconsistencies - the interface looks and works fine. This is precisely why AI-generated technical debt is more dangerous than traditional technical debt: it is invisible to the person most incentivized to catch it early, and it only becomes visible when something breaks or a new feature proves unexpectedly difficult to add.
 
 ## Signals Your AI-Generated App Has Accumulated Significant Debt
 
-- **Simple feature requests take disproportionately long** — asking the AI tool to add a small feature triggers unexpected changes across unrelated parts of the app
-- **The AI tool starts "forgetting" earlier decisions** — new generations contradict patterns established earlier in the project
-- **Bugs appear in places you didn't touch** — a change in one area breaks something seemingly unrelated
-- **Performance degrades as the app grows** — inefficient patterns that worked fine at small scale start to strain under real usage
+- **Simple feature requests take disproportionately long** - asking the AI tool to add a small feature triggers unexpected changes across unrelated parts of the app
+- **The AI tool starts "forgetting" earlier decisions** - new generations contradict patterns established earlier in the project
+- **Bugs appear in places you didn't touch** - a change in one area breaks something seemingly unrelated
+- **Performance degrades as the app grows** - inefficient patterns that worked fine at small scale start to strain under real usage
 
 ## How to Manage AI-Generated Technical Debt Proactively
 
 1. **Get a code review before scaling, not after breaking.** A professional review of your AI-generated codebase can catch inconsistent patterns before they compound.
 2. **Consolidate duplicated logic early.** If the AI tool generated three different ways of handling similar tasks, standardizing on one now is cheaper than untangling it later.
 3. **Document architectural decisions as you go**, even informally, so future AI-generated code (or human developers) has context to build on consistently.
-4. **Set a debt review checkpoint** at meaningful growth milestones — first paying customer, first 50 customers, first fundraise — rather than waiting for a crisis.
+4. **Set a debt review checkpoint** at meaningful growth milestones - first paying customer, first 50 customers, first fundraise - rather than waiting for a crisis.
 
 ## Where LaunchStudio Fits
 
-Assessing and paying down AI-generated technical debt is one of the most common engineering engagements [LaunchStudio](https://launchstudio.eu/en/) handles. Manifera's engineers have shipped 160+ projects for enterprise clients — they recognize AI-generated code patterns quickly and can identify exactly which parts of your codebase need consolidation versus which parts are genuinely fine as-is, avoiding the wasteful trap of rebuilding what doesn't need rebuilding.
+Assessing and paying down AI-generated technical debt is one of the most common engineering engagements [LaunchStudio](https://launchstudio.eu/en/) handles. Manifera's engineers have shipped 160+ projects for enterprise clients - they recognize AI-generated code patterns quickly and can identify exactly which parts of your codebase need consolidation versus which parts are genuinely fine as-is, avoiding the wasteful trap of rebuilding what doesn't need rebuilding.
 
 [Get a technical debt assessment](https://launchstudio.eu/en/#contact) of your AI-generated codebase before it slows down your next feature launch.
 
 ## The Specific Code Patterns That Signal AI-Generated Debt
 
-Traditional technical debt often hides in comments like "TODO: fix this later." AI-generated debt hides differently — in structural inconsistency that only becomes visible when you look across, not within, individual files. These are the patterns that show up most consistently.
+Traditional technical debt often hides in comments like "TODO: fix this later." AI-generated debt hides differently - in structural inconsistency that only becomes visible when you look across, not within, individual files. These are the patterns that show up most consistently.
 
 **Parallel state management approaches**
 
-An AI tool asked to add a form on Monday might use local component state. Asked to add a similar form on Thursday, in a fresh chat session with no memory of Monday's pattern, it might reach for a global state library instead. Neither approach is wrong in isolation, but a codebase with three different state management philosophies scattered across similar features is one where every new feature requires guessing which pattern applies where — and guessing wrong breaks things in ways that are hard to trace.
+An AI tool asked to add a form on Monday might use local component state. Asked to add a similar form on Thursday, in a fresh chat session with no memory of Monday's pattern, it might reach for a global state library instead. Neither approach is wrong in isolation, but a codebase with three different state management philosophies scattered across similar features is one where every new feature requires guessing which pattern applies where - and guessing wrong breaks things in ways that are hard to trace.
 
 **Duplicated business logic with subtle drift**
 
-A validation rule ("email must be unique," "price must be positive") often gets regenerated slightly differently every time it's needed, rather than referenced from one shared source. Early on, these duplicates are usually identical. Over dozens of prompts, they drift — one copy gets an edge case fix, the other three don't. The bug this produces is uniquely frustrating: the same rule appears to work in one part of the app and fail in another, with no obvious reason why.
+A validation rule ("email must be unique," "price must be positive") often gets regenerated slightly differently every time it's needed, rather than referenced from one shared source. Early on, these duplicates are usually identical. Over dozens of prompts, they drift - one copy gets an edge case fix, the other three don't. The bug this produces is uniquely frustrating: the same rule appears to work in one part of the app and fail in another, with no obvious reason why.
 
 **Inconsistent error handling depth**
 
-Some AI-generated functions include thorough error handling — checking for null values, catching failed API calls, showing user-facing messages. Others, generated under a simpler prompt or an earlier session, have none at all. The inconsistency itself is the debt: a codebase where error handling is unpredictable is one where you can never be confident a given user action is actually safe until you've manually checked that specific code path.
+Some AI-generated functions include thorough error handling - checking for null values, catching failed API calls, showing user-facing messages. Others, generated under a simpler prompt or an earlier session, have none at all. The inconsistency itself is the debt: a codebase where error handling is unpredictable is one where you can never be confident a given user action is actually safe until you've manually checked that specific code path.
 
 **Orphaned code from abandoned directions**
 
-When a founder asks an AI tool to try an approach, doesn't like the result, and asks for something different, the original attempt is often left in the codebase rather than removed — an unused API route, a component nobody renders, a database table nobody queries. This orphaned code doesn't cause bugs directly, but it inflates the surface area a future review has to account for, and occasionally gets accidentally reconnected by a later prompt that doesn't know it was abandoned.
+When a founder asks an AI tool to try an approach, doesn't like the result, and asks for something different, the original attempt is often left in the codebase rather than removed - an unused API route, a component nobody renders, a database table nobody queries. This orphaned code doesn't cause bugs directly, but it inflates the surface area a future review has to account for, and occasionally gets accidentally reconnected by a later prompt that doesn't know it was abandoned.
 
 **Missing type safety at integration boundaries**
 
-AI-generated code is often internally consistent about data shapes within a single generation, but loses that consistency at the boundaries between features built in different sessions — a field named `userId` in one part of the app and `user_id` in another, silently causing data to not connect the way a founder assumes it does.
+AI-generated code is often internally consistent about data shapes within a single generation, but loses that consistency at the boundaries between features built in different sessions - a field named `userId` in one part of the app and `user_id` in another, silently causing data to not connect the way a founder assumes it does.
 
 **Why a line-by-line review misses most of this**
 
-None of these patterns show up by reading any single file in isolation — each function looks reasonable on its own. They only become visible by comparing patterns across the whole codebase, which is precisely why founders (technical or not) tend to miss this category of debt until a feature request that "should be simple" turns out to touch three inconsistent implementations of the same underlying concept.
+None of these patterns show up by reading any single file in isolation - each function looks reasonable on its own. They only become visible by comparing patterns across the whole codebase, which is precisely why founders (technical or not) tend to miss this category of debt until a feature request that "should be simple" turns out to touch three inconsistent implementations of the same underlying concept.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Untangling Six Months of Accumulated AI Debt
 
-Thijs, a freelance photographer in Maastricht, built FotoFlow — a client gallery and invoicing tool for wedding and event photographers — using Cursor over six months of nights and weekends, adding features incrementally as his own photography business needed them. By the time he had 15 photographer friends using it informally, the app had grown into something Thijs himself struggled to modify.
+Thijs, a freelance photographer in Maastricht, built FotoFlow - a client gallery and invoicing tool for wedding and event photographers - using Cursor over six months of nights and weekends, adding features incrementally as his own photography business needed them. By the time he had 15 photographer friends using it informally, the app had grown into something Thijs himself struggled to modify.
 
-Adding a simple feature — allowing clients to leave a tip alongside their invoice payment — took Thijs three full weekends and broke the existing invoice display twice. He realized the codebase had accumulated three separate ways of handling payment records, generated at different points as Cursor's suggestions evolved across sessions, none of which talked to each other cleanly.
+Adding a simple feature - allowing clients to leave a tip alongside their invoice payment - took Thijs three full weekends and broke the existing invoice display twice. He realized the codebase had accumulated three separate ways of handling payment records, generated at different points as Cursor's suggestions evolved across sessions, none of which talked to each other cleanly.
 
-Thijs reached out to LaunchStudio after a fellow photographer mentioned using the service to launch a client-booking tool. The Manifera team conducted a full technical debt assessment, identified the three conflicting payment-handling patterns, consolidated them into a single consistent data model, and documented the architecture clearly so Thijs could keep building on it himself using Cursor going forward — with AI-readable documentation designed specifically for that purpose.
+Thijs reached out to LaunchStudio after a fellow photographer mentioned using the service to launch a client-booking tool. The Manifera team conducted a full technical debt assessment, identified the three conflicting payment-handling patterns, consolidated them into a single consistent data model, and documented the architecture clearly so Thijs could keep building on it himself using Cursor going forward - with AI-readable documentation designed specifically for that purpose.
 
 **Result:** The tip feature that had taken three failed weekends was implemented correctly in two days post-consolidation. Thijs went on to add four more features over the following two months himself, using Cursor, without any of the cascading breakage he'd experienced before.
 
-> *"I didn't need LaunchStudio to keep building my app forever — I needed them to untangle the mess so I could keep building it myself. That's exactly what happened."*
-> — **Thijs Mulder, Founder, FotoFlow (Maastricht)**
+> *"I didn't need LaunchStudio to keep building my app forever - I needed them to untangle the mess so I could keep building it myself. That's exactly what happened."*
+> - **Thijs Mulder, Founder, FotoFlow (Maastricht)**
 
-**Cost & Timeline:** €1,950 (Launch Ready Package, technical debt consolidation) — completed in 9 business days.
+**Cost & Timeline:** €1,950 (Launch Ready Package, technical debt consolidation) - completed in 9 business days.
 
 ---
 
@@ -118,7 +118,7 @@ Watch for behavioral signals rather than trying to read code: does asking your A
 
 ### Will fixing technical debt change how my app looks or works for users?
 
-No, if done properly. LaunchStudio's approach to technical debt consolidation works underneath the interface — restructuring how the code is organized without altering the user-facing design or functionality your customers already know.
+No, if done properly. LaunchStudio's approach to technical debt consolidation works underneath the interface - restructuring how the code is organized without altering the user-facing design or functionality your customers already know.
 
 ### Does using a single AI tool consistently (instead of switching between Lovable, Bolt, and Cursor) reduce technical debt?
 
@@ -126,7 +126,7 @@ Generally yes, since switching tools mid-project often introduces conflicting co
 
 ### Is technical debt assessment only necessary for apps that are already broken?
 
-No — the ideal time is before you need a major new feature or before scaling to significantly more users, not after something breaks. Proactive assessment at growth milestones is significantly cheaper than reactive fixes during a crisis.
+No - the ideal time is before you need a major new feature or before scaling to significantly more users, not after something breaks. Proactive assessment at growth milestones is significantly cheaper than reactive fixes during a crisis.
 
 ### Can Manifera's team teach me to recognize and avoid technical debt patterns myself?
 

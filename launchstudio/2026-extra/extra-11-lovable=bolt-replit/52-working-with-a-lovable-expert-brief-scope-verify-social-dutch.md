@@ -1,4 +1,4 @@
-📋 Sanne Wouters had een Lovable-prototype voor Groenplan voor hoveniersbedrijven in Breda, met een pilot die over 5 weken startte. Haar eerste freelancer besteedde 3 weken aan het perfectioneren van animaties en kleurtjes, terwijl dataopslag, betalingen en autorisaties onaangeroerd bleven — waardoor de pilot bijna strandde. 😳
+📋 Sanne Wouters had een Lovable-prototype voor Groenplan voor hoveniersbedrijven in Breda, met een pilot die over 5 weken startte. Haar eerste freelancer besteedde 3 weken aan het perfectioneren van animaties en kleurtjes, terwijl dataopslag, betalingen en autorisaties onaangeroerd bleven - waardoor de pilot bijna strandde. 😳
 
 Vage briefings leiden tot oppervlakkig werk. Hoe u een Lovable-expert strak briefeert, afbakent en controleert:
 

@@ -39,13 +39,13 @@ Standing on the boulevard in Vlissingen, you can watch container ships, tankers 
 
 ## Why Vlissingen Is a Maritime Town Through and Through
 
-Vlissingen has been a maritime town for centuries — the birthplace of the famous seventeenth-century admiral Michiel de Ruyter and a historic naval and trading port. Shipbuilding has been part of the town's economy for well over a century. Its location at the mouth of the Western Scheldt means that almost every ship heading for Antwerp or Ghent passes by, and pilots, vessel traffic services and port services have long been based in the area.
+Vlissingen has been a maritime town for centuries - the birthplace of the famous seventeenth-century admiral Michiel de Ruyter and a historic naval and trading port. Shipbuilding has been part of the town's economy for well over a century. Its location at the mouth of the Western Scheldt means that almost every ship heading for Antwerp or Ghent passes by, and pilots, vessel traffic services and port services have long been based in the area.
 
 The port areas of Vlissingen and Terneuzen merged with the Port of Ghent to form **North Sea Port**, a cross-border port authority. That makes Vlissingen part of a larger international port complex while maintaining its own maritime identity.
 
 ## The Named Organisations Behind Vlissingen's Maritime Market
 
-**Damen Naval.** The naval shipbuilding division of the Damen Shipyards Group builds complex naval vessels in Vlissingen, including frigates and support ships for the Royal Netherlands Navy and foreign navies. Naval shipbuilding involves systems engineering, integration of combat and platform systems, and extensive testing — work that increasingly involves digital engineering, data and simulation.
+**Damen Naval.** The naval shipbuilding division of the Damen Shipyards Group builds complex naval vessels in Vlissingen, including frigates and support ships for the Royal Netherlands Navy and foreign navies. Naval shipbuilding involves systems engineering, integration of combat and platform systems, and extensive testing - work that increasingly involves digital engineering, data and simulation.
 
 **HZ University of Applied Sciences.** With locations in Vlissingen and Middelburg, HZ offers programmes in engineering, logistics, water management and maritime-related fields, and conducts applied research in areas such as coastal systems and sustainable technology.
 
@@ -90,7 +90,7 @@ Data plays a growing role. AIS messages from ships, radar data, tidal prediction
 
 **Naval rules and standards.** Naval vessels follow defence requirements and often classification society naval rules, with additional security requirements.
 
-**EU Artificial Intelligence Act.** AI systems used exclusively for military or defence purposes are excluded from the act, but civilian maritime applications — for example in traffic management of critical infrastructure — can fall within its scope and may be high-risk when used as safety components.
+**EU Artificial Intelligence Act.** AI systems used exclusively for military or defence purposes are excluded from the act, but civilian maritime applications - for example in traffic management of critical infrastructure - can fall within its scope and may be high-risk when used as safety components.
 
 **Security and export control.** Defence shipbuilding involves security screening, classified information and export control rules that affect who can access certain data.
 
@@ -100,11 +100,11 @@ Data plays a growing role. AIS messages from ships, radar data, tidal prediction
 
 A large container ship is heading for Antwerp. Its draught means it can only safely navigate certain parts of the Western Scheldt during specific tidal windows. Planners must decide when the ship should start its passage, when the pilot must board and how the passage fits with other traffic.
 
-A data team builds a model that combines tidal predictions, actual water levels, weather forecasts, the ship's speed profile and historical passage data to predict the best departure window and expected arrival times at critical points. The model improves planning, but the team learns that experienced pilots and traffic controllers use information the model does not capture — local knowledge about how ships of a certain type behave in particular conditions. The final tool is designed to support their decisions rather than replace them, and their feedback is used to improve the model over time.
+A data team builds a model that combines tidal predictions, actual water levels, weather forecasts, the ship's speed profile and historical passage data to predict the best departure window and expected arrival times at critical points. The model improves planning, but the team learns that experienced pilots and traffic controllers use information the model does not capture - local knowledge about how ships of a certain type behave in particular conditions. The final tool is designed to support their decisions rather than replace them, and their feedback is used to improve the model over time.
 
 ## A Common Misconception About Maritime Careers
 
-Many data professionals assume maritime work means working at sea. In reality, much of the maritime sector's data work happens on land: in shipyards, engineering offices, traffic centres, port authorities and research institutes. At the same time, understanding how ships and crews operate is essential. Professionals who take time to learn maritime practice — visiting a ship, joining a traffic centre shift, speaking with pilots — produce far more useful work than those who treat maritime data as generic time series.
+Many data professionals assume maritime work means working at sea. In reality, much of the maritime sector's data work happens on land: in shipyards, engineering offices, traffic centres, port authorities and research institutes. At the same time, understanding how ships and crews operate is essential. Professionals who take time to learn maritime practice - visiting a ship, joining a traffic centre shift, speaking with pilots - produce far more useful work than those who treat maritime data as generic time series.
 
 ## Questions Worth Asking Before Joining
 
@@ -131,7 +131,7 @@ Many data professionals assume maritime work means working at sea. In reality, m
 - **Optimisation and forecasting.** Planning pilots, passages and port operations.
 - **Simulation.** Evaluating ship performance, production processes and traffic scenarios.
 - **Condition monitoring.** Analysing data from engines and onboard systems.
-- **Domain understanding.** Knowledge of navigation, tides and ship operations — or willingness to learn it quickly.
+- **Domain understanding.** Knowledge of navigation, tides and ship operations - or willingness to learn it quickly.
 
 ## Commuting and Living in Vlissingen
 
@@ -158,7 +158,7 @@ Browse current AI, machine learning and data jobs in and around Vlissingen and Z
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who thinks maritime work means working at sea) Are maritime data jobs mostly on ships?
-No — most maritime data work happens on land in shipyards, engineering offices, traffic centres, port authorities and research institutes.
+No - most maritime data work happens on land in shipyards, engineering offices, traffic centres, port authorities and research institutes.
 
 ### (Scenario: systems engineer) What data work exists in naval shipbuilding?
 Systems engineering, simulation, production planning, configuration management and analysis of onboard system data.
@@ -167,7 +167,7 @@ Systems engineering, simulation, production planning, configuration management a
 AIS, radar, tidal and hydrographic data support predictions of ship movements, arrival times and pilot scheduling.
 
 ### (Scenario: candidate concerned about defence work) Do all maritime jobs in Vlissingen involve defence?
-No — port operations, vessel traffic, maritime education and coastal research are civilian fields.
+No - port operations, vessel traffic, maritime education and coastal research are civilian fields.
 
 ### (Scenario: candidate planning where to live) Where do people working in Vlissingen live?
 Most live in Vlissingen, Middelburg or surrounding villages in Zeeland; Middelburg is minutes away by train.
@@ -177,10 +177,10 @@ Most live in Vlissingen, Middelburg or surrounding villages in Zeeland; Middelbu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Are maritime data jobs mostly on ships?", "acceptedAnswer": {"@type": "Answer", "text": "No — most maritime data work happens on land in shipyards, traffic centres, ports and research institutes."}},
+    {"@type": "Question", "name": "Are maritime data jobs mostly on ships?", "acceptedAnswer": {"@type": "Answer", "text": "No - most maritime data work happens on land in shipyards, traffic centres, ports and research institutes."}},
     {"@type": "Question", "name": "What data work exists in naval shipbuilding?", "acceptedAnswer": {"@type": "Answer", "text": "Systems engineering, simulation, production planning and analysis of onboard system data."}},
     {"@type": "Question", "name": "How is data used in vessel traffic management on the Scheldt?", "acceptedAnswer": {"@type": "Answer", "text": "AIS, radar, tidal and hydrographic data support predictions of movements, arrivals and pilot scheduling."}},
-    {"@type": "Question", "name": "Do all maritime jobs in Vlissingen involve defence?", "acceptedAnswer": {"@type": "Answer", "text": "No — port operations, vessel traffic, education and coastal research are civilian."}},
+    {"@type": "Question", "name": "Do all maritime jobs in Vlissingen involve defence?", "acceptedAnswer": {"@type": "Answer", "text": "No - port operations, vessel traffic, education and coastal research are civilian."}},
     {"@type": "Question", "name": "Where do people working in Vlissingen live?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly in Vlissingen, Middelburg or nearby villages in Zeeland."}}
   ]
 }

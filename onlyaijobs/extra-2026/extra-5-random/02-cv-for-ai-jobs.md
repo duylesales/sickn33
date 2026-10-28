@@ -71,7 +71,7 @@ Weak: *"Worked on machine learning models using Python, scikit-learn and AWS."*
 
 Better: *"Built and deployed a churn model for a subscription business (2 million customers); replaced a rules-based system, reduced false positives substantially and handed over a retraining pipeline the analytics team now runs without me."*
 
-The second version says what the model was for, what it replaced, what improved and what you left behind. Note also what it does not do: it does not invent a precise percentage you cannot defend. If you know real numbers and are allowed to share them, use them. If not, describe direction and scale honestly — experienced interviewers respect that far more than suspiciously round figures.
+The second version says what the model was for, what it replaced, what improved and what you left behind. Note also what it does not do: it does not invent a precise percentage you cannot defend. If you know real numbers and are allowed to share them, use them. If not, describe direction and scale honestly - experienced interviewers respect that far more than suspiciously round figures.
 
 ## Describing Models Without Overclaiming
 
@@ -85,14 +85,14 @@ AI hiring managers are unusually alert to inflated claims, because they have see
 
 ## Skills Sections That Help Rather Than Hurt
 
-Group skills into a few meaningful categories — for example languages and frameworks, data and infrastructure, ML areas, domain knowledge — and include only things you could discuss for ten minutes. Rating yourself with stars or percentages rarely helps and often invites scepticism. If a vacancy requires a specific tool that you know, make sure the word appears somewhere in your experience section, not only in the skills list, so that both humans and search filters find it in context.
+Group skills into a few meaningful categories - for example languages and frameworks, data and infrastructure, ML areas, domain knowledge - and include only things you could discuss for ten minutes. Rating yourself with stars or percentages rarely helps and often invites scepticism. If a vacancy requires a specific tool that you know, make sure the word appears somewhere in your experience section, not only in the skills list, so that both humans and search filters find it in context.
 
 ## Career Changes, Gaps and Non-Linear Paths
 
 European hiring is generally more tolerant of non-linear paths than candidates fear, provided the CV explains them in one line.
 
 - **Career change into AI**: lead with a projects section and any production experience, and make the transferable part explicit (statistics from a research background, engineering rigour from software, domain expertise from your previous industry).
-- **Career break**: state it plainly with dates — parental leave, illness, caring responsibilities, study, relocation — and move on. Ambiguity attracts more questions than the break itself.
+- **Career break**: state it plainly with dates - parental leave, illness, caring responsibilities, study, relocation - and move on. Ambiguity attracts more questions than the break itself.
 - **Short stints**: give a one-line reason (project ended, company restructured, fixed-term contract) rather than leaving the reader to speculate.
 - **Academic to industry**: translate. "Supervised two master's students" becomes evidence of mentoring; "wrote analysis code used by the group" becomes software delivery.
 
@@ -115,7 +115,7 @@ Candidates worry a great deal about automated filtering. In European companies, 
 - Use the terms that appear in the vacancy, in context.
 - Avoid tables and multi-column designs that scramble when parsed.
 
-Under the EU Pay Transparency Directive, employers will have to give candidates pay information before interviews and may not ask about pay history, which should make early conversations more straightforward. Where AI is used in recruitment decisions, the EU AI Act treats certain employment uses as high-risk, and GDPR gives you rights over your personal data — including the right to ask what is stored about your application.
+Under the EU Pay Transparency Directive, employers will have to give candidates pay information before interviews and may not ask about pay history, which should make early conversations more straightforward. Where AI is used in recruitment decisions, the EU AI Act treats certain employment uses as high-risk, and GDPR gives you rights over your personal data - including the right to ask what is stored about your application.
 
 ## Country Differences Worth Knowing
 
@@ -164,7 +164,7 @@ Update your CV every quarter while the details are fresh, even when you are not 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from your home, applications go directly to the employer's own page rather than through an intermediary, browsing is free without an account and no employer can pay for a higher position in the listings.
 
-For CV writing, that last point matters more than it first appears: because vacancies compete on content rather than budget, the postings tend to contain the detail you need in order to tailor your application — the actual problem, the data, the stack and the team. Read two or three of them closely before rewriting your CV, and you will see which words hiring managers in your target sector use.
+For CV writing, that last point matters more than it first appears: because vacancies compete on content rather than budget, the postings tend to contain the detail you need in order to tailor your application - the actual problem, the data, the stack and the team. Read two or three of them closely before rewriting your CV, and you will see which words hiring managers in your target sector use.
 
 To be transparent about scope: OnlyAIJobs listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Elsewhere in Europe, combine it with national job boards and company career pages. Employers can list their first vacancy free by emailing a link to info@onlyaijobs.eu.
 
@@ -174,11 +174,11 @@ To be transparent about scope: OnlyAIJobs listings are currently concentrated in
 
 Two candidates applied for the same machine learning engineer vacancy at a mid-sized European company. Both had roughly four years of experience.
 
-The first CV listed eleven technologies in a skills matrix, described responsibilities in passive language — "involved in developing models" — and mentioned a master's thesis only in the education section.
+The first CV listed eleven technologies in a skills matrix, described responsibilities in passive language - "involved in developing models" - and mentioned a master's thesis only in the education section.
 
 The second CV opened with two lines: an ML engineer with a background in physics, focused on forecasting and time series in industrial settings, looking for a production-oriented role. Each job had one context line and three bullets naming the problem, the approach and the outcome, including one honest note that a project had been cancelled after a pilot. A short projects section described a deployed side project with monitoring.
 
-Both candidates were technically similar. Only the second was invited, because the hiring manager could see, in ninety seconds, exactly what she had done and what she would bring. In the interview she was asked about the cancelled project — and her candid account of what went wrong became one of the strongest parts of the conversation.
+Both candidates were technically similar. Only the second was invited, because the hiring manager could see, in ninety seconds, exactly what she had done and what she would bring. In the interview she was asked about the cancelled project - and her candid account of what went wrong became one of the strongest parts of the conversation.
 
 ## Key Takeaways
 

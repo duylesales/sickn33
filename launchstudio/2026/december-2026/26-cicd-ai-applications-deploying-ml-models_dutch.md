@@ -35,7 +35,7 @@ Continuous Integration en Continuous Deployment (CI/CD) pipelines rusten op een 
 
 ## Waarom Traditionele CI/CD-Aannames Breken bij AI
 
-Een traditionele unit-test controleert of een functie bij een specifieke invoer altijd exact dezelfde, voorspelbare uitvoer levert. Een AI-model dat twee keer exact dezelfde prompt krijgt, kan beide keren een subtiel andere (hoewel hopelijk inhoudelijk gelijkwaardige) formulering teruggeven. U kunt dus niet simpelweg een assertietest schrijven als *"de AI retourneert exact deze tekst"* — zo'n test zou voortdurend falen, zelfs wanneer de AI perfect naar behoren functioneert.
+Een traditionele unit-test controleert of een functie bij een specifieke invoer altijd exact dezelfde, voorspelbare uitvoer levert. Een AI-model dat twee keer exact dezelfde prompt krijgt, kan beide keren een subtiel andere (hoewel hopelijk inhoudelijk gelijkwaardige) formulering teruggeven. U kunt dus niet simpelweg een assertietest schrijven als *"de AI retourneert exact deze tekst"* - zo'n test zou voortdurend falen, zelfs wanneer de AI perfect naar behoren functioneert.
 
 ## CI/CD Aanpassen voor AI-Specifieke Componenten
 
@@ -56,7 +56,7 @@ Productie-deployments moeten expliciet vastpinnen welke specifieke modelversie w
 
 ## Dit Inrichten Zonder Dedicated DevOps-Team
 
-De meeste AI-native oprichters hebben geen fulltime DevOps-engineer nodig om een solide CI/CD-straat te hebben — moderne platforms zoals GitHub Actions en Vercel bieden uitstekende out-of-the-box automatisering. Het benodigde vakmanschap zit in het bepalen wát u test en welke drempels u instelt voor de AI-afhankelijke onderdelen van uw applicatie.
+De meeste AI-native oprichters hebben geen fulltime DevOps-engineer nodig om een solide CI/CD-straat te hebben - moderne platforms zoals GitHub Actions en Vercel bieden uitstekende out-of-the-box automatisering. Het benodigde vakmanschap zit in het bepalen wát u test en welke drempels u instelt voor de AI-afhankelijke onderdelen van uw applicatie.
 
 [LaunchStudio](https://launchstudio.eu/nl/) richt AI-vriendelijke CI/CD-pipelines in als vast onderdeel van productielanceringen, waarbij Manifera's 11+ jaar ervaring met DevOps (GitHub Actions, Docker, gefaseerde deployments) over 160+ projecten wordt toegepast op AI-applicaties.
 
@@ -64,7 +64,7 @@ De meeste AI-native oprichters hebben geen fulltime DevOps-engineer nodig om een
 
 ## Monitoring en Rollback: Wat Er Gebeurt Nádat een Deployment Is Goedgekeurd
 
-Het slagen voor alle CI/CD-tests garandeert niet dat een AI-feature zich vlekkeloos gedraagt zodra echte gebruikers ermee aan de slag gaan — een vaste testset kan immers nooit alle variaties, randgevallen en ongebruikelijke invoer van echte klanten voorzien. Daarom vereist een AI-deploymentpipeline een tweede laag: continue monitoring na de uitrol, gekoppeld aan een snel en beproefd rollback-mechanisme.
+Het slagen voor alle CI/CD-tests garandeert niet dat een AI-feature zich vlekkeloos gedraagt zodra echte gebruikers ermee aan de slag gaan - een vaste testset kan immers nooit alle variaties, randgevallen en ongebruikelijke invoer van echte klanten voorzien. Daarom vereist een AI-deploymentpipeline een tweede laag: continue monitoring na de uitrol, gekoppeld aan een snel en beproefd rollback-mechanisme.
 
 ### Een Evaluatiedataset Bouwen Die Blijft Groeien
 Een eenmalige testset veroudert snel. Elk incident in productie, elke klacht over een vreemd AI-antwoord en elk randgeval uit een supportticket moet worden toegevoegd aan uw evaluatiedataset. Zo verandert elk praktijkprobleem in een permanente regressietest die voorkomt dat dezelfde fout ooit terugkeert.
@@ -101,12 +101,12 @@ Eén specifieke promptwijziging, bedoeld om een gemiste lakschade beter te herke
 
 Max nam contact op met LaunchStudio om herhaling definitief uit te sluiten. Het team van Manifera bouwde een geautomatiseerde teststraat: elke promptwijziging werd voortaan automatisch getoetst aan een vaste dataset van goedgekeurde en afgekeurde referentiefoto's vóórdat de code naar productie kon. Daarnaast werden prompts onder versiebeheer gebracht en werd een gefaseerde uitrol ingesteld.
 
-**Resultaat:** In de vier maanden na oplevering werden twee opeenvolgende prompt-regressies door de testsuite onderschept vóór livegang — fouten die voorheen direct alle zes fabrieken zouden hebben bereikt.
+**Resultaat:** In de vier maanden na oplevering werden twee opeenvolgende prompt-regressies door de testsuite onderschept vóór livegang - fouten die voorheen direct alle zes fabrieken zouden hebben bereikt.
 
 > *"Ik paste prompts aan op gevoel en zette het meteen live. Nu controleert het systeem elke wijziging automatisch tegen echte referentiefoto's vóórdat een klant het ziet. Het heeft me al twee grote blunders bespaard."*  
-> — **Max Willems, Oprichter KwaliteitsCheck (Roosendaal)**
+> - **Max Willems, Oprichter KwaliteitsCheck (Roosendaal)**
 
-**Kosten & tijdlijn:** €2.600 (AI-gebaseerde CI/CD-pipeline) — binnen 10 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €2.600 (AI-gebaseerde CI/CD-pipeline) - binnen 10 werkdagen live opgeleverd.
 
 ---
 

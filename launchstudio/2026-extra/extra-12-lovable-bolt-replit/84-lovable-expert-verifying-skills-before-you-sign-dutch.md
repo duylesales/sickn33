@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-"Ervaren met Lovable en Supabase" staat op heel veel profielen, en een oprichter die geen code kan lezen, heeft geen manier om het te toetsen. De gebruikelijke vervangers — een portfolio, een zelfverzekerd gesprek, een redelijke prijs — zijn zwakke signalen, en de prijs van ongelijk hebben is een maand en een paar duizend euro.
+"Ervaren met Lovable en Supabase" staat op heel veel profielen, en een oprichter die geen code kan lezen, heeft geen manier om het te toetsen. De gebruikelijke vervangers - een portfolio, een zelfverzekerd gesprek, een redelijke prijs - zijn zwakke signalen, en de prijs van ongelijk hebben is een maand en een paar duizend euro.
 
 Er zijn betere controles, en die zijn voor iedereen beschikbaar, ongeacht technische kennis. Ze kosten samen ongeveer twee uur.
 
@@ -56,11 +56,11 @@ Een leverancier die geen referentie kan geven voor een afgeronde opdracht, verte
 
 De betrouwbaarste controle, en de controle die de meeste oprichters overslaan omdat het voelt als een extra stap.
 
-Geef ze een klein, echt, afgebakend stuk werk — een dag of twee, betaald tegen hun normale tarief. Geen test, geen gratis werk: een echte taak die u gedaan wilt hebben.
+Geef ze een klein, echt, afgebakend stuk werk - een dag of twee, betaald tegen hun normale tarief. Geen test, geen gratis werk: een echte taak die u gedaan wilt hebben.
 
 Kies iets met een duidelijke uitkomst en enig oordeel erin: een specifieke bug oplossen, een gedefinieerde functie toevoegen, of een beoordeling van het product maken met bevindingen en schattingen.
 
-Beoordeel wat terugkomt dan op vier punten. Deden ze wat werd gevraagd, of wat zij liever deden? Stelden ze goede vragen of geen? Kunnen ze uitleggen wat ze deden in termen die u begrijpt? En wat lieten ze achter — een wijziging die u kunt lezen, of een wijziging die u moet vertrouwen?
+Beoordeel wat terugkomt dan op vier punten. Deden ze wat werd gevraagd, of wat zij liever deden? Stelden ze goede vragen of geen? Kunnen ze uitleggen wat ze deden in termen die u begrijpt? En wat lieten ze achter - een wijziging die u kunt lezen, of een wijziging die u moet vertrouwen?
 
 Twee dagen vertellen u meer dan welk gesprek ook, en als het slecht gaat, hebt u een dagtarief uitgegeven in plaats van een maandtarief.
 
@@ -70,7 +70,7 @@ Signalen die oprichters te zwaar laten wegen.
 
 **Een portfolio met screenshots.** Het laat zien dat er iets is gebouwd en niets over hoe, door wie, of het nog werkt.
 
-**Jaren ervaring.** Iemand met vijftien jaar die nooit aan een AI-gebouwde codebase heeft gewerkt, kan hier minder nuttig zijn dan iemand met vier die het herhaaldelijk heeft gedaan — de problemen zijn specifiek.
+**Jaren ervaring.** Iemand met vijftien jaar die nooit aan een AI-gebouwde codebase heeft gewerkt, kan hier minder nuttig zijn dan iemand met vier die het herhaaldelijk heeft gedaan - de problemen zijn specifiek.
 
 **Zelfvertrouwen.** De zelfverzekerdste leverancier uit een set van drie is niet waarschijnlijker de beste, en naar onze ervaring iets minder waarschijnlijk.
 
@@ -98,7 +98,7 @@ Zes dingen die, in onze ervaring met het volgen van deze opdrachten, een slechte
 
 **Een offerte voordat de code is gelezen.** Een schatting voor werk waar niemand naar heeft gekeken, is een getal vastgemaakt aan een aanname.
 
-**Direct een herbouw voorgesteld.** Soms terecht, meestal een voorkeur voor opnieuw beginnen boven het lezen van de structuur van iemand anders — en het gooit weg wat uw prototype heeft vastgesteld.
+**Direct een herbouw voorgesteld.** Soms terecht, meestal een voorkeur voor opnieuw beginnen boven het lezen van de structuur van iemand anders - en het gooit weg wat uw prototype heeft vastgesteld.
 
 **Minachting voor de tools.** Een leverancier die opent met de uitleg dat door AI gegenereerde code waardeloos is, heeft u verteld dat hij niet gaat werken met wat u hebt.
 
@@ -128,9 +128,9 @@ En één die oprichters onderschatten: of u makkelijk met ze kunt praten. Een op
 
 ## Dit Inrichten
 
-Voordat u iets tekent: vijf vragen waarvan u de antwoorden kunt beoordelen — eerste controles, de trage pagina, omgaan met klantdata, wat ze niet zouden doen, en hoe u het daarna onderhoudt; één referentiegesprek met iemand die een product waaraan ze werkten nog steeds draait, met de vragen wat er werd nagelaten, wat er gebeurde toen er iets misging, en of diegene het opnieuw zou doen; een kleine betaalde proefopdracht met echt afgebakend werk, beoordeeld op of ze deden wat werd gevraagd, de vragen die ze stelden, of ze het kunnen uitleggen, en wat ze achterlieten; en het bewust minder zwaar laten wegen van portfolio's, jaren, zelfvertrouwen en prijs.
+Voordat u iets tekent: vijf vragen waarvan u de antwoorden kunt beoordelen - eerste controles, de trage pagina, omgaan met klantdata, wat ze niet zouden doen, en hoe u het daarna onderhoudt; één referentiegesprek met iemand die een product waaraan ze werkten nog steeds draait, met de vragen wat er werd nagelaten, wat er gebeurde toen er iets misging, en of diegene het opnieuw zou doen; een kleine betaalde proefopdracht met echt afgebakend werk, beoordeeld op of ze deden wat werd gevraagd, de vragen die ze stelden, of ze het kunnen uitleggen, en wat ze achterlieten; en het bewust minder zwaar laten wegen van portfolio's, jaren, zelfvertrouwen en prijs.
 
-LaunchStudio doet een beoordeling als die proefopdracht — een dag of twee, betaald, met een geschreven rapport dat van u is, wat u daarna ook besluit. De engineers zijn van Manifera — elf jaar, 160+ projecten, 120+ engineers, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet een beoordeling als die proefopdracht - een dag of twee, betaald, met een geschreven rapport dat van u is, wat u daarna ook besluit. De engineers zijn van Manifera - elf jaar, 160+ projecten, 120+ engineers, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons eerst om de beoordeling](https://launchstudio.eu/nl/#contact) en beoordeel ons erop.
 
@@ -151,9 +151,9 @@ Twee werkdagen met een andere leverancier, daarna het werk: een betaalde beoorde
 **Resultaat:** de tweede opdracht kostte €5.900 en duurde negen werkdagen, en Erwin kan het resultaat onderhouden omdat een overdracht er deel van uitmaakte. Zijn oordeel is dat de dag beoordeling en de twee uur controleren hem vijf weken en €8.200 zouden hebben bespaard.
 
 > *"Ik koos degene die het zekerst klonk en die week vrij was. Hij bouwde mijn frontend opnieuw in een framework dat hij prettiger vond, en het beveiligingswerk waarvoor ik betaalde, was twee dagen aan het eind."*
-> — **Erwin Batelaan, Oprichter, Bezorgplanning (Gorinchem)**
+> - **Erwin Batelaan, Oprichter, Bezorgplanning (Gorinchem)**
 
-**Kosten & Doorlooptijd:** €6.900 totaal (€1.000 betaalde beoordeling met een rapport van 19 bevindingen, €5.900 herstel tegen vaste prijs met autorisatie over 27 endpoints, opslag privé gemaakt, betalingen en lancering met overdracht) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** €6.900 totaal (€1.000 betaalde beoordeling met een rapport van 19 bevindingen, €5.900 herstel tegen vaste prijs met autorisatie over 27 endpoints, opslag privé gemaakt, betalingen en lancering met overdracht) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -163,7 +163,7 @@ Aan de specificiteit van hun antwoorden, aan één referentiegesprek met iemand 
 
 ### Welke vraag zegt het meest?
 
-"Wat zijn de eerste drie dingen die u controleert in een AI-gebouwd product?" Een competent antwoord noemt specifieke dingen — sleutels in de frontend, ontbrekende autorisatie, openbare opslag. Een vaag antwoord over best practices is een slecht teken.
+"Wat zijn de eerste drie dingen die u controleert in een AI-gebouwd product?" Een competent antwoord noemt specifieke dingen - sleutels in de frontend, ontbrekende autorisatie, openbare opslag. Een vaag antwoord over best practices is een slecht teken.
 
 ### Moet ik om gratis werk als test vragen?
 
@@ -195,7 +195,7 @@ Portfolio's met screenshots, jaren algemene ervaring, zelfvertrouwen, en prijs i
       "name": "Wat is de veelzeggendste vraag in een gesprek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wat zijn de eerste drie dingen die u controleert in een AI-gebouwd product — een goed antwoord noemt specifiek sleutels, autorisatie en opslag."
+        "text": "Wat zijn de eerste drie dingen die u controleert in een AI-gebouwd product - een goed antwoord noemt specifiek sleutels, autorisatie en opslag."
       }
     },
     {
@@ -203,7 +203,7 @@ Portfolio's met screenshots, jaren algemene ervaring, zelfvertrouwen, en prijs i
       "name": "Moet ik kandidaten om gratis testwerk vragen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Betaal voor een kleine echte taak tegen hun normale tarief — dat respecteert hun tijd en levert iets op wat u nodig hebt."
+        "text": "Nee. Betaal voor een kleine echte taak tegen hun normale tarief - dat respecteert hun tijd en levert iets op wat u nodig hebt."
       }
     },
     {

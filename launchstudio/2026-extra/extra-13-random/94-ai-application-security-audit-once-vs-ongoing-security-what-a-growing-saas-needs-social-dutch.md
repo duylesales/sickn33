@@ -12,7 +12,7 @@ Personeel van de ene winkel kon via een nieuw rapportage-endpoint de offertes en
 ✅ Scannen op geheimen en afhankelijkheden in CI, plus meldingen bij wijzigingen in databasepolicy's
 ✅ Een schema voor lichte reviews per kwartaal en managed hosting voor updates, back-ups en monitoring
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, laten onze audits vangrails achter — zodat bevindingen opgelost blijven terwijl u blijft uitbrengen. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, laten onze audits vangrails achter - zodat bevindingen opgelost blijven terwijl u blijft uitbrengen. ⚙️
 
 💡 Het resultaat: € 2.400 in acht werkdagen, plus € 49/maand. Het jaar daarna blokkeerde CI zes wijzigingen die toegang tussen tenants of geheimen opnieuw zouden hebben geïntroduceerd, vonden reviews per kwartaal alleen kleine problemen, en groeide Vloerwijzer naar 64 winkels. 🚀
 

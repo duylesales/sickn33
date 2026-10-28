@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Nothing about launching a product announces it to the internet's automated traffic, and yet within days of a domain becoming publicly reachable, scanners will have found your signup form, your contact form, your password reset, and any endpoint that accepts a request without a login. They are not looking for you specifically. They are enumerating everything, constantly, and your product is now part of everything.
 
-Founders are usually surprised by this because during development nothing happened — the prototype lived at a preview URL nobody knew about. The first week of real hosting is a different environment entirely, and the forms that worked perfectly for four months of testing meet a category of traffic they were never designed for.
+Founders are usually surprised by this because during development nothing happened - the prototype lived at a preview URL nobody knew about. The first week of real hosting is a different environment entirely, and the forms that worked perfectly for four months of testing meet a category of traffic they were never designed for.
 
 ## What Actually Gets Attacked, and Why It Costs You
 
@@ -32,7 +32,7 @@ Five things, in roughly the order they arrive.
 
 **Contact and enquiry forms.** The oldest target. If the form sends you an email, it will be used to send you a great many emails.
 
-**Login endpoints.** Credential stuffing — trying username and password pairs from other services' breaches — is entirely automated and continuous. Your customers reuse passwords, so some of those attempts will succeed unless something stops them.
+**Login endpoints.** Credential stuffing - trying username and password pairs from other services' breaches - is entirely automated and continuous. Your customers reuse passwords, so some of those attempts will succeed unless something stops them.
 
 **Password reset.** Abused both to enumerate which email addresses have accounts and to bombard a specific person with reset emails.
 
@@ -46,7 +46,7 @@ There is no single control that stops abuse without also stopping customers. Wha
 
 **Rate limiting by IP and by target.** The first and most effective layer. Five signup attempts per IP per hour, five reset requests per email address per hour, ten login attempts before a delay. Most automated traffic is defeated by this alone, and legitimate customers never encounter it.
 
-**Honeypot fields.** A form field hidden from human view; if it is filled in, the submission came from a script. Costs nothing, catches a surprising share of simple bots, and is invisible to real people — unlike a CAPTCHA.
+**Honeypot fields.** A form field hidden from human view; if it is filled in, the submission came from a script. Costs nothing, catches a surprising share of simple bots, and is invisible to real people - unlike a CAPTCHA.
 
 **Email verification before anything valuable.** Requiring a confirmed address before the account can use paid features, send anything, or appear publicly removes most of the incentive to create accounts in bulk.
 
@@ -54,17 +54,17 @@ There is no single control that stops abuse without also stopping customers. Wha
 
 **A CAPTCHA, last.** Modern invisible challenges are far less intrusive than the old image grids, but they still add friction and fail for some legitimate users. Reach for it when the cheaper layers prove insufficient, not first.
 
-**Progressive delays on repeated failures.** For login specifically, an increasing delay after each failed attempt makes credential stuffing impractical without ever locking a real customer out — which is better than a hard lockout, since lockouts can themselves be used to deny service to a specific account.
+**Progressive delays on repeated failures.** For login specifically, an increasing delay after each failed attempt makes credential stuffing impractical without ever locking a real customer out - which is better than a hard lockout, since lockouts can themselves be used to deny service to a specific account.
 
 ## Protecting Login Without Punishing Customers
 
 Login deserves its own treatment because the trade-off is sharpest: too little and accounts get taken over, too much and you lock out the person paying you.
 
-Rate limit by both source address and target account, because the two attack shapes are different — many passwords against one account, or one common password against many accounts. Apply increasing delays rather than lockouts. And never let error messages distinguish between "no such account" and "wrong password", which is how attackers build a list of valid addresses to focus on.
+Rate limit by both source address and target account, because the two attack shapes are different - many passwords against one account, or one common password against many accounts. Apply increasing delays rather than lockouts. And never let error messages distinguish between "no such account" and "wrong password", which is how attackers build a list of valid addresses to focus on.
 
 Two higher-value measures worth having. **Notify on new-device sign-in**: an email saying an account was accessed from an unfamiliar device is often how a takeover is discovered, and it costs a template. **Offer two-factor authentication**, at minimum for account owners on team plans. It need not be mandatory to be valuable; it also answers a question that appears in nearly every business customer's security review.
 
-If a customer's password appears in a known breach — services exist that check this without receiving the password itself — requiring a change at next login is a legitimate and appreciated intervention.
+If a customer's password appears in a known breach - services exist that check this without receiving the password itself - requiring a change at next login is a legitimate and appreciated intervention.
 
 Adding rate limiting, honeypots, verification gates, and login protection is a small, well-understood piece of work, and it is consistently absent from AI-generated products because nothing in a prototype's development ever exercises hostile traffic. LaunchStudio, backed by Manifera's 11+ years of production engineering, hardens public-facing endpoints before launch, including the unauthenticated paths that cost money per request. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -74,7 +74,7 @@ Any feature that spends money per use needs a ceiling that is enforced by your o
 
 Three layers: a per-account limit, so one customer cannot consume everything; a global daily cap, so total spend has an upper bound regardless of where it comes from; and an alert when either is approached, so you learn about unusual consumption on the day rather than in the invoice.
 
-The provider's own budget alerts are useful but insufficient — they typically notify after spending has occurred, and often hours later. The control that actually protects you is your product refusing to make the call, which requires counting usage yourself.
+The provider's own budget alerts are useful but insufficient - they typically notify after spending has occurred, and often hours later. The control that actually protects you is your product refusing to make the call, which requires counting usage yourself.
 
 And treat any expensive operation available without authentication as a mistake to be corrected rather than a limit to be tuned. A demo or trial of an AI feature should require at least a verified email address, or it will be found and used at your expense.
 
@@ -92,14 +92,14 @@ Two alerts are worth setting up beyond that: one for daily spend exceeding a thr
 
 Ahmed Bensaid launched Sameninkopen, a group-purchasing tool for hospitality businesses, built in Bolt. It included a free AI feature that summarised supplier quotes, available immediately after signup with no email verification, calling a paid model on each use.
 
-Nine days after launch, signups jumped from a handful a day to several hundred. The AI summariser was being called continuously by automated traffic. Over a weekend, roughly 4,000 accounts were created and the model bill reached about €1,900 — discovered on Monday, because the provider's budget alert had been set at a monthly threshold that took until then to cross.
+Nine days after launch, signups jumped from a handful a day to several hundred. The AI summariser was being called continuously by automated traffic. Over a weekend, roughly 4,000 accounts were created and the model bill reached about €1,900 - discovered on Monday, because the provider's budget alert had been set at a monthly threshold that took until then to cross.
 
 The secondary damage was worse in the longer term. Welcome emails to 4,000 non-existent addresses produced a hard-bounce rate that got his sending domain flagged, and for the following three weeks legitimate customers' verification emails were landing in spam.
 
 **Result:** email verification required before any metered feature, rate limiting on signup by address and by IP, a honeypot field on the signup form, per-account and global daily caps on model calls enforced in the product, disposable domains blocked, and alerts on signup rate and daily spend. The fake accounts were removed and the sending domain's reputation recovered over about a month.
 
 > "The AI feature was the reason people signed up. It was also a way for anyone in the world to spend my money, and it took nine days for someone to find it."
-> — **Ahmed Bensaid, Founder, Sameninkopen**
+> - **Ahmed Bensaid, Founder, Sameninkopen**
 
 **Cost & Timeline:** abuse prevention and cost controls delivered in 2 business days.
 

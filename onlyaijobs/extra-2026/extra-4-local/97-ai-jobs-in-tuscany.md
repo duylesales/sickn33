@@ -88,7 +88,7 @@ Italian is essential for daily life and most companies; research groups often wo
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Tuscany you will find few or no local vacancies there today. Use Italian job portals, university career services, CNR and research institute announcements and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles — and as a model for searching by category and real commute. Tuscan employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Tuscany you will find few or no local vacancies there today. Use Italian job portals, university career services, CNR and research institute announcements and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles - and as a model for searching by category and real commute. Tuscan employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Research Careers in Pisa
 

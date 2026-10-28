@@ -1,4 +1,4 @@
-🔥 Martin bouwde een prototype via **Bubble** — als voormalig financieel auditor ontwikkelde hij een AI-tool voor compliance in financiële grootboeken, maar een "Big Four" accountantskantoor eiste data-isolatie en formele security-architectuur voor 4.000 medewerkers. 🧠
+🔥 Martin bouwde een prototype via **Bubble** - als voormalig financieel auditor ontwikkelde hij een AI-tool voor compliance in financiële grootboeken, maar een "Big Four" accountantskantoor eiste data-isolatie en formele security-architectuur voor 4.000 medewerkers. 🧠
 
 Als uw no-code AI MVP voor de kans staat om een enterprise-contract van honderdduizenden euro's af te sluiten, zakt een gedeelde no-code database direct voor de strenge IT-audit van de corporate CISO.
 
@@ -12,7 +12,7 @@ Als uw no-code AI MVP voor de kans staat om een enterprise-contract van honderdd
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Martin overlegde onze technische documentatie, doorstond de Big Four IT-audit en sloot een contract van €450.000 af. (€28.000 (Volledige Enterprise Blauwdruk) — binnen 45 werkdagen live). 🚀
+Martin overlegde onze technische documentatie, doorstond de Big Four IT-audit en sloot een contract van €450.000 af. (€28.000 (Volledige Enterprise Blauwdruk) - binnen 45 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/no-code-to-enterprise-saas-blueprint
 

@@ -1,4 +1,4 @@
-🔥 A creative design agency in Amsterdam built a prototype using **AI builders** — a creative design agency in amsterdam pitched a custom ai onboarding portal to a multinational bank, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 A creative design agency in Amsterdam built a prototype using **AI builders** - a creative design agency in amsterdam pitched a custom ai onboarding portal to a multinational bank, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-A creative design agency in Amsterdam's project achieved production readiness: The bank's CISO reviewed the documentation and approved the architecture within 48 hours. The agency secured the €120,000 contract, delivered a beautiful frontend, and let LaunchStudio securely manage the backend. We are a UX agency, not a cybersecurity firm. LaunchStudio provided the enterprise muscle we needed to pass the audit and win the bank's trust. (€8,000 (Enterprise Backend Architecture & IT Audit Support) — completed in 15 business days.). 🚀
+A creative design agency in Amsterdam's project achieved production readiness: The bank's CISO reviewed the documentation and approved the architecture within 48 hours. The agency secured the €120,000 contract, delivered a beautiful frontend, and let LaunchStudio securely manage the backend. We are a UX agency, not a cybersecurity firm. LaunchStudio provided the enterprise muscle we needed to pass the audit and win the bank's trust. (€8,000 (Enterprise Backend Architecture & IT Audit Support) - completed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/b2b-saas-enterprise-security-audit
 

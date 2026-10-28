@@ -4,7 +4,7 @@
 
 ✅ Counter homogeneity by combining referrals with other channels. Low referral activity tells you something about your organisation.
 
-📢 Post your vacancy — first listing free: info@onlyaijobs.eu
+📢 Post your vacancy - first listing free: info@onlyaijobs.eu
 
 📖 Read the full story: https://onlyaijobs.eu/blog/referral-programme-for-ai-hiring
 

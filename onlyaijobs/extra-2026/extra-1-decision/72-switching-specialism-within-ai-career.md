@@ -1,18 +1,18 @@
 ---
-Title: "Should You Switch Specialism Within AI — From NLP to Forecasting, or Modelling to Engineering?"
+Title: "Should You Switch Specialism Within AI - From NLP to Forecasting, or Modelling to Engineering?"
 Keywords: switching ai specialism, van nlp naar forecasting, data scientist to data engineer, changing technical focus, ai career pivot netherlands, OnlyAIJobs
 Buyer Stage: Decision
 Target Persona: B (Experienced AI or ML engineer)
 Content Format: Decision Guide
 ---
 
-# Should You Switch Specialism Within AI — From NLP to Forecasting, or Modelling to Engineering?
+# Should You Switch Specialism Within AI - From NLP to Forecasting, or Modelling to Engineering?
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Should You Switch Specialism Within AI — From NLP to Forecasting, or Modelling to Engineering?",
+  "headline": "Should You Switch Specialism Within AI - From NLP to Forecasting, or Modelling to Engineering?",
   "description": "Moving between AI specialisms costs less than candidates fear and more than employers admit. What transfers, what does not, which directions are easier and how to make a switch credible.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-You have spent four years doing one thing — language models, or computer vision, or forecasting, or building pipelines — and the interesting offer in front of you is for something adjacent but different. Or the roles near where you live are mostly in a specialism you have never worked in. Candidates tend to overestimate how much of their expertise is specific and underestimate how long it takes to be genuinely good at something new. The truth sits in between, and where exactly depends far more on which direction you are moving than on how capable you are.
+You have spent four years doing one thing - language models, or computer vision, or forecasting, or building pipelines - and the interesting offer in front of you is for something adjacent but different. Or the roles near where you live are mostly in a specialism you have never worked in. Candidates tend to overestimate how much of their expertise is specific and underestimate how long it takes to be genuinely good at something new. The truth sits in between, and where exactly depends far more on which direction you are moving than on how capable you are.
 
 ## What Counts as a Switch
 
@@ -79,7 +79,7 @@ Expect six months to be functional and eighteen to be genuinely good. That is th
 
 **Between applied modelling domains: moderate.** A forecasting specialist moving to demand-side optimisation, or a vision engineer moving to tabular risk modelling, can usually do it in one job change, particularly with a domain they already understand.
 
-**Towards research: hardest.** Research roles assess depth, publications and literature familiarity, and a switch generally requires a deliberate route — an industrial research group, a collaboration, or a doctorate.
+**Towards research: hardest.** Research roles assess depth, publications and literature familiarity, and a switch generally requires a deliberate route - an industrial research group, a collaboration, or a doctorate.
 
 **From research to applied: easier than feared,** provided you can show something shipped. The doubt employers have is about delivery, not ability, and one production system answers it.
 
@@ -91,7 +91,7 @@ Outside a handful of research-heavy employers, most Dutch organisations hire app
 
 That has two consequences. First, the number of roles available to you is larger than a specialism-focused search suggests. Second, the way you describe your experience matters more than its exact contents: employers respond to production, evaluation and delivery, and those are the parts of your record that travel.
 
-The exception is the small set of employers where the specialism is the product — language technology companies, vision-heavy industrial firms, research institutes. There, deep specific experience is the requirement, and a switch into those roles takes longer.
+The exception is the small set of employers where the specialism is the product - language technology companies, vision-heavy industrial firms, research institutes. There, deep specific experience is the requirement, and a switch into those roles takes longer.
 
 ## What It Costs
 
@@ -107,7 +107,7 @@ They ask three things, directly or indirectly.
 
 **Have you done anything in the new area at all?** One project, however modest, moves you from "interested" to "started".
 
-**Why are you switching?** A coherent reason — this is where the problems I want to work on are, this is what my domain needs, I want to work closer to production — reads as direction. "I was bored" reads as drift.
+**Why are you switching?** A coherent reason - this is where the problems I want to work on are, this is what my domain needs, I want to work closer to production - reads as direction. "I was bored" reads as drift.
 
 ## How to Make the Switch Credible Before You Apply
 
@@ -138,11 +138,11 @@ Describe your existing work in transferable terms: what you validated, what you 
 
 The switch is usually decided by how you describe it rather than by the gap itself, and most candidates make the same avoidable mistakes.
 
-**Lead with the fundamentals, not the gap.** Open with what you have done that is directly relevant — production systems, validation design, monitoring, working with messy data — and let the domain difference arrive as a detail rather than as a confession.
+**Lead with the fundamentals, not the gap.** Open with what you have done that is directly relevant - production systems, validation design, monitoring, working with messy data - and let the domain difference arrive as a detail rather than as a confession.
 
 **Give one concrete reason for the move.** "The problems I want to work on are here", "this is where the work near my home is", "I want to be closer to production". One sentence, said without apology. Interviewers are testing whether the switch is directional or reactive.
 
-**Show that you know what you do not know.** Naming the characteristic pitfalls of the new domain — leakage across time in forecasting, annotation quality in language work, distribution shift in vision — is more convincing than claiming familiarity you lack. It signals that you have taken the field seriously.
+**Show that you know what you do not know.** Naming the characteristic pitfalls of the new domain - leakage across time in forecasting, annotation quality in language work, distribution shift in vision - is more convincing than claiming familiarity you lack. It signals that you have taken the field seriously.
 
 **Bring one piece of evidence.** A project, even a modest one, moves the conversation from intention to track record.
 
@@ -160,7 +160,7 @@ Rather than relocate, he changes specialism. Inside his current job he takes on 
 
 He then applies for forecasting roles with a straightforward story: four years of production machine learning, evaluation practice he can describe in detail, and one forecasting system in use.
 
-He is hired at the same level by a logistics company twenty minutes away. The first six months are humbling — seasonality and hierarchy problems are unfamiliar and he makes beginner mistakes — but his validation discipline is better than that of colleagues who have only ever done forecasting.
+He is hired at the same level by a logistics company twenty minutes away. The first six months are humbling - seasonality and hierarchy problems are unfamiliar and he makes beginner mistakes - but his validation discipline is better than that of colleagues who have only ever done forecasting.
 
 Two years on, he leads the forecasting work. His language processing background turns up unexpectedly when the company starts extracting data from supplier documents, and he is the only person who knows how.
 
@@ -174,7 +174,7 @@ Two years on, he leads the forecasting work. His language processing background 
 
 ## Where to Start
 
-Check which specialisms actually dominate the vacancies within your travel radius — for many people that single fact decides whether switching or relocating is the better move.
+Check which specialisms actually dominate the vacancies within your travel radius - for many people that single fact decides whether switching or relocating is the better move.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -200,7 +200,7 @@ When you are close to genuine depth in a field with demand, when the motivation 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How hard is it to switch specialism within AI?", "acceptedAnswer": {"@type": "Answer", "text": "Less hard than feared — fundamentals transfer; six months to be functional, eighteen to be good."}},
+    {"@type": "Question", "name": "How hard is it to switch specialism within AI?", "acceptedAnswer": {"@type": "Answer", "text": "Less hard than feared - fundamentals transfer; six months to be functional, eighteen to be good."}},
     {"@type": "Question", "name": "Which switch is easiest?", "acceptedAnswer": {"@type": "Answer", "text": "Towards data engineering; research is the hardest direction without a deliberate route."}},
     {"@type": "Question", "name": "Will I have to take a step down?", "acceptedAnswer": {"@type": "Answer", "text": "Often about one level temporarily, correcting within roughly eighteen months."}},
     {"@type": "Question", "name": "How do I make a switch credible?", "acceptedAnswer": {"@type": "Answer", "text": "One real project in the new area, knowledge of its evaluation standards and a coherent reason."}},

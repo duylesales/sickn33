@@ -1,4 +1,4 @@
-🚨 Debiteurenbeheer van Marnix Bouwhuis beheert debiteuren voor 29 accountantskantoren — zo'n 18.000 debiteuren. Tijdens het debuggen exporteerde hij een productietabel naar een CSV en liet die in zijn projectmap staan. Vier maanden lang. Cursor indexeerde het, en hij plakte er twee keer rijen uit in een chat om te vragen waarom bedragen niet klopten. 😳
+🚨 Debiteurenbeheer van Marnix Bouwhuis beheert debiteuren voor 29 accountantskantoren - zo'n 18.000 debiteuren. Tijdens het debuggen exporteerde hij een productietabel naar een CSV en liet die in zijn projectmap staan. Vier maanden lang. Cursor indexeerde het, en hij plakte er twee keer rijen uit in een chat om te vragen waarom bedragen niet klopten. 😳
 
 Er werd niets gehackt. Maar de data van de klanten van zijn klanten was naar een bedrijf gegaan dat in geen enkele verwerkersovereenkomst stond. Dit verlaat uw machine echt als u een AI-editor gebruikt:
 
@@ -8,7 +8,7 @@ Er werd niets gehackt. Maar de data van de klanten van zijn klanten was naar een
 ❌ Geen geschreven standpunt over of ontwikkeltooling klantdata raakt
 
 ✅ De export verwijderd en een regel: productiedata komt nooit in de projectmap
-✅ Een ignore-bestand voor env-bestanden, sleutels, exports en dumps — plus privacymodus en een zakelijk abonnement
+✅ Een ignore-bestand voor env-bestanden, sleutels, exports en dumps - plus privacymodus en een zakelijk abonnement
 ✅ Een realistische seeddataset, zodat productiedata niet nodig is voor dagelijks werk
 ✅ Eerst anonimiseren, dan plakken, een absolute regel tegen sleutels, en een vastgelegde procedure: minimaal, geanonimiseerd, daarna verwijderd
 

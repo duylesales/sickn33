@@ -20,11 +20,11 @@ target_persona: "B"
 }
 </script>
 
-An Operations Director or technical lead at a car-sharing operator evaluating AI-based fleet rebalancing — predicting where vehicles will be needed and directing staff or incentives to relocate vehicles proactively — often approaches the technology with assumptions shaped by AI's visible progress in other logistics domains, assumptions that don't fully account for the specific operational judgment, cost-scaling, and liability considerations fleet rebalancing actually carries. Several of these assumptions deserve direct correction before they shape a platform build decision.
+An Operations Director or technical lead at a car-sharing operator evaluating AI-based fleet rebalancing - predicting where vehicles will be needed and directing staff or incentives to relocate vehicles proactively - often approaches the technology with assumptions shaped by AI's visible progress in other logistics domains, assumptions that don't fully account for the specific operational judgment, cost-scaling, and liability considerations fleet rebalancing actually carries. Several of these assumptions deserve direct correction before they shape a platform build decision.
 
 ## Myth 1: "AI Rebalancing Prediction Can Simply Replace an Operations Manager's Judgment at Similar Reliability"
 
-Rebalancing prediction models have genuinely improved at forecasting demand patterns from historical trip data, and it's reasonable to extrapolate from strong model performance on clean historical data toward an assumption that AI prediction can substitute broadly for an operations manager's day-to-day judgment about where to relocate vehicles. What this underweights is the difference between a model trained on historical patterns and the kind of situational judgment an operations manager applies in real time — a local event disrupting normal trip patterns, road closures affecting realistic relocation routes, or a new residential development shifting demand the model has no historical precedent for. Current rebalancing prediction approaches, however genuinely useful as a forecasting input, don't reliably substitute for the specific, situational judgment an operations manager brings to conditions the model's historical training data doesn't actually represent.
+Rebalancing prediction models have genuinely improved at forecasting demand patterns from historical trip data, and it's reasonable to extrapolate from strong model performance on clean historical data toward an assumption that AI prediction can substitute broadly for an operations manager's day-to-day judgment about where to relocate vehicles. What this underweights is the difference between a model trained on historical patterns and the kind of situational judgment an operations manager applies in real time - a local event disrupting normal trip patterns, road closures affecting realistic relocation routes, or a new residential development shifting demand the model has no historical precedent for. Current rebalancing prediction approaches, however genuinely useful as a forecasting input, don't reliably substitute for the specific, situational judgment an operations manager brings to conditions the model's historical training data doesn't actually represent.
 
 ## Myth 2: "AI Rebalancing Tooling Cuts Logistics Cost Roughly Proportionally to Fleet Size"
 
@@ -32,11 +32,11 @@ An operator reasonably expects that if a rebalancing model works well for a pilo
 
 ## Myth 3: "Liability for AI-Driven Rebalancing Decisions That Strand a Member Is a Settled, Low-Risk Consideration"
 
-The practical and legal considerations around AI-driven rebalancing decisions — what happens when a model's relocation recommendation turns out wrong and a member arrives to find no vehicle available, what service-level commitments an operator has actually made to members about vehicle availability, and how responsibility is allocated between the automated recommendation and the human staff who acted on it — remain genuinely unsettled in a way an operator can't safely treat as a solved, low-risk question. An operator treating AI-driven rebalancing recommendations as authoritative without meaningful human review, rather than as a decision-support input reviewed against local operational judgment, risks a specific, recurring member-trust failure mode — vehicles proactively relocated away from where members actually needed them based on a prediction that didn't hold up — that carries real commercial and contractual consequences distinct from a simple modeling error.
+The practical and legal considerations around AI-driven rebalancing decisions - what happens when a model's relocation recommendation turns out wrong and a member arrives to find no vehicle available, what service-level commitments an operator has actually made to members about vehicle availability, and how responsibility is allocated between the automated recommendation and the human staff who acted on it - remain genuinely unsettled in a way an operator can't safely treat as a solved, low-risk question. An operator treating AI-driven rebalancing recommendations as authoritative without meaningful human review, rather than as a decision-support input reviewed against local operational judgment, risks a specific, recurring member-trust failure mode - vehicles proactively relocated away from where members actually needed them based on a prediction that didn't hold up - that carries real commercial and contractual consequences distinct from a simple modeling error.
 
 ## Why These Myths Deserve Direct Correction Before Production Decisions
 
-These assumptions aren't unreasonable — AI prediction's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and consistency advantages a mature forecasting technology appears to offer. What makes fleet rebalancing specifically different from some other AI-forecasting use cases is the combination of genuinely situational, locally specific conditions a historical model cannot fully represent (unlike a clean backtest, real-time relocation decisions need to hold up against genuine local anomalies), a real, non-proportional validation cost that limits how directly fleet size translates into deployment savings, and a genuinely consequential member-trust failure mode when a relocation recommendation turns out wrong.
+These assumptions aren't unreasonable - AI prediction's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and consistency advantages a mature forecasting technology appears to offer. What makes fleet rebalancing specifically different from some other AI-forecasting use cases is the combination of genuinely situational, locally specific conditions a historical model cannot fully represent (unlike a clean backtest, real-time relocation decisions need to hold up against genuine local anomalies), a real, non-proportional validation cost that limits how directly fleet size translates into deployment savings, and a genuinely consequential member-trust failure mode when a relocation recommendation turns out wrong.
 
 ## What This Means for Scoping an AI-Assisted Rebalancing Platform Correctly
 
@@ -65,7 +65,7 @@ Zdieľanie Áut Košice, a Košice-based car-sharing operator, had planned an am
 Manifera's Amsterdam team, engaged to rework the rollout plan, repositioned AI rebalancing as a decision-support tool paired with genuine operations-staff review for high-impact relocations, rebuilt the budget around realistic per-area validation cost, and established a standing human review step for any relocation recommendation affecting a service area's core demand pockets.
 
 > *"We had budgeted as if one good model and fleet size moved together in a straight line. What we actually found was that every neighborhood had its own quirks the model needed to learn, and the member complaints about cars disappearing from where people actually needed them were what told us we needed real human review, not just a better model."*
-> — **Operations Director, Zdieľanie Áut Košice**
+> - **Operations Director, Zdieľanie Áut Košice**
 
 Zdieľanie Áut Košice's recalibrated platform, focused on prediction within supervised operational constraints rather than full relocation autonomy, delivered rebalancing recommendations meeting the operator's actual reliability bar within a realistically budgeted rollout timeline.
 
@@ -85,15 +85,15 @@ Before building a platform around AI-based fleet rebalancing, budget realistic p
 
 ### (Scenario: operator scoping an AI rebalancing platform) Can AI rebalancing prediction simply replace an operations manager's judgment at similar reliability?
 
-Not reliably — local anomalies and situational conditions a historical model has no precedent for typically require genuine human judgment, which current prediction approaches don't fully substitute for.
+Not reliably - local anomalies and situational conditions a historical model has no precedent for typically require genuine human judgment, which current prediction approaches don't fully substitute for.
 
 ### (Scenario: operator projecting cost savings across a growing fleet) Do AI rebalancing cost savings scale proportionally with fleet size?
 
-Not typically — most service areas require a genuine, area-specific validation and tuning pass before recommendations can be trusted, and this cost doesn't shrink proportionally with fleet size, limiting realistic savings.
+Not typically - most service areas require a genuine, area-specific validation and tuning pass before recommendations can be trusted, and this cost doesn't shrink proportionally with fleet size, limiting realistic savings.
 
 ### (Scenario: operator assuming liability questions are settled) Is liability for AI-driven relocation decisions that strand a member a settled, low-risk consideration?
 
-No — service-level and member-trust consequences of a wrong relocation recommendation remain a genuinely active operational risk, requiring ongoing human review rather than a one-time automation decision.
+No - service-level and member-trust consequences of a wrong relocation recommendation remain a genuinely active operational risk, requiring ongoing human review rather than a one-time automation decision.
 
 ### (Scenario: operator deciding where to apply AI rebalancing) Where does AI rebalancing add the most genuine value in a car-sharing platform?
 
@@ -108,8 +108,8 @@ Budget genuine per-area validation and tuning cost alongside deployment cost exp
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "(Scenario: operator scoping an AI rebalancing platform) Can AI rebalancing prediction simply replace an operations manager's judgment at similar reliability?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — local anomalies a historical model has no precedent for typically require genuine human judgment." } },
-    { "@type": "Question", "name": "(Scenario: operator projecting cost savings across a growing fleet) Do AI rebalancing cost savings scale proportionally with fleet size?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically — area-specific validation cost doesn't shrink proportionally with fleet size." } },
+    { "@type": "Question", "name": "(Scenario: operator scoping an AI rebalancing platform) Can AI rebalancing prediction simply replace an operations manager's judgment at similar reliability?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably - local anomalies a historical model has no precedent for typically require genuine human judgment." } },
+    { "@type": "Question", "name": "(Scenario: operator projecting cost savings across a growing fleet) Do AI rebalancing cost savings scale proportionally with fleet size?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically - area-specific validation cost doesn't shrink proportionally with fleet size." } },
     { "@type": "Question", "name": "(Scenario: operator assuming liability questions are settled) Is liability for AI-driven relocation decisions that strand a member a settled, low-risk consideration?", "acceptedAnswer": { "@type": "Answer", "text": "No, service-level and member-trust consequences of wrong recommendations remain a genuinely active operational risk." } },
     { "@type": "Question", "name": "(Scenario: operator deciding where to apply AI rebalancing) Where does AI rebalancing add the most genuine value in a car-sharing platform?", "acceptedAnswer": { "@type": "Answer", "text": "Flagging likely imbalance windows for human staff review aligns best with prediction's actual strengths." } },
     { "@type": "Question", "name": "(Scenario: operator budgeting a rebalancing platform rollout) How should an operator budget for AI-assisted rebalancing realistically?", "acceptedAnswer": { "@type": "Answer", "text": "Budget genuine per-area validation cost explicitly, rather than projecting proportional fleet-size-based savings." } }

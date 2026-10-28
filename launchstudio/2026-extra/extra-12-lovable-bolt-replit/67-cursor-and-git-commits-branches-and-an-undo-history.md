@@ -30,7 +30,7 @@ That makes it more important here than in traditional development, not less. A p
 
 **The ability to undo.** Not one keystroke, but any change, any time, including one made three weeks ago that turns out to have broken something you only noticed today.
 
-**A place to experiment.** A branch is a copy you can wreck freely. Given one, a session that goes badly is discarded in a second rather than unpicked over an afternoon — which, as the cost article in this series describes, is also where most of the money goes.
+**A place to experiment.** A branch is a copy you can wreck freely. Given one, a session that goes badly is discarded in a second rather than unpicked over an afternoon - which, as the cost article in this series describes, is also where most of the money goes.
 
 ## The Minimum Workflow
 
@@ -38,11 +38,11 @@ Ignore most of what is written about branching strategies. For one person, this 
 
 **One main branch** that is always in a working state and is what gets deployed.
 
-**A branch for each piece of work**, created before starting, named for what it is. When it works, merge it into main and delete it. If it goes wrong, delete it and start again — this is the moment the whole practice justifies itself.
+**A branch for each piece of work**, created before starting, named for what it is. When it works, merge it into main and delete it. If it goes wrong, delete it and start again - this is the moment the whole practice justifies itself.
 
 **Commit whenever something works**, not when a feature is finished. Small commits, frequently, each a point you can return to. A day with twelve commits is a day with twelve checkpoints.
 
-**Push to a remote** — a hosted repository — at least daily. Locally committed work lives on one laptop.
+**Push to a remote** - a hosted repository - at least daily. Locally committed work lives on one laptop.
 
 That is the whole workflow. It takes a few days to become automatic and it removes an entire class of anxiety about accepting changes.
 
@@ -74,15 +74,15 @@ Three categories, and the first is serious.
 
 **Personal data.** Database exports, customer samples, screenshots containing real records. These end up in repositories more often than anyone would like, and a repository that later becomes public takes them with it.
 
-Everything else — including your configuration example file, your conventions file and your migrations — belongs in there.
+Everything else - including your configuration example file, your conventions file and your migrations - belongs in there.
 
 ## When Something Breaks and You Do Not Know When
 
 The situation that justifies the whole practice: a customer reports something that used to work, and you have no idea when it stopped.
 
-With a history, this is answerable rather than mysterious. Find a commit from before the problem existed, check it out into a temporary state, and see whether the behaviour is correct there. Then work forwards — or, faster, use the bisect facility, which finds the exact commit that introduced a problem by testing points in the history in the way you would guess at, but systematically.
+With a history, this is answerable rather than mysterious. Find a commit from before the problem existed, check it out into a temporary state, and see whether the behaviour is correct there. Then work forwards - or, faster, use the bisect facility, which finds the exact commit that introduced a problem by testing points in the history in the way you would guess at, but systematically.
 
-For a product with a year of small commits, this typically identifies the responsible change in a handful of checks. For a product with a year of enormous commits, it identifies a commit containing forty files, which is less useful — which is the practical argument for small commits, made concrete.
+For a product with a year of small commits, this typically identifies the responsible change in a handful of checks. For a product with a year of enormous commits, it identifies a commit containing forty files, which is less useful - which is the practical argument for small commits, made concrete.
 
 Two habits make this work when you need it. Commits that each do one thing, so the answer is specific. And a working state at every commit, so a commit you check out actually runs; commits that do not run are holes in the history that break the search.
 
@@ -94,7 +94,7 @@ There is a reason to do this that has nothing to do with undo, and founders tend
 
 At some point somebody will want to know what you have built. An investor conducting diligence. A developer you are hiring. An acquirer. A customer's technical reviewer. A partner considering an integration.
 
-What you hand them is the repository, and what it contains says a great deal beyond the code. A history of small, described changes over eighteen months reads as a product someone has been running. A single commit called "initial commit" dated last Tuesday reads as a product with no history at all — which, if the work was done over eighteen months, is a story that has been lost rather than one that never existed.
+What you hand them is the repository, and what it contains says a great deal beyond the code. A history of small, described changes over eighteen months reads as a product someone has been running. A single commit called "initial commit" dated last Tuesday reads as a product with no history at all - which, if the work was done over eighteen months, is a story that has been lost rather than one that never existed.
 
 The same applies to handover. A developer joining a project with a readable history can see how it evolved and why decisions were made. One joining a project with no history has only the current state and must infer everything.
 
@@ -102,7 +102,7 @@ And there is a practical dimension: a repository under your own account, with th
 
 That is the strongest argument for setting it up on day one rather than month five, and it costs an hour.
 
-It is also, for most founders, the moment the product starts feeling like a company rather than a project — which is not a technical benefit, and is reported often enough by the people who do it to be worth mentioning.
+It is also, for most founders, the moment the product starts feeling like a company rather than a project - which is not a technical benefit, and is reported often enough by the people who do it to be worth mentioning.
 
 There is one more small benefit worth having: a repository makes it possible to work from a different machine, which matters the first time a laptop fails and the product turns out to exist only on it.
 
@@ -110,9 +110,9 @@ And it makes the eventual first hire straightforward rather than an archaeology 
 
 ## Setting This Up
 
-For a founder working with an AI editor this is typically an hour to set up and a week to internalise: a repository with everything committed and pushed to a hosted remote, an ignore file covering environment files, keys, build output and any data, a branch for each piece of work with a habit of deleting rather than salvaging the ones that go wrong, a commit before every session without exception, small frequent commits with messages explaining intention, a daily push, and a check that no secret is already in the history — with rotation if one is.
+For a founder working with an AI editor this is typically an hour to set up and a week to internalise: a repository with everything committed and pushed to a hosted remote, an ignore file covering environment files, keys, build output and any data, a branch for each piece of work with a habit of deleting rather than salvaging the ones that go wrong, a commit before every session without exception, small frequent commits with messages explaining intention, a daily push, and a check that no secret is already in the history - with rotation if one is.
 
-LaunchStudio sets this up when taking over a project, and it is the first thing we do, because nothing else is safe without it. The engineers are Manifera's — eleven years, 120+ engineers, from Amsterdam and Ho Chi Minh City.
+LaunchStudio sets this up when taking over a project, and it is the first thing we do, because nothing else is safe without it. The engineers are Manifera's - eleven years, 120+ engineers, from Amsterdam and Ho Chi Minh City.
 
 [Ask us to check whether your repository has a secret in its history](https://launchstudio.eu/en/#contact). Many do.
 
@@ -120,7 +120,7 @@ LaunchStudio sets this up when taking over a project, and it is the first thing 
 
 ### Three Days Rebuilt by Hand
 
-Karin Zoetelief built Praktijkfacturatie in Cursor: invoicing for allied health practices — physiotherapy, dietetics, speech therapy — handling insurer and patient billing for 41 practices.
+Karin Zoetelief built Praktijkfacturatie in Cursor: invoicing for allied health practices - physiotherapy, dietetics, speech therapy - handling insurer and patient billing for 41 practices.
 
 She worked without version control for the first five months. The project lived in a folder, backed up by a cloud sync that kept a few versions of individual files.
 
@@ -133,9 +133,9 @@ Two business days, then a changed practice: the project put into a repository wi
 **Result:** in the following year Karin discarded 23 sessions that went wrong, each in a few seconds, having previously lost a week to one. She describes the commit-before-session rule as the change that made using the tools comfortable rather than nerve-racking.
 
 > *"I rebuilt three days by hand because I had no way to go back. The fix was a repository, which took an hour, and I had spent five months not doing it because it sounded like something teams needed."*
-> — **Karin Zoetelief, Founder, Praktijkfacturatie (Nijmegen)**
+> - **Karin Zoetelief, Founder, Praktijkfacturatie (Nijmegen)**
 
-**Cost & Timeline:** €1,300 (repository setup with remote, ignore rules, credential rotation after finding secrets and patient data in the project folder, branch workflow, session discipline, workflow documentation) — completed in 2 business days.
+**Cost & Timeline:** €1,300 (repository setup with remote, ignore rules, credential rotation after finding secrets and patient data in the project folder, branch workflow, session discipline, workflow documentation) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -157,7 +157,7 @@ Secrets, build output and any real data. A committed secret stays in the history
 
 ### What makes a good commit message?
 
-One line saying what changed and, where it is not obvious, why. Write it before making the change — it clarifies the work and keeps the commit to one thing.
+One line saying what changed and, where it is not obvious, why. Write it before making the change - it clarifies the work and keeps the commit to one thing.
 
 <script type="application/ld+json">
 {
@@ -169,7 +169,7 @@ One line saying what changed and, where it is not obvious, why. Write it before 
       "name": "Is version control necessary when working alone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "More so than in a team when a tool writes the code — it is the only way to see what changed and to undo it reliably."
+        "text": "More so than in a team when a tool writes the code - it is the only way to see what changed and to undo it reliably."
       }
     },
     {
@@ -201,7 +201,7 @@ One line saying what changed and, where it is not obvious, why. Write it before 
       "name": "What makes a useful commit message?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A short line on what changed plus why when not obvious — written before the change, which also keeps the commit focused."
+        "text": "A short line on what changed plus why when not obvious - written before the change, which also keeps the commit focused."
       }
     }
   ]

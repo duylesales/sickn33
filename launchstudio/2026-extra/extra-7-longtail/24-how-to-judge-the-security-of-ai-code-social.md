@@ -1,4 +1,4 @@
-🚨 Lukas Peeters, a technical founder in Leuven, built StudyStack — a shared note and flashcard platform for university students — using Bolt. He ran his own security self-review before launch, checked auth and access control, and everything looked reasonable. What he missed was one search feature, built to concatenate raw search strings straight into a SQL query. 😬
+🚨 Lukas Peeters, a technical founder in Leuven, built StudyStack - a shared note and flashcard platform for university students - using Bolt. He ran his own security self-review before launch, checked auth and access control, and everything looked reasonable. What he missed was one search feature, built to concatenate raw search strings straight into a SQL query. 😬
 
 Code that runs fine on every normal input can still be one crafted input away from a breach. 🧠
 
@@ -11,7 +11,7 @@ Code that runs fine on every normal input can still be one crafted input away fr
 ✅ Run a full dependency and secrets audit across the rest of the codebase
 ✅ Add rate limiting to the previously unthrottled search endpoint
 
-At **LaunchStudio**, our engineers run every AI-generated codebase through the same structured framework — access control, injection, secrets, rate limiting, dependencies — built from over a decade of Manifera's production engineering work. 🛡️
+At **LaunchStudio**, our engineers run every AI-generated codebase through the same structured framework - access control, injection, secrets, rate limiting, dependencies - built from over a decade of Manifera's production engineering work. 🛡️
 
 Lukas's result: a rewritten, injection-safe search feature and a clean dependency audit, delivered before StudyStack opened to his university's student body. 🚀
 

@@ -1,4 +1,4 @@
-📋 De beveiliging van haar product was oprecht solide. De deal stagneerde toch drie weken — omdat een compliance-beoordelaar niet wilde horen dat het veilig was. Hij wilde een gedateerd bestand dat het bewees. 😤
+📋 De beveiliging van haar product was oprecht solide. De deal stagneerde toch drie weken - omdat een compliance-beoordelaar niet wilde horen dat het veilig was. Hij wilde een gedateerd bestand dat het bewees. 😤
 
 Healthtech-kopers beoordelen uw code niet. Ze beoordelen uw papierwerk. 🧠
 
@@ -9,7 +9,7 @@ Healthtech-kopers beoordelen uw code niet. Ze beoordelen uw papierwerk. 🧠
 
 ✅ Een echt papieren spoor is specifiek: wat werd beoordeeld, wanneer, door wie, met welke bevindingen
 ✅ Bouw het bestand voordat een deal het nodig heeft, niet nadat een beoordelaar ernaar vraagt
-✅ Toegangscontrole, credentialbeheer, incident-response — allemaal schriftelijk gedocumenteerd
+✅ Toegangscontrole, credentialbeheer, incident-response - allemaal schriftelijk gedocumenteerd
 ✅ De juiste documentatie verandert een compliancepoort in een formaliteit
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineeringervaring, behandelen wij documentatie als een oplevering bij elk traject, geen bijzaak. 🛡️

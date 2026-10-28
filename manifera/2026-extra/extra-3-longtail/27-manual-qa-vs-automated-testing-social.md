@@ -1,4 +1,4 @@
-🚨 Your cloud bill triples overnight while database queries take 4 seconds to resolve. That's not a hosting problem — that's unaddressed architectural debt. ☁️⚙️
+🚨 Your cloud bill triples overnight while database queries take 4 seconds to resolve. That's not a hosting problem - that's unaddressed architectural debt. ☁️⚙️
 
 **The Pain Points:**
 ❌ **Premature Microservices Complexity:** Splitting a system into microservices before establishing bounded contexts creates distributed monolith nightmares.

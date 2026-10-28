@@ -1,4 +1,4 @@
-🚨 In the enterprise software space, "Developer Experience" (DX) is often dismissed by CFOs as HR fluff—a budget line for ping-pong tables, free snacks, and ergonomic chairs. This is a catastrophic miscalculation. ⚙️💥
+🚨 In the enterprise software space, "Developer Experience" (DX) is often dismissed by CFOs as HR fluff - a budget line for ping-pong tables, free snacks, and ergonomic chairs. This is a catastrophic miscalculation. ⚙️💥
 
 **The Pain Points:**
 ❌ **Developer First Fragmentation:** You hire a massive, traditional offshore agency to build your core application. The agency treats their developers like commodities, enforcing toxic 60-hour work weeks and punitive micro-management.

@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Deventer telt ongeveer 100.000 inwoners aan de IJssel, en de data- en machine learning-markt heeft er een karakter dat scherp afwijkt van de technologiemarkten die kandidaten gewoonlijk bekijken. Het werk zit hier overwegend ingebed in fysieke projecten — infrastructuur, watersystemen, gebouwen, goederenstromen — in plaats van in softwareproducten.
+Deventer telt ongeveer 100.000 inwoners aan de IJssel, en de data- en machine learning-markt heeft er een karakter dat scherp afwijkt van de technologiemarkten die kandidaten gewoonlijk bekijken. Het werk zit hier overwegend ingebed in fysieke projecten - infrastructuur, watersystemen, gebouwen, goederenstromen - in plaats van in softwareproducten.
 
 ## Datawerk binnen ingenieursprojecten, niet binnen softwarebedrijven
 
@@ -43,7 +43,7 @@ Een bureau verkoopt expertise toegepast op het probleem van een klant, onder een
 
 **Remote sensing voor bodemdaling.** Nederland kent een goed gedocumenteerd bodemdalingsprobleem met gevolgen voor funderingen, infrastructuur en waterbeheer. Satellietinterferometrie gecombineerd met grondmetingen levert data die zowel analyse als juridische claims ondersteunt.
 
-**Optimalisatie onder fysieke en wettelijke randvoorwaarden.** Routering, capaciteitsplanning, baggerschema's, energiegebruik bij bemaling — problemen waar de randvoorwaarden uit fysica en wet komen en waar een oplossing die er één schendt niet suboptimaal maar onbruikbaar is.
+**Optimalisatie onder fysieke en wettelijke randvoorwaarden.** Routering, capaciteitsplanning, baggerschema's, energiegebruik bij bemaling - problemen waar de randvoorwaarden uit fysica en wet komen en waar een oplossing die er één schendt niet suboptimaal maar onbruikbaar is.
 
 **Digital twins van fysieke objecten.** Commercieel een uitgehold begrip, maar bij een ingenieursbureau betekent het meestal iets concreets: een onderhouden rekenkundige weergave van een echt object, gekalibreerd op sensordata.
 
@@ -65,11 +65,11 @@ Een bureau verkoopt expertise toegepast op het probleem van een klant, onder een
 
 | | Ingenieursbureau | Productbedrijf |
 |---|---|---|
-| Domeinbreedte | Zeer hoog — veel sectoren in enkele jaren | Smal en diep in één domein |
+| Domeinbreedte | Zeer hoog - veel sectoren in enkele jaren | Smal en diep in één domein |
 | Technische diepte per project | Begrensd door budget en deadline | Kan jaren opbouwen |
 | Eigenaarschap van resultaat | Eindigt bij oplevering | Loopt door in de exploitatie |
 | Klantcontact | Constant, tot directieniveau | Meestal via productmanagement |
-| Gewicht van schrijven | Zeer hoog — het rapport is de oplevering | Gemiddeld |
+| Gewicht van schrijven | Zeer hoog - het rapport is de oplevering | Gemiddeld |
 | Internationale projectervaring | Vaak hoog | Volledig bedrijfsafhankelijk |
 | Past bij engineers die | Variatie, klantcontact en fysieke problemen zoeken | Diepte en systeemeigenaarschap zoeken |
 
@@ -81,11 +81,11 @@ Nederlandse ingenieursbureaus exporteren hun expertise sterk. Waterbeheer, kustb
 
 Voor een data scientist heeft dat twee gevolgen. Het werk reist: een model voor een deltaproject wordt toegepast op een riviersysteem op een ander continent. En klimaatadaptatie maakt hiervan een van de strategisch belangrijkere technische velden van de komende decennia.
 
-Wie zich afvraagt of een bureaufunctie in Deventer een doodlopende weg is omdat de stad klein is, stelt de verkeerde vraag. De relevante vraag is of het projectportfolio binnenlands of internationaal is — en dat verschilt per bureau en per afdeling.
+Wie zich afvraagt of een bureaufunctie in Deventer een doodlopende weg is omdat de stad klein is, stelt de verkeerde vraag. De relevante vraag is of het projectportfolio binnenlands of internationaal is - en dat verschilt per bureau en per afdeling.
 
 ## Wat instappen in deze markt werkelijk vraagt
 
-**Leren schrijven voor besluitvormers.** Geen documentatie, geen notebook met markdown — een gestructureerd betoog dat een directeur kan lezen en waarop hij kan handelen. Dit is de grootste onderscheidende factor bij aanname.
+**Leren schrijven voor besluitvormers.** Geen documentatie, geen notebook met markdown - een gestructureerd betoog dat een directeur kan lezen en waarop hij kan handelen. Dit is de grootste onderscheidende factor bij aanname.
 
 **Comfortabel worden met zeggen wat je niet weet.** Adviseren onder onzekerheid betekent dat overdreven zekerheid een beroepsrisico is, geen presentatiekeuze. In productomgevingen wordt optimisme vaak beloond; hier leest gepaste voorzichtigheid als vakmanschap.
 
@@ -108,7 +108,7 @@ Apeldoorn op twintig minuten en Zwolle op vijfentwintig is het kernfeit. Dat is 
 
 Deventer moet niet als AI-hub worden beschreven. Het aantal functies dat een kandidaat als machine learning-positie zou herkennen, is klein. Is je criterium "veel werkgevers die om ML-engineers concurreren", dan is dit de verkeerde stad.
 
-Wat Deventer biedt is een specifiek soort werk — data en modellering ingebed in fysieke ingenieursprojecten met internationale reikwijdte — bij een klein aantal stevige werkgevers, in een stad met duidelijk lagere woonlasten dan de Randstad, binnen bereik van meerdere aangrenzende markten.
+Wat Deventer biedt is een specifiek soort werk - data en modellering ingebed in fysieke ingenieursprojecten met internationale reikwijdte - bij een klein aantal stevige werkgevers, in een stad met duidelijk lagere woonlasten dan de Randstad, binnen bereik van meerdere aangrenzende markten.
 
 ## Belangrijkste punten
 

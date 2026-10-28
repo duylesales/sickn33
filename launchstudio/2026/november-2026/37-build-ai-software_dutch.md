@@ -111,9 +111,9 @@ Binnen 12 werkdagen herbouwde het Manifera-team de complete backend naar een mod
 **Resultaat:** Het aantal JSON-fouten daalde naar 0%. De extractienauwkeurigheid steeg van 80% naar 99,5%. Doordat zware AI-verwerking uitsluitend plaatsvond op relevante tekstblokken daalden de API-kosten met 40%. Sarah verkocht het platform direct aan drie grote makelaarskantoren in München (€11.000 MRR).
 
 > *"Ik behandelde de AI als een menselijke werknemer die ik in de prompt moest smeken om zijn best te doen. LaunchStudio leerde me om de AI te behandelen als een compiler. Zij vervingen de promptmagie door keiharde software-engineering. Dat was het verschil tussen een leuk prototype en een verkoopbaar product."*
-> — **Sarah Müller, Oprichter, ClauseCheck (München)**
+> - **Sarah Müller, Oprichter, ClauseCheck (München)**
 
-**Kosten & Doorlooptijd:** €7.200 (Launch & Grow Pakket met AI Pipeline Modularisatie Add-on) — productie-klaar en live binnen 12 werkdagen.
+**Kosten & Doorlooptijd:** €7.200 (Launch & Grow Pakket met AI Pipeline Modularisatie Add-on) - productie-klaar en live binnen 12 werkdagen.
 
 ---
 

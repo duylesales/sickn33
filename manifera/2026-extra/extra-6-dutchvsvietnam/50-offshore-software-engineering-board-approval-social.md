@@ -1,7 +1,7 @@
-A CFO walks into a board meeting with an airtight cost case for an offshore engineering budget — and gets stopped cold by one question nobody prepared for: "who's accountable if this goes wrong?" 🚨📋
+A CFO walks into a board meeting with an airtight cost case for an offshore engineering budget - and gets stopped cold by one question nobody prepared for: "who's accountable if this goes wrong?" 🚨📋
 
 **The Pain Points:**
-❌ **The Cost Case Isn't the Question:** Boards interrogate the risk line, not the cost line — IP ownership, delivery accountability, jurisdiction, and continuity risk.
+❌ **The Cost Case Isn't the Question:** Boards interrogate the risk line, not the cost line - IP ownership, delivery accountability, jurisdiction, and continuity risk.
 ❌ **A Rejected Proposal Costs a Full Cycle:** A CFO who can only answer the cost question gets sent back, typically losing six to eight weeks before the engagement can even start.
 ❌ **Ungoverned Engagements Have a Real Price Tag:** Mid-market companies that hit a serious quality or IP incident after an ungoverned offshore engagement report €90,000-€160,000 in remediation costs.
 

@@ -1,4 +1,4 @@
-📑 Kwame tekende eerder een softwareofferte op basis van een mondelinge toezegging — om er halverwege achter te komen dat betaalbeveiliging in de kleine lettertjes als "out-of-scope" stond. 🤦‍♂️
+📑 Kwame tekende eerder een softwareofferte op basis van een mondelinge toezegging - om er halverwege achter te komen dat betaalbeveiliging in de kleine lettertjes als "out-of-scope" stond. 🤦‍♂️
 
 In softwareontwikkeling is niet het salesgesprek bindend, maar het Statement of Work (SOW). Wie dit niet scherp leest, betaalt de rekening achteraf.
 
@@ -12,7 +12,7 @@ In softwareontwikkeling is niet het salesgesprek bindend, maar het Statement of 
 
 Bij LaunchStudio werken we uitsluitend met heldere, meetbare fixed-scope SOW's. Geen verrassingen, geen uurtje-factuurtje. ⚖️
 
-Kwame wist exact wat hij kreeg: oplevering binnen 10 dagen zonder één cent meerwerk. (€ 2.900 (Launch Ready) — 10 werkdagen.) 🚀
+Kwame wist exact wat hij kreeg: oplevering binnen 10 dagen zonder één cent meerwerk. (€ 2.900 (Launch Ready) - 10 werkdagen.) 🚀
 
 👉 Ontdek hoe u een SOW scherp beoordeelt: https://launchstudio.eu/nl/blog/founders-guide-reading-statement-of-work
 

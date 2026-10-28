@@ -12,7 +12,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI SaaS in 2026: Bouw Het Product Snel, Richt Het Bedrijf Degelijk In",
-  "description": "Een AI SaaS-product bouwen ging nog nooit zo snel. Maar een rendabel SaaS-bedrijf neerzetten — met betrouwbare facturatie, multi-tenancy en gezonde unit economics — vereist beproefde software-engineering.",
+  "description": "Een AI SaaS-product bouwen ging nog nooit zo snel. Maar een rendabel SaaS-bedrijf neerzetten - met betrouwbare facturatie, multi-tenancy en gezonde unit economics - vereist beproefde software-engineering.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -45,14 +45,14 @@ Een AI SaaS heeft een fundamenteel andere kostenstructuur omdat elke gebruikersa
 
 **Variabele kosten schalen met intensiteit van gebruik, niet alleen met accounts.** Een intensieve gebruiker die maandelijks 500 AI-analyses genereert, kost u vijftig keer zoveel als een incidentele gebruiker die er tien opvraagt. Uw prijsmodel moet deze asymmetrie opvangen, anders verdampen uw winstmarges.
 
-**Infrastructuurkosten zijn minder voorspelbaar.** Een viraal moment op LinkedIn dat 1.000 nieuwe gratis gebruikers oplevert, kan uw OpenAI-factuur binnen 48 uur laten exploderen van €200 naar €5.000 — nog voordat één van hen een betaald abonnement heeft afgesloten.
+**Infrastructuurkosten zijn minder voorspelbaar.** Een viraal moment op LinkedIn dat 1.000 nieuwe gratis gebruikers oplevert, kan uw OpenAI-factuur binnen 48 uur laten exploderen van €200 naar €5.000 - nog voordat één van hen een betaald abonnement heeft afgesloten.
 
 **Unit economics vereisen engineering.** Caching, snelheidsbegrenzing (rate limiting), prompt-optimalisatie en verbruiksgebaseerde facturatie zijn geen luxe functies voor een AI SaaS; het zijn elementaire overlevingsvoorwaarden.
 
 ## De AI SaaS-Stack: Zeven Lagen Die Naadloos Moeten Samenwerken
 
 ### Laag 1: AI-Integratie
-De kernwaarde van uw product — de unieke AI-functionaliteit die een specifiek probleem oplost. Dit is wat u met Lovable, Bolt of Cursor heeft gegenereerd en is doorgaans het sterkste onderdeel van uw prototype.
+De kernwaarde van uw product - de unieke AI-functionaliteit die een specifiek probleem oplost. Dit is wat u met Lovable, Bolt of Cursor heeft gegenereerd en is doorgaans het sterkste onderdeel van uw prototype.
 
 ### Laag 2: Verbruiksmeting (Usage Metering)
 Het realtime bijhouden van het data- en tokenverbruik per gebruiker of organisatie. Deze data vormt de basis voor accurate facturatie en kostenbeheersing.
@@ -72,7 +72,7 @@ Authenticatie, autorisatie, teamuitnodigingen, rolverdelingen en veilige sessies
 ### Laag 7: Beheer en Monitoring
 Uptime-monitoring, foutregistratie via Sentry, geautomatiseerde databaseback-ups en beveiligingsupdates.
 
-De meeste prototypes dekken uitsluitend Laag 1 en een klein deel van Laag 6. Lagen 2 tot en met 5 en Laag 7 ontbreken volledig — terwijl juist die lagen bepalen of uw SaaS een draaiend bedrijf is.
+De meeste prototypes dekken uitsluitend Laag 1 en een klein deel van Laag 6. Lagen 2 tot en met 5 en Laag 7 ontbreken volledig - terwijl juist die lagen bepalen of uw SaaS een draaiend bedrijf is.
 
 ## De Unit Economics: Een Rekenvoorbeeld
 
@@ -118,7 +118,7 @@ Jasper, oprichter van Wisey (een EdTech AI SaaS): *"Als SaaS-oprichter wil je sn
 
 Eva, een HR-adviseur in Tilburg, bouwde met Lovable een AI-applicatie voor medewerkersfeedback. Bedrijven uploadden anonieme enquêteresultaten, waarna de AI sentimentanalyses uitvoerde en direct directierapporten opstelde.
 
-Het concept sloeg direct aan: drie HR-directeuren van middelgrote organisaties wilden na één demo direct starten met een betaalde pilot. Maar Eva kon hen niet onboarden. Er was geen mogelijkheid om aparte bedrijfsomgevingen aan te maken (alle enquêteresultaten kwamen in één grote database terecht). Er was geen betalingssysteem — Eva stuurde handmatig facturen per mail. Er waren geen verbruikslimieten — één bedrijf uploadde in een week 2.000 reacties, wat direct leidde tot €340 aan OpenAI-kosten. Bovendien toonde de AI in samenvattingen soms per abuis data van andere bedrijven door ontbrekende tenant-isolatie.
+Het concept sloeg direct aan: drie HR-directeuren van middelgrote organisaties wilden na één demo direct starten met een betaalde pilot. Maar Eva kon hen niet onboarden. Er was geen mogelijkheid om aparte bedrijfsomgevingen aan te maken (alle enquêteresultaten kwamen in één grote database terecht). Er was geen betalingssysteem - Eva stuurde handmatig facturen per mail. Er waren geen verbruikslimieten - één bedrijf uploadde in een week 2.000 reacties, wat direct leidde tot €340 aan OpenAI-kosten. Bovendien toonde de AI in samenvattingen soms per abuis data van andere bedrijven door ontbrekende tenant-isolatie.
 
 Eva had betalende klanten voor de deur staan, maar geen infrastructuur om hen veilig te bedienen.
 
@@ -127,9 +127,9 @@ LaunchStudio herbouwde haar backend binnen 15 werkdagen: een volwaardige multi-t
 **Resultaat:** PulseHR lanceerde met 5 zakelijke klanten in het eerste kwartaal (€399 tot €1.299/maand per klant). Binnen 90 dagen bereikte de maandelijks terugkerende omzet €3.795, terwijl de AI-kosten dankzij caching stabiliseerden op slechts 12% van de omzet.
 
 > *"Ik had zakelijke klanten die klaarstonden om te betalen, maar kon hun data niet scheiden of automatisch factureren. LaunchStudio veranderde mijn prototype in twee weken in een volwaardige multi-tenant SaaS. De facturatie-infrastructuur alleen al had me anders maanden gekost."*
-> — **Eva Martens, Oprichter, PulseHR (Tilburg)**
+> - **Eva Martens, Oprichter, PulseHR (Tilburg)**
 
-**Kosten & Doorlooptijd:** €6.800 (Launch & Grow Pakket met multi-tenant architectuur) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €6.800 (Launch & Grow Pakket met multi-tenant architectuur) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 
@@ -148,7 +148,7 @@ Supabase is uitstekend voor databases, authenticatie en eenvoudige serverless fu
 Via drie verdedigingslagen: Row Level Security op databaseniveau (elk bedrijf kan uitsluitend eigen records opvragen), tenant-scoped API-routes op serverniveau, en geïsoleerde contexten bij AI-aanroepen zodat data van Bedrijf A nooit in de respons van Bedrijf B verschijnt.
 
 ### Welke statistieken moet een AI SaaS bijhouden om investeerders te overtuigen?
-Naast klassieke SaaS-metrics (MRR, churn, CAC) kijken investeerders bij AI SaaS scherp naar: AI-kosten per actieve gebruiker, brutomarge (doelstelling: 70%+) en de AI-kostenratio (AI-kosten als percentage van de omzet — onder de 20% geldt als uitstekend). Onze verbruiksmeting levert deze data automatisch aan.
+Naast klassieke SaaS-metrics (MRR, churn, CAC) kijken investeerders bij AI SaaS scherp naar: AI-kosten per actieve gebruiker, brutomarge (doelstelling: 70%+) en de AI-kostenratio (AI-kosten als percentage van de omzet - onder de 20% geldt als uitstekend). Onze verbruiksmeting levert deze data automatisch aan.
 
 <script type="application/ld+json">
 {

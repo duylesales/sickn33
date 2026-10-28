@@ -35,7 +35,7 @@ The single most useful question, and it should be asked before accepting a role 
 
 The second half matters more than the first. Many organisations describe a technical track in their career framework without anyone actually being on it. If nobody at the level above you is a non-manager, the track is aspirational rather than real, and the honest interpretation is that advancement means managing people.
 
-**What the answer varies with.** The sector analyses in this series are directly relevant. Large technology companies, semiconductor, quantitative finance and some scale-ups have genuine senior individual contributor roles. Public sector, healthcare, research institutes and many industrial companies largely do not — advancement is into coordination and management, as the Heerlen and public sector analyses note. Smaller companies frequently have no formal structure at all, which is sometimes better because influence is unconstrained and sometimes worse because nothing is defined.
+**What the answer varies with.** The sector analyses in this series are directly relevant. Large technology companies, semiconductor, quantitative finance and some scale-ups have genuine senior individual contributor roles. Public sector, healthcare, research institutes and many industrial companies largely do not - advancement is into coordination and management, as the Heerlen and public sector analyses note. Smaller companies frequently have no formal structure at all, which is sometimes better because influence is unconstrained and sometimes worse because nothing is defined.
 
 **If the track does not exist, you have three options.** Move to an organisation where it does. Accept management and discover whether you are suited to it, which many people are despite assuming otherwise. Or stay technical without title progression and accept that compensation and formal standing will plateau while the work may remain excellent. All three are legitimate; drifting without choosing is the mistake.
 
@@ -43,7 +43,7 @@ The second half matters more than the first. Many organisations describe a techn
 
 The distinguishing features are consistent across organisations and sectors, and they are not about technical depth.
 
-**Choosing the problem becomes the work.** A senior engineer solves the problem they are given well. Beyond that, the contribution is determining which problem is worth solving — recognising that the requested model would not help, that the actual constraint is data quality, that a simpler intervention would capture most of the value. This is judgement rather than skill and it is what organisations are short of.
+**Choosing the problem becomes the work.** A senior engineer solves the problem they are given well. Beyond that, the contribution is determining which problem is worth solving - recognising that the requested model would not help, that the actual constraint is data quality, that a simpler intervention would capture most of the value. This is judgement rather than skill and it is what organisations are short of.
 
 **You are accountable for outcomes you do not personally produce.** Your influence runs through other people's work. That means persuading, teaching, reviewing and creating conditions rather than building, and engineers who derive satisfaction primarily from personally building things find this a genuine loss rather than a promotion.
 
@@ -63,7 +63,7 @@ Several features of the Dutch environment change how this progression works.
 
 **Consensus culture makes it slower.** Decisions involve genuine consultation, which means moving an organisation takes patience and repeated conversation rather than authority. Engineers who expect to be given a mandate will be frustrated; those who are willing to build agreement will find the outcome more durable.
 
-**Collective agreements constrain the outcome.** In public sector, healthcare and research contexts, there is a ceiling on what any technical role pays regardless of your contribution, as described in the salary negotiation analysis. Recognition may have to come in other forms — autonomy, interesting problems, training, reduced hours — and those are genuinely available.
+**Collective agreements constrain the outcome.** In public sector, healthcare and research contexts, there is a ceiling on what any technical role pays regardless of your contribution, as described in the salary negotiation analysis. Recognition may have to come in other forms - autonomy, interesting problems, training, reduced hours - and those are genuinely available.
 
 **Part-time seniority is possible here.** A four-day week at a senior technical level is normal in the Netherlands in a way it is not in most markets. If that matters to you, it is achievable rather than a compromise you must argue for.
 
@@ -75,7 +75,7 @@ Five things that produce the position, in rough order of effect.
 
 **Write things people reuse.** A design document that becomes the reference. An analysis that settles a recurring argument. Written artefacts outlive conversations and travel to people you never meet.
 
-**Develop other people deliberately.** Not assigned mentoring — actually improving colleagues' work through review, pairing and explanation. Organisations notice who makes their team better, and it is the most reliable evidence of readiness for a wider role.
+**Develop other people deliberately.** Not assigned mentoring - actually improving colleagues' work through review, pairing and explanation. Organisations notice who makes their team better, and it is the most reliable evidence of readiness for a wider role.
 
 **Build a network outside your employer.** Your standing inside one organisation does not transfer. External visibility, through writing, talks, sector communities or open contribution, is what makes you employable at this level elsewhere. The relevant communities are identified by sector throughout this series.
 
@@ -119,7 +119,7 @@ If you want the title and the compensation, understand that the work genuinely c
 
 If you want more influence over what gets built, this is the path, and the frustration of watching poor decisions get made is the reason most people seek it.
 
-If you want to keep doing excellent technical work, you may not need the title at all — particularly in a Dutch context where flat hierarchy already grants influence to competent people. Some of the most effective technical people in Dutch organisations have unremarkable titles and considerable standing, and that is a viable career rather than a failure to advance.
+If you want to keep doing excellent technical work, you may not need the title at all - particularly in a Dutch context where flat hierarchy already grants influence to competent people. Some of the most effective technical people in Dutch organisations have unremarkable titles and considerable standing, and that is a viable career rather than a failure to advance.
 
 ## What to Do If You Are Stuck
 
@@ -129,7 +129,7 @@ A common and rarely addressed situation: you are competent, the work is fine, no
 
 **Nobody senior is watching.** Advancement requires someone with standing to advocate for you. If your manager is disengaged or your work is invisible to anyone who makes decisions, no amount of quality will help. The response is to make the work visible through writing, or to find a different advocate.
 
-**You are the most senior technical person present.** This feels like success and is a trap. Without anyone better than you nearby, your growth depends entirely on self-direction, and most people plateau. The response is an external network, deliberate study, or moving somewhere with people to learn from — the isolation risk described in several sector analyses in this series.
+**You are the most senior technical person present.** This feels like success and is a trap. Without anyone better than you nearby, your growth depends entirely on self-direction, and most people plateau. The response is an external network, deliberate study, or moving somewhere with people to learn from - the isolation risk described in several sector analyses in this series.
 
 **The organisation genuinely has no path.** Sometimes there is nothing wrong with you or your manager and the structure simply does not accommodate what you want. Recognising this early saves years. The response is to leave, without resentment, at a time of your choosing.
 
@@ -143,7 +143,7 @@ The general pattern is that being stuck is usually structural rather than a capa
 - The distinguishing feature at this level is choosing which problem is worth solving, not solving problems better.
 - Your output becomes writing and your accountability covers work you do not personally produce, which some engineers experience as a loss rather than a promotion.
 - Dutch flat hierarchy grants influence without title, which helps your effectiveness and delays formal recognition.
-- Collective agreements cap compensation in several sectors, so recognition may need to take the form of autonomy, problems, training or reduced hours — all genuinely available.
+- Collective agreements cap compensation in several sectors, so recognition may need to take the form of autonomy, problems, training or reduced hours - all genuinely available.
 - Depth in something scarce, rather than breadth, is what makes you hard to replace at this level.
 
 ## Where to Start
@@ -161,7 +161,7 @@ Ask who currently occupies it. Many organisations describe a senior individual c
 Substantially, yes. Your influence runs through other people's work, your main output becomes writing, and a large share of your day is conversation and persuasion. Many people find they preferred the previous role, which is worth knowing before pursuing it.
 
 ### (Scenario: candidate in the public sector) What if compensation is capped by a collective agreement?
-Recognition may need to take other forms — autonomy over what you work on, interesting problems, guaranteed training budget, reduced hours. These are genuinely available in Dutch organisations and are often easier to obtain than money.
+Recognition may need to take other forms - autonomy over what you work on, interesting problems, guaranteed training budget, reduced hours. These are genuinely available in Dutch organisations and are often easier to obtain than money.
 
 ### (Scenario: candidate frustrated by slow decisions) Why does influencing a Dutch organisation take so long?
 Consensus culture means decisions involve genuine consultation rather than authority. Engineers expecting a mandate will be frustrated; those willing to build agreement find the resulting decisions more durable.
@@ -176,7 +176,7 @@ Depth in something scarce. Breadth is common at senior level. Genuine depth in c
   "mainEntity": [
     {"@type": "Question", "name": "How do I know whether a senior technical track is real?", "acceptedAnswer": {"@type": "Answer", "text": "Ask who currently occupies it. Many organisations describe the path without anyone being on it, in which case advancement means managing people."}},
     {"@type": "Question", "name": "Does progression beyond senior mean giving up hands-on work?", "acceptedAnswer": {"@type": "Answer", "text": "Substantially. Influence runs through others' work, writing becomes your main output, and much of the day is conversation and persuasion."}},
-    {"@type": "Question", "name": "What if compensation is capped by a collective agreement?", "acceptedAnswer": {"@type": "Answer", "text": "Recognition can take other forms — autonomy, interesting problems, training budget, reduced hours — which are genuinely available and often easier to obtain."}},
+    {"@type": "Question", "name": "What if compensation is capped by a collective agreement?", "acceptedAnswer": {"@type": "Answer", "text": "Recognition can take other forms - autonomy, interesting problems, training budget, reduced hours - which are genuinely available and often easier to obtain."}},
     {"@type": "Question", "name": "Why does influencing a Dutch organisation take so long?", "acceptedAnswer": {"@type": "Answer", "text": "Consensus culture means decisions involve genuine consultation rather than authority, which is slower but produces more durable outcomes."}},
     {"@type": "Question", "name": "Should I invest in breadth or depth at senior level?", "acceptedAnswer": {"@type": "Answer", "text": "Depth in something scarce. Breadth is common; genuine depth in constrained optimisation, uncertainty quantification or validation is rare and makes you hard to replace."}}
   ]

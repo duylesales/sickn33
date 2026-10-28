@@ -39,13 +39,13 @@ Content Format: Regional Talent Guide
 }
 </script>
 
-Groningen trains a large number of AI, computer science and data science students every year. The University of Groningen has one of the longest-running artificial intelligence programmes in the Netherlands, and Hanze University of Applied Sciences educates many ICT and data professionals. Yet a familiar pattern repeats itself: after graduation, many of these students move to the Randstad. For municipalities, the province, campus organisations and business associations, the question is how to change that pattern. This guide looks at AI jobs in Groningen from the perspective of regional organisations — why talent leaves, what actually influences a graduate's decision, and what practical steps can keep more AI talent in the north.
+Groningen trains a large number of AI, computer science and data science students every year. The University of Groningen has one of the longest-running artificial intelligence programmes in the Netherlands, and Hanze University of Applied Sciences educates many ICT and data professionals. Yet a familiar pattern repeats itself: after graduation, many of these students move to the Randstad. For municipalities, the province, campus organisations and business associations, the question is how to change that pattern. This guide looks at AI jobs in Groningen from the perspective of regional organisations - why talent leaves, what actually influences a graduate's decision, and what practical steps can keep more AI talent in the north.
 
 ## Why AI Graduates Leave the North
 
 OnlyAIJobs was founded on an insight from studies of regional labour markets: many job seekers in Noord-Brabant moved to the Randstad not because they wanted to work there, but because they did not know which interesting companies were in their own region. The same mechanism applies in Groningen, Friesland and Drenthe.
 
-Graduates tend to follow three signals: the number of visible vacancies, the brand names they already know, and where their friends go. The Randstad wins on all three because its employers are large, advertise heavily and dominate general job sites. Northern employers — often smaller, more specialised and less focused on employer branding — are simply less visible. A graduate who searches "AI engineer" on a national job site sees mostly Amsterdam and Utrecht, draws a conclusion, and moves.
+Graduates tend to follow three signals: the number of visible vacancies, the brand names they already know, and where their friends go. The Randstad wins on all three because its employers are large, advertise heavily and dominate general job sites. Northern employers - often smaller, more specialised and less focused on employer branding - are simply less visible. A graduate who searches "AI engineer" on a national job site sees mostly Amsterdam and Utrecht, draws a conclusion, and moves.
 
 The result is a visibility problem as much as an opportunity problem. The north has AI work; graduates just do not see enough of it at the moment they decide.
 
@@ -53,7 +53,7 @@ The result is a visibility problem as much as an opportunity problem. The north 
 
 The northern AI market is smaller and more specialised than the Randstad's, but it is real and diverse.
 
-**Energy and the energy transition.** The region's history in gas and its role in the energy transition — hydrogen, grid management, offshore wind landing points around the Eemshaven — create data work in forecasting, asset management and optimisation.
+**Energy and the energy transition.** The region's history in gas and its role in the energy transition - hydrogen, grid management, offshore wind landing points around the Eemshaven - create data work in forecasting, asset management and optimisation.
 
 **Data infrastructure.** The Eemshaven area hosts large data centres, including Google's, which brings demand for infrastructure and operations skills.
 
@@ -69,7 +69,7 @@ Many of these roles carry titles such as data engineer, software developer, anal
 
 ## The Decision Moment: When Retention Is Won or Lost
 
-For most graduates, the decision to stay or leave is made in a short window — roughly the last six months of study and the first months after graduation. Interventions that land in that window matter far more than general regional marketing.
+For most graduates, the decision to stay or leave is made in a short window - roughly the last six months of study and the first months after graduation. Interventions that land in that window matter far more than general regional marketing.
 
 What influences decisions in that window:
 
@@ -81,9 +81,9 @@ What influences decisions in that window:
 
 ## What Regional Organisations Can Do
 
-**Make local AI vacancies findable in one place.** Graduates should be able to see, in one search, the AI and data vacancies within their region, with exact locations. This is precisely what a specialist, location-first job board does: OnlyAIJobs lists only AI, machine learning and data roles and shows each at its actual address with the distance from the user's home. Encouraging regional employers to list their AI roles there — the first vacancy is free — directly addresses the visibility gap.
+**Make local AI vacancies findable in one place.** Graduates should be able to see, in one search, the AI and data vacancies within their region, with exact locations. This is precisely what a specialist, location-first job board does: OnlyAIJobs lists only AI, machine learning and data roles and shows each at its actual address with the distance from the user's home. Encouraging regional employers to list their AI roles there - the first vacancy is free - directly addresses the visibility gap.
 
-**Support smaller employers in presenting themselves.** Many northern companies have strong technical work but weak job postings. Workshops or templates on writing clear AI vacancies — describing the problem, the data, the tools and the team — improve how they compete with Randstad employers.
+**Support smaller employers in presenting themselves.** Many northern companies have strong technical work but weak job postings. Workshops or templates on writing clear AI vacancies - describing the problem, the data, the tools and the team - improve how they compete with Randstad employers.
 
 **Broker thesis projects and internships.** Campus organisations and business associations can connect students with regional companies for graduation projects, which are the most reliable route to a first local job.
 
@@ -93,9 +93,9 @@ What influences decisions in that window:
 
 ## Why Location-First Search Helps the North
 
-General job sites rank by relevance and, often, by advertising spend. That favours large employers with recruitment budgets — mostly in the Randstad. OnlyAIJobs deliberately does not allow employers to buy higher placement, so a ten-person AI team in Groningen appears alongside a multinational. Combined with address-level location and distance from home, this changes what a graduate sees: not "AI jobs in the Netherlands," dominated by Amsterdam, but "AI jobs near me," where northern employers finally compete on equal terms.
+General job sites rank by relevance and, often, by advertising spend. That favours large employers with recruitment budgets - mostly in the Randstad. OnlyAIJobs deliberately does not allow employers to buy higher placement, so a ten-person AI team in Groningen appears alongside a multinational. Combined with address-level location and distance from home, this changes what a graduate sees: not "AI jobs in the Netherlands," dominated by Amsterdam, but "AI jobs near me," where northern employers finally compete on equal terms.
 
-Groningen is one of the cities where OnlyAIJobs already has listings. The more regional employers list their AI roles, the more useful local search becomes for graduates — a network effect that regional organisations can accelerate.
+Groningen is one of the cities where OnlyAIJobs already has listings. The more regional employers list their AI roles, the more useful local search becomes for graduates - a network effect that regional organisations can accelerate.
 
 ## A Regional Action Plan
 
@@ -110,7 +110,7 @@ Groningen is one of the cities where OnlyAIJobs already has listings. The more r
 
 ## The Housing and Quality-of-Life Argument
 
-One of the northern provinces' strongest arguments is often left unused in recruitment: quality of life. Compared with Amsterdam or Utrecht, graduates in Groningen, Friesland and Drenthe generally face less extreme housing pressure, shorter commutes and easier access to nature, while Groningen itself remains a lively city with a large young population. These are not abstract benefits; a graduate who can rent a decent flat within cycling distance of work has more disposable income and more time than a peer commuting into the Randstad. Regional organisations should translate this into concrete comparisons — typical commute times, rent levels from reliable sources, access to housing for starters — and put them next to vacancies, where decisions are made, rather than in generic regional brochures.
+One of the northern provinces' strongest arguments is often left unused in recruitment: quality of life. Compared with Amsterdam or Utrecht, graduates in Groningen, Friesland and Drenthe generally face less extreme housing pressure, shorter commutes and easier access to nature, while Groningen itself remains a lively city with a large young population. These are not abstract benefits; a graduate who can rent a decent flat within cycling distance of work has more disposable income and more time than a peer commuting into the Randstad. Regional organisations should translate this into concrete comparisons - typical commute times, rent levels from reliable sources, access to housing for starters - and put them next to vacancies, where decisions are made, rather than in generic regional brochures.
 
 ## Hybrid Work as a Retention Tool
 
@@ -118,15 +118,15 @@ Hybrid and remote work have changed the calculation. Some graduates can now keep
 
 ## Building a Northern AI Community
 
-Talent stays where there is a community. Meetups on machine learning and data engineering, joint events between the university, Hanze and companies, and informal networks for AI professionals make the region feel like a place where careers develop. Regional organisations can support these with venues, small budgets and communication, while leaving content to practitioners. A visible community also reassures employers that they can hire locally, which encourages them to create more AI roles — reinforcing the cycle.
+Talent stays where there is a community. Meetups on machine learning and data engineering, joint events between the university, Hanze and companies, and informal networks for AI professionals make the region feel like a place where careers develop. Regional organisations can support these with venues, small budgets and communication, while leaving content to practitioners. A visible community also reassures employers that they can hire locally, which encourages them to create more AI roles - reinforcing the cycle.
 
 ## What Employers Can Change Themselves
 
-Regional organisations can create conditions, but employers make the hires. Northern companies that successfully recruit AI graduates tend to do a few things consistently. They describe real problems in their vacancies — "forecasting demand for heat networks," "detecting defects in food processing" — rather than generic lists of tools. They respond quickly to applications, because graduates with multiple offers decide fast. They offer structured onboarding and mentoring, which matters more to a first-job candidate than a small salary difference. They make hybrid arrangements explicit. And they stay in contact with universities year-round, not only when a vacancy opens. Business associations can share these practices through peer learning among members, which is often more persuasive than advice from outside.
+Regional organisations can create conditions, but employers make the hires. Northern companies that successfully recruit AI graduates tend to do a few things consistently. They describe real problems in their vacancies - "forecasting demand for heat networks," "detecting defects in food processing" - rather than generic lists of tools. They respond quickly to applications, because graduates with multiple offers decide fast. They offer structured onboarding and mentoring, which matters more to a first-job candidate than a small salary difference. They make hybrid arrangements explicit. And they stay in contact with universities year-round, not only when a vacancy opens. Business associations can share these practices through peer learning among members, which is often more persuasive than advice from outside.
 
 ## Using Data to Target Retention Efforts
 
-Not all graduates are equally likely to leave, and not all employers are equally able to hire. Universities and regional bodies can combine anonymous graduate-destination data with employer surveys to identify where the biggest gaps are: which programmes lose most graduates to the Randstad, which regional employers struggle most to fill AI roles and which sectors have unfilled demand. Targeting efforts — for example thesis matchmaking in programmes with the highest outflow, or vacancy workshops for sectors with the most unfilled roles — produces more results for the same budget than broad campaigns.
+Not all graduates are equally likely to leave, and not all employers are equally able to hire. Universities and regional bodies can combine anonymous graduate-destination data with employer surveys to identify where the biggest gaps are: which programmes lose most graduates to the Randstad, which regional employers struggle most to fill AI roles and which sectors have unfilled demand. Targeting efforts - for example thesis matchmaking in programmes with the highest outflow, or vacancy workshops for sectors with the most unfilled roles - produces more results for the same budget than broad campaigns.
 
 ## Linking Retention to the Energy Transition
 
@@ -134,11 +134,11 @@ The Northern Netherlands has a distinctive story to tell: it is at the centre of
 
 ## A Word on Realistic Expectations
 
-Retention will never be complete, and it should not be. Some graduates will leave for experience elsewhere and return later with valuable skills. A healthy regional strategy aims to make staying a genuine, well-informed choice — and to keep contact with those who leave, so that returning is easy when their circumstances change.
+Retention will never be complete, and it should not be. Some graduates will leave for experience elsewhere and return later with valuable skills. A healthy regional strategy aims to make staying a genuine, well-informed choice - and to keep contact with those who leave, so that returning is easy when their circumstances change.
 
 ## Keeping Contact With Those Who Leave
 
-Alumni who moved to the Randstad or abroad are a potential return flow. Many reconsider their location when they start families, look for more space or want a shorter commute — often five to ten years after graduation, when they bring experience the region needs. Universities, municipalities and employers can keep this door open with alumni networks, occasional newsletters featuring regional AI roles and events that invite former students back. A senior machine learning engineer returning to Groningen can strengthen a local team more than several new graduates, and returners often become mentors for the next generation. Treat outflow not as a permanent loss, but as the first half of a career that may bring people back.
+Alumni who moved to the Randstad or abroad are a potential return flow. Many reconsider their location when they start families, look for more space or want a shorter commute - often five to ten years after graduation, when they bring experience the region needs. Universities, municipalities and employers can keep this door open with alumni networks, occasional newsletters featuring regional AI roles and events that invite former students back. A senior machine learning engineer returning to Groningen can strengthen a local team more than several new graduates, and returners often become mentors for the next generation. Treat outflow not as a permanent loss, but as the first half of a career that may bring people back.
 
 ## In Short
 

@@ -35,13 +35,13 @@ Content Format: Career Guide
 }
 </script>
 
-Look at the vacancies for data scientists and ML engineers in the Netherlands and a pattern emerges: a large share is posted not by banks, hospitals or manufacturers, but by consultancies, IT service providers and secondment firms. Their employees work at clients' offices or on client projects, sometimes for years. For many professionals — especially early in their careers — this is the default route into AI work. Yet the choice between a consultancy and an in-house role shapes learning, career progression, pay and daily satisfaction more than most job titles reveal. Understanding how each model works helps you choose deliberately rather than by accident.
+Look at the vacancies for data scientists and ML engineers in the Netherlands and a pattern emerges: a large share is posted not by banks, hospitals or manufacturers, but by consultancies, IT service providers and secondment firms. Their employees work at clients' offices or on client projects, sometimes for years. For many professionals - especially early in their careers - this is the default route into AI work. Yet the choice between a consultancy and an in-house role shapes learning, career progression, pay and daily satisfaction more than most job titles reveal. Understanding how each model works helps you choose deliberately rather than by accident.
 
 ## Three Models, Not Two
 
 The Dutch market has three distinct models that are often lumped together.
 
-**Project consultancy.** A consultancy delivers a defined project or advice for a client — for example, building a forecasting model, designing a data strategy or implementing a data platform. Consultants often work in teams from the consultancy, move between projects every few months and may work with several clients at once. Large firms such as **Accenture** and the Big Four, as well as specialised data and AI consultancies, work this way.
+**Project consultancy.** A consultancy delivers a defined project or advice for a client - for example, building a forecasting model, designing a data strategy or implementing a data platform. Consultants often work in teams from the consultancy, move between projects every few months and may work with several clients at once. Large firms such as **Accenture** and the Big Four, as well as specialised data and AI consultancies, work this way.
 
 **Secondment (detachering).** A secondment firm employs a professional and places them at a client organisation, usually for an extended period, where they work largely as part of the client's team. This model is particularly common in the Netherlands and is used widely in IT, engineering and data roles. IT service providers such as **Cegeka Nederland** and many smaller firms offer secondment alongside project work.
 
@@ -53,8 +53,8 @@ A fourth route, **interim or freelance work**, sits alongside these models. Firm
 
 | Aspect | Project consultancy | Secondment | In-house |
 |---|---|---|---|
-| Variety of problems | High — many clients and sectors | Medium — one client for months or years | Lower — one organisation, deeper context |
-| Ownership of results | Limited — projects are handed over | Medium — part of a client team, but not formally | High — you live with your models |
+| Variety of problems | High - many clients and sectors | Medium - one client for months or years | Lower - one organisation, deeper context |
+| Ownership of results | Limited - projects are handed over | Medium - part of a client team, but not formally | High - you live with your models |
 | Learning curve | Steep, broad | Depends on the placement | Deep, domain-specific |
 | Career structure | Clear consultancy ladder | Growth often through placements and training | Depends on organisation size |
 | Stability of work location | Varies by project | Stable during placement | Stable |
@@ -69,7 +69,7 @@ For graduates and early-career professionals, consultancy and secondment offer a
 
 **Structured training.** Consultancies invest in training, certifications and internal knowledge sharing because their people are their product.
 
-**Network.** Working at many clients builds a professional network across organisations — valuable for later career moves.
+**Network.** Working at many clients builds a professional network across organisations - valuable for later career moves.
 
 **Speed of learning.** Joining new projects repeatedly develops the ability to understand an unfamiliar organisation, data landscape and set of stakeholders quickly.
 
@@ -77,7 +77,7 @@ For graduates and early-career professionals, consultancy and secondment offer a
 
 The same model has real downsides.
 
-**Limited ownership.** Consultants often build a model or platform and hand it over before seeing how it performs over time. Lessons from maintenance, drift, adoption and failure — the hardest parts of AI in practice — may be missed.
+**Limited ownership.** Consultants often build a model or platform and hand it over before seeing how it performs over time. Lessons from maintenance, drift, adoption and failure - the hardest parts of AI in practice - may be missed.
 
 **Utilisation pressure.** Consultancies earn money when consultants are billable. Time between projects ("on the bench") may be used for training, but prolonged periods create pressure. Utilisation targets can also limit time for internal development.
 
@@ -87,7 +87,7 @@ The same model has real downsides.
 
 ## What In-House Offers
 
-In-house roles provide depth. You learn the domain, the data and the organisation thoroughly. You see a model through its entire lifecycle: from idea to production, monitoring, failure and improvement. You build long-term relationships with stakeholders and can influence strategy over years. For professionals who want to become experts in a specific domain — energy, healthcare, finance, logistics — or who want to lead data teams, in-house experience is usually essential.
+In-house roles provide depth. You learn the domain, the data and the organisation thoroughly. You see a model through its entire lifecycle: from idea to production, monitoring, failure and improvement. You build long-term relationships with stakeholders and can influence strategy over years. For professionals who want to become experts in a specific domain - energy, healthcare, finance, logistics - or who want to lead data teams, in-house experience is usually essential.
 
 The trade-offs are narrower exposure, dependence on one organisation's priorities and sometimes slower learning of new tools if the organisation's technology stack changes slowly.
 
@@ -149,7 +149,7 @@ Many professionals believe consultancy is a temporary stage before a "real" in-h
 
 ## Key Takeaways
 
-- The Dutch AI job market includes project consultancy, secondment and in-house roles, alongside interim work — each with different learning, ownership and stability.
+- The Dutch AI job market includes project consultancy, secondment and in-house roles, alongside interim work - each with different learning, ownership and stability.
 - Consultancy offers exposure, training and network; in-house roles offer depth, ownership and domain expertise.
 - Secondment arrangements, non-compete and client non-solicitation clauses, the WAB and the Pay Transparency Directive affect contracts and options.
 - The AI Act's provider and deployer roles make responsibilities in consultancy projects for high-risk AI more important.
@@ -157,14 +157,14 @@ Many professionals believe consultancy is a temporary stage before a "real" in-h
 
 ## Where to Start
 
-Decide what you want to learn in the next two years — breadth or depth — and look for roles that fit that goal, whether at a consultancy or directly at an organisation.
+Decide what you want to learn in the next two years - breadth or depth - and look for roles that fit that goal, whether at a consultancy or directly at an organisation.
 
 Browse current AI, machine learning and data jobs from consultancies and in-house employers at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: graduate choosing a first job) Is consultancy a good first job in AI?
-Often yes — it provides exposure to many sectors, structured training and a professional network, although ownership of results is more limited.
+Often yes - it provides exposure to many sectors, structured training and a professional network, although ownership of results is more limited.
 
 ### (Scenario: candidate unfamiliar with Dutch secondment) What is detachering?
 Secondment: you are employed by one firm and placed at a client organisation, often for months or years, where you work as part of the client's team.
@@ -183,9 +183,9 @@ Compare not only salary but also utilisation targets, lease car or mobility budg
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is consultancy a good first job in AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — exposure, training and network, with more limited ownership."}},
+    {"@type": "Question", "name": "Is consultancy a good first job in AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - exposure, training and network, with more limited ownership."}},
     {"@type": "Question", "name": "What is detachering?", "acceptedAnswer": {"@type": "Answer", "text": "Secondment: employed by one firm, placed at a client organisation for an extended period."}},
-    {"@type": "Question", "name": "Can I join a client directly after working there as a consultant?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly — check for a client non-solicitation clause."}},
+    {"@type": "Question", "name": "Can I join a client directly after working there as a consultant?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly - check for a client non-solicitation clause."}},
     {"@type": "Question", "name": "Why do in-house employers value in-house experience?", "acceptedAnswer": {"@type": "Answer", "text": "It shows long-term model ownership and domain depth."}},
     {"@type": "Question", "name": "How do I compare a consultancy offer with an in-house offer?", "acceptedAnswer": {"@type": "Answer", "text": "Compare salary, utilisation targets, benefits, training, clauses and actual work content."}}
   ]

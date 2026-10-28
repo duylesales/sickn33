@@ -35,13 +35,13 @@ Content Format: Career Guide
 }
 </script>
 
-Two Dutch employers offer you the same monthly gross salary. One package is worth roughly a fifth more than the other over a year. This is not unusual — it is the normal state of affairs in a country where compensation is assembled from components that vary enormously between sectors, and where candidates from abroad, and plenty of Dutch candidates too, compare only the headline number.
+Two Dutch employers offer you the same monthly gross salary. One package is worth roughly a fifth more than the other over a year. This is not unusual - it is the normal state of affairs in a country where compensation is assembled from components that vary enormously between sectors, and where candidates from abroad, and plenty of Dutch candidates too, compare only the headline number.
 
 This article is general information, not tax or legal advice, and specific amounts and thresholds change annually.
 
 ## The Components That Make Up a Dutch Package
 
-**Monthly gross salary.** The headline figure, usually quoted per month rather than per year — a convention that confuses international candidates immediately.
+**Monthly gross salary.** The headline figure, usually quoted per month rather than per year - a convention that confuses international candidates immediately.
 
 **Holiday allowance.** Dutch employees typically receive a holiday allowance of around eight per cent of annual salary, commonly paid out in May. It is usually additional to the twelve monthly salaries, but always confirm whether a quoted annual figure includes it.
 
@@ -49,7 +49,7 @@ This article is general information, not tax or legal advice, and specific amoun
 
 **Pension.** Employer contributions to an occupational pension scheme are a substantial part of Dutch compensation, and they vary widely. Some employers contribute a large share with a modest employee contribution; others offer a minimal scheme. Over a career the difference is significant, and it is invisible on a payslip comparison.
 
-**Leave.** Statutory minimum holiday is four times your weekly working hours in days — twenty days for a full-time week — but most employers offer more, and some sectors add extra days. Check both the number and whether additional days can be bought or sold.
+**Leave.** Statutory minimum holiday is four times your weekly working hours in days - twenty days for a full-time week - but most employers offer more, and some sectors add extra days. Check both the number and whether additional days can be bought or sold.
 
 **Mobility.** A travel allowance, a public transport card, a mobility budget or a lease car. A company car adds a percentage of the list price to your taxable income, which means a lease car is not free money and its value depends heavily on your own circumstances.
 
@@ -81,7 +81,7 @@ Before comparing offers, convert everything to an annual employer cost and an an
 
 Take twelve monthly salaries, add holiday allowance, add any thirteenth month, add the employer pension contribution, and add the annual value of mobility, home working allowance and training. Subtract any employee pension contribution to see the effect on take-home pay.
 
-Then check the working week. A thirty-six hour full-time week is common in some Dutch sectors and forty in others. A salary that looks ten per cent lower may represent the same hourly rate — and if you value time, the shorter week may be worth more than the difference.
+Then check the working week. A thirty-six hour full-time week is common in some Dutch sectors and forty in others. A salary that looks ten per cent lower may represent the same hourly rate - and if you value time, the shorter week may be worth more than the difference.
 
 Finally, look at leave. Thirty-two days against twenty-five days is more than a month of extra life per year, which most people would not trade for a small salary difference if the comparison were made explicitly.
 
@@ -91,7 +91,7 @@ An engineer receives two offers. A scale-up offers €6,000 per month with twent
 
 Annualised, the second package is worth more in cash terms once the year-end payment and pension contribution are counted, and it delivers those earnings over roughly ten per cent fewer hours with a week more holiday.
 
-The scale-up may still be the right choice — for the work, the learning or the equity — but it should be chosen with the trade-off visible. Candidates who do this arithmetic once tend to negotiate very differently afterwards.
+The scale-up may still be the right choice - for the work, the learning or the equity - but it should be chosen with the trade-off visible. Candidates who do this arithmetic once tend to negotiate very differently afterwards.
 
 ## What Is Actually Negotiable
 
@@ -133,7 +133,7 @@ Dutch occupational pensions are built on employer and employee contributions int
 
 **The scheme type.** Following the reform of the Dutch pension system, schemes have been moving towards individual accumulation of pension capital rather than guaranteed benefit promises. That changes who carries investment risk and makes the contribution level even more important to compare.
 
-There is also a portability question. If you move employers frequently — common in this field — you accumulate entitlements in several schemes. Value transfer between schemes is possible and is not automatically advantageous. It is worth understanding once, early, rather than at retirement.
+There is also a portability question. If you move employers frequently - common in this field - you accumulate entitlements in several schemes. Value transfer between schemes is possible and is not automatically advantageous. It is worth understanding once, early, rather than at retirement.
 
 A rough rule for comparison: treat the employer's pension contribution as part of your salary, because economically it is.
 
@@ -149,7 +149,7 @@ Dutch employment carries entitlements that rarely surface in a salary negotiatio
 
 **Working time flexibility.** Employees have a legal route to request changes in hours and, subject to conditions, to work part-time or adjust their schedule. Four-day weeks are normal in the Netherlands in a way they are not in most countries, and this genuinely shapes how people build their careers.
 
-Together these make the Dutch employment relationship more secure and more flexible than most, which is a real part of compensation — and something international candidates consistently underweight when comparing offers on salary alone.
+Together these make the Dutch employment relationship more secure and more flexible than most, which is a real part of compensation - and something international candidates consistently underweight when comparing offers on salary alone.
 
 ## Key Takeaways
 
@@ -171,7 +171,7 @@ Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](h
 Headline gross salaries are below US levels, but pension accrual, extended sick pay, job protection and public services form a substantial part of total compensation.
 
 ### (Scenario: candidate receiving an offer) Does the quoted salary include holiday allowance?
-Sometimes — always ask explicitly, since an annual figure including holiday allowance is roughly eight per cent higher than one excluding it.
+Sometimes - always ask explicitly, since an annual figure including holiday allowance is roughly eight per cent higher than one excluding it.
 
 ### (Scenario: candidate comparing two offers) What is most often overlooked?
 The employer pension contribution, the presence or absence of a thirteenth month, and the number of contractual hours per week.
@@ -188,7 +188,7 @@ It depends on your driving pattern: a percentage of the list price is added to y
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Are Dutch AI salaries low compared with other countries?", "acceptedAnswer": {"@type": "Answer", "text": "Headline gross pay is below US levels, but pension, extended sick pay, job protection and public services form part of total compensation."}},
-    {"@type": "Question", "name": "Does a quoted Dutch salary include holiday allowance?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes — ask explicitly, since including it raises an annual figure by roughly eight per cent."}},
+    {"@type": "Question", "name": "Does a quoted Dutch salary include holiday allowance?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes - ask explicitly, since including it raises an annual figure by roughly eight per cent."}},
     {"@type": "Question", "name": "What do candidates most often overlook when comparing offers?", "acceptedAnswer": {"@type": "Answer", "text": "Employer pension contributions, whether a thirteenth month is paid, and the contractual working week."}},
     {"@type": "Question", "name": "Can I negotiate salary in a scale-based organisation?", "acceptedAnswer": {"@type": "Answer", "text": "Usually only the step within the scale, plus start date, training budget and sometimes relocation support."}},
     {"@type": "Question", "name": "Is a Dutch company car worth taking?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your driving pattern, because a percentage of the list price is added to your taxable income."}}

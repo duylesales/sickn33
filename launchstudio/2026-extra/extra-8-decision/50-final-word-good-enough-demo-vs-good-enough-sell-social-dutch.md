@@ -1,4 +1,4 @@
-😳 Ze had geen idee of ze een datalek zou ontdekken via haar eigen dashboard — of via een boze telefoontje van een klant. En ze had al een wachtlijst van 12 winkels klaar om te betalen.
+😳 Ze had geen idee of ze een datalek zou ontdekken via haar eigen dashboard - of via een boze telefoontje van een klant. En ze had al een wachtlijst van 12 winkels klaar om te betalen.
 
 Elk AI-prototype passeert een onzichtbare drempel: van "goed genoeg om te demonstreren" naar "goed genoeg om te verkopen." Niemand belt om het te melden. 🧠
 
@@ -14,7 +14,7 @@ Elk AI-prototype passeert een onzichtbare drempel: van "goed genoeg om te demons
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, hardenen we exact de laag die het verschil maakt tussen demo en verkoop. 🛡️
 
-Bibi's resultaat: per-account dataafscherming en toegangslogging live in 8 werkdagen voor €1.700 — voordat ze ook maar één winkel op de wachtlijst toeliet. 🚀
+Bibi's resultaat: per-account dataafscherming en toegangslogging live in 8 werkdagen voor €1.700 - voordat ze ook maar één winkel op de wachtlijst toeliet. 🚀
 
 👉 Ontdek aan welke kant van de drempel uw product staat: https://launchstudio.eu/nl/blog/final-word-good-enough-demo-vs-good-enough-sell
 

@@ -2,7 +2,7 @@
 
 A marketing team buys a drag-and-drop **mobile app creator software** to build a claim photo app. Six months later, the CISO audits it and fails the company instantly.
 
-Why? Because the drag-and-drop platform stores all photos in a generic US database, violating GDPR data sovereignty laws. Worse, it's a "Black Box"—the CISO has no access to the deep database logs required to pass a SOC2 audit.
+Why? Because the drag-and-drop platform stores all photos in a generic US database, violating GDPR data sovereignty laws. Worse, it's a "Black Box" - the CISO has no access to the deep database logs required to pass a SOC2 audit.
 
 Enterprise compliance is not a checkbox; it is a mathematical proof derived from your architecture. 
 

@@ -20,7 +20,7 @@ Doelgroep: SaaS Scale-Up
 }
 </script>
 
-Van alle compliancedocumenten waar een klein product om wordt gevraagd, heeft het register van verwerkingsactiviteiten de beste verhouding tussen moeite en nut — en het is degene die bijna niemand heeft.
+Van alle compliancedocumenten waar een klein product om wordt gevraagd, heeft het register van verwerkingsactiviteiten de beste verhouding tussen moeite en nut - en het is degene die bijna niemand heeft.
 
 Het is een document dat opsomt welke persoonsgegevens u verwerkt, waarom, op welke grondslag, wie ze verder ziet, waar ze naartoe gaan, en hoe lang u ze bewaart. Twee pagina's voor een typisch product. En zodra het bestaat, beantwoordt het het merendeel van de vragen in de privacybeoordeling van een klant, levert het de bijlage bij elke verwerkersovereenkomst die u tekent, en vormt het de basis van uw privacyverklaring.
 
@@ -32,9 +32,9 @@ Per verwerkingsactiviteit zeven dingen.
 
 **De activiteit**, benoemd zoals uw bedrijf haar zou beschrijven: beheer van klantaccounts, afspraakplanning, facturatie, support, productanalytics.
 
-**Categorieën betrokkenen.** Wiens data — de medewerkers van uw klanten, hun cliënten, uw eigen gebruikers, websitebezoekers.
+**Categorieën betrokkenen.** Wiens data - de medewerkers van uw klanten, hun cliënten, uw eigen gebruikers, websitebezoekers.
 
-**Categorieën persoonsgegevens.** Namen, contactgegevens, afspraaktijden, notities, betaalreferenties. Markeer alles wat in een bijzondere categorie valt — gezondheid, biometrie, alles over iemands omstandigheden — omdat daar strengere regels voor gelden.
+**Categorieën persoonsgegevens.** Namen, contactgegevens, afspraaktijden, notities, betaalreferenties. Markeer alles wat in een bijzondere categorie valt - gezondheid, biometrie, alles over iemands omstandigheden - omdat daar strengere regels voor gelden.
 
 **Doel**, in één zin.
 
@@ -42,7 +42,7 @@ Per verwerkingsactiviteit zeven dingen.
 
 **Ontvangers.** Elke subverwerker die deze data ontvangt, met naam, en wat hij ontvangt.
 
-**Bewaartermijn.** Hoe lang, en wat er daarna gebeurt — verwijderd, of geanonimiseerd.
+**Bewaartermijn.** Hoe lang, en wat er daarna gebeurt - verwijderd, of geanonimiseerd.
 
 Voeg doorgiften buiten de EER toe met hun grondslag, en een regel over beveiligingsmaatregelen. Dat is het document.
 
@@ -52,11 +52,11 @@ De verleiding is een spreadsheet te downloaden en in te vullen. Het resultaat is
 
 De betrouwbare methode kost een ochtend en is mechanisch.
 
-Open uw database en maak een lijst van elke tabel met iets over een persoon. Noteer per tabel wat de kolommen werkelijk bevatten — inclusief vrije-tekstvelden, die bevatten wat gebruikers typten en meestal het gevoeligste zijn wat u hebt.
+Open uw database en maak een lijst van elke tabel met iets over een persoon. Noteer per tabel wat de kolommen werkelijk bevatten - inclusief vrije-tekstvelden, die bevatten wat gebruikers typten en meestal het gevoeligste zijn wat u hebt.
 
 Maak daarna een lijst van elke externe dienst waar data naartoe stroomt. Betaalprovider, e-mailprovider, error tracking, analytics, opslag, model-API's, supporttools. Controleer wat elk werkelijk ontvangt in plaats van wat u aanneemt: error tracking die volledige verzoeken vastlegt, is de klassieke ontdekking.
 
-Maak daarna een lijst van elke export en integratie — rapporten, CSV-downloads, webhooks naar systemen van klanten, alles wat data ergens naartoe stuurt.
+Maak daarna een lijst van elke export en integratie - rapporten, CSV-downloads, webhooks naar systemen van klanten, alles wat data ergens naartoe stuurt.
 
 Groepeer die bevindingen in activiteiten en schrijf per activiteit de zeven velden. Het werk is de inventarisatie; het document is het makkelijke deel.
 
@@ -88,7 +88,7 @@ Een veld "notities" bij een klantrecord verzamelt wat degene die typt moest onth
 
 Dat doet ertoe voor het register, omdat de categorie data die u hebt wordt bepaald door wat erin staat, niet door waar het voor bedoeld was. Een product dat anders gewone contactgegevens zou verwerken, kan in één kolom in feite bijzondere persoonsgegevens verwerken.
 
-Drie praktische reacties. Neem een steekproef van het veld — lees vijftig rijen, met de nodige zorg en toegangscontroles, en zoek uit wat er werkelijk in staat. Beschrijf het eerlijk in het register, op basis van de steekproef in plaats van de bedoeling. En verminder de druk die het vult: blijven behandelaars klinische notities in een vak voor praktische opmerkingen zetten, geef ze dan een echt veld met passende behandeling, of zeg duidelijk in de interface waar het vak niet voor is.
+Drie praktische reacties. Neem een steekproef van het veld - lees vijftig rijen, met de nodige zorg en toegangscontroles, en zoek uit wat er werkelijk in staat. Beschrijf het eerlijk in het register, op basis van de steekproef in plaats van de bedoeling. En verminder de druk die het vult: blijven behandelaars klinische notities in een vak voor praktische opmerkingen zetten, geef ze dan een echt veld met passende behandeling, of zeg duidelijk in de interface waar het vak niet voor is.
 
 De onbehulpzame reactie is aan te nemen dat het bedoelde doel het werkelijke is, en zo eindigt een product met een categorie data die zijn eigen documentatie niet noemt.
 
@@ -104,7 +104,7 @@ De reden om het register als fundament te behandelen in plaats van als nog een p
 
 **De antwoorden op een privacyvragenlijst** zijn het register, herschikt in de volgorde waarin de klant vroeg.
 
-De volgorde die herhaald werk voorkomt, is dus eerst het register bouwen en de rest ervan afleiden, in plaats van vier documenten apart te schrijven en te ontdekken dat ze elkaar tegenspreken — wat de gebruikelijke stand van zaken is, en precies waar een zorgvuldige beoordelaar naar zoekt.
+De volgorde die herhaald werk voorkomt, is dus eerst het register bouwen en de rest ervan afleiden, in plaats van vier documenten apart te schrijven en te ontdekken dat ze elkaar tegenspreken - wat de gebruikelijke stand van zaken is, en precies waar een zorgvuldige beoordelaar naar zoekt.
 
 Het verandert onderhoud ook van vier taken in één. Verandert een subverwerker, dan wordt het register bijgewerkt en worden de andere drie ervan opnieuw afgeleid. Wanneer een oprichter ons vertelt dat hij compliancedocumentatie heeft maar niet meer weet welke versie van wat actueel is, is dit steevast het ontbrekende stuk.
 
@@ -112,11 +112,11 @@ Het verandert onderhoud ook van vier taken in één. Verandert een subverwerker,
 
 Twee bevindingen betekenen, als ze verschijnen, dat de oefening een oprichter die alleen werkt is ontgroeid, en ze herkennen is deel van de waarde.
 
-**Bijzondere persoonsgegevens op elke schaal.** Gezondheid, biometrie, etniciteit, politieke of religieuze informatie, vakbondslidmaatschap, of iets over iemands seksleven of geaardheid. De regels zijn strenger, de grondslagen smaller, en een fout heeft gevolgen. Een product dat ontdekt dat het dit bevat — vaak via vrije-tekstvelden, zoals hierboven — moet advies vragen in plaats van zelf tot een standpunt te redeneren.
+**Bijzondere persoonsgegevens op elke schaal.** Gezondheid, biometrie, etniciteit, politieke of religieuze informatie, vakbondslidmaatschap, of iets over iemands seksleven of geaardheid. De regels zijn strenger, de grondslagen smaller, en een fout heeft gevolgen. Een product dat ontdekt dat het dit bevat - vaak via vrije-tekstvelden, zoals hierboven - moet advies vragen in plaats van zelf tot een standpunt te redeneren.
 
 **Verwerking die systematisch en grootschalig is, of die mensen beoordeelt.** Monitoring, profilering, scoring, geautomatiseerde beslissingen met een echt gevolg voor iemand. Dit is het terrein waar een gegevensbeschermingseffectbeoordeling vereist is, en waar de vragen van de AI Act naast de privacyvragen binnenkomen.
 
-Geen van beide betekent een groot project. Beide betekenen een gesprek met iemand die daarvoor gekwalificeerd is, met het register dat u net hebt gebouwd als invoer — en daarom is het de moeite waard het eerst te bouwen. Een adviseur die een ingevuld register krijgt, kan in een uur een nuttig antwoord geven; een adviseur die een vage productbeschrijving krijgt, besteedt dat uur aan vragen die u zelf had kunnen beantwoorden.
+Geen van beide betekent een groot project. Beide betekenen een gesprek met iemand die daarvoor gekwalificeerd is, met het register dat u net hebt gebouwd als invoer - en daarom is het de moeite waard het eerst te bouwen. Een adviseur die een ingevuld register krijgt, kan in een uur een nuttig antwoord geven; een adviseur die een vage productbeschrijving krijgt, besteedt dat uur aan vragen die u zelf had kunnen beantwoorden.
 
 Voor alles buiten die twee bevindingen kan een klein product dit werk redelijkerwijs zelf doen, het jaarlijks herzien, en in een betere positie zitten dan de meeste concurrenten.
 
@@ -124,7 +124,7 @@ Voor alles buiten die twee bevindingen kan een klein product dit werk redelijker
 
 Voor een bestaand product kost dit doorgaans een halve tot een hele dag: elke tabel en elk vrije-tekstveld met persoonsgegevens geïnventariseerd, elke externe dienst gecontroleerd op wat ze werkelijk ontvangt, exports en integraties opgesomd, bevindingen gegroepeerd in activiteiten met de zeven velden ingevuld, bijzondere categorieën gemarkeerd, doorgiften buiten de EER geïdentificeerd met hun grondslag, bewaartermijn per activiteit besloten en vervolgens geïmplementeerd in plaats van alleen opgeschreven, onnodige velden verwijderd, en het register gecommit in de repository met een notitie om het bij te werken wanneer datastromen veranderen.
 
-LaunchStudio maakt dit als onderdeel van het klaarmaken van een product voor zakelijke klanten, en het doet tegelijk dienst als verwerkingsbijlage en als basis voor een juiste privacyverklaring. Achter het werk staat Manifera — elf jaar, klanten als Vodafone, TNO en CFLW, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio maakt dit als onderdeel van het klaarmaken van een product voor zakelijke klanten, en het doet tegelijk dienst als verwerkingsbijlage en als basis voor een juiste privacyverklaring. Achter het werk staat Manifera - elf jaar, klanten als Vodafone, TNO en CFLW, vanaf de Herengracht 420 in Amsterdam.
 
 [Vraag ons uw register te bouwen vanuit uw schema](https://launchstudio.eu/nl/#contact). De bevindingen zijn meestal interessanter dan het document.
 
@@ -136,20 +136,20 @@ Jorinde Talsma bouwde Kliniekplanner in Lovable: afspraakplanning en patiëntcom
 
 De eigen auditor van een kliniek vroeg om haar register. Ze had er geen, en het bouwen ervan kostte een ochtend en leverde drie bevindingen op die ze niet had verwacht.
 
-De eerste: een vrij tekstveld "notities" bij afspraken, bedoeld voor praktische opmerkingen zoals parkeerinstructies, bevatte in een flink deel van de records klinische informatie — behandelaars hadden het gebruikt voor wat handig was. Dat maakte het gezondheidsgegevens, een bijzondere categorie, met strengere eisen dan wat dan ook in haar product.
+De eerste: een vrij tekstveld "notities" bij afspraken, bedoeld voor praktische opmerkingen zoals parkeerinstructies, bevatte in een flink deel van de records klinische informatie - behandelaars hadden het gebruikt voor wat handig was. Dat maakte het gezondheidsgegevens, een bijzondere categorie, met strengere eisen dan wat dan ook in haar product.
 
 De tweede: error tracking legde volledige verzoeken vast, wat betekende dat namen van patiënten, de reden van de afspraak en diezelfde notities werden verstuurd naar een dienst buiten de EU, zonder verwerkersovereenkomst en zonder opschoning.
 
 De derde: een analyticsdienst die ze elf maanden eerder twee weken had uitgeprobeerd, ontving nog steeds paginagebeurtenissen, inclusief URL's met patiëntidentificaties.
 
-Vier werkdagen: het register gebouwd vanuit het schema, met negen verwerkingsactiviteiten; het notitieveld erkend als mogelijk klinisch, met beperkte toegang, een waarschuwing voor behandelaars, en het veld onder de strengere behandeling gebracht die bijzondere persoonsgegevens vereisen; error tracking vervangen door een in de EU gehoste provider en ingesteld om verzoekinhoud volledig op te schonen; de verlaten analyticsdienst verwijderd en de bewaarde data op verzoek gewist; URL's aangepast zodat ze geen patiëntidentificaties meer bevatten; bewaartermijnen per activiteit — afspraken bewaard volgens instructie van de kliniek, communicatielogs 24 maanden, technische logs 30 dagen — geïmplementeerd met een geplande taak in plaats van alleen gedocumenteerd; twee ongebruikte velden verwijderd uit het patiëntrecord; het register gecommit in de repository; en dezelfde inhoud hergebruikt als verwerkingsbijlage en om de privacyverklaring te herschrijven.
+Vier werkdagen: het register gebouwd vanuit het schema, met negen verwerkingsactiviteiten; het notitieveld erkend als mogelijk klinisch, met beperkte toegang, een waarschuwing voor behandelaars, en het veld onder de strengere behandeling gebracht die bijzondere persoonsgegevens vereisen; error tracking vervangen door een in de EU gehoste provider en ingesteld om verzoekinhoud volledig op te schonen; de verlaten analyticsdienst verwijderd en de bewaarde data op verzoek gewist; URL's aangepast zodat ze geen patiëntidentificaties meer bevatten; bewaartermijnen per activiteit - afspraken bewaard volgens instructie van de kliniek, communicatielogs 24 maanden, technische logs 30 dagen - geïmplementeerd met een geplande taak in plaats van alleen gedocumenteerd; twee ongebruikte velden verwijderd uit het patiëntrecord; het register gecommit in de repository; en dezelfde inhoud hergebruikt als verwerkingsbijlage en om de privacyverklaring te herschrijven.
 
-**Resultaat:** de vragen van de auditor werden beantwoord vanuit het register. Jorinde noemt het analyticslek van elf maanden de bevinding die de oefening rechtvaardigde — niets in haar product verwees naar die dienst, niemand had er sindsdien aan gedacht, en hij had al die tijd patiëntidentificaties ontvangen.
+**Resultaat:** de vragen van de auditor werden beantwoord vanuit het register. Jorinde noemt het analyticslek van elf maanden de bevinding die de oefening rechtvaardigde - niets in haar product verwees naar die dienst, niemand had er sindsdien aan gedacht, en hij had al die tijd patiëntidentificaties ontvangen.
 
 > *"Ik verwachtte een ochtend aan een document te besteden. Ik besteedde een ochtend aan ontdekken dat een tool die ik vorig jaar niet meer gebruikte, sindsdien elke dag patiëntgegevens had verzameld."*
-> — **Jorinde Talsma, Oprichter, Kliniekplanner (Leeuwarden)**
+> - **Jorinde Talsma, Oprichter, Kliniekplanner (Leeuwarden)**
 
-**Kosten & Doorlooptijd:** €2.900 (inventarisatie van schema en datastromen, register over negen activiteiten, behandeling van bijzondere persoonsgegevens voor klinische notities, migratie van error tracking met opschoning, verwijderen van verlaten dienst en wissen van data, identificaties uit URL's verwijderd, implementatie van bewaartermijnen, minimalisatie van velden, afleiden van verklaring en bijlage) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €2.900 (inventarisatie van schema en datastromen, register over negen activiteiten, behandeling van bijzondere persoonsgegevens voor klinische notities, migratie van error tracking met opschoning, verwijderen van verlaten dienst en wissen van data, identificaties uit URL's verwijderd, implementatie van bewaartermijnen, minimalisatie van velden, afleiden van verklaring en bijlage) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -163,11 +163,11 @@ Per activiteit: de naam van de activiteit, categorieën betrokkenen en gegevens,
 
 ### Hoe bouw ik er nauwkeurig een?
 
-Vanuit uw database en uw uitgaande datastromen in plaats van vanuit een sjabloon — elke tabel met persoonsgegevens, elke externe dienst en wat die werkelijk ontvangt, elke export en integratie.
+Vanuit uw database en uw uitgaande datastromen in plaats van vanuit een sjabloon - elke tabel met persoonsgegevens, elke externe dienst en wat die werkelijk ontvangt, elke export en integratie.
 
 ### Wat levert de oefening meestal op?
 
-Velden die niemand gebruikt, nergens een besluit over bewaartermijnen, en meer subverwerkers dan herinnerd — vaak inclusief een dienst die één keer werd uitgeprobeerd en nog steeds data ontvangt.
+Velden die niemand gebruikt, nergens een besluit over bewaartermijnen, en meer subverwerkers dan herinnerd - vaak inclusief een dienst die één keer werd uitgeprobeerd en nog steeds data ontvangt.
 
 ### Waar moet het staan?
 
@@ -183,7 +183,7 @@ In uw repository als platte tekst, met een versiegeschiedenis samen met de code 
       "name": "Heeft een klein bedrijf een verwerkingsregister nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In de praktijk ja — er wordt in zakelijke privacybeoordelingen om gevraagd, het levert de bijlage bij de verwerkersovereenkomst, en het kost ongeveer een halve dag om te maken."
+        "text": "In de praktijk ja - er wordt in zakelijke privacybeoordelingen om gevraagd, het levert de bijlage bij de verwerkersovereenkomst, en het kost ongeveer een halve dag om te maken."
       }
     },
     {
@@ -199,7 +199,7 @@ In uw repository als platte tekst, met een versiegeschiedenis samen met de code 
       "name": "Hoe moet het register worden gebouwd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vanuit de database en uitgaande datastromen — elke tabel met persoonsgegevens, elke externe dienst en wat die werkelijk ontvangt, elke export."
+        "text": "Vanuit de database en uitgaande datastromen - elke tabel met persoonsgegevens, elke externe dienst en wat die werkelijk ontvangt, elke export."
       }
     },
     {
@@ -207,7 +207,7 @@ In uw repository als platte tekst, met een versiegeschiedenis samen met de code 
       "name": "Wat levert het bouwen van een register meestal op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ongebruikte velden, geen besluiten over bewaartermijnen, en meer subverwerkers dan herinnerd — vaak inclusief een verlaten dienst die nog steeds data ontvangt."
+        "text": "Ongebruikte velden, geen besluiten over bewaartermijnen, en meer subverwerkers dan herinnerd - vaak inclusief een verlaten dienst die nog steeds data ontvangt."
       }
     },
     {

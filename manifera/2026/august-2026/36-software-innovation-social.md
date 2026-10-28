@@ -14,7 +14,7 @@ Three constraints that produce superior architecture:
 
 2️⃣ **Limited team size** → forces ownership. In a 5-person pod, the backend engineer OWNS the auth module. When it breaks, they know. They fix it in hours, not weeks.
 
-3️⃣ **Limited time** → forces ruthless prioritization. "If our product could only do one thing, what would it be?" This question — which unlimited time lets you avoid — is the foundation of every successful product.
+3️⃣ **Limited time** → forces ruthless prioritization. "If our product could only do one thing, what would it be?" This question - which unlimited time lets you avoid - is the foundation of every successful product.
 
 Beware the opposite: **Innovation Theater.** Deploying AI because the board mentioned AI. Migrating to Kubernetes because competitors mentioned Kubernetes. Technology adoption is not business innovation.
 

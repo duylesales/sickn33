@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The most capable large language models are trained predominantly on English text. Dutch is spoken by around twenty-five million people in the Netherlands, Flanders and Suriname — a significant language, but a small fraction of the text on the internet. Meanwhile, Dutch municipalities write letters in Dutch, courts publish rulings in Dutch, insurers handle claims in Dutch and citizens call customer service in Dutch. That gap between what models are best at and what organisations actually need creates a specialist job market for people who can make language technology work well in Dutch.
+The most capable large language models are trained predominantly on English text. Dutch is spoken by around twenty-five million people in the Netherlands, Flanders and Suriname - a significant language, but a small fraction of the text on the internet. Meanwhile, Dutch municipalities write letters in Dutch, courts publish rulings in Dutch, insurers handle claims in Dutch and citizens call customer service in Dutch. That gap between what models are best at and what organisations actually need creates a specialist job market for people who can make language technology work well in Dutch.
 
 ## Why Dutch Is a Distinct Technical Challenge
 
@@ -49,7 +49,7 @@ Modern multilingual models handle Dutch reasonably well for many tasks. But "rea
 
 **Regional variation.** Dutch in the Netherlands and Flemish Dutch in Belgium differ in vocabulary and usage, and organisations operating in both markets must handle both.
 
-**Evaluation.** Most benchmarks for language models are English. Evaluating whether a system works well for Dutch — especially in a specific domain — usually requires building Dutch test sets.
+**Evaluation.** Most benchmarks for language models are English. Evaluating whether a system works well for Dutch - especially in a specific domain - usually requires building Dutch test sets.
 
 ## The Dutch NLP Ecosystem: Named Organisations and Initiatives
 
@@ -57,7 +57,7 @@ Modern multilingual models handle Dutch reasonably well for many tasks. But "rea
 
 **SURF.** The collaborative ICT organisation for Dutch education and research operates national computing infrastructure, including the Snellius supercomputer, which researchers use for training and evaluating models.
 
-**Dutch Language Institute (Instituut voor de Nederlandse Taal).** Based in Leiden, the institute maintains dictionaries, corpora and language data for Dutch — resources that are valuable for building and evaluating language technology.
+**Dutch Language Institute (Instituut voor de Nederlandse Taal).** Based in Leiden, the institute maintains dictionaries, corpora and language data for Dutch - resources that are valuable for building and evaluating language technology.
 
 **Dutch Language Union (Taalunie).** The intergovernmental organisation of the Netherlands, Flanders and Suriname supports Dutch language policy, including attention to language technology and digital availability of Dutch.
 
@@ -76,7 +76,7 @@ Modern multilingual models handle Dutch reasonably well for many tasks. But "rea
 | Customer service platforms | Chatbots, email routing, sentiment analysis in Dutch | Conversational designer, NLP engineer |
 | Research institutes | Language resources, model development, evaluation | Researcher, research engineer, computational linguist |
 
-Many of these roles never mention "NLP" in the title. Search terms such as "tekstanalyse", "taaltechnologie", "chatbot", "document AI" and "kennisbank" often reveal relevant vacancies — including those written in Dutch, which many international candidates overlook.
+Many of these roles never mention "NLP" in the title. Search terms such as "tekstanalyse", "taaltechnologie", "chatbot", "document AI" and "kennisbank" often reveal relevant vacancies - including those written in Dutch, which many international candidates overlook.
 
 ## Retrieval-Augmented Generation in Dutch Organisations
 
@@ -88,7 +88,7 @@ The challenges are rarely about the language model alone. Dutch search quality d
 
 **EU Artificial Intelligence Act.** The act includes transparency obligations for systems that interact with people, such as chatbots, and for AI-generated content. General-purpose AI model providers have separate obligations. AI used in certain public services or decisions affecting access to benefits can be high-risk.
 
-**GDPR.** Text data is often full of personal data: names, addresses, medical details, financial situations. Anonymisation, pseudonymisation, data minimisation and careful choices about where data is processed are central — including whether text may be sent to external model providers.
+**GDPR.** Text data is often full of personal data: names, addresses, medical details, financial situations. Anonymisation, pseudonymisation, data minimisation and careful choices about where data is processed are central - including whether text may be sent to external model providers.
 
 **Dutch government-wide vision on generative AI.** The Dutch government has published a vision on generative AI that emphasises public values, transparency and responsible use, and government organisations apply additional internal policies on the use of generative AI tools.
 
@@ -116,15 +116,15 @@ For candidates, neither environment is inherently better. Public roles suit peop
 
 A municipality receives thousands of emails per month on topics ranging from waste collection to social support. Emails are manually forwarded to the right department, causing delays. A team builds a classifier that suggests the right department for each Dutch email.
 
-The first version performs well on common topics but struggles with emails that combine several issues, messages written in informal or non-standard Dutch, and emails from residents with limited language proficiency. The team realises that the residents most dependent on quick help are the ones most likely to be misclassified. They adjust the approach: uncertain or multi-topic emails go to a human coordinator, test sets are expanded with difficult real examples, and performance is monitored separately for different types of messages. The result is slower automation but fairer service — a trade-off typical for public sector NLP.
+The first version performs well on common topics but struggles with emails that combine several issues, messages written in informal or non-standard Dutch, and emails from residents with limited language proficiency. The team realises that the residents most dependent on quick help are the ones most likely to be misclassified. They adjust the approach: uncertain or multi-topic emails go to a human coordinator, test sets are expanded with difficult real examples, and performance is monitored separately for different types of messages. The result is slower automation but fairer service - a trade-off typical for public sector NLP.
 
 ## A Common Misconception About Dutch NLP Work
 
-Many candidates assume that the arrival of powerful multilingual models has made Dutch-specific NLP expertise unnecessary. The opposite has happened: because organisations now deploy language models widely, demand has increased for people who can evaluate, adapt and control them in Dutch contexts. The work has shifted from building models from scratch towards retrieval, evaluation, fine-tuning, prompt and system design, and governance — but Dutch language understanding remains a genuine advantage.
+Many candidates assume that the arrival of powerful multilingual models has made Dutch-specific NLP expertise unnecessary. The opposite has happened: because organisations now deploy language models widely, demand has increased for people who can evaluate, adapt and control them in Dutch contexts. The work has shifted from building models from scratch towards retrieval, evaluation, fine-tuning, prompt and system design, and governance - but Dutch language understanding remains a genuine advantage.
 
 ## Do You Need to Speak Dutch?
 
-For many Dutch NLP roles, yes — at least at a good reading level. Evaluating whether a model's Dutch output is correct, natural and appropriate for the audience is difficult without language proficiency. That said, some engineering-focused roles, such as building infrastructure for model serving or retrieval pipelines, can be done in English-speaking teams, with Dutch speakers responsible for evaluation. International candidates who invest in learning Dutch significantly increase their options in this niche.
+For many Dutch NLP roles, yes - at least at a good reading level. Evaluating whether a model's Dutch output is correct, natural and appropriate for the audience is difficult without language proficiency. That said, some engineering-focused roles, such as building infrastructure for model serving or retrieval pipelines, can be done in English-speaking teams, with Dutch speakers responsible for evaluation. International candidates who invest in learning Dutch significantly increase their options in this niche.
 
 ## How to Build Credible Experience
 
@@ -132,7 +132,7 @@ For many Dutch NLP roles, yes — at least at a good reading level. Evaluating w
 - **Work on Dutch retrieval quality**, testing how compound words and synonyms affect search performance.
 - **Contribute to open Dutch language resources** or evaluation benchmarks.
 - **Demonstrate privacy-aware processing** of Dutch text, such as de-identification.
-- **Show domain understanding** in one field — legal, medical, government or financial Dutch.
+- **Show domain understanding** in one field - legal, medical, government or financial Dutch.
 
 ## Questions Worth Asking in an Interview
 
@@ -146,7 +146,7 @@ For many Dutch NLP roles, yes — at least at a good reading level. Evaluating w
 
 - Dutch-language organisations need NLP that works in legal, medical, government and financial Dutch, creating a specialist market.
 - GPT-NL (TNO, SURF, NFI), the Dutch Language Institute, the Taalunie, SURF infrastructure and Dutch university research groups shape the ecosystem.
-- Jobs exist in government, courts, legal publishers, insurers, healthcare, media and customer service — often without "NLP" in the title.
+- Jobs exist in government, courts, legal publishers, insurers, healthcare, media and customer service - often without "NLP" in the title.
 - Retrieval quality, Dutch evaluation sets, privacy and AI Act transparency are central to current work.
 - Good Dutch reading proficiency is a major advantage; search using Dutch terms such as "taaltechnologie" and "tekstanalyse".
 
@@ -159,7 +159,7 @@ Browse current AI, machine learning and data jobs, including NLP roles, at [only
 ## Frequently Asked Questions
 
 ### (Scenario: engineer who thinks multilingual models solved Dutch) Is Dutch-specific NLP expertise still needed with modern language models?
-Yes — organisations need people who can evaluate, adapt and govern models for domain-specific Dutch, where general models often fall short.
+Yes - organisations need people who can evaluate, adapt and govern models for domain-specific Dutch, where general models often fall short.
 
 ### (Scenario: candidate searching for NLP jobs) Why do I find so few "NLP engineer" vacancies in the Netherlands?
 Many roles use titles like data scientist, AI specialist or legal knowledge engineer, or are posted in Dutch using terms such as "taaltechnologie".
@@ -178,7 +178,7 @@ A Dutch evaluation set for a realistic task, comparing models and demonstrating 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Dutch-specific NLP expertise still needed with modern language models?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — domain-specific Dutch requires evaluation, adaptation and governance."}},
+    {"@type": "Question", "name": "Is Dutch-specific NLP expertise still needed with modern language models?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - domain-specific Dutch requires evaluation, adaptation and governance."}},
     {"@type": "Question", "name": "Why do I find so few \"NLP engineer\" vacancies in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Many roles use other titles or are posted in Dutch with terms like taaltechnologie."}},
     {"@type": "Question", "name": "Do I need to speak Dutch for NLP jobs in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "For many roles, good Dutch reading skills are important; some infrastructure roles are possible in English."}},
     {"@type": "Question", "name": "What is GPT-NL?", "acceptedAnswer": {"@type": "Answer", "text": "A publicly funded Dutch language model initiative by TNO, SURF and the NFI."}},

@@ -59,13 +59,13 @@ Manifera's beveiligingswerk voor SSRF en backend-integraties wordt geleverd via 
 
 ## Verder Dan het Blokkeren van Interne IP's: Een Completere SSRF-Verdediging
 
-Het beperken van een "ophalen via URL"-functie tot uitsluitend openbare bestemmingen klinkt in theorie eenvoudig. Een oppervlakkige implementatie — die enkel controleert of het ingevoerde adres eruitziet als een lokaal IP-adres — ziet echter verschillende manieren over het hoofd waarop die restrictie in de praktijk gemakkelijk wordt omzeild:
+Het beperken van een "ophalen via URL"-functie tot uitsluitend openbare bestemmingen klinkt in theorie eenvoudig. Een oppervlakkige implementatie - die enkel controleert of het ingevoerde adres eruitziet als een lokaal IP-adres - ziet echter verschillende manieren over het hoofd waarop die restrictie in de praktijk gemakkelijk wordt omzeild:
 
-- **DNS Rebinding** — een domeinnaam die op het moment van de initiële validatiecheck netjes verwijst naar een legitiem openbaar IP-adres, maar die direct daarna wordt omgezet naar een intern IP-adres op het moment dat het werkelijke netwerkverzoek plaatsvindt. Hierdoor glipt het verzoek voorbij een validatie die slechts eenmaal aan het begin werd uitgevoerd.
-- **Omleidingsketens (Redirect Chains)** — een URL die zelf naar een legitiem openbaar adres verwijst, maar waarvan de webserver antwoordt met een HTTP 302-omleiding naar een intern netwerkadres. Dit omzeilt elke controle die alleen de oorspronkelijk ingevoerde URL inspecteert en redirects blind volgt.
-- **Het specifieke cloud-metadata-eindpunt** — het bekende, vaste interne IP-adres (zoals `169.254.169.254`) dat veel cloudproviders gebruiken om tijdelijke inloggegevens en serverconfiguraties aan actieve instances te serveren. Het expliciet blokkeren van dit adres op naam is essentieel bovenop algemene IP-reeksregels, juist omdat het zo'n extreem waardevol doelwit is voor aanvallers.
-- **Alternatieve adresnotaties** — hetzelfde interne IP-adres geschreven in decimale, octale of hexadecimale notatie in plaats van het standaard formaat met punten kan eenvoudig voorbij een eenvoudig validatiescript glippen dat slechts op één specifieke tekenreeks zoekt.
-- **Niet-HTTP protocollen** — een functie die bedoeld is om afbeeldingen op te halen via HTTP of HTTPS, maar die niet expliciet afdwingt welk schema is toegestaan, kan soms worden gericht op lokale bestandspaden (`file://`) of andere interne protocollen.
+- **DNS Rebinding** - een domeinnaam die op het moment van de initiële validatiecheck netjes verwijst naar een legitiem openbaar IP-adres, maar die direct daarna wordt omgezet naar een intern IP-adres op het moment dat het werkelijke netwerkverzoek plaatsvindt. Hierdoor glipt het verzoek voorbij een validatie die slechts eenmaal aan het begin werd uitgevoerd.
+- **Omleidingsketens (Redirect Chains)** - een URL die zelf naar een legitiem openbaar adres verwijst, maar waarvan de webserver antwoordt met een HTTP 302-omleiding naar een intern netwerkadres. Dit omzeilt elke controle die alleen de oorspronkelijk ingevoerde URL inspecteert en redirects blind volgt.
+- **Het specifieke cloud-metadata-eindpunt** - het bekende, vaste interne IP-adres (zoals `169.254.169.254`) dat veel cloudproviders gebruiken om tijdelijke inloggegevens en serverconfiguraties aan actieve instances te serveren. Het expliciet blokkeren van dit adres op naam is essentieel bovenop algemene IP-reeksregels, juist omdat het zo'n extreem waardevol doelwit is voor aanvallers.
+- **Alternatieve adresnotaties** - hetzelfde interne IP-adres geschreven in decimale, octale of hexadecimale notatie in plaats van het standaard formaat met punten kan eenvoudig voorbij een eenvoudig validatiescript glippen dat slechts op één specifieke tekenreeks zoekt.
+- **Niet-HTTP protocollen** - een functie die bedoeld is om afbeeldingen op te halen via HTTP of HTTPS, maar die niet expliciet afdwingt welk schema is toegestaan, kan soms worden gericht op lokale bestandspaden (`file://`) of andere interne protocollen.
 
 Een werkelijk robuuste verdediging valideert de bestemming op het exacte moment van het uiteindelijke netwerkverzoek, blokkeert cloud-metadata-adressen expliciet op naam en dwingt uitsluitend veilige HTTP/HTTPS-protocollen af. Dit is precies het soort gelaagde bescherming dat een algemene prompt aan een AI-codeerassistent zelden oplevert, omdat elk van deze vijf omzeilingstechnieken een specifieke, specialistische kwetsbaarheid betreft.
 
@@ -80,9 +80,9 @@ Een IT-contactpersoon van een partner die VoorraadVast beoordeelde voorafgaand a
 **Resultaat:** LaunchStudio voegde strikte validatie toe die garandeert dat de importfunctie alleen ophaalt van geverifieerde openbare, externe adressen. Dit blokkeert expliciet elk verzoek gericht op interne of gereserveerde netwerkbereiken, wat de blootstelling sloot zonder te veranderen hoe medewerkers de importfunctie gebruikten.
 
 > *"Ik bouwde die functie om medewerkers een paar kliks te besparen bij het importeren van productfoto's. Het was geen moment in me opgekomen dat hetzelfde gemak theoretisch gericht kon worden op iets wat compleet anders was dan een foto."*
-> — **Wessel Kramer, Oprichter, VoorraadVast (Vlaardingen)**
+> - **Wessel Kramer, Oprichter, VoorraadVast (Vlaardingen)**
 
-**Kosten en tijdlijn:** € 2.600 (SSRF-herstel en URL-ophaalvalidatie) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.600 (SSRF-herstel en URL-ophaalvalidatie) - voltooid in 8 werkdagen.
 
 ---
 

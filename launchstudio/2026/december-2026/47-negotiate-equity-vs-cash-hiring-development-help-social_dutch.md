@@ -3,7 +3,7 @@
 "Ik bouw het wel af voor aandelen in plaats van geld" klinkt heel sympathiek als u krap bij kas zit. Het is vaak een van de duurste fouten die een oprichter kan maken: 😱
 
 ❌ €3.000 contant betalen voelt VANDAAG als een serieuze uitgave
-❌ 10% of 15% aandelen weggeven voelt vandaag GRATIS — geen factuur, geen bankafschrijving
+❌ 10% of 15% aandelen weggeven voelt vandaag GRATIS - geen factuur, geen bankafschrijving
 ❌ Maar die 15% claimt uw HELE toekomstige bedrijfswaarde en verwatert bij elke investeringsronde!
 
 Wanneer aandelen wél logisch zijn: ✅

@@ -37,7 +37,7 @@ Sentry is the industry standard and offers a free tier perfect for MVPs. Integra
 
 ## The "Alert Fatigue" Warning
 
-Once you install Sentry, you will likely discover that the internet is a messy place. Browser extensions, ad blockers, and network timeouts generate harmless errors constantly. If you send an email for every single error, you will quickly ignore them all—a phenomenon known as alert fatigue.
+Once you install Sentry, you will likely discover that the internet is a messy place. Browser extensions, ad blockers, and network timeouts generate harmless errors constantly. If you send an email for every single error, you will quickly ignore them all - a phenomenon known as alert fatigue.
 
 **Best Practice**: Configure your alerts so you are only notified when a *new* issue occurs for the first time, or when an error occurs during critical paths (like `/checkout` or `/signup`). Ignore errors related to third-party scripts or ad blockers.
 
@@ -69,7 +69,7 @@ Victoria partnered with **LaunchStudio (by Manifera)** to make the product launc
 
 **Result:** Victoria identified and fixed a third-party API timeout within 20 minutes of integration, saving potential clients.
 
-**Cost & Timeline:** €950 (Error Monitoring Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €950 (Error Monitoring Package) - production-ready and deployed in 3 business days.
 
 ---
 

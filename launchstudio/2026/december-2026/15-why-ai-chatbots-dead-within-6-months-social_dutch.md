@@ -1,12 +1,12 @@
-🚨 Haar chatbot ging viraal — 3.000 registraties in 4 dagen. Toen bekeek ze haar OpenAI-factuur: €4.200. Ze was drie dagen verwijderd van een faillissement. 💸
+🚨 Haar chatbot ging viraal - 3.000 registraties in 4 dagen. Toen bekeek ze haar OpenAI-factuur: €4.200. Ze was drie dagen verwijderd van een faillissement. 💸
 
-Duizenden AI-chatbots lanceerden in 2026. De meesten waren binnen 6 maanden verdwenen. Het ligt bijna nooit aan de AI zelf — maar aan deze 5 knelpunten: 😱
+Duizenden AI-chatbots lanceerden in 2026. De meesten waren binnen 6 maanden verdwenen. Het ligt bijna nooit aan de AI zelf - maar aan deze 5 knelpunten: 😱
 
-❌ Geen kostenbeheersing — één actieve gebruiker kan uw bankrekening leegtrekken
-❌ Geen gespreksgeheugen — de bot vergeet context en gebruikers haken af
-❌ Geen fallback bij downtime van het model — de bot valt stil op piekmomenten
-❌ Geen moderatie — prompt-injectie leidt tot gênante screenshots op social media
-❌ "Ik vraag later wel geld" — gratis gebruikers betalen achteraf bijna nooit
+❌ Geen kostenbeheersing - één actieve gebruiker kan uw bankrekening leegtrekken
+❌ Geen gespreksgeheugen - de bot vergeet context en gebruikers haken af
+❌ Geen fallback bij downtime van het model - de bot valt stil op piekmomenten
+❌ Geen moderatie - prompt-injectie leidt tot gênante screenshots op social media
+❌ "Ik vraag later wel geld" - gratis gebruikers betalen achteraf bijna nooit
 
 Bij **LaunchStudio** hebben we 160+ projecten opgeleverd met exacte kosten- en betrouwbaarheidsdiscipline: ✅
 ✅ Staffellimieten vóórdat u viraal gaat, niet erna

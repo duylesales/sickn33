@@ -30,7 +30,7 @@ Dat maakt het hier belangrijker dan bij traditionele ontwikkeling, niet minder. 
 
 **De mogelijkheid om terug te draaien.** Niet één toetsaanslag, maar elke wijziging, op elk moment, inclusief een van drie weken geleden die iets blijkt te hebben gebroken dat u pas vandaag opmerkte.
 
-**Een plek om te experimenteren.** Een branch is een kopie die u vrij kunt slopen. Met een branch wordt een sessie die slecht afloopt in een seconde weggegooid in plaats van in een middag uitgeplozen — en dat is, zoals het kostenartikel in deze reeks beschrijft, ook waar het meeste geld heen gaat.
+**Een plek om te experimenteren.** Een branch is een kopie die u vrij kunt slopen. Met een branch wordt een sessie die slecht afloopt in een seconde weggegooid in plaats van in een middag uitgeplozen - en dat is, zoals het kostenartikel in deze reeks beschrijft, ook waar het meeste geld heen gaat.
 
 ## De Minimale Werkwijze
 
@@ -38,11 +38,11 @@ Negeer het meeste van wat er over branchingstrategieën wordt geschreven. Voor �
 
 **Eén hoofdbranch** die altijd werkt en die wordt gedeployd.
 
-**Een branch voor elk stuk werk**, aangemaakt voordat u begint, genoemd naar wat het is. Werkt het, voeg het samen met main en verwijder de branch. Gaat het mis, verwijder hem en begin opnieuw — dit is het moment waarop de hele praktijk zich terugbetaalt.
+**Een branch voor elk stuk werk**, aangemaakt voordat u begint, genoemd naar wat het is. Werkt het, voeg het samen met main en verwijder de branch. Gaat het mis, verwijder hem en begin opnieuw - dit is het moment waarop de hele praktijk zich terugbetaalt.
 
 **Commit zodra iets werkt**, niet wanneer een functie af is. Kleine commits, vaak, elk een punt waarnaar u kunt terugkeren. Een dag met twaalf commits is een dag met twaalf checkpoints.
 
-**Push naar een remote** — een gehoste repository — minstens dagelijks. Lokaal gecommit werk leeft op één laptop.
+**Push naar een remote** - een gehoste repository - minstens dagelijks. Lokaal gecommit werk leeft op één laptop.
 
 Dat is de hele werkwijze. Het duurt een paar dagen voordat het automatisch gaat, en het neemt een hele categorie zorgen over het accepteren van wijzigingen weg.
 
@@ -74,15 +74,15 @@ Drie categorieën, en de eerste is ernstig.
 
 **Persoonsgegevens.** Database-exports, klantvoorbeelden, screenshots met echte records. Deze belanden vaker in repositories dan iemand zou willen, en een repository die later openbaar wordt, neemt ze mee.
 
-Al het andere — inclusief uw voorbeeldconfiguratiebestand, uw afsprakenbestand en uw migraties — hoort erin.
+Al het andere - inclusief uw voorbeeldconfiguratiebestand, uw afsprakenbestand en uw migraties - hoort erin.
 
 ## Wanneer Er Iets Breekt en U Niet Weet Wanneer
 
 De situatie die de hele praktijk rechtvaardigt: een klant meldt iets dat vroeger werkte, en u hebt geen idee wanneer het ophield.
 
-Met een geschiedenis is dit te beantwoorden in plaats van mysterieus. Zoek een commit van voordat het probleem bestond, zet die in een tijdelijke toestand neer, en kijk of het gedrag daar correct is. Werk dan vooruit — of, sneller, gebruik de bisect-functie, die de exacte commit vindt die een probleem introduceerde door punten in de geschiedenis te testen zoals u zou gokken, maar dan systematisch.
+Met een geschiedenis is dit te beantwoorden in plaats van mysterieus. Zoek een commit van voordat het probleem bestond, zet die in een tijdelijke toestand neer, en kijk of het gedrag daar correct is. Werk dan vooruit - of, sneller, gebruik de bisect-functie, die de exacte commit vindt die een probleem introduceerde door punten in de geschiedenis te testen zoals u zou gokken, maar dan systematisch.
 
-Voor een product met een jaar aan kleine commits vindt dit de verantwoordelijke wijziging doorgaans in een handvol controles. Voor een product met een jaar aan enorme commits vindt het een commit met veertig bestanden, wat minder nuttig is — en dat is het praktische argument voor kleine commits, concreet gemaakt.
+Voor een product met een jaar aan kleine commits vindt dit de verantwoordelijke wijziging doorgaans in een handvol controles. Voor een product met een jaar aan enorme commits vindt het een commit met veertig bestanden, wat minder nuttig is - en dat is het praktische argument voor kleine commits, concreet gemaakt.
 
 Twee gewoonten zorgen dat dit werkt wanneer u het nodig hebt. Commits die elk één ding doen, zodat het antwoord specifiek is. En een werkende toestand bij elke commit, zodat een commit die u neerzet ook echt draait; commits die niet draaien zijn gaten in de geschiedenis die de zoektocht breken.
 
@@ -94,7 +94,7 @@ Er is een reden om dit te doen die niets met ongedaan maken te maken heeft, en o
 
 Op een gegeven moment wil iemand weten wat u hebt gebouwd. Een investeerder die due diligence doet. Een developer die u aanneemt. Een overnemer. De technische beoordelaar van een klant. Een partner die een integratie overweegt.
 
-Wat u hun geeft, is de repository, en wat erin zit zegt veel meer dan de code. Een geschiedenis van kleine, beschreven wijzigingen over achttien maanden leest als een product dat iemand heeft gerund. Eén commit genaamd "initial commit" van afgelopen dinsdag leest als een product zonder enige geschiedenis — en als het werk over achttien maanden is gedaan, is dat een verhaal dat verloren is gegaan in plaats van een dat nooit bestond.
+Wat u hun geeft, is de repository, en wat erin zit zegt veel meer dan de code. Een geschiedenis van kleine, beschreven wijzigingen over achttien maanden leest als een product dat iemand heeft gerund. Eén commit genaamd "initial commit" van afgelopen dinsdag leest als een product zonder enige geschiedenis - en als het werk over achttien maanden is gedaan, is dat een verhaal dat verloren is gegaan in plaats van een dat nooit bestond.
 
 Hetzelfde geldt voor overdracht. Een developer die bij een project met een leesbare geschiedenis komt, kan zien hoe het zich ontwikkelde en waarom beslissingen werden genomen. Een die bij een project zonder geschiedenis komt, heeft alleen de huidige toestand en moet alles afleiden.
 
@@ -102,7 +102,7 @@ En er is een praktische kant: een repository onder uw eigen account, met de gesc
 
 Dat is het sterkste argument om het op dag één in te richten in plaats van in maand vijf, en het kost een uur.
 
-Het is voor de meeste oprichters ook het moment waarop het product als een bedrijf begint te voelen in plaats van een project — wat geen technisch voordeel is, en vaak genoeg wordt gemeld door wie het doet om het te noemen.
+Het is voor de meeste oprichters ook het moment waarop het product als een bedrijf begint te voelen in plaats van een project - wat geen technisch voordeel is, en vaak genoeg wordt gemeld door wie het doet om het te noemen.
 
 Er is nog een klein voordeel dat het hebben waard is: een repository maakt het mogelijk om vanaf een andere machine te werken, wat ertoe doet de eerste keer dat een laptop uitvalt en het product alleen daarop blijkt te bestaan.
 
@@ -110,9 +110,9 @@ En het maakt de eerste aanname eenvoudig in plaats van archeologie: wat u een ni
 
 ## Dit Inrichten
 
-Voor een oprichter die met een AI-editor werkt, is dit doorgaans een uur om op te zetten en een week om eigen te maken: een repository met alles gecommit en gepusht naar een gehoste remote, een ignore-bestand voor omgevingsbestanden, sleutels, builduitvoer en alle data, een branch voor elk stuk werk met de gewoonte om branches die misgaan te verwijderen in plaats van te redden, een commit vóór elke sessie zonder uitzondering, kleine frequente commits met berichten die de bedoeling uitleggen, een dagelijkse push, en een controle dat er niet al een geheim in de geschiedenis staat — met rotatie als dat wel zo is.
+Voor een oprichter die met een AI-editor werkt, is dit doorgaans een uur om op te zetten en een week om eigen te maken: een repository met alles gecommit en gepusht naar een gehoste remote, een ignore-bestand voor omgevingsbestanden, sleutels, builduitvoer en alle data, een branch voor elk stuk werk met de gewoonte om branches die misgaan te verwijderen in plaats van te redden, een commit vóór elke sessie zonder uitzondering, kleine frequente commits met berichten die de bedoeling uitleggen, een dagelijkse push, en een controle dat er niet al een geheim in de geschiedenis staat - met rotatie als dat wel zo is.
 
-LaunchStudio richt dit in bij het overnemen van een project, en het is het eerste wat we doen, omdat niets anders veilig is zonder. De engineers zijn van Manifera — elf jaar, 120+ engineers, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio richt dit in bij het overnemen van een project, en het is het eerste wat we doen, omdat niets anders veilig is zonder. De engineers zijn van Manifera - elf jaar, 120+ engineers, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons te controleren of uw repository een geheim in zijn geschiedenis heeft](https://launchstudio.eu/nl/#contact). Bij veel is dat zo.
 
@@ -120,7 +120,7 @@ LaunchStudio richt dit in bij het overnemen van een project, en het is het eerst
 
 ### Drie Dagen met de Hand Herbouwd
 
-Karin Zoetelief bouwde Praktijkfacturatie in Cursor: facturatie voor paramedische praktijken — fysiotherapie, diëtetiek, logopedie — die de facturatie aan verzekeraars en patiënten verzorgt voor 41 praktijken.
+Karin Zoetelief bouwde Praktijkfacturatie in Cursor: facturatie voor paramedische praktijken - fysiotherapie, diëtetiek, logopedie - die de facturatie aan verzekeraars en patiënten verzorgt voor 41 praktijken.
 
 De eerste vijf maanden werkte ze zonder versiebeheer. Het project stond in een map, geback-upt door een cloudsynchronisatie die een paar versies van afzonderlijke bestanden bewaarde.
 
@@ -133,9 +133,9 @@ Twee werkdagen, daarna een andere werkwijze: het project in een repository gezet
 **Resultaat:** in het jaar daarna gooide Karin 23 sessies weg die misgingen, elk in een paar seconden, terwijl ze eerder een week aan één was kwijtgeraakt. Ze omschrijft de regel van committen vóór elke sessie als de verandering die het gebruik van de tools comfortabel maakte in plaats van zenuwslopend.
 
 > *"Ik heb drie dagen met de hand herbouwd omdat ik niet terug kon. De oplossing was een repository, wat een uur kostte, en ik had dat vijf maanden niet gedaan omdat het klonk als iets voor teams."*
-> — **Karin Zoetelief, Oprichter, Praktijkfacturatie (Nijmegen)**
+> - **Karin Zoetelief, Oprichter, Praktijkfacturatie (Nijmegen)**
 
-**Kosten & Doorlooptijd:** €1.300 (repository-inrichting met remote, ignore-regels, rotatie van inloggegevens na het vinden van geheimen en patiëntgegevens in de projectmap, branchwerkwijze, sessiediscipline, documentatie van de werkwijze) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €1.300 (repository-inrichting met remote, ignore-regels, rotatie van inloggegevens na het vinden van geheimen en patiëntgegevens in de projectmap, branchwerkwijze, sessiediscipline, documentatie van de werkwijze) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -157,7 +157,7 @@ Geheimen, builduitvoer en echte data. Een gecommit geheim blijft na verwijdering
 
 ### Wat maakt een goed commitbericht?
 
-Eén regel die zegt wat er veranderde en, waar het niet vanzelf spreekt, waarom. Schrijf het vóór de wijziging — het verheldert het werk en houdt de commit bij één ding.
+Eén regel die zegt wat er veranderde en, waar het niet vanzelf spreekt, waarom. Schrijf het vóór de wijziging - het verheldert het werk en houdt de commit bij één ding.
 
 <script type="application/ld+json">
 {
@@ -169,7 +169,7 @@ Eén regel die zegt wat er veranderde en, waar het niet vanzelf spreekt, waarom.
       "name": "Is versiebeheer nodig als u alleen werkt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meer dan in een team wanneer een tool de code schrijft — het is de enige manier om te zien wat er veranderde en het betrouwbaar ongedaan te maken."
+        "text": "Meer dan in een team wanneer een tool de code schrijft - het is de enige manier om te zien wat er veranderde en het betrouwbaar ongedaan te maken."
       }
     },
     {
@@ -201,7 +201,7 @@ Eén regel die zegt wat er veranderde en, waar het niet vanzelf spreekt, waarom.
       "name": "Wat maakt een nuttig commitbericht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een korte regel over wat er veranderde plus waarom als dat niet vanzelf spreekt — geschreven vóór de wijziging, wat de commit ook gericht houdt."
+        "text": "Een korte regel over wat er veranderde plus waarom als dat niet vanzelf spreekt - geschreven vóór de wijziging, wat de commit ook gericht houdt."
       }
     }
   ]

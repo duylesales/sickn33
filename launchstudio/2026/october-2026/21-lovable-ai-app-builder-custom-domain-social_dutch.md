@@ -1,4 +1,4 @@
-🔥 Thomas bouwde een prototype met **Lovable** — als makelaar in Rotterdam bouwde hij een rekentool voor woningwaardering, maar raakte verstrikt in foutieve DNS-records bij het koppelen van zijn domein. 🧠
+🔥 Thomas bouwde een prototype met **Lovable** - als makelaar in Rotterdam bouwde hij een rekentool voor woningwaardering, maar raakte verstrikt in foutieve DNS-records bij het koppelen van zijn domein. 🧠
 
 Als uw AI-prototype blijft steken op een preview-link of verkeerd geconfigureerde DNS-records heeft, verliest u direct potentiële klanten en SEO-waarde.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype blijft steken op een preview-link of verkeerd geconfigureerd
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Thomas's app stond binnen 48 uur veilig live op `snelwaarderen.nl` en hij kan in Lovable blijven itereren zonder ooit een server aan te raken. (€900 (Basis Launch Ready Pakket) — binnen 2 werkdagen live). 🚀
+Thomas's app stond binnen 48 uur veilig live op `snelwaarderen.nl` en hij kan in Lovable blijven itereren zonder ooit een server aan te raken. (€900 (Basis Launch Ready Pakket) - binnen 2 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/lovable-ai-app-builder-custom-domain
 

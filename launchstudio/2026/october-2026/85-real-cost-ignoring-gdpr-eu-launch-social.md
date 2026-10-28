@@ -1,4 +1,4 @@
-⚖️ Astrid was three weeks from launching her HR platform (built in **Lovable**) when a prospect's IT department asked for her Data Processing Agreement. She didn't have one — "delete my account" just flipped a status flag.
+⚖️ Astrid was three weeks from launching her HR platform (built in **Lovable**) when a prospect's IT department asked for her Data Processing Agreement. She didn't have one - "delete my account" just flipped a status flag.
 
 "I'll deal with GDPR later" is one of the most expensive decisions a founder can make.
 
@@ -12,7 +12,7 @@
 
 At **LaunchStudio**, we've been building this compliance layer in since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Astrid's prospect approved the vendor review on first submission — no stalled deal, no scramble. (€2,400 — Launch & Grow Package, remediated and documented in 9 business days.) 🚀
+Astrid's prospect approved the vendor review on first submission - no stalled deal, no scramble. (€2,400 - Launch & Grow Package, remediated and documented in 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-ignoring-gdpr-eu-launch
 

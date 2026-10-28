@@ -21,16 +21,16 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Firebase heeft software bouwen altijd al laagdrempelig gemaakt, en moderne AI-tools — met name Firebase Studio — maken dat proces nog sneller: binnen enkele minuten verschijnt er een werkende webapplicatie inclusief gebruikersauthenticatie, een NoSQL Firestore-database en cloudopslag voor bestanden. Firebase-applicaties hebben echter een unieke architectonische eigenschap die van levensgroot belang is voor productie: de browser van de bezoeker communiceert rechtstreeks met de database. Er zit in veel gevallen géén traditionele backend-server tussen. Dat betekent dat er tussen een willekeurige buitenstaander en al jouw bedrijfsgegevens slechts één enkel bestand staat: je set beveiligingsregels (`firestore.rules`). Een op Firebase gebaseerd AI-prototype naar productie brengen draait dan ook bovenal om het waterdicht maken van die regels.
+Firebase heeft software bouwen altijd al laagdrempelig gemaakt, en moderne AI-tools - met name Firebase Studio - maken dat proces nog sneller: binnen enkele minuten verschijnt er een werkende webapplicatie inclusief gebruikersauthenticatie, een NoSQL Firestore-database en cloudopslag voor bestanden. Firebase-applicaties hebben echter een unieke architectonische eigenschap die van levensgroot belang is voor productie: de browser van de bezoeker communiceert rechtstreeks met de database. Er zit in veel gevallen géén traditionele backend-server tussen. Dat betekent dat er tussen een willekeurige buitenstaander en al jouw bedrijfsgegevens slechts één enkel bestand staat: je set beveiligingsregels (`firestore.rules`). Een op Firebase gebaseerd AI-prototype naar productie brengen draait dan ook bovenal om het waterdicht maken van die regels.
 
 ## Waarom Beveiliging in Firebase Fundamenteel Anders Werkt
 
-In een traditionele backend-architectuur bepaalt de server welke gegevens aan de client worden geretourneerd. Bij Firebase voert de browser rechtstreeks queries uit op Firestore, en bepalen de Firestore security rules bij ieder afzonderlijk lees- of schrijfverzoek of dit is toegestaan. De Firebase-configuratie in je broncode — inclusief de ogenschijnlijk geheime API-sleutel — is publiek by design. Het identificeert puur jouw Google Cloud-project; het beveiligt helemaal niets. De regels vormen de enige beveiliging.
+In een traditionele backend-architectuur bepaalt de server welke gegevens aan de client worden geretourneerd. Bij Firebase voert de browser rechtstreeks queries uit op Firestore, en bepalen de Firestore security rules bij ieder afzonderlijk lees- of schrijfverzoek of dit is toegestaan. De Firebase-configuratie in je broncode - inclusief de ogenschijnlijk geheime API-sleutel - is publiek by design. Het identificeert puur jouw Google Cloud-project; het beveiligt helemaal niets. De regels vormen de enige beveiliging.
 
 Door AI gegenereerde prototypes worden doorgaans opgeleverd met een van de volgende drie configuraties:
 
-- **Testmodus:** alle lees- en schrijfacties zijn onvoorwaardelijk toegestaan tot een vaste datum (vaak 30 dagen na aanmaak). Na die datum breekt de app plotseling volledig — of, als iemand dit heeft "opgelost" door de vervaldatum te verlengen, blijft de database wagenwijd openstaan.
-- **Uitsluitend ingelogd:** `allow read, write: if request.auth != null;` — elke geregistreerde gebruiker kan álle documenten van álle andere gebruikers inzien en overschrijven.
+- **Testmodus:** alle lees- en schrijfacties zijn onvoorwaardelijk toegestaan tot een vaste datum (vaak 30 dagen na aanmaak). Na die datum breekt de app plotseling volledig - of, als iemand dit heeft "opgelost" door de vervaldatum te verlengen, blijft de database wagenwijd openstaan.
+- **Uitsluitend ingelogd:** `allow read, write: if request.auth != null;` - elke geregistreerde gebruiker kan álle documenten van álle andere gebruikers inzien en overschrijven.
 - **Deels afgeschermd:** enkele hoofdtabellen zijn beveiligd, maar latere collecties zijn vergeten en staan volledig open.
 
 Alle drie de situaties komen dagelijks voor. En alle drie zijn ze levensgevaarlijk voor een live productieomgeving.
@@ -55,13 +55,13 @@ match /projects/{projectId} {
 
 **Schrijfoperaties valideren.** Beveiligingsregels kunnen veldtypen controleren, verplichte velden afdwingen en waarborgen dat gebruikers geen velden kunnen muteren die ze niet mogen aanpassen (zoals `role`, `ownerId` of `subscriptionPlan`). Zonder deze validatie kan een gebruiker zichzelf simpelweg promoveren tot beheerder door direct naar zijn eigen gebruikersrecord te schrijven.
 
-**Let op de aard van queries.** Firestore rules werken niet als automatische filters: een databasequery moet door de frontend zo specifiek worden geformuleerd dat élk potentieel resultaat gegarandeerd aan de regels voldoet. Door AI gegenereerde code haalt vaak een volledige collectie op en filtert pas in de browser — wat direct faalt zodra de regels correct worden dichtgezet. Dit verleidt oprichters er vaak toe om de regels maar weer open te zetten. Pas altijd de query aan, nooit de beveiligingsregel.
+**Let op de aard van queries.** Firestore rules werken niet als automatische filters: een databasequery moet door de frontend zo specifiek worden geformuleerd dat élk potentieel resultaat gegarandeerd aan de regels voldoet. Door AI gegenereerde code haalt vaak een volledige collectie op en filtert pas in de browser - wat direct faalt zodra de regels correct worden dichtgezet. Dit verleidt oprichters er vaak toe om de regels maar weer open te zetten. Pas altijd de query aan, nooit de beveiligingsregel.
 
-**Test de regels geautomatiseerd.** Met de Firebase Emulator Suite schrijf je betrouwbare unit tests voor je regels — inclusief negatieve tests waarin gebruiker A doelbewust probeert het profiel van gebruiker B te lezen. Draai deze tests verplicht in je CI/CD-pipeline.
+**Test de regels geautomatiseerd.** Met de Firebase Emulator Suite schrijf je betrouwbare unit tests voor je regels - inclusief negatieve tests waarin gebruiker A doelbewust probeert het profiel van gebruiker B te lezen. Draai deze tests verplicht in je CI/CD-pipeline.
 
 ## Opslagregels voor Bestanden (Cloud Storage) Zijn Apart
 
-Cloud Storage for Firebase heeft een eigen regelsysteem (`storage.rules`), en AI-prototypes laten deze vrijwel altijd openstaan terwijl Firestore wel aandacht krijgt. Geüploade bestanden — profielfoto's, vertrouwelijke pdf-documenten, scans en facturen — vereisen exact dezelfde autorisatielogica, aangevuld met harde restricties op bestandsgrootte en MIME-typen.
+Cloud Storage for Firebase heeft een eigen regelsysteem (`storage.rules`), en AI-prototypes laten deze vrijwel altijd openstaan terwijl Firestore wel aandacht krijgt. Geüploade bestanden - profielfoto's, vertrouwelijke pdf-documenten, scans en facturen - vereisen exact dezelfde autorisatielogica, aangevuld met harde restricties op bestandsgrootte en MIME-typen.
 
 ## Gevoelige Bedrijfslogica Verplaatsen naar Cloud Functions
 
@@ -71,7 +71,7 @@ Pas wel op voor de omgekeerde fout: Cloud Functions die beheerdersrechten gebrui
 
 ## App Check en Bescherming Tegen Misbruik
 
-Firebase App Check helpt te garanderen dat verzoeken daadwerkelijk afkomstig zijn van jouw officiële web- of mobiele app, en niet van geautomatiseerde scripts die rechtstreeks tegen jouw Firestore-project vuren. Het vervangt beveiligingsregels niet, maar voorkomt misbruik en uitputting van je quota — met name voor kostbare operaties zoals LLM-aanroepen.
+Firebase App Check helpt te garanderen dat verzoeken daadwerkelijk afkomstig zijn van jouw officiële web- of mobiele app, en niet van geautomatiseerde scripts die rechtstreeks tegen jouw Firestore-project vuren. Het vervangt beveiligingsregels niet, maar voorkomt misbruik en uitputting van je quota - met name voor kostbare operaties zoals LLM-aanroepen.
 
 ## Database-Indices en Kostenbeheersing
 
@@ -153,9 +153,9 @@ De kosten van Firestore worden gedreven door document-reads, writes en data-opsl
 
 ## Cloudregio, Back-ups en AVG-Naleving
 
-De geografische locatie van een Firestore-database staat vast na creatie. Voor Europese gebruikers kies je altijd een EU-regio. Is een prototype per abuis in de VS aangemaakt, dan vergt dit een export- en importmigratie naar een nieuw project — aanzienlijk eenvoudiger vóórdat echte klantgegevens zich opstapelen. Activeer geautomatiseerde back-ups, voer een periodieke test-restore uit in een apart project en documenteer de procedure. Vermeld Google Cloud en Firebase expliciet als subverwerkers in je privacyverklaring.
+De geografische locatie van een Firestore-database staat vast na creatie. Voor Europese gebruikers kies je altijd een EU-regio. Is een prototype per abuis in de VS aangemaakt, dan vergt dit een export- en importmigratie naar een nieuw project - aanzienlijk eenvoudiger vóórdat echte klantgegevens zich opstapelen. Activeer geautomatiseerde back-ups, voer een periodieke test-restore uit in een apart project en documenteer de procedure. Vermeld Google Cloud en Firebase expliciet als subverwerkers in je privacyverklaring.
 
-## Wanneer Firebase Wel — en Wanneer Niet — de Juiste Keuze Is
+## Wanneer Firebase Wel - en Wanneer Niet - de Juiste Keuze Is
 
 Firebase is een geweldige keuze voor applicaties met document-georiënteerde data, realtime samenwerking en een gematigde relationele complexiteit. Applicaties die uitgroeien naar zware rapportages, complexe joins of strikte relationele integriteit ontgroeien NoSQL na verloop van tijd en migreren rapportages naar een relationele database zoals PostgreSQL. Een productiereview is het ideale moment om te beoordelen welke kant jouw software op beweegt, zodat de hardening van vandaag naadloos aansluit op de architectuur van morgen.
 
@@ -165,7 +165,7 @@ Het verplaatsen van gevoelige bewerkingen naar Cloud Functions heeft alleen zin 
 
 ## App Check Inschakelen Zonder Legitieme Gebruikers te Blokkeren
 
-Rol Firebase App Check gefaseerd uit: activeer de dienst eerst in audit-modus (monitoring) om te zien welk percentage van de aanroepen zou worden afgewezen, los eventuele configuratiefouten bij legitieme clients op (zoals lokale ontwikkelomgevingen) en dwing handhaving pas daarna definitief af voor Firestore, Storage en Functions. Gebruik debug-tokens voor lokale ontwikkeling en CI. App Check weert geautomatiseerde abuse effectief af, maar fungeert altijd als aanvulling op — nooit als vervanging van — doordachte security rules.
+Rol Firebase App Check gefaseerd uit: activeer de dienst eerst in audit-modus (monitoring) om te zien welk percentage van de aanroepen zou worden afgewezen, los eventuele configuratiefouten bij legitieme clients op (zoals lokale ontwikkelomgevingen) en dwing handhaving pas daarna definitief af voor Firestore, Storage en Functions. Gebruik debug-tokens voor lokale ontwikkeling en CI. App Check weert geautomatiseerde abuse effectief af, maar fungeert altijd als aanvulling op - nooit als vervanging van - doordachte security rules.
 
 ## De Firebase Productie-Checklist
 
@@ -182,11 +182,11 @@ Het systematisch doorlopen van deze acht punten brengt vrijwel elk Firebase Stud
 
 ## Het Fundamentele Principe
 
-Binnen het Firebase-ecosysteem wordt de client per definitie nooit vertrouwd. De security rules vormen de daadwerkelijke kluisdeur van je applicatie. Schrijf ze met dezelfde toewijding als je gebruikersinterface, test ze grondig en herzie ze telkens wanneer het datamodel wijzigt — en je AI-prototype verandert in een betrouwbaar platform dat je met een gerust hart aan duizenden gebruikers kunt toevertrouwen.
+Binnen het Firebase-ecosysteem wordt de client per definitie nooit vertrouwd. De security rules vormen de daadwerkelijke kluisdeur van je applicatie. Schrijf ze met dezelfde toewijding als je gebruikersinterface, test ze grondig en herzie ze telkens wanneer het datamodel wijzigt - en je AI-prototype verandert in een betrouwbaar platform dat je met een gerust hart aan duizenden gebruikers kunt toevertrouwen.
 
 ## De Rol van LaunchStudio
 
-LaunchStudio's werkzaamheden voor Firebase-applicaties omvatten het herschrijven van security rules volgens het deny-by-default principe inclusief emulator-tests in CI, het beveiligen van Cloud Storage, het onderbrengen van gevoelige taken in gevalideerde Cloud Functions, implementatie van App Check, query- en kostenoptimalisaties, back-upherstel en AVG-regiovalidatie — zónder dat de frontend die je gebruikers kennen verandert. LaunchStudio wordt ondersteund door Manifera, met ruim 11 jaar ervaring in enterprise NoSQL- en cloudarchitecturen. De senior engineers in Ho Chi Minh City werken dagelijks met Firebase, Supabase, PostgreSQL en MongoDB, ondersteund door management in Amsterdam (Herengracht 420) en Singapore. Bekijk [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/) en Google's [officiële Firestore security rules documentatie](https://firebase.google.com/docs/firestore/security/get-started).
+LaunchStudio's werkzaamheden voor Firebase-applicaties omvatten het herschrijven van security rules volgens het deny-by-default principe inclusief emulator-tests in CI, het beveiligen van Cloud Storage, het onderbrengen van gevoelige taken in gevalideerde Cloud Functions, implementatie van App Check, query- en kostenoptimalisaties, back-upherstel en AVG-regiovalidatie - zónder dat de frontend die je gebruikers kennen verandert. LaunchStudio wordt ondersteund door Manifera, met ruim 11 jaar ervaring in enterprise NoSQL- en cloudarchitecturen. De senior engineers in Ho Chi Minh City werken dagelijks met Firebase, Supabase, PostgreSQL en MongoDB, ondersteund door management in Amsterdam (Herengracht 420) en Singapore. Bekijk [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/) en Google's [officiële Firestore security rules documentatie](https://firebase.google.com/docs/firestore/security/get-started).
 
 Wil je weten of jouw Firebase-regels waterdicht zijn? [Stuur ons je prototype-link](https://launchstudio.eu/nl/#contact) voor een gratis eerste beoordeling.
 
@@ -196,16 +196,16 @@ Wil je weten of jouw Firebase-regels waterdicht zijn? [Stuur ons je prototype-li
 
 Chiara Rossi, muzieklerares en koordirigente in Dordrecht, bouwde Koorplanner in Firebase Studio: een applicatie waarmee amateurkoren repetities plannen, bladmuziek en zangoefeningen delen, aanwezigheden registreren en contributies innen. Via mond-tot-mondreclame verspreidde de app zich razendsnel; binnen één seizoen maakten 140 koren en ruim 4.000 zangers intensief gebruik van het platform.
 
-In dezelfde week gebeurden er twee alarmerende zaken. Chiara's maandfactuur van Google Cloud verdrievoudigde plotseling. En een koorlid dat werkzaam was in de cybersecurity meldde haar dat hij via de publieke configuratie in de broncode de volledige ledenlijsten — inclusief namen, privénummers en thuisadressen — van álle 140 koren kon downloaden. De Firestore-regels stonden na het verlopen van de proefperiode simpelweg ingesteld op "elke ingelogde gebruiker mag alles lezen en schrijven". De Cloud Storage-regels stonden wagenwijd open, waardoor auteursrechtelijk beschermde bladmuziek van individuele koren openbaar downloadbaar was. De contributiestatus werd bovendien direct vanuit de browser gemuteerd, waardoor leden zichzelf handmatig op 'betaald' konden zetten. Het aanwezigheidsscherm luisterde bovendien continu naar de volledige landelijke aanwezigheidstabel.
+In dezelfde week gebeurden er twee alarmerende zaken. Chiara's maandfactuur van Google Cloud verdrievoudigde plotseling. En een koorlid dat werkzaam was in de cybersecurity meldde haar dat hij via de publieke configuratie in de broncode de volledige ledenlijsten - inclusief namen, privénummers en thuisadressen - van álle 140 koren kon downloaden. De Firestore-regels stonden na het verlopen van de proefperiode simpelweg ingesteld op "elke ingelogde gebruiker mag alles lezen en schrijven". De Cloud Storage-regels stonden wagenwijd open, waardoor auteursrechtelijk beschermde bladmuziek van individuele koren openbaar downloadbaar was. De contributiestatus werd bovendien direct vanuit de browser gemuteerd, waardoor leden zichzelf handmatig op 'betaald' konden zetten. Het aanwezigheidsscherm luisterde bovendien continu naar de volledige landelijke aanwezigheidstabel.
 
 Binnen zes werkdagen herschreven de engineers van LaunchStudio de Firestore- en Storage-regels op basis van deny-by-default, strikt afgebakend per koor en rol, afgedekt met 48 emulator-tests in CI. Queries die voorheen leunden op browser-filtering werden gecorrigeerd, contributie-updates werden verplaatst naar een Cloud Function gekoppeld aan geverifieerde betaalwebhooks van Mollie, App Check werd geactiveerd, de landelijke listener werd vervangen door een gerichte gepagineerde query, er werden budget-alerts ingesteld en geautomatiseerde dagelijkse back-ups werden ingeregeld met een geslaagde test-restore.
 
 **Het resultaat:** Toegang tussen verschillende koren werd direct met de nieuwe deployment geblokkeerd en de betrokken koren werden transparant geïnformeerd. Chiara's maandelijkse Firebase-kosten daalden met ruim 70% ten opzichte van de piek, en Koorplanner groeide het daaropvolgende seizoen zorgeloos door naar 230 koren.
 
-> *"Die API-sleutel in de pagina was nooit het gevaar. De ontbrekende beveiligingsregels erachter wél — en ik had geen flauw idee dat die regels het enige slot op de voordeur vormden."*
-> — **Chiara Rossi, Oprichtster, Koorplanner (Dordrecht)**
+> *"Die API-sleutel in de pagina was nooit het gevaar. De ontbrekende beveiligingsregels erachter wél - en ik had geen flauw idee dat die regels het enige slot op de voordeur vormden."*
+> - **Chiara Rossi, Oprichtster, Koorplanner (Dordrecht)**
 
-**Kosten & Tijdlijn:** € 1.500 (Launch Ready-pakket: security rules en tests, Cloud Functions, App Check, query- en kostenoptimalisatie, back-ups) — opgeleverd in 6 werkdagen.
+**Kosten & Tijdlijn:** € 1.500 (Launch Ready-pakket: security rules en tests, Cloud Functions, App Check, query- en kostenoptimalisatie, back-ups) - opgeleverd in 6 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -216,13 +216,13 @@ Nee. De Firebase-configuratie is ontworpen om publiek te zijn en identificeert u
 Omdat iedereen gratis een account kan registreren, staat "ingelogd" gelijk aan "iedereen ter wereld". Dergelijke regels geven elke bezoeker volledige vrijheid om records van andere gebruikers in te zien, te overschrijven of zichzelf beheerdersrechten toe te kennen.
 
 ### Hoe test je Firestore security rules betrouwbaar?
-Door gebruik te maken van de lokale Firebase Emulator Suite. Hiermee schrijf je geautomatiseerde unit tests — inclusief negatieve tests waarbij gebruiker A data van gebruiker B probeert op te vragen — die verplicht slagen in je CI-pijplijn.
+Door gebruik te maken van de lokale Firebase Emulator Suite. Hiermee schrijf je geautomatiseerde unit tests - inclusief negatieve tests waarbij gebruiker A data van gebruiker B probeert op te vragen - die verplicht slagen in je CI-pijplijn.
 
 ### Waarom liep mijn Firebase-maandfactuur zo plotseling hoog op?
 Vrijwel altijd door inefficiënte query-patronen: het ophalen van complete collecties, brede realtime listeners die open blijven staan, of data die bij elke paginarender opnieuw wordt gedownload. Gerichte queries, paginering en caching drukken de kosten direct met tientallen procenten omlaag.
 
 ### Hoe helpt Manifera's ervaring met diverse databasetypen oprichters die Firebase gebruiken?
-Manifera's senior engineers werken dagelijks met Firebase, Supabase, PostgreSQL en MongoDB. Daardoor kunnen zij objectief beoordelen of Firebase op de lange termijn de juiste keuze blijft voor jouw datamodel — en zorgen ze voor een professionele, productiewaardige inrichting zolang je erop bouwt.
+Manifera's senior engineers werken dagelijks met Firebase, Supabase, PostgreSQL en MongoDB. Daardoor kunnen zij objectief beoordelen of Firebase op de lange termijn de juiste keuze blijft voor jouw datamodel - en zorgen ze voor een professionele, productiewaardige inrichting zolang je erop bouwt.
 
 <script type="application/ld+json">
 {

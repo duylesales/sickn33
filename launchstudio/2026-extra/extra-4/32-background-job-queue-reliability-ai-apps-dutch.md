@@ -104,9 +104,9 @@ LaunchStudio's ingenieurs herbouwden de laag voor taakverwerking met exponentië
 **Resultaat:** Femke komt nu binnen minuten achter een vastgelopen batch in plaats van er dagen later via een klant achter te komen.
 
 > *"Het meest angstaanjagende gedeelte was niet dat taken mislukten – het was dat ik oprecht geen idee had dat ze mislukten. Nu krijg ik een bericht voordat een klant het überhaupt opmerkt."*
-> — **Femke Bruins, Oprichter, FactuurVerwerker (Ede)**
+> - **Femke Bruins, Oprichter, FactuurVerwerker (Ede)**
 
-**Kosten en tijdlijn:** € 850 (herziening van herhaallogica, dead-letter queue, en waarschuwingen over alle achtergrondtaken) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 850 (herziening van herhaallogica, dead-letter queue, en waarschuwingen over alle achtergrondtaken) - voltooid in 5 werkdagen.
 
 ---
 

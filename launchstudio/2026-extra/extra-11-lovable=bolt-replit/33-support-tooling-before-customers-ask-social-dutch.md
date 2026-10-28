@@ -1,4 +1,4 @@
-🛠️ Youssef Bakkali schaalde Bijlesnet naar 500 docenten en ouders in Tilburg. Maar hij besteedde 15 uur per week aan support door rechtstreeks rijen in Supabase Studio te wijzigen — totdat een typefout per ongeluk de volledige boekingshistorie van een ouder wiste zonder auditlog. 😳
+🛠️ Youssef Bakkali schaalde Bijlesnet naar 500 docenten en ouders in Tilburg. Maar hij besteedde 15 uur per week aan support door rechtstreeks rijen in Supabase Studio te wijzigen - totdat een typefout per ongeluk de volledige boekingshistorie van een ouder wiste zonder auditlog. 😳
 
 Rechtstreeks in uw productiedatabase sleutelen om klanten te helpen is wachten op een ramp. Waar het misgaat:
 

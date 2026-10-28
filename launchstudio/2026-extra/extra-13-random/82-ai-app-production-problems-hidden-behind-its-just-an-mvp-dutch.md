@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-*"Het is maar een MVP."* Oprichters zeggen het tegen investeerders om verwachtingen te managen, tegen zichzelf om de bouwsnelheid te rechtvaardigen en tegen iedereen die kritische vragen stelt over beveiliging. Het is een uitstekend ondernemersprincipe — maar volkomen verkeerd toegepast. Een Minimum Viable Product (MVP) is bedoeld om de functionele *omvang* van je product te minimaliseren, niet om de zorgvuldigheid voor de mensen die het gebruiken te minimaliseren. Veel sluimerende AI-app productieproblemen glippen erdoorheen precies omdat het MVP-label de uitspraak *"deze feature hebben we nog niet gebouwd"* stilletjes verandert in *"deze persoonsgegevens hoeven we nu nog niet te beschermen"*.
+*"Het is maar een MVP."* Oprichters zeggen het tegen investeerders om verwachtingen te managen, tegen zichzelf om de bouwsnelheid te rechtvaardigen en tegen iedereen die kritische vragen stelt over beveiliging. Het is een uitstekend ondernemersprincipe - maar volkomen verkeerd toegepast. Een Minimum Viable Product (MVP) is bedoeld om de functionele *omvang* van je product te minimaliseren, niet om de zorgvuldigheid voor de mensen die het gebruiken te minimaliseren. Veel sluimerende AI-app productieproblemen glippen erdoorheen precies omdat het MVP-label de uitspraak *"deze feature hebben we nog niet gebouwd"* stilletjes verandert in *"deze persoonsgegevens hoeven we nu nog niet te beschermen"*.
 
 ## Wat 'Minimum' Legitiem Betekent
 
@@ -49,16 +49,16 @@ Dit zijn geen optionele features. Dit zijn de randvoorwaarden om überhaupt gebr
 
 ## Waarom Echte Gebruikers er Direct een Productiesysteem van Maken
 
-Op het exacte moment dat een onbekende gebruiker zijn e-mailadres, wachtwoord of creditcardgegevens invoert, is jouw MVP een volwaardig productiesysteem — juridisch, ethisch en operationeel. Je vroege gebruikers ('early adopters') zijn bovendien je meest waardevolle ambassadeurs: ze geven waardevolle feedback, bevelen je aan bij collega's en vergeven je ruwe randjes in de interface. Wat ze je echter nóóit vergeven, is dat hun privégegevens zichtbaar zijn voor een concurrent of dat er onterecht geld van hun rekening wordt afgeschreven.
+Op het exacte moment dat een onbekende gebruiker zijn e-mailadres, wachtwoord of creditcardgegevens invoert, is jouw MVP een volwaardig productiesysteem - juridisch, ethisch en operationeel. Je vroege gebruikers ('early adopters') zijn bovendien je meest waardevolle ambassadeurs: ze geven waardevolle feedback, bevelen je aan bij collega's en vergeven je ruwe randjes in de interface. Wat ze je echter nóóit vergeven, is dat hun privégegevens zichtbaar zijn voor een concurrent of dat er onterecht geld van hun rekening wordt afgeschreven.
 
 ## Het Kostenargument, Maar Dan Omgekeerd
 
-Veel oprichters stellen de basisbeveiliging uit onder het mom van *"we moeten zuinig zijn met ons budget"*. In de praktijk is het fundament dichttimmeren nergens zo goedkoop als in de MVP-fase: er zijn nog geen gigantische databases om te migreren, geen duizenden klanten die je moet inlichten en geen complexe integraties die kunnen omvallen. Dezelfde reparaties ná serieuze groei kosten het viervoudige — en ná een datalek een veelvoud daarvan, inclusief boetes, juridische kosten en herstel van reputatieschade.
+Veel oprichters stellen de basisbeveiliging uit onder het mom van *"we moeten zuinig zijn met ons budget"*. In de praktijk is het fundament dichttimmeren nergens zo goedkoop als in de MVP-fase: er zijn nog geen gigantische databases om te migreren, geen duizenden klanten die je moet inlichten en geen complexe integraties die kunnen omvallen. Dezelfde reparaties ná serieuze groei kosten het viervoudige - en ná een datalek een veelvoud daarvan, inclusief boetes, juridische kosten en herstel van reputatieschade.
 
 ## De 'Minimum Safe Standard' van Eén A4 voor Elk MVP
 
 Houd je functionele wensenlijst minimaal; houd deze zeven punten ononderhandelbaar:
-1. Gebruikers kunnen uitsluitend bij hun eigen data — server-side afgedwongen in de database.
+1. Gebruikers kunnen uitsluitend bij hun eigen data - server-side afgedwongen in de database.
 2. Geen enkele geheime API-sleutel zichtbaar in de browser of app-code.
 3. Betalingen worden uitsluitend goedgekeurd via geverifieerde server-webhooks van de payment provider.
 4. Dagelijkse back-ups actief, waarvan het herstel minimaal één keer succesvol is getest.
@@ -66,11 +66,11 @@ Houd je functionele wensenlijst minimaal; houd deze zeven punten ononderhandelba
 6. Alle cloud- en betaalaccounts staan op naam van het bedrijf met verplichte 2FA.
 7. Realtime storings- en foutmonitoring die direct een notificatie naar een persoon stuurt.
 
-Een gericht Launch Ready-traject dat deze basis dichttimmert, begint bij eenvoudige tools al vanaf € 800 — een fractie van wat een incident kost.
+Een gericht Launch Ready-traject dat deze basis dichttimmert, begint bij eenvoudige tools al vanaf € 800 - een fractie van wat een incident kost.
 
 ## Hoe Je Hierover Communiceert met Investeerders
 
-De uitspraak *"het is maar een MVP"* is prima zolang het over functionaliteiten gaat. Wanneer een professionele investeerder vraagt naar beveiliging en compliance, luidt het professionele antwoord: *"Onze featureset is bewust minimaal; onze Minimum Safe Standard staat als een huis."* Dit toont direct aan dat je het verschil begrijpt tussen wendbaarheid en roekeloosheid — exact het onderscheid waar ervaren investeerders tijdens de due diligence op selecteren.
+De uitspraak *"het is maar een MVP"* is prima zolang het over functionaliteiten gaat. Wanneer een professionele investeerder vraagt naar beveiliging en compliance, luidt het professionele antwoord: *"Onze featureset is bewust minimaal; onze Minimum Safe Standard staat als een huis."* Dit toont direct aan dat je het verschil begrijpt tussen wendbaarheid en roekeloosheid - exact het onderscheid waar ervaren investeerders tijdens de due diligence op selecteren.
 
 ## Je Veilige Ondergrens Zwart-op-Wit Vastleggen
 
@@ -109,15 +109,15 @@ Investeerders horen het excuus *"het is maar een MVP"* wekelijks. Wat hen echt o
 
 ## Wanneer een MVP Geen MVP Meer Is
 
-Het MVP-label heeft een houdbaarheidsdatum. Signalen dat je de MVP-fase definitief ontgroeid bent: betalende zakelijke klanten vertrouwen dagelijks op je software; je verwelkomt gebruikers die je niet persoonlijk kent; zakelijke prospects sturen security-vragenlijsten; of je haalt groeigeld op. Op dat moment herijk je de uitgestelde punten — performance, monitoring en diepgaande tests — en til je de applicatie naar het volgende niveau.
+Het MVP-label heeft een houdbaarheidsdatum. Signalen dat je de MVP-fase definitief ontgroeid bent: betalende zakelijke klanten vertrouwen dagelijks op je software; je verwelkomt gebruikers die je niet persoonlijk kent; zakelijke prospects sturen security-vragenlijsten; of je haalt groeigeld op. Op dat moment herijk je de uitgestelde punten - performance, monitoring en diepgaande tests - en til je de applicatie naar het volgende niveau.
 
 ## Veelgehoorde Drogredenen om Scherp op te Letten
 
-- *"Niemand kent onze app nog."* — Automatische hackerscanners scannen het hele internet continu af.
-- *"We hebben alleen bevriende testgebruikers."* — Ook vrienden hergebruiken wachtwoorden en sturen links door.
-- *"We regelen de security wel na de volgende financieringsronde."* — Investeerders auditen je vóórdat ze geld overmaken.
-- *"De AI-tool heeft dit vast automatisch geregeld."* — AI bouwt wat je vraagt, niet wat je vergeet te vragen.
-- *"We ruimen de code wel op na de lancering."* — Na livegang vecht elk technisch taakje om voorrang met urgente klantverzoeken.
+- *"Niemand kent onze app nog."* - Automatische hackerscanners scannen het hele internet continu af.
+- *"We hebben alleen bevriende testgebruikers."* - Ook vrienden hergebruiken wachtwoorden en sturen links door.
+- *"We regelen de security wel na de volgende financieringsronde."* - Investeerders auditen je vóórdat ze geld overmaken.
+- *"De AI-tool heeft dit vast automatisch geregeld."* - AI bouwt wat je vraagt, niet wat je vergeet te vragen.
+- *"We ruimen de code wel op na de lancering."* - Na livegang vecht elk technisch taakje om voorrang met urgente klantverzoeken.
 
 ## Een 2-Wekenplan voor het Beveiligen van je MVP
 
@@ -134,11 +134,11 @@ Een MVP mag volkomen transparant zijn over wat het nog niet kan: een heldere roa
 
 ## Hoe een Volwassen MVP er in de Praktijk Uitziet
 
-Een goed ontworpen MVP oogt aan de buitenkant doelbewust compact en is aan de binnenkant doelbewust zorgvuldig: een handvol functionaliteiten die vlekkeloos werken, gebruikers die uitsluitend bij hun eigen data kunnen, betalingen die kloppen tot op de cent en een oprichter die 's nachts rustig kan slapen. Dat is het fundamentele verschil tussen een *Minimum Viable Product* en een *Minimum Viable Risk* — en alleen de eerste variant is het lanceren waard.
+Een goed ontworpen MVP oogt aan de buitenkant doelbewust compact en is aan de binnenkant doelbewust zorgvuldig: een handvol functionaliteiten die vlekkeloos werken, gebruikers die uitsluitend bij hun eigen data kunnen, betalingen die kloppen tot op de cent en een oprichter die 's nachts rustig kan slapen. Dat is het fundamentele verschil tussen een *Minimum Viable Product* en een *Minimum Viable Risk* - en alleen de eerste variant is het lanceren waard.
 
 ## De Eerste Stap
 
-Open vandaag nog onze Minimum Safe Standard tabel, leg deze naast jouw prototype en markeer elk punt eerlijk met 'Waar', 'Niet waar' of 'Onbekend'. Elke regel die niet direct 'Waar' is, vormt jouw absolute prioriteit — vóórdat de volgende gebruiker zich registreert.
+Open vandaag nog onze Minimum Safe Standard tabel, leg deze naast jouw prototype en markeer elk punt eerlijk met 'Waar', 'Niet waar' of 'Onbekend'. Elke regel die niet direct 'Waar' is, vormt jouw absolute prioriteit - vóórdat de volgende gebruiker zich registreert.
 
 ## Minimale Features, Maximale Zorgvuldigheid
 
@@ -150,7 +150,7 @@ Stel bij elk item op je backlog één simpele vraag: *is dit een scope-beslissin
 
 ## Waar LaunchStudio het Verschil Maakt
 
-LaunchStudio helpt oprichters en indie hackers om hun met AI gebouwde MVP binnen één tot twee weken naar de Minimum Safe Standard te tillen — zonder onnodige features toe te voegen of te herbouwen wat al goed werkt. LaunchStudio brengt de enterprise-engineering van Manifera naar de startup-wereld: meer dan 11 jaar ervaring, software-engineers in Ho Chi Minhstad en directe projectbegeleiding vanaf Herengracht 420 in Amsterdam. Bekijk [Manifera's portfolio](https://www.manifera.com/portfolio/); de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl) benadrukt dat privacywetgeving onverminderd van kracht is, ongeacht de omvang van je bedrijf.
+LaunchStudio helpt oprichters en indie hackers om hun met AI gebouwde MVP binnen één tot twee weken naar de Minimum Safe Standard te tillen - zonder onnodige features toe te voegen of te herbouwen wat al goed werkt. LaunchStudio brengt de enterprise-engineering van Manifera naar de startup-wereld: meer dan 11 jaar ervaring, software-engineers in Ho Chi Minhstad en directe projectbegeleiding vanaf Herengracht 420 in Amsterdam. Bekijk [Manifera's portfolio](https://www.manifera.com/portfolio/); de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl) benadrukt dat privacywetgeving onverminderd van kracht is, ongeacht de omvang van je bedrijf.
 
 [Deel je MVP-link met ons](https://launchstudio.eu/nl/#contact) en we vertellen je direct en kosteloos welke van de zeven basisveiligheidspunten jouw applicatie nog mist.
 
@@ -160,16 +160,16 @@ LaunchStudio helpt oprichters en indie hackers om hun met AI gebouwde MVP binnen
 
 Kim Verheul, verhuurder van compacte elektrische sloepen in Vlaardingen, bouwde Bootje in Lovable als "gewoon een eenvoudig MVP": watersporters kiezen online een sloep en tijdvak, betalen de borg via hun telefoon en ontvangen direct de digitale pincode van het kluisje met de bootsleutel. Ze was van plan het systeem één zomerseizoen informeel te testen voordat ze structureel zou investeren. Binnen drie zonnige weken stroomden er ruim 400 boekingen binnen.
 
-"Gewoon een test" bleek al snel serieuze gevolgen te hebben. Elke boeking — inclusief naam, telefoonnummer en de actuele pincode van het bootslot — bleek via een eenvoudig API-verzoek opvraagbaar voor elke ingelogde gebruiker. Borgbetalingen werden uitsluitend gevalideerd op basis van de browserredirect, waardoor handige gebruikers de sleutelcode ontvingen zonder dat er daadwerkelijk was afgerekend. De geheime Mollie-sleutel stond open in de frontend-code, er werden geen back-ups gemaakt en de database stond in de VS. Toen een sloep werd meegenomen door jongeren die niet hadden geboekt — met behulp van een pincode uit het dossier van een andere klant — realiseerde Kim zich dat het MVP-label haar nergens tegen beschermde.
+"Gewoon een test" bleek al snel serieuze gevolgen te hebben. Elke boeking - inclusief naam, telefoonnummer en de actuele pincode van het bootslot - bleek via een eenvoudig API-verzoek opvraagbaar voor elke ingelogde gebruiker. Borgbetalingen werden uitsluitend gevalideerd op basis van de browserredirect, waardoor handige gebruikers de sleutelcode ontvingen zonder dat er daadwerkelijk was afgerekend. De geheime Mollie-sleutel stond open in de frontend-code, er werden geen back-ups gemaakt en de database stond in de VS. Toen een sloep werd meegenomen door jongeren die niet hadden geboekt - met behulp van een pincode uit het dossier van een andere klant - realiseerde Kim zich dat het MVP-label haar nergens tegen beschermde.
 
 In acht werkdagen hebben de software-engineers van LaunchStudio Bootje naar de Minimum Safe Standard gebracht: toegang tot boekingen en kluiscodes strikt afgeschermd tot de daadwerkelijke huurder en uitsluitend actief tijdens het gereserveerde tijdslot, borgbetalingen geverifieerd via Mollie server-webhooks vóór code-uitgifte, API-sleutels geroteerd, de database gemigreerd naar Frankfurt met geteste back-ups, en storingsalerts geactiveerd. De functionaliteit bleef exact even compact als voorheen.
 
-**Resultaat:** Bootje sloot het zomerseizoen af met circa 1.900 probleemloze verhuringen zonder enige vorm van ongeautoriseerd bootgebruik. Het volgende voorjaar breidde Kim vol vertrouwen uit naar een tweede jachthaven — met exact dezelfde gestroomlijnde functionaliteiten.
+**Resultaat:** Bootje sloot het zomerseizoen af met circa 1.900 probleemloze verhuringen zonder enige vorm van ongeautoriseerd bootgebruik. Het volgende voorjaar breidde Kim vol vertrouwen uit naar een tweede jachthaven - met exact dezelfde gestroomlijnde functionaliteiten.
 
 > *"Ik hield het MVP bewust klein, wat heel slim was. Maar ik hield de veiligheid óók minimaal, en dat was een kapitale fout."*
-> — **Kim Verheul, Oprichter, Bootje (Vlaardingen)**
+> - **Kim Verheul, Oprichter, Bootje (Vlaardingen)**
 
-**Kosten & Tijdlijn:** € 2.200 (Launch Ready-pakket: toegangscontrole, slotcode-beveiliging, betalingen, datamigratie en monitoring) — afgerond in 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.200 (Launch Ready-pakket: toegangscontrole, slotcode-beveiliging, betalingen, datamigratie en monitoring) - afgerond in 8 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -187,7 +187,7 @@ Integendeel. In de beginfase is de database klein en zijn er weinig gebruikers, 
 
 ### Wat controleren Manifera's software-engineers als eerste bij een MVP?
 
-Autorisatieregels op de database (Row-Level Security), hardcoded API-sleutels en de betalingsvalidatie via webhooks — de drie kwetsbaarheden die bij AI-prototypes het vaakst misgaan — direct gevolgd door back-ups en accountbeheer.
+Autorisatieregels op de database (Row-Level Security), hardcoded API-sleutels en de betalingsvalidatie via webhooks - de drie kwetsbaarheden die bij AI-prototypes het vaakst misgaan - direct gevolgd door back-ups en accountbeheer.
 
 ### Kan een veilig MVP al vroeg een sterke online reputatie opbouwen?
 

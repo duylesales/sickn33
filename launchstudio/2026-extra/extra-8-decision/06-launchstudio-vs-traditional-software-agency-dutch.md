@@ -32,9 +32,9 @@ Doelgroep: SaaS Oprichter Scale-Up
 }
 </script>
 
-Een scale-up oprichter die een werkend, met AI gegenereerd prototype naar een traditioneel softwarebureau brengt voor een offerte voor productiegereedheid, krijgt doorgaans een verrassend voorstel terug: geen afgebakende reparatie, maar een compleet discovery- en herbouwtraject van vier maanden dat diep in de vijf cijfers loopt. Dat is geen oneerlijkheid van het traditionele bureau — het is een traditioneel bureau dat antwoordt met het enige gereedschap waar het omheen gebouwd is. Volledige maatwerktrajecten zijn immers het model waar de meeste bureaus qua personeel en prijsstelling op zijn ingericht. 
+Een scale-up oprichter die een werkend, met AI gegenereerd prototype naar een traditioneel softwarebureau brengt voor een offerte voor productiegereedheid, krijgt doorgaans een verrassend voorstel terug: geen afgebakende reparatie, maar een compleet discovery- en herbouwtraject van vier maanden dat diep in de vijf cijfers loopt. Dat is geen oneerlijkheid van het traditionele bureau - het is een traditioneel bureau dat antwoordt met het enige gereedschap waar het omheen gebouwd is. Volledige maatwerktrajecten zijn immers het model waar de meeste bureaus qua personeel en prijsstelling op zijn ingericht. 
 
-De eerlijke vergelijking tussen LaunchStudio en een traditioneel bureau gaat er niet om welke van de twee abstract "beter" is; het gaat erom welk type probleem u daadwerkelijk heeft, en beide benaderingen zijn gebouwd om wezenlijk andere uitdagingen op te lossen. Met name scale-up oprichters lopen op een specifiek, voorspelbaar moment tegen deze mismatch aan: vroege tractie heeft bewezen dat het product aanslaat, er is eindelijk budget om er serieus in te investeren, en het instinct is om naar de meest gevestigde optie te grijpen — meestal een traditioneel bureau met een gelikte portfolio en enterprise-referenties. De omvang van eerdere projecten van zo'n bureau zegt echter bitter weinig over de vraag of een totale herbouw is wat uw specifieke prototype daadwerkelijk nodig heeft.
+De eerlijke vergelijking tussen LaunchStudio en een traditioneel bureau gaat er niet om welke van de twee abstract "beter" is; het gaat erom welk type probleem u daadwerkelijk heeft, en beide benaderingen zijn gebouwd om wezenlijk andere uitdagingen op te lossen. Met name scale-up oprichters lopen op een specifiek, voorspelbaar moment tegen deze mismatch aan: vroege tractie heeft bewezen dat het product aanslaat, er is eindelijk budget om er serieus in te investeren, en het instinct is om naar de meest gevestigde optie te grijpen - meestal een traditioneel bureau met een gelikte portfolio en enterprise-referenties. De omvang van eerdere projecten van zo'n bureau zegt echter bitter weinig over de vraag of een totale herbouw is wat uw specifieke prototype daadwerkelijk nodig heeft.
 
 ## Wat een Offerte van een Traditioneel Bureau Doorgaans Veronderstelt
 
@@ -52,7 +52,7 @@ Dit is niet per se een bewuste keuze om te veel te verkopen; het is wat er gebeu
 
 De meeste met AI gegenereerde prototypes die dit beslismoment bereiken, hoeven helemaal niet te worden vervangen. De productlogica werkt, de interface weerspiegelt reële ontwerpbeslissingen die de oprichter heeft gemaakt en gevalideerd met gebruikers, en de kernfunctionaliteit functioneert naar behoren. Wat ontbreekt is specifieker en smaller: autorisatie die wordt afgedwongen op de API-laag, correct geverifieerde betalingswebhooks, API-geheimen die uit de codebase zijn gehaald en in een beveiligde configuratie zijn ondergebracht, en gestructureerde foutafhandeling voor externe API-storingen. 
 
-Geen van deze zaken vereist dat het product vanaf de grond opnieuw wordt ontworpen. Ze vereisen een gerichte audit op bekende risicocategorieën, gevolgd door doelgerichte backend-reparaties — een fundamenteel ander, en fundamenteel kleiner, type opdracht dan een totale herbouw. Het onderscheid maken tussen de twee komt neer op een heldere toets: faalt het product omdat de didactische of functionele logica niet klopt, of omdat de beveiligingslaag die die logica beschermt ontbreekt? Een scale-up oprichter die al betalende klanten heeft binnengehaald op basis van het bestaande prototype, heeft de eerste helft van die vraag al beantwoord: de logica werkt, anders zouden die klanten niet betalen. Dat maakt de infrastructuurlaag het overduidelijke werkelijke knelpunt.
+Geen van deze zaken vereist dat het product vanaf de grond opnieuw wordt ontworpen. Ze vereisen een gerichte audit op bekende risicocategorieën, gevolgd door doelgerichte backend-reparaties - een fundamenteel ander, en fundamenteel kleiner, type opdracht dan een totale herbouw. Het onderscheid maken tussen de twee komt neer op een heldere toets: faalt het product omdat de didactische of functionele logica niet klopt, of omdat de beveiligingslaag die die logica beschermt ontbreekt? Een scale-up oprichter die al betalende klanten heeft binnengehaald op basis van het bestaande prototype, heeft de eerste helft van die vraag al beantwoord: de logica werkt, anders zouden die klanten niet betalen. Dat maakt de infrastructuurlaag het overduidelijke werkelijke knelpunt.
 
 ## Tijdlijn en Kosten: Weken en Duizenden, Geen Maanden en Tienduizenden
 
@@ -62,9 +62,9 @@ De vaste pakketten van LaunchStudio duren daarentegen één tot drie weken en ko
 
 ## Wat Er Verloren Gaat Bij een Volledige Herbouw Dat Niet Verloren Hoeft te Gaan
 
-Buiten tijd en geld brengt een complete herbouw nog een stillere kostenpost met zich mee: maanden aan opgebouwde productintuïtie — de specifieke interfacebeslissingen, randgevallen en kleine ontwerpkeuzes die een oprichter heeft aangescherpt via directe gebruikersfeedback — moeten opnieuw worden gespecificeerd vanuit een schriftelijke briefing in plaats van direct behouden te blijven. Daarbij gaat onvermijdelijk iets verloren in vertaling. 
+Buiten tijd en geld brengt een complete herbouw nog een stillere kostenpost met zich mee: maanden aan opgebouwde productintuïtie - de specifieke interfacebeslissingen, randgevallen en kleine ontwerpkeuzes die een oprichter heeft aangescherpt via directe gebruikersfeedback - moeten opnieuw worden gespecificeerd vanuit een schriftelijke briefing in plaats van direct behouden te blijven. Daarbij gaat onvermijdelijk iets verloren in vertaling. 
 
-Een herbouwd product is niet simpelweg een snellere versie van hetzelfde; het is een herinterpretatie ervan, gefilterd door het begrip van een nieuw team dat een specificatiedocument leest. Oprichters die dit hebben meegemaakt, ontdekken vaak dat kleine maar waardevolle nuances uit hun originele prototype geruisloos ontbreken in de herbouwde versie — vaak pas opgemerkt wanneer een terugkerende gebruiker erover klaagt. Er is bovendien nog een secundair nadeel: een volledige herbouw vereist doorgaans dat feature-ontwikkeling en klantgerichte iteraties maandenlang worden stilgelegd, terwijl een gerichte hardening-sprint parallel kan lopen aan het werk van de oprichter, omdat het een compleet andere laag van het systeem raakt.
+Een herbouwd product is niet simpelweg een snellere versie van hetzelfde; het is een herinterpretatie ervan, gefilterd door het begrip van een nieuw team dat een specificatiedocument leest. Oprichters die dit hebben meegemaakt, ontdekken vaak dat kleine maar waardevolle nuances uit hun originele prototype geruisloos ontbreken in de herbouwde versie - vaak pas opgemerkt wanneer een terugkerende gebruiker erover klaagt. Er is bovendien nog een secundair nadeel: een volledige herbouw vereist doorgaans dat feature-ontwikkeling en klantgerichte iteraties maandenlang worden stilgelegd, terwijl een gerichte hardening-sprint parallel kan lopen aan het werk van de oprichter, omdat het een compleet andere laag van het systeem raakt.
 
 ## Waar een Traditioneel Bureau Wél de Juiste Keuze Is
 
@@ -72,9 +72,9 @@ Dit alles betekent niet dat traditionele bureaus categorisch de verkeerde keuze 
 
 Het eerlijke onderscheid is echter dat dit slechts een minderheid beschrijft van de oprichters die aankloppen met een werkend AI-prototype en een specifieke technische vraag. Voor de veel grotere meerderheid is het versterken van wat er al staat zowel aanzienlijk sneller als veel trouwer aan wat er daadwerkelijk is gevalideerd.
 
-[LaunchStudio](https://launchstudio.eu/nl/) is specifiek gebouwd voor die meerderheid, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering — om te harden wat u al heeft gebouwd in plaats van het weg te gooien.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek gebouwd voor die meerderheid, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering - om te harden wat u al heeft gebouwd in plaats van het weg te gooien.
 
-[Vraag een vergelijking met vaste prijs aan vóór u tekent voor een complete herbouw](https://launchstudio.eu/nl/#contact) — tijdens een kort intakegesprek weet u binnen enkele minuten of uw prototype herbouwd moet worden of gehard.
+[Vraag een vergelijking met vaste prijs aan vóór u tekent voor een complete herbouw](https://launchstudio.eu/nl/#contact) - tijdens een kort intakegesprek weet u binnen enkele minuten of uw prototype herbouwd moet worden of gehard.
 
 ## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: De Offerte van €38.000 Die Niet Nodig Was
@@ -86,9 +86,9 @@ Voordat hij tekende, bracht Joris hetzelfde prototype naar LaunchStudio voor een
 **Resultaat:** LaunchStudio dichtte beide lekken met solide multi-tenant data-isolatie en bestandsuploadvalidatie. Joris kon vijf weken eerder live gaan naar zijn volgende groep potentiële klanten dan de voorgestelde tijdlijn van het bureau überhaupt zou toestaan, tegen ongeveer een tiende van de geoffreerde kosten.
 
 > *"Het bureau had geen ongelijk dat InkoopHub echte kwetsbaarheden had. Ze hadden ongelijk dat het oplossen ervan betekende dat we helemaal opnieuw moesten beginnen. Iemand die daadwerkelijk naar mijn code keek, vond het echte probleem in één dag."*  
-> — **Joris Bakker, Oprichter, InkoopHub (Nijmegen)**
+> - **Joris Bakker, Oprichter, InkoopHub (Nijmegen)**
 
-**Kosten & Tijdlijn:** €3.800 (Relaunch & Scale Pakket, multi-tenant toegangscontrole en bestandsvalidatie) — live in 13 werkdagen.
+**Kosten & Tijdlijn:** €3.800 (Relaunch & Scale Pakket, multi-tenant toegangscontrole en bestandsvalidatie) - live in 13 werkdagen.
 
 ---
 

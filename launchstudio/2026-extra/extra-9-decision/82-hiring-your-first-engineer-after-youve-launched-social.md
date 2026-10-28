@@ -1,4 +1,4 @@
-🚨 "Just hire someone senior," a fellow founder told Sanne over drinks — true and useless, since she couldn't tell a confident interview answer from a correct one. 😬
+🚨 "Just hire someone senior," a fellow founder told Sanne over drinks - true and useless, since she couldn't tell a confident interview answer from a correct one. 😬
 
 The gap isn't deciding to hire. It's evaluating a skill you don't have yourself: 🧠
 
@@ -14,7 +14,7 @@ The gap isn't deciding to hire. It's evaluating a skill you don't have yourself:
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers, we sit in on technical interviews and grade take-home tests against your real codebase. 🔎
 
-Her result: the stronger resume was the weaker fit — the candidate she hired shipped a real feature solo within five weeks, no issues traced back. 🚀
+Her result: the stronger resume was the weaker fit - the candidate she hired shipped a real feature solo within five weeks, no issues traced back. 🚀
 
 👉 Talk to an engineer about sitting in on your next technical interview: https://launchstudio.eu/en/blog/hiring-your-first-engineer-after-youve-launched
 

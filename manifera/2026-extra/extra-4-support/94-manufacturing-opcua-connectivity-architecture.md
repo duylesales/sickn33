@@ -20,7 +20,7 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a manufacturing technology company building a data platform that connects to shop-floor equipment — programmable logic controllers (PLCs), sensors, industrial machinery — faces a foundational architecture decision directly shaping the platform's real deployability across genuinely diverse factory environments: whether machine connectivity is built around OPC-UA (Open Platform Communications Unified Architecture), the vendor-neutral industrial communication standard, or around a specific PLC vendor's own proprietary communication protocol.
+A CTO at a manufacturing technology company building a data platform that connects to shop-floor equipment - programmable logic controllers (PLCs), sensors, industrial machinery - faces a foundational architecture decision directly shaping the platform's real deployability across genuinely diverse factory environments: whether machine connectivity is built around OPC-UA (Open Platform Communications Unified Architecture), the vendor-neutral industrial communication standard, or around a specific PLC vendor's own proprietary communication protocol.
 
 ## What OPC-UA Actually Standardizes
 
@@ -44,13 +44,13 @@ A specific, concrete business consequence of this architectural choice: a manufa
 
 ## Why This Gap Is Especially Common Among Startups Built Around a First Factory Customer
 
-A specific reason this architectural mismatch shows up repeatedly among manufacturing technology startups specifically, as it did at Gyári Adatrendszerek Miskolc below: building efficiently and specifically for a first factory customer's actual equipment is a genuinely reasonable early-stage priority, and the risk isn't in that initial pragmatic choice — it's in not recognizing explicitly that the resulting architecture reflects that specific customer's particular equipment mix rather than a deliberate, generalizable connectivity strategy. A founding team can reasonably feel confident their platform "handles PLC connectivity" based on strong results with their first customer, without recognizing that this confidence rests on a genuinely narrow equipment mix sample that may not represent the broader diversity their eventual target market actually presents.
+A specific reason this architectural mismatch shows up repeatedly among manufacturing technology startups specifically, as it did at Gyári Adatrendszerek Miskolc below: building efficiently and specifically for a first factory customer's actual equipment is a genuinely reasonable early-stage priority, and the risk isn't in that initial pragmatic choice - it's in not recognizing explicitly that the resulting architecture reflects that specific customer's particular equipment mix rather than a deliberate, generalizable connectivity strategy. A founding team can reasonably feel confident their platform "handles PLC connectivity" based on strong results with their first customer, without recognizing that this confidence rests on a genuinely narrow equipment mix sample that may not represent the broader diversity their eventual target market actually presents.
 
 This is a specific instance of a broader pattern worth naming directly across several of the technical case studies in this collection: an architecture decision that's genuinely correct and efficient for a startup's first customer can quietly become an unexamined default that doesn't actually generalize, and a founding team benefits from periodically and deliberately asking whether foundational architecture decisions reflect genuine, considered choices about the platform's target market's actual equipment diversity, or simply reflect whatever happened to work for the specific circumstances of the earliest customer relationship that shaped the product's initial build.
 
 ## Why Capital Equipment Investment Cycles Make This Diversity a Structural, Permanent Reality
 
-A related, important consideration worth naming directly: manufacturing equipment represents genuinely substantial capital investment with long depreciation and replacement cycles, often spanning many years or even decades for major industrial machinery, meaning a typical factory's equipment mix reflects purchasing decisions made across a long historical period during which the specific vendors offering the best equipment, pricing, or service relationships at any given time naturally varied. This isn't a temporary market inefficiency likely to resolve toward single-vendor uniformity over time — it's a structural, permanent feature of how manufacturing capital equipment investment actually works, meaning the multi-vendor diversity this article describes isn't a transitional condition a manufacturing technology platform can reasonably expect to fade as an easier, more homogeneous equipment landscape eventually emerges.
+A related, important consideration worth naming directly: manufacturing equipment represents genuinely substantial capital investment with long depreciation and replacement cycles, often spanning many years or even decades for major industrial machinery, meaning a typical factory's equipment mix reflects purchasing decisions made across a long historical period during which the specific vendors offering the best equipment, pricing, or service relationships at any given time naturally varied. This isn't a temporary market inefficiency likely to resolve toward single-vendor uniformity over time - it's a structural, permanent feature of how manufacturing capital equipment investment actually works, meaning the multi-vendor diversity this article describes isn't a transitional condition a manufacturing technology platform can reasonably expect to fade as an easier, more homogeneous equipment landscape eventually emerges.
 
 This is a specific reason a manufacturing technology company should treat genuine multi-vendor connectivity capability as a permanent, structural market requirement rather than a temporary accommodation to be minimized while waiting for equipment vendor consolidation that isn't realistically coming, given how manufacturing capital investment cycles actually work in practice across the industry.
 
@@ -68,7 +68,7 @@ Gyári Adatrendszerek Miskolc, a Miskolc-based manufacturing technology company,
 Manifera's Amsterdam team rebuilt the platform's connectivity layer around genuine OPC-UA client capability, tested against real equipment from multiple vendors, and added a legacy equipment bridging capability for the prospective customer's older equipment that predated OPC-UA adoption.
 
 > *"We'd built for our first customer's specific equipment and just assumed that was close enough to a general solution. The mixed-fleet prospect showed us how narrow that assumption actually was, and rebuilding around the actual open standard was what let us serve a genuinely mixed factory floor instead of just factories that happened to match our first customer."*
-> — **CTO, Gyári Adatrendszerek Miskolc**
+> - **CTO, Gyári Adatrendszerek Miskolc**
 
 Gyári Adatrendszerek Miskolc successfully deployed at the mixed-fleet prospect following the rebuild and has since onboarded several additional factories with genuinely diverse equipment vendor mixes, directly expanding the platform's addressable market beyond its original single-vendor assumption.
 
@@ -83,7 +83,7 @@ Gyári Adatrendszerek Miskolc successfully deployed at the mixed-fleet prospect 
 
 ## Scoping Your Own Manufacturing Data Platform's Connectivity Architecture
 
-Before building a manufacturing data platform's equipment connectivity layer, build genuine OPC-UA capability rather than a single vendor's proprietary protocol — real factory floors are frequently multi-vendor, and proprietary lock-in constrains realistic market reach. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an OPC-UA-native manufacturing data platform.
+Before building a manufacturing data platform's equipment connectivity layer, build genuine OPC-UA capability rather than a single vendor's proprietary protocol - real factory floors are frequently multi-vendor, and proprietary lock-in constrains realistic market reach. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an OPC-UA-native manufacturing data platform.
 
 ## Frequently Asked Questions
 
@@ -105,7 +105,7 @@ Through appropriate gateway or bridging capability, since many real factory floo
 
 ### (Scenario: CTO evaluating a manufacturing technology development team) What should I ask a development team about their OPC-UA connectivity experience?
 
-Ask specifically how they've tested against real equipment from multiple vendors and how they handle vendor-specific implementation variation and legacy equipment bridging — genuine experience produces a specific, technical answer.
+Ask specifically how they've tested against real equipment from multiple vendors and how they handle vendor-specific implementation variation and legacy equipment bridging - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

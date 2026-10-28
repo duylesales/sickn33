@@ -1,4 +1,4 @@
-Most pipeline postmortems find the failure that caused the outage was never on anyone's design list — because it simply hadn't happened yet. Foreseeable isn't the same as already-experienced. 🌊⚠️
+Most pipeline postmortems find the failure that caused the outage was never on anyone's design list - because it simply hadn't happened yet. Foreseeable isn't the same as already-experienced. 🌊⚠️
 
 **The Pain Points:**
 ❌ **Reactive Hardening Only:** Well-defended against past incidents, wide open to entire categories that haven't struck yet.
@@ -10,7 +10,7 @@ Most pipeline postmortems find the failure that caused the outage was never on a
 ✅ **Out-of-Order Data as the Normal Case:** Architecture designed for late arrival, not surprised by it.
 ✅ **Pattern-Agnostic Observability:** Freshness, volume, and quality signals that catch problems no one named yet.
 
-Design for the failure you haven't had yet — not just the one you already fixed. ⚙️
+Design for the failure you haven't had yet - not just the one you already fixed. ⚙️
 
 👉 Read our full deep dive on data pipeline architecture: https://www.manifera.com/blog/data-pipeline-architecture
 

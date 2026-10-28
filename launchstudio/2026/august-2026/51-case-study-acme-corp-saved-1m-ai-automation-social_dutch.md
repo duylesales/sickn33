@@ -1,4 +1,4 @@
-🔥 Acme Corp verving handmatige data-invoer door een multimodale AI-pijplijn — een Europees logistiek bedrijf bespaarde jaarlijks ruim 1,1 miljoen dollar door 5.000 dagelijkse PDF-facturen semantisch te verwerken en rechtstreeks in SAP in te schieten. 🧠
+🔥 Acme Corp verving handmatige data-invoer door een multimodale AI-pijplijn - een Europees logistiek bedrijf bespaarde jaarlijks ruim 1,1 miljoen dollar door 5.000 dagelijkse PDF-facturen semantisch te verwerken en rechtstreeks in SAP in te schieten. 🧠
 
 Het vervangen van rigide OCR door multimodale LLM's verkortte de verwerkingstijd van 4 minuten naar 3,5 seconden per document met 93% lagere operationele kosten.
 
@@ -12,7 +12,7 @@ Het vervangen van rigide OCR door multimodale LLM's verkortte de verwerkingstijd
 
 Bij **LaunchStudio** lossen we exact dit type document-extractie en ERP-integratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Acme Corps operatie werd een gestroomlijnde machine: De kosten daalden met 93%, de verwerkingssnelheid steeg met een factor 68 en de foutmarge daalde naar 0,5%. (€1.600 (Billing & Data Pipeline Repair) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Acme Corps operatie werd een gestroomlijnde machine: De kosten daalden met 93%, de verwerkingssnelheid steeg met een factor 68 en de foutmarge daalde naar 0,5%. (€1.600 (Billing & Data Pipeline Repair) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/case-study-acme-corp-saved-1m-ai-automation
 

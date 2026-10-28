@@ -1,4 +1,4 @@
-🚨 Zijn AI-tool werkte technisch perfect. Conversiepercentage: onder de 2%. Het probleem was niet het product — maar dat NIEMAND geloofde dat er een echt bedrijf achter zat. 😱
+🚨 Zijn AI-tool werkte technisch perfect. Conversiepercentage: onder de 2%. Het probleem was niet het product - maar dat NIEMAND geloofde dat er een echt bedrijf achter zat. 😱
 
 Bezoekers ruiken tegenwoordig direct wanneer iets "volledig AI-gegenereerd" is en haken af. Dit is de uncanny valley van AI-software: 🧠
 
@@ -11,9 +11,9 @@ De vertrouwenssignalen die wél converteren: ✅
 ✅ Duidelijk bewijs van een menselijke specialist achter het product
 ✅ Verifieerbare klantverhalen met herkenbare situaties
 
-Bij **LaunchStudio** zorgen we dat het technische fundament naadloos aansluit op het vertrouwen dat u bouwt — want een trage app of een data-hapering vernietigt vertrouwen onmiddellijk. 🛡️
+Bij **LaunchStudio** zorgen we dat het technische fundament naadloos aansluit op het vertrouwen dat u bouwt - want een trage app of een data-hapering vernietigt vertrouwen onmiddellijk. 🛡️
 
-Zijn conversie steeg van 2% naar 11% in zes weken — puur door tastbaar en authentiek te worden. 🚀
+Zijn conversie steeg van 2% naar 11% in zes weken - puur door tastbaar en authentiek te worden. 🚀
 
 🧠 De psychologie: "vertrouwd door bedrijven wereldwijd" = nul vertrouwen. "Gebruikt door 87 fysiotherapeuten in Overijssel" = direct vertrouwen, omdat het controleerbaar klinkt.
 

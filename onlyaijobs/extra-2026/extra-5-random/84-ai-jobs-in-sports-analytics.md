@@ -70,7 +70,7 @@ Tracking data is what distinguishes modern sports analytics from statistics, and
 
 A match produces the position of every player and the ball at high frequency, which is a spatio-temporal dataset of considerable size and richness. From it, analysts derive measures that event data cannot capture: the space a player creates and occupies, pressure applied to an opponent, the options available at the moment of a pass, defensive organisation, and the movement patterns that precede scoring opportunities.
 
-The technical work includes deriving events from raw positions, modelling pitch control — which team would reach a given location first — estimating the value of possession at each moment, and clustering movement patterns to identify tactical behaviours.
+The technical work includes deriving events from raw positions, modelling pitch control - which team would reach a given location first - estimating the value of possession at each moment, and clustering movement patterns to identify tactical behaviours.
 
 Producing tracking data is itself a technical domain. Optical systems use multi-camera computer vision to detect and track players through occlusion, maintain identities across the match and calibrate to pitch coordinates. This is genuine vision engineering and it employs specialists at data providers.
 
@@ -86,7 +86,7 @@ Methodologically this is difficult and the literature is contested. Injuries are
 
 The data is also sensitive. Health information about identifiable individuals is a special category under GDPR, and athletes are employees with rights over their data. Wearable monitoring of employees raises the workplace monitoring questions described elsewhere in these guides, and player unions in several European sports have taken active positions on data collection and ownership.
 
-Practically, an analyst in this area works alongside sports scientists, physiotherapists and doctors whose professional judgement governs decisions. The role is to inform, quantify and challenge, not to decide — a framing that also happens to be the one that survives contact with reality.
+Practically, an analyst in this area works alongside sports scientists, physiotherapists and doctors whose professional judgement governs decisions. The role is to inform, quantify and challenge, not to decide - a framing that also happens to be the one that survives contact with reality.
 
 ## Recruitment: Where the Money Is
 
@@ -112,7 +112,7 @@ The technical demands are genuine: probabilistic modelling, real-time systems, c
 
 The ethical dimension deserves honest acknowledgement. Gambling causes harm to a minority of customers, and European regulators have increasingly imposed requirements around advertising, affordability checks and responsible gambling measures. Some analysts are comfortable working in this sector and some are not, and it is a question worth settling for yourself before applying rather than after.
 
-Integrity work — detecting manipulation on behalf of leagues and governing bodies — sits adjacent to this and uses similar skills toward a different purpose.
+Integrity work - detecting manipulation on behalf of leagues and governing bodies - sits adjacent to this and uses similar skills toward a different purpose.
 
 ## Who Actually Hires
 
@@ -166,13 +166,13 @@ A few realities worth weighing.
 
 Against that: the problems are genuinely interesting, the data is rich, the feedback is immediate and public, and the people who last describe the work as more engaging than anything else they have done.
 
-If you would be unhappy doing this work at a data provider rather than at a club, or in another sport than your favourite, reconsider — because that is the likely shape of a realistic career here.
+If you would be unhappy doing this work at a data provider rather than at a club, or in another sport than your favourite, reconsider - because that is the likely shape of a realistic career here.
 
 ## How OnlyAIJobs Fits a Sports Analytics Search
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Because sports roles are scarce and heavily contested, the realistic strategy is to build transferable skills in a role that pays well — spatial analysis, real-time systems, computer vision, forecasting — while producing public sports work alongside it. A focused board makes it straightforward to find those adjacent roles.
+Because sports roles are scarce and heavily contested, the realistic strategy is to build transferable skills in a role that pays well - spatial analysis, real-time systems, computer vision, forecasting - while producing public sports work alongside it. A focused board makes it straightforward to find those adjacent roles.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen and Capelle aan den IJssel. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -211,7 +211,7 @@ Very. A single club analyst vacancy can attract hundreds of applications. Data p
 Generally yes at clubs, relative to equivalent roles in finance or technology. Betting companies and larger vendors are more competitive.
 
 ### (Scenario: candidate without sport knowledge) Do I need to know the sport deeply?
-For club roles, yes — you will work daily with coaches. For vendor and platform roles, technical skill matters more.
+For club roles, yes - you will work daily with coaches. For vendor and platform roles, technical skill matters more.
 
 ### (Scenario: candidate wanting to break in) What is the most effective route?
 Public work. Analysts in this field are routinely hired from visible projects and writing, more than in any other sector covered here.

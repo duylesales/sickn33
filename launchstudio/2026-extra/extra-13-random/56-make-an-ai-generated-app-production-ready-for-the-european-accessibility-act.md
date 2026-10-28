@@ -27,12 +27,12 @@ This is a practical guide, not legal advice.
 
 ## Decision 1: Does the EAA Apply to You?
 
-The EAA covers specific products and services, including e-commerce services (selling goods or services online to consumers), consumer banking, e-books, passenger transport services and electronic communications. It applies from 28 June 2025, implemented in national law — in the Netherlands through amendments to existing legislation.
+The EAA covers specific products and services, including e-commerce services (selling goods or services online to consumers), consumer banking, e-books, passenger transport services and electronic communications. It applies from 28 June 2025, implemented in national law - in the Netherlands through amendments to existing legislation.
 
 Two points matter most for founders:
 
-- **Consumer-facing e-commerce** — webshops, booking and ordering platforms where consumers buy — is broadly in scope.
-- **Microenterprises providing services** — fewer than 10 employees and annual turnover or balance sheet of no more than €2 million — are exempt from the service requirements.
+- **Consumer-facing e-commerce** - webshops, booking and ordering platforms where consumers buy - is broadly in scope.
+- **Microenterprises providing services** - fewer than 10 employees and annual turnover or balance sheet of no more than €2 million - are exempt from the service requirements.
 
 So a solo founder's webshop may be exempt today, but growth changes that, and B2B customers, public-sector buyers and partners increasingly require accessibility regardless. Many founders choose to meet the standard early rather than retrofit later.
 
@@ -57,7 +57,7 @@ Most of these can be fixed without changing the visual design at all.
 
 ## Decision 4: How Will You Test?
 
-Automated tools (such as axe or Lighthouse) catch roughly a third to half of issues — missing labels, contrast, structure. The rest need manual checks: navigate every critical flow by keyboard only, test with a screen reader (VoiceOver on Mac or iPhone, NVDA on Windows), zoom to 200%, and check error handling. Decide which flows are critical — typically browsing, product details, basket, checkout, account and contact — and test those thoroughly.
+Automated tools (such as axe or Lighthouse) catch roughly a third to half of issues - missing labels, contrast, structure. The rest need manual checks: navigate every critical flow by keyboard only, test with a screen reader (VoiceOver on Mac or iPhone, NVDA on Windows), zoom to 200%, and check error handling. Decide which flows are critical - typically browsing, product details, basket, checkout, account and contact - and test those thoroughly.
 
 ## Decision 5: What Will You Publish?
 
@@ -88,7 +88,7 @@ To make an AI generated app production ready for accessibility, it helps to know
 | 4.1.2 Name, role, value | Clickable divs | Native buttons and links |
 | 4.1.3 Status messages | Toasts not announced | `aria-live` regions |
 
-Most fixes are small code changes. Using an accessible component library — for example Radix UI or React Aria primitives, which many AI tools already build on — resolves many keyboard and focus issues at once.
+Most fixes are small code changes. Using an accessible component library - for example Radix UI or React Aria primitives, which many AI tools already build on - resolves many keyboard and focus issues at once.
 
 ## Testing With Real Assistive Technology
 
@@ -107,7 +107,7 @@ An accessibility statement describes the standard you aim for (for example WCAG 
 
 ## Accessibility in the Development Process
 
-To keep accessibility from regressing — especially with AI tools regenerating components — build it into the process:
+To keep accessibility from regressing - especially with AI tools regenerating components - build it into the process:
 
 - **Linting:** eslint-plugin-jsx-a11y flags common problems in code.
 - **Automated tests:** axe checks in end-to-end tests of critical flows.
@@ -123,7 +123,7 @@ Microenterprises providing services are exempt from the EAA's service requiremen
 
 ## Documents and Content, Not Just Code
 
-Accessibility also covers content: PDFs such as invoices and terms should be tagged and readable; videos need captions; images in product listings need descriptive alt text; and plain, clear language helps everyone. For webshops generated with AI tools, product descriptions and images uploaded by staff are an ongoing source of accessibility issues — a short guideline for whoever manages content keeps the site accessible after launch.
+Accessibility also covers content: PDFs such as invoices and terms should be tagged and readable; videos need captions; images in product listings need descriptive alt text; and plain, clear language helps everyone. For webshops generated with AI tools, product descriptions and images uploaded by staff are an ongoing source of accessibility issues - a short guideline for whoever manages content keeps the site accessible after launch.
 
 ## Prioritising Fixes When Time Is Short
 
@@ -131,23 +131,23 @@ If you cannot fix everything at once, prioritise by impact on completing critica
 
 ## Accessibility and Third-Party Components
 
-Payment forms, chat widgets, cookie banners, embedded maps and video players often come from third parties and are frequently less accessible than your own code. Check them in your manual tests. Choose providers with documented accessibility support, configure them for accessibility where options exist, and mention unavoidable limitations in your statement. A cookie banner that traps keyboard focus can make an otherwise accessible site unusable — and it is one of the first things users encounter.
+Payment forms, chat widgets, cookie banners, embedded maps and video players often come from third parties and are frequently less accessible than your own code. Check them in your manual tests. Choose providers with documented accessibility support, configure them for accessibility where options exist, and mention unavoidable limitations in your statement. A cookie banner that traps keyboard focus can make an otherwise accessible site unusable - and it is one of the first things users encounter.
 
 ## Costs in Perspective
 
-For a typical AI-built webshop or booking app, bringing critical flows to WCAG 2.1 AA takes days rather than weeks when done alongside other production work, because most fixes are local to components. The cost of retrofitting later is higher: components multiply, content accumulates and each new AI-generated screen repeats the same patterns. Addressing accessibility at production readiness — and adding guardrails so new components inherit it — is the most economical path.
+For a typical AI-built webshop or booking app, bringing critical flows to WCAG 2.1 AA takes days rather than weeks when done alongside other production work, because most fixes are local to components. The cost of retrofitting later is higher: components multiply, content accumulates and each new AI-generated screen repeats the same patterns. Addressing accessibility at production readiness - and adding guardrails so new components inherit it - is the most economical path.
 
 ## The Business Case in One Line
 
-An accessible checkout sells to more people, ranks better, satisfies procurement and keeps you on the right side of the European Accessibility Act — which makes it one of the few production improvements that pays back on several fronts at once.
+An accessible checkout sells to more people, ranks better, satisfies procurement and keeps you on the right side of the European Accessibility Act - which makes it one of the few production improvements that pays back on several fronts at once.
 
 ## Where to Begin This Week
 
-Pick your single most important flow — usually checkout or signup — and run the four manual tests on it: keyboard only, screen reader, 200% zoom and reduced motion. Write down every barrier you find, fix the blockers first and add an automated axe check to that flow so it stays fixed. Then repeat for the next flow. Within a few weeks, the paths that matter most to your business will be usable by everyone, and your AI-generated interface will have guardrails that keep it that way as it evolves.
+Pick your single most important flow - usually checkout or signup - and run the four manual tests on it: keyboard only, screen reader, 200% zoom and reduced motion. Write down every barrier you find, fix the blockers first and add an automated axe check to that flow so it stays fixed. Then repeat for the next flow. Within a few weeks, the paths that matter most to your business will be usable by everyone, and your AI-generated interface will have guardrails that keep it that way as it evolves.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio fixes accessibility in AI-built interfaces without redesigning them: labels, alternatives, contrast adjustments within your brand palette, keyboard support, focus management, semantic structure, announced errors, and automated checks in CI — followed by manual testing of critical flows and help drafting an accessibility statement. It fits naturally alongside security and payment hardening in a Launch Ready project.
+LaunchStudio fixes accessibility in AI-built interfaces without redesigning them: labels, alternatives, contrast adjustments within your brand palette, keyboard support, focus management, semantic structure, announced errors, and automated checks in CI - followed by manual testing of critical flows and help drafting an accessibility statement. It fits naturally alongside security and payment hardening in a Launch Ready project.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience delivering web applications for organisations with formal requirements, from Amsterdam, Singapore and Ho Chi Minh City. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/) and the [European Commission's EAA page](https://ec.europa.eu/social/main.jsp?catId=1202) for the official overview.
 
@@ -163,12 +163,12 @@ A customer who is blind emailed to say she could not complete a purchase. Rosa a
 
 Over nine business days, LaunchStudio's engineers added accessible names and alt text (generating book-cover alt text from title and author data), replaced placeholder-only fields with visible labels, rebuilt the filter and autocomplete on accessible patterns, adjusted text colours to meet contrast within Rosa's palette, linked and announced validation errors, added headings and landmarks, and put axe checks in CI. The customer who reported the problem tested the checkout with them before release. Rosa published an accessibility statement.
 
-**Result:** Boekenbus's checkout meets WCAG 2.1 AA for its critical flows. Checkout completion on mobile rose by about 9% in the following quarter — for all customers — and the customer who reported the issue became a regular subscriber.
+**Result:** Boekenbus's checkout meets WCAG 2.1 AA for its critical flows. Checkout completion on mobile rose by about 9% in the following quarter - for all customers - and the customer who reported the issue became a regular subscriber.
 
 > *"I built the shop for book lovers and forgot that some of them read with their ears. The fixes didn't change how it looks, only who can use it."*
-> — **Rosa Veenstra, Founder, Boekenbus (Drachten)**
+> - **Rosa Veenstra, Founder, Boekenbus (Drachten)**
 
-**Cost & Timeline:** €2,500 (Launch Ready package: accessibility remediation, CI checks, manual testing and statement support) — completed in 9 business days.
+**Cost & Timeline:** €2,500 (Launch Ready package: accessibility remediation, CI checks, manual testing and statement support) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -182,7 +182,7 @@ In practice, EN 301 549, which incorporates WCAG 2.1 level AA. Targeting WCAG 2.
 
 ### Can accessibility be fixed without redesigning my app?
 
-Usually yes. Most issues — labels, alt text, keyboard support, focus, structure, error announcements — are fixed in code without visible design changes. Contrast adjustments can typically stay within your brand palette.
+Usually yes. Most issues - labels, alt text, keyboard support, focus, structure, error announcements - are fixed in code without visible design changes. Contrast adjustments can typically stay within your brand palette.
 
 ### How does Manifera approach accessibility work?
 

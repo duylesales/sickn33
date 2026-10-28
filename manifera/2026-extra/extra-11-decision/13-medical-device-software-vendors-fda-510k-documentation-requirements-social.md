@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Documentation as an afterthought:** Vendors who write working code but skip requirements traceability leave you rebuilding a Design History File from memory before submission.
-❌ **No predicate device strategy:** 510(k) is about substantial equivalence, not a from-scratch safety proof — a vendor who doesn't ask "what's our predicate" is planning the wrong submission.
+❌ **No predicate device strategy:** 510(k) is about substantial equivalence, not a from-scratch safety proof - a vendor who doesn't ask "what's our predicate" is planning the wrong submission.
 ❌ **Missing SBOM discipline:** Section 524B requires a maintained Software Bill of Materials, not a one-time export scrambled together before filing.
 
 **The Manifera Solution:**

@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-If you have checked in a suitcase at a major airport or received a parcel from a large webshop, there is a fair chance it travelled over equipment designed in Veghel. The town, part of the municipality of Meierijstad in North Brabant, hosts the headquarters of Vanderlande, a global leader in material handling automation. It is also home to the head office of Jumbo, one of the largest Dutch supermarket chains, and to a large Mars chocolate factory. For data scientists and engineers interested in logistics, robotics and food production, few towns of this size offer so much concentrated work — and few are so rarely included in a job search.
+If you have checked in a suitcase at a major airport or received a parcel from a large webshop, there is a fair chance it travelled over equipment designed in Veghel. The town, part of the municipality of Meierijstad in North Brabant, hosts the headquarters of Vanderlande, a global leader in material handling automation. It is also home to the head office of Jumbo, one of the largest Dutch supermarket chains, and to a large Mars chocolate factory. For data scientists and engineers interested in logistics, robotics and food production, few towns of this size offer so much concentrated work - and few are so rarely included in a job search.
 
 ## Why Veghel Became a Logistics and Food Hub
 
@@ -71,7 +71,7 @@ The region is part of **Agrifood Capital**, the cooperation of companies, knowle
 
 Material handling systems are among the most complex automated systems in daily use. A large airport's baggage system can include many kilometres of conveyors, thousands of motors and sensors and software that must route each bag correctly and on time. A modern distribution centre combines automated storage, robotic picking and sorting to process huge numbers of orders per day.
 
-For data scientists and engineers, these systems offer rich problems. Simulation and digital twins help design systems before they are built. Machine learning helps robots pick items with widely varying shapes and packaging. Operational data helps predict when equipment needs maintenance and how to balance capacity during peaks such as holiday seasons or morning flight banks. Because systems are delivered to customers worldwide, solutions must work across very different operations — a strong test of whether a model generalises.
+For data scientists and engineers, these systems offer rich problems. Simulation and digital twins help design systems before they are built. Machine learning helps robots pick items with widely varying shapes and packaging. Operational data helps predict when equipment needs maintenance and how to balance capacity during peaks such as holiday seasons or morning flight banks. Because systems are delivered to customers worldwide, solutions must work across very different operations - a strong test of whether a model generalises.
 
 ## Robotic Picking: A Hard Problem at Scale
 
@@ -83,7 +83,7 @@ The engineering target is not just accuracy but reliability over millions of pic
 
 **EU Machinery Regulation (EU) 2023/1230.** Applying from January 2027, the regulation covers machinery including software-based safety functions and AI-enabled behaviour, relevant for automated handling systems and robots working near people.
 
-**EU Artificial Intelligence Act.** AI systems that are safety components of machinery can be high-risk, and AI systems used in employment contexts — such as systems that allocate tasks or monitor worker performance — are listed among high-risk applications.
+**EU Artificial Intelligence Act.** AI systems that are safety components of machinery can be high-risk, and AI systems used in employment contexts - such as systems that allocate tasks or monitor worker performance - are listed among high-risk applications.
 
 **Dutch Works Councils Act.** In companies with a works council, introducing systems that can monitor employees' behaviour or performance generally requires the council's consent. Warehouse and production analytics involving workers must therefore be designed and introduced carefully.
 
@@ -97,15 +97,15 @@ The engineering target is not just accuracy but reliability over millions of pic
 
 A baggage handling system at a busy airport experiences occasional congestion during morning peaks, causing bags to miss flights. A data science team builds a model to forecast baggage volumes per hour based on flight schedules, passenger numbers and historical patterns.
 
-The forecast itself is reasonably accurate. The real value comes when it is linked to operations: the system uses forecasts to pre-position empty storage capacity, schedule maintenance outside peaks and alert operators when load is expected to exceed capacity. Unexpected events — delayed flights arriving together, a security incident, a sudden weather change — still require real-time adjustments, so the solution combines forecasting with live monitoring. The result is fewer mishandled bags, which matters for passengers and airlines alike.
+The forecast itself is reasonably accurate. The real value comes when it is linked to operations: the system uses forecasts to pre-position empty storage capacity, schedule maintenance outside peaks and alert operators when load is expected to exceed capacity. Unexpected events - delayed flights arriving together, a security incident, a sudden weather change - still require real-time adjustments, so the solution combines forecasting with live monitoring. The result is fewer mishandled bags, which matters for passengers and airlines alike.
 
 ## Digital Twins: Designing a System Before It Exists
 
-A new airport baggage system or automated warehouse can take years to design and build, and mistakes discovered after installation are extremely expensive. That is why simulation and digital twins play a central role in material handling. Engineers model the entire system — conveyors, storage, robots, operators and incoming flows — and test how it performs under different scenarios: a busy summer morning, a failure in one sorter, an unusual mix of order sizes.
+A new airport baggage system or automated warehouse can take years to design and build, and mistakes discovered after installation are extremely expensive. That is why simulation and digital twins play a central role in material handling. Engineers model the entire system - conveyors, storage, robots, operators and incoming flows - and test how it performs under different scenarios: a busy summer morning, a failure in one sorter, an unusual mix of order sizes.
 
 Data makes these models realistic. Historical flight schedules, order profiles from existing warehouses and equipment performance data calibrate the simulations. Machine learning can also speed up simulation studies by learning surrogate models that approximate expensive simulations, allowing engineers to explore many more design options.
 
-After installation, a digital twin can continue to be useful. Connected to live operational data, it can be used to test changes before applying them to the real system, to train operators and to analyse incidents. For data scientists and simulation engineers, this lifecycle — from design to operation — offers varied work on the same system over many years.
+After installation, a digital twin can continue to be useful. Connected to live operational data, it can be used to test changes before applying them to the real system, to train operators and to analyse incidents. For data scientists and simulation engineers, this lifecycle - from design to operation - offers varied work on the same system over many years.
 
 The main difficulty is keeping models trustworthy. A simulation that is not validated against real operations gives false confidence. Teams therefore invest in comparing simulated and actual performance and updating models when systems or operations change.
 
@@ -170,7 +170,7 @@ It hosts the headquarters of Vanderlande and Jumbo and a large Mars factory, cre
 Robotic picking of varied items, storage allocation, order batching, throughput optimisation and predictive maintenance of equipment.
 
 ### (Scenario: candidate concerned about worker monitoring) Are there rules for analytics involving warehouse workers?
-Yes — under the GDPR and the Works Councils Act, systems that can monitor employees generally require careful design and, where applicable, works council consent.
+Yes - under the GDPR and the Works Councils Act, systems that can monitor employees generally require careful design and, where applicable, works council consent.
 
 ### (Scenario: candidate who prefers not to travel) Do logistics automation jobs require travel?
 Some project roles involve travel for installation and commissioning; product development roles usually involve less.
@@ -185,7 +185,7 @@ Mostly by car via the A50 or by bus, since Veghel has no railway station.
   "mainEntity": [
     {"@type": "Question", "name": "Why is Veghel relevant for AI and data careers?", "acceptedAnswer": {"@type": "Answer", "text": "It hosts Vanderlande and Jumbo headquarters and a large Mars factory."}},
     {"@type": "Question", "name": "What AI problems exist in warehouse automation?", "acceptedAnswer": {"@type": "Answer", "text": "Robotic picking, storage allocation, order batching, throughput optimisation and predictive maintenance."}},
-    {"@type": "Question", "name": "Are there rules for analytics involving warehouse workers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — GDPR and the Works Councils Act require careful design and, where applicable, works council consent."}},
+    {"@type": "Question", "name": "Are there rules for analytics involving warehouse workers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - GDPR and the Works Councils Act require careful design and, where applicable, works council consent."}},
     {"@type": "Question", "name": "Do logistics automation jobs require travel?", "acceptedAnswer": {"@type": "Answer", "text": "Some project roles do; product development roles usually involve less."}},
     {"@type": "Question", "name": "How do people commute to Veghel?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly by car via the A50 or by bus; Veghel has no railway station."}}
   ]

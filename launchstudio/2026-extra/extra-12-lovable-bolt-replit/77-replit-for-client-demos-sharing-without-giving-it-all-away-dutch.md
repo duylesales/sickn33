@@ -42,7 +42,7 @@ Weet welke van de drie de link biedt die u op het punt staat te sturen. De meest
 
 De regel die de slechtste uitkomst voorkomt: een demonstratie draait op verzonnen data, altijd.
 
-De data van een vorige klant gebruiken om aan een prospect te demonstreren, is het openbaar maken van de informatie van die klant aan een derde. Het gebeurt omdat het handig is — het product is gevuld, de schermen zien er echt uit — en het is een schending van de overeenkomst die u met de eerste klant tekende.
+De data van een vorige klant gebruiken om aan een prospect te demonstreren, is het openbaar maken van de informatie van die klant aan een derde. Het gebeurt omdat het handig is - het product is gevuld, de schermen zien er echt uit - en het is een schending van de overeenkomst die u met de eerste klant tekende.
 
 Bouw in plaats daarvan een demonstratiedataset: geloofwaardige namen, realistische volumes, de lastige gevallen die het product capabel laten lijken. Het kost één keer een middag, is herbruikbaar voor elke demonstratie, en laat u het scenario samenstellen dat uw product op zijn best toont in plaats van wat er toevallig in een echt account staat.
 
@@ -60,11 +60,11 @@ Drie niveaus, oplopend in bescherming.
 
 **Een tijdslimiet.** De link werkt na twee weken niet meer, wat, zoals het artikel over klantwerk in deze reeks beschrijft, ook voorkomt dat de demonstratie stilletjes als live systeem wordt overgenomen.
 
-Voeg hoe dan ook een noindex-instructie toe, zodat ze niet in zoekresultaten verschijnt — want zo ontdekt een klant dat zijn nog niet aangekondigde product openbaar zichtbaar is.
+Voeg hoe dan ook een noindex-instructie toe, zodat ze niet in zoekresultaten verschijnt - want zo ontdekt een klant dat zijn nog niet aangekondigde product openbaar zichtbaar is.
 
 ## Maak Duidelijk Wat Het Is
 
-Een zichtbare banner op elk scherm: *demonstratie — niet voor gebruik met echte data*.
+Een zichtbare banner op elk scherm: *demonstratie - niet voor gebruik met echte data*.
 
 Dit is geen decoratie. Het is wat voorkomt dat de operationeel manager van de klant de link voor veertig klanten zet, het incident dat het artikel over klantwerk met Bolt in deze reeks uitgebreid beschrijft.
 
@@ -76,7 +76,7 @@ De demonstratie moet met al het eigen draaien: een eigen database, eigen inlogge
 
 De reden is niet elegantie. Een prospect die door een demonstratie klikt die een database deelt met een live klant, is één verwarrend scherm verwijderd van het zien van echte records, en een demonstratie die e-mail kan versturen, is één formulierinzending verwijderd van het mailen van iemand die echt bestaat.
 
-Voor een bureau met meerdere demonstraties is een templateproject met per prospect een verse kopie van de dataset het uur inrichten waard. Elke prospect krijgt een eigen kopie, er wordt niets gedeeld, en een demonstratie kan zonder gevolgen worden gesloopt — en dat is wat u wilt dat een prospect zich vrij voelt te doen.
+Voor een bureau met meerdere demonstraties is een templateproject met per prospect een verse kopie van de dataset het uur inrichten waard. Elke prospect krijgt een eigen kopie, er wordt niets gedeeld, en een demonstratie kan zonder gevolgen worden gesloopt - en dat is wat u wilt dat een prospect zich vrij voelt te doen.
 
 ## Bouw de Dataset Bewust
 
@@ -98,15 +98,15 @@ Genereer haar opnieuw in plaats van erin te laten ophopen. Een demonstratieaccou
 
 Daarna gebeuren twee dingen, en beide verdienen een beslissing die vooraf is genomen in plaats van op het moment zelf.
 
-**De prospect vraagt of hij het mag blijven gebruiken.** Dat is een goed teken en het antwoord is niet ja. Een demonstratieomgeving heeft geen beveiliging, geen back-ups en geen betrouwbaarheid, en de incidenten in deze hele reeks beginnen precies zo. Het antwoord dat werkt: ja, en daarmee begint de productiefase — dit is wat die inhoudt en wat ze kost.
+**De prospect vraagt of hij het mag blijven gebruiken.** Dat is een goed teken en het antwoord is niet ja. Een demonstratieomgeving heeft geen beveiliging, geen back-ups en geen betrouwbaarheid, en de incidenten in deze hele reeks beginnen precies zo. Het antwoord dat werkt: ja, en daarmee begint de productiefase - dit is wat die inhoudt en wat ze kost.
 
 **De prospect wordt stil.** De link blijft werken, de data blijft staan, en over zes maanden staat het er nog steeds met inloggegevens die niemand heeft geroteerd. Laat demonstraties automatisch verlopen en verwijder hun data volgens schema, zodat een slapende kans geen risico met uw naam erop wordt.
 
 Voor een bureau pleiten beide ervoor de demonstratie te behandelen als een oplevering met een levenscyclus in plaats van als iets wat blijft rondslingeren. Aangemaakt voor een prospect, beschermd, gelabeld, verlopend, en verwijderd wanneer de kans hoe dan ook wordt afgesloten.
 
-Nog een gewoonte die het overnemen waard is: leg vast wat u liet zien. Welke versie, welke dataset, welk scenario. Wanneer dezelfde prospect drie maanden later terugkomt met "het deed X toen u het ons liet zien", wilt u het kunnen controleren in plaats van hem tegen te spreken — en een product dat wekelijks verandert, is inmiddels verder.
+Nog een gewoonte die het overnemen waard is: leg vast wat u liet zien. Welke versie, welke dataset, welk scenario. Wanneer dezelfde prospect drie maanden later terugkomt met "het deed X toen u het ons liet zien", wilt u het kunnen controleren in plaats van hem tegen te spreken - en een product dat wekelijks verandert, is inmiddels verder.
 
-Een regel in een bestand per demonstratie — datum, prospect, versie, dataset — kost seconden en beslecht dat gesprek met één blik in plaats van één gok.
+Een regel in een bestand per demonstratie - datum, prospect, versie, dataset - kost seconden en beslecht dat gesprek met één blik in plaats van één gok.
 
 Het is ook intern nuttig: drie maanden aan zulke regels vertellen u welke scenario's u werkelijk demonstreert, wat meestal een kortere lijst is dan de functieset van het product en een goede leidraad voor wat de marketingpagina's moeten benadrukken.
 
@@ -116,7 +116,7 @@ Nog een toepassing: wanneer een prospect die stil werd een jaar later terugkomt,
 
 Voor een bureau of oprichter die regelmatig demonstreert, is dit doorgaans één keer een halve dag: een herbruikbare demonstratiedataset met verzonnen maar realistische data, een templateproject dat per prospect wordt gekloond met een eigen database, inloggegevens en opslag, uitgaande e-mail uitgeschakeld door het ontbreken van inloggegevens in plaats van door configuratie, een deploymentlink in plaats van projecttoegang, beschermd met een wachtwoord of individuele accounts met een tijdslimiet, een noindex-instructie, een zichtbare banner op elk scherm, en een geschreven verklaring van wat de demonstratie is, meegestuurd met de link.
 
-LaunchStudio doet de productiebouw nadat de demonstratie haar werk heeft gedaan, als white-label partner voor bureaus die de klantrelatie houden. Daarachter staat Manifera — elf jaar, 120+ engineers, 160+ projecten, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio doet de productiebouw nadat de demonstratie haar werk heeft gedaan, als white-label partner voor bureaus die de klantrelatie houden. Daarachter staat Manifera - elf jaar, 120+ engineers, 160+ projecten, vanaf de Herengracht 420 in Amsterdam.
 
 [Vraag ons een offerte voor de productiefase](https://launchstudio.eu/nl/#contact) op basis van een demonstratie die u al hebt laten zien.
 
@@ -137,9 +137,9 @@ Drie werkdagen: het project direct privé gemaakt en de database-inloggegevens g
 **Resultaat:** de fysiotherapiepraktijk bleef klant, wat Fabienne volledig toeschrijft aan het feit dat ze hen binnen een dag en volledig informeerde. De tandartsengroep ging niet verder. Haar oordeel is dat de demonstratiedataset haar demonstraties zowel beter als veiliger heeft gemaakt, omdat ze het scenario kan inrichten in plaats van te werken met wat een echte praktijk toevallig heeft.
 
 > *"Ik deelde een projectlink zodat ze er goed naar konden kijken, en waar ze naar konden kijken, waren negenhonderd echte patiënten en een codebase waarvoor iemand anders had betaald."*
-> — **Fabienne Schuurmans, Partner, studio in Utrecht**
+> - **Fabienne Schuurmans, Partner, studio in Utrecht**
 
-**Kosten & Doorlooptijd:** €3.400 (rotatie van inloggegevens en beoordeling van toegang, informeren van de klant en melding aan de toezichthouder, demonstratiedataset, template per prospect met geïsoleerde middelen, beveiligde verlopende deploymentlinks met banner en noindex, geschreven demonstratieverklaring) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (rotatie van inloggegevens en beoordeling van toegang, informeren van de klant en melding aan de toezichthouder, demonstratiedataset, template per prospect met geïsoleerde middelen, beveiligde verlopende deploymentlinks met banner en noindex, geschreven demonstratieverklaring) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -181,7 +181,7 @@ Niets. Een eigen database, inloggegevens en opslag, en helemaal geen e-mailinlog
       "name": "Mag ik demonstreren met de data van een echte klant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — het maakt hun data openbaar aan een derde en schendt uw overeenkomst. Gebruik een verzonnen dataset die u zelf beheert."
+        "text": "Nee - het maakt hun data openbaar aan een derde en schendt uw overeenkomst. Gebruik een verzonnen dataset die u zelf beheert."
       }
     },
     {
@@ -205,7 +205,7 @@ Niets. Een eigen database, inloggegevens en opslag, en helemaal geen e-mailinlog
       "name": "Wat moet een demo-omgeving delen met productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niets — een eigen database, inloggegevens en opslag, en geen e-mailinloggegevens zodat ze geen echte mensen kan bereiken."
+        "text": "Niets - een eigen database, inloggegevens en opslag, en geen e-mailinloggegevens zodat ze geen echte mensen kan bereiken."
       }
     }
   ]

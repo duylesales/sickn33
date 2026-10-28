@@ -33,7 +33,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Hengelo is a city of roughly 80,000 people in the Twente region, about ten minutes by train from Enschede. It contains the most significant naval sensor and radar engineering operation in the Netherlands, surrounded by a dense base of high-tech machine builders and industrial suppliers. For engineers interested in signal processing and sensor fusion, this is one of the few places in the country where that work exists at scale — and it comes with access requirements that almost no other Dutch AI market imposes.
+Hengelo is a city of roughly 80,000 people in the Twente region, about ten minutes by train from Enschede. It contains the most significant naval sensor and radar engineering operation in the Netherlands, surrounded by a dense base of high-tech machine builders and industrial suppliers. For engineers interested in signal processing and sensor fusion, this is one of the few places in the country where that work exists at scale - and it comes with access requirements that almost no other Dutch AI market imposes.
 
 ## The Work Is Signal Processing Before It Is Machine Learning
 
@@ -59,7 +59,7 @@ The pattern across all of these is that domain physics constrains the solution s
 
 This is the single most consequential practical issue in this market, and it is usually addressed too vaguely to be useful. Here is what candidates actually need to know.
 
-**Screening is standard, not exceptional.** Defence-related roles generally require a security screening conducted by the national authority. This involves a background investigation, typically covering employment and residence history over a period of years, and it takes time — often several months.
+**Screening is standard, not exceptional.** Defence-related roles generally require a security screening conducted by the national authority. This involves a background investigation, typically covering employment and residence history over a period of years, and it takes time - often several months.
 
 **Residence history matters, not just nationality.** A common misconception is that only Dutch nationals can work in defence. The more accurate picture is that screening requires verifiable history, which is harder to establish for someone who has lived in multiple countries recently. Some roles do have nationality requirements, particularly those touching specific classified programmes or NATO-restricted material. Others do not. The distinction is role-specific rather than company-wide.
 
@@ -127,7 +127,7 @@ The requirement they struggle to fill is not machine learning skill in isolation
 
 Their hiring process therefore weights fundamentals heavily. Expect questions about probability, estimation and linear algebra rather than about frameworks. Expect to be asked what a Kalman filter assumes and what happens when those assumptions fail. Expect interest in whether you can reason about uncertainty propagation.
 
-Candidates who prepare for this market the way they would prepare for a technology company interview — practising coding problems and reviewing recent architectures — frequently perform poorly despite being capable. Candidates who revisit their probability and estimation fundamentals perform much better. The preparation is different, and knowing that in advance is worth a great deal.
+Candidates who prepare for this market the way they would prepare for a technology company interview - practising coding problems and reviewing recent architectures - frequently perform poorly despite being capable. Candidates who revisit their probability and estimation fundamentals perform much better. The preparation is different, and knowing that in advance is worth a great deal.
 
 ## What a Career Here Builds Toward
 
@@ -137,7 +137,7 @@ Sensor fusion and estimation expertise transfers further than its defence associ
 
 There is also an unglamorous but real advantage: this domain has resisted the churn that affects consumer technology. Detection theory learned now will still be correct in fifteen years. Engineers who have spent a decade in fast-moving product environments, repeatedly relearning tooling that then became obsolete, sometimes find durable fundamentals a relief rather than a limitation.
 
-The genuine constraint is geographic rather than technical. Defence and maritime sensor work is concentrated in specific places — a handful of European countries, a few clusters within each. Building this specialism means accepting that your future options are located where the work is, which may mean international relocation rather than a move within the Netherlands.
+The genuine constraint is geographic rather than technical. Defence and maritime sensor work is concentrated in specific places - a handful of European countries, a few clusters within each. Building this specialism means accepting that your future options are located where the work is, which may mean international relocation rather than a move within the Netherlands.
 
 ## The Cross-Border Dimension
 
@@ -159,7 +159,7 @@ For candidates who speak German, this effectively doubles the accessible market.
 | Apeldoorn | 45–55 minutes | National register data, tax, insurance |
 | Utrecht and Amsterdam | 1 hour 45 to 2 hours 15 | Hybrid arrangements only |
 
-Enschede and Almelo at ten minutes each mean the practical unit here is the Twente conurbation rather than Hengelo alone. Treated that way, the market is meaningfully larger than the city's own population suggests — though still thin compared with the Randstad.
+Enschede and Almelo at ten minutes each mean the practical unit here is the Twente conurbation rather than Hengelo alone. Treated that way, the market is meaningfully larger than the city's own population suggests - though still thin compared with the Randstad.
 
 ## Key Takeaways
 
@@ -168,7 +168,7 @@ Enschede and Almelo at ten minutes each mean the practical unit here is the Twen
 - The manufacturing layer requires no clearance, is technically demanding, and is almost invisible to national job searches.
 - Joining a machine builder with no existing data function offers unusual influence for engineers comfortable with ambiguity.
 - Interview preparation should emphasise probability, estimation and uncertainty rather than frameworks and coding puzzles.
-- Treat Twente as one market — Enschede and Almelo are both ten minutes away — and accept that the Randstad is not commutable.
+- Treat Twente as one market - Enschede and Almelo are both ten minutes away - and accept that the Randstad is not commutable.
 
 ## Where to Start
 

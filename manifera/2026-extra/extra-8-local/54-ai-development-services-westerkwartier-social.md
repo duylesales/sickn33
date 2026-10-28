@@ -1,4 +1,4 @@
-🤖 Three AI vendors, three completely different architecture recommendations — and each one conveniently matches what that vendor sells. 🌾
+🤖 Three AI vendors, three completely different architecture recommendations - and each one conveniently matches what that vendor sells. 🌾
 
 **The Pain Points:**
 ❌ **Vendor-Biased Recommendations:** RAG, fine-tuning, or prompting, chosen by who pitched hardest.

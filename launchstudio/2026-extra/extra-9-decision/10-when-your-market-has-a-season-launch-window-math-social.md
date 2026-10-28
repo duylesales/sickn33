@@ -1,4 +1,4 @@
-🚨 Lotte's entire market bought in a nine-week spring window. Miss it, and the next chance was ten months away — no partial credit for launching late. 😳
+🚨 Lotte's entire market bought in a nine-week spring window. Miss it, and the next chance was ten months away - no partial credit for launching late. 😳
 
 A normal SaaS delay is elastic. A seasonal one has two edges, and missing either is a bad year, not a week: 🧠
 
@@ -8,7 +8,7 @@ A normal SaaS delay is elastic. A seasonal one has two edges, and missing either
 ❌ "We'll fix it after" rarely happens once deadline pressure disappears
 
 ✅ Work backward from the date that won't move, subtracting buffer and holiday slowdown
-✅ Rank scope by remaining weeks, not budget — payments and auth under surge come first
+✅ Rank scope by remaining weeks, not budget - payments and auth under surge come first
 ✅ Write the defer list down and share it, or it becomes a "maybe never" list
 ✅ Treat the weeks after season close as a second engagement with its own deadline
 

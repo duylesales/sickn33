@@ -1,4 +1,4 @@
-📋 Her product's security was genuinely solid. The deal stalled for three weeks anyway — because a compliance reviewer didn't want to hear it was secure. He wanted a dated file that proved it. 😤
+📋 Her product's security was genuinely solid. The deal stalled for three weeks anyway - because a compliance reviewer didn't want to hear it was secure. He wanted a dated file that proved it. 😤
 
 Healthtech buyers don't evaluate your code. They evaluate your paperwork. 🧠
 
@@ -9,7 +9,7 @@ Healthtech buyers don't evaluate your code. They evaluate your paperwork. 🧠
 
 ✅ A real paper trail is specific: what was reviewed, when, by whom, with what findings
 ✅ Build the file before a deal needs it, not after a reviewer asks
-✅ Access control, credential management, incident response — all documented in writing
+✅ Access control, credential management, incident response - all documented in writing
 ✅ The right documentation turns a compliance gate into a formality
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering experience, we treat documentation as a deliverable on every engagement, not an afterthought. 🛡️

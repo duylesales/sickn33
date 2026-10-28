@@ -2,7 +2,7 @@
 
 Storing AI output as plain text next to human input erases the difference within weeks. Here's what that cost: 🧠
 
-❌ Generated case-note summaries were written into the exact same field human workers used — no flag, no distinction
+❌ Generated case-note summaries were written into the exact same field human workers used - no flag, no distinction
 ❌ A disputed statement about a client's home situation had no timestamp, no model ID, no source link
 ❌ The summary had been produced by a model version that no longer existed by the time anyone asked
 ❌ A wider review found roughly 2,400 generated summaries across 3 organisations, none distinguishable from human entries

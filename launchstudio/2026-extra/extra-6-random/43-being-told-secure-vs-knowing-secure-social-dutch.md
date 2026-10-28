@@ -1,4 +1,4 @@
-🔓 Julia Mertens bouwde KliniekAfspraak, een afsprakenapp voor een klein netwerk van klinieken, met Lovable. De interface vertelde haar botweg dat haar gegevens versleuteld waren. Dat klopte — het betekende alleen versleuteld tijdens transport, niet versleuteld in rust. Zodra patiëntgegevens de database bereikten, lagen ze daar onbeschermd. 😳
+🔓 Julia Mertens bouwde KliniekAfspraak, een afsprakenapp voor een klein netwerk van klinieken, met Lovable. De interface vertelde haar botweg dat haar gegevens versleuteld waren. Dat klopte - het betekende alleen versleuteld tijdens transport, niet versleuteld in rust. Zodra patiëntgegevens de database bereikten, lagen ze daar onbeschermd. 😳
 
 "Het is veilig" verricht een enorme hoeveelheid onverdiend werk in twee woorden. 🧠
 
@@ -11,7 +11,7 @@
 ✅ Implementeer versleuteling in rust in de hele database, niet alleen tijdens transport
 ✅ Beoordeel toegangsrechten per kliniek
 
-Bij **LaunchStudio** besteden onze technici echte tijd aan het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is — dezelfde standaard achter de 160+ opgeleverde projecten van Manifera. 🛡️
+Bij **LaunchStudio** besteden onze technici echte tijd aan het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is - dezelfde standaard achter de 160+ opgeleverde projecten van Manifera. 🛡️
 
 Haar resultaat: KliniekAfspraak verwerkt patiëntgegevens nu met versleuteling in beide fasen, en Julia heeft een schriftelijke uitleg die ze aan elke IT-contactpersoon van een kliniek kan overhandigen. 🚀
 

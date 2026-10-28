@@ -1,4 +1,4 @@
-Most companies manage every outsourced vendor with the exact same weekly call and ticket queue — whether that vendor owns a side tool or 40% of core engineering capacity. 🧩⚠️
+Most companies manage every outsourced vendor with the exact same weekly call and ticket queue - whether that vendor owns a side tool or 40% of core engineering capacity. 🧩⚠️
 
 **The Pain Points:**
 ❌ **One-Size-Fits-All Governance:** The same cadence applied to low-risk and high-criticality vendors alike.

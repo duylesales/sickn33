@@ -2,7 +2,7 @@
 
 "Het is eigenlijk klaar, we hoeven het alleen maar te lanceren" is zelden het hele verhaal. 🧠
 
-❌ De boekingsstroom werkte van begin tot eind — tijdens het testen, met kaarten die nooit werden geweigerd
+❌ De boekingsstroom werkte van begin tot eind - tijdens het testen, met kaarten die nooit werden geweigerd
 ❌ Helemaal geen afhandeling voor een kaart die halverwege de boeking wordt geweigerd
 ❌ Afspraakslots bleven gereserveerd staan zonder dat er daadwerkelijk iets was betaald
 ❌ Een hiaat dat onzichtbaar is voor iedereen die niet specifiek de foutpaden van betalingen controleert
@@ -11,7 +11,7 @@
 ✅ Het afspraakslot automatisch vrijgeven en de saloneigenaar informeren wanneer dit gebeurt
 ✅ Het leveren als white-label, onder de eigen branding van het bureau, zonder dat de klant het weet
 
-Bij **LaunchStudio** werken we stilletjes achter bureaus en freelancers als hun productiepartner — Manifera's engineering, uw klantrelatie. 🛡️
+Bij **LaunchStudio** werken we stilletjes achter bureaus en freelancers als hun productiepartner - Manifera's engineering, uw klantrelatie. 🛡️
 
 Haar resultaat: een boekingsapp die degelijk live ging, met betalingen die correct werken, zelfs wanneer ze mislukken. 🚀
 

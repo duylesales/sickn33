@@ -90,7 +90,7 @@ Emma runt een digitaal marketingbureau in Rotterdam. Met Bolt bouwde ze een op m
 
 De interne demonstratie was een groot succes. Maar toen Emma het platform uitrolde naar haar eerste drie klanten, liep het mis.
 
-Klant A keurde een post goed op haar iPad, maar toen ze later op kantoor inlogde op haar laptop stond de post weer op "In afwachting". Klant B liet een uitgebreide toelichting achter, maar in de database werd enkel het tijdstip opgeslagen — de tekst ontbrak. Klant C slaagde er zelfs in om per ongeluk een bericht van Klant A goed te keuren.
+Klant A keurde een post goed op haar iPad, maar toen ze later op kantoor inlogde op haar laptop stond de post weer op "In afwachting". Klant B liet een uitgebreide toelichting achter, maar in de database werd enkel het tijdstip opgeslagen - de tekst ontbrak. Klant C slaagde er zelfs in om per ongeluk een bericht van Klant A goed te keuren.
 
 Emma was in de valkuil van AI-state-management getrapt: Bolt had de app gebouwd op basis van lokale browserdata en een onbeveiligde Firebase-connectie.
 
@@ -101,9 +101,9 @@ Binnen 12 werkdagen bouwde LaunchStudio een professionele backend: een PostgreSQ
 **Resultaat:** Het dashboard werd opnieuw gelanceerd voor alle klanten en functioneerde vlekkeloos. Emma verkoopt het platform inmiddels als white-label SaaS aan twee bevriende marketingbureaus, wat haar maandelijks €2.400 aan passieve terugkerende omzet oplevert.
 
 > *"Ik dacht dat ik met AI een complete app had gebouwd, maar ik had eigenlijk alleen een prachtige buitenkant gemaakt. LaunchStudio behield mijn ontwerp en bouwde de motor erin. Ik gebruik Cursor nog steeds voor de voorkant, maar de backend is door LaunchStudio gebouwd als een bunker."*
-> — **Emma Visser, Oprichter, Content Approver (Rotterdam)**
+> - **Emma Visser, Oprichter, Content Approver (Rotterdam)**
 
-**Kosten & Doorlooptijd:** €4.100 (Launch & Grow Pakket) — productie-klaar en live binnen 12 werkdagen.
+**Kosten & Doorlooptijd:** €4.100 (Launch & Grow Pakket) - productie-klaar en live binnen 12 werkdagen.
 
 ---
 

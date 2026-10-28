@@ -1,7 +1,7 @@
 📉 60% of unplanned outages trace back to changes that were tested correctly but deployed through a process nobody ever rehearsed. That's the gap DevOps web development is supposed to close. ✈️
 
 **The Pain Points:**
-❌ **Six-Week Freeze Windows:** Every release needs a manually coordinated freeze — and the last two both slipped anyway.
+❌ **Six-Week Freeze Windows:** Every release needs a manually coordinated freeze - and the last two both slipped anyway.
 ❌ **Environment Mismatches:** "It worked in staging" incidents that only surface on deployment day, when they're most expensive to fix.
 ❌ **Tooling Bought Out of Order:** Observability dashboards purchased before the deployment process itself was actually fixed.
 

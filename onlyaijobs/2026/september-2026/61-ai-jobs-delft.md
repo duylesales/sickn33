@@ -45,7 +45,7 @@ This proximity has a practical consequence for job seekers: the boundary between
 
 ## Why the Job Titles Here Undersell the Technical Depth
 
-Delft's employers tend to write job postings in understated, engineering-culture language. A posting for a "software engineer" at a robotics spinout may in practice require comfort with state estimation, control theory and sensor fusion — a set of skills that would be advertised far more loudly in an Amsterdam job ad. This is partly a cultural artefact of Dutch engineering modesty and partly a signal that the employer assumes candidates from the local talent pool will already understand what the role involves.
+Delft's employers tend to write job postings in understated, engineering-culture language. A posting for a "software engineer" at a robotics spinout may in practice require comfort with state estimation, control theory and sensor fusion - a set of skills that would be advertised far more loudly in an Amsterdam job ad. This is partly a cultural artefact of Dutch engineering modesty and partly a signal that the employer assumes candidates from the local talent pool will already understand what the role involves.
 
 The practical implication is that filtering Delft job postings by title alone will mislead you in both directions. You will skip roles that are more technically interesting than they sound, and you will occasionally apply to something whose stated requirements understate a genuinely steep learning curve. Reading the full posting and, where possible, the company's technical blog or published work is worth more here than in markets where job ads are written to sell.
 
@@ -55,11 +55,11 @@ The practical implication is that filtering Delft job postings by title alone wi
 
 **Cognitive Robotics (CoR).** TU Delft's cognitive robotics department works on autonomous systems, motion planning, human-robot interaction and machine learning for control. It is one of the main reasons Delft appears in European robotics conversations, and it feeds a steady stream of graduates into both local spinouts and larger engineering employers.
 
-**QuTech.** A collaboration between TU Delft and TNO, QuTech works on quantum computing and quantum internet. Its relevance to AI job seekers is indirect but real — quantum research generates demand for classical software, control systems and data infrastructure engineers, and these roles are often easier to enter than the physics positions.
+**QuTech.** A collaboration between TU Delft and TNO, QuTech works on quantum computing and quantum internet. Its relevance to AI job seekers is indirect but real - quantum research generates demand for classical software, control systems and data infrastructure engineers, and these roles are often easier to enter than the physics positions.
 
 **TNO.** The Netherlands Organisation for Applied Scientific Research maintains significant operations in Delft and nearby The Hague. TNO's work spans defence, sensors, mobility, energy and healthcare, and it employs a substantial number of data scientists and machine learning engineers on applied projects with external partners.
 
-**Deltares.** An independent institute for applied research in water and subsurface, headquartered in Delft. Deltares increasingly applies machine learning to hydrological modelling, flood forecasting and sensor data from water systems — a niche that barely registers in national AI conversations but represents genuine, well-funded technical work.
+**Deltares.** An independent institute for applied research in water and subsurface, headquartered in Delft. Deltares increasingly applies machine learning to hydrological modelling, flood forecasting and sensor data from water systems - a niche that barely registers in national AI conversations but represents genuine, well-funded technical work.
 
 **YES!Delft.** One of the most established technology incubators in Europe, YES!Delft has supported hundreds of startups since 2005, with a strong bias toward hardware, robotics, AI and deep tech rather than consumer software. Its programmes and demo days are among the most efficient ways to discover small Delft companies that will never post on a general job board.
 
@@ -73,17 +73,17 @@ The practical implication is that filtering Delft job postings by title alone wi
 | **TNO** | Applied research institute | Applied machine learning across defence, mobility, energy and health; projects run with industrial partners |
 | **Deltares** | Applied research institute | Machine learning for hydrology, flood modelling and water-system sensor data |
 | **QuTech** | Research institute | Classical software, control and data engineering supporting quantum research |
-| **YES!Delft alumni companies** | Startups and scale-ups | Robotics, computer vision, industrial AI, medical technology — small teams, broad roles |
+| **YES!Delft alumni companies** | Startups and scale-ups | Robotics, computer vision, industrial AI, medical technology - small teams, broad roles |
 | **Engineering and consultancy firms** | Established industry | Simulation, optimisation and increasingly machine learning in civil, maritime and energy engineering |
 
-**A note on research institutes and clearance.** Some TNO work, particularly in defence and security domains, involves screening requirements and restrictions on nationality or project access. If this is relevant to your situation, raise it early in conversations rather than late — institutes are used to the question and will tell you plainly which project areas are open.
+**A note on research institutes and clearance.** Some TNO work, particularly in defence and security domains, involves screening requirements and restrictions on nationality or project access. If this is relevant to your situation, raise it early in conversations rather than late - institutes are used to the question and will tell you plainly which project areas are open.
 
 ## Comparing Delft to the Two Markets Candidates Usually Weigh It Against
 
 | | Delft | Amsterdam | Eindhoven |
 |---|---|---|---|
 | Dominant employer type | Research institutes and deep-tech spinouts | Scale-ups, international offices, finance | Large industrial firms and their supply chain |
-| Typical team size | Small — often under fifteen | Varies widely, often larger | Mixed, with some very large engineering organisations |
+| Typical team size | Small - often under fifteen | Varies widely, often larger | Mixed, with some very large engineering organisations |
 | Research proximity | Very high | Moderate, concentrated in a few labs | High, but industrially directed |
 | Salary ceiling | Moderate | Highest of the three | High, especially in semiconductors |
 | Discovery channel | Incubator, university and personal networks | Job boards and recruiters | Company career pages and referrals |
@@ -104,7 +104,7 @@ Delft's small size is misleading, because it sits in the middle of one of the de
 | Amsterdam | 50–60 minutes by train | The largest concentration of AI scale-ups in the country |
 | Utrecht | 45–50 minutes by train | Health data, public sector, consultancy |
 
-This matters more than it first appears. A candidate in Delft does not have to choose between research-adjacent work and commercial work at the point of deciding where to live. They can change the character of their career without changing their address — an option that candidates in more isolated markets genuinely do not have.
+This matters more than it first appears. A candidate in Delft does not have to choose between research-adjacent work and commercial work at the point of deciding where to live. They can change the character of their career without changing their address - an option that candidates in more isolated markets genuinely do not have.
 
 ## How Hiring Actually Happens in the Spinout Layer
 
@@ -112,7 +112,7 @@ A concrete walkthrough is more useful here than generalities. Consider a compute
 
 The founder's first move is not a job posting. It is a message to two former colleagues in the research group asking whether any current or recent master's students have worked on the specific problem class the role requires. That produces two or three names within a week. In parallel, the company mentions the opening at a YES!Delft community event, which produces another handful of leads from people already embedded in the local deep-tech scene.
 
-Only if those channels fail does a public posting appear — and by then, several weeks have passed and the founder has already formed a mental shortlist. A candidate who first encounters the role on a job board is entering a process that is already partly resolved.
+Only if those channels fail does a public posting appear - and by then, several weeks have passed and the founder has already formed a mental shortlist. A candidate who first encounters the role on a job board is entering a process that is already partly resolved.
 
 This is not gatekeeping. For an eleven-person company, a bad technical hire is an existential risk in a way it simply is not for a 400-person organisation. Hiring through channels that carry verified signal is a rational response to that asymmetry. But understanding the sequence tells you where to position yourself: visible within the local technical community before the role exists, rather than responsive to postings after they appear.
 
@@ -122,7 +122,7 @@ Engineers with solid industry experience sometimes approach TNO or Deltares the 
 
 Applied research institutes are evaluated on the quality and defensibility of their work for external partners, often under contracts that require methodological rigour and documentation far beyond commercial norms. A candidate who can demonstrate that they understand why a model's uncertainty estimates matter, or that they have worked somewhere validation was taken seriously, reads as a much stronger fit than one who emphasises how quickly they ship.
 
-The reverse mistake also occurs: academic candidates approaching spinouts with a research framing, emphasising novelty and publication, when the company needs someone who can make an existing method work reliably on messy production data. Both mistakes come from the same root — assuming Delft's research-commercial proximity means the two cultures have merged. They have not. They are simply close enough that moving between them is unusually practical.
+The reverse mistake also occurs: academic candidates approaching spinouts with a research framing, emphasising novelty and publication, when the company needs someone who can make an existing method work reliably on messy production data. Both mistakes come from the same root - assuming Delft's research-commercial proximity means the two cultures have merged. They have not. They are simply close enough that moving between them is unusually practical.
 
 ## Why Delft Suits Mid-Career Engineers Better Than It Suits Juniors
 
@@ -168,7 +168,7 @@ Emphasise methodological rigour, validation and working under external-partner r
 Usually not, unless you graduated from TU Delft. Most local spinouts are small and hire for immediate capability rather than potential. Building two or three years elsewhere first and then moving in tends to work better.
 
 ### (Scenario: candidate unfamiliar with the water-tech niche) What is the water and infrastructure AI work actually like?
-Technically demanding — sparse sensor data, physical constraints models must respect, and validation standards drawn from engineering rather than software culture. It has more international reach than its low domestic profile suggests.
+Technically demanding - sparse sensor data, physical constraints models must respect, and validation standards drawn from engineering rather than software culture. It has more international reach than its low domestic profile suggests.
 
 <script type="application/ld+json">
 {

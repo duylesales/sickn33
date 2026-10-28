@@ -35,37 +35,37 @@ Most production-readiness guidance, including the general error-handling advice 
 
 ## Why This Isn't the Same Problem as General Network Resilience
 
-The structured error handling covered elsewhere in broader guidance treats connectivity loss as a transient failure the app should recover from gracefully once the connection returns. Agricultural use often requires something structurally different: the app needs to function genuinely usefully during extended offline periods, not just fail gracefully and wait — meaning core functionality, not just error messaging, needs to work without a live connection at all, with data syncing once connectivity does eventually become available again.
+The structured error handling covered elsewhere in broader guidance treats connectivity loss as a transient failure the app should recover from gracefully once the connection returns. Agricultural use often requires something structurally different: the app needs to function genuinely usefully during extended offline periods, not just fail gracefully and wait - meaning core functionality, not just error messaging, needs to work without a live connection at all, with data syncing once connectivity does eventually become available again.
 
 ## Where AI-Generated Agricultural Tools Specifically Fall Short
 
-**Assuming a live connection for every interaction, including core functionality.** AI coding tools generate applications that, by default, assume connectivity is available for essentially every action, since that's the condition under which the tool itself was built and tested — meaning genuine offline functionality requires deliberate, specific architecture rather than emerging naturally from a standard build process.
+**Assuming a live connection for every interaction, including core functionality.** AI coding tools generate applications that, by default, assume connectivity is available for essentially every action, since that's the condition under which the tool itself was built and tested - meaning genuine offline functionality requires deliberate, specific architecture rather than emerging naturally from a standard build process.
 
-**AI model calls specifically requiring a live connection with no offline fallback.** If your product's core value depends on an AI model API call, and that call has no offline-capable fallback or cached alternative, the entire core feature becomes unusable in exactly the conditions many agricultural users regularly operate in — a more severe failure than a typical app's offline degradation, since it affects the product's central value proposition, not a peripheral feature.
+**AI model calls specifically requiring a live connection with no offline fallback.** If your product's core value depends on an AI model API call, and that call has no offline-capable fallback or cached alternative, the entire core feature becomes unusable in exactly the conditions many agricultural users regularly operate in - a more severe failure than a typical app's offline degradation, since it affects the product's central value proposition, not a peripheral feature.
 
 **Sync conflicts when multiple offline sessions eventually reconnect.** A user who's been recording data offline for hours or days, syncing once back in range of connectivity, can create data conflicts if the underlying architecture wasn't specifically designed to handle merging offline-recorded data against anything that changed elsewhere in the meantime.
 
 ## Why This Requires a Deliberate Architecture Decision, Not a Feature Addition
 
-Genuine offline capability isn't something that gets bolted onto an already-built, connectivity-assuming application easily — it typically requires deciding, from early in the architecture, what specifically needs to work offline, how local data gets stored and later synced, and how conflicts get resolved, decisions that are considerably cheaper to make before the core application logic is built around assuming a connection than to retrofit afterward.
+Genuine offline capability isn't something that gets bolted onto an already-built, connectivity-assuming application easily - it typically requires deciding, from early in the architecture, what specifically needs to work offline, how local data gets stored and later synced, and how conflicts get resolved, decisions that are considerably cheaper to make before the core application logic is built around assuming a connection than to retrofit afterward.
 
 [LaunchStudio](https://launchstudio.eu/en/) architects genuine offline-first capability for AI tools serving agricultural and other rural or connectivity-limited users, treating this as a deliberate design decision from the start rather than an afterthought, backed by Manifera's broader engineering experience building resilient applications for genuinely variable real-world conditions.
 
-[Get your tool built for the connectivity conditions your actual users will face](https://launchstudio.eu/en/#calculator) — most production guidance assumes a connection that agricultural users often simply don't have.
+[Get your tool built for the connectivity conditions your actual users will face](https://launchstudio.eu/en/#calculator) - most production guidance assumes a connection that agricultural users often simply don't have.
 
 ## A Framework for Deciding What Actually Needs to Work Offline
 
-Not every feature in an agricultural AI tool carries the same offline requirement, and treating them all identically — either building everything for full offline capability or assuming nothing needs it — wastes effort in one direction or leaves a genuine gap in the other. A more useful approach sorts functionality into four categories, each with a different, appropriate level of offline investment.
+Not every feature in an agricultural AI tool carries the same offline requirement, and treating them all identically - either building everything for full offline capability or assuming nothing needs it - wastes effort in one direction or leaves a genuine gap in the other. A more useful approach sorts functionality into four categories, each with a different, appropriate level of offline investment.
 
-**Core capture functions need to work fully offline, no exceptions.** Anything a user does in the actual field at the moment an observation happens — logging a pest sighting, recording a measurement, noting a treatment applied — belongs in this category. If capturing this data requires a live connection, the tool fails at the exact moment and location it's most needed, which is precisely the failure Gerben's original build ran into. This category gets the full local-first architecture: local storage, deferred sync, no live-connection dependency at all.
+**Core capture functions need to work fully offline, no exceptions.** Anything a user does in the actual field at the moment an observation happens - logging a pest sighting, recording a measurement, noting a treatment applied - belongs in this category. If capturing this data requires a live connection, the tool fails at the exact moment and location it's most needed, which is precisely the failure Gerben's original build ran into. This category gets the full local-first architecture: local storage, deferred sync, no live-connection dependency at all.
 
-**Reference and lookup functions can run on cached, periodically-refreshed data.** Crop guides, treatment references, historical records for a specific field — information a user needs to consult but isn't actively generating in the moment — doesn't need a live connection if it's cached locally and refreshed whenever connectivity is available. The tradeoff is acceptable staleness, not full real-time accuracy, which is a reasonable compromise for reference material in a way it wouldn't be for the AI-generated risk assessment covered elsewhere in this article.
+**Reference and lookup functions can run on cached, periodically-refreshed data.** Crop guides, treatment references, historical records for a specific field - information a user needs to consult but isn't actively generating in the moment - doesn't need a live connection if it's cached locally and refreshed whenever connectivity is available. The tradeoff is acceptable staleness, not full real-time accuracy, which is a reasonable compromise for reference material in a way it wouldn't be for the AI-generated risk assessment covered elsewhere in this article.
 
-**AI-generated analysis and insights can be deferred, if the deferral is handled honestly.** A pest or disease risk assessment that requires a live model call doesn't need to block the user from continuing to work — it can queue the request, notify the user once a connection is available and the assessment is ready, and be clear in the interface that this specific output is pending rather than silently unavailable. What breaks user trust isn't the delay itself; it's a feature that appears to have failed silently when it's actually just waiting.
+**AI-generated analysis and insights can be deferred, if the deferral is handled honestly.** A pest or disease risk assessment that requires a live model call doesn't need to block the user from continuing to work - it can queue the request, notify the user once a connection is available and the assessment is ready, and be clear in the interface that this specific output is pending rather than silently unavailable. What breaks user trust isn't the delay itself; it's a feature that appears to have failed silently when it's actually just waiting.
 
-**Team coordination and cross-user features are reasonably allowed to require connectivity.** Features that inherently depend on multiple people's data being current relative to each other — shared team dashboards, real-time coordination between field workers — are harder to meaningfully offline-enable without introducing exactly the sync-conflict risk covered elsewhere in this article, and are usually the right place to accept a connectivity requirement rather than force full offline support onto something structurally resistant to it.
+**Team coordination and cross-user features are reasonably allowed to require connectivity.** Features that inherently depend on multiple people's data being current relative to each other - shared team dashboards, real-time coordination between field workers - are harder to meaningfully offline-enable without introducing exactly the sync-conflict risk covered elsewhere in this article, and are usually the right place to accept a connectivity requirement rather than force full offline support onto something structurally resistant to it.
 
-Running an existing or planned feature list through these four categories, honestly and specifically, tends to reveal that a genuinely offline-first product needs fewer heroic architectural decisions than it first appears — usually a small, identifiable set of core capture functions needs the real investment, while the rest can reasonably degrade or defer.
+Running an existing or planned feature list through these four categories, honestly and specifically, tends to reveal that a genuinely offline-first product needs fewer heroic architectural decisions than it first appears - usually a small, identifiable set of core capture functions needs the real investment, while the rest can reasonably degrade or defer.
 
 ## Real example
 
@@ -73,14 +73,14 @@ Running an existing or planned feature list through these four categories, hones
 
 Gerben, a former agricultural advisor turned founder in Drenthe, built GewasLog, an AI tool helping small crop farmers log field observations and receive AI-generated pest and disease risk assessments, using Bolt, tested primarily from his own home office with a stable internet connection throughout development.
 
-Once GewasLog reached real farmers, several reported that the app was effectively unusable in the actual fields where observations needed to be logged in real time, since the app's core logging feature required a live connection to submit each entry, and most of the farms' actual growing fields had minimal to no mobile signal — meaning farmers ended up writing notes on paper and re-entering them later from the farmhouse, defeating much of GewasLog's original purpose.
+Once GewasLog reached real farmers, several reported that the app was effectively unusable in the actual fields where observations needed to be logged in real time, since the app's core logging feature required a live connection to submit each entry, and most of the farms' actual growing fields had minimal to no mobile signal - meaning farmers ended up writing notes on paper and re-entering them later from the farmhouse, defeating much of GewasLog's original purpose.
 
 **Result:** LaunchStudio rebuilt GewasLog's core logging flow around local-first data storage, letting farmers record field observations entirely offline with automatic syncing once back in connectivity range, and added a cached, periodically-updated risk assessment model that could function with reasonable accuracy even without a live AI model connection for immediate field use.
 
 > *"I tested from my kitchen table the entire time I was building it, which meant I never once experienced what the actual fields are like. The app worked perfectly for me and was nearly useless for the actual people using it in the actual place it was meant to be used."*
-> — **Gerben Hofstede, Founder, GewasLog (Drenthe)**
+> - **Gerben Hofstede, Founder, GewasLog (Drenthe)**
 
-**Cost & Timeline:** €3,100 (offline-first architecture rebuild) — completed in 13 business days.
+**Cost & Timeline:** €3,100 (offline-first architecture rebuild) - completed in 13 business days.
 
 ---
 
@@ -88,7 +88,7 @@ Once GewasLog reached real farmers, several reported that the app was effectivel
 
 ### Does every agricultural AI tool need full offline capability, or does it depend on the specific use case?
 
-Depends specifically on where and how the core functionality actually gets used — a tool used primarily from an office or a well-connected farmhouse has less need than one, like Gerben's, meant for real-time use directly in fields with unreliable connectivity.
+Depends specifically on where and how the core functionality actually gets used - a tool used primarily from an office or a well-connected farmhouse has less need than one, like Gerben's, meant for real-time use directly in fields with unreliable connectivity.
 
 ### How is offline-first architecture different from simply caching some data for faster loading?
 
@@ -96,7 +96,7 @@ Caching for performance assumes an eventual connection is available and just imp
 
 ### Can an AI model-dependent feature ever genuinely work offline, given AI models typically require a live API call?
 
-Not the live model call itself, but a cached or simplified local approximation — as in GewasLog's cached risk assessment — can provide reasonable offline functionality for less precision-critical use cases, with full model accuracy resuming once connectivity returns.
+Not the live model call itself, but a cached or simplified local approximation - as in GewasLog's cached risk assessment - can provide reasonable offline functionality for less precision-critical use cases, with full model accuracy resuming once connectivity returns.
 
 ### How would a founder know if their target users actually face this connectivity problem before building around an assumption either way?
 
@@ -104,7 +104,7 @@ Directly asking representative users about their actual working conditions and c
 
 ### Does retrofitting offline capability into an already-built, connectivity-assuming app cost meaningfully more than building it in from the start?
 
-Considerably more, similar to other architectural decisions covered throughout broader guidance — offline-first is a foundational choice that touches how data is structured and synced throughout the application, making it a genuinely more disruptive retrofit than most other production-readiness gaps.
+Considerably more, similar to other architectural decisions covered throughout broader guidance - offline-first is a foundational choice that touches how data is structured and synced throughout the application, making it a genuinely more disruptive retrofit than most other production-readiness gaps.
 
 <script type="application/ld+json">
 {
@@ -116,7 +116,7 @@ Considerably more, similar to other architectural decisions covered throughout b
       "name": "Does every agricultural AI tool need full offline capability?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on where and how core functionality is actually used — real-time field use needs it more than office-based use."
+        "text": "Depends on where and how core functionality is actually used - real-time field use needs it more than office-based use."
       }
     },
     {
@@ -148,7 +148,7 @@ Considerably more, similar to other architectural decisions covered throughout b
       "name": "Does retrofitting offline capability cost more than building it in from the start?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Considerably more — it's a foundational choice touching data structure and sync, making it a disruptive retrofit."
+        "text": "Considerably more - it's a foundational choice touching data structure and sync, making it a disruptive retrofit."
       }
     }
   ]

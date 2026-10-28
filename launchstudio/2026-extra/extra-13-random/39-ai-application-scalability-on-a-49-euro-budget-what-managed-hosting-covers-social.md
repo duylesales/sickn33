@@ -1,6 +1,6 @@
 🚨 Linda Peters, a hairdresser and salon owner in Hengelo, built Salonagenda in Lovable: online booking and client cards for salons, with SMS reminders and deposits. 64 salons across Twente and the Achterhoek, about 18,000 bookings a month. And Linda was also, by default, the operations team. 😳
 
-A friend had set up a DigitalOcean droplet, then moved on. Twice in one quarter the app went down overnight — an SSL certificate that failed to renew, a disk full of logs — and Linda heard about it from salon owners at 07:30. Backups had never been restored, and the calendar crawled on Saturday mornings. Here's what €49-a-month managed hosting actually covers for AI application scalability: 🧠
+A friend had set up a DigitalOcean droplet, then moved on. Twice in one quarter the app went down overnight - an SSL certificate that failed to renew, a disk full of logs - and Linda heard about it from salon owners at 07:30. Backups had never been restored, and the calendar crawled on Saturday mornings. Here's what €49-a-month managed hosting actually covers for AI application scalability: 🧠
 
 ❌ A founder as the night shift
 ❌ Certificates and disks nobody was watching
@@ -10,7 +10,7 @@ A friend had set up a DigitalOcean droplet, then moved on. Twice in one quarter 
 ✅ Managed serverless hosting with pooled Postgres
 ✅ Indexes for calendar queries and cached availability pages
 ✅ SMS reminders on a background queue, log rotation and retention
-✅ Uptime monitoring and backups with a documented restore test — then certificates, updates and incidents handled by engineers
+✅ Uptime monitoring and backups with a documented restore test - then certificates, updates and incidents handled by engineers
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, managed hosting means someone else is awake at 03:00. ⚙️
 

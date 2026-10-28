@@ -1,10 +1,10 @@
-🚨 Thijs Kranenburg's Zaalplanner books 48 community centres and village halls across Friesland and Groningen. Every Monday morning — exactly when managers plan the week — the product broke completely for ten to twenty minutes. Two venues had already asked about alternatives. 😳
+🚨 Thijs Kranenburg's Zaalplanner books 48 community centres and village halls across Friesland and Groningen. Every Monday morning - exactly when managers plan the week - the product broke completely for ten to twenty minutes. Two venues had already asked about alternatives. 😳
 
 Nine or ten concurrent users were enough to exhaust a 60-connection database. Here's why "too many clients already" hits AI-built apps: 🧠
 
 ❌ A new database client created inside every serverless function call
 ❌ Application code on the direct connection instead of the pooler
-❌ Transactions held open around an email call — 90 seconds per provider hiccup
+❌ Transactions held open around an email call - 90 seconds per provider hiccup
 ❌ A realtime subscription re-created on every render
 
 ✅ The database client moved to module scope, so each instance reuses one connection

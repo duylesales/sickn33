@@ -1,4 +1,4 @@
-🔥 Clara built a prototype using **Cursor** — clara, a startup founder, used **cursor** to build a ai video editor saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Clara built a prototype using **Cursor** - clara, a startup founder, used **cursor** to build a ai video editor saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Clara's application achieved production readiness: Clara finished #3 Product of the Day, processing 18,000 unique sessions with zero database downtime. (€2,500 (Scale & Stress Test Package) — production-ready and deployed in 8 business days.). 🚀
+Clara's application achieved production readiness: Clara finished #3 Product of the Day, processing 18,000 unique sessions with zero database downtime. (€2,500 (Scale & Stress Test Package) - production-ready and deployed in 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/product-hunt-launch-guide-ai-founders
 

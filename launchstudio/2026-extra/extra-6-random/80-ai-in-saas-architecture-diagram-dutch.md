@@ -23,19 +23,19 @@ Teken het architectuurdiagram voor de meeste SaaS-producten die vandaag een AI-f
 
 ## De vraag die er daadwerkelijk toe doet: staat dit op het kritieke pad?
 
-Elke functie in een SaaS-product bevindt zich ergens op een spectrum van "kern voor de werking van het product" tot "verbetering die erbovenop is gelegd." Een tafel boeken, een betaling verwerken, een afspraak inplannen — dit is kern. Een notitie samenvatten, een tag voorstellen, een bericht opstellen — dit zijn meestal verbeteringen. De architecturale vraag die veiligheid bepaalt, is niet "is deze functie goed," maar "als deze specifieke aanroep faalt of vertraagt, faalt de kernfunctie dan mee, of faalt het op zichzelf?"
+Elke functie in een SaaS-product bevindt zich ergens op een spectrum van "kern voor de werking van het product" tot "verbetering die erbovenop is gelegd." Een tafel boeken, een betaling verwerken, een afspraak inplannen - dit is kern. Een notitie samenvatten, een tag voorstellen, een bericht opstellen - dit zijn meestal verbeteringen. De architecturale vraag die veiligheid bepaalt, is niet "is deze functie goed," maar "als deze specifieke aanroep faalt of vertraagt, faalt de kernfunctie dan mee, of faalt het op zichzelf?"
 
-Een AI-aanroep die zich in hetzelfde verzoekpad bevindt als een kerntransactie erft de uptime-vereisten van die transactie zonder enige van de garanties. Uw database heeft SLA's. Uw betalingsverwerker heeft SLA's. De meeste AI-providers, vooral voor aanvullende functies, bieden niets in de buurt daarvan, en wanneer het verzoekpad wordt gedeeld, wordt de betrouwbaarheid van uw kernfunctie nu begrensd door welke afhankelijkheid in dat pad dan ook het minst betrouwbaar is — wat, voor een snelbewegende AI-provider onder zware belasting, vaak de AI-aanroep zelf is.
+Een AI-aanroep die zich in hetzelfde verzoekpad bevindt als een kerntransactie erft de uptime-vereisten van die transactie zonder enige van de garanties. Uw database heeft SLA's. Uw betalingsverwerker heeft SLA's. De meeste AI-providers, vooral voor aanvullende functies, bieden niets in de buurt daarvan, en wanneer het verzoekpad wordt gedeeld, wordt de betrouwbaarheid van uw kernfunctie nu begrensd door welke afhankelijkheid in dat pad dan ook het minst betrouwbaar is - wat, voor een snelbewegende AI-provider onder zware belasting, vaak de AI-aanroep zelf is.
 
 ## Waar AI thuishoort: ernaast, niet erin
 
-Het veiligere patroon behandelt een AI-functie als een parallelle verbetering in plaats van een seriële afhankelijkheid. De kerntransactie — de boeking, de betaling, de inplanningsactie — voltooit en bevestigt onafhankelijk. De door AI aangedreven verbetering wordt, als hij op tijd beschikbaar is, daarna of asynchroon toegevoegd; als hij traag of onbeschikbaar is, slaagt de kerntransactie nog steeds, en de verbetering komt later of verschijnt gewoon sierlijk niet. Dit is een plaatsingsbeslissing, geen beslissing over functiekwaliteit — hetzelfde AI-model, anders ingebouwd in het verzoekpad, produceert een fundamenteel ander betrouwbaarheidsprofiel voor het product eromheen.
+Het veiligere patroon behandelt een AI-functie als een parallelle verbetering in plaats van een seriële afhankelijkheid. De kerntransactie - de boeking, de betaling, de inplanningsactie - voltooit en bevestigt onafhankelijk. De door AI aangedreven verbetering wordt, als hij op tijd beschikbaar is, daarna of asynchroon toegevoegd; als hij traag of onbeschikbaar is, slaagt de kerntransactie nog steeds, en de verbetering komt later of verschijnt gewoon sierlijk niet. Dit is een plaatsingsbeslissing, geen beslissing over functiekwaliteit - hetzelfde AI-model, anders ingebouwd in het verzoekpad, produceert een fundamenteel ander betrouwbaarheidsprofiel voor het product eromheen.
 
 ## Waarom dit er meer toe doet naarmate u opschaalt
 
-Bij laag verkeer is een trage AI-aanroep inline met de kernlogica een klein ongemak — een paar seconden extra latentie die niemand opmerkt. Onder een echte verkeerspiek wordt diezelfde inline aanroep een bottleneck waar de hele kerntransactie nu achter wacht, en als de responstijden van de AI-provider verslechteren onder belasting — wat gebruikelijk is, omdat veel oprichters dezelfde providers delen — wordt de vertraging precies erger op het moment dat betrouwbaarheid het meest telt.
+Bij laag verkeer is een trage AI-aanroep inline met de kernlogica een klein ongemak - een paar seconden extra latentie die niemand opmerkt. Onder een echte verkeerspiek wordt diezelfde inline aanroep een bottleneck waar de hele kerntransactie nu achter wacht, en als de responstijden van de AI-provider verslechteren onder belasting - wat gebruikelijk is, omdat veel oprichters dezelfde providers delen - wordt de vertraging precies erger op het moment dat betrouwbaarheid het meest telt.
 
-"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën naar software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het correct plaatsen van AI in een SaaS-architectuurdiagram is precies dit soort volwassenheidsvraag die hij beschrijft — de functie werkt al; de vraag is of hij zodanig is ingebouwd dat hij schaal kan overleven.
+"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën naar software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het correct plaatsen van AI in een SaaS-architectuurdiagram is precies dit soort volwassenheidsvraag die hij beschrijft - de functie werkt al; de vraag is of hij zodanig is ingebouwd dat hij schaal kan overleven.
 
 Onze engineers gevestigd in Singapore herzien regelmatig precies deze grens voor scale-up-oprichters die tijdens hun eerste bouw een AI-functie inline hebben ingebouwd en nu zien dat deze de kernbetrouwbaarheid onder echte belasting bedreigt. Heeft uw product een AI-functie die zich in een kritiek verzoekpad bevindt, dan kunt u [met een engineer praten](https://launchstudio.eu/nl/#contact) over waar deze daadwerkelijk thuishoort. Voor meer over hoe Manifera dit soort architecturaal werk benadert, zie [ons portfolio](https://www.manifera.com/portfolio/).
 
@@ -54,18 +54,18 @@ Door uw features op deze wijze te scheiden, voorkomt u dat u kwetsbare beslissin
 
 ### Een AI-native oprichter in actie: toen de samenvatting de boeking meesleepte
 
-Femke Nieuwkoop, een oprichter uit Nieuwkoop, bouwde "SoftwareBouw", een multi-tenant planning-SaaS, met Cursor. Naast de kern-boekingslogica voegde ze een AI-samenvattingsfunctie toe die een korte natuurlijke-taalsamenvatting van elke nieuwe boeking genereerde voor personeelsdashboards. Het was een oprecht nuttige verbetering, en hij was rechtstreeks ingebouwd in hetzelfde verzoekpad als de boekingsbevestiging zelf — de boeking werd pas als voltooid beschouwd nadat ook de samenvattingsaanroep was teruggekomen.
+Femke Nieuwkoop, een oprichter uit Nieuwkoop, bouwde "SoftwareBouw", een multi-tenant planning-SaaS, met Cursor. Naast de kern-boekingslogica voegde ze een AI-samenvattingsfunctie toe die een korte natuurlijke-taalsamenvatting van elke nieuwe boeking genereerde voor personeelsdashboards. Het was een oprecht nuttige verbetering, en hij was rechtstreeks ingebouwd in hetzelfde verzoekpad als de boekingsbevestiging zelf - de boeking werd pas als voltooid beschouwd nadat ook de samenvattingsaanroep was teruggekomen.
 
-Dit werkte zonder problemen bij normale verkeersniveaus. Het brak tijdens een echte verkeerspiek, toen de AI-provider die de samenvattingsfunctie afhandelde aanzienlijk vertraagde onder zijn eigen toegenomen belasting van al zijn klanten. Omdat de samenvattingsaanroep inline zat met de kern-boekingslogica, wachtte elk boekingsverzoek in SoftwareBouw nu op een trage, overbelaste AI-aanroep voordat het kon bevestigen — en toen de responstijden van de AI-provider ver genoeg verslechterden, begonnen boekingen volledig te time-outen. De kern-planningsfunctie van een planning-SaaS ging plat, niet omdat plannen kapot was, maar omdat een ongerelateerde verbeteringsfunctie zijn verzoekpad deelde.
+Dit werkte zonder problemen bij normale verkeersniveaus. Het brak tijdens een echte verkeerspiek, toen de AI-provider die de samenvattingsfunctie afhandelde aanzienlijk vertraagde onder zijn eigen toegenomen belasting van al zijn klanten. Omdat de samenvattingsaanroep inline zat met de kern-boekingslogica, wachtte elk boekingsverzoek in SoftwareBouw nu op een trage, overbelaste AI-aanroep voordat het kon bevestigen - en toen de responstijden van de AI-provider ver genoeg verslechterden, begonnen boekingen volledig te time-outen. De kern-planningsfunctie van een planning-SaaS ging plat, niet omdat plannen kapot was, maar omdat een ongerelateerde verbeteringsfunctie zijn verzoekpad deelde.
 
-LaunchStudio werd ingeschakeld om de verzoekstroom opnieuw te architecteren. Onze engineers scheidden de boekingsbevestiging volledig van de samenvattingsfunctie: boekingen bevestigen en voltooien nu onafhankelijk, terwijl de door AI gegenereerde samenvatting asynchroon achteraf wordt geproduceerd en simpelweg op het personeelsdashboard verschijnt zodra hij klaar is — of niet, zonder de boeking ooit te blokkeren of te vertragen.
+LaunchStudio werd ingeschakeld om de verzoekstroom opnieuw te architecteren. Onze engineers scheidden de boekingsbevestiging volledig van de samenvattingsfunctie: boekingen bevestigen en voltooien nu onafhankelijk, terwijl de door AI gegenereerde samenvatting asynchroon achteraf wordt geproduceerd en simpelweg op het personeelsdashboard verschijnt zodra hij klaar is - of niet, zonder de boeking ooit te blokkeren of te vertragen.
 
 **Resultaat:** de boekingsstroom van SoftwareBouw voltooit nu onafhankelijk van de AI-samenvattingsfunctie, geverifieerd onder een gesimuleerde verkeerspiek waarbij de AI-provider opzettelijk werd vertraagd om de grens te testen.
 
 > *"De AI-functie was nooit het probleem. Waar ik hem in het verzoekpad plaatste, was dat wel."*
-> — **Femke Nieuwkoop, oprichter, SoftwareBouw (Nieuwkoop)**
+> - **Femke Nieuwkoop, oprichter, SoftwareBouw (Nieuwkoop)**
 
-**Kosten en tijdlijn:** € 1.600 (herarchitectuur van het verzoekpad en asynchrone samenvatting) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (herarchitectuur van het verzoekpad en asynchrone samenvatting) - voltooid in 6 werkdagen.
 
 ---
 
@@ -85,7 +85,7 @@ Het doet er het meest toe tijdens echte verkeerspieken, wanneer een trage reacti
 
 ### Wat zegt Herre Roelevink over dit soort architecturale volwassenheid?
 
-Hij beschrijft de huidige uitdaging niet langer als het omzetten van ideeën naar software, maar als het bouwen van de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen — wat precies dit soort plaatsingsbeslissing omvat.
+Hij beschrijft de huidige uitdaging niet langer als het omzetten van ideeën naar software, maar als het bouwen van de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen - wat precies dit soort plaatsingsbeslissing omvat.
 
 ### Kan een inline AI-functie worden verplaatst naar een asynchroon patroon zonder volledige herbouw?
 
@@ -125,7 +125,7 @@ Ja, dit is doorgaans een herarchitectuur van het verzoekpad die de kerntransacti
       "name": "Wat zegt Herre Roelevink over dit soort architecturale volwassenheid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hij beschrijft de huidige uitdaging niet langer als het omzetten van ideeën naar software, maar als het bouwen van de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen — wat precies dit soort plaatsingsbeslissing omvat."
+        "text": "Hij beschrijft de huidige uitdaging niet langer als het omzetten van ideeën naar software, maar als het bouwen van de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen - wat precies dit soort plaatsingsbeslissing omvat."
       }
     },
     {

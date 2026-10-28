@@ -1,4 +1,4 @@
-🚨 Lukas Peeters, een technische oprichter in Leuven, bouwde StudyStack — een platform voor gedeelde notities en flashcards voor universiteitsstudenten — met Bolt. Hij voerde voor de lancering zijn eigen beveiligingszelfscan uit, controleerde authenticatie en toegangsbeheer, en alles zag er redelijk uit. Wat hij miste was één zoekfunctie, gebouwd om ruwe zoekreeksen direct samen te voegen in een SQL-query. 😬
+🚨 Lukas Peeters, een technische oprichter in Leuven, bouwde StudyStack - een platform voor gedeelde notities en flashcards voor universiteitsstudenten - met Bolt. Hij voerde voor de lancering zijn eigen beveiligingszelfscan uit, controleerde authenticatie en toegangsbeheer, en alles zag er redelijk uit. Wat hij miste was één zoekfunctie, gebouwd om ruwe zoekreeksen direct samen te voegen in een SQL-query. 😬
 
 Code die prima draait op elke normale invoer kan nog steeds één gemanipuleerde invoer verwijderd zijn van een datalek. 🧠
 
@@ -11,7 +11,7 @@ Code die prima draait op elke normale invoer kan nog steeds één gemanipuleerde
 ✅ Een volledige audit op dependencies en geheimen uitgevoerd over de rest van de codebase
 ✅ Rate limiting toegevoegd aan het voorheen onbeperkte zoekeindpunt
 
-Bij **LaunchStudio** halen onze technici elke door AI gegenereerde codebase door hetzelfde gestructureerde kader — toegangsbeheer, injectie, geheimen, rate limiting, dependencies — opgebouwd uit meer dan een decennium aan Manifera's productie-engineeringwerk. 🛡️
+Bij **LaunchStudio** halen onze technici elke door AI gegenereerde codebase door hetzelfde gestructureerde kader - toegangsbeheer, injectie, geheimen, rate limiting, dependencies - opgebouwd uit meer dan een decennium aan Manifera's productie-engineeringwerk. 🛡️
 
 Lukas' resultaat: een herschreven, injectieveilige zoekfunctie en een schone dependency-audit, opgeleverd voordat StudyStack openging voor de studentenpopulatie van zijn universiteit. 🚀
 

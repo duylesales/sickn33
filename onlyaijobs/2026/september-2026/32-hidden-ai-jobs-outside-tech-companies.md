@@ -36,19 +36,19 @@ Content Format: Career Guide
 }
 </script>
 
-An insurer, a construction company or a wholesaler rarely presents itself as a "tech company" — and yet serious machine learning models often run at these kinds of organisations: risk analysis, inventory forecasting, fraud detection. This work is no less technical than what a scale-up does. It is just less visible, because the company doesn't present itself as a place where you would look for AI work.
+An insurer, a construction company or a wholesaler rarely presents itself as a "tech company" - and yet serious machine learning models often run at these kinds of organisations: risk analysis, inventory forecasting, fraud detection. This work is no less technical than what a scale-up does. It is just less visible, because the company doesn't present itself as a place where you would look for AI work.
 
 ## Why This Work Structurally Stays Under the Radar
 
-A tech company often has an employer brand team that knows how to phrase an AI vacancy attractively for a technical audience. An insurer or wholesaler rarely does — the vacancy is written by an HR department that types "data analyst" or "actuarial officer," without realising that the profile actually matches what an applicant would recognise as machine learning work.
+A tech company often has an employer brand team that knows how to phrase an AI vacancy attractively for a technical audience. An insurer or wholesaler rarely does - the vacancy is written by an HR department that types "data analyst" or "actuarial officer," without realising that the profile actually matches what an applicant would recognise as machine learning work.
 
 ## What Often Makes This Work More Interesting Than It Sounds
 
-Models at these kinds of companies have often been running in production for years, with real operational consequences if they go wrong — a fraud detection model that is too strict immediately annoys an insurer's customers; an inventory model that miscalculates costs a wholesaler money on the warehouse floor. That pressure often makes the work more mature and better grounded in practice than a comparable experiment at a startup that has never seen real users.
+Models at these kinds of companies have often been running in production for years, with real operational consequences if they go wrong - a fraud detection model that is too strict immediately annoys an insurer's customers; an inventory model that miscalculates costs a wholesaler money on the warehouse floor. That pressure often makes the work more mature and better grounded in practice than a comparable experiment at a startup that has never seen real users.
 
 ## Three Sectors Where This Pattern Repeats
 
-**Insurers.** Fraud detection and risk analysis have been statistical work for decades, gradually supplemented with more modern machine learning techniques — without the job title ever changing.
+**Insurers.** Fraud detection and risk analysis have been statistical work for decades, gradually supplemented with more modern machine learning techniques - without the job title ever changing.
 
 **Wholesale and retail.** Inventory forecasting and price optimisation at scale are real applications of time series analysis and machine learning, often carried out by people with the title "supply chain analyst."
 
@@ -66,19 +66,19 @@ Models at these kinds of companies have often been running in production for yea
 
 ## How to Recognise This Pattern in a Job Ad Yourself
 
-Look for verbs, not labels: "forecast," "classify," "optimise," "detect anomalies" are all signals of underlying modelling work, regardless of whether the word "AI" appears anywhere in the text. A vacancy asking for someone who "can identify anomalies in transaction patterns" is in effect describing anomaly detection — exactly the same problem as a fraud detection model at a tech company, just packaged differently.
+Look for verbs, not labels: "forecast," "classify," "optimise," "detect anomalies" are all signals of underlying modelling work, regardless of whether the word "AI" appears anywhere in the text. A vacancy asking for someone who "can identify anomalies in transaction patterns" is in effect describing anomaly detection - exactly the same problem as a fraud detection model at a tech company, just packaged differently.
 
 ## A Concrete Scenario of a Hidden Vacancy
 
-A construction materials wholesaler is looking for someone who "can flag unusual ordering patterns to prevent fraud and errors." The vacancy text doesn't mention "AI" or "machine learning" once — it was written by the head of internal control, not by a tech recruiter. Yet this text literally describes an anomaly detection problem, with the same underlying technique as a fraud detection model at a fintech company. A candidate who only searches for "AI jobs" never sees this vacancy; a candidate who knows which verbs to look for recognises the problem immediately.
+A construction materials wholesaler is looking for someone who "can flag unusual ordering patterns to prevent fraud and errors." The vacancy text doesn't mention "AI" or "machine learning" once - it was written by the head of internal control, not by a tech recruiter. Yet this text literally describes an anomaly detection problem, with the same underlying technique as a fraud detection model at a fintech company. A candidate who only searches for "AI jobs" never sees this vacancy; a candidate who knows which verbs to look for recognises the problem immediately.
 
 ## A Common Misconception About the Quality of This Kind of Work
 
-Candidates often assume that work at a traditional company is by definition less advanced than at a tech company, simply because the sector looks older. In practice, traditional companies have often been collecting operational data for years, sometimes decades, before "AI" became a common term — which means a newly hired data scientist here often has access to richer, longer historical data than a comparable role at a younger tech startup would ever have.
+Candidates often assume that work at a traditional company is by definition less advanced than at a tech company, simply because the sector looks older. In practice, traditional companies have often been collecting operational data for years, sometimes decades, before "AI" became a common term - which means a newly hired data scientist here often has access to richer, longer historical data than a comparable role at a younger tech startup would ever have.
 
 ## Why This Search Strategy Keeps Paying Off Throughout Your Career
 
-The ability to recognise underlying AI problems regardless of how they are titled is not a one-off trick for your current search — it is a skill that keeps helping you for the rest of your career, every time you change jobs or consider a new sector. Companies are expected to keep using job titles that lag behind the actual content of the work for years to come, which means anyone who recognises this pattern has a lasting advantage over those who rely only on keywords.
+The ability to recognise underlying AI problems regardless of how they are titled is not a one-off trick for your current search - it is a skill that keeps helping you for the rest of your career, every time you change jobs or consider a new sector. Companies are expected to keep using job titles that lag behind the actual content of the work for years to come, which means anyone who recognises this pattern has a lasting advantage over those who rely only on keywords.
 
 ## How to Adapt Your CV for an Application at a Traditional Company
 
@@ -86,11 +86,11 @@ A CV written for a tech company, full of terms such as "deep learning" and "neur
 
 ## Why This Pattern Is Spreading as More Sectors Digitise
 
-The pattern of hidden AI work outside the tech sector is not static — it is expanding as more traditional sectors go through their own digitalisation. Sectors that barely do statistical modelling today will probably have built their own hidden layer of data work within five years, just as insurers and wholesalers have done over the past decades. For a candidate who recognises this pattern early, that means a continuously growing pool of opportunities that largely goes unnoticed by those who limit themselves to vacancies with "AI" in the title.
+The pattern of hidden AI work outside the tech sector is not static - it is expanding as more traditional sectors go through their own digitalisation. Sectors that barely do statistical modelling today will probably have built their own hidden layer of data work within five years, just as insurers and wholesalers have done over the past decades. For a candidate who recognises this pattern early, that means a continuously growing pool of opportunities that largely goes unnoticed by those who limit themselves to vacancies with "AI" in the title.
 
 ## The Evidence on OnlyAIJobs Itself
 
-This pattern is not just a theory. OnlyAIJobs lists AI and data vacancies from companies that explicitly do not present themselves as tech companies. **Heijmans** is one of the largest construction and infrastructure companies in the Netherlands. **Rexel Nederland** is a wholesaler of electrical products. **VINCI Energies** is active in energy infrastructure, industrial installations and technical services. None of these organisations would appear on a list of "Dutch AI companies" — and yet they recruit for exactly the kind of roles this article is about.
+This pattern is not just a theory. OnlyAIJobs lists AI and data vacancies from companies that explicitly do not present themselves as tech companies. **Heijmans** is one of the largest construction and infrastructure companies in the Netherlands. **Rexel Nederland** is a wholesaler of electrical products. **VINCI Energies** is active in energy infrastructure, industrial installations and technical services. None of these organisations would appear on a list of "Dutch AI companies" - and yet they recruit for exactly the kind of roles this article is about.
 
 ## A Sector Map of Hidden AI Work in the Netherlands
 
@@ -111,7 +111,7 @@ The three sectors above are only the beginning. The Netherlands has several sect
 
 In many of these sectors, modelling work is not just a competitive advantage, but a direct consequence of legislation and supervision.
 
-**Insurers and Solvency II.** The European Solvency II framework requires insurers to substantiate risks and capital requirements quantitatively, with an actuarial function and supervision by De Nederlandsche Bank. That makes statistical and predictive modelling a core activity — even if it is never called "AI."
+**Insurers and Solvency II.** The European Solvency II framework requires insurers to substantiate risks and capital requirements quantitatively, with an actuarial function and supervision by De Nederlandsche Bank. That makes statistical and predictive modelling a core activity - even if it is never called "AI."
 
 **Pension administrators and the Future Pensions Act.** The Dutch **Future Pensions Act (Wtp)** requires pension funds to move to a new pension system. That transition requires enormous amounts of data migration, data quality control and scenario calculations, and has substantially increased demand for data engineers and analysts at pension administrators.
 
@@ -119,7 +119,7 @@ In many of these sectors, modelling work is not just a competitive advantage, bu
 
 **Infrastructure managers and safety.** Organisations such as ProRail and Rijkswaterstaat manage infrastructure where failures have direct consequences for safety and accessibility. Predictive maintenance based on sensor and inspection data is a logical application there, but rarely labelled "AI."
 
-**AI Act.** Where these organisations use AI for decisions about people — for example in insurance or creditworthiness — the EU Artificial Intelligence Act can impose additional requirements. That makes experience with documentation and explainability particularly valuable in exactly these sectors.
+**AI Act.** Where these organisations use AI for decisions about people - for example in insurance or creditworthiness - the EU Artificial Intelligence Act can impose additional requirements. That makes experience with documentation and explainability particularly valuable in exactly these sectors.
 
 ## Employer Characteristics to Know in Advance
 
@@ -128,7 +128,7 @@ Hidden AI work at traditional organisations has a number of characteristics that
 - **Collective labour agreements and salary scales.** Many of these organisations fall under a collective labour agreement, with transparent scales, good pension schemes and often a better work-life balance.
 - **Stability.** Infrastructure, water, energy and pensions don't disappear in an economic dip, which makes these jobs relatively stable.
 - **Legacy systems.** Data is often spread across old systems. Anyone with patience for data quality work makes the difference here.
-- **Domain experts as colleagues.** You work with actuaries, grid planners, maintenance engineers and hydrologists. Learning from their knowledge is a large part of the work — and makes your models better.
+- **Domain experts as colleagues.** You work with actuaries, grid planners, maintenance engineers and hydrologists. Learning from their knowledge is a large part of the work - and makes your models better.
 - **Screening.** In critical sectors such as energy, water and infrastructure, a Certificate of Conduct or security screening can be part of the procedure.
 
 ## Search Terms That Reveal Hidden AI Work
@@ -155,37 +155,37 @@ A search such as "forecasting analyst" or "condition monitoring specialist" prod
 
 ## Where to Start
 
-Don't only look at companies that present themselves as "tech." Filter by category instead of sector or company name, and read job ads from traditional sectors with as much attention as those from a scale-up — the most interesting modelling work is sometimes at the company you'd never have expected.
+Don't only look at companies that present themselves as "tech." Filter by category instead of sector or company name, and read job ads from traditional sectors with as much attention as those from a scale-up - the most interesting modelling work is sometimes at the company you'd never have expected.
 
 Browse current AI, machine learning and data vacancies in the Netherlands, across all sectors, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: engineer who only searches at tech companies) Is AI work at an insurer or wholesaler as serious as at a tech company?
-Often, yes, and sometimes even more mature — models at these kinds of companies have often been running in production for years with real operational consequences, which makes the work more thoroughly grounded in practice than a comparable early experiment elsewhere.
+Often, yes, and sometimes even more mature - models at these kinds of companies have often been running in production for years with real operational consequences, which makes the work more thoroughly grounded in practice than a comparable early experiment elsewhere.
 
 ### (Scenario: engineer who finds nothing through a search engine) Why can't I find these kinds of vacancies when I search for "machine learning"?
 Because the vacancy is often written by an HR department that types the profile as "data analyst" or "actuarial officer" without using AI vocabulary, even though the profile matches machine learning work.
 
 ### (Scenario: engineer unsure whether switching is worthwhile) Is moving to a traditional sector a step back in my career?
-Not necessarily — the work can be just as technically demanding, with the difference that the pressure more often comes from operational consequences than from growth metrics. It is a different kind of work, not a lesser version of it.
+Not necessarily - the work can be just as technically demanding, with the difference that the pressure more often comes from operational consequences than from growth metrics. It is a different kind of work, not a lesser version of it.
 
 ### (Scenario: engineer who wants to know how to search) How do I search specifically for this kind of hidden AI work?
 Filter by category instead of sector or company name, and read job ads from traditional companies with the same attention as those from a scale-up.
 
 ### (Scenario: engineer wondering whether this only occurs at large companies) Does this only occur at large, established companies, or also at smaller ones?
-Both — a smaller wholesaler or regional insurer can just as easily have a small, under-exposed data team as a large national company. Company size is not a reliable predictor.
+Both - a smaller wholesaler or regional insurer can just as easily have a small, under-exposed data team as a large national company. Company size is not a reliable predictor.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is AI work at an insurer or wholesaler as serious as at a tech company?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes, and sometimes even more mature — models have often been running in production for years with real operational consequences."}},
+    {"@type": "Question", "name": "Is AI work at an insurer or wholesaler as serious as at a tech company?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes, and sometimes even more mature - models have often been running in production for years with real operational consequences."}},
     {"@type": "Question", "name": "Why can't I find these kinds of vacancies when I search for \"machine learning\"?", "acceptedAnswer": {"@type": "Answer", "text": "The vacancy is often written by an HR department that types the profile as 'data analyst' or 'actuarial officer', without AI vocabulary."}},
-    {"@type": "Question", "name": "Is moving to a traditional sector a step back in my career?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — the work can be just as technically demanding, with pressure coming from operational consequences instead of growth metrics."}},
+    {"@type": "Question", "name": "Is moving to a traditional sector a step back in my career?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - the work can be just as technically demanding, with pressure coming from operational consequences instead of growth metrics."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of hidden AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category instead of sector or company name, and read job ads from traditional companies with the same attention."}},
-    {"@type": "Question", "name": "Does this only occur at large, established companies, or also at smaller ones?", "acceptedAnswer": {"@type": "Answer", "text": "Both — company size is not a reliable predictor of an under-exposed data team."}}
+    {"@type": "Question", "name": "Does this only occur at large, established companies, or also at smaller ones?", "acceptedAnswer": {"@type": "Answer", "text": "Both - company size is not a reliable predictor of an under-exposed data team."}}
   ]
 }
 </script>

@@ -1,4 +1,4 @@
-🚨 A 200-staff enterprise prospect ran an independent security scan on his "secure" app. It came back with 6 High and 4 Medium vulnerabilities — despite the green padlock he thought meant he was covered. 😳
+🚨 A 200-staff enterprise prospect ran an independent security scan on his "secure" app. It came back with 6 High and 4 Medium vulnerabilities - despite the green padlock he thought meant he was covered. 😳
 
 Vercel's SSL certificate takes ten seconds to generate. It also has nothing to do with whether your API routes, storage buckets, or login form can survive a real attacker. 🧠
 
@@ -14,7 +14,7 @@ Vercel's SSL certificate takes ten seconds to generate. It also has nothing to d
 
 At **LaunchStudio**, hardened to the enterprise security standards Manifera has built over 11+ years for clients like TNO and CFLW Cyber Strategies. 🔍
 
-Lennart's OfferteGenie re-ran the scan, hit a clean A+ rating, and closed a €14,400 annual enterprise contract — in 4 business days. 🚀
+Lennart's OfferteGenie re-ran the scan, hit a clean A+ rating, and closed a €14,400 annual enterprise contract - in 4 business days. 🚀
 
 👉 Schedule a comprehensive security audit for your application: https://launchstudio.eu/en/blog/ssl-certificate-easy-part-real-security-work
 

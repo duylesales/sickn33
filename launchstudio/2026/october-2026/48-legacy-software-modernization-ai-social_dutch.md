@@ -1,4 +1,4 @@
-🔥 David bouwde een prototype via **AI builders** — als bureau-eigenaar in Rotterdam pitchte hij een AI Logistics Copilot van €120.000 bij een rederij, maar de IT-afdeling blokkeerde het wegens een 20 jaar oude desktopdatabase zonder API. 🧠
+🔥 David bouwde een prototype via **AI builders** - als bureau-eigenaar in Rotterdam pitchte hij een AI Logistics Copilot van €120.000 bij een rederij, maar de IT-afdeling blokkeerde het wegens een 20 jaar oude desktopdatabase zonder API. 🧠
 
 Als enterprise-klanten innoveren met AI terwijl hun bedrijfsdata vastzit op antieke lokale servers, strandt elk AI-project direct bij de security-audit van IT.
 
@@ -12,7 +12,7 @@ Als enterprise-klanten innoveren met AI terwijl hun bedrijfsdata vastzit op anti
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-David sloot het contract van €120.000 af en zijn bureau streek alle eer op voor de geslaagde modernisering. (€45.000 (Legacy API Schil & AI) — binnen 45 werkdagen live). 🚀
+David sloot het contract van €120.000 af en zijn bureau streek alle eer op voor de geslaagde modernisering. (€45.000 (Legacy API Schil & AI) - binnen 45 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/legacy-software-modernization-ai
 

@@ -1,7 +1,7 @@
-"Daily updated nationwide coverage" turned out to mean 90-day-stale comps in certain counties — and a home equity product priced collateral 8-12% too high before anyone noticed. 📉
+"Daily updated nationwide coverage" turned out to mean 90-day-stale comps in certain counties - and a home equity product priced collateral 8-12% too high before anyone noticed. 📉
 
 **The Pain Points:**
-❌ **National averages hiding regional gaps:** AVM data freshness varies wildly by county depending on how fast public records get digitized — a nationwide claim can mask months-old comps locally.
+❌ **National averages hiding regional gaps:** AVM data freshness varies wildly by county depending on how fast public records get digitized - a nationwide claim can mask months-old comps locally.
 ❌ **Confidence scores collected but ignored:** Products display a single dollar figure without surfacing the reliability metric that should change how that number gets used.
 ❌ **No fair lending testing on file:** Systematic valuation bias across neighborhoods creates real ECOA disparate impact exposure, and few teams ask vendors to show the testing.
 

@@ -30,11 +30,11 @@ It is designed to be run in a day by a founder, ideally with someone who can rea
 
 Set aside a day. Open the product, the Supabase dashboard, the hosting platform, the repository and your billing. For each of the ten areas below, answer the key question honestly, check the red flags, and give the area a score:
 
-- **Green** — the area is in good shape; nothing urgent.
-- **Amber** — gaps exist, but they are unlikely to cause an incident in the next three months or would be cheap to recover from.
-- **Red** — a gap that could cause data exposure, data loss, lost revenue or a failed customer audit, or that would be expensive or impossible to reverse.
+- **Green** - the area is in good shape; nothing urgent.
+- **Amber** - gaps exist, but they are unlikely to cause an incident in the next three months or would be cheap to recover from.
+- **Red** - a gap that could cause data exposure, data loss, lost revenue or a failed customer audit, or that would be expensive or impossible to reverse.
 
-Write one or two sentences of evidence per score. "Backups: red — automated backups enabled, never restored, no copy outside Supabase" is useful; "backups: probably fine" is not.
+Write one or two sentences of evidence per score. "Backups: red - automated backups enabled, never restored, no copy outside Supabase" is useful; "backups: probably fine" is not.
 
 Be strict. The point of the review is to find the red areas before a customer, an attacker or an auditor does.
 
@@ -52,7 +52,7 @@ Most other areas depend on this one. A product whose code is in a repository, wi
 
 ## 2. Data Separation Between Customers
 
-**Key question:** can a user of one customer, by any means — interface, API, changed ID in a URL — see or change another customer's data?
+**Key question:** can a user of one customer, by any means - interface, API, changed ID in a URL - see or change another customer's data?
 
 **Red flags:**
 - Tables without row level security, or with policies that are `true` for authenticated users.
@@ -71,7 +71,7 @@ This is the area where AI-built products fail most often and most seriously. The
 - Invitation links that never expire or work for anyone who receives them.
 - Password reset flows that reveal whether an account exists or accept reused tokens.
 - Admin functions protected only by hiding buttons.
-- Critical accounts — domain, hosting, database — owned by one person.
+- Critical accounts - domain, hosting, database - owned by one person.
 
 The session, password reset, invitations, SSO and admin panel articles cover this area.
 
@@ -89,7 +89,7 @@ The secret rotation, environment variables and Replit secrets articles describe 
 
 ## 5. Payments and Money
 
-**Key question:** if your payment provider and your database disagree, would you know — and which one would be right?
+**Key question:** if your payment provider and your database disagree, would you know - and which one would be right?
 
 **Red flags:**
 - Webhooks accepted without signature verification.
@@ -108,13 +108,13 @@ The eight payment articles at the start of this series, and the accounting integ
 - Backups enabled but never restored.
 - No copy of the database or uploaded files outside the main platform.
 - Uploaded files on a container filesystem rather than object storage.
-- No plan for the loss of a critical supplier — email, payments, AI provider, the builder itself.
+- No plan for the loss of a critical supplier - email, payments, AI provider, the builder itself.
 
 A product that has never restored a backup does not know whether it has one. The backups, object storage and vendor lock-in articles describe what green looks like.
 
 ## 7. Reliability and Operations
 
-**Key question:** if the product broke at seven on a Monday morning, who would know first — you or your customers?
+**Key question:** if the product broke at seven on a Monday morning, who would know first - you or your customers?
 
 **Red flags:**
 - No uptime monitoring from outside the platform.
@@ -127,7 +127,7 @@ The monitoring, logs, cron, background work, feature flags and status page artic
 
 ## 8. Performance and Scale
 
-**Key question:** how does the product behave with your largest customer's data, at their busiest hour — and with a customer twice that size?
+**Key question:** how does the product behave with your largest customer's data, at their busiest hour - and with a customer twice that size?
 
 **Red flags:**
 - Lists that load every row; queries without indexes on the columns they filter.
@@ -165,7 +165,7 @@ The compliance articles in the middle of this series, and the analytics and expo
 - AI features without an evaluation set, so model changes are untested.
 - Documents regenerated on download rather than stored when issued.
 
-The final articles in this series — i18n, teams, roles, SSO, imports, exports, documents, accounting integrations, API versioning, AI evaluation — describe what larger customers typically ask for, in roughly the order they ask.
+The final articles in this series - i18n, teams, roles, SSO, imports, exports, documents, accounting integrations, API versioning, AI evaluation - describe what larger customers typically ask for, in roughly the order they ask.
 
 ## Turning Scores Into a Plan
 
@@ -173,7 +173,7 @@ A review produces a list. A plan decides the order. Three rules make the order s
 
 **Red before amber, and irreversible before reversible.** Data exposure, data loss and uncollectable money cannot be undone; a slow page can. Fix the reds in areas two, four, five and six before anything else, even if they look less urgent than a customer's feature request.
 
-**Foundations before features.** Area one — code in a repository, tests, review — makes every later fix safer and faster. If it is red, it comes first, because changing anything else without it is how new incidents are created.
+**Foundations before features.** Area one - code in a repository, tests, review - makes every later fix safer and faster. If it is red, it comes first, because changing anything else without it is how new incidents are created.
 
 **Follow the revenue for the rest.** Among ambers and area ten, prioritise what the next significant customer or the next renewal depends on. A prospect waiting for SSO justifies the SSO work this quarter; a theoretical enterprise feature does not.
 
@@ -196,7 +196,7 @@ Founders reasonably ask what the plan will cost before committing to it. Across 
 | Privacy and compliance | 2–4 days: agreements, registers, retention, analytics clean-up |
 | Larger-customer maturity | Per feature: 2–6 days each for roles, SSO, exports, API and similar |
 
-The figures are effort, not elapsed time, and they assume the code is in a repository; if area one is red, it comes first and makes the others cheaper. A product with three reds and several ambers typically needs ten to twenty days of work to reach a state a demanding customer will accept — a fraction of a rebuild, and usually less than the value of the contract that prompted the review.
+The figures are effort, not elapsed time, and they assume the code is in a repository; if area one is red, it comes first and makes the others cheaper. A product with three reds and several ambers typically needs ten to twenty days of work to reach a state a demanding customer will accept - a fraction of a rebuild, and usually less than the value of the contract that prompted the review.
 
 The numbers also explain why the order matters. Fixing data separation costs a few days before an incident; after one, it costs the same few days plus notification, investigation, legal advice and a customer relationship.
 
@@ -212,13 +212,13 @@ A review is a snapshot. Products built with AI tools change quickly, and an area
 
 Repeat the review every six months, and before any moment that raises the stakes: a large customer's onboarding, a procurement process, an investment round, an acquisition conversation, a regulatory change. Keep each review's scores and evidence, so the next one starts from the last and the trend is visible.
 
-The goal is not a product without risk. It is a product whose risks are known, ranked and shrinking — which is what customers, investors and auditors are really asking about when they ask whether it is "production ready".
+The goal is not a product without risk. It is a product whose risks are known, ranked and shrinking - which is what customers, investors and auditors are really asking about when they ask whether it is "production ready".
 
 ## Setting This Up
 
 For a Lovable, Bolt or Replit product, a review following this structure is typically one to two days: the ten areas scored green, amber or red with written evidence, code-level checks of data separation, authentication, secrets and performance by someone experienced, a cross-organisation access test, a backup restore test, a review of payment webhooks and reconciliation, a privacy document check, a list of what larger customers would need, a ninety-day plan ordered by irreversibility, foundations and revenue, and a date for the next review.
 
-LaunchStudio runs this review for founders who want to know where they stand, and then does the work that turns red into green — fixed price, from €800 for the Launch Ready package. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam and Ho Chi Minh City.
+LaunchStudio runs this review for founders who want to know where they stand, and then does the work that turns red into green - fixed price, from €800 for the Launch Ready package. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam and Ho Chi Minh City.
 
 [Ask us for a production architecture review](https://launchstudio.eu/en/#contact) and receive the scores, the evidence and the ninety-day plan.
 
@@ -230,20 +230,20 @@ Sophie Mulder built Leerlingvolg in Lovable: pupil progress tracking, parent com
 
 A school board responsible for 40 schools wanted to adopt the product across all of them, subject to a review by its information security and privacy officers. Sophie had a questionnaire with 120 questions and a deadline of six weeks, and no clear idea which answers would be a problem.
 
-The review took two days. Three areas scored red. Six tables containing pupil data had row level security policies that allowed any authenticated teacher to read records from other schools through the API, although the interface never showed them. Backups had never been restored, and uploaded support plans lived in a single storage bucket with no copy elsewhere. And there was no processing agreement template, no subprocessor list and no retention periods — for a product holding data about children, including special educational needs. Nine areas scored amber, among them untested scheduled jobs, keys shared between environments and an analytics script with session replay switched on.
+The review took two days. Three areas scored red. Six tables containing pupil data had row level security policies that allowed any authenticated teacher to read records from other schools through the API, although the interface never showed them. Backups had never been restored, and uploaded support plans lived in a single storage bucket with no copy elsewhere. And there was no processing agreement template, no subprocessor list and no retention periods - for a product holding data about children, including special educational needs. Nine areas scored amber, among them untested scheduled jobs, keys shared between environments and an analytics script with session replay switched on.
 
-**Result:** the ninety-day plan put the three reds in the first three weeks: policies rewritten and verified with a cross-school test suite, nightly encrypted exports of the database and files to a second provider with a timed restore, and a processing agreement, subprocessor list, records of processing and retention register drafted with a privacy lawyer. Session replay was removed and environments separated in the same period. The questionnaire was answered in week five with evidence for each answer, the board's officers raised four minor points, and the contract for 40 schools was signed in week seven — roughly doubling the product's revenue. A second review six months later scored no red areas.
+**Result:** the ninety-day plan put the three reds in the first three weeks: policies rewritten and verified with a cross-school test suite, nightly encrypted exports of the database and files to a second provider with a timed restore, and a processing agreement, subprocessor list, records of processing and retention register drafted with a privacy lawyer. Session replay was removed and environments separated in the same period. The questionnaire was answered in week five with evidence for each answer, the board's officers raised four minor points, and the contract for 40 schools was signed in week seven - roughly doubling the product's revenue. A second review six months later scored no red areas.
 
 > *"I knew there would be questions I could not answer. I did not know that teachers could read other schools' pupil files through the API. Two days of review told me exactly where to start."*
-> — **Sophie Mulder, Founder, Leerlingvolg (Amersfoort)**
+> - **Sophie Mulder, Founder, Leerlingvolg (Amersfoort)**
 
-**Cost & Timeline:** €1,800 (production architecture review across ten areas with code-level checks, cross-organisation access test, backup restore test, privacy document assessment, scored report with evidence and ninety-day plan) — completed in 2 business days.
+**Cost & Timeline:** €1,800 (production architecture review across ten areas with code-level checks, cross-organisation access test, backup restore test, privacy document assessment, scored report with evidence and ninety-day plan) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
 ### What is a production architecture review?
 
-A structured check of the areas that most often cause incidents in AI-built products — code control, data separation, access, secrets, payments, recovery, operations, performance, privacy and readiness for larger customers — each scored with evidence.
+A structured check of the areas that most often cause incidents in AI-built products - code control, data separation, access, secrets, payments, recovery, operations, performance, privacy and readiness for larger customers - each scored with evidence.
 
 ### How long does a review take?
 
@@ -251,7 +251,7 @@ One to two days for most Lovable, Bolt or Replit products: a day for a founder t
 
 ### What should be fixed first?
 
-Red areas that are irreversible — data exposure, data loss, uncollectable money — and the foundation of code control, then whatever the next significant customer or renewal depends on.
+Red areas that are irreversible - data exposure, data loss, uncollectable money - and the foundation of code control, then whatever the next significant customer or renewal depends on.
 
 ### Can a founder run the review alone?
 
@@ -295,7 +295,7 @@ Every six months, and before any high-stakes moment such as a large customer's o
       "name": "Can founders review their own product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Partly — code-level areas like data separation, authentication, secrets and performance benefit from an experienced reviewer."
+        "text": "Partly - code-level areas like data separation, authentication, secrets and performance benefit from an experienced reviewer."
       }
     },
     {

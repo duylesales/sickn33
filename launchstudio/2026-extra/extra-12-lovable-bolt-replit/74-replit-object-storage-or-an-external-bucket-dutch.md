@@ -22,7 +22,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 
 De eerste versie van elke uploadfunctie schrijft het bestand naar schijf. Het werkt direct, het vraagt geen inrichting, en op een platform waar deployments tijdelijk zijn, is het de opzet die de documenten van uw klanten kwijtraakt.
 
-Bestanden die naar het bestandssysteem van een container worden geschreven, leven zo lang als die container. Een redeploy, een schaalgebeurtenis, een herstart — en ze zijn weg, zonder fout en zonder spoor, weken later ontdekt door een klant die iets opent dat er niet meer is.
+Bestanden die naar het bestandssysteem van een container worden geschreven, leven zo lang als die container. Een redeploy, een schaalgebeurtenis, een herstart - en ze zijn weg, zonder fout en zonder spoor, weken later ontdekt door een klant die iets opent dat er niet meer is.
 
 De echte vraag is dus niet of u object storage gebruikt, maar welke, en het antwoord hangt af van hoe overdraagbaar u wilt zijn.
 
@@ -36,7 +36,7 @@ Drie redenen, en elk ervan is voldoende.
 
 **Het wordt niet geback-upt.** Uw databaseback-up bevat het niet, dus een herstel levert records op die verwijzen naar bestanden die in de herstelde wereld nooit hebben bestaan.
 
-Het enige legitieme gebruik van het bestandssysteem is echt tijdelijk werk — een bestand dat binnen één verzoek wordt verwerkt en direct daarna wordt verwijderd.
+Het enige legitieme gebruik van het bestandssysteem is echt tijdelijk werk - een bestand dat binnen één verzoek wordt verwerkt en direct daarna wordt verwijderd.
 
 ## Wat de Opslag van het Platform U Geeft
 
@@ -52,7 +52,7 @@ Vier situaties rechtvaardigen de extra inrichting.
 
 **Dataresidentie.** Een klant eist dat zijn documenten in een specifieke regio staan, wat een externe aanbieder u expliciet laat kiezen. Dit is de meest voorkomende echte reden voor Nederlandse producten die verkopen aan overheden en zorgorganisaties.
 
-**Overdraagbaarheid.** Als de applicatie misschien naar andere hosting verhuist — waarschijnlijk voor een product dat op een prototypingplatform begon — betekenen bestanden in een neutrale bucket dat de migratie geen verhuizing van terabytes omvat.
+**Overdraagbaarheid.** Als de applicatie misschien naar andere hosting verhuist - waarschijnlijk voor een product dat op een prototypingplatform begon - betekenen bestanden in een neutrale bucket dat de migratie geen verhuizing van terabytes omvat.
 
 **Schaal of kosten.** Bij een aanzienlijk volume is de economie anders, vooral voor uitgaand verkeer, en een gespecialiseerde aanbieder biedt meer controle.
 
@@ -62,7 +62,7 @@ Voor de meeste producten geldt in het eerste jaar geen van deze, en een aanbiede
 
 ## Houd de Keuze Omkeerbaar
 
-Wat u ook kiest, drie beslissingen voorkomen dat het permanent wordt — en het zijn dezelfde beslissingen die het artikel over Supabase-opslag in deze reeks aanbeveelt.
+Wat u ook kiest, drie beslissingen voorkomen dat het permanent wordt - en het zijn dezelfde beslissingen die het artikel over Supabase-opslag in deze reeks aanbeveelt.
 
 **Sla paden op, geen URL's.** Een databasekolom met een volledige URL naar een specifieke aanbieder is een kolom die bij een migratie moet worden herschreven en die breekt in elke e-mail die al is verstuurd. Een kolom met een pad, met URL's die bij het lezen worden gegenereerd, is per definitie overdraagbaar.
 
@@ -84,11 +84,11 @@ Een product dat dat goed doet op de eigen opslag van het platform, staat er veel
 
 Zodra bestanden in object storage staan, bepaalt de manier waarop ze de bezoeker bereiken zowel de snelheid als de kosten, en de naïeve opzet is op beide punten verkeerd.
 
-De naïeve versie stuurt alles door uw applicatie: een verzoek komt binnen, uw server haalt het object op, en streamt het terug. Het werkt, en het betekent dat elke megabyte die een klant downloadt door uw rekenkracht gaat, twee keer wordt gefactureerd, en een instance zolang bezet houdt — wat voor een product dat foto's serveert een verrassend groot deel is van alles wat het doet.
+De naïeve versie stuurt alles door uw applicatie: een verzoek komt binnen, uw server haalt het object op, en streamt het terug. Het werkt, en het betekent dat elke megabyte die een klant downloadt door uw rekenkracht gaat, twee keer wordt gefactureerd, en een instance zolang bezet houdt - wat voor een product dat foto's serveert een verrassend groot deel is van alles wat het doet.
 
 De betere opzet is een doorverwijzing naar een signed URL. Uw applicatie controleert of deze persoon dit bestand mag hebben, genereert een kortlevende URL, en stuurt de browser daarheen. De bytes gaan direct van de opslag naar de bezoeker, uw server doet bijna niets, en de autorisatiecontrole vindt nog steeds bij elk verzoek plaats.
 
-Twee verfijningen die het hebben waard zijn. Een CDN vóór de opslag voor alles wat openbaar is of vaak wordt opgevraagd, wat meestal een configuratieoptie is in plaats van een project. En afgeleide versies die bij het uploaden worden gegenereerd — een thumbnail en een weergaveformaat — zodat een galerij van veertig foto's niet veertig originelen op volle resolutie downloadt, wat de grootste oorzaak is van trage pagina's in producten die afbeeldingen verwerken.
+Twee verfijningen die het hebben waard zijn. Een CDN vóór de opslag voor alles wat openbaar is of vaak wordt opgevraagd, wat meestal een configuratieoptie is in plaats van een project. En afgeleide versies die bij het uploaden worden gegenereerd - een thumbnail en een weergaveformaat - zodat een galerij van veertig foto's niet veertig originelen op volle resolutie downloadt, wat de grootste oorzaak is van trage pagina's in producten die afbeeldingen verwerken.
 
 Het enige argument om via uw applicatie door te sturen, is wanneer de URL zelf zelfs kortstondig niet deelbaar mag zijn. Dat is zeldzaam, en het is de moeite waard zeker te zijn dat de eis echt is voordat u er bij elk verzoek voor betaalt.
 
@@ -98,11 +98,11 @@ Bestanden stapelen zich op op een manier die databases niet doen, omdat niets u 
 
 Vier bronnen, allemaal te vermijden. Originelen die voor altijd worden bewaard terwijl alleen afgeleide versies worden getoond. Wezen die achterblijven na verwijderde records, het verwijderprobleem dat dit artikel al noemt. Uploads die halverwege een formulier worden achtergelaten, die een proces met meerdere stappen continu verzamelt. En duplicaten die ontstaan wanneer een klant na een fout opnieuw uploadt.
 
-De diagnose is een maandelijkse vergelijking: het aantal objecten en het totaal aantal bytes in de opslag tegenover het aantal bestanden dat uw database kent. Lopen die getallen uiteen, dan hebt u wezen, en een opschoontaak die objecten zonder bijbehorende rij verwijdert — eerst als proefrun, met een rapport van wat ze verwijderde — levert meestal meer ruimte op dan verwacht.
+De diagnose is een maandelijkse vergelijking: het aantal objecten en het totaal aantal bytes in de opslag tegenover het aantal bestanden dat uw database kent. Lopen die getallen uiteen, dan hebt u wezen, en een opschoontaak die objecten zonder bijbehorende rij verwijdert - eerst als proefrun, met een rapport van wat ze verwijderde - levert meestal meer ruimte op dan verwacht.
 
 De preventie zijn twee regels. Verwijderen is één operatie die zowel de rij als het object omvat, zodat ze niet uit de pas kunnen lopen. En een niet-gekoppelde upload verloopt na een dag, omdat een bestand dat niemand opeiste niet gewenst was.
 
-Voeg een bewaarregel toe voor de dingen die echt verouderen — originelen zodra afgeleide versies bestaan, exports ouder dan een maand, documenten voorbij de bewaartermijn die uw privacybeleid noemt — en opslag wordt een post die groeit met uw klantenbestand in plaats van met de tijd.
+Voeg een bewaarregel toe voor de dingen die echt verouderen - originelen zodra afgeleide versies bestaan, exports ouder dan een maand, documenten voorbij de bewaartermijn die uw privacybeleid noemt - en opslag wordt een post die groeit met uw klantenbestand in plaats van met de tijd.
 
 Dat onderscheid is het waard één keer tegen uw eigen rekening te toetsen: opslag die groeit met klanten is een bedrijf dat het goed doet, en opslag die groeit met de kalender is een opschoontaak die u nog niet hebt geschreven.
 
@@ -110,9 +110,9 @@ Het is het soort controle dat twee minuten per maand kost en het gesprek voorkom
 
 ## Dit Inrichten
 
-Voor een Replit-product is dit doorgaans een halve dag: alle schrijfacties naar het bestandssysteem tijdens het draaien gevonden en verplaatst, object storage gekozen — standaard die van het platform, extern waar residentie, overdraagbaarheid, schaal of specifieke functies dat rechtvaardigen — met paden in plaats van URL's in de database, alle bestandstoegang achter uw eigen functies, een padindeling met de eigenaar voorop, privé-buckets met op de server gegenereerde signed URLs, typecontrole op basis van inhoud, groottelimieten, gegenereerde bestandsnamen, een bestandsregistertabel, verwijderen dat ook objecten omvat, een back-upregeling die de bestanden echt bevat, en een gedocumenteerd herstel.
+Voor een Replit-product is dit doorgaans een halve dag: alle schrijfacties naar het bestandssysteem tijdens het draaien gevonden en verplaatst, object storage gekozen - standaard die van het platform, extern waar residentie, overdraagbaarheid, schaal of specifieke functies dat rechtvaardigen - met paden in plaats van URL's in de database, alle bestandstoegang achter uw eigen functies, een padindeling met de eigenaar voorop, privé-buckets met op de server gegenereerde signed URLs, typecontrole op basis van inhoud, groottelimieten, gegenereerde bestandsnamen, een bestandsregistertabel, verwijderen dat ook objecten omvat, een back-upregeling die de bestanden echt bevat, en een gedocumenteerd herstel.
 
-LaunchStudio doet dit als onderdeel van het naar productie brengen van een Replit-product, waar bestanden op het bestandssysteem tot de meest voorkomende bevindingen horen. De engineers zijn van Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit als onderdeel van het naar productie brengen van een Replit-product, waar bestanden op het bestandssysteem tot de meest voorkomende bevindingen horen. De engineers zijn van Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons waar uw uploads nu naartoe gaan](https://launchstudio.eu/nl/#contact). Is het antwoord een map, dan staan ze er niet meer.
 
@@ -124,18 +124,18 @@ Freek Batenburg bouwde Keuringsdossier op Replit: keuringsdocumentatie voor keur
 
 Uploads werden naar een map in het project geschreven. Dat had de hele ontwikkeling en de eerste vier maanden van gebruik gewerkt, omdat hij niet had geredeployd in een periode waarin iemand aan het uploaden was.
 
-Een deployment op een dinsdagmiddag verving de instance. Elke foto en elk rapport dat sinds de vorige deployment was geüpload — elf dagen, zo'n 340 bestanden — was weg. De database had de records nog, dus het product toonde 340 keuringen met bijgevoegde documenten en gaf een fout wanneer iemand er een opende.
+Een deployment op een dinsdagmiddag verving de instance. Elke foto en elk rapport dat sinds de vorige deployment was geüpload - elf dagen, zo'n 340 bestanden - was weg. De database had de records nog, dus het product toonde 340 keuringen met bijgevoegde documenten en gaf een fout wanneer iemand er een opende.
 
 Er was geen back-up, omdat de databaseback-up alleen de database bevatte.
 
-Drie werkdagen: object storage ingevoerd, met de eigen opslag van het platform omdat geen van de redenen van residentie, overdraagbaarheid of schaal van toepassing was; alle bestandstoegang achter een opslagmodule gezet, met paden in plaats van URL's in de database zodat een latere wissel van aanbieder een configuratiewijziging is; een padindeling met de eigenaar voorop van bedrijf, object en gegenereerde bestandsidentifier; buckets privé met op de server gegenereerde signed URLs, die na vijftien minuten verlopen voor bekijken en na een uur voor downloaden; typecontrole op basis van bestandsinhoud, omdat de vorige implementatie alles had geaccepteerd; groottelimieten van 20 MB per bestand; een bestandsregistertabel die uploader, tijdstip, pad, grootte en type vastlegt; verwijderen uitgebreid naar objecten; een back-up van de opslagbucket naar een apart account met een getest herstel; en de 340 verloren bestanden geïdentificeerd uit de databaserecords, waarbij de zes bedrijven werd gevraagd opnieuw te uploaden wat ze nog hadden — wat er zo'n 260 terugbracht.
+Drie werkdagen: object storage ingevoerd, met de eigen opslag van het platform omdat geen van de redenen van residentie, overdraagbaarheid of schaal van toepassing was; alle bestandstoegang achter een opslagmodule gezet, met paden in plaats van URL's in de database zodat een latere wissel van aanbieder een configuratiewijziging is; een padindeling met de eigenaar voorop van bedrijf, object en gegenereerde bestandsidentifier; buckets privé met op de server gegenereerde signed URLs, die na vijftien minuten verlopen voor bekijken en na een uur voor downloaden; typecontrole op basis van bestandsinhoud, omdat de vorige implementatie alles had geaccepteerd; groottelimieten van 20 MB per bestand; een bestandsregistertabel die uploader, tijdstip, pad, grootte en type vastlegt; verwijderen uitgebreid naar objecten; een back-up van de opslagbucket naar een apart account met een getest herstel; en de 340 verloren bestanden geïdentificeerd uit de databaserecords, waarbij de zes bedrijven werd gevraagd opnieuw te uploaden wat ze nog hadden - wat er zo'n 260 terugbracht.
 
 **Resultaat:** ongeveer 80 keuringsdocumenten gingen definitief verloren, wat voor twee objecten betekende dat de keuring opnieuw moest worden uitgevoerd, tegen kosten die de bedrijven droegen. Freeks oordeel is dat hij geen idee had dat het bestandssysteem tijdelijk was, en dat niets in vier maanden succesvol gebruik dat had doen vermoeden.
 
 > *"Het had vier maanden gewerkt. Toen deployde ik op een dinsdag en waren elf dagen aan keuringsfoto's er gewoon niet meer, zonder fout en zonder iets in welke log dan ook."*
-> — **Freek Batenburg, Oprichter, Keuringsdossier (Barneveld)**
+> - **Freek Batenburg, Oprichter, Keuringsdossier (Barneveld)**
 
-**Kosten & Doorlooptijd:** €2.800 (object storage ingevoerd met een opslagmodule en verwijzingen op basis van paden, indeling met de eigenaar voorop, privé-buckets met signed URLs, typecontrole en groottelimieten, bestandsregister, afhandeling van verwijderen, back-up naar een apart account met getest herstel, identificatie van verlies en coördinatie van herstel) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €2.800 (object storage ingevoerd met een opslagmodule en verwijzingen op basis van paden, indeling met de eigenaar voorop, privé-buckets met signed URLs, typecontrole en groottelimieten, bestandsregister, afhandeling van verwijderen, back-up naar een apart account met getest herstel, identificatie van verlies en coördinatie van herstel) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -169,7 +169,7 @@ Vrijwel zeker niet. Object storage valt er meestal buiten, wat betekent dat een 
       "name": "Kunnen uploads op het bestandssysteem worden opgeslagen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — deployments vervangen het, instances kunnen het niet delen, en het wordt niet geback-upt. Gebruik het alleen binnen één verzoek."
+        "text": "Nee - deployments vervangen het, instances kunnen het niet delen, en het wordt niet geback-upt. Gebruik het alleen binnen één verzoek."
       }
     },
     {
@@ -201,7 +201,7 @@ Vrijwel zeker niet. Object storage valt er meestal buiten, wat betekent dat een 
       "name": "Zitten geüploade bestanden in databaseback-ups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal niet — object storage valt erbuiten, dus een herstel laat records achter die naar ontbrekende bestanden verwijzen. Maak apart een back-up van bestanden en test die."
+        "text": "Meestal niet - object storage valt erbuiten, dus een herstel laat records achter die naar ontbrekende bestanden verwijzen. Maak apart een back-up van bestanden en test die."
       }
     }
   ]

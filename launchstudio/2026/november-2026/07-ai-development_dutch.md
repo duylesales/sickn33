@@ -31,7 +31,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-De YouTube-tutorial duurde veertien minuten. Daarin bouwde een ontwikkelaar met perfecte studioverlichting en een mechanisch toetsenbord een complete SaaS-applicatie met behulp van AI-tools. Registratieformulier, dashboard, database — live en gedeployed bij minuut twaalf, gevolgd door twee minuten outro-muziek.
+De YouTube-tutorial duurde veertien minuten. Daarin bouwde een ontwikkelaar met perfecte studioverlichting en een mechanisch toetsenbord een complete SaaS-applicatie met behulp van AI-tools. Registratieformulier, dashboard, database - live en gedeployed bij minuut twaalf, gevolgd door twee minuten outro-muziek.
 
 U deed stap voor stap mee. Bij u duurde het negen uur in plaats van veertien minuten. Sommige zaken werkten niet direct. De databaseverbinding gaf foutmeldingen en de deployment mislukte twee keer. Maar uiteindelijk had u iets op uw scherm dat leek op wat de tutorial liet zien.
 
@@ -43,7 +43,7 @@ U heeft de tutorial niet verkeerd begrepen. De tutorial schoot tekort. Het leerd
 
 AI-ontwikkeling, in zijn huidige vorm, is het proces waarbij kunstmatige intelligentie wordt ingezet om applicatiecode te genereren op basis van beschrijvingen, templates of interactieve prompts. Het levert snel en laagdrempelig werkende software op.
 
-Software-engineering daarentegen is de discipline van het bouwen van systemen die onder alle omstandigheden betrouwbaar blijven functioneren — inclusief scenario's die niemand vooraf had voorzien. Het omvat beveiligingsarchitectuur, prestatie-optimalisatie, herstel na systeemstoringen, data-integriteit en wetgeving zoals de AVG/GDPR.
+Software-engineering daarentegen is de discipline van het bouwen van systemen die onder alle omstandigheden betrouwbaar blijven functioneren - inclusief scenario's die niemand vooraf had voorzien. Het omvat beveiligingsarchitectuur, prestatie-optimalisatie, herstel na systeemstoringen, data-integriteit en wetgeving zoals de AVG/GDPR.
 
 De verwarring tussen deze twee disciplines kost oprichters maanden aan verspilde tijd en duizenden euro's aan mislukte lanceringen. Weten waar AI-ontwikkeling stopt en software-engineering begint, is het belangrijkste inzicht voor iedere niet-technische oprichter.
 
@@ -92,17 +92,17 @@ Kosten: €800 tot €7.500 (vaste prijs). Doorlooptijd: 1 tot 3 weken. Risico: 
 
 [LaunchStudio](https://launchstudio.eu/nl/) is Optie C. Het is een initiatief van [Manifera](https://www.manifera.com/about-us/), een softwareontwikkelingsbedrijf opgericht door Herre Roelevink dat al meer dan 11 jaar actief is vanuit Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10).
 
-Het onderscheidend vermogen: de engineers van LaunchStudio werken dagelijks met AI-codebases. Zij kennen de React-patronen van Lovable, de WebContainer-uitvoer van Bolt en de contextuele code van Cursor van binnenuit. Zij hoeven uw code niet opnieuw te ontdekken — ze kunnen er direct op voortbouwen.
+Het onderscheidend vermogen: de engineers van LaunchStudio werken dagelijks met AI-codebases. Zij kennen de React-patronen van Lovable, de WebContainer-uitvoer van Bolt en de contextuele code van Cursor van binnenuit. Zij hoeven uw code niet opnieuw te ontdekken - ze kunnen er direct op voortbouwen.
 
 ## De Echte AI-Ontwikkelingsworkflow
 
 Dit is de workflow die daadwerkelijk leidt tot een succesvol gelanceerd product:
 
-1. **Valideer het idee** (1 week) — Bouw een visueel prototype met Bolt en test dit bij 10 potentiële klanten.
-2. **Bouw de interface** (1–2 weken) — Gebruik Lovable of Cursor om de volledige frontend te genereren.
-3. **Test met gebruikers** (1 week) — Deel het prototype met 20 gebruikers en verzamel feedback.
-4. **Productie-engineering** (1–3 weken) — Draag het gevalideerde prototype over aan LaunchStudio voor de backend-infrastructuur.
-5. **Livegang en optimalisatie** (doorlopend) — Ga live, verzamel echte data en breid gericht uit.
+1. **Valideer het idee** (1 week) - Bouw een visueel prototype met Bolt en test dit bij 10 potentiële klanten.
+2. **Bouw de interface** (1–2 weken) - Gebruik Lovable of Cursor om de volledige frontend te genereren.
+3. **Test met gebruikers** (1 week) - Deel het prototype met 20 gebruikers en verzamel feedback.
+4. **Productie-engineering** (1–3 weken) - Draag het gevalideerde prototype over aan LaunchStudio voor de backend-infrastructuur.
+5. **Livegang en optimalisatie** (doorlopend) - Ga live, verzamel echte data en breid gericht uit.
 
 Totale doorlooptijd: 4 tot 7 weken van idee tot omzet. Totale investering: tool-abonnementen (~€40/maand) plus LaunchStudio (€800–€7.500).
 
@@ -116,20 +116,20 @@ Vergelijk dat met de traditionele route: neem een fulltime CTO aan (€8.000/maa
 
 Sofia, een juridisch medewerker in Leiden, volgde zeven YouTube-tutorials om een cliënten-intakedashboard te bouwen voor kleine advocatenkantoren. Met haar basiskennis van HTML en de AI-assistent Cursor combineerde ze codefragmenten uit verschillende video's tot een Next.js-applicatie met formulieropbouw, document-upload en dossierstatus.
 
-De applicatie draaide op haar laptop. Vervolgens stuurde ze de URL naar een bevriende advocaat. De pagina gaf een 502-foutmelding: de lokale ontwikkelserver draaide niet meer op haar computer. Ze herstartte de server en stuurde de localhost-link opnieuw — met hetzelfde resultaat. Ze wist niet dat localhost uitsluitend op haar eigen apparaat bereikbaar was.
+De applicatie draaide op haar laptop. Vervolgens stuurde ze de URL naar een bevriende advocaat. De pagina gaf een 502-foutmelding: de lokale ontwikkelserver draaide niet meer op haar computer. Ze herstartte de server en stuurde de localhost-link opnieuw - met hetzelfde resultaat. Ze wist niet dat localhost uitsluitend op haar eigen apparaat bereikbaar was.
 
 Na nog twee weken tutorial-video's kijken lukte het Sofia om de app op Vercel te deployen. De pagina laadde wel, maar ingevulde formulieren verdwenen in het niets: de e-mailkoppeling uit Tutorial #4 stond geconfigureerd op een test-inbox die niet meer bestond. Geüploade documenten werden opgeslagen in een tijdelijke map die door Vercel elke 24 uur automatisch gewist werd.
 
 Via Google kwam Sofia bij LaunchStudio terecht. Het team van Manifera beoordeelde haar Cursor-applicatie tijdens een 15-minuten gesprek en bracht direct zeven kritieke tekortkomingen in kaart, waaronder het tijdelijke bestandsbeheer, het ontbreken van authenticatie (elke bezoeker kon alle dossiers inzien) en de niet-werkende e-mailpijplijn.
 
-Binnen 10 werkdagen bouwde het team een volwaardige backend: veilige bestandsopslag via AWS S3, transactionele e-mails via SendGrid, Supabase-authenticatie met strikte rollenscheiding (advocaat vs. cliënt) en een professionele deployment met beveiligde omgevingsvariabelen. Sofia's complete frontend — elk formulier, elke knop en de lay-out — bleef exact zoals zij het ontworpen had.
+Binnen 10 werkdagen bouwde het team een volwaardige backend: veilige bestandsopslag via AWS S3, transactionele e-mails via SendGrid, Supabase-authenticatie met strikte rollenscheiding (advocaat vs. cliënt) en een professionele deployment met beveiligde omgevingsvariabelen. Sofia's complete frontend - elk formulier, elke knop en de lay-out - bleef exact zoals zij het ontworpen had.
 
 **Resultaat:** LegalFlow verwelkomde binnen twee weken na livegang de eerste drie advocatenkantoren, die elk €149 per maand betalen voor het platform.
 
 > *"Ik had tientallen video's bekeken en kreeg mijn app maar niet werkend voor anderen. LaunchStudio liet me het verschil zien tussen bouwen op mijn laptop en bouwen voor het internet. Tien dagen later had ik betalende klanten."*
-> — **Sofia de Groot, Oprichter, LegalFlow (Leiden)**
+> - **Sofia de Groot, Oprichter, LegalFlow (Leiden)**
 
-**Kosten & Doorlooptijd:** €3.100 (Launch & Grow Pakket) — productie-klaar en live binnen 10 werkdagen.
+**Kosten & Doorlooptijd:** €3.100 (Launch & Grow Pakket) - productie-klaar en live binnen 10 werkdagen.
 
 ---
 
@@ -139,7 +139,7 @@ Binnen 10 werkdagen bouwde het team een volwaardige backend: veilige bestandsops
 Uw applicatie draait waarschijnlijk op een lokale ontwikkelserver (localhost), die alleen bereikbaar is vanaf uw eigen computer. Voor echt gebruik is hosting op een cloudplatform vereist met de juiste DNS- en serverconfiguratie. LaunchStudio verzorgt deze complete implementatie inclusief SSL en monitoring.
 
 ### Hoeveel programmeerkennis heb ik nodig om AI-ontwikkelingstools effectief te gebruiken?
-Voor tools als Lovable en Bolt is geen enkele programmeerkennis vereist. Voor Cursor helpt basiskennis van HTML en JavaScript om de AI gerichter aan te sturen. U hoeft geen backend, databases of servers te leren beheren — dat zijn exact de onderdelen die LaunchStudio voor u inricht.
+Voor tools als Lovable en Bolt is geen enkele programmeerkennis vereist. Voor Cursor helpt basiskennis van HTML en JavaScript om de AI gerichter aan te sturen. U hoeft geen backend, databases of servers te leren beheren - dat zijn exact de onderdelen die LaunchStudio voor u inricht.
 
 ### Is Lovable, Bolt of Cursor het meest geschikt voor het ontwikkelen van een SaaS-product?
 Lovable is ideaal voor complete SaaS-toepassingen met gebruikersaccounts en databases. Bolt blinkt uit in snelle prototyping en validatie. Cursor is het krachtigst voor oprichters met enige programmeerervaring. Veel succesvolle oprichters valideren met Bolt, bouwen met Lovable en laten LaunchStudio de livegang verzorgen.

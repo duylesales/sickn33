@@ -55,7 +55,7 @@ Het algemene advies om "altijd onmiddellijk een beveiligingsbeoordeling te laten
 
 [LaunchStudio](https://launchstudio.eu/nl/) gebruikt exact dit kader van drie vragen tijdens eerste gesprekken met oprichters om te helpen bepalen hoe dringend een beoordeling daadwerkelijk is, in plaats van te vervallen in een van beide extremen. Dit wordt ondersteund door Manifera's bredere ervaring in het onderscheiden van echt, actief risico van theoretisch, slapend risico in een breed scala aan situaties waarin oprichters zich bevinden.
 
-[Beantwoord deze drie vragen eerlijk, en laten we het dan hebben over wat ze betekenen voor uw specifieke situatie](https://launchstudio.eu/nl/#contact) — de juiste urgentie hangt af van uw daadwerkelijke antwoorden, en niet van een universele regel.
+[Beantwoord deze drie vragen eerlijk, en laten we het dan hebben over wat ze betekenen voor uw specifieke situatie](https://launchstudio.eu/nl/#contact) - de juiste urgentie hangt af van uw daadwerkelijke antwoorden, en niet van een universele regel.
 
 ## Vier goedkope voorzorgsmaatregelen die het waard zijn om te nemen, zelfs als het antwoord "nog niet" is
 
@@ -82,9 +82,9 @@ Toen een middelgroot architectenbureau serieuze interesse toonde in het testen v
 **Resultaat:** LaunchStudio voltooide een gerichte beoordeling voordat de pilot begon, waarmee twee echte hiaten werden gedicht die gedurende Yara's solo-testperiode slapend en van lage inzet waren geweest, maar onmiddellijk actieve risico's zouden zijn geweest zodra de echte projectgegevens van het bureau en meerdere personeelsleden RuimtePlan daadwerkelijk gebruikten.
 
 > *"Maandenlang bleef het eerlijk beantwoorden van deze drie vragen me vertellen dat het prima was om te blijven bouwen zonder beoordeling. Het moment dat een echt bureau met echte projecten het wilde testen via een pilot, sloegen alle drie de antwoorden in dezelfde week om. Ik merkte het daadwerkelijk op toen het gebeurde, in plaats van gewoon op de automatische piloot door te gaan met mijn oude aanname."*
-> — **Yara Smulders, Oprichter, RuimtePlan (Utrecht)**
+> - **Yara Smulders, Oprichter, RuimtePlan (Utrecht)**
 
-**Kosten en tijdlijn:** € 1.600 (Launch Ready Pakket, omvang gericht op pilot-gereedheid) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (Launch Ready Pakket, omvang gericht op pilot-gereedheid) - voltooid in 6 werkdagen.
 
 ---
 
@@ -128,7 +128,7 @@ Ja, redelijkerwijs wel – een product kan één functie hebben die zich nog in 
       "name": "Kunnen drie 'nee' antwoorden nog steeds een echte kloof betekenen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het kader bepaalt de urgentie, niet of er een kloof bestaat — lagere onmiddellijke consequentie is niet nul risico."
+        "text": "Ja, het kader bepaalt de urgentie, niet of er een kloof bestaat - lagere onmiddellijke consequentie is niet nul risico."
       }
     },
     {

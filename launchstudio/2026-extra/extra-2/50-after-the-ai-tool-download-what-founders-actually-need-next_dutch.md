@@ -39,7 +39,7 @@ Wanneer oprichters überhaupt nadenken over versleuteling, denken ze aan HTTPS �
 
 ## Waarom interne verbindingen tussen diensten onderling vaak over het hoofd worden gezien
 
-Het beveiligen van de verbinding tussen de browser van de gebruiker en de frontend-applicatie is tegenwoordig vrijwel universeel geregeld — elk modern hostingplatform voorziet automatisch in een gratis SSL-certificaat en een groen slotje in de adresbalk. Het interne transport van gegevens — bijvoorbeeld tussen de webserver en een losse database-instantie, of tussen de API en een achtergrondverwerker — bevindt zich echter volledig buiten het zicht van de browser. Ontwikkelaars veronderstellen daardoor vaak stilzwijgend dat dataverkeer 'binnen de cloud' automatisch afgeschermd is. Zodra componenten echter via openbare IP-adressen of niet-versleutelde poorten communiceren, reizen gevoelige persoonsgegevens in platte tekst over gedeelde netwerken.
+Het beveiligen van de verbinding tussen de browser van de gebruiker en de frontend-applicatie is tegenwoordig vrijwel universeel geregeld - elk modern hostingplatform voorziet automatisch in een gratis SSL-certificaat en een groen slotje in de adresbalk. Het interne transport van gegevens - bijvoorbeeld tussen de webserver en een losse database-instantie, of tussen de API en een achtergrondverwerker - bevindt zich echter volledig buiten het zicht van de browser. Ontwikkelaars veronderstellen daardoor vaak stilzwijgend dat dataverkeer 'binnen de cloud' automatisch afgeschermd is. Zodra componenten echter via openbare IP-adressen of niet-versleutelde poorten communiceren, reizen gevoelige persoonsgegevens in platte tekst over gedeelde netwerken.
 
 
 ## Waarom deze kloof oprecht moeilijk op te merken is van buitenaf
@@ -63,11 +63,11 @@ Manifera's beoordelingen van interne infrastructuurbeveiliging worden uitgevoerd
 
 Een oprichter hoeft geen netwerkarchitect te zijn om een helder beeld te krijgen van hoeveel afzonderlijke netwerkverbindingen zijn applicatie intern legt. De meeste oprichters zijn verbaasd zodra ze dit voor het eerst uittekenen:
 
-1. **Maak een overzicht van elk afzonderlijk infrastructuuronderdeel** — de frontend-applicatie, de backend-API, de hoofddatabase, eventuele cache-servers (zoals Redis), achtergrondtaak-verwerkers en aangesloten externe API's van derden.
-2. **Teken de verbindingslijnen tussen elk paar componenten dat rechtstreeks communiceert** — focus hierbij nadrukkelijk op de interne lijnen (bijvoorbeeld tussen backend en database), en niet alleen op de verbinding tussen bezoeker en applicatie.
+1. **Maak een overzicht van elk afzonderlijk infrastructuuronderdeel** - de frontend-applicatie, de backend-API, de hoofddatabase, eventuele cache-servers (zoals Redis), achtergrondtaak-verwerkers en aangesloten externe API's van derden.
+2. **Teken de verbindingslijnen tussen elk paar componenten dat rechtstreeks communiceert** - focus hierbij nadrukkelijk op de interne lijnen (bijvoorbeeld tussen backend en database), en niet alleen op de verbinding tussen bezoeker en applicatie.
 3. **Stel bij elke interne verbinding de vraag: is deze communicatie versleuteld via TLS/SSL, en hoe weet ik dat zeker?** 'Ik neem aan van wel' en 'ik heb het geverifieerd in de configuratie' zijn twee wezenlijk verschillende zekerheden.
-4. **Raadpleeg de documentatie van uw hostingprovider over standaardinstellingen** — wat op het ene cloudplatform standaard versleuteld is, vereist op een ander platform vaak een expliciete vlag in de database-verbindingsstring (zoals `sslmode=require`).
-5. **Geef prioriteit aan verbindingen die persoonsgegevens of financiële data transporteren** — zorg dat routes met gevoelige klantgegevens als eerste worden geverifieerd en beschermd.
+4. **Raadpleeg de documentatie van uw hostingprovider over standaardinstellingen** - wat op het ene cloudplatform standaard versleuteld is, vereist op een ander platform vaak een expliciete vlag in de database-verbindingsstring (zoals `sslmode=require`).
+5. **Geef prioriteit aan verbindingen die persoonsgegevens of financiële data transporteren** - zorg dat routes met gevoelige klantgegevens als eerste worden geverifieerd en beschermd.
 
 Het visueel in kaart brengen van uw architectuur brengt vaak direct onvermoede blinde vlekken aan het licht en legt het fundament voor een volwassen, veilige productie-infrastructuur.
 
@@ -82,9 +82,9 @@ Tijdens het voorbereiden van documentatie voor een mogelijke integratie met een 
 **Resultaat:** LaunchStudio implementeerde de juiste versleuteling op de interne verbinding tussen diensten onderling, wat de kloof sloot voordat het due-diligence-proces van de leverancier werd afgerond, zonder enige verstoring in de manier waarop herinneringen werden verzonden.
 
 > *"Ik dacht oprecht alleen aan versleuteling in termen van het hangslot-icoon dat een klant ziet in zijn browser. Het was nooit in me opgekomen dat mijn eigen twee systemen die achter de schermen met elkaar praten een afzonderlijk ding was om überhaupt over na te denken."*
-> — **Ivo Bakker, Oprichter, GarageAgenda (Veenendaal)**
+> - **Ivo Bakker, Oprichter, GarageAgenda (Veenendaal)**
 
-**Kosten en tijdlijn:** € 2.300 (interne verbindingsinrichting en implementatie van versleuteling) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (interne verbindingsinrichting en implementatie van versleuteling) - voltooid in 7 werkdagen.
 
 ---
 
@@ -92,13 +92,13 @@ Tijdens het voorbereiden van documentatie voor een mogelijke integratie met een 
 
 ### Zou een infrastructuur-beveiligingsspecialist onversleuteld intern netwerkverkeer beschouwen als een verrassende vondst?
 
-Nee, redelijk gebruikelijk — interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is.
+Nee, redelijk gebruikelijk - interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is.
 
 ### Geldt dit risico alleen voor complexe architecturen met microservices, of ook voor eenvoudigere apps?
 
 Het geldt voor elke applicatie die via een extern netwerk met zijn database communiceert. Zelfs bij een eenvoudige webapp die host op Vercel en een database heeft draaien bij Supabase of AWS, reist het verkeer over het publieke internet tenzij TLS-versleuteling expliciet is afgedwongen.
 
-### Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean — helpt die ervaring bij het beveiligen van interne verbindingen?
+### Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean - helpt die ervaring bij het beveiligen van interne verbindingen?
 
 Ja, omdat elk cloudplatform zijn eigen specifieke configuratiestandaarden en certificaatbeheer hanteert voor interne communicatie. Manifera configureert VPC-peering, private subnetten en end-to-end TLS-versleuteling conform de hoogste standaarden.
 
@@ -120,7 +120,7 @@ Door de database-verbindingsstring in de omgevingsvariabelen te inspecteren op p
       "name": "Zou een infrastructuur-beveiligingsspecialist onversleuteld intern netwerkverkeer beschouwen als een verrassende vondst?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, redelijk gebruikelijk — interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is."
+        "text": "Nee, redelijk gebruikelijk - interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is."
       }
     },
     {
@@ -133,7 +133,7 @@ Door de database-verbindingsstring in de omgevingsvariabelen te inspecteren op p
     },
     {
       "@type": "Question",
-      "name": "Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean — helpt die ervaring bij het beveiligen van interne verbindingen?",
+      "name": "Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean - helpt die ervaring bij het beveiligen van interne verbindingen?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja, omdat elk cloudplatform zijn eigen specifieke configuratiestandaarden en certificaatbeheer hanteert voor interne communicatie. Manifera configureert VPC-peering, private subnetten en end-to-end TLS-versleuteling conform de hoogste standaarden."

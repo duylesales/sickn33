@@ -82,9 +82,9 @@ Evaluation is where most recommendation work goes wrong, and where interviewers 
 
 Every real system faces cold start continuously, not as an edge case, and having a concrete plan is a hiring signal.
 
-**New users.** Options include asking directly during onboarding, using whatever context exists — country, device, referral source, time of day — showing popular and diverse items to learn quickly, and treating the first session as an exploration opportunity rather than a conversion opportunity.
+**New users.** Options include asking directly during onboarding, using whatever context exists - country, device, referral source, time of day - showing popular and diverse items to learn quickly, and treating the first session as an exploration opportunity rather than a conversion opportunity.
 
-**New items.** Content-based features are the main answer: category, attributes, text description embeddings, images, creator or supplier. A hybrid system that can place a new item in the same space as existing ones handles this naturally. Deliberate exposure — giving new items a chance to accumulate signal — is also necessary, because without it popular items crowd out everything and the catalogue ossifies.
+**New items.** Content-based features are the main answer: category, attributes, text description embeddings, images, creator or supplier. A hybrid system that can place a new item in the same space as existing ones handles this naturally. Deliberate exposure - giving new items a chance to accumulate signal - is also necessary, because without it popular items crowd out everything and the catalogue ossifies.
 
 **New markets.** Launching in a new country with no interaction history means falling back on content, transferring what generalises from other markets, and accepting a period of lower quality while data accumulates.
 
@@ -98,11 +98,11 @@ A recommender determines what users see, which determines what they interact wit
 
 The visible symptoms are familiar: popular items become more popular regardless of merit, new items never accumulate enough signal to be surfaced, user recommendations become repetitive, and the catalogue effectively shrinks to a fraction of what is available.
 
-Exploration is the correction. Contextual bandits formalise it, allocating some exposure to uncertain items in a principled way, and they are widely deployed in European ranking systems for exactly this reason. Simpler approaches — reserving slots for new or under-exposed items, randomising within a band of similar scores — capture much of the benefit.
+Exploration is the correction. Contextual bandits formalise it, allocating some exposure to uncertain items in a principled way, and they are widely deployed in European ranking systems for exactly this reason. Simpler approaches - reserving slots for new or under-exposed items, randomising within a band of similar scores - capture much of the benefit.
 
 Exploration has a cost, borne by users who see something less relevant, so the budget is a product decision. Guardrails matter: no individual user should bear a disproportionate share of exploration.
 
-The related discipline is logging propensities — recording how likely the system was to show what it showed — which is what makes later offline evaluation possible. Teams that omit this find themselves unable to evaluate anything without a live test.
+The related discipline is logging propensities - recording how likely the system was to show what it showed - which is what makes later offline evaluation possible. Teams that omit this find themselves unable to evaluate anything without a live test.
 
 Candidates who raise exploration and propensity logging unprompted are usually people who have maintained a system rather than built one.
 
@@ -164,7 +164,7 @@ That project is directly recognisable to anyone hiring for personalisation, sear
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Recommendation roles appear under many titles — personalisation engineer, ranking scientist, search relevance engineer, growth data scientist — and the underlying skills are shared. Reading descriptions rather than filtering on titles is the way to find them, and a board carrying only data and AI roles makes that realistic.
+Recommendation roles appear under many titles - personalisation engineer, ranking scientist, search relevance engineer, growth data scientist - and the underlying skills are shared. Reading descriptions rather than filtering on titles is the way to find them, and a board carrying only data and AI roles makes that realistic.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen and Capelle aan den IJssel, with employers such as Sendcloud, Mollie, Accenture and Cegeka among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

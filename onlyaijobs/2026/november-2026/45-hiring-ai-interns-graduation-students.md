@@ -110,11 +110,11 @@ Many AI and data students at Dutch universities are international. Non-EU studen
 
 ## AI Literacy and Responsible Use
 
-Since February 2025, the **EU AI Act** requires organisations using AI systems to ensure sufficient AI literacy among staff and others dealing with AI systems on their behalf. When interns build or use AI tools, include them in basic guidance on responsible use, data protection and the company's policies — which also helps students learn professional practices.
+Since February 2025, the **EU AI Act** requires organisations using AI systems to ensure sufficient AI literacy among staff and others dealing with AI systems on their behalf. When interns build or use AI tools, include them in basic guidance on responsible use, data protection and the company's policies - which also helps students learn professional practices.
 
 ## What Students Look For When Choosing an Internship
 
-Strong AI and data students often choose between several internship offers. Understanding what they value helps employers compete — including smaller companies and organisations outside major cities.
+Strong AI and data students often choose between several internship offers. Understanding what they value helps employers compete - including smaller companies and organisations outside major cities.
 
 **A meaningful problem.** Students want projects with real data and a clear purpose, not tasks invented to keep an intern busy.
 
@@ -173,12 +173,12 @@ A frequent misconception is that interns are a cheap way to get AI projects done
 
 Define one concrete business question with accessible data, identify a supervisor with time and contact a nearby university or university of applied sciences about a graduation project.
 
-Post your AI or data internship or junior vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI or data internship or junior vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: company new to internships) Do we need an internship agreement?
-Yes — internships are usually formalised in an agreement between the student, the educational institution and the host organisation.
+Yes - internships are usually formalised in an agreement between the student, the educational institution and the host organisation.
 
 ### (Scenario: employer considering unpaid internships) Are we required to pay interns?
 Dutch law does not generally require an allowance for genuine learning internships, but paying one is common and helps attract strong students.
@@ -190,14 +190,14 @@ Because interns are generally not employees, rights may remain with the student 
 Yes, with a clear business question, available data and strong supervision, possibly supported by an external mentor and the academic supervisor.
 
 ### (Scenario: employer wanting to hire an intern) When should we offer a job to a good intern?
-Before graduation — many students decide on their first job months before completing their studies.
+Before graduation - many students decide on their first job months before completing their studies.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do we need an internship agreement?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — usually between student, institution and host organisation."}},
+    {"@type": "Question", "name": "Do we need an internship agreement?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - usually between student, institution and host organisation."}},
     {"@type": "Question", "name": "Are we required to pay interns?", "acceptedAnswer": {"@type": "Answer", "text": "Not generally for genuine learning internships, but allowances are common and important."}},
     {"@type": "Question", "name": "Who owns the code and models an intern creates?", "acceptedAnswer": {"@type": "Answer", "text": "Rights may remain with the student unless transferred in writing."}},
     {"@type": "Question", "name": "Can we offer an AI internship without a data team?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with a clear question, data and strong supervision."}},

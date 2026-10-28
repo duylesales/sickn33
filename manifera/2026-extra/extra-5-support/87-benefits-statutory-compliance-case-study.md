@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT manager or technical lead at an employee benefits platform serving employers across multiple countries faces a specific regulatory reality that's easy to underweight during architecture planning: statutory-benefits requirements — mandatory minimum coverage levels, parental-leave entitlements, statutory sick-pay obligations — differ meaningfully across jurisdictions, with individual countries setting genuinely different minimum standards employers must meet for their local workforce, and some jurisdictions layering additional works-council or collective-bargaining requirements on top of the statutory baseline. A system architected around a single, uniform benefits ruleset across all countries risks either genuine statutory non-compliance in stricter jurisdictions or unnecessarily over-provisioning benefits in more permissive ones.
+An IT manager or technical lead at an employee benefits platform serving employers across multiple countries faces a specific regulatory reality that's easy to underweight during architecture planning: statutory-benefits requirements - mandatory minimum coverage levels, parental-leave entitlements, statutory sick-pay obligations - differ meaningfully across jurisdictions, with individual countries setting genuinely different minimum standards employers must meet for their local workforce, and some jurisdictions layering additional works-council or collective-bargaining requirements on top of the statutory baseline. A system architected around a single, uniform benefits ruleset across all countries risks either genuine statutory non-compliance in stricter jurisdictions or unnecessarily over-provisioning benefits in more permissive ones.
 
 ## Why a Single Hardcoded Ruleset Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A benefits platform built around a single, globally uniform statutory-benefits r
 
 ## Why Country-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around country-configurable statutory rules — able to apply, adjust, or extend specific coverage minimums, leave entitlements, and sick-pay calculations based on an employee's actual country of employment — lets a provider comply with each country's specific statutory requirements without over-provisioning benefits in countries where a lighter, still-compliant configuration remains legally sufficient. This isn't simply a matter of toggling a single feature per country, since statutory requirements can be more nuanced than a binary higher-or-lower minimum, some countries specifically mandate a particular calculation method for statutory sick pay rather than simply a different numeric threshold, meaning the underlying system needs to support genuinely configurable calculation logic per country, not just a global parameter adjustment, to accommodate the actual range of statutory approaches across a provider's operating countries.
+A system architected from the start around country-configurable statutory rules - able to apply, adjust, or extend specific coverage minimums, leave entitlements, and sick-pay calculations based on an employee's actual country of employment - lets a provider comply with each country's specific statutory requirements without over-provisioning benefits in countries where a lighter, still-compliant configuration remains legally sufficient. This isn't simply a matter of toggling a single feature per country, since statutory requirements can be more nuanced than a binary higher-or-lower minimum, some countries specifically mandate a particular calculation method for statutory sick pay rather than simply a different numeric threshold, meaning the underlying system needs to support genuinely configurable calculation logic per country, not just a global parameter adjustment, to accommodate the actual range of statutory approaches across a provider's operating countries.
 
 ## What Building Country-Configurable Statutory Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Voordelenplatform Leuven, a Leuven-based employee benefits platform provider, ha
 Manifera's dedicated Vietnam engineering team, working under Amsterdam governance, rebuilt the benefits engine's core architecture around a configurable, country-specific ruleset, supporting distinct entitlement calculation methods and coverage minimums per country alongside reliable employee country-of-employment determination and statutory reporting support, all without requiring separate, parallel benefits systems per country.
 
 > *"We'd built one ruleset and assumed we'd just adjust it manually wherever a country's requirements were different. It turned out the actual statutory picture across our client countries was more varied than a single ruleset could handle, and building real configurability was what let us keep serving all of them properly rather than just restricting ourselves to the countries our original ruleset happened to cover correctly."*
-> — **IT Manager, Voordelenplatform Leuven**
+> - **IT Manager, Voordelenplatform Leuven**
 
 Voordelenplatform Leuven successfully expanded into its additional target countries with country-appropriate statutory configurations, and now treats regulatory configurability as a standard architectural requirement for any new country expansion, rather than a single global ruleset decided once.
 
@@ -79,7 +79,7 @@ Voordelenplatform Leuven successfully expanded into its additional target countr
 
 ## Scoping Your Own Employee Benefits Platform's Statutory Engine for Multi-Country Compliance
 
-Before expanding an employee benefits platform across multiple countries, architect the statutory-benefits engine around genuinely configurable, country-specific rulesets — a single global ruleset forces an unnecessary trade-off between compliance risk and cost efficiency. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a statutory-compliance-ready benefits engine.
+Before expanding an employee benefits platform across multiple countries, architect the statutory-benefits engine around genuinely configurable, country-specific rulesets - a single global ruleset forces an unnecessary trade-off between compliance risk and cost efficiency. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a statutory-compliance-ready benefits engine.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between over-provisioning benefits to the strictest country's
 
 ### (Scenario: engineering lead scoping country configurability) Is a simple numeric threshold adjustment per country sufficient to handle statutory requirements?
 
-Not always — some countries mandate a specific calculation method for entitlements like statutory sick pay, meaning the system needs genuinely configurable calculation logic per country, not just a parameter adjustment.
+Not always - some countries mandate a specific calculation method for entitlements like statutory sick pay, meaning the system needs genuinely configurable calculation logic per country, not just a parameter adjustment.
 
 ### (Scenario: legal counsel reviewing technical architecture) Why does reliable employee country-of-employment determination matter for statutory compliance?
 
@@ -110,7 +110,7 @@ Statutory-benefits regulation is a genuinely active, evolving area across countr
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-country benefits engine) Why does statutory-benefits regulation vary meaningfully across countries?", "acceptedAnswer": { "@type": "Answer", "text": "Individual countries set genuinely different minimum coverage, leave entitlements, and sick-pay calculation methods, creating real divergence." } },
     { "@type": "Question", "name": "(Scenario: provider worried about compliance) What's the risk of building a benefits engine around a single, globally uniform ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between over-provisioning to the strictest country or risking non-compliance in stricter countries." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping country configurability) Is a simple numeric threshold adjustment per country sufficient to handle statutory requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some countries mandate specific calculation methods, requiring genuinely configurable calculation logic, not just a threshold change." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping country configurability) Is a simple numeric threshold adjustment per country sufficient to handle statutory requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some countries mandate specific calculation methods, requiring genuinely configurable calculation logic, not just a threshold change." } },
     { "@type": "Question", "name": "(Scenario: legal counsel reviewing technical architecture) Why does reliable employee country-of-employment determination matter for statutory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying country-specific rules correctly depends on accurately identifying jurisdiction, a nuance beyond simple mailing address lookup." } },
     { "@type": "Question", "name": "(Scenario: provider planning for future regulatory change) Why should a benefits engine be designed to accommodate evolving statutory requirements, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Statutory-benefits regulation is genuinely active and evolving, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

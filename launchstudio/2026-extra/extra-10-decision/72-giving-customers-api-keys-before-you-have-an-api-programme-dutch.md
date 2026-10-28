@@ -34,7 +34,7 @@ De endpoints die uw eigen frontend aanroept, zijn namelijk **geen publieke API**
 
 Zodra er echter een extern script van een klant afhankelijk is van die route, verandert die route in een **juridisch en technisch contract**. Hernoemt u over vier maanden een JSON-veld? Dan crasht het ERP-systeem van uw klant om 03:00 uur 's nachts, met een woedend escalatietelefoontje als gevolg.
 
-Het verschil tussen een intern endpoint en een publieke API is geen technische nuance — het is een **keiharde belofte over stabiliteit**.
+Het verschil tussen een intern endpoint en een publieke API is geen technische nuance - het is een **keiharde belofte over stabiliteit**.
 
 ## Drie Niveaus van Toezegging
 
@@ -46,7 +46,7 @@ Het helpt enorm om het aanbieden van API-toegang te zien als een geleidende scha
 
 **3. Een volwaardig publiek ontwikkelaarsprogramma.** Een breed API-oppervlak, openbare ontwikkelaarsportalen, interactieve SDK's, formele changelogs, strikte deprecation-richtlijnen en dedicated developer-support. Dit is een volwaardig softwareproduct op zichzelf, met zijn eigen doorlopende onderhoudskosten, en beslist niet iets waar u per ongeluk in moet rollen.
 
-De overgrote meerderheid van de B2B-oprichters moet resoluut starten op niveau 1 en pas opschalen zodra de commerciële vraag dat ondubbelzinnig rechtvaardigt. De klassieke valkuil is dat men technisch opereert op niveau 1 (even snel een sleuteltje genereren), maar zich extern gedraagt alsof het niveau 3 is — door niets vast te leggen over stabiliteit, om vervolgens na zes maanden ontzet te ontdekken dat een database-endpoint nooit meer gewijzigd kan worden omdat drie grote klanten hun dagelijkse administratie eraan hebben vastgeklonken.
+De overgrote meerderheid van de B2B-oprichters moet resoluut starten op niveau 1 en pas opschalen zodra de commerciële vraag dat ondubbelzinnig rechtvaardigt. De klassieke valkuil is dat men technisch opereert op niveau 1 (even snel een sleuteltje genereren), maar zich extern gedraagt alsof het niveau 3 is - door niets vast te leggen over stabiliteit, om vervolgens na zes maanden ontzet te ontdekken dat een database-endpoint nooit meer gewijzigd kan worden omdat drie grote klanten hun dagelijkse administratie eraan hebben vastgeklonken.
 ## Sla Sleutels Nooit Op in Platte Tekst
 
 Een API-sleutel is een volwaardig wachtwoord en moet exact zo behandeld worden.
@@ -62,13 +62,13 @@ De klassieke fout in AI-gegenereerde software is dat de sleutel in platte tekst 
 
 ## Rechtenbeperking (Scopes): Geef Nooit de Sleutels van het Koninkrijk
 
-Een API-sleutel die standaard exact dezelfde almachtige rechten bezit als de accounteigenaar zelf, is de universele standaard in AI-gegenereerde codebases — en het is zonder uitzondering de allerslechtste standaard die er bestaat. Een klant die simpelweg zijn bestellingen van gisteren wil synchroniseren met zijn magazijnsoftware, krijgt daarmee per ongeluk de bevoegdheid in handen om zijn complete bedrijfsaccount met één scriptfout te wissen.
+Een API-sleutel die standaard exact dezelfde almachtige rechten bezit als de accounteigenaar zelf, is de universele standaard in AI-gegenereerde codebases - en het is zonder uitzondering de allerslechtste standaard die er bestaat. Een klant die simpelweg zijn bestellingen van gisteren wil synchroniseren met zijn magazijnsoftware, krijgt daarmee per ongeluk de bevoegdheid in handen om zijn complete bedrijfsaccount met één scriptfout te wissen.
 
 Twee pragmatische vormen van rechtenbeperking dekken 95% van alle integratiebehoeften af, zónder dat u direct een log permissie-framework hoeft op te tuigen:
 
 **Lezen versus Schrijven (Read vs. Write):** Een eenvoudige binaire keuze bij het genereren van de sleutel. Dit elimineert al 80% van het reële risico, aangezien het merendeel van de externe integraties uitsluitend data wil uitlezen.
 
-**Domein- of Resource-scoping:** Beperk een sleutel tot een specifiek data-onderdeel — bijvoorbeeld uitsluitend toegang tot `/orders`, maar categorisch géén toegang tot `/invoices`, `/team` of `/billing`.
+**Domein- of Resource-scoping:** Beperk een sleutel tot een specifiek data-onderdeel - bijvoorbeeld uitsluitend toegang tot `/orders`, maar categorisch géén toegang tot `/invoices`, `/team` of `/billing`.
 
 Daarnaast zijn er twee strikte beveiligingsregels die u op de server moet afdwingen:
 Ten eerste mag een API-sleutel **nooit meer rechten bezitten dan het account waaraan hij gekoppeld is**. Een sleutel die is gegenereerd door een regulier teamlid mag nooit plotseling eigenaarsrechten uitoefenen; privilege-escalatie ontstaat vrijwel altijd wanneer sleutelvalidatie losstaat van uw reguliere gebruikersrechtencontrole.
@@ -77,7 +77,7 @@ Ten tweede moet **elke multi-tenant restrictie die in uw webinterface geldt, onv
 
 Geautomatiseerde scripts en externe integraties vertonen heel ander gedrag dan menselijke gebruikers achter een toetsenbord: ze draaien in oneindige lussen, proberen bij netwerkfouten direct opnieuw in milliseconden, en vragen gerust vierhonderd keer per minuut exact dezelfde pagina op door een programmeerfout in iemands pagineringslogica.
 
-Zonder effectieve rate limiting kan één haperend script van één enkele klant uw complete serverpark overbelasten en uw applicatie voor álle andere gebruikers tergend traag maken — en de klant heeft meestal zelf geen flauw idee dat zijn code amok maakt. Een limiet per API-sleutel — bijvoorbeeld 120 verzoeken per minuut, wat voor 99% van de zakelijke workflows meer dan royaal is — beschermt beide partijen. Stuur bij overschrijding direct de officiële HTTP-statuscode `429 Too Many Requests` terug, inclusief een `Retry-After`-header die aangeeft hoeveel seconden het script moet wachten.
+Zonder effectieve rate limiting kan één haperend script van één enkele klant uw complete serverpark overbelasten en uw applicatie voor álle andere gebruikers tergend traag maken - en de klant heeft meestal zelf geen flauw idee dat zijn code amok maakt. Een limiet per API-sleutel - bijvoorbeeld 120 verzoeken per minuut, wat voor 99% van de zakelijke workflows meer dan royaal is - beschermt beide partijen. Stuur bij overschrijding direct de officiële HTTP-statuscode `429 Too Many Requests` terug, inclusief een `Retry-After`-header die aangeeft hoeveel seconden het script moet wachten.
 
 Twee verstandige verfijningen voor uw architectuur:
 1. Hanteer een aanzienlijk strengere limiet op zware operaties zoals PDF-generatie, complexe rapportages of bulk-exports.
@@ -86,11 +86,11 @@ Twee verstandige verfijningen voor uw architectuur:
 
 Zodra de programmacode van een klant afhankelijk is van de exacte JSON-structuur van uw API-responses, heeft u een mechanisme nodig om uw datamodel in de toekomst te kunnen doorontwikkelen zónder de koppeling van uw klant stuk te maken. Dit beslissen vóórdat u de eerste sleutel uitgeeft kost u letterlijk nul euro; dit achteraf moeten oplossen kost u geheid een waardevolle klantrelatie.
 
-De eenvoudigste en meest robuuste aanpak is het opnemen van het versienummer direct in het URL-pad — bijvoorbeeld `/v1/orders` — gecombineerd met een heldere contractuele spelregel: binnen versie 1 kunnen er te allen tijde nieuwe velden worden toegevoegd aan de response, maar bestaande velden worden nooit hernoemd, verplaatst of verwijderd, en het gedrag verandert niet incompatibel (*geen breaking changes*). Elke substantiële wijziging verschijnt in `/v2/`, waarbij de oude versie gegarandeerd nog een vastgestelde periode (zoals 6 of 12 maanden) operationeel blijft.
+De eenvoudigste en meest robuuste aanpak is het opnemen van het versienummer direct in het URL-pad - bijvoorbeeld `/v1/orders` - gecombineerd met een heldere contractuele spelregel: binnen versie 1 kunnen er te allen tijde nieuwe velden worden toegevoegd aan de response, maar bestaande velden worden nooit hernoemd, verplaatst of verwijderd, en het gedrag verandert niet incompatibel (*geen breaking changes*). Elke substantiële wijziging verschijnt in `/v2/`, waarbij de oude versie gegarandeerd nog een vastgestelde periode (zoals 6 of 12 maanden) operationeel blijft.
 
 Hanteer hierbij de gouden vuistregel die versionering beheersbaar houdt: **het toevoegen van extra velden is veilig, al het andere is een breaking change.** Communiceer dit expliciet naar uw partners, zodat hun JSON-parsers niet crashen wanneer uw API een nieuw veld introduceert.
 
-Voor een eerste, kleinschalige maatwerkafspraak volstaat een pragmatische toezegging: neem een versienummer op in de URL en beloof schriftelijk dat u wijzigingen minimaal 30 dagen van tevoren aankondigt via e-mail. Dit is transparant, goedkoop en meer dan toereikend — op voorwaarde dat u weet wie er achter elke sleutel zit. Het correct inrichten van veilige sleutelopslag, scopes, rate limits en URL-versionering is degelijk softwarewerk dat voorkomt dat een ad-hoc toezegging verandert in een onbeheersbare operationele blokkade. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, bouwt onderhoudbare, veilige API-toegangen voor AI-gebouwde producten. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
+Voor een eerste, kleinschalige maatwerkafspraak volstaat een pragmatische toezegging: neem een versienummer op in de URL en beloof schriftelijk dat u wijzigingen minimaal 30 dagen van tevoren aankondigt via e-mail. Dit is transparant, goedkoop en meer dan toereikend - op voorwaarde dat u weet wie er achter elke sleutel zit. Het correct inrichten van veilige sleutelopslag, scopes, rate limits en URL-versionering is degelijk softwarewerk dat voorkomt dat een ad-hoc toezegging verandert in een onbeheersbare operationele blokkade. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, bouwt onderhoudbare, veilige API-toegangen voor AI-gebouwde producten. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Echt voorbeeld
 
 ### De API-Sleutel Die de Complete Webshop Kon Wissen
@@ -108,7 +108,7 @@ Tijdens een pre-audit voor een strategische samenwerking met een grote retailket
 **Resultaat:** Binnen drie werkdagen herbouwde LaunchStudio de API-architectuur: alle sleutels werden gemigreerd naar SHA-256 hashing met duidelijke voorloop-prefixes (`vs_live_`), er werden strikte lees- en schrijfrechten ingevoerd, Redis rate-limiting (max 100 req/min) beschermde de backend tegen lus-scripts, en endpoints kregen een formele `/v1/`-structuur met een audittrail van de laatste aanroepdatum (*last used at*). De onverklaarbare serverpieken verdwenen onmiddellijk.
 
 > *"Ik gaf een klant in vijf minuten een sleuteltje om voorraad bij te werken. Achteraf bleek dat ik hem de sleutel had gegeven om zijn eigen complete winkel leeg te trekken, zónder dat ik kon zien of iemand die sleutel überhaupt nog gebruikte."*
-> — **Daan Verhoeven, Oprichter, Voorraadsync**
+> - **Daan Verhoeven, Oprichter, Voorraadsync**
 
 **Kosten & Doorlooptijd:** API-sleutelbeveiliging, SHA-256 hashing, scoped tokens en Redis rate limiting opgeleverd in 3 werkdagen.
 

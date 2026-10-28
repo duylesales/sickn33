@@ -28,7 +28,7 @@ As a VP of Engineering finalizing a vendor contract, this is exactly the moment 
 
 AI tools for software development generally fall into three cost categories that vendors handle very differently in their billing: seat-based subscriptions for AI coding assistants (tools like GitHub Copilot or Cursor, priced per developer per month), usage-based API costs for large language model calls that scale with how much the tool is actually used, and infrastructure costs for any custom fine-tuning, vector databases, or self-hosted model serving a project requires. Seat-based costs are the easiest to verify because pricing is public; usage-based and infrastructure costs are where most billing opacity lives, because actual usage volume is something only the vendor can see directly.
 
-A vendor billing you a flat "AI tooling fee" without breaking out which category it falls into is making it impossible for you to verify whether the number reflects their actual cost plus a reasonable margin, or whether it's a number chosen because it sounded plausible during contract negotiation. Ask for the breakdown by category before you approve any recurring AI tooling line item — a vendor operating transparently will have this readily available, since they need it internally to manage their own margins regardless of whether you ask.
+A vendor billing you a flat "AI tooling fee" without breaking out which category it falls into is making it impossible for you to verify whether the number reflects their actual cost plus a reasonable margin, or whether it's a number chosen because it sounded plausible during contract negotiation. Ask for the breakdown by category before you approve any recurring AI tooling line item - a vendor operating transparently will have this readily available, since they need it internally to manage their own margins regardless of whether you ask.
 
 ## Budget Breakdown: What These Tools Actually Cost at the Vendor Level
 
@@ -45,9 +45,9 @@ If your current or prospective vendor's AI tooling line item, divided by your te
 
 ## Pass-Through vs. Value-Add: Where a Markup Is Justified
 
-Not all markup on AI tooling costs is unreasonable, and a VP of Engineering pushing for zero markup across the board is asking for something most legitimate vendors can't sustainably offer. A vendor managing licenses, monitoring usage to prevent runaway API costs, and maintaining the fine-tuning infrastructure is doing real operational work that justifies a markup in the 10-25% range on top of raw tool cost. What's not justified is a markup applied without any corresponding management activity — for example, a flat per-seat AI tooling fee that doesn't adjust regardless of whether a given developer uses the tool heavily or barely at all, which suggests the fee is being priced as a revenue line rather than a genuine cost pass-through with service wrapped around it.
+Not all markup on AI tooling costs is unreasonable, and a VP of Engineering pushing for zero markup across the board is asking for something most legitimate vendors can't sustainably offer. A vendor managing licenses, monitoring usage to prevent runaway API costs, and maintaining the fine-tuning infrastructure is doing real operational work that justifies a markup in the 10-25% range on top of raw tool cost. What's not justified is a markup applied without any corresponding management activity - for example, a flat per-seat AI tooling fee that doesn't adjust regardless of whether a given developer uses the tool heavily or barely at all, which suggests the fee is being priced as a revenue line rather than a genuine cost pass-through with service wrapped around it.
 
-The clearest way to test this in a final contract negotiation is to ask what specific activity the markup pays for — usage monitoring, license management, security review of AI tool outputs — and request that activity be named in the contract itself. A vendor unable to name a specific service justifying the markup is likely charging one simply because the market has tolerated it so far.
+The clearest way to test this in a final contract negotiation is to ask what specific activity the markup pays for - usage monitoring, license management, security review of AI tool outputs - and request that activity be named in the contract itself. A vendor unable to name a specific service justifying the markup is likely charging one simply because the market has tolerated it so far.
 
 ## ROI Calculation: Does the Productivity Gain Justify the Line Item
 
@@ -59,7 +59,7 @@ It also helps to run this calculation with your own numbers rather than acceptin
 
 ## TCO Comparison: Vendor-Managed vs. Building In-House
 
-For teams weighing whether to have a vendor manage AI tooling versus procuring and managing it internally, the total cost of ownership comparison usually favors vendor management once you account for more than tool licensing alone. Building internal capability to monitor API usage, prevent cost overruns, manage security review of AI-generated code, and keep pace with a rapidly changing tool landscape typically requires a fractional platform engineering role, which costs considerably more annually than the markup a competent vendor charges on the tools themselves. The exception is very large engineering organizations with sufficient scale to justify a dedicated internal AI tooling team — for most mid-sized engineering functions, vendor-managed tooling with transparent, itemized billing is the more cost-efficient path.
+For teams weighing whether to have a vendor manage AI tooling versus procuring and managing it internally, the total cost of ownership comparison usually favors vendor management once you account for more than tool licensing alone. Building internal capability to monitor API usage, prevent cost overruns, manage security review of AI-generated code, and keep pace with a rapidly changing tool landscape typically requires a fractional platform engineering role, which costs considerably more annually than the markup a competent vendor charges on the tools themselves. The exception is very large engineering organizations with sufficient scale to justify a dedicated internal AI tooling team - for most mid-sized engineering functions, vendor-managed tooling with transparent, itemized billing is the more cost-efficient path.
 
 ## Five Cost Traps to Watch For Before You Sign
 
@@ -69,11 +69,11 @@ Beyond the general billing model, a handful of specific traps recur often enough
 
 **Per-seat billing for inactive licenses.** Vendors sometimes provision AI tool seats for an entire team at project kickoff and continue billing for all of them even after some developers have rotated off the project or rarely use the tool. Request a quarterly seat utilization report as a standard part of the contract, not something you have to ask for after noticing the discrepancy.
 
-**Bundled "AI enablement" fees with no defined deliverable.** A one-time or recurring fee described only as "AI enablement" or "AI readiness" without a specific deliverable attached — training, tooling setup, a documented workflow — is difficult to distinguish from margin dressed up as a service. Ask for the specific deliverable tied to any fee using this kind of language.
+**Bundled "AI enablement" fees with no defined deliverable.** A one-time or recurring fee described only as "AI enablement" or "AI readiness" without a specific deliverable attached - training, tooling setup, a documented workflow - is difficult to distinguish from margin dressed up as a service. Ask for the specific deliverable tied to any fee using this kind of language.
 
 **Model version downgrades without notice.** As LLM providers release new model tiers, some vendors quietly shift client usage to cheaper, lower-capability models to protect their margin while continuing to bill at the original rate. Include a contract clause requiring notice of any change in the underlying model tier used for your project.
 
-**Shared infrastructure costs allocated unevenly.** When a vendor manages fine-tuning or vector database infrastructure shared across multiple clients, ask how that shared cost is allocated to your specific bill — an even per-client split is very different from a usage-proportional split, and the difference can matter significantly if your project is a lighter user of that shared infrastructure than others on the same vendor's roster.
+**Shared infrastructure costs allocated unevenly.** When a vendor manages fine-tuning or vector database infrastructure shared across multiple clients, ask how that shared cost is allocated to your specific bill - an even per-client split is very different from a usage-proportional split, and the difference can matter significantly if your project is a lighter user of that shared infrastructure than others on the same vendor's roster.
 
 Each of these traps is easy to prevent with a specific contract clause or reporting requirement agreed before signing, and considerably harder to renegotiate after several months of paying an inflated or opaque line item.
 
@@ -81,7 +81,7 @@ Each of these traps is easy to prevent with a specific contract clause or report
 
 Cost transparency on AI tooling is ultimately a proxy for something larger: how a vendor handles billing transparency across the entire engagement, not just this one line item. Manifera's approach to team engagements, delivered through our [offshore software development](https://www.manifera.com/services/offshore-software-development/) model, itemizes tooling costs separately from day rates specifically so clients can verify each component independently rather than accepting a bundled number. This transparency is part of a broader track record built over 160-plus delivered projects and 120-plus global clients, many of whom have stayed with Manifera across multiple engagements specifically because billing has remained predictable and verifiable throughout.
 
-Communication also plays a direct role in cost verification — a vendor whose team is fluent in written English and available during a meaningful overlap with your working hours will answer a billing question in the same conversation rather than through a multi-day email chain that delays your next invoice approval. For teams evaluating a broader engagement beyond just AI tooling, our [custom software development](https://www.manifera.com/services/custom-software-development/) page outlines how project costs are typically scoped and itemized from the proposal stage onward.
+Communication also plays a direct role in cost verification - a vendor whose team is fluent in written English and available during a meaningful overlap with your working hours will answer a billing question in the same conversation rather than through a multi-day email chain that delays your next invoice approval. For teams evaluating a broader engagement beyond just AI tooling, our [custom software development](https://www.manifera.com/services/custom-software-development/) page outlines how project costs are typically scoped and itemized from the proposal stage onward.
 
 ## Verify Before the Next Invoice Cycle
 
@@ -93,10 +93,10 @@ See how we've helped engineering teams like yours in our project portfolio, incl
 
 ## The Line-by-Line Invoice Audit
 
-When an AI tooling invoice actually lands, run it against six checks before approving it — this takes fifteen minutes and catches most of the drift described above before it compounds across a quarter.
+When an AI tooling invoice actually lands, run it against six checks before approving it - this takes fifteen minutes and catches most of the drift described above before it compounds across a quarter.
 
 1. **Seat count matches active headcount.** Cross-reference billed seats against your current roster; a 10-15% gap from rotated-off developers is common and easy to miss without a direct comparison.
-2. **Usage-based costs scale with actual activity.** A flat API-usage number that doesn't move month to month despite team size or sprint intensity changing is a red flag — usage-based costs should fluctuate.
+2. **Usage-based costs scale with actual activity.** A flat API-usage number that doesn't move month to month despite team size or sprint intensity changing is a red flag - usage-based costs should fluctuate.
 3. **Markup is stated as a percentage, not buried in a round number.** "€1,200/month AI tooling" tells you nothing; "€980 pass-through + 22% management markup" tells you everything.
 4. **Shared infrastructure allocation method is disclosed.** Ask whether your bill reflects an even per-client split or usage-proportional split of any shared fine-tuning or vector database cost.
 5. **Model tier matches what was scoped.** Confirm the LLM tier billed matches the tier named in your contract, not a quietly downgraded cheaper model.
@@ -122,11 +122,11 @@ For most mid-sized engineering organizations, vendor-managed AI tooling is more 
 
 ### What should be included in a vendor contract to ensure AI tooling billing transparency?
 
-The contract should itemize AI tooling costs by category — seat licenses, API usage, and shared infrastructure — separately from day rates, name the specific activities any markup covers, and include a right to periodic billing review. Without this itemization, a bundled AI tooling fee is difficult to verify or renegotiate later.
+The contract should itemize AI tooling costs by category - seat licenses, API usage, and shared infrastructure - separately from day rates, name the specific activities any markup covers, and include a right to periodic billing review. Without this itemization, a bundled AI tooling fee is difficult to verify or renegotiate later.
 
 ### (Scenario: A VP of Engineering notices the AI tooling line item rose 18% month-over-month with no team size change) What should I do if an AI tooling invoice increases without a corresponding change in team size or scope?
 
-Request the category breakdown for that specific month before approving payment — an unexplained increase above roughly 10% with no scope change usually traces to either a model tier upgrade, a usage spike worth investigating, or a billing error. A transparent vendor will produce this breakdown within a single conversation rather than a multi-week back-and-forth.
+Request the category breakdown for that specific month before approving payment - an unexplained increase above roughly 10% with no scope change usually traces to either a model tier upgrade, a usage spike worth investigating, or a billing error. A transparent vendor will produce this breakdown within a single conversation rather than a multi-week back-and-forth.
 
 ### (Scenario: A vendor proposes billing AI coding assistant seats for the full team even though only half actively use the tools) Should every developer on a project be provisioned an AI coding assistant seat, or only the ones actively using it?
 
@@ -134,7 +134,7 @@ Only provision seats for developers actually using the tool regularly, and reque
 
 ### (Scenario: A vendor's shared vector database cost is split evenly across five clients regardless of usage) Is an even per-client split fair for shared AI infrastructure costs like a vector database?
 
-Not necessarily — an even split disadvantages a client whose project is a lighter user of that shared infrastructure than others on the vendor's roster. Ask specifically whether your allocation is usage-proportional or an even split, and request usage-proportional billing if your project's actual load is below the roster average.
+Not necessarily - an even split disadvantages a client whose project is a lighter user of that shared infrastructure than others on the vendor's roster. Ask specifically whether your allocation is usage-proportional or an even split, and request usage-proportional billing if your project's actual load is below the roster average.
 
 ### (Scenario: A team's AI coding assistant productivity gains look strong on paper but the monthly tooling line item is climbing) How do I calculate whether AI tooling costs are actually paying for themselves on my project?
 

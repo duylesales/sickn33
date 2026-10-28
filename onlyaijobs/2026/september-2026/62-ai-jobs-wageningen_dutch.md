@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Wageningen telt ongeveer 40.000 inwoners en vormt het centrum van een agrifood-onderzoekscluster met werkelijk mondiale statuur. Voor kandidaten die zoeken op generieke termen als "machine learning vacatures Nederland" is deze markt zo goed als onzichtbaar — niet omdat er geen technisch werk is, maar omdat vrijwel geen van dat werk wordt beschreven in de woorden waar generieke zoekopdrachten op aanslaan.
+Wageningen telt ongeveer 40.000 inwoners en vormt het centrum van een agrifood-onderzoekscluster met werkelijk mondiale statuur. Voor kandidaten die zoeken op generieke termen als "machine learning vacatures Nederland" is deze markt zo goed als onzichtbaar - niet omdat er geen technisch werk is, maar omdat vrijwel geen van dat werk wordt beschreven in de woorden waar generieke zoekopdrachten op aanslaan.
 
 ## Waarom een generieke AI-zoekopdracht deze markt vrijwel volledig mist
 

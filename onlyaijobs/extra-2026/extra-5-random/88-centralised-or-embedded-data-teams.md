@@ -167,7 +167,7 @@ This is worth knowing because operating model decisions are usually made for del
 
 ## How OnlyAIJobs Supports Growing Data Functions
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position — vacancies compete on how clearly they are written.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position - vacancies compete on how clearly they are written.
 
 Describing your operating model in the vacancy is one of the cheapest improvements available: where the role sits, who it reports to, how many technical colleagues there are, and what is already running. Candidates evaluate exactly these factors, and stating them attracts the people who will fit.
 

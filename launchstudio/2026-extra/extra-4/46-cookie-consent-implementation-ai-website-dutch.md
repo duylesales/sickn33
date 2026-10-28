@@ -84,9 +84,9 @@ Het probleem kwam naar boven toen een bezoeker – toevallig iemand die bekend w
 LaunchStudio herstructureerde het laden van de scripts op de site zodanig dat analytics en alle andere niet-essentiële scripts volledig worden tegengehouden totdat expliciete toestemming is verleend. We sloten de weigeractie aan om daadwerkelijk te voorkomen dat die scripts ooit laden in plaats van simpelweg de banner te verbergen. We voegden ook een toestemmingsstatus-controle toe die correct blijft bestaan over paginabezoeken heen, zodat terugkerende bezoekers niet opnieuw worden gevolgd nadat ze eenmaal hebben geweigerd. **Resultaat:** StudioLicht's site komt nu op netwerkniveau exact overeen met wat de banner belooft.
 
 > *"Ik dacht oprecht dat een cookiebanner simpelweg een cookiebanner was – ik had geen idee dat 'weigeren' puur cosmetisch kon zijn. Het is zo'n stille manier om niet-nalevend te zijn zonder het te weten."*
-> — **Vera Willemse, Oprichter, StudioLicht (Terneuzen)**
+> - **Vera Willemse, Oprichter, StudioLicht (Terneuzen)**
 
-**Kosten en tijdlijn:** € 500 (implementatie van script-afscherming, persistentie van toestemmingsstatus, verificatie op netwerkniveau) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 500 (implementatie van script-afscherming, persistentie van toestemmingsstatus, verificatie op netwerkniveau) - voltooid in 3 werkdagen.
 
 ---
 

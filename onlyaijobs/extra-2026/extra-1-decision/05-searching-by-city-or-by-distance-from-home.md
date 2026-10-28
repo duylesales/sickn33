@@ -35,7 +35,7 @@ Content Format: Comparison Guide
 }
 </script>
 
-Almost every job search starts the same way: a job title in one box, a city in the other. It feels like the obvious approach, and it quietly determines the two things that will shape your next few years — which employers you ever consider, and how much of your life you spend travelling. A city name is a poor description of a location. Within the boundaries of Amsterdam, one office is a twelve-minute cycle from a residential neighbourhood and another requires a train, a transfer and a bus. Meanwhile, an employer fifteen minutes from your front door, just across a municipal border, never appears in your results because you did not type that town's name. The decision to filter by distance rather than by city is small in effort and large in consequence.
+Almost every job search starts the same way: a job title in one box, a city in the other. It feels like the obvious approach, and it quietly determines the two things that will shape your next few years - which employers you ever consider, and how much of your life you spend travelling. A city name is a poor description of a location. Within the boundaries of Amsterdam, one office is a twelve-minute cycle from a residential neighbourhood and another requires a train, a transfer and a bus. Meanwhile, an employer fifteen minutes from your front door, just across a municipal border, never appears in your results because you did not type that town's name. The decision to filter by distance rather than by city is small in effort and large in consequence.
 
 ## What a City Filter Actually Does
 
@@ -69,7 +69,7 @@ On OnlyAIJobs, every vacancy is shown at exact address level with the distance f
 
 | Aspect | City filter | Distance from home |
 |---|---|---|
-| Matches how you travel | No — it matches labels | Yes |
+| Matches how you travel | No - it matches labels | Yes |
 | Finds employers in nearby small towns | Only if you know their names | Yes, automatically |
 | Excludes far-away roles in your own city | No | Yes |
 | Works across municipal and provincial borders | Poorly | Naturally |
@@ -78,7 +78,7 @@ On OnlyAIJobs, every vacancy is shown at exact address level with the distance f
 
 ## What the Research on Commuting Suggests
 
-Commuting is one of the most consistently discussed factors in job satisfaction, and the reason is simple arithmetic: it happens every working day and it cannot be recovered. An hour each way on a hybrid schedule of three office days is six hours a week, which is a meaningful share of your free time. It also interacts with everything else in your life — childcare pickup times, sports, evening classes, caring for a parent.
+Commuting is one of the most consistently discussed factors in job satisfaction, and the reason is simple arithmetic: it happens every working day and it cannot be recovered. An hour each way on a hybrid schedule of three office days is six hours a week, which is a meaningful share of your free time. It also interacts with everything else in your life - childcare pickup times, sports, evening classes, caring for a parent.
 
 None of this means a longer commute is always wrong. Some people read or work productively on a train; others find the same journey by car exhausting. The point is that the trade-off deserves to be an explicit decision rather than a side effect of how you typed a search query.
 
@@ -100,7 +100,7 @@ Distance-based searching is not always the right frame.
 
 **If you are fully remote.** For genuinely remote roles, the employer's location matters mainly for occasional office days and legal or tax considerations.
 
-**If you are researching a specific ecosystem.** When you want to understand what a particular cluster does — a chemical campus, a media city, a port — searching that place deliberately makes sense.
+**If you are researching a specific ecosystem.** When you want to understand what a particular cluster does - a chemical campus, a media city, a port - searching that place deliberately makes sense.
 
 **If you are targeting named employers.** Sometimes you want a specific company, not a specific radius.
 
@@ -108,15 +108,15 @@ Distance-based searching is not always the right frame.
 
 There is a second-order consequence that most candidates notice only later. When you search by city, your mental map of the market forms around a handful of well-known employers in a few big cities. Over years, this shapes what you believe is possible: that serious AI work happens in Amsterdam, Eindhoven and Utrecht, and that staying near your home town means giving up ambition.
 
-Searching by distance produces a different map. It shows that a manufacturer twenty minutes away runs computer vision on production lines, that a regional insurer has a modelling team, that a hospital nearby employs clinical data scientists. That map does not just help with one job search — it changes which futures look available to you.
+Searching by distance produces a different map. It shows that a manufacturer twenty minutes away runs computer vision on production lines, that a regional insurer has a modelling team, that a hospital nearby employs clinical data scientists. That map does not just help with one job search - it changes which futures look available to you.
 
 ## Distance Versus Salary: Making the Trade-Off Explicit
 
 Sooner or later the choice becomes concrete: a role further away that pays more, or a nearer one that pays less. Candidates often decide this by feel and regret it later. A more honest method is to convert both offers into the same units.
 
-Start with time. Calculate weekly travel time for each option using the stated office days, door to door. Then consider the cost side: travel expenses, any employer travel allowance, public transport card or mobility budget, and — if you drive — fuel, parking and wear. Dutch employers frequently reimburse commuting costs up to a certain level, and the difference between an employer who covers travel fully and one who does not can be larger than a modest salary gap.
+Start with time. Calculate weekly travel time for each option using the stated office days, door to door. Then consider the cost side: travel expenses, any employer travel allowance, public transport card or mobility budget, and - if you drive - fuel, parking and wear. Dutch employers frequently reimburse commuting costs up to a certain level, and the difference between an employer who covers travel fully and one who does not can be larger than a modest salary gap.
 
-Then ask the questions money does not answer. How does the journey feel — productive train time or draining traffic? What does it cost you at home: an evening activity, childcare logistics, time with family? What happens on the days something goes wrong, when a delay turns an hour into two?
+Then ask the questions money does not answer. How does the journey feel - productive train time or draining traffic? What does it cost you at home: an evening activity, childcare logistics, time with family? What happens on the days something goes wrong, when a delay turns an hour into two?
 
 Finally, think about durability. Long commutes are frequently accepted at the start of a job, when motivation is high, and become the main reason people leave eighteen months later. If the salary difference would stop feeling decisive once it is in your account for a few months, it probably should not decide the question now.
 
@@ -130,7 +130,7 @@ An ML engineer living in Amersfoort searches "Utrecht" and "Amsterdam" because t
 
 A year later, while considering a move, he searches by distance from his home instead. Inside a thirty-minute radius he finds a national institute with modelling roles, an insurance company with a data science team, a logistics employer on a business park he drives past every week and a healthcare organisation in a neighbouring town. Several of these never appeared in his old searches because they are not in Utrecht or Amsterdam, and two use job titles that do not contain the word AI.
 
-He takes a role twenty-five minutes from home with comparable work and a slightly lower salary. Measured per hour actually spent on work and travel, he ends up ahead — and he gets two evenings a week back.
+He takes a role twenty-five minutes from home with comparable work and a slightly lower salary. Measured per hour actually spent on work and travel, he ends up ahead - and he gets two evenings a week back.
 
 ## Test the Commute Before You Accept
 
@@ -142,7 +142,7 @@ A distance on a map and a distance in your life are different things. Before acc
 
 **Ask what happens when it fails.** Rail disruption, roadworks or a sick child change the calculation. An employer with genuine flexibility on start times or an occasional extra home day makes a longer commute sustainable; one that counts minutes does not.
 
-**Calculate the weekly total, not the daily one.** Three office days at fifty minutes each way is five hours a week — a full evening plus most of another.
+**Calculate the weekly total, not the daily one.** Three office days at fifty minutes each way is five hours a week - a full evening plus most of another.
 
 **Ask about reimbursement explicitly.** Travel allowances, public transport cards and mobility budgets differ substantially between Dutch employers and are usually negotiable at the offer stage.
 
@@ -174,10 +174,10 @@ It shows every listing inside your radius regardless of the town's name, which s
 Compare door-to-door travel time on office days, not map distance or city reputation, and multiply by the number of office days per week.
 
 ### (Scenario: candidate planning to relocate) Is distance search useful if I am moving anyway?
-Less so — if your future address is unknown, searching by city or region makes more sense until you decide where you will live.
+Less so - if your future address is unknown, searching by city or region makes more sense until you decide where you will live.
 
 ### (Scenario: candidate with hybrid work) Does hybrid working make commute distance unimportant?
-No — assume the stated office days are real, and calculate the weekly travel that those days actually require.
+No - assume the stated office days are real, and calculate the weekly travel that those days actually require.
 
 <script type="application/ld+json">
 {
@@ -187,8 +187,8 @@ No — assume the stated office days are real, and calculate the weekly travel t
     {"@type": "Question", "name": "What is wrong with filtering by city?", "acceptedAnswer": {"@type": "Answer", "text": "It matches labels, not travel time, so it includes far locations and hides nearby employers across borders."}},
     {"@type": "Question", "name": "How does distance search help me find unknown companies?", "acceptedAnswer": {"@type": "Answer", "text": "It shows every listing inside your radius regardless of town name."}},
     {"@type": "Question", "name": "How should I compare two jobs in different cities?", "acceptedAnswer": {"@type": "Answer", "text": "Compare door-to-door travel on office days, multiplied by the number of office days."}},
-    {"@type": "Question", "name": "Is distance search useful if I am moving anyway?", "acceptedAnswer": {"@type": "Answer", "text": "Less so — city or region search fits better until you know your future address."}},
-    {"@type": "Question", "name": "Does hybrid working make commute distance unimportant?", "acceptedAnswer": {"@type": "Answer", "text": "No — assume stated office days are real and calculate weekly travel."}}
+    {"@type": "Question", "name": "Is distance search useful if I am moving anyway?", "acceptedAnswer": {"@type": "Answer", "text": "Less so - city or region search fits better until you know your future address."}},
+    {"@type": "Question", "name": "Does hybrid working make commute distance unimportant?", "acceptedAnswer": {"@type": "Answer", "text": "No - assume stated office days are real and calculate weekly travel."}}
   ]
 }
 </script>

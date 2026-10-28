@@ -1,4 +1,4 @@
-📈 Ruben's meeting notes tool built with **Bolt** saw its bill jump from €400 to €2,900 in three months — while his user base grew only 40%. He almost hired a cloud cost optimization firm to fix it. 🧐
+📈 Ruben's meeting notes tool built with **Bolt** saw its bill jump from €400 to €2,900 in three months - while his user base grew only 40%. He almost hired a cloud cost optimization firm to fix it. 🧐
 
 If your AI SaaS bill is outpacing your user growth, a FinOps firm that right-sizes infrastructure won't touch the real cause when it's actually a code-level bug.
 
@@ -12,7 +12,7 @@ If your AI SaaS bill is outpacing your user growth, a FinOps firm that right-siz
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ruben's monthly bill dropped from €2,900 to €640 — without ever engaging a cost optimization firm (€2,400 (Launch & Grow Package) — completed in 8 business days.). 🚀
+Ruben's monthly bill dropped from €2,900 to €640 - without ever engaging a cost optimization firm (€2,400 (Launch & Grow Package) - completed in 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-cloud-cost-optimization-firm
 

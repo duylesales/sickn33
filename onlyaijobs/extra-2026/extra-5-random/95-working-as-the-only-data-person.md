@@ -59,7 +59,7 @@ The single most important decision is what not to do.
 
 A sole practitioner who accepts every request produces a stream of small outputs, none of which compound, and is exhausted within a year with nothing durable to show.
 
-The alternative is to pick two or three things that matter, deliver them properly, and hold the line. This requires a sponsor — someone senior who agrees with the priorities and will defend them — and an explicit conversation about what you are not doing.
+The alternative is to pick two or three things that matter, deliver them properly, and hold the line. This requires a sponsor - someone senior who agrees with the priorities and will defend them - and an explicit conversation about what you are not doing.
 
 Prefer work that compounds. A reliable data foundation makes every later analysis faster. A documented definition of a core metric ends a recurring argument. An automated report removes a weekly task permanently. A one-off analysis, however good, buys nothing for next month.
 
@@ -107,7 +107,7 @@ Ask for a budget for this explicitly during hiring or at your first review. An e
 
 In a team, a manager absorbs unrealistic expectations before they reach the engineers. Alone, they arrive directly, and managing them is part of the job.
 
-**Educate early and repeatedly.** Colleagues genuinely do not know what is feasible. A short, honest explanation of what a project requires — data, time, access, someone to act on the output — changes conversations more than any refusal.
+**Educate early and repeatedly.** Colleagues genuinely do not know what is feasible. A short, honest explanation of what a project requires - data, time, access, someone to act on the output - changes conversations more than any refusal.
 
 **Give ranges and conditions, not dates.** "Between three and six weeks, assuming I can get access to the order system in the first week" is honest and protects you.
 
@@ -115,7 +115,7 @@ In a team, a manager absorbs unrealistic expectations before they reach the engi
 
 **Deliver something early and visibly.** Credibility built on a quick, useful delivery buys patience for the longer work.
 
-**Say no through the sponsor.** "I would need to stop X to do that — shall we ask?" moves the conflict away from you.
+**Say no through the sponsor.** "I would need to stop X to do that - shall we ask?" moves the conflict away from you.
 
 **Be honest when something will not work.** The sole practitioner who occasionally says a project is not feasible is trusted far more than one who attempts everything and delivers half of it.
 
@@ -131,7 +131,7 @@ The runbook is the one that matters most and is most often missing. It should be
 
 Store it where someone will find it, which usually means the repository and a location the organisation already uses, not a personal folder.
 
-Two further habits. Train at least one colleague to perform the basic operational checks — two afternoons, and it transforms your ability to take leave. And record a short walkthrough of each important system; a twenty-minute recording is worth more than pages of text and takes twenty minutes.
+Two further habits. Train at least one colleague to perform the basic operational checks - two afternoons, and it transforms your ability to take leave. And record a short walkthrough of each important system; a twenty-minute recording is worth more than pages of text and takes twenty minutes.
 
 None of this is for your successor's benefit. It is what allows you to go on holiday, change role internally, or leave without guilt.
 
@@ -179,7 +179,7 @@ Prepare the ground. Documentation and runbooks are what make a second hire produ
 
 Be specific about what you need: a data engineer to own pipelines, an analyst to handle recurring reporting, or a second generalist. A precise request is far easier to approve than a general one.
 
-And if a second person arrives, change how you work. The habits that suited solo work — building quickly, documenting minimally, holding knowledge in your head — become obstacles once there are two of you.
+And if a second person arrives, change how you work. The habits that suited solo work - building quickly, documenting minimally, holding knowledge in your head - become obstacles once there are two of you.
 
 ## How OnlyAIJobs Fits a Sole Role
 
@@ -201,7 +201,7 @@ On return she changed her approach rather than her workload. She rebuilt on the 
 
 Her next holiday passed without incident.
 
-Her summary was that her first eighteen months had produced capability that depended entirely on her, which is not capability at all — it is a risk the organisation had not agreed to take.
+Her summary was that her first eighteen months had produced capability that depended entirely on her, which is not capability at all - it is a risk the organisation had not agreed to take.
 
 ## Key Takeaways
 

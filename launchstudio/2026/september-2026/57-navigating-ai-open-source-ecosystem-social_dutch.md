@@ -1,6 +1,6 @@
-🚨 Grace, een boekhouder, bouwde een audittool met **Cursor**. Privacyregels van klanten verboden het verzenden van financiële data naar OpenAI-servers — maar haar app routeerde standaard elk document via het OpenAI API-endpoint. 🔐
+🚨 Grace, een boekhouder, bouwde een audittool met **Cursor**. Privacyregels van klanten verboden het verzenden van financiële data naar OpenAI-servers - maar haar app routeerde standaard elk document via het OpenAI API-endpoint. 🔐
 
-Open-source modellen zijn niet alleen goedkoper — voor gereguleerde data zijn ze vaak de enige juridisch haalbare optie. 🧠
+Open-source modellen zijn niet alleen goedkoper - voor gereguleerde data zijn ze vaak de enige juridisch haalbare optie. 🧠
 
 ❌ Gevoelige financiële documenten standaard doorgestuurd naar een externe Amerikaanse API
 ❌ Geen garantie op dataresidentie voor privacygevoelige klanten
@@ -12,7 +12,7 @@ Open-source modellen zijn niet alleen goedkoper — voor gereguleerde data zijn 
 
 Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort beveiligde, zelf-gehoste infrastructuur via Manifera. 🛡️
 
-Grace's tool bereikte 100% lokale datasoevereiniteit en doorstond de financiële beveiligingsaudit. (€2.800 (Private LLM Hosting) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Grace's tool bereikte 100% lokale datasoevereiniteit en doorstond de financiële beveiligingsaudit. (€2.800 (Private LLM Hosting) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u het open-source AI-ecosysteem navigeert: https://launchstudio.eu/nl/blog/navigating-ai-open-source-ecosystem
 

@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een gemiddeld softwareproduct bevat enkele tientallen open-source bibliotheken die u bewust heeft gekozen — en **honderden indirecte dependencies** die automatisch zijn meegeïnstalleerd als afhankelijkheid van die pakketten.
+Een gemiddeld softwareproduct bevat enkele tientallen open-source bibliotheken die u bewust heeft gekozen - en **honderden indirecte dependencies** die automatisch zijn meegeïnstalleerd als afhankelijkheid van die pakketten.
 
 Al deze code wordt onderhouden door externe ontwikkelaars met hun eigen schema's, en alles verandert continu. 
 
@@ -83,7 +83,7 @@ Beoordeel dit nuchter:
 - **Bestaat er een actief onderhouden alternatief?** Plan een gerichte migratie in (bijvoorbeeld de overstap van het verouderde `moment.js` naar `date-fns` of de native `Intl` API).
 - **Is het diep verweven maar is het risico nihil?** Als de kwetsbaarheid alleen theoretisch is en uw data niet raakt, documenteer deze risicoafweging dan expliciet in uw security logboek.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in software-onderhoud en legacy-modernisering) richten we dependency-automatisering, lockfile-hygiëne en gerichte testsuites in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw codebase-onderhoud met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software wendbaar en veilig blijft.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in software-onderhoud en legacy-modernisering) richten we dependency-automatisering, lockfile-hygiëne en gerichte testsuites in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw codebase-onderhoud met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw software wendbaar en veilig blijft.
 
 ## Echt voorbeeld
 
@@ -105,7 +105,7 @@ Omdat Zaalplanner over **nul geautomatiseerde tests** beschikte, moest Sam bij e
 **Resultaat:** Binnen negen werkdagen moderniseerde LaunchStudio de complete applicatiestructuur: het lockfile werd vastgelegd, de runtime en het framework werden stapsgewijs gemigreerd met geïsoleerde commits, de verlaten kalenderpackage werd vervangen door de native `Intl.DateTimeFormat` API, en er werd een Vitest-testsuite geschreven die de acht meest kritieke reserveringsflows controleert. Tevens werd Dependabot geconfigureerd om updates maandelijks netjes gebundeld aan te bieden.
 
 > *"Twee jaar lang dependencies negeren leverde me negen dagen intense stress op met een deadline die ik niet zelf had gekozen. Diezelfde updates hadden me maandelijks een uurtje rustig werk gekost."*
-> — **Sam Verhagen, Oprichter, Zaalplanner**
+> - **Sam Verhagen, Oprichter, Zaalplanner**
 
 **Kosten & Doorlooptijd:** Modernisering van dependencies, testsuite-inrichting en EOL-migratie opgeleverd in 9 werkdagen.
 

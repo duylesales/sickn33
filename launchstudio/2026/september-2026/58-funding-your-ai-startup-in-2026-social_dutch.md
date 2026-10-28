@@ -1,6 +1,6 @@
-🚨 Caleb, een CRM-oprichter, bouwde een verkoopapp met **Lovable**. Hij had nul tenant-isolatie — alle klantleads stonden in gedeelde tabellen zonder handhavingslaag — en dat riep onmiddellijk rode vlaggen op toen VC-investeerders technische due diligence uitvoerden. 📉
+🚨 Caleb, een CRM-oprichter, bouwde een verkoopapp met **Lovable**. Hij had nul tenant-isolatie - alle klantleads stonden in gedeelde tabellen zonder handhavingslaag - en dat riep onmiddellijk rode vlaggen op toen VC-investeerders technische due diligence uitvoerden. 📉
 
-In 2026 financieren VC's geen mooie demo — ze financieren verdedigbare architectuur, en een gedeelde, ongeïsoleerde database is een van de snelste manieren om een term sheet te verliezen. 🧠
+In 2026 financieren VC's geen mooie demo - ze financieren verdedigbare architectuur, en een gedeelde, ongeïsoleerde database is een van de snelste manieren om een term sheet te verliezen. 🧠
 
 ❌ Alle klantleads in gedeelde tabellen zonder tenantgrens
 ❌ Geen handhavingslaag die voorkomt dat één tenant de data van een andere opvraagt
@@ -12,7 +12,7 @@ In 2026 financieren VC's geen mooie demo — ze financieren verdedigbare archite
 
 Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort due-diligence-klare architecturen via Manifera. 🛡️
 
-Caleb beveiligde de tenant-isolatie, loste de beveiligingszorgen op en sloot een seed-ronde van 200.000 euro af. (€3.200 (Database Restructuring Pakket) — productieklaar en binnen 8 werkdagen gedeployed). 🚀
+Caleb beveiligde de tenant-isolatie, loste de beveiligingszorgen op en sloot een seed-ronde van 200.000 euro af. (€3.200 (Database Restructuring Pakket) - productieklaar en binnen 8 werkdagen gedeployed). 🚀
 
 👉 Maak uw startup due diligence-klaar: https://launchstudio.eu/nl/blog/funding-your-ai-startup-in-2026
 

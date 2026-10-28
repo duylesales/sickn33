@@ -10,7 +10,7 @@ One developer. Twenty-two years. Zero documentation. Eighteen months until he re
 ✅ **Amsterdam Governance & Modernization Roadmap:** Dutch-based architects map dependencies and own the long-term legacy-risk strategy.
 ✅ **Vietnam Execution at Speed:** Ho Chi Minh City Autonomous Pods provide the embedded capacity a stretched internal team doesn't have.
 
-A €30,000–€45,000 knowledge-transfer program that prevents an €80,000–€150,000 emergency recovery — and retains 80%+ of critical system knowledge. Don't wait for the retirement notice. 🛡️
+A €30,000–€45,000 knowledge-transfer program that prevents an €80,000–€150,000 emergency recovery - and retains 80%+ of critical system knowledge. Don't wait for the retirement notice. 🛡️
 
 👉 Read our full deep dive on offshore software engineering and bus factor risk for Losser companies: https://www.manifera.com/blog/offshore-software-engineering-losser
 

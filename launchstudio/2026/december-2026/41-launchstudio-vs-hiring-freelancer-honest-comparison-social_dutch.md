@@ -14,7 +14,7 @@ LaunchStudio wint wanneer: ✅
 ✅ U nul risico wilt op vertraging door ziekte of uitval
 ✅ U geen tijd wilt verspillen aan het managen van ontwikkelaars
 
-💡 Huurt u toch een freelancer in? Stel eerst deze vraag: "Heb je eerder gewerkt in een codebase die gegenereerd is door Lovable, Bolt of Cursor?" — het antwoord vertelt meer dan elk cv!
+💡 Huurt u toch een freelancer in? Stel eerst deze vraag: "Heb je eerder gewerkt in een codebase die gegenereerd is door Lovable, Bolt of Cursor?" - het antwoord vertelt meer dan elk cv!
 
 Zij koos voor BEIDE: **LaunchStudio** voor de beursdeadline (vaste prijs, vaste oplevering binnen 12 dagen), en daarna een freelancer voor wekelijkse feature-aanpassingen op een schone, gedocumenteerde codebase. 🛡️
 

@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-There is a particular kind of confidence that comes from a Bolt project. The code looks like code a developer would have written — conventional structure, sensible file names, components that do one thing. Nothing about it feels improvised, which is precisely why founders assume it is closer to finished than it is.
+There is a particular kind of confidence that comes from a Bolt project. The code looks like code a developer would have written - conventional structure, sensible file names, components that do one thing. Nothing about it feels improvised, which is precisely why founders assume it is closer to finished than it is.
 
 It is closer in one dimension and no further in the others. Bolt tends to produce a tidier starting point than the alternatives and stops at the same line all of them stop at: the point where an application meets real users, real money and real infrastructure. What follows is where that line sits, and what is on the other side of it.
 
@@ -30,7 +30,7 @@ Worth stating plainly, because the gaps below are not a criticism of the tool.
 
 **Speed to a working interface.** A functioning multi-page application in an afternoon, with state, navigation and forms that behave.
 
-**Conventional structure.** The output is generally organised the way an experienced developer would organise it, which matters enormously later — an engineer inheriting a Bolt project spends far less time orienting than one inheriting something assembled ad hoc.
+**Conventional structure.** The output is generally organised the way an experienced developer would organise it, which matters enormously later - an engineer inheriting a Bolt project spends far less time orienting than one inheriting something assembled ad hoc.
 
 **Readable components.** Small, separated, named for what they do. This is why Bolt projects are pleasant to extend by hand once you start editing directly.
 
@@ -48,7 +48,7 @@ That assumption is the honest description of the gap. The application knows what
 
 Bolt frequently produces data handling that works for the session and is not a backend: state held in the browser, a mock service returning fixed responses, or a database connection with no rules around it.
 
-The work is to decide what the real data model is — which is a product decision, not a technical one — and then implement it properly: tables with constraints, relationships expressed in the schema, and access rules per table rather than per screen.
+The work is to decide what the real data model is - which is a product decision, not a technical one - and then implement it properly: tables with constraints, relationships expressed in the schema, and access rules per table rather than per screen.
 
 This is also the moment to notice that the schema is the expensive thing to change later. Time spent here is cheaper than the same time spent after a thousand records exist.
 
@@ -76,7 +76,7 @@ The largest gap and the least visible. A prototype is built by describing desire
 
 In practice that means access control tested by attempting to bypass it, validation enforced on the server rather than in the form, uploads restricted by type and size, rate limiting on anything that can be repeated, and error messages that tell a stranger nothing useful.
 
-Bolt's tidiness does not help here, because the missing code is not untidy — it is absent, and absence looks like nothing at all.
+Bolt's tidiness does not help here, because the missing code is not untidy - it is absent, and absence looks like nothing at all.
 
 ## What Transfers Well When You Close the Gaps
 
@@ -106,7 +106,7 @@ Seven checks. The answers form the scope of the remaining work more accurately t
 
 **Then payments,** if you charge.
 
-**Then the adversarial layer** — validation, rate limiting, uploads, error handling.
+**Then the adversarial layer** - validation, rate limiting, uploads, error handling.
 
 **Then reliability:** backups tested, monitoring, error tracking.
 
@@ -114,7 +114,7 @@ Seven checks. The answers form the scope of the remaining work more accurately t
 
 ## Getting a Bolt Project Launched
 
-This is bounded, familiar work. LaunchStudio takes the frontend Bolt produced — untouched — and builds the layer beneath it: a real data model with access rules tested by trying to break them, hosting with a pipeline and rollback, payments that reconcile including the abandoned cases, validation and rate limiting, backups and monitoring, and documentation left readable so you can keep working in Bolt or move to Cursor afterwards.
+This is bounded, familiar work. LaunchStudio takes the frontend Bolt produced - untouched - and builds the layer beneath it: a real data model with access rules tested by trying to break them, hosting with a pipeline and rollback, payments that reconcile including the abandoned cases, validation and rate limiting, backups and monitoring, and documentation left readable so you can keep working in Bolt or move to Cursor afterwards.
 
 Fixed price between €800 and €7,500 depending on how many of the seven checks above come back badly, typically one to three weeks rather than months, because nothing is rebuilt. The engineers are Manifera's: eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
@@ -124,7 +124,7 @@ Fixed price between €800 and €7,500 depending on how many of the seven check
 
 Quotes for this work vary enormously, and most of the variation comes from misunderstanding rather than from price. Four questions align everyone before a number is given.
 
-**"Will you keep the frontend?"** The answer determines whether you are buying a production layer or a rebuild. If someone intends to replace the Bolt output, ask what specifically cannot be worked with — and be sceptical of an answer about code quality, because Bolt's output is usually conventional.
+**"Will you keep the frontend?"** The answer determines whether you are buying a production layer or a rebuild. If someone intends to replace the Bolt output, ask what specifically cannot be worked with - and be sceptical of an answer about code quality, because Bolt's output is usually conventional.
 
 **"What exists in the backend today, in your assessment?"** A developer who has actually opened the project will tell you whether data persists, whether there are access rules and whether payments do anything. One who quotes without looking is quoting a guess.
 
@@ -138,7 +138,7 @@ Ask all four before discussing money, and the quotes you receive become comparab
 
 ### A Bolt Prototype That Forgot Everything Overnight
 
-Rens Kuiper built Tafelvrij in Bolt: a reservation tool for a group of four restaurants in Maastricht. The interface was genuinely good — clean, fast on a phone, and the restaurant owners understood it immediately.
+Rens Kuiper built Tafelvrij in Bolt: a reservation tool for a group of four restaurants in Maastricht. The interface was genuinely good - clean, fast on a phone, and the restaurant owners understood it immediately.
 
 It also stored reservations in the browser. Every evening, when the host closed the laptop at the front desk, the next morning's bookings were gone. Rens had tested it across a single session and never across two.
 
@@ -146,12 +146,12 @@ The assessment found the rest in an afternoon. There was no hosting beyond a dev
 
 Nine business days of work: a real data model with reservations belonging to a restaurant and access rules enforcing it; accounts and roles for staff per location; deployment onto the group's own domain with staging and rollback; deposit payments completed through verified webhooks with entitlement following payment state; server-side validation; backups with a tested restore; and error tracking. The Bolt frontend was modified only where it needed to call the new backend.
 
-**Result:** the four restaurants ran a full weekend across all locations without a lost reservation, and the deposit flow — which had never once completed correctly — settled 38 payments in its first fortnight.
+**Result:** the four restaurants ran a full weekend across all locations without a lost reservation, and the deposit flow - which had never once completed correctly - settled 38 payments in its first fortnight.
 
 > *"The app was beautiful and it had the memory of a goldfish. I had spent six weeks polishing something that forgot every booking when I shut the lid."*
-> — **Rens Kuiper, Founder, Tafelvrij (Maastricht)**
+> - **Rens Kuiper, Founder, Tafelvrij (Maastricht)**
 
-**Cost & Timeline:** €3,900 (data model and access rules, accounts, hosting pipeline, deposit payments, validation, backups) — completed in 9 business days.
+**Cost & Timeline:** €3,900 (data model and access rules, accounts, hosting pipeline, deposit payments, validation, backups) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -169,7 +169,7 @@ Whether your data survives closing the browser. Many Bolt prototypes hold state 
 
 ### How much does taking a Bolt prototype to production cost?
 
-For a small product, typically within a fixed range of €800 to €7,500, driven by how much of the backend exists, whether money is involved and how much data you hold — not by how many screens the prototype has.
+For a small product, typically within a fixed range of €800 to €7,500, driven by how much of the backend exists, whether money is involved and how much data you hold - not by how many screens the prototype has.
 
 ### Can I keep building in Bolt afterwards?
 
@@ -217,7 +217,7 @@ Usually yes, and it is worth requiring explicitly. Ask for the codebase to remai
       "name": "Can I keep building in Bolt afterwards?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually yes — require a conventional, documented codebase and verify it by making a small change yourself before sign-off."
+        "text": "Usually yes - require a conventional, documented codebase and verify it by making a small change yourself before sign-off."
       }
     }
   ]

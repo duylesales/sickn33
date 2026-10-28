@@ -31,47 +31,47 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-A founder generating their product's privacy policy and terms of service by asking an AI model to write them, then publishing the output with minimal further review, is applying the exact same "looks done" trust covered throughout broader guidance about AI-generated code — to a category where the consequence of being wrong is arguably even more direct, since legal documents are specifically meant to be relied upon in exactly the disputes and regulatory questions where accuracy actually gets tested.
+A founder generating their product's privacy policy and terms of service by asking an AI model to write them, then publishing the output with minimal further review, is applying the exact same "looks done" trust covered throughout broader guidance about AI-generated code - to a category where the consequence of being wrong is arguably even more direct, since legal documents are specifically meant to be relied upon in exactly the disputes and regulatory questions where accuracy actually gets tested.
 
 ## Why This Category Deserves More Skepticism Than Most AI-Generated Content
 
-AI-generated code that has a bug gets caught, eventually, by testing or real usage revealing incorrect behavior. AI-generated legal text that's subtly wrong doesn't announce itself the same way — a privacy policy that inaccurately describes your actual data handling, or a terms of service missing a jurisdiction-specific requirement, can sit unnoticed and unchallenged for a long time, precisely because nothing about normal product operation naturally tests whether the legal document accurately reflects reality or complies with the specific regulatory requirements that actually apply to your situation.
+AI-generated code that has a bug gets caught, eventually, by testing or real usage revealing incorrect behavior. AI-generated legal text that's subtly wrong doesn't announce itself the same way - a privacy policy that inaccurately describes your actual data handling, or a terms of service missing a jurisdiction-specific requirement, can sit unnoticed and unchallenged for a long time, precisely because nothing about normal product operation naturally tests whether the legal document accurately reflects reality or complies with the specific regulatory requirements that actually apply to your situation.
 
 ## Where AI-Generated Legal Text Specifically Tends to Go Wrong
 
-**Generic templates that don't reflect your product's actual, specific data practices.** An AI model generating a privacy policy from a general prompt tends to produce plausible-sounding, genuinely well-structured boilerplate that may not accurately describe what your specific product actually does with data — a gap that only becomes apparent if someone specifically compares the generated text against your actual, real data handling practices.
+**Generic templates that don't reflect your product's actual, specific data practices.** An AI model generating a privacy policy from a general prompt tends to produce plausible-sounding, genuinely well-structured boilerplate that may not accurately describe what your specific product actually does with data - a gap that only becomes apparent if someone specifically compares the generated text against your actual, real data handling practices.
 
 **Jurisdiction-specific requirements that a general prompt doesn't naturally surface.** GDPR-specific language, requirements varying by EU member state, or industry-specific regulatory language relevant to your particular product category require knowledge a general "write me a privacy policy" prompt has no specific reason to incorporate correctly unless explicitly and precisely instructed to.
 
-**Inconsistency between the legal document and what your product's code actually does.** A privacy policy claiming data is deleted within a specific timeframe, generated without reference to whether your actual technical architecture — covered throughout broader GDPR guidance elsewhere in this content series — genuinely supports that claim, creates a document that's not just imprecise but potentially actively false relative to your real technical capability.
+**Inconsistency between the legal document and what your product's code actually does.** A privacy policy claiming data is deleted within a specific timeframe, generated without reference to whether your actual technical architecture - covered throughout broader GDPR guidance elsewhere in this content series - genuinely supports that claim, creates a document that's not just imprecise but potentially actively false relative to your real technical capability.
 
 ## Why This Specifically Compounds With the Technical Gaps Covered Throughout This Content Series
 
-A founder who's addressed the technical GDPR architecture gap covered elsewhere — genuine deletion capability, appropriate data residency — but whose privacy policy was AI-generated without specific reference to that actual architecture, risks a mismatch between what the document promises and what the system actually does, a distinct, additional risk beyond either the technical or the legal gap alone.
+A founder who's addressed the technical GDPR architecture gap covered elsewhere - genuine deletion capability, appropriate data residency - but whose privacy policy was AI-generated without specific reference to that actual architecture, risks a mismatch between what the document promises and what the system actually does, a distinct, additional risk beyond either the technical or the legal gap alone.
 
 ## What a Reasonable Approach Actually Looks Like
 
-Using AI to generate a solid first draft is a genuinely reasonable, efficient starting point, considerably better than starting from a completely blank page. The step that shouldn't be skipped is having a qualified legal professional review that draft specifically against your actual, real practices and the specific jurisdictions you operate in — treating the AI output as a draft requiring verification, exactly the same discipline this content series applies to AI-generated code throughout.
+Using AI to generate a solid first draft is a genuinely reasonable, efficient starting point, considerably better than starting from a completely blank page. The step that shouldn't be skipped is having a qualified legal professional review that draft specifically against your actual, real practices and the specific jurisdictions you operate in - treating the AI output as a draft requiring verification, exactly the same discipline this content series applies to AI-generated code throughout.
 
 [LaunchStudio](https://launchstudio.eu/en/) specifically flags this gap during broader launch-readiness conversations, connecting founders' technical GDPR architecture work to the separate question of whether their legal documentation accurately reflects it, though final legal review remains a qualified lawyer's specific expertise, distinct from Manifera's own engineering-focused scope.
 
-[Make sure your legal documents actually match what your product does](https://launchstudio.eu/en/#contact) — the same "looks done, hasn't been verified" gap applies here too.
+[Make sure your legal documents actually match what your product does](https://launchstudio.eu/en/#contact) - the same "looks done, hasn't been verified" gap applies here too.
 
 ## A Checklist for Every Legal Document an AI Model Might Have Drafted for You
 
-The privacy policy is the document this article has focused on so far, and for good reason — it tends to include the most concrete, checkable claims about what a product actually does. It's rarely the only AI-generated legal document a founder ends up publishing, and the same "looks done, hasn't been verified" gap applies to the others just as directly.
+The privacy policy is the document this article has focused on so far, and for good reason - it tends to include the most concrete, checkable claims about what a product actually does. It's rarely the only AI-generated legal document a founder ends up publishing, and the same "looks done, hasn't been verified" gap applies to the others just as directly.
 
 **Terms of service.** Beyond the jurisdiction-specific requirements already covered, a terms of service document generated generically often includes liability and dispute-resolution language copied from whatever pattern the AI model has seen most often, without regard to whether it's actually appropriate or enforceable for your specific product, industry, and the jurisdictions your actual customers are in.
 
-**Cookie and tracking consent notices.** These need to accurately reflect what your product's actual tracking and analytics setup does — which specific cookies, which specific third parties receive data — a detail an AI model generating generic consent language has no way of knowing unless told precisely, and one that changes every time a new analytics tool or tracking pixel gets added to the product.
+**Cookie and tracking consent notices.** These need to accurately reflect what your product's actual tracking and analytics setup does - which specific cookies, which specific third parties receive data - a detail an AI model generating generic consent language has no way of knowing unless told precisely, and one that changes every time a new analytics tool or tracking pixel gets added to the product.
 
-**Data processing agreements for business customers.** A B2B product handling other companies' customer data on their behalf often needs a data processing agreement defining that relationship formally. An AI-generated version of this document is especially prone to including generic commitments — specific response times, specific security certifications — that may not actually match what the underlying technical architecture genuinely supports, mirroring the exact deletion-timeline mismatch covered in the example above but in a business-to-business contract rather than a consumer-facing policy.
+**Data processing agreements for business customers.** A B2B product handling other companies' customer data on their behalf often needs a data processing agreement defining that relationship formally. An AI-generated version of this document is especially prone to including generic commitments - specific response times, specific security certifications - that may not actually match what the underlying technical architecture genuinely supports, mirroring the exact deletion-timeline mismatch covered in the example above but in a business-to-business contract rather than a consumer-facing policy.
 
 **Refund and cancellation policies.** These interact directly with actual billing logic and consumer protection expectations that vary by jurisdiction, meaning an AI-generated version needs specific verification that the stated policy matches what the billing system is actually capable of enforcing, not just what reads as reasonable in isolation.
 
-**Vendor and contributor agreements.** Any AI-drafted agreement covering an external contributor's work — overlapping with the IP assignment and access considerations covered elsewhere in this content series — deserves the same scrutiny as customer-facing documents, since a gap here affects who actually owns what gets built rather than how a customer's data gets handled.
+**Vendor and contributor agreements.** Any AI-drafted agreement covering an external contributor's work - overlapping with the IP assignment and access considerations covered elsewhere in this content series - deserves the same scrutiny as customer-facing documents, since a gap here affects who actually owns what gets built rather than how a customer's data gets handled.
 
-The underlying discipline is the same across every document on this list: treat AI-generated legal text as a genuinely useful first draft, then verify every concrete, checkable claim against what the product actually does and have a qualified professional review the result before it's published — a single verified privacy policy sitting alongside four other unverified documents hasn't actually closed the gap this article describes, just moved it to whichever document nobody happened to check.
+The underlying discipline is the same across every document on this list: treat AI-generated legal text as a genuinely useful first draft, then verify every concrete, checkable claim against what the product actually does and have a qualified professional review the result before it's published - a single verified privacy policy sitting alongside four other unverified documents hasn't actually closed the gap this article describes, just moved it to whichever document nobody happened to check.
 
 ## Real example
 
@@ -79,12 +79,12 @@ The underlying discipline is the same across every document on this list: treat 
 
 Sophie, a former HR coordinator turned founder in Zwolle, built TeamCheck, an AI tool generating anonymous team sentiment summaries for small businesses, using Lovable, and had generated TeamCheck's privacy policy using an AI writing tool, publishing it with only a quick read-through for general tone and completeness.
 
-The AI-generated privacy policy included a specific claim that user data could be deleted "immediately upon request" — plausible-sounding, standard language the AI model had generated without any actual knowledge of TeamCheck's real technical architecture, which, before LaunchStudio's involvement, had no genuine immediate-deletion capability at all, only a manual process that typically took several days.
+The AI-generated privacy policy included a specific claim that user data could be deleted "immediately upon request" - plausible-sounding, standard language the AI model had generated without any actual knowledge of TeamCheck's real technical architecture, which, before LaunchStudio's involvement, had no genuine immediate-deletion capability at all, only a manual process that typically took several days.
 
-**Result:** LaunchStudio flagged the mismatch during a broader technical review, prompting Sophie to have the privacy policy professionally reviewed and corrected to accurately reflect TeamCheck's real deletion timeline, while separately scoping the technical work to build genuine faster deletion capability matching what the corrected policy now promised — resolving the gap on both the legal and technical sides together.
+**Result:** LaunchStudio flagged the mismatch during a broader technical review, prompting Sophie to have the privacy policy professionally reviewed and corrected to accurately reflect TeamCheck's real deletion timeline, while separately scoping the technical work to build genuine faster deletion capability matching what the corrected policy now promised - resolving the gap on both the legal and technical sides together.
 
-> *"The privacy policy sounded exactly like what a real privacy policy should say, which is exactly the problem — it never occurred to me to check whether what it said matched what my product could actually do. It genuinely couldn't, until someone pointed out the mismatch."*
-> — **Sophie Kramer, Founder, TeamCheck (Zwolle)**
+> *"The privacy policy sounded exactly like what a real privacy policy should say, which is exactly the problem - it never occurred to me to check whether what it said matched what my product could actually do. It genuinely couldn't, until someone pointed out the mismatch."*
+> - **Sophie Kramer, Founder, TeamCheck (Zwolle)**
 
 **Cost & Timeline:** €600 (mismatch identification and technical scoping); separate legal review arranged independently.
 
@@ -94,11 +94,11 @@ The AI-generated privacy policy included a specific claim that user data could b
 
 ### Does this mean AI shouldn't be used to draft privacy policies and terms of service at all?
 
-Not at all — using AI for an efficient first draft is genuinely reasonable and can save real time; the specific gap this article addresses is treating that draft as finished without qualified legal review and verification against actual practices.
+Not at all - using AI for an efficient first draft is genuinely reasonable and can save real time; the specific gap this article addresses is treating that draft as finished without qualified legal review and verification against actual practices.
 
 ### How would a founder know if their AI-generated legal document contains claims that don't match their actual technical capability, like Sophie's case?
 
-Specifically comparing each concrete, checkable claim in the document — deletion timelines, data storage locations, specific user rights — against what the actual product genuinely does, ideally alongside the technical review covered throughout broader GDPR guidance in this series.
+Specifically comparing each concrete, checkable claim in the document - deletion timelines, data storage locations, specific user rights - against what the actual product genuinely does, ideally alongside the technical review covered throughout broader GDPR guidance in this series.
 
 ### Is a lawyer review of an AI-generated draft typically faster or more expensive than starting from scratch with a lawyer?
 
@@ -110,7 +110,7 @@ Both are prone to this general gap, though privacy policies specifically tend to
 
 ### How often should a founder revisit their legal documents to confirm they still match actual practices, given products evolve over time?
 
-Whenever the underlying product's data handling or technical architecture changes meaningfully — a new feature, a new data type collected — similar to the ongoing review cadence covered elsewhere in broader guidance for other categories of production-readiness, rather than treating the documents as a one-time, permanently accurate artifact.
+Whenever the underlying product's data handling or technical architecture changes meaningfully - a new feature, a new data type collected - similar to the ongoing review cadence covered elsewhere in broader guidance for other categories of production-readiness, rather than treating the documents as a one-time, permanently accurate artifact.
 
 <script type="application/ld+json">
 {
@@ -122,7 +122,7 @@ Whenever the underlying product's data handling or technical architecture change
       "name": "Does this mean AI shouldn't be used to draft privacy policies at all?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not at all — an AI-generated first draft is reasonable; the gap is treating it as finished without qualified legal review."
+        "text": "Not at all - an AI-generated first draft is reasonable; the gap is treating it as finished without qualified legal review."
       }
     },
     {

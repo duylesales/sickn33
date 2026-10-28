@@ -82,9 +82,9 @@ LaunchStudio's team consolideerde elk inloggegeven dat FactuurKoppel gebruikte i
 **Resultaat:** Sophie heeft nu een enkele bron van waarheid voor elk inloggegeven waar FactuurKoppel van afhangt. Een toekomstige sleutelrotatie is een taak van vijf minuten in plaats van een stressvolle middag.
 
 > *"Het roteren van die ene sleutel kostte me een hele middag van greppen door bestanden die ik in maanden niet had geopend. Ik had geen idee hoe verspreid alles was geworden totdat ik gedwongen werd het allemaal te gaan zoeken."*
-> — **Sophie Lammers, Oprichter, FactuurKoppel (Meppel)**
+> - **Sophie Lammers, Oprichter, FactuurKoppel (Meppel)**
 
-**Kosten en tijdlijn:** € 750 (volledige geheimen-audit, consolidatie in gecentraliseerde omgevingsconfiguratie, en voorzorgsmatige sleutelrotatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 750 (volledige geheimen-audit, consolidatie in gecentraliseerde omgevingsconfiguratie, en voorzorgsmatige sleutelrotatie) - voltooid in 5 werkdagen.
 
 ---
 

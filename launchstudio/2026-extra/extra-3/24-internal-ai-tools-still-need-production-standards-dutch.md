@@ -55,7 +55,7 @@ Interne tools hebben niet exact dezelfde prioriteit of urgentie nodig als klantg
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt interne AI-tools met dezelfde onderliggende categorieën die worden toegepast op klantgerichte producten, gepast begrensd tot het daadwerkelijke risico in plaats van volledig te worden overgeslagen op basis van alleen de doelgroep, ondersteund door Manifera's bredere ervaring in het herkennen dat het risico van interne tools zich stilletjes opbouwt, exact zoals dit artikel beschrijft.
 
-[Laat uw interne tool beoordelen voordat deze stilletjes haar oorspronkelijke aannames ontgroeit](https://launchstudio.eu/nl/#contact) — "alleen voor het team" beschrijft een doelgroep, en geen risiconiveau.
+[Laat uw interne tool beoordelen voordat deze stilletjes haar oorspronkelijke aannames ontgroeit](https://launchstudio.eu/nl/#contact) - "alleen voor het team" beschrijft een doelgroep, en geen risiconiveau.
 
 ## Wat "alleen intern" daadwerkelijk zou moeten betekenen in uw toegangsbeheer
 
@@ -80,9 +80,9 @@ Over een periode van meerdere maanden voegde het team van Femke stapsgewijs func
 **Resultaat:** LaunchStudio implementeerde de juiste rol-begrensd toegangscontrole op het nu uitgebreide interne dashboard en dichtte een authenticatiekloof die sinds de oorspronkelijke, terloopse bouw van de tool nooit was aangepakt. Hiermee werd een risico opgelost dat aanzienlijk was gegroeid voorbij wat iemand specifiek had besloten te accepteren, simpelweg door stapsgewijze, goedbedoelde functietoevoegingen.
 
 > *"Niemand is ooit gaan zitten en heeft besloten dat ons interne dashboard gevoelige betalingsgeschiedenis zou moeten bevatten. Het verzamelde zich daar gewoon, functie voor functie, over maanden, terwijl de beveiliging eromheen exact zo terloops bleef als toen het alleen anonieme statistieken toonde waar niemand om zou hebben gegeven als ze gelekt waren."*
-> — **Femke Bruggeman, Oprichter, BoekingsBoost (Zwolle)**
+> - **Femke Bruggeman, Oprichter, BoekingsBoost (Zwolle)**
 
-**Kosten en tijdlijn:** € 1.200 (verharding van toegangsbeheer voor interne tool) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (verharding van toegangsbeheer voor interne tool) - voltooid in 4 werkdagen.
 
 ---
 
@@ -150,7 +150,7 @@ Over het algemeen wel – zoals in het geval van Femke is het implementeren van 
       "name": "Kan toegangsbeheer worden toegevoegd zonder de werkstroom te verstoren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Over het algemeen wel — het implementeren van rol-begrensde toegang is typisch toevoegend, niet verstorend."
+        "text": "Over het algemeen wel - het implementeren van rol-begrensde toegang is typisch toevoegend, niet verstorend."
       }
     }
   ]

@@ -61,7 +61,7 @@ The tasks that shrank are the mechanical ones. The tasks that remain are the one
 
 The genuine difficulty for people starting now is structural rather than about any individual job.
 
-Technical careers have traditionally worked as apprenticeships. A junior did the simpler tasks — writing straightforward queries, cleaning data, building basic reports, fixing small bugs — and in doing them acquired the understanding that later supports judgement. You learned what a join does by getting one wrong.
+Technical careers have traditionally worked as apprenticeships. A junior did the simpler tasks - writing straightforward queries, cleaning data, building basic reports, fixing small bugs - and in doing them acquired the understanding that later supports judgement. You learned what a join does by getting one wrong.
 
 When those tasks are produced instantly by an assistant, the ladder loses several rungs. The work that remains is the work requiring judgement, and judgement is what you do not yet have.
 
@@ -211,7 +211,7 @@ One candidate produced her answer more slowly. She had noticed that joining the 
 
 Asked about it, she said she had checked the row count before and after the join out of habit, because a lecturer had told her to.
 
-She was hired. The hiring manager's comment was that every candidate could produce a query, and one candidate could tell whether it was right — and that this distinction had become the entire basis of the decision.
+She was hired. The hiring manager's comment was that every candidate could produce a query, and one candidate could tell whether it was right - and that this distinction had become the entire basis of the decision.
 
 ## Key Takeaways
 

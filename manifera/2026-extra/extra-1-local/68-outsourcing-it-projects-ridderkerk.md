@@ -22,26 +22,26 @@ target_persona: "CFO"
 
 A fixed-price quote for outsourcing IT projects feels like it caps risk, right up until the first change order arrives and the CFO discovers "fixed" only ever applied to the version of the project that existed before anyone started building it.
 
-**The Pain:** A CFO at a distribution-technology company in Ridderkerk — a logistics-dense municipality in the Rotterdam metro area — is outsourcing IT projects for a warehouse-management integration and has been offered a fixed-price quote that looks reassuringly simple on paper, with no visible structure for how scope changes or delivery risk are actually managed once work begins.
+**The Pain:** A CFO at a distribution-technology company in Ridderkerk - a logistics-dense municipality in the Rotterdam metro area - is outsourcing IT projects for a warehouse-management integration and has been offered a fixed-price quote that looks reassuringly simple on paper, with no visible structure for how scope changes or delivery risk are actually managed once work begins.
 
 **The Agitation:** A CFO who accepts a fixed-price quote without a milestone structure underneath it discovers, mid-project, that "fixed" only holds until the first legitimate scope change, at which point the vendor renegotiates from a position of leverage the CFO didn't anticipate needing. Renegotiating an IT project mid-engagement typically costs a mid-market distribution company 15-25% above the original quoted price.
 
 ## Why a Fixed Price Alone Doesn't Cap Risk
 
-A fixed-price quote for outsourcing IT projects looks like risk transfer, but without a milestone structure defining what happens when scope shifts, it's actually risk deferral — the same uncertainty a time-and-materials contract carries, just hidden until the first change order surfaces.
+A fixed-price quote for outsourcing IT projects looks like risk transfer, but without a milestone structure defining what happens when scope shifts, it's actually risk deferral - the same uncertainty a time-and-materials contract carries, just hidden until the first change order surfaces.
 
-The first real risk-management tool is milestone-gated payment tied to independently verified, specific deliverables — not calendar dates, but concrete, checkable outputs. A CFO who pays against verified milestones knows exactly what has been delivered for what has been spent, at every point in the project.
+The first real risk-management tool is milestone-gated payment tied to independently verified, specific deliverables - not calendar dates, but concrete, checkable outputs. A CFO who pays against verified milestones knows exactly what has been delivered for what has been spent, at every point in the project.
 
 The second is an explicit, pre-agreed change-order process defining what triggers a renegotiation and how it's priced, agreed before the project starts rather than negotiated under the pressure of an in-flight deadline, where the vendor holds structural leverage the CFO doesn't.
 
-The third is independent verification of milestone completion — someone other than the delivery team confirming a milestone is genuinely done, not just reported as done, before payment releases.
+The third is independent verification of milestone completion - someone other than the delivery team confirming a milestone is genuinely done, not just reported as done, before payment releases.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads independently verify milestone completion and govern change-order pricing, agreed before the project starts, not renegotiated under deadline pressure.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod delivers against specific, checkable milestones, with financial exposure capped and visible at every stage.
 
-This is Dutch Management × Vietnamese Mastery — a milestone structure that makes a fixed-price quote actually mean something. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a milestone structure that makes a fixed-price quote actually mean something. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Distribuição Ibérica Lda, a distribution company based near Porto, Portugal, 
 Manifera restructured the remaining scope around milestone-gated payment with pre-agreed change-order pricing and independent verification of each deliverable before release of payment. The CFO reported full visibility into cost exposure for the remainder of the project, with no further unplanned renegotiation.
 
 > *"The fixed price wasn't fixed the moment reality touched the plan. What actually fixed our exposure was the milestone structure we should have insisted on from day one."*
-> — **CFO, Distribuição Ibérica Lda, Portugal**
+> - **CFO, Distribuição Ibérica Lda, Portugal**
 
 ## Fixed-Price-Only Contract vs. Manifera's Milestone Framework
 

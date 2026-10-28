@@ -1,4 +1,4 @@
-🔥 Noah built a prototype using **Lovable** — noah, a retail operations lead, used **lovable** to build a customer bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Noah built a prototype using **Lovable** - noah, a retail operations lead, used **lovable** to build a customer bot, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Noah's application achieved silky-smooth performance: Support resolution rose to 82% while keeping error rates at zero. (€1,800 (Support Safety Dashboard) — production-ready and deployed in 4 business days.). 🚀
+Noah's application achieved silky-smooth performance: Support resolution rose to 82% while keeping error rates at zero. (€1,800 (Support Safety Dashboard) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/case-study-slashing-customer-support-costs-80-ai
 

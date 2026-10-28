@@ -1,4 +1,4 @@
-🔍 Daan Hoekstra zette Werkplaats live met 340 atelier- en workshopruimtes in Groningen en Friesland. Zes weken na de Lovable-lancering bleek Google slechts 3 van de 340 pagina's geïndexeerd te hebben — omdat crawlers van zoekmachines alleen een leeg `<div id='root'></div>` scherm zagen. 😳
+🔍 Daan Hoekstra zette Werkplaats live met 340 atelier- en workshopruimtes in Groningen en Friesland. Zes weken na de Lovable-lancering bleek Google slechts 3 van de 340 pagina's geïndexeerd te hebben - omdat crawlers van zoekmachines alleen een leeg `<div id='root'></div>` scherm zagen. 😳
 
 Een client-side Single Page App (SPA) rankt niet organisch als zoekmachines geen HTML-content kunnen lezen. Waar het vaak misgaat:
 

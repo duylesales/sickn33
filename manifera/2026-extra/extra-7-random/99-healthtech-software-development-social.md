@@ -10,7 +10,7 @@ A product can pass every item on a HIPAA checklist and still make a breach far m
 ✅ **Amsterdam Regulatory Architecture:** Built before a single feature, not retrofitted after launch.
 ✅ **Vietnam Execution:** Real HL7/FHIR interoperability and granular PHI audit logging.
 
-One re-architected platform closed a hospital deal that had been stuck for five months — in weeks. ⚡
+One re-architected platform closed a hospital deal that had been stuck for five months - in weeks. ⚡
 
 👉 Read our full deep dive on healthtech software development: https://www.manifera.com/blog/healthtech-software-development
 

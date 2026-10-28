@@ -1,7 +1,7 @@
 🚨 The cost case for offshoring your mobile build is done. So why does the board meeting still feel like the riskiest part of the whole decision? 📱⚙️
 
 **The Pain Points:**
-❌ **Cost Case Solid, Mobile Risk Undocumented:** App-store account ownership, SDK data handling, and post-OS-update maintenance — all unanswered.
+❌ **Cost Case Solid, Mobile Risk Undocumented:** App-store account ownership, SDK data handling, and post-OS-update maintenance - all unanswered.
 ❌ **A Rejected Proposal Costs a Quarter:** €25,000–€55,000 in delayed user acquisition and idle engineering capacity per slipped quarter.
 ❌ **"The Vendor Handles It" Doesn't Satisfy the Board:** Especially the member who's read about app-store privacy enforcement in the trade press.
 

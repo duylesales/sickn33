@@ -1,6 +1,6 @@
 🚨 Adding a "simple" tip button took him 3 full weekends and broke his invoice page twice. The culprit? Invisible AI technical debt. 😱
 
-AI-generated code accumulates debt DIFFERENTLY than human code — and most non-technical founders have zero way to see it coming: 🧠
+AI-generated code accumulates debt DIFFERENTLY than human code - and most non-technical founders have zero way to see it coming: 🧠
 
 ❌ The AI "forgets" earlier decisions across sessions
 ❌ 3 different ways of handling the same problem, none talking to each other
@@ -16,7 +16,7 @@ At **LaunchStudio**, technical debt assessment is one of our most common engagem
 
 Don't wait for the crisis. Get ahead of the debt. 🛡️🚀
 
-🔍 The tell: `userId` in one part of your app, `user_id` in another. Two AI sessions, zero memory of each other — and your data silently stops connecting.
+🔍 The tell: `userId` in one part of your app, `user_id` in another. Two AI sessions, zero memory of each other - and your data silently stops connecting.
 
 👉 Read the founder's guide to AI technical debt: https://launchstudio.eu/en/blog/founders-guide-technical-debt-ai
 

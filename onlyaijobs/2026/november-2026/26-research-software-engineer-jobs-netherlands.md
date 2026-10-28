@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Behind almost every modern scientific result is software: code that processes telescope data, simulates climate, analyses genomes, trains models on medical images or cleans survey responses. For decades, much of that software was written by PhD candidates and postdocs who learned programming along the way and moved on after a few years, leaving code that nobody else could maintain. The research software engineer — a professional who combines software engineering skills with an understanding of research — emerged to solve that problem. In the Netherlands, the role has grown from a niche into a recognised career path, and it is one of the most interesting options for data and ML engineers who want to stay close to science without pursuing an academic career.
+Behind almost every modern scientific result is software: code that processes telescope data, simulates climate, analyses genomes, trains models on medical images or cleans survey responses. For decades, much of that software was written by PhD candidates and postdocs who learned programming along the way and moved on after a few years, leaving code that nobody else could maintain. The research software engineer - a professional who combines software engineering skills with an understanding of research - emerged to solve that problem. In the Netherlands, the role has grown from a niche into a recognised career path, and it is one of the most interesting options for data and ML engineers who want to stay close to science without pursuing an academic career.
 
 ## What a Research Software Engineer Actually Does
 
@@ -80,7 +80,7 @@ Job titles vary strongly. Searching only for "research software engineer" misses
 
 ## Why the Role Matters: Reproducibility and FAIR Software
 
-Science depends on results being verifiable. When analyses rely on software that is undocumented, untested or no longer runnable, reproducibility suffers. The **FAIR principles** — findable, accessible, interoperable and reusable — were originally formulated for research data and have been adapted to research software. Funders, journals and institutions increasingly expect code to be shared, versioned, documented and citable.
+Science depends on results being verifiable. When analyses rely on software that is undocumented, untested or no longer runnable, reproducibility suffers. The **FAIR principles** - findable, accessible, interoperable and reusable - were originally formulated for research data and have been adapted to research software. Funders, journals and institutions increasingly expect code to be shared, versioned, documented and citable.
 
 RSEs make this possible in practice. They introduce version control, automated testing, packaging, documentation, containerisation and workflow management. For machine learning research, they help track datasets, model versions and experiments so that published results can be reproduced.
 
@@ -94,19 +94,19 @@ Progress varies by institution, and RSEs still sometimes face uncertainty about 
 
 A PhD candidate developed a machine learning method for analysing microscopy images, and several other labs want to use it. The code works on the candidate's laptop but depends on hard-coded file paths, undocumented preprocessing steps and specific library versions. The candidate is about to finish.
 
-An RSE works with the candidate for a few months. Together they restructure the code into a package, add tests using small example datasets, document installation and usage, set up continuous integration and publish the software with a citable identifier. They also create a containerised version that runs on the university's computing cluster. A year later, the tool is used by labs in several countries, and the original method has been cited in new research — something that would have been unlikely if the code had remained on a laptop.
+An RSE works with the candidate for a few months. Together they restructure the code into a package, add tests using small example datasets, document installation and usage, set up continuous integration and publish the software with a citable identifier. They also create a containerised version that runs on the university's computing cluster. A year later, the tool is used by labs in several countries, and the original method has been cited in new research - something that would have been unlikely if the code had remained on a laptop.
 
 ## Research Software Engineering for Machine Learning Research
 
 Machine learning has become a research tool in almost every discipline, from astronomy to history. That has created a specific type of RSE work. Researchers often have strong domain questions but limited experience with training models at scale, managing GPU resources or evaluating models rigorously. RSEs help design training pipelines, set up experiment tracking, make models run efficiently on national computing infrastructure and ensure that evaluation avoids common pitfalls such as data leakage between training and test sets.
 
-Reproducibility is particularly challenging in machine learning research. Results can depend on random seeds, library versions, hardware and small preprocessing choices. RSEs introduce practices such as fixed environments, versioned datasets, logged hyperparameters and shared model checkpoints, so that others can verify or build on results. For ML engineers from industry, this is familiar MLOps thinking applied to a research context — and a natural transition into the RSE career.
+Reproducibility is particularly challenging in machine learning research. Results can depend on random seeds, library versions, hardware and small preprocessing choices. RSEs introduce practices such as fixed environments, versioned datasets, logged hyperparameters and shared model checkpoints, so that others can verify or build on results. For ML engineers from industry, this is familiar MLOps thinking applied to a research context - and a natural transition into the RSE career.
 
 ## Working With Sensitive Research Data
 
 Not all research data can be shared openly. Medical records, interview transcripts, social media data about individuals and data from commercial partners come with legal and ethical restrictions. RSEs working with such data must understand the GDPR, institutional data protection policies and requirements from ethics committees and data providers.
 
-In practice, this means building software that runs inside secure research environments, implementing pseudonymisation, designing workflows where only aggregated results leave a protected environment and documenting data handling for data management plans. Balancing openness — sharing code and methods — with protection of sensitive data is a core skill. The phrase often used in open science captures it well: data should be "as open as possible, as closed as necessary".
+In practice, this means building software that runs inside secure research environments, implementing pseudonymisation, designing workflows where only aggregated results leave a protected environment and documenting data handling for data management plans. Balancing openness - sharing code and methods - with protection of sensitive data is a core skill. The phrase often used in open science captures it well: data should be "as open as possible, as closed as necessary".
 
 ## A Common Misconception About RSE Work
 
@@ -142,7 +142,7 @@ Candidates arrive in RSE roles from several directions: PhD graduates who enjoye
 
 - Research software engineers build and maintain the software, pipelines and ML tools that research depends on.
 - The Netherlands eScience Center, NL-RSE, SURF, NWO and university digital competence centres shape the Dutch RSE landscape.
-- Jobs exist at national centres, university support units, research groups, university medical centres, research institutes and infrastructure providers — under many different titles.
+- Jobs exist at national centres, university support units, research groups, university medical centres, research institutes and infrastructure providers - under many different titles.
 - Reproducibility, FAIR software and the Recognition and Rewards programme are driving growth and recognition of the role.
 - RSE work combines strong technical skills with collaboration and scientific curiosity, with conditions set largely by university collective agreements.
 
@@ -161,10 +161,10 @@ A professional who develops and maintains software used in research, combining s
 Many are advertised as scientific programmer, research engineer, data engineer or software developer within university or institute vacancies.
 
 ### (Scenario: PhD graduate) Can I become an RSE without leaving academia?
-Yes — many RSEs work at universities, university medical centres, research institutes or the Netherlands eScience Center.
+Yes - many RSEs work at universities, university medical centres, research institutes or the Netherlands eScience Center.
 
 ### (Scenario: industry engineer considering a switch) Are RSE roles less technically challenging than industry roles?
-No — they often involve complex algorithms, large data, high-performance computing and evolving requirements, with different goals than commercial software.
+No - they often involve complex algorithms, large data, high-performance computing and evolving requirements, with different goals than commercial software.
 
 ### (Scenario: candidate comparing pay) How does RSE pay compare with industry?
 University salary scales are usually lower than senior industry pay, but conditions, flexibility and meaningful work attract many RSEs.
@@ -176,8 +176,8 @@ University salary scales are usually lower than senior industry pay, but conditi
   "mainEntity": [
     {"@type": "Question", "name": "What is a research software engineer?", "acceptedAnswer": {"@type": "Answer", "text": "A professional who develops and maintains research software, combining engineering and scientific understanding."}},
     {"@type": "Question", "name": "Why are RSE jobs hard to find with a job title search?", "acceptedAnswer": {"@type": "Answer", "text": "They are often advertised as scientific programmer, research engineer or data engineer."}},
-    {"@type": "Question", "name": "Can I become an RSE without leaving academia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — at universities, UMCs, institutes or the Netherlands eScience Center."}},
-    {"@type": "Question", "name": "Are RSE roles less technically challenging than industry roles?", "acceptedAnswer": {"@type": "Answer", "text": "No — they involve complex algorithms, large data and HPC with different goals."}},
+    {"@type": "Question", "name": "Can I become an RSE without leaving academia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - at universities, UMCs, institutes or the Netherlands eScience Center."}},
+    {"@type": "Question", "name": "Are RSE roles less technically challenging than industry roles?", "acceptedAnswer": {"@type": "Answer", "text": "No - they involve complex algorithms, large data and HPC with different goals."}},
     {"@type": "Question", "name": "How does RSE pay compare with industry?", "acceptedAnswer": {"@type": "Answer", "text": "Usually lower at senior levels, balanced by conditions and meaningful work."}}
   ]
 }

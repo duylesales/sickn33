@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Generalist or Specialist? Choosing Your Shape in the Dutch AI Market",
-  "description": "In a labour market of fifty thousand data professionals rather than five million, the trade-off between breadth and depth works differently — and the Dutch answer is not the same as the American one.",
+  "description": "In a labour market of fifty thousand data professionals rather than five million, the trade-off between breadth and depth works differently - and the Dutch answer is not the same as the American one.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-18",
@@ -41,7 +41,7 @@ Advice about specialisation in technology careers is written overwhelmingly for 
 
 Three features of the Dutch market shape this decision.
 
-**Employer counts are small per niche.** If you specialise in, say, radar signal processing, reinforcement learning for control, or clinical natural language processing, the number of Dutch employers who need that is measured in single or low double digits. That is not a reason to avoid specialising — it is a reason to know it.
+**Employer counts are small per niche.** If you specialise in, say, radar signal processing, reinforcement learning for control, or clinical natural language processing, the number of Dutch employers who need that is measured in single or low double digits. That is not a reason to avoid specialising - it is a reason to know it.
 
 **Geography constrains more than people admit.** Many professionals will not relocate: partner's job, children's school, a house they bought. Within a fifty-kilometre radius of most Dutch cities, the number of employers for a narrow specialism may be one or two.
 
@@ -73,7 +73,7 @@ The strongest specialisms in the Dutch market tend to combine a technical depth 
 |---|---|---|
 | Number of potential employers | Large | Small but often less competitive |
 | Salary trajectory | Steady, plateaus mid-career without a step | Higher ceiling in scarce niches |
-| Geographic flexibility | High — every region needs one | Lower — often tied to clusters |
+| Geographic flexibility | High - every region needs one | Lower - often tied to clusters |
 | Vulnerability to tool change | Low; adapts continuously | Higher if tied to a specific technology |
 | Vulnerability to sector downturn | Lower | Higher if the domain contracts |
 | Route to seniority | Via leadership or later specialisation | Via technical authority |
@@ -86,7 +86,7 @@ An engineer spends six years becoming genuinely expert in a specific class of mo
 
 Their employer is acquired, and the new owner moves that development to another country. The engineer looks for equivalent work and finds three Dutch employers who might need it. One is not hiring, one is two hours away, and one offers a role that is mostly maintenance.
 
-What saves them is not the specialism itself but its adjacency. The underlying skills — time-series modelling, sensor data, working with process engineers — apply to several neighbouring industries, and within four months they are working on a different application of the same competence.
+What saves them is not the specialism itself but its adjacency. The underlying skills - time-series modelling, sensor data, working with process engineers - apply to several neighbouring industries, and within four months they are working on a different application of the same competence.
 
 The lesson is about how you frame your depth. A specialism defined as "I do X for industry Y" is fragile in a small country. The same expertise defined as "I make sensor data usable for engineering decisions" travels. Specialists in the Dutch market should curate the second description deliberately, long before they need it.
 
@@ -94,9 +94,9 @@ The lesson is about how you frame your depth. A specialism defined as "I do X fo
 
 Most durable Dutch careers converge on the same structure, whatever the person calls it: broad competence across the pipeline, with one or two areas of real depth, anchored in a domain they understand well.
 
-That profile is resilient because it matches how Dutch teams are built. It lets you be useful in a small team, valuable in a large one, and credible to the business — and it means a change of employer does not require reinventing yourself.
+That profile is resilient because it matches how Dutch teams are built. It lets you be useful in a small team, valuable in a large one, and credible to the business - and it means a change of employer does not require reinventing yourself.
 
-The practical implication for career planning is sequencing rather than choosing. Breadth first, because it teaches you what the work involves and makes you employable across the market. Depth second, chosen from what you have discovered you both enjoy and are good at, rather than from what was fashionable when you graduated. Domain anchoring third, usually acquired without noticing after a few years in one sector — and worth protecting, because it is harder to acquire than technical skill.
+The practical implication for career planning is sequencing rather than choosing. Breadth first, because it teaches you what the work involves and makes you employable across the market. Depth second, chosen from what you have discovered you both enjoy and are good at, rather than from what was fashionable when you graduated. Domain anchoring third, usually acquired without noticing after a few years in one sector - and worth protecting, because it is harder to acquire than technical skill.
 
 ## When to Deepen and When to Broaden
 
@@ -110,7 +110,7 @@ Some practical signals.
 
 ## What This Means for Regional Candidates
 
-For anyone outside the Randstad, this analysis has a sharper edge. If you are committed to living in Limburg, Friesland, Zeeland or the Achterhoek, a narrow specialism with no local employer is a real risk, and the sensible strategies are: build breadth so you are useful to whoever is nearby, specialise in something the region actually does — agri-food, energy, manufacturing, logistics, healthcare — or find a remote-friendly employer before you need one.
+For anyone outside the Randstad, this analysis has a sharper edge. If you are committed to living in Limburg, Friesland, Zeeland or the Achterhoek, a narrow specialism with no local employer is a real risk, and the sensible strategies are: build breadth so you are useful to whoever is nearby, specialise in something the region actually does - agri-food, energy, manufacturing, logistics, healthcare - or find a remote-friendly employer before you need one.
 
 The encouraging part is that regional employers frequently offer the generalist more responsibility, sooner, than a Randstad employer would. Being the person who owns the entire data capability of a mid-sized company is a better learning environment than being one of forty engineers on a platform team, and it produces a profile that is very employable afterwards.
 
@@ -155,7 +155,7 @@ Browse current AI, machine learning and data vacancies across the Netherlands at
 ## Frequently Asked Questions
 
 ### (Scenario: mid-career professional) Is specialising risky in a country this small?
-It can be — the number of employers per niche is small, so define your depth as a transferable competence rather than a single application.
+It can be - the number of employers per niche is small, so define your depth as a transferable competence rather than a single application.
 
 ### (Scenario: junior professional) Should I specialise early?
 Generally no: breadth first teaches you what the work involves and what you actually enjoy, which makes a later choice of depth far better informed.
@@ -164,18 +164,18 @@ Generally no: breadth first teaches you what the work involves and what you actu
 Deepen in the area where you repeatedly hit your own limits, or move towards leadership, where breadth becomes an asset again.
 
 ### (Scenario: candidate outside the Randstad) What is the safest shape regionally?
-Breadth plus a specialism in a sector the region actually has — agri-food, energy, manufacturing, logistics or healthcare.
+Breadth plus a specialism in a sector the region actually has - agri-food, energy, manufacturing, logistics or healthcare.
 
 ### (Scenario: candidate tied to a technology) Is expertise in one tool a specialism?
-Rarely a durable one — tools change faster than industries, so anchor depth in problems and domains rather than in a product.
+Rarely a durable one - tools change faster than industries, so anchor depth in problems and domains rather than in a product.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is specialising risky in the Dutch job market?", "acceptedAnswer": {"@type": "Answer", "text": "It can be — employer counts per niche are small, so define depth as a transferable competence rather than one application."}},
-    {"@type": "Question", "name": "Should junior data professionals specialise early?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no — breadth first reveals what the work involves and makes a later choice of depth better informed."}},
+    {"@type": "Question", "name": "Is specialising risky in the Dutch job market?", "acceptedAnswer": {"@type": "Answer", "text": "It can be - employer counts per niche are small, so define depth as a transferable competence rather than one application."}},
+    {"@type": "Question", "name": "Should junior data professionals specialise early?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no - breadth first reveals what the work involves and makes a later choice of depth better informed."}},
     {"@type": "Question", "name": "How does a generalist move past a career plateau?", "acceptedAnswer": {"@type": "Answer", "text": "Deepen where you repeatedly hit your own limits, or move towards leadership where breadth is an asset."}},
     {"@type": "Question", "name": "What career shape works best outside the Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Breadth plus a specialism in a sector the region actually has, such as agri-food, energy, manufacturing or healthcare."}},
     {"@type": "Question", "name": "Is expertise in one tool a real specialism?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely a durable one, because tools change faster than industries; anchor depth in problems and domains."}}

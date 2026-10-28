@@ -22,26 +22,26 @@ target_persona: "CFO"
 
 A SaaS platform serving customers on both sides of the Netherlands-Belgium border looks like a single-market build until the tax logic, invoicing rules, and data-residency requirements diverge in ways a single-jurisdiction cost estimate never anticipated.
 
-**The Pain:** A CFO at a manufacturing-technology company in Weert — a Limburg border town with deep cross-border trade ties to neighboring Belgium — is choosing a SaaS technical partner for a customer platform that has to serve both Dutch and Belgian business customers, and the initial cost estimates treated it as a single-market build with a translation layer, not a genuinely dual-jurisdiction system.
+**The Pain:** A CFO at a manufacturing-technology company in Weert - a Limburg border town with deep cross-border trade ties to neighboring Belgium - is choosing a SaaS technical partner for a customer platform that has to serve both Dutch and Belgian business customers, and the initial cost estimates treated it as a single-market build with a translation layer, not a genuinely dual-jurisdiction system.
 
-**The Agitation:** A CFO who budgets a cross-border SaaS build as a single-market project with light localization discovers, mid-development, that VAT logic, invoicing compliance, and data-handling requirements actually diverge enough between the two jurisdictions to require real architectural accommodation, not just a translated interface — a discovery that typically triggers a scope and budget renegotiation partway through the build.
+**The Agitation:** A CFO who budgets a cross-border SaaS build as a single-market project with light localization discovers, mid-development, that VAT logic, invoicing compliance, and data-handling requirements actually diverge enough between the two jurisdictions to require real architectural accommodation, not just a translated interface - a discovery that typically triggers a scope and budget renegotiation partway through the build.
 
 ## Pricing a Genuinely Dual-Jurisdiction Build Honestly
 
 A SaaS platform serving two jurisdictions needs its cost model to reflect where the underlying business logic actually diverges, not just where the language does, because the two are frequently confused in an early cost estimate.
 
-The first divergence a CFO's model needs to price in is tax and invoicing logic — VAT handling, invoice numbering and formatting requirements, and compliance rules that differ meaningfully between the Netherlands and Belgium despite both being EU member states, requiring genuinely separate logic paths, not a configuration flag.
+The first divergence a CFO's model needs to price in is tax and invoicing logic - VAT handling, invoice numbering and formatting requirements, and compliance rules that differ meaningfully between the Netherlands and Belgium despite both being EU member states, requiring genuinely separate logic paths, not a configuration flag.
 
 The second is data-residency and processing requirements that, while both jurisdictions fall under GDPR, can still carry country-specific implementation nuances a cross-border platform needs to account for explicitly in its architecture.
 
-The third is ongoing maintenance cost — a dual-jurisdiction system requires monitoring both regulatory environments for changes indefinitely, a recurring cost a one-time build estimate doesn't capture but a CFO's long-term budget model needs to.
+The third is ongoing maintenance cost - a dual-jurisdiction system requires monitoring both regulatory environments for changes indefinitely, a recurring cost a one-time build estimate doesn't capture but a CFO's long-term budget model needs to.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads price genuine dual-jurisdiction divergence into the initial cost model explicitly, avoiding the mid-build renegotiation a single-market estimate produces.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds separate, correctly architected logic paths for jurisdiction-specific requirements rather than a thin configuration-flag approximation.
 
-This is Dutch Management × Vietnamese Mastery — a cross-border SaaS cost model priced against real divergence, not assumed similarity. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a cross-border SaaS cost model priced against real divergence, not assumed similarity. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Grenzland Fertigungssysteme GmbH, a manufacturing-technology company based near 
 Manifera rebuilt the remaining scope with correctly separated jurisdiction-specific logic paths, priced explicitly from the outset for the remaining work, avoiding any further scope surprises. The CFO reported the revised total cost, while higher than the original naive estimate, matched the initial revised projection closely with no further mid-build surprises.
 
 > *"We budgeted for a translation layer and needed two actually different systems wearing one interface. The second estimate was honest about that from the start, and honest cost, even when it's higher, beats a surprise renegotiation every time."*
-> — **CFO, Grenzland Fertigungssysteme GmbH, Germany**
+> - **CFO, Grenzland Fertigungssysteme GmbH, Germany**
 
 ## Single-Market Cost Estimate vs. Manifera's Dual-Jurisdiction Model
 
@@ -70,11 +70,11 @@ A cross-border SaaS build budgeted as a single-market project with light localiz
 
 ## The Divergence Cost Line-Items
 
-Break the cross-border premium into what actually diverges rather than a flat surcharge. Belgium's mandatory Peppol e-invoicing requirement for B2B transactions, phasing in nationally, has no direct Dutch equivalent at the same enforcement level — building genuine Peppol-compliant invoice generation alongside standard Dutch invoicing typically adds 10-15% to the invoicing module specifically, not the whole platform. VAT logic divergence — reverse-charge mechanics, intra-EU reporting nuances specific to each jurisdiction's tax authority — adds another 8-12% to the billing engine.
+Break the cross-border premium into what actually diverges rather than a flat surcharge. Belgium's mandatory Peppol e-invoicing requirement for B2B transactions, phasing in nationally, has no direct Dutch equivalent at the same enforcement level - building genuine Peppol-compliant invoice generation alongside standard Dutch invoicing typically adds 10-15% to the invoicing module specifically, not the whole platform. VAT logic divergence - reverse-charge mechanics, intra-EU reporting nuances specific to each jurisdiction's tax authority - adds another 8-12% to the billing engine.
 
-Data-residency nuance is smaller but real: both fall under GDPR, but Belgian data protection authority guidance on specific processing activities occasionally diverges from Dutch Autoriteit Persoonsgegevens guidance, which a genuinely dual-jurisdiction architecture should flag as a configuration point, not hardcode either way. Language is a separate line item from jurisdiction — a Weert-based platform serving Belgian customers needs to account for Dutch, French, and increasingly Flemish-specific terminology in Wallonia versus Flanders, which is a localization cost, not a logic-divergence cost, and shouldn't be priced into the same line item.
+Data-residency nuance is smaller but real: both fall under GDPR, but Belgian data protection authority guidance on specific processing activities occasionally diverges from Dutch Autoriteit Persoonsgegevens guidance, which a genuinely dual-jurisdiction architecture should flag as a configuration point, not hardcode either way. Language is a separate line item from jurisdiction - a Weert-based platform serving Belgian customers needs to account for Dutch, French, and increasingly Flemish-specific terminology in Wallonia versus Flanders, which is a localization cost, not a logic-divergence cost, and shouldn't be priced into the same line item.
 
-All told, a manufacturing-technology CFO should expect the genuinely divergent logic — invoicing, VAT, and jurisdiction-specific data handling — to add roughly 20-30% to a single-market estimate, arriving over an extra 3-5 weeks of build time, concentrated almost entirely in the billing and invoicing modules rather than spread evenly across the platform.
+All told, a manufacturing-technology CFO should expect the genuinely divergent logic - invoicing, VAT, and jurisdiction-specific data handling - to add roughly 20-30% to a single-market estimate, arriving over an extra 3-5 weeks of build time, concentrated almost entirely in the billing and invoicing modules rather than spread evenly across the platform.
 
 ## Frequently Asked Questions
 
@@ -100,7 +100,7 @@ No, ongoing maintenance to monitor both jurisdictions' regulatory environments f
 
 ### (Scenario: CFO budgeting for Belgian e-invoicing compliance specifically) Does Belgium's Peppol e-invoicing mandate require a different build than standard Dutch invoicing?
 
-Yes — genuine Peppol-compliant invoice generation for Belgian B2B transactions is architecturally distinct from standard Dutch invoicing and typically adds 10-15% to the invoicing module specifically, not the whole platform.
+Yes - genuine Peppol-compliant invoice generation for Belgian B2B transactions is architecturally distinct from standard Dutch invoicing and typically adds 10-15% to the invoicing module specifically, not the whole platform.
 
 ### (Scenario: CFO estimating the timeline impact of dual-jurisdiction work) How much extra build time should a CFO expect for a genuinely dual-jurisdiction platform versus a single-market one?
 
@@ -108,7 +108,7 @@ Roughly 3-5 extra weeks, concentrated almost entirely in the billing and invoici
 
 ### (Scenario: CFO handling Belgian language variation across Wallonia and Flanders) Does serving both Flemish and Walloon Belgian customers require jurisdiction-level architecture changes, or just localization?
 
-Just localization — Dutch, French, and Flemish-specific terminology differences are a translation and content cost, separate from the genuine logic divergence in tax, invoicing, and data handling, and shouldn't be priced into the same budget line.
+Just localization - Dutch, French, and Flemish-specific terminology differences are a translation and content cost, separate from the genuine logic divergence in tax, invoicing, and data handling, and shouldn't be priced into the same budget line.
 
 ### (Scenario: CFO vetting a technical partner's cross-border experience) What should a CFO ask a SaaS technical partner to verify genuine cross-border Netherlands-Belgium experience?
 

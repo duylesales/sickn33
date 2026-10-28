@@ -20,19 +20,19 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Een oprichter met een AI-gebouwd prototype en een voorstel van een traditioneel agentschap bevindt zich in een vreemde onderhandelingspositie. Ze weten dat hun product werk nodig heeft. Meestal weten ze niet precies hoeveel, of wat voor soort. En een agentschap, hoe goedbedoeld ook, heeft een natuurlijke prikkel om de opdracht ruim te bemeten — wat betekent dat het verkooppraatje vaak een tweede, sceptischer doorlezing nodig heeft voordat er een contract wordt getekend.
+Een oprichter met een AI-gebouwd prototype en een voorstel van een traditioneel agentschap bevindt zich in een vreemde onderhandelingspositie. Ze weten dat hun product werk nodig heeft. Meestal weten ze niet precies hoeveel, of wat voor soort. En een agentschap, hoe goedbedoeld ook, heeft een natuurlijke prikkel om de opdracht ruim te bemeten - wat betekent dat het verkooppraatje vaak een tweede, sceptischer doorlezing nodig heeft voordat er een contract wordt getekend.
 
 Zo leest u zo'n verkooppraatje op de juiste manier.
 
 ## Signaal één: "herbouw"-taal voor een probleem dat eigenlijk afgebakend is
 
-Let op hoe het agentschap het werk framet. Als elke uitleg over wat er mis is, terugleidt naar "we zouden dit eigenlijk goed moeten herbouwen", stel dan een directe vervolgvraag: welk deel precies herbouwen, en waarom kan het niet ter plekke worden gerepareerd? Een echt kapotte fundering heeft soms wel een herbouw nodig. Maar een ai app dev-prototype met een handvol specifieke beveiligings- of architectuurhiaten heeft meestal nodig dat die hiaten worden gerepareerd, niet een volledige vervanging van alles wat de oprichter al heeft gebouwd — inclusief de frontend waar hij mogelijk maanden aan heeft geschaafd.
+Let op hoe het agentschap het werk framet. Als elke uitleg over wat er mis is, terugleidt naar "we zouden dit eigenlijk goed moeten herbouwen", stel dan een directe vervolgvraag: welk deel precies herbouwen, en waarom kan het niet ter plekke worden gerepareerd? Een echt kapotte fundering heeft soms wel een herbouw nodig. Maar een ai app dev-prototype met een handvol specifieke beveiligings- of architectuurhiaten heeft meestal nodig dat die hiaten worden gerepareerd, niet een volledige vervanging van alles wat de oprichter al heeft gebouwd - inclusief de frontend waar hij mogelijk maanden aan heeft geschaafd.
 
 Als het agentschap geen specifieke technische reden kan aanwijzen waarom de bestaande frontend niet behouden kan blijven, doet "herbouw" mogelijk meer verkoopwerk dan technisch werk.
 
 ## Signaal twee: vage bevindingen in plaats van een specifieke lijst
 
-Een betrouwbare beoordeling benoemt dingen: deze authenticatieflow verwerkt het verlopen van tokens niet, deze databasequery is kwetsbaar voor injectie, dit eindpunt controleert machtigingen niet correct. Een verkooppraatje dat blijft hangen op het niveau van "er zijn veel onderliggende problemen" of "de codekwaliteit is niet waar die moet zijn" zonder ooit specifiek te worden, is moeilijker te beoordelen — en moeilijker om tegenin te gaan, wat precies de bedoeling kan zijn.
+Een betrouwbare beoordeling benoemt dingen: deze authenticatieflow verwerkt het verlopen van tokens niet, deze databasequery is kwetsbaar voor injectie, dit eindpunt controleert machtigingen niet correct. Een verkooppraatje dat blijft hangen op het niveau van "er zijn veel onderliggende problemen" of "de codekwaliteit is niet waar die moet zijn" zonder ooit specifiek te worden, is moeilijker te beoordelen - en moeilijker om tegenin te gaan, wat precies de bedoeling kan zijn.
 
 Vraag om de lijst. Een specifieke lijst is controleerbaar, zelfs door een niet-technische oprichter, omdat u een tweede partij kunt vragen of dezelfde lijst standhoudt.
 
@@ -46,15 +46,15 @@ Een verkooppraatje dat u ontmoedigt om een tweede mening te vragen, of een concu
 
 ## Jobs te dure herbouw
 
-Job Vermeer, een oprichter in Elburg, bouwde BouwPlan — een tool voor bouwprojecten — met Lovable. Hij tekende bij een traditioneel agentschap wiens verkooppraatje suggereerde dat een volledige herbouw nodig was om BouwPlan productieklaar te maken. Het verkooppraatje was zelfverzekerd en de redenering klonk destijds plausibel — genoeg dat Job doorging zonder eerst een tweede mening te vragen.
+Job Vermeer, een oprichter in Elburg, bouwde BouwPlan - een tool voor bouwprojecten - met Lovable. Hij tekende bij een traditioneel agentschap wiens verkooppraatje suggereerde dat een volledige herbouw nodig was om BouwPlan productieklaar te maken. Het verkooppraatje was zelfverzekerd en de redenering klonk destijds plausibel - genoeg dat Job doorging zonder eerst een tweede mening te vragen.
 
-In werkelijkheid waren alleen gerichte fixes nodig — specifieke problemen in hoe de tool toegang tot projectgegevens en bestandsuploads afhandelde, geen reden om de werkende frontend weg te gooien en opnieuw te beginnen. Job betaalde aanzienlijk te veel voordat hij uiteindelijk een tweede mening kreeg van LaunchStudio, tegen die tijd had het agentschap al een substantieel deel van een herbouw gefactureerd die niet nodig hoefde te zijn.
+In werkelijkheid waren alleen gerichte fixes nodig - specifieke problemen in hoe de tool toegang tot projectgegevens en bestandsuploads afhandelde, geen reden om de werkende frontend weg te gooien en opnieuw te beginnen. Job betaalde aanzienlijk te veel voordat hij uiteindelijk een tweede mening kreeg van LaunchStudio, tegen die tijd had het agentschap al een substantieel deel van een herbouw gefactureerd die niet nodig hoefde te zijn.
 
 ## Wat u anders moet doen vóór het tekenen
 
-Vraag, voordat u instemt met de voorgestelde scope van een agentschap, om een tweede, onafhankelijke beoordeling — idealiter van een team zonder financieel belang bij de omvang van de opdracht. Vraag om een specifieke lijst met bevindingen, geen algemene indruk. Vraag welke delen van het bestaande product echt moeten veranderen en welke niet. En behandel "we moeten dit herbouwen" als een claim om te verifiëren, geen conclusie om te accepteren op basis van een zelfverzekerde presentatie.
+Vraag, voordat u instemt met de voorgestelde scope van een agentschap, om een tweede, onafhankelijke beoordeling - idealiter van een team zonder financieel belang bij de omvang van de opdracht. Vraag om een specifieke lijst met bevindingen, geen algemene indruk. Vraag welke delen van het bestaande product echt moeten veranderen en welke niet. En behandel "we moeten dit herbouwen" als een claim om te verifiëren, geen conclusie om te accepteren op basis van een zelfverzekerde presentatie.
 
-Onze technici in Amsterdam, samen met collega's in Singapore en Ho Chi Minh-stad, zijn regelmatig de tweede mening die oprichters inschakelen na een verkooppraatje zoals Job ontving — en de bevinding is vaker wel dan niet dat een gerichte fix het karwei had geklaard. LaunchStudio's fixed-scope prijsmodel (doorgaans € 800–€ 7.500, geleverd in één tot drie weken) bestaat specifiek zodat oprichters een concrete, gespecificeerde scope kunnen vergelijken met wat een agentschap heeft voorgesteld. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering — u kunt [zien hoe een fixed-scope offerte voor uw daadwerkelijke bevindingen eruit zou zien](https://launchstudio.eu/nl/#calculator) voordat u zich aan iets groters verbindt.
+Onze technici in Amsterdam, samen met collega's in Singapore en Ho Chi Minh-stad, zijn regelmatig de tweede mening die oprichters inschakelen na een verkooppraatje zoals Job ontving - en de bevinding is vaker wel dan niet dat een gerichte fix het karwei had geklaard. LaunchStudio's fixed-scope prijsmodel (doorgaans € 800–€ 7.500, geleverd in één tot drie weken) bestaat specifiek zodat oprichters een concrete, gespecificeerde scope kunnen vergelijken met wat een agentschap heeft voorgesteld. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering - u kunt [zien hoe een fixed-scope offerte voor uw daadwerkelijke bevindingen eruit zou zien](https://launchstudio.eu/nl/#calculator) voordat u zich aan iets groters verbindt.
 
 ## De Vervolgvragen Die een Echte Technische Beoordeling Onderscheiden van een Verkooppraatje
 
@@ -75,16 +75,16 @@ Kies altijd voor de partner die uw onderneming vooruit helpt met pragmatische, g
 
 Job Vermeer had BouwPlan gebouwd om kleine bouwbedrijven projectdocumenten, tijdlijnen en updates van onderaannemers op één plek te laten bijhouden. Toen BouwPlan groeide, benaderde hij een traditioneel agentschap voor hulp om het productieklaar te maken, en hun verkooppraatje beschreef uitgebreide onderliggende problemen die, in hun woorden, een volledige herbouw van de applicatie rechtvaardigden.
 
-Job tekende, en het agentschap begon aan een volledige herbouw. Halverwege, op aanraden van een collega, bracht hij BouwPlan naar LaunchStudio voor een tweede mening — vooral uit nieuwsgierigheid of de kosten die hij al betaalde redelijk waren. De technici van Manifera beoordeelden de daadwerkelijke codebase en vonden een veel smallere set echte problemen: toegang tot projectgegevens was niet correct afgebakend tussen verschillende bouwbedrijven die het platform gebruikten, en bestandsuploads misten validatie, waardoor potentieel onveilige bestandstypen werden toegelaten. Beide waren direct te repareren, zonder de frontend aan te raken die Job al had gebouwd en verfijnd.
+Job tekende, en het agentschap begon aan een volledige herbouw. Halverwege, op aanraden van een collega, bracht hij BouwPlan naar LaunchStudio voor een tweede mening - vooral uit nieuwsgierigheid of de kosten die hij al betaalde redelijk waren. De technici van Manifera beoordeelden de daadwerkelijke codebase en vonden een veel smallere set echte problemen: toegang tot projectgegevens was niet correct afgebakend tussen verschillende bouwbedrijven die het platform gebruikten, en bestandsuploads misten validatie, waardoor potentieel onveilige bestandstypen werden toegelaten. Beide waren direct te repareren, zonder de frontend aan te raken die Job al had gebouwd en verfijnd.
 
 Job stopte de herbouw van het agentschap, en LaunchStudio implementeerde de gerichte fixes rechtstreeks op de bestaande BouwPlan-codebase.
 
 **Resultaat:** BouwPlan lanceerde met zijn originele frontend intact, zijn daadwerkelijke beveiligingslacunes gedicht, en tegen een fractie van wat de gestaakte herbouw uiteindelijk zou hebben gekost.
 
 > *"Ik betaalde voor een herbouw die ik nooit nodig had, voordat iemand me eindelijk vertelde wat er daadwerkelijk mis was."*
-> — **Job Vermeer, oprichter, BouwPlan (Elburg)**
+> - **Job Vermeer, oprichter, BouwPlan (Elburg)**
 
-**Kosten en tijdlijn:** € 1.450 (afbakening toegang tot gegevens en validatie bestandsuploads) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 1.450 (afbakening toegang tot gegevens en validatie bestandsuploads) - voltooid in 9 werkdagen.
 
 ---
 

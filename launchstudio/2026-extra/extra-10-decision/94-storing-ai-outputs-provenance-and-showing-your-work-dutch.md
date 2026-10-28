@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een AI-feature genereert een samenvatting van een dossier, en het resultaat wordt netjes opgeslagen in een `TEXT`-kolom van de database — direct tussen de velden die een medewerker handmatig heeft ingetypt.
+Een AI-feature genereert een samenvatting van een dossier, en het resultaat wordt netjes opgeslagen in een `TEXT`-kolom van de database - direct tussen de velden die een medewerker handmatig heeft ingetypt.
 
 Zes maanden later kan **niemand** meer vertellen welke regels door een mens zijn geschreven en welke door een taalmodel zijn geproduceerd:
 - Uw eigen supportteam weet het niet.
@@ -64,11 +64,11 @@ Dit is van levensbelang in professionele sectoren: een accountant, jurist of art
 
 Er zijn twee manieren om met AI-resultaten om te gaan, met een duidelijke vuistregel om tussen beide te kiezen.
 
-**Sla de output op** wanneer het genereren kostbaar of traag is, wanneer de uitkomst stabiel moet blijven in de tijd, herhaaldelijk gelezen zal worden, of onderdeel vormt van een formeel dossier — alles waar een klant later naar kan verwijzen met de vraag wat er precies stond. Opgeslagen data is razendsnel, kost niets om opnieuw te raadplegen en is volledig auditeerbaar.
+**Sla de output op** wanneer het genereren kostbaar of traag is, wanneer de uitkomst stabiel moet blijven in de tijd, herhaaldelijk gelezen zal worden, of onderdeel vormt van een formeel dossier - alles waar een klant later naar kan verwijzen met de vraag wat er precies stond. Opgeslagen data is razendsnel, kost niets om opnieuw te raadplegen en is volledig auditeerbaar.
 
 **Regenereer on-demand** wanneer de onderliggende data voortdurend wijzigt, wanneer actuele versheid belangrijker is dan historische consistentie, of wanneer het opslaan van de gegenereerde inhoud specifieke privacy- of beveiligingsbezwaren oproept.
 
-De tussenvariant is wat u te allen tijde moet vermijden: telkens opnieuw genereren en een ander antwoord tonen op exact dezelfde vraag. Klanten interpreteren dat volkomen terecht als software die onbetrouwbaar is. Omdat taalmodellen non-deterministisch zijn en variëren tussen aanroepen, moet alles wat een klant zou kunnen vergelijken — een samenvatting die gisteren is gelezen, een risicoscore die met een collega is besproken — direct worden opgeslagen in plaats van opnieuw berekend.
+De tussenvariant is wat u te allen tijde moet vermijden: telkens opnieuw genereren en een ander antwoord tonen op exact dezelfde vraag. Klanten interpreteren dat volkomen terecht als software die onbetrouwbaar is. Omdat taalmodellen non-deterministisch zijn en variëren tussen aanroepen, moet alles wat een klant zou kunnen vergelijken - een samenvatting die gisteren is gelezen, een risicoscore die met een collega is besproken - direct worden opgeslagen in plaats van opnieuw berekend.
 
 Biedt u opgeslagen output aan? Voorzie dan altijd een expliciete hergeneratie-optie. Een duidelijke knop "Opnieuw genereren", waarbij de eerdere versie in de geschiedenis behouden blijft, geeft de klant controle en biedt u waardevolle vergelijkingsdata. En wanneer de onderliggende brondata verandert, markeer de afgeleide output dan zichtbaar als verouderd (*stale*) in plaats van deze stilzwijgend op de achtergrond te overschrijven, zodat de klant zelf kan beslissen wanneer herberekening gewenst is.
 
@@ -82,7 +82,7 @@ Met volledige *provenance* kunt u concrete antwoorden geven op vragen die anders
 
 Zonder deze herkomstdata verwordt feature-optimalisatie tot het intuïtief aanpassen van een prompt en hopen dat het beter aanvoelt. Dat is precies de reden waarom veel startups eindeloos heen en weer blijven schakelen tussen promptvarianten zonder enig feitelijk bewijs over welke versie nu echt superieur was.
 
-Eén belangrijk aandachtspunt rondom gegevensbewaring: opgeslagen invoer en uitvoer zijn volwaardige klantgegevens. Ze bevatten soms gevoeliger informatie dan het oorspronkelijke record waaraan ze zijn gekoppeld, en vallen onder exact dezelfde bewaar- en verwijderingsplichten als alle andere persoonsgegevens. Het vaststellen van bewaartermijnen voor AI-gegenereerde content en invoer — en garanderen dat verwijderverzoeken (AVG/GDPR) ook deze tabellen bereiken — hoort thuis in hetzelfde databeleid dat de rest van uw applicatie reguleert.
+Eén belangrijk aandachtspunt rondom gegevensbewaring: opgeslagen invoer en uitvoer zijn volwaardige klantgegevens. Ze bevatten soms gevoeliger informatie dan het oorspronkelijke record waaraan ze zijn gekoppeld, en vallen onder exact dezelfde bewaar- en verwijderingsplichten als alle andere persoonsgegevens. Het vaststellen van bewaartermijnen voor AI-gegenereerde content en invoer - en garanderen dat verwijderverzoeken (AVG/GDPR) ook deze tabellen bereiken - hoort thuis in hetzelfde databeleid dat de rest van uw applicatie reguleert.
 
 ## Echt voorbeeld
 
@@ -99,10 +99,10 @@ Het model had fragmenten van een intakegesprek van maanden geleden verkeerd geco
 
 De supervisor kon niet aantonen of een collega de notitie had ingetikt of dat het systeem dit had gefabriceerd. Voor een gecertificeerde zorginstelling was dit een onacceptabel compliancerisico. Een breder onderzoek wees uit dat er bij drie instellingen in totaal **2.400 gegenereerde overdrachtsteksten** in dossiers stonden die volkomen onherkenbaar waren vermengd met officiële verslagen van jeugdbeschermers.
 
-**Resultaat:** Binnen drie werkdagen splitste LaunchStudio de datastructuur: AI-samenvattingen kregen een eigen beveiligde tabel met verplichte metadata (model-id, prompt-versie, tijdstempel, brondocument-hashes en revisor-status), in de gebruikersinterface kregen AI-teksten een duidelijk herkenbaar badge met directe links naar de geciteerde brondossiers, en zodra een dossier wijzigt toont het systeem een prominente waarschuwing: *"Brondata gewijzigd — samenvatting verouderd"*. Via server-logs werden de 2.400 historische AI-notities waar mogelijk geïdentificeerd en voorzien van een administratief waarschuwingslabel.
+**Resultaat:** Binnen drie werkdagen splitste LaunchStudio de datastructuur: AI-samenvattingen kregen een eigen beveiligde tabel met verplichte metadata (model-id, prompt-versie, tijdstempel, brondocument-hashes en revisor-status), in de gebruikersinterface kregen AI-teksten een duidelijk herkenbaar badge met directe links naar de geciteerde brondossiers, en zodra een dossier wijzigt toont het systeem een prominente waarschuwing: *"Brondata gewijzigd - samenvatting verouderd"*. Via server-logs werden de 2.400 historische AI-notities waar mogelijk geïdentificeerd en voorzien van een administratief waarschuwingslabel.
 
 > *"Elf maanden lang schreef mijn applicatie in exact dezelfde velden als de jeugdhulpverleners, zonder dat iemand kon zien wie wat had geschreven. Dát was het werkelijke drama, niet alleen die ene hallucineerde zin."*
-> — **Iris van Kampen, Oprichter, Dossierlijn**
+> - **Iris van Kampen, Oprichter, Dossierlijn**
 
 **Kosten & Doorlooptijd:** AI audit trail datamodel, interface labels en provenance tracking opgeleverd in 3 werkdagen.
 

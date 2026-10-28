@@ -43,7 +43,7 @@ Few areas of applied AI are as constrained in Europe as work involving employees
 
 **Pay equity analysis.** Statistical assessment of pay differences across groups, controlling for legitimate factors. A growing area driven directly by regulation.
 
-**Recruitment operations.** Funnel analysis, source effectiveness, process bottlenecks and assessment validity — as distinct from automated candidate screening, which carries heavy obligations.
+**Recruitment operations.** Funnel analysis, source effectiveness, process bottlenecks and assessment validity - as distinct from automated candidate screening, which carries heavy obligations.
 
 **Retention and engagement.** Understanding why people leave, analysing survey data, and identifying conditions associated with turnover.
 
@@ -75,7 +75,7 @@ For statisticians and data scientists, this is an area where rigour is genuinely
 
 ## Why Individual Prediction Is Usually the Wrong Tool
 
-Predicting individual outcomes — who will leave, who will perform well, who is a flight risk — is the instinctive request and usually the wrong answer, for reasons worth being able to articulate.
+Predicting individual outcomes - who will leave, who will perform well, who is a flight risk - is the instinctive request and usually the wrong answer, for reasons worth being able to articulate.
 
 **It changes the outcome.** A manager told that someone is likely to leave behaves differently toward them, which affects whether they leave. The prediction becomes an intervention with no consent and no evidence base.
 
@@ -83,7 +83,7 @@ Predicting individual outcomes — who will leave, who will perform well, who is
 
 **The data is biased.** Performance ratings reflect rater behaviour as much as performance, and historical promotion data reflects historical practice, including its discrimination. Models trained on them reproduce it.
 
-**Accuracy is poor.** Human behaviour driven by private circumstances — a partner's job, a house move, a family illness — is not predictable from workplace data, and models in this area routinely perform barely better than simple heuristics.
+**Accuracy is poor.** Human behaviour driven by private circumstances - a partner's job, a house move, a family illness - is not predictable from workplace data, and models in this area routinely perform barely better than simple heuristics.
 
 **It is legally exposed.** High-risk classification, restrictions on automated decisions, and works council rights all apply most sharply here.
 
@@ -95,7 +95,7 @@ Recruitment is where AI in HR receives most attention and most scrutiny.
 
 Systems that screen, rank or score candidates fall squarely within the high-risk category under the EU AI Act, bringing obligations on both the vendor providing the system and the employer deploying it: documentation, human oversight by someone competent and empowered to override, logging, transparency to candidates, and accuracy and bias testing.
 
-Beyond compliance, the evidence base deserves scepticism. Models trained on past hiring decisions learn past preferences, including the ones an organisation is trying to eliminate. Proxies for protected characteristics are pervasive in CVs — names, universities, career gaps, language, addresses — and removing the obvious fields does not remove the signal.
+Beyond compliance, the evidence base deserves scepticism. Models trained on past hiring decisions learn past preferences, including the ones an organisation is trying to eliminate. Proxies for protected characteristics are pervasive in CVs - names, universities, career gaps, language, addresses - and removing the obvious fields does not remove the signal.
 
 What does work, and is far less contested: analysing the process rather than the candidates. Where do applicants drop out, how long does each stage take, which sources produce hires who stay, which interviewers rate inconsistently, and whether outcomes differ across groups at each stage. This improves hiring measurably and raises none of the same objections.
 
@@ -105,7 +105,7 @@ Assessment validity is another legitimate area: measuring whether a selection me
 
 In much of Europe, particularly Germany, the Netherlands, Austria, France and the Nordic countries, employee representative bodies have formal rights regarding systems that monitor or evaluate employees. Engineers unfamiliar with this often discover it late and experience it as an obstruction; those who engage early find it shapes better projects.
 
-Practical guidance. Involve representatives at the design stage, not at deployment. Bring a clear description of what data is used, what the system does, who sees the output and what decisions it influences — in plain language, not technical terms.
+Practical guidance. Involve representatives at the design stage, not at deployment. Bring a clear description of what data is used, what the system does, who sees the output and what decisions it influences - in plain language, not technical terms.
 
 Be prepared to answer the questions they will ask: can this be used to assess individual performance, could it lead to disciplinary action, how long is data retained, who has access, and what happens if it is wrong.
 
@@ -123,7 +123,7 @@ Job titles are inconsistent, invented locally and rarely mapped to a coherent st
 
 Personal data adds constraints that other domains do not have: data minimisation means you should not simply pull everything, retention limits mean historical data may legitimately have been deleted, and access is tightly controlled for good reason.
 
-The consequence is that a large share of people analytics work is building a reliable, well-defined data foundation — consistent job architecture, a historical record of organisational structure, clear definitions of headcount and turnover that everyone agrees on.
+The consequence is that a large share of people analytics work is building a reliable, well-defined data foundation - consistent job architecture, a historical record of organisational structure, clear definitions of headcount and turnover that everyone agrees on.
 
 This is unglamorous and it is where the value is. Organisations that can answer basic questions about their workforce consistently are ahead of most of their peers.
 
@@ -141,7 +141,7 @@ This is unglamorous and it is where the value is. Organisations that can answer 
 
 **Regulators and labour market institutions** analysing employment patterns at national level.
 
-Team sizes inside employers are usually small — two to ten people — which means broad roles and direct visibility to senior leadership. It also means limited technical peer support, which is worth checking before joining.
+Team sizes inside employers are usually small - two to ten people - which means broad roles and direct visibility to senior leadership. It also means limited technical peer support, which is worth checking before joining.
 
 Roles are found across Europe wherever large employers are headquartered, and remote or hybrid arrangements are common because the work is data rather than facility based.
 
@@ -173,7 +173,7 @@ The work involves inferring skills from job history, project participation, trai
 
 Done carelessly, this drifts into the same problems as other profiling: inferring characteristics people did not disclose, creating scores that affect opportunity without transparency, or building a system employees experience as surveillance. Done well, it is transparent and employee-controlled: people see and correct their own profile, recommendations are suggestions rather than gatekeeping, and the system opens opportunities rather than filtering people out of them.
 
-That distinction — whether the system expands or restricts what someone can access — is a useful test for almost any project in this field.
+That distinction - whether the system expands or restricts what someone can access - is a useful test for almost any project in this field.
 
 ## Real example
 
@@ -185,7 +185,7 @@ The team ran a design review with legal, data protection and the works council b
 
 The works council's position was that individual risk scores were not acceptable.
 
-What the team built instead was aggregate: analysis at team and department level identifying the conditions associated with higher turnover — span of control, time since last role change, pay position relative to market, manager tenure. Those findings led to structural changes and were published internally.
+What the team built instead was aggregate: analysis at team and department level identifying the conditions associated with higher turnover - span of control, time since last role change, pay position relative to market, manager tenure. Those findings led to structural changes and were published internally.
 
 The analytics lead considered this the better outcome on its merits: the aggregate analysis identified causes that could be acted on, while individual predictions would have identified people without explaining anything.
 

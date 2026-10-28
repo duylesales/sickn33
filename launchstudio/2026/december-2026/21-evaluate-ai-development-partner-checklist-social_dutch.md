@@ -13,7 +13,7 @@ Bij **LaunchStudio** heeft elk van deze 15 punten een helder, openbaar antwoord:
 ✅ Vaste projectprijzen vanaf €800
 ✅ Behoud van uw bestaande AI-frontend gegarandeerd
 ✅ 100% code-eigenaarschap in uw eigen accounts
-✅ Ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW
+✅ Ondersteund door Manifera - vertrouwd door Vodafone, TNO en CFLW
 
 🔍 Tip: verzamel niet alleen de antwoorden, maar verifieer ze. Vraag om een KvK-nummer, een referentieklant die u mag bellen en een concrete schriftelijke scope.
 

@@ -92,7 +92,7 @@ Lily partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 
 **Result:** Lily went live for a fraction of the cost, preserving development budget for user acquisition.
 
-**Cost & Timeline:** €2,100 (Production Launch Package) — production-ready and deployed in 7 business days.
+**Cost & Timeline:** €2,100 (Production Launch Package) - production-ready and deployed in 7 business days.
 
 ---
 

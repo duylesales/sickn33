@@ -5,9 +5,9 @@ Buyer Stage: Beslissing
 ---
 
 # Kiezen Tussen een Contractverlenging en Overstappen van Development Partner voor Jaar Twee
-Aan het einde van het eerste operationele jaar staat vrijwel elke AI SaaS-oprichter voor een cruciale maar vaak ongemakkelijke evaluatie: verlengen we de samenwerking met ons huidige developmentbureau of freelance team voor een volgend jaar, of is dit het exacte moment om over te stappen naar een gespecialiseerde engineeringpartner? Verlengen voelt vaak als de veilige standaardkeuze — het huidige team kent de codebase immers al. Maar naarmate een SaaS-product verschuift van vroege feature-ontwikkeling naar schaalbaarheid, enterprise-beveiliging en betrouwbaarheid, sluiten de vaardigheden van een algemeen bureau uit jaar één vaak niet meer aan op de eisen van jaar twee. Dit artikel biedt een objectief besliskader om te bepalen of contractverlenging verstandig is of dat inertie u duizenden euro's aan inefficiëntie kost.
+Aan het einde van het eerste operationele jaar staat vrijwel elke AI SaaS-oprichter voor een cruciale maar vaak ongemakkelijke evaluatie: verlengen we de samenwerking met ons huidige developmentbureau of freelance team voor een volgend jaar, of is dit het exacte moment om over te stappen naar een gespecialiseerde engineeringpartner? Verlengen voelt vaak als de veilige standaardkeuze - het huidige team kent de codebase immers al. Maar naarmate een SaaS-product verschuift van vroege feature-ontwikkeling naar schaalbaarheid, enterprise-beveiliging en betrouwbaarheid, sluiten de vaardigheden van een algemeen bureau uit jaar één vaak niet meer aan op de eisen van jaar twee. Dit artikel biedt een objectief besliskader om te bepalen of contractverlenging verstandig is of dat inertie u duizenden euro's aan inefficiëntie kost.
 
-## Waarom Verlengen Als de Standaard Voelt — en Soms Ook Is
+## Waarom Verlengen Als de Standaard Voelt - en Soms Ook Is
 
 Inertie is een krachtige factor in softwareontwikkeling. Een partner die een jaar lang code heeft geschreven, heeft context opgebouwd: ze begrijpen uw productvisie, kennen de eigenaardigheden van uw door AI gegenereerde frontend en u heeft een werkbare communicatieroutine opgebouwd. Als die partner consistent deadlines haalt, binnen budget levert en proactief meedenkt over architectuur en beveiliging, dan is contractverlenging volkomen logisch.
 
@@ -26,9 +26,9 @@ De behoeften van een AI SaaS veranderen fundamenteel tussen jaar één (validati
 2. **Weerstand tegen vaste projectprijzen (fixed-scope).** Het bureau weigert zich vast te leggen op duidelijke deliverables en deadlines, en dringt aan op open-ended regiecontracten (time & material) zonder resultaatgarantie.
 3. **Beveiliging en architectuur worden genegeerd.** Het team blijft puur features bouwen, maar heeft geen antwoord op vragen over Row Level Security (RLS), webhook-idempotentie of audit logging.
 4. **Geen proactieve kwaliteitsborging.** Fouten worden stelselmatig pas ontdekt nadat betalende klanten aan de bel trekken, omdat er geen geautomatiseerde regressietests zijn ingericht.
-5. **Vendor lock-in door slechte documentatie.** De code is ongedocumenteerd en het bureau waarschuwt dat "niemand anders dit kan onderhouden" — een klassieke rode vlag.
+5. **Vendor lock-in door slechte documentatie.** De code is ongedocumenteerd en het bureau waarschuwt dat "niemand anders dit kan onderhouden" - een klassieke rode vlag.
 
-## Wat Overstappen Werkelijk Kost — en Wat Niet
+## Wat Overstappen Werkelijk Kost - en Wat Niet
 
 De grootste mythe rondom het wisselen van softwarepartner is dat het maanden vertraging oplevert. Bij een professioneel transitietraject ziet de realiteit er heel anders uit:
 
@@ -58,7 +58,7 @@ Met dit rapport in handen kunt u de onderhandelingen met uw huidige partner sche
 
 ## De Automatische Verlengingsvalkuil
 
-Eén structureel contractueel detail maakt deze beslissing vaak onnodig lastig: veel contracten van softwarebureaus bevatten een automatische stilzwijgende verlengingsclausule. Deze treedt in werking tenzij de oprichter actief opzegt binnen een vastgestelde opzegtermijn, vaak 30 of 60 dagen vóór het einde van de looptijd. Die clausule bestaat uitsluitend in het voordeel van de leverancier, niet van de oprichter — het zet besluiteloosheid of drukte van de oprichter automatisch om in gegarandeerde omzet. Het resultaat is dat een oprichter die niet tevreden is maar nog geen alternatieven heeft onderzocht, plotseling vastzit aan nog eens twaalf maanden contractuele verplichtingen. De praktische oplossing is simpel maar cruciaal: zet de uiterste opzegtermijn direct in uw agenda zodra het contract wordt ondertekend, niet pas wanneer de automatische factuur binnenkomt. Zo wordt de beslissing om te verlengen of over te stappen altijd bewust en tijdig genomen, met voldoende ruimte voor een onafhankelijke codebase audit.
+Eén structureel contractueel detail maakt deze beslissing vaak onnodig lastig: veel contracten van softwarebureaus bevatten een automatische stilzwijgende verlengingsclausule. Deze treedt in werking tenzij de oprichter actief opzegt binnen een vastgestelde opzegtermijn, vaak 30 of 60 dagen vóór het einde van de looptijd. Die clausule bestaat uitsluitend in het voordeel van de leverancier, niet van de oprichter - het zet besluiteloosheid of drukte van de oprichter automatisch om in gegarandeerde omzet. Het resultaat is dat een oprichter die niet tevreden is maar nog geen alternatieven heeft onderzocht, plotseling vastzit aan nog eens twaalf maanden contractuele verplichtingen. De praktische oplossing is simpel maar cruciaal: zet de uiterste opzegtermijn direct in uw agenda zodra het contract wordt ondertekend, niet pas wanneer de automatische factuur binnenkomt. Zo wordt de beslissing om te verlengen of over te stappen altijd bewust en tijdig genomen, met voldoende ruimte voor een onafhankelijke codebase audit.
 
 ## Belangrijkste Inzichten
 
@@ -72,7 +72,7 @@ Eén structureel contractueel detail maakt deze beslissing vaak onnodig lastig: 
 
 Teken geen nieuw jaarcontract op basis van aannames. Laat uw codebase objectief beoordelen door senior engineers.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ### De Objectieve Evaluatiematrix voor Jaar Twee
 
@@ -102,7 +102,7 @@ Marieke besloot het contract niet te verlengen en stapte over naar LaunchStudio 
 
 **Resultaat:** Marieke bespaarde ruim € 1.800 per maand aan open-ended bureaufacturen en beschikt nu over een stabiele, enterprise-ready architectuur met vaste projectgaranties.
 
-**Investering & Doorlooptijd:** € 3.200 (Relaunch & Scale Pakket) — 10 werkdagen.
+**Investering & Doorlooptijd:** € 3.200 (Relaunch & Scale Pakket) - 10 werkdagen.
 
 ---
 

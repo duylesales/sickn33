@@ -12,7 +12,7 @@ Staff at one retailer could see another retailer's quotes and margins through a 
 ✅ Secret and dependency scanning in CI, plus alerts on database policy changes
 ✅ A quarterly light-review schedule and managed hosting for updates, backups and monitoring
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our audits leave guardrails behind — so findings stay fixed while you keep shipping. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our audits leave guardrails behind - so findings stay fixed while you keep shipping. ⚙️
 
 His result: €2,400 over eight business days, plus €49/month. In the next year CI blocked six changes that would have reintroduced cross-tenant access or secrets, quarterly reviews found only minor issues, and Vloerwijzer grew to 64 retailers. 🚀
 

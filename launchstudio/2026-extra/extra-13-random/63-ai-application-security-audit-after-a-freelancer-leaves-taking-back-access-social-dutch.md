@@ -9,10 +9,10 @@ Eén freelancer was nog eigenaar van de GitHub-repo en het Supabase-project. De 
 
 ✅ Repository en Supabase-project overgedragen naar Nadia's bedrijfsaccount
 ✅ Beide freelancers overal verwijderd en het Vercel-token ingetrokken
-✅ Sleutels van Mollie, Supabase service role, e-mail en kaarten in een geplande volgorde geroteerd — zonder downtime
-✅ Overal tweestapsverificatie en een schriftelijk toegangsregister — plus het domein overgedragen en IE-overdrachten binnen een week getekend
+✅ Sleutels van Mollie, Supabase service role, e-mail en kaarten in een geplande volgorde geroteerd - zonder downtime
+✅ Overal tweestapsverificatie en een schriftelijk toegangsregister - plus het domein overgedragen en IE-overdrachten binnen een week getekend
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering en zijn wortels in cybersecurity, zorgen we dat toegang van uw bedrijf is — en aan mensen wordt uitgeleend, nooit andersom. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering en zijn wortels in cybersecurity, zorgen we dat toegang van uw bedrijf is - en aan mensen wordt uitgeleend, nooit andersom. ⚙️
 
 💡 Het resultaat: € 1.300, vijf werkdagen. Nadia stuurde het toegangsregister naar het verhuisbedrijf en de samenwerking ging door. Verhuisvriend voert nu een offboardingchecklist van tien minuten uit telkens als een opdrachtnemer stopt. 🚀
 

@@ -1,4 +1,4 @@
-🔥 Sadie built a prototype using **Lovable** — sadie, a store owner, used **lovable** to build an auto-reordering tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Sadie built a prototype using **Lovable** - sadie, a store owner, used **lovable** to build an auto-reordering tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sadie's application achieved silky-smooth performance: System transparency enabled quick debugging, saving €5,000 in ordering mistakes. (€1,600 (Audit Logging Package) — production-ready and deployed in 4 business days.). 🚀
+Sadie's application achieved silky-smooth performance: System transparency enabled quick debugging, saving €5,000 in ordering mistakes. (€1,600 (Audit Logging Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/building-audit-trail-ai-decisions
 

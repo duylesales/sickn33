@@ -33,7 +33,7 @@ Content Format: Skills Guide
 }
 </script>
 
-For a brief period, prompt engineer was advertised as a job title with a remarkable salary attached. That moment passed quickly, and the conclusion many people drew — that the skill was a fad — is as wrong as the original hype. Prompt engineering skills are now an expected component of applied AI roles across Europe, in the same way that knowing how to write a good query is expected rather than advertised. This guide covers what employers actually mean, what matters in production, and how to demonstrate it.
+For a brief period, prompt engineer was advertised as a job title with a remarkable salary attached. That moment passed quickly, and the conclusion many people drew - that the skill was a fad - is as wrong as the original hype. Prompt engineering skills are now an expected component of applied AI roles across Europe, in the same way that knowing how to write a good query is expected rather than advertised. This guide covers what employers actually mean, what matters in production, and how to demonstrate it.
 
 ## Why Prompt Engineering Skills Stopped Being a Job Title
 
@@ -91,7 +91,7 @@ Cover the difficult categories deliberately: ambiguous cases, very short and ver
 
 Agree the expected output with a domain expert, and measure agreement between two experts on a subset. If people disagree thirty per cent of the time, no system can exceed that, and you have learned something important about the task.
 
-Automate scoring. Exact match for structured fields, rule checks for format and constraints, and a model-based judge for open text — with the judge itself validated against human ratings on a sample, because an unvalidated judge simply moves the problem.
+Automate scoring. Exact match for structured fields, rule checks for format and constraints, and a model-based judge for open text - with the judge itself validated against human ratings on a sample, because an unvalidated judge simply moves the problem.
 
 Version everything: prompts, model versions, context, results. Treat evaluation runs like test runs, in the pipeline, with results recorded.
 
@@ -147,7 +147,7 @@ You can demonstrate this competence without a job that involves it, and the bar 
 
 Choose a task with a verifiable correct answer: extracting structured fields from a document type you understand, classifying text into categories that matter, or answering questions over a corpus you know well. Domain familiarity is essential, because you must be able to judge the output.
 
-Then do the work most portfolios skip. Build an evaluation set of fifty real cases with agreed expected outputs. Measure a baseline. Try three approaches — a single prompt, a decomposed pipeline, and a cheaper model with verification — and report the accuracy, cost and latency of each. Show the failures and explain them. Test with adversarial input and describe what happened. Write two pages on what you would monitor in production.
+Then do the work most portfolios skip. Build an evaluation set of fifty real cases with agreed expected outputs. Measure a baseline. Try three approaches - a single prompt, a decomposed pipeline, and a cheaper model with verification - and report the accuracy, cost and latency of each. Show the failures and explain them. Test with adversarial input and describe what happened. Write two pages on what you would monitor in production.
 
 That project takes a few weekends and answers almost every question an interviewer will ask. More importantly, it demonstrates the mindset employers are screening for: that the output of a probabilistic system is a claim to be verified, not a result to be trusted.
 
@@ -185,7 +185,7 @@ A European services company built a document classification feature using a care
 
 When the provider released an improved model, the team upgraded, expecting better results. Accuracy on one category fell noticeably. There was no test set, so the problem surfaced through a customer complaint three weeks later.
 
-Investigation showed that the original prompt had contained a compensation for a specific weakness of the older model — an instruction that steered it away from a category it over-predicted. The new model did not have that weakness, and the instruction now pushed it in the wrong direction.
+Investigation showed that the original prompt had contained a compensation for a specific weakness of the older model - an instruction that steered it away from a category it over-predicted. The new model did not have that weakness, and the instruction now pushed it in the wrong direction.
 
 The team built an evaluation set of two hundred real documents with agreed labels, automated the scoring, and added it to their deployment pipeline. Subsequent model changes were evaluated in an hour rather than discovered by customers.
 

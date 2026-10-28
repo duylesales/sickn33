@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Minimum Security Checklist for AI Applications Going Live",
-  "description": "Not every AI application needs enterprise-grade security infrastructure on day one. This is the genuine minimum bar — the specific, non-negotiable items every AI-native founder should verify before accepting real users and real data.",
+  "description": "Not every AI application needs enterprise-grade security infrastructure on day one. This is the genuine minimum bar - the specific, non-negotiable items every AI-native founder should verify before accepting real users and real data.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -35,11 +35,11 @@ Niet elke AI-app heeft enterprise-grade beveiliging nodig op dag één. This is 
 
 ## Why "Minimum" Still Matters at Small Scale
 
-A common founder misconception is that security matters proportionally to company size — more users, more data, more security investment justified. This is true for security investment beyond the minimum, but the minimum bar itself doesn't scale down with company size, because the consequences of a basic security failure (data breach, account takeover, exposed credentials) are just as real for 10 customers as for 10,000, even if the total blast radius differs.
+A common founder misconception is that security matters proportionally to company size - more users, more data, more security investment justified. This is true for security investment beyond the minimum, but the minimum bar itself doesn't scale down with company size, because the consequences of a basic security failure (data breach, account takeover, exposed credentials) are just as real for 10 customers as for 10,000, even if the total blast radius differs.
 
 ## The Non-Negotiable Minimum: 10 Items
 
-**1. No secrets in client-side code.** API keys, database credentials, and any secret value must never be accessible in code that runs in the user's browser — this is the single most common and most damaging AI-generated prototype vulnerability.
+**1. No secrets in client-side code.** API keys, database credentials, and any secret value must never be accessible in code that runs in the user's browser - this is the single most common and most damaging AI-generated prototype vulnerability.
 
 **2. Passwords are never stored in plain text.** Use an established authentication provider (Supabase Auth, Auth0, NextAuth) that handles password hashing correctly by default, rather than implementing this yourself.
 
@@ -57,41 +57,41 @@ A common founder misconception is that security matters proportionally to compan
 
 **9. Error messages don't leak sensitive internal details** (database structure, stack traces, internal system information) to end users.
 
-**10. A basic incident response plan exists** — even informally, you should know who to contact and what steps to take if something goes wrong, rather than figuring it out for the first time during an actual incident.
+**10. A basic incident response plan exists** - even informally, you should know who to contact and what steps to take if something goes wrong, rather than figuring it out for the first time during an actual incident.
 
 ## What This List Deliberately Excludes
 
-This is a minimum, not a comprehensive enterprise security program. It excludes things like formal penetration testing, SOC 2 compliance, advanced threat detection, and dedicated security personnel — appropriate investments at later stages or for specific regulated industries, but not a reasonable bar for every early-stage AI-native founder to clear before launching.
+This is a minimum, not a comprehensive enterprise security program. It excludes things like formal penetration testing, SOC 2 compliance, advanced threat detection, and dedicated security personnel - appropriate investments at later stages or for specific regulated industries, but not a reasonable bar for every early-stage AI-native founder to clear before launching.
 
 ## Why AI-Generated Prototypes Routinely Fail This Minimum
 
-As covered extensively across earlier security-focused guidance — authentication hardening, database isolation, secrets management — AI coding tools optimize for functional demos, not security hardening, meaning most AI-generated prototypes fail several items on this minimum list by default, invisibly, until tested or exploited.
+As covered extensively across earlier security-focused guidance - authentication hardening, database isolation, secrets management - AI coding tools optimize for functional demos, not security hardening, meaning most AI-generated prototypes fail several items on this minimum list by default, invisibly, until tested or exploited.
 
 ## Verifying Your Own Application Against This List
 
-[LaunchStudio](https://launchstudio.eu/en/) verifies this exact minimum as standard practice on every production deployment, informed directly by Herre Roelevink's cybersecurity background with CFLW and TNO — treating this checklist not as an upsell opportunity but as the genuine floor every launched application should clear.
+[LaunchStudio](https://launchstudio.eu/en/) verifies this exact minimum as standard practice on every production deployment, informed directly by Herre Roelevink's cybersecurity background with CFLW and TNO - treating this checklist not as an upsell opportunity but as the genuine floor every launched application should clear.
 
 [Get your application checked against this minimum](https://launchstudio.eu/en/#contact) before real users and real data are on the line.
 
 ## How to Actually Verify Each Item, Not Just Assume You've Cleared It
 
-Reading through the 10 items above and mentally checking "yes, probably" against each is a common but unreliable way to actually clear this minimum — the entire point of a checklist is that each item gets a concrete, falsifiable verification, not a confident guess. Here is how to genuinely test each category, not just believe it.
+Reading through the 10 items above and mentally checking "yes, probably" against each is a common but unreliable way to actually clear this minimum - the entire point of a checklist is that each item gets a concrete, falsifiable verification, not a confident guess. Here is how to genuinely test each category, not just believe it.
 
 **Verifiable without deep technical skill:**
-- Open your browser's developer tools, go to the Network tab, and reload your app — if you see an AI provider API key or database credential appear in any request made directly from the browser, item 1 fails, visibly and unambiguously.
-- Try logging in with an obviously wrong password 20 times in rapid succession — if nothing slows you down or locks you out, item 8 (rate limiting) fails.
-- Deliberately trigger an error, such as submitting a malformed form or requesting a page that shouldn't exist, and read the resulting error message — if it shows a database table name, a stack trace, or an internal file path, item 9 fails.
+- Open your browser's developer tools, go to the Network tab, and reload your app - if you see an AI provider API key or database credential appear in any request made directly from the browser, item 1 fails, visibly and unambiguously.
+- Try logging in with an obviously wrong password 20 times in rapid succession - if nothing slows you down or locks you out, item 8 (rate limiting) fails.
+- Deliberately trigger an error, such as submitting a malformed form or requesting a page that shouldn't exist, and read the resulting error message - if it shows a database table name, a stack trace, or an internal file path, item 9 fails.
 
 **Requires creating a second test account:**
-- Sign up for two separate accounts and, using account A's session, try to directly access a URL or resource that should belong only to account B, such as a booking ID or document link, by guessing or incrementing an identifier — if it loads, item 3 fails, and this is the single most consequential failure on the list.
+- Sign up for two separate accounts and, using account A's session, try to directly access a URL or resource that should belong only to account B, such as a booking ID or document link, by guessing or incrementing an identifier - if it loads, item 3 fails, and this is the single most consequential failure on the list.
 
 **Requires actual technical verification, not observation:**
-- Ask directly, of yourself or whoever built the backend: can this database be restored from a backup right now, today, tested and confirmed — not "backups are probably running somewhere." An untested backup is functionally equivalent to no backup, since the first time you discover it doesn't work is during an actual data-loss incident.
+- Ask directly, of yourself or whoever built the backend: can this database be restored from a backup right now, today, tested and confirmed - not "backups are probably running somewhere." An untested backup is functionally equivalent to no backup, since the first time you discover it doesn't work is during an actual data-loss incident.
 - Confirm session tokens have an actual expiration configured, rather than defaulting to a library's out-of-the-box setting that may not expire at all.
 
-**Why founders skip this verification step even when they mean to check it:** most of these items look fine during normal use, because normal use is exactly the path an AI-generated prototype was optimized to handle well. The failures are only visible when someone deliberately tries the abnormal path — the wrong password repeated, the guessed URL, the malformed input — which is precisely why a founder's own casual testing during development rarely surfaces them, and why an external, deliberately adversarial review catches gaps that months of the founder's own normal usage never would.
+**Why founders skip this verification step even when they mean to check it:** most of these items look fine during normal use, because normal use is exactly the path an AI-generated prototype was optimized to handle well. The failures are only visible when someone deliberately tries the abnormal path - the wrong password repeated, the guessed URL, the malformed input - which is precisely why a founder's own casual testing during development rarely surfaces them, and why an external, deliberately adversarial review catches gaps that months of the founder's own normal usage never would.
 
-**A reasonable cadence:** verify this list once before initial launch, and again after any significant new feature ships, since new code paths can reintroduce a gap that was previously closed — security verification is a checkpoint tied to change, not a one-time certificate that stays valid indefinitely.
+**A reasonable cadence:** verify this list once before initial launch, and again after any significant new feature ships, since new code paths can reintroduce a gap that was previously closed - security verification is a checkpoint tied to change, not a one-time certificate that stays valid indefinitely.
 
 ## Real example
 
@@ -99,16 +99,16 @@ Reading through the 10 items above and mentally checking "yes, probably" against
 
 Casper, a beekeeping equipment supplier in Hardenberg, built ImkerAssist, an AI tool helping hobbyist beekeepers diagnose hive health issues from described symptoms and photos, using Bolt. Before launching to a regional beekeeping association's 200+ members, Casper ran through a version of this exact 10-item checklist, wanting to be confident before exposing the tool to a large, established community.
 
-The review found ImkerAssist failed four items: API keys were exposed in client-side code, there was no rate limiting on the basic login system, database backups weren't configured, and error messages occasionally displayed raw database errors to users when something went wrong — none of which had caused visible problems yet, precisely because Casper had only tested with a small handful of beekeeper friends.
+The review found ImkerAssist failed four items: API keys were exposed in client-side code, there was no rate limiting on the basic login system, database backups weren't configured, and error messages occasionally displayed raw database errors to users when something went wrong - none of which had caused visible problems yet, precisely because Casper had only tested with a small handful of beekeeper friends.
 
-Casper contacted LaunchStudio specifically to close these four gaps before the larger regional rollout. The Manifera team moved API calls to secure server routes, implemented rate limiting on authentication, configured automated tested backups, and cleaned up error handling to avoid leaking internal details — completing all four fixes without touching ImkerAssist's existing diagnostic interface.
+Casper contacted LaunchStudio specifically to close these four gaps before the larger regional rollout. The Manifera team moved API calls to secure server routes, implemented rate limiting on authentication, configured automated tested backups, and cleaned up error handling to avoid leaking internal details - completing all four fixes without touching ImkerAssist's existing diagnostic interface.
 
 **Result:** ImkerAssist launched to the full 200+ member beekeeping association with all ten minimum security items verified, avoiding what could have been a meaningfully more damaging incident at that larger scale than any issue would have caused among Casper's small initial test group.
 
-> *"With just my beekeeper friends testing it, nothing bad had happened yet — but 200 real members is a different level of exposure. LaunchStudio found four real gaps I didn't know existed and closed all of them before the bigger launch, not after."*
-> — **Casper Bruins, Founder, ImkerAssist (Hardenberg)**
+> *"With just my beekeeper friends testing it, nothing bad had happened yet - but 200 real members is a different level of exposure. LaunchStudio found four real gaps I didn't know existed and closed all of them before the bigger launch, not after."*
+> - **Casper Bruins, Founder, ImkerAssist (Hardenberg)**
 
-**Cost & Timeline:** €1,500 (minimum security remediation) — completed in 6 business days.
+**Cost & Timeline:** €1,500 (minimum security remediation) - completed in 6 business days.
 
 ---
 
@@ -116,7 +116,7 @@ Casper contacted LaunchStudio specifically to close these four gaps before the l
 
 ### Is this 10-item list really sufficient, or is it oversimplified for marketing purposes?
 
-It's genuinely the practical minimum, not a complete security program — the article is explicit that it excludes more advanced measures appropriate at later stages. The value of a minimum list is that it's achievable and non-negotiable, rather than an intimidating comprehensive standard that discourages founders from addressing security at all.
+It's genuinely the practical minimum, not a complete security program - the article is explicit that it excludes more advanced measures appropriate at later stages. The value of a minimum list is that it's achievable and non-negotiable, rather than an intimidating comprehensive standard that discourages founders from addressing security at all.
 
 ### Can I verify these 10 items myself without technical expertise?
 
@@ -128,11 +128,11 @@ Growth into regulated industries (healthcare, finance), handling particularly se
 
 ### Does clearing this minimum checklist guarantee my application won't be hacked?
 
-No security measure provides an absolute guarantee — this minimum significantly reduces the most common, most easily exploited vulnerabilities specifically prevalent in AI-generated prototypes, meaningfully lowering risk without claiming to eliminate it entirely.
+No security measure provides an absolute guarantee - this minimum significantly reduces the most common, most easily exploited vulnerabilities specifically prevalent in AI-generated prototypes, meaningfully lowering risk without claiming to eliminate it entirely.
 
 ### How is Herre Roelevink's cybersecurity background specifically reflected in this checklist?
 
-His background co-founding CyberDevOps (now CFLW Cyber Strategies) and building the Dark Web Monitor tool with TNO shaped a security-first orientation carried directly into LaunchStudio's standard practice — treating baseline security verification as a default deliverable, not a premium add-on service.
+His background co-founding CyberDevOps (now CFLW Cyber Strategies) and building the Dark Web Monitor tool with TNO shaped a security-first orientation carried directly into LaunchStudio's standard practice - treating baseline security verification as a default deliverable, not a premium add-on service.
 
 <script type="application/ld+json">
 {

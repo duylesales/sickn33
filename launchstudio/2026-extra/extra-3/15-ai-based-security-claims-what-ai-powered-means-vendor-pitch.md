@@ -31,11 +31,11 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Every founder eventually sits on the buying side of a security tool pitch — evaluating a vendor offering to monitor your infrastructure, scan your code, or protect your application, frequently under the banner of "AI-based security." It's worth approaching that specific phrase with the same scrutiny this content series generally encourages founders to apply to their own product's AI claims, because a vendor's pitch deck is subject to exactly the same gap between marketing language and underlying mechanism covered elsewhere in this guidance.
+Every founder eventually sits on the buying side of a security tool pitch - evaluating a vendor offering to monitor your infrastructure, scan your code, or protect your application, frequently under the banner of "AI-based security." It's worth approaching that specific phrase with the same scrutiny this content series generally encourages founders to apply to their own product's AI claims, because a vendor's pitch deck is subject to exactly the same gap between marketing language and underlying mechanism covered elsewhere in this guidance.
 
 ## Why "AI-Based" Isn't a Single, Checkable Claim
 
-Security tools genuinely do use AI and machine learning for real, valuable purposes — anomaly detection, pattern recognition across large volumes of log data, flagging unusual behavior a rule-based system would miss. The phrase "AI-based security" covers all of that legitimate capability and also covers considerably thinner cases, where a basic rule engine gets AI-branded marketing language applied to it because the term tests well with buyers, without the underlying detection mechanism actually being meaningfully different from a traditional, non-AI approach.
+Security tools genuinely do use AI and machine learning for real, valuable purposes - anomaly detection, pattern recognition across large volumes of log data, flagging unusual behavior a rule-based system would miss. The phrase "AI-based security" covers all of that legitimate capability and also covers considerably thinner cases, where a basic rule engine gets AI-branded marketing language applied to it because the term tests well with buyers, without the underlying detection mechanism actually being meaningfully different from a traditional, non-AI approach.
 
 ## What to Actually Ask a Vendor Making This Claim
 
@@ -43,15 +43,15 @@ The direct, specific questions worth asking mirror the same diagnostic approach 
 
 ## Why "AI-Based" Doesn't Automatically Mean "More Effective"
 
-A well-tuned, traditional rule-based security check can genuinely outperform a poorly-implemented AI-based one for specific, well-understood threat patterns — AI-based detection tends to add the most value for genuinely novel or subtle patterns a fixed rule set wouldn't anticipate, not as a universal upgrade over every other approach regardless of the specific problem being solved. A vendor's AI framing is a description of mechanism, not a guarantee of superior outcome.
+A well-tuned, traditional rule-based security check can genuinely outperform a poorly-implemented AI-based one for specific, well-understood threat patterns - AI-based detection tends to add the most value for genuinely novel or subtle patterns a fixed rule set wouldn't anticipate, not as a universal upgrade over every other approach regardless of the specific problem being solved. A vendor's AI framing is a description of mechanism, not a guarantee of superior outcome.
 
 ## Why This Matters Specifically for an AI-Native Founder Evaluating Security Vendors
 
-Founders building their own product with AI tools are already fluent, through direct experience, in the gap between what an AI capability sounds like it does and what it actually does under the hood — a fluency worth deliberately applying when sitting on the buying side of a security vendor's pitch, rather than assuming the same critical thinking applies only to your own product's marketing copy and not to the tools you're evaluating to protect it.
+Founders building their own product with AI tools are already fluent, through direct experience, in the gap between what an AI capability sounds like it does and what it actually does under the hood - a fluency worth deliberately applying when sitting on the buying side of a security vendor's pitch, rather than assuming the same critical thinking applies only to your own product's marketing copy and not to the tools you're evaluating to protect it.
 
 [LaunchStudio](https://launchstudio.eu/en/) helps founders evaluate security vendor claims with exactly this level of specificity during broader production-readiness engagements, translating vendor marketing language into concrete, checkable questions, backed by Manifera's own cybersecurity-informed engineering practices and CEO Herre Roelevink's background running CyberDevOps, now CFLW Cyber Strategies, working alongside TNO.
 
-[Get help evaluating a security vendor's AI claims before you sign the contract](https://launchstudio.eu/en/#contact) — the same scrutiny you'd want applied to your own product's claims applies here too.
+[Get help evaluating a security vendor's AI claims before you sign the contract](https://launchstudio.eu/en/#contact) - the same scrutiny you'd want applied to your own product's claims applies here too.
 
 ## Red Flags Worth Noticing Before You Even Ask a Question
 
@@ -61,15 +61,15 @@ The direct questions covered above are the most reliable way to evaluate a speci
 
 **No willingness to name a false-positive rate, even roughly.** Every detection system, AI-based or not, makes tradeoffs between catching real threats and generating noise. A vendor unwilling to discuss this tradeoff at all, even in approximate terms, is either withholding an unflattering number or genuinely doesn't have one to give, and neither case reflects well on the underlying claim.
 
-**Pricing pegged to the AI branding rather than to measurable capability.** A meaningful price premium specifically attributed to "the AI" rather than to a concrete capability difference — faster detection, lower false-positive rate, coverage of a threat category a traditional tool misses — is worth pressing on directly, since the premium should track a specific, demonstrable advantage rather than the presence of the word itself.
+**Pricing pegged to the AI branding rather than to measurable capability.** A meaningful price premium specifically attributed to "the AI" rather than to a concrete capability difference - faster detection, lower false-positive rate, coverage of a threat category a traditional tool misses - is worth pressing on directly, since the premium should track a specific, demonstrable advantage rather than the presence of the word itself.
 
-**Reluctance to provide a technical reference or a concrete case study.** A vendor confident in a genuine capability is typically willing to point to a specific example of it working, even in general terms that protect a client's confidentiality. Vague deflection specifically around this request — as opposed to a reasonable confidentiality-driven limitation — is informative on its own.
+**Reluctance to provide a technical reference or a concrete case study.** A vendor confident in a genuine capability is typically willing to point to a specific example of it working, even in general terms that protect a client's confidentiality. Vague deflection specifically around this request - as opposed to a reasonable confidentiality-driven limitation - is informative on its own.
 
 **Urgency language that discourages a careful evaluation.** Legitimate security vendors understand that a founder evaluating a tool meant to protect their infrastructure should take the time to actually evaluate it properly. Pressure to sign quickly, framed around a limited-time offer or an urgent threat landscape, is a sales tactic worth recognizing as separate from the actual merits of the product being pitched.
 
 **No mention of what happens when the AI component is wrong.** Every detection system produces false positives and, less often, false negatives. A vendor pitch that only describes success cases, with no acknowledgment of failure modes or how the system handles them, is describing an idealized version of the product rather than the real one a founder would actually be operating.
 
-None of these signals are individually disqualifying — a legitimate vendor might reasonably decline a specific reference for confidentiality reasons, for instance. Together, though, a pitch showing several of these patterns at once is worth the same direct, specific questioning covered above before any contract gets signed, regardless of how polished or confident the overall presentation feels.
+None of these signals are individually disqualifying - a legitimate vendor might reasonably decline a specific reference for confidentiality reasons, for instance. Together, though, a pitch showing several of these patterns at once is worth the same direct, specific questioning covered above before any contract gets signed, regardless of how polished or confident the overall presentation feels.
 
 ## Real example
 
@@ -82,9 +82,9 @@ Job brought the vendor's pitch to LaunchStudio for a second opinion before signi
 **Result:** Job chose a different, more transparent security monitoring vendor at a lower cost, having specifically avoided paying an "AI premium" for a capability that, on closer examination, wasn't meaningfully different from a traditional approach he could have sourced for considerably less.
 
 > *"The pitch sounded genuinely impressive, full of AI language that matched exactly what I'd expect a good security tool to say about itself. It took someone asking the vendor pointed, specific questions to reveal there wasn't much AI actually happening underneath the pitch."*
-> — **Job Willemsen, Founder, VoorraadWacht (Delft)**
+> - **Job Willemsen, Founder, VoorraadWacht (Delft)**
 
-**Cost & Timeline:** €400 (vendor evaluation consultation) — completed in 1 business day.
+**Cost & Timeline:** €400 (vendor evaluation consultation) - completed in 1 business day.
 
 ---
 
@@ -92,23 +92,23 @@ Job brought the vendor's pitch to LaunchStudio for a second opinion before signi
 
 ### Does this mean AI-based security tools are generally not worth the investment?
 
-No — genuinely capable AI-based security tools exist and provide real value for specific problem types, particularly anomaly detection across large data volumes; the guidance here is about verifying the specific claim, not dismissing the category broadly.
+No - genuinely capable AI-based security tools exist and provide real value for specific problem types, particularly anomaly detection across large data volumes; the guidance here is about verifying the specific claim, not dismissing the category broadly.
 
 ### How can a non-technical founder ask these evaluation questions confidently without technical background?
 
-The specific questions themselves — what does it detect that a traditional approach wouldn't, how was it trained, what's the false-positive rate — don't require technical expertise to ask, only the willingness to press past a vague or evasive answer rather than accepting confident-sounding language at face value.
+The specific questions themselves - what does it detect that a traditional approach wouldn't, how was it trained, what's the false-positive rate - don't require technical expertise to ask, only the willingness to press past a vague or evasive answer rather than accepting confident-sounding language at face value.
 
 ### Is it reasonable to ask a security vendor for a technical reference or case study demonstrating their AI claim specifically?
 
-Yes, entirely reasonable, and a vendor with a genuine, well-implemented capability should be able to provide this without hesitation — reluctance or vagueness in response to this specific request is itself informative.
+Yes, entirely reasonable, and a vendor with a genuine, well-implemented capability should be able to provide this without hesitation - reluctance or vagueness in response to this specific request is itself informative.
 
 ### Does paying more for a genuinely AI-based security tool make sense if a traditional approach solves the same problem?
 
-Not necessarily — cost should track actual capability and fit for your specific risk profile, not the presence of AI branding alone, meaning a well-implemented traditional tool at a lower price can be the better choice depending on what you're actually trying to protect against.
+Not necessarily - cost should track actual capability and fit for your specific risk profile, not the presence of AI branding alone, meaning a well-implemented traditional tool at a lower price can be the better choice depending on what you're actually trying to protect against.
 
 ### How is evaluating a vendor's AI claims different from evaluating your own product's AI claims, covered elsewhere in this series?
 
-The underlying discipline — checking whether marketing language matches actual mechanism — is identical; the direction is simply reversed, from a founder's own outward-facing claims to a founder's inward-facing evaluation of what they're buying.
+The underlying discipline - checking whether marketing language matches actual mechanism - is identical; the direction is simply reversed, from a founder's own outward-facing claims to a founder's inward-facing evaluation of what they're buying.
 
 <script type="application/ld+json">
 {
@@ -144,7 +144,7 @@ The underlying discipline — checking whether marketing language matches actual
       "name": "Does paying more for AI-branded security make sense if traditional tools solve the same problem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — cost should track actual capability and fit, not the presence of AI branding alone."
+        "text": "Not necessarily - cost should track actual capability and fit, not the presence of AI branding alone."
       }
     },
     {

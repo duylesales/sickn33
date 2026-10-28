@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Five Variables, Compared With Real Figures:** Fully-loaded cost, time to full productivity, turnover exposure, scaling flexibility, and governance quality.
-✅ **Amsterdam Strategic Governance:** Architecture sign-off and risk management built into the engagement — oversight you'd otherwise have to build internally anyway.
+✅ **Amsterdam Strategic Governance:** Architecture sign-off and risk management built into the engagement - oversight you'd otherwise have to build internally anyway.
 ✅ **Vietnam Execution Velocity:** Full sprint productivity in 3-4 weeks, at often a factor of two to three lower fully-loaded cost.
 
 Local hiring doesn't win on oversight by default. Build the comparison honestly. 🛡️

@@ -1,4 +1,4 @@
-🚨 3 dagen voor livegang ontdekte hij 8 grote hiaten — waaronder NUL database-backups. "Ik dacht dat ik paranoia was. Dat was ik niet." 😱
+🚨 3 dagen voor livegang ontdekte hij 8 grote hiaten - waaronder NUL database-backups. "Ik dacht dat ik paranoia was. Dat was ik niet." 😱
 
 De avond voor livegang is NIET het moment om te ontdekken dat uw database nergens wordt opgeslagen. Dit is de 25-punten checklist die u vóór de lancering moet nalopen: 📋
 
@@ -12,7 +12,7 @@ De avond voor livegang is NIET het moment om te ontdekken dat uw database nergen
 
 De meeste visueel prachtige prototypes voldoen standaard aan slechts een HANDVOL van deze 25 punten. 📉
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, verifiëren we alle 25 punten standaard — vóórdat u de datum aankondigt, niet na een incident. 🛡️🚀
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, verifiëren we alle 25 punten standaard - vóórdat u de datum aankondigt, niet na een incident. 🛡️🚀
 
 👉 Bekijk de complete 25-punten pre-launch checklist: https://launchstudio.eu/nl/blog/pre-launch-checklist-25-things-verify-ai-saas
 

@@ -1,8 +1,8 @@
-🚨 Keurmerkbeheer van Tijmen Verhagen bedient 140 bedrijven in Nederland, België en Duitsland voor € 65 per maand. Zijn app ontving betalingen — en gaf geen facturen uit. Aan het eind van het eerste kwartaal had hij er 61 met de hand gemaakt, met drie dubbele nummers. 😳
+🚨 Keurmerkbeheer van Tijmen Verhagen bedient 140 bedrijven in Nederland, België en Duitsland voor € 65 per maand. Zijn app ontving betalingen - en gaf geen facturen uit. Aan het eind van het eerste kwartaal had hij er 61 met de hand gemaakt, met drie dubbele nummers. 😳
 
 Ook had hij 21% btw gerekend aan negentien Duitse en Belgische bedrijven die met btw verlegd gefactureerd hadden moeten worden. De opruimschatting van zijn accountant was hoger dan de kosten om de software te repareren. Dit heeft de Nederlandse boekhouding nodig:
 
-❌ Geen factuurreeks — nummers met de hand, inclusief dubbele
+❌ Geen factuurreeks - nummers met de hand, inclusief dubbele
 ❌ Facturen opgebouwd uit live gegevens in plaats van opgeslagen zoals ze zijn uitgegeven
 ❌ Eén btw-tarief voor elke klant, ongeacht land of zakelijke status
 ❌ Geen validatie van btw-nummers en geen locatiebewijs bij de checkout

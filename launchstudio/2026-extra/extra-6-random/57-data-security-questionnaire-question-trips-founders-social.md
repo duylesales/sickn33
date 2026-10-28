@@ -1,8 +1,8 @@
-📝 Charlotte Wolters built DataKoppel, an enterprise data-sync SaaS, using Lovable. She'd already answered dozens of security questions confidently — encryption, access controls, backup frequency — until one question stopped her cold: describe your incident-response and breach-notification process. 😳
+📝 Charlotte Wolters built DataKoppel, an enterprise data-sync SaaS, using Lovable. She'd already answered dozens of security questions confidently - encryption, access controls, backup frequency - until one question stopped her cold: describe your incident-response and breach-notification process. 😳
 
 There was no document. No plan. Nothing to send. 🧠
 
-❌ The question wasn't about what protections exist — it was about what happens when they fail anyway
+❌ The question wasn't about what protections exist - it was about what happens when they fail anyway
 ❌ No line of code represents "notify affected customers within 72 hours of a breach"
 ❌ Nothing about shipping features ever forces this policy to get written
 ❌ The deal stalled for three weeks while Charlotte scrambled to produce something from scratch under pressure

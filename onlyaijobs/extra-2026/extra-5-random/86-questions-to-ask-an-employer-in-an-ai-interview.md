@@ -87,7 +87,7 @@ Since most of your time will be spent here, these deserve more attention than th
 
 ## Questions About the Team and How Work Happens
 
-**"How is the team structured, and where does it sit in the organisation?"** Central function, embedded in a business unit, or part of engineering — each produces a different job.
+**"How is the team structured, and where does it sit in the organisation?"** Central function, embedded in a business unit, or part of engineering - each produces a different job.
 
 **"Who decides what the team works on?"** If priorities arrive fully formed from elsewhere, you are executing requests rather than solving problems. Some people prefer that; know which you are getting.
 
@@ -99,7 +99,7 @@ Since most of your time will be spent here, these deserve more attention than th
 
 **"How long has my prospective manager been here, and what is their background?"** A manager who cannot evaluate technical work cannot defend it.
 
-**"What happened to the last person in this role?"** Promoted, left, or a new position — each is informative, and hesitation is informative too.
+**"What happened to the last person in this role?"** Promoted, left, or a new position - each is informative, and hesitation is informative too.
 
 **"How are decisions recorded?"** Teams that write things down are teams where knowledge survives.
 
@@ -181,7 +181,7 @@ The content matters; the manner matters as much.
 
 **Notice what they ask you.** A process that never asks about production, evaluation or stakeholders is a process from a team that does not do those things.
 
-And if an interviewer responds badly to reasonable questions — defensively, dismissively, or with irritation — you have learned how disagreement is handled there, which is worth the awkwardness of having asked.
+And if an interviewer responds badly to reasonable questions - defensively, dismissively, or with irritation - you have learned how disagreement is handled there, which is worth the awkwardness of having asked.
 
 ## Before You Accept
 

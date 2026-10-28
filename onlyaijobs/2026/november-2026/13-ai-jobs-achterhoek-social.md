@@ -2,7 +2,7 @@
 
 🐄 Nedap, listed in Amsterdam and based in Groenlo, builds livestock monitoring that reads sensor data from animals, retail technology using RFID and software for healthcare organisations. Around it sit machine builders and manufacturers investing in automation because they cannot find enough technicians.
 
-📌 Sensor work here is genuinely hard: noisy signals, individual animals, limited power on devices — and alerts farmers must trust, or they will ignore them.
+📌 Sensor work here is genuinely hard: noisy signals, individual animals, limited power on devices - and alerts farmers must trust, or they will ignore them.
 
 ✅ Many companies are hiring their first or second data professional, which means responsibility early. German language skills help across the border.
 

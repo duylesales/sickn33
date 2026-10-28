@@ -77,9 +77,9 @@ LaunchStudio herbouwde de afstemmingsengine met fuzzy string-matching gewogen op
 **Resultaat:** VvEKas's volgende facturatiecyclus stemde af met nul verkeerd toegewezen betalingen en ruimde de niet-gematchte wachtrij binnen 48 uur op in plaats van wekenlang op te hopen.
 
 > *"Ik dacht dat afstemming in feite tekstvergelijking was. Er was één boze bewoner voor nodig om te leren dat het daadwerkelijk een vertrouwenssysteem is, en vertrouwenssystemen hebben aanzienlijk meer zorg nodig dan tekstvergelijking."*
-> — **Bram Kuiper, Oprichter, VvEKas (Middelburg)**
+> - **Bram Kuiper, Oprichter, VvEKas (Middelburg)**
 
-**Kosten en tijdlijn:** € 1.100 (fuzzy-match afstemmingsengine, betrouwbaarheidsscores, audit-log) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (fuzzy-match afstemmingsengine, betrouwbaarheidsscores, audit-log) - voltooid in 7 werkdagen.
 
 ---
 

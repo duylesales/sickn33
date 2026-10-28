@@ -44,7 +44,7 @@ Cork, Ireland's second-largest city, is often overshadowed by Dublin, but it hos
 
 ## Big Tech and Software
 
-Apple has had a presence in Cork since 1980, and its campus in the city is its European headquarters and one of its largest sites outside the United States, covering operations, engineering, support and other functions. Dell Technologies and several other technology companies run major operations in Cork, including engineering, IT and business services. Security, software and hardware companies add further roles. AI and data work in these organisations includes analytics, operations optimisation, machine learning for products and services, and data engineering, though, as in Dublin, not every large office focuses on core model development — it is worth asking what each team actually builds.
+Apple has had a presence in Cork since 1980, and its campus in the city is its European headquarters and one of its largest sites outside the United States, covering operations, engineering, support and other functions. Dell Technologies and several other technology companies run major operations in Cork, including engineering, IT and business services. Security, software and hardware companies add further roles. AI and data work in these organisations includes analytics, operations optimisation, machine learning for products and services, and data engineering, though, as in Dublin, not every large office focuses on core model development - it is worth asking what each team actually builds.
 
 ## Pharmaceuticals and Medical Devices
 
@@ -74,17 +74,17 @@ EU and EEA citizens can work freely in Ireland and need a PPS number. Non-EU pro
 
 ## Living in Cork
 
-Cork is a lively, compact city on the River Lee, known for its food culture, music, pubs and friendly atmosphere. The south coast — Kinsale, Cobh, West Cork — offers beaches, harbours and countryside. Cork Airport connects to European cities, and trains reach Dublin in about 2.5 hours.
+Cork is a lively, compact city on the River Lee, known for its food culture, music, pubs and friendly atmosphere. The south coast - Kinsale, Cobh, West Cork - offers beaches, harbours and countryside. Cork Airport connects to European cities, and trains reach Dublin in about 2.5 hours.
 
 ## How OnlyAIJobs Fits a Cork Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Cork you will find few or no local vacancies there today. Use Irish job portals, company career pages and university and Tyndall vacancy lists as primary sources. OnlyAIJobs is useful for comparing Cork with the Netherlands — where employers such as Accenture, Cegeka, Mollie and AMCS list AI roles — and as a method: with pharma plants around the harbour, tech campuses on the city's edge and housing spread across the county, the exact address determines your commute. Cork employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Cork you will find few or no local vacancies there today. Use Irish job portals, company career pages and university and Tyndall vacancy lists as primary sources. OnlyAIJobs is useful for comparing Cork with the Netherlands - where employers such as Accenture, Cegeka, Mollie and AMCS list AI roles - and as a method: with pharma plants around the harbour, tech campuses on the city's edge and housing spread across the county, the exact address determines your commute. Cork employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Data Science in Pharmaceutical Manufacturing
 
-Pharmaceutical plants produce medicines under good manufacturing practice, where every process step is controlled and documented. Data science adds value by monitoring processes in real time, predicting quality attributes from process parameters, detecting deviations early, optimising yields and supporting investigations into batch issues. Process analytical technology — using sensors and models to measure quality during production rather than only at the end — is a growing field. All models that influence decisions must be validated, documented and maintained under change control, and data integrity requirements are strict. Engineers who enjoy careful, regulated work and collaboration with chemists, engineers and quality specialists find pharma manufacturing rewarding. The experience is valued across the global pharmaceutical industry, and Cork is one of the best places in Europe to gain it.
+Pharmaceutical plants produce medicines under good manufacturing practice, where every process step is controlled and documented. Data science adds value by monitoring processes in real time, predicting quality attributes from process parameters, detecting deviations early, optimising yields and supporting investigations into batch issues. Process analytical technology - using sensors and models to measure quality during production rather than only at the end - is a growing field. All models that influence decisions must be validated, documented and maintained under change control, and data integrity requirements are strict. Engineers who enjoy careful, regulated work and collaboration with chemists, engineers and quality specialists find pharma manufacturing rewarding. The experience is valued across the global pharmaceutical industry, and Cork is one of the best places in Europe to gain it.
 
 ## Evaluating Roles in Large Tech Offices
 
@@ -132,7 +132,7 @@ UCC and Tyndall offer PhD, postdoc and research engineer positions funded by Res
 
 ## Supply Chain and Operations Analytics
 
-Large manufacturers and technology companies in Cork run complex supply chains, from sourcing materials and components to distributing finished products across Europe and beyond. Data scientists support demand forecasting, inventory optimisation, logistics planning and risk management — for example anticipating disruptions to supply of critical materials. Operations teams in big tech offices analyse service performance, workforce planning and customer support processes, increasingly using language models to classify and route requests. These roles are accessible to data scientists from many backgrounds and offer measurable impact on costs, reliability and customer satisfaction. They also provide exposure to global operations and senior stakeholders, which can accelerate career growth. For engineers who prefer applied analytics and optimisation to research, operations and supply chain analytics is one of the largest areas of AI work in Cork.
+Large manufacturers and technology companies in Cork run complex supply chains, from sourcing materials and components to distributing finished products across Europe and beyond. Data scientists support demand forecasting, inventory optimisation, logistics planning and risk management - for example anticipating disruptions to supply of critical materials. Operations teams in big tech offices analyse service performance, workforce planning and customer support processes, increasingly using language models to classify and route requests. These roles are accessible to data scientists from many backgrounds and offer measurable impact on costs, reliability and customer satisfaction. They also provide exposure to global operations and senior stakeholders, which can accelerate career growth. For engineers who prefer applied analytics and optimisation to research, operations and supply chain analytics is one of the largest areas of AI work in Cork.
 
 ## Startups and the Local Ecosystem
 
@@ -148,7 +148,7 @@ Pharma, medtech and big tech all operate under strict data protection and regula
 
 ## Where People Live Around Cork
 
-Because housing in the city is tight, many professionals live in surrounding towns. Ballincollig and Blarney to the west and north are convenient for campuses on the city's edge; Carrigaline, Passage West and Cobh suit jobs around Cork Harbour and Ringaskiddy; Midleton and Glanmire, with rail and road connections, suit commutes into the city. Commuter rail links Cork with Cobh and Midleton, and bus services cover other towns, but many people drive. Matching your home to your employer's exact location — and testing the commute at rush hour — can make daily life much easier.
+Because housing in the city is tight, many professionals live in surrounding towns. Ballincollig and Blarney to the west and north are convenient for campuses on the city's edge; Carrigaline, Passage West and Cobh suit jobs around Cork Harbour and Ringaskiddy; Midleton and Glanmire, with rail and road connections, suit commutes into the city. Commuter rail links Cork with Cobh and Midleton, and bus services cover other towns, but many people drive. Matching your home to your employer's exact location - and testing the commute at rush hour - can make daily life much easier.
 
 ## Cork or Dublin?
 
@@ -172,7 +172,7 @@ Arrange temporary accommodation before arriving; it gives you time to find the r
 
 A data scientist working in pharmaceutical manufacturing analytics in Basel receives an offer from a pharma plant in Cork Harbour to lead process data science for a new production line. The work involves process monitoring, quality prediction and support for validated analytics.
 
-She compares net pay after Irish taxes with her Swiss salary, researches housing in Carrigaline and Cobh and learns that the company offers relocation support. She accepts. After a year, she says the regulated environment is similar to Basel, the work is equally meaningful and the Irish coast and Cork's friendliness have made settling in easier than expected — though finding housing took patience.
+She compares net pay after Irish taxes with her Swiss salary, researches housing in Carrigaline and Cobh and learns that the company offers relocation support. She accepts. After a year, she says the regulated environment is similar to Basel, the work is equally meaningful and the Irish coast and Cork's friendliness have made settling in easier than expected - though finding housing took patience.
 
 ## Key Takeaways
 

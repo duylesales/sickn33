@@ -35,29 +35,29 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 
 ## Het Kernprincipe: Scheiding van Verantwoordelijkheden (Separation of Concerns)
 
-Moderne webapplicaties splitsen zich van nature in twee lagen: de frontend (wat gebruikers zien en waarmee ze communiceren) en de backend (de data, bedrijfslogica en infrastructuur die het aandrijven). Een goed gestructureerde applicatie — inclusief de meeste door Lovable, Bolt en v0 gegenereerde codebases — bezit al enige mate van deze scheiding, ook al is die soms onvolledig geïmplementeerd. LaunchStudio's aanpak werkt mét deze natuurlijke scheidslijn, en niet ertegenin.
+Moderne webapplicaties splitsen zich van nature in twee lagen: de frontend (wat gebruikers zien en waarmee ze communiceren) en de backend (de data, bedrijfslogica en infrastructuur die het aandrijven). Een goed gestructureerde applicatie - inclusief de meeste door Lovable, Bolt en v0 gegenereerde codebases - bezit al enige mate van deze scheiding, ook al is die soms onvolledig geïmplementeerd. LaunchStudio's aanpak werkt mét deze natuurlijke scheidslijn, en niet ertegenin.
 
 ## Stap voor Stap: Hoe de Frontend Onaangeroerd Blijft
 
 ### 1. Frontend-Code Wordt Behandeld als een Vaste Randvoorwaarde
-In plaats van uw interface te beoordelen op wat een software-engineer persoonlijk anders zou doen, begint onze analyse bij het uitgangspunt: *"Dit visuele ontwerp staat vast — wat heeft de backend nodig om dit correct, veilig en stabiel te ondersteunen?"*
+In plaats van uw interface te beoordelen op wat een software-engineer persoonlijk anders zou doen, begint onze analyse bij het uitgangspunt: *"Dit visuele ontwerp staat vast - wat heeft de backend nodig om dit correct, veilig en stabiel te ondersteunen?"*
 
 ### 2. API-Contracten Worden Behouden of Uitgebreid, Niet Gebroken
 Waar uw frontend reeds specifieke API-endpoints aanroept (zelfs als deze losjes zijn gestructureerd door een AI-tool), behoudt ons engineeringwerk deze datastructuren waar mogelijk, of breidt ze additief uit, in plaats van te eisen dat de frontend wordt herschreven om aan te sluiten op een andere backend-filosofie.
 
 ### 3. Authenticatie en Beveiliging Worden Toegevoegd als een Schil
-Het toevoegen van echte authenticatie betekent in de praktijk het omwikkelen van bestaande pagina's met autorisatielogica en het koppelen van bestaande formulieren aan een beveiligde auth-provider — wijzigingen die plaatsvinden *rondom* uw UI-componenten, zonder dat het uiterlijk of gedrag voor een ingelogde gebruiker verandert.
+Het toevoegen van echte authenticatie betekent in de praktijk het omwikkelen van bestaande pagina's met autorisatielogica en het koppelen van bestaande formulieren aan een beveiligde auth-provider - wijzigingen die plaatsvinden *rondom* uw UI-componenten, zonder dat het uiterlijk of gedrag voor een ingelogde gebruiker verandert.
 
 ### 4. Styling en Component-Code Blijven Standaard Onaangeroerd
 Tenzij er een specifieke functionele bug in de frontend-code zelf zit, worden CSS, componentstructuren en het visuele ontwerp niet gewijzigd als onderdeel van de backend-inrichting.
 
 ## Wanneer Zijn Kleine Frontend-Aanpassingen Wél Nodig?
 
-Volledige preservatie is in de praktijk niet altijd letterlijk 100% — incidenteel is een gerichte, kleine frontend-aanpassing noodzakelijk, zoals het toevoegen van een laadstatus (*loading state*) voor een API-aanroep die voorheen direct nepdata toonde, of het aanpassen van een formulier om een foutmelding van de backend netjes weer te geven. Deze wijzigingen zijn uiterst beperkt in omvang, worden vooraf helder afgestemd en zijn er uitsluitend op gericht om uw bestaande ontwerp onder reële productieomstandigheden vlekkeloos te laten functioneren.
+Volledige preservatie is in de praktijk niet altijd letterlijk 100% - incidenteel is een gerichte, kleine frontend-aanpassing noodzakelijk, zoals het toevoegen van een laadstatus (*loading state*) voor een API-aanroep die voorheen direct nepdata toonde, of het aanpassen van een formulier om een foutmelding van de backend netjes weer te geven. Deze wijzigingen zijn uiterst beperkt in omvang, worden vooraf helder afgestemd en zijn er uitsluitend op gericht om uw bestaande ontwerp onder reële productieomstandigheden vlekkeloos te laten functioneren.
 
 ## Waarom Deze Discipline Commercieel Belangrijk Is
 
-Uw frontend-ontwerp vertegenwoordigt vaak gevalideerd bewijs van product-market fit — gebruikersfeedback, iteraties en ontwerpkeuzes die u heeft gemaakt op basis van praktijkervaring. Het weggooien van dat gevalideerde werk om te voldoen aan de stilistische voorkeur van een programmeur vernietigt reële bedrijfswaarde. Dat is exact de valkuil van traditionele bureaus, en exact wat [LaunchStudio](https://launchstudio.eu/nl/) voorkomt.
+Uw frontend-ontwerp vertegenwoordigt vaak gevalideerd bewijs van product-market fit - gebruikersfeedback, iteraties en ontwerpkeuzes die u heeft gemaakt op basis van praktijkervaring. Het weggooien van dat gevalideerde werk om te voldoen aan de stilistische voorkeur van een programmeur vernietigt reële bedrijfswaarde. Dat is exact de valkuil van traditionele bureaus, en exact wat [LaunchStudio](https://launchstudio.eu/nl/) voorkomt.
 
 Deze discipline is verankerd in Manifera's bredere engineeringcultuur: 11+ jaar klantprojecten heeft bewezen dat het respecteren van bestaande, gevalideerde ontwerpkeuzes tot aanzienlijk betere commerciële resultaten leidt dan het opleggen van persoonlijke programmeursvoorkeuren.
 
@@ -103,14 +103,14 @@ Yara, hospitality-adviseur in Terneuzen, bouwde met v0 GastVrij: een AI-tool die
 
 Ze was bang haar ontwerp kwijt te raken toen ze op zoek ging naar technische ontwikkelpartners, nadat een bevriende ondernemer haar had verteld dat een bureau zijn interface *"onherkenbaar had verbouwd"*.
 
-Yara bracht deze zorg direct in tijdens het eerste gesprek met LaunchStudio. Het team van Manifera liep de bestanden en componenten expliciet door en liet zien welke frontend-bestanden 100% onaangeroerd zouden blijven. Gedurende het toevoegen van authenticatie, Mollie-facturatie en beveiligde cloudhosting werden drie opleverrondes uitgevoerd — waarbij Yara telkens verifieerde dat het visuele ontwerp identiek bleef.
+Yara bracht deze zorg direct in tijdens het eerste gesprek met LaunchStudio. Het team van Manifera liep de bestanden en componenten expliciet door en liet zien welke frontend-bestanden 100% onaangeroerd zouden blijven. Gedurende het toevoegen van authenticatie, Mollie-facturatie en beveiligde cloudhosting werden drie opleverrondes uitgevoerd - waarbij Yara telkens verifieerde dat het visuele ontwerp identiek bleef.
 
 **Resultaat:** GastVrij lanceerde met exact hetzelfde visuele ontwerp dat haar zes testklanten al kenden en waardeerden, nu ondersteund door veilige data-opslag en automatische incasso's. Yara controleerde de voor-en-na screenshots: **er was letterlijk geen enkele pixel verschoven**.
 
 > *"Ik kende de horrorverhalen over bureaus die ontwerpen 'verbeteren' tot er niets meer van over is. LaunchStudio liet me vooraf zien hoe ze te werk gingen, en na afloop kon ik werkelijk geen enkele verschoven pixel vinden."*  
-> — **Yara Claassen, Oprichter GastVrij (Terneuzen)**
+> - **Yara Claassen, Oprichter GastVrij (Terneuzen)**
 
-**Kosten & tijdlijn:** €2.050 (Launch Ready Pakket) — binnen 10 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €2.050 (Launch Ready Pakket) - binnen 10 werkdagen live opgeleverd.
 
 ---
 
@@ -126,10 +126,10 @@ Vraag tijdens ons intakegesprek om een technische toelichting. Wij laten u exact
 Als we tijdens het werk een functionele bug in de interface tegenkomen, signaleren we dit direct en stemmen we de oplossing met u af vóórdat er iets wordt gewijzigd. We passen nooit eenzijdig code aan.
 
 ### Werkt deze methode voor zowel Lovable, Bolt als v0-gegenereerde interfaces?
-Ja. Het principe — het behandelen van gevalideerd frontend-werk als een vaste randvoorwaarde voor de backend — geldt voor alle AI-prototypetools, omdat onze adapter-architectuur opereert op het niveau van API-contracten.
+Ja. Het principe - het behandelen van gevalideerd frontend-werk als een vaste randvoorwaarde voor de backend - geldt voor alle AI-prototypetools, omdat onze adapter-architectuur opereert op het niveau van API-contracten.
 
 ### Is er ooit een situatie waarin LaunchStudio frontend-wijzigingen adviseert?
-Zelden, en uitsluitend als aanbeveling in direct overleg met de oprichter — bijvoorbeeld wanneer een specifiek interactiepatroon een reëel beveiligings- of gebruiksvriendelijkheidsprobleem veroorzaakt. De uiteindelijke beslissing ligt altijd bij u.
+Zelden, en uitsluitend als aanbeveling in direct overleg met de oprichter - bijvoorbeeld wanneer een specifiek interactiepatroon een reëel beveiligings- of gebruiksvriendelijkheidsprobleem veroorzaakt. De uiteindelijke beslissing ligt altijd bij u.
 
 <script type="application/ld+json">
 {

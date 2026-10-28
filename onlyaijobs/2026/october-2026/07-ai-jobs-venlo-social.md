@@ -2,7 +2,7 @@
 
 👉 On one side: forecasting, warehouse slotting and route planning with customs, tolls and driving-time rules. On the other: greenhouse climate control and energy optimisation, where fluctuating energy prices meet plant physiology.
 
-✅ Neither side calls it AI. Both are serious modelling problems — and you can switch between them without moving.
+✅ Neither side calls it AI. Both are serious modelling problems - and you can switch between them without moving.
 
 🔎 Browse current jobs: https://onlyaijobs.eu/jobs
 

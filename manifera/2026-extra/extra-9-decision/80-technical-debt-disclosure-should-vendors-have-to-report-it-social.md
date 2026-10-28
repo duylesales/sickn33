@@ -1,4 +1,4 @@
-The feature shipped on time. The demo worked. Eighteen months later, a new hire asks why adding one form field touches eleven files across four services — and no one can answer. Nothing in the contract required anyone to say. 🧩⚠️
+The feature shipped on time. The demo worked. Eighteen months later, a new hire asks why adding one form field touches eleven files across four services - and no one can answer. Nothing in the contract required anyone to say. 🧩⚠️
 
 **The Pain Points:**
 ❌ **Debt Lives in Nobody's Head:** Shortcuts taken under deadline pressure default to undocumented, invisible until a new team inherits them.
@@ -10,7 +10,7 @@ The feature shipped on time. The demo worked. Eighteen months later, a new hire 
 ✅ **Automated Static Analysis:** SonarQube-style vendor-independent metrics reported at the same cadence as the debt log.
 ✅ **No-Fault Disclosure Framing:** Debt reporting is a planning input for prioritization, not grounds for a breach claim.
 
-Undocumented handovers took 30-45% longer to reach full productivity in codebases we've reviewed. Disclosure isn't a courtesy — it's a cost-of-ownership issue. 📉
+Undocumented handovers took 30-45% longer to reach full productivity in codebases we've reviewed. Disclosure isn't a courtesy - it's a cost-of-ownership issue. 📉
 
 👉 Read our full deep dive on whether vendors should have to disclose technical debt: https://www.manifera.com/blog/technical-debt-disclosure-should-vendors-have-to-report-it
 

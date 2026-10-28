@@ -98,23 +98,23 @@ To be transparent about scope: OnlyAIJobs listings are currently concentrated in
 
 The single biggest predictor of success in healthcare AI is not modelling skill but the ability to work with clinicians. That means accepting that their time is scarce and expensive, coming to meetings with concrete questions rather than open-ended ones, learning enough vocabulary to follow a discussion, and treating their scepticism as information rather than obstruction.
 
-Practical habits that work: sit in on the workflow you are trying to support before proposing anything; ask what decision your output is supposed to change; find out what the current process gets wrong and how often; and agree in advance what evidence would convince them. Projects that skip these steps produce models that are technically fine and clinically irrelevant — the most common failure mode in the sector.
+Practical habits that work: sit in on the workflow you are trying to support before proposing anything; ask what decision your output is supposed to change; find out what the current process gets wrong and how often; and agree in advance what evidence would convince them. Projects that skip these steps produce models that are technically fine and clinically irrelevant - the most common failure mode in the sector.
 
 ## Data Access: Expect It to Take Time
 
 Newcomers consistently underestimate how long it takes to obtain health data. Depending on the setting, you may need ethical approval, a data protection impact assessment, a data sharing agreement, pseudonymisation, and access only inside a secure environment where you cannot export raw data. Two to six months from project start to first dataset is not unusual in hospital research, and pilots in companies often fail because timelines assumed weeks.
 
-Ask in interviews how data access works in practice, whether the organisation already has approvals or research infrastructure, and what you would work on while waiting. Teams that have built reusable data pipelines, trusted research environments or partnerships with data holders can move far faster than those starting from scratch — and this difference matters more to your daily satisfaction than the modelling stack.
+Ask in interviews how data access works in practice, whether the organisation already has approvals or research infrastructure, and what you would work on while waiting. Teams that have built reusable data pipelines, trusted research environments or partnerships with data holders can move far faster than those starting from scratch - and this difference matters more to your daily satisfaction than the modelling stack.
 
 ## Evaluation Standards That Differ From Tech
 
-Healthcare evaluation has its own conventions. Expect to work with sensitivity and specificity rather than accuracy alone, to look at calibration as well as discrimination, to report confidence intervals, to evaluate across subgroups such as age, sex, ethnicity and scanner or site, and to consider decision curves or clinical utility rather than pure ranking metrics. Prospective evaluation — testing on data collected after your model was fixed — carries far more weight than retrospective splits.
+Healthcare evaluation has its own conventions. Expect to work with sensitivity and specificity rather than accuracy alone, to look at calibration as well as discrimination, to report confidence intervals, to evaluate across subgroups such as age, sex, ethnicity and scanner or site, and to consider decision curves or clinical utility rather than pure ranking metrics. Prospective evaluation - testing on data collected after your model was fixed - carries far more weight than retrospective splits.
 
 Learning this vocabulary is one of the highest-return investments for engineers entering the field, because it changes how you are perceived in the first meeting with clinical colleagues.
 
 ## Large Language Models in Clinical Settings
 
-Language models have changed the shape of healthcare AI work. The most active areas are documentation support — drafting letters and notes, summarising encounters, coding — and information retrieval over guidelines and records. These applications are attractive because they address a real burden on clinicians and because errors are usually caught by the human who reviews the output.
+Language models have changed the shape of healthcare AI work. The most active areas are documentation support - drafting letters and notes, summarising encounters, coding - and information retrieval over guidelines and records. These applications are attractive because they address a real burden on clinicians and because errors are usually caught by the human who reviews the output.
 
 They also raise specific problems: patient data cannot simply be sent to external services without a lawful basis and appropriate safeguards; hallucinated content in a clinical document is a patient safety issue; and evaluation requires clinicians reading outputs, not automatic metrics alone. Teams that do this well invest in retrieval over trusted sources, structured evaluation with clinical reviewers, clear labelling of AI-generated text and careful scoping so that the model drafts rather than decides. Engineers who can build and evaluate such systems responsibly are in demand across hospitals, medtech and digital health.
 
@@ -145,7 +145,7 @@ In all cases, one credible project and one relationship with a clinician change 
 
 ## A Final Word
 
-Healthcare AI rewards patience. Projects take longer, evidence standards are higher and the approval paths are real. In exchange, the work is durable: models that reach clinical use stay in use for years, and the skills — rigorous evaluation, documentation, collaboration with domain experts — transfer to every other regulated sector. If you want speed above all, this is the wrong sector. If you want your work to matter for a long time, it is one of the best.
+Healthcare AI rewards patience. Projects take longer, evidence standards are higher and the approval paths are real. In exchange, the work is durable: models that reach clinical use stay in use for years, and the skills - rigorous evaluation, documentation, collaboration with domain experts - transfer to every other regulated sector. If you want speed above all, this is the wrong sector. If you want your work to matter for a long time, it is one of the best.
 
 ## Real example
 

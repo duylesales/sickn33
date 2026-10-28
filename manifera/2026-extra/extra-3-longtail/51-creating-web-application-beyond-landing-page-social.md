@@ -6,7 +6,7 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **A real backend and database:** not just static files — server-side logic that processes requests, enforces business rules, and persists data reliably.
+✅ **A real backend and database:** not just static files - server-side logic that processes requests, enforces business rules, and persists data reliably.
 ✅ **Authentication and authorization architecture:** handling login, session security, password management, and access control correctly, since mistakes here are directly exploitable.
 ✅ **State management and data consistency:** ensuring that when a user takes an action, the system correctly and reliably reflects that action, including handling concurrent users and preventing conflicting updates.
 

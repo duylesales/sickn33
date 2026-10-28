@@ -8,7 +8,7 @@ A standard reference call is theatre: the vendor picks the referee, and "were yo
 ❌ A glowing reference gets treated as proof of quality it can't show
 
 ✅ Ask for a client from a failed project, and one from 18+ months ago
-✅ Find one reference yourself via LinkedIn — they owe the vendor nothing
+✅ Find one reference yourself via LinkedIn - they owe the vendor nothing
 ✅ Ask about events, not feelings: "walk me through your riskiest week"
 ✅ Ask the 18-month reference how fast a new developer could pick up the codebase
 

@@ -1,4 +1,4 @@
-🔥 Simon bouwde een prototype via **Cursor** — als oprichter van een Shopify AI-copywriting tool schaalde hij naar €80k MRR, maar een 3-daagse servercrash door 4.000 regels spaghetti-code kostte hem €5.000 aan refunds. 🧠
+🔥 Simon bouwde een prototype via **Cursor** - als oprichter van een Shopify AI-copywriting tool schaalde hij naar €80k MRR, maar een 3-daagse servercrash door 4.000 regels spaghetti-code kostte hem €5.000 aan refunds. 🧠
 
 Als uw scale-up doorgroeit zonder technische schuld af te lossen, veroorzaakt live verkeer direct crashes, stilvallende feature-snelheid en gedemotiveerde developers.
 
@@ -12,7 +12,7 @@ Als uw scale-up doorgroeit zonder technische schuld af te lossen, veroorzaakt li
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Simon verhoogde zijn feature-ontwikkelsnelheid met 300% terwijl zijn bedrijf tijdens de refactoring ongestoord doordraaide. (€8.500 (Code Refactoring & Test Automatisering) — binnen 25 werkdagen live). 🚀
+Simon verhoogde zijn feature-ontwikkelsnelheid met 300% terwijl zijn bedrijf tijdens de refactoring ongestoord doordraaide. (€8.500 (Code Refactoring & Test Automatisering) - binnen 25 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/technical-debt-ai-mvp-scaleup
 

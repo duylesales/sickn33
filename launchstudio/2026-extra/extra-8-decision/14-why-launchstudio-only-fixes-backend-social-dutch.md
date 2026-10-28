@@ -12,7 +12,7 @@
 ✅ De grens is controleerbaar: vergelijk schermen één-op-één en bekijk de git-historie
 ✅ Een strak afgebakend voorstel vereist MÉÉR analytische discipline, niet minder
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, is deze scheidslijn structureel — geen marketingpraatje. 🔒
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, is deze scheidslijn structureel - geen marketingpraatje. 🔒
 
 Zijn resultaat: server-side authenticatie en data-isolatie ingericht, frontend 100% identiek aan wat zijn bètagebruikers al hadden goedgekeurd. ✅
 

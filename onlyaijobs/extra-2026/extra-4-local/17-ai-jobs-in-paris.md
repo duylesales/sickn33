@@ -81,7 +81,7 @@ Paris is home to headquarters of many large French companies in banking, insuran
 
 ## Skills Employers Seek
 
-For foundation model and research roles, employers look for experience with distributed training, GPU optimisation, large-scale data processing, evaluation of language models and publications or open-source contributions. For startups and corporate teams, the focus is on building reliable applications: retrieval-augmented generation, fine-tuning, evaluation pipelines, MLOps, cost control and integration into business processes. Across all segments, strong mathematical foundations are valued — a reflection of the French educational tradition — and the ability to communicate with non-technical stakeholders matters in corporate settings.
+For foundation model and research roles, employers look for experience with distributed training, GPU optimisation, large-scale data processing, evaluation of language models and publications or open-source contributions. For startups and corporate teams, the focus is on building reliable applications: retrieval-augmented generation, fine-tuning, evaluation pipelines, MLOps, cost control and integration into business processes. Across all segments, strong mathematical foundations are valued - a reflection of the French educational tradition - and the ability to communicate with non-technical stakeholders matters in corporate settings.
 
 ## Language and Working Culture
 
@@ -105,7 +105,7 @@ Paris is expensive, particularly for housing. Rental competition within the city
 
 OnlyAIJobs is a European job board that lists only AI, ML and data vacancies. It shows every role at its exact address with the distance from your home, sends applications straight to the employer's own page, requires no account to browse and does not sell premium placement.
 
-Its listings are currently concentrated in the Netherlands. For AI jobs in Paris you will find few or no local vacancies there today, so rely on French job portals, company career pages, research institute vacancy lists, Station F programmes and your network. OnlyAIJobs is useful if you are weighing Paris against the Netherlands — where employers such as Accenture, Mollie, Sendcloud and Cegeka list AI roles — and as a method: in a region as large as Île-de-France, searching by commute rather than by "Paris" is essential. Employers in France can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands. For AI jobs in Paris you will find few or no local vacancies there today, so rely on French job portals, company career pages, research institute vacancy lists, Station F programmes and your network. OnlyAIJobs is useful if you are weighing Paris against the Netherlands - where employers such as Accenture, Mollie, Sendcloud and Cegeka list AI roles - and as a method: in a region as large as Île-de-France, searching by commute rather than by "Paris" is essential. Employers in France can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Where AI Employers Sit in Île-de-France
 
@@ -126,7 +126,7 @@ Before signing a lease, test the commute to the exact office address. A 30-minut
 
 A distinctive feature of the Paris AI ecosystem is the close connection between elite academic training and industry. Many engineers graduate from grandes écoles or top universities with strong mathematical backgrounds, and a considerable number pursue PhDs, often through the CIFRE industrial PhD scheme, which lets companies employ doctoral students whose research is supervised by an academic lab. This produces researchers who are comfortable in both worlds, and it creates a dense network of alumni across labs, startups and corporations.
 
-For international candidates, this network can seem hard to penetrate at first. Attending research seminars, meetups and conferences in Paris — there are frequent events on machine learning, NLP and MLOps — and contributing to open-source projects are effective ways to build connections. Hugging Face's community, for example, links many Paris engineers through open-source work.
+For international candidates, this network can seem hard to penetrate at first. Attending research seminars, meetups and conferences in Paris - there are frequent events on machine learning, NLP and MLOps - and contributing to open-source projects are effective ways to build connections. Hugging Face's community, for example, links many Paris engineers through open-source work.
 
 ## Evaluating Startup Offers in Paris
 
@@ -134,7 +134,7 @@ AI startups in Paris have raised significant funding in recent years, and many o
 
 - **Funding and runway:** how much has been raised, when was the last round, and how long can the company operate at its current burn rate?
 - **Business model:** how does the company generate revenue, and how dependent is it on continued fundraising?
-- **Equity terms:** BSPCE or other stock options — strike price, vesting schedule, cliff, exercise window after leaving and the share of the company they represent.
+- **Equity terms:** BSPCE or other stock options - strike price, vesting schedule, cliff, exercise window after leaving and the share of the company they represent.
 - **Team and leadership:** the experience of founders and technical leaders, and turnover in the team.
 - **Compute access:** for model training roles, what computing resources are available and how they are allocated.
 - **Work intensity:** fast-growing startups can have demanding workloads; ask openly about expectations.

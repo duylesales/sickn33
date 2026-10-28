@@ -1,4 +1,4 @@
-🔥 David bouwde een prototype met **Cursor** — als solo-ontwikkelaar in Rotterdam bouwde hij een dashboard voor voorraadbeheer, maar verweefde de databasequeries direct in zijn React-componenten. 🧠
+🔥 David bouwde een prototype met **Cursor** - als solo-ontwikkelaar in Rotterdam bouwde hij een dashboard voor voorraadbeheer, maar verweefde de databasequeries direct in zijn React-componenten. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of duidelijke architectuurscheiding heeft, veroorzaakt live verkeer direct datalekken en crashes.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-David kan zijn UI nu dagelijks met Cursor herschrijven zonder risico op datalekken en schaalde snel door naar €2.000 MRR. (€3.200 (Launch Ready Pakket met refactoring) — binnen 15 werkdagen live). 🚀
+David kan zijn UI nu dagelijks met Cursor herschrijven zonder risico op datalekken en schaalde snel door naar €2.000 MRR. (€3.200 (Launch Ready Pakket met refactoring) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-native-startup-anatomy-fast-frontend
 

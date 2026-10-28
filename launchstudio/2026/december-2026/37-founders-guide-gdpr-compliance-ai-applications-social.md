@@ -1,11 +1,11 @@
 🚨 "I didn't even know what a DPA was until this deal was on the line." Her biggest client almost walked over one procurement questionnaire. 📋
 
-Every time your app sends a prompt with customer data to OpenAI/Anthropic, that data leaves YOUR infrastructure. GDPR has clear rules for this — most AI-native founders haven't mapped it out: 😱
+Every time your app sends a prompt with customer data to OpenAI/Anthropic, that data leaves YOUR infrastructure. GDPR has clear rules for this - most AI-native founders haven't mapped it out: 😱
 
 ❌ No confirmed Data Processing Agreement with your AI provider
 ❌ Generic privacy policy that never mentions AI processing at all
 ❌ No real end-to-end deletion process when a user asks to be forgotten
-❌ No Data Protection Impact Assessment — legally required (Art. 35) for AI screening, scoring, or eligibility tools, even small ones
+❌ No Data Protection Impact Assessment - legally required (Art. 35) for AI screening, scoring, or eligibility tools, even small ones
 
 Using OpenAI or Anthropic does NOT automatically make you compliant. You still have to configure it yourself. 🧠
 

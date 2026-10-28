@@ -22,17 +22,17 @@ Target Persona: Agency / Freelancer (White-Label Partner)
 
 An agency owner in Antwerp took on a new client last spring: a wellness startup with a working booking app, built entirely in v0, and a launch date already promised to investors. The agency had done plenty of custom builds before, but never a security audit of someone else's AI-generated codebase under real time pressure. What they found in the first afternoon of digging is close to a checklist of the security issues with AI-built apps that show up on nearly every project like this one.
 
-If you run an agency or work freelance and you're increasingly fielding clients who arrive with a Lovable, Bolt, Cursor, or v0 prototype instead of a blank slate, this pattern will look familiar. The build itself is usually fine — sometimes genuinely impressive. The security posture underneath it is where the surprises live, and they tend to cluster around the same handful of gaps, project after project.
+If you run an agency or work freelance and you're increasingly fielding clients who arrive with a Lovable, Bolt, Cursor, or v0 prototype instead of a blank slate, this pattern will look familiar. The build itself is usually fine - sometimes genuinely impressive. The security posture underneath it is where the surprises live, and they tend to cluster around the same handful of gaps, project after project.
 
 ## Before: What a "Working" AI-Built App Looks Like When It Lands on Your Desk
 
-A typical incoming project looks production-ready at a glance. It has a login flow, a dashboard, some data persisting between sessions, maybe a Stripe integration that processes a test payment successfully. Clients are often confident it's "basically done" and just needs polish or a custom domain. That confidence is understandable — the demo genuinely works, every time they click through it themselves.
+A typical incoming project looks production-ready at a glance. It has a login flow, a dashboard, some data persisting between sessions, maybe a Stripe integration that processes a test payment successfully. Clients are often confident it's "basically done" and just needs polish or a custom domain. That confidence is understandable - the demo genuinely works, every time they click through it themselves.
 
 What's usually missing isn't visible in a click-through at all. It requires opening the code and asking a different set of questions: does every data-fetching endpoint verify server-side that the requester owns the record being requested? Are any credentials sitting in plain text in the frontend bundle? Is there anything stopping a scripted flood of signup requests? None of these show up when a client demos their own app to themselves, because they're always logged in as themselves, requesting their own data, one request at a time.
 
 ## The Most Common Security Issues With AI-Built Apps We See at LaunchStudio
 
-Across the reviews LaunchStudio's engineers run — often on behalf of agencies delivering the fix under their own brand — the same categories surface repeatedly, roughly in this order of frequency:
+Across the reviews LaunchStudio's engineers run - often on behalf of agencies delivering the fix under their own brand - the same categories surface repeatedly, roughly in this order of frequency:
 
 **Missing server-side authorization.** By far the most common finding. The frontend shows only a user's own data, but the backend will return anyone's data if the right ID is requested directly, because nothing checks ownership at the database or API layer.
 
@@ -50,17 +50,17 @@ One reason agencies avoid raising these findings is a fear of scaring off a clie
 
 ## After: What It Looks Like Once the Security Issues Are Actually Fixed
 
-The fix for nearly all of these categories happens without touching a single pixel the client sees. Authorization gets enforced at the query level. Credentials move into environment variables the browser never receives. Rate limiting gets added at the API gateway or middleware layer. Server-side validation gets added as a mirror of whatever the frontend already checks. None of it requires explaining to the client why their app "looks different now," because it doesn't — it just becomes safe to put in front of strangers.
+The fix for nearly all of these categories happens without touching a single pixel the client sees. Authorization gets enforced at the query level. Credentials move into environment variables the browser never receives. Rate limiting gets added at the API gateway or middleware layer. Server-side validation gets added as a mirror of whatever the frontend already checks. None of it requires explaining to the client why their app "looks different now," because it doesn't - it just becomes safe to put in front of strangers.
 
 For an agency, this is the part worth emphasizing to your own clients: a security pass is not a redesign, and it doesn't reset the timeline back to zero. It's targeted, scoped work layered underneath what already exists.
 
 ## Delivering This Under Your Own Brand
 
-This is exactly the gap LaunchStudio exists to close for agencies that don't have in-house security-focused engineers but don't want to turn away clients who show up with AI-built prototypes. Work happens under NDA, delivered on a fixed scope and price, and can go out under your agency's name rather than LaunchStudio's — you stay the client-facing partner, we're the engineering behind the curtain. Manifera's engineers have shipped 160+ projects for enterprise clients over more than a decade, working out of a development center on Pho Quang Street in Ho Chi Minh City alongside the Amsterdam and Singapore teams; that same team backs every LaunchStudio delivery, including the white-label ones. You can [describe a client project through LaunchStudio's process](https://launchstudio.eu/en/#process) the same way a founder would, just flagged as a partner engagement, and see [Manifera's client portfolio](https://www.manifera.com/portfolio/) for the kind of engineering standard the work is held to.
+This is exactly the gap LaunchStudio exists to close for agencies that don't have in-house security-focused engineers but don't want to turn away clients who show up with AI-built prototypes. Work happens under NDA, delivered on a fixed scope and price, and can go out under your agency's name rather than LaunchStudio's - you stay the client-facing partner, we're the engineering behind the curtain. Manifera's engineers have shipped 160+ projects for enterprise clients over more than a decade, working out of a development center on Pho Quang Street in Ho Chi Minh City alongside the Amsterdam and Singapore teams; that same team backs every LaunchStudio delivery, including the white-label ones. You can [describe a client project through LaunchStudio's process](https://launchstudio.eu/en/#process) the same way a founder would, just flagged as a partner engagement, and see [Manifera's client portfolio](https://www.manifera.com/portfolio/) for the kind of engineering standard the work is held to.
 
 ## Building This Into Your Standard Intake Process
 
-Rather than discovering these issues project by project under time pressure, the agencies that handle this well build a security pass into their standard intake checklist for any client arriving with an AI-built prototype, the same way you'd already check browser compatibility or responsive layout before calling a project done. A short, repeatable checklist — authorization, credentials, rate limiting, input validation, encryption at rest — run against every incoming AI-built project catches the majority of what would otherwise surface as a surprise mid-project, and it lets you quote the security pass as a known, budgeted line item from the first client conversation instead of an unplanned addition discovered halfway through.
+Rather than discovering these issues project by project under time pressure, the agencies that handle this well build a security pass into their standard intake checklist for any client arriving with an AI-built prototype, the same way you'd already check browser compatibility or responsive layout before calling a project done. A short, repeatable checklist - authorization, credentials, rate limiting, input validation, encryption at rest - run against every incoming AI-built project catches the majority of what would otherwise surface as a surprise mid-project, and it lets you quote the security pass as a known, budgeted line item from the first client conversation instead of an unplanned addition discovered halfway through.
 
 ## Real example
 
@@ -68,18 +68,18 @@ Rather than discovering these issues project by project under time pressure, the
 
 Elke Van Acker runs a small digital agency in Bruges, mostly serving local hospitality and wellness businesses. A new client arrived with WellnessLoop, a class-booking app for boutique fitness studios, built independently in v0, and a launch date three weeks out already communicated to studio partners. Elke's team had strong frontend and design skills but no in-house security specialist, and the timeline didn't leave room to hire and onboard one.
 
-She brought the project to LaunchStudio under a white-label engagement. Our engineers found that any logged-in user could view any studio's private booking data, including other members' names and class attendance, simply by changing a numeric ID in the app's API requests — the exact broken-access-control pattern that shows up most often in reviews like this one. There was also a payment provider API key visible directly in the frontend bundle. Both were fixed at the backend level within the original timeline, and the deliverable went back to Elke's client under her agency's own branding.
+She brought the project to LaunchStudio under a white-label engagement. Our engineers found that any logged-in user could view any studio's private booking data, including other members' names and class attendance, simply by changing a numeric ID in the app's API requests - the exact broken-access-control pattern that shows up most often in reviews like this one. There was also a payment provider API key visible directly in the frontend bundle. Both were fixed at the backend level within the original timeline, and the deliverable went back to Elke's client under her agency's own branding.
 
 > *"My client never knew LaunchStudio was involved. They just knew we delivered a secure app on time, which is exactly the outcome I needed as the agency they hired."*
-> — **Elke Van Acker, Agency Owner (Bruges)**
+> - **Elke Van Acker, Agency Owner (Bruges)**
 
-**Cost & Timeline:** €1,850 (white-label authorization and credential remediation) — completed in 6 business days.
+**Cost & Timeline:** €1,850 (white-label authorization and credential remediation) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
 ### What's the single most common security issue in AI-built apps?
 
-Missing server-side authorization — the backend returning any user's data if the right ID is requested, because nothing checks that the requester actually owns the record.
+Missing server-side authorization - the backend returning any user's data if the right ID is requested, because nothing checks that the requester actually owns the record.
 
 ### Can my agency offer security fixes without hiring a security engineer?
 

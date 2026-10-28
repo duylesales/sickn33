@@ -5,12 +5,12 @@ Every recruiter could search every candidate through the API. CVs sat in a publi
 ❌ All candidates visible to all recruiters
 ❌ Public CV files, kept forever
 ❌ Pre-ticked, unrecorded consent
-❌ Automatic rejection by AI score — and CVs in the logs
+❌ Automatic rejection by AI score - and CVs in the logs
 
 ✅ Organisation-scoped access with row level security
 ✅ Private CV storage with signed links, malware scanning and deletion four weeks after a vacancy closes (twelve months with recorded consent)
 ✅ Explicit, versioned consent with one-click withdrawal
-✅ A recruiter review queue with match explanations, CV text scrubbed from logs, and per-candidate export and deletion — embeddings included
+✅ A recruiter review queue with match explanations, CV text scrubbed from logs, and per-candidate export and deletion - embeddings included
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure the clever matching sits on candidate data handled the way people and regulators expect. ⚙️
 

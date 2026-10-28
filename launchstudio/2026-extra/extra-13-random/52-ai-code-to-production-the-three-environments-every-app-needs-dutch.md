@@ -21,13 +21,13 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Vraag een oprichter van wie de app op Replit, Bolt of Lovable is gebouwd waar de ontwikkelomgeving is, en het antwoord is vaak een verbaasde blik. Er is één app. Die draait ergens. Wijzigingen gebeuren daar, tests gebeuren daar, klanten gebruiken hem daar. AI-code goed naar productie brengen begint met die ene plek opsplitsen in drie — en begrijpen wat er in elk van de drie anders moet zijn.
+Vraag een oprichter van wie de app op Replit, Bolt of Lovable is gebouwd waar de ontwikkelomgeving is, en het antwoord is vaak een verbaasde blik. Er is één app. Die draait ergens. Wijzigingen gebeuren daar, tests gebeuren daar, klanten gebruiken hem daar. AI-code goed naar productie brengen begint met die ene plek opsplitsen in drie - en begrijpen wat er in elk van de drie anders moet zijn.
 
 ## Vooraf: Eén Omgeving Die Drie Taken Doet
 
 In een opzet met één omgeving:
 
-- Zijn codewijzigingen zichtbaar voor klanten op het moment dat ze worden gemaakt — ook als ze half af zijn.
+- Zijn codewijzigingen zichtbaar voor klanten op het moment dat ze worden gemaakt - ook als ze half af zijn.
 - Komen testaanmeldingen, testbestellingen en testberichten in dezelfde database terecht als echte.
 - Gebruiken testbetalingen hetzelfde betaalaccount, soms in live modus.
 - Gaan e-mails uit tests naar echte adressen.
@@ -39,7 +39,7 @@ Elk hiervan veroorzaakt echte incidenten: klanten die testmails ontvangen, analy
 
 **Development** is waar je bouwt. Ze kan op elk moment stukgaan. Ze gebruikt nepdata, sandboxkoppelingen en sleutels die geen schade kunnen aanrichten. Het kan je laptop zijn, een Replit-workspace of een ontwikkelomgeving in de cloud.
 
-**Staging** is waar je controleert. Ze spiegelt productie zo nauwkeurig mogelijk — hetzelfde type hosting, dezelfde databaseversie, dezelfde configuratiestructuur — maar met gescheiden data en koppelingen in testmodus. Wijzigingen gaan door staging voordat klanten ze zien.
+**Staging** is waar je controleert. Ze spiegelt productie zo nauwkeurig mogelijk - hetzelfde type hosting, dezelfde databaseversie, dezelfde configuratiestructuur - maar met gescheiden data en koppelingen in testmodus. Wijzigingen gaan door staging voordat klanten ze zien.
 
 **Productie** is waar klanten zijn. Ze verandert alleen via een gecontroleerde deployment. Haar inloggegevens zijn beschikbaar voor zo weinig mogelijk mensen en systemen.
 
@@ -83,7 +83,7 @@ De mechanica van het scheiden van omgevingen voor AI-code naar productie komt ne
 
 1. **Maak een lijst van elke variabele** die je app gebruikt, met een korte beschrijving en of het een geheim is.
 2. **Maak een sjabloonbestand** (`.env.example`) in de repository met namen en dummywaarden, nooit echte geheimen.
-3. **Bewaar echte waarden per omgeving** in de geheimenopslag van de hostingprovider — Vercel, Netlify, Replit Deployments of je CI-systeem.
+3. **Bewaar echte waarden per omgeving** in de geheimenopslag van de hostingprovider - Vercel, Netlify, Replit Deployments of je CI-systeem.
 4. **Valideer bij het opstarten**: een klein schema dat controleert of verplichte variabelen bestaan en het juiste formaat hebben, en anders weigert te starten.
 5. **Bescherm tegen verwisseling**: faal in niet-productieomgevingen als een variabele op een productiewaarde lijkt (bijvoorbeeld een voorvoegsel van een live betaalsleutel of de host van de productiedatabase).
 6. **Roteer bij blootstelling**: lekt een waarde, roteer die dan alleen in haar eigen omgeving, en leg de rotatie vast.
@@ -121,7 +121,7 @@ Staging raakt uit de pas met productie als wijzigingen direct in productiedashbo
 
 ## Preview-Omgevingen voor Elke Wijziging
 
-Veel hostingplatforms maken per branch of pull request een preview-deployment. Previews zijn uitstekend om wijzigingen te beoordelen, maar alleen als ze zijn gekoppeld aan stagingdata en -geheimen, afgeschermd zijn van openbare toegang en na het mergen worden opgeruimd. Een preview die per ongeluk aan productie is gekoppeld — een verrassend veelvoorkomende opzet — maakt van elke branch een mogelijke productiewijziging.
+Veel hostingplatforms maken per branch of pull request een preview-deployment. Previews zijn uitstekend om wijzigingen te beoordelen, maar alleen als ze zijn gekoppeld aan stagingdata en -geheimen, afgeschermd zijn van openbare toegang en na het mergen worden opgeruimd. Een preview die per ongeluk aan productie is gekoppeld - een verrassend veelvoorkomende opzet - maakt van elke branch een mogelijke productiewijziging.
 
 ## Omgevingen voor Koppelingen
 
@@ -129,7 +129,7 @@ Diensten van derden hebben ook bijpassende omgevingen nodig: betaalaanbieders in
 
 ## De Kosten van Drie Omgevingen
 
-Oprichters zijn bang dat extra omgevingen de hostingkosten verdrievoudigen. In de praktijk draait development lokaal of op gratis niveaus, kan staging kleinere databaseabonnementen en hosting die naar nul schaalt gebruiken, en heeft alleen productie volledige capaciteit nodig. Voor de meeste kleine AI-gebouwde apps voegt staging een bescheiden maandbedrag toe — veel minder dan één incident door testen tegen productie.
+Oprichters zijn bang dat extra omgevingen de hostingkosten verdrievoudigen. In de praktijk draait development lokaal of op gratis niveaus, kan staging kleinere databaseabonnementen en hosting die naar nul schaalt gebruiken, en heeft alleen productie volledige capaciteit nodig. Voor de meeste kleine AI-gebouwde apps voegt staging een bescheiden maandbedrag toe - veel minder dan één incident door testen tegen productie.
 
 ## Signalen Dat Je Omgevingen Werken
 
@@ -139,22 +139,22 @@ Je weet dat de opzet werkt als ontwikkelaars en AI-tools vrij kunnen experimente
 
 Een aantal fouten komt steeds terug als AI-gebouwde apps voor het eerst in omgevingen worden opgesplitst:
 
-- **`.env`-bestanden tussen omgevingen kopiëren** en vergeten één waarde te veranderen — meestal de database-URL.
+- **`.env`-bestanden tussen omgevingen kopiëren** en vergeten één waarde te veranderen - meestal de database-URL.
 - **Eén betaalaccount in testmodus voor staging gebruiken, maar dezelfde webhook-URL voor alle omgevingen**, zodat staging productie-events ontvangt of omgekeerd.
 - **Gedeelde opslagbuckets**, zodat bestanden die in staging zijn geüpload in productieoverzichten verschijnen.
 - **Gedeelde authenticatieprojecten**, zodat testgebruikers kunnen inloggen in productie.
 - **E-mail niet beperkt in staging**, zodat testflows echte e-mails naar echte klanten sturen.
 - **Geplande taken die in elke omgeving draaien**, waardoor herinneringen vanuit staging worden verstuurd.
 
-Een korte checklist per omgeving — database, authenticatie, opslag, betalingen, e-mail, webhooks, geplande taken — vangt deze op voordat ze incidenten veroorzaken.
+Een korte checklist per omgeving - database, authenticatie, opslag, betalingen, e-mail, webhooks, geplande taken - vangt deze op voordat ze incidenten veroorzaken.
 
 ## Namen en Visuele Aanwijzingen
 
-Mensen maken fouten als omgevingen er hetzelfde uitzien. Geef staging een zichtbare banner ("STAGING — testdata"), een ander favicon of andere kleur, en een eigen domein zoals `staging.jouwapp.nl`. Geef databases, buckets en projecten een naam met de omgeving erin. Deze aanwijzingen kosten minuten en voorkomen de klassieke fout van data verwijderen in wat iemand voor staging hield.
+Mensen maken fouten als omgevingen er hetzelfde uitzien. Geef staging een zichtbare banner ("STAGING - testdata"), een ander favicon of andere kleur, en een eigen domein zoals `staging.jouwapp.nl`. Geef databases, buckets en projecten een naam met de omgeving erin. Deze aanwijzingen kosten minuten en voorkomen de klassieke fout van data verwijderen in wat iemand voor staging hield.
 
 ## Omgevingen voor Ontwikkelen met AI
 
-AI-codeertools werken in development. Zorg dat de ontwikkelomgeving ze alles geeft wat ze nodig hebben — realistische seeddata, lokale diensten of dev-projecten, testsleutels — zodat ze nooit productietoegang nodig hebben om iets werkend te krijgen. Stelt een AI-tool voor om "even met productie te verbinden om de data te controleren", dan hoort het antwoord structureel onmogelijk te zijn, geen kwestie van wilskracht.
+AI-codeertools werken in development. Zorg dat de ontwikkelomgeving ze alles geeft wat ze nodig hebben - realistische seeddata, lokale diensten of dev-projecten, testsleutels - zodat ze nooit productietoegang nodig hebben om iets werkend te krijgen. Stelt een AI-tool voor om "even met productie te verbinden om de data te controleren", dan hoort het antwoord structureel onmogelijk te zijn, geen kwestie van wilskracht.
 
 ## Van Drie Omgevingen naar een Releaseproces
 
@@ -166,7 +166,7 @@ Sommige producten voegen een demo-omgeving toe voor verkoop en pitches, of een p
 
 ## Een Afsluitende Checklist
 
-Bevestig voordat je je omgevingen als klaar beschouwt: aparte databases, authenticatieprojecten, opslag en betaalmodi per omgeving; variabelen gevalideerd bij het opstarten; productie alleen gewijzigd via de pipeline; staging zichtbaar gelabeld en ververst met geanonimiseerde data; previews afgeschermd en gericht op staging; e-mail buiten productie opgevangen; en geplande taken alleen aan waar ze horen. Is elk punt waar, dan kunnen je team — en je AI-tools — snel werken zonder echte klanten in gevaar te brengen.
+Bevestig voordat je je omgevingen als klaar beschouwt: aparte databases, authenticatieprojecten, opslag en betaalmodi per omgeving; variabelen gevalideerd bij het opstarten; productie alleen gewijzigd via de pipeline; staging zichtbaar gelabeld en ververst met geanonimiseerde data; previews afgeschermd en gericht op staging; e-mail buiten productie opgevangen; en geplande taken alleen aan waar ze horen. Is elk punt waar, dan kunnen je team - en je AI-tools - snel werken zonder echte klanten in gevaar te brengen.
 
 ## Waar LaunchStudio Past
 
@@ -182,16 +182,16 @@ Om te zien wat het voor je app zou kosten, [gebruik de prijscalculator](https://
 
 Jeroen Smits, fanatiek visser en IT-supportspecialist in Roosendaal, bouwde Visvergunning op Replit: een app waarin vissers dag- en seizoensvergunningen kopen voor particuliere viswateren in West-Brabant, een QR-vergunning aan controleurs tonen, en eigenaren van wateren de verkoop zien. Ongeveer 2.800 vissers hadden er een vergunning mee gekocht.
 
-Alles draaide in één Replit-project. Tijdens het testen van een nieuwe functie voor seizoensvergunningen maakte Jeroen een batch testvergunningen aan met echte e-mailadressen van vissers uit de database, om "te zien hoe het eruitzag" — en 340 vissers ontvingen vergunningen voor wateren waarvoor ze niet hadden betaald. Eerder moest een testbetaling met een echte kaart in de live modus van Mollie handmatig worden terugbetaald. De verkoopdashboards van eigenaren van wateren bevatten tientallen testverkopen, en een migratie die tijdens de ontwikkeling van de functie voor seizoensvergunningen werd gedraaid, vergrendelde op een zaterdagochtend kort de tabel met vergunningen, waardoor controleurs QR-codes niet konden verifiëren.
+Alles draaide in één Replit-project. Tijdens het testen van een nieuwe functie voor seizoensvergunningen maakte Jeroen een batch testvergunningen aan met echte e-mailadressen van vissers uit de database, om "te zien hoe het eruitzag" - en 340 vissers ontvingen vergunningen voor wateren waarvoor ze niet hadden betaald. Eerder moest een testbetaling met een echte kaart in de live modus van Mollie handmatig worden terugbetaald. De verkoopdashboards van eigenaren van wateren bevatten tientallen testverkopen, en een migratie die tijdens de ontwikkeling van de functie voor seizoensvergunningen werd gedraaid, vergrendelde op een zaterdagochtend kort de tabel met vergunningen, waardoor controleurs QR-codes niet konden verifiëren.
 
 In zeven werkdagen splitsten de engineers van LaunchStudio Visvergunning op in development, staging en productie: aparte databases, Mollie in testmodus in development en staging, e-mail opgevangen in development en beperkt tot Jeroens adressen in staging, geheimen per omgeving in Replit Deployments, validatie van omgevingsvariabelen bij het opstarten, seeddata voor staging, en een deploymentproces waarbij migraties bewust buiten de piekuren van het vissen worden uitgevoerd. Testverkopen werden uit de productierapporten verwijderd, en de onterechte vergunningen werden ingetrokken met een excuusmail.
 
 **Resultaat:** In het seizoen daarna verkocht Visvergunning zo'n 4.500 vergunningen zonder dat testdata vissers of eigenaren bereikte en zonder storingen in het weekend. Jeroen bouwt nieuwe functies nu vrij in development, in de wetenschap dat niets wat hij daar doet een echte visser kan bereiken.
 
 > *"Ik dacht dat ik aan het testen was. Eigenlijk deed ik experimenten met mijn klanten. Met drie omgevingen kon ik eindelijk met mezelf experimenteren."*
-> — **Jeroen Smits, Oprichter, Visvergunning (Roosendaal)**
+> - **Jeroen Smits, Oprichter, Visvergunning (Roosendaal)**
 
-**Kosten & Tijdlijn:** € 1.800 (Launch Ready-pakket: scheiding van omgevingen, geheimen, stagingdata, validatie en deploymentproces) — afgerond in 7 werkdagen.
+**Kosten & Tijdlijn:** € 1.800 (Launch Ready-pakket: scheiding van omgevingen, geheimen, stagingdata, validatie en deploymentproces) - afgerond in 7 werkdagen.
 
 ## Veelgestelde Vragen
 

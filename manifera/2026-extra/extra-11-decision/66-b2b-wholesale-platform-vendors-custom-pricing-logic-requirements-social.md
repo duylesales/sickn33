@@ -1,9 +1,9 @@
 Two buyers. Same SKU. Two different prices based on company, volume history, and a contract signed 18 months ago. Most consumer-grade e-commerce platforms simply can't do this without a rebuild. 🏭
 
 **The Pain Points:**
-❌ **Flat discount percentages:** Many "B2B mode" platforms are really consumer platforms with a uniform wholesale discount bolted on — no real rules engine, no precedence logic.
+❌ **Flat discount percentages:** Many "B2B mode" platforms are really consumer platforms with a uniform wholesale discount bolted on - no real rules engine, no precedence logic.
 ❌ **No cross-SKU volume breaks:** Real wholesale agreements calculate volume across product families or use graduated rate bands. Platforms that only support flat per-SKU tiers can't model this.
-❌ **Quotes living in email:** Without a native RFQ-to-order workflow, negotiated terms get manually re-entered as orders — creating a data integrity gap between what was agreed and what gets invoiced.
+❌ **Quotes living in email:** Without a native RFQ-to-order workflow, negotiated terms get manually re-entered as orders - creating a data integrity gap between what was agreed and what gets invoiced.
 
 **The Manifera Solution:**
 ✅ **Rules engine scrutiny:** We verify a vendor's pricing precedence logic (tier vs. volume vs. contract override) is real and configurable, not marketing language.

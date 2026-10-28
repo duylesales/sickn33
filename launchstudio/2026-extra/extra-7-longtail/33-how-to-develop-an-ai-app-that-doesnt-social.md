@@ -1,4 +1,4 @@
-🚨 Niklas Vogt built ShiftSwap, an employee scheduling app, in Vienna with Cursor. It never once failed a demo — until a construction client rolled it out to 100 crew leads who all checked their shifts at the same time every weekday morning. Then it started crashing every day at 6:45 AM. 😳
+🚨 Niklas Vogt built ShiftSwap, an employee scheduling app, in Vienna with Cursor. It never once failed a demo - until a construction client rolled it out to 100 crew leads who all checked their shifts at the same time every weekday morning. Then it started crashing every day at 6:45 AM. 😳
 
 "It worked when I tested it" and "it works" are two very different claims. 🧠
 
@@ -11,7 +11,7 @@
 ✅ Rewrite the data-fetching to two efficient queries instead of fifteen
 ✅ Introduce basic caching for the parts of the schedule that don't change minute to minute
 
-At **LaunchStudio**, our engineers draw on Manifera's enterprise engineering background from projects for clients like Vodafone and TNO to find exactly this kind of scaling gap — without touching a single screen users already know. 🛡️
+At **LaunchStudio**, our engineers draw on Manifera's enterprise engineering background from projects for clients like Vodafone and TNO to find exactly this kind of scaling gap - without touching a single screen users already know. 🛡️
 
 Niklas's result: ShiftSwap now handles the full morning rush without slowing down, fixed in a day without altering the app his crew leads had already learned. 🚀
 

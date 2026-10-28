@@ -20,13 +20,13 @@ target_persona: "A"
 }
 </script>
 
-A stack decision made in the first month of a project — which language, which framework, which database — gets evaluated by almost everyone involved almost entirely on technical fit. What it also does, silently, is set the size of the talent pool a company will be recruiting from for every hire after that, and talent pool size is one of the strongest predictors of salary cost and time-to-hire.
+A stack decision made in the first month of a project - which language, which framework, which database - gets evaluated by almost everyone involved almost entirely on technical fit. What it also does, silently, is set the size of the talent pool a company will be recruiting from for every hire after that, and talent pool size is one of the strongest predictors of salary cost and time-to-hire.
 
 ## Why Stack Choice Is a Hiring Decision, Not Just a Technical One
 
-A widely adopted stack — React, Node.js, PostgreSQL — reliably draws from a large, genuinely competitive talent pool, which keeps salary expectations more moderate and hiring timelines shorter. A niche or declining stack narrows that pool significantly, and the remaining specialists know their scarcity, which shows up directly in compensation expectations and how long a requisition stays open.
+A widely adopted stack - React, Node.js, PostgreSQL - reliably draws from a large, genuinely competitive talent pool, which keeps salary expectations more moderate and hiring timelines shorter. A niche or declining stack narrows that pool significantly, and the remaining specialists know their scarcity, which shows up directly in compensation expectations and how long a requisition stays open.
 
-None of this is an argument for always choosing the most popular technology regardless of genuine fit — it's an argument for treating talent pool size as one of the real evaluation criteria alongside technical merits, rather than discovering the hiring cost consequence eighteen months later when the recruiting team can't fill an open role.
+None of this is an argument for always choosing the most popular technology regardless of genuine fit - it's an argument for treating talent pool size as one of the real evaluation criteria alongside technical merits, rather than discovering the hiring cost consequence eighteen months later when the recruiting team can't fill an open role.
 
 ## The Specific Ways Stack Choice Compounds Into Hiring Cost
 
@@ -37,15 +37,15 @@ None of this is an argument for always choosing the most popular technology rega
 
 ## When a Niche Stack Is Still the Right Call
 
-Sometimes the technical fit genuinely justifies the hiring cost — a specific performance requirement, a genuinely superior fit for the problem domain, or an existing team's deep expertise that would be expensive to abandon. The point isn't "never choose niche technology," it's "know the hiring cost you're accepting before you accept it," rather than being surprised by it during a difficult recruiting cycle two years later.
+Sometimes the technical fit genuinely justifies the hiring cost - a specific performance requirement, a genuinely superior fit for the problem domain, or an existing team's deep expertise that would be expensive to abandon. The point isn't "never choose niche technology," it's "know the hiring cost you're accepting before you accept it," rather than being surprised by it during a difficult recruiting cycle two years later.
 
 ## The Economics of Why Early Choices Lock In
 
-Economic historian Paul David's famous 1985 paper "Clio and the Economics of QWERTY" examined a puzzle that applies almost directly to technology stack decisions: why does the QWERTY keyboard layout, designed in the 1870s for mechanical reasons that stopped mattering once typewriters became electric, remain dominant more than a century later despite demonstrably faster alternative layouts existing? David's answer was path dependence — once enough typists were trained on QWERTY and enough machines were built for it, the cost of switching (retraining an entire workforce, replacing an entire installed base) exceeded the efficiency gained by switching, locking in a choice that was never optimal, only early.
+Economic historian Paul David's famous 1985 paper "Clio and the Economics of QWERTY" examined a puzzle that applies almost directly to technology stack decisions: why does the QWERTY keyboard layout, designed in the 1870s for mechanical reasons that stopped mattering once typewriters became electric, remain dominant more than a century later despite demonstrably faster alternative layouts existing? David's answer was path dependence - once enough typists were trained on QWERTY and enough machines were built for it, the cost of switching (retraining an entire workforce, replacing an entire installed base) exceeded the efficiency gained by switching, locking in a choice that was never optimal, only early.
 
-A software stack exhibits the same lock-in dynamic, for the same underlying reason: once a company has hired engineers trained on a specific stack, built institutional knowledge and tooling around it, and structured its hiring pipeline to source from that stack's talent pool, the cost of switching — retraining, rehiring, rewriting — starts to exceed the ongoing cost of staying on a stack that's become comparatively less advantageous over time. This is precisely why Dobrina Systems, in the case study below, ended up on a niche framework chosen for a performance requirement that no longer applied: not because anyone made an irrational decision, but because path dependence, exactly as David's research describes it, made staying on the original choice cheaper in the short term than switching, right up until the accumulated hiring cost made that calculation flip.
+A software stack exhibits the same lock-in dynamic, for the same underlying reason: once a company has hired engineers trained on a specific stack, built institutional knowledge and tooling around it, and structured its hiring pipeline to source from that stack's talent pool, the cost of switching - retraining, rehiring, rewriting - starts to exceed the ongoing cost of staying on a stack that's become comparatively less advantageous over time. This is precisely why Dobrina Systems, in the case study below, ended up on a niche framework chosen for a performance requirement that no longer applied: not because anyone made an irrational decision, but because path dependence, exactly as David's research describes it, made staying on the original choice cheaper in the short term than switching, right up until the accumulated hiring cost made that calculation flip.
 
-The practical lesson from path dependence research isn't "avoid ever choosing anything niche" — some early lock-in is unavoidable and often genuinely worthwhile, the same way QWERTY's initial adoption solved a real problem for the mechanical typewriters of its era. The lesson is that a stack decision should be revisited periodically and explicitly, precisely because path dependence means the original justification silently expiring won't trigger an automatic re-evaluation on its own — someone has to deliberately ask whether the lock-in is still paying for itself, the same forceful question David's research suggests should have been asked about QWERTY decades before it usually was.
+The practical lesson from path dependence research isn't "avoid ever choosing anything niche" - some early lock-in is unavoidable and often genuinely worthwhile, the same way QWERTY's initial adoption solved a real problem for the mechanical typewriters of its era. The lesson is that a stack decision should be revisited periodically and explicitly, precisely because path dependence means the original justification silently expiring won't trigger an automatic re-evaluation on its own - someone has to deliberately ask whether the lock-in is still paying for itself, the same forceful question David's research suggests should have been asked about QWERTY decades before it usually was.
 
 ## Manifera's Approach: Stack Decisions Made With Hiring Cost in View
 
@@ -56,20 +56,20 @@ This is Dutch Management × Vietnamese Mastery applied to technology strategy it
 
 ## Case Study: A Ljubljana Startup's Stack Reckoning
 
-Dobrina Systems, a Ljubljana-based startup, had built its platform on a niche backend framework chosen for a specific early performance requirement that, eighteen months later, no longer applied at the company's actual scale — while the CTO struggled for four months to fill a senior backend role, receiving a fraction of the applicant volume a mainstream-stack posting would have generated.
+Dobrina Systems, a Ljubljana-based startup, had built its platform on a niche backend framework chosen for a specific early performance requirement that, eighteen months later, no longer applied at the company's actual scale - while the CTO struggled for four months to fill a senior backend role, receiving a fraction of the applicant volume a mainstream-stack posting would have generated.
 
 Manifera's Amsterdam team assessed the migration cost to a mainstream stack against the projected hiring cost of continuing on the niche one, recommending a phased migration. The Vietnam pod executed the migration over four months alongside ongoing feature work. The next backend hire, six months later, closed in three weeks.
 
 > *"The framework had been right for a performance problem we no longer had. Nobody had gone back to ask whether the original trade-off was still worth its hiring cost."*
-> — **CTO, Dobrina Systems**
+> - **CTO, Dobrina Systems**
 
-Dobrina's CTO has since added a standing calendar reminder, every twelve months, to explicitly re-ask whether each of the company's major technical dependencies is still justified by a real, current requirement — a deliberate countermeasure to exactly the kind of silent lock-in path dependence research predicts will otherwise go unquestioned indefinitely.
+Dobrina's CTO has since added a standing calendar reminder, every twelve months, to explicitly re-ask whether each of the company's major technical dependencies is still justified by a real, current requirement - a deliberate countermeasure to exactly the kind of silent lock-in path dependence research predicts will otherwise go unquestioned indefinitely.
 
 ## Recognizing Path Dependence Before It Compounds Further
 
-The hardest part of managing path dependence is that it's invisible from the inside while it's accumulating — no single sprint's decision to keep building on the existing stack feels like a lock-in choice, each one is simply the path of least resistance relative to whatever the alternative would cost that particular week. This is exactly the dynamic David's research identified in the QWERTY case: no single typist or manufacturer ever made a dramatic, identifiable decision to lock in an inferior standard, the lock-in emerged from thousands of individually reasonable short-term choices that, in aggregate, made switching progressively more expensive than it had been the year before.
+The hardest part of managing path dependence is that it's invisible from the inside while it's accumulating - no single sprint's decision to keep building on the existing stack feels like a lock-in choice, each one is simply the path of least resistance relative to whatever the alternative would cost that particular week. This is exactly the dynamic David's research identified in the QWERTY case: no single typist or manufacturer ever made a dramatic, identifiable decision to lock in an inferior standard, the lock-in emerged from thousands of individually reasonable short-term choices that, in aggregate, made switching progressively more expensive than it had been the year before.
 
-A useful practical discipline against this: treat any moment when a stack's original justification changes — a performance requirement gets solved differently, a key early engineer who championed the choice leaves, a mainstream alternative matures significantly — as a deliberate trigger to re-run the hiring-cost-versus-switching-cost comparison, rather than letting the original decision persist by default simply because nobody explicitly revisited it. Path dependence isn't reversible for free, but it also isn't permanent — it's a cost that grows the longer it goes unexamined, and shrinks the earlier a team catches it.
+A useful practical discipline against this: treat any moment when a stack's original justification changes - a performance requirement gets solved differently, a key early engineer who championed the choice leaves, a mainstream alternative matures significantly - as a deliberate trigger to re-run the hiring-cost-versus-switching-cost comparison, rather than letting the original decision persist by default simply because nobody explicitly revisited it. Path dependence isn't reversible for free, but it also isn't permanent - it's a cost that grows the longer it goes unexamined, and shrinks the earlier a team catches it.
 
 ## Stack Talent Pool Impact
 
@@ -82,13 +82,13 @@ A useful practical discipline against this: treat any moment when a stack's orig
 
 ## Weighing Stack Choice Deliberately
 
-Before committing to any niche technology, explicitly and deliberately weigh the projected hiring cost and time-to-fill against the technical benefit — and revisit that trade-off periodically as the original justification may no longer apply as the product evolves. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about assessing your current stack's hiring implications.
+Before committing to any niche technology, explicitly and deliberately weigh the projected hiring cost and time-to-fill against the technical benefit - and revisit that trade-off periodically as the original justification may no longer apply as the product evolves. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about assessing your current stack's hiring implications.
 
 ## Frequently Asked Questions
 
 ### (Scenario: CTO choosing a stack for a new project) Should we always choose the most popular technology to make hiring easier?
 
-Not always — popularity is one factor among several, but it's worth weighing explicitly against technical fit rather than being discovered as a hiring cost surprise later, especially for roles you'll need to fill repeatedly.
+Not always - popularity is one factor among several, but it's worth weighing explicitly against technical fit rather than being discovered as a hiring cost surprise later, especially for roles you'll need to fill repeatedly.
 
 ### (Scenario: CTO stuck with a niche stack and a hard-to-fill role) What can we do if we're already on a niche stack and struggling to hire?
 
@@ -100,22 +100,22 @@ Salary premiums of 15-30% and doubled or tripled time-to-hire are common pattern
 
 ### (Scenario: CTO revisiting an old technical decision) How often should we revisit whether our stack choice still makes sense?
 
-Whenever the original technical justification might have changed — a performance requirement that's been outgrown or resolved differently, or after a difficult hiring cycle that suggests the trade-off is costing more than expected.
+Whenever the original technical justification might have changed - a performance requirement that's been outgrown or resolved differently, or after a difficult hiring cycle that suggests the trade-off is costing more than expected.
 
 ### (Scenario: CTO trying to weigh a niche stack against a mainstream one for a new feature) Is it ever worth choosing a niche technology despite the hiring cost?
 
-Yes, when the technical fit is genuinely superior and irreplaceable for the specific problem — the goal is an informed trade-off, not an automatic preference for mainstream technology regardless of fit.
+Yes, when the technical fit is genuinely superior and irreplaceable for the specific problem - the goal is an informed trade-off, not an automatic preference for mainstream technology regardless of fit.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "(Scenario: CTO choosing a stack for a new project) Should we always choose the most popular technology to make hiring easier?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — popularity is one factor among several, worth weighing explicitly against technical fit rather than discovered as a surprise later." } },
+    { "@type": "Question", "name": "(Scenario: CTO choosing a stack for a new project) Should we always choose the most popular technology to make hiring easier?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - popularity is one factor among several, worth weighing explicitly against technical fit rather than discovered as a surprise later." } },
     { "@type": "Question", "name": "(Scenario: CTO stuck with a niche stack and a hard-to-fill role) What can we do if we're already on a niche stack and struggling to hire?", "acceptedAnswer": { "@type": "Answer", "text": "Options include training adjacent-stack engineers, paying the salary premium, or evaluating a migration if the original technical justification no longer applies." } },
     { "@type": "Question", "name": "(Scenario: founder trying to estimate future hiring cost from a stack decision) How much more expensive can a niche stack actually make hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Salary premiums of 15-30% and doubled or tripled time-to-hire are common patterns for genuinely niche or declining technologies." } },
     { "@type": "Question", "name": "(Scenario: CTO revisiting an old technical decision) How often should we revisit whether our stack choice still makes sense?", "acceptedAnswer": { "@type": "Answer", "text": "Whenever the original technical justification might have changed, or after a difficult hiring cycle suggests the trade-off is costing more than expected." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to weigh a niche stack against a mainstream one for a new feature) Is it ever worth choosing a niche technology despite the hiring cost?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when the technical fit is genuinely superior and irreplaceable for the specific problem — the goal is an informed trade-off, not automatic mainstream preference." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to weigh a niche stack against a mainstream one for a new feature) Is it ever worth choosing a niche technology despite the hiring cost?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when the technical fit is genuinely superior and irreplaceable for the specific problem - the goal is an informed trade-off, not automatic mainstream preference." } }
   ]
 }
 </script>

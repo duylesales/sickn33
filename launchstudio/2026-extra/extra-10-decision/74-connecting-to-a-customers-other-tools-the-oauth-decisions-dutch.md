@@ -25,14 +25,14 @@ Het moment dat uw software via OAuth koppelt met het Google Workspace-, Microsof
 
 **U krijgt een digitaal inlogtoken in handen dat namens die klant mag handelen in een extern bedrijfssysteem.**
 
-Dat credential — met name het OAuth **refresh token** — verloopt in de praktijk zelden, blijft maandenlang in uw database staan, en verleent exact de rechten (*scopes*) die u ooit heeft aangevraagd toen de klant op 'Toestaan' klikte. In de meeste AI-prototypes is dat aanzienlijk meer dan de functionaliteit daadwerkelijk nodig heeft.
+Dat credential - met name het OAuth **refresh token** - verloopt in de praktijk zelden, blijft maandenlang in uw database staan, en verleent exact de rechten (*scopes*) die u ooit heeft aangevraagd toen de klant op 'Toestaan' klikte. In de meeste AI-prototypes is dat aanzienlijk meer dan de functionaliteit daadwerkelijk nodig heeft.
 
 Naadloze integraties zijn een van de krachtigste verkoopargumenten voor B2B SaaS. Dit is dan ook geen pleidooi tégen koppelingen, maar een pleidooi voor verantwoord custody-beheer:
 > **Een datalek waarbij opgeslagen OAuth-tokens buitgemaakt worden, is geen inbraak in uw eigen software. Het is een inbraak in de externe bedrijfssystemen van uw klanten, via úw achterdeur.**
 
 ## Vraag om het Absolute Minimum: Scopes Kun Je Niet Terugdraaien
 
-Het toestemmingsscherm (*OAuth consent screen*) dat de klant te zien krijgt wanneer hij zijn externe account koppelt, somt genadeloos op welke rechten uw applicatie opeist. Dit is exact het moment waarop uw betrouwbaarheid wordt gewogen. Meldingen zoals *"Deze app wil al uw e-mails lezen"* of *"Deze app wil uw bestanden inzien en permanent kunnen wissen"* zorgen ervoor dat potentiële klanten de integratie massaal afbreken — zelfs wanneer uw onderliggende feature volstrekt onschuldig is.
+Het toestemmingsscherm (*OAuth consent screen*) dat de klant te zien krijgt wanneer hij zijn externe account koppelt, somt genadeloos op welke rechten uw applicatie opeist. Dit is exact het moment waarop uw betrouwbaarheid wordt gewogen. Meldingen zoals *"Deze app wil al uw e-mails lezen"* of *"Deze app wil uw bestanden inzien en permanent kunnen wissen"* zorgen ervoor dat potentiële klanten de integratie massaal afbreken - zelfs wanneer uw onderliggende feature volstrekt onschuldig is.
 
 Hanteer twee ijzeren principes:
 
@@ -69,16 +69,16 @@ Let daarnaast op de organisatievalkuil: een koppeling die geautoriseerd is door 
 
 Het koppelen van uw software aan giganten zoals Google, Microsoft 365 of Meta is niet puur een technisch vraagstuk. Elk van deze platforms hanteert strenge verificatie- en toelatingsprocedures, en het aanvragen van gevoelige rechten activeert de meest rigoureuze controles.
 
-Voor Google betekent het aanvragen van gevoelige (*sensitive*) of beperkte (*restricted*) scopes een formeel verificatietraject: u moet een demonstratievideo aanleveren die exact toont hoe de data wordt gebruikt, uw privacybeleid moet aan strenge juridische clausules voldoen, uw domeineigendom moet worden geverifieerd via Google Search Console, en voor restricted scopes (zoals volledige toegang tot Gmail of Google Drive) is een jaarlijkse security-audit door een geaccrediteerde externe partij verplicht — wat al snel duizenden euro's kost. Zolang deze verificatie niet is afgerond, toont Google een angstaanjagend rood waarschuwingsscherm (*"Deze app is niet geverifieerd door Google"*) en geldt er een harde limiet van maximaal 100 gebruikers.
+Voor Google betekent het aanvragen van gevoelige (*sensitive*) of beperkte (*restricted*) scopes een formeel verificatietraject: u moet een demonstratievideo aanleveren die exact toont hoe de data wordt gebruikt, uw privacybeleid moet aan strenge juridische clausules voldoen, uw domeineigendom moet worden geverifieerd via Google Search Console, en voor restricted scopes (zoals volledige toegang tot Gmail of Google Drive) is een jaarlijkse security-audit door een geaccrediteerde externe partij verplicht - wat al snel duizenden euro's kost. Zolang deze verificatie niet is afgerond, toont Google een angstaanjagend rood waarschuwingsscherm (*"Deze app is niet geverifieerd door Google"*) en geldt er een harde limiet van maximaal 100 gebruikers.
 
-Dit verificatieproces duurt in de praktijk tussen de twee en zes weken. Oprichters ontdekken dit regelmatig pas veertien dagen vóór hun geplande productlancering — een fatale timing. Begin hier dus direct mee, of verifieer vóóraf of u met een engere scope het verificatietraject kunt omzeilen.
+Dit verificatieproces duurt in de praktijk tussen de twee en zes weken. Oprichters ontdekken dit regelmatig pas veertien dagen vóór hun geplande productlancering - een fatale timing. Begin hier dus direct mee, of verifieer vóóraf of u met een engere scope het verificatietraject kunt omzeilen.
 
 Het correct inrichten van veilige token-opslag, versleuteling, automatische verversingslussen en foutopsporing is essentieel productiewerk. LaunchStudio, ondersteund door meer dan 11 jaar ervaring in software engineering bij Manifera, bouwt OAuth-integraties die feilloos omgaan met expiraties, herautorisaties en platform-verificaties. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Wat U de Klant Moet Tonen in het Integratiescherm
 
 Drie essentiële informatieblokken maken het verschil tussen een integratiescherm dat vertrouwen wekt en eentje dat vragen oproept, en ze kosten slechts enkele uren om te bouwen:
 
-**1. Welke koppelingen actief zijn en wat ze exact mogen doen**, geformuleerd in glasheldere mensentaal: *"Gekoppeld met Google Calendar via anna@bedrijf.nl — kan afspraken inzien en nieuwe boekingen aanmaken."* Zowel de eindgebruiker als zijn strenge IT-beheerder willen dit in één oogopslag kunnen verifiëren zónder in de configuratieschermen van Google of Microsoft te moeten graven.
+**1. Welke koppelingen actief zijn en wat ze exact mogen doen**, geformuleerd in glasheldere mensentaal: *"Gekoppeld met Google Calendar via anna@bedrijf.nl - kan afspraken inzien en nieuwe boekingen aanmaken."* Zowel de eindgebruiker als zijn strenge IT-beheerder willen dit in één oogopslag kunnen verifiëren zónder in de configuratieschermen van Google of Microsoft te moeten graven.
 
 **2. Wanneer de synchronisatie voor het laatst succesvol heeft gewerkt**, voorzien van een heldere tijdstempel (*"Laatste synchronisatie: vandaag om 11:42 uur"*). Zo ziet de klant direct dat de koppeling operationeel is vóórdat hij twijfelt over ontbrekende data.
 
@@ -104,7 +104,7 @@ De beveiligingsaudit van LaunchStudio bracht nog twee kritieke kwetsbaarheden aa
 **Resultaat:** Binnen drie werkdagen saneerde LaunchStudio het koppelingssysteem: alle tokens kregen database-encryptie via AES-256, een centrale worker ving refresh-conflicten af, en bij een verlopen autorisatie verscheen direct een waarschuwingsbanner met e-mailnotificatie. De scopes werden teruggebracht naar uitsluitend de agenda's die de app zelf beheert (`calendar.events`), waardoor Google de verificatie binnen vier werkdagen zonder dure security-assessment goedkeurde.
 
 > *"Elf praktijken dachten dat hun agenda's vlekkeloos synchroniseerden. Mijn scherm zei overal 'Verbonden', maar achter de schermen lag alles al maanden stil."*
-> — **Nienke Bakker, Oprichter, Afsprakenlijn**
+> - **Nienke Bakker, Oprichter, Afsprakenlijn**
 
 **Kosten & Doorlooptijd:** OAuth-tokenversleuteling, storingsmonitoring en scope-optimalisatie opgeleverd in 3 werkdagen.
 

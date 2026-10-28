@@ -33,7 +33,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 
 Twee bureaus ontvangen in dezelfde week exact dezelfde aanvraag: een oprichter met een in Bolt gebouwd boekingsplatform wil binnen een maand live. De accountmanager van het eerste bureau opent een leeg offertedocument en begint vanaf nul: een intakegesprek, drie dagen intern overleg over de begroting en een maatwerkdocument speciaal voor deze prospect. De accountmanager van het tweede bureau opent één overzichtelijke pagina met drie vaste pakketten, stelt tijdens de intake vier gerichte kwalificatievragen en heeft nog vóór het einde van de werkdag een passend voorstel in de mailbox van de klant liggen.
 
-De onderliggende dienstverlening is identiek. De verkoopcyclus verschilt als dag en nacht. En — dit is het inzicht dat bureaus die de overstap nog niet hebben gemaakt steevast verrast — het gerealiseerde margepercentage is aanzienlijk hoger. Het tweede bureau hoeft zijn prijslogica en interne operationele processen immers niet bij elk individueel project opnieuw uit te vinden.
+De onderliggende dienstverlening is identiek. De verkoopcyclus verschilt als dag en nacht. En - dit is het inzicht dat bureaus die de overstap nog niet hebben gemaakt steevast verrast - het gerealiseerde margepercentage is aanzienlijk hoger. Het tweede bureau hoeft zijn prijslogica en interne operationele processen immers niet bij elk individueel project opnieuw uit te vinden.
 
 Dit is het fundament onder een geproductiseerd ('productized') launch-aanbod in plaats van eindeloze maatwerkoffertes per project: hoe u uw diensten indeelt in twee of drie vaste niveaus, hoe u deze beprijst en in welke situaties maatwerk toch de juiste keuze blijft.
 
@@ -41,7 +41,7 @@ Dit is het fundament onder een geproductiseerd ('productized') launch-aanbod in 
 
 Maatwerk offreren voelt uiterst zorgvuldig, en op een beperkt vlak is dat ook zo: elk voorstel sluit naadloos aan op de specifieke applicatie die voor u ligt. Maar deze schijnbare precisie kent een verborgen prijs die zelden eerlijk wordt meegerekend. Elke maatwerkofferte vereist een compleet traject van scoping naar calculatie vanaf nul, elk verkoopgesprek is een open prijsonderhandeling zonder referentiekader en elke interne overdracht van sales naar delivery vraagt om een uitvoerige toelichting op een unieke scope.
 
-Vaste pakketten ruilen een klein beetje prijsspecifieke nauwkeurigheid in — sommige projecten vallen iets ruimer uit binnen hun staffel, andere iets krapper — voor een enorme afname van verkoopwrijving, interne afstemmingstijd en onbetaalde uren die anders ongemerkt uw marge uithollen, een thema dat we uitgebreid analyseren in ons artikel over [de margerekening achter een productized launch service](https://launchstudio.eu/nl/#packages).
+Vaste pakketten ruilen een klein beetje prijsspecifieke nauwkeurigheid in - sommige projecten vallen iets ruimer uit binnen hun staffel, andere iets krapper - voor een enorme afname van verkoopwrijving, interne afstemmingstijd en onbetaalde uren die anders ongemerkt uw marge uithollen, een thema dat we uitgebreid analyseren in ons artikel over [de margerekening achter een productized launch service](https://launchstudio.eu/nl/#packages).
 
 Deze afweging pakt vrijwel altijd positief uit zodra een bureau meer dan vier of vijf van dit soort opdrachten per jaar draait. Onder dat volume weegt de investering van het opzetten van een vaste menustructuur wellicht niet op tegen de baten, en blijft ad-hoc offreren een verdedigbaar vertrekpunt.
 
@@ -49,9 +49,9 @@ Deze afweging pakt vrijwel altijd positief uit zodra een bureau meer dan vier of
 
 De valkuil bij productization is het creëren van te veel niveaus om elke denkbare wens van een klant te vangen. Dit werkt averechts: meer opties leiden tot keuzestress bij de klant en creëren grensgevallen die nergens soepel in passen. Drie pakketten, gebaseerd op fundamenteel verschillende behoeften in plaats van willekeurige prijspunten, werken in de praktijk optimaal:
 
-1. **Niveau 1 — Launch Fix:** Voor prototypes die al dicht bij productierijpheid zijn en gerichte hardening nodig hebben: beveiligingschecks en fixes, basis hosting en deployment, en essentiële correcties in data-opslag en API-koppelingen. Dit sluit direct aan op de inkoopkosten van het Launch Ready-pakket van LaunchStudio (€800 tot €3.500) en is ideaal voor een project waarvan de scoping grotendeels schoon terugkwam met slechts enkele afgebakende verbeterpunten.
-2. **Niveau 2 — Launch & Grow:** Voor prototypes die omvangrijker backend-werk vereisen: een volledige betaalkoppeling (zoals Stripe of Mollie), professioneel ingerichte authenticatie en autorisatie, en beheerde cloudhosting inclusief monitoring en back-ups. Dit sluit aan op de bandbreedte van €2.500 tot €7.500 plus het doorlopende managed-plan van €49/maand. Dit is het juiste pakket voor een klant wiens prototype structurele gaten vertoont, zoals statische data, ontbrekende server-side rechten of een losstaande test-afrekenpagina.
-3. **Niveau 3 — Custom Build:** Voor projecten die de kaders van de eerste twee pakketten overstijgen: prototypes die een substantiële architectuurherbouw vragen, complexe branchespecifieke wetgeving raken of waarvan de scoping aantoont dat een vast pakket onverantwoord zou zijn. Dit niveau heeft bewust geen vaste prijs op het menu. Het is de eerlijke erkenning dat sommige softwareprojecten maatwerk vereisen en dat het forceren van een niet-passend project in een vast pakket voor beide partijen schadelijk is.
+1. **Niveau 1 - Launch Fix:** Voor prototypes die al dicht bij productierijpheid zijn en gerichte hardening nodig hebben: beveiligingschecks en fixes, basis hosting en deployment, en essentiële correcties in data-opslag en API-koppelingen. Dit sluit direct aan op de inkoopkosten van het Launch Ready-pakket van LaunchStudio (€800 tot €3.500) en is ideaal voor een project waarvan de scoping grotendeels schoon terugkwam met slechts enkele afgebakende verbeterpunten.
+2. **Niveau 2 - Launch & Grow:** Voor prototypes die omvangrijker backend-werk vereisen: een volledige betaalkoppeling (zoals Stripe of Mollie), professioneel ingerichte authenticatie en autorisatie, en beheerde cloudhosting inclusief monitoring en back-ups. Dit sluit aan op de bandbreedte van €2.500 tot €7.500 plus het doorlopende managed-plan van €49/maand. Dit is het juiste pakket voor een klant wiens prototype structurele gaten vertoont, zoals statische data, ontbrekende server-side rechten of een losstaande test-afrekenpagina.
+3. **Niveau 3 - Custom Build:** Voor projecten die de kaders van de eerste twee pakketten overstijgen: prototypes die een substantiële architectuurherbouw vragen, complexe branchespecifieke wetgeving raken of waarvan de scoping aantoont dat een vast pakket onverantwoord zou zijn. Dit niveau heeft bewust geen vaste prijs op het menu. Het is de eerlijke erkenning dat sommige softwareprojecten maatwerk vereisen en dat het forceren van een niet-passend project in een vast pakket voor beide partijen schadelijk is.
 
 ## Elk Pakket Beprijzen met Ingebouwde Marge
 
@@ -71,7 +71,7 @@ Vermijd het benoemen van interne kostenposten of onderaannemersmarges. De klant 
 
 Zelfs bij een strakke drietrapsstructuur komt u regelmatig projecten tegen die op de grens balanceren: een project dat in grote lijnen binnen Niveau 1 valt, maar één specifieke Niveau 2-component vereist, zoals een complete Stripe-integratie vanaf nul.
 
-De beproefde werkwijze is een basispakket gecombineerd met een vaste add-on: *"Niveau 1 basis, aangevuld met de module Betaalintegratie voor een vaste meerprijs van [X]."* Zo blijft uw menustructuur intact zonder dat u het hele project geforceerd moet opschalen of korting moet geven. Door twee of drie veelvoorkomende add-ons aan uw menukaart toe te voegen — zoals een betaalkoppeling, een AVG/DPA-compliancescan of een spoedoplevering — vangt u 90% van de uitzonderingen moeiteloos af.
+De beproefde werkwijze is een basispakket gecombineerd met een vaste add-on: *"Niveau 1 basis, aangevuld met de module Betaalintegratie voor een vaste meerprijs van [X]."* Zo blijft uw menustructuur intact zonder dat u het hele project geforceerd moet opschalen of korting moet geven. Door twee of drie veelvoorkomende add-ons aan uw menukaart toe te voegen - zoals een betaalkoppeling, een AVG/DPA-compliancescan of een spoedoplevering - vangt u 90% van de uitzonderingen moeiteloos af.
 
 ## Niet Alleen de Prijs, Maar Ook de Oplevering Standaardiseren
 
@@ -79,7 +79,7 @@ De winst van productization ontstaat doordat de interne doorlooptijd bij herhali
 
 Ontwikkel voor elk niveau een vaste checklist die uw team consequent hanteert: dezelfde scopingvragen in dezelfde volgorde, vaste e-mailsjablonen voor de kickoff, een vast ritme voor tussentijdse statusupdates en een uniform format voor de overdracht naar uw technische partner. Dit is operationeel werk dat men vaak overslaat, maar zonder processtandaardisatie blijft elk project achter de schermen evenveel ad-hoc tijd opslokken als voorheen.
 
-Een waardevolle discipline hierbij: ga na uw eerste vijf of zes trajecten binnen een bepaald niveau rustig zitten en schrijf de daadwerkelijke stappen op die hebben plaatsgevonden, in chronologische volgorde, over al die projecten heen — niet de stappen die u van plan was te volgen, maar de stappen die feitelijk zijn gezet. De patronen die zich bij het merendeel van die trajecten herhalen, vormen uw standaardchecklist; de onderdelen die aanzienlijk varieerden, zijn uw signaal voor de vraag waar de grens van het pakket moet worden bijgesteld, of waar een vaste add-on op zijn plek is in plaats van die variatie elke keer als een eenmalige uitzondering te behandelen.
+Een waardevolle discipline hierbij: ga na uw eerste vijf of zes trajecten binnen een bepaald niveau rustig zitten en schrijf de daadwerkelijke stappen op die hebben plaatsgevonden, in chronologische volgorde, over al die projecten heen - niet de stappen die u van plan was te volgen, maar de stappen die feitelijk zijn gezet. De patronen die zich bij het merendeel van die trajecten herhalen, vormen uw standaardchecklist; de onderdelen die aanzienlijk varieerden, zijn uw signaal voor de vraag waar de grens van het pakket moet worden bijgesteld, of waar een vaste add-on op zijn plek is in plaats van die variatie elke keer als een eenmalige uitzondering te behandelen.
 
 ## Het Menu Verkopen Zonder Dat Het Goedkoop Oogt
 
@@ -96,20 +96,20 @@ Door deze grens intern expliciet te hanteren, voorkomt u dat een complex maatwer
 
 [LaunchStudio](https://launchstudio.eu/nl/) is exact ontworpen om dit soort pakketstructuren mogelijk te maken: een vaste, voorspelbare inkoopprijs per niveau, ondersteund door [Manifera's ervaring met 160+ gerealiseerde softwareprojecten](https://www.manifera.com/services/offshore-software-development/). Zo bouwt uw bureau op betrouwbare marges die project na project standhouden.
 
-Wilt u uw eigen vaste dienstenmenu inrichten? [Plan een strategisch overleg](https://launchstudio.eu/nl/#contact) — één gesprek, drie heldere pakketten, direct klaar voor gebruik.
+Wilt u uw eigen vaste dienstenmenu inrichten? [Plan een strategisch overleg](https://launchstudio.eu/nl/#contact) - één gesprek, drie heldere pakketten, direct klaar voor gebruik.
 
 ## Echt voorbeeld
 
 ### Studio Hendriks: Een Gehalveerde Verkoopcyclus
 
-Lotte Hendriks runt een digitaal bureau van vijf personen in Amersfoort. Zij offreerde ruim een jaar lang elk launch-project voor AI-prototypes volledig op maat. Gemiddeld zat er negen dagen tussen de eerste aanvraag en een getekende overeenkomst — dagen die grotendeels opgingen aan intern gecalculeer en heen-en-weer overleg over uren en tarieven.
+Lotte Hendriks runt een digitaal bureau van vijf personen in Amersfoort. Zij offreerde ruim een jaar lang elk launch-project voor AI-prototypes volledig op maat. Gemiddeld zat er negen dagen tussen de eerste aanvraag en een getekende overeenkomst - dagen die grotendeels opgingen aan intern gecalculeer en heen-en-weer overleg over uren en tarieven.
 
 Nadat zij op basis van haar projecthistorie een drietrapsmenu introduceerde, met de vaste tarieven van LaunchStudio als inkoopfundament, daalde de gemiddelde doorlooptijd van intake naar handtekening naar minder dan drie dagen. Prospects konden zich aan de hand van de menukaart vooraf al grotendeels zelf indelen in het juiste pakket.
 
 **Resultaat:** Studio Hendriks sloot in het daaropvolgende kwartaal zes launch-opdrachten, tegenover vier in het kwartaal ervoor, zónder uitbreiding van het team. De tijd die werd bespaard op calculaties en onderhandelingen werd volledig ingezet voor inhoudelijke klantgesprekken.
 
 > *"Vroeger zag ik enorm op tegen het offreren van dit soort projecten, omdat elke aanvraag voelde als een sprong in het diepe. Nu voeren we een menugesprek in plaats van een onderhandeling, en weet ik vooraf exact wat mijn marge zal zijn."*
-> — **Lotte Hendriks, Oprichter, Studio Hendriks (Amersfoort)**
+> - **Lotte Hendriks, Oprichter, Studio Hendriks (Amersfoort)**
 
 ## Veelgestelde Vragen
 

@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Het verzoek is vier regels kort en volkomen redelijk: *"Wilt u alstublieft mijn account en alle gegevens die u over mij bewaart definitief wissen?"* Je privacyverklaring belooft dat je dit netjes doet. Je applicatie heeft een rode knop 'Account verwijderen' die één rij uit de tabel `users` wist — terwijl er op grofweg elf andere plekken nog steeds herleidbare persoonsgegevens van deze gebruiker rondzwerven.
+Het verzoek is vier regels kort en volkomen redelijk: *"Wilt u alstublieft mijn account en alle gegevens die u over mij bewaart definitief wissen?"* Je privacyverklaring belooft dat je dit netjes doet. Je applicatie heeft een rode knop 'Account verwijderen' die één rij uit de tabel `users` wist - terwijl er op grofweg elf andere plekken nog steeds herleidbare persoonsgegevens van deze gebruiker rondzwerven.
 
 Gegevensverwijdering is het duidelijkste voorbeeld van een belofte die eenvoudig opgeschreven is in een juridische policy, maar technisch aanzienlijke diepgang vereist. Het is bovendien functionaliteit die AI-codeertools vrijwel nooit uit zichzelf genereren, omdat niets in het beschrijven van een prototype impliceert dat data ooit daadwerkelijk moet verdwijnen.
 
@@ -32,7 +32,7 @@ Begin eens met het in kaart brengen van álle locaties waar de gegevens van éé
 
 **Het gebruikersrecord zelf.** Het eenvoudigste deel, en meestal het enige dat de wisknop daadwerkelijk verwijdert.
 
-**Alles wat de gebruiker heeft aangemaakt.** Boekingen, geplaatste advertenties, chatberichten, reacties en bestanden. Een deel is puur van henzelf; een ander deel raakt direct andere gebruikers — en daar begint de complexiteit.
+**Alles wat de gebruiker heeft aangemaakt.** Boekingen, geplaatste advertenties, chatberichten, reacties en bestanden. Een deel is puur van henzelf; een ander deel raakt direct andere gebruikers - en daar begint de complexiteit.
 
 **Geüploade bestanden in cloudopslag.** Bestanden in Supabase Storage of S3 hebben een eigen levenscyclus en verdwijnen niet automatisch wanneer een database-rij wordt gewist.
 
@@ -44,7 +44,7 @@ Begin eens met het in kaart brengen van álle locaties waar de gegevens van éé
 
 Een verwijderprocedure die enkel het eerste punt raakt en de overige negeert, is geen gegevensverwijdering. Het is simpelweg het verbergen van een account.
 
-## De gegevens die je mag — en soms verplicht moet — bewaren
+## De gegevens die je mag - en soms verplicht moet - bewaren
 
 Het recht op gegevenswissing onder de AVG (GDPR) is niet absoluut. Inzicht in de uitzonderingen voorkomt zowel ondoordacht overmatig wissen als de paniek dat je je complete financiële administratie zou moeten vernietigen:
 
@@ -64,7 +64,7 @@ Voor alle data die verweven is met andere gebruikers of met je eigen bedrijfshis
 
 Een boeking verandert in een anonieme boeking die nog steeds meetelt in de omzethistorie en bezettingsgraad van een locatie. Een recensie behoudt zijn tekst en sterrenscore, maar verliest de naam en profielfoto van de auteur. Een conversatie blijft leesbaar voor de overblijvende gebruiker, waarbij de gesprekspartner wordt getoond als "Verwijderde gebruiker".
 
-Het cruciale detail: anonimisering moet waterdicht zijn. Het vervangen van een voornaam terwijl je het e-mailadres, telefoonnummer, woonadres of een uniek account-ID laat staan, is geen anonimisering — het is slechts een ander label. Als de overgebleven velden iemand direct of indirect kunnen identificeren, is er juridisch nog steeds sprake van persoonsgegevens.
+Het cruciale detail: anonimisering moet waterdicht zijn. Het vervangen van een voornaam terwijl je het e-mailadres, telefoonnummer, woonadres of een uniek account-ID laat staan, is geen anonimisering - het is slechts een ander label. Als de overgebleven velden iemand direct of indirect kunnen identificeren, is er juridisch nog steeds sprake van persoonsgegevens.
 
 ## Het probleem van referentiële integriteit in je database
 
@@ -72,7 +72,7 @@ Verwijder je een gebruikersrij waar andere tabellen naar verwijzen (foreign keys
 
 Dit is de praktische reden waarom gegevenswissing een software-engineeringtaak is en geen simpel knopje. Voor elke databaserelatie moet vooraf een expliciete keuze worden vastgelegd in het databaseschema (`ON DELETE SET NULL`, `ON DELETE CASCADE` of een aangepaste triggerfunctie die velden anonimiseert), in plaats van te hopen dat de frontend-code dit netjes afhandelt.
 
-Applicaties die dit overslaan, eindigen met een verwijderfunctie die niemand durft uit te voeren. Verwijderverzoeken worden dan handmatig afgehandeld met gevaarlijke SQL-scripts — en uiteindelijk, door tijdgebrek, helemaal niet meer.
+Applicaties die dit overslaan, eindigen met een verwijderfunctie die niemand durft uit te voeren. Verwijderverzoeken worden dan handmatig afgehandeld met gevaarlijke SQL-scripts - en uiteindelijk, door tijdgebrek, helemaal niet meer.
 
 ## Externe diensten en backups, eerlijk uitgelegd
 
@@ -111,7 +111,7 @@ Vrijwel elke oprichter die deze test voor het eerst uitvoert, ontdekt persoonsge
 
 Dit is overzichtelijk, afgebakend ingenieurswerk dat een permanent en robuust antwoord biedt op vragen die elke zakelijke klant uiteindelijk stelt. LaunchStudio richt dit in als onderdeel van het productierijp maken van AI-gebouwde software: een datamatrix per datatype (wissen, anonimiseren of bewaren), regels op databaseschemaniveau zodat er geen zwevende data achterblijft, geautomatiseerde opschoning van bestanden en externe API's, automatische retentie-routines, een self-service flow met bedenktijd en sluitende documentatie voor privacy-audits.
 
-De interface die je hebt ontwikkeld in Lovable blijft exact behouden. De engineering is van Manifera — elf jaar ervaring met bedrijfskritische systemen voor partijen zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad — en maakt deel uit van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages).
+De interface die je hebt ontwikkeld in Lovable blijft exact behouden. De engineering is van Manifera - elf jaar ervaring met bedrijfskritische systemen voor partijen zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad - en maakt deel uit van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages).
 
 Wist jouw applicatie momenteel slechts één enkele databaserij? [Beschrijf je project](https://launchstudio.eu/nl/#contact) en wij brengen binnen één werkdag in kaart wat een veilige verwijderprocedure vereist.
 
@@ -119,7 +119,7 @@ Wist jouw applicatie momenteel slechts één enkele databaserij? [Beschrijf je p
 
 Verwijderverzoeken van gebruikers vormen slechts de helft van het vraagstuk. De grotere helft betreft data die uit zichzelf moet verdwijnen. Dit is waar AI-apps geruisloos risico's opstapelen, omdat een gegenereerd prototype standaard nooit iets opruimt.
 
-**Koppel een vaste bewaartermijn aan elk datatype.** Accounts die al meerdere jaren inactief zijn. Oude chatsessies van de helpdesk. Applicatielogs en audit-trails. Foutrapporten met request payloads. Verlopen exports in cloudopslag. Concepten die halverwege zijn verlaten. Elk datatype verdient een bewaartermijn — een zakelijke beslissing, geen puur technische.
+**Koppel een vaste bewaartermijn aan elk datatype.** Accounts die al meerdere jaren inactief zijn. Oude chatsessies van de helpdesk. Applicatielogs en audit-trails. Foutrapporten met request payloads. Verlopen exports in cloudopslag. Concepten die halverwege zijn verlaten. Elk datatype verdient een bewaartermijn - een zakelijke beslissing, geen puur technische.
 
 **Automatiseer de opruiming.** Een bewaarbeleid dat afhankelijk is van handmatige acties is een dode letter. Een geplande cronjob die periodiek verouderde data wist en rapporteert hoeveel records zijn opgeruimd, is dat wel.
 
@@ -135,7 +135,7 @@ Het oneindig bewaren van persoonsgegevens is precies waar toezichthouders en zak
 
 Een correct uitgevoerde verwijdering is per definitie onomkeerbaar. Dat introduceert direct een menselijk risico: vergissingen.
 
-Een gebruiker die in een vlaag van frustratie zijn account wist en een uur later spijt heeft, een supportmedewerker die per ongeluk het verkeerde account aanklikt, of een retentiescript met een verkeerd geconfigureerde datumfilter — al deze situaties komen regelmatig voor, en geen enkele is te herstellen zodra data fysiek gewist is.
+Een gebruiker die in een vlaag van frustratie zijn account wist en een uur later spijt heeft, een supportmedewerker die per ongeluk het verkeerde account aanklikt, of een retentiescript met een verkeerd geconfigureerde datumfilter - al deze situaties komen regelmatig voor, en geen enkele is te herstellen zodra data fysiek gewist is.
 
 De beproefde standaard is een **bedenktijd (grace period)**: markeer het record direct als verwijderd (`deleted_at`), sluit de gebruiker onmiddellijk buiten van de applicatie zodat de verwijdering direct voelbaar is, en wis de data pas na een vooraf vastgestelde periode definitief (bijvoorbeeld na 14 dagen).
 
@@ -156,9 +156,9 @@ In zeven werkdagen werd het complete proces herzien: een datamatrix over veertie
 **Resultaat:** beide leden ontvingen een feitelijk en geruststellend rapport van wat er exact was verwijderd en geanonimiseerd. Vier maanden later doorstond het platform glansrijk een formele privacy-audit van een deelnemende gemeente, waarbij de gegevensverwijdering expliciet als pluspunt werd genoemd.
 
 > *"In mijn privacyverklaring stond dat mensen het recht hadden om vergeten te worden. In de praktijk had ik een knop gebouwd die alleen hun inlog verborg en alle gevoelige data gewoon liet staan."*
-> — **Hanneke Doorn, Oprichter, Buurtkracht (Zwolle)**
+> - **Hanneke Doorn, Oprichter, Buurtkracht (Zwolle)**
 
-**Kosten & Doorlooptijd:** € 3.400 (datamatrix, schemaregels, API-integraties derden, self-service flow, geautomatiseerde retentie) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 3.400 (datamatrix, schemaregels, API-integraties derden, self-service flow, geautomatiseerde retentie) - afgerond in 7 werkdagen.
 
 ## Veelgestelde vragen
 

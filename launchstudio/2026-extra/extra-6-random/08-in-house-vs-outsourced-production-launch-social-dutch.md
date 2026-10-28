@@ -1,4 +1,4 @@
-🚌 Iris Hendricks bouwde LabRooster, een lab-planningssysteem als SaaS voor onderzoeksfaciliteiten, met Bolt. Ze huurde een freelancer in om het productieklaar te maken. Drie weken later reageerde hij niet meer — geen overdrachtsgesprek, geen laatste commit-bericht, niets. 😳
+🚌 Iris Hendricks bouwde LabRooster, een lab-planningssysteem als SaaS voor onderzoeksfaciliteiten, met Bolt. Ze huurde een freelancer in om het productieklaar te maken. Drie weken later reageerde hij niet meer - geen overdrachtsgesprek, geen laatste commit-bericht, niets. 😳
 
 Het engste was niet dat er iets kapot was. Het was dat niemand wist wat er was veranderd. 🧠
 
@@ -11,7 +11,7 @@ Het engste was niet dat er iets kapot was. Het was dat niemand wist wat er was v
 ✅ In kaart gebracht welke wijzigingen af waren versus halverwege verlaten
 ✅ De ontbrekende documentatie herbouwd voordat er ook maar één nieuwe functie werd aangeraakt
 
-Bij **LaunchStudio** zijn we Manifera's team van 120+ technici — dezelfde groep die 160+ projecten heeft opgeleverd voor klanten zoals Vodafone en TNO — met continuïteit die structureel is in plaats van persoonlijk. 🛡️
+Bij **LaunchStudio** zijn we Manifera's team van 120+ technici - dezelfde groep die 160+ projecten heeft opgeleverd voor klanten zoals Vodafone en TNO - met continuïteit die structureel is in plaats van persoonlijk. 🛡️
 
 Haar resultaat: LabRooster relanceerde acht dagen later dan gepland naar zijn drie pilotlabs, maar met een gedocumenteerde, stabiele codebase en een papieren spoor dat haar volgende contractor nooit meer helemaal opnieuw hoeft te reconstrueren. 🚀
 

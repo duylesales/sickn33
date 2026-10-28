@@ -1,6 +1,6 @@
-🔍 Priya Nataraj testte haar met **Windsurf** gebouwde freelance-marktplaats vijf weken lang foutloos — als enige gebruiker. Ze zag nooit wat er gebeurde zodra freelancers en klanten tegelijk live waren. 🧠
+🔍 Priya Nataraj testte haar met **Windsurf** gebouwde freelance-marktplaats vijf weken lang foutloos - als enige gebruiker. Ze zag nooit wat er gebeurde zodra freelancers en klanten tegelijk live waren. 🧠
 
-Cursor en Bolt zijn niet slecht in beveiliging omdat de modellen achteloos zijn — ze zijn geoptimaliseerd om een smoke test te doorstaan, niet om een tweede echte gebruiker te overleven.
+Cursor en Bolt zijn niet slecht in beveiliging omdat de modellen achteloos zijn - ze zijn geoptimaliseerd om een smoke test te doorstaan, niet om een tweede echte gebruiker te overleven.
 
 ❌ RLS opgezet in het schema, maar elke `projects`- en `payouts`-tabel leesbaar voor elke geauthenticeerde gebruiker
 ❌ Escrow-vrijgavelogica die volledig client-side draaide, zonder server-side controle voordat er geld werd verplaatst
@@ -12,7 +12,7 @@ Cursor en Bolt zijn niet slecht in beveiliging omdat de modellen achteloos zijn 
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Priya lanceerde volgens schema met 340 freelancers aan boord in de eerste maand en nul incidenten van cross-account data-blootstelling. (€3.100 (Launch & Grow Pakket) — productieklaar en uitgerold in 9 werkdagen.) 🚀
+Priya lanceerde volgens schema met 340 freelancers aan boord in de eerste maand en nul incidenten van cross-account data-blootstelling. (€3.100 (Launch & Grow Pakket) - productieklaar en uitgerold in 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/cursor-vs-bolt-vs-launchstudio-finish-saas
 

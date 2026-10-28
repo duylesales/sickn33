@@ -23,7 +23,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Every AI prototype to production story has a moment nobody writes down. It is not the moment the demo works, and it is not the moment the domain goes live. It is the quieter moment in between, when responsibility for the app stops sitting with the tool that generated it and starts sitting with a person. Most founders never notice that moment happening, which is exactly why it goes badly.
 
-Lovable, Bolt, Cursor and v0 are extraordinary at the building part. What none of them do — because it is not their job — is operate what they built. They do not get paged at night. They do not decide what happens to a customer's data when that customer leaves. They do not know that your biggest client runs payroll on the 25th. The handover from "a tool made this" to "someone runs this" is the real work of going live, and it has a shape you can plan for.
+Lovable, Bolt, Cursor and v0 are extraordinary at the building part. What none of them do - because it is not their job - is operate what they built. They do not get paged at night. They do not decide what happens to a customer's data when that customer leaves. They do not know that your biggest client runs payroll on the 25th. The handover from "a tool made this" to "someone runs this" is the real work of going live, and it has a shape you can plan for.
 
 ## Two Jobs That Look Like One
 
@@ -37,13 +37,13 @@ Operating starts the day someone other than you relies on the app. From that day
 - Is there a record of who did what, when?
 - Is there one person who is clearly responsible for all of the above?
 
-An AI prototype answers "no" or "nobody knows" to almost all of them, and that is not a flaw in the tool. The tool was asked to build, and it built. The handover is the step where somebody deliberately answers those questions — and where the 80% of AI-built projects that never reach production usually stall.
+An AI prototype answers "no" or "nobody knows" to almost all of them, and that is not a flaw in the tool. The tool was asked to build, and it built. The handover is the step where somebody deliberately answers those questions - and where the 80% of AI-built projects that never reach production usually stall.
 
 ## What Actually Changes Hands
 
 It helps to be specific. When an AI prototype moves to production, five distinct things change owner. Each one is small on its own. Together they are the difference between a demo and a product.
 
-**The secrets.** During building, API keys live wherever the tool put them — often in frontend code, sometimes in a settings panel you never opened again. At handover, every key needs a single known home on the server side, a list of who can see it, and a plan for rotating it if it leaks.
+**The secrets.** During building, API keys live wherever the tool put them - often in frontend code, sometimes in a settings panel you never opened again. At handover, every key needs a single known home on the server side, a list of who can see it, and a plan for rotating it if it leaks.
 
 **The data.** A prototype's database is a sketchpad. Production data is a liability you hold on behalf of other people. The handover means deciding where it lives (for EU founders, ideally in an EU region), how it is backed up, and how long you keep it.
 
@@ -51,11 +51,11 @@ It helps to be specific. When an AI prototype moves to production, five distinct
 
 **The alarms.** A prototype fails silently because nobody is watching. A production app needs at least an uptime check and error tracking that reach a real phone.
 
-**The accountability.** Someone's name goes next to each of the four items above. For a solo founder, that might be you for some and a partner for others — but it cannot be "the AI tool," because the tool will not show up when something breaks.
+**The accountability.** Someone's name goes next to each of the four items above. For a solo founder, that might be you for some and a partner for others - but it cannot be "the AI tool," because the tool will not show up when something breaks.
 
 ## Why the AI Prototype to Production Handover Gets Skipped
 
-The handover gets skipped for an understandable reason: nothing forces it. The prototype keeps working. The link keeps opening. There is no error message that says "you have not decided who is responsible for backups." The first signal usually arrives as an incident — a customer who cannot log in, a charge that went through twice, a rival founder who politely emails to say your admin page is public.
+The handover gets skipped for an understandable reason: nothing forces it. The prototype keeps working. The link keeps opening. There is no error message that says "you have not decided who is responsible for backups." The first signal usually arrives as an incident - a customer who cannot log in, a charge that went through twice, a rival founder who politely emails to say your admin page is public.
 
 There is also a psychological reason. Founders who built their product with AI often feel, correctly, that they have already done something difficult. Being told there is another phase feels like being told the finish line moved. It did not move; it was always there, just not visible from inside the builder.
 
@@ -79,7 +79,7 @@ That last row surprises people most. It is common to find the domain registered 
 
 The fear that stops many founders from starting the handover is that "production-ready" means throwing away what they built. It does not. The frontend you made in Lovable or Bolt is usually the most finished part of the product, and it stays exactly as it is.
 
-The handover work happens underneath and around it: keys moved server-side, access rules enforced in the database rather than hidden in the interface, a staging environment added, monitoring switched on, account ownership consolidated. LaunchStudio's principle — keep the frontend, fix only what is needed, go live quickly — exists precisely because rebuilding what already works wastes the advantage AI gave you in the first place. The code stays in your repository, documented and readable by the same AI tools you used to create it.
+The handover work happens underneath and around it: keys moved server-side, access rules enforced in the database rather than hidden in the interface, a staging environment added, monitoring switched on, account ownership consolidated. LaunchStudio's principle - keep the frontend, fix only what is needed, go live quickly - exists precisely because rebuilding what already works wastes the advantage AI gave you in the first place. The code stays in your repository, documented and readable by the same AI tools you used to create it.
 
 This is also where Manifera's background matters. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience running production systems for clients such as Vodafone and TNO, with engineering led from its development centre on Pho Quang Street in Ho Chi Minh City and client work anchored at Herengracht 420 in Amsterdam. Handover is routine work for a team that has done it 160+ times; it is new territory for a founder doing it the first time. You can see how that team is organised on [Manifera's about page](https://www.manifera.com/about-us/).
 
@@ -87,19 +87,19 @@ This is also where Manifera's background matters. LaunchStudio is powered by Man
 
 Answer these honestly. You do not need to open any code.
 
-1. If your app went down right now, how would you find out — and how long would it take?
+1. If your app went down right now, how would you find out - and how long would it take?
 2. Can you name every place an API key for your app is stored?
 3. If you deleted your production database by accident this afternoon, what is the newest copy you could restore, and have you ever restored it?
 4. When you change something, does it go to a test environment before real users see it?
 5. Are your domain, hosting and database accounts all accessible to you, with two-factor authentication on?
 
-Five confident answers means your AI prototype to production handover has largely happened. Three or fewer means the tool is still, in effect, the one responsible — and the tool will not answer the phone.
+Five confident answers means your AI prototype to production handover has largely happened. Three or fewer means the tool is still, in effect, the one responsible - and the tool will not answer the phone.
 
 For a structured version of the same check, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a good external reference for the security half, even if you never read past the category names.
 
 ## What a Handover Document Actually Contains
 
-The most practical output of an AI prototype to production handover is a short document — usually four to six pages — that lets someone other than the builder operate the app. It is not a technical manual. It is an operating record, and engineers at LaunchStudio write it in the same structure every time because it answers the questions that come up during incidents:
+The most practical output of an AI prototype to production handover is a short document - usually four to six pages - that lets someone other than the builder operate the app. It is not a technical manual. It is an operating record, and engineers at LaunchStudio write it in the same structure every time because it answers the questions that come up during incidents:
 
 | Section | What it records | Question it answers at 2 AM |
 | --- | --- | --- |
@@ -115,7 +115,7 @@ The value of the document is less in writing it than in the gaps it exposes. If 
 
 ## The First Thirty Days After the Handover
 
-A handover is not complete on launch day. The first month is when the new owner — you, a co-founder or a managed service — discovers whether the operating record matches reality. A healthy first month usually includes:
+A handover is not complete on launch day. The first month is when the new owner - you, a co-founder or a managed service - discovers whether the operating record matches reality. A healthy first month usually includes:
 
 - **Week 1:** one deliberate release through the new procedure, even if it is only a text change, to prove the path works end to end.
 - **Week 2:** a restore test from backup into a scratch database, timed, so you know your realistic recovery time rather than your hoped-for one.
@@ -126,7 +126,7 @@ This rhythm turns the handover from a single event into a habit. Founders who sk
 
 ## Common Handover Mistakes
 
-Three mistakes account for most failed handovers LaunchStudio sees. First, **handing over access without handing over knowledge**: a freelancer transfers the repository but nobody knows which environment variables production needs. Second, **treating the AI tool as the documentation**: "just ask Lovable how it works" fails the day the tool regenerates a file differently. Third, **one person holding everything**: a solo founder who is also the only person who can restore a backup has a single point of failure named after themselves. A second person with tested access — even a part-time contractor or a managed hosting provider — removes it.
+Three mistakes account for most failed handovers LaunchStudio sees. First, **handing over access without handing over knowledge**: a freelancer transfers the repository but nobody knows which environment variables production needs. Second, **treating the AI tool as the documentation**: "just ask Lovable how it works" fails the day the tool regenerates a file differently. Third, **one person holding everything**: a solo founder who is also the only person who can restore a backup has a single point of failure named after themselves. A second person with tested access - even a part-time contractor or a managed hosting provider - removes it.
 
 ## Planning the Handover Instead of Discovering It
 
@@ -140,22 +140,22 @@ If you would like someone to run that list with you, LaunchStudio's [three-step 
 
 Femke de Wit, a landscape designer in Leiden, built Groenschets in Lovable over three weekends. The app let homeowners sketch their garden, pick plants suited to their soil and sun, and book a consultation with Femke's small team. Twenty neighbours tested it, loved it, and Femke announced it in a regional gardening newsletter with about 4,000 subscribers.
 
-Groenschets did not crash. What happened was quieter. On day three, a customer wrote to say her saved garden design had vanished. Femke had no logs, no backups she had ever checked, and no idea whether it was one lost design or many. While investigating, she found the Supabase project had been created under a former collaborator's email, the booking calendar's API key was visible in the page source, and every change she made in Lovable went live instantly — including one she had made that morning which, it turned out, reset unsaved designs.
+Groenschets did not crash. What happened was quieter. On day three, a customer wrote to say her saved garden design had vanished. Femke had no logs, no backups she had ever checked, and no idea whether it was one lost design or many. While investigating, she found the Supabase project had been created under a former collaborator's email, the booking calendar's API key was visible in the page source, and every change she made in Lovable went live instantly - including one she had made that morning which, it turned out, reset unsaved designs.
 
 LaunchStudio's engineers treated the job as a handover rather than a repair. They moved all accounts under a company email with two-factor authentication, moved the calendar key into a server-side function, set up a staging environment so Lovable edits were tested before release, configured daily backups with a tested restore, and connected uptime and error alerts to Femke's phone. The Lovable frontend was not modified.
 
 **Result:** The lost design was recovered from a point-in-time backup the team found still enabled on the database. Over the following spring season, Groenschets handled roughly 1,100 saved designs with no data loss, and Femke caught two minor bugs through alerts before any customer reported them.
 
-> *"I thought launching meant the app was finished. It turned out launching meant somebody had to be in charge of it — and until then, nobody was."*
-> — **Femke de Wit, Founder, Groenschets (Leiden)**
+> *"I thought launching meant the app was finished. It turned out launching meant somebody had to be in charge of it - and until then, nobody was."*
+> - **Femke de Wit, Founder, Groenschets (Leiden)**
 
-**Cost & Timeline:** €1,900 (Launch Ready package: account consolidation, secrets, staging, backups and monitoring) — completed in 9 business days.
+**Cost & Timeline:** €1,900 (Launch Ready package: account consolidation, secrets, staging, backups and monitoring) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
 ### What is the difference between an AI prototype and a production app?
 
-An AI prototype proves an idea works for the person who built it. A production app keeps working for strangers, protects their data, can be changed safely and tells someone when it breaks. The code can be largely identical; what differs is everything around it — secrets, backups, deploy process, monitoring and ownership.
+An AI prototype proves an idea works for the person who built it. A production app keeps working for strangers, protects their data, can be changed safely and tells someone when it breaks. The code can be largely identical; what differs is everything around it - secrets, backups, deploy process, monitoring and ownership.
 
 ### Can a non-technical founder do the AI prototype to production handover alone?
 
@@ -163,7 +163,7 @@ Parts of it, yes. Consolidating account ownership, switching on two-factor authe
 
 ### Why does Herre Roelevink describe architecture and security as the real challenge now?
 
-Because AI tools have made the first half of software — turning an idea into a working interface — dramatically cheaper. The second half, making that software safe and dependable for other people, has not become cheaper in the same way. Manifera's 11 years of enterprise delivery are concentrated in that second half, which is why LaunchStudio focuses there.
+Because AI tools have made the first half of software - turning an idea into a working interface - dramatically cheaper. The second half, making that software safe and dependable for other people, has not become cheaper in the same way. Manifera's 11 years of enterprise delivery are concentrated in that second half, which is why LaunchStudio focuses there.
 
 ### Does the handover change which AI tool I can keep using?
 

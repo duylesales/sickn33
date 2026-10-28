@@ -80,9 +80,9 @@ Koen's team offreerde het initiële traject rond de klantgerichte boekingsstroom
 **Resultaat:** LaunchStudio beveiligde de beheerders-API met de juiste authenticatie vóór RijDeel's openbare lancering. Dit sloot een kloof die nooit ter sprake kwam tijdens de eigen demo van de klant en die Koen's team niet oorspronkelijk had geoffereerd, wat zowel de lancering van de klant als de reputatie van het bureau beschermde.
 
 > *"Dat beheerderspaneel kwam er nooit één keer over te spreken toen de klant ons de app liet zien. Het kwam alleen naar boven omdat we specifiek dit exacte soort controle uitvoeren voordat er iets live gaat onder onze naam."*
-> — **Koen Peeters, Bureau-eigenaar, Gent**
+> - **Koen Peeters, Bureau-eigenaar, Gent**
 
-**Kosten en tijdlijn:** € 1.600 (white-label audit van beheerdersroutebeveiliging) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (white-label audit van beheerdersroutebeveiliging) - voltooid in 5 werkdagen.
 
 ---
 

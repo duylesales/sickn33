@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Same Lead, Discovery to Delivery:** One Amsterdam-based technical lead owns architecture sign-off from the first discovery call through launch.
-✅ **Stack Matched to the Workload:** Laravel, .NET, Node.js, or Python — chosen for your problem, not for the vendor's existing bench.
+✅ **Stack Matched to the Workload:** Laravel, .NET, Node.js, or Python - chosen for your problem, not for the vendor's existing bench.
 ✅ **40-50% Lower Blended Rate:** Same seniority band as a Zuidas agency, without the city-center overhead baked into the price.
 
 Stop paying postcode premiums for architecture decisions made by whoever happened to answer the phone. 🛡️

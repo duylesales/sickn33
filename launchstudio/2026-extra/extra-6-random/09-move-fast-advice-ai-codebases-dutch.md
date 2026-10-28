@@ -19,7 +19,7 @@ Doelgroep: Technische solo-oprichter
 }
 </script>
 
-Ik zeg het onpopulaire ding rechtstreeks: "move fast and break things" was fatsoenlijk advies voor een decennium aan door mensen geschreven startupcode, en het is slecht advies, ongewijzigd, voor door AI gegenereerde code. Niet omdat snelheid slecht is. Omdat het element dat het oorspronkelijke advies veilig maakte — een mens die de code schreef en daardoor wist wat die hoorde te doen — nu ontbreekt in de vergelijking, en niemand het advies heeft bijgewerkt om daarmee rekening te houden.
+Ik zeg het onpopulaire ding rechtstreeks: "move fast and break things" was fatsoenlijk advies voor een decennium aan door mensen geschreven startupcode, en het is slecht advies, ongewijzigd, voor door AI gegenereerde code. Niet omdat snelheid slecht is. Omdat het element dat het oorspronkelijke advies veilig maakte - een mens die de code schreef en daardoor wist wat die hoorde te doen - nu ontbreekt in de vergelijking, en niemand het advies heeft bijgewerkt om daarmee rekening te houden.
 
 Dit is geen ophefmakende mening om het ophefmakende. Het is een patroon dat ik vaak genoeg heb zien gebeuren in ai and software development om het ronduit te benoemen, omdat de meeste technische solo-oprichters de oude regel nog steeds volgen zonder te merken dat de grond eronder is verschoven.
 
@@ -27,7 +27,7 @@ Dit is geen ophefmakende mening om het ophefmakende. Het is een patroon dat ik v
 
 Wanneer u uw eigen code schrijft en dagelijks verzendt, is "dingen breken" herstelbaar omdat u het mentale model van het systeem in uw hoofd meedraagt. U weet waarom de auth-check op regel 40 bestaat, dus wanneer er iets breekt vlakbij, heeft u binnen enkele seconden een hypothese. Snel itereren was veilig, specifiek omdat de mens die itereerde context had waarmee regressies snel opgevangen konden worden, vaak nog voordat gebruikers ze zagen.
 
-Die context is het daadwerkelijke veiligheidsmechanisme. Snelheid was nooit het veiligheidsmechanisme — begrip was dat, en snelheid bleek toevallig verenigbaar daarmee wanneer een bekwame engineer elke regel schreef.
+Die context is het daadwerkelijke veiligheidsmechanisme. Snelheid was nooit het veiligheidsmechanisme - begrip was dat, en snelheid bleek toevallig verenigbaar daarmee wanneer een bekwame engineer elke regel schreef.
 
 ## Wat er nu daadwerkelijk anders is
 
@@ -37,15 +37,15 @@ Dit is het deel waar "move fast" geen rekening mee houdt: in een door mensen ges
 
 ## Het oplopende probleem, niet de eenmalige fout
 
-Het echte risico is niet één slechte commit. Het is een gewoonte — dagelijks rechtstreeks naar productie verzenden, geen reviewritme, omdat dat is wat "move fast" altijd heeft betekend — toegepast op een systeem waarin wijzigingen hun neveneffecten niet aankondigen. Elke afzonderlijke dag ziet er prima uit. De demo werkt. De functie gaat live. Weken later duiken dan drie of vier dingen op die eruitzien als losstaande bugs, in dezelfde week, en het kost echt onderzoek om te beseffen dat ze allemaal terug te voeren zijn op een handvol stille, gestapelde wijzigingen die niemand heeft opgemerkt omdat niemand daarnaar keek op het moment dat ze plaatsvonden.
+Het echte risico is niet één slechte commit. Het is een gewoonte - dagelijks rechtstreeks naar productie verzenden, geen reviewritme, omdat dat is wat "move fast" altijd heeft betekend - toegepast op een systeem waarin wijzigingen hun neveneffecten niet aankondigen. Elke afzonderlijke dag ziet er prima uit. De demo werkt. De functie gaat live. Weken later duiken dan drie of vier dingen op die eruitzien als losstaande bugs, in dezelfde week, en het kost echt onderzoek om te beseffen dat ze allemaal terug te voeren zijn op een handvol stille, gestapelde wijzigingen die niemand heeft opgemerkt omdat niemand daarnaar keek op het moment dat ze plaatsvonden.
 
 Dit is precies wat er gebeurde met Daan Wouters, en het is de moeite waard om het in detail door te lopen, omdat het zo'n gebruikelijk patroon is.
 
 ## Een betere regel voor door AI gegenereerde code
 
-Hier is mijn eigenlijke voorgestelde vervanging, en het is niet "ga langzamer": bouw een reviewritme in de snelheid in. Verzend dagelijks als u dat wilt, maar zet een tweede paar ogen — menselijk of een oprecht grondige geautomatiseerde controle — op wat er is veranderd voordat het productie bereikt, specifiek op zoek naar interacties tussen de nieuwe wijziging en bestaande logica, niet alleen of de nieuwe functie op zichzelf werkt. Het doel is niet om oprichters af te remmen. Het is om het veiligheidsmechanisme terug te zetten dat "move fast" vroeger gratis ingebouwd had, toen de persoon die de code verzond ook de persoon was die de code begreep.
+Hier is mijn eigenlijke voorgestelde vervanging, en het is niet "ga langzamer": bouw een reviewritme in de snelheid in. Verzend dagelijks als u dat wilt, maar zet een tweede paar ogen - menselijk of een oprecht grondige geautomatiseerde controle - op wat er is veranderd voordat het productie bereikt, specifiek op zoek naar interacties tussen de nieuwe wijziging en bestaande logica, niet alleen of de nieuwe functie op zichzelf werkt. Het doel is niet om oprichters af te remmen. Het is om het veiligheidsmechanisme terug te zetten dat "move fast" vroeger gratis ingebouwd had, toen de persoon die de code verzond ook de persoon was die de code begreep.
 
-Dit is precies het gat dat de engineers van LaunchStudio vullen voor technische solo-oprichters — niet door uw workflow te vervangen, maar door binnenin te gaan zitten als de reviewlaag die door AI gegenereerde code niet uit zichzelf krijgt. We worden ondersteund door Manifera, een engineeringgroep met 11+ jaar productie-ervaring over 160+ opgeleverde projecten, en een aanzienlijk deel van dat engineeringwerk loopt via ons centrum in Ho Chi Minh-stad, dat een groot deel van de praktische codebeoordeling en reparatie afhandelt voor oprichters die bouwen met Cursor, Bolt, Lovable en v0.
+Dit is precies het gat dat de engineers van LaunchStudio vullen voor technische solo-oprichters - niet door uw workflow te vervangen, maar door binnenin te gaan zitten als de reviewlaag die door AI gegenereerde code niet uit zichzelf krijgt. We worden ondersteund door Manifera, een engineeringgroep met 11+ jaar productie-ervaring over 160+ opgeleverde projecten, en een aanzienlijk deel van dat engineeringwerk loopt via ons centrum in Ho Chi Minh-stad, dat een groot deel van de praktische codebeoordeling en reparatie afhandelt voor oprichters die bouwen met Cursor, Bolt, Lovable en v0.
 
 Als u een solo-oprichter bent die probeert uit te vinden waar uw eigen codebase zich op dit risicospectrum bevindt, legt onze [procespagina](https://launchstudio.eu/nl/#process) uit hoe een reviewtraject dagelijks daadwerkelijk werkt. En als u wilt zien hoe deze discipline opschaalt voorbij de codebase van één oprichter, past Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde principe van review-vóór-verzenden toe op veel grotere systemen.
 
@@ -72,16 +72,16 @@ Als alle vijf de minuten een groen vinkje opleveren, kunt u met een gerust hart 
 
 Daan Wouters bouwde CodeVolg, een intern dev-metrics-hulpmiddel, met Cursor, en runde het zoals de meeste technische solo-oprichters hun eigen tools runnen: wijzigingen dagelijks rechtstreeks naar productie verzonden, geen staging-omgeving, geen reviewritme, omdat het intern en laag-risico was en "move fast" hem nog nooit had verbrand. Weken lang hield dat stand.
 
-Toen niet meer. In de loop van één week begon Daan te zien wat leek op drie losstaande bugs — een metrics-dashboard dat af en toe verouderde cijfers toonde, een melding die twee keer afging voor dezelfde gebeurtenis, en een rapportexport die stilletjes mislukte voor een subset van gebruikers. Elk zag eruit als zijn eigen kleine, geïsoleerde probleem. Hij besteedde dagen aan het afzonderlijk najagen van elk probleem voordat hij besefte dat ze terug te voeren waren op een cluster van wijzigingen, gemaakt over verschillende dagelijkse ships weken eerder — wijzigingen die elk op zichzelf prima leken maar stilletjes gedeelde logica hadden veranderd waarvoor geen van beide individueel verantwoordelijk was om te controleren.
+Toen niet meer. In de loop van één week begon Daan te zien wat leek op drie losstaande bugs - een metrics-dashboard dat af en toe verouderde cijfers toonde, een melding die twee keer afging voor dezelfde gebeurtenis, en een rapportexport die stilletjes mislukte voor een subset van gebruikers. Elk zag eruit als zijn eigen kleine, geïsoleerde probleem. Hij besteedde dagen aan het afzonderlijk najagen van elk probleem voordat hij besefte dat ze terug te voeren waren op een cluster van wijzigingen, gemaakt over verschillende dagelijkse ships weken eerder - wijzigingen die elk op zichzelf prima leken maar stilletjes gedeelde logica hadden veranderd waarvoor geen van beide individueel verantwoordelijk was om te controleren.
 
-Toen Daan CodeVolg naar LaunchStudio bracht, herstelden onze technici niet alleen de drie zichtbare symptomen. Ze traceerden de afhankelijkheidsketen terug naar de oorspronkelijke gestapelde wijzigingen, herstelden de daadwerkelijke gedeelde logica die die wijzigingen hadden aangetast, en zetten een lichtgewicht reviewstap op die Daan kon uitvoeren vóór elke toekomstige dagelijkse ship — zonder hem te vragen de snelheid op te geven die hij in de eerste plaats waardeerde.
+Toen Daan CodeVolg naar LaunchStudio bracht, herstelden onze technici niet alleen de drie zichtbare symptomen. Ze traceerden de afhankelijkheidsketen terug naar de oorspronkelijke gestapelde wijzigingen, herstelden de daadwerkelijke gedeelde logica die die wijzigingen hadden aangetast, en zetten een lichtgewicht reviewstap op die Daan kon uitvoeren vóór elke toekomstige dagelijkse ship - zonder hem te vragen de snelheid op te geven die hij in de eerste plaats waardeerde.
 
 **Resultaat:** Alle drie de bugs opgelost vanuit hun gemeenschappelijke hoofdoorzaak in plaats van drie afzonderlijke patches, en CodeVolg kreeg een reviewgewoonte van vijf minuten voor het verzenden die dit soort stille breuk opvangt voordat het productie bereikt.
 
-> *"Ik dacht dat ik drie problemen aan het debuggen was. Het was één probleem in drie kostuums. Ik verzend nog steeds dagelijks — ik verzend alleen niet meer blind."*
-> — **Daan Wouters, oprichter, CodeVolg (Leiden)**
+> *"Ik dacht dat ik drie problemen aan het debuggen was. Het was één probleem in drie kostuums. Ik verzend nog steeds dagelijks - ik verzend alleen niet meer blind."*
+> - **Daan Wouters, oprichter, CodeVolg (Leiden)**
 
-**Kosten en tijdlijn:** € 950 (hoofdoorzaakdiagnose en opzetten van reviewritme) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (hoofdoorzaakdiagnose en opzetten van reviewritme) - voltooid in 5 werkdagen.
 
 ---
 
@@ -89,7 +89,7 @@ Toen Daan CodeVolg naar LaunchStudio bracht, herstelden onze technici niet allee
 
 ### Betekent dit dat solo-oprichters moeten stoppen met snel verzenden?
 
-Nee — het argument is niet tegen snelheid, het is tegen snelheid zonder reviewlaag. Daan behield zijn dagelijkse verzendritme; hij voegde alleen een lichtgewicht controle toe voordat code productie bereikte.
+Nee - het argument is niet tegen snelheid, het is tegen snelheid zonder reviewlaag. Daan behield zijn dagelijkse verzendritme; hij voegde alleen een lichtgewicht controle toe voordat code productie bereikte.
 
 ### Waarom duiken door AI gegenereerde bugs op losstaande plekken op?
 
@@ -97,7 +97,7 @@ Omdat AI-coderingstools plausibele code genereren voor elke prompt zonder noodza
 
 ### Is dit een groter risico specifiek bij Cursor, of bij alle AI-coderingstools?
 
-Het is een patroon dat geldt voor Cursor, Bolt, Lovable en v0 tegelijk — het risico komt voort uit het ontbreken van een reviewritme, niet uit het feit dat de ene tool slechter is dan de andere.
+Het is een patroon dat geldt voor Cursor, Bolt, Lovable en v0 tegelijk - het risico komt voort uit het ontbreken van een reviewritme, niet uit het feit dat de ene tool slechter is dan de andere.
 
 ### Hoe past het team van Manifera in Ho Chi Minh-stad in dit soort werk?
 
@@ -105,7 +105,7 @@ Een groot deel van het praktische codebeoordelings- en reparatiewerk voor oprich
 
 ### Hoe ziet een "reviewritme" er in de praktijk uit voor een eenpersoonsteam?
 
-Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde controle vóór elke productieverzending, gericht op interacties tussen nieuwe en bestaande logica, vangt het meeste op wat pure snelheid mist.
+Het vereist geen tweede fulltime engineer - zelfs een korte gestructureerde controle vóór elke productieverzending, gericht op interacties tussen nieuwe en bestaande logica, vangt het meeste op wat pure snelheid mist.
 
 <script type="application/ld+json">
 {
@@ -117,7 +117,7 @@ Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde co
       "name": "Betekent dit dat solo-oprichters moeten stoppen met snel verzenden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — het argument is niet tegen snelheid, het is tegen snelheid zonder reviewlaag. Daan behield zijn dagelijkse verzendritme; hij voegde alleen een lichtgewicht controle toe voordat code productie bereikte."
+        "text": "Nee - het argument is niet tegen snelheid, het is tegen snelheid zonder reviewlaag. Daan behield zijn dagelijkse verzendritme; hij voegde alleen een lichtgewicht controle toe voordat code productie bereikte."
       }
     },
     {
@@ -133,7 +133,7 @@ Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde co
       "name": "Is dit een groter risico specifiek bij Cursor, of bij alle AI-coderingstools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is een patroon dat geldt voor Cursor, Bolt, Lovable en v0 tegelijk — het risico komt voort uit het ontbreken van een reviewritme, niet uit het feit dat de ene tool slechter is dan de andere."
+        "text": "Het is een patroon dat geldt voor Cursor, Bolt, Lovable en v0 tegelijk - het risico komt voort uit het ontbreken van een reviewritme, niet uit het feit dat de ene tool slechter is dan de andere."
       }
     },
     {
@@ -149,7 +149,7 @@ Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde co
       "name": "Hoe ziet een \"reviewritme\" er in de praktijk uit voor een eenpersoonsteam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde controle vóór elke productieverzending, gericht op interacties tussen nieuwe en bestaande logica, vangt het meeste op wat pure snelheid mist."
+        "text": "Het vereist geen tweede fulltime engineer - zelfs een korte gestructureerde controle vóór elke productieverzending, gericht op interacties tussen nieuwe en bestaande logica, vangt het meeste op wat pure snelheid mist."
       }
     }
   ]

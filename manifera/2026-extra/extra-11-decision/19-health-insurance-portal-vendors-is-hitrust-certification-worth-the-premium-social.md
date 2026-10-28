@@ -7,7 +7,7 @@ HITRUST r2 can add $75K-$200K+ to a vendor's compliance spend. Is it buying you 
 
 **The Manifera Solution:**
 ✅ **Requirement-first evaluation:** We check your actual payer contracts before recommending a certification tier, not the other way around.
-✅ **Scope and expiration verification:** We request the certification report directly — not a badge on a website — to confirm coverage and validity dates.
+✅ **Scope and expiration verification:** We request the certification report directly - not a badge on a website - to confirm coverage and validity dates.
 ✅ **Right-sized compliance spend:** SOC 2 plus a documented HIPAA risk assessment when that's genuinely sufficient; HITRUST when your contracts actually demand it.
 
 More certifications isn't automatically more security. Know which one your contracts actually require. 📋

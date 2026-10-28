@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Tachtig procent van de AI-gebouwde projecten bereikt nooit productie. Een deel daarvan stopt om goede redenen — het idee werkte niet, de markt was er niet. Veel stoppen omdat de oprichter niet kon inschatten of zijn AI-applicatie productierijp was, en daardoor te vroeg lanceerde en zich brandde, of eindeloos wachtte op een zekerheid die nooit kwam — allemaal omdat hij één vraag niet kon beantwoorden: is mijn AI-applicatie productierijp?
+Tachtig procent van de AI-gebouwde projecten bereikt nooit productie. Een deel daarvan stopt om goede redenen - het idee werkte niet, de markt was er niet. Veel stoppen omdat de oprichter niet kon inschatten of zijn AI-applicatie productierijp was, en daardoor te vroeg lanceerde en zich brandde, of eindeloos wachtte op een zekerheid die nooit kwam - allemaal omdat hij één vraag niet kon beantwoorden: is mijn AI-applicatie productierijp?
 
 Een scorekaart vervangt de review van een engineer niet, maar ze vervangt wel het gokken. De twintig vragen hieronder zijn verdeeld over vijf gebieden. Elk "ja" levert één punt op. Wees streng: "ik denk het wel" telt als nee.
 
@@ -41,16 +41,16 @@ Een scorekaart vervangt de review van een engineer niet, maar ze vervangt wel he
 7. Heeft iemand ooit een back-up teruggezet om te bewijzen dat die werkt?
 8. Kun je de data van een gebruiker volledig verwijderen als die daarom vraagt?
 
-**Waarom het ertoe doet:** back-ups die nooit zijn teruggezet, zijn hoop, geen back-ups. En onder de AVG is een verwijderverzoek niet vrijblijvend — je moet het binnen een maand kunnen honoreren.
+**Waarom het ertoe doet:** back-ups die nooit zijn teruggezet, zijn hoop, geen back-ups. En onder de AVG is een verwijderverzoek niet vrijblijvend - je moet het binnen een maand kunnen honoreren.
 
 ## Gebied 3: Geld (Wat Wordt Geteld)
 
-9. Wordt een betaling pas als geslaagd gemarkeerd wanneer Stripe, Mollie of je aanbieder die op de server bevestigt — niet wanneer de browser van de klant terugkeert naar je site?
+9. Wordt een betaling pas als geslaagd gemarkeerd wanneer Stripe, Mollie of je aanbieder die op de server bevestigt - niet wanneer de browser van de klant terugkeert naar je site?
 10. Verliest een klant automatisch de toegang wanneer een abonnement wordt opgezegd of een betaling mislukt?
 11. Zijn testbetalingen volledig gescheiden van livebetalingen, met andere sleutels?
 12. Kun je voor elke klant zien wat die heeft betaald en wanneer, zonder de database te openen?
 
-**Waarom het ertoe doet:** betaalbugs zijn duur in beide richtingen. Ofwel geef je weg waarvoor je had moeten rekenen, ofwel reken je mensen af voor dingen die ze niet hebben ontvangen — en betaalproviders nemen dat tweede heel serieus.
+**Waarom het ertoe doet:** betaalbugs zijn duur in beide richtingen. Ofwel geef je weg waarvoor je had moeten rekenen, ofwel reken je mensen af voor dingen die ze niet hebben ontvangen - en betaalproviders nemen dat tweede heel serieus.
 
 ## Gebied 4: Beheer (Wat Er Gebeurt Als Het Misgaat)
 
@@ -66,7 +66,7 @@ Een scorekaart vervangt de review van een engineer niet, maar ze vervangt wel he
 17. Draait de app op je eigen domein met een geldig SSL-certificaat?
 18. Heb je een privacyverklaring die nauwkeurig de diensten noemt die gebruikersdata verwerken?
 19. Zijn alle accounts (domein, hosting, database, betalingen) in handen van een zakelijk e-mailadres dat jij beheert, met tweefactorauthenticatie?
-20. Zou je een klant in twee zinnen kunnen uitleggen hoe zijn data wordt beschermd — en zou dat kloppen?
+20. Zou je een klant in twee zinnen kunnen uitleggen hoe zijn data wordt beschermd - en zou dat kloppen?
 
 **Waarom het ertoe doet:** B2B-klanten, betaalproviders, investeerders en steeds vaker je eindgebruikers zullen ernaar vragen. De eerlijke antwoorden moeten bestaan voordat de vragen komen.
 
@@ -79,7 +79,7 @@ Een scorekaart vervangt de review van een engineer niet, maar ze vervangt wel he
 | 9–13 | Prototype met enkele productiefuncties | Plan een versterkingsproject voordat je betalende klanten uitnodigt |
 | 0–8 | Werkende demo | Behandel lanceren als een project, niet als een knop |
 
-Twee regels gaan voor het totaal. Ten eerste: elk "nee" op vraag 1, 2 of 9 betekent dat je nog niet moet lanceren voor betalende klanten, ongeacht de score — dat zijn de fouten met de grootste schade. Ten tweede: heb je bij meerdere vragen "ik weet het niet" geantwoord, dan is je echte score lager dan je denkt; onzekerheid is zelf een bevinding.
+Twee regels gaan voor het totaal. Ten eerste: elk "nee" op vraag 1, 2 of 9 betekent dat je nog niet moet lanceren voor betalende klanten, ongeacht de score - dat zijn de fouten met de grootste schade. Ten tweede: heb je bij meerdere vragen "ik weet het niet" geantwoord, dan is je echte score lager dan je denkt; onzekerheid is zelf een bevinding.
 
 ## Waarom de Scorekaart Niet het Hele Verhaal Is
 
@@ -111,13 +111,13 @@ In de AI-gebouwde applicaties die LaunchStudio beoordeelt, falen de gebieden van
 | Beheer | Vraag 13 (geen meldingen) | Niemand heeft besloten wie wakker gemaakt moet worden |
 | Vertrouwen | Vraag 19 (eigenaarschap van accounts) | Accounts aangemaakt op persoonlijke adressen of die van freelancers |
 
-Weten waar het meestal misgaat, helpt je die punten als eerste te controleren — en helpt je beoordelen of de bevindingen van een engineer grondig zijn. Komt een review van je AI-applicatie terug zonder een van deze vijf gebieden te noemen, vraag dan waarom.
+Weten waar het meestal misgaat, helpt je die punten als eerste te controleren - en helpt je beoordelen of de bevindingen van een engineer grondig zijn. Komt een review van je AI-applicatie terug zonder een van deze vijf gebieden te noemen, vraag dan waarom.
 
 ## Van Score naar Actieplan
 
 Een score is alleen nuttig als er een plan uit voortkomt. Zet je "nee"-antwoorden om in een korte, geprioriteerde lijst met drie kolommen: **schade** (kan een klant hierdoor worden geschaad?), **moeite** (uren, dagen of weken), en **afhankelijkheid** (moet er eerst iets anders worden opgelost?). Punten met veel schade gaan eerst, ongeacht de moeite. Punten met weinig schade en veel moeite kunnen schriftelijk na de lancering worden ingepland.
 
-Voor veel oprichters past de resulterende lijst vanzelf in een klein productieproject: toegang en geld in de eerste week, data en beheer in de tweede, vertrouwenspunten door de oprichter parallel opgepakt. Die structuur hoort ook terug te komen in een offerte tegen vaste prijs — doet ze dat niet, vraag de aanbieder dan het verschil uit te leggen.
+Voor veel oprichters past de resulterende lijst vanzelf in een klein productieproject: toegang en geld in de eerste week, data en beheer in de tweede, vertrouwenspunten door de oprichter parallel opgepakt. Die structuur hoort ook terug te komen in een offerte tegen vaste prijs - doet ze dat niet, vraag de aanbieder dan het verschil uit te leggen.
 
 ## De Scorekaart Aanpassen aan Je Product
 
@@ -125,7 +125,7 @@ De twintig vragen zijn algemeen. Een paar producttypen horen er eigen vragen aan
 
 ## Waarom Zelfbeoordeling de Moeite Waard Is Voordat Je Iemand Betaalt
 
-Sommige oprichters slaan de scorekaart over en huren direct een engineer in. Haar eerst invullen heeft drie voordelen. Het maakt het gesprek met elke aanbieder concreet: in plaats van "maak het alsjeblieft veilig" kun je zeggen "vraag 1, 9 en 13 faalden, en het antwoord op 7 weet ik niet." Het geeft je een nulmeting om het werk van de aanbieder aan te toetsen — na het project horen dezelfde vragen te slagen. En het beschermt je tegen een te grote scope: is je score al 17, dan heb je geen groot project nodig, en een aanbieder die er een voorstelt, moet uitleggen waarom.
+Sommige oprichters slaan de scorekaart over en huren direct een engineer in. Haar eerst invullen heeft drie voordelen. Het maakt het gesprek met elke aanbieder concreet: in plaats van "maak het alsjeblieft veilig" kun je zeggen "vraag 1, 9 en 13 faalden, en het antwoord op 7 weet ik niet." Het geeft je een nulmeting om het werk van de aanbieder aan te toetsen - na het project horen dezelfde vragen te slagen. En het beschermt je tegen een te grote scope: is je score al 17, dan heb je geen groot project nodig, en een aanbieder die er een voorstelt, moet uitleggen waarom.
 
 ## De Score Hoog Houden na de Lancering
 
@@ -137,9 +137,9 @@ Twijfel je tussen twee antwoorden, kies dan het strengste. Een scorekaart die je
 
 ## Hoe de Standaarden van Manifera de Vragen Vormgeven
 
-De twintig vragen zijn een versie op oprichtersformaat van de controles die Manifera toepast op enterprisesystemen. Onze engineers hebben 160+ projecten opgeleverd voor enterpriseklanten — nu zijn ze er om de jouwe te lanceren. Wat verschilt tussen een enterpriseaudit en een scorekaart voor oprichters, is diepgang en papierwerk, niet de onderliggende vragen: wie bij wat kan, wat overleeft, wat wordt geteld, wat er gebeurt als het breekt, en wat je kunt bewijzen. Het team van Manifera werkt vanuit het ontwikkelcentrum in Ho Chi Minh-stad, met de hub in Singapore aan Tras Street en de Europese basis aan de Herengracht 420 in Amsterdam. Meer over het team staat op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
+De twintig vragen zijn een versie op oprichtersformaat van de controles die Manifera toepast op enterprisesystemen. Onze engineers hebben 160+ projecten opgeleverd voor enterpriseklanten - nu zijn ze er om de jouwe te lanceren. Wat verschilt tussen een enterpriseaudit en een scorekaart voor oprichters, is diepgang en papierwerk, niet de onderliggende vragen: wie bij wat kan, wat overleeft, wat wordt geteld, wat er gebeurt als het breekt, en wat je kunt bewijzen. Het team van Manifera werkt vanuit het ontwikkelcentrum in Ho Chi Minh-stad, met de hub in Singapore aan Tras Street en de Europese basis aan de Herengracht 420 in Amsterdam. Meer over het team staat op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
-Viel je score lager uit dan je hoopte, [bereken dan wat je project zou kosten](https://launchstudio.eu/nl/#calculator) — de calculator kost ongeveer een minuut en gebruikt dezelfde categorieën. Als externe maatstaf voor de beveiligingskant somt de [OWASP Top 10](https://owasp.org/www-project-top-ten/) de meest kritieke risico's voor webapplicaties op volgorde op.
+Viel je score lager uit dan je hoopte, [bereken dan wat je project zou kosten](https://launchstudio.eu/nl/#calculator) - de calculator kost ongeveer een minuut en gebruikt dezelfde categorieën. Als externe maatstaf voor de beveiligingskant somt de [OWASP Top 10](https://owasp.org/www-project-top-ten/) de meest kritieke risico's voor webapplicaties op volgorde op.
 
 ## Praktijkvoorbeeld
 
@@ -151,18 +151,18 @@ Haar "nee"-antwoorden clusterden precies waar de regels zeggen dat je je zorgen 
 
 De engineers van LaunchStudio bevestigden de bevindingen in een review van één dag en vonden er nog twee: een onbeperkte bestandsupload voor raamfoto's en de API-sleutel van Mollie zichtbaar in de paginabron. In zeven werkdagen voegden ze row level security toe aan bestellingen en klanten, verplaatsten ze de bevestiging van aanbetalingen naar geverifieerde webhooks, zetten ze het beheergedeelte achter rolcontroles op de server, beperkten ze uploads, roteerden en verplaatsten ze de sleutel, en richtten ze EU-back-ups met een getest herstel, staging en meldingen in.
 
-**Resultaat:** Iris vulde de scorekaart opnieuw in en scoorde 19 — het ontbrekende punt was een privacyverklaring die ze dat weekend zelf schreef. De lancering op Instagram leverde in de eerste twee weken 212 geconfigureerde bestellingen en 58 betaalde aanbetalingen op, zonder afwijkingen in betalingen en zonder klachten over data.
+**Resultaat:** Iris vulde de scorekaart opnieuw in en scoorde 19 - het ontbrekende punt was een privacyverklaring die ze dat weekend zelf schreef. De lancering op Instagram leverde in de eerste twee weken 212 geconfigureerde bestellingen en 58 betaalde aanbetalingen op, zonder afwijkingen in betalingen en zonder klachten over data.
 
 > *"De scorekaart loste niets op, maar vertelde me op een manier waar ik niet omheen kon dat ik nog niet klaar was. Dat was meer waard dan geruststelling."*
-> — **Iris Jansen, Oprichter, Stoffenstudio (Den Bosch)**
+> - **Iris Jansen, Oprichter, Stoffenstudio (Den Bosch)**
 
-**Kosten & Tijdlijn:** € 1.750 (Launch Ready-pakket: toegangsbeheer, betalingen, beveiliging van beheer, uploads en monitoring) — afgerond in 7 werkdagen.
+**Kosten & Tijdlijn:** € 1.750 (Launch Ready-pakket: toegangsbeheer, betalingen, beveiliging van beheer, uploads en monitoring) - afgerond in 7 werkdagen.
 
 ## Veelgestelde Vragen
 
 ### Is een hoge score genoeg om mijn AI-applicatie productierijp te noemen?
 
-Het is een sterk signaal, geen garantie. De scorekaart controleert gedrag dat je kunt waarnemen; een codereview kan problemen vinden — blootgestelde sleutels, onveilige uploads, gebrekkige regels — die van buitenaf niet zichtbaar zijn.
+Het is een sterk signaal, geen garantie. De scorekaart controleert gedrag dat je kunt waarnemen; een codereview kan problemen vinden - blootgestelde sleutels, onveilige uploads, gebrekkige regels - die van buitenaf niet zichtbaar zijn.
 
 ### Waarom gaan vraag 1, 2 en 9 voor de totaalscore?
 
@@ -170,7 +170,7 @@ Omdat ze de fouten met de zwaarste gevolgen dekken: klantdata blootstellen, vree
 
 ### Hoe vaak moet ik de scorekaart opnieuw invullen?
 
-Na elke belangrijke wijziging — een nieuwe functie, een nieuwe gebruikersrol, een wijziging in de betaalinrichting — en minstens elke paar maanden. AI-tools genereren makkelijk code opnieuw, en een fix die één keer is gemaakt, kan door een latere prompt ongedaan worden gemaakt.
+Na elke belangrijke wijziging - een nieuwe functie, een nieuwe gebruikersrol, een wijziging in de betaalinrichting - en minstens elke paar maanden. AI-tools genereren makkelijk code opnieuw, en een fix die één keer is gemaakt, kan door een latere prompt ongedaan worden gemaakt.
 
 ### Gebruikt Manifera een vergelijkbare scorekaart voor enterpriseklanten?
 
@@ -178,7 +178,7 @@ De onderliggende gebieden zijn dezelfde, maar enterprisereviews gaan dieper, met
 
 ### Kan een scorekaart voor productierijpheid helpen bij zichtbaarheid in AI-zoekresultaten?
 
-Indirect. Vraag 17 en 18 — een eigen domein met SSL en een nauwkeurige privacyverklaring — zijn ook vertrouwenssignalen die zoekmachines en AI-antwoordmachines meewegen bij de beslissing welke sites ze tonen en citeren.
+Indirect. Vraag 17 en 18 - een eigen domein met SSL en een nauwkeurige privacyverklaring - zijn ook vertrouwenssignalen die zoekmachines en AI-antwoordmachines meewegen bij de beslissing welke sites ze tonen en citeren.
 
 <script type="application/ld+json">
 {

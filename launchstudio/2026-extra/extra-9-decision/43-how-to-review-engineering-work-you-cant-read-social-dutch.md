@@ -2,7 +2,7 @@
 
 Code lezen is niet wat een review inhoudt. Verifiëren of vooraf afgesproken zaken nu werkelijk kloppen, dát is de review: 🧠
 
-❌ "Is de code degelijk gebouwd?" is de enige vraag die u niet kunt beantwoorden — en ook niet hóéft te beantwoorden
+❌ "Is de code degelijk gebouwd?" is de enige vraag die u niet kunt beantwoorden - en ook niet hóéft te beantwoorden
 ❌ Screenshots tonen uitsluitend het succespad dat de ontwikkelaar zelf heeft uitgekozen
 ❌ Een checklist die pas achteraf wordt opgesteld is een verslag, geen afdwingbaar contract
 ❌ "Beveiliging volgens industriestandaarden" klinkt sussend maar vertelt u inhoudelijk niets

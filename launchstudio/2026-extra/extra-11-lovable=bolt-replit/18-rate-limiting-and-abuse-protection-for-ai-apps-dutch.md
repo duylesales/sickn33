@@ -34,7 +34,7 @@ Niets in een met AI gegenereerde applicatie houdt dit tegen. Niet omdat iemand s
 
 **Contact- en feedbackformulieren.** Spamberichten in je eigen inbox is de milde variant. De gevaarlijke variant is een formulier dat een geautomatiseerde bevestigingsmail stuurt naar het opgegeven e-mailadres, waardoor jouw server door spammers wordt gebruikt als gratis e-mailrelais om derden te spammen.
 
-**Elke API-aanroep die jou per verzoek geld kost.** Beeldbewerking, sms-verificatie, machinevertalingen, routeberekeningen en AI-taalmodellen (OpenAI, Anthropic). Dit zijn de endpoints waar misbruik zich binnen enkele uren direct vertaalt in een torenhoge creditcardfactuur — en het zijn exact de routes die in met AI gebouwde apps standaard zonder enige snelheidsbegrenzing openstaan.
+**Elke API-aanroep die jou per verzoek geld kost.** Beeldbewerking, sms-verificatie, machinevertalingen, routeberekeningen en AI-taalmodellen (OpenAI, Anthropic). Dit zijn de endpoints waar misbruik zich binnen enkele uren direct vertaalt in een torenhoge creditcardfactuur - en het zijn exact de routes die in met AI gebouwde apps standaard zonder enige snelheidsbegrenzing openstaan.
 
 **Zoek- en overzichtsendpoints.** Deze worden systematisch gescraped door concurrenten. Je volledige productcatalogus, prijslijst of bedrijvengids wordt binnen één middag gedownload en gekopieerd.
 
@@ -56,7 +56,7 @@ Je hebt niet al deze lagen direct nodig. De volgorde is belangrijk omdat de eers
 
 **Bescherming op platformniveau (Edge).** Vrijwel elk modern hosting- en content delivery netwerk (zoals Cloudflare of Vercel) biedt ingebouwde basis-rate limiting en bot-filtering. Vaak is dit een kwestie van een paar schuifjes aanzetten in het dashboard. Hiermee vang je lompe, grootschalige aanvallen al af vóórdat ze je eigen applicatieserver überhaupt bereiken.
 
-**Rate limits per specifiek endpoint.** De absolute kern: een strikte regel die bepaalt hoeveel verzoeken één bron binnen een bepaald tijdsbestek mag doen. Gezonde standaarden voor een klein product zijn bijvoorbeeld: maximaal 5 inlogpogingen per minuut per IP-adres, maximaal 3 wachtwoordresets per uur per account, en een hard plafond op alle betaalde API-routes. Dwing dit altijd af op de server of aan de netwerkrand (edge) — nooit in de browser van de gebruiker.
+**Rate limits per specifiek endpoint.** De absolute kern: een strikte regel die bepaalt hoeveel verzoeken één bron binnen een bepaald tijdsbestek mag doen. Gezonde standaarden voor een klein product zijn bijvoorbeeld: maximaal 5 inlogpogingen per minuut per IP-adres, maximaal 3 wachtwoordresets per uur per account, en een hard plafond op alle betaalde API-routes. Dwing dit altijd af op de server of aan de netwerkrand (edge) - nooit in de browser van de gebruiker.
 
 **Limieten per account, niet alleen per IP-adres.** IP-adressen zijn door aanvallers eenvoudig en goedkoop te wisselen via proxy's. Snelheidslimieten gekoppeld aan een geauthenticeerd gebruikersaccount zijn veel moeilijker te omzeilen. Hierdoor kun je anoniem verkeer strakker begrenzen en tegelijkertijd voorkomen dat een gehackt gebruikersaccount je API leegtrekt.
 
@@ -70,7 +70,7 @@ Je hebt niet al deze lagen direct nodig. De volgorde is belangrijk omdat de eers
 
 Dit verdient extra nadruk omdat gegenereerde code dit vaak fundamenteel verkeerd aanpakt: rate limiting geïmplementeerd in frontend JavaScript is géén beveiliging. Een verzendknop uitschakelen na één klik, of het aantal pogingen bijhouden in `localStorage`, heeft alleen invloed op bezoekers die netjes gebruikmaken van jouw grafische interface. Een kwaadwillende bot laadt jouw webpagina helemaal niet in; die vuurt HTTP-verzoeken rechtstreeks af op je achterliggende API-endpoints.
 
-Elke effectieve limiet moet worden afgedwongen op de plek waar het verzoek binnenkomt: aan de edge, in je serverless functions, of via Row Level Security in de database — en moet gebaseerd zijn op data die de afzender niet zelf vrijblijvend kan manipuleren.
+Elke effectieve limiet moet worden afgedwongen op de plek waar het verzoek binnenkomt: aan de edge, in je serverless functions, of via Row Level Security in de database - en moet gebaseerd zijn op data die de afzender niet zelf vrijblijvend kan manipuleren.
 
 ## De juiste waarden bepalen
 
@@ -82,7 +82,7 @@ Zet je de limieten te strak, dan blokkeer je echte klanten; zet je ze te ruim, d
 
 **Faal vriendelijk en informatief.** Een duidelijke melding ("Te veel pogingen gedaan, probeer het over twee minuten opnieuw") met HTTP-statuscode `429 Too Many Requests` is glashelder voor echte gebruikers en geeft een aanvaller geen nuttige informatie.
 
-En leg elke geblokkeerde poging vast in je logging. Het eerste wat je nodig hebt tijdens een aanval is een overzicht van welke verzoeken zijn geblokkeerd en vanaf welke bronnen — en dat kun je achteraf niet meer toevoegen.
+En leg elke geblokkeerde poging vast in je logging. Het eerste wat je nodig hebt tijdens een aanval is een overzicht van welke verzoeken zijn geblokkeerd en vanaf welke bronnen - en dat kun je achteraf niet meer toevoegen.
 
 ## Een implementatieplan van één dag voor een klein product
 
@@ -92,7 +92,7 @@ Dat is één dag werk die het overgrote deel van alle reële bedreigingen voor e
 
 ## Wanneer basisbescherming niet meer volstaat
 
-Als jouw product uitgroeit tot een specifiek doelwit voor gerichte cyberaanvallen in plaats van opportunistische internetbots, verandert het speelveld. Dan worden enterprise Web Application Firewalls (WAF), geavanceerde gedragsanalyse en 24/7 incident response noodzakelijk. Dat is een heel ander niveau, waar het leeuwendeel van met AI gebouwde SaaS-apps in de beginfase nooit mee te maken krijgt. Wat ze wél vrijwel allemaal nodig hebben, is deze basale beschermingslaag — en bijna geen enkel prototype beschikt erover.
+Als jouw product uitgroeit tot een specifiek doelwit voor gerichte cyberaanvallen in plaats van opportunistische internetbots, verandert het speelveld. Dan worden enterprise Web Application Firewalls (WAF), geavanceerde gedragsanalyse en 24/7 incident response noodzakelijk. Dat is een heel ander niveau, waar het leeuwendeel van met AI gebouwde SaaS-apps in de beginfase nooit mee te maken krijgt. Wat ze wél vrijwel allemaal nodig hebben, is deze basale beschermingslaag - en bijna geen enkel prototype beschikt erover.
 
 ## Bescherming inrichten zonder je product te veranderen
 
@@ -106,11 +106,11 @@ Heeft jouw applicatie een endpoint dat geld kost zonder dat er een limiet voor s
 
 Rate limiting beperkt hoge volumes van dataverkeer. Tegen geavanceerd webscrapen helpt het slechts gedeeltelijk. Het is belangrijk om die twee uit elkaar te houden, omdat de remedie verschilt.
 
-Een scraper probeert je servers niet te overbelasten. Een scraper probeert jouw openbare data zo netjes en onopvallend mogelijk te verzamelen, in een tempo dat geen enkel alarm laat afgaan. Als de kernwaarde van jouw product zit in een zorgvuldig opgebouwde dataset — een bedrijvengids, een prijsvergelijker of vacaturebank — vormt scrapen een commerciële bedreiging.
+Een scraper probeert je servers niet te overbelasten. Een scraper probeert jouw openbare data zo netjes en onopvallend mogelijk te verzamelen, in een tempo dat geen enkel alarm laat afgaan. Als de kernwaarde van jouw product zit in een zorgvuldig opgebouwde dataset - een bedrijvengids, een prijsvergelijker of vacaturebank - vormt scrapen een commerciële bedreiging.
 
 **Accepteer wat je niet kunt voorkomen.** Alles wat zichtbaar is voor een niet-ingelogde bezoeker, kan technisch worden gekopieerd. Het realistische doel is om grootschalig scrapen kostbaar, traag en traceerbaar te maken, niet om het 100% onmogelijk te maken.
 
-**Plaats waardevolle data achter authenticatie.** Niet per se achter een betaalmuur — een gratis account met e-mailverificatie verhoogt de drempel voor bulkverzameling aanzienlijk. Accounts kunnen immers worden gemonitord, begrensd en geblokkeerd.
+**Plaats waardevolle data achter authenticatie.** Niet per se achter een betaalmuur - een gratis account met e-mailverificatie verhoogt de drempel voor bulkverzameling aanzienlijk. Accounts kunnen immers worden gemonitord, begrensd en geblokkeerd.
 
 **Begrens per account, niet per IP.** Scrapers rouleren goedkoop duizenden IP-adressen; zodra een geverifieerd account de meeteenheid is, verandert het economische kostenplaatje voor de scraper drastisch.
 
@@ -138,18 +138,18 @@ Als je applicatie op dít moment wordt aangevallen of leeggetrokken, telt snelhe
 
 Nadia el Amrani bouwde Taalmaatje in Lovable: een interactieve app waarmee anderstaligen de Nederlandse taal oefenen. De app gebruikte een geavanceerd AI-taalmodel om conversaties te voeren en feedback te geven op grammatica. De app had 340 actieve abonnees rond Eindhoven met een maandelijks abonnement.
 
-Het backend-endpoint dat het AI-model aanriep vereiste dat de gebruiker was ingelogd. Nadia ging er te goeder trouw van uit dat dit voldoende beveiliging bood. Dat was het niet: een account aanmaken kostte vijftien seconden, er was geen e-mailverificatie vereist, en er stond geen enkele limiet op het aantal AI-aanroepen dat één account per dag mocht doen. Iemand had een account aangemaakt, het API-verzoek uit de browser gehaald, en het endpoint als gratis vertaaldienst gekoppeld aan een eigen script — goed voor 60.000 intensieve model-calls binnen negen dagen, verdeeld over een handvol geautomatiseerde accounts.
+Het backend-endpoint dat het AI-model aanriep vereiste dat de gebruiker was ingelogd. Nadia ging er te goeder trouw van uit dat dit voldoende beveiliging bood. Dat was het niet: een account aanmaken kostte vijftien seconden, er was geen e-mailverificatie vereist, en er stond geen enkele limiet op het aantal AI-aanroepen dat één account per dag mocht doen. Iemand had een account aangemaakt, het API-verzoek uit de browser gehaald, en het endpoint als gratis vertaaldienst gekoppeld aan een eigen script - goed voor 60.000 intensieve model-calls binnen negen dagen, verdeeld over een handvol geautomatiseerde accounts.
 
 De creditcardfactuur van de AI-provider arriveerde vóórdat iemand ook maar iets in de gaten had, simpelweg omdat er geen uitgavenplafond en geen monitoring actief was.
 
 Vier werkdagen waren nodig om de beveiliging op orde te brengen: rate limits per account ingesteld op het AI-endpoint afgestemd op het type abonnement, e-mailverificatie verplicht gesteld vóórdat de AI-functionaliteit kan worden aangesproken, bot-bescherming geactiveerd op Cloudflare-niveau, een hard maandelijks bestedingsplafond ingesteld in het OpenAI-dashboard, progressieve vertragingen ingebouwd bij herhaalde registratiepogingen vanaf hetzelfde IP-adres, en geautomatiseerde alerts geactiveerd zodra het dagelijkse API-verbruik verdubbelt.
 
-**Resultaat:** de maandelijkse kosten voor het AI-model daalden direct terug naar ongeveer 4% van de piekmaand en lopen sindsdien weer keurig gelijk op met het aantal betalende abonnees. Het monitoringsalert is sindsdien twee keer afgegaan — beide keren door een legitieme piek tijdens de examenperiode, wat Nadia juist rust geeft in plaats van stress.
+**Resultaat:** de maandelijkse kosten voor het AI-model daalden direct terug naar ongeveer 4% van de piekmaand en lopen sindsdien weer keurig gelijk op met het aantal betalende abonnees. Het monitoringsalert is sindsdien twee keer afgegaan - beide keren door een legitieme piek tijdens de examenperiode, wat Nadia juist rust geeft in plaats van stress.
 
 > *"Ik dacht serieus dat het vereisen van een inlogscherm voldoende bescherming was. Het bleek dat een account aanmaken vijftien seconden kostte en er daarna letterlijk geen enkele rem meer op stond."*
-> — **Nadia el Amrani, Oprichter, Taalmaatje (Eindhoven)**
+> - **Nadia el Amrani, Oprichter, Taalmaatje (Eindhoven)**
 
-**Kosten & Doorlooptijd:** € 1.750 (rate limiting, verificatiestroom, bot-protectie, bestedingslimieten en monitoring) — afgerond binnen 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.750 (rate limiting, verificatiestroom, bot-protectie, bestedingslimieten en monitoring) - afgerond binnen 4 werkdagen.
 
 ## Veelgestelde vragen
 

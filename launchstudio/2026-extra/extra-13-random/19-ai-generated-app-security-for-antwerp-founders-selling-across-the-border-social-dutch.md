@@ -7,7 +7,7 @@ De checkout bood alleen kaarten, dus Nederlandse studio's misten boekingen van k
 ❌ Scheiding tussen studio's alleen in de interface
 ❌ Hosting in de VS en een privacyverklaring in één taal
 
-✅ Mollie met Bancontact, iDEAL en kaarten, bevestigd via geverifieerde webhooks — eerdere afwijkingen verzoend
+✅ Mollie met Bancontact, iDEAL en kaarten, bevestigd via geverifieerde webhooks - eerdere afwijkingen verzoend
 ✅ Scheiding van data per studio afgedwongen in de database
 ✅ E-mailsjablonen met escaping en validatie die namen met accenten blijft accepteren
 ✅ Database en e-mail in de EU, plus een lijst met verwerkers voor privacyverklaringen in het Nederlands, Frans en Engels

@@ -1,4 +1,4 @@
-🏰 John, a financial analyst, used **Bolt** to build a trading assistant — but faced compliance risks because data moving between his microservices was completely unencrypted. 🔐
+🏰 John, a financial analyst, used **Bolt** to build a trading assistant - but faced compliance risks because data moving between his microservices was completely unencrypted. 🔐
 
 The "castle and moat" security model is dead: an AI agent with a leaked service credential is functionally identical to a hacker who's already inside your perimeter. 🧠
 
@@ -8,7 +8,7 @@ The "castle and moat" security model is dead: an AI agent with a leaked service 
 
 ✅ Mutual TLS (mTLS) across every internal microservice, so servers must prove identity before exchanging data
 ✅ API keys pulled from a secrets vault at runtime only, never hardcoded, with automatic 30-90 day rotation
-✅ Just-in-Time access that self-destructs after 60 minutes — extended to AI agents' own credentials, not just humans
+✅ Just-in-Time access that self-destructs after 60 minutes - extended to AI agents' own credentials, not just humans
 
 At **LaunchStudio**, we've architected Zero-Trust systems since 2014 through Manifera, with 11+ years across 160+ enterprise projects. 🛡️
 

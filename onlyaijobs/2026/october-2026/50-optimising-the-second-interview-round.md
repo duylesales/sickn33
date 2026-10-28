@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-In many AI hiring processes, the second interview round is where most time is lost — not because the round itself takes too long, but because it often repeats questions already asked in the first round, without anyone explicitly noticing.
+In many AI hiring processes, the second interview round is where most time is lost - not because the round itself takes too long, but because it often repeats questions already asked in the first round, without anyone explicitly noticing.
 
 ## Why This Overlap Happens
 
@@ -45,21 +45,21 @@ Different interviewers prepare their own questions without knowing what a collea
 
 **A short briefing between rounds one and two.** Five minutes in which the first interviewer shares what has been discussed and what is still open prevents most overlap.
 
-**A clear, separate purpose for each round.** If round one tests technical depth and round two tests collaboration and communication, that must be agreed explicitly beforehand — not implicitly assumed.
+**A clear, separate purpose for each round.** If round one tests technical depth and round two tests collaboration and communication, that must be agreed explicitly beforehand - not implicitly assumed.
 
 **Letting the candidate indicate what has already been covered.** Simply asking "has this come up in your previous conversation?" saves time and shows respect for the candidate.
 
 ## Why This Delivers More Than Shortening the Process
 
-The problem is rarely that there are too many rounds — it's that rounds overlap without anyone correcting it. A short briefing between rounds solves more than simply cutting a round.
+The problem is rarely that there are too many rounds - it's that rounds overlap without anyone correcting it. A short briefing between rounds solves more than simply cutting a round.
 
 ## Why Speed Matters in the Dutch AI Labour Market
 
-The Dutch labour market for ICT and data professionals has been tight for years. **UWV**, the Employee Insurance Agency, publishes a labour market tightness indicator per occupational group and region, and ICT occupations have consistently been classified as tight or very tight in recent years. In practice, that means strong AI candidates are often in several processes at once. A process that loses a week to overlapping rounds or slow scheduling doesn't only waste interviewer time — it increases the chance that the preferred candidate accepts another offer before the final round.
+The Dutch labour market for ICT and data professionals has been tight for years. **UWV**, the Employee Insurance Agency, publishes a labour market tightness indicator per occupational group and region, and ICT occupations have consistently been classified as tight or very tight in recent years. In practice, that means strong AI candidates are often in several processes at once. A process that loses a week to overlapping rounds or slow scheduling doesn't only waste interviewer time - it increases the chance that the preferred candidate accepts another offer before the final round.
 
 ## A Deeper Look at Why Nobody Feels Responsible for Overlap
 
-Overlap between interview rounds rarely arises from carelessness by one specific interviewer — it happens because nobody explicitly has the role of overseeing the whole interview process. Each interviewer prepares their own round with the best intentions, but without a designated process owner, nobody is responsible for coherence between rounds.
+Overlap between interview rounds rarely arises from carelessness by one specific interviewer - it happens because nobody explicitly has the role of overseeing the whole interview process. Each interviewer prepares their own round with the best intentions, but without a designated process owner, nobody is responsible for coherence between rounds.
 
 ## Comparison Table: A Process With and Without a Briefing Between Rounds
 
@@ -80,7 +80,7 @@ A clear division of purposes prevents overlap by design:
 | **Round 2** | Collaboration, problem framing and fit with stakeholders | Case discussion with a realistic, ambiguous problem; conversation with a stakeholder from outside the data team | A team member not involved in round 1 and a stakeholder |
 | **Final conversation** (optional) | Terms, questions and mutual commitment | Informal conversation about the offer | Hiring manager |
 
-Each round has its own scorecard with criteria that don't repeat those of the other round. The hiring manager — or a named recruiter — is the process owner responsible for the briefing and the timeline.
+Each round has its own scorecard with criteria that don't repeat those of the other round. The hiring manager - or a named recruiter - is the process owner responsible for the briefing and the timeline.
 
 ## The Five-Minute Briefing Template
 
@@ -146,7 +146,7 @@ Candidates who know what to expect are less likely to accept another offer out o
 4. **Discussing salary for the first time** after two rounds.
 5. **Letting the debrief slip** for a week because interviewers are unavailable.
 
-Each of these adds days without adding information — and each can be prevented by agreeing the process design before the vacancy opens.
+Each of these adds days without adding information - and each can be prevented by agreeing the process design before the vacancy opens.
 
 ## Remote and Hybrid Interview Rounds
 
@@ -160,7 +160,7 @@ Many AI teams interview partly online, which changes where time is lost:
 
 ## Why This Is an Easy, Permanent Improvement
 
-Once a short briefing between interview rounds becomes a fixed habit within a team, it no longer costs extra effort per application — it's simply how the team interviews. That makes it one of the few process improvements that, once introduced, maintains itself.
+Once a short briefing between interview rounds becomes a fixed habit within a team, it no longer costs extra effort per application - it's simply how the team interviews. That makes it one of the few process improvements that, once introduced, maintains itself.
 
 ## Measuring the Effect
 
@@ -168,7 +168,7 @@ Track two simple numbers before and after introducing briefings: the average num
 
 ## What Candidates Notice About Your Process
 
-Candidates for AI roles often compare notes — with friends, former colleagues and in online communities. They notice when two interviewers ask the same question, when nobody seems to know what happened in the previous round, and when a decision takes weeks without explanation. They also notice the opposite: interviewers who build on earlier conversations, a clear timeline that is kept, and a process that respects their time. In a small professional community, those impressions travel. A well-coordinated second round is therefore not only an efficiency gain, but part of how your organisation is perceived as an employer by the next candidates you want to attract.
+Candidates for AI roles often compare notes - with friends, former colleagues and in online communities. They notice when two interviewers ask the same question, when nobody seems to know what happened in the previous round, and when a decision takes weeks without explanation. They also notice the opposite: interviewers who build on earlier conversations, a clear timeline that is kept, and a process that respects their time. In a small professional community, those impressions travel. A well-coordinated second round is therefore not only an efficiency gain, but part of how your organisation is perceived as an employer by the next candidates you want to attract.
 
 ## Key Takeaways
 
@@ -182,12 +182,12 @@ Candidates for AI roles often compare notes — with friends, former colleagues 
 
 Introduce a short briefing between interview rounds, and give each round an explicit, separate purpose known to everyone involved before the conversation starts.
 
-Post your vacancy — first listing free: [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu)
+Post your vacancy - first listing free: [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu)
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer who thinks cutting a round is the solution) Is cutting an interview round the best way to save time?
-Not necessarily — the problem is more often overlap between rounds than the number of rounds itself. A short briefing between rounds solves more.
+Not necessarily - the problem is more often overlap between rounds than the number of rounds itself. A short briefing between rounds solves more.
 
 ### (Scenario: employer who doesn't know why overlap happens) Why do interviewers often ask the same questions as a colleague did earlier?
 Because they prepare their own questions without knowing what was already discussed in the previous round.
@@ -196,20 +196,20 @@ Because they prepare their own questions without knowing what was already discus
 A short, five-minute briefing between interviewers before the next round starts.
 
 ### (Scenario: employer unsure whether candidates may indicate this) May I ask a candidate whether something has already been discussed?
-Yes — it saves time and shows respect for the candidate, instead of blindly repeating the same question.
+Yes - it saves time and shows respect for the candidate, instead of blindly repeating the same question.
 
 ### (Scenario: employer unsure whether each round needs a separate purpose) Should each interview round have a different purpose?
-Ideally, yes, explicitly agreed in advance — that prevents several rounds from unintentionally testing the same thing.
+Ideally, yes, explicitly agreed in advance - that prevents several rounds from unintentionally testing the same thing.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is cutting an interview round the best way to save time?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — the problem is more often overlap between rounds than the number of rounds."}},
+    {"@type": "Question", "name": "Is cutting an interview round the best way to save time?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - the problem is more often overlap between rounds than the number of rounds."}},
     {"@type": "Question", "name": "Why do interviewers often ask the same questions as a colleague did earlier?", "acceptedAnswer": {"@type": "Answer", "text": "They prepare their own questions without knowing what was already discussed."}},
     {"@type": "Question", "name": "What is the simplest way to prevent overlap between rounds?", "acceptedAnswer": {"@type": "Answer", "text": "A short briefing between interviewers before the next round starts."}},
-    {"@type": "Question", "name": "May I ask a candidate whether something has already been discussed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it saves time and shows respect for the candidate."}},
+    {"@type": "Question", "name": "May I ask a candidate whether something has already been discussed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it saves time and shows respect for the candidate."}},
     {"@type": "Question", "name": "Should each interview round have a different purpose?", "acceptedAnswer": {"@type": "Answer", "text": "Ideally, yes, explicitly agreed in advance."}}
   ]
 }

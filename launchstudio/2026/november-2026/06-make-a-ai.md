@@ -33,7 +33,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Forty-seven thousand people searched "make a AI" last month. Roughly twelve of them ended up with a product that generates revenue. The other forty-six thousand nine hundred eighty-eight have prototypes sitting in browser tabs, Lovable dashboards, and GitHub repositories that have never seen a real user.
 
-The bottleneck is no longer creation. Any founder with a clear product concept can make a AI application in a weekend. The bottleneck is monetization infrastructure — the invisible backend systems that turn a clickable prototype into a business that charges money, stores data, and runs without you babysitting it.
+The bottleneck is no longer creation. Any founder with a clear product concept can make a AI application in a weekend. The bottleneck is monetization infrastructure - the invisible backend systems that turn a clickable prototype into a business that charges money, stores data, and runs without you babysitting it.
 
 ## What "Make a AI" Actually Requires in 2026
 
@@ -101,13 +101,13 @@ Not localhost. A deployment pipeline:
 - CDN for static assets
 - Uptime monitoring with alerting
 
-Each of these components requires specialized engineering knowledge. Together, they form the revenue stack — the infrastructure that allows your AI product to charge money and deliver value reliably.
+Each of these components requires specialized engineering knowledge. Together, they form the revenue stack - the infrastructure that allows your AI product to charge money and deliver value reliably.
 
 ## The Founder's Dilemma: Build Infrastructure or Build Business?
 
 Here is a question that determines the trajectory of your startup: do you want to spend the next three months learning DevOps, or do you want to spend the next three months acquiring customers?
 
-Both are valid paths. But for most founders, especially non-technical ones who used AI tools precisely because they wanted to build without becoming developers, the infrastructure path is a trap. It consumes your most valuable resource — time — on problems that are already solved.
+Both are valid paths. But for most founders, especially non-technical ones who used AI tools precisely because they wanted to build without becoming developers, the infrastructure path is a trap. It consumes your most valuable resource - time - on problems that are already solved.
 
 [LaunchStudio](https://launchstudio.eu/en/) exists to give founders their time back. Powered by [Manifera](https://www.manifera.com/), with over a decade of custom software development experience across Amsterdam, Singapore, and Ho Chi Minh City, LaunchStudio handles the entire revenue stack so founders can focus on what actually matters: customers, product-market fit, and growth.
 
@@ -118,7 +118,7 @@ The math is straightforward. Three months of learning infrastructure engineering
 LaunchStudio has refined a systematic process for taking AI-built prototypes to production:
 
 **Days 1–2: Assessment**
-A 15-minute call where you walk through your prototype. The engineering team identifies exactly which revenue stack components are missing. You receive a fixed-price quote within 48 hours — no surprises, no hourly billing.
+A 15-minute call where you walk through your prototype. The engineering team identifies exactly which revenue stack components are missing. You receive a fixed-price quote within 48 hours - no surprises, no hourly billing.
 
 **Days 3–10: Engineering**
 Manifera's development team at 10 Pho Quang Street, Ho Chi Minh City builds your revenue stack. Your frontend stays untouched. All code goes into your GitHub repository. European project management from Herengracht 420, Amsterdam ensures communication is clear and timely.
@@ -138,7 +138,7 @@ David, a nutritionist in Groningen, wanted to make a AI-powered meal planning ap
 
 The prototype was impressive. Users entered their dietary profile, and the AI generated a complete weekly meal plan with shopping lists. David showed it at a local health fair, and 80 people signed up for the waitlist.
 
-But the waitlist was a Google Form. The meal plans generated on-screen but could not be saved or emailed. There was no way to charge the €9.99/month subscription price he had planned. And the OpenAI API key was embedded in the frontend JavaScript — anyone could extract it and use his API credits.
+But the waitlist was a Google Form. The meal plans generated on-screen but could not be saved or emailed. There was no way to charge the €9.99/month subscription price he had planned. And the OpenAI API key was embedded in the frontend JavaScript - anyone could extract it and use his API credits.
 
 David contacted three development agencies in the Netherlands. The lowest quote was €18,000 with a three-month timeline. All three wanted to rebuild the entire application.
 
@@ -147,9 +147,9 @@ A fellow BNI network member connected David to LaunchStudio. The Manifera team k
 **Result:** MealGenius launched with 43 paying subscribers in the first month, generating €429/month recurring revenue. Within three months, the subscriber count grew to 187, reaching €1,867/month.
 
 > *"I spent two months trying to figure out Stripe webhooks on my own. LaunchStudio implemented Mollie billing in three days. Now I focus on creating better meal plan algorithms instead of fighting infrastructure."*
-> — **David Kuipers, Founder, MealGenius (Groningen)**
+> - **David Kuipers, Founder, MealGenius (Groningen)**
 
-**Cost & Timeline:** €2,800 (Launch & Grow Package) — production-ready and deployed in 9 business days.
+**Cost & Timeline:** €2,800 (Launch & Grow Package) - production-ready and deployed in 9 business days.
 
 ---
 
@@ -169,7 +169,7 @@ Start with a web app. AI tools generate web applications far more effectively th
 
 ### (Scenario: Founder concerned about competition from bigger AI companies) Will large AI companies make my AI product obsolete?
 
-Vertical AI products — those solving specific industry problems — are far more defensible than general-purpose AI tools. Your domain expertise, customer relationships, and specialized workflows create value that large companies cannot replicate. LaunchStudio helps you launch fast so you can establish market position before competitors notice.
+Vertical AI products - those solving specific industry problems - are far more defensible than general-purpose AI tools. Your domain expertise, customer relationships, and specialized workflows create value that large companies cannot replicate. LaunchStudio helps you launch fast so you can establish market position before competitors notice.
 
 ### (Scenario: Founder with a prototype who is unsure about LaunchStudio's process) What exactly happens during the LaunchStudio 15-minute introductory call?
 
@@ -209,7 +209,7 @@ You share your screen, walk through your prototype, and describe what the produc
       "name": "Will large AI companies make my AI product obsolete?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vertical AI products — those solving specific industry problems — are far more defensible than general-purpose AI tools. Your domain expertise, customer relationships, and specialized workflows create value that large companies cannot replicate. LaunchStudio helps you launch fast so you can establish market position before competitors notice."
+        "text": "Vertical AI products - those solving specific industry problems - are far more defensible than general-purpose AI tools. Your domain expertise, customer relationships, and specialized workflows create value that large companies cannot replicate. LaunchStudio helps you launch fast so you can establish market position before competitors notice."
       }
     },
     {

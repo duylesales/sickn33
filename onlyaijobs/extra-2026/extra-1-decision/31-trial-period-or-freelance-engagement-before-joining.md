@@ -35,13 +35,13 @@ Content Format: Decision Guide
 }
 </script>
 
-Three interviews and a technical assessment tell you a surprising amount about a company's ambitions and almost nothing about its reality. Whether the data is usable, whether models actually reach production, whether the friendly manager behaves differently under pressure, whether the team talks to each other — none of this survives contact with an interview room. That is why candidates increasingly ask about trying the work before committing: a day with the team, a short freelance engagement, or a contract-to-hire arrangement. Each exists in the Dutch market, each has rules attached, and each solves a different problem.
+Three interviews and a technical assessment tell you a surprising amount about a company's ambitions and almost nothing about its reality. Whether the data is usable, whether models actually reach production, whether the friendly manager behaves differently under pressure, whether the team talks to each other - none of this survives contact with an interview room. That is why candidates increasingly ask about trying the work before committing: a day with the team, a short freelance engagement, or a contract-to-hire arrangement. Each exists in the Dutch market, each has rules attached, and each solves a different problem.
 
 ## The Four Arrangements
 
 **A trial day (proefdag).** A short visit, usually unpaid or with expenses covered, where you join the team, sit in meetings and see the working environment. Common in Dutch hiring for cultural fit rather than skills.
 
-**A paid short engagement.** A defined piece of work — a few days to a few weeks — done as a freelancer or through an intermediary before any employment decision.
+**A paid short engagement.** A defined piece of work - a few days to a few weeks - done as a freelancer or through an intermediary before any employment decision.
 
 **Contract-to-hire.** You start via a secondment or interim construction with the intention of converting to employment after a set period.
 
@@ -54,7 +54,7 @@ Three interviews and a technical assessment tell you a surprising amount about a
 | Trial day | Atmosphere, how people talk to each other, the workspace | Whether the data is usable, how decisions get made over weeks |
 | Short paid engagement | Data quality, tooling, how work is reviewed, how blockers are handled | Long-term dynamics, career path |
 | Contract-to-hire | Almost everything about daily work | Whether the employer treats permanent staff differently |
-| Probation period | Everything, with full employment protections during it | Nothing in advance — you are already in |
+| Probation period | Everything, with full employment protections during it | Nothing in advance - you are already in |
 
 The most common mistake is expecting a trial day to answer technical questions. It cannot. It is a social instrument, and useful as one.
 
@@ -62,18 +62,18 @@ The most common mistake is expecting a trial day to answer technical questions. 
 
 **Trial days are common and lightly regulated.** A short visit aimed at assessment is normal. But if you perform productive work that benefits the employer over a longer period, the arrangement can in substance become work that should be paid. A day of shadowing is fine; three days of delivering output is not a trial, it is unpaid labour.
 
-**Freelance engagements carry their own questions.** If you work as a self-employed professional, how the relationship is organised in practice — instructions, embedding in the team, substitution — determines how it is assessed for tax and employment purposes under Dutch rules on employment relationships. Enforcement in this area has been tightened, so both sides should be careful about an arrangement that looks like employment in everything but name.
+**Freelance engagements carry their own questions.** If you work as a self-employed professional, how the relationship is organised in practice - instructions, embedding in the team, substitution - determines how it is assessed for tax and employment purposes under Dutch rules on employment relationships. Enforcement in this area has been tightened, so both sides should be careful about an arrangement that looks like employment in everything but name.
 
 **Secondment and intermediaries fall under the Waadi.** Companies making workers available must be registered as such in the trade register, and a mandatory admission system for labour providers is being introduced.
 
-**Successive contracts have limits.** The chain rule caps consecutive fixed-term contracts, and a contract-to-hire path that runs through several short contracts can trigger permanent employment sooner than either party planned — which is sometimes exactly what you want.
+**Successive contracts have limits.** The chain rule caps consecutive fixed-term contracts, and a contract-to-hire path that runs through several short contracts can trigger permanent employment sooner than either party planned - which is sometimes exactly what you want.
 
 **Probation is already a trial.** Dutch probation periods are short and capped: none in contracts of six months or less, one month for fixed-term contracts under two years, two months for longer or permanent contracts. For many situations this is the simplest arrangement available.
 
 ## When Trying First Is Genuinely Worth It
 
 - **You are leaving a secure permanent role** and the new employer is unproven.
-- **The organisation would be your first data employer of that kind** — a first data hire, a sector you have never worked in, a very small company.
+- **The organisation would be your first data employer of that kind** - a first data hire, a sector you have never worked in, a very small company.
 - **The interviews left specific questions unanswered,** particularly about data access and whether anything reaches production.
 - **You are a freelancer already,** in which case a short engagement is your normal way of working and costs you nothing structurally.
 - **The employer is unsure too,** and a short engagement replaces a longer selection process for both sides.
@@ -88,7 +88,7 @@ The most common mistake is expecting a trial day to answer technical questions. 
 
 ## What to Agree Before a Trial Day
 
-Keep it simple and short: what the day consists of, who you will meet, whether you are expected to produce anything, that expenses are covered, and what happens with anything you see. Confidentiality works in both directions — you may see personal data or commercially sensitive material, and under the GDPR the employer has obligations about what you are exposed to.
+Keep it simple and short: what the day consists of, who you will meet, whether you are expected to produce anything, that expenses are covered, and what happens with anything you see. Confidentiality works in both directions - you may see personal data or commercially sensitive material, and under the GDPR the employer has obligations about what you are exposed to.
 
 One day is enough. If an employer proposes a week of unpaid "getting to know each other", decline and propose a paid engagement instead.
 
@@ -130,11 +130,11 @@ Even a well-designed trial has blind spots, and knowing them prevents false conf
 
 **You see the current manager and the current priorities.** Both change. A trial cannot protect you against a reorganisation three months after you join.
 
-**Politics are invisible to outsiders.** Tensions between departments, an unresolved disagreement about who owns data, a sponsor whose influence is waning — none of this surfaces in a fortnight.
+**Politics are invisible to outsiders.** Tensions between departments, an unresolved disagreement about who owns data, a sponsor whose influence is waning - none of this surfaces in a fortnight.
 
 **Long-term conditions stay untested.** Career progression, how performance is assessed, whether development budget is real. These only become visible over a year.
 
-The honest conclusion is that a trial reduces a specific risk — that the data, tooling or team are not as described — rather than removing risk generally. That is still worth having, provided you do not treat two good weeks as a guarantee.
+The honest conclusion is that a trial reduces a specific risk - that the data, tooling or team are not as described - rather than removing risk generally. That is still worth having, provided you do not treat two good weeks as a guarantee.
 
 ## Real example
 
@@ -144,7 +144,7 @@ A data scientist with a permanent contract at a large insurer is offered a role 
 
 Rather than a trial day, she proposes a paid two-day engagement: a concrete deliverable, a short assessment of their data landscape with recommendations, at her normal rate. The employer agrees, partly because they get something useful either way.
 
-In two days she learns more than three interviews produced. The data exists and is messier than described. The production manager is genuinely engaged and available. The IT provider is slow but cooperative. And nobody in the organisation has any idea how long anything takes — which tells her the expectations conversation must happen before she accepts.
+In two days she learns more than three interviews produced. The data exists and is messier than described. The production manager is genuinely engaged and available. The IT provider is slow but cooperative. And nobody in the organisation has any idea how long anything takes - which tells her the expectations conversation must happen before she accepts.
 
 She accepts, with the first six months explicitly scoped as foundation work in writing. Two years later the company has three data people, and the assessment she wrote in those two days is still the reference document.
 
@@ -156,7 +156,7 @@ A trial arrangement gives the employer a low-risk look at you. Make sure it is e
 
 **Agree what happens to your work if you do not join.** You should be paid for it regardless; whether they may keep using it is a separate question worth settling explicitly.
 
-**Be careful with access.** You may be given credentials to systems containing personal data. Ask what you are allowed to see, work in a pseudonymised or sample environment where possible, and do not copy data to your own devices — the GDPR obligations here sit with the employer, but the awkwardness lands on you.
+**Be careful with access.** You may be given credentials to systems containing personal data. Ask what you are allowed to see, work in a pseudonymised or sample environment where possible, and do not copy data to your own devices - the GDPR obligations here sit with the employer, but the awkwardness lands on you.
 
 **Do not resign anywhere first.** A short engagement is not a job offer, and treating it as one is the mistake that turns a sensible precaution into a risk.
 
@@ -172,7 +172,7 @@ A trial arrangement gives the employer a low-risk look at you. Make sure it is e
 
 ## Where to Start
 
-If a role leaves you uncertain, ask for a data sample and an hour with a future colleague before proposing anything more elaborate — and compare the role with others nearby while you wait.
+If a role leaves you uncertain, ask for a data sample and an hour with a future colleague before proposing anything more elaborate - and compare the role with others nearby while you wait.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -191,7 +191,7 @@ Only with a clear conversion date, agreed conditions, a budgeted conversion fee 
 How the relationship is organised in practice, since that determines how it is assessed for tax and employment purposes; agree scope, rate, IP and data access in advance.
 
 ### (Scenario: candidate unsure whether to ask) Is there a cheaper alternative to a trial?
-Yes — ask for an hour with a future colleague, a sample of the data, the history of the last three projects and what the team's last failure changed.
+Yes - ask for an hour with a future colleague, a sample of the data, the history of the last three projects and what the team's last failure changed.
 
 <script type="application/ld+json">
 {
@@ -202,7 +202,7 @@ Yes — ask for an hour with a future colleague, a sample of the data, the histo
     {"@type": "Question", "name": "Should I do a paid engagement before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "Worthwhile when leaving security for an unproven employer, with terms agreed in writing."}},
     {"@type": "Question", "name": "Is contract-to-hire a good route into a company?", "acceptedAnswer": {"@type": "Answer", "text": "Only with a clear conversion date, conditions and evidence that others converted."}},
     {"@type": "Question", "name": "What should I watch for in a freelance trial engagement?", "acceptedAnswer": {"@type": "Answer", "text": "How the relationship is organised in practice, plus scope, rate, IP and data access."}},
-    {"@type": "Question", "name": "Is there a cheaper alternative to a trial?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a colleague conversation, a data sample and the history of recent projects."}}
+    {"@type": "Question", "name": "Is there a cheaper alternative to a trial?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - a colleague conversation, a data sample and the history of recent projects."}}
   ]
 }
 </script>

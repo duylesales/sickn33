@@ -2,10 +2,10 @@
 
 Guessing at AI costs from one test document is a founder's classic trap. Here's why it blew up: 🧠
 
-❌ Her €0.02 estimate came from a 2-page test transcript — real ones ran 20–60 pages, roughly 15x the input cost
+❌ Her €0.02 estimate came from a 2-page test transcript - real ones ran 20–60 pages, roughly 15x the input cost
 ❌ The feature resent the full transcript on every follow-up question, so 3 questions cost 4x
 ❌ One customer alone produced 340 summaries in a single month, an outlier nobody had planned for
-❌ Month one: €1,240 in model bills against just €1,560 in subscription revenue — margin nearly gone
+❌ Month one: €1,240 in model bills against just €1,560 in subscription revenue - margin nearly gone
 
 ✅ Estimate for the heaviest plausible customer, not the average one
 ✅ Chunk documents and send only the relevant section per question, not the whole transcript

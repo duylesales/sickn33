@@ -1,8 +1,8 @@
-⏱️ Eva Mulder bouwde Dockflow in Lovable — een tool voor ligplaatsplanning voor scheepvaartagenten langs de rivieren rond Dordrecht — en haalde binnen twee maanden vier regionale agenten binnen, gehost op een enkele niet-schalende server. Toen bereikte een week met ongewoon druk verkeer de resourcelimiet van de server en viel deze vier uur uit, zonder enige waarschuwing.
+⏱️ Eva Mulder bouwde Dockflow in Lovable - een tool voor ligplaatsplanning voor scheepvaartagenten langs de rivieren rond Dordrecht - en haalde binnen twee maanden vier regionale agenten binnen, gehost op een enkele niet-schalende server. Toen bereikte een week met ongewoon druk verkeer de resourcelimiet van de server en viel deze vier uur uit, zonder enige waarschuwing.
 
 Dev AI-tools verlagen de kosten van een eerste versie drastisch. Ze verlagen niet de kosten om die online te houden. 🧠
 
-❌ Geen monitoring ingesteld — Eva kwam erachter doordat twee agenten haar midden in een operatie belden
+❌ Geen monitoring ingesteld - Eva kwam erachter doordat twee agenten haar midden in een operatie belden
 ❌ Een enkele niet-schalende serverinstantie had geen ruimte voor een echte verkeerspiek
 ❌ Geen deploymentpijplijn betekende dat de noodoplossing handmatig, live en ongetest moest worden gepusht
 ❌ Vier uur downtime tijdens een actief verzendvenster is een operationeel probleem, geen ongemak

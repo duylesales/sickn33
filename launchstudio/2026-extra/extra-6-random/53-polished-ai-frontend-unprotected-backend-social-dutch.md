@@ -1,10 +1,10 @@
-⚠️ Marije Terpstra bouwde "ZorgAgenda," een planningsapp voor de zorg, met Lovable. De interface was zo strak en intuïtief dat een pilotkliniek aannam dat het hele product daarbij paste. Toen liet iemand een testtool draaien tegen de API, gewoon om het gedrag onder belasting te controleren — en de API ging een hele middag offline, waardoor de planning tijdens klinische uren uitviel.
+⚠️ Marije Terpstra bouwde "ZorgAgenda," een planningsapp voor de zorg, met Lovable. De interface was zo strak en intuïtief dat een pilotkliniek aannam dat het hele product daarbij paste. Toen liet iemand een testtool draaien tegen de API, gewoon om het gedrag onder belasting te controleren - en de API ging een hele middag offline, waardoor de planning tijdens klinische uren uitviel.
 
 Een prachtige interface vertelt u niets over wat de backend erachter beschermt. 🧠
 
 ❌ Geen ratelimiting betekende geen plafond voor hoeveel verzoeken één bron kon versturen
 ❌ Geen verzoekvalidatie betekende dat misvormde payloads ongecontroleerd de applicatielogica bereikten
-❌ Niemand stelde gerichte vragen over de backend — de frontend had die vraag al onjuist beantwoord
+❌ Niemand stelde gerichte vragen over de backend - de frontend had die vraag al onjuist beantwoord
 ❌ De frontend bleef gewoon prima renderen tot de backend daadwerkelijk uitviel
 
 ✅ Implementeer ratelimieten op elk API-eindpunt

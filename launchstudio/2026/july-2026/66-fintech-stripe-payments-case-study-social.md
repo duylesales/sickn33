@@ -1,6 +1,6 @@
-💳 Daniel built a prototype using **Bolt** — daniel, a fintech founder, used **bolt** to build a B2B invoicing and Stripe Connect payments SaaS prototype, but real money was about to move through gaps big enough to drive a truck through. 🧠
+💳 Daniel built a prototype using **Bolt** - daniel, a fintech founder, used **bolt** to build a B2B invoicing and Stripe Connect payments SaaS prototype, but real money was about to move through gaps big enough to drive a truck through. 🧠
 
-If your fintech app confirms payments on the frontend, skips webhook signature verification, or ships Stripe secret keys in client-side code, you're one exploit away from a real financial data breach — not just a bug.
+If your fintech app confirms payments on the frontend, skips webhook signature verification, or ships Stripe secret keys in client-side code, you're one exploit away from a real financial data breach - not just a bug.
 
 ❌ Payment status confirmed only by a client-side redirect, with no server-side webhook verifying the charge actually settled
 ❌ Row Level Security scaffolded but never enabled, exposing every user's invoices and bank details to any authenticated account
@@ -12,7 +12,7 @@ If your fintech app confirms payments on the frontend, skips webhook signature v
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Daniel's platform achieved production readiness: his first live batch of real transactions processed with every payment verified by a signed webhook and zero data exposure incidents — closing the deal in just 9 business days. 🚀
+Daniel's platform achieved production readiness: his first live batch of real transactions processed with every payment verified by a signed webhook and zero data exposure incidents - closing the deal in just 9 business days. 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/fintech-stripe-payments-case-study
 

@@ -35,11 +35,11 @@ Content Format: Decision Guide
 }
 </script>
 
-Three years into a data career, the question arrives in some form: should you go deep into one thing or stay broad enough to take whatever comes? In a large market the answer leans towards specialisation, because there are enough employers to sustain any niche. The Netherlands is not a large market. It is a small, dense, highly sectoral one, where a specialism can mean a dozen realistic employers nationally — or three within your commuting radius. That changes the calculation, and it makes the usual advice about "finding your niche" incomplete rather than wrong.
+Three years into a data career, the question arrives in some form: should you go deep into one thing or stay broad enough to take whatever comes? In a large market the answer leans towards specialisation, because there are enough employers to sustain any niche. The Netherlands is not a large market. It is a small, dense, highly sectoral one, where a specialism can mean a dozen realistic employers nationally - or three within your commuting radius. That changes the calculation, and it makes the usual advice about "finding your niche" incomplete rather than wrong.
 
 ## What Each Path Actually Means
 
-**Specialising** means going deep on a technical area — computer vision, NLP, optimisation, MLOps, causal inference, time series — or on a domain: medical imaging, energy markets, insurance risk, greenhouse horticulture. Your value comes from knowing things most candidates do not.
+**Specialising** means going deep on a technical area - computer vision, NLP, optimisation, MLOps, causal inference, time series - or on a domain: medical imaging, energy markets, insurance risk, greenhouse horticulture. Your value comes from knowing things most candidates do not.
 
 **Staying generalist** means remaining competent across the pipeline: framing a problem, working with data, modelling, evaluating, deploying, explaining. Your value comes from being usable on whatever the organisation needs next.
 
@@ -75,7 +75,7 @@ The practical test is straightforward: search your specialism by category and di
 
 **Technology risk.** A specialism tied to a particular approach can shrink when the approach changes. Anyone who specialised narrowly in one NLP technique before the arrival of large language models learned this.
 
-**Sector risk.** If your domain contracts — a regulatory change, a market shift, a company closing — the specialism moves with it.
+**Sector risk.** If your domain contracts - a regulatory change, a market shift, a company closing - the specialism moves with it.
 
 **Harder re-entry.** Coming back to generalist work after years of depth is possible but often means explaining away the specialism.
 
@@ -87,7 +87,7 @@ The cost is competition and a ceiling. Generalist roles attract many applicants,
 
 ## The Shape That Works Best in a Small Market
 
-The most robust profile in the Netherlands is usually not pure depth or pure breadth, but breadth with one or two pronounced strengths — competent across the pipeline, genuinely strong in something specific, and ideally with domain knowledge in a sector that exists in many places.
+The most robust profile in the Netherlands is usually not pure depth or pure breadth, but breadth with one or two pronounced strengths - competent across the pipeline, genuinely strong in something specific, and ideally with domain knowledge in a sector that exists in many places.
 
 The combination that travels particularly well is a technical strength plus a portable domain. Forecasting plus retail, optimisation plus logistics, computer vision plus manufacturing quality, data governance plus a regulated sector. These pairs exist in most provinces, so your specialism does not dictate where you live.
 
@@ -138,7 +138,7 @@ Changing employer is the obvious way to change direction, and often the slowest.
 
 **Volunteer for the projects in that direction.** In almost every organisation, some work goes unclaimed. Taking the vision project, the optimisation question or the governance documentation nobody wants is the cheapest entry into a specialism.
 
-**Say it out loud to your manager.** Managers allocate work partly on stated preferences. A single conversation — "over the next year I would like to move towards forecasting work" — changes what lands on your desk more often than people expect.
+**Say it out loud to your manager.** Managers allocate work partly on stated preferences. A single conversation - "over the next year I would like to move towards forecasting work" - changes what lands on your desk more often than people expect.
 
 **Use the development budget deliberately.** Most Dutch collective agreements and employers provide one. Spending it on a coherent direction beats a scattered collection of courses.
 
@@ -146,7 +146,7 @@ Changing employer is the obvious way to change direction, and often the slowest.
 
 **Then move, if you need to.** After a year of deliberate steps you apply as someone with demonstrated direction rather than stated interest, which is a materially stronger position.
 
-The exception is an organisation where the specialism genuinely does not exist — no imaging work at an insurer, no optimisation at a small agency. There, changing employer is the only route, and recognising that early saves a wasted year.
+The exception is an organisation where the specialism genuinely does not exist - no imaging work at an insurer, no optimisation at a small agency. There, changing employer is the only route, and recognising that early saves a wasted year.
 
 ## Real example
 
@@ -154,7 +154,7 @@ The exception is an organisation where the specialism genuinely does not exist �
 
 A data scientist in the Eindhoven region works as a generalist for four years: dashboards, a churn model, a forecasting project, some data engineering. She is competent at everything and distinctive at nothing, and she notices that interviews increasingly ask what she is strong in.
 
-She looks at her surroundings honestly. Within thirty minutes of home there are high-tech manufacturers, a medical technology cluster and several suppliers — all of them needing vision and inspection work. She has enjoyed the two image-related projects she did more than anything else.
+She looks at her surroundings honestly. Within thirty minutes of home there are high-tech manufacturers, a medical technology cluster and several suppliers - all of them needing vision and inspection work. She has enjoyed the two image-related projects she did more than anything else.
 
 She specialises deliberately: one internal project on visual inspection, a course in image processing fundamentals, and an explicit conversation with her manager about direction. Eighteen months later she moves to a manufacturer twenty minutes away as a computer vision engineer, at a level she could not have reached as a generalist.
 
@@ -170,7 +170,7 @@ The familiar advice is to build a "T-shaped" profile: broad across the field, de
 
 **The join matters more than either bar.** The valuable position is usually the intersection: forecasting plus logistics, vision plus manufacturing quality, governance plus a regulated sector. Intersections are less crowded than either component, and they are what employers describe when they say they cannot find anyone.
 
-A practical test: if your current role disappeared tomorrow, could you name three employers within your radius who would want specifically what you are strong at? If yes, the vertical bar is real. If not, it is an interest rather than a specialism — which is fine, provided you know which one you have.
+A practical test: if your current role disappeared tomorrow, could you name three employers within your radius who would want specifically what you are strong at? If yes, the vertical bar is real. If not, it is an interest rather than a specialism - which is fine, provided you know which one you have.
 
 ## Key Takeaways
 
@@ -182,7 +182,7 @@ A practical test: if your current role disappeared tomorrow, could you name thre
 
 ## Where to Start
 
-Before choosing a direction, count how many employers within your travel radius actually need it — search by category and distance and list the companies, not the openings.
+Before choosing a direction, count how many employers within your travel radius actually need it - search by category and distance and list the companies, not the openings.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -195,7 +195,7 @@ Lean towards breadth with one or two pronounced strengths. Pure specialisation w
 It can be, if the specialism clusters elsewhere. Check how many employers within your radius need it before committing, and consider pairing it with a portable domain.
 
 ### (Scenario: candidate worried about technology shifts) What happens if my specialism becomes obsolete?
-Specialisms tied to a single technique are the most fragile. Keep the foundations underneath — statistics, engineering, evaluation — strong enough to move.
+Specialisms tied to a single technique are the most fragile. Keep the foundations underneath - statistics, engineering, evaluation - strong enough to move.
 
 ### (Scenario: senior candidate) Do employers expect depth at senior level?
 Increasingly yes. A senior candidate with no distinctive strength competes poorly against one with clear, evidenced depth in something.
@@ -211,7 +211,7 @@ Do one real project in it, read ten vacancies, speak to three practitioners abou
     {"@type": "Question", "name": "Should I specialise or stay a generalist?", "acceptedAnswer": {"@type": "Answer", "text": "Breadth with one or two pronounced strengths suits the Dutch market best."}},
     {"@type": "Question", "name": "Is specialising risky outside the Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "It can be if the niche clusters elsewhere; count local employers first."}},
     {"@type": "Question", "name": "What happens if my specialism becomes obsolete?", "acceptedAnswer": {"@type": "Answer", "text": "Keep foundations strong so you can move; single-technique niches are fragile."}},
-    {"@type": "Question", "name": "Do employers expect depth at senior level?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly yes — evidenced depth distinguishes senior candidates."}},
+    {"@type": "Question", "name": "Do employers expect depth at senior level?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly yes - evidenced depth distinguishes senior candidates."}},
     {"@type": "Question", "name": "How do I choose a specialism?", "acceptedAnswer": {"@type": "Answer", "text": "Run a real project, read vacancies, talk to practitioners and count nearby employers."}}
   ]
 }

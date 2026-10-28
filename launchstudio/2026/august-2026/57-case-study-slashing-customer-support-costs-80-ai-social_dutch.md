@@ -1,4 +1,4 @@
-🔥 Noah bouwde een prototype met **Lovable** — Noah, een retail-operatieleider, bouwde een klantenservice-bot, maar de bot stuurde af en toe foutieve retourinformatie naar klanten. 🧠
+🔥 Noah bouwde een prototype met **Lovable** - Noah, een retail-operatieleider, bouwde een klantenservice-bot, maar de bot stuurde af en toe foutieve retourinformatie naar klanten. 🧠
 
 Het inzetten van semantische RAG-supportagenten met strikte hallucinatie-preventie kan tot 70% van de supporttickets autonoom oplossen en honderdduizenden euro's aan personeelskosten besparen.
 
@@ -12,7 +12,7 @@ Het inzetten van semantische RAG-supportagenten met strikte hallucinatie-prevent
 
 Bij **LaunchStudio** lossen we exact dit type RAG-integratie, safety-dashboarding en escalatie-architectuur op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Noahs supportbot werd betrouwbaar en effectief: De oplosgraad steeg naar 82% met een foutmarge van nul dankzij een Human-in-the-Loop safety dashboard. (€1.800 (Support Safety Dashboard Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Noahs supportbot werd betrouwbaar en effectief: De oplosgraad steeg naar 82% met een foutmarge van nul dankzij een Human-in-the-Loop safety dashboard. (€1.800 (Support Safety Dashboard Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/case-study-slashing-customer-support-costs-80-ai
 

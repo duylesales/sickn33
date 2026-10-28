@@ -1,4 +1,4 @@
-🚨 Chiara Rossi, muziekdocent en koordirigent in Dordrecht, bouwde Koorplanner in Firebase Studio: amateurkoren plannen repetities, delen bladmuziek en opnames, houden aanwezigheid bij en innen contributie. Binnen een seizoen 140 koren en zo'n 4.000 zangers. Toen verdrievoudigde in één week haar Firebase-rekening — en liet een koorlid uit de IT zien dat hij de ledenlijst van elk koor kon lezen. 😳
+🚨 Chiara Rossi, muziekdocent en koordirigent in Dordrecht, bouwde Koorplanner in Firebase Studio: amateurkoren plannen repetities, delen bladmuziek en opnames, houden aanwezigheid bij en innen contributie. Binnen een seizoen 140 koren en zo'n 4.000 zangers. Toen verdrievoudigde in één week haar Firebase-rekening - en liet een koorlid uit de IT zien dat hij de ledenlijst van elk koor kon lezen. 😳
 
 Na het verlopen van de testmodus waren de regels ingesteld op "ingelogde gebruikers mogen alles lezen en schrijven". Namen, telefoonnummers en adressen lagen open tussen koren, gelicentieerde bladmuziek was door iedereen te downloaden, leden konden hun eigen contributie als betaald markeren, en het aanwezigheidsscherm luisterde realtime naar de hele collectie. Zo brengt u een Firebase Studio-prototype naar productie met regels die standhouden:
 
@@ -7,7 +7,7 @@ Na het verlopen van de testmodus waren de regels ingesteld op "ingelogde gebruik
 ❌ Betaalstatus geschreven door de client
 ❌ Listeners op hele collecties die de rekening opdrijven
 
-✅ Firestore- en Storage-regels herschreven op basis van standaard weigeren, afgebakend op koorlidmaatschap en rollen — met 48 emulatortests in CI
+✅ Firestore- en Storage-regels herschreven op basis van standaard weigeren, afgebakend op koorlidmaatschap en rollen - met 48 emulatortests in CI
 ✅ Contributiestatus alleen bijgewerkt door een Cloud Function na geverifieerde betaalwebhooks
 ✅ App Check aangezet en de listener vervangen door een afgebakende, gepagineerde query
 ✅ Budgetmeldingen en geplande back-ups met een geteste restore

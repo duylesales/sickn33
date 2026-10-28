@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-There is a stage in an AI-built SaaS where the product is live, customers are paying, the security basics are in place — and every release still feels like a gamble. You add a feature in Lovable or Cursor on Tuesday, release it, and discover on Wednesday that it broke invoicing for customers on the annual plan. For scale-up founders, an AI application production ready for growth is one that can change safely, many times a week. That capability rests on three practices: staging, feature flags and rollbacks.
+There is a stage in an AI-built SaaS where the product is live, customers are paying, the security basics are in place - and every release still feels like a gamble. You add a feature in Lovable or Cursor on Tuesday, release it, and discover on Wednesday that it broke invoicing for customers on the annual plan. For scale-up founders, an AI application production ready for growth is one that can change safely, many times a week. That capability rests on three practices: staging, feature flags and rollbacks.
 
 ## Before: How Most AI-Built SaaS Products Release
 
@@ -30,25 +30,25 @@ The typical pattern in AI-built products that have grown past a few hundred cust
 - Changes are made in the AI tool and published directly, or pushed to main and auto-deployed.
 - "Testing" means the founder clicking through the new feature.
 - Every customer gets every change at the same moment.
-- Undoing a change means asking the AI tool to revert it — which may produce a new, different version rather than the old one.
+- Undoing a change means asking the AI tool to revert it - which may produce a new, different version rather than the old one.
 - Database changes happen alongside code changes, with no separate plan.
 
 This works with fifty customers who forgive you. With two thousand, each bad release generates support tickets, refunds and churn.
 
 ## After: Staging That Resembles Production
 
-A staging environment is a full copy of your app — frontend, backend, database, integrations in test mode — where changes run before customers see them.
+A staging environment is a full copy of your app - frontend, backend, database, integrations in test mode - where changes run before customers see them.
 
 What makes staging useful rather than ceremonial:
 
 - **Separate data.** Staging never touches production data. Seed it with realistic, anonymised data that covers your real edge cases: annual plans, cancelled subscriptions, team accounts, customers with large datasets.
-- **Same configuration.** Same hosting type, same database version, same environment structure — only different credentials.
+- **Same configuration.** Same hosting type, same database version, same environment structure - only different credentials.
 - **Test-mode integrations.** Stripe or Mollie test mode, sandbox email, test webhooks.
 - **A habit.** Every change goes through staging, is checked against a short list of critical flows, and only then is promoted.
 
 ## After: Feature Flags Decouple Deploying From Releasing
 
-Feature flags let you deploy code without switching it on for everyone. A flag is a setting — per environment, per customer, per percentage — that decides whether a feature is active.
+Feature flags let you deploy code without switching it on for everyone. A flag is a setting - per environment, per customer, per percentage - that decides whether a feature is active.
 
 For scale-ups, flags enable:
 
@@ -80,7 +80,7 @@ With the three practices in place, a typical release looks like this:
 6. Roll out fully, or switch off and fix.
 7. Remove the flag after a few weeks.
 
-It sounds heavier than "publish," and at first it is. Within a few weeks, it becomes faster — because bad releases stop consuming whole days.
+It sounds heavier than "publish," and at first it is. Within a few weeks, it becomes faster - because bad releases stop consuming whole days.
 
 ## Implementing Feature Flags Without a Vendor
 
@@ -115,7 +115,7 @@ Billing changes deserve extra care: verify the first real transactions manually 
 
 ## Metrics That Decide Whether to Continue
 
-A gradual rollout only helps if you look at the right signals. For each rollout stage, compare the flagged group with the rest: error rates on affected endpoints, response times, conversion or completion of the flow the feature touches, support tickets mentioning it, and — for billing — successful payments and refunds. Define in advance what would make you stop ("error rate on checkout above 1%," "more than three support tickets in a day about the feature"), so the decision is quick and unemotional.
+A gradual rollout only helps if you look at the right signals. For each rollout stage, compare the flagged group with the rest: error rates on affected endpoints, response times, conversion or completion of the flow the feature touches, support tickets mentioning it, and - for billing - successful payments and refunds. Define in advance what would make you stop ("error rate on checkout above 1%," "more than three support tickets in a day about the feature"), so the decision is quick and unemotional.
 
 ## Staging Data That Finds Real Bugs
 
@@ -127,7 +127,7 @@ Rollbacks fail when they are first attempted during an incident. Practise quarte
 
 ## Release Communication for Customers
 
-Scale-up customers — especially businesses — appreciate knowing what changes. A short changelog, in-app announcements for significant features and advance notice for changes that affect workflows reduce support load and build trust. For breaking changes, give customers time and, where possible, a way to opt in early. Feature flags make this easy: enable new behaviour for customers who want it first, then for everyone.
+Scale-up customers - especially businesses - appreciate knowing what changes. A short changelog, in-app announcements for significant features and advance notice for changes that affect workflows reduce support load and build trust. For breaking changes, give customers time and, where possible, a way to opt in early. Feature flags make this easy: enable new behaviour for customers who want it first, then for everyone.
 
 ## Team Practices Around Releases
 
@@ -143,7 +143,7 @@ Feature flags accumulate. Each old flag adds a branch in the code, a condition t
 
 ## Handling Customer-Specific Behaviour
 
-B2B scale-ups are often tempted to use flags for customer-specific behaviour — a special export for one client, a different workflow for another. Use this sparingly. Long-lived customer-specific flags fragment the product and make testing harder. When a variation is genuinely needed, model it as a proper setting or plan feature with its own tests, rather than a hidden flag only one developer remembers.
+B2B scale-ups are often tempted to use flags for customer-specific behaviour - a special export for one client, a different workflow for another. Use this sparingly. Long-lived customer-specific flags fragment the product and make testing harder. When a variation is genuinely needed, model it as a proper setting or plan feature with its own tests, rather than a hidden flag only one developer remembers.
 
 ## What Changes for the Founder
 
@@ -157,7 +157,7 @@ Staging catches mistakes before customers do, feature flags limit the damage of 
 
 For an AI-built SaaS, setting up staging, a flag system, a deployment pipeline with one-click rollback, migration practices and automated checks on critical flows is typically a two-to-three-week project. LaunchStudio's Launch & Grow package covers it, followed by managed hosting at €49 per month that keeps staging, monitoring and backups running.
 
-LaunchStudio is powered by Manifera — our engineers have shipped 160+ projects for enterprise clients, and release engineering is part of every one of them. Manifera's teams work from Ho Chi Minh City, Singapore and Amsterdam. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); for a vendor-neutral description of feature flags, [Martin Fowler's article on feature toggles](https://martinfowler.com/articles/feature-toggles.html) remains the standard reference.
+LaunchStudio is powered by Manifera - our engineers have shipped 160+ projects for enterprise clients, and release engineering is part of every one of them. Manifera's teams work from Ho Chi Minh City, Singapore and Amsterdam. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); for a vendor-neutral description of feature flags, [Martin Fowler's article on feature toggles](https://martinfowler.com/articles/feature-toggles.html) remains the standard reference.
 
 [Describe your product and your release pain](https://launchstudio.eu/en/#contact), and we reply within one working day.
 
@@ -171,12 +171,12 @@ Releases had become the business's biggest risk. A new "skip a month" feature, p
 
 Over fifteen business days, LaunchStudio's engineers set up a staging environment with anonymised production-like data and test-mode Mollie and email, a Git-based deployment pipeline from Isabel's Lovable project with one-click rollback, a simple server-side feature-flag system supporting percentages and specific customers, migration guidelines with expand-and-contract, and automated checks on signup, subscription changes, billing and reminders. The billing error was corrected and affected annual subscribers were charged correctly with clear communication.
 
-**Result:** Plantenpost now releases several times a week, including Fridays. In the following quarter, two releases were switched off by flag within minutes after early error spikes — with only a few percent of customers exposed — and no release has caused a billing incident since. Subscribers grew to 3,400.
+**Result:** Plantenpost now releases several times a week, including Fridays. In the following quarter, two releases were switched off by flag within minutes after early error spikes - with only a few percent of customers exposed - and no release has caused a billing incident since. Subscribers grew to 3,400.
 
 > *"We were a growing company releasing like a weekend project. Now a bad change affects a few customers for a few minutes, instead of everyone for a weekend."*
-> — **Isabel Moreno, Founder, Plantenpost (Amsterdam)**
+> - **Isabel Moreno, Founder, Plantenpost (Amsterdam)**
 
-**Cost & Timeline:** €5,400 (Launch & Grow package: staging, deployment pipeline, feature flags, migrations and automated checks) — completed in 15 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €5,400 (Launch & Grow package: staging, deployment pipeline, feature flags, migrations and automated checks) - completed in 15 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -194,11 +194,11 @@ Deploying puts code in production; releasing makes a feature available to users.
 
 ### How does Manifera approach rollbacks for data changes?
 
-With backward-compatible migrations, separate and reversible backfills, and tested point-in-time recovery — practices Manifera uses across enterprise projects, scaled for founders through LaunchStudio.
+With backward-compatible migrations, separate and reversible backfills, and tested point-in-time recovery - practices Manifera uses across enterprise projects, scaled for founders through LaunchStudio.
 
 ### Do safer releases affect how customers and AI answer engines see my product?
 
-Yes. Fewer broken releases mean fewer complaints, better reviews and more stable pages — the signals that shape how search engines and AI answer engines describe and recommend products.
+Yes. Fewer broken releases mean fewer complaints, better reviews and more stable pages - the signals that shape how search engines and AI answer engines describe and recommend products.
 
 <script type="application/ld+json">
 {

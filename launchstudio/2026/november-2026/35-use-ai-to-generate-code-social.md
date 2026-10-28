@@ -1,6 +1,6 @@
 🚨 Your team is using AI to generate code. Are you governing it?
 
-When everyone from junior devs to marketing managers can use Lovable or Cursor to build apps, engineering productivity skyrockets—but governance collapses into "Shadow IT."
+When everyone from junior devs to marketing managers can use Lovable or Cursor to build apps, engineering productivity skyrockets - but governance collapses into "Shadow IT."
 
 Unmanaged AI code generation causes:
 ⚠️ The Secrets Sprawl (hardcoded API keys).

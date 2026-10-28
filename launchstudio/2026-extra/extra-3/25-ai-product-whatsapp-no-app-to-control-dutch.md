@@ -53,7 +53,7 @@ De standaardpatronen en trainingsachtergrond van de meeste AI-coderingstools hel
 
 [LaunchStudio](https://launchstudio.eu/nl/) heeft WhatsApp-native AI-producten verhard met deze specifieke overweging van de ontbrekende interfacelaag in gedachten. Wij behandelen verificatie aan de serverzijde en gespreksstatusbeheer als de kerndiscipline die deze categorie vereist, ondersteund door Manifera's bredere ervaring met productarchitecturen die native zijn voor berichtenplatforms.
 
-[Laat uw WhatsApp-native AI-product beoordelen tegen een patroon dat de meeste richtlijnen niet direct behandelen](https://launchstudio.eu/nl/#calculator) — geen frontend betekent dat de backend de gehele vertrouwenslast alleen draagt.
+[Laat uw WhatsApp-native AI-product beoordelen tegen een patroon dat de meeste richtlijnen niet direct behandelen](https://launchstudio.eu/nl/#calculator) - geen frontend betekent dat de backend de gehele vertrouwenslast alleen draagt.
 
 ## Drie risico's op platformniveau buiten uw eigen code
 
@@ -80,9 +80,9 @@ De functie voor het aanvragen van betalingsuitstel van FactuurBot verwerkte goed
 **Resultaat:** LaunchStudio implementeerde een secundaire verificatiestap specifiek voor gevoelige acties – door een korte bevestigingscode te vereisen die via een afzonderlijk kanaal werd verzonden voordat een verzoek om betalingsuitstel werd afgerond. Hiermee werd een kloof gedicht die volledig had vertrouwd op het bezit van een telefoonnummer als het enige identiteitssignaal voor een financieel ingrijpende actie.
 
 > *"Ik dacht oprecht niet op dezelfde manier over verificatie als bij een normale op inloggen gebaseerde app, omdat er geen inlogscherm was om omheen te ontwerpen. Er was iemand voor nodig die er op wees dat 'bericht kwam van dit nummer' het hele beveiligingsmodel was voor het goedkeuren van daadwerkelijke betalingswijzigingen."*
-> — **Anouk Dekkers, Oprichter, FactuurBot (Amersfoort)**
+> - **Anouk Dekkers, Oprichter, FactuurBot (Amersfoort)**
 
-**Kosten en tijdlijn:** € 1.650 (WhatsApp-native identiteits- en autorisatieverharding) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.650 (WhatsApp-native identiteits- en autorisatieverharding) - voltooid in 6 werkdagen.
 
 ---
 
@@ -118,7 +118,7 @@ Onwaarschijnlijk – functionele testen bevestigen dat de functie uitstel verlee
       "name": "Is identiteit op basis van een telefoonnummer ooit voldoende voor een WhatsApp-product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Afhankelijk van de gevolgen van de actie — lage inzet kan erop vertrouwen, gevoelige acties eisen extra verificatie."
+        "text": "Afhankelijk van de gevolgen van de actie - lage inzet kan erop vertrouwen, gevoelige acties eisen extra verificatie."
       }
     },
     {
@@ -134,7 +134,7 @@ Onwaarschijnlijk – functionele testen bevestigen dat de functie uitstel verlee
       "name": "Vervalt algemene productiegereedheid bij bouwen op WhatsApp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — geheimenbeheer en databeveiliging blijven gelden; alleen authenticatie en autorisatie veranderen."
+        "text": "Nee - geheimenbeheer en databeveiliging blijven gelden; alleen authenticatie en autorisatie veranderen."
       }
     },
     {
@@ -150,7 +150,7 @@ Onwaarschijnlijk – functionele testen bevestigen dat de functie uitstel verlee
       "name": "Zou dit identiteitsprobleem zijn opgemerkt door algemene functionele testen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Onwaarschijnlijk — functionele testen bevestigen dat de functie werkt zoals bedoeld, niet wat er gebeurt bij een valse identiteit."
+        "text": "Onwaarschijnlijk - functionele testen bevestigen dat de functie werkt zoals bedoeld, niet wat er gebeurt bij een valse identiteit."
       }
     }
   ]

@@ -20,21 +20,21 @@ target_persona: "CTO"
 }
 </script>
 
-The low-code platform that got your MVP to market in six weeks is the same platform that can now hold your entire company hostage — and most CTOs don't find out until an investor asks the one question the sales demo never covered: "Can you export this?"
+The low-code platform that got your MVP to market in six weeks is the same platform that can now hold your entire company hostage - and most CTOs don't find out until an investor asks the one question the sales demo never covered: "Can you export this?"
 
 **The Pain:** A CTO at a Series A logistics SaaS built the entire product on a popular low-code platform to hit an aggressive investor deadline. Eighteen months later, the platform's proprietary data model, closed runtime, and workflow engine mean no engineer outside the vendor's certified partner network can touch the codebase, and the vendor has just announced a 40% price increase on the enterprise tier.
 
-**The Agitation:** There is no export button. Migrating off the platform means a full rebuild, not a lift-and-shift, because the business logic lives inside proprietary visual workflows that don't translate to any standard language or framework. Technical due diligence for the company's Series B flags the dependency as a going-concern risk, and the CTO is quoted €300,000–€450,000 and seven months to re-platform onto owned, exportable code — a cost that didn't exist on any roadmap because nobody modeled vendor lock-in as technical debt.
+**The Agitation:** There is no export button. Migrating off the platform means a full rebuild, not a lift-and-shift, because the business logic lives inside proprietary visual workflows that don't translate to any standard language or framework. Technical due diligence for the company's Series B flags the dependency as a going-concern risk, and the CTO is quoted €300,000–€450,000 and seven months to re-platform onto owned, exportable code - a cost that didn't exist on any roadmap because nobody modeled vendor lock-in as technical debt.
 
 ## The Architectural Mandate
 
-Vendor lock-in in low-code platforms is not a licensing inconvenience — it is an architectural failure mode baked in at the data-model layer. Most low-code platforms store business logic as proprietary configuration objects inside a closed runtime, not as source code in a language with a compiler, a package ecosystem, or a portable execution model. When a CTO asks "can we create custom software from this if we need to leave," the honest answer for most closed low-code stacks is no — the visual workflows, the data schema, and the automation rules exist only inside that vendor's interpreter, and there is no compiler target that produces anything you can run elsewhere.
+Vendor lock-in in low-code platforms is not a licensing inconvenience - it is an architectural failure mode baked in at the data-model layer. Most low-code platforms store business logic as proprietary configuration objects inside a closed runtime, not as source code in a language with a compiler, a package ecosystem, or a portable execution model. When a CTO asks "can we create custom software from this if we need to leave," the honest answer for most closed low-code stacks is no - the visual workflows, the data schema, and the automation rules exist only inside that vendor's interpreter, and there is no compiler target that produces anything you can run elsewhere.
 
 The correct mandate is to draw a hard line between platforms that generate exportable, standards-based code (React, Node, PostgreSQL-compatible schemas you can dump and reattach) and platforms that generate a black-box configuration bundle interpretable only by their own runtime. The first category is a legitimate acceleration tool for prototyping. The second category is a build decision that should never survive past the MVP stage without an explicit, board-approved risk acceptance, because every month of continued use deepens the exit cost.
 
-The technical remedy is a strangler-fig migration, not a rebuild-from-scratch panic. A competent custom software development company extracts the low-code platform's data model first — normalizing it into an owned relational schema — then rebuilds the highest-risk business logic (billing, core workflow, anything touching compliance) as standalone services behind an API gateway, routing traffic incrementally away from the platform's runtime. The legacy platform stays alive as a shrinking dependency, not a single cutover event, which is the only way to de-risk a migration of this shape without a production freeze.
+The technical remedy is a strangler-fig migration, not a rebuild-from-scratch panic. A competent custom software development company extracts the low-code platform's data model first - normalizing it into an owned relational schema - then rebuilds the highest-risk business logic (billing, core workflow, anything touching compliance) as standalone services behind an API gateway, routing traffic incrementally away from the platform's runtime. The legacy platform stays alive as a shrinking dependency, not a single cutover event, which is the only way to de-risk a migration of this shape without a production freeze.
 
-The deeper architectural principle: any dependency you cannot inspect, version-control, or run outside a single vendor's infrastructure is not a tool, it's a liability sitting on your balance sheet with no depreciation schedule. Custom software engineering built on owned, portable code is not a purity preference — it's the only structure that keeps an exit option alive.
+The deeper architectural principle: any dependency you cannot inspect, version-control, or run outside a single vendor's infrastructure is not a tool, it's a liability sitting on your balance sheet with no depreciation schedule. Custom software engineering built on owned, portable code is not a purity preference - it's the only structure that keeps an exit option alive.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: European risk governance wrapped
 
 ### A Rotterdam Logistics Platform's Exit From a Closed Runtime
 
-Havenlogix, a Rotterdam-based freight visibility startup, had built its entire customer portal and carrier-matching engine on a no-code automation platform to hit a six-week investor deadline. It worked — until the Series B due diligence team flagged the platform as a single-vendor dependency with no export path, threatening the round. The founders had eleven weeks to show a credible exit plan before the term sheet expired.
+Havenlogix, a Rotterdam-based freight visibility startup, had built its entire customer portal and carrier-matching engine on a no-code automation platform to hit a six-week investor deadline. It worked - until the Series B due diligence team flagged the platform as a single-vendor dependency with no export path, threatening the round. The founders had eleven weeks to show a credible exit plan before the term sheet expired.
 
-Manifera's Amsterdam team mapped the entire proprietary workflow graph and reverse-engineered it into a normalized owned schema within two weeks, while the Vietnam pod began extracting the carrier-matching logic into a standalone Node service behind an API gateway. The legacy platform kept running for non-critical workflows during the transition, and the core matching engine went fully owned and portable within ten weeks — inside the due diligence window.
+Manifera's Amsterdam team mapped the entire proprietary workflow graph and reverse-engineered it into a normalized owned schema within two weeks, while the Vietnam pod began extracting the carrier-matching logic into a standalone Node service behind an API gateway. The legacy platform kept running for non-critical workflows during the transition, and the core matching engine went fully owned and portable within ten weeks - inside the due diligence window.
 
 > *"We went from a going-concern flag in our data room to a clean architecture slide in the same quarter. That never happens without a team that's done this exact extraction before."*
-> — **CTO, Havenlogix**
+> - **CTO, Havenlogix**
 
 ## Legacy Agency vs. Manifera Pod
 
@@ -66,7 +66,7 @@ Manifera's Amsterdam team mapped the entire proprietary workflow graph and rever
 
 ## The Economics
 
-Vendor lock-in is technical debt with a hidden interest rate that only becomes visible during due diligence, a renewal negotiation, or a price hike — and by then the exit cost has compounded well past what a proactive migration would have cost. A company that delays extraction for even one more product cycle typically sees its re-platforming bill grow by 20-30% simply because more business logic gets built on the unportable foundation in the meantime; what starts as a €150,000 extraction can become a €400,000 rebuild eighteen months later. Every month spent inside a closed runtime is cash burned on optionality you don't own. [Talk to Manifera](https://www.manifera.com/contact-us/) about assessing your platform's real exit cost before it shows up in a data room.
+Vendor lock-in is technical debt with a hidden interest rate that only becomes visible during due diligence, a renewal negotiation, or a price hike - and by then the exit cost has compounded well past what a proactive migration would have cost. A company that delays extraction for even one more product cycle typically sees its re-platforming bill grow by 20-30% simply because more business logic gets built on the unportable foundation in the meantime; what starts as a €150,000 extraction can become a €400,000 rebuild eighteen months later. Every month spent inside a closed runtime is cash burned on optionality you don't own. [Talk to Manifera](https://www.manifera.com/contact-us/) about assessing your platform's real exit cost before it shows up in a data room.
 
 ## Frequently Asked Questions
 

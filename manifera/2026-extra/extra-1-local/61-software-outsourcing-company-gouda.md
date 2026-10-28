@@ -20,11 +20,11 @@ target_persona: "CFO"
 }
 </script>
 
-Two software outsourcing company proposals land on a Gouda CFO's desk with a €40,000 spread between them, and the spreadsheet says pick the cheaper one — except the spreadsheet has no row for what happens when the cheaper vendor's team turns over twice before the project ships.
+Two software outsourcing company proposals land on a Gouda CFO's desk with a €40,000 spread between them, and the spreadsheet says pick the cheaper one - except the spreadsheet has no row for what happens when the cheaper vendor's team turns over twice before the project ships.
 
 **The Pain:** A CFO at a Gouda-based food-trade and logistics company is evaluating a software outsourcing company to rebuild an aging order-management system that connects directly to warehouse and cold-chain partners. Every proposal quotes a day rate. None of them quote what happens to that rate once scope inevitably shifts, or what recourse exists if delivery quality falls short mid-project.
 
-**The Agitation:** A CFO who selects purely on quoted rate is pricing the easy 80% of the decision and ignoring the 20% that determines whether the project actually lands. A software outsourcing engagement that stalls or needs re-scoping after the fact typically costs a Dutch mid-market company €40,000-€75,000 in rework and lost calendar time — more than the entire rate difference the spreadsheet was optimizing for in the first place.
+**The Agitation:** A CFO who selects purely on quoted rate is pricing the easy 80% of the decision and ignoring the 20% that determines whether the project actually lands. A software outsourcing engagement that stalls or needs re-scoping after the fact typically costs a Dutch mid-market company €40,000-€75,000 in rework and lost calendar time - more than the entire rate difference the spreadsheet was optimizing for in the first place.
 
 ## What a Rate Comparison Doesn't Price
 
@@ -32,14 +32,14 @@ A day-rate comparison between software outsourcing company proposals captures th
 
 The second is delivery verification. A CFO needs to know whether anyone independent of the coding team reviews progress and quality, or whether the only status signal is the delivery team's own optimistic sprint report. Without independent verification, a struggling engagement often looks "on track" until the deadline arrives and it demonstrably isn't.
 
-The third is what happens to institutional knowledge if the engagement needs to change shape — scale up, scale down, or transition to a different provider. A software outsourcing company that documents as it builds, with client-owned repositories from day one, lets a CFO make that call freely. One that doesn't turns an already difficult vendor decision into a hostage negotiation.
+The third is what happens to institutional knowledge if the engagement needs to change shape - scale up, scale down, or transition to a different provider. A software outsourcing company that documents as it builds, with client-owned repositories from day one, lets a CFO make that call freely. One that doesn't turns an already difficult vendor decision into a hostage negotiation.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads own scope-change governance and independently verify delivery quality, separate from the engineers writing the code.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds against a documented, milestone-gated plan with client-owned repositories from day one.
 
-This is Dutch Management × Vietnamese Mastery — cost efficiency with the governance layer that actually protects it. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - cost efficiency with the governance layer that actually protects it. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -50,7 +50,7 @@ Noordzee Fresh Logistics NV, a cold-chain distributor based in Ghent, Belgium, h
 Manifera took over delivery, rebuilt the engagement around milestone-gated payment with an explicit change-order trigger, and gave the CFO an Amsterdam-based contact independently verifying progress every two weeks. The customs integration shipped on the revised, transparently-costed timeline, and the CFO reported knowing the total exposure at every stage going forward.
 
 > *"We picked the lower rate and got billed for every surprise anyway. The second time, we picked the structure instead, and the number on the invoice actually matched the number we expected."*
-> — **CFO, Noordzee Fresh Logistics NV, Belgium**
+> - **CFO, Noordzee Fresh Logistics NV, Belgium**
 
 ## Rate-Led Vendor Selection vs. Manifera's Governed Structure
 

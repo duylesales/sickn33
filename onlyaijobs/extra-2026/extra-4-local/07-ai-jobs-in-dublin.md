@@ -47,7 +47,7 @@ Dublin occupies a special position in Europe's technology landscape. It is the E
 
 ## Why So Many Tech Companies Are in Dublin
 
-Over several decades, Ireland attracted international technology companies through a combination of English-speaking talent, EU membership, a favourable corporate environment and an established cluster effect. The Grand Canal Dock area — often called Silicon Docks — became home to large offices of companies including Google, Meta and others, while Microsoft, LinkedIn, Salesforce and many software firms have major Irish operations. Stripe, founded by Irish brothers, has significant presence in Dublin.
+Over several decades, Ireland attracted international technology companies through a combination of English-speaking talent, EU membership, a favourable corporate environment and an established cluster effect. The Grand Canal Dock area - often called Silicon Docks - became home to large offices of companies including Google, Meta and others, while Microsoft, LinkedIn, Salesforce and many software firms have major Irish operations. Stripe, founded by Irish brothers, has significant presence in Dublin.
 
 This concentration matters for AI job seekers because it shapes the type of roles on offer. Many large offices in Dublin focus on EMEA operations: sales, customer support, trust and safety, policy, finance and some engineering. Core machine learning research and product engineering teams exist, but they are a smaller share than headline employee numbers suggest.
 
@@ -84,7 +84,7 @@ In large companies, ask which team the role belongs to and where its decision-ma
 
 Any honest guide to AI jobs in Dublin must address housing. Dublin has a well-documented housing shortage, with high rents and intense competition for available flats, especially near the city centre and the Docklands. For newcomers, finding a place can take weeks and often requires references and proof of employment.
 
-This changes how you should evaluate offers and locations. Consider the commuter belt served by DART, Luas and commuter rail — areas along the coast or in neighbouring counties such as Kildare, Meath and Wicklow — and check realistic commute times from each to the employer's actual office. Ask employers whether they offer relocation support, temporary accommodation or help with the first months; in Dublin, this support can be worth more than a salary difference.
+This changes how you should evaluate offers and locations. Consider the commuter belt served by DART, Luas and commuter rail - areas along the coast or in neighbouring counties such as Kildare, Meath and Wicklow - and check realistic commute times from each to the employer's actual office. Ask employers whether they offer relocation support, temporary accommodation or help with the first months; in Dublin, this support can be worth more than a salary difference.
 
 ## Permits and Paperwork
 
@@ -106,7 +106,7 @@ The EU Pay Transparency Directive will require pay information before interviews
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, shows each vacancy at exact address level with the distance from your home and does not sell higher placement. Its listings are currently concentrated in the Netherlands, so for Dublin you will find few or no local listings today; combine it with Irish job sites, company career pages and research centre vacancy lists.
 
-It remains useful for comparisons — for example if you are weighing Dublin against the Netherlands, where employers such as Accenture, Mollie, Sendcloud and Cegeka list AI roles at exact addresses — and as a method: search by category and commute rather than by title and city. Employers hiring AI talent in Ireland can list their first vacancy free by emailing a link to info@onlyaijobs.eu.
+It remains useful for comparisons - for example if you are weighing Dublin against the Netherlands, where employers such as Accenture, Mollie, Sendcloud and Cegeka list AI roles at exact addresses - and as a method: search by category and commute rather than by title and city. Employers hiring AI talent in Ireland can list their first vacancy free by emailing a link to info@onlyaijobs.eu.
 
 ## The Geography of AI Jobs in Dublin
 
@@ -128,7 +128,7 @@ Dublin's position as the EU base for many large platforms makes it a centre for 
 
 ## Career Growth Beyond the First Role
 
-Dublin's concentration of employers means that, once established, engineers can move between big tech, fintech, startups and research without relocating again. Many experienced engineers who arrive for one company build networks that lead to their next roles in the city. Invest early in the local community — meetups, university events and professional groups — so that your second move is easier than your first. It is also worth considering Ireland beyond Dublin: Cork, Galway and Limerick have technology, pharma and medtech employers, with a less extreme housing market, and some roles offer hybrid arrangements that make living outside the capital realistic.
+Dublin's concentration of employers means that, once established, engineers can move between big tech, fintech, startups and research without relocating again. Many experienced engineers who arrive for one company build networks that lead to their next roles in the city. Invest early in the local community - meetups, university events and professional groups - so that your second move is easier than your first. It is also worth considering Ireland beyond Dublin: Cork, Galway and Limerick have technology, pharma and medtech employers, with a less extreme housing market, and some roles offer hybrid arrangements that make living outside the capital realistic.
 
 ## Working Culture and Hours
 
@@ -142,7 +142,7 @@ Dublin employers receive applications from all over the world, and the volume sh
 
 **State your work authorisation clearly.** If you are an EU citizen, say so near the top. If you need a permit, say which one you expect to use. Recruiters often filter early on this, and clarity avoids wasted interview rounds.
 
-**Prepare for structured interviews.** Large technology companies in Dublin commonly use structured processes: coding rounds, ML system design, a practical modelling exercise and behavioural interviews built around specific past situations. Practise explaining a past project end to end — data, modelling choices, evaluation, deployment, monitoring and what you would do differently.
+**Prepare for structured interviews.** Large technology companies in Dublin commonly use structured processes: coding rounds, ML system design, a practical modelling exercise and behavioural interviews built around specific past situations. Practise explaining a past project end to end - data, modelling choices, evaluation, deployment, monitoring and what you would do differently.
 
 **Research the specific team.** Because many Dublin offices host several functions of the same company, two roles with similar titles can have very different content. Read the posting carefully and ask in the first call which product, which users and which models the team owns.
 
@@ -171,7 +171,7 @@ An ML engineer based in Utrecht receives interest from a large technology compan
 
 Before deciding, she checks three things. The team she would join reports to a product group elsewhere, and most modelling decisions are made there. Rents near the Docklands would consume a much larger share of her net pay than her current rent. And a commuter-belt option would add a long commute on days in the office.
 
-She then compares a role at a Dutch fintech within cycling distance of her home, where she would own models end to end. She chooses to stay — not because Dublin was a bad option, but because comparing actual team structure, commute and housing made the trade-offs visible. A colleague with different priorities, wanting big-tech experience on his CV, took a similar Dublin role and was happy with it. The point is to decide on real information.
+She then compares a role at a Dutch fintech within cycling distance of her home, where she would own models end to end. She chooses to stay - not because Dublin was a bad option, but because comparing actual team structure, commute and housing made the trade-offs visible. A colleague with different priorities, wanting big-tech experience on his CV, took a similar Dublin role and was happy with it. The point is to decide on real information.
 
 ## Key Takeaways
 

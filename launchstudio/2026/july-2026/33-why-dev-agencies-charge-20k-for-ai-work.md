@@ -79,7 +79,7 @@ Henry partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 
 **Result:** Henry launched in under two weeks, securing client data and enabling paid valuations.
 
-**Cost & Timeline:** €3,200 (Hardening & Integration Package) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €3,200 (Hardening & Integration Package) - production-ready and deployed in 10 business days.
 
 ---
 

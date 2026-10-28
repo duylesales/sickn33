@@ -32,7 +32,7 @@ In traditionele softwareteams zijn dit twee afzonderlijke disciplines, en het ve
 - **De Product Owner** definieert **wát** er gebouwd moet worden, **waarom** het commercieel noodzakelijk is, en **hoe** u weet dat het in de echte wereld naar behoren werkt. De product owner bewaakt de zakelijke prioriteiten, beheert de acceptatiecriteria en neemt de beslissingen over scope versus lanceerdatum.
 - **De Projectmanager** organiseert **hóé** en **wanneer** het werk wordt uitgevoerd: welke taken eerst worden opgepakt, hoe de planning van de sprints eruitziet, hoe afhankelijkheden worden gemanaged, en hoe het engineeringteam diens tijd optimaal indeelt.
 
-Wanneer u een bureau met een vaste prijs inschakelt — zoals LaunchStudio — is het projectmanagement het interne risico en de verantwoordelijkheid van het ontwikkelbureau. Dat is immers exact waarvoor u betaalt: een ervaren technische partner die de planning, architectuur en volgordelijkheid beheerst. Wanneer u als oprichter die taak probeert over te nemen, creëert u ruis en verwaarloost u uw eigenlijke mandaat.
+Wanneer u een bureau met een vaste prijs inschakelt - zoals LaunchStudio - is het projectmanagement het interne risico en de verantwoordelijkheid van het ontwikkelbureau. Dat is immers exact waarvoor u betaalt: een ervaren technische partner die de planning, architectuur en volgordelijkheid beheerst. Wanneer u als oprichter die taak probeert over te nemen, creëert u ruis en verwaarloost u uw eigenlijke mandaat.
 
 ## Wat Sturen op Resultaat (Product Ownership) Concreet Inhoudt
 
@@ -60,11 +60,11 @@ Micromanagement ontstaat zelden uit kwade wil; het ontstaat wanneer een oprichte
 
 ## Twee Oprichters, Eenzelfde Project
 
-Stel u twee niet-technische oprichters voor die hetzelfde Launch Ready-traject starten — dezelfde scope, dezelfde ontwikkeltijd van twee weken, dezelfde senior engineer.
+Stel u twee niet-technische oprichters voor die hetzelfde Launch Ready-traject starten - dezelfde scope, dezelfde ontwikkeltijd van twee weken, dezelfde senior engineer.
 
 **Oprichter A** checkt twee keer per week in op afgesproken tijdstippen. Ze arriveert met scherpe, doordachte antwoorden op de zakelijke vragen die sinds de vorige update zijn klaargezet. Ze test elke voltooide functionaliteit op staging direct tegen haar oorspronkelijke doelstellingen, en benoemt één harde voorwaarde: de lanceerdatum mag absoluut niet verschuiven vanwege een persbericht dat al vastligt. Alle tussenliggende implementatiekeuzes laat ze over aan het vakmanschap van de engineer. Het project wordt feestelijk afgerond op dag 12.
 
-**Oprichter B** stuurt meerdere keren per dag chatberichten met de vraag naar "percentage voortgang". Hij vraagt om het databaseschema in te zien en discussieert over kolomnamen. Hij verandert twee keer van gedachten over welk scherm het belangrijkst is midden in een sprint, en vergeet tot dag 9 te vermelden dat een specifieke data-koppeling contractueel verplicht is voor een grote partner die diezelfde week live gaat — hét cruciale feit dat de hele bouwvolgorde vanaf dag één had moeten bepalen. Precies dezelfde hoeveelheid werk wordt pas op dag 19 afgerond, puur omdat alle energie ging naar het controleren van het proces in plaats van het sturen op de uitkomst.
+**Oprichter B** stuurt meerdere keren per dag chatberichten met de vraag naar "percentage voortgang". Hij vraagt om het databaseschema in te zien en discussieert over kolomnamen. Hij verandert twee keer van gedachten over welk scherm het belangrijkst is midden in een sprint, en vergeet tot dag 9 te vermelden dat een specifieke data-koppeling contractueel verplicht is voor een grote partner die diezelfde week live gaat - hét cruciale feit dat de hele bouwvolgorde vanaf dag één had moeten bepalen. Precies dezelfde hoeveelheid werk wordt pas op dag 19 afgerond, puur omdat alle energie ging naar het controleren van het proces in plaats van het sturen op de uitkomst.
 
 Beide oprichters wilden het beste voor hun bedrijf. Maar Oprichter B richtte zijn energie op de verkeerde rol.
 
@@ -80,9 +80,9 @@ Niet elke situatie laat zich vooraf netjes in een hokje plaatsen. Drie reële pr
 
 ## Waarom Oprichters Zich Vaak Verliezen in Micromanagement
 
-Het is zinvol om te begrijpen waar deze reflex vandaan komt, want het is geen domme impuls — het is simpelweg een instinct dat op het verkeerde doelwit schiet. De meeste beginnende software-oprichters hebben nog nooit eerder duizenden euro's overgemaakt voor werk dat ze niet met eigen ogen regel voor regel kunnen controleren. De onzekerheid die dat oproept, zoekt wanhopig naar houvast.
+Het is zinvol om te begrijpen waar deze reflex vandaan komt, want het is geen domme impuls - het is simpelweg een instinct dat op het verkeerde doelwit schiet. De meeste beginnende software-oprichters hebben nog nooit eerder duizenden euro's overgemaakt voor werk dat ze niet met eigen ogen regel voor regel kunnen controleren. De onzekerheid die dat oproept, zoekt wanhopig naar houvast.
 
-Taakstatussen bieden dat houvast: het is een percentage, een getal, een afgevinkt vakje. De kwaliteit van het eindresultaat biedt dat houvast pas veel later, wanneer er daadwerkelijk een werkende interface op staging staat. De paradox is echter dat het krampachtig controleren van taakstatussen de uiteindelijke kwaliteit juist verslechtert. Tijd die u besteedt aan het opvragen van dagelijkse urenupdates, besteedt u niet aan het helder doordenken van uw acceptatiecriteria — terwijl dat de enige knop is die echt bepaalt of de software aansluit bij uw klanten.
+Taakstatussen bieden dat houvast: het is een percentage, een getal, een afgevinkt vakje. De kwaliteit van het eindresultaat biedt dat houvast pas veel later, wanneer er daadwerkelijk een werkende interface op staging staat. De paradox is echter dat het krampachtig controleren van taakstatussen de uiteindelijke kwaliteit juist verslechtert. Tijd die u besteedt aan het opvragen van dagelijkse urenupdates, besteedt u niet aan het helder doordenken van uw acceptatiecriteria - terwijl dat de enige knop is die echt bepaalt of de software aansluit bij uw klanten.
 
 De oplossing is niet het onderdrukken van uw gezonde bezorgdheid, maar het naar voren halen ervan. Besteed die energie vóórdat de bouw begint: schrijf exact op wat elk scherm moet doen, welke uitzonderingen er kunnen optreden en hoe u gaat testen of het werkt. Dát is product ownership. Voortdurend vragen naar uren en percentages is slechts een lapmiddel voor onzekerheid.
 
@@ -104,7 +104,7 @@ Wilt u sparren over de voorbereiding van uw volgende project? [Neem contact op m
 
 ### Wouter Aalders: Eén Oprichter, Twee Totaal Verschillende Trajecten
 
-Wouter Aalders runde zijn eerste softwaretraject — het klaarmaken van Deelgereedschap, een deelplatform voor professioneel gereedschap — zoals hij zijn fysieke handelsonderneming leidde: overal met zijn neus bovenop, continu inchecken en elke tussenstap minutieus controleren. Tijdens een kort hardening-traject van negen dagen eiste hij dagelijkse statusrapportages, betwistte hij twee keer de keuze voor de hostingprovider en gooide hij halverwege de week de prioriteiten om omdat hem een nieuw idee te binnen schoot. Het project sleepte zich uiteindelijk voort naar 16 werkdagen, en Wouter kwam er doodop en gefrustreerd uit.
+Wouter Aalders runde zijn eerste softwaretraject - het klaarmaken van Deelgereedschap, een deelplatform voor professioneel gereedschap - zoals hij zijn fysieke handelsonderneming leidde: overal met zijn neus bovenop, continu inchecken en elke tussenstap minutieus controleren. Tijdens een kort hardening-traject van negen dagen eiste hij dagelijkse statusrapportages, betwistte hij twee keer de keuze voor de hostingprovider en gooide hij halverwege de week de prioriteiten om omdat hem een nieuw idee te binnen schoot. Het project sleepte zich uiteindelijk voort naar 16 werkdagen, en Wouter kwam er doodop en gefrustreerd uit.
 
 Zes maanden later, toen er een complexe functie voor borgreserveringen en schadedossiers moest worden ingebouwd, pakte hij het fundamenteel anders aan. Vóórdat de engineers één regel code aanraakten, schreef Wouter een kraakheldere resultaatomschrijving van één alinea: 
 
@@ -112,15 +112,15 @@ Zes maanden later, toen er een complexe functie voor borgreserveringen en schade
 
 Hij sprak twee vaste check-ins per week af en liet de technische architectuur volledig over aan LaunchStudio. Toen de lead engineer signaleerde dat het ondersteunen van gedeeltelijke schadeclaims (in plaats van alleen het volledige borgbedrag) twee extra werkdagen zou vergen, hakte Wouter die knoop binnen één minuut door: het was immers een zuivere zakelijke afweging die hij feilloos kon maken.
 
-**Resultaat:** de tweede, aanzienlijk complexere feature werd binnen 8 werkdagen succesvol opgeleverd — sneller dan de oorspronkelijke inschatting van 9 dagen, en met een fractie van de tijd en stress die het eerste simpele traject had gekost.
+**Resultaat:** de tweede, aanzienlijk complexere feature werd binnen 8 werkdagen succesvol opgeleverd - sneller dan de oorspronkelijke inschatting van 9 dagen, en met een fractie van de tijd en stress die het eerste simpele traject had gekost.
 
 > *"De eerste keer dacht ik dat betrokkenheid betekende dat ik elke regel code moest bewaken. De tweede keer definieerde ik simpelweg wat 'succes' betekende voor mijn klanten en liet ik de rest los. Het was oneindig veel rustiger en we waren sneller live."*
-> — **Wouter Aalders, Oprichter, Deelgereedschap**
+> - **Wouter Aalders, Oprichter, Deelgereedschap**
 
 ## Veelgestelde Vragen
 
 ### Betekent een vaste prijs dat ik helemaal niets meer hoef te managen?
-U hoeft de technische taken en uren niet te managen — dat doet uw partner. U moet wél optreden als Product Owner: zakelijke keuzes maken over bedrijfsregels, functionaliteiten testen op staging en zorgen dat uw randvoorwaarden helder zijn gedocumenteerd.
+U hoeft de technische taken en uren niet te managen - dat doet uw partner. U moet wél optreden als Product Owner: zakelijke keuzes maken over bedrijfsregels, functionaliteiten testen op staging en zorgen dat uw randvoorwaarden helder zijn gedocumenteerd.
 
 ### Wat als een engineer een technische keuze maakt die ik gevoelsmatig niet vertrouw?
 Vraag de engineer altijd om de zakelijke consequenties uit te leggen: "Wat betekent deze architectuurkeuze voor onze maandelijkse hostingkosten, onze laadtijd en de mogelijkheid om over een halfjaar functie X toe te voegen?". Zo toetst u de keuze op waarde zonder in code-details te verzanden.

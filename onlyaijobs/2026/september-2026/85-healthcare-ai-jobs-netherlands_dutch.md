@@ -21,7 +21,7 @@ Content Format: Sector Analysis
 }
 </script>
 
-De zorg is een van de meest gewilde bestemmingen voor machine learning-engineers in Nederland, en een van de moeilijkste om binnen te komen. Niet omdat de technische lat hoger ligt dan elders — op plekken ligt die lager. De reden is datatoegang, en begrijpen hoe toegang werkelijk werkt is het verschil tussen een realistisch plan en een frustrerende zoektocht.
+De zorg is een van de meest gewilde bestemmingen voor machine learning-engineers in Nederland, en een van de moeilijkste om binnen te komen. Niet omdat de technische lat hoger ligt dan elders - op plekken ligt die lager. De reden is datatoegang, en begrijpen hoe toegang werkelijk werkt is het verschil tussen een realistisch plan en een frustrerende zoektocht.
 
 ## Het toegangsprobleem, precies gesteld
 
@@ -45,7 +45,7 @@ Niets hiervan is obstructie. Het is het systeem dat werkt zoals bedoeld, ter bes
 
 **Via een medisch technologie- of zorgsoftwarebedrijf.** Deze bedrijven werken met klinische partners en houden data onder overeenkomsten. Instap vraagt geen academische achtergrond, en de engineeringnormen zijn vaak hoger dan in onderzoek omdat de output een gereguleerd product is.
 
-**Via een zorgverzekeraar.** Verzekeraars houden declaratiedata op populatieschaal, wat andere vragen ondersteunt dan klinische dossiers — zorgpaden, kosten, gebruik, uitkomsten op schaal.
+**Via een zorgverzekeraar.** Verzekeraars houden declaratiedata op populatieschaal, wat andere vragen ondersteunt dan klinische dossiers - zorgpaden, kosten, gebruik, uitkomsten op schaal.
 
 **Via een publieke gezondheids- of registratieorganisatie.** Landelijke registraties en volksgezondheidsorganen houden waardevolle data en hebben analisten. Statistisch en epidemiologisch in plaats van machine learning-eerst, wat het aantal sollicitanten beperkt.
 
@@ -73,7 +73,7 @@ Vier van deze zes vragen geen academische achtergrond, en kandidaten die aanneme
 
 Klinische data legt vast wat clinici deden én wat patiënten overkwam. Die twee zijn verstrengeld. Bestelde een arts een bepaalde test, dan was er al zorg. Kreeg een patiënt een bepaald middel, dan achtte iemand dat passend. Bestaat een meting überhaupt, dan besloot iemand die te doen.
 
-Het gevolg is dat modellen getraind op klinische dossiers vaak klinisch oordeel leren in plaats van fysiologie. Een model dat verslechtering voorspelt, detecteert mogelijk dat een verpleegkundige de monitoringfrequentie verhoogde — werkelijk voorspellend en tevens nutteloos, want het vertelt je alleen wat de verpleegkundige al wist.
+Het gevolg is dat modellen getraind op klinische dossiers vaak klinisch oordeel leren in plaats van fysiologie. Een model dat verslechtering voorspelt, detecteert mogelijk dat een verpleegkundige de monitoringfrequentie verhoogde - werkelijk voorspellend en tevens nutteloos, want het vertelt je alleen wat de verpleegkundige al wist.
 
 Erger: het model kan uitstekend lijken in retrospectieve validatie en volledig falen in prospectief gebruik, omdat het informatieve signaal een gevolg was van het anticiperen op de uitkomst.
 

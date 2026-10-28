@@ -31,15 +31,15 @@ Doelgroep: Europese SaaS Oprichters / Compliance Officers
 }
 </script>
 
-Dacht u dat de AVG/GDPR al complex was? Bereid u dan voor op de Europese Artificial Intelligence Act (AI Act). Als 's werelds eerste alomvattende wetgevingskader voor kunstmatige intelligentie, gefaseerd van kracht tussen 2024 en 2027, bepaalt deze wet niet alleen hoe u met data omgaat; het dicteert exact wát u juridisch mag bouwen en hoe u de veiligheid moet aantonen vóórdat u lanceert. Heeft u klanten in Europa — of wordt de output van uw software binnen de EU gebruikt, ongeacht waar uw onderneming is gevestigd — dan moet u het getrapte risicomodel van de AI Act door en door kennen om verlammende boetes te voorkomen.
+Dacht u dat de AVG/GDPR al complex was? Bereid u dan voor op de Europese Artificial Intelligence Act (AI Act). Als 's werelds eerste alomvattende wetgevingskader voor kunstmatige intelligentie, gefaseerd van kracht tussen 2024 en 2027, bepaalt deze wet niet alleen hoe u met data omgaat; het dicteert exact wát u juridisch mag bouwen en hoe u de veiligheid moet aantonen vóórdat u lanceert. Heeft u klanten in Europa - of wordt de output van uw software binnen de EU gebruikt, ongeacht waar uw onderneming is gevestigd - dan moet u het getrapte risicomodel van de AI Act door en door kennen om verlammende boetes te voorkomen.
 
 ## De Risicogebaseerde Benadering
 
-Het kenmerk van de Europese AI Act is dat de wet niet de onderliggende technologie reguleert, maar het specifieke **toepassingsgebied (use case)**. Een Large Language Model is op zichzelf niet illegaal, maar de wijze van inzet kan dat wél zijn — exact hetzelfde samenvattingsmodel valt onder "Minimaal Risico" wanneer het vergadernotities structureert, maar onder "Hoog Risico" wanneer het cv's van sollicitanten beoordeelt. De wet onderscheidt vier formele risicocategorieën:
+Het kenmerk van de Europese AI Act is dat de wet niet de onderliggende technologie reguleert, maar het specifieke **toepassingsgebied (use case)**. Een Large Language Model is op zichzelf niet illegaal, maar de wijze van inzet kan dat wél zijn - exact hetzelfde samenvattingsmodel valt onder "Minimaal Risico" wanneer het vergadernotities structureert, maar onder "Hoog Risico" wanneer het cv's van sollicitanten beoordeelt. De wet onderscheidt vier formele risicocategorieën:
 
 ## 1. Onaanvaardbaar Risico (Verboden Systemen)
 
-Deze categorie systemen is categorisch verboden in de Europese Unie — er bestaat geen enkele compliance-route:
+Deze categorie systemen is categorisch verboden in de Europese Unie - er bestaat geen enkele compliance-route:
 - **Social Scoring:** Het beoordelen of rangschikken van burgers op basis van sociaal gedrag of betrouwbaarheidsscores.
 - **Subliminale Manipulatie:** AI-systemen die subliminale technieken inzetten om menselijk gedrag te manipuleren op een wijze die schade veroorzaakt.
 - **Realtime Biometrische Identificatie:** Biometrische surveillance op afstand in openbare ruimtes door handhavingsinstanties (behoudens zeer strikte uitzonderingen).
@@ -105,7 +105,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in om geautomatiseerde databaselo
 
 **Resultaat:** De applicatie voldeed volledig aan de documentatie- en toezichteisen van de AI Act, wat een succesvolle Europese expansie veiligstelde.
 
-**Kosten & Tijdlijn:** €2.400 (AI Act Audit Trail Pakket) — productieklaar en binnen 6 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.400 (AI Act Audit Trail Pakket) - productieklaar en binnen 6 werkdagen live opgeleverd.
 
 ---
 

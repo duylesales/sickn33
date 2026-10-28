@@ -35,23 +35,23 @@ A growing share of agency clients now arrive with something traditional intake p
 
 ## Why Traditional Intake Assumptions Don't Transfer Cleanly
 
-A traditional agency brief describes what a client wants built, and the agency estimates the work of building it from that description. A vibe-coded prototype inverts this: the client has already built something, and the actual question is narrower and more specific — what does this particular codebase need to become production-safe, not what would it cost to build this from scratch. Answering the wrong question (estimating a rebuild) produces a proposal the client will reasonably reject as overpriced for what they perceive as "almost done" work, even when a rebuild genuinely wouldn't be the right call.
+A traditional agency brief describes what a client wants built, and the agency estimates the work of building it from that description. A vibe-coded prototype inverts this: the client has already built something, and the actual question is narrower and more specific - what does this particular codebase need to become production-safe, not what would it cost to build this from scratch. Answering the wrong question (estimating a rebuild) produces a proposal the client will reasonably reject as overpriced for what they perceive as "almost done" work, even when a rebuild genuinely wouldn't be the right call.
 
 ## A Structured Evaluation Process for AI-Generated Client Codebases
 
-**Step one: a rapid, structured audit**, not a full code review — checking specifically for the recurring patterns covered throughout this series (hardcoded secrets, frontend-only authentication, missing error handling, absent testing, no observability) rather than a generic "how good is this code" assessment, which is both slower and less directly useful for scoping actual remaining work.
+**Step one: a rapid, structured audit**, not a full code review - checking specifically for the recurring patterns covered throughout this series (hardcoded secrets, frontend-only authentication, missing error handling, absent testing, no observability) rather than a generic "how good is this code" assessment, which is both slower and less directly useful for scoping actual remaining work.
 
 **Step two: separate "needs hardening" from "needs building."** A client who used Lovable or Bolt for a full-stack prototype typically needs hardening of what exists. A client who used v0 for interface-only generation typically needs an entire backend built. These require genuinely different proposals, timelines, and pricing, and conflating them under one generic "AI app cleanup" service misrepresents the actual scope of either.
 
-**Step three: price and scope around the audit's specific findings**, not a generic package — a client whose prototype has clean, well-structured code with a few isolated gaps warrants a different proposal than one whose prototype has systemic issues across multiple dimensions, even if both prototypes "look" similarly complete in a client demo.
+**Step three: price and scope around the audit's specific findings**, not a generic package - a client whose prototype has clean, well-structured code with a few isolated gaps warrants a different proposal than one whose prototype has systemic issues across multiple dimensions, even if both prototypes "look" similarly complete in a client demo.
 
 ## Why This Matters for Agency Positioning, Not Just Delivery
 
-Agencies that develop genuine fluency in evaluating AI-generated codebases specifically — rather than treating every AI-assisted client as a special, confusing edge case — position themselves for a client segment that's only growing as more founders start with AI tools before ever engaging outside help. This fluency is a distinct, learnable skill from traditional custom development estimation, and agencies that build it early capture client relationships that agencies still treating every AI-generated prototype as an anomaly will continue to mis-scope.
+Agencies that develop genuine fluency in evaluating AI-generated codebases specifically - rather than treating every AI-assisted client as a special, confusing edge case - position themselves for a client segment that's only growing as more founders start with AI tools before ever engaging outside help. This fluency is a distinct, learnable skill from traditional custom development estimation, and agencies that build it early capture client relationships that agencies still treating every AI-generated prototype as an anomaly will continue to mis-scope.
 
 ## The Freelancer-Understanding-AI-Code Problem, From the Agency's Side
 
-Clients specifically and repeatedly report frustration with freelancers and agencies that don't understand AI-generated code patterns — the same freelancer-competence gap covered from the founder's perspective elsewhere in this series. An agency capable of demonstrating genuine, specific fluency with these patterns during a sales conversation — describing exactly what an audit checks for, rather than offering generic reassurance — differentiates itself immediately against competitors still operating from traditional custom-build assumptions.
+Clients specifically and repeatedly report frustration with freelancers and agencies that don't understand AI-generated code patterns - the same freelancer-competence gap covered from the founder's perspective elsewhere in this series. An agency capable of demonstrating genuine, specific fluency with these patterns during a sales conversation - describing exactly what an audit checks for, rather than offering generic reassurance - differentiates itself immediately against competitors still operating from traditional custom-build assumptions.
 
 ## Where White-Label Partnership Fits
 
@@ -61,32 +61,32 @@ For agencies that want this capability without building deep in-house expertise 
 
 Clients who arrive convinced their prototype is "basically done" often push back on the idea of an audit at all, before an agency has a chance to explain why it matters. A few recurring objections, and the direct answer that tends to actually land:
 
-**"It already works — why do I need to pay for someone to look at it?"** Working and production-safe are different claims, and the entire reason an audit is fast and cheap relative to a rebuild is precisely because the app does already work — the audit is confirming what's underneath the parts that visibly work, not questioning whether they work at all.
+**"It already works - why do I need to pay for someone to look at it?"** Working and production-safe are different claims, and the entire reason an audit is fast and cheap relative to a rebuild is precisely because the app does already work - the audit is confirming what's underneath the parts that visibly work, not questioning whether they work at all.
 
-**"Can't you just estimate this like you would any other project?"** A generic estimate for an unreviewed codebase forces a choice between guessing conservatively (which produces an inflated rebuild-sized quote) or guessing optimistically (which produces a quote that turns out too low once real issues surface mid-project) — an audit removes the guessing entirely, replacing it with a scope based on what's actually there.
+**"Can't you just estimate this like you would any other project?"** A generic estimate for an unreviewed codebase forces a choice between guessing conservatively (which produces an inflated rebuild-sized quote) or guessing optimistically (which produces a quote that turns out too low once real issues surface mid-project) - an audit removes the guessing entirely, replacing it with a scope based on what's actually there.
 
-**"How do I know the audit itself isn't just a way to justify a bigger project?"** This is best answered with specificity, not reassurance — walking a client through exactly what gets checked (the recurring patterns covered throughout this series: secrets, authentication, error handling, testing, observability) and delivering a written finding for each one, rather than a vague verbal impression, makes the audit's value legible and its findings independently verifiable.
+**"How do I know the audit itself isn't just a way to justify a bigger project?"** This is best answered with specificity, not reassurance - walking a client through exactly what gets checked (the recurring patterns covered throughout this series: secrets, authentication, error handling, testing, observability) and delivering a written finding for each one, rather than a vague verbal impression, makes the audit's value legible and its findings independently verifiable.
 
-**"Why can't my original AI tool or a cheaper freelancer just check this?"** Because the specific patterns worth checking for are consistent enough across AI-generated codebases that they require pattern-specific familiarity, not general coding ability — the same distinction covered elsewhere in this series regarding freelancer competence with AI-generated code specifically.
+**"Why can't my original AI tool or a cheaper freelancer just check this?"** Because the specific patterns worth checking for are consistent enough across AI-generated codebases that they require pattern-specific familiarity, not general coding ability - the same distinction covered elsewhere in this series regarding freelancer competence with AI-generated code specifically.
 
-Handled well, this conversation itself becomes a differentiator — a client who's had this exact exchange with an agency that clearly knows what it's checking for, and why, tends to trust the resulting proposal considerably more than one delivered without that context.
+Handled well, this conversation itself becomes a differentiator - a client who's had this exact exchange with an agency that clearly knows what it's checking for, and why, tends to trust the resulting proposal considerably more than one delivered without that context.
 
 [LaunchStudio](https://launchstudio.eu/en/) works with agencies and freelancers as a white-label production partner specifically for AI-generated client prototypes, delivering the audit and hardening work under your branding, backed by Manifera's engineering team and their specific experience across 160+ delivered projects spanning exactly this pattern.
 
-[Explore a white-label partnership for your AI-native clients](https://launchstudio.eu/en/#contact) — "Jouw branding, onze engineering."
+[Explore a white-label partnership for your AI-native clients](https://launchstudio.eu/en/#contact) - "Jouw branding, onze engineering."
 
 ## Real example
 
 ### An AI-Native Founder in Action: An Agency's Mis-Scoped Rebuild Proposal, Corrected
 
-Diederik runs a small digital agency in Rotterdam serving local small business clients, and was approached by a client who'd built a working booking and scheduling tool for her physiotherapy practice using Bolt, seeking help getting it "properly launched." Diederik's initial instinct, following his agency's traditional intake process, was to scope a full rebuild — his team's standard approach to any client-provided codebase they hadn't built themselves.
+Diederik runs a small digital agency in Rotterdam serving local small business clients, and was approached by a client who'd built a working booking and scheduling tool for her physiotherapy practice using Bolt, seeking help getting it "properly launched." Diederik's initial instinct, following his agency's traditional intake process, was to scope a full rebuild - his team's standard approach to any client-provided codebase they hadn't built themselves.
 
 The client, reasonably, balked at a rebuild quote nearly matching what she estimated the original build would have cost from scratch, for a product she felt was "basically done." Diederik, recognizing the friction wasn't about price sensitivity but about a genuine mismatch between his proposal and what the client's prototype actually needed, brought the codebase to LaunchStudio for a structured audit before re-scoping.
 
-**Result:** The audit found a well-structured, largely sound Bolt-generated codebase requiring targeted hardening — authentication moved server-side, error handling added for the calendar sync dependency, and a CI pipeline set up — a fraction of a full rebuild's scope. Diederik re-proposed based on the audit's specific findings, won the engagement at a price the client considered fair, and has since brought two subsequent AI-native clients through the same audit-first process rather than his agency's original rebuild-by-default assumption.
+**Result:** The audit found a well-structured, largely sound Bolt-generated codebase requiring targeted hardening - authentication moved server-side, error handling added for the calendar sync dependency, and a CI pipeline set up - a fraction of a full rebuild's scope. Diederik re-proposed based on the audit's specific findings, won the engagement at a price the client considered fair, and has since brought two subsequent AI-native clients through the same audit-first process rather than his agency's original rebuild-by-default assumption.
 
 > *"I was about to quote her almost what a full build would cost, for work that turned out to need maybe a fifth of that effort once someone actually looked at what was there instead of assuming. That mis-scoped quote would have lost me the client and, honestly, would have been the wrong advice anyway."*
-> — **Diederik Voskuijlen, Agency Owner, Rotterdam**
+> - **Diederik Voskuijlen, Agency Owner, Rotterdam**
 
 **Cost & Timeline:** Audit: €600, completed in 2 business days; subsequent hardening scope: €1,750, completed in 7 business days.
 
@@ -96,23 +96,23 @@ The client, reasonably, balked at a rebuild quote nearly matching what she estim
 
 ### How is auditing an AI-generated client prototype different from an agency's typical code review process for inherited codebases?
 
-The specific patterns to check for are different and more predictable — the recurring gaps covered throughout this series (secrets, frontend-only auth, missing error handling) are consistent enough across AI-generated codebases that a targeted audit is both faster and more specifically useful than a generic "assess this inherited code" review.
+The specific patterns to check for are different and more predictable - the recurring gaps covered throughout this series (secrets, frontend-only auth, missing error handling) are consistent enough across AI-generated codebases that a targeted audit is both faster and more specifically useful than a generic "assess this inherited code" review.
 
 ### Does white-label partnership mean the agency's client never interacts with the partner directly?
 
-Typically yes — the engagement runs under the agency's branding and client relationship, with the partner's work delivered as part of the agency's own service offering, similar to how many technical subcontracting relationships in the industry already operate.
+Typically yes - the engagement runs under the agency's branding and client relationship, with the partner's work delivered as part of the agency's own service offering, similar to how many technical subcontracting relationships in the industry already operate.
 
 ### How should an agency price an audit-first engagement like Diederik's, relative to their traditional project pricing?
 
-The audit itself is typically priced as a distinct, smaller, fast-turnaround service, with the subsequent hardening or build work priced separately based on the audit's specific findings — this two-step structure lets the agency propose accurately rather than guessing scope before a codebase has actually been examined.
+The audit itself is typically priced as a distinct, smaller, fast-turnaround service, with the subsequent hardening or build work priced separately based on the audit's specific findings - this two-step structure lets the agency propose accurately rather than guessing scope before a codebase has actually been examined.
 
 ### Is this audit-first approach only relevant for agencies serving non-technical founder clients, or does it apply to technical clients too?
 
-It applies broadly, though the specific value proposition differs — non-technical clients benefit from the plain-language translation of findings, while technical clients benefit more directly from the speed of a targeted audit versus estimating from scratch as if no code existed yet.
+It applies broadly, though the specific value proposition differs - non-technical clients benefit from the plain-language translation of findings, while technical clients benefit more directly from the speed of a targeted audit versus estimating from scratch as if no code existed yet.
 
-### What's the typical outcome distribution — do most AI-generated client prototypes need major hardening, or is Diederik's relatively light-scope case typical?
+### What's the typical outcome distribution - do most AI-generated client prototypes need major hardening, or is Diederik's relatively light-scope case typical?
 
-It varies considerably by which tool built the prototype and what the product does, as covered elsewhere in this series — the value of the audit-first approach is specifically that it reveals which scenario applies for a given client, rather than assuming either a rebuild or a light touch-up before actually looking.
+It varies considerably by which tool built the prototype and what the product does, as covered elsewhere in this series - the value of the audit-first approach is specifically that it reveals which scenario applies for a given client, rather than assuming either a rebuild or a light touch-up before actually looking.
 
 <script type="application/ld+json">
 {
@@ -132,7 +132,7 @@ It varies considerably by which tool built the prototype and what the product do
       "name": "Does white-label partnership mean the agency's client never interacts with the partner directly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typically yes — the engagement runs under the agency's branding and client relationship."
+        "text": "Typically yes - the engagement runs under the agency's branding and client relationship."
       }
     },
     {
@@ -148,7 +148,7 @@ It varies considerably by which tool built the prototype and what the product do
       "name": "Is this audit-first approach only relevant for non-technical founder clients?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It applies broadly, though the value proposition differs — non-technical clients benefit from plain-language findings, technical clients from audit speed."
+        "text": "It applies broadly, though the value proposition differs - non-technical clients benefit from plain-language findings, technical clients from audit speed."
       }
     },
     {
@@ -156,7 +156,7 @@ It varies considerably by which tool built the prototype and what the product do
       "name": "Do most AI-generated client prototypes need major hardening, or is a light-scope case typical?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It varies considerably by tool and product — the audit-first approach reveals which scenario applies rather than assuming either outcome beforehand."
+        "text": "It varies considerably by tool and product - the audit-first approach reveals which scenario applies rather than assuming either outcome beforehand."
       }
     }
   ]

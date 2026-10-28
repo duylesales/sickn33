@@ -31,7 +31,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Twee avonden voor haar geplande lancering zat Femke achter haar laptop met twee browsertabbladen open: in het ene tabblad haar prijspagina, in het andere haar met Lovable gebouwde applicatie. Ze twijfelde tussen een vast bedrag van € 29 per maand of een gelaagde structuur met drie tiers (Starter, Growth en Enterprise). Tot dat moment had ze deze keuze puur benaderd als een marketingbeslissing — een kwestie van merkpositionering en waardeperceptie. 
+Twee avonden voor haar geplande lancering zat Femke achter haar laptop met twee browsertabbladen open: in het ene tabblad haar prijspagina, in het andere haar met Lovable gebouwde applicatie. Ze twijfelde tussen een vast bedrag van € 29 per maand of een gelaagde structuur met drie tiers (Starter, Growth en Enterprise). Tot dat moment had ze deze keuze puur benaderd als een marketingbeslissing - een kwestie van merkpositionering en waardeperceptie. 
 
 Totdat het besef doordrong: een gelaagde structuur betekende dat haar software daadwerkelijk verschillende functielimieten per abonnementsvorm moest afdwingen. En in haar huidige codebase was daarvan nog geen enkele regel geprogrammeerd. 
 
@@ -45,7 +45,7 @@ In de praktijk bepaalt uw prijsmodel een aanzienlijk deel van uw software-archit
 - Welke parameters moeten per gebruiker realtime worden bijgehouden?
 - Welke restricties worden realtime in de UI afgedwongen versus gecontroleerd bij de maandelijkse facturatie?
 - Hoe moet het datamodel (schema) worden gestructureerd?
-- Hoeveel 'onzichtbaar leidingwerk' — prorering, facturatie, debiteurenbeheer (dunning) en btw-splitsing — moet operationeel zijn vóórdat de eerste betaling succesvol kan worden verwerkt?
+- Hoeveel 'onzichtbaar leidingwerk' - prorering, facturatie, debiteurenbeheer (dunning) en btw-splitsing - moet operationeel zijn vóórdat de eerste betaling succesvol kan worden verwerkt?
 
 Wie pas over prijsmodellen nadenkt als de software al af is, moet achteraf kunstmatig restricties inbouwen in een architectuur die daar nooit voor is ontworpen. Dat leidt tot vertraging en instabiliteit. AI-codingtools verergeren dit probleem geruisloos: platforms zoals Lovable, Bolt en Cursor integreren met plezier een Stripe-betaalknop, maar vragen nooit welk prijsmodel daarachter schuilgaat. Het resultaat is vrijwel altijd de eenvoudigst denkbare koppeling, ongeacht uw werkelijke commerciële plannen.
 
@@ -92,7 +92,7 @@ Een softwaresysteem dat puur is ontworpen rondom eenmalige transacties mist vaak
 
 ## Kiezen Vooraf vs. Achteraf: De Kosten van Facturatie Herstructureren na Lancering
 
-Het wijzigen van prijsmodellen na de lancering is een volkomen normaal en gezond onderdeel van het runnen van een SaaS-onderneming — talloze succesvolle producten stappen over van een vast tarief naar staffels, of van een eenmalige aankoop naar een abonnement, naarmate ze ontdekken wat klanten daadwerkelijk waarderen. Wat kostbaar is, is niet de prijswijziging op zichzelf, maar de ontdekking dat het onderliggende datamodel de nieuwe prijsstructuur niet kan ondersteunen zonder ingrijpend herstelwerk, omdat niets in de registratie van verbruik, accounts of rechten rekening hield met een tweede model. Een backend die is gebouwd voor vaste prijzen en later staffels nodig heeft, moet pakket-herkenning achteraf inbouwen in elke feature gate in de codebase; een backend die is gebouwd voor eenmalige aankopen en later abonnementen vereist, moet verlengings- en opzeggingslogica toevoegen die nooit deel uitmaakte van het oorspronkelijke ontwerp. Dit betekent geenszins dat u op dag één al moet bouwen voor elk denkbaar toekomstig model — het betekent dat de initiële prijsbeslissing moet worden genomen met minimaal een globaal beeld van waar het bedrijf heen kan groeien, zodat de eerste bouwversie een tweede model niet bij voorbaat onmogelijk maakt.
+Het wijzigen van prijsmodellen na de lancering is een volkomen normaal en gezond onderdeel van het runnen van een SaaS-onderneming - talloze succesvolle producten stappen over van een vast tarief naar staffels, of van een eenmalige aankoop naar een abonnement, naarmate ze ontdekken wat klanten daadwerkelijk waarderen. Wat kostbaar is, is niet de prijswijziging op zichzelf, maar de ontdekking dat het onderliggende datamodel de nieuwe prijsstructuur niet kan ondersteunen zonder ingrijpend herstelwerk, omdat niets in de registratie van verbruik, accounts of rechten rekening hield met een tweede model. Een backend die is gebouwd voor vaste prijzen en later staffels nodig heeft, moet pakket-herkenning achteraf inbouwen in elke feature gate in de codebase; een backend die is gebouwd voor eenmalige aankopen en later abonnementen vereist, moet verlengings- en opzeggingslogica toevoegen die nooit deel uitmaakte van het oorspronkelijke ontwerp. Dit betekent geenszins dat u op dag één al moet bouwen voor elk denkbaar toekomstig model - het betekent dat de initiële prijsbeslissing moet worden genomen met minimaal een globaal beeld van waar het bedrijf heen kan groeien, zodat de eerste bouwversie een tweede model niet bij voorbaat onmogelijk maakt.
 
 ## Het Btw-Vraagstuk Dat Uw Prijspagina Niet Laat Zien
 
@@ -107,7 +107,7 @@ Dit is geen theoretische fiscale kwestie; het vereist concrete programmacode in 
 
 Zorg voor de juiste volgorde: bepaal de **vorm van uw prijsmodel** (vast, gelaagd, verbruik, eenmalig of hybride) vóórdat het backend-werk start.
 
-U hoeft de exacte bedragen nog niet definitief vast te pinnen — of u straks € 29 of € 39 vraagt, maakt voor de code niets uit. Maar het antwoord op de vraag: *"Welke factor bepaalt straks de hoogte van de factuur?"* dicteert of de software pakket-herkenning, metering-pipelines of geavanceerde facturatielogica nodig heeft.
+U hoeft de exacte bedragen nog niet definitief vast te pinnen - of u straks € 29 of € 39 vraagt, maakt voor de code niets uit. Maar het antwoord op de vraag: *"Welke factor bepaalt straks de hoogte van de factuur?"* dicteert of de software pakket-herkenning, metering-pipelines of geavanceerde facturatielogica nodig heeft.
 
 Het meenemen van betaal- en abonnementsarchitectuur in de scopingfase is een vast onderdeel van het Launch & Grow-traject bij [LaunchStudio](https://launchstudio.eu/nl/). Onze software-engineers bouwen hierbij voort op Manifera's 11+ jaar ervaring met het ontwikkelen en beveiligen van complexe billing-infrastructuren voor Europese techbedrijven.
 
@@ -119,7 +119,7 @@ Het meenemen van betaal- en abonnementsarchitectuur in de scopingfase is een vas
 
 Femke Bakker, de oprichter uit de inleiding, lanceerde Rosterly: een personeelsplanningstool voor winkels, ontwikkeld met behulp van Lovable. Ze koos voor drie pakketten op haar website: Starter (€ 29/mnd, max. 5 medewerkers), Growth (€ 79/mnd, max. 15 medewerkers) en Enterprise (aangepaste prijzen). Zes weken na de lancering voegde een actieve klant op het Growth-pakket een zestiende medewerker toe. Dit had volgens de prijspagina automatisch een upgrade naar Enterprise moeten forceren.
 
-Er gebeurde echter niets: de limieten stonden uitsluitend als tekst op de marketingwebsite, maar waren nergens in de applicatiecode geprogrammeerd. Elk account had in werkelijkheid onbeperkte toegang. Klanten gebruikten rustig enterprise-functionaliteiten terwijl ze het laagste tarief betaalden — een aanzienlijk omzetlek.
+Er gebeurde echter niets: de limieten stonden uitsluitend als tekst op de marketingwebsite, maar waren nergens in de applicatiecode geprogrammeerd. Elk account had in werkelijkheid onbeperkte toegang. Klanten gebruikten rustig enterprise-functionaliteiten terwijl ze het laagste tarief betaalden - een aanzienlijk omzetlek.
 
 Femke schakelde LaunchStudio in om dit structureel op te lossen. Tijdens het gerichte traject werd het datamodel herzien:
 - Er werd feature-gating ingebouwd die bij elke toevoeging van een teamlid controleert of de staffel wordt overschreden.
@@ -129,9 +129,9 @@ Femke schakelde LaunchStudio in om dit structureel op te lossen. Tijdens het ger
 **Het resultaat:** De staffelhandhaving ging binnen elf werkdagen live. Binnen vier weken upgrade-den vier intensieve gebruikersbedrijven naar het juiste hogere pakket. Rosterly herstelde daarmee direct de structurele omzet waar de prijspagina recht op had.
 
 > *"Mijn prijspagina deed beloftes die mijn broncode helemaal niet kon waarmaken. Ik realiseerde me pas hoeveel van 'pricing' feitelijk een backend-vraagstuk is toen het me maandelijks honderden euro's aan gemiste omzet kostte."*
-> — **Femke Bakker, Oprichter van Rosterly (Eindhoven)**
+> - **Femke Bakker, Oprichter van Rosterly (Eindhoven)**
 
-**Kosten & Doorlooptijd:** € 2.900 (Launch & Grow-traject, tier-handhaving en proreringslogica) — live in 11 werkdagen.
+**Kosten & Doorlooptijd:** € 2.900 (Launch & Grow-traject, tier-handhaving en proreringslogica) - live in 11 werkdagen.
 
 ---
 

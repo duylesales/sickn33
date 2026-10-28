@@ -1,4 +1,4 @@
-🚨 "Geen van die punten voelde groot genoeg om een ontwikkelaar voor lastig te vallen." Negen kleine ergernissen, bewaard onder "niet belangrijk genoeg" — bijna nooit verstuurd terwijl de klok tikte. 😳
+🚨 "Geen van die punten voelde groot genoeg om een ontwikkelaar voor lastig te vallen." Negen kleine ergernissen, bewaard onder "niet belangrijk genoeg" - bijna nooit verstuurd terwijl de klok tikte. 😳
 
 Een supportvenster na lancering is een tijdsgebonden kans, geen statische verzekeringspolis die u kunt opsparen: 🧠
 
@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: alle negen openstaande frictiepunten werden binnen drie uur opgelost, inclusief een datumfout die anders het hele hoogseizoen voor no-shows had gezorgd. 🚀
 
-👉 Stuur ons uw lijst met kleine punten die u bewaarde onder "niet de moeite" — wij vertellen u welke binnen twintig minuten zijn verholpen: https://launchstudio.eu/nl/blog/using-your-post-launch-support-window-before-it-expires
+👉 Stuur ons uw lijst met kleine punten die u bewaarde onder "niet de moeite" - wij vertellen u welke binnen twintig minuten zijn verholpen: https://launchstudio.eu/nl/blog/using-your-post-launch-support-window-before-it-expires
 
 #SoftwareLancering #SaaSOnderhoud #Bugfixes #ProductieSupport #LaunchStudio #Manifera

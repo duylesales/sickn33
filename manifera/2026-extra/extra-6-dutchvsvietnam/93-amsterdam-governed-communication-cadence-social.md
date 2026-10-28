@@ -1,4 +1,4 @@
-🚨 What if the daily standup your vendor sends every morning isn't a standup at all — it's a summary email dressed up as a meeting, written after the engineers already went home? ⚙️📋
+🚨 What if the daily standup your vendor sends every morning isn't a standup at all - it's a summary email dressed up as a meeting, written after the engineers already went home? ⚙️📋
 
 **The Pain Points:**
 ❌ **A Filtered Report, Not a Real Update:** "No blockers reported" from an account manager who decided what was safe to report upward.
@@ -7,10 +7,10 @@
 
 **The Manifera Solution:**
 ✅ **Governance as a Quality Layer, Not a Filter:** Real engineer-inclusive standups, independent sprint-boundary review, and an escalation path that bypasses day-to-day reporting.
-✅ **Amsterdam Strategic Governance:** Architects with independent visibility into commit history — verifying, not just relaying.
+✅ **Amsterdam Strategic Governance:** Architects with independent visibility into commit history - verifying, not just relaying.
 ✅ **Vietnam Execution Velocity:** Engineers reporting blockers themselves, in their own words, the same day they happen.
 
-Communication cadence is a leading indicator of financial risk — long before it becomes a financial event. 🛡️
+Communication cadence is a leading indicator of financial risk - long before it becomes a financial event. 🛡️
 
 👉 Read our full deep dive on amsterdam governed communication cadence: https://www.manifera.com/blog/amsterdam-governed-communication-cadence
 

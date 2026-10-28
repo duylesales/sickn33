@@ -33,7 +33,7 @@ Content Format: Working Practice Guide
 }
 </script>
 
-Remote work settled into a stable pattern across European technology employment after the disruption of the early 2020s, and it is not the pattern either side predicted. Fully remote roles exist but are a minority. Hybrid is the norm. And the distribution is uneven in ways that matter when choosing a specialism. Understanding what remote work in AI jobs actually looks like — including what it costs you — makes for better decisions than arguing about whether offices are necessary.
+Remote work settled into a stable pattern across European technology employment after the disruption of the early 2020s, and it is not the pattern either side predicted. Fully remote roles exist but are a minority. Hybrid is the norm. And the distribution is uneven in ways that matter when choosing a specialism. Understanding what remote work in AI jobs actually looks like - including what it costs you - makes for better decisions than arguing about whether offices are necessary.
 
 ## Which AI Roles Are Genuinely Remote
 
@@ -53,7 +53,7 @@ Working remotely for an employer in another country is legally more complicated 
 
 The main issues are: the employer may create a taxable presence in your country; social security contributions are governed by coordination rules that generally tie you to where you physically work; employment law of your country of residence often applies regardless of what the contract says; and payroll must be operated somewhere.
 
-Employers handle this in several ways — establishing an entity, using an employer of record service, hiring you as a contractor where that is genuinely appropriate, or simply restricting hiring to countries where they already operate. The last is most common, which is why many "remote" vacancies in Europe specify a list of countries.
+Employers handle this in several ways - establishing an entity, using an employer of record service, hiring you as a contractor where that is genuinely appropriate, or simply restricting hiring to countries where they already operate. The last is most common, which is why many "remote" vacancies in Europe specify a list of countries.
 
 If you are considering a cross-border arrangement, ask which entity employs you, which country's law applies, where social contributions are paid, and how many days you may work from elsewhere. Vague answers are a warning.
 
@@ -131,7 +131,7 @@ Employers can help, but the responsibility is shared, and individuals who take i
 
 Stated policy tells you little. What matters is how the team actually operates, and you can find out in interviews.
 
-Ask where design decisions are made, and whether a remote person would have been present. Ask how many people on the team are fully remote and how long they have been there. Ask whether anyone fully remote has been promoted. Ask what happens when the company changes its policy — is your arrangement contractual or discretionary.
+Ask where design decisions are made, and whether a remote person would have been present. Ask how many people on the team are fully remote and how long they have been there. Ask whether anyone fully remote has been promoted. Ask what happens when the company changes its policy - is your arrangement contractual or discretionary.
 
 Ask practical questions too: what equipment is provided, whether there is a home office allowance, whether travel to the office is paid and how often it is expected, and how onboarding works for someone starting remotely.
 
@@ -187,14 +187,14 @@ What changed was subtler. Design discussions happened on the office days and wer
 
 He raised it with his manager, who was candid: nothing had been decided against him, but he had not been present for the discussions where things were decided.
 
-He negotiated a compromise — one week a month on site, paid for by the company — and the situation improved considerably within six months.
+He negotiated a compromise - one week a month on site, paid for by the company - and the situation improved considerably within six months.
 
 His view afterwards was that his contract had protected his working arrangement and not his career, and that those are different things.
 
 ## Key Takeaways
 
 - Fully remote AI roles exist but are a minority; hybrid is the European norm.
-- What your work touches — cloud systems or physical processes — determines remote feasibility.
+- What your work touches - cloud systems or physical processes - determines remote feasibility.
 - Cross-border remote employment is legally complex and often limited to specific countries.
 - Remote work has real career costs that contracts do not address.
 - Evaluate the team's working practices, not just the stated policy.

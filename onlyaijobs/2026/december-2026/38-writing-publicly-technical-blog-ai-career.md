@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Writing and Speaking Publicly About Your AI Work: The Cheapest Career Investment in a Small Market",
-  "description": "In a country where the data community fits in a few hundred rooms, writing one good article or giving one honest talk changes who knows you — with confidentiality rules to respect along the way.",
+  "description": "In a country where the data community fits in a few hundred rooms, writing one good article or giving one honest talk changes who knows you - with confidentiality rules to respect along the way.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-19",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The Dutch data community is small enough that reputation compounds unusually fast. A few hundred people attend the main meetups in any city, the specialists in any niche largely know of each other, and hiring managers routinely ask around before they post a vacancy. In a market like this, being known for something specific is worth more than it would be in London or Berlin — and the cost of becoming known is one article or one talk.
+The Dutch data community is small enough that reputation compounds unusually fast. A few hundred people attend the main meetups in any city, the specialists in any niche largely know of each other, and hiring managers routinely ask around before they post a vacancy. In a market like this, being known for something specific is worth more than it would be in London or Berlin - and the cost of becoming known is one article or one talk.
 
 ## Why This Works Better in a Small Country
 
@@ -79,7 +79,7 @@ If your employer says no, that is information about the employer, and it is bett
 
 ## A Concrete Scenario: The Talk That Changed a Career
 
-An engineer gives a twenty-minute talk at a local meetup about a data quality problem they solved — nothing revolutionary, honestly presented, including the two approaches that did not work.
+An engineer gives a twenty-minute talk at a local meetup about a data quality problem they solved - nothing revolutionary, honestly presented, including the two approaches that did not work.
 
 Thirty people are in the room. One of them has the same problem and asks a question afterwards; they exchange contacts. Another works at a company the engineer had never heard of and mentions they are hiring. A third invites them to speak at a larger event three months later.
 
@@ -109,7 +109,7 @@ The pragmatic answer for many people is to write technical material in English a
 
 The failure mode is universal: an ambitious start, three articles, then silence for two years, leaving a profile that looks abandoned.
 
-The realistic version is lower volume and longer horizon. Four pieces a year is a substantial body of work after three years, and nobody is counting your frequency. Writing about what you are doing anyway — a problem at work, generalised and anonymised — is far more sustainable than inventing topics. Keeping a running note of interesting problems as they occur means you never face a blank page.
+The realistic version is lower volume and longer horizon. Four pieces a year is a substantial body of work after three years, and nobody is counting your frequency. Writing about what you are doing anyway - a problem at work, generalised and anonymised - is far more sustainable than inventing topics. Keeping a running note of interesting problems as they occur means you never face a blank page.
 
 It also helps to decouple writing from audience metrics. If you write to think clearly, the piece has already done its job when it is finished. Views are a side effect, and in a market this small, the three right readers matter more than three thousand of the wrong ones.
 
@@ -121,7 +121,7 @@ The platform matters less than people think, but a few practical considerations 
 
 **Professional networks.** Where most Dutch professional reading actually happens. Posts reach your extended network and are seen by recruiters, but they age quickly and are hard to find later. A reasonable pattern is to publish the full piece on your own site and post a substantive summary on the network with a link.
 
-**Company engineering blog.** If your employer has one, it usually has an established audience and editorial support, and publishing there is easier to get approved. The trade-off is that the piece is associated with the company more than with you, and it may not follow you when you leave — keep your own copy.
+**Company engineering blog.** If your employer has one, it usually has an established audience and editorial support, and publishing there is easier to get approved. The trade-off is that the piece is associated with the company more than with you, and it may not follow you when you leave - keep your own copy.
 
 **Community publications and newsletters.** Dutch and European data communities run newsletters and shared blogs that welcome contributions and deliver a targeted audience.
 
@@ -142,7 +142,7 @@ This is why a single thoughtful article frequently produces interview invitation
 ## Key Takeaways
 
 - The Dutch data community is small enough that one article or talk can make you visible in a niche.
-- Write about problems you solved, things that failed, and comparisons from real use — not tutorials.
+- Write about problems you solved, things that failed, and comparisons from real use - not tutorials.
 - Anonymise and generalise, ask your employer early, and have a colleague review before publishing.
 - Meetups are short of speakers and forgiving of first-timers; internal talks are good practice.
 - Dutch-language technical writing is underserved and can make you visible to local employers specifically.
@@ -172,13 +172,13 @@ Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](h
 ## Frequently Asked Questions
 
 ### (Scenario: employee unsure about permission) Can I write about work I did for my employer?
-Usually yes if you anonymise and generalise, but ask first — many employers have a communications policy and most are supportive.
+Usually yes if you anonymise and generalise, but ask first - many employers have a communications policy and most are supportive.
 
 ### (Scenario: candidate with no audience) Is it worth writing if nobody reads it?
 In a market this small, three relevant readers matter more than three thousand irrelevant ones, and a findable article does its work over years.
 
 ### (Scenario: nervous first-time speaker) Are Dutch meetups demanding?
-No — they are informal, perpetually short of speakers, and welcoming to first-timers presenting narrow, honest topics.
+No - they are informal, perpetually short of speakers, and welcoming to first-timers presenting narrow, honest topics.
 
 ### (Scenario: Dutch speaker deciding on language) Should I write in Dutch or English?
 Technical material generally in English; audience-specific, public sector or policy material in Dutch, where good writing is scarce.
@@ -193,7 +193,7 @@ A few substantial pieces a year is plenty; consistency of quality matters far mo
   "mainEntity": [
     {"@type": "Question", "name": "Can I write publicly about work done for my employer?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes if anonymised and generalised, but ask first since many employers have a communications policy."}},
     {"@type": "Question", "name": "Is technical writing worth it without an audience?", "acceptedAnswer": {"@type": "Answer", "text": "In a small market a few relevant readers matter more than a large audience, and articles remain findable for years."}},
-    {"@type": "Question", "name": "Are Dutch meetups difficult for first-time speakers?", "acceptedAnswer": {"@type": "Answer", "text": "No — they are informal, short of speakers and welcoming to narrow, honest talks."}},
+    {"@type": "Question", "name": "Are Dutch meetups difficult for first-time speakers?", "acceptedAnswer": {"@type": "Answer", "text": "No - they are informal, short of speakers and welcoming to narrow, honest talks."}},
     {"@type": "Question", "name": "Should I write in Dutch or English?", "acceptedAnswer": {"@type": "Answer", "text": "Technical material generally in English; public sector, policy or audience-specific material in Dutch, where good writing is scarce."}},
     {"@type": "Question", "name": "How often should I publish technical writing?", "acceptedAnswer": {"@type": "Answer", "text": "A few substantial pieces per year is sufficient; quality matters far more than frequency."}}
   ]

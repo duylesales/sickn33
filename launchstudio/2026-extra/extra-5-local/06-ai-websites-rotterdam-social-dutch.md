@@ -5,7 +5,7 @@ Een AI-websitebouwer levert u een gepolijste site. Geen compliant site. 🧠
 ❌ De cookiebanner werd getoond, maar blokkeerde trackingscripts vóór toestemming niet daadwerkelijk
 ❌ Er was geen verwerkersovereenkomst beschikbaar voor zakelijke klanten
 ❌ De lacune kwam pas aan het licht tijdens de eigen leveranciersbeoordeling van een klant
-❌ B2B-kopers in de logistiek merken dit soort lacunes snel op — en zeggen er iets van
+❌ B2B-kopers in de logistiek merken dit soort lacunes snel op - en zeggen er iets van
 
 ✅ Implementeer consentmanagement dat niet-essentiële scripts daadwerkelijk blokkeert vóór toestemming
 ✅ Voeg de ontbrekende beveiligingsheaders toe (Content-Security-Policy, X-Frame-Options)

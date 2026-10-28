@@ -1,4 +1,4 @@
-🚨 Het bureau van Lukas Reindl in Wenen stond op het punt om de fysiotherapie-planningsapp "PatientPing" van een klant onder eigen naam live te zetten — totdat een pre-launch review ontdekte dat de plannings-API volledige patiëntendossiers, inclusief telefoonnummers en notities van therapeuten, overhandigde aan elke geauthenticeerde gebruiker, en niet alleen aan de toegewezen therapeut. 😳
+🚨 Het bureau van Lukas Reindl in Wenen stond op het punt om de fysiotherapie-planningsapp "PatientPing" van een klant onder eigen naam live te zetten - totdat een pre-launch review ontdekte dat de plannings-API volledige patiëntendossiers, inclusief telefoonnummers en notities van therapeuten, overhandigde aan elke geauthenticeerde gebruiker, en niet alleen aan de toegewezen therapeut. 😳
 
 Een eenvoudige functionele test vond niets vreemds. Er was een echte beveiligingsreview voor nodig om het daadwerkelijke risico te ontdekken. 🧠
 
@@ -10,9 +10,9 @@ Een eenvoudige functionele test vond niets vreemds. Er was een echte beveiliging
 ✅ Interne notities verwijderd uit elke API-respons die de frontend bereikt
 ✅ Rate limiting toegevoegd aan de boekingsstroom en het blootgestelde debugging-eindpunt gesloten
 
-Bij **LaunchStudio** zijn white-label beveiligingsbeoordelingen voor bureaus die door AI gebouwd klantwerk overnemen vaste praktijk — Manifera's technici, vertrouwd door organisaties als Vodafone, TNO en CFLW, coördineren de levering via het team in Singapore aan Tras Street. 🛡️
+Bij **LaunchStudio** zijn white-label beveiligingsbeoordelingen voor bureaus die door AI gebouwd klantwerk overnemen vaste praktijk - Manifera's technici, vertrouwd door organisaties als Vodafone, TNO en CFLW, coördineren de levering via het team in Singapore aan Tras Street. 🛡️
 
-Lukas' resultaat: de fix werd opgeleverd onder de eigen branding van zijn bureau — zijn klant heeft nooit geweten dat er een gespecialiseerde partner bij betrokken was. 🚀
+Lukas' resultaat: de fix werd opgeleverd onder de eigen branding van zijn bureau - zijn klant heeft nooit geweten dat er een gespecialiseerde partner bij betrokken was. 🚀
 
 👉 Neemt u AI-prototypes van klanten aan onder de naam van uw eigen bureau? Ken deze checklist vooraf: https://launchstudio.eu/nl/blog/where-security-in-ai-generated-code-usually-breaks-down-first
 

@@ -31,11 +31,11 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een AI-applicatie die met 50 testrecords razendsnel aanvoelt, kan tergend traag worden zodra u 50.000 echte rijen bereikt — en de oorzaak is vrijwel nooit het AI-model zelf. Het is bijna altijd een databasequery die elke afzonderlijke rij in een tabel moet scannen (*Full Table Scan*) omdat er geen index is om de juiste gegevens direct te vinden. Dit is een van de meest voorkomende en eenvoudigst op te lossen prestatieproblemen in AI-native software.
+Een AI-applicatie die met 50 testrecords razendsnel aanvoelt, kan tergend traag worden zodra u 50.000 echte rijen bereikt - en de oorzaak is vrijwel nooit het AI-model zelf. Het is bijna altijd een databasequery die elke afzonderlijke rij in een tabel moet scannen (*Full Table Scan*) omdat er geen index is om de juiste gegevens direct te vinden. Dit is een van de meest voorkomende en eenvoudigst op te lossen prestatieproblemen in AI-native software.
 
 ## Wat een Database-Index Feitelijk Doet
 
-Een database-index werkt exact als de index achterin een boek: in plaats van elke pagina (elke rij) van voor naar achter door te bladeren om een specifiek onderwerp te vinden, springt de database direct naar de relevante records. Zonder index op een kolom waarop u frequent zoekt of filtert, voert de database bij elke afzonderlijke query een volledige tabelscan uit — prima op kleine schaal, maar onhoudbaar traag naarmate uw data groeit.
+Een database-index werkt exact als de index achterin een boek: in plaats van elke pagina (elke rij) van voor naar achter door te bladeren om een specifiek onderwerp te vinden, springt de database direct naar de relevante records. Zonder index op een kolom waarop u frequent zoekt of filtert, voert de database bij elke afzonderlijke query een volledige tabelscan uit - prima op kleine schaal, maar onhoudbaar traag naarmate uw data groeit.
 
 ## Query-Patronen Specifiek voor AI-Applicaties
 
@@ -53,7 +53,7 @@ Apps die AI-tokenverbruik bijhouden voor facturatie of gebruikslimieten draaien 
 
 ## Waarom AI-Prototypes Dit Structureel Missen
 
-AI-codegenerators maken databaseschema's die functioneel prima werken voor kleine testdatasets. De noodzaak voor indexering wordt immers pas zichtbaar onder een realistische datadruk — een situatie die AI-tools zelden simuleren tijdens het genereren van een prototype. Dat een prototype tijdens het testen "soepel draaide" biedt nul garantie voor prestaties onder echte productieomstandigheden.
+AI-codegenerators maken databaseschema's die functioneel prima werken voor kleine testdatasets. De noodzaak voor indexering wordt immers pas zichtbaar onder een realistische datadruk - een situatie die AI-tools zelden simuleren tijdens het genereren van een prototype. Dat een prototype tijdens het testen "soepel draaide" biedt nul garantie voor prestaties onder echte productieomstandigheden.
 
 ## Een Praktische Checklist voor Database Indexing
 
@@ -61,17 +61,17 @@ AI-codegenerators maken databaseschema's die functioneel prima werken voor klein
 2. **Voeg samengestelde indexen toe** voor veelvoorkomende filter-en-sorteer combinaties (zoals `conversation_id` + `created_at`).
 3. **Gebruik gespecialiseerde HNSW-vectorindexen** voor alle embedding-zoekfuncties.
 4. **Monitor trage query-logs (*slow query logs*)** na de livegang om onvoorziene knelpunten direct te signaleren.
-5. **Voorkom overmatige indexering** — elke index kost extra schrijfcapaciteit bij het toevoegen van nieuwe rijen; indexeer doelgericht op basis van reële zoekpatronen.
+5. **Voorkom overmatige indexering** - elke index kost extra schrijfcapaciteit bij het toevoegen van nieuwe rijen; indexeer doelgericht op basis van reële zoekpatronen.
 
 ## Hoe U Dit Oplost Vóórdat Het een Crisis Wordt
 
-Database-vertragingsproblemen zijn gevaarlijk omdat ze onzichtbaar zijn totdat de drempelwaarde wordt overschreden — een app kan maanden vlekkeloos draaien en plotseling instorten zodra een tabel boven de 100.000 rijen komt. [LaunchStudio](https://launchstudio.eu/nl/) controleert en optimaliseert database-indexen als vast onderdeel van de productie-oplevering, gesteund door Manifera's expertise in PostgreSQL, MongoDB en MySQL over 160+ enterprise-projecten.
+Database-vertragingsproblemen zijn gevaarlijk omdat ze onzichtbaar zijn totdat de drempelwaarde wordt overschreden - een app kan maanden vlekkeloos draaien en plotseling instorten zodra een tabel boven de 100.000 rijen komt. [LaunchStudio](https://launchstudio.eu/nl/) controleert en optimaliseert database-indexen als vast onderdeel van de productie-oplevering, gesteund door Manifera's expertise in PostgreSQL, MongoDB en MySQL over 160+ enterprise-projecten.
 
 [Laat uw databaseprestaties auditen](https://launchstudio.eu/nl/#contact) vóórdat gebruikersgroei leidt tot frustrerende haperingen.
 
 ## Controleren of een Index Daadwerkelijk Wordt Gebruikt: Het Query Plan Lezen
 
-Het toevoegen van een index en aannemen dat het helpt is niet hetzelfde als het verifiëren. Databases gebruiken niet automatisch elke index die u aanmaakt — een slecht ontworpen index, een index op de verkeerde volgorde van kolommen of een query met functies rondom een kolom kunnen ertoe leiden dat een index wel bestaat, maar nooit wordt aangesproken.
+Het toevoegen van een index en aannemen dat het helpt is niet hetzelfde als het verifiëren. Databases gebruiken niet automatisch elke index die u aanmaakt - een slecht ontworpen index, een index op de verkeerde volgorde van kolommen of een query met functies rondom een kolom kunnen ertoe leiden dat een index wel bestaat, maar nooit wordt aangesproken.
 
 ### Wat EXPLAIN ANALYZE U Vertelt
 De meeste relationele databases (waaronder PostgreSQL) beschikken over het commando `EXPLAIN ANALYZE`. Dit toont exact hoe de query planner de zoekopdracht uitvoert, inclusief de feitelijke uitvoeringstijd en of er een index is gebruikt:
@@ -118,12 +118,12 @@ Tom nam contact op met LaunchStudio. Na uitsluiting van het AI-model bevestigde 
 
 Het team richtte de ontbrekende samengestelde indexen en pgvector-indexen in en stelde query-monitoring in.
 
-**Resultaat:** De responstijd van zoekopdrachten daalde direct van 6–8 seconden naar minder dan 200 milliseconden — zónder enige wijziging aan de interface. De ontevreden makelaars bleven behouden voor het platform.
+**Resultaat:** De responstijd van zoekopdrachten daalde direct van 6–8 seconden naar minder dan 200 milliseconden - zónder enige wijziging aan de interface. De ontevreden makelaars bleven behouden voor het platform.
 
-> *"Ik dacht dat ik een duurder AI-model of zwaardere cloudservers nodig had. Het bleek een ontbrekende database-index te zijn — een ingreep van minder dan een dag die een probleem oploste waar ik al twee maanden mee worstelde."*  
-> — **Tom Hermans, Oprichter MakelaarChat (Helmond)**
+> *"Ik dacht dat ik een duurder AI-model of zwaardere cloudservers nodig had. Het bleek een ontbrekende database-index te zijn - een ingreep van minder dan een dag die een probleem oploste waar ik al twee maanden mee worstelde."*  
+> - **Tom Hermans, Oprichter MakelaarChat (Helmond)**
 
-**Kosten & tijdlijn:** €1.400 (database performance audit en indexering) — binnen 3 werkdagen live opgelost.
+**Kosten & tijdlijn:** €1.400 (database performance audit en indexering) - binnen 3 werkdagen live opgelost.
 
 ---
 

@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Application Security Audit vs. Automated Scanners: What Each One Catches",
-  "description": "A technical comparison of automated security tools — dependency scanners, static analysis, dynamic scanners and secret scanners — against a manual AI application security audit. Which vulnerabilities each finds, which they miss, and how to combine them.",
+  "description": "A technical comparison of automated security tools - dependency scanners, static analysis, dynamic scanners and secret scanners - against a manual AI application security audit. Which vulnerabilities each finds, which they miss, and how to combine them.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-03",
@@ -25,13 +25,13 @@ Technical founders often ask whether they can skip a manual AI application secur
 
 ## The Four Families of Automated Tools
 
-**Dependency scanners (SCA)** — Dependabot, Snyk, npm audit, Renovate. They compare your packages against vulnerability databases. Excellent at finding known issues in third-party code; they know nothing about your own code.
+**Dependency scanners (SCA)** - Dependabot, Snyk, npm audit, Renovate. They compare your packages against vulnerability databases. Excellent at finding known issues in third-party code; they know nothing about your own code.
 
-**Static analysis (SAST)** — Semgrep, CodeQL, SonarQube, ESLint security plugins. They read your source code looking for patterns: SQL built from strings, `eval`, `dangerouslySetInnerHTML`, weak crypto. Good at known dangerous patterns; blind to missing logic.
+**Static analysis (SAST)** - Semgrep, CodeQL, SonarQube, ESLint security plugins. They read your source code looking for patterns: SQL built from strings, `eval`, `dangerouslySetInnerHTML`, weak crypto. Good at known dangerous patterns; blind to missing logic.
 
-**Dynamic scanners (DAST)** — OWASP ZAP, Burp Suite's scanner, Nuclei. They probe the running application: missing security headers, exposed paths, reflected XSS, misconfigured TLS, known server vulnerabilities. Good at configuration and surface issues; limited when it comes to understanding your data model.
+**Dynamic scanners (DAST)** - OWASP ZAP, Burp Suite's scanner, Nuclei. They probe the running application: missing security headers, exposed paths, reflected XSS, misconfigured TLS, known server vulnerabilities. Good at configuration and surface issues; limited when it comes to understanding your data model.
 
-**Secret scanners** — gitleaks, trufflehog, GitHub secret scanning. They search code and history for credentials. Very effective at what they do.
+**Secret scanners** - gitleaks, trufflehog, GitHub secret scanning. They search code and history for credentials. Very effective at what they do.
 
 ## What the Tools Reliably Catch
 
@@ -68,7 +68,7 @@ These require understanding what the app is supposed to do. That is what a manua
 
 ## How a Manual AI Application Security Audit Works Differently
 
-A reviewer starts from the data model and roles: who should access what. Then they check whether the code, database policies and APIs enforce that — reading policies, testing requests as different users, following payment flows end to end, and looking at the paths AI tools typically leave open. Tools are used during the audit, but as instruments, not as the judgement.
+A reviewer starts from the data model and roles: who should access what. Then they check whether the code, database policies and APIs enforce that - reading policies, testing requests as different users, following payment flows end to end, and looking at the paths AI tools typically leave open. Tools are used during the audit, but as instruments, not as the judgement.
 
 ## The Combination That Works
 
@@ -77,7 +77,7 @@ The right answer is not audit or tools; it is both, in the right places:
 1. **Continuously, in CI:** dependency scanning, secret scanning and SAST on every push. They are cheap and catch regressions.
 2. **Before launch and after major changes:** a manual review focused on access control, payments and business logic.
 3. **Periodically:** a DAST scan of production for configuration drift.
-4. **Permanently:** automated tests written from the audit's findings — for example, a test that user A cannot read user B's invoice. These turn manual findings into continuous protection, and are what scanners cannot provide.
+4. **Permanently:** automated tests written from the audit's findings - for example, a test that user A cannot read user B's invoice. These turn manual findings into continuous protection, and are what scanners cannot provide.
 
 Step 4 is the bridge. The audit discovers what the tools cannot; tests then guard it forever.
 
@@ -88,7 +88,7 @@ The automated half of an AI application security audit programme is cheap to set
 - **Dependency scanning:** enable Dependabot alerts and security updates in the repository settings; optionally add Renovate for grouped updates.
 - **Secret scanning:** enable GitHub secret scanning and push protection; add gitleaks to CI to scan history and pull requests.
 - **Static analysis:** add Semgrep with its default rule sets for JavaScript/TypeScript and your framework, or enable CodeQL code scanning.
-- **Dynamic scanning:** run OWASP ZAP's baseline scan against staging on a schedule — weekly is enough for most apps.
+- **Dynamic scanning:** run OWASP ZAP's baseline scan against staging on a schedule - weekly is enough for most apps.
 - **Headers check:** run Mozilla's HTTP Observatory against production after each deployment of infrastructure changes.
 
 The whole setup takes a few hours. The ongoing work is triaging results, which is where most teams struggle.
@@ -126,7 +126,7 @@ describe("invoices access", () => {
 });
 ```
 
-Repeat for every resource type and role. Tests like these would have caught every one of the four issues in the example below — and they keep catching them whenever an AI tool regenerates a route.
+Repeat for every resource type and role. Tests like these would have caught every one of the four issues in the example below - and they keep catching them whenever an AI tool regenerates a route.
 
 ## Where Manual Review Time Is Best Spent
 
@@ -134,7 +134,7 @@ A manual review has limited hours, so experienced reviewers spend them where too
 
 ## Combining Results Into One Picture
 
-Findings from tools and manual review should end up in one list with one severity scale, so you can prioritise across both. Many teams use their issue tracker with a "security" label and a severity field. Review the list at a fixed rhythm — for example every two weeks — and close items with a reference to the fix and the test that protects it.
+Findings from tools and manual review should end up in one list with one severity scale, so you can prioritise across both. Many teams use their issue tracker with a "security" label and a severity field. Review the list at a fixed rhythm - for example every two weeks - and close items with a reference to the fix and the test that protects it.
 
 ## Costs Compared Over a Year
 
@@ -142,15 +142,15 @@ For a small SaaS, the automated tools above are mostly free or low-cost at small
 
 ## Choosing Between SAST Tools
 
-For small teams, the choice between static analysis tools is less important than using one consistently. Semgrep is fast, easy to run in CI and has good community rules for JavaScript and TypeScript frameworks; it also lets you write simple custom rules — for example, flagging any route handler that calls the database without calling your authorisation helper. CodeQL, integrated with GitHub, performs deeper data-flow analysis and is free for public repositories and available for private ones through GitHub's security offering. SonarQube and SonarCloud combine security checks with code quality metrics. Pick one, tune its rules to reduce noise and make it a required check.
+For small teams, the choice between static analysis tools is less important than using one consistently. Semgrep is fast, easy to run in CI and has good community rules for JavaScript and TypeScript frameworks; it also lets you write simple custom rules - for example, flagging any route handler that calls the database without calling your authorisation helper. CodeQL, integrated with GitHub, performs deeper data-flow analysis and is free for public repositories and available for private ones through GitHub's security offering. SonarQube and SonarCloud combine security checks with code quality metrics. Pick one, tune its rules to reduce noise and make it a required check.
 
 ## Custom Rules: Encoding Your Own Security Conventions
 
-The most valuable static rules are often the ones specific to your codebase. Examples: every file under `app/api` must call `requireUser()`; no client component may import from the `server/secrets` module; no SQL string may be built with template literals; no use of the Supabase service role key outside the `server/admin` folder. A handful of such rules turns your conventions into automated checks — particularly valuable when AI tools generate code that does not know those conventions.
+The most valuable static rules are often the ones specific to your codebase. Examples: every file under `app/api` must call `requireUser()`; no client component may import from the `server/secrets` module; no SQL string may be built with template literals; no use of the Supabase service role key outside the `server/admin` folder. A handful of such rules turns your conventions into automated checks - particularly valuable when AI tools generate code that does not know those conventions.
 
 ## When to Commission a Penetration Test
 
-A penetration test by an independent firm becomes worthwhile when customers require it, when you handle highly sensitive data at scale, when you pursue certifications, or after major architectural changes. For most AI-built apps preparing for launch, the order that saves money is: automated tools plus authorisation tests, then a focused manual review with fixes, then — if needed — a penetration test that can concentrate on residual, more subtle risks.
+A penetration test by an independent firm becomes worthwhile when customers require it, when you handle highly sensitive data at scale, when you pursue certifications, or after major architectural changes. For most AI-built apps preparing for launch, the order that saves money is: automated tools plus authorisation tests, then a focused manual review with fixes, then - if needed - a penetration test that can concentrate on residual, more subtle risks.
 
 ## A Year-One Security Routine
 
@@ -158,7 +158,7 @@ Put together, a realistic year-one routine for an AI-built SaaS looks like this:
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's review includes running the automated tools and interpreting their output — plenty of findings are false positives or low risk — then focusing human attention on access control, payments, tenant isolation and business logic. Findings become fixes and tests, and the tools are wired into CI so the protection continues after the engagement.
+LaunchStudio's review includes running the automated tools and interpreting their output - plenty of findings are false positives or low risk - then focusing human attention on access control, payments, tenant isolation and business logic. Findings become fixes and tests, and the tools are wired into CI so the protection continues after the engagement.
 
 LaunchStudio is powered by Manifera, whose CEO Herre Roelevink co-founded CyberDevOps (now CFLW Cyber Strategies), the company behind a dark web monitoring product developed with TNO. Manifera's engineers in Ho Chi Minh City work across the tools named here daily; European contact is at Herengracht 420, Amsterdam. For background, see [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/) and the [OWASP Top 10](https://owasp.org/www-project-top-ten/).
 
@@ -170,16 +170,16 @@ If your scanners are green and you are still not sure, [get a fixed-price quote]
 
 Niels Brandsma, a backend developer in Hoofddorp, built SlotPark with Cursor: companies near Schiphol share unused parking spaces with each other's employees through a booking app, with monthly invoicing. Being security-conscious, Niels ran Dependabot, Semgrep, gitleaks and a weekly OWASP ZAP scan. All green. Twelve companies and about 400 employees used it.
 
-A prospective customer — an airline services company — required an independent review before signing. LaunchStudio's review found no issues the scanners had missed in their own categories. It did find four they could not have seen. Any employee could view and cancel bookings from other companies by changing a booking ID. The company-admin API checked that the user was an admin, but not of which company, so any company admin could edit another company's spaces and pricing. Row-level security was enabled on the bookings table with a policy that allowed reads to any authenticated user. And invoice amounts were calculated from prices sent by the client during booking.
+A prospective customer - an airline services company - required an independent review before signing. LaunchStudio's review found no issues the scanners had missed in their own categories. It did find four they could not have seen. Any employee could view and cancel bookings from other companies by changing a booking ID. The company-admin API checked that the user was an admin, but not of which company, so any company admin could edit another company's spaces and pricing. Row-level security was enabled on the bookings table with a policy that allowed reads to any authenticated user. And invoice amounts were calculated from prices sent by the client during booking.
 
-Over five business days, the team fixed the ownership and tenant checks, rewrote the RLS policies to scope by company and user, moved price calculation to the server, and — most importantly for Niels — wrote 27 automated authorisation tests covering each role and tenant boundary, added to the same CI pipeline as his scanners.
+Over five business days, the team fixed the ownership and tenant checks, rewrote the RLS policies to scope by company and user, moved price calculation to the server, and - most importantly for Niels - wrote 27 automated authorisation tests covering each role and tenant boundary, added to the same CI pipeline as his scanners.
 
 **Result:** The airline services company signed after receiving the review and re-test report. Over the following year the authorisation tests caught two regressions that the scanners, still green, did not.
 
 > *"I had four tools telling me I was fine. They were right about everything they could see. The problems were all in what they couldn't."*
-> — **Niels Brandsma, Founder, SlotPark (Hoofddorp)**
+> - **Niels Brandsma, Founder, SlotPark (Hoofddorp)**
 
-**Cost & Timeline:** €1,250 (focused security review, access control and pricing fixes, authorisation test suite) — completed in 5 business days.
+**Cost & Timeline:** €1,250 (focused security review, access control and pricing fixes, authorisation test suite) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -201,7 +201,7 @@ Because the gap is structural, not a matter of tool quality. Tools do not know w
 
 ### Does passing security scans help with trust signals online?
 
-Security headers and valid TLS — which scanners check — are basic trust signals for browsers and search engines. Deeper security, verified by review, protects the reputation that AI answer engines and customers rely on.
+Security headers and valid TLS - which scanners check - are basic trust signals for browsers and search engines. Deeper security, verified by review, protects the reputation that AI answer engines and customers rely on.
 
 <script type="application/ld+json">
 {

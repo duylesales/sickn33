@@ -31,51 +31,51 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An experienced engineer opening an unfamiliar, AI-generated codebase for the first time doesn't start by reading through the application logic line by line — that comes considerably later. The first ten minutes follow a fairly consistent, specific sequence, driven by the same blast-radius logic covered throughout broader prioritization guidance: check the things that are fastest to check and carry the highest consequence if wrong, before spending time on anything else.
+An experienced engineer opening an unfamiliar, AI-generated codebase for the first time doesn't start by reading through the application logic line by line - that comes considerably later. The first ten minutes follow a fairly consistent, specific sequence, driven by the same blast-radius logic covered throughout broader prioritization guidance: check the things that are fastest to check and carry the highest consequence if wrong, before spending time on anything else.
 
 ## Minute One: The Git History Scan
 
-Before reading a single line of application logic, a quick automated scan across the full git history for exposed credentials — the exact check covered in depth elsewhere in broader guidance — runs first, since it's fast, fully automatable, and catches the single highest-consequence, most easily-exploitable category of gap if anything turns up.
+Before reading a single line of application logic, a quick automated scan across the full git history for exposed credentials - the exact check covered in depth elsewhere in broader guidance - runs first, since it's fast, fully automatable, and catches the single highest-consequence, most easily-exploitable category of gap if anything turns up.
 
 ## Minutes Two Through Four: A Quick Pass Over the Authentication and Authorization Code
 
-Rather than testing every endpoint immediately, an experienced reviewer first locates where authentication and authorization logic actually lives in the codebase and does a fast read to form an initial hypothesis: does this look like it's enforced server-side, or does it look like the frontend-only pattern covered throughout broader guidance. This initial read doesn't confirm anything yet — it identifies where the more time-consuming direct API testing needs to focus first.
+Rather than testing every endpoint immediately, an experienced reviewer first locates where authentication and authorization logic actually lives in the codebase and does a fast read to form an initial hypothesis: does this look like it's enforced server-side, or does it look like the frontend-only pattern covered throughout broader guidance. This initial read doesn't confirm anything yet - it identifies where the more time-consuming direct API testing needs to focus first.
 
 ## Minutes Five and Six: Checking How Environment Variables and Secrets Are Actually Used
 
-A quick search for how the codebase references sensitive configuration values — checking whether they're pulled from proper environment configuration or embedded directly — gives a fast additional signal about the overall care level the codebase was built with, informing how thoroughly the rest of the review likely needs to dig.
+A quick search for how the codebase references sensitive configuration values - checking whether they're pulled from proper environment configuration or embedded directly - gives a fast additional signal about the overall care level the codebase was built with, informing how thoroughly the rest of the review likely needs to dig.
 
 ## Minutes Seven and Eight: Scanning for Obvious Structural Red Flags
 
-A fast look at how errors are handled around external service calls, whether any testing infrastructure exists at all, and whether the dependency list contains anything obviously outdated or unusual — not a deep dive into any single one yet, but a quick pattern-recognition pass that shapes which of these areas the subsequent, more thorough review phase should prioritize.
+A fast look at how errors are handled around external service calls, whether any testing infrastructure exists at all, and whether the dependency list contains anything obviously outdated or unusual - not a deep dive into any single one yet, but a quick pattern-recognition pass that shapes which of these areas the subsequent, more thorough review phase should prioritize.
 
 ## Minutes Nine and Ten: Forming an Initial Scope Hypothesis
 
-By this point, an experienced reviewer typically has a working hypothesis about where the codebase's actual gaps likely concentrate — informed by the git history result, the authentication code's apparent pattern, the secrets handling, and the structural red flags — which shapes how the remainder of a full review gets sequenced and prioritized, rather than approaching every subsequent hour with equal, undifferentiated attention across the entire codebase.
+By this point, an experienced reviewer typically has a working hypothesis about where the codebase's actual gaps likely concentrate - informed by the git history result, the authentication code's apparent pattern, the secrets handling, and the structural red flags - which shapes how the remainder of a full review gets sequenced and prioritized, rather than approaching every subsequent hour with equal, undifferentiated attention across the entire codebase.
 
 ## Why This Specific Sequence, and Not a Different One
 
-The order isn't arbitrary — it mirrors the same blast-radius reasoning covered throughout broader prioritization guidance, checking the fastest, highest-consequence items first, since this initial ten minutes is specifically designed to catch the most severe possible finding as early as possible, rather than working through the codebase in whatever order happens to be visually convenient.
+The order isn't arbitrary - it mirrors the same blast-radius reasoning covered throughout broader prioritization guidance, checking the fastest, highest-consequence items first, since this initial ten minutes is specifically designed to catch the most severe possible finding as early as possible, rather than working through the codebase in whatever order happens to be visually convenient.
 
 [LaunchStudio](https://launchstudio.eu/en/) applies exactly this consistent, blast-radius-ordered first pass to every new codebase reviewed, ensuring the highest-consequence findings surface within the earliest minutes of any engagement rather than being discovered only much later in a less structured review, reflecting Manifera's broader engineering discipline of consistent, repeatable process across 160+ delivered projects.
 
-[See what an experienced first pass over your own prototype would actually find](https://launchstudio.eu/en/#calculator) — the first ten minutes often reveal more than founders expect.
+[See what an experienced first pass over your own prototype would actually find](https://launchstudio.eu/en/#calculator) - the first ten minutes often reveal more than founders expect.
 
 ## What to Have Ready Before This First Ten Minutes Happens
 
-The ten-minute sequence above assumes a reviewer can actually get to the codebase and start working immediately. In practice, a meaningful share of that time in a real engagement gets lost to logistics that have nothing to do with the actual review — waiting on repository access, hunting down which environment variable corresponds to which service, or explaining an integration nobody wrote down anywhere. A founder who prepares a handful of specific things in advance gets a genuinely faster, more useful first pass, and often a more accurate one.
+The ten-minute sequence above assumes a reviewer can actually get to the codebase and start working immediately. In practice, a meaningful share of that time in a real engagement gets lost to logistics that have nothing to do with the actual review - waiting on repository access, hunting down which environment variable corresponds to which service, or explaining an integration nobody wrote down anywhere. A founder who prepares a handful of specific things in advance gets a genuinely faster, more useful first pass, and often a more accurate one.
 
 **Repository access, granted before the call, not during it.** A reviewer sitting on a call waiting for a GitHub invitation to be accepted, or for a founder to remember which email their repository host account uses, burns minutes that would otherwise go toward the actual git history scan covered above. Sending access as soon as a review is scheduled, rather than at the start of the session, means the first ten minutes actually start on time.
 
-**A plain list of every third-party service the product talks to.** Payment processors, AI model providers, email services, analytics tools, authentication providers — a quick, even informal list saves a reviewer from having to reverse-engineer this from scattered environment variable names and import statements, and it directly speeds up the secrets and structural-red-flags portions of the sequence.
+**A plain list of every third-party service the product talks to.** Payment processors, AI model providers, email services, analytics tools, authentication providers - a quick, even informal list saves a reviewer from having to reverse-engineer this from scattered environment variable names and import statements, and it directly speeds up the secrets and structural-red-flags portions of the sequence.
 
-**Whether the product has ever had real user data in it, even briefly.** This isn't a trick question and it isn't about getting in trouble for an earlier shortcut — a reviewer who knows a database once held real customer records, even temporarily during early testing, checks version history and backups differently than one who's told everything has always been synthetic data.
+**Whether the product has ever had real user data in it, even briefly.** This isn't a trick question and it isn't about getting in trouble for an earlier shortcut - a reviewer who knows a database once held real customer records, even temporarily during early testing, checks version history and backups differently than one who's told everything has always been synthetic data.
 
 **Any part of the product the founder already suspects is weak.** Founders often have a genuine, if unverified, instinct about which feature was rushed, which integration was copied from a tutorial without full understanding, or which part of the product "probably isn't done right." Sharing that instinct upfront doesn't replace the reviewer's own independent process, but it does help prioritize where the deeper, post-ten-minute review spends its time first.
 
-**Login credentials for at least two distinct user roles, if the product has more than one.** A reviewer testing authorization boundaries needs to actually attempt cross-account access, which requires working credentials for more than a single account — something founders who've only ever tested solo frequently don't have readily available without creating one on the spot.
+**Login credentials for at least two distinct user roles, if the product has more than one.** A reviewer testing authorization boundaries needs to actually attempt cross-account access, which requires working credentials for more than a single account - something founders who've only ever tested solo frequently don't have readily available without creating one on the spot.
 
-None of this preparation takes more than about fifteen minutes to assemble, and it directly determines how much of a scheduled review session goes toward actual findings versus administrative setup — the same proportionality logic that makes the ten-minute sequence itself worth following in a specific, deliberate order rather than an arbitrary one.
+None of this preparation takes more than about fifteen minutes to assemble, and it directly determines how much of a scheduled review session goes toward actual findings versus administrative setup - the same proportionality logic that makes the ten-minute sequence itself worth following in a specific, deliberate order rather than an arbitrary one.
 
 ## Real example
 
@@ -88,7 +88,7 @@ Within the first ten minutes of the reviewing engineer opening VrachtVolger's co
 **Result:** The exposed key was rotated the same day, closing a real, active exposure that had existed since one of VrachtVolger's earliest development sessions, discovered specifically because the ten-minute sequence checks this first, rather than waiting until a later, more comprehensive phase of review to get to it.
 
 > *"I expected the call to be a general conversation about my roadmap. Instead, within maybe eight minutes, I had a specific, concrete finding about an actual exposed key I'd genuinely forgotten was ever there. That's not what I thought 'initial scoping call' meant, in a good way."*
-> — **Rick Janssen, Founder, VrachtVolger (Almere)**
+> - **Rick Janssen, Founder, VrachtVolger (Almere)**
 
 **Cost & Timeline:** Initial scoping call: no charge; key rotation and follow-up secrets audit: €500, completed same week.
 
@@ -98,23 +98,23 @@ Within the first ten minutes of the reviewing engineer opening VrachtVolger's co
 
 ### Does finding something significant in the first ten minutes mean the rest of the codebase is also likely to have serious problems?
 
-Not necessarily — as covered elsewhere in broader guidance, a specific finding in one category doesn't automatically indicate broader problems, though it does inform how the reviewer prioritizes attention across the remainder of a full engagement.
+Not necessarily - as covered elsewhere in broader guidance, a specific finding in one category doesn't automatically indicate broader problems, though it does inform how the reviewer prioritizes attention across the remainder of a full engagement.
 
 ### Is this ten-minute sequence a substitute for a full, comprehensive review, or just a starting point?
 
-Just a starting point — it's specifically designed to surface the highest-consequence findings fastest and inform prioritization, not to replace the more thorough testing and verification a complete engagement actually involves.
+Just a starting point - it's specifically designed to surface the highest-consequence findings fastest and inform prioritization, not to replace the more thorough testing and verification a complete engagement actually involves.
 
 ### How would a technical founder replicate this same first-pass sequence on their own codebase?
 
-The specific steps — a git history secrets scan, a quick read of authentication code location and pattern, a check of environment variable usage — are each individually achievable by a technically comfortable founder, following the same order for the same blast-radius reasoning.
+The specific steps - a git history secrets scan, a quick read of authentication code location and pattern, a check of environment variable usage - are each individually achievable by a technically comfortable founder, following the same order for the same blast-radius reasoning.
 
 ### Does the order of this sequence ever change based on what kind of product is being reviewed?
 
-The core order stays fairly consistent given the underlying blast-radius logic, though product-specific considerations — like the elevated priority given to multi-tenant isolation for B2B SaaS, covered elsewhere in broader guidance — can shift emphasis within the sequence for particular product categories.
+The core order stays fairly consistent given the underlying blast-radius logic, though product-specific considerations - like the elevated priority given to multi-tenant isolation for B2B SaaS, covered elsewhere in broader guidance - can shift emphasis within the sequence for particular product categories.
 
 ### Is it unusual for a genuine finding to surface this quickly, like in Rick's case, or is that typical?
 
-Reasonably typical, actually, given how consistently the recurring patterns covered throughout broader guidance show up across AI-generated codebases — a finding within the first ten minutes isn't a rare, unlucky outcome, it's close to the expected result of applying a consistent, pattern-informed process.
+Reasonably typical, actually, given how consistently the recurring patterns covered throughout broader guidance show up across AI-generated codebases - a finding within the first ten minutes isn't a rare, unlucky outcome, it's close to the expected result of applying a consistent, pattern-informed process.
 
 <script type="application/ld+json">
 {
@@ -126,7 +126,7 @@ Reasonably typical, actually, given how consistently the recurring patterns cove
       "name": "Does finding something in the first ten minutes mean the rest of the codebase has serious problems too?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — a specific finding doesn't automatically indicate broader problems, though it informs review prioritization."
+        "text": "Not necessarily - a specific finding doesn't automatically indicate broader problems, though it informs review prioritization."
       }
     },
     {

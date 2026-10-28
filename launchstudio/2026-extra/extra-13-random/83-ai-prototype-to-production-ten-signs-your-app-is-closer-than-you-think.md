@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Prototype to Production: Ten Signs Your App Is Closer Than You Think",
-  "description": "Most articles list what is wrong with AI-built apps. This one lists the signs that your AI prototype is closer to production than you fear — and what a short, focused launch project looks like when those signs are present.",
+  "description": "Most articles list what is wrong with AI-built apps. This one lists the signs that your AI prototype is closer to production than you fear - and what a short, focused launch project looks like when those signs are present.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-22",
@@ -21,11 +21,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-If you read enough about AI-built apps — including on this blog — you might conclude that every prototype is a security incident waiting to happen and that going live requires months of work. Many founders stall there, afraid to launch and afraid to ask. The reality is more encouraging. Plenty of apps are much closer to ready than their founders think, and the path from AI prototype to production is sometimes a matter of days. Here are ten signs yours might be one of them.
+If you read enough about AI-built apps - including on this blog - you might conclude that every prototype is a security incident waiting to happen and that going live requires months of work. Many founders stall there, afraid to launch and afraid to ask. The reality is more encouraging. Plenty of apps are much closer to ready than their founders think, and the path from AI prototype to production is sometimes a matter of days. Here are ten signs yours might be one of them.
 
 ## 1. Your App Has One Kind of User
 
-Apps where every user sees only their own things — a personal planner, a booking for a single business, a simple tool — have far simpler access rules than apps with teams, roles and organisations. Fewer rules mean fewer places for mistakes.
+Apps where every user sees only their own things - a personal planner, a booking for a single business, a simple tool - have far simpler access rules than apps with teams, roles and organisations. Fewer rules mean fewer places for mistakes.
 
 ## 2. You Don't Take Payments Yet (or Use a Hosted Checkout)
 
@@ -37,7 +37,7 @@ Names and email addresses need protection, but they are a different category fro
 
 ## 4. You Use a Mature Backend Service
 
-Supabase, Firebase and similar services provide authentication, database and storage with solid foundations. When the problems are configuration — policies, keys, settings — rather than home-built infrastructure, fixes are faster.
+Supabase, Firebase and similar services provide authentication, database and storage with solid foundations. When the problems are configuration - policies, keys, settings - rather than home-built infrastructure, fixes are faster.
 
 ## 5. The Two-Account Test Passes
 
@@ -57,7 +57,7 @@ Domain, hosting, database and email accounts under your own company email, with 
 
 ## 9. Your Scope Is Frozen
 
-Knowing exactly what goes live — and resisting additions — is one of the strongest predictors of a short project.
+Knowing exactly what goes live - and resisting additions - is one of the strongest predictors of a short project.
 
 ## 10. You Have Real Users Waiting
 
@@ -67,7 +67,7 @@ Counter-intuitively, this helps: real users define what must work on day one, an
 
 If seven or more of these apply, a production project can be small: a review to confirm there are no hidden issues, fixes for what is found (often backups, email sending, rate limiting, a staging environment, monitoring), your own domain with SSL and a tested launch. At LaunchStudio, projects like this sit at the lower end of the €800–€7,500 range and can take days rather than weeks.
 
-If fewer apply, that is not a reason to despair — just a reason to plan more carefully.
+If fewer apply, that is not a reason to despair - just a reason to plan more carefully.
 
 ## Why It Still Needs a Look
 
@@ -104,7 +104,7 @@ Apps with high scores still commonly hide a few issues that only a review reveal
 - **Missing security headers** such as a Content Security Policy.
 - **Staging absent**, so changes go straight to users.
 
-These are typically quick fixes — which is why a short review is worth it even when things look good.
+These are typically quick fixes - which is why a short review is worth it even when things look good.
 
 ## What a Short Launch Project Contains
 
@@ -112,11 +112,11 @@ For an app scoring high, a short Launch Ready project might include: a focused r
 
 ## Signs You Are Further Away Than You Think
 
-The opposite signals are worth knowing too. Multiple roles with overlapping permissions, payments confirmed by the browser, special-category data, a custom-built backend, secrets visible in the browser, code that exists only inside a builder, accounts owned by others, a growing feature list and no identified users — each adds time and care. None means you cannot launch; they mean the plan should be longer and the review deeper.
+The opposite signals are worth knowing too. Multiple roles with overlapping permissions, payments confirmed by the browser, special-category data, a custom-built backend, secrets visible in the browser, code that exists only inside a builder, accounts owned by others, a growing feature list and no identified users - each adds time and care. None means you cannot launch; they mean the plan should be longer and the review deeper.
 
 ## Using the Signs to Plan Your Budget
 
-The score also helps budget planning. High-scoring apps typically land at the lower end of LaunchStudio's €800–€7,500 range; mid-scoring apps in the middle; low-scoring apps at the upper end, especially with payments and sensitive data. Using the calculator with honest inputs — and bringing your score to the intro call — helps you get an accurate fixed quote quickly.
+The score also helps budget planning. High-scoring apps typically land at the lower end of LaunchStudio's €800–€7,500 range; mid-scoring apps in the middle; low-scoring apps at the upper end, especially with payments and sensitive data. Using the calculator with honest inputs - and bringing your score to the intro call - helps you get an accurate fixed quote quickly.
 
 ## Why Nearly-Ready Apps Still Deserve Monitoring
 
@@ -124,7 +124,7 @@ A clean launch is not the end. Even simple apps benefit from uptime and error al
 
 ## The Psychology of "Not Ready Yet"
 
-Many founders delay launch not because of real risks but because of vague worry. The signs above replace worry with evidence: either your app is close — and you can launch within days — or it is not, and you know exactly why. Both outcomes are better than months of hesitation while the market, your motivation and your early users drift away.
+Many founders delay launch not because of real risks but because of vague worry. The signs above replace worry with evidence: either your app is close - and you can launch within days - or it is not, and you know exactly why. Both outcomes are better than months of hesitation while the market, your motivation and your early users drift away.
 
 ## Improving Your Score Before the Intro Call
 
@@ -141,23 +141,23 @@ Each change raises your score and gives the engineer a cleaner starting point.
 
 ## What Engineers Check First in a Nearly-Ready App
 
-When a prototype looks close, reviewers still follow a fixed sequence, because it quickly confirms or disproves the impression: they list all tables and verify policies; search the code and history for secrets and privileged keys; trace payment status updates; check storage bucket permissions; look at hosting and environment configuration; and try the unhappy paths — invalid input, expired sessions, duplicate submissions. If all of these are clean, the remaining work is genuinely small.
+When a prototype looks close, reviewers still follow a fixed sequence, because it quickly confirms or disproves the impression: they list all tables and verify policies; search the code and history for secrets and privileged keys; trace payment status updates; check storage bucket permissions; look at hosting and environment configuration; and try the unhappy paths - invalid input, expired sessions, duplicate submissions. If all of these are clean, the remaining work is genuinely small.
 
 ## Launching in Stages, Even When Close
 
-Even a nearly-ready app benefits from a staged launch: first to a small group of known users, then to a wider audience after a week of monitoring. The first group finds the last small issues — confusing wording, a device-specific glitch — while the impact is limited. Because the underlying safety is already in place, these are polish items, not risks.
+Even a nearly-ready app benefits from a staged launch: first to a small group of known users, then to a wider audience after a week of monitoring. The first group finds the last small issues - confusing wording, a device-specific glitch - while the impact is limited. Because the underlying safety is already in place, these are polish items, not risks.
 
 ## Examples of Nearly-Ready Apps
 
-Across LaunchStudio's projects, the apps closest to production tend to share a profile: a booking or listing tool for a single business, built on Supabase or Firebase with provider authentication, taking payments through a hosted checkout, collecting only names and contact details, with the founder owning all accounts and a clear launch date. For such apps, the typical findings are operational — email deliverability, backups, monitoring, rate limits — rather than structural. That is good news: operational fixes are fast, predictable and inexpensive.
+Across LaunchStudio's projects, the apps closest to production tend to share a profile: a booking or listing tool for a single business, built on Supabase or Firebase with provider authentication, taking payments through a hosted checkout, collecting only names and contact details, with the founder owning all accounts and a clear launch date. For such apps, the typical findings are operational - email deliverability, backups, monitoring, rate limits - rather than structural. That is good news: operational fixes are fast, predictable and inexpensive.
 
 ## A Final Word of Encouragement
 
-If your score is high, stop polishing and launch — with a short review to confirm there are no hidden issues. If it is lower, you now know precisely which gaps to close. Either way, the path from AI prototype to production is shorter and clearer than the anxiety of "not ready yet" suggests.
+If your score is high, stop polishing and launch - with a short review to confirm there are no hidden issues. If it is lower, you now know precisely which gaps to close. Either way, the path from AI prototype to production is shorter and clearer than the anxiety of "not ready yet" suggests.
 
 ## Why Being Close Still Deserves Care
 
-A nearly-ready app has a particular risk: because it looks finished, founders skip the last checks. The short review exists precisely for this situation. It confirms the good news, finds the two or three small issues every app has and gives you a written record that your launch was deliberate rather than hopeful. For the modest cost of a few days' work, you replace "probably fine" with "known to be fine" — and you launch with the confidence to promote your product loudly, instead of quietly hoping nobody looks too closely.
+A nearly-ready app has a particular risk: because it looks finished, founders skip the last checks. The short review exists precisely for this situation. It confirms the good news, finds the two or three small issues every app has and gives you a written record that your launch was deliberate rather than hopeful. For the modest cost of a few days' work, you replace "probably fine" with "known to be fine" - and you launch with the confidence to promote your product loudly, instead of quietly hoping nobody looks too closely.
 
 ## First Step
 
@@ -165,9 +165,9 @@ Score your app using the table above today. If the result is 9 or more, book a s
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's Launch Ready package is designed for apps that are nearly there: a focused review, targeted fixes, domain and hosting, and 48 hours of post-launch support — without touching what already works. LaunchStudio is powered by Manifera, whose engineers have shipped 160+ projects over 11+ years, working from Ho Chi Minh City, Singapore and Amsterdam. See [Manifera's about page](https://www.manifera.com/about-us/). For a quick external self-check, Mozilla's [HTTP Observatory](https://developer.mozilla.org/en-US/observatory) grades your site's basic security headers in a minute.
+LaunchStudio's Launch Ready package is designed for apps that are nearly there: a focused review, targeted fixes, domain and hosting, and 48 hours of post-launch support - without touching what already works. LaunchStudio is powered by Manifera, whose engineers have shipped 160+ projects over 11+ years, working from Ho Chi Minh City, Singapore and Amsterdam. See [Manifera's about page](https://www.manifera.com/about-us/). For a quick external self-check, Mozilla's [HTTP Observatory](https://developer.mozilla.org/en-US/observatory) grades your site's basic security headers in a minute.
 
-[Send us your prototype link](https://launchstudio.eu/en/#contact) — the answer might be better news than you expect.
+[Send us your prototype link](https://launchstudio.eu/en/#contact) - the answer might be better news than you expect.
 
 ## Real example
 
@@ -182,9 +182,9 @@ In three business days, LaunchStudio's engineers moved confirmation fully to Mol
 **Result:** Strandhuisjes launched in time for the May holidays and was fully booked for most summer weekends. Julia spent a fraction of what she had budgeted and used the rest on local advertising.
 
 > *"I'd read so much about what could be wrong that I assumed everything was. It turned out five small things were."*
-> — **Julia Snoek, Founder, Strandhuisjes (Castricum)**
+> - **Julia Snoek, Founder, Strandhuisjes (Castricum)**
 
-**Cost & Timeline:** €900 (Launch Ready package: payment confirmation, backups, email, rate limiting and domain) — completed in 3 business days.
+**Cost & Timeline:** €900 (Launch Ready package: payment confirmation, backups, email, rate limiting and domain) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -202,7 +202,7 @@ A short review is still worthwhile to catch hidden issues such as public storage
 
 ### How does Manifera keep small projects small?
 
-By keeping the frontend, reviewing first and fixing only what is needed — an approach refined over 160+ projects, which lets LaunchStudio quote small fixed prices for nearly-ready apps.
+By keeping the frontend, reviewing first and fixing only what is needed - an approach refined over 160+ projects, which lets LaunchStudio quote small fixed prices for nearly-ready apps.
 
 ### Does launching sooner help with search and AI visibility?
 

@@ -55,7 +55,7 @@ Het implementeren van echte responstijd-tracking als onderdeel van de observatie
 
 [LaunchStudio](https://launchstudio.eu/nl/) implementeert bewaking van de daadwerkelijke responstijdverdeling en gepast informatieve laadstatussen als onderdeel van bredere observatieverharding. Wij vervangen een oninformatieve generieke spinner door iets wat het echte productgedrag daadwerkelijk weerspiegelt, ondersteund door Manifera's bredere engineering-discipline die prestatiemeting behandelt als een echte metriek, en niet als een aanname.
 
-[Ontdek hoe uw daadwerkelijke responstijdverdeling eruitziet, en niet alleen uw eigen indruk ervan](https://launchstudio.eu/nl/#calculator) — de spinner verbergt een verdeling die de meeste oprichters nooit daadwerkelijk hebben gemeten.
+[Ontdek hoe uw daadwerkelijke responstijdverdeling eruitziet, en niet alleen uw eigen indruk ervan](https://launchstudio.eu/nl/#calculator) - de spinner verbergt een verdeling die de meeste oprichters nooit daadwerkelijk hebben gemeten.
 
 ## Vier manieren om een traag AI-verzoek daadwerkelijk af te handelen, zodra u het heeft gemeten
 
@@ -82,9 +82,9 @@ Een handvol van Youri's vroege klanten merkte specifiek op dat "het af en toe li
 **Resultaat:** LaunchStudio implementeerde een meer informatieve laadstatus die specifiek de verwachte wachttijd communiceerde op basis van de ingewikkeldheid van de invoer, samen met een echte timeout en een duidelijke terugvalmelding voor de echte uitschieters. Hiermee werd een kloof gedicht die een betekenisvol, hoewel minderheidsdeel van het echte gebruik onzichtbaar beïnvloedde totdat het daadwerkelijk gemeten werd.
 
 > *"Een paar klanten merkten op dat het 'af en toe blijft hangen', vaag genoeg dat ik geen idee had wat er daadwerkelijk gebeurde, aangezien mijn eigen testen nooit één keer iets opleverde wat leek op blijven hangen. Het kostte het daadwerkelijk meten van echte responstijden, en niet alleen vertrouwen op mijn eigen indruk, om erachter te komen dat ongeveer één op de twintig verzoeken oprecht zo voelde voor echte klanten."*
-> — **Youri Bosman, Oprichter, WoningBeschrijving (Breda)**
+> - **Youri Bosman, Oprichter, WoningBeschrijving (Breda)**
 
-**Kosten en tijdlijn:** € 1.050 (bewaking van responstijd en informatieve laadstatus) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (bewaking van responstijd en informatieve laadstatus) - voltooid in 4 werkdagen.
 
 ---
 
@@ -152,7 +152,7 @@ Doorgaans bescheiden ten opzichte van andere investeringen in observatie die in 
       "name": "Vraagt responstijdmeting een grote investering in infrastructuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal bescheiden — het meten van responstijd is een standaardfunctie in moderne monitoringtools."
+        "text": "Meestal bescheiden - het meten van responstijd is een standaardfunctie in moderne monitoringtools."
       }
     }
   ]

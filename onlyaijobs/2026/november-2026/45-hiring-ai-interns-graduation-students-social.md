@@ -4,11 +4,11 @@
 
 ⚠️ The most common reason internships fail is supervision. A student cannot find data, understand your processes, define a use case and apply advanced methods alone. Arrange data access before day one, assign a supervisor with weekly time and keep the scope concrete.
 
-📜 Agree on confidentiality and intellectual property in advance — interns are not employees, so rights may stay with the student unless transferred.
+📜 Agree on confidentiality and intellectual property in advance - interns are not employees, so rights may stay with the student unless transferred.
 
 ✅ Students decide on their first job months before graduating. Make the offer early.
 
-📢 Post your vacancy — first listing free: info@onlyaijobs.eu
+📢 Post your vacancy - first listing free: info@onlyaijobs.eu
 
 📖 Read the full story: https://onlyaijobs.eu/blog/hiring-ai-interns-graduation-students
 

@@ -1,7 +1,7 @@
-A city launched an online permit portal promising 70% faster processing. Six weeks in, call center volume went UP — residents over 65 and without broadband couldn't complete the flow at all. 🏛️
+A city launched an online permit portal promising 70% faster processing. Six weeks in, call center volume went UP - residents over 65 and without broadband couldn't complete the flow at all. 🏛️
 
 **The Pain Points:**
-❌ **Self-Assessed Accessibility:** "We support accessibility" isn't evidence — vendors need a current VPAT/ACR for the actual citizen-facing flows, not the admin dashboard.
+❌ **Self-Assessed Accessibility:** "We support accessibility" isn't evidence - vendors need a current VPAT/ACR for the actual citizen-facing flows, not the admin dashboard.
 ❌ **No Assisted-Channel Fallback:** Platforms built assuming 100% self-service digital completion leave residents with no path to the service at all.
 ❌ **One-Size-Fits-All Identity Verification:** Maximally strict verification for a library card renewal excludes residents without a smartphone or passport, for no real risk reduction.
 

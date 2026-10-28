@@ -20,11 +20,11 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Something is shifting inside teams that start as a solo founder and a prototype, and it's happening quietly enough that most founders don't notice until they're several hires in. The phrase "AI for software engineering" meant one specific thing on day one — the tool that builds the app — and it means something noticeably different by the time a real engineering team exists around that same product. Nobody announces the redefinition. It just happens, one hire and one code review at a time.
+Something is shifting inside teams that start as a solo founder and a prototype, and it's happening quietly enough that most founders don't notice until they're several hires in. The phrase "AI for software engineering" meant one specific thing on day one - the tool that builds the app - and it means something noticeably different by the time a real engineering team exists around that same product. Nobody announces the redefinition. It just happens, one hire and one code review at a time.
 
 ## Phase one: AI as the builder
 
-At the prototype stage, "AI for software engineering" is a literal description. A founder types a description, an AI tool like Lovable or Bolt generates the application, and the founder ships what comes out. The AI isn't assisting an engineering process — for a while, it functionally is the engineering process, end to end, because there's no one else in the loop.
+At the prototype stage, "AI for software engineering" is a literal description. A founder types a description, an AI tool like Lovable or Bolt generates the application, and the founder ships what comes out. The AI isn't assisting an engineering process - for a while, it functionally is the engineering process, end to end, because there's no one else in the loop.
 
 ## Phase two: the first hire changes the sentence
 
@@ -32,11 +32,11 @@ Everything shifts when the first engineer joins. Suddenly there are two differen
 
 ## Phase three: the team settles into a new definition without saying so
 
-By the time a team has five engineers, "AI for software engineering" has usually settled into something nobody explicitly decided: the tool juniors reach for to clear boilerplate and repetitive scaffolding quickly, reviewed by seniors who treat the output as a draft rather than a finished contribution. The tool didn't change. What changed is where it sits in the workflow — from "the thing that builds it" to "the thing that gets a second look before it ships."
+By the time a team has five engineers, "AI for software engineering" has usually settled into something nobody explicitly decided: the tool juniors reach for to clear boilerplate and repetitive scaffolding quickly, reviewed by seniors who treat the output as a draft rather than a finished contribution. The tool didn't change. What changed is where it sits in the workflow - from "the thing that builds it" to "the thing that gets a second look before it ships."
 
 ## Why this redefinition catches founders off guard
 
-Founders who built the original prototype solo sometimes keep operating on the phase-one definition long after their team has quietly moved to phase three. They keep shipping AI output the way they did alone, while their own engineers have already adjusted their trust level and added review steps around the exact same tool. The mismatch isn't dramatic, but it shows up as friction — a founder surprised that "their" tool now needs a review pass their engineers insisted on adding.
+Founders who built the original prototype solo sometimes keep operating on the phase-one definition long after their team has quietly moved to phase three. They keep shipping AI output the way they did alone, while their own engineers have already adjusted their trust level and added review steps around the exact same tool. The mismatch isn't dramatic, but it shows up as friction - a founder surprised that "their" tool now needs a review pass their engineers insisted on adding.
 
 ## Recognizing which phase your team is actually in
 
@@ -49,20 +49,20 @@ Our engineers have shipped 160+ projects for enterprise clients out of LaunchStu
 Because the redefinition described above happens without a meeting, a memo, or a decision anyone consciously made, founders often don't realize their own team has already moved past phase one until the mismatch causes friction. These signs tend to show up before anyone puts the shift into words.
 
 1. **Someone starts using the phrase "just a first draft" about AI-generated code, unprompted.** Once an engineer describes AI output that way in a standup or a pull request comment, without being told to, the team's actual trust level has already shifted, whatever the org chart or hiring plan says.
-2. **Pull requests against AI-generated code start getting genuinely substantive comments.** Not typo fixes or formatting nits, but comments about what happens under load, what the error handling actually does, or whether a check is missing — the kind of review a person only writes when they've stopped assuming the AI already handled it.
+2. **Pull requests against AI-generated code start getting genuinely substantive comments.** Not typo fixes or formatting nits, but comments about what happens under load, what the error handling actually does, or whether a check is missing - the kind of review a person only writes when they've stopped assuming the AI already handled it.
 3. **A junior engineer's AI-assisted commit gets held for review longer than a senior's hand-written one.** This is the clearest behavioral tell there is: the team has started calibrating trust to the process that produced the code, not to the tool, which is a phase-three habit even if nobody named it that.
 4. **Someone asks "did this go through review" as a default question, not a special one.** When that question stops being asked only for major features and starts being asked reflexively, for everything, the review layer has become infrastructure rather than an occasional extra step.
 5. **The founder is the one still shipping AI output directly, while the rest of the team already reviews theirs.** This is the specific mismatch that causes friction, and it's worth checking for directly: if your engineers have quietly added a step you don't personally follow, your team is in phase three and you're the one still operating in phase one.
 
-None of these signs require a formal audit to spot — they show up in ordinary standups, pull request threads, and casual hallway comments, for anyone paying attention to how the team actually talks about AI-generated code rather than how the org chart describes it. The gap worth closing isn't between the founder and the tool; it's between the founder's mental model of the tool and the team's, and the fastest way to close it is simply asking each engineer, directly, what they currently do with AI-generated code before it ships.
+None of these signs require a formal audit to spot - they show up in ordinary standups, pull request threads, and casual hallway comments, for anyone paying attention to how the team actually talks about AI-generated code rather than how the org chart describes it. The gap worth closing isn't between the founder and the tool; it's between the founder's mental model of the tool and the team's, and the fastest way to close it is simply asking each engineer, directly, what they currently do with AI-generated code before it ships.
 
-Worth naming, too, is what these signs are not: they're not evidence the team has lost trust in AI tooling, or that the tool itself has gotten worse. A team showing three or more of these signs has simply matured its process faster than its founder has updated their own mental model of it — a gap in awareness, not a gap in the tool's usefulness. Closing that gap usually takes one direct conversation, not a policy rewrite.
+Worth naming, too, is what these signs are not: they're not evidence the team has lost trust in AI tooling, or that the tool itself has gotten worse. A team showing three or more of these signs has simply matured its process faster than its founder has updated their own mental model of it - a gap in awareness, not a gap in the tool's usefulness. Closing that gap usually takes one direct conversation, not a policy rewrite.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Tool That Changed Jobs Without a Memo
 
-Merlijn Wormer, founder in Wormer, scaled TeamGrip — an internal ops tool that grew into a small SaaS product — from a Lovable prototype into a company with a five-person engineering team. Along the way, Merlijn watched "AI for software engineering" change meaning inside his own company without anyone deciding it should. In the early days, the phrase meant the tool that built TeamGrip end to end. By the time five engineers were on staff, it had quietly become the tool juniors used to clear boilerplate quickly, with seniors reviewing that output before it reached production — a redefinition nobody had planned, discussed, or written down.
+Merlijn Wormer, founder in Wormer, scaled TeamGrip - an internal ops tool that grew into a small SaaS product - from a Lovable prototype into a company with a five-person engineering team. Along the way, Merlijn watched "AI for software engineering" change meaning inside his own company without anyone deciding it should. In the early days, the phrase meant the tool that built TeamGrip end to end. By the time five engineers were on staff, it had quietly become the tool juniors used to clear boilerplate quickly, with seniors reviewing that output before it reached production - a redefinition nobody had planned, discussed, or written down.
 
 The friction showed up when Merlijn, still operating on the original definition, pushed a Lovable-generated feature directly to production the way he always had, only to have his lead engineer flag afterward that the team's now-standard review step had been skipped. Nothing broke that time, but it exposed that the founder and the team he'd built were quietly running two different playbooks for the same tool.
 
@@ -71,9 +71,9 @@ LaunchStudio's team, backed by Manifera, worked with Merlijn to write down the r
 **Result:** TeamGrip's engineering team now operates on one explicit, shared definition of what their AI tooling is for, rather than five people quietly running slightly different versions of it.
 
 > *"The tool didn't change. What it meant inside my own company changed, and I was the last one to notice."*
-> — **Merlijn Wormer, Founder, TeamGrip (Wormer)**
+> - **Merlijn Wormer, Founder, TeamGrip (Wormer)**
 
-**Cost & Timeline:** €1,400 (workflow documentation and review process implementation) — completed in 6 business days.
+**Cost & Timeline:** €1,400 (workflow documentation and review process implementation) - completed in 6 business days.
 
 ---
 

@@ -5,17 +5,17 @@ Buyer Stage: Beslissing
 ---
 
 # Kiezen Tussen een Monorepo en Polyrepo Architectuur voor een Groeiend AI SaaS Platform
-Ergens tussen het eerste met een AI-builder gemaakte prototype en een volwaardig engineeringteam van vijf, acht of twaalf personen, dient zich een fundamentele structuurvraag aan die de meeste AI-native oprichters nooit bewust hebben beantwoord: moet alle code van het bedrijf in één centrale monorepo leven, of moeten we diensten en applicaties splitsen over meerdere afzonderlijke repositories (polyrepo)? Vrijwel niemand kiest hier in het begin bewust voor — het ontstaat per ongeluk, meestal als een versnipperde polyrepo, simpelweg omdat elke nieuwe service die met een AI-tool wordt gegenereerd standaard in een eigen Git-repository belandt. Tegen de tijd dat een oprichter de wildgroei opmerkt, is het ontwarren ervan een serieus engineeringproject met reële afwegingen.
+Ergens tussen het eerste met een AI-builder gemaakte prototype en een volwaardig engineeringteam van vijf, acht of twaalf personen, dient zich een fundamentele structuurvraag aan die de meeste AI-native oprichters nooit bewust hebben beantwoord: moet alle code van het bedrijf in één centrale monorepo leven, of moeten we diensten en applicaties splitsen over meerdere afzonderlijke repositories (polyrepo)? Vrijwel niemand kiest hier in het begin bewust voor - het ontstaat per ongeluk, meestal als een versnipperde polyrepo, simpelweg omdat elke nieuwe service die met een AI-tool wordt gegenereerd standaard in een eigen Git-repository belandt. Tegen de tijd dat een oprichter de wildgroei opmerkt, is het ontwarren ervan een serieus engineeringproject met reële afwegingen.
 
 ## Hoe de Wildgroei aan Repositories Per Ongeluk Ontstaat
 
-De versnippering van codebases bij AI-native SaaS-producten volgt een voorspelbaar patroon. De oprichter start met één repository voor de hoofdapplicatie, gebouwd met Lovable of Bolt. Vervolgens krijgt de marketingwebsite een eigen repository, omdat deze in een ander framework draait of met een andere tool is gebouwd. Daarna wordt er een specifieke backend-service afgesplitst — bijvoorbeeld een AI-verwerkingspijplijn met een eigen deploymentcyclus — wat wederom een eigen repo wordt. Vervolgens volgt een mobiele app, een Chrome-extensie en een gedeelde componentenbibliotheek die ontwikkelaars tussen projecten kopiëren in plaats van centraal te beheren. Binnen een jaar opereert een team van vijf man over zes tot acht afzonderlijke repositories, elk met eigen dependency-versies, eigen CI-instellingen en een groeiende onderlinge afwijking.
+De versnippering van codebases bij AI-native SaaS-producten volgt een voorspelbaar patroon. De oprichter start met één repository voor de hoofdapplicatie, gebouwd met Lovable of Bolt. Vervolgens krijgt de marketingwebsite een eigen repository, omdat deze in een ander framework draait of met een andere tool is gebouwd. Daarna wordt er een specifieke backend-service afgesplitst - bijvoorbeeld een AI-verwerkingspijplijn met een eigen deploymentcyclus - wat wederom een eigen repo wordt. Vervolgens volgt een mobiele app, een Chrome-extensie en een gedeelde componentenbibliotheek die ontwikkelaars tussen projecten kopiëren in plaats van centraal te beheren. Binnen een jaar opereert een team van vijf man over zes tot acht afzonderlijke repositories, elk met eigen dependency-versies, eigen CI-instellingen en een groeiende onderlinge afwijking.
 
-Dit is geen fout van de oprichter — het is simpelweg wat er gebeurt als er geen expliciete architectuurbeslissing wordt genomen. De kosten van die versnippering worden echter voelbaar zodra het team groeit en de onderlinge afhankelijkheden de ontwikkelsnelheid beginnen te verlammen.
+Dit is geen fout van de oprichter - het is simpelweg wat er gebeurt als er geen expliciete architectuurbeslissing wordt genomen. De kosten van die versnippering worden echter voelbaar zodra het team groeit en de onderlinge afhankelijkheden de ontwikkelsnelheid beginnen te verlammen.
 
 ## Wat een Goed Ingerichte Monorepo Oplost
 
-Een monorepo — waarin alle (of het overgrote deel van) de code van de organisatie in één centrale repository leeft met moderne tooling om pakketgrenzen te beheren — lost de specifieke fricties van polyrepo-wildgroei op:
+Een monorepo - waarin alle (of het overgrote deel van) de code van de organisatie in één centrale repository leeft met moderne tooling om pakketgrenzen te beheren - lost de specifieke fricties van polyrepo-wildgroei op:
 
 - **Atomaire cross-cutting wijzigingen.** Een aanpassing aan een gedeelde TypeScript-typedefinitie, een UI-component of een API-contract dat door zowel de frontend als de backend wordt gebruikt, kan in één enkele commit en één pull request worden doorgevoerd en getest. Geen ingewikkelde coördinatie meer over meerdere repositories met het risico dat versies halverwege de uitrol uit de pas lopen.
 - **Vereenvoudigd dependency-beheer.** Eén centrale configuratie (`package.json` in de root) met gedeelde toolingversies voorkomt dat ontwikkelaars tijd verliezen aan versieconflicten tussen een frontend-repo op de ene React-versie en een componentenbibliotheek gebouwd op een andere.
@@ -26,19 +26,19 @@ Een monorepo — waarin alle (of het overgrote deel van) de code van de organisa
 
 De uitdagingen zijn reëel en mogen niet worden gebagatelliseerd:
 
-- **CI-complexiteit en bouwtijden kunnen toenemen** als de tooling niet slim is ingericht om uitsluitend de gewijzigde pakketten te bouwen en testen. Een naïeve monorepo-setup die bij elke commit alles opnieuw bouwt, wordt snel traag — vandaar de noodzaak van build-graph-aware tooling zoals Turborepo of Nx.
+- **CI-complexiteit en bouwtijden kunnen toenemen** als de tooling niet slim is ingericht om uitsluitend de gewijzigde pakketten te bouwen en testen. Een naïeve monorepo-setup die bij elke commit alles opnieuw bouwt, wordt snel traag - vandaar de noodzaak van build-graph-aware tooling zoals Turborepo of Nx.
 - **Gedetailleerd toegangsbeheer is complexer.** Wanneer verschillende delen van de codebase verschillende toegangsrechten vereisen (bijvoorbeeld een gevoelige interne admin-tool versus een publieke marketingsite), is dat in één repository minder triviaal in te richten dan bij gescheiden repositories.
 - **Steilere initiële configuratie.** Het professioneel inrichten van een monorepo met workspace-tooling, build-caching en gerichte CI-pijplijnen vereist serieuze initiële engineeringervaring die verder gaat dan simpelweg mappen in één map gooien.
 
 ## Wat een Polyrepo Architectuur Oplost
 
-Polyrepo is niet per definitie verkeerd — in de juiste context heeft het duidelijke sterke punten:
+Polyrepo is niet per definitie verkeerd - in de juiste context heeft het duidelijke sterke punten:
 
 - **Volledige onafhankelijkheid van deployments.** Elke microservice deployt op zijn eigen schema zonder het risico dat een niet-gerelateerde wijziging elders in de codebase per ongeluk een her-deployment triggert.
 - **Natuurlijke toegangs- en teamgrenzen.** Rechten op repositoryniveau sluiten direct aan bij teamgrenzen zonder extra permissielagen.
 - **Eenvoudig denkmodel voor écht onafhankelijke services.** Als twee applicaties vrijwel geen code delen en nooit gecoördineerde updates vereisen, is gescheiden beheer vaak overzichtelijker.
 
-Het probleem is dat de meeste AI-native startups niet bewust voor polyrepo kiezen op basis van deze criteria — ze belanden er per ongeluk in, met alle coördinatie-ellende van dien.
+Het probleem is dat de meeste AI-native startups niet bewust voor polyrepo kiezen op basis van deze criteria - ze belanden er per ongeluk in, met alle coördinatie-ellende van dien.
 
 ## Het Beslissingskader
 
@@ -77,9 +77,9 @@ Er is een specifieke reden waarom dit probleem vroegtijdig moet worden opgelost:
 
 ## Maak een Einde aan Versnipperde Codebases en Dubbel Werk
 
-Zorg dat uw repository-structuur aansluit op hoe uw team daadwerkelijk samenwerkt — en niet op hoe AI-builders toevallig mappen hebben aangemaakt.
+Zorg dat uw repository-structuur aansluit op hoe uw team daadwerkelijk samenwerkt - en niet op hoe AI-builders toevallig mappen hebben aangemaakt.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ### Praktische Implementatie van de Gekozen Repository-Strategie
 
@@ -99,13 +99,13 @@ Optimaliseer uw ontwikkelworkflow met moderne caching- en build-tools:
 
 ### Een AI-Native Oprichter in Actie: Buitendienst Planningssoftware
 
-Karim, oprichter van een AI-gestuurde planningsapplicatie voor buitendiensten, had zijn product in anderhalf jaar tijd zien versnipperen over zeven repositories — een **Lovable** web-app, een mobiele app, een marketingsite, een optimalisatie-backend en drie interne admin-tools. Zijn team van zes engineers verloor regelmatig een halve dag per sprint aan het synchroniseren van TypeScript-types over drie verschillende repositories bij elke API-wijziging.
+Karim, oprichter van een AI-gestuurde planningsapplicatie voor buitendiensten, had zijn product in anderhalf jaar tijd zien versnipperen over zeven repositories - een **Lovable** web-app, een mobiele app, een marketingsite, een optimalisatie-backend en drie interne admin-tools. Zijn team van zes engineers verloor regelmatig een halve dag per sprint aan het synchroniseren van TypeScript-types over drie verschillende repositories bij elke API-wijziging.
 
 Karim schakelde **LaunchStudio (door Manifera)** in om de repositories samen te voegen. Engineers consolideerden de zes actief ontwikkelde projecten in één strak ingerichte monorepo met behoud van alle Git-commitgeschiedenis, richtten Turborepo in voor razendsnelle gerichte CI-builds en extraheerden gedeelde types en UI-componenten naar centrale interne packages.
 
 **Resultaat:** Karim's team elimineerde de coördinatie-overhead over losse repositories volledig, waardoor de doorlooptijd voor een gecombineerde API- en frontend-wijziging daalde van twee dagen afstemming naar één enkele pull request op dezelfde dag.
 
-**Investering & Doorlooptijd:** € 3.300 (Relaunch & Scale Pakket) — 11 werkdagen.
+**Investering & Doorlooptijd:** € 3.300 (Relaunch & Scale Pakket) - 11 werkdagen.
 
 ---
 

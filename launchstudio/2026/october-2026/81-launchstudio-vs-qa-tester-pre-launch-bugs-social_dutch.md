@@ -1,4 +1,4 @@
-🐛 Tobias huurde een QA-tester in voor € 350 voordat hij zijn freelance marktplaats lanceerde, gebouwd met **Bolt** — het rapport kwam schoon terug. Toen ontdekte een vriend dat elke freelancer de privébudgetten van elke klant kon bekijken door een nummer in de URL aan te passen.
+🐛 Tobias huurde een QA-tester in voor € 350 voordat hij zijn freelance marktplaats lanceerde, gebouwd met **Bolt** - het rapport kwam schoon terug. Toen ontdekte een vriend dat elke freelancer de privébudgetten van elke klant kon bekijken door een nummer in de URL aan te passen.
 
 Een QA-tester test wat op het scherm staat. Ze auditen niet wat eronder zit.
 
@@ -12,7 +12,7 @@ Een QA-tester test wat op het scherm staat. Ze auditen niet wat eronder zit.
 
 Bij **LaunchStudio** vangen wij dit type bug al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Tobias lanceerde op schema met nul incidenten van data-blootstelling en een slagingspercentage voor betalingen van 99,6% in de eerste maand. (€ 1.900 — Launch & Grow Pakket, opgelost en gedeployed in 9 werkdagen.) 🚀
+Tobias lanceerde op schema met nul incidenten van data-blootstelling en een slagingspercentage voor betalingen van 99,6% in de eerste maand. (€ 1.900 - Launch & Grow Pakket, opgelost en gedeployed in 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-qa-tester-pre-launch-bugs
 

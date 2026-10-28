@@ -1,4 +1,4 @@
-🏥 Amara bouwde CarePath, een healthtech-planningsplatform, met **Cursor** — en stond drie weken voordat ze een pilot bij negen klinieken van een ziekenhuisnetwerk dreigde te verliezen, toen de CISO van het netwerk een leveranciers-beveiligingsvragenlijst terugstuurde met kritieke tekortkomingen.
+🏥 Amara bouwde CarePath, een healthtech-planningsplatform, met **Cursor** - en stond drie weken voordat ze een pilot bij negen klinieken van een ziekenhuisnetwerk dreigde te verliezen, toen de CISO van het netwerk een leveranciers-beveiligingsvragenlijst terugstuurde met kritieke tekortkomingen.
 
 Als uw door AI gebouwde app de vragen van een CISO over data-isolatie, beheer van geheimen en auditlogging niet kan beantwoorden, sneuvelt een enterprise-deal in het papierwerk, niet in de demo.
 
@@ -12,7 +12,7 @@ Als uw door AI gebouwde app de vragen van een CISO over data-isolatie, beheer va
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-CarePath slaagde voor de opnieuw ingediende beveiligingsvragenlijst van de CISO, met alle acht gemarkeerde categorieën volledig verholpen en geverifieerd onder de eigen penetratietest van het netwerk, en Amara tekende een pilot-naar-schaal-contract van 18 maanden ter waarde van ongeveer € 180.000 aan jaarlijkse terugkerende omzet. (€ 6.800 (Enterprise Hardening Pakket) — audit-klaar en opnieuw ingediend binnen 9 werkdagen.) 🚀
+CarePath slaagde voor de opnieuw ingediende beveiligingsvragenlijst van de CISO, met alle acht gemarkeerde categorieën volledig verholpen en geverifieerd onder de eigen penetratietest van het netwerk, en Amara tekende een pilot-naar-schaal-contract van 18 maanden ter waarde van ongeveer € 180.000 aan jaarlijkse terugkerende omzet. (€ 6.800 (Enterprise Hardening Pakket) - audit-klaar en opnieuw ingediend binnen 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/ciso-security-audit-case-study
 

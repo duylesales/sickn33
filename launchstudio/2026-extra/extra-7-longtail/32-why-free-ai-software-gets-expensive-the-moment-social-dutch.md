@@ -1,11 +1,11 @@
-🚨 Mattias Berg bouwde InvoiceFlow, een facturatietool voor freelancers, in Malmö met Bolt — en draaide deze twee maanden lang op de gratis tier van Supabase en Vercel. Vervolgens stuurde een vermelding in een freelance-nieuwsbrief 400 mensen binnen een uur naar zijn app. 😳
+🚨 Mattias Berg bouwde InvoiceFlow, een facturatietool voor freelancers, in Malmö met Bolt - en draaide deze twee maanden lang op de gratis tier van Supabase en Vercel. Vervolgens stuurde een vermelding in een freelance-nieuwsbrief 400 mensen binnen een uur naar zijn app. 😳
 
-Gratis AI-software is niet gratis zodra echte gebruikers komen opdagen — het zijn kosten die u hebt uitgesteld, niet vermeden. 🧠
+Gratis AI-software is niet gratis zodra echte gebruikers komen opdagen - het zijn kosten die u hebt uitgesteld, niet vermeden. 🧠
 
-❌ De limiet voor databaseverbindingen van zijn gratis abonnement was 60 — InvoiceFlow begon binnen 20 minuten verbindingsfouten te geven
+❌ De limiet voor databaseverbindingen van zijn gratis abonnement was 60 - InvoiceFlow begon binnen 20 minuten verbindingsfouten te geven
 ❌ Ongeveer een derde van het verkeer van die ochtend botste tegen een foutpagina voordat ze het product überhaupt zagen
 ❌ Geen connection pooling betekende dat elk gelijktijdig verzoek zijn eigen databaseverbinding opende
-❌ Er was geen waarschuwingsschot — gratis tiers falen plotseling, niet geleidelijk
+❌ Er was geen waarschuwingsschot - gratis tiers falen plotseling, niet geleidelijk
 
 ✅ Migreren naar een degelijk gepoolde productiedatabase gedimensioneerd voor echt verkeer
 ✅ Verbindingsbeheer toevoegen zonder de bestaande, in Bolt gebouwde frontend aan te raken

@@ -49,7 +49,7 @@ Resist the urge to demonstrate value immediately. The instinct is understandable
 
 ## Month Two: Ship Something Small
 
-Around week five or six, deliver something visible, useful and finished. Not a model — a fix, a report someone needed, a monitoring check, a query that answers a recurring question, a documented dataset.
+Around week five or six, deliver something visible, useful and finished. Not a model - a fix, a report someone needed, a monitoring check, a query that answers a recurring question, a documented dataset.
 
 The purpose is not the artefact. It is to demonstrate that you finish things, to learn the path from idea to production while the stakes are low, and to give colleagues a reason to trust you with something larger.
 
@@ -59,7 +59,7 @@ Choose something with a real user who will notice, and finish it properly: teste
 
 By the third month you should own a piece of work that matters, with a defined outcome and a stated timeline. This is also the point to start forming and voicing opinions: what you think is fragile, what you would prioritise, what you believe is being measured wrongly.
 
-Do it carefully. Your observations are valuable precisely because you are still new, and they are easy to deliver badly. "I noticed X — is there history behind it?" works. "This is wrong" rarely does.
+Do it carefully. Your observations are valuable precisely because you are still new, and they are easy to deliver badly. "I noticed X - is there history behind it?" works. "This is wrong" rarely does.
 
 ## The Questions to Ask in Week One
 
@@ -111,7 +111,7 @@ Poor first projects: a new model in a domain you do not understand, anything req
 
 Technical people often onboard into the team and never onboard into the company, which limits them for years.
 
-Spend some of the first three months learning how the organisation actually works. How does it make money, or, in the public sector, what is it accountable for? Which department has influence? Who decides budgets, and when in the year? What is the annual rhythm — a retail peak, a reporting cycle, a regulatory deadline — that determines when people have attention for your work?
+Spend some of the first three months learning how the organisation actually works. How does it make money, or, in the public sector, what is it accountable for? Which department has influence? Who decides budgets, and when in the year? What is the annual rhythm - a retail peak, a reporting cycle, a regulatory deadline - that determines when people have attention for your work?
 
 Attend meetings you are not required to attend, at least once. Read the annual report or the published strategy. Ask a commercial colleague to explain their job.
 
@@ -141,7 +141,7 @@ A short list, all common and all avoidable.
 
 The relationship with your manager is formed early and is worth being deliberate about.
 
-Establish how they want to be updated and at what frequency, then do it consistently. A short written update every week — what you did, what is next, what is blocking you — costs ten minutes and prevents the most common early problem, which is a manager who is unsure what you are doing and starts checking.
+Establish how they want to be updated and at what frequency, then do it consistently. A short written update every week - what you did, what is next, what is blocking you - costs ten minutes and prevents the most common early problem, which is a manager who is unsure what you are doing and starts checking.
 
 Ask explicitly what success looks like at three months. If the answer is vague, propose your own version and ask whether it is right. Ambiguous expectations are the most common cause of a disappointing first review, and they are almost always resolvable by asking.
 
@@ -149,7 +149,7 @@ Raise problems early and with a proposal attached. Managers can absorb bad news;
 
 Ask for feedback at thirty days rather than waiting for a formal review. The question "is there anything you would like me to do differently?" is uncomfortable and extremely efficient.
 
-If the relationship is not working — no time, no clarity, no support — say so once, plainly and constructively, before concluding the job is wrong. A surprising proportion of these situations are inattention rather than intent.
+If the relationship is not working - no time, no clarity, no support - say so once, plainly and constructively, before concluding the job is wrong. A surprising proportion of these situations are inattention rather than intent.
 
 ## When the Job Is Not What Was Described
 

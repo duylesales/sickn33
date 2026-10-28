@@ -3,9 +3,9 @@
 The first read-only pass found a red flag in about ninety minutes. 🧠
 
 ❌ API keys for the email-sending service were hardcoded directly into a client-side file, visible in the browser's dev tools
-❌ No rate limiting on the survey submission endpoint — one script could flood the database or run up his email bill in an afternoon
+❌ No rate limiting on the survey submission endpoint - one script could flood the database or run up his email bill in an afternoon
 ❌ Several form fields had no server-side validation, so the backend trusted whatever the frontend sent
-❌ None of it would have shown up in a product demo — all of it would have shown up the first week of real traffic
+❌ None of it would have shown up in a product demo - all of it would have shown up the first week of real traffic
 
 ✅ Move exposed credentials server-side behind an environment variable immediately
 ✅ Add request throttling on public-facing submission endpoints

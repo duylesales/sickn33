@@ -35,7 +35,7 @@ Content Format: Policy Brief
 }
 </script>
 
-Dutch border regions — Limburg, Twente, the Achterhoek, parts of Brabant, Groningen and Zeeland — sit inside long-established Euregio cross-border cooperation structures with Belgium and Germany, covering everything from infrastructure to healthcare. Job visibility for AI and data roles rarely benefits from that same cooperation, even though the underlying candidate pools genuinely overlap across the border.
+Dutch border regions - Limburg, Twente, the Achterhoek, parts of Brabant, Groningen and Zeeland - sit inside long-established Euregio cross-border cooperation structures with Belgium and Germany, covering everything from infrastructure to healthcare. Job visibility for AI and data roles rarely benefits from that same cooperation, even though the underlying candidate pools genuinely overlap across the border.
 
 ## Why This Gap Exists
 
@@ -57,13 +57,13 @@ Several of these regions also host universities with cross-border ties, such as 
 
 ## Existing Instruments That Already Support Cross-Border Work
 
-**Interreg VI.** The EU's cross-border cooperation programmes — including Germany–Netherlands, Flanders–Netherlands and Euregio Meuse-Rhine — fund projects on innovation, labour markets and education. Several past projects addressed cross-border labour market barriers.
+**Interreg VI.** The EU's cross-border cooperation programmes - including Germany–Netherlands, Flanders–Netherlands and Euregio Meuse-Rhine - fund projects on innovation, labour markets and education. Several past projects addressed cross-border labour market barriers.
 
-**GrensInfoPunten.** Cross-border information points in the border regions give independent advice to cross-border workers and employers on tax, social security, pensions and employment law — the practical questions that often stop cross-border moves.
+**GrensInfoPunten.** Cross-border information points in the border regions give independent advice to cross-border workers and employers on tax, social security, pensions and employment law - the practical questions that often stop cross-border moves.
 
 **EURES.** The European Employment Services network supports job mobility in the EU, including cross-border partnerships in border regions where public employment services, trade unions and employers cooperate.
 
-**Social security coordination.** Under **EU Regulation (EC) No 883/2004**, a worker is generally insured in one country. The **Framework Agreement on cross-border telework**, which the Netherlands, Belgium and Germany have signed, allows teleworkers who work less than half of their working time in their country of residence to remain insured in the employer's country, under conditions — an important enabler now that hybrid work is common.
+**Social security coordination.** Under **EU Regulation (EC) No 883/2004**, a worker is generally insured in one country. The **Framework Agreement on cross-border telework**, which the Netherlands, Belgium and Germany have signed, allows teleworkers who work less than half of their working time in their country of residence to remain insured in the employer's country, under conditions - an important enabler now that hybrid work is common.
 
 ## What Existing Cooperation Structures Could Extend To
 
@@ -75,11 +75,11 @@ Several of these regions also host universities with cross-border ties, such as 
 
 ## What This Is Not
 
-This isn't a claim that cross-border job seeking is simple in practice — language, tax and legal differences remain real. It's a narrower point: existing cooperation structures already handle harder cross-border coordination problems, so job visibility specifically is a comparatively easy extension.
+This isn't a claim that cross-border job seeking is simple in practice - language, tax and legal differences remain real. It's a narrower point: existing cooperation structures already handle harder cross-border coordination problems, so job visibility specifically is a comparatively easy extension.
 
 ## A Deeper Look at Why Job Visibility Fits Euregio Cooperation Well
 
-Euregio cooperation structures typically exist because a problem doesn't respect the administrative border it happens to sit on — traffic, healthcare capacity, environmental management. Talent visibility fits this pattern precisely: a candidate's realistic commute radius in a border region genuinely crosses into Germany or Belgium, regardless of which side of the border their national job board defaults to searching.
+Euregio cooperation structures typically exist because a problem doesn't respect the administrative border it happens to sit on - traffic, healthcare capacity, environmental management. Talent visibility fits this pattern precisely: a candidate's realistic commute radius in a border region genuinely crosses into Germany or Belgium, regardless of which side of the border their national job board defaults to searching.
 
 ## Comparing Border-Region Candidate Pools to Interior Ones
 
@@ -101,9 +101,9 @@ Euregio cooperation structures typically exist because a problem doesn't respect
 
 For AI and data roles, the barriers are often lower than for regulated professions: many teams work in English, and data science isn't a regulated profession. That makes these roles a good test case for cross-border visibility.
 
-## Why Starting Small — One Sector, One Border Segment — Beats a Region-Wide Launch
+## Why Starting Small - One Sector, One Border Segment - Beats a Region-Wide Launch
 
-Rather than coordinating job visibility across an entire Euregio's economy at once, a more tractable starting point is one sector — AI, machine learning and data — in one border segment, proving the concept before expanding. This mirrors how many successful Euregio initiatives in other domains began: narrow and concrete, then expanded once the coordination mechanism worked.
+Rather than coordinating job visibility across an entire Euregio's economy at once, a more tractable starting point is one sector - AI, machine learning and data - in one border segment, proving the concept before expanding. This mirrors how many successful Euregio initiatives in other domains began: narrow and concrete, then expanded once the coordination mechanism worked.
 
 ## A Pilot Design in Five Steps
 
@@ -160,7 +160,7 @@ Reporting the barriers is as valuable as reporting successes: it shows cooperati
 
 ## Key Takeaways
 
-- Dutch border regions belong to named Euregios — EUREGIO, Ems Dollart Region, Euregio Rhine-Waal, Euregio Meuse-Rhine and Euregio Scheldemond — with decades of cooperation.
+- Dutch border regions belong to named Euregios - EUREGIO, Ems Dollart Region, Euregio Rhine-Waal, Euregio Meuse-Rhine and Euregio Scheldemond - with decades of cooperation.
 - National job boards structurally miss employers just across the border, even though commute radii cross it.
 - Interreg VI, GrensInfoPunten, EURES and EU social security coordination, including the telework framework agreement, already support cross-border work.
 - Language, tax, social security, qualification recognition and employment law are real barriers, but often lower for English-speaking AI teams.
@@ -175,19 +175,19 @@ Reach out to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whether 
 ## Frequently Asked Questions
 
 ### (Scenario: regional organisation sceptical this is a real opportunity) Is cross-border job visibility actually a meaningful opportunity, or a minor detail?
-It's a genuine but underused opportunity — the candidate pools in Dutch border regions already overlap across borders, but national job boards default to national borders as a matter of design.
+It's a genuine but underused opportunity - the candidate pools in Dutch border regions already overlap across borders, but national job boards default to national borders as a matter of design.
 
 ### (Scenario: organisation wondering how this relates to existing Euregio work) How does this relate to existing Euregio cooperation structures?
-Existing structures already handle harder cross-border coordination problems like infrastructure and healthcare — job visibility is a comparatively simple extension of that cooperation.
+Existing structures already handle harder cross-border coordination problems like infrastructure and healthcare - job visibility is a comparatively simple extension of that cooperation.
 
 ### (Scenario: organisation worried this oversimplifies real barriers) Doesn't cross-border job seeking involve real language, tax and legal complications?
-Yes, and this article doesn't claim otherwise — the narrower point is that visibility itself, as a first step, is simpler to address than those deeper complications.
+Yes, and this article doesn't claim otherwise - the narrower point is that visibility itself, as a first step, is simpler to address than those deeper complications.
 
 ### (Scenario: organisation wondering what action to take) What would our organisation actually do to act on this?
 Consider extending existing Euregio cooperation channels to include shared visibility of AI, machine learning and data vacancies and joint messaging to job seekers on both sides of the border.
 
 ### (Scenario: organisation wondering if this requires new infrastructure) Does this require building new cross-border infrastructure?
-Not necessarily — it can start as a coordination and messaging effort within existing Euregio structures, rather than a new technical system.
+Not necessarily - it can start as a coordination and messaging effort within existing Euregio structures, rather than a new technical system.
 
 <script type="application/ld+json">
 {
@@ -195,10 +195,10 @@ Not necessarily — it can start as a coordination and messaging effort within e
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Is cross-border job visibility actually a meaningful opportunity, or a minor detail?", "acceptedAnswer": {"@type": "Answer", "text": "A genuine but underused opportunity, since candidate pools in border regions already overlap but national boards default to national borders."}},
-    {"@type": "Question", "name": "How does this relate to existing Euregio cooperation structures?", "acceptedAnswer": {"@type": "Answer", "text": "Existing structures already handle harder cross-border coordination — job visibility is a comparatively simple extension."}},
-    {"@type": "Question", "name": "Doesn't cross-border job seeking involve real language, tax and legal complications?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the narrower point is that visibility itself is simpler to address than those deeper complications."}},
+    {"@type": "Question", "name": "How does this relate to existing Euregio cooperation structures?", "acceptedAnswer": {"@type": "Answer", "text": "Existing structures already handle harder cross-border coordination - job visibility is a comparatively simple extension."}},
+    {"@type": "Question", "name": "Doesn't cross-border job seeking involve real language, tax and legal complications?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the narrower point is that visibility itself is simpler to address than those deeper complications."}},
     {"@type": "Question", "name": "What would our organisation actually do to act on this?", "acceptedAnswer": {"@type": "Answer", "text": "Extend existing Euregio channels to include shared vacancy visibility and joint messaging."}},
-    {"@type": "Question", "name": "Does this require building new cross-border infrastructure?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — it can start as coordination and messaging within existing structures."}}
+    {"@type": "Question", "name": "Does this require building new cross-border infrastructure?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - it can start as coordination and messaging within existing structures."}}
   ]
 }
 </script>

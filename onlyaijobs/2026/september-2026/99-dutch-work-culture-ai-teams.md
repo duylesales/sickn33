@@ -47,7 +47,7 @@ Six specific patterns, each of which regularly damages a working relationship.
 
 **Hearing a proposal as a decision.** In consensus cultures, a manager stating a direction may be opening a discussion rather than closing one. If you disagree and say nothing because you heard a decision, you have lost the moment where your objection was wanted.
 
-**Treating consultation as indecision.** A Dutch team may discuss something for longer than you expect before acting. This is not weakness; the resulting decision is usually better supported and more durable. But it does mean you cannot expect to be given a mandate — you have to build agreement, as the progression analysis describes.
+**Treating consultation as indecision.** A Dutch team may discuss something for longer than you expect before acting. This is not weakness; the resulting decision is usually better supported and more durable. But it does mean you cannot expect to be given a mandate - you have to build agreement, as the progression analysis describes.
 
 **Interpreting respected working hours as low ambition.** Colleagues leaving at five are not less committed. Long hours signal poor planning here rather than dedication, and an international arrival who visibly overworks is often read as struggling rather than as diligent.
 
@@ -75,7 +75,7 @@ The practical summary for someone from a directive culture is that you trade spe
 
 A collection of specifics that cause disproportionate confusion in the first months.
 
-**Birthdays matter and you are expected to bring something.** Your own birthday, not other people's — you provide the cake. Missing this is a small but genuine social misstep.
+**Birthdays matter and you are expected to bring something.** Your own birthday, not other people's - you provide the cake. Missing this is a small but genuine social misstep.
 
 **Lunch is short, communal and modest.** Often half an hour, frequently at desks or a shared table, usually bread. It is a social occasion rather than a meal, and joining it is how you get to know colleagues.
 
@@ -168,11 +168,11 @@ And the directness, once you adjust, means you generally know where you stand. A
 - The most costly misreading is hearing criticism of your work as criticism of you; defensive responses make colleagues route around you.
 - A manager stating a direction may be opening a discussion rather than closing it, so silence loses you the moment your objection was wanted.
 - Long hours read as poor planning rather than commitment, and a four-day week is normal at every level including senior.
-- Informal conversation defaults to Dutch, which is where you lose context and relationships — the strongest practical argument for learning the language.
+- Informal conversation defaults to Dutch, which is where you lose context and relationships - the strongest practical argument for learning the language.
 
 ## Where to Start
 
-For your first month, ask more questions than feels comfortable and treat every piece of critical feedback as information rather than judgement. Then ask one colleague directly what you are getting wrong culturally — you will get an honest answer, which is the point.
+For your first month, ask more questions than feels comfortable and treat every piece of critical feedback as information rather than judgement. Then ask one colleague directly what you are getting wrong culturally - you will get an honest answer, which is the point.
 
 Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -188,10 +188,10 @@ Because a manager stating a direction is often opening a discussion rather than 
 No. Long hours read as poor planning here rather than commitment, and visible overwork is often interpreted as struggling. Leaving at a normal time is normal at every level.
 
 ### (Scenario: arrival receiving little praise) Does absence of positive feedback mean I am doing badly?
-Usually not. Positive feedback is sparser than in some cultures, and if something is fine it may simply not be mentioned. If you are unsure, ask directly — you will get an honest answer.
+Usually not. Positive feedback is sparser than in some cultures, and if something is fine it may simply not be mentioned. If you are unsure, ask directly - you will get an honest answer.
 
 ### (Scenario: arrival whose colleagues all speak English) Do I still need Dutch?
-For the work, often not. For everything informal — lunch, corridors, the conversations where context and relationships form — yes, and that is where the practical case for learning it is strongest even when your job does not require it.
+For the work, often not. For everything informal - lunch, corridors, the conversations where context and relationships form - yes, and that is where the practical case for learning it is strongest even when your job does not require it.
 
 <script type="application/ld+json">
 {

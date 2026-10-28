@@ -1,13 +1,13 @@
 🚨 Months of sales calls. A champion inside the company. A verbal yes from the budget owner. Then Kirsten Mol's TeamDocs deal reached procurement, and one question stopped everything: "Does it support SSO?" It didn't. A six-figure contract was suddenly on the line over a feature nobody had mentioned until that moment. 💼
 
-Enterprise procurement isn't optional, and it isn't negotiable on security basics — and email-and-password login is exactly what AI tools ship by default. 🧠
+Enterprise procurement isn't optional, and it isn't negotiable on security basics - and email-and-password login is exactly what AI tools ship by default. 🧠
 
 ❌ Lovable, Bolt, and similar tools generate email-and-password login without being asked, because it's the fastest path to a working demo
-❌ Enterprise IT departments standardize on centralized identity management through Okta, Azure AD, or Google Workspace — a standalone password an admin can't centrally revoke is a hard blocker, not a preference
+❌ Enterprise IT departments standardize on centralized identity management through Okta, Azure AD, or Google Workspace - a standalone password an admin can't centrally revoke is a hard blocker, not a preference
 ❌ No amount of product quality or sales relationship overcomes a hard requirement written into vendor security policy
-❌ The requirement almost never comes up during sales conversations — it's assumed as baseline from the enterprise side, until procurement says it out loud
+❌ The requirement almost never comes up during sales conversations - it's assumed as baseline from the enterprise side, until procurement says it out loud
 
-✅ Implement SAML SSO with support for multiple identity providers, not just one — every enterprise customer runs a different setup
+✅ Implement SAML SSO with support for multiple identity providers, not just one - every enterprise customer runs a different setup
 ✅ Build just-in-time provisioning so new SSO users get an account automatically on first login
 ✅ Give each enterprise customer a self-serve admin flow to configure their own SSO connection
 

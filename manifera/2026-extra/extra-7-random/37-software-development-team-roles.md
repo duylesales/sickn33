@@ -20,21 +20,21 @@ target_persona: "CTO"
 }
 </script>
 
-Most software development team role lists cover the roles that are easy to name — engineers, a product manager, a designer, a QA function — and skip a connective role that doesn't have an obvious job title but that its absence makes felt constantly, as a team that seems to have all the right roles still somehow struggles with things falling through the cracks between them.
+Most software development team role lists cover the roles that are easy to name - engineers, a product manager, a designer, a QA function - and skip a connective role that doesn't have an obvious job title but that its absence makes felt constantly, as a team that seems to have all the right roles still somehow struggles with things falling through the cracks between them.
 
-**The Pain:** A CTO reviewing team composition against a standard software development team roles checklist typically finds every named role filled — engineering, product, design, QA are all represented — and reasonably concludes the team is structurally complete, without recognizing that the standard list describes the roles with clear job titles, not the connective work that happens in the gaps between those roles, work that someone needs to be doing even though no standard role description explicitly owns it.
+**The Pain:** A CTO reviewing team composition against a standard software development team roles checklist typically finds every named role filled - engineering, product, design, QA are all represented - and reasonably concludes the team is structurally complete, without recognizing that the standard list describes the roles with clear job titles, not the connective work that happens in the gaps between those roles, work that someone needs to be doing even though no standard role description explicitly owns it.
 
-**The Agitation:** A team with every named role filled but no one owning the connective work between them experiences a specific, recognizable failure pattern — requirements that get lost in translation between product and engineering, technical constraints that don't reach product decisions until too late to influence them cheaply, and decisions that get made in one functional silo without the cross-functional context that would have changed them, producing rework and misalignment that doesn't trace back to any individual role failing at its job, because no individual role was actually responsible for the connective work that fell through.
+**The Agitation:** A team with every named role filled but no one owning the connective work between them experiences a specific, recognizable failure pattern - requirements that get lost in translation between product and engineering, technical constraints that don't reach product decisions until too late to influence them cheaply, and decisions that get made in one functional silo without the cross-functional context that would have changed them, producing rework and misalignment that doesn't trace back to any individual role failing at its job, because no individual role was actually responsible for the connective work that fell through.
 
 ## The Role Between the Roles
 
-The connective role most teams are missing without realizing it is best described as end-to-end technical ownership of a specific outcome across its full lifecycle — from initial requirement through technical design, implementation, and post-launch iteration — carried by one person who tracks the outcome across every functional boundary it crosses, rather than the outcome being handed off between functional roles with no one accountable for its coherence across the full journey.
+The connective role most teams are missing without realizing it is best described as end-to-end technical ownership of a specific outcome across its full lifecycle - from initial requirement through technical design, implementation, and post-launch iteration - carried by one person who tracks the outcome across every functional boundary it crosses, rather than the outcome being handed off between functional roles with no one accountable for its coherence across the full journey.
 
-This role is sometimes formally named — a technical lead, a staff engineer with cross-functional ownership, or in some structures a dedicated technical program manager — but the label matters far less than whether the actual work of connective ownership is happening, explicitly assigned to someone, rather than assumed to happen automatically as a byproduct of the named functional roles doing their individual jobs well.
+This role is sometimes formally named - a technical lead, a staff engineer with cross-functional ownership, or in some structures a dedicated technical program manager - but the label matters far less than whether the actual work of connective ownership is happening, explicitly assigned to someone, rather than assumed to happen automatically as a byproduct of the named functional roles doing their individual jobs well.
 
 The specific responsibilities this connective role carries include translating a requirement's actual intent (not just its literal specification) between product and engineering, so technical constraints reach product decisions early enough to be cheap to accommodate rather than late enough to force expensive rework; maintaining coherence of a feature or initiative across the multiple engineers or sub-teams who might touch different parts of it, catching integration issues before they surface at the point where they're expensive to fix; and carrying context forward across a project's full lifecycle, so decisions made early are still understood and honored (or deliberately revisited) later, rather than getting lost as the specific people involved shift over the project's duration.
 
-A CTO auditing team composition should specifically look for this connective role, not just the standard named roles, and ask a direct diagnostic question: for any given significant initiative, is there one identifiable person who owns its coherence end to end, or does ownership implicitly shift between functional roles at each handoff with no one actually accountable for the whole. A team where the answer is "no one" for most initiatives is missing this role regardless of how complete its standard role checklist looks, and the diffuse friction the team experiences — the small misalignments and rework that don't trace to any specific person's failure — is exactly the cost of that gap.
+A CTO auditing team composition should specifically look for this connective role, not just the standard named roles, and ask a direct diagnostic question: for any given significant initiative, is there one identifiable person who owns its coherence end to end, or does ownership implicitly shift between functional roles at each handoff with no one actually accountable for the whole. A team where the answer is "no one" for most initiatives is missing this role regardless of how complete its standard role checklist looks, and the diffuse friction the team experiences - the small misalignments and rework that don't trace to any specific person's failure - is exactly the cost of that gap.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: European clarity on identifying 
 
 ### A Valletta Insurer's Unowned Gap
 
-Servizzi Diġitali tal-Assigurazzjoni Valletta Ltd, a Valletta-based insurance-technology company, had every standard software development team role filled — engineers, a product manager, a designer, QA — yet consistently experienced requirements getting reinterpreted differently by different engineers on the same feature, and technical constraints surfacing only after product had already committed timelines externally.
+Servizzi Diġitali tal-Assigurazzjoni Valletta Ltd, a Valletta-based insurance-technology company, had every standard software development team role filled - engineers, a product manager, a designer, QA - yet consistently experienced requirements getting reinterpreted differently by different engineers on the same feature, and technical constraints surfacing only after product had already committed timelines externally.
 
 Manifera's assessment identified the missing connective role explicitly, and restructured significant initiatives around one identified technical owner per initiative, carrying context and coherence across its full lifecycle. Rework attributable to misaligned requirements dropped noticeably within the following two quarters, tracked through the company's existing rework-logging practice.
 
 > *"We had every role on paper. What we didn't have was anyone whose job was making sure the thread stayed connected from the first conversation about a feature to the last line of code. Once we named that job and gave it to someone, things stopped falling through cracks we didn't even know we had."*
-> — **CTO, Servizzi Diġitali tal-Assigurazzjoni Valletta Ltd, Malta**
+> - **CTO, Servizzi Diġitali tal-Assigurazzjoni Valletta Ltd, Malta**
 
 ## Standard Role Checklist vs. Manifera's Connective Ownership Model
 
@@ -88,7 +88,7 @@ Translating requirement intent between product and engineering, maintaining cohe
 
 ### (Scenario: CTO trying to understand the cost of not having this role) What does a team experience when the connective ownership role is missing?
 
-Diffuse rework and misalignment — lost requirements, late-surfacing technical constraints, and integration issues — that don't trace back to any specific role's failure.
+Diffuse rework and misalignment - lost requirements, late-surfacing technical constraints, and integration issues - that don't trace back to any specific role's failure.
 
 <script type="application/ld+json">
 {

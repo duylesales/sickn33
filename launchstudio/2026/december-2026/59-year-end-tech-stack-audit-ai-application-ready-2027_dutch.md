@@ -32,7 +32,7 @@ Doelpersona: SaaS Oprichter Scale-Up
 }
 </script>
 
-Het einde van het jaar is een natuurlijk moment om stil te staan en de balans op te maken. Een eindejaars-audit gaat niet over het vinden van een reden om alles te herbouwen — het is een gestructureerd, eerlijk ijkpunt om te achterhalen wat er ongemerkt is veranderd, opgelopen of verouderd terwijl u druk was met de dagelijkse gang van zaken.
+Het einde van het jaar is een natuurlijk moment om stil te staan en de balans op te maken. Een eindejaars-audit gaat niet over het vinden van een reden om alles te herbouwen - het is een gestructureerd, eerlijk ijkpunt om te achterhalen wat er ongemerkt is veranderd, opgelopen of verouderd terwijl u druk was met de dagelijkse gang van zaken.
 
 ## Beveiligingsstatus Review
 
@@ -135,16 +135,16 @@ Naast infrastructuur is continue validatie van uw AI-pijplijn essentieel. Een ve
 
 ### Een AI-native oprichter in actie: Een routine-audit die een flink kostenlek boven water bracht
 
-Ilse, een boekhouder voor kleine bedrijven in Uden, bouwde FactuurFlow — een AI-tool die facturen en bonnen automatisch categoriseert en verwerkt — met behulp van Lovable. Ze lanceerde het product aan het begin van het jaar via LaunchStudio en groeide in 12 maanden gestaag naar 45 betalende administratiekantoren. Ilse merkte geen problemen en vroeg een eindejaars-audit aan puur uit voorzorg.
+Ilse, een boekhouder voor kleine bedrijven in Uden, bouwde FactuurFlow - een AI-tool die facturen en bonnen automatisch categoriseert en verwerkt - met behulp van Lovable. Ze lanceerde het product aan het begin van het jaar via LaunchStudio en groeide in 12 maanden gestaag naar 45 betalende administratiekantoren. Ilse merkte geen problemen en vroeg een eindejaars-audit aan puur uit voorzorg.
 
 De audit door het Manifera-team bracht een groot punt aan het licht dat Ilse niet had gemerkt: haar AI-provider had gedurende het jaar meerdere nieuwe, kostenefficiëntere model-varianten uitgebracht. FactuurFlow draaide echter nog steeds op de oorspronkelijke, duurdere launch-configuratie. Bij 45 actieve klanten betekende dit een aanzienlijke maandelijkse overbetaling.
 
 **Resultaat:** De overstap naar het nieuwere, efficiëntere model verlaagde FactuurFlow's maandelijkse AI API-kosten met 35%, zonder enig kwaliteitsverlies.
 
 > *"Ik boekte de audit puur uit voorzorg. Het bleek dat ik al maanden veel te veel betaalde voor AI-tokens omdat ik niet wist dat er goedkopere opties waren. Die ene bevinding verdiende de audit al dubbel en dwars terug."*
-> — **Ilse van Dam, Oprichter, FactuurFlow (Uden)**
+> - **Ilse van Dam, Oprichter, FactuurFlow (Uden)**
 
-**Kosten & Doorlooptijd:** € 1.600 (eindejaars technische audit) — voltooid in 6 werkdagen, met directe maandelijkse besparingen als resultaat.
+**Kosten & Doorlooptijd:** € 1.600 (eindejaars technische audit) - voltooid in 6 werkdagen, met directe maandelijkse besparingen als resultaat.
 
 ---
 

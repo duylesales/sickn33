@@ -28,7 +28,7 @@ This is the characteristic accessibility failure of generated code, and the reas
 
 ## Who This Applies To
 
-The European Accessibility Act brings accessibility requirements to a range of products and services sold to consumers in the EU — including e-commerce, banking, transport and telecommunications services — with the obligation applying from mid-2025. The Netherlands implements it through national legislation, and public sector bodies have been covered by their own requirements for considerably longer.
+The European Accessibility Act brings accessibility requirements to a range of products and services sold to consumers in the EU - including e-commerce, banking, transport and telecommunications services - with the obligation applying from mid-2025. The Netherlands implements it through national legislation, and public sector bodies have been covered by their own requirements for considerably longer.
 
 The practical position for a small product: if you sell to consumers, or to public bodies, or to large companies with their own procurement standards, this is either a legal requirement or a commercial one. Microenterprises have some exemptions for services, but the exemption is narrower than founders hope and does not extend to a customer's own obligations.
 
@@ -64,7 +64,7 @@ Most findings in a generated interface come from a short list, and each fix is s
 
 **Use real elements.** A button is a `button`, a link is an `a` with an href, a checkbox is an `input`. Every native element brings keyboard behaviour, focus handling and screen reader semantics without any code.
 
-**Label every input.** A visible label associated with its field. Placeholder text is not a label — it disappears when typing starts and is frequently unannounced.
+**Label every input.** A visible label associated with its field. Placeholder text is not a label - it disappears when typing starts and is frequently unannounced.
 
 **Fix contrast.** Grey text on white at 4.5:1 for body copy. Generated designs consistently choose light greys that look elegant and fail.
 
@@ -80,7 +80,7 @@ Most findings in a generated interface come from a short list, and each fix is s
 
 Three patterns worth searching your codebase for specifically.
 
-Custom components built from divs — dropdowns, tabs, accordions, modals — which look right and implement none of the keyboard behaviour their native or properly-built equivalents provide. Using an accessible component library is almost always better than rebuilding these.
+Custom components built from divs - dropdowns, tabs, accordions, modals - which look right and implement none of the keyboard behaviour their native or properly-built equivalents provide. Using an accessible component library is almost always better than rebuilding these.
 
 Removed focus styles, usually a single line in a stylesheet that disables them globally.
 
@@ -88,7 +88,7 @@ And ARIA attributes applied incorrectly. Generated code sprinkles roles and labe
 
 ## Write the Statement
 
-An accessibility statement — what standard you aim for, what is not yet conformant, how to report a problem, and when it was last reviewed — is required for some organisations and useful for all of them.
+An accessibility statement - what standard you aim for, what is not yet conformant, how to report a problem, and when it was last reviewed - is required for some organisations and useful for all of them.
 
 Being honest in it is better than claiming full conformance. A statement saying you meet AA with three known exceptions, each with a workaround and a date, reads as a company that has actually looked. A blanket claim reads as a company that has not, and it is easy to disprove.
 
@@ -116,13 +116,13 @@ Three measures hold the line without turning every change into an audit.
 
 **A keyboard pass in your release routine.** One line on the checklist: tab through the thing you changed. Thirty seconds, and it catches what automation cannot.
 
-Write the conventions into your project's instructions file as well — native elements over divs, labels on every input, focus never removed. Coding assistants read it, and the difference in what they generate is immediate and measurable.
+Write the conventions into your project's instructions file as well - native elements over divs, labels on every input, focus never removed. Coding assistants read it, and the difference in what they generate is immediate and measurable.
 
 ## Setting This Up
 
 For an existing product this is typically two to four days: a keyboard-only pass over every flow with findings listed, an automated scan across the main pages, a screen reader pass over the primary journey, custom div-based components replaced with native elements or an accessible library, all inputs labelled, contrast corrected to AA, visible focus restored, images given meaningful alternatives, errors announced in text and associated with fields, heading structure corrected, zoom to 200 percent verified, incorrect ARIA removed, and an accessibility statement published with known exceptions.
 
-LaunchStudio does this as part of production readiness for products selling to consumers and to public bodies. Behind it is Manifera — eleven years, clients including Vodafone, TNO and CFLW, with public sector delivery experience from Amsterdam.
+LaunchStudio does this as part of production readiness for products selling to consumers and to public bodies. Behind it is Manifera - eleven years, clients including Vodafone, TNO and CFLW, with public sector delivery experience from Amsterdam.
 
 [Ask us to use your product without a mouse](https://launchstudio.eu/en/#contact). It takes ten minutes and the result is usually decisive.
 
@@ -138,12 +138,12 @@ The evaluation listed twelve failures. The report form could not be completed by
 
 Six business days: the category selector and three other custom components replaced with an accessible component library; the global focus-removal rule deleted and a visible focus style added; every field given a proper visible label; the palette adjusted so body text reaches 4.6:1 and interactive elements 3:1, with the brand colour darkened slightly; a postcode and street address alternative added alongside the map picker, which turned out to be faster for most residents anyway; errors announced in text, associated with their field and summarised at the top of the form; heading structure corrected throughout; images given alternatives with decorative ones marked; the whole product verified by keyboard, at 200 percent zoom and with a screen reader; and an accessibility statement published naming two remaining exceptions with workarounds and target dates.
 
-**Result:** the product passed the assessment in the following tender round and was selected. More surprisingly to Olaf, reports submitted through the address alternative rather than the map now account for 38 percent of all reports, from residents who evidently found it easier — a conversion improvement he had not anticipated from accessibility work.
+**Result:** the product passed the assessment in the following tender round and was selected. More surprisingly to Olaf, reports submitted through the address alternative rather than the map now account for 38 percent of all reports, from residents who evidently found it easier - a conversion improvement he had not anticipated from accessibility work.
 
 > *"I lost a tender before anyone saw the product, on criteria I did not know existed. And the fix that mattered most turned out to be a feature a third of my users prefer."*
-> — **Olaf Rietberg, Founder, Buurtmelding (Assen)**
+> - **Olaf Rietberg, Founder, Buurtmelding (Assen)**
 
-**Cost & Timeline:** €4,800 (accessible component replacement, focus and label remediation, contrast correction, alternative location input, error handling, heading structure, image alternatives, keyboard, zoom and screen reader verification, accessibility statement) — completed in 6 business days.
+**Cost & Timeline:** €4,800 (accessible component replacement, focus and label remediation, contrast correction, alternative location input, error handling, heading structure, image alternatives, keyboard, zoom and screen reader verification, accessibility statement) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -161,7 +161,7 @@ They use styled divs instead of native elements. A div that looks like a button 
 
 ### Is an automated checker enough?
 
-No. It finds roughly a third of issues — contrast, missing labels, missing alternatives — for very little effort. Keyboard and screen reader testing find the rest.
+No. It finds roughly a third of issues - contrast, missing labels, missing alternatives - for very little effort. Keyboard and screen reader testing find the rest.
 
 ### Should my accessibility statement claim full conformance?
 
@@ -201,7 +201,7 @@ Only if it is true. A statement naming known exceptions with workarounds and dat
       "name": "Is an automated accessibility checker sufficient?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it catches about a third of issues. Keyboard and screen reader testing find the rest."
+        "text": "No - it catches about a third of issues. Keyboard and screen reader testing find the rest."
       }
     },
     {

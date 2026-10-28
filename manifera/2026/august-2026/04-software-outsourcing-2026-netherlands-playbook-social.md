@@ -12,17 +12,17 @@ But the outsourcing game has fundamentally changed:
 
 3 models that work now:
 
-1️⃣ **Dedicated Team** — Offshore developers join YOUR standups, YOUR Jira, YOUR Git. They're your team, just not in your office.
+1️⃣ **Dedicated Team** - Offshore developers join YOUR standups, YOUR Jira, YOUR Git. They're your team, just not in your office.
 
-2️⃣ **Managed Delivery** — You define the outcome. Vendor builds it. You receive finished product + source code + docs.
+2️⃣ **Managed Delivery** - You define the outcome. Vendor builds it. You receive finished product + source code + docs.
 
-3️⃣ **Hybrid Shore** — Architecture sits in Amsterdam. Development + QA happens in Vietnam. Best of both worlds.
+3️⃣ **Hybrid Shore** - Architecture sits in Amsterdam. Development + QA happens in Vietnam. Best of both worlds.
 
 🌏 The Vietnam advantage for Dutch companies:
 → 4-5 hour daily overlap (2PM-6PM Amsterdam time)
 → Senior devs at €35-60/hr (vs €130-180/hr in NL)
 → 80,000+ STEM graduates annually
-→ Modern tech stacks (React, Node.js, K8s) — not legacy Java shops
+→ Modern tech stacks (React, Node.js, K8s) - not legacy Java shops
 
 As Werner Vogels (CTO, Amazon) said: *"Outsourcing is not about finding cheap labor. It's about accessing talent pools that don't exist in your geography."*
 

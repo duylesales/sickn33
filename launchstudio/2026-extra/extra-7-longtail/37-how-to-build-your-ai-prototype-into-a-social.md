@@ -1,8 +1,8 @@
-🚨 Julius Ahrens built CrewSync, a construction crew coordination tool, in Munich with Cursor. Crew leads at two pilot companies used it daily and wanted to pay for it. There was just one problem: the "Pro" upgrade was locked visually — but a curious pilot user opened developer tools and unlocked every paid feature without paying a cent. 😳
+🚨 Julius Ahrens built CrewSync, a construction crew coordination tool, in Munich with Cursor. Crew leads at two pilot companies used it daily and wanted to pay for it. There was just one problem: the "Pro" upgrade was locked visually - but a curious pilot user opened developer tools and unlocked every paid feature without paying a cent. 😳
 
 A "Subscribe" button that isn't wired to a processor is a UI element, not a monetization feature. 🧠
 
-❌ Premium features were gated by a frontend flag only — no server-side check confirming anyone had actually paid
+❌ Premium features were gated by a frontend flag only - no server-side check confirming anyone had actually paid
 ❌ Anyone could flip a local variable in developer tools and unlock every paid feature for free
 ❌ No payment processor was actually wired up behind the pricing page
 ❌ No receipts, failed-payment handling, or cancellation logic existed yet

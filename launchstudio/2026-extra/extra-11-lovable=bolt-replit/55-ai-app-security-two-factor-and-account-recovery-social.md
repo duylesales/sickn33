@@ -1,4 +1,4 @@
-🚨 Erik Vlietstra ran Salarisplan in Lovable: a payroll-preparation tool for 11 accountancy practices around Zwolle holding employee salaries and IBAN details. When a client employee's mobile phone was stolen, Salarisplan lacked Two-Factor Authentication recovery flows and session revocation — forcing Erik into an emergency manual database intervention while fearing payroll data manipulation. 😳
+🚨 Erik Vlietstra ran Salarisplan in Lovable: a payroll-preparation tool for 11 accountancy practices around Zwolle holding employee salaries and IBAN details. When a client employee's mobile phone was stolen, Salarisplan lacked Two-Factor Authentication recovery flows and session revocation - forcing Erik into an emergency manual database intervention while fearing payroll data manipulation. 😳
 
 Two-Factor Authentication is only half the battle. If your account recovery flow is weak, attackers bypass 2FA entirely: 🧠
 

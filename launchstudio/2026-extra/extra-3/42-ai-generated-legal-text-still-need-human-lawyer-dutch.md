@@ -55,7 +55,7 @@ Het gebruiken van AI om een solide eerste concept te genereren is een oprecht re
 
 [LaunchStudio](https://launchstudio.eu/nl/) markeert deze kloof specifiek tijdens bredere lanceringvoorbereidingsgesprekken, waarbij het technische AVG-architectuurwerk van oprichters wordt verbonden met de afzonderlijke vraag of hun juridische documentatie dit nauwkeurig weerspiegelt. De uiteindelijke juridische beoordeling blijft echter de specifieke expertise van een gekwalificeerde jurist, afzonderlijk van Manifera's eigen op techniek gerichte omvang.
 
-[Zorg ervoor dat uw juridische documenten daadwerkelijk overeenkomen met wat uw product doet](https://launchstudio.eu/nl/#contact) — dezelfde "ziet er klaar uit, is niet geverifieerd"-kloof geldt hier ook.
+[Zorg ervoor dat uw juridische documenten daadwerkelijk overeenkomen met wat uw product doet](https://launchstudio.eu/nl/#contact) - dezelfde "ziet er klaar uit, is niet geverifieerd"-kloof geldt hier ook.
 
 ## Een controlelijst voor elk juridisch document dat een AI-model voor u opgesteld zou kunnen hebben
 
@@ -83,8 +83,8 @@ Het door AI gegenereerde privacybeleid bevatte een specifieke claim dat gebruike
 
 **Resultaat:** LaunchStudio markeerde de wanverhouding tijdens een bredere technische beoordeling, wat Sophie ertoe aanzette het privacybeleid professioneel te laten beoordelen en corrigeren om TeamCheck's echte verwijderingstermijn nauwkeurig te weerspiegelen. Tegelijkertijd werd het technische werk afgebakend om echte snellere verwijderingscapaciteit te bouwen die overeenkwam met wat het gecorrigeerde beleid nu beloofde – waarmee de kloof aan zowel de juridische als de technische kant samen werd opgelost.
 
-> *"Het privacybeleid klonk exact zoals een echt privacybeleid zou moeten klinken, wat precies het probleem is — het was nooit bij me opgekomen om te controleren of wat het zei overeenkwam met wat mijn product daadwerkelijk kon doen. Het kon het oprecht niet, totdat iemand wees op de wanverhouding."*
-> — **Sophie Kramer, Oprichter, TeamCheck (Zwolle)**
+> *"Het privacybeleid klonk exact zoals een echt privacybeleid zou moeten klinken, wat precies het probleem is - het was nooit bij me opgekomen om te controleren of wat het zei overeenkwam met wat mijn product daadwerkelijk kon doen. Het kon het oprecht niet, totdat iemand wees op de wanverhouding."*
+> - **Sophie Kramer, Oprichter, TeamCheck (Zwolle)**
 
 **Kosten en tijdlijn:** € 600 (identificatie van wanverhouding en technische afbakening); afzonderlijke juridische beoordeling onafhankelijk geregeld.
 
@@ -122,7 +122,7 @@ Wanneer de onderliggende gegevensverwerking of technische architectuur van het p
       "name": "Mag AI niet gebruikt worden voor privacybeleid en algemene voorwaarden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jawel — een door AI gegeneerd concept is een efficiënt begin; de fout is het te publiceren zonder jurist."
+        "text": "Jawel - een door AI gegeneerd concept is een efficiënt begin; de fout is het te publiceren zonder jurist."
       }
     },
     {

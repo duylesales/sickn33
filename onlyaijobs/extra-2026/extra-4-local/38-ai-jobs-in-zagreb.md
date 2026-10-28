@@ -99,11 +99,11 @@ Croatian is the language of daily life and many local organisations. In tech com
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Zagreb you will find few or no local vacancies there today. Use Croatian job portals, FER career events, company career pages and community channels as primary sources. OnlyAIJobs is useful if you are considering working in the Netherlands later — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by AI category and real commute. Croatian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Zagreb you will find few or no local vacancies there today. Use Croatian job portals, FER career events, company career pages and community channels as primary sources. OnlyAIJobs is useful if you are considering working in the Netherlands later - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by AI category and real commute. Croatian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## What Makes Zagreb's Tech Success Stories Instructive
 
-The success of Zagreb's tech companies offers lessons for graduates. Many were founded by engineers who focused on a hard technical problem — recognising handwritten maths, scanning documents reliably on a phone, building powerful electric drivetrains — and built world-class solutions from a small country. This culture values technical depth, persistence and building products for global markets from day one. For graduates, joining such companies means learning from people who have done exactly that, and absorbing a mindset that is valuable wherever your career takes you.
+The success of Zagreb's tech companies offers lessons for graduates. Many were founded by engineers who focused on a hard technical problem - recognising handwritten maths, scanning documents reliably on a phone, building powerful electric drivetrains - and built world-class solutions from a small country. This culture values technical depth, persistence and building products for global markets from day one. For graduates, joining such companies means learning from people who have done exactly that, and absorbing a mindset that is valuable wherever your career takes you.
 
 These companies also demonstrate that ML expertise in Croatia is not limited to services for foreign clients. Computer vision, on-device ML, conversational AI and battery analytics developed in Zagreb are used by millions of people worldwide.
 
@@ -121,11 +121,11 @@ The electric vehicle sector near Zagreb offers distinctive work for ML graduates
 
 ## Your First Two Years
 
-Focus your first two years on building strong foundations: clean code, testing, version control and working with experienced engineers who review your work. Learn how models reach production and how they are monitored. Develop one area of depth — computer vision, NLP, time series or MLOps — while maintaining breadth. Ask for regular feedback and document what you build. These habits will make your next career step much easier, whether you stay in Zagreb or move elsewhere.
+Focus your first two years on building strong foundations: clean code, testing, version control and working with experienced engineers who review your work. Learn how models reach production and how they are monitored. Develop one area of depth - computer vision, NLP, time series or MLOps - while maintaining breadth. Ask for regular feedback and document what you build. These habits will make your next career step much easier, whether you stay in Zagreb or move elsewhere.
 
 ## Staying in Croatia or Moving Abroad
 
-Many Croatian graduates consider moving abroad for higher salaries. Remote work and the growth of local tech companies have made staying more attractive than in the past. For a first job, in-person mentoring in a strong local team is often more valuable than a higher salary abroad. Later, you can compare concrete offers based on net pay, cost of living, career growth and quality of life. Some Croatian engineers work abroad for a few years and return with valuable experience — a path that Zagreb's growing ecosystem increasingly rewards.
+Many Croatian graduates consider moving abroad for higher salaries. Remote work and the growth of local tech companies have made staying more attractive than in the past. For a first job, in-person mentoring in a strong local team is often more valuable than a higher salary abroad. Later, you can compare concrete offers based on net pay, cost of living, career growth and quality of life. Some Croatian engineers work abroad for a few years and return with valuable experience - a path that Zagreb's growing ecosystem increasingly rewards.
 
 ## Conversational AI and Communications
 
@@ -133,11 +133,11 @@ Communications platforms process enormous volumes of messages across SMS, chat a
 
 ## Computer Vision on Mobile Devices
 
-Zagreb has notable expertise in computer vision that runs directly on phones and in browsers. This requires models that are accurate yet small and fast, robust to varied lighting, angles and devices, and privacy-preserving because data may not leave the device. Graduates who work in this field learn model compression, efficient architectures, deployment on mobile hardware and rigorous testing across many device types — skills that are valuable in many industries, from fintech to healthcare.
+Zagreb has notable expertise in computer vision that runs directly on phones and in browsers. This requires models that are accurate yet small and fast, robust to varied lighting, angles and devices, and privacy-preserving because data may not leave the device. Graduates who work in this field learn model compression, efficient architectures, deployment on mobile hardware and rigorous testing across many device types - skills that are valuable in many industries, from fintech to healthcare.
 
 ## Reading Job Postings Critically
 
-Graduate postings vary in quality. Strong postings describe the product, the team, the technologies and the learning path, and increasingly include salary ranges — something the EU Pay Transparency Directive will make standard across the EU. Signals of a good junior role include mentoring, code review and clear onboarding. If a junior posting demands years of experience with many advanced tools, ask what is actually expected in the first months.
+Graduate postings vary in quality. Strong postings describe the product, the team, the technologies and the learning path, and increasingly include salary ranges - something the EU Pay Transparency Directive will make standard across the EU. Signals of a good junior role include mentoring, code review and clear onboarding. If a junior posting demands years of experience with many advanced tools, ask what is actually expected in the first months.
 
 ## Living in Zagreb
 

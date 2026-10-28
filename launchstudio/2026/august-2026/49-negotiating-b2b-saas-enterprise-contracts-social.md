@@ -1,4 +1,4 @@
-🔥 Liam built a prototype using **Bolt** — liam, a saas founder, used **bolt** to build a forecaster app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Liam built a prototype using **Bolt** - liam, a saas founder, used **bolt** to build a forecaster app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Liam's application achieved silky-smooth performance: Signed a €75,000 annual contract, opening B2B enterprise sales channels. (€5,200 (Private Cloud Migration) — production-ready and deployed in 10 business days.). 🚀
+Liam's application achieved silky-smooth performance: Signed a €75,000 annual contract, opening B2B enterprise sales channels. (€5,200 (Private Cloud Migration) - production-ready and deployed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/negotiating-b2b-saas-enterprise-contracts
 

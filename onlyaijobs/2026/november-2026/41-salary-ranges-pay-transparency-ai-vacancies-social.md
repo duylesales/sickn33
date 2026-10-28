@@ -4,9 +4,9 @@
 
 💰 AI roles make this harder than average: market premiums, inconsistent titles and differences created by individual negotiation.
 
-✅ Before publishing a range, compare it with what current employees in comparable roles earn. Many employers discover unexplained differences at exactly that moment — better then than in a reporting cycle.
+✅ Before publishing a range, compare it with what current employees in comparable roles earn. Many employers discover unexplained differences at exactly that moment - better then than in a reporting cycle.
 
-📢 Post your vacancy — first listing free: info@onlyaijobs.eu
+📢 Post your vacancy - first listing free: info@onlyaijobs.eu
 
 📖 Read the full story: https://onlyaijobs.eu/blog/salary-ranges-pay-transparency-ai-vacancies
 

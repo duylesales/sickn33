@@ -30,7 +30,7 @@ Beide fouten zijn op hun eigen manier kostbaar. Maar de kernbeslissing draait om
 
 De berekening die mensen intuïtief maken: een paar losse agency-facturen per jaar afzetten tegen een bruto maandsalaris. De berekening die ze vergeten: wat het in dienst nemen van personeel in Nederland daadwerkelijk kost en juridisch met zich meebrengt.
 
-Het bruto maandsalaris is slechts het zichtbare topje van de ijsberg. Daarbovenop komen 8% vakantiegeld, pensioenpremies, werkgeversheffingen (sociale verzekeringen), doorbetaling bij vakantie en ziekte (de wettelijke loondoorbetalingsplicht van twee jaar bij ziekte!), hardware, softwarelicenties en de administratieve kosten van loonverwerking. De totale werkgeverslasten liggen substantieel hoger dan het brutoloon — een vermenigvuldigingsfactor die je eerst met je boekhouder moet doorspreken voordat je een vacature plaatst.
+Het bruto maandsalaris is slechts het zichtbare topje van de ijsberg. Daarbovenop komen 8% vakantiegeld, pensioenpremies, werkgeversheffingen (sociale verzekeringen), doorbetaling bij vakantie en ziekte (de wettelijke loondoorbetalingsplicht van twee jaar bij ziekte!), hardware, softwarelicenties en de administratieve kosten van loonverwerking. De totale werkgeverslasten liggen substantieel hoger dan het brutoloon - een vermenigvuldigingsfactor die je eerst met je boekhouder moet doorspreken voordat je een vacature plaatst.
 
 En dan zijn er nog de juridische verplichtingen. Het Nederlandse arbeidsrecht kent opzegtermijnen, een sterke ontslagbescherming die een formele route via het UWV of de kantonrechter vereist, en in veel gevallen een transitievergoeding bij beëindiging. Iemand aannemen is een duurzame, wettelijke verbintenis in plaats van een maandelijkse operationele uitgave die je naar believen kunt pauzeren. Dat is een prima systeem voor een volwassen bedrijf, maar cruciaal om scherp te hebben vóórdat je tekent.
 
@@ -40,7 +40,7 @@ Dit pleit geenszins tégen personeel aannemen. Het pleit tegen aannemen puur als
 
 **Het werk is continu in plaats van met tussenpozen.** Je hebt letterlijk elke week concrete, bedrijfskritische taken voor een software-engineer, niet slechts één projectje per kwartaal. Dit is het allersterkste signaal en de enige betrouwbare voorspeller of een vaste kracht rendabel zal zijn.
 
-**Je zit voortdurend te wachten.** Niet op de code zelf, maar op beschikbaarheid — het eerstvolgende vrije gaatje in de agenda van een freelance ontwikkelaar of de planning van een bureau. Als wachttijd je daadwerkelijk klanten of omzetkansen kost, is dat een reële bedrijfsschade die een eigen medewerker oplost.
+**Je zit voortdurend te wachten.** Niet op de code zelf, maar op beschikbaarheid - het eerstvolgende vrije gaatje in de agenda van een freelance ontwikkelaar of de planning van een bureau. Als wachttijd je daadwerkelijk klanten of omzetkansen kost, is dat een reële bedrijfsschade die een eigen medewerker oplost.
 
 **Contextoverdracht is de bottleneck geworden.** Elk extern project begint opnieuw met het uitleggen van je product, datamodel en zakelijke context. Zodra die uitleg meer tijd en geld kost dan de daadwerkelijke bouw, is continuïteit goud waard.
 
@@ -50,7 +50,7 @@ Dit pleit geenszins tégen personeel aannemen. Het pleit tegen aannemen puur als
 
 ## Signalen dat het nu nog te vroeg is
 
-**Het werk arriveert in pieken en dalen.** Een grote release, dan drie rustige maanden, en dan weer een feature. Een vaste ontwikkelaar zit dan duimen te draaien of je gaat taken verzinnen om hem bezig te houden — beide situaties zijn vele malen duurder dan betalen voor gerichte pieken.
+**Het werk arriveert in pieken en dalen.** Een grote release, dan drie rustige maanden, en dan weer een feature. Een vaste ontwikkelaar zit dan duimen te draaien of je gaat taken verzinnen om hem bezig te houden - beide situaties zijn vele malen duurder dan betalen voor gerichte pieken.
 
 **Je wilt primair geld besparen.** Zoals uitgelegd: bij een wisselend werkaanbod levert het vrijwel nooit een besparing op.
 
@@ -64,11 +64,11 @@ Dit pleit geenszins tégen personeel aannemen. Het pleit tegen aannemen puur als
 
 De keuze is zelden zwart-wit tussen een losse factuur of een fulltime werknemer. Er bestaan drie uitstekende tussenwegen:
 
-**Een vaste serviceovereenkomst (retainer) met het team dat de app lanceerde.** Een vast maandbedrag voor een afgesproken aantal uren aandacht — onderhoud, kleine aanpassingen, snelle beschikbaarheid bij storingen. Wel de continuïteit, niet de werkgeversrisico's. LaunchStudio's managed hosting vanaf € 49 per maand dekt het operationele fundament; grotere retainers dekken actieve ontwikkelcapaciteit.
+**Een vaste serviceovereenkomst (retainer) met het team dat de app lanceerde.** Een vast maandbedrag voor een afgesproken aantal uren aandacht - onderhoud, kleine aanpassingen, snelle beschikbaarheid bij storingen. Wel de continuïteit, niet de werkgeversrisico's. LaunchStudio's managed hosting vanaf € 49 per maand dekt het operationele fundament; grotere retainers dekken actieve ontwikkelcapaciteit.
 
 **Een parttime werknemer.** Twee of drie dagen per week werken is in Nederland volstrekt geaccepteerd en sluit bij een vroege SaaS vaak veel beter aan op de daadwerkelijke werklast dan een 40-urige werkweek.
 
-**Een 'fractional CTO' of technisch adviseur.** Een ervaren software-architect voor bijvoorbeeld één dag per maand, die meedenkt over datamodellen, architectuur en code-audits — terwijl de daadwerkelijke schermen worden gebouwd door externe ontwikkelaars of door jouzelf in Lovable.
+**Een 'fractional CTO' of technisch adviseur.** Een ervaren software-architect voor bijvoorbeeld één dag per maand, die meedenkt over datamodellen, architectuur en code-audits - terwijl de daadwerkelijke schermen worden gebouwd door externe ontwikkelaars of door jouzelf in Lovable.
 
 **Een white-label partner,** indien je zelf een bureau runt: flexibele engineeringcapaciteit die direct klaarstaat wanneer een klantproject erom vraagt, en nul vaste lasten wanneer het rustig is.
 
@@ -80,7 +80,7 @@ Ongeacht de gekozen constructie zijn dit harde randvoorwaarden. Een oprichter di
 
 **Een gedocumenteerde actuele status.** Wat is er gebouwd, hoe verloopt het uitrolproces, welke bekende technische schulden (technical debt) zijn er? Zonder dit document spendeert je nieuwe aanwinst de eerste maand aan archeologisch onderzoek waar je al eens voor hebt betaald.
 
-**Een vlekkeloos deployment-proces.** Een engineer die op dag drie niet veilig naar productie kan releasen, gaat eigen omwegen verzinnen — en die geïmproviseerde omweg wordt vervolgens het vaste uitrolproces van je bedrijf.
+**Een vlekkeloos deployment-proces.** Een engineer die op dag drie niet veilig naar productie kan releasen, gaat eigen omwegen verzinnen - en die geïmproviseerde omweg wordt vervolgens het vaste uitrolproces van je bedrijf.
 
 **Een heldere koers voor de eerste zes maanden.** Geen tot in detail uitgewerkte roadmap, maar een duidelijke zakelijke richting, zodat de eerste architectuurkeuzes van de engineer naar het juiste doel toewerken.
 
@@ -88,7 +88,7 @@ Ongeacht de gekozen constructie zijn dit harde randvoorwaarden. Een oprichter di
 
 Het klassieke dilemma van de niet-technische oprichter heeft beproefde oplossingen:
 
-**Huur technische beoordelingskracht in.** Betaal een ervaren software-architect — bij voorkeur iemand die jouw codebase al kent — om samen met jou de sollicitatiegesprekken te voeren. Een dagdeel advies is spotgoedkoop vergeleken met de kosten van een verkeerde aanname.
+**Huur technische beoordelingskracht in.** Betaal een ervaren software-architect - bij voorkeur iemand die jouw codebase al kent - om samen met jou de sollicitatiegesprekken te voeren. Een dagdeel advies is spotgoedkoop vergeleken met de kosten van een verkeerde aanname.
 
 **Gebruik een betaalde praktijkopdracht.** Laat de kandidaat een reële, kleine taak uit jouw eigen backlog bouwen tegen diens normale uurtarief. Dit vertelt je alles over communicatie, werksnelheid, scope-discipline en of het resultaat echt functioneert.
 
@@ -104,7 +104,7 @@ Drie verschuivingen waar je mentaal op voorbereid moet zijn:
 
 **Codeconventies moeten zwart-op-wit.** Een werknemer erft de codebase inclusief al haar eigenaardigheden. Bij een met AI gebouwde app ontbreken formele stijlgidsen vaak nog. Het vooraf vastleggen van standaarden voorkomt dat de code binnen drie maanden alle kanten op waait.
 
-**Jouw eigen rol transformeert.** Oprichters merken vaak dat ze zelf stoppen met knutselen in Lovable en transformeren naar degene die bepaalt wát er gebouwd moet worden en de zakelijke prioriteiten bewaakt. Dat past bij de ene persoon fantastisch en frustreert de ander — het is goed om te weten welk type jij bent vóórdat je iemand aanneemt.
+**Jouw eigen rol transformeert.** Oprichters merken vaak dat ze zelf stoppen met knutselen in Lovable en transformeren naar degene die bepaalt wát er gebouwd moet worden en de zakelijke prioriteiten bewaakt. Dat past bij de ene persoon fantastisch en frustreert de ander - het is goed om te weten welk type jij bent vóórdat je iemand aanneemt.
 
 ## Een solide fundament leggen voor beide routes
 
@@ -112,13 +112,13 @@ Of je nu besluit aan te nemen of voorlopig doorgaat met projectmatige ondersteun
 
 Dat is exact wat LaunchStudio standaard oplevert bij het afronden van een project: de repository en accounts zijn en blijven 100% van jou, een helder overdrachtsdocument over wat er is gebouwd en waarom, een runbook voor deployments, rollbacks en back-up herstel, een overzicht van API-secrets en een eerlijke lijst van bekende aandachtspunten. Dat is tevens de reden waarom oprichters die later wél een developer aannemen melden dat de inwerktijd uitzonderlijk kort was.
 
-Achter LaunchStudio staat Manifera, met elf jaar ervaring in software engineering voor opdrachtgevers zoals Vodafone, TNO en CFLW, vanuit Amsterdam, Singapore en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) en we vertellen je eerlijk of jouw werkvolume al een vaste aanname rechtvaardigt — soms is dat overduidelijk het geval — doorgaans binnen één werkdag, of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
+Achter LaunchStudio staat Manifera, met elf jaar ervaring in software engineering voor opdrachtgevers zoals Vodafone, TNO en CFLW, vanuit Amsterdam, Singapore en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) en we vertellen je eerlijk of jouw werkvolume al een vaste aanname rechtvaardigt - soms is dat overduidelijk het geval - doorgaans binnen één werkdag, of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
 
 ## Netjes overdragen met wie het tot nu toe bouwde
 
 Wanneer je besluit een vaste engineer aan te nemen, is er een overgangstraject met de externe partij die jouw app tot dusver heeft ondersteund. Oprichters pakken dit soms onhandig aan door niets te zeggen totdat de nieuwe collega op de stoep staat.
 
-**Licht hen in vóórdat je de vacature publiceert.** Niet alleen uit beleefdheid, maar uit puur eigenbelang. Een leverancier die via LinkedIn ontdekt dat hij wordt vervangen, heeft weinig motivatie om tijd te steken in een vlekkeloze documentatie en overdracht — terwijl die overdracht voor jou van levensbelang is.
+**Licht hen in vóórdat je de vacature publiceert.** Niet alleen uit beleefdheid, maar uit puur eigenbelang. Een leverancier die via LinkedIn ontdekt dat hij wordt vervangen, heeft weinig motivatie om tijd te steken in een vlekkeloze documentatie en overdracht - terwijl die overdracht voor jou van levensbelang is.
 
 **Vraag hen om te helpen bij de werving.** De partij die jouw applicatie van binnen en buiten kent, kan kandidaten technisch doorzagen op een niveau dat jij zelf niet kunt. De meesten doen dit graag tegen een billijke vergoeding.
 
@@ -138,14 +138,14 @@ Vóórdat ze de vacature online zette, nam ze een avond de tijd om het technisch
 
 Een fulltime softwareontwikkelaar had het grootste deel van het jaar duimen zitten draaien, en Marloes zou krampachtig niet-essentiële features hebben verzonnen om diegene aan het werk te houden.
 
-Wat ze in plaats daarvan regelde: managed hosting en 24/7 monitoring voor de operationele rust, een bescheiden retainer met het team dat haar applicatie kende voor periodieke updates en snelle hulp, en een senior technisch adviseur voor één dag per maand om architectuurkeuzes mee te bespreken — wat precies haar grootste zorg wegnam, namelijk het in haar eentje nemen van ingewikkelde databasebeslissingen.
+Wat ze in plaats daarvan regelde: managed hosting en 24/7 monitoring voor de operationele rust, een bescheiden retainer met het team dat haar applicatie kende voor periodieke updates en snelle hulp, en een senior technisch adviseur voor één dag per maand om architectuurkeuzes mee te bespreken - wat precies haar grootste zorg wegnam, namelijk het in haar eentje nemen van ingewikkelde databasebeslissingen.
 
 Veertien maanden later was de situatie wezenlijk veranderd: twee grote zorginstellingen sloten zich aan, er was een complexe koppeling met een elektronisch patiëntendossier (EPD) vereist en haar product-roadmap bood werk voor een vol jaar. Pas op dat moment nam ze haar eerste vaste engineer aan, die terechtkwam in een gedocumenteerd systeem met een werkend deployment-proces en alle accounts keurig op naam van de praktijk.
 
 **Resultaat:** de nieuwe developer release-de zijn eerste feature al in week één. Marloes berekende achteraf dat het jaar werken met een retainer en managed hosting haar duizenden euro's minder had gekost dan het jaarsalaris met werkgeverslasten waaraan ze zich bijna te vroeg had verbonden.
 
 > *"Ik stond op het punt iemand aan te nemen die vooral zat te wachten tot ik weer iets nieuws bedacht. Het uitschrijven van wat er feitelijk week voor week was gebeurd kostte me een uur en bespaarde me een jaar aan betaald duimendraaien."*
-> — **Marloes Timmerman, Oprichter, Praktijkbeheer (Arnhem)**
+> - **Marloes Timmerman, Oprichter, Praktijkbeheer (Arnhem)**
 
 **Kosten & Doorlooptijd:** € 49/maand managed hosting plus een flexibele retainer, gedurende veertien maanden, vóórdat haar eerste vaste engineer in dienst trad.
 

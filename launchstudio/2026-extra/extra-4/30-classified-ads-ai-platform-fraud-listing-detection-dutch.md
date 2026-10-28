@@ -79,9 +79,9 @@ LaunchStudio's ingenieurs bouwden een lichte fraudemarkeringslaag in Tweedehands
 **Resultaat:** TweedehandsLokaal vangt nu ongeveer een dozijn verdachte advertenties per maand op voordat ze ooit live gaan. Ruben heeft nul meldingen gehad van het terugkeren van het patroon met prijzen onder de marktwaarde sinds de herstelling werd verzonden.
 
 > *"Ik bouwde de onderdelen van het platform die ik me kon voorstellen – plaats een advertentie, stuur een koper een bericht. Ik had me de oplichting nooit voorgesteld totdat deze al twee dagen had gedraaid. LaunchStudio bouwde het gedeelte waar ik niet van wist dat ik er om moest vragen."*
-> — **Ruben Peeters, Oprichter, TweedehandsLokaal (Venray)**
+> - **Ruben Peeters, Oprichter, TweedehandsLokaal (Venray)**
 
-**Kosten en tijdlijn:** € 1.400 (regel-engine voor fraudemarkering, beoordelingswachtrij, en categorieprijs-benchmarking) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (regel-engine voor fraudemarkering, beoordelingswachtrij, en categorieprijs-benchmarking) - voltooid in 7 werkdagen.
 
 ---
 

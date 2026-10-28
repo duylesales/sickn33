@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-"How much will hosting cost when we grow?" is a question founders ask investors, co-founders and themselves — and rarely get a straight answer to. The honest answer is that AI application scalability costs depend more on how the app is built than on how many users it has. Two SaaS products with the same number of users can differ tenfold in monthly bills. Still, the line items and the way they grow are predictable, and understanding them at 1,000 users prevents surprises at 100,000.
+"How much will hosting cost when we grow?" is a question founders ask investors, co-founders and themselves - and rarely get a straight answer to. The honest answer is that AI application scalability costs depend more on how the app is built than on how many users it has. Two SaaS products with the same number of users can differ tenfold in monthly bills. Still, the line items and the way they grow are predictable, and understanding them at 1,000 users prevents surprises at 100,000.
 
 The figures below are rough orders of magnitude for a typical B2B or prosumer SaaS built with Lovable, Bolt, Cursor or Replit on managed services. Your numbers will differ; the pattern usually does not.
 
@@ -31,13 +31,13 @@ The figures below are rough orders of magnitude for a typical B2B or prosumer Sa
 - **Database:** plan tier, compute size, storage, backups, read replicas.
 - **File storage and bandwidth:** uploads, images, exports, CDN traffic.
 - **Email and SMS:** transactional messages per user action.
-- **Third-party APIs:** AI models, maps, data providers — often per call.
+- **Third-party APIs:** AI models, maps, data providers - often per call.
 - **Monitoring and logging:** priced by events or data volume.
 - **Payments:** a percentage or fee per transaction (usually the largest, but tied to revenue).
 
 ## At 1,000 Users: Almost Everything Fits in Starter Plans
 
-At a thousand registered users, with perhaps a few hundred active each week, most apps run comfortably on entry-level paid plans. Infrastructure typically costs tens of euros to low hundreds per month. The biggest risk at this stage is not cost but a single inefficiency — an unmetered AI endpoint or a polling loop — that turns a €40 bill into €900 overnight.
+At a thousand registered users, with perhaps a few hundred active each week, most apps run comfortably on entry-level paid plans. Infrastructure typically costs tens of euros to low hundreds per month. The biggest risk at this stage is not cost but a single inefficiency - an unmetered AI endpoint or a polling loop - that turns a €40 bill into €900 overnight.
 
 **What to set up now:** budget alerts on every provider, per-user limits on paid API calls, and basic monitoring of which endpoints are called most.
 
@@ -120,7 +120,7 @@ The first three often cut bills substantially within days.
 
 ## Reading Provider Bills Effectively
 
-Provider bills are organised by technical units — function invocations, GB-hours, egress, read units — that do not map neatly to features. Tag or label resources where providers allow it, correlate spikes with releases and campaigns, and use provider cost explorers to find the top few cost drivers. When a line jumps, ask what changed that week: a new feature, a bot, a misconfigured job?
+Provider bills are organised by technical units - function invocations, GB-hours, egress, read units - that do not map neatly to features. Tag or label resources where providers allow it, correlate spikes with releases and campaigns, and use provider cost explorers to find the top few cost drivers. When a line jumps, ask what changed that week: a new feature, a bot, a misconfigured job?
 
 ## Budget Alerts and Hard Limits
 
@@ -132,11 +132,11 @@ At the largest stage in this article, architecture choices matter: read replicas
 
 ## Pricing Your Product With Costs in Mind
 
-Your own pricing should reflect cost drivers. If AI features dominate costs, consider usage-based limits per plan. If storage dominates, set storage limits or charge for extra. If support dominates, invest in self-service. Aligning pricing with cost drivers keeps margins healthy as heavy users grow — and gives you room to invest in the product.
+Your own pricing should reflect cost drivers. If AI features dominate costs, consider usage-based limits per plan. If storage dominates, set storage limits or charge for extra. If support dominates, invest in self-service. Aligning pricing with cost drivers keeps margins healthy as heavy users grow - and gives you room to invest in the product.
 
 ## When to Negotiate With Providers
 
-Once monthly spend with a provider becomes significant, ask about committed-use discounts, startup programmes or annual plans. Many providers offer credits to young companies. Negotiation is easier with clear usage data and forecasts — another reason to maintain the cost model above.
+Once monthly spend with a provider becomes significant, ask about committed-use discounts, startup programmes or annual plans. Many providers offer credits to young companies. Negotiation is easier with clear usage data and forecasts - another reason to maintain the cost model above.
 
 ## Cost Traps Specific to AI-Built Apps
 
@@ -148,7 +148,7 @@ At larger scales, the biggest costs are often people: support, operations and en
 
 ## Presenting Costs to Investors
 
-Investors look at gross margin and how it evolves with scale. A clear slide showing infrastructure and third-party costs per active user at current scale, the main drivers and planned optimisations demonstrates control. Founders who can explain why cost per user will fall — and show evidence from past optimisations — make a stronger case than those who present revenue alone.
+Investors look at gross margin and how it evolves with scale. A clear slide showing infrastructure and third-party costs per active user at current scale, the main drivers and planned optimisations demonstrates control. Founders who can explain why cost per user will fall - and show evidence from past optimisations - make a stronger case than those who present revenue alone.
 
 ## A Quarterly Cost Review Routine
 
@@ -164,11 +164,11 @@ Export last month's invoices from every provider, divide the total by your weekl
 
 ## Summary for Founders
 
-At 1,000 users, set up alerts and watch for single inefficiencies. At 10,000, fix the patterns that AI-generated code tends to repeat — polling, unindexed queries, heavy images, unmetered APIs. At 100,000, make architecture decisions based on measured costs. At every stage, track cost per active user; it tells you whether growth is making your product stronger or weaker.
+At 1,000 users, set up alerts and watch for single inefficiencies. At 10,000, fix the patterns that AI-generated code tends to repeat - polling, unindexed queries, heavy images, unmetered APIs. At 100,000, make architecture decisions based on measured costs. At every stage, track cost per active user; it tells you whether growth is making your product stronger or weaker.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's cost reviews look at exactly these items in AI-built apps — queries, images, caching, jobs, API metering and logging — and fix the ones that drive the bill, while managed hosting at €49 per month keeps an eye on usage afterwards. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience running production systems for clients such as Vodafone, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/). Provider pricing pages such as [Supabase's](https://supabase.com/pricing) show how usage-based tiers are structured.
+LaunchStudio's cost reviews look at exactly these items in AI-built apps - queries, images, caching, jobs, API metering and logging - and fix the ones that drive the bill, while managed hosting at €49 per month keeps an eye on usage afterwards. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience running production systems for clients such as Vodafone, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/). Provider pricing pages such as [Supabase's](https://supabase.com/pricing) show how usage-based tiers are structured.
 
 [Calculate what an optimisation project would cost](https://launchstudio.eu/en/#calculator), or send us last month's bill.
 
@@ -185,9 +185,9 @@ Over twelve business days, LaunchStudio's engineers replaced polling with filter
 **Result:** Monthly infrastructure costs fell to about €520 while users kept growing, and cost per active user dropped by roughly 80%. Lunchlijst passed 20,000 users with infrastructure well under 5% of revenue.
 
 > *"Every new company made us a little less profitable, and I thought that was just what scaling felt like. It was five fixable habits in the code."*
-> — **Mees van Rijn, Founder, Lunchlijst (Amsterdam)**
+> - **Mees van Rijn, Founder, Lunchlijst (Amsterdam)**
 
-**Cost & Timeline:** €3,600 (Launch & Grow package: cost review, performance fixes, caching, jobs and cost dashboard) — completed in 12 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €3,600 (Launch & Grow package: cost review, performance fixes, caching, jobs and cost dashboard) - completed in 12 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -205,11 +205,11 @@ Typically around several thousand to ten thousand users, when usage data shows t
 
 ### How does Manifera approach cost reviews?
 
-By tracing each line item on the bill to code patterns and usage, then fixing the few patterns that drive most of the cost — the same approach used on enterprise systems for over a decade.
+By tracing each line item on the bill to code patterns and usage, then fixing the few patterns that drive most of the cost - the same approach used on enterprise systems for over a decade.
 
 ### Does lower infrastructure cost affect search performance?
 
-Often positively: the same fixes that reduce cost — caching, image optimisation, efficient queries — make pages faster, which helps Core Web Vitals and crawlability.
+Often positively: the same fixes that reduce cost - caching, image optimisation, efficient queries - make pages faster, which helps Core Web Vitals and crawlability.
 
 <script type="application/ld+json">
 {

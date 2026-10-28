@@ -57,11 +57,11 @@ Een correcte herstelling stelt expliciete limieten in – maximale bestandsgroot
 
 Manifera's uithardingswerk voor infrastructuur wordt geleverd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Deel uw prototypelink — we kijken er gratis naar](https://launchstudio.eu/nl/#contact).
+[Deel uw prototypelink - we kijken er gratis naar](https://launchstudio.eu/nl/#contact).
 
 ## Een Complete Upload-Hardening Checklist Opstellen
 
-Alleen het instellen van een maximale bestandsgrootte lost het beveiligingshiaat niet volledig op — een grondige upload-hardening dekt meerdere faalscenario's af die een door AI gegenereerde uploadfunctionaliteit standaard openlaat tenzij er expliciet opdracht voor wordt gegeven.
+Alleen het instellen van een maximale bestandsgrootte lost het beveiligingshiaat niet volledig op - een grondige upload-hardening dekt meerdere faalscenario's af die een door AI gegenereerde uploadfunctionaliteit standaard openlaat tenzij er expliciet opdracht voor wordt gegeven.
 
 **Dwing beperkingen af op de server, in deze strikte volgorde van prioriteit:**
 
@@ -80,7 +80,7 @@ Zelfs een goed geconfigureerde uploadfunctie heeft baat bij een financieel waars
 
 **Denk aan de verwerkingspijplijn achter de opslag**
 
-Als geüploade bestanden verdere achtergrondprocessen triggeren — zoals beeldoptimalisatie, virusscans of AI-analyses — kan een malafide of misvormd bestand onevenredig veel computecapaciteit opslokken of de achtergrondtaak laten crashen. Elke verwerkingspijplijn dient bestanden onafhankelijk te valideren vóórdat de verwerking start. Test vóór de lancering altijd met een doelbewust te groot bestand en een snelle reeks opeenvolgende uploads om te zien of uw systeem netjes overeind blijft.
+Als geüploade bestanden verdere achtergrondprocessen triggeren - zoals beeldoptimalisatie, virusscans of AI-analyses - kan een malafide of misvormd bestand onevenredig veel computecapaciteit opslokken of de achtergrondtaak laten crashen. Elke verwerkingspijplijn dient bestanden onafhankelijk te valideren vóórdat de verwerking start. Test vóór de lancering altijd met een doelbewust te groot bestand en een snelle reeks opeenvolgende uploads om te zien of uw systeem netjes overeind blijft.
 
 ## Echt voorbeeld
 
@@ -93,9 +93,9 @@ Drie dagen na een bescheiden lokale lancering vuurde Julia's hostingfactuur-waar
 **Resultaat:** LaunchStudio implementeerde server-side limieten op bestandsgrootte, typebeperkingen, en snelheidsbeperkingen per gebruiker over elke uploadfunctie in PetPals. Dit sloot de blootstelling zonder te veranderen hoe legitieme foto-uploads werkten voor echte gebruikers.
 
 > *"Ik testte die uploadfunctie met normale telefoonfoto's misschien een dozijn keer. Het was nooit in me opgekomen dat niets iemand tegenhield om in plaats daarvan iets enorms te uploaden."*
-> — **Julia Meijer, Oprichter, PetPals (Alkmaar)**
+> - **Julia Meijer, Oprichter, PetPals (Alkmaar)**
 
-**Kosten en tijdlijn:** € 1.500 (uploadvalidatie en snelheidsbeperking) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.500 (uploadvalidatie en snelheidsbeperking) - voltooid in 5 werkdagen.
 
 ---
 

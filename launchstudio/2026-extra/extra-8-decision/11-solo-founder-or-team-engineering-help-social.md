@@ -12,7 +12,7 @@
 ✅ Fixed-scope engineering closes the gap in weeks, no equity given away
 ✅ You can always hire later, on your own timeline, once the pressure is off
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering experience, we close exactly this kind of bounded gap — no equity, no lengthy search. 🛠️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering experience, we close exactly this kind of bounded gap - no equity, no lengthy search. 🛠️
 
 His result: the real gap closed in 14 business days, he passed his customer's technical review on schedule, and resumed his co-founder search stress-free afterward. 🚀
 

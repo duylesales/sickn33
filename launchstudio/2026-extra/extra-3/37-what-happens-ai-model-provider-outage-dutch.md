@@ -59,7 +59,7 @@ Het bewust simuleren van een langdurige provider-storing – het richten van uw 
 
 [LaunchStudio](https://launchstudio.eu/nl/) test specifiek op het gedrag bij langdurige provider-storingen als onderdeel van een bredere beoordeling van foutafhandeling, onderscheiden van testen op mislukte verzoeken. Dit zorgt ervoor dat producten eerlijk en netjes verslechteren in plaats van verwarrende fouten te herhalen gedurende een heel storingsvenster, ondersteund door Manifera's bredere ervaring in het ontwerpen van veerkracht tegen externe afhankelijkheden buiten de controle van een klant.
 
-[Ontdek wat uw product daadwerkelijk doet tijdens een langdurige storing, voordat er een echte plaatsvindt](https://launchstudio.eu/nl/#calculator) — dit is een afzonderlijke test van algemene foutafhandeling, en de meeste producten hebben deze nooit daadwerkelijk uitgevoerd.
+[Ontdek wat uw product daadwerkelijk doet tijdens een langdurige storing, voordat er een echte plaatsvindt](https://launchstudio.eu/nl/#calculator) - dit is een afzonderlijke test van algemene foutafhandeling, en de meeste producten hebben deze nooit daadwerkelijk uitgevoerd.
 
 ## Een draaiboek voor de reactie van een oprichter bij storingen: De eerste 15 minuten
 
@@ -89,10 +89,10 @@ Tijdens een ongeveer twee uur durende storing bij Sven's AI-provider zagen de ge
 
 **Resultaat:** LaunchStudio implementeerde detectie van storingspatronen en een duidelijke, eerlijke statusmelding specifiek voor langdurige provider-problemen, afzonderlijk van de bestaande foutafhandeling per verzoek. Een toekomstige storing – die enkele maanden later daadwerkelijk opnieuw plaatsvond – produceerde hierdoor een enkele, duidelijke uitleg in plaats van herhaalde, verwarrende individuele foutmeldingen gedurende het gehele venster.
 
-> *"Twee uur lang exact dezelfde onhandige foutmelding, herhaald elke keer dat iemand de functie probeerde te gebruiken, liet het lijken alsof mijn product zelf kapot was in plaats van dat een provider een slechte middag had. De daadwerkelijke oplossing was niet ingewikkeld — het vereiste simpelweg dat iemand specifiek nadacht over het verschil tussen één mislukt verzoek en twee volle uren lang verzoeken die mislukken."*
-> — **Sven Kramer, Oprichter, SupportSchrijver (Alkmaar)**
+> *"Twee uur lang exact dezelfde onhandige foutmelding, herhaald elke keer dat iemand de functie probeerde te gebruiken, liet het lijken alsof mijn product zelf kapot was in plaats van dat een provider een slechte middag had. De daadwerkelijke oplossing was niet ingewikkeld - het vereiste simpelweg dat iemand specifiek nadacht over het verschil tussen één mislukt verzoek en twee volle uren lang verzoeken die mislukken."*
+> - **Sven Kramer, Oprichter, SupportSchrijver (Alkmaar)**
 
-**Kosten en tijdlijn:** € 900 (detectie en berichtgeving bij langdurige storingen) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 900 (detectie en berichtgeving bij langdurige storingen) - voltooid in 3 werkdagen.
 
 ---
 
@@ -136,7 +136,7 @@ Een specifieke, bewust gekozen drempel – meestal een handvol opeenvolgende sto
       "name": "Is een niet-AI terugvaloptie altijd haalbaar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hangt af van het product — sommigen kunnen een vereenvoudigde optie bieden, bij anderen is communicatie het alternatief."
+        "text": "Hangt af van het product - sommigen kunnen een vereenvoudigde optie bieden, bij anderen is communicatie het alternatief."
       }
     },
     {
@@ -152,7 +152,7 @@ Een specifieke, bewust gekozen drempel – meestal een handvol opeenvolgende sto
       "name": "Zou dit probleem opgemerkt zijn door algemene foutafhandeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gedeeltelijk — foutafhandeling per verzoek voorkwam crashes, maar miste patroondetectie voor langdurige uitval."
+        "text": "Gedeeltelijk - foutafhandeling per verzoek voorkwam crashes, maar miste patroondetectie voor langdurige uitval."
       }
     },
     {

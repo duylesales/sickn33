@@ -22,26 +22,26 @@ target_persona: "VP of Engineering"
 
 A resume and a passed coding test tell a VP of Engineering that a candidate can code. They tell almost nothing about whether that developer will still be reliably shipping quality work eight months into a dedicated engagement, which is the actual question that matters.
 
-**The Pain:** A VP of Engineering at a business-services technology firm near IJsselstein — a small Utrecht-corridor municipality within commuting distance of the province's dense business-services cluster — wants to hire dedicated developers to extend the team long-term, and the standard hiring process — resume screen plus a coding exercise — isn't built to predict long-term fit.
+**The Pain:** A VP of Engineering at a business-services technology firm near IJsselstein - a small Utrecht-corridor municipality within commuting distance of the province's dense business-services cluster - wants to hire dedicated developers to extend the team long-term, and the standard hiring process - resume screen plus a coding exercise - isn't built to predict long-term fit.
 
-**The Agitation:** A VP of Engineering who hires purely on resume and a coding test discovers, months in, whether the developer actually communicates well under ambiguity, takes ownership of quality without being asked, and holds up under sustained deadline pressure — all factors a one-time technical screen simply doesn't test for, and all factors that determine whether the hire was actually worth making.
+**The Agitation:** A VP of Engineering who hires purely on resume and a coding test discovers, months in, whether the developer actually communicates well under ambiguity, takes ownership of quality without being asked, and holds up under sustained deadline pressure - all factors a one-time technical screen simply doesn't test for, and all factors that determine whether the hire was actually worth making.
 
 ## A Screening Process That Predicts Long-Term Fit
 
-Hiring dedicated developers for a long-term engagement needs a process that tests for more than isolated technical competence, because the failure modes that actually hurt a long-term relationship are rarely about whether someone can code — they're about communication, ownership, and consistency under pressure.
+Hiring dedicated developers for a long-term engagement needs a process that tests for more than isolated technical competence, because the failure modes that actually hurt a long-term relationship are rarely about whether someone can code - they're about communication, ownership, and consistency under pressure.
 
-The first addition is a structured communication assessment — a live technical discussion where the candidate has to explain a design decision or push back on a flawed requirement, testing for the collaborative reasoning a long-term relationship depends on far more than a solo coding exercise does.
+The first addition is a structured communication assessment - a live technical discussion where the candidate has to explain a design decision or push back on a flawed requirement, testing for the collaborative reasoning a long-term relationship depends on far more than a solo coding exercise does.
 
-The second is a realistic take-home exercise scored explicitly for ownership signals — did the candidate write tests unprompted, document assumptions, flag ambiguity rather than guessing silently — the behaviors that predict whether someone takes responsibility for quality without a manager enforcing it every time.
+The second is a realistic take-home exercise scored explicitly for ownership signals - did the candidate write tests unprompted, document assumptions, flag ambiguity rather than guessing silently - the behaviors that predict whether someone takes responsibility for quality without a manager enforcing it every time.
 
-The third is a reference check focused specifically on sustained performance over time, not just a general character reference — asking a prior manager directly whether performance held steady under deadline pressure across months, not just in a strong first quarter.
+The third is a reference check focused specifically on sustained performance over time, not just a general character reference - asking a prior manager directly whether performance held steady under deadline pressure across months, not just in a strong first quarter.
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** Dutch-based leads apply a standardized long-term-fit screening process — communication assessment, ownership-scored exercises — before any developer is proposed.
+- **Amsterdam (Governance/Strategy):** Dutch-based leads apply a standardized long-term-fit screening process - communication assessment, ownership-scored exercises - before any developer is proposed.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod's engineers are vetted specifically for sustained performance history, not just a strong technical interview moment.
 
-This is Dutch Management × Vietnamese Mastery — a hiring bar built to predict month eight, not just week one. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a hiring bar built to predict month eight, not just week one. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Alpina Business Solutions AG, a business-services technology company based in Zu
 Manifera restructured the client's hiring process around a live communication assessment and an ownership-scored take-home exercise, in addition to the technical screen. The next two developers hired under the new process both demonstrated strong clarifying-question behavior from week one, and the VP of Engineering reported measurably less rework tied to misunderstood requirements.
 
 > *"He could absolutely code. What he couldn't do was tell us when something didn't make sense, and that gap cost us more than a coding mistake ever would have."*
-> — **VP of Engineering, Alpina Business Solutions AG, Switzerland**
+> - **VP of Engineering, Alpina Business Solutions AG, Switzerland**
 
 ## Resume-Plus-Coding-Test vs. Manifera's Long-Term-Fit Screening
 
@@ -66,13 +66,13 @@ Manifera restructured the client's hiring process around a live communication as
 
 ## The Economics
 
-Hiring purely on a resume and a coding test routinely produces a developer who is technically capable but weak on communication or ownership, a gap that typically surfaces as rework and friction months into the engagement rather than in the first week — costing more in accumulated rework than the extra screening time would have. [Talk to Manifera about our long-term-fit hiring standard](https://www.manifera.com/contact-us/).
+Hiring purely on a resume and a coding test routinely produces a developer who is technically capable but weak on communication or ownership, a gap that typically surfaces as rework and friction months into the engagement rather than in the first week - costing more in accumulated rework than the extra screening time would have. [Talk to Manifera about our long-term-fit hiring standard](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering hiring a dedicated developer for a long-term engagement) Why isn't a resume plus a coding test enough to predict long-term fit?
 
-Because it tests isolated technical competence, not communication under ambiguity, ownership of quality without prompting, or consistency under sustained deadline pressure — the factors that actually determine long-term success.
+Because it tests isolated technical competence, not communication under ambiguity, ownership of quality without prompting, or consistency under sustained deadline pressure - the factors that actually determine long-term success.
 
 ### (Scenario: VP of Engineering trying to test for communication skills) How do we assess a candidate's communication ability before hiring?
 
@@ -80,7 +80,7 @@ A live technical discussion where the candidate explains a design decision or pu
 
 ### (Scenario: VP of Engineering worried about hidden ownership gaps) How do we know if a candidate takes ownership of quality without being told to?
 
-Score a take-home exercise explicitly for ownership signals — unprompted testing, documented assumptions, flagged ambiguity — rather than just checking whether the output is functionally correct.
+Score a take-home exercise explicitly for ownership signals - unprompted testing, documented assumptions, flagged ambiguity - rather than just checking whether the output is functionally correct.
 
 ### (Scenario: VP of Engineering trying to verify sustained performance) What should a reference check actually ask to predict long-term reliability?
 

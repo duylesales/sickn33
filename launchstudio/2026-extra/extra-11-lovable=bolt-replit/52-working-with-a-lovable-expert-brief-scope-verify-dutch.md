@@ -28,7 +28,7 @@ Samenwerkingen rondom bestaande code mislukken op een heel andere manier dan gew
 
 Je levert in dit hele traject precies één tastbaar artefact op, en dat is de briefing. Al het overige werk wordt door een ander geproduceerd, en de kwaliteit van wat zij opleveren wordt direct begrensd door de scherpte van wat jij hebt gevraagd.
 
-Een effectieve briefing voor werk aan een bestaand AI-prototype is kort — maximaal een half A4'tje — en beschrijft gewenste *resultaten* in plaats van *activiteiten*. Dat onderscheid is cruciaal: resultaten zijn meetbaar te toetsen, activiteiten niet. "Verbeter de beveiliging" kun je als niet-technische oprichter niet controleren. "Geen enkele ingelogde gebruiker kan records van een andere gebruiker inzien, bewezen met een mislukte testpoging" kun jij binnen vier minuten zelfstandig verifiëren, zonder ook maar één regel code te begrijpen.
+Een effectieve briefing voor werk aan een bestaand AI-prototype is kort - maximaal een half A4'tje - en beschrijft gewenste *resultaten* in plaats van *activiteiten*. Dat onderscheid is cruciaal: resultaten zijn meetbaar te toetsen, activiteiten niet. "Verbeter de beveiliging" kun je als niet-technische oprichter niet controleren. "Geen enkele ingelogde gebruiker kan records van een andere gebruiker inzien, bewezen met een mislukte testpoging" kun jij binnen vier minuten zelfstandig verifiëren, zonder ook maar één regel code te begrijpen.
 
 ## Wat Er Thuis Hoort in de Briefing
 
@@ -58,7 +58,7 @@ Stuur tevens één alinea context mee die geen enkele code toont: waar het produ
 
 **Een bevestigd of bijgesteld plan.** Technische verrassingen zijn normaal in geërfde code. Waar het om gaat is dat een scopemaatregel op dag twee op tafel komt als een gezamenlijk gesprek, en niet op dag twintig als een onverwachte meerwerkfactuur.
 
-**Vroegtijdig iets tastbaars opleveren.** Niet per se een enorme feature — één kleine fix die in de eerste dagen naar staging wordt gedeployed bewijst dat de ontwikkelstraat tussen hun toetsenbord en jouw omgeving vlekkeloos functioneert.
+**Vroegtijdig iets tastbaars opleveren.** Niet per se een enorme feature - één kleine fix die in de eerste dagen naar staging wordt gedeployed bewijst dat de ontwikkelstraat tussen hun toetsenbord en jouw omgeving vlekkeloos functioneert.
 
 Biedt de eerste week geen schriftelijke analyse en niets zichtbaars op staging? Vraag direct waarom. Dat gesprek voeren op dag vier is vele malen goedkoper dan in week drie.
 
@@ -68,7 +68,7 @@ Je gaat geen code reviews doen, en dat hoeft ook helemaal niet. Drie zaken kan e
 
 **Gedrag.** Biedt de applicatie nu het resultaat dat in de briefing stond? Probeer het zelfstandig kapot te maken.
 
-**Toelichting.** Vraag de engineer om in gewone mensentaal uit te leggen wat er is gewijzigd. Een ontwikkelaar die een aanpassing niet zonder vakjargon kan uitleggen, begrijpt het zelf niet diepgaand of doet geen moeite om transparant te zijn — beide zijn een waarschuwingssignaal.
+**Toelichting.** Vraag de engineer om in gewone mensentaal uit te leggen wat er is gewijzigd. Een ontwikkelaar die een aanpassing niet zonder vakjargon kan uitleggen, begrijpt het zelf niet diepgaand of doet geen moeite om transparant te zijn - beide zijn een waarschuwingssignaal.
 
 **Bewijsvoering.** Vraag bij security-werk specifiek om het bewijs vóór en na de ingreep: het verzoek dat voorheen slaagde en data lekte, en exact hetzelfde verzoek dat nu wordt afgewezen met een nette foutmelding.
 
@@ -80,7 +80,7 @@ Koppel betalingen aan verifieerbare resultaten in plaats van aan verstreken kale
 
 Een beproefde structuur voor een project van twee tot drie weken: een eerste mijlpaal bij oplevering van de intake en het definitieve plan, een tweede zodra autorisatieregels en geheimenbeheer aantoonbaar werken, een derde bij livegang op staging inclusief geteste back-ups en monitoring, en een slotbetaling bij de definitieve overdracht met documentatie.
 
-Elke mijlpaal bevat een test die jij zélf kunt uitvoeren. Dat is het hele ontwerpprincipe — een mijlpaal die je niet zelfstandig kunt verifiëren is geen mijlpaal, maar gewoon een datum op de kalender.
+Elke mijlpaal bevat een test die jij zélf kunt uitvoeren. Dat is het hele ontwerpprincipe - een mijlpaal die je niet zelfstandig kunt verifiëren is geen mijlpaal, maar gewoon een datum op de kalender.
 
 ## Resultaten Zelfstandig Verifiëren
 
@@ -97,7 +97,7 @@ Zes controles, één uur werk, en ze valideren de zes zaken die er écht toe doe
 
 ## Communicatie Die Verrassingen Voorkomt
 
-Een korte schriftelijke update twee keer per week — wat is er afgerond, wat staat er op de planning, waar zit een blokkade — is ruim voldoende voor een project van deze omvang. Vraag hier expliciet om, want veel engineers vervallen tijdens het bouwen standaard in radiostilte.
+Een korte schriftelijke update twee keer per week - wat is er afgerond, wat staat er op de planning, waar zit een blokkade - is ruim voldoende voor een project van deze omvang. Vraag hier expliciet om, want veel engineers vervallen tijdens het bouwen standaard in radiostilte.
 
 Twee vuistregels maken dit effectief: blokkades worden gemeld op de dag dat ze ontstaan, niet pas bij de volgende geplande update. En alles wat invloed heeft op scope of opleverdatum wordt schriftelijk vastgelegd, zodat jullie beiden handelen vanuit dezelfde waarheid in plaats van uit vage herinneringen aan een telefoontje.
 
@@ -105,7 +105,7 @@ Twee vuistregels maken dit effectief: blokkades worden gemeld op de dag dat ze o
 
 Drie vroege signalen om direct op in te grijpen:
 
-**De scope begint af te dwalen.** Er duikt werk op waar niemand om heeft gevraagd — een refactor van werkende modules, een nieuw componentensysteem, een andere database-library. Vraag direct hoe dit bijdraagt aan een specifiek resultaat uit de briefing.
+**De scope begint af te dwalen.** Er duikt werk op waar niemand om heeft gevraagd - een refactor van werkende modules, een nieuw componentensysteem, een andere database-library. Vraag direct hoe dit bijdraagt aan een specifiek resultaat uit de briefing.
 
 **De toelichtingen worden vager.** Helderheid in communicatie neemt vrijwel altijd af vóórdat de kwaliteit van de code keldert.
 
@@ -117,15 +117,15 @@ De reactie is in alle drie de gevallen identiek: plan een kort overleg, zet de o
 
 Een succesvol traject eindigt met tastbare zaken, niet met een bedankje via Slack: alle Git-repositories en cloudaccounts op jouw naam waarbij externe toegangsrechten direct intrekbaar zijn; een overdrachtsdocument met wat er is aangepast en waarom; een runbook voor deployments, rollbacks en back-up herstel; een inventarisatie van alle API-sleutels; een eerlijke lijst met technische schuld die bewust niet is aangepakt; en de verificatie dat het project vlot aanpasbaar blijft in Lovable.
 
-Daarna volgt een afgesproken nazorgperiode — twee weken is de industriestandaard — die vooraf is vastgelegd en niet achteraf hoeft te worden uitonderhandeld.
+Daarna volgt een afgesproken nazorgperiode - twee weken is de industriestandaard - die vooraf is vastgelegd en niet achteraf hoeft te worden uitonderhandeld.
 
 ## Hoe LaunchStudio Dit Inricht
 
-LaunchStudio werkt exact volgens dit strakke stramien, omdat het alle ruis wegneemt die dit soort projecten normaliter doet ontsporen: een schriftelijke intake vóórdat het werk begint, een vaste scope geformuleerd in toetsbare resultaten, behoud van de bestaande Lovable-frontend, mijlpalen gekoppeld aan aantoonbare werking, sluitend bewijs voor alle beveiligingsmaatregelen, en een compleet overdrachtspakket waarbij alle eigendom bij jou blijft — inclusief twee weken garantie en nazorg.
+LaunchStudio werkt exact volgens dit strakke stramien, omdat het alle ruis wegneemt die dit soort projecten normaliter doet ontsporen: een schriftelijke intake vóórdat het werk begint, een vaste scope geformuleerd in toetsbare resultaten, behoud van de bestaande Lovable-frontend, mijlpalen gekoppeld aan aantoonbare werking, sluitend bewijs voor alle beveiligingsmaatregelen, en een compleet overdrachtspakket waarbij alle eigendom bij jou blijft - inclusief twee weken garantie en nazorg.
 
 De engineers zijn van Manifera: elf jaar ervaring met bedrijfskritische softwaresystemen voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. Deze discipline hanteren wij omdat zakelijke opdrachtgevers dit eisen; als solo-oprichter profiteer je van exact dezelfde kwaliteitsstandaard op een compactere schaal.
 
-[Beschrijf je project](https://launchstudio.eu/nl/#contact) en je ontvangt binnen één werkdag een concreet fixed-price voorstel — uitermate geschikt als meetlat om andere ontwikkelaars te briefen. Bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) inhoudt.
+[Beschrijf je project](https://launchstudio.eu/nl/#contact) en je ontvangt binnen één werkdag een concreet fixed-price voorstel - uitermate geschikt als meetlat om andere ontwikkelaars te briefen. Bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) inhoudt.
 
 ## Wanneer Je van Mening Verschilt Met de Engineer
 
@@ -153,14 +153,14 @@ Ze regelde alle accounts vóór de startdatum, maakte twee realistische testacco
 
 De schriftelijke intake arriveerde op dag twee en paste de scope direct aan: het prototype bleek opdrachten uitsluitend in de browser op te slaan en kende nog geen database-persistentie voor herhalende planningen. Het plan werd direct bijgesteld en opnieuw begroot vóórdat er code werd geschreven.
 
-Ze toetste elke mijlpaal zelfstandig — inclusief meekijken bij een hersteltest van de database-back-up, die exact 19 minuten duurde — en voerde zelf een kleine tekstwijdziging door in Lovable vóórdat ze de slotfactuur voldeed.
+Ze toetste elke mijlpaal zelfstandig - inclusief meekijken bij een hersteltest van de database-back-up, die exact 19 minuten duurde - en voerde zelf een kleine tekstwijdziging door in Lovable vóórdat ze de slotfactuur voldeed.
 
 **Resultaat:** de pilot startte stipt op tijd met de vier hoveniersbedrijven, en Sanne bouwde de maand erna zelfstandig twee nieuwe schermen in Lovable zonder dat daar een ontwikkelaar aan te pas hoefde te komen.
 
 > *"De vorige keer vertelde ik in een videocall wat ik ongeveer wilde en hoopte ik op het beste. Deze keer schreef ik negen heldere regels, en elke discussie die we hadden kunnen krijgen was beslecht vóórdat er één regel code werd getypt."*
-> — **Sanne Wouters, Oprichter, Groenplan (Breda)**
+> - **Sanne Wouters, Oprichter, Groenplan (Breda)**
 
-**Kosten & Doorlooptijd:** € 3.600 (database-persistentie, RLS-autorisatie, deployment met staging en back-ups, monitoring, gedocumenteerde overdracht) — afgerond in 13 werkdagen.
+**Kosten & Doorlooptijd:** € 3.600 (database-persistentie, RLS-autorisatie, deployment met staging en back-ups, monitoring, gedocumenteerde overdracht) - afgerond in 13 werkdagen.
 
 ## Veelgestelde vragen
 

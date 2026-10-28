@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Logistics is the Dutch national industry that nobody puts on a poster. A disproportionate share of goods entering Europe passes through Rotterdam, Schiphol or the road corridors that run east from them, and an entire economy of warehouses, forwarders, carriers, terminals and software companies has grown around that flow. It is also an industry with famously thin margins, which is exactly why analytical work here pays for itself so visibly — and why the sector hires people who can optimise rather than merely report.
+Logistics is the Dutch national industry that nobody puts on a poster. A disproportionate share of goods entering Europe passes through Rotterdam, Schiphol or the road corridors that run east from them, and an entire economy of warehouses, forwarders, carriers, terminals and software companies has grown around that flow. It is also an industry with famously thin margins, which is exactly why analytical work here pays for itself so visibly - and why the sector hires people who can optimise rather than merely report.
 
 ## What Supply Chain Data Work Actually Involves
 
@@ -45,7 +45,7 @@ The field divides into recognisable problem families, and most roles sit in one 
 
 **Network design.** Where to place warehouses, which flows to consolidate, which modes to use. Strategic, periodic, and highly consequential.
 
-**Transport planning and routing.** Assigning orders to vehicles and sequencing stops under time windows, capacity, driver rules and traffic — the classic vehicle routing problem, which in practice always arrives with a dozen extra constraints.
+**Transport planning and routing.** Assigning orders to vehicles and sequencing stops under time windows, capacity, driver rules and traffic - the classic vehicle routing problem, which in practice always arrives with a dozen extra constraints.
 
 **Warehouse operations.** Slotting, picking strategies, labour planning, automation control and throughput analysis.
 
@@ -59,9 +59,9 @@ The field divides into recognisable problem families, and most roles sit in one 
 
 The country combines a dense concentration of logistics activity with a long academic tradition in operations research. Dutch universities have produced planning and optimisation research for decades, and the software sector built around it exports planning systems internationally.
 
-That means two things for a candidate. First, there is a real community: conferences, user groups and a professional network where optimisation expertise is respected rather than exotic. Second, expectations are high — employers in this sector have often seen good analytical work before and will ask precise questions about your approach.
+That means two things for a candidate. First, there is a real community: conferences, user groups and a professional network where optimisation expertise is respected rather than exotic. Second, expectations are high - employers in this sector have often seen good analytical work before and will ask precise questions about your approach.
 
-Geographically, the work concentrates around Rotterdam and the port area, Venlo and the southeast corridor, Tilburg and Brabant, Schiphol and its cargo cluster, and the retail head offices in the Randstad — but distribution centres exist everywhere, which makes this one of the more geographically distributed data careers in the country.
+Geographically, the work concentrates around Rotterdam and the port area, Venlo and the southeast corridor, Tilburg and Brabant, Schiphol and its cargo cluster, and the retail head offices in the Randstad - but distribution centres exist everywhere, which makes this one of the more geographically distributed data careers in the country.
 
 ## The Tension That Defines Every Project
 
@@ -99,7 +99,7 @@ The lesson repeats across logistics: the plan must be acceptable to the people e
 
 Data scientists often assume logistics means dashboards and Excel. In reality this is one of the few industries where mathematical optimisation is in production daily, solving problems of genuine complexity, with results measured in fuel, hours and service levels.
 
-The opposite misconception exists among logistics professionals: that machine learning will replace planning systems. It will not. Forecasting and estimation improve the inputs — travel times, demand, handling durations, delay probabilities — while optimisation still makes the decision. The strongest teams combine both, and candidates who understand the division of labour are more useful than specialists in either half alone.
+The opposite misconception exists among logistics professionals: that machine learning will replace planning systems. It will not. Forecasting and estimation improve the inputs - travel times, demand, handling durations, delay probabilities - while optimisation still makes the decision. The strongest teams combine both, and candidates who understand the division of labour are more useful than specialists in either half alone.
 
 ## Skills That Stand Out
 
@@ -113,7 +113,7 @@ The opposite misconception exists among logistics professionals: that machine le
 
 ## How to Build Experience
 
-Build one routing or scheduling project with real-world messiness: use open map data, invent plausible time windows and capacities, and then add the constraints that make it hard — driver breaks, vehicle restrictions, fairness. Report not only the objective value but how you validated feasibility.
+Build one routing or scheduling project with real-world messiness: use open map data, invent plausible time windows and capacities, and then add the constraints that make it hard - driver breaks, vehicle restrictions, fairness. Report not only the objective value but how you validated feasibility.
 
 The second high-value project is a master data audit: take any open dataset with addresses and dimensions, quantify how much of it is wrong, and show what that error does to a plan. Employers recognise this immediately, because it is the problem they live with.
 
@@ -130,35 +130,35 @@ Consultancy is also a well-trodden route: network design and planning studies ar
 - What share of automated plans is manually adjusted, and is that tracked?
 - Who owns master data quality, and how is it measured?
 - Are analysts embedded with planners, or separated from operations?
-- What is the objective function in practice — cost, service, emissions, fairness — and who decides the weights?
+- What is the objective function in practice - cost, service, emissions, fairness - and who decides the weights?
 - How are results verified after implementation rather than estimated beforehand?
 
 ## Warehouse Automation Is Changing the Analytical Job
 
-A decade ago, warehouse analytics meant measuring pick rates and designing slotting strategies for human pickers. Increasingly it means working alongside automation — shuttle systems, autonomous mobile robots, goods-to-person stations and sortation equipment — and the analytical questions change accordingly.
+A decade ago, warehouse analytics meant measuring pick rates and designing slotting strategies for human pickers. Increasingly it means working alongside automation - shuttle systems, autonomous mobile robots, goods-to-person stations and sortation equipment - and the analytical questions change accordingly.
 
 With human pickers, throughput scales roughly with labour and the optimisation target is walking distance. With automation, throughput is bounded by the system's physical capacity, and the questions become: which orders should be released when, how should inventory be distributed across the automated storage to minimise retrieval conflicts, when does a bottleneck shift from picking to packing, and how gracefully does the system degrade when one module fails?
 
 These are simulation and queueing problems as much as optimisation ones, and they must be answered before capital is committed, because an automated warehouse cannot be reconfigured on a Tuesday afternoon.
 
-There is also a workforce dimension that candidates should be prepared for. Automation changes jobs, and analyses that quantify labour savings are read by people whose work is being discussed. Handling that responsibly — being accurate, not overstating, and understanding the works council's role — is part of the professional standard in this sector.
+There is also a workforce dimension that candidates should be prepared for. Automation changes jobs, and analyses that quantify labour savings are read by people whose work is being discussed. Handling that responsibly - being accurate, not overstating, and understanding the works council's role - is part of the professional standard in this sector.
 
 ## Visibility, Exceptions and the Attention Problem
 
 Every logistics organisation eventually builds a control tower: a system that tracks shipments across carriers and parties and flags problems. Almost all of them face the same failure mode, and it has nothing to do with data quality.
 
-The failure is attention. A network of any size produces thousands of deviations daily — a truck delayed twenty minutes, a container gated out late, a temperature reading briefly outside range. Most resolve themselves. Presenting all of them to a planner guarantees that none receives proper attention.
+The failure is attention. A network of any size produces thousands of deviations daily - a truck delayed twenty minutes, a container gated out late, a temperature reading briefly outside range. Most resolve themselves. Presenting all of them to a planner guarantees that none receives proper attention.
 
 The analytical work that actually creates value is therefore triage rather than detection: estimating which deviations will still matter in four hours, which have a customer consequence, and which can be resolved automatically. That requires predicting recovery, not just identifying delay, and it requires knowing the cost of each type of failure to the customer.
 
-Teams that measure their control tower by the number of exceptions detected are measuring the wrong thing. Teams that measure it by the share of customer-affecting problems caught in time to act are doing the job. Asking an employer which of these they measure is a fast way to assess how mature their operation really is — and it is a question that will mark you as someone who has thought about the problem seriously.
+Teams that measure their control tower by the number of exceptions detected are measuring the wrong thing. Teams that measure it by the share of customer-affecting problems caught in time to act are doing the job. Asking an employer which of these they measure is a fast way to assess how mature their operation really is - and it is a question that will mark you as someone who has thought about the problem seriously.
 
 ## Key Takeaways
 
 - Dutch logistics offers one of Europe's densest markets for optimisation and planning work, spread across the whole country.
 - Problem families include demand planning, network design, routing, warehousing, terminal operations and emissions accounting.
 - The craft lies in deciding which operational constraints belong in the model and which do not.
-- Machine learning improves inputs; optimisation makes decisions — the best teams combine both.
+- Machine learning improves inputs; optimisation makes decisions - the best teams combine both.
 - Master data quality is the most common obstacle, and fixing it is often the highest-value early contribution.
 
 ## Where to Start
@@ -170,7 +170,7 @@ Browse current logistics, supply chain and optimisation roles at [onlyaijobs.eu/
 ## Frequently Asked Questions
 
 ### (Scenario: data scientist unfamiliar with OR) Do I need operations research training?
-For planning and routing roles, yes in substance — but the core methods can be learned, and forecasting-focused roles need less of it.
+For planning and routing roles, yes in substance - but the core methods can be learned, and forecasting-focused roles need less of it.
 
 ### (Scenario: candidate worried about dashboards) Is this sector mostly reporting work?
 Not at the mature employers: mathematical optimisation runs in production daily, with results measured in cost and service.
@@ -179,10 +179,10 @@ Not at the mature employers: mathematical optimisation runs in production daily,
 Planning and operations roles usually expect Dutch; international shippers, terminals and software vendors often work in English.
 
 ### (Scenario: candidate whose model was ignored) Why do planners override optimised plans?
-Usually because the model omits fairness, driver familiarity or stability — modelling those preferences is part of the job.
+Usually because the model omits fairness, driver familiarity or stability - modelling those preferences is part of the job.
 
 ### (Scenario: candidate considering long-term prospects) Is logistics analytics a durable career?
-Yes — emissions regulation, urban access restrictions, labour scarcity and margin pressure all keep demand for optimisation high.
+Yes - emissions regulation, urban access restrictions, labour scarcity and margin pressure all keep demand for optimisation high.
 
 <script type="application/ld+json">
 {
@@ -190,10 +190,10 @@ Yes — emissions regulation, urban access restrictions, labour scarcity and mar
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Do I need operations research training for logistics jobs?", "acceptedAnswer": {"@type": "Answer", "text": "For planning and routing roles yes in substance, though forecasting-focused roles require less of it."}},
-    {"@type": "Question", "name": "Is logistics analytics mostly dashboard work?", "acceptedAnswer": {"@type": "Answer", "text": "Not at mature employers — mathematical optimisation runs in production daily with measurable results."}},
+    {"@type": "Question", "name": "Is logistics analytics mostly dashboard work?", "acceptedAnswer": {"@type": "Answer", "text": "Not at mature employers - mathematical optimisation runs in production daily with measurable results."}},
     {"@type": "Question", "name": "Is Dutch required in logistics data roles?", "acceptedAnswer": {"@type": "Answer", "text": "Planning and operations roles usually expect Dutch; international shippers and software vendors often work in English."}},
     {"@type": "Question", "name": "Why do planners override optimised routes?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because the model omits fairness, driver area familiarity or plan stability, which must be modelled explicitly."}},
-    {"@type": "Question", "name": "Is logistics analytics a durable career in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — emissions rules, urban access restrictions, labour scarcity and thin margins sustain demand for optimisation."}}
+    {"@type": "Question", "name": "Is logistics analytics a durable career in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - emissions rules, urban access restrictions, labour scarcity and thin margins sustain demand for optimisation."}}
   ]
 }
 </script>

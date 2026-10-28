@@ -37,7 +37,7 @@ U heeft met Lovable of Bolt een prachtige applicatie gebouwd. De interface ziet 
 
 Op dat moment botst de snelheid van AI-ontwikkeling hard op de strenge realiteit van enterprise-procurement. De vragenlijst eist antwoorden over data-encryptie in rust, multi-tenant data-isolatie, Single Sign-On (SSO) en gegarandeerde SLA-beschikbaarheid.
 
-Uw prototype — draaiend op een standaard Supabase-installatie met publieke API-sleutels in de frontend en nul data-scheiding — faalt onmiddellijk.
+Uw prototype - draaiend op een standaard Supabase-installatie met publieke API-sleutels in de frontend en nul data-scheiding - faalt onmiddellijk.
 
 Een app bouwen met AI is de snelste manier om een B2B-product te conceptualiseren. Maar diezelfde app door een strenge enterprise-beveiligingsaudit loodsen is een van de zwaarste software-engineering uitdagingen voor een ondernemer.
 
@@ -70,7 +70,7 @@ Vier diepgaande technische transformaties zijn noodzakelijk om een AI-prototype 
 
 Als niet-technische branche-expert die AI heeft ingezet om een probleem op te lossen, moet u uw tijd niet verspillen aan het bestuderen van SAML-protocollen of VPC-subnets.
 
-[LaunchStudio](https://launchstudio.eu/nl/) overbrugt de kloof tussen AI-prototyping en enterprise-contracten. Gesteund door [Manifera](https://www.manifera.com/) — een softwarebedrijf dat veilige systemen heeft gebouwd voor multinationals zoals Vodafone — levert LaunchStudio de zware software-engineering die nodig is om security-audits glansrijk te doorstaan.
+[LaunchStudio](https://launchstudio.eu/nl/) overbrugt de kloof tussen AI-prototyping en enterprise-contracten. Gesteund door [Manifera](https://www.manifera.com/) - een softwarebedrijf dat veilige systemen heeft gebouwd voor multinationals zoals Vodafone - levert LaunchStudio de zware software-engineering die nodig is om security-audits glansrijk te doorstaan.
 
 Onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en 120+ engineers in Ho Chi Minhstad (Pho Quangstraat 10), verzorgt LaunchStudio de volledige transitie:
 - Databasemigratie naar een strikt gescheiden, RLS-beveiligde architectuur.
@@ -104,9 +104,9 @@ In een sprint van 15 werkdagen vernieuwde het Manifera-team de backend volledig 
 **Resultaat:** Gewapend met de nieuwe infrastructuur en de compliance-documentatie van LaunchStudio legde Sarah de software opnieuw voor aan het logistieke concern. FreightFlow slaagde vlekkeloos voor de hernieuwde IT-audit. Inmiddels heeft Sarah drie extra enterprise-klanten aangesloten, waarmee haar jaarlijkse omzet (ARR) de €162.000 passeerde.
 
 > *"Ik kende de logistieke sector door en door en met AI kon ik de oplossing bouwen. Maar van enterprise IT-beveiliging wist ik niets. LaunchStudio was de ontbrekende schakel. Zij gaven mijn prototype het pantser dat nodig was om door corporate inkoopprocessen te komen."*
-> — **Sarah Peeters, Oprichter, FreightFlow (Antwerpen)**
+> - **Sarah Peeters, Oprichter, FreightFlow (Antwerpen)**
 
-**Kosten & Doorlooptijd:** €7.500 (Launch & Grow Pakket met Enterprise Security Add-on) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €7.500 (Launch & Grow Pakket met Enterprise Security Add-on) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 

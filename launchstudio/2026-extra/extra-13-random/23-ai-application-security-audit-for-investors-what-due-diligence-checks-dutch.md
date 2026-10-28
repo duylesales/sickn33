@@ -29,7 +29,7 @@ Technische due diligence is geen schoonheidswedstrijd voor broncode. Investeerde
 
 - **Is het bedrijf daadwerkelijk eigenaar van wat het verkoopt?** Broncode, cloudaccounts, databases, domeinnamen en klantdata moeten juridisch eigendom zijn van de onderneming, niet van individuele oprichters of voormalige freelancers.
 - **Kan een beveiligingsincident de bedrijfswaarde vernietigen?** Een datalek met gevoelige klantgegevens in het eerste jaar na de investering brengt het totale rendement van het fonds in gevaar.
-- **Kan het product meegroeien met de prognoses?** Niet oneindig — maar wel tot aan de volgende mijlpaal waarvoor het groeigeld is bedoeld.
+- **Kan het product meegroeien met de prognoses?** Niet oneindig - maar wel tot aan de volgende mijlpaal waarvoor het groeigeld is bedoeld.
 - **Wat kost het om bestaande gebreken op te lossen?** Technische schuld is acceptabel. Onbekende, onbeheersbare problemen zijn dat niet.
 - **Is er sprake van een 'key-person risk'?** Als alle kennis in het hoofd van één enkele persoon zit, wat gebeurt er dan als diegene uitvalt of vertrekt?
 
@@ -41,7 +41,7 @@ Bij een met AI gebouwd product wegen deze vragen zwaarder dan bij traditioneel o
 
 **Voorwaarden en herkomst van AI-tools.** Welke AI-tools zijn gebruikt, onder welke licenties, en leveren die voorwaarden juridische vraagstukken op rond eigendom? Bevat de applicatie grote blokken gegenereerde code die direct gekopieerd zijn uit open-sourcesoftware met incompatibele licenties?
 
-**Beveiligingsniveau (Security Posture).** Toegangscontrole afgedwongen op de server; beheer van API-sleutels en geheimen; authenticatie en sessiebeheer; invoervalidatie; kwetsbaarheden in packages; blootstelling van beheerfuncties. Controleurs voeren vaak dezelfde checks uit als bij een pre-launch audit — en vinden dezelfde kwetsbaarheden als niemand ze heeft verholpen.
+**Beveiligingsniveau (Security Posture).** Toegangscontrole afgedwongen op de server; beheer van API-sleutels en geheimen; authenticatie en sessiebeheer; invoervalidatie; kwetsbaarheden in packages; blootstelling van beheerfuncties. Controleurs voeren vaak dezelfde checks uit als bij een pre-launch audit - en vinden dezelfde kwetsbaarheden als niemand ze heeft verholpen.
 
 **Gegevensverwerking en AVG.** Waar staat persoonsgegevens fysiek opgeslagen, wie heeft toegang, hoe lang wordt data bewaard, functioneert verwijdering naar behoren, zijn er verwerkersovereenkomsten afgesloten en hebben zich in het verleden incidenten voorgedaan?
 
@@ -55,11 +55,11 @@ Bij een met AI gebouwd product wegen deze vragen zwaarder dan bij traditioneel o
 
 Bepaalde bevindingen zijn volstrekt normaal en kunnen eenvoudig worden ingeprijsd: verouderde packages, ontbrekende unittests of bescheiden prestatie-uitdagingen. Andere bevindingen veranderen de dynamiek van de deal echter op slag:
 
-- **Datalekken tussen klanten (Cross-tenant data exposure)** — funest in B2B SaaS, waar het direct zakelijke contracten bedreigt.
-- **Geheimen en API-sleutels in openbare repositories of persoonlijke accounts** — wat aantoont dat het bedrijf zijn eigen infrastructuur niet beheerst.
-- **Geen geteste back-ups** — waardoor één menselijke fout of servercrash het bedrijf definitief kan stilleggen.
-- **Onduidelijk intellectueel eigendom (IP)** — wat een investeringsronde volledig kan blokkeren totdat het juridisch is rechtgezet.
-- **Verzwegen incidenten** — wanneer de auditor in logs of supporttickets op eerdere datalekken stuit die de oprichter niet vooraf heeft gemeld.
+- **Datalekken tussen klanten (Cross-tenant data exposure)** - funest in B2B SaaS, waar het direct zakelijke contracten bedreigt.
+- **Geheimen en API-sleutels in openbare repositories of persoonlijke accounts** - wat aantoont dat het bedrijf zijn eigen infrastructuur niet beheerst.
+- **Geen geteste back-ups** - waardoor één menselijke fout of servercrash het bedrijf definitief kan stilleggen.
+- **Onduidelijk intellectueel eigendom (IP)** - wat een investeringsronde volledig kan blokkeren totdat het juridisch is rechtgezet.
+- **Verzwegen incidenten** - wanneer de auditor in logs of supporttickets op eerdere datalekken stuit die de oprichter niet vooraf heeft gemeld.
 
 Dat laatste punt is cruciaal: due diligence is tevens een integriteitstest. Een probleem dat u zelf heeft ontdekt, opgelost en gedocumenteerd, getuigt van volwassenheid. Ditzelfde probleem dat door de auditor van de investeerder wordt ontdekt, roept direct de vraag op wat u nog meer heeft achtergehouden.
 
@@ -77,7 +77,7 @@ Dat laatste punt is cruciaal: due diligence is tevens een integriteitstest. Een 
 
 ## Het Technische Overzicht Dat Investeerders Daadwerkelijk Lezen
 
-Een beknopt technisch document is een van de meest waardevolle bestanden in uw data room. Het hoeft geen boekwerk te zijn — twee tot vier pagina's volstaan — mits het een herkenbare structuur volgt:
+Een beknopt technisch document is een van de meest waardevolle bestanden in uw data room. Het hoeft geen boekwerk te zijn - twee tot vier pagina's volstaan - mits het een herkenbare structuur volgt:
 
 1. **Samenvatting van product en architectuur.** Wat het product doet; een schematisch overzicht van frontend, backend, database, opslag en externe API's.
 2. **Technologische keuzes.** Gekozen frameworks, hostingproviders en managed services, inclusief de motivatie erachter.
@@ -127,7 +127,7 @@ Als er binnen zes weken een term sheet of due diligence-traject aankomt, ziet ee
 - **Week 2:** Onafhankelijke technische audit uitvoeren op security, dataverwerking en beheerprocessen.
 - **Weken 3–4:** Kritieke en zware kwetsbaarheden direct oplossen; back-ups met hersteltest inrichten, monitoring en security scans activeren.
 - **Week 5:** Technisch overzicht, lijst met bekende beperkingen en incidentenlog opstellen; data room inrichten met bewijsstukken.
-- **Week 6:** Generale repetitie — laat een technisch adviseur of bevriende senior engineer de lastige vragen stellen en werk de laatste hiaten weg.
+- **Week 6:** Generale repetitie - laat een technisch adviseur of bevriende senior engineer de lastige vragen stellen en werk de laatste hiaten weg.
 
 Hierdoor kunt u tijdens de daadwerkelijke due diligence ontspannen vragen beantwoorden in plaats van halsoverkop brandjes te blussen.
 
@@ -147,9 +147,9 @@ Deel vroegtijdig, documenteer zorgvuldig en repareer gebreken vóórdat ernaar g
 
 Een pre-diligence review inclusief het herstellen van kwetsbaarheden voor een typische AI-gebouwde SaaS past binnen het vaste prijsmodel van LaunchStudio van €800 tot €7.500, afhankelijk van de complexiteit van de applicatie en het aantal bevindingen. Dat is een fractie van het bedrag van een Seed-ronde, en aanzienlijk goedkoper dan een afgeblazen of heronderhandelde term sheet. Het eindrapport kan rechtstreeks als gevalideerd document in uw data room worden geplaatst.
 
-LaunchStudio wordt aangedreven door Manifera — onze engineers hebben meer dan 160 softwareprojecten gerealiseerd voor enterprise-opdrachtgevers, inclusief diepgaande technische audits van bestaande systemen, en zetten die ervaring nu in voor startups. Manifera opereert vanuit Amsterdam (Herengracht 420), Singapore (Tras Street) en een eigen ontwikkelcentrum in Ho Chi Minhstad, waardoor wij vertrouwd zijn met de verwachtingen van zowel Europese als internationale durfinvesteerders. Bekijk voorbeelden van eerdere projecten in het [portfolio van Manifera](https://www.manifera.com/portfolio/).
+LaunchStudio wordt aangedreven door Manifera - onze engineers hebben meer dan 160 softwareprojecten gerealiseerd voor enterprise-opdrachtgevers, inclusief diepgaande technische audits van bestaande systemen, en zetten die ervaring nu in voor startups. Manifera opereert vanuit Amsterdam (Herengracht 420), Singapore (Tras Street) en een eigen ontwikkelcentrum in Ho Chi Minhstad, waardoor wij vertrouwd zijn met de verwachtingen van zowel Europese als internationale durfinvesteerders. Bekijk voorbeelden van eerdere projecten in het [portfolio van Manifera](https://www.manifera.com/portfolio/).
 
-Staat er een financieringsronde op de planning? [Meld uw project aan bij LaunchStudio](https://launchstudio.eu/nl/#contact) en deel uw tijdlijn — wij plannen de audit daar naadloos omheen. Voor een gestructureerd inzicht in hoe investeerders naar softwarerisico's kijken, biedt het [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) een waardevol kader.
+Staat er een financieringsronde op de planning? [Meld uw project aan bij LaunchStudio](https://launchstudio.eu/nl/#contact) en deel uw tijdlijn - wij plannen de audit daar naadloos omheen. Voor een gestructureerd inzicht in hoe investeerders naar softwarerisico's kijken, biedt het [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) een waardevol kader.
 
 ## Praktijkvoorbeeld
 
@@ -164,9 +164,9 @@ Binnen veertien werkdagen dichtte het team van LaunchStudio het datalek tussen a
 **Resultaat:** De technische auditor van het investeringsfonds trof geen enkele blokkerende factor aan en de financieringsronde werd gesloten volgens de oorspronkelijke condities. In het eindoordeel prees de auditor het technische document als "opvallend helder en volwassen voor een startup in deze fase".
 
 > *"Ik had kunnen hopen dat de investeerders er niet naar zouden kijken. Ze keken er wél naar. Het verschil was dat ik zelf als eerste had gekeken."*
-> — **Julian Maas, Oprichter, Prijsbouwer (Amsterdam)**
+> - **Julian Maas, Oprichter, Prijsbouwer (Amsterdam)**
 
-**Kosten & Tijdlijn:** €4.600 (pre-diligence audit, herstel van beveiliging en eigendom, back-upinrichting en technisch overzicht) — afgerond binnen 14 werkdagen.
+**Kosten & Tijdlijn:** €4.600 (pre-diligence audit, herstel van beveiliging en eigendom, back-upinrichting en technisch overzicht) - afgerond binnen 14 werkdagen.
 
 ## Veelgestelde Vragen
 

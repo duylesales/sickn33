@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Generated Code Security: Third-Party Scripts, Widgets and Your Customers' Data",
-  "description": "Chat widgets, analytics tags, heatmaps and embedded tools run with full access to your pages. This article covers the AI generated code security and privacy risks of third-party scripts — data leakage, supply-chain compromise, consent — and how CSP, SRI and a script inventory control them.",
+  "description": "Chat widgets, analytics tags, heatmaps and embedded tools run with full access to your pages. This article covers the AI generated code security and privacy risks of third-party scripts - data leakage, supply-chain compromise, consent - and how CSP, SRI and a script inventory control them.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-29",
@@ -21,7 +21,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-"Add a chat widget." "Add Google Analytics." "Add a heatmap tool so I can see where people click." Each is a one-line prompt, and AI coding tools respond by pasting a script tag into your app's layout — on every page, including the ones where customers type their address, upload documents or enter payment details. Third-party scripts are a quiet corner of AI generated code security: code you did not write, from companies you may barely know, running with the same access to your pages as your own code.
+"Add a chat widget." "Add Google Analytics." "Add a heatmap tool so I can see where people click." Each is a one-line prompt, and AI coding tools respond by pasting a script tag into your app's layout - on every page, including the ones where customers type their address, upload documents or enter payment details. Third-party scripts are a quiet corner of AI generated code security: code you did not write, from companies you may barely know, running with the same access to your pages as your own code.
 
 ## What a Third-Party Script Can Do
 
@@ -30,7 +30,7 @@ A script loaded into your page can, technically:
 - Read everything on the page, including form fields as users type.
 - Read cookies and storage that JavaScript can access.
 - Send data to its own servers.
-- Change the page — insert content, redirect users, modify forms.
+- Change the page - insert content, redirect users, modify forms.
 
 Reputable providers do not misuse this deliberately. But their scripts can collect more than you intend (session recording tools capturing form inputs, for example), and providers can be compromised: several well-known supply-chain attacks have injected card-skimming code into widely used scripts, affecting every site that loaded them.
 
@@ -112,7 +112,7 @@ Deploy it first with `Content-Security-Policy-Report-Only`, collect violation re
 
 ## Subresource Integrity for Fixed Libraries
 
-When loading a specific version of a library from a CDN, add an `integrity` attribute with the file's hash. The browser refuses to run the file if it has been altered. This protects against compromised CDNs for versioned files. For scripts that change continuously — most vendor tags — SRI cannot be used; there, limiting pages and CSP are the main defences, and self-hosting stable libraries is often the better choice.
+When loading a specific version of a library from a CDN, add an `integrity` attribute with the file's hash. The browser refuses to run the file if it has been altered. This protects against compromised CDNs for versioned files. For scripts that change continuously - most vendor tags - SRI cannot be used; there, limiting pages and CSP are the main defences, and self-hosting stable libraries is often the better choice.
 
 ## Payment Pages Deserve Special Treatment
 
@@ -136,7 +136,7 @@ Every third-party script adds network requests, JavaScript parsing and often add
 
 ## Monitoring for Unexpected Scripts
 
-Scripts can appear without anyone noticing — through a tag manager change, a compromised dependency or a vendor loading additional scripts. Monitor with CSP violation reports (which show attempts to load unapproved sources), periodic automated scans of key pages listing loaded domains and alerts when a new domain appears. On payment and account pages, treat any unexpected script as an incident to investigate.
+Scripts can appear without anyone noticing - through a tag manager change, a compromised dependency or a vendor loading additional scripts. Monitor with CSP violation reports (which show attempts to load unapproved sources), periodic automated scans of key pages listing loaded domains and alerts when a new domain appears. On payment and account pages, treat any unexpected script as an incident to investigate.
 
 ## What to Tell Users
 
@@ -152,7 +152,7 @@ Open your checkout or account page, check the network panel and count the extern
 
 ## Why This Is an AI-Specific Risk
 
-AI coding tools add third-party scripts with remarkable ease: ask for analytics, a chat widget or a map, and a script tag appears in the global layout, loaded on every page, without consent handling or restrictions. Over months of prompting, these accumulate. Nobody decided to send passport numbers to a session-recording vendor; it happened because a helpful tool added a snippet everywhere. That is why third-party scripts deserve a place in every production review of AI-built apps — and why an inventory, page scoping, consent gating and a Content Security Policy are worth setting up before launch rather than after an uncomfortable question from a customer or regulator.
+AI coding tools add third-party scripts with remarkable ease: ask for analytics, a chat widget or a map, and a script tag appears in the global layout, loaded on every page, without consent handling or restrictions. Over months of prompting, these accumulate. Nobody decided to send passport numbers to a session-recording vendor; it happened because a helpful tool added a snippet everywhere. That is why third-party scripts deserve a place in every production review of AI-built apps - and why an inventory, page scoping, consent gating and a Content Security Policy are worth setting up before launch rather than after an uncomfortable question from a customer or regulator.
 
 ## Remember
 
@@ -160,7 +160,7 @@ Every script you load acts with your authority on your users' pages. Load only w
 
 ## Where LaunchStudio Fits
 
-LaunchStudio reviews third-party scripts as part of its security and privacy checks: inventory and clean-up, page-level scoping, consent-gated loading, private configuration, a Content Security Policy tuned to your app and payment isolation. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink's cybersecurity background — including work on dark web monitoring with TNO — informs a careful view of supply-chain risk. Manifera's engineers work from Ho Chi Minh City, with client contact through Amsterdam and Singapore. See [Manifera's about page](https://www.manifera.com/about-us/); [MDN's Content Security Policy guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) is the clearest introduction.
+LaunchStudio reviews third-party scripts as part of its security and privacy checks: inventory and clean-up, page-level scoping, consent-gated loading, private configuration, a Content Security Policy tuned to your app and payment isolation. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink's cybersecurity background - including work on dark web monitoring with TNO - informs a careful view of supply-chain risk. Manifera's engineers work from Ho Chi Minh City, with client contact through Amsterdam and Singapore. See [Manifera's about page](https://www.manifera.com/about-us/); [MDN's Content Security Policy guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) is the clearest introduction.
 
 [Send us your site link](https://launchstudio.eu/en/#contact) and we will list every script it loads.
 
@@ -172,14 +172,14 @@ Yara Ouali, owner of a small travel agency in Leidschendam specialising in tailo
 
 During a privacy review requested by a partner tour operator, the portal turned out to load eleven third-party scripts on every page: analytics, two advertising pixels, a heatmap tool with session recording, a chat widget, a reviews widget, a font service, a map library and three scripts from tools Yara no longer used. The session-recording tool captured passenger names, birth dates and passport numbers as travellers typed them. All scripts loaded before the cookie banner. The instalment form collected card details in the portal's own fields before passing them to the payment provider. There was no Content Security Policy.
 
-Over six business days, LaunchStudio's engineers removed six unused or unnecessary scripts, restricted the chat widget and reviews widget to pages without personal forms, moved analytics to a privacy-friendly EU-hosted option and loaded advertising pixels only after consent and never on portal pages, removed session recording from the portal and deleted recorded sessions with the vendor, switched instalments to Mollie's hosted checkout, and deployed a Content Security Policy — first in report-only mode, then enforced.
+Over six business days, LaunchStudio's engineers removed six unused or unnecessary scripts, restricted the chat widget and reviews widget to pages without personal forms, moved analytics to a privacy-friendly EU-hosted option and loaded advertising pixels only after consent and never on portal pages, removed session recording from the portal and deleted recorded sessions with the vendor, switched instalments to Mollie's hosted checkout, and deployed a Content Security Policy - first in report-only mode, then enforced.
 
 **Result:** The partner tour operator approved the portal. Page load times on the passenger form halved, and Yara now approves every new script against a one-page inventory.
 
 > *"I had invited eleven companies into the room where my clients typed their passport numbers. Most of them I'd forgotten about."*
-> — **Yara Ouali, Founder, Reisdossier (Leidschendam)**
+> - **Yara Ouali, Founder, Reisdossier (Leidschendam)**
 
-**Cost & Timeline:** €1,500 (Launch Ready package: script inventory and clean-up, consent gating, payment isolation and CSP) — completed in 6 business days.
+**Cost & Timeline:** €1,500 (Launch Ready package: script inventory and clean-up, consent gating, payment isolation and CSP) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -197,7 +197,7 @@ Many do, especially those using cookies or identifiers for tracking. Load them o
 
 ### How does Manifera assess supply-chain risk in web apps?
 
-By treating every external script and dependency as part of the attack surface — an approach shaped by Herre Roelevink's cybersecurity background — and limiting what each can access.
+By treating every external script and dependency as part of the attack surface - an approach shaped by Herre Roelevink's cybersecurity background - and limiting what each can access.
 
 ### Do fewer third-party scripts help SEO?
 

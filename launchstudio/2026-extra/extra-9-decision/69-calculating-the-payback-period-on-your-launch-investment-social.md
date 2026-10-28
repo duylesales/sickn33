@@ -1,4 +1,4 @@
-🧮 Two founders, same €3,800 quote. One said yes in a day — he'd worked out payback in six weeks. The other deliberated a month, comparing invoice to bank balance. 🤔
+🧮 Two founders, same €3,800 quote. One said yes in a day - he'd worked out payback in six weeks. The other deliberated a month, comparing invoice to bank balance. 🤔
 
 Investors ask founders their CAC payback. Almost nobody runs the same math on their own launch investment: 🧠
 
@@ -7,7 +7,7 @@ Investors ask founders their CAC payback. Almost nobody runs the same math on th
 ❌ Ignoring churn assumes every month-one customer is paying by month four
 ❌ A long payback usually signals a pricing problem, not overpriced hardening
 
-✅ Payback = when cumulative net revenue crosses the fixed cost — checkable, not a feeling
+✅ Payback = when cumulative net revenue crosses the fixed cost - checkable, not a feeling
 ✅ Build a spreadsheet, one row per month, so assumptions are written down
 ✅ Run it pessimistic and optimistic, to see how much the number moves
 ✅ A payback of one to four months on a founder-funded launch is strong

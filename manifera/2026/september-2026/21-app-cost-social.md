@@ -8,7 +8,7 @@ The CFO chooses Agency A. Two years later, the CFO audits the ledger. The app co
 Because Agency A wrote unoptimized database queries, causing AWS cloud bills to skyrocket. And because the codebase was a fragile mess, adding a simple feature took 3 weeks of expensive labor. 
 
 This is the CapEx Illusion. 
-The initial development cost (CapEx) is only 20% of the true **app cost**. The remaining 80% is Operational Expenditure (OpEx)—cloud bills, compliance fixes, and the interest payments on Technical Debt. 
+The initial development cost (CapEx) is only 20% of the true **app cost**. The remaining 80% is Operational Expenditure (OpEx) - cloud bills, compliance fixes, and the interest payments on Technical Debt. 
 
 Elite engineering optimizes for Total Cost of Ownership (TCO). 
 

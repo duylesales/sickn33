@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (non-technical)
 }
 </script>
 
-The cruel arithmetic of a launch is that the moment your product receives the most attention it will ever receive is also the moment it is least prepared for it — and unlike an ordinary outage, this one happens in front of everybody you were trying to impress.
+The cruel arithmetic of a launch is that the moment your product receives the most attention it will ever receive is also the moment it is least prepared for it - and unlike an ordinary outage, this one happens in front of everybody you were trying to impress.
 
 A ticket release, a press mention, a post that travels, a campaign that lands, a customer announcing you to their network. Whatever the cause, the shape is the same: months of forty visitors a day, then four thousand in an hour.
 
@@ -28,13 +28,13 @@ What is worth knowing is that this failure is not mysterious. Products fall over
 
 ## What Breaks, in Order
 
-**Database connections, first and almost always.** Each request opening its own connection consumes a finite slot. The limit is reached quickly, and the symptom is not a clean error — it is a product that works for the first several dozen people and then intermittently fails for everyone, in a way that looks like the platform being unreliable.
+**Database connections, first and almost always.** Each request opening its own connection consumes a finite slot. The limit is reached quickly, and the symptom is not a clean error - it is a product that works for the first several dozen people and then intermittently fails for everyone, in a way that looks like the platform being unreliable.
 
 **The queries that were always slow.** A query taking 800 milliseconds is invisible at low traffic. Under load, requests queue behind each other and 800 milliseconds becomes eight seconds, then a timeout.
 
 **A third-party limit you never saw.** Your email provider's sending rate, a mapping API's per-minute cap, a payment provider's threshold. These have been generous relative to your traffic and are not generous relative to your spike.
 
-**Memory, on anything with a fixed allowance.** More concurrent work than the process can hold, and it restarts — losing whatever was in flight.
+**Memory, on anything with a fixed allowance.** More concurrent work than the process can hold, and it restarts - losing whatever was in flight.
 
 **Cost,** which is not an outage but arrives the same week. Metered services scale with usage, and a spike is usage.
 
@@ -44,7 +44,7 @@ What is worth knowing is that this failure is not mysterious. Products fall over
 
 If you do one thing, do this.
 
-Connect through the pooled endpoint your database provider offers — Supabase provides one specifically for this — and reuse connections rather than opening one per request. In serverless environments, where each invocation can create its own connection, this is not an optimisation but a requirement.
+Connect through the pooled endpoint your database provider offers - Supabase provides one specifically for this - and reuse connections rather than opening one per request. In serverless environments, where each invocation can create its own connection, this is not an optimisation but a requirement.
 
 Then find out where your ceiling actually is. A crude load test against a staging environment tells you the number at which things degrade, and knowing that number is worth more than any amount of reassurance. Most founders discover it is lower than they assumed and trivially raised.
 
@@ -52,7 +52,7 @@ Then find out where your ceiling actually is. A crude load test against a stagin
 
 The single largest reduction in load, and it is free.
 
-Your marketing pages, your landing page, the page the campaign points at — if they do not change per visitor, serve them as static files from a CDN. A static file cannot exhaust memory, cannot exhaust connections, and does not care whether ten or ten thousand people arrive.
+Your marketing pages, your landing page, the page the campaign points at - if they do not change per visitor, serve them as static files from a CDN. A static file cannot exhaust memory, cannot exhaust connections, and does not care whether ten or ten thousand people arrive.
 
 That means the spike hits your infrastructure only when somebody signs up or logs in, which is a far smaller number than the number who looked. Products that fall over on launch day frequently fall over while serving a page that could have been a file.
 
@@ -64,7 +64,7 @@ Half a day, and it converts a launch from hope into a plan.
 
 **Generate realistic data volume** in a staging environment. A product tested with fifty records tells you nothing about its behaviour at fifty thousand, because database performance degrades suddenly rather than smoothly.
 
-**Run a load test** against staging, not production. Simulate the traffic shape you expect — mostly page views, some sign-ups, a few payments — and watch what degrades first. The point is not a number; it is the order of failure.
+**Run a load test** against staging, not production. Simulate the traffic shape you expect - mostly page views, some sign-ups, a few payments - and watch what degrades first. The point is not a number; it is the order of failure.
 
 **Check the third-party limits** in each provider's documentation, and request increases in advance where the limit is below your expected peak. This takes a week with some providers, which is why it is done beforehand.
 
@@ -88,7 +88,7 @@ Write down who does what: who watches the errors, who answers the emails. Even i
 
 **Watch the error tracker rather than refreshing the site.** It tells you what is failing and for how many people; the site tells you your own experience.
 
-**Shed load before you lose everything.** If one feature is causing the failure — an expensive search, a generated report, an AI call — disable it temporarily. A product with one feature turned off is vastly better than a product that is down.
+**Shed load before you lose everything.** If one feature is causing the failure - an expensive search, a generated report, an AI call - disable it temporarily. A product with one feature turned off is vastly better than a product that is down.
 
 **Communicate early.** A short honest note on your status page and to anybody who has contacted you. People forgive a struggling launch and remember silence.
 
@@ -98,7 +98,7 @@ Write down who does what: who watches the errors, who answers the emails. Even i
 
 ## The Day After
 
-Look at what actually broke against what you expected to break — the gap is the most useful thing you will learn all quarter. Fix the real causes rather than the symptoms. Check your invoices before the month closes. Follow up with anyone who hit a problem, individually, because a personal message after a bad experience converts better than the launch did.
+Look at what actually broke against what you expected to break - the gap is the most useful thing you will learn all quarter. Fix the real causes rather than the symptoms. Check your invoices before the month closes. Follow up with anyone who hit a problem, individually, because a personal message after a bad experience converts better than the launch did.
 
 And write down the numbers you reached, so the next spike is measured against something real rather than against anxiety.
 
@@ -112,7 +112,7 @@ Not everything has to be engineered in advance. Some of it can simply be paid fo
 
 **Request higher third-party limits in advance.** Email sending rates, API quotas and payment thresholds are frequently raised on request, at no cost, if you ask before you need it rather than during. Some providers take a week to respond, which is the whole reason this belongs in the preparation.
 
-**Consider a queue for the expensive path.** If your spike is people doing one specific thing — entering a race, buying a ticket, claiming a place — accepting the request quickly and processing it in the background converts a crush into an orderly line. The customer sees a confirmation immediately and the work happens at the rate your system can sustain.
+**Consider a queue for the expensive path.** If your spike is people doing one specific thing - entering a race, buying a ticket, claiming a place - accepting the request quickly and processing it in the background converts a crush into an orderly line. The customer sees a confirmation immediately and the work happens at the rate your system can sustain.
 
 **Have the numbers written down.** Which tier you are moving to, which limits you raised, what they cost, and the date you are reverting. Temporary capacity that nobody reverts is a permanent bill, and it is one of the more common ways a successful launch quietly becomes an expensive month.
 
@@ -136,7 +136,7 @@ Then an organiser scheduled a popular regional half marathon with a fixed cap, e
 
 The product handled eleven minutes before it stopped responding. It stayed down for fifty minutes.
 
-The post-mortem found the expected order. Every request opened its own database connection, so the limit was reached at around 90 concurrent users. The entry list page ran a query counting remaining places by scanning the entries table, unindexed, executed on every page load by everyone refreshing. The confirmation email provider's rate limit was reached in the first four minutes, so several hundred people who had successfully entered received nothing and re-entered, some of them twice. And the event's landing page — the one 4,000 people loaded simultaneously — was rendered by the application rather than served as a static file, so the visitors who were only looking consumed the same resources as the ones entering.
+The post-mortem found the expected order. Every request opened its own database connection, so the limit was reached at around 90 concurrent users. The entry list page ran a query counting remaining places by scanning the entries table, unindexed, executed on every page load by everyone refreshing. The confirmation email provider's rate limit was reached in the first four minutes, so several hundred people who had successfully entered received nothing and re-entered, some of them twice. And the event's landing page - the one 4,000 people loaded simultaneously - was rendered by the application rather than served as a static file, so the visitors who were only looking consumed the same resources as the ones entering.
 
 The organiser closed entries manually and rescheduled for the following week.
 
@@ -145,9 +145,9 @@ Seven business days of work before the second attempt: pooled connections config
 **Result:** the rescheduled opening took 4,100 entries in nine minutes with no downtime and a peak response time of 1.2 seconds. The 31 duplicate entries from the first attempt were identified and refunded. The organiser has since brought three further events to the platform.
 
 > *"Four thousand people had my product open at the same moment, and it lasted eleven minutes. The thing that killed it was a page that could have been a file."*
-> — **Thijs Damen, Founder, Startbewijs (Doetinchem)**
+> - **Thijs Damen, Founder, Startbewijs (Doetinchem)**
 
-**Cost & Timeline:** €4,400 (connection pooling, counter and indexing work, static split and image optimisation, email queueing, uniqueness constraint, feature flags, load testing) — completed in 7 business days.
+**Cost & Timeline:** €4,400 (connection pooling, counter and indexing work, static split and image optimisation, email queueing, uniqueness constraint, feature flags, load testing) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Freeze changes, set spending caps and alerts, confirm monitoring reaches your ph
       "name": "How do I reduce load without more infrastructure?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Serve unchanging pages as static files from a CDN and optimise images — most spike traffic is people looking, not signing up."
+        "text": "Serve unchanging pages as static files from a CDN and optimise images - most spike traffic is people looking, not signing up."
       }
     },
     {

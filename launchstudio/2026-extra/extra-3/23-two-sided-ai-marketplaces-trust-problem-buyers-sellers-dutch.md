@@ -55,7 +55,7 @@ Het achteraf inpassen van gestaffelde informatievrijgave of asymmetrische toegan
 
 [LaunchStudio](https://launchstudio.eu/nl/) ontwerpt en verhardt toegangsbeheer voor tweezijdige marktplaatsen met deze specifieke vertrouwensdynamiek tussen koper en verkoper in gedachten. Wij behandelen het als een afzonderlijke architectonische overweging buiten algemene autorisatie, ondersteund door Manifera's bredere ervaring in het bouwen van platforms voor meerdere partijen waar concurrerende legitieme belangen bewust moeten worden gebalanceerd.
 
-[Laat het vertrouwensmodel van uw marktplaats beoordelen voordat beide kanten iets anders verwachten](https://launchstudio.eu/nl/#calculator) — dit is een andere discipline dan typisch toegangsbeheer voor eenzijdige SaaS.
+[Laat het vertrouwensmodel van uw marktplaats beoordelen voordat beide kanten iets anders verwachten](https://launchstudio.eu/nl/#calculator) - dit is een andere discipline dan typisch toegangsbeheer voor eenzijdige SaaS.
 
 ## Een controlelijst voor het controleren van de vrijgaveregels van uw marktplaats
 
@@ -82,9 +82,9 @@ Verschillende aannemers rapporteerden dat een betekenisvol deel van de gematchte
 **Resultaat:** LaunchStudio ontwierp de vrijgavestroom van VakwerkMatch opnieuw om directe contactdetails verborgen te houden achter het eigen berichtsysteem van het platform totdat een transactie was bevestigd. Hiermee werd het omzeilingspad buiten het platform om gedicht, terwijl de mogelijkheid voor koper en verkoper om vrij via het platform zelf te communiceren behouden bleef.
 
 > *"Ik dacht dat het onmiddellijk beschikbaar maken van contactinformatie gewoon een goed, wrijvingsloos ontwerp was. Er was het stilletjes zien weglekken van mijn eigen transactiekosten naar directe afspraken van concurrenten voor nodig om me te realiseren dat ik exact het mechanisme had gebouwd dat mensen in staat stelde mij niet te betalen."*
-> — **Priya Ramautar, Oprichter, VakwerkMatch (Rotterdam)**
+> - **Priya Ramautar, Oprichter, VakwerkMatch (Rotterdam)**
 
-**Kosten en tijdlijn:** € 2.600 (herontwerp van marktplaatsvrijgave en toegangsbeheer) — voltooid in 10 werkdagen.
+**Kosten en tijdlijn:** € 2.600 (herontwerp van marktplaatsvrijgave en toegangsbeheer) - voltooid in 10 werkdagen.
 
 ---
 
@@ -144,7 +144,7 @@ Het kan worden toegevoegd, hoewel bestaande gebruikers die gewend zijn aan onmid
       "name": "Zou dit probleem opgemerkt zijn door algemene beveiligingstesten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Onwaarschijnlijk — de functie werkte zoals gebouwd; het was een ontwerpfout in het bedrijfsmodel rond vrijgavedetails."
+        "text": "Onwaarschijnlijk - de functie werkte zoals gebouwd; het was een ontwerpfout in het bedrijfsmodel rond vrijgavedetails."
       }
     },
     {

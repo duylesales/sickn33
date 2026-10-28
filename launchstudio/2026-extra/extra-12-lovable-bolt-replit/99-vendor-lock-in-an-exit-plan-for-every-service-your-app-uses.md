@@ -20,11 +20,11 @@ Target Persona: SaaS Scale-Up
 }
 </script>
 
-Building with Lovable, Bolt or Replit means building on other people's services from the first day. The builder itself, the hosting, the database and authentication, file storage, transactional email, payments, an AI model, analytics, error tracking, the domain registrar. A typical AI-built B2B product depends on ten to twenty external services — and the founder usually chose most of them by accepting a default.
+Building with Lovable, Bolt or Replit means building on other people's services from the first day. The builder itself, the hosting, the database and authentication, file storage, transactional email, payments, an AI model, analytics, error tracking, the domain registrar. A typical AI-built B2B product depends on ten to twenty external services - and the founder usually chose most of them by accepting a default.
 
 That is not a mistake. Using managed services is what makes a small team able to run a serious product. But every one of those services can change in ways you do not control: a price increase, a suspended account because of an automated abuse check, changed terms, an acquisition, a discontinued feature, a regional outage, a company that simply stops. When it happens, the question is not whether you depend on the service, but how long it would take to stop depending on it.
 
-Avoiding all lock-in is neither possible nor desirable. What is possible is knowing, for each dependency, what you would do if you had to leave — and making the handful of preparations that turn a crisis into a few days of work. This article covers how to build the inventory, the kinds of lock-in, what an exit plan contains, the services that deserve the most preparation, and the questions customers will ask about it.
+Avoiding all lock-in is neither possible nor desirable. What is possible is knowing, for each dependency, what you would do if you had to leave - and making the handful of preparations that turn a crisis into a few days of work. This article covers how to build the inventory, the kinds of lock-in, what an exit plan contains, the services that deserve the most preparation, and the questions customers will ask about it.
 
 ## Start With an Inventory
 
@@ -33,12 +33,12 @@ Most founders cannot list every service their product depends on. The list is in
 Build it once, as a table, with a row per service:
 
 - **What it does** and which features depend on it.
-- **Who holds the account** — the company or a person, and which login.
-- **What data it holds** — customer data, your code, configuration, nothing.
-- **Monthly cost** and contract terms — notice periods, price change clauses.
+- **Who holds the account** - the company or a person, and which login.
+- **What data it holds** - customer data, your code, configuration, nothing.
+- **Monthly cost** and contract terms - notice periods, price change clauses.
 - **Region** where it processes data.
-- **Kind of lock-in** — described below.
-- **Exit plan** — a link to a short document.
+- **Kind of lock-in** - described below.
+- **Exit plan** - a link to a short document.
 - **Last reviewed.**
 
 Sources to check: your environment variables and secrets, the dependency list in your code, DNS records, your credit card statements, your email inbox for "welcome to" messages, and the subprocessor list if you have one, as the subprocessors article in this series describes. The inventory is also the basis of that subprocessor list, the services list in the handover article, and the answer to a large part of any security questionnaire.
@@ -51,7 +51,7 @@ Different services lock you in in different ways, and the exit effort depends on
 
 **Code lock-in.** Your code calls the service's proprietary API directly throughout the codebase, so replacing it means rewriting many files.
 
-**Identity lock-in.** Users, customers or integrations are identified by the service's IDs — a payment provider's customer ID used as your primary key, an authentication provider's user ID referenced everywhere.
+**Identity lock-in.** Users, customers or integrations are identified by the service's IDs - a payment provider's customer ID used as your primary key, an authentication provider's user ID referenced everywhere.
 
 **Reputation lock-in.** The service holds something that took time to build: an email sending reputation, an app store listing, search engine rankings on a platform domain.
 
@@ -68,7 +68,7 @@ An exit plan is not a migration project. It is a page per significant service, w
 1. **Triggers.** What would make us leave? A price increase above a threshold, repeated outages, a change of ownership, a policy change, a suspended account.
 2. **Data.** What do we need to take with us, and how do we get it out? Which export, in what format, how complete, how long it takes.
 3. **Alternatives.** Which one or two services could replace it, and what differs.
-4. **Effort.** What has to change — code, configuration, DNS, customer communication — with an honest estimate in days.
+4. **Effort.** What has to change - code, configuration, DNS, customer communication - with an honest estimate in days.
 5. **Preparation.** What we do now so the exit is faster later: regular exports, an abstraction layer, a second configured provider, contract terms.
 
 For most services the plan is half a page. For the few critical ones it is longer, and the preparation is actually done rather than described.
@@ -83,7 +83,7 @@ The preparation is simple and should be done immediately: the code synchronised 
 
 Supabase is built on Postgres, which is about as portable as databases get. A logical dump restores into any Postgres host. That portability is only real if you use it.
 
-**Make regular exports to storage you control**, outside Supabase — a nightly or weekly `pg_dump` to an object storage bucket at another provider, encrypted, with a tested restore, as the backups article in extra-11 describes. This is both a backup and an exit route.
+**Make regular exports to storage you control**, outside Supabase - a nightly or weekly `pg_dump` to an object storage bucket at another provider, encrypted, with a tested restore, as the backups article in extra-11 describes. This is both a backup and an exit route.
 
 **Know what is Supabase-specific.** Row level security policies, database functions and triggers are standard Postgres and move with the dump. Edge functions, storage buckets, realtime subscriptions and the auto-generated REST API are Supabase features that need equivalents elsewhere.
 
@@ -93,13 +93,13 @@ The leaving Supabase article in this series covers a full move; the preparation 
 
 ## Transactional Email
 
-Email is the service whose failure is noticed fastest — password resets, invitations, booking confirmations and invoices stop — and whose suspension is most often automatic. A burst of bounces after a customer imports an old address list can trigger a provider's abuse protection and pause sending for the whole account.
+Email is the service whose failure is noticed fastest - password resets, invitations, booking confirmations and invoices stop - and whose suspension is most often automatic. A burst of bounces after a customer imports an old address list can trigger a provider's abuse protection and pause sending for the whole account.
 
 Preparation that pays for itself:
 
-- **Sending through your own domain**, with SPF, DKIM and DMARC configured, as the transactional email article in extra-11 describes — so reputation belongs to your domain rather than to the provider.
+- **Sending through your own domain**, with SPF, DKIM and DMARC configured, as the transactional email article in extra-11 describes - so reputation belongs to your domain rather than to the provider.
 - **A second provider configured and verified**, with DKIM records for both in DNS, and sending code behind a small interface so switching is a configuration change.
-- **Automatic failover** for critical messages — password resets, invitations — when the primary provider returns errors or the account is paused.
+- **Automatic failover** for critical messages - password resets, invitations - when the primary provider returns errors or the account is paused.
 - **Bounce handling and list hygiene** so imports of old addresses do not damage reputation in the first place.
 
 ## Payments
@@ -112,13 +112,13 @@ Payment providers create the most difficult lock-in, because much of what they h
 
 **Customer, subscription and invoice history** can usually be exported, and should also exist in your own database, as the reconciliation article in this series argues.
 
-Preparation: store payment state in your own tables with the provider's IDs as references rather than primary keys; keep your own invoice records; know the provider's process for data portability before you need it; and read the termination and data return terms. For a product where payments are central, knowing the realistic switching time — often one to three months — is the real exit plan.
+Preparation: store payment state in your own tables with the provider's IDs as references rather than primary keys; keep your own invoice records; know the provider's process for data portability before you need it; and read the termination and data return terms. For a product where payments are central, knowing the realistic switching time - often one to three months - is the real exit plan.
 
 ## AI Models
 
 AI providers change prices, deprecate models, alter usage policies and have outages more often than most other services. Of all dependencies, they are both the easiest to switch technically and the easiest to switch badly.
 
-**Put model calls behind your own interface** — one module that takes a task and returns a result, with the provider and model as configuration. Calls scattered through the codebase with provider-specific parameters are what make switching slow.
+**Put model calls behind your own interface** - one module that takes a task and returns a result, with the provider and model as configuration. Calls scattered through the codebase with provider-specific parameters are what make switching slow.
 
 **Keep prompts and structured output schemas provider-neutral** where possible, and store them in the repository.
 
@@ -138,15 +138,15 @@ Move every account to company ownership: registrations in the company's name, lo
 
 Technical preparation is half of an exit plan. The other half is knowing what the agreements allow.
 
-For each significant service, record four things from its terms: how much notice it must give before changing prices or terms, how quickly you can leave and whether minimum commitments apply, what happens to your data after termination and for how long you can still export it, and under what conditions the provider may suspend your account. These answers determine how much time an exit plan actually has — a provider that can change prices with thirty days' notice gives you thirty days, whatever your technical readiness.
+For each significant service, record four things from its terms: how much notice it must give before changing prices or terms, how quickly you can leave and whether minimum commitments apply, what happens to your data after termination and for how long you can still export it, and under what conditions the provider may suspend your account. These answers determine how much time an exit plan actually has - a provider that can change prices with thirty days' notice gives you thirty days, whatever your technical readiness.
 
-Two habits help. Read change notifications from critical providers rather than archiving them, and add a line to the inventory when terms change. And when a service becomes significant enough — usually when its cost or its role in the product grows — consider whether a business plan with a contract, a named account manager and defined notice periods is worth more than the price difference. For a supplier your customers depend on indirectly, predictable terms are often the most valuable feature on offer.
+Two habits help. Read change notifications from critical providers rather than archiving them, and add a line to the inventory when terms change. And when a service becomes significant enough - usually when its cost or its role in the product grows - consider whether a business plan with a contract, a named account manager and defined notice periods is worth more than the price difference. For a supplier your customers depend on indirectly, predictable terms are often the most valuable feature on offer.
 
 ## Abstraction Where It Is Cheap, Not Everywhere
 
 A common overreaction to lock-in is to wrap every service in an abstraction "in case we switch". That adds code, hides useful features of the service and is usually wasted: most services you will never leave.
 
-Abstract where switching is likely and the cost is low — email sending, AI model calls, file storage access, payment provider calls — with a thin interface in one module. Do not abstract the database query language, the frontend framework or the authentication flow on speculation. Use the services' strengths, and keep the data you would need in a portable form.
+Abstract where switching is likely and the cost is low - email sending, AI model calls, file storage access, payment provider calls - with a thin interface in one module. Do not abstract the database query language, the frontend framework or the authentication flow on speculation. Use the services' strengths, and keep the data you would need in a portable form.
 
 ## Concentration and Customers' Questions
 
@@ -154,17 +154,17 @@ Two further considerations apply as the product grows.
 
 **Concentration risk.** If hosting, database, storage, authentication and functions all run on one platform, one platform incident or account suspension affects everything. That is often an acceptable trade for simplicity; it should be a conscious one, with backups held elsewhere.
 
-**Customers will ask.** Procurement questionnaires increasingly include business continuity questions: what happens if a critical supplier fails, where backups are held, how long recovery would take, and sometimes whether source code escrow is available. The inventory and exit plans are the basis for honest answers — and "we export the database nightly to a second provider and have tested a restore" is a better answer than any assurance.
+**Customers will ask.** Procurement questionnaires increasingly include business continuity questions: what happens if a critical supplier fails, where backups are held, how long recovery would take, and sometimes whether source code escrow is available. The inventory and exit plans are the basis for honest answers - and "we export the database nightly to a second provider and have tested a restore" is a better answer than any assurance.
 
 ## Review It Once a Year
 
-Exit plans decay as services change. Once a year — or when a service raises prices or changes terms — review the inventory and run a short exercise: pick one critical service and ask, "If this disappeared tomorrow, what would we do in the first hour, the first day and the first week?" Walk through it with whoever would do the work. The gaps that appear are the preparation for the coming year.
+Exit plans decay as services change. Once a year - or when a service raises prices or changes terms - review the inventory and run a short exercise: pick one critical service and ask, "If this disappeared tomorrow, what would we do in the first hour, the first day and the first week?" Walk through it with whoever would do the work. The gaps that appear are the preparation for the coming year.
 
 ## Setting This Up
 
 For a Lovable or Supabase product, this is typically three to five days: an inventory of every external service with its purpose, account owner, data, cost, terms, region and kind of lock-in, a short exit plan per significant service with triggers, data export, alternatives, effort and preparation, code synchronised to a company-owned repository, regular encrypted database exports to storage at another provider with a tested restore, user references designed for portable authentication, transactional email on your own domain with a second verified provider and failover for critical messages, payment state and invoices held in your own database with the provider's portability process documented, AI calls behind a provider-neutral interface with an evaluated alternative, every account and domain moved to company ownership with shared access, thin abstractions only where switching is likely, and an annual review with a tabletop exercise.
 
-LaunchStudio does this as part of making a product something a company can depend on. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, with continuity planning for clients including Vodafone, TNO and CFLW.
+LaunchStudio does this as part of making a product something a company can depend on. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, with continuity planning for clients including Vodafone, TNO and CFLW.
 
 [Ask us which of your services would hurt most to lose](https://launchstudio.eu/en/#contact).
 
@@ -182,20 +182,20 @@ Four business days: an inventory of 14 external services with owners, data, cost
 
 **Result:** five months later the primary email provider had a regional outage; failover switched critical messages to the second provider within minutes and clubs noticed nothing. The AI switch, tested in advance, was made in two days and reduced that cost by about 40% compared with the original price. When a club group asked about business continuity during a procurement process, the exit plans answered every question.
 
-> *"One club's old mailing list paused our email for every club for two days. Looking further, I found that I did not even own our domain — someone who had left the company did."*
-> — **Monique van Dam, Founder, Baanreservering (Eindhoven)**
+> *"One club's old mailing list paused our email for every club for two days. Looking further, I found that I did not even own our domain - someone who had left the company did."*
+> - **Monique van Dam, Founder, Baanreservering (Eindhoven)**
 
-**Cost & Timeline:** €3,800 (service inventory, exit plans for 14 services, secondary email provider with failover and bounce handling, provider-neutral AI module with evaluated alternative, off-platform database exports with tested restore, repository and account ownership, domain transfer, shared access, annual review) — completed in 4 business days.
+**Cost & Timeline:** €3,800 (service inventory, exit plans for 14 services, secondary email provider with failover and bounce handling, provider-neutral AI module with evaluated alternative, off-platform database exports with tested restore, repository and account ownership, domain transfer, shared access, annual review) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
 ### What is vendor lock-in for an AI-built product?
 
-Depending on a service in a way that makes leaving slow or costly — through the data it holds, the code that calls it, the IDs your system uses, the reputation it holds, contract terms, or access tied to one person.
+Depending on a service in a way that makes leaving slow or costly - through the data it holds, the code that calls it, the IDs your system uses, the reputation it holds, contract terms, or access tied to one person.
 
 ### Do I need an exit plan for every service?
 
-A short one for every significant service, and real preparation for the few critical ones — usually the code repository, database, email, payments, AI provider and domain.
+A short one for every significant service, and real preparation for the few critical ones - usually the code repository, database, email, payments, AI provider and domain.
 
 ### How do I make my Supabase data portable?
 
@@ -203,7 +203,7 @@ Make regular encrypted Postgres exports to storage at another provider, test a r
 
 ### Should I wrap every service in an abstraction layer?
 
-No. Abstract only where switching is likely and cheap — email, AI calls, file storage, payment calls. Elsewhere, use the service fully and keep your data portable.
+No. Abstract only where switching is likely and cheap - email, AI calls, file storage, payment calls. Elsewhere, use the service fully and keep your data portable.
 
 ### What do customers ask about vendor dependencies?
 
@@ -243,7 +243,7 @@ How critical supplier failures are handled, where backups are held, how long rec
       "name": "Should every external service be abstracted?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — only where switching is likely and cheap, such as email, AI calls, storage and payment calls."
+        "text": "No - only where switching is likely and cheap, such as email, AI calls, storage and payment calls."
       }
     },
     {

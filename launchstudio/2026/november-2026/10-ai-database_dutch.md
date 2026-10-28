@@ -33,7 +33,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
 
 Open nu de ontwikkelaarstools (DevTools) van uw browser. Ga naar het tabblad *Netwerk* (Network). Laad uw met AI gegenereerde applicatie en bekijk de verzoeken die uw frontend verstuurt.
 
-Ziet u rechtstreekse Supabase- of Firebase-queries de browser verlaten — zoals `.from('users').select('*')` of `collection('payments').get()` — dan is uw database in feite openbaar. Elke query die uw frontend uitvoert, is zichtbaar voor elke gebruiker. Elke tabel die uw applicatie aanraakt, is toegankelijk voor iedereen die de browserconsole opent en een aangepaste query intypt.
+Ziet u rechtstreekse Supabase- of Firebase-queries de browser verlaten - zoals `.from('users').select('*')` of `collection('payments').get()` - dan is uw database in feite openbaar. Elke query die uw frontend uitvoert, is zichtbaar voor elke gebruiker. Elke tabel die uw applicatie aanraakt, is toegankelijk voor iedereen die de browserconsole opent en een aangepaste query intypt.
 
 Dit is geen hypothetisch risico. Het is de standaardarchitectuur die AI-codetools genereren. En het is het gevaarlijkste ontwerppatroon in het moderne AI-landschap.
 
@@ -42,7 +42,7 @@ Dit is geen hypothetisch risico. Het is de standaardarchitectuur die AI-codetool
 Wanneer u Lovable vraagt om *"een database voor gebruikersprofielen toe te voegen"*, genereert het doorgaans code zoals deze:
 
 ```javascript
-// This code runs in the browser — visible to everyone
+// This code runs in the browser - visible to everyone
 const { data, error } = await supabase
   .from('profiles')
   .select('*')
@@ -70,9 +70,9 @@ Deze architectuur voegt een minieme latentie toe (10–50ms), maar levert enorme
 
 | Criterium | Direct Client-DB | Drielagige Architectuur |
 |---|---|---|
-| Datalekrisico | Kritiek — elke bezoeker kan data opvragen | Minimaal — API controleert alle toegang |
-| Query-optimalisatie | Geen — frontend stuurt wat AI genereerde | Volledig — server optimaliseert en cachet |
-| Schaalbaarheid | Matig — elke gebruiker opent een DB-verbinding | Uitstekend — connection pooling vangt pieken op |
+| Datalekrisico | Kritiek - elke bezoeker kan data opvragen | Minimaal - API controleert alle toegang |
+| Query-optimalisatie | Geen - frontend stuurt wat AI genereerde | Volledig - server optimaliseert en cachet |
+| Schaalbaarheid | Matig - elke gebruiker opent een DB-verbinding | Uitstekend - connection pooling vangt pieken op |
 | Gevoelige velden | Zichtbaar in het netwerktabblad | Verlaat de server nooit |
 | Rate limiting | Onmogelijk | Ingebouwd in de API-laag |
 | Auditing & Logging | Onmogelijk | Elke gegevensopvraging wordt geregistreerd |
@@ -85,10 +85,10 @@ RLS vertelt de database: *"Gebruiker A mag alleen rijen lezen waar `user_id = Ge
 
 RLS kent echter duidelijke grenzen:
 
-- **Kolomniveau-beveiliging** — RLS filtert rijen, geen kolommen. Als een tabel zowel openbare als interne kolommen bevat, kan RLS specifieke kolommen niet selectief verbergen. Daarvoor is een server-side API nodig.
-- **Complexe bedrijfslogica** — Toegangsregels hangen vaak af van externe factoren die de database niet kent: abonnementsvorm, tijdelijke rechten of teamhiërarchieën. Deze horen thuis in de API-laag.
-- **Validatie van schrijfacties** — RLS kan ongeoorloofde leesacties blokkeren, maar het valideren van correcte invoer bij schrijfoperaties vereist server-side validatie.
-- **Prestaties** — Complexe RLS-policies vertragen queries. Een gestructureerde API-laag met gerichte queries en caching presteert aanzienlijk beter.
+- **Kolomniveau-beveiliging** - RLS filtert rijen, geen kolommen. Als een tabel zowel openbare als interne kolommen bevat, kan RLS specifieke kolommen niet selectief verbergen. Daarvoor is een server-side API nodig.
+- **Complexe bedrijfslogica** - Toegangsregels hangen vaak af van externe factoren die de database niet kent: abonnementsvorm, tijdelijke rechten of teamhiërarchieën. Deze horen thuis in de API-laag.
+- **Validatie van schrijfacties** - RLS kan ongeoorloofde leesacties blokkeren, maar het valideren van correcte invoer bij schrijfoperaties vereist server-side validatie.
+- **Prestaties** - Complexe RLS-policies vertragen queries. Een gestructureerde API-laag met gerichte queries en caching presteert aanzienlijk beter.
 
 ## Van Directe Verbinding Naar Een Solide Productie-Architectuur
 
@@ -115,25 +115,25 @@ Herre Roelevink, CEO van Manifera en LaunchStudio: *"Bij vrijwel elk beveiliging
 
 Hannah, een recruitmentconsultant in Breda, gebruikte Lovable om een recruitment-CRM te bouwen waarin haar team kandidatenprofielen kon beheren en shortlists kon delen met opdrachtgevers.
 
-Tijdens een live demonstratie aan een hiring manager van een logistiek bedrijf ging het mis. Toen Hannah naar het kandidatenoverzicht navigeerde, zag de manager direct een bekende naam staan — een kandidaat die gesolliciteerd had bij zijn directe concurrent. Hannah ontdekte tot haar ontzetting dat het CRM alle kandidaten van alle opdrachtgevers tegelijk toonde. Er was geen enkele data-isolatie.
+Tijdens een live demonstratie aan een hiring manager van een logistiek bedrijf ging het mis. Toen Hannah naar het kandidatenoverzicht navigeerde, zag de manager direct een bekende naam staan - een kandidaat die gesolliciteerd had bij zijn directe concurrent. Hannah ontdekte tot haar ontzetting dat het CRM alle kandidaten van alle opdrachtgevers tegelijk toonde. Er was geen enkele data-isolatie.
 
-Onderzoek wees uit dat Lovable directe Supabase-queries vanuit de frontend had gegenereerd zonder RLS-policies. De `candidates`-tabel had geen afgedwongen `client_id`-filter. Elke ingelogde gebruiker kon alle kandidaten van alle opdrachtgevers inzien — een rampzalig privacy-incident in de recruitmentsector.
+Onderzoek wees uit dat Lovable directe Supabase-queries vanuit de frontend had gegenereerd zonder RLS-policies. De `candidates`-tabel had geen afgedwongen `client_id`-filter. Elke ingelogde gebruiker kon alle kandidaten van alle opdrachtgevers inzien - een rampzalig privacy-incident in de recruitmentsector.
 
 Hannah haalde de applicatie direct offline en benaderde LaunchStudio. Het team van Manifera behandelde de aanvraag met prioriteit. Binnen 6 werkdagen implementeerden zij een complete drielagige architectuur: server-side API-routes met strikt gescheiden queries per klant, RLS-policies op alle tabellen, audit-logging en rolgebaseerde toegangscontrole (admin recruiter, team recruiter, klant-viewer).
 
 **Resultaat:** RecruitFlow herlanceerde met waterdichte data-isolatie. Hannah bedient inmiddels 7 bedrijven (€299/maand per klant) en kon met succes een AVG-beveiligingsaudit van een grote enterprise-klant doorstaan.
 
 > *"Eén demo had bijna mijn hele bedrijf geruïneerd. LaunchStudio herbouwde mijn database-architectuur in minder dan een week. Nu vragen zakelijke klanten om beveiligingsdocumentatie en kan ik die met trots overhandigen."*
-> — **Hannah van den Berg, Oprichter, RecruitFlow (Breda)**
+> - **Hannah van den Berg, Oprichter, RecruitFlow (Breda)**
 
-**Kosten & Doorlooptijd:** €3.400 (Launch & Grow Pakket) — productie-klaar en live binnen 6 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (Launch & Grow Pakket) - productie-klaar en live binnen 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Hoe controleer ik of Row Level Security is ingeschakeld in mijn Supabase-database?
-Ga in het Supabase-dashboard naar Authentication > Policies. Ziet u "No policies created" bij uw tabellen, dan staat RLS uit of zijn er geen regels actief — in beide gevallen ligt uw data open. LaunchStudio controleert uw configuratie en richt sluitende RLS-policies in.
+Ga in het Supabase-dashboard naar Authentication > Policies. Ziet u "No policies created" bij uw tabellen, dan staat RLS uit of zijn er geen regels actief - in beide gevallen ligt uw data open. LaunchStudio controleert uw configuratie en richt sluitende RLS-policies in.
 
 ### Moet ik Supabase of Firebase kiezen voor mijn AI-database?
 Supabase heeft over het algemeen de voorkeur voor met AI gebouwde SaaS-applicaties omdat het gebruikmaakt van relationele PostgreSQL, robuuste Row Level Security biedt en complexe SQL-queries ondersteunt. Firebase (NoSQL) maakt relationeel data- en rechtenbeheer aanzienlijk complexer.

@@ -31,47 +31,47 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Being an AI native founder means you built something real, fast, without waiting on a dev team or a funding round — a genuinely different and faster starting position than founders had even a few years ago. It doesn't automatically mean the thing you built enforces the boundaries a multi-user product needs, and for anyone building on Cursor or Bolt with real customer data flowing in, that specific boundary is usually the first place worth checking, well before questions of scale, growth, or polish become relevant at all.
+Being an AI native founder means you built something real, fast, without waiting on a dev team or a funding round - a genuinely different and faster starting position than founders had even a few years ago. It doesn't automatically mean the thing you built enforces the boundaries a multi-user product needs, and for anyone building on Cursor or Bolt with real customer data flowing in, that specific boundary is usually the first place worth checking, well before questions of scale, growth, or polish become relevant at all.
 
 ## AI Native Describes How You Built It, Not What It Can Withstand
 
-The term describes a building method — prompting, iteration, and AI-assisted code generation rather than a traditional hire-a-dev-team cycle. It says nothing about whether that product independently verifies which user's data belongs to which account, whether it can survive concurrent requests without one overwriting another's state, or whether its error states leak information they shouldn't back to the requester. Those are separate, specific questions a demo never has to answer, because a demo only ever has one account logged in at a time, behaving exactly as the person testing it intends.
+The term describes a building method - prompting, iteration, and AI-assisted code generation rather than a traditional hire-a-dev-team cycle. It says nothing about whether that product independently verifies which user's data belongs to which account, whether it can survive concurrent requests without one overwriting another's state, or whether its error states leak information they shouldn't back to the requester. Those are separate, specific questions a demo never has to answer, because a demo only ever has one account logged in at a time, behaving exactly as the person testing it intends.
 
 ## Where Multi-Tenant Isolation Specifically Breaks
 
-A SaaS product with multiple customer accounts needs every database query to be scoped to the requesting user's own data — not because the UI hides other accounts' data from view, but because the server itself refuses to return it regardless of what's requested, including requests that never go through the UI at all. AI-generated backend code frequently gets the "happy path" query exactly right — fetch this user's own records, show them in the dashboard — while never adding the explicit ownership check that a request for someone else's record ID gets rejected outright rather than quietly fulfilled.
+A SaaS product with multiple customer accounts needs every database query to be scoped to the requesting user's own data - not because the UI hides other accounts' data from view, but because the server itself refuses to return it regardless of what's requested, including requests that never go through the UI at all. AI-generated backend code frequently gets the "happy path" query exactly right - fetch this user's own records, show them in the dashboard - while never adding the explicit ownership check that a request for someone else's record ID gets rejected outright rather than quietly fulfilled.
 
 ## Why This Specific Gap Stays Invisible Until It Isn't
 
-Testing your own account, with your own data, never triggers this failure mode — there's no second account to accidentally reach, and no reason during solo testing to even think about what a different logged-in user's request would return. It typically surfaces only when a real second customer signs up, and either a coincidence, a curious click, or a deliberate attempt exposes that the isolation was never actually enforced server-side — just implied by a UI that happened to only ever show the logged-in user their own data, without the server backing that assumption up.
+Testing your own account, with your own data, never triggers this failure mode - there's no second account to accidentally reach, and no reason during solo testing to even think about what a different logged-in user's request would return. It typically surfaces only when a real second customer signs up, and either a coincidence, a curious click, or a deliberate attempt exposes that the isolation was never actually enforced server-side - just implied by a UI that happened to only ever show the logged-in user their own data, without the server backing that assumption up.
 
 ## Why This Matters More as You Add Customers, Not Less
 
-It's tempting to treat this as a low-priority concern while a product only has a handful of trusted early users. In practice, the risk compounds directly with growth — the more accounts sharing the same unguarded backend, the more surface area exists for exactly this kind of accidental or deliberate cross-account exposure, meaning the ideal time to close this gap is before the second paying customer signs up, not after the fifth one notices something's wrong.
+It's tempting to treat this as a low-priority concern while a product only has a handful of trusted early users. In practice, the risk compounds directly with growth - the more accounts sharing the same unguarded backend, the more surface area exists for exactly this kind of accidental or deliberate cross-account exposure, meaning the ideal time to close this gap is before the second paying customer signs up, not after the fifth one notices something's wrong.
 
 ## How to Test for Multi-Tenant Isolation Yourself, Before a Second Customer Does
 
-Multi-tenant isolation is one of the few gaps in this category a non-technical founder can meaningfully test alone, because the test itself doesn't require reading code — it requires two accounts and a willingness to try requests your product was never designed to expect.
+Multi-tenant isolation is one of the few gaps in this category a non-technical founder can meaningfully test alone, because the test itself doesn't require reading code - it requires two accounts and a willingness to try requests your product was never designed to expect.
 
 **A simple test you can run this week:**
 
-1. **Create two separate test accounts** under two different email addresses, and put clearly distinct, obviously fake data into each one — a document, a customer record, an order, whatever your product's core object is.
+1. **Create two separate test accounts** under two different email addresses, and put clearly distinct, obviously fake data into each one - a document, a customer record, an order, whatever your product's core object is.
 2. **Log in as account A and note the exact URL or record ID** shown when you view your own data (`/documents/482`, for example).
 3. **Log out, log in as account B, and manually change the ID** in that same URL to the number you noted from account A.
 4. **Watch what happens.** A properly isolated application returns an error or a blank "not found" page. An application relying only on the UI to hide other accounts' data will often return account A's actual record to account B's logged-in session.
-5. **Repeat the same test through the network tab, not just the URL bar** — open dev tools, find the API request your dashboard makes to load a record, and manually change the ID parameter in that raw request. Some applications correctly block the URL-bar version of this test while still failing it at the raw API level, because the two paths are implemented differently.
+5. **Repeat the same test through the network tab, not just the URL bar** - open dev tools, find the API request your dashboard makes to load a record, and manually change the ID parameter in that raw request. Some applications correctly block the URL-bar version of this test while still failing it at the raw API level, because the two paths are implemented differently.
 
-If you're using a managed backend like Supabase or Firebase, there's a second, more specific check worth running: confirm that Row-Level Security (RLS) policies are actually enabled and enforced on every table containing customer data, not just the ones you remember configuring. It's common for an AI coding tool to create a table, get the happy-path query working, and never circle back to turn RLS on — the table works perfectly in every test because the founder is always testing as themselves, logged into their own account, which is exactly the scenario that never exposes a missing policy.
+If you're using a managed backend like Supabase or Firebase, there's a second, more specific check worth running: confirm that Row-Level Security (RLS) policies are actually enabled and enforced on every table containing customer data, not just the ones you remember configuring. It's common for an AI coding tool to create a table, get the happy-path query working, and never circle back to turn RLS on - the table works perfectly in every test because the founder is always testing as themselves, logged into their own account, which is exactly the scenario that never exposes a missing policy.
 
-None of this replaces a full review — a five-step manual test catches the most obvious version of the problem, not the subtler cases involving background jobs, exports, or third-party integrations that also touch customer data. But running it yourself, today, costs nothing and tells you immediately whether this is an urgent problem or a lower-priority one.
+None of this replaces a full review - a five-step manual test catches the most obvious version of the problem, not the subtler cases involving background jobs, exports, or third-party integrations that also touch customer data. But running it yourself, today, costs nothing and tells you immediately whether this is an urgent problem or a lower-priority one.
 
 ## Closing the Gap Without Touching What You Built
 
-Fixing this doesn't require re-architecting your data model — it requires adding explicit ownership checks at the query layer, so every request is verified against the authenticated user's own scope before any data returns, regardless of whether that request came through the intended UI flow or not. [LaunchStudio](https://launchstudio.eu/en/) closes exactly this kind of gap as a standard part of its Launch Ready package, backed by Manifera's 11+ years building multi-tenant B2B systems for enterprise clients.
+Fixing this doesn't require re-architecting your data model - it requires adding explicit ownership checks at the query layer, so every request is verified against the authenticated user's own scope before any data returns, regardless of whether that request came through the intended UI flow or not. [LaunchStudio](https://launchstudio.eu/en/) closes exactly this kind of gap as a standard part of its Launch Ready package, backed by Manifera's 11+ years building multi-tenant B2B systems for enterprise clients.
 
-Manifera runs this kind of review through its Vietnam-based development center on Pho Quang Street in Ho Chi Minh City, coordinated with its Amsterdam headquarters at Herengracht 420 — giving LaunchStudio founders enterprise-grade review without enterprise-scale timelines.
+Manifera runs this kind of review through its Vietnam-based development center on Pho Quang Street in Ho Chi Minh City, coordinated with its Amsterdam headquarters at Herengracht 420 - giving LaunchStudio founders enterprise-grade review without enterprise-scale timelines.
 
-[Describe your project — we respond within 1 business day](https://launchstudio.eu/en/#contact).
+[Describe your project - we respond within 1 business day](https://launchstudio.eu/en/#contact).
 
 ## Real example
 
@@ -84,37 +84,37 @@ A second firm's admin, testing out of curiosity, changed a document ID in the UR
 **Result:** LaunchStudio added explicit ownership verification to every document query, so a request outside the requesting firm's own scope is now rejected server-side, closing the gap across every existing and future account.
 
 > *"The idea that changing a number in the URL could show someone another firm's actual client contract still makes me a little sick. I assumed accounts were just separate."*
-> — **Sophie Dekker, Founder, ClauseCheck (Utrecht)**
+> - **Sophie Dekker, Founder, ClauseCheck (Utrecht)**
 
-**Cost & Timeline:** €2,200 (multi-tenant isolation audit and remediation) — completed in 8 business days.
+**Cost & Timeline:** €2,200 (multi-tenant isolation audit and remediation) - completed in 8 business days.
 
 ---
 
 ## Frequently Asked Questions
 
-### A skeptical CTO might ask why this wasn't caught by basic QA testing before launch — what's the honest answer?
+### A skeptical CTO might ask why this wasn't caught by basic QA testing before launch - what's the honest answer?
 
-Because standard QA typically tests whether a feature works as intended for one account at a time, not whether it actively refuses a request for another account's data — that second test requires deliberately thinking like an adversary, which isn't how most functional QA checklists are written.
+Because standard QA typically tests whether a feature works as intended for one account at a time, not whether it actively refuses a request for another account's data - that second test requires deliberately thinking like an adversary, which isn't how most functional QA checklists are written.
 
 ### Does Manifera's background building systems for research organizations like TNO carry over to a two-person legal-tech startup like ClauseCheck?
 
-The scale is obviously different, but the underlying discipline isn't — the habit of explicitly verifying ownership at the data layer rather than trusting the UI is the same principle whether the client is a national research institute or a solo founder in Utrecht.
+The scale is obviously different, but the underlying discipline isn't - the habit of explicitly verifying ownership at the data layer rather than trusting the UI is the same principle whether the client is a national research institute or a solo founder in Utrecht.
 
 ### Is there a reason Manifera keeps its main engineering center in Vietnam rather than closer to its Dutch client base?
 
-It reflects a deliberate structure rather than a compromise — the Ho Chi Minh City development center provides the depth of engineering talent needed to do this work properly, while the Amsterdam office at Herengracht 420 keeps the client relationship and scoping conversation close to the founders it serves.
+It reflects a deliberate structure rather than a compromise - the Ho Chi Minh City development center provides the depth of engineering talent needed to do this work properly, while the Amsterdam office at Herengracht 420 keeps the client relationship and scoping conversation close to the founders it serves.
 
 ### Would this same kind of isolation gap show up in a product built on Supabase differently than one on a custom Node.js backend?
 
-The specific implementation differs, but the underlying risk doesn't — Supabase's row-level security features can prevent this exact issue if configured correctly, but AI-generated setups frequently leave RLS disabled or misconfigured by default, which is functionally the same gap as a missing check in custom backend code.
+The specific implementation differs, but the underlying risk doesn't - Supabase's row-level security features can prevent this exact issue if configured correctly, but AI-generated setups frequently leave RLS disabled or misconfigured by default, which is functionally the same gap as a missing check in custom backend code.
 
 ### How does a founder even bring up a concern like this to LaunchStudio if they don't know the technical term for it?
 
-By just describing the fear in plain language — "could one customer somehow see another customer's data" is exactly the kind of question the 15-minute intro call is built to translate into a specific, scoped technical review, without requiring the founder to already know what to call it.
+By just describing the fear in plain language - "could one customer somehow see another customer's data" is exactly the kind of question the 15-minute intro call is built to translate into a specific, scoped technical review, without requiring the founder to already know what to call it.
 
 ### Can I run the two-account isolation test myself without any technical help?
 
-Yes — creating two test accounts and checking whether one can reach the other's data by changing a URL or request ID requires no coding at all. A full review still adds value beyond that manual test, since it also checks paths a founder's own test won't reach, like background jobs, data exports, and third-party integrations that touch the same customer data.
+Yes - creating two test accounts and checking whether one can reach the other's data by changing a URL or request ID requires no coding at all. A full review still adds value beyond that manual test, since it also checks paths a founder's own test won't reach, like background jobs, data exports, and third-party integrations that touch the same customer data.
 
 <script type="application/ld+json">
 {
@@ -166,7 +166,7 @@ Yes — creating two test accounts and checking whether one can reach the other'
       "name": "Can I run a two-account isolation test myself without technical help?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, no coding required — though a full review also checks background jobs, exports, and integrations a manual test won't reach."
+        "text": "Yes, no coding required - though a full review also checks background jobs, exports, and integrations a manual test won't reach."
       }
     }
   ]

@@ -1,4 +1,4 @@
-🔥 Tobias built TaskFlow AI using **Lovable** — an AI project-management tool where new users landed on an empty workspace and waited 25 seconds with no feedback before seeing any value. 🧠
+🔥 Tobias built TaskFlow AI using **Lovable** - an AI project-management tool where new users landed on an empty workspace and waited 25 seconds with no feedback before seeing any value. 🧠
 
 If new signups hit an empty dashboard, a mandatory setup wizard, or a silent 20-30 second wait for their first AI result, most of them are gone before your product ever gets evaluated on its merits.
 
@@ -12,7 +12,7 @@ If new signups hit an empty dashboard, a mandatory setup wizard, or a silent 20-
 
 At **LaunchStudio**, we've been closing exactly this class of activation gap since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Tobias's activation path went from ignored to instant: median time-to-value dropped from over three minutes to 48 seconds, and TaskFlow AI's day-2 return rate for new signups increased measurably within the first month. (€1,400 (Launch Ready Package) — 5 business days.) 🚀
+Tobias's activation path went from ignored to instant: median time-to-value dropped from over three minutes to 48 seconds, and TaskFlow AI's day-2 return rate for new signups increased measurably within the first month. (€1,400 (Launch Ready Package) - 5 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-bad-onboarding-flow-time-to-value
 

@@ -1,6 +1,6 @@
-🚨 Zes werkdagen tot de deadline. Een vrachtmakelaar wachtte op zijn SOC 2 Lite-vragenlijst. Geen team, geen compliance-afdeling — alleen Milan, alleen aan zijn bureau. 😳
+🚨 Zes werkdagen tot de deadline. Een vrachtmakelaar wachtte op zijn SOC 2 Lite-vragenlijst. Geen team, geen compliance-afdeling - alleen Milan, alleen aan zijn bureau. 😳
 
-Solo bouwen met Cursor betekent optimaliseren voor snelheid, niet voor toegangslogging en incidentresponsplannen — tot een enterprise-koper er ineens naar vraagt. Dit is de valkuil van zelf doen onder deadline: 🧠
+Solo bouwen met Cursor betekent optimaliseren voor snelheid, niet voor toegangslogging en incidentresponsplannen - tot een enterprise-koper er ineens naar vraagt. Dit is de valkuil van zelf doen onder deadline: 🧠
 
 ❌ Drie dagen zelf proberen te implementeren wat "goede" rolgebaseerde toegangscontrole leek
 ❌ Geen betrouwbare manier om te verifiëren of het écht standhoudt onder een beveiligingsbeoordeling

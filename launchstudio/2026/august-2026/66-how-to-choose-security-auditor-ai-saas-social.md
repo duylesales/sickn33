@@ -1,4 +1,4 @@
-🔍 Kwame built a document-analysis SaaS using **Bolt** — and got security audit quotes of €4,000 to €9,000 before he ever fixed the obvious gaps himself. 🧠
+🔍 Kwame built a document-analysis SaaS using **Bolt** - and got security audit quotes of €4,000 to €9,000 before he ever fixed the obvious gaps himself. 🧠
 
 If you request an audit quote with disabled RLS, exposed API keys, and no rate limiting still in place, you're paying auditors to document things an engineer already knows are broken.
 
@@ -12,7 +12,7 @@ If you request an audit quote with disabled RLS, exposed API keys, and no rate l
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Kwame's application achieved production readiness: His final audit engagement dropped from an estimated €9,000-plus-remediation down to a flat €3,500, and it passed clean on the first attempt. (€2,600 (Launch & Grow Package) — 10 business days.). 🚀
+Kwame's application achieved production readiness: His final audit engagement dropped from an estimated €9,000-plus-remediation down to a flat €3,500, and it passed clean on the first attempt. (€2,600 (Launch & Grow Package) - 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/how-to-choose-security-auditor-ai-saas
 

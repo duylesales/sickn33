@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Generated App Security: Password Resets and Magic Links Done Right",
-  "description": "Password reset and magic-link flows are the quiet back door of AI generated app security. This article covers token entropy, expiry, single use, host header poisoning, enumeration, session invalidation and email delivery — with a checklist for technical founders.",
+  "description": "Password reset and magic-link flows are the quiet back door of AI generated app security. This article covers token entropy, expiry, single use, host header poisoning, enumeration, session invalidation and email delivery - with a checklist for technical founders.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-01",
@@ -21,9 +21,9 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Attackers rarely break your login form. They go around it. The password reset flow — and its cousin, the magic link — is a second way into every account, and in AI generated app security it is one of the least examined parts of the codebase. The login screen gets attention because everyone uses it. The reset flow is used rarely, tested once and then forgotten, which is exactly what makes it attractive.
+Attackers rarely break your login form. They go around it. The password reset flow - and its cousin, the magic link - is a second way into every account, and in AI generated app security it is one of the least examined parts of the codebase. The login screen gets attention because everyone uses it. The reset flow is used rarely, tested once and then forgotten, which is exactly what makes it attractive.
 
-If your auth runs fully on a mature provider such as Supabase Auth, Auth0 or Firebase Auth, most of this is handled for you — as long as you have not wrapped it in custom code. The trouble starts when an AI tool generates its own reset logic, or its own "passwordless" login, on top.
+If your auth runs fully on a mature provider such as Supabase Auth, Auth0 or Firebase Auth, most of this is handled for you - as long as you have not wrapped it in custom code. The trouble starts when an AI tool generates its own reset logic, or its own "passwordless" login, on top.
 
 ## What a Reset Link Really Is
 
@@ -31,11 +31,11 @@ A reset link is a temporary password. Whoever holds it can take over the account
 
 ## AI Generated App Security: Seven Mistakes in Reset Flows
 
-**1. Guessable tokens.** Tokens built from `Math.random()`, timestamps, user IDs or short numeric codes can be predicted or brute-forced. Tokens must come from a cryptographically secure random generator and be long enough — 128 bits or more.
+**1. Guessable tokens.** Tokens built from `Math.random()`, timestamps, user IDs or short numeric codes can be predicted or brute-forced. Tokens must come from a cryptographically secure random generator and be long enough - 128 bits or more.
 
 **2. No expiry, or a long one.** Links that work for days or forever turn every old email in someone's inbox into a key. Fifteen to sixty minutes is typical for resets; magic links are often shorter.
 
-**3. Reusable tokens.** After a successful reset, the token should be invalidated. Many generated flows leave it valid, so anyone who later sees the link — in a forwarded email, a shared screen, browser history — can use it again.
+**3. Reusable tokens.** After a successful reset, the token should be invalidated. Many generated flows leave it valid, so anyone who later sees the link - in a forwarded email, a shared screen, browser history - can use it again.
 
 **4. Tokens stored in plain text.** If the database stores reset tokens as-is, anyone with read access to that table, or a leaked backup, can take over accounts with pending resets. Store a hash, as you would a password.
 
@@ -43,7 +43,7 @@ A reset link is a temporary password. Whoever holds it can take over the account
 
 **6. Enumeration.** "No account found with that email" tells an attacker which addresses are customers. Always respond with the same message.
 
-**7. Sessions survive the reset.** When someone resets a password — often because they suspect compromise — existing sessions elsewhere should end. AI-generated flows usually just update the password hash.
+**7. Sessions survive the reset.** When someone resets a password - often because they suspect compromise - existing sessions elsewhere should end. AI-generated flows usually just update the password hash.
 
 ## Magic Links Have the Same Rules, and One More
 
@@ -117,7 +117,7 @@ Magic links are convenient on the same device; one-time codes work better when u
 
 ## Account Recovery Beyond Email
 
-If a user loses access to their email, recovery becomes a support process — and a social-engineering target. Define in advance what evidence you accept (for example access to a verified phone number, recent payment details or identity verification for high-value accounts), log recovery actions, notify the old email address of the change and apply a cooling-off period before sensitive actions. For apps holding sensitive data, offer two-factor authentication with recovery codes, so users can recover without support.
+If a user loses access to their email, recovery becomes a support process - and a social-engineering target. Define in advance what evidence you accept (for example access to a verified phone number, recent payment details or identity verification for high-value accounts), log recovery actions, notify the old email address of the change and apply a cooling-off period before sensitive actions. For apps holding sensitive data, offer two-factor authentication with recovery codes, so users can recover without support.
 
 ## Notifications That Help Users Spot Attacks
 
@@ -137,7 +137,7 @@ For apps holding sensitive data or admin powers, offer two-factor authentication
 
 ## Passkeys: Where Authentication Is Heading
 
-Passkeys replace passwords with cryptographic credentials stored on users' devices and synced by their platform. They are resistant to phishing and credential stuffing and remove the need for password resets in many cases. Support is growing across browsers, operating systems and auth providers. For new AI-built apps, offering passkeys alongside email-based login is an increasingly practical option — and it reduces the attack surface this article describes.
+Passkeys replace passwords with cryptographic credentials stored on users' devices and synced by their platform. They are resistant to phishing and credential stuffing and remove the need for password resets in many cases. Support is growing across browsers, operating systems and auth providers. For new AI-built apps, offering passkeys alongside email-based login is an increasingly practical option - and it reduces the attack surface this article describes.
 
 ## Common Questions From Users
 
@@ -149,11 +149,11 @@ Request a reset for a real account and inspect everything: the email's sender do
 
 ## Why This Deserves Founder Attention
 
-Password reset and magic-link flows rarely appear in demos, and founders rarely click them after launch. Yet they decide whether an attacker can take over an account without ever knowing its password. A few hours spent on token strength, expiry, single use, safe URLs, rate limits and session revocation protects every account in your app — including your own admin account, which is often the most valuable target of all. Put the checks on your launch list next to payments and access control, where they belong.
+Password reset and magic-link flows rarely appear in demos, and founders rarely click them after launch. Yet they decide whether an attacker can take over an account without ever knowing its password. A few hours spent on token strength, expiry, single use, safe URLs, rate limits and session revocation protects every account in your app - including your own admin account, which is often the most valuable target of all. Put the checks on your launch list next to payments and access control, where they belong.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio reviews authentication flows as part of every security pass, and reset and magic-link logic is where custom AI-generated code most often needs replacing with a provider's built-in flow or a hardened implementation. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink started his career in cybersecurity — he co-founded CyberDevOps, now CFLW Cyber Strategies — and whose engineers in Ho Chi Minh City have built authentication for enterprise systems for more than 11 years. See [Manifera's about page](https://www.manifera.com/about-us/).
+LaunchStudio reviews authentication flows as part of every security pass, and reset and magic-link logic is where custom AI-generated code most often needs replacing with a provider's built-in flow or a hardened implementation. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink started his career in cybersecurity - he co-founded CyberDevOps, now CFLW Cyber Strategies - and whose engineers in Ho Chi Minh City have built authentication for enterprise systems for more than 11 years. See [Manifera's about page](https://www.manifera.com/about-us/).
 
 If you are not sure who wrote your reset flow, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
 
@@ -161,7 +161,7 @@ If you are not sure who wrote your reset flow, [talk to an engineer who understa
 
 ### An AI-Native Founder in Action: A Cleaning Company Scheduler With a Six-Digit Back Door
 
-Tijmen Boersma, who runs a commercial cleaning company in Almelo, built Poetsplan with Cursor: a scheduling SaaS for cleaning companies, where planners assign cleaners to office buildings and clients see completed rounds and building access notes — including alarm codes. Twenty-two cleaning companies in Twente used it.
+Tijmen Boersma, who runs a commercial cleaning company in Almelo, built Poetsplan with Cursor: a scheduling SaaS for cleaning companies, where planners assign cleaners to office buildings and clients see completed rounds and building access notes - including alarm codes. Twenty-two cleaning companies in Twente used it.
 
 Tijmen had asked Cursor for "passwordless login with a code by email." The result sent a six-digit numeric code, valid for 24 hours, with no limit on attempts. A security-minded client tested it and guessed his way into a test account within an afternoon using a simple script. The review found more: the separate password reset flow built its link from the request's host header, tokens were stored in plain text, reset did not end other sessions, and the login form said "unknown email" for non-customers.
 
@@ -170,9 +170,9 @@ LaunchStudio's engineers replaced the custom login and reset code with Supabase 
 **Result:** The client's follow-up test found no way in, and Poetsplan passed that client's supplier security check. It has since grown to 35 cleaning companies.
 
 > *"I asked for convenience and got a lock with six digits and unlimited guesses. The fix was mostly using what my auth provider already did properly."*
-> — **Tijmen Boersma, Founder, Poetsplan (Almelo)**
+> - **Tijmen Boersma, Founder, Poetsplan (Almelo)**
 
-**Cost & Timeline:** €1,150 (authentication flow replacement, rate limiting, session handling and email setup) — completed in 4 business days.
+**Cost & Timeline:** €1,150 (authentication flow replacement, rate limiting, session handling and email setup) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

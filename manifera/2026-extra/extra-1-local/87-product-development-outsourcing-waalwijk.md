@@ -22,26 +22,26 @@ target_persona: "CTO"
 
 "We sign an NDA" is the answer every vendor gives when a CTO asks about IP protection, and it's also the answer that tells the CTO absolutely nothing about whether the underlying protection would actually survive a due-diligence review.
 
-**The Pain:** A CTO at a footwear-technology company in Waalwijk — a Noord-Brabant town with deep roots in the Netherlands' leather and footwear-manufacturing industry, now applying that expertise to smart-material and fit-technology software — is product development outsourcing for a proprietary fit-optimization algorithm and needs IP protection specific enough to hold up if the company is ever acquired or raises institutional funding.
+**The Pain:** A CTO at a footwear-technology company in Waalwijk - a Noord-Brabant town with deep roots in the Netherlands' leather and footwear-manufacturing industry, now applying that expertise to smart-material and fit-technology software - is product development outsourcing for a proprietary fit-optimization algorithm and needs IP protection specific enough to hold up if the company is ever acquired or raises institutional funding.
 
-**The Agitation:** A CTO who accepts a generic NDA as sufficient IP protection discovers, usually during a future funding round's due-diligence process, that the actual protection was thinner than assumed — no individual engineer NDAs, no clarity on whether the IP clause survives contract termination, no clean chain of custody for who touched the proprietary algorithm. Discovering this gap during due diligence, with a deal timeline already running, is a far worse moment to find it than before signing the original outsourcing contract.
+**The Agitation:** A CTO who accepts a generic NDA as sufficient IP protection discovers, usually during a future funding round's due-diligence process, that the actual protection was thinner than assumed - no individual engineer NDAs, no clarity on whether the IP clause survives contract termination, no clean chain of custody for who touched the proprietary algorithm. Discovering this gap during due diligence, with a deal timeline already running, is a far worse moment to find it than before signing the original outsourcing contract.
 
 ## What IP Protection Actually Needs to Specify
 
 A generic NDA is a starting point, not a complete IP-protection standard, and a CTO product development outsourcing for genuinely proprietary logic needs the contract to specify several things a standard NDA typically leaves vague.
 
-The first specific requirement is individual-engineer-level NDA coverage, not just an agreement at the vendor-entity level — a due-diligence review will ask specifically whether every individual who touched the proprietary code was personally bound, and a vendor-entity-only NDA doesn't answer that question satisfactorily.
+The first specific requirement is individual-engineer-level NDA coverage, not just an agreement at the vendor-entity level - a due-diligence review will ask specifically whether every individual who touched the proprietary code was personally bound, and a vendor-entity-only NDA doesn't answer that question satisfactorily.
 
-The second is explicit language confirming the IP assignment clause survives contract termination — an NDA that's silent on this, or ambiguous, creates exactly the kind of gap a diligence lawyer is trained to flag, at precisely the moment a CTO has the least leverage to fix it.
+The second is explicit language confirming the IP assignment clause survives contract termination - an NDA that's silent on this, or ambiguous, creates exactly the kind of gap a diligence lawyer is trained to flag, at precisely the moment a CTO has the least leverage to fix it.
 
-The third is a clean, documented chain of custody — repository access logs, commit history tied to named individuals, and confirmation that source code was never held outside client-controlled infrastructure — which turns "we protected your IP" from an assertion into something a diligence team can actually verify.
+The third is a clean, documented chain of custody - repository access logs, commit history tied to named individuals, and confirmation that source code was never held outside client-controlled infrastructure - which turns "we protected your IP" from an assertion into something a diligence team can actually verify.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads ensure individual-engineer NDA coverage and post-termination IP survival language are standard in every contract, not an optional upgrade.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod works exclusively within client-controlled infrastructure, maintaining a clean, documented chain of custody for every proprietary component touched.
 
-This is Dutch Management × Vietnamese Mastery — IP protection specific enough to actually survive due diligence. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - IP protection specific enough to actually survive due diligence. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Passo Digital Calçados Ltda, a footwear-technology company based in São Paulo,
 Manifera restructured the IP agreement to include individual engineer NDAs, explicit post-termination survival language, and a documented chain-of-custody record for the proprietary codebase going forward. The acquisition ultimately closed, with the diligence team specifically noting the restructured IP terms as having resolved their earlier concern.
 
 > *"We thought an NDA was an NDA. The acquirer's lawyers thought otherwise, and the six weeks we lost renegotiating it under deal pressure is exactly what we should have fixed before we ever signed the original contract."*
-> — **CTO, Passo Digital Calçados Ltda, Brazil**
+> - **CTO, Passo Digital Calçados Ltda, Brazil**
 
 ## Generic NDA Protection vs. Manifera's Diligence-Ready IP Standard
 
@@ -84,7 +84,7 @@ During due diligence for a funding round or acquisition, when a deal timeline is
 
 ### (Scenario: CTO trying to verify a vendor's IP protection claims) How can a CTO verify a vendor's IP protection is more than just an assertion?
 
-Ask for documented chain-of-custody evidence — repository access logs and commit history tied to named individuals — that a diligence team could actually review and verify.
+Ask for documented chain-of-custody evidence - repository access logs and commit history tied to named individuals - that a diligence team could actually review and verify.
 
 ### (Scenario: CTO structuring an outsourcing contract for proprietary logic) What should be non-negotiable in an IP-protection clause for genuinely proprietary work?
 

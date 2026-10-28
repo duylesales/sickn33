@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Venlo telt ongeveer 100.000 inwoners in Noord-Limburg, direct aan de Duitse grens. Het is een van de grootste logistieke concentraties van Europa en een belangrijk knooppunt voor de versehandel. Die combinatie levert een specifiek soort werk op — optimalisatie en forecasting onder harde fysieke en tijdsrandvoorwaarden — plus een grensarbeidsmarkt die vrijwel geen Nederlandse AI-kandidaat meeweegt.
+Venlo telt ongeveer 100.000 inwoners in Noord-Limburg, direct aan de Duitse grens. Het is een van de grootste logistieke concentraties van Europa en een belangrijk knooppunt voor de versehandel. Die combinatie levert een specifiek soort werk op - optimalisatie en forecasting onder harde fysieke en tijdsrandvoorwaarden - plus een grensarbeidsmarkt die vrijwel geen Nederlandse AI-kandidaat meeweegt.
 
 ## Waarom logistieke optimalisatie een echt technisch domein is
 
@@ -47,7 +47,7 @@ Verse producten degraderen. Dat ene feit werkt door in alles. Een vertraging die
 
 **Verspilling minimaliseren als expliciet doel.** Voedselverspilling heeft ecologisch, financieel en steeds meer regelgevend gewicht. Optimaliseren om die te verlagen, onder servicetoezeggingen, is een multi-objectiefprobleem met echte spanning.
 
-**Kwaliteitsinspectie met vision.** Producten sorteren op uiterlijk is een computer vision-probleem gecompliceerd door natuurlijke variatie, belichting, en het feit dat menselijke sorteerders zelf van mening verschillen — labelruis is hier structureel.
+**Kwaliteitsinspectie met vision.** Producten sorteren op uiterlijk is een computer vision-probleem gecompliceerd door natuurlijke variatie, belichting, en het feit dat menselijke sorteerders zelf van mening verschillen - labelruis is hier structureel.
 
 ## Het entiteitenlandschap van Venlo
 
@@ -98,15 +98,15 @@ De praktische barrières zijn reëel. Duits wordt doorgaans verwacht voor engine
 
 ## Waarom de optimalisatievaardigheid ondervoorzien is
 
-Opleidingen in data science hebben zich sterk geconcentreerd op statistisch leren en neurale methoden. Operations research — lineaire en integer programmering, combinatorische optimalisatie, heuristiekontwerp, wachttijdtheorie — wordt minder onderwezen dan een generatie terug, terwijl de vraag niet is gedaald.
+Opleidingen in data science hebben zich sterk geconcentreerd op statistisch leren en neurale methoden. Operations research - lineaire en integer programmering, combinatorische optimalisatie, heuristiekontwerp, wachttijdtheorie - wordt minder onderwezen dan een generatie terug, terwijl de vraag niet is gedaald.
 
-Voor een kandidaat betekent dat: de optimalisatiekant van logistiek is een minder druk specialisme dan de modelleerkant. En het materiaal is stabiel — een integer-programmeringsformulering die je nu leert, blijft onbeperkt geldig.
+Voor een kandidaat betekent dat: de optimalisatiekant van logistiek is een minder druk specialisme dan de modelleerkant. En het materiaal is stabiel - een integer-programmeringsformulering die je nu leert, blijft onbeperkt geldig.
 
 ## Hoe een logistieke datafunctie werkelijk wordt gevuld
 
 Stel een dienstverlener met enkele honderden voertuigen, die routes plant met commerciële software plus ervaren planners die het systeem vaak overrulen.
 
-Wat ze nodig hebben is iemand die begrijpt waaróm de planners overrulen — doorgaans echte randvoorwaarden die de software niet modelleert, zoals klantrelaties, chauffeursvoorkeuren of locatiespecifieke beperkingen — en die vervolgens die randvoorwaarden vastlegt of aantoont waarom de automatische oplossing toch acceptabel is.
+Wat ze nodig hebben is iemand die begrijpt waaróm de planners overrulen - doorgaans echte randvoorwaarden die de software niet modelleert, zoals klantrelaties, chauffeursvoorkeuren of locatiespecifieke beperkingen - en die vervolgens die randvoorwaarden vastlegt of aantoont waarom de automatische oplossing toch acceptabel is.
 
 Dit is evenzeer een organisatorisch als een technisch probleem. Wie binnenkomt met de bedoeling de planners te vervangen, faalt: zij bezitten kennis die nergens is opgeschreven.
 

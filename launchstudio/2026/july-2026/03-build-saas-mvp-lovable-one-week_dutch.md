@@ -25,11 +25,11 @@ Voorbeelden van sterke MVP’s met één functie:
 ### Voorbereidingscontrolelijst
 
 Voordat u Lovable opent, voltooit u deze taken:
-1. **Schrijf uw productoverzicht** — Eén paragraaf waarin wordt beschreven wat uw product doet, voor wie het is bedoeld en waarom het ertoe doet
-2. **Schets uw schermen** — Teken ruwe wireframes van 3 tot 5 hoofdschermen op papier of in een eenvoudig hulpmiddel zoals Excalidraw
-3. **Definieer uw datamodel** — Maak een lijst van de belangrijkste objecten die uw app beheert (gebruikers, trainingen, boekingen, beoordelingen) en hun belangrijkste kenmerken
-4. **Maak uw Supabase-project** — Meld u aan op supabase.com en maak een nieuw project aan. Noteer uw project-URL en anon-sleutel
-5. **Kies uw bedrijfsmodel** — Bepaal of u abonnementen, eenmalige kosten of op gebruik gebaseerde prijzen in rekening brengt (dit heeft invloed op architectuurbeslissingen)
+1. **Schrijf uw productoverzicht** - Eén paragraaf waarin wordt beschreven wat uw product doet, voor wie het is bedoeld en waarom het ertoe doet
+2. **Schets uw schermen** - Teken ruwe wireframes van 3 tot 5 hoofdschermen op papier of in een eenvoudig hulpmiddel zoals Excalidraw
+3. **Definieer uw datamodel** - Maak een lijst van de belangrijkste objecten die uw app beheert (gebruikers, trainingen, boekingen, beoordelingen) en hun belangrijkste kenmerken
+4. **Maak uw Supabase-project** - Meld u aan op supabase.com en maak een nieuw project aan. Noteer uw project-URL en anon-sleutel
+5. **Kies uw bedrijfsmodel** - Bepaal of u abonnementen, eenmalige kosten of op gebruik gebaseerde prijzen in rekening brengt (dit heeft invloed op architectuurbeslissingen)
 
 ## Dagen 2–3: bouw uw hoofdinterface
 
@@ -52,10 +52,10 @@ Na de eerste generatie bouwt u de functionaliteit scherm voor scherm uit:
 4. **Prompt 5**: "Voeg navigatie toe tussen alle pagina's met behulp van de zijbalk."
 
 ### Veelvoorkomende fouten van dag 2–3
-- **Te veel in één prompt** — Als uw prompt langer is dan een alinea, splits deze dan op in meerdere stappen
-- **Ontwerpen vóór functionaliteit** — Zorg eerst dat de functies werken en verfijn vervolgens het visuele ontwerp
-- **Mobiel negeren** — Voeg "maak het responsief" toe in uw prompts; Mobiel later repareren is moeilijker
-- **De gegenereerde code wordt niet beoordeeld** — Zelfs als u niet kunt coderen, klikt u door elk scherm en test u elke knop
+- **Te veel in één prompt** - Als uw prompt langer is dan een alinea, splits deze dan op in meerdere stappen
+- **Ontwerpen vóór functionaliteit** - Zorg eerst dat de functies werken en verfijn vervolgens het visuele ontwerp
+- **Mobiel negeren** - Voeg "maak het responsief" toe in uw prompts; Mobiel later repareren is moeilijker
+- **De gegenereerde code wordt niet beoordeeld** - Zelfs als u niet kunt coderen, klikt u door elk scherm en test u elke knop
 
 ## Dag 4: Verbind uw Supabase-database
 
@@ -69,10 +69,10 @@ Op dag vier transformeer je jouw statische prototype naar een dynamische applica
 ### Beste praktijken voor gegevensmodellen
 
 Wanneer Lovable uw databaseschema genereert, controleer dan op deze veelvoorkomende problemen:
-- **Ontbrekende relaties** — Zorg ervoor dat externe sleutels gerelateerde tabellen verbinden (trainingen zijn bijvoorbeeld van een gebruiker)
-- **Geen tijdstempels** — Elke tabel zou kolommen create_at en update_at moeten hebben
-- **Onjuiste gegevenstypen** — Controleer of prijzen worden opgeslagen als gehele getallen (centen), datums als tijdstempels en ID's als UUID's
-- **Ontbrekende indexen** — Kolommen waarnaar u vaak zoekt of waarop u filtert, moeten worden geïndexeerd
+- **Ontbrekende relaties** - Zorg ervoor dat externe sleutels gerelateerde tabellen verbinden (trainingen zijn bijvoorbeeld van een gebruiker)
+- **Geen tijdstempels** - Elke tabel zou kolommen create_at en update_at moeten hebben
+- **Onjuiste gegevenstypen** - Controleer of prijzen worden opgeslagen als gehele getallen (centen), datums als tijdstempels en ID's als UUID's
+- **Ontbrekende indexen** - Kolommen waarnaar u vaak zoekt of waarop u filtert, moeten worden geïndexeerd
 
 **Belangrijk**: Lovable slaat de configuratie van Row Level Security (RLS) vaak over. Dit is een kritiek beveiligingslek dat vóór de lancering moet worden aangepakt. We behandelen dit in ons artikel over [Row Level Security voor Supabase](https://launchstudio.eu/en/insights/row-level-security-supabase/).
 
@@ -97,11 +97,11 @@ Gebruikersauthenticatie transformeert uw prototype van een demo naar een applica
 De laatste twee dagen gaan over het polijsten van uw MVP tot een niveau dat indruk maakt op gebruikers en investeerders.
 
 ### Verfijningsprioriteiten
-1. **Problemen oplossen** — Klik door elke stroom en repareer alles wat kapot gaat
-2. **Verbeter de foutafhandeling** — Voeg laadstatussen, foutmeldingen en lege statussen toe
-3. **Verfijn de gebruikersinterface** — Consistente spatiëring, professionele typografie en duidelijke visuele hiërarchie
+1. **Problemen oplossen** - Klik door elke stroom en repareer alles wat kapot gaat
+2. **Verbeter de foutafhandeling** - Voeg laadstatussen, foutmeldingen en lege statussen toe
+3. **Verfijn de gebruikersinterface** - Consistente spatiëring, professionele typografie en duidelijke visuele hiërarchie
 4. **Test op mobiel**: open uw app op een telefoon en los eventuele lay-outproblemen op
-5. **Voeg een landingspagina toe** — Maak een openbare pagina met uitleg over uw product en een aanmeldings-CTA
+5. **Voeg een landingspagina toe** - Maak een openbare pagina met uitleg over uw product en een aanmeldings-CTA
 
 ### Wanneer moet u stoppen met bouwen?
 
@@ -116,10 +116,10 @@ Je weet dat je MVP klaar is als:
 Your Lovable MVP is een krachtige validatietool, maar is nog niet klaar voor betalende klanten. Voordat u echte betalingen kunt accepteren, echte gebruikersgegevens kunt verwerken en op grote schaal kunt opereren, moet u professioneel productiegereed zijn.
 
 De typische hiaten in een Lovable MVP zijn onder meer:
-- **Verscherping van de beveiliging** — RLS-beleid, invoervalidatie, veilige API-patronen
-- **Betalingsintegratie** — Stripe in live-modus, webhookverificatie, abonnementsbeheer
-- **Productie-implementatie** — Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
-- **Prestaties** — Database-optimalisatie, caching, beeldoptimalisatie
+- **Verscherping van de beveiliging** - RLS-beleid, invoervalidatie, veilige API-patronen
+- **Betalingsintegratie** - Stripe in live-modus, webhookverificatie, abonnementsbeheer
+- **Productie-implementatie** - Aangepast domein, SSL, omgevingsvariabelen, foutopsporing
+- **Prestaties** - Database-optimalisatie, caching, beeldoptimalisatie
 
 Dit is waar **LaunchStudio** in beeld komt. Als initiatief mogelijk gemaakt door **Manifera**, een internationaal bedrijf voor de ontwikkeling van aangepaste software onder leiding van oprichter en directeur **Herre Roelevink**, overbrugt LaunchStudio de kloof tussen uw AI-prototype en een product van ondernemingskwaliteit. 
 
@@ -148,7 +148,7 @@ Mark wendde zich tot **LaunchStudio (door Manifera)**. In plaats van zijn Lovabl
 
 **Resultaat:** Mark lanceerde zijn logistieke SaaS slechts twee weken later voor zijn eerste betalende klanten. *"Lovable heeft me geholpen de auto te bouwen, maar LaunchStudio heeft de motor en de remmen gebouwd zodat ik er veilig mee op de snelweg kon rijden."*
 
-**Kosten en tijdlijn:** € 1.800 (schaalpakket) — productieklaar en binnen 8 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.800 (schaalpakket) - productieklaar en binnen 8 werkdagen geïmplementeerd.
 
 ---
 

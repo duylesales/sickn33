@@ -1,8 +1,8 @@
-📝 Charlotte Wolters bouwde DataKoppel, een enterprise data-sync SaaS, met Lovable. Ze had al tientallen beveiligingsvragen zelfverzekerd beantwoord — versleuteling, toegangscontroles, back-upfrequentie — tot één vraag haar volledig deed stilvallen: beschrijf uw incident-response- en breach-notificatieproces. 😳
+📝 Charlotte Wolters bouwde DataKoppel, een enterprise data-sync SaaS, met Lovable. Ze had al tientallen beveiligingsvragen zelfverzekerd beantwoord - versleuteling, toegangscontroles, back-upfrequentie - tot één vraag haar volledig deed stilvallen: beschrijf uw incident-response- en breach-notificatieproces. 😳
 
 Er was geen document. Geen plan. Niets om te versturen. 🧠
 
-❌ De vraag ging niet over welke beschermingen bestaan — maar over wat er gebeurt wanneer die toch falen
+❌ De vraag ging niet over welke beschermingen bestaan - maar over wat er gebeurt wanneer die toch falen
 ❌ Geen regel code vertegenwoordigt "informeer getroffen klanten binnen 72 uur na een inbreuk"
 ❌ Niets aan het uitleveren van functies dwingt dit beleid ooit af om opgeschreven te worden
 ❌ De deal liep drie weken vast terwijl Charlotte zich onder druk haastte om iets vanuit het niets te produceren

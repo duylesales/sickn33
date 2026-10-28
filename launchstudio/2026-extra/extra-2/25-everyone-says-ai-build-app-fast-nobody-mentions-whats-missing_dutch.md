@@ -63,16 +63,16 @@ Manifera's engineering voor concurrency en databasevergrendeling wordt geleverd 
 
 ## Andere Plekken Waar Ditzelfde Foutpatroon Zich Verbergt Buiten Boekingen
 
-Race conditions zijn niet uniek voor kamer- en bureaureserveringen — hetzelfde patroon van "eerst controleren, dan handelen" (check-then-act) duikt overal op waar een beperkte bron kan worden geclaimd. Het herkennen van dit patroon helpt een oprichter om het te signaleren op plekken die helemaal niet op een boekingssysteem lijken.
+Race conditions zijn niet uniek voor kamer- en bureaureserveringen - hetzelfde patroon van "eerst controleren, dan handelen" (check-then-act) duikt overal op waar een beperkte bron kan worden geclaimd. Het herkennen van dit patroon helpt een oprichter om het te signaleren op plekken die helemaal niet op een boekingssysteem lijken.
 
 **Veelvoorkomende plekken waar dit exacte patroon verschijnt:**
 
-- **Kortings- en couponcodes** — een promotie van het type "beperkt tot de eerste 100 klanten" die wordt gecontroleerd en vervolgens toegepast als twee afzonderlijke stappen, kan ruim boven de 100 keer worden verzilverd als er voldoende verzoeken vlak na elkaar binnenkomen. Elk verzoek kan immers slagen voor de controle op het aantal voordat een ervan klaar is met het ophogen van de teller.
-- **Betaal- en afrekenstromen** — een knop "betaling verzenden" waar twee keer snel achter elkaar op wordt geklikt, hetzij door een ongeduldige klant of door een automatische netwerkhertoetsing, kan leiden tot dubbele afschrijvingen als het systeem de inzending niet als één enkele, beschermde transactie behandelt.
-- **Voorraadaantallen** — een e-commerceproduct met een beperkte voorraad, waarbij het controleren en verlagen als afzonderlijke stappen plaatsvindt, kan oververkocht raken op exact dezelfde manier als een vergaderruimte dubbel geboekt kan worden, met exact dezelfde onderliggende oorzaak.
-- **Registratie van gebruikersnamen of handles** — twee registraties voor dezelfde unieke gebruikersnaam die vlak na elkaar binnenkomen, kunnen beide slagen als de uniekheid wordt gecontroleerd voordat een van beide registraties daadwerkelijk wordt vastgelegd in de database. Dit laat de database achter in een inconsistente staat die achteraf vaak pijnlijk lastig op te schonen is.
+- **Kortings- en couponcodes** - een promotie van het type "beperkt tot de eerste 100 klanten" die wordt gecontroleerd en vervolgens toegepast als twee afzonderlijke stappen, kan ruim boven de 100 keer worden verzilverd als er voldoende verzoeken vlak na elkaar binnenkomen. Elk verzoek kan immers slagen voor de controle op het aantal voordat een ervan klaar is met het ophogen van de teller.
+- **Betaal- en afrekenstromen** - een knop "betaling verzenden" waar twee keer snel achter elkaar op wordt geklikt, hetzij door een ongeduldige klant of door een automatische netwerkhertoetsing, kan leiden tot dubbele afschrijvingen als het systeem de inzending niet als één enkele, beschermde transactie behandelt.
+- **Voorraadaantallen** - een e-commerceproduct met een beperkte voorraad, waarbij het controleren en verlagen als afzonderlijke stappen plaatsvindt, kan oververkocht raken op exact dezelfde manier als een vergaderruimte dubbel geboekt kan worden, met exact dezelfde onderliggende oorzaak.
+- **Registratie van gebruikersnamen of handles** - twee registraties voor dezelfde unieke gebruikersnaam die vlak na elkaar binnenkomen, kunnen beide slagen als de uniekheid wordt gecontroleerd voordat een van beide registraties daadwerkelijk wordt vastgelegd in de database. Dit laat de database achter in een inconsistente staat die achteraf vaak pijnlijk lastig op te schonen is.
 
-De technische oplossing is consistent over al deze scenario's: het mechanisme dat ervoor zorgt dat een boekingscontrole en vastlegging atomair plaatsvinden, werkt op precies dezelfde manier voor het verzilveren van coupons of het verlagen van voorraad. Een oprichter die dit patroon één keer heeft laten herstellen in een specifiek deel van zijn product, moet nog steeds expliciet vragen of dezelfde correctie overal elders is toegepast waar dezelfde vorm van het probleem kan optreden — een audit die uitsluitend is gericht op "de boekingsstroom" kan een identieke, onaangeroerde bug direct ernaast in de afrekenstroom achterlaten.
+De technische oplossing is consistent over al deze scenario's: het mechanisme dat ervoor zorgt dat een boekingscontrole en vastlegging atomair plaatsvinden, werkt op precies dezelfde manier voor het verzilveren van coupons of het verlagen van voorraad. Een oprichter die dit patroon één keer heeft laten herstellen in een specifiek deel van zijn product, moet nog steeds expliciet vragen of dezelfde correctie overal elders is toegepast waar dezelfde vorm van het probleem kan optreden - een audit die uitsluitend is gericht op "de boekingsstroom" kan een identieke, onaangeroerde bug direct ernaast in de afrekenstroom achterlaten.
 
 ## Echt voorbeeld
 
@@ -85,9 +85,9 @@ Tijdens een drukke week waarin verschillende populaire vergaderruimtes de meeste
 **Resultaat:** LaunchStudio implementeerde atomaire vergrendeling op databaseniveau rond de boekingsvolgorde, wat garandeert dat een ruimte of bureau nooit aan twee overlappende verzoeken kan worden bevestigd, ongeacht hoe dicht ze bij elkaar aankomen. Dit sloot de kloof zonder de boekingsinterface van WerkPlek überhaupt te veranderen.
 
 > *"Het gebeurde tijdens onze drukste week, wat achteraf gezien compleet logisch is – dat is exact wanneer twee mensen het meest waarschijnlijk dezelfde ruimte op hetzelfde moment willen. Ik had gewoon nooit kunnen raden dat het risico schaalde met ons eigen succes."*
-> — **Mees Vandenberghe, Oprichter, WerkPlek (Brugge)**
+> - **Mees Vandenberghe, Oprichter, WerkPlek (Brugge)**
 
-**Kosten en tijdlijn:** € 2.000 (implementatie van concurrency-veilige boekingslogica) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (implementatie van concurrency-veilige boekingslogica) - voltooid in 7 werkdagen.
 
 ---
 

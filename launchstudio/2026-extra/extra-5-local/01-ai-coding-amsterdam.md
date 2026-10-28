@@ -20,25 +20,25 @@ Target Persona: Technical Solo Founder
 }
 </script>
 
-It's 11pm in a shared workspace near Amsterdam Zuid, and a solo founder has just watched Cursor generate a working login flow, a dashboard, and a Stripe checkout page in under three hours. It feels like the hard part is done. It isn't. AI coding tools are extraordinary at producing something that runs — they are far less reliable at producing something that survives contact with real users, real payment data, and real attackers.
+It's 11pm in a shared workspace near Amsterdam Zuid, and a solo founder has just watched Cursor generate a working login flow, a dashboard, and a Stripe checkout page in under three hours. It feels like the hard part is done. It isn't. AI coding tools are extraordinary at producing something that runs - they are far less reliable at producing something that survives contact with real users, real payment data, and real attackers.
 
 ## Why AI Coding Gets You 80% There, Not 100%
 
-Amsterdam has one of the highest concentrations of solo technical founders in the Netherlands, many of them ex-engineers who left agencies or scale-ups to build their own thing. That background makes AI coding tools like Cursor, Bolt, and v0 feel like a superpower — you already know what "good" looks like, so you can prompt your way to a functioning app fast. The problem isn't the code that runs. It's the code paths nobody tested: what happens when two users hit the same endpoint at once, what happens when an API key ends up in a public repo, what happens when the database has no backup strategy because the AI never asked about one.
+Amsterdam has one of the highest concentrations of solo technical founders in the Netherlands, many of them ex-engineers who left agencies or scale-ups to build their own thing. That background makes AI coding tools like Cursor, Bolt, and v0 feel like a superpower - you already know what "good" looks like, so you can prompt your way to a functioning app fast. The problem isn't the code that runs. It's the code paths nobody tested: what happens when two users hit the same endpoint at once, what happens when an API key ends up in a public repo, what happens when the database has no backup strategy because the AI never asked about one.
 
-This is a pattern LaunchStudio sees constantly across Noord-Holland, not just in Amsterdam. Founders using AI coding assistants ship a convincing prototype in days, then discover — usually after a scare, sometimes after an actual incident — that "it works on my machine" was never the same as "it's safe to charge people money on this." Roughly 80% of AI-built projects never make it to a stable production launch, and 45% of AI-generated code carries some kind of security vulnerability serious enough to matter.
+This is a pattern LaunchStudio sees constantly across Noord-Holland, not just in Amsterdam. Founders using AI coding assistants ship a convincing prototype in days, then discover - usually after a scare, sometimes after an actual incident - that "it works on my machine" was never the same as "it's safe to charge people money on this." Roughly 80% of AI-built projects never make it to a stable production launch, and 45% of AI-generated code carries some kind of security vulnerability serious enough to matter.
 
-The specific stack matters here, too. A founder who prompted their way to a Cursor-built Next.js app wired to Supabase has a different risk profile than one running a Bolt-generated backend on a simple Postgres instance — but the failure category is nearly always the same across tools: authorization checks that exist on the frontend (a button is hidden) but not on the backend (the API route behind that button has no check at all). An AI coding tool will happily generate a UI that hides an "admin" link from regular users, without ever adding server-side logic that actually blocks a regular user from hitting that admin endpoint directly. The interface lies convincingly; the API tells the truth.
+The specific stack matters here, too. A founder who prompted their way to a Cursor-built Next.js app wired to Supabase has a different risk profile than one running a Bolt-generated backend on a simple Postgres instance - but the failure category is nearly always the same across tools: authorization checks that exist on the frontend (a button is hidden) but not on the backend (the API route behind that button has no check at all). An AI coding tool will happily generate a UI that hides an "admin" link from regular users, without ever adding server-side logic that actually blocks a regular user from hitting that admin endpoint directly. The interface lies convincingly; the API tells the truth.
 
 ## The Amsterdam Pattern: Fast Build, Slow Reckoning
 
-Amsterdam founders tend to build in public — Twitter/X threads, Product Hunt launches, LinkedIn posts tagging their AI coding stack. That visibility is great for traction and terrible for security review, because the pressure to ship publicly often skips the unglamorous step of a proper audit. A Product Hunt launch date creates its own kind of deadline pressure: founders who spent two weeks polishing onboarding flow and empty states rarely spend the same energy on the invisible plumbing behind it, because nobody screenshots a well-configured auth policy.
+Amsterdam founders tend to build in public - Twitter/X threads, Product Hunt launches, LinkedIn posts tagging their AI coding stack. That visibility is great for traction and terrible for security review, because the pressure to ship publicly often skips the unglamorous step of a proper audit. A Product Hunt launch date creates its own kind of deadline pressure: founders who spent two weeks polishing onboarding flow and empty states rarely spend the same energy on the invisible plumbing behind it, because nobody screenshots a well-configured auth policy.
 
-We've reviewed prototypes coming out of WeWork spaces on Herengracht and coworking floors near Amsterdam Sciencepark that had admin routes with no authentication at all, simply because the AI tool never generated a check for it and nobody asked it to. In more than one case, the founder had genuinely no idea the route was reachable, because their own app never linked to it directly — it only showed up when someone tried a predictable URL pattern like `/admin` or `/dashboard/internal` out of curiosity.
+We've reviewed prototypes coming out of WeWork spaces on Herengracht and coworking floors near Amsterdam Sciencepark that had admin routes with no authentication at all, simply because the AI tool never generated a check for it and nobody asked it to. In more than one case, the founder had genuinely no idea the route was reachable, because their own app never linked to it directly - it only showed up when someone tried a predictable URL pattern like `/admin` or `/dashboard/internal` out of curiosity.
 
-LaunchStudio is powered by Manifera, a software development company with over 11 years of experience building production systems for enterprise clients like Vodafone and TNO. Our own client-facing office sits at Herengracht 420 in Amsterdam, which means we see this exact failure mode up close — often from founders based a ten-minute bike ride away. The fix isn't rewriting the frontend a Cursor or Lovable session already produced. It's wrapping it with the things AI coding tools consistently skip: row-level security, proper auth middleware, environment variable hygiene, and a database schema that won't fall over under real traffic.
+LaunchStudio is powered by Manifera, a software development company with over 11 years of experience building production systems for enterprise clients like Vodafone and TNO. Our own client-facing office sits at Herengracht 420 in Amsterdam, which means we see this exact failure mode up close - often from founders based a ten-minute bike ride away. The fix isn't rewriting the frontend a Cursor or Lovable session already produced. It's wrapping it with the things AI coding tools consistently skip: row-level security, proper auth middleware, environment variable hygiene, and a database schema that won't fall over under real traffic.
 
-If you're weighing whether your prototype is ready or still fragile, it's worth walking through LaunchStudio's [production-readiness process](https://launchstudio.eu/en/#process) rather than guessing. Manifera's [custom software development team](https://www.manifera.com/services/custom-software-development/) has done this hardening work across 160+ delivered projects, so the checklist isn't theoretical — it's the same one applied to enterprise clients, scaled down to founder budgets.
+If you're weighing whether your prototype is ready or still fragile, it's worth walking through LaunchStudio's [production-readiness process](https://launchstudio.eu/en/#process) rather than guessing. Manifera's [custom software development team](https://www.manifera.com/services/custom-software-development/) has done this hardening work across 160+ delivered projects, so the checklist isn't theoretical - it's the same one applied to enterprise clients, scaled down to founder budgets.
 
 ## A Practical Pre-Launch Security Checklist for AI-Coded Apps
 
@@ -46,7 +46,7 @@ Most Amsterdam founders don't need a full penetration test before their first pa
 
 **Authentication and authorization**
 
-- Every API route that touches user data checks who's asking, not just whether someone is logged in — a valid session shouldn't automatically mean access to every record
+- Every API route that touches user data checks who's asking, not just whether someone is logged in - a valid session shouldn't automatically mean access to every record
 - Admin or privileged routes are protected server-side, not just hidden from the navigation menu
 - Password reset and account recovery flows are tested end-to-end, not just the happy-path signup
 
@@ -58,29 +58,29 @@ Most Amsterdam founders don't need a full penetration test before their first pa
 **Secrets and configuration**
 
 - API keys and database credentials live in server-side environment variables, never in frontend code that ships to the browser
-- The git history doesn't contain a credential that was committed early and "removed" later — removing it from the latest commit doesn't remove it from history
+- The git history doesn't contain a credential that was committed early and "removed" later - removing it from the latest commit doesn't remove it from history
 
 **Abuse and rate limiting**
 
 - Public-facing forms and API endpoints have basic rate limiting, so a script can't hammer a signup form or a password-reset endpoint thousands of times a minute
 - File upload endpoints validate file type and size server-side, not just through a frontend input restriction that anyone can bypass with a direct API call
 
-A founder who runs through this list honestly, on their own, before paying for a formal audit, will usually already know where the soft spots are — the list mostly forces you to actually check rather than assume. It's worth doing this pass before your first outside beta tester, not after, because the whole point is catching the gap while the blast radius is still zero customers rather than twenty.
+A founder who runs through this list honestly, on their own, before paying for a formal audit, will usually already know where the soft spots are - the list mostly forces you to actually check rather than assume. It's worth doing this pass before your first outside beta tester, not after, because the whole point is catching the gap while the blast radius is still zero customers rather than twenty.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Ledgerly's Data Leak Nobody Noticed
 
-Sanne de Wit, a solo founder based in Amsterdam, spent six weeks building Ledgerly — a shared expense-tracking tool for freelancers who split project costs — almost entirely inside Cursor. The app looked finished: clean dashboards, working auth, a polished onboarding flow. What Cursor hadn't generated was row-level security on the database. Every user's expense records were technically reachable by any other logged-in user simply by changing an ID in the URL, because the AI had built the queries without scoping them to the authenticated user.
+Sanne de Wit, a solo founder based in Amsterdam, spent six weeks building Ledgerly - a shared expense-tracking tool for freelancers who split project costs - almost entirely inside Cursor. The app looked finished: clean dashboards, working auth, a polished onboarding flow. What Cursor hadn't generated was row-level security on the database. Every user's expense records were technically reachable by any other logged-in user simply by changing an ID in the URL, because the AI had built the queries without scoping them to the authenticated user.
 
 Sanne only found out because a beta tester mentioned, almost in passing, that they could see a stranger's grocery receipts. LaunchStudio's engineers traced it to a single missing policy layer in the database and rebuilt the authorization logic without touching Sanne's existing frontend. We also added rate limiting on the API and moved her Stripe secret key out of a client-exposed environment file.
 
 **Result:** Ledgerly relaunched with proper data isolation nine days later and passed a follow-up penetration check with no critical findings.
 
-> *"I knew enough to build fast. I didn't know enough to know what I'd missed — and that's a scary gap when it's other people's financial data."*
-> — **Sanne de Wit, Founder, Ledgerly (Amsterdam)**
+> *"I knew enough to build fast. I didn't know enough to know what I'd missed - and that's a scary gap when it's other people's financial data."*
+> - **Sanne de Wit, Founder, Ledgerly (Amsterdam)**
 
-**Cost & Timeline:** €1,850 (security audit, RLS implementation, key rotation, and load testing) — completed in 6 business days.
+**Cost & Timeline:** €1,850 (security audit, RLS implementation, key rotation, and load testing) - completed in 6 business days.
 
 ---
 
@@ -99,7 +99,7 @@ Manifera has 120+ engineers and 11+ years of production experience delivering fo
 Most projects LaunchStudio handles take one to three weeks, depending on scope, and are priced as a fixed engagement between €800 and €7,500 rather than open-ended hourly billing.
 
 ### Do I need to rebuild my app to work with LaunchStudio?
-No. LaunchStudio works around your existing frontend — built in Cursor, Lovable, Bolt, or v0 — and adds the backend, security, and infrastructure layer without a rebuild.
+No. LaunchStudio works around your existing frontend - built in Cursor, Lovable, Bolt, or v0 - and adds the backend, security, and infrastructure layer without a rebuild.
 
 <script type="application/ld+json">
 {

@@ -46,7 +46,7 @@ Om relevant te blijven in het AI-tijdperk, moet u stoppen met het publiceren van
 U moet overschakelen naar **Point of View (POV) Content**:
 
 - **Zwak (Informatief):** "De voordelen van asynchroon werken voor remote teams." (AI genereert dit in 2 seconden; niemand onthoudt wie het geschreven heeft.)
-- **Krachtig (POV):** "Waarom wij onze complete managementlaag hebben ontslagen om asynchroon werken af te dwingen, waarom onze omzet met 30% steeg — en waarom ik het direct weer zou doen ondanks het bijna verliezen van onze beste engineer." (Een AI kan dit niet verzinnen; het leunt op harde eigen data, reëel risico en een uitgesproken standpunt.)
+- **Krachtig (POV):** "Waarom wij onze complete managementlaag hebben ontslagen om asynchroon werken af te dwingen, waarom onze omzet met 30% steeg - en waarom ik het direct weer zou doen ondanks het bijna verliezen van onze beste engineer." (Een AI kan dit niet verzinnen; het leunt op harde eigen data, reëel risico en een uitgesproken standpunt.)
 
 ## Bouw een onneembare vesting met eigen bedrijfsdata
 
@@ -92,7 +92,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam herstruct
 
 **Resultaat:** Het organische zoekverkeer herstelde volledig en groeide in het daaropvolgende kwartaal met 65%.
 
-**Kosten & tijdlijn:** €1.950 (Programmatic SEO Tuning Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.950 (Programmatic SEO Tuning Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

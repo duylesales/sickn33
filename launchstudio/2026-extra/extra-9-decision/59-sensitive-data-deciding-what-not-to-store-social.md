@@ -8,7 +8,7 @@ Data you never stored can't leak, can't be subpoenaed, and doesn't need a deleti
 ❌ Raw card numbers or ID documents stored directly instead of tokenized at the processor
 
 ✅ Ask "does a real feature break without this field" for every schema column
-✅ Tokenize payment data at the processor — never let raw card numbers touch your database
+✅ Tokenize payment data at the processor - never let raw card numbers touch your database
 ✅ Configure field-level redaction in your logging tool before sensitive data reaches it
 ✅ Strip personal identifiers before an AI API call, reinsert them after the response
 

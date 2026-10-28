@@ -24,7 +24,7 @@ De meeste met AI gebouwde producten hebben precies één openbare pagina met tek
 
 Dat is de tweede helft van Lovable SEO, en het is de helft die niet wordt opgelost door alleen rendering te repareren. Een crawler kan nu je homepage lezen. Wat een zoekmachine echter niet kan, is concluderen dat jouw homepage het beste antwoord is op "rooster maken voor horeca" wanneer je homepage kopt met "de moderne manier om je team te organiseren".
 
-Vijf pagina's dichten die kloof. Geen complex contentmarketingprogramma — simpelweg vijf pagina's, één keer geschreven, die samen dekken hoe mensen daadwerkelijk zoeken.
+Vijf pagina's dichten die kloof. Geen complex contentmarketingprogramma - simpelweg vijf pagina's, één keer geschreven, die samen dekken hoe mensen daadwerkelijk zoeken.
 
 ## Waarom Eén Pagina Niet Overal Op Kan Ranken
 
@@ -44,7 +44,7 @@ De lakmoesproef: herkent iemand die met dat probleem kampt en nog nooit van jou 
 
 ## Pagina 2: De Alternatievenpagina
 
-Een groot deel van de commerciële zoekopdrachten begint met de naam van een gevestigde concurrent. "Alternatief voor X", "X versus Y", "X te duur". Deze zoekopdrachten zijn afkomstig van mensen die al precies weten dat ze deze categorie software nodig hebben en ontevreden zijn — wat hen de bezoekers maakt met de allerhoogste koopintentie.
+Een groot deel van de commerciële zoekopdrachten begint met de naam van een gevestigde concurrent. "Alternatief voor X", "X versus Y", "X te duur". Deze zoekopdrachten zijn afkomstig van mensen die al precies weten dat ze deze categorie software nodig hebben en ontevreden zijn - wat hen de bezoekers maakt met de allerhoogste koopintentie.
 
 Twee vuistregels zorgen dat deze pagina converteert in plaats van gênant overkomt: wees eerlijk over de concurrent, inclusief de punten waarin zij beter zijn. Een pagina die leest als een aanval overtuigt niemand en veroudert snel. Wees bovendien specifiek over wie welke optie moet kiezen: "als je internationale salarisadministratie nodig hebt, zijn zij de betere keuze; ben je een Nederlands bedrijf met één vestiging dat deze week nog live wil, dan pas je bij ons" is oneindig veel overtuigender dan een geforceerde vergelijkingstabel waarin jij toevallig overal vinkjes hebt.
 
@@ -54,13 +54,13 @@ Voor Nederlandse softwareproducten is dit vaak de best converterende pagina van 
 
 Eén pagina per afzonderlijke doelgroep of situatie die jouw product bedient, geschreven in het specifieke vocabulaire van die sector.
 
-Een online planningssysteem voor fysiotherapeuten, rijscholen en kappers heeft drie pagina's nodig, niet één. De terminologie verschilt immers — "behandelingen", "rijlessen", "afspraken" — net als de onderliggende zorgen. De fysiotherapeut maakt zich druk om AVG en medische patiëntgegevens; de rijschool om de beschikbaarheid van instructeurs en lesauto's; de kapper om no-shows.
+Een online planningssysteem voor fysiotherapeuten, rijscholen en kappers heeft drie pagina's nodig, niet één. De terminologie verschilt immers - "behandelingen", "rijlessen", "afspraken" - net als de onderliggende zorgen. De fysiotherapeut maakt zich druk om AVG en medische patiëntgegevens; de rijschool om de beschikbaarheid van instructeurs en lesauto's; de kapper om no-shows.
 
 Hier hebben AI-gebouwde tools een groot voordeel dat oprichters zelden benutten: uit je eerste tien klantgesprekken ken je deze segmenten al door en door. Elk segment is één pagina, en elke pagina kan in één middag worden uitgeschreven op basis van die gesprekken.
 
 ## Pagina 4: De Locatiepagina, Waar Geografie Ertoe Doet
 
-Wanneer je product lokaal wordt afgenomen — dienstverlening, marktplaatsen, of oplossingen met een fysieke component — vertegenwoordigen steden een reële zoekintentie: "boekhoudprogramma Rotterdam", "sportschool software Groningen".
+Wanneer je product lokaal wordt afgenomen - dienstverlening, marktplaatsen, of oplossingen met een fysieke component - vertegenwoordigen steden een reële zoekintentie: "boekhoudprogramma Rotterdam", "sportschool software Groningen".
 
 De regel die dit integer houdt: maak alleen een locatiepagina aan als er ter plekke daadwerkelijk iets onderscheidends is. Echte klanten in die stad, een regionale koppeling, lokale tarieven, of een partner ter plaatse. Twintig automatisch gegenereerde stadspagina's waarin enkel de plaatsnaam is vervangen is een trucje dat zoekmachines al jaren herkennen en afstraffen; het maakt een klein bedrijf tegelijkertijd ongeloofwaardig en verdacht.
 
@@ -90,7 +90,7 @@ De inhoud werkt alleen als de pagina technisch als een volwaardige webpagina fun
 
 **Een vermelding in de XML-sitemap.**
 
-Zonder deze technische basis blijven vijf uitstekend geschreven pagina's volstrekt onzichtbaar — de klassieke valkuil van wél aan de content werken, maar de techniek verwaarlozen.
+Zonder deze technische basis blijven vijf uitstekend geschreven pagina's volstrekt onzichtbaar - de klassieke valkuil van wél aan de content werken, maar de techniek verwaarlozen.
 
 ## Schrijven Zonder Contentteam
 
@@ -104,7 +104,7 @@ Laat de pagina's vervolgens drie maanden met rust. SEO bouwt zich geleidelijk op
 
 ## Meten of Het Werkt
 
-Koppel je domein aan Google Search Console — volledig gratis en de enige betrouwbare bron om te zien wat mensen intikken voordat ze op jouw website belanden.
+Koppel je domein aan Google Search Console - volledig gratis en de enige betrouwbare bron om te zien wat mensen intikken voordat ze op jouw website belanden.
 
 Na zes tot acht weken zijn drie statistieken doorslaggevend: hoeveel van je pagina's zijn geïndexeerd, welke zoektermen vertoningen genereren, en welke pagina's daadwerkelijk klikken ontvangen. De nuttigste inzichten zitten vrijwel altijd in de zoektermen: de woorden die zoekers daadwerkelijk intikken wijken vaak subtiel af van wat jij dacht. Het aanpassen van een paginatitel naar de taal van de markt is de snelste winst die je kunt behalen.
 
@@ -112,7 +112,7 @@ Na zes tot acht weken zijn drie statistieken doorslaggevend: hoeveel van je pagi
 
 Sterke content presteert alleen als de pagina's worden geserveerd op een manier die zoekmachines en AI-modellen direct kunnen verwerken. Voor een AI-gebouwd product vraagt dat om aanpassingen op het niveau van rendering en hostinginfrastructuur, niet in een tekstverwerker.
 
-LaunchStudio verzorgt dat technische fundament: pre-rendering of server-side rendering voor openbare pagina's, unieke titels en metadata per pagina, geautomatiseerde sitemaps en canonical URL's, JSON-LD gestructureerde data voor je organisatie en diensten, interne linkstructuren, en Search Console-koppeling zodat je het effect direct meet — zonder dat we de frontend aanraken die je in Lovable hebt gebouwd. Hierachter staat Manifera, met elf jaar engineeringervaring voor partijen als Vodafone en TNO, vanuit Amsterdam en Ho Chi Minhstad.
+LaunchStudio verzorgt dat technische fundament: pre-rendering of server-side rendering voor openbare pagina's, unieke titels en metadata per pagina, geautomatiseerde sitemaps en canonical URL's, JSON-LD gestructureerde data voor je organisatie en diensten, interne linkstructuren, en Search Console-koppeling zodat je het effect direct meet - zonder dat we de frontend aanraken die je in Lovable hebt gebouwd. Hierachter staat Manifera, met elf jaar engineeringervaring voor partijen als Vodafone en TNO, vanuit Amsterdam en Ho Chi Minhstad.
 
 Heb je goede pagina's geschreven maar rankt er nog niets? [Beschrijf je project](https://launchstudio.eu/nl/#contact) en we vertellen je welke technische helft ontbreekt, meestal binnen één werkdag. Op de [pakkettenpagina](https://launchstudio.eu/nl/#packages) zie je exact wat het technische traject inhoudt.
 
@@ -126,7 +126,7 @@ Voor een startup met één oprichter en twintig klanten is de juiste volgorde: e
 
 Ga je artikelen schrijven, hanteer dan drie principes: schrijf over het onderliggende probleem en niet over je product, want niemand zoekt nog op jouw merknaam. Beantwoord de vraag volledig op de pagina zelf in plaats van informatie achter een registratie te verstoppen. En link elk artikel direct door naar de meest relevante van je vijf kernpagina's, zodat een geïnteresseerde lezer een duidelijke vervolgstap heeft.
 
-**De enige uitzondering die vroegtijdig loont:** wanneer je product actief is in een domein waar zakelijke kopers grondig onderzoek doen vóór aanschaf — compliance, wetgeving, privacy, technische migraties — kan één diepgravend artikel over dat thema alle andere pagina's overtreffen. Het bereikt de beslisser precies op het moment dat die de vereisten aan het formuleren is. Eén dergelijk artikel, inhoudelijk vlekkeloos geschreven, is waardevoller dan twaalf oppervlakkige blogjes volgens een strak schema.
+**De enige uitzondering die vroegtijdig loont:** wanneer je product actief is in een domein waar zakelijke kopers grondig onderzoek doen vóór aanschaf - compliance, wetgeving, privacy, technische migraties - kan één diepgravend artikel over dat thema alle andere pagina's overtreffen. Het bereikt de beslisser precies op het moment dat die de vereisten aan het formuleren is. Eén dergelijk artikel, inhoudelijk vlekkeloos geschreven, is waardevoller dan twaalf oppervlakkige blogjes volgens een strak schema.
 
 ## Echt voorbeeld
 
@@ -143,15 +143,15 @@ De alternatievenpagina was de pagina waar ze het meest tegenop had gezien, omdat
 **Resultaat:** na tien weken steeg het aantal geïndexeerde pagina's van drie naar elf, en groeide het aantal demo-aanvragen via Google van circa één per maand naar negen. De alternatievenpagina genereerde meer concrete aanvragen dan de andere vier pagina's bij elkaar, inclusief twee nieuwe klanten die aangaven dat ze binnenkwamen via een zoekopdracht naar de tarieven van een concurrent.
 
 > *"Ik heb drie maanden besteed aan het perfectioneren van het product voor mensen die ons niet konden vinden. Vier pagina's geschreven vanuit mijn eigen inbox brachten daar meer verandering in dan welke nieuwe feature dan ook."*
-> — **Femke Roelofs, Oprichter, Planbaas (Deventer)**
+> - **Femke Roelofs, Oprichter, Planbaas (Deventer)**
 
-**Kosten & Doorlooptijd:** € 2.300 (paginastructuur, pre-rendering, metadata, gestructureerde data, sitemap en inrichting van Search Console) — opgeleverd in 5 werkdagen, parallel aan twee weken van haar eigen schrijfwerk.
+**Kosten & Doorlooptijd:** € 2.300 (paginastructuur, pre-rendering, metadata, gestructureerde data, sitemap en inrichting van Search Console) - opgeleverd in 5 werkdagen, parallel aan twee weken van haar eigen schrijfwerk.
 
 ## Veelgestelde vragen
 
 ### Waarom rankt mijn homepage niet op alles wat mijn product kan?
 
-Omdat zoekmachines een afzonderlijke pagina koppelen aan een specifieke zoekintentie. Eén pagina die vijf intenties tegelijk bedient, verwatert ze allemaal. Mensen zoeken op hun probleem, op een concurrent, op hun branche, op locatie en op tarieven — dat vereist vijf verschillende pagina's met vijf verschillende sets bewoordingen.
+Omdat zoekmachines een afzonderlijke pagina koppelen aan een specifieke zoekintentie. Eén pagina die vijf intenties tegelijk bedient, verwatert ze allemaal. Mensen zoeken op hun probleem, op een concurrent, op hun branche, op locatie en op tarieven - dat vereist vijf verschillende pagina's met vijf verschillende sets bewoordingen.
 
 ### Is een vergelijkingspagina tegen concurrenten wel verstandig?
 
@@ -159,7 +159,7 @@ Het is voor een kleine SaaS doorgaans de best converterende pagina op de hele si
 
 ### Moet ik een pagina aanmaken voor elke Nederlandse stad?
 
-Nee, beslist niet. Maak alleen locatiepagina's aan waar daadwerkelijk iets afwijkends te melden is — bestaande lokale klanten, een regionale koppeling of specifieke partners. Generieke sjabloonpagina's voor steden worden door zoekmachines al jaren genegeerd en schaden het vertrouwen van potentiële klanten.
+Nee, beslist niet. Maak alleen locatiepagina's aan waar daadwerkelijk iets afwijkends te melden is - bestaande lokale klanten, een regionale koppeling of specifieke partners. Generieke sjabloonpagina's voor steden worden door zoekmachines al jaren genegeerd en schaden het vertrouwen van potentiële klanten.
 
 ### Hoe lang moet elke pagina idealiter zijn?
 
@@ -187,7 +187,7 @@ Ja. Openbare landingspagina's hebben een eigen URL, meta-titel en beschrijving n
       "name": "Is een vergelijkingspagina tegen concurrenten wel verstandig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal is dit de best converterende pagina van een kleine SaaS, mits de vergelijking eerlijk is — inclusief wat de concurrent beter doet."
+        "text": "Meestal is dit de best converterende pagina van een kleine SaaS, mits de vergelijking eerlijk is - inclusief wat de concurrent beter doet."
       }
     },
     {

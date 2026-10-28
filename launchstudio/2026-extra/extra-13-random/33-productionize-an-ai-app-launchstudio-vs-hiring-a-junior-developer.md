@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"Why not just hire a junior developer?" It is a reasonable question. A recent graduate or bootcamp developer costs less than a senior, is eager, knows modern frameworks and has probably used Cursor more than you have. For a founder who needs to productionize an AI app and wants someone around for the next phase too, a junior hire feels like two birds with one stone. Sometimes it is. Often, for this specific job, it is the most expensive option — not because juniors are bad, but because production hardening is precisely the work that depends on experience.
+"Why not just hire a junior developer?" It is a reasonable question. A recent graduate or bootcamp developer costs less than a senior, is eager, knows modern frameworks and has probably used Cursor more than you have. For a founder who needs to productionize an AI app and wants someone around for the next phase too, a junior hire feels like two birds with one stone. Sometimes it is. Often, for this specific job, it is the most expensive option - not because juniors are bad, but because production hardening is precisely the work that depends on experience.
 
 ## What a Junior Developer Is Genuinely Good At
 
@@ -33,7 +33,7 @@ It is worth being fair first. Junior developers are often excellent at:
 - Learning quickly with guidance
 - Being available day to day for small changes
 
-For a startup that has a clear product, a stable foundation and a steady stream of feature work, a junior developer — ideally with a senior to consult — can be a great first hire.
+For a startup that has a clear product, a stable foundation and a steady stream of feature work, a junior developer - ideally with a senior to consult - can be a great first hire.
 
 ## Why It Takes Experience to Productionize an AI App
 
@@ -62,7 +62,7 @@ There is also the review problem. A junior developer is not yet in a position to
 | Commitment | Employment contract | Per project | Per project, optional €49/month |
 | Ongoing features | Yes | Yes | Not the core offer |
 
-In the Netherlands, a junior developer's total employment cost — salary, holiday allowance, pension and employer contributions — quickly reaches several thousand euros a month. Recruiting takes weeks. If the launch work takes two to three months for someone learning as they go, the launch alone costs more than most LaunchStudio projects, before counting the risk of mistakes.
+In the Netherlands, a junior developer's total employment cost - salary, holiday allowance, pension and employer contributions - quickly reaches several thousand euros a month. Recruiting takes weeks. If the launch work takes two to three months for someone learning as they go, the launch alone costs more than most LaunchStudio projects, before counting the risk of mistakes.
 
 ## When Hiring a Junior Developer Is the Better Choice
 
@@ -77,7 +77,7 @@ Hire a junior developer when:
 
 Many founders end up with a sequence: a specialist makes the app production-ready, documents it and sets up tests and deployment; then a junior developer joins to build features on a foundation that is safe, with guardrails that catch their mistakes. The specialist's documentation shortens onboarding, and CI tests stop regressions before customers see them.
 
-LaunchStudio is designed for exactly this handover: code stays in your repository, documented and readable by AI tools, with tests on critical flows and a clear deployment process. A junior developer — or you, with Cursor — can continue from there.
+LaunchStudio is designed for exactly this handover: code stays in your repository, documented and readable by AI tools, with tests on critical flows and a clear deployment process. A junior developer - or you, with Cursor - can continue from there.
 
 ## What Productionizing Actually Demands, Skill by Skill
 
@@ -98,7 +98,7 @@ None of these is beyond a junior developer's reach. But learning all of them at 
 
 ## The Supervision Question
 
-The honest version of "hire a junior" is "hire a junior plus someone who reviews their work." Without senior review, the founder carries the risk of every decision the junior makes. Options for providing that review include a technical co-founder, a fractional CTO a few hours a month, a senior freelancer on retainer for code reviews, or a structured external review at key moments — before launch, before a big release, after adding payments. Budget for it explicitly; it is the difference between a junior developer growing into a strong engineer and a junior developer quietly accumulating risk.
+The honest version of "hire a junior" is "hire a junior plus someone who reviews their work." Without senior review, the founder carries the risk of every decision the junior makes. Options for providing that review include a technical co-founder, a fractional CTO a few hours a month, a senior freelancer on retainer for code reviews, or a structured external review at key moments - before launch, before a big release, after adding payments. Budget for it explicitly; it is the difference between a junior developer growing into a strong engineer and a junior developer quietly accumulating risk.
 
 ## Onboarding a Developer Onto an AI-Built Codebase
 
@@ -110,35 +110,35 @@ Whether you hire a junior or a senior, onboarding onto AI-generated code is hard
 - A small, well-defined first task that touches the main flow, reviewed carefully.
 - Tests for critical flows, so their changes are checked automatically.
 
-A developer who starts with this context contributes safely within days. One who starts with "here's the Lovable project, good luck" spends weeks reconstructing it — and may change things they do not understand.
+A developer who starts with this context contributes safely within days. One who starts with "here's the Lovable project, good luck" spends weeks reconstructing it - and may change things they do not understand.
 
 ## Real Employment Costs in the Netherlands
 
-When comparing a hire with a fixed-price project, include the full cost of employment: gross salary plus holiday allowance (typically 8%), employer contributions to social insurance, pension contributions if applicable, equipment, software licences and recruitment costs. For many Dutch employers, the total cost is commonly estimated at roughly 25–40% above gross salary, before recruitment fees or time. Add onboarding weeks with reduced productivity. Against that, a fixed-price production project has a known total and no ongoing commitment. This does not make hiring wrong — it makes it a long-term decision, best taken when there is long-term work.
+When comparing a hire with a fixed-price project, include the full cost of employment: gross salary plus holiday allowance (typically 8%), employer contributions to social insurance, pension contributions if applicable, equipment, software licences and recruitment costs. For many Dutch employers, the total cost is commonly estimated at roughly 25–40% above gross salary, before recruitment fees or time. Add onboarding weeks with reduced productivity. Against that, a fixed-price production project has a known total and no ongoing commitment. This does not make hiring wrong - it makes it a long-term decision, best taken when there is long-term work.
 
 ## A Combined Model That Works
 
-The pattern that works best for many founders is sequential: first, a specialist brings the app to a production baseline, with documentation, tests, CI and monitoring; second, a junior developer joins to build features on that baseline; third, periodic reviews — quarterly or before major releases — check what has changed. The junior benefits from guardrails and examples; the founder benefits from both speed and safety; and the specialist is paid only for the moments when experience matters most.
+The pattern that works best for many founders is sequential: first, a specialist brings the app to a production baseline, with documentation, tests, CI and monitoring; second, a junior developer joins to build features on that baseline; third, periodic reviews - quarterly or before major releases - check what has changed. The junior benefits from guardrails and examples; the founder benefits from both speed and safety; and the specialist is paid only for the moments when experience matters most.
 
 ## Questions to Ask Any Developer Candidate
 
-If you do hire, ask candidates questions that reveal production judgement rather than framework knowledge: How would you check that users cannot see each other's data? How do you know a payment really succeeded? What would you do if a deployment broke login for everyone? How would you change a column in a table with live data? Good answers mention server-side enforcement, webhooks, rollback first and reversible migrations — regardless of seniority.
+If you do hire, ask candidates questions that reveal production judgement rather than framework knowledge: How would you check that users cannot see each other's data? How do you know a payment really succeeded? What would you do if a deployment broke login for everyone? How would you change a column in a table with live data? Good answers mention server-side enforcement, webhooks, rollback first and reversible migrations - regardless of seniority.
 
 ## Freelance Juniors and Marketplace Profiles
 
-Junior freelancers on marketplaces are a different case from employees. They are cheaper per hour and flexible, but they rarely have a senior to consult, and their incentive is to close the ticket in front of them. If you engage one for production work, scope tasks narrowly (for example, "add these specific RLS policies with these tests"), ask for a written explanation of each change, keep all accounts in your name, and have critical changes reviewed by someone more experienced. Avoid open-ended assignments such as "make the app secure" — they invite work on the visible parts and leave the invisible ones untouched.
+Junior freelancers on marketplaces are a different case from employees. They are cheaper per hour and flexible, but they rarely have a senior to consult, and their incentive is to close the ticket in front of them. If you engage one for production work, scope tasks narrowly (for example, "add these specific RLS policies with these tests"), ask for a written explanation of each change, keep all accounts in your name, and have critical changes reviewed by someone more experienced. Avoid open-ended assignments such as "make the app secure" - they invite work on the visible parts and leave the invisible ones untouched.
 
 ## Signs Your Developer Arrangement Is Working
 
-Regardless of who does the work, a few signals show it is going well: changes arrive through pull requests with descriptions you understand; tests are added alongside fixes; staging exists and is used; you receive short written updates on what changed and what is next; incidents are rare and explained clearly when they happen; and you can still log into every account yourself. If several of these signals are missing after a month, the arrangement needs adjusting — more supervision, narrower scope or a different partner.
+Regardless of who does the work, a few signals show it is going well: changes arrive through pull requests with descriptions you understand; tests are added alongside fixes; staging exists and is used; you receive short written updates on what changed and what is next; incidents are rare and explained clearly when they happen; and you can still log into every account yourself. If several of these signals are missing after a month, the arrangement needs adjusting - more supervision, narrower scope or a different partner.
 
 ## The Long-Term View
 
-A good first developer can become the foundation of your technical team. Give them the conditions to succeed: a production-ready baseline, clear documentation, access to senior advice and time to learn the parts of production engineering they have not seen before. Founders who invest in those conditions often find that their first junior hire becomes their most valuable engineer within a couple of years — precisely because they did not have to learn everything on a burning platform.
+A good first developer can become the foundation of your technical team. Give them the conditions to succeed: a production-ready baseline, clear documentation, access to senior advice and time to learn the parts of production engineering they have not seen before. Founders who invest in those conditions often find that their first junior hire becomes their most valuable engineer within a couple of years - precisely because they did not have to learn everything on a burning platform.
 
 ## The Bottom Line
 
-Hire for the work you will have every week; buy expertise for the work you face once. Productionizing an AI app is mostly the second kind — and doing it well first makes the first kind much easier for whoever you hire next.
+Hire for the work you will have every week; buy expertise for the work you face once. Productionizing an AI app is mostly the second kind - and doing it well first makes the first kind much easier for whoever you hire next.
 
 ## Why the Engineers Behind LaunchStudio Matter Here
 
@@ -150,18 +150,18 @@ To see the options side by side, look at the [Launch Ready and Launch & Grow pac
 
 ### An AI-Native Founder in Action: A Party-Booking App and a Very Keen Graduate
 
-Floor Dijkstra, a children's entertainer in Almere, built Kinderfeestje in Lovable: parents book themed children's parties — entertainers, bouncy castles, cake — pay a deposit and manage guest lists. Twenty-two local entertainers and suppliers listed their services. Floor hired a recent computer science graduate part-time to "make it production ready" before the spring season.
+Floor Dijkstra, a children's entertainer in Almere, built Kinderfeestje in Lovable: parents book themed children's parties - entertainers, bouncy castles, cake - pay a deposit and manage guest lists. Twenty-two local entertainers and suppliers listed their services. Floor hired a recent computer science graduate part-time to "make it production ready" before the spring season.
 
-After two months, the graduate had rebuilt the booking calendar (which had worked), added a new admin dashboard and upgraded half the dependencies. The review Floor requested when bookings started failing found the original gaps untouched: parents' guest lists — children's names, ages and allergies — were accessible to any logged-in user by changing an ID; deposits were confirmed by browser redirect; the dependency upgrades had broken password resets; and the new admin dashboard was protected only by a hidden link. The graduate had worked hard, on the parts he knew how to do.
+After two months, the graduate had rebuilt the booking calendar (which had worked), added a new admin dashboard and upgraded half the dependencies. The review Floor requested when bookings started failing found the original gaps untouched: parents' guest lists - children's names, ages and allergies - were accessible to any logged-in user by changing an ID; deposits were confirmed by browser redirect; the dependency upgrades had broken password resets; and the new admin dashboard was protected only by a hidden link. The graduate had worked hard, on the parts he knew how to do.
 
 LaunchStudio's engineers restored the working calendar from version history, enforced access to guest lists in the database, moved deposit confirmation to verified Mollie webhooks, fixed password resets, secured the admin dashboard with server-side roles, and added tests and a deployment pipeline. They documented all of it. Floor kept the graduate on for feature work, now with CI tests and a README.
 
-**Result:** Kinderfeestje went through the spring and summer season with 640 bookings and no payment or data incidents. The graduate shipped three new features on the hardened foundation, one of which — a supplier availability calendar — had been blocked by the earlier rebuild.
+**Result:** Kinderfeestje went through the spring and summer season with 640 bookings and no payment or data incidents. The graduate shipped three new features on the hardened foundation, one of which - a supplier availability calendar - had been blocked by the earlier rebuild.
 
 > *"He was a great developer. He just wasn't the right developer for the job I'd given him, and neither of us knew that until the bookings broke."*
-> — **Floor Dijkstra, Founder, Kinderfeestje (Almere)**
+> - **Floor Dijkstra, Founder, Kinderfeestje (Almere)**
 
-**Cost & Timeline:** €2,200 (Launch Ready package with access control, payments, restoration, tests and documentation) — completed in 8 business days.
+**Cost & Timeline:** €2,200 (Launch Ready package with access control, payments, restoration, tests and documentation) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -179,7 +179,7 @@ If you have continuous feature work, yes. LaunchStudio leaves documentation, tes
 
 ### What does Manifera's scale add compared to a single hire?
 
-Access to engineers who have made — and learned from — production mistakes on 160+ projects, plus peer review within the team. A single hire, however talented, does not bring that breadth.
+Access to engineers who have made - and learned from - production mistakes on 160+ projects, plus peer review within the team. A single hire, however talented, does not bring that breadth.
 
 ### Does the choice of developer affect how my app appears in search and AI answers?
 

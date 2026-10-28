@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Een veelgehoorde zorg bij oprichters die hun app met AI hebben gebouwd: "Valt ik onder de EU AI Act omdat een AI mijn code heeft geschreven?" In bijna alle gevallen: nee. De AI Act reguleert AI-systemen op basis van wat ze doen en hoe ze worden gebruikt, niet op basis van hoe de software eromheen tot stand kwam. Maar veel AI-gebouwde apps bevatten ook AI-functies — een chatbot, een aanbevelingssysteem, gegenereerde tekst of afbeeldingen, geautomatiseerde scoring — en die kunnen echte verplichtingen met zich meebrengen. Dit artikel zet op een rij wat wel en niet geldt, en hoe het samenhangt met de beveiliging van AI-gegenereerde apps.
+Een veelgehoorde zorg bij oprichters die hun app met AI hebben gebouwd: "Valt ik onder de EU AI Act omdat een AI mijn code heeft geschreven?" In bijna alle gevallen: nee. De AI Act reguleert AI-systemen op basis van wat ze doen en hoe ze worden gebruikt, niet op basis van hoe de software eromheen tot stand kwam. Maar veel AI-gebouwde apps bevatten ook AI-functies - een chatbot, een aanbevelingssysteem, gegenereerde tekst of afbeeldingen, geautomatiseerde scoring - en die kunnen echte verplichtingen met zich meebrengen. Dit artikel zet op een rij wat wel en niet geldt, en hoe het samenhangt met de beveiliging van AI-gegenereerde apps.
 
 Dit is een overzicht voor oprichters, geen juridisch advies.
 
@@ -29,17 +29,17 @@ Dit is een overzicht voor oprichters, geen juridisch advies.
 
 **Lovable, Bolt of Cursor gebruiken om je code te schrijven** maakt je app op zichzelf geen AI-systeem onder de AI Act. Je verplichtingen voor die code komen uit andere regels: de AVG, het consumentenrecht, verwachtingen rond beveiliging en contracten.
 
-**AI-functies aan gebruikers aanbieden** — de app gebruikt zelf een model om te chatten, te genereren, te classificeren, aan te bevelen of te beslissen — kan je app, of delen ervan, een AI-systeem binnen de reikwijdte maken. Waar het om gaat, is de risicocategorie van het gebruik.
+**AI-functies aan gebruikers aanbieden** - de app gebruikt zelf een model om te chatten, te genereren, te classificeren, aan te bevelen of te beslissen - kan je app, of delen ervan, een AI-systeem binnen de reikwijdte maken. Waar het om gaat, is de risicocategorie van het gebruik.
 
 ## De Risicocategorieën in het Kort
 
 **Verboden praktijken.** Een korte lijst toepassingen is volledig verboden, zoals manipulatieve technieken die aanzienlijke schade veroorzaken, sociale scoring en bepaalde vormen van biometrische identificatie en emotieherkenning op de werkplek en in het onderwijs. Weinig apps van oprichters komen hier in de buurt, maar functies voor emotieherkenning in HR- of onderwijsapps verdienen zorg.
 
-**Toepassingen met een hoog risico.** AI die wordt gebruikt in specifieke gebieden die in de wet worden genoemd — waaronder werving en personeelsbeheer, toegang tot onderwijs en beoordeling, kredietwaardigheid, toegang tot essentiële diensten en sommige veiligheidscomponenten — heeft een hoog risico. De verplichtingen omvatten risicobeheer, databeheer, documentatie, logging, menselijk toezicht, nauwkeurigheid en beveiliging.
+**Toepassingen met een hoog risico.** AI die wordt gebruikt in specifieke gebieden die in de wet worden genoemd - waaronder werving en personeelsbeheer, toegang tot onderwijs en beoordeling, kredietwaardigheid, toegang tot essentiële diensten en sommige veiligheidscomponenten - heeft een hoog risico. De verplichtingen omvatten risicobeheer, databeheer, documentatie, logging, menselijk toezicht, nauwkeurigheid en beveiliging.
 
-**Transparantieverplichtingen.** Bij bepaalde systemen moeten gebruikers worden geïnformeerd: mensen moeten weten wanneer ze met een AI-systeem zoals een chatbot communiceren (tenzij dat evident is), en door AI gegenereerde of gemanipuleerde content — synthetische audio, afbeeldingen, video en in sommige gevallen tekst die wordt gepubliceerd om het publiek te informeren — moet als zodanig worden gemarkeerd of vermeld.
+**Transparantieverplichtingen.** Bij bepaalde systemen moeten gebruikers worden geïnformeerd: mensen moeten weten wanneer ze met een AI-systeem zoals een chatbot communiceren (tenzij dat evident is), en door AI gegenereerde of gemanipuleerde content - synthetische audio, afbeeldingen, video en in sommige gevallen tekst die wordt gepubliceerd om het publiek te informeren - moet als zodanig worden gemarkeerd of vermeld.
 
-**Minimaal risico.** De meeste andere AI-functies — spamfilters, eenvoudige aanbevelingen, schrijfhulp — hebben geen specifieke verplichtingen buiten het algemene recht, al bestaan er vrijwillige gedragscodes.
+**Minimaal risico.** De meeste andere AI-functies - spamfilters, eenvoudige aanbevelingen, schrijfhulp - hebben geen specifieke verplichtingen buiten het algemene recht, al bestaan er vrijwillige gedragscodes.
 
 De verplichtingen van de wet gaan gefaseerd in over meerdere jaren; de transparantieplichten en veel eisen voor hoog risico gelden vanaf augustus 2026, met sommige categorieën met een hoog risico later.
 
@@ -54,9 +54,9 @@ Voor typische AI-functies in apps van oprichters zijn de praktische eisen:
 
 ## Waar de AI Act de Beveiliging van AI-Gegenereerde Apps Raakt
 
-Voor systemen met een hoog risico eist de wet uitdrukkelijk passende nauwkeurigheid, robuustheid en cybersecurity, inclusief weerbaarheid tegen pogingen het systeem te manipuleren — wat prompt-injectie en datavergiftiging omvat. Ook bij functies met een lager risico overlappen de beveiliging van AI-gegenereerde apps en naleving van de AI Act in de praktijk:
+Voor systemen met een hoog risico eist de wet uitdrukkelijk passende nauwkeurigheid, robuustheid en cybersecurity, inclusief weerbaarheid tegen pogingen het systeem te manipuleren - wat prompt-injectie en datavergiftiging omvat. Ook bij functies met een lager risico overlappen de beveiliging van AI-gegenereerde apps en naleving van de AI Act in de praktijk:
 
-- **Prompt-injectie** kan een chatbot laten ontsporen, data laten lekken of ongeautoriseerde acties laten uitvoeren. Architecturale maatregelen — minimale rechten, afgebakend ophalen, bevestiging van acties — zijn zowel beveiligings- als verantwoorde-AI-maatregelen.
+- **Prompt-injectie** kan een chatbot laten ontsporen, data laten lekken of ongeautoriseerde acties laten uitvoeren. Architecturale maatregelen - minimale rechten, afgebakend ophalen, bevestiging van acties - zijn zowel beveiligings- als verantwoorde-AI-maatregelen.
 - **Logging** van AI-invoer en -beslissingen ondersteunt zowel incidentonderzoek als de registratie onder de AI Act, binnen de grenzen van de AVG.
 - **Menselijk toezicht** bij beslissingen met gevolgen beschermt gebruikers en vermindert de juridische blootstelling onder zowel de AI Act als de AVG-regels voor geautomatiseerde besluiten.
 
@@ -86,9 +86,9 @@ De eerste praktische stap voor de beveiliging van AI-gegenereerde apps en gereed
 | Model / aanbieder | Gehost LLM via API, dataopslag in de EU |
 | Invoerdata | Cv-tekst (geminimaliseerd), vacaturetekst |
 | Uitvoer | Suggesties die alleen aan de kandidaat worden getoond |
-| Geautomatiseerde besluiten? | Nee — alleen adviserend |
+| Geautomatiseerde besluiten? | Nee - alleen adviserend |
 | Waarschijnlijke categorie onder de AI Act | Beperkt/minimaal risico; transparantie geldt voor de chatinteractie |
-| Persoonsgegevens | Ja — verwerkt op basis van de overeenkomst met de gebruiker |
+| Persoonsgegevens | Ja - verwerkt op basis van de overeenkomst met de gebruiker |
 | Maatregelen | AI-vermelding, dataminimalisatie, sanitisatie van uitvoer, bewaartermijn 30 dagen |
 | Eigenaar | Oprichter |
 | Laatst beoordeeld | Datum |
@@ -97,7 +97,7 @@ Een inventaris van één pagina zoals deze is voor de meeste kleine producten ge
 
 ## Herkennen Wanneer een Functie in Hoog Risico Belandt
 
-Functies kunnen naar hoog risico verschuiven naarmate producten zich ontwikkelen. Waarschuwingssignalen zijn: de uitvoer wordt door een organisatie gebruikt om beslissingen over mensen te nemen (aanname, promotie, toelating, krediet, toegang tot diensten); de uitvoer rangschikt, filtert of wijst mensen automatisch af; het systeem wordt aan werkgevers, scholen, kredietverstrekkers of overheden aangeboden voor zulke beslissingen; of het beoordeelt gedrag of prestaties van werknemers of studenten. Vertoont een geplande functie deze signalen, pauzeer dan en vraag advies voordat je bouwt. De verplichtingen voor systemen met een hoog risico — risicobeheer, databeheer, technische documentatie, logging, menselijk toezicht, nauwkeurigheid en robuustheid, en in sommige gevallen registratie — zijn aanzienlijk voor een klein bedrijf.
+Functies kunnen naar hoog risico verschuiven naarmate producten zich ontwikkelen. Waarschuwingssignalen zijn: de uitvoer wordt door een organisatie gebruikt om beslissingen over mensen te nemen (aanname, promotie, toelating, krediet, toegang tot diensten); de uitvoer rangschikt, filtert of wijst mensen automatisch af; het systeem wordt aan werkgevers, scholen, kredietverstrekkers of overheden aangeboden voor zulke beslissingen; of het beoordeelt gedrag of prestaties van werknemers of studenten. Vertoont een geplande functie deze signalen, pauzeer dan en vraag advies voordat je bouwt. De verplichtingen voor systemen met een hoog risico - risicobeheer, databeheer, technische documentatie, logging, menselijk toezicht, nauwkeurigheid en robuustheid, en in sommige gevallen registratie - zijn aanzienlijk voor een klein bedrijf.
 
 ## Transparantie in de Interface
 
@@ -112,11 +112,11 @@ Deze details vergroten ook het vertrouwen van gebruikers, wat op zichzelf een co
 
 ## Menselijk Toezicht Dat Echt Werkt
 
-Menselijk toezicht heeft alleen betekenis als de mens het realistisch gezien oneens kan zijn met het systeem. Toon de redenen achter een suggestie, maak overrulen eenvoudig, vermijd ontwerpen die gebruikers aansporen AI-uitvoer zonder beoordeling te accepteren, en meet hoe vaak uitvoer wordt overruled. Accepteren beoordelaars bijna alles zonder wijzigingen, dan is het toezicht misschien eerder formeel dan echt — een signaal om het ontwerp te herzien.
+Menselijk toezicht heeft alleen betekenis als de mens het realistisch gezien oneens kan zijn met het systeem. Toon de redenen achter een suggestie, maak overrulen eenvoudig, vermijd ontwerpen die gebruikers aansporen AI-uitvoer zonder beoordeling te accepteren, en meet hoe vaak uitvoer wordt overruled. Accepteren beoordelaars bijna alles zonder wijzigingen, dan is het toezicht misschien eerder formeel dan echt - een signaal om het ontwerp te herzien.
 
 ## Logging voor Verantwoording
 
-Logs ondersteunen zowel beveiligingsonderzoek als verantwoording over AI. Leg voor elke AI-interactie die ertoe doet de functie, de modelversie, het tijdstip, de gebruiker of het account en een verwijzing naar invoer en uitvoer vast — in balans met het minimalisatieprincipe van de AVG. Voor systemen met een hoog risico zijn de logeisen formeel; voor andere maken verstandige logs het mogelijk vragen van klanten te beantwoorden ("waarom zei de assistent dit?") en incidenten zoals prompt-injectie te onderzoeken.
+Logs ondersteunen zowel beveiligingsonderzoek als verantwoording over AI. Leg voor elke AI-interactie die ertoe doet de functie, de modelversie, het tijdstip, de gebruiker of het account en een verwijzing naar invoer en uitvoer vast - in balans met het minimalisatieprincipe van de AVG. Voor systemen met een hoog risico zijn de logeisen formeel; voor andere maken verstandige logs het mogelijk vragen van klanten te beantwoorden ("waarom zei de assistent dit?") en incidenten zoals prompt-injectie te onderzoeken.
 
 ## Werken met Modelaanbieders
 
@@ -132,11 +132,11 @@ De AI Act vraagt organisaties die AI-systemen inzetten ook maatregelen te nemen 
 
 ## Beveiligingsmaatregelen die Ook Dienen als Bewijs van Naleving
 
-Veel maatregelen uit deze reeks dienen beide doelen. Verdediging tegen prompt-injectie toont robuustheid; logging ondersteunt verantwoording; dataminimalisatie ondersteunt de AVG; menselijke beoordeling ondersteunt toezicht; validatie van uitvoer ondersteunt nauwkeurigheid; en toegangsbeheer beschermt de data die door AI-functies stroomt. Documenteer je deze maatregelen één keer — in de inventaris, de privacyverklaring en een kort beveiligingsoverzicht — dan heb je het meeste bewijs waar een klant of toezichthouder om zou vragen.
+Veel maatregelen uit deze reeks dienen beide doelen. Verdediging tegen prompt-injectie toont robuustheid; logging ondersteunt verantwoording; dataminimalisatie ondersteunt de AVG; menselijke beoordeling ondersteunt toezicht; validatie van uitvoer ondersteunt nauwkeurigheid; en toegangsbeheer beschermt de data die door AI-functies stroomt. Documenteer je deze maatregelen één keer - in de inventaris, de privacyverklaring en een kort beveiligingsoverzicht - dan heb je het meeste bewijs waar een klant of toezichthouder om zou vragen.
 
 ## Een Checklist voor Oprichters bij Elke Nieuwe AI-Functie
 
-Beantwoord vóór de lancering van een AI-functie: Wat doet ze en voor wie? Kan ze worden gebruikt om beslissingen over mensen te nemen? Welke data stuurt ze naar het model, en is die allemaal nodig? Wordt het gebruik van AI duidelijk vermeld? Kunnen gebruikers uitvoer overrulen of melden? Wat gebeurt er als het model zich misdraagt of wordt gemanipuleerd? Welke voorwaarden van de aanbieder gelden? Wie is eigenaar van de functie? Is elk antwoord duidelijk en op schrift, dan is de functie klaar voor gebruikers — en voor vragen van iedereen die wil weten hoe je AI gebruikt.
+Beantwoord vóór de lancering van een AI-functie: Wat doet ze en voor wie? Kan ze worden gebruikt om beslissingen over mensen te nemen? Welke data stuurt ze naar het model, en is die allemaal nodig? Wordt het gebruik van AI duidelijk vermeld? Kunnen gebruikers uitvoer overrulen of melden? Wat gebeurt er als het model zich misdraagt of wordt gemanipuleerd? Welke voorwaarden van de aanbieder gelden? Wie is eigenaar van de functie? Is elk antwoord duidelijk en op schrift, dan is de functie klaar voor gebruikers - en voor vragen van iedereen die wil weten hoe je AI gebruikt.
 
 ## Waar LaunchStudio Past
 
@@ -144,7 +144,7 @@ LaunchStudio helpt oprichters de technische kant van AI-transparantie en -beveil
 
 LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en een CEO, Herre Roelevink, wiens loopbaan in cybersecurity begon. De engineers van Manifera in Ho Chi Minh-stad werken dagelijks met API's van AI-aanbieders, met klantcontact in Amsterdam (Herengracht 420). Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/); de [AI Act Explorer](https://artificialintelligenceact.eu/) biedt een doorzoekbare versie van de verordening.
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — en de AI-functies erin.
+[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) - en de AI-functies erin.
 
 ## Praktijkvoorbeeld
 
@@ -152,16 +152,16 @@ LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelbedrijf met 1
 
 Emre Yilmaz, loopbaancoach in Nieuwegein, bouwde CVcoach in Lovable met de API van OpenAI: werkzoekenden uploaden hun cv en een vacature, en een AI-assistent geeft feedback over hoe ze het cv voor die functie kunnen verbeteren. Ongeveer 3.000 werkzoekenden gebruikten het. Emre plande daarna een nieuwe functie voor uitzendbureaus: vijftig cv's voor een vacature uploaden en ze gerangschikt terugkrijgen.
 
-Voordat hij die bouwde, vroeg Emre LaunchStudio de app en het plan te beoordelen. De bestaande functie was een coachingtool voor kandidaten — iets heel anders dan kandidaten rangschikken voor werkgevers, wat waarschijnlijk onder de categorie werving met een hoog risico van de AI Act zou vallen, met aanzienlijke verplichtingen. De review vond ook gaten in het bestaande product: de chat vermeldde niet duidelijk dat het een AI was; de privacyverklaring noemde OpenAI niet als verwerker en legde de bewaring van data niet uit; volledige cv's, inclusief geboortedata en foto's, werden naar het model gestuurd terwijl alleen ervaring en vaardigheden nodig waren; geüploade vacatureteksten konden prompt-injecties bevatten die de feedback veranderden; en chatlogs met volledige cv's werden voor onbepaalde tijd bewaard.
+Voordat hij die bouwde, vroeg Emre LaunchStudio de app en het plan te beoordelen. De bestaande functie was een coachingtool voor kandidaten - iets heel anders dan kandidaten rangschikken voor werkgevers, wat waarschijnlijk onder de categorie werving met een hoog risico van de AI Act zou vallen, met aanzienlijke verplichtingen. De review vond ook gaten in het bestaande product: de chat vermeldde niet duidelijk dat het een AI was; de privacyverklaring noemde OpenAI niet als verwerker en legde de bewaring van data niet uit; volledige cv's, inclusief geboortedata en foto's, werden naar het model gestuurd terwijl alleen ervaring en vaardigheden nodig waren; geüploade vacatureteksten konden prompt-injecties bevatten die de feedback veranderden; en chatlogs met volledige cv's werden voor onbepaalde tijd bewaard.
 
 In zeven werkdagen voegden de engineers van LaunchStudio een duidelijke AI-vermelding toe aan de chat, verwijderden ze foto's, geboortedata en contactgegevens uit cv's voordat die naar het model gingen, bakenden ze vacature- en cv-content in prompts af als onbetrouwbare data en sanitiseerden ze de uitvoer, stelden ze een bewaartermijn van 30 dagen in voor chatlogs, en hielpen ze Emre een juiste lijst met verwerkers op te stellen voor zijn bijgewerkte privacyverklaring. Emre besloot, met juridisch advies, de rangschikkingsfunctie uit te stellen en in plaats daarvan een tool voor werkgevers te bouwen die recruiters helpt inclusieve vacatureteksten te schrijven.
 
 **Resultaat:** CVcoach groeide in de zes maanden daarna naar 7.500 gebruikers. Twee loopbaandiensten van universiteiten namen het in gebruik na beoordeling van de privacy- en AI-vermeldingen, en Emre vermeed het bouwen van een systeem met een hoog risico dat zijn kleine bedrijf nog niet aankon.
 
 > *"De coachingtool en de rangschikkingstool leken dezelfde app met één extra knop. Juridisch en ethisch waren het totaal verschillende producten."*
-> — **Emre Yilmaz, Oprichter, CVcoach (Nieuwegein)**
+> - **Emre Yilmaz, Oprichter, CVcoach (Nieuwegein)**
 
-**Kosten & Tijdlijn:** € 2.000 (review van AI-functies, vermeldingen, dataminimalisatie, maatregelen tegen prompt-injectie en bewaartermijnen) — afgerond in 7 werkdagen.
+**Kosten & Tijdlijn:** € 2.000 (review van AI-functies, vermeldingen, dataminimalisatie, maatregelen tegen prompt-injectie en bewaartermijnen) - afgerond in 7 werkdagen.
 
 ## Veelgestelde Vragen
 

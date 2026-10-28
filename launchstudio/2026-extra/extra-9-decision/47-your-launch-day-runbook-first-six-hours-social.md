@@ -7,7 +7,7 @@ Launch day is an operational shift, not a celebration, and most founders watch t
 ❌ A DMARC record added to staging DNS, never copied to production, rejecting a mail host
 ❌ Shipping a new feature on launch day, so the one changed variable isn't only one
 
-✅ Buy your own product with a real card in the first hour — proves the live path
+✅ Buy your own product with a real card in the first hour - proves the live path
 ✅ Watch errors, payments, and email deliverability, not the visitor count
 ✅ Manually check where confirmation emails land across Gmail, Outlook, a custom domain
 ✅ Pre-agree three rollback triggers while calm: data exposure, wrong money, silent data loss
@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a DNS mismatch rejecting every Outlook confirmation got fixed in twenty minutes instead of found hours later. 🚀
 
-👉 Book a call before launch week, not during it — your runbook is worth more in advance: https://launchstudio.eu/en/blog/your-launch-day-runbook-first-six-hours
+👉 Book a call before launch week, not during it - your runbook is worth more in advance: https://launchstudio.eu/en/blog/your-launch-day-runbook-first-six-hours
 
 #SaaS #LaunchDay #LaunchStudio #Manifera #StartupGrowth #ScaleUp

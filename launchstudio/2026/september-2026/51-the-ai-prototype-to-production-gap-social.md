@@ -1,6 +1,6 @@
-🚨 Isaac, an HR tech founder, built a resume evaluator with **Cursor**. The prototype had no database RLS policies — any authenticated user could theoretically query another company's candidate records just by editing a request ID. 🔓
+🚨 Isaac, an HR tech founder, built a resume evaluator with **Cursor**. The prototype had no database RLS policies - any authenticated user could theoretically query another company's candidate records just by editing a request ID. 🔓
 
-Getting an AI prototype to 80% reliable is easy; the other 20% — security, access control, production hardening — is where most AI-native founders get stuck. 🧠
+Getting an AI prototype to 80% reliable is easy; the other 20% - security, access control, production hardening - is where most AI-native founders get stuck. 🧠
 
 ❌ No Row Level Security scoping data access to the right organization
 ❌ API keys hardcoded into the client-side bundle, visible to anyone who opens DevTools

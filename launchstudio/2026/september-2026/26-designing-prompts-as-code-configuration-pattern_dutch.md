@@ -12,7 +12,7 @@ Prompt Engineering is geen eenmalige statische handeling bij de initiële lancer
 
 Stel u de volgende herkenbare situatie voor: uw B2B SaaS-platform bevat een gespecialiseerde AI-agent die zakelijke contracten en geheimhoudingsverklaringen opstelt. Een juridisch adviseur of zakelijke proefgebruiker meldt dat de agent aansprakelijkheidsclausules plotseling onjuist formatteert in de uiteindelijke PDF-export. De inhoudelijke oplossing is technisch gezien triviaal: voeg één enkele zin toe aan de systeemprompt: *"Formatteer aansprakelijkheidsclausules te allen tijde vetgedrukt en plaats deze in een apart tekstblok."*
 
-Als deze prompt echter hardcoded in uw backend-repository staat ingebakken, moet een senior software engineer zijn huidige werk onderbreken, de broncode lokaal uitchecken, de JavaScript-string aanpassen, een commit schrijven, een pull request openen, wachten op een collega-review voor een puur tekstuele Engelstalige wijziging die de reviewer amper inhoudelijk kan beoordelen, 15 minuten wachten op de CI/CD-pijplijn om tests te draaien en uiteindelijk de complete productieserver herstarten en redeployen. Dit is een gigantische verspilling van dure engineeringtijd voor een simpele tekstwijziging — en het maakt softwareontwikkelaars tot een frustrerende en trage flessenhals voor wat in essentie een product- of domeinbeslissing is.
+Als deze prompt echter hardcoded in uw backend-repository staat ingebakken, moet een senior software engineer zijn huidige werk onderbreken, de broncode lokaal uitchecken, de JavaScript-string aanpassen, een commit schrijven, een pull request openen, wachten op een collega-review voor een puur tekstuele Engelstalige wijziging die de reviewer amper inhoudelijk kan beoordelen, 15 minuten wachten op de CI/CD-pijplijn om tests te draaien en uiteindelijk de complete productieserver herstarten en redeployen. Dit is een gigantische verspilling van dure engineeringtijd voor een simpele tekstwijziging - en het maakt softwareontwikkelaars tot een frustrerende en trage flessenhals voor wat in essentie een product- of domeinbeslissing is.
 
 ## Het Configuratiepatroon (The Configuration Pattern)
 
@@ -68,7 +68,7 @@ Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om alle
 
 **Resultaat:** Haar niet-technische marketingteam past prompts nu realtime aan in het dashboard, waardoor testcycli werden verkort van dagen naar enkele seconden.
 
-**Kosten & Tijdlijn:** €1.250 (Prompt Management Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.250 (Prompt Management Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 

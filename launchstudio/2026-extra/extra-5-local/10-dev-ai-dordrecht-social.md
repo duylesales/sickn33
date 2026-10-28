@@ -1,8 +1,8 @@
-⏱️ Eva Mulder built Dockflow in Lovable — a berth-scheduling tool for shipping agents working the rivers around Dordrecht — and picked up four regional agents in two months, hosted on a single non-scaling server. Then a week of unusually high traffic hit the server's resource limit and took it down for four hours, zero warning.
+⏱️ Eva Mulder built Dockflow in Lovable - a berth-scheduling tool for shipping agents working the rivers around Dordrecht - and picked up four regional agents in two months, hosted on a single non-scaling server. Then a week of unusually high traffic hit the server's resource limit and took it down for four hours, zero warning.
 
 Dev AI tools collapse the cost of a first version. They don't collapse the cost of keeping it online. 🧠
 
-❌ No monitoring in place — Eva found out from two agents calling mid-operation
+❌ No monitoring in place - Eva found out from two agents calling mid-operation
 ❌ A single non-scaling server instance had no headroom for a real traffic spike
 ❌ No deployment pipeline meant the emergency fix had to be pushed live, manually, untested
 ❌ Four hours of downtime during an active shipment window is an operational problem, not an inconvenience

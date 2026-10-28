@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-You have decided to look. Somewhere in the first week comes a smaller question that people handle badly in both directions: does your current employer find out from you, or not at all? Some candidates tell their manager on principle, and occasionally get a better role without changing employer. Others say nothing, and occasionally get caught in a way that damages a relationship they still needed. In the Dutch AI market — small, interconnected, where your manager probably knows the hiring manager at the company you are interviewing with — this decision deserves more thought than it usually gets.
+You have decided to look. Somewhere in the first week comes a smaller question that people handle badly in both directions: does your current employer find out from you, or not at all? Some candidates tell their manager on principle, and occasionally get a better role without changing employer. Others say nothing, and occasionally get caught in a way that damages a relationship they still needed. In the Dutch AI market - small, interconnected, where your manager probably knows the hiring manager at the company you are interviewing with - this decision deserves more thought than it usually gets.
 
 ## The Default Is Discretion, For Good Reasons
 
@@ -75,7 +75,7 @@ There is a middle path that candidates often miss. You can raise what would need
 
 "I want to work more on production systems and less on reporting. Can we look at how that could change in the next six months?" is a conversation about your development. It gives your employer the chance to fix the problem, it is honest, and it does not disclose anything about your search.
 
-Do it early, before you have offers. If they act, you may not need to leave. If they do not, you have a clean answer to the inevitable exit question — and to your own doubts about whether you gave them a chance.
+Do it early, before you have offers. If they act, you may not need to leave. If they do not, you have a clean answer to the inevitable exit question - and to your own doubts about whether you gave them a chance.
 
 ## Searching Discreetly Without Being Deceptive
 
@@ -99,7 +99,7 @@ The awkward point comes when a prospective employer asks for references. Two nor
 
 First, offer references from previous employers, former managers who have since left, or clients rather than your current line manager. This is standard and rarely questioned.
 
-Second, if a current reference is required, ask for it to be sought only after a conditional offer. Most Dutch employers accept this, and the request itself signals nothing unusual — many candidates are employed and searching.
+Second, if a current reference is required, ask for it to be sought only after a conditional offer. Most Dutch employers accept this, and the request itself signals nothing unusual - many candidates are employed and searching.
 
 ## What to Check in Your Own Contract
 
@@ -113,7 +113,7 @@ Sometimes your search becomes known before you are ready: a recruiter mentions y
 
 Handle it calmly and without elaborate denial. A version of the truth that is both honest and measured works best: you are not actively unhappy but you keep an eye on the market, and if there is something you would want to discuss about your own role, you are open to that conversation.
 
-Then use the opening. If the employer values you, this is the moment they will say so — and if they do not respond at all, that is information you did not have yesterday.
+Then use the opening. If the employer values you, this is the moment they will say so - and if they do not respond at all, that is information you did not have yesterday.
 
 ## Interviewing During Working Hours Without Lying
 
@@ -121,17 +121,17 @@ The practical problem in most searches is not principle but scheduling. Intervie
 
 The cleanest solution is leave. Taking a morning or an afternoon off requires no explanation in most Dutch organisations, and "I have a personal appointment" is both true and sufficient. Nobody is entitled to the details of how you spend your own leave.
 
-Where possible, ask the prospective employer for early morning, late afternoon or online slots. Hiring managers know that good candidates are usually employed, and most accommodate this without comment — a refusal to be flexible at that stage is itself a signal about the organisation.
+Where possible, ask the prospective employer for early morning, late afternoon or online slots. Hiring managers know that good candidates are usually employed, and most accommodate this without comment - a refusal to be flexible at that stage is itself a signal about the organisation.
 
 Avoid two specific mistakes. Do not invent detailed cover stories: elaborate explanations are remembered and unravel badly, while a vague, honest one does not. And do not take interview calls from a meeting room at your current employer, however convenient it seems; it is the single most common way searches become public.
 
-If a process reaches a stage requiring several hours — an assessment day, a full round of conversations — a day of leave is the honest and simple answer. Spread across a search of a few months, the total leave involved is usually smaller than people fear.
+If a process reaches a stage requiring several hours - an assessment day, a full round of conversations - a day of leave is the honest and simple answer. Spread across a search of a few months, the total leave involved is usually smaller than people fear.
 
 ## What Not to Put in Writing
 
 A search becomes visible far more often through written traces than through conversations, and the traces are usually avoidable.
 
-**Company email and chat.** Anything sent through your employer's systems can, within legal limits and with the safeguards that apply to employee monitoring, be seen by the organisation. Never send an application, a CV or a scheduling message from a work account — and be aware that a personal webmail tab open on a shared screen during a presentation has ended more than one discreet search.
+**Company email and chat.** Anything sent through your employer's systems can, within legal limits and with the safeguards that apply to employee monitoring, be seen by the organisation. Never send an application, a CV or a scheduling message from a work account - and be aware that a personal webmail tab open on a shared screen during a presentation has ended more than one discreet search.
 
 **Shared calendars.** "Appointment, 10:00–12:00, external" on a calendar colleagues can read invites curiosity. Mark such blocks private, or take leave.
 
@@ -151,7 +151,7 @@ An ML engineer has been frustrated for months: too much maintenance, no new mode
 
 He does not mention the search. He tells his manager which work he wants more of, which he wants less of, and asks whether the balance can change within six months. His manager listens, promises to look at it and changes nothing in the following eight weeks.
 
-He continues searching, keeps everything off company systems, takes leave for interviews and provides references from a previous employer. When he resigns, his manager is surprised but cannot claim to have been unaware of the underlying issue — and the handover goes well because the relationship was never damaged by a bad conversation.
+He continues searching, keeps everything off company systems, takes leave for interviews and provides references from a previous employer. When he resigns, his manager is surprised but cannot claim to have been unaware of the underlying issue - and the handover goes well because the relationship was never damaged by a bad conversation.
 
 A year later they meet at a conference and the manager refers a former colleague to him. In a market this size, that is the outcome worth protecting.
 
@@ -159,13 +159,13 @@ A year later they meet at a conference and the manager refers a former colleague
 
 - You are not obliged to disclose a job search, and discretion is the sensible default early on.
 - Telling makes sense when the role you want exists internally, when you need cooperation, or when leaving is already certain.
-- The middle path — raising what would need to change, without mentioning the search — gives your employer a fair chance without exposing you.
+- The middle path - raising what would need to change, without mentioning the search - gives your employer a fair chance without exposing you.
 - Search off company systems, be careful with profile updates, schedule interviews outside working hours and ask recruiters for permission before every submission.
 - Offer references from previous employers, and check your non-compete, client non-solicitation and notice period clauses before searching seriously.
 
 ## Where to Start
 
-Before deciding whether to say anything, find out whether better alternatives actually exist near you — a quiet hour of searching turns an abstract frustration into a concrete comparison.
+Before deciding whether to say anything, find out whether better alternatives actually exist near you - a quiet hour of searching turns an abstract frustration into a concrete comparison.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -191,8 +191,8 @@ Respond calmly and honestly without over-explaining, and use the moment to discu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I have to tell my employer I am looking for another job?", "acceptedAnswer": {"@type": "Answer", "text": "No — there is no obligation, and discretion is usually the sensible default."}},
-    {"@type": "Question", "name": "Should I tell my manager what is wrong instead?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — raising the problem without mentioning the search costs nothing."}},
+    {"@type": "Question", "name": "Do I have to tell my employer I am looking for another job?", "acceptedAnswer": {"@type": "Answer", "text": "No - there is no obligation, and discretion is usually the sensible default."}},
+    {"@type": "Question", "name": "Should I tell my manager what is wrong instead?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - raising the problem without mentioning the search costs nothing."}},
     {"@type": "Question", "name": "How do I handle references while still employed?", "acceptedAnswer": {"@type": "Answer", "text": "Offer previous employers or clients, and current references only after a conditional offer."}},
     {"@type": "Question", "name": "How do I search discreetly?", "acceptedAnswer": {"@type": "Answer", "text": "Personal devices, interviews outside working hours and recruiter permission per submission."}},
     {"@type": "Question", "name": "What if my employer finds out before I am ready?", "acceptedAnswer": {"@type": "Answer", "text": "Respond calmly and use the moment to discuss what would improve your current role."}}

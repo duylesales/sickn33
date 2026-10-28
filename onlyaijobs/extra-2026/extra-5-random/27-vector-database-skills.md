@@ -62,7 +62,7 @@ Almost every real query has constraints. Show me documents from this business un
 
 **Filtered search during traversal** applies constraints while walking the index, which is what modern engines implement. Behaviour still varies with selectivity, and every engine has a regime where it degrades.
 
-Practical guidance: know the selectivity of your common filters, test at that selectivity rather than on unfiltered queries, and consider partitioning into separate collections when a filter is both highly selective and always present — per-tenant collections, for example. Access control filters deserve special attention, because failing open here is a security incident rather than a quality issue.
+Practical guidance: know the selectivity of your common filters, test at that selectivity rather than on unfiltered queries, and consider partitioning into separate collections when a filter is both highly selective and always present - per-tenant collections, for example. Access control filters deserve special attention, because failing open here is a security incident rather than a quality issue.
 
 ## Updates, Deletions and Re-Embedding
 
@@ -80,7 +80,7 @@ Teams that treat the index as derived data they can rebuild at any time cope wit
 
 The discipline that separates competent practitioners is measurement, and it is straightforward.
 
-Build a fixed query set of a few hundred realistic queries. Compute exact nearest neighbours by brute force once — expensive but feasible offline. Then measure recall at k for your approximate configuration: the fraction of true nearest neighbours the index returns. This tells you what your speed is costing you in retrieval accuracy.
+Build a fixed query set of a few hundred realistic queries. Compute exact nearest neighbours by brute force once - expensive but feasible offline. Then measure recall at k for your approximate configuration: the fraction of true nearest neighbours the index returns. This tells you what your speed is costing you in retrieval accuracy.
 
 Separately, measure end-task quality: whether the right document, product or answer appears in the results a user sees. Recall against the index is a proxy; the task metric is what matters. It is possible to have ninety-five per cent recall and poor search quality because the embedding model is wrong for your domain.
 
@@ -108,7 +108,7 @@ Ask whether you need a separate system at all. If your data already lives in a r
 
 If you do need a dedicated engine, evaluate: filtered search behaviour at your selectivity; incremental update support; hybrid search with keyword matching; horizontal scaling; operational maturity such as backup, restore and observability; hosting options including whether data can remain in the EU; and licensing.
 
-Run a proof of concept with your own data at realistic scale. Public benchmarks use datasets unlike yours, and the differences that matter — filtering behaviour, update patterns, memory under your dimensionality — show up only with your workload.
+Run a proof of concept with your own data at realistic scale. Public benchmarks use datasets unlike yours, and the differences that matter - filtering behaviour, update patterns, memory under your dimensionality - show up only with your workload.
 
 Finally, design so the engine is replaceable: a thin interface around search and upsert costs almost nothing to write and saves a rewrite when requirements or prices change.
 
@@ -128,7 +128,7 @@ Finally, embeddings alone miss exact identifiers. Combining them with keyword se
 
 You do not need a job in AI infrastructure to build credible evidence of vector database skills. A weekend project with the right shape is enough.
 
-Take a public dataset of a few million items — product listings, articles, scientific abstracts. Embed it with two different models. Load it into a vector extension of a relational database and into one dedicated engine. Then measure: recall against exact search, latency percentiles under concurrent queries, behaviour with a filter that matches one per cent of records, memory usage at full precision and quantised, and the time taken to update ten thousand records.
+Take a public dataset of a few million items - product listings, articles, scientific abstracts. Embed it with two different models. Load it into a vector extension of a relational database and into one dedicated engine. Then measure: recall against exact search, latency percentiles under concurrent queries, behaviour with a filter that matches one per cent of records, memory usage at full precision and quantised, and the time taken to update ten thousand records.
 
 Write two pages describing what you found and what you would choose for a given requirement. Include a number you got wrong and corrected.
 
@@ -150,7 +150,7 @@ A short catalogue of problems that rarely show up in development and reliably sh
 
 **Concurrency collapse.** Latency measured with one query at a time tells you nothing about behaviour at fifty concurrent queries. Graph traversal is memory-bandwidth hungry, and tail latency degrades faster than throughput suggests.
 
-**Silent quality drift.** New content arrives with a different distribution — a new product category, a new document type — and retrieval quality falls for those items while aggregate metrics look fine. Monitor by segment.
+**Silent quality drift.** New content arrives with a different distribution - a new product category, a new document type - and retrieval quality falls for those items while aggregate metrics look fine. Monitor by segment.
 
 **Duplicate content.** Near-identical documents crowd out diversity, so the top ten results are ten versions of the same page. Deduplication at ingestion, or diversity-aware reranking, is usually needed.
 
@@ -164,7 +164,7 @@ A short catalogue of problems that rarely show up in development and reliably sh
 
 A European e-commerce company built semantic product search on a managed vector service. It worked well at launch with a catalogue of about two hundred thousand items.
 
-Two problems emerged. First, the catalogue changed constantly, and their pipeline rebuilt the entire index nightly, so changes took up to a day to appear and the rebuild cost grew with the catalogue. Second, filtered queries — a category and a price range — returned too few results, because filtering was applied after retrieval and most of the nearest neighbours were excluded.
+Two problems emerged. First, the catalogue changed constantly, and their pipeline rebuilt the entire index nightly, so changes took up to a day to appear and the rebuild cost grew with the catalogue. Second, filtered queries - a category and a price range - returned too few results, because filtering was applied after retrieval and most of the nearest neighbours were excluded.
 
 The fix was structural rather than clever. They moved to incremental upserts with soft deletion, so changes appeared within minutes. They switched to an engine supporting filtering during search rather than after it. And they measured recall on a fixed query set before and after each change, which they had never done.
 

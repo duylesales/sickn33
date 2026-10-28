@@ -85,7 +85,7 @@ Schattingen geven een verwachting; technische limieten (*controls*) bepalen wat 
 - **Verplichte Inlog en Authenticatie:** Stel nooit een AI-endpoint openbaar beschikbaar zonder inlog. Geautomatiseerde bots vinden het binnen enkele dagen en branden uw budget leeg.
 - **Een Noodschakelaar (*Kill Switch*):** Zorg dat u de AI-functie met één instelling kunt uitschakelen zonder dat u nieuwe code hoeft te deployen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in geavanceerde software-architecturen) richten we prompt caching, token-monitoring, budgetlimieten en model-routing in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-kostenstructuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw AI-features winstgevend blijven.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in geavanceerde software-architecturen) richten we prompt caching, token-monitoring, budgetlimieten en model-routing in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-kostenstructuur met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw AI-features winstgevend blijven.
 
 ## Echt voorbeeld
 
@@ -107,7 +107,7 @@ Er waren drie oorzaken:
 **Resultaat:** Binnen drie werkdagen bracht LaunchStudio de architectuur op orde: transcripties werden opgeknipt in semantische blokken waarbij alleen relevante passages werden aangeroepen, een compact model (GPT-4o mini) werd ingezet voor de eerste extractie terwijl het zware model uitsluitend werd gebruikt voor de finale samenvatting, prompt caching werd geactiveerd voor de vaste instructieset, en abonnementen kregen een inbegrepen bundel van 80 samenvattingen per maand met een realtime verbruiksmeter. De gemiddelde kosten per klant daalden per direct van €31 naar **€1,90 per maand**, en de intensieve gebruikers stapten zonder morren over naar een Enterprise-bundel van €149 per maand.
 
 > *"Mijn berekening klopte perfect voor mijn eigen testdocumentje. Maar elke echte klant uploadde bestanden die twintig keer zo groot waren. Ik ontdekte de werkelijke kosten pas toen OpenAI mijn creditcard afschreef."*
-> — **Lena Fischer, Oprichter, Vergaderpunt**
+> - **Lena Fischer, Oprichter, Vergaderpunt**
 
 **Kosten & Doorlooptijd:** AI-token optimalisatie, prompt caching en accountlimieten opgeleverd in 3 werkdagen.
 

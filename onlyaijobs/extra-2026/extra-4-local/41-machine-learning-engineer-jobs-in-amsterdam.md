@@ -112,7 +112,7 @@ Amsterdam's large product companies have developed a distinctive ML engineering 
 
 **Ownership of services.** ML engineers often own the full path from feature pipelines to serving and monitoring. On-call rotations for production models are common in payments and ranking teams.
 
-**Platform thinking.** Mature companies run internal ML platforms — feature stores, training pipelines, model registries and serving infrastructure. Platform engineers treat other teams as customers, and product ML engineers are expected to use shared tooling rather than build their own.
+**Platform thinking.** Mature companies run internal ML platforms - feature stores, training pipelines, model registries and serving infrastructure. Platform engineers treat other teams as customers, and product ML engineers are expected to use shared tooling rather than build their own.
 
 **Cost and latency.** Real-time systems in payments and search have strict latency budgets, and language model applications raise inference cost questions. Being able to reason about trade-offs between model quality, latency and cost is a valued skill.
 

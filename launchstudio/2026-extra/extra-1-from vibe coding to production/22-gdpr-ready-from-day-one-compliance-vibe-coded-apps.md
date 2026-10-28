@@ -31,31 +31,31 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-GDPR compliance gets mentally filed, by most founders, under "legal paperwork" — a privacy policy to publish, a cookie banner to add, a checkbox somewhere. Several of its core substantive requirements are actually architectural: decisions about how your database is structured and how your application's logic handles personal data, made at build time, that become significantly more expensive to retrofit the longer a product has been live with real accumulated data.
+GDPR compliance gets mentally filed, by most founders, under "legal paperwork" - a privacy policy to publish, a cookie banner to add, a checkbox somewhere. Several of its core substantive requirements are actually architectural: decisions about how your database is structured and how your application's logic handles personal data, made at build time, that become significantly more expensive to retrofit the longer a product has been live with real accumulated data.
 
 ## Why "Add It Later" Is a More Expensive Plan Than It Sounds
 
-A privacy policy can genuinely be written or updated after the fact with minimal friction. Data architecture cannot be changed as easily once real user data already exists within a specific structure — a database schema built without a clean way to actually delete a specific user's data (a genuine GDPR requirement, not paperwork) may require significant restructuring to retrofit once thousands of real records exist across multiple related tables, compared to designing that capability into the schema from the very first table definition.
+A privacy policy can genuinely be written or updated after the fact with minimal friction. Data architecture cannot be changed as easily once real user data already exists within a specific structure - a database schema built without a clean way to actually delete a specific user's data (a genuine GDPR requirement, not paperwork) may require significant restructuring to retrofit once thousands of real records exist across multiple related tables, compared to designing that capability into the schema from the very first table definition.
 
 ## The Right to Erasure, as an Architectural Requirement
 
-GDPR's "right to be forgotten" requires that when a user requests deletion, you can actually delete their personal data — completely, including from backups within a reasonable timeframe, and from any place it was duplicated or derived. AI-generated database schemas frequently don't consider this requirement at all, since a prompt describing "store user profiles and their activity" naturally produces a structure optimized for storing and querying data, not one designed with clean deletion pathways across every table that might reference a given user, including data duplicated into logs, caches, or analytics systems.
+GDPR's "right to be forgotten" requires that when a user requests deletion, you can actually delete their personal data - completely, including from backups within a reasonable timeframe, and from any place it was duplicated or derived. AI-generated database schemas frequently don't consider this requirement at all, since a prompt describing "store user profiles and their activity" naturally produces a structure optimized for storing and querying data, not one designed with clean deletion pathways across every table that might reference a given user, including data duplicated into logs, caches, or analytics systems.
 
 ## Data Minimization: A Decision Made Every Time a Field Gets Added
 
-GDPR's principle of data minimization — collecting only what's actually necessary for your stated purpose — is violated incrementally, one field at a time, whenever a founder asks an AI tool to "also collect [additional field] while we're at it" without a specific, articulated reason tied to the product's actual function. This accumulates invisibly, since no single additional field feels significant, until a data audit reveals a database collecting considerably more personal data than the product genuinely requires to function.
+GDPR's principle of data minimization - collecting only what's actually necessary for your stated purpose - is violated incrementally, one field at a time, whenever a founder asks an AI tool to "also collect [additional field] while we're at it" without a specific, articulated reason tied to the product's actual function. This accumulates invisibly, since no single additional field feels significant, until a data audit reveals a database collecting considerably more personal data than the product genuinely requires to function.
 
 ## Data Residency: Where Your Data Actually Lives, Not Where You Assume It Lives
 
-Many AI coding tools default to hosting and database providers with infrastructure located outside the EU unless a founder specifically configures otherwise — a decision made implicitly through a tool's default settings, not through any deliberate choice by the founder, who may not even realize the setting exists or what it implies for data residency obligations relevant to EU personal data specifically.
+Many AI coding tools default to hosting and database providers with infrastructure located outside the EU unless a founder specifically configures otherwise - a decision made implicitly through a tool's default settings, not through any deliberate choice by the founder, who may not even realize the setting exists or what it implies for data residency obligations relevant to EU personal data specifically.
 
 ## Processing Agreements: The Overlooked Vendor Dimension
 
-Every third-party service that processes personal data on your behalf — your hosting provider, your email service, your AI model API if you send it any personal data — needs an appropriate data processing agreement in place, and needs to itself offer adequate safeguards for that processing. This is a vendor-selection and configuration concern, not something an AI coding tool's generated application code addresses at all, since it exists at the level of which services you chose and how you configured your relationship with them, not in the code itself.
+Every third-party service that processes personal data on your behalf - your hosting provider, your email service, your AI model API if you send it any personal data - needs an appropriate data processing agreement in place, and needs to itself offer adequate safeguards for that processing. This is a vendor-selection and configuration concern, not something an AI coding tool's generated application code addresses at all, since it exists at the level of which services you chose and how you configured your relationship with them, not in the code itself.
 
 ## Why Retrofitting Gets Progressively More Expensive
 
-Each of these dimensions shares a specific pattern: the earlier you address them, the closer the cost is to zero, because you're simply making a different initial decision rather than migrating existing data or restructuring an existing system with real, live records depending on the current structure. The cost curve isn't linear — it accelerates specifically once real user data accumulates within whatever structure was originally chosen, since the migration required grows with the volume and complexity of what already exists.
+Each of these dimensions shares a specific pattern: the earlier you address them, the closer the cost is to zero, because you're simply making a different initial decision rather than migrating existing data or restructuring an existing system with real, live records depending on the current structure. The cost curve isn't linear - it accelerates specifically once real user data accumulates within whatever structure was originally chosen, since the migration required grows with the volume and complexity of what already exists.
 
 ## What Building This In From the Start Actually Involves
 
@@ -67,19 +67,19 @@ You don't need a lawyer or a formal compliance process to get a first, useful re
 
 **Map every table that stores personal data.** List each table touching a user's name, email, health information, financial detail, or anything else identifiable, and for each one, ask specifically: if this user requested deletion today, could you actually remove their record from this table, cleanly, without breaking data belonging to other users?
 
-**Trace where that data gets duplicated.** Check whether any of it flows into an analytics table, a cache, a log file, or a third-party tool (an email provider's contact list, an analytics platform, a support-desk tool) — each duplicate is a place deletion also has to reach, not just the primary table, and each one is easy to forget because it wasn't the table you were originally thinking about.
+**Trace where that data gets duplicated.** Check whether any of it flows into an analytics table, a cache, a log file, or a third-party tool (an email provider's contact list, an analytics platform, a support-desk tool) - each duplicate is a place deletion also has to reach, not just the primary table, and each one is easy to forget because it wasn't the table you were originally thinking about.
 
 **List every field you collect and ask "why."** For each field in your signup or profile forms, write down the specific product reason it's needed. A field you can't justify in a sentence is a minimization violation waiting to be flagged in a real audit, and it's usually easier to simply remove than to later defend.
 
-**Check your hosting and database provider's actual server region.** Most providers show this directly in their dashboard settings — don't assume based on where the company is headquartered, since a US-based provider frequently offers an EU region that has to be deliberately selected rather than defaulted into.
+**Check your hosting and database provider's actual server region.** Most providers show this directly in their dashboard settings - don't assume based on where the company is headquartered, since a US-based provider frequently offers an EU region that has to be deliberately selected rather than defaulted into.
 
-**List your data-processing vendors and confirm agreements exist.** Hosting, email, analytics, and any AI API you send personal data to — for each, check whether a data processing agreement is in place, which is usually a checkbox or document available in the vendor's own account settings rather than something you need to draft yourself.
+**List your data-processing vendors and confirm agreements exist.** Hosting, email, analytics, and any AI API you send personal data to - for each, check whether a data processing agreement is in place, which is usually a checkbox or document available in the vendor's own account settings rather than something you need to draft yourself.
 
 This isn't a substitute for a formal compliance review once you're handling meaningful volumes of EU personal data, but it reliably surfaces the same categories of gaps Marloes's case illustrates, before they've compounded into a migration project.
 
 [LaunchStudio](https://launchstudio.eu/en/) builds GDPR-aware architecture into every engagement by default, treating these as the day-one architectural decisions they actually are rather than post-launch paperwork, backed by Manifera's compliance-conscious engineering culture shaped by clients like TNO.
 
-[Build compliance in before your first real user's data exists](https://launchstudio.eu/en/#calculator) — this is meaningfully cheaper before real data accumulates than after.
+[Build compliance in before your first real user's data exists](https://launchstudio.eu/en/#calculator) - this is meaningfully cheaper before real data accumulates than after.
 
 ## Real example
 
@@ -87,14 +87,14 @@ This isn't a substitute for a formal compliance review once you're handling mean
 
 Marloes, a former social worker turned founder in Nijmegen, built ZorgNotities, an AI tool helping small home-care organizations manage client care notes and family communication, using Bolt, growing to twelve care organizations and several hundred client records over its first year without ever specifically designing for GDPR's deletion requirements, since her original focus during building had been entirely on the tool's core note-taking and communication functionality.
 
-When a family requested full deletion of their relative's records under GDPR's right to erasure, Marloes discovered that ZorgNotities' database schema had no clean way to fully remove a specific client's data — care notes referenced client IDs across several related tables, some data had been duplicated into a separate analytics summary table for organizational reporting, and backups retained full historical copies with no straightforward mechanism to selectively purge one client's records from them.
+When a family requested full deletion of their relative's records under GDPR's right to erasure, Marloes discovered that ZorgNotities' database schema had no clean way to fully remove a specific client's data - care notes referenced client IDs across several related tables, some data had been duplicated into a separate analytics summary table for organizational reporting, and backups retained full historical copies with no straightforward mechanism to selectively purge one client's records from them.
 
 **Result:** LaunchStudio restructured ZorgNotities' data architecture to support genuine, complete deletion across every table and backup retention policy, a project considerably larger and more expensive than building the same capability into the original schema would have been, given the need to migrate several hundred existing records into the new structure without disrupting the twelve organizations actively using the product.
 
-> *"If I'd asked for proper deletion handling when the database was empty, it would have been a small design decision. Asking for it after a year of real client data across a dozen organizations turned it into a genuine migration project. The requirement didn't change — my cost to meet it did, entirely because of when I addressed it."*
-> — **Marloes Hendrickx, Founder, ZorgNotities (Nijmegen)**
+> *"If I'd asked for proper deletion handling when the database was empty, it would have been a small design decision. Asking for it after a year of real client data across a dozen organizations turned it into a genuine migration project. The requirement didn't change - my cost to meet it did, entirely because of when I addressed it."*
+> - **Marloes Hendrickx, Founder, ZorgNotities (Nijmegen)**
 
-**Cost & Timeline:** €3,400 (data architecture restructuring and migration) — completed in 12 business days.
+**Cost & Timeline:** €3,400 (data architecture restructuring and migration) - completed in 12 business days.
 
 ---
 
@@ -114,7 +114,7 @@ It resolves the specific dimension of where data is physically stored, which is 
 
 ### Is data minimization something an AI coding tool could theoretically be instructed to enforce automatically?
 
-Not reliably — minimization requires judgment about what's actually necessary for your specific product's function, a determination the tool has no independent basis for making; it depends entirely on a founder or reviewer deliberately evaluating each data field against genuine necessity, not something a prompt can delegate away.
+Not reliably - minimization requires judgment about what's actually necessary for your specific product's function, a determination the tool has no independent basis for making; it depends entirely on a founder or reviewer deliberately evaluating each data field against genuine necessity, not something a prompt can delegate away.
 
 ### How does LaunchStudio typically identify which GDPR-related architectural considerations apply to a specific prototype?
 
@@ -154,7 +154,7 @@ Through the same kind of scoped audit covered elsewhere in this series, examinin
       "name": "Could an AI coding tool be instructed to enforce data minimization automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not reliably — minimization requires judgment about necessity that the tool has no independent basis for making."
+        "text": "Not reliably - minimization requires judgment about necessity that the tool has no independent basis for making."
       }
     },
     {

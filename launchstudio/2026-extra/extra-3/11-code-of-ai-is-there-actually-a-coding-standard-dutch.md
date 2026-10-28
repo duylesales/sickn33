@@ -12,7 +12,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Code van AI: Is er daadwerkelijk een coderingsnorm voor AI-gegenereerde software?",
-  "description": "Oprichters vragen zich af of er een officiële coderingsnorm is waar AI-gegenereerde software aan moet voldoen. Er is er niet één — maar er is wel een specifieke set verwachtingen ontstaan.",
+  "description": "Oprichters vragen zich af of er een officiële coderingsnorm is waar AI-gegenereerde software aan moet voldoen. Er is er niet één - maar er is wel een specifieke set verwachtingen ontstaan.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -53,7 +53,7 @@ Het ontbreken van een officiële "code van AI" betekent niet dat er geen beteken
 
 [LaunchStudio](https://launchstudio.eu/nl/) past precies deze norm op praktijkniveau en op basis van patronen consistent toe bij elke opdracht – niet omdat het wordt gedicteerd door een extern orgaan, maar omdat de engineeringteams van Manifera dezelfde terugkerende hiaten in meer dan 160 opgeleverde projecten van dichtbij hebben gezien om precies te weten wat "oprecht productierijp" daadwerkelijk vereist, onafhankelijk van een formele certificering die voor deze categorie nog niet bestaat.
 
-[Laat uw code evalueren tegen de norm die er daadwerkelijk toe doet](https://launchstudio.eu/nl/#contact) — informeel betekent niet inconsistent zodra u werkt met mensen die het patroon vaak genoeg hebben gezien.
+[Laat uw code evalueren tegen de norm die er daadwerkelijk toe doet](https://launchstudio.eu/nl/#contact) - informeel betekent niet inconsistent zodra u werkt met mensen die het patroon vaak genoeg hebben gezien.
 
 ## Een praktische checklist: wat een ervaren beoordeling daadwerkelijk controleert
 
@@ -78,10 +78,10 @@ Toen Stijn geen enkele formele norm kon vinden – omdat er oprecht nog geen bes
 
 **Resultaat:** LaunchStudio leidde Stijn door de specifieke, consistente categorieën die een ervaren beoordeling daadwerkelijk controleert – dezelfde die in bredere richtlijnen voor productiegereedheid worden behandeld. Dit gaf hem een concreet, hoewel informeel, kader om tegen af te wegen, waarbij gaandeweg twee echte hiaten werden gedicht en hij een duidelijk inzicht overhield in waarom geen enkel certificaat zou hebben gedekt wat er daadwerkelijk toe deed voor zijn specifieke product.
 
-> *"In mijn oude sector was er altijd een formele norm waartegen je certificeerde. Ik bleef zoeken naar het AI-equivalent en het bestond simpelweg nog niet. Wat ik in plaats daarvan kreeg was nuttiger dan een certificaat zou zijn geweest — een daadwerkelijke, specifieke beoordeling tegen de patronen die steeds weer opduiken in echte AI-gegenereerde code."*
-> — **Stijn Meulenberg, Oprichter, KwaliteitsLog (Doetinchem)**
+> *"In mijn oude sector was er altijd een formele norm waartegen je certificeerde. Ik bleef zoeken naar het AI-equivalent en het bestond simpelweg nog niet. Wat ik in plaats daarvan kreeg was nuttiger dan een certificaat zou zijn geweest - een daadwerkelijke, specifieke beoordeling tegen de patronen die steeds weer opduiken in echte AI-gegenereerde code."*
+> - **Stijn Meulenberg, Oprichter, KwaliteitsLog (Doetinchem)**
 
-**Kosten en tijdlijn:** € 1.600 (Launch Ready Pakket) — live in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (Launch Ready Pakket) - live in 7 werkdagen.
 
 ---
 
@@ -149,7 +149,7 @@ De specifieke, verifieerbare artefacten die in bredere richtlijnen voor het eval
       "name": "Hoe weet een oprichter of een praktijknorm daadwerkelijk grondig is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Specifieke, verifieerbare artefacten — concrete bevindingen, beschreven verificatie, duidelijke sanering — dienen dezelfde functie."
+        "text": "Specifieke, verifieerbare artefacten - concrete bevindingen, beschreven verificatie, duidelijke sanering - dienen dezelfde functie."
       }
     }
   ]

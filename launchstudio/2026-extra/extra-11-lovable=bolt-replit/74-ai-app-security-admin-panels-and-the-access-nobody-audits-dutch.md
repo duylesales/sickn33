@@ -22,7 +22,7 @@ Doelgroep: Technical Solo Founder / Indie Hacker
 
 Elk softwareproduct krijgt er vroeg of laat een: een interne beheerpagina waar u snel een klant kunt opzoeken, een vastgelopen record kunt corrigeren, een factuur opnieuw kunt verzenden of kunt inspecteren waarom iemands data-export mislukte. Het begint als één enkel scherm dat in twintig minuten in elkaar is gezet omdat er een klant aan de lijn hing te wachten, en het groeit organisch elke keer dat klantondersteuning complexer wordt.
 
-Het is tevens, door zijn aard, het enige onderdeel van uw hele applicatie dat alle zorgvuldig ingestelde beveiligingsregels negeert. Tenant-isolatie geldt er niet. Row Level Security wordt omzeild door de bevoorrechte database-sleutel die het gebruikt. Het doordachte autorisatiemodel dat honderden bedrijven strikt gescheiden houdt, bestaat overal — behalve op deze ene pagina.
+Het is tevens, door zijn aard, het enige onderdeel van uw hele applicatie dat alle zorgvuldig ingestelde beveiligingsregels negeert. Tenant-isolatie geldt er niet. Row Level Security wordt omzeild door de bevoorrechte database-sleutel die het gebruikt. Het doordachte autorisatiemodel dat honderden bedrijven strikt gescheiden houdt, bestaat overal - behalve op deze ene pagina.
 
 En niemand test dit paneel, want het is immers intern, het is "puur voor onszelf", en het testen van uw eigen beheertools voelt ongemakkelijk als het wantrouwen van uw eigen team.
 
@@ -50,7 +50,7 @@ Inloggen namens een klant is de krachtigste supportfunctie die er bestaat, en te
 
 **Het moet onweerlegbaar gelogd worden.** Elke impersonatie-sessie: wie logde in, namens welke klant, op welk exact tijdstip en hoe lang duurde de sessie. Dit is het forensische bewijs dat antwoord geeft wanneer een zakelijke klant vraagt of een medewerker van uw bedrijf in hun data heeft gekeken. De mededeling *"dat houden we niet bij"* is een antwoord met direct contractuele en juridische gevolgen.
 
-**Het moet visueel zichtbaar zijn.** Toon een prominente waarschuwingsbalk zolang de impersonatie actief is, zodat niemand vergeet dat hij in andermans account opereert — en stuur idealiter een automatische notificatie naar de klant dat support toegang heeft gehad tot het account. Nederlandse zakelijke klanten waarderen die proactieve transparantie enorm, en reageren juist fel wanneer ze zoiets toevallig achteraf ontdekken.
+**Het moet visueel zichtbaar zijn.** Toon een prominente waarschuwingsbalk zolang de impersonatie actief is, zodat niemand vergeet dat hij in andermans account opereert - en stuur idealiter een automatische notificatie naar de klant dat support toegang heeft gehad tot het account. Nederlandse zakelijke klanten waarderen die proactieve transparantie enorm, en reageren juist fel wanneer ze zoiets toevallig achteraf ontdekken.
 
 **Het moet standaard beperkt zijn tot alleen-lezen.** Richt impersonatie standaard in als read-only, waarbij actieve mutaties een bewuste, afzonderlijke bevestiging vereisen. Verreweg de meeste supportvragen worden beantwoord door simpelweg mee te kijken.
 
@@ -86,7 +86,7 @@ U heeft geen log en duur identity-platform nodig. Vijf basale maatregelen volsta
 
 De strategische stap die uw bedrijfsrisico definitief verlaagt:
 
-Veruit de meeste admin-acties vinden plaats om terugkerende vragen te beantwoorden: waarom kwam deze e-mail niet aan, waarom blijft deze status hangen, wat gebeurde er met deze betaling. Elk van die vragen kan worden beantwoord met een specifiek, doelgericht scherm dat exact de relevante status toont — een verzendlogboek, een taakhistorie, een betalingstijdlijn — in plaats van onbeperkte schrijftoegang tot de hele database.
+Veruit de meeste admin-acties vinden plaats om terugkerende vragen te beantwoorden: waarom kwam deze e-mail niet aan, waarom blijft deze status hangen, wat gebeurde er met deze betaling. Elk van die vragen kan worden beantwoord met een specifiek, doelgericht scherm dat exact de relevante status toont - een verzendlogboek, een taakhistorie, een betalingstijdlijn - in plaats van onbeperkte schrijftoegang tot de hele database.
 
 Gerichte supportschermen zijn veiliger, werken aanzienlijk sneller en kunnen zonder risico worden toevertrouwd aan een parttime helpdeskmedewerker. Zo krimpt het algemene beheerpaneel tot een handvol écht uitzonderlijke bewerkingen.
 
@@ -96,15 +96,15 @@ Een inspectie van een half uur brengt bij de meeste startups direct kwetsbaarhed
 
 Log in als een reguliere gebruiker en roep een admin-endpoint rechtstreeks aan via de browserconsole of Postman, zonder via de navigatiebalk te klikken. Probeer uw eigen gebruikersrol te wijzigen door een `UPDATE` uit te voeren op uw profiel. Open het beheerpad in een incognito-venster terwijl u bent uitgelogd. Controleer of elke huidige beheerder die rechten daadwerkelijk nog nodig heeft. Verifieer of admin-acties met de juiste actor worden vastgelegd in uw audit-trail. En controleer of 2FA technisch verplicht is gesteld in plaats van slechts optioneel aangeboden.
 
-Elke actie die slaagt zonder dat u beheerder bent, is een direct beveiligingslek — en het is een lek dat een kwaadwillende eveneens had kunnen ontdekken.
+Elke actie die slaagt zonder dat u beheerder bent, is een direct beveiligingslek - en het is een lek dat een kwaadwillende eveneens had kunnen ontdekken.
 
 ## De Externe Freelancer Die Morgen Toegang Nodig Heeft
 
 De klassieke praktijksituatie die elk beveiligingsbeleid onder druk zet: een freelance ontwikkelaar start voor drie weken om een hardnekkige bug op te lossen, en vraagt om toegang tot de productieomgeving.
 
-**Vraag of zij daadwerkelijk echte klantdata nodig hebben.** In veruit de meeste gevallen heeft een ontwikkelaar uitsluitend de *structuur* van de data nodig, niet de inhoud. Een ontwikkel- of staging-omgeving met geanonimiseerde data — realistische datavolumes, maar met gefingeerde persoonsgegevens — lost het overgrote deel van deze verzoeken op en is de beste investering die u kunt doen vóórdat u externen inhuurt.
+**Vraag of zij daadwerkelijk echte klantdata nodig hebben.** In veruit de meeste gevallen heeft een ontwikkelaar uitsluitend de *structuur* van de data nodig, niet de inhoud. Een ontwikkel- of staging-omgeving met geanonimiseerde data - realistische datavolumes, maar met gefingeerde persoonsgegevens - lost het overgrote deel van deze verzoeken op en is de beste investering die u kunt doen vóórdat u externen inhuurt.
 
-**Als productie-toegang onvermijdelijk is, maak deze strikt tijdelijk en persoonlijk.** Geef de freelancer een eigen account, nooit een gedeeld account. Wijs de minimale rol toe die nodig is voor de klus. Bepaal vooraf de einddatum waarop het account verloopt. En wijs hen erop dat alle acties gelogd worden — dat is geen motie van wantrouwen, maar de professionele standaard.
+**Als productie-toegang onvermijdelijk is, maak deze strikt tijdelijk en persoonlijk.** Geef de freelancer een eigen account, nooit een gedeeld account. Wijs de minimale rol toe die nodig is voor de klus. Bepaal vooraf de einddatum waarop het account verloopt. En wijs hen erop dat alle acties gelogd worden - dat is geen motie van wantrouwen, maar de professionele standaard.
 
 **Deel nooit uw eigen inloggegevens.** Het is de snelste route, maar het vernietigt alle toewijsbaarheid: elke actie van de freelancer staat in de logs geregistreerd onder uw naam. Bovendien kunt u hun toegang niet intrekken zonder uw eigen wachtwoord te wijzigen.
 
@@ -124,7 +124,7 @@ LaunchStudio richt dit in als integraal onderdeel van onze productiegereedheidsa
 
 ### Een Admin-URL in de Browsergeschiedenis van Een Geleende Laptop
 
-Stijn Groenewoud bouwde Aanmelder met Lovable: evenementregistratie-software die werd gebruikt door veertien organisaties in de regio Zwolle — congresorganisatoren, twee gemeenten en verschillende brancheverenigingen. Circa 60.000 registraties per jaar, inclusief dieetwensen, toegankelijkheidsbehoeften en werkgeversgegevens van deelnemers.
+Stijn Groenewoud bouwde Aanmelder met Lovable: evenementregistratie-software die werd gebruikt door veertien organisaties in de regio Zwolle - congresorganisatoren, twee gemeenten en verschillende brancheverenigingen. Circa 60.000 registraties per jaar, inclusief dieetwensen, toegankelijkheidsbehoeften en werkgeversgegevens van deelnemers.
 
 De administratieve beheerpagina bevond zich op een URL waarvan Stijn dacht dat niemand hem kon raden. Toegang werd toegekend via een kolom `is_admin` in de profieltabel. Er was geen tweefactorauthenticatie, één set inloggegevens werd gedeeld tussen Stijn en een parttime medewerker, en het paneel bevatte een knop om alle registraties van alle organisaties tegelijkertijd te downloaden als Excel-bestand.
 
@@ -135,9 +135,9 @@ Acht werkdagen aan intensieve herstelwerkzaamheden: de administratieve autorisat
 **Resultaat:** Het incident werd transparant afgehandeld als een near-miss met een formeel schrijven aan alle veertien organisaties, die allen klant bleven. Twee gemeenten vroegen kort daarna tijdens een contractverlenging om het interne beveiligingsbeleid, dat Stijn direct kon overleggen.
 
 > *"Mijn admin-pagina werd beschermd door het feit dat niemand het webadres kende. Totdat iemands browser het adres doodleuk automatisch aanvulde."*
-> — **Stijn Groenewoud, Oprichter, Aanmelder (Zwolle)**
+> - **Stijn Groenewoud, Oprichter, Aanmelder (Zwolle)**
 
-**Kosten & Doorlooptijd:** €3.900 (server-side autorisatie, 2FA-verplichting, accountsplitsing, impersonatie met logging, exportbeperkingen, gerichte supportschermen) — afgerond in 8 werkdagen.
+**Kosten & Doorlooptijd:** €3.900 (server-side autorisatie, 2FA-verplichting, accountsplitsing, impersonatie met logging, exportbeperkingen, gerichte supportschermen) - afgerond in 8 werkdagen.
 
 ## Veelgestelde vragen
 

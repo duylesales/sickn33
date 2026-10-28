@@ -2,12 +2,12 @@
 
 **The Pain Points:**
 ❌ **Isolation as an Afterthought:** Tenant separation treated as an implementation detail, not a first-order architecture decision.
-❌ **Developer-Discipline-Only Isolation:** Relying on humans to remember tenant filtering on every query — doesn't scale.
+❌ **Developer-Discipline-Only Isolation:** Relying on humans to remember tenant filtering on every query - doesn't scale.
 ❌ **No Continuous Isolation Testing:** Verified once at launch, never checked again as the codebase grows.
 
 **The Manifera Solution:**
 ✅ **Isolation Model Justified Upfront:** Chosen against your platform's real data-sensitivity and scale needs, not the fastest option to build.
-✅ **Systematic Tenant-Context Propagation:** Structurally enforced — not developer memory.
+✅ **Systematic Tenant-Context Propagation:** Structurally enforced - not developer memory.
 ✅ **Continuous Automated Isolation Tests:** Catching cross-tenant leaks before a customer does.
 
 Get the one decision right that's genuinely hard to fix later. 🛡️

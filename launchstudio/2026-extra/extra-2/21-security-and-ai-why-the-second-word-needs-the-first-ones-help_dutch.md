@@ -70,9 +70,9 @@ Een oprichter hoeft niet te wachten op een formele compliance-beoordeling om een
 - Toont het record wie de toegang daadwerkelijk heeft geautoriseerd, of leidt het systeem het auteurschap simpelweg af van wie er toevallig op dat moment was ingelogd – een subtiel maar cruciaal verschil als een account ooit werd gedeeld of gecompromitteerd?
 - Als een toezichthouder, een verzekeraar of een boos familielid over zes maanden om deze geschiedenis zou vragen, kunt u deze dan binnen een dag overleggen, of zou u deze moeten reconstrueren uit oude supporttickets en aannames?
 
-Een "nee" op een van deze vragen is allerminst ongebruikelijk voor een eerste versie van een product. AI-codeertools hebben geen ingebouwde reden om toestemmingssporen toe te voegen, tenzij een prompt daar specifiek om vroeg. Bijna elke solo-bouwer start daarom exact op dit punt — het is de standaard, niet de uitzondering. Waar het om gaat, is het behandelen van een "nee" als een afgebakende, oplosbare technische taak in plaats van een vage, sluimerende zorg in uw achterhoofd.
+Een "nee" op een van deze vragen is allerminst ongebruikelijk voor een eerste versie van een product. AI-codeertools hebben geen ingebouwde reden om toestemmingssporen toe te voegen, tenzij een prompt daar specifiek om vroeg. Bijna elke solo-bouwer start daarom exact op dit punt - het is de standaard, niet de uitzondering. Waar het om gaat, is het behandelen van een "nee" als een afgebakende, oplosbare technische taak in plaats van een vage, sluimerende zorg in uw achterhoofd.
 
-De oplossing zelf is in de meeste gevallen compacter dan het klinkt: een enkele nieuwe databasetabel die vastlegt wie wat heeft gedaan, met wiens gegevens en wanneer, geschreven naast de bestaande autorisatiecode zonder enig onderdeel daarvan te hoeven vervangen. Het raakt doorgaans niet aan hoe de functionaliteit eruitziet of aanvoelt voor de eindgebruikers — de verandering is volledig onzichtbaar voor gebruikers en draait puur om wat het systeem achteraf onomstotelijk kan bewijzen.
+De oplossing zelf is in de meeste gevallen compacter dan het klinkt: een enkele nieuwe databasetabel die vastlegt wie wat heeft gedaan, met wiens gegevens en wanneer, geschreven naast de bestaande autorisatiecode zonder enig onderdeel daarvan te hoeven vervangen. Het raakt doorgaans niet aan hoe de functionaliteit eruitziet of aanvoelt voor de eindgebruikers - de verandering is volledig onzichtbaar voor gebruikers en draait puur om wat het systeem achteraf onomstotelijk kan bewijzen.
 
 
 ## Echt voorbeeld
@@ -86,9 +86,9 @@ Een familiegeschil over wie de toegang van een specifieke zorgverlener had geaut
 **Resultaat:** LaunchStudio voegde een append-only audit-logboek toe dat elke verlening, wijziging en intrekking van toegang voor de toekomst vastlegt. LaunchStudio werkte met Bas om de praktijken voor gegevensafhandeling van het platform overeenkomstig te documenteren, wat de nalevingskloof sloot zonder te veranderen hoe families en zorgverleners de deelfunctie daadwerkelijk gebruikten.
 
 > *"De functie zelf werkte de gehele tijd exact zoals bedoeld. Het was gewoon nooit bij me opgekomen dat 'werkte' en 'kunnen bewijzen wat er zes maanden geleden gebeurde' twee compleet verschillende dingen waren."*
-> — **Bas Terpstra, Oprichter, ZorgVerbind (Almere)**
+> - **Bas Terpstra, Oprichter, ZorgVerbind (Almere)**
 
-**Kosten en tijdlijn:** € 2.400 (audit-logboek voor toestemming en toegang) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (audit-logboek voor toestemming en toegang) - voltooid in 8 werkdagen.
 
 ---
 
@@ -96,19 +96,19 @@ Een familiegeschil over wie de toegang van een specifieke zorgverlener had geaut
 
 ### Zou een functionaris voor gegevensbescherming (FG/DPO) ontbrekende toestemmingsregistratie beschouwen als een technische of een beleidsmatige kloof?
 
-Beide in de praktijk, en de overlap is precies waar het om draait — het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument.
+Beide in de praktijk, en de overlap is precies waar het om draait - het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument.
 
 ### Geldt dit soort kloof alleen voor gezondheidsgerelateerde producten, of veel breder?
 
 Het geldt het meest acuut voor gezondheidsgerelateerde en andere gevoelige gegevensproducten vanwege de aanzienlijk strengere wettelijke nalevingsdrempel onder de AVG, maar elk product dat persoonsgegevens verwerkt op basis van expliciete toestemming profiteert van exact ditzelfde type controleerbare auditspoor. De stelling 'we zijn er vrij zeker van dat dit destijds geautoriseerd was' is immers een uiterst zwakke verdediging bij elk juridisch of operationeel geschil.
 
-### Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten — beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?
+### Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten - beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?
 
-Ja, direct — projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat.
+Ja, direct - projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat.
 
 ### Is dit het soort kloof waarnaar CEO Herre Roelevink verwijst wanneer hij de verschuiving beschrijft van software bouwen naar software verantwoord ontwerpen?
 
-Ja, exact — een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk.
+Ja, exact - een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk.
 
 ### Zou een oprichter basis-toestemmingslogging zelf kunnen toevoegen zonder volledige audit, simpelweg door een spreadsheet bij te houden?
 
@@ -124,7 +124,7 @@ Een handmatig bijgehouden overzicht kan tijdelijk dienen als een noodoplossing, 
       "name": "Zou een functionaris voor gegevensbescherming (FG/DPO) ontbrekende toestemmingsregistratie beschouwen als een technische of een beleidsmatige kloof?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beide in de praktijk, en de overlap is precies waar het om draait — het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument."
+        "text": "Beide in de praktijk, en de overlap is precies waar het om draait - het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument."
       }
     },
     {
@@ -137,10 +137,10 @@ Een handmatig bijgehouden overzicht kan tijdelijk dienen als een noodoplossing, 
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten — beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?",
+      "name": "Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten - beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, direct — projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat."
+        "text": "Ja, direct - projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat."
       }
     },
     {
@@ -148,7 +148,7 @@ Een handmatig bijgehouden overzicht kan tijdelijk dienen als een noodoplossing, 
       "name": "Is dit het soort kloof waarnaar CEO Herre Roelevink verwijst wanneer hij de verschuiving beschrijft van software bouwen naar software verantwoord ontwerpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, exact — een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk."
+        "text": "Ja, exact - een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk."
       }
     },
     {

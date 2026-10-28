@@ -22,59 +22,59 @@ target_persona: "D"
 
 **Myth:** if a software services proposal doesn't explicitly mention QA anywhere, testing is probably just quietly bundled into the general development line item.
 
-**Fact ✅:** In practice, QA that isn't itemized separately as its own line usually isn't genuinely scoped at all — it quietly becomes whatever time happens to be left over after development runs long, which in practice, project after project, means very little time at all.
+**Fact ✅:** In practice, QA that isn't itemized separately as its own line usually isn't genuinely scoped at all - it quietly becomes whatever time happens to be left over after development runs long, which in practice, project after project, means very little time at all.
 
 ## Myth #1: "We Test as We Build" Is a Real QA Process ❌
 
-**Fact ✅:** Developers checking their own work as they write it is a valuable but fundamentally limited practice — it catches obvious errors well but structurally cannot catch the specific blind spots baked into the developer's own original assumptions, since the same person who wrote the bug is the one checking for it. "We test as we build," offered as the entirety of a QA plan, is a proposal with no dedicated, independent testing phase.
+**Fact ✅:** Developers checking their own work as they write it is a valuable but fundamentally limited practice - it catches obvious errors well but structurally cannot catch the specific blind spots baked into the developer's own original assumptions, since the same person who wrote the bug is the one checking for it. "We test as we build," offered as the entirety of a QA plan, is a proposal with no dedicated, independent testing phase.
 
 ## Myth #2: A Short Proposal Means Efficient Scoping ❌
 
-**Fact ✅:** A proposal that simply lists "Design → Development → Launch" without any distinct QA phase isn't actually more efficient — it's simply incomplete, however clean it looks on the page. Real QA requires dedicated time from people other than the original developers, testing across devices and edge cases the developers didn't specifically anticipate. A proposal short enough to skip mentioning this is usually short because it skipped scoping it.
+**Fact ✅:** A proposal that simply lists "Design → Development → Launch" without any distinct QA phase isn't actually more efficient - it's simply incomplete, however clean it looks on the page. Real QA requires dedicated time from people other than the original developers, testing across devices and edge cases the developers didn't specifically anticipate. A proposal short enough to skip mentioning this is usually short because it skipped scoping it.
 
 ## Myth #3: QA Concerns Can Be Addressed "If Needed" After Launch ❌
 
-**Fact ✅:** Treating QA as purely reactive — fixing only what breaks after real users find it — means paying customers end up doing the testing, effectively for free, in a way that damages trust, app store ratings, and retention in the process. A proposal that defers testing to "if needed" post-launch is deferring a cost, not eliminating it, and typically at a worse exchange rate than pre-launch QA would have cost.
+**Fact ✅:** Treating QA as purely reactive - fixing only what breaks after real users find it - means paying customers end up doing the testing, effectively for free, in a way that damages trust, app store ratings, and retention in the process. A proposal that defers testing to "if needed" post-launch is deferring a cost, not eliminating it, and typically at a worse exchange rate than pre-launch QA would have cost.
 
 ## What a Proposal That Takes QA Seriously Actually Looks Like
 
 - **A distinct QA line item** with its own timeline and, ideally, its own budget allocation separate from development.
-- **Named testing types** — unit, integration, E2E, cross-device, security — rather than a single undifferentiated "testing" line.
+- **Named testing types** - unit, integration, E2E, cross-device, security - rather than a single undifferentiated "testing" line.
 - **QA performed by someone other than the original developer**, since independent review catches blind spots self-review structurally can't.
-- **A defined bug-severity and triage process** for what happens when QA finds issues — not just "we'll test it," but what happens next.
+- **A defined bug-severity and triage process** for what happens when QA finds issues - not just "we'll test it," but what happens next.
 - **Time allocated for QA that runs in parallel with late-stage development**, not squeezed into the final days before a deadline.
 
 ## The Sociology of How "We Test as We Build" Becomes an Accepted Standard
 
-Sociologist Diane Vaughan's research on the Space Shuttle Challenger disaster, published in her 1996 book "The Challenger Launch Decision," introduced a concept that explains precisely how an organization ends up treating an inadequate practice as acceptable: normalization of deviance. Vaughan documented how NASA engineers had observed O-ring erosion on previous shuttle flights — a real deviation from the design specification — and, because those flights hadn't resulted in disaster, gradually recategorized that deviation as an acceptable, expected part of normal operation rather than as the warning sign it actually was. Each successful flight despite the flaw made the flaw feel less alarming, not more, until the underlying risk was fully normalized within the organization's culture, right up until the day it caused a catastrophic failure.
+Sociologist Diane Vaughan's research on the Space Shuttle Challenger disaster, published in her 1996 book "The Challenger Launch Decision," introduced a concept that explains precisely how an organization ends up treating an inadequate practice as acceptable: normalization of deviance. Vaughan documented how NASA engineers had observed O-ring erosion on previous shuttle flights - a real deviation from the design specification - and, because those flights hadn't resulted in disaster, gradually recategorized that deviation as an acceptable, expected part of normal operation rather than as the warning sign it actually was. Each successful flight despite the flaw made the flaw feel less alarming, not more, until the underlying risk was fully normalized within the organization's culture, right up until the day it caused a catastrophic failure.
 
-Software vendors who treat "we test as we build" as sufficient QA are running the same organizational pattern at a smaller, less catastrophic scale. A vendor's first few projects without a dedicated QA phase might ship without an incident purely by chance — the specific bugs a proper QA phase would have caught simply didn't happen to matter for those particular projects. Each incident-free project reinforces, organizationally, that skipping dedicated QA is an acceptable practice rather than a real, unaddressed gap, exactly the mechanism Vaughan's research describes — success obscures rather than validates the underlying risk, because success under a flawed process is evidence of luck, not evidence the process was actually sound.
+Software vendors who treat "we test as we build" as sufficient QA are running the same organizational pattern at a smaller, less catastrophic scale. A vendor's first few projects without a dedicated QA phase might ship without an incident purely by chance - the specific bugs a proper QA phase would have caught simply didn't happen to matter for those particular projects. Each incident-free project reinforces, organizationally, that skipping dedicated QA is an acceptable practice rather than a real, unaddressed gap, exactly the mechanism Vaughan's research describes - success obscures rather than validates the underlying risk, because success under a flawed process is evidence of luck, not evidence the process was actually sound.
 
-This is precisely why founders can't rely on a vendor's own confidence about their process as a proxy for its actual soundness — a vendor genuinely believes their lightweight process is fine, the same way NASA's engineers genuinely believed the O-ring erosion was within acceptable, understood limits, right up until the belief was catastrophically wrong. Sionnach Health's decision to weight the QA line item heavily during vendor selection, described below, is effectively a defense against exactly this normalization dynamic: refusing to accept "it's worked fine so far" from any vendor as sufficient evidence that a genuinely adequate testing process exists underneath the confidence.
+This is precisely why founders can't rely on a vendor's own confidence about their process as a proxy for its actual soundness - a vendor genuinely believes their lightweight process is fine, the same way NASA's engineers genuinely believed the O-ring erosion was within acceptable, understood limits, right up until the belief was catastrophically wrong. Sionnach Health's decision to weight the QA line item heavily during vendor selection, described below, is effectively a defense against exactly this normalization dynamic: refusing to accept "it's worked fine so far" from any vendor as sufficient evidence that a genuinely adequate testing process exists underneath the confidence.
 
 ## Manifera's Approach: QA as a Named, Budgeted Phase
 
-- **Amsterdam (Governance/Proposal Transparency):** Dutch project leads itemize QA explicitly in every proposal — named testing types, dedicated timeline, and independent review — so clients can see exactly what testing coverage they're paying for before signing.
+- **Amsterdam (Governance/Proposal Transparency):** Dutch project leads itemize QA explicitly in every proposal - named testing types, dedicated timeline, and independent review - so clients can see exactly what testing coverage they're paying for before signing.
 - **Vietnam (Execution/Independent QA):** Testing is performed by team members distinct from the original feature developers, providing the independent review that self-testing alone structurally can't replicate.
 
 This is Dutch Management × Vietnamese Mastery applied to proposal honesty itself: transparent scoping paired with genuinely independent execution of the QA it promises. See how Manifera scopes [custom software development](https://www.manifera.com/services/custom-software-development/) proposals with QA built in.
 
 ## Case Study: A Cork Healthtech's Proposal Comparison
 
-Sionnach Health, a Cork-based healthtech startup, compared three proposals for a patient-scheduling platform. Two proposals listed "Design → Development → Launch" with no distinct QA phase; the third — from Manifera — itemized unit, integration, E2E, cross-device, and security testing as separate scoped phases with their own timeline.
+Sionnach Health, a Cork-based healthtech startup, compared three proposals for a patient-scheduling platform. Two proposals listed "Design → Development → Launch" with no distinct QA phase; the third - from Manifera - itemized unit, integration, E2E, cross-device, and security testing as separate scoped phases with their own timeline.
 
-The founder initially favored one of the shorter, cheaper proposals until asking each vendor directly how QA would be handled — one vendor described "testing as we build" with no independent review step, a critical gap for a healthcare application handling patient data. Sionnach chose Manifera specifically on the strength of the QA scoping, and the resulting platform passed a third-party security audit required for healthcare compliance on the first attempt.
+The founder initially favored one of the shorter, cheaper proposals until asking each vendor directly how QA would be handled - one vendor described "testing as we build" with no independent review step, a critical gap for a healthcare application handling patient data. Sionnach chose Manifera specifically on the strength of the QA scoping, and the resulting platform passed a third-party security audit required for healthcare compliance on the first attempt.
 
 > *"The QA line item was the most boring-looking part of the proposal, and it turned out to be the part that actually protected us."*
-> — **Founder, Sionnach Health**
+> - **Founder, Sionnach Health**
 
 Sionnach's founder now describes her own evaluation approach explicitly as refusing to accept "it's worked fine before" as evidence, requiring instead a specific description of the process itself, independent of any individual vendor's track record of good luck to date.
 
 ## Why "It's Always Worked Before" Is the Weakest Possible Evidence
 
-Vaughan's research offers a specific, uncomfortable insight for anyone evaluating a vendor's QA claims: a vendor's confidence, and even their genuine track record of past projects shipping without major incident, is not strong evidence that their process is actually sound. A track record built on an inadequate process simply means the specific bugs that process was structurally unable to catch haven't happened to matter yet for that vendor's particular clients — which is precisely the same evidentiary trap that let O-ring erosion go unaddressed across multiple successful shuttle flights before it mattered catastrophically on one that wasn't.
+Vaughan's research offers a specific, uncomfortable insight for anyone evaluating a vendor's QA claims: a vendor's confidence, and even their genuine track record of past projects shipping without major incident, is not strong evidence that their process is actually sound. A track record built on an inadequate process simply means the specific bugs that process was structurally unable to catch haven't happened to matter yet for that vendor's particular clients - which is precisely the same evidentiary trap that let O-ring erosion go unaddressed across multiple successful shuttle flights before it mattered catastrophically on one that wasn't.
 
-The more reliable question isn't "has this worked before," it's "what specifically would this process catch, and what specifically would it structurally miss regardless of how many projects have shipped without incident so far." A vendor who can answer this precisely — naming the testing types included, who performs them, and what's explicitly out of scope — is describing an actual process a founder can evaluate on its own merits. A vendor who answers with their track record alone is offering exactly the kind of evidence Vaughan's research shows is weakest precisely when it feels most reassuring.
+The more reliable question isn't "has this worked before," it's "what specifically would this process catch, and what specifically would it structurally miss regardless of how many projects have shipped without incident so far." A vendor who can answer this precisely - naming the testing types included, who performs them, and what's explicitly out of scope - is describing an actual process a founder can evaluate on its own merits. A vendor who answers with their track record alone is offering exactly the kind of evidence Vaughan's research shows is weakest precisely when it feels most reassuring.
 
 ## Reading a Proposal for QA Red Flags
 
@@ -88,51 +88,51 @@ The more reliable question isn't "has this worked before," it's "what specifical
 
 ## Reading Your Next Proposal Carefully
 
-Before signing any software services proposal, ask specifically how QA is scoped, timed, and staffed, and resist accepting a vendor's clean track record alone as sufficient evidence of a sound process — a vague or absent answer here is one of the most reliable predictors of post-launch problems. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) to see how Manifera scopes QA into every project.
+Before signing any software services proposal, ask specifically how QA is scoped, timed, and staffed, and resist accepting a vendor's clean track record alone as sufficient evidence of a sound process - a vague or absent answer here is one of the most reliable predictors of post-launch problems. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) to see how Manifera scopes QA into every project.
 
 ## Benchmarking QA Effort: What Share of the Timeline Testing Should Actually Take
 
 A useful sanity check when reading any application development services proposal: QA effort should typically consume 20-30% of total project timeline and budget for a standard web or mobile product, rising to 30-40% for anything handling regulated data, payments, or safety-critical functionality. A proposal allocating less than 15% to QA across all named testing types is very likely under-scoping it regardless of how the line item is worded, and one allocating close to 0% is effectively proposing no independent testing at all.
 
-Within that QA allocation, a reasonable split across testing types looks roughly like: 30-35% unit and integration testing (verifying components work correctly in isolation and together), 25-30% end-to-end testing (verifying full user flows function as intended), 20% cross-device and cross-browser testing, and 15-20% security and penetration testing for any software product handling user data or payments. A vendor proposal that only names "testing" as a single undifferentiated line, with no split resembling this breakdown, hasn't actually scoped the work — it's estimated a number and attached a label to it. Ask for the percentage breakdown by testing type before accepting a total QA figure at face value.
+Within that QA allocation, a reasonable split across testing types looks roughly like: 30-35% unit and integration testing (verifying components work correctly in isolation and together), 25-30% end-to-end testing (verifying full user flows function as intended), 20% cross-device and cross-browser testing, and 15-20% security and penetration testing for any software product handling user data or payments. A vendor proposal that only names "testing" as a single undifferentiated line, with no split resembling this breakdown, hasn't actually scoped the work - it's estimated a number and attached a label to it. Ask for the percentage breakdown by testing type before accepting a total QA figure at face value.
 
 ## Frequently Asked Questions
 
 ### (Scenario: founder comparing proposals with different QA scoping) How do I compare QA scoping across different vendor proposals?
 
-Look for a distinct QA line item with named testing types and a dedicated timeline, not just "testing" folded into the development phase — ask directly if it isn't clear from the proposal itself.
+Look for a distinct QA line item with named testing types and a dedicated timeline, not just "testing" folded into the development phase - ask directly if it isn't clear from the proposal itself.
 
 ### (Scenario: founder worried about being upsold on unnecessary QA) Is dedicated QA scope always necessary, even for a simple project?
 
-The depth of QA should scale with the project's risk and complexity, but even simple projects benefit from an independent testing pass distinct from developer self-testing — the question is how much QA is appropriate, not whether any is needed.
+The depth of QA should scale with the project's risk and complexity, but even simple projects benefit from an independent testing pass distinct from developer self-testing - the question is how much QA is appropriate, not whether any is needed.
 
 ### (Scenario: founder trying to evaluate a healthcare or fintech project's QA needs) Does regulated data (healthcare, financial) change how much QA scoping I should expect?
 
-Yes significantly — security testing and independent review become essential, not optional, once real regulated user data is involved, and compliance audits will typically require evidence of a genuine QA process.
+Yes significantly - security testing and independent review become essential, not optional, once real regulated user data is involved, and compliance audits will typically require evidence of a genuine QA process.
 
 ### (Scenario: founder unsure how to ask about QA without seeming distrustful) How do I ask a vendor about their QA process without it feeling like an accusation?
 
-Frame it as standard due diligence: ask what testing types are included, who performs them, and how bugs found during QA are triaged — a confident vendor answers this specifically and without defensiveness.
+Frame it as standard due diligence: ask what testing types are included, who performs them, and how bugs found during QA are triaged - a confident vendor answers this specifically and without defensiveness.
 
 ### (Scenario: founder deciding between a cheaper proposal with vague QA and a pricier one with detailed QA) Is it worth paying more for a proposal with detailed QA scoping?
 
-Usually yes — the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch, both in direct fix cost and in the harder-to-quantify cost of damaged trust and retention.
+Usually yes - the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch, both in direct fix cost and in the harder-to-quantify cost of damaged trust and retention.
 
 ### (Scenario: founder reviewing a software services quote line by line) What percentage of a software services quote should actually go toward QA?
 
-Expect 20-30% of the total timeline and budget for a standard product, rising to 30-40% for anything handling payments or regulated data — a figure noticeably below that range signals under-scoped testing.
+Expect 20-30% of the total timeline and budget for a standard product, rising to 30-40% for anything handling payments or regulated data - a figure noticeably below that range signals under-scoped testing.
 
 ### (Scenario: procurement lead comparing custom software development services vendors on paper) Should I ask for a testing-type breakdown, or is a single QA total sufficient?
 
-Ask for the breakdown by testing type — unit, integration, end-to-end, cross-device, security — since a single undifferentiated total often means the work wasn't actually scoped by type, just estimated as a lump sum.
+Ask for the breakdown by testing type - unit, integration, end-to-end, cross-device, security - since a single undifferentiated total often means the work wasn't actually scoped by type, just estimated as a lump sum.
 
 ### (Scenario: founder whose software product handles payments) Does a software product that processes payments need a different QA approach than a typical app?
 
-Yes — payment-handling products need dedicated security and penetration testing as a named phase, not folded into general QA, along with independent review of the specific payment integration points.
+Yes - payment-handling products need dedicated security and penetration testing as a named phase, not folded into general QA, along with independent review of the specific payment integration points.
 
 ### (Scenario: founder asking a voice assistant how to spot a QA shortfall) What's a quick way to tell if a software services proposal is skipping QA?
 
-Check whether QA appears as its own line item with a specific percentage of the timeline attached — if testing is only mentioned in passing within the development phase, it likely isn't independently scoped.
+Check whether QA appears as its own line item with a specific percentage of the timeline attached - if testing is only mentioned in passing within the development phase, it likely isn't independently scoped.
 
 <script type="application/ld+json">
 {
@@ -141,12 +141,12 @@ Check whether QA appears as its own line item with a specific percentage of the 
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: founder comparing proposals with different QA scoping) How do I compare QA scoping across different vendor proposals?", "acceptedAnswer": { "@type": "Answer", "text": "Look for a distinct QA line item with named testing types and a dedicated timeline, not just testing folded into development." } },
     { "@type": "Question", "name": "(Scenario: founder worried about being upsold on unnecessary QA) Is dedicated QA scope always necessary, even for a simple project?", "acceptedAnswer": { "@type": "Answer", "text": "The depth should scale with risk and complexity, but even simple projects benefit from an independent testing pass distinct from developer self-testing." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to evaluate a healthcare or fintech project's QA needs) Does regulated data change how much QA scoping I should expect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes significantly — security testing and independent review become essential once real regulated user data is involved." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to evaluate a healthcare or fintech project's QA needs) Does regulated data change how much QA scoping I should expect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes significantly - security testing and independent review become essential once real regulated user data is involved." } },
     { "@type": "Question", "name": "(Scenario: founder unsure how to ask about QA without seeming distrustful) How do I ask a vendor about their QA process without it feeling like an accusation?", "acceptedAnswer": { "@type": "Answer", "text": "Frame it as standard due diligence: ask what testing types are included, who performs them, and how bugs are triaged." } },
-    { "@type": "Question", "name": "(Scenario: founder deciding between a cheaper proposal with vague QA and a pricier one with detailed QA) Is it worth paying more for a proposal with detailed QA scoping?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch." } },
+    { "@type": "Question", "name": "(Scenario: founder deciding between a cheaper proposal with vague QA and a pricier one with detailed QA) Is it worth paying more for a proposal with detailed QA scoping?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes - the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch." } },
     { "@type": "Question", "name": "(Scenario: founder reviewing a software services quote line by line) What percentage of a software services quote should actually go toward QA?", "acceptedAnswer": { "@type": "Answer", "text": "Expect 20-30% of the total timeline and budget for a standard product, rising to 30-40% for anything handling payments or regulated data." } },
-    { "@type": "Question", "name": "(Scenario: procurement lead comparing custom software development services vendors on paper) Should I ask for a testing-type breakdown, or is a single QA total sufficient?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the breakdown by testing type — unit, integration, end-to-end, cross-device, security — since a single undifferentiated total is often just an estimate with a label attached." } },
-    { "@type": "Question", "name": "(Scenario: founder whose software product handles payments) Does a software product that processes payments need a different QA approach than a typical app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — payment-handling products need dedicated security and penetration testing as a named phase, plus independent review of the specific payment integration points." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing custom software development services vendors on paper) Should I ask for a testing-type breakdown, or is a single QA total sufficient?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the breakdown by testing type - unit, integration, end-to-end, cross-device, security - since a single undifferentiated total is often just an estimate with a label attached." } },
+    { "@type": "Question", "name": "(Scenario: founder whose software product handles payments) Does a software product that processes payments need a different QA approach than a typical app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes - payment-handling products need dedicated security and penetration testing as a named phase, plus independent review of the specific payment integration points." } },
     { "@type": "Question", "name": "(Scenario: founder asking a voice assistant how to spot a QA shortfall) What's a quick way to tell if a software services proposal is skipping QA?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether QA appears as its own line item with a specific percentage of the timeline attached, rather than only mentioned in passing within development." } }
   ]
 }

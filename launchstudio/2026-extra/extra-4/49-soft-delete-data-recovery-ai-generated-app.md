@@ -31,19 +31,19 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-There's a specific kind of silence that follows a user clicking "delete" on the wrong thing — the second where they realize what just happened, and the next second where they realize there's no undo. If your app's delete button runs a `DELETE FROM` statement straight against the database, that silence is permanent, and it's a decision your AI coding tool almost certainly made for you without ever mentioning it.
+There's a specific kind of silence that follows a user clicking "delete" on the wrong thing - the second where they realize what just happened, and the next second where they realize there's no undo. If your app's delete button runs a `DELETE FROM` statement straight against the database, that silence is permanent, and it's a decision your AI coding tool almost certainly made for you without ever mentioning it.
 
 ## The one-word difference nobody flags during development
 
-When you ask an AI coding assistant to "add a delete function" for a record, the most direct and common implementation is a hard delete: a SQL `DELETE` statement (or equivalent ORM call) that removes the row from the database entirely, immediately, with no trace left behind. It's the simplest possible interpretation of "delete," it passes every test — the record is gone, exactly as requested — and it works flawlessly right up until someone deletes the wrong thing.
+When you ask an AI coding assistant to "add a delete function" for a record, the most direct and common implementation is a hard delete: a SQL `DELETE` statement (or equivalent ORM call) that removes the row from the database entirely, immediately, with no trace left behind. It's the simplest possible interpretation of "delete," it passes every test - the record is gone, exactly as requested - and it works flawlessly right up until someone deletes the wrong thing.
 
-The alternative, soft delete, doesn't actually remove the row at all. Instead, it sets a flag — typically a `deleted_at` timestamp column — and every part of the application that reads from that table is updated to filter out rows where that flag is set. Functionally, a soft-deleted record disappears from the user's view exactly the same as a hard-deleted one. The difference only matters at the moment someone needs it back: a soft-deleted record can be restored in seconds by clearing the flag, while a hard-deleted record requires restoring from a database backup — if one exists, if it's recent enough, and if restoring it doesn't also roll back every other change made since.
+The alternative, soft delete, doesn't actually remove the row at all. Instead, it sets a flag - typically a `deleted_at` timestamp column - and every part of the application that reads from that table is updated to filter out rows where that flag is set. Functionally, a soft-deleted record disappears from the user's view exactly the same as a hard-deleted one. The difference only matters at the moment someone needs it back: a soft-deleted record can be restored in seconds by clearing the flag, while a hard-deleted record requires restoring from a database backup - if one exists, if it's recent enough, and if restoring it doesn't also roll back every other change made since.
 
 ## Why AI tools default to the wrong choice, and when it actually matters
 
-Soft delete isn't the default an AI tool reaches for because it's genuinely more work: it means adding a column, updating every single query against that table to exclude flagged rows, and usually building some kind of admin interface to view and restore soft-deleted records later. A prompt like "let users delete a project" doesn't communicate any of that complexity — it just asks for deletion, and the AI gives you the simplest version. The decision about which one is appropriate depends entirely on what's being deleted: a soft delete is close to mandatory for anything with cascading relationships (a project with tasks, a user with orders), anything a user might delete by mistake through a UI, or anything with compliance-driven retention requirements. A genuinely disposable, low-stakes record might not need it at all.
+Soft delete isn't the default an AI tool reaches for because it's genuinely more work: it means adding a column, updating every single query against that table to exclude flagged rows, and usually building some kind of admin interface to view and restore soft-deleted records later. A prompt like "let users delete a project" doesn't communicate any of that complexity - it just asks for deletion, and the AI gives you the simplest version. The decision about which one is appropriate depends entirely on what's being deleted: a soft delete is close to mandatory for anything with cascading relationships (a project with tasks, a user with orders), anything a user might delete by mistake through a UI, or anything with compliance-driven retention requirements. A genuinely disposable, low-stakes record might not need it at all.
 
-This is exactly the kind of data modeling judgment call that separates AI-generated code from production-grade architecture — not a bug exactly, but a default that was never actually evaluated against the real cost of getting it wrong. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and reviewing delete semantics against the actual blast radius of each table is a standard part of how our engineers, working from Manifera's Amsterdam office, prepare an AI-built app's data model for real users.
+This is exactly the kind of data modeling judgment call that separates AI-generated code from production-grade architecture - not a bug exactly, but a default that was never actually evaluated against the real cost of getting it wrong. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and reviewing delete semantics against the actual blast radius of each table is a standard part of how our engineers, working from Manifera's Amsterdam office, prepare an AI-built app's data model for real users.
 
 If you're not sure which of your app's delete functions are hard deletes waiting to cause a bad day, it's worth [reviewing your data model with our team](https://launchstudio.eu/en/#contact) before your first real user finds out the hard way.
 
@@ -59,24 +59,24 @@ ON users (email)
 WHERE deleted_at IS NULL;
 ```
 
-With that in place, a deleted account's email is genuinely free to reuse, while two active accounts still can't collide. It's a small addition, but it's the kind of thing that only gets caught by someone deliberately testing "delete an account, then sign up again with the same email" — a test almost nobody runs until a real user hits it and gets a confusing signup error instead of a fresh account.
+With that in place, a deleted account's email is genuinely free to reuse, while two active accounts still can't collide. It's a small addition, but it's the kind of thing that only gets caught by someone deliberately testing "delete an account, then sign up again with the same email" - a test almost nobody runs until a real user hits it and gets a confusing signup error instead of a fresh account.
 
-The same pattern shows up on any column that was unique before soft delete existed — a workspace slug, an invite code, a subdomain — anywhere the app promises uniqueness to a user but the underlying constraint was never updated to understand that a soft-deleted row shouldn't count. Auditing every unique constraint on a newly soft-deletable table, not just the obvious email field, is what keeps this from surfacing as a support ticket months after the migration shipped.
+The same pattern shows up on any column that was unique before soft delete existed - a workspace slug, an invite code, a subdomain - anywhere the app promises uniqueness to a user but the underlying constraint was never updated to understand that a soft-deleted row shouldn't count. Auditing every unique constraint on a newly soft-deletable table, not just the obvious email field, is what keeps this from surfacing as a support ticket months after the migration shipped.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Project That Vanished in One Click
 
-Daniël Wesseling, a founder in Emmeloord, built ProjectVolg, a project management SaaS, using Lovable. The delete function for a project worked reliably in every test Daniël ran during development: click delete, confirm, the project is gone. Clean, simple, exactly as intended — because in every test, it was Daniël deleting a test project he didn't need anymore.
+Daniël Wesseling, a founder in Emmeloord, built ProjectVolg, a project management SaaS, using Lovable. The delete function for a project worked reliably in every test Daniël ran during development: click delete, confirm, the project is gone. Clean, simple, exactly as intended - because in every test, it was Daniël deleting a test project he didn't need anymore.
 
-The real incident happened when a user, meaning to delete an old archived project, accidentally clicked delete on an active one still full of open tasks. The confirmation dialog didn't give enough pause, and within seconds the project and every one of its associated tasks were permanently gone from the database — because the AI-generated delete function had performed a genuine hard delete, cascading down through every related table with no soft-delete flag anywhere to catch it. There was no way to bring it back through the app itself.
+The real incident happened when a user, meaning to delete an old archived project, accidentally clicked delete on an active one still full of open tasks. The confirmation dialog didn't give enough pause, and within seconds the project and every one of its associated tasks were permanently gone from the database - because the AI-generated delete function had performed a genuine hard delete, cascading down through every related table with no soft-delete flag anywhere to catch it. There was no way to bring it back through the app itself.
 
 LaunchStudio rebuilt ProjectVolg's delete logic around a soft-delete pattern: a `deleted_at` timestamp on projects and their related tasks, every existing query updated to filter out flagged records, and a simple "recently deleted" admin view where a project could be restored within a 30-day window before being permanently purged on a schedule. **Result:** the very next accidental deletion, weeks later, was restored by the user themselves in under a minute, with no engineering involvement at all.
 
 > *"Losing that project taught me the hard way that 'delete' and 'gone forever' shouldn't be the same button. Now it's genuinely impossible to lose data by accident."*
-> — **Daniël Wesseling, Founder, ProjectVolg (Emmeloord)**
+> - **Daniël Wesseling, Founder, ProjectVolg (Emmeloord)**
 
-**Cost & Timeline:** €750 (soft-delete schema migration, query updates, recovery admin view) — completed in 4 business days.
+**Cost & Timeline:** €750 (soft-delete schema migration, query updates, recovery admin view) - completed in 4 business days.
 
 ---
 
@@ -88,7 +88,7 @@ Because a hard delete is the simplest, most literal interpretation of a "delete"
 
 ### Which tables in my app actually need soft delete?
 
-Anything with cascading relationships, anything a user could delete accidentally through the UI, and anything with retention or audit requirements — low-stakes, easily-recreated records are less critical.
+Anything with cascading relationships, anything a user could delete accidentally through the UI, and anything with retention or audit requirements - low-stakes, easily-recreated records are less critical.
 
 ### Can soft delete be retrofitted onto an app that already uses hard deletes?
 
@@ -100,11 +100,11 @@ Manifera's 11+ years of production engineering experience across 160+ projects m
 
 ### Does adding soft delete slow down my database queries?
 
-Generally not meaningfully — filtering on an indexed `deleted_at` column adds negligible overhead compared to the cost of an unrecoverable accidental deletion.
+Generally not meaningfully - filtering on an indexed `deleted_at` column adds negligible overhead compared to the cost of an unrecoverable accidental deletion.
 
 ### If I add soft delete, will a deleted user be able to sign up again with the same email?
 
-Not automatically — a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error.
+Not automatically - a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error.
 
 <script type="application/ld+json">
 {
@@ -134,12 +134,12 @@ Not automatically — a standard unique constraint still treats the old, soft-de
     {
       "@type": "Question",
       "name": "Does adding soft delete slow down my database queries?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Generally not meaningfully — filtering on an indexed deleted_at column adds negligible overhead compared to the cost of an unrecoverable accidental deletion." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally not meaningfully - filtering on an indexed deleted_at column adds negligible overhead compared to the cost of an unrecoverable accidental deletion." }
     },
     {
       "@type": "Question",
       "name": "If I add soft delete, will a deleted user be able to sign up again with the same email?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not automatically — a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Not automatically - a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error." }
     }
   ]
 }

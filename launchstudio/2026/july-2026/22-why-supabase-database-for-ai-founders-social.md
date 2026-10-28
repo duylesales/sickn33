@@ -1,4 +1,4 @@
-🔥 Harper built a prototype using **Lovable** — harper, a startup founder, used **lovable** to build a saas competitor tracker prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Harper built a prototype using **Lovable** - harper, a startup founder, used **lovable** to build a saas competitor tracker prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Harper's application achieved production readiness: Harper reduced database response times from 7.2 seconds down to 180 milliseconds under load. (€1,300 (Database Tuning Package) — production-ready and deployed in 4 business days.). 🚀
+Harper's application achieved production readiness: Harper reduced database response times from 7.2 seconds down to 180 milliseconds under load. (€1,300 (Database Tuning Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/why-supabase-database-for-ai-founders
 

@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 De term begon als een grap op sociale media en hield op dat te zijn rond het moment dat mensen het op facturen begonnen te zetten. Een "vibe coding developer" bouwt software primair door een AI-tool aan te sturen in plaats van zelf het leeuwendeel van de code te typen: de gewenste uitkomst beschrijven, het resultaat inspecteren, bijsturen en die cyclus herhalen totdat de applicatie functioneert.
 
-Veel doorgewinterde software-engineers kijken hier met lichte scepsis naar. Die reactie is echter minder interessant dan het onweerlegbare feit dat deze methode binnen enkele dagen werkende producten oplevert — wat precies verklaart waarom oprichters er massaal gebruik van maken. Wat wél de moeite waard is om eerlijk te analyseren: waar de werkwijze daadwerkelijk in uitblinkt, welke ongewenste bijwerkingen het structureel produceert, en het exacte omslagpunt waarop een volwaardige engineeringdiscipline het roer moet overnemen.
+Veel doorgewinterde software-engineers kijken hier met lichte scepsis naar. Die reactie is echter minder interessant dan het onweerlegbare feit dat deze methode binnen enkele dagen werkende producten oplevert - wat precies verklaart waarom oprichters er massaal gebruik van maken. Wat wél de moeite waard is om eerlijk te analyseren: waar de werkwijze daadwerkelijk in uitblinkt, welke ongewenste bijwerkingen het structureel produceert, en het exacte omslagpunt waarop een volwaardige engineeringdiscipline het roer moet overnemen.
 
 ## De Methode, Beschreven Zonder Hype en Zonder Cynisme
 
@@ -46,9 +46,9 @@ Dat laatste punt scheidt bekwame beoefenaars van mensen die simpelweg geluk hebb
 
 ## De Vier Dingen Die Het Betrouwbaar Oplevert Die U Absoluut Niet Wilt
 
-**1. Code die uitsluitend werkt voor het pad dat u toevallig heeft getest.** Een gegenereerde flow handelt perfect het scenario af dat u in uw prompt noemde. Het scenario dat u vergat te benoemen — een leeg zoekresultaat, een dubbele muisklik op de betaalknop, een haperende netwerkverbinding halverwege — vertoont vaak ongedefinieerd gedrag. En ongedefinieerd gedrag in productie resulteert in corrupte database-records waar uw app niet zelfstandig van kan herstellen.
+**1. Code die uitsluitend werkt voor het pad dat u toevallig heeft getest.** Een gegenereerde flow handelt perfect het scenario af dat u in uw prompt noemde. Het scenario dat u vergat te benoemen - een leeg zoekresultaat, een dubbele muisklik op de betaalknop, een haperende netwerkverbinding halverwege - vertoont vaak ongedefinieerd gedrag. En ongedefinieerd gedrag in productie resulteert in corrupte database-records waar uw app niet zelfstandig van kan herstellen.
 
-**2. Stille codeduplicatie.** Vraagt u drie keer om een vergelijkbare berekening, dan genereert de AI regelmatig drie afzonderlijke implementaties van exact dezelfde logica. Alles werkt. Totdat er een btw-tarief of kortingsregel wijzigt: u past één functie aan, de andere twee blijven ongewijzigd — en zo ontstaat de beruchte bug waarbij het bedrag in het winkelmandje verschilt van het bedrag op de uiteindelijke factuur.
+**2. Stille codeduplicatie.** Vraagt u drie keer om een vergelijkbare berekening, dan genereert de AI regelmatig drie afzonderlijke implementaties van exact dezelfde logica. Alles werkt. Totdat er een btw-tarief of kortingsregel wijzigt: u past één functie aan, de andere twee blijven ongewijzigd - en zo ontstaat de beruchte bug waarbij het bedrag in het winkelmandje verschilt van het bedrag op de uiteindelijke factuur.
 
 **3. Beveiliging door weglating.** AI-generatie optimaliseert voor code die direct draait, en draaiende code heeft geen autorisatiecontroles, rate limiting of server-side validatie nodig om een formulier te tonen. Er treden geen foutmeldingen op wanneer deze beveiligingen ontbreken, waardoor niets in de interface u triggert om ze toe te voegen.
 
@@ -86,9 +86,9 @@ Teams die met succes zo werken, behandelen AI als een razendsnelle eerste-ontwer
 
 ## Waar De Andere Discipline Begint
 
-LaunchStudio bevindt zich exact op het hierboven beschreven overdrachtspunt. De frontend die u in Lovable, Bolt of Cursor heeft gemaakt blijft volledig intact — het is immers vaak het meest waardevolle deel van het product, en herbouwen zou uw opgebouwde voorsprong tenietdoen. Wat wij toevoegen is de laag die prompting niet genereert: autorisatieregels die cryptografisch standhouden, geheime sleutels veilig op de server, iDEAL- en creditcardbetalingen die feilloos reconciliëren, productiehosting met SSL en back-ups, en een gedocumenteerde codebase die leesbaar blijft voor AI, zodat u achteraf soepel kunt blijven prompten.
+LaunchStudio bevindt zich exact op het hierboven beschreven overdrachtspunt. De frontend die u in Lovable, Bolt of Cursor heeft gemaakt blijft volledig intact - het is immers vaak het meest waardevolle deel van het product, en herbouwen zou uw opgebouwde voorsprong tenietdoen. Wat wij toevoegen is de laag die prompting niet genereert: autorisatieregels die cryptografisch standhouden, geheime sleutels veilig op de server, iDEAL- en creditcardbetalingen die feilloos reconciliëren, productiehosting met SSL en back-ups, en een gedocumenteerde codebase die leesbaar blijft voor AI, zodat u achteraf soepel kunt blijven prompten.
 
-Dat laatste punt is cruciaal: veel traditionele bureaus leveren software op die u daarna zelf nooit meer met AI kunt bewerken. Onze engineers — afkomstig van Manifera, met elf jaar enterprise-ervaring voor onder meer Vodafone en TNO — zorgen dat uw voordeel van razendsnel itereren behouden blijft.
+Dat laatste punt is cruciaal: veel traditionele bureaus leveren software op die u daarna zelf nooit meer met AI kunt bewerken. Onze engineers - afkomstig van Manifera, met elf jaar enterprise-ervaring voor onder meer Vodafone en TNO - zorgen dat uw voordeel van razendsnel itereren behouden blijft.
 
 Heeft u het punt bereikt waarop een fout ten koste gaat van een echte klant? [Spreek met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
@@ -107,9 +107,9 @@ Binnen zes werkdagen werd de backend gesaneerd: storage beveiligd, calculatielog
 **Resultaat:** Kassabon beantwoordde de AVG-vragen van haar zakelijke klanten zonder externe twijfel, en de btw-afrondingsfout werd gecorrigeerd vóórdat een gebruiker er een officiële belastingaangifte mee indiende.
 
 > *"Ik kan een product bouwen in een week. Wat ik niet kon, was bewijzen dat het veilig was. Ik merkte dat harder prompten me alleen zelfverzekerder maakte, niet correcter."*
-> — **Ruben Elsinga, Oprichter, Kassabon (Nijmegen)**
+> - **Ruben Elsinga, Oprichter, Kassabon (Nijmegen)**
 
-**Kosten & Doorlooptijd:** €2.150 (Launch Ready-pakket: storage hardening, logica-consolidatie, EU-regiomigratie) — voltooid in 6 werkdagen.
+**Kosten & Doorlooptijd:** €2.150 (Launch Ready-pakket: storage hardening, logica-consolidatie, EU-regiomigratie) - voltooid in 6 werkdagen.
 
 ---
 

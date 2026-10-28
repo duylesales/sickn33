@@ -93,9 +93,9 @@ Twee betalende leden boekten beide bureau 14 voor dezelfde dinsdag – één voo
 **Resultaat:** DeskDeel heeft sinds de herstelling duizenden boekingen met overlappende schema's verwerkt zonder een herhaald conflict. Niels adverteert de realtime beschikbaarheidsnauwkeurigheid van de app nu als een verkooppunt voor prospective coworking-klanten.
 
 > *"Ik dacht oprecht dat dubbel boeken gewoon dubbel boeken was – ik realiseerde me niet dat kamers en bureaus eronder een compleet andere logica nodig hadden. Die ene kloof had ons het vertrouwen van een coworking-ruimte in de eerste maand kunnen kosten."*
-> — **Niels Verbeek, Oprichter, DeskDeel (Nijmegen)**
+> - **Niels Verbeek, Oprichter, DeskDeel (Nijmegen)**
 
-**Kosten en tijdlijn:** € 720 (herbouw van overlaplogica voor bureaubeschikbaarheid, gelijktijdigheidsvergrendeling, ondersteuning voor meerdere boekingssoorten) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 720 (herbouw van overlaplogica voor bureaubeschikbaarheid, gelijktijdigheidsvergrendeling, ondersteuning voor meerdere boekingssoorten) - voltooid in 4 werkdagen.
 
 ---
 

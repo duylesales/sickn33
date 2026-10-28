@@ -12,7 +12,7 @@ Tijdens de eerste piek van de Generatieve AI-hype was het heersende dogma dat el
 
 Wanneer u een externe vector database gebruikt, is uw software-architectuur gesplitst. U bewaart gebruikersprofielen, facturatiegegevens en documentmetadata in uw primaire PostgreSQL-database, terwijl u de eigenlijke vector-embeddings van die documenten opslaat in een extern systeem zoals Pinecone of Weaviate.
 
-Wat gebeurt er wanneer een gebruiker een document verwijdert? U moet een SQL-query uitvoeren om het record in Postgres te wissen, en een afzonderlijke API-aanroep doen om de vector in de externe database te verwijderen. Als die tweede API-aanroep faalt — door een netwerk-timeout, rate limit of een deployment midden in het verzoek — ontstaat een "verweesde vector" (orphaned vector). Uw AI blijft vrolijk antwoorden genereren op basis van documenten die de gebruiker veronderstelt definitief te hebben gewist. In een zakelijke B2B-context is dit geen klein foutje; het is een directe schending van Artikel 17 AVG (het recht op gegevenswissing) met ernstige juridische risico's. Door uw data te centraliseren in PostgreSQL elimineert u dit risico op transactieniveau: één `DELETE`-opdracht binnen één ACID-transactie wist het document én de vector atomair tegelijkertijd.
+Wat gebeurt er wanneer een gebruiker een document verwijdert? U moet een SQL-query uitvoeren om het record in Postgres te wissen, en een afzonderlijke API-aanroep doen om de vector in de externe database te verwijderen. Als die tweede API-aanroep faalt - door een netwerk-timeout, rate limit of een deployment midden in het verzoek - ontstaat een "verweesde vector" (orphaned vector). Uw AI blijft vrolijk antwoorden genereren op basis van documenten die de gebruiker veronderstelt definitief te hebben gewist. In een zakelijke B2B-context is dit geen klein foutje; het is een directe schending van Artikel 17 AVG (het recht op gegevenswissing) met ernstige juridische risico's. Door uw data te centraliseren in PostgreSQL elimineert u dit risico op transactieniveau: één `DELETE`-opdracht binnen één ACID-transactie wist het document én de vector atomair tegelijkertijd.
 
 ## Maak Kennis met pgvector
 
@@ -24,7 +24,7 @@ Wanneer een gebruiker een record verwijdert, zorgt een standaard SQL `CASCADE DE
 
 De voornaamste kritiek op pgvector in de beginfase betrof de zoekprestaties. Heeft u een tabel met 1 miljoen rijen en voert u een vectorzoekopdracht uit zonder index, dan voert Postgres een sequentiële "Exact Nearest Neighbor" scan uit. De database berekent de afstandswiskunde voor elke afzonderlijke rij, wat seconden duurt en de gebruikerservaring volledig ruïneert.
 
-Om Postgres te optimaliseren voor productiesnelheid, moet u een **HNSW (Hierarchical Navigable Small World) Index** implementeren — die in pgvector de oudere IVFFlat-index heeft vervangen als de industriestandaard. HNSW organiseert uw vectoren in een gelaagde graafstructuur met langeafstandsverbindingen in de toplaag voor snelle navigatie en dichte clusters in de onderlaag voor precisie. In plaats van elke rij te scannen, navigeert Postgres binnen milliseconden door de graaf naar de meest overeenkomstige vectoren. Het aanmaken van een HNSW-index op uw pgvector-kolom is het verschil tussen een trage query van 3 seconden en een bliksemsnelle query van 30 milliseconden.
+Om Postgres te optimaliseren voor productiesnelheid, moet u een **HNSW (Hierarchical Navigable Small World) Index** implementeren - die in pgvector de oudere IVFFlat-index heeft vervangen als de industriestandaard. HNSW organiseert uw vectoren in een gelaagde graafstructuur met langeafstandsverbindingen in de toplaag voor snelle navigatie en dichte clusters in de onderlaag voor precisie. In plaats van elke rij te scannen, navigeert Postgres binnen milliseconden door de graaf naar de meest overeenkomstige vectoren. Het aanmaken van een HNSW-index op uw pgvector-kolom is het verschil tussen een trage query van 3 seconden en een bliksemsnelle query van 30 milliseconden.
 
 Drie parameters bepalen de prestaties: `m` (aantal verbindingen per node, doorgaans 16), `ef_construction` (zoekdiepte tijdens indexopbouw, meestal 64-200) en `hnsw.ef_search` (zoekdiepte tijdens runtime query's). Een onjuiste afstemming van deze parameters is de voornaamste reden waarom ontwikkelaars soms onterecht klagen dat pgvector te traag zou zijn.
 
@@ -67,7 +67,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in om een maatwerk HNSW-index aan
 
 **Resultaat:** De latentie van zoekquery's daalde naar minder dan 120 milliseconden, waardoor de zoekfunctie weer direct en soepel reageerde voor advocatenkantoren.
 
-**Kosten & Tijdlijn:** €1.850 (Vector Index Optimalisatie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.850 (Vector Index Optimalisatie Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

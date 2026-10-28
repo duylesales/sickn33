@@ -20,7 +20,7 @@ Content Format: How-To Guide
 }
 </script>
 
-Your Amsterdam CTO wakes up at 8 AM. Your Vietnamese development team is finishing lunch. Your Singapore PM is in an afternoon meeting. Your American investor wants a weekly update "first thing in the morning" — which morning?
+Your Amsterdam CTO wakes up at 8 AM. Your Vietnamese development team is finishing lunch. Your Singapore PM is in an afternoon meeting. Your American investor wants a weekly update "first thing in the morning" - which morning?
 
 Distributed engineering is the norm in 2026, but most teams still run standups as if everyone sits in the same office. The result: meetings at inconvenient hours that nobody pays attention to, async updates that nobody reads, and a persistent feeling that the left hand does not know what the right hand is doing.
 
@@ -73,23 +73,23 @@ A 15-minute video call during the overlap window for:
 
 ## Tools That Actually Work
 
-- **Slack** (async updates, threaded discussions) — the backbone of async communication
-- **Loom** (async video updates) — when something is too complex for text but does not need real-time discussion
-- **Linear/Jira** (task tracking) — the source of truth for what is in progress
-- **Notion/Confluence** (documentation) — decisions, architecture records, and meeting notes
-- **Around/Google Meet** (sync calls) — for the overlap-window meetings
+- **Slack** (async updates, threaded discussions) - the backbone of async communication
+- **Loom** (async video updates) - when something is too complex for text but does not need real-time discussion
+- **Linear/Jira** (task tracking) - the source of truth for what is in progress
+- **Notion/Confluence** (documentation) - decisions, architecture records, and meeting notes
+- **Around/Google Meet** (sync calls) - for the overlap-window meetings
 
 ## Handling Holiday Calendar Mismatches
 
-The one scheduling problem that catches European engineering leaders off guard is not the daily timezone gap — it is the fact that the Netherlands and Vietnam do not share a single public holiday. Your Vietnamese team is not off on King's Day (April 27) or Liberation Day (May 5), and your Dutch team is not off for Vietnam's Reunification Day (April 30) or Hung Kings' Festival. Left unmanaged, this creates silent capacity gaps: a European PM assumes the team is fully staffed, schedules a sprint review, and discovers half the squad is on leave.
+The one scheduling problem that catches European engineering leaders off guard is not the daily timezone gap - it is the fact that the Netherlands and Vietnam do not share a single public holiday. Your Vietnamese team is not off on King's Day (April 27) or Liberation Day (May 5), and your Dutch team is not off for Vietnam's Reunification Day (April 30) or Hung Kings' Festival. Left unmanaged, this creates silent capacity gaps: a European PM assumes the team is fully staffed, schedules a sprint review, and discovers half the squad is on leave.
 
 The most disruptive mismatch by far is **Tet (Vietnamese Lunar New Year)**, typically falling in late January or February. Unlike a single-day holiday, Tet commonly takes 5-9 working days off the calendar as engineers travel to family homes across the country, and many take additional personal leave around it. Teams that treat Tet like an ordinary public holiday get blindsided every year; teams that plan around it treat it like a planned capacity dip, similar to how European teams already plan around the July-August summer slowdown or the week between Christmas and New Year.
 
 The fix is a **shared dual-calendar system**, maintained as a living document (Notion or Confluence) that both sides own jointly:
 
 - **90 days out:** Flag any sprint or release date that falls within 5 working days of Tet, and move it. This is a hard rule at Manifera specifically because Tet's timing shifts every year on the Gregorian calendar and is easy to forget if it is not proactively calendared.
-- **30 days out:** Confirm individual leave plans per engineer — Tet leave is rarely uniform; some take the statutory days, others take two full weeks.
-- **During the gap:** Assign a "coverage buddy" — typically one senior engineer or the tech lead who stays partially available for production issues — rather than leaving zero offshore coverage during a Dutch business week.
+- **30 days out:** Confirm individual leave plans per engineer - Tet leave is rarely uniform; some take the statutory days, others take two full weeks.
+- **During the gap:** Assign a "coverage buddy" - typically one senior engineer or the tech lead who stays partially available for production issues - rather than leaving zero offshore coverage during a Dutch business week.
 - **Reciprocal courtesy:** European teams should extend the same planning discipline to Vietnamese colleagues around Christmas/New Year and the Easter weekend, when Amsterdam-side decision-makers are often unreachable for a week or more.
 
 The underlying principle: a distributed team's real capacity calendar is the union of two national holiday calendars, not either one alone. Publish it at the start of each year, review it every quarter, and treat any sprint that crosses a major holiday on either side as lower-capacity by default rather than discovering it the week of.
@@ -100,17 +100,17 @@ A minimal version of this calendar for a Netherlands-Vietnam engagement should t
 
 At [Manifera](https://www.manifera.com/about-us/our-way-of-working/), the Amsterdam-Ho Chi Minh City timezone gap is managed with a refined version of this system. Dutch project managers facilitate the overlap-window syncs, ensuring that European clients receive morning status updates in their inbox and can join afternoon calls with the Vietnamese engineering team when needed.
 
-This structured approach has proven itself across 160+ projects — delivering the collaboration benefits of co-location without the geographical constraints.
+This structured approach has proven itself across 160+ projects - delivering the collaboration benefits of co-location without the geographical constraints.
 
 ## FAQ
 ### What if an urgent issue happens outside the overlap window?
 Define an escalation protocol. Critical production issues go to an on-call rotation via PagerDuty or Opsgenie. Non-critical but urgent items get a Slack DM with a 2-hour SLA response commitment. Everything else waits for the next overlap window.
 
 ### How do I prevent async standup fatigue?
-Keep updates to 5 lines maximum. Rotate who leads the sync standup weekly. Cancel the sync standup on days where the async updates show zero blockers — not every day needs a video call.
+Keep updates to 5 lines maximum. Rotate who leads the sync standup weekly. Cancel the sync standup on days where the async updates show zero blockers - not every day needs a video call.
 
 ### Should the team lead be in both time zones?
-Ideally, yes — or at least be willing to flex their schedule to cover the overlap window. Many engineering managers adopt a "shifted day" (10 AM to 7 PM) to maximize coverage across both time zones.
+Ideally, yes - or at least be willing to flex their schedule to cover the overlap window. Many engineering managers adopt a "shifted day" (10 AM to 7 PM) to maximize coverage across both time zones.
 
 ### How does the hybrid offshore model maintain software quality (Scenario: How to Run Effective Standups Across 6 Time Zones)?
 By combining local European account management with elite offshore talent, we ensure nothing is lost in translation. Our Vietnam and Singapore teams follow strict coding standards validated by our lead architects. This ensures your offshore software development initiatives are executed with absolute precision.
@@ -119,7 +119,7 @@ By combining local European account management with elite offshore talent, we en
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your offshore software development initiatives are executed with absolute precision.
 
 ### How do we handle holiday calendar mismatches like Tet versus Dutch public holidays?
-Maintain a shared dual-calendar in Notion or Confluence that both sides own jointly, and flag any sprint or release date within 5 working days of Tet at least 90 days out — Tet alone can remove 5-9 working days as engineers travel home. Assign a coverage buddy for production issues during the gap, and extend the same planning courtesy to Vietnamese colleagues around European holidays like Christmas and Easter.
+Maintain a shared dual-calendar in Notion or Confluence that both sides own jointly, and flag any sprint or release date within 5 working days of Tet at least 90 days out - Tet alone can remove 5-9 working days as engineers travel home. Assign a coverage buddy for production issues during the gap, and extend the same planning courtesy to Vietnamese colleagues around European holidays like Christmas and Easter.
 
 <script type="application/ld+json">
 {
@@ -139,7 +139,7 @@ Maintain a shared dual-calendar in Notion or Confluence that both sides own join
       "name": "How do I prevent async standup fatigue?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Keep updates to 5 lines maximum. Rotate who leads the sync standup weekly. Cancel the sync standup on days where the async updates show zero blockers — not every day needs a video call."
+        "text": "Keep updates to 5 lines maximum. Rotate who leads the sync standup weekly. Cancel the sync standup on days where the async updates show zero blockers - not every day needs a video call."
       }
     },
     {
@@ -147,7 +147,7 @@ Maintain a shared dual-calendar in Notion or Confluence that both sides own join
       "name": "Should the team lead be in both time zones?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ideally, yes — or at least be willing to flex their schedule to cover the overlap window. Many engineering managers adopt a \"shifted day\" (10 AM to 7 PM) to maximize coverage across both time zones."
+        "text": "Ideally, yes - or at least be willing to flex their schedule to cover the overlap window. Many engineering managers adopt a \"shifted day\" (10 AM to 7 PM) to maximize coverage across both time zones."
       }
     },
     {
@@ -171,7 +171,7 @@ Maintain a shared dual-calendar in Notion or Confluence that both sides own join
       "name": "How do we handle holiday calendar mismatches like Tet versus Dutch public holidays?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Maintain a shared dual-calendar in Notion or Confluence that both sides own jointly, and flag any sprint or release date within 5 working days of Tet at least 90 days out — Tet alone can remove 5-9 working days as engineers travel home. Assign a coverage buddy for production issues during the gap, and extend the same planning courtesy to Vietnamese colleagues around European holidays like Christmas and Easter."
+        "text": "Maintain a shared dual-calendar in Notion or Confluence that both sides own jointly, and flag any sprint or release date within 5 working days of Tet at least 90 days out - Tet alone can remove 5-9 working days as engineers travel home. Assign a coverage buddy for production issues during the gap, and extend the same planning courtesy to Vietnamese colleagues around European holidays like Christmas and Easter."
       }
     }
   ]

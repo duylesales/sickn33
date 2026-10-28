@@ -10,7 +10,7 @@
 ✅ **Amsterdam Strategic Governance:** Independently vetting technical leadership assignments and reviewing delivery quality separate from the pod's own reporting.
 ✅ **Vietnam Execution Velocity:** A retention-focused team with named tech leads assigned before engagement start, not after.
 
-Ask about engineer tenure by team, not company-wide averages — a churning junior bench can hide behind a stable senior core. 🛡️
+Ask about engineer tenure by team, not company-wide averages - a churning junior bench can hide behind a stable senior core. 🛡️
 
 👉 Read our full deep dive on offshore development partner vietnam good vs bad: https://www.manifera.com/blog/offshore-development-partner-vietnam-good-vs-bad
 

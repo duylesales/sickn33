@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Between the dunes and the bulb fields lies the largest establishment of the European Space Agency. ESTEC in Noordwijk is where many European space missions are designed, tested and managed. Around it, a cluster of companies, institutes and startups has grown that works with spacecraft engineering, instruments and — increasingly — the data that satellites produce. For data scientists and ML engineers, space is no longer only a dream career for astrophysicists; it is a concrete labour market within cycling distance of Leiden.
+Between the dunes and the bulb fields lies the largest establishment of the European Space Agency. ESTEC in Noordwijk is where many European space missions are designed, tested and managed. Around it, a cluster of companies, institutes and startups has grown that works with spacecraft engineering, instruments and - increasingly - the data that satellites produce. For data scientists and ML engineers, space is no longer only a dream career for astrophysicists; it is a concrete labour market within cycling distance of Leiden.
 
 ## ESTEC: What Actually Happens in Noordwijk
 
@@ -84,11 +84,11 @@ For AI and data professionals, ESTEC-related work covers topics such as onboard 
 
 A satellite carries an imaging instrument that produces far more data than can be sent to the ground during its short passes over ground stations. A significant share of the images is covered by clouds and useless. A team develops a compact neural network that runs on the satellite and discards cloudy images before transmission.
 
-On the ground, a model that detects clouds is straightforward. In space, everything changes: the processor has limited power and memory, radiation can flip bits, the model cannot easily be updated, and a false positive means valuable data is permanently lost. The engineering challenge is deciding how much risk is acceptable and proving the model's behaviour before launch — because there is no hotfix after it.
+On the ground, a model that detects clouds is straightforward. In space, everything changes: the processor has limited power and memory, radiation can flip bits, the model cannot easily be updated, and a false positive means valuable data is permanently lost. The engineering challenge is deciding how much risk is acceptable and proving the model's behaviour before launch - because there is no hotfix after it.
 
 ## A Common Misconception About Space Careers
 
-Many engineers assume space jobs require an aerospace degree or a background in astrophysics. In reality, the growth of Earth observation services and data-driven operations means that strong geospatial data scientists, software engineers and ML engineers from other domains are increasingly in demand. What matters is willingness to learn the physics of the sensors you work with — understanding what a radar backscatter value or an atmospheric column measurement actually represents.
+Many engineers assume space jobs require an aerospace degree or a background in astrophysics. In reality, the growth of Earth observation services and data-driven operations means that strong geospatial data scientists, software engineers and ML engineers from other domains are increasingly in demand. What matters is willingness to learn the physics of the sensors you work with - understanding what a radar backscatter value or an atmospheric column measurement actually represents.
 
 ## Typical Job Titles to Search For
 
@@ -111,11 +111,11 @@ Many engineers assume space jobs require an aerospace degree or a background in 
 
 ## Living and Working in the Noordwijk Area
 
-Noordwijk itself is a coastal town with limited housing, so many people working at ESTEC or on the business park live in Leiden, Katwijk, The Hague or Haarlem. Leiden is the most practical base, with bus connections and cycling routes to Noordwijk. Because ESTEC attracts staff from all ESA member states, the working environment is strongly international and English is the common language — a notable difference from many other regional markets in the Netherlands.
+Noordwijk itself is a coastal town with limited housing, so many people working at ESTEC or on the business park live in Leiden, Katwijk, The Hague or Haarlem. Leiden is the most practical base, with bus connections and cycling routes to Noordwijk. Because ESTEC attracts staff from all ESA member states, the working environment is strongly international and English is the common language - a notable difference from many other regional markets in the Netherlands.
 
 ## Career Growth in the Space Sector
 
-A typical path starts with contractor or trainee work on a specific mission or data product and grows towards technical lead roles, system engineering or founding a downstream data company. Because missions last years and data archives decades, experience with a specific instrument or data type can become highly valued. At the same time, skills in geospatial ML and large-scale data processing transfer well to agriculture, insurance, energy and government — so the space sector is not a narrow career bet.
+A typical path starts with contractor or trainee work on a specific mission or data product and grows towards technical lead roles, system engineering or founding a downstream data company. Because missions last years and data archives decades, experience with a specific instrument or data type can become highly valued. At the same time, skills in geospatial ML and large-scale data processing transfer well to agriculture, insurance, energy and government - so the space sector is not a narrow career bet.
 
 ## How Contracting Around ESTEC Works in Practice
 
@@ -154,7 +154,7 @@ Browse current AI, machine learning and data jobs in and around Noordwijk at [on
 ## Frequently Asked Questions
 
 ### (Scenario: candidate without an aerospace degree) Do I need an aerospace background to work with satellite data?
-No — geospatial data science, software and ML engineering skills are increasingly in demand, provided you learn the physics of the sensors you work with.
+No - geospatial data science, software and ML engineering skills are increasingly in demand, provided you learn the physics of the sensors you work with.
 
 ### (Scenario: non-European candidate) Can I work at ESA ESTEC if I am not from an ESA member state?
 ESA staff positions are generally reserved for nationals of member states, but contractors and companies around ESTEC may have different hiring conditions.
@@ -163,7 +163,7 @@ ESA staff positions are generally reserved for nationals of member states, but c
 Limited power and memory, radiation effects and the near-impossibility of updates mean models must be compact and thoroughly verified before launch.
 
 ### (Scenario: candidate looking for commercial work) Are there commercial jobs, or only research?
-Both — downstream companies build commercial services for agriculture, water, infrastructure and insurance on top of open Copernicus data.
+Both - downstream companies build commercial services for agriculture, water, infrastructure and insurance on top of open Copernicus data.
 
 ### (Scenario: candidate planning where to live) Where do most people working in Noordwijk live?
 Many live in Leiden, Katwijk, The Hague or Haarlem, with Leiden being the most practical base.
@@ -173,10 +173,10 @@ Many live in Leiden, Katwijk, The Hague or Haarlem, with Leiden being the most p
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I need an aerospace background to work with satellite data?", "acceptedAnswer": {"@type": "Answer", "text": "No — geospatial data science and ML engineering skills are in demand, combined with learning sensor physics."}},
+    {"@type": "Question", "name": "Do I need an aerospace background to work with satellite data?", "acceptedAnswer": {"@type": "Answer", "text": "No - geospatial data science and ML engineering skills are in demand, combined with learning sensor physics."}},
     {"@type": "Question", "name": "Can I work at ESA ESTEC if I am not from an ESA member state?", "acceptedAnswer": {"@type": "Answer", "text": "ESA staff positions are generally for member state nationals, but contractors may have different conditions."}},
     {"@type": "Question", "name": "What makes AI on a satellite different from AI on the ground?", "acceptedAnswer": {"@type": "Answer", "text": "Limited power, radiation effects and difficult updates require compact, thoroughly verified models."}},
-    {"@type": "Question", "name": "Are there commercial jobs, or only research?", "acceptedAnswer": {"@type": "Answer", "text": "Both — downstream companies build commercial services on open Copernicus data."}},
+    {"@type": "Question", "name": "Are there commercial jobs, or only research?", "acceptedAnswer": {"@type": "Answer", "text": "Both - downstream companies build commercial services on open Copernicus data."}},
     {"@type": "Question", "name": "Where do most people working in Noordwijk live?", "acceptedAnswer": {"@type": "Answer", "text": "Many live in Leiden, Katwijk, The Hague or Haarlem; Leiden is the most practical base."}}
   ]
 }

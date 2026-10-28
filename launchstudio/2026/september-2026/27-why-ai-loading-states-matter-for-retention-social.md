@@ -1,6 +1,6 @@
-🎬 Samuel, a photographer, built an AI photo enhancer with **Cursor** — but users abandoned the app during the 5-second generation delay because the preview pane just sat there, giving zero signal anything was happening. 🖼️
+🎬 Samuel, a photographer, built an AI photo enhancer with **Cursor** - but users abandoned the app during the 5-second generation delay because the preview pane just sat there, giving zero signal anything was happening. 🖼️
 
-A spinner tells the user nothing — and after a few seconds of silence, their brain defaults to "did I break it?" 🧠
+A spinner tells the user nothing - and after a few seconds of silence, their brain defaults to "did I break it?" 🧠
 
 ❌ A static, unchanging screen during a multi-second AI generation, with no feedback at all
 ❌ Users refreshing the page mid-request, wasting tokens and sometimes triggering duplicate writes

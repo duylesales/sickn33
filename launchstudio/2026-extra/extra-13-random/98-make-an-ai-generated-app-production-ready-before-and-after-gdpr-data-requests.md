@@ -21,13 +21,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The email is polite and short: "Under the GDPR, please send me all personal data you hold about me, and afterwards delete my account and data." For many founders of AI-built apps, it triggers an uncomfortable afternoon of searching through database tables, storage buckets, email tools and spreadsheets — and the realisation that there is no clear answer. To make an AI generated app production ready, you need to be able to handle these requests calmly, completely and within the deadline.
+The email is polite and short: "Under the GDPR, please send me all personal data you hold about me, and afterwards delete my account and data." For many founders of AI-built apps, it triggers an uncomfortable afternoon of searching through database tables, storage buckets, email tools and spreadsheets - and the realisation that there is no clear answer. To make an AI generated app production ready, you need to be able to handle these requests calmly, completely and within the deadline.
 
 ## Before: How AI-Built Apps Usually Handle Requests
 
 - Personal data is spread across database tables, file storage, email lists, analytics, error logs, AI provider logs and automation tools.
 - Nobody has a list of where personal data lives.
-- "Delete account" removes the login but leaves profile data, uploads and records behind — or deletes records the business must keep, such as invoices.
+- "Delete account" removes the login but leaves profile data, uploads and records behind - or deletes records the business must keep, such as invoices.
 - Exports are done by hand from database screenshots.
 - Requests arrive by email and are tracked nowhere; the one-month deadline passes unnoticed.
 
@@ -49,7 +49,7 @@ The foundation is a simple map of where personal data lives: each database table
 
 ## After: Export in One Step
 
-A production app can generate an export per user: profile, activity, content they created, files they uploaded, communication preferences — in a readable, machine-readable format such as JSON or CSV plus files. Authenticated users can often download it themselves from their account settings.
+A production app can generate an export per user: profile, activity, content they created, files they uploaded, communication preferences - in a readable, machine-readable format such as JSON or CSV plus files. Authenticated users can often download it themselves from their account settings.
 
 ## After: Deletion That Reaches Everywhere to Make an AI Generated App Production Ready
 
@@ -117,7 +117,7 @@ Run deletion as a background job with retries, and send a confirmation once comp
 
 ## Verifying Identity Proportionately
 
-Before exporting or deleting, confirm the requester is the data subject. For logged-in users requesting through the app, authentication plus re-entry of the password or a second factor is usually enough. For requests by email, verify through the registered email address or ask for information only the real user would know — never ask for more data than you already hold, such as an ID copy you did not previously collect.
+Before exporting or deleting, confirm the requester is the data subject. For logged-in users requesting through the app, authentication plus re-entry of the password or a second factor is usually enough. For requests by email, verify through the registered email address or ask for information only the real user would know - never ask for more data than you already hold, such as an ID copy you did not previously collect.
 
 ## Handling Requests That Arrive by Email
 
@@ -129,11 +129,11 @@ Some requests need judgement: a parent requesting data about a child while anoth
 
 ## Rectification: Correcting Data
 
-The right to rectification means users can correct inaccurate data. Most apps already let users edit their profile, but data elsewhere — notes written by staff, records in integrated systems, historic entries — may also need correcting. Provide a way to request corrections of data users cannot edit themselves, update connected systems when data changes, and keep an audit trail of corrections for records where history matters.
+The right to rectification means users can correct inaccurate data. Most apps already let users edit their profile, but data elsewhere - notes written by staff, records in integrated systems, historic entries - may also need correcting. Provide a way to request corrections of data users cannot edit themselves, update connected systems when data changes, and keep an audit trail of corrections for records where history matters.
 
 ## Objection, Restriction and Marketing
 
-Users can object to certain processing, most clearly to direct marketing, and can ask to restrict processing while a dispute is resolved. Implement unsubscribe links that work immediately across all marketing channels, record objections and restrictions on the user record, and make sure background jobs — reminder emails, newsletters, analytics — respect them. A restriction flag that email workflows ignore is a common, avoidable failure.
+Users can object to certain processing, most clearly to direct marketing, and can ask to restrict processing while a dispute is resolved. Implement unsubscribe links that work immediately across all marketing channels, record objections and restrictions on the user record, and make sure background jobs - reminder emails, newsletters, analytics - respect them. A restriction flag that email workflows ignore is a common, avoidable failure.
 
 ## Requests and AI Features
 
@@ -149,29 +149,29 @@ Test your process as if a request arrived today: time how long a complete export
 
 ## Why Good Request Handling Builds Trust
 
-Handling data requests smoothly shows users that you respect their data — and it reduces risk, because the same data map and deletion logic also support retention and minimisation. Users who receive a clear export or confirmation within days, not weeks, often remain customers or recommend the product even as they leave. Regulators, when complaints arise, look favourably on organisations that can demonstrate a working process.
+Handling data requests smoothly shows users that you respect their data - and it reduces risk, because the same data map and deletion logic also support retention and minimisation. Users who receive a clear export or confirmation within days, not weeks, often remain customers or recommend the product even as they leave. Regulators, when complaints arise, look favourably on organisations that can demonstrate a working process.
 
 ## First Step
 
-List every service your app uses and ask: does it hold personal data about my users? The answer is the start of your data map — and of a GDPR request process that takes minutes instead of evenings.
+List every service your app uses and ask: does it hold personal data about my users? The answer is the start of your data map - and of a GDPR request process that takes minutes instead of evenings.
 
 ## Before and After, Summarised
 
-Before: personal data scattered across tables, storage, email tools and logs; nobody knows where; exports assembled by hand; deletion that removes a login but leaves everything else; requests tracked in someone's inbox. After: a data map covering every location; self-service export; deletion and anonymisation that follow relationships and respect legal retention; processors updated through their APIs; identity verified proportionately; requests logged with reminders; and a tested process that takes minutes. The difference is invisible to most users until the day they ask — and then it is the difference between a trusted service and an uncomfortable complaint to the regulator.
+Before: personal data scattered across tables, storage, email tools and logs; nobody knows where; exports assembled by hand; deletion that removes a login but leaves everything else; requests tracked in someone's inbox. After: a data map covering every location; self-service export; deletion and anonymisation that follow relationships and respect legal retention; processors updated through their APIs; identity verified proportionately; requests logged with reminders; and a tested process that takes minutes. The difference is invisible to most users until the day they ask - and then it is the difference between a trusted service and an uncomfortable complaint to the regulator.
 
 ## Remember
 
-Every GDPR request is a small audit of your data map. If a request takes hours, the map is incomplete; if it takes minutes, your app is genuinely in control of the personal data it holds — which is exactly what production readiness means for privacy.
+Every GDPR request is a small audit of your data map. If a request takes hours, the map is incomplete; if it takes minutes, your app is genuinely in control of the personal data it holds - which is exactly what production readiness means for privacy.
 
 ## In Short
 
-Map, export, delete, verify and log — then test the whole process before the first real request arrives.
+Map, export, delete, verify and log - then test the whole process before the first real request arrives.
 
 ## Where LaunchStudio Fits
 
 LaunchStudio builds the technical side of GDPR requests into AI-built apps: a data map, self-service export, deletion and anonymisation that follow every relationship and service, retention rules for data you must keep, and a lightweight request log. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, working from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); the [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) explains individuals' rights and deadlines.
 
-[Describe your project](https://launchstudio.eu/en/#contact) — before your first request, ideally.
+[Describe your project](https://launchstudio.eu/en/#contact) - before your first request, ideally.
 
 ## Real example
 
@@ -183,12 +183,12 @@ A parent who was moving abroad asked for a copy of all data about her and her tw
 
 Over seven business days, LaunchStudio's engineers produced a data map, built a self-service export for parents including their children's records and photos, implemented deletion and anonymisation across all tables and storage with invoice data retained under the legal retention period, connected removal from the email tool, set log retention for the workflow and error tracking tools, and added a request log with deadline reminders.
 
-**Result:** The parent received a complete export and confirmation of deletion within the month. Since then, Fenna has handled a dozen requests — mostly families moving away — in minutes each.
+**Result:** The parent received a complete export and confirmation of deletion within the month. Since then, Fenna has handled a dozen requests - mostly families moving away - in minutes each.
 
 > *"The first request took me two evenings and I still wasn't sure I'd found everything. Now it's two clicks and I'm sure."*
-> — **Fenna Wiersma, Founder, Zwemlesplan (Bolsward)**
+> - **Fenna Wiersma, Founder, Zwemlesplan (Bolsward)**
 
-**Cost & Timeline:** €1,900 (Launch Ready package: data map, export, deletion and anonymisation, retention and request process) — completed in 7 business days.
+**Cost & Timeline:** €1,900 (Launch Ready package: data map, export, deletion and anonymisation, retention and request process) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -198,7 +198,7 @@ Generally one month from receipt, extendable in specific circumstances. You must
 
 ### Does deleting a user account satisfy an erasure request?
 
-Only if it removes or anonymises personal data everywhere — tables, files, email tools, processors — while keeping only what the law requires.
+Only if it removes or anonymises personal data everywhere - tables, files, email tools, processors - while keeping only what the law requires.
 
 ### Do I need to delete data from backups?
 

@@ -1,4 +1,4 @@
-🚨 Daan Willems built "StockSentry," an inventory tracker for independent retailers, in Cursor — reviewing every significant change line by line himself. It ran perfectly on his machine and in every local test. Then he tried to actually deploy it: four failed attempts, hardcoded environment variables that broke in staging, an entire evening lost to manual fixes each time. 😳
+🚨 Daan Willems built "StockSentry," an inventory tracker for independent retailers, in Cursor - reviewing every significant change line by line himself. It ran perfectly on his machine and in every local test. Then he tried to actually deploy it: four failed attempts, hardcoded environment variables that broke in staging, an entire evening lost to manual fixes each time. 😳
 
 Reading every line of your own code doesn't mean you've seen everything wrong with it. 🧠
 
@@ -11,7 +11,7 @@ Reading every line of your own code doesn't mean you've seen everything wrong wi
 ✅ Correctly separated environment configuration across development, staging, and production
 ✅ Got the app onto stable, monitored hosting with a repeatable deployment process
 
-At **LaunchStudio**, we don't compete with the tool you picked — we pick up exactly where its responsibility ends, drawing on Manifera's 11+ years of production engineering out of Amsterdam. 🛡️
+At **LaunchStudio**, we don't compete with the tool you picked - we pick up exactly where its responsibility ends, drawing on Manifera's 11+ years of production engineering out of Amsterdam. 🛡️
 
 Daan's result: StockSentry now deploys reliably, with the code quality he'd already gotten right finally matched by infrastructure that works. 🚀
 

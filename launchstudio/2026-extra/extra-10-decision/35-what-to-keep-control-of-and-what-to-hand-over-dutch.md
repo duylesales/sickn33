@@ -23,7 +23,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Er is een specifiek scenario dat zich regelmatig voordoet tijdens intakegesprekken met niet-technische oprichters: de vraag wie de eigenaar is van de domeinnaam, de Stripe-koppeling of de broncode leidt tot een ongemakkelijke stilte. "Volgens mij heeft de freelancer die de eerste versie bouwde dat geregeld," luidt het aarzelende antwoord. "Die stuurt me elke maand een factuur door."
 
-Dit is geen klein administratief schoonheidsfoutje; het is een existentiële tijdbom onder uw onderneming. Als u geen eigenaar bent van de sleutels van uw eigen digitale winkelpand, bent u juridisch en operationeel gezien geen software-eigenaar — u bent een huurder die elk moment buitengesloten kan worden.
+Dit is geen klein administratief schoonheidsfoutje; het is een existentiële tijdbom onder uw onderneming. Als u geen eigenaar bent van de sleutels van uw eigen digitale winkelpand, bent u juridisch en operationeel gezien geen software-eigenaar - u bent een huurder die elk moment buitengesloten kan worden.
 
 Tegelijkertijd willen oprichters begrijpelijkerwijs niet verstrikt raken in het handmatig beheren van elk technisch sub-account of het dagelijks goedkeuren van API-tokens. De kunst van verstandig opdrachtgeverschap is weten welke accounts u onder geen enkel beding uit handen mag geven, en welke u juist met een gerust hart kunt delegeren.
 
@@ -31,7 +31,7 @@ Tegelijkertijd willen oprichters begrijpelijkerwijs niet verstrikt raken in het 
 
 De scheidslijn tussen wat u zelf moet bezitten en wat u kunt delegeren, laat zich samenvatten in één glasheldere toets:
 
-> *"Als onze samenwerking met deze software-engineer of dit bureau morgen op stel en sprong eindigt — door een conflict, een faillissement of een overstap — kan mijn bedrijf dan overmorgen ongehinderd doordraaien met een andere partij?"*
+> *"Als onze samenwerking met deze software-engineer of dit bureau morgen op stel en sprong eindigt - door een conflict, een faillissement of een overstap - kan mijn bedrijf dan overmorgen ongehinderd doordraaien met een andere partij?"*
 
 Is het antwoord ja, dan betreft het een operationeel detail dat u gerust kunt overlaten aan uw ontwikkelpartner. Is het antwoord nee, dan betreft het een strategisch bedrijfsmiddel dat te allen tijde op uw eigen naam moet staan, met uw eigen betaalmethode en onder uw eigen beheer.
 
@@ -53,7 +53,7 @@ Het behouden van eigenaarschap betekent niet dat u een controlefreak moet worden
 
 **Configuratie van de staging-omgeving.** Omgevingsvariabelen, testdatabases en testgegevens op de niet-productieversie van uw software zijn werkinstrumenten, geen bedrijfsmiddelen. Laat uw partner deze naar eigen inzicht inrichten.
 
-**Interne teamtoegang van het ontwikkelbureau.** Welke specifieke ontwikkelaars meewerken aan uw project en hoe zij onderling rechten verdelen, is een interne zaak van uw partner — zolang de accounts die zij gebruiken maar onder uw hoofdorganisatie vallen.
+**Interne teamtoegang van het ontwikkelbureau.** Welke specifieke ontwikkelaars meewerken aan uw project en hoe zij onderling rechten verdelen, is een interne zaak van uw partner - zolang de accounts die zij gebruiken maar onder uw hoofdorganisatie vallen.
 
 **Monitoring- en foutopsporingstools (Sentry, Logtail).** Technische loggingtools mag de engineer gerust configureren en beheren, mits u een beheerderstoegang behoudt of overgedragen krijgt bij oplevering.
 
@@ -79,7 +79,7 @@ Maak er een vaste gewoonte van om vóór de start te verifiëren of een account 
 
 ## Controleer Ook de Herstelmethodes (Recovery Paths)
 
-Eigenaarschap draait niet alleen om de vraag wie de actuele gebruikersnaam en het wachtwoord heeft — het draait vooral om de vraag wat er gebeurt wanneer het wachtwoord kwijtraakt.
+Eigenaarschap draait niet alleen om de vraag wie de actuele gebruikersnaam en het wachtwoord heeft - het draait vooral om de vraag wat er gebeurt wanneer het wachtwoord kwijtraakt.
 
 Controleer bij elk van uw vijf kernaccounts wat het geregistreerde herstel-e-mailadres en het herstel-telefoonnummer is. Het komt schrikbarend vaak voor dat een cruciaal zakelijk account als hersteladres een privé-mailadres heeft van een ex-medewerker die allang uit dienst is, of een telefoonnummer van een opgezegde prepaid simkaart. Een account waar u technisch wel eigenaar van bent maar waarvan u de 2FA-herstelcodes niet kunt ontvangen bij een vergrendeling, is in de praktijk waardeloos op het moment dat u het het hardst nodig heeft.
 
@@ -87,7 +87,7 @@ Stel als hersteladres altijd een functioneel groepsadres in dat u zelf beheert (
 
 ## Waarom Dit Pas Gevaarlijk Wordt Als de Relatie Verandert
 
-Het reële risico van onduidelijk eigenaarschap openbaart zich vrijwel nooit tijdens de wittebroodsweken van een softwareproject — het ontploft pas op het moment dat de verstandhouding met de uitvoerende partij wijzigt.
+Het reële risico van onduidelijk eigenaarschap openbaart zich vrijwel nooit tijdens de wittebroodsweken van een softwareproject - het ontploft pas op het moment dat de verstandhouding met de uitvoerende partij wijzigt.
 
 De freelance ontwikkelaar die twee jaar geleden uw domein heeft vastgelegd, reageert ineens niet meer op mails omdat hij inmiddels een andere baan heeft in het buitenland. De medeoprichter die destijds het Stripe-account opende vertrekt na een ruzie over aandelen. Of het bureau dat uw hosting beheerde raakt verzeild in een faillissement. Dit zijn geen hypothetische rampscenario's; het zijn de exacte, pijnlijke verhalen die wij maandelijks aanhoren van ondernemers die aankloppen voor hulp en moeten bekennen dat ze geen idee hebben wie hun domein bezit.
 
@@ -102,7 +102,7 @@ Open vandaag nog vijf tabbladen in uw browser en controleer bij elk platform wie
 4. Uw broncode-organisatie (GitHub / GitLab)
 5. Uw hostingomgeving (Supabase, Vercel, AWS)
 
-Bij elk account waar het antwoord niet klip-en-klaar "ikzelf" is, heeft u direct uw belangrijkste prioriteit voor deze week te pakken — los dat nú op, vóórdat u aan een nieuw ontwikkeltraject begint waarin alle aandacht weer wordt opgeslokt door functionaliteiten en deadlines.
+Bij elk account waar het antwoord niet klip-en-klaar "ikzelf" is, heeft u direct uw belangrijkste prioriteit voor deze week te pakken - los dat nú op, vóórdat u aan een nieuw ontwikkeltraject begint waarin alle aandacht weer wordt opgeslokt door functionaliteiten en deadlines.
 
 Bij [LaunchStudio](https://launchstudio.eu/nl/) hanteren we deze eigendomsaudit als vast onderdeel van onze kickoff-procedure. Ondersteund door [Manifera's 11+ jaar ervaring](https://www.manifera.com/about-us/manifera-technologies/) zorgen we ervoor dat al uw intellectuele eigendom en digitale bedrijfsmiddelen vanaf seconde één robuust op uw eigen naam staan.
 
@@ -121,9 +121,9 @@ Ruben werkte twee volle dagen non-stop samen met de juridische afdeling van de r
 **Resultaat:** het domein werd veiliggesteld, de DNS werd gemigreerd naar Cloudflare met Ruben als enige eigenaar, en het hardening-traject werd vervolgens binnen 11 werkdagen succesvol live gezet.
 
 > *"Ik maakte me continu zorgen over hackers en beveiligingslekken in mijn code. Maar hetgeen dat mijn bedrijf bijna fataal werd, was een domeinnaam-login die twee jaar lang geruisloos had liggen verstoffen op naam van iemand die ik niet meer kon bereiken."*
-> — **Ruben Verhoeven, Oprichter, Toolwissel**
+> - **Ruben Verhoeven, Oprichter, Toolwissel**
 
-**Kosten & Doorlooptijd:** €2.600 (Launch Ready Package inclusief herstel van domeineigendom en DNS-hardening) — live binnen 11 werkdagen na afronding van de eigendomsoverdracht.
+**Kosten & Doorlooptijd:** €2.600 (Launch Ready Package inclusief herstel van domeineigendom en DNS-hardening) - live binnen 11 werkdagen na afronding van de eigendomsoverdracht.
 
 ## Veelgestelde Vragen
 

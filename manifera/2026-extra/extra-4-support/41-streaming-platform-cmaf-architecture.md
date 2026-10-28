@@ -32,7 +32,7 @@ A streaming platform built on a fragmented, dual-format packaging approach carri
 
 ## Why CMAF Also Enables Meaningfully Lower Latency
 
-Beyond storage and encoding efficiency, CMAF's fragmented structure specifically enables low-latency streaming techniques — delivering media in smaller, more frequent chunks that a player can begin consuming before an entire traditional segment has finished encoding and packaging, meaningfully reducing the delay between a live event happening and a viewer seeing it. For any platform with live streaming ambitions, even if the initial launch focuses purely on video-on-demand content, building the packaging architecture around CMAF from the start preserves a considerably more direct path to adding genuinely low-latency live streaming capability later, compared to retrofitting low-latency delivery onto a packaging architecture that wasn't designed with this capability in mind.
+Beyond storage and encoding efficiency, CMAF's fragmented structure specifically enables low-latency streaming techniques - delivering media in smaller, more frequent chunks that a player can begin consuming before an entire traditional segment has finished encoding and packaging, meaningfully reducing the delay between a live event happening and a viewer seeing it. For any platform with live streaming ambitions, even if the initial launch focuses purely on video-on-demand content, building the packaging architecture around CMAF from the start preserves a considerably more direct path to adding genuinely low-latency live streaming capability later, compared to retrofitting low-latency delivery onto a packaging architecture that wasn't designed with this capability in mind.
 
 ## What Building CMAF-Native Architecture Actually Requires
 
@@ -42,13 +42,13 @@ Beyond storage and encoding efficiency, CMAF's fragmented structure specifically
 
 ## Why Legacy Dual-Format Architecture Persists Despite the Available Alternative
 
-A specific reason this inefficiency shows up repeatedly across media companies building or maintaining streaming platforms, as it did at Medialab Polska in the case study below: many streaming platform codebases and infrastructure templates trace their architectural lineage back to a period before CMAF's standardization and widespread adoption became the clearly preferable default, and a platform built or scaffolded from an older template, or by a team following established internal conventions inherited from an earlier project, can inherit dual-format packaging as an unexamined default rather than a deliberate architecture decision made with current standards in mind. Once a dual-format pipeline is operational and producing correct output, there's rarely an obvious, urgent forcing function prompting a team to revisit the decision — the inefficiency is a steady, compounding cost rather than a visible failure, which is exactly the kind of problem that persists indefinitely in the absence of a deliberate architecture review.
+A specific reason this inefficiency shows up repeatedly across media companies building or maintaining streaming platforms, as it did at Medialab Polska in the case study below: many streaming platform codebases and infrastructure templates trace their architectural lineage back to a period before CMAF's standardization and widespread adoption became the clearly preferable default, and a platform built or scaffolded from an older template, or by a team following established internal conventions inherited from an earlier project, can inherit dual-format packaging as an unexamined default rather than a deliberate architecture decision made with current standards in mind. Once a dual-format pipeline is operational and producing correct output, there's rarely an obvious, urgent forcing function prompting a team to revisit the decision - the inefficiency is a steady, compounding cost rather than a visible failure, which is exactly the kind of problem that persists indefinitely in the absence of a deliberate architecture review.
 
 This is a specific instance of a broader pattern worth naming directly: infrastructure decisions made correctly for the technology landscape at the time they were made can become a genuine, ongoing cost burden once the broader technology landscape moves on, without ever producing an obvious failure event that would naturally prompt a team to reconsider. A streaming platform's packaging architecture is a particularly clean example of this pattern, because CMAF adoption has become sufficiently standard across the industry that a platform still running a dual-format pipeline is very likely paying a real, quantifiable premium for an architectural decision that made more sense under an earlier, now largely superseded set of format constraints.
 
 ## Why This Decision Also Shapes Third-Party CDN and Player Vendor Relationships
 
-A related, practical consideration worth naming directly: the broader streaming technology ecosystem — CDN providers, video player SDK vendors, analytics platforms — has increasingly optimized its own tooling and default configurations around CMAF specifically, given the format's widespread industry adoption. A platform running a dual-format legacy pipeline doesn't just carry internal storage and encoding costs, it also tends to receive less optimized default support from third-party ecosystem vendors whose own tooling assumes and is tuned for CMAF-native content, sometimes requiring additional custom configuration or vendor-specific workarounds to achieve equivalent performance and support quality that a CMAF-native platform receives by default. This is a further, somewhat less visible cost of a legacy dual-format architecture, felt not as a direct engineering cost but as reduced leverage and increased friction when working with the broader ecosystem of vendors a streaming platform inevitably needs to integrate with over its operational lifetime — one more reason a CMAF-native foundation tends to compound in value the longer a platform stays in active operation.
+A related, practical consideration worth naming directly: the broader streaming technology ecosystem - CDN providers, video player SDK vendors, analytics platforms - has increasingly optimized its own tooling and default configurations around CMAF specifically, given the format's widespread industry adoption. A platform running a dual-format legacy pipeline doesn't just carry internal storage and encoding costs, it also tends to receive less optimized default support from third-party ecosystem vendors whose own tooling assumes and is tuned for CMAF-native content, sometimes requiring additional custom configuration or vendor-specific workarounds to achieve equivalent performance and support quality that a CMAF-native platform receives by default. This is a further, somewhat less visible cost of a legacy dual-format architecture, felt not as a direct engineering cost but as reduced leverage and increased friction when working with the broader ecosystem of vendors a streaming platform inevitably needs to integrate with over its operational lifetime - one more reason a CMAF-native foundation tends to compound in value the longer a platform stays in active operation.
 
 ## Manifera's Approach: Building Streaming Platforms on Efficient, Standards-Native Delivery Architecture
 
@@ -64,7 +64,7 @@ Medialab Polska, a Wrocław-based media company, had built an initial streaming 
 Manifera's Amsterdam team rebuilt the platform's encoding and packaging pipeline around native CMAF with Common Encryption, eliminating the dual-format storage and encoding duplication and establishing the packaging foundation needed to subsequently add low-latency live streaming capability without a further architecture rework.
 
 > *"We were essentially paying to store and maintain two versions of everything without ever really deciding to. Once we understood a single CMAF pipeline could serve both delivery protocols, the cost case for rebuilding was straightforward, and it also quietly solved the low-latency live streaming problem we hadn't even started tackling yet."*
-> — **CTO, Medialab Polska**
+> - **CTO, Medialab Polska**
 
 Medialab Polska reduced its content storage footprint meaningfully following the migration and launched its first low-latency live streaming product on the new CMAF-native infrastructure without the packaging architecture rework a dual-format foundation would have required.
 
@@ -79,7 +79,7 @@ Medialab Polska reduced its content storage footprint meaningfully following the
 
 ## Scoping Your Own Streaming Platform's Delivery Architecture
 
-Before building a custom video streaming platform, standardize the encoding and packaging pipeline around CMAF from the start — a dual-format legacy approach creates compounding storage, encoding, and workflow costs that scale directly with content library size and growth. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a CMAF-native streaming platform.
+Before building a custom video streaming platform, standardize the encoding and packaging pipeline around CMAF from the start - a dual-format legacy approach creates compounding storage, encoding, and workflow costs that scale directly with content library size and growth. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a CMAF-native streaming platform.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ A dual-format pipeline duplicates storage and encoding compute cost for the same
 
 ### (Scenario: product lead planning future live streaming) Does CMAF architecture matter even if a platform initially launches with video-on-demand content only?
 
-Yes — CMAF's fragmented structure enables meaningfully lower-latency delivery techniques, and building around it from the start preserves a considerably more direct path to adding live streaming capability later without a packaging rework.
+Yes - CMAF's fragmented structure enables meaningfully lower-latency delivery techniques, and building around it from the start preserves a considerably more direct path to adding live streaming capability later without a packaging rework.
 
 ### (Scenario: CTO evaluating DRM strategy) How does CMAF affect DRM integration complexity?
 
@@ -101,7 +101,7 @@ CMAF's Common Encryption capability lets a single encrypted content version work
 
 ### (Scenario: CTO evaluating a development team's streaming experience) What should I ask a development team about their streaming platform architecture experience?
 
-Ask specifically whether their encoding and packaging pipeline is built natively around CMAF and Common Encryption, or whether it's a dual-format legacy approach — genuine experience produces a specific, technical answer about the actual pipeline architecture.
+Ask specifically whether their encoding and packaging pipeline is built natively around CMAF and Common Encryption, or whether it's a dual-format legacy approach - genuine experience produces a specific, technical answer about the actual pipeline architecture.
 
 <script type="application/ld+json">
 {

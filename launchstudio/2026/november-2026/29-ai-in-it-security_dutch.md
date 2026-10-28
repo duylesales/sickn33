@@ -92,9 +92,9 @@ Zij migreerden de applicatie naar AWS Singapore (voor gegarandeerde datasoeverei
 **Resultaat:** CreditSense AI doorstond de hernieuwde audit van de bank met vlag en wimpel. De pilot werd omgezet in een enterprise-contract van €12.500 per maand. Het platform is inmiddels volledig SOC2-compliant en wordt actief uitgerold bij tier-1 banken.
 
 > *"Ik had een fantastische tool gebouwd, maar een verschrikkelijk beveiligingssysteem. De CISO zag in mijn prototype direct een juridische claim. LaunchStudio veranderde niet wat mijn app deed, maar hoe data werd beschermd. Zij gaven me de architectuur die nodig was om daadwerkelijk aan banken te kunnen verkopen."*
-> — **Daniel Lim, Oprichter, CreditSense AI (Singapore)**
+> - **Daniel Lim, Oprichter, CreditSense AI (Singapore)**
 
-**Kosten & Doorlooptijd:** €8.200 (Launch & Grow Pakket met Enterprise Security & Compliance Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €8.200 (Launch & Grow Pakket met Enterprise Security & Compliance Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

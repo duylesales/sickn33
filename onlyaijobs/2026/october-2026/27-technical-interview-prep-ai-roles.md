@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-A candidate who spends the week before an interview drilling algorithm puzzles is often preparing for the smallest part of the actual evaluation. Most AI hiring decisions hinge on judgment questions — how you'd approach an ambiguous problem, how you evaluate a model's failure modes, how you'd explain a technical tradeoff to a non-technical stakeholder — not on whether you can recite a sorting algorithm from memory.
+A candidate who spends the week before an interview drilling algorithm puzzles is often preparing for the smallest part of the actual evaluation. Most AI hiring decisions hinge on judgment questions - how you'd approach an ambiguous problem, how you evaluate a model's failure modes, how you'd explain a technical tradeoff to a non-technical stakeholder - not on whether you can recite a sorting algorithm from memory.
 
 ## What Actually Gets Evaluated Most Heavily
 
@@ -51,7 +51,7 @@ Spending disproportionate prep time on algorithmic puzzles at the expense of pra
 
 ## A Deeper Look at How to Practice Judgment, Not Just Recall
 
-Judgment-based interview performance is harder to practice than algorithms because there's no single correct answer to drill. A more effective practice method: take a past project and, out loud or in writing, force yourself to answer three questions about it — what alternative approach did you consider and reject, what would you do differently with what you know now, and what's the one output your model or analysis got wrong that you can explain clearly. This kind of structured reflection builds the exact muscle an interview actually tests, in a way that solving another algorithm puzzle doesn't.
+Judgment-based interview performance is harder to practice than algorithms because there's no single correct answer to drill. A more effective practice method: take a past project and, out loud or in writing, force yourself to answer three questions about it - what alternative approach did you consider and reject, what would you do differently with what you know now, and what's the one output your model or analysis got wrong that you can explain clearly. This kind of structured reflection builds the exact muscle an interview actually tests, in a way that solving another algorithm puzzle doesn't.
 
 ## Comparing Two Candidates With Identical Technical Backgrounds
 
@@ -64,7 +64,7 @@ Judgment-based interview performance is harder to practice than algorithms becau
 
 ## Why This Preparation Gap Widens at More Senior Levels
 
-The weight given to judgment over algorithmic recall increases as seniority increases — a junior interview might still include meaningful algorithmic screening, but a senior or staff-level AI interview overwhelmingly weights judgment, communication and past decision-making. Candidates who over-invest in algorithm practice throughout their career, rather than shifting their preparation balance as they gain seniority, often find their interview performance plateaus even as their actual on-the-job skill continues to grow.
+The weight given to judgment over algorithmic recall increases as seniority increases - a junior interview might still include meaningful algorithmic screening, but a senior or staff-level AI interview overwhelmingly weights judgment, communication and past decision-making. Candidates who over-invest in algorithm practice throughout their career, rather than shifting their preparation balance as they gain seniority, often find their interview performance plateaus even as their actual on-the-job skill continues to grow.
 
 ## The Anatomy of a Strong Project Walkthrough
 
@@ -92,17 +92,17 @@ A category of question that reliably distinguishes candidates concerns how you h
 
 Interviewers ask about failures for a specific reason: real technical work involves them constantly, and how a person responds to being wrong determines much about how they will function on a team. The strongest answers describe a specific situation, take genuine ownership without excessive self-criticism, explain what you learned concretely, and where possible describe how a subsequent situation went differently as a result. The weakest answers either deny meaningful failures or describe a failure so trivial that it signals unwillingness to engage with the question.
 
-A related question type probes the limits of your knowledge, sometimes deliberately. Candidates who bluff when they encounter a question outside their knowledge damage their credibility substantially, because interviewers can usually tell and because bluffing predicts a colleague who will do the same thing on the job with more serious consequences. The stronger response acknowledges the gap directly and, where possible, describes how you would go about resolving it — which demonstrates both honesty and the practical capability to handle unfamiliar territory.
+A related question type probes the limits of your knowledge, sometimes deliberately. Candidates who bluff when they encounter a question outside their knowledge damage their credibility substantially, because interviewers can usually tell and because bluffing predicts a colleague who will do the same thing on the job with more serious consequences. The stronger response acknowledges the gap directly and, where possible, describes how you would go about resolving it - which demonstrates both honesty and the practical capability to handle unfamiliar territory.
 
 ## Logistics and Practical Preparation Specific to the Dutch Market
 
 Some practical considerations specific to interviewing for AI roles in the Netherlands are worth planning for explicitly.
 
-Interview processes here frequently include a conversation with someone from outside the immediate technical team — a manager from a partner function, occasionally a future stakeholder. This conversation typically evaluates whether you can communicate about technical work with people who lack technical background, a capability that this site's regional analyses show matters enormously in the industrial, healthcare and public-sector contexts where much Dutch AI work happens. Preparing a version of your project walkthrough that assumes no technical knowledge is worthwhile preparation, not an afterthought.
+Interview processes here frequently include a conversation with someone from outside the immediate technical team - a manager from a partner function, occasionally a future stakeholder. This conversation typically evaluates whether you can communicate about technical work with people who lack technical background, a capability that this site's regional analyses show matters enormously in the industrial, healthcare and public-sector contexts where much Dutch AI work happens. Preparing a version of your project walkthrough that assumes no technical knowledge is worthwhile preparation, not an afterthought.
 
 Directness is a cultural norm in Dutch professional settings, and candidates from contexts where feedback is delivered more indirectly sometimes misread pointed questioning as hostility when it is simply how a rigorous technical conversation proceeds. Interpreting a direct challenge to your reasoning as engagement rather than attack, and responding substantively rather than defensively, generally serves candidates well here.
 
-Finally, questions about your own interest in the specific organisation carry real weight. Dutch employers tend to react poorly to candidates who appear to be applying indiscriminately, and being able to articulate something specific about why this organisation and this problem interest you — grounded in something you actually know about them — is a meaningful differentiator that costs only preparation time.
+Finally, questions about your own interest in the specific organisation carry real weight. Dutch employers tend to react poorly to candidates who appear to be applying indiscriminately, and being able to articulate something specific about why this organisation and this problem interest you - grounded in something you actually know about them - is a meaningful differentiator that costs only preparation time.
 
 ## Preparing Differently for Different Segments of This Market
 
@@ -120,7 +120,7 @@ Recognising which of these you are walking into, and adjusting preparation accor
 
 A final practical observation: interview preparation is frequently treated as a per-application task, which makes it exhausting during an active search and causes candidates to under-prepare for later interviews as fatigue sets in.
 
-A more sustainable approach treats the core material as a durable asset. Preparing two or three project walkthroughs thoroughly — including the decision points, limitations and outcomes discussed above — produces material that serves across many interviews with only light adaptation. Practising these until they can be delivered fluently, and recording yourself once to hear where they ramble, is an investment that pays across an entire search rather than a single conversation.
+A more sustainable approach treats the core material as a durable asset. Preparing two or three project walkthroughs thoroughly - including the decision points, limitations and outcomes discussed above - produces material that serves across many interviews with only light adaptation. Practising these until they can be delivered fluently, and recording yourself once to hear where they ramble, is an investment that pays across an entire search rather than a single conversation.
 
 The same applies to the failure and uncertainty questions: having genuinely reflected on a small number of relevant experiences produces answers that work across many contexts, and the reflection itself often surfaces professional insights worth having independently of any interview.
 
@@ -136,7 +136,7 @@ Preparing for an interview also means knowing what employers may and may not ask
 
 ## When AI Is Used to Assess You
 
-Ironically, candidates for AI roles are increasingly assessed with AI tools themselves — automated CV screening, recorded video interviews or coding assessments with automated scoring. Under the **EU Artificial Intelligence Act**, AI systems used for recruitment and selection are classified as high-risk, which brings obligations around human oversight, transparency and risk management. The GDPR also gives you rights regarding automated decision-making with significant effects. It is perfectly reasonable to ask whether AI tools are used in the process and whether a human reviews the outcome.
+Ironically, candidates for AI roles are increasingly assessed with AI tools themselves - automated CV screening, recorded video interviews or coding assessments with automated scoring. Under the **EU Artificial Intelligence Act**, AI systems used for recruitment and selection are classified as high-risk, which brings obligations around human oversight, transparency and risk management. The GDPR also gives you rights regarding automated decision-making with significant effects. It is perfectly reasonable to ask whether AI tools are used in the process and whether a human reviews the outcome.
 
 ## Practical Formats You Are Likely to Encounter
 
@@ -160,26 +160,26 @@ For international candidates, ask early whether the employer is a recognised spo
 
 ## Where to Start
 
-Practice narrating past projects out loud — the framing decisions, the evaluation choices, the mistakes and what you learned from them — at least as much as you practice algorithmic problems.
+Practice narrating past projects out loud - the framing decisions, the evaluation choices, the mistakes and what you learned from them - at least as much as you practice algorithmic problems.
 
 Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who over-prepared algorithms and still didn't get an offer) Why did I do well on algorithm questions but still not get the role?
-Most AI hiring decisions weigh problem framing, evaluation judgment and communication of uncertainty more heavily than algorithmic recall — strong algorithm performance alone often isn't the deciding factor.
+Most AI hiring decisions weigh problem framing, evaluation judgment and communication of uncertainty more heavily than algorithmic recall - strong algorithm performance alone often isn't the deciding factor.
 
 ### (Scenario: candidate unsure how to prepare beyond algorithms) What should I practice besides algorithmic problems?
-Practice narrating past projects out loud — the framing decisions, evaluation choices, and what you learned from mistakes — since this is what interviewers weigh most heavily.
+Practice narrating past projects out loud - the framing decisions, evaluation choices, and what you learned from mistakes - since this is what interviewers weigh most heavily.
 
 ### (Scenario: candidate unsure what "evaluation judgment" means in practice) What does "evaluation judgment" actually look like in an interview?
-Being able to explain what metric matters for a specific problem and why — for example, why accuracy alone can be misleading on an imbalanced dataset — rather than reciting a generic list of metrics.
+Being able to explain what metric matters for a specific problem and why - for example, why accuracy alone can be misleading on an imbalanced dataset - rather than reciting a generic list of metrics.
 
 ### (Scenario: candidate worried about admitting uncertainty) Should I avoid mentioning a model's limitations in an interview to seem more confident?
-No — being able to clearly explain what a model doesn't know is a stronger signal of real experience than projecting false confidence.
+No - being able to clearly explain what a model doesn't know is a stronger signal of real experience than projecting false confidence.
 
 ### (Scenario: candidate deciding how to split prep time) How should I split my preparation time between algorithms and judgment-based practice?
-Weight it toward judgment-based practice — problem framing, evaluation choices, and communicating uncertainty — since these typically carry more weight in the actual hiring decision.
+Weight it toward judgment-based practice - problem framing, evaluation choices, and communicating uncertainty - since these typically carry more weight in the actual hiring decision.
 
 <script type="application/ld+json">
 {
@@ -187,9 +187,9 @@ Weight it toward judgment-based practice — problem framing, evaluation choices
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Why did I do well on algorithm questions but still not get the role?", "acceptedAnswer": {"@type": "Answer", "text": "Most AI hiring decisions weigh problem framing, evaluation judgment and communication of uncertainty more heavily than algorithmic recall."}},
-    {"@type": "Question", "name": "What should I practice besides algorithmic problems?", "acceptedAnswer": {"@type": "Answer", "text": "Practice narrating past projects out loud — framing decisions, evaluation choices, and lessons from mistakes."}},
+    {"@type": "Question", "name": "What should I practice besides algorithmic problems?", "acceptedAnswer": {"@type": "Answer", "text": "Practice narrating past projects out loud - framing decisions, evaluation choices, and lessons from mistakes."}},
     {"@type": "Question", "name": "What does \"evaluation judgment\" actually look like in an interview?", "acceptedAnswer": {"@type": "Answer", "text": "Being able to explain what metric matters for a specific problem and why, rather than reciting a generic list."}},
-    {"@type": "Question", "name": "Should I avoid mentioning a model's limitations in an interview to seem more confident?", "acceptedAnswer": {"@type": "Answer", "text": "No — clearly explaining what a model doesn't know is a stronger signal of real experience."}},
+    {"@type": "Question", "name": "Should I avoid mentioning a model's limitations in an interview to seem more confident?", "acceptedAnswer": {"@type": "Answer", "text": "No - clearly explaining what a model doesn't know is a stronger signal of real experience."}},
     {"@type": "Question", "name": "How should I split my preparation time between algorithms and judgment-based practice?", "acceptedAnswer": {"@type": "Answer", "text": "Weight it toward judgment-based practice, since it typically carries more weight in the actual decision."}}
   ]
 }

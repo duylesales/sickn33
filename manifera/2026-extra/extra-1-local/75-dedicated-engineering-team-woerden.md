@@ -20,28 +20,28 @@ target_persona: "CTO"
 }
 </script>
 
-Milk doesn't wait for a maintenance window, and a dairy-logistics platform that goes down during a collection run doesn't get to reschedule the cows — a dedicated engineering team for this kind of system needs an uptime discipline most software teams never have to think about.
+Milk doesn't wait for a maintenance window, and a dairy-logistics platform that goes down during a collection run doesn't get to reschedule the cows - a dedicated engineering team for this kind of system needs an uptime discipline most software teams never have to think about.
 
-**The Pain:** A CTO at a dairy-technology company in Woerden — a Utrecht-province town with deep roots in the Dutch dairy-processing and logistics industry — is building a dedicated engineering team for a collection-scheduling and cold-chain monitoring platform where a service interruption has a hard, physical consequence measured in spoiled product, not just a delayed dashboard refresh.
+**The Pain:** A CTO at a dairy-technology company in Woerden - a Utrecht-province town with deep roots in the Dutch dairy-processing and logistics industry - is building a dedicated engineering team for a collection-scheduling and cold-chain monitoring platform where a service interruption has a hard, physical consequence measured in spoiled product, not just a delayed dashboard refresh.
 
-**The Agitation:** A CTO who builds a dedicated engineering team without an explicit uptime standard discovers the gap the first time a deployment goes wrong during an active collection window — a standard software team's "we'll patch it in the morning" instinct doesn't work when the morning is too late for the product already in transit.
+**The Agitation:** A CTO who builds a dedicated engineering team without an explicit uptime standard discovers the gap the first time a deployment goes wrong during an active collection window - a standard software team's "we'll patch it in the morning" instinct doesn't work when the morning is too late for the product already in transit.
 
 ## Engineering for a Physical Supply Chain, Not Just a Dashboard
 
 A dedicated engineering team for a dairy-logistics platform needs to treat uptime as a physical-world constraint, not a software SLA target, because the consequence of downtime is spoiled product and disrupted collection routes, not just a support ticket.
 
-The first requirement is deployment scheduling that respects the operational calendar — releases planned around collection windows, not around engineering convenience, with a defined blackout period during active operations.
+The first requirement is deployment scheduling that respects the operational calendar - releases planned around collection windows, not around engineering convenience, with a defined blackout period during active operations.
 
 The second is a tested rollback path that can execute fast enough to matter during a live operational window, rehearsed in advance rather than assembled during an actual incident when every minute has a physical-world cost.
 
-The third is monitoring calibrated to the operational reality — alerting on the specific failure modes that actually threaten a collection run, not generic infrastructure metrics that miss the business-level signal a dairy-logistics platform actually needs watched.
+The third is monitoring calibrated to the operational reality - alerting on the specific failure modes that actually threaten a collection run, not generic infrastructure metrics that miss the business-level signal a dairy-logistics platform actually needs watched.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads define deployment blackout windows and operational-risk monitoring aligned to the actual physical supply chain, not a generic software SLA.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod rehearses rollback procedures in advance and builds monitoring calibrated to the specific failure modes that matter operationally.
 
-This is Dutch Management × Vietnamese Mastery — engineering discipline built for a supply chain that doesn't pause for a bad deploy. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - engineering discipline built for a supply chain that doesn't pause for a bad deploy. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Mejerikooperativet Vestjylland A.m.b.A., a dairy cooperative based in Herning, D
 Manifera rebuilt the deployment process around defined blackout windows aligned to the cooperative's actual collection schedule, with rehearsed rollback procedures tested against realistic failure scenarios before going live. Twelve months of subsequent deployments produced zero collection-window incidents.
 
 > *"Software teams talk about downtime windows like they're a scheduling inconvenience. For us, a bad deploy at the wrong hour is spoiled product on a truck. That distinction had to be built into how we deployed, not just hoped for."*
-> — **CTO, Mejerikooperativet Vestjylland A.m.b.A., Denmark**
+> - **CTO, Mejerikooperativet Vestjylland A.m.b.A., Denmark**
 
 ## Generic Software SLA vs. Manifera's Operationally-Calibrated Engineering
 
@@ -66,7 +66,7 @@ Manifera rebuilt the deployment process around defined blackout windows aligned 
 
 ## The Economics
 
-A deployment-related incident during an active collection window on a dairy-logistics platform doesn't just cost engineering time to fix — it costs spoiled product and disrupted routes with real, immediate financial consequence, a cost category a generic software SLA was never built to price in. Aligning deployment scheduling and rollback readiness to the actual operational calendar costs a modest planning investment relative to a single spoiled-collection incident. [Talk to Manifera about operationally-calibrated engineering](https://www.manifera.com/contact-us/).
+A deployment-related incident during an active collection window on a dairy-logistics platform doesn't just cost engineering time to fix - it costs spoiled product and disrupted routes with real, immediate financial consequence, a cost category a generic software SLA was never built to price in. Aligning deployment scheduling and rollback readiness to the actual operational calendar costs a modest planning investment relative to a single spoiled-collection incident. [Talk to Manifera about operationally-calibrated engineering](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
-☸️ Marco built an inventory-forecasting platform using **Bolt** — marco, a startup founder, used **bolt** to build an AI forecasting tool for e-commerce brands, but spent four months and two contractor hires just trying to keep his self-managed Kubernetes cluster alive. 🧠
+☸️ Marco built an inventory-forecasting platform using **Bolt** - marco, a startup founder, used **bolt** to build an AI forecasting tool for e-commerce brands, but spent four months and two contractor hires just trying to keep his self-managed Kubernetes cluster alive. 🧠
 
 If your infrastructure choice was driven by reputation rather than your actual team size and workload, you may be paying for complexity your team can't operate.
 
@@ -12,7 +12,7 @@ If your infrastructure choice was driven by reputation rather than your actual t
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Marco's team dropped the contractor entirely: infrastructure spend fell roughly 40%, and unpredictable job failures disappeared for good. (€3,600 (Relaunch & Scale Package) — 12 business days, for a comparable engagement.) 🚀
+Marco's team dropped the contractor entirely: infrastructure spend fell roughly 40%, and unpredictable job failures disappeared for good. (€3,600 (Relaunch & Scale Package) - 12 business days, for a comparable engagement.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/self-managed-kubernetes-vs-launchstudio-serverless
 

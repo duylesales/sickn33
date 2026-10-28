@@ -1,4 +1,4 @@
-🎙️ Lucas, een mediacoördinator, bouwde een AI-audiotranscribeerder met **Lovable** — en zag lange audio-uploads crashen door 10-seconden Vercel serverless timeouts, waardoor transcripties halverwege afbraken en gebruikersdata verloren gingen. 📻
+🎙️ Lucas, een mediacoördinator, bouwde een AI-audiotranscribeerder met **Lovable** - en zag lange audio-uploads crashen door 10-seconden Vercel serverless timeouts, waardoor transcripties halverwege afbraken en gebruikersdata verloren gingen. 📻
 
 Het rechtstreeks koppelen van uw webserver aan trage, externe LLM API's betekent dat één time-out of serverherstart de taak van uw bezoeker definitief vernietigt. 🧠
 
@@ -12,7 +12,7 @@ Het rechtstreeks koppelen van uw webserver aan trage, externe LLM API's betekent
 
 Bij **LaunchStudio** bouwen we sinds 2014 veerkrachtige, ontkoppelde wachtrij-architecturen via Manifera, verspreid over meer dan 160 succesvol opgeleverde projecten. 🛡️
 
-Lucas' time-outfouten daalden naar nul, en het platform verwerkt moeiteloos audiobestanden van 2 uur zonder enige hapering. (€1.950 (BullMQ Infrastructure Setup Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Lucas' time-outfouten daalden naar nul, en het platform verwerkt moeiteloos audiobestanden van 2 uur zonder enige hapering. (€1.950 (BullMQ Infrastructure Setup Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Bouw fouttolerante AI-pipelines: https://launchstudio.eu/nl/blog/building-fault-tolerant-ai-pipelines-bullmq-redis
 

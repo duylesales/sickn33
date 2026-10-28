@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-An exciting AI product demo tells you nothing about whether the company funding it can keep paying salaries in twelve months. Candidates evaluate the technical problem carefully and the financial runway not at all — understandable, since it's an uncomfortable topic to raise, but it's also one of the most consequential questions you can ask before accepting an offer.
+An exciting AI product demo tells you nothing about whether the company funding it can keep paying salaries in twelve months. Candidates evaluate the technical problem carefully and the financial runway not at all - understandable, since it's an uncomfortable topic to raise, but it's also one of the most consequential questions you can ask before accepting an offer.
 
 ## What's Actually Checkable Without Being Awkward
 
@@ -43,15 +43,15 @@ An exciting AI product demo tells you nothing about whether the company funding 
 
 **Check public funding records.** Chamber of Commerce filings and public funding announcements (where available) can confirm when a round closed and its rough size, giving you an independent data point beyond what you're told directly.
 
-**Ask about team growth and attrition, not just headcount today.** A team that's grown steadily is a different signal than one that recently shrank — ask what the team size looked like six and twelve months ago, not just now.
+**Ask about team growth and attrition, not just headcount today.** A team that's grown steadily is a different signal than one that recently shrank - ask what the team size looked like six and twelve months ago, not just now.
 
 ## Why This Isn't About Avoiding Startups
 
-This isn't an argument against joining early-stage companies — it's an argument for asking the same due-diligence questions an investor would ask, since you're making a similar kind of bet with your time and career.
+This isn't an argument against joining early-stage companies - it's an argument for asking the same due-diligence questions an investor would ask, since you're making a similar kind of bet with your time and career.
 
 ## A Deeper Look at Reading the Signals Beyond the Direct Answer
 
-How a founder answers a runway question often carries more information than the number itself. A founder who answers with a specific figure and a clear plan for the next raise or path to revenue is demonstrating exactly the kind of operational discipline you want in a leader you're betting your career on. A founder who deflects, gives a vague range, or seems irritated by the question is giving you a data point regardless of what the actual runway number turns out to be — how a leader handles a direct, reasonable question under mild pressure is itself a preview of how they'll handle harder conversations later.
+How a founder answers a runway question often carries more information than the number itself. A founder who answers with a specific figure and a clear plan for the next raise or path to revenue is demonstrating exactly the kind of operational discipline you want in a leader you're betting your career on. A founder who deflects, gives a vague range, or seems irritated by the question is giving you a data point regardless of what the actual runway number turns out to be - how a leader handles a direct, reasonable question under mild pressure is itself a preview of how they'll handle harder conversations later.
 
 ## Comparing Public Records to Direct Conversation
 
@@ -63,7 +63,7 @@ How a founder answers a runway question often carries more information than the 
 
 ## Why This Due Diligence Matters More for AI Roles Specifically
 
-AI hiring at early-stage companies often involves a disproportionate bet on a single technical direction — a specific model approach, a specific data strategy — that may or may not have product-market fit yet. This concentration of risk makes funding stability more consequential for an AI hire than for, say, a generalist operations hire, since an AI-specific pivot or a funding shortfall often hits the AI team's roadmap first and hardest.
+AI hiring at early-stage companies often involves a disproportionate bet on a single technical direction - a specific model approach, a specific data strategy - that may or may not have product-market fit yet. This concentration of risk makes funding stability more consequential for an AI hire than for, say, a generalist operations hire, since an AI-specific pivot or a funding shortfall often hits the AI team's roadmap first and hardest.
 
 ## Reading the Dutch Startup Funding Landscape Specifically
 
@@ -71,7 +71,7 @@ Assessing a Dutch AI startup's stability benefits from understanding how funding
 
 Dutch startups draw on a mix of sources that includes conventional venture capital but also regional development funds, national innovation subsidies and European research programmes, along with revenue from customers considerably earlier in many cases than the growth-at-all-costs model would suggest. This mix matters for your assessment: a company substantially funded by grant and subsidy programmes has a different risk profile from one funded by venture equity, with more predictable near-term runway but potentially harder transitions when a programme ends and commercial revenue has not yet replaced it.
 
-Round sizes here are typically smaller than headline figures from American commentary, which means a Dutch startup that has raised what sounds like a modest amount may nonetheless have substantial runway given lower burn rates and lower salary costs. Candidates who apply American benchmarks to Dutch funding figures frequently misjudge stability in both directions — dismissing well-funded companies as underfunded, or assuming a company that raised a large round by Dutch standards has years of certainty.
+Round sizes here are typically smaller than headline figures from American commentary, which means a Dutch startup that has raised what sounds like a modest amount may nonetheless have substantial runway given lower burn rates and lower salary costs. Candidates who apply American benchmarks to Dutch funding figures frequently misjudge stability in both directions - dismissing well-funded companies as underfunded, or assuming a company that raised a large round by Dutch standards has years of certainty.
 
 The practical implication is to ask about runway in months rather than reasoning from round size, and to ask specifically what mix of funding sources supports the company, since the answer tells you what would have to go wrong for the situation to change.
 
@@ -85,7 +85,7 @@ Team composition and recent departures matter equally. A company that has recent
 
 The relationship between the product and the AI capability deserves specific examination for the companies covered by this site. Some AI startups have a genuine technical moat; others have built a thin layer over a foundation model that a competitor could replicate quickly. This distinction affects the company's durability and, consequently, your career risk, and it is a fair topic for a technical candidate to probe during interviews.
 
-Finally, understanding what the company's next milestone actually is — the specific achievement that would unlock the next funding round or the next tier of customers — tells you both what your work will be measured against and how realistic the path forward is.
+Finally, understanding what the company's next milestone actually is - the specific achievement that would unlock the next funding round or the next tier of customers - tells you both what your work will be measured against and how realistic the path forward is.
 
 ## How to Have This Conversation Without Damaging Your Candidacy
 
@@ -101,9 +101,9 @@ The most important reframing is that this conversation is bidirectional. A found
 
 The final consideration is comparative: startup risk only matters relative to what else you could be doing, and the Dutch market offers alternatives that shift the calculation.
 
-As the regional and sectoral analyses elsewhere on this site describe, a substantial share of Dutch AI work sits within established organisations in industry, healthcare, insurance and the public sector — contexts where the funding risk discussed throughout this article simply does not apply in the same form. A candidate weighing a startup opportunity is not choosing between that startup and unemployment; they are typically choosing between the startup and a more stable alternative with different upside.
+As the regional and sectoral analyses elsewhere on this site describe, a substantial share of Dutch AI work sits within established organisations in industry, healthcare, insurance and the public sector - contexts where the funding risk discussed throughout this article simply does not apply in the same form. A candidate weighing a startup opportunity is not choosing between that startup and unemployment; they are typically choosing between the startup and a more stable alternative with different upside.
 
-This means the honest question is not whether the startup is risky — it is — but whether the specific compensating factors justify the risk for you. Genuine equity upside, unusual scope for someone at your career stage, exposure to a technical problem unavailable elsewhere, or working with specific people you want to learn from can all justify accepting risk that would otherwise be unwise.
+This means the honest question is not whether the startup is risky - it is - but whether the specific compensating factors justify the risk for you. Genuine equity upside, unusual scope for someone at your career stage, exposure to a technical problem unavailable elsewhere, or working with specific people you want to learn from can all justify accepting risk that would otherwise be unwise.
 
 What does not justify it is the assumption that startups are inherently more interesting or more career-advancing than established employers, which the regional analyses on this site consistently complicate. Some of the most technically demanding work in the Dutch market happens inside organisations that would never be described as startups, and a candidate who understands that has a genuinely wider set of options than one who has absorbed the assumption that ambitious technical careers necessarily run through venture-funded companies.
 
@@ -133,11 +133,11 @@ Much of the due diligence described in this article can be grounded in public so
 
 **Netherlands Chamber of Commerce (KVK).** The trade register shows a company's legal form, registration date, directors and, for many companies, filed annual accounts. Small companies may file abbreviated accounts, and filings lag behind reality, but a company that is persistently late with filing or has recently changed directors deserves follow-up questions.
 
-**Central Insolvency Register.** The public register of insolvency proceedings shows whether a company — or related entities in its group — has been involved in bankruptcy or suspension of payments.
+**Central Insolvency Register.** The public register of insolvency proceedings shows whether a company - or related entities in its group - has been involved in bankruptcy or suspension of payments.
 
 **Startup ecosystem data.** **Dealroom**, an Amsterdam-based data platform, tracks funding rounds and investors for startups and scale-ups, and **Techleap.nl**, the Dutch public-private organisation supporting the tech ecosystem, publishes insights on the state of Dutch tech funding. Together they show when a company last raised money and from whom.
 
-**Public funding instruments.** Many Dutch AI startups use government instruments. The **WBSO** is an R&D tax credit that reduces wage costs for research and development work, administered by the **Netherlands Enterprise Agency (RVO)**, which also manages the **Innovation Credit** for risky development projects. **Invest-NL** and regional development funds invest in innovative companies. Such funding signals external validation, but it is often tied to milestones — worth asking about.
+**Public funding instruments.** Many Dutch AI startups use government instruments. The **WBSO** is an R&D tax credit that reduces wage costs for research and development work, administered by the **Netherlands Enterprise Agency (RVO)**, which also manages the **Innovation Credit** for risky development projects. **Invest-NL** and regional development funds invest in innovative companies. Such funding signals external validation, but it is often tied to milestones - worth asking about.
 
 ## What Happens to Employees If a Dutch Employer Goes Bankrupt
 
@@ -151,7 +151,7 @@ This safety net doesn't remove the disruption of losing a job, and it doesn't co
 - Use KVK filings, the Central Insolvency Register, Dealroom and Techleap.nl to ground your assessment.
 - Public instruments such as WBSO, the Innovation Credit and Invest-NL signal validation but often come with milestones.
 - The UWV wage guarantee scheme offers limited protection in bankruptcy; stock options generally don't survive it.
-- Asking about financial stability professionally rarely harms your candidacy — how a startup answers is itself a signal.
+- Asking about financial stability professionally rarely harms your candidacy - how a startup answers is itself a signal.
 
 ## Where to Start
 
@@ -162,27 +162,27 @@ Browse current AI, machine learning and data roles across the Netherlands, at st
 ## Frequently Asked Questions
 
 ### (Scenario: candidate afraid to ask about company finances) Is it appropriate to ask a startup directly about its runway before accepting an offer?
-Yes — it's a normal, fair question in a final-stage conversation, and how comfortably a founder answers it is itself informative.
+Yes - it's a normal, fair question in a final-stage conversation, and how comfortably a founder answers it is itself informative.
 
 ### (Scenario: candidate wanting an independent data point) Can I verify funding claims independently rather than relying only on what I'm told?
-Yes — Chamber of Commerce filings and public funding announcements, where available, can confirm when a round closed and its rough size.
+Yes - Chamber of Commerce filings and public funding announcements, where available, can confirm when a round closed and its rough size.
 
 ### (Scenario: candidate looking only at current headcount) Why does team growth or attrition history matter more than current headcount alone?
-A team that's grown steadily signals different stability than one that recently shrank — asking about size six and twelve months ago gives context that a single headcount number doesn't.
+A team that's grown steadily signals different stability than one that recently shrank - asking about size six and twelve months ago gives context that a single headcount number doesn't.
 
 ### (Scenario: candidate worried this makes them look distrustful) Will asking about funding stability make me look like I don't trust the company?
-Reasonable founders expect this kind of question from experienced candidates — it's the same due diligence an investor would do, and asking it directly is generally received as professional, not distrustful.
+Reasonable founders expect this kind of question from experienced candidates - it's the same due diligence an investor would do, and asking it directly is generally received as professional, not distrustful.
 
 ### (Scenario: candidate deciding how many questions to ask) How many funding-related questions is reasonable to ask in a final interview?
-Two or three direct, matter-of-fact questions is usually enough — runway, recent team trajectory, and how the current round is expected to carry the company forward.
+Two or three direct, matter-of-fact questions is usually enough - runway, recent team trajectory, and how the current round is expected to carry the company forward.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it appropriate to ask a startup directly about its runway before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it's a normal, fair question in a final-stage conversation, and how comfortably a founder answers it is itself informative."}},
-    {"@type": "Question", "name": "Can I verify funding claims independently rather than relying only on what I'm told?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Chamber of Commerce filings and public funding announcements can confirm when a round closed and its rough size."}},
+    {"@type": "Question", "name": "Is it appropriate to ask a startup directly about its runway before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it's a normal, fair question in a final-stage conversation, and how comfortably a founder answers it is itself informative."}},
+    {"@type": "Question", "name": "Can I verify funding claims independently rather than relying only on what I'm told?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - Chamber of Commerce filings and public funding announcements can confirm when a round closed and its rough size."}},
     {"@type": "Question", "name": "Why does team growth or attrition history matter more than current headcount alone?", "acceptedAnswer": {"@type": "Answer", "text": "A team that's grown steadily signals different stability than one that recently shrank."}},
     {"@type": "Question", "name": "Will asking about funding stability make me look like I don't trust the company?", "acceptedAnswer": {"@type": "Answer", "text": "Reasonable founders expect this kind of question from experienced candidates."}},
     {"@type": "Question", "name": "How many funding-related questions is reasonable to ask in a final interview?", "acceptedAnswer": {"@type": "Answer", "text": "Two or three direct, matter-of-fact questions is usually enough."}}

@@ -1,4 +1,4 @@
-🤝 Noor ontving een overnamebod voor haar **Cursor** AI-tool PalletPilot — op voorwaarde dat haar app binnen 60 dagen integreerde in het platform van de koper. 📦
+🤝 Noor ontving een overnamebod voor haar **Cursor** AI-tool PalletPilot - op voorwaarde dat haar app binnen 60 dagen integreerde in het platform van de koper. 📦
 
 Veel SaaS-overnames stranden in de due diligence op technische integratierisico's en ongedocumenteerde codebases.
 
@@ -12,7 +12,7 @@ Veel SaaS-overnames stranden in de due diligence op technische integratierisico'
 
 Bij LaunchStudio auditen en begeleiden we software-integraties bij overnames en fusies. 🛡️
 
-Noor's overname werd binnen 3 weken definitief beklonken zonder prijskorting. (€ 3.800 (Integration Assessment) — 10 werkdagen.) 🚀
+Noor's overname werd binnen 3 weken definitief beklonken zonder prijskorting. (€ 3.800 (Integration Assessment) - 10 werkdagen.) 🚀
 
 👉 Lees hoe u integratierisico's elimineert: https://launchstudio.eu/nl/blog/choosing-partner-post-acquisition-codebase-integration
 

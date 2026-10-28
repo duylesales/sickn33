@@ -63,11 +63,11 @@ Ask to observe rather than only to interview. An hour watching someone work reve
 
 The label is broader than it looks, and the most useful people are often not the most senior.
 
-**Operators and practitioners** — nurses, planners, inspectors, technicians, claims handlers, customer service staff — know how the process actually runs, including the workarounds. They are the best source for understanding your data's quirks and the eventual user experience.
+**Operators and practitioners** - nurses, planners, inspectors, technicians, claims handlers, customer service staff - know how the process actually runs, including the workarounds. They are the best source for understanding your data's quirks and the eventual user experience.
 
-**Process and subject specialists** — process engineers, underwriters, clinicians, logistics planners — hold the causal model of the domain. They are the people to ask why something happens.
+**Process and subject specialists** - process engineers, underwriters, clinicians, logistics planners - hold the causal model of the domain. They are the people to ask why something happens.
 
-**System and data owners** — the people who administer the source systems — know why fields exist, when they changed and what is actually populated. A conversation with them saves weeks.
+**System and data owners** - the people who administer the source systems - know why fields exist, when they changed and what is actually populated. A conversation with them saves weeks.
 
 **Managers** know the decision the output will support and the constraints around it, but they often describe the process as it should be rather than as it is.
 
@@ -77,9 +77,9 @@ A useful habit is to talk to at least one person from each group before designin
 
 Collaboration fails as often through your language as through theirs.
 
-Avoid presenting precision, recall and AUC to people who do not use them. Translate into their terms: out of a hundred cases you would flag, roughly seventy are genuine; of the problems that occur, we catch about half. Better still, express it in the quantities they manage — hours of inspection, euros of stock, cases per week.
+Avoid presenting precision, recall and AUC to people who do not use them. Translate into their terms: out of a hundred cases you would flag, roughly seventy are genuine; of the problems that occur, we catch about half. Better still, express it in the quantities they manage - hours of inspection, euros of stock, cases per week.
 
-Equally, learn their vocabulary properly rather than approximating it. In each domain there are terms with exact meanings — a deviation, an incident, a batch, a claim, an episode — and using them loosely undermines confidence quickly. Keep a glossary; it is genuinely useful and it signals respect.
+Equally, learn their vocabulary properly rather than approximating it. In each domain there are terms with exact meanings - a deviation, an incident, a batch, a claim, an episode - and using them loosely undermines confidence quickly. Keep a glossary; it is genuinely useful and it signals respect.
 
 Be careful with the word model. To many people it implies certainty or automation. Saying "a tool that estimates" or "a ranking that suggests where to look first" is often more accurate and less alarming.
 
@@ -93,7 +93,7 @@ Respect the cost. An expert hour spent labelling is an hour not spent on their j
 
 Design the task properly. Ambiguous instructions produce inconsistent labels that look like model failure later. Write a short guideline with examples, including edge cases, and refine it after a pilot round of twenty items.
 
-Measure agreement. Have two experts label the same subset and check how often they agree. If they agree only seventy per cent of the time, no model will exceed that, and you have learned something important about the problem — often that the category itself is ill-defined.
+Measure agreement. Have two experts label the same subset and check how often they agree. If they agree only seventy per cent of the time, no model will exceed that, and you have learned something important about the problem - often that the category itself is ill-defined.
 
 Use their time where it is most valuable: on the difficult and uncertain cases rather than the obvious ones. Active learning approaches formalise this, but even a simple rule of sending only low-confidence cases for review makes expert input go much further.
 
@@ -103,7 +103,7 @@ Finally, give the labelling back as a resource. A well-constructed, documented l
 
 The adoption failure mode is consistent: a technically sound system that practitioners quietly ignore.
 
-Several design choices prevent it. Fit into the existing workflow rather than adding a separate tool; a prediction in the system someone already uses gets seen, and a dashboard in a new place does not. Show the reasoning, not only the output — the two or three factors that drove the prediction, or the similar past cases — because experts need something to check against their own judgement.
+Several design choices prevent it. Fit into the existing workflow rather than adding a separate tool; a prediction in the system someone already uses gets seen, and a dashboard in a new place does not. Show the reasoning, not only the output - the two or three factors that drove the prediction, or the similar past cases - because experts need something to check against their own judgement.
 
 Allow disagreement and capture it. A way to say "I do not agree, and here is why" gives you labelled failure cases and gives them agency. Systems that permit no override are either bypassed or followed uncritically, and both outcomes are bad.
 
@@ -115,7 +115,7 @@ And close the loop visibly. When you change something because of feedback, say s
 
 Not every project is welcomed, and pretending otherwise is naive.
 
-Sometimes a system will change how someone's performance is measured, reduce the discretion they have exercised for years, or be perceived — sometimes correctly — as a step toward reducing headcount. European workplaces often have formal structures through which this is addressed: works councils and employee representation bodies have consultation rights on systems that affect working conditions and monitoring, and involving them early is both a legal requirement in many cases and practically wise.
+Sometimes a system will change how someone's performance is measured, reduce the discretion they have exercised for years, or be perceived - sometimes correctly - as a step toward reducing headcount. European workplaces often have formal structures through which this is addressed: works councils and employee representation bodies have consultation rights on systems that affect working conditions and monitoring, and involving them early is both a legal requirement in many cases and practically wise.
 
 Even where no formal process applies, address the question rather than avoiding it. State clearly what the system will decide, what remains a human decision, and how performance will or will not be measured using it. Where you do not know, say that you do not know and that you will find out.
 
@@ -127,7 +127,7 @@ Projects that fail for political reasons rarely look political in the post-morte
 
 The best applied AI practitioners have a small number of domain relationships they have maintained for years, and those relationships are their real advantage.
 
-Practical ways to build them. Spend time in their environment without an agenda occasionally — on the floor, in the ward, at the depot, in the claims room. Share results with them before sharing them upward, so they are never surprised in a meeting. Credit them publicly for insight that came from them. Follow through on small requests; if you said you would check something, check it.
+Practical ways to build them. Spend time in their environment without an agenda occasionally - on the floor, in the ward, at the depot, in the claims room. Share results with them before sharing them upward, so they are never surprised in a meeting. Credit them publicly for insight that came from them. Follow through on small requests; if you said you would check something, check it.
 
 Learn enough of the domain to hold a conversation. You do not need their expertise, but knowing the basic vocabulary, the main constraints and the seasonal rhythm of their work changes how you are received.
 
@@ -161,7 +161,7 @@ A team at a European food producer built a model to predict which batches would 
 
 A process operator, asked to look at a list of the missed cases, recognised them within a minute. All had been produced after a changeover from a different product. The changeover cleaning procedure left a variable residue that affected the next batch, and the timing of changeovers was recorded in a planning system nobody had connected to the process data.
 
-Adding a single feature — hours since the last changeover and the product that preceded it — transformed the model.
+Adding a single feature - hours since the last changeover and the product that preceded it - transformed the model.
 
 The data scientist who led the project said afterwards that they had spent eight weeks tuning and one afternoon asking. He now starts every project by showing the worst cases to someone who does the work, before building anything.
 

@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The vacancy is unusually specific. The organisation has been buying its data work from an external party for several years, the invoices have grown uncomfortable, and management has decided to build the capability internally. You would be the first, or among the first, and the brief is to take over what the consultancy built. It sounds like ownership handed to you on day one, and sometimes it is. It is also one of the few roles where most of your first year is determined by decisions made before you arrived — in a contract you have not read, in code you have not seen, by people who have no incentive to make your arrival easy.
+The vacancy is unusually specific. The organisation has been buying its data work from an external party for several years, the invoices have grown uncomfortable, and management has decided to build the capability internally. You would be the first, or among the first, and the brief is to take over what the consultancy built. It sounds like ownership handed to you on day one, and sometimes it is. It is also one of the few roles where most of your first year is determined by decisions made before you arrived - in a contract you have not read, in code you have not seen, by people who have no incentive to make your arrival easy.
 
 ## Why Organisations Insource
 
@@ -55,7 +55,7 @@ Ask which of these drove the decision. If the answer is only cost, the organisat
 
 **Code you did not write, in a style you would not choose.** Sometimes excellent, sometimes assembled under deadline pressure by three different people over four years.
 
-**Models with undocumented assumptions.** The choices that matter — which population was excluded, why that threshold, what happens in edge cases — often live in nobody's document.
+**Models with undocumented assumptions.** The choices that matter - which population was excluded, why that threshold, what happens in edge cases - often live in nobody's document.
 
 **Infrastructure that may not be yours.** Systems sometimes run in the consultancy's environment, with their tooling and their accounts.
 
@@ -117,7 +117,7 @@ If management expects the middle of that timeline in the first quarter, say so e
 
 This role builds something interviewers find convincing: you took over production systems you did not write, understood them, kept them running and improved them. That is harder than greenfield work and it demonstrates more.
 
-You also learn a specific, portable set of skills — reading unfamiliar code fast, reverse-engineering model logic, writing documentation that did not exist, migrating infrastructure, and managing stakeholders through a change they did not ask for.
+You also learn a specific, portable set of skills - reading unfamiliar code fast, reverse-engineering model logic, writing documentation that did not exist, migrating infrastructure, and managing stakeholders through a change they did not ask for.
 
 The risk is the opposite outcome: a year spent maintaining fragile systems with no budget to improve them, which teaches endurance rather than engineering.
 
@@ -126,7 +126,7 @@ The risk is the opposite outcome: a year spent maintaining fragile systems with 
 - The handover is contracted, paid and time-boxed, with named people available afterwards.
 - The organisation owns the code and the environment, or has a plan and a budget to migrate.
 - There is a sponsor with authority who wanted this, not only a finance-led decision.
-- You would not be entirely alone — a platform team, engineers, or a second hire planned.
+- You would not be entirely alone - a platform team, engineers, or a second hire planned.
 - Management understands that the first quarter produces understanding rather than output.
 - There is budget to rebuild what cannot be maintained.
 
@@ -157,7 +157,7 @@ A machine learning engineer joins a manufacturer that has spent four years buyin
 
 He asks the handover questions during the interview. The organisation owns the code, which is in their own repository, and the models run on their own cloud environment. Knowledge transfer is contracted: eight sessions and a documentation deliverable, paid, before the contract ends.
 
-The reality is mixed. The sessions happen and are useful. The documentation is thin, and the quality model turns out to depend on a manual file that someone at the consultancy updated monthly — a fact that emerges three weeks after they leave, when the model quietly starts using stale data.
+The reality is mixed. The sessions happen and are useful. The documentation is thin, and the quality model turns out to depend on a manual file that someone at the consultancy updated monthly - a fact that emerges three weeks after they leave, when the model quietly starts using stale data.
 
 He spends his first quarter writing an inventory and automating that file. The forecasting model he leaves untouched for six months, because it works and he does not yet understand why.
 
@@ -175,7 +175,7 @@ His conclusion: the job was ninety percent archaeology and ten percent modelling
 
 ## Where to Start
 
-Ask in the first interview how the handover is arranged and who owns the code — then compare the role with other employers near you whose systems are already internally maintained.
+Ask in the first interview how the handover is arranged and who owns the code - then compare the role with other employers near you whose systems are already internally maintained.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -201,7 +201,7 @@ Write an inventory of what exists, what depends on it and what would break first
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is taking over a consultancy's work a good career move?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — inheriting and improving production systems demonstrates a lot, provided there is a handover and a budget."}},
+    {"@type": "Question", "name": "Is taking over a consultancy's work a good career move?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - inheriting and improving production systems demonstrates a lot, provided there is a handover and a budget."}},
     {"@type": "Question", "name": "What should the handover include?", "acceptedAnswer": {"@type": "Answer", "text": "A contracted, paid transition with named people, documentation as a deliverable and post-contract support."}},
     {"@type": "Question", "name": "Why does it matter who owns the code?", "acceptedAnswer": {"@type": "Answer", "text": "Ownership under a services contract is not automatic; without it you are rebuilding, not taking over."}},
     {"@type": "Question", "name": "What should management understand before I start?", "acceptedAnswer": {"@type": "Answer", "text": "That the first quarter produces understanding, and one person cannot replace several consultants at once."}},

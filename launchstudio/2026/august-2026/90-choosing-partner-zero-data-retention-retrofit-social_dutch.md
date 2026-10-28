@@ -1,4 +1,4 @@
-🔥 Amina Haddad bouwde ClauseCheck AI — een AI-platform voor contractbeoordeling met **Cursor** — en de getekende pilot van een bank hing af van het bewijzen van Zero Data Retention over de hele pijplijn. 🧠
+🔥 Amina Haddad bouwde ClauseCheck AI - een AI-platform voor contractbeoordeling met **Cursor** - en de getekende pilot van een bank hing af van het bewijzen van Zero Data Retention over de hele pijplijn. 🧠
 
 Haar team nam aan dat de enterprise-overeenkomst van hun AI-provider dit al dekte. Een technische beoordeling vond drie aparte lekken.
 
@@ -12,7 +12,7 @@ Haar team nam aan dat de enterprise-overeenkomst van hun AI-provider dit al dekt
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-ClauseCheck AI slaagde bij de eerste indiening voor de technische beveiligingsbeoordeling van de bank, en de pilot werd omgezet in een getekend enterprise-contract. (€ 5.200 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
+ClauseCheck AI slaagde bij de eerste indiening voor de technische beveiligingsbeoordeling van de bank, en de pilot werd omgezet in een getekend enterprise-contract. (€ 5.200 (Enterprise Hardening Pakket) - 10 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-zero-data-retention-retrofit
 

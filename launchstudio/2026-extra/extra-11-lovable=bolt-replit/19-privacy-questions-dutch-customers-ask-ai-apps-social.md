@@ -1,4 +1,4 @@
-🚨 Tessa Blom built Planbaar to schedule home-care visits for healthcare teams in Deventer. Two care teams loved it informally. But when a larger regional care provider prepared to sign, their DPO sent a 19-question privacy assessment — and Tessa discovered her database was sitting in a US data center, lacked deletion workflows, and had zero access logging. 😳
+🚨 Tessa Blom built Planbaar to schedule home-care visits for healthcare teams in Deventer. Two care teams loved it informally. But when a larger regional care provider prepared to sign, their DPO sent a 19-question privacy assessment - and Tessa discovered her database was sitting in a US data center, lacked deletion workflows, and had zero access logging. 😳
 
 Dutch enterprise and healthcare buyers take GDPR compliance seriously. Here are the questions that will block your sale: 🧠
 

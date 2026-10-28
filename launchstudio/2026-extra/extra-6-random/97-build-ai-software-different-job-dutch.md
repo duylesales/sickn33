@@ -19,25 +19,25 @@ Doelgroep: Technische solo-oprichter
 }
 </script>
 
-Twee zinnen die bijna identiek klinken, beschrijven twee daadwerkelijk verschillende klussen, en ze door elkaar halen is een van de duurdere fouten die een technische oprichter kan maken. "AI-software bouwen" betekent een model bouwen of trainen — de daadwerkelijke intelligentie, op maat gemaakt voor uw probleem. "Software bouwen die AI gebruikt" betekent een bestaand, al getraind model via een API in een product bedraden, en uw engineeringinspanning stoppen in de productervaring eromheen. De meeste oprichters die de eerste zin zeggen, hebben eigenlijk de tweede klus nodig, en de verwarring tussen de twee kan maanden kosten.
+Twee zinnen die bijna identiek klinken, beschrijven twee daadwerkelijk verschillende klussen, en ze door elkaar halen is een van de duurdere fouten die een technische oprichter kan maken. "AI-software bouwen" betekent een model bouwen of trainen - de daadwerkelijke intelligentie, op maat gemaakt voor uw probleem. "Software bouwen die AI gebruikt" betekent een bestaand, al getraind model via een API in een product bedraden, en uw engineeringinspanning stoppen in de productervaring eromheen. De meeste oprichters die de eerste zin zeggen, hebben eigenlijk de tweede klus nodig, en de verwarring tussen de twee kan maanden kosten.
 
 ## Wat "AI-software bouwen" daadwerkelijk vereist
 
-AI-software bouwen in de letterlijke zin — een custom model trainen of finetunen — vereist gegevens op een schaal die de meeste vroege producten nog niet hebben, machine-learning-expertise die de meeste solo-oprichters niet in huis hebben, en een doorlopende toewijding aan het opnieuw trainen en evalueren van het model naarmate het afdrijft. Het is een legitieme specialiteit. Het is ook een specialiteit die een smalle klasse van problemen oplost: gevallen waarin een kant-en-klaar model daadwerkelijk niet kan wat u nodig heeft, omdat uw domein zo ongebruikelijk is dat geen algemeen model er genoeg van heeft gezien.
+AI-software bouwen in de letterlijke zin - een custom model trainen of finetunen - vereist gegevens op een schaal die de meeste vroege producten nog niet hebben, machine-learning-expertise die de meeste solo-oprichters niet in huis hebben, en een doorlopende toewijding aan het opnieuw trainen en evalueren van het model naarmate het afdrijft. Het is een legitieme specialiteit. Het is ook een specialiteit die een smalle klasse van problemen oplost: gevallen waarin een kant-en-klaar model daadwerkelijk niet kan wat u nodig heeft, omdat uw domein zo ongebruikelijk is dat geen algemeen model er genoeg van heeft gezien.
 
 ## Wat "software bouwen die AI gebruikt" daadwerkelijk vereist
 
-Software bouwen die AI goed gebruikt is een compleet andere vaardigheid: het juiste kant-en-klare model of de juiste API kiezen voor de taak, het verzoek goed promptten en structureren, de output van het model gracieus afhandelen wanneer die fout of onzeker is, en het omringende product bouwen — de interface, de gegevensstroom, de bedrijfslogica — dat de bijdrage van de AI daadwerkelijk nuttig maakt voor een echte gebruiker. Hier bevindt zich de grote meerderheid van succesvolle AI-native producten daadwerkelijk, of hun oprichters het nu zo beschrijven of niet.
+Software bouwen die AI goed gebruikt is een compleet andere vaardigheid: het juiste kant-en-klare model of de juiste API kiezen voor de taak, het verzoek goed promptten en structureren, de output van het model gracieus afhandelen wanneer die fout of onzeker is, en het omringende product bouwen - de interface, de gegevensstroom, de bedrijfslogica - dat de bijdrage van de AI daadwerkelijk nuttig maakt voor een echte gebruiker. Hier bevindt zich de grote meerderheid van succesvolle AI-native producten daadwerkelijk, of hun oprichters het nu zo beschrijven of niet.
 
 ## Hoe u herkent welke klus u daadwerkelijk nodig heeft
 
-Stel een botte vraag: heeft een bestaande AI-API, goed gebruikt, al problemen opgelost die lijken op het mijne voor andere producten? Als het antwoord ja is — en voor aanbevelingsengines, contentgeneratie, classificatie en samenvatting is dat meestal zo — heeft u de tweede klus nodig, niet de eerste. De eerste klus is pas het overwegen waard als u de kant-en-klare optie daadwerkelijk heeft getest en een specifieke, goed gedefinieerde leemte heeft gevonden die deze niet kan dichten.
+Stel een botte vraag: heeft een bestaande AI-API, goed gebruikt, al problemen opgelost die lijken op het mijne voor andere producten? Als het antwoord ja is - en voor aanbevelingsengines, contentgeneratie, classificatie en samenvatting is dat meestal zo - heeft u de tweede klus nodig, niet de eerste. De eerste klus is pas het overwegen waard als u de kant-en-klare optie daadwerkelijk heeft getest en een specifieke, goed gedefinieerde leemte heeft gevonden die deze niet kan dichten.
 
 ## Waarom oprichters toch de verkeerde kiezen
 
 "AI-software bouwen" klinkt indrukwekkender om hardop te zeggen, en het is een makkelijke standaardkeuze wanneer een oprichter nog niet heeft getest of de kant-en-klare optie goed genoeg is. Het testen ervan kost een middag. Een custom model bouwen in plaats van eerst te testen kan maanden kosten, en de twee paden leveren vaak een vergelijkbaar resultaat op voor de gebruiker, wat de verspilde maanden achteraf extra pijnlijk maakt.
 
-LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, besteedt een flink deel van vroege gesprekken met oprichters aan precies deze vraag — lost het custom-model-instinct een echte leemte op, of vervangt het een test die nog niet is uitgevoerd — voordat er engineeringwerk begint. Onze [contactpagina](https://launchstudio.eu/nl/#contact) is een snelle manier om dat inzicht voor uw eigen project te krijgen, en het team voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera voert hetzelfde gesprek met enterprise-klanten die dezelfde vork overwegen.
+LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, besteedt een flink deel van vroege gesprekken met oprichters aan precies deze vraag - lost het custom-model-instinct een echte leemte op, of vervangt het een test die nog niet is uitgevoerd - voordat er engineeringwerk begint. Onze [contactpagina](https://launchstudio.eu/nl/#contact) is een snelle manier om dat inzicht voor uw eigen project te krijgen, en het team voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera voert hetzelfde gesprek met enterprise-klanten die dezelfde vork overwegen.
 
 ## Een Test van Vijf Minuten Vóórdat U Zich Vastlegt op een Maatwerkmodel
 
@@ -49,23 +49,23 @@ Voordat u duizenden euro's en maanden ontwikkeltijd investeert in het trainen va
 
 **Minuut 5: Evalueer het Resultaat.** Test het standaard model (zoals Claude 3.5 Sonnet of GPT-4o) met deze geoptimaliseerde prompt op tien uitdagende testcases.
 
-In negen van de tien gevallen levert deze eenvoudige test een resultaat op dat nauwkeuriger, stabieler en flexibeler is dan een duur ge-finetuned model — zónder trainingskosten, zónder onderhoudslast en direct klaar voor gebruik. Bewaar maatwerktraining uitsluitend voor de zeldzame gevallen waarin deze test aantoonbaar tekortschiet.
+In negen van de tien gevallen levert deze eenvoudige test een resultaat op dat nauwkeuriger, stabieler en flexibeler is dan een duur ge-finetuned model - zónder trainingskosten, zónder onderhoudslast en direct klaar voor gebruik. Bewaar maatwerktraining uitsluitend voor de zeldzame gevallen waarin deze test aantoonbaar tekortschiet.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: twee maanden besteed aan bouwen wat een API al deed
 
-Stef Oostzaan, oprichter in Oostzaan, nam zich voor AI-software te bouwen voor SmaakGids, een receptenapp — specifiek een custom aanbevelingsengine getraind op zijn eigen recepten- en voorkeursdata. Het was een oprecht interessant engineeringprobleem, en Stef, technisch capabel, dook er serieus in: trainingsgegevens verzamelen, modelarchitecturen testen, itereren op nauwkeurigheid.
+Stef Oostzaan, oprichter in Oostzaan, nam zich voor AI-software te bouwen voor SmaakGids, een receptenapp - specifiek een custom aanbevelingsengine getraind op zijn eigen recepten- en voorkeursdata. Het was een oprecht interessant engineeringprobleem, en Stef, technisch capabel, dook er serieus in: trainingsgegevens verzamelen, modelarchitecturen testen, itereren op nauwkeurigheid.
 
-Wat de gebruikers van SmaakGids daadwerkelijk nodig bleken te hebben, was veel eenvoudiger: software die een bestaande, kant-en-klare aanbevelings-API goed gebruikte, gevoed met schone gegevens over wat mensen kookten en lekker vonden, en verpakt in een oprecht goed ontworpen interface voor het doorbladeren van suggesties. Een kant-en-klaar model, gevoed met goede input, leverde aanbevelingen op die gebruikers net zo bevredigend vonden als alles waar het custom model naartoe werkte — omdat het lastige deel dat gebruikers daadwerkelijk voelden niet de verfijning van het model was, maar of de suggesties relevant aanvoelden en de app makkelijk in gebruik was. De omweg via het custom model kostte Stef ruwweg twee maanden die hij niet nodig had, achter marginale nauwkeurigheidswinsten aan die niemand buiten de trainingsdata ooit zou opmerken.
+Wat de gebruikers van SmaakGids daadwerkelijk nodig bleken te hebben, was veel eenvoudiger: software die een bestaande, kant-en-klare aanbevelings-API goed gebruikte, gevoed met schone gegevens over wat mensen kookten en lekker vonden, en verpakt in een oprecht goed ontworpen interface voor het doorbladeren van suggesties. Een kant-en-klaar model, gevoed met goede input, leverde aanbevelingen op die gebruikers net zo bevredigend vonden als alles waar het custom model naartoe werkte - omdat het lastige deel dat gebruikers daadwerkelijk voelden niet de verfijning van het model was, maar of de suggesties relevant aanvoelden en de app makkelijk in gebruik was. De omweg via het custom model kostte Stef ruwweg twee maanden die hij niet nodig had, achter marginale nauwkeurigheidswinsten aan die niemand buiten de trainingsdata ooit zou opmerken.
 
 Het team van LaunchStudio, ondersteund door Manifera, hielp Stef het custom model uit te faseren, SmaakGids te bedraden op een gevestigde aanbevelings-API, en de vrijgekomen engineeringtijd om te leiden naar de datapijplijn en interfacepolish die de gebruikerstevredenheid daadwerkelijk beïnvloedden.
 
 **Resultaat:** SmaakGids bracht zijn aanbevelingsfunctie uit in minder dan twee weken na de omschakeling, met gebruikersbetrokkenheid die overeenkwam met wat de custom-modelinspanning twee maanden lang had nagejaagd.
 
 > *"Ik was zo gefocust op het bouwen van AI-software dat ik nooit stilstond bij de vraag of software die AI gewoon goed gebruikte al genoeg zou zijn. Dat was het."*
-> — **Stef Oostzaan, oprichter, SmaakGids (Oostzaan)**
+> - **Stef Oostzaan, oprichter, SmaakGids (Oostzaan)**
 
-**Kosten en tijdlijn:** € 1.200 (API-integratie, datapijplijn en interfacewerk) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (API-integratie, datapijplijn en interfacewerk) - voltooid in 8 werkdagen.
 
 ---
 

@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Every founder running a live product without internal tools ends up in the same place: a database console open in one tab, a customer's support email in another, and a hand-written query about to modify a row in production. It works, in the sense that the customer's problem gets solved. It also means your most destructive capability is available at all times, with no confirmation, no record of what you changed, and no way to undo a query that omitted a `WHERE` clause.
 
-The opposite error is equally common. Told that an admin panel is necessary, founders build one — user management, filters, permissions, dashboards, exports — and spend two weeks on software no customer will ever see, before launch, while the actual product waits. Both mistakes come from treating this as all-or-nothing. What you need at launch is small, specific, and mostly determined by which support requests you will actually receive.
+The opposite error is equally common. Told that an admin panel is necessary, founders build one - user management, filters, permissions, dashboards, exports - and spend two weeks on software no customer will ever see, before launch, while the actual product waits. Both mistakes come from treating this as all-or-nothing. What you need at launch is small, specific, and mostly determined by which support requests you will actually receive.
 
 ## Why the Database Console Is the Wrong Tool
 
@@ -30,9 +30,9 @@ It is not that direct queries are inherently bad. It is that using them as your 
 
 **No record.** Nothing shows that you changed a customer's plan on a Tuesday, what it was before, or why. When the customer disputes it three weeks later, there is nothing to check.
 
-**No constraints.** An update intended for one row can affect every row. This is not a hypothetical risk — an omitted condition on a production table is among the most common serious incidents in small companies, and it usually happens to someone tired and in a hurry.
+**No constraints.** An update intended for one row can affect every row. This is not a hypothetical risk - an omitted condition on a production table is among the most common serious incidents in small companies, and it usually happens to someone tired and in a hurry.
 
-**No delegation.** The moment you have a second person handling support, you either give them full database access — which is a genuine security problem and something enterprise customers will ask about — or you remain the only person who can resolve anything.
+**No delegation.** The moment you have a second person handling support, you either give them full database access - which is a genuine security problem and something enterprise customers will ask about - or you remain the only person who can resolve anything.
 
 **Bypassed logic.** Changing a subscription row directly does not tell your payment provider, send the confirmation email, or update whatever else depends on it. The database says one thing and the rest of the system says another, and reconciling that later is worse than the original problem.
 
@@ -50,9 +50,9 @@ The useful question is not "what should an admin panel do" but "what will I be a
 
 **Resend a transactional email.** Receipts, invitations, and confirmations that did not arrive. Trivial to build, and it answers a support request that otherwise requires either a database change or an apology.
 
-**See what a customer's account looks like.** Not necessarily impersonation — often a read-only view of their key records is enough to diagnose "the dashboard is empty" without entering their account at all.
+**See what a customer's account looks like.** Not necessarily impersonation - often a read-only view of their key records is enough to diagnose "the dashboard is empty" without entering their account at all.
 
-That list is a few days of work, not weeks. Everything beyond it — bulk operations, revenue dashboards, granular internal permissions, custom reporting — should wait until you have asked for it twice.
+That list is a few days of work, not weeks. Everything beyond it - bulk operations, revenue dashboards, granular internal permissions, custom reporting - should wait until you have asked for it twice.
 
 ## The Rules That Keep an Admin Panel From Becoming the Risk
 
@@ -68,7 +68,7 @@ An admin tool concentrates power, which makes a handful of rules non-negotiable 
 
 **Read access is separated from write access.** Most support work needs looking, not changing. A support role that can see but not modify covers most requests and dramatically reduces what a mistake or a compromised account can do.
 
-And the rule that most often fails in AI-generated products: **the admin panel must be protected on the server.** A route hidden from the navigation, or an interface that checks a role before rendering, is not access control. If the underlying endpoints do not verify the role themselves, the panel is reachable by anyone who finds the URL — and admin endpoints are exactly what an automated scanner looks for. This is a specific, frequent finding when AI-built products are reviewed before launch. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds internal tooling with server-enforced roles, audit logging, and separated read and write access. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
+And the rule that most often fails in AI-generated products: **the admin panel must be protected on the server.** A route hidden from the navigation, or an interface that checks a role before rendering, is not access control. If the underlying endpoints do not verify the role themselves, the panel is reachable by anyone who finds the URL - and admin endpoints are exactly what an automated scanner looks for. This is a specific, frequent finding when AI-built products are reviewed before launch. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds internal tooling with server-enforced roles, audit logging, and separated read and write access. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
 ## Impersonation, and Doing It Honestly
 
@@ -82,7 +82,7 @@ The cheaper alternative worth considering first: a read-only diagnostic view sho
 
 Three routes, and the right one depends on what your product is built on.
 
-**Use what your platform gives you.** If you are on Supabase, Firebase, or similar, the built-in table view is adequate for looking things up in the first weeks. It is not adequate as a support tool long-term — no logging, no constraints, no delegation — but it is a legitimate starting point.
+**Use what your platform gives you.** If you are on Supabase, Firebase, or similar, the built-in table view is adequate for looking things up in the first weeks. It is not adequate as a support tool long-term - no logging, no constraints, no delegation - but it is a legitimate starting point.
 
 **Use an admin tool builder.** Retool, Forest Admin, and similar products connect to your database and produce an internal interface quickly. This is often the right answer, provided you configure access properly and remember that these tools connect with broad database privileges, which is itself something to control.
 
@@ -103,7 +103,7 @@ The recovery took eleven hours: reconstructing the correct plan for each account
 **Result:** a minimal admin panel covering the six standard operations, with all actions routed through the product's own logic, full audit logging, and a support role limited to read plus password resets. Direct database access was restricted to genuine emergencies with a written procedure requiring a fresh backup first.
 
 > "It took four seconds to run and eleven hours to undo. I had been telling myself for two months that building the admin panel could wait."
-> — **Joost Nieuwenhuis, Founder, Wachtlijst**
+> - **Joost Nieuwenhuis, Founder, Wachtlijst**
 
 **Cost & Timeline:** admin panel and access controls delivered in 4 business days.
 
@@ -111,7 +111,7 @@ The recovery took eleven hours: reconstructing the correct plan for each account
 
 ### Do I need an admin panel before launch?
 
-You need the handful of operations support will actually require — finding a customer, extending a trial, resetting access, changing a plan, resending an email, and viewing an account's state. That is a few days of work, not a full internal system.
+You need the handful of operations support will actually require - finding a customer, extending a trial, resetting access, changing a plan, resending an email, and viewing an account's state. That is a few days of work, not a full internal system.
 
 ### Is using the database console for support acceptable early on?
 

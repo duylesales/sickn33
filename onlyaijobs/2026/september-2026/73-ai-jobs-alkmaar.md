@@ -33,7 +33,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Alkmaar is a city of roughly 110,000 people in North Holland, about forty minutes north of Amsterdam. Its technical profile rests on energy — grid operations, an energy innovation cluster and hydrogen activity — plus the regional public and healthcare employers that any city of this size supports. The honest framing of this market is that it offers one genuinely interesting technical domain and a commute decision that candidates should make deliberately rather than by default.
+Alkmaar is a city of roughly 110,000 people in North Holland, about forty minutes north of Amsterdam. Its technical profile rests on energy - grid operations, an energy innovation cluster and hydrogen activity - plus the regional public and healthcare employers that any city of this size supports. The honest framing of this market is that it offers one genuinely interesting technical domain and a commute decision that candidates should make deliberately rather than by default.
 
 ## Grid Data Work Is Currently One of the Most Constrained Problems in the Country
 
@@ -43,7 +43,7 @@ Connection capacity in large parts of the country is fully allocated, meaning ne
 
 **Load forecasting at network segment level.** Predicting demand and generation on specific parts of the network, at timescales from minutes to years, where the historical patterns are actively breaking because of electrification of heating and transport plus distributed solar generation.
 
-**Congestion management.** Identifying where and when the network will be constrained, and coordinating flexibility — demand that can shift, storage that can absorb, generation that can curtail — to stay within limits. This is a coordination problem across many parties with their own objectives.
+**Congestion management.** Identifying where and when the network will be constrained, and coordinating flexibility - demand that can shift, storage that can absorb, generation that can curtail - to stay within limits. This is a coordination problem across many parties with their own objectives.
 
 **Distributed generation and bidirectional flow.** A network designed for one-way flow from large plants to consumers now carries power in both directions from millions of small sources. Voltage management and protection coordination under these conditions are engineering problems with substantial data content.
 
@@ -102,7 +102,7 @@ Smart meters record household electricity consumption at fine time resolution. F
 
 Grid operators need aggregate consumption patterns to plan and operate networks. They do not need, and generally do not want, household behavioural profiles. But the data that serves the first purpose enables the second, and the boundary is not obvious. Aggregating over a neighbourhood protects individuals; aggregating too coarsely destroys the local detail that congestion management requires. The trade-off is real and must be resolved concretely rather than gestured at.
 
-This puts engineers in this domain in regular contact with questions about what may legitimately be inferred, at what granularity data may be retained and shared, and how to demonstrate that a published or shared dataset does not permit re-identification. Candidates who find that intersection interesting — where a technical decision carries a clear ethical dimension and a regulatory consequence — will find the work more engaging than a pure optimisation brief. Those who want the ethics handled by someone else should know that in this domain it frequently is not.
+This puts engineers in this domain in regular contact with questions about what may legitimately be inferred, at what granularity data may be retained and shared, and how to demonstrate that a published or shared dataset does not permit re-identification. Candidates who find that intersection interesting - where a technical decision carries a clear ethical dimension and a regulatory consequence - will find the work more engaging than a pure optimisation brief. Those who want the ethics handled by someone else should know that in this domain it frequently is not.
 
 There is also a practical career point. Privacy-preserving analysis is becoming a required competence across sectors, and grid meter data is one of the clearer places to acquire it on real systems at genuine scale.
 
@@ -124,7 +124,7 @@ Amsterdam at thirty-five to forty-five minutes is genuinely commutable, and many
 
 But the commute is real. Forty minutes each way, on a route that is busy at peak times, is roughly ninety minutes of your day. Over a year that is substantial, and candidates who treat it as costless usually revise that view within six months. The honest calculation is whether the housing cost difference and the quieter environment compensate you for that time, and the answer depends on your circumstances rather than on any general principle.
 
-Two observations that help. Hybrid arrangements change the calculation dramatically — a two-day office week makes a forty-minute commute far more tolerable than a five-day one, and most Amsterdam employers now offer this. And the train is productive time if you use it, which some people genuinely do and others genuinely do not, and it is worth being honest with yourself about which you are.
+Two observations that help. Hybrid arrangements change the calculation dramatically - a two-day office week makes a forty-minute commute far more tolerable than a five-day one, and most Amsterdam employers now offer this. And the train is productive time if you use it, which some people genuinely do and others genuinely do not, and it is worth being honest with yourself about which you are.
 
 ## What Makes Energy Data Work Distinctive as a Career
 
@@ -142,7 +142,7 @@ There is one more thing worth saying plainly: this work has a public purpose tha
 
 The transferable skills are more standard than candidates assume, and the domain knowledge required is learnable.
 
-Time series forecasting, optimisation under constraints, anomaly detection on sensor data and spatial analysis are all core energy data skills, and all are acquired in other sectors. What you will lack initially is understanding of how the physical system behaves — why voltage matters, what a transformer does, why reactive power exists — and of how the market and regulatory structures work.
+Time series forecasting, optimisation under constraints, anomaly detection on sensor data and spatial analysis are all core energy data skills, and all are acquired in other sectors. What you will lack initially is understanding of how the physical system behaves - why voltage matters, what a transformer does, why reactive power exists - and of how the market and regulatory structures work.
 
 Both are learnable, and utilities generally expect to teach them. What they screen for is whether you take the physical system seriously. A candidate who treats grid data as an abstract time series problem, without curiosity about what generates it, interviews poorly. One who has read enough to ask an intelligent question about how flexibility is actually procured interviews well, even with no sector background.
 
@@ -153,7 +153,7 @@ The practical preparation is modest: a few hours understanding the structure of 
 - Dutch grid capacity scarcity has made grid data work unusually consequential, with a direct link between better forecasting and connections that can otherwise be refused.
 - The technical content spans segment-level load forecasting, congestion management across many parties, bidirectional flow, asset prioritisation and population-scale meter data.
 - The hydrogen and storage layer adds stochastic optimisation problems with immediate financial stakes.
-- Amsterdam at thirty-five to forty-five minutes makes this market non-isolating, unlike several other regional options — but ninety minutes of daily travel is a real cost to weigh explicitly.
+- Amsterdam at thirty-five to forty-five minutes makes this market non-isolating, unlike several other regional options - but ninety minutes of daily travel is a real cost to weigh explicitly.
 - Regulation shapes the work directly, timescales span seconds to decades, and the sector is growing faster than it is recruiting.
 - Entry without energy experience is realistic; utilities expect to teach domain knowledge but screen for genuine curiosity about the physical system.
 

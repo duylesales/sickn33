@@ -43,7 +43,7 @@ This analysis maps where the work actually sits, what distinguishes each area te
 
 **Semiconductor metrology and computational imaging.** Concentrated in Veldhoven and Eindhoven. Inferring physical structure at scales below the wavelength of the light used to observe it. Physics-based forward models, inverse problems, calibrated uncertainty. The most mathematically demanding cluster.
 
-**Medical and biomedical imaging.** Concentrated in the university medical centres — Utrecht, Nijmegen, Amsterdam, Leiden, Rotterdam, Groningen, Maastricht — plus a layer of medical device and software companies. Radiology, pathology, ophthalmology, surgical guidance. Regulated, with clinical validation requirements and expert disagreement in the labels.
+**Medical and biomedical imaging.** Concentrated in the university medical centres - Utrecht, Nijmegen, Amsterdam, Leiden, Rotterdam, Groningen, Maastricht - plus a layer of medical device and software companies. Radiology, pathology, ophthalmology, surgical guidance. Regulated, with clinical validation requirements and expert disagreement in the labels.
 
 **Agricultural and food vision.** Concentrated in Wageningen, Westland, Venlo, Lelystad and the seed cluster near Hoorn. Non-standard imagery including hyperspectral and multispectral, biological variability, occlusion by foliage, tiny expensive datasets, and outdoor lighting you do not control.
 
@@ -58,10 +58,10 @@ The differences matter more than the similarities, and this table is the practic
 | | Data volume | Label quality | Latency | Failure cost asymmetry | Dominant difficulty |
 |---|---|---|---|---|---|
 | **Industrial inspection** | Moderate, growable | Good, operator-verified | Hard real-time | Severe on safety parts | Reliable imaging under factory conditions |
-| **Semiconductor metrology** | Very small | Physically derived | Batch, not real-time | Extreme — scrapped wafers | Inverse problem, physics modelling |
+| **Semiconductor metrology** | Very small | Physically derived | Batch, not real-time | Extreme - scrapped wafers | Inverse problem, physics modelling |
 | **Medical imaging** | Moderate, hard to access | Expert, with disagreement | Usually not real-time | Severe both directions | Validation and regulatory approval |
 | **Agricultural vision** | Very small, seasonal | Weak, delayed | Field-rate | Moderate | Non-standard imagery, biological variation |
-| **Automotive perception** | Very large | Mixed, expensive | Hard real-time, embedded | Extreme — safety | Rare-scenario tail, validation at scale |
+| **Automotive perception** | Very large | Mixed, expensive | Hard real-time, embedded | Extreme - safety | Rare-scenario tail, validation at scale |
 | **Remote sensing** | Large | Register or survey-derived | Not real-time | Moderate, administrative | Multi-scale reconciliation, temporal mismatch |
 
 Read that table as a map of what you would need to learn to move between clusters. A candidate strong in industrial inspection moving to medical imaging must learn regulatory validation and how to handle labels experts disagree about. A candidate moving from automotive to agriculture must adjust from abundant data to almost none. Neither transition is impossible; both take months.
@@ -92,7 +92,7 @@ Beyond the domain split, there is a functional split that candidates should unde
 
 **The systems and evaluation role.** Building the pipeline that gets images in, the infrastructure that stores and indexes them, the tooling that lets you replay a model against historical data, the harness that measures whether a change helped, and the monitoring that detects degradation after deployment.
 
-The second role is consistently under-supplied relative to demand, in every cluster. Teams frequently have more capacity to build models than to determine whether those models are any good, and that bottleneck limits everything downstream. An engineer who can relieve it is valuable, visible and — because the work is less fashionable — facing far less competition.
+The second role is consistently under-supplied relative to demand, in every cluster. Teams frequently have more capacity to build models than to determine whether those models are any good, and that bottleneck limits everything downstream. An engineer who can relieve it is valuable, visible and - because the work is less fashionable - facing far less competition.
 
 This is also the most reliable entry route into any of the six clusters for a candidate whose background is software or data engineering rather than vision. You enter through infrastructure, spend your time close to the data and the evaluation problems, and move toward modelling from a position of understanding the domain rather than guessing at it.
 
@@ -116,7 +116,7 @@ Being useful requires saying where the roles actually are, not only where the in
 
 Candidates overestimate the transferability of model architecture knowledge and underestimate the transferability of everything else.
 
-**Transfers well.** Understanding of imaging physics — how sensors work, what lighting does, why an image looks as it does. Calibration and geometry. Evaluation design, especially when classes are imbalanced and costs asymmetric. Data pipeline engineering at volume. Working with domain experts who have authority over the output.
+**Transfers well.** Understanding of imaging physics - how sensors work, what lighting does, why an image looks as it does. Calibration and geometry. Evaluation design, especially when classes are imbalanced and costs asymmetric. Data pipeline engineering at volume. Working with domain experts who have authority over the output.
 
 **Transfers poorly.** Familiarity with specific architectures, which is both easily acquired and rapidly superseded. Assumptions about data abundance. Habits formed on clean benchmark datasets. Any expectation that labels are correct.
 
@@ -126,7 +126,7 @@ Candidates overestimate the transferability of model architecture knowledge and 
 
 Practical preparation differs by target, and candidates who prepare generically underperform.
 
-**Industrial inspection** wants evidence you understand physical constraints — lighting, mechanics, line speed, cleaning — and that you can work with production staff. Expect questions about how you would handle a false rejection that a line operator disputes.
+**Industrial inspection** wants evidence you understand physical constraints - lighting, mechanics, line speed, cleaning - and that you can work with production staff. Expect questions about how you would handle a false rejection that a line operator disputes.
 
 **Semiconductor** wants quantitative depth. Expect probability, linear algebra, optimisation and physics. Architecture familiarity is nearly irrelevant.
 
@@ -136,7 +136,7 @@ Practical preparation differs by target, and candidates who prepare generically 
 
 **Automotive** wants safety-critical awareness, depth in one modality, and software discipline. Expect to discuss failure modes and how you would detect field degradation.
 
-**Remote sensing** wants geospatial literacy — coordinate systems, resolution, temporal mismatch — which candidates without GIS background consistently underestimate.
+**Remote sensing** wants geospatial literacy - coordinate systems, resolution, temporal mismatch - which candidates without GIS background consistently underestimate.
 
 ## The Hardware Question Candidates Neglect
 
@@ -146,12 +146,12 @@ In industrial inspection, choosing and positioning a camera, selecting lighting,
 
 In semiconductor, agriculture, automotive and remote sensing the same logic applies in different forms. Sensor selection, calibration and physical setup are engineering decisions with large consequences for the downstream problem.
 
-Candidates from a pure software background often treat the image as given. Those who learn to treat it as a design variable become substantially more effective, and this is one of the more efficient investments available in this field — a working understanding of optics, illumination and sensor characteristics is acquirable in weeks and pays off indefinitely.
+Candidates from a pure software background often treat the image as given. Those who learn to treat it as a design variable become substantially more effective, and this is one of the more efficient investments available in this field - a working understanding of optics, illumination and sensor characteristics is acquirable in weeks and pays off indefinitely.
 
 ## Key Takeaways
 
 - Computer vision in the Netherlands splits into six clusters with almost nothing in common beyond using images: industrial inspection, semiconductor metrology, medical imaging, agricultural vision, automotive perception and remote sensing.
-- The differences that matter are data volume, label quality, latency requirements, failure cost asymmetry and dominant difficulty — not model architecture.
+- The differences that matter are data volume, label quality, latency requirements, failure cost asymmetry and dominant difficulty - not model architecture.
 - Industrial inspection has the most roles with the least competition; medical imaging has the most competition; agricultural vision has the best ratio of problem interest to applicant volume.
 - The most portable skill is determining whether a vision system actually works, which means evaluation design that reflects deployment conditions.
 - Architecture familiarity transfers poorly; imaging physics, calibration, evaluation design and working with domain experts transfer well.
@@ -172,13 +172,13 @@ Because the clusters differ in data volume, label quality, latency, failure cost
 Industrial inspection. Manufacturing companies across the country need vision capability and many have none, and the work is less publicly glamorous, so competition per role is thinner.
 
 ### (Scenario: candidate wanting interesting problems with less competition) Where is the best ratio?
-Agricultural and food vision. The problems are genuinely hard — hyperspectral imagery, biological variation, tiny seasonal datasets — but domain vocabulary hides the roles and candidates do not think of agriculture as technical.
+Agricultural and food vision. The problems are genuinely hard - hyperspectral imagery, biological variation, tiny seasonal datasets - but domain vocabulary hides the roles and candidates do not think of agriculture as technical.
 
 ### (Scenario: software engineer entering vision) What should I learn first?
 Optics, illumination and sensor characteristics. Improving the image often eliminates the modelling difficulty entirely, and a working understanding is acquirable in weeks while paying off indefinitely.
 
 ### (Scenario: candidate preparing for interviews) What is assessed most consistently across clusters?
-Whether you can establish that a system actually works — evaluation design reflecting deployment conditions, recognising dataset artefacts, and knowing which failure modes to look for.
+Whether you can establish that a system actually works - evaluation design reflecting deployment conditions, recognising dataset artefacts, and knowing which failure modes to look for.
 
 <script type="application/ld+json">
 {

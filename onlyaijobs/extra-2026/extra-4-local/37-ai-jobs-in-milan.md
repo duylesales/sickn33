@@ -81,7 +81,7 @@ Milan is Italy's financial, commercial and design capital. It hosts the Italian 
 
 ## Italian Employment Conditions
 
-Italian employment is shaped by national collective agreements (CCNL), which set pay scales, working hours, holidays and other conditions by sector — for example commerce, metalworking, banking or telecommunications. Salaries are typically expressed as gross annual amounts (RAL) divided into 13 or 14 monthly payments, depending on the agreement. Employees accrue a severance fund (TFR), paid when employment ends or transferred to a pension fund. Permanent contracts (contratto a tempo indeterminato) are standard for experienced roles. Many employers offer meal vouchers, supplementary health insurance and welfare benefits.
+Italian employment is shaped by national collective agreements (CCNL), which set pay scales, working hours, holidays and other conditions by sector - for example commerce, metalworking, banking or telecommunications. Salaries are typically expressed as gross annual amounts (RAL) divided into 13 or 14 monthly payments, depending on the agreement. Employees accrue a severance fund (TFR), paid when employment ends or transferred to a pension fund. Permanent contracts (contratto a tempo indeterminato) are standard for experienced roles. Many employers offer meal vouchers, supplementary health insurance and welfare benefits.
 
 Salaries in Milan are among the highest in Italy but are generally lower than in Northern European hubs. Italy has had a special tax regime for workers who move their tax residence to Italy ("impatriati"), which was significantly reformed in 2024 with reduced benefits and stricter conditions. Check current eligibility carefully with a tax adviser.
 
@@ -95,13 +95,13 @@ EU citizens can work freely in Italy and register their residence. Non-EU profes
 
 ## Living in Milan
 
-Milan is dynamic, international and well connected, with an extensive metro network, trams and high-speed trains to Turin, Venice, Florence, Rome and Switzerland. The city has transformed in recent decades, with new districts such as Porta Nuova and CityLife, and a thriving food, fashion and design scene. It is also Italy's most expensive city, especially for housing; rents have risen significantly. Many professionals live in neighbourhoods along metro lines or in towns connected by suburban rail. The Alps and the lakes — Como, Maggiore, Garda — are within easy reach for weekends.
+Milan is dynamic, international and well connected, with an extensive metro network, trams and high-speed trains to Turin, Venice, Florence, Rome and Switzerland. The city has transformed in recent decades, with new districts such as Porta Nuova and CityLife, and a thriving food, fashion and design scene. It is also Italy's most expensive city, especially for housing; rents have risen significantly. Many professionals live in neighbourhoods along metro lines or in towns connected by suburban rail. The Alps and the lakes - Como, Maggiore, Garda - are within easy reach for weekends.
 
 ## How OnlyAIJobs Fits a Milan Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go directly to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Milan you will find few or no local vacancies there today. Use Italian job portals, corporate career pages, university career services and your network as primary sources. OnlyAIJobs is useful for comparing Milan with the Netherlands — where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles — and as a method: in a metropolitan area where housing costs push people outward, searching by real commute matters. Milan employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Milan you will find few or no local vacancies there today. Use Italian job portals, corporate career pages, university career services and your network as primary sources. OnlyAIJobs is useful for comparing Milan with the Netherlands - where employers such as Mollie, Sendcloud, Accenture and Cegeka list AI roles - and as a method: in a metropolitan area where housing costs push people outward, searching by real commute matters. Milan employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## AI in Fashion and Luxury
 
@@ -122,7 +122,7 @@ Milan's banks and insurers are major employers of data scientists. Beyond classi
 
 ## Industrial AI in Lombardy
 
-Lombardy's manufacturing base — machinery, components, chemicals, pharmaceuticals, food and textiles — is increasingly adopting AI. Many companies are medium-sized, family-owned firms that are global leaders in niche markets. For data scientists, these companies offer projects such as predictive maintenance of machines they sell to customers worldwide, quality control with computer vision, optimisation of production parameters and smart features in industrial products. Italian and European support programmes for industrial digitalisation have encouraged investment. Roles in industrial AI often require Italian and a willingness to spend time on the factory floor, but they offer tangible impact and a strong engineering culture.
+Lombardy's manufacturing base - machinery, components, chemicals, pharmaceuticals, food and textiles - is increasingly adopting AI. Many companies are medium-sized, family-owned firms that are global leaders in niche markets. For data scientists, these companies offer projects such as predictive maintenance of machines they sell to customers worldwide, quality control with computer vision, optimisation of production parameters and smart features in industrial products. Italian and European support programmes for industrial digitalisation have encouraged investment. Roles in industrial AI often require Italian and a willingness to spend time on the factory floor, but they offer tangible impact and a strong engineering culture.
 
 ## Research Careers
 
@@ -162,7 +162,7 @@ Milan suits engineers who want corporate-scale AI in finance, fashion or industr
 
 An Italian data scientist working on pricing models for a London e-commerce company wants to move back to Italy. He receives an offer from a Milan fashion group to lead demand forecasting and inventory allocation across its stores and online channels.
 
-He compares his London salary with the Italian offer, checks his eligibility for the tax regime for relocating workers after the 2024 reform and compares rents in Milan with London. The Italian gross salary is lower, but his net position is closer than expected once taxes, housing and the value of benefits are included. He also appreciates working at the intersection of data science and a creative industry. He accepts and, after a year, says the role combines technical depth with business impact — though adjusting to more hierarchical decision-making took time.
+He compares his London salary with the Italian offer, checks his eligibility for the tax regime for relocating workers after the 2024 reform and compares rents in Milan with London. The Italian gross salary is lower, but his net position is closer than expected once taxes, housing and the value of benefits are included. He also appreciates working at the intersection of data science and a creative industry. He accepts and, after a year, says the role combines technical depth with business impact - though adjusting to more hierarchical decision-making took time.
 
 ## Key Takeaways
 

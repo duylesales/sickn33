@@ -1,6 +1,6 @@
-🔥 Elena Vasquez built DataPulse AI — a data-enrichment platform in **Cursor** — and tried a DIY migration from flat-rate to usage-based billing in a single sprint. 🧠
+🔥 Elena Vasquez built DataPulse AI - a data-enrichment platform in **Cursor** - and tried a DIY migration from flat-rate to usage-based billing in a single sprint. 🧠
 
-The first billing cycle after cutover, a retry bug double-counted usage for roughly 60 customers — eleven support tickets disputing charges landed within a day.
+The first billing cycle after cutover, a retry bug double-counted usage for roughly 60 customers - eleven support tickets disputing charges landed within a day.
 
 ❌ No idempotency keys, so retried requests silently billed customers twice
 ❌ No reconciliation job comparing reported usage against what was actually consumed
@@ -12,7 +12,7 @@ The first billing cycle after cutover, a retry bug double-counted usage for roug
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-DataPulse AI's usage-based billing went live with zero billing disputes in its first full cycle. (€2,600 (Launch & Grow Package) — 8 business days.) 🚀
+DataPulse AI's usage-based billing went live with zero billing disputes in its first full cycle. (€2,600 (Launch & Grow Package) - 8 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/usage-based-billing-migration-diy-vs-launchstudio
 

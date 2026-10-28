@@ -10,7 +10,7 @@ Vraag tien softwarebouwers of ze aan de AVG voldoen en negen zeggen direct ja. V
 ✅ Vraag om inzage in de daadwerkelijke verwerkersovereenkomst die zij hanteren, niet om een samenvatting
 ✅ Vraag expliciet naar de hostingprovider en de exacte datacenterregio voor zowel data als back-ups
 ✅ Vraag of ze eerder voor uw sector hebben gebouwd en met welke specifieke wetgeving ze rekening hielden
-✅ Stel deze compliance-vragen schriftelijk — ontwijkende antwoorden vallen per mail direct door de mand
+✅ Stel deze compliance-vragen schriftelijk - ontwijkende antwoorden vallen per mail direct door de mand
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software engineering, werken we standaard met een gedocumenteerde verwerkersovereenkomst en gegarandeerde EU-gehoste infrastructuur. 🛡️
 

@@ -90,7 +90,7 @@ Portuguese is essential for daily life and for many local employers. Internation
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Braga you will find few or no local vacancies there today. Use Portuguese job portals, UMinho's career services, research centre announcements and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles — and as a model for searching by category and real commute. Braga employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Braga you will find few or no local vacancies there today. Use Portuguese job portals, UMinho's career services, research centre announcements and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles - and as a model for searching by category and real commute. Braga employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Automotive AI: What the Work Involves
 
@@ -130,7 +130,7 @@ Braga combines a historic centre with baroque churches, a young student populati
 
 ## Braga or Porto?
 
-Many graduates in northern Portugal weigh Braga against Porto. Porto has a larger job market, more international companies and a larger startup scene, but higher housing costs. Braga offers strong automotive R&D, close university–industry links and lower living costs. Because the two cities are well connected, some graduates live in Braga and work in Porto, or vice versa. Comparing concrete offers — the team, mentoring, pay and commute — is more useful than choosing a city in the abstract.
+Many graduates in northern Portugal weigh Braga against Porto. Porto has a larger job market, more international companies and a larger startup scene, but higher housing costs. Braga offers strong automotive R&D, close university–industry links and lower living costs. Because the two cities are well connected, some graduates live in Braga and work in Porto, or vice versa. Comparing concrete offers - the team, mentoring, pay and commute - is more useful than choosing a city in the abstract.
 
 ## Your First Two Years
 

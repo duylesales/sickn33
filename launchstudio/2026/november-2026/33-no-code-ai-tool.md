@@ -48,7 +48,7 @@ In a No Code AI software platform, you do not own the database. You are renting 
 No Code platforms execute your application's logic using their shared servers. If your AI application requires executing a complex Python script to process a 50MB CSV file, a No Code platform will typically time out or crash, because they enforce strict "Work Unit" limits to prevent one user from hogging server resources. You are inherently throttled by the platform's pricing tiers, which scale punishingly fast as your compute needs grow.
 
 ### 3. The Valuation Penalty
-When you attempt to sell a SaaS business, acquiring companies (Private Equity or competitors) perform technical due diligence. If your platform is built on a proprietary No Code AI tool, acquirers apply a massive "Valuation Penalty"—often reducing the purchase price by 30% to 50%. Why? Because they know they do not actually own the underlying intellectual property (the code), and they know they will eventually have to spend millions rewriting it from scratch to scale it.
+When you attempt to sell a SaaS business, acquiring companies (Private Equity or competitors) perform technical due diligence. If your platform is built on a proprietary No Code AI tool, acquirers apply a massive "Valuation Penalty" - often reducing the purchase price by 30% to 50%. Why? Because they know they do not actually own the underlying intellectual property (the code), and they know they will eventually have to spend millions rewriting it from scratch to scale it.
 
 ## The Generated Code Advantage
 
@@ -89,9 +89,9 @@ In 14 business days, LaunchStudio deployed the new DockMaster. They utilized a d
 **Result:** DockMaster's hosting costs dropped from €2,500/month on the No Code platform to a predictable €150/month on AWS. The application speed was instantaneous. Owning the code allowed Elena to integrate the Spanish freight API seamlessly. She recently closed a €1.2M seed round, passing technical due diligence flawlessly because she owned her intellectual property.
 
 > *"The No Code AI tool was great for building a toy, but it almost bankrupted my actual business. LaunchStudio gave me the freedom to own my code and the engineering power to scale it. I went from renting a black box to owning a software company."*
-> — **Elena Garcia, Founder, DockMaster (Madrid)**
+> - **Elena Garcia, Founder, DockMaster (Madrid)**
 
-**Cost & Timeline:** €6,800 (Launch & Grow Package with Architecture Rewrite Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €6,800 (Launch & Grow Package with Architecture Rewrite Add-on) - production-ready and deployed in 14 business days.
 
 ---
 

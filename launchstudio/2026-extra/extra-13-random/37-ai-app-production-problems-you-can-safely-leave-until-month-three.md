@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App Production Problems You Can Safely Leave Until Month Three",
-  "description": "Not every AI app production problem needs fixing before launch. This guide separates what must be done before the first customer, what can wait until month three, and what can wait longer — with the conditions under which each postponement is safe.",
+  "description": "Not every AI app production problem needs fixing before launch. This guide separates what must be done before the first customer, what can wait until month three, and what can wait longer - with the conditions under which each postponement is safe.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-06",
@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Most articles about launching AI-built apps — including many of ours — list everything that can go wrong. That is useful, and it can also be paralysing. A founder with a limited budget reads a list of twenty problems and concludes they cannot launch until all twenty are solved. They can. Some AI app production problems genuinely must be fixed before the first customer. Others can wait until you have revenue, usage data and a clearer picture — as long as you postpone them deliberately.
+Most articles about launching AI-built apps - including many of ours - list everything that can go wrong. That is useful, and it can also be paralysing. A founder with a limited budget reads a list of twenty problems and concludes they cannot launch until all twenty are solved. They can. Some AI app production problems genuinely must be fixed before the first customer. Others can wait until you have revenue, usage data and a clearer picture - as long as you postpone them deliberately.
 
 This article sorts them.
 
@@ -30,7 +30,7 @@ This article sorts them.
 A problem is safe to postpone when three things are true:
 
 - **You will notice it** before it causes serious harm.
-- **Its damage is reversible** — lost time or a little revenue, not lost data or leaked information.
+- **Its damage is reversible** - lost time or a little revenue, not lost data or leaked information.
 - **Fixing it later costs about the same** as fixing it now.
 
 A problem is not safe to postpone when it fails silently, causes irreversible harm, or becomes much more expensive once real data and customers accumulate.
@@ -63,7 +63,7 @@ These are real problems, but in the first months they are visible, reversible or
 
 **Email polish.** Branded templates, localisation and preference centres can wait, provided the basics (authenticated sending domain, working password reset) are in place.
 
-**Rate limiting beyond login.** Rate limits on login and signup matter from day one; limits on other endpoints can come once you see real traffic patterns — unless those endpoints cost money per call, such as AI features.
+**Rate limiting beyond login.** Rate limits on login and signup matter from day one; limits on other endpoints can come once you see real traffic patterns - unless those endpoints cost money per call, such as AI features.
 
 ## Safe to Leave Until Month Six or Later
 
@@ -81,10 +81,10 @@ These are real problems, but in the first months they are visible, reversible or
 
 Postponement assumptions break in some situations. Move items forward if:
 
-- **You handle sensitive data** — health, finances, children, identity documents. Stricter measures apply from day one.
-- **You have a predictable spike** — a TV appearance, a large partner launch, an on-sale. Performance becomes urgent before it, not after.
-- **You sell to businesses** — B2B customers may require logging, admin controls or specific security documentation at contract signing.
-- **You use paid AI APIs** — rate limits and cost controls are needed immediately, because abuse translates directly into bills.
+- **You handle sensitive data** - health, finances, children, identity documents. Stricter measures apply from day one.
+- **You have a predictable spike** - a TV appearance, a large partner launch, an on-sale. Performance becomes urgent before it, not after.
+- **You sell to businesses** - B2B customers may require logging, admin controls or specific security documentation at contract signing.
+- **You use paid AI APIs** - rate limits and cost controls are needed immediately, because abuse translates directly into bills.
 
 ## Write Down What You Postponed
 
@@ -101,9 +101,9 @@ Review it monthly. It becomes your technical roadmap, and it is a strong signal 
 
 Deciding which AI app production problems can wait becomes easier with a simple score. For each item, rate three factors from 1 to 3:
 
-- **Harm** — 1: inconvenience; 2: lost revenue or time; 3: harm to users' data, money or safety.
-- **Detectability** — 1: you would notice immediately; 2: you might notice within days; 3: silent until someone else notices.
-- **Cost growth** — 1: same cost later; 2: somewhat more expensive later; 3: much more expensive once data or users grow.
+- **Harm** - 1: inconvenience; 2: lost revenue or time; 3: harm to users' data, money or safety.
+- **Detectability** - 1: you would notice immediately; 2: you might notice within days; 3: silent until someone else notices.
+- **Cost growth** - 1: same cost later; 2: somewhat more expensive later; 3: much more expensive once data or users grow.
 
 Multiply the three. Items scoring 12 or higher belong before launch; 6 to 9 in the first months; below 6 can wait until data shows they matter.
 
@@ -128,28 +128,28 @@ A postponement register turns deferred work into a managed list. For each item r
 
 Some events should immediately reshuffle the list:
 
-- **A press mention or campaign** — performance, email capacity and monitoring move forward.
-- **The first business customer** — audit logs, SSO, admin tooling and a security overview may be required.
-- **Handling new data types** — adding health, financial or children's data changes the non-negotiables.
-- **Adding AI features that call paid APIs** — rate limits and cost controls become urgent.
-- **A near-miss** — an error that almost caused harm is a signal to fix the underlying weakness now.
-- **Team changes** — a new developer or a departing co-founder makes documentation and access reviews urgent.
+- **A press mention or campaign** - performance, email capacity and monitoring move forward.
+- **The first business customer** - audit logs, SSO, admin tooling and a security overview may be required.
+- **Handling new data types** - adding health, financial or children's data changes the non-negotiables.
+- **Adding AI features that call paid APIs** - rate limits and cost controls become urgent.
+- **A near-miss** - an error that almost caused harm is a signal to fix the underlying weakness now.
+- **Team changes** - a new developer or a departing co-founder makes documentation and access reviews urgent.
 
 ## What "Month Three" Looks Like in Practice
 
-For many founders, month three is when postponed items return, with the benefit of real data. Typical month-three work includes indexing and paginating the two or three slowest pages identified by monitoring, building a basic admin view for the most frequent support questions, extending tests to the flows that broke in the first months, tuning alerts that fire too often, and replacing default email templates with branded ones. Done then, each item is informed by evidence rather than guesswork — which is exactly why postponing it was the right call.
+For many founders, month three is when postponed items return, with the benefit of real data. Typical month-three work includes indexing and paginating the two or three slowest pages identified by monitoring, building a basic admin view for the most frequent support questions, extending tests to the flows that broke in the first months, tuning alerts that fire too often, and replacing default email templates with branded ones. Done then, each item is informed by evidence rather than guesswork - which is exactly why postponing it was the right call.
 
 ## Avoiding the Permanent "Later"
 
-The risk of postponement is that "later" becomes "never." Two safeguards help: attaching a trigger or date to every item, and reserving a fixed share of development time — for example one day in ten — for items from the register. This keeps the list shrinking even while new features are built, and prevents the slow accumulation that eventually forces an expensive, disruptive clean-up.
+The risk of postponement is that "later" becomes "never." Two safeguards help: attaching a trigger or date to every item, and reserving a fixed share of development time - for example one day in ten - for items from the register. This keeps the list shrinking even while new features are built, and prevents the slow accumulation that eventually forces an expensive, disruptive clean-up.
 
 ## When Budget Forces Harder Choices
 
-If even the non-negotiables do not fit your budget, reduce scope rather than safety. Launch with fewer features, a smaller user group, no payments yet or manual processes behind the scenes, and keep the protections intact. A smaller launch that is safe teaches you as much as a larger one — and does not put your early users at risk.
+If even the non-negotiables do not fit your budget, reduce scope rather than safety. Launch with fewer features, a smaller user group, no payments yet or manual processes behind the scenes, and keep the protections intact. A smaller launch that is safe teaches you as much as a larger one - and does not put your early users at risk.
 
 ## Communicating Postponed Work to Users
 
-Postponing internal improvements is invisible to users; postponing features they expect is not. Be transparent where it matters: a short roadmap page, a note in the app about upcoming features, or an honest answer in support when someone asks. Users forgive missing features far more readily than they forgive broken promises. What they should never notice is postponed safety — which is why the non-negotiables stay non-negotiable.
+Postponing internal improvements is invisible to users; postponing features they expect is not. Be transparent where it matters: a short roadmap page, a note in the app about upcoming features, or an honest answer in support when someone asks. Users forgive missing features far more readily than they forgive broken promises. What they should never notice is postponed safety - which is why the non-negotiables stay non-negotiable.
 
 ## A Month-by-Month Example
 
@@ -157,7 +157,7 @@ For a typical small SaaS, the first quarter after launch might look like this. M
 
 ## What Engineers Look for When They Help You Sort
 
-When LaunchStudio sorts a founder's list, the conversation always returns to the same three questions: could this hurt a user, would anyone notice, and does it get harder to fix later? Items that answer "yes, no, yes" go first. Items that answer "no, yes, no" can wait with a clear conscience. Most founders find their list shrinks by half once it is viewed through these questions — and the remaining half is far more affordable than the original fear suggested.
+When LaunchStudio sorts a founder's list, the conversation always returns to the same three questions: could this hurt a user, would anyone notice, and does it get harder to fix later? Items that answer "yes, no, yes" go first. Items that answer "no, yes, no" can wait with a clear conscience. Most founders find their list shrinks by half once it is viewed through these questions - and the remaining half is far more affordable than the original fear suggested.
 
 ## The Short Rule
 
@@ -175,18 +175,18 @@ To see what the non-negotiables would cost for your app, [try the price calculat
 
 ### An AI-Native Founder in Action: A Kids' Activities Platform That Launched With a List
 
-Hanna de Boer, a mother of three and former event planner in Harderwijk, built Stoepkrijt in Lovable: a platform where local organisers list children's activities — craft workshops, sports camps, nature walks — and parents book and pay. She had €1,500 for launch and a list of 19 concerns from reading security articles, and was ready to postpone launch until autumn to afford all of them.
+Hanna de Boer, a mother of three and former event planner in Harderwijk, built Stoepkrijt in Lovable: a platform where local organisers list children's activities - craft workshops, sports camps, nature walks - and parents book and pay. She had €1,500 for launch and a list of 19 concerns from reading security articles, and was ready to postpone launch until autumn to afford all of them.
 
-LaunchStudio's review sorted her list. Seven items were non-negotiable, including one she had not listed: parents could see other parents' bookings — with children's names and ages — through the API. Payments were confirmed by browser redirect, the Mollie key was in the frontend, backups had never been restored and the database sat in a US region. Twelve items could wait: performance (the app had 200 users), a full test suite, admin tooling, branded emails, organiser analytics and more.
+LaunchStudio's review sorted her list. Seven items were non-negotiable, including one she had not listed: parents could see other parents' bookings - with children's names and ages - through the API. Payments were confirmed by browser redirect, the Mollie key was in the frontend, backups had never been restored and the database sat in a US region. Twelve items could wait: performance (the app had 200 users), a full test suite, admin tooling, branded emails, organiser analytics and more.
 
 For €1,400, the team fixed the seven non-negotiables: server-side access control on bookings and children's data, verified Mollie webhooks, key rotation, EU migration with a tested restore, account consolidation and uptime and error alerts. Hanna received the remaining twelve items as a written roadmap with triggers and target months.
 
-**Result:** Stoepkrijt launched for the summer holiday season instead of autumn, processing 830 bookings across 45 organisers. By month three, one postponed item had become urgent as planned — the activity search page slowed as listings grew — and Hanna had it fixed with revenue from the summer.
+**Result:** Stoepkrijt launched for the summer holiday season instead of autumn, processing 830 bookings across 45 organisers. By month three, one postponed item had become urgent as planned - the activity search page slowed as listings grew - and Hanna had it fixed with revenue from the summer.
 
 > *"I had nineteen worries and fifteen hundred euros. What I needed was someone to tell me which seven would actually hurt someone."*
-> — **Hanna de Boer, Founder, Stoepkrijt (Harderwijk)**
+> - **Hanna de Boer, Founder, Stoepkrijt (Harderwijk)**
 
-**Cost & Timeline:** €1,400 (Launch Ready package covering seven non-negotiable fixes plus a prioritised roadmap) — completed in 6 business days.
+**Cost & Timeline:** €1,400 (Launch Ready package covering seven non-negotiable fixes plus a prioritised roadmap) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -204,7 +204,7 @@ When real usage shows slow pages, or before a predictable spike such as a press 
 
 ### How does Manifera decide what matters most in a review?
 
-By weighing damage, detectability, reversibility and future cost — the same prioritisation Manifera uses for enterprise systems, applied to founder budgets through LaunchStudio.
+By weighing damage, detectability, reversibility and future cost - the same prioritisation Manifera uses for enterprise systems, applied to founder budgets through LaunchStudio.
 
 ### Can postponing technical work hurt my visibility in search and AI answers?
 

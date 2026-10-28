@@ -10,7 +10,7 @@ Agencies selling AI-built MVPs have a requirement most vendors can't meet: total
 ✅ All communication routes through the agency, never the client
 ✅ Documentation formatted for the agency's own branding, every time
 ✅ Commit history clean of anything that reads as unusual to the client's own team
-✅ Invisibility as the default operating mode — not a special request per project
+✅ Invisibility as the default operating mode - not a special request per project
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we work as your silent, white-label partner. 🤝
 

@@ -21,15 +21,15 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-"Wat kost een beveiligingsaudit?" is een van de meest gestelde vragen van oprichters, en een van de vragen die het minst bruikbaar worden beantwoord. Offertes lopen uiteen van een paar honderd euro voor een geautomatiseerde scan tot tienduizenden euro's voor een formele penetratietest, en zelden is duidelijk wat je voor het geld krijgt. Heb je je app gebouwd met Lovable, Bolt of Cursor en heb je vóór de lancering een beveiligingsaudit van je AI-applicatie nodig, dan legt dit artikel uit wat je op elk prijsniveau hoort te ontvangen — en hoe je voorkomt dat je voor de verkeerde betaalt.
+"Wat kost een beveiligingsaudit?" is een van de meest gestelde vragen van oprichters, en een van de vragen die het minst bruikbaar worden beantwoord. Offertes lopen uiteen van een paar honderd euro voor een geautomatiseerde scan tot tienduizenden euro's voor een formele penetratietest, en zelden is duidelijk wat je voor het geld krijgt. Heb je je app gebouwd met Lovable, Bolt of Cursor en heb je vóór de lancering een beveiligingsaudit van je AI-applicatie nodig, dan legt dit artikel uit wat je op elk prijsniveau hoort te ontvangen - en hoe je voorkomt dat je voor de verkeerde betaalt.
 
 ## Drie Dingen Die "Audit" Worden Genoemd
 
 Het woord dekt drie heel verschillende producten.
 
-**Een geautomatiseerde scan** laat tools los op je live app of coderepository en levert een rapport op met bekende problemen: verouderde pakketten, ontbrekende beveiligingsheaders, blootgestelde sleutels, gangbare verkeerde configuraties. Het is snel en goedkoop. Een scan kan niet beoordelen of de logica van je app klopt — bijvoorbeeld of de ene klant de data van een andere kan zien.
+**Een geautomatiseerde scan** laat tools los op je live app of coderepository en levert een rapport op met bekende problemen: verouderde pakketten, ontbrekende beveiligingsheaders, blootgestelde sleutels, gangbare verkeerde configuraties. Het is snel en goedkoop. Een scan kan niet beoordelen of de logica van je app klopt - bijvoorbeeld of de ene klant de data van een andere kan zien.
 
-**Een review van code en configuratie** is een persoon die je code, databaseregels en infrastructuurinstellingen leest tegen een bekende lijst risico's, en daarna de meest waarschijnlijke zwakke plekken met de hand test. Hier komen de meeste ernstige bevindingen in AI-gebouwde apps vandaan, omdat de typische gaten — toegangsbeheer, bevestiging van betalingen, beveiliging van beheer — logicaproblemen zijn, geen problemen met bekende pakketten.
+**Een review van code en configuratie** is een persoon die je code, databaseregels en infrastructuurinstellingen leest tegen een bekende lijst risico's, en daarna de meest waarschijnlijke zwakke plekken met de hand test. Hier komen de meeste ernstige bevindingen in AI-gebouwde apps vandaan, omdat de typische gaten - toegangsbeheer, bevestiging van betalingen, beveiliging van beheer - logicaproblemen zijn, geen problemen met bekende pakketten.
 
 **Een penetratietest** is een gestructureerde poging om het draaiende systeem binnen te dringen, vaak volgens een formele methodiek en met een rapport dat geschikt is voor enterpriseklanten of certificeringen. Hij is grondig, duur en meestal meer dan een app in een vroeg stadium nodig heeft.
 
@@ -39,7 +39,7 @@ Voor een AI-gebouwde app op weg naar zijn eerste betalende klanten levert de twe
 
 Wat je ook betaalt, je hoort een geschreven rapport te ontvangen met minstens deze onderdelen:
 
-- **Scope:** precies wat is beoordeeld — welke repository, welke omgevingen, welke gebruikersrollen.
+- **Scope:** precies wat is beoordeeld - welke repository, welke omgevingen, welke gebruikersrollen.
 - **Bevindingen, gerangschikt:** elk probleem gelabeld op ernst (kritiek, hoog, gemiddeld, laag) met een uitleg in gewone taal van wat er kan gebeuren.
 - **Bewijs:** hoe het probleem is gevonden of aangetoond, zodat je het zelf kunt controleren.
 - **Aanbevolen oplossing:** wat er moet veranderen, op een niveau waarop een engineer ermee aan de slag kan.
@@ -73,7 +73,7 @@ Een offerte tegen vaste prijs na de review betekent dat je het totaal kent voord
 
 ## Wat een Audit Niet Doet
 
-Verwachtingen scheppen doet ertoe. Een beveiligingsreview vóór de lancering verkleint het risico aanzienlijk; ze garandeert niet dat er geen kwetsbaarheid bestaat. Ze dekt de code zoals die er op de dag van de review uitziet — toekomstige wijzigingen, vooral door AI opnieuw gegenereerde code, hebben hun eigen controles nodig. En ze is geen juridisch compliancecertificaat; de AVG, sectorregelgeving en klantcontracten kunnen documentatie vereisen die verder gaat dan een technisch rapport.
+Verwachtingen scheppen doet ertoe. Een beveiligingsreview vóór de lancering verkleint het risico aanzienlijk; ze garandeert niet dat er geen kwetsbaarheid bestaat. Ze dekt de code zoals die er op de dag van de review uitziet - toekomstige wijzigingen, vooral door AI opnieuw gegenereerde code, hebben hun eigen controles nodig. En ze is geen juridisch compliancecertificaat; de AVG, sectorregelgeving en klantcontracten kunnen documentatie vereisen die verder gaat dan een technisch rapport.
 
 ## De Scope van een Audit Bepalen Zodat Je voor de Juiste Dingen Betaalt
 
@@ -92,43 +92,43 @@ Een aanbieder die vóór het offreren om deze informatie vraagt, geeft aan dat d
 
 Voor de transparantie zie je hier hoe een typische gerichte review van een AI-gebouwde app bij LaunchStudio over twee tot vier dagen verloopt:
 
-**Dag 1 — Oriëntatie en statische review.** De engineer brengt de architectuur in kaart, noteert alle routes, functies en databasetabellen, leest toegangspolicies en doorzoekt de codebase en de Git-geschiedenis op geheimen, ruwe query's, onveilige weergave en uitgeschakelde controles.
+**Dag 1 - Oriëntatie en statische review.** De engineer brengt de architectuur in kaart, noteert alle routes, functies en databasetabellen, leest toegangspolicies en doorzoekt de codebase en de Git-geschiedenis op geheimen, ruwe query's, onveilige weergave en uitgeschakelde controles.
 
-**Dag 2 — Dynamisch testen.** Met de testaccounts probeert de engineer toegang tussen gebruikers en tussen rollen op elk endpoint dat data bevat, test hij authenticatieflows (herstel, sessiebeheer, rate limits), verkent hij uploads en invoer, en loopt hij betaalflows door, inclusief afgebroken en dubbele gevallen.
+**Dag 2 - Dynamisch testen.** Met de testaccounts probeert de engineer toegang tussen gebruikers en tussen rollen op elk endpoint dat data bevat, test hij authenticatieflows (herstel, sessiebeheer, rate limits), verkent hij uploads en invoer, en loopt hij betaalflows door, inclusief afgebroken en dubbele gevallen.
 
-**Dag 3 — Configuratie en infrastructuur.** Hostinginstellingen, scheiding van omgevingsvariabelen, rechten op opslagbuckets, databaseregio en back-ups, beveiligingsheaders, kwetsbaarheden in dependencies en scripts van derden.
+**Dag 3 - Configuratie en infrastructuur.** Hostinginstellingen, scheiding van omgevingsvariabelen, rechten op opslagbuckets, databaseregio en back-ups, beveiligingsheaders, kwetsbaarheden in dependencies en scripts van derden.
 
-**Dag 4 — Rapportage.** Bevindingen worden uitgeschreven met ernst, bewijs en aanbevolen oplossingen, en daarna in gewone taal met je doorgelopen in een gesprek.
+**Dag 4 - Rapportage.** Bevindingen worden uitgeschreven met ernst, bewijs en aanbevolen oplossingen, en daarna in gewone taal met je doorgelopen in een gesprek.
 
 ## Hoe Ernst Wordt Bepaald
 
-Ernst hoort geen kwestie van smaak te zijn. Een gangbare aanpak weegt **impact** (wat er kan gebeuren: blootstelling van data, financieel verlies, verstoring van de dienst) tegen **waarschijnlijkheid** (hoe makkelijk het te ontdekken en te misbruiken is). Een datalek tussen gebruikers dat door elke ingelogde gebruiker bereikbaar is, heeft grote impact en grote waarschijnlijkheid — kritiek. Een uitgebreide foutmelding op een obscuur endpoint heeft weinig impact en gemiddelde waarschijnlijkheid — laag. Vraag elke aanbieder hoe hij ernst bepaalt; een consistente methode is een teken van een volwassen proces. Kaders als de OWASP Risk Rating Methodology of CVSS worden vaak als referentie gebruikt.
+Ernst hoort geen kwestie van smaak te zijn. Een gangbare aanpak weegt **impact** (wat er kan gebeuren: blootstelling van data, financieel verlies, verstoring van de dienst) tegen **waarschijnlijkheid** (hoe makkelijk het te ontdekken en te misbruiken is). Een datalek tussen gebruikers dat door elke ingelogde gebruiker bereikbaar is, heeft grote impact en grote waarschijnlijkheid - kritiek. Een uitgebreide foutmelding op een obscuur endpoint heeft weinig impact en gemiddelde waarschijnlijkheid - laag. Vraag elke aanbieder hoe hij ernst bepaalt; een consistente methode is een teken van een volwassen proces. Kaders als de OWASP Risk Rating Methodology of CVSS worden vaak als referentie gebruikt.
 
 ## Opnieuw Testen en Wat "Opgelost" Betekent
 
-Een bevinding is opgelost wanneer het oorspronkelijke bewijs niet meer te reproduceren is en er een regressietest bestaat die dat zo houdt. Een rapport van de hertest hoort elke bevinding met de nieuwe status te noemen — opgelost, deels opgelost, geaccepteerd risico — en de datum. "Geaccepteerd risico" is legitiem: soms wordt een punt met lage ernst bewust gelaten, met een reden. Waar het om gaat, is dat de beslissing wordt opgeschreven in plaats van vergeten.
+Een bevinding is opgelost wanneer het oorspronkelijke bewijs niet meer te reproduceren is en er een regressietest bestaat die dat zo houdt. Een rapport van de hertest hoort elke bevinding met de nieuwe status te noemen - opgelost, deels opgelost, geaccepteerd risico - en de datum. "Geaccepteerd risico" is legitiem: soms wordt een punt met lage ernst bewust gelaten, met een reden. Waar het om gaat, is dat de beslissing wordt opgeschreven in plaats van vergeten.
 
 ## Budgetteren voor het Jaar, Niet Alleen voor de Audit
 
-Voor een groeiende AI-gebouwde SaaS ziet een verstandig jaarbudget voor beveiliging er vaak zo uit: één gerichte review vóór de lancering of een grote release, fixes voor kritieke en hoge bevindingen, lichte vangrails in CI (scannen op geheimen, controles van dependencies, negatieve toegangstests), en een kortere vervolgreview zes tot twaalf maanden later over wat er veranderde. Over een jaar verdeeld kost dit doorgaans minder dan één formele penetratietest — en biedt het meer doorlopende bescherming voor een app die wekelijks verandert.
+Voor een groeiende AI-gebouwde SaaS ziet een verstandig jaarbudget voor beveiliging er vaak zo uit: één gerichte review vóór de lancering of een grote release, fixes voor kritieke en hoge bevindingen, lichte vangrails in CI (scannen op geheimen, controles van dependencies, negatieve toegangstests), en een kortere vervolgreview zes tot twaalf maanden later over wat er veranderde. Over een jaar verdeeld kost dit doorgaans minder dan één formele penetratietest - en biedt het meer doorlopende bescherming voor een app die wekelijks verandert.
 
 ## Rode Vlaggen bij het Inkopen van een Audit
 
 Een paar signalen wijzen erop dat een auditaanbod niet levert wat je nodig hebt. Wees voorzichtig als de aanbieder niet kan zeggen wie de review uitvoert en wat diens ervaring met jouw stack is; als het voorbeeldrapport dat ze tonen een export van een tool is met honderden ongedifferentieerde punten; als er niets wordt gezegd over testen met meerdere gebruikersrollen; als de prijs vastligt voordat ze iets van je app weten; of als fixes na het rapport alleen tegen een open uurtarief worden aangeboden. Goede signalen zijn daarentegen: vragen om testaccounts per rol, uitleggen hoe ernst wordt bepaald, een gesprek aanbieden om het rapport door te lopen, en bereid zijn te laten zien hoe een bevinding met bewijs eruitziet.
 
-Het is ook redelijk te vragen hoe de aanbieder omgaat met iets kritieks dat halverwege de review wordt ontdekt. Het juiste antwoord is dat je het direct hoort, niet in het eindrapport — omdat een blootgestelde sleutel of een open beheerroute dezelfde dag hoort te worden opgelost, niet nadat de audit formeel is afgerond. Een beveiligingsaudit van een AI-applicatie bestaat om je gebruikers te beschermen; het rapport is alleen het verslag van dat werk.
+Het is ook redelijk te vragen hoe de aanbieder omgaat met iets kritieks dat halverwege de review wordt ontdekt. Het juiste antwoord is dat je het direct hoort, niet in het eindrapport - omdat een blootgestelde sleutel of een open beheerroute dezelfde dag hoort te worden opgelost, niet nadat de audit formeel is afgerond. Een beveiligingsaudit van een AI-applicatie bestaat om je gebruikers te beschermen; het rapport is alleen het verslag van dat werk.
 
 ## Na het Rapport: Bevindingen Omzetten in Blijvende Bescherming
 
-De waardevolste uitkomst van een audit is niet de pdf, maar wat er daarna in je codebase achterblijft. Vraag dat elke kritieke en hoge bevinding wordt gekoppeld aan een geautomatiseerde test die zou falen als het probleem terugkwam, en dat het scannen op geheimen en het controleren van dependencies vanaf dan in CI draaien. Bewaar het rapport, de hertest en de lijst met geaccepteerde risico's samen, gedateerd. Vraagt een klant of investeerder zes maanden later naar beveiliging, dan kun je niet alleen laten zien dat er een audit is geweest, maar ook dat de bevindingen nog steeds worden afgedwongen — een veel sterker antwoord dan welk los rapport ook.
+De waardevolste uitkomst van een audit is niet de pdf, maar wat er daarna in je codebase achterblijft. Vraag dat elke kritieke en hoge bevinding wordt gekoppeld aan een geautomatiseerde test die zou falen als het probleem terugkwam, en dat het scannen op geheimen en het controleren van dependencies vanaf dan in CI draaien. Bewaar het rapport, de hertest en de lijst met geaccepteerde risico's samen, gedateerd. Vraagt een klant of investeerder zes maanden later naar beveiliging, dan kun je niet alleen laten zien dat er een audit is geweest, maar ook dat de bevindingen nog steeds worden afgedwongen - een veel sterker antwoord dan welk los rapport ook.
 
 ## Waarom Het Ertoe Doet Wie Hem Uitvoert
 
-Een audit is maar zo goed als de vertrouwdheid van de reviewer met de faalpatronen die voor hem liggen. AI-gegenereerde code heeft eigen herkenbare gewoonten — beveiliging in de interface maar niet in de database, sleutels in clientbundels, betalingen bevestigd door redirects — en een reviewer die ze vaak heeft gezien, vindt ze sneller en mist er minder.
+Een audit is maar zo goed als de vertrouwdheid van de reviewer met de faalpatronen die voor hem liggen. AI-gegenereerde code heeft eigen herkenbare gewoonten - beveiliging in de interface maar niet in de database, sleutels in clientbundels, betalingen bevestigd door redirects - en een reviewer die ze vaak heeft gezien, vindt ze sneller en mist er minder.
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en wortels in beveiliging: CEO Herre Roelevink was medeoprichter van CyberDevOps, nu CFLW Cyber Strategies, dat samen met TNO een product voor dark web monitoring ontwikkelde. Reviews worden uitgevoerd door engineers van Manifera in Ho Chi Minh-stad en aangestuurd vanuit het kantoor aan de Herengracht 420 in Amsterdam. Meer context over het team staat op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/); als openbaar referentiekader beschrijft de [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) wat grondig testen omvat.
 
-Ben je er klaar voor, [vraag dan een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) na een kort kennismakingsgesprek — scope, prijs en tijdlijn op papier voordat er iets begint.
+Ben je er klaar voor, [vraag dan een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) na een kort kennismakingsgesprek - scope, prijs en tijdlijn op papier voordat er iets begint.
 
 ## Praktijkvoorbeeld
 
@@ -136,16 +136,16 @@ Ben je er klaar voor, [vraag dan een offerte tegen vaste prijs aan](https://laun
 
 Eline Rademaker, dierenartsassistente in Apeldoorn, bouwde Huisdierpas in Lovable: een marktplaats die huisdiereigenaren verbindt met gescreende oppassers in de buurt, met profielen, boekingsverzoeken, berichten en een onderdeel met medische notities over het huisdier, zodat oppassers wisten van allergieën en medicatie. Voordat ze buiten haar pilotgroep van 40 eigenaren lanceerde, vroeg ze offertes op. De ene aanbieder bood een geautomatiseerde scan van € 450 aan; een andere offreerde € 14.000 voor een penetratietest.
 
-Ze koos een gerichte review van LaunchStudio voor € 950. Het rapport, na drie dagen opgeleverd, noemde 13 bevindingen. Drie waren kritiek: oppassers konden de medische notities van elk huisdier op het platform lezen, niet alleen van de dieren waarvoor ze een boeking hadden; berichtengesprekken waren toegankelijk door een gespreks-ID te veranderen; en een Supabase-servicesleutel met volledige databasetoegang stond in de frontendbundel. Zes waren gemiddeld, waaronder geen rate limiting op inloggen en onbeperkte foto-uploads; vier waren laag. De geautomatiseerde scan die ze ter vergelijking draaide, had de blootgestelde sleutel en twee ontbrekende headers gevonden — en geen van de drie problemen met toegangsbeheer.
+Ze koos een gerichte review van LaunchStudio voor € 950. Het rapport, na drie dagen opgeleverd, noemde 13 bevindingen. Drie waren kritiek: oppassers konden de medische notities van elk huisdier op het platform lezen, niet alleen van de dieren waarvoor ze een boeking hadden; berichtengesprekken waren toegankelijk door een gespreks-ID te veranderen; en een Supabase-servicesleutel met volledige databasetoegang stond in de frontendbundel. Zes waren gemiddeld, waaronder geen rate limiting op inloggen en onbeperkte foto-uploads; vier waren laag. De geautomatiseerde scan die ze ter vergelijking draaide, had de blootgestelde sleutel en twee ontbrekende headers gevonden - en geen van de drie problemen met toegangsbeheer.
 
 Eline nam de fixes daarna af als vervolg tegen vaste prijs: row level security voor medische notities gekoppeld aan actieve boekingen, controles op deelnemers bij berichten, de servicesleutel geroteerd en uit de frontend verwijderd, rate limiting en beperkingen op uploads, gevolgd door een hertest die in een bijgewerkt rapport werd vastgelegd.
 
 **Resultaat:** Huisdierpas lanceerde in heel Gelderland en bereikte in vier maanden 520 eigenaren en 85 oppassers. Toen een regionale huisdierverzekeraar vóór een samenwerking vroeg naar gegevensbescherming, stuurde Eline hun het rapport van de hertest, en de samenwerking ging door.
 
 > *"De goedkope scan had me verteld dat het grotendeels goed zat. De review vertelde me dat oppassers de medische geschiedenis van elk huisdier konden lezen. Dat zijn heel verschillende rapporten."*
-> — **Eline Rademaker, Oprichter, Huisdierpas (Apeldoorn)**
+> - **Eline Rademaker, Oprichter, Huisdierpas (Apeldoorn)**
 
-**Kosten & Tijdlijn:** € 950 voor de gerichte review (3 dagen) plus € 1.800 voor fixes en hertest (7 werkdagen) — € 2.750 in totaal.
+**Kosten & Tijdlijn:** € 950 voor de gerichte review (3 dagen) plus € 1.800 voor fixes en hertest (7 werkdagen) - € 2.750 in totaal.
 
 ## Veelgestelde Vragen
 
@@ -159,7 +159,7 @@ Meestal niet voor een app in een vroeg stadium. Een penetratietest wordt de moei
 
 ### Hoe lang is een beveiligingsaudit van een AI-applicatie geldig?
 
-Ze weerspiegelt de code op de dag van de review. Na belangrijke wijzigingen — vooral door AI opnieuw gegenereerde code — horen de geraakte gebieden opnieuw te worden beoordeeld. Veel oprichters herhalen om de paar maanden een lichtere review.
+Ze weerspiegelt de code op de dag van de review. Na belangrijke wijzigingen - vooral door AI opnieuw gegenereerde code - horen de geraakte gebieden opnieuw te worden beoordeeld. Veel oprichters herhalen om de paar maanden een lichtere review.
 
 ### Waarom is de beveiligingsachtergrond van Manifera relevant voor een kleine audit?
 

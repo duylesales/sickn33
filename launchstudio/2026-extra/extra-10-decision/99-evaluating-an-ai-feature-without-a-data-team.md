@@ -28,11 +28,11 @@ The remedy is not an evaluation framework or a data team. It is thirty examples 
 
 Thirty to fifty examples is enough to be useful and small enough to remain manageable. What matters is composition, not size.
 
-Include **ordinary cases** that represent the bulk of real use — perhaps twenty. Include **awkward cases**: the longest input you have seen, the shortest, one in another language, one with unusual formatting, one that is nearly empty. Include **the cases that failed**, every time a customer reports a bad output, which is what makes the set improve continuously. And include **cases where the correct answer is to refuse** — an input that does not contain what the feature is looking for, where the right behaviour is to say so rather than fabricate.
+Include **ordinary cases** that represent the bulk of real use - perhaps twenty. Include **awkward cases**: the longest input you have seen, the shortest, one in another language, one with unusual formatting, one that is nearly empty. Include **the cases that failed**, every time a customer reports a bad output, which is what makes the set improve continuously. And include **cases where the correct answer is to refuse** - an input that does not contain what the feature is looking for, where the right behaviour is to say so rather than fabricate.
 
 Draw them from real customer inputs, anonymised. Invented examples miss the shapes that actually occur, which are messier than anything you would think to write.
 
-For each, record what a good output looks like. Not necessarily an exact expected text — for generative tasks that is not meaningful — but the properties: which facts must appear, what must not appear, what format is required, and roughly what length is acceptable.
+For each, record what a good output looks like. Not necessarily an exact expected text - for generative tasks that is not meaningful - but the properties: which facts must appear, what must not appear, what format is required, and roughly what length is acceptable.
 
 ## What to Measure
 
@@ -50,7 +50,7 @@ Alongside the test set, two production measurements are worth more than any offl
 
 With a test set in place, changing anything follows the same short loop.
 
-Run the set against the current configuration and record the results. Make the change — a prompt adjustment, a different model, a change in what context is sent. Run the set again. Compare, and look specifically at what got worse rather than at the overall impression, because prompt changes routinely improve one class of input while damaging another.
+Run the set against the current configuration and record the results. Make the change - a prompt adjustment, a different model, a change in what context is sent. Run the set again. Compare, and look specifically at what got worse rather than at the overall impression, because prompt changes routinely improve one class of input while damaging another.
 
 Then, when the offline comparison is favourable, roll it out behind a flag to a small share of accounts and watch the correction rate before applying it to everyone. Offline evaluation catches regressions; production measurement catches the things your thirty examples did not represent.
 
@@ -62,7 +62,7 @@ Establishing an evaluation set, automating the comparison, and connecting it to 
 
 Reviewing thirty outputs by hand takes perhaps twenty minutes, which is entirely acceptable for a change made monthly and tedious for one made daily.
 
-The common escalation is to have a model judge the outputs — asking a second model whether a summary is accurate and complete against its source. This works better than most people expect and has two limitations worth knowing. It agrees with human judgement most of the time but not always, and it has systematic biases, notably toward longer and more confident-sounding answers. It is a useful screen and a poor final authority.
+The common escalation is to have a model judge the outputs - asking a second model whether a summary is accurate and complete against its source. This works better than most people expect and has two limitations worth knowing. It agrees with human judgement most of the time but not always, and it has systematic biases, notably toward longer and more confident-sounding answers. It is a useful screen and a poor final authority.
 
 A practical arrangement: automated checks for the properties that can be checked mechanically, model-assisted scoring for the subjective dimension, and human review of the cases where the two disagree or the score is borderline. That keeps the human effort proportionate while retaining judgement where it matters.
 
@@ -76,14 +76,14 @@ Daria Ivanova ran Klachtclassificatie, a complaint-triage tool for utility compa
 
 A customer complained that billing disputes were being miscategorised, so she adjusted the instructions to describe the billing category more precisely. Testing on four billing complaints showed the fix working, and it went live.
 
-Over the following fortnight, mis-routing complaints rose sharply across other categories. The added emphasis on billing had made the model classify anything mentioning an amount as a billing issue — including service complaints, meter disputes, and connection requests where a figure was mentioned in passing. Accuracy on the largest category had fallen from around 91% to 63%, while billing accuracy improved by a few points.
+Over the following fortnight, mis-routing complaints rose sharply across other categories. The added emphasis on billing had made the model classify anything mentioning an amount as a billing issue - including service complaints, meter disputes, and connection requests where a figure was mentioned in passing. Accuracy on the largest category had fallen from around 91% to 63%, while billing accuracy improved by a few points.
 
 Nobody detected it for two weeks, because there was no measurement: the only signal was complaint volume from the teams receiving wrongly routed work.
 
 **Result:** a test set of 45 real complaints across all eight categories, including 12 previously misclassified, with automated accuracy scoring; a required workflow of running the set before and after any prompt change; and rollout behind a flag to 10% of volume with routing accuracy monitored. The billing problem was subsequently fixed properly with no loss elsewhere, verified against the set before deployment.
 
 > "I tested my fix on the four cases it was meant to fix. It worked on all four and quietly ruined the category that carried most of the volume."
-> — **Daria Ivanova, Founder, Klachtclassificatie**
+> - **Daria Ivanova, Founder, Klachtclassificatie**
 
 **Cost & Timeline:** evaluation set and comparison workflow delivered in 2 business days.
 
@@ -103,7 +103,7 @@ As a screen, yes, and it agrees with human judgement much of the time. It carrie
 
 ### What should I measure in production?
 
-The correction rate — how often customers edit the output — and the retry rate. Both are stronger signals of real quality than any offline metric, and both require only that edits and repeats are recorded.
+The correction rate - how often customers edit the output - and the retry rate. Both are stronger signals of real quality than any offline metric, and both require only that edits and repeats are recorded.
 
 ### Do I need an evaluation platform?
 

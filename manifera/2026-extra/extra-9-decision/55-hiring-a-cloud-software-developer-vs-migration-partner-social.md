@@ -1,4 +1,4 @@
-It looks like a staffing decision: one cloud developer, or a full migration partner? It's actually a scoping decision — and getting it wrong wastes months you don't have. ☁️⚖️
+It looks like a staffing decision: one cloud developer, or a full migration partner? It's actually a scoping decision - and getting it wrong wastes months you don't have. ☁️⚖️
 
 **The Pain Points:**
 ❌ **Single Point of Failure:** One developer carrying a multi-system migration alone means the project stalls if they're out sick during cutover week.
@@ -7,7 +7,7 @@ It looks like a staffing decision: one cloud developer, or a full migration part
 
 **The Manifera Solution:**
 ✅ **Phased Team Structure:** Analysis, planning, implementation, and monitoring handled by specialists, not one person stretched across all four.
-✅ **Built-In Redundancy:** No single point of failure — the team absorbs an unavailable engineer instead of the project stalling.
+✅ **Built-In Redundancy:** No single point of failure - the team absorbs an unavailable engineer instead of the project stalling.
 ✅ **Flexible Pod Scaling:** Team size adjusts within two to four weeks as the project moves between phases, so you're not paying for a fixed headcount all year.
 
 Ask three questions first: multi-system? Compliance-attached? Can you tolerate a stall? The answers pick the model for you. 🎯

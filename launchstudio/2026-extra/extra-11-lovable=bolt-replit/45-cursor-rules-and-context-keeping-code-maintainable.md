@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Month one in Cursor is the best development experience most solo founders have ever had. Month four is when you open a file, find three different ways of fetching data from the same table, and cannot remember which one you decided was correct.
 
-Nothing went wrong. The tool did what it was asked each time, and each time it made a locally reasonable decision without knowing what you had decided previously. Consistency is not a property a model can infer from a codebase it sees in fragments — it is something you have to state, and stating it is a small amount of work that pays back every single prompt afterwards.
+Nothing went wrong. The tool did what it was asked each time, and each time it made a locally reasonable decision without knowing what you had decided previously. Consistency is not a property a model can infer from a codebase it sees in fragments - it is something you have to state, and stating it is a small amount of work that pays back every single prompt afterwards.
 
 ## Why Generated Code Diverges
 
@@ -34,13 +34,13 @@ Three mechanics, all structural rather than accidental.
 
 **Plausible alternatives are equally available.** There are five reasonable ways to structure a data fetch. The model picks one each time, and without guidance the distribution is close to random.
 
-The result is a codebase that is individually sensible and collectively inconsistent — the specific failure mode that makes a project hard to change six months later, and hard for anyone else to pick up.
+The result is a codebase that is individually sensible and collectively inconsistent - the specific failure mode that makes a project hard to change six months later, and hard for anyone else to pick up.
 
 ## Rules Files: Writing Down How This Project Works
 
 Cursor reads project-level rules files and applies them to what it generates. This is the highest-return fifteen minutes available to anyone building this way, and most founders never create one.
 
-What belongs in it is not style preference — it is the decisions that must not vary.
+What belongs in it is not style preference - it is the decisions that must not vary.
 
 **Data access.** "All database access goes through the functions in this directory. Never write a query directly in a component." One line that prevents the three-dialect problem entirely.
 
@@ -70,7 +70,7 @@ Rules describe policy; context supplies the specifics.
 
 ## The Documentation That Doubles as Prompting Material
 
-There is a pleasant efficiency available here. The documentation that makes your project maintainable for a human — a short architecture note, a description of the data model, a list of conventions — is the same material that makes generation consistent.
+There is a pleasant efficiency available here. The documentation that makes your project maintainable for a human - a short architecture note, a description of the data model, a list of conventions - is the same material that makes generation consistent.
 
 Written once, it serves three audiences: you in four months, the engineer you eventually hire, and the model on every prompt. That is an unusually good return for a page of text, and it is the argument that convinces founders who otherwise treat documentation as overhead.
 
@@ -84,7 +84,7 @@ This matters more in AI-assisted workflows than in traditional ones, precisely b
 
 ## Review Habits That Scale
 
-**Read what you accept.** Not for style — to notice the assumption you did not state. This is the single habit that separates people whose Cursor projects stay maintainable from those whose projects do not.
+**Read what you accept.** Not for style - to notice the assumption you did not state. This is the single habit that separates people whose Cursor projects stay maintainable from those whose projects do not.
 
 **Consolidate duplication immediately.** When the model writes a second implementation of something, merge it then rather than after the third.
 
@@ -96,7 +96,7 @@ This matters more in AI-assisted workflows than in traditional ones, precisely b
 
 Everything above becomes necessary rather than advisable.
 
-Two developers prompting independently produce divergence at roughly twice the rate, because each is establishing patterns the other cannot see. The arrangement that works: a shared rules file that both follow, agreement on who owns which areas, and review of generated code in both directions — reviewing a colleague's generated code is unfamiliar and is exactly as necessary as reviewing hand-written code.
+Two developers prompting independently produce divergence at roughly twice the rate, because each is establishing patterns the other cannot see. The arrangement that works: a shared rules file that both follow, agreement on who owns which areas, and review of generated code in both directions - reviewing a colleague's generated code is unfamiliar and is exactly as necessary as reviewing hand-written code.
 
 Teams that skip this arrive at the four-month problem in six weeks.
 
@@ -114,13 +114,13 @@ Any two of these means the maintenance work is now overdue, and it is considerab
 
 Re-read the rules file and update it to match what you actually do now. Consolidate anything duplicated since last time. Update the architecture note if the shape changed. Check that the schema in the repository matches the database. Delete code nothing calls.
 
-An hour a month keeps a generated codebase in a state where both you and a model can reason about it — which is the whole point, because the moment neither can, your development speed collapses and the tool that made you fast becomes the reason you are slow.
+An hour a month keeps a generated codebase in a state where both you and a model can reason about it - which is the whole point, because the moment neither can, your development speed collapses and the tool that made you fast becomes the reason you are slow.
 
 ## When the Drift Has Already Happened
 
 If you are past that point, the remedy is not a rewrite. It is a consolidation pass: identify the competing patterns, choose one per concern, migrate the others to it, write the rules file that prevents recurrence, and add tests around the parts that matter so the consolidation is safe.
 
-That is part of what LaunchStudio does when taking an AI-built product to production — alongside the access control, payments and infrastructure work — precisely because a codebase that cannot be reasoned about is one where security fixes are unreliable. The result is left conventional, documented and AI-readable, so you keep prompting against it afterwards rather than losing the workflow you built the product to have.
+That is part of what LaunchStudio does when taking an AI-built product to production - alongside the access control, payments and infrastructure work - precisely because a codebase that cannot be reasoned about is one where security fixes are unreliable. The result is left conventional, documented and AI-readable, so you keep prompting against it afterwards rather than losing the workflow you built the product to have.
 
 The engineers are Manifera's, with eleven years of production systems behind them for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. [Describe your project](https://launchstudio.eu/en/#contact) and you will get an honest read on whether consolidation is needed, usually within one business day, or see the [packages](https://launchstudio.eu/en/#packages).
 
@@ -153,9 +153,9 @@ Six business days of work: one data access layer with the other two migrated ont
 **Result:** the new developer's first feature shipped in three days rather than the two weeks the first attempt had taken, and Pepijn reports that prompts now produce code matching the existing patterns without him describing them each time.
 
 > *"I had been arguing with my own codebase for months and blaming the tool. The tool had no idea what I had decided, because I had never written any of it down."*
-> — **Pepijn Aalbers, Founder, Offertetool (Alkmaar)**
+> - **Pepijn Aalbers, Founder, Offertetool (Alkmaar)**
 
-**Cost & Timeline:** €2,600 (consolidation pass, schema migrations, rules file and architecture note, tests) — completed in 6 business days.
+**Cost & Timeline:** €2,600 (consolidation pass, schema migrations, rules file and architecture note, tests) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -177,7 +177,7 @@ A shared rules file both follow, clear ownership of areas, and review of generat
 
 ### My codebase has already drifted. Do I need to rewrite it?
 
-No. A consolidation pass — choose one pattern per concern, migrate the others, capture the schema, write the rules file, add tests around what matters — is far cheaper than a rewrite and keeps everything you have built.
+No. A consolidation pass - choose one pattern per concern, migrate the others, capture the schema, write the rules file, add tests around what matters - is far cheaper than a rewrite and keeps everything you have built.
 
 <script type="application/ld+json">
 {
@@ -189,7 +189,7 @@ No. A consolidation pass — choose one pattern per concern, migrate the others,
       "name": "What should go in a Cursor rules file?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The decisions that must not vary: data access, security invariants, where validation is enforced, error handling, structure and forbidden patterns — ten to fifteen lines kept current."
+        "text": "The decisions that must not vary: data access, security invariants, where validation is enforced, error handling, structure and forbidden patterns - ten to fifteen lines kept current."
       }
     },
     {
@@ -205,7 +205,7 @@ No. A consolidation pass — choose one pattern per concern, migrate the others,
       "name": "Should my database schema live in the repository?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — migrations in the repository keep environments aligned, make changes reviewable and let the model see the real structure."
+        "text": "Yes - migrations in the repository keep environments aligned, make changes reviewable and let the model see the real structure."
       }
     },
     {
@@ -221,7 +221,7 @@ No. A consolidation pass — choose one pattern per concern, migrate the others,
       "name": "My codebase has already drifted. Do I need to rewrite it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — a consolidation pass choosing one pattern per concern, capturing the schema and adding tests is far cheaper and keeps what you built."
+        "text": "No - a consolidation pass choosing one pattern per concern, capturing the schema and adding tests is far cheaper and keeps what you built."
       }
     }
   ]

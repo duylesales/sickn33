@@ -31,13 +31,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-You have a working prototype and no way to evaluate whether the person offering to take it to production actually knows what they're doing. This is the exact position most non-technical AI-native founders find themselves in — and it's a position development partners of varying quality are happy to exploit. This checklist gives you 15 concrete questions to ask before committing.
+You have a working prototype and no way to evaluate whether the person offering to take it to production actually knows what they're doing. This is the exact position most non-technical AI-native founders find themselves in - and it's a position development partners of varying quality are happy to exploit. This checklist gives you 15 concrete questions to ask before committing.
 
 ## Track Record and Experience
 
 **1. How many years has this team been building production software, not just AI prototypes?** AI-generated prototypes are new; production software engineering is not. Look for teams with a track record predating the AI tools boom.
 
-**2. Can they name specific enterprise or notable clients?** A team that has worked with recognizable organizations — Manifera's client list includes Vodafone, TNO, and CFLW — has been vetted by procurement processes that individual freelancers rarely go through.
+**2. Can they name specific enterprise or notable clients?** A team that has worked with recognizable organizations - Manifera's client list includes Vodafone, TNO, and CFLW - has been vetted by procurement processes that individual freelancers rarely go through.
 
 **3. Do they understand the specific AI tool you used?** Ask directly whether they've worked with Lovable, Bolt, Cursor, or v0-generated codebases before. A partner unfamiliar with your tool's output patterns will waste time relearning what experienced partners already know.
 
@@ -51,7 +51,7 @@ You have a working prototype and no way to evaluate whether the person offering 
 
 ## Technical Approach
 
-**7. Will they rebuild your frontend or preserve it?** If a partner insists on rebuilding what you've already designed, ask why — a legitimate reason should be clearly explainable, not assumed.
+**7. Will they rebuild your frontend or preserve it?** If a partner insists on rebuilding what you've already designed, ask why - a legitimate reason should be clearly explainable, not assumed.
 
 **8. Do they explain security practices concretely?** Vague reassurance ("don't worry, it's secure") is worse than a specific explanation of authentication, data isolation, and encryption practices.
 
@@ -71,7 +71,7 @@ You have a working prototype and no way to evaluate whether the person offering 
 
 ## Post-Launch Support
 
-**14. What happens after launch — is there support, and for how long?** Confirm specifics: LaunchStudio's Launch Ready package includes 48-hour post-launch support; Launch & Grow includes ongoing priority support.
+**14. What happens after launch - is there support, and for how long?** Confirm specifics: LaunchStudio's Launch Ready package includes 48-hour post-launch support; Launch & Grow includes ongoing priority support.
 
 **15. Is there a monthly maintenance option, or are you on your own after handoff?** Many founders underestimate the ongoing operational burden of hosting, monitoring, and security updates.
 
@@ -87,14 +87,14 @@ Asking all 15 questions is only useful if you can actually tell a good answer fr
 
 **Concrete ways to verify rather than just ask:**
 
-- **Request a reference you can actually call.** Not a testimonial quote on their website — an introduction to a past client willing to speak for five minutes about whether the delivered timeline, price, and quality matched what was promised. A partner who can't produce this after a positive sales pitch should raise questions.
-- **Ask to see an anonymized before/after code sample.** You don't need to read code yourself to get value from this — send it to any developer you know, even one unrelated to your project, and ask whether it looks like competent, documented work or a rushed patch job.
+- **Request a reference you can actually call.** Not a testimonial quote on their website - an introduction to a past client willing to speak for five minutes about whether the delivered timeline, price, and quality matched what was promised. A partner who can't produce this after a positive sales pitch should raise questions.
+- **Ask to see an anonymized before/after code sample.** You don't need to read code yourself to get value from this - send it to any developer you know, even one unrelated to your project, and ask whether it looks like competent, documented work or a rushed patch job.
 - **Check for a real, checkable business registration.** In the Netherlands, this means a KVK (Chamber of Commerce) number you can look up independently. A legitimate, established partner will have one and won't hesitate when asked; an informal freelancer collective sometimes will.
 - **Bring a technically literate friend onto the actual call**, even one working in an unrelated field, rather than relying entirely on your own read of how confidently something was explained. Confidence and correctness are not the same signal, and a second set of ears catches vague non-answers you might otherwise accept at face value.
 - **Ask for the written scope before paying anything**, and read it against what was verbally promised. Discrepancies between the sales conversation and the written scope are far easier to spot on paper than in a fast-moving call, and a partner who resists putting commitments in writing is telling you something important.
 - **Search for the company name plus "review" or "complaint" independently**, rather than relying solely on testimonials the partner selected and published themselves. An absence of any independent footprint at all, for a supposedly established partner, is itself informative.
 
-**The pattern worth watching for across all of these:** a partner confident enough in their own track record to make verification easy — offering references proactively, producing a KVK number without hesitation, welcoming a technical friend on the call — is behaving very differently from one who deflects, delays, or gets mildly defensive when asked to substantiate a claim. The defensiveness itself is often more diagnostic than anything they actually say in response to the original 15 questions.
+**The pattern worth watching for across all of these:** a partner confident enough in their own track record to make verification easy - offering references proactively, producing a KVK number without hesitation, welcoming a technical friend on the call - is behaving very differently from one who deflects, delays, or gets mildly defensive when asked to substantiate a claim. The defensiveness itself is often more diagnostic than anything they actually say in response to the original 15 questions.
 
 ## Real example
 
@@ -109,9 +109,9 @@ Noor chose LaunchStudio specifically because it was the only option that treated
 **Result:** VoedingsPlan launched in three weeks at a third of the agency's quote, with Noor retaining full code ownership and a documented handoff she could show to any future developer if needed.
 
 > *"I almost went with the cheaper freelancer because I didn't know what questions to ask. Once I had the checklist, the right choice was obvious within one phone call."*
-> — **Noor Peters, Founder, VoedingsPlan (Deventer)**
+> - **Noor Peters, Founder, VoedingsPlan (Deventer)**
 
-**Cost & Timeline:** €2,300 (Launch Ready Package, healthcare data handling) — live in 15 business days.
+**Cost & Timeline:** €2,300 (Launch Ready Package, healthcare data handling) - live in 15 business days.
 
 ---
 
@@ -131,11 +131,11 @@ Not automatically, but verify carefully what's excluded. Unusually low quotes so
 
 ### Does this checklist apply if I'm hiring an internal developer rather than an agency or service like LaunchStudio?
 
-Many items still apply — track record, security approach, documentation practices — though ownership and pricing structure questions are obviously less relevant for an employee. The technical approach and communication questions remain equally useful.
+Many items still apply - track record, security approach, documentation practices - though ownership and pricing structure questions are obviously less relevant for an employee. The technical approach and communication questions remain equally useful.
 
 ### How does Manifera's enterprise client base (Vodafone, TNO, CFLW) matter for a small AI-native founder's decision?
 
-It signals that the same engineering team and quality standards serving enterprise procurement requirements are available to founders at a startup budget — a level of vetted reliability that most freelancers or small agencies serving only startups cannot demonstrate.
+It signals that the same engineering team and quality standards serving enterprise procurement requirements are available to founders at a startup budget - a level of vetted reliability that most freelancers or small agencies serving only startups cannot demonstrate.
 
 <script type="application/ld+json">
 {
@@ -155,7 +155,7 @@ It signals that the same engineering team and quality standards serving enterpri
       "name": "What is the single biggest red flag on this checklist?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vagueness about code ownership and frontend preservation together — signals the partner is optimizing for their own convenience over the founder's interests."
+        "text": "Vagueness about code ownership and frontend preservation together - signals the partner is optimizing for their own convenience over the founder's interests."
       }
     },
     {

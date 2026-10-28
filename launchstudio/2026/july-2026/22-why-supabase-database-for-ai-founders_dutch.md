@@ -71,7 +71,7 @@ Harper werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 
 **Resultaat:** Harper heeft de databaseresponstijden teruggebracht van 7,2 seconden naar 180 milliseconden onder belasting.
 
-**Kosten en tijdlijn:** € 1.300 (Database Tuning Package) — productieklaar en binnen 4 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.300 (Database Tuning Package) - productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
 

@@ -1,6 +1,6 @@
 ✅❌ RLS in the schema but never enabled. An API key sitting in client-side JS. No incident response plan. No sub-processor list. Four failed categories, three weeks before a procurement deadline.
 
-The sales conversation shifts from "does this solve our problem" to "can your architecture survive our procurement process" — and most AI-builder products were never evaluated against that checklist during development.
+The sales conversation shifts from "does this solve our problem" to "can your architecture survive our procurement process" - and most AI-builder products were never evaluated against that checklist during development.
 
 ❌ Row Level Security present but not actually enabled or policy-scoped
 ❌ Frontend-only payment flows with no server-side webhook confirmation
@@ -12,7 +12,7 @@ The sales conversation shifts from "does this solve our problem" to "can your ar
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-One founder failed four of six scorecard categories three weeks before a procurement deadline — we closed every gap and the review passed on the first submission, closing the deal on time. (€5,400, Enterprise Hardening Package — 13 business days.) 🚀
+One founder failed four of six scorecard categories three weeks before a procurement deadline - we closed every gap and the review passed on the first submission, closing the deal on time. (€5,400, Enterprise Hardening Package - 13 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/enterprise-architecture-readiness-scorecard-procurement
 

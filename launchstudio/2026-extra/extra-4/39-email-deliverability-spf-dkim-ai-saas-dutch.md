@@ -89,9 +89,9 @@ LaunchStudio's ingenieurs configureerden correcte SPF-, DKIM- en DMARC-records v
 **Resultaat:** Sem's bevestigings-e-mails belanden nu in de primaire inbox bij grote providers in plaats van spam. Het aantal telefoontjes voor locatieondersteuning met de vraag "is mijn boeking doorgegaan" is tot bijna nul gedaald.
 
 > *"Ik heb weken besteed aan het debuggen van de boekingslogica, denkend dat die kapot was. De daadwerkelijke bug zat in DNS-instellingen waarvan ik niet eens wist dat ze bestonden."*
-> — **Sem Verstraeten, Oprichter, BoekingsMail (Kampen)**
+> - **Sem Verstraeten, Oprichter, BoekingsMail (Kampen)**
 
-**Kosten en tijdlijn:** € 500 (SPF-, DKIM- en DMARC-configuratie plus afleverbaarheidstesten over grote inboxproviders) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 500 (SPF-, DKIM- en DMARC-configuratie plus afleverbaarheidstesten over grote inboxproviders) - voltooid in 3 werkdagen.
 
 ---
 

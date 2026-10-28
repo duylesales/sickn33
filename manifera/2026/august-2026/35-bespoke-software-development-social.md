@@ -19,7 +19,7 @@ You are paying for a tool AND paying again to work around its limitations.
 
 When these signals converge, the economics shift decisively toward **bespoke software development**.
 
-The break-even point? Typically 14–20 months. By Year 3, your bespoke system becomes a competitive weapon — not a cost center.
+The break-even point? Typically 14–20 months. By Year 3, your bespoke system becomes a competitive weapon - not a cost center.
 
 At Manifera, we use the Strangler Fig pattern to migrate you out safely. No Big Bang rewrites. No downtime. Module by module.
 

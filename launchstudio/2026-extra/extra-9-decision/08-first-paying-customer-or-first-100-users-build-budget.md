@@ -31,7 +31,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-There's a belief buried in most launch budgets that nobody says out loud: that one paying customer and a hundred users are the same destination at different distances — that you build the product, and then whichever arrives first, arrives first.
+There's a belief buried in most launch budgets that nobody says out loud: that one paying customer and a hundred users are the same destination at different distances - that you build the product, and then whichever arrives first, arrives first.
 
 They are not the same destination. They demand different engineering, in different order, at meaningfully different prices, and the founders who overspend at this stage are almost always the ones who budgeted for both because they hadn't decided which they were chasing. Scoping for one and getting the other is recoverable in a fortnight. Scoping for both simultaneously typically adds 40–60% to an engagement and delays it by weeks, in exchange for capability that half of it will sit unused for a year.
 
@@ -49,9 +49,9 @@ Same product. Almost no overlap in what makes it ready.
 
 If your first goal is a signed contract, the money goes here:
 
-**The boundary, done thoroughly** (typically the +€500 security work). Server-side authorization on every route, with ownership enforced at the database rather than in application handlers. For a B2B customer this isn't hygiene — it's a procurement question you will be asked directly.
+**The boundary, done thoroughly** (typically the +€500 security work). Server-side authorization on every route, with ownership enforced at the database rather than in application handlers. For a B2B customer this isn't hygiene - it's a procurement question you will be asked directly.
 
-**Billing depth, not billing breadth.** You need one payment method to work perfectly, not four to work adequately. Often you need none at all: an invoice on thirty-day terms is what most EU B2B buyers prefer anyway. When you do integrate, the money is in state — webhook signature verification, idempotency so a redelivered event doesn't double-provision, a plan state stored in your own database, defined behaviour for a failed renewal.
+**Billing depth, not billing breadth.** You need one payment method to work perfectly, not four to work adequately. Often you need none at all: an invoice on thirty-day terms is what most EU B2B buyers prefer anyway. When you do integrate, the money is in state - webhook signature verification, idempotency so a redelivered event doesn't double-provision, a plan state stored in your own database, defined behaviour for a failed renewal.
 
 **The paperwork surface.** A processing agreement, a subprocessor list, a stated hosting region, a data export they can run. Cheap to produce, and it blocks signature if absent.
 
@@ -73,7 +73,7 @@ If your first goal is a hundred people using the product, the money goes somewhe
 
 **Capacity that survives a spike.** A hundred users rarely arrive evenly. They arrive because you posted somewhere, which means forty of them arrive in ten minutes. Connection pooling, a queue for anything slow in the request path, and a host tier that doesn't fall over are the difference between a launch and a screenshot of an error page.
 
-**Observation at volume.** Per-user event logging and error tracking, because with a hundred users you cannot watch individuals — you need aggregates to know that eleven people abandoned onboarding at step three.
+**Observation at volume.** Per-user event logging and error tracking, because with a hundred users you cannot watch individuals - you need aggregates to know that eleven people abandoned onboarding at step three.
 
 Explicitly *not* in Path B: subscription billing depth, dunning, refunds, processing agreements, enterprise access-control granularity.
 
@@ -85,11 +85,11 @@ Both paths sit on the same floor, and it is worth knowing exactly what it is so 
 
 Server-side authorization on every route. Secrets out of the browser. SSL on your own domain. A deployment you can repeat and roll back. Backups with a tested restore. Error tracking.
 
-That's roughly 40% of either budget, and it's the part that carries forward regardless of which direction you go afterwards. Which means the sequencing question isn't "which path do I buy" so much as "I buy the floor, plus one path's worth of depth" — and the second path, when you need it, costs its own increment rather than the whole thing again.
+That's roughly 40% of either budget, and it's the part that carries forward regardless of which direction you go afterwards. Which means the sequencing question isn't "which path do I buy" so much as "I buy the floor, plus one path's worth of depth" - and the second path, when you need it, costs its own increment rather than the whole thing again.
 
 ## The Cost of Choosing Wrong
 
-**Building for a hundred users and getting one paying customer** is the more common error, and it wastes real money: a signup flow nobody self-serves through, deliverability work for emails you could have sent by hand, rate limiting against traffic that never came. Typically €1,500–€2,500 of premature capability. Recoverable — none of it is wrong, it's just early — but it was spent instead of being spent on the processing agreement and payment-state work your one customer actually asked for, and it delayed their signature by three weeks.
+**Building for a hundred users and getting one paying customer** is the more common error, and it wastes real money: a signup flow nobody self-serves through, deliverability work for emails you could have sent by hand, rate limiting against traffic that never came. Typically €1,500–€2,500 of premature capability. Recoverable - none of it is wrong, it's just early - but it was spent instead of being spent on the processing agreement and payment-state work your one customer actually asked for, and it delayed their signature by three weeks.
 
 **Building for one paying customer and getting a hundred users** fails louder and faster. You post somewhere, forty people try to sign up in ten minutes, and there's no self-serve signup, so you're creating accounts by hand at midnight; the verification emails you cobbled together land in spam; your starter database tier saturates its connection limit and starts erroring. The financial waste is smaller. The reputational cost of a hundred people meeting a broken first impression is not, because that audience does not come back for the second launch.
 
@@ -101,40 +101,40 @@ Worth being clear-eyed about, because founders often chase a hundred users for r
 
 A hundred free users tells you about *interest and activation*: whether people understand your value proposition, where onboarding loses them, which feature they open first. It tells you almost nothing about willingness to pay, and a startling number of scale-up founders have discovered that a thousand engaged free users converted at under 1%.
 
-One paying customer tells you about *value and price*: that this problem is worth money to someone, roughly how much, and what a buyer needs before money moves — including all the procurement and compliance requirements you will meet again with every subsequent customer.
+One paying customer tells you about *value and price*: that this problem is worth money to someone, roughly how much, and what a buyer needs before money moves - including all the procurement and compliance requirements you will meet again with every subsequent customer.
 
-For a fundraising conversation, one paying B2B customer at €400 a month is generally a stronger artefact than a hundred free users, because it proves something harder. For a product-led consumer or prosumer tool where the eventual model is self-serve, the hundred users genuinely are the right target — the activation data is the thing you can't get any other way.
+For a fundraising conversation, one paying B2B customer at €400 a month is generally a stronger artefact than a hundred free users, because it proves something harder. For a product-led consumer or prosumer tool where the eventual model is self-serve, the hundred users genuinely are the right target - the activation data is the thing you can't get any other way.
 
 ## The Sequence That Costs Least
 
 For the majority of B2B SaaS at this stage, one order dominates: **paying customer first, hundred users second.**
 
-The reasons are financial rather than philosophical. The paying-customer path is cheaper (€1,500–€3,000 against €3,000–€5,000). It is faster to deliver, because there's less of it. It generates cash that can fund the second phase. And crucially, the work is additive — the boundary, the deployment, the backups all carry forward, so going on to build the self-serve surface later costs its own increment and nothing extra.
+The reasons are financial rather than philosophical. The paying-customer path is cheaper (€1,500–€3,000 against €3,000–€5,000). It is faster to deliver, because there's less of it. It generates cash that can fund the second phase. And crucially, the work is additive - the boundary, the deployment, the backups all carry forward, so going on to build the self-serve surface later costs its own increment and nothing extra.
 
-Do it the other way and the paying customer's requirements — processing agreement, payment state, access granularity — arrive as a second engagement anyway, and they arrive under time pressure, because there's a contract waiting on them.
+Do it the other way and the paying customer's requirements - processing agreement, payment state, access granularity - arrive as a second engagement anyway, and they arrive under time pressure, because there's a contract waiting on them.
 
 The exception is genuine: if your product is inherently self-serve, priced at €12 a month, with no procurement process to satisfy, then the hundred-user path *is* the paying-customer path, and Path B is simply your Path A. Know which of these you are. The mistake is being a B2B company that budgets like a consumer one.
 
-Behind the fixed price is Manifera, a software company that has spent eleven years watching which early architectural choices survive growth and which quietly don't — the [record of delivered systems](https://www.manifera.com/portfolio/) is what makes the "buy the floor, add one path" advice specific rather than theoretical.
+Behind the fixed price is Manifera, a software company that has spent eleven years watching which early architectural choices survive growth and which quietly don't - the [record of delivered systems](https://www.manifera.com/portfolio/) is what makes the "buy the floor, add one path" advice specific rather than theoretical.
 
-Two goals, two budgets, one shared floor — and pricing them separately usually reveals a gap of a few thousand euros that nobody had noticed they were about to spend. [Price both paths side by side in the calculator](https://launchstudio.eu/en/#calculator) before you commit to either.
+Two goals, two budgets, one shared floor - and pricing them separately usually reveals a gap of a few thousand euros that nobody had noticed they were about to spend. [Price both paths side by side in the calculator](https://launchstudio.eu/en/#calculator) before you commit to either.
 
 ## Real example
 
 ### A Scale-Up Founder in Action: The Signup Flow That Never Got Used
 
-Wouter Lansink ran Kaliber, a Nijmegen-built quality-inspection SaaS for metal fabrication workshops, made in Bolt and running as a free beta. He arrived with a €5,400 scope covering self-serve signup, email verification, rate limiting, a Stripe subscription integration and analytics — a hundred-user launch budget, assembled because a hundred users was the number in his head from an accelerator dashboard.
+Wouter Lansink ran Kaliber, a Nijmegen-built quality-inspection SaaS for metal fabrication workshops, made in Bolt and running as a free beta. He arrived with a €5,400 scope covering self-serve signup, email verification, rate limiting, a Stripe subscription integration and analytics - a hundred-user launch budget, assembled because a hundred users was the number in his head from an accelerator dashboard.
 
 The scoping call started with a different question: who has actually said they would pay? The answer was two fabrication workshops, one of which had already sent a procurement questionnaire asking where data was hosted and whether Kaliber could sign a processing agreement. Nobody was waiting to self-serve. Kaliber's buyers were operations managers who bought by purchase order and expected an invoice.
 
 The scope was rebuilt as Path A plus the shared floor. Workshop-scoped authorization enforced with row-level policies rather than route handlers, inspection photos moved from guessable public storage paths to signed URLs, a nightly backup with a restore Wouter performed himself, uptime checks on login and report submission, and a documented data export. No self-serve signup, no Stripe, no rate limiting. €2,650 instead of €5,400, and the accounts for both workshops' twenty-three users were created by hand in under an hour.
 
-**Result:** Both workshops signed within five weeks, at €480 a month each, invoiced quarterly. Kaliber added self-serve signup, deliverability configuration and Stripe eleven months later, funded from revenue — and by then Wouter knew from customer conversations that the self-serve tier needed a different price point than the one he'd have built in month one.
+**Result:** Both workshops signed within five weeks, at €480 a month each, invoiced quarterly. Kaliber added self-serve signup, deliverability configuration and Stripe eleven months later, funded from revenue - and by then Wouter knew from customer conversations that the self-serve tier needed a different price point than the one he'd have built in month one.
 
 > *"I'd budgeted for a hundred strangers and I had two buyers with purchase orders. Half of what I was about to build was for an audience I hadn't met yet."*
-> — **Wouter Lansink, Founder, Kaliber (Nijmegen)**
+> - **Wouter Lansink, Founder, Kaliber (Nijmegen)**
 
-**Cost & Timeline:** €2,650 (Launch Ready Package, workshop-scoped authorization, storage isolation and continuity) — live in 10 business days.
+**Cost & Timeline:** €2,650 (Launch Ready Package, workshop-scoped authorization, storage isolation and continuity) - live in 10 business days.
 
 ---
 
@@ -186,7 +186,7 @@ Uncomfortable but recoverable in one to two weeks, since the shared floor is alr
       "name": "What exactly is the shared floor between the two budgets?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Server-side authorization on every route, secrets out of the browser, SSL on your own domain, a repeatable deployment with rollback, backups with a tested restore, and error tracking — roughly 40% of either budget."
+        "text": "Server-side authorization on every route, secrets out of the browser, SSL on your own domain, a repeatable deployment with rollback, backups with a tested restore, and error tracking - roughly 40% of either budget."
       }
     },
     {

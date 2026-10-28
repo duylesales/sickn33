@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The Netherlands has the highest share of part-time work in Europe, and a four-day contract raises no eyebrows here in the way it would in most countries. That makes the decision easier to act on and, paradoxically, easier to take lightly. Working four days changes your income, your pension accrual, your borrowing capacity and — in ways candidates rarely anticipate — how a technical role actually functions. It is frequently an excellent decision. It is worth making with the full picture rather than on the strength of a free Friday.
+The Netherlands has the highest share of part-time work in Europe, and a four-day contract raises no eyebrows here in the way it would in most countries. That makes the decision easier to act on and, paradoxically, easier to take lightly. Working four days changes your income, your pension accrual, your borrowing capacity and - in ways candidates rarely anticipate - how a technical role actually functions. It is frequently an excellent decision. It is worth making with the full picture rather than on the strength of a free Friday.
 
 To be clear about what is on the table: this article is about a genuine reduction in hours with a proportional reduction in pay, which is the standard Dutch arrangement. Employer-wide four-day weeks at full pay exist but remain rare here, and the rest of this guide applies with a different arithmetic.
 
@@ -63,7 +63,7 @@ These are not equivalent, and vacancies that mention a four-day week rarely spec
 
 **Mortgage capacity.** Lenders assess your contractual income. If a house purchase is on the horizon, the timing of a reduction matters, and it is worth discussing with an adviser before signing.
 
-**Costs that fall.** Commuting on fewer days, childcare on fewer days, and — for many people — the incidental spending that a five-day work rhythm produces. The net effect is often better than the gross figure suggests, though rarely enough to be neutral.
+**Costs that fall.** Commuting on fewer days, childcare on fewer days, and - for many people - the incidental spending that a five-day work rhythm produces. The net effect is often better than the gross figure suggests, though rarely enough to be neutral.
 
 ## What Changes Professionally
 
@@ -81,21 +81,21 @@ These are not equivalent, and vacancies that mention a four-day week rarely spec
 
 There are structural reasons this arrangement suits data and AI work better than many other professions.
 
-The work is largely asynchronous and produces artefacts — code, documents, dashboards, pipelines — that colleagues can use without you present. Model training and data processing run without supervision. Concentration is the scarce input, and a well-rested four-day week frequently produces more usable output than a tired five-day one.
+The work is largely asynchronous and produces artefacts - code, documents, dashboards, pipelines - that colleagues can use without you present. Model training and data processing run without supervision. Concentration is the scarce input, and a well-rested four-day week frequently produces more usable output than a tired five-day one.
 
-Dutch teams are also used to it. In most organisations here, several colleagues already work four days, which means the practical habits — written handover, meetings scheduled on common days, no single point of failure — often exist already.
+Dutch teams are also used to it. In most organisations here, several colleagues already work four days, which means the practical habits - written handover, meetings scheduled on common days, no single point of failure - often exist already.
 
 ## The Trap: Four Days of Pay, Five Days of Work
 
 The most common failure mode is straightforward. The workload is not reduced, only the hours are, and the gap is filled by checking messages on the day off, taking "just one" meeting, and gradually restoring a five-day week at four days' pay.
 
-This happens most often when the reduction is treated as a personal arrangement rather than an organisational one — when nobody has adjusted responsibilities, project commitments or expectations to match. It is worth naming directly in the conversation: what comes off the list, or who covers it.
+This happens most often when the reduction is treated as a personal arrangement rather than an organisational one - when nobody has adjusted responsibilities, project commitments or expectations to match. It is worth naming directly in the conversation: what comes off the list, or who covers it.
 
 Signals that you are heading there: recurring meetings scheduled on your non-working day, being the only person who knows how something works, and a manager who says "we will see how it goes" rather than agreeing specifics.
 
 ## The Legal Position
 
-Under the **Flexible Working Act**, employees of employers with at least ten employees can request a change in working hours after a qualifying period of employment. For hours, an employer must generally agree unless there is a serious business interest against it — a higher threshold than applies to requests about workplace.
+Under the **Flexible Working Act**, employees of employers with at least ten employees can request a change in working hours after a qualifying period of employment. For hours, an employer must generally agree unless there is a serious business interest against it - a higher threshold than applies to requests about workplace.
 
 If you are negotiating at the point of hiring rather than changing an existing contract, this is simply a term of the offer, and many Dutch employers expect the question. Some sectors also have **collective labour agreement** provisions on working hours, reduced-hours arrangements and how part-time work interacts with allowances, so check whether a CAO applies to you.
 
@@ -103,7 +103,7 @@ Whatever is agreed, put the hours, the fixed working days and any arrangement ab
 
 ## Questions to Ask Before Agreeing
 
-- **Which arrangement is this — 32 hours, or full-time hours compressed?**
+- **Which arrangement is this - 32 hours, or full-time hours compressed?**
 - **Which day is off, and is it fixed?** A fixed day is far easier to protect than a flexible one.
 - **What is being removed from the role, or who covers it?**
 - **How are recurring meetings scheduled?**
@@ -133,7 +133,7 @@ Whatever is agreed, put the hours, the fixed working days and any arrangement ab
 
 Fix the day and defend it. A consistent non-working day becomes part of how the team plans; a variable one never does.
 
-Make handover a written habit. A short note at the end of your last working day — what is running, what is waiting, who decides what in your absence — prevents most of the friction.
+Make handover a written habit. A short note at the end of your last working day - what is running, what is waiting, who decides what in your absence - prevents most of the friction.
 
 Remove something explicitly. A reduction in hours without a reduction in scope is not a reduction.
 
@@ -145,7 +145,7 @@ Say no to the small exceptions early. The first meeting you accept on your day o
 
 This looks trivial and turns out to matter a great deal, because the day you choose determines how easy the arrangement is to protect.
 
-**Friday.** The most common choice, and the easiest for a long weekend. The drawback is that Friday is when loose ends are tied up, and you may find yourself carrying unfinished work into the following week — or quietly finishing it on Friday morning.
+**Friday.** The most common choice, and the easiest for a long weekend. The drawback is that Friday is when loose ends are tied up, and you may find yourself carrying unfinished work into the following week - or quietly finishing it on Friday morning.
 
 **Wednesday.** Splits the week, so you are never away for more than two consecutive working days, which suits roles with incidents or stakeholder contact. It is also a common choice among parents in the Netherlands, so schools, sports clubs and childcare are organised around it.
 
@@ -153,7 +153,7 @@ This looks trivial and turns out to matter a great deal, because the day you cho
 
 **Variable days.** Flexible in theory, unprotectable in practice. Colleagues cannot internalise a schedule that changes, so meetings land on your day off and you end up negotiating every week.
 
-Two practical checks before choosing. Find out which day carries the team's fixed meetings — planning, stand-ups with the business, steering groups — and avoid it rather than fighting it every month. And ask whether other colleagues already have a day off, since a team where four people are absent on Friday functions differently from one where absences are spread.
+Two practical checks before choosing. Find out which day carries the team's fixed meetings - planning, stand-ups with the business, steering groups - and avoid it rather than fighting it every month. And ask whether other colleagues already have a day off, since a team where four people are absent on Friday functions differently from one where absences are spread.
 
 ## Real example
 
@@ -169,7 +169,7 @@ A year later the arrangement is stable and her manager has adopted the same hand
 
 ## Key Takeaways
 
-- Clarify which arrangement is on offer — 32 hours, compressed full-time hours, or a leave-based reduction — because they differ substantially.
+- Clarify which arrangement is on offer - 32 hours, compressed full-time hours, or a leave-based reduction - because they differ substantially.
 - The financial effect extends beyond salary to holiday allowance, pension accrual, statutory calculation bases and borrowing capacity.
 - Dutch law makes requests for fewer hours relatively strong, and a CAO may add provisions; put hours, fixed days and duty arrangements in writing.
 - The common failure is four days of pay for five days of work, which happens when hours are reduced but scope is not.
@@ -177,7 +177,7 @@ A year later the arrangement is stable and her manager has adopted the same hand
 
 ## Where to Start
 
-Employers differ enormously in how normally they treat four-day contracts, and the question is best asked before the offer stage — as is whether the commute on your working days is one you want four times a week.
+Employers differ enormously in how normally they treat four-day contracts, and the question is best asked before the offer stage - as is whether the commute on your working days is one you want four times a week.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -193,7 +193,7 @@ Holiday allowance and any thirteenth month fall with salary, pension accrual is 
 Agree explicitly what is removed or who covers it, fix the non-working day, keep meetings off it and review the arrangement after six months.
 
 ### (Scenario: candidate concerned about career) Does working four days affect progression?
-It should not, and in practice it depends on the organisation. Ask whether anyone senior works four days — the answer tells you how the employer really treats it.
+It should not, and in practice it depends on the organisation. Ask whether anyone senior works four days - the answer tells you how the employer really treats it.
 
 ### (Scenario: candidate in a technical role) Does a four-day week work in AI and data roles?
 Often well, because the work is asynchronous and produces artefacts others can use. Protect continuous blocks for modelling and debugging, and arrange handover in writing.
@@ -203,7 +203,7 @@ Often well, because the work is asynchronous and produces artefacts others can u
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I ask for a four-day week in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — part-time work is common and the Flexible Working Act supports requests for fewer hours."}},
+    {"@type": "Question", "name": "Can I ask for a four-day week in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - part-time work is common and the Flexible Working Act supports requests for fewer hours."}},
     {"@type": "Question", "name": "What does a four-day week cost beyond salary?", "acceptedAnswer": {"@type": "Answer", "text": "Holiday allowance, pension accrual, statutory bases and borrowing capacity all reduce."}},
     {"@type": "Question", "name": "How do I avoid working five days for four days' pay?", "acceptedAnswer": {"@type": "Answer", "text": "Remove scope explicitly, fix the day, keep meetings off it and review after six months."}},
     {"@type": "Question", "name": "Does working four days affect progression?", "acceptedAnswer": {"@type": "Answer", "text": "It should not; ask whether anyone senior works four days to see how the employer treats it."}},

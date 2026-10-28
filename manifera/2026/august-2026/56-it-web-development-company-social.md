@@ -4,7 +4,7 @@ When CISOs evaluate an **IT web development company**, they usually ask: "Is you
 
 Two years later, a junior employee accesses the CEO's unencrypted payroll data just by changing `id=402` to `id=1` in the URL. You get a massive GDPR fine.
 
-This is "Security by Obscurity" — hiding the keys under the doormat and hoping the burglar doesn't look. 
+This is "Security by Obscurity" - hiding the keys under the doormat and hoping the burglar doesn't look. 
 
 **How cheap agencies fail at security:**
 ❌ **IDOR Vulnerabilities:** Assuming users won't guess URLs instead of enforcing server-side RBAC checks on every API endpoint.

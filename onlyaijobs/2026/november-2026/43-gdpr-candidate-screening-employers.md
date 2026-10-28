@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A single vacancy for a data scientist can generate hundreds of CVs, motivation letters, assessment results, interview notes, reference checks and emails. All of it is personal data. Many employers handle this information informally: CVs forwarded between managers, spreadsheets with candidate comments stored indefinitely, quick online searches about candidates, rejected applications kept "just in case". For companies hiring AI and data professionals, this carries an extra reputational risk: candidates who work with data every day are more likely to notice — and question — careless handling of their own. The GDPR sets clear boundaries, and Dutch regulators and rules add practical specifics.
+A single vacancy for a data scientist can generate hundreds of CVs, motivation letters, assessment results, interview notes, reference checks and emails. All of it is personal data. Many employers handle this information informally: CVs forwarded between managers, spreadsheets with candidate comments stored indefinitely, quick online searches about candidates, rejected applications kept "just in case". For companies hiring AI and data professionals, this carries an extra reputational risk: candidates who work with data every day are more likely to notice - and question - careless handling of their own. The GDPR sets clear boundaries, and Dutch regulators and rules add practical specifics.
 
 This article provides general information, not legal advice.
 
@@ -61,7 +61,7 @@ Employers typically rely on steps taken at the candidate's request prior to ente
 
 ## Retention: How Long May You Keep Application Data?
 
-The **Dutch Data Protection Authority** has indicated that application data should generally be deleted no later than four weeks after the end of the application procedure. With the candidate's consent, the data can be kept for longer — for example, up to one year — to consider the candidate for future vacancies. The data of the candidate who is hired becomes part of the personnel file.
+The **Dutch Data Protection Authority** has indicated that application data should generally be deleted no later than four weeks after the end of the application procedure. With the candidate's consent, the data can be kept for longer - for example, up to one year - to consider the candidate for future vacancies. The data of the candidate who is hired becomes part of the personnel file.
 
 In practice, this means employers need:
 
@@ -71,7 +71,7 @@ In practice, this means employers need:
 
 ## Online Screening of Candidates
 
-Searching for candidates online — on professional networks, code repositories or social media — is common, particularly for technical roles where public work is relevant. Under the GDPR, online screening must be necessary and proportionate to the role, limited to relevant information and transparent to candidates.
+Searching for candidates online - on professional networks, code repositories or social media - is common, particularly for technical roles where public work is relevant. Under the GDPR, online screening must be necessary and proportionate to the role, limited to relevant information and transparent to candidates.
 
 Practical guidelines:
 
@@ -90,7 +90,7 @@ Contacting references can provide valuable information, but should be done with 
 
 **Certificate of Conduct (VOG).** For some positions, employers ask candidates for a Certificate of Conduct (Verklaring Omtrent het Gedrag), issued by **Justis** on behalf of the Ministry of Justice and Security. The VOG does not disclose criminal records to the employer; it states whether the candidate's history is relevant to the specific risks of the position. Employers must specify the relevant screening profile. For AI and data roles with access to sensitive data or financial systems, a VOG can be appropriate.
 
-**Pre-employment screening.** More extensive screening — verifying diplomas, previous employment or financial integrity — is common in financial services, government and security-sensitive roles. It must be proportionate to the position, transparent to candidates and conducted only at an appropriate stage, usually for selected candidates.
+**Pre-employment screening.** More extensive screening - verifying diplomas, previous employment or financial integrity - is common in financial services, government and security-sensitive roles. It must be proportionate to the position, transparent to candidates and conducted only at an appropriate stage, usually for selected candidates.
 
 ## Medical Questions and Examinations
 
@@ -124,7 +124,7 @@ Hiring for AI and data roles often involves technical assessments: take-home ass
 
 **Test datasets.** Never share real personal data with candidates in assignments. Use public, synthetic or properly anonymised data.
 
-**Submissions.** Candidate submissions — code, reports, presentations — are personal data linked to the candidate and should follow the same retention rules as other application data. Do not reuse candidates' work for business purposes without agreement.
+**Submissions.** Candidate submissions - code, reports, presentations - are personal data linked to the candidate and should follow the same retention rules as other application data. Do not reuse candidates' work for business purposes without agreement.
 
 **Evaluation notes.** Scores and comments on technical work should be based on predefined criteria and written factually, as candidates can request access to them.
 
@@ -132,7 +132,7 @@ Hiring for AI and data roles often involves technical assessments: take-home ass
 
 A scale-up recruiting data engineers keeps a shared spreadsheet with candidate names, links to profiles, salary expectations and informal comments from interviewers. After two years, the spreadsheet contains hundreds of candidates, including comments such as "seems too old for startup pace" and "not a culture fit".
 
-A rejected candidate submits an access request. The company discovers the spreadsheet, realises that retention periods were not respected and that some comments could suggest discriminatory reasoning. It responds to the request, deletes outdated data, introduces an applicant tracking system with automatic retention settings, trains interviewers to write job-related notes and updates its privacy notice. The incident costs time and reputation — but it is resolved before it reaches a regulator.
+A rejected candidate submits an access request. The company discovers the spreadsheet, realises that retention periods were not respected and that some comments could suggest discriminatory reasoning. It responds to the request, deletes outdated data, introduces an applicant tracking system with automatic retention settings, trains interviewers to write job-related notes and updates its privacy notice. The incident costs time and reputation - but it is resolved before it reaches a regulator.
 
 ## A Common Misconception
 
@@ -162,20 +162,20 @@ Many employers assume that GDPR compliance in recruitment is mainly about having
 
 ## Where to Start
 
-Check where applicant data currently lives in your organisation — systems, inboxes, spreadsheets — and set up a retention schedule before your next vacancy opens.
+Check where applicant data currently lives in your organisation - systems, inboxes, spreadsheets - and set up a retention schedule before your next vacancy opens.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: recruiter keeping CVs for future roles) How long may we keep rejected candidates' data?
-Generally up to four weeks after the procedure ends, according to the Dutch Data Protection Authority, or longer — for example up to a year — with the candidate's consent.
+Generally up to four weeks after the procedure ends, according to the Dutch Data Protection Authority, or longer - for example up to a year - with the candidate's consent.
 
 ### (Scenario: hiring manager checking candidates online) May we search for candidates online?
 Only when necessary and proportionate, limited to relevant professional information and with candidates informed in advance.
 
 ### (Scenario: employer asking for identification) Can we ask applicants for their BSN?
-No — the BSN may only be processed where the law permits it, which typically applies after hiring for payroll purposes.
+No - the BSN may only be processed where the law permits it, which typically applies after hiring for payroll purposes.
 
 ### (Scenario: employer hiring for sensitive data roles) Can we require a Certificate of Conduct?
 Yes, when proportionate to the risks of the position, using the relevant screening profile, usually for the selected candidate.
@@ -190,7 +190,7 @@ Candidates can request access to their personal data, which can include notes, s
   "mainEntity": [
     {"@type": "Question", "name": "How long may we keep rejected candidates' data?", "acceptedAnswer": {"@type": "Answer", "text": "Generally up to four weeks after the procedure, or longer with consent."}},
     {"@type": "Question", "name": "May we search for candidates online?", "acceptedAnswer": {"@type": "Answer", "text": "Only when necessary, proportionate, relevant and with candidates informed."}},
-    {"@type": "Question", "name": "Can we ask applicants for their BSN?", "acceptedAnswer": {"@type": "Answer", "text": "No — only where the law permits, typically after hiring."}},
+    {"@type": "Question", "name": "Can we ask applicants for their BSN?", "acceptedAnswer": {"@type": "Answer", "text": "No - only where the law permits, typically after hiring."}},
     {"@type": "Question", "name": "Can we require a Certificate of Conduct?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, when proportionate to the position's risks."}},
     {"@type": "Question", "name": "Do we have to share interview notes with candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Access requests can include notes, subject to limitations."}}
   ]

@@ -31,7 +31,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every AI model your product depends on will eventually be deprecated. This is not a hypothetical risk — it has already happened repeatedly since 2023, with providers regularly retiring older model versions on timelines measured in months, not years. Founders who build their product's core logic tightly coupled to one specific model version are building on borrowed time.
+Every AI model your product depends on will eventually be deprecated. This is not a hypothetical risk - it has already happened repeatedly since 2023, with providers regularly retiring older model versions on timelines measured in months, not years. Founders who build their product's core logic tightly coupled to one specific model version are building on borrowed time.
 
 ## Why Model Deprecation Catches Founders Off Guard
 
@@ -39,7 +39,7 @@ AI tools like Lovable and Bolt typically generate applications that call a speci
 
 ## The Architecture Pattern That Prevents This
 
-The fix is a well-established software engineering pattern: the abstraction layer. Instead of your application code calling a specific AI model directly everywhere it needs AI functionality, it calls an internal abstraction — a consistent interface that then routes to whichever model is currently configured. When a model gets deprecated, you update the routing configuration in one place, not throughout your entire codebase.
+The fix is a well-established software engineering pattern: the abstraction layer. Instead of your application code calling a specific AI model directly everywhere it needs AI functionality, it calls an internal abstraction - a consistent interface that then routes to whichever model is currently configured. When a model gets deprecated, you update the routing configuration in one place, not throughout your entire codebase.
 
 - **Centralize all AI calls** through a single service layer rather than scattering direct API calls throughout the application
 - **Standardize prompt templates** in a way that's testable independently from the rest of the application logic
@@ -49,7 +49,7 @@ The fix is a well-established software engineering pattern: the abstraction laye
 
 ## The Business Case for This Investment
 
-This architecture takes more upfront engineering effort than the "quick and direct" approach most AI-generated prototypes default to. For a founder testing an idea, that extra effort may not be worth it yet. But for a founder with paying customers, an unplanned forced migration — triggered by a provider's deprecation announcement with a 60-90 day countdown — is far more expensive and stressful than building the abstraction layer proactively.
+This architecture takes more upfront engineering effort than the "quick and direct" approach most AI-generated prototypes default to. For a founder testing an idea, that extra effort may not be worth it yet. But for a founder with paying customers, an unplanned forced migration - triggered by a provider's deprecation announcement with a 60-90 day countdown - is far more expensive and stressful than building the abstraction layer proactively.
 
 ## Where This Fits Into a Production Launch
 
@@ -61,12 +61,12 @@ Herre Roelevink has seen this pattern repeatedly: *"Founders come to us in a pan
 
 ## What Actually Changes When You Swap a Model Version
 
-Founders often assume a model swap is a one-line configuration change, and with a proper abstraction layer, the plumbing genuinely is. What still requires engineering judgment is that no two models — even two versions from the same provider — behave identically, even when the API contract looks unchanged on paper.
+Founders often assume a model swap is a one-line configuration change, and with a proper abstraction layer, the plumbing genuinely is. What still requires engineering judgment is that no two models - even two versions from the same provider - behave identically, even when the API contract looks unchanged on paper.
 
 **Five things that shift silently between model versions:**
 
 - **Context window size.** A newer model might accept a much larger context window, which sounds like a pure upgrade, but if your prompts were engineered around aggressive truncation to fit a smaller window, the new model's behavior on long inputs can differ in ways your old test cases never exercised.
-- **Instruction-following strictness.** Some models follow formatting instructions ("respond only in JSON") more literally than others. A parser tuned to tolerate a previous model's occasional preamble text can break entirely against a model that now returns clean JSON — or start silently failing against one that still adds commentary the old model never did.
+- **Instruction-following strictness.** Some models follow formatting instructions ("respond only in JSON") more literally than others. A parser tuned to tolerate a previous model's occasional preamble text can break entirely against a model that now returns clean JSON - or start silently failing against one that still adds commentary the old model never did.
 - **Token pricing and output verbosity.** Newer models are not always cheaper, and some are meaningfully more verbose by default, which affects both your AI cost line and any downstream logic that assumes a certain response length or truncates output at a fixed character count.
 - **Latency profile.** Reasoning-heavy models can take several seconds longer per call than the model they replace. If your frontend was built assuming near-instant responses, with no loading state or streaming, users may perceive a working feature as broken rather than simply slower.
 - **Refusal and safety behavior.** Providers periodically adjust what a model will and won't respond to. A prompt that worked reliably for two years can start triggering refusals on a new version for content it previously handled without issue, particularly in sensitive domains like health, finance, or legal advice.
@@ -77,9 +77,9 @@ Founders often assume a model swap is a one-line configuration change, and with 
 2. Run both the old and new model against that set and diff the outputs side by side, rather than eyeballing a handful of cases and calling it done.
 3. Flag any output where parsing fails, formatting changes, response length shifts dramatically, or the semantic content diverges in a way a customer would notice.
 4. Roll the new model out to a small percentage of live traffic first, with the old model still available as an automatic fallback, before cutting over entirely.
-5. Keep the old model's configuration and credentials available for at least a few weeks post-migration in case an edge case surfaces that your test set didn't catch — providers often keep deprecated models accessible on a legacy endpoint for exactly this reason.
+5. Keep the old model's configuration and credentials available for at least a few weeks post-migration in case an edge case surfaces that your test set didn't catch - providers often keep deprecated models accessible on a legacy endpoint for exactly this reason.
 
-This evaluation discipline is what separates a genuine "model swap" from a "deploy and hope it still works" swap. Founders who skip it because the abstraction layer made switching mechanically trivial often learn the difference the hard way — usually when a customer reports that a feature which worked fine yesterday is now returning garbled or subtly wrong output today, with no error message anywhere in the logs to explain why.
+This evaluation discipline is what separates a genuine "model swap" from a "deploy and hope it still works" swap. Founders who skip it because the abstraction layer made switching mechanically trivial often learn the difference the hard way - usually when a customer reports that a feature which worked fine yesterday is now returning garbled or subtly wrong output today, with no error message anywhere in the logs to explain why.
 
 ## Real example
 
@@ -91,12 +91,12 @@ When Kees's AI provider announced the deprecation of the specific model version 
 
 Kees contacted LaunchStudio with 45 days remaining before the deprecation deadline. The Manifera team built a centralized AI service layer, consolidating the dozen scattered API calls into a single, testable interface, standardized the prompt templates, and migrated PolisCheck to the newer model version with full regression testing against real historical policy documents to confirm output quality remained consistent.
 
-**Result:** PolisCheck migrated to the new model with zero service interruption, five days before the old model's deprecation deadline. As a bonus, the new centralized architecture meant Kees's next model transition — whenever it comes — would take days instead of weeks.
+**Result:** PolisCheck migrated to the new model with zero service interruption, five days before the old model's deprecation deadline. As a bonus, the new centralized architecture meant Kees's next model transition - whenever it comes - would take days instead of weeks.
 
 > *"I genuinely thought I might have to shut down and rebuild from scratch. LaunchStudio restructured the whole thing so it wasn't tied to one model anymore. Next time this happens, and it will, it won't be a crisis."*
-> — **Kees Visser, Founder, PolisCheck (Amersfoort)**
+> - **Kees Visser, Founder, PolisCheck (Amersfoort)**
 
-**Cost & Timeline:** €3,200 (Launch & Grow Package, architecture refactor) — completed in 16 business days, 5 days ahead of the deprecation deadline.
+**Cost & Timeline:** €3,200 (Launch & Grow Package, architecture refactor) - completed in 16 business days, 5 days ahead of the deprecation deadline.
 
 ---
 
@@ -112,11 +112,11 @@ A well-built abstraction layer makes cross-provider switching significantly easi
 
 ### Is this architecture overkill for an early-stage prototype with no paying customers yet?
 
-For pure prototyping and validation, the direct approach AI tools default to is usually fine — the goal is speed, not resilience. This architecture becomes valuable once you have paying customers who depend on continuity, which is typically the same point at which founders engage LaunchStudio for production readiness.
+For pure prototyping and validation, the direct approach AI tools default to is usually fine - the goal is speed, not resilience. This architecture becomes valuable once you have paying customers who depend on continuity, which is typically the same point at which founders engage LaunchStudio for production readiness.
 
 ### What happens if I ignore a deprecation notice entirely?
 
-Your application's AI features will stop working entirely once the old model is retired, with no gradual degradation — API calls to a deprecated model simply return errors. This is why deprecation notices need to be treated as hard deadlines, not suggestions.
+Your application's AI features will stop working entirely once the old model is retired, with no gradual degradation - API calls to a deprecated model simply return errors. This is why deprecation notices need to be treated as hard deadlines, not suggestions.
 
 ### Can Manifera help set up ongoing monitoring for upcoming model deprecations?
 

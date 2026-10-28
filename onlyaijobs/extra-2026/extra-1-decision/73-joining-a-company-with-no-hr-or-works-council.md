@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Twenty-five people, an owner who still writes code, no HR department, no salary scales, no annual review cycle and a contract that arrives as a two-page document someone adapted from a template. For candidates coming out of a bank, a hospital or a ministry, this is disorienting: all the machinery that surrounded employment has simply gone. Small Dutch employers include some of the best places to do data work — short lines, real problems, decisions in a day — and they also place more of the responsibility for your own position on you. It is worth knowing which parts of that responsibility are actually yours.
+Twenty-five people, an owner who still writes code, no HR department, no salary scales, no annual review cycle and a contract that arrives as a two-page document someone adapted from a template. For candidates coming out of a bank, a hospital or a ministry, this is disorienting: all the machinery that surrounded employment has simply gone. Small Dutch employers include some of the best places to do data work - short lines, real problems, decisions in a day - and they also place more of the responsibility for your own position on you. It is worth knowing which parts of that responsibility are actually yours.
 
 ## What "No HR" Means in Practice
 
@@ -53,7 +53,7 @@ Twenty-five people, an owner who still writes code, no HR department, no salary 
 
 The most important thing to understand is that employment protection here does not depend on the employer having an HR department.
 
-Statutory entitlements apply to a company of five as much as to one of five thousand: a minimum number of holiday days, holiday allowance, the employer's obligation to continue paying wages during illness for an extended period and to work on reintegration, notice periods, rules on ending employment, and in defined circumstances a transition payment when employment ends at the employer's initiative. Working time rules apply, and so do obligations under the **Working Conditions Act**, including assessing workplace risks — including for people working from home.
+Statutory entitlements apply to a company of five as much as to one of five thousand: a minimum number of holiday days, holiday allowance, the employer's obligation to continue paying wages during illness for an extended period and to work on reintegration, notice periods, rules on ending employment, and in defined circumstances a transition payment when employment ends at the employer's initiative. Working time rules apply, and so do obligations under the **Working Conditions Act**, including assessing workplace risks - including for people working from home.
 
 A small employer may be less aware of these obligations, which is a different problem from them not existing. The practical implication is that you may need to know your position better than your employer does.
 
@@ -61,13 +61,13 @@ A small employer may be less aware of these obligations, which is a different pr
 
 Under the **Works Councils Act**, an employer with at least fifty employees is in principle required to establish a works council. Below that threshold, lighter forms of representation exist in some circumstances, and many small companies have none at all.
 
-What you lose without one is collective input on things like working conditions, reorganisations and certain policies — including, increasingly, decisions about monitoring and algorithmic tools used on employees. What you gain is speed: changes do not wait for consultation.
+What you lose without one is collective input on things like working conditions, reorganisations and certain policies - including, increasingly, decisions about monitoring and algorithmic tools used on employees. What you gain is speed: changes do not wait for consultation.
 
 For most people in a twenty-person company, the absence of a works council is not the issue. It becomes the issue during a reorganisation, when there is no collective counterpart to the employer, and each employee negotiates alone.
 
 ## Does a Collective Agreement Apply?
 
-This is worth checking specifically, because it changes a great deal. Some small employers fall under a sector collective agreement — through membership of an employers' association or because an agreement has been declared generally binding for the sector — while others fall under none.
+This is worth checking specifically, because it changes a great deal. Some small employers fall under a sector collective agreement - through membership of an employers' association or because an agreement has been declared generally binding for the sector - while others fall under none.
 
 If one applies, you inherit salary scales, additional leave arrangements, pension provisions and often a training entitlement, regardless of the employer's size. If none applies, everything is individual, including the pension, which may not exist at all.
 
@@ -77,7 +77,7 @@ Ask directly: does a CAO apply to this company, and is there a pension scheme? T
 
 **Access.** You work directly with the person who decides. Ideas take days rather than quarters.
 
-**Breadth.** You will touch everything — data, infrastructure, analysis, deployment, the customer conversation — which builds range quickly.
+**Breadth.** You will touch everything - data, infrastructure, analysis, deployment, the customer conversation - which builds range quickly.
 
 **Visible impact.** Your work is a noticeable share of what the company does, which is hard to experience in a large organisation.
 
@@ -102,7 +102,7 @@ Ask directly: does a CAO apply to this company, and is there a pension scheme? T
 - **Does a collective agreement apply, and is there a pension scheme?**
 - **How is salary decided, and when is it reviewed?**
 - **Is there a training budget, and can it go in the contract?**
-- **Who handles employment questions — an external adviser, the payroll office, the director?**
+- **Who handles employment questions - an external adviser, the payroll office, the director?**
 - **What happened the last time someone left, and how many people left in the past two years?** In a company of twenty, this is a very informative number.
 - **Is there any form of employee representation?**
 - **Who would I learn from technically?**
@@ -112,7 +112,7 @@ Ask directly: does a CAO apply to this company, and is there a pension scheme? T
 
 In a large organisation, the policy is the backup. In a small one, the contract is all there is, so put everything in it: salary and when it is reviewed, hours and working pattern, holiday days, holiday allowance, pension arrangement or its absence, training budget and time, equipment and home working costs, notice on both sides, and any specific commitment made during the interviews.
 
-It is also worth having the contract read by someone competent — a lawyer, a union if you are a member, or your legal expenses insurer. An hour spent on that is cheap compared with discovering an unusual clause when you want to leave.
+It is also worth having the contract read by someone competent - a lawyer, a union if you are a member, or your legal expenses insurer. An hour spent on that is cheap compared with discovering an unusual clause when you want to leave.
 
 ## When to Accept
 
@@ -158,7 +158,7 @@ In a company of this size there is no organisational culture separate from the p
 
 **Ask who challenges them.** Owner-led companies where nobody disagrees with the founder make poor environments for technical judgement, because your professional opinion is only useful if it can prevail sometimes.
 
-None of this is about finding a perfect employer. It is about knowing, before you sign, whose judgement you are attaching yourself to — because in a company without HR, that judgement is the whole system.
+None of this is about finding a perfect employer. It is about knowing, before you sign, whose judgement you are attaching yourself to - because in a company without HR, that judgement is the whole system.
 
 ## Real example
 
@@ -172,12 +172,12 @@ He also asks how many people left in the past two years. Two of thirty, both for
 
 He has the contract reviewed through his legal expenses insurance, which flags a clause about intellectual property that would have covered his personal projects. It is narrowed before signing.
 
-Three years later he is still there and has negotiated two salary increases, both by raising it himself in January. His summary: everything he has, he asked for — and asking was entirely normal each time.
+Three years later he is still there and has negotiated two salary increases, both by raising it himself in January. His summary: everything he has, he asked for - and asking was entirely normal each time.
 
 ## Key Takeaways
 
 - Statutory employment protections in the Netherlands apply regardless of whether an employer has an HR department; a small employer may simply be less aware of them.
-- Works councils are in principle required from fifty employees, so smaller companies often have no collective counterpart — which matters most during a reorganisation.
+- Works councils are in principle required from fifty employees, so smaller companies often have no collective counterpart - which matters most during a reorganisation.
 - Check whether a collective agreement applies and whether a pension scheme exists; without them, everything is individual and the pension may be absent.
 - You gain access, breadth, impact and real flexibility, and you carry negotiation, development, fairness and conflict resolution yourself.
 - Put every agreement in the contract, have it reviewed, keep your own records and raise pay annually on your own initiative.
@@ -191,13 +191,13 @@ Browse current AI, machine learning and data jobs by category and distance, free
 ## Frequently Asked Questions
 
 ### (Scenario: candidate joining a small company) Do I have fewer rights without an HR department?
-No. Statutory entitlements — holiday, holiday allowance, sick pay obligations, notice, rules on ending employment — apply regardless of employer size. Small employers are sometimes simply less aware of them.
+No. Statutory entitlements - holiday, holiday allowance, sick pay obligations, notice, rules on ending employment - apply regardless of employer size. Small employers are sometimes simply less aware of them.
 
 ### (Scenario: candidate asking about representation) When is a works council required?
 In principle from fifty employees under the Works Councils Act, with lighter forms of representation possible below that. Its absence matters most during a reorganisation.
 
 ### (Scenario: candidate comparing packages) What should I check that larger employers provide automatically?
-Whether a collective agreement applies, whether there is a pension scheme, and whether a training budget and salary review exist — none of these is automatic.
+Whether a collective agreement applies, whether there is a pension scheme, and whether a training budget and salary review exist - none of these is automatic.
 
 ### (Scenario: candidate worried about conflict) What happens if I fall out with the owner?
 There is no HR to mediate and no internal grievance path. Keep your own records, and consider legal expenses insurance or union membership for access to advice.
@@ -210,7 +210,7 @@ Everything: salary and review date, hours, holiday, pension or its absence, trai
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I have fewer rights without an HR department?", "acceptedAnswer": {"@type": "Answer", "text": "No — statutory entitlements apply regardless of employer size."}},
+    {"@type": "Question", "name": "Do I have fewer rights without an HR department?", "acceptedAnswer": {"@type": "Answer", "text": "No - statutory entitlements apply regardless of employer size."}},
     {"@type": "Question", "name": "When is a works council required?", "acceptedAnswer": {"@type": "Answer", "text": "In principle from fifty employees, with lighter representation possible below that."}},
     {"@type": "Question", "name": "What should I check that larger employers provide automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Whether a CAO applies, whether a pension scheme exists and whether training and reviews are agreed."}},
     {"@type": "Question", "name": "What happens if I fall out with the owner?", "acceptedAnswer": {"@type": "Answer", "text": "No HR mediation or grievance path; keep records and arrange access to legal advice."}},

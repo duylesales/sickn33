@@ -10,7 +10,7 @@ Voordat u uw door AI gebouwde prototype voor echte gebruikers lanceert, moet u d
 
 Deze checklist is gebaseerd op onze ervaring met het beoordelen van honderden door AI gebouwde prototypes bij LaunchStudio. We hebben de 20 items geïdentificeerd die na de lancering het vaakst problemen veroorzaken – gerangschikt op ernst en gegroepeerd op categorie. Gebruik het als uw pre-lanceringsaudit voordat u uw eerste echte gebruiker accepteert.
 
-## Beveiliging (items 1–5) — Verplicht
+## Beveiliging (items 1–5) - Verplicht
 
 Alle vijf beveiligingsitems moeten vóór de lancering passeren. Als u een van deze zaken overslaat, ontstaat er een onmiddellijk risico voor uw gebruikers en mogelijke wettelijke aansprakelijkheid voor u.
 
@@ -54,7 +54,7 @@ Alle vijf beveiligingsitems moeten vóór de lancering passeren. Als u een van d
 
 **Hoe te verifiëren**: Probeer formulieren in te dienen met lege velden, extreem lange tekst, HTML-tags en speciale tekens. De applicatie moet ongeldige invoer weigeren met duidelijke foutmeldingen.
 
-## Betalingen (items 6–9) — Vereist als u betalingen accepteert
+## Betalingen (items 6–9) - Vereist als u betalingen accepteert
 
 ### 6. Stripe bevindt zich in de live-modus
 
@@ -80,7 +80,7 @@ Alle vijf beveiligingsitems moeten vóór de lancering passeren. Als u een van d
 
 **Waarom het ertoe doet**: zonder de juiste verificatie kunnen gebruikers toegang krijgen tot betaalde functies door rechtstreeks naar URL's te navigeren of de status aan de clientzijde te manipuleren.
 
-## Implementatie (items 10–14) — Essentieel
+## Implementatie (items 10–14) - Essentieel
 
 ### 10. App draait op uw eigen domein
 
@@ -102,7 +102,7 @@ Alle vijf beveiligingsitems moeten vóór de lancering passeren. Als u een van d
 
 **Controleer**: voor uw database zijn geautomatiseerde dagelijkse back-ups ingeschakeld en u hebt het herstellen vanaf een back-up minstens één keer getest.
 
-## Prestaties (items 15–18) — Sterk aanbevolen
+## Prestaties (items 15–18) - Sterk aanbevolen
 
 ### 15. Pagina wordt binnen 3 seconden geladen
 
@@ -120,7 +120,7 @@ Alle vijf beveiligingsitems moeten vóór de lancering passeren. Als u een van d
 
 **Check**: Open browserontwikkelaarstools op uw productiesite. Bij normaal gebruik mogen er geen JavaScript-fouten in de console voorkomen.
 
-## Juridisch en lancering (items 19–20) — Vereist voor de EU
+## Juridisch en lancering (items 19–20) - Vereist voor de EU
 
 ### 19. Servicevoorwaarden en privacybeleid van kracht
 
@@ -169,7 +169,7 @@ Lucas werkte samen met **LaunchStudio (door Manifera)**. Het technische team bev
 
 **Resultaat:** De tool van Lucas werd volledig productieklaar, waardoor hij binnen tien dagen na de lancering de beveiligingsaudits van zijn klanten kon doorstaan ​​en zijn eerste drie zakelijke klanten kon aanmelden.
 
-**Kosten en tijdlijn:** € 3.200 (groeipakket) — productieklaar en binnen 10 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 3.200 (groeipakket) - productieklaar en binnen 10 werkdagen geïmplementeerd.
 
 ---
 

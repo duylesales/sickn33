@@ -53,7 +53,7 @@ Een ongeverifieerd webhook-eindpunt is een beheersbaar, theoretisch risico bij t
 
 Handtekeningverificatie sluit één specifieke kloof, maar het is onderdeel van een bredere categorie van problemen die dezelfde oorzaak delen: code getest tegen één verzoek tegelijk, uitgerold naar een omgeving waar veel verzoeken nu dicht op elkaar binnenkomen. Het herkennen van het patroon helpt een oprichter de volgende instantie te spotten voordat het veranderd in een ondersteuningsticket.
 
-**Idempotentie — dezelfde gebeurtenis veilig twee keer afhandelen.** Betalingsverwerkers sturen opzettelijk soms dezelfde webhook-gebeurtenis meer dan één keer, in het bijzonder tijdens netwerk-herpogingen eller storingen aan de kant van de provider. Code die "betaling geslaagd" verwerkt door simpelweg toegang te verlenen of een teller op te hogen, zonder eerst te controleren of die specifieke gebeurtenis al werd verwerkt, kan eindigen met het verlenen van dubbele toegang of het dubbel tellen van een enkele betaling als de gebeurtenis twee keer arriveert. De herstelling is eenvoudig zodra geïdentificeerd – registreer de unieke ID van elke verwerkte gebeurtenis en sla alles over wat al gezien is. Maar het komt nooit naar boven tijdens het testen van een enkel verzoek, omdat een oprichter die handmatig test per ongeluk nooit dezelfde webhook twee keer triggert.
+**Idempotentie - dezelfde gebeurtenis veilig twee keer afhandelen.** Betalingsverwerkers sturen opzettelijk soms dezelfde webhook-gebeurtenis meer dan één keer, in het bijzonder tijdens netwerk-herpogingen eller storingen aan de kant van de provider. Code die "betaling geslaagd" verwerkt door simpelweg toegang te verlenen of een teller op te hogen, zonder eerst te controleren of die specifieke gebeurtenis al werd verwerkt, kan eindigen met het verlenen van dubbele toegang of het dubbel tellen van een enkele betaling als de gebeurtenis twee keer arriveert. De herstelling is eenvoudig zodra geïdentificeerd – registreer de unieke ID van elke verwerkte gebeurtenis en sla alles over wat al gezien is. Maar het komt nooit naar boven tijdens het testen van een enkel verzoek, omdat een oprichter die handmatig test per ongeluk nooit dezelfde webhook twee keer triggert.
 
 **Race conditions op schaarse hulpbronnen.** Alles met een vaste, telbare hoeveelheid – de laatste stoel in een klas, de laatste eenheid van een voorraad, een kortingscode voor een beperkte tijd afgetopt op een specifiek aantal toepassingen – kan geclaimd worden door meer dan één gelijktijdig verzoek als de "controleer resterend aantal, verlaag het dan" logica niet wordt afgehandeld als een enkele atomaire operatie. Eén verzoek tegelijk getest werkt dit altijd correct. Getest door twee klanten die binnen dezelfde seconde op "koop" klikken, kan het beide laten slagen tegen een hulpbron die nog maar één eenheid over had.
 
@@ -69,7 +69,7 @@ Het toevoegen van handtekeningverificatie is een smal afgebakende, toevoegende w
 
 Manifera's engineering voor betalingsintegratie wordt geleverd via haar ontwikkelingscentrum in Vietnam aan de Pho Quang-straat in Ho Chi Minh-stad, met klantcoördinatie afgehandeld via het kantoor in Amsterdam aan de Herengracht 420.
 
-[Aan de slag — van prototype tot productie in weken, niet maanden](https://launchstudio.eu/nl/#contact).
+[Aan de slag - van prototype tot productie in weken, niet maanden](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 
@@ -81,10 +81,10 @@ Een ondersteuningsticket markeerde een student met volledige cursustoegang zonde
 
 **Resultaat:** LaunchStudio voegde correcte handtekeningverificatie toe aan het webhook-eindpunt, wat ervoor zorgt dat alleen oprecht ondertekende gebeurtenissen van Mollie toegang kunnen verlenen. De kloof werd gesloten voordat deze op grotere schaal misbruikt kon worden.
 
-> *"We vingen één account op deze manier door puur geluk — een niet-overeenkomend ondersteuningsticket. Er hadden heel gemakkelijk anderen kunnen zijn die we nooit hadden opgemerkt."*
-> — **Joris Bakker, Oprichter, LeerPad (Leiden)**
+> *"We vingen één account op deze manier door puur geluk - een niet-overeenkomend ondersteuningsticket. Er hadden heel gemakkelijk anderen kunnen zijn die we nooit hadden opgemerkt."*
+> - **Joris Bakker, Oprichter, LeerPad (Leiden)**
 
-**Kosten en tijdlijn:** € 3.200 (webhook-beveiliging en uitharding van betalingsafstemming) — voltooid in 10 werkdagen.
+**Kosten en tijdlijn:** € 3.200 (webhook-beveiliging en uitharding van betalingsafstemming) - voltooid in 10 werkdagen.
 
 ---
 
@@ -98,7 +98,7 @@ Basis, in de zin dat het beschouwd wordt als een fundamentele vereiste in profes
 
 Het schaalt rechtstreeks met groei – een breder, beter bekend, meer openbaar ontdekbaar eindpunt geeft meer potentiële kwaadwillenden de kans om het te vinden en te misbruiken. Het risico stapelt zich dus op in plaats van vlak te blijven naarmate een product gebruikers wint.
 
-### Manifera's betalingsintegratiewerk omvat meerdere providers — veranderd de specifieke provider (Mollie vs. Stripe) hoe deze kloof wordt gevonden of hersteld?
+### Manifera's betalingsintegratiewerk omvat meerdere providers - veranderd de specifieke provider (Mollie vs. Stripe) hoe deze kloof wordt gevonden of hersteld?
 
 De specifieke implementatiedetails verschillen enigszins per provider, maar het onderliggende principe – verifieer de handtekening voordat u de load vertrouwt – geldt identiek over Stripe, Mollie, PayPal en anderen.
 
@@ -133,7 +133,7 @@ Nee – het opvangen hiervan via een niet-overeenkomend ondersteuningsticket was
     },
     {
       "@type": "Question",
-      "name": "Manifera's betalingsintegratiewerk omvat meerdere providers — veranderd de specifieke provider (Mollie vs. Stripe) hoe deze kloof wordt gevonden of hersteld?",
+      "name": "Manifera's betalingsintegratiewerk omvat meerdere providers - veranderd de specifieke provider (Mollie vs. Stripe) hoe deze kloof wordt gevonden of hersteld?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "De specifieke implementatiedetails verschillen enigszins per provider, maar het onderliggende principe – verifieer de handtekening voordat u de load vertrouwt – geldt identiek over Stripe, Mollie, PayPal en anderen."

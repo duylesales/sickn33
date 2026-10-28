@@ -20,11 +20,11 @@ target_persona: "A"
 }
 </script>
 
-A CTO at a short-term rental technology company building a platform for property managers who list the same property simultaneously across multiple booking channels — a host's own direct-booking site alongside several third-party marketplaces — faces a foundational architecture decision that directly determines whether double-bookings are a rare exception or a routine operational crisis: whether calendar availability is synchronized across channels through real-time, atomic locking from the start, or treated as an optimization to be layered on once basic channel connections are working.
+A CTO at a short-term rental technology company building a platform for property managers who list the same property simultaneously across multiple booking channels - a host's own direct-booking site alongside several third-party marketplaces - faces a foundational architecture decision that directly determines whether double-bookings are a rare exception or a routine operational crisis: whether calendar availability is synchronized across channels through real-time, atomic locking from the start, or treated as an optimization to be layered on once basic channel connections are working.
 
 ## Why Naive Periodic Polling Sync Produces Double-Bookings
 
-The most naive approach to multi-channel calendar sync — the system periodically polls each connected channel on a fixed interval, pulling and pushing availability updates every few minutes — introduces a specific window of vulnerability directly tied to how quickly a property's demand actually moves across channels. Even a moderately booked property, listed across three or four channels during a period of genuine demand, produces visibly broken behavior under this model: a guest completes a booking on one channel moments after a booking was confirmed on another, and because the polling cycle hasn't yet propagated the update, both bookings appear valid until the conflict surfaces, typically only when a property manager or guest actually discovers the overlap, often uncomfortably close to the stay date.
+The most naive approach to multi-channel calendar sync - the system periodically polls each connected channel on a fixed interval, pulling and pushing availability updates every few minutes - introduces a specific window of vulnerability directly tied to how quickly a property's demand actually moves across channels. Even a moderately booked property, listed across three or four channels during a period of genuine demand, produces visibly broken behavior under this model: a guest completes a booking on one channel moments after a booking was confirmed on another, and because the polling cycle hasn't yet propagated the update, both bookings appear valid until the conflict surfaces, typically only when a property manager or guest actually discovers the overlap, often uncomfortably close to the stay date.
 
 ## What Real-Time Channel-Sync Locking Actually Solves
 
@@ -32,7 +32,7 @@ Real-time channel-sync locking addresses the double-booking problem directly: th
 
 ## Why Retrofitting This Onto an Existing Platform Is Genuinely Difficult
 
-A short-term rental platform built initially around periodic polling sync, with real-time locking planned as a later optimization pass, tends to discover that atomic, real-time locking requires architectural decisions woven throughout the core availability logic — how availability state is centrally structured to support atomic locks shared across channels, how each channel integration's booking-confirmation webhook is handled to acquire and respect that lock rather than confirming independently, how the system reconciles a lock that a specific channel's API doesn't natively support propagating in real time. Retrofitting this architecture onto a platform already built around a simpler, periodic-polling model is a considerably larger undertaking than designing the availability architecture around real-time locking from the start, often requiring significant rework of every existing channel integration built without this architecture in mind.
+A short-term rental platform built initially around periodic polling sync, with real-time locking planned as a later optimization pass, tends to discover that atomic, real-time locking requires architectural decisions woven throughout the core availability logic - how availability state is centrally structured to support atomic locks shared across channels, how each channel integration's booking-confirmation webhook is handled to acquire and respect that lock rather than confirming independently, how the system reconciles a lock that a specific channel's API doesn't natively support propagating in real time. Retrofitting this architecture onto a platform already built around a simpler, periodic-polling model is a considerably larger undertaking than designing the availability architecture around real-time locking from the start, often requiring significant rework of every existing channel integration built without this architecture in mind.
 
 ## What Building This Architecture From the Start Actually Requires
 
@@ -64,7 +64,7 @@ Rezervačný Systém Košice, a Košice-based short-term rental property managem
 Manifera's Amsterdam team rebuilt the platform's core availability architecture around a single, centrally locked availability resource with event-driven propagation to every connected channel the moment a booking was confirmed anywhere, restructuring every existing channel integration to acquire and respect that shared lock, a substantial rework of systems that had been built without this architecture in mind.
 
 > *"In our own testing we never actually booked the same property from two channels at the same time, so everything looked fine. It wasn't until real guests across real channels were genuinely competing for the same dates that we understood our polling interval wasn't a minor delay, it was a real window where two different guests could both walk away thinking they'd booked the same room."*
-> — **CTO, Rezervačný Systém Košice**
+> - **CTO, Rezervačný Systém Košice**
 
 Rezervačný Systém Košice's rebuilt platform has processed its subsequent high-demand periods without a single cross-channel double-booking, and the platform now load-tests every new channel integration against genuinely simulated simultaneous booking attempts before enabling it for live property managers, not just orderly internal walkthroughs.
 
@@ -79,7 +79,7 @@ Rezervačný Systém Košice's rebuilt platform has processed its subsequent hig
 
 ## Scoping Your Own Short-Term Rental Platform's Channel-Sync Architecture
 
-Before onboarding property managers who list across multiple booking channels, design the core availability architecture around real-time, atomic locking from the start — a naive periodic-polling model that looks fine in orderly internal testing reveals its real problems only under genuine simultaneous cross-channel demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable, double-booking-proof channel-sync architecture.
+Before onboarding property managers who list across multiple booking channels, design the core availability architecture around real-time, atomic locking from the start - a naive periodic-polling model that looks fine in orderly internal testing reveals its real problems only under genuine simultaneous cross-channel demand, by which point retrofitting proper architecture is a substantial rework. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building reliable, double-booking-proof channel-sync architecture.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ Internal testing with a small, coordinated team rarely produces genuine simultan
 
 ### (Scenario: CTO evaluating a development team) What should I ask a development team about their multi-channel sync experience?
 
-Ask specifically how their architecture handles atomic locking across channels and how they reconcile channels whose own API doesn't support real-time propagation natively — genuine experience produces a specific, technical answer.
+Ask specifically how their architecture handles atomic locking across channels and how they reconcile channels whose own API doesn't support real-time propagation natively - genuine experience produces a specific, technical answer.
 
 <script type="application/ld+json">
 {

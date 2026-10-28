@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Eighty percent of AI-built projects never reach production. Some of those stop for good reasons — the idea did not work, the market was not there. Many stop because the founder could not tell whether their AI application was production ready, and either launched too early and got burned or waited forever for a certainty that never came — all because they could not answer one question: is my AI application production ready?
+Eighty percent of AI-built projects never reach production. Some of those stop for good reasons - the idea did not work, the market was not there. Many stop because the founder could not tell whether their AI application was production ready, and either launched too early and got burned or waited forever for a certainty that never came - all because they could not answer one question: is my AI application production ready?
 
 A scorecard does not replace an engineer's review, but it replaces guessing. The twenty questions below are grouped into five areas. Each "yes" scores one point. Be strict: "I think so" counts as no.
 
@@ -41,16 +41,16 @@ A scorecard does not replace an engineer's review, but it replaces guessing. The
 7. Has anyone ever restored a backup to prove it works?
 8. Can you delete a user's data completely if they ask you to?
 
-**Why it matters:** backups that have never been restored are hopes, not backups. And under GDPR, a deletion request is not optional — you need to be able to honour it within a month.
+**Why it matters:** backups that have never been restored are hopes, not backups. And under GDPR, a deletion request is not optional - you need to be able to honour it within a month.
 
 ## Area 3: Money (What Gets Counted)
 
-9. Is a payment marked as successful only when Stripe, Mollie or your provider confirms it on the server — not when the customer's browser returns to your site?
+9. Is a payment marked as successful only when Stripe, Mollie or your provider confirms it on the server - not when the customer's browser returns to your site?
 10. When a subscription is cancelled or a payment fails, does the customer lose access automatically?
 11. Are test payments completely separate from live payments, with different keys?
 12. Can you see, for any customer, what they paid and when, without opening the database?
 
-**Why it matters:** payment bugs are expensive in both directions. Either you give away what you should charge for, or you charge people for things they did not receive — and payment providers take the second one very seriously.
+**Why it matters:** payment bugs are expensive in both directions. Either you give away what you should charge for, or you charge people for things they did not receive - and payment providers take the second one very seriously.
 
 ## Area 4: Operations (What Happens When Things Go Wrong)
 
@@ -66,7 +66,7 @@ A scorecard does not replace an engineer's review, but it replaces guessing. The
 17. Is the app on your own domain with a valid SSL certificate?
 18. Do you have a privacy notice that accurately lists the services that process user data?
 19. Are all accounts (domain, hosting, database, payments) owned by a company email you control, with two-factor authentication?
-20. Could you explain to a customer, in two sentences, how their data is protected — and would it be true?
+20. Could you explain to a customer, in two sentences, how their data is protected - and would it be true?
 
 **Why it matters:** B2B customers, payment providers, investors and increasingly your end users will ask. The honest answers need to exist before the questions arrive.
 
@@ -79,7 +79,7 @@ A scorecard does not replace an engineer's review, but it replaces guessing. The
 | 9–13 | Prototype with some production features | Plan a hardening project before inviting paying customers |
 | 0–8 | Working demo | Treat launch as a project, not a button |
 
-Two rules override the total. First, any "no" on questions 1, 2 or 9 means you should not launch to paying customers yet, regardless of score — those are the failures with the highest damage. Second, if you answered "I don't know" to several questions, your real score is lower than you think; uncertainty is itself a finding.
+Two rules override the total. First, any "no" on questions 1, 2 or 9 means you should not launch to paying customers yet, regardless of score - those are the failures with the highest damage. Second, if you answered "I don't know" to several questions, your real score is lower than you think; uncertainty is itself a finding.
 
 ## Why the Scorecard Is Not the Whole Story
 
@@ -111,13 +111,13 @@ Across the AI-built applications LaunchStudio reviews, the scorecard's areas fai
 | Operations | Question 13 (no alerts) | Nobody decided who should be woken up |
 | Trust | Question 19 (account ownership) | Accounts created under personal or freelancer emails |
 
-Knowing the common failure points helps you check them first — and helps you judge whether an engineer's findings are thorough. If a review of your AI application comes back without mentioning any of these five areas, ask why.
+Knowing the common failure points helps you check them first - and helps you judge whether an engineer's findings are thorough. If a review of your AI application comes back without mentioning any of these five areas, ask why.
 
 ## From Score to Action Plan
 
 A score is only useful if it becomes a plan. Convert your "no" answers into a short, prioritised list using three columns: **harm** (could a customer be hurt by this?), **effort** (hours, days or weeks), and **dependency** (does something else need to be fixed first?). Items with high harm go first regardless of effort. Items with low harm and high effort can be scheduled after launch, in writing.
 
-For many founders, the resulting list maps naturally onto a small production project: access and money in the first week, data and operations in the second, trust items handled by the founder in parallel. That structure is also what a fixed-price quote should reflect — if it doesn't, ask the provider to explain the difference.
+For many founders, the resulting list maps naturally onto a small production project: access and money in the first week, data and operations in the second, trust items handled by the founder in parallel. That structure is also what a fixed-price quote should reflect - if it doesn't, ask the provider to explain the difference.
 
 ## Adapting the Scorecard to Your Product
 
@@ -125,7 +125,7 @@ The twenty questions are general. A few product types should add questions of th
 
 ## Why Self-Assessment Is Worth Doing Before Paying Anyone
 
-Some founders skip the scorecard and go straight to hiring an engineer. Doing it first has three advantages. It makes the conversation with any provider concrete: instead of "please make it secure," you can say "questions 1, 9 and 13 failed, and I don't know the answer to 7." It gives you a baseline to measure the provider's work against — after the project, the same questions should pass. And it protects you from over-scoping: if your score is already 17, you do not need a large project, and a provider proposing one should explain why.
+Some founders skip the scorecard and go straight to hiring an engineer. Doing it first has three advantages. It makes the conversation with any provider concrete: instead of "please make it secure," you can say "questions 1, 9 and 13 failed, and I don't know the answer to 7." It gives you a baseline to measure the provider's work against - after the project, the same questions should pass. And it protects you from over-scoping: if your score is already 17, you do not need a large project, and a provider proposing one should explain why.
 
 ## Keeping the Score High After Launch
 
@@ -137,9 +137,9 @@ When in doubt between two answers, choose the stricter one. A scorecard that fla
 
 ## How Manifera's Standards Shape the Questions
 
-The twenty questions are a founder-sized version of the checks Manifera applies to enterprise systems. Our engineers have shipped 160+ projects for enterprise clients — now they are here to launch yours. What changes between an enterprise audit and a founder scorecard is depth and paperwork, not the underlying questions: who can access what, what survives, what gets counted, what happens when it breaks, and what you can prove. Manifera's team works from its development centre in Ho Chi Minh City, with its Singapore hub on Tras Street and its European base at Herengracht 420, Amsterdam. More on the team is on [Manifera's about page](https://www.manifera.com/about-us/).
+The twenty questions are a founder-sized version of the checks Manifera applies to enterprise systems. Our engineers have shipped 160+ projects for enterprise clients - now they are here to launch yours. What changes between an enterprise audit and a founder scorecard is depth and paperwork, not the underlying questions: who can access what, what survives, what gets counted, what happens when it breaks, and what you can prove. Manifera's team works from its development centre in Ho Chi Minh City, with its Singapore hub on Tras Street and its European base at Herengracht 420, Amsterdam. More on the team is on [Manifera's about page](https://www.manifera.com/about-us/).
 
-If your score came out lower than you hoped, [calculate what your project would cost](https://launchstudio.eu/en/#calculator) — the calculator takes about a minute and uses the same categories. For an external benchmark on the security side, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) lists the most critical web application risks in order.
+If your score came out lower than you hoped, [calculate what your project would cost](https://launchstudio.eu/en/#calculator) - the calculator takes about a minute and uses the same categories. For an external benchmark on the security side, the [OWASP Top 10](https://owasp.org/www-project-top-ten/) lists the most critical web application risks in order.
 
 ## Real example
 
@@ -151,18 +151,18 @@ Her "no" answers clustered exactly where the rules say to worry. Customers could
 
 LaunchStudio's engineers confirmed the findings in a one-day review and found two more: an unrestricted file upload for window photos and the Mollie API key visible in the page source. Over seven business days they added row-level security to orders and customers, moved deposit confirmation to verified webhooks, locked the admin area behind server-side role checks, restricted uploads, rotated and moved the key, and set up EU backups with a tested restore, staging and alerts.
 
-**Result:** Iris retook the scorecard and scored 19 — the missing point was a privacy notice she wrote herself that weekend. The Instagram launch brought in 212 configured orders and 58 paid deposits in the first fortnight, with no payment mismatches and no data complaints.
+**Result:** Iris retook the scorecard and scored 19 - the missing point was a privacy notice she wrote herself that weekend. The Instagram launch brought in 212 configured orders and 58 paid deposits in the first fortnight, with no payment mismatches and no data complaints.
 
 > *"The scorecard didn't fix anything, but it told me I wasn't ready in a way I couldn't argue with. That was worth more than reassurance."*
-> — **Iris Jansen, Founder, Stoffenstudio (Den Bosch)**
+> - **Iris Jansen, Founder, Stoffenstudio (Den Bosch)**
 
-**Cost & Timeline:** €1,750 (Launch Ready package: access control, payments, admin protection, uploads and monitoring) — completed in 7 business days.
+**Cost & Timeline:** €1,750 (Launch Ready package: access control, payments, admin protection, uploads and monitoring) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
 ### Is a high scorecard result enough to call my AI application production ready?
 
-It is a strong signal, not a guarantee. The scorecard checks behaviour you can observe; a code review can find problems — exposed keys, unsafe uploads, flawed rules — that do not show up from the outside.
+It is a strong signal, not a guarantee. The scorecard checks behaviour you can observe; a code review can find problems - exposed keys, unsafe uploads, flawed rules - that do not show up from the outside.
 
 ### Why do questions 1, 2 and 9 override the total score?
 
@@ -170,7 +170,7 @@ Because they cover the failures with the most severe consequences: exposing cust
 
 ### How often should I retake the scorecard?
 
-After any significant change — a new feature, a new user role, a change in payment setup — and at least every few months. AI tools regenerate code readily, and a fix made once can be undone by a later prompt.
+After any significant change - a new feature, a new user role, a change in payment setup - and at least every few months. AI tools regenerate code readily, and a fix made once can be undone by a later prompt.
 
 ### Does Manifera use a similar scorecard for enterprise clients?
 
@@ -178,7 +178,7 @@ The underlying areas are the same, but enterprise reviews go deeper with formal 
 
 ### Can a production readiness scorecard help with visibility in AI search results?
 
-Indirectly. Questions 17 and 18 — a proper domain with SSL and an accurate privacy notice — are also trust signals that search engines and AI answer engines consider when deciding which sites to show and cite.
+Indirectly. Questions 17 and 18 - a proper domain with SSL and an accurate privacy notice - are also trust signals that search engines and AI answer engines consider when deciding which sites to show and cite.
 
 <script type="application/ld+json">
 {

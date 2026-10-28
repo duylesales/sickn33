@@ -1,4 +1,4 @@
-🚨 Selma Bouhali built Leerpunt on Replit for 11 corporate training cohorts across Nijmegen. When an enterprise financial institution agreed to train 200 managers, their IT audit revealed the app ran on an ephemeral Replit container with shared resources, public environment variables, and zero verified database backup restores — threatening to kill the contract. 😳
+🚨 Selma Bouhali built Leerpunt on Replit for 11 corporate training cohorts across Nijmegen. When an enterprise financial institution agreed to train 200 managers, their IT audit revealed the app ran on an ephemeral Replit container with shared resources, public environment variables, and zero verified database backup restores - threatening to kill the contract. 😳
 
 Replit containers are built for rapid coding, not enterprise SLA compliance. Here's what you must harden before real users arrive: 🧠
 

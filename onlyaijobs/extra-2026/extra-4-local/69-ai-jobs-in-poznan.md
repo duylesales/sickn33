@@ -48,7 +48,7 @@ Allegro, headquartered in Poznań, is Poland's largest online marketplace, with 
 
 ## Supercomputing and Networking
 
-The Poznań Supercomputing and Networking Center (PSNC), affiliated with the Polish Academy of Sciences, operates high-performance computing systems and national research networks and participates in many European research infrastructure projects. It works on HPC, cloud, data management, digital libraries, quantum computing and AI infrastructure. For engineers interested in the infrastructure behind AI — distributed training, data platforms, research computing — PSNC offers rare opportunities in Poland.
+The Poznań Supercomputing and Networking Center (PSNC), affiliated with the Polish Academy of Sciences, operates high-performance computing systems and national research networks and participates in many European research infrastructure projects. It works on HPC, cloud, data management, digital libraries, quantum computing and AI infrastructure. For engineers interested in the infrastructure behind AI - distributed training, data platforms, research computing - PSNC offers rare opportunities in Poland.
 
 ## Automotive, Pharma and Manufacturing
 
@@ -85,7 +85,7 @@ Poznań has a lively old town with a colourful market square, a large student po
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Poznań you will find few or no local vacancies there today. Use Polish job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Poznań with the Netherlands — where e-commerce and logistics employers such as Sendcloud, Mollie and Accenture list AI roles — and as a method: filter by AI category and real commute rather than by title. Poznań employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Poznań you will find few or no local vacancies there today. Use Polish job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Poznań with the Netherlands - where e-commerce and logistics employers such as Sendcloud, Mollie and Accenture list AI roles - and as a method: filter by AI category and real commute rather than by title. Poznań employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Marketplace ML: Search in a Morphologically Rich Language
 
@@ -93,7 +93,7 @@ Search and recommendation for a Polish marketplace involve challenges that Engli
 
 ## HPC and AI Infrastructure
 
-Training and serving modern AI models depends on infrastructure: GPU clusters, fast networks, storage, schedulers and software stacks. Research computing centres such as PSNC build and operate this infrastructure for scientists and increasingly support AI projects, including participation in European initiatives to provide computing for AI research and industry. Engineers in this field work on performance optimisation, distributed training support, data management and cloud services for research. The skills — distributed systems, GPU computing, MLOps at scale — are in high demand across industry, including at companies training large models.
+Training and serving modern AI models depends on infrastructure: GPU clusters, fast networks, storage, schedulers and software stacks. Research computing centres such as PSNC build and operate this infrastructure for scientists and increasingly support AI projects, including participation in European initiatives to provide computing for AI research and industry. Engineers in this field work on performance optimisation, distributed training support, data management and cloud services for research. The skills - distributed systems, GPU computing, MLOps at scale - are in high demand across industry, including at companies training large models.
 
 ## Pharmaceutical Manufacturing Analytics
 
@@ -105,7 +105,7 @@ Commercial vehicle production involves complex assembly, painting and quality pr
 
 ## Language Research at Adam Mickiewicz University
 
-Adam Mickiewicz University has a long tradition in linguistics and computational linguistics, with research on machine translation, language resources and NLP for Polish. National initiatives to develop Polish language models have involved universities and research institutes across the country. For NLP engineers, Poznań offers research positions and collaborations with industry — including e-commerce companies that need strong Polish language understanding.
+Adam Mickiewicz University has a long tradition in linguistics and computational linguistics, with research on machine translation, language resources and NLP for Polish. National initiatives to develop Polish language models have involved universities and research institutes across the country. For NLP engineers, Poznań offers research positions and collaborations with industry - including e-commerce companies that need strong Polish language understanding.
 
 ## Questions to Ask Poznań Employers
 
@@ -129,7 +129,7 @@ Poznań suits engineers who want large-scale product ML or infrastructure work i
 
 ## Preparing for Interviews
 
-Interviews at Poznań tech companies usually include coding tasks, ML fundamentals, a system design discussion — for example designing a ranking or fraud-detection system — and a deep dive into a past project. Given Poland's algorithmic tradition, coding rounds can be demanding. E-commerce employers probe experimentation: how you choose metrics, detect novelty effects and interpret null results. HPC roles focus on systems knowledge, performance profiling and distributed computing. Manufacturing and pharma employers look for careful reasoning about data quality, validation and documentation. Prepare to explain trade-offs honestly and to ask about team ownership, deployment practices and mentoring. Many postings include salary ranges for both employment and B2B contracts, which makes salary discussions straightforward, but negotiation is expected for experienced candidates.
+Interviews at Poznań tech companies usually include coding tasks, ML fundamentals, a system design discussion - for example designing a ranking or fraud-detection system - and a deep dive into a past project. Given Poland's algorithmic tradition, coding rounds can be demanding. E-commerce employers probe experimentation: how you choose metrics, detect novelty effects and interpret null results. HPC roles focus on systems knowledge, performance profiling and distributed computing. Manufacturing and pharma employers look for careful reasoning about data quality, validation and documentation. Prepare to explain trade-offs honestly and to ask about team ownership, deployment practices and mentoring. Many postings include salary ranges for both employment and B2B contracts, which makes salary discussions straightforward, but negotiation is expected for experienced candidates.
 
 ## Business Service Centres
 

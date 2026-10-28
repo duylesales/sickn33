@@ -1,4 +1,4 @@
-Your AI vendor's contract says nothing about what happens to your data once the model is fine-tuned. That's not an oversight they'll admit to — it's the default. 🔒🤖
+Your AI vendor's contract says nothing about what happens to your data once the model is fine-tuned. That's not an oversight they'll admit to - it's the default. 🔒🤖
 
 **The Pain Points:**
 ❌ **Silent Retraining:** "We haven't decided" often means your data quietly improves the vendor's models for other clients too.
@@ -6,7 +6,7 @@ Your AI vendor's contract says nothing about what happens to your data once the 
 ❌ **Deletion Theater:** "We deleted your data" can be true while the model trained on it still exists.
 
 **The Manifera Solution:**
-✅ **Explicit No-Retrain Clauses:** Written, revocable-consent language — not verbal assurance — on every engagement.
+✅ **Explicit No-Retrain Clauses:** Written, revocable-consent language - not verbal assurance - on every engagement.
 ✅ **Full Subprocessor Disclosure:** Every model provider in the inference pipeline named, with its own DPA.
 ✅ **Verified Destruction:** Deletion clauses that extend to fine-tuned weights and embeddings, with a certificate on request.
 

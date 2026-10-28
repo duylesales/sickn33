@@ -57,7 +57,7 @@ Niets van het bovenstaande is exotisch of moeilijk te begrijpen zodra het aangew
 
 Manifera's audits voor geheimen en configuratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Laten we aan de slag gaan — van prototype tot productie in weken](https://launchstudio.eu/nl/#contact).
+[Laten we aan de slag gaan - van prototype tot productie in weken](https://launchstudio.eu/nl/#contact).
 
 ## Verder Dan API-Sleutels: Een Volledige Pre-Launch Geheimen-Checklist
 
@@ -72,7 +72,7 @@ API-sleutels krijgen doorgaans de meeste aandacht omdat de schade bij een lek di
 
 **Controleer ook documentatie en chatgeschiedenis, niet alleen code**
 
-Een verrassend groot aantal gelekte sleutels heeft nooit in een git-commit gestaan — ze zijn ooit geplakt in een gedeeld Notion-document, een Slack-bericht naar een freelancer, of in de promptgeschiedenis van een AI-tool die later openbaar is gedeeld. Elke plek waar een sleutel ooit is getypt, verdient een moment van aandacht vóór lancering.
+Een verrassend groot aantal gelekte sleutels heeft nooit in een git-commit gestaan - ze zijn ooit geplakt in een gedeeld Notion-document, een Slack-bericht naar een freelancer, of in de promptgeschiedenis van een AI-tool die later openbaar is gedeeld. Elke plek waar een sleutel ooit is getypt, verdient een moment van aandacht vóór lancering.
 
 **Begrijp wat 'roteren' inhoudt voor elk type geheim**
 
@@ -80,7 +80,7 @@ Het roteren van een standaard API-sleutel is eenvoudig: maak een nieuwe aan, wer
 
 **Onderhoud een actuele inventaris van al uw externe diensten**
 
-Een beknopte lijst van elke externe dienst die in uw product is geïntegreerd — waar deze voor dient, waar de inloggegevens staan en wanneer ze voor het laatst zijn geroteerd — maakt van een periodieke kwartaalaudit een routineklus van vijf minuten in plaats van een chaotische zoektocht.
+Een beknopte lijst van elke externe dienst die in uw product is geïntegreerd - waar deze voor dient, waar de inloggegevens staan en wanneer ze voor het laatst zijn geroteerd - maakt van een periodieke kwartaalaudit een routineklus van vijf minuten in plaats van een chaotische zoektocht.
 
 ## Echt voorbeeld
 
@@ -93,9 +93,9 @@ Een maand later, tijdens het voorbereiden van een kleine lokale lancering, verme
 **Resultaat:** LaunchStudio roteerde de blootgestelde sleutel onmiddellijk, migreerde alle overgebleven geheimen naar een correcte omgevingsconfiguratie, en zette de repository op privé. Dit sloot de blootstelling zonder enige wijziging aan TrouwPlan's daadwerkelijke functies.
 
 > *"Een maand dat die sleutel daar gewoon in een openbare repo zat, en ik kwam er puur achter omdat een vriend toevallig keek. Dat is geen systeem waar ik voortaan op wil vertrouwen."*
-> — **Noa Bergsma, Oprichter, TrouwPlan (Middelburg)**
+> - **Noa Bergsma, Oprichter, TrouwPlan (Middelburg)**
 
-**Kosten en tijdlijn:** € 1.200 (geheimen-audit, sleutelrotatie, en repository-uitharding) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (geheimen-audit, sleutelrotatie, en repository-uitharding) - voltooid in 4 werkdagen.
 
 ---
 

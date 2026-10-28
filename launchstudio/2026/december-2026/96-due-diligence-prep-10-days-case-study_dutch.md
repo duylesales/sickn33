@@ -5,7 +5,7 @@ Buyer Stage: Beslissing
 ---
 
 # Case Study: Hoe LaunchStudio een Oprichter Hielp Voorbereiden op Due Diligence in 10 Dagen
-Een mondelinge toezegging van een investeerder of een formele uitnodiging voor een technische due diligence audit is een enorme mijlpaal voor elke AI SaaS-oprichter. Maar wanneer u te horen krijgt dat de technische partner van het investeringsfonds over exact tien dagen uw broncode, database-isolatie en monitoring onder de loep gaat nemen, slaat het zweet u vaak uit. Veel met Lovable of Bolt gebouwde prototypes bevatten onzichtbare kwetsbaarheden — zoals hardcoded API-sleutels in frontend-bestanden, haperende boekingsstromen zonder error-tracking en openstaande multi-tenant datalekken. Deze case study beschrijft hoe Camille, een solo-oprichter van een B2B vrachtmarktplaats, haar complete platform binnen tien dagen liet professionaliseren door LaunchStudio en met vlag en wimpel slaagde voor haar investeerders-audit.
+Een mondelinge toezegging van een investeerder of een formele uitnodiging voor een technische due diligence audit is een enorme mijlpaal voor elke AI SaaS-oprichter. Maar wanneer u te horen krijgt dat de technische partner van het investeringsfonds over exact tien dagen uw broncode, database-isolatie en monitoring onder de loep gaat nemen, slaat het zweet u vaak uit. Veel met Lovable of Bolt gebouwde prototypes bevatten onzichtbare kwetsbaarheden - zoals hardcoded API-sleutels in frontend-bestanden, haperende boekingsstromen zonder error-tracking en openstaande multi-tenant datalekken. Deze case study beschrijft hoe Camille, een solo-oprichter van een B2B vrachtmarktplaats, haar complete platform binnen tien dagen liet professionaliseren door LaunchStudio en met vlag en wimpel slaagde voor haar investeerders-audit.
 
 ## De Klok van Tien Dagen
 
@@ -119,7 +119,7 @@ Met een compleet audit-dossier en een vlekkeloze staging-omgeving neemt u alle m
 
 Onze ervaren engineers zorgen ervoor dat uw applicatie vlekkeloos presteert onder alle omstandigheden, waardoor u de technische inspectie met het volste vertrouwen kunt afronden.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ## Echt voorbeeld
 
@@ -131,7 +131,7 @@ Camille schakelde **LaunchStudio (door Manifera)** in voor een 10-daagse auditvo
 
 **Resultaat:** De technische partner keurde de codebase zonder enige opmerking goed, waarna Camille haar investeringsronde van € 600.000 definitief sloot.
 
-**Investering & Doorlooptijd:** € 3.600 (Due Diligence Prep Sprint) — 10 werkdagen.
+**Investering & Doorlooptijd:** € 3.600 (Due Diligence Prep Sprint) - 10 werkdagen.
 
 ---
 

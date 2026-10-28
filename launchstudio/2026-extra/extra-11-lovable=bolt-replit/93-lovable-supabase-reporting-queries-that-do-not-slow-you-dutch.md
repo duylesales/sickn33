@@ -22,15 +22,15 @@ Doelgroep: SaaS Scale-Up
 
 Rapportages en dashboards zijn dé plekken waar SaaS-applicaties onverwachts door hun hoeven zakken. En het komt steevast als een volslagen verrassing, omdat niemand zich tijdens de ontwikkelfase druk maakte over rapportages. De reserveringsflow werd uitgebreid getest. De Stripe-betalingsstraat werd nauwgezet gereviewd. Het overzichtsdashboard was louter een handige feature die iemand op een vrijnamiddag even snel heeft toegevoegd.
 
-Totdat een grote zakelijke klant met drie jaar aan historische data op de eerste van de maand inlogt — exact op hetzelfde moment dat al je andere klanten hun maandafsluiting doen. Opeens reageert de complete applicatie voor niemand meer, inclusief de reguliere gebruikers die simpelweg probeerden een nieuwe reservering te plaatsen.
+Totdat een grote zakelijke klant met drie jaar aan historische data op de eerste van de maand inlogt - exact op hetzelfde moment dat al je andere klanten hun maandafsluiting doen. Opeens reageert de complete applicatie voor niemand meer, inclusief de reguliere gebruikers die simpelweg probeerden een nieuwe reservering te plaatsen.
 
-De oorzaak is structureel. Een standaard interactieve handeling in je webapplicatie raakt een handvol rijen in de database. Een rapportagequery daarentegen doorzoekt miljoenen records tegelijk — en doet dat precies op het moment dat iedereen volop aan het werk is.
+De oorzaak is structureel. Een standaard interactieve handeling in je webapplicatie raakt een handvol rijen in de database. Een rapportagequery daarentegen doorzoekt miljoenen records tegelijk - en doet dat precies op het moment dat iedereen volop aan het werk is.
 
 ## Waarom rapportages zich fundamenteel anders gedragen
 
 Er zijn drie cruciale eigenschappen die rapportageverkeer uniek maken:
 
-**Het leest enorme datavolumes.** Een jaartotaal scant een vol jaar. Een complete CSV-export leest de gehele tabelgeschiedenis. De benodigde rekenkracht groeit evenredig met de historische data van je klant — een volume dat continu toeneemt zonder dat iemand daar expliciet bij stilstaat.
+**Het leest enorme datavolumes.** Een jaartotaal scant een vol jaar. Een complete CSV-export leest de gehele tabelgeschiedenis. De benodigde rekenkracht groeit evenredig met de historische data van je klant - een volume dat continu toeneemt zonder dat iemand daar expliciet bij stilstaat.
 
 **Het verkeer arriveert in gesynchroniseerde pieken.** Maandafsluitingen, kwartaaloverzichten en maandagochtenden. De zakelijke agenda's van al je klanten lopen synchroon, waardoor de zwaarste analytische database-aanroepen exact op hetzelfde moment je database bestormen.
 
@@ -44,7 +44,7 @@ De klassieke faalmechanismen bij met AI gebouwde Supabase-omgevingen:
 
 **Geen indexen op filterkolommen.** De database moet elke rij in de tabel fysiek van schijf lezen om records te vinden die binnen een datumbereik of bij een specifieke tenant horen. Bij duizend rijen merk je hier niets van; bij een miljoen rijen crasht de responstijd plotseling. Die overgang verloopt niet geleidelijk, maar als een steile klif.
 
-**Eén query per tabelrij (N+1 query probleem).** Het dashboard haalt een lijst met honderd entiteiten op en vuurt vervolgens voor elk item een afzonderlijke query af om detailcijfers op te vragen — honderd rijen resulteren in 101 netwerkverzoeken. Dit is het meest voorkomende patroon dat AI-prompts genereren en gelukkig het eenvoudigst te verhelpen.
+**Eén query per tabelrij (N+1 query probleem).** Het dashboard haalt een lijst met honderd entiteiten op en vuurt vervolgens voor elk item een afzonderlijke query af om detailcijfers op te vragen - honderd rijen resulteren in 101 netwerkverzoeken. Dit is het meest voorkomende patroon dat AI-prompts genereren en gelukkig het eenvoudigst te verhelpen.
 
 **Aggregaties live herberekend bij elk paginabezoek.** Zes geaggregeerde totalen die elk afzonderlijk dezelfde enorme transactietabel scannen, herberekend voor elke bezoeker die de pagina vernieuwt.
 
@@ -58,7 +58,7 @@ Het eerste wat je moet controleren, en veruit de goedkoopste optimalisatie:
 
 Plaats database-indexen op de kolommen waarop je filtert, sorteert en koppelt: de `tenant_id` of `organization_id` op elke afzonderlijke tabel, datumbereiken (`created_at`), foreign keys die in joins worden gebruikt en statuskolommen waarop je structureel filtert. Voor query's die steevast op twee kolommen tegelijk filteren (zoals `tenant_id` en `created_at`), is één samengestelde index over beide velden aanzienlijk sneller dan twee losse indexen.
 
-Twee essentiële waarschuwingen: Indexen vertragen schrijfoperaties lichtjes, dus ga niet blindelings elke kolom indexeren — indexeer louter wat je feitelijke query's daadwerkelijk filteren. En realiseer je dat jouw Supabase Row-Level Security policies eveneens rijen filteren. De kolommen waarnaar jouw RLS-policies verwijzen hebben exact even hard een index nodig als de kolommen in je expliciete SQL-query. Een applicatie die merkbaar trager werd nadat RLS werd geactiveerd, mist vrijwel altijd indexen op de kolommen die het beveiligingsbeleid evalueert.
+Twee essentiële waarschuwingen: Indexen vertragen schrijfoperaties lichtjes, dus ga niet blindelings elke kolom indexeren - indexeer louter wat je feitelijke query's daadwerkelijk filteren. En realiseer je dat jouw Supabase Row-Level Security policies eveneens rijen filteren. De kolommen waarnaar jouw RLS-policies verwijzen hebben exact even hard een index nodig als de kolommen in je expliciete SQL-query. Een applicatie die merkbaar trager werd nadat RLS werd geactiveerd, mist vrijwel altijd indexen op de kolommen die het beveiligingsbeleid evalueert.
 
 Gebruik het PostgreSQL Query Plan (`EXPLAIN ANALYZE`) in Supabase om dit feitelijk te toetsen. Het verschil tussen een trage `Seq Scan` (de hele tabel doorploegen) en een vliegensvlugge `Index Scan` zie je direct op de eerste regel van het rapport.
 
@@ -70,7 +70,7 @@ De structurele oplossing die oneindig veel meer impact heeft dan query-tuning:
 
 **Materialized views** voor complexe analytische doorsnedes, periodiek ververst via een geplande cron-job in plaats van live bij elk webverzoek.
 
-**Tellers bijgehouden via database-triggers** voor getallen die permanent in beeld moeten staan — aantal openstaande taken, actieve accounts, ongelezen berichten. Een trigger die een teller ophoogt is vele malen efficiënter dan een zware `COUNT(*)`-query bij elk paginabezoek, en raakt nooit uit de pas zoals tellers in applicatiecode dat doen.
+**Tellers bijgehouden via database-triggers** voor getallen die permanent in beeld moeten staan - aantal openstaande taken, actieve accounts, ongelezen berichten. Een trigger die een teller ophoogt is vele malen efficiënter dan een zware `COUNT(*)`-query bij elk paginabezoek, en raakt nooit uit de pas zoals tellers in applicatiecode dat doen.
 
 Je ruilt realtime versheid in voor ongekende snelheid. Ga het gesprek aan met je zakelijke klanten: hoe actueel moeten die cijfers daadwerkelijk zijn? In de praktijk luidt het antwoord steevast: *"de stand van vanochtend is prima"* voor alles behalve het dossier waar ze op dat moment aan werken. De weinige cijfers die écht realtime moeten zijn, kun je dan gericht live berekenen terwijl de rest direct uit de cache komt.
 
@@ -102,13 +102,13 @@ Houd rekening met de plotselinge prestatiedip: databases worden zelden geleideli
 
 Een strategische ingreep die performanceproblemen oplost door de druk simpelweg weg te nemen:
 
-Een groot deel van de belasting bij jonge SaaS-bedrijven komt niet doordat klanten zelf dashboards openen, maar doordat ze handmatig data opvragen bij de oprichter. De oprichter voert vervolgens ad-hoc SQL-query's uit op de live productiedatabase — traag voor de klant, tijdrovend voor jou en riskant voor de server.
+Een groot deel van de belasting bij jonge SaaS-bedrijven komt niet doordat klanten zelf dashboards openen, maar doordat ze handmatig data opvragen bij de oprichter. De oprichter voert vervolgens ad-hoc SQL-query's uit op de live productiedatabase - traag voor de klant, tijdrovend voor jou en riskant voor de server.
 
 **Bouw standaard de drie rapportages waar iedereen om vraagt:** een periodiek overzicht, een gedetailleerde uitsplitsing per categorie en een exportbestand dat rechtstreeks in de boekhouding van de klant past. Door deze vooraf netjes te pre-computen en te pagineren, bespaar je jezelf een jaar aan ad-hoc supportvragen.
 
 **Bied automatische e-mailrapportages aan.** Een maandrapport dat op de eerste dag van de maand om vier uur 's nachts geautomatiseerd in de inbox van de klant belandt, vlakt de piekdrukte op kantoortijden volledig af. De klant hoeft het dashboard niet eens meer te openen om zijn cijfers te zien.
 
-**Documenteer wat elk getal exact betekent.** Veel overmatige serverbelasting ontstaat doordat gebruikers rapportages herhaaldelijk opnieuw draaien omdat ze twijfelen aan de uitkomst. Een korte toelichting bij elk getal — welke datumbereiken zijn meegenomen, hoe geannuleerde orders worden verwerkt en welke tijdzone wordt gehanteerd — vermindert serververzoeken en supporttickets drastisch.
+**Documenteer wat elk getal exact betekent.** Veel overmatige serverbelasting ontstaat doordat gebruikers rapportages herhaaldelijk opnieuw draaien omdat ze twijfelen aan de uitkomst. Een korte toelichting bij elk getal - welke datumbereiken zijn meegenomen, hoe geannuleerde orders worden verwerkt en welke tijdzone wordt gehanteerd - vermindert serververzoeken en supporttickets drastisch.
 
 ## Rapportages schaalbaar en betrouwbaar maken
 
@@ -126,16 +126,16 @@ Maartje Klaassen bouwde met Lovable het platform Verbruik: energiemonitoring voo
 
 Gedurende anderhalf jaar draaide de applicatie vlekkeloos. Vervolgens trad op de eerste werkdag van elke nieuwe maand steevast een ernstige storing op: gedurende circa veertig minuten werd het platform nagenoeg onbruikbaar. Zelfs het inplannen van inspectie-afspraken liep vast op database-timeouts.
 
-De boosdoener was het centrale portefeuilledashboard, dat elke corporatie op de eerste van de maand opende om managementrapportages op te stellen. Het dashboard berekende negen kengetallen live, waarbij elke query de volledige metingentabel doorzocht — inmiddels gegroeid naar 7,4 miljoen records — zónder index op de datum- of corporatiekolom. Row-Level Security policies filterden per corporatie op elke rij, en ook die kolommen waren niet geïndexeerd, waardoor de RLS-evaluatie voor elke individuele rij een volledige scan uitvoerde. Onder het dashboard laadde een overzicht van panden een verbruikssamenvatting per gebouw via afzonderlijke query's — goed voor 340 opeenvolgende databaseverzoeken voor de grootste corporatie. En de jaarlijkse data-export laadde alle meetwaarden in het servergeheugen, waardoor de export voor de twee grootste klanten al maanden stilletjes crashte; zij dachten dat de exportfunctie kapot was en typten rapportages handmatig over.
+De boosdoener was het centrale portefeuilledashboard, dat elke corporatie op de eerste van de maand opende om managementrapportages op te stellen. Het dashboard berekende negen kengetallen live, waarbij elke query de volledige metingentabel doorzocht - inmiddels gegroeid naar 7,4 miljoen records - zónder index op de datum- of corporatiekolom. Row-Level Security policies filterden per corporatie op elke rij, en ook die kolommen waren niet geïndexeerd, waardoor de RLS-evaluatie voor elke individuele rij een volledige scan uitvoerde. Onder het dashboard laadde een overzicht van panden een verbruikssamenvatting per gebouw via afzonderlijke query's - goed voor 340 opeenvolgende databaseverzoeken voor de grootste corporatie. En de jaarlijkse data-export laadde alle meetwaarden in het servergeheugen, waardoor de export voor de twee grootste klanten al maanden stilletjes crashte; zij dachten dat de exportfunctie kapot was en typten rapportages handmatig over.
 
 In negen werkdagen werd de datalaag fundamenteel geoptimaliseerd: uitvoeringsplannen (`EXPLAIN ANALYZE`) legden de trage tabelscans bloot; indexen werden toegevoegd op corporatie-ID, datumbereiken en meter-ID's, inclusief de kolommen die door de RLS-policies werden gecontroleerd, wat de laadtijd van het dashboard direct terugbracht van 47 seconden naar 4 seconden; er werd een dagelijkse samenvattingstabel geïntroduceerd met vooraf berekende aggregaten per corporatie en pand, 's nachts bijgewerkt, waardoor het dashboard voortaan binnen één seconde laadt; de 340 losse pandquery's werden samengevoegd tot één efficiënte join; de CSV-export werd omgevormd naar een achtergrondtaak met streaming naar object storage via een ondertekende downloadlink met audit logging, waardoor de twee grootste corporaties voor het eerst in maanden hun jaarexport ontvingen; rapportages kregen een eigen connectiepool; en slow-query monitoring werd geactiveerd.
 
 **Resultaat:** Geen enkele storing meer op de eerste van de maand in de elf maanden daarna. De twee corporaties stopten direct met het handmatig overtikken van cijfers, en één van hen noemde de betrouwbare exportfunctie expliciet als reden voor een meerjarige contractverlenging.
 
 > *"Elke eerste van de maand lag mijn platform veertig minuten plat, en ik dacht oprecht dat het aan de hostingprovider lag. Het bleken negen getallen op een dashboard te zijn, die elk zeven miljoen rijen scanden."*
-> — **Maartje Klaassen, Oprichter, Verbruik (Almelo)**
+> - **Maartje Klaassen, Oprichter, Verbruik (Almelo)**
 
-**Kosten & Doorlooptijd:** € 4.600 (analyse queryplannen, indexering inclusief RLS-kolommen, dagelijkse aggregatietabellen, query-consolidatie, asynchrone exports met beveiligde links, connectiepool-isolatie, monitoring) — opgeleverd in 9 werkdagen.
+**Kosten & Doorlooptijd:** € 4.600 (analyse queryplannen, indexering inclusief RLS-kolommen, dagelijkse aggregatietabellen, query-consolidatie, asynchrone exports met beveiligde links, connectiepool-isolatie, monitoring) - opgeleverd in 9 werkdagen.
 
 ## Veelgestelde vragen
 

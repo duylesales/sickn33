@@ -1,10 +1,10 @@
-🐄 Tjeerd de Vries bouwde MelkMeter — een SaaS-platform dat veekuddegezondheid en melkproductie volgt voor zuivelboerderijen bij Leeuwarden — in Bolt, en had zijn eerste pilootboerderij binnen enkele weken aan boord. Het werkte prima... totdat een tweede boerderij zich aanmeldde en productiecijfers begon te zien die niet overeenkwamen met haar eigen kudde. 😳
+🐄 Tjeerd de Vries bouwde MelkMeter - een SaaS-platform dat veekuddegezondheid en melkproductie volgt voor zuivelboerderijen bij Leeuwarden - in Bolt, en had zijn eerste pilootboerderij binnen enkele weken aan boord. Het werkte prima... totdat een tweede boerderij zich aanmeldde en productiecijfers begon te zien die niet overeenkwamen met haar eigen kudde. 😳
 
 De app die werkt voor klant één en een echt platform dat werkt voor klant vijftig zijn niet hetzelfde. 🧠
 
 ❌ Backend gebouwd rond een enkele hardgecodeerde boerderij-ID
 ❌ Records van de tweede boerderij werden geschreven naar velden die het dashboard van de eerste boerderij nog steeds las
-❌ Niets onthulde de ontbrekende isolatie — er was ooit maar één klant om mee te testen
+❌ Niets onthulde de ontbrekende isolatie - er was ooit maar één klant om mee te testen
 ❌ De AI-tool had geen reden om een muur te bouwen tussen klanten die hij nog nooit had zien falen
 
 ✅ Databaseschema opnieuw ontworpen rond goed tenant-gescopeerde records

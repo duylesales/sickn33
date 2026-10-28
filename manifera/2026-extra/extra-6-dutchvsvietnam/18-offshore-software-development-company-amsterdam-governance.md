@@ -28,24 +28,24 @@ If your offshore development invoice comes from an entity with no office, no leg
 
 ## Governance as a Risk-Transfer Instrument, Not a Nice-to-Have
 
-A CFO's job in evaluating an offshore software development company isn't to assess code quality directly — that's an engineering function's role. It's to assess whether the commercial and legal structure of the engagement transfers risk appropriately, the same discipline applied to any vendor relationship of comparable spend. Four specific structural elements determine whether that risk transfer is real.
+A CFO's job in evaluating an offshore software development company isn't to assess code quality directly - that's an engineering function's role. It's to assess whether the commercial and legal structure of the engagement transfers risk appropriately, the same discipline applied to any vendor relationship of comparable spend. Four specific structural elements determine whether that risk transfer is real.
 
-**Contractual counterparty.** The single most consequential structural question is which entity actually signs the contract. An engagement contracted directly with a Vietnam-based (or any non-EU) execution entity puts the CFO's legal recourse inside that entity's home jurisdiction — workable in principle, but materially slower and less predictable for EU-based legal counsel than a dispute governed under Dutch or EU contract law. A structure where an Amsterdam-headquartered company is the contracting party, with execution subcontracted internally, keeps recourse inside a legal framework the CFO's own counsel can act on directly and quickly.
+**Contractual counterparty.** The single most consequential structural question is which entity actually signs the contract. An engagement contracted directly with a Vietnam-based (or any non-EU) execution entity puts the CFO's legal recourse inside that entity's home jurisdiction - workable in principle, but materially slower and less predictable for EU-based legal counsel than a dispute governed under Dutch or EU contract law. A structure where an Amsterdam-headquartered company is the contracting party, with execution subcontracted internally, keeps recourse inside a legal framework the CFO's own counsel can act on directly and quickly.
 
-**Independent delivery verification.** Without a governance layer, "the work is done to standard" is asserted by the same party invoicing for it — a structural conflict of interest that most CFOs would flag immediately in any other vendor category but sometimes miss in software specifically, because the technical detail feels outside finance's remit. An Amsterdam-based governance function that reviews and signs off on deliverables against the contracted SLA closes that gap with an independent check.
+**Independent delivery verification.** Without a governance layer, "the work is done to standard" is asserted by the same party invoicing for it - a structural conflict of interest that most CFOs would flag immediately in any other vendor category but sometimes miss in software specifically, because the technical detail feels outside finance's remit. An Amsterdam-based governance function that reviews and signs off on deliverables against the contracted SLA closes that gap with an independent check.
 
-**Regulatory and data-governance framework.** For companies subject to GDPR — again, nearly all EU-serving B2B software businesses — the data processing chain needs documented subprocessor agreements that a compliance function can actually audit. A CFO should treat "does the vendor have a real DPA with subprocessor terms, or just a general privacy statement" as a standard due-diligence question, equivalent to asking about insurance coverage or financial stability for any other vendor of comparable spend.
+**Regulatory and data-governance framework.** For companies subject to GDPR - again, nearly all EU-serving B2B software businesses - the data processing chain needs documented subprocessor agreements that a compliance function can actually audit. A CFO should treat "does the vendor have a real DPA with subprocessor terms, or just a general privacy statement" as a standard due-diligence question, equivalent to asking about insurance coverage or financial stability for any other vendor of comparable spend.
 
-**Financial and operational continuity.** A multi-year engagement contracted with a small, standalone execution entity carries a specific counterparty risk: what happens to the engagement, and to the code and IP mid-development, if that entity encounters financial distress or ceases operating. An engagement backed by an established Amsterdam-headquartered parent with its own balance sheet and market reputation at stake is a materially different risk profile — one a CFO's standard vendor risk framework would already recognize as lower-risk in any other procurement category.
+**Financial and operational continuity.** A multi-year engagement contracted with a small, standalone execution entity carries a specific counterparty risk: what happens to the engagement, and to the code and IP mid-development, if that entity encounters financial distress or ceases operating. An engagement backed by an established Amsterdam-headquartered parent with its own balance sheet and market reputation at stake is a materially different risk profile - one a CFO's standard vendor risk framework would already recognize as lower-risk in any other procurement category.
 
-None of this is an argument against offshore delivery — the cost arbitrage is real and substantial. It's an argument that the entity structure around the delivery, not the delivery location itself, is what a CFO's risk assessment should actually be scrutinizing, and it's the variable most sales-side proposals gloss over because it doesn't affect the headline rate.
+None of this is an argument against offshore delivery - the cost arbitrage is real and substantial. It's an argument that the entity structure around the delivery, not the delivery location itself, is what a CFO's risk assessment should actually be scrutinizing, and it's the variable most sales-side proposals gloss over because it doesn't affect the headline rate.
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** The Dutch entity is the contracting counterparty, holds GDPR-compliant data governance, and independently signs off on delivery — the specific structure a CFO's risk framework is built to recognize.
+- **Amsterdam (Governance/Strategy):** The Dutch entity is the contracting counterparty, holds GDPR-compliant data governance, and independently signs off on delivery - the specific structure a CFO's risk framework is built to recognize.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City team executes against Amsterdam-approved scope and architecture, at a materially lower cost base than an equivalent EU-based execution team.
 
-This is Dutch Management × Vietnamese Mastery in practice — EU-jurisdiction risk transfer wrapped around Southeast Asian delivery economics. Review the structure on Manifera's [offshore software development company](https://www.manifera.com/services/offshore-software-development/) page before your next vendor risk review.
+This is Dutch Management × Vietnamese Mastery in practice - EU-jurisdiction risk transfer wrapped around Southeast Asian delivery economics. Review the structure on Manifera's [offshore software development company](https://www.manifera.com/services/offshore-software-development/) page before your next vendor risk review.
 
 ## Case Study & Testimonial
 
@@ -55,8 +55,8 @@ Wisła Cloud Systems, a Kraków-based cloud-infrastructure software company, had
 
 Manifera restructured the engagement under an Amsterdam-headquartered contracting entity, refreshed the data processing agreement to current GDPR standards with the Vietnam team documented as a named subprocessor, and introduced an independent Amsterdam sign-off step before each milestone invoice was approved. The restructuring cleared the audit's flagged items within the quarter and became the template the CFO's team now requires for all subsequent offshore vendor contracts.
 
-> *"The audit wasn't about whether the code was good — it clearly was. It was about whether we had any real recourse if it stopped being good. Now we do."*
-> — **CFO, Wisła Cloud Systems**
+> *"The audit wasn't about whether the code was good - it clearly was. It was about whether we had any real recourse if it stopped being good. Now we do."*
+> - **CFO, Wisła Cloud Systems**
 
 ## Direct Offshore Contract vs. Manifera Governed Structure
 
@@ -70,7 +70,7 @@ Manifera restructured the engagement under an Amsterdam-headquartered contractin
 
 ## The Economics
 
-The financial exposure of an ungoverned offshore contract is a tail risk, not a certainty — which is exactly why it's easy to underweight in a standard procurement review focused on headline cost. But tail risk with a €30,000-€60,000 legal-fee floor and no guaranteed recovery, against a governance layer that adds a modest, predictable premium to the base engagement and closes most of that exposure before it materializes, is not a close call once modeled properly against a company's own risk tolerance.
+The financial exposure of an ungoverned offshore contract is a tail risk, not a certainty - which is exactly why it's easy to underweight in a standard procurement review focused on headline cost. But tail risk with a €30,000-€60,000 legal-fee floor and no guaranteed recovery, against a governance layer that adds a modest, predictable premium to the base engagement and closes most of that exposure before it materializes, is not a close call once modeled properly against a company's own risk tolerance.
 
 If your current offshore vendor contract doesn't name an EU-jurisdiction counterparty, that gap belongs in this quarter's vendor risk review, not discovered during your next audit cycle. [Talk to Manifera about the governance structure behind your engagement](https://www.manifera.com/contact-us/).
 
@@ -82,7 +82,7 @@ The contracting counterparty sitting entirely outside EU jurisdiction, which mea
 
 ### (Scenario: CFO auditing data processing agreements across vendors) How do we know if our current offshore vendor's data processing agreement is actually adequate?
 
-Check whether it names the specific offshore entity as a documented subprocessor with current GDPR-standard terms, rather than a generic privacy statement — this is a standard due-diligence check equivalent to reviewing any vendor's compliance documentation.
+Check whether it names the specific offshore entity as a documented subprocessor with current GDPR-standard terms, rather than a generic privacy statement - this is a standard due-diligence check equivalent to reviewing any vendor's compliance documentation.
 
 ### (Scenario: CFO evaluating whether governance adds meaningful protection or just cost) Does an Amsterdam governance layer meaningfully reduce risk, or is it just added cost?
 

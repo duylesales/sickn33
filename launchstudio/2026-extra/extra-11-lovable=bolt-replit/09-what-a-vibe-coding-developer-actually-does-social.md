@@ -12,7 +12,7 @@
 ✅ Migrate storage to private, EU-compliant cloud buckets with signed download links
 ✅ Run structured test suites covering concurrency, failure recovery, and boundary cases
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we love vibe coding — and we provide the engineering rigor that turns AI MVPs into durable, profitable businesses. 💡
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we love vibe coding - and we provide the engineering rigor that turns AI MVPs into durable, profitable businesses. 💡
 
 His result: Ruben Elsinga completed the Launch Ready Package in 6 business days for €2,150 (storage hardening, logic consolidation, region migration). Kassabon answered its first corporate procurement questionnaire without outside help, and the VAT discrepancy was resolved before any customer filed a tax return. 🚀
 

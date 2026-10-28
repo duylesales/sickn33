@@ -1,4 +1,4 @@
-💸 Priya built a legal-document search platform using **Bolt** — priya, a startup founder, used **bolt** to build an AI search tool for law firms, but watched her Pinecone bill jump 10x in four months as orphaned vectors and redundant re-embedding silently piled up. 🧠
+💸 Priya built a legal-document search platform using **Bolt** - priya, a startup founder, used **bolt** to build an AI search tool for law firms, but watched her Pinecone bill jump 10x in four months as orphaned vectors and redundant re-embedding silently piled up. 🧠
 
 If your vector database index has never been audited, it's very likely charging you for millions of dead vectors and duplicate embeddings your users will never see.
 
@@ -12,7 +12,7 @@ If your vector database index has never been audited, it's very likely charging 
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Priya's platform got its costs back under control: her Pinecone bill dropped from $4,200 to $1,890 a month — a 55% reduction — with zero measurable loss in search quality. (€2,200 (Launch & Grow Package) — 9 business days.) 🚀
+Priya's platform got its costs back under control: her Pinecone bill dropped from $4,200 to $1,890 a month - a 55% reduction - with zero measurable loss in search quality. (€2,200 (Launch & Grow Package) - 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/vector-db-bill-reduction-case-study
 

@@ -10,7 +10,7 @@ Revenue grew 20%. The cloud bill grew 55%. Nobody in the company can tell you ex
 ✅ **Amsterdam FinOps Governance:** Reporting and accountability, the same discipline as any other line item.
 ✅ **Vietnam Execution:** Rightsizing, reserved capacity, and automated cleanup that capture savings fast.
 
-Companies without formal FinOps typically waste 30%+ of cloud spend — that's $600K+ a year on a $2M bill. 📊
+Companies without formal FinOps typically waste 30%+ of cloud spend - that's $600K+ a year on a $2M bill. 📊
 
 👉 Read our full deep dive on cloud cost optimization: https://www.manifera.com/blog/cloud-cost-optimization-finops
 

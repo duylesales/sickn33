@@ -45,7 +45,7 @@ Every supervised model in production was trained on examples that people labelle
 
 **Quality assurance.** Sampling completed work, measuring agreement, identifying annotators who diverge and understanding why.
 
-**Domain review.** For specialist data — clinical, legal, financial, engineering — the labelling requires expertise, and the annotator is a professional in that field rather than a general worker.
+**Domain review.** For specialist data - clinical, legal, financial, engineering - the labelling requires expertise, and the annotator is a professional in that field rather than a general worker.
 
 **Evaluation of model output.** Increasingly, rating generated text, checking whether answers are grounded in sources, and judging whether a system's behaviour is acceptable. This is a growing category of employment in Europe.
 
@@ -57,7 +57,7 @@ This has a precise consequence that teams frequently ignore. If two qualified an
 
 Low agreement is usually not carelessness. It indicates that the task is genuinely ambiguous, that the categories do not fit the data, or that the guideline has not addressed the cases that actually occur. Each of those is a problem with the specification rather than with the people.
 
-The professional response is to measure agreement early on a small pilot, examine the disagreements individually, revise the guideline, and repeat until agreement is acceptable — before annotating thousands of items against a definition that does not work.
+The professional response is to measure agreement early on a small pilot, examine the disagreements individually, revise the guideline, and repeat until agreement is acceptable - before annotating thousands of items against a definition that does not work.
 
 ## Writing a Guideline That Works
 
@@ -75,7 +75,7 @@ Length is not the objective. A guideline of four pages that annotators actually 
 
 Agreement measurement is the quality control of annotation, and it is straightforward.
 
-Have two or more annotators label the same subset independently — a hundred items is usually sufficient for a first check — and compute how often they agree. Raw percentage agreement is easy to understand and overstates quality when one category dominates, so chance-corrected measures are conventional for categorical tasks.
+Have two or more annotators label the same subset independently - a hundred items is usually sufficient for a first check - and compute how often they agree. Raw percentage agreement is easy to understand and overstates quality when one category dominates, so chance-corrected measures are conventional for categorical tasks.
 
 Interpret the number as information about the task rather than about the people. High agreement means the definition is clear. Moderate agreement means the guideline needs work. Low agreement means the task as specified is not well defined, and no amount of annotation will fix that.
 
@@ -83,7 +83,7 @@ Examine the disagreements individually. They cluster, and the clusters tell you 
 
 Repeat the measurement periodically during a large annotation effort, because interpretations drift over weeks, particularly when annotators work independently without discussion.
 
-For tasks where a single correct answer genuinely does not exist — subjective quality ratings, for instance — collect multiple labels per item and treat the distribution as the data rather than forcing a consensus that misrepresents reality.
+For tasks where a single correct answer genuinely does not exist - subjective quality ratings, for instance - collect multiple labels per item and treat the distribution as the data rather than forcing a consensus that misrepresents reality.
 
 Reporting agreement alongside model performance in any evaluation is a mark of serious work, and its absence is a reasonable thing to ask about when reading someone else's results.
 
@@ -107,7 +107,7 @@ Annotation is expensive, and several practices reduce the cost without reducing 
 
 For specialist data, annotation requires professional expertise, and this changes the economics and the management of the work entirely.
 
-A clinician labelling medical images, a lawyer marking contract clauses, an engineer classifying equipment faults, an accountant categorising transactions — each is expensive, scarce and doing this alongside their main job.
+A clinician labelling medical images, a lawyer marking contract clauses, an engineer classifying equipment faults, an accountant categorising transactions - each is expensive, scarce and doing this alongside their main job.
 
 The practices that make this work: ask for the minimum that will answer the question; use active learning so their time goes to the difficult cases; provide excellent tooling so no time is wasted on the interface; show them what their previous input produced, because seeing the effect sustains engagement; and involve them in writing the guideline rather than handing them one.
 
@@ -123,7 +123,7 @@ Annotation has a difficult history that anyone working in the field should know 
 
 Much of the world's annotation work has been performed by low-paid workers, often through platforms, under conditions with little security. Content moderation and safety-related annotation in particular exposes people to distressing material, and the psychological consequences have been documented extensively.
 
-European organisations engaging annotation work — directly or through providers — have obligations and choices. Employment law applies where workers are employed, and classification questions arise where platform arrangements are used. Data protection obligations apply to any personal data annotators handle. And there is a straightforward ethical question about the conditions under which the labour behind a system is performed.
+European organisations engaging annotation work - directly or through providers - have obligations and choices. Employment law applies where workers are employed, and classification questions arise where platform arrangements are used. Data protection obligations apply to any personal data annotators handle. And there is a straightforward ethical question about the conditions under which the labour behind a system is performed.
 
 Practices that responsible European buyers apply: asking providers about pay, contracts and working conditions rather than only about price and throughput; limiting exposure to distressing content, with rotation, support and the ability to opt out; and treating annotation staff as colleagues with names rather than as an anonymised capacity.
 
@@ -135,7 +135,7 @@ For a growing set of systems in Europe, how training data was produced is a docu
 
 Under the EU AI Act, high-risk systems are subject to data governance requirements covering the design choices behind datasets, data collection processes, relevance and representativeness for the intended purpose, examination of possible biases, and identification of gaps or shortcomings. Technical documentation must describe the data used.
 
-The practical consequence for practitioners is that annotation becomes an auditable process. What was labelled, by whom, against what guideline, with what agreement, and how disagreements were resolved — these become records rather than working notes.
+The practical consequence for practitioners is that annotation becomes an auditable process. What was labelled, by whom, against what guideline, with what agreement, and how disagreements were resolved - these become records rather than working notes.
 
 Related obligations appear elsewhere. Medical device regulation requires evidence about the data supporting a device's performance. Financial model risk frameworks expect documentation of how training data was constructed.
 
@@ -159,7 +159,7 @@ What makes the difference in all cases is treating the work analytically rather 
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Browsing is free and requires no account, vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, and no employer can pay for a higher position.
 
-Roles in this area appear under varied titles — annotation specialist, data quality analyst, AI evaluation specialist, training data operations, human-in-the-loop coordinator — so read descriptions rather than filtering on titles. Many of them accept domain experience in place of technical credentials, which makes them accessible routes into the field.
+Roles in this area appear under varied titles - annotation specialist, data quality analyst, AI evaluation specialist, training data operations, human-in-the-loop coordinator - so read descriptions rather than filtering on titles. Many of them accept domain experience in place of technical credentials, which makes them accessible routes into the field.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

@@ -1,9 +1,9 @@
-🚨 "Ondersteunen jullie ook SSO?" De IT-inkoper vraagt het, en meteen volgen een security questionnaire, verwerkersovereenkomst en auditlog-eisen — elk punt kan de deal vertragen. 😰
+🚨 "Ondersteunen jullie ook SSO?" De IT-inkoper vraagt het, en meteen volgen een security questionnaire, verwerkersovereenkomst en auditlog-eisen - elk punt kan de deal vertragen. 😰
 
-Enterprise-eisen volgen een vaste, voorspelbare logica — bouwen in de verkeerde volgorde verspilt kostbaar budget: 📋
+Enterprise-eisen volgen een vaste, voorspelbare logica - bouwen in de verkeerde volgorde verspilt kostbaar budget: 📋
 
 ❌ SSO, SCIM, audit logs en een formele SLA allemaal tegelijk proberen te bouwen
-❌ Audit logs kunnen niet met terugwerkende kracht worden aangemaakt — de klok start pas bij livegang
+❌ Audit logs kunnen niet met terugwerkende kracht worden aangemaakt - de klok start pas bij livegang
 ❌ SCIM-koppelingen bouwen vóórdat SSO live staat levert functies op die nog niemand kan gebruiken
 ❌ Een grote deal stagneert op een simpel inlogverzoek terwijl het team werkt aan de verkeerde module
 

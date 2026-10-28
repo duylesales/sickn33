@@ -60,7 +60,7 @@ Dit is geen hypothetisch randgeval dat uniek is voor een onwaarschijnlijke timin
 ```
 function applyOrderStatus(order, newStatus, sourceTimestamp) {
   if (sourceTimestamp <= order.lastConfirmedAt) {
-    return; // deze schrijfactie is ouder dan wat al is vastgelegd — negeer het
+    return; // deze schrijfactie is ouder dan wat al is vastgelegd - negeer het
   }
   if (!isValidTransition(order.status, newStatus)) {
     logUnexpectedTransition(order.id, order.status, newStatus);
@@ -85,9 +85,9 @@ LaunchStudio's ingenieurs herbouwden de integratie zodat binnenkomende webhooks 
 **Resultaat:** DrukOpMaat vangt vastgelopen of mislukte afhandelingsbestellingen nu automatisch op binnen enkele uren, in plaats van te vertrouwen op een klant om het eerst op te merken. Anouk heeft een dashboardwaarschuwing voor elke bestelling die de afstemmingstaak markeert.
 
 > *"Ik vertrouwde de webhooks volledig omdat ze elke enkele keer hadden gewerkt – tot die ene keer dat ze dat niet deden. LaunchStudio bouwde het veiligheidsnet waarvan ik niet wist dat ik het miste."*
-> — **Anouk Schilder, Oprichter, DrukOpMaat (Assen)**
+> - **Anouk Schilder, Oprichter, DrukOpMaat (Assen)**
 
-**Kosten en tijdlijn:** € 1.050 (herstelling van webhook-volgorde en afstemmingstaak voor afhandeling) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (herstelling van webhook-volgorde en afstemmingstaak voor afhandeling) - voltooid in 6 werkdagen.
 
 ---
 

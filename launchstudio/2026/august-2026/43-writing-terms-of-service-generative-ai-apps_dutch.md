@@ -31,7 +31,7 @@ Doelgroep: Legal Counsel / SaaS Oprichters / Enterprise AE's
 }
 </script>
 
-Voor de meeste beginnende oprichters zijn de Algemene Voorwaarden (Terms of Service / ToS) een haastig gekopieerd sluitstuk — men downloadt een generiek SaaS-sjabloon, past de bedrijfsnaam aan en publiceert het. In traditionele software is dit al riskant; in Generatieve AI is dit ronduit desastreus. AI introduceert geheel nieuwe juridische aansprakelijkheden waar een standaard software-sjabloon uit 2019 nooit op berekend is: hallucinaties die financiële of reputatieschade veroorzaken, het genereren van illegale of misleidende content en onduidelijkheid over het auteursrecht op gegenereerde data. Uw algemene voorwaarden zijn uw enige contractuele schild en moeten exact zijn afgestemd op het daadwerkelijke gedrag van uw AI-applicatie.
+Voor de meeste beginnende oprichters zijn de Algemene Voorwaarden (Terms of Service / ToS) een haastig gekopieerd sluitstuk - men downloadt een generiek SaaS-sjabloon, past de bedrijfsnaam aan en publiceert het. In traditionele software is dit al riskant; in Generatieve AI is dit ronduit desastreus. AI introduceert geheel nieuwe juridische aansprakelijkheden waar een standaard software-sjabloon uit 2019 nooit op berekend is: hallucinaties die financiële of reputatieschade veroorzaken, het genereren van illegale of misleidende content en onduidelijkheid over het auteursrecht op gegenereerde data. Uw algemene voorwaarden zijn uw enige contractuele schild en moeten exact zijn afgestemd op het daadwerkelijke gedrag van uw AI-applicatie.
 
 ## De Hallucinatie-Disclaimer: Aansprakelijkheid Uitsluiten
 
@@ -97,7 +97,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in om duidelijke AI-clausules op 
 
 **Resultaat:** Registraties verlopen nu met juridisch afdwingbare akkoorden en een waterdichte audittrail, waardoor aansprakelijkheidsrisico's zijn geminimaliseerd.
 
-**Kosten & Tijdlijn:** €800 (Juridische Compliance Modals Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €800 (Juridische Compliance Modals Pakket) - productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 

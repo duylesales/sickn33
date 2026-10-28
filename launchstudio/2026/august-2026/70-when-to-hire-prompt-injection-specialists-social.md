@@ -1,6 +1,6 @@
-⚖️ Ingrid built a legal research assistant using **Lovable** — until a beta lawyer found instructions hidden inside an uploaded exhibit that the AI actually followed. 🧠
+⚖️ Ingrid built a legal research assistant using **Lovable** - until a beta lawyer found instructions hidden inside an uploaded exhibit that the AI actually followed. 🧠
 
-If your AI feature can take action, reads content you don't control, or pulls context across tenants from a shared vector store, prompt injection isn't theoretical — it's an active attack surface.
+If your AI feature can take action, reads content you don't control, or pulls context across tenants from a shared vector store, prompt injection isn't theoretical - it's an active attack surface.
 
 ❌ Instructions buried inside a scanned document, treated as commands instead of inert text
 ❌ A RAG pipeline pulling shared-tenant context with no adversarial testing ever done
@@ -12,7 +12,7 @@ If your AI feature can take action, reads content you don't control, or pulls co
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ingrid's application achieved production readiness: LexBrief AI passed a follow-up adversarial test using the same embedded-instruction technique, and Ingrid expanded from beta to general availability with a documented, tested defense in place. (€3,100 (Relaunch & Scale Package) — 10 business days.). 🚀
+Ingrid's application achieved production readiness: LexBrief AI passed a follow-up adversarial test using the same embedded-instruction technique, and Ingrid expanded from beta to general availability with a documented, tested defense in place. (€3,100 (Relaunch & Scale Package) - 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/when-to-hire-prompt-injection-specialists
 

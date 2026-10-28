@@ -20,72 +20,72 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The phrase spread faster than its definition did. Within a matter of months, "vibe coding" went from a specific, fairly narrow description of a particular way of working with ai coding tools to a catch-all label for almost anything involving AI and software — which means most people using the term today are using a much blurrier version of it than the one it started as.
+The phrase spread faster than its definition did. Within a matter of months, "vibe coding" went from a specific, fairly narrow description of a particular way of working with ai coding tools to a catch-all label for almost anything involving AI and software - which means most people using the term today are using a much blurrier version of it than the one it started as.
 
 Worth untangling, especially for founders who get called "vibe coders" as either a compliment or a dismissal, often without much precision behind either.
 
 ## What the term originally described
 
-In its original, more precise sense, vibe coding described a specific workflow: describing what you want in natural language and letting an AI tool generate the actual code, largely without reading or writing that code yourself — building by describing outcomes and vibes rather than by writing syntax. The emphasis was on the experience of building without traditional programming knowledge as the primary skill, guided instead by iterative description, testing what came out, and refining the description until the result matched the intent.
+In its original, more precise sense, vibe coding described a specific workflow: describing what you want in natural language and letting an AI tool generate the actual code, largely without reading or writing that code yourself - building by describing outcomes and vibes rather than by writing syntax. The emphasis was on the experience of building without traditional programming knowledge as the primary skill, guided instead by iterative description, testing what came out, and refining the description until the result matched the intent.
 
-That's narrower than how the phrase gets used now. Today it's applied loosely to almost any AI-assisted development — including plenty of workflows where a skilled engineer is very much reading and refining the generated code, which is a meaningfully different activity than the original description was pointing at.
+That's narrower than how the phrase gets used now. Today it's applied loosely to almost any AI-assisted development - including plenty of workflows where a skilled engineer is very much reading and refining the generated code, which is a meaningfully different activity than the original description was pointing at.
 
 ## Why the term spread beyond its original meaning
 
-Popular terms almost always drift wider than their original definition, and "vibe coding" had ingredients that made it especially likely to spread fast: it was catchy, it captured something real happening at scale for the first time, and it applied to a broad and growing population of people building software with AI tools, at every skill level. Once journalists, commentators, and the founders themselves started using it as shorthand for "building with AI" in general, the more specific original meaning — building purely by description, without engaging with the underlying code at all — got absorbed into the broader, vaguer usage.
+Popular terms almost always drift wider than their original definition, and "vibe coding" had ingredients that made it especially likely to spread fast: it was catchy, it captured something real happening at scale for the first time, and it applied to a broad and growing population of people building software with AI tools, at every skill level. Once journalists, commentators, and the founders themselves started using it as shorthand for "building with AI" in general, the more specific original meaning - building purely by description, without engaging with the underlying code at all - got absorbed into the broader, vaguer usage.
 
 That drift isn't necessarily a problem. Language does this. But it does mean the term is now doing double duty: sometimes describing a genuinely distinct way of building software, and sometimes just standing in for "used an AI tool," which describes a much wider and more varied group of people.
 
 ## What the original, narrower usage actually captures
 
-The original sense of the term is useful precisely because it identifies something real: a founder who has never written a line of code, describing a product entirely through natural language prompts, and ending up with a working application. That's a genuinely new category of builder that didn't really exist at scale before AI coding tools matured — someone whose primary skill is describing what they want clearly, not writing code.
+The original sense of the term is useful precisely because it identifies something real: a founder who has never written a line of code, describing a product entirely through natural language prompts, and ending up with a working application. That's a genuinely new category of builder that didn't really exist at scale before AI coding tools matured - someone whose primary skill is describing what they want clearly, not writing code.
 
 ## Owen's origin story
 
-Owen Jacobs, a founder in Ermelo, built KassaKoppel — a point-of-sale integration tool — using Cursor, as one of the earlier wave of builders who fit the original, narrower definition closely. He started with zero coding background, building purely by describing what he wanted in plain language and iterating based on what came out. He didn't read the generated code, didn't debug it directly, and didn't have a technical background to fall back on when something didn't work — he adjusted his description and tried again.
+Owen Jacobs, a founder in Ermelo, built KassaKoppel - a point-of-sale integration tool - using Cursor, as one of the earlier wave of builders who fit the original, narrower definition closely. He started with zero coding background, building purely by describing what he wanted in plain language and iterating based on what came out. He didn't read the generated code, didn't debug it directly, and didn't have a technical background to fall back on when something didn't work - he adjusted his description and tried again.
 
-That's the original sense of the term in practice: not a vague label for "built something with AI," but a specific description of Owen's actual process — outcome-focused, description-driven, and genuinely distinct from how a software engineer using the same AI tools would work, reading and adjusting code directly rather than only ever describing outcomes.
+That's the original sense of the term in practice: not a vague label for "built something with AI," but a specific description of Owen's actual process - outcome-focused, description-driven, and genuinely distinct from how a software engineer using the same AI tools would work, reading and adjusting code directly rather than only ever describing outcomes.
 
 ## Why the distinction still matters for founders today
 
-Knowing which version of "vibe coding" applies to your own situation is more than a semantic exercise. A founder who fits the original, narrower definition — building purely by description with no direct engagement with the code — faces a specific set of risks that a founder who's actively reading and reviewing generated code doesn't face in the same way: no independent verification that the code does what it's supposed to, no built-in check on security or edge cases, and no way to sanity-check the AI tool's claims against the actual implementation.
+Knowing which version of "vibe coding" applies to your own situation is more than a semantic exercise. A founder who fits the original, narrower definition - building purely by description with no direct engagement with the code - faces a specific set of risks that a founder who's actively reading and reviewing generated code doesn't face in the same way: no independent verification that the code does what it's supposed to, no built-in check on security or edge cases, and no way to sanity-check the AI tool's claims against the actual implementation.
 
-That's not a reason to avoid building this way — it's exactly how products like Owen's KassaKoppel get built and succeed. It's a reason to know when a second, qualified set of eyes should look at the result before real customers and real data depend on it.
+That's not a reason to avoid building this way - it's exactly how products like Owen's KassaKoppel get built and succeed. It's a reason to know when a second, qualified set of eyes should look at the result before real customers and real data depend on it.
 
-Our engineers in Singapore, alongside teams in Amsterdam and Ho Chi Minh City, work with founders across the entire spectrum — from the original, narrower sense of vibe coding to founders who code alongside AI tools directly. LaunchStudio brings Manifera's enterprise-grade engineering standard to both. If you're building the way Owen did — by describing outcomes rather than reading code — you can [send us your prototype link and we'll give you free advice](https://launchstudio.eu/en/#contact) on what to check before you scale.
+Our engineers in Singapore, alongside teams in Amsterdam and Ho Chi Minh City, work with founders across the entire spectrum - from the original, narrower sense of vibe coding to founders who code alongside AI tools directly. LaunchStudio brings Manifera's enterprise-grade engineering standard to both. If you're building the way Owen did - by describing outcomes rather than reading code - you can [send us your prototype link and we'll give you free advice](https://launchstudio.eu/en/#contact) on what to check before you scale.
 
 ## A Quick Self-Test: Which Kind of "Vibe Coder" Are You Actually?
 
-Given how much the term has drifted, it's worth a founder pausing to place their own process on the spectrum this article describes — not to win an argument about terminology, but because where you land changes what kind of check your product actually needs before real customers depend on it. A handful of direct questions make the placement concrete.
+Given how much the term has drifted, it's worth a founder pausing to place their own process on the spectrum this article describes - not to win an argument about terminology, but because where you land changes what kind of check your product actually needs before real customers depend on it. A handful of direct questions make the placement concrete.
 
-**When your AI tool generates a new feature, do you open the file it changed?** Not to rewrite it — just to look. If the honest answer is "never" or "rarely," you're closer to the original, narrower sense of the term: building by describing outcomes, with the code itself functioning as an unread black box between your prompt and the result you see on screen.
+**When your AI tool generates a new feature, do you open the file it changed?** Not to rewrite it - just to look. If the honest answer is "never" or "rarely," you're closer to the original, narrower sense of the term: building by describing outcomes, with the code itself functioning as an unread black box between your prompt and the result you see on screen.
 
-**If a feature broke, would your first move be to read the error or to rephrase your prompt?** Reaching instinctively for a better description rather than the underlying cause is a strong signal you're operating in the original sense of the term — which is a perfectly viable way to build, but one that means the code's actual correctness has never been checked by anyone, including you.
+**If a feature broke, would your first move be to read the error or to rephrase your prompt?** Reaching instinctively for a better description rather than the underlying cause is a strong signal you're operating in the original sense of the term - which is a perfectly viable way to build, but one that means the code's actual correctness has never been checked by anyone, including you.
 
-**Could you explain, in technical terms, what your authentication system actually does?** Not whether login works — whether you could describe, even roughly, how it decides a request is legitimate. A founder who can't isn't wrong to have built this way, but is also, by definition, the only person who could have caught certain gaps, and hasn't.
+**Could you explain, in technical terms, what your authentication system actually does?** Not whether login works - whether you could describe, even roughly, how it decides a request is legitimate. A founder who can't isn't wrong to have built this way, but is also, by definition, the only person who could have caught certain gaps, and hasn't.
 
 **Do you know which parts of your product handle money, personal data, or scheduling commitments?** Even a founder who's never read a line of code can usually answer this one, and it matters here specifically: it's the map of exactly which parts of the product carry the highest cost if something in the unread code underneath them is wrong.
 
-**If you had to guess, right now, whether your product has ever been read by anyone other than the AI tool that wrote it, what would you guess?** For a lot of founders who fit the original, narrower sense of the term, the honest answer is "probably not" — which isn't an indictment of how the product was built, just an accurate description of what hasn't happened yet.
+**If you had to guess, right now, whether your product has ever been read by anyone other than the AI tool that wrote it, what would you guess?** For a lot of founders who fit the original, narrower sense of the term, the honest answer is "probably not" - which isn't an indictment of how the product was built, just an accurate description of what hasn't happened yet.
 
-If most of these answers point toward "I describe outcomes, I don't read code," you're squarely in the category this article's narrower, original definition was built to describe — and the practical takeaway isn't to start learning to code. It's to treat an independent read of your own product, by someone whose job is exactly that, as the step that closes the gap your own process was never going to close on its own.
+If most of these answers point toward "I describe outcomes, I don't read code," you're squarely in the category this article's narrower, original definition was built to describe - and the practical takeaway isn't to start learning to code. It's to treat an independent read of your own product, by someone whose job is exactly that, as the step that closes the gap your own process was never going to close on its own.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Building Entirely by Description
 
-Owen Jacobs had never written code before starting KassaKoppel. His process with Cursor was purely conversational: describe what the point-of-sale integration needed to do, look at what came back, describe what needed to change, and repeat. Within weeks he had a working tool that connected small retailers' point-of-sale systems to their inventory and accounting software — genuinely useful, and built without Owen ever opening the underlying code himself.
+Owen Jacobs had never written code before starting KassaKoppel. His process with Cursor was purely conversational: describe what the point-of-sale integration needed to do, look at what came back, describe what needed to change, and repeat. Within weeks he had a working tool that connected small retailers' point-of-sale systems to their inventory and accounting software - genuinely useful, and built without Owen ever opening the underlying code himself.
 
 As KassaKoppel started handling real transaction data from retail clients, Owen brought the project to LaunchStudio for a review, precisely because he knew his own process had never included anyone reading the code directly. Manifera's engineers found the integration logic solid overall, but identified a handful of gaps typical of description-driven building: transaction retry logic that could, in rare failure cases, process the same sale twice, and insufficient validation on data coming from certain point-of-sale hardware models.
 
-The team fixed the retry logic, added proper validation, and gave Owen a plain-language summary of what had changed and why — matching the same description-first style he'd used to build the product in the first place.
+The team fixed the retry logic, added proper validation, and gave Owen a plain-language summary of what had changed and why - matching the same description-first style he'd used to build the product in the first place.
 
 **Result:** KassaKoppel now handles transaction retries correctly across all supported hardware, and Owen continues building new features purely by description, with periodic reviews as a standing checkpoint.
 
 > *"I built this whole thing by talking to Cursor, not by reading a single line myself. Having someone actually check it afterward was the missing piece."*
-> — **Owen Jacobs, Founder, KassaKoppel (Ermelo)**
+> - **Owen Jacobs, Founder, KassaKoppel (Ermelo)**
 
-**Cost & Timeline:** €950 (transaction logic review and validation fixes) — completed in 6 business days.
+**Cost & Timeline:** €950 (transaction logic review and validation fixes) - completed in 6 business days.
 
 ---
 

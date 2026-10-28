@@ -47,9 +47,9 @@ It also means a run of five rejections is statistically unremarkable, even thoug
 
 Where you are rejected tells you far more than the rejection itself.
 
-**Silence or rejection after applying.** Your application is not clearing the first read. The issue is usually presentation, relevance or targeting — not ability. Look at whether your CV shows outcomes, whether your experience is visible in the first third of the page, and whether you are applying to roles that plausibly match.
+**Silence or rejection after applying.** Your application is not clearing the first read. The issue is usually presentation, relevance or targeting - not ability. Look at whether your CV shows outcomes, whether your experience is visible in the first third of the page, and whether you are applying to roles that plausibly match.
 
-**Rejection after a screening call.** Usually mismatch on practicalities — level, salary, location, availability, language — or an unclear explanation of what you do. Ask these questions earlier yourself.
+**Rejection after a screening call.** Usually mismatch on practicalities - level, salary, location, availability, language - or an unclear explanation of what you do. Ask these questions earlier yourself.
 
 **Rejection after a technical stage.** A genuine skills gap, or a communication gap where you knew the answer and did not show your reasoning. Ask which.
 
@@ -83,7 +83,7 @@ Most requests for feedback fail because they ask for too much. "Could you tell m
 
 A better message is short and specific:
 
-*"Thank you for letting me know. If you have a moment, I would find it useful to know whether the gap was mainly in the practical exercise or in the depth of my production experience — it would help me focus my preparation. Either way, I enjoyed the conversation about your evaluation setup."*
+*"Thank you for letting me know. If you have a moment, I would find it useful to know whether the gap was mainly in the practical exercise or in the depth of my production experience - it would help me focus my preparation. Either way, I enjoyed the conversation about your evaluation setup."*
 
 One question, easy to answer, no argument implied. This gets a reply perhaps a third of the time, which is enough to be worth sending.
 
@@ -130,7 +130,7 @@ The practical advice above only works if you are still applying in month four, s
 
 **Separate identity from outcome.** A rejection says a company chose someone else for one role. It does not say you are not an engineer, a scientist or a capable person. This sounds obvious and stops being obvious around the twelfth rejection.
 
-**Measure effort, not results.** Results are outside your control and slow. Effort — applications sent, hours prepared, projects advanced — is within your control and visible weekly.
+**Measure effort, not results.** Results are outside your control and slow. Effort - applications sent, hours prepared, projects advanced - is within your control and visible weekly.
 
 **Keep building something.** A project that progresses regardless of the search gives you evidence of competence that no rejection touches, and it gives you something to talk about in the next interview.
 
@@ -194,7 +194,7 @@ Her next eleven applications produced six conversations and two offers. Nothing 
 
 - Most applications end in rejection; the ratios are ordinary even for strong candidates.
 - The stage at which you are rejected tells you what to fix.
-- Keep a written record — patterns are invisible without one.
+- Keep a written record - patterns are invisible without one.
 - Ask for feedback politely and briefly; some employers give it.
 - Separate the analytical response from the emotional one, and give both their place.
 

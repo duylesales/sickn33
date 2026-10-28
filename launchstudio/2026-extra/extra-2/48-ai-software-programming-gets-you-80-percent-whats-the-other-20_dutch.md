@@ -59,17 +59,17 @@ Een correcte herstelling verifieert het machtigingsniveau opnieuw aan de serverz
 
 Manifera's audits voor machtigingen en toegangsbeheer worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Leid ons door wat u gebouwd heeft — we reageren binnen een werkdag](https://launchstudio.eu/nl/#contact).
+[Leid ons door wat u gebouwd heeft - we reageren binnen een werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Het Bouwen van Autorisatiecontroles Die een Groeiende Featureset Overleven
 
 Een autorisatiesysteem dat bij de lancering feilloos werkt, blijft niet vanzelf correct naarmate er nieuwe functionaliteiten worden toegevoegd. Elke nieuwe feature biedt een verse kans om een bestaande toegangsregel onbewust te omzeilen. Een paar structurele ontwerpprincipes voorkomen dit:
 
 - **Centraliseer de autorisatiecontrole op één vaste plek** in plaats van de logica voor 'mag deze gebruiker dit document bewerken' telkens opnieuw te implementeren in afzonderlijke controllers. Eén centrale beleidsfunctie (policy) zorgt ervoor dat updates direct voor het gehele platform gelden.
-- **Hanteer 'standaard weigeren' (deny-by-default)** als uitgangspunt bij het ontwikkelen van nieuwe features — toegang moet expliciet worden toegekend op basis van de rol of eigendomsrelatie, in plaats van dat een endpoint standaard openstaat tenzij iemand eraan denkt een beperking toe te voegen.
-- **Test specifiek het afwijzende scenario, niet alleen het succespad** — controleer bij elke collaboratieve feature expliciet of een verzoek van een gebruiker met uitsluitend leesrechten daadwerkelijk wordt geweigerd met een 403 Forbidden.
-- **Her-evalueer bestaande autorisatieregels bij het toevoegen van export- of bulk-functies** — functionaliteiten zoals 'alles exporteren' of bulk-updates omzeilen in haastig geschreven code vaak de controles die voor individuele records al netjes waren ingericht.
-- **Log geweigerde autorisatiepogingen in uw monitoring** — een serie afgewezen verzoeken op een specifiek document is een belangrijke indicator van een configuratiefout of een bewuste scan door een kwaadwillende.
+- **Hanteer 'standaard weigeren' (deny-by-default)** als uitgangspunt bij het ontwikkelen van nieuwe features - toegang moet expliciet worden toegekend op basis van de rol of eigendomsrelatie, in plaats van dat een endpoint standaard openstaat tenzij iemand eraan denkt een beperking toe te voegen.
+- **Test specifiek het afwijzende scenario, niet alleen het succespad** - controleer bij elke collaboratieve feature expliciet of een verzoek van een gebruiker met uitsluitend leesrechten daadwerkelijk wordt geweigerd met een 403 Forbidden.
+- **Her-evalueer bestaande autorisatieregels bij het toevoegen van export- of bulk-functies** - functionaliteiten zoals 'alles exporteren' of bulk-updates omzeilen in haastig geschreven code vaak de controles die voor individuele records al netjes waren ingericht.
+- **Log geweigerde autorisatiepogingen in uw monitoring** - een serie afgewezen verzoeken op een specifiek document is een belangrijke indicator van een configuratiefout of een bewuste scan door een kwaadwillende.
 
 Deze ontwerpprincipes zorgen ervoor dat uw applicatie veilig en schaalbaar meegroeit met uw zakelijke ambities, zonder dat elke software-update nieuwe beveiligingslekken introduceert.
 
@@ -84,9 +84,9 @@ Een coach merkte op dat het gedeelde, veronderstelde alleen-lezen carrièreplann
 **Resultaat:** LaunchStudio voegde machtigingsverificatie aan de serverzijde toe aan elk document-updateverzoek. Dit garandeert dat een alleen-lezen deellink de inhoud oprecht niet kan wijzigen, wat de kloof sloot zonder de manier waarop coaches deelmachtigingen configureerden te veranderen.
 
 > *"De klant probeerde niet eens iets verkeerds te doen – een UI-actie veroorzaakte simpelweg een opslag die in de eerste plaats nooit doorgevoerd had mogen worden."*
-> — **Luuk Timmermans, Oprichter, LoopbaanPad (Harderwijk)**
+> - **Luuk Timmermans, Oprichter, LoopbaanPad (Harderwijk)**
 
-**Kosten en tijdlijn:** € 2.000 (audit voor machtigingsverificatie over gedeelde documenten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (audit voor machtigingsverificatie over gedeelde documenten) - voltooid in 6 werkdagen.
 
 ---
 
@@ -94,19 +94,19 @@ Een coach merkte op dat het gedeelde, veronderstelde alleen-lezen carrièreplann
 
 ### Zou een autorisatiespecialist interface-beperkingen beschouwen als een veelvoorkomende sluiproute in prototypes?
 
-Ja, bijzonder veelvoorkomend — het is nu eenmaal veel sneller om knoppen zoals 'Bewerken' of 'Verwijderen' simpelweg te verbergen in de frontend wanneer een gebruiker alleen leesrechten heeft, dan om op de server bij elk inkomend netwerkverzoek expliciet te controleren of de afzender wel schrijfrechten bezit.
+Ja, bijzonder veelvoorkomend - het is nu eenmaal veel sneller om knoppen zoals 'Bewerken' of 'Verwijderen' simpelweg te verbergen in de frontend wanneer een gebruiker alleen leesrechten heeft, dan om op de server bij elk inkomend netwerkverzoek expliciet te controleren of de afzender wel schrijfrechten bezit.
 
 ### Geldt dit autorisatieprobleem alleen voor het delen van documenten, of voor alle samenwerkingsfuncties?
 
 Het geldt universeel voor elk collaboratief platform: gedeelde agenda's, taakborden, teaminboxen en klantendossiers. Zodra meerdere gebruikers met verschillende rollen (admin, lid, gast) toegang hebben tot dezelfde bronnen, moet elke wijziging op de server worden gevalideerd.
 
-### Manifera heeft rechtenstructuren ontworpen voor uiteenlopende platforms — hoe vertaalt die kennis zich naar startups?
+### Manifera heeft rechtenstructuren ontworpen voor uiteenlopende platforms - hoe vertaalt die kennis zich naar startups?
 
 Het ontwerppatroon voor rolgebaseerde toegangscontrole (RBAC) is overal identiek: centrale beleidsregels, eenduidige validatie op databaseniveau en systematische foutafhandeling. Manifera helpt oprichters om deze structuur direct robuust neer te zetten voordat hun featureset explodeert.
 
 ### Hoe illustreert deze case de uitspraak van Herre Roelevink dat de laatste 20% van softwareontwikkeling de betrouwbaarheid bepaalt?
 
-Een AI-tool bouwt de eerste 80% van een deelfunctie in een middag — de gebruikersinterface, het uitnodigen van collega's en de visuele knoppen. De resterende 20% — het waterdicht afdwingen van permissies op de server bij onverwachte verzoeken — bepaalt of zakelijke klanten hun data aan u durven toevertrouwen.
+Een AI-tool bouwt de eerste 80% van een deelfunctie in een middag - de gebruikersinterface, het uitnodigen van collega's en de visuele knoppen. De resterende 20% - het waterdicht afdwingen van permissies op de server bij onverwachte verzoeken - bepaalt of zakelijke klanten hun data aan u durven toevertrouwen.
 
 ### Als een oprichter zijn AI-tool vraagt om 'leesrechten goed af te dwingen', lost dat het probleem dan betrouwbaar op?
 
@@ -122,7 +122,7 @@ Het helpt om de assistent in de goede richting te sturen, maar zonder een ervare
       "name": "Zou een autorisatiespecialist interface-beperkingen beschouwen als een veelvoorkomende sluiproute in prototypes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, bijzonder veelvoorkomend — het is nu eenmaal veel sneller om knoppen zoals 'Bewerken' of 'Verwijderen' simpelweg te verbergen in de frontend wanneer een gebruiker alleen leesrechten heeft, dan om op de server bij elk inkomend netwerkverzoek expliciet te controleren of de afzender wel schrijfrechten bezit."
+        "text": "Ja, bijzonder veelvoorkomend - het is nu eenmaal veel sneller om knoppen zoals 'Bewerken' of 'Verwijderen' simpelweg te verbergen in de frontend wanneer een gebruiker alleen leesrechten heeft, dan om op de server bij elk inkomend netwerkverzoek expliciet te controleren of de afzender wel schrijfrechten bezit."
       }
     },
     {
@@ -135,7 +135,7 @@ Het helpt om de assistent in de goede richting te sturen, maar zonder een ervare
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft rechtenstructuren ontworpen voor uiteenlopende platforms — hoe vertaalt die kennis zich naar startups?",
+      "name": "Manifera heeft rechtenstructuren ontworpen voor uiteenlopende platforms - hoe vertaalt die kennis zich naar startups?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Het ontwerppatroon voor rolgebaseerde toegangscontrole (RBAC) is overal identiek: centrale beleidsregels, eenduidige validatie op databaseniveau en systematische foutafhandeling. Manifera helpt oprichters om deze structuur direct robuust neer te zetten voordat hun featureset explodeert."
@@ -146,7 +146,7 @@ Het helpt om de assistent in de goede richting te sturen, maar zonder een ervare
       "name": "Hoe illustreert deze case de uitspraak van Herre Roelevink dat de laatste 20% van softwareontwikkeling de betrouwbaarheid bepaalt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een AI-tool bouwt de eerste 80% van een deelfunctie in een middag — de gebruikersinterface, het uitnodigen van collega's en de visuele knoppen. De resterende 20% — het waterdicht afdwingen van permissies op de server bij onverwachte verzoeken — bepaalt of zakelijke klanten hun data aan u durven toevertrouwen."
+        "text": "Een AI-tool bouwt de eerste 80% van een deelfunctie in een middag - de gebruikersinterface, het uitnodigen van collega's en de visuele knoppen. De resterende 20% - het waterdicht afdwingen van permissies op de server bij onverwachte verzoeken - bepaalt of zakelijke klanten hun data aan u durven toevertrouwen."
       }
     },
     {

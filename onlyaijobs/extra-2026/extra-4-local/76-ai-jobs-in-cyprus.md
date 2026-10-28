@@ -87,9 +87,9 @@ Cyprus offers long summers, beaches, mountains in the Troodos range and a relaxe
 
 ## How OnlyAIJobs Fits a Cyprus Search
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement — every listing competes on content.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement - every listing competes on content.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Cyprus you will find few or no local vacancies there today. Use Cypriot and international job portals, company career pages and research centre announcements as primary sources. OnlyAIJobs is useful for comparing Cyprus with the Netherlands — where fintech and technology employers such as Mollie, Accenture and Cegeka list AI roles — and as a method: on an island where most people drive, the exact office address determines your daily commute and where it makes sense to live. Cypriot employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Cyprus you will find few or no local vacancies there today. Use Cypriot and international job portals, company career pages and research centre announcements as primary sources. OnlyAIJobs is useful for comparing Cyprus with the Netherlands - where fintech and technology employers such as Mollie, Accenture and Cegeka list AI roles - and as a method: on an island where most people drive, the exact office address determines your daily commute and where it makes sense to live. Cypriot employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Fintech Data Science in a Regulated Environment
 
@@ -101,7 +101,7 @@ Ship management companies in Limassol oversee the technical operation, crewing a
 
 ## Research Centres and European Projects
 
-Cyprus's research centres participate in many European projects. KIOS works on monitoring and control of critical infrastructure — water networks, power grids and transport — using AI and intelligent systems. CYENS develops technologies in interactive media, visual computing and human-centred AI. The Cyprus Institute's computational science work supports climate research and high-performance computing. Research positions offer international collaboration and publications, often on project-based contracts, and can be a gateway to industry roles on the island or abroad.
+Cyprus's research centres participate in many European projects. KIOS works on monitoring and control of critical infrastructure - water networks, power grids and transport - using AI and intelligent systems. CYENS develops technologies in interactive media, visual computing and human-centred AI. The Cyprus Institute's computational science work supports climate research and high-performance computing. Research positions offer international collaboration and publications, often on project-based contracts, and can be a gateway to industry roles on the island or abroad.
 
 ## Gaming and Product Companies
 
@@ -129,7 +129,7 @@ Cypriot employers value real-time ML engineering, fraud and risk modelling, time
 
 ## Preparing for Interviews
 
-Interviews usually include technical screens, coding tasks, ML fundamentals, case studies relevant to the business — for example designing a fraud detection system or estimating fuel savings from speed optimisation — and conversations about relocation. Prepare to discuss trade-offs and governance, and ask detailed questions about the team, the data and the company's plans.
+Interviews usually include technical screens, coding tasks, ML fundamentals, case studies relevant to the business - for example designing a fraud detection system or estimating fuel savings from speed optimisation - and conversations about relocation. Prepare to discuss trade-offs and governance, and ask detailed questions about the team, the data and the company's plans.
 
 ## Evaluating an Offer
 
@@ -141,7 +141,7 @@ Cyprus suits engineers interested in fintech, maritime or product ML who value a
 
 ## The Honest Limits of the Market
 
-Cyprus's technology sector is large relative to its population but small in absolute terms. The number of specialised AI roles is limited, and many positions are concentrated in a few sectors — fintech, gaming, software and shipping. Research careers depend heavily on European project funding. Housing costs in Limassol have risen sharply, public transport is limited and the island's size means fewer options for changing employers without relocating again. On the other hand, the English-speaking business environment, tax incentives, climate and international community make Cyprus attractive for many engineers, particularly those who value lifestyle and are comfortable in fast-moving, commercially focused companies. Being realistic about these trade-offs before moving leads to better decisions and fewer surprises.
+Cyprus's technology sector is large relative to its population but small in absolute terms. The number of specialised AI roles is limited, and many positions are concentrated in a few sectors - fintech, gaming, software and shipping. Research careers depend heavily on European project funding. Housing costs in Limassol have risen sharply, public transport is limited and the island's size means fewer options for changing employers without relocating again. On the other hand, the English-speaking business environment, tax incentives, climate and international community make Cyprus attractive for many engineers, particularly those who value lifestyle and are comfortable in fast-moving, commercially focused companies. Being realistic about these trade-offs before moving leads to better decisions and fewer surprises.
 
 ## Remote Work from Cyprus
 
@@ -165,7 +165,7 @@ Spend a week in Cyprus outside the tourist season before deciding; everyday life
 
 A data scientist working on credit risk in Warsaw receives an offer from a Limassol payments company to lead fraud detection models. The salary is higher, and she may qualify for Cyprus's tax incentives for relocating employees.
 
-She consults a tax adviser, compares Limassol rents with her Warsaw costs and researches the company's licensing and reputation. She accepts and negotiates relocation support. After a year, she says the technical work is demanding and international, her net income is higher than before and the climate is a daily bonus — though she recommends budgeting carefully for housing and a car.
+She consults a tax adviser, compares Limassol rents with her Warsaw costs and researches the company's licensing and reputation. She accepts and negotiates relocation support. After a year, she says the technical work is demanding and international, her net income is higher than before and the climate is a daily bonus - though she recommends budgeting carefully for housing and a car.
 
 ## Key Takeaways
 

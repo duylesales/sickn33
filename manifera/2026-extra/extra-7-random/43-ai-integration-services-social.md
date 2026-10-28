@@ -6,7 +6,7 @@
 ❌ **Bolted On, Not Integrated:** An AI feature that requires manual copy-paste, disconnected from the real workflow.
 
 **The Manifera Solution:**
-✅ **Three Real Priorities:** Data access, workflow integration, and trust/verification design — scoped upfront.
+✅ **Three Real Priorities:** Data access, workflow integration, and trust/verification design - scoped upfront.
 ✅ **Amsterdam Strategic Governance:** Planning effort weighted where the real difficulty actually lives.
 ✅ **Vietnam Execution Velocity:** Building the genuine data pipelines and workflow foundation an AI capability actually depends on.
 

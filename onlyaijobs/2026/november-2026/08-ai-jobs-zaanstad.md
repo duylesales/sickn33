@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Zaandam is ten minutes by train from Amsterdam Centraal, close enough that many people think of it as a suburb. It is not. Zaanstad is the headquarters location of the Netherlands' largest grocery retailer and its international parent company, and the Zaan region has been one of the world's major centres of cocoa processing for generations. Retail data at national scale and food manufacturing data at global scale meet within a few kilometres — and much of it remains invisible to candidates who search only for "Amsterdam".
+Zaandam is ten minutes by train from Amsterdam Centraal, close enough that many people think of it as a suburb. It is not. Zaanstad is the headquarters location of the Netherlands' largest grocery retailer and its international parent company, and the Zaan region has been one of the world's major centres of cocoa processing for generations. Retail data at national scale and food manufacturing data at global scale meet within a few kilometres - and much of it remains invisible to candidates who search only for "Amsterdam".
 
 ## Why the Zaan Region Became an Industrial Food Centre
 
@@ -73,7 +73,7 @@ This long history created a dense cluster of process industry, logistics and foo
 
 In grocery retail, margins are thin and volumes enormous. A forecasting improvement of a fraction of a percentage point, applied to thousands of products in hundreds of stores, can translate into less food waste, fewer empty shelves and meaningful savings. That makes retail one of the sectors where the business value of machine learning is most directly measurable.
 
-Fresh products add difficulty. Bread, vegetables, meat and ready meals have short shelf lives, demand depends on weather and holidays, and a promotion on one product changes demand for others. Data scientists in retail spend much of their time on these interactions — cannibalisation, halo effects and substitution — and on experimentation to measure what actually works.
+Fresh products add difficulty. Bread, vegetables, meat and ready meals have short shelf lives, demand depends on weather and holidays, and a promotion on one product changes demand for others. Data scientists in retail spend much of their time on these interactions - cannibalisation, halo effects and substitution - and on experimentation to measure what actually works.
 
 ## Cocoa and Vegetable Oils: Traceability as a Data Problem
 
@@ -95,7 +95,7 @@ For data professionals, this turns sustainability into a data engineering and ge
 
 ## A Concrete Scenario: Reducing Waste on Fresh Products
 
-A retail data science team develops a new forecasting model for fresh products. It reduces forecast error in offline tests. When rolled out to a pilot region, waste decreases — but so does availability in the late afternoon, when customers who shop after work find empty shelves.
+A retail data science team develops a new forecasting model for fresh products. It reduces forecast error in offline tests. When rolled out to a pilot region, waste decreases - but so does availability in the late afternoon, when customers who shop after work find empty shelves.
 
 The team realises it optimised the wrong objective. Waste and availability must be balanced, and the right balance differs per product and per store. The final solution combines the forecast with an ordering policy that makes the trade-off explicit, and store managers get insight into why orders change. The episode is typical of retail AI: the model is only valuable once it is embedded in decisions people trust.
 
@@ -131,7 +131,7 @@ Retail data experience is highly transferable: forecasting, pricing and experime
 
 ## Experimentation Culture in Retail
 
-Retail is one of the few sectors where controlled experiments can be run at scale outside the digital world. A promotion can be tested in one group of stores and not in a comparable group; a new ordering policy can be piloted in a region before national roll-out; an app feature can be tested with part of the customer base. Data scientists who understand experimental design — how to choose comparable groups, how long to run a test, how to deal with spill-over effects between nearby stores — are particularly valuable.
+Retail is one of the few sectors where controlled experiments can be run at scale outside the digital world. A promotion can be tested in one group of stores and not in a comparable group; a new ordering policy can be piloted in a region before national roll-out; an app feature can be tested with part of the customer base. Data scientists who understand experimental design - how to choose comparable groups, how long to run a test, how to deal with spill-over effects between nearby stores - are particularly valuable.
 
 The practical difficulties are real. Stores differ in size, location and customer base. Weather and local events affect results. Suppliers, category managers and store operations all have opinions about what should be tested. A mature retail data team has a clear process for deciding what to test, how to measure it and when results are strong enough to change the way thousands of stores operate.
 
@@ -139,7 +139,7 @@ The practical difficulties are real. Stores differ in size, location and custome
 
 Food manufacturers along the Zaan operate large, continuous or batch processes: roasting, pressing, refining, blending and packaging. Many sites have decades of operational history and a mixture of modern and older equipment. Digitalisation projects typically start with connecting equipment and collecting reliable sensor data, then move towards dashboards, soft sensors that estimate quality in real time and optimisation of energy use.
 
-Energy is a particularly important topic. Food processing is energy intensive, and energy prices and emission targets make efficiency improvements valuable. Data professionals who can combine process knowledge with analytics — understanding why a roaster behaves differently in winter, for example — can make a measurable contribution.
+Energy is a particularly important topic. Food processing is energy intensive, and energy prices and emission targets make efficiency improvements valuable. Data professionals who can combine process knowledge with analytics - understanding why a roaster behaves differently in winter, for example - can make a measurable contribution.
 
 ## Questions Worth Asking Before Joining
 
@@ -166,10 +166,10 @@ Browse current AI, machine learning and data jobs in and around Zaanstad at [onl
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who thinks Zaandam is just a suburb) Is Zaanstad a serious location for data careers?
-Yes — it hosts the headquarters of Ahold Delhaize and Albert Heijn, and major food processors operate along the Zaan.
+Yes - it hosts the headquarters of Ahold Delhaize and Albert Heijn, and major food processors operate along the Zaan.
 
 ### (Scenario: data scientist considering retail) Is retail data science technically challenging?
-Yes — it combines large-scale forecasting, causal inference, optimisation and engineering, with directly measurable results.
+Yes - it combines large-scale forecasting, causal inference, optimisation and engineering, with directly measurable results.
 
 ### (Scenario: candidate interested in sustainability) How does sustainability regulation create data jobs in the food industry?
 Rules such as the EU Deforestation Regulation require traceability and geolocation data for commodities like cocoa and palm oil, creating demand for supply chain and geospatial data specialists.
@@ -185,8 +185,8 @@ Around ten minutes by train from Amsterdam Centraal, with frequent connections.
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Zaanstad a serious location for data careers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it hosts the headquarters of Ahold Delhaize and Albert Heijn, plus major food processors."}},
-    {"@type": "Question", "name": "Is retail data science technically challenging?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — forecasting, causal inference, optimisation and engineering with measurable results."}},
+    {"@type": "Question", "name": "Is Zaanstad a serious location for data careers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it hosts the headquarters of Ahold Delhaize and Albert Heijn, plus major food processors."}},
+    {"@type": "Question", "name": "Is retail data science technically challenging?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - forecasting, causal inference, optimisation and engineering with measurable results."}},
     {"@type": "Question", "name": "How does sustainability regulation create data jobs in the food industry?", "acceptedAnswer": {"@type": "Answer", "text": "Traceability and geolocation requirements for commodities create demand for supply chain and geospatial specialists."}},
     {"@type": "Question", "name": "What data work exists in food manufacturing?", "acceptedAnswer": {"@type": "Answer", "text": "Process optimisation, quality control, energy efficiency and traceability."}},
     {"@type": "Question", "name": "How long is the commute from Amsterdam to Zaandam?", "acceptedAnswer": {"@type": "Answer", "text": "Around ten minutes by train from Amsterdam Centraal."}}

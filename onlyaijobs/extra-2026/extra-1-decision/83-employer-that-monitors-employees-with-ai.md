@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The role sounds ordinary until the use case appears. Scoring customer service calls for quality. Analysing how long tasks take in a warehouse. Modelling driver behaviour from telematics. Flagging unusual access patterns in internal systems. Predicting which employees are likely to resign. All of these exist in Dutch organisations, all of them are technically interesting, and all of them make your colleagues the subject of the model rather than its user. That changes the questions you should ask before accepting — not because such work is automatically wrong, but because a great deal of it is built without the conditions that would make it defensible.
+The role sounds ordinary until the use case appears. Scoring customer service calls for quality. Analysing how long tasks take in a warehouse. Modelling driver behaviour from telematics. Flagging unusual access patterns in internal systems. Predicting which employees are likely to resign. All of these exist in Dutch organisations, all of them are technically interesting, and all of them make your colleagues the subject of the model rather than its user. That changes the questions you should ask before accepting - not because such work is automatically wrong, but because a great deal of it is built without the conditions that would make it defensible.
 
 ## What This Work Covers
 
@@ -55,9 +55,9 @@ The technology is unremarkable. The context is what makes it different: the peop
 
 **Some practices are prohibited outright.** The **AI Act** bans certain practices, including inferring emotions of people in the workplace, subject to narrow exceptions such as medical or safety reasons. If a proposal involves detecting frustration, stress or engagement from voice or video, that is the first thing to check.
 
-**Employment-related AI is largely high-risk.** The Act's Annex III includes AI used in employment and worker management — recruitment, task allocation, monitoring and evaluation of performance and behaviour, and decisions on promotion or termination. That brings obligations around documentation, data governance, human oversight, logging and monitoring, phased over time.
+**Employment-related AI is largely high-risk.** The Act's Annex III includes AI used in employment and worker management - recruitment, task allocation, monitoring and evaluation of performance and behaviour, and decisions on promotion or termination. That brings obligations around documentation, data governance, human oversight, logging and monitoring, phased over time.
 
-**Privacy law applies in parallel.** Under the **GDPR**, monitoring requires a lawful basis, and consent is generally problematic in an employment relationship because of the power imbalance, so employers typically rely on legitimate interests — which requires a genuine balancing exercise. A **data protection impact assessment** is normally expected for systematic monitoring, and transparency obligations mean employees must be informed. The **Autoriteit Persoonsgegevens** has published guidance on employee monitoring and has acted on it.
+**Privacy law applies in parallel.** Under the **GDPR**, monitoring requires a lawful basis, and consent is generally problematic in an employment relationship because of the power imbalance, so employers typically rely on legitimate interests - which requires a genuine balancing exercise. A **data protection impact assessment** is normally expected for systematic monitoring, and transparency obligations mean employees must be informed. The **Autoriteit Persoonsgegevens** has published guidance on employee monitoring and has acted on it.
 
 **The works council has a consent right.** Under article 27 of the **Works Councils Act**, an employer needs the works council's consent for decisions on, among other things, arrangements for staff monitoring or facilities for observing employees' presence, behaviour or performance. This is not a consultation but a consent requirement, and a decision taken without it can be challenged.
 
@@ -75,7 +75,7 @@ If you would be joining before that process, ask what happens if consent is refu
 
 **Safety and security.** Detecting unsafe driving, unauthorised access to sensitive systems, or genuine integrity risks. Usually defensible, provided it is proportionate and transparent, and this work has real value.
 
-**Aggregate process improvement.** Understanding where a process is slow, where workload is unevenly distributed, where errors cluster — at team or process level rather than individual level. Frequently the most useful version, and the least intrusive.
+**Aggregate process improvement.** Understanding where a process is slow, where workload is unevenly distributed, where errors cluster - at team or process level rather than individual level. Frequently the most useful version, and the least intrusive.
 
 **Individual measurement and ranking.** Scoring, comparing and predicting individuals. This is where most problems live: it is the version most likely to be disproportionate, most likely to be inaccurate, and most likely to damage trust irreversibly.
 
@@ -105,7 +105,7 @@ Ask which of these the role is, and notice whether the answer changes between th
 
 ## Your Position If You Have Concerns
 
-You are an employee, not the accountable party, and the obligations under these rules sit with the organisation. Your practical protection is the same as in any regulated work: raise concerns in writing, address them to the people whose job it is — the data protection officer, legal, the works council where appropriate — and keep a record of what you raised and what was decided.
+You are an employee, not the accountable party, and the obligations under these rules sit with the organisation. Your practical protection is the same as in any regulated work: raise concerns in writing, address them to the people whose job it is - the data protection officer, legal, the works council where appropriate - and keep a record of what you raised and what was decided.
 
 If the answer is that the concerns are noted and the work proceeds unchanged, you have a decision to make, and it is much easier to make it before you have built the thing than afterwards.
 
@@ -150,7 +150,7 @@ If you do take this work, it is worth knowing what distinguishes systems that co
 
 **Involve the people being measured in the design.** Operators, agents and drivers know which variations mean something and which are noise, and their input usually improves accuracy as well as acceptance.
 
-These choices tend to survive works council scrutiny, and they also produce better models — because ranking people on noisy individual data is, quite apart from everything else, usually bad measurement.
+These choices tend to survive works council scrutiny, and they also produce better models - because ranking people on noisy individual data is, quite apart from everything else, usually bad measurement.
 
 ## Real example
 
@@ -172,13 +172,13 @@ His conclusion: the constraint improved the work, and he would not have joined w
 
 - Employee monitoring is technically ordinary and contextually different, because the people in the data cannot meaningfully refuse and the consequences can include dismissal.
 - The AI Act prohibits certain practices, including workplace emotion inference with narrow exceptions, and treats employment and worker management as high-risk; privacy law requires a lawful basis, an impact assessment and transparency.
-- Under article 27 of the Works Councils Act, staff monitoring arrangements need works council consent — asking whether it has been given is the single best test of the employer.
+- Under article 27 of the Works Councils Act, staff monitoring arrangements need works council consent - asking whether it has been given is the single best test of the employer.
 - Aggregate process analysis usually delivers most of the value with a fraction of the intrusion; individual scoring is where the problems concentrate.
 - Decline covert monitoring, emotion inference and automatic employment consequences; raise concerns in writing and keep a record.
 
 ## Where to Start
 
-If a role involves data about colleagues rather than customers, establish the works council position before the final interview — and compare with employers near you doing operational analytics without individual measurement.
+If a role involves data about colleagues rather than customers, establish the works council position before the final interview - and compare with employers near you doing operational analytics without individual measurement.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -197,7 +197,7 @@ Whether the works council has been asked and what they said. An employer that ha
 Raise them in writing with the data protection officer, legal or the works council, and keep a record. Obligations sit with the organisation, but your professional record is your own.
 
 ### (Scenario: candidate thinking ahead) How does this look on my CV later?
-Well, if you can describe proportionate design, oversight and governance — a scarce specialism. Poorly, if the system became something colleagues resented or that attracted public criticism.
+Well, if you can describe proportionate design, oversight and governance - a scarce specialism. Poorly, if the system became something colleagues resented or that attracted public criticism.
 
 <script type="application/ld+json">
 {

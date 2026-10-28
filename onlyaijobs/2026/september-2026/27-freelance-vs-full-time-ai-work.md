@@ -32,11 +32,11 @@ Content Format: Career Guide
 }
 </script>
 
-Freelance AI work in the Netherlands is often compared on hourly rate versus salary, as if that were the core of the choice. It isn't. The core is which kind of work and which kind of risk you are comfortable with — and that differs fundamentally between the two routes, regardless of what arrives in your bank account.
+Freelance AI work in the Netherlands is often compared on hourly rate versus salary, as if that were the core of the choice. It isn't. The core is which kind of work and which kind of risk you are comfortable with - and that differs fundamentally between the two routes, regardless of what arrives in your bank account.
 
 ## What Freelance Work Actually Gives You
 
-Variety in projects and clients, more control over your schedule, and often access to interesting, short-term problems that a company doesn't consider worth opening a permanent position for. The price: you are responsible yourself for acquisition, administration and periods without an assignment — things a full-time role simply takes away.
+Variety in projects and clients, more control over your schedule, and often access to interesting, short-term problems that a company doesn't consider worth opening a permanent position for. The price: you are responsible yourself for acquisition, administration and periods without an assignment - things a full-time role simply takes away.
 
 ## What Full-Time Work Actually Gives You
 
@@ -50,7 +50,7 @@ Not "which pays more," but: can you work well without the structure of a team ar
 
 **Can you work well without the daily structure of a team around you?** Some people thrive on the freedom to plan their own day; others lose motivation without the social structure and direct feedback of colleagues.
 
-**Do you find it acceptable to be responsible for acquisition and administration alongside your technical work?** This is not a matter of discipline — it is a matter of which kind of work gives you energy and which kind costs you energy.
+**Do you find it acceptable to be responsible for acquisition and administration alongside your technical work?** This is not a matter of discipline - it is a matter of which kind of work gives you energy and which kind costs you energy.
 
 ## Comparison Table: Freelance vs. Permanent, on the Points That Really Matter
 
@@ -68,15 +68,15 @@ Many AI professionals treat this choice as if it fixes their entire career, whil
 
 ## A Concrete Scenario to Test Your Own Preference
 
-Imagine an ordinary Tuesday a year from now. As a freelancer, you start that day by checking your calendar for three different clients, you have to decide yourself how much time to spend on acquisition for next month, and you work physically alone unless you make an effort to work somewhere with others. As a permanent employee, you start that day with a team meeting, you know exactly what is expected of you this week, and you don't have to think about where next month's income will come from. Which of these two Tuesdays appeals to you more — not in theory, but when you really try to imagine yourself in it?
+Imagine an ordinary Tuesday a year from now. As a freelancer, you start that day by checking your calendar for three different clients, you have to decide yourself how much time to spend on acquisition for next month, and you work physically alone unless you make an effort to work somewhere with others. As a permanent employee, you start that day with a team meeting, you know exactly what is expected of you this week, and you don't have to think about where next month's income will come from. Which of these two Tuesdays appeals to you more - not in theory, but when you really try to imagine yourself in it?
 
 ## A Common Misconception About Financial Security
 
-People often assume that a permanent contract by definition gives more financial security than freelance work. That is true in the short term, but in the longer term freelance income depends on your ability to keep finding new assignments — a skill that, once built, can offer its own form of security that is just as robust as a permanent salary, provided you have built a diverse network of clients instead of depending on one large client.
+People often assume that a permanent contract by definition gives more financial security than freelance work. That is true in the short term, but in the longer term freelance income depends on your ability to keep finding new assignments - a skill that, once built, can offer its own form of security that is just as robust as a permanent salary, provided you have built a diverse network of clients instead of depending on one large client.
 
 ## Why This Choice Is Less Final Than It Feels at the Start of Your Career
 
-Many professionals make this choice early in their career and then treat it as a permanent identity — "I'm a freelancer" or "I'm in permanent employment" — while the Dutch labour market for AI professionals is flexible enough to switch several times as your life stage, financial situation and personal preferences change. Treat the current choice as suited to your current situation, not as a permanent label.
+Many professionals make this choice early in their career and then treat it as a permanent identity - "I'm a freelancer" or "I'm in permanent employment" - while the Dutch labour market for AI professionals is flexible enough to switch several times as your life stage, financial situation and personal preferences change. Treat the current choice as suited to your current situation, not as a permanent label.
 
 ## A Practical Way to Test Your Preference Without Switching Immediately
 
@@ -84,7 +84,7 @@ If you are torn between both routes without ever having tried the other, there i
 
 ## Why Most People Misjudge This Choice Before Actually Making It
 
-People who have never freelanced often overestimate how much they will value the freedom and underestimate how much they will miss the social structure of a team — and conversely, people who have always been in permanent employment often underestimate how much satisfaction they can get from building their own client portfolio. This is not a lack of self-knowledge; it is simply hard to judge an experience accurately before you have actually had it, which is a strong argument for doing a small-scale experiment first where possible before making a final choice.
+People who have never freelanced often overestimate how much they will value the freedom and underestimate how much they will miss the social structure of a team - and conversely, people who have always been in permanent employment often underestimate how much satisfaction they can get from building their own client portfolio. This is not a lack of self-knowledge; it is simply hard to judge an experience accurately before you have actually had it, which is a strong argument for doing a small-scale experiment first where possible before making a final choice.
 
 ## The Dutch Ground Rules for Self-Employed AI Professionals
 
@@ -123,7 +123,7 @@ A commonly used rule of thumb is that a freelancer can bill far from all availab
 
 **What work freelancers often do.** Well-defined projects such as a proof of concept, a model audit, setting up an MLOps pipeline, a temporary expansion of a team, or specialist knowledge an organisation doesn't need permanently.
 
-**Regulation as a new market.** Because of the **EU Artificial Intelligence Act**, organisations are looking for temporary expertise for inventories of AI systems, risk classification and documentation. Freelancers with demonstrable knowledge of AI governance find a growing niche here — provided they clearly define what they are responsible for.
+**Regulation as a new market.** Because of the **EU Artificial Intelligence Act**, organisations are looking for temporary expertise for inventories of AI systems, risk classification and documentation. Freelancers with demonstrable knowledge of AI governance find a growing niche here - provided they clearly define what they are responsible for.
 
 ## Doing an Honest Calculation
 
@@ -145,7 +145,7 @@ A commonly used rule of thumb is that a freelancer can bill far from all availab
 
 Judge the choice on how you prefer to work, not just on a rate comparison. Both routes have real, structural disadvantages that no higher rate or salary removes.
 
-Browse current AI, machine learning and data vacancies — full-time and freelance — in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+Browse current AI, machine learning and data vacancies - full-time and freelance - in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
@@ -156,13 +156,13 @@ Not necessarily, once you include acquisition time, administration and periods w
 People who can work well without the structure of a team, and who find the operational burden of acquisition and administration acceptable in exchange for autonomy and variety.
 
 ### (Scenario: engineer who thinks full-time work is always more stable) Is a full-time job always more stable than freelance work?
-Usually in terms of income, but not necessarily in terms of project variety or autonomy — a full-time role gives less control over which problem you solve than freelance work often offers.
+Usually in terms of income, but not necessarily in terms of project variety or autonomy - a full-time role gives less control over which problem you solve than freelance work often offers.
 
 ### (Scenario: engineer considering switching) Can I easily switch between freelance and full-time work during my career?
-Yes, that happens more often in the Dutch AI market than people think — the two routes are not mutually exclusive, and many engineers switch depending on which life stage or type of work suits them at the time.
+Yes, that happens more often in the Dutch AI market than people think - the two routes are not mutually exclusive, and many engineers switch depending on which life stage or type of work suits them at the time.
 
 ### (Scenario: engineer unsure how to decide) What should I pay attention to when making this choice?
-How you prefer to work — with or without a team structure, with or without your own acquisition — more than a direct rate comparison, because the two routes have structurally different risks that no rate removes.
+How you prefer to work - with or without a team structure, with or without your own acquisition - more than a direct rate comparison, because the two routes have structurally different risks that no rate removes.
 
 <script type="application/ld+json">
 {
@@ -172,7 +172,7 @@ How you prefer to work — with or without a team structure, with or without you
     {"@type": "Question", "name": "Is freelance AI work always financially more attractive than full-time?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily, once you include acquisition time, administration and periods without an assignment."}},
     {"@type": "Question", "name": "Who is better off as a freelancer than in a permanent job?", "acceptedAnswer": {"@type": "Answer", "text": "People who can work well without a team structure, and who find the operational burden of acquisition and administration acceptable."}},
     {"@type": "Question", "name": "Is a full-time job always more stable than freelance work?", "acceptedAnswer": {"@type": "Answer", "text": "Usually in terms of income, but not necessarily in terms of project variety or autonomy."}},
-    {"@type": "Question", "name": "Can I easily switch between freelance and full-time work during my career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, that happens more often than people think — many engineers switch depending on which life stage suits them."}},
+    {"@type": "Question", "name": "Can I easily switch between freelance and full-time work during my career?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, that happens more often than people think - many engineers switch depending on which life stage suits them."}},
     {"@type": "Question", "name": "What should I pay attention to when making this choice?", "acceptedAnswer": {"@type": "Answer", "text": "How you prefer to work, more than a direct rate comparison, because the two routes have structurally different risks."}}
   ]
 }

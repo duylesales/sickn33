@@ -35,7 +35,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Drug development is slow, expensive and mostly unsuccessful, which is precisely why the industry invests heavily in anything that improves the odds. Europe has a dense life sciences landscape — large pharmaceutical companies, biotech clusters, contract research organisations and academic medical centres — and a persistent shortage of people who can combine computational skill with biological and clinical understanding. AI jobs in pharma and biotech are varied, stable and unusually well suited to people arriving from scientific backgrounds.
+Drug development is slow, expensive and mostly unsuccessful, which is precisely why the industry invests heavily in anything that improves the odds. Europe has a dense life sciences landscape - large pharmaceutical companies, biotech clusters, contract research organisations and academic medical centres - and a persistent shortage of people who can combine computational skill with biological and clinical understanding. AI jobs in pharma and biotech are varied, stable and unusually well suited to people arriving from scientific backgrounds.
 
 ## Where AI Jobs in Pharma and Biotech Are Found
 
@@ -67,7 +67,7 @@ Life sciences data has a characteristic shape that catches out people arriving f
 
 A transcriptomics experiment may measure twenty thousand genes across forty samples. A clinical trial may have three hundred patients and hundreds of recorded variables. Each observation cost real money and took months to obtain, so discarding data is not an option and overfitting is a constant danger.
 
-This inverts the usual instincts. Regularisation, careful feature selection, cross-validation done correctly, and honest reporting of uncertainty matter far more than model capacity. Pre-specification of analyses — deciding what you will test before you look — is standard practice in clinical work and increasingly expected elsewhere, precisely because the risk of finding spurious patterns in wide data is so high.
+This inverts the usual instincts. Regularisation, careful feature selection, cross-validation done correctly, and honest reporting of uncertainty matter far more than model capacity. Pre-specification of analyses - deciding what you will test before you look - is standard practice in clinical work and increasingly expected elsewhere, precisely because the risk of finding spurious patterns in wide data is so high.
 
 Batch effects are a second recurring trap. Samples processed on different days, by different technicians, on different instruments, carry systematic differences that models happily learn. Detecting and correcting for them is a core competency, and interviewers frequently ask about it because candidates who have not worked with experimental data usually have not encountered the problem.
 
@@ -77,7 +77,7 @@ More data roles exist around clinical trials than around molecule design, and th
 
 The work includes designing trials and calculating the statistical power needed; selecting countries and sites based on historical recruitment performance; predicting enrolment and flagging sites at risk of falling behind; risk-based monitoring, which uses statistical signals to focus quality oversight where it matters; managing and cleaning trial data; and analysing safety signals as they emerge.
 
-Increasingly, real-world data — from health registries, insurance claims and hospital records — is used to design trials, contextualise results and support regulatory submissions. Working with it requires understanding both the statistics of observational data and the governance of health information across different European jurisdictions, where access rules differ substantially between countries.
+Increasingly, real-world data - from health registries, insurance claims and hospital records - is used to design trials, contextualise results and support regulatory submissions. Working with it requires understanding both the statistics of observational data and the governance of health information across different European jurisdictions, where access rules differ substantially between countries.
 
 Contract research organisations, which run trials on behalf of sponsors, are significant employers in this space and hire data professionals continuously. They are often overlooked by candidates who only search pharmaceutical company names, and they offer exposure to many therapeutic areas quickly.
 
@@ -89,7 +89,7 @@ Protein structure prediction moved from a research problem to a routine tool, wh
 
 The practical consequence is that discovery teams need people who can integrate computation with laboratory reality. A model proposing a thousand candidates is only useful if someone can rank them against synthesisability, toxicity risk, intellectual property position and the throughput of the assay that will test them.
 
-This is why employers repeatedly emphasise collaboration with medicinal chemists and biologists. Candidates who present themselves purely as modellers are less attractive than those who can describe how their output fed a real experiment and what the experiment showed — including when it contradicted the model, which it frequently does.
+This is why employers repeatedly emphasise collaboration with medicinal chemists and biologists. Candidates who present themselves purely as modellers are less attractive than those who can describe how their output fed a real experiment and what the experiment showed - including when it contradicted the model, which it frequently does.
 
 ## Manufacturing and Supply in Regulated Production
 
@@ -97,7 +97,7 @@ Pharmaceutical manufacturing is a rich and under-appreciated area for data work,
 
 Biological processes are variable by nature, so understanding which process parameters drive yield and quality has direct financial and patient-supply consequences. Typical projects include multivariate process monitoring, predicting batch outcomes, investigating deviations, optimising cell culture conditions and forecasting supply.
 
-The regulatory frame is strict. Changes to a validated process require justification and often regulatory notification, so models tend to support decisions rather than make them automatically. Data integrity requirements — attributable, legible, contemporaneous, original and accurate records — shape how systems are built and logged.
+The regulatory frame is strict. Changes to a validated process require justification and often regulatory notification, so models tend to support decisions rather than make them automatically. Data integrity requirements - attributable, legible, contemporaneous, original and accurate records - shape how systems are built and logged.
 
 Skills that transfer directly from industrial analytics apply here: multivariate statistics, time series, design of experiments and a comfort with sensor data. What must be learned is the vocabulary of validated environments and the discipline of change control.
 
@@ -119,7 +119,7 @@ What distinguishes these projects from general enterprise work is the evidentiar
 
 Three routes work reliably.
 
-**From academia.** A PhD or postdoc in a relevant field — biology, chemistry, physics, statistics, bioinformatics — is the traditional path into discovery and translational roles. What academics usually need to add is software engineering discipline, an understanding of project timelines and the ability to present to non-specialists.
+**From academia.** A PhD or postdoc in a relevant field - biology, chemistry, physics, statistics, bioinformatics - is the traditional path into discovery and translational roles. What academics usually need to add is software engineering discipline, an understanding of project timelines and the ability to present to non-specialists.
 
 **From engineering.** Data engineers, platform engineers and ML engineers are hired for their skills, not their biology. Life sciences organisations have large, fragmented data estates and consistently struggle to recruit people who can build reliable infrastructure. Domain learning happens gradually and nobody expects it on day one.
 
@@ -139,7 +139,7 @@ Remote work is partially possible for computational and clinical data roles and 
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show the exact address and distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can buy a higher ranking.
 
-For this sector, read vacancy text carefully for the distinction between scientific roles that require domain training and engineering roles that do not. The terminology in the posting — assays and targets versus pipelines and platforms — usually makes the difference obvious.
+For this sector, read vacancy text carefully for the distinction between scientific roles that require domain training and engineering roles that do not. The terminology in the posting - assays and targets versus pipelines and platforms - usually makes the difference obvious.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven and Groningen, with employers such as Accenture, Cegeka and Holland Innovative among those listing AI and data roles. For the Swiss, Nordic, Belgian and German clusters, combine the board with national sites and company career pages. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -185,7 +185,7 @@ For discovery roles, a scientific background is usually expected. For data engin
 
 ## Where to Start
 
-Choose one area — genomics, imaging, clinical data or manufacturing — and learn its data and vocabulary properly. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Choose one area - genomics, imaging, clinical data or manufacturing - and learn its data and vocabulary properly. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
-🦁 Marloes Tijssen built WildPad, a visitor booking app for Emmen's zoo-adjacent tourism sector, using Lovable across two weekends — her €50/month Lovable subscription felt like almost her whole launch budget, until she found out her database had no backup strategy and her Stripe integration was still stuck in test mode. 😳
+🦁 Marloes Tijssen built WildPad, a visitor booking app for Emmen's zoo-adjacent tourism sector, using Lovable across two weekends - her €50/month Lovable subscription felt like almost her whole launch budget, until she found out her database had no backup strategy and her Stripe integration was still stuck in test mode. 😳
 
 The subscription price and the launch-ready price are two very different numbers. 🧠
 
@@ -11,7 +11,7 @@ The subscription price and the launch-ready price are two very different numbers
 ✅ Backed-up production database
 ✅ GDPR-compliant data storage and a security pass on the booking flow
 
-At **LaunchStudio**, we quote this exact production gap as a fixed price — typically 20% of what a traditional agency charges, backed by Manifera's 120+ engineers. 🛡️
+At **LaunchStudio**, we quote this exact production gap as a fixed price - typically 20% of what a traditional agency charges, backed by Manifera's 120+ engineers. 🛡️
 
 Her result: WildPad launched with live payments in time for the summer holiday season, on a budget she'd actually planned for. 🚀
 

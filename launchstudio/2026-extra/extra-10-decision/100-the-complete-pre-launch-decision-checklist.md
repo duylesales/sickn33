@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The hardest thing about taking an AI-generated product to production is not any individual technical problem. It is that the problems are invisible from where the founder is standing: the product works, the demo goes well, and the failures are all in paths nobody has walked — an empty account, a large customer, a second user, a declined card, a document in the wrong encoding, a Sunday when the certificate expires.
+The hardest thing about taking an AI-generated product to production is not any individual technical problem. It is that the problems are invisible from where the founder is standing: the product works, the demo goes well, and the failures are all in paths nobody has walked - an empty account, a large customer, a second user, a declined card, a document in the wrong encoding, a Sunday when the certificate expires.
 
 This is the last article in a hundred, and it exists to be the thing you actually work through. It is organised by consequence rather than by topic: what has to be settled before anyone pays you, what should be settled before the first serious customer, and what can wait until demand proves it necessary.
 
@@ -28,11 +28,11 @@ This is the last article in a hundred, and it exists to be the thing you actuall
 
 Before the list, the question that resolves most disagreements about priority: **if this is wrong, does it cost an apology, money, or a customer's trust?**
 
-An apology means it can wait. A confusing empty state, a missing digest email, an integration nobody has asked for twice — real problems, and none of them irreversible.
+An apology means it can wait. A confusing empty state, a missing digest email, an integration nobody has asked for twice - real problems, and none of them irreversible.
 
 Money means it needs a limit before launch. Anything metered, anything reachable without authentication, anything a script could call in a loop.
 
-Trust means it needs to be right on day one, because it is not recoverable. One customer seeing another's data. A payment taken and no record kept. Work that disappears. A wrong number on an invoice. These are the ones where the customer does not complain — they leave, and tell someone.
+Trust means it needs to be right on day one, because it is not recoverable. One customer seeing another's data. A payment taken and no record kept. Work that disappears. A wrong number on an invoice. These are the ones where the customer does not complain - they leave, and tell someone.
 
 That ordering matters because pre-launch time is finite and the temptation is to spend it on what is visible. Almost everything in the first list below falls into the third category.
 
@@ -46,7 +46,7 @@ That ordering matters because pre-launch time is finite and the temptation is to
 
 **Payments are correct end to end.** Amounts stored as integers, one rounding rule applied everywhere, a real card charged and refunded in test mode, a declined card handled with a retry and a notification, and trial expiry exercised deliberately rather than assumed.
 
-**Backups exist and have been restored once.** Not configured — restored, into a separate environment, with the timing written down and file storage included.
+**Backups exist and have been restored once.** Not configured - restored, into a separate environment, with the timing written down and file storage included.
 
 **Cancellation is self-service**, with data retained for a stated period and deletion as a separate action that reaches storage, indexes, and connected tools.
 
@@ -68,7 +68,7 @@ These are the decisions that decide whether the account you most want becomes a 
 
 **Import that does not lose anything.** Validate the whole file before writing, handle European encodings and separators, show a preview, state what happens to duplicates, and never leave a half-populated account.
 
-**Export that is complete.** Including attachments, in machine-readable formats, delivered by an expiring authenticated link — and tested by importing it into a fresh account.
+**Export that is complete.** Including attachments, in machine-readable formats, delivered by an expiring authenticated link - and tested by importing it into a fresh account.
 
 **An audit trail with before-and-after values**, append-only, on anything involving money, permissions, or deletion.
 
@@ -82,13 +82,13 @@ These are the decisions that decide whether the account you most want becomes a 
 
 Judgement calls, each worth doing when a specific trigger appears rather than on a schedule.
 
-**A minimal admin panel** — find a customer, extend a trial, reset access, change a plan, resend an email, view account state — when you find yourself writing database queries to answer support requests.
+**A minimal admin panel** - find a customer, extend a trial, reset access, change a plan, resend an email, view account state - when you find yourself writing database queries to answer support requests.
 
 **A staging environment with anonymised data** when you are about to make a change you cannot easily reverse.
 
 **Feature flags** before the first change large enough that you would want a way to switch it off without deploying.
 
-**Webhooks, an API, or a platform connector** when integration requests are diverse rather than concentrated — and only after the endpoints they depend on are consistent.
+**Webhooks, an API, or a platform connector** when integration requests are diverse rather than concentrated - and only after the endpoints they depend on are consistent.
 
 **Notification preferences with scoped unsubscribes** before your product sends enough that someone reaches for the unsubscribe link and silences their billing emails with it.
 
@@ -100,13 +100,13 @@ Judgement calls, each worth doing when a specific trigger appears rather than on
 
 The additional decisions, none of which are optional once a feature reaches customers.
 
-Estimate the cost per use for the heaviest plausible customer before building. Pin the model version rather than using an alias. Validate every output against a schema and against your own data, and design the failure state so a customer sees an honest message rather than a plausible fabrication. Keep the model's access bounded by the permissions of the person it is acting for, prefer read-only, and require confirmation for anything consequential. Record provenance — model, prompt version, timestamp, source — with every generated result, and label generated content where the customer sees it. Send the minimum data to the provider, on a tier with a data processing agreement, with a switch to disable AI processing per account. And keep thirty real examples as a test set, so that changing a prompt is a measurement rather than a guess.
+Estimate the cost per use for the heaviest plausible customer before building. Pin the model version rather than using an alias. Validate every output against a schema and against your own data, and design the failure state so a customer sees an honest message rather than a plausible fabrication. Keep the model's access bounded by the permissions of the person it is acting for, prefer read-only, and require confirmation for anything consequential. Record provenance - model, prompt version, timestamp, source - with every generated result, and label generated content where the customer sees it. Send the minimum data to the provider, on a tier with a data processing agreement, with a switch to disable AI processing per account. And keep thirty real examples as a test set, so that changing a prompt is a measurement rather than a guess.
 
 ## What This Costs, and the Honest Alternative
 
 Working through the first list takes an experienced engineer somewhere between one and three weeks for a typical AI-generated product, depending on how much of it exists already. The second list is comparable. Neither produces a feature, which is exactly why it is postponed, and why the products that skip it fail in the same small number of ways.
 
-The alternative — doing it yourself, over months, learning each item at the moment it goes wrong — is legitimate and it is a real trade. It costs time rather than money, it costs some customers, and it works for founders whose market is forgiving and whose data is not sensitive.
+The alternative - doing it yourself, over months, learning each item at the moment it goes wrong - is legitimate and it is a real trade. It costs time rather than money, it costs some customers, and it works for founders whose market is forgiving and whose data is not sensitive.
 
 Where it does not work is when the first serious customer arrives before the learning does, because that customer is not a test. They are the reference that determines whether the next five buy.
 
@@ -116,7 +116,7 @@ LaunchStudio exists for the founders who would rather not find out which items o
 
 ### The List That Took Nine Days
 
-Bram Kooij had built Wachtrij, a queue-management tool for municipal service desks, in Lovable. It worked, three municipalities had piloted it, and a fourth — considerably larger — had asked for a security assessment before signing.
+Bram Kooij had built Wachtrij, a queue-management tool for municipal service desks, in Lovable. It worked, three municipalities had piloted it, and a fourth - considerably larger - had asked for a security assessment before signing.
 
 The review worked through the first two lists. Access rules were enforced only in the interface: any authenticated user could retrieve any municipality's visitor records by changing an identifier. Backups covered the database but not the uploaded identity documents. There was no audit trail, which the assessment required. Reporting boundaries were computed in UTC, so daily visitor counts were wrong by the visitors between 23:00 and midnight. And a single unindexed query made the largest pilot's dashboard take nineteen seconds.
 
@@ -125,7 +125,7 @@ None of it had produced a complaint, because no pilot had been large enough or c
 **Result:** nine business days of work covering access control at the database level, backup scope, an append-only audit trail, timezone-correct reporting, indexes and pagination, self-service export, and a written data-flow document. The assessment passed at the second submission and the contract signed six weeks later, at roughly nine times the value of the three pilots combined.
 
 > "Nothing on that list was something a customer had complained about. Every single item was something that would have ended the contract if the assessment had found it and I had not."
-> — **Bram Kooij, Founder, Wachtrij**
+> - **Bram Kooij, Founder, Wachtrij**
 
 **Cost & Timeline:** production-readiness engagement completed in 9 business days, fixed price agreed in advance.
 
@@ -137,7 +137,7 @@ Access control enforced on the server rather than in the interface. Test whether
 
 ### How do I decide what to fix before launch and what can wait?
 
-Ask whether being wrong costs an apology, money, or trust. Apologies can wait, anything costing money needs a limit before launch, and anything costing trust — data exposure, lost work, wrong charges — has to be right on day one.
+Ask whether being wrong costs an apology, money, or trust. Apologies can wait, anything costing money needs a limit before launch, and anything costing trust - data exposure, lost work, wrong charges - has to be right on day one.
 
 ### How long does production readiness take for a typical AI-built prototype?
 

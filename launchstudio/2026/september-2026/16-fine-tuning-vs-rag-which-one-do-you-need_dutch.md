@@ -6,7 +6,7 @@ Koperfase: Bewustzijn
 
 # Fine-Tuning vs RAG: Welke Heeft U Nodig voor Uw AI-Architectuur?
 
-De meest kostbare en tijdrovende vergissing die een technisch oprichter kan begaan, is het proberen te Fine-Tunen van een Large Language Model wanneer een gerichte database-zoekopdracht volstond. Startups verbranden regelmatig tienduizenden euro's aan dure GPU-rekencapaciteit om een model het interne HR-handboek of prijsbeleid uit het hoofd te leren, om vervolgens te constateren dat het model nog steeds overtuigend hallucineert. Marktdata toont aan dat circa 80% van de met AI gebouwde projecten nooit een stabiele productiestatus bereikt — en een groot deel van die mislukkingen is terug te voeren op het verwarren van twee fundamentele lagen: kennisinjectie versus gedragsaanpassing. Om een succesvol B2B AI-product te lanceren, moet u het scherpe onderscheid begrijpen tussen **RAG** (feiten aanreiken op het moment van de query) en **Fine-Tuning** (het structureel herprogrammeren van het gedrag van het model).
+De meest kostbare en tijdrovende vergissing die een technisch oprichter kan begaan, is het proberen te Fine-Tunen van een Large Language Model wanneer een gerichte database-zoekopdracht volstond. Startups verbranden regelmatig tienduizenden euro's aan dure GPU-rekencapaciteit om een model het interne HR-handboek of prijsbeleid uit het hoofd te leren, om vervolgens te constateren dat het model nog steeds overtuigend hallucineert. Marktdata toont aan dat circa 80% van de met AI gebouwde projecten nooit een stabiele productiestatus bereikt - en een groot deel van die mislukkingen is terug te voeren op het verwarren van twee fundamentele lagen: kennisinjectie versus gedragsaanpassing. Om een succesvol B2B AI-product te lanceren, moet u het scherpe onderscheid begrijpen tussen **RAG** (feiten aanreiken op het moment van de query) en **Fine-Tuning** (het structureel herprogrammeren van het gedrag van het model).
 
 ## RAG: Het Open-Boek Examen (The Open Book Test)
 
@@ -19,13 +19,13 @@ De technische opzet is bepalend voor het succes. Een volwassen RAG-pijplijn knip
 - **Dynamische en veranderlijke feiten:** Prijstabellen, voorraadstatussen, juridische contracten, documentatie en support-macro's die regelmatig wijzigen.
 - **Directe realtime updates:** Wijzigt een prijs, dan past u simpelweg de database-rij aan en genereert u opnieuw de embedding van dat ene fragment. De AI kent de nieuwe prijs letterlijk bij de allereerstvolgende query.
 - **Strikte databeveiliging en multi-tenancy:** Heeft een gebruiker geen autorisatie om een bepaald dossier in te zien, dan filtert u die documenten via metadata-filters (tenant ID, gebruikersrol, afdeling) vóórdat de tekst ooit de prompt raakt.
-- **Bronvermelding en citaties:** Omdat u exact weet welke chunks zijn opgehaald, toont u de gebruiker direct de exacte bron ("Bron: Algemene Voorwaarden, Artikel 4") naast het antwoord — iets wat een puur gefinetuned model nooit betrouwbaar kan leveren.
+- **Bronvermelding en citaties:** Omdat u exact weet welke chunks zijn opgehaald, toont u de gebruiker direct de exacte bron ("Bron: Algemene Voorwaarden, Artikel 4") naast het antwoord - iets wat een puur gefinetuned model nooit betrouwbaar kan leveren.
 
 ## Fine-Tuning: Blokken voor het Examen (Studying for the Exam)
 
 **Fine-Tuning** grijpt in op de interne gewichten (weights) van het neurale netwerk. U voedt het model met honderden of duizenden gecureerde voorbeelden van input/output-paren. Via gradient descent verschuiven de interne parameters van het model, waardoor het dat specifieke gedragspatroon in de toekomst automatisch reproduceert. Moderne productieteams trainen zelden alle gewichten vanaf nul; ze benutten **LoRA** (Low-Rank Adaptation) of **QLoRA** om compacte adapterlagen bovenop een bevroren basismodel te trainen, wat de benodigde GPU-capaciteit drastisch verlaagt.
 
-Oprichters maken vaak de fatale denkfout om Fine-Tuning in te zetten om het model feitenkennis bij te brengen. LLM's zijn fundamenteel ongeschikt voor feitelijke memorisatie via gradient-updates — het proces is probabilistisch en verliesgevend, geen betrouwbare relationele tabel. Een model dat is gefinetuned op uw bedrijfsdata zal de naam van uw CEO mengen met statistisch vergelijkbare namen uit zijn pre-training, resulterend in zelfverzekerde hallucinaties. Bovendien riskeert agressieve fine-tuning **catastrophic forgetting**, waarbij het model zijn algemene redeneervermogen verliest doordat nieuwe trainingsdata eerdere gewichten overschrijft.
+Oprichters maken vaak de fatale denkfout om Fine-Tuning in te zetten om het model feitenkennis bij te brengen. LLM's zijn fundamenteel ongeschikt voor feitelijke memorisatie via gradient-updates - het proces is probabilistisch en verliesgevend, geen betrouwbare relationele tabel. Een model dat is gefinetuned op uw bedrijfsdata zal de naam van uw CEO mengen met statistisch vergelijkbare namen uit zijn pre-training, resulterend in zelfverzekerde hallucinaties. Bovendien riskeert agressieve fine-tuning **catastrophic forgetting**, waarbij het model zijn algemene redeneervermogen verliest doordat nieuwe trainingsdata eerdere gewichten overschrijft.
 
 **Wanneer kiest u voor Fine-Tuning:**
 
@@ -38,7 +38,7 @@ Oprichters maken vaak de fatale denkfout om Fine-Tuning in te zetten om het mode
 
 De operationele onderhoudskosten van Fine-Tuning zijn aanzienlijk. Wijzigt uw bedrijf zijn retourbeleid, hoe leert u het gefinetunede model de nieuwe regels?
 
-U kunt het model dit niet simpelweg vertellen. U moet uw complete trainingsdataset bijwerken, verouderde voorbeelden saneren, een nieuwe trainingsronde op GPU-clusters draaien, het resulterende checkpoint evalueren tegen een testset om regressies te voorkomen, en de nieuwe modelversie uitrollen naar productie — een traject van meerdere dagen dat honderden tot duizenden euro's aan rekencapaciteit kost. Bij RAG duurt dezelfde aanpassing drie seconden: u past de tekst in de database aan, herberekent één embedding, en het systeem is direct up-to-date. RAG biedt wendbaarheid; Fine-Tuning creëert starheid.
+U kunt het model dit niet simpelweg vertellen. U moet uw complete trainingsdataset bijwerken, verouderde voorbeelden saneren, een nieuwe trainingsronde op GPU-clusters draaien, het resulterende checkpoint evalueren tegen een testset om regressies te voorkomen, en de nieuwe modelversie uitrollen naar productie - een traject van meerdere dagen dat honderden tot duizenden euro's aan rekencapaciteit kost. Bij RAG duurt dezelfde aanpassing drie seconden: u past de tekst in de database aan, herberekent één embedding, en het systeem is direct up-to-date. RAG biedt wendbaarheid; Fine-Tuning creëert starheid.
 
 ## De Enterprise Hybride Oplossing: RAG + Fine-Tuning
 
@@ -46,7 +46,7 @@ De meest geavanceerde B2B AI-architecturen combineren beide technologieën. U **
 
 De RAG-laag levert de actuele feitenkennis; de fine-tuning laag zorgt voor een vlekkeloze en snelle executie. Met deze hybride aanpak handelt u 80% van de routinematige zoekvragen lokaal en voordelig af, en reserveert u dure topmodellen (zoals GPT-4o) uitsluitend voor complexe, unieke redeneervraagstukken.
 
-Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de architectuurkeuze helder: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera — opgericht in **2014** met het Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** en hubs in Singapore en Ho Chi Minhstad — realiseert al meer dan een decennium enterprise software-oplossingen voor toonaangevende klanten zoals Vodafone en TNO. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de architectuurkeuze helder: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera - opgericht in **2014** met het Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** en hubs in Singapore en Ho Chi Minhstad - realiseert al meer dan een decennium enterprise software-oplossingen voor toonaangevende klanten zoals Vodafone en TNO. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
 
 ## Een Beslismodel Zonder Giswerk (Decision Framework)
 
@@ -79,7 +79,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam prepareer
 
 **Resultaat:** De diagnostische nauwkeurigheid steeg van 68% naar 94%, volledig conform de richtlijnen van medisch specialisten.
 
-**Kosten & Tijdlijn:** €4.800 (LLM Fine-Tuning Pakket) — productieklaar en binnen 12 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €4.800 (LLM Fine-Tuning Pakket) - productieklaar en binnen 12 werkdagen live opgeleverd.
 
 ---
 

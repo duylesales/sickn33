@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Skills-Based Hiring for AI Roles: When the Degree Requirement Costs You Candidates",
-  "description": "A university degree requirement filters out capable people in a market that cannot fill its vacancies — but removing it only works if you replace it with a defensible way of assessing capability.",
+  "description": "A university degree requirement filters out capable people in a market that cannot fill its vacancies - but removing it only works if you replace it with a defensible way of assessing capability.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-23",
@@ -77,7 +77,7 @@ Removing the requirement without replacing it with something rigorous produces w
 
 **Assess reasoning, not recall.** Ask candidates to talk through a problem, including what they would do when they get stuck. Self-taught candidates often perform strongly here, because they have spent more time getting unstuck.
 
-**Be honest about the floor.** If the role genuinely requires mathematical depth, test for it directly rather than assuming a diploma proves it — plenty of degree holders cannot do it either.
+**Be honest about the floor.** If the role genuinely requires mathematical depth, test for it directly rather than assuming a diploma proves it - plenty of degree holders cannot do it either.
 
 ## A Concrete Scenario: The Candidate Who Was Filtered Out Twice
 
@@ -126,7 +126,7 @@ The most common objection to skills-based hiring is practical: candidates refuse
 
 **Keep it to two or three hours, and say so.** Anything longer should be paid, and paying is cheaper than losing candidates.
 
-**Make it resemble the job.** A realistic small task — debug this pipeline, critique this analysis, design an approach to this problem — tells you far more than an algorithmic puzzle and signals respect for the candidate's time.
+**Make it resemble the job.** A realistic small task - debug this pipeline, critique this analysis, design an approach to this problem - tells you far more than an algorithmic puzzle and signals respect for the candidate's time.
 
 **Allow their own tools.** Assessing someone's ability to work the way they normally work is the point.
 
@@ -142,11 +142,11 @@ An alternative that works well for experienced candidates is a structured discus
 
 It is worth knowing what decades of selection research broadly indicate, because it rarely matches intuition.
 
-Structured interviews — the same questions for every candidate, scored against defined criteria — consistently outperform unstructured conversations, which are closer to a coin flip dressed up as judgement. Work samples that resemble the actual job are among the better predictors available. General reasoning ability predicts performance across roles, though testing for it directly raises fairness considerations that need care.
+Structured interviews - the same questions for every candidate, scored against defined criteria - consistently outperform unstructured conversations, which are closer to a coin flip dressed up as judgement. Work samples that resemble the actual job are among the better predictors available. General reasoning ability predicts performance across roles, though testing for it directly raises fairness considerations that need care.
 
-Years of experience, by contrast, is a weak predictor once past a threshold, and educational attainment predicts less than most hiring managers assume — particularly for roles whose daily work is engineering rather than research.
+Years of experience, by contrast, is a weak predictor once past a threshold, and educational attainment predicts less than most hiring managers assume - particularly for roles whose daily work is engineering rather than research.
 
-The practical implication for a Dutch employer is not to abandon judgement but to structure it. Most hiring processes in this market are unstructured conversations plus a degree filter, which is close to the least predictive combination available. Adding a rubric and a work sample costs little and improves outcomes measurably — and it is also the change that makes dropping a degree requirement safe rather than reckless.
+The practical implication for a Dutch employer is not to abandon judgement but to structure it. Most hiring processes in this market are unstructured conversations plus a degree filter, which is close to the least predictive combination available. Adding a rubric and a work sample costs little and improves outcomes measurably - and it is also the change that makes dropping a degree requirement safe rather than reckless.
 
 ## Key Takeaways
 
@@ -154,27 +154,27 @@ The practical implication for a Dutch employer is not to abandon judgement but t
 - The requirement excludes vocationally trained engineers, career changers, international candidates and people who left education for non-ability reasons.
 - Replace it with defined capabilities, work samples scored against rubrics, and structured interviews.
 - Automated rejection on unexamined criteria raises equal treatment and AI Act oversight questions.
-- Some roles genuinely need formal training — test for the underlying capability rather than assuming the diploma proves it.
+- Some roles genuinely need formal training - test for the underlying capability rather than assuming the diploma proves it.
 
 ## Where to Start
 
 Take your hardest-to-fill vacancy and rewrite its requirements as things a person must be able to do. Then check whether your screening rejects people who can do them.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer with a long-open vacancy) Would dropping the degree requirement help?
-Often yes, if replaced by direct assessment — it widens the pool to experienced practitioners whose qualifications do not match the template.
+Often yes, if replaced by direct assessment - it widens the pool to experienced practitioners whose qualifications do not match the template.
 
 ### (Scenario: employer worried about standards) Does skills-based hiring mean lower standards?
-No — it means assessing capability directly, which is more work than filtering on education and generally more predictive.
+No - it means assessing capability directly, which is more work than filtering on education and generally more predictive.
 
 ### (Scenario: employer using an ATS) What should I check first?
 Whether education criteria trigger automatic rejection, and how many otherwise qualified candidates that removes.
 
 ### (Scenario: employer hiring for research roles) Are there roles where the degree matters?
-Yes — research positions and work developing new methods genuinely benefit from formal training; test for the capability directly.
+Yes - research positions and work developing new methods genuinely benefit from formal training; test for the capability directly.
 
 ### (Scenario: employer receiving foreign diplomas) How do I assess unfamiliar qualifications?
 Use recognised diploma evaluation services rather than defaulting to rejection, and weight demonstrated work more heavily.
@@ -185,9 +185,9 @@ Use recognised diploma evaluation services rather than defaulting to rejection, 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Would dropping a degree requirement help fill a vacancy?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes if replaced by direct assessment, since it widens the pool to experienced practitioners."}},
-    {"@type": "Question", "name": "Does skills-based hiring lower standards?", "acceptedAnswer": {"@type": "Answer", "text": "No — it assesses capability directly, which is more work and generally more predictive than filtering on education."}},
+    {"@type": "Question", "name": "Does skills-based hiring lower standards?", "acceptedAnswer": {"@type": "Answer", "text": "No - it assesses capability directly, which is more work and generally more predictive than filtering on education."}},
     {"@type": "Question", "name": "What should employers check in their applicant tracking system?", "acceptedAnswer": {"@type": "Answer", "text": "Whether education criteria trigger automatic rejection and how many qualified candidates that removes."}},
-    {"@type": "Question", "name": "Are there AI roles where a degree genuinely matters?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — research and method development roles benefit from formal training, though the capability should still be tested."}},
+    {"@type": "Question", "name": "Are there AI roles where a degree genuinely matters?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - research and method development roles benefit from formal training, though the capability should still be tested."}},
     {"@type": "Question", "name": "How should employers assess foreign qualifications?", "acceptedAnswer": {"@type": "Answer", "text": "Use recognised diploma evaluation services and weight demonstrated work more heavily than the certificate."}}
   ]
 }

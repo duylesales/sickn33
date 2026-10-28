@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Everyone says connecting a domain takes five minutes. That is true, and it is also why so many founders end up with a live app, a working domain, and password reset emails landing in spam for three weeks before anyone tells them.
 
-Pointing a custom domain at a Lovable app really is a short task. The problem is that a domain is not one thing. It is a name with several jobs attached — serving your website, proving your identity, sending your email, and belonging to somebody — and the five-minute version only handles the first one. This article covers the rest, in the order they tend to hurt.
+Pointing a custom domain at a Lovable app really is a short task. The problem is that a domain is not one thing. It is a name with several jobs attached - serving your website, proving your identity, sending your email, and belonging to somebody - and the five-minute version only handles the first one. This article covers the rest, in the order they tend to hurt.
 
 ## What Connecting a Domain Actually Does
 
@@ -34,7 +34,7 @@ That is genuinely all the first step is. What matters is that DNS has several di
 
 Your domain exists in two forms: the apex (`yourapp.nl`) and the subdomain (`www.yourapp.nl`). Search engines treat them as distinct addresses. So do browsers, and so do the systems that issue security certificates.
 
-Pick one as the real address, and make the other permanently redirect to it. Which one you pick matters far less than picking. What goes wrong when you skip this is not dramatic — both versions work — but you end up with two addresses serving identical content, which splits your search visibility, confuses analytics, and produces the peculiar situation where a customer's bookmark works and a colleague's does not because one of them has a certificate and the other does not.
+Pick one as the real address, and make the other permanently redirect to it. Which one you pick matters far less than picking. What goes wrong when you skip this is not dramatic - both versions work - but you end up with two addresses serving identical content, which splits your search visibility, confuses analytics, and produces the peculiar situation where a customer's bookmark works and a colleague's does not because one of them has a certificate and the other does not.
 
 There is also a technical wrinkle worth knowing in advance: apex domains cannot use the same kind of DNS record that subdomains use for this purpose, so hosting providers offer workarounds with different names. This is why your provider's documentation asks for one record type and your registrar offers a differently-named option. It is normal, and it is the step where most founders stall.
 
@@ -42,7 +42,7 @@ There is also a technical wrinkle worth knowing in advance: apex domains cannot 
 
 The padlock in the browser comes from a certificate proving your domain is yours. Modern hosting issues these automatically and renews them automatically, which is why most founders never think about it.
 
-Three things still go wrong. Issuance fails silently if your DNS records are not yet correct, leaving the site loading with a browser warning that destroys trust instantly. Renewal fails if the domain's DNS is later moved somewhere else and nobody updates the verification. And mixed content — a page served securely that loads an image or script over an insecure connection — produces a broken padlock even when the certificate itself is perfect.
+Three things still go wrong. Issuance fails silently if your DNS records are not yet correct, leaving the site loading with a browser warning that destroys trust instantly. Renewal fails if the domain's DNS is later moved somewhere else and nobody updates the verification. And mixed content - a page served securely that loads an image or script over an insecure connection - produces a broken padlock even when the certificate itself is perfect.
 
 The practical check: after connecting, open your site in a private browser window on a phone, on mobile data rather than your own wifi. It is remarkable how many certificate problems are invisible from the laptop that set them up.
 
@@ -50,17 +50,17 @@ The practical check: after connecting, open your site in a private browser windo
 
 This is where the three-week delay comes in.
 
-Your app sends email: signup confirmations, password resets, booking receipts, invoices. Those emails claim to come from your domain. Receiving mail servers decide whether to believe that claim by checking three kinds of DNS record — one listing which servers may send on your behalf, one carrying a cryptographic signature, and one stating what should happen to messages that fail those checks.
+Your app sends email: signup confirmations, password resets, booking receipts, invoices. Those emails claim to come from your domain. Receiving mail servers decide whether to believe that claim by checking three kinds of DNS record - one listing which servers may send on your behalf, one carrying a cryptographic signature, and one stating what should happen to messages that fail those checks.
 
 If your app sends through a provider and those records were never added, your messages are unauthenticated. Some will arrive. Many will land in spam. Nobody will tell you, because the people not receiving your password reset emails are, by definition, not able to log in and complain.
 
-Two rules keep this simple. Send transactional email through a proper provider rather than from the app server directly, and add the authentication records that provider gives you at the same time you connect the domain — not later, because later means after your first customer could not reset their password.
+Two rules keep this simple. Send transactional email through a proper provider rather than from the app server directly, and add the authentication records that provider gives you at the same time you connect the domain - not later, because later means after your first customer could not reset their password.
 
 ## Who Actually Owns the Domain
 
 Ask yourself: if you and your co-founder fell out tomorrow, or your first freelancer stopped answering messages, could you still move your domain?
 
-Domains are frequently registered by whoever happened to be doing the setup — an agency, a developer, a technical friend — in that person's account, with that person's payment card and recovery email. The app is yours; the name people type to reach it is not.
+Domains are frequently registered by whoever happened to be doing the setup - an agency, a developer, a technical friend - in that person's account, with that person's payment card and recovery email. The app is yours; the name people type to reach it is not.
 
 Before launch, confirm three things: the domain is registered in an account you control, the contact email on the registration is one you can access, and you know where the DNS is managed, which is sometimes a different provider from the registrar. If any of those sits with someone else, transfer it now, while everyone is on good terms. The cost of fixing this later ranges from a tedious support process to a genuine loss of your brand address.
 
@@ -68,13 +68,13 @@ Before launch, confirm three things: the domain is registered in an account you 
 
 Once a custom domain exists, you effectively have two addresses for the same app: the original preview URL and the real one. Both usually keep working.
 
-That is convenient and it creates a trail of problems. Payment providers, authentication services and email templates all store redirect and callback addresses, and if those still point at the preview URL, users get bounced to an address that is not your brand — or a flow silently fails. Analytics ends up split across two hostnames. And the preview link, still shared in old messages and pitch decks, keeps serving a version of your app that may drift out of date.
+That is convenient and it creates a trail of problems. Payment providers, authentication services and email templates all store redirect and callback addresses, and if those still point at the preview URL, users get bounced to an address that is not your brand - or a flow silently fails. Analytics ends up split across two hostnames. And the preview link, still shared in old messages and pitch decks, keeps serving a version of your app that may drift out of date.
 
 The fix is a boring sweep: update every callback URL, every email template link, every integration setting, and every "share this" link you have sent, then decide whether the preview address should redirect to the real one.
 
 ## Changing a Domain After Launch Is Expensive
 
-Founders frequently pick a working name, launch, then rebrand two months later. Technically, moving is straightforward — new domain, new records, redirect the old one. The cost is elsewhere.
+Founders frequently pick a working name, launch, then rebrand two months later. Technically, moving is straightforward - new domain, new records, redirect the old one. The cost is elsewhere.
 
 Search engines need time to transfer accumulated reputation, and that only happens correctly with permanent redirects on every old address. Customers' bookmarks and password managers are tied to the old name. Payment and authentication integrations need their settings changed again. Email authentication records must be rebuilt for the new domain.
 
@@ -94,19 +94,19 @@ Seven checks, most of them quick. The reason they matter is that each failure is
 
 ## Where This Sits in a Launch
 
-Domain configuration is small work that sits on top of larger questions — whether secrets are exposed, whether your database has backups, whether payments actually settle. LaunchStudio handles it as part of getting an AI-built prototype production-ready: the domain, the certificate, the email authentication, the callback sweep and the redirects, alongside the security and infrastructure work underneath. The frontend you built in Lovable stays untouched, and the code stays yours.
+Domain configuration is small work that sits on top of larger questions - whether secrets are exposed, whether your database has backups, whether payments actually settle. LaunchStudio handles it as part of getting an AI-built prototype production-ready: the domain, the certificate, the email authentication, the callback sweep and the redirects, alongside the security and infrastructure work underneath. The frontend you built in Lovable stays untouched, and the code stays yours.
 
-Behind that is Manifera, a software company with eleven years of engineering behind it and clients including Vodafone and TNO — which mostly matters here because the boring checklist above is exactly the kind of thing experienced teams do by habit and first-time founders discover by accident. If you are about to go live, [describe your project](https://launchstudio.eu/en/#contact) and you will hear back within one business day.
+Behind that is Manifera, a software company with eleven years of engineering behind it and clients including Vodafone and TNO - which mostly matters here because the boring checklist above is exactly the kind of thing experienced teams do by habit and first-time founders discover by accident. If you are about to go live, [describe your project](https://launchstudio.eu/en/#contact) and you will hear back within one business day.
 
 ## If It Is Already Live and Something Is Wrong
 
 Most founders read this after connecting the domain, not before. Work through the symptoms in this order, because each step rules out the layer beneath it.
 
-**The site does not load at all.** Almost always a record pointing at the wrong place, or two competing records for the same name. Check what your domain resolves to from a device that has never visited the site — a phone on mobile data is the easiest clean test — rather than from the laptop that may be holding a cached answer.
+**The site does not load at all.** Almost always a record pointing at the wrong place, or two competing records for the same name. Check what your domain resolves to from a device that has never visited the site - a phone on mobile data is the easiest clean test - rather than from the laptop that may be holding a cached answer.
 
 **The site loads with a certificate warning.** The certificate was requested before the records were correct, or the domain has since moved. Trigger reissuance from your hosting provider once the records are verified, and check again from a device that has never seen the old certificate.
 
-**The site loads securely but the padlock is broken on some pages.** Something on those pages is loading over an insecure connection — usually an image URL, an embedded font or a script that was hardcoded during the build. Fix the references rather than the certificate.
+**The site loads securely but the padlock is broken on some pages.** Something on those pages is loading over an insecure connection - usually an image URL, an embedded font or a script that was hardcoded during the build. Fix the references rather than the certificate.
 
 **Everything looks right but users complain about emails.** This is the authentication layer, not the website layer. Send a test signup to a Gmail address and an Outlook address, and check the spam folder rather than trusting that no error appeared.
 
@@ -126,10 +126,10 @@ The fix took three business days: authentication records added and verified, the
 
 **Result:** completed registrations rose from roughly two-thirds to over ninety percent of signups in the following three weeks, with no change to the product itself.
 
-> *"Nothing was broken. That was the worst part — the app worked perfectly and a third of my users just quietly disappeared into a spam folder."*
-> — **Sanne Bakker, Founder, Shiftly (Amsterdam)**
+> *"Nothing was broken. That was the worst part - the app worked perfectly and a third of my users just quietly disappeared into a spam folder."*
+> - **Sanne Bakker, Founder, Shiftly (Amsterdam)**
 
-**Cost & Timeline:** €1,150 (domain, email authentication, callback sweep and verification) — completed in 3 business days.
+**Cost & Timeline:** €1,150 (domain, email authentication, callback sweep and verification) - completed in 3 business days.
 
 ## Frequently Asked Questions
 

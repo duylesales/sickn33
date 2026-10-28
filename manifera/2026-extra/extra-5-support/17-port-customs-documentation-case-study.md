@@ -28,7 +28,7 @@ A customs documentation system built around a single, globally uniform manifest 
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around a region-configurable documentation engine — able to generate the correct manifest format, required fields, and supporting-document checklist based on a shipment's actual destination country — lets a port operator meet each destination's specific customs requirements without unnecessarily burdening shipments to more permissive destinations. This isn't simply a matter of swapping a single template per country, since customs requirements are often considerably more granular than a country-level template distinction — specific commodity categories can trigger additional destination-specific documentation requirements even within the same destination country, meaning the underlying engine needs to represent genuinely multi-dimensional conditions (destination country and commodity category together), not just a country-level template switch, to accurately reflect the actual range of customs regimes a port operator's cargo mix encounters.
+A system architected from the start around a region-configurable documentation engine - able to generate the correct manifest format, required fields, and supporting-document checklist based on a shipment's actual destination country - lets a port operator meet each destination's specific customs requirements without unnecessarily burdening shipments to more permissive destinations. This isn't simply a matter of swapping a single template per country, since customs requirements are often considerably more granular than a country-level template distinction - specific commodity categories can trigger additional destination-specific documentation requirements even within the same destination country, meaning the underlying engine needs to represent genuinely multi-dimensional conditions (destination country and commodity category together), not just a country-level template switch, to accurately reflect the actual range of customs regimes a port operator's cargo mix encounters.
 
 ## What Building a Region-Configurable Documentation Engine Actually Requires
 
@@ -64,7 +64,7 @@ Lučka Logistika Rijeka, a Rijeka-based port and freight-forwarding operator, ha
 Manifera's Amsterdam team rebuilt the documentation system's core architecture around a configurable, destination- and commodity-aware manifest engine, supporting both the additional required fields for stricter destination countries and streamlined documentation for more permissive ones, alongside reliable destination and commodity classification and certificate-of-origin handling, all without requiring separate, parallel documentation systems per country.
 
 > *"We had one manifest template and figured we'd just add fields whenever a specific country's customs office flagged something missing. What we actually found was that the real documentation picture across our expanded destination list was more varied and more granular than a single template could handle, and building genuine configurability was what let us actually clear customs reliably everywhere instead of reacting country by country after a shipment got held."*
-> — **IT Manager, Lučka Logistika Rijeka**
+> - **IT Manager, Lučka Logistika Rijeka**
 
 Lučka Logistika Rijeka successfully expanded its freight-forwarding services to its additional target destination countries with destination-appropriate documentation generation in place, and now treats documentation configurability as a standard architectural requirement for any new destination country it adds, rather than a single template adjusted reactively after a clearance failure.
 
@@ -79,7 +79,7 @@ Lučka Logistika Rijeka successfully expanded its freight-forwarding services to
 
 ## Scoping Your Own Port Logistics Platform's Documentation Architecture
 
-Before expanding freight-forwarding operations across multiple destination countries, architect the documentation system around a genuinely configurable, destination- and commodity-aware engine — a single hardcoded template forces an unnecessary trade-off between clearance risk and documentation friction. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a customs-ready port logistics documentation platform.
+Before expanding freight-forwarding operations across multiple destination countries, architect the documentation system around a genuinely configurable, destination- and commodity-aware engine - a single hardcoded template forces an unnecessary trade-off between clearance risk and documentation friction. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a customs-ready port logistics documentation platform.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between unnecessarily burdening permissive destinations with 
 
 ### (Scenario: engineering lead scoping regional configurability) Is a single template per destination country sufficient to handle customs requirements?
 
-Not always — specific commodity categories can trigger additional requirements even within the same destination country, meaning the engine needs genuinely multi-dimensional configurability, not just a country-level template switch.
+Not always - specific commodity categories can trigger additional requirements even within the same destination country, meaning the engine needs genuinely multi-dimensional configurability, not just a country-level template switch.
 
 ### (Scenario: compliance lead reviewing technical architecture) Why does reliable destination and commodity classification matter for customs compliance?
 
@@ -110,7 +110,7 @@ Customs documentation regulation is a genuinely active, evolving area across cou
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-country customs documentation system) Why does customs documentation vary meaningfully across destination countries?", "acceptedAnswer": { "@type": "Answer", "text": "Different destination countries require genuinely different manifest fields, tariff classification granularity, and supporting documentation." } },
     { "@type": "Question", "name": "(Scenario: operator worried about clearance failures) What's the risk of building a documentation system around a single, hardcoded manifest template?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between unnecessary documentation burden or risking genuine customs clearance failure at stricter destinations." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a single template per destination country sufficient to handle customs requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — commodity categories can trigger additional requirements even within a destination, requiring multi-dimensional configurability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping regional configurability) Is a single template per destination country sufficient to handle customs requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - commodity categories can trigger additional requirements even within a destination, requiring multi-dimensional configurability." } },
     { "@type": "Question", "name": "(Scenario: compliance lead reviewing technical architecture) Why does reliable destination and commodity classification matter for customs compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying destination-specific rules correctly depends on identifying both destination country and commodity category accurately." } },
     { "@type": "Question", "name": "(Scenario: operator planning for future regulatory change) Why should a documentation system be designed to accommodate evolving customs regulation, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Customs documentation regulation is actively evolving, and a system requiring rework for each update creates ongoing operational risk." } }
   ]

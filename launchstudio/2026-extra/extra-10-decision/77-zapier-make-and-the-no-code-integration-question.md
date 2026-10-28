@@ -20,7 +20,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Every integration request you receive names a different system, and you cannot build all of them. Integration platforms — Zapier, Make, n8n, and others — exist precisely for this, and publishing on one is genuinely appealing: build once, and customers connect your product to several thousand others without you writing another line.
+Every integration request you receive names a different system, and you cannot build all of them. Integration platforms - Zapier, Make, n8n, and others - exist precisely for this, and publishing on one is genuinely appealing: build once, and customers connect your product to several thousand others without you writing another line.
 
 The appeal is real and the framing is slightly wrong. A platform listing is not an alternative to building an API; it is a wrapper around one. If your product does not already expose the operations a connector needs, the platform work cannot start, and the majority of the effort in "adding Zapier support" turns out to be building the API that should have existed first.
 
@@ -28,13 +28,13 @@ The appeal is real and the framing is slightly wrong. A platform listing is not 
 
 A platform connector is defined in terms of triggers, actions, and searches, and each has a technical prerequisite.
 
-**Triggers** — "when a new order is created" — need one of two things. Either your product can call the platform's URL when the event happens, which is the modern approach and requires outgoing webhooks with retries and signatures. Or the platform polls an endpoint asking "what is new since this point", which requires an endpoint that reliably returns records in a stable order with a cursor, and that never misses a record created during the gap between polls. Polling connectors are easier to publish and produce a specific class of bug — the missed record — that is hard to diagnose from the customer's side.
+**Triggers** - "when a new order is created" - need one of two things. Either your product can call the platform's URL when the event happens, which is the modern approach and requires outgoing webhooks with retries and signatures. Or the platform polls an endpoint asking "what is new since this point", which requires an endpoint that reliably returns records in a stable order with a cursor, and that never misses a record created during the gap between polls. Polling connectors are easier to publish and produce a specific class of bug - the missed record - that is hard to diagnose from the customer's side.
 
-**Actions** — "create a client" — need endpoints that accept the same operations as your interface, with proper validation and clear error messages, because those messages are shown directly to a non-technical person configuring an automation.
+**Actions** - "create a client" - need endpoints that accept the same operations as your interface, with proper validation and clear error messages, because those messages are shown directly to a non-technical person configuring an automation.
 
-**Searches** — "find a client by email" — need lookup endpoints.
+**Searches** - "find a client by email" - need lookup endpoints.
 
-Underneath all three: authentication a non-technical person can complete, which usually means either an API key they paste in or OAuth, and consistent, documented field names. If your API returns different shapes for the same object in different places — common in AI-generated products, where each endpoint was generated separately — the connector cannot be built without fixing that first.
+Underneath all three: authentication a non-technical person can complete, which usually means either an API key they paste in or OAuth, and consistent, documented field names. If your API returns different shapes for the same object in different places - common in AI-generated products, where each endpoint was generated separately - the connector cannot be built without fixing that first.
 
 ## The Effort Beyond the Build
 
@@ -50,13 +50,13 @@ Set against that is a genuine benefit beyond the integrations themselves: platfo
 
 ## When It Makes Sense, and When It Does Not
 
-Three conditions that suggest yes: **the requests are diverse** — twelve customers naming eleven different systems, which is exactly the problem a platform solves; **your product has a natural trigger event** worth automating, such as an order, a booking, or a form submission; and **your customers already use these tools**, which is true in marketing, sales, and operations teams and often false in specialised professional and clinical settings.
+Three conditions that suggest yes: **the requests are diverse** - twelve customers naming eleven different systems, which is exactly the problem a platform solves; **your product has a natural trigger event** worth automating, such as an order, a booking, or a form submission; and **your customers already use these tools**, which is true in marketing, sales, and operations teams and often false in specialised professional and clinical settings.
 
-Three that suggest no: **the requests are concentrated** — nine of ten customers want the same accounting package, in which case a direct integration serves them better; **your API is not ready**, since the platform work will only expose that; or **your customers are non-technical in a way that means they will not build automations themselves**, in which case the listing gets published and nobody uses it.
+Three that suggest no: **the requests are concentrated** - nine of ten customers want the same accounting package, in which case a direct integration serves them better; **your API is not ready**, since the platform work will only expose that; or **your customers are non-technical in a way that means they will not build automations themselves**, in which case the listing gets published and nobody uses it.
 
 There is a cheaper intermediate step that most products should take first: publish clear documentation for outgoing webhooks and a small API, and point technically capable customers at generic tools. A customer's own developer can build the specific automation they need in an hour, without any platform relationship, and the demand you observe tells you whether the listing is justified.
 
-Getting the prerequisites right — consistent endpoints, reliable outgoing webhooks, an authentication method a non-technical person can complete, and error messages that make sense — is the real work, and it is worth doing whether or not a connector follows. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds the API and event delivery that integration platforms require. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
+Getting the prerequisites right - consistent endpoints, reliable outgoing webhooks, an authentication method a non-technical person can complete, and error messages that make sense - is the real work, and it is worth doing whether or not a connector follows. LaunchStudio, backed by Manifera's 11+ years of production engineering, builds the API and event delivery that integration platforms require. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
 ## Which Platform, and Whether to Choose Only One
 
@@ -66,7 +66,7 @@ They differ in ways that matter for a European product.
 
 **Make** is more capable for complex multi-step scenarios, popular in Europe, and generally quicker to publish on.
 
-**n8n** is open source and self-hostable, which appeals to customers with data-residency requirements — a real consideration for European businesses that will not send their data through a third-party automation service at all.
+**n8n** is open source and self-hostable, which appeals to customers with data-residency requirements - a real consideration for European businesses that will not send their data through a third-party automation service at all.
 
 The practical order for most products: build the API and webhooks properly, publish on one platform where your customers already are, and add a second only if demand appears. Maintaining three listings before demonstrating demand for one is a common way to spend a quarter on integration work while the product stands still.
 
@@ -78,10 +78,10 @@ Guusje van Dam ran Aanmelder, an event-registration tool for trade associations,
 
 Building each directly was out of the question, so she scoped a Zapier connector. The connector itself was straightforward; the prerequisite work was not. Registrations were retrievable only through an endpoint returning everything with no ordering or cursor, so a polling trigger would have missed records under load. Field names differed between endpoints for the same object. Errors returned generic 500 responses with no message, which would have shown Zapier users an unexplained failure. And there was no authentication method a non-technical person could use, since access relied on a session cookie.
 
-**Result:** cursor-based listing endpoints with stable ordering, consistent field naming, meaningful validation errors, API key authentication, and outgoing webhooks for the four events worth triggering on — three weeks of work, of which the connector definition was about three days. Ten of the eleven requests were satisfied by the listing; the eleventh, the bespoke system, was handled by that customer's own developer using the same webhooks.
+**Result:** cursor-based listing endpoints with stable ordering, consistent field naming, meaningful validation errors, API key authentication, and outgoing webhooks for the four events worth triggering on - three weeks of work, of which the connector definition was about three days. Ten of the eleven requests were satisfied by the listing; the eleventh, the bespoke system, was handled by that customer's own developer using the same webhooks.
 
 > "I thought I was building a Zapier integration. I was actually building the API I should have had, and the Zapier part was the easy few days at the end."
-> — **Guusje van Dam, Founder, Aanmelder**
+> - **Guusje van Dam, Founder, Aanmelder**
 
 **Cost & Timeline:** API preparation and webhook delivery completed in 8 business days; connector definition and review followed.
 

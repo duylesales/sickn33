@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Iedereen beweert dat het koppelen van een domeinnaam vijf minuten kost. Dat is waar, en het is tevens de reden waarom zoveel oprichters eindigen met een live applicatie, een werkende domeinnaam, en e-mails voor wachtwoordherstel die drie weken lang geruisloos in de spambox belanden voordat iemand er melding van maakt.
 
-Het doorverwijzen van een eigen domeinnaam naar een Lovable-app is inderdaad een korte taak. Het probleem is echter dat een domeinnaam niet één enkel ding is. Het is een naam met meerdere verantwoordelijkheden — het serveren van uw website, het bewijzen van uw identiteit, het versturen van uw e-mail en het toebehoren aan een juridische eigenaar — en de vijf-minuten-versie regelt uitsluitend het eerste onderdeel. Dit artikel behandelt de rest, in de volgorde waarin ze gewoonlijk pijn gaan doen.
+Het doorverwijzen van een eigen domeinnaam naar een Lovable-app is inderdaad een korte taak. Het probleem is echter dat een domeinnaam niet één enkel ding is. Het is een naam met meerdere verantwoordelijkheden - het serveren van uw website, het bewijzen van uw identiteit, het versturen van uw e-mail en het toebehoren aan een juridische eigenaar - en de vijf-minuten-versie regelt uitsluitend het eerste onderdeel. Dit artikel behandelt de rest, in de volgorde waarin ze gewoonlijk pijn gaan doen.
 
 ## Wat Het Koppelen van een Domein Daadwerkelijk Doet
 
@@ -34,7 +34,7 @@ Dat is oprecht alles wat de eerste stap inhoudt. Waar het om gaat, is dat DNS ve
 
 Uw domein bestaat in twee vormen: het apex-domein (`uwwapp.nl`) en het subdomein (`www.uwwapp.nl`). Zoekmachines behandelen dit als twee afzonderlijke adressen. Browsers doen dat ook, net als de systemen die beveiligingscertificaten uitgeven.
 
-Kies één van de twee als het primaire adres, en laat het andere adres permanent (via een 301-redirect) daarnaartoe verwijzen. Welke van de twee u kiest, maakt veel minder uit dan dat u daadwerkelijk een keuze maakt. Wat er misgaat wanneer u dit overslaat, is niet direct rampzalig — beide versies werken immers — maar u eindigt met twee adressen die identieke content serveren. Dit splitst uw zoekmachineautoriteit, verwart websitestatistieken en veroorzaakt de eigenaardige situatie waarin de bladwijzer van een klant werkt, maar die van een collega niet omdat op het ene adres wel een SSL-certificaat actief is en op het andere niet.
+Kies één van de twee als het primaire adres, en laat het andere adres permanent (via een 301-redirect) daarnaartoe verwijzen. Welke van de twee u kiest, maakt veel minder uit dan dat u daadwerkelijk een keuze maakt. Wat er misgaat wanneer u dit overslaat, is niet direct rampzalig - beide versies werken immers - maar u eindigt met twee adressen die identieke content serveren. Dit splitst uw zoekmachineautoriteit, verwart websitestatistieken en veroorzaakt de eigenaardige situatie waarin de bladwijzer van een klant werkt, maar die van een collega niet omdat op het ene adres wel een SSL-certificaat actief is en op het andere niet.
 
 Er is ook een technische hindernis die vooraf nuttig is om te weten: apex-domeinen kunnen voor dit doel niet hetzelfde type DNS-record (zoals een standaard CNAME) gebruiken als subdomeinen. Daarom bieden hostingproviders alternatieve oplossingen onder verschillende benamingen (zoals ALIAS of ANAME). Dit verklaart waarom de documentatie van uw hostingprovider om een specifiek recordtype vraagt en uw domeinregistrar een anders genaamde optie toont. Dit is volkomen normaal, maar het is wel de stap waar de meeste niet-technische oprichters vastlopen.
 
@@ -42,7 +42,7 @@ Er is ook een technische hindernis die vooraf nuttig is om te weten: apex-domein
 
 Het bekende hangslotje in de browser is afkomstig van een certificaat dat bewijst dat het domein werkelijk van u is. Moderne hostingdiensten leveren deze certificaten automatisch en vernieuwen ze ook automatisch, waardoor de meeste oprichters er nooit bij stilstaan.
 
-Er kunnen echter nog steeds drie zaken misgaan. De uitgifte mislukt geruisloos als uw DNS-records nog niet helemaal correct zijn, waardoor de site laadt met een rode browserwaarschuwing die het vertrouwen van bezoekers direct verbrijzelt. De vernieuwing mislukt als het DNS-beheer van het domein later elders wordt ondergebracht en niemand de verificatierecords bijwerkt. En mixed content — een pagina die veilig via HTTPS wordt geladen maar een afbeelding of script ophaalt via een onveilige HTTP-verbinding — resulteert in een gebroken hangslot, zelfs als het certificaat zelf vlekkeloos functioneert.
+Er kunnen echter nog steeds drie zaken misgaan. De uitgifte mislukt geruisloos als uw DNS-records nog niet helemaal correct zijn, waardoor de site laadt met een rode browserwaarschuwing die het vertrouwen van bezoekers direct verbrijzelt. De vernieuwing mislukt als het DNS-beheer van het domein later elders wordt ondergebracht en niemand de verificatierecords bijwerkt. En mixed content - een pagina die veilig via HTTPS wordt geladen maar een afbeelding of script ophaalt via een onveilige HTTP-verbinding - resulteert in een gebroken hangslot, zelfs als het certificaat zelf vlekkeloos functioneert.
 
 De praktische controle: open uw website na het koppelen in een privévenster op uw telefoon, via 4G/5G in plaats van uw eigen wifi-netwerk. Het is opmerkelijk hoeveel certificaatproblemen onzichtbaar blijven op de laptop waarop ze zijn ingesteld.
 
@@ -50,17 +50,17 @@ De praktische controle: open uw website na het koppelen in een privévenster op 
 
 Hier ontstaat de vertraging van drie weken.
 
-Uw applicatie verstuurt e-mails: registratiebevestigingen, wachtwoordresets, boekingsbewijzen en facturen. Die e-mails claimen afkomstig te zijn van uw domeinnaam. Ontvangende mailservers bepalen of ze die claim geloven door drie typen DNS-records te controleren — één die aangeeft welke servers namens u mogen verzenden (SPF), één met een cryptografische handtekening (DKIM), en één die vastlegt wat er moet gebeuren met berichten die deze controles niet doorstaan (DMARC).
+Uw applicatie verstuurt e-mails: registratiebevestigingen, wachtwoordresets, boekingsbewijzen en facturen. Die e-mails claimen afkomstig te zijn van uw domeinnaam. Ontvangende mailservers bepalen of ze die claim geloven door drie typen DNS-records te controleren - één die aangeeft welke servers namens u mogen verzenden (SPF), één met een cryptografische handtekening (DKIM), en één die vastlegt wat er moet gebeuren met berichten die deze controles niet doorstaan (DMARC).
 
 Als uw app verstuurt via een transactionele e-maildienst en die records zijn nooit aan uw DNS toegevoegd, zijn uw berichten ongeauthenticeerd. Sommige komen aan. Vele belanden in de spamfolder. En niemand zal het u vertellen, want de mensen die hun wachtwoordreset-mail niet ontvangen, kunnen per definitie niet inloggen om een klacht in te dienen.
 
-Twee vuistregels houden dit eenvoudig: verstuur transactionele e-mails via een gespecialiseerde provider in plaats van rechtstreeks vanaf de applicatieserver, en voeg de authenticatierecords van die provider toe op exact hetzelfde moment dat u het domein koppelt — niet later, want "later" betekent pas nadat uw eerste betalende klant zijn wachtwoord niet kon herstellen.
+Twee vuistregels houden dit eenvoudig: verstuur transactionele e-mails via een gespecialiseerde provider in plaats van rechtstreeks vanaf de applicatieserver, en voeg de authenticatierecords van die provider toe op exact hetzelfde moment dat u het domein koppelt - niet later, want "later" betekent pas nadat uw eerste betalende klant zijn wachtwoord niet kon herstellen.
 
 ## Wie Is Eigenlijk de Juridische Eigenaar van het Domein?
 
 Vraag uzelf af: als u en uw medeoprichter morgen ruzie krijgen, of uw eerste freelancer stopt met reageren op berichten, kunt u uw domein dan nog steeds zelfstandig verhuizen?
 
-Domeinnamen worden opvallend vaak geregistreerd door degene die toevallig de technische inrichting verzorgde — een bureau, een ingehuurde ontwikkelaar, een handige kennis — in het persoonlijke account van die persoon, met diens creditcard en herstel-e-mailadres. De applicatie is van u; de naam die mensen intypen om hem te bereiken niet.
+Domeinnamen worden opvallend vaak geregistreerd door degene die toevallig de technische inrichting verzorgde - een bureau, een ingehuurde ontwikkelaar, een handige kennis - in het persoonlijke account van die persoon, met diens creditcard en herstel-e-mailadres. De applicatie is van u; de naam die mensen intypen om hem te bereiken niet.
 
 Controleer vóór de lancering drie zaken: het domein is geregistreerd in een account dat onder uw beheer valt, het contact-e-mailadres op de registratie is voor u toegankelijk, en u weet waar het DNS wordt beheerd (wat soms een andere partij is dan de registrar). Bevindt een van deze elementen zich bij iemand anders? Draag het dan nu over, nu iedereen nog op goede voet met elkaar staat. De kosten van het achteraf oplossen hiervan variëren van een langdurig ondersteuningstraject tot het daadwerkelijk kwijtraken van uw merknaam.
 
@@ -68,13 +68,13 @@ Controleer vóór de lancering drie zaken: het domein is geregistreerd in een ac
 
 Zodra er een eigen domeinnaam bestaat, heeft u in feite twee adressen voor dezelfde applicatie: de oorspronkelijke Lovable preview-URL en het echte adres. Beide blijven doorgaans gewoon functioneren.
 
-Dat is enerzijds handig, maar het creëert tevens een spoor van problemen. Betalingsproviders, authenticatiediensten en e-mailtemplates slaan allemaal redirect- en callback-adressen op. Als die nog steeds naar de preview-URL verwijzen, worden gebruikers teruggestuurd naar een adres dat niet uw merk draagt — of breekt een proces geruisloos af. Analysesoftware raakt verspreid over twee verschillende hostnames. En de preview-link, die nog rondzwerft in oude WhatsApp-berichten en pitch decks, blijft een versie van uw app serveren die langzaam veroudert.
+Dat is enerzijds handig, maar het creëert tevens een spoor van problemen. Betalingsproviders, authenticatiediensten en e-mailtemplates slaan allemaal redirect- en callback-adressen op. Als die nog steeds naar de preview-URL verwijzen, worden gebruikers teruggestuurd naar een adres dat niet uw merk draagt - of breekt een proces geruisloos af. Analysesoftware raakt verspreid over twee verschillende hostnames. En de preview-link, die nog rondzwerft in oude WhatsApp-berichten en pitch decks, blijft een versie van uw app serveren die langzaam veroudert.
 
 De oplossing is een grondige opschoonronde: werk elke callback-URL bij, elke link in e-mailtemplates, elke integratie-instelling en elke gedeelde link die u heeft verzonden, en beslis vervolgens of het preview-adres permanent moet doorverwijzen naar de echte domeinnaam.
 
 ## Een Domeinnaam Wijzigen Na de Lancering Is Kostbaar
 
-Oprichters kiezen regelmatig een tijdelijke werknaam, lanceren daarmee, en besluiten twee maanden later alsnog te rebranden. Technisch gezien is verhuizen eenvoudig — nieuw domein, nieuwe records, oude doorverwijzen. De werkelijke kosten zitten elders.
+Oprichters kiezen regelmatig een tijdelijke werknaam, lanceren daarmee, en besluiten twee maanden later alsnog te rebranden. Technisch gezien is verhuizen eenvoudig - nieuw domein, nieuwe records, oude doorverwijzen. De werkelijke kosten zitten elders.
 
 Zoekmachines hebben tijd nodig om opgebouwde reputatie over te dragen, en dat gebeurt alleen correct als elke oude URL een permanente 301-redirect heeft naar zijn nieuwe equivalent. Bladwijzers en wachtwoordmanagers van klanten zijn gekoppeld aan de oude naam. Instellingen bij betalings- en authenticatie-integraties moeten opnieuw worden aangepast. E-mailauthenticatierecords moeten voor het nieuwe domein vanaf nul worden opgebouwd.
 
@@ -94,7 +94,7 @@ Zeven controles, waarvan de meeste binnen enkele minuten zijn uitgevoerd. De red
 
 ## Waar Dit Zich Bevindt Binnen Een Lancering
 
-Domeinconfiguratie is ogenschijnlijk klein werk dat rust op fundamentelere vragen — of API-sleutels openlijk op straat liggen, of er betrouwbare back-ups van uw database zijn, of betalingen daadwerkelijk correct worden verwerkt. LaunchStudio verzorgt dit als integraal onderdeel van het productierijp maken van een AI-gebouwd prototype: het domein, het certificaat, de e-mailauthenticatie, de callback-opschoning en de redirects, hand in hand met het onderliggende beveiligings- en infrastructuurwerk. De frontend die u in Lovable heeft ontworpen blijft onaangeroerd, en de code blijft volledig uw eigendom.
+Domeinconfiguratie is ogenschijnlijk klein werk dat rust op fundamentelere vragen - of API-sleutels openlijk op straat liggen, of er betrouwbare back-ups van uw database zijn, of betalingen daadwerkelijk correct worden verwerkt. LaunchStudio verzorgt dit als integraal onderdeel van het productierijp maken van een AI-gebouwd prototype: het domein, het certificaat, de e-mailauthenticatie, de callback-opschoning en de redirects, hand in hand met het onderliggende beveiligings- en infrastructuurwerk. De frontend die u in Lovable heeft ontworpen blijft onaangeroerd, en de code blijft volledig uw eigendom.
 
 Daarachter staat Manifera, een softwarebedrijf met ruim elf jaar ervaring in enterprise-engineering en opdrachtgevers als Vodafone en TNO. Dat telt hier vooral omdat bovenstaande checklist precies datgene is wat ervaren teams uit automatisme correct uitvoeren, en wat startende oprichters pas ontdekken na een incident. Staat u op het punt live te gaan? [Omschrijf uw project](https://launchstudio.eu/nl/#contact) en u hoort binnen één werkdag van ons.
 
@@ -102,11 +102,11 @@ Daarachter staat Manifera, een softwarebedrijf met ruim elf jaar ervaring in ent
 
 De meeste oprichters lezen dit pas nadat het domein al is gekoppeld. Doorloop eventuele symptomen in deze volgorde, omdat elke stap de onderliggende laag uitsluit:
 
-**De site laadt helemaal niet.** Vrijwel altijd een DNS-record dat naar de verkeerde server wijst, of twee conflicterende records voor dezelfde naam. Controleer waarnaar uw domein verwijst vanaf een apparaat dat de site nog nooit heeft bezocht — een telefoon op mobiele data is de meest betrouwbare test — in plaats van uw eigen laptop die mogelijk oude gegevens in de DNS-cache bewaart.
+**De site laadt helemaal niet.** Vrijwel altijd een DNS-record dat naar de verkeerde server wijst, of twee conflicterende records voor dezelfde naam. Controleer waarnaar uw domein verwijst vanaf een apparaat dat de site nog nooit heeft bezocht - een telefoon op mobiele data is de meest betrouwbare test - in plaats van uw eigen laptop die mogelijk oude gegevens in de DNS-cache bewaart.
 
 **De site laadt met een certificaatwaarschuwing.** Het certificaat is aangevraagd voordat de DNS-records volledig actief waren, of het domein is sindsdien verhuisd. Vraag een heruitgifte aan bij uw hostingprovider zodra de records zijn geverifieerd, en controleer opnieuw vanaf een fris apparaat.
 
-**De site laadt via HTTPS, maar het hangslotje is gebroken op bepaalde pagina's.** Iets op die pagina's wordt geladen via een onbeveiligde HTTP-verbinding — meestal een hardcoded afbeeldingslink, een extern lettertype of een script dat tijdens het bouwen vast is ingevoerd. Pas de specifieke verwijzingen in de code aan in plaats van het certificaat.
+**De site laadt via HTTPS, maar het hangslotje is gebroken op bepaalde pagina's.** Iets op die pagina's wordt geladen via een onbeveiligde HTTP-verbinding - meestal een hardcoded afbeeldingslink, een extern lettertype of een script dat tijdens het bouwen vast is ingevoerd. Pas de specifieke verwijzingen in de code aan in plaats van het certificaat.
 
 **Alles lijkt te kloppen, maar gebruikers klagen over e-mails.** Dit betreft de mailauthenticatie, niet de website zelf. Verstuur een testmail naar zowel Gmail als Outlook, en controleer de spambox in plaats van blind te vertrouwen op het ontbreken van foutmeldingen.
 
@@ -126,10 +126,10 @@ Het herstelwerk nam drie werkdagen in beslag: authenticatierecords toegevoegd en
 
 **Resultaat:** het percentage voltooide registraties steeg in de daaropvolgende drie weken van circa 65% naar ruim 90% van de aanmeldingen, zonder dat er ook maar één regel aan het product zelf hoefde te worden veranderd.
 
-> *"Er leek helemaal niets stuk. Dat was het verraderlijke — de app werkte perfect, maar een derde van mijn gebruikers verdween geruisloos in een spambox."*
-> — **Sanne Bakker, Oprichter, Shiftly (Amsterdam)**
+> *"Er leek helemaal niets stuk. Dat was het verraderlijke - de app werkte perfect, maar een derde van mijn gebruikers verdween geruisloos in een spambox."*
+> - **Sanne Bakker, Oprichter, Shiftly (Amsterdam)**
 
-**Kosten & Doorlooptijd:** €1.150 (domein- en e-mailauthenticatie, callback-audit en verificatie) — voltooid in 3 werkdagen.
+**Kosten & Doorlooptijd:** €1.150 (domein- en e-mailauthenticatie, callback-audit en verificatie) - voltooid in 3 werkdagen.
 
 ---
 

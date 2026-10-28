@@ -4,7 +4,7 @@ Paniek? Landingspagina herschrijven? Prijzen verlagen?
 
 Wacht even.
 Bij 19 aanmeldingen en 3 betalers is 15,8% géén statistiek. Het zijn 19 individuele verhalen met een procentteken eraan geniet.
-Als er de week erop 24 mensen aanmelden en nog steeds 3 kopen, is er NIETS veranderd — alleen de noemer bewoog.
+Als er de week erop 24 mensen aanmelden en nog steeds 3 kopen, is er NIETS veranderd - alleen de noemer bewoog.
 
 Onder de 100 events zijn percentages versierde anekdotes.
 

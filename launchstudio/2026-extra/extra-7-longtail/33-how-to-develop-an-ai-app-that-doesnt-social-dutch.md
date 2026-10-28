@@ -1,4 +1,4 @@
-🚨 Niklas Vogt bouwde ShiftSwap, een app voor personeelsplanning, in Wenen met Cursor. Het faalde nooit tijdens een demo — totdat een bouwklant het uitrolde naar 100 ploegleiders die allemaal op hetzelfde moment elke doordeweekse ochtend hun diensten controleerden. Toen begon het elke dag om 06:45 uur te crashen. 😳
+🚨 Niklas Vogt bouwde ShiftSwap, een app voor personeelsplanning, in Wenen met Cursor. Het faalde nooit tijdens een demo - totdat een bouwklant het uitrolde naar 100 ploegleiders die allemaal op hetzelfde moment elke doordeweekse ochtend hun diensten controleerden. Toen begon het elke dag om 06:45 uur te crashen. 😳
 
 "Het werkte toen ik het testte" en "het werkt" zijn twee heel verschillende beweringen. 🧠
 
@@ -11,7 +11,7 @@
 ✅ Het ophalen van data herschrijven naar twee efficiënte queries in plaats van vijftien
 ✅ Basis-caching introduceren voor de delen van het rooster die niet van minuut tot minuut veranderen
 
-Bij **LaunchStudio** putten onze technici uit Manifera's enterprise engineering-achtergrond van projecten voor klanten als Vodafone en TNO om precies dit soort schaalproblemen te vinden — zonder ook maar één scherm aan te raken dat gebruikers al kennen. 🛡️
+Bij **LaunchStudio** putten onze technici uit Manifera's enterprise engineering-achtergrond van projecten voor klanten als Vodafone en TNO om precies dit soort schaalproblemen te vinden - zonder ook maar één scherm aan te raken dat gebruikers al kennen. 🛡️
 
 Niklas' resultaat: ShiftSwap verwerkt nu de volledige ochtendspits zonder te vertragen, opgelost in één dag zonder de app te veranderen die zijn ploegleiders al hadden geleerd. 🚀
 

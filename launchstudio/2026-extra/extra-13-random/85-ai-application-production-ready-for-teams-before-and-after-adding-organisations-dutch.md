@@ -28,7 +28,7 @@ Uw SaaS begon met individuele gebruikers: een docent, een adviseur of een freela
 In een applicatie die is gegenereerd met Lovable, Bolt of Cursor, draait vrijwel alles om `user_id`:
 
 - Gegevensrecords horen toe aan één specifieke gebruiker.
-- Toegangsregels — mits aanwezig — dicteren: *"je mag alleen rijen zien waarin `user_id` gelijk is aan jouw account."*
+- Toegangsregels - mits aanwezig - dicteren: *"je mag alleen rijen zien waarin `user_id` gelijk is aan jouw account."*
 - Facturatie verloopt per individuele gebruiker.
 - Instellingen zijn uitsluitend gekoppeld aan de individuele gebruiker.
 
@@ -43,7 +43,7 @@ De snelste reflex om teams toe te voegen is gebruikers toestaan records met elka
 De volwassen productieaanpak introduceert een **organisatie** (of werkruimte) als formele eigenaar van alle data:
 
 - Records zijn eigendom van een organisatie en aangemaakt door een specifieke gebruiker binnen die organisatie.
-- **Lidmaatschappen (Memberships)** koppelen gebruikers aan organisaties met een specifieke **rol**: eigenaar (owner), beheerder (admin), lid (member), lezer (viewer) — afhankelijk van uw product.
+- **Lidmaatschappen (Memberships)** koppelen gebruikers aan organisaties met een specifieke **rol**: eigenaar (owner), beheerder (admin), lid (member), lezer (viewer) - afhankelijk van uw product.
 - Toegangsregels veranderen in: *"u mag rijen zien van organisaties waarvan u lid bent, mits uw rol de gewenste handeling toestaat."*
 - Facturatie, instellingen en externe koppelingen verhuizen naar het organisatieniveau.
 - Een gebruiker kan lid zijn van meerdere organisaties en soepel schakelen tussen werkruimtes.
@@ -56,7 +56,7 @@ De grootste uitdaging is niet het nieuwe datamodel, maar het foutloos overzetten
 2. Koppel alle bestaande records van de gebruiker aan deze nieuwe organisatie, met behoud van de auteur.
 3. Koppel het actieve abonnement over naar de organisatie.
 4. Herschrijf alle databasequery's en beveiligingsregels van `user_id` naar organisatielidmaatschap.
-5. Valideer uitvoerig dat elke gebruiker exact dezelfde gegevens ziet als voorheen — en absoluut niets meer dan dat.
+5. Valideer uitvoerig dat elke gebruiker exact dezelfde gegevens ziet als voorheen - en absoluut niets meer dan dat.
 
 Dit proces hoort eerst op een staging-omgeving met geanonimiseerde data getest te worden, en pas daarna tijdens een rustig tijdstip in productie met een geverifieerde back-up achter de hand.
 
@@ -153,7 +153,7 @@ Voer deze migratiecyclus eerst integraal uit op staging en plan de productierele
 
 ## Uitnodigingen veilig ontwerpen
 
-Uitnodigingsflows vormen vaak een zwakke schakel in de beveiliging. Een robuuste opzet: een beheerder voert e-mailadres en rol in; het systeem genereert een uitnodiging met een cryptografisch token (gehasht opgeslagen in de database), organisatie-ID, rol en vervaltermijn; de e-mail bevat een beveiligde link; acceptatie vereist dat de gebruiker inlogt of registreert met exact dat e-mailadres; het token vervalt na één keer gebruik; en het lidmaatschap wordt binnen dezelfde databasetransactie aangemaakt. Beheerders moeten openstaande uitnodigingen op elk moment kunnen intrekken. Houd bovendien bij wie wie heeft uitgenodigd — zakelijke klanten vragen hier expliciet naar.
+Uitnodigingsflows vormen vaak een zwakke schakel in de beveiliging. Een robuuste opzet: een beheerder voert e-mailadres en rol in; het systeem genereert een uitnodiging met een cryptografisch token (gehasht opgeslagen in de database), organisatie-ID, rol en vervaltermijn; de e-mail bevat een beveiligde link; acceptatie vereist dat de gebruiker inlogt of registreert met exact dat e-mailadres; het token vervalt na één keer gebruik; en het lidmaatschap wordt binnen dezelfde databasetransactie aangemaakt. Beheerders moeten openstaande uitnodigingen op elk moment kunnen intrekken. Houd bovendien bij wie wie heeft uitgenodigd - zakelijke klanten vragen hier expliciet naar.
 
 ## Omgaan met de actieve organisatiecontext
 
@@ -169,7 +169,7 @@ Bedrijven eisen controle en verantwoording: wie heeft een nieuw lid toegevoegd, 
 
 ## Medewerkers ontkoppelen en eigenaarschap overdragen
 
-Zodra een werknemer uit dienst gaat, trekt de beheerder het lidmaatschap in en stopt de toegang per seconde — inclusief actieve browser-sessies en API-sleutels. De door deze persoon aangemaakte documenten blijven netjes bewaard binnen de organisatie. Wanneer een eigenaar vertrekt, moet de eigenaarsrol overgedragen kunnen worden aan een andere beheerder; voorkom dat een organisatie zonder eigenaar achterblijft. Leg ook contractueel vast wat er met de data gebeurt na beëindiging van het abonnement: respijtperiode, export en definitieve verwijdering.
+Zodra een werknemer uit dienst gaat, trekt de beheerder het lidmaatschap in en stopt de toegang per seconde - inclusief actieve browser-sessies en API-sleutels. De door deze persoon aangemaakte documenten blijven netjes bewaard binnen de organisatie. Wanneer een eigenaar vertrekt, moet de eigenaarsrol overgedragen kunnen worden aan een andere beheerder; voorkom dat een organisatie zonder eigenaar achterblijft. Leg ook contractueel vast wat er met de data gebeurt na beëindiging van het abonnement: respijtperiode, export en definitieve verwijdering.
 
 ## Zoekfuncties, exports en achtergrondtaken isoleren
 
@@ -181,11 +181,11 @@ Wanneer organisaties groeien, vraagt de IT-afdeling onherroepelijk om SSO (SAML/
 
 ## Rollen ontwerpen zonder spijt
 
-Begin met een beperkt aantal heldere rollen; rollen toevoegen is achteraf veel eenvoudiger dan rollen samenvoegen of verwijderen. Leg de bevoegdheden vast in een duidelijke matrix en handhaaf deze centraal — in databasepolicies of in een gedeelde autorisatielaag — in plaats van versnipperde controles in losse UI-componenten. Vraagt een klant om maatwerkrollen, onderzoek dan eerst of gerichte permissies per module volstaan voordat u een wildgroei aan rolprofielen introduceert.
+Begin met een beperkt aantal heldere rollen; rollen toevoegen is achteraf veel eenvoudiger dan rollen samenvoegen of verwijderen. Leg de bevoegdheden vast in een duidelijke matrix en handhaaf deze centraal - in databasepolicies of in een gedeelde autorisatielaag - in plaats van versnipperde controles in losse UI-componenten. Vraagt een klant om maatwerkrollen, onderzoek dan eerst of gerichte permissies per module volstaan voordat u een wildgroei aan rolprofielen introduceert.
 
 ## De overstap communiceren naar bestaande gebruikers
 
-Wanneer individuele accounts transformeren naar organisaties, informeer uw gebruikers dan duidelijk over wat er verandert: hun data blijft exact behouden, ze zijn voortaan beheerder van hun eigen werkruimte, en ze kunnen vanaf nu collega's uitnodigen. Bied een beknopte handleiding over hoe ze teamleden toevoegen en rollen toekennen. Een heldere aankondiging maakt van een technische databasemigratie een waardevolle nieuwe functionaliteit — en vaak de directe aanleiding om te upgraden naar een betaald teamplan.
+Wanneer individuele accounts transformeren naar organisaties, informeer uw gebruikers dan duidelijk over wat er verandert: hun data blijft exact behouden, ze zijn voortaan beheerder van hun eigen werkruimte, en ze kunnen vanaf nu collega's uitnodigen. Bied een beknopte handleiding over hoe ze teamleden toevoegen en rollen toekennen. Een heldere aankondiging maakt van een technische databasemigratie een waardevolle nieuwe functionaliteit - en vaak de directe aanleiding om te upgraden naar een betaald teamplan.
 
 ## De migratie grondig testen
 
@@ -193,7 +193,7 @@ Kijk verder dan alleen het controleren van database-aantallen: log handmatig in 
 
 ## Waarom dit de deur opent naar zakelijke klanten
 
-Voor veel met AI gebouwde SaaS-apps is het toevoegen van organisaties dé stap die losse gebruikersabonnementen omzet in substantiële zakelijke licenties. Bedrijven, onderwijsinstellingen en bureaus schaffen software collectief aan, verlangen centrale facturatie, eisen beheerdersrechten en vragen om audittrails. Een single-user app kan niet aan die eisen voldoen; een robuust organisatiemodel met databasebeveiliging wel. De techniek is beproefd en — mits vakkundig uitgevoerd — volkomen onzichtbaar voor bestaande gebruikers, die simpelweg ontdekken dat ze voortaan teamleden kunnen toevoegen. Die combinatie van minimale verstoring en maximale commerciële waarde maakt dit een van de meest rendabele investeringen voor een groeiend SaaS-platform.
+Voor veel met AI gebouwde SaaS-apps is het toevoegen van organisaties dé stap die losse gebruikersabonnementen omzet in substantiële zakelijke licenties. Bedrijven, onderwijsinstellingen en bureaus schaffen software collectief aan, verlangen centrale facturatie, eisen beheerdersrechten en vragen om audittrails. Een single-user app kan niet aan die eisen voldoen; een robuust organisatiemodel met databasebeveiliging wel. De techniek is beproefd en - mits vakkundig uitgevoerd - volkomen onzichtbaar voor bestaande gebruikers, die simpelweg ontdekken dat ze voortaan teamleden kunnen toevoegen. Die combinatie van minimale verstoring en maximale commerciële waarde maakt dit een van de meest rendabele investeringen voor een groeiend SaaS-platform.
 
 ## Eerste stap
 
@@ -205,9 +205,9 @@ Delen is een losse functie; organisaties vormen een solide fundament. Zakelijke 
 
 ## Waar LaunchStudio u bij helpt
 
-LaunchStudio rust met AI gebouwde SaaS-producten uit met volwaardige organisatiestructuren: datamodeluitbreidingen, een vlekkeloze migratie van bestaande gebruikers, in de database afgedwongen rollen, veilige uitnodigingen, offboarding en seat-based facturatie — met behoud van uw vertrouwde interface, aangevuld met een overzichtelijke werkruimtekiezer. LaunchStudio wordt ondersteund door Manifera, waarvan de 120+ senior engineers al meer dan 11 jaar B2B-platformen ontwikkelen voor toonaangevende opdrachtgevers zoals Vodafone en Maployer, vanuit Ho Chi Minh City, Amsterdam en Singapore. Bekijk [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/); de [Supabase gids voor Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security) legt uit hoe organisatiebeleid technisch wordt geformuleerd.
+LaunchStudio rust met AI gebouwde SaaS-producten uit met volwaardige organisatiestructuren: datamodeluitbreidingen, een vlekkeloze migratie van bestaande gebruikers, in de database afgedwongen rollen, veilige uitnodigingen, offboarding en seat-based facturatie - met behoud van uw vertrouwde interface, aangevuld met een overzichtelijke werkruimtekiezer. LaunchStudio wordt ondersteund door Manifera, waarvan de 120+ senior engineers al meer dan 11 jaar B2B-platformen ontwikkelen voor toonaangevende opdrachtgevers zoals Vodafone en Maployer, vanuit Ho Chi Minh City, Amsterdam en Singapore. Bekijk [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/); de [Supabase gids voor Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security) legt uit hoe organisatiebeleid technisch wordt geformuleerd.
 
-[Bespreek uw project](https://launchstudio.eu/nl/#contact) — zeker wanneer een potentiële klant zojuist heeft gevraagd om teamfunctionaliteit.
+[Bespreek uw project](https://launchstudio.eu/nl/#contact) - zeker wanneer een potentiële klant zojuist heeft gevraagd om teamfunctionaliteit.
 
 ## Praktijkvoorbeeld
 
@@ -222,14 +222,14 @@ In dertien werkdagen introduceerden de engineers van LaunchStudio scholen als ov
 **Resultaat:** Alle drie de scholengemeenschappen tekenden een meerjarig contract voor in totaal circa 900 docenten, en geen enkele individuele gebruiker verloor tijdens de migratie toegang tot eigen lesmateriaal. Schoollicenties vormen inmiddels het leeuwendeel van de omzet van Lesvoorbereiding.
 
 > *"Delen was een losse functie. Scholen hadden een hechte structuur nodig. Dat bleken in de praktijk twee totaal verschillende werelden te zijn."*
-> — **Nienke Hellinga, Oprichtster, Lesvoorbereiding (Franeker)**
+> - **Nienke Hellinga, Oprichtster, Lesvoorbereiding (Franeker)**
 
-**Kosten & Tijdlijn:** €3.800 (Launch & Grow-pakket: organisatiemodel, datamigratie, rollen, uitnodigingen en schoolbrede facturatie) — afgerond in 13 werkdagen, plus €49/maand managed hosting.
+**Kosten & Tijdlijn:** €3.800 (Launch & Grow-pakket: organisatiemodel, datamigratie, rollen, uitnodigingen en schoolbrede facturatie) - afgerond in 13 werkdagen, plus €49/maand managed hosting.
 
 ## Veelgestelde Vragen
 
 ### Hoe voeg ik teamaccounts toe aan een single-user SaaS die met AI is gebouwd?
-Door organisaties te introduceren die de data bezitten, lidmaatschappen met rollen aan te maken en toegangsrechten direct in de database af te dwingen — waarna bestaande gebruikers geruisloos gemigreerd worden naar een persoonlijke organisatie.
+Door organisaties te introduceren die de data bezitten, lidmaatschappen met rollen aan te maken en toegangsrechten direct in de database af te dwingen - waarna bestaande gebruikers geruisloos gemigreerd worden naar een persoonlijke organisatie.
 
 ### Is een simpele deelfunctie niet voldoende voor zakelijke klanten?
 Vrijwel nooit. Losse deelrechten worden snel onoverzichtelijk en zijn nauwelijks te auditen. Zakelijke klanten verwachten duidelijke organisaties met beheerdersrechten en directe ontkoppeling bij uitdiensttreding.
@@ -238,7 +238,7 @@ Vrijwel nooit. Losse deelrechten worden snel onoverzichtelijk en zijn nauwelijks
 Het risico is uitstekend te beheersen door de migratie eerst te valideren op een staging-omgeving, te werken met een geverifieerde back-up en geautomatiseerd te testen of elke gebruiker exact dezelfde gegevens behoudt.
 
 ### Hoe ontwerpt Manifera multi-tenant SaaS-architecturen?
-Met strikt door organisaties beheerde data, autorisatie op basis van lidmaatschap die in de database wordt afgedwongen en negatieve tests voor iedere rol — beproefde methoden uit tientallen zakelijke B2B-projecten.
+Met strikt door organisaties beheerde data, autorisatie op basis van lidmaatschap die in de database wordt afgedwongen en negatieve tests voor iedere rol - beproefde methoden uit tientallen zakelijke B2B-projecten.
 
 ### Helpen teamfunctionaliteiten bij de vindbaarheid in AI-zoekmachines?
 Jazeker. Pagina's die teamlicenties, rolbeheer en beveiligingsstandaarden beschrijven, geven exact antwoord op de vragen die zakelijke inkopers stellen aan AI-zoekassistenten tijdens softwarevergelijkingen.

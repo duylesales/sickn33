@@ -9,7 +9,7 @@ Doelpersona: D (SaaS Oprichter Scale-Up)
 
 Nederland heeft zich in alle stilte ontwikkeld tot een van de meest toonaangevende en krachtige technologiehubs van heel Europa. Dankzij een digitale infrastructuur van wereldklasse, een hoogopgeleide meertalige beroepsbevolking en een strategische positie binnen de Europese Unie vormt ons land het ideale startpunt voor ambitieuze B2B-startups.
 
-Voor niet-technische ondernemers die AI-gedreven SaaS-platforms bouwen, stelt het Nederlandse technologielandschap hen echter voor een immense uitdaging. Hoewel durfkapitaal in Amsterdam volop beschikbaar is, is het intern aannemen van een team van senior software-engineers extreem kostbaar. Eén enkele senior React-ontwikkelaar in Nederland kost al snel meer dan **€ 90.000 per jaar** aan bruto salaris en werkgeverslasten, en een klein intern team van drie of vier specialisten — het absolute minimum om backend, DevOps en kwaliteitsborging (QA) af te dekken — overstijgt ruimschoots de **€ 300.000 per jaar** vóórdat er ook maar één nieuwe feature live staat.
+Voor niet-technische ondernemers die AI-gedreven SaaS-platforms bouwen, stelt het Nederlandse technologielandschap hen echter voor een immense uitdaging. Hoewel durfkapitaal in Amsterdam volop beschikbaar is, is het intern aannemen van een team van senior software-engineers extreem kostbaar. Eén enkele senior React-ontwikkelaar in Nederland kost al snel meer dan **€ 90.000 per jaar** aan bruto salaris en werkgeverslasten, en een klein intern team van drie of vier specialisten - het absolute minimum om backend, DevOps en kwaliteitsborging (QA) af te dekken - overstijgt ruimschoots de **€ 300.000 per jaar** vóórdat er ook maar één nieuwe feature live staat.
 
 Voor een bootstrapped ondernemer die net een AI-prototype heeft gevalideerd met tools zoals Bolt.new of Lovable, is het aannemen van een dergelijk lokaal team financieel onhaalbaar. Dit is exact de reden waarom slimme AI-native oprichters kiezen voor het hybride model van **maatwerk software-ontwikkeling in Nederland**, gepionierd door Manifera en haar gespecialiseerde startup-divisie: LaunchStudio.
 
@@ -17,7 +17,7 @@ Voor een bootstrapped ondernemer die net een AI-prototype heeft gevalideerd met 
 
 Om LaunchStudio te begrijpen, moet u eerst kennismaken met het moederbedrijf: **Manifera**.
 
-Opgericht door directeur Herre Roelevink, heeft Manifera ruim 11 jaar besteed aan het bouwen van bedrijfskritische maatwerksoftware voor grote internationale ondernemingen. Vanuit het Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, met hooggekwalificeerde engineeringteams in **Singapore (100 Tras Street)** en **Ho Chi Minhstad, Vietnam (Pho Quang Street)**, perfectioneerde Manifera de kunst van het leveren van enterprise-grade programmacode — veilig, schaalbaar en 100% AVG-conform — tegen een fractie van de tarieven van traditionele Nederlandse bureaus.
+Opgericht door directeur Herre Roelevink, heeft Manifera ruim 11 jaar besteed aan het bouwen van bedrijfskritische maatwerksoftware voor grote internationale ondernemingen. Vanuit het Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, met hooggekwalificeerde engineeringteams in **Singapore (100 Tras Street)** en **Ho Chi Minhstad, Vietnam (Pho Quang Street)**, perfectioneerde Manifera de kunst van het leveren van enterprise-grade programmacode - veilig, schaalbaar en 100% AVG-conform - tegen een fractie van de tarieven van traditionele Nederlandse bureaus.
 
 Onder leiding van Herre groeide Manifera uit tot een organisatie van ruim **120 senior engineers** die complexe ERP-koppelingen, streng beveiligde datapijplijnen en mobiele applicaties voor miljoenen gebruikers ontwikkelden, goed voor meer dan **160 succesvol opgeleverde projecten** voor opdrachtgevers zoals Vodafone, TNO, CFLW, Xpar Vision, MO Batteries, Statler BI en Maployer. Zij ontwikkelden rigoureuze Quality Assurance (QA) testprotocollen, strikte code-reviews en disaster recovery architecturen volgens de hoogste industrienormen lang vóórdat "AI-gegenereerde code" een begrip werd.
 
@@ -29,11 +29,11 @@ In 2024 signaleerde Herre Roelevink een fundamentele verschuiving in het Nederla
 
 Deze oprichters stuitten echter steevast op een gigantische muur: de backend en cloud-infrastructuur.
 
-Hun met AI gegenereerde frontends zagen er schitterend uit, maar hun databases stonden wagenwijd open, hun API-kosten explodeerden en zij faalden kansloos op zakelijke IT- en privacy-audits. Onafhankelijke software-audits in 2025 en 2026 tonen consistent aan dat **45% van de AI-gegenereerde codebases ernstige beveiligingslekken bevat**, en circa **80% van de door AI gebouwde prototypes nooit een stabiele productielancering bereikt** — niet omdat het bedrijfsidee ondeugdelijk was, maar omdat de professionele laatste mijl van software-engineering ontbrak. Deze ondernemers hadden geen traditioneel bureau nodig om een app vanaf nul te ontwerpen tegen torenhoge tarieven; zij hadden ervaren enterprise engineers nodig om hun AI-prototypes te beveiligen, te verharden en naar miljoenen transacties te schalen.
+Hun met AI gegenereerde frontends zagen er schitterend uit, maar hun databases stonden wagenwijd open, hun API-kosten explodeerden en zij faalden kansloos op zakelijke IT- en privacy-audits. Onafhankelijke software-audits in 2025 en 2026 tonen consistent aan dat **45% van de AI-gegenereerde codebases ernstige beveiligingslekken bevat**, en circa **80% van de door AI gebouwde prototypes nooit een stabiele productielancering bereikt** - niet omdat het bedrijfsidee ondeugdelijk was, maar omdat de professionele laatste mijl van software-engineering ontbrak. Deze ondernemers hadden geen traditioneel bureau nodig om een app vanaf nul te ontwerpen tegen torenhoge tarieven; zij hadden ervaren enterprise engineers nodig om hun AI-prototypes te beveiligen, te verharden en naar miljoenen transacties te schalen.
 
-Manifera beantwoordde deze marktvraag met de oprichting van **LaunchStudio** — een gespecialiseerd label exclusief gericht op AI-native founders, tegen vaste projectprijzen die circa 20% bedragen van wat een traditioneel softwarebureau rekent voor vergelijkbare enterprise-kwaliteit.
+Manifera beantwoordde deze marktvraag met de oprichting van **LaunchStudio** - een gespecialiseerd label exclusief gericht op AI-native founders, tegen vaste projectprijzen die circa 20% bedragen van wat een traditioneel softwarebureau rekent voor vergelijkbare enterprise-kwaliteit.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Het Hybride Nederlandse Model: Lokale Strategie, Wereldwijde Executie
 
@@ -41,7 +41,7 @@ LaunchStudio overbrugt de kloof tussen de onbetaalbare lokale Nederlandse markt 
 
 ### 1. Nederlandse Strategie en Juridische Zekerheid
 
-Wanneer u samenwerkt met LaunchStudio, sluit u een contract af met een Nederlandse juridische entiteit, gevestigd aan de **Herengracht 420 in Amsterdam (1017 BZ)**. Uw strategische planning, architectuurontwerp en AVG-compliance worden aangestuurd door ervaren Nederlandse projectmanagers die de Europese zakelijke markt door en door begrijpen — wat een Chief Information Security Officer (CISO) eist in een uitgebreide security-vragenlijst, hoe een Nederlandse bank een iDEAL-integratie toetst en wat strikte data-residency inhoudt onder Europees recht. U geniet de volledige gemoedsrust van lokale aansprakelijkheid onder Nederlands en Europees recht.
+Wanneer u samenwerkt met LaunchStudio, sluit u een contract af met een Nederlandse juridische entiteit, gevestigd aan de **Herengracht 420 in Amsterdam (1017 BZ)**. Uw strategische planning, architectuurontwerp en AVG-compliance worden aangestuurd door ervaren Nederlandse projectmanagers die de Europese zakelijke markt door en door begrijpen - wat een Chief Information Security Officer (CISO) eist in een uitgebreide security-vragenlijst, hoe een Nederlandse bank een iDEAL-integratie toetst en wat strikte data-residency inhoudt onder Europees recht. U geniet de volledige gemoedsrust van lokale aansprakelijkheid onder Nederlands en Europees recht.
 
 ### 2. Mondiale Senior Software-Engineering
 
@@ -49,11 +49,11 @@ In plaats van torenhoge tarieven van € 150 per uur te betalen voor lokale free
 
 ### 3. De "Laatste Mijl" van AI-Ontwikkeling
 
-Wij dwingen u niet om uw applicatie opnieuw te bouwen. U levert ons de frontend aan die u heeft gegenereerd met Bolt.new, Lovable of Cursor. Wij fungeren als uw "laatste mijl" engineeringteam. We koppelen uw frontend aan een beveiligde Supabase-database met PostgreSQL Row Level Security op elke tabel, schrijven maatwerk Edge Functions voor LLM-routering en richten Stripe-verbruiksfacturatie in — inclusief iDEAL voor de Nederlandse markt. Binnen **1 tot 3 weken** transformeren wij uw sandbox-prototype in een live, schaalbaar softwarebedrijf.
+Wij dwingen u niet om uw applicatie opnieuw te bouwen. U levert ons de frontend aan die u heeft gegenereerd met Bolt.new, Lovable of Cursor. Wij fungeren als uw "laatste mijl" engineeringteam. We koppelen uw frontend aan een beveiligde Supabase-database met PostgreSQL Row Level Security op elke tabel, schrijven maatwerk Edge Functions voor LLM-routering en richten Stripe-verbruiksfacturatie in - inclusief iDEAL voor de Nederlandse markt. Binnen **1 tot 3 weken** transformeren wij uw sandbox-prototype in een live, schaalbaar softwarebedrijf.
 
 ### 4. Vaste Pakketprijzen en Voorspelbare Tijdlijnen
 
-Traditionele Nederlandse bureaus offreren op basis van open-einde uurtarieven, waardoor een begroting van € 15.000 gaandeweg oploopt tot € 45.000. LaunchStudio hanteert daarentegen vaste projectpakketten: "Launch Ready" voor oprichters die hun backend vóór livegang moeten verharden en "Launch & Grow" voor doorlopend onderhoud en 24/7 monitoring. Onze pakketten variëren doorgaans van **€ 800 tot € 7.500** met een gegarandeerde doorlooptijd van 1 tot 3 weken — zie onze [prijscalculator](https://launchstudio.eu/nl/#calculator) voor een heldere inschatting.
+Traditionele Nederlandse bureaus offreren op basis van open-einde uurtarieven, waardoor een begroting van € 15.000 gaandeweg oploopt tot € 45.000. LaunchStudio hanteert daarentegen vaste projectpakketten: "Launch Ready" voor oprichters die hun backend vóór livegang moeten verharden en "Launch & Grow" voor doorlopend onderhoud en 24/7 monitoring. Onze pakketten variëren doorgaans van **€ 800 tot € 7.500** met een gegarandeerde doorlooptijd van 1 tot 3 weken - zie onze [prijscalculator](https://launchstudio.eu/nl/#calculator) voor een heldere inschatting.
 
 ## Wat Dit Betekent voor Uw Gesprekken met Investeerders
 
@@ -87,7 +87,7 @@ Omdat wij opereren als een Nederlandse vennootschap gevestigd aan de Herengracht
 
 **Resultaat:** Pieter verkreeg exact dezelfde enterprise-beveiliging als bij het Amsterdamse bureau, maar tegen een fractie van de prijs. De app was binnen 3 weken live. Pieter sloot direct een contract met een middelgroot accountantskantoor, die de data-audit goedkeurde puur omdat de backend was gebouwd door een gerenommeerd Nederlands technologiebedrijf. *"LaunchStudio gaf me het beste van twee werelden: Nederlandse juridische zekerheid en betaalbare enterprise-kwaliteit."*
 
-**Kosten & Tijdlijn:** €4.500 (Beveiligde Database & iDEAL Betalingsintegratie) — binnen 15 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €4.500 (Beveiligde Database & iDEAL Betalingsintegratie) - binnen 15 werkdagen live opgeleverd.
 
 ---
 

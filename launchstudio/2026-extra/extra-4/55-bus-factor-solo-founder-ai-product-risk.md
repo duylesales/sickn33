@@ -31,43 +31,43 @@ Target Persona: AI-Native Founder
 }
 </script>
 
-"Bus factor" is an old engineering term for a blunt question: how many people would need to get hit by a bus before your project stops functioning? For most solo AI-native founders, the honest answer is one. Not because they haven't hired anyone yet — that's normal at this stage — but because nobody, including a co-founder, a contractor, or a spouse, could log into the database, the domain registrar, or the payment provider if the founder simply couldn't respond for a few weeks.
+"Bus factor" is an old engineering term for a blunt question: how many people would need to get hit by a bus before your project stops functioning? For most solo AI-native founders, the honest answer is one. Not because they haven't hired anyone yet - that's normal at this stage - but because nobody, including a co-founder, a contractor, or a spouse, could log into the database, the domain registrar, or the payment provider if the founder simply couldn't respond for a few weeks.
 
 ## This isn't about dying, it's about a bad month
 
-The bus factor conversation tends to get dismissed because founders picture something dramatic and unlikely. The realistic version is much more mundane: a surgery with a longer recovery than expected, a family emergency that requires being offline and unreachable, even just a phone lost or stolen with your only authenticator app on it. None of these are edge cases in a person's life — they're the kind of thing that happens to almost everyone eventually. The question is only whether your product can survive it, or whether an outage, an expiring domain, or a failed payment run just sits there unresolved because the one person who could fix it isn't reachable.
+The bus factor conversation tends to get dismissed because founders picture something dramatic and unlikely. The realistic version is much more mundane: a surgery with a longer recovery than expected, a family emergency that requires being offline and unreachable, even just a phone lost or stolen with your only authenticator app on it. None of these are edge cases in a person's life - they're the kind of thing that happens to almost everyone eventually. The question is only whether your product can survive it, or whether an outage, an expiring domain, or a failed payment run just sits there unresolved because the one person who could fix it isn't reachable.
 
-For an AI-built product, this risk is often worse than for a traditionally built one, not better. Founders who build fast with Lovable, Bolt, or Cursor tend to move through setup screens quickly — creating the database, registering the domain, connecting Stripe — using their own personal accounts and their own email address for everything, because at the time, "add a second admin" felt like a task for later. Later rarely comes on its own; it takes a deliberate pass to go back and share access properly.
+For an AI-built product, this risk is often worse than for a traditionally built one, not better. Founders who build fast with Lovable, Bolt, or Cursor tend to move through setup screens quickly - creating the database, registering the domain, connecting Stripe - using their own personal accounts and their own email address for everything, because at the time, "add a second admin" felt like a task for later. Later rarely comes on its own; it takes a deliberate pass to go back and share access properly.
 
 ## What actually breaks when the founder disappears for a while
 
-Three systems are almost always the single points of failure: the production database (if it needs a manual backup, a scaling change, or emergency access, and only one login exists), the domain registrar (a domain quietly expiring because a renewal payment failed and no second person got the notification), and the payment provider account (disputes, failed charges, or a fraud hold that needs a response within days, not weeks). Any one of these going unattended for even two or three weeks can take a live product offline or lock out paying customers — and unlike a code bug, there's no way to "fix it later" once a domain has actually lapsed or an account has actually been suspended for inactivity.
+Three systems are almost always the single points of failure: the production database (if it needs a manual backup, a scaling change, or emergency access, and only one login exists), the domain registrar (a domain quietly expiring because a renewal payment failed and no second person got the notification), and the payment provider account (disputes, failed charges, or a fraud hold that needs a response within days, not weeks). Any one of these going unattended for even two or three weeks can take a live product offline or lock out paying customers - and unlike a code bug, there's no way to "fix it later" once a domain has actually lapsed or an account has actually been suspended for inactivity.
 
-LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and part of what that means practically is treating access continuity as seriously as the code itself. Our team, working from Manifera's Amsterdam office, typically handles this as a structured access audit: listing every system a product depends on, confirming who currently has access, and setting up a second trusted admin — whether that's a co-founder, a family member, or LaunchStudio itself under a support arrangement — so no single person's availability determines whether the product stays online.
+LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and part of what that means practically is treating access continuity as seriously as the code itself. Our team, working from Manifera's Amsterdam office, typically handles this as a structured access audit: listing every system a product depends on, confirming who currently has access, and setting up a second trusted admin - whether that's a co-founder, a family member, or LaunchStudio itself under a support arrangement - so no single person's availability determines whether the product stays online.
 
 ## Closing the gap without hiring anyone
 
-You don't need a team to fix a bus factor of one. You need a documented list of every account your product depends on (hosting, database, domain, payment provider, email, any third-party API keys), a password manager entry or secrets vault shared with at least one other trusted person, and — critically — that second person actually being added as an admin or secondary contact on each service, not just told the password exists somewhere. This is a few hours of unglamorous setup work that most founders keep deferring precisely because nothing is currently on fire. It's worth doing before that changes.
+You don't need a team to fix a bus factor of one. You need a documented list of every account your product depends on (hosting, database, domain, payment provider, email, any third-party API keys), a password manager entry or secrets vault shared with at least one other trusted person, and - critically - that second person actually being added as an admin or secondary contact on each service, not just told the password exists somewhere. This is a few hours of unglamorous setup work that most founders keep deferring precisely because nothing is currently on fire. It's worth doing before that changes.
 
 If you want a second set of eyes on what your product currently depends on, our [contact page](https://launchstudio.eu/en/#contact) is a fast way to start that conversation, and Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) team is structured specifically so a product's continuity never depends on one individual being reachable.
 
 ## Adding a Second Admin Doesn't Fix MFA on Its Own
 
-Adding a second admin to your database, domain registrar, and payment provider closes the most obvious gap, but it can quietly leave a second one in place: two-factor authentication. Most services will happily let you add a second admin account while every high-risk action on that account — a large payout, a domain transfer, a support call proving you're the account owner — still routes its verification step through a phone number or authenticator app that only the founder holds. The second admin can log in. They still can't act, because the step-up check that matters most is tied to a device they don't have.
+Adding a second admin to your database, domain registrar, and payment provider closes the most obvious gap, but it can quietly leave a second one in place: two-factor authentication. Most services will happily let you add a second admin account while every high-risk action on that account - a large payout, a domain transfer, a support call proving you're the account owner - still routes its verification step through a phone number or authenticator app that only the founder holds. The second admin can log in. They still can't act, because the step-up check that matters most is tied to a device they don't have.
 
-This is easy to miss precisely because it doesn't show up when you're just checking "can this person log in." It shows up during the exact emergency the second admin was supposed to cover — a payout needs approving, or a fraud hold needs clearing, and the verification code goes to a phone nobody but the unreachable founder can access. Closing this properly means auditing MFA per service, not just admin access per service: some services support a shared hardware key or multiple registered authenticator devices, others only support recovery codes that need to be stored somewhere the second admin can actually reach.
+This is easy to miss precisely because it doesn't show up when you're just checking "can this person log in." It shows up during the exact emergency the second admin was supposed to cover - a payout needs approving, or a fraud hold needs clearing, and the verification code goes to a phone nobody but the unreachable founder can access. Closing this properly means auditing MFA per service, not just admin access per service: some services support a shared hardware key or multiple registered authenticator devices, others only support recovery codes that need to be stored somewhere the second admin can actually reach.
 
 ```
 Service: Stripe (payment provider)
 Primary admin: Founder (personal email)
-Secondary admin: Added — business partner
-MFA method: Authenticator app (founder's phone only) — ACTION NEEDED
-Backup/recovery codes: Not yet stored in shared vault — ACTION NEEDED
+Secondary admin: Added - business partner
+MFA method: Authenticator app (founder's phone only) - ACTION NEEDED
+Backup/recovery codes: Not yet stored in shared vault - ACTION NEEDED
 
 Service: Domain registrar
 Primary admin: Founder
 Secondary admin: Added
-MFA method: SMS to founder's number — ACTION NEEDED
+MFA method: SMS to founder's number - ACTION NEEDED
 Backup/recovery codes: Stored in shared password manager
 ```
 
@@ -77,18 +77,18 @@ A simple inventory like this, run alongside the admin-access audit, is what turn
 
 ### An AI-Native Founder in Action: Two Weeks Offline, Nobody Else Holding the Keys
 
-Marit Voskuijlen, a founder in Drachten, built RittenLog — a mileage tracking SaaS for small vehicle fleets — using Lovable. Like most solo founders moving fast, she had set up the production database, the domain registration, and the Stripe payment account entirely under her own personal logins, with no second admin on any of them.
+Marit Voskuijlen, a founder in Drachten, built RittenLog - a mileage tracking SaaS for small vehicle fleets - using Lovable. Like most solo founders moving fast, she had set up the production database, the domain registration, and the Stripe payment account entirely under her own personal logins, with no second admin on any of them.
 
 An unplanned two-week hospital stay turned this from a theoretical risk into an active one. During that window, a routine domain renewal payment failed silently, and RittenLog's database began approaching a storage limit that needed manual attention. Nobody else had access to either system, and Marit was unreachable. The product came within days of the domain lapsing entirely, which would have taken every customer's fleet-tracking dashboard offline with no clear path to recovery.
 
-LaunchStudio was brought in once Marit was back online to make sure it couldn't happen again. Our team ran a full access audit across RittenLog's stack, added a second admin account — a trusted business contact Marit designated — to the database, domain registrar, and Stripe account, and set up billing alerts routed to two email addresses instead of one, so a failed payment or approaching limit would never again depend on a single person seeing it in time.
+LaunchStudio was brought in once Marit was back online to make sure it couldn't happen again. Our team ran a full access audit across RittenLog's stack, added a second admin account - a trusted business contact Marit designated - to the database, domain registrar, and Stripe account, and set up billing alerts routed to two email addresses instead of one, so a failed payment or approaching limit would never again depend on a single person seeing it in time.
 
 **Result:** RittenLog now has two verified admins on every critical system, and a documented access list Marit updates whenever a new service gets added.
 
 > *"I built RittenLog to help other people manage their fleets, and it never occurred to me that I was the single point of failure for my own company."*
-> — **Marit Voskuijlen, Founder, RittenLog (Drachten)**
+> - **Marit Voskuijlen, Founder, RittenLog (Drachten)**
 
-**Cost & Timeline:** €650 (access audit and second-admin setup across hosting, database, domain, and payment provider) — completed in 4 business days.
+**Cost & Timeline:** €650 (access audit and second-admin setup across hosting, database, domain, and payment provider) - completed in 4 business days.
 
 ---
 
@@ -96,27 +96,27 @@ LaunchStudio was brought in once Marit was back online to make sure it couldn't 
 
 ### Do I need a co-founder to fix my bus factor?
 
-No — a trusted business contact, a family member, or even an arrangement with LaunchStudio for ongoing support can serve as the second admin; what matters is that someone besides you can act if needed.
+No - a trusted business contact, a family member, or even an arrangement with LaunchStudio for ongoing support can serve as the second admin; what matters is that someone besides you can act if needed.
 
 ### What's the minimum list of systems I should check first?
 
-Production database access, domain registrar, payment provider (Stripe or similar), and your primary hosting account — these four are the ones most likely to cause an irreversible problem if left unattended.
+Production database access, domain registrar, payment provider (Stripe or similar), and your primary hosting account - these four are the ones most likely to cause an irreversible problem if left unattended.
 
 ### How does LaunchStudio typically structure this kind of audit?
 
-Our team, working out of Manifera's Amsterdam office, lists every dependency a product has, confirms current access, and adds a documented second admin to each critical system — a process built from Manifera's broader experience supporting production systems for enterprise clients.
+Our team, working out of Manifera's Amsterdam office, lists every dependency a product has, confirms current access, and adds a documented second admin to each critical system - a process built from Manifera's broader experience supporting production systems for enterprise clients.
 
 ### Isn't a password manager enough to solve this?
 
-A password manager solves the "someone else could log in" problem but not the "someone else is actually authorized on the account" problem — payment providers and registrars often flag or block access from an unrecognized login even with the correct password, so a proper second admin needs to be added directly.
+A password manager solves the "someone else could log in" problem but not the "someone else is actually authorized on the account" problem - payment providers and registrars often flag or block access from an unrecognized login even with the correct password, so a proper second admin needs to be added directly.
 
 ### Does this apply even if I already have a small team?
 
-Yes, though less urgently — the same audit is worth running for any team where critical account access is concentrated in one person, even if that person isn't the only employee.
+Yes, though less urgently - the same audit is worth running for any team where critical account access is concentrated in one person, even if that person isn't the only employee.
 
 ### If I've added a second admin, is my bus factor problem actually solved?
 
-Not entirely — many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself.
+Not entirely - many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself.
 
 <script type="application/ld+json">
 {
@@ -126,12 +126,12 @@ Not entirely — many services still route high-risk actions like large payouts 
     {
       "@type": "Question",
       "name": "Do I need a co-founder to fix my bus factor?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No — a trusted business contact, a family member, or an ongoing support arrangement with LaunchStudio can serve as the second admin; what matters is that someone besides you can act if needed." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No - a trusted business contact, a family member, or an ongoing support arrangement with LaunchStudio can serve as the second admin; what matters is that someone besides you can act if needed." }
     },
     {
       "@type": "Question",
       "name": "What's the minimum list of systems I should check first?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Production database access, domain registrar, payment provider, and your primary hosting account — these are the ones most likely to cause an irreversible problem if left unattended." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Production database access, domain registrar, payment provider, and your primary hosting account - these are the ones most likely to cause an irreversible problem if left unattended." }
     },
     {
       "@type": "Question",
@@ -141,17 +141,17 @@ Not entirely — many services still route high-risk actions like large payouts 
     {
       "@type": "Question",
       "name": "Isn't a password manager enough to solve this?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A password manager solves the login problem but not the authorization problem — payment providers and registrars often flag access from an unrecognized login, so a proper second admin needs to be added directly to each account." }
+      "acceptedAnswer": { "@type": "Answer", "text": "A password manager solves the login problem but not the authorization problem - payment providers and registrars often flag access from an unrecognized login, so a proper second admin needs to be added directly to each account." }
     },
     {
       "@type": "Question",
       "name": "Does this apply even if I already have a small team?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, though less urgently — the same audit is worth running for any team where critical account access is concentrated in one person." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, though less urgently - the same audit is worth running for any team where critical account access is concentrated in one person." }
     },
     {
       "@type": "Question",
       "name": "If I've added a second admin, is my bus factor problem actually solved?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not entirely — many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Not entirely - many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself." }
     }
   ]
 }

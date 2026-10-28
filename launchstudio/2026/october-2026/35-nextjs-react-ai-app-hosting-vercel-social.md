@@ -1,4 +1,4 @@
-🔥 Sophia built a prototype using **Bolt** — sophia, a former teacher in utrecht, used **bolt, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Sophia built a prototype using **Bolt** - sophia, a former teacher in utrecht, used **bolt, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sophia's application achieved production readiness: The app compiled flawlessly on the first try. We linked her custom domain (`quizgen.nl`), configured the DNS records, and Sophia was live within 48 hours. She launched the app to her teacher network, securing 150 paid subscribers in the first week. I almost abandoned the project because I couldn't get it to launch. LaunchStudio handled the server nightmare so I could focus on selling. (€900 (Rapid Vercel Deployment & GitHub Configuration) — completed in 2 business days.). 🚀
+Sophia's application achieved production readiness: The app compiled flawlessly on the first try. We linked her custom domain (`quizgen.nl`), configured the DNS records, and Sophia was live within 48 hours. She launched the app to her teacher network, securing 150 paid subscribers in the first week. I almost abandoned the project because I couldn't get it to launch. LaunchStudio handled the server nightmare so I could focus on selling. (€900 (Rapid Vercel Deployment & GitHub Configuration) - completed in 2 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/nextjs-react-ai-app-hosting-vercel
 

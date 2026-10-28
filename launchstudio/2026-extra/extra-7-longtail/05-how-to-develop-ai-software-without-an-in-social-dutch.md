@@ -1,4 +1,4 @@
-🚨 Elise Dubois runt een driekoppig brandingbureau in Antwerpen. Een klant kwam binnen met "FleetTrack," een logistiek dashboard dat ze zelf in Lovable hadden gebouwd, en vroeg om het binnen een maand productieklaar te maken voor een pilot met een regionaal bezorgbedrijf — real-time datasynchronisatie, rolgebaseerde rechten, veilige hardware-API-koppelingen. Elise had al mondeling toegezegd voordat ze zich realiseerde dat haar team voor dit alles geen interne backend-engineer had. 😳
+🚨 Elise Dubois runt een driekoppig brandingbureau in Antwerpen. Een klant kwam binnen met "FleetTrack," een logistiek dashboard dat ze zelf in Lovable hadden gebouwd, en vroeg om het binnen een maand productieklaar te maken voor een pilot met een regionaal bezorgbedrijf - real-time datasynchronisatie, rolgebaseerde rechten, veilige hardware-API-koppelingen. Elise had al mondeling toegezegd voordat ze zich realiseerde dat haar team voor dit alles geen interne backend-engineer had. 😳
 
 Ja zeggen tegen de klant betekent niet dat u ja moet zeggen tegen alles intern bouwen. 🧠
 
@@ -11,7 +11,7 @@ Ja zeggen tegen de klant betekent niet dat u ja moet zeggen tegen alles intern b
 ✅ De backend, rolgebaseerde autorisatie en hardware-API-integratie volgens specificatie gebouwd, geleverd als gedocumenteerde code in eigendom van de klant
 ✅ Het voltooide werk gepresenteerd als de levering van haar eigen bureau, met een overdrachtsdocument waar haar team zelfverzekerd over kon spreken
 
-Bij **LaunchStudio** krijgen bureaus Manifera's engineeringcapaciteit achter hun eigen merk en klantrelatie — 160+ projecten opgeleverd, mede gecoördineerd via onze hub in Singapore. 🛡️
+Bij **LaunchStudio** krijgen bureaus Manifera's engineeringcapaciteit achter hun eigen merk en klantrelatie - 160+ projecten opgeleverd, mede gecoördineerd via onze hub in Singapore. 🛡️
 
 Elise's resultaat: haar bureau haalde de deadline, en de klant heeft nooit geweten dat er een tweede team bij betrokken was. 🚀
 

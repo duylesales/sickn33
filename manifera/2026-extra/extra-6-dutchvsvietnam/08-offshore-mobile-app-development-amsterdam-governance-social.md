@@ -1,7 +1,7 @@
 🚨 If your App Store listing got pulled tomorrow over a data-handling violation, whose contract would say they were accountable for catching it before it shipped? 📱⚙️
 
 **The Pain Points:**
-❌ **SDK Data Exposure, Nobody Owns It:** A dozen third-party SDKs — analytics, crash reporting, push, ads — each transmitting user data, with no one flagging GDPR implications before integration.
+❌ **SDK Data Exposure, Nobody Owns It:** A dozen third-party SDKs - analytics, crash reporting, push, ads - each transmitting user data, with no one flagging GDPR implications before integration.
 ❌ **Vendor-Controlled App Store Accounts:** No client control over listing continuity or the ability to respond directly to a compliance flag.
 ❌ **A Pulled Listing Costs Real Money:** €25,000–€70,000 in lost revenue and remediation, with reinstatement not guaranteed on the first try.
 
@@ -10,7 +10,7 @@
 ✅ **Amsterdam Strategic Governance:** The Dutch entity reviews every submission before it goes live and holds the contractual IP assignment.
 ✅ **Vietnam Execution Velocity:** The Ho Chi Minh City pod builds and maintains the app under that structure, release after release.
 
-Know who's accountable for your app store presence — before Apple or Google asks first. 🛡️
+Know who's accountable for your app store presence - before Apple or Google asks first. 🛡️
 
 👉 Read our full deep dive on offshore mobile app development amsterdam governance: https://www.manifera.com/blog/offshore-mobile-app-development-amsterdam-governance
 

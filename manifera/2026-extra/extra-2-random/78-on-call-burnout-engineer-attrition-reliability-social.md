@@ -2,12 +2,12 @@
 
 **The Pain Points:**
 ❌ **Recurring Pages, Never Prioritized:** Each incident resolves fast enough to never win a sprint planning fight.
-❌ **Your Best Engineers Pay the Price:** The most capable people get pulled in fastest — and burn out first.
+❌ **Your Best Engineers Pay the Price:** The most capable people get pulled in fastest - and burn out first.
 ❌ **Retrospectives That Repeat Themselves:** Same recommended fix, three incidents running, never implemented.
 
 **The Manifera Solution:**
 ✅ **Pages Tracked by Root Cause:** See exactly which unresolved issues are draining the rotation.
-✅ **Automatic Escalation Threshold:** Page on-call 3+ times a month, it becomes a mandatory fix — not optional.
+✅ **Automatic Escalation Threshold:** Page on-call 3+ times a month, it becomes a mandatory fix - not optional.
 ✅ **Action Items Tracked to Completion:** No more retrospectives that repeat themselves quarter after quarter.
 
 You don't lose engineers to salary. You lose them to 2 AM pages for bugs everyone already knew about. 🛡️

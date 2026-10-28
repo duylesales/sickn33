@@ -1,4 +1,4 @@
-🔥 William built a prototype using **Lovable** — william, a legal assistant, used **lovable** to build a pdf search app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 William built a prototype using **Lovable** - william, a legal assistant, used **lovable** to build a pdf search app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-William's application achieved silky-smooth performance: Custom data search relevance rose by 85%, retaining B2B customers. (€2,900 (Vector Search Tuning) — production-ready and deployed in 6 business days.). 🚀
+William's application achieved silky-smooth performance: Custom data search relevance rose by 85%, retaining B2B customers. (€2,900 (Vector Search Tuning) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/death-of-thin-wrapper-startup-ai
 

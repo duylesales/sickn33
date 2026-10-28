@@ -20,25 +20,25 @@ target_persona: "CFO"
 }
 </script>
 
-A growing number of software companies in Amsterdam aren't purely local delivery shops anymore — they're Dutch entities that govern offshore execution elsewhere. A CFO evaluating one needs to know whether that's a genuine structural advantage or a rebranding exercise sitting on top of an ordinary staffing arrangement.
+A growing number of software companies in Amsterdam aren't purely local delivery shops anymore - they're Dutch entities that govern offshore execution elsewhere. A CFO evaluating one needs to know whether that's a genuine structural advantage or a rebranding exercise sitting on top of an ordinary staffing arrangement.
 
-**The Pain:** A CFO comparing software companies in Amsterdam is increasingly running into a hybrid category: firms headquartered in Amsterdam whose actual engineering delivery happens elsewhere, governed — allegedly — from the Netherlands. The pitch sounds compelling: Dutch accountability, offshore economics. What's much harder to verify from the outside is whether the governance is a real, functioning structure or a thin compliance layer sitting on top of a cost-driven staffing deal.
+**The Pain:** A CFO comparing software companies in Amsterdam is increasingly running into a hybrid category: firms headquartered in Amsterdam whose actual engineering delivery happens elsewhere, governed - allegedly - from the Netherlands. The pitch sounds compelling: Dutch accountability, offshore economics. What's much harder to verify from the outside is whether the governance is a real, functioning structure or a thin compliance layer sitting on top of a cost-driven staffing deal.
 
-**The Agitation:** A CFO who signs with a hybrid firm whose "governance" is nominal rather than functional inherits all the risk of ungoverned offshore delivery while paying a premium for the Amsterdam brand that isn't actually doing anything — a specific and expensive mistake, because it combines the higher cost structure of a Dutch-headquartered vendor with the accountability gaps of an ungoverned offshore one, typically costing 20-35% more than either a purely local or a properly governed hybrid alternative for the same delivery risk profile.
+**The Agitation:** A CFO who signs with a hybrid firm whose "governance" is nominal rather than functional inherits all the risk of ungoverned offshore delivery while paying a premium for the Amsterdam brand that isn't actually doing anything - a specific and expensive mistake, because it combines the higher cost structure of a Dutch-headquartered vendor with the accountability gaps of an ungoverned offshore one, typically costing 20-35% more than either a purely local or a properly governed hybrid alternative for the same delivery risk profile.
 
 ## How to Tell Real Hybrid Governance From a Rebranded Staffing Deal
 
-The hybrid model — Dutch governance layered over offshore execution — is structurally sound when built correctly, and it's become common enough in the Amsterdam software company market that a CFO needs a reliable way to separate genuine implementations from opportunistic ones riding the trend. There are four concrete tests.
+The hybrid model - Dutch governance layered over offshore execution - is structurally sound when built correctly, and it's become common enough in the Amsterdam software company market that a CFO needs a reliable way to separate genuine implementations from opportunistic ones riding the trend. There are four concrete tests.
 
-The first test is org chart transparency. A genuine hybrid firm can show a CFO exactly who sits in the Amsterdam governance function, what their actual role is day to day, and how that differs from delivery-team responsibilities. A rebranded staffing deal typically can't produce this org chart cleanly, because the "governance" function is really just account management wearing a different title — the person nominally responsible for oversight is the same person managing the commercial relationship, with no separated technical authority.
+The first test is org chart transparency. A genuine hybrid firm can show a CFO exactly who sits in the Amsterdam governance function, what their actual role is day to day, and how that differs from delivery-team responsibilities. A rebranded staffing deal typically can't produce this org chart cleanly, because the "governance" function is really just account management wearing a different title - the person nominally responsible for oversight is the same person managing the commercial relationship, with no separated technical authority.
 
 The second test is what the governance function actually reviews and how often. Ask specifically: does someone in Amsterdam review architecture decisions before they're built, or only after, in a retrospective status report? Pre-build review is functional governance; after-the-fact reporting is not governance, it's documentation. This single question, asked directly in a sales conversation, separates the two categories faster than any other.
 
-The third test is escalation authority. In a genuine hybrid model, if the Amsterdam governance function and the offshore delivery team disagree on a technical approach, Amsterdam's call is binding — that's what makes it governance rather than commentary. In a rebranded deal, the "governance" function typically has no real standing to override delivery decisions, because delivery, not governance, is where the firm's actual profit center and internal power sit.
+The third test is escalation authority. In a genuine hybrid model, if the Amsterdam governance function and the offshore delivery team disagree on a technical approach, Amsterdam's call is binding - that's what makes it governance rather than commentary. In a rebranded deal, the "governance" function typically has no real standing to override delivery decisions, because delivery, not governance, is where the firm's actual profit center and internal power sit.
 
 The fourth test, the one most directly relevant to a CFO, is pricing structure transparency. A genuine hybrid firm can break down what portion of the invoice funds Amsterdam governance versus offshore execution, because the two are genuinely separate cost centers with separate functions. A rebranded deal usually presents a single blended rate that obscures whether any meaningful governance premium is actually being spent on governance at all, versus simply being margin.
 
-A CFO who runs a shortlist of Amsterdam hybrid firms through these four tests — org chart, review timing, escalation authority, pricing transparency — will find the answers vary far more than the marketing materials suggest, and that variance is exactly where real risk differentiation lives.
+A CFO who runs a shortlist of Amsterdam hybrid firms through these four tests - org chart, review timing, escalation authority, pricing transparency - will find the answers vary far more than the marketing materials suggest, and that variance is exactly where real risk differentiation lives.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -51,12 +51,12 @@ This is Dutch Management × Vietnamese Mastery, structured to pass all four test
 
 ### Alpenkredit Digital GmbH, Vienna
 
-Alpenkredit Digital, a Vienna-based consumer lending platform, had signed with an Amsterdam-headquartered firm marketed as a hybrid governance model, paying a rate roughly 25% above pure offshore pricing for the promised oversight. Eleven months in, a security review revealed no documented pre-build architecture reviews had ever occurred — the "governance" team turned out to be the same account managers handling commercial relations, with no separated technical review function at all.
+Alpenkredit Digital, a Vienna-based consumer lending platform, had signed with an Amsterdam-headquartered firm marketed as a hybrid governance model, paying a rate roughly 25% above pure offshore pricing for the promised oversight. Eleven months in, a security review revealed no documented pre-build architecture reviews had ever occurred - the "governance" team turned out to be the same account managers handling commercial relations, with no separated technical review function at all.
 
 Manifera replaced the engagement with genuine hybrid governance: a named Amsterdam technical lead with explicit pre-build review authority, a documented escalation process with real binding power, and a transparent invoice breakdown showing governance as a distinct, verifiable line item. Alpenkredit's next security review, six months later, found a fully auditable trail of architectural decisions and sign-offs for the first time in the engagement's history.
 
 > *"We were paying a governance premium for eleven months without a single governance function actually happening. The difference once it was real wasn't subtle."*
-> — **CFO, Alpenkredit Digital GmbH, Vienna**
+> - **CFO, Alpenkredit Digital GmbH, Vienna**
 
 ## Rebranded Staffing Deal vs. Manifera Genuine Hybrid Governance
 

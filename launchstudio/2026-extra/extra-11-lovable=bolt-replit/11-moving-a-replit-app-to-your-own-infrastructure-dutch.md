@@ -30,7 +30,7 @@ Het is goed om eerlijk te zijn, want het argument om te vertrekken is beslist ni
 
 Replit neemt alle initiële configuratierompslomp weg: een ontwikkelomgeving die direct klaarstaat zodra u hem opent, afhankelijkheden die automatisch worden geïnstalleerd, een draaiend proces, een publieke URL, een kant-en-klare database en samenwerking zonder dat iemand iets hoeft in te stellen. Voor bouwen, leren, prototypen en demonstreren is dat een ongekende drempelverlaging. Voor een oprichter die simpelweg wil valideren of een idee levensvatbaar is, is het vaak de allersnelste route.
 
-De reden om te verhuizen is geen gebrek aan kwaliteit. Het is dat exact dezelfde ontwerpkeuzes die configuratie overbodig maken, tevens uw controle wegnemen — en controle is precies wat u nodig heeft zodra externe klanten afhankelijk worden van uw software.
+De reden om te verhuizen is geen gebrek aan kwaliteit. Het is dat exact dezelfde ontwerpkeuzes die configuratie overbodig maken, tevens uw controle wegnemen - en controle is precies wat u nodig heeft zodra externe klanten afhankelijk worden van uw software.
 
 ## De Drie Redenen Waarom Men Daadwerkelijk Verhuist
 
@@ -44,7 +44,7 @@ Twee slechte redenen verdienen het ook om genoemd te worden: verhuizen omdat een
 
 ## Wat Vlekkeloos Meeverhuist
 
-**Uw broncode.** Die is van uzelf, het is gewone code, en deze verhuist simpelweg door hem te pushen naar een eigen git-repository (zoals GitHub of GitLab) onder uw eigen beheer. Staat de code daar nog niet met een heldere geschiedenis? Begin dan daar — dat loont altijd, ongeacht uw uiteindelijke hostingkeuze.
+**Uw broncode.** Die is van uzelf, het is gewone code, en deze verhuist simpelweg door hem te pushen naar een eigen git-repository (zoals GitHub of GitLab) onder uw eigen beheer. Staat de code daar nog niet met een heldere geschiedenis? Begin dan daar - dat loont altijd, ongeacht uw uiteindelijke hostingkeuze.
 
 **De inhoud van uw database,** mits u deze netjes kunt exporteren: tabellen, rijen en datatypes. Het dataformaat (SQL) is universeel overdraagbaar, zelfs wanneer de hosting dat niet is.
 
@@ -54,13 +54,13 @@ Twee slechte redenen verdienen het ook om genoemd te worden: verhuizen omdat een
 
 ## Wat Níet Meeverhuist en Opnieuw Moet Worden Ingericht
 
-**De serveromgeving zelf.** De specifieke taalversie, runtime-pakketten, systeembibliotheken en het opstartcommando — dat werd allemaal door Replit geregeld via eigen mechanismen. Op uw eigen infrastructuur wordt dit expliciet: een containerdefinitie (zoals Docker) of een build-configuratie die u zelf beheert in de repository. Dit is het grootste afzonderlijke onderdeel van de migratie en het element dat oprichters stelselmatig onderschatten.
+**De serveromgeving zelf.** De specifieke taalversie, runtime-pakketten, systeembibliotheken en het opstartcommando - dat werd allemaal door Replit geregeld via eigen mechanismen. Op uw eigen infrastructuur wordt dit expliciet: een containerdefinitie (zoals Docker) of een build-configuratie die u zelf beheert in de repository. Dit is het grootste afzonderlijke onderdeel van de migratie en het element dat oprichters stelselmatig onderschatten.
 
-**Geheimenbeheer (secrets management).** Omgevingsvariabelen die u heeft ingevoerd in de webinterface van het platform reizen niet automatisch mee. Ze moeten opnieuw worden aangemaakt in het geheimenbeheer van uw nieuwe hostingprovider — en dit is het uitgelezen moment om te controleren of er sleutels tussen zitten die direct geroteerd moeten worden.
+**Geheimenbeheer (secrets management).** Omgevingsvariabelen die u heeft ingevoerd in de webinterface van het platform reizen niet automatisch mee. Ze moeten opnieuw worden aangemaakt in het geheimenbeheer van uw nieuwe hostingprovider - en dit is het uitgelezen moment om te controleren of er sleutels tussen zitten die direct geroteerd moeten worden.
 
 **Het 24/7 draaiend houden (process management).** Of uw proces altijd actief blijft, hoe het automatisch herstart na een geheugenprobleem en wat er gebeurt onder piekdrukte: dat werd afgehandeld door het platformmodel. Uw nieuwe host hanteert een eigen model, en dat werkt zelden identiek.
 
-**Toegangsbeheer en samenwerking.** Wie het project mag inzien en bewerken was een platforminstelling. Dit splitst zich nu uit in repository-rechten, deployment-permissies en cloudprovider-rollen — drie afzonderlijke lagen in plaats van één knop.
+**Toegangsbeheer en samenwerking.** Wie het project mag inzien en bewerken was een platforminstelling. Dit splitst zich nu uit in repository-rechten, deployment-permissies en cloudprovider-rollen - drie afzonderlijke lagen in plaats van één knop.
 
 **Platformspecifieke code-aanroepen.** Directe aanroepen naar Replit-specifieke storage, key-value stores of omgevingshelpers moeten worden vervangen door open standaarden. Doorzoek uw codebase hierop vóórdat u de planning maakt; ze zijn eenvoudig aan te passen, maar worden gemakkelijk over het hoofd gezien totdat de app in productie crasht.
 
@@ -68,7 +68,7 @@ Twee slechte redenen verdienen het ook om genoemd te worden: verhuizen omdat een
 
 Als uw data leeft in een door het platform beheerde database, beslis dan eerst waar die naartoe verhuist vóórdat u iets anders aanraakt, want alle overige keuzes hangen hiervan af.
 
-Voor de meeste vroege SaaS-producten is een beheerde PostgreSQL-dienst — zoals Supabase, Neon of een beheerde database bij een Europese cloudprovider — in een doelbewust gekozen EU-regio (zoals Frankfurt, Amsterdam of Ierland) de meest logische bestemming. Dat garandeert u automatische back-ups, connection pooling, controle over de data-locatie en een onafhankelijk exportpad dat niet vastzit aan één leverancier.
+Voor de meeste vroege SaaS-producten is een beheerde PostgreSQL-dienst - zoals Supabase, Neon of een beheerde database bij een Europese cloudprovider - in een doelbewust gekozen EU-regio (zoals Frankfurt, Amsterdam of Ierland) de meest logische bestemming. Dat garandeert u automatische back-ups, connection pooling, controle over de data-locatie en een onafhankelijk exportpad dat niet vastzit aan één leverancier.
 
 Voer altijd eerst een generale repetitie uit: exporteer de data, herstel deze in de nieuwe database-omgeving, laat een testversie van de app er een dag op draaien en inspecteer het resultaat. Deze repetitie legt afwijkende datatypes, ontbrekende indexen en encodingsfouten bloot op een moment dat er niets op het spel staat. Doet u dit pas op de dag van livegang, dan verandert een migratie gegarandeerd in een nachtmerrieweekend.
 
@@ -76,7 +76,7 @@ Voer altijd eerst een generale repetitie uit: exporteer de data, herstel deze in
 
 **Stap 1: Plaats de code in uw eigen git-repository** met een schone commit-geschiedenis en een duidelijke README die beschrijft hoe het project lokaal draait.
 
-**Stap 2: Maak de applicatie draaiend op een neutrale plek** — lokaal op uw laptop of in een container — met behulp van expliciete configuratiebestanden in plaats van platformmagie. Als de app uitsluitend op Replit kan starten, is deze stap nog niet afgerond.
+**Stap 2: Maak de applicatie draaiend op een neutrale plek** - lokaal op uw laptop of in een container - met behulp van expliciete configuratiebestanden in plaats van platformmagie. Als de app uitsluitend op Replit kan starten, is deze stap nog niet afgerond.
 
 **Stap 3: Richt de nieuwe productiedatabase in en test de data-import.** Verifieer handmatig het aantal rijen en controleer een steekproef van gevoelige klantrecords.
 
@@ -123,14 +123,14 @@ Sander Vos exploiteerde Leerlijn: een online platform voor examenvorbereidingscu
 
 De verhuizing werd getriggerd door één enkele inkoopvraag van een middelbare school in Arnhem die licenties wilde afnemen voor een hele jaarlaag: waar worden de leerlinggegevens fysiek bewaard, en wie heeft toegang tot die servers? Sander kon geen van beide vragen beantwoorden in een vorm die de Functionaris Gegevensbescherming van de school accepteerde.
 
-De migratie nam elf werkdagen in beslag: de omgeving werd expliciet gedefinieerd met een containerdefinitie en build-pipeline, de database werd geëxporteerd en hersteld in een beheerde PostgreSQL-omgeving binnen de EU met dagelijkse automatische back-ups en een bewezen hersteltest, zeventien omgevingsvariabelen werden veilig ondergebracht — waarvan drie API-sleutels die ooit in een gedeelde werkruimte met een freelancer hadden gestaan direct werden geroteerd — en deployments werden gekoppeld aan een geautomatiseerde git-pipeline met staging en one-click rollback. De oude Replit-omgeving bleef een week lang als alleen-lezen fallback actief.
+De migratie nam elf werkdagen in beslag: de omgeving werd expliciet gedefinieerd met een containerdefinitie en build-pipeline, de database werd geëxporteerd en hersteld in een beheerde PostgreSQL-omgeving binnen de EU met dagelijkse automatische back-ups en een bewezen hersteltest, zeventien omgevingsvariabelen werden veilig ondergebracht - waarvan drie API-sleutels die ooit in een gedeelde werkruimte met een freelancer hadden gestaan direct werden geroteerd - en deployments werden gekoppeld aan een geautomatiseerde git-pipeline met staging en one-click rollback. De oude Replit-omgeving bleef een week lang als alleen-lezen fallback actief.
 
-**Resultaat:** de privacyofficer van de scholengroep keurde het platform twee weken later officieel goed, waarna Leerlijn haar eerste grote institutionele onderwijscontract tekende — een deal die meer dan het viervoudige van de complete migratiekosten opbracht.
+**Resultaat:** de privacyofficer van de scholengroep keurde het platform twee weken later officieel goed, waarna Leerlijn haar eerste grote institutionele onderwijscontract tekende - een deal die meer dan het viervoudige van de complete migratiekosten opbracht.
 
 > *"Er was technisch niets stuk. Ik kon alleen geen antwoord geven op de vraag die elke serieuze zakelijke klant me vroeg of laat zou gaan stellen."*
-> — **Sander Vos, Oprichter, Leerlijn (Arnhem)**
+> - **Sander Vos, Oprichter, Leerlijn (Arnhem)**
 
-**Kosten & Doorlooptijd:** €3.600 (volledige migratie, databasemigratie naar EU-regio, secrets-rotatie, CI/CD-pipeline) — voltooid in 11 werkdagen.
+**Kosten & Doorlooptijd:** €3.600 (volledige migratie, databasemigratie naar EU-regio, secrets-rotatie, CI/CD-pipeline) - voltooid in 11 werkdagen.
 
 ---
 

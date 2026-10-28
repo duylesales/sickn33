@@ -20,11 +20,11 @@ target_persona: "CFO"
 }
 </script>
 
-A region built around managing water carefully for centuries — where the margin for a structural mistake has always been thin — is a fitting place to ask the last question in any offshore development partner evaluation: not "can they build it," but "what happens when something goes wrong, and who is actually accountable when it does."
+A region built around managing water carefully for centuries - where the margin for a structural mistake has always been thin - is a fitting place to ask the last question in any offshore development partner evaluation: not "can they build it," but "what happens when something goes wrong, and who is actually accountable when it does."
 
-**The Pain:** A CFO at a water-management technology company in Steenwijk — a historic Overijssel wetland town in the Kop van Overijssel, where centuries of careful water-level engineering have shaped both the landscape and the local engineering culture — is making the final decision on an offshore development partner for a flood-monitoring and drainage-coordination platform, and has collected plenty of vendor information without a single consolidated framework for making the actual call.
+**The Pain:** A CFO at a water-management technology company in Steenwijk - a historic Overijssel wetland town in the Kop van Overijssel, where centuries of careful water-level engineering have shaped both the landscape and the local engineering culture - is making the final decision on an offshore development partner for a flood-monitoring and drainage-coordination platform, and has collected plenty of vendor information without a single consolidated framework for making the actual call.
 
-**The Agitation:** A CFO staring at three vendor proposals, each strong in a different dimension — one on cost, one on technical demo polish, one on cultural fit — without a unifying framework risks making the final decision on whichever dimension was most recently and persuasively pitched, rather than on the structural factors that actually predict whether the engagement succeeds eighteen months in.
+**The Agitation:** A CFO staring at three vendor proposals, each strong in a different dimension - one on cost, one on technical demo polish, one on cultural fit - without a unifying framework risks making the final decision on whichever dimension was most recently and persuasively pitched, rather than on the structural factors that actually predict whether the engagement succeeds eighteen months in.
 
 ## The Consolidated Checklist for the Final Decision
 
@@ -36,16 +36,16 @@ The second is contractual and jurisdictional clarity: where does legal accountab
 
 The third is cost structure honesty: does the quoted number include governance and true seniority composition, or does it look artificially low because oversight and quality verification are unbudgeted line items waiting to surface later, either as scope creep or as quality problems discovered too late to cheaply fix.
 
-The fourth is continuity: does the partner demonstrate genuine engineer retention and institutional knowledge preservation, with a documented plan for onboarding, ramp-up, and — just as importantly — a clean transition path if the relationship ever needs to end.
+The fourth is continuity: does the partner demonstrate genuine engineer retention and institutional knowledge preservation, with a documented plan for onboarding, ramp-up, and - just as importantly - a clean transition path if the relationship ever needs to end.
 
 A CFO who scores every vendor proposal against these four dimensions consistently, rather than being persuaded by whichever pitch was strongest on a single axis, makes a decision that reflects the actual determinants of long-term engagement success.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads provide the independent governance layer, contractual clarity, and honest cost structure that answer the first three checklist questions directly, before a CFO has to ask twice.
-- **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod delivers the engineer retention and institutional continuity that answers the fourth — a stable, accountable execution layer built for a multi-year relationship, not a single project.
+- **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod delivers the engineer retention and institutional continuity that answers the fourth - a stable, accountable execution layer built for a multi-year relationship, not a single project.
 
-This is Dutch Management × Vietnamese Mastery — the structure this entire series has traced across a hundred articles, from Amsterdam's Zuidas to a water-management platform in Steenwijk: European governance discipline paired with deep, retained Southeast Asian engineering talent. See the full model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - the structure this entire series has traced across a hundred articles, from Amsterdam's Zuidas to a water-management platform in Steenwijk: European governance discipline paired with deep, retained Southeast Asian engineering talent. See the full model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -56,7 +56,7 @@ Kop van Overijssel Waterbeheer B.V., a water-management technology company based
 The consolidated scoring revealed the polished-demo vendor had no independent governance layer and vendor-entity-only IP terms, and the cheapest vendor's quote excluded any quality-verification function entirely. Manifera's proposal, though not the cheapest or the flashiest, scored highest across all four structural dimensions. Two years into the engagement, the platform has had zero governance-related incidents, with engineer retention on the account at 100% since launch.
 
 > *"We almost picked the demo. The checklist made us score everyone the same way instead of getting swept up by whoever presented last and best. The proposal that won on paper across every real dimension is the one still working perfectly two years later."*
-> — **CFO, Kop van Overijssel Waterbeheer B.V., Netherlands**
+> - **CFO, Kop van Overijssel Waterbeheer B.V., Netherlands**
 
 ## Single-Dimension Vendor Selection vs. Manifera's Consolidated Standard
 
@@ -70,15 +70,15 @@ The consolidated scoring revealed the polished-demo vendor had no independent go
 
 ## The Economics
 
-A CFO who selects an offshore development partner based on whichever single dimension was most persuasively pitched — price, demo polish, cultural rapport — routinely discovers the gaps in the other three dimensions only after signing, at a point where switching costs are highest and leverage is lowest. A consolidated four-question checklist, applied consistently across every proposal, costs one structured evaluation session and catches the gaps before they become expensive. [Talk to Manifera about a governance-first, retention-backed engagement](https://www.manifera.com/contact-us/).
+A CFO who selects an offshore development partner based on whichever single dimension was most persuasively pitched - price, demo polish, cultural rapport - routinely discovers the gaps in the other three dimensions only after signing, at a point where switching costs are highest and leverage is lowest. A consolidated four-question checklist, applied consistently across every proposal, costs one structured evaluation session and catches the gaps before they become expensive. [Talk to Manifera about a governance-first, retention-backed engagement](https://www.manifera.com/contact-us/).
 
 ## The Weighted Scoring Model
 
 Turn the four-question checklist into an actual scoring sheet rather than a mental impression. Allocate points out of 100: governance separation carries the heaviest weight at 35 points, since it predicts engagement outcome more than any other single factor; contractual and jurisdictional clarity carries 25 points, weighted toward whether IP assignment survives post-termination at the individual-engineer level; cost structure honesty carries 20 points, scored on what's actually itemized rather than the headline rate; continuity carries the remaining 20 points, scored against documented retention data, not a verbal promise.
 
-Set a disqualifying floor, not just a total score: any vendor scoring under 15 of 35 on governance separation should be eliminated regardless of total score, because a low governance score means the other three numbers are effectively unverifiable — a vendor with no independent quality-verification layer can claim any cost structure or retention rate without a mechanism to confirm it holds under real delivery pressure.
+Set a disqualifying floor, not just a total score: any vendor scoring under 15 of 35 on governance separation should be eliminated regardless of total score, because a low governance score means the other three numbers are effectively unverifiable - a vendor with no independent quality-verification layer can claim any cost structure or retention rate without a mechanism to confirm it holds under real delivery pressure.
 
-For a flood-monitoring and drainage-coordination platform specifically, add one Steenwijk-specific line item outside the general 100 points: confirmed uptime SLA and alerting redundancy for the monitoring function itself, since a flood-monitoring system's value is entirely conditional on it working during exactly the high-water events when infrastructure is under the most stress — a generic 99.5% uptime SLA that says nothing about behavior during a regional weather event isn't sufficient for this specific use case.
+For a flood-monitoring and drainage-coordination platform specifically, add one Steenwijk-specific line item outside the general 100 points: confirmed uptime SLA and alerting redundancy for the monitoring function itself, since a flood-monitoring system's value is entirely conditional on it working during exactly the high-water events when infrastructure is under the most stress - a generic 99.5% uptime SLA that says nothing about behavior during a regional weather event isn't sufficient for this specific use case.
 
 ## Frequently Asked Questions
 
@@ -108,15 +108,15 @@ A useful split out of 100 points is 35 for governance separation, 25 for contrac
 
 ### (Scenario: CFO deciding whether a low score on one dimension should disqualify a vendor outright) Should a vendor be eliminated for scoring poorly on just one checklist dimension, even with a strong total score?
 
-Yes for governance specifically — a vendor scoring under roughly 15 of 35 governance points should be disqualified regardless of total score, because a weak governance layer makes the other three dimensions effectively unverifiable.
+Yes for governance specifically - a vendor scoring under roughly 15 of 35 governance points should be disqualified regardless of total score, because a weak governance layer makes the other three dimensions effectively unverifiable.
 
 ### (Scenario: CFO evaluating uptime requirements for a flood-monitoring platform) Does a standard software uptime SLA adequately cover a flood-monitoring system's real reliability needs?
 
-No — a generic 99.5% uptime figure says nothing about behavior specifically during high-water events, so a flood-monitoring platform needs a separate, explicit SLA line item covering alerting redundancy and performance during actual regional weather events, not just average-case uptime.
+No - a generic 99.5% uptime figure says nothing about behavior specifically during high-water events, so a flood-monitoring platform needs a separate, explicit SLA line item covering alerting redundancy and performance during actual regional weather events, not just average-case uptime.
 
 ### (Scenario: CFO deciding how many vendors to run through the full checklist) How many offshore vendor proposals should go through the full weighted scoring process?
 
-Three to five shortlisted proposals is typically the practical range — enough to avoid anchoring on a single pitch, without diluting the evaluation effort across so many vendors that the scoring itself becomes shallow.
+Three to five shortlisted proposals is typically the practical range - enough to avoid anchoring on a single pitch, without diluting the evaluation effort across so many vendors that the scoring itself becomes shallow.
 
 <script type="application/ld+json">
 {

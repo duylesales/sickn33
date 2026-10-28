@@ -30,7 +30,7 @@ That makes documentation more valuable here, and it has a second audience it did
 
 **A README** answering how to run this thing: what it is, what it needs, the commands to set it up and start it, and where the environments are. Written for someone who has never seen the project, which includes you after four months on something else.
 
-**A conventions file** — the one this series keeps recommending — describing patterns, naming, chosen libraries, the rules that must not be broken, and the product's vocabulary. Read by humans and by assistants.
+**A conventions file** - the one this series keeps recommending - describing patterns, naming, chosen libraries, the rules that must not be broken, and the product's vocabulary. Read by humans and by assistants.
 
 **A decisions log.** A list of choices and why, with dates. Why Supabase rather than a database you run. Why payments go through one provider. Why invoices are immutable. Three sentences each.
 
@@ -42,7 +42,7 @@ Four files, perhaps six pages in total. More than that will not be maintained.
 
 The code says what it does. Documentation that restates it is a second copy to keep in step, and it will not be kept in step.
 
-What the code cannot say is why. Why this approach rather than the obvious one. Why this limit is 50 and not 100. Why this apparently redundant check exists — because a customer's import produced duplicates in March and this prevents it.
+What the code cannot say is why. Why this approach rather than the obvious one. Why this limit is 50 and not 100. Why this apparently redundant check exists - because a customer's import produced duplicates in March and this prevents it.
 
 That last category is the most valuable thing you can write, because it is exactly what gets deleted by a future cleanup, human or otherwise. A comment saying "this looks unnecessary; it prevents the duplicate rows described in decision 14" is a comment that saves an incident.
 
@@ -62,7 +62,7 @@ This is the part specific to building this way, and it changes what good documen
 
 Assistants read the repository. Documentation that states rules plainly, gives short examples, and uses consistent vocabulary measurably improves what they generate. Documentation that is discursive, or that lives in a wiki somewhere else, does nothing at all.
 
-Three practical consequences. Keep it in the repository, in plain text, alongside the code. State rules as rules — "every endpoint must verify the caller's organisation" rather than a paragraph about the importance of authorisation. And include a short example of each pattern, because a model imitates examples far more reliably than it follows prose.
+Three practical consequences. Keep it in the repository, in plain text, alongside the code. State rules as rules - "every endpoint must verify the caller's organisation" rather than a paragraph about the importance of authorisation. And include a short example of each pattern, because a model imitates examples far more reliably than it follows prose.
 
 The same properties make it better for humans, which is convenient, and it means the documentation is written once for both audiences rather than twice.
 
@@ -70,7 +70,7 @@ The same properties make it better for humans, which is convenient, and it means
 
 An assistant is good at producing the documentation that describes structure: what this module contains, what this function takes and returns, what these endpoints are. That is genuinely useful and tedious to write.
 
-It cannot write the why, because the why was never in the code. Asking a model to document your decisions produces plausible reasoning that was not yours, which is worse than an empty file — it is a confident record of something that did not happen.
+It cannot write the why, because the why was never in the code. Asking a model to document your decisions produces plausible reasoning that was not yours, which is worse than an empty file - it is a confident record of something that did not happen.
 
 So: generate the reference material, write the decisions yourself. Three sentences at the moment of the decision, which is the only time the reasoning is available.
 
@@ -80,13 +80,13 @@ Everything above is internal. A product also needs documentation pointed outward
 
 Three pieces, in order of value.
 
-**Getting started.** The shortest path from a new account to the thing your product is for. Not a tour of every feature — one sequence, with the decisions someone must make at each step. This reduces support volume more than any other single page and it is the one most products do not have.
+**Getting started.** The shortest path from a new account to the thing your product is for. Not a tour of every feature - one sequence, with the decisions someone must make at each step. This reduces support volume more than any other single page and it is the one most products do not have.
 
 **Answers to the questions people ask.** Taken directly from your support inbox, in the words customers use. As the SEO articles in this series note, these double as content that brings the right visitors.
 
 **A reference for the things people configure.** Integration settings, permissions, import formats, the fields in an export. Dry, specific and consulted rather than read.
 
-Two properties matter more than completeness. It must be current, because documentation describing a previous version of the interface is worse than none. And it should be somewhere a customer can find without asking — public, searchable, linked from inside the product at the point where each thing is done.
+Two properties matter more than completeness. It must be current, because documentation describing a previous version of the interface is worse than none. And it should be somewhere a customer can find without asking - public, searchable, linked from inside the product at the point where each thing is done.
 
 For a product with a handful of customers this can be five pages. The test of whether it is enough is simple: when a customer asks something, is there a page you can send them? If the answer is usually no, writing that page after answering is fifteen minutes and it never has to be answered again.
 
@@ -98,9 +98,9 @@ What that person receives determines whether the transition takes a week or a qu
 
 With them, a competent developer can be productive in a day: they know how to run it, what the conventions are, why the unusual decisions were made, and what happens when something breaks at night.
 
-Without them, the same person spends two weeks reading code to infer what a page would have told them, and arrives at conclusions that are sometimes wrong — because inferring intention from generated code produces confident misunderstandings, which is the same problem this article opened with.
+Without them, the same person spends two weeks reading code to infer what a page would have told them, and arrives at conclusions that are sometimes wrong - because inferring intention from generated code produces confident misunderstandings, which is the same problem this article opened with.
 
-There is a commercial dimension too. A product one person can explain is a product with a key-person risk, and any serious buyer or investor identifies it immediately. Four documents in a repository are not a substitute for a second person who knows the system, and they are the cheapest available reduction of that risk — which for a founder thinking about selling, raising, or simply taking a holiday, is worth considerably more than the half day it costs.
+There is a commercial dimension too. A product one person can explain is a product with a key-person risk, and any serious buyer or investor identifies it immediately. Four documents in a repository are not a substitute for a second person who knows the system, and they are the cheapest available reduction of that risk - which for a founder thinking about selling, raising, or simply taking a holiday, is worth considerably more than the half day it costs.
 
 A useful way to test whether you have enough: hand the repository to someone who has never seen it and ask them to get it running and describe what it does. Whatever they cannot work out is what is missing, and it takes an afternoon to find out.
 
@@ -108,7 +108,7 @@ A useful way to test whether you have enough: hand the repository to someone who
 
 For an existing project this is typically half a day: a README covering setup and environments, a conventions file describing patterns, naming, chosen libraries, inviolable rules and vocabulary, a decisions log seeded with the ten choices you can still remember and their reasons, an operations page covering scheduled work, failure procedures, backups and provider contacts, comments added where code looks unnecessary but is not, reference documentation generated for structure, everything in the repository as plain text, and a habit of writing the decision entry at the moment rather than afterwards.
 
-LaunchStudio produces all four when handing a product back to its owner, because a product you cannot explain is one you cannot hand to anyone. The engineers are Manifera's — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio produces all four when handing a product back to its owner, because a product you cannot explain is one you cannot hand to anyone. The engineers are Manifera's - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Ask us what your project would look like to someone who has never seen it](https://launchstudio.eu/en/#contact).
 
@@ -124,20 +124,20 @@ It existed because a provincial authority had rejected 40 applications the previ
 
 The removal went unnoticed for two months. Thirty-one applications were submitted with the mismatch and rejected, several past the deadline for that round, which for four farms meant missing a funding window entirely.
 
-Three business days: the check restored with a comment explaining what it prevents and a test derived from the authority's published rules; a decisions log started, seeded with fourteen entries covering the choices Pieter-Jan could still reconstruct — why applications are immutable after submission, why the provincial rules are stored as data rather than code, why one provider was chosen for document generation; a README covering setup and environments, which had never existed; a conventions file stating patterns, naming and four inviolable rules; an operations page covering the nightly submission job, backups, restore procedure and provider contacts; comments added to six further pieces of code that looked unnecessary and were not, each referencing its decision entry; and reference documentation generated for the endpoint structure.
+Three business days: the check restored with a comment explaining what it prevents and a test derived from the authority's published rules; a decisions log started, seeded with fourteen entries covering the choices Pieter-Jan could still reconstruct - why applications are immutable after submission, why the provincial rules are stored as data rather than code, why one provider was chosen for document generation; a README covering setup and environments, which had never existed; a conventions file stating patterns, naming and four inviolable rules; an operations page covering the nightly submission job, backups, restore procedure and provider contacts; comments added to six further pieces of code that looked unnecessary and were not, each referencing its decision entry; and reference documentation generated for the endpoint structure.
 
-**Result:** no further checks have been removed. Pieter-Jan reports that the decisions log has been consulted more often than he expected — twice by an adviser asking why the product behaves a certain way, once by a provincial authority, and repeatedly by himself.
+**Result:** no further checks have been removed. Pieter-Jan reports that the decisions log has been consulted more often than he expected - twice by an adviser asking why the product behaves a certain way, once by a provincial authority, and repeatedly by himself.
 
 > *"A session removed a check that looked pointless. It was pointless unless you knew that forty applications had been rejected for exactly that reason the year before, and nothing in my product knew that."*
-> — **Pieter-Jan Osseweijer, Founder, Subsidieaanvraag (Leeuwarden)**
+> - **Pieter-Jan Osseweijer, Founder, Subsidieaanvraag (Leeuwarden)**
 
-**Cost & Timeline:** €2,500 (check restoration with rule-derived tests, decisions log with fourteen seeded entries, README, conventions file, operations page, explanatory comments across six locations, generated reference documentation) — completed in 3 business days.
+**Cost & Timeline:** €2,500 (check restoration with rule-derived tests, decisions log with fourteen seeded entries, README, conventions file, operations page, explanatory comments across six locations, generated reference documentation) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
 ### Why does documentation matter more in an AI-built product?
 
-Because generated code carries no intention. The reason your product works a particular way exists only in a closed conversation, and the next session — human or machine — has no access to it.
+Because generated code carries no intention. The reason your product works a particular way exists only in a closed conversation, and the next session - human or machine - has no access to it.
 
 ### What should I actually write?
 
@@ -149,7 +149,7 @@ The decisions log. Six months later nobody remembers why a choice was made, and 
 
 ### Can I generate documentation with the assistant?
 
-The reference material describing structure, yes, and it is a good use of it. Not the reasoning — a model asked why you made a decision will produce plausible reasoning that was not yours.
+The reference material describing structure, yes, and it is a good use of it. Not the reasoning - a model asked why you made a decision will produce plausible reasoning that was not yours.
 
 ### How do I keep documentation from going stale?
 
@@ -165,7 +165,7 @@ Keep it short, keep it in the repository, and write decision entries at the mome
       "name": "Why does documentation matter more in AI-built products?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Generated code carries no intention — the reasons live in closed conversations, inaccessible to the next person or session."
+        "text": "Generated code carries no intention - the reasons live in closed conversations, inaccessible to the next person or session."
       }
     },
     {
@@ -173,7 +173,7 @@ Keep it short, keep it in the repository, and write decision entries at the mome
       "name": "What documentation does a small product need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A README, a conventions file, a decisions log with dates and reasoning, and an operations page — about six pages total."
+        "text": "A README, a conventions file, a decisions log with dates and reasoning, and an operations page - about six pages total."
       }
     },
     {
@@ -181,7 +181,7 @@ Keep it short, keep it in the repository, and write decision entries at the mome
       "name": "Which document is most valuable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The decisions log — it preserves reasoning that would otherwise be lost and prevents future cleanups removing load-bearing code."
+        "text": "The decisions log - it preserves reasoning that would otherwise be lost and prevents future cleanups removing load-bearing code."
       }
     },
     {
@@ -189,7 +189,7 @@ Keep it short, keep it in the repository, and write decision entries at the mome
       "name": "Can an assistant write my documentation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Structural reference material yes; reasoning no — it will produce plausible justifications that were never yours."
+        "text": "Structural reference material yes; reasoning no - it will produce plausible justifications that were never yours."
       }
     },
     {

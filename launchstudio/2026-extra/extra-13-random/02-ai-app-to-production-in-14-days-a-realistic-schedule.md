@@ -21,13 +21,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-How long does it take to get an AI app to production? Agencies say months. Enthusiastic threads on X say an afternoon. The honest answer for a working Lovable, Bolt or Cursor prototype is usually somewhere between one and three weeks — and fourteen calendar days is a very common shape. Not because fourteen is a magic number, but because it is roughly how long the unavoidable steps take when nothing is wasted.
+How long does it take to get an AI app to production? Agencies say months. Enthusiastic threads on X say an afternoon. The honest answer for a working Lovable, Bolt or Cursor prototype is usually somewhere between one and three weeks - and fourteen calendar days is a very common shape. Not because fourteen is a magic number, but because it is roughly how long the unavoidable steps take when nothing is wasted.
 
 This article walks through that fortnight day by day, so you can see where the time goes, what you need to do as the founder, and which parts can genuinely go faster if you are under pressure.
 
 ## Before Day 1: The Part That Decides Everything
 
-The schedule below assumes two things are already true. First, you have a working prototype — the screens exist and the main flow works when you click through it. Second, the scope is fixed. That second point is the one that quietly turns two weeks into two months.
+The schedule below assumes two things are already true. First, you have a working prototype - the screens exist and the main flow works when you click through it. Second, the scope is fixed. That second point is the one that quietly turns two weeks into two months.
 
 A fixed scope means a written list: these features go live, these do not. "And maybe a referral programme" added on day 6 is not a small change; it is a new feature that needs the same security, testing and deployment treatment as everything else. LaunchStudio agrees scope in the 15-minute intro call and turns it into a fixed-price quote before day 1, precisely so that the timeline is something both sides can hold each other to.
 
@@ -35,7 +35,7 @@ A fixed scope means a written list: these features go live, these do not. "And m
 
 The first two days produce almost no visible change, and that is correct. An engineer reads the codebase against a known list of risk areas: where secrets live, how authentication and authorisation are enforced, how data is stored and backed up, how payments are confirmed, how the app is deployed.
 
-The output is a short written finding list, ranked by risk. For a typical AI app, it contains between eight and twenty items. Some are one-line fixes. Two or three are structural — usually around data access rules or payment handling — and those shape the rest of the schedule.
+The output is a short written finding list, ranked by risk. For a typical AI app, it contains between eight and twenty items. Some are one-line fixes. Two or three are structural - usually around data access rules or payment handling - and those shape the rest of the schedule.
 
 **What you do:** Grant access to your repository, hosting, database and domain accounts. Answer questions quickly. A founder who replies within a few hours saves a day on this phase alone.
 
@@ -44,9 +44,9 @@ The output is a short written finding list, ranked by risk. For a typical AI app
 This is where the real engineering happens, and it follows a deliberate order: the things that protect data first, the things that make money second, the things that make life easier third.
 
 - **Day 3:** Secrets move server-side. Every key found in the browser bundle or git history is rotated and replaced.
-- **Day 4:** Authorisation is enforced at the database or API level, so a logged-in user can only reach their own records — regardless of what the interface shows.
+- **Day 4:** Authorisation is enforced at the database or API level, so a logged-in user can only reach their own records - regardless of what the interface shows.
 - **Day 5:** Payments are confirmed by verified webhooks rather than by the browser reporting success. If you use Mollie or Stripe, this is where test mode and live mode get properly separated.
-- **Day 6:** Data handling — an EU database region if needed, backups configured, and one restore actually performed to prove it works.
+- **Day 6:** Data handling - an EU database region if needed, backups configured, and one restore actually performed to prove it works.
 
 **What you do:** Very little, except be reachable. Occasionally a structural fix raises a product question ("should a team admin see invoices of other team members?") that only you can answer.
 
@@ -60,7 +60,7 @@ In parallel, the production environment gets built: hosting configured, a stagin
 
 ## Days 10–12: Testing the Way Customers Will Use It
 
-Testing is not the same as clicking through the happy path. The three days here cover the flows that matter most to your business — typically signup, the core action, payment and account deletion — under conditions a demo never tests: wrong passwords, expired cards, two tabs open at once, a slow mobile connection, a user trying to reach someone else's data by changing a number in the URL.
+Testing is not the same as clicking through the happy path. The three days here cover the flows that matter most to your business - typically signup, the core action, payment and account deletion - under conditions a demo never tests: wrong passwords, expired cards, two tabs open at once, a slow mobile connection, a user trying to reach someone else's data by changing a number in the URL.
 
 Anything that fails goes back into the fix list. This is also where the schedule absorbs surprises; a two-week plan without test days is really a ten-day plan with no margin.
 
@@ -82,17 +82,17 @@ Under genuine deadline pressure, some of this can move faster. Not all of it.
 | Testing (10–12) | Partly | Core flows cannot be skipped; edge cases can be prioritised |
 | Launch (13–14) | No | DNS, certificates and first-day observation take real time |
 
-A smaller app — a website with a contact form and a simple booking step — often completes in under a week. A SaaS with subscriptions, teams and an admin panel may need the full three weeks. LaunchStudio's price calculator reflects this: a working prototype is the 1.0× baseline, while a design-only starting point is 1.3× and an idea alone is 1.5×, because each earlier starting point adds build days before the fortnight above can even begin. You can try the [price calculator](https://launchstudio.eu/en/#calculator) with your own inputs.
+A smaller app - a website with a contact form and a simple booking step - often completes in under a week. A SaaS with subscriptions, teams and an admin panel may need the full three weeks. LaunchStudio's price calculator reflects this: a working prototype is the 1.0× baseline, while a design-only starting point is 1.3× and an idea alone is 1.5×, because each earlier starting point adds build days before the fortnight above can even begin. You can try the [price calculator](https://launchstudio.eu/en/#calculator) with your own inputs.
 
 ## What You Actually See Each Day
 
 A two-week AI app to production schedule is only reassuring if you can see it moving. LaunchStudio sends a short written update at the end of each working day, and founders often ask what "good" looks like. A typical day-5 update reads something like this:
 
-> **Done today:** Mollie webhook endpoint live on staging; signature/status lookup verified; duplicate notifications ignored by payment ID. **Found:** refunds made in the Mollie dashboard did not update booking status — added to today's fix. **Needs your decision:** should a refunded booking free the slot immediately or after 24 hours? **Tomorrow:** EU database migration dry run on staging; restore test.
+> **Done today:** Mollie webhook endpoint live on staging; signature/status lookup verified; duplicate notifications ignored by payment ID. **Found:** refunds made in the Mollie dashboard did not update booking status - added to today's fix. **Needs your decision:** should a refunded booking free the slot immediately or after 24 hours? **Tomorrow:** EU database migration dry run on staging; restore test.
 
 Three elements matter. Progress is stated in terms of verified outcomes, not hours spent. New findings are surfaced the day they are discovered, not at the end. And decisions only you can make are asked explicitly, with a proposed default so the work does not stall if you are busy.
 
-## The Risks That Move the Date — and What Happens Then
+## The Risks That Move the Date - and What Happens Then
 
 Even with a fixed scope, a handful of events genuinely move a fourteen-day plan. It helps to know them in advance:
 
@@ -108,11 +108,11 @@ The key practice is transparency about which risk has materialised and what it c
 
 ## How to Use the Two Weeks Yourself
 
-Founders who get the most from the fortnight use it for work only they can do: writing the privacy notice and terms (with a template service or lawyer), preparing onboarding and transactional email copy, recording short help videos, lining up the first ten users and deciding support hours. When launch day arrives, the product is ready and so is everything around it. Founders who spend the two weeks adding features in parallel usually end up launching the old version anyway — because the new features were never tested — or delaying the launch to test them.
+Founders who get the most from the fortnight use it for work only they can do: writing the privacy notice and terms (with a template service or lawyer), preparing onboarding and transactional email copy, recording short help videos, lining up the first ten users and deciding support hours. When launch day arrives, the product is ready and so is everything around it. Founders who spend the two weeks adding features in parallel usually end up launching the old version anyway - because the new features were never tested - or delaying the launch to test them.
 
 ## Who Is on the Team for Two Weeks
 
-A fourteen-day launch is not one engineer working heroically. At LaunchStudio, a typical project involves a lead engineer who owns the review, the plan and your daily updates; one or two engineers who implement fixes in parallel once the structural work is clear; and a second reviewer who checks security-relevant changes — access control, payments, secrets — before they reach staging. The lead engineer is your single point of contact, so you never have to explain your app twice.
+A fourteen-day launch is not one engineer working heroically. At LaunchStudio, a typical project involves a lead engineer who owns the review, the plan and your daily updates; one or two engineers who implement fixes in parallel once the structural work is clear; and a second reviewer who checks security-relevant changes - access control, payments, secrets - before they reach staging. The lead engineer is your single point of contact, so you never have to explain your app twice.
 
 This structure is also why a fixed timeline is realistic. Parallel work on independent areas (payments while someone else builds staging) compresses the calendar without compressing the care, and the second reviewer catches the kind of mistake a single tired engineer makes on day 11.
 
@@ -146,9 +146,9 @@ The team fixed the storage bucket and upload limits on day 3, locked the admin r
 **Result:** KlusKompas went live on day 13, two days before the fair. Over the fair weekend it received 74 quote requests and 19 paid deposits, with no failed payments and no support calls about broken uploads.
 
 > *"I expected them to say 'three months'. They said 'two weeks if you stop adding features', and they were right on both counts."*
-> — **Joris Kramer, Founder, KlusKompas (Amersfoort)**
+> - **Joris Kramer, Founder, KlusKompas (Amersfoort)**
 
-**Cost & Timeline:** €2,900 (Launch Ready package with payments and security add-ons) — live in 14 calendar days.
+**Cost & Timeline:** €2,900 (Launch Ready package with payments and security add-ons) - live in 14 calendar days.
 
 ## Frequently Asked Questions
 
@@ -158,7 +158,7 @@ No, it is a common middle case. Simple sites can go live in under a week; SaaS p
 
 ### What is the most common reason an AI app to production timeline slips?
 
-Scope growing mid-project. Adding a feature during hardening means that feature also needs review, security work and testing. The second most common reason is slow access to accounts — hosting, domain or database — at the start.
+Scope growing mid-project. Adding a feature during hardening means that feature also needs review, security work and testing. The second most common reason is slow access to accounts - hosting, domain or database - at the start.
 
 ### Can I keep editing my app in Lovable or Bolt during the two weeks?
 
@@ -166,7 +166,7 @@ It is better not to change the areas being worked on, because edits can overwrit
 
 ### Why does LaunchStudio test for three days instead of launching sooner?
 
-Because the failures that hurt most — double charges, cross-account data access, broken mobile uploads — do not appear in a demo. They appear when real conditions are simulated. Manifera's experience across enterprise projects is that skipping this step moves the testing to your first customers instead.
+Because the failures that hurt most - double charges, cross-account data access, broken mobile uploads - do not appear in a demo. They appear when real conditions are simulated. Manifera's experience across enterprise projects is that skipping this step moves the testing to your first customers instead.
 
 ### Does working with engineers in Vietnam slow the schedule down?
 

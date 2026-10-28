@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An Operations Director or technical lead at a car-sharing operator serving members across multiple countries faces a specific regulatory reality that's easy to underweight during platform planning: motor-insurance mandates and at-fault liability allocation — what minimum coverage is legally required to operate a shared vehicle, and who bears financial responsibility in an at-fault accident — genuinely vary by country, with EU member states applying the Motor Insurance Directive's minimum coverage floor differently in national implementation, and non-EU markets applying entirely distinct liability regimes. A system architected around a single, hardcoded liability configuration risks either under-insuring members in some countries or unnecessarily over-restricting eligible members in others, both outcomes carrying real regulatory and financial consequences.
+An Operations Director or technical lead at a car-sharing operator serving members across multiple countries faces a specific regulatory reality that's easy to underweight during platform planning: motor-insurance mandates and at-fault liability allocation - what minimum coverage is legally required to operate a shared vehicle, and who bears financial responsibility in an at-fault accident - genuinely vary by country, with EU member states applying the Motor Insurance Directive's minimum coverage floor differently in national implementation, and non-EU markets applying entirely distinct liability regimes. A system architected around a single, hardcoded liability configuration risks either under-insuring members in some countries or unnecessarily over-restricting eligible members in others, both outcomes carrying real regulatory and financial consequences.
 
 ## Why a Single Hardcoded Liability Configuration Creates Real Risk
 
@@ -28,7 +28,7 @@ A car-sharing platform built around a single, uniformly applied liability and in
 
 ## Why Country-Configurable Architecture Is Sustainable
 
-A system architected from the start around country-configurable liability rules — able to apply, adjust, or extend specific coverage minimums and at-fault allocation mechanics based on a rental's actual jurisdiction — lets an operator comply with each country's specific requirements without unnecessarily restricting eligible members in markets where a more permissive standard legally applies. This is not simply a matter of geofencing a single coverage tier on or off, since liability requirements can be considerably more nuanced than a binary configuration — some countries mandate specific minimum third-party coverage amounts while others additionally require particular deductible or excess-waiver disclosure to the renter, meaning the underlying system needs genuinely configurable liability logic per country, not just a per-country coverage toggle, to accommodate the actual range of regulatory approaches across an operator's operating markets.
+A system architected from the start around country-configurable liability rules - able to apply, adjust, or extend specific coverage minimums and at-fault allocation mechanics based on a rental's actual jurisdiction - lets an operator comply with each country's specific requirements without unnecessarily restricting eligible members in markets where a more permissive standard legally applies. This is not simply a matter of geofencing a single coverage tier on or off, since liability requirements can be considerably more nuanced than a binary configuration - some countries mandate specific minimum third-party coverage amounts while others additionally require particular deductible or excess-waiver disclosure to the renter, meaning the underlying system needs genuinely configurable liability logic per country, not just a per-country coverage toggle, to accommodate the actual range of regulatory approaches across an operator's operating markets.
 
 ## What Building Country-Configurable Liability Architecture Actually Requires
 
@@ -62,7 +62,7 @@ Souporaba Vozil Maribor, a Maribor-based car-sharing operator, had built an init
 Manifera's Amsterdam team, engaged as a dedicated software development team, rebuilt the liability engine's core architecture around a configurable, country-specific ruleset, supporting both the stricter minimum-coverage requirements of certain countries and the distinct disclosure obligations of others, alongside reliable rental-to-jurisdiction determination and mid-trip cross-border handling, all without requiring separate, parallel liability systems per country.
 
 > *"We had one coverage configuration and assumed we would just raise it wherever a country pushed back. It turned out the actual requirements across our markets were more varied than a single configuration could handle, and building real configurability was what let us keep operating properly across all our target countries rather than just retreating from the harder ones."*
-> — **Operations Director, Souporaba Vozil Maribor**
+> - **Operations Director, Souporaba Vozil Maribor**
 
 Souporaba Vozil Maribor successfully launched in its additional target countries with country-appropriate liability configurations, and now treats regulatory configurability as a standard architectural requirement for any new market entry, rather than a single global configuration decided once.
 
@@ -77,7 +77,7 @@ Souporaba Vozil Maribor successfully launched in its additional target countries
 
 ## Scoping Your Own Cross-Border Car-Sharing Platform for Regulatory Compliance
 
-Before expanding a car-sharing platform across multiple countries, architect the liability engine around genuinely configurable, country-specific rulesets — a single hardcoded configuration forces an unnecessary trade-off between compliance risk and membership eligibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready car-sharing liability system.
+Before expanding a car-sharing platform across multiple countries, architect the liability engine around genuinely configurable, country-specific rulesets - a single hardcoded configuration forces an unnecessary trade-off between compliance risk and membership eligibility. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready car-sharing liability system.
 
 ## Frequently Asked Questions
 
@@ -91,7 +91,7 @@ It forces a choice between operating below a stricter country's legally mandated
 
 ### (Scenario: engineering lead scoping country configurability) Is a simple per-country coverage toggle sufficient to handle liability regulation across countries?
 
-Not always — requirements can involve specific minimum coverage amounts and distinct disclosure obligations, meaning the system needs genuinely configurable liability logic per country, not just a binary coverage switch.
+Not always - requirements can involve specific minimum coverage amounts and distinct disclosure obligations, meaning the system needs genuinely configurable liability logic per country, not just a binary coverage switch.
 
 ### (Scenario: legal counsel reviewing technical architecture) Why does reliable rental-to-jurisdiction determination matter for regulatory compliance?
 
@@ -108,7 +108,7 @@ Motor-insurance and liability regulation is a genuinely active, evolving area ac
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: operations director scoping a cross-border car-sharing platform) Why does motor-insurance and liability regulation vary meaningfully across countries?", "acceptedAnswer": { "@type": "Answer", "text": "EU member states apply the Motor Insurance Directive differently, and non-EU markets apply distinct liability regimes." } },
     { "@type": "Question", "name": "(Scenario: operator worried about compliance) What's the risk of building a liability engine around a single, hardcoded configuration?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between operating below a stricter country's mandated minimum or unnecessarily restricting membership elsewhere." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping country configurability) Is a simple per-country coverage toggle sufficient to handle liability regulation across countries?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — requirements can involve specific coverage amounts and distinct disclosure obligations, requiring genuine configurability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping country configurability) Is a simple per-country coverage toggle sufficient to handle liability regulation across countries?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - requirements can involve specific coverage amounts and distinct disclosure obligations, requiring genuine configurability." } },
     { "@type": "Question", "name": "(Scenario: legal counsel reviewing technical architecture) Why does reliable rental-to-jurisdiction determination matter for regulatory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying country-specific rules correctly depends on identifying which jurisdiction governs a rental, complicated by cross-border trips." } },
     { "@type": "Question", "name": "(Scenario: operator planning for future regulatory change) Why should a liability engine be designed to accommodate evolving regulation, not just current rules?", "acceptedAnswer": { "@type": "Answer", "text": "Motor-insurance regulation is actively evolving, and rework-heavy systems create ongoing compliance risk as rules change." } }
   ]

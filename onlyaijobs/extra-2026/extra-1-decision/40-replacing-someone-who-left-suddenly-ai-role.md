@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Somewhere in the second interview it slips out: the person who held this role left three weeks ago, rather suddenly, and the team is keen to fill the gap quickly. Sometimes that is exactly what it sounds like — someone received a better offer, or moved city, or went on parental leave and decided not to return. Sometimes it is the visible end of a situation that will be waiting for you on your first day: an impossible mandate, a manager nobody lasts under, a system held together by one person's unpaid evenings. The information you need to tell these apart is usually available, and asking for it is entirely normal. The mistake is treating a quick vacancy as a lucky break and not asking at all.
+Somewhere in the second interview it slips out: the person who held this role left three weeks ago, rather suddenly, and the team is keen to fill the gap quickly. Sometimes that is exactly what it sounds like - someone received a better offer, or moved city, or went on parental leave and decided not to return. Sometimes it is the visible end of a situation that will be waiting for you on your first day: an impossible mandate, a manager nobody lasts under, a system held together by one person's unpaid evenings. The information you need to tell these apart is usually available, and asking for it is entirely normal. The mistake is treating a quick vacancy as a lucky break and not asking at all.
 
 ## Why People Actually Leave Data Roles
 
@@ -131,7 +131,7 @@ Even when the departure was benign, stepping into an empty seat has a predictabl
 
 **Weeks six to ten: reset expectations once, in writing.** A short note listing what you found, what you will do in the coming quarter and what you are not doing yet. This is the single most valuable document you will write, because it replaces the accumulated assumptions of the gap period with something explicit.
 
-**Weeks ten to thirteen: deliver something small and visible.** Not the big project — a fixed report, a documented pipeline, an automated step. It establishes that the function works again, which is what the organisation is anxious about.
+**Weeks ten to thirteen: deliver something small and visible.** Not the big project - a fixed report, a documented pipeline, an automated step. It establishes that the function works again, which is what the organisation is anxious about.
 
 Above all, avoid inheriting your predecessor's reputation. If they were seen as slow, your early caution will be read the same way unless you explain what you are doing and why.
 
@@ -145,7 +145,7 @@ He asks a future colleague the same question. The answer is different: the previ
 
 Rather than withdrawing, he raises it directly with the manager. The conversation is uncomfortable and honest: the engineer had indeed not been hired, the budget now exists, and recruitment for that role is underway.
 
-He asks for three things in writing — the data engineer hire as a condition, the first three months scoped as stabilisation rather than new models, and a named sponsor in operations. The employer agrees to all three.
+He asks for three things in writing - the data engineer hire as a condition, the first three months scoped as stabilisation rather than new models, and a named sponsor in operations. The employer agrees to all three.
 
 The data engineer starts a month after him. Two years later both are still there. Had he not asked the second person, he would have accepted the same role that had just broken someone else.
 
@@ -157,7 +157,7 @@ Ask how long the team as a whole has been together. A data team where everyone a
 
 Ask about the manager's own tenure, and their manager's. Stability two levels up matters, because reorganisations and strategy reversals arrive from there.
 
-Ask what has changed in the team's mandate over the past two years. Repeated redefinition — from analytics to AI to reporting and back — wears people out more reliably than any single bad manager.
+Ask what has changed in the team's mandate over the past two years. Repeated redefinition - from analytics to AI to reporting and back - wears people out more reliably than any single bad manager.
 
 And notice who is not in your interview process. If you never meet anyone who has been there more than a year, that is a finding rather than a scheduling accident.
 
@@ -171,7 +171,7 @@ Most importantly, avoid the trap of trying to prove that you can succeed where s
 
 ## Key Takeaways
 
-- Most departures are mundane; the ones that matter are structural — impossible mandates, broken promises, unmanageable workload or a difficult manager.
+- Most departures are mundane; the ones that matter are structural - impossible mandates, broken promises, unmanageable workload or a difficult manager.
 - Ask the hiring manager, a future colleague and the recruiter the same question, and compare the answers.
 - Tenure of the last two holders, team turnover and how long the vacancy has been open are more informative than any explanation.
 - Expect no handover, undocumented systems, waiting stakeholders and pressure for immediate momentum.
@@ -179,7 +179,7 @@ Most importantly, avoid the trap of trying to prove that you can succeed where s
 
 ## Where to Start
 
-Before accepting a role someone just left, ask a future colleague why — and check what comparable employers near you are offering so the answer is easy to act on.
+Before accepting a role someone just left, ask a future colleague why - and check what comparable employers near you are offering so the answer is easy to act on.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -205,7 +205,7 @@ Scope for the first three months in writing, a named sponsor, a handover, an hon
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it a red flag if the previous person left abruptly?", "acceptedAnswer": {"@type": "Answer", "text": "Not on its own — the concern is a pattern or a structural cause."}},
+    {"@type": "Question", "name": "Is it a red flag if the previous person left abruptly?", "acceptedAnswer": {"@type": "Answer", "text": "Not on its own - the concern is a pattern or a structural cause."}},
     {"@type": "Question", "name": "How do I ask why the last person left?", "acceptedAnswer": {"@type": "Answer", "text": "Ask the manager, a colleague and the recruiter, then compare answers."}},
     {"@type": "Question", "name": "What number of departures should concern me?", "acceptedAnswer": {"@type": "Answer", "text": "Two short tenures in a row in the same role."}},
     {"@type": "Question", "name": "Can I speak to the person who left?", "acceptedAnswer": {"@type": "Answer", "text": "Ask for a handover conversation; it is often granted when requested."}},

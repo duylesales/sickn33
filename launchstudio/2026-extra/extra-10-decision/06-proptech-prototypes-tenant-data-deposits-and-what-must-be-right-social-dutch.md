@@ -16,7 +16,7 @@ Wat u vóór uw eerste verhuurder wél moet inrichten:
 ✅ Expliciete toestemming en transparantie bij eventuele krediet- en antecedentenchecks
 ✅ Onweerlegbare tijdstempels op servicemeldingen om hersteltermijnen objectief aan te tonen
 
-Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de noodzakelijke data- en geldstroomscheidingen in uw proptech-backend — zonder uw interface aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de noodzakelijke data- en geldstroomscheidingen in uw proptech-backend - zonder uw interface aan te tasten.
 
 💡 Zo voorkwam kamerverhuurplatform Kamerbasis escalerende huurgeschillen door haar waarborgsomadministratie tijdig te isoleren.
 

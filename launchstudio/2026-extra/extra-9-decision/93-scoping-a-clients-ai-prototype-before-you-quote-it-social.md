@@ -8,7 +8,7 @@ The demo shows you the 20% of the build that's actually finished: 🔍
 ❌ A "fixed-price" quote that stops being fixed the moment the other 80% surfaces mid-build
 
 ✅ Test authentication with two real accounts, not a trust-fall on the signup screen
-✅ Check payment readiness — a real Stripe integration versus a checkout mockup
+✅ Check payment readiness - a real Stripe integration versus a checkout mockup
 ✅ Treat inconsistent patterns across similar features as a multiplier, not a line item
 ✅ Document findings in plain language so the quote explains itself later
 

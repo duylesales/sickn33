@@ -1,4 +1,4 @@
-🚨 Her client's festival ticket sale went live — and started throwing errors in real time, on a shared call, with the client watching every failed transaction. Her agency had nothing useful to say for 40 minutes. 😳
+🚨 Her client's festival ticket sale went live - and started throwing errors in real time, on a shared call, with the client watching every failed transaction. Her agency had nothing useful to say for 40 minutes. 😳
 
 Launch-day failures are almost always backend problems. Most agencies have no one who can diagnose them. Here's what that moment actually requires: 🧠
 
@@ -14,7 +14,7 @@ Launch-day failures are almost always backend problems. Most agencies have no on
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we're the partner agencies escalate to when a launch is failing live. 🛡️
 
-Her result: cause identified in 40 minutes, ticket sale completed same-day — client retained for three more annual events. 🚀
+Her result: cause identified in 40 minutes, ticket sale completed same-day - client retained for three more annual events. 🚀
 
 👉 Set up your emergency escalation path before you need it: https://launchstudio.eu/en/blog/agency-rescues-failing-launch-case-study
 

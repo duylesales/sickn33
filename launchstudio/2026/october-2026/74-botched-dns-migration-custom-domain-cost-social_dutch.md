@@ -1,9 +1,9 @@
-🌐 Renate's app werkte perfect — maar haar e-mails verdwenen — Renate Voss, oprichter van SignalBoard (gebouwd met **Bolt**), volgde een "quick connect" wizard voor haar domein en had geen idee dat al haar e-mailrecords geruisloos waren gewist. 🧠
+🌐 Renate's app werkte perfect - maar haar e-mails verdwenen - Renate Voss, oprichter van SignalBoard (gebouwd met **Bolt**), volgde een "quick connect" wizard voor haar domein en had geen idee dat al haar e-mailrecords geruisloos waren gewist. 🧠
 
 Als een DNS-tool uw hele recordtabel vervangt in plaats van regels toe te voegen, kan uw webapp er perfect uitzien terwijl alle welkomst- en resetmails geruisloos bouncen.
 
 ❌ MX- en SPF/DKIM-records overschreven door een domeintool die de complete tabel verving
-❌ Geen zichtbare foutmelding — de site laadde prima terwijl transactionele e-mails faalden
+❌ Geen zichtbare foutmelding - de site laadde prima terwijl transactionele e-mails faalden
 ❌ Een TTL van 24 uur zorgde ervoor dat de foutieve configuratie nog een hele dag actief bleef
 
 ✅ Breng de volledige DNS-tabel in kaart vóórdat u wijzigingen doorvoert

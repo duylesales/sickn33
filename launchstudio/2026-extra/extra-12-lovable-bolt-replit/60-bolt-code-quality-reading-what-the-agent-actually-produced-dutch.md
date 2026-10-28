@@ -24,17 +24,17 @@ Gegenereerde code is zelden incompetent. Ze is meestal competent en repetitief, 
 
 Dat levert een specifieke handtekening op: dezelfde logica vier keer geïmplementeerd in vier componenten, twee manieren om hetzelfde te doen naast elkaar, en functies die zijn verlaten maar nog aanwezig zijn en nog draaien.
 
-Niets daarvan houdt het product tegen. Alles daarvan maakt elke volgende wijziging trager, duurder en waarschijnlijker dat er iets breekt — en dat zijn de kosten die uiteindelijk zichtbaar worden als "met deze codebase is moeilijk te werken".
+Niets daarvan houdt het product tegen. Alles daarvan maakt elke volgende wijziging trager, duurder en waarschijnlijker dat er iets breekt - en dat zijn de kosten die uiteindelijk zichtbaar worden als "met deze codebase is moeilijk te werken".
 
 U hoeft niet elke regel te lezen om haar te beoordelen. Een handvol controles vertelt u het meeste van wat ertoe doet.
 
 ## Duplicatie Is het Belangrijkste Symptoom
 
-Zoek naar een kenmerkende zin — de opmaak van een datum die u toont, de manier waarop u btw berekent, de vorm van een databasequery — en tel op hoeveel plekken ze voorkomt.
+Zoek naar een kenmerkende zin - de opmaak van een datum die u toont, de manier waarop u btw berekent, de vorm van een databasequery - en tel op hoeveel plekken ze voorkomt.
 
 Vier kopieën van een btw-berekening betekent vier plekken om aan te passen als een tarief verandert, en drie ervan worden gemist. Vier kopieën van een databasequery betekent dat de beperking tot de huidige organisatie op vier plekken bestaat en op één ontbreekt. Dit is geen esthetische kwestie; hier komen correctheidsfouten vandaan.
 
-De oplossing is mechanisch: één functie, overal aangeroepen, met de kopieën verwijderd. Doe het voor wat ertoe doet — geld, datums, rechten, datatoegang — en laat cosmetische duplicatie met rust.
+De oplossing is mechanisch: één functie, overal aangeroepen, met de kopieën verwijderd. Doe het voor wat ertoe doet - geld, datums, rechten, datatoegang - en laat cosmetische duplicatie met rust.
 
 ## Dode Code Is Overal
 
@@ -42,13 +42,13 @@ Verlaten functies worden niet verwijderd door de tool die ze bouwde. Ze voegt to
 
 Zoek naar componenten die niets weergeeft, endpoints die niets aanroept, databasetabellen die niets bevraagt, en afhankelijkheden die niets importeert. In een project met zes maanden geschiedenis kunt u een flink deel verwachten.
 
-Twee redenen om te verwijderen in plaats van te negeren. Dode code is nog steeds context die bij elk verzoek wordt verstuurd, wat geld kost en de aandacht van het model verdunt. En een ongebruikt endpoint of een ongebruikte tabel is nog steeds bereikbaar — een verlaten functie zonder autorisatie is een actieve kwetsbaarheid waar niemand naar kijkt.
+Twee redenen om te verwijderen in plaats van te negeren. Dode code is nog steeds context die bij elk verzoek wordt verstuurd, wat geld kost en de aandacht van het model verdunt. En een ongebruikt endpoint of een ongebruikte tabel is nog steeds bereikbaar - een verlaten functie zonder autorisatie is een actieve kwetsbaarheid waar niemand naar kijkt.
 
 ## Zoek naar Twee Manieren om Eén Ding te Doen
 
 De betrouwbaarste voorspeller van een lastige codebase is inconsistentie: twee aanpakken voor state management, twee manieren om data op te halen, twee stylingsystemen, twee datumbibliotheken.
 
-Het gebeurt omdat elke sessie haar probleem oplost met wat ze pakte, en niets ze met elkaar verzoent. De kosten zijn dat elke toekomstige wijziging begint met uitzoeken welke afspraak hier geldt, en dat elke AI-sessie twee patronen ziet en er willekeurig een kiest — en zo verschijnt er een derde.
+Het gebeurt omdat elke sessie haar probleem oplost met wat ze pakte, en niets ze met elkaar verzoent. De kosten zijn dat elke toekomstige wijziging begint met uitzoeken welke afspraak hier geldt, en dat elke AI-sessie twee patronen ziet en er willekeurig een kiest - en zo verschijnt er een derde.
 
 Kies van elk er één en convergeer. Het hoeft niet in één keer; de regel die werkt, is dat alles wat u aanraakt wordt omgezet, en dat niets nieuws het verliezende patroon gebruikt.
 
@@ -56,9 +56,9 @@ Kies van elk er één en convergeer. Het hoeft niet in één keer; de regel die 
 
 Een component van 900 regels dat data ophaalt, bedrijfslogica bevat en de weergave doet, is de vorm waar gegenereerde code naartoe neigt, omdat elk verzoek iets toevoegde aan het bestand dat al open stond.
 
-Het praktische probleem is niet de lengte. Het is dat zo'n bestand niet veilig kan worden gewijzigd — elke aanpassing riskeert de delen waar u niet aan dacht — en dat het niet naar een model kan worden gestuurd zonder alles mee te sturen.
+Het praktische probleem is niet de lengte. Het is dat zo'n bestand niet veilig kan worden gewijzigd - elke aanpassing riskeert de delen waar u niet aan dacht - en dat het niet naar een model kan worden gestuurd zonder alles mee te sturen.
 
-Sorteer uw bestanden op grootte. De grootste drie of vier zijn waar uw fouten wonen en waar uw kosten zich concentreren. Ze opsplitsen naar verantwoordelijkheid — datatoegang, logica, weergave — is meestal een afgebakende middag met een onevenredig groot effect.
+Sorteer uw bestanden op grootte. De grootste drie of vier zijn waar uw fouten wonen en waar uw kosten zich concentreren. Ze opsplitsen naar verantwoordelijkheid - datatoegang, logica, weergave - is meestal een afgebakende middag met een onevenredig groot effect.
 
 ## Controleer Wat Er Gebeurt als Er Iets Misgaat
 
@@ -82,7 +82,7 @@ Of een developer het zo zou hebben geschreven. Een deel zou hij niet zo hebben g
 
 De vraag die altijd volgt op een gesprek over codekwaliteit, is of een door AI gebouwd product een testsuite nodig heeft, en het eerlijke antwoord is: een kleine, die specifieke dingen dekt, geschreven nadat het product niet meer van vorm verandert.
 
-Uitgebreide tests schrijven tegen een prototype dat wekelijks opnieuw wordt ontworpen, is verspild werk — de tests leggen beslissingen vast die op het punt staan te veranderen. Maar lanceren zonder tests betekent dat elke deployment wordt gecontroleerd door te klikken, en klikken schaalt niet voorbij een dozijn schermen.
+Uitgebreide tests schrijven tegen een prototype dat wekelijks opnieuw wordt ontworpen, is verspild werk - de tests leggen beslissingen vast die op het punt staan te veranderen. Maar lanceren zonder tests betekent dat elke deployment wordt gecontroleerd door te klikken, en klikken schaalt niet voorbij een dozijn schermen.
 
 De proportionele set voor een klein product, in volgorde van waarde.
 
@@ -94,19 +94,19 @@ De proportionele set voor een klein product, in volgorde van waarde.
 
 **Elke fout die u twee keer hebt opgelost.** Een test op het moment van de tweede oplossing garandeert dat er geen derde komt.
 
-Dat zijn misschien dertig tests voor een typisch product, ze draaien in minder dan een minuut, en ze dekken de mislukkingen die werkelijk voorkomen. Een codeerassistent vragen ze te schrijven, is redelijk gebruik ervan, mits u leest wat ze controleren — een test die slaagt ongeacht het gedrag, is erger dan geen test, en gegenereerde suites bevatten ze.
+Dat zijn misschien dertig tests voor een typisch product, ze draaien in minder dan een minuut, en ze dekken de mislukkingen die werkelijk voorkomen. Een codeerassistent vragen ze te schrijven, is redelijk gebruik ervan, mits u leest wat ze controleren - een test die slaagt ongeacht het gedrag, is erger dan geen test, en gegenereerde suites bevatten ze.
 
 ## Het Halfuur Review Dat Maandelijks de Moeite Waard Is
 
 Niets hiervan hoeft een project te zijn. Een terugkerend halfuur, eens per maand, voorkomt dat een gegenereerde codebase de toestand bereikt waarin ze er een nodig heeft.
 
-Open de repository en kijk wat er sinds de vorige keer veranderde. Niet regel voor regel — alleen de lijst met aangeraakte bestanden en de vorm van de toevoegingen. Drie vragen.
+Open de repository en kijk wat er sinds de vorige keer veranderde. Niet regel voor regel - alleen de lijst met aangeraakte bestanden en de vorm van de toevoegingen. Drie vragen.
 
 **Is er iets gedupliceerd?** Een nieuw component dat iets opnieuw implementeert wat al bestaat, is de meest voorkomende toevoeging, en het dezelfde maand opvangen is een oplossing van tien minuten in plaats van volgend jaar zoeken-en-vervangen in zeven bestanden.
 
 **Is er iets dood geworden?** Een functie die vorige maand werd vervangen, liet haar voorganger achter. Die nu verwijderen is triviaal; die over een jaar verwijderen vereist eerst uitzoeken of iets haar nog gebruikt.
 
-**Is er een nieuwe afspraak verschenen?** Een tweede datumbibliotheek, een andere manier om data op te halen, een stylingaanpak die niet past. Dit is het moment om te beslissen of ze de oude overal vervangt of wordt teruggedraaid — voordat er een derde komt.
+**Is er een nieuwe afspraak verschenen?** Een tweede datumbibliotheek, een andere manier om data op te halen, een stylingaanpak die niet past. Dit is het moment om te beslissen of ze de oude overal vervangt of wordt teruggedraaid - voordat er een derde komt.
 
 Dertig minuten per maand, aan een codebase die zichzelf grotendeels schrijft, is het verschil tussen een product dat goedkoop te veranderen blijft en een product dat oprichters beschrijven als toe aan een herschrijving. En de herschrijving is bijna nooit nodig; het is gewoon hoe opgestapelde verwaarlozing van binnenuit aanvoelt.
 
@@ -118,7 +118,7 @@ Het is ook de review die de beoordeling eerlijk houdt. Een codebase ziet er goed
 
 Voor een door AI gebouwde codebase kost dit doorgaans één tot twee dagen: duplicatie gevonden door te zoeken naar kenmerkende logica en samengebracht voor geld, datums, rechten en datatoegang; dode componenten, endpoints, tabellen en afhankelijkheden verwijderd, waarbij ongebruikte endpoints vóór verwijdering op blootstelling worden gecontroleerd; concurrerende afspraken geïdentificeerd en van elk er één gekozen met een convergentieregel; de grootste bestanden opgesplitst naar verantwoordelijkheid; fout-, laad- en lege toestanden toegevoegd waar ze ontbraken; foutmeldingen menselijk gemaakt; een formatter en linter toegepast; en de afspraken in de repository vastgelegd, zodat de volgende sessie ze volgt.
 
-LaunchStudio doet dit bij het overnemen van een door AI gebouwd product, en het is wat elk volgend stuk werk goedkoper maakt. De engineers zijn van Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit bij het overnemen van een door AI gebouwd product, en het is wat elk volgend stuk werk goedkoper maakt. De engineers zijn van Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Stuur ons uw repository](https://launchstudio.eu/nl/#contact) en wij vertellen u waar de duplicatie zit.
 
@@ -132,14 +132,14 @@ Het tarief van de toeristenbelasting in één gemeente veranderde. Rogier paste 
 
 Het tarief stond op zeven plekken: twee componenten, een factuurgenerator, een offertevoorbeeld, een pdf-sjabloon, een samenvattingsberekening en een standaardwaarde in de database. Hij had er vier gevonden en aangepast.
 
-Twee werkdagen: de zeven kopieën samengebracht in één configuratie met één rekenfunctie, wat ook blootlegde dat twee van de kopieën al maanden licht verschilden — een afrondingsverschil dat facturen opleverde die een cent afweken van hun eigen regels; dezelfde behandeling toegepast op de opmaak van datums, die vijf implementaties had met drie verschillende gedragingen rond middernacht; 14 dode componenten, 6 ongebruikte endpoints en 3 verlaten tabellen verwijderd, waarvan een van de endpoints een export zonder authenticatie van alle boekingen was, overgebleven van een vroeg experiment; twee concurrerende manieren om data op te halen teruggebracht tot één; de vier grootste bestanden, alle boven de 600 regels, opgesplitst in datatoegang, logica en weergave; laad- en lege toestanden toegevoegd aan elf schermen die lege pagina's hadden getoond; foutmeldingen herschreven van ruwe technische tekst naar zinnen; een formatter toegepast; en een afsprakenbestand gecommit dat de gekozen patronen beschrijft.
+Twee werkdagen: de zeven kopieën samengebracht in één configuratie met één rekenfunctie, wat ook blootlegde dat twee van de kopieën al maanden licht verschilden - een afrondingsverschil dat facturen opleverde die een cent afweken van hun eigen regels; dezelfde behandeling toegepast op de opmaak van datums, die vijf implementaties had met drie verschillende gedragingen rond middernacht; 14 dode componenten, 6 ongebruikte endpoints en 3 verlaten tabellen verwijderd, waarvan een van de endpoints een export zonder authenticatie van alle boekingen was, overgebleven van een vroeg experiment; twee concurrerende manieren om data op te halen teruggebracht tot één; de vier grootste bestanden, alle boven de 600 regels, opgesplitst in datatoegang, logica en weergave; laad- en lege toestanden toegevoegd aan elf schermen die lege pagina's hadden getoond; foutmeldingen herschreven van ruwe technische tekst naar zinnen; een formatter toegepast; en een afsprakenbestand gecommit dat de gekozen patronen beschrijft.
 
 **Resultaat:** een wijziging van de toeristenbelasting kost nu één aanpassing. Het export-endpoint zonder authenticatie was acht maanden bereikbaar geweest en was de ernstigste bevinding, alleen ontdekt omdat er dode code werd verwijderd. Rogier vertelt dat latere AI-sessies merkbaar consistenter werk opleveren sinds het afsprakenbestand werd toegevoegd, wat hij niet had verwacht.
 
 > *"Ik paste het belastingtarief op vier plekken aan en dacht dat ik klaar was. Het stond op zeven plekken, en twee ervan waren het sinds het voorjaar stilletjes met elkaar oneens."*
-> — **Rogier Slagter, Oprichter, Verhuurbeheer (Zandvoort)**
+> - **Rogier Slagter, Oprichter, Verhuurbeheer (Zandvoort)**
 
-**Kosten & Doorlooptijd:** €2.700 (samenbrengen van gedupliceerde belasting- en datumlogica, verwijderen van dode code met controle op blootstelling, verzoenen van afspraken, opsplitsen van grote bestanden, afhandeling van fout- en lege toestanden, herschrijven van foutmeldingen, opmaak, documentatie van afspraken) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.700 (samenbrengen van gedupliceerde belasting- en datumlogica, verwijderen van dode code met controle op blootstelling, verzoenen van afspraken, opsplitsen van grote bestanden, afhandeling van fout- en lege toestanden, herschrijven van foutmeldingen, opmaak, documentatie van afspraken) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -153,7 +153,7 @@ Omdat een wijziging op drie van de vier plekken er één fout laat, en als de ge
 
 ### Is dode code echt schadelijk?
 
-Ja. Het is context die bij elk verzoek naar het model wordt gestuurd, en een verlaten endpoint of tabel is nog steeds bereikbaar — vaak zonder enige autorisatie, omdat het nooit af was.
+Ja. Het is context die bij elk verzoek naar het model wordt gestuurd, en een verlaten endpoint of tabel is nog steeds bereikbaar - vaak zonder enige autorisatie, omdat het nooit af was.
 
 ### Moet ik gegenereerde code herschrijven zodat ze eruitziet als handgeschreven?
 
@@ -181,7 +181,7 @@ Een afsprakenbestand in de repository dat de patronen beschrijft die u koos. Ass
       "name": "Waarom doet gedupliceerde logica ertoe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een wijziging op drie van de vier kopieën laat er één fout — en als de logica geld, rechten of de beperking van data betreft, is dat een echte fout."
+        "text": "Een wijziging op drie van de vier kopieën laat er één fout - en als de logica geld, rechten of de beperking van data betreft, is dat een echte fout."
       }
     },
     {
@@ -189,7 +189,7 @@ Een afsprakenbestand in de repository dat de patronen beschrijft die u koos. Ass
       "name": "Is dode code schadelijk in een door AI gebouwd project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — het is betaalde context bij elk verzoek, en verlaten endpoints of tabellen zijn vaak bereikbaar zonder autorisatie."
+        "text": "Ja - het is betaalde context bij elk verzoek, en verlaten endpoints of tabellen zijn vaak bereikbaar zonder autorisatie."
       }
     },
     {
@@ -205,7 +205,7 @@ Een afsprakenbestand in de repository dat de patronen beschrijft die u koos. Ass
       "name": "Wat verbetert toekomstige AI-sessies het meest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een afsprakenbestand in de repository dat uw gekozen patronen beschrijft — assistenten lezen het en leveren merkbaar consistenter werk op."
+        "text": "Een afsprakenbestand in de repository dat uw gekozen patronen beschrijft - assistenten lezen het en leveren merkbaar consistenter werk op."
       }
     }
   ]

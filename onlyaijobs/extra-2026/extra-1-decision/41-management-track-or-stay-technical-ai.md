@@ -35,21 +35,21 @@ Content Format: Decision Guide
 }
 </script>
 
-After five or six years of doing the work well, the offer arrives in some form: lead the team, take on two or three people, own the planning. In many Dutch organisations this is the only visible way up, because a formal technical ladder never existed — the next salary scale is a management scale, and the conversation about your development quietly becomes a conversation about headcount. Some people discover they are good at it and find it more satisfying than modelling ever was. Others spend two years doing a job they did not want, lose the technical edge that made them valuable and find the route back harder than anyone warned them.
+After five or six years of doing the work well, the offer arrives in some form: lead the team, take on two or three people, own the planning. In many Dutch organisations this is the only visible way up, because a formal technical ladder never existed - the next salary scale is a management scale, and the conversation about your development quietly becomes a conversation about headcount. Some people discover they are good at it and find it more satisfying than modelling ever was. Others spend two years doing a job they did not want, lose the technical edge that made them valuable and find the route back harder than anyone warned them.
 
 ## What the Job Actually Becomes
 
 The change is larger than the job title suggests, and it arrives faster than people expect.
 
-Your calendar fills with other people's problems: one-to-ones, hiring, planning, stakeholder negotiation, performance conversations, approving holidays. Your own delivery becomes the residual — the thing you do if the week leaves room, which it usually does not.
+Your calendar fills with other people's problems: one-to-ones, hiring, planning, stakeholder negotiation, performance conversations, approving holidays. Your own delivery becomes the residual - the thing you do if the week leaves room, which it usually does not.
 
 Your feedback loop changes fundamentally. As an engineer you know by Friday whether something works. As a manager you find out in six months whether the person you hired was right, whether the structure you designed helps, whether the priority you defended was the correct one.
 
-And your definition of a good day inverts. A day in which you wrote no code but unblocked three people, resolved a dispute with another department and stopped a bad project is an excellent day — if that is satisfying to you. For many technically minded people it feels like a day in which nothing happened.
+And your definition of a good day inverts. A day in which you wrote no code but unblocked three people, resolved a dispute with another department and stopped a bad project is an excellent day - if that is satisfying to you. For many technically minded people it feels like a day in which nothing happened.
 
 ## The Honest Case For Taking It
 
-**Influence over what gets built.** The decisions that determine whether a data team produces value — which problems are chosen, who is hired, how work is prioritised — are made above the individual contributor level.
+**Influence over what gets built.** The decisions that determine whether a data team produces value - which problems are chosen, who is hired, how work is prioritised - are made above the individual contributor level.
 
 **You can protect the work you believe in.** Managers who understand the technical reality shield their teams from unrealistic promises. Managers who do not, cannot.
 
@@ -77,7 +77,7 @@ And your definition of a good day inverts. A day in which you wrote no code but 
 - **What proportion of my time is expected to be hands-on?** Then ask what happened to the last person who tried to protect that time.
 - **Do I own hiring, budget and priorities, or only delivery?** A lead without those owns the consequences without the levers.
 - **Is there a technical ladder here?** If a principal or staff-level track exists, the choice is genuine rather than forced.
-- **How is my performance judged?** Team outcomes, or my own output, or both — and by whom.
+- **How is my performance judged?** Team outcomes, or my own output, or both - and by whom.
 - **What support exists for a first-time manager?** Training, a mentor, an experienced peer. Most organisations promote people and then leave them to it.
 
 ## The Third Option Most People Miss
@@ -92,11 +92,11 @@ The choice is frequently presented as lead or stay put, and there is usually a m
 
 **Mentoring formally.** Responsibility for developing one or two people, recognised in your objectives, without becoming their manager.
 
-In organisations with formal job evaluation systems or collective agreements, ask which classification each option falls under — sometimes technical leadership sits in the same scale as team lead, which removes the financial argument entirely.
+In organisations with formal job evaluation systems or collective agreements, ask which classification each option falls under - sometimes technical leadership sits in the same scale as team lead, which removes the financial argument entirely.
 
 ## If You Take It, Protect Three Things
 
-**One technical commitment per quarter.** Small, real and in production — a pipeline, a review, a prototype. Not to stay expert, which is no longer your job, but to stay literate.
+**One technical commitment per quarter.** Small, real and in production - a pipeline, a review, a prototype. Not to stay expert, which is no longer your job, but to stay literate.
 
 **Time to read code.** Reviewing your team's work regularly is the cheapest way to keep judgement current, and it improves your management as well.
 
@@ -106,7 +106,7 @@ In organisations with formal job evaluation systems or collective agreements, as
 
 Refusing without an alternative reads as lack of ambition and quietly reduces what you are offered later. Refusing with a proposal reads as clarity.
 
-Name the technical scope you want, the influence you would like over direction, and the recognition you expect for it — level, salary, title, visibility. Ask what would need to be true for a principal-level technical role to exist here.
+Name the technical scope you want, the influence you would like over direction, and the recognition you expect for it - level, salary, title, visibility. Ask what would need to be true for a principal-level technical role to exist here.
 
 Some employers will say it cannot exist. That is a useful answer, and it tells you whether your next move is internal or external.
 
@@ -116,11 +116,11 @@ Returning to hands-on work after a period in management is common enough to be u
 
 What helps: staying close to the code while managing, being specific about what you did technically, and accepting that the first role back may be a level below where your management title sat. What does not help: claiming to have remained fully hands-on when you have not, which surfaces within twenty minutes of a technical interview.
 
-In a market where regulated employers increasingly need people who can both build and explain systems, the combination of technical depth and management experience is genuinely valuable — just not to everyone, and not immediately.
+In a market where regulated employers increasingly need people who can both build and explain systems, the combination of technical depth and management experience is genuinely valuable - just not to everyone, and not immediately.
 
 ## What Good Support for a First-Time Manager Looks Like
 
-Most organisations promote someone and then leave them to work it out, which is how capable engineers become unhappy managers. Before accepting, find out what support actually exists — and if the answer is none, ask for it as part of the offer.
+Most organisations promote someone and then leave them to work it out, which is how capable engineers become unhappy managers. Before accepting, find out what support actually exists - and if the answer is none, ask for it as part of the offer.
 
 **Training in the parts that are genuinely difficult.** Not generic leadership theory, but the specific situations you will face: giving critical feedback, handling underperformance, running a hiring process, managing someone older or more experienced than you.
 
@@ -130,7 +130,7 @@ Most organisations promote someone and then leave them to work it out, which is 
 
 **An explicit ramp-down of your delivery expectations.** If nobody adjusts what you are expected to produce personally, you will do two jobs and resent both.
 
-**HR support you can actually reach.** The first time someone on your team has a serious problem — illness, conflict, a performance issue with employment consequences — you will need someone who knows Dutch employment practice.
+**HR support you can actually reach.** The first time someone on your team has a serious problem - illness, conflict, a performance issue with employment consequences - you will need someone who knows Dutch employment practice.
 
 An employer who can describe all five has promoted people before. One who offers only the title has not.
 
@@ -150,7 +150,7 @@ The employer agrees, partly because the alternative was losing her. Two years la
 
 It helps to consider where each path tends to lead, because the first year is not representative of either.
 
-**People who took management and stayed** generally describe the second year as the point where it became satisfying — once hiring, feedback and prioritisation stopped being frightening and started being craft. Their technical depth narrows but their judgement broadens, and they become the person other teams consult about whether an idea is feasible.
+**People who took management and stayed** generally describe the second year as the point where it became satisfying - once hiring, feedback and prioritisation stopped being frightening and started being craft. Their technical depth narrows but their judgement broadens, and they become the person other teams consult about whether an idea is feasible.
 
 **People who took management and returned** usually did so after two or three years, at a level slightly below their management title, and describe the experience as worth having. They understand why decisions get made the way they do, which makes them easier to work with and more effective at arguing for technical investment.
 
@@ -163,14 +163,14 @@ The pattern suggests the real risk is not choosing wrongly between the two paths
 ## Key Takeaways
 
 - Management changes the job fundamentally: other people's problems fill the calendar, feedback loops lengthen and your own delivery becomes residual.
-- Take it for influence over what gets built, to protect your team and because technically literate managers are scarce — not because it is the only visible step.
+- Take it for influence over what gets built, to protect your team and because technically literate managers are scarce - not because it is the only visible step.
 - Technical skill decays quietly within a couple of years, and the route back usually involves a level reset and honest explanation.
 - Ask how many people, what you own, whether a technical ladder exists and what support first-time managers receive.
-- Negotiate the middle path — technical leadership, project leadership, formal mentoring or a reviewed trial — and if you decline, say what you want instead.
+- Negotiate the middle path - technical leadership, project leadership, formal mentoring or a reviewed trial - and if you decline, say what you want instead.
 
 ## Where to Start
 
-Before accepting or refusing, find out whether a senior technical track exists at employers near you — the answer often reframes the choice from "lead or stagnate" to "which employer values depth".
+Before accepting or refusing, find out whether a senior technical track exists at employers near you - the answer often reframes the choice from "lead or stagnate" to "which employer values depth".
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -180,7 +180,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 Only if you want the work itself. In organisations without a technical ladder it may be the only visible step, which is a reason to negotiate an alternative rather than to accept by default.
 
 ### (Scenario: candidate worried about skills) How quickly do technical skills fade in management?
-Faster than expected — within a couple of years without daily practice, tooling and instincts drift. Protect one small technical commitment per quarter and keep reading code.
+Faster than expected - within a couple of years without daily practice, tooling and instincts drift. Protect one small technical commitment per quarter and keep reading code.
 
 ### (Scenario: engineer who prefers building) Can I decline without damaging my career?
 Yes, provided you propose an alternative: technical leadership, project ownership or formal mentoring, with the level and recognition you expect stated clearly.

@@ -20,21 +20,21 @@ target_persona: "CTO"
 }
 </script>
 
-If shipping a release still means one engineer SSHing into a production box on a Thursday evening and running a checklist from memory, your competitors aren't just shipping faster than you — they're sleeping better, too.
+If shipping a release still means one engineer SSHing into a production box on a Thursday evening and running a checklist from memory, your competitors aren't just shipping faster than you - they're sleeping better, too.
 
 **The Pain:** A CTO at a mid-market SaaS company still relies on a senior engineer manually running a fifteen-step deployment checklist every release, because the original build was never wired up to a proper CI/CD pipeline and nobody has found the "right time" to fix it. That engineer is the only person who fully trusts the process, deploys happen only on weekday evenings to minimize risk, and the whole team quietly dreads release day.
 
-**The Agitation:** Manual deployment isn't just slower, it's measurably more failure-prone — industry data consistently shows manual, infrequent deploys carry a dramatically higher change-failure rate than automated pipelines with proper staging and rollback, and every failed manual deploy costs hours of senior engineering time to diagnose and roll back by hand, at 9pm, off the clock. The company estimates manual release overhead and failure-recovery time costs roughly €6,000-€10,000 a month in senior engineering time alone, on top of a bus-factor-of-one risk: if that one engineer leaves, nobody else fully understands how to safely ship the product.
+**The Agitation:** Manual deployment isn't just slower, it's measurably more failure-prone - industry data consistently shows manual, infrequent deploys carry a dramatically higher change-failure rate than automated pipelines with proper staging and rollback, and every failed manual deploy costs hours of senior engineering time to diagnose and roll back by hand, at 9pm, off the clock. The company estimates manual release overhead and failure-recovery time costs roughly €6,000-€10,000 a month in senior engineering time alone, on top of a bus-factor-of-one risk: if that one engineer leaves, nobody else fully understands how to safely ship the product.
 
 ## The Architectural Mandate
 
-A CI/CD gap is an operational risk with a specific, well-understood remediation path, and the mandate is to treat deployment as code, not as institutional memory held by one person. The technical foundation is a pipeline that runs automated tests on every commit, builds artifacts deterministically, and deploys through defined, repeatable stages — development, staging, production — with the same process every single time, removing the variance that makes manual deploys unpredictable.
+A CI/CD gap is an operational risk with a specific, well-understood remediation path, and the mandate is to treat deployment as code, not as institutional memory held by one person. The technical foundation is a pipeline that runs automated tests on every commit, builds artifacts deterministically, and deploys through defined, repeatable stages - development, staging, production - with the same process every single time, removing the variance that makes manual deploys unpredictable.
 
 The core architectural components are non-negotiable at this point in the industry's maturity. Automated testing gates that block a deploy on failing unit, integration, or smoke tests catch defects before they reach production, not after a customer reports them. Infrastructure as code (Terraform, CloudFormation, or equivalent) makes environment configuration reproducible and auditable instead of a snowflake server someone configured by hand years ago. Blue-green or canary deployment strategies let a release roll out to a small percentage of traffic first, with automated rollback triggered by error-rate thresholds, converting "deploy and pray" into a controlled, reversible operation.
 
-The organizational mandate that makes this stick is decoupling deployment from a single trusted individual. A pipeline that any engineer on the team can trigger with confidence, because the safety checks are built into the process rather than held in one person's head, eliminates the bus-factor risk and removes the psychological weight that turns release day into a dreaded event instead of a routine one. This is also what makes continuous delivery — shipping smaller changes more frequently — actually safe, which itself further reduces risk, because smaller deploys have proportionally smaller blast radius when something does go wrong.
+The organizational mandate that makes this stick is decoupling deployment from a single trusted individual. A pipeline that any engineer on the team can trigger with confidence, because the safety checks are built into the process rather than held in one person's head, eliminates the bus-factor risk and removes the psychological weight that turns release day into a dreaded event instead of a routine one. This is also what makes continuous delivery - shipping smaller changes more frequently - actually safe, which itself further reduces risk, because smaller deploys have proportionally smaller blast radius when something does go wrong.
 
-For companies evaluating software development outsourcing services to close this gap, the mandate is to insist on DevOps maturity as a deliverable, not an afterthought bolted on after the "real" feature work — a pipeline built by a team that treats deployment automation as core engineering discipline, not a side project, is what actually survives contact with a growing, changing production system over years, not just the first few releases.
+For companies evaluating software development outsourcing services to close this gap, the mandate is to insist on DevOps maturity as a deliverable, not an afterthought bolted on after the "real" feature work - a pipeline built by a team that treats deployment automation as core engineering discipline, not a side project, is what actually survives contact with a growing, changing production system over years, not just the first few releases.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -47,12 +47,12 @@ This is Dutch Management × Vietnamese Mastery: disciplined DevOps governance pa
 
 ### A Namur Edtech's Release-Day Dread
 
-Scolara, a Namur-based edtech SaaS provider, had one senior engineer who owned the entire manual deployment process — a fifteen-step checklist built over four years, undocumented beyond his own memory. He'd been quietly planning to leave for another opportunity, and the CTO realized deploys would essentially stop the day he did.
+Scolara, a Namur-based edtech SaaS provider, had one senior engineer who owned the entire manual deployment process - a fifteen-step checklist built over four years, undocumented beyond his own memory. He'd been quietly planning to leave for another opportunity, and the CTO realized deploys would essentially stop the day he did.
 
 Manifera's Amsterdam team designed a CI/CD pipeline with automated test gates, infrastructure as code, and canary deployment with automated rollback triggers. The Vietnam pod built and validated it against six months of Scolara's actual release history to make sure edge cases in their process were covered, not just the happy path. Deploy frequency rose from twice a month to several times a week, change-failure rate dropped by more than half, and when the senior engineer did leave two months later, releases continued without disruption.
 
 > *"We stopped being one resignation away from not being able to ship our own product."*
-> — **CTO, Scolara**
+> - **CTO, Scolara**
 
 ## Legacy Agency vs. Manifera Pod
 
@@ -66,13 +66,13 @@ Manifera's Amsterdam team designed a CI/CD pipeline with automated test gates, i
 
 ## The Economics
 
-Manual deployment is a standing operational cost disguised as a one-time process that "works fine for now" — senior engineering time spent on manual releases and failure recovery routinely runs €6,000-€10,000 a month for a mid-market team, and that figure doesn't include the catastrophic cost if the one engineer who understands the process leaves and takes institutional knowledge with them. A production-grade CI/CD pipeline typically costs a fraction of a year's worth of that manual overhead to build, and pays for itself in the first serious incident it prevents. [Talk to Manifera](https://www.manifera.com/contact-us/) about closing your CI/CD gap before it closes around you.
+Manual deployment is a standing operational cost disguised as a one-time process that "works fine for now" - senior engineering time spent on manual releases and failure recovery routinely runs €6,000-€10,000 a month for a mid-market team, and that figure doesn't include the catastrophic cost if the one engineer who understands the process leaves and takes institutional knowledge with them. A production-grade CI/CD pipeline typically costs a fraction of a year's worth of that manual overhead to build, and pays for itself in the first serious incident it prevents. [Talk to Manifera](https://www.manifera.com/contact-us/) about closing your CI/CD gap before it closes around you.
 
 ## Frequently Asked Questions
 
 ### (Scenario: CTO whose deploys depend on one senior engineer) How risky is it that only one person on our team can safely run production deploys?
 
-Extremely risky — this is a bus-factor-of-one problem, meaning that engineer's absence, whether from illness, vacation, or resignation, can stop your ability to ship entirely. A properly built CI/CD pipeline encodes the deployment process into automation any team member can trigger with confidence.
+Extremely risky - this is a bus-factor-of-one problem, meaning that engineer's absence, whether from illness, vacation, or resignation, can stop your ability to ship entirely. A properly built CI/CD pipeline encodes the deployment process into automation any team member can trigger with confidence.
 
 ### (Scenario: CTO deciding whether CI/CD investment is worth it now) Is investing in CI/CD worth it if our manual process "still works"?
 

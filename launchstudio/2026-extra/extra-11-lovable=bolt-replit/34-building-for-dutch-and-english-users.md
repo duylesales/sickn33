@@ -22,15 +22,15 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Most products built in the Netherlands face the same question within a few months of launch: the interface is in English because that is how it was prompted, half the customers are Dutch, and somebody has asked whether there is a Dutch version.
 
-The instinct is to treat this as a translation task — export the text, translate it, put it back. That is roughly a quarter of the work, and the remaining three quarters are the parts that produce a product which is technically bilingual and obviously foreign: dates in the wrong format, a confirmation email in English after a Dutch checkout, a search that cannot find Dutch words, and prices displayed in a way no Dutch customer writes them.
+The instinct is to treat this as a translation task - export the text, translate it, put it back. That is roughly a quarter of the work, and the remaining three quarters are the parts that produce a product which is technically bilingual and obviously foreign: dates in the wrong format, a confirmation email in English after a Dutch checkout, a search that cannot find Dutch words, and prices displayed in a way no Dutch customer writes them.
 
 ## What Generated Code Does With Text
 
 AI builders write text directly into components. There is no separation between the interface and its wording, because nothing in the description of a product suggested there needed to be.
 
-That means the first real task is extraction: pulling every user-visible string into a structure where a translation can exist alongside it. For a small product this is a day's work and it is unavoidable — without it, adding a language means duplicating your entire interface, which is how bilingual products end up permanently out of sync.
+That means the first real task is extraction: pulling every user-visible string into a structure where a translation can exist alongside it. For a small product this is a day's work and it is unavoidable - without it, adding a language means duplicating your entire interface, which is how bilingual products end up permanently out of sync.
 
-Two details make the difference between a clean job and one that is redone later. Strings need to be identified by meaning rather than by their English text, so that changing the English does not orphan the Dutch. And text with variables inside it — "3 bookings remaining" — must be handled as a template rather than assembled from fragments, because word order differs between languages and concatenation produces sentences that are grammatical in neither.
+Two details make the difference between a clean job and one that is redone later. Strings need to be identified by meaning rather than by their English text, so that changing the English does not orphan the Dutch. And text with variables inside it - "3 bookings remaining" - must be handled as a template rather than assembled from fragments, because word order differs between languages and concatenation produces sentences that are grammatical in neither.
 
 ## The Formats Nobody Translates
 
@@ -44,7 +44,7 @@ This is where a bilingual product reveals itself as an afterthought.
 
 **Addresses and postcodes.** Dutch postcodes have a specific format and appear before the city. A form built to an American layout is filled in awkwardly by every Dutch user.
 
-**Names.** Dutch surnames frequently carry prefixes — "de", "van", "van der" — which affects alphabetical sorting and any assumption that a name splits neatly into two fields.
+**Names.** Dutch surnames frequently carry prefixes - "de", "van", "van der" - which affects alphabetical sorting and any assumption that a name splits neatly into two fields.
 
 None of these are translation problems. They are formatting decisions that need to follow the user's language rather than the developer's default.
 
@@ -52,13 +52,13 @@ None of these are translation problems. They are formatting decisions that need 
 
 A user switches your interface to Dutch, completes a purchase, and receives an English confirmation. This happens in nearly every bilingual product built this way, because the interface language lives in the browser and the email is generated on the server, which has no idea what the user chose.
 
-The fix is to store a language preference on the account and use it for everything sent to that person: confirmations, invoices, password resets, notifications. It also needs a sensible default for people who have not chosen — usually derived from the browser on signup, and always changeable afterwards.
+The fix is to store a language preference on the account and use it for everything sent to that person: confirmations, invoices, password resets, notifications. It also needs a sensible default for people who have not chosen - usually derived from the browser on signup, and always changeable afterwards.
 
 Invoices deserve specific attention. A Dutch business customer generally expects a Dutch invoice with the correct terminology, and the document is read by their accountant rather than by them.
 
 ## Search and Content Behave Differently Per Language
 
-If your product has search, language matters more than founders expect. Word stemming rules differ, and Dutch compound words mean a search for one term should find text containing it as part of a longer word — behaviour that English-configured search will not produce.
+If your product has search, language matters more than founders expect. Word stemming rules differ, and Dutch compound words mean a search for one term should find text containing it as part of a longer word - behaviour that English-configured search will not produce.
 
 If your database holds content in both languages, decide whether search covers both or filters to the user's language. Both are defensible; having never decided is what produces results users find confusing.
 
@@ -66,7 +66,7 @@ If your database holds content in both languages, decide whether search covers b
 
 For public pages, two things matter and are usually missing.
 
-**Each language needs its own address.** A page whose content changes based on a stored preference cannot be indexed separately for each language, because a crawler sees one version. Distinct paths — a language prefix is the common pattern — give each version an indexable home.
+**Each language needs its own address.** A page whose content changes based on a stored preference cannot be indexed separately for each language, because a crawler sees one version. Distinct paths - a language prefix is the common pattern - give each version an indexable home.
 
 **Language relationships need declaring.** Alternate-language annotations tell search engines these pages are versions of each other, so the right one is offered to the right person rather than the two competing.
 
@@ -76,7 +76,7 @@ This is also the point to decide which language a page exists in at all. Many Du
 
 Restraint saves a great deal of maintenance.
 
-Product names and brand terms stay as they are. Technical identifiers, reference numbers and codes stay. Legal documents need a professional translation or a clear statement of which version governs — an automatically translated terms page is worse than an English one honestly labelled.
+Product names and brand terms stay as they are. Technical identifiers, reference numbers and codes stay. Legal documents need a professional translation or a clear statement of which version governs - an automatically translated terms page is worse than an English one honestly labelled.
 
 And user-generated content is not yours to translate. A listing written in Dutch stays in Dutch; offering a translation button is a feature, not an obligation.
 
@@ -88,7 +88,7 @@ And user-generated content is not yours to translate. A listing written in Dutch
 
 **Add the language preference to accounts and wire it to emails,** which removes the most visible inconsistency.
 
-**Then translate,** ideally with a native speaker reviewing rather than a machine pass alone — Dutch produced by translation tools reads as translated, and in a small market that is noticed.
+**Then translate,** ideally with a native speaker reviewing rather than a machine pass alone - Dutch produced by translation tools reads as translated, and in a small market that is noticed.
 
 **Finally, handle public pages and their language signals** if search traffic matters to you.
 
@@ -96,17 +96,17 @@ And user-generated content is not yours to translate. A listing written in Dutch
 
 Bilingual support is one of those features that is cheap when designed and expensive when bolted on, mostly because the extraction work has to happen either way and doing it later means doing it while a live product depends on the strings.
 
-LaunchStudio handles it as part of the last-mile work on an AI-built product: strings extracted and structured, formatting made locale-aware, language preference stored and applied to every outgoing message, search configured for Dutch as well as English, and public pages given distinct addresses with the right language signals — without touching the interface you designed in Lovable.
+LaunchStudio handles it as part of the last-mile work on an AI-built product: strings extracted and structured, formatting made locale-aware, language preference stored and applied to every outgoing message, search configured for Dutch as well as English, and public pages given distinct addresses with the right language signals - without touching the interface you designed in Lovable.
 
 Behind it is Manifera, eleven years of building software for clients across the EU and Southeast Asia, including Vodafone and TNO, from offices in Amsterdam and Ho Chi Minh City where bilingual products are routine rather than exceptional. See the [packages page](https://launchstudio.eu/en/#packages), or [describe your project](https://launchstudio.eu/en/#contact) and we will tell you what your product needs within one business day.
 
 ## Which Language Should the Product Default To?
 
-A decision founders make by accident — usually English, because that is the language the tool was prompted in — and one worth making deliberately, because it shapes who takes the product seriously.
+A decision founders make by accident - usually English, because that is the language the tool was prompted in - and one worth making deliberately, because it shapes who takes the product seriously.
 
 **Selling to Dutch consumers:** Dutch, without hesitation. Consumer trust in the Netherlands is closely tied to a product speaking the customer's language, and an English-only consumer product reads as foreign or unfinished regardless of quality.
 
-**Selling to Dutch businesses:** usually Dutch for anything commercial — the marketing pages, the pricing, the invoices, the contracts — with the application interface acceptable in English if the users are technical. Procurement documents and anything a finance department reads should be Dutch.
+**Selling to Dutch businesses:** usually Dutch for anything commercial - the marketing pages, the pricing, the invoices, the contracts - with the application interface acceptable in English if the users are technical. Procurement documents and anything a finance department reads should be Dutch.
 
 **Selling to the public sector, healthcare or education:** Dutch, throughout. This is frequently a procurement requirement rather than a preference, and it extends to your privacy statement and support.
 
@@ -114,13 +114,13 @@ A decision founders make by accident — usually English, because that is the la
 
 **Mixed audiences:** detect on first visit, let the user change it, and remember the choice on the account rather than only in the browser.
 
-The mistake worth avoiding is a half-Dutch product — Dutch marketing pages leading to an English interface, or a Dutch interface sending English emails. That inconsistency does more damage than either language used consistently, because it reads as carelessness rather than as a language choice.
+The mistake worth avoiding is a half-Dutch product - Dutch marketing pages leading to an English interface, or a Dutch interface sending English emails. That inconsistency does more damage than either language used consistently, because it reads as carelessness rather than as a language choice.
 
 ## Testing the Second Language Properly
 
 Bilingual products are usually tested in the language the founder thinks in, which is how the other version reaches customers with obvious problems intact.
 
-**Switch the language and complete every flow.** Signup, the core action, payment, password reset. Not a glance at the interface — the whole path, including the emails each step sends.
+**Switch the language and complete every flow.** Signup, the core action, payment, password reset. Not a glance at the interface - the whole path, including the emails each step sends.
 
 **Check the emails in both languages,** in a real inbox. This is where the inconsistency lives, and it is invisible from inside the app.
 
@@ -128,7 +128,7 @@ Bilingual products are usually tested in the language the founder thinks in, whi
 
 **Watch the layout.** Dutch text runs longer than English, frequently by a fifth or more. Buttons designed around a short English label break with the Dutch equivalent, and compound words do not wrap where a designer expected.
 
-**Have a native speaker use it for ten minutes.** Not proofread the strings — use it. Awkward phrasing that reads acceptably in a list is immediately obvious in context, and in a small market that awkwardness is what makes a product feel imported.
+**Have a native speaker use it for ten minutes.** Not proofread the strings - use it. Awkward phrasing that reads acceptably in a list is immediately obvious in context, and in a small market that awkwardness is what makes a product feel imported.
 
 ## Real example
 
@@ -145,9 +145,9 @@ Seven business days of work: strings extracted into a proper structure; all date
 **Result:** wrong-day arrivals reported by practices dropped to near zero over the following two months, and two practices that had been evaluating a competitor stayed.
 
 > *"Everything was translated. It still felt like a foreign product, and it turned out the reason was that we were showing Dutch physiotherapists American dates."*
-> — **Lotte Verhoeven, Founder, Praktijkplanner (Eindhoven)**
+> - **Lotte Verhoeven, Founder, Praktijkplanner (Eindhoven)**
 
-**Cost & Timeline:** €3,250 (string extraction, locale-aware formatting, language preference and email routing, Dutch invoicing, language signals) — completed in 7 business days.
+**Cost & Timeline:** €3,250 (string extraction, locale-aware formatting, language preference and email routing, Dutch invoicing, language signals) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ For public pages you want indexed, yes. A page that changes language based on a 
 
 ### Should I machine-translate the interface?
 
-As a starting point it is acceptable, with a native speaker reviewing before release. For legal documents it is not appropriate — use a professional translation or state clearly which language version governs.
+As a starting point it is acceptable, with a native speaker reviewing before release. For legal documents it is not appropriate - use a professional translation or state clearly which language version governs.
 
 ### What formatting differences actually matter for Dutch users?
 
@@ -181,7 +181,7 @@ Date order and written months, comma as decimal separator, 24-hour time, weeks s
       "name": "Is adding a second language just a translation job?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — translation is about a quarter of it. String extraction, locale-aware dates, numbers and currency, language-routed emails and per-language search are the rest."
+        "text": "No - translation is about a quarter of it. String extraction, locale-aware dates, numbers and currency, language-routed emails and per-language search are the rest."
       }
     },
     {
@@ -197,7 +197,7 @@ Date order and written months, comma as decimal separator, 24-hour time, weeks s
       "name": "Do I need separate URLs for each language?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For public pages you want indexed, yes — distinct paths with alternate-language annotations, since a crawler sees only one version of a preference-driven page."
+        "text": "For public pages you want indexed, yes - distinct paths with alternate-language annotations, since a crawler sees only one version of a preference-driven page."
       }
     },
     {

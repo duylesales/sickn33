@@ -20,23 +20,23 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Every AI coding tool worth using has an export or download button, and almost every founder clicks it exactly once — the day they need to switch hosting providers, bring on a developer, or move away from the platform for some other practical reason. That single click is usually the first time anyone reads the terms attached to it, and by then, whatever those terms say has often already been true for months. Here's how to actually check the fine print on an AI tool download before it matters, not after.
+Every AI coding tool worth using has an export or download button, and almost every founder clicks it exactly once - the day they need to switch hosting providers, bring on a developer, or move away from the platform for some other practical reason. That single click is usually the first time anyone reads the terms attached to it, and by then, whatever those terms say has often already been true for months. Here's how to actually check the fine print on an AI tool download before it matters, not after.
 
 ## Step 1: Find the actual terms, not the marketing page
 
-Most AI coding platforms have two very different documents: a marketing page that describes exporting your code as a simple, founder-friendly feature, and a terms of service or usage agreement that spells out what rights the platform retains over code generated through it. The terms you need are almost never the ones linked from the export button itself — search the platform's legal or terms-of-service pages directly, and look specifically for language about "generated content," "output," or "training data," not just "your code" or "ownership."
+Most AI coding platforms have two very different documents: a marketing page that describes exporting your code as a simple, founder-friendly feature, and a terms of service or usage agreement that spells out what rights the platform retains over code generated through it. The terms you need are almost never the ones linked from the export button itself - search the platform's legal or terms-of-service pages directly, and look specifically for language about "generated content," "output," or "training data," not just "your code" or "ownership."
 
 ## Step 2: Look specifically for retained training rights
 
-The clause that catches founders off guard most often isn't about who owns the code — most platforms are reasonably clear that you own what you built. It's about whether the platform retains a right to use the code you generated, or patterns from it, to train future versions of its model. This is a separate right from ownership, and it can exist even in terms that clearly say the code is yours. Read specifically for phrases like "may use output to improve our services" or "for model training and development purposes" — these are the clauses that matter.
+The clause that catches founders off guard most often isn't about who owns the code - most platforms are reasonably clear that you own what you built. It's about whether the platform retains a right to use the code you generated, or patterns from it, to train future versions of its model. This is a separate right from ownership, and it can exist even in terms that clearly say the code is yours. Read specifically for phrases like "may use output to improve our services" or "for model training and development purposes" - these are the clauses that matter.
 
 ## Step 3: Check what happens to code you've already generated
 
-Some platforms' terms apply going forward from when you agree to them; others apply retroactively to anything you've already built on the platform. If your product has been live for months by the time you actually read the terms carefully, this distinction matters — you want to know whether six months of customer data and business logic sitting in that codebase is covered by whatever rights the platform has claimed, or only work generated after a specific date.
+Some platforms' terms apply going forward from when you agree to them; others apply retroactively to anything you've already built on the platform. If your product has been live for months by the time you actually read the terms carefully, this distinction matters - you want to know whether six months of customer data and business logic sitting in that codebase is covered by whatever rights the platform has claimed, or only work generated after a specific date.
 
 ## Step 4: Decide if the terms change your export timeline
 
-If you find a clause that concerns you — retained training rights over code touching real customer data, for instance — the practical question isn't whether to panic, it's whether to accelerate your export and migration timeline. Getting your code onto infrastructure you fully control, sooner rather than later, is usually the most direct way to limit how much of your product's history remains subject to a platform's broader terms.
+If you find a clause that concerns you - retained training rights over code touching real customer data, for instance - the practical question isn't whether to panic, it's whether to accelerate your export and migration timeline. Getting your code onto infrastructure you fully control, sooner rather than later, is usually the most direct way to limit how much of your product's history remains subject to a platform's broader terms.
 
 ## Step 5: Get a second read before you sign anything new
 
@@ -48,36 +48,36 @@ LaunchStudio is powered by Manifera, a software development company with 11+ yea
 
 Reading an entire terms-of-service document closely is a reasonable thing to skip when you're moving fast. A targeted search for specific phrases is not, and it takes a few minutes rather than an afternoon. Here's what to search for beyond the training-rights language already covered above.
 
-- **"Irrevocable" or "perpetual," near any mention of license or rights.** These words indicate a right the platform is granting itself that doesn't expire when you stop using the service or delete your account — worth knowing about specifically, since most founders assume any rights a platform holds end when the relationship does.
+- **"Irrevocable" or "perpetual," near any mention of license or rights.** These words indicate a right the platform is granting itself that doesn't expire when you stop using the service or delete your account - worth knowing about specifically, since most founders assume any rights a platform holds end when the relationship does.
 
-- **"Sublicense."** This indicates the platform can grant its own rights over your generated code to a third party — a partner, an acquirer, another vendor — not just use the code itself. It's a meaningfully broader right than simple internal use, and it's easy to miss if you're only scanning for "ownership" language.
+- **"Sublicense."** This indicates the platform can grant its own rights over your generated code to a third party - a partner, an acquirer, another vendor - not just use the code itself. It's a meaningfully broader right than simple internal use, and it's easy to miss if you're only scanning for "ownership" language.
 
 - **"Retain a copy" or "retain data," especially paired with a timeframe after account closure.** This tells you how long the platform keeps your code and data after you leave, which matters if any of that data is sensitive or if you'd prefer a clean, verifiable deletion rather than an indefinite retention period you have to take on faith.
 
-- **"As-is" or "no warranty," specifically regarding exported code.** Some platforms explicitly disclaim any guarantee that exported code is complete, functional, or free of the platform's own proprietary dependencies — meaning the export you get may need real engineering work before it runs independently, not just a change of hosting provider.
+- **"As-is" or "no warranty," specifically regarding exported code.** Some platforms explicitly disclaim any guarantee that exported code is complete, functional, or free of the platform's own proprietary dependencies - meaning the export you get may need real engineering work before it runs independently, not just a change of hosting provider.
 
-- **"Reserve the right to modify" without a defined notice period.** This tells you whether the platform commits to warning you before changing terms that affect code you've already generated, or whether changes can apply with little or no notice — relevant specifically for the retroactive-application question covered above.
+- **"Reserve the right to modify" without a defined notice period.** This tells you whether the platform commits to warning you before changing terms that affect code you've already generated, or whether changes can apply with little or no notice - relevant specifically for the retroactive-application question covered above.
 
 - **"Proprietary" or "platform-specific," near any description of the exported output.** This flags whether your exported code depends on components that only work within the platform's own infrastructure, which functionally limits how "portable" an export really is, regardless of what the marketing page for the export feature implies.
 
-None of these six phrases guarantee a problem when you find them — plenty of reasonable, founder-friendly terms include some of this language in a form that's genuinely fine. What they guarantee is a specific clause worth reading in full context rather than skimming past, which is the entire point of a search-and-find pass: it turns an intimidating full document into five or six specific spots worth ten minutes of careful attention each.
+None of these six phrases guarantee a problem when you find them - plenty of reasonable, founder-friendly terms include some of this language in a form that's genuinely fine. What they guarantee is a specific clause worth reading in full context rather than skimming past, which is the entire point of a search-and-find pass: it turns an intimidating full document into five or six specific spots worth ten minutes of careful attention each.
 
 ## Real example
 
 ### An AI-Native Founder in Action: the export button that raised more questions than it answered
 
-Fleur Lisse, a founder in Lisse, built "BloemBestel" — a flower-order management tool for florists — using Bolt. Six months after launch, with real customer data flowing through the app daily, she decided to switch hosting providers for cost reasons and used the platform's export feature to pull her code out.
+Fleur Lisse, a founder in Lisse, built "BloemBestel" - a flower-order management tool for florists - using Bolt. Six months after launch, with real customer data flowing through the app daily, she decided to switch hosting providers for cost reasons and used the platform's export feature to pull her code out.
 
-It was only while going through the export process that Fleur actually read the terms attached to it closely for the first time. Buried in the platform's usage agreement was a clause retaining the AI vendor's right to reuse portions of generated code — including code generated for BloemBestel specifically — in future model training. Nothing in the terms suggested this was retroactively limited to code generated before some cutoff; it appeared to cover everything she'd built on the platform, including logic that had been shaped by months of real customer and business data.
+It was only while going through the export process that Fleur actually read the terms attached to it closely for the first time. Buried in the platform's usage agreement was a clause retaining the AI vendor's right to reuse portions of generated code - including code generated for BloemBestel specifically - in future model training. Nothing in the terms suggested this was retroactively limited to code generated before some cutoff; it appeared to cover everything she'd built on the platform, including logic that had been shaped by months of real customer and business data.
 
-Fleur brought the situation to LaunchStudio, wanting to understand both what the terms actually meant and how to move forward. Our engineers reviewed the exported codebase, confirmed it was functional and complete, and helped Fleur migrate it fully onto infrastructure she controlled directly — removing any ongoing dependency on the original platform going forward. We also helped her document, in plain terms, exactly what she'd agreed to and what her options were regarding the code already generated, so she could make an informed decision about her next steps rather than guessing.
+Fleur brought the situation to LaunchStudio, wanting to understand both what the terms actually meant and how to move forward. Our engineers reviewed the exported codebase, confirmed it was functional and complete, and helped Fleur migrate it fully onto infrastructure she controlled directly - removing any ongoing dependency on the original platform going forward. We also helped her document, in plain terms, exactly what she'd agreed to and what her options were regarding the code already generated, so she could make an informed decision about her next steps rather than guessing.
 
 **Result:** BloemBestel now runs entirely on infrastructure Fleur controls, with no ongoing dependency on the original AI platform, and she has a clear understanding of the retained-rights clause going forward.
 
 > *"I read 'export your code' and thought that was the whole story. I didn't think to ask what the platform still got to do with it."*
-> — **Fleur Lisse, Founder, BloemBestel (Lisse)**
+> - **Fleur Lisse, Founder, BloemBestel (Lisse)**
 
-**Cost & Timeline:** €1,100 (export review, full migration to independent infrastructure) — completed in 4 business days.
+**Cost & Timeline:** €1,100 (export review, full migration to independent infrastructure) - completed in 4 business days.
 
 ---
 
@@ -85,11 +85,11 @@ Fleur brought the situation to LaunchStudio, wanting to understand both what the
 
 ### Do all AI coding tools retain rights to reuse generated code for training?
 
-It varies by platform and changes over time, which is exactly why checking the current terms directly — not a marketing summary — matters before you build something you plan to depend on long-term.
+It varies by platform and changes over time, which is exactly why checking the current terms directly - not a marketing summary - matters before you build something you plan to depend on long-term.
 
 ### Is retained training rights the same as the platform owning my code?
 
-No, they're separate. A platform can clearly grant you ownership of your code while still retaining a separate right to use it, or patterns from it, for training future models — read for both clauses independently.
+No, they're separate. A platform can clearly grant you ownership of your code while still retaining a separate right to use it, or patterns from it, for training future models - read for both clauses independently.
 
 ### What should I do if I find a concerning clause in a platform I've already built on?
 
@@ -97,11 +97,11 @@ Consider accelerating your export and migration to infrastructure you fully cont
 
 ### Does exporting my code from an AI tool remove me from its terms entirely?
 
-Not automatically — the terms you agreed to while using the platform may still apply to code already generated there, even after export, depending on the specific wording.
+Not automatically - the terms you agreed to while using the platform may still apply to code already generated there, even after export, depending on the specific wording.
 
 ### Can Manifera's Amsterdam team help with a migration that's already underway?
 
-Yes — the team regularly steps in mid-migration to review exported code, confirm it's complete and functional, and move it onto infrastructure the founder fully controls.
+Yes - the team regularly steps in mid-migration to review exported code, confirm it's complete and functional, and move it onto infrastructure the founder fully controls.
 
 <script type="application/ld+json">
 {
@@ -111,7 +111,7 @@ Yes — the team regularly steps in mid-migration to review exported code, confi
     { "@type": "Question", "name": "Do all AI coding tools retain rights to reuse generated code for training?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by platform and can change over time, which is why checking the current terms directly matters before depending on a tool long-term." } },
     { "@type": "Question", "name": "Is retained training rights the same as the platform owning my code?", "acceptedAnswer": { "@type": "Answer", "text": "No, they're separate. A platform can grant you ownership while still retaining a right to use the code for training future models." } },
     { "@type": "Question", "name": "What should I do if I find a concerning clause in a platform I've already built on?", "acceptedAnswer": { "@type": "Answer", "text": "Consider accelerating export and migration to infrastructure you fully control, limiting how much of your product remains subject to those terms." } },
-    { "@type": "Question", "name": "Does exporting my code from an AI tool remove me from its terms entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically — terms already agreed to may still apply to code generated on the platform, even after export, depending on the wording." } },
+    { "@type": "Question", "name": "Does exporting my code from an AI tool remove me from its terms entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically - terms already agreed to may still apply to code generated on the platform, even after export, depending on the wording." } },
     { "@type": "Question", "name": "Can Manifera's Amsterdam team help with a migration that's already underway?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the team regularly steps in mid-migration to review exported code and move it onto infrastructure the founder fully controls." } }
   ]
 }

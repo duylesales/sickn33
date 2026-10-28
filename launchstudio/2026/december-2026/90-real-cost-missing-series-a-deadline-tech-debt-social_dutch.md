@@ -1,4 +1,4 @@
-💰 Oskar had een Series A term sheet van € 2,5M op zak voor zijn **Lovable** app GridSignal. Tijdens de due diligence vroeg de investeerder naar database data-isolatie. Oskar had geen antwoord — deal on hold met 7 weken runway over. ⏱️
+💰 Oskar had een Series A term sheet van € 2,5M op zak voor zijn **Lovable** app GridSignal. Tijdens de due diligence vroeg de investeerder naar database data-isolatie. Oskar had geen antwoord - deal on hold met 7 weken runway over. ⏱️
 
 Een getekende term sheet is pas definitief na een succesvolle Technical Due Diligence (TDD).
 
@@ -12,7 +12,7 @@ Een getekende term sheet is pas definitief na een succesvolle Technical Due Dili
 
 Bij LaunchStudio harden we AI-codebases voor veeleisende Series A en institutional audits. 🛡️
 
-Oskar's audit werd binnen 48 uur goedgekeurd — ronde van € 2,5M succesvol gesloten. (€ 4.800 (Due Diligence Hardening) — 12 werkdagen.) 🚀
+Oskar's audit werd binnen 48 uur goedgekeurd - ronde van € 2,5M succesvol gesloten. (€ 4.800 (Due Diligence Hardening) - 12 werkdagen.) 🚀
 
 👉 Ontdek hoe u uw due diligence voorbereidt: https://launchstudio.eu/nl/blog/real-cost-missing-series-a-deadline-tech-debt
 

@@ -41,21 +41,21 @@ Content Format: Decision-Stage Guide
 
 **Whether core-hours overlap is expected.** For teams that partly work asynchronously, this is more relevant than the remote/hybrid label itself, and it saves a lot of confusion if it is stated explicitly in the vacancy.
 
-**How decisions are documented for people who aren't in the office.** Candidates who have previously worked in a poorly organised remote team often ask about this — stating it up front saves you that question in every interview.
+**How decisions are documented for people who aren't in the office.** Candidates who have previously worked in a poorly organised remote team often ask about this - stating it up front saves you that question in every interview.
 
 ## Why Vagueness Backfires Here
 
-A job ad that says "flexible" or "remote-friendly" without specific details attracts candidates with widely differing assumptions about what that means — and so filters nothing. The result is that you still have to ask about those assumptions one by one in interviews, which the job ad could have done.
+A job ad that says "flexible" or "remote-friendly" without specific details attracts candidates with widely differing assumptions about what that means - and so filters nothing. The result is that you still have to ask about those assumptions one by one in interviews, which the job ad could have done.
 
 ## A Checklist for the Job Ad Itself
 
-**The exact number of office days**, not "flexible" or "by arrangement" — a number, and preferably which days.
+**The exact number of office days**, not "flexible" or "by arrangement" - a number, and preferably which days.
 
 **Core hours if relevant**, with a short reason why (for example: daily stand-up at 10:00).
 
-**How technical decisions are recorded** — in a shared document, in Slack threads, in a wiki — so a candidate knows what "working asynchronously" means in practice for this particular team.
+**How technical decisions are recorded** - in a shared document, in Slack threads, in a wiki - so a candidate knows what "working asynchronously" means in practice for this particular team.
 
-**What happens when a decision made on an office day conflicts with a remote team member's view** — a small but telling detail that few job ads mention.
+**What happens when a decision made on an office day conflicts with a remote team member's view** - a small but telling detail that few job ads mention.
 
 ## Comparison Table: Vague vs. Concrete Job Ad
 
@@ -72,11 +72,11 @@ Candidates for AI/ML/Data roles more often than average have experience with rem
 
 ## A Concrete Scenario of How Vagueness Costs Time
 
-A candidate applies for a vacancy with "hybrid working possible." In the first interview, it turns out that "hybrid" in practice means three mandatory office days. The candidate had hoped for at most one day a week. The conversation ends without a match, having cost both parties time — time that could have been saved if the job ad had simply stated "three days a week in the office" instead of the vague "hybrid possible." Multiply this scenario by dozens of applicants per vacancy, and the cumulative time cost of vagueness becomes substantial.
+A candidate applies for a vacancy with "hybrid working possible." In the first interview, it turns out that "hybrid" in practice means three mandatory office days. The candidate had hoped for at most one day a week. The conversation ends without a match, having cost both parties time - time that could have been saved if the job ad had simply stated "three days a week in the office" instead of the vague "hybrid possible." Multiply this scenario by dozens of applicants per vacancy, and the cumulative time cost of vagueness becomes substantial.
 
 ## A Common Misconception About Why Employers Stay Vague
 
-Employers sometimes deliberately keep the text vague because they think specificity will put off a wider group of candidates and thus reduce the number of applications. That is partly true — specificity does filter out candidates who don't fit — but that is exactly the goal, not a drawback. Fewer, better-fitting applications are more valuable to most employers than more, partly mismatched applications that are rejected anyway after a time-consuming interview.
+Employers sometimes deliberately keep the text vague because they think specificity will put off a wider group of candidates and thus reduce the number of applications. That is partly true - specificity does filter out candidates who don't fit - but that is exactly the goal, not a drawback. Fewer, better-fitting applications are more valuable to most employers than more, partly mismatched applications that are rejected anyway after a time-consuming interview.
 
 ## Why This Pays Off More for AI/ML/Data Roles Than for Generic Roles
 
@@ -84,11 +84,11 @@ Candidates for specialised technical roles often have several offers under consi
 
 ## How to Record These Arrangements So They Don't Stay Only in the Job Ad
 
-It isn't enough to put these arrangements in a job ad once if they are not honoured after someone is hired. Record the same concrete arrangements — number of office days, core hours, documentation habits — in the employment contract or a supplementary document, so a new employee has a concrete reference point if practice gradually starts to deviate from what was originally promised.
+It isn't enough to put these arrangements in a job ad once if they are not honoured after someone is hired. Record the same concrete arrangements - number of office days, core hours, documentation habits - in the employment contract or a supplementary document, so a new employee has a concrete reference point if practice gradually starts to deviate from what was originally promised.
 
 ## Why This Builds Trust That Goes Beyond the Job Ad Itself
 
-An employer that is noticeably concrete and specific about working arrangements at the vacancy stage gives the impression of an organisation that also communicates thoughtfully and transparently in other areas. Candidates often unconsciously extend this conclusion to aspects of the company that aren't explicitly mentioned — specificity in one area is interpreted as a signal of overall organisational maturity, which is an indirect but real benefit on top of the direct, practical benefits of clear communication.
+An employer that is noticeably concrete and specific about working arrangements at the vacancy stage gives the impression of an organisation that also communicates thoughtfully and transparently in other areas. Candidates often unconsciously extend this conclusion to aspects of the company that aren't explicitly mentioned - specificity in one area is interpreted as a signal of overall organisational maturity, which is an indirect but real benefit on top of the direct, practical benefits of clear communication.
 
 ## The Legal Framework Behind Your Working-From-Home Policy
 
@@ -115,7 +115,7 @@ Candidates increasingly compare remote and hybrid offers on the total package. T
 
 "Remote" quickly raises the question for international candidates of whether working from another country is possible. For a Dutch employer, that has major consequences.
 
-**Social security.** Under EU coordination rules, an employee in principle falls under the system of one country. Someone who works a substantial part of their time in their country of residence can become insured there — with the employer liable for contributions in that country. A **Framework Agreement on cross-border telework**, which the Netherlands, Belgium and Germany have joined, makes it possible under conditions for teleworkers who work less than half of their working time in their country of residence to remain insured in the employer's country. In the Netherlands, the **SVB** assesses this.
+**Social security.** Under EU coordination rules, an employee in principle falls under the system of one country. Someone who works a substantial part of their time in their country of residence can become insured there - with the employer liable for contributions in that country. A **Framework Agreement on cross-border telework**, which the Netherlands, Belgium and Germany have joined, makes it possible under conditions for teleworkers who work less than half of their working time in their country of residence to remain insured in the employer's country. In the Netherlands, the **SVB** assesses this.
 
 **Payroll tax and permanent establishment.** Working days in another country can create tax liability in that country, and long-term work from abroad can in certain cases create tax risks for the company.
 
@@ -140,7 +140,7 @@ Search engines and job platforms can only filter correctly if the work pattern i
 - For hybrid roles, state the exact office address as `jobLocation`, so commuting distance can be calculated.
 - On OnlyAIJobs, candidates can filter by work type, including Remote, and by distance from their home. A hybrid vacancy with an exact address is therefore found by exactly the candidates for whom the office days are feasible.
 
-**Sustainability as an additional argument.** Employers with 100 or more employees must report on the CO2 emissions of commuting and business travel under the **work-related personal mobility reporting obligation (WPM)**. Fewer travel days and employees living closer by help with that — an argument you can also use internally to justify a well-considered hybrid policy.
+**Sustainability as an additional argument.** Employers with 100 or more employees must report on the CO2 emissions of commuting and business travel under the **work-related personal mobility reporting obligation (WPM)**. Fewer travel days and employees living closer by help with that - an argument you can also use internally to justify a well-considered hybrid policy.
 
 ## Example Wording You Can Reuse
 
@@ -162,7 +162,7 @@ Search engines and job platforms can only filter correctly if the work pattern i
 
 Replace vague language with concrete arrangements: the number of office days, any core hours, and how your team documents decisions. It costs a few extra sentences in the job ad, and saves hours of clarification conversations later.
 
-Post your open AI, machine learning or data vacancy — the first listing is free — via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
+Post your open AI, machine learning or data vacancy - the first listing is free - via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 
@@ -170,16 +170,16 @@ Post your open AI, machine learning or data vacancy — the first listing is fre
 Because it can mean anything, from fully remote to mandatory office days wrapped in flexible language. Candidates with widely differing assumptions all apply to the same vague text, which filters nothing.
 
 ### (Scenario: employer unsure how much detail to give) How specific should I be about office days in the job ad?
-As specific as possible — a concrete number and preferably which days, instead of "occasionally" or "flexible." That filters out candidates who can't live with it in advance.
+As specific as possible - a concrete number and preferably which days, instead of "occasionally" or "flexible." That filters out candidates who can't live with it in advance.
 
 ### (Scenario: employer unsure whether core hours are relevant) Should I mention core hours if my team isn't internationally distributed?
-If there is any expectation of simultaneous availability, it helps to mention it, even within the Netherlands — it prevents confusion among candidates used to working fully asynchronously.
+If there is any expectation of simultaneous availability, it helps to mention it, even within the Netherlands - it prevents confusion among candidates used to working fully asynchronously.
 
 ### (Scenario: employer who doesn't know why documentation comes up) Why would candidates ask how decisions are documented?
 Because candidates who have previously worked in a poorly organised remote team know this makes a big difference to the daily experience. Stating it up front saves you that question in every interview.
 
 ### (Scenario: employer afraid that specificity puts candidates off) Does too much detail about working arrangements actually put candidates off?
-Usually not — it filters out candidates who don't fit the arrangements, and convinces exactly the candidates who were looking for them. Vagueness costs more time afterwards than clarity up front.
+Usually not - it filters out candidates who don't fit the arrangements, and convinces exactly the candidates who were looking for them. Vagueness costs more time afterwards than clarity up front.
 
 <script type="application/ld+json">
 {
@@ -187,10 +187,10 @@ Usually not — it filters out candidates who don't fit the arrangements, and co
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Why isn't \"remote possible\" enough as a description?", "acceptedAnswer": {"@type": "Answer", "text": "It can mean anything, and candidates with widely differing assumptions all apply to the same vague text, which filters nothing."}},
-    {"@type": "Question", "name": "How specific should I be about office days in the job ad?", "acceptedAnswer": {"@type": "Answer", "text": "As specific as possible — a concrete number and preferably which days, instead of 'occasionally' or 'flexible'."}},
+    {"@type": "Question", "name": "How specific should I be about office days in the job ad?", "acceptedAnswer": {"@type": "Answer", "text": "As specific as possible - a concrete number and preferably which days, instead of 'occasionally' or 'flexible'."}},
     {"@type": "Question", "name": "Should I mention core hours if my team isn't internationally distributed?", "acceptedAnswer": {"@type": "Answer", "text": "If there is any expectation of simultaneous availability, it helps to mention it, even within the Netherlands."}},
     {"@type": "Question", "name": "Why would candidates ask how decisions are documented?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates who previously worked in a poorly organised remote team know this makes a big difference to the daily experience."}},
-    {"@type": "Question", "name": "Does too much detail about working arrangements actually put candidates off?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — it filters out candidates who don't fit, and convinces exactly the candidates who were looking for those arrangements."}}
+    {"@type": "Question", "name": "Does too much detail about working arrangements actually put candidates off?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - it filters out candidates who don't fit, and convinces exactly the candidates who were looking for those arrangements."}}
   ]
 }
 </script>

@@ -1,4 +1,4 @@
-📦 Twan Steenbergen bouwde "ExportGrip," een logistieke offertetool, met Bolt — en toen hij de codebase downloadde om deze naar zijn eigen hosting te verplaatsen, verwachtte hij een volledige, op zichzelf staande kopie van alles wat hij had gebouwd en getest. 😳
+📦 Twan Steenbergen bouwde "ExportGrip," een logistieke offertetool, met Bolt - en toen hij de codebase downloadde om deze naar zijn eigen hosting te verplaatsen, verwachtte hij een volledige, op zichzelf staande kopie van alles wat hij had gebouwd en getest. 😳
 
 De snelheid van een "exporteren"-knop suggereert volledigheid. Die levert dit zelden. 🧠
 
@@ -11,7 +11,7 @@ De snelheid van een "exporteren"-knop suggereert volledigheid. Die levert dit ze
 ✅ Identificeer elk ontbrekend configuratieonderdeel één voor één
 ✅ Herbouw de configuratielaag zodat de app identiek draait op zelf-gehoste infrastructuur
 
-Bij **LaunchStudio** behandelt ons engineeringcentrum in Ho Chi Minhstad een gestage stroom van precies dit soort migratiewerk — gesteund door de 11+ jaar ervaring van Manifera over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** behandelt ons engineeringcentrum in Ho Chi Minhstad een gestage stroom van precies dit soort migratiewerk - gesteund door de 11+ jaar ervaring van Manifera over 160+ opgeleverde projecten. 🛡️
 
 Zijn resultaat: ExportGrip draait nu op zijn eigen hosting met een gedocumenteerde, volledige configuratieset, en een checklist voor het controleren van toekomstige exports voordat deze worden vertrouwd. 🚀
 

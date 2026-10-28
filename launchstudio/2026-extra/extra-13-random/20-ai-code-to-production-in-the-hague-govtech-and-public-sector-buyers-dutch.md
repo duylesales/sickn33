@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Den Haag is waar de Nederlandse overheid woont, en de stad heeft een gestage stroom GovTech-oprichters voortgebracht: oud-ambtenaren, beleidsadviseurs en consultants die een probleem van binnenuit zagen en er een tool voor bouwden. Steeds meer van die tools beginnen als AI-code — een Windsurf- of Cursor-project dat snel in elkaar is gezet om een gemeente te laten zien wat mogelijk is. De pilot loopt goed. Dan stuurt inkoop een vragenlijst, en wordt het naar productie brengen van die AI-code een heel specifieke oefening.
+Den Haag is waar de Nederlandse overheid woont, en de stad heeft een gestage stroom GovTech-oprichters voortgebracht: oud-ambtenaren, beleidsadviseurs en consultants die een probleem van binnenuit zagen en er een tool voor bouwden. Steeds meer van die tools beginnen als AI-code - een Windsurf- of Cursor-project dat snel in elkaar is gezet om een gemeente te laten zien wat mogelijk is. De pilot loopt goed. Dan stuurt inkoop een vragenlijst, en wordt het naar productie brengen van die AI-code een heel specifieke oefening.
 
 Publieke inkopers zijn niet moeilijker tevreden te stellen dan andere klanten; ze zijn explicieter. Ze schrijven op wat ze nodig hebben. Dat is goed nieuws, want het betekent dat je je kunt voorbereiden.
 
@@ -30,12 +30,12 @@ Publieke inkopers zijn niet moeilijker tevreden te stellen dan andere klanten; z
 
 Vragenlijsten verschillen, maar Nederlandse gemeenten, provincies, waterschappen en agentschappen vragen meestal naar dezelfde gebieden:
 
-- **Informatiebeveiliging** — vaak gekoppeld aan de BIO (Baseline Informatiebeveiliging Overheid), de beveiligingsbasis van de overheid die gebaseerd is op ISO 27002.
-- **Gegevensbescherming** — een verwerkersovereenkomst, een lijst met verwerkers, datalocatie, bewaartermijnen en een gegevensbeschermingseffectbeoordeling (DPIA) als de verwerking een hoog risico heeft.
-- **Toegankelijkheid** — websites en apps van de overheid moeten voldoen aan toegankelijkheidseisen op basis van WCAG, en inkopers vragen leveranciers steeds vaker om een toegankelijkheidsverklaring.
-- **Testen** — bewijs van beveiligingstesten, vaak een recente penetratietest voor alles wat met burgers in aanraking komt.
-- **Continuïteit** — back-ups, hersteltijden, incidentprocessen en wat er gebeurt als je bedrijf stopt.
-- **Exit** — hoe de inkoper zijn data in een bruikbaar formaat terugkrijgt als het contract afloopt.
+- **Informatiebeveiliging** - vaak gekoppeld aan de BIO (Baseline Informatiebeveiliging Overheid), de beveiligingsbasis van de overheid die gebaseerd is op ISO 27002.
+- **Gegevensbescherming** - een verwerkersovereenkomst, een lijst met verwerkers, datalocatie, bewaartermijnen en een gegevensbeschermingseffectbeoordeling (DPIA) als de verwerking een hoog risico heeft.
+- **Toegankelijkheid** - websites en apps van de overheid moeten voldoen aan toegankelijkheidseisen op basis van WCAG, en inkopers vragen leveranciers steeds vaker om een toegankelijkheidsverklaring.
+- **Testen** - bewijs van beveiligingstesten, vaak een recente penetratietest voor alles wat met burgers in aanraking komt.
+- **Continuïteit** - back-ups, hersteltijden, incidentprocessen en wat er gebeurt als je bedrijf stopt.
+- **Exit** - hoe de inkoper zijn data in een bruikbaar formaat terugkrijgt als het contract afloopt.
 
 Een AI-prototype heeft hier meestal niets van gedocumenteerd, en een deel ervan ontbreekt helemaal.
 
@@ -43,13 +43,13 @@ Een AI-prototype heeft hier meestal niets van gedocumenteerd, en een deel ervan 
 
 Achter het papierwerk zitten concrete technische eisen. Deze ontbreken het vaakst in AI-gegenereerde GovTech-prototypes:
 
-**Rolgebaseerde toegang die past bij de organisatie.** Gemeentelijke gebruikers hebben rollen — zaakbehandelaar, teamleider, beheerder, auditor — met verschillende rechten. AI-gebouwde apps hebben vaak "gebruiker" en "beheerder", deels afgedwongen in de interface.
+**Rolgebaseerde toegang die past bij de organisatie.** Gemeentelijke gebruikers hebben rollen - zaakbehandelaar, teamleider, beheerder, auditor - met verschillende rechten. AI-gebouwde apps hebben vaak "gebruiker" en "beheerder", deels afgedwongen in de interface.
 
 **Auditlogging.** Overheidsorganisaties moeten kunnen verantwoorden wie data heeft ingezien en gewijzigd. Een append-only log van toegang tot persoonsgegevens is vaak een harde eis.
 
 **Authenticatie die past bij overheidsgebruikers.** Veel inkopers willen single sign-on met hun eigen identiteitsprovider (vaak via SAML of OpenID Connect) en meerfactorauthenticatie voor beheerders. Diensten voor burgers kunnen DigiD of eHerkenning vereisen, wat eigen eisen en beoordelingen met zich meebrengt.
 
-**Dataminimalisatie en bewaartermijnen.** Persoonsgegevens horen alleen te worden verzameld waar dat nodig is en volgens een vastgesteld schema te worden verwijderd — iets wat AI-gegenereerde schema's nooit bevatten.
+**Dataminimalisatie en bewaartermijnen.** Persoonsgegevens horen alleen te worden verzameld waar dat nodig is en volgens een vastgesteld schema te worden verwijderd - iets wat AI-gegenereerde schema's nooit bevatten.
 
 **Hosting en locatie.** Inkopers willen meestal data in de EU en soms in Nederland, met duidelijkheid over elke subverwerker.
 
@@ -103,7 +103,7 @@ Nederlandse overheidsorganisaties zijn verplicht hun websites en apps toegankeli
 
 ## Dataminimalisatie en Bewaartermijnen voor Burgerdata
 
-Publieke diensten verwerken data van burgers onder strenge verwachtingen. Verzamel alleen wat de dienst nodig heeft; verwijder metadata uit foto's (bijvoorbeeld de locatie van het huis van een melder); scheid identificerende data van operationele data waar mogelijk; en spreek bewaartermijnen af met de inkoper en dwing ze daarna automatisch af. Bij diensten die gevoelige situaties kunnen betreffen — klachten over buren, meldingen van onveilige situaties — denk na over hoe de identiteit van de melder wordt beschermd tegen de persoon of organisatie waarover wordt gemeld.
+Publieke diensten verwerken data van burgers onder strenge verwachtingen. Verzamel alleen wat de dienst nodig heeft; verwijder metadata uit foto's (bijvoorbeeld de locatie van het huis van een melder); scheid identificerende data van operationele data waar mogelijk; en spreek bewaartermijnen af met de inkoper en dwing ze daarna automatisch af. Bij diensten die gevoelige situaties kunnen betreffen - klachten over buren, meldingen van onveilige situaties - denk na over hoe de identiteit van de melder wordt beschermd tegen de persoon of organisatie waarover wordt gemeld.
 
 ## Een Exitplan Dat Inkopers Kunnen Accepteren
 
@@ -111,15 +111,15 @@ Publieke inkopers moeten verder kunnen als een leverancier stopt. Een exitplan b
 
 ## Timing en Drempels bij Aanbestedingen
 
-Publieke inkoop volgt regels die afhangen van de contractwaarde. Kleinere opdrachten kunnen vaak via eenvoudigere procedures worden gegund, terwijl grotere formele aanbestedingen met gepubliceerde criteria vereisen. Voor een jong GovTech-bedrijf zijn vroege contracten vaak pilots of kleine opdrachten onder de Europese drempels. Gebruik ze om referenties, documentatie en bewijs op te bouwen — een hersteltest, een toegankelijkheidsverklaring, een schone penetratietest — die je nodig hebt als grotere aanbestedingen komen. Elk geslaagd klein contract maakt het volgende inkoopdossier makkelijker in te vullen.
+Publieke inkoop volgt regels die afhangen van de contractwaarde. Kleinere opdrachten kunnen vaak via eenvoudigere procedures worden gegund, terwijl grotere formele aanbestedingen met gepubliceerde criteria vereisen. Voor een jong GovTech-bedrijf zijn vroege contracten vaak pilots of kleine opdrachten onder de Europese drempels. Gebruik ze om referenties, documentatie en bewijs op te bouwen - een hersteltest, een toegankelijkheidsverklaring, een schone penetratietest - die je nodig hebt als grotere aanbestedingen komen. Elk geslaagd klein contract maakt het volgende inkoopdossier makkelijker in te vullen.
 
 ## Vertrouwen Opbouwen vóór het Eerste Contract
 
-Publieke inkopers zijn voorzichtig met jonge leveranciers, om goede redenen: continuïteit, beveiliging en verantwoording. Verschillende stappen bouwen vertrouwen op voordat de inkoop begint. Betrek de informatiebeveiligingsfunctionaris (CISO) en de privacyfunctionaris van de inkoper vroeg bij de pilot, in plaats van ze bij het contract te verrassen. Deel je BIO-koppeling en lijst met verwerkers uit jezelf. Bied een vast aanspreekpunt voor incidenten. Houd een changelog van releases bij zodat de inkoper kan zien hoe het product zich ontwikkelt. En wees eerlijk over beperkingen — een gedocumenteerd gat met een plan is voor een overheidsorganisatie veel acceptabeler dan een bewering die niet blijkt te kloppen.
+Publieke inkopers zijn voorzichtig met jonge leveranciers, om goede redenen: continuïteit, beveiliging en verantwoording. Verschillende stappen bouwen vertrouwen op voordat de inkoop begint. Betrek de informatiebeveiligingsfunctionaris (CISO) en de privacyfunctionaris van de inkoper vroeg bij de pilot, in plaats van ze bij het contract te verrassen. Deel je BIO-koppeling en lijst met verwerkers uit jezelf. Bied een vast aanspreekpunt voor incidenten. Houd een changelog van releases bij zodat de inkoper kan zien hoe het product zich ontwikkelt. En wees eerlijk over beperkingen - een gedocumenteerd gat met een plan is voor een overheidsorganisatie veel acceptabeler dan een bewering die niet blijkt te kloppen.
 
 ## Ontwerpen voor de Werkprocessen van Ambtenaren
 
-Zaakbehandelaars en teamleiders gebruiken GovTech-tools de hele dag, vaak naast verschillende andere systemen. Productierijpheid omvat details in het werkproces die AI-prototypes zelden goed hebben: bulkacties met bevestiging en ongedaan maken, sneltoetsen voor veelvoorkomende taken, exports in formaten die de andere systemen van de organisatie accepteren, duidelijke statusgeschiedenissen per zaak, en overdracht tussen collega's zonder context te verliezen. Twee of drie ambtenaren een uur met de pilot zien werken, brengt de meeste van deze behoeften snel aan het licht — en ze oplossen maakt van een tool die mensen verdragen een tool waar ze om vragen.
+Zaakbehandelaars en teamleiders gebruiken GovTech-tools de hele dag, vaak naast verschillende andere systemen. Productierijpheid omvat details in het werkproces die AI-prototypes zelden goed hebben: bulkacties met bevestiging en ongedaan maken, sneltoetsen voor veelvoorkomende taken, exports in formaten die de andere systemen van de organisatie accepteren, duidelijke statusgeschiedenissen per zaak, en overdracht tussen collega's zonder context te verliezen. Twee of drie ambtenaren een uur met de pilot zien werken, brengt de meeste van deze behoeften snel aan het licht - en ze oplossen maakt van een tool die mensen verdragen een tool waar ze om vragen.
 
 ## Ritme van Beveiligingstesten na de Lancering
 
@@ -133,15 +133,15 @@ In GovTech-projecten voorkomt duidelijkheid over rollen de meeste wrijving. De i
 
 Het werk van LaunchStudio voor GovTech-oprichters combineert technische versterking met de documentatie die inkopers verwachten: rolgebaseerde toegang en auditlogging afgedwongen op de server, SSO-integratie, bewaarregels, hosting in de EU, toegankelijkheidsverbeteringen in de bestaande interface, en een beveiligingsoverzicht dat klaar is om bij een vragenlijst te voegen. Wanneer een penetratietest vereist is, wordt het systeem erop voorbereid en worden de bevindingen achteraf afgehandeld.
 
-De engineering komt van Manifera, dat 11+ jaar ervaring heeft met het leveren van software aan organisaties met formele eisen — waaronder TNO, de Nederlandse Organisatie voor toegepast-natuurwetenschappelijk onderzoek. Herre Roelevink, CEO van Manifera, heeft een achtergrond in cybersecurity: hij was medeoprichter van CyberDevOps (nu CFLW Cyber Strategies). Het kantoor van Manifera aan de Herengracht 420 in Amsterdam ligt op minder dan een uur van Den Haag Centraal; de engineering wordt uitgevoerd in het ontwikkelcentrum in Ho Chi Minh-stad. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/) voor zijn grootschaligere werk voor de publieke sector en grote ondernemingen.
+De engineering komt van Manifera, dat 11+ jaar ervaring heeft met het leveren van software aan organisaties met formele eisen - waaronder TNO, de Nederlandse Organisatie voor toegepast-natuurwetenschappelijk onderzoek. Herre Roelevink, CEO van Manifera, heeft een achtergrond in cybersecurity: hij was medeoprichter van CyberDevOps (nu CFLW Cyber Strategies). Het kantoor van Manifera aan de Herengracht 420 in Amsterdam ligt op minder dan een uur van Den Haag Centraal; de engineering wordt uitgevoerd in het ontwikkelcentrum in Ho Chi Minh-stad. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/) voor zijn grootschaligere werk voor de publieke sector en grote ondernemingen.
 
-Om te beginnen, [beschrijf je project](https://launchstudio.eu/nl/#contact) — inclusief de vragenlijst van de inkoper als je die hebt. We reageren binnen één werkdag.
+Om te beginnen, [beschrijf je project](https://launchstudio.eu/nl/#contact) - inclusief de vragenlijst van de inkoper als je die hebt. We reageren binnen één werkdag.
 
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Oprichter in Actie: Een Buurtmeldtool Ontmoet de Inkoop
 
-Hugo Verbeek was elf jaar beleidsadviseur voordat hij in Den Haag BuurtSignaal oprichtte: een tool waarmee bewoners problemen kunnen melden — kapotte straatverlichting, illegale dumpingen, onveilige oversteekplaatsen — en waarmee gemeentelijke teams meldingen kunnen beoordelen en erop reageren. Hij bouwde het in Windsurf met een Next.js-frontend en Postgres, en draaide een pilot met één stadsdeel. Bewoners vonden het fijn; de medewerkers van het stadsdeel nog meer.
+Hugo Verbeek was elf jaar beleidsadviseur voordat hij in Den Haag BuurtSignaal oprichtte: een tool waarmee bewoners problemen kunnen melden - kapotte straatverlichting, illegale dumpingen, onveilige oversteekplaatsen - en waarmee gemeentelijke teams meldingen kunnen beoordelen en erop reageren. Hij bouwde het in Windsurf met een Next.js-frontend en Postgres, en draaide een pilot met één stadsdeel. Bewoners vonden het fijn; de medewerkers van het stadsdeel nog meer.
 
 Toen de gemeente overstapte op een formeel contract, stuurde inkoop een vragenlijst over beveiliging en privacy met 90 vragen. Hugo kon er ongeveer een derde beantwoorden. De review die LaunchStudio uitvoerde, legde uit waarom: gemeentelijke medewerkers hadden de rollen "gebruiker" en "beheerder", met beperkingen voor zaakbehandelaars alleen in de interface; er was geen auditlog; medewerkers logden in met wachtwoorden in plaats van via de identiteitsprovider van de gemeente; meldingen van bewoners, inclusief foto's met locatiegegevens, werden voor onbepaalde tijd bewaard; de hosting stond in een Amerikaanse regio; en een toegankelijkheidsscan vond ontbrekende labels en toetsenbordvallen in het meldformulier voor bewoners.
 
@@ -150,9 +150,9 @@ In 21 werkdagen implementeerde het team vier medewerkersrollen afgedwongen in de
 **Resultaat:** BuurtSignaal tekende een driejarig contract met de gemeente en is sindsdien door twee buurgemeenten in een pilot gebruikt, die allebei de bestaande documentatie met kleine aanvullingen accepteerden.
 
 > *"De pilot bewees dat bewoners het wilden. Het contract hing af van bewijzen dat de gemeente het kon vertrouwen. Dat waren twee verschillende projecten, en ik had alleen het eerste gedaan."*
-> — **Hugo Verbeek, Oprichter, BuurtSignaal (Den Haag)**
+> - **Hugo Verbeek, Oprichter, BuurtSignaal (Den Haag)**
 
-**Kosten & Tijdlijn:** € 6.900 (Launch & Grow-pakket: toegangsbeheer, auditlogging, SSO, bewaartermijnen, hosting, toegankelijkheidsverbeteringen en inkoopdocumentatie) — afgerond in 21 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 6.900 (Launch & Grow-pakket: toegangsbeheer, auditlogging, SSO, bewaartermijnen, hosting, toegankelijkheidsverbeteringen en inkoopdocumentatie) - afgerond in 21 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 

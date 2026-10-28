@@ -1,9 +1,9 @@
-😬 De app OogstData van Twan Hermans ging live kapot, midden in een demo, voor een potentiële pilotklant — een data-importfunctie faalde stilletjes en toonde verouderde oogstcijfers in plaats van verse. Ontdaan besteedde hij het weekend aan zichzelf leren coderen om het zelf op te lossen. 📉
+😬 De app OogstData van Twan Hermans ging live kapot, midden in een demo, voor een potentiële pilotklant - een data-importfunctie faalde stilletjes en toonde verouderde oogstcijfers in plaats van verse. Ontdaan besteedde hij het weekend aan zichzelf leren coderen om het zelf op te lossen. 📉
 
 Leren coderen als crisisreactie is vrijwel altijd het verkeerde instinct. 🧠
 
 ❌ Zijn weekendfix pakte een symptoom aan zonder de daadwerkelijke onderliggende oorzaak aan te raken
-❌ Daarbij introduceerde hij een tweede bug — een mismatch in gegevenstype die stilletjes historische records corrumpeerde
+❌ Daarbij introduceerde hij een tweede bug - een mismatch in gegevenstype die stilletjes historische records corrumpeerde
 ❌ De corruptie werd pas ontdekt toen de pilotklant een historisch rapport probeerde op te vragen en onzinnige cijfers kreeg
 ❌ Een fix binnen dezelfde week werd een vertraging van twee weken door de extra schade
 

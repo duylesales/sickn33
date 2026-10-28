@@ -1,4 +1,4 @@
-🚨 "AI-Based Sorting Can Simply Replace Trained Sorting-Line Staff at Similar Rel..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI-Based Sorting Can Simply Replace Trained Sorting-Line Staff at Similar Rel..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI-Based Sorting Can Simply Replace Trained Sorting-...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

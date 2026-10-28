@@ -1,4 +1,4 @@
-🎤 Nadia built a travel-itinerary-planning SaaS using **Lovable** — and interviewed three agencies before hiring anyone to harden it. 🧠
+🎤 Nadia built a travel-itinerary-planning SaaS using **Lovable** - and interviewed three agencies before hiring anyone to harden it. 🧠
 
 If you can't get specific, technical answers about Row Level Security, fixed pricing, and code ownership before signing a contract, you're hiring blind.
 
@@ -12,7 +12,7 @@ If you can't get specific, technical answers about Row Level Security, fixed pri
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Nadia's application achieved production readiness: Nadia launched her premium tier to her first 300 waitlist users with zero security incidents and zero billing disputes. (€2,200 (Launch & Grow Package) — 8 business days.). 🚀
+Nadia's application achieved production readiness: Nadia launched her premium tier to her first 300 waitlist users with zero security incidents and zero billing disputes. (€2,200 (Launch & Grow Package) - 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/questions-before-hiring-fix-ai-app
 

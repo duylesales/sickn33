@@ -1,4 +1,4 @@
-🔥 Ella built a prototype using **Cursor** — ella, a startup founder, used **cursor** to build a sales pipeline analytics prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Ella built a prototype using **Cursor** - ella, a startup founder, used **cursor** to build a sales pipeline analytics prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ella's application achieved production readiness: Ella allowed daily updates without disrupting active client sessions. (€1,400 (CI/CD Pipeline Package) — production-ready and deployed in 5 business days.). 🚀
+Ella's application achieved production readiness: Ella allowed daily updates without disrupting active client sessions. (€1,400 (CI/CD Pipeline Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/zero-downtime-deployments-saas
 

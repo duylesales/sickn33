@@ -1,4 +1,4 @@
-🔥 Elena built a prototype using **Lovable** — elena, a b2b sales founder, used **lovable** to build a lead analyzer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Elena built a prototype using **Lovable** - elena, a b2b sales founder, used **lovable** to build a lead analyzer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Elena's application achieved silky-smooth performance: Real-time alerts allowed her to fix API errors before users noticed them, securing user trust. (€1,300 (Monitoring Setup Package) — production-ready and deployed in 3 business days.). 🚀
+Elena's application achieved silky-smooth performance: Real-time alerts allowed her to fix API errors before users noticed them, securing user trust. (€1,300 (Monitoring Setup Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/monitoring-ai-app-performance-production
 

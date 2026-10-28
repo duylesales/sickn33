@@ -31,27 +31,27 @@ Target Persona: Agency / Freelancer (White-Label Partner)
 }
 </script>
 
-Getting the best of AI coding when inheriting a client's existing project means recognizing what's genuinely worth keeping — usually the bulk of it — and what specific, narrow habits are worth correcting before launch, rather than treating the whole codebase with either blanket suspicion or blanket trust. Session cookie configuration is a specific, common example of exactly the second category.
+Getting the best of AI coding when inheriting a client's existing project means recognizing what's genuinely worth keeping - usually the bulk of it - and what specific, narrow habits are worth correcting before launch, rather than treating the whole codebase with either blanket suspicion or blanket trust. Session cookie configuration is a specific, common example of exactly the second category.
 
 ## What's Almost Always Worth Keeping
 
-The overall structure, the core feature logic, and the general approach an AI coding tool took to building a client's product is, in the large majority of cases, genuinely solid and worth preserving entirely — rebuilding from scratch, as LaunchStudio's own philosophy of "we keep your frontend, we fix only what's needed" reflects, wastes the real value already created and introduces unnecessary risk of its own. For RitDirect specifically, that meant the booking flow, the driver-matching logic, and the entire customer-facing interface Saskia's client had already built stayed completely untouched — none of it needed to change, and none of it did. The work that actually mattered was narrow and specific: a handful of configuration values inside an authentication system that otherwise worked exactly as intended.
+The overall structure, the core feature logic, and the general approach an AI coding tool took to building a client's product is, in the large majority of cases, genuinely solid and worth preserving entirely - rebuilding from scratch, as LaunchStudio's own philosophy of "we keep your frontend, we fix only what's needed" reflects, wastes the real value already created and introduces unnecessary risk of its own. For RitDirect specifically, that meant the booking flow, the driver-matching logic, and the entire customer-facing interface Saskia's client had already built stayed completely untouched - none of it needed to change, and none of it did. The work that actually mattered was narrow and specific: a handful of configuration values inside an authentication system that otherwise worked exactly as intended.
 
 ## What Specifically Needs a Second Look: Cookie Security Flags
 
-Session cookies — the small pieces of data a browser stores to keep a user logged in — support several specific security flags controlling how they can be accessed and transmitted: whether they're restricted from being read by JavaScript, whether they're only sent over encrypted connections, and whether they're restricted from being sent alongside cross-site requests. AI-generated authentication code frequently sets up a working session cookie without configuring all of these flags, since the cookie functions correctly for login purposes either way.
+Session cookies - the small pieces of data a browser stores to keep a user logged in - support several specific security flags controlling how they can be accessed and transmitted: whether they're restricted from being read by JavaScript, whether they're only sent over encrypted connections, and whether they're restricted from being sent alongside cross-site requests. AI-generated authentication code frequently sets up a working session cookie without configuring all of these flags, since the cookie functions correctly for login purposes either way.
 
 ## Why Missing Cookie Flags Specifically Amplify Other Small Gaps
 
-A session cookie missing the flag restricting JavaScript access becomes directly readable by any script running on the page — meaning if a separate, unrelated vulnerability like a cross-site scripting gap exists anywhere else in the same application, a properly flagged cookie would have prevented that separate vulnerability from being able to steal an active session, while an unflagged one doesn't offer that same additional layer of protection.
+A session cookie missing the flag restricting JavaScript access becomes directly readable by any script running on the page - meaning if a separate, unrelated vulnerability like a cross-site scripting gap exists anywhere else in the same application, a properly flagged cookie would have prevented that separate vulnerability from being able to steal an active session, while an unflagged one doesn't offer that same additional layer of protection.
 
 ## Why This Rarely Gets Individually Verified During a Handoff
 
-An agency reviewing a client's inherited codebase naturally focuses on functional completeness — does login work, does the core feature set function as described — and cookie-flag configuration is a specific, granular detail that doesn't affect whether login "works" in any way a functional review would catch, making it easy to overlook without a specific, dedicated security-focused pass.
+An agency reviewing a client's inherited codebase naturally focuses on functional completeness - does login work, does the core feature set function as described - and cookie-flag configuration is a specific, granular detail that doesn't affect whether login "works" in any way a functional review would catch, making it easy to overlook without a specific, dedicated security-focused pass.
 
 ## Why Getting This Specific Detail Right Matters for an Agency's Own Reputation
 
-A client relying on an agency's launch review to be genuinely comprehensive expects exactly this kind of granular, non-obvious detail to be caught — missing it doesn't just create risk for the client's product, it creates risk for the agency's own credibility if the gap is later discovered by someone else.
+A client relying on an agency's launch review to be genuinely comprehensive expects exactly this kind of granular, non-obvious detail to be caught - missing it doesn't just create risk for the client's product, it creates risk for the agency's own credibility if the gap is later discovered by someone else.
 
 ## How LaunchStudio Supports Agencies With This Specific Check
 
@@ -65,25 +65,25 @@ Manifera's session security reviews for partner engagements are conducted by the
 
 For a founder or agency owner without a deep security background, "cookie flags" can sound abstract enough to skip past. Broken down individually, each one is a specific, understandable answer to a specific, understandable question.
 
-**HttpOnly — can JavaScript running on the page read this cookie?**
+**HttpOnly - can JavaScript running on the page read this cookie?**
 
-Without this flag set, any script running in the browser — including one injected through an entirely separate vulnerability elsewhere in the app — can read the session cookie directly and send its value somewhere else. With it set, the cookie is only ever sent automatically by the browser to the server; no script on the page, malicious or otherwise, can read its contents at all.
+Without this flag set, any script running in the browser - including one injected through an entirely separate vulnerability elsewhere in the app - can read the session cookie directly and send its value somewhere else. With it set, the cookie is only ever sent automatically by the browser to the server; no script on the page, malicious or otherwise, can read its contents at all.
 
-**Secure — will this cookie ever be sent over an unencrypted connection?**
+**Secure - will this cookie ever be sent over an unencrypted connection?**
 
-Without this flag, the cookie can technically be transmitted over a plain, unencrypted HTTP connection if one ever occurs — a misconfigured redirect, a stray link, a network in the middle intercepting traffic. With it set, the browser refuses to send the cookie unless the connection is encrypted, closing off that specific transmission path entirely.
+Without this flag, the cookie can technically be transmitted over a plain, unencrypted HTTP connection if one ever occurs - a misconfigured redirect, a stray link, a network in the middle intercepting traffic. With it set, the browser refuses to send the cookie unless the connection is encrypted, closing off that specific transmission path entirely.
 
-**SameSite — will this cookie be sent along with a request originating from a different site?**
+**SameSite - will this cookie be sent along with a request originating from a different site?**
 
-Without an appropriate SameSite setting, a malicious site a user visits in another tab can potentially trigger requests that carry the victim's session cookie along to your application without their knowledge — a pattern called cross-site request forgery. A properly configured SameSite value restricts exactly when the cookie gets attached to a cross-site request, closing off a specific abuse path.
+Without an appropriate SameSite setting, a malicious site a user visits in another tab can potentially trigger requests that carry the victim's session cookie along to your application without their knowledge - a pattern called cross-site request forgery. A properly configured SameSite value restricts exactly when the cookie gets attached to a cross-site request, closing off a specific abuse path.
 
 **Why AI coding tools often get the cookie itself right but skip the flags**
 
-Setting a cookie that successfully keeps a user logged in only requires a name and a value — the browser accepts and uses it either way. The three flags above are optional parameters that change the cookie's behavior in situations a straightforward "keep the user logged in" description never specifically calls for, which is exactly why a working login and an unflagged, exposed cookie can coexist without either one looking broken.
+Setting a cookie that successfully keeps a user logged in only requires a name and a value - the browser accepts and uses it either way. The three flags above are optional parameters that change the cookie's behavior in situations a straightforward "keep the user logged in" description never specifically calls for, which is exactly why a working login and an unflagged, exposed cookie can coexist without either one looking broken.
 
 **A five-minute way to check your own app**
 
-Open your browser's developer tools, go to the Application or Storage tab, find your session cookie, and look at its flags directly — most modern browsers display HttpOnly, Secure, and SameSite as visible columns right next to the cookie itself, no technical background required to at least see whether they're set.
+Open your browser's developer tools, go to the Application or Storage tab, find your session cookie, and look at its flags directly - most modern browsers display HttpOnly, Secure, and SameSite as visible columns right next to the cookie itself, no technical background required to at least see whether they're set.
 
 ## Real example
 
@@ -96,9 +96,9 @@ Saskia's team's initial review focused on confirming the booking and dispatch fl
 **Result:** LaunchStudio corrected the session cookie configuration to include all standard protective flags, closing a gap that never affected functional testing and that Saskia's team hadn't originally flagged, protecting both the client's launch and the agency's reputation for a genuinely thorough handoff process.
 
 > *"Everything about the login and booking flow worked flawlessly in every test we ran ourselves. This is exactly the kind of detail we only catch because we specifically run this check every single time, not because it was ever going to show up in normal testing."*
-> — **Saskia Bergman, Agency Owner, Weert**
+> - **Saskia Bergman, Agency Owner, Weert**
 
-**Cost & Timeline:** €1,600 (white-label session cookie security audit) — completed in 5 business days.
+**Cost & Timeline:** €1,600 (white-label session cookie security audit) - completed in 5 business days.
 
 ---
 
@@ -106,23 +106,23 @@ Saskia's team's initial review focused on confirming the booking and dispatch fl
 
 ### Would a web security specialist consider missing cookie flags a minor detail or a meaningful gap?
 
-Meaningful, specifically because of how it interacts with other potential vulnerabilities — on its own, it doesn't cause a functional failure, but it removes a layer of defense that specifically limits the damage a separate, unrelated vulnerability elsewhere in the same application could otherwise cause.
+Meaningful, specifically because of how it interacts with other potential vulnerabilities - on its own, it doesn't cause a functional failure, but it removes a layer of defense that specifically limits the damage a separate, unrelated vulnerability elsewhere in the same application could otherwise cause.
 
 ### Is this the kind of detail that varies significantly by which specific AI tool built the original project?
 
-Not particularly by tool — cookie flag configuration is a general web development detail that any AI coding tool might or might not include by default depending on exactly how session handling was described, rather than being a pattern specific to v0, Lovable, Bolt, or Cursor individually.
+Not particularly by tool - cookie flag configuration is a general web development detail that any AI coding tool might or might not include by default depending on exactly how session handling was described, rather than being a pattern specific to v0, Lovable, Bolt, or Cursor individually.
 
 ### Does Manifera's broader session security experience transfer specifically well to agency partner work like Saskia's?
 
-Yes, directly — the specific configuration check is identical regardless of whether the engagement comes through a direct founder relationship or an agency partnership, and Manifera's consistent application of this check across many different client contexts is exactly what makes it a reliable, standard part of every review rather than something applied inconsistently.
+Yes, directly - the specific configuration check is identical regardless of whether the engagement comes through a direct founder relationship or an agency partnership, and Manifera's consistent application of this check across many different client contexts is exactly what makes it a reliable, standard part of every review rather than something applied inconsistently.
 
-### Herre Roelevink has spoken about the value LaunchStudio adds specifically being systematic, repeatable review rather than one-off inspection — does this cookie case illustrate that well?
+### Herre Roelevink has spoken about the value LaunchStudio adds specifically being systematic, repeatable review rather than one-off inspection - does this cookie case illustrate that well?
 
-Very well — the value wasn't a one-time clever discovery, it was applying the same systematic checklist Manifera applies to every engagement, which is precisely the repeatable-process-over-one-off-inspection value Roelevink has described as core to how LaunchStudio operates.
+Very well - the value wasn't a one-time clever discovery, it was applying the same systematic checklist Manifera applies to every engagement, which is precisely the repeatable-process-over-one-off-inspection value Roelevink has described as core to how LaunchStudio operates.
 
 ### Should an agency add cookie-flag verification to its own internal QA checklist instead of relying on an external partner each time?
 
-Adding it to an internal checklist is a reasonable step for straightforward, well-documented checks like this one, though maintaining awareness of the full, evolving range of security considerations across every category — not just cookie flags specifically — is exactly the kind of comprehensive, ongoing coverage a dedicated technical partner is generally better positioned to maintain than an agency's own internal checklist alone.
+Adding it to an internal checklist is a reasonable step for straightforward, well-documented checks like this one, though maintaining awareness of the full, evolving range of security considerations across every category - not just cookie flags specifically - is exactly the kind of comprehensive, ongoing coverage a dedicated technical partner is generally better positioned to maintain than an agency's own internal checklist alone.
 
 <script type="application/ld+json">
 {
@@ -142,7 +142,7 @@ Adding it to an internal checklist is a reasonable step for straightforward, wel
       "name": "Does this gap vary significantly by which AI tool built the project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not particularly — cookie flag configuration is a general detail not specific to any one AI coding tool."
+        "text": "Not particularly - cookie flag configuration is a general detail not specific to any one AI coding tool."
       }
     },
     {
@@ -158,7 +158,7 @@ Adding it to an internal checklist is a reasonable step for straightforward, wel
       "name": "Does this case illustrate systematic review over one-off inspection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very well — the value came from applying the same systematic checklist to every engagement, not a one-time discovery."
+        "text": "Very well - the value came from applying the same systematic checklist to every engagement, not a one-time discovery."
       }
     },
     {

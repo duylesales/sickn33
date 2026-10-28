@@ -1,6 +1,6 @@
-🚨 Harper, a clinic manager, used **Lovable** to build a dental diagnostic tool — but a general RAG setup struggled with specific medical terminology, producing low search relevance and inconsistent triage suggestions. 🦷
+🚨 Harper, a clinic manager, used **Lovable** to build a dental diagnostic tool - but a general RAG setup struggled with specific medical terminology, producing low search relevance and inconsistent triage suggestions. 🦷
 
-RAG gives a model facts at query time; fine-tuning changes how it behaves — confusing the two is the most expensive mistake a founder can make. 🧠
+RAG gives a model facts at query time; fine-tuning changes how it behaves - confusing the two is the most expensive mistake a founder can make. 🧠
 
 ❌ Plain RAG struggling with specialized domain terminology and reasoning patterns
 ❌ Trying to fine-tune a model to "memorize" facts, which is lossy and hallucination-prone

@@ -22,17 +22,17 @@ target_persona: "CTO"
 
 What happens to your production system the day the one person who understands it stops answering his phone?
 
-**The Pain:** A CTO at a Groningen energy-transition company inherited a bespoke scheduling and asset-tracking system built four years ago by a single freelance developer — cheap, fast, and, at the time, exactly what a lean scale-up needed. That freelancer has since gone quiet: no forwarding contact, no handover notes, no architecture diagram, no test suite, and a Git history (if one exists at all) that reads like a private diary only he could interpret. The system still runs the business every day. Nobody currently employed has ever opened the codebase.
+**The Pain:** A CTO at a Groningen energy-transition company inherited a bespoke scheduling and asset-tracking system built four years ago by a single freelance developer - cheap, fast, and, at the time, exactly what a lean scale-up needed. That freelancer has since gone quiet: no forwarding contact, no handover notes, no architecture diagram, no test suite, and a Git history (if one exists at all) that reads like a private diary only he could interpret. The system still runs the business every day. Nobody currently employed has ever opened the codebase.
 
-**The Agitation:** This is not a theoretical risk — it is an active one, and the meter is running. Every week the CTO delays action is a week closer to a server failure, a dependency going out of support, or a data-corruption bug with no one able to safely touch the code to fix it. Rebuilding from scratch is commonly quoted in the Northern Netherlands at €120,000-€180,000 and four to six months — money and time the business does not have if the current system fails first. Meanwhile, operations staff are already running manual spreadsheet workarounds for the parts of the system nobody trusts anymore, quietly burning 15-20 hours a week that should be going into growth, not babysitting a black box.
+**The Agitation:** This is not a theoretical risk - it is an active one, and the meter is running. Every week the CTO delays action is a week closer to a server failure, a dependency going out of support, or a data-corruption bug with no one able to safely touch the code to fix it. Rebuilding from scratch is commonly quoted in the Northern Netherlands at €120,000-€180,000 and four to six months - money and time the business does not have if the current system fails first. Meanwhile, operations staff are already running manual spreadsheet workarounds for the parts of the system nobody trusts anymore, quietly burning 15-20 hours a week that should be going into growth, not babysitting a black box.
 
 ## The Architectural Mandate
 
-Rescuing orphaned bespoke code is not a rewrite decision — it's a triage decision, and getting it wrong is expensive twice. The correct sequence starts with code archaeology: a structured audit that maps every entry point, database table, external integration, and scheduled job the system actually touches, regardless of what the (usually nonexistent) documentation claims. From there, before a single line changes, the priority is building a characterization test suite — tests that capture what the system *actually does today*, bugs included, so that refactoring has a safety net and regressions get caught before they reach a Groningen production floor.
+Rescuing orphaned bespoke code is not a rewrite decision - it's a triage decision, and getting it wrong is expensive twice. The correct sequence starts with code archaeology: a structured audit that maps every entry point, database table, external integration, and scheduled job the system actually touches, regardless of what the (usually nonexistent) documentation claims. From there, before a single line changes, the priority is building a characterization test suite - tests that capture what the system *actually does today*, bugs included, so that refactoring has a safety net and regressions get caught before they reach a Groningen production floor.
 
-Once that safety net exists, the system gets decomposed incrementally into a modular monolith with clear domain boundaries — not a big-bang microservices rewrite, which is exactly the kind of overconfident move that creates a second orphaned codebase in eighteen months. Version control gets introduced or cleaned up if it's missing or corrupted. Every non-obvious decision from here forward gets captured as an Architecture Decision Record, so the next engineer — and there will be a next engineer — inherits context instead of archaeology. A CI/CD pipeline (GitHub Actions is the pragmatic default) gets wired in early, not as a nice-to-have but as insurance: it is what prevents this exact bus-factor crisis from recurring, because deployments no longer depend on one person's laptop and muscle memory.
+Once that safety net exists, the system gets decomposed incrementally into a modular monolith with clear domain boundaries - not a big-bang microservices rewrite, which is exactly the kind of overconfident move that creates a second orphaned codebase in eighteen months. Version control gets introduced or cleaned up if it's missing or corrupted. Every non-obvious decision from here forward gets captured as an Architecture Decision Record, so the next engineer - and there will be a next engineer - inherits context instead of archaeology. A CI/CD pipeline (GitHub Actions is the pragmatic default) gets wired in early, not as a nice-to-have but as insurance: it is what prevents this exact bus-factor crisis from recurring, because deployments no longer depend on one person's laptop and muscle memory.
 
-Groningen's business base — energy, agri-tech, logistics, and manufacturing firms built lean and often reliant on a single trusted local freelancer or small shop — makes this scenario far more common here than founders like to admit. The fix isn't finding "another freelancer." It's institutionalizing the knowledge a bespoke software company should have documented the first time.
+Groningen's business base - energy, agri-tech, logistics, and manufacturing firms built lean and often reliant on a single trusted local freelancer or small shop - makes this scenario far more common here than founders like to admit. The fix isn't finding "another freelancer." It's institutionalizing the knowledge a bespoke software company should have documented the first time.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -45,12 +45,12 @@ This is Dutch Management × Vietnamese Mastery applied to rescue work specifical
 
 ### The Warehouse System Nobody Was Allowed to Touch
 
-A family-owned logistics company outside Warsaw, Poland, ran its entire warehouse management system on code written by one freelance developer who disappeared after a contract dispute in 2023. The system controlled inbound receiving, pallet tracking, and outbound dispatch for three warehouses — and not one employee could safely modify it. A single failed database migration attempt by an internal junior developer had already caused an 11-hour outage that stalled dispatch for two client accounts.
+A family-owned logistics company outside Warsaw, Poland, ran its entire warehouse management system on code written by one freelance developer who disappeared after a contract dispute in 2023. The system controlled inbound receiving, pallet tracking, and outbound dispatch for three warehouses - and not one employee could safely modify it. A single failed database migration attempt by an internal junior developer had already caused an 11-hour outage that stalled dispatch for two client accounts.
 
 Manifera ran a two-week code archaeology audit, mapped 40+ undocumented integration points against the company's ERP and three courier APIs, and built a characterization test suite covering the system's actual behavior before touching anything. We then rebuilt the fragile modules on a documented Node.js service layer with automated deployment, while preserving the still-functional legacy core. Total time to a fully documented, team-safe system: nine weeks.
 
-> *"Our old system worked, until the day it didn't and nobody could explain why. Manifera didn't just fix the bugs — they made it so a new hire can actually understand what they're looking at."*
-> — **CTO, Logistics Group, Poland**
+> *"Our old system worked, until the day it didn't and nobody could explain why. Manifera didn't just fix the bugs - they made it so a new hire can actually understand what they're looking at."*
+> - **CTO, Logistics Group, Poland**
 
 ## The Freelancer Trap vs. the Manifera Pod
 
@@ -58,19 +58,19 @@ Manifera ran a two-week code archaeology audit, mapped 40+ undocumented integrat
 |---|---|---|
 | Documentation | None, or outdated and unreliable | Living architecture docs and ADRs from day one |
 | Bus factor | 1 (and that person is gone) | Full pod redundancy, no single point of failure |
-| Safety net before changes | None — every edit is a gamble | Characterization tests written before refactoring |
+| Safety net before changes | None - every edit is a gamble | Characterization tests written before refactoring |
 | Deployment process | Manual, undocumented, tribal knowledge | Automated CI/CD, reproducible every time |
 | Code ownership and IP | Ambiguous, often never formally transferred | Contractually clear, client-owned from day one |
 
 ## The Economics
 
-Run the actual math before deciding to rebuild from zero. A full rewrite in the Northern Netherlands typically runs €120,000-€180,000 and four to six months of parallel-running risk, during which the old system must keep functioning or the business stops. A structured rescue — audit, characterization tests, incremental rebuild — usually costs 35-50% less and ships usable improvements within weeks instead of waiting for a full replacement to go live. Add the hidden cost most CTOs forget: the 15-20 hours a week operations staff currently spend on manual workarounds around the parts of the system nobody trusts, which at a loaded cost of €40/hour is €2,600-€3,500 a month bleeding out quietly, invisible on any invoice.
+Run the actual math before deciding to rebuild from zero. A full rewrite in the Northern Netherlands typically runs €120,000-€180,000 and four to six months of parallel-running risk, during which the old system must keep functioning or the business stops. A structured rescue - audit, characterization tests, incremental rebuild - usually costs 35-50% less and ships usable improvements within weeks instead of waiting for a full replacement to go live. Add the hidden cost most CTOs forget: the 15-20 hours a week operations staff currently spend on manual workarounds around the parts of the system nobody trusts, which at a loaded cost of €40/hour is €2,600-€3,500 a month bleeding out quietly, invisible on any invoice.
 
-If your business depends on code that only one absent person ever understood, that is not a maintenance backlog item — it is a solvency risk sitting one server failure away from becoming a headline. Talk to us before that server fails, not after, at our [contact page](https://www.manifera.com/contact-us/).
+If your business depends on code that only one absent person ever understood, that is not a maintenance backlog item - it is a solvency risk sitting one server failure away from becoming a headline. Talk to us before that server fails, not after, at our [contact page](https://www.manifera.com/contact-us/).
 
 ## What a Proper Custom Software Audit Delivers as Line-Item Artifacts
 
-A custom software audit worth paying for produces specific artifacts, not a verbal summary of "it's messy." Expect a full entry-point inventory — every API endpoint, scheduled job, and external integration the system exposes, typically 30-60 items for a mid-sized operational system; a database schema diagram with foreign-key relationships reverse-engineered from the actual database, not from any usually-absent original documentation; a risk-tiered list of components ranked by both business criticality and code fragility, so the CTO knows exactly which module would hurt most if it broke next; a characterization test coverage report showing what percentage of critical paths now have a safety net versus what remains untested; and a Bus Factor Score for each major component — how many current team members could safely modify it today, ideally rising from one, or zero, to at least two by the audit's end. For a Groningen energy-transition or agri-tech operator, the audit should also flag any component touching regulatory reporting or grid-integration data specifically, since those carry compliance exposure beyond ordinary maintainability risk. A vendor that can't commit to delivering these five artifacts on a fixed timeline, typically two to three weeks for a system of this size, isn't running an audit — they're running a sales pitch disguised as diligence.
+A custom software audit worth paying for produces specific artifacts, not a verbal summary of "it's messy." Expect a full entry-point inventory - every API endpoint, scheduled job, and external integration the system exposes, typically 30-60 items for a mid-sized operational system; a database schema diagram with foreign-key relationships reverse-engineered from the actual database, not from any usually-absent original documentation; a risk-tiered list of components ranked by both business criticality and code fragility, so the CTO knows exactly which module would hurt most if it broke next; a characterization test coverage report showing what percentage of critical paths now have a safety net versus what remains untested; and a Bus Factor Score for each major component - how many current team members could safely modify it today, ideally rising from one, or zero, to at least two by the audit's end. For a Groningen energy-transition or agri-tech operator, the audit should also flag any component touching regulatory reporting or grid-integration data specifically, since those carry compliance exposure beyond ordinary maintainability risk. A vendor that can't commit to delivering these five artifacts on a fixed timeline, typically two to three weeks for a system of this size, isn't running an audit - they're running a sales pitch disguised as diligence.
 
 ## Frequently Asked Questions
 
@@ -82,7 +82,7 @@ We start with a structured code audit and build characterization tests that capt
 
 In most cases rescue costs 35-50% less than a full rewrite and delivers usable improvements within weeks rather than months. A full rewrite only makes sense when the underlying technology itself is end-of-life or the domain logic has changed so much the old system no longer reflects the business.
 
-### (Scenario: CTO worried about losing institutional knowledge) The original freelancer is unreachable — can you still figure out what the system is supposed to do?
+### (Scenario: CTO worried about losing institutional knowledge) The original freelancer is unreachable - can you still figure out what the system is supposed to do?
 
 Yes. Code archaeology and characterization testing are built specifically for this situation: we determine intended behavior by observing what the system actually does across real data and integrations, not by relying on documentation that never existed.
 
@@ -96,19 +96,19 @@ A single freelancer recreates the exact bus-factor risk you're trying to escape.
 
 ### (Scenario: CTO wanting to know what an audit report actually contains) What specific deliverables should a custom software audit produce, not just a verbal assessment?
 
-An entry-point inventory, a reverse-engineered database schema diagram, a risk-tiered component list, a characterization test coverage report, and a Bus Factor Score per component — five concrete artifacts, typically delivered within two to three weeks for a mid-sized system.
+An entry-point inventory, a reverse-engineered database schema diagram, a risk-tiered component list, a characterization test coverage report, and a Bus Factor Score per component - five concrete artifacts, typically delivered within two to three weeks for a mid-sized system.
 
 ### (Scenario: CTO wanting to measure whether a rescue has actually reduced risk) How do you measure whether a rescue engagement has actually reduced bus-factor risk?
 
-Track a Bus Factor Score per major component — the number of current team members who could safely modify it today — and treat the engagement as successful only once that score rises from one or zero to at least two across every business-critical module.
+Track a Bus Factor Score per major component - the number of current team members who could safely modify it today - and treat the engagement as successful only once that score rises from one or zero to at least two across every business-critical module.
 
 ### (Scenario: CTO at a Groningen energy-transition company with grid-integration data) Does a custom software audit need to flag anything specific for a Groningen energy-transition or grid-integration system?
 
-Yes — any component touching regulatory reporting or grid-integration data should be flagged separately during the audit, since it carries compliance exposure on top of the ordinary maintainability risk the rest of the system presents.
+Yes - any component touching regulatory reporting or grid-integration data should be flagged separately during the audit, since it carries compliance exposure on top of the ordinary maintainability risk the rest of the system presents.
 
 ### (Scenario: CTO whose freelancer left no version control history at all) What if there's no version control history at all, not even a partial one?
 
-That's a starting condition, not a blocker — code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself, so a missing Git history only affects how the audit begins, not whether it can proceed.
+That's a starting condition, not a blocker - code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself, so a missing Git history only affects how the audit begins, not whether it can proceed.
 
 <script type="application/ld+json">
 {
@@ -123,7 +123,7 @@ That's a starting condition, not a blocker — code archaeology works directly a
     { "@type": "Question", "name": "(Scenario: CTO wanting to know what an audit report actually contains) What specific deliverables should a custom software audit produce, not just a verbal assessment?", "acceptedAnswer": { "@type": "Answer", "text": "An entry-point inventory, a reverse-engineered database schema diagram, a risk-tiered component list, a characterization test coverage report, and a Bus Factor Score per component." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting to measure whether a rescue has actually reduced risk) How do you measure whether a rescue engagement has actually reduced bus-factor risk?", "acceptedAnswer": { "@type": "Answer", "text": "Track a Bus Factor Score per major component and treat the engagement as successful only once that score rises from one or zero to at least two across every business-critical module." } },
     { "@type": "Question", "name": "(Scenario: CTO at a Groningen energy-transition company with grid-integration data) Does a custom software audit need to flag anything specific for a Groningen energy-transition or grid-integration system?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, any component touching regulatory reporting or grid-integration data should be flagged separately, since it carries compliance exposure beyond ordinary maintainability risk." } },
-    { "@type": "Question", "name": "(Scenario: CTO whose freelancer left no version control history at all) What if there's no version control history at all, not even a partial one?", "acceptedAnswer": { "@type": "Answer", "text": "That's a starting condition, not a blocker — code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself." } }
+    { "@type": "Question", "name": "(Scenario: CTO whose freelancer left no version control history at all) What if there's no version control history at all, not even a partial one?", "acceptedAnswer": { "@type": "Answer", "text": "That's a starting condition, not a blocker - code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself." } }
   ]
 }
 </script>

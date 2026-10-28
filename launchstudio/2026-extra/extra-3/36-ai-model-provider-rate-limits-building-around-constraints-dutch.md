@@ -55,7 +55,7 @@ Het controleren van de gedocumenteerde snelheidslimieten van uw specifieke AI-pr
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt de blootstelling aan snelheidslimieten van AI-providers en implementeert passende wachtrijen, herhalings- en verslechteringslogica als een standaard onderdeel van productieverharding. Wij behandelen deze beperking aan de leverancierszijde met dezelfde bewuste aandacht die wordt gegeven aan de eigen API-limieten van een product, ondersteund door Manifera's bredere ervaring in het ontwerpen rond externe afhankelijkheden die een klant niet beheert.
 
-[Ontdek of de betrouwbaarheid van uw product afhangt van een limiet die u nooit daadwerkelijk heeft gecontroleerd](https://launchstudio.eu/nl/#calculator) — deze beperking zit volledig boven uw eigen snelheidslimieten.
+[Ontdek of de betrouwbaarheid van uw product afhangt van een limiet die u nooit daadwerkelijk heeft gecontroleerd](https://launchstudio.eu/nl/#calculator) - deze beperking zit volledig boven uw eigen snelheidslimieten.
 
 ## Het bouwen van een echte terugvaloptie: Wat redundantie met meerdere providers daadwerkelijk vereist
 
@@ -84,9 +84,9 @@ Tijdens een periode waarin meerdere klantbedrijven toevallig gelijktijdig seizoe
 **Resultaat:** LaunchStudio implementeerde het in de wachtrij plaatsen van verzoeken met duidelijke, eerlijke klantgerichte berichtgeving tijdens perioden met veel vraag, samen met een geüpgraded provider-niveau dat gepast was gedimensioneerd voor OnboardCoach's daadwerkelijke piekgebruik in plaats van het gemiddelde gebruik. Hiermee werd een kloof gedicht die echte klantgerichte storingen had veroorzaakt tijdens exact de momenten waarop de waarde van OnboardCoach er het meest toe deed.
 
 > *"Alles werkte maandenlang prima bij normaal gebruik. Die ene week dat meerdere klanten toevallig tegelijk zwaar aan het werven waren, begonnen generatieverzoeken gewoon rechtstreeks te falen, zonder dat iets iemand vertelde waarom of wat er aan te doen."*
-> — **Milan de Groot, Oprichter, OnboardCoach (Zoetermeer)**
+> - **Milan de Groot, Oprichter, OnboardCoach (Zoetermeer)**
 
-**Kosten en tijdlijn:** € 1.550 (architectuur voor snelheidslimieten en niveau-upgrade) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.550 (architectuur voor snelheidslimieten en niveau-upgrade) - voltooid in 6 werkdagen.
 
 ---
 
@@ -146,7 +146,7 @@ Het geldt breed voor providers van elke omvang, aangezien het beperken van de sn
       "name": "Hoe beïnvloedt een wachtrij de gebruikerservaring vergeleken met uitval?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanzienlijk beter — een melding over korte vertraging behoudt vertrouwen, terwijl uitval zonder uitleg het schaadt."
+        "text": "Aanzienlijk beter - een melding over korte vertraging behoudt vertrouwen, terwijl uitval zonder uitleg het schaadt."
       }
     },
     {

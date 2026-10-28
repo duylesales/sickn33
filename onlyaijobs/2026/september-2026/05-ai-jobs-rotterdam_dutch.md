@@ -25,9 +25,9 @@ Een aanbevelingsmodel dat ernaast zit, kost een bedrijf een slechte suggestie. E
 
 ## Een markt gebouwd rond doorvoer, niet rond aandacht
 
-Het meeste Nederlandse AI-werk buiten Rotterdam optimaliseert voor aandacht: waar een gebruiker op klikt, wat die koopt, wat die op een scherm houdt. De kernindustrie van Rotterdam — de grootste haven van Europa, plus de logistieke, energie- en industriële basis eromheen — optimaliseert voor doorvoer: hoeveel containers bewegen, hoe efficiënt een keten omrijdt rond een vertraging, hoe een terminal het werk inplant wanneer een schip twaalf uur te laat binnenkomt.
+Het meeste Nederlandse AI-werk buiten Rotterdam optimaliseert voor aandacht: waar een gebruiker op klikt, wat die koopt, wat die op een scherm houdt. De kernindustrie van Rotterdam - de grootste haven van Europa, plus de logistieke, energie- en industriële basis eromheen - optimaliseert voor doorvoer: hoeveel containers bewegen, hoe efficiënt een keten omrijdt rond een vertraging, hoe een terminal het werk inplant wanneer een schip twaalf uur te laat binnenkomt.
 
-Dat levert een ander soort machine learning-probleem op. De invoer is fysiek en deels waarneembaar — weer, vaarschema's, beschikbaarheid van materieel, douanestatus — en de kosten van een verkeerde voorspelling worden gemeten in uren stilstaande infrastructuur in plaats van in een iets slechtere aanbeveling. Engineers die alleen aan consumentgericht ML hebben gewerkt, onderschatten vaak hoeveel moeilijker dit goed te krijgen is, omdat de verliesfunctie niet "klikte de gebruiker" is maar "vertrok het schip op tijd".
+Dat levert een ander soort machine learning-probleem op. De invoer is fysiek en deels waarneembaar - weer, vaarschema's, beschikbaarheid van materieel, douanestatus - en de kosten van een verkeerde voorspelling worden gemeten in uren stilstaande infrastructuur in plaats van in een iets slechtere aanbeveling. Engineers die alleen aan consumentgericht ML hebben gewerkt, onderschatten vaak hoeveel moeilijker dit goed te krijgen is, omdat de verliesfunctie niet "klikte de gebruiker" is maar "vertrok het schip op tijd".
 
 ## Wat voor AI-werk er in Rotterdam gebeurt
 
@@ -35,9 +35,9 @@ Dat levert een ander soort machine learning-probleem op. De invoer is fysiek en 
 
 **Energie- en industriedata.** Het havengebied is ook een van de grootste industriële en energieclusters van het land, wat procesoptimalisatie, voorspellend onderhoud en in toenemende mate datawerk oplevert rond de transitie van fossiele doorvoer naar waterstof en duurzame stromen.
 
-**E-commerce en consumentenlogistiek.** Rotterdam en de bredere regio Rijnmond huisvesten ook consumentgerichte bedrijven voor wie logistiek het product is en niet een ondersteunende functie — wat betekent dat voorspel- en fulfilmentmodellen worden behandeld als kern-engineering in plaats van als backend-bijzaak.
+**E-commerce en consumentenlogistiek.** Rotterdam en de bredere regio Rijnmond huisvesten ook consumentgerichte bedrijven voor wie logistiek het product is en niet een ondersteunende functie - wat betekent dat voorspel- en fulfilmentmodellen worden behandeld als kern-engineering in plaats van als backend-bijzaak.
 
-Bedrijven die al AI- en datarollen plaatsen op OnlyAIJobs — waaronder Rexel Nederland en AMCS — passen in datzelfde patroon: infrastructuur- en operatiezware bedrijven waar het machine learning-werk contact met een fysiek proces moet overleven, niet alleen een A/B-test.
+Bedrijven die al AI- en datarollen plaatsen op OnlyAIJobs - waaronder Rexel Nederland en AMCS - passen in datzelfde patroon: infrastructuur- en operatiezware bedrijven waar het machine learning-werk contact met een fysiek proces moet overleven, niet alleen een A/B-test.
 
 ## Rotterdam vergeleken met schermgerichte AI-markten
 
@@ -45,36 +45,36 @@ Bedrijven die al AI- en datarollen plaatsen op OnlyAIJobs — waaronder Rexel Ne
 |---|---|---|
 | Belangrijkste invoerdata | Gebruikersgedrag, clickstream | Fysieke sensoren, schema's, weer, douane |
 | Kosten van een verkeerde voorspelling | Slechtere aanbeveling, gemiste klik | Stilliggend schip, gemiste slot, doorwerkende vertraging |
-| Evaluatiecyclus | Snel — A/B-test in dagen | Trager — gekoppeld aan fysieke operatiecycli |
+| Evaluatiecyclus | Snel - A/B-test in dagen | Trager - gekoppeld aan fysieke operatiecycli |
 | Kernvaardigheid naast ML | Productanalyse | Operations research, systeemdenken |
-| Zichtbaarheid op algemene vacaturebanken | Hoog — bekende titels ("ML Engineer") | Laag — verstopt onder logistiek- of ketentitels |
+| Zichtbaarheid op algemene vacaturebanken | Hoog - bekende titels ("ML Engineer") | Laag - verstopt onder logistiek- of ketentitels |
 | Woonlasten ten opzichte van de Randstadkern | Doorgaans lager | Doorgaans lager |
 
 ## Waarom dit werk moeilijk te vinden is met "AI vacatures"
 
-Vrijwel niets van dit werk wordt geadverteerd onder een AI-klinkende titel. Het staat er als "Supply Chain Data Analist", "Logistics Optimisation Engineer" of "Process Data Scientist" — titels geschreven door operatieteams, niet door een employer brand-functie die weet dat het trefwoord "AI" erin moet. Een kandidaat die alleen op machine learning-titels zoekt, filtert een groot deel van het meest consequente modelleerwerk in de stad weg voordat die het ooit heeft gezien.
+Vrijwel niets van dit werk wordt geadverteerd onder een AI-klinkende titel. Het staat er als "Supply Chain Data Analist", "Logistics Optimisation Engineer" of "Process Data Scientist" - titels geschreven door operatieteams, niet door een employer brand-functie die weet dat het trefwoord "AI" erin moet. Een kandidaat die alleen op machine learning-titels zoekt, filtert een groot deel van het meest consequente modelleerwerk in de stad weg voordat die het ooit heeft gezien.
 
 Dit is precies het gat dat een categoriefilter dicht en een trefwoordzoekopdracht niet: bladeren op AI/ML/Data-categorie brengt rollen naar boven ongeacht hoe het aannemende team ze heeft genoemd, in plaats van erop te vertrouwen dat dat team hetzelfde vocabulaire gebruikte als een werkzoekende.
 
 ## Waar te beginnen
 
-Heb je alleen ooit schermgericht machine learning gedaan, dan is Rotterdam specifiek de moeite van het bekijken waard omdat de randvoorwaarden verschillen op manieren die een sterker cv opleveren, niet alleen een andere reis. Bekijk wat er op categorie staat in plaats van op titel, en let op welke rollen fysieke of logistieke randvoorwaarden noemen in de omschrijving — dat is meestal het teken van de zwaardere, duurzamere versie van het werk.
+Heb je alleen ooit schermgericht machine learning gedaan, dan is Rotterdam specifiek de moeite van het bekijken waard omdat de randvoorwaarden verschillen op manieren die een sterker cv opleveren, niet alleen een andere reis. Bekijk wat er op categorie staat in plaats van op titel, en let op welke rollen fysieke of logistieke randvoorwaarden noemen in de omschrijving - dat is meestal het teken van de zwaardere, duurzamere versie van het werk.
 
 Bekijk actuele AI-, machine learning- en datavacatures in de regio Rotterdam op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), gefilterd op categorie en afstand tot huis.
 
 ## Veelgestelde vragen
 
 ### (Scenario: ML-engineer die alleen aan consumentenproducten heeft gewerkt) Wat maakt het AI-werk in Rotterdam anders dan dat in Amsterdam?
-De kernindustrie van Rotterdam — de grootste haven van Europa plus de omliggende logistieke en industriële basis — optimaliseert voor fysieke doorvoer in plaats van voor gebruikersinteractie. De invoer bestaat uit zaken als vaarschema's, weer en materieelstatus, en de kosten van een verkeerde voorspelling worden gemeten in uren stilstaande infrastructuur, niet in een iets slechtere aanbeveling. Het is een fundamenteel andere, en vaak zwaardere, klasse modelleerproblemen.
+De kernindustrie van Rotterdam - de grootste haven van Europa plus de omliggende logistieke en industriële basis - optimaliseert voor fysieke doorvoer in plaats van voor gebruikersinteractie. De invoer bestaat uit zaken als vaarschema's, weer en materieelstatus, en de kosten van een verkeerde voorspelling worden gemeten in uren stilstaande infrastructuur, niet in een iets slechtere aanbeveling. Het is een fundamenteel andere, en vaak zwaardere, klasse modelleerproblemen.
 
 ### (Scenario: kandidaat die alleen op "AI"- of "machine learning"-titels zoekt) Waarom vind ik deze rollen niet door te zoeken op "AI vacatures Rotterdam"?
-Omdat het meeste van dit werk wordt getiteld door operatieteams — "Supply Chain Data Analist", "Logistics Optimisation Engineer" — en niet door een employer brand-team dat weet dat er een AI-klinkend trefwoord in moet. Zoeken op titel filtert een groot deel van het meest consequente modelleerwerk van de stad weg voordat je het ooit ziet.
+Omdat het meeste van dit werk wordt getiteld door operatieteams - "Supply Chain Data Analist", "Logistics Optimisation Engineer" - en niet door een employer brand-team dat weet dat er een AI-klinkend trefwoord in moet. Zoeken op titel filtert een groot deel van het meest consequente modelleerwerk van de stad weg voordat je het ooit ziet.
 
 ### (Scenario: engineer die afweegt of havenwerk "echt" AI is) Is logistiek- en ketenmodellering daadwerkelijk machine learning, of iets anders?
 Het is meestal allebei: machine learning en operations research door hetzelfde team. Voorspelling, verstoringsmodellering en routeoptimalisatie steunen op dezelfde statistische en modelleringsfundamenten als consumenten-ML, maar met fysieke en planningsrandvoorwaarden erbovenop waar consumentgericht werk zelden rekening mee hoeft te houden.
 
 ### (Scenario: kandidaat die kiest tussen consumententech en industriële AI) Waarom zou een zwaardere evaluatiecyclus een voordeel zijn in plaats van een nadeel?
-Omdat de discipline die nodig is om een model contact met een fysiek proces te laten overleven — in plaats van alleen een A/B-test te winnen — engineers oplevert die moeilijker te vervangen zijn en beter voorbereid op rollen waar fouten gevolgen hebben die verder reiken dan een metriek. Dat is een ander soort carrièrekapitaal dan snel itereren op een scherm.
+Omdat de discipline die nodig is om een model contact met een fysiek proces te laten overleven - in plaats van alleen een A/B-test te winnen - engineers oplevert die moeilijker te vervangen zijn en beter voorbereid op rollen waar fouten gevolgen hebben die verder reiken dan een metriek. Dat is een ander soort carrièrekapitaal dan snel itereren op een scherm.
 
 ### (Scenario: werkzoekende die niet weet hoe te zoeken naar dit soort rollen) Hoe zoek ik naar AI-werk in Rotterdam als de functietitels geen "AI" bevatten?
 Filter op categorie op een gespecialiseerd platform in plaats van te zoeken op titel. Een categoriefilter brengt rollen naar boven op basis van wat het werk daadwerkelijk is, ongeacht hoe een operatieteam besloot het in de vacature te noemen.

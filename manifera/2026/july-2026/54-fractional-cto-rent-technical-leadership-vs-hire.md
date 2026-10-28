@@ -73,15 +73,15 @@ A Fractional CTO is not a silver bullet. You should **hire full-time** if:
 The fractional CTO market has grown fast enough that it now attracts two very different profiles: experienced operators who have actually shipped and scaled production systems, and "generalist consultants" who pivoted into the title because it commands a higher day rate than "IT advisor." Founders without a technical background often cannot tell the two apart in an interview, which is exactly the information asymmetry a Fractional CTO is supposed to solve for you in the first place.
 
 **Four red flags to screen for before signing a retainer:**
-1. **No hands-on code or architecture review in the first two weeks.** A credible candidate will ask for repository access, CI/CD dashboards, and cloud billing within days of starting — not just meeting minutes and Jira boards. If 30 days pass with only strategy conversations and no direct look at the actual system, you are paying for a management consultant, not a technologist.
-2. **Vague or unverifiable prior scaling experience.** Ask for two specific, checkable references from founders they advised — not just LinkedIn recommendations — and ask those references one pointed question: "What decision did they change your mind on, and were they right?"
+1. **No hands-on code or architecture review in the first two weeks.** A credible candidate will ask for repository access, CI/CD dashboards, and cloud billing within days of starting - not just meeting minutes and Jira boards. If 30 days pass with only strategy conversations and no direct look at the actual system, you are paying for a management consultant, not a technologist.
+2. **Vague or unverifiable prior scaling experience.** Ask for two specific, checkable references from founders they advised - not just LinkedIn recommendations - and ask those references one pointed question: "What decision did they change your mind on, and were they right?"
 3. **No opinion on your specific tech stack within the first month.** A real CTO forms a point of view on your database choice, cloud provider, and architecture risk quickly. Someone who stays diplomatically neutral indefinitely is avoiding accountability.
 4. **Reluctance to put findings in writing.** Verbal-only feedback that never becomes a documented architecture assessment or roadmap is difficult for you, your co-founders, or future investors to hold accountable later.
 
 **A practical 90-day onboarding framework** to structure the engagement and measure whether it's working:
 - **Days 1-30 (Audit):** Full codebase and infrastructure review, security posture check, and a written "State of the Stack" assessment identifying the top 5 risks.
 - **Days 31-60 (Roadmap):** A prioritized 6-12 month technical roadmap tied to business milestones (fundraising, launch, scaling events), plus initial process changes (CI/CD, code review standards).
-- **Days 61-90 (Execution & Proof):** At least one measurable improvement shipped — reduced deploy time, closed security gap, or a resolved due-diligence blocker — that the founder can point to as concrete evidence the retainer is earning its cost.
+- **Days 61-90 (Execution & Proof):** At least one measurable improvement shipped - reduced deploy time, closed security gap, or a resolved due-diligence blocker - that the founder can point to as concrete evidence the retainer is earning its cost.
 
 If a Fractional CTO cannot produce a written "State of the Stack" document by day 30, that alone is grounds to reconsider the engagement before renewing the retainer.
 
@@ -91,7 +91,7 @@ A common pattern for smart startups is pairing a European Fractional CTO with a 
 
 At Manifera, we frequently work alongside our clients' Fractional CTOs. The Fractional CTO provides the business-aligned architectural vision and sits in the European boardroom, while our [dedicated development teams](https://www.manifera.com/services/dedicated-development-teams/) in Vietnam provide the high-velocity, cost-effective execution. Alternatively, Manifera can provide Technical Architects to act in this fractional advisory capacity for our clients.
 
-Scale your technical leadership efficiently — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Scale your technical leadership efficiently - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 

@@ -35,25 +35,25 @@ Content Format: Career Guide
 }
 </script>
 
-At the end of a bachelor's degree in AI, data science or a related field, you often get the same question from study advisers, parents and LinkedIn: will you continue with a research master, or look for a job now? The problem with that question is that it is asked as if there is one right answer. There isn't — it depends on what kind of work you want to be doing in five years, not on which route sounds "better."
+At the end of a bachelor's degree in AI, data science or a related field, you often get the same question from study advisers, parents and LinkedIn: will you continue with a research master, or look for a job now? The problem with that question is that it is asked as if there is one right answer. There isn't - it depends on what kind of work you want to be doing in five years, not on which route sounds "better."
 
 ## What a Research Master Actually Gives You
 
-Depth in a specific subfield, practice in independently designing and defending research, and access to roles that explicitly ask for that background — often in research groups, specialised teams at larger companies, or positions where methodological rigour weighs more heavily than speed. The price is time: two years in which you don't build practical experience at a company.
+Depth in a specific subfield, practice in independently designing and defending research, and access to roles that explicitly ask for that background - often in research groups, specialised teams at larger companies, or positions where methodological rigour weighs more heavily than speed. The price is time: two years in which you don't build practical experience at a company.
 
 ## What Going Straight Into a Job Actually Gives You
 
-Practical experience with production systems, real deadlines and the compromises that come with them — things a research master rarely teaches, simply because the context is different. You learn faster what it means to maintain a model that has been running in production for a year, instead of training it and then letting it go.
+Practical experience with production systems, real deadlines and the compromises that come with them - things a research master rarely teaches, simply because the context is different. You learn faster what it means to maintain a model that has been running in production for a year, instead of training it and then letting it go.
 
 ## The Question That Really Matters
 
-Not "which is better," but: in five years, do you want to be doing the kind of work that requires a research background, or the kind of work where practical experience weighs more heavily than a specific degree title? Most vacancies for applied AI work in the Netherlands don't explicitly ask for a research master — but some specialised and research-related roles do, and those are often hard to reach without that background later.
+Not "which is better," but: in five years, do you want to be doing the kind of work that requires a research background, or the kind of work where practical experience weighs more heavily than a specific degree title? Most vacancies for applied AI work in the Netherlands don't explicitly ask for a research master - but some specialised and research-related roles do, and those are often hard to reach without that background later.
 
 ## Three Questions That Make the Choice More Concrete Than "Which Is Better"
 
 **Question 1: Does the work I want to do in five years explicitly require a research background?** For some specialised research roles the answer is yes, and then the master is not optional but a de facto entry requirement. For the vast majority of applied AI work in the Netherlands, the answer is no.
 
-**Question 2: How important is it for me to build income and practical experience now?** Two years of a research master means two years without a salary from this sector and without the practical experience you would otherwise build — a real cost, not just an investment.
+**Question 2: How important is it for me to build income and practical experience now?** Two years of a research master means two years without a salary from this sector and without the practical experience you would otherwise build - a real cost, not just an investment.
 
 **Question 3: Can I develop the same research-minded thinking through self-study and projects alongside a job?** For some people yes; for others, the structure and supervision of a master offers something self-study can't match. This is personal, not a universal answer.
 
@@ -73,23 +73,23 @@ Students often treat this decision as if it fixes their entire future career pat
 
 ## A Concrete Scenario to Test the Choice
 
-Imagine two versions of yourself, two years from now. In version A, you have completed a research master and are now applying for your first job, with in-depth theoretical knowledge but no practical experience with production systems. In version B, you have built two years of practical experience at a company, with strong skills in building and maintaining models in production, but without the in-depth theoretical training of a master. Which of these two versions of yourself feels more attractive to be — not which is "better" in the abstract, but which daily reality appeals to you more? This kind of concrete visualisation often works better than weighing abstract pros and cons.
+Imagine two versions of yourself, two years from now. In version A, you have completed a research master and are now applying for your first job, with in-depth theoretical knowledge but no practical experience with production systems. In version B, you have built two years of practical experience at a company, with strong skills in building and maintaining models in production, but without the in-depth theoretical training of a master. Which of these two versions of yourself feels more attractive to be - not which is "better" in the abstract, but which daily reality appeals to you more? This kind of concrete visualisation often works better than weighing abstract pros and cons.
 
 ## A Common Misconception About What a Master "Gives" You
 
-Students sometimes assume that a research master automatically gives access to better, more prestigious jobs than working straight away. That is only true for the specific segment of roles that explicitly asks for that background — for the vast majority of applied AI work in the Netherlands, two years of relevant practical experience is at least as strong, and often a stronger, indicator of suitability than an academic title without practical experience.
+Students sometimes assume that a research master automatically gives access to better, more prestigious jobs than working straight away. That is only true for the specific segment of roles that explicitly asks for that background - for the vast majority of applied AI work in the Netherlands, two years of relevant practical experience is at least as strong, and often a stronger, indicator of suitability than an academic title without practical experience.
 
 ## Why This Decision Should Weigh Less Than It Often Feels
 
-Many students experience this choice as a decision that determines their entire future career, which raises the pressure unnecessarily. In practice, the Dutch labour market is flexible enough to combine both paths later — someone who starts working first can later follow a part-time master if a specific role calls for it, and someone who does a master first can simply enter the labour market afterwards like any other starter. Treat this choice as a real but reversible trade-off, not an irreversible fate.
+Many students experience this choice as a decision that determines their entire future career, which raises the pressure unnecessarily. In practice, the Dutch labour market is flexible enough to combine both paths later - someone who starts working first can later follow a part-time master if a specific role calls for it, and someone who does a master first can simply enter the labour market afterwards like any other starter. Treat this choice as a real but reversible trade-off, not an irreversible fate.
 
 ## What Your Parents or Study Advisers Probably Won't Tell You
 
-Study advisers often have an implicit preference for recommending further study, simply because it fits their own experience and institutional context — a study adviser rarely sees the actual career outcomes of students who went straight into work, because those students disappear from view once they graduate. This means the advice you get from a study adviser can be systematically skewed towards "do another master," not because that is objectively the best advice, but because it is the only outcome the adviser can actually follow and therefore regard as successful.
+Study advisers often have an implicit preference for recommending further study, simply because it fits their own experience and institutional context - a study adviser rarely sees the actual career outcomes of students who went straight into work, because those students disappear from view once they graduate. This means the advice you get from a study adviser can be systematically skewed towards "do another master," not because that is objectively the best advice, but because it is the only outcome the adviser can actually follow and therefore regard as successful.
 
 ## How to Test This Decision Before You Make It Final
 
-Instead of making this choice entirely in the abstract, it is valuable to actually talk to people who have followed both routes before deciding — not in a single conversation, but with several people at different stages of their careers after each route. Don't ask "was this the right choice," a question almost nobody can answer honestly about their own past, but ask concretely: "what did you do in your first year after this choice, and what do you wish you had known then?" These kinds of concrete, factual questions produce more useful information than a retrospective judgement about whether the choice was "good."
+Instead of making this choice entirely in the abstract, it is valuable to actually talk to people who have followed both routes before deciding - not in a single conversation, but with several people at different stages of their careers after each route. Don't ask "was this the right choice," a question almost nobody can answer honestly about their own past, but ask concretely: "what did you do in your first year after this choice, and what do you wish you had known then?" These kinds of concrete, factual questions produce more useful information than a retrospective judgement about whether the choice was "good."
 
 ## Which Masters Actually Exist in the Netherlands for AI and Data
 
@@ -109,7 +109,7 @@ For each programme, look at the graduation project: is it carried out in a resea
 
 **Student finance.** Master's students who meet the conditions can receive student finance through **DUO**, the Education Executive Agency. Since the 2023/2024 academic year there is once again a basic grant for students in higher education, alongside the option to borrow. Check with DUO what applies to your situation.
 
-**Tuition fees for a second degree.** If you have already completed a master and later want to do another one, in many cases you pay the higher institutional tuition fee instead of the statutory fee. That makes "doing a master later" more expensive than many students expect — a real argument for making the trade-off consciously now.
+**Tuition fees for a second degree.** If you have already completed a master and later want to do another one, in many cases you pay the higher institutional tuition fee instead of the statutory fee. That makes "doing a master later" more expensive than many students expect - a real argument for making the trade-off consciously now.
 
 **Lifelong Learning Credit.** For those who want to study alongside work later, DUO offers the Lifelong Learning Credit (*Leven Lang Leren Krediet*), a loan for tuition fees. Some employers also reimburse education, sometimes under a collective labour agreement. So ask explicitly about the training budget in a first job.
 
@@ -141,37 +141,37 @@ International students from outside the EU who graduate in the Netherlands can, 
 
 ## Where to Start
 
-Don't look at what "most people" do, but at the actual vacancies in the field that interests you — which ask for a research master and which don't. That gives a more concrete answer than generic advice ever can.
+Don't look at what "most people" do, but at the actual vacancies in the field that interests you - which ask for a research master and which don't. That gives a more concrete answer than generic advice ever can.
 
 Browse current AI, machine learning and data vacancies in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs) to see what background is asked for in practice.
 
 ## Frequently Asked Questions
 
 ### (Scenario: student who thinks a master is always better) Is a research master always better for an AI career than working straight away?
-No — it depends on the kind of work you want to do later. Some specialised and research-related roles explicitly ask for that background, but a lot of applied AI work in the Netherlands doesn't.
+No - it depends on the kind of work you want to do later. Some specialised and research-related roles explicitly ask for that background, but a lot of applied AI work in the Netherlands doesn't.
 
 ### (Scenario: student afraid of missing an opportunity) Am I missing opportunities if I start working now instead of doing a master first?
 You trade one kind of opportunity for another: practical experience and building a network faster, versus depth and access to roles that specifically ask for a research background. Neither is by definition a missed opportunity.
 
 ### (Scenario: student unsure whether it makes a practical difference) What is the practical difference between someone with and without a research master in a junior role?
-Often smaller than expected in applied roles — practical experience usually closes that gap within a year or two. In research-related or highly specialised roles, the difference remains larger.
+Often smaller than expected in applied roles - practical experience usually closes that gap within a year or two. In research-related or highly specialised roles, the difference remains larger.
 
 ### (Scenario: student unsure how to decide) How do I concretely determine which route suits me?
 Look at the actual vacancies in the specific field that interests you, and see how many require a research master versus how many are accessible with practical experience alone. That is a more concrete signal than general advice.
 
 ### (Scenario: student considering a master purely for status) Should I do a master purely because it looks better on my CV?
-That is rarely a good reason on its own — the time investment is large, and employers in applied AI work look more at demonstrable skills and projects than at the title of your degree alone.
+That is rarely a good reason on its own - the time investment is large, and employers in applied AI work look more at demonstrable skills and projects than at the title of your degree alone.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a research master always better for an AI career than working straight away?", "acceptedAnswer": {"@type": "Answer", "text": "No — it depends on the kind of work you want to do later. Some specialised and research-related roles explicitly ask for that background, but a lot of applied AI work doesn't."}},
+    {"@type": "Question", "name": "Is a research master always better for an AI career than working straight away?", "acceptedAnswer": {"@type": "Answer", "text": "No - it depends on the kind of work you want to do later. Some specialised and research-related roles explicitly ask for that background, but a lot of applied AI work doesn't."}},
     {"@type": "Question", "name": "Am I missing opportunities if I start working now instead of doing a master first?", "acceptedAnswer": {"@type": "Answer", "text": "You trade one kind of opportunity for another: practical experience versus depth and access to research-related roles. Neither is by definition a missed opportunity."}},
     {"@type": "Question", "name": "What is the practical difference between someone with and without a research master in a junior role?", "acceptedAnswer": {"@type": "Answer", "text": "Often smaller than expected in applied roles; in research-related or highly specialised roles the difference remains larger."}},
     {"@type": "Question", "name": "How do I concretely determine which route suits me?", "acceptedAnswer": {"@type": "Answer", "text": "Look at the actual vacancies in the field that interests you, and see how many require a research master versus how many are accessible with practical experience."}},
-    {"@type": "Question", "name": "Should I do a master purely because it looks better on my CV?", "acceptedAnswer": {"@type": "Answer", "text": "That is rarely a good reason on its own — employers in applied AI work look more at demonstrable skills and projects than at the degree title alone."}}
+    {"@type": "Question", "name": "Should I do a master purely because it looks better on my CV?", "acceptedAnswer": {"@type": "Answer", "text": "That is rarely a good reason on its own - employers in applied AI work look more at demonstrable skills and projects than at the degree title alone."}}
   ]
 }
 </script>

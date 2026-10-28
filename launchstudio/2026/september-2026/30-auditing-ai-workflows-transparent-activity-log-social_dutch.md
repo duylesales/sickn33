@@ -1,6 +1,6 @@
-🕵️ Chloe, eigenaar van een marketingbureau, bouwde een AI-copywriter met **Cursor** — maar zij had geen enkele manier om het tokenverbruik per klantorganisatie te traceren, waardoor zij geruisloos geld verloor op haar OpenAI-factuur. 💰
+🕵️ Chloe, eigenaar van een marketingbureau, bouwde een AI-copywriter met **Cursor** - maar zij had geen enkele manier om het tokenverbruik per klantorganisatie te traceren, waardoor zij geruisloos geld verloor op haar OpenAI-factuur. 💰
 
-U kunt een AI-agent achteraf niet interviewen — zonder een échte audit-log blijft de vraag "waarom deed het model dit?" onbeantwoord. 🧠
+U kunt een AI-agent achteraf niet interviewen - zonder een échte audit-log blijft de vraag "waarom deed het model dit?" onbeantwoord. 🧠
 
 ❌ Geen inzicht in welke klantorganisatie verantwoordelijk was voor de stijgende OpenAI-kosten
 ❌ Een "Black Box" AI-architectuur die enterprise procurement- en securityteams direct afwijzen
@@ -12,7 +12,7 @@ U kunt een AI-agent achteraf niet interviewen — zonder een échte audit-log bl
 
 Bij **LaunchStudio** stamt onze cybersecurity-achtergrond af van CFLW Cyber Strategies, waar we meebouwden aan het Dark Web Monitor platform met TNO. 🛡️
 
-Voor Chloe maakte de audit-trail nauwkeurige facturatie per organisatie mogelijk, waardoor haar SaaS-winstgevendheid met 20% steeg. (€1.800 (Token Audit Integration Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Voor Chloe maakte de audit-trail nauwkeurige facturatie per organisatie mogelijk, waardoor haar SaaS-winstgevendheid met 20% steeg. (€1.800 (Token Audit Integration Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u AI-workflows auditeert: https://launchstudio.eu/nl/blog/auditing-ai-workflows-transparent-activity-log
 

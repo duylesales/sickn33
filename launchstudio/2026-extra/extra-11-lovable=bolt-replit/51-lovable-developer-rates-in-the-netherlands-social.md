@@ -1,4 +1,4 @@
-🚨 Nienke Hulst had a working Lovable prototype for Klusmaat, a job-matching tool for independent tradespeople in Zwolle. She asked five different parties what it would cost to launch. The quotes ranged from €1,200 from a marketplace freelancer to €28,000 from a regional software agency — leaving her completely paralyzed by conflicting scopes and unexplained price tags. 😳
+🚨 Nienke Hulst had a working Lovable prototype for Klusmaat, a job-matching tool for independent tradespeople in Zwolle. She asked five different parties what it would cost to launch. The quotes ranged from €1,200 from a marketplace freelancer to €28,000 from a regional software agency - leaving her completely paralyzed by conflicting scopes and unexplained price tags. 😳
 
 Hourly rates mean nothing without a clearly defined scope of production deliverables. Here's what hiring Lovable talent actually costs in the Netherlands: 🧠
 

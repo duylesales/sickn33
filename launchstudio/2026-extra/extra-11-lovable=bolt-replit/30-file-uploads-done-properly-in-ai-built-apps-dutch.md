@@ -38,7 +38,7 @@ Elk van die vier standaarden is een levensgroot probleem op zich, en samen verst
 
 ## Valideer altijd op de server, want de browser heb je niet in de hand
 
-Controles in de browser — zoals het `accept`-attribuut op een HTML file-input of een JavaScript-check op de bestandsextensie — zijn louter interface-gemak voor goedwillende gebruikers. Iedereen met een terminal kan je upload-endpoint rechtstreeks aanroepen met elk willekeurig bestand.
+Controles in de browser - zoals het `accept`-attribuut op een HTML file-input of een JavaScript-check op de bestandsextensie - zijn louter interface-gemak voor goedwillende gebruikers. Iedereen met een terminal kan je upload-endpoint rechtstreeks aanroepen met elk willekeurig bestand.
 
 Echte validatie vindt altijd plaats op de backend (of via beveiligde Edge Functions) en controleert minimaal drie zaken:
 - Het werkelijke MIME-type op basis van de magic bytes in het bestand, niet de extensie (die immers eenvoudig hernoemd kan worden van `.exe` naar `.png`).
@@ -55,15 +55,15 @@ Twee ontwerpkeuzes hebben hier enorme gevolgen voor je veiligheid:
 
 **Structureer mappen op basis van eigenaarschap.** Een directorystructuur die het account- of organisatie-ID bevat (bijvoorbeeld `/organisaties/{org_id}/facturen/{uuid}.pdf`), maakt het opstellen en controleren van autorisatieregels (zoals Storage RLS in Supabase) triviaal. Bestanden die willekeurig in één platte bucket worden gedumpt, maken van elke toegangsbeslissing een complex en foutgevoelig uitzonderingsgeval.
 
-Gecombineerd zorgen deze maatregelen ervoor dat bestanden niet opsombaar (enumerable) zijn. Iemand die één bestandsadres bemachtigt, kan onmogelijk raden wat het volgende bestand is — wat direct misgaat als bestanden `factuur-1.pdf` tot en met `factuur-400.pdf` heten.
+Gecombineerd zorgen deze maatregelen ervoor dat bestanden niet opsombaar (enumerable) zijn. Iemand die één bestandsadres bemachtigt, kan onmogelijk raden wat het volgende bestand is - wat direct misgaat als bestanden `factuur-1.pdf` tot en met `factuur-400.pdf` heten.
 
 ## Standaard privé, gesigneerd wanneer nodig
 
 De allerbelangrijkste instelling in je cloudopslag: opslagbuckets die data van gebruikers bevatten moeten altijd **privé** zijn, nooit openbaar.
 
-Toegang verloopt via gesigneerde URL's (Signed URL's) — tijdelijke, cryptografisch beveiligde adressen die jouw server on-the-fly genereert voor een specifiek bestand en een specifieke gebruiker, met een strikte vervaltijd (bijvoorbeeld 15 minuten). Die vervaltijd is cruciaal: een gesigneerde link die wordt doorgestuurd in een e-mail of ticket stopt na korte tijd met werken, terwijl een openbare URL voor altijd blijft circuleren.
+Toegang verloopt via gesigneerde URL's (Signed URL's) - tijdelijke, cryptografisch beveiligde adressen die jouw server on-the-fly genereert voor een specifiek bestand en een specifieke gebruiker, met een strikte vervaltijd (bijvoorbeeld 15 minuten). Die vervaltijd is cruciaal: een gesigneerde link die wordt doorgestuurd in een e-mail of ticket stopt na korte tijd met werken, terwijl een openbare URL voor altijd blijft circuleren.
 
-Vóórdat je server zo'n tijdelijke link uitgeeft, controleert je applicatie eerst of de ingelogde gebruiker daadwerkelijk het recht heeft om dit bestand te zien. Die controle vormt je complete beveiligingsmodel — en dat is exact de stap die door AI gegenereerde code weglaat, omdat de enige gebruiker in de demo de ontwikkelaar zelf was.
+Vóórdat je server zo'n tijdelijke link uitgeeft, controleert je applicatie eerst of de ingelogde gebruiker daadwerkelijk het recht heeft om dit bestand te zien. Die controle vormt je complete beveiligingsmodel - en dat is exact de stap die door AI gegenereerde code weglaat, omdat de enige gebruiker in de demo de ontwikkelaar zelf was.
 
 ## Metadata: Wat bestanden verklappen zonder dat je het doorhebt
 
@@ -77,7 +77,7 @@ Dit is geen theoretisch risico. Een marktplaats die originele foto's serveert, p
 
 Moet een kleine SaaS-applicatie uploads scannen op virussen? Het eerlijke antwoord hangt af van wat er met de bestanden gebeurt.
 
-Worden geüploade bestanden uitsluitend bekeken door de gebruiker die ze zelf heeft geüpload (zoals persoonlijke administratie)? Dan ligt het risico primair bij die gebruiker zelf. Maar worden bestanden uitgewisseld tussen verschillende gebruikers — op een marktplaats, in een cliëntenportaal of in een berichtensysteem? Dan fungeert jouw platform als distributiekanaal voor malware en wordt scanning noodzakelijk.
+Worden geüploade bestanden uitsluitend bekeken door de gebruiker die ze zelf heeft geüpload (zoals persoonlijke administratie)? Dan ligt het risico primair bij die gebruiker zelf. Maar worden bestanden uitgewisseld tussen verschillende gebruikers - op een marktplaats, in een cliëntenportaal of in een berichtensysteem? Dan fungeert jouw platform als distributiekanaal voor malware en wordt scanning noodzakelijk.
 
 Voor de meeste vroege applicaties volstaan proportionele maatregelen: strikte MIME-type validatie, bestanden serveren met HTTP-headers die dwingen tot downloaden in plaats van directe uitvoering in de browser (`Content-Disposition: attachment`), nooit geüploade code uitvoeren op je server, en scanning toevoegen zodra bestanden tussen accounts bewegen.
 
@@ -85,7 +85,7 @@ Voor de meeste vroege applicaties volstaan proportionele maatregelen: strikte MI
 
 Een uploadknop zonder limieten is een open uitnodiging voor torenhoge rekeningen. De kosten uiten zich op twee plekken: opslagruimte (die cumulatief toeneemt) en bandbreedte (egress, die optreedt telkens wanneer een bestand wordt opgevraagd).
 
-Stel altijd een maximale bestandsgrootte per upload in en een maximaal totaalquotum per account. Bepaal vooraf wat er gebeurt als het quotum wordt bereikt — weiger verdere uploads netjes en bied een upgrade aan via een heldere UI-melding in plaats van een cryptische serverfout. Houd er rekening mee dat bandbreedte vaak veel duurder is dan opslag: een populair profiel met gigantische ongecomprimeerde foto's veroorzaakt een veelvoud aan dataverkeer.
+Stel altijd een maximale bestandsgrootte per upload in en een maximaal totaalquotum per account. Bepaal vooraf wat er gebeurt als het quotum wordt bereikt - weiger verdere uploads netjes en bied een upgrade aan via een heldere UI-melding in plaats van een cryptische serverfout. Houd er rekening mee dat bandbreedte vaak veel duurder is dan opslag: een populair profiel met gigantische ongecomprimeerde foto's veroorzaakt een veelvoud aan dataverkeer.
 
 Hier bewijst een automatische verwerkingspipeline direct zijn waarde: door bij upload direct geoptimaliseerde webformaten en verkleinde versies te genereren en die te serveren in plaats van het origineel, verlaag je het dataverkeer doorgaans met 80% tot 90%.
 
@@ -112,7 +112,7 @@ Bouw twee mechanismen in:
 
 ## De versie bouwen die standhoudt
 
-Uploadfunctionaliteit is razendsnel in elkaar gezet met een prompt, maar complex om naderhand te repareren zodra er al tienduizenden bestanden in productie staan. Elke migratie moet dan immers rekening houden met historische data. LaunchStudio richt de professionele uploadarchitectuur in bovenop je bestaande frontend: server-side validatie, private buckets gestructureerd per account, gesigneerde toegang gekoppeld aan autorisatieregels, geautomatiseerd strippen van metadata, een optimalisatiepipeline voor webformaten, accountquota en grondige opruimscripts voor weesbestanden — inclusief een eenmalige opschoning van reeds opgeslagen bestanden.
+Uploadfunctionaliteit is razendsnel in elkaar gezet met een prompt, maar complex om naderhand te repareren zodra er al tienduizenden bestanden in productie staan. Elke migratie moet dan immers rekening houden met historische data. LaunchStudio richt de professionele uploadarchitectuur in bovenop je bestaande frontend: server-side validatie, private buckets gestructureerd per account, gesigneerde toegang gekoppeld aan autorisatieregels, geautomatiseerd strippen van metadata, een optimalisatiepipeline voor webformaten, accountquota en grondige opruimscripts voor weesbestanden - inclusief een eenmalige opschoning van reeds opgeslagen bestanden.
 
 De interface die je hebt gebouwd in Lovable blijft exact behouden, en de code blijft volledig gedocumenteerd en AI-leesbaar. Dit maakt deel uit van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), gerealiseerd door de senior engineers van Manifera vanuit Amsterdam en Ho Chi Minhstad, met elf jaar productie-ervaring voor opdrachtgevers als Vodafone, TNO en CFLW.
 
@@ -143,7 +143,7 @@ Ravi Mehta bouwde Vintagehoek in Lovable: een lokale marktplaats voor tweedehand
 Tijdens een grondige technische inspectie kwamen drie pijnpunten naar voren:
 1. De opslagkosten waren vier keer hoger dan logisch was voor het aantal advertenties, omdat alle foto's op maximale cameraresolutie werden opgeslagen en geserveerd, en omdat foto's van verwijderde advertenties nooit werden gewist.
 2. Bestanden behielden hun oorspronkelijke uploadnaam, waardoor bestandsadressen eenvoudig te voorspellen waren.
-3. De Supabase storage bucket was volledig openbaar en bevatte de originele, onbewerkte foto's inclusief embedded EXIF GPS-coördinaten. Iedere bezoeker kon de foto downloaden en tot op de meter nauwkeurig zien in welk woonhuis het dure meubelstuk stond — zelfs van advertenties die al maanden geleden waren gearchiveerd.
+3. De Supabase storage bucket was volledig openbaar en bevatte de originele, onbewerkte foto's inclusief embedded EXIF GPS-coördinaten. Iedere bezoeker kon de foto downloaden en tot op de meter nauwkeurig zien in welk woonhuis het dure meubelstuk stond - zelfs van advertenties die al maanden geleden waren gearchiveerd.
 
 De alerte verkoopster die aan de bel trok, had haar eigen woonadres ontdekt via de fotodetails van haar advertentie.
 
@@ -152,9 +152,9 @@ In zes werkdagen werd het systeem herzien: alle EXIF-metadata wordt nu bij uploa
 **Resultaat:** de opslag- en bandbreedtekosten daalden met ruim 75%, pagina's laadden op smartphones binnen één seconde, en het gevaarlijke lekken van woonadressen werd voor zowel nieuwe als historische foto's definitief gedicht.
 
 > *"Een verkoopster mailde me haar eigen adres en vroeg hoe mijn website dat wist. Zo ontdekte ik dat mijn applicatie al negen maanden lang de exacte woonadressen van verkopers aan het publiceren was."*
-> — **Ravi Mehta, Oprichter, Vintagehoek (Haarlem)**
+> - **Ravi Mehta, Oprichter, Vintagehoek (Haarlem)**
 
-**Kosten & Doorlooptijd:** € 2.650 (server-side validatie, metadata strippen, afbeeldingspipeline, gesigneerde toegang, historische opschoning) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.650 (server-side validatie, metadata strippen, afbeeldingspipeline, gesigneerde toegang, historische opschoning) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 

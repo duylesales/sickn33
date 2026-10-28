@@ -1,4 +1,4 @@
-🚨 "AI can write our menu descriptions and generate food photos for 100 dishes at zero cost." — The $50,000 illusion that ends in an allergen lawsuit and lost customer trust. 🍔🤖
+🚨 "AI can write our menu descriptions and generate food photos for 100 dishes at zero cost." - The $50,000 illusion that ends in an allergen lawsuit and lost customer trust. 🍔🤖
 
 **The Pain Points:**
 ❌ **Hallucinated Allergen & Nutritional Claims:** AI text generators omit or misstate critical ingredients (nuts, gluten, dairy), creating severe food safety and legal liabilities.

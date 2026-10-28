@@ -85,7 +85,7 @@ Ella partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 
 **Result:** Ella allowed daily updates without disrupting active client sessions.
 
-**Cost & Timeline:** €1,400 (CI/CD Pipeline Package) — production-ready and deployed in 5 business days.
+**Cost & Timeline:** €1,400 (CI/CD Pipeline Package) - production-ready and deployed in 5 business days.
 
 ---
 

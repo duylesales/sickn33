@@ -10,11 +10,11 @@ Stefan asked for a hands-on review first. It found homeowners could see other ho
 ✅ All four findings fixed within ten business days
 ✅ Inverter tokens encrypted and installer separation enforced
 ✅ Authorisation tests added to CI so the fixes stay fixed
-✅ A report with evidence — accepted by the energy company for the pilot, with a formal pentest later on a much smaller scope
+✅ A report with evidence - accepted by the energy company for the pilot, with a formal pentest later on a much smaller scope
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix the fundamentals first — so the big-name report is the final step, not the expensive first one. ⚙️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we fix the fundamentals first - so the big-name report is the final step, not the expensive first one. ⚙️
 
-His result: €2,900, ten business days. The pilot started two months earlier, and the eventual formal pentest found only two low-severity issues — at roughly 40% less than the original quote. 🚀
+His result: €2,900, ten business days. The pilot started two months earlier, and the eventual formal pentest found only two low-severity issues - at roughly 40% less than the original quote. 🚀
 
 👉 AI application security audit: large consultancy vs hands-on specialist: https://launchstudio.eu/en/blog/ai-application-security-audit-large-consultancy-vs-hands-on-specialist
 

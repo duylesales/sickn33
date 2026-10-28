@@ -1,7 +1,7 @@
 The claims platform demo was flawless. Then someone asked how it writes back to a 20-year-old COBOL core running nightly batch. Silence. 🖥️📋
 
 **The Pain Points:**
-❌ **Stale Data, Confident Automation:** A claim filed against a policy that changed today still gets triaged against yesterday's batch — and the vendor's demoed STP rate won't hold on your core.
+❌ **Stale Data, Confident Automation:** A claim filed against a policy that changed today still gets triaged against yesterday's batch - and the vendor's demoed STP rate won't hold on your core.
 ❌ **Middleware Nobody Owns:** The integration layer falls into a gap between the claims vendor, the core vendor, and internal IT until someone discovers it mid-project.
 ❌ **Migration Mistaken for Integration:** Decades of undocumented legacy formatting can silently misrepresent a historical coverage limit if data migration isn't assessed separately and carefully.
 

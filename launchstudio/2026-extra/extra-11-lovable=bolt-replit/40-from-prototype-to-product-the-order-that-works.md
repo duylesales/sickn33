@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The hardest part of launching something built with AI tools is not any individual piece of work. It is that everything appears equally urgent at once — security, payments, hosting, email, performance, search engines, mobile, backups — and a founder with a working prototype and no engineering background has no basis for choosing what to do first.
+The hardest part of launching something built with AI tools is not any individual piece of work. It is that everything appears equally urgent at once - security, payments, hosting, email, performance, search engines, mobile, backups - and a founder with a working prototype and no engineering background has no basis for choosing what to do first.
 
 So they do the visible things: polish the interface, add a feature, set up analytics. Those are pleasant and none of them are the reason the product cannot take a customer.
 
@@ -104,7 +104,7 @@ If it works, stop reading, stop building features, and fix that. It takes four m
 
 ## Where to Get Help With the Sequence
 
-LaunchStudio exists for exactly this gap: prototypes built in Lovable, Bolt, Cursor or Replit that work and cannot yet be launched. The frontend you built is kept — untouched — and the stages above are built underneath it, in the order above, with the code left documented and AI-readable so you can keep iterating in your own tool afterwards, and owned by you throughout.
+LaunchStudio exists for exactly this gap: prototypes built in Lovable, Bolt, Cursor or Replit that work and cannot yet be launched. The frontend you built is kept - untouched - and the stages above are built underneath it, in the order above, with the code left documented and AI-readable so you can keep iterating in your own tool afterwards, and owned by you throughout.
 
 Behind it is Manifera, a software company with eleven years of production engineering for clients including Vodafone, TNO and CFLW, from offices in Amsterdam, Singapore and Ho Chi Minh City. LaunchStudio is that capability at founder scale: fixed price, fixed scope, one to three weeks rather than one to three quarters.
 
@@ -114,7 +114,7 @@ Behind it is Manifera, a software company with eleven years of production engine
 
 The stages above take a prototype to a product. A product with real usage develops a different set of needs, and it is worth knowing what is coming so you neither build it early nor are surprised by it.
 
-**Operational rhythm replaces heroics.** At ten customers you can fix anything personally. At a hundred you need the weekly checks — jobs ran, queues are clear, reconciliation matches, errors are not recurring — because the failures you now have are slow rather than dramatic.
+**Operational rhythm replaces heroics.** At ten customers you can fix anything personally. At a hundred you need the weekly checks - jobs ran, queues are clear, reconciliation matches, errors are not recurring - because the failures you now have are slow rather than dramatic.
 
 **Support becomes a product input.** Message volume tells you what the product explains badly, and the fix is usually in the interface rather than in a faster reply.
 
@@ -142,7 +142,7 @@ And keep a written list of what you decided not to do. Deferred work that exists
 
 ### A Founder Who Did the Stages in Reverse, Then Did Them Again
 
-Bo Klaassen built Groeiplan in Lovable: a goal-tracking tool for small business coaches, used by around ninety coaches with their own clients across Utrecht and Amersfoort. She spent three months before launch on the visible half — a redesigned interface, analytics, a content strategy, a mobile-friendly layout and a second language.
+Bo Klaassen built Groeiplan in Lovable: a goal-tracking tool for small business coaches, used by around ninety coaches with their own clients across Utrecht and Amersfoort. She spent three months before launch on the visible half - a redesigned interface, analytics, a content strategy, a mobile-friendly layout and a second language.
 
 Launch went well for six weeks. Then a coach reported that she could see another coach's client notes by editing the address bar, which had been true since the first day and had simply gone unnoticed while user numbers were small.
 
@@ -150,18 +150,18 @@ The remediation was stage one and two, done in nine business days under consider
 
 The work she had done first was not wasted. It was simply done in an order that left the product exposed for six weeks with real client data in it.
 
-**Result:** no evidence of misuse was found, the affected coaches were informed with a clear written account, and Groeiplan has since passed two client security questionnaires — with the stage-five documentation produced afterwards rather than in a panic.
+**Result:** no evidence of misuse was found, the affected coaches were informed with a clear written account, and Groeiplan has since passed two client security questionnaires - with the stage-five documentation produced afterwards rather than in a panic.
 
 > *"I built the shop window beautifully and left the back door open for six weeks. Everything I did was worth doing. I just did it in exactly the wrong order."*
-> — **Bo Klaassen, Founder, Groeiplan (Utrecht)**
+> - **Bo Klaassen, Founder, Groeiplan (Utrecht)**
 
-**Cost & Timeline:** €4,600 (access control remediation, credential rotation, payment webhooks, support tooling, documentation) — completed in 9 business days.
+**Cost & Timeline:** €4,600 (access control remediation, credential rotation, payment webhooks, support tooling, documentation) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
 ### What should I fix first in an AI-built prototype?
 
-Access control: whether one customer can reach another's data. Test it by creating two accounts and trying. Everything else — payments, hosting, search visibility — is recoverable, and this one is not.
+Access control: whether one customer can reach another's data. Test it by creating two accounts and trying. Everything else - payments, hosting, search visibility - is recoverable, and this one is not.
 
 ### Can I launch before doing all of this?
 
@@ -189,7 +189,7 @@ You should be, and it is worth stating as a requirement of any engagement. The c
       "name": "What should I fix first in an AI-built prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Access control — whether one customer can reach another's data. Test with two accounts; everything else is recoverable and this is not."
+        "text": "Access control - whether one customer can reach another's data. Test with two accounts; everything else is recoverable and this is not."
       }
     },
     {
@@ -221,7 +221,7 @@ You should be, and it is worth stating as a requirement of any engagement. The c
       "name": "Will I still be able to edit my app in Lovable afterwards?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You should be — require a conventional, documented, AI-readable codebase and verify it with a small change before sign-off."
+        "text": "You should be - require a conventional, documented, AI-readable codebase and verify it with a small change before sign-off."
       }
     }
   ]

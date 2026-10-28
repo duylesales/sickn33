@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Building address verification and geocoding validation into the customer address entry process:** catching genuine inaccuracies and ambiguities at the point of entry rather than allowing unverified addresses to accumulate silently into the platform's routing data foundation.
 ✅ **Supporting structured, granular location data beyond a simple street address:** Including specific entrance, unit, or delivery point detail for complex locations like large apartment buildings or business parks, since a technically correct street address alone often doesn't provide sufficient precision for genuinely efficient real-world delivery routing.
-✅ **Building feedback loops from actual delivery outcomes back into address data quality:** so a driver's real-world experience — a failed delivery, a significant discrepancy between the routed location and the actual delivery point — feeds back into correcting and improving the underlying address data over time, rather than the same address inaccuracy recurring indefinitely across repeat deliveries to the same location.
+✅ **Building feedback loops from actual delivery outcomes back into address data quality:** so a driver's real-world experience - a failed delivery, a significant discrepancy between the routed location and the actual delivery point - feeds back into correcting and improving the underlying address data over time, rather than the same address inaccuracy recurring indefinitely across repeat deliveries to the same location.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

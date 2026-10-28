@@ -20,21 +20,21 @@ target_persona: "CFO"
 }
 </script>
 
-A customer submitted a GDPR deletion request, and fulfilling it correctly meant an engineer manually checking eleven different systems — the primary database, three analytics tools, two marketing platforms, a support-ticket system, a backup archive, and a couple of spreadsheets nobody remembered still had customer data in them — with no confidence, even after all that, that every copy had actually been found.
+A customer submitted a GDPR deletion request, and fulfilling it correctly meant an engineer manually checking eleven different systems - the primary database, three analytics tools, two marketing platforms, a support-ticket system, a backup archive, and a couple of spreadsheets nobody remembered still had customer data in them - with no confidence, even after all that, that every copy had actually been found.
 
-**The Pain:** A CFO's company has received a data subject access request (DSAR) or deletion request under GDPR, and the legally mandated thirty-day response window has revealed that there's no single, reliable way to locate everywhere a specific customer's personal data lives across the company's systems. Data has spread over the years into a primary application database, multiple analytics and marketing tools, support systems, backups, and occasionally informal spreadsheets used for one-off business processes — and no engineer can currently produce a confident, complete answer to "where is all of this specific person's data" without a manual, time-consuming investigation each time the question is asked.
+**The Pain:** A CFO's company has received a data subject access request (DSAR) or deletion request under GDPR, and the legally mandated thirty-day response window has revealed that there's no single, reliable way to locate everywhere a specific customer's personal data lives across the company's systems. Data has spread over the years into a primary application database, multiple analytics and marketing tools, support systems, backups, and occasionally informal spreadsheets used for one-off business processes - and no engineer can currently produce a confident, complete answer to "where is all of this specific person's data" without a manual, time-consuming investigation each time the question is asked.
 
-**The Agitation:** GDPR's thirty-day response window isn't a suggestion — a company that consistently fails to meet it, or that responds with an incomplete deletion that later surfaces (a customer discovering their data still exists in a marketing tool months after a deletion confirmation), faces genuine regulatory risk, and each individual DSAR handled through an ad hoc, manual investigation consumes disproportionate engineering time relative to a company that has actually built for this requirement. As data volume and system count grow, the ad hoc approach doesn't scale — the investigation gets harder and less reliable with every new tool or database the company adds, right as GDPR enforcement scrutiny across the industry continues to increase.
+**The Agitation:** GDPR's thirty-day response window isn't a suggestion - a company that consistently fails to meet it, or that responds with an incomplete deletion that later surfaces (a customer discovering their data still exists in a marketing tool months after a deletion confirmation), faces genuine regulatory risk, and each individual DSAR handled through an ad hoc, manual investigation consumes disproportionate engineering time relative to a company that has actually built for this requirement. As data volume and system count grow, the ad hoc approach doesn't scale - the investigation gets harder and less reliable with every new tool or database the company adds, right as GDPR enforcement scrutiny across the industry continues to increase.
 
 ## The Data Subject Rights Infrastructure Mandate
 
-The first mandate is a comprehensive data inventory mapping exactly which systems store personal data and what fields specifically identify a data subject in each one — the foundational map that makes it possible to answer "where does this person's data live" systematically rather than through manual, ad hoc investigation each time.
+The first mandate is a comprehensive data inventory mapping exactly which systems store personal data and what fields specifically identify a data subject in each one - the foundational map that makes it possible to answer "where does this person's data live" systematically rather than through manual, ad hoc investigation each time.
 
 The second mandate is building an actual, semi-automated DSAR fulfillment tooling layer that queries across every mapped system using the data inventory, producing both an access report and a verified deletion confirmation, rather than relying on an engineer manually checking each system by hand every time a request arrives.
 
-The third mandate is closing off the informal data leakage points — spreadsheets, ad hoc exports, unofficial tools used for one-off business processes — that the formal data inventory can't track, since these are exactly the copies most likely to be missed during a deletion request and most likely to surface embarrassingly later.
+The third mandate is closing off the informal data leakage points - spreadsheets, ad hoc exports, unofficial tools used for one-off business processes - that the formal data inventory can't track, since these are exactly the copies most likely to be missed during a deletion request and most likely to surface embarrassingly later.
 
-The fourth mandate is a defined internal SLA well inside the legal thirty-day window — a realistic operational target of five to ten business days — so the company has genuine buffer for edge cases and complications, rather than treating the legal deadline itself as the operational target with no margin for anything going wrong.
+The fourth mandate is a defined internal SLA well inside the legal thirty-day window - a realistic operational target of five to ten business days - so the company has genuine buffer for edge cases and complications, rather than treating the legal deadline itself as the operational target with no margin for anything going wrong.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -52,7 +52,7 @@ Retail Digitaal Nederland B.V., an Amsterdam-based retail platform, nearly misse
 Manifera built a comprehensive data inventory across all fourteen systems found to store personal data, decommissioned the unused legacy analytics tool entirely after confirming no active business need, and implemented semi-automated DSAR tooling querying the remaining mapped systems directly. The company's next deletion request was fulfilled and confirmed within six business days, with the CFO's team producing a complete audit trail of exactly which systems were checked and what was found.
 
 > *"We came uncomfortably close to missing a legal deadline because nobody actually knew, with confidence, everywhere a customer's data could be. Six days instead of nearly thirty, with an actual audit trail, is what having the map instead of guessing looks like."*
-> — **CFO, Retail Digitaal Nederland B.V., Netherlands**
+> - **CFO, Retail Digitaal Nederland B.V., Netherlands**
 
 ## Manual DSAR Investigation vs. Manifera's Systematic Fulfillment Infrastructure
 
@@ -66,7 +66,7 @@ Manifera built a comprehensive data inventory across all fourteen systems found 
 
 ## The Economics
 
-A near-miss or actual missed GDPR deadline carries genuine regulatory risk, including potential fines that can reach a meaningful percentage of annual revenue for serious or repeated violations, well beyond the immediate cost of the rushed engineering investigation itself — and an incomplete deletion discovered later by the customer damages trust in a way that's hard to repair. Building comprehensive data inventory and semi-automated DSAR tooling typically costs €35,000-€65,000, a cost that's straightforward to justify against even the possibility of a single serious regulatory finding. [Talk to Manifera](https://www.manifera.com/contact-us/) about building the DSAR infrastructure that turns your next data request into a confident, systematic response instead of a scramble against the clock.
+A near-miss or actual missed GDPR deadline carries genuine regulatory risk, including potential fines that can reach a meaningful percentage of annual revenue for serious or repeated violations, well beyond the immediate cost of the rushed engineering investigation itself - and an incomplete deletion discovered later by the customer damages trust in a way that's hard to repair. Building comprehensive data inventory and semi-automated DSAR tooling typically costs €35,000-€65,000, a cost that's straightforward to justify against even the possibility of a single serious regulatory finding. [Talk to Manifera](https://www.manifera.com/contact-us/) about building the DSAR infrastructure that turns your next data request into a confident, systematic response instead of a scramble against the clock.
 
 ## Frequently Asked Questions
 
@@ -76,7 +76,7 @@ Build a comprehensive data inventory mapping exactly which systems store persona
 
 ### (Scenario: CFO worried about incomplete deletions discovered later) What's the biggest risk of an incomplete GDPR deletion that a manual process might miss?
 
-Informal data copies in spreadsheets, unused legacy tools, or ad hoc exports that a formal system-by-system investigation might overlook — these are exactly the copies most likely to surface embarrassingly if a customer later discovers their data still exists somewhere.
+Informal data copies in spreadsheets, unused legacy tools, or ad hoc exports that a formal system-by-system investigation might overlook - these are exactly the copies most likely to surface embarrassingly if a customer later discovers their data still exists somewhere.
 
 ### (Scenario: CFO trying to understand the actual regulatory risk of a missed deadline) What's the real regulatory risk of consistently struggling to meet GDPR response deadlines?
 

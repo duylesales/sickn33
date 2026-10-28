@@ -35,7 +35,7 @@ Bij het integreren van AI in database-architecturen ontdekken software-oprichter
 
 In een traditionele applicatie fungeert de database als passieve data-opslag. U slaat een gebruikersprofiel op en vraagt het later exact op via `SELECT * FROM users WHERE id = 123`. Het systeem zoekt op exacte tekstovereenkomsten.
 
-AI-applicaties vereisen daarentegen *semantisch begrip*. Als een gebruiker zoekt naar *"problemen met betalingen"*, moet de database documenten kunnen vinden met bewoordingen als *"creditcard geweigerd"*, *"openstaande factuur"* of *"incassofout"* — zelfs wanneer het woord "betaling" nergens letterlijk in de tekst voorkomt.
+AI-applicaties vereisen daarentegen *semantisch begrip*. Als een gebruiker zoekt naar *"problemen met betalingen"*, moet de database documenten kunnen vinden met bewoordingen als *"creditcard geweigerd"*, *"openstaande factuur"* of *"incassofout"* - zelfs wanneer het woord "betaling" nergens letterlijk in de tekst voorkomt.
 
 Dit is het domein van de vectordatabase. Tools als Lovable of Cursor genereren eenvoudige koppelingen naar Supabase of Pinecone, maar het schrijven van een basisquery is slechts 10% van het werk. De database zo structureren dat deze miljoenen vector-embeddings kan doorzoeken zonder dat de server bezwijkt, verbindingen vastlopen of privacyregels worden geschonden, is de échte software-engineering uitdaging.
 
@@ -97,7 +97,7 @@ Aangemoedigd door dit succes sloot Simon een contract met een groot internationa
 
 De applicatie crashte direct.
 
-Zodra een advocaat een zoekopdracht gaf, hing het scherm 14 seconden vast voordat er een `504 Timeout` verscheen. De CPU van de Supabase-database schoot naar 100% en bleef daar hangen. Simon probeerde de query's aan te passen met Cursor, maar Cursor stelde standaard B-Tree indexen voor — volstrekt nutteloos voor vectorwiskunde.
+Zodra een advocaat een zoekopdracht gaf, hing het scherm 14 seconden vast voordat er een `504 Timeout` verscheen. De CPU van de Supabase-database schoot naar 100% en bleef daar hangen. Simon probeerde de query's aan te passen met Cursor, maar Cursor stelde standaard B-Tree indexen voor - volstrekt nutteloos voor vectorwiskunde.
 
 Simon schakelde LaunchStudio in. Het Manifera-team stelde direct vast dat de AI-code een lineaire scan uitvoerde over 4 miljoen 1536-dimensionale vectoren tegelijk.
 
@@ -106,9 +106,9 @@ Binnen 8 werkdagen vernieuwde LaunchStudio de complete datalaag: op maat geconfi
 **Resultaat:** ContractContext leverde accurate zoekresultaten over 4 miljoen rijen binnen 42 milliseconden. Simon behield de enterprise-klant (€9.500 MRR).
 
 > *"Cursor bouwde de interface, maar begreep niets van de fysica van een database op schaal. LaunchStudio heeft een openhartoperatie uitgevoerd op mijn database-architectuur terwijl het platform live bleef. Zij hebben mijn bedrijf gered."*
-> — **Simon Dubois, Oprichter, ContractContext (Brussel)**
+> - **Simon Dubois, Oprichter, ContractContext (Brussel)**
 
-**Kosten & Doorlooptijd:** €4.800 (Launch & Grow Pakket met Database Schaalbaarheid Add-on) — productie-klaar en live binnen 8 werkdagen.
+**Kosten & Doorlooptijd:** €4.800 (Launch & Grow Pakket met Database Schaalbaarheid Add-on) - productie-klaar en live binnen 8 werkdagen.
 
 ---
 

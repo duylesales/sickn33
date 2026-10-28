@@ -31,13 +31,13 @@ Doelgroep: Head of Sales / PLG Oprichters
 }
 </script>
 
-Oprichters zijn vaak geobsedeerd door Product-Led Growth (PLG) — de droom om een softwareproduct te bouwen dat zo intuïtief en waardevol is dat duizenden gebruikers zichzelf registreren en betalen terwijl de oprichter slaapt. Maar puur self-service PLG kent een hard omzetplafond. Een multinational of Fortune 500-bedrijf koopt simpelweg geen 1.000 softwarelicenties via een creditcard-checkout op een landingspagina, ongeacht hoe soepel uw Stripe-koppeling is ingericht. Om door te breken naar € 1M+ ARR moet u een proactief salesteam toevoegen bovenop uw self-service instroom. Dit is de **Product-Led Sales (PLS)** methodiek.
+Oprichters zijn vaak geobsedeerd door Product-Led Growth (PLG) - de droom om een softwareproduct te bouwen dat zo intuïtief en waardevol is dat duizenden gebruikers zichzelf registreren en betalen terwijl de oprichter slaapt. Maar puur self-service PLG kent een hard omzetplafond. Een multinational of Fortune 500-bedrijf koopt simpelweg geen 1.000 softwarelicenties via een creditcard-checkout op een landingspagina, ongeacht hoe soepel uw Stripe-koppeling is ingericht. Om door te breken naar € 1M+ ARR moet u een proactief salesteam toevoegen bovenop uw self-service instroom. Dit is de **Product-Led Sales (PLS)** methodiek.
 
 ## De Beperkingen van Puur PLG
 
 Als u uitsluitend een self-service abonnement van € 29 per maand aanbiedt, laat u enorme enterprise-waarde op tafel liggen. Denk aan het volgende scenario: drie junior ontwerpers bij Nike sluiten met hun eigen creditcard een abonnement af op uw AI-beeldgenerator. Ze zijn laaiend enthousiast en gebruiken de tool dagelijks voor hun projecten.
 
-Leunt u puur op PLG, dan verdient u € 87 per maand aan Nike. De VP Design bij Nike beschikt echter over een jaarlijks softwarebudget van € 500.000, maar heeft geen idee dat uw tool bestaat — drie individuele declaraties van € 29 passeren nooit de directietafel. Dit is de kernreden waarom veel PLG-startups stagneren rond de € 2M tot € 5M ARR: het omzetplafond is geen softwarefout, maar een blinde vlek in de commerciële go-to-market strategie.
+Leunt u puur op PLG, dan verdient u € 87 per maand aan Nike. De VP Design bij Nike beschikt echter over een jaarlijks softwarebudget van € 500.000, maar heeft geen idee dat uw tool bestaat - drie individuele declaraties van € 29 passeren nooit de directietafel. Dit is de kernreden waarom veel PLG-startups stagneren rond de € 2M tot € 5M ARR: het omzetplafond is geen softwarefout, maar een blinde vlek in de commerciële go-to-market strategie.
 
 ## De Product Qualified Lead (PQL) Identificeren
 
@@ -88,7 +88,7 @@ Het technisch inrichten van deze telemetrie en workflows is exact wat Herre Roel
 
 ## Ontgrendel Enterprise Omzet uit Uw Gebruikersbasis
 
-Verbergen waardevolle zakelijke teams zich in uw goedkope instappakketten? **LaunchStudio** implementeert diepe telemetrie en PostHog-tracking om PQL's automatisch te identificeren en uw salesteam te voorzien van realtime data voor grote upsells — tegen circa 20% van de tarieven van een traditioneel bureau.
+Verbergen waardevolle zakelijke teams zich in uw goedkope instappakketten? **LaunchStudio** implementeert diepe telemetrie en PostHog-tracking om PQL's automatisch te identificeren en uw salesteam te voorzien van realtime data voor grote upsells - tegen circa 20% van de tarieven van een traditioneel bureau.
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. Bekijk Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) of [gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator).
 
@@ -102,7 +102,7 @@ Zij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in. Het engine
 
 **Resultaat:** De conversie van gratis gebruikers naar grote enterprise-pakketten steeg binnen een maand met 40%.
 
-**Kosten & Tijdlijn:** €1.550 (Sales CRM Integratie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.550 (Sales CRM Integratie Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

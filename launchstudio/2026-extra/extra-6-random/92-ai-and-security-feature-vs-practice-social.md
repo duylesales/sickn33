@@ -1,11 +1,11 @@
-🔓 Levi Uithoorn built VeiligMeld, an incident-reporting tool, with Bolt — and pointed to its AI-powered flagging feature as proof to investors and users that the app was secure. It wasn't. 😬
+🔓 Levi Uithoorn built VeiligMeld, an incident-reporting tool, with Bolt - and pointed to its AI-powered flagging feature as proof to investors and users that the app was secure. It wasn't. 😬
 
 A feature you ship and a practice you maintain are two different claims. 🧠
 
 ❌ Nobody was tracking dependency advisories, because nobody had been assigned to
 ❌ A vulnerable dependency sat in production for weeks before anyone knew
 ❌ Stale admin accounts from early testing were still active, unnoticed
-❌ The AI flagging feature answered a narrow question while the broad one — is the whole system maintained safely — went unasked
+❌ The AI flagging feature answered a narrow question while the broad one - is the whole system maintained safely - went unasked
 
 ✅ Patch the vulnerable dependency immediately
 ✅ Set up an ongoing monitoring and patch-review cadence

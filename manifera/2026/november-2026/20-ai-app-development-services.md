@@ -50,13 +50,13 @@ At Manifera, we prevent AI financial disasters by engineering mathematically opt
 *   **Amsterdam (AI Financial Governance):** Our Dutch AI Architects analyze your token economics before a single line of code is written. We define the advanced RAG (Retrieval-Augmented Generation) blueprints, enforcing strict semantic caching and context-window optimization to guarantee your AI OpEx remains fiercely under control.
 *   **Vietnam (Deep Data Execution):** Our [offshore software development](https://www.manifera.com/services/offshore-software-development/) pods execute the pipelines. These are elite Data Engineers who implement complex LangChain/LlamaIndex flows, configure high-performance Vector Databases (Pinecone/Milvus), and build the NeMo Guardrails required to keep responses blazingly fast and mathematically hallucination-free.
 
-### Case Study: Paying Only For What You Actually Need — Statler BI
+### Case Study: Paying Only For What You Actually Need - Statler BI
 
-Manifera has partnered with **Statler BI** — a tailor-made, highly flexible budget and reporting platform for the hospitality industry, covering daily operational dashboards and monthly financial statements — since 2018, in an ongoing, constructive cooperation.
+Manifera has partnered with **Statler BI** - a tailor-made, highly flexible budget and reporting platform for the hospitality industry, covering daily operational dashboards and monthly financial statements - since 2018, in an ongoing, constructive cooperation.
 
 The staffing model behind that engagement mirrors the cost discipline this article argues for on the technical side. Rather than parking a large, fixed team on the account regardless of workload, Statler's core team is deliberately lean: one Software Developer and one DevOps Engineer maintaining and evolving the platform day to day. When Statler enters a new feature-development cycle, additional frontend and backend developers join the team for that cycle, then the team contracts back to its lean core once the feature ships.
 
-That is the staffing equivalent of semantic caching: capacity scales up only when there is real, incremental work to justify it, and never sits idle burning budget the rest of the time. It is the same discipline elite AI architects apply to token spend — provision for what the query actually needs, not for a maximally padded default.
+That is the staffing equivalent of semantic caching: capacity scales up only when there is real, incremental work to justify it, and never sits idle burning budget the rest of the time. It is the same discipline elite AI architects apply to token spend - provision for what the query actually needs, not for a maximally padded default.
 
 ## Architectural Comparison: Naive AI Agency vs. Engineering Pod
 
@@ -70,13 +70,13 @@ That is the staffing equivalent of semantic caching: capacity scales up only whe
 
 ## What the Research Says About AI Cost Discipline
 
-The token-hemorrhage problem isn't a fringe horror story; it shows up directly in enterprise-wide research on AI economics. McKinsey's State of AI 2025 report found that while 88% of organizations now use AI in some form, only 6% qualify as high performers capturing meaningful EBIT impact from it. Organizations using generative AI report an average return of $3.70 for every dollar invested — but the "high performer" cohort reports more than $10.30 per dollar, nearly 3x the average. The gap isn't primarily about which model they use; it's operational discipline around how AI is deployed and run. In software engineering and IT specifically, McKinsey found that effective adopters achieve 10-20% cost reductions — precisely the function where an un-cached, context-stuffing RAG deployment produces the opposite result.
+The token-hemorrhage problem isn't a fringe horror story; it shows up directly in enterprise-wide research on AI economics. McKinsey's State of AI 2025 report found that while 88% of organizations now use AI in some form, only 6% qualify as high performers capturing meaningful EBIT impact from it. Organizations using generative AI report an average return of $3.70 for every dollar invested - but the "high performer" cohort reports more than $10.30 per dollar, nearly 3x the average. The gap isn't primarily about which model they use; it's operational discipline around how AI is deployed and run. In software engineering and IT specifically, McKinsey found that effective adopters achieve 10-20% cost reductions - precisely the function where an un-cached, context-stuffing RAG deployment produces the opposite result.
 
-Deloitte's 2025 survey of enterprise AI executives found a similar pattern: only about one in five organizations qualify as true AI "ROI Leaders," despite rising AI spend across the board. Rising investment without operational discipline does not translate into rising returns — it translates into exactly the kind of runaway OpEx line this article opened with.
+Deloitte's 2025 survey of enterprise AI executives found a similar pattern: only about one in five organizations qualify as true AI "ROI Leaders," despite rising AI spend across the board. Rising investment without operational discipline does not translate into rising returns - it translates into exactly the kind of runaway OpEx line this article opened with.
 
 ### A Worked Example: Where the $45,000 Actually Goes, and How to Claw It Back
 
-Take the scenario from this article's opening: a projected $1,000/month token budget that blows out to $45,000/month within weeks of launch. Here is an illustrative, order-of-magnitude breakdown of what typically drives that blowout, and roughly what each optimization layer claws back, for a mid-sized deployment handling on the order of 500,000 queries per month. These ranges are planning-level illustrations based on typical enterprise RAG patterns, not a quote for any specific workload — actual figures depend on query repetition rate, document size, and model choice.
+Take the scenario from this article's opening: a projected $1,000/month token budget that blows out to $45,000/month within weeks of launch. Here is an illustrative, order-of-magnitude breakdown of what typically drives that blowout, and roughly what each optimization layer claws back, for a mid-sized deployment handling on the order of 500,000 queries per month. These ranges are planning-level illustrations based on typical enterprise RAG patterns, not a quote for any specific workload - actual figures depend on query repetition rate, document size, and model choice.
 
 | Optimization Layer (illustrative, cumulative) | Mechanism | Approx. Monthly Spend |
 | :--- | :--- | :--- |
@@ -85,20 +85,20 @@ Take the scenario from this article's opening: a projected $1,000/month token bu
 | + Semantic caching | Repeated and paraphrased queries served from cache instead of hitting the LLM | ~$6,000-9,000 |
 | + Embedding/prompt right-sizing | A smaller, cheaper embedding model handles retrieval; the frontier model is reserved for generation only | ~$4,000-7,000 |
 
-The pattern holds regardless of the exact numbers for your workload: each layer targets a distinct source of waste — redundant context, redundant queries, and an oversized model doing undersized work. Skip any one layer and a meaningful share of the original $45,000 stays on the bill.
+The pattern holds regardless of the exact numbers for your workload: each layer targets a distinct source of waste - redundant context, redundant queries, and an oversized model doing undersized work. Skip any one layer and a meaningful share of the original $45,000 stays on the bill.
 
 ## The Silent Regression: Why AI Applications Need Continuous Evaluation Pipelines
 
-Fixing the token bill and the hallucination rate solves the launch-day problem. But LLM applications don't stay fixed — they silently degrade in production, and a generic agency has no mechanism to even notice.
+Fixing the token bill and the hallucination rate solves the launch-day problem. But LLM applications don't stay fixed - they silently degrade in production, and a generic agency has no mechanism to even notice.
 
-**The Pain:** A vendor ships your RAG-powered assistant, it performs beautifully in the demo, and then the underlying model provider pushes a routine update, or a well-meaning engineer tweaks a system prompt to fix one edge case. Three weeks later, your support team notices customers complaining that the AI is "acting weird" — but nobody can point to the commit that broke it, because nobody was measuring quality in the first place. Every prompt or model swap is a bet placed blind.
+**The Pain:** A vendor ships your RAG-powered assistant, it performs beautifully in the demo, and then the underlying model provider pushes a routine update, or a well-meaning engineer tweaks a system prompt to fix one edge case. Three weeks later, your support team notices customers complaining that the AI is "acting weird" - but nobody can point to the commit that broke it, because nobody was measuring quality in the first place. Every prompt or model swap is a bet placed blind.
 
 ### Building the Evaluation Harness
 Elite AI engineering treats prompt and model changes exactly like code changes: nothing ships without a regression test.
 
 *   **Golden Datasets:** We curate a fixed set of 100-300 real production queries, each paired with a validated "ideal" answer, covering the edge cases that matter most to your business (ambiguous phrasing, adversarial inputs, out-of-scope questions).
 *   **LLM-as-Judge Scoring:** Before any prompt, model version, or retrieval parameter change reaches production, it is run against the entire golden dataset. A separate, more powerful "judge" model scores each response on faithfulness, relevance, and tone against a defined rubric, producing a single aggregate quality score.
-*   **Automated Regression Gates:** If the aggregate score drops below a defined threshold (for example, more than 3% below the current production baseline), the CI/CD pipeline blocks the deployment automatically — the exact same mathematical gate we apply to security vulnerabilities.
+*   **Automated Regression Gates:** If the aggregate score drops below a defined threshold (for example, more than 3% below the current production baseline), the CI/CD pipeline blocks the deployment automatically - the exact same mathematical gate we apply to security vulnerabilities.
 *   **Production Drift Monitoring:** Once live, we sample a percentage of real user interactions daily and re-score them, so a silent model provider update or a slow creep in retrieval quality is caught within a day, not discovered three weeks later through angry support tickets.
 
 This turns "the AI feels less accurate lately" from an unfalsifiable complaint into a quantified metric your engineering team can act on immediately.

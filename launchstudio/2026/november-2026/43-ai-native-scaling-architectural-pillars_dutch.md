@@ -98,9 +98,9 @@ In een intensieve sprint van 20 werkdagen bouwde het Manifera-team een écht AI-
 **Resultaat:** Jens' platform ("SupplyMind") vereiste nul training voor magazijnmedewerkers omdat de software zich aanpaste aan hun natuurlijke taal in plaats van andersom. Jens haalde een Seed-ronde van €2,5 miljoen op bij investeerders die de AI-Native architectuur prezen als een enorme voorsprong op logge ERP-giganten.
 
 > *"Ik dacht dat 'AI-Native' gewoon betekende dat je veel API-calls naar OpenAI maakte. LaunchStudio liet me zien dat het betekent dat het hele concept van menu's en knoppen achterhaald is. Zij bouwden een architectuur waarin software actief samenwerkt met de gebruiker. Dat is de toekomst van SaaS."*
-> — **Jens Fischer, Oprichter, SupplyMind (Hamburg)**
+> - **Jens Fischer, Oprichter, SupplyMind (Hamburg)**
 
-**Kosten & Doorlooptijd:** €16.000 (Launch & Grow Pakket met Agentic Architectuur Add-on) — productie-klaar en live binnen 20 werkdagen.
+**Kosten & Doorlooptijd:** €16.000 (Launch & Grow Pakket met Agentic Architectuur Add-on) - productie-klaar en live binnen 20 werkdagen.
 
 ---
 

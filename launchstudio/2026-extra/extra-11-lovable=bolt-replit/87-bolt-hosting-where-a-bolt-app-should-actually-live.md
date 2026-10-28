@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 A Bolt project is a remarkable thing to watch appear. You describe a product, it exists, it runs in front of you, and you can send someone a link within the hour.
 
-That link is the problem. The environment producing it was built to let you iterate, not to serve customers — and the distance between those two purposes is where founders lose data, leak keys and discover that their live product is whatever they happened to be editing on Tuesday.
+That link is the problem. The environment producing it was built to let you iterate, not to serve customers - and the distance between those two purposes is where founders lose data, leak keys and discover that their live product is whatever they happened to be editing on Tuesday.
 
 Moving a Bolt app somewhere durable is not difficult. It is a handful of decisions, most of which nobody tells you about because the prototype worked without them.
 
@@ -40,7 +40,7 @@ None of that is a flaw in the tool. It is the correct design for a place where y
 
 ## What a Bolt App Consists Of
 
-Before choosing where it goes, know what you have — because Bolt typically produces two things people treat as one.
+Before choosing where it goes, know what you have - because Bolt typically produces two things people treat as one.
 
 **A frontend.** JavaScript that builds into static files: HTML, CSS and bundled scripts. This is most of what you see, and it can be served by anything, cheaply and fast.
 
@@ -56,7 +56,7 @@ For a typical Bolt product there are three sensible shapes.
 
 **A platform that hosts both.** A single provider serving the frontend and running your server-side code, with previews per branch and deployments tied to your repository. Slightly more expensive, considerably less to think about, and the common default.
 
-**Your own infrastructure.** A container or a virtual machine you manage. Justified when a customer's contract requires it or you have unusual needs, and rarely otherwise — it adds operational work a small team should not be spending time on.
+**Your own infrastructure.** A container or a virtual machine you manage. Justified when a customer's contract requires it or you have unusual needs, and rarely otherwise - it adds operational work a small team should not be spending time on.
 
 Two constraints narrow the choice quickly. If you sell to Dutch or EU businesses, you want an EU region and you want to be able to say which one. And if anything in your product runs on a schedule or receives webhooks, confirm the destination handles those properly rather than assuming.
 
@@ -64,7 +64,7 @@ Two constraints narrow the choice quickly. If you sell to Dutch or EU businesses
 
 The single most common failure in moving a prototype to production.
 
-Anything included in a frontend build is public. Not obscured, not difficult to find — present in the files any visitor downloads. Build tools generally require a prefix on variables intended for the browser, and that prefix is a declaration that the value is public, not a mechanism that protects it.
+Anything included in a frontend build is public. Not obscured, not difficult to find - present in the files any visitor downloads. Build tools generally require a prefix on variables intended for the browser, and that prefix is a declaration that the value is public, not a mechanism that protects it.
 
 So: the anonymous or publishable key belongs in the frontend, protected by your database's access rules. The service key, the payment secret key, the model provider's key and anything else privileged belong only in server-side code, set as environment variables in the hosting platform, never committed to the repository.
 
@@ -88,21 +88,21 @@ An afternoon in total, and it converts a prototype into something you can point 
 
 ## What to Check Before Announcing the New Address
 
-The application loads on the custom domain with a valid certificate on both the www and bare versions. No privileged key appears anywhere in the downloaded files — check by searching the page source. Data written through the live site persists across a redeploy. Uploads survive too. Webhooks reach the deployed address and are verified. Scheduled work runs where it should. An error appears in your error tracker within a minute of being triggered. And you know how to roll back.
+The application loads on the custom domain with a valid certificate on both the www and bare versions. No privileged key appears anywhere in the downloaded files - check by searching the page source. Data written through the live site persists across a redeploy. Uploads survive too. Webhooks reach the deployed address and are verified. Scheduled work runs where it should. An error appears in your error tracker within a minute of being triggered. And you know how to roll back.
 
 ## Staging, Previews, and Not Testing on Customers
 
 Once the deploy is repeatable, you get something the prototype never offered: the ability to see a change working before anybody else does.
 
-**A staging environment** is a second deployment of the same code, with its own database, that nobody outside your team uses. It costs little — static hosting is cheap and a small database tier is usually enough — and it is where you check that a change works against realistic data before it reaches the live site.
+**A staging environment** is a second deployment of the same code, with its own database, that nobody outside your team uses. It costs little - static hosting is cheap and a small database tier is usually enough - and it is where you check that a change works against realistic data before it reaches the live site.
 
 Give it its own data rather than pointing it at production. A staging environment connected to the live database means a test that deletes something deletes it for a customer, and it means anybody with staging access can read real personal data. Use an anonymised copy: real structure, real volume, fictional people.
 
 **Block it from search engines,** with a robots file and ideally a password. A staging site indexed alongside your real one competes with it, and visitors occasionally land on the wrong version of your product.
 
-**Preview deployments per branch,** which most platforms offer automatically, are the refinement that makes this pleasant. Each change gets its own temporary address you can open, check and share with a colleague — and it disappears when the change is merged. For a founder working with agent sessions this is particularly valuable, because a session's output can be looked at in a browser before it goes anywhere near customers.
+**Preview deployments per branch,** which most platforms offer automatically, are the refinement that makes this pleasant. Each change gets its own temporary address you can open, check and share with a colleague - and it disappears when the change is merged. For a founder working with agent sessions this is particularly valuable, because a session's output can be looked at in a browser before it goes anywhere near customers.
 
-**Keep the promotion step deliberate.** Staging is where you decide something is ready; production is where you publish that decision. A pipeline that deploys to production automatically on every commit is appropriate for a mature product with tests, and premature for one without — because at that stage the only test is you looking at it.
+**Keep the promotion step deliberate.** Staging is where you decide something is ready; production is where you publish that decision. A pipeline that deploys to production automatically on every commit is appropriate for a mature product with tests, and premature for one without - because at that stage the only test is you looking at it.
 
 The whole arrangement takes an afternoon to set up and removes the category of incident where a customer discovers your change before you do.
 
@@ -122,16 +122,16 @@ Luuk Hendrickx built Standplaats with Bolt: pitch booking for weekly markets, us
 
 Six months after launch it was still running from the Bolt preview environment. The address he gave traders contained the platform's name and a random string. He avoided editing anything on Thursday and Friday because the markets ran at weekends and his changes were immediately live. Twice, a trader had reported that the site "was not there", which corresponded to times when Luuk had closed his laptop.
 
-Two further problems surfaced during the assessment. A mapping API key used to draw pitch layouts was in the frontend bundle, public since launch. And uploaded trader documents — insurance certificates and registration numbers — were written into the project directory, which meant an unknown number of them had disappeared during rebuilds. Three organisers had been re-requesting documents periodically and had assumed traders were failing to upload them.
+Two further problems surfaced during the assessment. A mapping API key used to draw pitch layouts was in the frontend bundle, public since launch. And uploaded trader documents - insurance certificates and registration numbers - were written into the project directory, which meant an unknown number of them had disappeared during rebuilds. Three organisers had been re-requesting documents periodically and had assumed traders were failing to upload them.
 
 Eight business days of work: the project moved into a repository owned by his company with a reproducible build; the frontend deployed to a static host in an EU region with deployment tied to the repository, a staging environment, and a one-step rollback; mapping calls moved behind a server-side endpoint that authenticates the caller and rate-limits per organiser, with the exposed key rotated, domain-restricted and capped; the database moved to a managed service in an EU region with access rules per organiser, tested from two accounts; trader documents moved into private object storage with signed links, and the missing ones identified by reconciling records against stored files so organisers could re-request precisely rather than broadly; a custom domain configured with certificates and redirects; error tracking, uptime monitoring and security headers added; and backups verified with a restore timed at 14 minutes.
 
 **Result:** no unplanned outages in the eight months since, the mapping bill returned to a predictable figure after the key rotation, and one municipality's contract renewal cited the move to a proper domain and EU-hosted data as a condition that had now been met.
 
 > *"My live product was a browser tab on my laptop. When I closed it on a Friday evening, market traders in Venray could not book a pitch."*
-> — **Luuk Hendrickx, Founder, Standplaats (Venray)**
+> - **Luuk Hendrickx, Founder, Standplaats (Venray)**
 
-**Cost & Timeline:** €3,700 (repository and reproducible build, static deployment with staging and rollback, server-side proxy and key rotation, database and storage migration, domain, monitoring, backup verification) — completed in 8 business days.
+**Cost & Timeline:** €3,700 (repository and reproducible build, static deployment with staging and rollback, server-side proxy and key rotation, database and storage migration, domain, monitoring, backup verification) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ A custom domain with HTTPS, error tracking, uptime monitoring, security headers,
       "name": "Can I keep using the Bolt preview link for customers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it belongs to your working environment, changes, can stop when you do, and shows whatever you are editing. Deploy a built version to your own domain."
+        "text": "No - it belongs to your working environment, changes, can stop when you do, and shows whatever you are editing. Deploy a built version to your own domain."
       }
     },
     {
@@ -173,7 +173,7 @@ A custom domain with HTTPS, error tracking, uptime monitoring, security headers,
       "name": "Where should a Bolt app be hosted?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Frontend as static files on a static host or platform, with managed services for database, auth and storage, and serverless functions for privileged logic — in an EU region for EU customers."
+        "text": "Frontend as static files on a static host or platform, with managed services for database, auth and storage, and serverless functions for privileged logic - in an EU region for EU customers."
       }
     },
     {
@@ -197,7 +197,7 @@ A custom domain with HTTPS, error tracking, uptime monitoring, security headers,
       "name": "What should I add while moving?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Custom domain with HTTPS, error tracking, uptime monitoring, security headers, caching rules and verified backups — configuration rather than code."
+        "text": "Custom domain with HTTPS, error tracking, uptime monitoring, security headers, caching rules and verified backups - configuration rather than code."
       }
     }
   ]

@@ -1,6 +1,6 @@
-🚨 A family requested full deletion of their relative's care records under GDPR. Her database had no clean way to actually do it — notes scattered across tables, duplicated into an analytics table, buried in backups. 📁
+🚨 A family requested full deletion of their relative's care records under GDPR. Her database had no clean way to actually do it - notes scattered across tables, duplicated into an analytics table, buried in backups. 📁
 
-GDPR compliance isn't paperwork you bolt on later — several core requirements are architectural decisions made at build time. 🧠
+GDPR compliance isn't paperwork you bolt on later - several core requirements are architectural decisions made at build time. 🧠
 
 ❌ "Add compliance later" gets way more expensive once real user data exists
 ❌ AI-generated schemas rarely build in a clean way to fully delete one user's data
@@ -14,7 +14,7 @@ GDPR compliance isn't paperwork you bolt on later — several core requirements 
 
 At **LaunchStudio**, we build GDPR-aware architecture into every engagement by default. Backed by Manifera's compliance-conscious culture, shaped by clients like TNO. 🛡️
 
-Her result: a full data-architecture migration across 12 organizations — work that would've been a small design decision a year earlier. 🚀
+Her result: a full data-architecture migration across 12 organizations - work that would've been a small design decision a year earlier. 🚀
 
 👉 Build compliance in before your first real user's data exists: https://launchstudio.eu/en/blog/gdpr-ready-from-day-one-compliance-vibe-coded-apps
 

@@ -41,7 +41,7 @@ Groepsfoto's vormen de grootste uitdaging. Een foto van drie peuters in de zandb
 
 ## Beslissing 3: Waar Blijven Gezondheidsnotities?
 
-Allergieën, medicatie, ontwikkelingsobservaties en incidenten zijn gezondheidsgegevens — bijzondere persoonsgegevens onder de AVG. Ze vereisen striktere toegangsbeveiliging (alleen de ouders van het kind en relevante groepsmedewerkers), logging van wie ze heeft ingezien, en een zorgvuldig bewaarbeleid.
+Allergieën, medicatie, ontwikkelingsobservaties en incidenten zijn gezondheidsgegevens - bijzondere persoonsgegevens onder de AVG. Ze vereisen striktere toegangsbeveiliging (alleen de ouders van het kind en relevante groepsmedewerkers), logging van wie ze heeft ingezien, en een zorgvuldig bewaarbeleid.
 
 **De beslissing:** scheid gezondheidsvelden van gewone dagboeknotities, beperk en log de toegang, en voorkom dat vrije tekstvelden een ongestructureerde dumpplek worden voor gevoelige medische informatie.
 
@@ -57,7 +57,7 @@ Kinderdagverblijven gebruiken op de groepen vaak gedeelde tablets. Gedeelde logi
 
 ## Beslissing 6: Dataretentie en Bewaartermijnen
 
-Dagrapporten en foto's stapelen zich snel op. Bepaal hoe lang deze beschikbaar blijven nadat een kind de opvang heeft verlaten, bied ouders de mogelijkheid om de geschiedenis van hun kind te downloaden, en verwijder de data vervolgens — zowel uit de actieve opslag als, binnen de retentieperiode, uit back-ups.
+Dagrapporten en foto's stapelen zich snel op. Bepaal hoe lang deze beschikbaar blijven nadat een kind de opvang heeft verlaten, bied ouders de mogelijkheid om de geschiedenis van hun kind te downloaden, en verwijder de data vervolgens - zowel uit de actieve opslag als, binnen de retentieperiode, uit back-ups.
 
 ## Beslissing 7: Overeenkomsten met Kinderopvangorganisaties
 
@@ -76,7 +76,7 @@ Een AI-app voor de kinderopvang naar productie brengen begint met het nauwkeurig
 | Locatiemanager | Alle kinderen op de vestiging | Toewijzingen, groepsinstellingen | Gelogde toegang tot gezondheidsdata |
 | Organisatiebeheerder | Configuratie, managementrapportages | Gebruikers en locaties | Beperkte toegang tot kinddossiers |
 
-Dwing dit af via databasepolicies op basis van relaties, niet enkel in de frontend-interface. Elke wijziging in relaties — met name restricties — moet worden gelogd en direct van kracht worden.
+Dwing dit af via databasepolicies op basis van relaties, niet enkel in de frontend-interface. Elke wijziging in relaties - met name restricties - moet worden gelogd en direct van kracht worden.
 
 ## Fototoestemming, Geïmplementeerd in de Praktijk
 
@@ -92,7 +92,7 @@ Dit vergt meer ontwikkelwerk dan een eenvoudige fotofeed, maar het is exact wat 
 
 ## Zorgvuldig Omgaan met Gezondheidsinformatie
 
-Allergieën, medicatieschema's, dieetwensen en incidentrapportages moeten zichtbaar zijn voor de mensen die ze nodig hebben op het moment dat ze ze nodig hebben — de medewerker die de lunch klaarmaakt, degene die medicijnen toedient — en voor niemand anders. Toon allergiewaarschuwingen prominent in de dagelijkse weergaven van de betreffende groep, log de toegang tot medische notities, scherm vrije tekstvelden af en definieer bewaartermijnen. Medicatietoedieningslijsten moeten onwijzigbaar registreren wie wat en wanneer heeft toegediend.
+Allergieën, medicatieschema's, dieetwensen en incidentrapportages moeten zichtbaar zijn voor de mensen die ze nodig hebben op het moment dat ze ze nodig hebben - de medewerker die de lunch klaarmaakt, degene die medicijnen toedient - en voor niemand anders. Toon allergiewaarschuwingen prominent in de dagelijkse weergaven van de betreffende groep, log de toegang tot medische notities, scherm vrije tekstvelden af en definieer bewaartermijnen. Medicatietoedieningslijsten moeten onwijzigbaar registreren wie wat en wanneer heeft toegediend.
 
 ## Veilige Werkstromen voor het Ophalen
 
@@ -120,7 +120,7 @@ Ongevallen, verwondingen en bijzondere voorvallen moeten in de kinderopvang nauw
 
 ## Toegankelijkheid en Taal voor Ouders
 
-Ouders hebben diverse achtergronden en talen, en sommigen hebben een functiebeperking. Bied de app aan in de talen die veel voorkomen onder de gezinnen van de opvang, gebruik begrijpelijke taal in dagrapporten, ondersteun schermlezers en grotere lettertypen, en zorg dat urgente mededelingen — zoals plotselinge ophaalwijzigingen, incidenten of sluitingen — via kanalen lopen die ouders gegarandeerd bereiken.
+Ouders hebben diverse achtergronden en talen, en sommigen hebben een functiebeperking. Bied de app aan in de talen die veel voorkomen onder de gezinnen van de opvang, gebruik begrijpelijke taal in dagrapporten, ondersteun schermlezers en grotere lettertypen, en zorg dat urgente mededelingen - zoals plotselinge ophaalwijzigingen, incidenten of sluitingen - via kanalen lopen die ouders gegarandeerd bereiken.
 
 ## Beveiligingsmaatregelen met Hoge Prioriteit
 
@@ -128,7 +128,7 @@ Gezien de kwetsbaarheid van kindgegevens moet prioriteit worden gegeven aan: MFA
 
 ## Veelvoorkomende Valkuilen in met AI Gebouwde Kinderopvang-Apps
 
-Terugkerende problemen zijn: gedeelde medewerkerslogins, gezinstoegang gebaseerd op één enkel 'ouder'-veld dat geen rekening houdt met gescheiden ouders, foto's die standaard zichtbaar zijn voor alle ouders in een groep, medische notities die gemengd zijn met slaaptijden, ontbrekende vervaldata voor eenmalige ophaaltoestemmingen, en data die na vertrek van kinderen voor onbepaalde tijd bewaard blijft. Voor elk probleem bestaat een beproefde oplossing — en deze oplossen vóór opschaling naar meerdere vestigingen is aanzienlijk eenvoudiger dan achteraf.
+Terugkerende problemen zijn: gedeelde medewerkerslogins, gezinstoegang gebaseerd op één enkel 'ouder'-veld dat geen rekening houdt met gescheiden ouders, foto's die standaard zichtbaar zijn voor alle ouders in een groep, medische notities die gemengd zijn met slaaptijden, ontbrekende vervaldata voor eenmalige ophaaltoestemmingen, en data die na vertrek van kinderen voor onbepaalde tijd bewaard blijft. Voor elk probleem bestaat een beproefde oplossing - en deze oplossen vóór opschaling naar meerdere vestigingen is aanzienlijk eenvoudiger dan achteraf.
 
 ## Pre-Launch Checklist voor Kinderopvang-Apps
 
@@ -136,7 +136,7 @@ Vóór uitrol naar meerdere vestigingen: relaties en restricties gemodelleerd en
 
 ## Waarom Ouders het Meteen Merken
 
-Ouders lezen zelden privacyverklaringen, maar ze merken het direct wanneer een foto van een andermans kind in hun tijdlijn verschijnt of wanneer een niet-geautoriseerde grootouder dagrapporten kan inzien. Zorgvuldigheid in deze details zorgt ervoor dat ouders de app aanbevelen aan andere gezinnen — en geeft directies het volste vertrouwen om de app organisatiebreed uit te rollen.
+Ouders lezen zelden privacyverklaringen, maar ze merken het direct wanneer een foto van een andermans kind in hun tijdlijn verschijnt of wanneer een niet-geautoriseerde grootouder dagrapporten kan inzien. Zorgvuldigheid in deze details zorgt ervoor dat ouders de app aanbevelen aan andere gezinnen - en geeft directies het volste vertrouwen om de app organisatiebreed uit te rollen.
 
 ## Waar LaunchStudio het Verschil Maakt
 
@@ -157,9 +157,9 @@ Binnen elf werkdagen modelleerden de engineers van LaunchStudio gezinnen, voogde
 **Resultaat:** De kinderopvangorganisatie heeft het betrokken gezin geïnformeerd en de nieuwe opzet geëvalueerd met haar Functionaris Gegevensbescherming, die de architectuur goedkeurde. Kinderdagboek is inmiddels geadopteerd door een tweede kinderopvangorganisatie met elf locaties.
 
 > *"Ieder kind heeft recht op mooie herinneringen, maar niet elke ouder wil zijn kind in andermans feed zien. De app moet dat onderscheid haarfijn maken."*
-> — **Esmee Kuiper, Oprichter, Kinderdagboek (Woerden)**
+> - **Esmee Kuiper, Oprichter, Kinderdagboek (Woerden)**
 
-**Kosten & Tijdlijn:** € 3.100 (Launch Ready-pakket: familierechtenmodel, fototoestemming, gezondheidsdata, ophaalautorisatie, medewerkersaccounts en dataretentie) — afgerond in 11 werkdagen.
+**Kosten & Tijdlijn:** € 3.100 (Launch Ready-pakket: familierechtenmodel, fototoestemming, gezondheidsdata, ophaalautorisatie, medewerkersaccounts en dataretentie) - afgerond in 11 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -173,7 +173,7 @@ Ja, dit zijn gezondheidsgegevens onder de AVG. Beperk en log de toegang strikt t
 
 ### Hoe moet een kinderopvang-app omgaan met gescheiden ouders?
 
-Modelleer de rechten van elke gezaghebbende of verzorger expliciet — inzien, wijzigen, ophalers aanpassen — en dwing restricties zoals gerechtelijke uitspraken server-side af, niet alleen in de interface.
+Modelleer de rechten van elke gezaghebbende of verzorger expliciet - inzien, wijzigen, ophalers aanpassen - en dwing restricties zoals gerechtelijke uitspraken server-side af, niet alleen in de interface.
 
 ### Hoe benadert Manifera apps die gegevens van kinderen verwerken?
 
@@ -209,7 +209,7 @@ Zeker. Kinderopvangorganisaties en ouders zoeken actief naar transparante privac
       "name": "Hoe moet een kinderopvang-app omgaan met gescheiden ouders?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modelleer de rechten van elke gezaghebbende of verzorger expliciet — inzien, wijzigen, ophalers aanpassen — en dwing restricties zoals gerechtelijke uitspraken server-side af, niet alleen in de interface."
+        "text": "Modelleer de rechten van elke gezaghebbende of verzorger expliciet - inzien, wijzigen, ophalers aanpassen - en dwing restricties zoals gerechtelijke uitspraken server-side af, niet alleen in de interface."
       }
     },
     {

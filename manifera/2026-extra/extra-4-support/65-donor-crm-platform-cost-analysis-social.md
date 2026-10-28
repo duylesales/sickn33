@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom donor crm builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom donor crm builds. 💸💥
 
 **The Pain Points:**
 ❌ **Historical Donor Data Migration From Multiple Fragmented Sources:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

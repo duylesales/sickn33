@@ -86,9 +86,9 @@ Een beveiligingsbewuste prospectieve zakelijke klant die een routineuze due-dili
 **Resultaat:** LaunchStudio herconfigureerde de back-upopslag om dezelfde geauthenticeerde toegang te vereisen als productiegegevens. Ze verifieerden dat geen enkel back-upbestand bereikbaar bleef via een openbaar of raadbaar pad, en bevestigden de herstelling zonder het bestaande back-upschema van BoekhoudBasis te verstoren.
 
 > *"We hadden oprecht het verantwoorde gedaan door überhaupt back-ups in te stellen, wat exact is waarom dit zo'n frustrerende blinde vlek was om te ontdekken. Het hebben van back-ups en het hebben van beveiligde back-ups bleken twee compleet verschillende afvinkvakjes te zijn."*
-> — **Charlotte de Vries, Oprichter, BoekhoudBasis (Katwijk)**
+> - **Charlotte de Vries, Oprichter, BoekhoudBasis (Katwijk)**
 
-**Kosten en tijdlijn:** € 2.600 (audit van back-upopslagbeveiliging en herstel van toegangsbeheer) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.600 (audit van back-upopslagbeveiliging en herstel van toegangsbeheer) - voltooid in 8 werkdagen.
 
 ---
 

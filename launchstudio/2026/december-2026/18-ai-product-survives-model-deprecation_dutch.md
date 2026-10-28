@@ -31,7 +31,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Elk AI-model waar uw product op leunt, wordt vroeg of laat uitgefaseerd (*deprecated*). Dit is geen hypothetisch risico — het is sinds 2023 aan de lopende band gebeurd, waarbij AI-providers oudere modelversies regelmatig intrekken op tijdlijnen van enkele maanden in plaats van jaren. Oprichters die de kernlogica van hun product strak koppelen aan één specifieke modelversie, bouwen op geleende tijd.
+Elk AI-model waar uw product op leunt, wordt vroeg of laat uitgefaseerd (*deprecated*). Dit is geen hypothetisch risico - het is sinds 2023 aan de lopende band gebeurd, waarbij AI-providers oudere modelversies regelmatig intrekken op tijdlijnen van enkele maanden in plaats van jaren. Oprichters die de kernlogica van hun product strak koppelen aan één specifieke modelversie, bouwen op geleende tijd.
 
 ## Waarom Model-Uitfasering Oprichters Verrast
 
@@ -39,7 +39,7 @@ AI-tools zoals Lovable en Bolt genereren applicaties waarin specifieke AI-modell
 
 ## Het Architectuurpatroon Dat Dit Voorkomt
 
-De oplossing is een beproefd ontwerppatroon uit de software-engineering: de **abstractielaag**. In plaats van overal in uw codebase rechtstreeks een specifieke LLM aan te roepen, communiceert uw applicatie met een interne abstractie — een consistente interface die het verzoek vervolgens routeert naar het model dat op dat moment is geconfigureerd. Wordt een model uitgefaseerd? Dan past u de routing-configuratie op één centrale plek aan, en niet in tientallen losse bestanden.
+De oplossing is een beproefd ontwerppatroon uit de software-engineering: de **abstractielaag**. In plaats van overal in uw codebase rechtstreeks een specifieke LLM aan te roepen, communiceert uw applicatie met een interne abstractie - een consistente interface die het verzoek vervolgens routeert naar het model dat op dat moment is geconfigureerd. Wordt een model uitgefaseerd? Dan past u de routing-configuratie op één centrale plek aan, en niet in tientallen losse bestanden.
 
 - **Centraliseer alle AI-aanroepen** via één servicelaag in plaats van directe API-calls verspreid over de hele applicatie.
 - **Standaardiseer prompt-sjablonen** op een manier die onafhankelijk kan worden getest van de overige applicatielogica.
@@ -49,7 +49,7 @@ De oplossing is een beproefd ontwerppatroon uit de software-engineering: de **ab
 
 ## De Zakelijke Rechtvaardiging voor Deze Investering
 
-Deze architectuur vraagt vooraf meer engineering dan de "snelle en directe" methode die AI-prototypes standaard hanteren. Voor een oprichter die louter een vaag idee test, is die extra moeite wellicht nog niet nodig. Maar voor een ondernemer met betalende klanten is een gedwongen spoedmigratie — getriggerd door een e-mail van een provider met een aftelklok van 60 tot 90 dagen — vele malen duurder en stressvoller dan het proactief inrichten van een abstractielaag.
+Deze architectuur vraagt vooraf meer engineering dan de "snelle en directe" methode die AI-prototypes standaard hanteren. Voor een oprichter die louter een vaag idee test, is die extra moeite wellicht nog niet nodig. Maar voor een ondernemer met betalende klanten is een gedwongen spoedmigratie - getriggerd door een e-mail van een provider met een aftelklok van 60 tot 90 dagen - vele malen duurder en stressvoller dan het proactief inrichten van een abstractielaag.
 
 ## Waar Dit Past in een Productielancering
 
@@ -61,12 +61,12 @@ Herre Roelevink, oprichter van Manifera, ziet dit patroon regelmatig: *"Oprichte
 
 ## Wat Er Feitelijk Verandert Wanneer U van Modelversie Wisselt
 
-Oprichters nemen vaak aan dat een modelwissel slechts het aanpassen van één regel configuratie is. Met een goede abstractielaag is dat mechanisch gezien ook zo. Maar wat nog altijd technisch inzicht vereist, is dat geen twee modellen — zelfs niet twee opeenvolgende versies van dezelfde maker — exact identiek reageren, zelfs als de API op papier hetzelfde lijkt.
+Oprichters nemen vaak aan dat een modelwissel slechts het aanpassen van één regel configuratie is. Met een goede abstractielaag is dat mechanisch gezien ook zo. Maar wat nog altijd technisch inzicht vereist, is dat geen twee modellen - zelfs niet twee opeenvolgende versies van dezelfde maker - exact identiek reageren, zelfs als de API op papier hetzelfde lijkt.
 
 **Vijf zaken die geruisloos verschuiven tussen modelversies:**
 
 - **Context window omvang:** Een nieuwer model accepteert vaak een veel grotere context. Dat klinkt als een pure verbetering, maar als uw prompts waren ontworpen rondom agressieve tekstafkapping, kan het gedrag van het nieuwe model bij lange invoer onverwacht afwijken van uw oude testgevallen.
-- **Striktheid in het volgen van instructies:** Sommige modellen volgen formateringsopdrachten (*"geef uitsluitend JSON terug"*) veel letterlijker dan andere. Een parser die was afgesteld op de inleidende beleefdheidszinnetjes van een oud model kan volledig crashen bij een model dat nu zuivere JSON terugstuurt — of juist stilvallend falen wanneer een model onverwacht commentaar toevoegt.
+- **Striktheid in het volgen van instructies:** Sommige modellen volgen formateringsopdrachten (*"geef uitsluitend JSON terug"*) veel letterlijker dan andere. Een parser die was afgesteld op de inleidende beleefdheidszinnetjes van een oud model kan volledig crashen bij een model dat nu zuivere JSON terugstuurt - of juist stilvallend falen wanneer een model onverwacht commentaar toevoegt.
 - **Token-prijzen en breedsprakigheid:** Nieuwere modellen zijn niet altijd goedkoper en sommige formuleren van nature veel uitgebreider, wat zowel uw API-factuur verhoogt als invloed heeft op velden die een vaste tekenlimiet verwachten.
 - **Latency-profiel:** Geavanceerde redeneermodellen (*reasoning models*) kunnen seconden langer nodig hebben per verzoek. Als uw frontend geen laadstatus of streaming heeft, denken gebruikers dat de app is vastgelopen.
 - **Veiligheidsfilters en weigeringen (Refusals):** Providers passen regelmatig aan wat een model wel en niet mag beantwoorden. Een prompt die twee jaar probleemloos werkte, kan bij een nieuwe versie plotseling weigeringen triggeren voor onderwerpen in de juridische, financiële of medische sfeer.
@@ -98,9 +98,9 @@ Met nog 45 dagen op de klok benaderde Kees LaunchStudio. Het team van Manifera b
 **Resultaat:** PolisCheck schakelde vijf dagen vóór de deadline vlekkeloos over naar het nieuwe model met 100% uptime. Dankzij de nieuwe architectuur kost een volgende modeloverstap Kees voortaan slechts enkele minuten.
 
 > *"Ik dacht echt dat ik mijn hele bedrijf opnieuw moest laten bouwen. LaunchStudio herstructureerde de boel zodat ik niet meer vastzit aan één model. De volgende keer dat een leverancier een model uitfaseert, is het geen crisis meer."*  
-> — **Kees Visser, Oprichter PolisCheck (Amersfoort)**
+> - **Kees Visser, Oprichter PolisCheck (Amersfoort)**
 
-**Kosten & tijdlijn:** €3.200 (Launch & Grow Pakket, architectuur refactoring) — binnen 16 werkdagen live opgeleverd, 5 dagen vóór de deadline.
+**Kosten & tijdlijn:** €3.200 (Launch & Grow Pakket, architectuur refactoring) - binnen 16 werkdagen live opgeleverd, 5 dagen vóór de deadline.
 
 ---
 

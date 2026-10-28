@@ -71,11 +71,11 @@ Een knop 'Verwijderen' of 'Intrekken' op een beheerpagina voor API-sleutels moet
 
 **Verwijderde teamleden of samenwerkers**
 
-Het verwijderen van een gebruiker uit een team of werkruimte in de interface moet per direct een einde maken aan diens toegang via elk kanaal — inclusief actieve browsersessies, openstaande mobiele app-tokens of achtergrondprocessen. Een verwijderd lid dat via een achtergebleven sessie data kan blijven inzien, vertoont exact dezelfde ontwerpfout als een niet-geïnvalideerde deellink.
+Het verwijderen van een gebruiker uit een team of werkruimte in de interface moet per direct een einde maken aan diens toegang via elk kanaal - inclusief actieve browsersessies, openstaande mobiele app-tokens of achtergrondprocessen. Een verwijderd lid dat via een achtergebleven sessie data kan blijven inzien, vertoont exact dezelfde ontwerpfout als een niet-geïnvalideerde deellink.
 
 **Opgezegde abonnementen en gedowngrade pakketten**
 
-Een opgezegd abonnement moet direct de toegang blokkeren tot de premiumfuncties die dat abonnement ontgrendelde — en niet alleen stoppen met tonen van de badge 'Actief' in het dashboard, terwijl achterliggende feature-gates nog dagenlang vertrouwen op een verouderde cache-status.
+Een opgezegd abonnement moet direct de toegang blokkeren tot de premiumfuncties die dat abonnement ontgrendelde - en niet alleen stoppen met tonen van de badge 'Actief' in het dashboard, terwijl achterliggende feature-gates nog dagenlang vertrouwen op een verouderde cache-status.
 
 **Wachtwoordresets en de optie "Overal uitloggen"**
 
@@ -96,9 +96,9 @@ Maanden na het beëindigen van een specifiek partnerschap ontdekte een boerderij
 **Resultaat:** LaunchStudio implementeerde oprechte link-ongeldigverklaring aan de serverzijde getriggerd door de intrekactie. Een eerder gedeelde link stopt direct met werken bij intrekking, ongeacht wie hem nog in zijn bladwijzers heeft staan.
 
 > *"Ik 'trok' die link in op de dag dat het partnerschap eindigde, maanden geleden. Het ontdekken bij toeval dat het stilletjes al die tijd was blijven werken was een vrij verontrustende ontdekking."*
-> — **Loes Dijkstra, Oprichter, BoerenBox (Terneuzen)**
+> - **Loes Dijkstra, Oprichter, BoerenBox (Terneuzen)**
 
-**Kosten en tijdlijn:** € 2.000 (audit van deellink-intrekking en server-side ongeldigverklaring) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (audit van deellink-intrekking en server-side ongeldigverklaring) - voltooid in 7 werkdagen.
 
 ---
 
@@ -112,7 +112,7 @@ Omdat een snel gebouwde interface vaak alleen het record in de frontend verwijde
 
 Zeer vaak ontdekken gebruikers dit per toeval: iemand die eerder een deellink had opgeslagen in zijn browserbladwijzers klikt er weken nadat de samenwerking is beëindigd op, en ziet tot zijn verbazing dat alle vertrouwelijke documenten nog steeds live worden ingeladen.
 
-### Manifera bouwt veilige deelsystemen voor zakelijke klanten — hoe wordt intrekking waterdicht gemaakt?
+### Manifera bouwt veilige deelsystemen voor zakelijke klanten - hoe wordt intrekking waterdicht gemaakt?
 
 Door deellinks en tokens op te slaan met een unieke identifier die bij elke aanroep op de backend wordt geverifieerd tegen de database op actieve status (`is_active = true`) en vervaldatum, zodat intrekking direct en onherroepelijk realtime effect heeft.
 
@@ -147,7 +147,7 @@ Kopieer een actieve deellink, open deze in een incognitovenster om te zien dat h
     },
     {
       "@type": "Question",
-      "name": "Manifera bouwt veilige deelsystemen voor zakelijke klanten — hoe wordt intrekking waterdicht gemaakt?",
+      "name": "Manifera bouwt veilige deelsystemen voor zakelijke klanten - hoe wordt intrekking waterdicht gemaakt?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Door deellinks en tokens op te slaan met een unieke identifier die bij elke aanroep op de backend wordt geverifieerd tegen de database op actieve status (`is_active = true`) en vervaldatum, zodat intrekking direct en onherroepelijk realtime effect heeft."

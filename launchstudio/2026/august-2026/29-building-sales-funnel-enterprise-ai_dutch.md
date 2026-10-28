@@ -43,7 +43,7 @@ Zodra een bezoeker op deze knop klikt, wordt hij geleid naar een gestructureerd 
 
 De grootste fout die technische oprichters maken, is het openen van het eerste gesprek met een live productdemonstratie. De zakelijke inkoper is niet geïnteresseerd in uw gebruikersinterface of LLM-architectuur. Hij focust uitsluitend op zijn operationele knelpunt.
 
-Het eerste gesprek is een zuiver **Intakegesprek (Discovery Call)**. Stel gerichte vragen: *"Hoeveel uur per week besteedt uw team momenteel aan het handmatig verwerken van deze documenten? Wat is het foutenpercentage? Welke kosten brengt dat jaarlijks met zich mee? Wie worden intern beïnvloed als dit proces spaak loopt?"* U verzamelt hiermee de harde cijfers om een waterdichte businesscase (ROI) op te bouwen — berekend met getallen die de klant zélf heeft genoemd. Kunt u aantonen dat uw AI jaarlijks € 200.000 aan arbeid en foutcorrectie bespaart, dan is een softwarelicentie van € 50.000 een no-brainer voor de directie.
+Het eerste gesprek is een zuiver **Intakegesprek (Discovery Call)**. Stel gerichte vragen: *"Hoeveel uur per week besteedt uw team momenteel aan het handmatig verwerken van deze documenten? Wat is het foutenpercentage? Welke kosten brengt dat jaarlijks met zich mee? Wie worden intern beïnvloed als dit proces spaak loopt?"* U verzamelt hiermee de harde cijfers om een waterdichte businesscase (ROI) op te bouwen - berekend met getallen die de klant zélf heeft genoemd. Kunt u aantonen dat uw AI jaarlijks € 200.000 aan arbeid en foutcorrectie bespaart, dan is een softwarelicentie van € 50.000 een no-brainer voor de directie.
 
 ## Fase 2: De Toegespitste Productdemo
 
@@ -61,11 +61,11 @@ Een POC moet altijd betaald zijn (nooit gratis) om te garanderen dat de klant ec
 
 ## Trechter-Gezondheid Monitoren Voorbij 'Geboekte Demo's'
 
-Veel B2B-teams sturen puur op het aantal geboekte demo's en verliezen het zicht zodra een deal in de POC-fase belandt — exact waar enterprise-deals in de praktijk sneuvelen. Meet de conversie per afzonderlijke trechterstap: intake-naar-demo, demo-naar-POC en POC-naar-getekend-contract. Ligt het conversiepercentage van POC naar contract laag, dan ligt de oorzaak zelden bij de software zelf, maar bij het ontbreken van vooraf schriftelijk overeengekomen succescriteria.
+Veel B2B-teams sturen puur op het aantal geboekte demo's en verliezen het zicht zodra een deal in de POC-fase belandt - exact waar enterprise-deals in de praktijk sneuvelen. Meet de conversie per afzonderlijke trechterstap: intake-naar-demo, demo-naar-POC en POC-naar-getekend-contract. Ligt het conversiepercentage van POC naar contract laag, dan ligt de oorzaak zelden bij de software zelf, maar bij het ontbreken van vooraf schriftelijk overeengekomen succescriteria.
 
 ## Het Bouwen van de Vertrouwensinfrastructuur Achter de Trechter
 
-Geen van deze fasen werkt als uw product faalt zodra de security officer van de klant het inspecteert. Een openbare "Trust Center" pagina — met uw SOC 2 status, dataretentiebeleid en uptime-historie — moet al live staan vóór uw eerste verkoopgesprek.
+Geen van deze fasen werkt als uw product faalt zodra de security officer van de klant het inspecteert. Een openbare "Trust Center" pagina - met uw SOC 2 status, dataretentiebeleid en uptime-historie - moet al live staan vóór uw eerste verkoopgesprek.
 
 Dit is exact het gat dat Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze enterprise-systemen sinds **2014**, met 160+ gerealiseerde projecten voor organisaties zoals Vodafone en TNO vanuit haar hoofdkantoor in Amsterdam en ontwikkelcentrum in Ho Chi Minhstad.
 
@@ -79,7 +79,7 @@ Dit is exact het gat dat Herre Roelevink, Oprichter & Managing Director van Mani
 
 ## Sluit Enterprise AI-Contracten van Zes Cijfers
 
-Een zwakke salesfunnel kost u grote deals voordat de demo überhaupt begint. **LaunchStudio** ontwerpt converterende B2B-landingspagina's, beveiligde demo-sandboxes en Trust Centers die specifiek zijn ingericht om enterprise-leads te kwalificeren — tegen circa 20% van de tarieven van een traditioneel B2B-bureau.
+Een zwakke salesfunnel kost u grote deals voordat de demo überhaupt begint. **LaunchStudio** ontwerpt converterende B2B-landingspagina's, beveiligde demo-sandboxes en Trust Centers die specifiek zijn ingericht om enterprise-leads te kwalificeren - tegen circa 20% van de tarieven van een traditioneel B2B-bureau.
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/nl/#contact) of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages). Zie Manifera's [portfolio](https://www.manifera.com/portfolio/) voor gerealiseerde enterprise-trajecten.
 
@@ -93,7 +93,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om geïsoleerde sandbox-om
 
 **Resultaat:** De conversie van lead naar succesvolle demo steeg met 40%, wat direct leidde tot 3 getekende pilot-contracten.
 
-**Kosten & Tijdlijn:** €1.700 (Sandbox Workspace Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.700 (Sandbox Workspace Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

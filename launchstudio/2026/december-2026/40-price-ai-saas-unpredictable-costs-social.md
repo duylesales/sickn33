@@ -1,6 +1,6 @@
 🚨 His 8 heaviest users were paying €29/month each. Their API costs? MORE than €29. He was losing money on his best customers. 📉
 
-Traditional SaaS pricing assumes stable costs per customer. AI SaaS breaks that completely — a power user can cost 100x a light user, on the SAME flat price: 😱
+Traditional SaaS pricing assumes stable costs per customer. AI SaaS breaks that completely - a power user can cost 100x a light user, on the SAME flat price: 😱
 
 ❌ Flat €29/month, unlimited generations = unit economics quietly underwater
 ❌ He didn't know until he actually calculated cost vs. revenue per customer

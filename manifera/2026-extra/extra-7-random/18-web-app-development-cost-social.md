@@ -7,8 +7,8 @@
 
 **The Manifera Solution:**
 ✅ **Four Real Scoping Steps Before Any Number:** Requirements depth, direct technical inspection, explicit non-functional requirements, and visible assumptions.
-✅ **Amsterdam Strategic Governance:** Genuine scoping before quoting — a figure grounded in the actual project.
-✅ **Vietnam Execution Velocity:** Delivery against a scoped estimate with assumptions explicit — divergence is visible, not a surprise.
+✅ **Amsterdam Strategic Governance:** Genuine scoping before quoting - a figure grounded in the actual project.
+✅ **Vietnam Execution Velocity:** Delivery against a scoped estimate with assumptions explicit - divergence is visible, not a surprise.
 
 The first number felt precise and turned out to be almost meaningless. The second came with its assumptions attached. 🛡️
 

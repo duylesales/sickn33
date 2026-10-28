@@ -85,7 +85,7 @@ Karlsruhe is known for its fan-shaped city layout radiating from the palace, ext
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Karlsruhe you will find few or no local vacancies there today. Use German job portals, KIT and institute vacancy lists, CyberForum's network and company career pages as primary sources. OnlyAIJobs is useful for comparing Karlsruhe with the Netherlands — where employers such as Accenture, Cegeka, VINCI Energies and Holland Innovative list AI roles — and as a method: KIT's campuses, research institutes and company offices are spread across the city and surrounding towns, so the exact address matters. Karlsruhe employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Karlsruhe you will find few or no local vacancies there today. Use German job portals, KIT and institute vacancy lists, CyberForum's network and company career pages as primary sources. OnlyAIJobs is useful for comparing Karlsruhe with the Netherlands - where employers such as Accenture, Cegeka, VINCI Energies and Holland Innovative list AI roles - and as a method: KIT's campuses, research institutes and company offices are spread across the city and surrounding towns, so the exact address matters. Karlsruhe employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Robotics and Autonomous Systems Research
 
@@ -109,7 +109,7 @@ Fraunhofer IOSB works on image processing and computer vision for industry, envi
 
 ## Questions to Ask Karlsruhe Employers
 
-- At which site will I work — KIT campus south or north, institute or company office?
+- At which site will I work - KIT campus south or north, institute or company office?
 - What is the working language of the team?
 - Which pay scale or collective agreement applies, and how long is the contract?
 - For defence-related projects: are there clearance or nationality requirements?
@@ -153,7 +153,7 @@ Energy infrastructure, public institutions and robotics all require safe and tra
 
 ## Karlsruhe in the Wider Region
 
-Karlsruhe sits between several technology regions. The Rhine-Neckar region with Heidelberg, Mannheim and Walldorf is about 45 minutes north, Stuttgart about an hour east and Strasbourg in France about 40 minutes by train. This makes Karlsruhe a convenient base for engineers who want access to several job markets: enterprise software and life sciences to the north, automotive and industry to the east and European institutions and French companies across the border. Searching by distance across this wider area — rather than limiting yourself to Karlsruhe itself — reveals many more opportunities. Cross-border work with France involves specific tax and social security rules, which should be checked before accepting a role.
+Karlsruhe sits between several technology regions. The Rhine-Neckar region with Heidelberg, Mannheim and Walldorf is about 45 minutes north, Stuttgart about an hour east and Strasbourg in France about 40 minutes by train. This makes Karlsruhe a convenient base for engineers who want access to several job markets: enterprise software and life sciences to the north, automotive and industry to the east and European institutions and French companies across the border. Searching by distance across this wider area - rather than limiting yourself to Karlsruhe itself - reveals many more opportunities. Cross-border work with France involves specific tax and social security rules, which should be checked before accepting a role.
 
 ## Getting Around
 

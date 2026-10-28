@@ -1,4 +1,4 @@
-🔥 Leo built a prototype using **Cursor** — leo, a developer, used **cursor** to build an ai document search tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Leo built a prototype using **Cursor** - leo, a developer, used **cursor** to build an ai document search tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Leo's application achieved silky-smooth performance: Restored 100% app uptime and handled 50,000 queries on launch day without rate blocks. (€1,650 (Rate Limit Management) — production-ready and deployed in 4 business days.). 🚀
+Leo's application achieved silky-smooth performance: Restored 100% app uptime and handled 50,000 queries on launch day without rate blocks. (€1,650 (Rate Limit Management) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/managing-openai-tier-limits-new-startups
 

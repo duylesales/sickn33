@@ -58,7 +58,7 @@ Wanneer de toegewezen aannemer van een pand verandert:
   1. Zoek elk verzoek voor dat pand dat nog steeds staat gemarkeerd als "open" of "in behandeling"
   2. Stuur elk verzoek opnieuw door naar de inbox en het dashboard van de nieuwe aannemer
   3. Markeer ze als "opnieuw toegewezen" zodat de nieuwe aannemer weet dat deze oorspronkelijk niet van hem waren
-  4. Stuur een verse melding — vertrouw niet op de oorspronkelijke melding als het laatste woord
+  4. Stuur een verse melding - vertrouw niet op de oorspronkelijke melding als het laatste woord
 ```
 
 Zonder deze opschoonactie kan een verhuurder de routering voor elk toekomstig verzoek herstellen en toch een handvol oudere verzoeken stilletjes laten vastzitten bij een aannemer die al weg is.
@@ -71,14 +71,14 @@ Roos Dijkman, een oprichter in Arnhem, bouwde PandBeheer – een tool voor onder
 
 De kloof zat in een pand dat onlangs zijn toegewezen aannemer was kwijtgeraakt na een ruzie, waarbij Roos van plan was "binnenkort" een vervanger toe te wijzen. Een huurder in dat pand diende een onderhoudsverzoek in voor een lekkende kraan. Het verzoek werd succesvol opgeslagen en werd getoond als "ingediend" in de weergave van de huurder. Maar omdat er geen aannemer was toegewezen, ging er nergens een melding naartoe – niet naar Roos, en naar niemand anders. Het verzoek bleef drie weken lang ongemoeid zitten totdat de huurder, steeds gefrustreerder door het gebrek aan enige reactie, Roos rechtstreeks belde om te vragen waarom er niets was gebeurd.
 
-LaunchStudio voegde een terugvalrouteringsregel toe: elk verzoek voor een pand zonder toegewezen aannemer wordt nu rechtstreeks doorgestuurd naar de eigen inbox en het dashboard van de verhuurder als een gemarkeerd prioriteitsitem, met een zichtbare status "niet toegewezen — heeft aannemer nodig" in plaats van een generieke status "ingediend". We hebben ook een dagelijkse samenvatting toegevoegd die elk verzoek naar boven brengt dat langer dan 48 uur ongemoeid is gelaten, ongeacht de routeringsstatus, zodat niets meer stil kan vallen.
+LaunchStudio voegde een terugvalrouteringsregel toe: elk verzoek voor een pand zonder toegewezen aannemer wordt nu rechtstreeks doorgestuurd naar de eigen inbox en het dashboard van de verhuurder als een gemarkeerd prioriteitsitem, met een zichtbare status "niet toegewezen - heeft aannemer nodig" in plaats van een generieke status "ingediend". We hebben ook een dagelijkse samenvatting toegevoegd die elk verzoek naar boven brengt dat langer dan 48 uur ongemoeid is gelaten, ongeacht de routeringsstatus, zodat niets meer stil kan vallen.
 
 **Resultaat:** Roos ving de volgende maand nog twee verzoeken voor niet-toegewezen panden op voordat het klachten werden, beide binnen een dag opgelost.
 
 > *"De app loog nooit echt tegen me – hij vertelde me alleen ook nooit de waarheid. Het verzoek zat de hele tijd gewoon daar in de database."*
-> — **Roos Dijkman, Oprichter, PandBeheer (Arnhem)**
+> - **Roos Dijkman, Oprichter, PandBeheer (Arnhem)**
 
-**Kosten en tijdlijn:** € 680 (terugvalrouteringsregel, prioriteitsmarkering, samenvatting van verouderde verzoeken) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 680 (terugvalrouteringsregel, prioriteitsmarkering, samenvatting van verouderde verzoeken) - voltooid in 4 werkdagen.
 
 ---
 

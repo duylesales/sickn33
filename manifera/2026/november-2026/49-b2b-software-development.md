@@ -93,7 +93,7 @@ To make the trade-off concrete, consider a hypothetical B2B platform with a 20-m
 | 3-year infrastructure spend | ~$151,000 (compounding upgrades) | ~$0 incremental (same base instance) |
 | 3-year total cost | ~$151,000 | ~$45,000 |
 
-The illustrative math shows why "just add compute" is the more expensive path over any meaningful time horizon: it treats an algorithmic O(n) problem with a linear spend increase that never actually fixes the underlying query plan. The Keyset rewrite is a fixed, one-time engineering cost that makes the query plan O(1) regardless of how large the table grows afterward, while the instance-upgrade path resets to zero savings the moment the table doubles again — which, for a fast-growing B2B platform ingesting logistics, transaction, or usage-event data, is rarely more than a year or two away.
+The illustrative math shows why "just add compute" is the more expensive path over any meaningful time horizon: it treats an algorithmic O(n) problem with a linear spend increase that never actually fixes the underlying query plan. The Keyset rewrite is a fixed, one-time engineering cost that makes the query plan O(1) regardless of how large the table grows afterward, while the instance-upgrade path resets to zero savings the moment the table doubles again - which, for a fast-growing B2B platform ingesting logistics, transaction, or usage-event data, is rarely more than a year or two away.
 
 ## Secure Your Database Performance Today
 

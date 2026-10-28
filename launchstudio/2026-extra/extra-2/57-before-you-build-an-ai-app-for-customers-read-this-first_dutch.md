@@ -52,7 +52,7 @@ Voordat u een AI-app bouwt voor klanten die echt geld betalen en verwachten dat 
 
 ## Mythe: Dit soort fouten zou duidelijk zijn en snel opgevangen worden
 
-**Realiteit:** een dubbele orderafhandeling die wordt getriggerd door een herhaalde webhook ziet er aan de buitenkant vaak uit als een banale logistieke vergissing — dubbel ingepakt, twee keer gescand in het magazijn, of wat op dat moment de meest aannemelijke verklaring lijkt. Hierdoor kan de werkelijke technische oorzaak maandenlang onopgemerkt blijven tenzij iemand specifiek de database-logs van de webhook-handler inspecteert. Een oprichter die af en toe een klacht ontvangt van een klant die twee pakketten heeft gekregen, gaat er logischerwijs vanuit dat het een menselijke inpakfout was. Die alledaagse verklaring zorgt ervoor dat het structurele softwareprobleem stilletjes kan blijven bestaan.
+**Realiteit:** een dubbele orderafhandeling die wordt getriggerd door een herhaalde webhook ziet er aan de buitenkant vaak uit als een banale logistieke vergissing - dubbel ingepakt, twee keer gescand in het magazijn, of wat op dat moment de meest aannemelijke verklaring lijkt. Hierdoor kan de werkelijke technische oorzaak maandenlang onopgemerkt blijven tenzij iemand specifiek de database-logs van de webhook-handler inspecteert. Een oprichter die af en toe een klacht ontvangt van een klant die twee pakketten heeft gekregen, gaat er logischerwijs vanuit dat het een menselijke inpakfout was. Die alledaagse verklaring zorgt ervoor dat het structurele softwareprobleem stilletjes kan blijven bestaan.
 
 
 ## Dit op de juiste manier afhandelen
@@ -61,7 +61,7 @@ Een correcte herstelling implementeert idempotente verwerking van gebeurtenissen
 
 Manifera's engineering voor webhook-betrouwbaarheid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur de link van uw prototype — we vlaggen gratis wat het controleren waard is](https://launchstudio.eu/nl/#contact).
+[Stuur de link van uw prototype - we vlaggen gratis wat het controleren waard is](https://launchstudio.eu/nl/#contact).
 
 ## Hoe U Uw Eigen Webhook-Afhandeling Test op Deze Kwetsbaarheid
 
@@ -73,7 +73,7 @@ De meeste betaalproviders (zoals Stripe of Mollie) bieden in hun ontwikkelaarsda
 
 **Verzend handmatig een kopie van een reeds verwerkte betaling**
 
-Kies een eerdere webhook-gebeurtenis die uw systeem al succesvol heeft afgehandeld — bijvoorbeeld een order die al netjes is gemarkeerd als betaald — en gebruik het dashboard van de provider om exact dezelfde gebeurtenis een tweede keer naar uw live applicatie te sturen.
+Kies een eerdere webhook-gebeurtenis die uw systeem al succesvol heeft afgehandeld - bijvoorbeeld een order die al netjes is gemarkeerd als betaald - en gebruik het dashboard van de provider om exact dezelfde gebeurtenis een tweede keer naar uw live applicatie te sturen.
 
 **Controleer wat er daadwerkelijk in uw systeem gebeurt**
 
@@ -97,9 +97,9 @@ Een ambachtsman meldde dat hij de instructie kreeg om dezelfde bestelling twee k
 **Resultaat:** LaunchStudio implementeerde idempotente gebeurtenisverwerking over HandwerkMarkt's webhook-gestuurde vervullingsproces, waardoor een opnieuw afgeleverde melding herkend en veilig genegeerd wordt.
 
 > *"We namen geacht aan dat het een eenmalige fout van de verkoper zelf was. Er was een specifieke technische review voor nodig om te onthullen dat het eigenlijk een systematisch patroon was."*
-> — **Cas Willemsen, Oprichter, HandwerkMarkt (Heerlen)**
+> - **Cas Willemsen, Oprichter, HandwerkMarkt (Heerlen)**
 
-**Kosten en tijdlijn:** € 1.700 (implementatie van idempotente webhook-verwerking) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.700 (implementatie van idempotente webhook-verwerking) - voltooid in 6 werkdagen.
 
 ---
 

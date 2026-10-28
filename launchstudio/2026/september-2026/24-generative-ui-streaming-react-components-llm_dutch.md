@@ -6,7 +6,7 @@ Koperfase: Bewustzijn
 
 # React-Componenten Streamen vanaf LLM's in AI-Softwareontwikkeling voor Productie AI SaaS
 
-Het bepalende kenmerk van de allereerste generatie AI-applicaties was de beruchte "Muur van Tekst" (Wall of Text). U stelde de AI een complexe vraag over uw financiële kwartaalcijfers, en het systeem printte enthousiast vijf dichte alinea's onleesbare tekst uit. In een zakelijke B2B-omgeving hebben professionals echter geen enkele behoefte om lappen proza over data door te ploegen; ze willen directe, overzichtelijke interactieve grafieken zien. De volgende evolutionaire stap in SaaS-architectuur is **Generatieve UI (Generative UI)** — waarbij het Large Language Model realtime functionele, interactieve frontend-componenten rendert in plaats van statische tekst.
+Het bepalende kenmerk van de allereerste generatie AI-applicaties was de beruchte "Muur van Tekst" (Wall of Text). U stelde de AI een complexe vraag over uw financiële kwartaalcijfers, en het systeem printte enthousiast vijf dichte alinea's onleesbare tekst uit. In een zakelijke B2B-omgeving hebben professionals echter geen enkele behoefte om lappen proza over data door te ploegen; ze willen directe, overzichtelijke interactieve grafieken zien. De volgende evolutionaire stap in SaaS-architectuur is **Generatieve UI (Generative UI)** - waarbij het Large Language Model realtime functionele, interactieve frontend-componenten rendert in plaats van statische tekst.
 
 ## Voorbij Statische Markdown
 
@@ -16,13 +16,13 @@ Generatieve UI doorbreekt deze beperking volledig. Vraagt een gebruiker aan een 
 
 ## Hoe het Technisch Werkt: Veilige Component-Mapping (Component Mapping)
 
-Een wijdverbreid misverstand onder beginnende ontwikkelaars is de gedachte dat het LLM ter plekke ruwe React-broncode schrijft en deze ongecontroleerd in de browser uitvoert (`eval()`). Dit zou niet alleen extreem traag en instabiel zijn, maar vormt tevens een catastrofaal Cross-Site Scripting (XSS) beveiligingslek — u zou immers niet-vertrouwde, door AI gegenereerde JavaScript rechtstreeks in de browser van uw klant uitvoeren, iets wat geen enkele Chief Information Security Officer (CISO) ooit zal accepteren.
+Een wijdverbreid misverstand onder beginnende ontwikkelaars is de gedachte dat het LLM ter plekke ruwe React-broncode schrijft en deze ongecontroleerd in de browser uitvoert (`eval()`). Dit zou niet alleen extreem traag en instabiel zijn, maar vormt tevens een catastrofaal Cross-Site Scripting (XSS) beveiligingslek - u zou immers niet-vertrouwde, door AI gegenereerde JavaScript rechtstreeks in de browser van uw klant uitvoeren, iets wat geen enkele Chief Information Security Officer (CISO) ooit zal accepteren.
 
 Generatieve UI maakt in plaats daarvan gebruik van **Tool Calling en Veilige Component-Mapping**:
 
 1. **Stap 1:** Uw frontend-engineers bouwen vooraf veilige, geteste en merkconforme React-componenten (bijvoorbeeld `<ExpenseChart />`), die exact zoals de rest van uw codebase worden gereviewd en geaudit.
 2. **Stap 2:** U voorziet het LLM van een tooldefinitie genaamd `render_expense_chart` met een strikt JSON-schema (bijvoorbeeld een array van categorieën en numerieke bedragen), gevalideerd via Zod.
-3. **Stap 3:** Wanneer de gebruiker de vraag stelt, besluit het model deze tool aan te roepen en genereert het uitsluitend een gestructureerde JSON-payload — geen HTML, geen JSX, geen uitvoerbare code, louter zuivere data.
+3. **Stap 3:** Wanneer de gebruiker de vraag stelt, besluit het model deze tool aan te roepen en genereert het uitsluitend een gestructureerde JSON-payload - geen HTML, geen JSX, geen uitvoerbare code, louter zuivere data.
 4. **Stap 4:** Uw frontend (veelal gebruikmakend van de Vercel AI SDK en React Server Components) onderschept de binnenkomende JSON. In plaats van ruwe data te tonen, koppelt de frontend deze direct aan het `<ExpenseChart />` component en geeft de data dynamisch mee als props.
 
 Het resultaat is een pixel-perfect gerenderd interface-element dat naadloos aansluit op uw design system, waarbij het LLM uitsluitend de data levert en nooit de broncode van het component aanraakt.
@@ -31,7 +31,7 @@ Het resultaat is een pixel-perfect gerenderd interface-element dat naadloos aans
 
 Omdat de gegenereerde interface uit native React-componenten bestaat, behoudt het zijn volledige interactiviteit. De gebruiker kan met zijn muis over de grafiek bewegen om interactieve tooltips te zien, op de legenda klikken om categorieën te isoleren, of een datum-slider verslepen om de dataset realtime te herberekenen zonder dat er een nieuwe LLM-aanroep nodig is.
 
-Bovendien kunt u direct handelbare actieknoppen renderen. Vraagt een gebruiker: *"Boek een zakelijke vlucht naar Londen"*, dan rendert de AI een interactieve `<FlightConfirmationCard />` met een grote knop "Bevestig & Betaal". Klikt de gebruiker op die knop, dan triggert dit een beveiligde Stripe-betaling op uw backend — waarbij de menselijke klik fungeert als de expliciete Human-in-the-Loop autorisatie. De AI evolueert hiermee van een passieve adviseur naar een interactieve software-operator.
+Bovendien kunt u direct handelbare actieknoppen renderen. Vraagt een gebruiker: *"Boek een zakelijke vlucht naar Londen"*, dan rendert de AI een interactieve `<FlightConfirmationCard />` met een grote knop "Bevestig & Betaal". Klikt de gebruiker op die knop, dan triggert dit een beveiligde Stripe-betaling op uw backend - waarbij de menselijke klik fungeert als de expliciete Human-in-the-Loop autorisatie. De AI evolueert hiermee van een passieve adviseur naar een interactieve software-operator.
 
 ## Partiële Payloads Streamen (Streaming Partial JSON)
 
@@ -39,7 +39,7 @@ Een technisch detail dat veel teams over het hoofd zien: JSON streamt van nature
 
 ## Het UX-Voordeel in B2B SaaS
 
-Generatieve UI maakt uw SaaS-applicatie oneindig flexibel. In plaats van gebruikers te dwingen om door 10 vaste dashboardpagina's te navigeren op zoek naar specifieke rapportages, typt de gebruiker simpelweg zijn behoefte in, waarna de software ter plekke een op maat gemaakt, interactief dashboard samenstelt. Dit is de ultieme gepersonaliseerde software-ervaring — en het is volledig deterministisch onder de motorkap.
+Generatieve UI maakt uw SaaS-applicatie oneindig flexibel. In plaats van gebruikers te dwingen om door 10 vaste dashboardpagina's te navigeren op zoek naar specifieke rapportages, typt de gebruiker simpelweg zijn behoefte in, waarna de software ter plekke een op maat gemaakt, interactief dashboard samenstelt. Dit is de ultieme gepersonaliseerde software-ervaring - en het is volledig deterministisch onder de motorkap.
 
 Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de volwassenwording van AI-interfaces: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze geavanceerde component-architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420), **Singapore** en **Ho Chi Minhstad, Vietnam**. Bekijk meer op de [Manifera web app development pagina](https://www.manifera.com/services/web-app-develop/).
 
@@ -67,7 +67,7 @@ Zij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in. Het engine
 
 **Resultaat:** De gebruikersinteractie steeg met 150% en de conversie op affiliate boekingslinks nam toe met 40%.
 
-**Kosten & Tijdlijn:** €2.400 (Generative UI Integratie Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.400 (Generative UI Integratie Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

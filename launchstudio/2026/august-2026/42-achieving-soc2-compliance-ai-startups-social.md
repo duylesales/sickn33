@@ -1,4 +1,4 @@
-🔥 Hazel built a prototype using **Bolt** — hazel, a clinic manager, used **bolt** to build a booking platform, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Hazel built a prototype using **Bolt** - hazel, a clinic manager, used **bolt** to build a booking platform, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Hazel's application achieved silky-smooth performance: Secured SOC 2 readiness certification and signed a €40,000 corporate pilot deal. (€4,800 (SOC 2 Compliance Package) — production-ready and deployed in 12 business days.). 🚀
+Hazel's application achieved silky-smooth performance: Secured SOC 2 readiness certification and signed a €40,000 corporate pilot deal. (€4,800 (SOC 2 Compliance Package) - production-ready and deployed in 12 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/achieving-soc2-compliance-ai-startups
 

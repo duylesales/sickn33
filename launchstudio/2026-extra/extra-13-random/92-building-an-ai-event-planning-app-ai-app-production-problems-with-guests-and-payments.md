@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Most apps get second chances. Event apps often don't. A wedding happens on one Saturday; a company anniversary on one evening. If the RSVP link fails the week invitations go out, or the seating plan loses a guest's allergy note, there is no "we'll fix it next sprint." That is what makes the AI app production problems in event planning tools so painful — and why founders building them with Lovable or Bolt should fix them before the first real invitation is sent.
+Most apps get second chances. Event apps often don't. A wedding happens on one Saturday; a company anniversary on one evening. If the RSVP link fails the week invitations go out, or the seating plan loses a guest's allergy note, there is no "we'll fix it next sprint." That is what makes the AI app production problems in event planning tools so painful - and why founders building them with Lovable or Bolt should fix them before the first real invitation is sent.
 
 ## What Makes Event Apps Different
 
@@ -33,7 +33,7 @@ Most apps get second chances. Event apps often don't. A wedding happens on one S
 
 ## Problem 1: RSVP Links That Anyone Can Change
 
-AI-generated RSVP flows often use links like `/rsvp/123`. Changing the number opens another guest's RSVP — their name, dietary needs and whether they are coming — and lets someone change it. RSVP links should be long random tokens per guest, scoped to that guest's response only, with the host able to regenerate a link if it is forwarded.
+AI-generated RSVP flows often use links like `/rsvp/123`. Changing the number opens another guest's RSVP - their name, dietary needs and whether they are coming - and lets someone change it. RSVP links should be long random tokens per guest, scoped to that guest's response only, with the host able to regenerate a link if it is forwarded.
 
 ## Problem 2: Guest Data Visible to Other Guests
 
@@ -41,7 +41,7 @@ Features like "see who else is coming" or shared seating plans can expose more t
 
 ## Problem 3: Dietary and Accessibility Notes
 
-"Severe nut allergy" or "wheelchair user" are details that must reach the caterer and venue accurately — and not be shared further. Treat them as sensitive: restricted access, clear export to the suppliers who need them, and deletion after the event.
+"Severe nut allergy" or "wheelchair user" are details that must reach the caterer and venue accurately - and not be shared further. Treat them as sensitive: restricted access, clear export to the suppliers who need them, and deletion after the event.
 
 ## Problem 4: The Invitation Burst
 
@@ -49,7 +49,7 @@ When a host sends 200 invitations at once, email providers may throttle or flag 
 
 ## Problem 5: Payments Between Several Parties
 
-Gift contributions, supplier deposits and ticketed events all involve money. Confirmation must come from the payment provider's verified webhook, refunds must be handled (events get cancelled or postponed), and if money is collected on behalf of others, the payment setup must fit that — marketplace-style payments rather than everything landing in the platform owner's account.
+Gift contributions, supplier deposits and ticketed events all involve money. Confirmation must come from the payment provider's verified webhook, refunds must be handled (events get cancelled or postponed), and if money is collected on behalf of others, the payment setup must fit that - marketplace-style payments rather than everything landing in the platform owner's account.
 
 ## Problem 6: Last-Minute Changes
 
@@ -99,7 +99,7 @@ Collect optional fields only when the host has enabled the related feature, and 
 
 ## Invitation Sending at Scale
 
-Sending hundreds of invitations at once requires care: use a transactional email provider with an authenticated domain (SPF, DKIM, DMARC), queue sends at a steady rate, personalise subject lines modestly, avoid spam-triggering content and monitor bounces. Provide hosts with a delivery overview — delivered, bounced, opened — so they can follow up personally with guests whose invitations did not arrive. For SMS invitations, respect opt-in rules and local sending hours.
+Sending hundreds of invitations at once requires care: use a transactional email provider with an authenticated domain (SPF, DKIM, DMARC), queue sends at a steady rate, personalise subject lines modestly, avoid spam-triggering content and monitor bounces. Provide hosts with a delivery overview - delivered, bounced, opened - so they can follow up personally with guests whose invitations did not arrive. For SMS invitations, respect opt-in rules and local sending hours.
 
 ## Payments for Events: Choosing the Model
 
@@ -134,7 +134,7 @@ Guests span generations and abilities. Invitations and RSVP pages should work wi
 
 ## Performance on Invitation Day
 
-When invitations go out, many guests open them within the same hour — often on mobile networks. Keep RSVP pages light: optimised images, minimal scripts, server-rendered content and a fast confirmation step. Test the RSVP flow on a throttled mobile connection before sending. A slow or broken RSVP page on the first evening creates a flood of messages to the hosts, which is exactly what the app was meant to prevent.
+When invitations go out, many guests open them within the same hour - often on mobile networks. Keep RSVP pages light: optimised images, minimal scripts, server-rendered content and a fast confirmation step. Test the RSVP flow on a throttled mobile connection before sending. A slow or broken RSVP page on the first evening creates a flood of messages to the hosts, which is exactly what the app was meant to prevent.
 
 ## Common Event App Mistakes
 
@@ -146,7 +146,7 @@ Before the busy season: secure per-guest tokens; guest visibility settings; rest
 
 ## Why Events Leave No Room for Second Chances
 
-Most software can recover from a bad week. Event software often cannot: the wedding, the gala or the anniversary happens once, and a failed RSVP link, a missing allergy note or a lost payment affects a day people remember for decades. That is why production readiness for event apps is less about scale and more about precision — every guest's answer recorded correctly, every sensitive detail reaching the right supplier and nobody else, every payment confirmed. Planners who get this right earn referrals from every event; those who do not rarely get a second chance with the same clients.
+Most software can recover from a bad week. Event software often cannot: the wedding, the gala or the anniversary happens once, and a failed RSVP link, a missing allergy note or a lost payment affects a day people remember for decades. That is why production readiness for event apps is less about scale and more about precision - every guest's answer recorded correctly, every sensitive detail reaching the right supplier and nobody else, every payment confirmed. Planners who get this right earn referrals from every event; those who do not rarely get a second chance with the same clients.
 
 ## First Step
 
@@ -158,7 +158,7 @@ Guests trust hosts with their details; hosts trust your app. Honour both.
 
 ## Where LaunchStudio Fits
 
-LaunchStudio fixes these problems in AI-built event apps without touching the design hosts and guests like: secure RSVP tokens, guest data rules, sensitive-note handling, email and peak readiness, payment flows, conflict handling and retention. LaunchStudio is backed by Manifera — trusted by Vodafone, TNO and CFLW — with engineers at its Ho Chi Minh City development centre and offices in Amsterdam and Singapore. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); [Stripe Connect's documentation](https://docs.stripe.com/connect) explains payments collected on behalf of others.
+LaunchStudio fixes these problems in AI-built event apps without touching the design hosts and guests like: secure RSVP tokens, guest data rules, sensitive-note handling, email and peak readiness, payment flows, conflict handling and retention. LaunchStudio is backed by Manifera - trusted by Vodafone, TNO and CFLW - with engineers at its Ho Chi Minh City development centre and offices in Amsterdam and Singapore. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); [Stripe Connect's documentation](https://docs.stripe.com/connect) explains payments collected on behalf of others.
 
 [Plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) before your next wedding season.
 
@@ -175,9 +175,9 @@ Over eight business days, LaunchStudio's engineers replaced RSVP IDs with per-gu
 **Result:** The next season's 140 weddings ran without RSVP tampering or payment mismatches, and invitation deliverability rose to near-complete. Joyce now licenses Trouwplanner to two other wedding planners.
 
 > *"A wedding has one date. The app didn't get a second try, so it had to be right the first time."*
-> — **Joyce van Dam, Founder, Trouwplanner (Nijkerk)**
+> - **Joyce van Dam, Founder, Trouwplanner (Nijkerk)**
 
-**Cost & Timeline:** €2,100 (Launch Ready package: RSVP security, guest data rules, payments, email and conflict handling) — completed in 8 business days.
+**Cost & Timeline:** €2,100 (Launch Ready package: RSVP security, guest data rules, payments, email and conflict handling) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -195,7 +195,7 @@ With payments confirmed by verified webhooks, refunds supported, and a marketpla
 
 ### How does Manifera's experience apply to event apps?
 
-Event apps combine burst traffic, sensitive data and payments — areas Manifera's engineers have handled in enterprise systems for more than a decade.
+Event apps combine burst traffic, sensitive data and payments - areas Manifera's engineers have handled in enterprise systems for more than a decade.
 
 ### Can an event planning app attract customers through AI search?
 

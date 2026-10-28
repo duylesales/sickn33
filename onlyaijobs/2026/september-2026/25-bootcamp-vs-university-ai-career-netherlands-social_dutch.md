@@ -1,4 +1,4 @@
-Bootcamp of universiteit om in AI te komen? 🎓 Verkeerde vraag — ze concurreren niet op dezelfde as.
+Bootcamp of universiteit om in AI te komen? 🎓 Verkeerde vraag - ze concurreren niet op dezelfde as.
 
 Een diploma verifieert jarenlange omgang met theorie, maar zegt weinig over of je iets kunt leveren dat werkt onder echte randvoorwaarden. Een bootcamp verifieert gerichte toegepaste vaardigheid over maanden, maar zegt weinig over diepgang.
 

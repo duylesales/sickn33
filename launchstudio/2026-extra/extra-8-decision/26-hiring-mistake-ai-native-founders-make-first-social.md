@@ -3,7 +3,7 @@
 The instinctive "I've outgrown solo, time to hire" move is usually the wrong call at the wrong time. Here's why: 🧠
 
 ❌ The real need is a bounded diagnostic fix, not an ongoing role
-❌ Junior hires often haven't seen AI-code failure patterns before — ever
+❌ Junior hires often haven't seen AI-code failure patterns before - ever
 ❌ Full-time cost compounds: recruiting, onboarding, payroll, management time
 ❌ "Just for now" hires rarely stay scoped to the original problem
 
@@ -14,7 +14,7 @@ The instinctive "I've outgrown solo, time to hire" move is usually the wrong cal
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we solve exactly the bounded problem that triggers most founders' first hiring instinct. 🛡️
 
-His result: three secrets-management gaps closed in one engagement — his hire refocused on the work they were actually suited for. 🚀
+His result: three secrets-management gaps closed in one engagement - his hire refocused on the work they were actually suited for. 🚀
 
 👉 Describe the problem before you post a job listing: https://launchstudio.eu/en/blog/hiring-mistake-ai-native-founders-make-first
 

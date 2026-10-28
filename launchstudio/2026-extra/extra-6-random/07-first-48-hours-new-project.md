@@ -26,27 +26,27 @@ Sven had built MeetGoed to let event organizers collect structured feedback with
 
 ## Hours 0-4: The Read-Only Pass
 
-Nobody touches the codebase in the first four hours. An engineer clones the repo, spins it up locally, and reads — every route, every database call, every environment variable reference — without changing a single line. The goal is a mental map: what does this app actually do, versus what the founder believes it does.
+Nobody touches the codebase in the first four hours. An engineer clones the repo, spins it up locally, and reads - every route, every database call, every environment variable reference - without changing a single line. The goal is a mental map: what does this app actually do, versus what the founder believes it does.
 
-For MeetGoed, this pass turned up the first red flag within about ninety minutes: API keys for the email-sending service were hardcoded directly into a client-side file, visible to anyone who opened the browser's dev tools. Sven had no idea. Cursor had generated a working integration; it had not generated a secure one, and there's no reason it would — the tool was optimizing for "the emails send," not "the emails send safely."
+For MeetGoed, this pass turned up the first red flag within about ninety minutes: API keys for the email-sending service were hardcoded directly into a client-side file, visible to anyone who opened the browser's dev tools. Sven had no idea. Cursor had generated a working integration; it had not generated a secure one, and there's no reason it would - the tool was optimizing for "the emails send," not "the emails send safely."
 
 ## Hours 4-16: Vulnerability Triage
 
 This is where the map from phase one turns into a prioritized list. Not everything found gets treated the same way. Our engineers separate findings into three buckets: fix before anything else touches production, fix before the next feature ships, and fix eventually.
 
-For Sven's project, the "fix before anything else" bucket had three items stacked on top of each other, which is common — issues in AI-generated code rarely show up alone:
+For Sven's project, the "fix before anything else" bucket had three items stacked on top of each other, which is common - issues in AI-generated code rarely show up alone:
 
 - The exposed API keys, already mentioned, which needed to move server-side immediately.
 - No rate limiting on the survey submission endpoint, meaning a single script could flood the database with fake responses or run up his email-sending bill in an afternoon.
-- Missing input validation on several form fields, which meant the backend trusted whatever the frontend sent it — a gap that AI coding tools frequently leave open because validation logic isn't visually obvious in a demo.
+- Missing input validation on several form fields, which meant the backend trusted whatever the frontend sent it - a gap that AI coding tools frequently leave open because validation logic isn't visually obvious in a demo.
 
 None of these would have shown up in a product demo. All three would have shown up the first week MeetGoed had real traffic.
 
 ## Hours 16-36: The Fix Plan and the Founder Conversation
 
-By hour sixteen, there's usually a document, not just a conversation — a written list of what was found, why it matters in plain language, and what the fix involves. This is deliberately not a wall of jargon. Sven got a call where the API key issue was explained as "right now, anyone who opens their browser console can see the password to your email account," which is a sentence a non-technical founder can act on immediately.
+By hour sixteen, there's usually a document, not just a conversation - a written list of what was found, why it matters in plain language, and what the fix involves. This is deliberately not a wall of jargon. Sven got a call where the API key issue was explained as "right now, anyone who opens their browser console can see the password to your email account," which is a sentence a non-technical founder can act on immediately.
 
-This is also the stage where scope gets locked in. Our engineers are backed by Manifera, a software development company with 11+ years of production engineering experience, and that experience mostly shows up here: knowing which fixes are quick and which ones hide complexity underneath. The team working on Sven's review is part of the same Amsterdam-based group that runs LaunchStudio's European operations, and they've seen this exact stacked pattern — exposed keys, no rate limiting, no validation — often enough to know the order matters. Fix validation first and the rate limiter has less garbage traffic to filter.
+This is also the stage where scope gets locked in. Our engineers are backed by Manifera, a software development company with 11+ years of production engineering experience, and that experience mostly shows up here: knowing which fixes are quick and which ones hide complexity underneath. The team working on Sven's review is part of the same Amsterdam-based group that runs LaunchStudio's European operations, and they've seen this exact stacked pattern - exposed keys, no rate limiting, no validation - often enough to know the order matters. Fix validation first and the rate limiter has less garbage traffic to filter.
 
 ## Hours 36-48: What Ships, What Waits
 
@@ -56,19 +56,19 @@ If you want to see how this fits into the fuller engagement, our [process breakd
 
 ## How to Prepare Your Own Codebase Before Handoff
 
-The read-only pass described above works whether or not you prepare anything in advance — that's the point of it. But founders who spend twenty minutes getting a few basics in order before sending their repo over tend to get a faster, more useful first 48 hours, simply because less of that window goes to reconstructing context that could have been handed over directly.
+The read-only pass described above works whether or not you prepare anything in advance - that's the point of it. But founders who spend twenty minutes getting a few basics in order before sending their repo over tend to get a faster, more useful first 48 hours, simply because less of that window goes to reconstructing context that could have been handed over directly.
 
-**Write down what the app is supposed to do, in your own words.** Not a formal spec — a few sentences on what a user can do, what the core workflows are, and what "working correctly" looks like from your perspective. An engineer doing a read-only pass is building a mental map of intended behavior versus actual behavior, and starting from your own description is faster than inferring intent purely from the code.
+**Write down what the app is supposed to do, in your own words.** Not a formal spec - a few sentences on what a user can do, what the core workflows are, and what "working correctly" looks like from your perspective. An engineer doing a read-only pass is building a mental map of intended behavior versus actual behavior, and starting from your own description is faster than inferring intent purely from the code.
 
-**List every third-party service your app talks to.** Payment processor, email service, AI model provider, analytics — anything external the app connects to. This is exactly the kind of thing that can turn up hardcoded where it shouldn't be, and knowing the list in advance lets a reviewer check each connection specifically rather than discovering them one at a time while reading.
+**List every third-party service your app talks to.** Payment processor, email service, AI model provider, analytics - anything external the app connects to. This is exactly the kind of thing that can turn up hardcoded where it shouldn't be, and knowing the list in advance lets a reviewer check each connection specifically rather than discovering them one at a time while reading.
 
 **Note anything you already suspect is fragile.** If there's a feature you've quietly avoided touching because you're not sure how it works, or a flow that broke once before and you're not confident you fully fixed it, say so upfront. Founders often assume admitting uncertainty makes them look bad; in practice, it's the single most useful piece of information you can hand over, because it points a reviewer straight at the highest-risk area instead of making them find it independently.
 
 **Gather your existing user base or traffic numbers, even rough ones.** Whether you have three pilot users or three hundred waitlist signups affects how urgently certain findings need fixing. A rate-limiting gap matters differently depending on whether real traffic is imminent or months away.
 
-**Don't clean up the code first.** It's a common instinct to tidy things up before "showing it to a professional," the same way you'd clean a house before a guest arrives. Resist it. A read-only review is specifically looking for the codebase as it actually exists in production right now — cleaning it up first risks accidentally fixing, or breaking, something before anyone's had a chance to understand what was there originally.
+**Don't clean up the code first.** It's a common instinct to tidy things up before "showing it to a professional," the same way you'd clean a house before a guest arrives. Resist it. A read-only review is specifically looking for the codebase as it actually exists in production right now - cleaning it up first risks accidentally fixing, or breaking, something before anyone's had a chance to understand what was there originally.
 
-None of this preparation takes more than half an hour, and none of it is required — the process works fine without it, as it does for founders who have never personally audited their own generated code. But a founder who arrives with even a rough map of intent, dependencies, and known weak spots gets more out of the same 48 hours than one who arrives with just a repo link and no context at all.
+None of this preparation takes more than half an hour, and none of it is required - the process works fine without it, as it does for founders who have never personally audited their own generated code. But a founder who arrives with even a rough map of intent, dependencies, and known weak spots gets more out of the same 48 hours than one who arrives with just a repo link and no context at all.
 
 ## Real example
 
@@ -78,14 +78,14 @@ Sven Kramer built MeetGoed alone over several weekends, using Cursor to generate
 
 Our engineers' first 48-hour review found the stacked issues described above: hardcoded API keys visible client-side, no rate limiting on submissions, and form fields with no server-side validation. Any one of these alone would have been a manageable fix. Together, they meant MeetGoed was one curious visitor away from a leaked email password, a flooded inbox, or corrupted survey data.
 
-The fix moved the email credentials server-side behind an environment variable, added request throttling on the submission endpoint, and layered validation onto every public-facing form field — all without changing how MeetGoed looked or felt to Sven's pilot users. He kept his frontend exactly as Cursor had built it.
+The fix moved the email credentials server-side behind an environment variable, added request throttling on the submission endpoint, and layered validation onto every public-facing form field - all without changing how MeetGoed looked or felt to Sven's pilot users. He kept his frontend exactly as Cursor had built it.
 
 **Result:** MeetGoed launched its two pilot programs on schedule, with the founder able to tell prospective event clients, honestly, that the data pipeline had been professionally reviewed.
 
 > *"I thought sending the code over meant a rewrite. Instead they told me what was actually broken and fixed just that. I still don't fully understand rate limiting, but I understand why I needed it now."*
-> — **Sven Kramer, Founder, MeetGoed (Breda)**
+> - **Sven Kramer, Founder, MeetGoed (Breda)**
 
-**Cost & Timeline:** €1,200 (security triage and fixes for exposed keys, rate limiting, and input validation) — completed in 6 business days.
+**Cost & Timeline:** €1,200 (security triage and fixes for exposed keys, rate limiting, and input validation) - completed in 6 business days.
 
 ---
 
@@ -93,7 +93,7 @@ The fix moved the email credentials server-side behind an environment variable, 
 
 ### What happens if the founder doesn't know what their own code does?
 
-That's the default, not the exception. The 48-hour review is built for founders who built with Cursor, Lovable, Bolt, or v0 and have never audited a codebase themselves — the read-only pass exists precisely so nobody has to explain their own code before it gets reviewed.
+That's the default, not the exception. The 48-hour review is built for founders who built with Cursor, Lovable, Bolt, or v0 and have never audited a codebase themselves - the read-only pass exists precisely so nobody has to explain their own code before it gets reviewed.
 
 ### Does the first 48 hours involve any changes to the frontend?
 
@@ -101,11 +101,11 @@ No. The review and triage stages are entirely backend, infrastructure, and secur
 
 ### How does LaunchStudio decide what to fix first?
 
-Findings get bucketed into immediate risk, pre-launch priority, and long-term cleanup. Immediate risk items — like the exposed API keys found in Sven's project — get addressed before anything else, regardless of what else is on the roadmap.
+Findings get bucketed into immediate risk, pre-launch priority, and long-term cleanup. Immediate risk items - like the exposed API keys found in Sven's project - get addressed before anything else, regardless of what else is on the roadmap.
 
 ### Is this process different for a Lovable or Bolt project versus a Cursor project?
 
-The tools leave different fingerprints — Bolt projects tend to have different deployment quirks than Cursor projects, for example — but the 48-hour read-first, triage-second structure stays the same across all of them.
+The tools leave different fingerprints - Bolt projects tend to have different deployment quirks than Cursor projects, for example - but the 48-hour read-first, triage-second structure stays the same across all of them.
 
 ### Where is the team doing this review based?
 

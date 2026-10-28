@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Iedereen bouwt het deel waar geld binnenkomt. Bijna niemand bouwt het deel waar een deel ervan weer teruggaat — en dat is het deel waar uw reputatie van wordt gemaakt, want een klant die netjes vertrekt, vertelt mensen dat u eerlijk was, en een klant die de opzegknop niet kan vinden, vertelt het aan meer mensen en een stuk luider.
+Iedereen bouwt het deel waar geld binnenkomt. Bijna niemand bouwt het deel waar een deel ervan weer teruggaat - en dat is het deel waar uw reputatie van wordt gemaakt, want een klant die netjes vertrekt, vertelt mensen dat u eerlijk was, en een klant die de opzegknop niet kan vinden, vertelt het aan meer mensen en een stuk luider.
 
 Er zit in Europa ook een regelgevend randje aan, en een praktisch: een app die niet goed kan opzeggen, genereert voor altijd supportwerk.
 
@@ -30,7 +30,7 @@ Beantwoord vier vragen en de implementatie volgt vanzelf.
 
 **Wanneer eindigt de toegang?** Aan het eind van de betaalde periode, vrijwel altijd. De klant betaalde tot de 30e; neem de toegang op de 30e weg, niet op het moment dat hij klikt. Direct beëindigen bij opzegging voelt als straf en levert terugbetalingsverzoeken op die u anders nooit had gezien.
 
-**Is er een terugbetaling?** Bij een maandabonnement meestal niet — hij houdt de maand waarvoor hij betaalde. Bij een jaarplan dat in maand twee wordt opgezegd, is een pro-rata terugbetaling de redelijke standaard en het waard om in uw voorwaarden te zetten, want het alternatief is er voor altijd per geval over discussiëren.
+**Is er een terugbetaling?** Bij een maandabonnement meestal niet - hij houdt de maand waarvoor hij betaalde. Bij een jaarplan dat in maand twee wordt opgezegd, is een pro-rata terugbetaling de redelijke standaard en het waard om in uw voorwaarden te zetten, want het alternatief is er voor altijd per geval over discussiëren.
 
 **Wat gebeurt er met hun data?** Zeg het expliciet: bewaard voor een vastgelegde periode, exporteerbaar binnen die termijn, daarna verwijderd. Dat is zowel goede praktijk als het antwoord op een vraag die uw privacyverklaring toch al moet beantwoorden.
 
@@ -42,7 +42,7 @@ Maak de opzegknop daarna vindbaar. Hem verstoppen is een tactiek die alleen werk
 
 De fout verschijnt met enige regelmaat in door AI gegenereerde code: opzeggen verwijdert de gebruikersrij, of laat een verwijdering doorlopen over al zijn records.
 
-Dat vernietigt uw boekhoudkundige geschiedenis — u hebt de facturen voor die betalingen nog jaren nodig. Het vernietigt uw mogelijkheid om te heractiveren. En het maakt elke vraag als "kunt u nagaan of er in april is afgeschreven?" onbeantwoordbaar.
+Dat vernietigt uw boekhoudkundige geschiedenis - u hebt de facturen voor die betalingen nog jaren nodig. Het vernietigt uw mogelijkheid om te heractiveren. En het maakt elke vraag als "kunt u nagaan of er in april is afgeschreven?" onbeantwoordbaar.
 
 Opzeggen is een statuswijziging, geen verwijdering. Het account bestaat, gemarkeerd als opgezegd, met beperkte toegang en een lopende bewaartermijn. Verwijderen is een aparte handeling met eigen regels, die de klant kan aanvragen en die u daarna bewust uitvoert.
 
@@ -52,7 +52,7 @@ Een klant op €29 upgradet naar €79 op dag tien van een cyclus van dertig dag
 
 Het gebruikelijke antwoord is het verschil voor de ongebruikte tijd: ruwweg twee derde van €50. Beide grote providers berekenen dit voor u. Het probleem is dat oprichters het gedrag vaak overschrijven zonder het te begrijpen, en vervolgens het afschrift van een klant niet kunnen uitleggen.
 
-Twee regels houden het overzichtelijk. Upgrades gaan direct in en rekenen het pro-rata verschil — de klant vroeg nu om meer product. Downgrades gaan in aan het eind van de huidige periode en rekenen de lagere prijs vanaf de volgende — anders geeft u terugbetalingen bij planwijzigingen en wordt het rekenwerk vreemd als iemand twee keer in een maand wisselt.
+Twee regels houden het overzichtelijk. Upgrades gaan direct in en rekenen het pro-rata verschil - de klant vroeg nu om meer product. Downgrades gaan in aan het eind van de huidige periode en rekenen de lagere prijs vanaf de volgende - anders geeft u terugbetalingen bij planwijzigingen en wordt het rekenwerk vreemd als iemand twee keer in een maand wisselt.
 
 Wat u ook kiest, laat het zien vóór de bevestiging: *U betaalt vandaag €33,50, daarna €79 per maand vanaf 1 november.* Eén zin, en uw supportwerk rond planwijzigingen nadert nul.
 
@@ -60,9 +60,9 @@ Wat u ook kiest, laat het zien vóór de bevestiging: *U betaalt vandaag €33,5
 
 Een terugbetaling is niet klaar wanneer het dashboard van de provider zegt dat er is terugbetaald.
 
-Ze moet **de provider** bereiken, die het geld teruggeeft. Ze moet **uw database** bereiken, die het betaalrecord bijwerkt en eventuele toegang die het gaf — anders blijft een volledig terugbetaalde klant het product gebruiken en blijven uw omzetcijfers onjuist. En ze moet **uw boekhouding** bereiken als creditnota, doorlopend genummerd en met verwijzing naar de oorspronkelijke factuur, anders sluit uw kwartaal niet.
+Ze moet **de provider** bereiken, die het geld teruggeeft. Ze moet **uw database** bereiken, die het betaalrecord bijwerkt en eventuele toegang die het gaf - anders blijft een volledig terugbetaalde klant het product gebruiken en blijven uw omzetcijfers onjuist. En ze moet **uw boekhouding** bereiken als creditnota, doorlopend genummerd en met verwijzing naar de oorspronkelijke factuur, anders sluit uw kwartaal niet.
 
-Terugbetalingen die met de hand in een dashboard worden gedaan, voltooien betrouwbaar alleen de eerste van de drie. Daarom is terugbetalen vanuit uw eigen applicatie — een kleine beheeractie die alle drie de stappen samen uitvoert — de middag waard die het kost om te bouwen, lang voordat u denkt een beheerpaneel nodig te hebben.
+Terugbetalingen die met de hand in een dashboard worden gedaan, voltooien betrouwbaar alleen de eerste van de drie. Daarom is terugbetalen vanuit uw eigen applicatie - een kleine beheeractie die alle drie de stappen samen uitvoert - de middag waard die het kost om te bouwen, lang voordat u denkt een beheerpaneel nodig te hebben.
 
 Gedeeltelijke terugbetalingen verdienen één extra gedachte: bepaal of ze het recht op toegang veranderen. De helft van een jaarplan terugbetalen moet de resterende toegang meestal niet halveren; het moet het abonnement óf op een datum beëindigen, óf ongemoeid laten. Kies, schrijf het op, implementeer het één keer.
 
@@ -76,7 +76,7 @@ De meeste chargebacks tegen kleine abonnementsproducten zijn geen fraude. Het zi
 
 ## De Beheeracties Die U op Dag Eén Wilt Hebben
 
-De meeste supportverzoeken over facturatie zijn dezelfde handvol handelingen, en elke handeling die met de hand in een providerdashboard wordt uitgevoerd, is een kans om uw eigen database uit de pas te laten lopen. Een kleine interne pagina — alleen voor u zichtbaar, zonder noemenswaardig ontwerp — betaalt zichzelf binnen weken terug.
+De meeste supportverzoeken over facturatie zijn dezelfde handvol handelingen, en elke handeling die met de hand in een providerdashboard wordt uitgevoerd, is een kans om uw eigen database uit de pas te laten lopen. Een kleine interne pagina - alleen voor u zichtbaar, zonder noemenswaardig ontwerp - betaalt zichzelf binnen weken terug.
 
 De set die u als eerste bouwt: **een terugbetaling doen** (volledig of gedeeltelijk, wat de provider, het betaalrecord, het recht op toegang en de creditnota samen bijwerkt); **een abonnement opzeggen** namens de klant, omdat sommige mensen altijd zullen mailen in plaats van klikken; **verlengen of crediteren**, voor het gebaar van goede wil dat een ontevreden klant behoudt; **een plan handmatig wijzigen**, voor de afspraken die u maakt en die uw prijspagina niet kent; en **de factuurgeschiedenis van een klant opzoeken**, zodat het beantwoorden van "is er in april afgeschreven?" seconden kost.
 
@@ -84,15 +84,15 @@ Voeg aan elk één ding toe: een notitieveld waarin staat wie het deed en waarom
 
 Wat hier niet thuishoort, is het direct bewerken van bedragen op uitgegeven facturen, of een verwijderknop. Elke wijziging hoort een handeling te zijn met een vastgelegde reden, geen veld dat u kunt overschrijven. Een beheerpaneel dat stilletjes financiële geschiedenis kan herschrijven is erger dan geen beheerpaneel, omdat de wijzigingen geen spoor achterlaten en het gemak garandeert dat ze zullen gebeuren.
 
-Toegang telt ook. Deze pagina voert onomkeerbare financiële handelingen uit, dus hoort ze achter een aparte rechtencontrole in plaats van een `is_admin`-vlag die elke accountrij kan dragen — en ze moet elk gebruik loggen, ook dat van uzelf.
+Toegang telt ook. Deze pagina voert onomkeerbare financiële handelingen uit, dus hoort ze achter een aparte rechtencontrole in plaats van een `is_admin`-vlag die elke accountrij kan dragen - en ze moet elk gebruik loggen, ook dat van uzelf.
 
 ## Schrijf de Regels Op Voordat U Ze Nodig Hebt
 
 Elke beslissing over een terugbetaling of opzegging die in het moment wordt genomen, onder druk, naar aanleiding van een e-mail waardoor u zich schuldig voelt, wordt een informeel beleid dat u zich niet herinnert en niet consequent kunt toepassen.
 
-Schrijf een pagina — intern, een half A4'tje — over de gevallen die werkelijk voorkomen. Jaarplan vroegtijdig opgezegd: pro-rata terugbetaling van volledige ongebruikte maanden. Maandplan opgezegd: geen terugbetaling, toegang tot het eind van de periode. Klant die vergat op te zeggen en gisteren werd afgeschreven: volledige terugbetaling, geen discussie, het kost minder dan de klacht. Klant die het vier maanden vergat: één maand terugbetaald als gebaar. Downgrade halverwege de cyclus: aan het eind van de periode. Storing aan uw kant: de getroffen periode terugbetalen zonder dat erom wordt gevraagd.
+Schrijf een pagina - intern, een half A4'tje - over de gevallen die werkelijk voorkomen. Jaarplan vroegtijdig opgezegd: pro-rata terugbetaling van volledige ongebruikte maanden. Maandplan opgezegd: geen terugbetaling, toegang tot het eind van de periode. Klant die vergat op te zeggen en gisteren werd afgeschreven: volledige terugbetaling, geen discussie, het kost minder dan de klacht. Klant die het vier maanden vergat: één maand terugbetaald als gebaar. Downgrade halverwege de cyclus: aan het eind van de periode. Storing aan uw kant: de getroffen periode terugbetalen zonder dat erom wordt gevraagd.
 
-Twee voordelen, en het tweede is het voordeel dat oprichters onderschatten. Consistentie, uiteraard — dezelfde situatie krijgt hetzelfde antwoord, ongeacht hoe de e-mail was geschreven. Maar ook snelheid: een beslissing die al is genomen, is een beslissing waar u geen avond over piekert, en factuurcorrespondentie is bij uitstek goed in het opslokken van aandacht die bij het product hoort.
+Twee voordelen, en het tweede is het voordeel dat oprichters onderschatten. Consistentie, uiteraard - dezelfde situatie krijgt hetzelfde antwoord, ongeacht hoe de e-mail was geschreven. Maar ook snelheid: een beslissing die al is genomen, is een beslissing waar u geen avond over piekert, en factuurcorrespondentie is bij uitstek goed in het opslokken van aandacht die bij het product hoort.
 
 Publiceer de delen die klanten raken in uw voorwaarden, houd de rest intern, en herzie de pagina wanneer er een geval binnenkomt dat ze niet dekt.
 
@@ -100,7 +100,7 @@ Publiceer de delen die klanten raken in uw voorwaarden, houd de rest intern, en 
 
 Voor een product dat al klanten factureert, kost dit twee tot drie dagen: zelfstandig opzeggen dat de toegang aan het eind van de periode beëindigt, met een genoemde bewaar- en exporttermijn, heractiveren dat werkt, pro-rata verrekening ingesteld met upgrade-nu en downgrade-later en het bedrag getoond vóór bevestiging, terugbetalingen vanuit uw eigen beheer zodat provider, database en creditnota samen bewegen, de werking van gedeeltelijke terugbetalingen bepaald en geïmplementeerd, betaalbewijzen bij elke afschrijving inclusief verlengingen, een herkenbare omschrijving op het afschrift, en voldoende vastgelegd bewijs om een chargeback te betwisten.
 
-LaunchStudio bouwt de volledige facturatiecyclus in plaats van alleen de checkout, binnen het Launch & Grow-pakket met managed hosting voor €49 per maand. De engineers zijn van Manifera — elf jaar, 160+ projecten, klantcontact vanaf de Herengracht 420 in Amsterdam en oplevering vanuit Ho Chi Minh-stad.
+LaunchStudio bouwt de volledige facturatiecyclus in plaats van alleen de checkout, binnen het Launch & Grow-pakket met managed hosting voor €49 per maand. De engineers zijn van Manifera - elf jaar, 160+ projecten, klantcontact vanaf de Herengracht 420 in Amsterdam en oplevering vanuit Ho Chi Minh-stad.
 
 [Vertel ons wat er in uw app gebeurt als iemand opzegt](https://launchstudio.eu/nl/#contact).
 
@@ -119,9 +119,9 @@ Vier werkdagen: zelfstandig opzeggen dat de toegang aan het eind van de periode 
 **Resultaat:** de opzegmails aan Sander hielden volledig op, de boekhouding sloot voor het eerst aan het eind van het jaar zonder correcties, en van de drie chargebacks in het jaar daarna werden er twee met het vastgelegde bewijs succesvol betwist.
 
 > *"De dubbele terugbetaling was het moment waarop ik het probleem begreep. Niets in mijn app wist dat er een terugbetaling had plaatsgevonden, dus niets kon me tegenhouden het twee keer te doen."*
-> — **Sander Kroese, Oprichter, Clubkas (Tilburg)**
+> - **Sander Kroese, Oprichter, Clubkas (Tilburg)**
 
-**Kosten & Doorlooptijd:** €2.600 (zelfstandig opzeggen met bewaartermijn en heractivering, gecombineerde terugbetalingsactie met creditnota's, pro-rata verrekening, betaalbewijzen, aangepaste afschriftomschrijving, vastlegging van bewijs voor geschillen) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €2.600 (zelfstandig opzeggen met bewaartermijn en heractivering, gecombineerde terugbetalingsactie met creditnota's, pro-rata verrekening, betaalbewijzen, aangepaste afschriftomschrijving, vastlegging van bewijs voor geschillen) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 

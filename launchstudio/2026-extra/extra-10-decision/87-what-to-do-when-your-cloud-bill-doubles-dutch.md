@@ -54,7 +54,7 @@ Vergelijk dit vervolgens met de enige metriek die er écht toe doet: **de infras
 Bij applicaties die snel zijn gebouwd met behulp van AI-assistenten (zoals Cursor, Lovable of Bolt) concentreren de onnodige kosten zich steevast op dezelfde plekken:
 
 ### 1. Database Compute door Ontbrekende Indexen (Met Stip op #1)
-Een query zonder database-index die een *Full Table Scan* uitvoert op 1.000 rijen duurt 2 milliseconden — volstrekt onmerkbaar op uw laptop. 
+Een query zonder database-index die een *Full Table Scan* uitvoert op 1.000 rijen duurt 2 milliseconden - volstrekt onmerkbaar op uw laptop. 
 Zodra een tabel groeit naar 500.000 rijen, duurt diezelfde query plotseling 8 seconden en trekt hij de processor van uw cloud-database 100% vol. Managed databases (zoals AWS RDS of Supabase Compute) schalen hun capaciteit automatisch op om niet te crashen, waardoor de maandfactuur explodeert.
 
 ### 2. Egress Kosten (Uitgaand Netwerkverkeer)
@@ -91,7 +91,7 @@ Elke feature die een betaalde externe API aanroept (zoals tokens van OpenAI/Anth
 
 Vertrouw niet uitsluitend op waarschuwingse-mails van cloudproviders: die arriveren vaak pas uren nadat een doorgedraaide loop al duizend euro aan API-tegoed heeft verbrand.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in infrastructurele optimalisatie) voeren we grondige kosten- en database-audits uit tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw infrastructuurkosten met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw applicatie razendsnel schaalt tegen minimale kosten.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in infrastructurele optimalisatie) voeren we grondige kosten- en database-audits uit tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw infrastructuurkosten met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw applicatie razendsnel schaalt tegen minimale kosten.
 
 ## Echt voorbeeld
 
@@ -110,10 +110,10 @@ Het overzichtsdashboard van Inzichtbord voerde bij elk bezoek een zware aggregat
 
 Daarnaast bleek er al acht maanden een vergeten staging-omgeving op zware productiehardware mee te draaien, en groeiden ongecomprimeerde logbestanden met 12GB per maand.
 
-**Resultaat:** Binnen drie werkdagen voerde LaunchStudio gerichte optimalisaties door: er werden drie samengestelde database-indexen toegevoegd en de zware dashboardstatistieken werden omgezet naar een periodiek geaggregeerde tabel (de laadtijd daalde van 11 seconden naar **onder de 400 milliseconden**!). De staging-omgeving werd teruggeschaald en 's nachts automatisch gepauzeerd, en logbestanden kregen een strikte retentietermijn van 30 dagen. De maandfactuur daalde direct naar **€185** — lager dan het oorspronkelijke bedrag, terwijl Inzichtbord nu méér data en klanten verwerkte dan ooit tevoren.
+**Resultaat:** Binnen drie werkdagen voerde LaunchStudio gerichte optimalisaties door: er werden drie samengestelde database-indexen toegevoegd en de zware dashboardstatistieken werden omgezet naar een periodiek geaggregeerde tabel (de laadtijd daalde van 11 seconden naar **onder de 400 milliseconden**!). De staging-omgeving werd teruggeschaald en 's nachts automatisch gepauzeerd, en logbestanden kregen een strikte retentietermijn van 30 dagen. De maandfactuur daalde direct naar **€185** - lager dan het oorspronkelijke bedrag, terwijl Inzichtbord nu méér data en klanten verwerkte dan ooit tevoren.
 
 > *"Ik was er heilig van overtuigd dat mijn software niet schaalde en dat mijn abonnementsprijzen niet klopten. Het bleek één ongeïndexeerde query te zijn voor één grote klant."*
-> — **Marek Novotny, Oprichter, Inzichtbord**
+> - **Marek Novotny, Oprichter, Inzichtbord**
 
 **Kosten & Doorlooptijd:** Database-query optimalisatie, staging-reductie en kostenrevisie opgeleverd in 3 werkdagen.
 

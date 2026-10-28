@@ -40,7 +40,7 @@ Two years ago, companies hired people who could build a demo with a language mod
 
 ## Why LLM Evaluation Skills Are Scarce
 
-Classical machine learning came with an evaluation culture: you had labels, a test set and a metric. Language model applications broke that comfort. Outputs are free text, there is rarely one correct answer, quality has several dimensions at once, and the same prompt can produce different results. Many teams responded by relying on impressions — "it seems better" — which is why so many projects stall between prototype and production.
+Classical machine learning came with an evaluation culture: you had labels, a test set and a metric. Language model applications broke that comfort. Outputs are free text, there is rarely one correct answer, quality has several dimensions at once, and the same prompt can produce different results. Many teams responded by relying on impressions - "it seems better" - which is why so many projects stall between prototype and production.
 
 Engineers who can replace impressions with measurement are therefore unusually valuable. The skill is not exotic: it is careful thinking about what "good" means for a specific task, plus the discipline to build a dataset and a repeatable process before optimising anything.
 
@@ -49,7 +49,7 @@ Engineers who can replace impressions with measurement are therefore unusually v
 Before choosing any metric, answer three questions:
 
 1. **What does the system do, and who acts on its output?** A support assistant that drafts replies for a human agent needs different guarantees from one that answers customers directly.
-2. **What failure would be unacceptable?** Wrong prices, invented policy terms, leaked personal data, advice with legal consequences — these determine what you must measure.
+2. **What failure would be unacceptable?** Wrong prices, invented policy terms, leaked personal data, advice with legal consequences - these determine what you must measure.
 3. **What is the baseline?** The current process: a keyword search, a template, a human. If you cannot beat it, the project should stop.
 
 Most evaluation failures happen here rather than in metric selection. Teams measure fluency when what matters is factual grounding, or accuracy when what matters is whether the agent could do their job faster.
@@ -60,7 +60,7 @@ A usable evaluation set does not need to be large. A hundred well-chosen example
 
 - **Collect real inputs.** Use actual user questions, tickets or documents, anonymised. Invented examples systematically miss the messiness that breaks systems.
 - **Cover categories deliberately.** Common cases, rare but important cases, ambiguous cases, out-of-scope requests, and adversarial or manipulative inputs.
-- **Write reference answers where possible**, or at least the criteria a correct answer must satisfy — which facts it must contain, which it must not invent.
+- **Write reference answers where possible**, or at least the criteria a correct answer must satisfy - which facts it must contain, which it must not invent.
 - **Freeze a held-out slice.** Keep some examples away from prompt iteration, or you will tune to your own test.
 - **Version it.** Evaluation sets evolve; results are only comparable if you know which version produced them.
 
@@ -78,11 +78,11 @@ For retrieval-augmented systems, evaluate the parts separately before the whole:
 - **Format and policy compliance**: required structure, tone, disclaimers, language.
 - **Latency and cost**: quality is meaningless without the operational envelope.
 
-For classification or extraction tasks with language models, classical metrics still apply, and you should compare against a small supervised model — which frequently wins on cost and stability.
+For classification or extraction tasks with language models, classical metrics still apply, and you should compare against a small supervised model - which frequently wins on cost and stability.
 
 ## Human and Model-Based Judging
 
-Human evaluation remains the reference standard. Keep it structured: clear criteria, a short rubric, several raters on a sample, and a measure of agreement between them. Disagreement between raters is information — it usually means your criteria are underspecified.
+Human evaluation remains the reference standard. Keep it structured: clear criteria, a short rubric, several raters on a sample, and a measure of agreement between them. Disagreement between raters is information - it usually means your criteria are underspecified.
 
 Model-based judging, where a language model scores outputs, is now common because it scales. Used carefully it is useful; used carelessly it produces confident nonsense. Practical safeguards: calibrate the judge against human labels on a sample; use explicit rubrics rather than "rate from one to ten"; beware of position and verbosity bias; never let the same model judge its own output without checks; and re-validate whenever you change models or prompts.
 
@@ -107,17 +107,17 @@ Proxy signals are noisy individually but powerful together. A rising refusal rat
 
 ## Evaluation for Agentic Systems
 
-Systems that take actions — calling tools, writing to databases, sending messages — need evaluation beyond text quality. Measure task completion on realistic scenarios, the number of steps taken, tool-call correctness, recovery from errors and the rate of harmful or irreversible actions. Test explicitly for loops and for cases where the correct behaviour is to stop and ask a human.
+Systems that take actions - calling tools, writing to databases, sending messages - need evaluation beyond text quality. Measure task completion on realistic scenarios, the number of steps taken, tool-call correctness, recovery from errors and the rate of harmful or irreversible actions. Test explicitly for loops and for cases where the correct behaviour is to stop and ask a human.
 
 Because agents compound errors, small per-step failure rates become large end-to-end failures. Evaluating each step separately, then the whole trajectory, is the only way to know where a system breaks.
 
 ## Regulation and Documented Evaluation
 
-For many applications, evaluation is not only good practice but an expectation. The EU AI Act sets requirements for high-risk AI systems covering accuracy, robustness, risk management, logging and human oversight, and transparency obligations apply to certain AI-generated content. Providers of general-purpose AI models have their own obligations. In regulated sectors — finance, insurance, healthcare, HR, public services — internal audit and supervisors increasingly ask how a system was tested and what evidence exists.
+For many applications, evaluation is not only good practice but an expectation. The EU AI Act sets requirements for high-risk AI systems covering accuracy, robustness, risk management, logging and human oversight, and transparency obligations apply to certain AI-generated content. Providers of general-purpose AI models have their own obligations. In regulated sectors - finance, insurance, healthcare, HR, public services - internal audit and supervisors increasingly ask how a system was tested and what evidence exists.
 
 GDPR matters too: if your evaluation logs contain personal data, you need a lawful basis, retention limits and access controls, and human review of real conversations must be handled carefully.
 
-The practical consequence for engineers is that evaluation artefacts — datasets, rubrics, results, decisions — should be stored and versioned, not kept in a notebook on someone's laptop. Teams that treat evaluation as documentation rather than as a private experiment find compliance work far less painful, and candidates who understand this are in demand for exactly that reason.
+The practical consequence for engineers is that evaluation artefacts - datasets, rubrics, results, decisions - should be stored and versioned, not kept in a notebook on someone's laptop. Teams that treat evaluation as documentation rather than as a private experiment find compliance work far less painful, and candidates who understand this are in demand for exactly that reason.
 
 ## Building the Habit Without a Big Project
 
@@ -147,7 +147,7 @@ Then give a real example from your own work, including something the evaluation 
 - Are humans involved in reviewing outputs, and whose time is that?
 - What happened the last time quality regressed in production?
 
-The answers tell you whether you would be joining a team that measures or one that hopes — and that distinction predicts your daily experience more reliably than the technology stack.
+The answers tell you whether you would be joining a team that measures or one that hopes - and that distinction predicts your daily experience more reliably than the technology stack.
 
 ## How OnlyAIJobs Fits an AI Engineering Search
 
@@ -159,13 +159,13 @@ To be transparent about scope: listings are currently concentrated in the Nether
 
 ## A Final Word
 
-Evaluation is not glamorous. It rarely appears in conference talks, and it produces no impressive demonstrations. But it is the difference between an organisation that experiments with language models indefinitely and one that puts them into daily use with confidence. Engineers who can build that confidence — honestly, repeatedly and with documentation others can inspect — will stay employable regardless of which model is currently in fashion.
+Evaluation is not glamorous. It rarely appears in conference talks, and it produces no impressive demonstrations. But it is the difference between an organisation that experiments with language models indefinitely and one that puts them into daily use with confidence. Engineers who can build that confidence - honestly, repeatedly and with documentation others can inspect - will stay employable regardless of which model is currently in fashion.
 
 ## Who Owns Evaluation in a Team
 
 In mature teams, evaluation is not one person's hobby. Ownership usually splits three ways: domain experts define what a correct answer is, engineers build the harness and automation, and product or quality roles decide the thresholds for release. Problems appear when engineers are left to define correctness alone, because they end up guessing at domain rules, or when domain experts are asked to review outputs without a structured rubric, which produces inconsistent judgements.
 
-If you join a team without this structure, proposing it is one of the highest-impact things a new engineer can do in the first months. It requires no budget, takes days rather than quarters, and it converts arguments about whether the system is good into evidence — which is usually what the team has been missing.
+If you join a team without this structure, proposing it is one of the highest-impact things a new engineer can do in the first months. It requires no budget, takes days rather than quarters, and it converts arguments about whether the system is good into evidence - which is usually what the team has been missing.
 
 ## Real example
 
@@ -177,7 +177,7 @@ One engineer proposed spending two weeks on evaluation first. She collected 120 
 
 The results were sobering: retrieval found the right clause 71 percent of the time, and when it did not, the model produced fluent, wrong answers rather than declining. The team changed the chunking strategy, added a clause-level index and introduced an explicit "insufficient information" path. Retrieval reached 92 percent, and unsupported answers became rare.
 
-The assistant launched two months later than planned. It is still in use, and the evaluation harness now runs on every change — which is what allowed the team to switch to a cheaper model six months later without anyone noticing a quality change.
+The assistant launched two months later than planned. It is still in use, and the evaluation harness now runs on every change - which is what allowed the team to switch to a cheaper model six months later without anyone noticing a quality change.
 
 ## Key Takeaways
 

@@ -18,11 +18,11 @@ Een externe auditor (van gerenommeerde auditkantoren zoals A-LIGN, Prescient Ass
 
 In traditionele SaaS bent u zelf eigenaar van de database (gehost op AWS of Azure). In AI SaaS opereert u echter als tussenpersoon tussen uw klant en het onderliggende Large Language Model (OpenAI, Anthropic, Google). Dit maakt de modelprovider formeel een **Sub-Verwerker (Subprocessor)**, en uw SOC 2 rapport moet elke externe provider expliciet vermelden in uw systeembeschrijving.
 
-Tijdens een SOC 2 audit zal de auditor uw contractuele relatie met deze sub-verwerkers minutieus onderzoeken. Maakt u gebruik van een standaard consumenten-API-sleutel, dan zakt u direct voor de audit. Consumenten-API's bewaren data immers vaak 30 dagen voor misbruikdetectie en mogen die data gebruiken voor modeltraining. Om te slagen, moet u gebruikmaken van zakelijke "Enterprise" API-overeenkomsten met een **Zero Data Retention (ZDR)** addendum — inclusief ondertekende Data Processing Addendums (DPA's) die juridisch garanderen dat de LLM-aanbieder uw prompts direct na generatie verwijdert. Verwerkt u medische gegevens, dan is een Business Associate Agreement (BAA) vereist, en voor Europese dataopslag zijn Standard Contractual Clauses (SCC's) en AVG-naleving verplicht. De auditor vraagt om de getekende contracten, niet om een mondelinge toezegging.
+Tijdens een SOC 2 audit zal de auditor uw contractuele relatie met deze sub-verwerkers minutieus onderzoeken. Maakt u gebruik van een standaard consumenten-API-sleutel, dan zakt u direct voor de audit. Consumenten-API's bewaren data immers vaak 30 dagen voor misbruikdetectie en mogen die data gebruiken voor modeltraining. Om te slagen, moet u gebruikmaken van zakelijke "Enterprise" API-overeenkomsten met een **Zero Data Retention (ZDR)** addendum - inclusief ondertekende Data Processing Addendums (DPA's) die juridisch garanderen dat de LLM-aanbieder uw prompts direct na generatie verwijdert. Verwerkt u medische gegevens, dan is een Business Associate Agreement (BAA) vereist, en voor Europese dataopslag zijn Standard Contractual Clauses (SCC's) en AVG-naleving verplicht. De auditor vraagt om de getekende contracten, niet om een mondelinge toezegging.
 
 ## De Vector Database Waterdicht Beveiligen (Vector DB Security)
 
-Maakt u gebruik van Retrieval-Augmented Generation (RAG), dan vormt uw Vector Database een kritiek beveiligingsrisico. Hoewel tekst wordt omgezet in wiskundige getallenreeksen (embeddings), toont academisch onderzoek naar embedding-inversie herhaaldelijk aan dat een aanvaller substantiële delen van de originele tekst kan reconstrueren uit de vectoren alleen — de stelling dat *"het slechts getallen zijn"* wordt door auditors resoluut afgewezen.
+Maakt u gebruik van Retrieval-Augmented Generation (RAG), dan vormt uw Vector Database een kritiek beveiligingsrisico. Hoewel tekst wordt omgezet in wiskundige getallenreeksen (embeddings), toont academisch onderzoek naar embedding-inversie herhaaldelijk aan dat een aanvaller substantiële delen van de originele tekst kan reconstrueren uit de vectoren alleen - de stelling dat *"het slechts getallen zijn"* wordt door auditors resoluut afgewezen.
 
 Om te slagen voor SOC 2 moet u vier harde garanties aantonen:
 
@@ -35,7 +35,7 @@ Om te slagen voor SOC 2 moet u vier harde garanties aantonen:
 
 SOC 2 vereist absolute traceerbaarheid en verantwoording. Als een AI-agent een foutief advies genereert of een destructieve database-mutatie uitvoert, moet u exact kunnen aantonen welke prompt, context en parameters daaraan ten grondslag lagen.
 
-U moet een alomvattende activiteitenlogging inrichten. Elke prompt, elke tool-executie en elke gebruikersinteractie moet worden gelogd met een ISO-tijdstempel en een specifiek `userId`. Cruciaal is dat deze logs **Onveranderlijk (Immutable / Append-Only)** moeten zijn — opgeslagen in AWS CloudTrail met S3 Object Lock (WORM-opslag) of een beveiligde SIEM zoals Datadog of Splunk — zodat zelfs een database-beheerder met root-rechten historische logs nooit kan manipuleren of wissen om fouten te verhullen. Auditors zullen dit tijdens de audit expliciet testen en eisen doorgaans een bewaartermijn van minimaal 12 maanden.
+U moet een alomvattende activiteitenlogging inrichten. Elke prompt, elke tool-executie en elke gebruikersinteractie moet worden gelogd met een ISO-tijdstempel en een specifiek `userId`. Cruciaal is dat deze logs **Onveranderlijk (Immutable / Append-Only)** moeten zijn - opgeslagen in AWS CloudTrail met S3 Object Lock (WORM-opslag) of een beveiligde SIEM zoals Datadog of Splunk - zodat zelfs een database-beheerder met root-rechten historische logs nooit kan manipuleren of wissen om fouten te verhullen. Auditors zullen dit tijdens de audit expliciet testen en eisen doorgaans een bewaartermijn van minimaal 12 maanden.
 
 ## De Menselijke Factor: Strikt Toegangsbeheer (Least Privilege & RBAC)
 
@@ -43,7 +43,7 @@ SOC 2 gaat niet alleen over softwarecode; het toetst vooral interne menselijke p
 
 Als elke junior ontwikkelaar binnen uw startup over het productiewachtwoord beschikt op een geel briefje, faalt u gegarandeerd. U moet het **Principe van Minimale Toegangsrechten (Principle of Least Privilege)** rigoureus implementeren. Ontwikkelaars hebben uitsluitend toegang tot staging-omgevingen. Toegang tot de productie-infrastructuur moet beveiligd zijn met Multi-Factor Authenticatie (MFA), tijdelijke IAM-rollen en strikte goedkeuringsworkflows. De auditor zal bewijs verlangen dat bij het vertrek van een medewerker alle accounts en API-toegangen binnen 24 uur definitief worden ingetrokken, en zal steekproefsgewijs ontslagen medewerkers controleren op exacte tijdstempels.
 
-Manifera — het moederbedrijf achter LaunchStudio — bouwt deze enterprise-grade, controleerbare infrastructuren al sinds de oprichting in **2014**, met vaste engineeringteams in **Amsterdam** (Herengracht 420), **Singapore** (100 Tras Street) en **Ho Chi Minhstad, Vietnam**. Die elf jaar aan praktijkervaring voor enterprise-klanten zoals Vodafone en TNO is exact waarom oprichters hun compliance-vraagstukken toevertrouwen aan LaunchStudio. Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk meer op de [Manifera over ons pagina](https://www.manifera.com/about-us/).
+Manifera - het moederbedrijf achter LaunchStudio - bouwt deze enterprise-grade, controleerbare infrastructuren al sinds de oprichting in **2014**, met vaste engineeringteams in **Amsterdam** (Herengracht 420), **Singapore** (100 Tras Street) en **Ho Chi Minhstad, Vietnam**. Die elf jaar aan praktijkervaring voor enterprise-klanten zoals Vodafone en TNO is exact waarom oprichters hun compliance-vraagstukken toevertrouwen aan LaunchStudio. Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk meer op de [Manifera over ons pagina](https://www.manifera.com/about-us/).
 
 ## Belangrijkste Inzichten
 
@@ -69,7 +69,7 @@ Hij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in om AWS KMS 
 
 **Resultaat:** De startup slaagde glansrijk voor de SOC 2 compliance-audit en tekende binnen een maand contracten met 3 grote regionale ziekenhuizen.
 
-**Kosten & Tijdlijn:** €4.800 (Security & SOC 2 Hardening Pakket) — productieklaar en binnen 12 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €4.800 (Security & SOC 2 Hardening Pakket) - productieklaar en binnen 12 werkdagen live opgeleverd.
 
 ---
 

@@ -92,12 +92,12 @@ Het Manifera-team constateerde dat de AI-prompts en de interface uitstekend ware
 
 Binnen 11 werkdagen bouwde LaunchStudio de vereiste backend: Supabase-authenticatie gekoppeld aan strikte RLS-policies per organisatie, een Node.js-backend voor Stripe-webhooks en een quota-systeem voor een Basic-pakket (100 analyses/mnd) en een Pro-pakket (onbeperkt).
 
-**Resultaat:** EEAT-Checker lanceerde opnieuw als een volwaardige B2B SaaS. Binnen 6 maanden sloten 140 bureaus een abonnement af, wat resulteerde in €8.400 maandelijks terugkerende omzet — meer nettowinst dan de traditionele adviesdiensten van het bureau opleverden.
+**Resultaat:** EEAT-Checker lanceerde opnieuw als een volwaardige B2B SaaS. Binnen 6 maanden sloten 140 bureaus een abonnement af, wat resulteerde in €8.400 maandelijks terugkerende omzet - meer nettowinst dan de traditionele adviesdiensten van het bureau opleverden.
 
 > *"Ik ben een marketeer. Ik weet exact wat andere bureaus nodig hebben. Maar van backend-beveiliging en facturatieservers wist ik niets. LaunchStudio pakte mijn interne script op en toverde het om tot een volwaardig softwarebedrijf."*
-> — **Joris van der Meer, Oprichter, EEAT-Checker (Utrecht)**
+> - **Joris van der Meer, Oprichter, EEAT-Checker (Utrecht)**
 
-**Kosten & Doorlooptijd:** €4.200 (Launch & Grow Pakket) — productie-klaar en live binnen 11 werkdagen.
+**Kosten & Doorlooptijd:** €4.200 (Launch & Grow Pakket) - productie-klaar en live binnen 11 werkdagen.
 
 ---
 

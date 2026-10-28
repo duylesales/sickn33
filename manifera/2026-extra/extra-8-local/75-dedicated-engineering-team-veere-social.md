@@ -2,7 +2,7 @@ Sales team quietly warning hotel partners to expect "some slowness" in July isn'
 
 **The Pain Points:**
 ❌ **Normalized Degradation:** Three summers running, peak-week uptime quietly slips and nobody treats it as fixable.
-❌ **Blind Monitoring:** A major resort partner's booking conversion dropped 18% for three days — and noticed before the platform's own monitoring flagged it.
+❌ **Blind Monitoring:** A major resort partner's booking conversion dropped 18% for three days - and noticed before the platform's own monitoring flagged it.
 ❌ **No Root-Cause Discipline:** The same database contention issue recurs season after season with no institutional memory.
 
 **The Manifera Solution:**

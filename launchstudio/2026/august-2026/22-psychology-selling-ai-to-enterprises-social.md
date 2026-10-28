@@ -1,4 +1,4 @@
-🔥 Violet built a prototype using **Lovable** — violet, a healthcare consultant, used **lovable** to build a clinic audit tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Violet built a prototype using **Lovable** - violet, a healthcare consultant, used **lovable** to build a clinic audit tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Violet's application achieved silky-smooth performance: Passed the hospital's security review and signed a €35,000 enterprise contract. (€4,200 (Enterprise Security Package) — production-ready and deployed in 10 business days.). 🚀
+Violet's application achieved silky-smooth performance: Passed the hospital's security review and signed a €35,000 enterprise contract. (€4,200 (Enterprise Security Package) - production-ready and deployed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/psychology-selling-ai-to-enterprises
 

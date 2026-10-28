@@ -22,7 +22,7 @@ Doelgroep: SaaS Scale-Up
 
 Het verkooptraject verloopt soepel. De demo maakte indruk, over de prijs is overeenstemming bereikt, en uw interne contactpersoon wil dolgraag aan de slag. Dan verschijnt er een e-mail in uw inbox van iemand die u nog nooit heeft gesproken: een inkoop- of compliance-officer met een bijgevoegde Excel-spreadsheet met veertig gedetailleerde vragen en de mededeling dat deze eerst goedgekeurd moet worden voordat het contract getekend kan worden.
 
-Dit is het moment waarop veelbelovende deals geruisloos stranden — niet omdat de technische architectuur waardeloos is, maar omdat de oprichter drie weken aarzelt met reageren, vage antwoorden geeft, of in paniek claims maakt die bij verificatie niet waar blijken te zijn.
+Dit is het moment waarop veelbelovende deals geruisloos stranden - niet omdat de technische architectuur waardeloos is, maar omdat de oprichter drie weken aarzelt met reageren, vage antwoorden geeft, of in paniek claims maakt die bij verificatie niet waar blijken te zijn.
 
 Een security questionnaire is geen doodvonnis voor een startup. Het is geen examen waarvoor u uitsluitend slaagt als u een complete compliance-afdeling op de loonlijst heeft staan; het is een toets waarvoor u slaagt door exact te weten hoe uw eigen product technisch in elkaar zit en dat in heldere, eerlijke taal op te schrijven.
 
@@ -50,11 +50,11 @@ Bereid deze tien onderwerpen grondig voor en u dekt 90% van elke vragenlijst af:
 
 **Hoe zijn verschillende klanten van elkaar gescheiden?** Het multi-tenancy antwoord: een `tenant_id` op elk record, onverbiddelijk afgedwongen in de database via Row Level Security (RLS) in plaats van te vertrouwen op programmeursdiscipline in de frontend, geverifieerd via penetratietesten vanuit een extern account.
 
-**Is data versleuteld tijdens verzending en in rust (in transit en at rest)?** Bij moderne managed platforms (zoals Supabase en AWS) is het antwoord op beide ja — verifieer het in plaats van het aan te nemen, en specificeer de standaarden (zoals TLS 1.3 en AES-256).
+**Is data versleuteld tijdens verzending en in rust (in transit en at rest)?** Bij moderne managed platforms (zoals Supabase en AWS) is het antwoord op beide ja - verifieer het in plaats van het aan te nemen, en specificeer de standaarden (zoals TLS 1.3 en AES-256).
 
 **Hoe is de authenticatie geregeld?** Wachtwoordvereisten, beschikbaarheid van 2FA, sessieduur en de beveiliging tegen brute-force aanvallen (rate limiting).
 
-**Welke subverwerkers (derden) verwerken de gegevens?** Elke externe dienst die data aanraakt — hosting, database, e-mailprovider, betalingsverwerker, eventuele AI-modellen — met het specifieke doel en de serverlocatie. Stel deze lijst één keer op; het is tevens een verplicht onderdeel van de AVG.
+**Welke subverwerkers (derden) verwerken de gegevens?** Elke externe dienst die data aanraakt - hosting, database, e-mailprovider, betalingsverwerker, eventuele AI-modellen - met het specifieke doel en de serverlocatie. Stel deze lijst één keer op; het is tevens een verplicht onderdeel van de AVG.
 
 **Wat zijn uw backup- en herstelprocedures?** Frequentie, bewaartermijn, en of u een restore daadwerkelijk heeft getest. Het eerlijke antwoord *"Dagelijks geautomatiseerde backups, 30 dagen bewaartermijn, laatste restore geoefend in juni en voltooid in 34 minuten"* scoort hoger dan de vage antwoorden van de meeste grote IT-dienstverleners.
 
@@ -68,9 +68,9 @@ Bereid deze tien onderwerpen grondig voor en u dekt 90% van elke vragenlijst af:
 
 Veruit de meeste jonge softwarebedrijven hebben geen ISO 27001- of SOC 2-certificaat. Inkoopteams weten dat heel goed en kopen dagelijks software bij startups. Waar zij naar zoeken, is tastbaar bewijs van weloverwogen, professioneel handelen.
 
-U kunt naar waarheid verklaren dat uw onderliggende infrastructuur draait bij gecertificeerde cloudproviders (zoals AWS of Google Cloud) en hun certificaten noemen — dat is de compliance van uw toeleveranciers, niet die van u, en het helder benoemen van dat onderscheid wekt juist vertrouwen. U kunt uw autorisatieregels concreet uiteenzetten. U kunt verwijzen naar een vastgelegd dataretentiebeleid, een incidentenprotocol en een geklokte hersteloefening. En u kunt direct een professionele verwerkersovereenkomst (DPA) ter ondertekening aanbieden.
+U kunt naar waarheid verklaren dat uw onderliggende infrastructuur draait bij gecertificeerde cloudproviders (zoals AWS of Google Cloud) en hun certificaten noemen - dat is de compliance van uw toeleveranciers, niet die van u, en het helder benoemen van dat onderscheid wekt juist vertrouwen. U kunt uw autorisatieregels concreet uiteenzetten. U kunt verwijzen naar een vastgelegd dataretentiebeleid, een incidentenprotocol en een geklokte hersteloefening. En u kunt direct een professionele verwerkersovereenkomst (DPA) ter ondertekening aanbieden.
 
-Wat u categorisch nooit mag doen, is insinueren dat u over certificeringen beschikt die u niet bezit. Inkopers verifiëren certificaten bij de uitgevende instantie; een leverancier die betrapt wordt op valse claims ligt definitief uit de race — niet alleen voor deze aanbesteding, maar voor alle toekomstige projecten binnen die organisatie.
+Wat u categorisch nooit mag doen, is insinueren dat u over certificeringen beschikt die u niet bezit. Inkopers verifiëren certificaten bij de uitgevende instantie; een leverancier die betrapt wordt op valse claims ligt definitief uit de race - niet alleen voor deze aanbesteding, maar voor alle toekomstige projecten binnen die organisatie.
 
 ## De Drie Antwoorden Die Deals Onmiddellijk Breken
 
@@ -80,7 +80,7 @@ Wat u categorisch nooit mag doen, is insinueren dat u over certificeringen besch
 
 **Overdrijven en holle marketingtermen.** *"Volledig AVG-proof en voorzien van militaire bank-graad beveiliging"* is geen professioneel antwoord; een compliance officer ziet dit direct als een bewijs van incompetentie.
 
-Het antwoord dat wél overtuigt, is specifiek, nuchter en transparant over openstaande verbeterpunten — gekoppeld aan een concrete streefdatum. *"Tweefactorauthenticatie is momenteel technisch verplicht voor beheerdersaccounts en wordt in het komende kwartaal uitgerold naar alle reguliere gebruikers"* is een uitstekend antwoord. Inkopers accepteren bekende tekortkomingen waar een realistisch actieplan aan hangt. Wat ze categorisch afwijzen, zijn blinde vlekken.
+Het antwoord dat wél overtuigt, is specifiek, nuchter en transparant over openstaande verbeterpunten - gekoppeld aan een concrete streefdatum. *"Tweefactorauthenticatie is momenteel technisch verplicht voor beheerdersaccounts en wordt in het komende kwartaal uitgerold naar alle reguliere gebruikers"* is een uitstekend antwoord. Inkopers accepteren bekende tekortkomingen waar een realistisch actieplan aan hangt. Wat ze categorisch afwijzen, zijn blinde vlekken.
 
 ## Eén Keer Voorbereiden, Altijd Hergebruiken
 
@@ -112,7 +112,7 @@ Lees de overeenkomst kritisch door en onderhandel over termijnen die u operation
 
 ## Voorbereid Zijn Vóórdat de Spreadsheet Arriveert
 
-LaunchStudio helpt B2B SaaS-founders met een gericht voorbereidingstraject: we analyseren uw applicatie tegen de actuele inkoopvragen van Nederlandse bedrijven, verhelpen de reële kwetsbaarheden — multi-tenancy isolatie, RLS-policies, 2FA, audittrails, backupverificatie, subverwerkerslijsten en dataverwijdering — en stellen een professioneel security-document op in het jargon dat inkoopafdelingen verwachten.
+LaunchStudio helpt B2B SaaS-founders met een gericht voorbereidingstraject: we analyseren uw applicatie tegen de actuele inkoopvragen van Nederlandse bedrijven, verhelpen de reële kwetsbaarheden - multi-tenancy isolatie, RLS-policies, 2FA, audittrails, backupverificatie, subverwerkerslijsten en dataverwijdering - en stellen een professioneel security-document op in het jargon dat inkoopafdelingen verwachten.
 
 Onze software engineers zijn afkomstig van Manifera: elf jaar ervaring in het leveren van software aan enterprise-opdrachtgevers zoals Vodafone, TNO en CFLW, vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minhstad. Wij kennen de vragen op deze spreadsheets uit ervaring aan beide kanten van de tafel.
 
@@ -124,7 +124,7 @@ Onze software engineers zijn afkomstig van Manifera: elf jaar ervaring in het le
 
 Femke Ravensbergen bouwde Keuringsrapport met Lovable: software voor inspectierapporten, gebruikt door technische keuringsbedrijven voor hijskranen, brandmeldinstallaties en elektrotechnische installaties, met elf klanten in de regio Middelburg en Vlissingen.
 
-Een regionaal ziekenhuis toonde serieuze interesse om de applicatie in te zetten voor het beheer van interne apparatuurkeuringen — een contract ter waarde van viermaal haar grootste bestaande klant. De productdemo verliep vlekkeloos. Vervolgens arriveerde de vragenlijst: 41 gedetailleerde compliancevragen, een verwerkersovereenkomst ter beoordeling, en een deadline van twee weken.
+Een regionaal ziekenhuis toonde serieuze interesse om de applicatie in te zetten voor het beheer van interne apparatuurkeuringen - een contract ter waarde van viermaal haar grootste bestaande klant. De productdemo verliep vlekkeloos. Vervolgens arriveerde de vragenlijst: 41 gedetailleerde compliancevragen, een verwerkersovereenkomst ter beoordeling, en een deadline van twee weken.
 
 Femke kon slechts elf van de vragen met zekerheid beantwoorden.
 
@@ -132,18 +132,18 @@ De grondige inventarisatie kostte een werkdag en bracht vijf reële hiaten aan h
 
 Elf werkdagen aan gerichte implementaties: tenant-isolatie werd verankerd in de database via RLS en getest tussen accounts van verschillende keuringsbedrijven; een append-only audit-trail werd toegevoegd aan alle inspectierapporten (wat het ziekenhuis later expliciet noemde als de doorslaggevende factor); 2FA werd uitgerold voor alle gebruikers en verplicht gesteld voor beheerders; een hersteloefening van de database werd uitgevoerd en geklokt op 22 minuten, en ingepland als kwartaalroutine; de overbodige analysetool werd verwijderd en de vertaaldienst werd vervangen door een partij met EU-servers en een getekende DPA; retentie- en opschoonprocedures werden ingericht; en er werd een security-document van zes pagina's opgesteld dat alle 41 vragen beantwoordde, inclusief een openhartige toelichting op drie geplande verbeteringen.
 
-**Resultaat:** Het contract werd zes weken later ondertekend. De compliance officer van het ziekenhuis prees expliciet de aanwezige audit-trail en de transparante houding over punten die nog op de roadmap stonden. Femke heeft ditzelfde document sindsdien zonder wijzigingen naar vier nieuwe zakelijke prospects gestuurd — waarvan er twee de formele vragenlijst direct lieten vallen.
+**Resultaat:** Het contract werd zes weken later ondertekend. De compliance officer van het ziekenhuis prees expliciet de aanwezige audit-trail en de transparante houding over punten die nog op de roadmap stonden. Femke heeft ditzelfde document sindsdien zonder wijzigingen naar vier nieuwe zakelijke prospects gestuurd - waarvan er twee de formele vragenlijst direct lieten vallen.
 
 > *"Er kwamen eenenveertig vragen binnen en ik kon er elf beantwoorden. Het document dat we schreven om dat op te lossen, heeft me sindsdien twee contracten opgeleverd waar ik nooit meer een spreadsheet voor hoefde in te vullen."*
-> — **Femke Ravensbergen, Oprichter, Keuringsrapport (Middelburg)**
+> - **Femke Ravensbergen, Oprichter, Keuringsrapport (Middelburg)**
 
-**Kosten & Doorlooptijd:** €5.200 (tenant-isolatie via RLS, audit-trail, tweefactorauthenticatie, restore-verificatie, sanering subverwerkers, retentiebeleid, security-documentatie) — afgerond in 11 werkdagen.
+**Kosten & Doorlooptijd:** €5.200 (tenant-isolatie via RLS, audit-trail, tweefactorauthenticatie, restore-verificatie, sanering subverwerkers, retentiebeleid, security-documentatie) - afgerond in 11 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Kan ik zakelijke contracten winnen zonder officiële ISO-certificering?
 
-Ja, zeer regelmatig. Inkoopteams weten dat startups en scale-ups zelden over dure ISO- of SOC-certificaten beschikken; waar zij naar zoeken is tastbaar bewijs van goed beheer — een gedocumenteerd autorisatiemodel, geteste backups, een lijst van subverwerkers, een incidentenprotocol en eerlijke, accurate antwoorden.
+Ja, zeer regelmatig. Inkoopteams weten dat startups en scale-ups zelden over dure ISO- of SOC-certificaten beschikken; waar zij naar zoeken is tastbaar bewijs van goed beheer - een gedocumenteerd autorisatiemodel, geteste backups, een lijst van subverwerkers, een incidentenprotocol en eerlijke, accurate antwoorden.
 
 ### Wat mag ik absoluut nooit invullen op een security-vragenlijst?
 
@@ -155,7 +155,7 @@ Benoem het hiaat eerlijk, beschrijf uw concrete oplossingsplan en noem de geplan
 
 ### Wat is een subverwerkerslijst en waarom is deze verplicht?
 
-Een overzicht van elke externe partij die persoonsgegevens van uw klanten verwerkt — cloudhosting, database, transactionele e-mail, analytics en AI-diensten — inclusief het doel en de serverlocatie. Inkopers vragen hiernaar en de AVG verplicht het vastleggen ervan.
+Een overzicht van elke externe partij die persoonsgegevens van uw klanten verwerkt - cloudhosting, database, transactionele e-mail, analytics en AI-diensten - inclusief het doel en de serverlocatie. Inkopers vragen hiernaar en de AVG verplicht het vastleggen ervan.
 
 ### Hoe voorkom ik dat ik voor elke nieuwe klant een spreadsheet moet invullen?
 

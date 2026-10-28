@@ -95,7 +95,7 @@ Evelyn werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 
 **Resultaat:** Evelyn heeft de volledige beveiliging van de opslagplaats hersteld en de HIPAA-compliancescans doorstaan.
 
-**Kosten en tijdlijn:** € 1.600 (Security Recovery Package) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (Security Recovery Package) - klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
 

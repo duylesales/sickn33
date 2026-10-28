@@ -64,11 +64,11 @@ Een oprichter zonder achtergrond in beveiliging kan nog steeds een ruwe, veilige
 **Een veilige manier met laag risico om elk openbaar invoerveld te testen:**
 
 - Voer gewone tekst in het veld in die een kenmerkende opmaakmarkering bevat, zoals `<b>test</b>`, in een reactie-, review- of bio-veld dat u beheert.
-- Bekijk de pagina waar die inzending vervolgens wordt weergegeven. Als het woord "test" vetgedrukt verschijnt in plaats van dat de letterlijke tekens `<b>test</b>` als platte tekst worden getoond, rendert het veld ingediende HTML in plaats van het te escapen — een krachtig signaal dat hetzelfde veld ook een daadwerkelijk kwaadaardig script zou uitvoeren, en niet alleen onschuldige vetgedrukte opmaak.
-- Herhaal dit op elk afzonderlijk type openbaar invoerveld op de site — getuigenissen, reacties, profielbiografieën en bijschriften bij bestandsuploads gedragen zich vaak verschillend van elkaar, zelfs op dezelfde site, omdat elk veld op een ander moment of door een ander onderliggend component kan zijn gebouwd.
+- Bekijk de pagina waar die inzending vervolgens wordt weergegeven. Als het woord "test" vetgedrukt verschijnt in plaats van dat de letterlijke tekens `<b>test</b>` als platte tekst worden getoond, rendert het veld ingediende HTML in plaats van het te escapen - een krachtig signaal dat hetzelfde veld ook een daadwerkelijk kwaadaardig script zou uitvoeren, en niet alleen onschuldige vetgedrukte opmaak.
+- Herhaal dit op elk afzonderlijk type openbaar invoerveld op de site - getuigenissen, reacties, profielbiografieën en bijschriften bij bestandsuploads gedragen zich vaak verschillend van elkaar, zelfs op dezelfde site, omdat elk veld op een ander moment of door een ander onderliggend component kan zijn gebouwd.
 - Als u zelfs maar één veld vindt dat ruwe opmaak op deze manier rendert, behandel dan elk soortgelijk veld op de site als verdacht totdat een grondige controle het tegendeel bevestigt, in plaats van aan te nemen dat het probleem beperkt is tot het ene veld dat u toevallig heeft getest.
 
-Deze test gebruikt met opzet een onschuldige opmaaktag, zodat een oprichter dit veilig kan uitvoeren op zijn eigen live site zonder enig risico om daadwerkelijk iets schadelijks te activeren. Het is een waardevol eerste signaal, geen vervanging voor de grondigere analyse van een toegewijde audit — een test die door een oprichter wordt uitgevoerd vangt alleen de meest directe, zichtbare versie van het probleem op, terwijl een professionele beoordeling controleert op subtielere variaties die eenvoudigere verdedigingen omzeilen.
+Deze test gebruikt met opzet een onschuldige opmaaktag, zodat een oprichter dit veilig kan uitvoeren op zijn eigen live site zonder enig risico om daadwerkelijk iets schadelijks te activeren. Het is een waardevol eerste signaal, geen vervanging voor de grondigere analyse van een toegewijde audit - een test die door een oprichter wordt uitgevoerd vangt alleen de meest directe, zichtbare versie van het probleem op, terwijl een professionele beoordeling controleert op subtielere variaties die eenvoudigere verdedigingen omzeilen.
 
 ## Echt voorbeeld
 
@@ -81,9 +81,9 @@ Een bezoekende webontwikkelaar die het formulier voor getuigenissen uit professi
 **Resultaat:** LaunchStudio paste consequente output-escaping toe over elk openbaar veld dat door gebruikers ingediende inhoud weergeeft. Dit sloot de kwetsbaarheid over de gehele site en verifieerde dat er geen kwaadwillige inhoud daadwerkelijk was ingediend door iemand anders dan de rapporterende ontwikkelaar.
 
 > *"Het was gelukkig een compleet onschadelijke test van zijn kant. Het had net zo goed iemand kunnen zijn die exact hetzelfde testte met veel slechtere intenties."*
-> — **Hanna Vermeer, Oprichter, RuimteVorm (Brussel)**
+> - **Hanna Vermeer, Oprichter, RuimteVorm (Brussel)**
 
-**Kosten en tijdlijn:** € 1.300 (stored XSS herstel en output-escaping audit) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (stored XSS herstel en output-escaping audit) - voltooid in 4 werkdagen.
 
 ---
 

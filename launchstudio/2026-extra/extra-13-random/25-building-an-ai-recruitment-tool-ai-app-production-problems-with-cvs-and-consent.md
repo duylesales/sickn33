@@ -21,13 +21,13 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A founder in Friesland uploaded her first real batch of CVs — 180 applications for welding and installation jobs — into the recruitment tool she had built in Lovable. The AI matching worked. Recruiters loved it. Then a candidate emailed asking why a company he had never applied to had called him, and she realised that every recruiter on the platform could search every CV, including candidates who had applied for one specific job at one specific company — a textbook example of the AI app production problems recruitment tools run into.
+A founder in Friesland uploaded her first real batch of CVs - 180 applications for welding and installation jobs - into the recruitment tool she had built in Lovable. The AI matching worked. Recruiters loved it. Then a candidate emailed asking why a company he had never applied to had called him, and she realised that every recruiter on the platform could search every CV, including candidates who had applied for one specific job at one specific company - a textbook example of the AI app production problems recruitment tools run into.
 
 If you are building an AI recruitment tool, these are the problems that decide whether you can launch: not whether matching works, but whether candidate data is handled the way candidates, employers and regulators expect.
 
 ## Why CVs Are More Sensitive Than They Look
 
-A CV is personal data by design: name, address, phone, email, birth date, work history, education, often a photo. Many also contain information candidates would not share broadly — health-related gaps, nationality, religion implied by schools or volunteer work, trade union roles. Some of that is special category data under GDPR Article 9, which requires stricter protection.
+A CV is personal data by design: name, address, phone, email, birth date, work history, education, often a photo. Many also contain information candidates would not share broadly - health-related gaps, nationality, religion implied by schools or volunteer work, trade union roles. Some of that is special category data under GDPR Article 9, which requires stricter protection.
 
 Recruitment also involves power imbalance. Candidates cannot easily refuse to share data with a potential employer, which is why regulators pay particular attention to how recruitment data is used and kept.
 
@@ -35,11 +35,11 @@ Recruitment also involves power imbalance. Candidates cannot easily refuse to sh
 
 AI-generated recruitment apps usually have one CV table and a search function. The interface may show a recruiter only the candidates for their vacancies, but the API returns everything. In a multi-employer or agency setting, that means candidates are exposed to organisations they never applied to.
 
-The production model scopes access explicitly: a candidate's data is visible to the organisation they applied to (or to recruiters they consented to share with), enforced in the database. Talent pools — where candidates agree to be considered for other roles — need separate, explicit consent.
+The production model scopes access explicitly: a candidate's data is visible to the organisation they applied to (or to recruiters they consented to share with), enforced in the database. Talent pools - where candidates agree to be considered for other roles - need separate, explicit consent.
 
 ## Problem 2: CVs Stored Forever, Publicly
 
-Uploaded CV files often land in storage buckets with public URLs, because that is the easiest way to display a file. Anyone with the link — or anyone who can guess the pattern — can download them. And nothing is ever deleted.
+Uploaded CV files often land in storage buckets with public URLs, because that is the easiest way to display a file. Anyone with the link - or anyone who can guess the pattern - can download them. And nothing is ever deleted.
 
 Production handling means private storage with short-lived signed links, virus scanning on upload, and retention rules. Dutch regulator guidance has long indicated that application data should generally be deleted within about four weeks after a procedure ends, or up to a year with the candidate's consent for future vacancies. Your tool needs to implement that automatically; recruiters will not do it by hand.
 
@@ -55,7 +55,7 @@ In practice, a production recruitment tool should keep a human in the decision l
 
 ## Problem 5: Candidate Rights
 
-Candidates can ask for access to their data, correction or deletion. They can also ask what an organisation holds about them after rejection. A production tool needs a way to find all data about one person — across applications, notes, messages and files — export it and delete it completely, including from search indexes and any AI embeddings created from their CV.
+Candidates can ask for access to their data, correction or deletion. They can also ask what an organisation holds about them after rejection. A production tool needs a way to find all data about one person - across applications, notes, messages and files - export it and delete it completely, including from search indexes and any AI embeddings created from their CV.
 
 ## Problem 6: Recruiter Notes
 
@@ -80,13 +80,13 @@ Consent in recruitment is often misunderstood. For processing an application to 
 - Offers **separate, unticked choices** for talent pools, sharing and model improvement.
 - Records each choice with the exact text shown, the version and a timestamp.
 - Lets candidates change their choices from their account or via a link in every email.
-- Propagates withdrawal automatically — removing the candidate from pools and shared views immediately.
+- Propagates withdrawal automatically - removing the candidate from pools and shared views immediately.
 
 A consent record table might hold `candidate_id`, `purpose`, `granted`, `text_version`, `recorded_at` and `source`. That small structure answers the question regulators and employers ask most: "can you show what this person agreed to, and when?"
 
 ## Explaining AI Match Scores
 
-If your tool ranks or scores candidates, recruiters and candidates will ask why. An explainable score shows which requirements were matched (certifications, experience years, languages, location) and which were missing, rather than a single opaque number. Keep the score's inputs limited to job-relevant criteria, log the version of the model or rules that produced it, and keep scores advisory: the recruiter decides, the system assists. This approach supports the EU AI Act's emphasis on human oversight and transparency for high-risk uses, and it makes the tool more useful — recruiters trust suggestions they can understand.
+If your tool ranks or scores candidates, recruiters and candidates will ask why. An explainable score shows which requirements were matched (certifications, experience years, languages, location) and which were missing, rather than a single opaque number. Keep the score's inputs limited to job-relevant criteria, log the version of the model or rules that produced it, and keep scores advisory: the recruiter decides, the system assists. This approach supports the EU AI Act's emphasis on human oversight and transparency for high-risk uses, and it makes the tool more useful - recruiters trust suggestions they can understand.
 
 ## Avoiding Proxy Discrimination
 
@@ -112,7 +112,7 @@ In platforms serving several employers or agencies, separation must be absolute:
 
 ## Security for Candidate Accounts
 
-Candidates often apply once and forget their accounts. Offer passwordless or magic-link login with short expiry, avoid long-lived sessions, allow account deletion without contacting support, and never send CVs as email attachments to recruiters — send a link to the platform instead. For recruiter accounts, require multi-factor authentication, because a compromised recruiter account exposes many candidates at once.
+Candidates often apply once and forget their accounts. Offer passwordless or magic-link login with short expiry, avoid long-lived sessions, allow account deletion without contacting support, and never send CVs as email attachments to recruiters - send a link to the platform instead. For recruiter accounts, require multi-factor authentication, because a compromised recruiter account exposes many candidates at once.
 
 ## Preparing for Employer Questions
 
@@ -150,10 +150,10 @@ Over eleven business days, the team enforced organisation-scoped access with row
 
 **Result:** Vakkracht notified affected candidates and the regulator on advice, with no further complaints. It then signed a regional staffing agency that had previously declined over privacy concerns, and grew to 31 employers within six months.
 
-> *"The matching was the clever part, and it was the part nobody worried about. Everyone worried about who could see the CVs — and they were right to."*
-> — **Sophie Lambrecht, Founder, Vakkracht (Leeuwarden)**
+> *"The matching was the clever part, and it was the part nobody worried about. Everyone worried about who could see the CVs - and they were right to."*
+> - **Sophie Lambrecht, Founder, Vakkracht (Leeuwarden)**
 
-**Cost & Timeline:** €3,300 (Launch Ready package with access control, storage, retention, consent and AI review workflow) — completed in 11 business days.
+**Cost & Timeline:** €3,300 (Launch Ready package with access control, storage, retention, consent and AI review workflow) - completed in 11 business days.
 
 ## Frequently Asked Questions
 

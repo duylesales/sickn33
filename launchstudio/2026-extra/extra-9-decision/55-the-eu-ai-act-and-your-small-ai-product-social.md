@@ -10,7 +10,7 @@ The Act is risk-tiered, not a blanket rule, and most obligations fall on a handf
 ✅ Ask what decision the AI is making, and about whom, before assuming a tier
 ✅ Know that calling a third-party model API usually makes you a lighter-obligation "deployer"
 ✅ Add the cheap, universal wins regardless of tier: AI disclosure, labeled synthetic content
-✅ Write down your risk-tier reasoning once, even informally — it answers the next question
+✅ Write down your risk-tier reasoning once, even informally - it answers the next question
 
 At **LaunchStudio**, backed by Manifera's 11+ years building compliant systems for regulated clients like TNO, we help classify an AI feature honestly before a deal stalls. ⚖️
 

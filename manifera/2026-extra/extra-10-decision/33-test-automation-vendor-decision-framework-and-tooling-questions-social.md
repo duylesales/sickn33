@@ -10,7 +10,7 @@
 ✅ **Sub-2% Flaky Test Rate Target:** Root-cause tagging on retries, not blind re-runs that mask instability.
 ✅ **Test Code in Your Own Repository:** Version-controlled from the first commit, reviewed like any other code.
 
-Test automation rarely fails loudly — it fails quietly, as debt that erodes trust until engineers start ignoring red results entirely. 🎯
+Test automation rarely fails loudly - it fails quietly, as debt that erodes trust until engineers start ignoring red results entirely. 🎯
 
 👉 Read our full deep dive on the test automation vendor decision framework: https://www.manifera.com/blog/test-automation-vendor-decision-framework-and-tooling-questions
 

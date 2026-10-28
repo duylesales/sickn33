@@ -16,7 +16,7 @@ Hoe veerkrachtige SaaS-architectuur er wél uitziet:
 ✅ Graceful degradation: onderscheid maken tussen essentiële en verrijkende afhankelijkheden
 ✅ Webhooks/RSS van vendor statuspagina's direct koppelen aan uw interne alerting-kanaal
 
-Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw API-koppelingen met robuuste fallbacks en circuit breakers — zonder uw frontend-styling te verstoren.
+Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw API-koppelingen met robuuste fallbacks en circuit breakers - zonder uw frontend-styling te verstoren.
 
 💡 Zo voorkwam boekhandels-SaaS Shelfmark dat een storing in een externe AI-aanbevelingswidget het gehele voorraaddashboard platlegde.
 

@@ -93,7 +93,7 @@ Daniel werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 
 **Resultaat:** Daniel lanceerde het proces voor het genereren van inkomsten met succes, waardoor binnen zeven dagen 45 betalende klanten werden geconverteerd.
 
-**Kosten en tijdlijn:** € 1.200 (pakket voor het genereren van inkomsten) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (pakket voor het genereren van inkomsten) - klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
 

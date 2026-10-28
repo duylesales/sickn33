@@ -33,7 +33,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 
 U plaatste een vacature: *"Programmeur gezocht om mijn met AI gebouwde prototype productierijp te maken."* Er kwamen 53 sollicitaties binnen. Geen enkele kandidaat had aantoonbare ervaring met door Lovable, Bolt of Cursor gegenereerde codebases.
 
-Dit is de 'ontwikkelaarskloof' waar niemand over praat. Er zijn miljoenen software-ontwikkelaars op de wereld, maar slechts een handvol kwalificeert zich als *AI-softwareontwikkelaar* — engineers die de specifieke patronen van AI-gegenereerde code doorgronden en deze gericht kunnen versterken zonder alles opnieuw te bouwen.
+Dit is de 'ontwikkelaarskloof' waar niemand over praat. Er zijn miljoenen software-ontwikkelaars op de wereld, maar slechts een handvol kwalificeert zich als *AI-softwareontwikkelaar* - engineers die de specifieke patronen van AI-gegenereerde code doorgronden en deze gericht kunnen versterken zonder alles opnieuw te bouwen.
 
 Dit verschil is allerminst theoretisch. Het bepaalt of uw livegang drie weken of drie maanden duurt, €3.000 of €30.000 kost, en of uw met zorg ontworpen gebruikersinterface behouden blijft of wordt weggegooid.
 
@@ -127,9 +127,9 @@ Sander vond LaunchStudio via de online kostencalculator. Het team van Manifera b
 **Resultaat:** MoneyMind lanceerde 10 werkdagen later met een vlekkeloze Stripe-koppeling, beveiligde bankdata en een server-side AI-proxy. Sander telt inmiddels 89 betalende abonnees (€12,99/maand = €1.156/maand omzet).
 
 > *"Ik heb €19.000 verspild aan drie ontwikkelaars die niet wisten hoe ze met AI-code moesten omgaan. LaunchStudio rekende €3.200 en zette het binnen 10 dagen live. Het verschil zat niet in de prijs, maar in het feit dat zij Lovable-code écht begrepen."*
-> — **Sander Dijkstra, Oprichter, MoneyMind (Groningen)**
+> - **Sander Dijkstra, Oprichter, MoneyMind (Groningen)**
 
-**Kosten & Doorlooptijd:** €3.200 (Launch Ready Pakket) — productie-klaar en live binnen 10 werkdagen.
+**Kosten & Doorlooptijd:** €3.200 (Launch Ready Pakket) - productie-klaar en live binnen 10 werkdagen.
 
 ---
 

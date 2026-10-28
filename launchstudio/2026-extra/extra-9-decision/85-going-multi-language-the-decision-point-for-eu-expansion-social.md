@@ -8,7 +8,7 @@
 ❌ Retrofitting locale-based routing after launch risks every backlink and existing ranking
 
 ✅ Separate one polite email from a real market-entry decision before scoping the fix
-✅ Build the cheap structural pieces now — key files, locale-aware formatting, logical CSS
+✅ Build the cheap structural pieces now - key files, locale-aware formatting, logical CSS
 ✅ Defer the expensive schema migration and full translation until demand is real
 ✅ A proper scoping pass finds the two or three things that actually need fixing, not a rebuild
 

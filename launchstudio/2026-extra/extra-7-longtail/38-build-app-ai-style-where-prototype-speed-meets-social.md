@@ -1,8 +1,8 @@
-🚨 Camilla Nystrøm ran StockPilot, an inventory forecasting SaaS, out of Bergen — built with v0 and Bolt, thirty paying retailers within two months. Then three separate downtime incidents hit in one month, and she found out about each one from customer emails, not an alert. 😳
+🚨 Camilla Nystrøm ran StockPilot, an inventory forecasting SaaS, out of Bergen - built with v0 and Bolt, thirty paying retailers within two months. Then three separate downtime incidents hit in one month, and she found out about each one from customer emails, not an alert. 😳
 
 The speed that gets you to market has almost nothing to do with the durability you need once you're actually scaling. 🧠
 
-❌ No monitoring existed at all — outages ran 30 to 90 minutes before Camilla even knew
+❌ No monitoring existed at all - outages ran 30 to 90 minutes before Camilla even knew
 ❌ The database, sized for beta testing, couldn't handle concurrent load from thirty active retail accounts
 ❌ No automatic scaling or connection management to absorb the morning spike
 ❌ Two customers cancelled outright, citing the unreliability directly in their notes

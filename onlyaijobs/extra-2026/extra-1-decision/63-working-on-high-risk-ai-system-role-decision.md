@@ -41,7 +41,7 @@ The work is interesting and the stakes are unusual: a model that influences who 
 
 Under the **EU Artificial Intelligence Act**, certain uses are classified as high-risk, including systems used as safety components of regulated products and a list of areas set out in **Annex III**. Those areas cover, among others, employment and worker management, access to education, creditworthiness and certain essential services, some public-sector benefit decisions, law enforcement, migration and asylum, and the management of critical infrastructure. Certain biometric applications are covered too, and a separate category of practices is prohibited outright, including some emotion-inference applications in the workplace.
 
-Two points matter for a candidate. First, the obligations differ depending on whether your employer is the **provider** of the system — building or placing it on the market — or the **deployer** using it. Second, the obligations are being phased in over time, and the detail of dates and implementing guidance changes, so treat any specific timeline you are told as something to verify rather than as settled fact.
+Two points matter for a candidate. First, the obligations differ depending on whether your employer is the **provider** of the system - building or placing it on the market - or the **deployer** using it. Second, the obligations are being phased in over time, and the detail of dates and implementing guidance changes, so treat any specific timeline you are told as something to verify rather than as settled fact.
 
 Ask which role your employer plays for the system you would work on. It determines what your job actually consists of.
 
@@ -100,7 +100,7 @@ If an employer treats these habits as friction rather than as professional pract
 - **Is the organisation the provider or the deployer of this system?**
 - **Who owns compliance, and is it a real function with people and budget?** If the answer is "the data team, informally", the role includes a job nobody has resourced.
 - **What documentation exists today?** Ask to hear the honest answer rather than the intended one.
-- **How is human oversight implemented in practice — who overrides, how often, and what happens then?**
+- **How is human oversight implemented in practice - who overrides, how often, and what happens then?**
 - **What happens when I say a system is not ready?** The most revealing question in the interview.
 - **Has this system been assessed, audited or examined externally, and what came out of it?**
 - **Is there legal and privacy expertise I can consult, or would I be interpreting the rules alone?**
@@ -174,13 +174,13 @@ Two years later, he is asked to advise on a second system, and the postponement 
 
 - High-risk classification under the AI Act covers areas such as employment, creditworthiness, essential services, critical infrastructure and parts of the public sector, with obligations differing for providers and deployers.
 - The work shifts towards documentation, data governance, formal evaluation, logging, human oversight design and post-launch monitoring.
-- Legal accountability sits with organisations rather than individual engineers, but your practical exposure is what you knew, raised and recorded — so write down limitations and escalate in writing.
+- Legal accountability sits with organisations rather than individual engineers, but your practical exposure is what you knew, raised and recorded - so write down limitations and escalate in writing.
 - The most revealing interview question is what happens when someone says a system is not ready.
 - Decline when compliance is treated as paperwork, when documentation is deferred, or when responsibility that belongs to the organisation is being placed on one technical person.
 
 ## Where to Start
 
-If regulated AI work interests you, look for employers who already maintain documentation and monitoring rather than those planning to start — and see which of them are within reach of where you live.
+If regulated AI work interests you, look for employers who already maintain documentation and monitoring rather than those planning to start - and see which of them are within reach of where you live.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -210,7 +210,7 @@ Very. Evaluation that survives external scrutiny, documentation practice and gov
     {"@type": "Question", "name": "Am I personally responsible if the system causes harm?", "acceptedAnswer": {"@type": "Answer", "text": "Obligations rest on organisations; your practical exposure is what you knew and raised, so record and escalate in writing."}},
     {"@type": "Question", "name": "How do I tell whether an employer takes this seriously?", "acceptedAnswer": {"@type": "Answer", "text": "Resourced compliance, maintained documentation, real monitoring and a history of saying 'not yet'."}},
     {"@type": "Question", "name": "Will I still be doing technical work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, though often a minority of the week alongside evaluation, documentation and oversight design."}},
-    {"@type": "Question", "name": "Is this experience valuable elsewhere?", "acceptedAnswer": {"@type": "Answer", "text": "Very — scrutiny-proof evaluation and governance literacy transfer across regulated sectors."}}
+    {"@type": "Question", "name": "Is this experience valuable elsewhere?", "acceptedAnswer": {"@type": "Answer", "text": "Very - scrutiny-proof evaluation and governance literacy transfer across regulated sectors."}}
   ]
 }
 </script>

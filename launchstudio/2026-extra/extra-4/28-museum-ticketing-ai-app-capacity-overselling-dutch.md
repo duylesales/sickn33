@@ -88,9 +88,9 @@ LaunchStudio's ingenieurs herbouwden de aankoopstroom voor tickets rond een verg
 **Resultaat:** TicketZaal heeft sindsdien nog twee openingen met een hoge vraag afgehandeld, waaronder een die sneller uitverkocht dan de tentoonstelling die oorspronkelijk de bug veroorzaakte, met nul oververkoopincidenten.
 
 > *"Ik dacht dat ik een eenvoudige teller had gebouwd. Wat ik daadwerkelijk had gebouwd was een race-conditie die wachtte tot er genoeg verkeer was om deze bloot te leggen. LaunchStudio heeft het hersteld op een manier die ik nooit zou hebben geweten te vragen."*
-> — **Guus Fransen, Oprichter, TicketZaal (Roermond)**
+> - **Guus Fransen, Oprichter, TicketZaal (Roermond)**
 
-**Kosten en tijdlijn:** € 1.200 (herontwerp van gelijktijdigheidsveilige aankoopstroom en belastingtesten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (herontwerp van gelijktijdigheidsveilige aankoopstroom en belastingtesten) - voltooid in 6 werkdagen.
 
 ---
 

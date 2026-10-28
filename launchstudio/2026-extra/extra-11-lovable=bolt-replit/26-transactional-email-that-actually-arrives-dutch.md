@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 
 Een factuur die jouw applicatie verstuurt is volstrekt waardeloos als hij stilletjes belandt in de quarantainemap van de zakelijke mailserver van je klant. Een e-mail voor wachtwoordherstel die nooit aankomt, is voor een gebruiker niet te onderscheiden van een account dat simpelweg stuk is. En het wrange is: je hoort er als oprichter helemaal niets over, omdat gedupeerden jou immers niet kunnen bereiken via het kanaal dat zojuist heeft gefaald.
 
-E-mailbezorging is met afstand het minst geteste onderdeel van vrijwel elk met AI gebouwd softwareproduct. Het is tegelijkertijd het onderdeel waar fouten zich volledig geruisloos voltrekken — een gevaarlijke combinatie, en de reden waarom dit vraagstuk vóór de lancering een uur gerichte aandacht verdient in plaats van zes weken later tijdens een escalatie.
+E-mailbezorging is met afstand het minst geteste onderdeel van vrijwel elk met AI gebouwd softwareproduct. Het is tegelijkertijd het onderdeel waar fouten zich volledig geruisloos voltrekken - een gevaarlijke combinatie, en de reden waarom dit vraagstuk vóór de lancering een uur gerichte aandacht verdient in plaats van zes weken later tijdens een escalatie.
 
 ## Drie soorten e-mail, drie verschillende regels
 
@@ -30,7 +30,7 @@ Oprichters behandelen e-mail vaak als één pot nat. Ontvangende e-mailservers d
 
 **Transactionele e-mail** wordt direct getriggerd door een actie van de gebruiker en wordt door hen verwacht: orderbevestigingen, wachtwoordresets, betalingsbewijzen, facturen en meldingen over hun eigen data. De verwachtingen qua afleverbaarheid (deliverability) zijn torenhoog en toestemmingsregels voor marketing gelden hier niet op dezelfde manier.
 
-**Notificatie-e-mails** zitten er precies tussenin: een wekelijks samenvattend overzicht, een alert over de activiteit van een teamgenoot, of een herinnering. In grote lijnen verwacht, maar ongewenst als het te vaak gebeurt — en de voornaamste reden waarom gebruikers jouw domein als spam markeren.
+**Notificatie-e-mails** zitten er precies tussenin: een wekelijks samenvattend overzicht, een alert over de activiteit van een teamgenoot, of een herinnering. In grote lijnen verwacht, maar ongewenst als het te vaak gebeurt - en de voornaamste reden waarom gebruikers jouw domein als spam markeren.
 
 **Marketing-e-mails** zijn promotioneel en kennen strikte juridische AVG-verplichtingen: een geldige grondslag (zoals actieve opt-in), een verplichte uitschrijflink met één klik, en een strikte scheiding van je transactionele verzendkanalen.
 
@@ -54,17 +54,17 @@ De allerbelangrijkste praktische regel: verstuur deze verschillende stromen alti
 
 **DKIM (DomainKeys Identified Mail)** voegt een cryptografische handtekening toe aan de e-mailheader. De ontvangende server controleert deze handtekening tegen de openbare sleutel in jouw DNS. Het bewijst dat het bericht onderweg niet is gewijzigd en daadwerkelijk afkomstig is van de eigenaar van de sleutel.
 
-**DMARC (Domain-based Message Authentication, Reporting and Conformance)** vertelt ontvangende mailservers wat ze moeten doen als SPF of DKIM faalt — niets (`none`), in quarantaine plaatsen (`quarantine`), of direct weigeren (`reject`). Daarnaast dwingt DMARC *alignment* af: het domein in het zichtbare 'Van'-veld moet overeenkomen met het geauthenticeerde domein. Dit voorkomt dat een kwaadwillende met een eigen domein door de controles komt terwijl jouw naam in beeld staat.
+**DMARC (Domain-based Message Authentication, Reporting and Conformance)** vertelt ontvangende mailservers wat ze moeten doen als SPF of DKIM faalt - niets (`none`), in quarantaine plaatsen (`quarantine`), of direct weigeren (`reject`). Daarnaast dwingt DMARC *alignment* af: het domein in het zichtbare 'Van'-veld moet overeenkomen met het geauthenticeerde domein. Dit voorkomt dat een kwaadwillende met een eigen domein door de controles komt terwijl jouw naam in beeld staat.
 
 Begin DMARC altijd in monitoringmodus (`p=none`) en lees twee weken lang de geautomatiseerde rapportages om te zien welke legitieme diensten namens jouw domein mailen. Direct beginnen op `p=reject` is hoe oprichters ontdekken dat hun externe boekhoudpakket plotseling geen facturen meer kan versturen.
 
-Je e-mailprovider levert de exacte DNS-waarden kant-en-klaar aan. Het werk is puur het toevoegen ervan bij je domeinregistrar en het verifiëren van de status — een klusje van twintig minuten dat in bijna elke met AI gebouwde app over het hoofd wordt gezien.
+Je e-mailprovider levert de exacte DNS-waarden kant-en-klaar aan. Het werk is puur het toevoegen ervan bij je domeinregistrar en het verifiëren van de status - een klusje van twintig minuten dat in bijna elke met AI gebouwde app over het hoofd wordt gezien.
 
 ## Een betrouwbare e-mailprovider kiezen
 
 Vrijwel elke gevestigde transactionele e-mailprovider (zoals Resend, Postmark, SendGrid of Brevo) levert prima werk. De factoren die het verschil maken voor een Nederlands B2B-product:
 
-**Dataopslag binnen de EU,** essentieel voor klanten die vragen waar persoonsgegevens worden verwerkt — e-mails bevatten immers namen, adressen en vertrouwelijke data.
+**Dataopslag binnen de EU,** essentieel voor klanten die vragen waar persoonsgegevens worden verwerkt - e-mails bevatten immers namen, adressen en vertrouwelijke data.
 
 **Webhooks voor bounces en spamklachten,** zodat jouw applicatie direct programmatisch kan reageren in plaats van dode e-mailadressen te blijven bestoken.
 
@@ -74,7 +74,7 @@ Vrijwel elke gevestigde transactionele e-mailprovider (zoals Resend, Postmark, S
 
 **Inzicht in deliverability:** duidelijke reputatiedashboards en automatische verwerking van DMARC-rapporten.
 
-Configureer de e-mailprovider altijd op een apart subdomein — zoals `mail.jouwdomein.nl` — in plaats van op je hoofddomein. Dit isoleert je verzendreputatie en maakt een eventuele overstap naar een andere provider later oneindig veel eenvoudiger.
+Configureer de e-mailprovider altijd op een apart subdomein - zoals `mail.jouwdomein.nl` - in plaats van op je hoofddomein. Dit isoleert je verzendreputatie en maakt een eventuele overstap naar een andere provider later oneindig veel eenvoudiger.
 
 ## E-mailinhoud die aankomt én gelezen wordt
 
@@ -96,7 +96,7 @@ Twee inkomende webhooks van je e-mailprovider horen direct in je applicatielogic
 
 **Spamklachten (complaints):** de ontvanger heeft actief op 'Spam' geklikt. Stop onmiddellijk met het sturen van alle niet-strikt noodzakelijke e-mails naar dit adres en onderzoek welk bericht de klacht veroorzaakte.
 
-Dwing daarnaast adresverificatie af bij registratie via een bevestigingsmail met een klikbare link — wat overigens direct een hele categorie van geautomatiseerd bot-misbruik effectief blokkeert.
+Dwing daarnaast adresverificatie af bij registratie via een bevestigingsmail met een klikbare link - wat overigens direct een hele categorie van geautomatiseerd bot-misbruik effectief blokkeert.
 
 ## Bewaken vóórdat klanten moeten klagen
 
@@ -104,7 +104,7 @@ Dwing daarnaast adresverificatie af bij registratie via een bevestigingsmail met
 
 **Houd het reputatiedashboard van je e-mailprovider in de gaten.** Een dalend afleverpercentage is al dagen zichtbaar vóórdat de eerste klant klaagt over een gemiste mail.
 
-**Stuur na elke grote wijziging handmatig testberichten naar verschillende systemen** — een Gmail-adres, een Outlook-account en een zakelijk Exchange-domein — en controleer uitdrukkelijk de spambox, niet alleen de inbox.
+**Stuur na elke grote wijziging handmatig testberichten naar verschillende systemen** - een Gmail-adres, een Outlook-account en een zakelijk Exchange-domein - en controleer uitdrukkelijk de spambox, niet alleen de inbox.
 
 **Stel alerts in op afwijkende verzendvolumes.** Een plotselinge piek van duizenden wachtwoordherstel-e-mails duidt op misbruik, en het eerste gevolg is een beschadigde domeinreputatie.
 
@@ -125,23 +125,23 @@ Eén tot twee uur werk. Het is het verschil tussen een onboarding die vlekkeloos
 
 E-mailinrichting is technisch precisiewerk: onzichtbaar als het fout zit, en snel geregeld voor wie de kneepjes kent. LaunchStudio richt dit fundament in als onderdeel van het productierijp maken van met AI gebouwde software: de provider geconfigureerd op een eigen subdomein, alle cryptografische authenticatierecords geverifieerd, templates voorzien van nette fallback-teksten, bounce- en klachtenverwerking gekoppeld aan de database, en de aflevering uitvoerig getest over verschillende zakelijke e-mailomgevingen.
 
-De frontend die je in Lovable hebt ontworpen blijft onaangetast, en het e-mailwerk vormt een naadloos geheel met de hosting, beveiliging en betalingen in het [Launch Ready pakket](https://launchstudio.eu/nl/#packages). Het team hierachter is Manifera — elf jaar ervaring in bedrijfskritische softwaresystemen voor partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
+De frontend die je in Lovable hebt ontworpen blijft onaangetast, en het e-mailwerk vormt een naadloos geheel met de hosting, beveiliging en betalingen in het [Launch Ready pakket](https://launchstudio.eu/nl/#packages). Het team hierachter is Manifera - elf jaar ervaring in bedrijfskritische softwaresystemen voor partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
 Verstuurt jouw app e-mails en heb je nog nooit gecontroleerd waar ze daadwerkelijk belanden? [Omschrijf je project](https://launchstudio.eu/nl/#contact) en we brengen je deliverability binnen één werkdag helder in kaart.
 
 ## Een gloednieuw verzenddomein veilig opwarmen
 
-Een cruciaal detail waar oprichters die alles technisch goed hebben ingesteld alsnog over struikelen: een kersvers geregistreerd domein heeft bij ontvangende mailservers nul historische reputatie. Een onbekend domein dat op dag één plotseling duizend e-mails afvuurt, vertoont exact het gedragspatroon van een spammer — en ontvangende filters grijpen direct in.
+Een cruciaal detail waar oprichters die alles technisch goed hebben ingesteld alsnog over struikelen: een kersvers geregistreerd domein heeft bij ontvangende mailservers nul historische reputatie. Een onbekend domein dat op dag één plotseling duizend e-mails afvuurt, vertoont exact het gedragspatroon van een spammer - en ontvangende filters grijpen direct in.
 
-**Begin beheerst en bouw het volume geleidelijk op (domain warmup).** Een bescheiden volume in de eerste week, rustig toenemend over een periode van twee weken. Voor de meeste kleine B2B-producten gebeurt dit vanzelf omdat het aantal gebruikers organisch groeit — het risico zit hem in een succesvolle Product Hunt-lancering die plotseling honderden e-mails afvuurt vanaf een koud domein.
+**Begin beheerst en bouw het volume geleidelijk op (domain warmup).** Een bescheiden volume in de eerste week, rustig toenemend over een periode van twee weken. Voor de meeste kleine B2B-producten gebeurt dit vanzelf omdat het aantal gebruikers organisch groeit - het risico zit hem in een succesvolle Product Hunt-lancering die plotseling honderden e-mails afvuurt vanaf een koud domein.
 
-**Verstuur in het begin uitsluitend naar betrokken ontvangers.** Mensen die zich zojuist actief hebben geregistreerd en de e-mail verwachten. Vroege positieve interacties — opens, klikken, antwoorden en nul spamklachten — bouwen het vertrouwen op dat nodig is voor grotere volumes.
+**Verstuur in het begin uitsluitend naar betrokken ontvangers.** Mensen die zich zojuist actief hebben geregistreerd en de e-mail verwachten. Vroege positieve interacties - opens, klikken, antwoorden en nul spamklachten - bouwen het vertrouwen op dat nodig is voor grotere volumes.
 
 **Houd marketing en transactionele mail vanaf dag één strikt gescheiden.** Een beschadigde verzendreputatie herstellen na een mislukte bulkcampagne kost oneindig veel meer tijd dan het direct goed scheiden op aparte subdomeinen.
 
 ## Wanneer e-mail de primaire interface van je product is
 
-Voor sommige applicaties — facturatietools, planningssystemen, offertesoftware — is e-mail geen ondersteunend randverschijnsel, maar het daadwerkelijke product: de klant van jouw klant ontvangt het bericht. In dat geval liggen de kwaliteitseisen nog aanzienlijk hoger:
+Voor sommige applicaties - facturatietools, planningssystemen, offertesoftware - is e-mail geen ondersteunend randverschijnsel, maar het daadwerkelijke product: de klant van jouw klant ontvangt het bericht. In dat geval liggen de kwaliteitseisen nog aanzienlijk hoger:
 
 Drie toevoegingen zijn dan onmisbaar: **Verzenden via het eigen domein van de klant (custom sending domains)**, zodat slechte lijsthygiëne van Gebruiker A de afleverbaarheid van Gebruiker B niet kan beïnvloeden; **Zichtbare afleverstatussen in de gebruikersinterface**, zodat gebruikers direct zien of een factuur daadwerkelijk is afgeleverd, gebounced of nog in behandeling is; en **Een werkend retourkanaal**, aangezien zakelijke klanten steevast replyen op facturen en herinneringen.
 
@@ -153,7 +153,7 @@ Als jouw product e-mails verstuurt namens zijn eindgebruikers, behandel delivera
 
 Pim Haverkamp bouwde Urenboek in Lovable: een urenregistratie- en facturatietool voor freelance consultants rond Zoetermeer. Gebruikers voeren gewerkte uren in; de app genereert automatisch PDF-facturen en mailt deze rechtstreeks naar hun zakelijke opdrachtgevers.
 
-Vier maanden lang leek alles soepel te lopen. Totdat een freelance consultant Pim opbelde: haar grootste opdrachtgever had drie opeenvolgende facturen nooit ontvangen, terwijl ze in het dashboard van Urenboek alle drie op 'Verzonden' stonden. Nader onderzoek wees uit dat de app e-mails direct verstuurde vanaf de eigen cloudserver, zonder enige SPF-, DKIM- of DMARC-records op het domein en zonder enige bounce-registratie. Strikte zakelijke mailservers van corporates weigerden of gijzelden de berichten stelselmatig bij binnenkomst — precies de ontvangers die ertoe deden, aangezien elke factuur naar een bedrijf ging.
+Vier maanden lang leek alles soepel te lopen. Totdat een freelance consultant Pim opbelde: haar grootste opdrachtgever had drie opeenvolgende facturen nooit ontvangen, terwijl ze in het dashboard van Urenboek alle drie op 'Verzonden' stonden. Nader onderzoek wees uit dat de app e-mails direct verstuurde vanaf de eigen cloudserver, zonder enige SPF-, DKIM- of DMARC-records op het domein en zonder enige bounce-registratie. Strikte zakelijke mailservers van corporates weigerden of gijzelden de berichten stelselmatig bij binnenkomst - precies de ontvangers die ertoe deden, aangezien elke factuur naar een bedrijf ging.
 
 Niemand had eerder aan de bel getrokken omdat de storing aan beide kanten onzichtbaar was: de verzender zag de status 'Verzonden', en de ontvanger ontving simpelweg helemaal niets.
 
@@ -162,9 +162,9 @@ Vier werkdagen waren nodig om de e-mailarchitectuur professioneel in te richten:
 **Resultaat:** het gemeten afleverpercentage naar zakelijke mailboxen steeg van circa 65% naar ruim 98,5%. Bovendien toont de applicatie gebruikers nu direct een duidelijke melding wanneer een factuur bouncet, in plaats van stilzwijgend succes te claimen.
 
 > *"Mijn app vertelde iedereen vrolijk dat de facturen waren verzonden. Dat klopte technisch gezien ook, maar het was volkomen nutteloos. Want 'verzonden' en 'daadwerkelijk aangekomen' bleken twee totaal verschillende dingen te zijn."*
-> — **Pim Haverkamp, Oprichter, Urenboek (Zoetermeer)**
+> - **Pim Haverkamp, Oprichter, Urenboek (Zoetermeer)**
 
-**Kosten & Doorlooptijd:** € 1.450 (providerinrichting, DNS-authenticatie, templateherbouw, bounce-afhandeling en multi-platform verificatie) — afgerond binnen 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.450 (providerinrichting, DNS-authenticatie, templateherbouw, bounce-afhandeling en multi-platform verificatie) - afgerond binnen 4 werkdagen.
 
 ## Veelgestelde vragen
 

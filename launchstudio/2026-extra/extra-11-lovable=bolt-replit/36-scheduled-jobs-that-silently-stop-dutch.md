@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Je uptime-monitor kleurt geruststellend groen. Je error tracking (Sentry) blijft muisstil. Je applicatie draait al dertig dagen onafgebroken zonder ook maar één geregistreerd incident. En ondertussen is de wekelijkse overzichtsmail waar veertig betalende klanten op rekenen al sinds de twaalfde van vorige maand niet meer verzonden — simpelweg omdat een geplande cronjob ermee is opgehouden en niets in je software in staat is om op te merken dat iets wat had moeten gebeuren, níét is gebeurd.
+Je uptime-monitor kleurt geruststellend groen. Je error tracking (Sentry) blijft muisstil. Je applicatie draait al dertig dagen onafgebroken zonder ook maar één geregistreerd incident. En ondertussen is de wekelijkse overzichtsmail waar veertig betalende klanten op rekenen al sinds de twaalfde van vorige maand niet meer verzonden - simpelweg omdat een geplande cronjob ermee is opgehouden en niets in je software in staat is om op te merken dat iets wat had moeten gebeuren, níét is gebeurd.
 
 Dit is de blinde vlek van elk monitoringsysteem dat puur is ingericht op uptime. Uptime beantwoordt uitsluitend de vraag: *"Reageert de webserver op een inkomend verzoek?"* Het zegt helemaal niets over de vraag: *"Is de taak die vannacht om 03:00 uur had moeten draaien, daadwerkelijk succesvol afgerond?"* Bij de meeste vroege SaaS-producten luidt het antwoord op die tweede vraag op enig moment: nee.
 
@@ -36,7 +36,7 @@ In een volwaardige applicatie draait er veel meer op de achtergrond dan de meest
 - Automatische gegevensverwijdering conform AVG-bewaartermijnen.
 - Financiële reconciliatie tussen je eigen database en de betaalprovider (Stripe/Mollie).
 
-Elk van deze achtergrondprocessen deelt één risicovolle eigenschap: op het moment dat de taak draait, zit er geen menselijke gebruiker voor het scherm te wachten op het resultaat. Falen wordt daardoor pas veel later ontdekt — per toeval, of doordat een verontruste klant aan de bel trekt.
+Elk van deze achtergrondprocessen deelt één risicovolle eigenschap: op het moment dat de taak draait, zit er geen menselijke gebruiker voor het scherm te wachten op het resultaat. Falen wordt daardoor pas veel later ontdekt - per toeval, of doordat een verontruste klant aan de bel trekt.
 
 ## Waarom achtergrondtaken geruisloos stilvallen
 
@@ -46,7 +46,7 @@ Elk van deze achtergrondprocessen deelt één risicovolle eigenschap: op het mom
 
 **Een API-sleutel of token is verlopen.** De achtergrondtaak authenticeert tegen de database of een externe API met een geheime sleutel die onlangs is geroteerd. De taak faalt vervolgens bij elke poging op authenticatie.
 
-**Er trad een crash op en niemand luisterde.** De meest voorkomende oorzaak: een niet-afgevangen exception in de taak wordt weggeschreven naar een anonieme serverlog die niemand actief leest, zonder dat er een alert afgaat — de taak is immers geen inkomend HTTP-verzoek van een bezoeker.
+**Er trad een crash op en niemand luisterde.** De meest voorkomende oorzaak: een niet-afgevangen exception in de taak wordt weggeschreven naar een anonieme serverlog die niemand actief leest, zonder dat er een alert afgaat - de taak is immers geen inkomend HTTP-verzoek van een bezoeker.
 
 **Het platform heeft zijn configuratie gewijzigd.** Een cloudprovider verandert de syntax van zijn scheduler in een update die aan je aandacht is ontsnapt.
 
@@ -148,23 +148,23 @@ Als jouw applicatie zware taken uitstelt via wachtrijen in plaats van vaste tijd
 
 Steven Bogaerts bouwde Huurmaat in Lovable: een B2B-verhuurplatform voor professioneel bouwmaterieel voor circa negentig MKB-aannemers in Gelderland. Een dagelijkse nachtelijke taak stuurde herinneringsmails de dag vóórdat apparatuur geretourneerd moest worden, en een wekelijkse cronjob verifieerde borgbetalingen en openstaande facturen bij de betaalprovider.
 
-Beide taken stopten geruisloos op een dinsdag in maart, toen een software-update de naam van het backend-endpoint had gewijzigd. De webapplicatie functioneerde vlekkeloos en niemand merkte ook maar iets — gedurende vijf volle weken.
+Beide taken stopten geruisloos op een dinsdag in maart, toen een software-update de naam van het backend-endpoint had gewijzigd. De webapplicatie functioneerde vlekkeloos en niemand merkte ook maar iets - gedurende vijf volle weken.
 
 De gevolgen stapelden zich geruisloos op: te laat ingeleverd materieel nam fors toe omdat aannemers geen herinneringen meer kregen, twee huurders kregen per ongeluk een dubbele borg ingehouden omdat de automatische reconciliatietaak stillag, en een boze e-mail over een onterechte boete was de allereerste hint dat er iets structureel misging.
 
 In vijf werkdagen werd de achtergrondarchitectuur professioneel ingericht: een inventarisatie bracht zeven verschillende geplande taken aan het licht, waarvan twee compleet vergeten waren en eentje nog nooit succesvol had gedraaid; heartbeat-monitoring op alle zeven taken met mobiele alarmering zodra een succesmelding uitblijft; idempotentie ingebouwd zodat dubbel draaien nooit leidt tot duplicate mails of dubbele incasso's; database-locking tegen overlappende runs; batching en hervatbaarheid op de reconciliatietaak; planningen vastgezet op UTC (de zomertijdovergang in maart had eerder al tot dubbele mails geleid); en voor elke taak werd een handmatige triggerknop in de beheeromgeving gebouwd.
 
-**Resultaat:** twee daaropvolgende taakstoringen — een verlopen API-token en een time-out bij de betaalprovider — werden binnen zestig minuten gedetecteerd en opgelost in plaats van na weken. Het aantal te laat ingeleverde machines daalde binnen twee weken weer naar het normale lage niveau.
+**Resultaat:** twee daaropvolgende taakstoringen - een verlopen API-token en een time-out bij de betaalprovider - werden binnen zestig minuten gedetecteerd en opgelost in plaats van na weken. Het aantal te laat ingeleverde machines daalde binnen twee weken weer naar het normale lage niveau.
 
 > *"Mijn applicatie was de hele periode gewoon online. Hij was alleen stilletjes gestopt met drie van zijn belangrijkste kerntaken, en niets in mijn monitoring was in staat om mij dat te vertellen."*
-> — **Steven Bogaerts, Oprichter, Huurmaat (Arnhem)**
+> - **Steven Bogaerts, Oprichter, Huurmaat (Arnhem)**
 
-**Kosten & Doorlooptijd:** € 2.400 (taakinventarisatie, heartbeat-monitoring, idempotentie en locking, batchverwerking, handmatige triggers) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.400 (taakinventarisatie, heartbeat-monitoring, idempotentie en locking, batchverwerking, handmatige triggers) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Waarom detecteert gewone uptime-monitoring geen falende achtergrondtaak?
-Omdat uptime uitsluitend controleert of je webserver reageert op inkomende HTTP-verzoeken. Een geplande taak die niet start, genereert geen verzoek en geen respons — het probleem is een afwezigheid, wat vereist dat je monitort op het uitblijven van succesmeldingen.
+Omdat uptime uitsluitend controleert of je webserver reageert op inkomende HTTP-verzoeken. Een geplande taak die niet start, genereert geen verzoek en geen respons - het probleem is een afwezigheid, wat vereist dat je monitort op het uitblijven van succesmeldingen.
 
 ### Wat is een heartbeat-controle (dodemansknop)?
 Een mechanisme waarbij de achtergrondtaak na succesvolle afronding een ping stuurt naar een externe monitoringservice. Die externe service slaat automatisch alarm zodra de ping niet binnen het verwachte tijdsvenster binnenkomt.
@@ -188,7 +188,7 @@ Ja, om twee redenen: de taak dreigt te overlappen met de volgende uitvoering, en
       "name": "Waarom detecteert gewone uptime-monitoring geen falende achtergrondtaak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uptime controleert alleen of de webserver reageert. Een niet-uitgevoerde taak genereert geen verzoek — het symptoom is een afwezigheid, wat monitoring op ontbrekende succesmeldingen vereist."
+        "text": "Uptime controleert alleen of de webserver reageert. Een niet-uitgevoerde taak genereert geen verzoek - het symptoom is een afwezigheid, wat monitoring op ontbrekende succesmeldingen vereist."
       }
     },
     {
@@ -220,7 +220,7 @@ Ja, om twee redenen: de taak dreigt te overlappen met de volgende uitvoering, en
       "name": "Mijn nachtelijke taak duurde vroeger minuten en nu bijna een uur. Is dat een probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — de taak kan overlappen met de volgende run en de datagroei overstijgt het ontwerp. Voeg locks, batchverwerking en duur-alarmering toe."
+        "text": "Ja - de taak kan overlappen met de volgende run en de datagroei overstijgt het ontwerp. Voeg locks, batchverwerking en duur-alarmering toe."
       }
     }
   ]

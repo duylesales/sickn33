@@ -1,4 +1,4 @@
-Ask three mobile agencies "native or cross-platform?" and you'll get three confident, opposite answers — each matching the stack that agency happens to be staffed for. 📱⚖️
+Ask three mobile agencies "native or cross-platform?" and you'll get three confident, opposite answers - each matching the stack that agency happens to be staffed for. 📱⚖️
 
 **The Pain Points:**
 ❌ **Staffing Bias Disguised as Advice:** Vendors recommend whatever framework their existing bench already knows, not what your product needs.
@@ -8,7 +8,7 @@ Ask three mobile agencies "native or cross-platform?" and you'll get three confi
 **The Manifera Solution:**
 ✅ **Five-Variable Scoring Framework:** Score performance, native-API access, feature velocity, talent depth, and codebase cost against YOUR product before any vendor call.
 ✅ **Real Bench Depth, Both Stacks:** Engineers staffed on native AND cross-platform, so the recommendation isn't shaped by convenience.
-✅ **Hybrid Builds When They Fit:** 90% cross-platform, native modules only where hardware performance genuinely demands it — an option single-stack shops won't offer.
+✅ **Hybrid Builds When They Fit:** 90% cross-platform, native modules only where hardware performance genuinely demands it - an option single-stack shops won't offer.
 
 Score it before you sit through another confident, biased pitch. 🧮
 

@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Four Decisions Protected From Deadline Pressure:** Documented reasoning, pattern consistency, framework separation, and behavior-documenting tests.
-✅ **Amsterdam Strategic Governance:** Longevity-determining decisions protected — not eroded by default under pressure.
+✅ **Amsterdam Strategic Governance:** Longevity-determining decisions protected - not eroded by default under pressure.
 ✅ **Vietnam Execution Velocity:** Test coverage that functions as executable documentation, surviving team turnover.
 
 The people who built it took all the "why" with them. We spent months reconstructing what an afternoon of writing would have preserved. 🛡️

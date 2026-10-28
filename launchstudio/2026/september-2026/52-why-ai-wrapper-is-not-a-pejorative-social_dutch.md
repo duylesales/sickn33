@@ -1,6 +1,6 @@
-🚨 Stella, een tandheelkundig consultant, bouwde een afsprakenplatform met **Lovable**. De chatbot-interface leidde tot hoge uitval — patiënten wisten niet hoe ze hun verzoek moesten formuleren, waardoor personeel sneller de telefoon opnam. 💬
+🚨 Stella, een tandheelkundig consultant, bouwde een afsprakenplatform met **Lovable**. De chatbot-interface leidde tot hoge uitval - patiënten wisten niet hoe ze hun verzoek moesten formuleren, waardoor personeel sneller de telefoon opnam. 💬
 
-Critici noemen dit soort producten een "dunne AI-wrapper" — maar klanten kopen geen intelligentie, ze kopen wrijvingsloze workflows, en een leeg chatveld is dat zelden. 🧠
+Critici noemen dit soort producten een "dunne AI-wrapper" - maar klanten kopen geen intelligentie, ze kopen wrijvingsloze workflows, en een leeg chatveld is dat zelden. 🧠
 
 ❌ Een leeg chatvenster dat patiënten dwingt de "juiste" formulering te raden
 ❌ Complexe prompt-vereisten die tot hoge uitval leiden vóór een boeking is voltooid
@@ -12,7 +12,7 @@ Critici noemen dit soort producten een "dunne AI-wrapper" — maar klanten kopen
 
 Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort workflow-first architecturen via Manifera, met meer dan 160 projecten voor klanten als Vodafone en TNO. 🛡️
 
-Het voltooiingspercentage van Stella's boekingen steeg met 45%. (€2.400 (Workflow Design Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Het voltooiingspercentage van Stella's boekingen steeg met 45%. (€2.400 (Workflow Design Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Lees de volledige analyse: https://launchstudio.eu/nl/blog/why-ai-wrapper-is-not-a-pejorative
 

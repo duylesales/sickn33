@@ -20,7 +20,7 @@ Target Persona: Agency / Freelancer (white-label partner)
 }
 </script>
 
-A client who commissioned a product hands you a system somebody else made. A client who built it themselves hands you something they made, at night, over four months, while running a business — and that difference changes everything about the engagement.
+A client who commissioned a product hands you a system somebody else made. A client who built it themselves hands you something they made, at night, over four months, while running a business - and that difference changes everything about the engagement.
 
 They are proud of it, which is reasonable. They are slightly embarrassed about it, which is also reasonable. They have heard that what they built is probably insecure, and they do not know whether that is true or a story developers tell. And they are worried that hiring you means being told to throw it away.
 
@@ -44,7 +44,7 @@ Every one of these is addressable in the first conversation, and addressing them
 
 **Start with what works.** Something in the product functions and customers use it. Say so, specifically. "The booking flow is clean and your customers clearly understand it" costs nothing and changes the entire tone.
 
-**Separate the interface from the infrastructure.** This is the single most useful framing available. What they built — the screens, the flow, the product decisions — is usually good, because they know their customers. What is missing is the invisible half: access rules, secrets, backups, monitoring, deployment. Telling them the visible part stays and the invisible part gets fixed removes the rebuild fear immediately, and it happens to be true.
+**Separate the interface from the infrastructure.** This is the single most useful framing available. What they built - the screens, the flow, the product decisions - is usually good, because they know their customers. What is missing is the invisible half: access rules, secrets, backups, monitoring, deployment. Telling them the visible part stays and the invisible part gets fixed removes the rebuild fear immediately, and it happens to be true.
 
 **Be specific rather than general.** "It's insecure" is an insult. "Any logged-in customer can read every other customer's invoices by changing a number in the address, and I can show you in two minutes" is information. Show them. The demonstration converts more reliably than any argument, and it is the moment the conversation stops being about whether to hire you.
 
@@ -52,7 +52,7 @@ Every one of these is addressable in the first conversation, and addressing them
 
 ## Assess Before You Quote, and Charge For It
 
-A paid assessment — two to four hours, a few hundred euros, credited against the engagement if they proceed — solves several problems at once.
+A paid assessment - two to four hours, a few hundred euros, credited against the engagement if they proceed - solves several problems at once.
 
 It gives you the information to quote a fixed price accurately, which is impossible from a demo. It filters people who are shopping for free advice. It gives them something of value even if they go no further, which protects your reputation. And it converts the relationship from a sales conversation into work, which is where you are more convincing anyway.
 
@@ -64,15 +64,15 @@ Write that document for the founder, not for a developer. They will read it, and
 
 Keep it small and definite. A first engagement that succeeds is worth more than a large one that drifts.
 
-Take the top findings, define each as a deliverable with a verifiable outcome, put a fixed price and a delivery date on the set, and exclude everything else explicitly — no new features, no redesign, one integration named.
+Take the top findings, define each as a deliverable with a verifiable outcome, put a fixed price and a delivery date on the set, and exclude everything else explicitly - no new features, no redesign, one integration named.
 
-Then deliver in a way that keeps them able to work. Conventional structure, no unnecessary abstraction, comments where a decision was non-obvious, and a short written note of what changed and why. If they can still open the project and add a field afterwards, you have kept the thing they valued most about building it themselves — and you will be called again.
+Then deliver in a way that keeps them able to work. Conventional structure, no unnecessary abstraction, comments where a decision was non-obvious, and a short written note of what changed and why. If they can still open the project and add a field afterwards, you have kept the thing they valued most about building it themselves - and you will be called again.
 
 ## The Work Is Usually the Same
 
 After a dozen of these you will stop being surprised. The findings repeat: access rules absent or permissive, a privileged key in the frontend, data written somewhere that does not survive a redeploy, no backups or none ever restored, secrets in files, no error tracking, a webhook with no signature verification, uploads in a public bucket with guessable names, and a schema that exists only in a dashboard.
 
-That repetition is an asset. It lets you productise — a named package with a fixed price and a known duration — and it makes your estimates accurate, because you have seen this project before under a different name.
+That repetition is an asset. It lets you productise - a named package with a fixed price and a known duration - and it makes your estimates accurate, because you have seen this project before under a different name.
 
 ## What Not to Do
 
@@ -86,21 +86,21 @@ That repetition is an asset. It lets you productise — a named package with a f
 
 ## Where the Work Comes From
 
-These clients are not searching for "developer". They search for their problem — how to make a Lovable app secure, what happens when a customer's procurement team asks about data, why their app slowed down at 300 users.
+These clients are not searching for "developer". They search for their problem - how to make a Lovable app secure, what happens when a customer's procurement team asks about data, why their app slowed down at 300 users.
 
 Which means the way to reach them is to answer those questions publicly, in plain language, in Dutch as well as English. One useful page about a specific problem outperforms a portfolio, because it demonstrates the thing they are actually buying: that you understand what is wrong and can explain it without making them feel foolish.
 
 ## The Second Engagement Is Where the Business Is
 
-A first engagement pays for itself. A second one makes the client relationship an asset, and with this particular type of client the second one is unusually likely — if you set it up.
+A first engagement pays for itself. A second one makes the client relationship an asset, and with this particular type of client the second one is unusually likely - if you set it up.
 
 **Finish by telling them what is next.** The assessment found more than you fixed. Hand over the remaining items, ordered, with what each would cost and what triggers it: "the multi-tenancy work matters when you sign a customer with more than one employee", "the reporting queries will need attention around a thousand records per customer". This is not upselling; it is the roadmap they cannot write themselves, and founders keep it.
 
-**Offer maintenance, priced modestly.** Monitoring, updates, backups verified, small fixes, a monthly note. It is the arrangement that keeps you in contact, and contact is what produces the next project — because you will notice what needs doing before they do.
+**Offer maintenance, priced modestly.** Monitoring, updates, backups verified, small fixes, a monthly note. It is the arrangement that keeps you in contact, and contact is what produces the next project - because you will notice what needs doing before they do.
 
 **Stay reachable for small things.** A founder who can ask you a two-minute question without opening a negotiation will bring you the two-week project when it arrives. Build that into the maintenance fee rather than billing it, and the goodwill compounds.
 
-**Check in when their business changes.** A new customer segment, a first enterprise contract, a growth spurt — each has technical consequences you can predict and they cannot. A message that says "you mentioned you were pitching a housing association; that will bring questions about data separation, and here is what that costs to prepare" is worth more than any marketing you could do.
+**Check in when their business changes.** A new customer segment, a first enterprise contract, a growth spurt - each has technical consequences you can predict and they cannot. A message that says "you mentioned you were pitching a housing association; that will bring questions about data separation, and here is what that costs to prepare" is worth more than any marketing you could do.
 
 **Ask for the introduction.** Founders who built their own products know other founders who built their own products. This is the most reliable source of this kind of work, and almost nobody asks, because asking feels awkward at exactly the moment the client is most pleased with you.
 
@@ -108,7 +108,7 @@ The economics are straightforward. Acquiring one of these clients takes an asses
 
 ## When the Work Is Bigger Than You
 
-Some engagements exceed what one freelancer should take on alone — multi-tenancy across a live product, a migration with real data, a security programme for a customer with a procurement process.
+Some engagements exceed what one freelancer should take on alone - multi-tenancy across a live product, a migration with real data, a security programme for a customer with a procurement process.
 
 LaunchStudio takes that work on a white-label basis, delivered under your brand on fixed scope and fixed price, so you keep the client relationship and quote with confidence. The engineers are Manifera's: eleven years, 160+ projects, clients including Vodafone, TNO and CFLW, working from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City.
 
@@ -120,20 +120,20 @@ LaunchStudio takes that work on a white-label basis, delivered under your brand 
 
 Yara Postma works as a freelance vibe coding developer in Delft, taking on Lovable and Bolt projects for founders who built them personally. Her first year was frustrating: prospects arrived interested, she explained what was wrong, and roughly two in ten proceeded.
 
-The pattern in the losses was consistent. She had been describing problems in general terms — the app was insecure, it needed proper architecture, the data layer was not production-ready — and founders heard a developer preparing to charge them for a rebuild of something that worked fine.
+The pattern in the losses was consistent. She had been describing problems in general terms - the app was insecure, it needed proper architecture, the data layer was not production-ready - and founders heard a developer preparing to charge them for a rebuild of something that worked fine.
 
 She changed two things. She introduced a paid assessment at €300, credited against any engagement. And in the first call she stopped describing and started demonstrating: two browser windows, two accounts, one customer's records opened from the other account by changing a number.
 
 The demonstration takes four minutes. Every founder she has shown it to has understood immediately, and none has argued.
 
-Her assessment document changed too. Findings ranked by severity, each written in plain language with what it means for the business — "a customer's competitor could read their prices", not "missing row level security" — and each with a fixed price to fix. The last page lists what is already good about the product, which she reports is the page founders mention.
+Her assessment document changed too. Findings ranked by severity, each written in plain language with what it means for the business - "a customer's competitor could read their prices", not "missing row level security" - and each with a fixed price to fix. The last page lists what is already good about the product, which she reports is the page founders mention.
 
 **Result:** over the following year, 23 of 31 assessments converted into engagements averaging €2,700. Four founders who did not proceed immediately came back within six months, three of them after a customer asked them a security question they could not answer. Two now send her their own referrals.
 
 > *"I was telling founders their product was insecure and watching them stop listening. Now I show them one screen for four minutes and they ask me what it costs to fix."*
-> — **Yara Postma, Freelance vibe coding developer (Delft)**
+> - **Yara Postma, Freelance vibe coding developer (Delft)**
 
-**Cost & Timeline:** Assessment restructured to €300 fixed, credited against engagements averaging €2,700 — change implemented in one week.
+**Cost & Timeline:** Assessment restructured to €300 fixed, credited against engagements averaging €2,700 - change implemented in one week.
 
 ## Frequently Asked Questions
 
@@ -155,7 +155,7 @@ Small and definite: the top findings as deliverables with verifiable outcomes, a
 
 ### How do these clients find a developer?
 
-Not by searching for one. They search for their problem — making an app secure, answering a customer's data questions, why it slowed down. Answering those questions publicly in plain language reaches them better than a portfolio.
+Not by searching for one. They search for their problem - making an app secure, answering a customer's data questions, why it slowed down. Answering those questions publicly in plain language reaches them better than a portfolio.
 
 <script type="application/ld+json">
 {
@@ -175,7 +175,7 @@ Not by searching for one. They search for their problem — making an app secure
       "name": "How do I explain the problems without insulting them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Separate interface from infrastructure — what they built stays, the invisible half gets fixed — and demonstrate one concrete flaw rather than describing many."
+        "text": "Separate interface from infrastructure - what they built stays, the invisible half gets fixed - and demonstrate one concrete flaw rather than describing many."
       }
     },
     {
@@ -183,7 +183,7 @@ Not by searching for one. They search for their problem — making an app secure
       "name": "Should I charge for an assessment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — a few hundred euros credited against the engagement gives you quoting information, filters prospects and starts the relationship as work."
+        "text": "Yes - a few hundred euros credited against the engagement gives you quoting information, filters prospects and starts the relationship as work."
       }
     },
     {

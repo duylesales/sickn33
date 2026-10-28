@@ -1,4 +1,4 @@
-Every new market used to mean weeks of unplanned layout bug fixes — and it never got easier, no matter how many languages had already shipped. Translation was never the hard part. 🌍🧵
+Every new market used to mean weeks of unplanned layout bug fixes - and it never got easier, no matter how many languages had already shipped. Translation was never the hard part. 🌍🧵
 
 **The Pain Points:**
 ❌ **Hardcoded Text:** Strings buried in code, requiring a retrofit for every language added.

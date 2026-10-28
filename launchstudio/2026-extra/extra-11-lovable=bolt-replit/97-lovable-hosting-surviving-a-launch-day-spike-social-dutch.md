@@ -2,7 +2,7 @@
 
 Het lag vijftig minuten plat, en de organisator moest de opening verplaatsen. Dit breekt onder een piek op lanceerdag:
 
-❌ Een nieuwe databaseverbinding per verzoek — de limiet bereikt bij zo'n 90 gelijktijdige gebruikers
+❌ Een nieuwe databaseverbinding per verzoek - de limiet bereikt bij zo'n 90 gelijktijdige gebruikers
 ❌ "Nog beschikbare plaatsen" geteld met een scan over een tabel zonder index, bij elke refresh
 ❌ De limiet van de e-mailprovider binnen vier minuten bereikt, dus mensen die al ingeschreven waren schreven zich opnieuw in
 ❌ Een landingspagina die de app opbouwde in plaats van als statisch bestand te serveren
@@ -14,7 +14,7 @@ Het lag vijftig minuten plat, en de organisator moest de opening verplaatsen. Di
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, testen we uw lancering onder belasting vóórdat uw klanten dat doen. 🏁
 
-💡 Het resultaat: na zeven werkdagen en € 4.400 verwerkte de verplaatste opening 4.100 inschrijvingen in negen minuten, zonder downtime en met een piekresponstijd van 1,2 seconde. De 31 dubbele inschrijvingen werden terugbetaald — en de organisator heeft sindsdien drie extra evenementen ondergebracht. 🚀
+💡 Het resultaat: na zeven werkdagen en € 4.400 verwerkte de verplaatste opening 4.100 inschrijvingen in negen minuten, zonder downtime en met een piekresponstijd van 1,2 seconde. De 31 dubbele inschrijvingen werden terugbetaald - en de organisator heeft sindsdien drie extra evenementen ondergebracht. 🚀
 
 👉 Een piek op lanceerdag overleven: https://launchstudio.eu/nl/blog/lovable-hosting-surviving-a-launch-day-spike
 

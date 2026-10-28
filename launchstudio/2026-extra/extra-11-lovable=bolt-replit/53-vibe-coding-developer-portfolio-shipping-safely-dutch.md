@@ -20,7 +20,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 }
 </script>
 
-Een portfolio vol met AI gebouwde projecten kampt met een heel specifiek probleem: alles ziet er waanzinnig indrukwekkend uit, en niets bewijst ook maar iets. Twaalf gepolijste screenshots van twaalf strakke interfaces tonen uitsluitend aan dat je snel een mooie gebruikersinterface in elkaar kunt zetten — wat de opdrachtgever al wist — en geven geen enkel antwoord op de vraag waar die klant daadwerkelijk wakker van ligt.
+Een portfolio vol met AI gebouwde projecten kampt met een heel specifiek probleem: alles ziet er waanzinnig indrukwekkend uit, en niets bewijst ook maar iets. Twaalf gepolijste screenshots van twaalf strakke interfaces tonen uitsluitend aan dat je snel een mooie gebruikersinterface in elkaar kunt zetten - wat de opdrachtgever al wist - en geven geen enkel antwoord op de vraag waar die klant daadwerkelijk wakker van ligt.
 
 Die vraag wordt zelden hardop uitgesproken. Hij luidt: *als ik deze persoon mijn software toevertrouw, blijft het dan overeind zodra honderd onbekenden er tegelijk op inloggen, en kom ik erachter vóórdat mijn betalende klanten er last van hebben?*
 
@@ -54,7 +54,7 @@ Het meest overtuigende bewijsmateriaal is het bewijs dat iets dat jij hebt gebou
 
 Houd het strak bij zes regels, en hanteer voor elk project exact dezelfde opbouw:
 
-Wat de app doet en wie hem gebruikt. Wat jij zelf hebt gebouwd versus wat er al stond — klanten waarderen eerlijkheid hierover vele malen meer dan loze claims. Welke AI- en ontwikkeltools zijn gebruikt. Wat je hebt gedaan aan de productiefactoren: autorisatieregels (RLS), geheimenbeheer, betalingsverkeer, deployment en back-ups. Een technisch probleem dat zich voordeed en hoe je het hebt opgelost. En wat de klant na afloop zelfstandig kon doen zonder jouw hulp.
+Wat de app doet en wie hem gebruikt. Wat jij zelf hebt gebouwd versus wat er al stond - klanten waarderen eerlijkheid hierover vele malen meer dan loze claims. Welke AI- en ontwikkeltools zijn gebruikt. Wat je hebt gedaan aan de productiefactoren: autorisatieregels (RLS), geheimenbeheer, betalingsverkeer, deployment en back-ups. Een technisch probleem dat zich voordeed en hoe je het hebt opgelost. En wat de klant na afloop zelfstandig kon doen zonder jouw hulp.
 
 Die laatste regel is degene die de opdracht binnenhaalt. Een opdrachtgever die leest: "hij leverde het gedocumenteerd op en ik heb de maand erna zelfstandig twee nieuwe modules gebouwd in Lovable" ziet zijn grootste angst direct weggenomen.
 
@@ -64,7 +64,7 @@ Werk je met AI-gegenereerde code, dan is een korte toelichting op jouw beveiligi
 
 Het hoeft geen academisch betoog te zijn. Vier zinnen die jouw standaardwerkwijze beschrijven: dat je Row Level Security per tabel configureert en test door te proberen in te breken, dat bevoorrechte sleutels (`service_role`) nooit in browsercode belanden, dat alle invoervalidatie aan de serverkant plaatsvindt, en dat je beveiliging verifieert met actieve tests in plaats van aan te nemen dat de AI het wel goed heeft gedaan.
 
-Zakelijke klanten kunnen jouw code niet lezen. Ze kunnen echter feilloos beoordelen of jij een gestructureerde methode hanteert — en het expliciet benoemen van die methode plaatst je direct mijlenver voor op de concurrentie, waar het eerlijke antwoord luidt dat niemand de security ooit heeft gecontroleerd.
+Zakelijke klanten kunnen jouw code niet lezen. Ze kunnen echter feilloos beoordelen of jij een gestructureerde methode hanteert - en het expliciet benoemen van die methode plaatst je direct mijlenver voor op de concurrentie, waar het eerlijke antwoord luidt dat niemand de security ooit heeft gecontroleerd.
 
 ## Eerlijk Communiceren Over AI-Tools
 
@@ -78,7 +78,7 @@ De formulering die wél werkt: jij bouwt razendsnel met behulp van geavanceerde 
 
 ## Wat Je Beter Kunt Weglaten
 
-Projecten die nooit echte gebruikers hebben gehad, tenzij expliciet gelabeld als visueel ontwerpexperiment. Losse screenshots zonder context. Logo's van frameworks als vervanging voor daadwerkelijke vaardigheden. Claims over 'ijzersterke beveiliging' waar je geen concrete werkwijze aan kunt koppelen. En klantprojecten die je niet bij naam mag noemen — beschrijf die liever geanonimiseerd met rijke technische details, dan simpelweg een anoniem logo zonder toelichting te plaatsen.
+Projecten die nooit echte gebruikers hebben gehad, tenzij expliciet gelabeld als visueel ontwerpexperiment. Losse screenshots zonder context. Logo's van frameworks als vervanging voor daadwerkelijke vaardigheden. Claims over 'ijzersterke beveiliging' waar je geen concrete werkwijze aan kunt koppelen. En klantprojecten die je niet bij naam mag noemen - beschrijf die liever geanonimiseerd met rijke technische details, dan simpelweg een anoniem logo zonder toelichting te plaatsen.
 
 Kwantiteit werkt hier tegen je. Vier projecten die diepgaand en eerlijk zijn beschreven presteren oneindig veel beter dan twaalf oppervlakkige tegels, omdat een serieuze koper zoekt naar overtuigend bewijs in plaats van een etalage vol plaatjes.
 
@@ -86,7 +86,7 @@ Kwantiteit werkt hier tegen je. Vier projecten die diepgaand en eerlijk zijn bes
 
 Een volstrekt eerlijke uitgangspositie voor veel starters, en eentje die je binnen enkele weken oplost in plaats van jaren:
 
-**Neem één ding dat je hebt gemaakt en lanceer het echt.** Een kleine tool met tien echte gebruikers leert jou — en stelt je in staat te demonstreren — meer dan tien losse prototypes. Koppel een eigen domein, richt foutopsporing in, maak een back-up en herstel die, en los je eerste live bug op.
+**Neem één ding dat je hebt gemaakt en lanceer het echt.** Een kleine tool met tien echte gebruikers leert jou - en stelt je in staat te demonstreren - meer dan tien losse prototypes. Koppel een eigen domein, richt foutopsporing in, maak een back-up en herstel die, en los je eerste live bug op.
 
 **Harden een bestaand prototype en documenteer het proces.** Neem je eigen AI-prototype, voer de security-audits uit, repareer wat je aantreft en schrijf een beknopte case over wat je hebt gedaan. Dat verslag is volwaardig portfoliomateriaal, juist omdat het je methodische aanpak bewijst.
 
@@ -104,7 +104,7 @@ Verschuiven tussen die twee posities is puur een kwestie van bewijsvoering. Exac
 
 Een veelvoorkomende situatie bij ontwerpbureaus en no-code agencies: de klantrelatie, de branding en de prototypevaardigheden zijn uitstekend; de diepgaande backend- en security-engineering ontbreekt, en een fulltime senior developer aannemen is bedrijfseconomisch riskant gezien de wisselende projectvraag.
 
-De oplossing is een discrete productiepartner — jouw bureau behoudt de klant en de facturatie, terwijl een gespecialiseerde partij onder geheimhouding (NDA) de technische afronding verzorgt. LaunchStudio treedt regelmatig op als white-label partner voor Nederlandse freelancers en agencies: wij leveren het last-mile hardeningtraject op vaste prijs, zodat de klantervaring volledig van jou blijft, compleet met een overdrachtsdocument dat je onder eigen vlag kunt overhandigen.
+De oplossing is een discrete productiepartner - jouw bureau behoudt de klant en de facturatie, terwijl een gespecialiseerde partij onder geheimhouding (NDA) de technische afronding verzorgt. LaunchStudio treedt regelmatig op als white-label partner voor Nederlandse freelancers en agencies: wij leveren het last-mile hardeningtraject op vaste prijs, zodat de klantervaring volledig van jou blijft, compleet met een overdrachtsdocument dat je onder eigen vlag kunt overhandigen.
 
 Het levert je bovendien direct de succesvol gelanceerde projecten op voor je eigen portfolio. Hierachter staat Manifera: elf jaar productie-engineering voor partijen als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
@@ -130,7 +130,7 @@ Drie twijfels spelen bij vrijwel elke potentiële klant, en een portfolio dat ze
 
 **"Kan ik de app later zelf aanpassen zonder jou?"** Maak duidelijk dat de code modulair, gedocumenteerd en AI-leesbaar blijft in hun eigen Lovable-omgeving, en dat je dit samen verifieert vóór de afronding.
 
-**"Hoe weet ik zeker dat het veilig is?"** Geen verzoek om ISO-certificaten, maar een heldere beschrijving van je auditmethode — wat je checkt, hoe je autorisatie test, en wat je overhandigt.
+**"Hoe weet ik zeker dat het veilig is?"** Geen verzoek om ISO-certificaten, maar een heldere beschrijving van je auditmethode - wat je checkt, hoe je autorisatie test, en wat je overhandigt.
 
 Het vooraf beantwoorden van deze vragen filtert bovendien automatisch de koopjesjagers eruit, wat precies de klanten zijn die geen enkele waarde hechten aan het werk dat nodig is nadat de interface af is.
 
@@ -144,12 +144,12 @@ Het probleem was dat niets in zijn portfolio inging op risico. Potentiële klant
 
 Hij herschreef zijn portfolio in één weekend. Vier projecten in plaats van elf, elk met zes concrete regels: wat er gebouwd was, wat er al stond, wat hij had gedaan aan autorisatie (RLS) en deployment, een storing die optrad en hoe hij die oploste, en wat de klant na afloop zelfstandig kon. Hij voegde een paragraaf van vier zinnen toe over zijn beveiligingsmethode, en een eerlijke toelichting dat hij snel bouwt met AI-tools en de productielaag eronder vakkundig met de hand aanbrengt.
 
-Daarnaast nam hij twee weken de tijd om een eigen kleine tool compleet volgens het boekje te lanceren — eigen domein, monitoring, geteste back-up — zodat hij ten minste één live draaiend product kon aantonen dat hij zelf operationeel beheerde.
+Daarnaast nam hij twee weken de tijd om een eigen kleine tool compleet volgens het boekje te lanceren - eigen domein, monitoring, geteste back-up - zodat hij ten minste één live draaiend product kon aantonen dat hij zelf operationeel beheerde.
 
 **Resultaat:** zijn conversie van eerste gesprek naar getekende opdracht verdubbelde in het daaropvolgende kwartaal, en hij schoof op van concurreren op prototypeprijzen naar het offreren van volwaardige productietrajecten. Twee zakelijke klanten gaven expliciet aan dat de beveiligingsparagraaf de doorslag gaf om voor hem te kiezen.
 
 > *"Ik liet mensen prachtige ontwerpen zien en verloor van ontwikkelaars met lelijkere ontwerpen en lagere prijzen. Niemand kocht screenshots. Ze kochten de zekerheid dat het niet mis zou gaan."*
-> — **Tim Roorda, Freelance developer (Groningen)**
+> - **Tim Roorda, Freelance developer (Groningen)**
 
 **Kosten & Doorlooptijd:** Twee weekenden werk aan het portfolio, plus twee weken om één eigen tool netjes naar productie te brengen.
 
@@ -169,7 +169,7 @@ Integendeel. Een portfolio waarin nooit iets misging is ongeloofwaardig voor ied
 
 ### Hoe bouw ik bewijs op als al mijn eerdere werk uit prototypes bestaat?
 
-Lanceer één klein eigen product helemaal volgens de regels — met monitoring, staging en een geteste back-up. Neem daarnaast een bestaand prototype, beveilig de datalaag grondig en schrijf een case over de methode die je hebt gehanteerd. Beide leveren binnen enkele weken overtuigend portfoliomateriaal op.
+Lanceer één klein eigen product helemaal volgens de regels - met monitoring, staging en een geteste back-up. Neem daarnaast een bestaand prototype, beveilig de datalaag grondig en schrijf een case over de methode die je hebt gehanteerd. Beide leveren binnen enkele weken overtuigend portfoliomateriaal op.
 
 ### Hoe kan ik als agency productietrajecten aanbieden zonder eigen senior engineers?
 

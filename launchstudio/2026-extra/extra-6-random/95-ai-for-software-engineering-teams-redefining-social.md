@@ -1,4 +1,4 @@
-🧩 Merlijn Wormer scaled TeamGrip from a solo Lovable prototype into a company with a five-person engineering team — and kept pushing AI-generated features straight to production the way he always had. 😳
+🧩 Merlijn Wormer scaled TeamGrip from a solo Lovable prototype into a company with a five-person engineering team - and kept pushing AI-generated features straight to production the way he always had. 😳
 
 The tool didn't change. What it means inside your company does. 🧠
 

@@ -81,7 +81,7 @@ An AI-generated checkout button is a great start, but it is not a billing system
 
 - The Stripe Customer Portal allows users to self-manage cards and invoices, saving you massive support time.
 
-- Downgrades must be handled gracefully—lock features, but do not delete user data.
+- Downgrades must be handled gracefully - lock features, but do not delete user data.
 
 - Configuring dunning (payment recovery) prevents involuntary churn from expired credit cards.
 
@@ -101,7 +101,7 @@ Mia partnered with **LaunchStudio (by Manifera)** to make the product launch-rea
 
 **Result:** Mia automated subscription lifecycle updates, preventing feature abuse and reducing churn overhead.
 
-**Cost & Timeline:** €1,400 (Subscription Ops Package) — production-ready and deployed in 5 business days.
+**Cost & Timeline:** €1,400 (Subscription Ops Package) - production-ready and deployed in 5 business days.
 
 ---
 
@@ -116,7 +116,7 @@ SaaS is a recurring business model. A checkout button handles Day 1, but you nee
 
 ### What is the Stripe Customer Portal?
 
-It is a secure page hosted by Stripe where your users can manage their subscriptions, update credit cards, download invoices, and cancel—saving you from building these interfaces from scratch.
+It is a secure page hosted by Stripe where your users can manage their subscriptions, update credit cards, download invoices, and cancel - saving you from building these interfaces from scratch.
 
 ### How does my app know if a user's subscription expires?
 
@@ -148,7 +148,7 @@ LaunchStudio, operated by senior engineers from Manifera (founded in 2014), impl
       "name": "What is the Stripe Customer Portal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is a secure page hosted by Stripe where your users can manage their subscriptions, update credit cards, download invoices, and cancel—saving you from building these interfaces from scratch."
+        "text": "It is a secure page hosted by Stripe where your users can manage their subscriptions, update credit cards, download invoices, and cancel - saving you from building these interfaces from scratch."
       }
     },
     {

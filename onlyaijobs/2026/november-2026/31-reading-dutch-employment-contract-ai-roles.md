@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Reading a Dutch Employment Contract for an AI Role: The Clauses That Matter Before You Sign",
-  "description": "A practical guide to the clauses in a Dutch employment contract that matter most for AI and data professionals — contract type, probation, non-compete and non-solicitation clauses, intellectual property, side activities, training costs, pension and more.",
+  "description": "A practical guide to the clauses in a Dutch employment contract that matter most for AI and data professionals - contract type, probation, non-compete and non-solicitation clauses, intellectual property, side activities, training costs, pension and more.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-16",
@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-After weeks of interviews, a technical assessment and a salary negotiation, the offer arrives — and with it, a contract of several pages, sometimes in Dutch, sometimes in English, often referring to a collective agreement or staff handbook you have not read. Many AI and data professionals sign quickly, relieved that the process is over. That is understandable, but it can be costly. A few clauses in a Dutch employment contract can significantly affect your freedom to change jobs, work on side projects, publish open-source code or leave without repaying training costs. This guide explains the clauses that matter most, so you know what to check and what to ask before signing.
+After weeks of interviews, a technical assessment and a salary negotiation, the offer arrives - and with it, a contract of several pages, sometimes in Dutch, sometimes in English, often referring to a collective agreement or staff handbook you have not read. Many AI and data professionals sign quickly, relieved that the process is over. That is understandable, but it can be costly. A few clauses in a Dutch employment contract can significantly affect your freedom to change jobs, work on side projects, publish open-source code or leave without repaying training costs. This guide explains the clauses that matter most, so you know what to check and what to ask before signing.
 
 This article provides general information, not legal advice. For your specific situation, consult an employment lawyer, your union or the free legal information service **Juridisch Loket**.
 
@@ -104,7 +104,7 @@ For AI professionals who teach, freelance, consult or build startups alongside t
 
 ## Training Costs (Studiekostenbeding)
 
-Employers sometimes require repayment of training costs if an employee leaves within a certain period. Since August 2022, training that an employer is legally or contractually obliged to provide — for example, training required under a collective agreement or law to perform the job — must be free of charge, count as working time where possible and may not be subject to a repayment clause. For other training, repayment clauses remain possible if clearly agreed.
+Employers sometimes require repayment of training costs if an employee leaves within a certain period. Since August 2022, training that an employer is legally or contractually obliged to provide - for example, training required under a collective agreement or law to perform the job - must be free of charge, count as working time where possible and may not be subject to a repayment clause. For other training, repayment clauses remain possible if clearly agreed.
 
 **What to check.** Which training is covered, how long the repayment obligation lasts and whether the amount decreases over time. Expensive certifications or conference programmes may come with repayment conditions.
 
@@ -142,7 +142,7 @@ A Dutch employment contract is often only a few pages long because many conditio
 
 **Staff handbooks and policies.** Many employers have a staff handbook or set of policies covering topics such as remote work, expenses, mobility budgets, IT use, confidentiality and use of AI tools. Contracts often declare these policies applicable. Because employers can sometimes change policies more easily than contracts, it is worth checking which conditions are in the contract itself and which are in policies.
 
-For AI professionals, policies on the use of external AI tools, open-source contributions and publishing research are increasingly common. Ask for these documents early: they can reveal important restrictions — or useful benefits — that the contract does not mention.
+For AI professionals, policies on the use of external AI tools, open-source contributions and publishing research are increasingly common. Ask for these documents early: they can reveal important restrictions - or useful benefits - that the contract does not mention.
 
 ## A Concrete Scenario: The Clause That Blocked a Move
 

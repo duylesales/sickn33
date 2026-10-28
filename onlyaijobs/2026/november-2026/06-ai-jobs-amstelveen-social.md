@@ -2,7 +2,7 @@
 
 ✈️ Amstelveen hosts KLM's headquarters, KPMG's Dutch head office and Canon's European headquarters. That means revenue management and demand forecasting, disruption recovery when a storm scrambles crews and aircraft, predictive maintenance at KLM Engineering & Maintenance, and audit analytics that test full transaction populations instead of samples.
 
-📜 EASA rules, AFM supervision, the CSRD and the AI Act decide how far models may go — and AI assurance is becoming a service in itself.
+📜 EASA rules, AFM supervision, the CSRD and the AI Act decide how far models may go - and AI assurance is becoming a service in itself.
 
 ✅ One lesson from operations: a prediction nobody can act on has little value. Show why a flight will be late, not just that it will be.
 

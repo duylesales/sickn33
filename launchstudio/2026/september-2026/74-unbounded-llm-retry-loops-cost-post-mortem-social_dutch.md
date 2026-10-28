@@ -1,4 +1,4 @@
-💸 Niels bouwde een document-samenvatter met **Cursor** — één beschadigde PDF activeerde een oneindige retry loop, waardoor een OpenAI-budget van $180/maand binnen negen dagen explodeerde naar een factuur van $6.400. 😳
+💸 Niels bouwde een document-samenvatter met **Cursor** - één beschadigde PDF activeerde een oneindige retry loop, waardoor een OpenAI-budget van $180/maand binnen negen dagen explodeerde naar een factuur van $6.400. 😳
 
 Als uw AI SaaS mislukte LLM-aanroepen herhaalt zonder maximum aantal pogingen, exponential backoff of een hard bestedingsplafond, kan één enkel corrupt invoerbestand leiden tot een vijfcijferige rekening zonder dat er één foutmelding optreedt.
 
@@ -12,7 +12,7 @@ Als uw AI SaaS mislukte LLM-aanroepen herhaalt zonder maximum aantal pogingen, e
 
 Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 op via Manifera, verspreid over 160+ projecten. 🛡️
 
-Niels' OpenAI-uitgaven daalden terug naar een voorspelbare $150-220/maand, en het volgende corrupte bestand kostte minder dan $2 (€1.900 (Launch & Grow Pakket) — geïmplementeerd in 7 werkdagen). 🚀
+Niels' OpenAI-uitgaven daalden terug naar een voorspelbare $150-220/maand, en het volgende corrupte bestand kostte minder dan $2 (€1.900 (Launch & Grow Pakket) - geïmplementeerd in 7 werkdagen). 🚀
 
 👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/unbounded-llm-retry-loops-cost-post-mortem
 

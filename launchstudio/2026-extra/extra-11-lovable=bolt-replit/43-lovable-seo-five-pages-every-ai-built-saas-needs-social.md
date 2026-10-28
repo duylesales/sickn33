@@ -14,7 +14,7 @@ A single landing page cannot capture organic search intent. Every SaaS needs the
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we transform single-page AI prototypes into search-engine authority machines that drive steady organic pipeline. 📈
 
-Her result: Femke Roelofs deployed the 5-page SEO architecture in 5 business days for €2,300 (page structure, pre-rendering, metadata, schema, sitemap). Ten weeks later, indexed pages grew from 3 to 11, and organic inquiries jumped from 1 to 9 per month — with the alternatives page generating over half of all leads. 🚀
+Her result: Femke Roelofs deployed the 5-page SEO architecture in 5 business days for €2,300 (page structure, pre-rendering, metadata, schema, sitemap). Ten weeks later, indexed pages grew from 3 to 11, and organic inquiries jumped from 1 to 9 per month - with the alternatives page generating over half of all leads. 🚀
 
 👉 Build the 5 essential SEO pages that every AI-generated SaaS needs: https://launchstudio.eu/en/blog/lovable-seo-five-pages-every-ai-built-saas-needs
 

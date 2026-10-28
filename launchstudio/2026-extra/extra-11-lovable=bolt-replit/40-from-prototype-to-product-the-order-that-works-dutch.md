@@ -24,7 +24,7 @@ Het lastigste aan het lanceren van software die gebouwd is met AI-tools zoals Lo
 
 Het gevolg is dat oprichters vrijwel altijd beginnen met de meest zichtbare zaken: de gebruikersinterface oppoetsen, nog een extra functie toevoegen en Google Analytics inrichten. Dat voelt prettig en productief, maar geen van die zaken lost de reden op waarom de software nog niet klaar is voor betalende gebruikers.
 
-Wat volgt is de beproefde volgorde die wél werkt — gebaseerd op wat lanceringen in de praktijk daadwerkelijk blokkeert, in plaats van wat intuïtief leuk voelt om te bouwen.
+Wat volgt is de beproefde volgorde die wél werkt - gebaseerd op wat lanceringen in de praktijk daadwerkelijk blokkeert, in plaats van wat intuïtief leuk voelt om te bouwen.
 
 ## Fase nul: Stel vast waar je werkelijk staat
 
@@ -34,7 +34,7 @@ Beantwoord vóórdat je begint drie eerlijke vragen:
 
 **Gaan er betalingen of persoonsgegevens door het systeem?** Dit bepaalt of beveiligingswerk acuut blokkerend is of louter belangrijk.
 
-**Heb je een harde lanceerdatum, en wie heeft die bepaald?** Een zelfgekozen deadline kun je verschuiven. Een harde toezegging aan een betalende klant niet — en dat bepaalt wat je eventueel gefaseerd kunt uitstellen.
+**Heb je een harde lanceerdatum, en wie heeft die bepaald?** Een zelfgekozen deadline kun je verschuiven. Een harde toezegging aan een betalende klant niet - en dat bepaalt wat je eventueel gefaseerd kunt uitstellen.
 
 De meeste gestreste oprichters bevinden zich tussen twee fases in: een app die visueel werkt, een naderende datum, en geen heldere routekaart. Hieronder vind je de kaart.
 
@@ -105,7 +105,7 @@ Dit zijn oplossingen voor enterprise-bedrijven met complete engineeringteams. Vo
 
 Voor een typisch AI-gebouwd product met een werkend prototype vergen fases één tot en met drie doorgaans **één tot drie weken** gerichte engineering. Fases vier en vijf kosten een extra week, afhankelijk van de privacygevoeligheid van de data. Fase zes is een continu proces dat meeloopt met je marketing.
 
-Dat verklaart direct de vaste LaunchStudio-pakketprijzen tussen € 800 en € 7.500: de variabele factor is uitsluitend hoeveel van deze fases jouw specifieke product vereist, niet hoeveel toeters en bellen er in het prototype zitten — de frontend blijft immers volledig behouden.
+Dat verklaart direct de vaste LaunchStudio-pakketprijzen tussen € 800 en € 7.500: de variabele factor is uitsluitend hoeveel van deze fases jouw specifieke product vereist, niet hoeveel toeters en bellen er in het prototype zitten - de frontend blijft immers volledig behouden.
 
 ## De belangrijkste les om vandaag mee te nemen
 
@@ -115,7 +115,7 @@ Lukt dat? Stop dan direct met het toevoegen van nieuwe features en los dit als a
 
 ## Waar je hulp krijgt bij deze stappen
 
-LaunchStudio is precies opgericht voor dit gat: prototypes gebouwd in Lovable, Bolt, Cursor of Replit die uitstekend werken, maar nog niet verantwoord live kunnen. De frontend die je hebt gebouwd blijft onaangetast, en de bovenstaande fases worden eronder ingericht — in de juiste volgorde, met broncode die gedocumenteerd en AI-leesbaar blijft, en waarvan het intellectuele eigendom 100% van jou blijft.
+LaunchStudio is precies opgericht voor dit gat: prototypes gebouwd in Lovable, Bolt, Cursor of Replit die uitstekend werken, maar nog niet verantwoord live kunnen. De frontend die je hebt gebouwd blijft onaangetast, en de bovenstaande fases worden eronder ingericht - in de juiste volgorde, met broncode die gedocumenteerd en AI-leesbaar blijft, en waarvan het intellectuele eigendom 100% van jou blijft.
 
 De engineering wordt geleverd door Manifera: elf jaar productie-ervaring voor gerenommeerde partijen als Vodafone, TNO en CFLW, vanuit kantoren in Amsterdam, Singapore en Ho Chi Minhstad. LaunchStudio brengt die enterprise-kwaliteit naar oprichtersformaat: vaste prijzen, afgebakende scopes en een doorlooptijd van één tot drie weken.
 
@@ -144,7 +144,7 @@ Veel technische solopreneurs doorlopen deze stappen zelfstandig. Drie richtlijne
 - **Verifieer elke fix als een kwaadwillende aanvaller.** Een RLS-policy schrijven en doorgaan is iets anders dan de policy schrijven en vervolgens actief proberen hem te omzeilen. De geslaagde afweer is je enige bewijs.
 - **Vraag een second opinion aan het einde van fase één.** Op het gebied van databeveiliging ben je als maker het minst objectief, omdat je onbewust uitsluitend test hoe je de code bedoeld hebt. Eén frisse blik op je toegangsrechten is meer waard dan een volledige audit van alle andere onderdelen.
 
-Houd een schriftelijke lijst bij van wat je bewust besluit uit te stellen. Uitgesteld werk dat alleen in je hoofd zit, verandert in vergeten werk — precies wat pijnlijk aan het licht komt tijdens de eerste security-vragenlijst van een grote klant.
+Houd een schriftelijke lijst bij van wat je bewust besluit uit te stellen. Uitgesteld werk dat alleen in je hoofd zit, verandert in vergeten werk - precies wat pijnlijk aan het licht komt tijdens de eerste security-vragenlijst van een grote klant.
 
 ## Echt voorbeeld
 
@@ -158,17 +158,17 @@ Het herstelwerk betrof fases één en twee, uitgevoerd onder enorme tijdsdruk in
 
 Het werk dat ze eerder had gedaan was niet waardeloos. Het was simpelweg uitgevoerd in exact de verkeerde volgorde: de etalage was prachtig ingericht terwijl de achterdeur zes weken lang wagenwijd openstond met echte cliëntdata erin.
 
-**Resultaat:** er werd geen misbruik geconstateerd, de coaches werden transparant geïnformeerd en Groeiplan heeft sindsdien glansrijk twee strenge security-vragenlijsten van zakelijke opdrachtgevers doorstaan — met de documentatie uit fase vijf netjes paraat.
+**Resultaat:** er werd geen misbruik geconstateerd, de coaches werden transparant geïnformeerd en Groeiplan heeft sindsdien glansrijk twee strenge security-vragenlijsten van zakelijke opdrachtgevers doorstaan - met de documentatie uit fase vijf netjes paraat.
 
 > *"Ik had de etalage prachtig ingericht en de achterdeur zes weken lang wagenwijd open laten staan. Alles wat ik had gedaan was nuttig, maar ik deed het in exact de verkeerde volgorde."*
-> — **Bo Klaassen, Oprichter, Groeiplan (Utrecht)**
+> - **Bo Klaassen, Oprichter, Groeiplan (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 4.600 (RLS-remediëring, credential-rotatie, webhooks, support-tooling, compliance-documentatie) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** € 4.600 (RLS-remediëring, credential-rotatie, webhooks, support-tooling, compliance-documentatie) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat moet ik als allereerste aanpakken in een AI-gebouwd prototype?
-Toegangsbeheer (Row Level Security): controleren of de ene gebruiker de privégegevens van een andere gebruiker kan inzien. Test dit direct door twee accounts aan te maken. Alle andere zaken — hosting, e-mail, SEO — zijn herstelbaar; een fundamenteel datalek bij de start is dat niet.
+Toegangsbeheer (Row Level Security): controleren of de ene gebruiker de privégegevens van een andere gebruiker kan inzien. Test dit direct door twee accounts aan te maken. Alle andere zaken - hosting, e-mail, SEO - zijn herstelbaar; een fundamenteel datalek bij de start is dat niet.
 
 ### Kan ik lanceren vóórdat ik al deze fases heb afgerond?
 Vaak wel, mits je begint met een strikt beperkte doelgroep: een handvol bekende pilotklanten die je persoonlijk kunt bellen, waarbij je ongeteste processen (zoals refunds) voorlopig handmatig afhandelt en de resterende fases volgens een strakke planning afwerkt.
@@ -224,7 +224,7 @@ Ja, dat is een harde randvoorwaarde. De codebase moet conventioneel, schoon gedo
       "name": "Kan ik mijn app naderhand nog gewoon blijven bewerken in Lovable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — de codebase blijft conventioneel en AI-leesbaar zodat je in je eigen tool kunt blijven itereren."
+        "text": "Ja - de codebase blijft conventioneel en AI-leesbaar zodat je in je eigen tool kunt blijven itereren."
       }
     }
   ]

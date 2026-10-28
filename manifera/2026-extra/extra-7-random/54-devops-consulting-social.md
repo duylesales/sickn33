@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Three Cultural Elements, Explicit:** Shared reliability ownership, blameless review, and genuine cross-functional collaboration.
-✅ **Amsterdam Strategic Governance:** Scoping culture and process with equal weight to tooling — not an assumed side effect.
+✅ **Amsterdam Strategic Governance:** Scoping culture and process with equal weight to tooling - not an assumed side effect.
 ✅ **Vietnam Execution Velocity:** Tooling implemented inside a genuinely collaborative operating model.
 
 We had all the modern tools and none of the actual DevOps culture. Once we changed how incidents got reviewed, things started genuinely improving. 🛡️

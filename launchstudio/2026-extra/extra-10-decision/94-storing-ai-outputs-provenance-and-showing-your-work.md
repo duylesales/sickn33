@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An AI feature produces a summary, and the summary is saved in a text column next to the fields a person typed. Six months later, nobody can tell which of those fields a human wrote and which a model generated — not your support team, not the customer, and not you when a customer asks why a record says something odd. The information was available at the moment of generation and was not recorded, and it cannot be recovered afterwards.
+An AI feature produces a summary, and the summary is saved in a text column next to the fields a person typed. Six months later, nobody can tell which of those fields a human wrote and which a model generated - not your support team, not the customer, and not you when a customer asks why a record says something odd. The information was available at the moment of generation and was not recorded, and it cannot be recovered afterwards.
 
 This is a small decision with a long tail. It affects whether you can answer a customer's question about an output, whether you can improve the feature by studying its failures, whether you can regenerate when the model changes, and whether a business customer's auditor accepts what your product produced.
 
@@ -36,7 +36,7 @@ The output itself is the least interesting part. Six pieces of metadata make it 
 
 **Which prompt version.** Your instructions change over time. Knowing that a batch of poor outputs all came from the prompt you used in March is what turns a vague sense that quality dipped into a specific finding.
 
-**What went in.** At minimum a reference to the source — the document, the records, the conversation — and ideally a hash of it, so you can tell whether the input has changed since. Storing the full input text is sometimes appropriate and is itself customer data with retention obligations.
+**What went in.** At minimum a reference to the source - the document, the records, the conversation - and ideally a hash of it, so you can tell whether the input has changed since. Storing the full input text is sometimes appropriate and is itself customer data with retention obligations.
 
 **Whether a human reviewed or edited it.** The most valuable field for quality measurement, and the one that tells a later reader how much to trust the content.
 
@@ -46,7 +46,7 @@ None of this requires a separate system. It is a handful of columns alongside th
 
 Beyond your own diagnostics, provenance is a trust feature, and a cheap one.
 
-**Mark generated content visibly** in the interface. A small label is enough. Customers who know an output was produced automatically read it with appropriate scepticism, which is exactly what you want — and its absence is what makes a wrong answer damaging rather than merely inconvenient.
+**Mark generated content visibly** in the interface. A small label is enough. Customers who know an output was produced automatically read it with appropriate scepticism, which is exactly what you want - and its absence is what makes a wrong answer damaging rather than merely inconvenient.
 
 **Link to the source.** For anything derived from a document or a set of records, showing which ones and letting the customer open them converts an assertion into something checkable. For extraction tasks, highlighting the passage a value came from is the strongest version of this and eliminates most disputes about whether the number is right.
 
@@ -60,11 +60,11 @@ This matters particularly in professional contexts. An accountant, a clinician, 
 
 Two approaches, with a clear rule for choosing.
 
-**Store the output** when it is expensive to produce, must be stable over time, will be read repeatedly, or forms part of a record — anything a customer might later point to and ask what it said. Stored output is fast, costs nothing to re-read, and is auditable.
+**Store the output** when it is expensive to produce, must be stable over time, will be read repeatedly, or forms part of a record - anything a customer might later point to and ask what it said. Stored output is fast, costs nothing to re-read, and is auditable.
 
 **Regenerate on demand** when the underlying data changes frequently, when freshness matters more than consistency, or when storage of the content raises its own concerns.
 
-The mixed case is the one to avoid: regenerating each time and showing a different answer to the same question, which customers reasonably interpret as the product being unreliable. Model output varies between calls, so anything a customer might compare — a summary they read yesterday, a score they discussed with a colleague — should be stored rather than reproduced.
+The mixed case is the one to avoid: regenerating each time and showing a different answer to the same question, which customers reasonably interpret as the product being unreliable. Model output varies between calls, so anything a customer might compare - a summary they read yesterday, a score they discussed with a colleague - should be stored rather than reproduced.
 
 Where output is stored, offer explicit regeneration. A visible "regenerate" action, with the previous version retained, gives the customer control and gives you a comparison. And when the underlying data changes, mark the derived output as out of date rather than silently regenerating it, so the customer decides.
 
@@ -78,7 +78,7 @@ With provenance you can answer questions that are otherwise guesswork: did quali
 
 Without it, feature improvement is reduced to changing the prompt and forming an impression, which is how products end up cycling between versions with no evidence about which was better.
 
-One caution on retention. Stored inputs and outputs are customer data, sometimes containing more sensitive material than the record they are attached to, and they fall under the same retention and erasure obligations as everything else. Deciding how long generated content and its inputs are kept — and ensuring deletion reaches them — belongs in the same policy that governs the rest of your data.
+One caution on retention. Stored inputs and outputs are customer data, sometimes containing more sensitive material than the record they are attached to, and they fall under the same retention and erasure obligations as everything else. Deciding how long generated content and its inputs are kept - and ensuring deletion reaches them - belongs in the same policy that governs the rest of your data.
 
 ## Real example
 
@@ -86,14 +86,14 @@ One caution on retention. Stored inputs and outputs are customer data, sometimes
 
 Iris van Kampen ran Dossierlijn, a case-management tool for social work organisations, built in Bolt. A feature generated a summary of case notes for handover between workers, written into the same notes field workers used themselves.
 
-Eleven months later, a case review at one organisation questioned a statement in a client's file describing a home situation nobody could source. It had been generated, from a set of notes that had since been edited, by a model version no longer available, and there was no record of any of that — no flag, no timestamp, no model identifier, and no link to the notes it had summarised.
+Eleven months later, a case review at one organisation questioned a statement in a client's file describing a home situation nobody could source. It had been generated, from a set of notes that had since been edited, by a model version no longer available, and there was no record of any of that - no flag, no timestamp, no model identifier, and no link to the notes it had summarised.
 
 The organisation's supervisor could not determine whether a colleague had written it or the product had, which for a regulated care setting was a serious finding in itself. A wider review found roughly 2,400 generated summaries across three organisations, none distinguishable from human entries.
 
-**Result:** generated content stored separately from human notes with a visible label, provenance recorded — model, version, prompt version, timestamp, source note references and a hash — links from every summary to the notes it derived from, summaries marked stale when source notes change, and explicit regeneration with previous versions retained. Historical entries were identified where possible by generation timestamps in application logs and flagged for review.
+**Result:** generated content stored separately from human notes with a visible label, provenance recorded - model, version, prompt version, timestamp, source note references and a hash - links from every summary to the notes it derived from, summaries marked stale when source notes change, and explicit regeneration with previous versions retained. Historical entries were identified where possible by generation timestamps in application logs and flagged for review.
 
 > "For eleven months my product had been writing into the same field as social workers, with nothing to say which was which. That was the problem, not the sentence they found."
-> — **Iris van Kampen, Founder, Dossierlijn**
+> - **Iris van Kampen, Founder, Dossierlijn**
 
 **Cost & Timeline:** provenance model and interface changes delivered in 3 business days.
 

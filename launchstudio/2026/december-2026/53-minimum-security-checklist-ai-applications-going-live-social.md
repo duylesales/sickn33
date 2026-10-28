@@ -1,6 +1,6 @@
 🚨 200 real beekeeping association members were about to join. A pre-launch checklist found 4 real security gaps his beekeeper friends never triggered. 🐝
 
-Not every AI app needs enterprise security on day 1. But there's a REAL, non-negotiable minimum — same for 10 customers or 10,000: 🧠
+Not every AI app needs enterprise security on day 1. But there's a REAL, non-negotiable minimum - same for 10 customers or 10,000: 🧠
 
 The 10-item minimum: ✅
 1️⃣ No secrets in client-side code
@@ -14,9 +14,9 @@ The 10-item minimum: ✅
 9️⃣ Error messages that don't leak internals
 🔟 A basic incident response plan
 
-🧪 Don't just assume — TEST it: try 20 wrong passwords in a row. If nothing locks you out, item 8 already failed.
+🧪 Don't just assume - TEST it: try 20 wrong passwords in a row. If nothing locks you out, item 8 already failed.
 
-AI-generated prototypes routinely fail several of these by default — invisibly, until exploited. 😱
+AI-generated prototypes routinely fail several of these by default - invisibly, until exploited. 😱
 
 At **LaunchStudio**, informed directly by Herre Roelevink's cybersecurity background (CFLW, TNO), this minimum is standard on every deployment. 🛡️
 

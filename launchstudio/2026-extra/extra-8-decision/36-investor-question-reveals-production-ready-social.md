@@ -7,10 +7,10 @@ It's not in your deck, but it shows up in nearly every serious fundraising conve
 ❌ AI coding tools optimize the happy path, not adversarial, real-world conditions
 ❌ A vague answer reads as "more diligence needed," not just an awkward pause
 
-✅ Auth enforced at the API layer, not just the interface — say it with specifics
+✅ Auth enforced at the API layer, not just the interface - say it with specifics
 ✅ Payment webhooks verified, not just assumed to be legit
 ✅ Clear failure messages, not frozen screens, when external calls time out
-✅ Answered well, it's a credibility signal — not just a risk to survive
+✅ Answered well, it's a credibility signal - not just a risk to survive
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we prep founders with real answers, not talking points. 💡
 

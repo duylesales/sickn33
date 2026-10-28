@@ -2,7 +2,7 @@ Your telehealth platform can be flawlessly HIPAA compliant and still get you a c
 
 **The Pain Points:**
 ❌ **Licensing left as "your problem":** Most vendors nail video encryption and BAAs but leave state-by-state clinician licensing to a spreadsheet.
-❌ **No patient-location logic:** Licensing follows where the patient physically is during the visit, not their home address — few platforms check this in real time.
+❌ **No patient-location logic:** Licensing follows where the patient physically is during the visit, not their home address - few platforms check this in real time.
 ❌ **DEA prescribing confusion:** Post-Public Health Emergency rules on controlled substance prescribing have shifted repeatedly, and "we support e-prescribing" isn't a real answer.
 
 **The Manifera Solution:**

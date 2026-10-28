@@ -1,17 +1,17 @@
 ---
-Titel: "De ene vraag die u moet stellen voordat u een 'AI-Ready'-claim vertrouwt — Inclusief de onze"
+Titel: "De ene vraag die u moet stellen voordat u een 'AI-Ready'-claim vertrouwt - Inclusief de onze"
 Trefwoorden: ai native, ai secure, ai code tool, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
 
-# De ene vraag die u moet stellen voordat u een "AI-Ready"-claim vertrouwt — Inclusief de onze
+# De ene vraag die u moet stellen voordat u een "AI-Ready"-claim vertrouwt - Inclusief de onze
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "De ene vraag die u moet stellen voordat u een 'AI-Ready'-claim vertrouwt — Inclusief de onze",
+  "headline": "De ene vraag die u moet stellen voordat u een 'AI-Ready'-claim vertrouwt - Inclusief de onze",
   "description": "Elke aanbieder in deze ruimte, LaunchStudio inbegrepen, doet uitspraken over gereedheid en beveiliging.",
   "author": {
     "@type": "Organization",
@@ -55,7 +55,7 @@ Manifera's 11+ jaar aan engineering-ervaring, haar werk met klanten zoals Vodafo
 
 [LaunchStudio](https://launchstudio.eu/nl/) verwelkomt exact dit niveau van controle toegepast op haar eigen werk, en moedigt oprichters specifiek aan om te vragen naar dezelfde controleerbare specificiteit waar deze reeks gedurende de gehele artikelen voor gepleit heeft, in plaats van het zelfvertrouwen van welke aanbieder dan ook, inclusief het onze, als een vervanging daarvoor te nemen.
 
-[Stel ons de specifieke vragen die deze reeks u heeft geleerd te stellen](https://launchstudio.eu/nl/#contact) — pas de standaard op ons toe op dezelfde manier waarop u deze op ieder ander zou toepassen.
+[Stel ons de specifieke vragen die deze reeks u heeft geleerd te stellen](https://launchstudio.eu/nl/#contact) - pas de standaard op ons toe op dezelfde manier waarop u deze op ieder ander zou toepassen.
 
 ## Een vertaalgids: Vage claim versus controleerbare claim
 
@@ -83,10 +83,10 @@ In plaats van simpelweg LaunchStudio's initiële beschrijving van het proces te 
 
 **Resultaat:** Het team van LaunchStudio beantwoordde elke vraag met het specifieke detail waar Wietske naar had leren kijken. Hiermee kreeg ze oprecht, controleerbaar vertrouwen in de opdracht voordat deze begon, in plaats van vertrouwen gebaseerd puur op de bredere reputatie van het bedrijf of Wietske's eigen hoopvolle aanname dat een bekende aanbieder natuurlijk betrouwbaar zou zijn zonder dat ze het daadwerkelijk controleerde.
 
-> *"Ik had genoeg van deze reeks gelezen om te weten dat ik specifieke vragen zou moeten stellen aan iedereen, en het voelde enigszins vreemd om diezelfde controle toe te passen op het bedrijf dat de inhoud had geschreven die me leerde het te doen. Het bleek exact het juiste instinct — de specifieke antwoorden die ik kreeg waren aanzienlijk nuttiger dan alleen het vertrouwen op de reputatie zou zijn geweest."*
-> — **Wietske Bergsma, Oprichter, ZorgVolg (Zwolle)**
+> *"Ik had genoeg van deze reeks gelezen om te weten dat ik specifieke vragen zou moeten stellen aan iedereen, en het voelde enigszins vreemd om diezelfde controle toe te passen op het bedrijf dat de inhoud had geschreven die me leerde het te doen. Het bleek exact het juiste instinct - de specifieke antwoorden die ik kreeg waren aanzienlijk nuttiger dan alleen het vertrouwen op de reputatie zou zijn geweest."*
+> - **Wietske Bergsma, Oprichter, ZorgVolg (Zwolle)**
 
-**Kosten en tijdlijn:** € 2.100 (Launch Ready Pakket) — live in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (Launch Ready Pakket) - live in 9 werkdagen.
 
 ---
 

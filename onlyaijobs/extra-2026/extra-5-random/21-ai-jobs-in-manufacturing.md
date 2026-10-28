@@ -34,7 +34,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Manufacturing is where AI stops being a slide and starts being a machine that either runs or does not. Europe has a dense industrial base — automotive, machinery, food processing, chemicals, semiconductors, packaging — and a shortage of people who can combine machine learning with an understanding of physical processes. AI jobs in manufacturing are therefore among the most accessible applied roles for engineers with a technical background, and among the most concrete: your model either reduces scrap, prevents a stoppage or does not.
+Manufacturing is where AI stops being a slide and starts being a machine that either runs or does not. Europe has a dense industrial base - automotive, machinery, food processing, chemicals, semiconductors, packaging - and a shortage of people who can combine machine learning with an understanding of physical processes. AI jobs in manufacturing are therefore among the most accessible applied roles for engineers with a technical background, and among the most concrete: your model either reduces scrap, prevents a stoppage or does not.
 
 ## What AI Jobs in Manufacturing Actually Cover
 
@@ -42,7 +42,7 @@ Manufacturing is where AI stops being a slide and starts being a machine that ei
 
 **Predictive maintenance.** Using sensor data to anticipate failures on pumps, motors, bearings, tools and robots. Enormously popular in pitches, harder in practice because failures are rare and labels are poor.
 
-**Process optimisation.** Adjusting parameters — temperature, pressure, speed, mixture — to improve yield, energy use or consistency. Frequently the highest-value work and the most dependent on domain expertise.
+**Process optimisation.** Adjusting parameters - temperature, pressure, speed, mixture - to improve yield, energy use or consistency. Frequently the highest-value work and the most dependent on domain expertise.
 
 **Planning and supply.** Demand forecasting, production scheduling, inventory optimisation and supplier risk.
 
@@ -61,7 +61,7 @@ This is what distinguishes the sector. Factory data is plentiful but awkward:
 - **Labels come from maintenance records** written in free text by people under time pressure, in the local language, with abbreviations.
 - **Process changes are undocumented**, so a model degrades because someone changed a supplier or a setpoint and nobody told the data team.
 
-An engineer who expects clean datasets will struggle. One who enjoys forensic work — reconstructing what actually happened on a line from partial evidence — will find the work satisfying.
+An engineer who expects clean datasets will struggle. One who enjoys forensic work - reconstructing what actually happened on a line from partial evidence - will find the work satisfying.
 
 ## Predictive Maintenance: Why It Disappoints, and When It Works
 
@@ -101,7 +101,7 @@ Hardware is chosen for longevity and environment, not performance: industrial PC
 
 Updates are events, not continuous delivery. Changing software on a line may require a maintenance window, validation and sign-off from production management. Engineers who design for infrequent, well-tested releases succeed; those who assume weekly deployment do not.
 
-Finally, availability expectations are high. If the inspection system stops, the line may stop. Fail-safe behaviour — what happens when the model is unavailable — must be designed explicitly, and the answer is usually to pass product through and flag it, not to halt.
+Finally, availability expectations are high. If the inspection system stops, the line may stop. Fail-safe behaviour - what happens when the model is unavailable - must be designed explicitly, and the answer is usually to pass product through and flag it, not to halt.
 
 ## Working With Operators and Process Engineers
 
@@ -123,7 +123,7 @@ Manufacturing employers interview differently from technology companies. Expect 
 
 Common questions include: how would you approach a defect detection problem with only fifty examples of the defect; how would you tell whether a model has degraded or the process has changed; how would you deploy to a machine with no internet connection; how would you convince a production manager to let you run a trial.
 
-Prepare one project you can narrate end to end, ideally with a physical or temporal element — sensor data, images, forecasting. If you have no industrial experience, adjacent work counts: a home sensor project, an image classification system with real acquisition conditions, or a forecasting exercise on public data with honest evaluation.
+Prepare one project you can narrate end to end, ideally with a physical or temporal element - sensor data, images, forecasting. If you have no industrial experience, adjacent work counts: a home sensor project, an image classification system with real acquisition conditions, or a forecasting exercise on public data with honest evaluation.
 
 Two things register strongly. First, evidence that you have spoken to non-technical users about a technical system. Second, realism about failure: teams in this sector are tired of pilots that impressed in a meeting room and died on the line. Saying clearly what would have to be true for your approach to work is a stronger answer than confidence.
 
@@ -131,7 +131,7 @@ Two things register strongly. First, evidence that you have spoken to non-techni
 
 European manufacturing AI work clusters around existing industrial regions rather than capital cities. Automotive and machinery in southern Germany, automotive supply across central Europe, semiconductors and high-tech equipment in the Eindhoven region and around Dresden and Grenoble, food processing across the Netherlands, Denmark and Ireland, chemicals along the Rhine, and packaging and machinery in northern Italy.
 
-This geography matters for a job search. Roles are often in smaller towns, commuting by car is normal, and hybrid working is limited for anyone who needs to be near the line — though planning, forecasting and platform roles are usually more flexible.
+This geography matters for a job search. Roles are often in smaller towns, commuting by car is normal, and hybrid working is limited for anyone who needs to be near the line - though planning, forecasting and platform roles are usually more flexible.
 
 Employers range from large multinationals with established data teams to family-owned manufacturers hiring their first data scientist. The second category can be excellent for someone who wants breadth and visibility, provided you check that there is executive support, a budget and at least one technical colleague. Being the only data person in a company that has not decided what it wants is a difficult first job.
 
@@ -169,7 +169,7 @@ The machine learning engineer who led the work said afterwards that the most use
 
 ## Skills That Matter Here
 
-Signal processing and time series methods matter more than in most AI roles. Computer vision fundamentals — lighting, optics, acquisition, not only architectures — matter for inspection work. Deployment to edge devices with limited compute and no reliable network is common. Understanding of control systems, PLCs and industrial protocols is a genuine differentiator, and can be learned on the job.
+Signal processing and time series methods matter more than in most AI roles. Computer vision fundamentals - lighting, optics, acquisition, not only architectures - matter for inspection work. Deployment to edge devices with limited compute and no reliable network is common. Understanding of control systems, PLCs and industrial protocols is a genuine differentiator, and can be learned on the job.
 
 Above all, the ability to work with process engineers and operators. They know why the line behaves as it does, and they will tell you if you ask well.
 
@@ -177,13 +177,13 @@ Above all, the ability to work with process engineers and operators. They know w
 
 - AI jobs in manufacturing centre on inspection, maintenance, process optimisation, planning and safety.
 - Industrial data is abundant but noisy, unlabelled and full of undocumented change.
-- Physical conditions — lighting, sensor placement, maintenance practice — often explain model behaviour.
+- Physical conditions - lighting, sensor placement, maintenance practice - often explain model behaviour.
 - Edge deployment and time series skills are more valuable here than in most sectors.
 - Domain collaboration with operators and process engineers is the core professional skill.
 
 ## Where to Start
 
-Learn one industrial problem properly — anomaly detection on sensor data or defect detection on images — and practise explaining it to someone non-technical. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Learn one industrial problem properly - anomaly detection on sensor data or defect detection on images - and practise explaining it to someone non-technical. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

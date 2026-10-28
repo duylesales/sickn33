@@ -21,11 +21,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Zeeland's kustligging en groeiende offshore windenergiesector leveren een specifiek soort datawerk op: energieopbrengstvoorspelling, predictief onderhoud van windturbines op zee, en netbeheer-optimalisatie — technisch veeleisend werk dat zelden wordt genoemd in gesprekken over Nederlandse AI-werkgelegenheid.
+Zeeland's kustligging en groeiende offshore windenergiesector leveren een specifiek soort datawerk op: energieopbrengstvoorspelling, predictief onderhoud van windturbines op zee, en netbeheer-optimalisatie - technisch veeleisend werk dat zelden wordt genoemd in gesprekken over Nederlandse AI-werkgelegenheid.
 
 ## Wat voor datawerk hier daadwerkelijk gebeurt
 
-Sensordata van offshore windturbines moet worden gemodelleerd voor onderhoudsvoorspelling en opbrengstoptimalisatie — een combinatie van tijdreeksanalyse en operationele beperkingen die vergelijkbaar is met wat je in de Rotterdamse haven ziet, maar toegepast op hernieuwbare energie in plaats van scheepvaart.
+Sensordata van offshore windturbines moet worden gemodelleerd voor onderhoudsvoorspelling en opbrengstoptimalisatie - een combinatie van tijdreeksanalyse en operationele beperkingen die vergelijkbaar is met wat je in de Rotterdamse haven ziet, maar toegepast op hernieuwbare energie in plaats van scheepvaart.
 
 ## Waarom dit werk onderbelicht blijft
 
@@ -39,7 +39,7 @@ Bekijk actuele AI-, machine learning- en datavacatures in en rond Middelburg en 
 
 ## Een dieper kijkje in de technische aard van offshore windenergie-data
 
-Sensordata van offshore windturbines omvat trillingspatronen, weerscondities, energieopbrengst en onderhoudsgeschiedenis — een combinatie van tijdreeksen die moet worden gemodelleerd onder omstandigheden die aanzienlijk lastiger te bereiken zijn voor fysieke inspectie dan een windmolen op land. Dat verhoogt het belang van accurate predictieve modellen: een gemist onderhoudsmoment op zee is aanzienlijk kostbaarder om te herstellen dan op land.
+Sensordata van offshore windturbines omvat trillingspatronen, weerscondities, energieopbrengst en onderhoudsgeschiedenis - een combinatie van tijdreeksen die moet worden gemodelleerd onder omstandigheden die aanzienlijk lastiger te bereiken zijn voor fysieke inspectie dan een windmolen op land. Dat verhoogt het belang van accurate predictieve modellen: een gemist onderhoudsmoment op zee is aanzienlijk kostbaarder om te herstellen dan op land.
 
 ## Vergelijkingstabel: offshore windenergie-data vs. andere energie-datawerk
 
@@ -57,16 +57,16 @@ Werk in deze niche vraagt om een combinatie die niet vaak samen voorkomt: comfor
 ## Veelgestelde vragen
 
 ### (Scenario: kandidaat die Zeeland niet als AI-locatie ziet) Is er echt AI-gerelateerd werk in Zeeland?
-Ja — de groeiende offshore windenergiesector levert werk op rond energieopbrengstvoorspelling en predictief onderhoud van windturbines.
+Ja - de groeiende offshore windenergiesector levert werk op rond energieopbrengstvoorspelling en predictief onderhoud van windturbines.
 
 ### (Scenario: kandidaat die niets vindt via een zoekmachine) Waarom vind ik dit soort vacatures niet als ik op "AI Zeeland" zoek?
 Energiebedrijven concurreren zelden om zichtbaarheid, en functietitels zoals "Data-analist Energieopwekking" verraden zelden de modelleercomponent.
 
 ### (Scenario: kandidaat die dit vergelijkt met havenwerk) Hoe verhoudt dit werk zich tot logistiek werk in Rotterdam?
-Vergelijkbaar qua technische kern — tijdreeksanalyse onder operationele beperkingen — maar toegepast op hernieuwbare energie in plaats van scheepvaart.
+Vergelijkbaar qua technische kern - tijdreeksanalyse onder operationele beperkingen - maar toegepast op hernieuwbare energie in plaats van scheepvaart.
 
 ### (Scenario: kandidaat die twijfelt of dit een groeiende sector is) Is dit een groeiende sector om in te werken?
-De offshore windsector groeit in Nederland in algemene zin, al kunnen we geen specifieke cijfers over vacatures garanderen — bekijk de actuele vacatures zelf.
+De offshore windsector groeit in Nederland in algemene zin, al kunnen we geen specifieke cijfers over vacatures garanderen - bekijk de actuele vacatures zelf.
 
 ### (Scenario: kandidaat die wil weten hoe te zoeken) Hoe zoek ik gericht naar dit soort werk?
 Filter op categorie in plaats van op functietitel, en kijk direct naar energiebedrijven in de regio.
@@ -76,10 +76,10 @@ Filter op categorie in plaats van op functietitel, en kijk direct naar energiebe
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is er echt AI-gerelateerd werk in Zeeland?", "acceptedAnswer": {"@type": "Answer", "text": "Ja — de groeiende offshore windenergiesector levert werk op rond opbrengstvoorspelling en predictief onderhoud."}},
+    {"@type": "Question", "name": "Is er echt AI-gerelateerd werk in Zeeland?", "acceptedAnswer": {"@type": "Answer", "text": "Ja - de groeiende offshore windenergiesector levert werk op rond opbrengstvoorspelling en predictief onderhoud."}},
     {"@type": "Question", "name": "Waarom vind ik dit soort vacatures niet als ik op \"AI Zeeland\" zoek?", "acceptedAnswer": {"@type": "Answer", "text": "Energiebedrijven concurreren zelden om zichtbaarheid, en functietitels verraden zelden de modelleercomponent."}},
     {"@type": "Question", "name": "Hoe verhoudt dit werk zich tot logistiek werk in Rotterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Vergelijkbaar qua technische kern, maar toegepast op hernieuwbare energie."}},
-    {"@type": "Question", "name": "Is dit een groeiende sector om in te werken?", "acceptedAnswer": {"@type": "Answer", "text": "De offshore windsector groeit in algemene zin — bekijk de actuele vacatures zelf voor specifieke cijfers."}},
+    {"@type": "Question", "name": "Is dit een groeiende sector om in te werken?", "acceptedAnswer": {"@type": "Answer", "text": "De offshore windsector groeit in algemene zin - bekijk de actuele vacatures zelf voor specifieke cijfers."}},
     {"@type": "Question", "name": "Hoe zoek ik gericht naar dit soort werk?", "acceptedAnswer": {"@type": "Answer", "text": "Filter op categorie in plaats van op functietitel, en kijk naar energiebedrijven in de regio."}}
   ]
 }

@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Named as a Distributed-Systems Problem:** Scoped honestly with CRDTs or operational transformation from day one.
-✅ **Proven Libraries, Not Custom Broadcast Logic:** Yjs, Automerge — battle-tested, not reinvented.
+✅ **Proven Libraries, Not Custom Broadcast Logic:** Yjs, Automerge - battle-tested, not reinvented.
 ✅ **Dedicated Concurrent-Edit & Reconnection Testing:** Catching the failure modes a demo never shows.
 
 Nine weeks with the right architecture. Not six months patching the wrong one. 🛡️

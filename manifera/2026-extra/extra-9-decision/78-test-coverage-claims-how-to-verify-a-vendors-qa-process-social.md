@@ -1,7 +1,7 @@
 "We maintain 85% test coverage" is one of the most confidently stated, least verified claims a CTO hears in vendor evaluation. It sounds like evidence. It usually isn't. 🧪🔍
 
 **The Pain Points:**
-❌ **Coverage ≠ Verification:** A test can execute a function and assert nothing about its output — still "covered," still worthless.
+❌ **Coverage ≠ Verification:** A test can execute a function and assert nothing about its output - still "covered," still worthless.
 ❌ **Screenshot Reports:** Static coverage dashboards are trivially easy to cherry-pick from a strong module or a stale run.
 ❌ **No Escape Rate Visibility:** Coverage tells you nothing about how many defects actually reach production.
 

@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Best has around thirty thousand inhabitants and a train station most travellers pass without getting off. Yet the town has been home to one of the most important healthcare technology sites in the Netherlands for decades, where medical imaging systems and the software around them are developed. For machine learning engineers interested in image analysis with real clinical consequences, Best is one of the most concentrated places to look in the country — and one of the least searched.
+Best has around thirty thousand inhabitants and a train station most travellers pass without getting off. Yet the town has been home to one of the most important healthcare technology sites in the Netherlands for decades, where medical imaging systems and the software around them are developed. For machine learning engineers interested in image analysis with real clinical consequences, Best is one of the most concentrated places to look in the country - and one of the least searched.
 
 ## Why a Small Town Has a Large Healthtech Footprint
 
@@ -84,7 +84,7 @@ For an ML engineer, this means documentation, traceability and validation are pa
 
 A team develops a deep learning reconstruction method that allows a scan to be acquired faster. On internal test data, images look sharper than conventional reconstruction. Then the questions begin. Does the network hallucinate structures that are not there? Does it perform equally well on scanners of different field strengths, on children and on patients with implants? How will radiologists be involved in reader studies? What happens when a hospital uses an acquisition protocol the training data never covered?
 
-Answering these questions takes longer than building the first model. It involves physicists, clinical scientists, radiologists and regulatory specialists — and it is exactly the kind of multidisciplinary work that defines imaging AI in Best.
+Answering these questions takes longer than building the first model. It involves physicists, clinical scientists, radiologists and regulatory specialists - and it is exactly the kind of multidisciplinary work that defines imaging AI in Best.
 
 ## Comparison: Best vs. Eindhoven vs. Den Bosch
 
@@ -93,7 +93,7 @@ Answering these questions takes longer than building the first model. It involve
 | Profile | Concentrated healthtech and imaging | Broad high-tech: semiconductors, mobility, healthtech | Services, infrastructure, data consultancy |
 | Typical AI work | Image reconstruction, clinical software, V&V | Very varied, from lithography to health | Business analytics, public data |
 | Employer mix | One dominant site plus suppliers | Many large and small employers | Mixed |
-| Train from Best | — | Around ten minutes | Around twenty minutes |
+| Train from Best | - | Around ten minutes | Around twenty minutes |
 
 Best sits on the railway between Eindhoven and Den Bosch, which makes it easy to reach for anyone living in either city. For a candidate focused on medical imaging, it makes little sense to search "Eindhoven" and exclude Best.
 
@@ -113,7 +113,7 @@ Many candidates assume medical AI means research positions at academic hospitals
 
 ## Skills and Tools That Stand Out
 
-- **Image processing fundamentals.** Understanding of signal processing, Fourier domain concepts and how images are formed — not only how to classify them.
+- **Image processing fundamentals.** Understanding of signal processing, Fourier domain concepts and how images are formed - not only how to classify them.
 - **Deep learning for imaging.** Segmentation, detection and reconstruction architectures, with frameworks such as PyTorch.
 - **Performance-aware programming.** C++ and GPU programming are common, because algorithms must run on clinical hardware within time limits.
 - **Validation discipline.** Designing test sets that represent patient populations, analysing subgroup performance and quantifying uncertainty.
@@ -134,7 +134,7 @@ Medical imaging AI depends on clinical data, and clinical data is among the most
 
 This has direct consequences for daily work. Datasets are smaller and more fragmented than candidates from consumer AI expect. Access requests can take months. Some data may only be analysed inside a hospital's own environment, which is why techniques such as federated learning and privacy-preserving evaluation receive serious attention in healthtech. The European Health Data Space Regulation, adopted at EU level, is intended to make secondary use of health data more structured over the coming years, but its practical effects will phase in gradually.
 
-For a candidate, understanding these constraints is a genuine advantage. An engineer who can design a useful model from a modest, carefully governed dataset — and explain why that dataset is representative enough — is worth more to a medtech team than one who needs millions of labelled examples to get started.
+For a candidate, understanding these constraints is a genuine advantage. An engineer who can design a useful model from a modest, carefully governed dataset - and explain why that dataset is representative enough - is worth more to a medtech team than one who needs millions of labelled examples to get started.
 
 ## What a Working Week in Imaging AI Often Looks Like
 
@@ -170,16 +170,16 @@ Browse current AI, machine learning and data jobs in and around Best at [onlyaij
 Best hosts a large healthcare technology site focused on medical imaging, and it is only minutes from Eindhoven by train.
 
 ### (Scenario: candidate unsure whether this is AI work) Do imaging companies really employ machine learning engineers?
-Yes — image reconstruction, segmentation, workflow automation and validation increasingly rely on machine learning, although titles often say image processing or algorithm developer.
+Yes - image reconstruction, segmentation, workflow automation and validation increasingly rely on machine learning, although titles often say image processing or algorithm developer.
 
 ### (Scenario: candidate worried about regulation) How much of the job is regulatory documentation?
-A meaningful share — traceability, risk analysis and validation are integral to medical device development under the MDR and IEC 62304.
+A meaningful share - traceability, risk analysis and validation are integral to medical device development under the MDR and IEC 62304.
 
 ### (Scenario: candidate from industrial computer vision) Is my industrial vision experience relevant?
-Very often — distribution shift, validation discipline and performance constraints transfer well; clinical domain knowledge can be learned on the job.
+Very often - distribution shift, validation discipline and performance constraints transfer well; clinical domain knowledge can be learned on the job.
 
 ### (Scenario: candidate who prefers fast product cycles) Is healthtech a good fit if I like shipping quickly?
-It depends on your preference — development cycles are long and heavily validated, which suits engineers who value depth and patient impact over speed.
+It depends on your preference - development cycles are long and heavily validated, which suits engineers who value depth and patient impact over speed.
 
 <script type="application/ld+json">
 {
@@ -187,10 +187,10 @@ It depends on your preference — development cycles are long and heavily valida
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Why should I include Best in my job search?", "acceptedAnswer": {"@type": "Answer", "text": "Best hosts a large healthcare technology site focused on medical imaging, minutes from Eindhoven by train."}},
-    {"@type": "Question", "name": "Do imaging companies really employ machine learning engineers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — reconstruction, segmentation and validation increasingly rely on machine learning, often under other titles."}},
-    {"@type": "Question", "name": "How much of the job is regulatory documentation?", "acceptedAnswer": {"@type": "Answer", "text": "A meaningful share — traceability, risk analysis and validation are integral under the MDR and IEC 62304."}},
-    {"@type": "Question", "name": "Is my industrial vision experience relevant?", "acceptedAnswer": {"@type": "Answer", "text": "Very often — validation discipline and handling distribution shift transfer well."}},
-    {"@type": "Question", "name": "Is healthtech a good fit if I like shipping quickly?", "acceptedAnswer": {"@type": "Answer", "text": "It depends — development cycles are long and heavily validated, suiting engineers who value depth."}}
+    {"@type": "Question", "name": "Do imaging companies really employ machine learning engineers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - reconstruction, segmentation and validation increasingly rely on machine learning, often under other titles."}},
+    {"@type": "Question", "name": "How much of the job is regulatory documentation?", "acceptedAnswer": {"@type": "Answer", "text": "A meaningful share - traceability, risk analysis and validation are integral under the MDR and IEC 62304."}},
+    {"@type": "Question", "name": "Is my industrial vision experience relevant?", "acceptedAnswer": {"@type": "Answer", "text": "Very often - validation discipline and handling distribution shift transfer well."}},
+    {"@type": "Question", "name": "Is healthtech a good fit if I like shipping quickly?", "acceptedAnswer": {"@type": "Answer", "text": "It depends - development cycles are long and heavily validated, suiting engineers who value depth."}}
   ]
 }
 </script>

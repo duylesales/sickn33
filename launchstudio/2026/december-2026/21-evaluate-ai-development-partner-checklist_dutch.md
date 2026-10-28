@@ -31,13 +31,13 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-U heeft een werkend prototype en geen enkele objectieve manier om te beoordelen of de persoon die aanbiedt om het naar productie te brengen daadwerkelijk weet wat hij doet. Dit is exact de positie waarin de meeste niet-technische AI-native oprichters zich bevinden — en het is een positie waar ontwikkelpartners van wisselende kwaliteit maar al te graag misbruik van maken. Deze checklist biedt u 15 concrete vragen om te stellen vóórdat u zich committeert.
+U heeft een werkend prototype en geen enkele objectieve manier om te beoordelen of de persoon die aanbiedt om het naar productie te brengen daadwerkelijk weet wat hij doet. Dit is exact de positie waarin de meeste niet-technische AI-native oprichters zich bevinden - en het is een positie waar ontwikkelpartners van wisselende kwaliteit maar al te graag misbruik van maken. Deze checklist biedt u 15 concrete vragen om te stellen vóórdat u zich committeert.
 
 ## Ervaring en Bewezen Staat van Dienst
 
 **1. Hoeveel jaar bouwt dit team al échte productiesoftware, en niet alleen AI-prototypes?** Door AI gegenereerde prototypes zijn nieuw; professionele software-engineering bestaat al decennia. Zoek naar teams met een aantoonbare staat van dienst die dateert van vóór de AI-toolhype.
 
-**2. Kunnen zij specifieke enterprise-klanten of gerenommeerde organisaties noemen?** Een team dat heeft gewerkt voor toonaangevende bedrijven — Manifera's klantenlijst omvat onder meer Vodafone, TNO en CFLW — is onderworpen aan strenge inkoopprocessen en kwaliteitsaudits waar individuele freelancers zelden aan voldoen.
+**2. Kunnen zij specifieke enterprise-klanten of gerenommeerde organisaties noemen?** Een team dat heeft gewerkt voor toonaangevende bedrijven - Manifera's klantenlijst omvat onder meer Vodafone, TNO en CFLW - is onderworpen aan strenge inkoopprocessen en kwaliteitsaudits waar individuele freelancers zelden aan voldoen.
 
 **3. Begrijpen zij specifiek de AI-tool waarmee u uw prototype heeft gebouwd?** Vraag direct of zij eerder hebben gewerkt met codebases gegenereerd door Lovable, Bolt, Cursor of v0. Een partner die onbekend is met de outputpatronen van uw tool verspilt kostbare tijd aan het uitzoeken van zaken die een ervaren partner al lang weet.
 
@@ -51,7 +51,7 @@ U heeft een werkend prototype en geen enkele objectieve manier om te beoordelen 
 
 ## Technische Aanpak
 
-**7. Behouden zij uw frontend of willen zij alles vanaf nul herbouwen?** Als een partij eist om wat u al heeft ontworpen opnieuw te bouwen, vraag dan waarom — een legitieme reden moet helder en begrijpelijk uitgelegd kunnen worden, en niet als vanzelfsprekend worden aangenomen.
+**7. Behouden zij uw frontend of willen zij alles vanaf nul herbouwen?** Als een partij eist om wat u al heeft ontworpen opnieuw te bouwen, vraag dan waarom - een legitieme reden moet helder en begrijpelijk uitgelegd kunnen worden, en niet als vanzelfsprekend worden aangenomen.
 
 **8. Leggen zij beveiligingspraktijken concreet en specifiek uit?** Vage geruststellingen (*"maakt u zich geen zorgen, het is veilig"*) zijn slechter dan een concrete toelichting op authenticatie, data-isolatie via Row Level Security en encryptiestandaarden.
 
@@ -71,7 +71,7 @@ U heeft een werkend prototype en geen enkele objectieve manier om te beoordelen 
 
 ## Nazorg en Ondersteuning na de Lancering
 
-**14. Wat gebeurt er direct na de livegang — is er support, en voor hoe lang?** Vraag naar concrete afspraken: LaunchStudio's Launch Ready pakket bevat 48 uur intensieve post-launch support; Launch & Grow biedt doorlopende prioriteitsondersteuning.
+**14. Wat gebeurt er direct na de livegang - is er support, en voor hoe lang?** Vraag naar concrete afspraken: LaunchStudio's Launch Ready pakket bevat 48 uur intensieve post-launch support; Launch & Grow biedt doorlopende prioriteitsondersteuning.
 
 **15. Is er een optie voor maandelijks onderhoud, of staat u er na oplevering alleen voor?** Veel oprichters onderschatten de operationele last van hosting, uptime-monitoring en periodieke beveiligingsupdates.
 
@@ -87,8 +87,8 @@ Het stellen van alle 15 vragen heeft alleen zin als u een professioneel antwoord
 
 ### Concrete Manieren om te Verifiëren:
 
-- **Vraag om een referentie die u daadwerkelijk kunt bellen.** Geen mooi citaat op hun website — maar een introductie bij een eerdere klant die bereid is vijf minuten te bellen over de vraag of de levertijd, prijs en kwaliteit overeenkwamen met wat was beloofd. Een partij die dit niet kan leveren na een overtuigende pitch roept vragen op.
-- **Vraag om een geanonimiseerde voor/na code-steekproef.** U hoeft zelf geen code te kunnen lezen om hier waarde uit te halen — stuur het door naar een willekeurige ontwikkelaar in uw netwerk en vraag of het eruitziet als vakkundig, gedocumenteerd werk of als haastig knip-en-plakwerk.
+- **Vraag om een referentie die u daadwerkelijk kunt bellen.** Geen mooi citaat op hun website - maar een introductie bij een eerdere klant die bereid is vijf minuten te bellen over de vraag of de levertijd, prijs en kwaliteit overeenkwamen met wat was beloofd. Een partij die dit niet kan leveren na een overtuigende pitch roept vragen op.
+- **Vraag om een geanonimiseerde voor/na code-steekproef.** U hoeft zelf geen code te kunnen lezen om hier waarde uit te halen - stuur het door naar een willekeurige ontwikkelaar in uw netwerk en vraag of het eruitziet als vakkundig, gedocumenteerd werk of als haastig knip-en-plakwerk.
 - **Controleer op een echte, verifieerbare bedrijfsregistratie.** In Nederland betekent dit een officieel KvK-nummer dat u zelfstandig kunt controleren. Een gevestigde partner heeft dit direct paraat; een informeel freelancerscollectief aarzelt vaak.
 - **Neem een technisch onderlegde vriend mee in het adviesgesprek.** Zelfs als hij in een ander softwareveld werkt, voorkomt een tweede paar oren dat u vage ontwijkende antwoorden voor zoete koek aanneemt. Zelfvertrouwen en technische correctheid zijn immers twee verschillende zaken.
 - **Vraag altijd om de schriftelijke scope vóórdat u een betaling doet.** Lees deze zorgvuldig na tegen wat er mondeling is toegezegd. Afwijkingen tussen het verkoopgesprek en de formele offerte vallen op papier veel sneller op.
@@ -96,7 +96,7 @@ Het stellen van alle 15 vragen heeft alleen zin als u een professioneel antwoord
 
 ### Het Patroon Waarop U Moet Letten
 
-Een partner die overtuigd is van zijn eigen kwaliteit maakt verificatie moeiteloos — hij biedt proactief referenties aan, toont zonder aarzeling zijn KvK-registratie en verwelkomt een technische vriend in het gesprek. Dit gedrag verschilt wezenlijk van een partij die ontwijkt, vertraagt of defensief reageert wanneer gevraagd wordt om toezeggingen te onderbouwen. Die defensieve houding is vaak diagnostischer dan de inhoudelijke antwoorden op de 15 vragen zelf.
+Een partner die overtuigd is van zijn eigen kwaliteit maakt verificatie moeiteloos - hij biedt proactief referenties aan, toont zonder aarzeling zijn KvK-registratie en verwelkomt een technische vriend in het gesprek. Dit gedrag verschilt wezenlijk van een partij die ontwijkt, vertraagt of defensief reageert wanneer gevraagd wordt om toezeggingen te onderbouwen. Die defensieve houding is vaak diagnostischer dan de inhoudelijke antwoorden op de 15 vragen zelf.
 
 ## Echt voorbeeld
 
@@ -111,9 +111,9 @@ Noor koos voor LaunchStudio omdat zij als enige de checklist-vragen behandelden 
 **Resultaat:** VoedingsPlan lanceerde binnen drie weken voor een derde van de bureauprijs, waarbij Noor de volledige controle over haar broncode behield inclusief een overdraagbaar dossier voor eventuele toekomstige ontwikkelaars.
 
 > *"Ik had bijna voor de goedkopere freelancer gekozen omdat ik niet wist wat ik moest vragen. Zodra ik de checklist had, werd de juiste keuze binnen één telefoongesprek glashelder."*  
-> — **Noor Peters, Oprichter VoedingsPlan (Deventer)**
+> - **Noor Peters, Oprichter VoedingsPlan (Deventer)**
 
-**Kosten & tijdlijn:** €2.300 (Launch Ready Pakket met zorgdata-beveiliging) — live in 15 werkdagen.
+**Kosten & tijdlijn:** €2.300 (Launch Ready Pakket met zorgdata-beveiliging) - live in 15 werkdagen.
 
 ---
 
@@ -129,10 +129,10 @@ Vaagheid over het eigenaarschap van de broncode in combinatie met de eis om uw b
 Niet per definitie, maar controleer zeer zorgvuldig wat er is uitgesloten. Ongebruikelijk lage offertes verbergen vaak een uitgeklede scope, een uurtarief vermomd als "vanafprijs", of een ontwikkelaar die de complexiteit van AI-productiecode onderschat en om meer geld vraagt zodra hij vastloopt.
 
 ### Geldt deze checklist ook als ik een interne ontwikkelaar in dienst neem?
-Veel onderdelen zijn direct van toepassing — staat van dienst, beveiligingsaanpak, documentatiestandaarden — hoewel eigenaarschap en prijsstructuur vanzelfsprekend anders liggen bij een werknemer. De vragen rondom technische aanpak en communicatie blijven even waardevol.
+Veel onderdelen zijn direct van toepassing - staat van dienst, beveiligingsaanpak, documentatiestandaarden - hoewel eigenaarschap en prijsstructuur vanzelfsprekend anders liggen bij een werknemer. De vragen rondom technische aanpak en communicatie blijven even waardevol.
 
 ### Waarom zijn Manifera's enterprise-klanten (Vodafone, TNO, CFLW) relevant voor een startende AI-ondernemer?
-Het toont aan dat hetzelfde engineeringteam en dezelfde strenge kwaliteitsnormen die grote enterprise-organisaties eisen, beschikbaar zijn voor startups met een overzichtelijk budget — een betrouwbaarheid die individuele freelancers zelden kunnen overleggen.
+Het toont aan dat hetzelfde engineeringteam en dezelfde strenge kwaliteitsnormen die grote enterprise-organisaties eisen, beschikbaar zijn voor startups met een overzichtelijk budget - een betrouwbaarheid die individuele freelancers zelden kunnen overleggen.
 
 <script type="application/ld+json">
 {

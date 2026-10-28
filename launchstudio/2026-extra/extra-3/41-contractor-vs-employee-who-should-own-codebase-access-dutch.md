@@ -55,7 +55,7 @@ Een bedrijf in een zeer vroeg stadium met één of twee aannemers, die allemaal 
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het opzetten van een gepast beleid voor toegangsbeheer dat rekening houdt met de werkgelegenheidsstatus als onderdeel van bredere interne toegangsbeveiliging. Wij maken het onderscheid tussen wat redelijk is voor aannemers versus werknemers in plaats van te vervallen in een uniform, op vertrouwen gebaseerd toegangsbeleid voor iedereen. Dit wordt ondersteund door Manifera's eigen interne praktijken voor het beheren van toegang binnen een gedistribueerd team verspreid over hoofdkantoren in Amsterdam, Singapore en Ho Chi Minhstad.
 
-[Laat uw toegangsbeleid voor aannemers en werknemers beoordelen voordat het onderscheid er toe doet](https://launchstudio.eu/nl/#contact) — persoonlijk vertrouwen en structureel risicobeheer zijn gerelateerde maar oprecht verschillende overwegingen.
+[Laat uw toegangsbeleid voor aannemers en werknemers beoordelen voordat het onderscheid er toe doet](https://launchstudio.eu/nl/#contact) - persoonlijk vertrouwen en structureel risicobeheer zijn gerelateerde maar oprecht verschillende overwegingen.
 
 ## Wat een overeenkomst voor aannemerstoegang daadwerkelijk moet omvatten
 
@@ -83,10 +83,10 @@ De opdracht met de aannemer eindigde vrij abrupt toen de aannemer elders een vol
 
 **Resultaat:** LaunchStudio hielp Joost bij het implementeren van taakgerichte toegang voor toekomstige opdrachten met aannemers en stelde een duidelijke, snelle uitstroom-controlelijst in die specifiek wordt geactiveerd wanneer een relatie met een aannemer eindigt. Hiermee werden zowel de onmiddellijke slepende toegang als de bredere proceskloof gedicht die het mogelijk hadden gemaakt dat dit gebeurde zonder dat iemand het in realtime specifiek opmerkte.
 
-> *"Ik vertrouwde deze persoon volledig, en dat vertrouwen was daadwerkelijk het probleem niet — niemand heeft ergens misbruik van gemaakt. Het probleem was dat ik toegang op aannemersniveau dezelfde brede omvang had gegeven die ik aan een langdurige werknemer zou geven, en geen daadwerkelijk proces had om op te merken wanneer die toegang had moeten eindigen samen met de werkrelatie."*
-> — **Joost Hendriks, Oprichter, ProjectVolg (Leiden)**
+> *"Ik vertrouwde deze persoon volledig, en dat vertrouwen was daadwerkelijk het probleem niet - niemand heeft ergens misbruik van gemaakt. Het probleem was dat ik toegang op aannemersniveau dezelfde brede omvang had gegeven die ik aan een langdurige werknemer zou geven, en geen daadwerkelijk proces had om op te merken wanneer die toegang had moeten eindigen samen met de werkrelatie."*
+> - **Joost Hendriks, Oprichter, ProjectVolg (Leiden)**
 
-**Kosten en tijdlijn:** € 800 (toegangsbeleid voor aannemers en uitstroomproces) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 800 (toegangsbeleid voor aannemers en uitstroomproces) - voltooid in 3 werkdagen.
 
 ---
 

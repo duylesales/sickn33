@@ -1,4 +1,4 @@
-🚨 Miriam Aalders built Zorgrooster in Lovable: a shift rota tool for home-care teams in Enschede. Within two months, four team leads demanded 'a mobile app', and a development agency quoted €38,000 to build native iOS and Android apps — which would have burned nearly her entire startup runway before validating mobile retention. 😳
+🚨 Miriam Aalders built Zorgrooster in Lovable: a shift rota tool for home-care teams in Enschede. Within two months, four team leads demanded 'a mobile app', and a development agency quoted €38,000 to build native iOS and Android apps - which would have burned nearly her entire startup runway before validating mobile retention. 😳
 
 Native apps cost 5x more to build and maintain, and App Store approval slows iteration to a crawl. Here's why PWAs win for MVPs: 🧠
 

@@ -43,11 +43,11 @@ This article is general information, not immigration or legal advice; requiremen
 
 The Netherlands operates a system in which employers wishing to bring in workers under certain schemes must be recognised in advance by the Immigration and Naturalisation Service. Recognition is granted to the organisation, not per hire, and it enables the main route used for technical recruitment: the highly skilled migrant scheme.
 
-The practical benefits for an employer are speed and predictability. Applications submitted by recognised sponsors follow a streamlined process with shorter decision times, and the employer confirms the essentials — including that the salary meets the applicable threshold — rather than submitting extensive evidence for each individual case.
+The practical benefits for an employer are speed and predictability. Applications submitted by recognised sponsors follow a streamlined process with shorter decision times, and the employer confirms the essentials - including that the salary meets the applicable threshold - rather than submitting extensive evidence for each individual case.
 
 The obligations that come with it are real and ongoing:
 
-**A duty to inform.** Relevant changes — a change of role, salary, employment ending — must be reported within a set period.
+**A duty to inform.** Relevant changes - a change of role, salary, employment ending - must be reported within a set period.
 
 **A record-keeping duty.** You must retain specified documentation about the employee and the employment for a defined period, available for inspection.
 
@@ -65,7 +65,7 @@ Two consequences shape recruitment strategy.
 
 First, junior international hires are harder than senior ones. For a candidate over thirty, the threshold may exceed what the market pays for a junior role, which effectively closes that route. Employers wanting to build junior capability internationally generally do so through Dutch universities, the orientation year for recent graduates, or by recruiting within the EU.
 
-Second, the threshold must be met continuously. A move to part-time hours, a period of unpaid leave or a restructuring that changes salary can affect the employee's residence status — which makes it something HR must track rather than check once.
+Second, the threshold must be met continuously. A move to part-time hours, a period of unpaid leave or a restructuring that changes salary can affect the employee's residence status - which makes it something HR must track rather than check once.
 
 ## Alternatives Worth Knowing
 
@@ -75,7 +75,7 @@ Second, the threshold must be met continuously. A move to part-time hours, a per
 
 **Intra-company transfer.** Relevant for international groups moving staff between entities.
 
-**EU and EEA nationals.** No sponsorship required, which makes recruitment across Europe substantially simpler — and which many Dutch employers forget when they think about "international" hiring.
+**EU and EEA nationals.** No sponsorship required, which makes recruitment across Europe substantially simpler - and which many Dutch employers forget when they think about "international" hiring.
 
 **Students and interns.** Dutch universities host large numbers of international master's students in AI-related programmes, many of whom would like to stay. An internship or graduation project is the lowest-friction way to meet them.
 
@@ -97,7 +97,7 @@ Getting the permit is the easy half. Whether the hire succeeds usually depends o
 
 **Partner and family.** Whether a partner can find work, and whether children settle into school, determines whether people stay. Employers who help a partner network into the local job market see markedly better retention.
 
-**Social integration.** A new arrival whose entire social world is their team is fragile. Practical support — language course funding, introductions, a buddy outside the immediate team — is inexpensive and effective.
+**Social integration.** A new arrival whose entire social world is their team is fragile. Practical support - language course funding, introductions, a buddy outside the immediate team - is inexpensive and effective.
 
 **Language.** Being clear about which meetings happen in Dutch, and whether the company intends to move to English, prevents a slow drift into exclusion.
 
@@ -107,7 +107,7 @@ Employers frequently invest heavily in recruitment and nothing in landing, then 
 
 There are application fees for recognition and for individual residence permit applications, and in practice most employers also incur advisory costs, relocation support and the internal time of whoever manages the process.
 
-Against that, weigh the alternative: a vacancy open for nine months, a project delayed, or a contractor at a day rate several times the cost of the paperwork. For roles where the domestic pool is genuinely thin — which describes several AI specialisms in the Netherlands — the arithmetic usually favours sponsorship.
+Against that, weigh the alternative: a vacancy open for nine months, a project delayed, or a contractor at a day rate several times the cost of the paperwork. For roles where the domestic pool is genuinely thin - which describes several AI specialisms in the Netherlands - the arithmetic usually favours sponsorship.
 
 The honest caveat is scale. For an organisation that will hire one international person ever, the overhead is disproportionate, and partnering with an employer-of-record or focusing on EU candidates may be more sensible. For an organisation that expects to do it repeatedly, recognition pays for itself quickly.
 
@@ -141,13 +141,13 @@ Employers new to international hiring make a predictable set of mistakes that co
 
 Sponsorship gets someone through the door. What keeps them is a team where being international is unremarkable, and there are a handful of choices that determine whether that is true.
 
-The most consequential is language, and it is a binary decision that employers try to avoid making. A team that conducts meetings in English but reverts to Dutch for hallway conversations, documentation and decisions has an English-speaking surface and a Dutch-speaking core, and international colleagues notice within a month. Choosing English as the working language means committing to it in documentation, tickets, incident channels and informal discussion — which is a genuine cost for Dutch staff and worth acknowledging openly rather than pretending it is free.
+The most consequential is language, and it is a binary decision that employers try to avoid making. A team that conducts meetings in English but reverts to Dutch for hallway conversations, documentation and decisions has an English-speaking surface and a Dutch-speaking core, and international colleagues notice within a month. Choosing English as the working language means committing to it in documentation, tickets, incident channels and informal discussion - which is a genuine cost for Dutch staff and worth acknowledging openly rather than pretending it is free.
 
 The second is career visibility. International employees sometimes find that promotion conversations, project allocation and informal mentoring happen through networks they are not part of. Making progression criteria explicit, as described in any decent levelling framework, protects against this.
 
 The third is practical accommodation: flexibility for longer trips home, awareness that public holidays differ, and understanding that someone whose family is abroad has different constraints during a crisis.
 
-None of this is expensive. All of it is visible to candidates, who talk to each other — and in the specialised corners of the Dutch AI market, an employer's reputation among international professionals is established quickly and changed slowly.
+None of this is expensive. All of it is visible to candidates, who talk to each other - and in the specialised corners of the Dutch AI market, an employer's reputation among international professionals is established quickly and changed slowly.
 
 ## Key Takeaways
 
@@ -155,13 +155,13 @@ None of this is expensive. All of it is visible to candidates, who talk to each 
 - It brings ongoing duties: reporting changes, keeping records and informing the employee.
 - Salary thresholds, indexed annually and differentiated by age, are the binding constraint and make junior international hiring difficult.
 - The orientation year, EU recruitment and Dutch international students are simpler routes that employers overlook.
-- Retention depends on housing, the registration chain, partner employment and social integration — the half most employers skip.
+- Retention depends on housing, the registration chain, partner employment and social integration - the half most employers skip.
 
 ## Where to Start
 
 Decide this month whether international hiring is part of your strategy. If it is, start the recognition process before the vacancy exists, and write the landing checklist while you wait.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -178,7 +178,7 @@ Reporting relevant changes, retaining specified records, and informing the emplo
 For a single hire the overhead is disproportionate; consider EU candidates, Dutch-educated graduates or an employer-of-record arrangement.
 
 ### (Scenario: employer whose international hires leave) Why does retention fail?
-Usually housing, partner employment and social integration rather than the job itself — the landing package matters as much as the offer.
+Usually housing, partner employment and social integration rather than the job itself - the landing package matters as much as the offer.
 
 <script type="application/ld+json">
 {
@@ -188,7 +188,7 @@ Usually housing, partner employment and social integration rather than the job i
     {"@type": "Question", "name": "Can I sponsor a candidate I have already found?", "acceptedAnswer": {"@type": "Answer", "text": "Only if already recognised or willing to wait; obtaining recognition after an offer often loses the candidate."}},
     {"@type": "Question", "name": "Can Dutch employers hire junior staff from outside the EU?", "acceptedAnswer": {"@type": "Answer", "text": "It is difficult under salary thresholds; the orientation year and Dutch-educated graduates are the practical routes."}},
     {"@type": "Question", "name": "What obligations come with recognised sponsor status?", "acceptedAnswer": {"@type": "Answer", "text": "Reporting relevant changes, keeping specified records and informing the employee about their conditions of stay."}},
-    {"@type": "Question", "name": "Is sponsorship worth it for a single international hire?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — consider EU candidates, Dutch-educated graduates or an employer-of-record arrangement."}},
+    {"@type": "Question", "name": "Is sponsorship worth it for a single international hire?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - consider EU candidates, Dutch-educated graduates or an employer-of-record arrangement."}},
     {"@type": "Question", "name": "Why do international hires leave Dutch employers?", "acceptedAnswer": {"@type": "Answer", "text": "Most often housing, partner employment and social integration rather than the work itself."}}
   ]
 }

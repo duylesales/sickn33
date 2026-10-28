@@ -41,7 +41,7 @@ Voor een kandidaat betekent dat dat de technische inhoud bij een klein bedrijf h
 
 **Structuurgebaseerde modellering.** Waar een proteïnestructuur bekend is, informeert computationele voorspelling van hoe een verbinding bindt het ontwerp.
 
-**Generatief moleculair ontwerp.** Nieuwe structuren voorstellen waarvan gewenste eigenschappen worden voorspeld, onder de randvoorwaarde van synthetiseerbaarheid. Die randvoorwaarde maakt het echt lastig — moleculen genereren die goed scoren op een eigenschapsmodel maar niet gemaakt kunnen worden, is makkelijk en nutteloos.
+**Generatief moleculair ontwerp.** Nieuwe structuren voorstellen waarvan gewenste eigenschappen worden voorspeld, onder de randvoorwaarde van synthetiseerbaarheid. Die randvoorwaarde maakt het echt lastig - moleculen genereren die goed scoren op een eigenschapsmodel maar niet gemaakt kunnen worden, is makkelijk en nutteloos.
 
 **Literatuur en interne archieven ontsluiten.** Decennia gepubliceerd onderzoek en interne rapporten bevatten gestructureerde informatie over verbindingen, targets en uitkomsten die in geen database staat.
 
@@ -77,7 +77,7 @@ Dit goed hanteren vraagt specifieke praktijken: assayherkomst begrijpen, valider
 
 **Financiering is mijlpaalgedreven.** Geld komt in rondes gekoppeld aan specifieke wetenschappelijke resultaten op specifieke momenten.
 
-**Jij bént de rekenkundige functie.** Geen lid van een datateam — de persoon die dit doet.
+**Jij bént de rekenkundige functie.** Geen lid van een datateam - de persoon die dit doet.
 
 **Laboratoriumvalidatie is het vonnis.** De output van je model wordt experimenteel getest. Blijken de verbindingen die je prioriteerde actief, dan stijgt je geloofwaardigheid sterk. Zo niet, dan daalt die. Die terugkoppeling is directer en consequenter dan in de meeste datafuncties.
 

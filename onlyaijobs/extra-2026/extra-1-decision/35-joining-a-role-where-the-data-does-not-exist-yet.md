@@ -57,7 +57,7 @@ The words used in the vacancy are identical. The difference is entirely in the a
 - **Who owns the source systems, and are they internal or supplier-managed?** An external supplier controlling your data access is the single most common blocker, and it is expensive to resolve.
 - **What is the budget for data engineering and infrastructure, separate from my salary?** A data hire without tooling is a person with a laptop and good intentions.
 - **What has been tried before, and what happened?** A failed proof of concept is useful history, not a warning, provided someone learned from it.
-- **Who is accountable for the first year's outcome — me, or a sponsor?** If the answer is only you, the risk is entirely yours too.
+- **Who is accountable for the first year's outcome - me, or a sponsor?** If the answer is only you, the risk is entirely yours too.
 - **What would you consider success after twelve months?** "A model in production" from an organisation with no data foundation is a mismatch you can hear immediately. "Reliable weekly figures everyone trusts" is a sign of realism.
 - **Is anyone internally able to review my technical work?** If not, will they fund an external reviewer or mentor?
 
@@ -113,7 +113,7 @@ If the answers are good and you want it, convert the good intentions into someth
 
 Foundational roles succeed or fail on sequencing, and the order that works is counterintuitive for people trained to start with a model.
 
-**Start with one decision, not one dataset.** Find a recurring decision somebody makes badly today — a weekly order quantity, a maintenance interval, a staffing plan — and work backwards to the data it needs. Starting from "what data do we have?" produces inventories nobody uses.
+**Start with one decision, not one dataset.** Find a recurring decision somebody makes badly today - a weekly order quantity, a maintenance interval, a staffing plan - and work backwards to the data it needs. Starting from "what data do we have?" produces inventories nobody uses.
 
 **Deliver a trustworthy number before a clever one.** The first genuine win in most of these organisations is a figure people stop arguing about. It is unglamorous and it buys you the credibility to do everything afterwards.
 
@@ -135,13 +135,13 @@ She does not decline. She asks three things: that the first six months are descr
 
 The employer agrees to all three, partly because nobody had thought about it in those terms. The first six months are exactly as unglamorous as expected. At month eight, the first forecast goes live for one product group. At month fourteen it covers the whole assortment and the purchasing team uses it weekly.
 
-When she interviews elsewhere two years later, that sequence — no data, then a foundation, then a forecast people rely on — is the story every interviewer wants to hear in detail.
+When she interviews elsewhere two years later, that sequence - no data, then a foundation, then a forecast people rely on - is the story every interviewer wants to hear in detail.
 
 ## Who Else Needs to Be Hired
 
 One question separates organisations that have thought this through from those that have not: who comes after you?
 
-A foundational role rarely succeeds as a permanent team of one. At some point the work splits — someone maintains pipelines and access while someone else models and works with stakeholders — and an employer who has never considered that split is planning for you to do both indefinitely.
+A foundational role rarely succeeds as a permanent team of one. At some point the work splits - someone maintains pipelines and access while someone else models and works with stakeholders - and an employer who has never considered that split is planning for you to do both indefinitely.
 
 Ask what the intended team looks like in two years, and whether a second hire is budgeted or merely hoped for. A concrete answer, even a modest one ("a data engineer in the second year if the first use case delivers"), tells you the organisation understands what it started. A vague answer means the ceiling on what you can achieve is your own capacity.
 
@@ -154,12 +154,12 @@ The honest version of this role is a two-year project to build a capability. Emp
 - Many Dutch employers with valuable data problems have operational systems and no usable analytical data; the ambition often arrives before the foundation.
 - The same vacancy can be a foundational opportunity or a disappointment; the difference is budget, sponsorship, realistic expectations and access to source systems.
 - Ask to see a sample, find out who controls the source systems, check the infrastructure budget and listen carefully to what success after twelve months means to them.
-- Expect the first year to be access, pipelines, definitions and trust rather than modelling — valuable work, and portable everywhere.
+- Expect the first year to be access, pipelines, definitions and trust rather than modelling - valuable work, and portable everywhere.
 - Before accepting, scope the first six months in writing, name the sponsor, secure tooling budget and arrange external technical review.
 
 ## Where to Start
 
-If an employer cannot show you data or name a sponsor, compare the role with others nearby before deciding — foundational work is worth doing, but only where it is actually resourced.
+If an employer cannot show you data or name a sponsor, compare the role with others nearby before deciding - foundational work is worth doing, but only where it is actually resourced.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

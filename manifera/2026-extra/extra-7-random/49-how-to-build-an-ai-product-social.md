@@ -1,4 +1,4 @@
-🚨 Today's best AI models will be meaningfully different two years from now — same as two years ago vs. today. Building on today's model as a permanent foundation means building on ground guaranteed to shift. ⚙️🔄
+🚨 Today's best AI models will be meaningfully different two years from now - same as two years ago vs. today. Building on today's model as a permanent foundation means building on ground guaranteed to shift. ⚙️🔄
 
 **The Pain Points:**
 ❌ **Tightly Coupled Logic:** Prompts and output handling implicitly tuned to one specific model's quirks.

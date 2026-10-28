@@ -43,17 +43,17 @@ Not every company posting an "AI" role has a real, funded plan behind it. Some p
 
 **A named team or reporting line.** A posting that says who you'd report to and roughly how big the team is suggests the role has already been budgeted and planned, not improvised.
 
-**Technical specificity in the requirements**, beyond generic buzzwords — mentions of specific tools, data volumes or architectural choices suggest someone technical was involved in writing it.
+**Technical specificity in the requirements**, beyond generic buzzwords - mentions of specific tools, data volumes or architectural choices suggest someone technical was involved in writing it.
 
 ## Signals Worth Asking About Directly
 
-**Vague ambition without a current system.** "Help us leverage AI to transform the business" with no mention of an existing system or dataset could mean you'd be the first person figuring out what that means — not necessarily bad, but a different job than the posting implies.
+**Vague ambition without a current system.** "Help us leverage AI to transform the business" with no mention of an existing system or dataset could mean you'd be the first person figuring out what that means - not necessarily bad, but a different job than the posting implies.
 
-**No clear reporting structure.** If it's unclear who you'd report to or how big the team is, ask directly — this is a fair, normal question, not a red flag on your part.
+**No clear reporting structure.** If it's unclear who you'd report to or how big the team is, ask directly - this is a fair, normal question, not a red flag on your part.
 
 ## A Deeper Look at Why Aspiration-Heavy Postings Happen in Good Faith
 
-Most vague, ambition-heavy AI postings aren't written to deceive candidates — they're written by companies that have genuinely decided AI matters to their future but haven't yet done the internal work of defining what that means concretely. This is a real, common stage of organizational maturity, not necessarily a red flag by itself. The issue isn't that the posting is vague; it's when a candidate assumes vague language means established, funded, well-scoped work, and discovers otherwise only after accepting.
+Most vague, ambition-heavy AI postings aren't written to deceive candidates - they're written by companies that have genuinely decided AI matters to their future but haven't yet done the internal work of defining what that means concretely. This is a real, common stage of organizational maturity, not necessarily a red flag by itself. The issue isn't that the posting is vague; it's when a candidate assumes vague language means established, funded, well-scoped work, and discovers otherwise only after accepting.
 
 ## Comparing Three Postings, Same Words, Different Reality
 
@@ -65,13 +65,13 @@ Most vague, ambition-heavy AI postings aren't written to deceive candidates — 
 
 ## Why the Interview Itself Is Where This Actually Gets Resolved
 
-No amount of reading a job posting closely fully substitutes for direct questions in an interview — the posting is a marketing document, however well-intentioned, and the interview is where you get to verify the reality behind it. Treat every vague posting as an invitation to ask more specific questions, not as a reason to skip the opportunity or accept it uncritically.
+No amount of reading a job posting closely fully substitutes for direct questions in an interview - the posting is a marketing document, however well-intentioned, and the interview is where you get to verify the reality behind it. Treat every vague posting as an invitation to ask more specific questions, not as a reason to skip the opportunity or accept it uncritically.
 
 ## The Organisational Conditions That Produce Aspirational Postings
 
 Understanding why an organisation writes a vague AI job posting helps a candidate assess what they would actually be walking into, and the underlying patterns are recognisable once you know what produces them.
 
-The most common pattern is executive-driven adoption without operational grounding. A board or executive team concludes that the organisation needs an AI strategy, allocates a headcount, and delegates the specifics downward to people who were not part of that decision and who may not agree with its premise. The resulting posting is necessarily vague because nobody has yet decided what the role should do, and the person who will manage the hire may be as uncertain as the candidate reading it. This situation is not hopeless — a capable first hire can genuinely define something valuable — but it demands a candidate comfortable with ambiguity and organisational persuasion, not one expecting a defined technical problem.
+The most common pattern is executive-driven adoption without operational grounding. A board or executive team concludes that the organisation needs an AI strategy, allocates a headcount, and delegates the specifics downward to people who were not part of that decision and who may not agree with its premise. The resulting posting is necessarily vague because nobody has yet decided what the role should do, and the person who will manage the hire may be as uncertain as the candidate reading it. This situation is not hopeless - a capable first hire can genuinely define something valuable - but it demands a candidate comfortable with ambiguity and organisational persuasion, not one expecting a defined technical problem.
 
 A second pattern is competitive signalling. Organisations sometimes create AI roles partly to demonstrate to customers, investors or the market that they are engaged with the technology, with the actual work being secondary to the signal. These roles can still be substantive if the organisation subsequently commits, but they are structurally vulnerable: when priorities shift, a role created for signalling is among the first to be reconsidered.
 
@@ -81,7 +81,7 @@ A third pattern, more benign, is genuine early-stage exploration. An organisatio
 
 Given those patterns, a candidate can distinguish between them with a small number of well-chosen questions during interviews.
 
-Ask what prompted the creation of this role and when. An answer describing a specific operational problem — a process that is too slow, a decision being made with insufficient information, a manual task consuming disproportionate effort — indicates genuine grounding. An answer describing a strategic decision to invest in AI, without a specific problem attached, indicates the first pattern.
+Ask what prompted the creation of this role and when. An answer describing a specific operational problem - a process that is too slow, a decision being made with insufficient information, a manual task consuming disproportionate effort - indicates genuine grounding. An answer describing a strategic decision to invest in AI, without a specific problem attached, indicates the first pattern.
 
 Ask who will decide whether this role has succeeded, and what they would consider success. If the answer identifies a specific person with a specific expectation, the role has an owner and a definition. If the answer is diffuse, or if the person answering seems uncertain, the definitional work has not been done and would fall to you.
 
@@ -95,7 +95,7 @@ None of the preceding should be read as an argument against joining organisation
 
 The clearest case is a candidate seeking scope disproportionate to their years of experience. In an organisation with an established AI function, the architecture decisions, tooling choices and methodological standards have been made, and a mid-level hire inherits them. In an organisation making its first serious attempt, those decisions are open, and a capable hire shapes them. For someone building toward technical leadership, that experience is difficult to acquire any other way.
 
-A second case is a candidate with genuine interest in the organisational dimension of technical work — the persuasion, the stakeholder management, the translation between technical possibility and business need. In a defined role these dimensions exist but are constrained; in an undefined one they are the substance of the job.
+A second case is a candidate with genuine interest in the organisational dimension of technical work - the persuasion, the stakeholder management, the translation between technical possibility and business need. In a defined role these dimensions exist but are constrained; in an undefined one they are the substance of the job.
 
 A third case, sometimes overlooked, is domain interest. A candidate genuinely drawn to a particular industry may find that the organisations in it are largely at an early stage of AI adoption, in which case waiting for a mature AI function to appear means waiting indefinitely. Joining early in a domain you care about, and helping build the capability, is a legitimate strategy rather than a compromise.
 
@@ -111,7 +111,7 @@ Identify your executive sponsor and maintain that relationship deliberately. Ear
 
 Deliver something visible early, even if it is smaller than what you eventually intend to build. The credibility earned by a modest working result arrives far sooner than the credibility earned by an ambitious system still under construction, and in an organisation still deciding whether this investment was wise, that timing difference matters considerably.
 
-Finally, keep a clear record of what you build and what it enables. In an environment where the role's value is not yet established, the ability to demonstrate concrete contribution — internally when priorities are reviewed, externally when you eventually move on — is more important than in a role whose value the organisation already takes for granted.
+Finally, keep a clear record of what you build and what it enables. In an environment where the role's value is not yet established, the ability to demonstrate concrete contribution - internally when priorities are reviewed, externally when you eventually move on - is more important than in a role whose value the organisation already takes for granted.
 
 ## What the Broader Dutch Market Looks Like on This Dimension
 
@@ -119,7 +119,7 @@ Placing this in the context of the wider market analysed throughout this site pr
 
 Organisations in the industrial, insurance and logistics sectors covered in the regional analyses tend, when they hire for data roles, to have concrete operational problems driving the hire, precisely because their AI adoption grows out of existing process and quality functions rather than out of strategic ambition. Postings from these employers are frequently vague in language while being entirely concrete in underlying purpose, which means a candidate should probe rather than dismiss.
 
-Organisations in sectors where AI adoption is more reputationally visible — consulting, marketing services, some segments of financial services — show more of the signalling pattern, and candidates encountering vague postings from these employers should probe harder about durability and executive commitment.
+Organisations in sectors where AI adoption is more reputationally visible - consulting, marketing services, some segments of financial services - show more of the signalling pattern, and candidates encountering vague postings from these employers should probe harder about durability and executive commitment.
 
 Research-adjacent employers, discussed in the Nijmegen, Leiden and Wageningen analyses, rarely exhibit either pattern, because their work is defined by funded projects with specified objectives. Vagueness in a posting from such an employer is more often a drafting artefact than a signal about substance.
 
@@ -129,50 +129,50 @@ Recognising which part of the market a posting comes from adjusts how much weigh
 
 The gap between AI aspiration and AI reality isn't just anecdotal; public statistics help put job postings in context.
 
-**Statistics Netherlands (CBS).** CBS publishes figures on the use of AI technologies by Dutch companies, including through its AI Monitor. These figures consistently show that AI adoption is much higher among large companies than among small and medium-sized enterprises, and that it varies strongly by sector. For candidates, this means an "AI role" at a large company in finance or ICT is statistically more likely to be backed by existing infrastructure than a similar posting at a small company in a sector with low adoption — although individual companies of course differ.
+**Statistics Netherlands (CBS).** CBS publishes figures on the use of AI technologies by Dutch companies, including through its AI Monitor. These figures consistently show that AI adoption is much higher among large companies than among small and medium-sized enterprises, and that it varies strongly by sector. For candidates, this means an "AI role" at a large company in finance or ICT is statistically more likely to be backed by existing infrastructure than a similar posting at a small company in a sector with low adoption - although individual companies of course differ.
 
-**EU Digital Decade targets.** The European Union has set a target for 75% of EU companies to use cloud computing, big data or AI by 2030. National and European ambitions like this encourage companies to signal AI activity — a driver of aspirational postings as well as real investment.
+**EU Digital Decade targets.** The European Union has set a target for 75% of EU companies to use cloud computing, big data or AI by 2030. National and European ambitions like this encourage companies to signal AI activity - a driver of aspirational postings as well as real investment.
 
 **Dutch policy.** The Netherlands published a **Strategic Action Plan for Artificial Intelligence** in 2019, and public-private initiatives such as the **Netherlands AI Coalition (NL AIC)** promote adoption across sectors. Organisations such as **Techleap.nl** and data platforms such as **Dealroom** show where venture funding for AI companies actually goes.
 
 ## How Regulation Changes the Picture
 
-The **EU Artificial Intelligence Act** makes real AI work more visible in two ways. First, since February 2025, organisations that provide or deploy AI systems must take measures to ensure sufficient **AI literacy** among their staff — an obligation that pushes companies to formalise who does what with AI. Second, organisations deploying high-risk AI systems face governance obligations that require dedicated people and processes. A company that can explain how it approaches these obligations is far more likely to have a real, funded AI function than one that can't.
+The **EU Artificial Intelligence Act** makes real AI work more visible in two ways. First, since February 2025, organisations that provide or deploy AI systems must take measures to ensure sufficient **AI literacy** among their staff - an obligation that pushes companies to formalise who does what with AI. Second, organisations deploying high-risk AI systems face governance obligations that require dedicated people and processes. A company that can explain how it approaches these obligations is far more likely to have a real, funded AI function than one that can't.
 
 ## Using Job Platforms to Spot the Difference
 
-On a specialist job board such as **OnlyAIJobs**, vacancies are categorised by type of work — Development, Machine Learning, Research, Infrastructure, Ethics & Governance, AI Product and others — and shown with the employer and exact location. Comparing how precisely a posting fits a category is a quick first filter: a real role usually maps clearly onto one or two categories, while an aspirational posting often mixes responsibilities from five categories without a clear centre.
+On a specialist job board such as **OnlyAIJobs**, vacancies are categorised by type of work - Development, Machine Learning, Research, Infrastructure, Ethics & Governance, AI Product and others - and shown with the employer and exact location. Comparing how precisely a posting fits a category is a quick first filter: a real role usually maps clearly onto one or two categories, while an aspirational posting often mixes responsibilities from five categories without a clear centre.
 
 ## Key Takeaways
 
 - Real, funded roles name concrete problems, existing data, team structure and reporting lines; aspirational postings list buzzwords.
-- CBS figures show AI adoption is much higher at large companies and varies strongly by sector — useful context for judging a posting.
+- CBS figures show AI adoption is much higher at large companies and varies strongly by sector - useful context for judging a posting.
 - EU Digital Decade targets and Dutch AI policy encourage companies to signal AI activity, which drives both real investment and aspiration.
-- The AI Act's AI literacy and governance obligations push companies to formalise AI work — ask how they handle them.
+- The AI Act's AI literacy and governance obligations push companies to formalise AI work - ask how they handle them.
 - An undefined role can be the right choice, provided you protect yourself with clear agreements about scope, resources and evaluation.
 
 ## Where to Start
 
-Don't rule out a vague-sounding posting automatically — some genuinely early-stage roles are still worth taking. But go into the conversation with specific questions that separate real momentum from aspiration, rather than assuming the posting tells the whole story either way.
+Don't rule out a vague-sounding posting automatically - some genuinely early-stage roles are still worth taking. But go into the conversation with specific questions that separate real momentum from aspiration, rather than assuming the posting tells the whole story either way.
 
 Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate reading a vague, ambition-heavy posting) How can I tell if an AI job posting describes real, funded work or just aspiration?
-Look for mentions of a specific current system or dataset, a named team or reporting line, and technical specificity beyond generic buzzwords — their presence suggests real planning behind the role.
+Look for mentions of a specific current system or dataset, a named team or reporting line, and technical specificity beyond generic buzzwords - their presence suggests real planning behind the role.
 
 ### (Scenario: candidate unsure whether to apply to a vague posting) Should I avoid applying to a vaguely worded AI job posting?
-Not necessarily — some genuinely early-stage roles are worth taking. Go into the conversation with specific questions rather than ruling it out or assuming it's real.
+Not necessarily - some genuinely early-stage roles are worth taking. Go into the conversation with specific questions rather than ruling it out or assuming it's real.
 
 ### (Scenario: candidate wondering what questions to ask) What should I ask to distinguish a real role from an aspirational one?
-Ask about the current state of any existing system, who you'd report to, and how big the team is — reasonable, normal questions that clarify whether planning has actually happened.
+Ask about the current state of any existing system, who you'd report to, and how big the team is - reasonable, normal questions that clarify whether planning has actually happened.
 
 ### (Scenario: candidate worried about being the first person to define a role) Is it necessarily bad if I'd be the first person figuring out what an AI initiative means?
-Not necessarily bad, but it's a different job than a posting describing established work implies — worth knowing explicitly before accepting rather than discovering it afterward.
+Not necessarily bad, but it's a different job than a posting describing established work implies - worth knowing explicitly before accepting rather than discovering it afterward.
 
 ### (Scenario: candidate wondering if asking these questions seems presumptuous) Is it appropriate to ask directly about team structure and budget before accepting an offer?
-Yes — it's a normal, fair question at the interview stage, and a reasonable employer will expect and welcome it from an experienced candidate.
+Yes - it's a normal, fair question at the interview stage, and a reasonable employer will expect and welcome it from an experienced candidate.
 
 <script type="application/ld+json">
 {
@@ -180,10 +180,10 @@ Yes — it's a normal, fair question at the interview stage, and a reasonable em
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How can I tell if an AI job posting describes real, funded work or just aspiration?", "acceptedAnswer": {"@type": "Answer", "text": "Look for mentions of a specific current system or dataset, a named team or reporting line, and technical specificity beyond generic buzzwords."}},
-    {"@type": "Question", "name": "Should I avoid applying to a vaguely worded AI job posting?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — some genuinely early-stage roles are worth taking. Ask specific questions rather than ruling it out."}},
+    {"@type": "Question", "name": "Should I avoid applying to a vaguely worded AI job posting?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - some genuinely early-stage roles are worth taking. Ask specific questions rather than ruling it out."}},
     {"@type": "Question", "name": "What should I ask to distinguish a real role from an aspirational one?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about the current state of any existing system, who you'd report to, and how big the team is."}},
     {"@type": "Question", "name": "Is it necessarily bad if I'd be the first person figuring out what an AI initiative means?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily bad, but it's a different job than a posting describing established work implies."}},
-    {"@type": "Question", "name": "Is it appropriate to ask directly about team structure and budget before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it's a normal, fair question, and a reasonable employer will expect and welcome it."}}
+    {"@type": "Question", "name": "Is it appropriate to ask directly about team structure and budget before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it's a normal, fair question, and a reasonable employer will expect and welcome it."}}
   ]
 }
 </script>

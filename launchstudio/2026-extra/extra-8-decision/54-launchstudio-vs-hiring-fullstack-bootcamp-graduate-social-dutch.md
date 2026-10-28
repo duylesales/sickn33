@@ -10,11 +10,11 @@
 ✅ LaunchStudio: vaste prijs €800-€3.500, scope na echte codeaudit
 ✅ Geleverd in 1-3 weken door Manifera-engineers met 160+ productieprojecten
 ✅ Nul managementtijd vereist van de oprichter
-✅ Werkt naast een bestaande junior developer — vult de blokkades op, niet de hele codebase
+✅ Werkt naast een bestaande junior developer - vult de blokkades op, niet de hele codebase
 
 Bij **LaunchStudio** brengen we Manifera's enterprise-grade engineering naar oprichters die productie nodig hebben, geen loonlijst. 🛡️
 
-Annelies' resultaat: FeestFlow live in 6 werkdagen voor €1.600 — haar bootcamp-developer bouwt nu gewoon verder, op een veilige fundering. 🚀
+Annelies' resultaat: FeestFlow live in 6 werkdagen voor €1.600 - haar bootcamp-developer bouwt nu gewoon verder, op een veilige fundering. 🚀
 
 👉 Vergelijk het echte kostenplaatje voordat u een vacature plaatst: https://launchstudio.eu/nl/blog/launchstudio-vs-hiring-fullstack-bootcamp-graduate
 

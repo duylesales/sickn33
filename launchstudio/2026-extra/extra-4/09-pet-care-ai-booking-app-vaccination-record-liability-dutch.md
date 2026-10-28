@@ -79,9 +79,9 @@ Het team van LaunchStudio herbouwde de validatie om op het moment van boeken te 
 **Resultaat:** elke nieuwe boeking wordt nu gevalideerd tegen huidige, niet-verlopen vaccinatiedocumenten, en opvangbeheerders krijgen een realtime nalevingsweergave in plaats van een statische momentopname van de aanmeldingsdag.
 
 > *"Ik bouwde de controle één keer en nam aan dat 'gecontroleerd' betekende 'voor altijd gecontroleerd.' Dat is niet zo – en voor een opvangcentrum is die kloof exact het soort ding dat in een incidentenrapport belandt."*
-> — **Fenne Wouters, Oprichter, DierenAgenda (Tilburg)**
+> - **Fenne Wouters, Oprichter, DierenAgenda (Tilburg)**
 
-**Kosten en tijdlijn:** € 550 (vaccinatievalidatie op boekingsmoment, vervaldatuumbewust dashboard, geautomatiseerd herinneringssysteem) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 550 (vaccinatievalidatie op boekingsmoment, vervaldatuumbewust dashboard, geautomatiseerd herinneringssysteem) - voltooid in 2 werkdagen.
 
 ---
 

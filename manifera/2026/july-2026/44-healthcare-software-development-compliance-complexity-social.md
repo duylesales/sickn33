@@ -22,9 +22,9 @@ Integration per vendor: **6-10 weeks.**
 
 **Clinical UX ≠ Consumer UX:**
 
-👁️ Glanceability — critical info visible without clicks
-🛡️ Error prevention — don't just warn, prevent
-⏸️ Interruptibility — doctors interrupted every 3-4 min, work must be resumable
+👁️ Glanceability - critical info visible without clicks
+🛡️ Error prevention - don't just warn, prevent
+⏸️ Interruptibility - doctors interrupted every 3-4 min, work must be resumable
 
 **Healthcare software costs 40-60% more than standard SaaS:**
 

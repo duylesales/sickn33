@@ -1,4 +1,4 @@
-🔥 Emma built a prototype using **Bolt** — emma, a certified personal trainer, used **bolt** to prototype a custom coaching portal where clients could view personalized workout routines, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Emma built a prototype using **Bolt** - emma, a certified personal trainer, used **bolt** to prototype a custom coaching portal where clients could view personalized workout routines, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Emma's application achieved production readiness: Emma's app load times dropped from 8 seconds to under 0.5 seconds, and her client data became completely secure. She successfully onboarded 80 paying clients within two weeks of launch. (€2,200 (Scale Package) — production-ready and deployed in 7 business days.). 🚀
+Emma's application achieved production readiness: Emma's app load times dropped from 8 seconds to under 0.5 seconds, and her client data became completely secure. She successfully onboarded 80 paying clients within two weeks of launch. (€2,200 (Scale Package) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-generated-code-quality-guide
 

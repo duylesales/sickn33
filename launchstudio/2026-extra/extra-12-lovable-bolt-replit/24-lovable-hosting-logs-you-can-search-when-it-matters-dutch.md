@@ -30,7 +30,7 @@ Logging is een van die disciplines die bijna niets kost om goed in te richten en
 
 De standaard in gegenereerde code is een kaal print- of consolestatement, meestal overgebleven van het debuggen. Het levert een regel tekst op zonder context: niet wie, niet wanneer in enige nuttige zin, niet welk verzoek, niet welke omgeving.
 
-Het alternatief is één regel structuur in plaats van proza. Een logregel hoort een record met velden te zijn — de gebeurtenis, de ernst, het tijdstip, de request-ID, de gebruiker en het account, en wat specifiek is voor de gebeurtenis — in plaats van een zin waarin waarden zijn ingevoegd.
+Het alternatief is één regel structuur in plaats van proza. Een logregel hoort een record met velden te zijn - de gebeurtenis, de ernst, het tijdstip, de request-ID, de gebruiker en het account, en wat specifiek is voor de gebeurtenis - in plaats van een zin waarin waarden zijn ingevoegd.
 
 Het praktische verschil verschijnt de eerste keer dat u moet zoeken. Gestructureerde regels kunnen worden gefilterd: toon me de fouten voor dit account in dit uur. Tekstregels kunnen alleen worden doorgelezen, en tienduizend regels doorlezen op zoek naar een naam die op drie plekken anders kan zijn gespeld, is geen onderzoek.
 
@@ -40,7 +40,7 @@ Neemt u verder niets over, neem dan dit over.
 
 Genereer aan het begin van elk verzoek een identificatie, hang die aan elke logregel die tijdens de afhandeling van dat verzoek ontstaat, en geef haar terug aan de client in een header en in elke foutmelding die de gebruiker ziet.
 
-Drie dingen volgen. Een klant die een probleem meldt, kan de code noemen die hij zag, en u kunt elke logregel van precies dat verzoek ophalen. Eén verzoek dat een endpoint, een databaseaanroep, een betaalprovider en een achtergrondtaak raakt, is te reconstrueren als één verhaal in plaats van vier losse fragmenten. En als dezelfde fout honderd keer verschijnt, kunt u zien of het één gebruiker is die het opnieuw probeert of honderd getroffen gebruikers — wat verandert wat u daarna doet.
+Drie dingen volgen. Een klant die een probleem meldt, kan de code noemen die hij zag, en u kunt elke logregel van precies dat verzoek ophalen. Eén verzoek dat een endpoint, een databaseaanroep, een betaalprovider en een achtergrondtaak raakt, is te reconstrueren als één verhaal in plaats van vier losse fragmenten. En als dezelfde fout honderd keer verschijnt, kunt u zien of het één gebruiker is die het opnieuw probeert of honderd getroffen gebruikers - wat verandert wat u daarna doet.
 
 Neem bij achtergrondtaken de identificatie mee van het verzoek dat de taak aanmaakte, zodat de keten intact blijft over de asynchrone grens heen.
 
@@ -62,15 +62,15 @@ De gebruikelijke fout is op info-niveau loggen bij elke stap van elk verzoek, wa
 
 Logs worden gekopieerd, doorgestuurd naar diensten van derden, bewaard op de infrastructuur van een ander en gelezen door wie er toegang toe heeft. Behandel ze als een plek waar data ontsnapt.
 
-Log nooit wachtwoorden, tokens, sessiecookies, API-sleutels, volledige kaartnummers of complete verzoekinhoud van formulieren met persoonsgegevens. Wees voorzichtig met alles wat onder de AVG bijzonder is — gezondheid, biometrie, of informatie over iemands omstandigheden — want een supportticket dat volledig wordt gelogd, wordt een registratie van iemands medische situatie die negentig dagen in een zoekindex staat.
+Log nooit wachtwoorden, tokens, sessiecookies, API-sleutels, volledige kaartnummers of complete verzoekinhoud van formulieren met persoonsgegevens. Wees voorzichtig met alles wat onder de AVG bijzonder is - gezondheid, biometrie, of informatie over iemands omstandigheden - want een supportticket dat volledig wordt gelogd, wordt een registratie van iemands medische situatie die negentig dagen in een zoekindex staat.
 
-Twee praktische maatregelen. Stel uw error tracking zo in dat velden op naam worden opgeschoond — password, token, authorization, en de velden die specifiek zijn voor uw product — vóór verzending. En log identificaties in plaats van waarden: de identificatie van een gebruiker in plaats van zijn naam en e-mailadres, een factuuridentificatie in plaats van de inhoud. U kunt de details in uw eigen database opzoeken wanneer u ze echt nodig hebt, met de toegangscontroles die daar gelden.
+Twee praktische maatregelen. Stel uw error tracking zo in dat velden op naam worden opgeschoond - password, token, authorization, en de velden die specifiek zijn voor uw product - vóór verzending. En log identificaties in plaats van waarden: de identificatie van een gebruiker in plaats van zijn naam en e-mailadres, een factuuridentificatie in plaats van de inhoud. U kunt de details in uw eigen database opzoeken wanneer u ze echt nodig hebt, met de toegangscontroles die daar gelden.
 
 ## Bewaartermijn Is een Beslissing, Geen Standaard
 
 De bewaartermijn van platformlogs is op gratis niveaus vaak één dag en op goedkope niveaus een week. Dat is korter dan de tijd die een klant nodig heeft om een probleem te melden.
 
-Beslis bewust. Dertig dagen applicatielogs dekt bijna elk supportonderzoek. Negentig dagen past bij producten waar klanten traag melden of waar u mogelijk moet aantonen wat er is gebeurd. Beveiligingsrelevante gebeurtenissen — inlogs, rechtenwijzigingen, beheeracties, data-exports — verdienen een langere termijn en horen als audittrail in uw eigen database in plaats van in een logdienst, omdat het zakelijke registraties zijn en geen diagnostiek.
+Beslis bewust. Dertig dagen applicatielogs dekt bijna elk supportonderzoek. Negentig dagen past bij producten waar klanten traag melden of waar u mogelijk moet aantonen wat er is gebeurd. Beveiligingsrelevante gebeurtenissen - inlogs, rechtenwijzigingen, beheeracties, data-exports - verdienen een langere termijn en horen als audittrail in uw eigen database in plaats van in een logdienst, omdat het zakelijke registraties zijn en geen diagnostiek.
 
 De andere helft van de beslissing is verwijdering. Logs met persoonsgegevens zijn persoonsgegevens, en ze onbeperkt bewaren is niet verdedigbaar en ook niet nuttig. Noem de termijn, handhaaf haar, en vermeld haar in uw privacydocumentatie.
 
@@ -86,7 +86,7 @@ Voor een klein product is dit de waardevolste monitoring die er is, en de gratis
 
 Het laatste stuk is gericht op de gebruiker, en het is wat een slecht supportgesprek in een kort gesprek verandert.
 
-Wanneer iets mislukt, toon de gebruiker dan een melding die in gewone taal zegt wat er gebeurde en de request-ID bevat. Geen stacktrace, geen "er is een fout opgetreden", maar iets als: we konden uw offerte niet opslaan — referentie 8f2a41 — probeer het opnieuw of stuur ons deze code.
+Wanneer iets mislukt, toon de gebruiker dan een melding die in gewone taal zegt wat er gebeurde en de request-ID bevat. Geen stacktrace, geen "er is een fout opgetreden", maar iets als: we konden uw offerte niet opslaan - referentie 8f2a41 - probeer het opnieuw of stuur ons deze code.
 
 Klanten noemen de code. U vindt het verzoek in seconden. En het verschil in toon is aanzienlijk: een product dat een referentienummer geeft, leest als een product waar iemand op let.
 
@@ -96,11 +96,11 @@ Logs beantwoorden vragen over het verleden. Een klein aantal meetwaarden vertelt
 
 **Foutpercentage als aandeel van de verzoeken.** Niet het absolute aantal, dat meegroeit met het verkeer, maar het aandeel. Een sprong in die verhouding na een deploy is het duidelijkste signaal dat u zult krijgen dat iets wat u uitbracht niet klopt.
 
-**Responstijd aan de trage kant** — het 95e percentiel in plaats van het gemiddelde. Gemiddelden verbergen de ervaring van de klanten die het meest waarschijnlijk klagen, en een pagina die snel is voor negen op de tien gebruikers en vreselijk voor de tiende, ziet er op een gemiddelde gezond uit.
+**Responstijd aan de trage kant** - het 95e percentiel in plaats van het gemiddelde. Gemiddelden verbergen de ervaring van de klanten die het meest waarschijnlijk klagen, en een pagina die snel is voor negen op de tien gebruikers en vreselijk voor de tiende, ziet er op een gemiddelde gezond uit.
 
 **Volume van datgene waarvoor uw product bestaat.** Aangemaakte offertes, geboekte afspraken, verwerkte documenten. Dit is het getal dat mislukkingen vangt die geen enkele technische meetwaarde ziet: een kapot formulier geeft nog steeds snel 200-antwoorden terug terwijl niemand het afmaakt.
 
-Die derde verdient de nadruk. De meeste ernstige storingen in kleine producten zijn geen crashes — het is iets wat stopte met werken terwijl alles er goed bleef uitzien. Een dagelijkse telling van de kernhandeling, vergeleken met dezelfde dag vorige week, vangt ze binnen uren op in plaats van wanneer een klant schrijft.
+Die derde verdient de nadruk. De meeste ernstige storingen in kleine producten zijn geen crashes - het is iets wat stopte met werken terwijl alles er goed bleef uitzien. Een dagelijkse telling van de kernhandeling, vergeleken met dezelfde dag vorige week, vangt ze binnen uren op in plaats van wanneer een klant schrijft.
 
 Niets hiervan vereist een dashboardproduct. Een query, een wekelijkse blik, en een melding op het zakelijke getal wanneer het sterk afwijkt, dekt op deze schaal wat ertoe doet.
 
@@ -108,7 +108,7 @@ Niets hiervan vereist een dashboardproduct. Een query, een wekelijkse blik, en e
 
 Voor een bestaand product kost dit doorgaans één dag: gestructureerde logging ter vervanging van printstatements, een request-ID per verzoek gegenereerd en doorgegeven via databaseaanroepen, externe aanroepen, achtergrondtaken en foutmeldingen, logniveaus bewust toegepast met debug uitgeschakeld in productie, gevoelige velden op naam opgeschoond voordat er iets de applicatie verlaat, de bewaartermijn bewust ingesteld met beveiligingsgebeurtenissen verplaatst naar een duurzame audittrail in uw eigen database, een error tracker ingesteld met release-, gebruikers- en verzoekcontext, en foutmeldingen voor gebruikers met de referentie erin.
 
-LaunchStudio richt dit in als onderdeel van productieklaar maken, en binnen de managed regeling van €49 per maand komen de foutmeldingen eerst bij ons binnen. De engineers zijn van Manifera — elf jaar, 120+ engineers, en productiesystemen voor klanten als Vodafone, TNO en CFLW.
+LaunchStudio richt dit in als onderdeel van productieklaar maken, en binnen de managed regeling van €49 per maand komen de foutmeldingen eerst bij ons binnen. De engineers zijn van Manifera - elf jaar, 120+ engineers, en productiesystemen voor klanten als Vodafone, TNO en CFLW.
 
 [Vraag ons iets te onderzoeken wat vorige week gebeurde](https://launchstudio.eu/nl/#contact). Of we dat kunnen, is de test.
 
@@ -120,16 +120,16 @@ Willemijn Stoffels bouwde Prijsopgave in Lovable: offertesoftware voor hoveniers
 
 Een hovenier in Alphen aan den Rijn meldde dat een offerte voor €14.000 aan werk was verdwenen nadat hij die had opgeslagen. Hij had er veertig minuten aan gewerkt. Hij maakte haar opnieuw, verloor de klus aan een concurrent die eerder offreerde, en vertelde Willemijn dat hij overwoog te vertrekken.
 
-Ze kon het niet onderzoeken. Haar logs waren ongestructureerde tekst die 24 uur werd bewaard, de melding kwam vier dagen later binnen, en er was geen manier om op klant te zoeken, zelfs niet binnen die termijn. Ze kon hem niet vertellen of de offerte was opgeslagen, of het was mislukt, of dat hij een fout had gemaakt — en het niet weten was erger voor de relatie dan een gebrek zou zijn geweest.
+Ze kon het niet onderzoeken. Haar logs waren ongestructureerde tekst die 24 uur werd bewaard, de melding kwam vier dagen later binnen, en er was geen manier om op klant te zoeken, zelfs niet binnen die termijn. Ze kon hem niet vertellen of de offerte was opgeslagen, of het was mislukt, of dat hij een fout had gemaakt - en het niet weten was erger voor de relatie dan een gebrek zou zijn geweest.
 
 Twee werkdagen: gestructureerde logging in de hele applicatie met gebeurtenis, ernst, tijdstip, request-ID, gebruiker en account op elke regel; request-ID's per verzoek gegenereerd en meegenomen in databasehandelingen, de pdf-generatiedienst en achtergrondtaken; logniveaus toegepast zodat productie fouten, waarschuwingen en zakelijke gebeurtenissen uitstuurt in plaats van vertelling; opschoning van velden op naam vóór verzending, aangezien de vorige opzet volledige formulierinhoud had gelogd, inclusief adressen van klanten; de bewaartermijn verhoogd naar 30 dagen, met inlogs, rechtenwijzigingen, statusovergangen van offertes en exports weggeschreven naar een audittabel in haar eigen database die twee jaar wordt bewaard; error tracking ingesteld met release-, gebruikers- en verzoekcontext; en foutmeldingen voor gebruikers met een korte referentiecode.
 
-**Resultaat:** de oorspronkelijke oorzaak werd nooit vastgesteld, maar het patroon wel — drie weken later werd een identieke mislukking volledig vastgelegd, die een time-out bij het genereren van de pdf liet zien die een succesantwoord naar de browser stuurde terwijl het opslaan werd teruggedraaid. Het werd in een middag opgelost. De hovenier bleef, vooral omdat hij een specifieke uitleg en een referentienummer kreeg in plaats van een verontschuldiging.
+**Resultaat:** de oorspronkelijke oorzaak werd nooit vastgesteld, maar het patroon wel - drie weken later werd een identieke mislukking volledig vastgelegd, die een time-out bij het genereren van de pdf liet zien die een succesantwoord naar de browser stuurde terwijl het opslaan werd teruggedraaid. Het werd in een middag opgelost. De hovenier bleef, vooral omdat hij een specifieke uitleg en een referentienummer kreeg in plaats van een verontschuldiging.
 
 > *"Een klant verloor veertig minuten werk en ik kon hem niets vertellen. Niet wat er misging, niet of het zijn fout was of de mijne. Dat gesprek was het dure deel, niet de fout."*
-> — **Willemijn Stoffels, Oprichter, Prijsopgave (Alphen aan den Rijn)**
+> - **Willemijn Stoffels, Oprichter, Prijsopgave (Alphen aan den Rijn)**
 
-**Kosten & Doorlooptijd:** €2.000 (gestructureerde logging, doorgeven van request-ID's, beleid voor logniveaus, opschonen van velden, bewaartermijn en audittrail, error tracking met context, referenties voor gebruikers) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.000 (gestructureerde logging, doorgeven van request-ID's, beleid voor logniveaus, opschonen van velden, bewaartermijn en audittrail, error tracking met context, referenties voor gebruikers) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -139,7 +139,7 @@ Een request-ID aan elke regel gekoppeld en aan de gebruiker teruggegeven. Het ve
 
 ### Hoe lang moeten logs worden bewaard?
 
-Dertig dagen dekt de meeste supportonderzoeken; negentig past bij klanten die trager melden. Beveiligingsgebeurtenissen — inlogs, rechtenwijzigingen, exports — horen in een langer bewaarde audittabel in uw eigen database.
+Dertig dagen dekt de meeste supportonderzoeken; negentig past bij klanten die trager melden. Beveiligingsgebeurtenissen - inlogs, rechtenwijzigingen, exports - horen in een langer bewaarde audittabel in uw eigen database.
 
 ### Wat mag nooit in logs verschijnen?
 
@@ -187,7 +187,7 @@ Ja. Een korte code die de klant kan noemen, verandert een vage melding in een do
       "name": "Is error tracking nodig naast logging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — logs reconstrueren wat er gebeurde, error tracking merkt het op, groepeert voorkomens en laat zien hoeveel gebruikers zijn getroffen."
+        "text": "Ja - logs reconstrueren wat er gebeurde, error tracking merkt het op, groepeert voorkomens en laat zien hoeveel gebruikers zijn getroffen."
       }
     },
     {

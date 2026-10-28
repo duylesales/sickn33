@@ -1,4 +1,4 @@
-🚨 Daan Willems bouwde "StockSentry," een voorraadvolgsysteem voor onafhankelijke retailers, in Cursor — waarbij hij elke belangrijke wijziging zelf regel voor regel controleerde. Het draaide perfect op zijn machine en in elke lokale test. Toen probeerde hij het daadwerkelijk te implementeren: vier mislukte pogingen, hardgecodeerde omgevingsvariabelen die crashten in staging, en telkens een hele avond verloren aan handmatige fixes. 😳
+🚨 Daan Willems bouwde "StockSentry," een voorraadvolgsysteem voor onafhankelijke retailers, in Cursor - waarbij hij elke belangrijke wijziging zelf regel voor regel controleerde. Het draaide perfect op zijn machine en in elke lokale test. Toen probeerde hij het daadwerkelijk te implementeren: vier mislukte pogingen, hardgecodeerde omgevingsvariabelen die crashten in staging, en telkens een hele avond verloren aan handmatige fixes. 😳
 
 Elke regel van uw eigen code kunnen lezen betekent niet dat u alles hebt gezien wat er mis mee is. 🧠
 
@@ -11,7 +11,7 @@ Elke regel van uw eigen code kunnen lezen betekent niet dat u alles hebt gezien 
 ✅ Omgevingsconfiguratie correct gescheiden over development, staging en productie
 ✅ De app overgezet naar stabiele, gemonitorde hosting met een herhaalbaar implementatieproces
 
-Bij **LaunchStudio** concurreren we niet met de tool die u hebt gekozen — we pakken de draad op precies waar diens verantwoordelijkheid eindigt, gebruikmakend van Manifera's 11+ jaar aan productie-engineering vanuit Amsterdam. 🛡️
+Bij **LaunchStudio** concurreren we niet met de tool die u hebt gekozen - we pakken de draad op precies waar diens verantwoordelijkheid eindigt, gebruikmakend van Manifera's 11+ jaar aan productie-engineering vanuit Amsterdam. 🛡️
 
 Daan's resultaat: StockSentry implementeert nu betrouwbaar, waarbij de codekwaliteit die hij al goed had eindelijk wordt geëvenaard door infrastructuur die werkt. 🚀
 

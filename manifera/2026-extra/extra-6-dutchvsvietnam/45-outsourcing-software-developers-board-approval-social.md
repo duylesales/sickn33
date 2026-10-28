@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Six Board Questions, Pre-Built Answers:** Client-owned repos, EU-domiciled DPA, cross-trained continuity, verifiable vendor stability, honest ROI, and clean exit terms.
-✅ **Amsterdam Strategic Governance:** A governance layer physically separate from execution — one region's disruption never severs your only line of accountability.
+✅ **Amsterdam Strategic Governance:** A governance layer physically separate from execution - one region's disruption never severs your only line of accountability.
 ✅ **Vietnam Execution Velocity:** Delivery under a contract structure with clear exit terms and no penalty for leaving.
 
 Convert a stalled discussion into a fifteen-minute approval. 🛡️

@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Some data teams work at a steady pace all year. Others live on a cycle: everything builds towards a period of weeks when the organisation makes most of its money or carries most of its risk, and the rest of the year is shaped around preparing for it and recovering from it. In the Netherlands this covers a large share of interesting applied work — retail and e-commerce in the run-up to December, horticulture and agriculture through the growing season, energy through winter, tax and financial reporting at fixed deadlines, insurance after storms, tourism and hospitality through summer. The work is often excellent. The annual rhythm is the thing to understand before you sign, because it decides when you can take leave, when you can learn and when your evenings belong to you.
+Some data teams work at a steady pace all year. Others live on a cycle: everything builds towards a period of weeks when the organisation makes most of its money or carries most of its risk, and the rest of the year is shaped around preparing for it and recovering from it. In the Netherlands this covers a large share of interesting applied work - retail and e-commerce in the run-up to December, horticulture and agriculture through the growing season, energy through winter, tax and financial reporting at fixed deadlines, insurance after storms, tourism and hospitality through summer. The work is often excellent. The annual rhythm is the thing to understand before you sign, because it decides when you can take leave, when you can learn and when your evenings belong to you.
 
 ## What the Peak Does to a Data Team
 
@@ -53,7 +53,7 @@ Some data teams work at a steady pace all year. Others live on a cycle: everythi
 
 **Clarity.** During the peak, priorities are obvious and decisions are fast. Many people find this the most satisfying period of their year.
 
-**The quiet season is genuinely quiet.** A well-run cyclical organisation uses the trough for platform work, refactoring, experimentation and training — the things that never happen in teams with a constant drip of requests.
+**The quiet season is genuinely quiet.** A well-run cyclical organisation uses the trough for platform work, refactoring, experimentation and training - the things that never happen in teams with a constant drip of requests.
 
 **Forecasting that matters.** In peak businesses, demand forecasting, capacity planning and pricing are core rather than decorative, and the feedback loop is fast and unambiguous.
 
@@ -126,7 +126,7 @@ Front-load everything. Anything that must ship should be done well before the fr
 
 Use the run-up to make things observable. Monitoring added in October is what lets you sleep in December.
 
-Plan your own development into the trough deliberately — a course, a refactor, a new area — and get it agreed before the peak, because after it everyone is tired and the calendar fills.
+Plan your own development into the trough deliberately - a course, a refactor, a new area - and get it agreed before the peak, because after it everyone is tired and the calendar fills.
 
 Write the peak retrospective while it is fresh. What broke, what was manual, what nearly failed. In cyclical organisations this document is the single most valuable artefact of the year, and almost nobody writes it.
 
@@ -164,19 +164,19 @@ She also asks about leave. There is a blackout from mid-November to the end of D
 
 She accepts. The first peak is harder than expected and the January leave is genuinely honoured. The retrospective she writes in early January becomes the basis for the next off-season's work.
 
-Three years in, she says the rhythm suits her better than the steady pressure of her previous job — and that the blackout period is the thing she would check first if she ever moved again.
+Three years in, she says the rhythm suits her better than the steady pressure of her previous job - and that the blackout period is the thing she would check first if she ever moved again.
 
 ## Key Takeaways
 
-- Peak-driven organisations — retail, horticulture, energy, tax, insurance, tourism — shape the whole year around a period of weeks, including freezes, standby and leave restrictions.
+- Peak-driven organisations - retail, horticulture, energy, tax, insurance, tourism - shape the whole year around a period of weeks, including freezes, standby and leave restrictions.
 - The upside is clarity, high-stakes forecasting work, measurable impact and a genuinely quiet building season, if the organisation uses it.
 - The downside is leave at the wrong time of year, freezes that block shipping, fatigue after the peak and an annual repetition some people find wearing.
-- Dutch rules give employees considerable say over holiday timing, and a peak is exactly the kind of serious business reason that permits restrictions — so ask about the policy explicitly.
+- Dutch rules give employees considerable say over holiday timing, and a peak is exactly the kind of serious business reason that permits restrictions - so ask about the policy explicitly.
 - Ask what the team built in the last off-season and what broke in the last peak; those two answers predict your year better than any description of culture.
 
 ## Where to Start
 
-Seasonality is rarely mentioned in a vacancy, so ask when the peak falls before you accept — and see which employers near you run on a steadier cycle.
+Seasonality is rarely mentioned in a vacancy, so ask when the peak falls before you accept - and see which employers near you run on a steadier cycle.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -202,7 +202,7 @@ Forecasting, capacity planning, pricing and operational monitoring, with unusual
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a seasonal-cycle role harder than a steady one?", "acceptedAnswer": {"@type": "Answer", "text": "Differently distributed — intense weeks with freezes and standby, plus a quieter building season."}},
+    {"@type": "Question", "name": "Is a seasonal-cycle role harder than a steady one?", "acceptedAnswer": {"@type": "Answer", "text": "Differently distributed - intense weeks with freezes and standby, plus a quieter building season."}},
     {"@type": "Question", "name": "Can my employer refuse leave during the peak?", "acceptedAnswer": {"@type": "Answer", "text": "Generally employers follow employees' wishes unless serious business reasons apply, and a peak qualifies."}},
     {"@type": "Question", "name": "What should I ask to judge the organisation?", "acceptedAnswer": {"@type": "Answer", "text": "What was built in the last off-season and what broke in the last peak."}},
     {"@type": "Question", "name": "Do freezes hold back my learning?", "acceptedAnswer": {"@type": "Answer", "text": "They can; agree development work for the trough in advance."}},

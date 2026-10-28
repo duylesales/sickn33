@@ -1,4 +1,4 @@
-🔥 Amara bouwde DataPulse met **Bolt** — een AI-analyticsplatform waarvan de eerste enterprise-klant wilde uitbreiden van 25 naar 90 stoelen, totdat ontbrekende SSO en handmatig stoelbeheer de uitrol deden stagneren. 🧠
+🔥 Amara bouwde DataPulse met **Bolt** - een AI-analyticsplatform waarvan de eerste enterprise-klant wilde uitbreiden van 25 naar 90 stoelen, totdat ontbrekende SSO en handmatig stoelbeheer de uitrol deden stagneren. 🧠
 
 Als uw product geen SSO, geen zelfbedieningsupgrades voor stoelen en geen op gebruik gebaseerde expansietriggers heeft, hangt het uitbreiden van uw eerste enterprise-account voorbij een handvol gebruikers volledig af van geluk, niet van infrastructuur.
 
@@ -12,7 +12,7 @@ Als uw product geen SSO, geen zelfbedieningsupgrades voor stoelen en geen op geb
 
 Bij **LaunchStudio** bouwen wij dit type enterprise-expansie-infrastructuur al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Het account van Amara ging van stagnerend naar schalend: het account van de retailer breidde binnen zes weken na livegang van de infrastructuur uit van 25 naar 90 stoelen, waarbij IT de uitrol dezelfde week goedkeurde als waarin SSO bevestigd werkte. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
+Het account van Amara ging van stagnerend naar schalend: het account van de retailer breidde binnen zes weken na livegang van de infrastructuur uit van 25 naar 90 stoelen, waarbij IT de uitrol dezelfde week goedkeurde als waarin SSO bevestigd werkte. (€ 2.600 (Launch & Grow Pakket) - 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-upsell-playbook-diy-vs-launchstudio
 

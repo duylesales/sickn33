@@ -21,13 +21,13 @@ Content Format: Career Guide
 }
 </script>
 
-Als je AI, Data Science of Machine Learning studeert in Brabant, heb je waarschijnlijk al een keer gedacht: "voor een goede stage moet ik wel naar Amsterdam of Utrecht." Die gedachte is begrijpelijk — het is ook meestal niet waar, en het kost je iets concreets: reistijd, huurkosten, of een studentenkamer die je niet per se wilde.
+Als je AI, Data Science of Machine Learning studeert in Brabant, heb je waarschijnlijk al een keer gedacht: "voor een goede stage moet ik wel naar Amsterdam of Utrecht." Die gedachte is begrijpelijk - het is ook meestal niet waar, en het kost je iets concreets: reistijd, huurkosten, of een studentenkamer die je niet per se wilde.
 
-Dit is geen oproep om "trots te zijn op je regio." Het is een simpele constatering over hoe vacatures zichtbaar worden, en waarom die zichtbaarheid systematisch scheef loopt richting de Randstad — ook als het beste aanbod voor jou gewoon dichterbij staat.
+Dit is geen oproep om "trots te zijn op je regio." Het is een simpele constatering over hoe vacatures zichtbaar worden, en waarom die zichtbaarheid systematisch scheef loopt richting de Randstad - ook als het beste aanbod voor jou gewoon dichterbij staat.
 
 ## Waarom het lijkt alsof Brabant niks te bieden heeft
 
-Vacaturesites tonen je vooral wat andere mensen ook zoeken, en de meeste zoekvolume voor "AI stage" komt nu eenmaal uit steden met de meeste studenten in absolute aantallen. Bedrijven die wél in Brabant werven, hebben vaak geen apart wervingsbudget voor Randstad-achtige employer branding — ze plaatsen één vacature, op één plek, en die verdwijnt in de resultaten onder bedrijven die wél adverteren.
+Vacaturesites tonen je vooral wat andere mensen ook zoeken, en de meeste zoekvolume voor "AI stage" komt nu eenmaal uit steden met de meeste studenten in absolute aantallen. Bedrijven die wél in Brabant werven, hebben vaak geen apart wervingsbudget voor Randstad-achtige employer branding - ze plaatsen één vacature, op één plek, en die verdwijnt in de resultaten onder bedrijven die wél adverteren.
 
 Het gevolg: je ziet vooral de vacatures van bedrijven die het hardst roepen, niet van bedrijven die het beste werk hebben. Dat is een verschil dat je als starter makkelijk over het hoofd ziet, omdat je nog geen referentiekader hebt om het aanbod te wegen.
 
@@ -37,36 +37,36 @@ Het gevolg: je ziet vooral de vacatures van bedrijven die het hardst roepen, nie
 
 **Logistiek en e-commerce data.** Brabant heeft een groot logistiek en e-commerce cluster, met bedrijven die dagelijks te maken hebben met voorraadvoorspelling, routeplanning en klantdata op schaal.
 
-**Bedrijven die je nog niet kent.** Op OnlyAIJobs staan op dit moment onder meer Boltrics, 4Dotnet, Holland Innovative en Eminent Groep — namen die je niet tegenkomt in een lijst van "beste AI-werkgevers Nederland", maar die wel degelijk AI- en datarollen invullen.
+**Bedrijven die je nog niet kent.** Op OnlyAIJobs staan op dit moment onder meer Boltrics, 4Dotnet, Holland Innovative en Eminent Groep - namen die je niet tegenkomt in een lijst van "beste AI-werkgevers Nederland", maar die wel degelijk AI- en datarollen invullen.
 
 ## Stage zoeken: twee verschillende strategieën, vergeleken
 
 | | Zoeken op naam ("bekende bedrijven") | Zoeken op afstand tot huis |
 |---|---|---|
 | Uitgangspunt | Bedrijven die je al kent uit media of LinkedIn | Elk bedrijf binnen een straal die voor jou werkt |
-| Concurrentie per vacature | Hoog — iedereen kent dezelfde tien namen | Lager — minder mensen zoeken lokaal specifiek |
+| Concurrentie per vacature | Hoog - iedereen kent dezelfde tien namen | Lager - minder mensen zoeken lokaal specifiek |
 | Reistijd | Vaak genegeerd tot de eerste werkdag | Vooraf zichtbaar, want dat is precies wat je filtert |
 | Kans op een onbekend maar sterk bedrijf | Laag | Hoger |
-| Compromis nodig? | Vaak wel — verhuizen, lange reistijd | Niet per se |
+| Compromis nodig? | Vaak wel - verhuizen, lange reistijd | Niet per se |
 
-Geen van beide strategieën is fout. Maar als je alleen de linkerkolom gebruikt, maak je nooit bewust de keuze voor de rechterkolom — je hebt 'm gewoon nooit gezien.
+Geen van beide strategieën is fout. Maar als je alleen de linkerkolom gebruikt, maak je nooit bewust de keuze voor de rechterkolom - je hebt 'm gewoon nooit gezien.
 
 ## Waarom "dichterbij" geen compromis hoeft te zijn
 
-Het idee dat de beste stage per definitie ver weg is, komt niet uit data — het komt uit de zichtbaarheid van vacatures. Een stageplek tien minuten van huis is niet automatisch minder waardevol dan een stageplek in Amsterdam; hij is alleen minder vaak op je tijdlijn beland, omdat het bedrijf geen marketingbudget had om daar te komen.
+Het idee dat de beste stage per definitie ver weg is, komt niet uit data - het komt uit de zichtbaarheid van vacatures. Een stageplek tien minuten van huis is niet automatisch minder waardevol dan een stageplek in Amsterdam; hij is alleen minder vaak op je tijdlijn beland, omdat het bedrijf geen marketingbudget had om daar te komen.
 
 Dat is precies waarom OnlyAIJobs elke vacature toont met een exact adres en de afstand vanaf jouw huis, in plaats van alleen een plaatsnaam: zodat een sterke stage in Tilburg, Breda of Den Bosch even zichtbaar is als een stage in de Randstad, in plaats van te verdwijnen onder bedrijven met een groter reclamebudget.
 
 ## Waar te beginnen
 
-Begin niet met een lijst van bedrijfsnamen die je al kent. Begin met een straal om je huis, en bekijk elke AI-, ML- of data-vacature daarbinnen — inclusief bedrijven waarvan je nog nooit hebt gehoord. Filter op categorie zodat je niet duizenden irrelevante IT-vacatures hoeft door te spitten, en op afstand zodat reistijd geen verrassing is bij het eerste gesprek.
+Begin niet met een lijst van bedrijfsnamen die je al kent. Begin met een straal om je huis, en bekijk elke AI-, ML- of data-vacature daarbinnen - inclusief bedrijven waarvan je nog nooit hebt gehoord. Filter op categorie zodat je niet duizenden irrelevante IT-vacatures hoeft door te spitten, en op afstand zodat reistijd geen verrassing is bij het eerste gesprek.
 
 Bekijk actuele AI-, machine learning- en data-vacatures en stages bij jou in de buurt op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Veelgestelde vragen
 
 ### (Scenario: student die denkt dat een goede stage per definitie in de Randstad is) Moet ik echt naar de Randstad verhuizen voor een goede AI-stage?
-Niet per definitie. De aanname dat de beste stages in de Randstad zitten, komt vooral doordat vacatures daar zichtbaarder zijn — niet doordat het werk daar per se beter is. Regio's zoals Brabant hebben een reële hightech-, logistiek- en datasector, waar bedrijven vaak minder budget hebben om op te vallen, maar wel degelijk sterke AI- en datarollen invullen.
+Niet per definitie. De aanname dat de beste stages in de Randstad zitten, komt vooral doordat vacatures daar zichtbaarder zijn - niet doordat het werk daar per se beter is. Regio's zoals Brabant hebben een reële hightech-, logistiek- en datasector, waar bedrijven vaak minder budget hebben om op te vallen, maar wel degelijk sterke AI- en datarollen invullen.
 
 ### (Scenario: starter die alleen bekende bedrijfsnamen zoekt) Waarom vind ik alleen dezelfde paar bekende bedrijven als ik op "AI stage" zoek?
 Omdat vacaturesites vacatures tonen op basis van wat veel mensen al zoeken en wat bedrijven adverteren, niet op basis van welk werk het beste bij je past. Bedrijven met een groot wervingsbudget komen bovenaan te staan, ongeacht of hun stage geschikter voor je is dan die van een minder bekend bedrijf.

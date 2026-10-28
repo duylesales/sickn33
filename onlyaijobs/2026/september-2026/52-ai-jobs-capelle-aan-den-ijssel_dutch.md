@@ -25,7 +25,7 @@ Capelle aan den IJssel ligt in de schaduw van Rotterdam, en dat is precies waaro
 
 ## Wat voor datawerk hier daadwerkelijk gebeurt
 
-E-commerce- en consumentendienstenbedrijven in deze regio hebben doorgaans te maken met vraagvoorspelling, klantsegmentatie en aanbevelingslogica op consumentenschaal — werk dat qua toolset dicht bij wat een Amsterdamse scale-up doet, maar zonder de zichtbaarheid die een grotere merknaam met zich meebrengt.
+E-commerce- en consumentendienstenbedrijven in deze regio hebben doorgaans te maken met vraagvoorspelling, klantsegmentatie en aanbevelingslogica op consumentenschaal - werk dat qua toolset dicht bij wat een Amsterdamse scale-up doet, maar zonder de zichtbaarheid die een grotere merknaam met zich meebrengt.
 
 ## Waarom dit werk makkelijk over het hoofd wordt gezien
 
@@ -52,19 +52,19 @@ Het nadeel is duidelijk: bedrijven hier worden overschaduwd in zoekresultaten do
 
 ## Wat dit betekent voor je zoekstrategie
 
-Als je een achtergrond hebt in consumentgerichte data science — aanbevelingssystemen, klantsegmentatie, prijsoptimalisatie — is dit werk waarschijnlijk een betere match voor je vaardigheden dan de havengerelateerde rollen waar een regionale zoekopdracht naar Rotterdam je automatisch naartoe leidt. Zoek specifiek naar e-commerce- en consumentendienstenbedrijven in de directe omgeving, niet naar "Rotterdam" als geheel.
+Als je een achtergrond hebt in consumentgerichte data science - aanbevelingssystemen, klantsegmentatie, prijsoptimalisatie - is dit werk waarschijnlijk een betere match voor je vaardigheden dan de havengerelateerde rollen waar een regionale zoekopdracht naar Rotterdam je automatisch naartoe leidt. Zoek specifiek naar e-commerce- en consumentendienstenbedrijven in de directe omgeving, niet naar "Rotterdam" als geheel.
 
 ## Een concreet scenario van hoe deze onzichtbaarheid ontstaat
 
-Een data scientist met ervaring in aanbevelingssystemen zoekt naar een nieuwe rol en typt "AI vacatures Rotterdam" in een zoekmachine. De resultaten worden gedomineerd door havengerelateerde bedrijven en logistieke dienstverleners, simpelweg omdat die het meest worden geassocieerd met de regio in berichtgeving en marketing. Een e-commercebedrijf in Capelle aan den IJssel dat exact het soort werk aanbiedt waar deze kandidaat naar zoekt, verschijnt nergens in die eerste resultaten — niet omdat het bedrijf geen vacature heeft, maar omdat de zoekopdracht zelf al onbewust gestuurd is richting een ander soort werkgever.
+Een data scientist met ervaring in aanbevelingssystemen zoekt naar een nieuwe rol en typt "AI vacatures Rotterdam" in een zoekmachine. De resultaten worden gedomineerd door havengerelateerde bedrijven en logistieke dienstverleners, simpelweg omdat die het meest worden geassocieerd met de regio in berichtgeving en marketing. Een e-commercebedrijf in Capelle aan den IJssel dat exact het soort werk aanbiedt waar deze kandidaat naar zoekt, verschijnt nergens in die eerste resultaten - niet omdat het bedrijf geen vacature heeft, maar omdat de zoekopdracht zelf al onbewust gestuurd is richting een ander soort werkgever.
 
 ## Een veelvoorkomend misverstand over regionale zoekopdrachten
 
-Kandidaten nemen vaak aan dat een zoekopdracht op een grote stadsnaam automatisch alle relevante werkgevers in de bredere regio omvat. In de praktijk werkt dit averechts wanneer de grotere stad een sterk gedomineerd imago heeft — zoals Rotterdam met de haven — omdat zoekresultaten en berichtgeving zich concentreren rond dat dominante beeld, waardoor andersoortige werkgevers in dezelfde regio ondergesneeuwd raken.
+Kandidaten nemen vaak aan dat een zoekopdracht op een grote stadsnaam automatisch alle relevante werkgevers in de bredere regio omvat. In de praktijk werkt dit averechts wanneer de grotere stad een sterk gedomineerd imago heeft - zoals Rotterdam met de haven - omdat zoekresultaten en berichtgeving zich concentreren rond dat dominante beeld, waardoor andersoortige werkgevers in dezelfde regio ondergesneeuwd raken.
 
 ## Waarom dit patroon zich in bijna elke grote Nederlandse stad herhaalt
 
-Dit is geen uniek probleem van Rotterdam en Capelle aan den IJssel — hetzelfde patroon speelt bij Eindhoven (gedomineerd door hightech-industrie, met logistiek en dienstverlening in de schaduw) en bij Amsterdam (gedomineerd door consumer tech, met traditionele sectoren in de schaduw). Wie dit patroon herkent, kan het bewust doorbreken door altijd specifiek te zoeken naar het type werk dat je interesseert, in plaats van te vertrouwen op wat een stadsnaam automatisch oproept.
+Dit is geen uniek probleem van Rotterdam en Capelle aan den IJssel - hetzelfde patroon speelt bij Eindhoven (gedomineerd door hightech-industrie, met logistiek en dienstverlening in de schaduw) en bij Amsterdam (gedomineerd door consumer tech, met traditionele sectoren in de schaduw). Wie dit patroon herkent, kan het bewust doorbreken door altijd specifiek te zoeken naar het type werk dat je interesseert, in plaats van te vertrouwen op wat een stadsnaam automatisch oproept.
 
 ## Hoe je een gerichte zoekopdracht opbouwt voor dit soort verborgen regionale markten
 
@@ -77,13 +77,13 @@ Capelle aan den IJssel biedt een specifieke combinatie die niet elke Rotterdam-n
 ## Veelgestelde vragen
 
 ### (Scenario: kandidaat die alleen aan havenwerk denkt bij Rotterdam) Is al het datawerk rond Rotterdam havengerelateerd?
-Nee — direct naast de haven zit ook een cluster van e-commerce- en consumentendienstenbedrijven met een eigen, consumentgerichte datavraag rond vraagvoorspelling en klantsegmentatie.
+Nee - direct naast de haven zit ook een cluster van e-commerce- en consumentendienstenbedrijven met een eigen, consumentgerichte datavraag rond vraagvoorspelling en klantsegmentatie.
 
 ### (Scenario: kandidaat die niets vindt via een zoekmachine) Waarom vind ik dit soort vacatures niet als ik op "AI Rotterdam" zoek?
 Omdat berichtgeving over de regio zich vooral richt op de haven en industrie, waardoor kandidaten onbewust hun zoekopdracht daarop richten en consumentgerichte datavacatures in de directe omgeving missen.
 
 ### (Scenario: kandidaat die twijfelt of dit werk vergelijkbaar is met Amsterdam) Is dit werk vergelijkbaar met wat een Amsterdamse scale-up doet?
-Qua toolset vaak wel — vraagvoorspelling, klantsegmentatie en aanbevelingslogica zijn vergelijkbare technieken, alleen zonder de merknaamzichtbaarheid van een grotere Amsterdamse werkgever.
+Qua toolset vaak wel - vraagvoorspelling, klantsegmentatie en aanbevelingslogica zijn vergelijkbare technieken, alleen zonder de merknaamzichtbaarheid van een grotere Amsterdamse werkgever.
 
 ### (Scenario: kandidaat die zijn zoekgebied wil verbreden) Moet ik mijn zoekgebied verbreden als ik in de buurt van Rotterdam woon?
 Ja, het loont om verder te kijken dan alleen de havenindustrie en het centrum van Rotterdam, aangezien de directe omgeving eigen, minder zichtbare werkgevers met datawerk heeft.
@@ -96,7 +96,7 @@ Filter op categorie en afstand tot huis in plaats van op de meest bekende bedrij
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is al het datawerk rond Rotterdam havengerelateerd?", "acceptedAnswer": {"@type": "Answer", "text": "Nee — direct naast de haven zit ook een cluster van e-commerce- en consumentendienstenbedrijven met een eigen, consumentgerichte datavraag."}},
+    {"@type": "Question", "name": "Is al het datawerk rond Rotterdam havengerelateerd?", "acceptedAnswer": {"@type": "Answer", "text": "Nee - direct naast de haven zit ook een cluster van e-commerce- en consumentendienstenbedrijven met een eigen, consumentgerichte datavraag."}},
     {"@type": "Question", "name": "Waarom vind ik dit soort vacatures niet als ik op \"AI Rotterdam\" zoek?", "acceptedAnswer": {"@type": "Answer", "text": "Berichtgeving over de regio richt zich vooral op de haven en industrie, waardoor kandidaten onbewust hun zoekopdracht daarop richten."}},
     {"@type": "Question", "name": "Is dit werk vergelijkbaar met wat een Amsterdamse scale-up doet?", "acceptedAnswer": {"@type": "Answer", "text": "Qua toolset vaak wel, alleen zonder de merknaamzichtbaarheid van een grotere Amsterdamse werkgever."}},
     {"@type": "Question", "name": "Moet ik mijn zoekgebied verbreden als ik in de buurt van Rotterdam woon?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, het loont om verder te kijken dan alleen de havenindustrie en het centrum van Rotterdam."}},

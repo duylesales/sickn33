@@ -35,60 +35,60 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 ## What a Smoke Test Actually Is, Precisely
 
-A smoke test verifies that core functionality works at a basic, surface level — the term originates from hardware testing, where you'd power on a device and check whether smoke came out, a fast, blunt check for catastrophic failure rather than a detailed verification of correct behavior in every scenario. Applied to software, a smoke test for a signup flow confirms a user can sign up successfully; it doesn't verify every possible invalid input is handled with a perfectly worded error message, or that every edge case in your validation logic behaves exactly right.
+A smoke test verifies that core functionality works at a basic, surface level - the term originates from hardware testing, where you'd power on a device and check whether smoke came out, a fast, blunt check for catastrophic failure rather than a detailed verification of correct behavior in every scenario. Applied to software, a smoke test for a signup flow confirms a user can sign up successfully; it doesn't verify every possible invalid input is handled with a perfectly worded error message, or that every edge case in your validation logic behaves exactly right.
 
 ## What a Full Test Suite Adds Beyond That
 
-Comprehensive test coverage extends into unit tests for individual functions in isolation, integration tests for how multiple components interact, edge-case testing for boundary conditions and unusual inputs, and regression tests specifically targeting bugs that have occurred before. This is real, valuable engineering discipline — and it's also a genuinely large, ongoing investment that mature engineering teams build incrementally over months or years, not something reasonably achievable, or necessary, before a first launch.
+Comprehensive test coverage extends into unit tests for individual functions in isolation, integration tests for how multiple components interact, edge-case testing for boundary conditions and unusual inputs, and regression tests specifically targeting bugs that have occurred before. This is real, valuable engineering discipline - and it's also a genuinely large, ongoing investment that mature engineering teams build incrementally over months or years, not something reasonably achievable, or necessary, before a first launch.
 
 ## Why Smoke Tests Are the Correct Launch-Time Target
 
-The purpose of pre-launch testing isn't achieving some abstract completeness — it's preventing the specific, highest-consequence failure mode: shipping a change that silently breaks something that used to work, the exact scenario covered in this series' guidance on CI pipelines. Smoke tests, covering your critical few flows at a basic pass/fail level, catch this specific failure mode effectively, at a small fraction of the time investment full coverage would require. The marginal protection additional comprehensive coverage adds, relative to its cost, drops off considerably once your critical flows have basic smoke coverage.
+The purpose of pre-launch testing isn't achieving some abstract completeness - it's preventing the specific, highest-consequence failure mode: shipping a change that silently breaks something that used to work, the exact scenario covered in this series' guidance on CI pipelines. Smoke tests, covering your critical few flows at a basic pass/fail level, catch this specific failure mode effectively, at a small fraction of the time investment full coverage would require. The marginal protection additional comprehensive coverage adds, relative to its cost, drops off considerably once your critical flows have basic smoke coverage.
 
 ## The Trap of Treating "Some Tests" as "Not Real Testing"
 
-A specific reasoning error worth naming directly: some founders, upon learning that smoke tests aren't comprehensive coverage, conclude they're not "real" testing and therefore not worth doing at all, defaulting back to no automated testing whatsoever. This is precisely backward — smoke tests covering your three to five critical flows provide dramatically more protection than zero automated testing, at a fraction of the cost of full coverage, making them a genuinely efficient middle path rather than an inadequate compromise.
+A specific reasoning error worth naming directly: some founders, upon learning that smoke tests aren't comprehensive coverage, conclude they're not "real" testing and therefore not worth doing at all, defaulting back to no automated testing whatsoever. This is precisely backward - smoke tests covering your three to five critical flows provide dramatically more protection than zero automated testing, at a fraction of the cost of full coverage, making them a genuinely efficient middle path rather than an inadequate compromise.
 
 ## When Full Coverage Actually Becomes Worth Pursuing
 
-Comprehensive test coverage earns its cost as your product matures — more features, more edge cases discovered through real usage, more contributors touching the codebase, and higher cost of any individual regression as your user base and revenue grow. Pursuing it aggressively before launch, when your feature set and user base are both still small and rapidly changing, is usually a poor allocation of limited early-stage time relative to the alternative uses of that same time.
+Comprehensive test coverage earns its cost as your product matures - more features, more edge cases discovered through real usage, more contributors touching the codebase, and higher cost of any individual regression as your user base and revenue grow. Pursuing it aggressively before launch, when your feature set and user base are both still small and rapidly changing, is usually a poor allocation of limited early-stage time relative to the alternative uses of that same time.
 
 ## What This Looks Like in Practice for a Typical Launch
 
-For most AI-native SaaS products at launch: smoke tests for signup, your core feature, and payment/checkout, automated via Playwright or Cypress and run on every push through a CI pipeline. That's it. Everything beyond that — deeper edge-case coverage, broader regression suites — is worth building incrementally as the product and team mature, not required as a launch gate.
+For most AI-native SaaS products at launch: smoke tests for signup, your core feature, and payment/checkout, automated via Playwright or Cypress and run on every push through a CI pipeline. That's it. Everything beyond that - deeper edge-case coverage, broader regression suites - is worth building incrementally as the product and team mature, not required as a launch gate.
 
 ## What a Good Smoke Test Actually Looks Like, Concretely
 
 Abstractly, "a smoke test for signup" is easy to agree with and easy to implement badly. A genuinely useful one has a specific, narrow shape:
 
-**It exercises the real flow, not a shortcut around it.** A signup smoke test should submit an actual form, through the actual UI, the way a real user would — not call an internal API directly, which would verify your backend logic works but tell you nothing about whether the signup button is actually wired up correctly, a form validation rule is silently blocking valid input, or a recent frontend change broke the flow a user would actually experience.
+**It exercises the real flow, not a shortcut around it.** A signup smoke test should submit an actual form, through the actual UI, the way a real user would - not call an internal API directly, which would verify your backend logic works but tell you nothing about whether the signup button is actually wired up correctly, a form validation rule is silently blocking valid input, or a recent frontend change broke the flow a user would actually experience.
 
-**It asserts on outcome, not on absence of error.** A weak smoke test just checks that nothing threw an exception. A useful one confirms the specific expected end state — a new user actually appears in the database, a confirmation email actually gets queued, the user actually lands on the expected post-signup page — since a flow can silently produce the wrong outcome without ever raising an error at all.
+**It asserts on outcome, not on absence of error.** A weak smoke test just checks that nothing threw an exception. A useful one confirms the specific expected end state - a new user actually appears in the database, a confirmation email actually gets queued, the user actually lands on the expected post-signup page - since a flow can silently produce the wrong outcome without ever raising an error at all.
 
-**It runs against a real (test) environment, not mocked dependencies.** Mocking your database or payment provider in a smoke test defeats much of its purpose, since the entire point is catching integration-level breakage — use a genuine test database and your payment provider's sandbox mode, so the test exercises the same real seams where things actually break.
+**It runs against a real (test) environment, not mocked dependencies.** Mocking your database or payment provider in a smoke test defeats much of its purpose, since the entire point is catching integration-level breakage - use a genuine test database and your payment provider's sandbox mode, so the test exercises the same real seams where things actually break.
 
-**It fails loudly and blocks the merge.** Per the CI guidance covered elsewhere in this series, a smoke test that fails but doesn't actually prevent a broken deploy provides the appearance of protection without the substance — the test needs to be wired into your pipeline as a genuine gate, not an informational step someone can click past.
+**It fails loudly and blocks the merge.** Per the CI guidance covered elsewhere in this series, a smoke test that fails but doesn't actually prevent a broken deploy provides the appearance of protection without the substance - the test needs to be wired into your pipeline as a genuine gate, not an informational step someone can click past.
 
-Three to five tests built this way, covering your genuinely critical flows, take a few hours to set up properly and catch the overwhelming majority of "I shipped something that silently broke a core flow" incidents — the specific failure mode smoke tests exist to prevent.
+Three to five tests built this way, covering your genuinely critical flows, take a few hours to set up properly and catch the overwhelming majority of "I shipped something that silently broke a core flow" incidents - the specific failure mode smoke tests exist to prevent.
 
 [LaunchStudio](https://launchstudio.eu/en/) implements exactly this right-sized smoke test coverage as a standard part of every Launch Ready engagement, targeting genuine risk reduction rather than either extreme, backed by Manifera's engineering experience across products at every stage of maturity.
 
-[Get the right amount of testing for where your product actually is](https://launchstudio.eu/en/#calculator) — not zero, and not more than launch-stage actually needs.
+[Get the right amount of testing for where your product actually is](https://launchstudio.eu/en/#calculator) - not zero, and not more than launch-stage actually needs.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Abandoning "All or Nothing" for the Right Middle Ground
 
-Jasper, a former quality assurance engineer turned founder in Breda, built KwaliteitsCheck, a Cursor-built tool helping small manufacturing businesses track and report production quality control checks, and had specifically, based on his QA background, initially set out to build comprehensive test coverage before allowing himself to launch — a goal that, three weeks in, had produced extensive coverage for maybe a third of the application with no clear end in sight.
+Jasper, a former quality assurance engineer turned founder in Breda, built KwaliteitsCheck, a Cursor-built tool helping small manufacturing businesses track and report production quality control checks, and had specifically, based on his QA background, initially set out to build comprehensive test coverage before allowing himself to launch - a goal that, three weeks in, had produced extensive coverage for maybe a third of the application with no clear end in sight.
 
 Jasper brought KwaliteitsCheck to LaunchStudio specifically to get an outside perspective on whether his testing approach was proportionate to his actual launch-stage needs. The Manifera team helped him identify that his comprehensive-coverage instinct, while professionally reasonable in a larger engineering organization, was consuming disproportionate time relative to his actual near-term risk, given his single-founder, pre-revenue stage.
 
-**Result:** Jasper redirected his testing effort to smoke coverage for his three critical flows — quality check entry, report generation, and the subscription payment flow — completing meaningful, genuinely protective coverage in under a week, and launched three weeks earlier than his original comprehensive-coverage timeline would have allowed, without meaningfully increasing his actual risk of a serious launch-time failure.
+**Result:** Jasper redirected his testing effort to smoke coverage for his three critical flows - quality check entry, report generation, and the subscription payment flow - completing meaningful, genuinely protective coverage in under a week, and launched three weeks earlier than his original comprehensive-coverage timeline would have allowed, without meaningfully increasing his actual risk of a serious launch-time failure.
 
 > *"My QA background made me want to do this properly, which in my head meant doing it completely. It took someone pointing out that 'properly' for a pre-launch solo founder and 'properly' for the QA team I used to work on are completely different targets. The smaller target still caught what actually mattered."*
-> — **Jasper Willemse, Founder, KwaliteitsCheck (Breda)**
+> - **Jasper Willemse, Founder, KwaliteitsCheck (Breda)**
 
-**Cost & Timeline:** €950 (smoke test scoping and implementation guidance) — completed in 3 business days.
+**Cost & Timeline:** €950 (smoke test scoping and implementation guidance) - completed in 3 business days.
 
 ---
 
@@ -96,19 +96,19 @@ Jasper brought KwaliteitsCheck to LaunchStudio specifically to get an outside pe
 
 ### If I have a QA or testing background like Jasper, should I still limit myself to smoke tests at launch?
 
-The right target depends on your actual stage and risk, not your background specifically — Jasper's case shows that professional instinct toward comprehensive coverage, while not wrong in the abstract, can still be disproportionate to what an early-stage, single-founder launch actually requires, regardless of how capable you are of building more.
+The right target depends on your actual stage and risk, not your background specifically - Jasper's case shows that professional instinct toward comprehensive coverage, while not wrong in the abstract, can still be disproportionate to what an early-stage, single-founder launch actually requires, regardless of how capable you are of building more.
 
 ### Does starting with smoke tests mean I'll need to redo my testing approach later as the product grows?
 
-No — smoke tests aren't discarded as coverage grows, they're extended; the additional tests for edge cases and deeper coverage get added incrementally alongside existing smoke tests, not built as a replacement for them.
+No - smoke tests aren't discarded as coverage grows, they're extended; the additional tests for edge cases and deeper coverage get added incrementally alongside existing smoke tests, not built as a replacement for them.
 
 ### How do I decide exactly which flows deserve smoke test coverage if my product doesn't fit typical SaaS patterns?
 
-The same underlying question covered elsewhere in this series applies: which flows, if silently broken, would a user notice immediately and cost you trust or revenue — that question surfaces the right smoke test targets regardless of your specific product type.
+The same underlying question covered elsewhere in this series applies: which flows, if silently broken, would a user notice immediately and cost you trust or revenue - that question surfaces the right smoke test targets regardless of your specific product type.
 
 ### Is there a risk in under-investing in testing at launch, even with smoke tests covering the critical few flows?
 
-Some risk remains for the lower-priority flows and edge cases smoke tests don't cover, but this is a deliberate, calculated trade-off rather than an oversight — the alternative, either full coverage before any launch or no testing at all, carries worse trade-offs in the vast majority of early-stage cases.
+Some risk remains for the lower-priority flows and edge cases smoke tests don't cover, but this is a deliberate, calculated trade-off rather than an oversight - the alternative, either full coverage before any launch or no testing at all, carries worse trade-offs in the vast majority of early-stage cases.
 
 ### Can smoke tests be set up without deep familiarity with testing frameworks like Playwright or Cypress?
 
@@ -124,7 +124,7 @@ Basic familiarity helps, but both tools have substantial documentation and commo
       "name": "If I have a QA background, should I still limit myself to smoke tests at launch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The right target depends on actual stage and risk, not background — comprehensive coverage instinct can still be disproportionate to early-stage needs."
+        "text": "The right target depends on actual stage and risk, not background - comprehensive coverage instinct can still be disproportionate to early-stage needs."
       }
     },
     {
@@ -132,7 +132,7 @@ Basic familiarity helps, but both tools have substantial documentation and commo
       "name": "Does starting with smoke tests mean redoing the testing approach later as the product grows?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, smoke tests aren't discarded — additional coverage is added incrementally alongside them, not as a replacement."
+        "text": "No, smoke tests aren't discarded - additional coverage is added incrementally alongside them, not as a replacement."
       }
     },
     {

@@ -1,4 +1,4 @@
-🚨 "A Donor Prediction Model Trained on Commercial Marketing Data Principles Tran..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "A Donor Prediction Model Trained on Commercial Marketing Data Principles Tran..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "A Donor Prediction Model Trained on Commercial Marketing Data Principles Transfers Directly to Fundraising":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

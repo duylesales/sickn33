@@ -29,9 +29,9 @@ U vond ze op een marktplaats, hun profiel had goede recensies, hun tarief leek r
 
 ## Tijdens het gesprek: vraag hen hun eigen code uit te leggen
 
-Dit is het nuttigste dat u kunt doen, en het kost niets behalve tien minuten. Beschrijf een eenvoudig scenario dat relevant is voor uw app — "wat gebeurt er als twee gebruikers tegelijk X proberen te doen" of "hoe zou dit omgaan met iemand die een negatief getal invoert" — en vraag hen om u door te nemen wat hun code daadwerkelijk zou doen. U test niet of ze documentatie uit hun hoofd hebben geleerd. U test of ze hardop kunnen redeneren over hun eigen werk.
+Dit is het nuttigste dat u kunt doen, en het kost niets behalve tien minuten. Beschrijf een eenvoudig scenario dat relevant is voor uw app - "wat gebeurt er als twee gebruikers tegelijk X proberen te doen" of "hoe zou dit omgaan met iemand die een negatief getal invoert" - en vraag hen om u door te nemen wat hun code daadwerkelijk zou doen. U test niet of ze documentatie uit hun hoofd hebben geleerd. U test of ze hardop kunnen redeneren over hun eigen werk.
 
-Een freelancer die iets heeft gebouwd met AI-ondersteuning en het oprecht begrijpt, zal een antwoord hebben, zelfs als dat "ik weet het niet zeker, laat me het controleren" is, gevolgd door een daadwerkelijke uitzoekactie. Een freelancer die helemaal niet met de vraag om kan gaan — die afwimpelt, marketingtaal herhaalt, of zichtbaar ongemakkelijk wordt — vertelt u iets belangrijks: hij begrijpt de code mogelijk niet goed genoeg om deze later te onderhouden of te repareren. Dit is precies het gat dat maanden later opduikt als een bug die niemand kan verklaren, in een codebase die niemand die hem heeft geschreven kan navigeren.
+Een freelancer die iets heeft gebouwd met AI-ondersteuning en het oprecht begrijpt, zal een antwoord hebben, zelfs als dat "ik weet het niet zeker, laat me het controleren" is, gevolgd door een daadwerkelijke uitzoekactie. Een freelancer die helemaal niet met de vraag om kan gaan - die afwimpelt, marketingtaal herhaalt, of zichtbaar ongemakkelijk wordt - vertelt u iets belangrijks: hij begrijpt de code mogelijk niet goed genoeg om deze later te onderhouden of te repareren. Dit is precies het gat dat maanden later opduikt als een bug die niemand kan verklaren, in een codebase die niemand die hem heeft geschreven kan navigeren.
 
 ## Rode vlaggen die makkelijk over het hoofd worden gezien omdat ze niet als rode vlaggen aanvoelen
 
@@ -41,13 +41,13 @@ Een freelancer die iets heeft gebouwd met AI-ondersteuning en het oprecht begrij
 
 ## Wat te doen zodra u het gat heeft ontdekt
 
-Als een freelancer zakt voor de test "leg uw eigen code uit", is dat niet automatisch een reden om af te haken als het werk oprecht eenvoudig en laaginzet is. Maar voor alles wat betalingen, gebruikersgegevens of beveiliging raakt — het soort werk dat oprichters steeds vaker nodig hebben zodra een door AI gebouwd prototype echte klanten bedient — is het het waard om het bijna als een harde stop te behandelen. Het alternatief voor het gokken op een marktplaats-freelancer is werken met een team dat processen en verantwoording ingebouwd heeft, in plaats van het individuele oordeel van één persoon op die dag.
+Als een freelancer zakt voor de test "leg uw eigen code uit", is dat niet automatisch een reden om af te haken als het werk oprecht eenvoudig en laaginzet is. Maar voor alles wat betalingen, gebruikersgegevens of beveiliging raakt - het soort werk dat oprichters steeds vaker nodig hebben zodra een door AI gebouwd prototype echte klanten bedient - is het het waard om het bijna als een harde stop te behandelen. Het alternatief voor het gokken op een marktplaats-freelancer is werken met een team dat processen en verantwoording ingebouwd heeft, in plaats van het individuele oordeel van één persoon op die dag.
 
-LaunchStudio is specifiek gebouwd voor oprichters die precies dit gat hebben ervaren, of het volledig willen vermijden. In tegenstelling tot een solo-freelancer wordt LaunchStudio ondersteund door het team van meer dan 120 engineers van Manifera, met de Europese basis in Amsterdam, wat betekent geen enkel punt van falen en een trackrecord over 160+ opgeleverde projecten. Als u momenteel freelancers screent voor productiewerk en een tweede mening wilt voordat u zich vastlegt, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en vergelijk aantekeningen. De aanpak van [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera laat zien hoe verantwoorde, teamgebaseerde oplevering er op schaal uitziet — dezelfde standaard waar het waard is om elke individuele freelancer aan te houden.
+LaunchStudio is specifiek gebouwd voor oprichters die precies dit gat hebben ervaren, of het volledig willen vermijden. In tegenstelling tot een solo-freelancer wordt LaunchStudio ondersteund door het team van meer dan 120 engineers van Manifera, met de Europese basis in Amsterdam, wat betekent geen enkel punt van falen en een trackrecord over 160+ opgeleverde projecten. Als u momenteel freelancers screent voor productiewerk en een tweede mening wilt voordat u zich vastlegt, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en vergelijk aantekeningen. De aanpak van [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera laat zien hoe verantwoorde, teamgebaseerde oplevering er op schaal uitziet - dezelfde standaard waar het waard is om elke individuele freelancer aan te houden.
 
 ## Vijf Contractvoorwaarden Waarop U Moet Staan, Zelfs Als de Screening Uitstekend Verloopt
 
-Het doorstaan van alle technische screeningsvragen betekent niet dat u een schriftelijke overeenkomst achterwege kunt laten — het betekent juist dat u het contract ingaat met specifieke, doelgerichte beschermingsbepalingen. Zelfs een freelancer die zijn code uitstekend uitlegt, kan onverwacht uitvallen of van inzicht veranderen. Zorg dat deze vijf voorwaarden zwart-op-wit zijn vastgelegd:
+Het doorstaan van alle technische screeningsvragen betekent niet dat u een schriftelijke overeenkomst achterwege kunt laten - het betekent juist dat u het contract ingaat met specifieke, doelgerichte beschermingsbepalingen. Zelfs een freelancer die zijn code uitstekend uitlegt, kan onverwacht uitvallen of van inzicht veranderen. Zorg dat deze vijf voorwaarden zwart-op-wit zijn vastgelegd:
 
 **1. Onvoorwaardelijke en Directe Overdracht van Intellectueel Eigendom (IP).** Zorg ervoor dat alle eigendomsrechten op code, documentatie, databasedesigns en configuraties automatisch en per direct overgaan op uw onderneming op het moment van creatie, niet pas na de allerlaatste betaling van een openstaand factuurbedrag.
 
@@ -68,16 +68,16 @@ Deze contractuele randvoorwaarden beschermen uw onderneming tegen onvoorziene co
 
 Femke Bruggeman, oprichter van een vroege e-commercetool genaamd WebshopFix in Alphen aan den Rijn, bouwde haar eerste versie met Bolt en huurde vervolgens een freelancer in via een marktplaatsvermelding om een functie toe te voegen die ze zelf niet kon bouwen. Het profiel van de freelancer zag er solide uit, de prijs was eerlijk, en Femke betaalde een aanbetaling na een kort eerste gesprek dat vooral ging over tijdlijn en kosten.
 
-Tijdens een vervolggesprek bedoeld om een detail van de implementatie te verduidelijken, stelde Femke een eenvoudige vraag over hoe de functie zich zou gedragen in een edge case relevant voor haar shop. De freelancer kon het niet beantwoorden, en bij verder aandringen kon hij basisaspecten van hoe zijn eigen AI-ondersteunde code daadwerkelijk werkte niet uitleggen. Op dat moment herkende Femke dit niet als de rode vlag die het was — ze nam aan dat het een communicatiekloof was, geen competentiekloof. Het werk dat volgde was te laat, vereiste meerdere rondes van fixes, en moest uiteindelijk opnieuw worden gedaan.
+Tijdens een vervolggesprek bedoeld om een detail van de implementatie te verduidelijken, stelde Femke een eenvoudige vraag over hoe de functie zich zou gedragen in een edge case relevant voor haar shop. De freelancer kon het niet beantwoorden, en bij verder aandringen kon hij basisaspecten van hoe zijn eigen AI-ondersteunde code daadwerkelijk werkte niet uitleggen. Op dat moment herkende Femke dit niet als de rode vlag die het was - ze nam aan dat het een communicatiekloof was, geen competentiekloof. Het werk dat volgde was te laat, vereiste meerdere rondes van fixes, en moest uiteindelijk opnieuw worden gedaan.
 
 Femke bracht WebshopFix daarna naar LaunchStudio om te beoordelen en te stabiliseren wat de freelancer had opgeleverd. De engineers van LaunchStudio ontdekten dat de functie was geïmplementeerd op een manier die technisch werkte voor het ene scenario dat Femke oorspronkelijk had getest, maar kapotging onder verschillende veelvoorkomende omstandigheden die de freelancer ofwel niet had overwogen, ofwel niet goed genoeg had begrepen om op te testen.
 
 **Resultaat:** de functie van WebshopFix werd correct herbouwd en stresstest over de edge cases die de oorspronkelijke freelancer had gemist, en werd zonder verdere incidenten uitgerold.
 
-> *"Op het moment dat hij zijn eigen code niet aan mij kon uitleggen, had ik daar moeten stoppen. In plaats daarvan betaalde ik twee keer — één keer voor het werk, één keer om het te repareren."*
-> — **Femke Bruggeman, oprichter, WebshopFix (Alphen aan den Rijn)**
+> *"Op het moment dat hij zijn eigen code niet aan mij kon uitleggen, had ik daar moeten stoppen. In plaats daarvan betaalde ik twee keer - één keer voor het werk, één keer om het te repareren."*
+> - **Femke Bruggeman, oprichter, WebshopFix (Alphen aan den Rijn)**
 
-**Kosten en tijdlijn:** € 780 (codebeoordeling en herbouw van de functie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 780 (codebeoordeling en herbouw van de functie) - voltooid in 5 werkdagen.
 
 ---
 
@@ -89,7 +89,7 @@ Beschrijf een eenvoudige edge case relevant voor uw app en vraag hen uit te legg
 
 ### Is het normaal dat een freelancer "ik weet het niet zeker" zegt op een technische vraag?
 
-Ja, en het is zelfs een goed teken als het wordt gevolgd door oprechte uitzoekactie in plaats van afwimpeling. De rode vlag is niet onzekerheid — het is het onvermogen of de onwil om überhaupt met de vraag om te gaan.
+Ja, en het is zelfs een goed teken als het wordt gevolgd door oprechte uitzoekactie in plaats van afwimpeling. De rode vlag is niet onzekerheid - het is het onvermogen of de onwil om überhaupt met de vraag om te gaan.
 
 ### Wat moet ik doen als ik al een aanbetaling heb gedaan en rode vlaggen zie?
 
@@ -121,7 +121,7 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met aanvul
       "name": "Is het normaal dat een freelancer \"ik weet het niet zeker\" zegt op een technische vraag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, en het is zelfs een goed teken als het wordt gevolgd door oprechte uitzoekactie in plaats van afwimpeling. De rode vlag is niet onzekerheid — het is het onvermogen of de onwil om überhaupt met de vraag om te gaan."
+        "text": "Ja, en het is zelfs een goed teken als het wordt gevolgd door oprechte uitzoekactie in plaats van afwimpeling. De rode vlag is niet onzekerheid - het is het onvermogen of de onwil om überhaupt met de vraag om te gaan."
       }
     },
     {

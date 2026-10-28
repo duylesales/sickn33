@@ -12,7 +12,7 @@ Ontwikkeling pauzeren om geld op te halen is een gevaarlijke valkuil. Investeerd
 
 Bij LaunchStudio brengen we AI-prototypes binnen 1 tot 2 weken naar live tractie. 🛡️
 
-Nadia sloot betaalde deals met haar 3 proefrestaurants en sloot haar ronde succesvol af. (€ 2.600 (Launch Ready) — 8 werkdagen.) 🚀
+Nadia sloot betaalde deals met haar 3 proefrestaurants en sloot haar ronde succesvol af. (€ 2.600 (Launch Ready) - 8 werkdagen.) 🚀
 
 👉 Ontdek waarom doorpakken loont: https://launchstudio.eu/nl/blog/launchstudio-vs-pausing-development-until-funding
 

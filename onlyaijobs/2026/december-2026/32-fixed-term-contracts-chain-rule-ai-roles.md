@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Fixed-Term Contracts and the Chain Rule: How Dutch Job Security Works in AI Roles",
-  "description": "Temporary contracts, the chain rule, probation periods, notice and the transition payment determine how secure a Dutch AI job actually is — and candidates routinely misread the offer in front of them.",
+  "description": "Temporary contracts, the chain rule, probation periods, notice and the transition payment determine how secure a Dutch AI job actually is - and candidates routinely misread the offer in front of them.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-16",
@@ -45,29 +45,29 @@ This article is general information, not legal advice; rules and collective agre
 
 **Permanent.** A contract with no end date. Ending it requires either your agreement, a valid legal ground with a procedure, or dismissal via the employee insurance agency or a court. This is why Dutch employers are careful about granting permanent contracts, and why receiving one is meaningful rather than ceremonial.
 
-The practical difference is not about day-to-day work. It is about what happens when the company reorganises, when a project ends, or when your manager changes — situations in which a fixed-term contract simply expires and a permanent one requires a process.
+The practical difference is not about day-to-day work. It is about what happens when the company reorganises, when a project ends, or when your manager changes - situations in which a fixed-term contract simply expires and a permanent one requires a process.
 
 ## The Chain Rule, Explained Plainly
 
 Dutch law limits how long an employer can keep someone on successive temporary contracts. The mechanism, known as the chain rule, works on two limits: a maximum number of consecutive fixed-term contracts, and a maximum total duration. Exceed either, and the contract converts to a permanent one by operation of law.
 
-Consecutive contracts are counted when the gap between them is short. Historically employers could reset the chain with a sufficient interval, and the length of that interval has been adjusted by legislation over time — it is one of the details to verify rather than assume, and collective agreements can vary parts of the framework for specific sectors.
+Consecutive contracts are counted when the gap between them is short. Historically employers could reset the chain with a sufficient interval, and the length of that interval has been adjusted by legislation over time - it is one of the details to verify rather than assume, and collective agreements can vary parts of the framework for specific sectors.
 
 Two practical consequences matter to candidates.
 
-First, if your second extension would cross a threshold, your employer has a decision to make: offer permanence or let you go. This is why people are sometimes let go after a good performance review — the decision is structural rather than personal, and it is entirely predictable if you have counted your contracts.
+First, if your second extension would cross a threshold, your employer has a decision to make: offer permanence or let you go. This is why people are sometimes let go after a good performance review - the decision is structural rather than personal, and it is entirely predictable if you have counted your contracts.
 
 Second, the timing is knowable in advance. You can, and should, calculate when the decision point falls and raise it before your employer does, at a moment when you have leverage rather than at the end when you have none.
 
 ## Probation, Notice and Interim Termination
 
-**Probation.** A probation period allows either side to end the contract immediately. Its permitted length depends on the contract's duration, and very short contracts cannot carry one at all. A probation clause that exceeds the legal maximum is void, which means there is effectively no probation — a detail worth checking on any contract you are asked to sign quickly.
+**Probation.** A probation period allows either side to end the contract immediately. Its permitted length depends on the contract's duration, and very short contracts cannot carry one at all. A probation clause that exceeds the legal maximum is void, which means there is effectively no probation - a detail worth checking on any contract you are asked to sign quickly.
 
 **Interim termination.** A fixed-term contract cannot normally be ended early by either party unless the contract explicitly allows it. If you want the option to leave early, make sure that clause exists; if it does not, you may be bound for the full term.
 
 **Notice.** Notice periods are set by law and by the contract, with a common pattern of one month for the employee and longer for the employer as tenure increases. Collective agreements may vary this. Check your notice before you start interviewing elsewhere, because a three-month notice period changes what you can promise a new employer.
 
-**Notification obligation.** For fixed-term contracts of a certain length, the employer must inform you in writing, a set period before the end date, whether the contract will be continued and on what terms. Failing to do so carries a financial penalty for the employer. If you have heard nothing as the date approaches, ask — the obligation is theirs.
+**Notification obligation.** For fixed-term contracts of a certain length, the employer must inform you in writing, a set period before the end date, whether the contract will be continued and on what terms. Failing to do so carries a financial penalty for the employer. If you have heard nothing as the date approaches, ask - the obligation is theirs.
 
 ## Secondment, Payrolling and Self-Employment
 
@@ -77,7 +77,7 @@ A significant share of Dutch technology work is performed by people who are not 
 
 **Payrolling** is an arrangement in which you are recruited by the client but formally employed by a payroll company. Legislation has tightened this specifically to prevent it being used to avoid employment protections, and payroll employees are entitled to terms comparable to those of the client's own staff.
 
-**Self-employment.** Contracting as an independent professional offers higher day rates and no employment protection, and the classification question — whether the relationship is genuinely independent — has become a significant enforcement topic in the Netherlands, affecting both contractors and their clients.
+**Self-employment.** Contracting as an independent professional offers higher day rates and no employment protection, and the classification question - whether the relationship is genuinely independent - has become a significant enforcement topic in the Netherlands, affecting both contractors and their clients.
 
 The practical advice for candidates: know which of these you are being offered, and price it accordingly. A contractor day rate that looks generous compared with a salary is compensating you for the absence of sick pay, holiday pay, pension accrual, notice and dismissal protection.
 
@@ -85,7 +85,7 @@ The practical advice for candidates: know which of these you are being offered, 
 
 An engineer joins on a one-year contract, performs well, and receives a one-year extension. Towards the end of the second year, the conversation about a permanent contract keeps being postponed. Two months before the end date, they are told the role will not continue.
 
-Nothing illegal has occurred. The employer faced a choice between offering permanence and letting the contract expire, and chose the latter — possibly for budget reasons, possibly because a reorganisation was already being planned.
+Nothing illegal has occurred. The employer faced a choice between offering permanence and letting the contract expire, and chose the latter - possibly for budget reasons, possibly because a reorganisation was already being planned.
 
 What the engineer could have done differently is entirely about timing. At the moment the first extension was offered, they had leverage: the employer wanted them to stay and had not yet reached the decision point. That was the moment to ask what the path to a permanent contract looked like and what would need to be true for it to be offered.
 
@@ -93,17 +93,17 @@ Asking this early is not presumptuous in the Dutch context. It is a normal conve
 
 ## The Transition Payment
 
-When an employer ends an employment relationship — including by allowing a fixed-term contract to expire without renewal — a statutory transition payment is generally due, calculated from salary and length of service, from the first day of employment.
+When an employer ends an employment relationship - including by allowing a fixed-term contract to expire without renewal - a statutory transition payment is generally due, calculated from salary and length of service, from the first day of employment.
 
 Two points candidates miss. First, it applies to fixed-term contracts that are not renewed, not only to dismissals. Second, it is a statutory right rather than a gift, and it is calculated by formula.
 
-In a settlement agreement — the common route when both sides agree to part ways — the transition payment is usually the starting point for negotiation rather than the end of it, and additional compensation is frequently agreed. Anyone presented with a settlement agreement should have it reviewed before signing, because it typically affects unemployment benefit entitlement as well as money, and the wording matters.
+In a settlement agreement - the common route when both sides agree to part ways - the transition payment is usually the starting point for negotiation rather than the end of it, and additional compensation is frequently agreed. Anyone presented with a settlement agreement should have it reviewed before signing, because it typically affects unemployment benefit entitlement as well as money, and the wording matters.
 
 ## A Common Misconception About Dutch Job Security
 
 International candidates often hear that the Netherlands has strong employment protection and conclude that all Dutch jobs are secure. The protection is real, but it attaches to permanent contracts. A first job on a one-year contract carries considerably less security than the country's reputation implies, and the difference is invisible from outside.
 
-The mirror misconception, common among Dutch candidates, is that a permanent contract makes you untouchable. It does not: reorganisations happen, and dismissal for business reasons is possible with a procedure through the employee insurance agency. What a permanent contract gives you is process, time and compensation — which is not nothing, and is a great deal more than an expiring fixed term.
+The mirror misconception, common among Dutch candidates, is that a permanent contract makes you untouchable. It does not: reorganisations happen, and dismissal for business reasons is possible with a procedure through the employee insurance agency. What a permanent contract gives you is process, time and compensation - which is not nothing, and is a great deal more than an expiring fixed term.
 
 ## Which Sectors Offer What
 
@@ -125,11 +125,11 @@ For candidates with in-demand skills, this variation is leverage. If two employe
 
 The gap between contract types becomes starkest in exactly the circumstances people do not plan for.
 
-During long-term illness, an employer must continue paying a substantial share of salary for an extended statutory period and must work with you on reintegration. That obligation is one of the strongest employee protections in Europe — but if your fixed-term contract expires during illness, it ends on its date, and the situation passes to the employee insurance agency rather than the employer.
+During long-term illness, an employer must continue paying a substantial share of salary for an extended statutory period and must work with you on reintegration. That obligation is one of the strongest employee protections in Europe - but if your fixed-term contract expires during illness, it ends on its date, and the situation passes to the employee insurance agency rather than the employer.
 
 Parental leave arrangements follow a similar pattern: the statutory entitlements exist, but their practical value depends on being employed when you need them, and on employer top-ups that are more common in permanent arrangements.
 
-None of this is an argument against taking a fixed-term role — often it is the only route in, and most convert. It is an argument for being clear-eyed about what you are accepting, particularly at the stage of life when illness, caring responsibilities or a family are realistic possibilities within the contract term. Candidates in that position should weigh a permanent contract at a slightly lower salary as what it usually is: the better offer.
+None of this is an argument against taking a fixed-term role - often it is the only route in, and most convert. It is an argument for being clear-eyed about what you are accepting, particularly at the stage of life when illness, caring responsibilities or a family are realistic possibilities within the contract term. Candidates in that position should weigh a permanent contract at a slightly lower salary as what it usually is: the better offer.
 
 ## What to Negotiate Before Signing
 
@@ -169,7 +169,7 @@ Only if the contract contains an interim termination clause; otherwise you may b
 A statutory transition payment is generally due when the employer chooses not to renew, calculated from salary and service.
 
 ### (Scenario: candidate offered contractor work) Is a higher day rate better than a salary?
-It compensates for the absence of sick pay, holiday pay, pension, notice and dismissal protection — compare total value, not the headline rate.
+It compensates for the absence of sick pay, holiday pay, pension, notice and dismissal protection - compare total value, not the headline rate.
 
 <script type="application/ld+json">
 {

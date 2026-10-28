@@ -1,4 +1,4 @@
-📋 Ties Bakker bouwde SubsidieCheck, een tool voor subsidieaanvragen, met Lovable. Zijn startupadviseur was uitstekend op het gebied van strategie en financiering — maar vroeg nooit wie de infrastructuur bezat of de gegevens controleerde. Die lacune bleef onzichtbaar tot een veelbelovend partnerschap in due diligence terechtkwam. 😳
+📋 Ties Bakker bouwde SubsidieCheck, een tool voor subsidieaanvragen, met Lovable. Zijn startupadviseur was uitstekend op het gebied van strategie en financiering - maar vroeg nooit wie de infrastructuur bezat of de gegevens controleerde. Die lacune bleef onzichtbaar tot een veelbelovend partnerschap in due diligence terechtkwam. 😳
 
 De vragen die niemand stelt, zijn precies degene die het meest blijken uit te maken onder echte druk. 🧠
 
@@ -11,7 +11,7 @@ De vragen die niemand stelt, zijn precies degene die het meest blijken uit te ma
 ✅ Migreer hosting- en databasecontrole naar accounts die volledig eigendom zijn van het bedrijf van de oprichter
 ✅ Stel een duidelijke samenvatting van gegevensverwerking op, klaar voor elk due-diligenceteam
 
-Bij **LaunchStudio** worden we mogelijk gemaakt door Manifera — meer dan 11 jaar ervaring in productie-engineering over 160+ opgeleverde projecten — en dit soort eigendomsverheldering is voor ons routine. 🛡️
+Bij **LaunchStudio** worden we mogelijk gemaakt door Manifera - meer dan 11 jaar ervaring in productie-engineering over 160+ opgeleverde projecten - en dit soort eigendomsverheldering is voor ons routine. 🛡️
 
 Zijn resultaat: het partnerschapsgesprek werd hervat met gedocumenteerde, door de oprichter beheerde infrastructuur, en Ties stelt deze drie vragen nu aan elke adviseur voordat hij op hun begeleiding vertrouwt. 🚀
 

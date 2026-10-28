@@ -1,4 +1,4 @@
-🗄️ Kasper Bodegraven built "SchemaGrip," a member-billing tool for local associations, using Bolt's AI-assisted database designer. He accepted the suggested schema without reviewing it line by line — it looked right, the tables made sense, every test passed. 😬
+🗄️ Kasper Bodegraven built "SchemaGrip," a member-billing tool for local associations, using Bolt's AI-assisted database designer. He accepted the suggested schema without reviewing it line by line - it looked right, the tables made sense, every test passed. 😬
 
 One missing line of SQL cost a customer a double charge.
 

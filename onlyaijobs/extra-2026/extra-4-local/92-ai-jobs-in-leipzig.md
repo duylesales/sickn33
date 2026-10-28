@@ -95,7 +95,7 @@ Leipzig combines a historic centre, a famous music heritage, large parks and lak
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Leipzig you will find few or no local vacancies there today. Use German job portals, university career services, institute vacancy lists and SpinLab's network as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where logistics and technology employers such as Sendcloud, Rexel, Cegeka and Accenture list AI roles — and as a model for searching by category and real commute; Leipzig's logistics and automotive sites lie on the city's outskirts. Leipzig employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Leipzig you will find few or no local vacancies there today. Use German job portals, university career services, institute vacancy lists and SpinLab's network as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where logistics and technology employers such as Sendcloud, Rexel, Cegeka and Accenture list AI roles - and as a model for searching by category and real commute; Leipzig's logistics and automotive sites lie on the city's outskirts. Leipzig employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Logistics Data Science in Practice
 

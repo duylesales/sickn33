@@ -11,7 +11,7 @@ Doelgroep: Technische solo-oprichter
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Waarom 'technische schuld' iets anders betekent wanneer AI de schuld heeft geschreven",
-  "description": "Technische schuld betekende vroeger shortcuts die een team bewust nam onder tijdsdruk. Door AI gegenereerde schuld is anders — niemand koos ervoor, en niemand let erop. Dit is waarom dat belangrijk is.",
+  "description": "Technische schuld betekende vroeger shortcuts die een team bewust nam onder tijdsdruk. Door AI gegenereerde schuld is anders - niemand koos ervoor, en niemand let erop. Dit is waarom dat belangrijk is.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
@@ -19,23 +19,23 @@ Doelgroep: Technische solo-oprichter
 }
 </script>
 
-Technische schuld had altijd een specifieke betekenis: een team verzendt bewust een shortcut onder tijdsdruk, begrijpt de afweging en is van plan om later terug te komen om het te repareren. De metafoor werkt omdat er intentie in besloten ligt — iemand koos ervoor om te lenen tegen de toekomst. Door AI gegenereerde technische schuld doorbreekt die metafoor volledig, en ik denk niet dat de meeste oprichters, zelfs technische, volledig hebben doorgrond wat er is veranderd.
+Technische schuld had altijd een specifieke betekenis: een team verzendt bewust een shortcut onder tijdsdruk, begrijpt de afweging en is van plan om later terug te komen om het te repareren. De metafoor werkt omdat er intentie in besloten ligt - iemand koos ervoor om te lenen tegen de toekomst. Door AI gegenereerde technische schuld doorbreekt die metafoor volledig, en ik denk niet dat de meeste oprichters, zelfs technische, volledig hebben doorgrond wat er is veranderd.
 
 ## Oude schuld had een schuldenaar. Nieuwe schuld niet.
 
-Wanneer een menselijke engineer een bocht afsnijdt, is er een beslissingsspoor. Iemand schreef een opmerking, of herinnert zich in ieder geval te hebben gedacht "dit is niet ideaal, maar het gaat vandaag de deur uit". Die herinnering is zelf een vorm van documentatie — een impliciete to-dolijst die in iemands hoofd leeft, klaar om naar boven te komen in een retrospectief of een sprintplanning. Door AI gegenereerde schuld heeft geen dergelijk spoor. Het model snijdt geen bocht af omdat het onder tijdsdruk staat. Het snijdt een bocht af omdat het helemaal geen instinct heeft voor de afweging — het optimaliseerde voor "werkende code produceren die aan deze prompt voldoet", niet voor "code produceren waar een toekomstige beheerder, of een toekomstige versie van het model, u dankbaar voor zal zijn".
+Wanneer een menselijke engineer een bocht afsnijdt, is er een beslissingsspoor. Iemand schreef een opmerking, of herinnert zich in ieder geval te hebben gedacht "dit is niet ideaal, maar het gaat vandaag de deur uit". Die herinnering is zelf een vorm van documentatie - een impliciete to-dolijst die in iemands hoofd leeft, klaar om naar boven te komen in een retrospectief of een sprintplanning. Door AI gegenereerde schuld heeft geen dergelijk spoor. Het model snijdt geen bocht af omdat het onder tijdsdruk staat. Het snijdt een bocht af omdat het helemaal geen instinct heeft voor de afweging - het optimaliseerde voor "werkende code produceren die aan deze prompt voldoet", niet voor "code produceren waar een toekomstige beheerder, of een toekomstige versie van het model, u dankbaar voor zal zijn".
 
 ## De specifieke vorm die AI-schuld doorgaans aanneemt
 
-De meest voorkomende vorm is geen slordigheid in één enkel bestand — door AI gegenereerde code is vaak lokaal netjes, goed becommentarieerd, zelfs idiomatisch. De schuld toont zich structureel, verspreid over bestanden: dezelfde logica net iets anders geïmplementeerd op vijf of acht plekken, omdat het model geen blijvend geheugen had van het feit dat het dit probleem drie bestanden eerder al had opgelost. Mensen noemen dit een schending van het DRY-principe — Don't Repeat Yourself — en ervaren engineers ontwikkelen een bijna fysiek ongemak bij gedupliceerde logica. Modellen hebben dat ongemak niet. Elk bestand wordt tot op zekere hoogte opnieuw, vers, opgelost.
+De meest voorkomende vorm is geen slordigheid in één enkel bestand - door AI gegenereerde code is vaak lokaal netjes, goed becommentarieerd, zelfs idiomatisch. De schuld toont zich structureel, verspreid over bestanden: dezelfde logica net iets anders geïmplementeerd op vijf of acht plekken, omdat het model geen blijvend geheugen had van het feit dat het dit probleem drie bestanden eerder al had opgelost. Mensen noemen dit een schending van het DRY-principe - Don't Repeat Yourself - en ervaren engineers ontwikkelen een bijna fysiek ongemak bij gedupliceerde logica. Modellen hebben dat ongemak niet. Elk bestand wordt tot op zekere hoogte opnieuw, vers, opgelost.
 
-Dit is belangrijker dan het klinkt. Gedupliceerde logica betekent dat een bugfix die op één kopie wordt toegepast, niet doorwerkt naar de andere zeven. Het betekent dat een wijziging in een bedrijfsregel vereist dat u elke bijna-identieke implementatie opspoort in plaats van één gedeelde functie bij te werken. En omdat niemand bewust koos voor duplicatie, dacht ook niemand eraan om erop te controleren — er was geen moment van "ik weet dat dit niet ideaal is" dat een notitie zou hebben getriggerd om er later op terug te komen.
+Dit is belangrijker dan het klinkt. Gedupliceerde logica betekent dat een bugfix die op één kopie wordt toegepast, niet doorwerkt naar de andere zeven. Het betekent dat een wijziging in een bedrijfsregel vereist dat u elke bijna-identieke implementatie opspoort in plaats van één gedeelde functie bij te werken. En omdat niemand bewust koos voor duplicatie, dacht ook niemand eraan om erop te controleren - er was geen moment van "ik weet dat dit niet ideaal is" dat een notitie zou hebben getriggerd om er later op terug te komen.
 
 ## Waarom dit verandert hoe u door AI gegenereerde codebases zou moeten beoordelen
 
 Als u een technische oprichter bent die uw eigen door AI gegenereerde code beoordeelt, moet de beoordelingschecklist verschuiven. U bent niet op zoek naar bochten die een vermoeide engineer onder druk heeft afgesneden. U bent op zoek naar een geheel ander faalpatroon: logica die meerdere keren, net iets anders, is opgelost, zonder gedeelde bron van waarheid. Dat vereist actief zoeken door de hele codebase naar bijna-identieke functies, niet alleen elk bestand afzonderlijk lezen en u afvragen "ziet dit er redelijk uit".
 
-Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt de bredere verschuiving zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Dat volwassenheidswerk omvat steeds vaker precies dit soort structurele schuld — het soort dat zichzelf niet aankondigt, omdat niemand ervoor koos deze aan te gaan.
+Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt de bredere verschuiving zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Dat volwassenheidswerk omvat steeds vaker precies dit soort structurele schuld - het soort dat zichzelf niet aankondigt, omdat niemand ervoor koos deze aan te gaan.
 
 LaunchStudio, gesteund door Manifera's team van engineers gevestigd in Amsterdam en daarbuiten, beoordeelt door AI gegenereerde codebases specifiek op dit patroon voordat productiewerk wordt aanbevolen. Als u vermoedt dat uw eigen door AI gebouwde product dit soort schuld stilletjes over uw bestanden heeft liggen, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over een beoordeling. Voor een blik op de productiegerichte engineeringdiscipline die wij toepassen, zie [de aanpak van Manifera voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
@@ -43,9 +43,9 @@ LaunchStudio, gesteund door Manifera's team van engineers gevestigd in Amsterdam
 
 U heeft geen volledige externe audit nodig om een eerste, betrouwbare inschatting te maken van de vraag of uw door AI gegenereerde codebase structurele technische schuld met zich meedraagt. Let op de volgende vijf waarschuwingssignalen die direct zichtbaar zijn in uw dagelijkse ontwikkelproces:
 
-**1. Het 'Jenga-effect' bij kleine wijzigingen.** Vraagt u de AI-tool om een ogenschijnlijk simpele wijziging door te voeren — zoals het aanpassen van een knoptekst of het toevoegen van één formulierveld — en breekt daardoor plotseling een compleet ander onderdeel van de applicatie af? Dit duidt op een gebrek aan modulaire architectuur en het ontbreken van type-veiligheid, waardoor afhankelijkheden onzichtbaar door elkaar heen lopen.
+**1. Het 'Jenga-effect' bij kleine wijzigingen.** Vraagt u de AI-tool om een ogenschijnlijk simpele wijziging door te voeren - zoals het aanpassen van een knoptekst of het toevoegen van één formulierveld - en breekt daardoor plotseling een compleet ander onderdeel van de applicatie af? Dit duidt op een gebrek aan modulaire architectuur en het ontbreken van type-veiligheid, waardoor afhankelijkheden onzichtbaar door elkaar heen lopen.
 
-**2. Eindeloze duplicatie van datalogica.** Kijk eens rond in uw broncode. Ziet u op tien verschillende plekken vrijwel identieke databasequery's of API-aanroepen staan, telkens net iets anders geformuleerd door de AI? Dit ontbreken van een centrale data-toegangslaag (zoals een repository-pattern of herbruikbare services) betekent dat u bij elke toekomstige aanpassing tien plekken moet bijwerken — en er gegarandeerd eentje vergeet.
+**2. Eindeloze duplicatie van datalogica.** Kijk eens rond in uw broncode. Ziet u op tien verschillende plekken vrijwel identieke databasequery's of API-aanroepen staan, telkens net iets anders geformuleerd door de AI? Dit ontbreken van een centrale data-toegangslaag (zoals een repository-pattern of herbruikbare services) betekent dat u bij elke toekomstige aanpassing tien plekken moet bijwerken - en er gegarandeerd eentje vergeet.
 
 **3. Geheimen en API-sleutels die rondzwerven in componenten.** Als API-tokens, database-wachtwoorden of externe endpoints hardcoded in frontend-bestanden (`.tsx`, `.jsx` of `.vue`) staan in plaats van netjes geïsoleerd in een beschermde `.env`-configuratie aan de serverzijde, loopt u direct een ernstig beveiligingsrisico zodra de app publiek toegankelijk wordt.
 
@@ -60,18 +60,18 @@ Herkent u twee of meer van deze signalen, dan is het tijd om pas op de plaats te
 
 ### Een AI-native oprichter in actie: De bug die op acht plekken leefde
 
-Nina Bosch, een oprichter in Groningen, bouwde "ArchiefKoppel", een documentbeheer-SaaS voor kleine juridische en administratieve kantoren, met Cursor. Het product regelde documenttagging, versiebeheer en toegangsrechten — echt nuttige functionaliteit die Cursor haar sneller hielp uitbrengen dan ze had verwacht. Naar de meeste maatstaven zag de codebase er netjes uit: goed georganiseerde bestanden, verstandige naamgeving, leesbare functies.
+Nina Bosch, een oprichter in Groningen, bouwde "ArchiefKoppel", een documentbeheer-SaaS voor kleine juridische en administratieve kantoren, met Cursor. Het product regelde documenttagging, versiebeheer en toegangsrechten - echt nuttige functionaliteit die Cursor haar sneller hielp uitbrengen dan ze had verwacht. Naar de meeste maatstaven zag de codebase er netjes uit: goed georganiseerde bestanden, verstandige naamgeving, leesbare functies.
 
-Het probleem kwam aan het licht toen Nina een bug moest oplossen in de manier waarop documenttoegangsrechten werden berekend. Ze loste het op in het bestand waar ze het vond, testte het, bevestigde dat het werkte, en bracht de update uit. Weken later meldde een klant precies dezelfde bug in een ander deel van het product. Nina ontdekte uiteindelijk dat Cursor bijna-identieke logica voor toegangscontrole had geïmplementeerd in acht verschillende bestanden, in plaats van deze één keer te bouwen als een gedeelde functie die elk deel van de app aanriep. Niemand had bewust een bocht afgesneden — de AI had simpelweg geen instinct om te merken dat het dit probleem al eerder ergens anders in de codebase had opgelost, en Nina had er niet aan gedacht op dat specifieke patroon te controleren.
+Het probleem kwam aan het licht toen Nina een bug moest oplossen in de manier waarop documenttoegangsrechten werden berekend. Ze loste het op in het bestand waar ze het vond, testte het, bevestigde dat het werkte, en bracht de update uit. Weken later meldde een klant precies dezelfde bug in een ander deel van het product. Nina ontdekte uiteindelijk dat Cursor bijna-identieke logica voor toegangscontrole had geïmplementeerd in acht verschillende bestanden, in plaats van deze één keer te bouwen als een gedeelde functie die elk deel van de app aanriep. Niemand had bewust een bocht afgesneden - de AI had simpelweg geen instinct om te merken dat het dit probleem al eerder ergens anders in de codebase had opgelost, en Nina had er niet aan gedacht op dat specifieke patroon te controleren.
 
 Ze bracht ArchiefKoppel naar LaunchStudio voor een structurele beoordeling. Engineers zochten systematisch naar gedupliceerde logica in de codebase, consolideerden de acht implementaties van toegangscontrole tot één gedeelde functie, en voegden een patroon toe om vergelijkbare duplicatie in toekomstige door AI gegenereerde toevoegingen op te vangen.
 
 **Resultaat:** ArchiefKoppel heeft nu één gezaghebbende bron voor toegangslogica in plaats van acht, en Nina heeft een herhaalbaar proces om dit patroon voortaan op te sporen.
 
-> *"Ik bleef dezelfde bug in andere kleren oplossen. Er was iemand anders voor nodig om erop te wijzen dat het nooit één bug was — het waren acht kopieën van dezelfde fout."*
-> — **Nina Bosch, oprichter, ArchiefKoppel (Groningen)**
+> *"Ik bleef dezelfde bug in andere kleren oplossen. Er was iemand anders voor nodig om erop te wijzen dat het nooit één bug was - het waren acht kopieën van dezelfde fout."*
+> - **Nina Bosch, oprichter, ArchiefKoppel (Groningen)**
 
-**Kosten en tijdlijn:** € 1.150 (codebase-brede duplicatie-audit en consolidatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.150 (codebase-brede duplicatie-audit en consolidatie) - voltooid in 5 werkdagen.
 
 ---
 
@@ -79,7 +79,7 @@ Ze bracht ArchiefKoppel naar LaunchStudio voor een structurele beoordeling. Engi
 
 ### Waarom is door AI gegenereerde technische schuld moeilijker te spotten dan door mensen gecreëerde schuld?
 
-Omdat er geen beslissingsspoor is — niemand koos bewust voor de shortcut, dus er is geen opmerking, herinnering of to-donotitie die toekomstige beoordelaars naar het probleem wijst.
+Omdat er geen beslissingsspoor is - niemand koos bewust voor de shortcut, dus er is geen opmerking, herinnering of to-donotitie die toekomstige beoordelaars naar het probleem wijst.
 
 ### Betekent er netjes uitziende code dat de codebase dit soort schuld niet heeft?
 
@@ -107,7 +107,7 @@ Ja, het consolideren van gedupliceerde logica in gedeelde functies is gericht we
       "name": "Waarom is door AI gegenereerde technische schuld moeilijker te spotten dan door mensen gecreëerde schuld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat er geen beslissingsspoor is — niemand koos bewust voor de shortcut, dus er is geen opmerking, herinnering of to-donotitie die toekomstige beoordelaars naar het probleem wijst."
+        "text": "Omdat er geen beslissingsspoor is - niemand koos bewust voor de shortcut, dus er is geen opmerking, herinnering of to-donotitie die toekomstige beoordelaars naar het probleem wijst."
       }
     },
     {

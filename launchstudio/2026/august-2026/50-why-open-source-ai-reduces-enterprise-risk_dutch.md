@@ -31,7 +31,7 @@ Doelgroep: DevOps Leads / Infrastructure Architects
 }
 </script>
 
-Het bouwen van een miljoenenbedrijf dat uitsluitend leunt op één gesloten LLM-API is vergelijkbaar met het bouwen van een wolkenkrabber op gehuurde grond. U heeft geen controle over het fundament, de bestemmingsplannen of de huurprijs. Dit staat bekend als **Platform-Risico (Platform Risk)** — en het is geen theoretische zorg. Commerciële API-providers hebben tarieven verhoogd, modellen uitgefaseerd met migratietermijnen van slechts 30 tot 60 dagen, en moderatieregels midden in een kwartaal aangescherpt, waardoor productie-applicaties zonder waarschuwing plotseling braken. Voor B2B SaaS-startups die verkopen aan risicomijdende zakelijke inkopers, is het mitigeren van dit platformrisico essentieel. Een strategische adoptie van Open Source AI biedt hiervoor het krachtigste architectonische antwoord.
+Het bouwen van een miljoenenbedrijf dat uitsluitend leunt op één gesloten LLM-API is vergelijkbaar met het bouwen van een wolkenkrabber op gehuurde grond. U heeft geen controle over het fundament, de bestemmingsplannen of de huurprijs. Dit staat bekend als **Platform-Risico (Platform Risk)** - en het is geen theoretische zorg. Commerciële API-providers hebben tarieven verhoogd, modellen uitgefaseerd met migratietermijnen van slechts 30 tot 60 dagen, en moderatieregels midden in een kwartaal aangescherpt, waardoor productie-applicaties zonder waarschuwing plotseling braken. Voor B2B SaaS-startups die verkopen aan risicomijdende zakelijke inkopers, is het mitigeren van dit platformrisico essentieel. Een strategische adoptie van Open Source AI biedt hiervoor het krachtigste architectonische antwoord.
 
 ## Het Gevaar van de Gesloten 'Black Box' API
 
@@ -45,7 +45,7 @@ Ongeveer 45% van de met AI gebouwde applicaties kampt met beveiligings- of betro
 
 ## Het Strategische Voordeel van Open Source AI
 
-Door open-weight modellen te integreren — zoals Meta's Llama-serie, Mistral, Qwen of DeepSeek — downloadt u de daadwerkelijke neurale netwerkgewichten en host u het model op uw eigen cloudinfrastructuur (via AWS SageMaker, RunPod, Modal of dedicated GPU-clusters). Dit levert volledige technologische soevereiniteit op:
+Door open-weight modellen te integreren - zoals Meta's Llama-serie, Mistral, Qwen of DeepSeek - downloadt u de daadwerkelijke neurale netwerkgewichten en host u het model op uw eigen cloudinfrastructuur (via AWS SageMaker, RunPod, Modal of dedicated GPU-clusters). Dit levert volledige technologische soevereiniteit op:
 
 - Niemand kan uw API-toegang intrekken;
 - Niemand kan de moderatieregels onder uw applicatie aanpassen;
@@ -55,7 +55,7 @@ Deze gedragsstabiliteit is exact wat enterprise-klanten eisen voor software die 
 
 ## De Data-Privacy Eis: Volledige VPC-Deployment
 
-Het krachtigste argument voor open-source AI in enterprise-verkoop is data-soevereiniteit, niet kostenbesparing. Banken, defensie-organisaties en zorginstellingen hanteren vaak strikt intern beleid dat het versturen van bedrijfsdata naar externe API's van derden categorisch verbiedt — ongeacht welke contractuele DPA-garanties worden geboden.
+Het krachtigste argument voor open-source AI in enterprise-verkoop is data-soevereiniteit, niet kostenbesparing. Banken, defensie-organisaties en zorginstellingen hanteren vaak strikt intern beleid dat het versturen van bedrijfsdata naar externe API's van derden categorisch verbiedt - ongeacht welke contractuele DPA-garanties worden geboden.
 
 Met open-source modellen kunt u een echte **VPC (Virtual Private Cloud) Deployment** aanbieden. U verpakt uw applicatie en modelgewichten in een Docker/Kubernetes-cluster en rolt de volledige stack uit binnen het eigen AWS-, Azure- of Google Cloud-account van de klant. Inferentie vindt lokaal plaats, 100% achter de eigen firewall van de klant. De data verlaat nooit hun eigen beveiligde netwerkperimeter. Dit omzeilt maandenlange bureaucratische security-onderzoeken en opent direct deuren naar gereguleerde markten die anders permanent gesloten zouden blijven.
 
@@ -98,7 +98,7 @@ Zij werkte samen met **LaunchStudio (door Manifera)** om een gefinetuned Llama-3
 
 **Resultaat:** Enterprise security reviews werden direct goedgekeurd en de afhankelijkheid van externe API-leveranciers werd volledig geëlimineerd.
 
-**Kosten & Tijdlijn:** €4.500 (Private LLM Deployment Pakket) — productieklaar en binnen 9 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €4.500 (Private LLM Deployment Pakket) - productieklaar en binnen 9 werkdagen live opgeleverd.
 
 ---
 

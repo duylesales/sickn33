@@ -1,7 +1,7 @@
-Every LMS vendor says "yes" when you ask about SCORM support. That's not a real test anymore — here's the one that actually separates the platforms. 💻📚
+Every LMS vendor says "yes" when you ask about SCORM support. That's not a real test anymore - here's the one that actually separates the platforms. 💻📚
 
 **The Pain Points:**
-❌ **Sequencing Roulette:** SCORM 2004 branching logic is notoriously inconsistent between vendors — content that sequences correctly on one LMS breaks on another.
+❌ **Sequencing Roulette:** SCORM 2004 branching logic is notoriously inconsistent between vendors - content that sequences correctly on one LMS breaks on another.
 ❌ **Walled-Garden xAPI:** Some platforms accept xAPI statements but lock them inside a proprietary store with no real export path.
 ❌ **Manual Roster Chaos:** No OneRoster integration means your registrar is uploading CSV files every term, and every upload is a data-quality risk.
 

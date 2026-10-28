@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Rental platforms collect some of the most sensitive documents ordinary people ever hand over: passports, payslips, employer statements, bank statements, sometimes a letter from a previous landlord. In a tight housing market like the Netherlands, applicants hand them over readily because they want the home. That makes PropTech one of the sectors where moving an AI prototype to production requires the most deliberate decisions — and where the default choices of AI tools are most likely to be wrong.
+Rental platforms collect some of the most sensitive documents ordinary people ever hand over: passports, payslips, employer statements, bank statements, sometimes a letter from a previous landlord. In a tight housing market like the Netherlands, applicants hand them over readily because they want the home. That makes PropTech one of the sectors where moving an AI prototype to production requires the most deliberate decisions - and where the default choices of AI tools are most likely to be wrong.
 
 This is a decision guide. Each section is a choice you should make consciously before real applicants arrive.
 
@@ -31,7 +31,7 @@ The instinct of a rental prototype is to collect everything upfront: identity do
 
 Dutch rules on good landlordship, introduced with the Good Landlordship Act (Wet goed verhuurderschap), set expectations about non-discriminatory selection and limit which information landlords may request, and when. Copies of identity documents and detailed financial records are generally only justified at a later stage, not from everyone who asks for a viewing. GDPR's data minimisation principle points the same way: collect what you need, when you need it.
 
-**The decision:** define stages — interest, viewing, application, selection, contract — and specify what data is collected at each. Build the app so documents can only be uploaded at the stage where they are justified.
+**The decision:** define stages - interest, viewing, application, selection, contract - and specify what data is collected at each. Build the app so documents can only be uploaded at the stage where they are justified.
 
 ## Decision 2: How Will You Handle Identity Documents?
 
@@ -43,19 +43,19 @@ Dutch identity documents carry a citizen service number (BSN), which may only be
 
 A rental platform usually has several parties: tenants, landlords, letting agents, sometimes property managers or owners' associations. Each should see only what relates to their properties and their role.
 
-**The decision:** write down the access matrix — which role sees which data for which property — and enforce it in the database. A letting agent working for landlord A must never see applicants for landlord B, even if both use the same platform. AI-generated apps usually enforce this only in the interface.
+**The decision:** write down the access matrix - which role sees which data for which property - and enforce it in the database. A letting agent working for landlord A must never see applicants for landlord B, even if both use the same platform. AI-generated apps usually enforce this only in the interface.
 
 ## Decision 4: How Will Selection Be Fair and Explainable?
 
 Many PropTech tools add AI or rules-based scoring to rank applicants. Selection must not discriminate, and applicants may challenge decisions. Automated decisions with significant effects also fall under GDPR restrictions.
 
-**The decision:** use transparent criteria (income ratio, household size fit), document them, keep a human in the final decision, log why an applicant was selected or declined, and avoid using data that can proxy for protected characteristics — nationality, name, photo, postcode.
+**The decision:** use transparent criteria (income ratio, household size fit), document them, keep a human in the final decision, log why an applicant was selected or declined, and avoid using data that can proxy for protected characteristics - nationality, name, photo, postcode.
 
 ## Decision 5: How Long Do You Keep What?
 
 Unsuccessful applicants' documents should not be kept once the selection is done. Tenants' lease records, on the other hand, may need to be kept for the duration of the tenancy and beyond for legal and tax reasons.
 
-**The decision:** set retention per data type and stage — for example, delete unsuccessful applicants' documents shortly after the property is let, keep lease documents for the tenancy plus the legally required period — and automate it.
+**The decision:** set retention per data type and stage - for example, delete unsuccessful applicants' documents shortly after the property is let, keep lease documents for the tenancy plus the legally required period - and automate it.
 
 ## Decision 6: Where Does the Data Live?
 
@@ -67,7 +67,7 @@ A leak of identity documents and payslips is a serious breach, likely requiring 
 
 ## AI Prototype to Production: Build Decisions vs. Specialist Decisions
 
-Some of these choices are technical and can be implemented by engineers: staged uploads, access enforcement, retention automation, EU hosting, logging. Others need legal input — particularly selection criteria and what may be requested under current rental legislation. LaunchStudio implements the technical side and flags where legal advice is needed; it does not replace a lawyer.
+Some of these choices are technical and can be implemented by engineers: staged uploads, access enforcement, retention automation, EU hosting, logging. Others need legal input - particularly selection criteria and what may be requested under current rental legislation. LaunchStudio implements the technical side and flags where legal advice is needed; it does not replace a lawyer.
 
 ## A Data Flow for a Rental Platform, Stage by Stage
 
@@ -100,7 +100,7 @@ Rental markets under pressure attract scrutiny of selection practices. Build fai
 
 ## Multi-Party Access and Offboarding
 
-PropTech platforms involve many parties whose relationships change: agents change agencies, landlords sell properties, property managers take over portfolios. Model these relationships explicitly — agency, landlord, property, assignment — and enforce access through them. When a relationship ends, access ends immediately, including to historic applicant data for that property. Log every access to documents and applicant details; landlords and agencies increasingly ask for these logs in their own compliance checks.
+PropTech platforms involve many parties whose relationships change: agents change agencies, landlords sell properties, property managers take over portfolios. Model these relationships explicitly - agency, landlord, property, assignment - and enforce access through them. When a relationship ends, access ends immediately, including to historic applicant data for that property. Log every access to documents and applicant details; landlords and agencies increasingly ask for these logs in their own compliance checks.
 
 ## Communication and Scheduling at Scale
 
@@ -112,11 +112,11 @@ Given the sensitivity of housing applications, a few controls deserve priority: 
 
 ## Handling Deposits and Rent Payments
 
-If your platform handles deposits or first-month rent, payment design matters as much as data design. Confirm payments via verified webhooks, never through browser redirects; record exactly which property, tenant and period each payment covers; and decide whether money flows directly to landlords (usually preferable) or through the platform — which can raise regulatory questions about holding others' funds. Refund rules for failed lettings must be written down and implemented automatically. Deposit disputes at the end of a tenancy are common, so keep a clear, timestamped record of what was paid, when and for what.
+If your platform handles deposits or first-month rent, payment design matters as much as data design. Confirm payments via verified webhooks, never through browser redirects; record exactly which property, tenant and period each payment covers; and decide whether money flows directly to landlords (usually preferable) or through the platform - which can raise regulatory questions about holding others' funds. Refund rules for failed lettings must be written down and implemented automatically. Deposit disputes at the end of a tenancy are common, so keep a clear, timestamped record of what was paid, when and for what.
 
 ## Working With Letting Agencies' Existing Systems
 
-Agencies often run property management or CRM software already. Integrations — exporting approved tenants, importing listings — must respect the same data rules: send only what the receiving system needs, use per-agency API credentials, log transfers and make sure deletion on your side is matched by clear agreements about data in theirs. Integrations are where carefully designed data minimisation can quietly be undone if nobody checks what is exported.
+Agencies often run property management or CRM software already. Integrations - exporting approved tenants, importing listings - must respect the same data rules: send only what the receiving system needs, use per-agency API credentials, log transfers and make sure deletion on your side is matched by clear agreements about data in theirs. Integrations are where carefully designed data minimisation can quietly be undone if nobody checks what is exported.
 
 ## Preparing for Scrutiny
 
@@ -128,7 +128,7 @@ Collect less, later, and delete sooner: every document you never store is one yo
 
 ## Where to Start This Week
 
-Map your stages, delete what you do not need and restrict the rest — in that order.
+Map your stages, delete what you do not need and restrict the rest - in that order.
 
 ## Where LaunchStudio Fits
 
@@ -151,9 +151,9 @@ LaunchStudio's engineers restructured the flow so viewing bookings needed only c
 **Result:** Kijkmoment now holds identity documents from under 5% of the people it previously did, at any given time. Two larger letting agencies joined after reviewing its data-handling description, and support questions from anxious applicants about their documents largely stopped.
 
 > *"We were asking thousands of people for their passports so that forty of them could rent a flat. The safest data turned out to be the data we stopped collecting."*
-> — **Ricardo Santos, Founder, Kijkmoment (Diemen)**
+> - **Ricardo Santos, Founder, Kijkmoment (Diemen)**
 
-**Cost & Timeline:** €3,600 (Launch Ready package with staged data collection, access control, storage migration, retention and scoring changes) — completed in 12 business days.
+**Cost & Timeline:** €3,600 (Launch Ready package with staged data collection, access control, storage migration, retention and scoring changes) - completed in 12 business days.
 
 ## Frequently Asked Questions
 
@@ -171,7 +171,7 @@ It can be used carefully: transparent criteria, no protected characteristics or 
 
 ### Why does Manifera's Amsterdam base matter for PropTech founders?
 
-Manifera's European office on Herengracht 420 sits in the heart of the Dutch rental market, and its team understands the local pressures and expectations around tenant data — combined with engineering capacity in Ho Chi Minh City.
+Manifera's European office on Herengracht 420 sits in the heart of the Dutch rental market, and its team understands the local pressures and expectations around tenant data - combined with engineering capacity in Ho Chi Minh City.
 
 ### Can careful tenant-data handling improve my platform's reputation online?
 

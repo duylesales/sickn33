@@ -16,13 +16,13 @@ Als uw app te maken krijgt met een plotselinge verkeerspiek, weigert de API-prov
 
 ## Mocking van het LLM voor Kostenefficiënte Load Testing
 
-Voer nooit grootschalige stresstests uit tegen de live productie-API van OpenAI. Het bestoken van GPT-4o met 10.000 gelijktijdige verzoeken kost een klein fortuin aan API-credits — potentieel honderden euro's voor een enkele testrun — en kan leiden tot een accountblokkade wegens schending van de fair-use voorwaarden.
+Voer nooit grootschalige stresstests uit tegen de live productie-API van OpenAI. Het bestoken van GPT-4o met 10.000 gelijktijdige verzoeken kost een klein fortuin aan API-credits - potentieel honderden euro's voor een enkele testrun - en kan leiden tot een accountblokkade wegens schending van de fair-use voorwaarden.
 
-U moet een **Mock LLM Server** bouwen. Creëer een lokaal Node.js- of Express-endpoint dat het gedrag van een LLM exact nabootst en dezelfde JSON-structuur retourneert. Programmeer de mock server om kunstmatig 5 tot 15 seconden latentie toe te voegen, tokens te streamen op een realistisch tempo (20-40 tokens per seconde) en willekeurig bij 10% van de verzoeken een 429 Rate Limit en bij 2% een 500 Server Error terug te geven. Gebruik professionele load-testing tools — zoals k6, Artillery of Locust — tegen deze mock server om uw retry-logica, timeouts en asynchrone taakwachtrijen grondig te testen vóórdat u één euro aan echte API-kosten uitgeeft.
+U moet een **Mock LLM Server** bouwen. Creëer een lokaal Node.js- of Express-endpoint dat het gedrag van een LLM exact nabootst en dezelfde JSON-structuur retourneert. Programmeer de mock server om kunstmatig 5 tot 15 seconden latentie toe te voegen, tokens te streamen op een realistisch tempo (20-40 tokens per seconde) en willekeurig bij 10% van de verzoeken een 429 Rate Limit en bij 2% een 500 Server Error terug te geven. Gebruik professionele load-testing tools - zoals k6, Artillery of Locust - tegen deze mock server om uw retry-logica, timeouts en asynchrone taakwachtrijen grondig te testen vóórdat u één euro aan echte API-kosten uitgeeft.
 
 ## Het Circuit Breaker Patroon
 
-Soms vertraagt een AI-provider niet alleen, maar gaat de service volledig offline — een scenario dat regelmatig voorkomt bij alle grote model-aanbieders. Als 1.000 gebruikers tijdens een storing verwoed op de knop blijven klikken, raakt het geheugen van uw Node.js-servers binnen de kortste keren uitgeput doordat duizenden dode HTTP-verbindingen open blijven staan.
+Soms vertraagt een AI-provider niet alleen, maar gaat de service volledig offline - een scenario dat regelmatig voorkomt bij alle grote model-aanbieders. Als 1.000 gebruikers tijdens een storing verwoed op de knop blijven klikken, raakt het geheugen van uw Node.js-servers binnen de kortste keren uitgeput doordat duizenden dode HTTP-verbindingen open blijven staan.
 
 U moet een **Circuit Breaker (Stroomonderbreker)** implementeren met een library zoals `opossum` in Node.js. Zodra uw backend detecteert dat een reeks opeenvolgende API-verzoeken faalt (bijv. 5 tot 15 mislukkingen achter elkaar), "klapt" de schakelaar om naar een open status. Gedurende de volgende minuten stuurt uw backend géén enkel verzoek meer naar OpenAI, maar retourneert direct een nette melding naar de gebruiker: *"Onze AI-provider ondervindt momenteel een storing; probeer het over enkele minuten opnieuw."* Na een afkoelperiode schakelt de breaker naar "half-open" om met één enkel testverzoek te controleren of de provider hersteld is, alvorens het normale verkeer te hervatten.
 
@@ -62,7 +62,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in om gesimuleerde load tests uit
 
 **Resultaat:** Foutieve dubbele berichten daalden naar exact nul en het systeem verwerkte probleemloos 1.000 gelijktijdige supportgesprekken.
 
-**Kosten & Tijdlijn:** €2.200 (Load Testing & Hardening Pakket) — productieklaar en binnen 6 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.200 (Load Testing & Hardening Pakket) - productieklaar en binnen 6 werkdagen live opgeleverd.
 
 ---
 

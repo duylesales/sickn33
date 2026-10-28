@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype met **Cursor** — Elena, een compliance officer, gebruikte Cursor om een tool voor contractbeoordeling te bouwen, maar liep vast op time-outs en torenhoge kosten door te grote context windows. 🧠
+🔥 Elena bouwde een prototype met **Cursor** - Elena, een compliance officer, gebruikte Cursor om een tool voor contractbeoordeling te bouwen, maar liep vast op time-outs en torenhoge kosten door te grote context windows. 🧠
 
 Als uw AI-applicatie volledige documenten direct in de prompt dumpt ("Context Stuffing"), lopen uw API-kosten exponentieel op en hallucineert het model belangrijke details.
 
@@ -12,7 +12,7 @@ Als uw AI-applicatie volledige documenten direct in de prompt dumpt ("Context St
 
 Bij **LaunchStudio** lossen we exact dit type datapijplijnproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Elena's applicatie werd uiterst efficiënt: Het aantal time-outs daalde naar nul en de API-kosten per document daalden met 40%. (€2.450 (API Optimization Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
+Elena's applicatie werd uiterst efficiënt: Het aantal time-outs daalde naar nul en de API-kosten per document daalden met 40%. (€2.450 (API Optimization Pakket) - productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/handling-large-context-windows-efficiently
 

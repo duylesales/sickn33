@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A dependency you cannot control on a schedule you do not set is an unusual thing to build a feature on, and that is what a hosted language model is. The version you developed against will be retired, with a notice period measured in months, and the replacement — even when it is genuinely better — will not produce the same output for the same input. Instructions tuned to one model's habits behave differently on the next.
+A dependency you cannot control on a schedule you do not set is an unusual thing to build a feature on, and that is what a hosted language model is. The version you developed against will be retired, with a notice period measured in months, and the replacement - even when it is genuinely better - will not produce the same output for the same input. Instructions tuned to one model's habits behave differently on the next.
 
 This is manageable and it is not automatic. The founders who handle it well made three decisions early: which model, pinned how, and behind what boundary.
 
@@ -42,7 +42,7 @@ A pattern worth adopting: different models for different tasks. A small model fo
 
 ## Pin the Version, Always
 
-Providers offer aliases that point at the current version of a model. Using one means your product's behaviour changes when they update it — silently, without a deployment on your side, potentially on a Tuesday afternoon.
+Providers offer aliases that point at the current version of a model. Using one means your product's behaviour changes when they update it - silently, without a deployment on your side, potentially on a Tuesday afternoon.
 
 Always specify an explicit, dated version. Then you upgrade deliberately, after testing, rather than discovering the change through a customer noticing that summaries have become longer or a classifier has started using a category it never used before.
 
@@ -66,13 +66,13 @@ Establishing this boundary, pinning versions, and building the comparison capabi
 
 When the deprecation notice arrives, or when a better model appears, the migration has a sequence.
 
-**Assemble a comparison set** — 30 to 50 real inputs covering the ordinary cases and the awkward ones. If you have been storing inputs and outputs with provenance, this already exists.
+**Assemble a comparison set** - 30 to 50 real inputs covering the ordinary cases and the awkward ones. If you have been storing inputs and outputs with provenance, this already exists.
 
 **Run both models over it** and compare. You are looking less for "better" than for *different*: outputs that changed category, became substantially longer or shorter, stopped following the format, or lost a detail the old one caught.
 
 **Adjust the instructions** to the new model, because prompts are tuned to a model's habits and rarely transfer perfectly. This is usually the bulk of the work.
 
-**Roll out behind a flag**, to yourself, then a small share, watching the correction rate — which is why tracking customer edits pays off here specifically.
+**Roll out behind a flag**, to yourself, then a small share, watching the correction rate - which is why tracking customer edits pays off here specifically.
 
 **Keep the old version available** until the provider actually retires it, so a problem discovered late has a way back.
 
@@ -84,7 +84,7 @@ The mistake to avoid is treating a newer, more capable model as a drop-in improv
 
 Mert Yıldız ran Aanvraagfilter, a tool triaging incoming grant applications for regional funds, built in Cursor. It classified applications into six categories using a model referenced by an alias rather than a pinned version.
 
-Two things happened in the same month. The provider updated the alias to a newer version, and Mert did not know, because nothing on his side changed. Classification behaviour shifted: applications previously assigned to a general category began being split across two others, and one fund's triage workflow — built around the old distribution — started routing applications to the wrong reviewers.
+Two things happened in the same month. The provider updated the alias to a newer version, and Mert did not know, because nothing on his side changed. Classification behaviour shifted: applications previously assigned to a general category began being split across two others, and one fund's triage workflow - built around the old distribution - started routing applications to the wrong reviewers.
 
 It was noticed eleven days later by a reviewer receiving applications outside their remit. Because model versions had not been recorded with outputs, establishing when the behaviour changed required correlating classification patterns against the provider's release notes.
 
@@ -93,7 +93,7 @@ The deprecation notice for the original version had also arrived, to an email ad
 **Result:** the model pinned to an explicit version, a single call layer introduced with per-task model selection, model and prompt version recorded with every classification, a comparison set of 50 historical applications built for testing future migrations, deprecation dates added to the quarterly review list, and provider notices routed to a monitored address. The migration to the newer version was then done deliberately, with instruction adjustments, over four days.
 
 > "The provider improved the model and my product started sending applications to the wrong people. I had not changed anything, which is exactly why it took eleven days to work out."
-> — **Mert Yıldız, Founder, Aanvraagfilter**
+> - **Mert Yıldız, Founder, Aanvraagfilter**
 
 **Cost & Timeline:** model abstraction, version pinning, and migration process delivered in 3 business days.
 

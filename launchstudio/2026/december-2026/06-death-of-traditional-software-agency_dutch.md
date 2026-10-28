@@ -45,7 +45,7 @@ De waardepropositie van het bureau was glashelder: **toegang tot een compleet en
 
 ## Wat het Model Doorbrak: Het Prototype is Niet Langer het Moeilijke Deel
 
-AI-tools — Lovable, Bolt, Cursor — hebben de duurste en meest tijdrovende fasen van het traditionele bureautraject systematisch geëlimineerd:
+AI-tools - Lovable, Bolt, Cursor - hebben de duurste en meest tijdrovende fasen van het traditionele bureautraject systematisch geëlimineerd:
 
 | Fase | Traditioneel Bureau | AI-Tools (2026) |
 |---|---|---|
@@ -56,17 +56,17 @@ AI-tools — Lovable, Bolt, Cursor — hebben de duurste en meest tijdrovende fa
 | Projectmanagement | Doorlopend, €2.000–€5.000/maand | Zelf gemanaged door de oprichter |
 | **Totaal voor prototype** | **€20.000–€90.000** | **€0–€200** |
 
-Wanneer een oprichter in één enkele middag een complete frontend met routering, componenten, databaseverbindingen en authenticatie kan genereren, is het betalen van €50.000 voor hetzelfde resultaat verspreid over drie maanden absurd geworden. De kernbelofte van het traditionele bureau — *"wij bouwen wat u zelf niet kunt bouwen"* — is verdampt.
+Wanneer een oprichter in één enkele middag een complete frontend met routering, componenten, databaseverbindingen en authenticatie kan genereren, is het betalen van €50.000 voor hetzelfde resultaat verspreid over drie maanden absurd geworden. De kernbelofte van het traditionele bureau - *"wij bouwen wat u zelf niet kunt bouwen"* - is verdampt.
 
 ## De Last Mile: Wat AI (Nog) Niet Kan
 
-Hier wordt het verhaal genuanceerd. AI-tools hebben de zichtbare 50% van softwareontwikkeling geëlimineerd. De onzichtbare 50% — het deel dat een demo scheidt van een volwaardig commercieel product — blijft hardnekkig bestand tegen automatisering:
+Hier wordt het verhaal genuanceerd. AI-tools hebben de zichtbare 50% van softwareontwikkeling geëlimineerd. De onzichtbare 50% - het deel dat een demo scheidt van een volwaardig commercieel product - blijft hardnekkig bestand tegen automatisering:
 
-- **Productiebeveiliging** — Row Level Security, encryptie in rust, rate-limiting, OWASP-compliance en penetratietesten
-- **Betalingsinfrastructuur** — Stripe/Mollie webhook-afhandeling, abonnementsbeheer, dunning flows, factuurgeneratie en btw-berekeningen
-- **Deployment-architectuur** — CI/CD-pijplijnen, staging-omgevingen, zero-downtime releases, CDN-configuraties en SSL-beheer
-- **Monitoring en alarmering** — Foutregistratie via Sentry, prestatiemonitoring, uptime-alerts en logaggregatie
-- **Compliance** — AVG/GDPR-rechten, toestemmingsbeheer, audit-logging en bewaartermijnen van data
+- **Productiebeveiliging** - Row Level Security, encryptie in rust, rate-limiting, OWASP-compliance en penetratietesten
+- **Betalingsinfrastructuur** - Stripe/Mollie webhook-afhandeling, abonnementsbeheer, dunning flows, factuurgeneratie en btw-berekeningen
+- **Deployment-architectuur** - CI/CD-pijplijnen, staging-omgevingen, zero-downtime releases, CDN-configuraties en SSL-beheer
+- **Monitoring en alarmering** - Foutregistratie via Sentry, prestatiemonitoring, uptime-alerts en logaggregatie
+- **Compliance** - AVG/GDPR-rechten, toestemmingsbeheer, audit-logging en bewaartermijnen van data
 
 Deze onzichtbare infrastructuur is exact wat [LaunchStudio](https://launchstudio.eu/nl/) levert. En het vertegenwoordigt een fundamenteel ander bedrijfsmodel dan het traditionele bureau.
 
@@ -94,15 +94,15 @@ Sommige traditionele bureaus houden eigen hostingstructuren aan of gebruiken ges
 
 Traditionele softwarebureaus bevonden zich in 2026 in een van drie posities:
 
-**De Aanpassers** — Een klein aantal bureaus erkende de verschuiving en herpositioneerde zich als "AI-prototype versnellers" of "last-mile engineering services". Zij overleefden door hun scope te verkleinen, prijzen te verlagen en AI-gegenereerde code te omarmen als startpunt in plaats van als concurrent.
+**De Aanpassers** - Een klein aantal bureaus erkende de verschuiving en herpositioneerde zich als "AI-prototype versnellers" of "last-mile engineering services". Zij overleefden door hun scope te verkleinen, prijzen te verlagen en AI-gegenereerde code te omarmen als startpunt in plaats van als concurrent.
 
-**De Ontkenners** — Veel bureaus gingen door alsof er niets veranderd was en bleven offertes van €50.000 sturen naar oprichters die gratis al een werkend prototype hadden gebouwd. Deze bureaus zagen hun omzet dramatisch instorten toen oprichters zich realiseerden dat de keizer geen kleren droeg.
+**De Ontkenners** - Veel bureaus gingen door alsof er niets veranderd was en bleven offertes van €50.000 sturen naar oprichters die gratis al een werkend prototype hadden gebouwd. Deze bureaus zagen hun omzet dramatisch instorten toen oprichters zich realiseerden dat de keizer geen kleren droeg.
 
-**De Enterprise-Vluchters** — Sommige bureaus verlieten de startup-markt volledig en trokken zich terug naar enterprise-klanten met grote budgetten en complexe legacy-systemen. Dit is levensvatbaar, maar verkleint de potentiële markt aanzienlijk.
+**De Enterprise-Vluchters** - Sommige bureaus verlieten de startup-markt volledig en trokken zich terug naar enterprise-klanten met grote budgetten en complexe legacy-systemen. Dit is levensvatbaar, maar verkleint de potentiële markt aanzienlijk.
 
 ## Waarom het Hybride Model Wint
 
-Het meest effectieve model combineert de snelheid en toegankelijkheid van AI-prototyping met de diepgang en betrouwbaarheid van professionele engineering — exact het model dat Manifera met LaunchStudio heeft gebouwd.
+Het meest effectieve model combineert de snelheid en toegankelijkheid van AI-prototyping met de diepgang en betrouwbaarheid van professionele engineering - exact het model dat Manifera met LaunchStudio heeft gebouwd.
 
 Manifera's team van 120+ softwareontwikkelaars, opererend vanuit het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad met Europees management aan de Herengracht 420 in Amsterdam, brengt 11 jaar enterprise-ervaring in bij elk LaunchStudio-project. Maar in plaats van enterprise-tarieven te rekenen, zorgt de gerichte last-mile scope ervoor dat projecten binnen enkele dagen in plaats van maanden worden afgerond, tegen een fractie van de traditionele bureaukosten.
 
@@ -130,7 +130,7 @@ Moderne productiestudio's hanteren daarentegen fixed-scope en resultaatgerichte 
 
 ### Een AI-native oprichter in actie: Een bureau van €45.000 opgezegd en binnen 8 dagen gelanceerd
 
-Marco, horeca-adviseur in Leiden, had een lokaal softwarebureau ingehuurd om een AI-menuoptimalisatietool te ontwikkelen. Na vier maanden en €45.000 aan facturen had het bureau slechts een half functionerend dashboard opgeleverd. De AI-features — die de gehele kernwaarde vormden — waren nog niet eens gestart; het bureau vroeg nog eens €30.000 en drie maanden extra voor "Fase 2".
+Marco, horeca-adviseur in Leiden, had een lokaal softwarebureau ingehuurd om een AI-menuoptimalisatietool te ontwikkelen. Na vier maanden en €45.000 aan facturen had het bureau slechts een half functionerend dashboard opgeleverd. De AI-features - die de gehele kernwaarde vormden - waren nog niet eens gestart; het bureau vroeg nog eens €30.000 en drie maanden extra voor "Fase 2".
 
 Marco zegde het contract per direct op. In één enkel weekend bouwde hij de complete interface opnieuw in Lovable, inclusief de AI-menu-analyses via OpenAI-prompts waarover het bureau had beweerd dat ze maanden ontwikkeling vereisten. Het Lovable-prototype deed alles wat het bureau in Fase 1 had opgeleverd, plus de AI-analyse van Fase 2.
 
@@ -141,16 +141,16 @@ Het team van Manifera behield zijn volledige Lovable-frontend, richtte Row Level
 **Resultaat:** MenuGenius lanceerde binnen de eerste week voor 6 restaurants uit Marco's netwerk. Binnen een maand betaalden 11 restaurants tussen de €79 en €199 per maand, goed voor €1.529 per maand aan terugkerende omzet. De totale kosten van LaunchStudio bedroegen minder dan 5% van wat het bureau had gefactureerd voor een inferieur resultaat.
 
 > *"Ik spendeerde €45.000 en vier maanden aan een bureau en had niets bruikbaars. Ik besteedde één weekend aan Lovable en 8 dagen aan LaunchStudio en had een draaiend bedrijf met betalende klanten. Het traditionele bureaumodel is dood. Ik ben het levende bewijs."*  
-> — **Marco Rossi, Oprichter MenuGenius (Leiden)**
+> - **Marco Rossi, Oprichter MenuGenius (Leiden)**
 
-**Kosten & tijdlijn:** €1.600 (Launch Ready Pakket) — productieklaar en live opgeleverd in 8 werkdagen.
+**Kosten & tijdlijn:** €1.600 (Launch Ready Pakket) - productieklaar en live opgeleverd in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Zijn traditionele softwarebureaus nu volledig achterhaald?
-Niet volledig — zij bedienen nog steeds enterprise-klanten met complexe legacy-systemen en langdurige onderhoudscontracten. Maar voor startups en het mkb die nieuwe producten bouwen, levert de combinatie van AI-prototyping en gespecialiseerde last-mile diensten zoals LaunchStudio betere resultaten op tegen een fractie van de kosten en doorlooptijd.
+Niet volledig - zij bedienen nog steeds enterprise-klanten met complexe legacy-systemen en langdurige onderhoudscontracten. Maar voor startups en het mkb die nieuwe producten bouwen, levert de combinatie van AI-prototyping en gespecialiseerde last-mile diensten zoals LaunchStudio betere resultaten op tegen een fractie van de kosten en doorlooptijd.
 
 ### Waarom eisen bureaus vaak om alles vanaf nul opnieuw te bouwen?
 Omdat hun verdienmodel gebaseerd is op declarabele uren: meer uren = meer omzet. Herbouwen vanaf nul maximaliseert declarabele uren. Het behouden van een AI-frontend en uitsluitend de ontbrekende backend bouwen zou een project van €50.000 reduceren naar €2.000. LaunchStudio's vaste prijzen elimineren dit belangenconflict volledig.

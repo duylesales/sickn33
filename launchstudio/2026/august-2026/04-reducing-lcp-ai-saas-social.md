@@ -1,4 +1,4 @@
-🔥 Sophia built a prototype using **Lovable** — sophia, a real estate agent, used **lovable** to build a listing page generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Sophia built a prototype using **Lovable** - sophia, a real estate agent, used **lovable** to build a listing page generator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Sophia's application achieved silky-smooth performance: LCP dropped to 1.4s, boosting SEO rankings and user retention. (€2,100 (Core Web Vitals Package) — production-ready and deployed in 6 business days.). 🚀
+Sophia's application achieved silky-smooth performance: LCP dropped to 1.4s, boosting SEO rankings and user retention. (€2,100 (Core Web Vitals Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/reducing-lcp-ai-saas
 

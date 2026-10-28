@@ -104,7 +104,7 @@ Wat een team moeilijk gevuld krijgt, is niet machine learning-vaardigheid op zic
 
 Het wervingsproces weegt daarom fundamenten zwaar. Verwacht vragen over kansrekening, schatting en lineaire algebra in plaats van over frameworks. Verwacht de vraag wat een Kalmanfilter aanneemt en wat gebeurt als die aannames falen.
 
-Wie zich voorbereidt zoals op een techbedrijfgesprek — codeeropgaven oefenen, recente architecturen doornemen — presteert hier vaak matig ondanks bekwaamheid. Wie zijn kansrekening en schattingstheorie opfrist, presteert veel beter.
+Wie zich voorbereidt zoals op een techbedrijfgesprek - codeeropgaven oefenen, recente architecturen doornemen - presteert hier vaak matig ondanks bekwaamheid. Wie zijn kansrekening en schattingstheorie opfrist, presteert veel beter.
 
 ## De grensdimensie
 

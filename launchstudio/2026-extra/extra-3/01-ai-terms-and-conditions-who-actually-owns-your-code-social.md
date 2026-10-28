@@ -4,16 +4,16 @@
 
 ❌ Nobody reads the ownership clause in an AI coding tool's terms before clicking accept
 ❌ Terms change over time, and free-tier terms can differ from paid-tier terms without anyone tracking exactly when
-❌ "It turned out fine" only works in hindsight — due diligence runs on documented timelines, not reassurance
+❌ "It turned out fine" only works in hindsight - due diligence runs on documented timelines, not reassurance
 ❌ A founder with outside investors already involved has even more riding on a clean answer, since it becomes their problem too
 
 ✅ Save a dated copy of the terms in effect at every significant development milestone, stored somewhere retrievable
-✅ Read the ownership/IP section specifically — it's short, and it's the part that actually matters for a raise or sale
+✅ Read the ownership/IP section specifically - it's short, and it's the part that actually matters for a raise or sale
 ✅ If it's already unclear, archived versions (Wayback Machine, provider version-history pages) can often resolve it after the fact
 
-At **LaunchStudio**, code ownership documentation is a standard item in our production-readiness intake — flagged before it becomes a stalled due diligence conversation. Backed by Manifera's 11+ years handling enterprise due diligence processes. 🛡️
+At **LaunchStudio**, code ownership documentation is a standard item in our production-readiness intake - flagged before it becomes a stalled due diligence conversation. Backed by Manifera's 11+ years handling enterprise due diligence processes. 🛡️
 
-His result: LaunchStudio retrieved the archived terms and confirmed both tiers carried identical ownership language — resolving the acquirer's question in two days instead of stalling the deal for weeks. 🚀
+His result: LaunchStudio retrieved the archived terms and confirmed both tiers carried identical ownership language - resolving the acquirer's question in two days instead of stalling the deal for weeks. 🚀
 
 👉 Selling or raising soon? Get your code ownership documentation in order before someone asks: https://launchstudio.eu/en/blog/ai-terms-and-conditions-who-actually-owns-your-code
 

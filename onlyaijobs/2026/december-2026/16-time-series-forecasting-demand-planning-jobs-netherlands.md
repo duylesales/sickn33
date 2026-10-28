@@ -53,7 +53,7 @@ Practitioners therefore spend much of their time on questions that look unglamor
 
 **Transport and mobility.** Passenger volumes, crew and rolling stock planning, road traffic, and logistics network volumes. Operators such as **NS** plan capacity years ahead and adjust it daily.
 
-**Manufacturing and wholesale.** Sales and operations planning, production scheduling, inventory positioning and spare parts demand — the last being a genuinely difficult problem because demand is intermittent and lumpy.
+**Manufacturing and wholesale.** Sales and operations planning, production scheduling, inventory positioning and spare parts demand - the last being a genuinely difficult problem because demand is intermittent and lumpy.
 
 **Healthcare.** Bed occupancy, operating theatre planning, emergency department arrivals and staffing. Hospitals across the country run capacity models, and the shortage of analysts able to build them is acute.
 
@@ -63,9 +63,9 @@ Practitioners therefore spend much of their time on questions that look unglamor
 
 The relationship is less straightforward than in most applied ML fields, and understanding it is a good interview differentiator.
 
-Classical statistical methods — exponential smoothing, state space models, seasonal decomposition — remain strong baselines, particularly for series with limited history. Global machine learning models trained across many series tend to win when there are thousands of related series and rich features, which is why retail and energy have moved that way. Deep learning has a place, mainly where long-range dependencies and many covariates matter, but it is not automatically better, and the largest gains usually come from better features, better hierarchy handling and better evaluation rather than from a bigger model.
+Classical statistical methods - exponential smoothing, state space models, seasonal decomposition - remain strong baselines, particularly for series with limited history. Global machine learning models trained across many series tend to win when there are thousands of related series and rich features, which is why retail and energy have moved that way. Deep learning has a place, mainly where long-range dependencies and many covariates matter, but it is not automatically better, and the largest gains usually come from better features, better hierarchy handling and better evaluation rather than from a bigger model.
 
-The professional consensus, reinforced by every large forecasting competition of the past decade, is that simple methods properly implemented beat sophisticated methods carelessly implemented — and that combining several models usually beats choosing one.
+The professional consensus, reinforced by every large forecasting competition of the past decade, is that simple methods properly implemented beat sophisticated methods carelessly implemented - and that combining several models usually beats choosing one.
 
 ## The Structural Problems That Define the Work
 
@@ -93,7 +93,7 @@ The second misconception is that the job is mathematical. Much of it is organisa
 
 ## Skills That Stand Out
 
-- **Classical time series methods.** Exponential smoothing, ARIMA-family models, state space formulations and seasonal decomposition — as baselines you can defend.
+- **Classical time series methods.** Exponential smoothing, ARIMA-family models, state space formulations and seasonal decomposition - as baselines you can defend.
 - **Global models and gradient boosting.** Training across many series with calendar, price and event features.
 - **Probabilistic forecasting.** Quantiles, prediction intervals, proper scoring rules and calibration.
 - **Hierarchical reconciliation.** Making forecasts consistent across levels of aggregation.
@@ -103,11 +103,11 @@ The second misconception is that the job is mathematical. Much of it is organisa
 
 ## How to Build Experience
 
-Start with a public dataset that has hierarchy and promotions, and build a full pipeline: baseline, features, backtesting framework, and an evaluation that includes a naive benchmark. Most portfolios fail on the benchmark — a candidate who shows that their model beats seasonal naive by a stated margin, on a rolling backtest, is instantly credible.
+Start with a public dataset that has hierarchy and promotions, and build a full pipeline: baseline, features, backtesting framework, and an evaluation that includes a naive benchmark. Most portfolios fail on the benchmark - a candidate who shows that their model beats seasonal naive by a stated margin, on a rolling backtest, is instantly credible.
 
 Then add a decision layer. Convert the forecast into an order quantity with an explicit service level and cost assumption, and report the business metric rather than the error metric. That single step separates candidates who understand forecasting from those who have run a tutorial.
 
-Finally, learn one planning system. Many Dutch employers run their forecasting inside a planning platform rather than in Python, and familiarity with how such systems work — and where their limits are — is worth a great deal in interviews.
+Finally, learn one planning system. Many Dutch employers run their forecasting inside a planning platform rather than in Python, and familiarity with how such systems work - and where their limits are - is worth a great deal in interviews.
 
 ## Career Growth in Forecasting
 
@@ -130,11 +130,11 @@ The answers reveal the maturity of the organisation faster than any description 
 
 Every experienced forecaster eventually discovers that the number is not only a technical object. It is also a commitment, a target, and sometimes a weapon in an internal negotiation.
 
-Sales teams whose bonus depends on beating a forecast have an incentive to keep it low. Commercial leadership presenting to a board has an incentive to keep it ambitious. Operations, who must staff and stock against it, want it accurate and stable. When these interests collide, the statistical question — what will actually happen — becomes entangled with what different people would like to have happen.
+Sales teams whose bonus depends on beating a forecast have an incentive to keep it low. Commercial leadership presenting to a board has an incentive to keep it ambitious. Operations, who must staff and stock against it, want it accurate and stable. When these interests collide, the statistical question - what will actually happen - becomes entangled with what different people would like to have happen.
 
 Mature organisations separate the two explicitly: an unbiased forecast of expected demand, and separately a plan or target that may differ from it, with the gap named and owned. Immature organisations merge them, and then wonder why their forecasts are consistently optimistic.
 
-This is why forecasting roles frequently report into supply chain or finance rather than into a data team, and why the job demands diplomacy. A forecaster who cannot hold a respectful line when a commercial director wants the number changed will not last, and one who has no relationships will simply be overridden. Candidates should ask in interviews how disagreements about the number are resolved — the answer is the single best indicator of whether the role will be satisfying.
+This is why forecasting roles frequently report into supply chain or finance rather than into a data team, and why the job demands diplomacy. A forecaster who cannot hold a respectful line when a commercial director wants the number changed will not last, and one who has no relationships will simply be overridden. Candidates should ask in interviews how disagreements about the number are resolved - the answer is the single best indicator of whether the role will be satisfying.
 
 ## Which Sectors Are Hiring, and What They Pay For
 
@@ -150,7 +150,7 @@ The Dutch market rewards different things in different sectors, and knowing this
 
 **Logistics** values robustness and cost. Margins are thin, volumes are large, and a forecast that behaves badly during a disruption is worse than no forecast.
 
-Candidates moving between these sectors should expect the mathematics to transfer easily and the organisational context to take a year to learn — which is precisely the opposite of what most people assume before they make the move.
+Candidates moving between these sectors should expect the mathematics to transfer easily and the organisational context to take a year to learn - which is precisely the opposite of what most people assume before they make the move.
 
 ## Key Takeaways
 
@@ -169,30 +169,30 @@ Browse current forecasting, demand planning and data science roles at [onlyaijob
 ## Frequently Asked Questions
 
 ### (Scenario: ML engineer considering a move) Is forecasting a step down from machine learning work?
-No — it is one of the areas where modelling most directly changes financial outcomes, and senior specialists are scarce and well paid.
+No - it is one of the areas where modelling most directly changes financial outcomes, and senior specialists are scarce and well paid.
 
 ### (Scenario: candidate searching job boards) Why can't I find forecasting jobs by that name?
 They are usually titled demand planner, supply chain analyst, capacity analyst or business analyst; search by function rather than by method.
 
 ### (Scenario: junior data scientist) Do I need deep learning for forecasting?
-Rarely — strong baselines, good features, hierarchy handling and proper evaluation deliver more than complex architectures in most Dutch employers.
+Rarely - strong baselines, good features, hierarchy handling and proper evaluation deliver more than complex architectures in most Dutch employers.
 
 ### (Scenario: candidate building a portfolio) What makes a forecasting project convincing?
 A rolling backtest, an explicit naive benchmark, probabilistic output and a decision rule that converts the forecast into a business metric.
 
 ### (Scenario: candidate worried about sector lock-in) Can I switch industries later?
-Yes — forecasting methods transfer readily between retail, energy, healthcare and logistics, which makes the career unusually portable.
+Yes - forecasting methods transfer readily between retail, energy, healthcare and logistics, which makes the career unusually portable.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is forecasting a step down from machine learning work?", "acceptedAnswer": {"@type": "Answer", "text": "No — it directly changes financial outcomes and senior forecasting specialists are scarce and well paid."}},
+    {"@type": "Question", "name": "Is forecasting a step down from machine learning work?", "acceptedAnswer": {"@type": "Answer", "text": "No - it directly changes financial outcomes and senior forecasting specialists are scarce and well paid."}},
     {"@type": "Question", "name": "Why can't I find forecasting jobs under that name?", "acceptedAnswer": {"@type": "Answer", "text": "They are titled demand planner, supply chain analyst, capacity analyst or business analyst."}},
-    {"@type": "Question", "name": "Do I need deep learning for forecasting jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely — strong baselines, features, hierarchy handling and proper evaluation matter more for most employers."}},
+    {"@type": "Question", "name": "Do I need deep learning for forecasting jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely - strong baselines, features, hierarchy handling and proper evaluation matter more for most employers."}},
     {"@type": "Question", "name": "What makes a forecasting portfolio project convincing?", "acceptedAnswer": {"@type": "Answer", "text": "A rolling backtest, a naive benchmark, probabilistic output and a decision rule tied to a business metric."}},
-    {"@type": "Question", "name": "Can forecasting skills transfer between industries?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the methods transfer readily between retail, energy, healthcare and logistics."}}
+    {"@type": "Question", "name": "Can forecasting skills transfer between industries?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the methods transfer readily between retail, energy, healthcare and logistics."}}
   ]
 }
 </script>

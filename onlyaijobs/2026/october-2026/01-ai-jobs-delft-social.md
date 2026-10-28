@@ -1,4 +1,4 @@
-💡 Delft's AI market doesn't look like Amsterdam's. TU Delft, Deltares, TNO and the YES!Delft incubator shape a job market built around robotics, aerospace and water engineering — where a wrong prediction means a flood risk or a safety margin, not a bad recommendation.
+💡 Delft's AI market doesn't look like Amsterdam's. TU Delft, Deltares, TNO and the YES!Delft incubator shape a job market built around robotics, aerospace and water engineering - where a wrong prediction means a flood risk or a safety margin, not a bad recommendation.
 
 🔬 Much of this work hides behind titles like "Systems Engineer" or "Water Management Researcher." Surrogate models, data assimilation and uncertainty quantification matter more here than raw accuracy.
 

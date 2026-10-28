@@ -32,11 +32,11 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Elke hostingoptie heeft zijn eigen fans die zweren dat het de enige juiste keuze is. In de realiteit passen Vercel, Railway en Fly.io elk uitstekend bij een ander type applicatie-architectuur. De beste keuze hangt af van uw specifieke AI-applicatie — en niet van welk platform deze maand toevallig trending is onder ontwikkelaars.
+Elke hostingoptie heeft zijn eigen fans die zweren dat het de enige juiste keuze is. In de realiteit passen Vercel, Railway en Fly.io elk uitstekend bij een ander type applicatie-architectuur. De beste keuze hangt af van uw specifieke AI-applicatie - en niet van welk platform deze maand toevallig trending is onder ontwikkelaars.
 
 ## Vercel: De Natuurlijke Standaard voor Next.js AI-Apps
 
-Vercel is gebouwd door de makers van Next.js. Omdat de meeste AI-tools (Lovable, Bolt, v0) standaard Next.js-applicaties genereren, is Vercel vaak de weg van de minste weerstand — diepe integratie, uitstekende ondersteuning voor edge-uitrol en een royaal gratis tarief voor vroege validatie.
+Vercel is gebouwd door de makers van Next.js. Omdat de meeste AI-tools (Lovable, Bolt, v0) standaard Next.js-applicaties genereren, is Vercel vaak de weg van de minste weerstand - diepe integratie, uitstekende ondersteuning voor edge-uitrol en een royaal gratis tarief voor vroege validatie.
 
 **Het beste voor:** Standaard Next.js AI-apps zonder complexe achtergrondtaken, oprichters die de eenvoudigste uitrol willen en apps die profiteren van snelle CDN-distributie.
 
@@ -44,7 +44,7 @@ Vercel is gebouwd door de makers van Next.js. Omdat de meeste AI-tools (Lovable,
 
 ## Railway: Eenvoud voor Full-Stack Apps met Echte Backend-Behoeften
 
-Railway biedt een overzichtelijke uitrol voor applicaties met traditionele backend-eisen — een permanente database, achtergrondjobs (background job processing) of een backend die niet in Vercel's serverless model past.
+Railway biedt een overzichtelijke uitrol voor applicaties met traditionele backend-eisen - een permanente database, achtergrondjobs (background job processing) of een backend die niet in Vercel's serverless model past.
 
 **Het beste voor:** AI-apps met achtergrondtaken (batch AI-jobs, ingeplande taken), applicaties die een geïntegreerde SQL-database nodig hebben, en oprichters die Heroku-achtige eenvoud zoeken zonder Heroku's specifieke beperkingen.
 
@@ -52,7 +52,7 @@ Railway biedt een overzichtelijke uitrol voor applicaties met traditionele backe
 
 ## Fly.io: Controle en Globale Distributie voor Complexe Eisen
 
-Fly.io biedt meer gedetailleerde controle over uw infrastructuur — het draait echte containers dicht bij uw gebruikers op meerdere locaties wereldwijd.
+Fly.io biedt meer gedetailleerde controle over uw infrastructuur - het draait echte containers dicht bij uw gebruikers op meerdere locaties wereldwijd.
 
 **Het beste voor:** AI-apps met specifieke lage-latency eisen in meerdere globale regio's en complexe infrastructuurbehoeften.
 
@@ -79,7 +79,7 @@ Kiezen tussen Vercel, Railway en Fly.io regelt waar uw applicatielogica draait, 
 - **Vercel + Supabase of Neon**: Supabase en Neon bieden connection pooling (pgBouncer) die speciaal is ontworpen om de vele losse verbindingen van serverless functies op te vangen.
 - **Railway + Railway Postgres**: Houdt compute en database fysiek op hetzelfde platform, wat netwerk-latency minimaliseert.
 
-Pas op voor de fout waarbij serverless functies rechtstreeks zonder connection pooler op een traditionele database worden aangesloten — dit kan bij gelijktijdig gebruik leiden tot het uitputten van het maximaal aantal databaseverbindingen.
+Pas op voor de fout waarbij serverless functies rechtstreeks zonder connection pooler op een traditionele database worden aangesloten - dit kan bij gelijktijdig gebruik leiden tot het uitputten van het maximaal aantal databaseverbindingen.
 
 ### Belangrijkste inzichten
 
@@ -140,16 +140,16 @@ Een beproefd patroon is een hybride architectuur: host de UI en frontend API op 
 
 ### Een AI-native oprichter in actie: Migreren van een verkeerd gekozen hostingplatform
 
-Liv, organisator van fotosafari's in Drachten, bouwde NatuurGids — een AI-tool die persoonlijke wildspot-adviezen genereert — met behulp van Lovable en rolde dit standaard uit op Vercel. NatuurGids bevatte een achtergrondtaak die elke nacht grote datasets met wildwaarnemingen verwerkte en kruislingse analyses uitvoerde. Deze nachtelijke taak liep voortdurend vast op Vercel's tijdlimieten voor serverless functies.
+Liv, organisator van fotosafari's in Drachten, bouwde NatuurGids - een AI-tool die persoonlijke wildspot-adviezen genereert - met behulp van Lovable en rolde dit standaard uit op Vercel. NatuurGids bevatte een achtergrondtaak die elke nacht grote datasets met wildwaarnemingen verwerkte en kruislingse analyses uitvoerde. Deze nachtelijke taak liep voortdurend vast op Vercel's tijdlimieten voor serverless functies.
 
 Liv nam contact op met LaunchStudio. Het team van Manifera analyseerde de architectuur en implementeerde een hybride aanpak: de frontend en normale API-routes bleven op Vercel, terwijl uitsluitend de nachtelijke achtergrondtaak naar Railway werd gemigreerd.
 
 **Resultaat:** De nachtelijke taak draaide vanaf dat moment 100% betrouwbaar op Railway zonder tijdlimieten, terwijl de gebruikersinterface ongestoord op Vercel bleef draaien.
 
-> *"Ik dacht dat ik alles naar een nieuw platform moest verhuizen. LaunchStudio legde uit dat we alleen dat ene onderdeel hoefden te verplaatsen dat niet paste — de nachtelijke job — en de rest lieten staan."*
-> — **Liv Dijkema, Oprichter, NatuurGids (Drachten)**
+> *"Ik dacht dat ik alles naar een nieuw platform moest verhuizen. LaunchStudio legde uit dat we alleen dat ene onderdeel hoefden te verplaatsen dat niet paste - de nachtelijke job - en de rest lieten staan."*
+> - **Liv Dijkema, Oprichter, NatuurGids (Drachten)**
 
-**Kosten & Doorlooptijd:** € 1.850 (hosting-architectuur herstel) — voltooid in 7 werkdagen.
+**Kosten & Doorlooptijd:** € 1.850 (hosting-architectuur herstel) - voltooid in 7 werkdagen.
 
 ---
 

@@ -96,9 +96,9 @@ Non-EU candidates usually obtain a Talent Passport, which includes categories fo
 
 ## How OnlyAIJobs Supports Paris Employers
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement — every vacancy competes on its content. Candidates browse without an account.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and there is no paid placement - every vacancy competes on its content. Candidates browse without an account.
 
-To be transparent, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For hiring data scientists in Paris, use it alongside French job boards, school career services, APEC, community events and referrals — particularly if you want to reach data professionals in the Netherlands and Belgium who might consider Paris. Your first vacancy is free via info@onlyaijobs.eu.
+To be transparent, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For hiring data scientists in Paris, use it alongside French job boards, school career services, APEC, community events and referrals - particularly if you want to reach data professionals in the Netherlands and Belgium who might consider Paris. Your first vacancy is free via info@onlyaijobs.eu.
 
 ## Designing an Interview Process for Paris Candidates
 
@@ -116,7 +116,7 @@ Not every employer can match the offers of foundation model companies or big-tec
 
 ## Housing and Location
 
-Paris housing is expensive, and many candidates live in the suburbs. Publishing the exact office address and transport connections — metro, RER, Transilien — helps candidates assess commutes. Hybrid policies make longer commutes acceptable. For relocating candidates, support with temporary accommodation and the documentation French landlords require makes a strong difference.
+Paris housing is expensive, and many candidates live in the suburbs. Publishing the exact office address and transport connections - metro, RER, Transilien - helps candidates assess commutes. Hybrid policies make longer commutes acceptable. For relocating candidates, support with temporary accommodation and the documentation French landlords require makes a strong difference.
 
 ## Retention
 
@@ -144,7 +144,7 @@ Build long-term relationships with schools through alternance, internships and C
 
 ## Designing the Right Role
 
-Before writing a vacancy, clarify which profile you actually need. Paris employers often combine several roles in one posting — data analyst, data scientist, ML engineer, data engineer and AI product manager — which confuses candidates and slows hiring. A data scientist focused on experimentation and modelling for business decisions needs different skills from an ML engineer who deploys and monitors models, a data engineer who builds pipelines or an AI engineer who builds applications with language models. In regulated sectors such as banking and insurance, model validation and governance roles add further distinctions. Define the core responsibilities, the level of seniority and the skills that are genuinely required versus nice to have. A focused role attracts better-matched candidates, shortens interviews and makes onboarding easier. If you need someone to cover several areas in a small team, say so honestly and describe the priorities for the first year.
+Before writing a vacancy, clarify which profile you actually need. Paris employers often combine several roles in one posting - data analyst, data scientist, ML engineer, data engineer and AI product manager - which confuses candidates and slows hiring. A data scientist focused on experimentation and modelling for business decisions needs different skills from an ML engineer who deploys and monitors models, a data engineer who builds pipelines or an AI engineer who builds applications with language models. In regulated sectors such as banking and insurance, model validation and governance roles add further distinctions. Define the core responsibilities, the level of seniority and the skills that are genuinely required versus nice to have. A focused role attracts better-matched candidates, shortens interviews and makes onboarding easier. If you need someone to cover several areas in a small team, say so honestly and describe the priorities for the first year.
 
 ## Sourcing Beyond Job Boards
 
@@ -156,7 +156,7 @@ Startups at Station F and elsewhere should be transparent about funding, runway 
 
 ## Onboarding Data Scientists
 
-The first weeks determine whether a new hire stays. Prepare hardware, accounts, data access and cloud permissions before day one — in large French organisations, access approvals can take weeks if not started early. Assign a buddy, provide a map of data sources and systems and give a first project that reaches a real outcome within a month. For international hires, help with the carte Vitale, bank account and residence formalities. Schedule structured check-ins after one and three months to discuss expectations and adjust scope where needed. For alternance students, align the company's projects with the school calendar and assign a dedicated tutor, as required by the contract, who has time to mentor them properly. A well-organised onboarding is one of the most effective and least expensive retention tools available, and it signals to candidates that the company takes their development seriously — a message that spreads quickly through school and alumni networks in Paris.
+The first weeks determine whether a new hire stays. Prepare hardware, accounts, data access and cloud permissions before day one - in large French organisations, access approvals can take weeks if not started early. Assign a buddy, provide a map of data sources and systems and give a first project that reaches a real outcome within a month. For international hires, help with the carte Vitale, bank account and residence formalities. Schedule structured check-ins after one and three months to discuss expectations and adjust scope where needed. For alternance students, align the company's projects with the school calendar and assign a dedicated tutor, as required by the contract, who has time to mentor them properly. A well-organised onboarding is one of the most effective and least expensive retention tools available, and it signals to candidates that the company takes their development seriously - a message that spreads quickly through school and alumni networks in Paris.
 
 ## Where Paris Employers Sit
 
@@ -180,7 +180,7 @@ Benchmark salaries regularly against the Paris market, including AI labs and big
 
 A French retail group wanted to build an ML team for demand forecasting and personalisation. Its first postings, written in generic terms and without salary information, attracted few strong applicants.
 
-The hiring manager rewrote the vacancies with specific problems, the data platform, a salary range, English and French as working languages, two remote days per week and a four-step process. The company also opened alternance positions with two master's programmes and launched a CIFRE PhD on forecasting. Within six months, the team had two experienced data scientists, one ML engineer and two alternance students — both of whom accepted permanent offers after graduating.
+The hiring manager rewrote the vacancies with specific problems, the data platform, a salary range, English and French as working languages, two remote days per week and a four-step process. The company also opened alternance positions with two master's programmes and launched a CIFRE PhD on forecasting. Within six months, the team had two experienced data scientists, one ML engineer and two alternance students - both of whom accepted permanent offers after graduating.
 
 ## Key Takeaways
 

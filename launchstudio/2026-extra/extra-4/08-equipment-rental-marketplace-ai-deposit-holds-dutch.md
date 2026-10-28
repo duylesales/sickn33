@@ -49,7 +49,7 @@ Een borgstroom die het echte gebruik overleeft heeft vier dingen nodig die samen
 
 Als u wilt zien wat dit soort herstelling doorgaans kost voordat u zich aan iets verbindt, geeft [onze prijscalculator](https://launchstudio.eu/nl/#calculator) een schatting met vaste omvang in een paar minuten. Voor een diepere blik op hoe Manifera marktplaats- en fintech-gerelateerde projecten op enterprise-schaal benadert, bekijk ons [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/).
 
-## Gedeeltelijke vastlegging is een eenrichtingsdeur — behandel het als zodanig
+## Gedeeltelijke vastlegging is een eenrichtingsdeur - behandel het als zodanig
 
 Een gecentraliseerde vrijgavefunctie en een automatische time-out lossen het gebruikelijke geval op: alles is in orde, en de inhouding moet gewoon vervallen. Het moeilijkere geval is een gedeeltelijke vastlegging, waarbij de eigenaar een deel van de borg claimt vanwege schade – en dat gedraagt zich op geen enkele manier zoals een vrijgave. Het vrijgeven van een inhouding laat een autorisatie simpelweg vervallen; er werd daadwerkelijk nooit iets ingehouden. Het vastleggen van een deel ervan verplaatst echt geld, en het achteraf terugdraaien daarvan betekent het uitvoeren van een terugbetaling, met zijn eigen vertraging en soms zijn eigen kosten, en geen eenvoudige wijziging van een statusveld. Met AI gegenereerde marktplaatscode die een "vrijgave"-knop toevoegde, hergebruikt vaak dezelfde functie voor "vastleggen", waarbij ze worden behandeld als dezelfde actie met een ander getal erin, zonder enige beoordelingsstap toe te voegen voordat een actie die oprecht aanzienlijk moeilijker ongedaan te maken is daadwerkelijk afgaat.
 
@@ -78,9 +78,9 @@ LaunchStudio's ingenieurs spoorden de ontkoppeling op, herbouwden de bevestiging
 **Resultaat:** Borgvrijgaves gingen van een onvoorspelbare wachttijd van meerdere dagen naar bevestigd binnen enkele minuten na retour, met automatisch herstel als een van beide partijen nooit op bevestigen klikte.
 
 > *"Ik had de boeking en de betaling getest. Ik heb er nooit aan gedacht om te testen wat er gebeurt drie dagen nadat iemand op 'geretourneerd' klikt. Dat is het onderdeel dat daadwerkelijk brak."*
-> — **Sven Bakker, Oprichter, GereedschapDeel (Haarlem)**
+> - **Sven Bakker, Oprichter, GereedschapDeel (Haarlem)**
 
-**Kosten en tijdlijn:** € 650 (herbouw van borgvrijgavelogica, Stripe webhook-synchronisatie, automatische vrijgave-timeout) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 650 (herbouw van borgvrijgavelogica, Stripe webhook-synchronisatie, automatische vrijgave-timeout) - voltooid in 3 werkdagen.
 
 ---
 

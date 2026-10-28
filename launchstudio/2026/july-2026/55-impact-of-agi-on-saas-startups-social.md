@@ -1,4 +1,4 @@
-🔥 Greyson built a prototype using **Bolt** — greyson, a startup founder, used **bolt** to build a dynamic business forecaster prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Greyson built a prototype using **Bolt** - greyson, a startup founder, used **bolt** to build a dynamic business forecaster prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Greyson's application achieved production readiness: Greyson guaranteed 100% uptime for forecasting models during API maintenance windows. (€2,200 (Future-Proofing Package) — production-ready and deployed in 7 business days.). 🚀
+Greyson's application achieved production readiness: Greyson guaranteed 100% uptime for forecasting models during API maintenance windows. (€2,200 (Future-Proofing Package) - production-ready and deployed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/impact-of-agi-on-saas-startups
 

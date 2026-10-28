@@ -60,7 +60,7 @@ Voor een typische Bolt-applicatie van twintig tot veertig componenten is dit é�
 
 Leg het werk aan functies niet een maand stil. Migreer in fasen.
 
-Begin met de publieke pagina's — marketing, blog, alles wat moet ranken — als een nieuwe applicatie op hetzelfde domein, waarbij de bestaande applicatie nog alles achter de login serveert. Dat levert direct het belangrijkste voordeel op en raakt niets waar klanten van afhangen.
+Begin met de publieke pagina's - marketing, blog, alles wat moet ranken - als een nieuwe applicatie op hetzelfde domein, waarbij de bestaande applicatie nog alles achter de login serveert. Dat levert direct het belangrijkste voordeel op en raakt niets waar klanten van afhangen.
 
 Verplaats daarna de schermen van de applicatie één voor één, te beginnen met de eenvoudigste en de minst gebruikte, en controleer elk voordat u aan het volgende begint. Beide applicaties delen de hele tijd dezelfde database, dus er is helemaal geen datamigratie.
 
@@ -68,7 +68,7 @@ Daarna authenticatie, de stap met zichtbaar effect voor gebruikers, omdat sessie
 
 Verwijder daarna de oude applicatie, zodra er niets meer naartoe routeert.
 
-In elke fase werkt het product. Loopt de migratie vast — en dat gebeurt, wanneer er iets urgenters opduikt — dan zit u in een werkende toestand in plaats van halverwege een herschrijving.
+In elke fase werkt het product. Loopt de migratie vast - en dat gebeurt, wanneer er iets urgenters opduikt - dan zit u in een werkende toestand in plaats van halverwege een herschrijving.
 
 ## De Middenweg Die het Overwegen Waard Is
 
@@ -82,7 +82,7 @@ Dat is een dag werk in plaats van drie weken, het pakt de meest voorkomende echt
 
 Eén gevolg van migreren wordt zelden genoemd en doet ertoe voor producten die zo zijn gebouwd: de tools gedragen zich anders tegen een volwaardig framework dan tegen de applicatie die ze zelf genereerden.
 
-Bolt en vergelijkbare tools zijn op hun best bij het vanaf nul maken van een op zichzelf staande applicatie. Tegen een gevestigde frameworkcodebase met servercomponenten, routeconventies en eigen patronen past een algemene assistent zoals Cursor of Claude Code beter — die leest de bestaande code, volgt de afspraken die hij vindt, en maakt afgebakende wijzigingen.
+Bolt en vergelijkbare tools zijn op hun best bij het vanaf nul maken van een op zichzelf staande applicatie. Tegen een gevestigde frameworkcodebase met servercomponenten, routeconventies en eigen patronen past een algemene assistent zoals Cursor of Claude Code beter - die leest de bestaande code, volgt de afspraken die hij vindt, en maakt afgebakende wijzigingen.
 
 Een migratie is dus meestal ook een verandering in hoe u werkt: van functies beschrijven aan een bouwer die ze genereert, naar een codebase bewerken met een assistent die helpt. Dat is een echte verschuiving, en oprichters die geen developer zijn, vinden die soms moeilijker in plaats van makkelijker, en dat is het weten waard voordat u zich vastlegt.
 
@@ -94,7 +94,7 @@ Spreekt geen van beide u aan, dan is dat op zichzelf een argument voor de midden
 
 Is een migratie echt gerechtvaardigd, dan doet de keuze tussen de serieuze opties er minder toe dan oprichters verwachten, en de beslissing kan in een middag worden genomen.
 
-**Next.js** is de standaard voor React-applicaties, en dat is wat Bolt oplevert, met het grootste ecosysteem en het meeste materiaal waarvan codeerassistenten hebben geleerd. Dat laatste is niet onbelangrijk in een product dat zo is gebouwd — een assistent schrijft betere Next.js dan bijna wat dan ook, simpelweg omdat er meer van bestaat.
+**Next.js** is de standaard voor React-applicaties, en dat is wat Bolt oplevert, met het grootste ecosysteem en het meeste materiaal waarvan codeerassistenten hebben geleerd. Dat laatste is niet onbelangrijk in een product dat zo is gebouwd - een assistent schrijft betere Next.js dan bijna wat dan ook, simpelweg omdat er meer van bestaat.
 
 **Remix** heeft in verschillende opzichten een schoner datamodel en een kleinere gemeenschap.
 
@@ -102,7 +102,7 @@ Is een migratie echt gerechtvaardigd, dan doet de keuze tussen de serieuze optie
 
 **SvelteKit** en andere zijn prima en betekenen dat u uw React-componenten weggooit, en dat is het meeste van wat meegaat.
 
-Voor een Bolt-applicatie met een echte reden om te verhuizen, is Next.js de verstandige standaard en ligt de bewijslast bij elk alternatief. De ene echte splitsing is Astro voor een product dat grotendeels content is — en in dat geval bereikt de optie van een dag, een aparte statische marketingsite, hetzelfde zonder de applicatie aan te raken.
+Voor een Bolt-applicatie met een echte reden om te verhuizen, is Next.js de verstandige standaard en ligt de bewijslast bij elk alternatief. De ene echte splitsing is Astro voor een product dat grotendeels content is - en in dat geval bereikt de optie van een dag, een aparte statische marketingsite, hetzelfde zonder de applicatie aan te raken.
 
 ## Stel een Budget en een Stopregel
 
@@ -110,7 +110,7 @@ Migraties van deze soort hebben een kenmerkende mislukking: ze duren twee keer z
 
 Twee beschermingen, vooraf met uzelf afgesproken.
 
-**Een tijdsbudget met een evaluatiemoment.** Drie weken, met een eerlijke beoordeling aan het eind van week twee. Zijn de publieke pagina's klaar en gaan de schermen van de applicatie traag, dan is daar stoppen een legitieme uitkomst — u hebt het voordeel dat het werk rechtvaardigde, en de rest kan voor onbepaalde tijd wachten.
+**Een tijdsbudget met een evaluatiemoment.** Drie weken, met een eerlijke beoordeling aan het eind van week twee. Zijn de publieke pagina's klaar en gaan de schermen van de applicatie traag, dan is daar stoppen een legitieme uitkomst - u hebt het voordeel dat het werk rechtvaardigde, en de rest kan voor onbepaalde tijd wachten.
 
 **Een regel dat het product blijft opleveren.** Minstens één zichtbare verbetering voor klanten per week tijdens de migratie, hoe klein ook. Het houdt u in contact met de mensen die u betalen en voorkomt dat u stilletjes een kwartaal aan infrastructuur besteedt.
 
@@ -120,7 +120,7 @@ De gefaseerde aanpak hierboven maakt beide mogelijk, omdat er geen punt is waaro
 
 Voor een product met een echte reden om te migreren, kost dit doorgaans één tot drie weken: de reden specifiek benoemd en getoetst aan de alternatieven, publieke pagina's eerst verplaatst als aparte applicatie op hetzelfde domein, schermen één voor één gemigreerd van minst naar meest gebruikt met beide applicaties op dezelfde database, het ophalen van data naar de server verplaatst, omgevingsvariabelen hernoemd met de bundel gecontroleerd op geheimen, authenticatie gemigreerd naar een cookiegebaseerd patroon dat de server kent, op een rustig uur met aankondiging, de oude applicatie opgeheven zodra er niets meer naartoe routeert, en het geheel in elke fase werkend gehouden.
 
-LaunchStudio doet deze migratie, en vertelt oprichters ook wanneer het alternatief van een dag volstaat — en dat is vaak zo. De engineers zijn van Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet deze migratie, en vertelt oprichters ook wanneer het alternatief van een dag volstaat - en dat is vaak zo. De engineers zijn van Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vertel ons wat u probeert op te lossen](https://launchstudio.eu/nl/#contact) en wij vertellen u of een migratie de manier is om het op te lossen.
 
@@ -132,16 +132,16 @@ Ties Grootveld bouwde Aanbestedingsradar met Bolt: een dienst die Nederlandse pu
 
 Hem was herhaaldelijk verteld dat hij naar Next.js moest. Zijn genoemde redenen waren dat zijn marketingpagina's niet rankten en dat het product traag aanvoelde.
 
-De beoordeling haalde de twee uit elkaar. De marketingpagina's hadden echt serverrendering nodig — ze waren een single-page application die een leeg document serveerde, en daarom was geen van zijn elf artikelen geïndexeerd. De traagheid van de applicatie was iets heel anders: de aanbestedingslijst haalde elke rij op waarmee een bedrijf ooit was gematcht en pagineerde in de browser, wat voor zijn grootste abonnee 41.000 rijen waren.
+De beoordeling haalde de twee uit elkaar. De marketingpagina's hadden echt serverrendering nodig - ze waren een single-page application die een leeg document serveerde, en daarom was geen van zijn elf artikelen geïndexeerd. De traagheid van de applicatie was iets heel anders: de aanbestedingslijst haalde elke rij op waarmee een bedrijf ooit was gematcht en pagineerde in de browser, wat voor zijn grootste abonnee 41.000 rijen waren.
 
 Eén werkdag, geen drie weken: de marketingsite en blog opnieuw gebouwd als statisch gegenereerde applicatie die echte HTML serveert, gedeployd in de root van het domein, met de bestaande Bolt-applicatie verplaatst naar `/app` en uitgesloten van indexering; canonieke URL's en een sitemap toegevoegd; de aanbestedingslijst omgezet naar cursorpaginering met een index op de matchtabel, wat de lijst van de grootste abonnee van 9 seconden naar 210 milliseconden bracht; en een notitie geschreven dat een volledige frameworkmigratie beschikbaar blijft als logica op de server dat ooit rechtvaardigt.
 
 **Resultaat:** negen van de elf artikelen werden binnen een maand geïndexeerd en voor het eerst kwamen er organische aanvragen binnen. Het snelheidsprobleem van de applicatie, dat de migratie niet zou hebben opgelost, werd opgelost met een index en een aangepaste query. Ties heeft de applicatie niet gemigreerd en, twee jaar later, is dat ook niet nodig geweest.
 
 > *"Iedereen zei me dat het framework het probleem was. De marketingpagina's moesten inderdaad worden opgelost. Het trage scherm was een query die eenenveertigduizend rijen ophaalde, en die zou in Next.js net zo traag zijn geweest."*
-> — **Ties Grootveld, Oprichter, Aanbestedingsradar (Den Haag)**
+> - **Ties Grootveld, Oprichter, Aanbestedingsradar (Den Haag)**
 
-**Kosten & Doorlooptijd:** €2.400 (statische marketingapplicatie met op de server opgebouwde HTML, verplaatsen van de applicatie en uitsluiten van indexering, canonieke URL's en sitemap, cursorpaginering met indexering, gedocumenteerde migratieoptie) — afgerond in 1 werkdag.
+**Kosten & Doorlooptijd:** €2.400 (statische marketingapplicatie met op de server opgebouwde HTML, verplaatsen van de applicatie en uitsluiten van indexering, canonieke URL's en sitemap, cursorpaginering met indexering, gedocumenteerde migratieoptie) - afgerond in 1 werkdag.
 
 ## Veelgestelde vragen
 
@@ -175,7 +175,7 @@ Vaak wel. Een aparte statisch gegenereerde marketingsite in de root van het dome
       "name": "Wanneer moet een Bolt-app naar een volwaardig framework?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wanneer publieke pagina's moeten ranken, substantiële logica op de server nodig is, of data op de server moet worden opgehaald — niet om professionaliteit of onverklaarde traagheid."
+        "text": "Wanneer publieke pagina's moeten ranken, substantiële logica op de server nodig is, of data op de server moet worden opgehaald - niet om professionaliteit of onverklaarde traagheid."
       }
     },
     {
@@ -199,7 +199,7 @@ Vaak wel. Een aparte statisch gegenereerde marketingsite in de root van het dome
       "name": "Kan de migratie zonder downtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — eerst publieke pagina's, daarna schermen één voor één op dezelfde database, met authenticatie als laatste."
+        "text": "Ja - eerst publieke pagina's, daarna schermen één voor één op dezelfde database, met authenticatie als laatste."
       }
     },
     {

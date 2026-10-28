@@ -1,6 +1,6 @@
 📌 "Hadden we dit drie weken geleden niet al besloten?"
 
-De duurste zin in een softwareteam. Want het antwoord is bijna altijd ja — in een Slack-thread die niemand meer kan vinden, met argumenten die iedereen is vergeten.
+De duurste zin in een softwareteam. Want het antwoord is bijna altijd ja - in een Slack-thread die niemand meer kan vinden, met argumenten die iedereen is vergeten.
 
 De oplossing is geen beter geheugen, maar een simpel Besluitenlogboek (Decision Log).
 

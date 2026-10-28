@@ -21,13 +21,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-If you have read anything about taking AI code to production, you have seen one word appear again and again next to payments: webhook. "Confirm payments via verified webhooks." "The webhook handler isn't idempotent." For non-technical founders, it sounds like jargon. It is actually one of the simplest and most important ideas in running an app that takes money — and misunderstanding it is behind many of the payment problems in AI-built apps.
+If you have read anything about taking AI code to production, you have seen one word appear again and again next to payments: webhook. "Confirm payments via verified webhooks." "The webhook handler isn't idempotent." For non-technical founders, it sounds like jargon. It is actually one of the simplest and most important ideas in running an app that takes money - and misunderstanding it is behind many of the payment problems in AI-built apps.
 
 ## A Webhook Is a Phone Call Back
 
 Imagine ordering something by phone and being told: "We'll call you back when it's ready." You don't keep calling to ask; they call you.
 
-A webhook is exactly that for software. Your app gives a service — Mollie, Stripe, a shipping company — an address, and says: "When something happens, send a message here." When the payment succeeds, fails, is refunded or disputed, the payment provider sends a message to that address on your server.
+A webhook is exactly that for software. Your app gives a service - Mollie, Stripe, a shipping company - an address, and says: "When something happens, send a message here." When the payment succeeds, fails, is refunded or disputed, the payment provider sends a message to that address on your server.
 
 ## Why Payments Need a Call Back Before AI Code to Production
 
@@ -37,7 +37,7 @@ Here is what happens when a customer pays with iDEAL or a card:
 2. The customer pays in their banking app or on the payment page.
 3. The customer is sent back to your "thank you" page.
 
-The tempting shortcut — and the one AI tools often generate — is to treat step 3 as proof of payment: "they reached the thank-you page, so they paid." But step 3 is unreliable:
+The tempting shortcut - and the one AI tools often generate - is to treat step 3 as proof of payment: "they reached the thank-you page, so they paid." But step 3 is unreliable:
 
 - Customers close the banking app and never come back.
 - Connections drop on mobile.
@@ -55,7 +55,7 @@ The payment provider's call back (the webhook) happens regardless of what the cu
 
 ## What a Correct Webhook Setup Looks Like
 
-**Verify the caller.** Anyone could send a fake "payment succeeded" message to your webhook address. A correct setup checks that the message really came from the provider — Stripe signs its webhooks; with Mollie, the app looks up the payment status directly through the API after being notified.
+**Verify the caller.** Anyone could send a fake "payment succeeded" message to your webhook address. A correct setup checks that the message really came from the provider - Stripe signs its webhooks; with Mollie, the app looks up the payment status directly through the API after being notified.
 
 **Handle repeats.** Providers may send the same notification more than once. Your app must recognise repeats and not, for example, send two confirmation emails or add two lesson credits. Engineers call this idempotency.
 
@@ -69,7 +69,7 @@ The payment provider's call back (the webhook) happens regardless of what the cu
 
 ## The Thank-You Page Still Matters
 
-The thank-you page is still useful — for showing the customer a friendly message. It simply should not be the thing that decides whether they paid. A good pattern: the page shows "we're confirming your payment" and updates when the webhook has been processed.
+The thank-you page is still useful - for showing the customer a friendly message. It simply should not be the thing that decides whether they paid. A good pattern: the page shows "we're confirming your payment" and updates when the webhook has been processed.
 
 ## Webhooks Beyond Payments
 
@@ -102,7 +102,7 @@ export async function POST(req: Request) {
 }
 ```
 
-Stripe's approach differs — it signs each event, and the handler verifies the signature with the webhook secret before processing — but the principles are identical: verify, act idempotently, respond quickly.
+Stripe's approach differs - it signs each event, and the handler verifies the signature with the webhook secret before processing - but the principles are identical: verify, act idempotently, respond quickly.
 
 ## Payment States You Must Handle
 
@@ -124,7 +124,7 @@ Payment providers offer test modes and tools to send test events. Before launch,
 
 ## Monitoring Webhook Health
 
-Webhooks can fail silently: your endpoint returns errors, times out or is misconfigured after a domain change. Monitor delivery in the provider's dashboard, log every webhook received with its outcome, alert when failures exceed a threshold and reconcile daily — compare payments marked paid in the provider with orders marked paid in your database. Any difference points to a webhook problem before customers notice.
+Webhooks can fail silently: your endpoint returns errors, times out or is misconfigured after a domain change. Monitor delivery in the provider's dashboard, log every webhook received with its outcome, alert when failures exceed a threshold and reconcile daily - compare payments marked paid in the provider with orders marked paid in your database. Any difference points to a webhook problem before customers notice.
 
 ## The Same Pattern for Other Services
 
@@ -132,11 +132,11 @@ The same discipline applies to other services: e-signature providers notifying t
 
 ## Environment Separation for Webhooks
 
-Each environment needs its own webhook configuration: development and staging point to their own endpoints with test-mode keys; production points to the production endpoint with live keys. Mixing them causes some of the most confusing bugs — staging orders marked paid by production events, or production webhooks lost to a staging URL. Record which webhook URL belongs to which environment in your documentation.
+Each environment needs its own webhook configuration: development and staging point to their own endpoints with test-mode keys; production points to the production endpoint with live keys. Mixing them causes some of the most confusing bugs - staging orders marked paid by production events, or production webhooks lost to a staging URL. Record which webhook URL belongs to which environment in your documentation.
 
 ## When Things Go Wrong: Reconciliation
 
-If webhooks failed for a period — for example after a deployment broke the endpoint — use the provider's API to list payments in that window and reconcile them with your orders. Mark missing confirmations, send delayed emails and release or reassign capacity as needed. Keep a reconciliation script ready; it turns a stressful incident into a routine correction.
+If webhooks failed for a period - for example after a deployment broke the endpoint - use the provider's API to list payments in that window and reconcile them with your orders. Mark missing confirmations, send delayed emails and release or reassign capacity as needed. Keep a reconciliation script ready; it turns a stressful incident into a routine correction.
 
 ## Subscriptions Add More Events
 
@@ -152,7 +152,7 @@ For non-technical team members handling customer questions, a simple explanation
 
 ## A Webhook Readiness Checklist
 
-Before launch: webhook URLs configured per environment; verification of every event (signature or API lookup); idempotent processing keyed on payment or event ID; all payment and subscription states mapped to actions; heavy work moved to background jobs; logging and alerting on failures; daily reconciliation between provider and database; tests for closed tabs, duplicates, delays, refunds and failures; and a reconciliation script ready for incidents. With these in place, your app knows about every payment exactly once — and customers never have to prove they paid.
+Before launch: webhook URLs configured per environment; verification of every event (signature or API lookup); idempotent processing keyed on payment or event ID; all payment and subscription states mapped to actions; heavy work moved to background jobs; logging and alerting on failures; daily reconciliation between provider and database; tests for closed tabs, duplicates, delays, refunds and failures; and a reconciliation script ready for incidents. With these in place, your app knows about every payment exactly once - and customers never have to prove they paid.
 
 ## First Step
 
@@ -160,7 +160,7 @@ Find the code that marks an order as paid. If it runs when the customer reaches 
 
 ## Why This Matters to Customers
 
-Customers never see webhooks, but they feel their absence immediately: a booking that does not appear after paying, a double charge, access that continues after cancelling or disappears despite a successful renewal. Each of these creates a support conversation, a refund or a lost customer. A correctly implemented webhook flow makes payments boring in the best sense — they simply work, every time, whether the customer returns to your site or closes their banking app halfway. For founders, that reliability is what allows marketing and growth to proceed without a constant background worry about whether the money matches the orders.
+Customers never see webhooks, but they feel their absence immediately: a booking that does not appear after paying, a double charge, access that continues after cancelling or disappears despite a successful renewal. Each of these creates a support conversation, a refund or a lost customer. A correctly implemented webhook flow makes payments boring in the best sense - they simply work, every time, whether the customer returns to your site or closes their banking app halfway. For founders, that reliability is what allows marketing and growth to proceed without a constant background worry about whether the money matches the orders.
 
 ## Remember
 
@@ -176,24 +176,24 @@ Payment confirmation through verified webhooks is part of nearly every LaunchStu
 
 ### An AI-Native Founder in Action: A Cooking Workshop Business That Couldn't Find Its Payments
 
-Rick Jonker, a chef who runs cooking workshops in Hattem, built Pannenklaar in Lovable: guests book a workshop seat, pay through Mollie, and receive a confirmation with the menu and ingredients list. Workshops sold well — sometimes too well.
+Rick Jonker, a chef who runs cooking workshops in Hattem, built Pannenklaar in Lovable: guests book a workshop seat, pay through Mollie, and receive a confirmation with the menu and ingredients list. Workshops sold well - sometimes too well.
 
-Every week brought a few puzzles. Guests arrived with a bank statement showing payment but no booking in the system. Other bookings were marked paid but had no matching payment in Mollie — some from guests who had closed the tab and come back through the thank-you link in their history. Refunds made in the Mollie dashboard never freed up the seat, so workshops showed as full when they were not. Rick had no idea what a webhook was; the app confirmed bookings when guests reached the thank-you page.
+Every week brought a few puzzles. Guests arrived with a bank statement showing payment but no booking in the system. Other bookings were marked paid but had no matching payment in Mollie - some from guests who had closed the tab and come back through the thank-you link in their history. Refunds made in the Mollie dashboard never freed up the seat, so workshops showed as full when they were not. Rick had no idea what a webhook was; the app confirmed bookings when guests reached the thank-you page.
 
 Over five business days, LaunchStudio's engineers implemented Mollie webhooks that looked up the payment status on each notification, made booking confirmation depend only on that status, handled repeated and out-of-order notifications, released seats automatically on refunds and expired payments, moved confirmation emails to a background job triggered by the webhook, added alerts for failed webhook processing and reconciled the past two months of bookings against Mollie's records.
 
 **Result:** Unmatched payments and phantom bookings stopped entirely. Freed seats from refunds are now resold, adding an estimated €600 a month in workshop revenue, and Rick spends his Monday mornings cooking rather than reconciling.
 
-> *"I thought the thank-you page meant someone had paid. It turned out Mollie had been trying to tell me the truth all along — I just wasn't listening."*
-> — **Rick Jonker, Founder, Pannenklaar (Hattem)**
+> *"I thought the thank-you page meant someone had paid. It turned out Mollie had been trying to tell me the truth all along - I just wasn't listening."*
+> - **Rick Jonker, Founder, Pannenklaar (Hattem)**
 
-**Cost & Timeline:** €1,350 (Launch Ready package: payment webhooks, seat release, reconciliation and monitoring) — completed in 5 business days.
+**Cost & Timeline:** €1,350 (Launch Ready package: payment webhooks, seat release, reconciliation and monitoring) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### What is a webhook in simple terms?
 
-A message a service sends to your app's server when something happens, such as a payment succeeding — like a promised phone call back.
+A message a service sends to your app's server when something happens, such as a payment succeeding - like a promised phone call back.
 
 ### Why shouldn't my app confirm payments on the thank-you page?
 
@@ -201,11 +201,11 @@ Because customers may not return, may return before settlement, or may reach the
 
 ### What does verifying a webhook mean?
 
-Confirming the message really came from the provider — through a signature check or by looking up the payment status via the provider's API — so fake notifications are ignored.
+Confirming the message really came from the provider - through a signature check or by looking up the payment status via the provider's API - so fake notifications are ignored.
 
 ### How does Manifera handle payment integrations?
 
-With verified webhooks, idempotent processing, reconciliation and monitoring — patterns refined over more than a decade of integrating payment and business systems.
+With verified webhooks, idempotent processing, reconciliation and monitoring - patterns refined over more than a decade of integrating payment and business systems.
 
 ### Do payment problems affect online reputation?
 

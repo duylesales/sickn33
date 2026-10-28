@@ -1,13 +1,13 @@
-🚨 Lesgeld van Bas Tolhuizen int lesgeld voor 31 muziekscholen, rijinstructeurs en sportclubs rond Roermond — zo'n € 40.000 per maand. De betaalwebhook accepteerde elk verzoek en controleerde nooit de handtekening van de provider. Iemand stuurde een vervalste melding "betaling geslaagd". Het werkte. 😳
+🚨 Lesgeld van Bas Tolhuizen int lesgeld voor 31 muziekscholen, rijinstructeurs en sportclubs rond Roermond - zo'n € 40.000 per maand. De betaalwebhook accepteerde elk verzoek en controleerde nooit de handtekening van de provider. Iemand stuurde een vervalste melding "betaling geslaagd". Het werkte. 😳
 
-In elf dagen werden 23 accounts geactiveerd zonder één betaling — en gebruikt om echt geld van echte ouders te innen. Dit verandert er zodra u betalingen ontvangt:
+In elf dagen werden 23 accounts geactiveerd zonder één betaling - en gebruikt om echt geld van echte ouders te innen. Dit verandert er zodra u betalingen ontvangt:
 
 ❌ Een webhook die vertrouwt op alles wat binnenkomt
 ❌ Geen deduplicatie, waardoor herhaalde meldingen dubbele abonnementen maken
 ❌ Abonnement of bedrag bepaald in de browser in plaats van op de server
 ❌ Iedereen in het team kan terugbetalen, zonder vastgelegde reden
 
-✅ Controleer elke webhookhandtekening — en valideer historische events opnieuw bij de provider
+✅ Controleer elke webhookhandtekening - en valideer historische events opnieuw bij de provider
 ✅ Dedupliceer op event-ID en houd het endpoint betrouwbaar bereikbaar
 ✅ Bepaal abonnementen en bedragen op de server; zet rate limits en de fraudetools van de provider aan
 ✅ Een onveranderbare audit trail voor elke geldbewerking, met beperkte terugbetaalrechten

@@ -1,4 +1,4 @@
-🏛️ Nina de Groot bouwde PolicyPilot in Cursor — een documentreviewtool voor ngo's en juridische adviesbureaus in Den Haag die regelgevingswijzigingen volgt. De pilot verliep goed bij twee adviesbureaus. Toen voerde het IT-team van één adviesbureau een basale beveiligingscheck uit als onderdeel van hun leveranciersproces.
+🏛️ Nina de Groot bouwde PolicyPilot in Cursor - een documentreviewtool voor ngo's en juridische adviesbureaus in Den Haag die regelgevingswijzigingen volgt. De pilot verliep goed bij twee adviesbureaus. Toen voerde het IT-team van één adviesbureau een basale beveiligingscheck uit als onderdeel van hun leveranciersproces.
 
 De meeste gidsen over het maken van een AI-product laten alleen de frontend zien. De institutionele kopers in Den Haag controleren eerst de backend. 🧠
 

@@ -32,7 +32,7 @@ Drie vragen om vandaag voor uw eigen project te beantwoorden.
 
 **Wie heeft toegang?** Iedereen die ooit is uitgenodigd, inclusief de persoon die in maart een middag hielp en de vriend die naar een bug keek. Verleende toegang wordt zelden ingetrokken.
 
-**Wat staat toegang toe?** In grote lijnen: het project draaien, wat betekent code draaien met de geconfigureerde inloggegevens. Of medewerkers geheime waarden direct kunnen lezen, verschilt per abonnement en per manier van opslaan — en precies daarom moet het antwoord worden gecontroleerd in plaats van aangenomen.
+**Wat staat toegang toe?** In grote lijnen: het project draaien, wat betekent code draaien met de geconfigureerde inloggegevens. Of medewerkers geheime waarden direct kunnen lezen, verschilt per abonnement en per manier van opslaan - en precies daarom moet het antwoord worden gecontroleerd in plaats van aangenomen.
 
 **Is het project openbaar of privé?** Een openbaar project is door iedereen leesbaar. Code in een openbaar project is openbaar, en alles wat een medewerker in een bestand schreef in plaats van in het secrets-mechanisme is mee openbaar.
 
@@ -42,7 +42,7 @@ De audit kost vijf minuten en levert meestal minstens één verwijdering op.
 
 Forken is een kernonderdeel van hoe Replit werkt en het mechanisme dat mensen het meest verrast.
 
-Gewoonlijk worden geheimen die via het secrets-mechanisme van het platform zijn ingesteld niet naar een fork gekopieerd — de fork krijgt de code en lege waarden. Dat is het gedrag dat u wilt.
+Gewoonlijk worden geheimen die via het secrets-mechanisme van het platform zijn ingesteld niet naar een fork gekopieerd - de fork krijgt de code en lege waarden. Dat is het gedrag dat u wilt.
 
 Alles wat in een bestand is geschreven, reist echter mee. Een inloggegeven in een configuratiebestand, een `.env` die in het project is gecommit, een connection string die tijdens het debuggen in een codecommentaar is geplakt: het gaat allemaal mee met de fork, naar wie die ook maakte, permanent.
 
@@ -54,7 +54,7 @@ Controleer daarna de forks van elk openbaar project dat u bezit, iets wat u kunt
 
 De maatregel die de schade van al het bovenstaande beperkt: één inloggegeven per integratie, beperkt tot wat het nodig heeft.
 
-Eén beheerderssleutel voor alles betekent dat elke blootstelling totaal is. Aparte sleutels — één voor de database vanuit de applicatie, één voor de betaalprovider, één voor e-mail — betekenen dat een lek beperkt blijft tot één systeem, en dat roteren ervan niet al het andere stillegt.
+Eén beheerderssleutel voor alles betekent dat elke blootstelling totaal is. Aparte sleutels - één voor de database vanuit de applicatie, één voor de betaalprovider, één voor e-mail - betekenen dat een lek beperkt blijft tot één systeem, en dat roteren ervan niet al het andere stillegt.
 
 Waar de aanbieder sleutels met beperkte rechten aanbiedt, gebruik die. Een sleutel die kan lezen maar niet verwijderen, of die toegang heeft tot één bucket in plaats van allemaal, maakt van een ernstig incident een klein incident.
 
@@ -70,7 +70,7 @@ Waar dat niet kan: bereid alles voor, voer de wijziging uit op een rustig uur, e
 
 Roteer jaarlijks als routine, en direct wanneer de toegang van een medewerker eindigt, een project openbaar is geweest, of een waarde ergens is geplakt.
 
-Die tweede aanleiding is degene om te verinnerlijken. Iemand die een project verlaat, is een rotatiemoment, en het is het moment dat het consequentst wordt overgeslagen — de toegang wordt verwijderd, de inloggegevens die hij had worden niet veranderd, en er bestaat mogelijk nog een kopie van.
+Die tweede aanleiding is degene om te verinnerlijken. Iemand die een project verlaat, is een rotatiemoment, en het is het moment dat het consequentst wordt overgeslagen - de toegang wordt verwijderd, de inloggegevens die hij had worden niet veranderd, en er bestaat mogelijk nog een kopie van.
 
 ## Het Gewone Geval, Zonder Drama
 
@@ -86,11 +86,11 @@ Dat is de hele praktijk voor een product van deze omvang. Ze is onopvallend, ze 
 
 ## Offboarding, Op Papier
 
-De aanleiding die het vaakst wordt overgeslagen, verdient een eigen korte procedure, omdat ze plaatsvindt op een moment waarop niemand aan inloggegevens denkt — iemand vertrekt, en het gesprek gaat over overdracht in plaats van over toegang.
+De aanleiding die het vaakst wordt overgeslagen, verdient een eigen korte procedure, omdat ze plaatsvindt op een moment waarop niemand aan inloggegevens denkt - iemand vertrekt, en het gesprek gaat over overdracht in plaats van over toegang.
 
 Vijf punten, op volgorde.
 
-**Verwijder platformtoegang** — het project, de repository, het hostingaccount, de databaseaanbieder, de domeinregistrar. Alles waarop hij kon inloggen.
+**Verwijder platformtoegang** - het project, de repository, het hostingaccount, de databaseaanbieder, de domeinregistrar. Alles waarop hij kon inloggen.
 
 **Roteer alles wat hij had.** Niet alleen wat hij gebruikte; alles wat hij had kunnen lezen. Had hij projecttoegang, dan is dat elk inloggegeven in het project.
 
@@ -106,13 +106,13 @@ Dezelfde lijst geldt overigens voor uzelf wanneer u stopt met een dienst: verwij
 
 Nog een gewoonte die niets kost: wanneer u een nieuwe integratie toevoegt, schrijf dan op dat moment op welk inloggegeven ze gebruikt en waar het account staat. De inventaris is achteraf bijna niet te reconstrueren en eenvoudig bij te houden terwijl u bezig bent.
 
-Dezelfde notitie moet vastleggen wie het account beheert, omdat een inloggegeven dat u kunt roteren maar niet kunt bereiken — omdat het account op naam van een voormalige medewerker staat — een ander en lastiger probleem is.
+Dezelfde notitie moet vastleggen wie het account beheert, omdat een inloggegeven dat u kunt roteren maar niet kunt bereiken - omdat het account op naam van een voormalige medewerker staat - een ander en lastiger probleem is.
 
 ## Dit Inrichten
 
 Voor een Replit-product is dit doorgaans een halve dag: een audit van iedereen met toegang en verwijdering van wie die niet meer nodig heeft, een controle of het project openbaar is en van eventuele forks, een zoektocht in het project naar waarden van inloggegevens in plaats van variabelenamen, met alles wat wordt gevonden verplaatst naar het secrets-mechanisme en geroteerd, aparte beperkte inloggegevens per integratie, echte scheiding tussen ontwikkel- en productiewaarden, een rotatie uitgevoerd met de techniek van twee sleutels om vast te stellen dat het routine is, een inventaris die elk inloggegeven vastlegt en waar het wordt gebruikt, en een regel dat het vertrek van een medewerker een rotatie in gang zet.
 
-LaunchStudio doet dit als onderdeel van het naar productie brengen van een Replit-project, waar de hygiëne van inloggegevens consequent de eerste bevinding is. De engineers zijn van Manifera — elf jaar, 120+ engineers, klanten waaronder Vodafone, TNO en CFLW.
+LaunchStudio doet dit als onderdeel van het naar productie brengen van een Replit-project, waar de hygiëne van inloggegevens consequent de eerste bevinding is. De engineers zijn van Manifera - elf jaar, 120+ engineers, klanten waaronder Vodafone, TNO en CFLW.
 
 [Vraag ons wie er op dit moment toegang heeft tot uw project](https://launchstudio.eu/nl/#contact). De lijst is meestal langer dan men zich herinnert.
 
@@ -126,22 +126,22 @@ Het project was begonnen als een openbaar template waarvan hij leerde, en was de
 
 Achttien maanden later vond een routinereview de string nog steeds in het bestand. Het project was in de openbare periode elf keer geforkt.
 
-Er was geen bewijs van misbruik, en de database bevatte namen, adressen, schoolgegevens en vervoersbehoeften van leerlingen — wat in elk opzicht dat ertoe doet bijzondere persoonsgegevens zijn.
+Er was geen bewijs van misbruik, en de database bevatte namen, adressen, schoolgegevens en vervoersbehoeften van leerlingen - wat in elk opzicht dat ertoe doet bijzondere persoonsgegevens zijn.
 
 Twee werkdagen: de database-inloggegevens direct geroteerd, vóór al het andere; de connection string uit het bestand verwijderd en naar het secrets-mechanisme verplaatst, met de geschiedenis van het project doorzocht op andere geplakte waarden, wat een sleutel van een e-mailaanbieder uit dezelfde periode opleverde; beide inloggegevens geroteerd en de logs van de aanbieders bekeken, zonder toegang vanaf onbekende bronnen in de beschikbare periode; het project bevestigd als privé en de elf forks geïdentificeerd, met contact met het platform over de twee die openbaar waren; toegang beoordeeld, waarbij vier medewerkers van eerder werk werden gevonden die het niet meer nodig hadden, allemaal verwijderd; aparte beperkte inloggegevens per integratie aangemaakt, ter vervanging van één gedeelde beheerderssleutel; ontwikkel- en productiewaarden echt gescheiden; een rotatie uitgevoerd om de procedure vast te leggen; een inventaris van zeven inloggegevens die vastlegt waar elk wordt gebruikt en wanneer het is geroteerd; en een gedocumenteerde beoordeling van het datalek die concludeerde dat melding gerechtvaardigd was gezien de categorie data, wat werd gedaan bij de vervoerders en bij de Autoriteit Persoonsgegevens.
 
-**Resultaat:** de beoordeling vond geen bewijs van toegang, en de vervoerders hoorden het rechtstreeks van Ruben voordat ze het ergens anders konden horen. Alle zeven bleven. Zijn kijk is dat de vier maanden openbaarheid een beslissing waren die hij nooit bewust had genomen — het project begon simpelweg zo en hij dacht er niet meer over na.
+**Resultaat:** de beoordeling vond geen bewijs van toegang, en de vervoerders hoorden het rechtstreeks van Ruben voordat ze het ergens anders konden horen. Alle zeven bleven. Zijn kijk is dat de vier maanden openbaarheid een beslissing waren die hij nooit bewust had genomen - het project begon simpelweg zo en hij dacht er niet meer over na.
 
 > *"Het was vier maanden openbaar terwijl ik aan het leren was, en in die tijd plakte ik een connection string in een bestand. Elf mensen forkten het. Ik ontdekte het achttien maanden later, in een review die ik bijna niet had gedaan."*
-> — **Ruben Hooghiemstra, Oprichter, Leerlingvervoer (Apeldoorn)**
+> - **Ruben Hooghiemstra, Oprichter, Leerlingvervoer (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** €2.900 (noodrotatie van inloggegevens, doorzoeken van bestanden en geschiedenis met een tweede inloggegeven gevonden, identificatie van forks en contact met het platform, toegangsreview en verwijderingen, beperkte inloggegevens per integratie, scheiding van omgevingen, rotatieprocedure, inventaris van inloggegevens, beoordeling en melding van het datalek) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.900 (noodrotatie van inloggegevens, doorzoeken van bestanden en geschiedenis met een tweede inloggegeven gevonden, identificatie van forks en contact met het platform, toegangsreview en verwijderingen, beperkte inloggegevens per integratie, scheiding van omgevingen, rotatieprocedure, inventaris van inloggegevens, beoordeling en melding van het datalek) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Reizen geheimen mee als iemand mijn project forkt?
 
-Waarden in het secrets-mechanisme van het platform doorgaans niet. Alles wat in een bestand staat wel — een configuratiebestand, een gecommit omgevingsbestand, een string die in een commentaar is geplakt.
+Waarden in het secrets-mechanisme van het platform doorgaans niet. Alles wat in een bestand staat wel - een configuratiebestand, een gecommit omgevingsbestand, een string die in een commentaar is geplakt.
 
 ### Hoe controleer ik of een inloggegeven in een bestand staat?
 
@@ -177,7 +177,7 @@ Waar de aanbieder twee actieve sleutels toestaat: maak de nieuwe aan, stel haar 
       "name": "Hoe vind ik inloggegevens die in projectbestanden verstopt zitten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zoek op de waarde zelf in plaats van de variabelenaam — een geplakte string wordt niet gevonden door op een variabele te zoeken."
+        "text": "Zoek op de waarde zelf in plaats van de variabelenaam - een geplakte string wordt niet gevonden door op een variabele te zoeken."
       }
     },
     {
@@ -201,7 +201,7 @@ Waar de aanbieder twee actieve sleutels toestaat: maak de nieuwe aan, stel haar 
       "name": "Hoe roteer ik een sleutel zonder downtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Maak de nieuwe sleutel aan terwijl de oude actief is, deploy, bevestig het gebruik, en trek dan in — of wijzig op een rustig uur en controleer."
+        "text": "Maak de nieuwe sleutel aan terwijl de oude actief is, deploy, bevestig het gebruik, en trek dan in - of wijzig op een rustig uur en controleer."
       }
     }
   ]

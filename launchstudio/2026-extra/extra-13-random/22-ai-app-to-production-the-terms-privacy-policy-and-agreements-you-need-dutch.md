@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-App naar Productie: De Algemene Voorwaarden, Privacyverklaring en Overeenkomsten Die U Nodig Heeft",
-  "description": "Een AI-app naar productie brengen is niet alleen een technisch vraagstuk. Dit artikel legt uit welke juridische documenten een applicatie nodig heeft vóór de lancering — privacyverklaring, algemene voorwaarden, verwerkersovereenkomsten, cookietoestemming en leveranciersvoorwaarden — waarom AI-gegenereerde documenten vaak tekortschieten en hoe uw documenten moeten aansluiten op wat de code daadwerkelijk doet.",
+  "description": "Een AI-app naar productie brengen is niet alleen een technisch vraagstuk. Dit artikel legt uit welke juridische documenten een applicatie nodig heeft vóór de lancering - privacyverklaring, algemene voorwaarden, verwerkersovereenkomsten, cookietoestemming en leveranciersvoorwaarden - waarom AI-gegenereerde documenten vaak tekortschieten en hoe uw documenten moeten aansluiten op wat de code daadwerkelijk doet.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-22",
@@ -21,17 +21,17 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Veel oprichters vragen hun AI-tool in het laatste uur voor de lancering om "even een pagina met een privacybeleid toe te voegen". De tool produceert vlot drie overtuigende pagina's vol juridisch klinkend jargon, waarin keurig wordt gerept over cookies, gegevensrechten en beveiligingsmaatregelen. Het oogt compleet. Maar in vrijwel alle gevallen beschrijft het een applicatie die helemaal niet bestaat — simpelweg omdat de tekst is gegenereerd zonder te kijken naar wat uw app werkelijk doet. Wanneer u een AI-app naar productie brengt, vormen de juridische documenten een integraal onderdeel van uw product, en ze moeten op waarheid berusten.
+Veel oprichters vragen hun AI-tool in het laatste uur voor de lancering om "even een pagina met een privacybeleid toe te voegen". De tool produceert vlot drie overtuigende pagina's vol juridisch klinkend jargon, waarin keurig wordt gerept over cookies, gegevensrechten en beveiligingsmaatregelen. Het oogt compleet. Maar in vrijwel alle gevallen beschrijft het een applicatie die helemaal niet bestaat - simpelweg omdat de tekst is gegenereerd zonder te kijken naar wat uw app werkelijk doet. Wanneer u een AI-app naar productie brengt, vormen de juridische documenten een integraal onderdeel van uw product, en ze moeten op waarheid berusten.
 
 Dit artikel vormt geen formeel juridisch advies; raadpleeg voor uitzonderlijke situaties altijd een gespecialiseerde jurist. Het biedt een praktische leidraad van wat een startende applicatie minimaal nodig heeft en waar AI-gegenereerde documenten steevast de fout in gaan.
 
 ## Documentatie voor een AI-App in Productie: Wat Heeft U Nodig?
 
-**Een privacyverklaring.** Verplicht onder de AVG (GDPR) zodra u persoonsgegevens verwerkt — wat geldt voor iedere applicatie waarin gebruikers een account aanmaken. De verklaring legt uit welke gegevens u verzamelt, met welk doel, op basis van welke rechtsgrond, hoe lang u ze bewaart, welke partijen ze namens u verwerken, waar de data fysiek staat en welke rechten betrokkenen hebben.
+**Een privacyverklaring.** Verplicht onder de AVG (GDPR) zodra u persoonsgegevens verwerkt - wat geldt voor iedere applicatie waarin gebruikers een account aanmaken. De verklaring legt uit welke gegevens u verzamelt, met welk doel, op basis van welke rechtsgrond, hoe lang u ze bewaart, welke partijen ze namens u verwerken, waar de data fysiek staat en welke rechten betrokkenen hebben.
 
 **Algemene voorwaarden (of gebruikersovereenkomst).** De overeenkomst tussen u en uw gebruikers: wat u levert, wat gebruikers wel en niet mogen doen, betalings- en opzeggingsvoorwaarden en aansprakelijkheidsbeperkingen. Bij verkoop aan consumenten in de EU gelden strikte regels voor consumentenbescherming, waaronder het herroepingsrecht bij online aankopen.
 
-**Verwerkersovereenkomsten (VOK / DPA).** Iedere externe dienst die namens u persoonsgegevens verwerkt — hostingproviders, databases, e-maildiensten, analytische software, foutregistratie en AI-API's — vereist een verwerkersovereenkomst. De meeste clouddiensten bieden een standaardovereenkomst die u digitaal accepteert. Wanneer u aan zakelijke klanten (B2B) verkoopt en de gegevens van hún eindklanten verwerkt, treedt u op als verwerker en verwachten uw klanten een verwerkersovereenkomst van ú.
+**Verwerkersovereenkomsten (VOK / DPA).** Iedere externe dienst die namens u persoonsgegevens verwerkt - hostingproviders, databases, e-maildiensten, analytische software, foutregistratie en AI-API's - vereist een verwerkersovereenkomst. De meeste clouddiensten bieden een standaardovereenkomst die u digitaal accepteert. Wanneer u aan zakelijke klanten (B2B) verkoopt en de gegevens van hún eindklanten verwerkt, treedt u op als verwerker en verwachten uw klanten een verwerkersovereenkomst van ú.
 
 **Cookie- en trackingtoestemming.** Voor niet-noodzakelijke cookies en trackers (zoals trackingpixels en marketingtools) is binnen de EU voorafgaande toestemming vereist. Strikt noodzakelijke functionele cookies, zoals sessiecookies voor authenticatie, zijn hiervan vrijgesteld.
 
@@ -42,7 +42,7 @@ Dit artikel vormt geen formeel juridisch advies; raadpleeg voor uitzonderlijke s
 AI-tools schrijven overtuigende teksten gebaseerd op gemiddelden van het internet. De fouten zijn voorspelbaar:
 
 - **Verkeerde verwerkers.** De privacyverklaring noemt Google Analytics terwijl u Plausible gebruikt, vergeet Supabase, Resend en de AI-API die u aanroept, en rept met geen woord over dataoverdracht buiten de EU.
-- **Verzonnen beveiligingsclaims.** "Alle data wordt versleuteld opgeslagen in zwaarbeveiligde datacenters binnen de EU" — terwijl de database in werkelijkheid in een Amerikaanse regio draait en niemand de encryptie-instellingen heeft gecontroleerd. Beloften die u technisch niet kunt waarmaken, vormen een direct aansprakelijkheidsrisico.
+- **Verzonnen beveiligingsclaims.** "Alle data wordt versleuteld opgeslagen in zwaarbeveiligde datacenters binnen de EU" - terwijl de database in werkelijkheid in een Amerikaanse regio draait en niemand de encryptie-instellingen heeft gecontroleerd. Beloften die u technisch niet kunt waarmaken, vormen een direct aansprakelijkheidsrisico.
 - **Rechten die technisch niet kunnen worden ingewilligd.** De verklaring belooft verwijdering binnen 30 dagen, maar de applicatie beschikt over geen enkele knop of script om een gebruikersaccount en bijbehorende records daadwerkelijk te wissen.
 - **Willekeurige bewaartermijnen.** "Wij bewaren uw gegevens 24 maanden," terwijl uw database alle data simpelweg voor eeuwig vasthoudt.
 - **Consumentenclausules die in strijd zijn met de wet.** Bepalingen die alle aansprakelijkheid uitsluiten of het wettelijke herroepingsrecht van consumenten volledig intrekken, zijn juridisch nietig en kunnen leiden tot sancties van toezichthouders.
@@ -55,10 +55,10 @@ De meest effectieve vuistregel is dat uw juridische documenten exact moeten besc
 1. Breng elke externe dienst in kaart die door de code en omgevingsvariabelen wordt aangeroepen.
 2. Noteer per dienst welke persoonsgegevens worden ontvangen, waar de servers staan en of er een getekende verwerkersovereenkomst aanwezig is.
 3. Controleer in uw database welke velden worden opgeslagen en welke bewaartermijnen gelden.
-4. Controleer of accountverwijdering de data daadwerkelijk verwijdert uit alle systemen — database, bestandsopslag, e-maillijsten, analytics en actieve back-upcycli.
+4. Controleer of accountverwijdering de data daadwerkelijk verwijdert uit alle systemen - database, bestandsopslag, e-maillijsten, analytics en actieve back-upcycli.
 5. Controleer welke cookies en trackers er laden vóórdat een bezoeker toestemming geeft.
 
-Pas daarna schrijft u — of laat u een AI-tool — de privacyverklaring opstellen aan de hand van die feitelijke inventarisatie. De resulterende tekst is korter, eerlijker en juridisch veel beter verdedigbaar.
+Pas daarna schrijft u - of laat u een AI-tool - de privacyverklaring opstellen aan de hand van die feitelijke inventarisatie. De resulterende tekst is korter, eerlijker en juridisch veel beter verdedigbaar.
 
 ## Cookietoestemming Volgens de Regels
 
@@ -68,7 +68,7 @@ De eenvoudigste route voor veel startende applicaties is het gebruik van privacy
 
 ## Wanneer U Verkoopt aan Bedrijven (B2B)
 
-Zakelijke afnemers stellen strengere eisen: een verwerkersovereenkomst van uw kant, een overzicht van uw subverwerkers, informatie over technische beveiligingsmaatregelen en regelmatig een uitgebreide security-vragenlijst. Door deze documenten eenmalig — en accuraat — op te stellen, verkort u elk toekomstig salestraject aanzienlijk. De geverifieerde inventarisatie achter uw privacyverklaring dient hierbij direct als uw officiële subverwerkerslijst.
+Zakelijke afnemers stellen strengere eisen: een verwerkersovereenkomst van uw kant, een overzicht van uw subverwerkers, informatie over technische beveiligingsmaatregelen en regelmatig een uitgebreide security-vragenlijst. Door deze documenten eenmalig - en accuraat - op te stellen, verkort u elk toekomstig salestraject aanzienlijk. De geverifieerde inventarisatie achter uw privacyverklaring dient hierbij direct als uw officiële subverwerkerslijst.
 
 ## De Verwerkerslijst Samenstellen Vanuit Uw Codebase
 
@@ -115,7 +115,7 @@ Goede voorwaarden beschrijven nauwkeurig wat de dienst levert en wat uitdrukkeli
 
 ## Documentatie en Code Synchroon Houden
 
-Juridische documenten raken snel achterhaald wanneer een product evolueert. Koppel documentatie-updates direct aan uw ontwikkelproces: wordt er een nieuwe externe koppeling gemaakt, werk dan meteen de verwerkerslijst bij; verzamelt de app nieuwe persoonsgegevens, herzie dan de privacyverklaring; lanceert u een nieuwe AI-functie, vermeld deze dan direct in de documentatie. Een eenvoudige checklistvraag in uw pull request template — "Voegt deze codewijziging een externe dienst of nieuwe persoonsgegevens toe?" — voorkomt discrepanties voordat code live gaat.
+Juridische documenten raken snel achterhaald wanneer een product evolueert. Koppel documentatie-updates direct aan uw ontwikkelproces: wordt er een nieuwe externe koppeling gemaakt, werk dan meteen de verwerkerslijst bij; verzamelt de app nieuwe persoonsgegevens, herzie dan de privacyverklaring; lanceert u een nieuwe AI-functie, vermeld deze dan direct in de documentatie. Een eenvoudige checklistvraag in uw pull request template - "Voegt deze codewijziging een externe dienst of nieuwe persoonsgegevens toe?" - voorkomt discrepanties voordat code live gaat.
 
 ## Cookiebanners Die de Toets der Kritiek Doorstaan
 
@@ -123,7 +123,7 @@ Maakt u gebruik van cookies waarvoor toestemming verplicht is, dan moet uw banne
 
 ## Wanneer U Verwerker Wordt voor Zakelijke Afnemers
 
-Verwerkt uw applicatie gegevens van derden in opdracht van zakelijke klanten — zoals een boekingssysteem voor kapsalons of een CRM voor bureaus — dan bent u juridisch de verwerker. Uw klanten zullen een verwerkersovereenkomst verlangen waarin beveiligingsmaatregelen, subverwerkers, procedures bij datalekken en dataverwijdering na contractbeëindiging zijn vastgelegd. Zorg dat u een gestandaardiseerde verwerkersovereenkomst klaarligt die naadloos aansluit op uw werkelijke technische inrichting. Dit voorkomt vertragingen bij enterprise-deals.
+Verwerkt uw applicatie gegevens van derden in opdracht van zakelijke klanten - zoals een boekingssysteem voor kapsalons of een CRM voor bureaus - dan bent u juridisch de verwerker. Uw klanten zullen een verwerkersovereenkomst verlangen waarin beveiligingsmaatregelen, subverwerkers, procedures bij datalekken en dataverwijdering na contractbeëindiging zijn vastgelegd. Zorg dat u een gestandaardiseerde verwerkersovereenkomst klaarligt die naadloos aansluit op uw werkelijke technische inrichting. Dit voorkomt vertragingen bij enterprise-deals.
 
 ## Documentatie voor AI-Functionaliteiten
 
@@ -131,11 +131,11 @@ Wanneer uw applicatie invoer van gebruikers doorstuurt naar een extern AI-model,
 
 ## Hoe LaunchStudio Helpt met de Technische Grondslag
 
-LaunchStudio schrijft zelf geen juridische contracten. Wat wij wel doen, is ervoor zorgen dat de technische realiteit achter die contracten klopt en aantoonbaar is: data onderbrengen in Europese datacenters, verwijderfuncties bouwen die data ook echt wissen, geautomatiseerde retentieprocedures inrichten, trackers pas activeren na toestemming en een sluitende inventarisatie opleveren van elke verwerker in uw codebase. Gewapend met die feiten kan een jurist of juridische sjabloondienst in korte tijd accurate documenten opstellen — en kunt u vragen van veeleisende klanten met vertrouwen beantwoorden.
+LaunchStudio schrijft zelf geen juridische contracten. Wat wij wel doen, is ervoor zorgen dat de technische realiteit achter die contracten klopt en aantoonbaar is: data onderbrengen in Europese datacenters, verwijderfuncties bouwen die data ook echt wissen, geautomatiseerde retentieprocedures inrichten, trackers pas activeren na toestemming en een sluitende inventarisatie opleveren van elke verwerker in uw codebase. Gewapend met die feiten kan een jurist of juridische sjabloondienst in korte tijd accurate documenten opstellen - en kunt u vragen van veeleisende klanten met vertrouwen beantwoorden.
 
 LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbureau met meer dan 11 jaar ervaring in het ontwerpen en beheren van complexe systemen voor organisaties met strenge compliance-eisen, opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad. De achtergrond van CEO Herre Roelevink in cybersecurity waarborgt een cultuur waarin de vraag "wat doet het systeem technisch feitelijk?" altijd voorafgaat aan "wat staat er op papier?". Lees meer over onze aanpak op de [over ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
-Staat uw lancering voor de deur? [Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — en neem uw huidige concept-privacyverklaring gerust mee.
+Staat uw lancering voor de deur? [Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) - en neem uw huidige concept-privacyverklaring gerust mee.
 
 ## Praktijkvoorbeeld
 
@@ -143,16 +143,16 @@ Staat uw lancering voor de deur? [Plan een vrijblijvend adviesgesprek van 15 min
 
 Merel Koster, fotografe in Gouda, ontwikkelde Fotoboekje met behulp van Lovable: klanten uploaden vakantie- en gezinsfoto's, stellen met AI-gestuurde lay-outs een gepersonaliseerd fotoboek samen, betalen online en ontvangen het fysiek gedrukte exemplaar thuis. Voorafgaand aan de lancering liet ze Lovable een privacyverklaring en algemene voorwaarden genereren. De documenten oogden uiterst professioneel.
 
-Een technische audit door LaunchStudio legde de documenten naast de daadwerkelijke applicatieconfiguratie. De privacyverklaring vermeldde Google Analytics (dat nergens werd gebruikt) en negeerde Supabase, de printpartner die de foto's en adresgegevens van klanten ontving, de e-maildienst en de externe AI-beeldverwerkingsdienst die elke foto analyseerde. De verklaring claimde opslag binnen de EU, terwijl de database en media-opslag in werkelijkheid in de VS stonden geconfigureerd. Er werd beloofd dat data op verzoek werd gewist, maar de applicatie kende geen verwijderfunctie, waardoor geüploade foto's — waaronder veel beelden van minderjarigen — voor onbepaalde tijd op de servers bleven staan. Bovendien werd er al vóór toestemming een marketingpixel ingeladen. In de algemene voorwaarden werd het herroepingsrecht voor alle bestellingen integraal uitgesloten, terwijl de wet die uitzondering enkel toestaat voor maatwerkproducten zoals het gedrukte boek zelf.
+Een technische audit door LaunchStudio legde de documenten naast de daadwerkelijke applicatieconfiguratie. De privacyverklaring vermeldde Google Analytics (dat nergens werd gebruikt) en negeerde Supabase, de printpartner die de foto's en adresgegevens van klanten ontving, de e-maildienst en de externe AI-beeldverwerkingsdienst die elke foto analyseerde. De verklaring claimde opslag binnen de EU, terwijl de database en media-opslag in werkelijkheid in de VS stonden geconfigureerd. Er werd beloofd dat data op verzoek werd gewist, maar de applicatie kende geen verwijderfunctie, waardoor geüploade foto's - waaronder veel beelden van minderjarigen - voor onbepaalde tijd op de servers bleven staan. Bovendien werd er al vóór toestemming een marketingpixel ingeladen. In de algemene voorwaarden werd het herroepingsrecht voor alle bestellingen integraal uitgesloten, terwijl de wet die uitzondering enkel toestaat voor maatwerkproducten zoals het gedrukte boek zelf.
 
 Het team van LaunchStudio migreerde de database en bestandsopslag naar een EU-regio, bouwde een robuuste verwijderfunctie voor accounts en bestellingen die foto's permanent wist en de printpartner informeerde, richtte automatische schoning in van geüploade beelden na 60 dagen, plaatste de trackingpixel achter de toestemmingsbanner en stelde een geverifieerde verwerkersinventarisatie op. Met die feitelijke gegevens kon Merel via een juridische sjabloondienst en een kort controle-uur van een jurist kloppende documenten publiceren, inclusief een sluitende verwerkersovereenkomst met de printpartner.
 
 **Resultaat:** Fotoboekje lanceerde ruim op tijd voor het zomerseizoen en verwerkte 1.150 bestellingen in de eerste vier maanden. Toen een klant vroeg welke bedrijven toegang hadden gehad tot foto's van haar kinderen, kon Merel binnen één e-mail exact en transparant antwoord geven.
 
 > *"De AI had een privacybeleid geschreven dat vlekkeloos klonk. Het beschreef alleen de applicatie van iemand anders."*
-> — **Merel Koster, Oprichter, Fotoboekje (Gouda)**
+> - **Merel Koster, Oprichter, Fotoboekje (Gouda)**
 
-**Kosten & Tijdlijn:** €1.300 (datamigratie naar EU, verwijder- en retentielogica, toestemmingsherstel en verwerkersinventarisatie) — opgeleverd binnen 5 werkdagen.
+**Kosten & Tijdlijn:** €1.300 (datamigratie naar EU, verwijder- en retentielogica, toestemmingsherstel en verwerkersinventarisatie) - opgeleverd binnen 5 werkdagen.
 
 ## Veelgestelde Vragen
 

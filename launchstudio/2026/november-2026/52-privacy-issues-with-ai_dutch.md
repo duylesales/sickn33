@@ -89,9 +89,9 @@ Het Manifera-team voerde een intensieve AVG-revisie uit van 18 werkdagen:
 **Resultaat:** Sarah demonstreerde de nieuwe architectuur aan de DPO: zij bewees de directe, trapsgewijze dataverwijdering en overhandigde de Europese certificaten van Azure. De DPO keurde de software goed en Sarah rolde haar platform succesvol uit over vijf Beierse klinieken.
 
 > *"We waren zo gefocust op het slim maken van de AI dat we vergaten om het legaal te maken. In Europa maakt het niet uit hoe goed je AI is als je software niet AVG-conform is. LaunchStudio begreep de exacte overlap tussen AI-wiskunde en Europese privacywetgeving. Zij bouwden de infrastructuur die ons bedrijf heeft gered."*
-> — **Sarah Weber, Oprichter, VitaMind (München)**
+> - **Sarah Weber, Oprichter, VitaMind (München)**
 
-**Kosten & Doorlooptijd:** €18.000 (Enterprise Compliance & Azure Migratie Pakket) — productie-klaar en live binnen 18 werkdagen.
+**Kosten & Doorlooptijd:** €18.000 (Enterprise Compliance & Azure Migratie Pakket) - productie-klaar en live binnen 18 werkdagen.
 
 ---
 

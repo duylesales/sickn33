@@ -1,4 +1,4 @@
-⏰ Jonas built an AI scheduling assistant using **Lovable**, self-hosted on Vercel — and found out it was silently failing from angry customer emails, days too late. 🧠
+⏰ Jonas built an AI scheduling assistant using **Lovable**, self-hosted on Vercel - and found out it was silently failing from angry customer emails, days too late. 🧠
 
 If you have no monitoring or alerting configured, your only incident detection system is customers noticing something broke and telling you about it.
 
@@ -12,7 +12,7 @@ If you have no monitoring or alerting configured, your only incident detection s
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jonas's application achieved production readiness: Zero silent failures since the engagement — Sentry now catches and alerts Jonas to issues within minutes instead of days. (€1,900 (Launch & Grow Package) — 7 business days.). 🚀
+Jonas's application achieved production readiness: Zero silent failures since the engagement - Sentry now catches and alerts Jonas to issues within minutes instead of days. (€1,900 (Launch & Grow Package) - 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-managed-hosting-vs-vercel
 

@@ -21,7 +21,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-If you write your app with Cursor, your release process is probably this: accept the diff, glance at it, commit, push to main, and let Vercel or Netlify deploy it within a minute. It feels professional because there is git and there is a pipeline. It is also, for AI code to production, one of the riskiest setups a solo founder can run — not because any single step is wrong, but because nothing between "the model wrote it" and "customers are using it" is designed to say no.
+If you write your app with Cursor, your release process is probably this: accept the diff, glance at it, commit, push to main, and let Vercel or Netlify deploy it within a minute. It feels professional because there is git and there is a pipeline. It is also, for AI code to production, one of the riskiest setups a solo founder can run - not because any single step is wrong, but because nothing between "the model wrote it" and "customers are using it" is designed to say no.
 
 This is a practical article for technical founders: what a minimal release process actually needs, why AI-generated diffs make it more important rather than less, and how to put one in place without turning a two-person product into a bureaucracy.
 
@@ -35,7 +35,7 @@ With hand-written code, that gap is partly covered by the developer's own unders
 
 You do not need an enterprise change-advisory board. You need five gates, each of which can be automated or reduced to a checklist.
 
-**Gate 1: Automated checks on every push.** Type-checking, linting and whatever tests exist, run in CI (GitHub Actions is fine) on a branch — not on main. If the checks fail, the merge is blocked. This catches the class of AI mistake where code looks right but references a function that no longer exists.
+**Gate 1: Automated checks on every push.** Type-checking, linting and whatever tests exist, run in CI (GitHub Actions is fine) on a branch - not on main. If the checks fail, the merge is blocked. This catches the class of AI mistake where code looks right but references a function that no longer exists.
 
 **Gate 2: A preview or staging deployment.** Every branch gets deployed somewhere that looks like production but is not production, connected to a staging database with fake or anonymised data. You click through the change there. Most hosts give you preview deployments for free; the missing piece is usually the separate database.
 
@@ -43,7 +43,7 @@ You do not need an enterprise change-advisory board. You need five gates, each o
 
 **Gate 4: A rollback you have actually tried.** Your host can probably redeploy a previous build in one click. The question is whether that still works after a migration has run. A rollback plan that ignores the database is half a plan.
 
-**Gate 5: A human who decides to release.** Even for a solo founder, the final merge to main should be a deliberate act, done at a sensible time — not at 23:40 on a Friday because the diff looked fine.
+**Gate 5: A human who decides to release.** Even for a solo founder, the final merge to main should be a deliberate act, done at a sensible time - not at 23:40 on a Friday because the diff looked fine.
 
 ## Why AI Diffs Need Stricter Gates, Not Looser Ones
 
@@ -83,7 +83,7 @@ It takes about ten minutes per release once it is habit. The first time it preve
 
 ## A Minimal Pipeline, Written Out
 
-Talking about "gates" is abstract. Here is what a minimal CI configuration for a Cursor-built Next.js and Supabase app looks like in GitHub Actions. It is deliberately short — the point is that it runs on every pull request and blocks merging when it fails:
+Talking about "gates" is abstract. Here is what a minimal CI configuration for a Cursor-built Next.js and Supabase app looks like in GitHub Actions. It is deliberately short - the point is that it runs on every pull request and blocks merging when it fails:
 
 ```yaml
 name: ci
@@ -110,7 +110,7 @@ jobs:
           fi
 ```
 
-Combined with branch protection that requires this job to pass and requires your approval, AI code to production can no longer bypass the checks — not by a tired founder at midnight, and not by an agent.
+Combined with branch protection that requires this job to pass and requires your approval, AI code to production can no longer bypass the checks - not by a tired founder at midnight, and not by an agent.
 
 The migration check is intentionally blunt. It does not stop you from dropping a column; it forces a human to acknowledge it. In practice you add an override label or a comment in the pull request for intentional destructive changes, and everything else passes through untouched.
 
@@ -119,7 +119,7 @@ The migration check is intentionally blunt. It does not stop you from dropping a
 For Supabase projects, the most reliable workflow keeps migrations as SQL files in the repository and applies them through the CLI rather than through the dashboard:
 
 1. Make the schema change on a local or branch database.
-2. Generate a migration file with `supabase db diff`, then read it — AI-assisted diffs often include more than you expect.
+2. Generate a migration file with `supabase db diff`, then read it - AI-assisted diffs often include more than you expect.
 3. Commit it in its own pull request, with a note on reversibility.
 4. Apply to staging via CI; run the app against it.
 5. Take a backup (or confirm point-in-time recovery is active), then apply to production.
@@ -132,11 +132,11 @@ A release is not finished when the deploy succeeds. For the first 30 minutes, ch
 
 ## Three Release Scenarios, Handled Properly
 
-**A copy change.** Cursor updates text on the pricing page. CI passes, the preview looks right, you merge during the day. Total effort: two minutes more than pushing to main. The process adds almost nothing for trivial changes — which is exactly why it is sustainable.
+**A copy change.** Cursor updates text on the pricing page. CI passes, the preview looks right, you merge during the day. Total effort: two minutes more than pushing to main. The process adds almost nothing for trivial changes - which is exactly why it is sustainable.
 
 **A new feature with a schema change.** You add "frozen membership" (as in the example below). The migration goes in its own pull request that only adds a nullable column and a new status value, reviewed and applied first. The feature code follows in a second pull request, behind a feature flag if possible. Existing rows are untouched, and rolling back the code leaves the database compatible.
 
-**An urgent fix during an incident.** Payments are failing. The fastest safe path is: roll back to the last good deploy, confirm payments work, then fix forward on a branch with CI. Resist editing directly in production "just this once" — incidents are when untested changes do the most damage.
+**An urgent fix during an incident.** Payments are failing. The fastest safe path is: roll back to the last good deploy, confirm payments work, then fix forward on a branch with CI. Resist editing directly in production "just this once" - incidents are when untested changes do the most damage.
 
 ## Signs Your Release Process Is Working
 
@@ -144,13 +144,13 @@ After a month you should see: fewer "what changed?" moments, CI occasionally blo
 
 ## When the Process Can Stay Lighter
 
-Not every project needs every gate from day one. A marketing site with no database can deploy from main safely. An internal tool with five trusted users can skip preview deployments for a while. The gates become essential the moment real customer data, payments or contractual uptime are involved — which, for most AI-built SaaS products, is the moment they are worth launching at all.
+Not every project needs every gate from day one. A marketing site with no database can deploy from main safely. An internal tool with five trusted users can skip preview deployments for a while. The gates become essential the moment real customer data, payments or contractual uptime are involved - which, for most AI-built SaaS products, is the moment they are worth launching at all.
 
 ## Where LaunchStudio Fits
 
 For technical founders, LaunchStudio's role is usually not to write your features. It is to put the release scaffolding under your AI code to production workflow: CI configured, staging separated properly, secrets managed per environment, migrations reviewed, monitoring connected. The engineering behind it comes from Manifera, which brings enterprise-grade engineering to the founder economy and has run release pipelines for clients from Amsterdam to Singapore for more than eleven years. You keep writing code in Cursor exactly as before; the difference is what stands between your diff and your customers.
 
-If that sounds like your setup, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — the first conversation is 15 minutes and ends with a fixed-price proposal. Manifera's broader [web app development practice](https://www.manifera.com/services/web-app-develop/) uses the same pipeline patterns at larger scale.
+If that sounds like your setup, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - the first conversation is 15 minutes and ends with a fixed-price proposal. Manifera's broader [web app development practice](https://www.manifera.com/services/web-app-develop/) uses the same pipeline patterns at larger scale.
 
 ## Real example
 
@@ -158,16 +158,16 @@ If that sounds like your setup, [talk to an engineer who understands AI-generate
 
 Daan Visser, a former data analyst in Delft, built PlankPal with Cursor: a membership and check-in app used by two bouldering gyms. Members scanned a QR code at the door; gym staff saw live occupancy and expiring memberships. Daan pushed to main several times a day, and Vercel deployed each push automatically.
 
-One Thursday evening, Daan asked Cursor to add a "frozen membership" status. The generated migration changed the membership status column from text to an enum and, in doing so, rewrote every existing row — setting statuses the enum did not recognise to null. The deploy took forty seconds. For the next two hours, members with valid passes were refused at the door because the check-in screen treated null as expired. Rolling back the code did not help, because the data had already changed.
+One Thursday evening, Daan asked Cursor to add a "frozen membership" status. The generated migration changed the membership status column from text to an enum and, in doing so, rewrote every existing row - setting statuses the enum did not recognise to null. The deploy took forty seconds. For the next two hours, members with valid passes were refused at the door because the check-in screen treated null as expired. Rolling back the code did not help, because the data had already changed.
 
 LaunchStudio's engineers restored the affected rows from a point-in-time backup, then built the release process around Daan's workflow: GitHub Actions running type checks and a small suite of check-in tests on every branch, a separate staging Supabase project with seeded data, migrations moved into their own reviewed pull requests, and a written rollback step required in each PR template. Error tracking was wired to Daan's phone.
 
 **Result:** Over the following four months, PlankPal shipped 212 releases. CI blocked nine of them before merge, including two migrations that would have rewritten existing data. There were no further check-in outages.
 
 > *"I had a pipeline, so I thought I had a process. What I actually had was a very fast way to ship whatever Cursor gave me."*
-> — **Daan Visser, Founder, PlankPal (Delft)**
+> - **Daan Visser, Founder, PlankPal (Delft)**
 
-**Cost & Timeline:** €1,600 (release pipeline, staging separation, migration workflow and data recovery) — completed in 6 business days.
+**Cost & Timeline:** €1,600 (release pipeline, staging separation, migration workflow and data recovery) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -185,7 +185,7 @@ It can generate a reasonable starting point. The risk is that AI-written tests o
 
 ### What does Manifera's experience add to a small founder's release process?
 
-Mostly pattern recognition. Manifera's engineers have seen which release mistakes cause real incidents across 160+ projects, so the process they set up is minimal but targeted — no ceremony for its own sake, and firm gates only where data or money is at stake.
+Mostly pattern recognition. Manifera's engineers have seen which release mistakes cause real incidents across 160+ projects, so the process they set up is minimal but targeted - no ceremony for its own sake, and firm gates only where data or money is at stake.
 
 ### Does a proper release process help with search visibility?
 

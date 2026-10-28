@@ -18,11 +18,11 @@ Most teams invest heavily at the top and ignore the bottom. That's 100x more exp
 
 **5 metrics that actually predict quality:**
 
-📊 Defect Escape Rate — bugs reaching production ÷ bugs found in dev
-📊 Mean Time to Recovery — minutes, not hours
-📊 Code Review Turnaround — <4 hours = healthy team
-📊 Test Coverage of Critical Paths — 95%+ for auth, payments, data
-📊 Deployment Frequency — daily deploys = confident team
+📊 Defect Escape Rate - bugs reaching production ÷ bugs found in dev
+📊 Mean Time to Recovery - minutes, not hours
+📊 Code Review Turnaround - <4 hours = healthy team
+📊 Test Coverage of Critical Paths - 95%+ for auth, payments, data
+📊 Deployment Frequency - daily deploys = confident team
 
 **The uncomfortable truth:**
 
@@ -30,7 +30,7 @@ Teams that skip QA don't ship faster. They ship bugs faster.
 
 Then spend 3x the time fixing them in production while customers watch.
 
-At Manifera, QA is embedded — not a phase. Our Amsterdam oversight + Vietnam's deep technical talent ensures quality is built in, not inspected in.
+At Manifera, QA is embedded - not a phase. Our Amsterdam oversight + Vietnam's deep technical talent ensures quality is built in, not inspected in.
 
 Quality is not a department. It's a culture.
 

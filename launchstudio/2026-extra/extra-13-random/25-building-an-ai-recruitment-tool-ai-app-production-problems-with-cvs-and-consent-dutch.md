@@ -21,13 +21,13 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een oprichter in Friesland uploadde haar eerste echte batch cv's — 180 sollicitaties voor vacatures in lassen en installatietechniek — in de recruitmenttool die ze in Lovable had gebouwd. De AI-matching werkte. Recruiters waren enthousiast. Toen mailde een kandidaat met de vraag waarom een bedrijf waar hij nooit had gesolliciteerd hem had gebeld, en besefte ze dat elke recruiter op het platform elk cv kon doorzoeken, inclusief kandidaten die op één specifieke vacature bij één specifiek bedrijf hadden gereageerd — een schoolvoorbeeld van de productieproblemen van AI-apps waar recruitmenttools tegenaan lopen.
+Een oprichter in Friesland uploadde haar eerste echte batch cv's - 180 sollicitaties voor vacatures in lassen en installatietechniek - in de recruitmenttool die ze in Lovable had gebouwd. De AI-matching werkte. Recruiters waren enthousiast. Toen mailde een kandidaat met de vraag waarom een bedrijf waar hij nooit had gesolliciteerd hem had gebeld, en besefte ze dat elke recruiter op het platform elk cv kon doorzoeken, inclusief kandidaten die op één specifieke vacature bij één specifiek bedrijf hadden gereageerd - een schoolvoorbeeld van de productieproblemen van AI-apps waar recruitmenttools tegenaan lopen.
 
 Bouwt u een AI-recruitmenttool, dan zijn dit de problemen die bepalen of u kunt lanceren: niet of de matching werkt, maar of kandidaatdata wordt behandeld zoals kandidaten, werkgevers en toezichthouders verwachten.
 
 ## Waarom Cv's Gevoeliger Zijn dan Ze Lijken
 
-Een cv is per definitie persoonsgegevens: naam, adres, telefoon, e-mail, geboortedatum, werkervaring, opleiding, vaak een foto. Veel cv's bevatten ook informatie die kandidaten niet breed zouden delen — gaten door gezondheid, nationaliteit, religie die blijkt uit scholen of vrijwilligerswerk, functies binnen een vakbond. Een deel daarvan zijn bijzondere persoonsgegevens onder artikel 9 van de AVG, waarvoor strengere bescherming geldt.
+Een cv is per definitie persoonsgegevens: naam, adres, telefoon, e-mail, geboortedatum, werkervaring, opleiding, vaak een foto. Veel cv's bevatten ook informatie die kandidaten niet breed zouden delen - gaten door gezondheid, nationaliteit, religie die blijkt uit scholen of vrijwilligerswerk, functies binnen een vakbond. Een deel daarvan zijn bijzondere persoonsgegevens onder artikel 9 van de AVG, waarvoor strengere bescherming geldt.
 
 Werving kent ook een machtsongelijkheid. Kandidaten kunnen moeilijk weigeren gegevens te delen met een mogelijke werkgever, en daarom letten toezichthouders extra op hoe wervingsdata wordt gebruikt en bewaard.
 
@@ -35,11 +35,11 @@ Werving kent ook een machtsongelijkheid. Kandidaten kunnen moeilijk weigeren geg
 
 AI-gegenereerde recruitmentapps hebben meestal één cv-tabel en een zoekfunctie. De interface toont een recruiter misschien alleen de kandidaten voor zijn eigen vacatures, maar de API geeft alles terug. In een omgeving met meerdere werkgevers of een uitzendbureau betekent dat dat kandidaten worden blootgesteld aan organisaties waar ze nooit op hebben gesolliciteerd.
 
-Het model voor productie beperkt de toegang expliciet: de gegevens van een kandidaat zijn zichtbaar voor de organisatie waarop hij heeft gesolliciteerd (of voor recruiters met wie hij heeft ingestemd te delen), afgedwongen in de database. Talentpools — waarin kandidaten ermee instemmen te worden overwogen voor andere functies — vereisen aparte, expliciete toestemming.
+Het model voor productie beperkt de toegang expliciet: de gegevens van een kandidaat zijn zichtbaar voor de organisatie waarop hij heeft gesolliciteerd (of voor recruiters met wie hij heeft ingestemd te delen), afgedwongen in de database. Talentpools - waarin kandidaten ermee instemmen te worden overwogen voor andere functies - vereisen aparte, expliciete toestemming.
 
 ## Probleem 2: Cv's voor Altijd Opgeslagen, en Openbaar
 
-Geüploade cv-bestanden belanden vaak in opslagbuckets met openbare URL's, omdat dat de makkelijkste manier is om een bestand te tonen. Iedereen met de link — of iedereen die het patroon kan raden — kan ze downloaden. En er wordt nooit iets verwijderd.
+Geüploade cv-bestanden belanden vaak in opslagbuckets met openbare URL's, omdat dat de makkelijkste manier is om een bestand te tonen. Iedereen met de link - of iedereen die het patroon kan raden - kan ze downloaden. En er wordt nooit iets verwijderd.
 
 Afhandeling op productieniveau betekent privéopslag met kortlevende ondertekende links, virusscans bij uploaden en bewaarregels. Richtlijnen van de Nederlandse toezichthouder geven al lang aan dat sollicitatiegegevens doorgaans binnen ongeveer vier weken na afloop van een procedure moeten worden verwijderd, of tot een jaar met toestemming van de kandidaat voor toekomstige vacatures. Uw tool moet dat automatisch uitvoeren; recruiters gaan het niet met de hand doen.
 
@@ -55,7 +55,7 @@ In de praktijk hoort een recruitmenttool in productie een mens in de besluitvorm
 
 ## Probleem 5: Rechten van Kandidaten
 
-Kandidaten kunnen om inzage, correctie of verwijdering van hun gegevens vragen. Ze kunnen ook vragen wat een organisatie na een afwijzing nog over hen bewaart. Een tool in productie heeft een manier nodig om alle gegevens over één persoon te vinden — over sollicitaties, notities, berichten en bestanden heen — ze te exporteren en volledig te verwijderen, ook uit zoekindexen en eventuele AI-embeddings die van hun cv zijn gemaakt.
+Kandidaten kunnen om inzage, correctie of verwijdering van hun gegevens vragen. Ze kunnen ook vragen wat een organisatie na een afwijzing nog over hen bewaart. Een tool in productie heeft een manier nodig om alle gegevens over één persoon te vinden - over sollicitaties, notities, berichten en bestanden heen - ze te exporteren en volledig te verwijderen, ook uit zoekindexen en eventuele AI-embeddings die van hun cv zijn gemaakt.
 
 ## Probleem 6: Notities van Recruiters
 
@@ -80,13 +80,13 @@ Toestemming bij werving wordt vaak verkeerd begrepen. Voor het verwerken van een
 - Biedt **aparte, niet-aangevinkte keuzes** voor talentpools, delen en verbetering van het model.
 - Legt elke keuze vast met de exacte getoonde tekst, de versie en een tijdstempel.
 - Laat kandidaten hun keuzes wijzigen vanuit hun account of via een link in elke e-mail.
-- Voert intrekking automatisch door — de kandidaat wordt direct uit pools en gedeelde weergaven verwijderd.
+- Voert intrekking automatisch door - de kandidaat wordt direct uit pools en gedeelde weergaven verwijderd.
 
 Een tabel met toestemmingsregistraties kan `candidate_id`, `purpose`, `granted`, `text_version`, `recorded_at` en `source` bevatten. Die kleine structuur beantwoordt de vraag die toezichthouders en werkgevers het vaakst stellen: "kunt u laten zien waarmee deze persoon instemde, en wanneer?"
 
 ## AI-Matchscores Uitleggen
 
-Rangschikt of scoort uw tool kandidaten, dan zullen recruiters en kandidaten vragen waarom. Een uitlegbare score laat zien aan welke eisen werd voldaan (certificaten, jaren ervaring, talen, locatie) en welke ontbraken, in plaats van één ondoorzichtig getal. Beperk de invoer van de score tot functierelevante criteria, log de versie van het model of de regels die de score maakten, en houd scores adviserend: de recruiter beslist, het systeem ondersteunt. Deze aanpak sluit aan bij de nadruk van de EU AI Act op menselijk toezicht en transparantie bij toepassingen met een hoog risico, en het maakt de tool nuttiger — recruiters vertrouwen suggesties die ze begrijpen.
+Rangschikt of scoort uw tool kandidaten, dan zullen recruiters en kandidaten vragen waarom. Een uitlegbare score laat zien aan welke eisen werd voldaan (certificaten, jaren ervaring, talen, locatie) en welke ontbraken, in plaats van één ondoorzichtig getal. Beperk de invoer van de score tot functierelevante criteria, log de versie van het model of de regels die de score maakten, en houd scores adviserend: de recruiter beslist, het systeem ondersteunt. Deze aanpak sluit aan bij de nadruk van de EU AI Act op menselijk toezicht en transparantie bij toepassingen met een hoog risico, en het maakt de tool nuttiger - recruiters vertrouwen suggesties die ze begrijpen.
 
 ## Indirecte Discriminatie via Proxy's Vermijden
 
@@ -112,7 +112,7 @@ Op platforms die meerdere werkgevers of bureaus bedienen, moet de scheiding abso
 
 ## Beveiliging van Kandidaataccounts
 
-Kandidaten solliciteren vaak één keer en vergeten hun account. Bied inloggen zonder wachtwoord of via een magische link met korte geldigheid, vermijd langlevende sessies, sta het verwijderen van een account toe zonder contact met support, en stuur cv's nooit als e-mailbijlage naar recruiters — stuur in plaats daarvan een link naar het platform. Eis voor recruiteraccounts meerfactorauthenticatie, omdat een gecompromitteerd recruiteraccount veel kandidaten tegelijk blootstelt.
+Kandidaten solliciteren vaak één keer en vergeten hun account. Bied inloggen zonder wachtwoord of via een magische link met korte geldigheid, vermijd langlevende sessies, sta het verwijderen van een account toe zonder contact met support, en stuur cv's nooit als e-mailbijlage naar recruiters - stuur in plaats daarvan een link naar het platform. Eis voor recruiteraccounts meerfactorauthenticatie, omdat een gecompromitteerd recruiteraccount veel kandidaten tegelijk blootstelt.
 
 ## Voorbereiden op Vragen van Werkgevers
 
@@ -150,10 +150,10 @@ In elf werkdagen dwong het team toegang per organisatie af met row level securit
 
 **Resultaat:** Vakkracht informeerde op advies de getroffen kandidaten en de toezichthouder, zonder verdere klachten. Daarna tekende een regionaal uitzendbureau dat eerder om privacyredenen had afgehaakt, en groeide het platform binnen zes maanden naar 31 werkgevers.
 
-> *"De matching was het slimme deel, en het deel waar niemand zich zorgen over maakte. Iedereen maakte zich zorgen over wie de cv's kon zien — en terecht."*
-> — **Sophie Lambrecht, Oprichter, Vakkracht (Leeuwarden)**
+> *"De matching was het slimme deel, en het deel waar niemand zich zorgen over maakte. Iedereen maakte zich zorgen over wie de cv's kon zien - en terecht."*
+> - **Sophie Lambrecht, Oprichter, Vakkracht (Leeuwarden)**
 
-**Kosten & Tijdlijn:** € 3.300 (Launch Ready-pakket met toegangsbeheer, opslag, bewaartermijnen, toestemming en beoordelingsworkflow voor AI) — afgerond in 11 werkdagen.
+**Kosten & Tijdlijn:** € 3.300 (Launch Ready-pakket met toegangsbeheer, opslag, bewaartermijnen, toestemming en beoordelingsworkflow voor AI) - afgerond in 11 werkdagen.
 
 ## Veelgestelde Vragen
 

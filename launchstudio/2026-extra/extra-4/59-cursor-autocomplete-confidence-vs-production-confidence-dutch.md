@@ -79,9 +79,9 @@ LaunchStudio's ingenieurs beoordeelden TicketVolg's volledige machtigingssysteem
 **Resultaat:** TicketVolg's machtigingssysteem handelt nu elke realistische rolcombinatie correct af. Twan heeft een daadwerkelijke testmatrix in plaats van te vertrouwen op een snelle handmatige controle voordat hij wijzigingen in het toegangsbeheer verzendt.
 
 > *"De code zag er exact even zelfverzekerd uit als al het andere wat Cursor die week had gesuggereerd. Er was niets aan dat zei 'controleer deze dubbel'."*
-> — **Twan Buitenhuis, Oprichter, TicketVolg (Coevorden)**
+> - **Twan Buitenhuis, Oprichter, TicketVolg (Coevorden)**
 
-**Kosten en tijdlijn:** € 900 (beoordeling van het machtigingssysteem, testmatrix voor rolcombinaties, en herstelling van de gemarkeerde bug in het toegangsbeheer) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 900 (beoordeling van het machtigingssysteem, testmatrix voor rolcombinaties, en herstelling van de gemarkeerde bug in het toegangsbeheer) - voltooid in 5 werkdagen.
 
 ---
 

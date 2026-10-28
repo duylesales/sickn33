@@ -34,15 +34,15 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Haarlem sits close enough to Amsterdam that most residents default to commuting in for work, including for AI and data roles — a habit reinforced by how job search itself works, since a national search for "AI jobs" naturally surfaces the larger, more visible Amsterdam market first. That habit means Haarlem's own, smaller local market gets structurally under-considered, not because it's empty, but because nobody's default search method surfaces it.
+Haarlem sits close enough to Amsterdam that most residents default to commuting in for work, including for AI and data roles - a habit reinforced by how job search itself works, since a national search for "AI jobs" naturally surfaces the larger, more visible Amsterdam market first. That habit means Haarlem's own, smaller local market gets structurally under-considered, not because it's empty, but because nobody's default search method surfaces it.
 
 ## What Actually Sits in and Around Haarlem
 
-The area's logistics-adjacent position near Schiphol, combined with a base of regional service and consumer-goods companies, produces a modest but real demand for applied data and analytics work — smaller in volume than Amsterdam, but with correspondingly less competition per listing.
+The area's logistics-adjacent position near Schiphol, combined with a base of regional service and consumer-goods companies, produces a modest but real demand for applied data and analytics work - smaller in volume than Amsterdam, but with correspondingly less competition per listing.
 
 ## Why the Default Assumption Deserves a Second Look
 
-The reflex to commute into Amsterdam is often driven by search habit rather than a deliberate comparison. A candidate who has genuinely compared a local Haarlem role against an equivalent Amsterdam commute — factoring in the actual daily time cost — sometimes finds the local option is a better trade even at a somewhat lower prestige or brand recognition, especially if the role itself is a good technical fit.
+The reflex to commute into Amsterdam is often driven by search habit rather than a deliberate comparison. A candidate who has genuinely compared a local Haarlem role against an equivalent Amsterdam commute - factoring in the actual daily time cost - sometimes finds the local option is a better trade even at a somewhat lower prestige or brand recognition, especially if the role itself is a good technical fit.
 
 ## The Entity Landscape Around Haarlem
 
@@ -56,26 +56,26 @@ The reflex to commute into Amsterdam is often driven by search habit rather than
 
 | | What a default Amsterdam-area search surfaces | What's actually available locally in Haarlem |
 |---|---|---|
-| Visibility | High — Amsterdam dominates search results | Low — requires deliberate local search |
-| Competition per role | High — national and international pool | Lower — smaller, more local pool |
+| Visibility | High - Amsterdam dominates search results | Low - requires deliberate local search |
+| Competition per role | High - national and international pool | Lower - smaller, more local pool |
 | Commute if you live in Haarlem | Real cost, often underweighted | Minimal to none |
 | Employer character | Consumer tech, larger brands | Smaller, regional service and logistics employers |
 
 ## Why This Pattern Repeats Across Every Randstad-Adjacent Town
 
-Haarlem's situation mirrors Purmerend's, Almere's and Hoofddorp's: a strong, gravitationally dominant neighboring city pulls search behavior toward itself, leaving each smaller town's genuine local market underexplored by its own residents. The fix is the same in every case — deliberately search the smaller town by name and by distance, rather than letting a generic regional search default to whichever city has the loudest employer brands.
+Haarlem's situation mirrors Purmerend's, Almere's and Hoofddorp's: a strong, gravitationally dominant neighboring city pulls search behavior toward itself, leaving each smaller town's genuine local market underexplored by its own residents. The fix is the same in every case - deliberately search the smaller town by name and by distance, rather than letting a generic regional search default to whichever city has the loudest employer brands.
 
 ## A Walkthrough: Testing the Default Assumption Explicitly
 
-A candidate living in Haarlem has always assumed commuting into Amsterdam is simply the price of a good AI/data career, without ever explicitly comparing a specific local role against a specific Amsterdam equivalent. One week, they deliberately search local Haarlem listings alongside their usual Amsterdam-focused search, and find a role at a regional consumer-goods company requiring nearly identical skills to what they'd apply for in Amsterdam, at a modest pay difference but a 45-minute daily time savings each way. Running the numbers — roughly 350 hours a year in saved commute time — reframes what had always felt like an unquestioned trade-off into a genuinely close call worth deliberating rather than assuming away.
+A candidate living in Haarlem has always assumed commuting into Amsterdam is simply the price of a good AI/data career, without ever explicitly comparing a specific local role against a specific Amsterdam equivalent. One week, they deliberately search local Haarlem listings alongside their usual Amsterdam-focused search, and find a role at a regional consumer-goods company requiring nearly identical skills to what they'd apply for in Amsterdam, at a modest pay difference but a 45-minute daily time savings each way. Running the numbers - roughly 350 hours a year in saved commute time - reframes what had always felt like an unquestioned trade-off into a genuinely close call worth deliberating rather than assuming away.
 
 ## A Misconception About What "Settling" Means in This Context
 
-Some candidates worry that choosing a local Haarlem role over an Amsterdam one represents "settling" for something lesser, associating the bigger city with inherently better opportunity. This framing conflates city size with opportunity quality — a genuinely good technical fit at a smaller local employer isn't a lesser choice than a mediocre fit at a more prestigious-sounding Amsterdam company; it's simply a different trade-off that deserves evaluation on its actual merits, not on the assumed prestige of the city name.
+Some candidates worry that choosing a local Haarlem role over an Amsterdam one represents "settling" for something lesser, associating the bigger city with inherently better opportunity. This framing conflates city size with opportunity quality - a genuinely good technical fit at a smaller local employer isn't a lesser choice than a mediocre fit at a more prestigious-sounding Amsterdam company; it's simply a different trade-off that deserves evaluation on its actual merits, not on the assumed prestige of the city name.
 
 ## Why This Pattern Is Worth Recognizing Beyond Haarlem Specifically
 
-The dynamic described here — a dominant neighboring city pulling search behavior away from a smaller town's genuine local opportunities — repeats across nearly every Randstad-adjacent town discussed on this site. Once you recognize this pattern in Haarlem, you're better equipped to notice and correct for it anywhere else you might live or consider living in the future, rather than relearning the same lesson each time.
+The dynamic described here - a dominant neighboring city pulling search behavior away from a smaller town's genuine local opportunities - repeats across nearly every Randstad-adjacent town discussed on this site. Once you recognize this pattern in Haarlem, you're better equipped to notice and correct for it anywhere else you might live or consider living in the future, rather than relearning the same lesson each time.
 
 ## What Living in Haarlem Actually Optimizes For, Beyond Just Job Search
 
@@ -91,18 +91,18 @@ Haarlem is the capital of the province of **Noord-Holland** and part of the **Me
 
 | Area | Distance from Haarlem | Economic character | Relevant data work |
 |---|---|---|---|
-| **Haarlem city** | — | Provincial government, healthcare, business services, retail | Public-sector information analysis, hospital analytics, customer data |
+| **Haarlem city** | - | Provincial government, healthcare, business services, retail | Public-sector information analysis, hospital analytics, customer data |
 | **Haarlemmermeer (Hoofddorp, Schiphol area)** | Around 20–30 minutes by bus or car | Aviation, logistics, international offices, one of the country's largest data-centre locations | Operations forecasting, logistics planning, data infrastructure |
 | **IJmond (Velsen, IJmuiden)** | Around 20–30 minutes | Heavy industry and port activity, including the Tata Steel works | Process data, predictive maintenance, emissions and energy analytics |
 | **Bollenstreek (around Lisse and Hillegom)** | Around 20–30 minutes | Flower bulbs and horticulture | Supply and demand forecasting, logistics, crop data |
 | **Amsterdam Sloterdijk and Centraal** | Around 10–15 minutes by train | Business services, tech, finance | The full Amsterdam market for hybrid roles |
 | **Leiden** | Around 20–25 minutes by train | Life sciences and university research | Bioinformatics, clinical and research data |
 
-This map changes the "commute to Amsterdam or nothing" framing. From Haarlem, Leiden's life sciences cluster, the industrial data of the IJmond and the logistics and data-centre economy of the Haarlemmermeer are all within reach — often via connections that do not run through Amsterdam at all.
+This map changes the "commute to Amsterdam or nothing" framing. From Haarlem, Leiden's life sciences cluster, the industrial data of the IJmond and the logistics and data-centre economy of the Haarlemmermeer are all within reach - often via connections that do not run through Amsterdam at all.
 
 ## Named Local Employers and Institutions
 
-**Province of Noord-Holland.** The provincial government is based in Haarlem and works with data on mobility, spatial planning, nature, water and energy — work usually titled as information analysis or policy advice rather than AI.
+**Province of Noord-Holland.** The provincial government is based in Haarlem and works with data on mobility, spatial planning, nature, water and energy - work usually titled as information analysis or policy advice rather than AI.
 
 **Spaarne Gasthuis.** One of the larger hospital organisations in the region, with locations in Haarlem and Hoofddorp. Hospital data work includes capacity planning, patient flow and quality reporting, under strict health-data regulation.
 
@@ -150,16 +150,16 @@ Browse current AI, machine learning and data vacancies in and around Haarlem at 
 ## Frequently Asked Questions
 
 ### (Scenario: Haarlem resident who defaults to commuting into Amsterdam) Should I automatically commute into Amsterdam for AI work if I live in Haarlem?
-Not automatically — compare the actual local Haarlem options against an equivalent Amsterdam commute, factoring in real daily time cost, before assuming the larger market is the better choice.
+Not automatically - compare the actual local Haarlem options against an equivalent Amsterdam commute, factoring in real daily time cost, before assuming the larger market is the better choice.
 
 ### (Scenario: candidate unsure if Haarlem has a real local market) Is there a genuine local AI/data job market in Haarlem, or is it all just an Amsterdam suburb?
 There's a real, if smaller, local market shaped by the area's Schiphol-adjacent logistics position and a base of regional service and consumer-goods companies.
 
 ### (Scenario: candidate wondering why local options are overlooked) Why do people default to commuting into Amsterdam instead of considering local Haarlem roles?
-Largely search habit — a national "AI jobs" search naturally surfaces the larger, more visible Amsterdam market first, which reinforces the commuting default without it being a deliberate comparison.
+Largely search habit - a national "AI jobs" search naturally surfaces the larger, more visible Amsterdam market first, which reinforces the commuting default without it being a deliberate comparison.
 
 ### (Scenario: candidate worried a local role is lower prestige) Is a local Haarlem role a worse choice than a similar Amsterdam role?
-Not necessarily — once the real commute time cost is factored in, a local option can be a better overall trade, especially if it's a good technical fit, even with somewhat less brand recognition.
+Not necessarily - once the real commute time cost is factored in, a local option can be a better overall trade, especially if it's a good technical fit, even with somewhat less brand recognition.
 
 ### (Scenario: candidate deciding how to search) How should I search for local roles in Haarlem specifically?
 Filter by city and distance from home rather than relying on a generic national search, which tends to surface Amsterdam listings disproportionately.
@@ -169,10 +169,10 @@ Filter by city and distance from home rather than relying on a generic national 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I automatically commute into Amsterdam for AI work if I live in Haarlem?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically — compare actual local Haarlem options against an equivalent Amsterdam commute, factoring in real daily time cost."}},
+    {"@type": "Question", "name": "Should I automatically commute into Amsterdam for AI work if I live in Haarlem?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - compare actual local Haarlem options against an equivalent Amsterdam commute, factoring in real daily time cost."}},
     {"@type": "Question", "name": "Is there a genuine local AI/data job market in Haarlem, or is it all just an Amsterdam suburb?", "acceptedAnswer": {"@type": "Answer", "text": "There's a real, if smaller, local market shaped by the area's Schiphol-adjacent logistics position and regional service companies."}},
-    {"@type": "Question", "name": "Why do people default to commuting into Amsterdam instead of considering local Haarlem roles?", "acceptedAnswer": {"@type": "Answer", "text": "Largely search habit — a national search naturally surfaces the larger, more visible Amsterdam market first."}},
-    {"@type": "Question", "name": "Is a local Haarlem role a worse choice than a similar Amsterdam role?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — once real commute time cost is factored in, a local option can be a better overall trade."}},
+    {"@type": "Question", "name": "Why do people default to commuting into Amsterdam instead of considering local Haarlem roles?", "acceptedAnswer": {"@type": "Answer", "text": "Largely search habit - a national search naturally surfaces the larger, more visible Amsterdam market first."}},
+    {"@type": "Question", "name": "Is a local Haarlem role a worse choice than a similar Amsterdam role?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - once real commute time cost is factored in, a local option can be a better overall trade."}},
     {"@type": "Question", "name": "How should I search for local roles in Haarlem specifically?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by city and distance from home rather than relying on a generic national search."}}
   ]
 }

@@ -1,10 +1,10 @@
-⚠️ Luke, a support lead, used **Lovable** to build a PDF search app — then watched a user bypass his document access controls with a single prompt injection. 💉
+⚠️ Luke, a support lead, used **Lovable** to build a PDF search app - then watched a user bypass his document access controls with a single prompt injection. 💉
 
 LLMs process your system prompt and a user's input as one undifferentiated stream of tokens, so the model can't inherently tell which instruction actually has authority. 🧠
 
 ❌ Trusting a "don't reveal confidential data" instruction buried in the system prompt
 ❌ Indirect injections hidden in white-on-white PDF text, hijacking an agent the moment it reads the file
-❌ Assuming a single filter or vendor claim eliminates the risk — natural language has no formal grammar like SQL
+❌ Assuming a single filter or vendor claim eliminates the risk - natural language has no formal grammar like SQL
 
 ✅ Strict XML delimiters plus the "sandwiching" technique to mark untrusted data clearly
 ✅ Least-privilege backend permissions (read-only DB roles) so a hijacked agent still can't execute destructive commands

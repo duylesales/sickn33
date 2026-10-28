@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A larger customer asks your SaaS for "an independent security assessment." You search, and the options fall into two camps. On one side, established consultancies and security firms with recognised names, formal methodologies and reports that procurement departments know. On the other, hands-on specialists who look at your code, fix what they find and hand you something that works. For an AI application security audit on an AI-built product, both have their place — and choosing the wrong one wastes money or time.
+A larger customer asks your SaaS for "an independent security assessment." You search, and the options fall into two camps. On one side, established consultancies and security firms with recognised names, formal methodologies and reports that procurement departments know. On the other, hands-on specialists who look at your code, fix what they find and hand you something that works. For an AI application security audit on an AI-built product, both have their place - and choosing the wrong one wastes money or time.
 
 ## What a Large Consultancy Typically Delivers
 
@@ -30,7 +30,7 @@ Established security firms and the security arms of large consultancies usually 
 - **Formal penetration testing** by certified testers, following recognised methodologies.
 - **A report procurement teams accept,** with executive summary, risk ratings and remediation advice.
 - **Retesting** once you have fixed the findings.
-- **Broader services** — ISO 27001 preparation, compliance mapping, security programme advice.
+- **Broader services** - ISO 27001 preparation, compliance mapping, security programme advice.
 
 What they usually do not do is fix your code. Findings come as a report; remediation is yours. Lead times can be weeks, and prices for a web application test commonly start in the several-thousand-euro range and rise with scope.
 
@@ -38,8 +38,8 @@ What they usually do not do is fix your code. Findings come as a report; remedia
 
 A specialist focused on AI-built apps usually offers:
 
-- **Code and configuration review** — reading the code, database policies and infrastructure, where most AI-app flaws live.
-- **Fixes** — access control, secrets, payments, validation, logging — implemented directly.
+- **Code and configuration review** - reading the code, database policies and infrastructure, where most AI-app flaws live.
+- **Fixes** - access control, secrets, payments, validation, logging - implemented directly.
 - **Retest and evidence** that the issues are closed, often as automated tests.
 - **Documentation** you can share with customers.
 
@@ -61,9 +61,9 @@ What they usually do not provide is the brand-name certification some enterprise
 
 For AI-built apps, the most efficient order is usually: **specialist first, consultancy second.**
 
-A formal penetration test on an unhardened AI prototype spends expensive tester time documenting basics — broken access control, exposed keys, missing rate limits — that a review would find and fix in days. You then pay for a retest. Hardening first means the formal test focuses on genuine residual risk, produces a cleaner report and often needs no retest at all.
+A formal penetration test on an unhardened AI prototype spends expensive tester time documenting basics - broken access control, exposed keys, missing rate limits - that a review would find and fix in days. You then pay for a retest. Hardening first means the formal test focuses on genuine residual risk, produces a cleaner report and often needs no retest at all.
 
-If your customer only needs evidence of a competent independent review, the specialist's report may be enough. Ask them — many mid-sized buyers accept a detailed review with evidence of fixes.
+If your customer only needs evidence of a competent independent review, the specialist's report may be enough. Ask them - many mid-sized buyers accept a detailed review with evidence of fixes.
 
 ## Questions to Ask Either Provider
 
@@ -75,7 +75,7 @@ If your customer only needs evidence of a competent independent review, the spec
 
 ## What Each Report Looks Like
 
-Knowing what you will receive helps choose the right AI application security audit. A formal penetration test report from a larger firm typically contains an executive summary, scope and methodology, a list of findings with risk ratings (often CVSS-based), technical details and reproduction steps, remediation advice and an appendix with tools and test accounts used. A hands-on specialist's report typically contains a summary in plain language, findings grouped by area (access, secrets, payments, infrastructure), evidence, the fix applied or recommended, re-test status and the automated tests added to prevent regression. Both are valid; they answer different questions — "how exposed is this system?" versus "what was wrong and is it fixed?"
+Knowing what you will receive helps choose the right AI application security audit. A formal penetration test report from a larger firm typically contains an executive summary, scope and methodology, a list of findings with risk ratings (often CVSS-based), technical details and reproduction steps, remediation advice and an appendix with tools and test accounts used. A hands-on specialist's report typically contains a summary in plain language, findings grouped by area (access, secrets, payments, infrastructure), evidence, the fix applied or recommended, re-test status and the automated tests added to prevent regression. Both are valid; they answer different questions - "how exposed is this system?" versus "what was wrong and is it fixed?"
 
 ## How Buyers Evaluate Security Evidence
 
@@ -97,7 +97,7 @@ When a formal test follows a specialist review, scope it precisely: which enviro
 
 ## Handling Findings From Either Provider
 
-Whatever the source, handle findings consistently: record each in your issue tracker with severity, owner and due date; fix critical and high findings before launch or the customer deadline; document accepted risks with reasons; add regression tests; and request re-testing. Keep the final report, re-test results and list of accepted risks together — this package is what you share with customers, under NDA where appropriate.
+Whatever the source, handle findings consistently: record each in your issue tracker with severity, owner and due date; fix critical and high findings before launch or the customer deadline; document accepted risks with reasons; add regression tests; and request re-testing. Keep the final report, re-test results and list of accepted risks together - this package is what you share with customers, under NDA where appropriate.
 
 ## Cost and Timing Considerations
 
@@ -105,7 +105,7 @@ Formal penetration tests are usually priced per tester-day, and lead times of se
 
 ## Building Toward Certification
 
-Some SaaS companies eventually pursue ISO 27001 or SOC 2 because customers require it. These are programmes, not tests: they cover policies, risk management, access reviews, supplier management, incident management and continuous evidence collection. The practices built during hardening — access registers, CI security checks, backup restore tests, incident procedures — form a useful foundation. Starting early with lightweight versions of these controls makes a later certification project considerably shorter.
+Some SaaS companies eventually pursue ISO 27001 or SOC 2 because customers require it. These are programmes, not tests: they cover policies, risk management, access reviews, supplier management, incident management and continuous evidence collection. The practices built during hardening - access registers, CI security checks, backup restore tests, incident procedures - form a useful foundation. Starting early with lightweight versions of these controls makes a later certification project considerably shorter.
 
 ## Questions to Ask Before Choosing
 
@@ -117,7 +117,7 @@ Security tests differ in how much the tester knows. **Black-box** testers see on
 
 ## What Specialists Look at That Outsiders Cannot
 
-A hands-on specialist with repository access can check things no external test sees directly: whether database policies exist for every table, whether any code path uses a service-role key, whether secrets ever entered git history, whether error handlers swallow failures, whether migrations were applied outside version control, whether CI actually blocks bad merges and whether backups have been restored. These are often the root causes behind the symptoms a penetration test would report — which is why fixing them first makes a later formal test cleaner.
+A hands-on specialist with repository access can check things no external test sees directly: whether database policies exist for every table, whether any code path uses a service-role key, whether secrets ever entered git history, whether error handlers swallow failures, whether migrations were applied outside version control, whether CI actually blocks bad merges and whether backups have been restored. These are often the root causes behind the symptoms a penetration test would report - which is why fixing them first makes a later formal test cleaner.
 
 ## Timing Around Customer Deals
 
@@ -125,7 +125,7 @@ Security requests often arrive late in a sales cycle, with a signature waiting o
 
 ## Communicating Results to Customers
 
-Share results thoughtfully. Most customers want a summary, not raw findings: what was tested, when and by whom, the number of findings by severity, confirmation that critical and high findings are fixed, and a contact for questions. Provide full reports only under NDA when required. Never overstate — "no critical findings remain" is better than "fully secure," which no one can honestly claim.
+Share results thoughtfully. Most customers want a summary, not raw findings: what was tested, when and by whom, the number of findings by severity, confirmation that critical and high findings are fixed, and a contact for questions. Provide full reports only under NDA when required. Never overstate - "no critical findings remain" is better than "fully secure," which no one can honestly claim.
 
 ## A Balanced Security Budget for a Growing SaaS
 
@@ -147,7 +147,7 @@ Assurance is only worth buying once the system deserves it; fix first, then prov
 
 LaunchStudio is the hands-on option: review, fixes, retest and a report, at a fixed price, typically within one to three weeks. When a customer requires a formal penetration test by an accredited party, LaunchStudio prepares the system for it and handles any findings afterwards. LaunchStudio is powered by Manifera, whose CEO Herre Roelevink co-founded CyberDevOps (now CFLW Cyber Strategies) and helped develop a dark web monitoring product with TNO. Manifera works from Amsterdam (Herengracht 420), Singapore and Ho Chi Minh City. See [Manifera's about page](https://www.manifera.com/about-us/); [OWASP's Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) describes what thorough testing covers regardless of provider.
 
-[Get a fixed-price quote](https://launchstudio.eu/en/#contact) — and tell us what your customer is asking for.
+[Get a fixed-price quote](https://launchstudio.eu/en/#contact) - and tell us what your customer is asking for.
 
 ## Real example
 
@@ -162,9 +162,9 @@ The energy company accepted the LaunchStudio report for the pilot phase and aske
 **Result:** Zonwijzer started the pilot two months earlier than a pentest-first route would have allowed, and the eventual formal test cost roughly 40% less than the original quote because of the reduced scope.
 
 > *"The big-name report was right for the final step. It would have been an expensive way to discover the first four problems."*
-> — **Stefan Hulshof, Founder, Zonwijzer (Houten)**
+> - **Stefan Hulshof, Founder, Zonwijzer (Houten)**
 
-**Cost & Timeline:** €2,900 (security review, fixes, authorisation tests and report) — completed in 10 business days.
+**Cost & Timeline:** €2,900 (security review, fixes, authorisation tests and report) - completed in 10 business days.
 
 ## Frequently Asked Questions
 
@@ -186,7 +186,7 @@ Herre Roelevink's background at CyberDevOps and work with TNO grounds LaunchStud
 
 ### Can a security report be used in marketing or trust pages?
 
-A summary can. Describing your security practices and independent review on a trust page helps buyers and gives AI assistants accurate information — without publishing the detailed findings.
+A summary can. Describing your security practices and independent review on a trust page helps buyers and gives AI assistants accurate information - without publishing the detailed findings.
 
 <script type="application/ld+json">
 {

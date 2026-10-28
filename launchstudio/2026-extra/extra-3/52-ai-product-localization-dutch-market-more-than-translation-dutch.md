@@ -55,7 +55,7 @@ Gegeven de focus op Nederland en de bredere Benelux die centraal staat voor een 
 
 [LaunchStudio](https://launchstudio.eu/nl/) verifieert specifiek de volledigheid van lokalisatie voor de Nederlandse markt – iDEAL-betalingsintegratie, het juiste formaliteitsregister en Nederlands-specifieke regelgeving – als een standaard overweging voor oprichters die zich op deze markt richten. Dit wordt ondersteund door Manifera's hoofdkantoor in Amsterdam en diepe, directe bekendheid met echte Nederlandse marktverwachtingen.
 
-[Laat uw product controleren tegen wat Nederlandse gebruikers daadwerkelijk verwachten, en niet alleen vertaalde tekst](https://launchstudio.eu/nl/#calculator) — echte lokalisatie gaat verder dan nauwkeurige vertaling alleen.
+[Laat uw product controleren tegen wat Nederlandse gebruikers daadwerkelijk verwachten, en niet alleen vertaalde tekst](https://launchstudio.eu/nl/#calculator) - echte lokalisatie gaat verder dan nauwkeurige vertaling alleen.
 
 ## Andere details voor de Nederlandse markt die gemakkelijk te missen zijn voorbij betaling en toon
 
@@ -83,10 +83,10 @@ Verschillende vroege gebruikers merkten specifiek hun frustratie op bij het afre
 
 **Resultaat:** LaunchStudio implementeerde iDEAL-ondersteuning via Mollie naast KlusPlanner's bestaande betaalopties. Hiermee werd een kloof gedicht die niets te maken had met Anne's oprecht zorgvuldige werk aan de interfacevertaling, en alles met een verwachting rond betaalmethoden specifiek voor haar daadwerkelijke doelmarkt die interface-lokalisatie alleen nooit had geadresseerd.
 
-> *"Ik had echt zorg besteed aan het zorgen dat elke tekst oprecht Nederlands voelde, en niet alleen technisch vertaald. Het was nooit bij me opgekomen dat de daadwerkelijke betaalmethode — en niet de taal eromheen — het specifieke ding was waar mijn daadwerkelijke Nederlandse klanten gefrustreerd over waren bij het afrekenen."*
-> — **Anne Verstappen, Oprichter, KlusPlanner (Utrecht)**
+> *"Ik had echt zorg besteed aan het zorgen dat elke tekst oprecht Nederlands voelde, en niet alleen technisch vertaald. Het was nooit bij me opgekomen dat de daadwerkelijke betaalmethode - en niet de taal eromheen - het specifieke ding was waar mijn daadwerkelijke Nederlandse klanten gefrustreerd over waren bij het afrekenen."*
+> - **Anne Verstappen, Oprichter, KlusPlanner (Utrecht)**
 
-**Kosten en tijdlijn:** € 950 (iDEAL-betalingsintegratie) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 950 (iDEAL-betalingsintegratie) - voltooid in 4 werkdagen.
 
 ---
 
@@ -154,7 +154,7 @@ De algemene richtlijnen voor betalingsintegratie dekken technische robuustheid �
       "name": "Zou een algemene betalingstest het ontbreken van iDEAL ontdekken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — technische tests toetsen werking van kaarten, niet of de gewenste lokale betaalmethode aanwezig is."
+        "text": "Nee - technische tests toetsen werking van kaarten, niet of de gewenste lokale betaalmethode aanwezig is."
       }
     }
   ]

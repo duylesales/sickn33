@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 "Kan dit scherm live updaten?" is een begrijpelijk verzoek dat in vrijwel elk productoverleg voorbijkomt. En het antwoord is meestal enthousiast "ja", nog voordat iemand heeft stilgestaan bij wat het daadwerkelijk kost.
 
-Supabase maakt het toevoegen van live datastromen zo laagdrempelig dat het haast gratis aanvoelt. Maar het is niet gratis. De werkelijke prijs betaal je op plekken waar oprichters zelden kijken: een permanent openstaande WebSocket-verbinding per actieve gebruiker, een beveiligingsbeslissing die schokkend snel misgaat, accuverbruik op mobiele apparaten en een reeks typische netwerkvalkuilen — verbroken verbindingen, gemiste events, dubbele berichten — die pas zichtbaar worden zodra echte eindgebruikers jouw SaaS via wisselvallige 4G- en 5G-netwerken gebruiken.
+Supabase maakt het toevoegen van live datastromen zo laagdrempelig dat het haast gratis aanvoelt. Maar het is niet gratis. De werkelijke prijs betaal je op plekken waar oprichters zelden kijken: een permanent openstaande WebSocket-verbinding per actieve gebruiker, een beveiligingsbeslissing die schokkend snel misgaat, accuverbruik op mobiele apparaten en een reeks typische netwerkvalkuilen - verbroken verbindingen, gemiste events, dubbele berichten - die pas zichtbaar worden zodra echte eindgebruikers jouw SaaS via wisselvallige 4G- en 5G-netwerken gebruiken.
 
 Dat betekent niet dat je realtime moet vermijden. Het betekent dat je een bewuste architectuurbeslissing moet nemen, in plaats van live functies in te bouwen puur omdat het er leuk uitziet in een demo.
 
@@ -42,7 +42,7 @@ Elk van deze mechanismen heeft een ander kostenplaatje en compleet verschillende
 
 Dit is het aspect dat de meeste aandacht vereist: een verkeerd geconfigureerd realtime-abonnement kan gevoelige bedrijfsdata broadcasten die in je gewone API-queries juist keurig beveiligd is.
 
-Database-wijzigingen kunnen Row Level Security (RLS) respecteren, maar dat vereist een expliciete configuratie — de RLS-policies moeten niet alleen bestaan, maar het realtime-kanaal moet ook expliciet worden ingesteld om deze regels af te dwingen. Een project dat realtime klakkeloos inschakelt op een tabel zonder deze configuratie, zendt potentieel elke databasewijziging uit naar álle verbonden clients, ongeacht wie ze zijn.
+Database-wijzigingen kunnen Row Level Security (RLS) respecteren, maar dat vereist een expliciete configuratie - de RLS-policies moeten niet alleen bestaan, maar het realtime-kanaal moet ook expliciet worden ingesteld om deze regels af te dwingen. Een project dat realtime klakkeloos inschakelt op een tabel zonder deze configuratie, zendt potentieel elke databasewijziging uit naar álle verbonden clients, ongeacht wie ze zijn.
 
 Het gevolg is desastreus: jouw gebruikersinterface toont een klant netjes alleen zijn eigen ritten of bestellingen, terwijl het realtime WebSocket-kanaal op de achtergrond de gegevens van ál je klanten naar zijn browser streamt.
 
@@ -54,13 +54,13 @@ Twee zaken om strikt te verifiëren: lees de actuele platformdocumentatie over h
 
 **Gelijktijdige samenwerking (collaborative editing),** waarbij twee teamleden gelijktijdig in hetzelfde document of dossier werken en het direct zien van elkaars wijzigingen conflicten en dataverlies voorkomt.
 
-**Operationele dispatch- en dashboardschermen.** Een keukenmonitor in de horeca, een ritplanning voor koeriers, een wachtrijbord — situaties waarin iemand fysiek naar een scherm kijkt om direct actie te ondernemen, en waar vertraging van enkele minuten leidt tot gemiste leveringen of operationele fouten.
+**Operationele dispatch- en dashboardschermen.** Een keukenmonitor in de horeca, een ritplanning voor koeriers, een wachtrijbord - situaties waarin iemand fysiek naar een scherm kijkt om direct actie te ondernemen, en waar vertraging van enkele minuten leidt tot gemiste leveringen of operationele fouten.
 
 **Directe chat en klantenservice,** waarbij directe interactie het hoofddoel van de interface is.
 
 **Aanwezigheidsindicatoren (Presence),** een ogenschijnlijk bescheiden functie die in zakelijke software enorm rendeert omdat het bewerkingsconflicten voorkomt vóórdat ze ontstaan.
 
-**Live voortgang van langdurige achtergrondtaken** — het importeren van een groot CSV-bestand, het genereren van een AI-rapport of een complexe betalingsverwerking — waarbij de bezoeker anders radeloos naar een laadicoon staart en zich afvraagt of de app is vastgelopen.
+**Live voortgang van langdurige achtergrondtaken** - het importeren van een groot CSV-bestand, het genereren van een AI-rapport of een complexe betalingsverwerking - waarbij de bezoeker anders radeloos naar een laadicoon staart en zich afvraagt of de app is vastgelopen.
 
 De rode draad: er kijkt op dat moment iemand actief naar het scherm, en een vertraging heeft direct meetbare operationele gevolgen.
 
@@ -118,7 +118,7 @@ Als beide antwoorden onomstotelijk naar realtime wijzen, pas het dan uitsluitend
 
 Voor de meeste AI-gebouwde softwareproducten is de juiste balans: realtime op één of twee cruciale operationele schermen, eenvoudige polling elders, en een beveiligingsconfiguratie die grondig is getest in plaats van aangenomen.
 
-LaunchStudio verzorgt dit traject als onderdeel van het productierijp maken van een MVP: we beoordelen waar live updates echt rendement opleveren, configureren autorisatie en Row Level Security zodat datalekken worden uitgesloten, bouwen robuuste herverbindings- en opschoonlogica in, en vervangen overbodige WebSockets door lichte polling waar dat slimmer is — zonder de interface aan te tasten die je in Lovable hebt gebouwd.
+LaunchStudio verzorgt dit traject als onderdeel van het productierijp maken van een MVP: we beoordelen waar live updates echt rendement opleveren, configureren autorisatie en Row Level Security zodat datalekken worden uitgesloten, bouwen robuuste herverbindings- en opschoonlogica in, en vervangen overbodige WebSockets door lichte polling waar dat slimmer is - zonder de interface aan te tasten die je in Lovable hebt gebouwd.
 
 Onze engineers komen van Manifera, met elf jaar ervaring in het bouwen van bedrijfskritische systemen voor partijen zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) en we controleren of jouw realtime setup datalekken bevat, doorgaans binnen één werkdag, of bekijk direct onze [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -126,7 +126,7 @@ Onze engineers komen van Manifera, met elf jaar ervaring in het bouwen van bedri
 
 Live datastromen kun je simpelweg niet betrouwbaar testen vanaf één laptop op een stabiele glasvezelverbinding. Voer deze zes eenvoudige praktijktesten uit:
 
-**Twee accounts op twee apparaten.** Maak een wijziging op apparaat A en verifieer dat apparaat B exact ontvangt wat mag — en vooral niets wat geheim moet blijven. Dit is de belangrijkste beveiligingstest.
+**Twee accounts op twee apparaten.** Maak een wijziging op apparaat A en verifieer dat apparaat B exact ontvangt wat mag - en vooral niets wat geheim moet blijven. Dit is de belangrijkste beveiligingstest.
 
 **De vliegtuigmodus-test.** Zet een smartphone twee minuten in vliegtuigmodus terwijl er op de achtergrond orders worden gewijzigd, en schakel de verbinding weer in. Werkt het scherm de achterstand direct bij, of blijft het stilletjes verouderde data tonen?
 
@@ -148,7 +148,7 @@ Youri Hendriks bouwde met Lovable Ritplanner: een dispatch-tool gebruikt door ze
 
 Live updates waren het belangrijkste verkoopargument van het platform, en tijdens demonstraties werkte het vlekkeloos.
 
-Binnen een maand doken er twee ernstige problemen op. Het realtime database-abonnement op de tabel met ritten was geactiveerd zonder expliciete RLS-autorisatie op het socket-kanaal. Hierdoor ontving elke verbonden chauffeur op de achtergrond een melding van álle aangemaakte ritten binnen alle zes de koeriersbedrijven — inclusief klantadressen en tarieven van concurrerende transporteurs. Omdat de interface alleen de eigen ritten op het scherm tekende, merkte niemand het, totdat een alerte chauffeur toevallig zag dat een onbekend adres een fractie van een seconde oplichtte op zijn scherm.
+Binnen een maand doken er twee ernstige problemen op. Het realtime database-abonnement op de tabel met ritten was geactiveerd zonder expliciete RLS-autorisatie op het socket-kanaal. Hierdoor ontving elke verbonden chauffeur op de achtergrond een melding van álle aangemaakte ritten binnen alle zes de koeriersbedrijven - inclusief klantadressen en tarieven van concurrerende transporteurs. Omdat de interface alleen de eigen ritten op het scherm tekende, merkte niemand het, totdat een alerte chauffeur toevallig zag dat een onbekend adres een fractie van een seconde oplichtte op zijn scherm.
 
 Daarnaast klaagden chauffeurs dat het dashboard tijdens lange diensten "bevroor". WebSocket-abonnementen werden bij het navigeren nooit opgeruimd, waardoor telefoons tegen hun verbindingslimiet aanliepen. Bovendien ontbrak een automatische refetch na een tunnel of het overschakelen tussen wifi en 4G, waardoor chauffeurs urenlang naar een achterhaald rittenoverzicht konden kijken zonder dat iemand het doorhad.
 
@@ -157,9 +157,9 @@ De herstelwerkzaamheden vergden vijf werkdagen: autorisatie op de realtime-strea
 **Resultaat:** het potentiële datalek tussen de concurrerende bedrijven werd gedicht vóórdat er officiële klachten kwamen, de zes opdrachtgevers ontvingen een transparant beveiligingsrapport, en meldingen over vastlopende rittenschermen verdwenen volledig.
 
 > *"De app toonde op het scherm keurig alleen de eigen ritten. Maar het live WebSocket-kanaal zond op de achtergrond alles uit naar iedereen. De enige reden dat we erachter kwamen, was dat een chauffeur een fractie van een seconde een vreemd adres zag knipperen."*
-> — **Youri Hendriks, Oprichter, Ritplanner (Eindhoven)**
+> - **Youri Hendriks, Oprichter, Ritplanner (Eindhoven)**
 
-**Kosten & Doorlooptijd:** € 2.550 (realtime autorisatie en RLS-koppeling, scoping en lifecycle-cleanup van subscriptions, herverbindingslogica en netwerkstatusindicator) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.550 (realtime autorisatie en RLS-koppeling, scoping en lifecycle-cleanup van subscriptions, herverbindingslogica en netwerkstatusindicator) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 

@@ -1,7 +1,7 @@
 340 dashboards. 60 of them needed the semantic model rebuilt from scratch. The vendor's flat per-dashboard quote never saw that coming. 📊
 
 **The Pain Points:**
-❌ **Flat Per-Dashboard Pricing:** Treats a simple chart and a dashboard with row-level security and multi-fact-table joins as the same line item — until the budget blows up.
+❌ **Flat Per-Dashboard Pricing:** Treats a simple chart and a dashboard with row-level security and multi-fact-table joins as the same line item - until the budget blows up.
 ❌ **Reverse-Engineered Logic:** Vendors that recreate calculations from rendered output, not source logic, ship dashboards that look right and calculate wrong.
 ❌ **Retraining Left Out of Scope:** Self-service report authors get zero budgeted training on DAX or LookML's genuinely different evaluation model.
 

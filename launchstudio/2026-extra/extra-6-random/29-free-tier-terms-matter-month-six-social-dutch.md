@@ -1,4 +1,4 @@
-⏰ Loes Peters, oprichtster van PlanStroom, een afsprakenplanningsapp in Spijkenisse gebouwd met Lovable, had het hele product vanaf dag één gebouwd op een AI-model-API met een gratis laag. Dat was logisch tijdens de ontwikkeling — het gebruik was licht en er was geen reden om er verder over na te denken. 😳
+⏰ Loes Peters, oprichtster van PlanStroom, een afsprakenplanningsapp in Spijkenisse gebouwd met Lovable, had het hele product vanaf dag één gebouwd op een AI-model-API met een gratis laag. Dat was logisch tijdens de ontwikkeling - het gebruik was licht en er was geen reden om er verder over na te denken. 😳
 
 Toen brak de lanceerweek aan, en de gratis laag had andere plannen. 🧠
 

@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Before launch, changing your database is a five-second decision. Rename a column, drop a table, restructure a relationship — nothing exists yet, and the worst outcome is that you regenerate some code.
+Before launch, changing your database is a five-second decision. Rename a column, drop a table, restructure a relationship - nothing exists yet, and the worst outcome is that you regenerate some code.
 
 After launch, the same action carries every record your customers have created, and the difference in consequence is total. A rename that takes five seconds can produce an application that cannot read its own data, a booking flow that fails for everyone mid-transaction, and no obvious way back other than a backup that may be hours old.
 
@@ -32,7 +32,7 @@ Three things change on launch day.
 
 **There is data you cannot recreate.** Customer records, uploaded files, historical transactions. The cost of a mistake stops being your time.
 
-**The application is running while you change it.** For a period — seconds or minutes — the code deployed and the schema in the database disagree with each other, and requests arriving during that window hit an inconsistent system.
+**The application is running while you change it.** For a period - seconds or minutes - the code deployed and the schema in the database disagree with each other, and requests arriving during that window hit an inconsistent system.
 
 **Rollback is no longer symmetric.** Reverting code is easy. Reverting a schema change that has already transformed data is frequently impossible, because the original values no longer exist.
 
@@ -52,7 +52,7 @@ Additive changes are nearly free. Transformative ones need care. Destructive one
 
 ## Additive Changes Are Nearly Free
 
-Add the column as nullable or with a sensible default, deploy it, and nothing breaks — running code does not know it exists.
+Add the column as nullable or with a sensible default, deploy it, and nothing breaks - running code does not know it exists.
 
 Two details keep it that way. Avoid adding a column with a mandatory value and no default to a table with existing rows, because the database cannot decide what to put in them. And add indexes deliberately: on a large table, creating an index can lock writes for the duration unless created concurrently, which turns a harmless improvement into an outage.
 
@@ -68,7 +68,7 @@ This is the pattern worth internalising, because it converts the most dangerous 
 
 **Step four: switch reads.** Deploy code that reads from the new structure. The old one is still there and still current, so if anything is wrong you revert the code and nothing is lost.
 
-**Step five: contract.** Once you are confident — days, not minutes — stop writing to the old structure and eventually remove it.
+**Step five: contract.** Once you are confident - days, not minutes - stop writing to the old structure and eventually remove it.
 
 Five deployments instead of one. In exchange, at no point does a failure destroy data, and at every point you can go back by reverting code rather than by restoring a backup.
 
@@ -78,7 +78,7 @@ Dropping something is the one action with no undo.
 
 The safe sequence is to stop using it first, wait, then remove it. Rename it to something obviously deprecated, deploy code that no longer references it, and leave it in place for a week or two while you confirm nothing broke. A column nobody reads costs almost nothing to keep; a column you dropped and needed is a restore from backup with everything since it lost.
 
-Before dropping anything, search your entire codebase for its name — including generated code, scheduled jobs, reports and exports, which are the places references hide.
+Before dropping anything, search your entire codebase for its name - including generated code, scheduled jobs, reports and exports, which are the places references hide.
 
 ## Migrations Belong in the Repository
 
@@ -106,7 +106,7 @@ Transforming existing rows is where migrations take longer than expected.
 
 A migration tested against forty tidy rows tells you the syntax is valid and nothing else.
 
-Test against a copy of production — anonymised if it contains personal data — with the volume and the messiness your real database has: nulls where you did not expect them, duplicates, text in numeric-looking fields, encodings from an import someone did in month two. This is where migrations actually fail, and finding it in staging costs an afternoon rather than a customer-facing outage.
+Test against a copy of production - anonymised if it contains personal data - with the volume and the messiness your real database has: nulls where you did not expect them, duplicates, text in numeric-looking fields, encodings from an import someone did in month two. This is where migrations actually fail, and finding it in staging costs an afternoon rather than a customer-facing outage.
 
 Time it while you are there. A backfill that takes four minutes on a copy and eleven on production is fine; one that takes four minutes on a tenth of the data is a surprise you want in advance.
 
@@ -125,13 +125,13 @@ Every one of these is procedural rather than technical, which is why a routine f
 
 Write it as a file in the repository. Classify it: additive, transformative or destructive. Use expand and contract for anything transformative. Test against a realistic copy and record the timing. Take a backup immediately before running it, and know how long a restore takes. Run backfills in batches, outside peak. Verify with counts and a manual sample. Wait before dropping anything. And write one line in your deployment log saying what changed.
 
-Ten minutes of process around a change that might take one minute to execute — which is the correct ratio once other people's data is involved.
+Ten minutes of process around a change that might take one minute to execute - which is the correct ratio once other people's data is involved.
 
 ## Getting the Foundations in Place
 
 Most AI-built products do not need a migration expert; they need the schema captured in the repository, a staging environment with realistic data, a backup they have tested restoring, and a rehearsed routine for the first few changes.
 
-LaunchStudio sets that up as part of taking a product live: existing schema captured as migrations so the repository becomes the source of truth, staging built with anonymised or generated data, backups verified by restoring, and the expand-and-contract pattern applied to whichever change you are facing — without touching the interface you built in Lovable.
+LaunchStudio sets that up as part of taking a product live: existing schema captured as migrations so the repository becomes the source of truth, staging built with anonymised or generated data, backups verified by restoring, and the expand-and-contract pattern applied to whichever change you are facing - without touching the interface you built in Lovable.
 
 The engineers are Manifera's: eleven years of production database work for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. [Describe your project](https://launchstudio.eu/en/#contact) and you will get a straight answer about whether your next schema change is safe, usually within one business day, or see the [packages](https://launchstudio.eu/en/#packages).
 
@@ -141,7 +141,7 @@ Most migrations are invisible and need no announcement. Three cases are worth co
 
 **Anything they will see.** A field split into two, a category renamed, a value recalculated. If the change alters what appears on their screen, a sentence in advance prevents a support message and a suspicion that something broke.
 
-**Planned unavailability.** If a change genuinely requires a pause — rare with expand and contract, occasionally unavoidable — give a date, a duration and a reason, and choose a time based on your traffic rather than your convenience.
+**Planned unavailability.** If a change genuinely requires a pause - rare with expand and contract, occasionally unavoidable - give a date, a duration and a reason, and choose a time based on your traffic rather than your convenience.
 
 **Anything affecting their own records.** A correction, a deduplication, a retention deletion. People are considerably more accepting of a change to their data announced beforehand than of the same change discovered afterwards.
 
@@ -157,14 +157,14 @@ He needed to split a single `contact` field into a name and a phone number. On a
 
 The deployment failed on a build error. For forty minutes, the live application queried a column that no longer existed, every booking page returned an error, and three centres phoned within the first ten minutes. He restored the old column name, which brought the app back, and discovered afterwards that bookings created during the window had been partially written.
 
-Six business days of work followed: the existing schema captured as migration files so the repository became authoritative; a staging environment created with an anonymised copy of production; the field split redone properly using expand and contract — new columns added, code writing to both, a batched backfill of 9,000 rows verified by count and sample, reads switched, and the old column left in place for two weeks before removal; backups tested with a restore timed at 22 minutes; and a one-line deployment log introduced.
+Six business days of work followed: the existing schema captured as migration files so the repository became authoritative; a staging environment created with an anonymised copy of production; the field split redone properly using expand and contract - new columns added, code writing to both, a batched backfill of 9,000 rows verified by count and sample, reads switched, and the old column left in place for two weeks before removal; backups tested with a restore timed at 22 minutes; and a one-line deployment log introduced.
 
 **Result:** the same split completed with no downtime, and the four schema changes since have each taken two deployments and gone unnoticed by the centres.
 
 > *"I renamed a column. It felt like editing a spreadsheet. It took the booking system down for three community centres in the middle of the afternoon."*
-> — **Joost Brand, Founder, Ruimteplan (Almere)**
+> - **Joost Brand, Founder, Ruimteplan (Almere)**
 
-**Cost & Timeline:** €2,450 (schema captured as migrations, staging with anonymised data, expand-and-contract field split, backup restore test) — completed in 6 business days.
+**Cost & Timeline:** €2,450 (schema captured as migrations, staging with anonymised data, expand-and-contract field split, backup restore test) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -206,7 +206,7 @@ Test it against a realistic copy with production-like volume and messiness, time
       "name": "What is expand and contract?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Add the new structure alongside the old, write to both, backfill, switch reads, then remove the old one days later — so failures are reverted by changing code rather than restoring data."
+        "text": "Add the new structure alongside the old, write to both, backfill, switch reads, then remove the old one days later - so failures are reverted by changing code rather than restoring data."
       }
     },
     {

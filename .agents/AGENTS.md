@@ -3,6 +3,7 @@
 ## Content Generation Guidelines
 - **FAQ Requirement:** All generated articles (whether for blogs, long-form content, or whitepapers) MUST include exactly **5 FAQ questions**. Never generate fewer than 5 FAQs.
 - **JSON-LD Schema:** The 5 FAQs must also be properly formatted and included in a JSON-LD `<script type="application/ld+json">` block for SEO (as a `FAQPage` schema) at the bottom of the file.
+- **No Em Dash (All Projects - Mandatory):** In every article across all folders/projects (launchstudio, manifera, onlyaijobs and any new project), including Dutch versions, social posts, FAQs and JSON-LD, use ONLY the short hyphen `-`. NEVER use the em dash `—`. Write `word - word` (with spaces), never `word—word` or `word — word`.
 
 ## Image Generation Guidelines
 - **Adjacent Style & Angle Contrast (Strict Sequencing Rule - Mandatory):** Two consecutive/adjacent images in a series MUST NEVER share the same layout style, camera angle, framing, or focal distance. If image N is a macro/tactile close-up, image N+1 must be an architectural wide shot or over-the-shoulder action shot. If image N is an interior room, image N+1 must be an in-transit/outdoor/industrial scene. Always alternate and starkly contrast consecutive images.

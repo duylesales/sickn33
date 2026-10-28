@@ -137,7 +137,7 @@ They also hold information that exists nowhere else. The reason a field is popul
 
 Be careful about how you describe their systems. Publicly calling something legacy, outdated or a mess in front of the people who maintain it is both discourteous and self-defeating.
 
-In many European organisations these colleagues are approaching retirement, which makes capturing what they know a genuine priority rather than a nicety. Teams that arrange this deliberately — sessions, recordings, written notes — preserve something that cannot be rebuilt.
+In many European organisations these colleagues are approaching retirement, which makes capturing what they know a genuine priority rather than a nicety. Teams that arrange this deliberately - sessions, recordings, written notes - preserve something that cannot be rebuilt.
 
 ## Making the Case for Change
 

@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Van alles wat u kunt doen om de ranking van een kleine site te verbeteren, heeft interne linking de beste verhouding tussen moeite en resultaat — en het ontbreekt vrijwel volledig op sites die met AI-tools zijn gebouwd.
+Van alles wat u kunt doen om de ranking van een kleine site te verbeteren, heeft interne linking de beste verhouding tussen moeite en resultaat - en het ontbreekt vrijwel volledig op sites die met AI-tools zijn gebouwd.
 
 De reden dat het ontbreekt, is structureel. Elke pagina wordt in een eigen sessie gegenereerd, naar aanleiding van een eigen verzoek, zonder kennis van de pagina's die ervoor kwamen. Dus niets linkt naar iets behalve via de navigatie, en een blog met dertig artikelen heeft dertig losse pagina's die alleen een header delen.
 
@@ -34,13 +34,13 @@ Ze verdelen autoriteit. Uw homepage heeft er meer dan uw nieuwste artikel; een l
 
 Ze vertellen zoekmachines waar een pagina over gaat, via de tekst van de link. Een link met de tekst "voorraadbeheer voor webshops" zegt meer over de bestemming dan een met "klik hier".
 
-En ze houden lezers op uw site. Iemand die een artikel leest en een relevant volgend artikel vindt, is iemand die bij u blijft in plaats van terug te gaan naar de zoekresultaten — wat commercieel ertoe doet en, los daarvan, een signaal is over of uw content het bezoek vervulde.
+En ze houden lezers op uw site. Iemand die een artikel leest en een relevant volgend artikel vindt, is iemand die bij u blijft in plaats van terug te gaan naar de zoekresultaten - wat commercieel ertoe doet en, los daarvan, een signaal is over of uw content het bezoek vervulde.
 
 ## Vind Eerst de Wezen
 
 Een weespagina is een pagina waarnaar niets linkt. Crawlers vinden haar misschien via een sitemap en ze rankt slecht, omdat niets op uw site aangeeft dat ze ertoe doet.
 
-Ze vinden is mechanisch: maak een lijst van elke pagina, maak een lijst van elke interne link, en trek af. Verwacht in een door AI gebouwde site met enige geschiedenis dat een derde van de content wees is — meestal de oudere artikelen, omdat alleen de meest recente op het blogoverzicht staan.
+Ze vinden is mechanisch: maak een lijst van elke pagina, maak een lijst van elke interne link, en trek af. Verwacht in een door AI gebouwde site met enige geschiedenis dat een derde van de content wees is - meestal de oudere artikelen, omdat alleen de meest recente op het blogoverzicht staan.
 
 Elk ervan heeft minstens twee interne links nodig vanaf relevante pagina's. Niet vanuit een footerlijst, die zwak is en eruitziet als wat het is, maar vanuit de tekst van verwante content.
 
@@ -48,7 +48,7 @@ Elk ervan heeft minstens twee interne links nodig vanaf relevante pagina's. Niet
 
 De woorden in de link doen ertoe, en gegenereerde sites gebruiken bijna uitsluitend "hier", "dit artikel" en "lees meer".
 
-Gebruik de zin waar de bestemmingspagina over gaat. Varieer die natuurlijk over links heen — niet elke keer precies dezelfde zin, wat als manipulatie leest — en houd haar beschrijvend: "hoe wij iDEAL-betalingen afhandelen" in plaats van "betalingen", en zeker in plaats van "klik hier".
+Gebruik de zin waar de bestemmingspagina over gaat. Varieer die natuurlijk over links heen - niet elke keer precies dezelfde zin, wat als manipulatie leest - en houd haar beschrijvend: "hoe wij iDEAL-betalingen afhandelen" in plaats van "betalingen", en zeker in plaats van "klik hier".
 
 Eén waarschuwing: gebruik niet dezelfde ankertekst voor links naar verschillende pagina's, want dat vertelt zoekmachines dat twee van uw pagina's om hetzelfde concurreren. Dat is het kannibalisatieprobleem, en het wordt meestal opgelost door samen te voegen in plaats van links aan te passen.
 
@@ -60,7 +60,7 @@ Een hubpagina behandelt een onderwerp breed en linkt naar elk gedetailleerd arti
 
 Dat doet drie dingen: het geeft zoekmachines een duidelijk beeld van welke pagina's bij elkaar horen, het concentreert autoriteit op de hub, meestal uw commercieel waardevolste pagina, en het geeft lezers een duidelijke route door uw content.
 
-Voor een product met dertig artikelen zijn drie of vier hubs juist. Elk moet op zichzelf een echt nuttige pagina zijn in plaats van een lijst links — een overzicht van het onderwerp, met de gedetailleerde artikelen gelinkt vanuit de relevante onderdelen.
+Voor een product met dertig artikelen zijn drie of vier hubs juist. Elk moet op zichzelf een echt nuttige pagina zijn in plaats van een lijst links - een overzicht van het onderwerp, met de gedetailleerde artikelen gelinkt vanuit de relevante onderdelen.
 
 ## Link van Oud naar Nieuw, Niet Alleen Vooruit
 
@@ -84,7 +84,7 @@ Er is een patroon op kleine sites waarbij alle interne links tussen blogposts lo
 
 Dat is omgekeerd. Uw functiepagina's, uw prijspagina en uw toepassingspagina's zijn waar een lezer klant wordt, en het zijn meestal de pagina's met de minste interne ondersteuning.
 
-Elk artikel moet linken naar de commerciële pagina waar het het dichtst bij staat, vanuit de tekst, op het punt waar het relevant wordt — niet als een call-to-action die aan het eind is vastgeplakt, die lezers overslaan, maar als de natuurlijke volgende stap in de zin waarin de lezer net begreep waarom het probleem ertoe doet.
+Elk artikel moet linken naar de commerciële pagina waar het het dichtst bij staat, vanuit de tekst, op het punt waar het relevant wordt - niet als een call-to-action die aan het eind is vastgeplakt, die lezers overslaan, maar als de natuurlijke volgende stap in de zin waarin de lezer net begreep waarom het probleem ertoe doet.
 
 Twee effecten. De commerciële pagina verzamelt autoriteit van elk artikel dat haar noemt, en dat laat haar ranken op de termen die u echt wilt winnen. En een lezer die net een nuttige uitleg las, zit op het moment van maximale interesse, een betere plek om het product aan te bieden dan de onderkant van een pagina die hij misschien niet bereikt.
 
@@ -94,17 +94,17 @@ De discipline is het eerlijk te houden. Een link die de lezer echt helpt te doen
 
 Twee mechanische problemen stapelen zich stilletjes op, en beide verspillen het hierboven beschreven werk.
 
-Interne links naar pagina's die niet meer bestaan. Een hernoemd artikel, een verwijderde pagina, een gewijzigde URL-structuur — elke link naar het oude adres geeft nu een fout, en in een gegenereerde site waar links met de hand worden getypt in plaats van afgeleid, gebeurt dit vaker dan mensen verwachten. Crawl uw eigen site elk kwartaal met een willekeurige linkchecker en los op wat die vindt.
+Interne links naar pagina's die niet meer bestaan. Een hernoemd artikel, een verwijderde pagina, een gewijzigde URL-structuur - elke link naar het oude adres geeft nu een fout, en in een gegenereerde site waar links met de hand worden getypt in plaats van afgeleid, gebeurt dit vaker dan mensen verwachten. Crawl uw eigen site elk kwartaal met een willekeurige linkchecker en los op wat die vindt.
 
-Doorverwijzingsketens, waarbij een link naar een URL wijst die doorverwijst naar een andere die opnieuw doorverwijst. Elke stap is een vertraging voor de lezer en een verwatering van het signaal. Werk na elke URL-wijziging de interne links bij zodat ze naar de uiteindelijke bestemming wijzen, in plaats van te vertrouwen op de doorverwijzing — die bestaat voor externe links en oude bladwijzers, niet als blijvend deel van uw eigen navigatie.
+Doorverwijzingsketens, waarbij een link naar een URL wijst die doorverwijst naar een andere die opnieuw doorverwijst. Elke stap is een vertraging voor de lezer en een verwatering van het signaal. Werk na elke URL-wijziging de interne links bij zodat ze naar de uiteindelijke bestemming wijzen, in plaats van te vertrouwen op de doorverwijzing - die bestaat voor externe links en oude bladwijzers, niet als blijvend deel van uw eigen navigatie.
 
-Beide controles kosten met een tool tien minuten, en beide horen bij dezelfde kwartaalreview die naar wezen zoekt. De drie samen — wezen, kapotte links, doorverwijzingsketens — vormen het volledige onderhoud van de interne structuur van een site, en het is het soort werk dat nooit urgent voelt en stilletjes bepaalt of al het andere dat u doet effect heeft.
+Beide controles kosten met een tool tien minuten, en beide horen bij dezelfde kwartaalreview die naar wezen zoekt. De drie samen - wezen, kapotte links, doorverwijzingsketens - vormen het volledige onderhoud van de interne structuur van een site, en het is het soort werk dat nooit urgent voelt en stilletjes bepaalt of al het andere dat u doet effect heeft.
 
 ## Diepte Vanaf de Homepage Doet Ertoe
 
 Eén structurele maat is het controleren waard, omdat ze makkelijk verkeerd gaat en duur is om fout te laten: hoeveel klikken het vanaf uw homepage kost om een pagina te bereiken.
 
-Drie is een redelijk maximum voor een kleine site. Pagina's die vijf niveaus diep zitten — alleen bereikbaar via een categorie, dan een subcategorie, dan een gepagineerde lijst — krijgen heel weinig van de autoriteit die de site heeft, en lezers vinden ze ook niet.
+Drie is een redelijk maximum voor een kleine site. Pagina's die vijf niveaus diep zitten - alleen bereikbaar via een categorie, dan een subcategorie, dan een gepagineerde lijst - krijgen heel weinig van de autoriteit die de site heeft, en lezers vinden ze ook niet.
 
 Twee veelvoorkomende oorzaken in door AI gebouwde sites. Paginering, waarbij het blogoverzicht tien artikelen per pagina toont en artikel nummer eenenveertig vier klikken weg staat via pagina's die niemand bezoekt. En categoriestructuren met maar een handvol items per categorie, die een niveau toevoegen zonder nut toe te voegen.
 
@@ -116,7 +116,7 @@ De controle kost vijf minuten: kies uw drie oudste artikelen en tel de klikken v
 
 Voor een bestaande site kost dit doorgaans een halve dag: elke pagina tegen elke interne link gelegd om wezen te vinden, minstens twee contextuele links toegevoegd aan elke weespagina vanuit relevante content, ankertekst herschreven van "hier" en "lees meer" naar beschrijvende zinnen, dubbele ankertekst naar verschillende pagina's opgelost, drie of vier hubpagina's gemaakt of aangewezen met spaken die in beide richtingen linken, automatische blokken met gerelateerde artikelen gegenereerd uit tags, een publicatiestap toegevoegd die nieuwe artikelen vanuit bestaande linkt, en een kwartaalcontrole op nieuwe wezen.
 
-LaunchStudio doet dit als onderdeel van het laten presteren van de bestaande content van een door AI gebouwde site, wat meestal goedkoper is dan meer schrijven. Daarachter staat Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit als onderdeel van het laten presteren van de bestaande content van een door AI gebouwde site, wat meestal goedkoper is dan meer schrijven. Daarachter staat Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons naar hoeveel van uw pagina's niets linkt](https://launchstudio.eu/nl/#contact). Op door AI gebouwde sites is dat meestal ongeveer een derde.
 
@@ -128,16 +128,16 @@ Elise Vlasman bouwde Planbaas Agenda in Lovable: afspraakplanning voor schoonhei
 
 Ze had in twee jaar 31 artikelen geschreven en was gefrustreerd dat maar vier ervan verkeer opleverden. Haar aanname was dat de andere 27 niet goed genoeg waren.
 
-De controle vond iets anders. Naar negen van de 31 werd ergens vandaan gelinkt — het blogoverzicht toonde de tien meest recente, en 22 oudere artikelen waren alleen via de sitemap bereikbaar. Van de links die er wel waren, luidden bijna allemaal "lees meer" of "hier". Er was geen hubstructuur, en haar commercieel belangrijke pagina's — die over afspraakherinneringen en het verminderen van no-shows, waar de echte waarde van haar product lag — hadden helemaal geen interne links die ernaar wezen.
+De controle vond iets anders. Naar negen van de 31 werd ergens vandaan gelinkt - het blogoverzicht toonde de tien meest recente, en 22 oudere artikelen waren alleen via de sitemap bereikbaar. Van de links die er wel waren, luidden bijna allemaal "lees meer" of "hier". Er was geen hubstructuur, en haar commercieel belangrijke pagina's - die over afspraakherinneringen en het verminderen van no-shows, waar de echte waarde van haar product lag - hadden helemaal geen interne links die ernaar wezen.
 
-Eén werkdag: elke pagina tegen elke interne link gelegd, met 22 wezen als resultaat; elke wees twee tot vier contextuele links gegeven vanuit relevante artikelen, in de tekst geschreven in plaats van eraan vastgeplakt; ankertekst herschreven in 140 links, van algemene zinnen naar beschrijvende; vier hubs gemaakt — afspraakplanning, no-shows en herinneringen, salonadministratie, en praktijkbeheer — elk een echt nuttige overzichtspagina die naar haar gedetailleerde artikelen linkt, waarbij elk artikel terug linkt; automatische blokken met gerelateerde artikelen gegenereerd uit tags om toekomstige gaten op te vangen; het blogoverzicht aangepast zodat het alle artikelen per hub toont in plaats van de tien meest recente; en een publicatiestap toegevoegd die twee links vanuit bestaande artikelen vereist voordat een nieuw artikel live gaat.
+Eén werkdag: elke pagina tegen elke interne link gelegd, met 22 wezen als resultaat; elke wees twee tot vier contextuele links gegeven vanuit relevante artikelen, in de tekst geschreven in plaats van eraan vastgeplakt; ankertekst herschreven in 140 links, van algemene zinnen naar beschrijvende; vier hubs gemaakt - afspraakplanning, no-shows en herinneringen, salonadministratie, en praktijkbeheer - elk een echt nuttige overzichtspagina die naar haar gedetailleerde artikelen linkt, waarbij elk artikel terug linkt; automatische blokken met gerelateerde artikelen gegenereerd uit tags om toekomstige gaten op te vangen; het blogoverzicht aangepast zodat het alle artikelen per hub toont in plaats van de tien meest recente; en een publicatiestap toegevoegd die twee links vanuit bestaande artikelen vereist voordat een nieuw artikel live gaat.
 
-**Resultaat:** het organische verkeer steeg in vier maanden van 420 naar 1.900 bezoeken per maand, zonder dat er nieuwe artikelen werden geschreven. Elf van de eerder verweesde artikelen leveren nu verkeer op, en de hub over no-shows — die eerder niet bestond — werd haar best converterende pagina, met meer proefaanmeldingen dan haar homepage.
+**Resultaat:** het organische verkeer steeg in vier maanden van 420 naar 1.900 bezoeken per maand, zonder dat er nieuwe artikelen werden geschreven. Elf van de eerder verweesde artikelen leveren nu verkeer op, en de hub over no-shows - die eerder niet bestond - werd haar best converterende pagina, met meer proefaanmeldingen dan haar homepage.
 
 > *"Ik dacht dat zevenentwintig van mijn artikelen slecht waren. Tweeëntwintig ervan waren onzichtbaar. Ik had twee jaar pagina's geschreven die alleen in een sitemap bestonden."*
-> — **Elise Vlasman, Oprichter, Planbaas Agenda (Alkmaar)**
+> - **Elise Vlasman, Oprichter, Planbaas Agenda (Alkmaar)**
 
-**Kosten & Doorlooptijd:** €1.700 (linkcontrole en identificatie van wezen, contextuele links op 22 pagina's, herschrijven van ankertekst, vier hubpagina's met links in beide richtingen, automatische gerelateerde blokken, herstructurering van het overzicht, publicatieproces) — afgerond in 1 werkdag.
+**Kosten & Doorlooptijd:** €1.700 (linkcontrole en identificatie van wezen, contextuele links op 22 pagina's, herschrijven van ankertekst, vier hubpagina's met links in beide richtingen, automatische gerelateerde blokken, herstructurering van het overzicht, publicatieproces) - afgerond in 1 werkdag.
 
 ## Veelgestelde vragen
 
@@ -155,7 +155,7 @@ Het onderwerp van de bestemmingspagina, natuurlijk gevarieerd. Vermijd "hier" en
 
 ### Moet ik linken van nieuwe artikelen naar oude, of van oude naar nieuwe?
 
-Beide, maar van oud naar nieuw is de waardevolle richting — gevestigde pagina's hebben meer autoriteit om door te geven. Maak het een stap in uw publicatieroutine.
+Beide, maar van oud naar nieuw is de waardevolle richting - gevestigde pagina's hebben meer autoriteit om door te geven. Maak het een stap in uw publicatieroutine.
 
 ### Zijn automatische blokken met gerelateerde artikelen genoeg?
 

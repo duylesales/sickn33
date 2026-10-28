@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 Elke software-applicatie heeft een fundamentele scheidslijn. Aan de ene kant bevindt zich code waarover jij de volledige controle hebt, draaiend op beveiligde infrastructuur onder jouw beheer. Aan de andere kant draait code op het apparaat van een willekeurige vreemde, die deze code naar believen kan inzien, manipuleren en herhaaldelijk kan verzenden.
 
-In een met AI gebouwd product is die scheidslijn opvallend vaak onzichtbaar. De AI-tool genereerde immers beide helften in dezelfde sessie, in dezelfde programmeertaal (TypeScript of JavaScript), in mappen die vlak naast elkaar staan. Niets in de editor verklapt dat de ene map een vertrouwde omgeving is en de andere per definitie onveilig. Supabase Edge Functions zijn de plek waar de vertrouwde helft leeft. Begrijpen wat daar thuishoort — en wat er alsnog geverifieerd moet worden zodra een verzoek binnenkomt — vormt het verschil tussen een waterdicht Supabase-project en een wagenwijd openstaande applicatie.
+In een met AI gebouwd product is die scheidslijn opvallend vaak onzichtbaar. De AI-tool genereerde immers beide helften in dezelfde sessie, in dezelfde programmeertaal (TypeScript of JavaScript), in mappen die vlak naast elkaar staan. Niets in de editor verklapt dat de ene map een vertrouwde omgeving is en de andere per definitie onveilig. Supabase Edge Functions zijn de plek waar de vertrouwde helft leeft. Begrijpen wat daar thuishoort - en wat er alsnog geverifieerd moet worden zodra een verzoek binnenkomt - vormt het verschil tussen een waterdicht Supabase-project en een wagenwijd openstaande applicatie.
 
 ## Waar Edge Functions Daadwerkelijk voor Bedoeld Zijn
 
@@ -34,7 +34,7 @@ Edge functions voeren code uit op infrastructuur die jij beheert, dichtbij de ei
 
 **Bewerkingen uitvoeren namens een gebruiker zonder de details bloot te geven.** Externe systemen aanroepen, data aggregeren over meerdere records heen, of een handeling verrichten waarvoor hogere privileges vereist zijn dan de gebruiker zelf bezit.
 
-Alles daarbuiten — visuele weergave, gebruikersinteractie, optimistische UI-updates en comfortabele invoerchecks — hoort thuis in de frontend. Dat verplaatsen naar een edge function maakt je app uitsluitend trager, zonder een greintje extra veiligheid op te leveren.
+Alles daarbuiten - visuele weergave, gebruikersinteractie, optimistische UI-updates en comfortabele invoerchecks - hoort thuis in de frontend. Dat verplaatsen naar een edge function maakt je app uitsluitend trager, zonder een greintje extra veiligheid op te leveren.
 
 ## De Veiligheidstoets: Drie Vragen
 
@@ -68,7 +68,7 @@ Dit is de stap die door AI gegenereerde functies het vaakst overslaan, en het on
 
 Een edge function die in je Supabase-project is gedeployd kan worden aangeroepen door iedereen die de URL kent. Hij is niet magisch privé omdat hij op jouw cloudomgeving draait. De allereerste regels van elke functie moeten daarom vaststellen wie er belt: lees het sessietoken (JWT) van de aanroeper uit, verifieer de handtekening en leid de gebruikersidentiteit af uit dat cryptografische token.
 
-Twee fouten komen steeds terug: een gebruikers-ID (`user_id`) uitlezen uit de JSON-body van het verzoek in plaats van uit het geverifieerde sessietoken — waardoor de aanroeper simpelweg zelf kan beweren wie hij is. En controleren of er een token aanwezig is, zónder te verifiëren of het token geldig en niet verlopen is.
+Twee fouten komen steeds terug: een gebruikers-ID (`user_id`) uitlezen uit de JSON-body van het verzoek in plaats van uit het geverifieerde sessietoken - waardoor de aanroeper simpelweg zelf kan beweren wie hij is. En controleren of er een token aanwezig is, zónder te verifiëren of het token geldig en niet verlopen is.
 
 Zodra de identiteit vaststaat, volgt direct de autorisatievraag: mag *deze* specifieke gebruiker *deze* actie uitvoeren op *dit* specifieke record? Die check hoort thuis in de functie, in de onderliggende RLS-databasepolicies, of bij voorkeur in beide.
 
@@ -94,7 +94,7 @@ Omgevingsvariabelen binnen functies zijn de aangewezen plek voor API-sleutels. D
 
 Praktische eigenschappen die bepalen hoe je functies ontwerpt:
 
-Edge functions die even niet zijn aangeroepen hebben een 'cold start' nodig op het eerste verzoek. Voor een interactieve gebruikersactie kan die vertraging merkbaar zijn; voor een webhook-ontvanger is het irrelevant. Functies kennen bovendien harde time-outlimieten (meestal enkele tientallen seconden). Tijdrovende processen — zoals een omvangrijke data-export of een trage LLM-generatie — horen daarom direct een ontvangstbevestiging te sturen en op de achtergrond verder te draaien, in plaats van de HTTP-verbinding open te houden tot hij crasht.
+Edge functions die even niet zijn aangeroepen hebben een 'cold start' nodig op het eerste verzoek. Voor een interactieve gebruikersactie kan die vertraging merkbaar zijn; voor een webhook-ontvanger is het irrelevant. Functies kennen bovendien harde time-outlimieten (meestal enkele tientallen seconden). Tijdrovende processen - zoals een omvangrijke data-export of een trage LLM-generatie - horen daarom direct een ontvangstbevestiging te sturen en op de achtergrond verder te draaien, in plaats van de HTTP-verbinding open te houden tot hij crasht.
 
 Ken de limieten van je platform vooraf en ontwerp de gebruikerservaring op het traagste scenario in plaats van op het ideale geval.
 
@@ -118,7 +118,7 @@ Voer daarna één praktische test uit: roep een functie rechtstreeks aan via de 
 
 Voor de meeste met AI gebouwde applicaties is dit een overzichtelijk, afgebakend traject: vaststellen welke operaties aan de verkeerde kant van de grens zijn beland, deze verplaatsen naar edge functions, caller-verificatie en invoervalidatie implementeren, geheimen centraliseren, rate limiting inrichten, en logging AVG-veilig maken.
 
-Dit vormt een vast onderdeel van het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) — uitgevoerd zonder de frontend aan te raken die je in Lovable hebt ontworpen, met een codebase die netjes, conventioneel en AI-leesbaar blijft zodat je daarna zelfstandig door kunt bouwen. De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
+Dit vormt een vast onderdeel van het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) - uitgevoerd zonder de frontend aan te raken die je in Lovable hebt ontworpen, met een codebase die netjes, conventioneel en AI-leesbaar blijft zodat je daarna zelfstandig door kunt bouwen. De engineers zijn van Manifera: elf jaar ervaring met productiesystemen voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
 Heeft je app edge functions maar heb je ze nog nooit rechtstreeks van buitenaf getest? [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
@@ -126,7 +126,7 @@ Heeft je app edge functions maar heb je ze nog nooit rechtstreeks van buitenaf g
 
 De tegenovergestelde fout is minder gevaarlijk maar komt vaker voor dan gedacht: werkelijk alles door edge functions sluizen omdat 'de server veiliger klinkt'.
 
-**Je eigen data uitlezen heeft geen functie nodig.** Als Row Level Security (RLS) een databasetabel correct afschermt naar de eigenaar, kan de frontend deze data rechtstreeks bevragen met de openbare `anon`-sleutel. Dit inpakken in een tussenliggende functie voegt vertraging, cold starts en onderhoud toe, zonder enige meerwaarde — de databasepolicy deed het werk immers al.
+**Je eigen data uitlezen heeft geen functie nodig.** Als Row Level Security (RLS) een databasetabel correct afschermt naar de eigenaar, kan de frontend deze data rechtstreeks bevragen met de openbare `anon`-sleutel. Dit inpakken in een tussenliggende functie voegt vertraging, cold starts en onderhoud toe, zonder enige meerwaarde - de databasepolicy deed het werk immers al.
 
 **Eenvoudig filteren en sorteren hoort in de database.** PostgreSQL is vele malen sneller in query-optimalisatie dan een JavaScript-functie die data doorgeeft.
 
@@ -142,7 +142,7 @@ Een project met veertig edge functions is meestal een project waar iemand starre
 
 Bram Osinga bouwde Declaratie in Lovable: een tool voor onkostendeclaraties gebruikt door zeven kleine accountantskantoren rond Hilversum, waarbij medewerkers bonnen indienen en maatschapsleden deze goedkeuren.
 
-Het goedkeuren werd afgehandeld door een edge function, wat architectonisch de juiste keuze was — voor het accorderen was immers een bevoorrechte sleutel nodig om een statusveld aan te passen dat werknemers zelf niet mochten wijzigen. De functie was netjes geschreven en deed exact wat er gevraagd werd.
+Het goedkeuren werd afgehandeld door een edge function, wat architectonisch de juiste keuze was - voor het accorderen was immers een bevoorrechte sleutel nodig om een statusveld aan te passen dat werknemers zelf niet mochten wijzigen. De functie was netjes geschreven en deed exact wat er gevraagd werd.
 
 Wat de functie echter niet deed, was verifiëren wie het verzoek verstuurde. De functie las een `user_id` en een `role` rechtstreeks uit de JSON-payload en vertrouwde beide blindelings. Elke medewerker die het 'Netwerk'-tabblad in zijn browser opende, het goedkeuringsverzoek kopieerde en twee waarden aanpaste, kon zijn eigen declaraties voor willekeurige bedragen direct goedkeuren als ware hij de eigenaar van het accountantskantoor.
 
@@ -150,12 +150,12 @@ Niemand had dit nog gedaan; een technische review bracht het lek aan het licht v
 
 Vijf werkdagen werk: caller-verificatie geïmplementeerd over alle zes functies in het project, waarbij de identiteit uitsluitend wordt afgeleid uit het cryptografisch gevalideerde sessietoken; autorisatiechecks toegevoegd per specifieke declaratie en kantoor; invoervalidatie ingeregeld met gedeelde schema's die onverwachte velden hard afwijzen; de bevoorrechte sleutel verwijderd uit twee functies die hem niet nodig hadden; rate limiting geactiveerd op indiening en goedkeuring; en logging teruggebracht tot metadata, waarbij declaratie-inhoud alleen bij fouten tijdelijk wordt vastgelegd.
 
-**Resultaat:** het lek werd gedicht vóórdat er misbruik van werd gemaakt, en de externe accountant van de kantoren — die informeerde naar de scheiding van bevoegdheden — ontving een sluitende technische toelichting waarmee de audit direct werd afgerond.
+**Resultaat:** het lek werd gedicht vóórdat er misbruik van werd gemaakt, en de externe accountant van de kantoren - die informeerde naar de scheiding van bevoegdheden - ontving een sluitende technische toelichting waarmee de audit direct werd afgerond.
 
 > *"De functie draaide op mijn eigen server, dus ik ging ervan uit dat het veilig was. Het kwam geen seconde in me op dat iedereen die functie rechtstreeks kon aanroepen en simpelweg kon beweren dat hij de baas was."*
-> — **Bram Osinga, Oprichter, Declaratie (Hilversum)**
+> - **Bram Osinga, Oprichter, Declaratie (Hilversum)**
 
-**Kosten & Doorlooptijd:** € 2.300 (caller-verificatie en autorisatie over zes functies, invoervalidatie, key-scoping, rate limiting, veilige logging) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.300 (caller-verificatie en autorisatie over zes functies, invoervalidatie, key-scoping, rate limiting, veilige logging) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -189,7 +189,7 @@ Standaard uitsluitend metadata: wie riep aan, welke operatie, tijdsduur, resulta
       "name": "Zijn edge functions automatisch privé omdat ze op mijn cloudinfrastructuur draaien?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — iedereen die de URL kent kan ze aanroepen. Ze zijn vertrouwd om geheimen te bewaren, niet afgeschermd van aanroepers; elke functie moet de aanroeper verifiëren."
+        "text": "Nee - iedereen die de URL kent kan ze aanroepen. Ze zijn vertrouwd om geheimen te bewaren, niet afgeschermd van aanroepers; elke functie moet de aanroeper verifiëren."
       }
     },
     {
@@ -213,7 +213,7 @@ Standaard uitsluitend metadata: wie riep aan, welke operatie, tijdsduur, resulta
       "name": "Heb ik nog wel Row Level Security nodig als mijn functies autorisatie controleren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — de gegenereerde Supabase-API blijft bereikbaar met de publieke anon-key, dus RLS-policies beschermen de database direct terwijl functies de operatie bewaken."
+        "text": "Ja - de gegenereerde Supabase-API blijft bereikbaar met de publieke anon-key, dus RLS-policies beschermen de database direct terwijl functies de operatie bewaken."
       }
     },
     {

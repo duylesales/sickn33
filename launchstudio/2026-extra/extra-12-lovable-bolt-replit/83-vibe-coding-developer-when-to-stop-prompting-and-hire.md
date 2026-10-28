@@ -28,7 +28,7 @@ The useful question is where the line is for your product, and it turns out to b
 
 ## Six Signals
 
-**The same problem survives three sessions.** Not a hard problem — the same one, recurring, with fixes that work and then do not. This almost always means a structural issue the model cannot see because it only ever receives part of the picture, as the cost article in this series describes. An hour of human reading resolves what another twenty prompts will not.
+**The same problem survives three sessions.** Not a hard problem - the same one, recurring, with fixes that work and then do not. This almost always means a structural issue the model cannot see because it only ever receives part of the picture, as the cost article in this series describes. An hour of human reading resolves what another twenty prompts will not.
 
 **Other people's data is involved.** The moment your product holds records belonging to someone who is not you, the cost of a mistake stops being yours. Nothing in this article is about capability; it is about who absorbs the consequence of an authorisation gap.
 
@@ -52,11 +52,11 @@ A permanent hire is the answer to a different problem entirely: sustained develo
 
 The assumption that quietly causes damage: that bringing someone in means handing the product over.
 
-The arrangement that works for most founders is a division rather than a transfer. You keep building what you understand — the features, the interface, the things your customers ask for, which is where your knowledge of the business is the asset. Someone else does the work where a mistake is expensive: authorisation, payments, data handling, infrastructure, the security review.
+The arrangement that works for most founders is a division rather than a transfer. You keep building what you understand - the features, the interface, the things your customers ask for, which is where your knowledge of the business is the asset. Someone else does the work where a mistake is expensive: authorisation, payments, data handling, infrastructure, the security review.
 
 That division plays to both sides. You know what the product should do; they know what breaks when a stranger arrives. And it costs a fraction of a permanent hire because the work is bounded.
 
-The founders who do badly are those at either extreme — refusing help until an incident forces it, or handing the whole thing over and losing the ability to change their own product.
+The founders who do badly are those at either extreme - refusing help until an incident forces it, or handing the whole thing over and losing the ability to change their own product.
 
 ## The Cost of Waiting
 
@@ -82,7 +82,7 @@ The signals above describe where to stop. The complement is worth stating, becau
 
 What they are poor at is the thing the six signals describe: reasoning about a whole system, noticing what is absent, and knowing what matters in your particular business. Those remain human, and they are where the bounded engagements in this series apply.
 
-A founder who uses the tools for the first list and gets help for the second is in a considerably better position than either extreme — and that division, rather than any judgement about capability, is the actual answer to when to hire.
+A founder who uses the tools for the first list and gets help for the second is in a considerably better position than either extreme - and that division, rather than any judgement about capability, is the actual answer to when to hire.
 
 ## Learn Enough to Stay in Control
 
@@ -90,7 +90,7 @@ Between doing everything yourself and handing it all over there is a position wo
 
 Four capabilities are enough to keep a founder in control of a product built this way.
 
-**Reading a diff.** Not writing code — reading what changed, recognising when more changed than you asked for, and noticing a permission check or a deletion. An afternoon of practice.
+**Reading a diff.** Not writing code - reading what changed, recognising when more changed than you asked for, and noticing a permission check or a deletion. An afternoon of practice.
 
 **Running the product locally and following a runbook.** Setting it up, restoring a backup, checking a log. These are procedures rather than skills.
 
@@ -108,9 +108,9 @@ The distinguishing habit is unglamorous: they act on the signals when they appea
 
 ## Setting This Up
 
-For a founder assessing where they are: check the six signals honestly; match the response to the signal rather than reaching for a permanent hire; keep building the parts you understand while commissioning the parts where a mistake is expensive — authorisation, payments, data handling, infrastructure; commission a paid assessment before a larger engagement; and require a handover so the division of work leaves you more capable rather than more dependent.
+For a founder assessing where they are: check the six signals honestly; match the response to the signal rather than reaching for a permanent hire; keep building the parts you understand while commissioning the parts where a mistake is expensive - authorisation, payments, data handling, infrastructure; commission a paid assessment before a larger engagement; and require a handover so the division of work leaves you more capable rather than more dependent.
 
-LaunchStudio is built for exactly this division: the production work at a fixed price from €800, with the product staying yours to develop. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
+LaunchStudio is built for exactly this division: the production work at a fixed price from €800, with the product staying yours to develop. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
 
 [Tell us which of the six signals you recognise](https://launchstudio.eu/en/#contact).
 
@@ -124,16 +124,16 @@ For five months he had been unable to fix a problem where a small number of memb
 
 He had spent, by his own estimate, forty sessions on it across five months. Each produced a fix, each appeared to work, and the following renewal period produced the same complaints.
 
-The cause took an experienced reader ninety minutes: the renewal job had no idempotency and was invoked by two paths — a scheduled run and a manual administrator action. When both occurred within the same window for the same member, two charges resulted. No single session had seen both paths, because they were in different parts of the codebase and each conversation had been given only one.
+The cause took an experienced reader ninety minutes: the renewal job had no idempotency and was invoked by two paths - a scheduled run and a manual administrator action. When both occurred within the same window for the same member, two charges resulted. No single session had seen both paths, because they were in different parts of the codebase and each conversation had been given only one.
 
 Three business days: the renewal job made idempotent on member and period, with a test asserting that a second invocation charges nothing; the two invocation paths consolidated so both enqueue the same job rather than duplicating the logic; a review that found the same duplication pattern in two other places, one of which was sending duplicate welcome emails nobody had reported; a reconciliation query comparing charges against periods, which identified 31 historical double charges across three years, all refunded; authorisation tested across 22 endpoints, which found four with no check; and a handover conversation so Wouter can maintain what was built.
 
 **Result:** the double charges stopped. The 31 historical ones came to €2,840 refunded, and two associations said the proactive refund was the reason they renewed. Wouter's own note is about the five months rather than the money.
 
 > *"Forty sessions across five months on a bug that took someone ninety minutes, because it was in two files and no conversation ever saw both of them at once."*
-> — **Wouter Klumpenaar, Founder, Lidmaatschapbeheer (Zwolle)**
+> - **Wouter Klumpenaar, Founder, Lidmaatschapbeheer (Zwolle)**
 
-**Cost & Timeline:** €3,400 (idempotent renewal processing with tests, invocation path consolidation, duplication review across the codebase, historical reconciliation and refunds, authorisation testing with four fixes, handover) — completed in 3 business days.
+**Cost & Timeline:** €3,400 (idempotent renewal processing with tests, invocation path consolidation, duplication review across the codebase, historical reconciliation and refunds, authorisation testing with four fixes, handover) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -143,7 +143,7 @@ Six signals: the same problem surviving three sessions, other people's data, mon
 
 ### Does hiring mean handing over my product?
 
-No, and it should not. Keep building what you understand and commission the work where a mistake is expensive — authorisation, payments, data handling, infrastructure.
+No, and it should not. Keep building what you understand and commission the work where a mistake is expensive - authorisation, payments, data handling, infrastructure.
 
 ### Do I need a permanent developer?
 
@@ -175,7 +175,7 @@ The same work, several times over. An authorisation gap found in review is an af
       "name": "Does hiring help mean handing over the product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Keep building what you understand and commission the work where mistakes are expensive — authorisation, payments, data, infrastructure."
+        "text": "No. Keep building what you understand and commission the work where mistakes are expensive - authorisation, payments, data, infrastructure."
       }
     },
     {
@@ -183,7 +183,7 @@ The same work, several times over. An authorisation gap found in review is an af
       "name": "Do I need to hire a permanent developer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rarely at this stage. Most signals call for bounded work — a review, an integration, a production-readiness engagement."
+        "text": "Rarely at this stage. Most signals call for bounded work - a review, an integration, a production-readiness engagement."
       }
     },
     {

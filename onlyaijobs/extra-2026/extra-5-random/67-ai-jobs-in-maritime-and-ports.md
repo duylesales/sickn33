@@ -78,7 +78,7 @@ For candidates, this area combines physics, time series modelling and regulatory
 
 Container terminals are among the more complex operational environments in European logistics, and they employ operations researchers and data scientists directly.
 
-The core problems interlock. Berth allocation decides which vessel goes where and when, subject to length, draft, crane availability and contractual service commitments. Crane scheduling assigns quay cranes to vessels and sequences the moves. Yard planning decides where containers are stacked, which determines how much rehandling is needed later — moving a container to reach the one beneath it is pure waste and a large share of terminal effort. Gate and hinterland flow manages trucks, trains and barges arriving to collect or deliver.
+The core problems interlock. Berth allocation decides which vessel goes where and when, subject to length, draft, crane availability and contractual service commitments. Crane scheduling assigns quay cranes to vessels and sequences the moves. Yard planning decides where containers are stacked, which determines how much rehandling is needed later - moving a container to reach the one beneath it is pure waste and a large share of terminal effort. Gate and hinterland flow manages trucks, trains and barges arriving to collect or deliver.
 
 Each is an optimisation problem, and they are coupled: a yard decision made today creates work three days later when the box is collected.
 
@@ -108,7 +108,7 @@ European waters include some of the busiest and most constrained shipping areas 
 
 Vessel traffic services monitor movements in approaches, straits and port areas, and decision support tools help operators identify developing risks: vessels on converging courses, deviations from expected behaviour, anchoring in unsuitable areas, or movements inconsistent with reported intent.
 
-Collision risk modelling combines position, course, speed and vessel characteristics with the constraints of manoeuvrability — a large vessel cannot stop or turn quickly, which changes what counts as a developing situation.
+Collision risk modelling combines position, course, speed and vessel characteristics with the constraints of manoeuvrability - a large vessel cannot stop or turn quickly, which changes what counts as a developing situation.
 
 Incident analysis is a related discipline: understanding from historical data where and why near-misses and accidents occur, which informs routing schemes and port procedures.
 
@@ -122,7 +122,7 @@ Anyone working in this sector encounters the same structural issue: a single con
 
 The consequence is that nobody has a complete picture, and much of the value available lies in connecting data across organisational boundaries rather than in sophisticated modelling.
 
-European initiatives have pushed toward standardised digital exchange — port community systems, common data formats for port calls, and regulatory requirements for electronic reporting of maritime information — and they have improved matters without solving the problem.
+European initiatives have pushed toward standardised digital exchange - port community systems, common data formats for port calls, and regulatory requirements for electronic reporting of maritime information - and they have improved matters without solving the problem.
 
 Commercial reality complicates it further. Parties are simultaneously customers, suppliers and competitors, and information about delays or capacity has negotiating value. A terminal's accurate arrival prediction is useful to a shipping line and also reveals what the terminal knows.
 
@@ -164,7 +164,7 @@ Visiting a port or terminal, if you can arrange it, changes how you talk about t
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Maritime data roles are advertised under varied titles — operations research analyst, voyage optimisation specialist, performance engineer, supply chain data scientist — so read the descriptions rather than filtering on titles. Port and terminal locations also matter practically, since these sites are frequently outside city centres with limited public transport.
+Maritime data roles are advertised under varied titles - operations research analyst, voyage optimisation specialist, performance engineer, supply chain data scientist - so read the descriptions rather than filtering on titles. Port and terminal locations also matter practically, since these sites are frequently outside city centres with limited public transport.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Rotterdam's surrounding region, Amsterdam, Utrecht, Eindhoven and Capelle aan den IJssel, with employers such as AMCS, Boltrics, Sendcloud, Accenture and Cegeka among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -176,7 +176,7 @@ Inland shipping has its own analytical problems. Water levels vary with rainfall
 
 Lock scheduling is a queueing and optimisation problem. Bridge clearances, seasonal restrictions and convoy formation add constraints. Fleet operators optimise voyage planning across networks where transit times depend on current, loading and traffic.
 
-Short sea shipping — coastal and regional routes within Europe — similarly combines frequent port calls with tight schedules, and benefits from the same arrival prediction and terminal coordination work as deep sea trades.
+Short sea shipping - coastal and regional routes within Europe - similarly combines frequent port calls with tight schedules, and benefits from the same arrival prediction and terminal coordination work as deep sea trades.
 
 Both are also central to European policy on shifting freight away from road transport, which has attracted funding for digitalisation projects.
 

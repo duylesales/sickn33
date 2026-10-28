@@ -1,4 +1,4 @@
-🔥 Thomas bouwde een prototype met **Lovable** — Thomas, een customer success manager, gebruikte Lovable om een tool voor review-analyse te bouwen, maar liep vast op plotselinge Anthropic rate-limits en crashende gebruikerssessies. 🧠
+🔥 Thomas bouwde een prototype met **Lovable** - Thomas, een customer success manager, gebruikte Lovable om een tool voor review-analyse te bouwen, maar liep vast op plotselinge Anthropic rate-limits en crashende gebruikerssessies. 🧠
 
 Wanneer een AI-API tijdelijk hapert en uw backend geen retry- of failover-logica heeft, verliezen gebruikers data en haken ze direct af.
 
@@ -12,7 +12,7 @@ Wanneer een AI-API tijdelijk hapert en uw backend geen retry- of failover-logica
 
 Bij **LaunchStudio** lossen we exact dit type veerkrachtproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Thomas's applicatie werd onbreekbaar: Het definitieve API-foutpercentage daalde naar nul en gebruikerssessies bleven 100% stabiel tijdens piekuren. (€1.400 (Resilient API Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Thomas's applicatie werd onbreekbaar: Het definitieve API-foutpercentage daalde naar nul en gebruikerssessies bleven 100% stabiel tijdens piekuren. (€1.400 (Resilient API Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/building-resilient-api-retry-logic-ai-apps
 

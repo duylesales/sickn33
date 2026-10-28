@@ -31,7 +31,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-U heeft een AI-chatbot gebouwd. De demo is indrukwekkend. Vrienden en bekenden zijn enthousiast. Zes maanden later is het product morsdood — geen gebruikers, geen omzet, complete radiostilte. Dit patroon herhaalde zich in 2026 duizenden keren, en het had vrijwel niets te maken met de intelligentie van het onderliggende taalmodel.
+U heeft een AI-chatbot gebouwd. De demo is indrukwekkend. Vrienden en bekenden zijn enthousiast. Zes maanden later is het product morsdood - geen gebruikers, geen omzet, complete radiostilte. Dit patroon herhaalde zich in 2026 duizenden keren, en het had vrijwel niets te maken met de intelligentie van het onderliggende taalmodel.
 
 ## De Goudkoorts rondom Chatbots en de Kater Achteraf
 
@@ -67,16 +67,16 @@ Dit is exact het gat dat [LaunchStudio](https://launchstudio.eu/nl/) dicht. Onze
 De meeste chatbot-oprichters bepalen hun abonnementsprijs vóórdat ze de rekensom hebben gemaakt van wat een gesprek daadwerkelijk kost. Die berekening is niet ingewikkeld, en het vooraf maken ervan is het verschil tussen een gezonde winstmarge en een acute financiële crisis.
 
 **De kern van de eenheidseconomie**  
-Elk uitgewisseld bericht verbruikt tokens aan twee kanten: de invoer (het bericht van de gebruiker plus de eerdere gesprekshistorie die u meestuurt voor context) en de uitvoer (het antwoord van het AI-model). LLM-aanbieders rekenen af per miljoen tokens. Eén enkel kort berichtje kost fracties van een cent — maar het getal dat er écht toe doet zijn de totale kosten van een compleet gesprek over een hele maand.
+Elk uitgewisseld bericht verbruikt tokens aan twee kanten: de invoer (het bericht van de gebruiker plus de eerdere gesprekshistorie die u meestuurt voor context) en de uitvoer (het antwoord van het AI-model). LLM-aanbieders rekenen af per miljoen tokens. Eén enkel kort berichtje kost fracties van een cent - maar het getal dat er écht toe doet zijn de totale kosten van een compleet gesprek over een hele maand.
 
 **Waarom het telkens meesturen van context de verborgen kostenvermenigvuldiger is**  
 Veel AI-gegenereerde prototypes sturen bij elk nieuw bericht de volledige voorgaande gesprekshistorie opnieuw mee. Bij het 20e bericht in een sessie betaalt u dus voor de tokens van alle 19 voorgaande berichten. Een gesprek dat voor de gebruiker aanvoelt als een normaal dialoogje, kost tegen het einde stilletjes 10 tot 15 keer meer aan tokens dan bij het openingsbericht. Deze exponentiële opbouw verklaart waarom een virale gebruikerspiek kan leiden tot astronomische API-facturen zonder dat er omzet tegenover staat.
 
 **Een praktisch stappenplan voor uw token-budget:**
-1. **Schat het gemiddeld aantal berichten per sessie** — een simpele helpdeskbot verbruikt wellicht 3 tot 5 berichten; een diepgaande coachings- of analysebot (zoals CareerBuddy) tikt al snel 20 tot 40 berichten aan.
+1. **Schat het gemiddeld aantal berichten per sessie** - een simpele helpdeskbot verbruikt wellicht 3 tot 5 berichten; een diepgaande coachings- of analysebot (zoals CareerBuddy) tikt al snel 20 tot 40 berichten aan.
 2. **Schat het gemiddeld aantal tokens per bericht**, rekening houdend met de accumulerende contextlengte.
-3. **Vermenigvuldig dit met het verwachte aantal actieve gebruikers per maand**, inclusief een ruime buffer voor onverwachte pieken — virale groei is een kostenpost als uw prijzen niet meeschalen.
-4. **Vergelijk de resulterende API-kosten per actieve gebruiker met uw abonnementsprijs** — als de AI-kosten alleen al een fors deel van de abonnementsprijs opsnoepen, is uw brutomarge te kwetsbaar.
+3. **Vermenigvuldig dit met het verwachte aantal actieve gebruikers per maand**, inclusief een ruime buffer voor onverwachte pieken - virale groei is een kostenpost als uw prijzen niet meeschalen.
+4. **Vergelijk de resulterende API-kosten per actieve gebruiker met uw abonnementsprijs** - als de AI-kosten alleen al een fors deel van de abonnementsprijs opsnoepen, is uw brutomarge te kwetsbaar.
 
 **Technieken die deze kosten meetbaar verlagen:**
 - **Oudere context samenvatten** naar een beknopte status in plaats van de volledige chatgeschiedenis letterlijk mee te sturen zodra het gesprek langer wordt.
@@ -88,7 +88,7 @@ Veel AI-gegenereerde prototypes sturen bij elk nieuw bericht de volledige voorga
 
 ### Een AI-native oprichter in actie: De chatbot die zichzelf bijna failliet draaide
 
-Eva, loopbaancoach in Leeuwarden, bouwde met Bolt CareerBuddy: een AI-chatbot die gepersonaliseerd loopbaanadvies gaf op basis van het cv en de ambities van de gebruiker. Ze werkte er twee intensieve weken aan. De lancering verliep fantastisch — een LinkedIn-bericht ging viraal in het Nederlandse netwerk en bracht binnen vier dagen ruim 3.000 aanmeldingen op.
+Eva, loopbaancoach in Leeuwarden, bouwde met Bolt CareerBuddy: een AI-chatbot die gepersonaliseerd loopbaanadvies gaf op basis van het cv en de ambities van de gebruiker. Ze werkte er twee intensieve weken aan. De lancering verliep fantastisch - een LinkedIn-bericht ging viraal in het Nederlandse netwerk en bracht binnen vier dagen ruim 3.000 aanmeldingen op.
 
 Eva was door het dolle heen, totdat ze een week later haar OpenAI-factuur opende: €4.200 aan API-kosten, veroorzaakt door gebruikers die urenlange gesprekken voerden zonder dat er enige limiet was ingesteld. Omdat ze CareerBuddy als gratis tool had gelanceerd met het idee "later te monetiseren", leverde dit nul euro aan inkomsten op. Ze was nog drie dagen verwijderd van een noodgedwongen sluiting om verdere verliezen te stoppen.
 
@@ -97,9 +97,9 @@ In paniek zocht ze contact met LaunchStudio. Het team van Manifera handelde dire
 **Resultaat:** De API-kosten daalden met 78% door het slimmere contextbeheer. Binnen drie weken na de livegang converteerden 340 van de 3.000+ geregistreerde gebruikers naar het betaalde abonnement van €19/maand. Wat een faillissement dreigde te worden, veranderde binnen enkele dagen in circa €6.400 aan maandelijkse terugkerende omzet (MRR).
 
 > *"Ik zag mijn bankrekening in realtime leeglopen en had binnen een week een winstgevend bedrijf. LaunchStudio loste niet alleen het kostenprobleem op, maar maakte van een virale piek een echt product."*  
-> — **Eva de Wit, Oprichter CareerBuddy (Leeuwarden)**
+> - **Eva de Wit, Oprichter CareerBuddy (Leeuwarden)**
 
-**Kosten & tijdlijn:** €2.750 (Launch & Grow Pakket, spoedtraject) — binnen 5 werkdagen live gestabiliseerd.
+**Kosten & tijdlijn:** €2.750 (Launch & Grow Pakket, spoedtraject) - binnen 5 werkdagen live gestabiliseerd.
 
 ---
 

@@ -1,11 +1,11 @@
-🚨 Drie schoolbesturen zeiden ja — op voorwaarde dat het platform de GDPR-audit van hun Functionaris Gegevensbescherming doorstond. De beoordeling vond vier kritieke blokkades in één dag. 😳
+🚨 Drie schoolbesturen zeiden ja - op voorwaarde dat het platform de GDPR-audit van hun Functionaris Gegevensbescherming doorstond. De beoordeling vond vier kritieke blokkades in één dag. 😳
 
 AI-tools bouwen een prachtige aanmeldingsknop, maar bijna nooit de juridische infrastructuur eronder. Dit zijn de gaten die procurement altijd vindt: 🧠
 
 ❌ Database standaard gehost in de VS in plaats van de EU
-❌ Een vooraf aangevinkt vakje voor analyticstracking — illegaal onder GDPR
+❌ Een vooraf aangevinkt vakje voor analyticstracking - illegaal onder GDPR
 ❌ Sessietokens die nooit verlopen na inactiviteit
-❌ Geen self-service data-export of accountverwijdering — het "Recht op Vergetelheid" bestaat alleen op papier
+❌ Geen self-service data-export of accountverwijdering - het "Recht op Vergetelheid" bestaat alleen op papier
 
 ✅ LaunchStudio migreert uw database naar Frankfurt, Amsterdam of Dublin
 ✅ Compliant opt-in-toestemming met audittimestamps voor elke gebeurtenis

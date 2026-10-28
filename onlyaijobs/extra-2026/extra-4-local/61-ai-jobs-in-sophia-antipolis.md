@@ -41,7 +41,7 @@ Content Format: Local Guide
 }
 </script>
 
-Sophia Antipolis, in the hills between Nice, Antibes and Cannes, is one of Europe's oldest and largest technology parks. Founded in the late 1960s as a place where science and industry could meet in a pine-forest setting, it now hosts thousands of companies, research institutes and schools. Together with Nice and the wider Côte d'Azur, it forms a technology region with a distinctive profile: travel technology, telecommunications and standards, semiconductors, space, health and a national AI research institute. For experienced machine learning engineers, AI jobs in Sophia Antipolis offer international teams, deep technical work and one of the most attractive living environments in Europe — along with some practical challenges around housing and commuting. This guide explains the landscape.
+Sophia Antipolis, in the hills between Nice, Antibes and Cannes, is one of Europe's oldest and largest technology parks. Founded in the late 1960s as a place where science and industry could meet in a pine-forest setting, it now hosts thousands of companies, research institutes and schools. Together with Nice and the wider Côte d'Azur, it forms a technology region with a distinctive profile: travel technology, telecommunications and standards, semiconductors, space, health and a national AI research institute. For experienced machine learning engineers, AI jobs in Sophia Antipolis offer international teams, deep technical work and one of the most attractive living environments in Europe - along with some practical challenges around housing and commuting. This guide explains the landscape.
 
 ## The Sophia Antipolis Technology Park
 
@@ -94,11 +94,11 @@ EU citizens can work freely in France. Non-EU professionals often use the Talent
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a better position.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Sophia Antipolis you will find few or no local vacancies there today. Use French job portals, the technology park's company directories, research institute vacancy pages and your network as primary sources. OnlyAIJobs is useful for comparing the Riviera with the Netherlands — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and its location-first approach is exactly what the Côte d'Azur requires: in a region where the difference between a 20-minute and a 60-minute commute depends on which road you take, the exact address of the office matters more than the name of the park.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Sophia Antipolis you will find few or no local vacancies there today. Use French job portals, the technology park's company directories, research institute vacancy pages and your network as primary sources. OnlyAIJobs is useful for comparing the Riviera with the Netherlands - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and its location-first approach is exactly what the Côte d'Azur requires: in a region where the difference between a 20-minute and a 60-minute commute depends on which road you take, the exact address of the office matters more than the name of the park.
 
 ## Travel Technology and Machine Learning
 
-Travel technology is one of the most data-intensive industries. Airlines, hotels and travel agencies need to price millions of products that expire — a seat on a flight or a hotel room tonight has no value tomorrow. Revenue management systems forecast demand, estimate price sensitivity and optimise availability and prices. Search and recommendation systems help travellers find relevant options among huge numbers of combinations. Fraud detection protects payments, and operations optimisation supports disruption management when flights are delayed or cancelled. ML engineers in travel technology work with large-scale systems serving global customers, high availability requirements and complex business rules, often collaborating with operations researchers and domain experts.
+Travel technology is one of the most data-intensive industries. Airlines, hotels and travel agencies need to price millions of products that expire - a seat on a flight or a hotel room tonight has no value tomorrow. Revenue management systems forecast demand, estimate price sensitivity and optimise availability and prices. Search and recommendation systems help travellers find relevant options among huge numbers of combinations. Fraud detection protects payments, and operations optimisation supports disruption management when flights are delayed or cancelled. ML engineers in travel technology work with large-scale systems serving global customers, high availability requirements and complex business rules, often collaborating with operations researchers and domain experts.
 
 ## Telecom Standards and AI
 
@@ -110,7 +110,7 @@ Sophia Antipolis has a strong tradition in medical image analysis, with Inria te
 
 ## Edge AI and Semiconductors
 
-Chip design and embedded systems companies in the area work on bringing AI to devices: optimising neural networks for low-power processors, designing hardware accelerators and building software toolchains. Engineers in this field combine ML with computer architecture and embedded programming — a scarce skill set in high demand across Europe.
+Chip design and embedded systems companies in the area work on bringing AI to devices: optimising neural networks for low-power processors, designing hardware accelerators and building software toolchains. Engineers in this field combine ML with computer architecture and embedded programming - a scarce skill set in high demand across Europe.
 
 ## Research Careers
 
@@ -131,7 +131,7 @@ Nice, France's fifth-largest city, has its own growing tech scene, with startups
 
 ## Living on the Côte d'Azur
 
-Life on the Riviera combines Mediterranean climate, beaches, the Alps less than two hours away and a rich cultural life. The trade-offs are high housing costs, seasonal tourism and traffic. Many engineers who move to the region stay for many years, attracted by quality of life and the international community in the park. Planning housing and commuting carefully — ideally visiting before signing a lease — makes the difference between an idyllic and a stressful first year.
+Life on the Riviera combines Mediterranean climate, beaches, the Alps less than two hours away and a rich cultural life. The trade-offs are high housing costs, seasonal tourism and traffic. Many engineers who move to the region stay for many years, attracted by quality of life and the international community in the park. Planning housing and commuting carefully - ideally visiting before signing a lease - makes the difference between an idyllic and a stressful first year.
 
 ## Evaluating an Offer
 
@@ -159,7 +159,7 @@ Employers in Sophia Antipolis value engineers who combine ML with systems thinki
 
 A data scientist working on dynamic pricing for an Amsterdam travel platform receives an offer from a travel technology company in Sophia Antipolis to work on airline revenue management models. The team is international and works in English.
 
-She compares net pay after French social contributions with her Dutch salary and investigates housing. Rents near the coast are high, so she chooses a village in the hinterland with a shorter commute to the park and negotiates two remote days per week. After a year, she says the work is technically deeper than her previous role and the quality of life — mountains, sea and sunshine — exceptional, though she recommends that newcomers plan their housing and commute carefully before signing.
+She compares net pay after French social contributions with her Dutch salary and investigates housing. Rents near the coast are high, so she chooses a village in the hinterland with a shorter commute to the park and negotiates two remote days per week. After a year, she says the work is technically deeper than her previous role and the quality of life - mountains, sea and sunshine - exceptional, though she recommends that newcomers plan their housing and commute carefully before signing.
 
 ## Key Takeaways
 

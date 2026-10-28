@@ -1,4 +1,4 @@
-🔥 Dr. Visser built a prototype using **Bolt** — dr, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Dr. Visser built a prototype using **Bolt** - dr, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Dr. Visser's application achieved production readiness: With the new LaunchStudio infrastructure, Dr. Visser reapplied for the hospital audit. He passed with flying colors. He secured a €6,000 MRR contract with the hospital network. I had a great medical idea, but zero knowledge of European data law. LaunchStudio built the compliant backend that turned my prototype into a legal business. (€4,500 (Enterprise Compliance Hardening package) — completed in 15 business days.). 🚀
+Dr. Visser's application achieved production readiness: With the new LaunchStudio infrastructure, Dr. Visser reapplied for the hospital audit. He passed with flying colors. He secured a €6,000 MRR contract with the hospital network. I had a great medical idea, but zero knowledge of European data law. LaunchStudio built the compliant backend that turned my prototype into a legal business. (€4,500 (Enterprise Compliance Hardening package) - completed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-generated-app-gdpr-compliance-checklist
 

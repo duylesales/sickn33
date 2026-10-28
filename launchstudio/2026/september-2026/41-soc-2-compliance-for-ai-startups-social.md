@@ -1,4 +1,4 @@
-🔒 Carter, a clinic manager, used **Bolt** to build a doctor scheduler — but healthcare partners refused to touch the app without SOC 2 compliance documentation in hand. 🏥
+🔒 Carter, a clinic manager, used **Bolt** to build a doctor scheduler - but healthcare partners refused to touch the app without SOC 2 compliance documentation in hand. 🏥
 
 A SOC 2 Type II report isn't a nice-to-have for AI startups; it's the only thing standing between you and a Fortune 500 or hospital contract. 🧠
 

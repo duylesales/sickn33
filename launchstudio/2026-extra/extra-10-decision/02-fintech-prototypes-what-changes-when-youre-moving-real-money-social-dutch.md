@@ -16,7 +16,7 @@ Wat u écht moet inrichten vóórdat er echt geld stroomt:
 ✅ Een onwijzigbaar append-only grootboek met dagelijkse geautomatiseerde aflettering (reconciliatie)
 ✅ Sterke Cliëntauthenticatie (SCA / 2FA) specifiek ingericht op het moment van transacties
 
-Bij **LaunchStudio**, ondersteund door meer dan 11 jaar productie-ervaring van Manifera, bouwen onze senior engineers de robuuste financiele backend, audit trails en veilige betaalstromen die toezichthouders eisen — zonder uw frontend overhoop te gooien.
+Bij **LaunchStudio**, ondersteund door meer dan 11 jaar productie-ervaring van Manifera, bouwen onze senior engineers de robuuste financiele backend, audit trails en veilige betaalstromen die toezichthouders eisen - zonder uw frontend overhoop te gooien.
 
 💡 Zo herlanceerde vakliedenplatform Vakwerk binnen 3 weken met een veilige escrow- en BaaS-architectuur.
 

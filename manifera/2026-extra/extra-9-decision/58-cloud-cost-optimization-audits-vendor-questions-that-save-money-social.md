@@ -1,4 +1,4 @@
-A cloud audit found 41% potential savings. Eight months later, less than a third had actually been captured. The report was accurate — nobody owned the follow-through. 📉💸
+A cloud audit found 41% potential savings. Eight months later, less than a third had actually been captured. The report was accurate - nobody owned the follow-through. 📉💸
 
 **The Pain Points:**
 ❌ **Shelf-Ware Reports:** Accurate findings with no implementation accountability sit in a shared drive, unused.
@@ -6,7 +6,7 @@ A cloud audit found 41% potential savings. Eight months later, less than a third
 ❌ **Blended Risk:** Rightsizing savings and multi-year commitment savings get lumped into one flattering headline number.
 
 **The Manifera Solution:**
-✅ **Savings-Tied Fees:** Paid on realized savings, not projected findings — we stay accountable through implementation.
+✅ **Savings-Tied Fees:** Paid on realized savings, not projected findings - we stay accountable through implementation.
 ✅ **Separated Risk Categories:** Rightsizing vs. committed spend, broken out so you can weigh each on its own merits.
 ✅ **90/180-Day Follow-Up:** We verify the savings actually hit your invoice, not just the report.
 

@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Engineers die AI-gebouwde apps beoordelen, zeggen steeds hetzelfde: "de API ligt open." Voor niet-technische oprichters is die zin verwarrend. Welke API? U hebt er nooit een gebouwd — u bouwde een app met schermen. Begrijpen wat een API is, en waarom die van u voor iedereen bereikbaar is, is een van de nuttigste inzichten voor elke oprichter die een AI-prototype naar productie brengt. Het verklaart de meeste ernstige problemen die in AI-gebouwde apps worden gevonden, en het kost ongeveer vijf minuten.
+Engineers die AI-gebouwde apps beoordelen, zeggen steeds hetzelfde: "de API ligt open." Voor niet-technische oprichters is die zin verwarrend. Welke API? U hebt er nooit een gebouwd - u bouwde een app met schermen. Begrijpen wat een API is, en waarom die van u voor iedereen bereikbaar is, is een van de nuttigste inzichten voor elke oprichter die een AI-prototype naar productie brengt. Het verklaart de meeste ernstige problemen die in AI-gebouwde apps worden gevonden, en het kost ongeveer vijf minuten.
 
 ## De Vergelijking met een Restaurant
 
@@ -37,7 +37,7 @@ Klikt een gebruiker op "toon mijn boekingen", dan stuurt het scherm via de API e
 
 Dit is het kernpunt: **iedereen kan rechtstreeks naar de keukendeur lopen.** Ze hoeven niet in de eetzaal te zitten of uw menukaart te gebruiken.
 
-De schermen van uw app zijn één manier om met de API te praten, maar niet de enige. Met de ontwikkelaarstools van een browser of een eenvoudig script kan iedereen verzoeken rechtstreeks naar uw API sturen — en vragen om dingen die uw schermen nooit aanbieden. Geeft de keuken alles mee waarom wordt gevraagd, dan betekenen de grenzen van de menukaart niets.
+De schermen van uw app zijn één manier om met de API te praten, maar niet de enige. Met de ontwikkelaarstools van een browser of een eenvoudig script kan iedereen verzoeken rechtstreeks naar uw API sturen - en vragen om dingen die uw schermen nooit aanbieden. Geeft de keuken alles mee waarom wordt gevraagd, dan betekenen de grenzen van de menukaart niets.
 
 Dat is wat "de API ligt open" betekent. Het is niet dat iemand heeft ingebroken; de deur was er altijd, omdat die er moet zijn. De vraag is of de keuken elke bestelling controleert.
 
@@ -90,7 +90,7 @@ Een reviewer controleert elk endpoint aan de hand van deze zes regels. De meeste
 
 ## De Deuren van Uw App in Kaart Brengen
 
-U kunt geen deuren beveiligen waarvan u niet weet dat ze bestaan. Een niet-technische oprichter kan een engineer — of, met zorg, een AI-tool — vragen een inventaris te maken van elk endpoint: API-routes, server actions, databasefuncties die voor clients openstaan, opslagbuckets, webhooks en geplande taken. Leg voor elk vast wat het doet, wie het mag gebruiken en welke data het raakt. Deze inventaris is de kaart voor de review en de basis voor tests. Hij brengt ook vaak vergeten endpoints van eerdere experimenten aan het licht die nog steeds bereikbaar zijn.
+U kunt geen deuren beveiligen waarvan u niet weet dat ze bestaan. Een niet-technische oprichter kan een engineer - of, met zorg, een AI-tool - vragen een inventaris te maken van elk endpoint: API-routes, server actions, databasefuncties die voor clients openstaan, opslagbuckets, webhooks en geplande taken. Leg voor elk vast wat het doet, wie het mag gebruiken en welke data het raakt. Deze inventaris is de kaart voor de review en de basis voor tests. Hij brengt ook vaak vergeten endpoints van eerdere experimenten aan het licht die nog steeds bereikbaar zijn.
 
 ## Waarom "Verborgen" Niet "Beschermd" Is
 
@@ -98,15 +98,15 @@ AI-gegenereerde apps beschermen functies vaak door ze te verbergen: de beheerkno
 
 ## Uitvoer: Minder Versturen Is Veiliger
 
-API's die door AI-tools zijn gegenereerd, geven vaak complete databaserecords terug — inclusief velden die het scherm nooit toont, zoals interne notities, e-mailadressen van andere gebruikers, inkoopprijzen of vlaggen. Iedereen die het netwerkverkeer bekijkt, kan ze zien. API's in productie selecteren alleen de velden die elk scherm nodig heeft en sluiten gevoelige velden standaard uit. Dat beperkt de blootstelling van data, ook als de toegangscontroles kloppen, en het versnelt de antwoorden.
+API's die door AI-tools zijn gegenereerd, geven vaak complete databaserecords terug - inclusief velden die het scherm nooit toont, zoals interne notities, e-mailadressen van andere gebruikers, inkoopprijzen of vlaggen. Iedereen die het netwerkverkeer bekijkt, kan ze zien. API's in productie selecteren alleen de velden die elk scherm nodig heeft en sluiten gevoelige velden standaard uit. Dat beperkt de blootstelling van data, ook als de toegangscontroles kloppen, en het versnelt de antwoorden.
 
 ## Openbare API's versus Interne API's
 
-Sommige apps stellen bewust een API open — voor partners, koppelingen of de eigen tools van klanten. Die vragen extra zorg: API-sleutels per client met afgebakende rechten, rate limits per sleutel, versiebeheer, documentatie en logging van het gebruik. Interne API's die alleen door uw eigen frontend worden gebruikt, hebben dezelfde toegangscontroles nodig, maar kunnen zich vrijer ontwikkelen. Weten welke welke is, voorkomt zowel overbodige engineering als te weinig bescherming.
+Sommige apps stellen bewust een API open - voor partners, koppelingen of de eigen tools van klanten. Die vragen extra zorg: API-sleutels per client met afgebakende rechten, rate limits per sleutel, versiebeheer, documentatie en logging van het gebruik. Interne API's die alleen door uw eigen frontend worden gebruikt, hebben dezelfde toegangscontroles nodig, maar kunnen zich vrijer ontwikkelen. Weten welke welke is, voorkomt zowel overbodige engineering als te weinig bescherming.
 
 ## Hoe Engineers Uw API Testen
 
-Een reviewer test elk endpoint doorgaans als: een anonieme bezoeker, een gewone gebruiker die zijn eigen data opvraagt, een gewone gebruiker die de data van een andere gebruiker opvraagt, een gebruiker van een andere organisatie, een gebruiker met een lagere rol die een actie van een hogere rol probeert, en een gebruiker die onverwachte velden of waarden stuurt. Elke combinatie hoort het verwachte resultaat op te leveren — succes, "niet gevonden" of "niet toegestaan". Deze gevallen worden daarna geautomatiseerde tests, zodat ze na elke wijziging blijven draaien.
+Een reviewer test elk endpoint doorgaans als: een anonieme bezoeker, een gewone gebruiker die zijn eigen data opvraagt, een gewone gebruiker die de data van een andere gebruiker opvraagt, een gebruiker van een andere organisatie, een gebruiker met een lagere rol die een actie van een hogere rol probeert, en een gebruiker die onverwachte velden of waarden stuurt. Elke combinatie hoort het verwachte resultaat op te leveren - succes, "niet gevonden" of "niet toegestaan". Deze gevallen worden daarna geautomatiseerde tests, zodat ze na elke wijziging blijven draaien.
 
 ## Waar Oprichters om Kunnen Vragen
 
@@ -129,11 +129,11 @@ Elk ervan is op te lossen zonder te veranderen wat gebruikers zien, en samen zij
 
 ## API's en Databasepolicy's die Samenwerken
 
-In apps met Supabase en Firebase praat de frontend vaak rechtstreeks met de database, dus zijn de databasepolicy's het toegangsbeheer van de API. In apps met een eigen backend dwingt servercode de regels af. Veel apps in productie gebruiken beide: databasepolicy's als vangnet, en servercode voor bedrijfsregels. Die combinatie betekent dat een fout in de ene laag niet automatisch data blootstelt — gelaagde verdediging, toegepast op de keukendeur.
+In apps met Supabase en Firebase praat de frontend vaak rechtstreeks met de database, dus zijn de databasepolicy's het toegangsbeheer van de API. In apps met een eigen backend dwingt servercode de regels af. Veel apps in productie gebruiken beide: databasepolicy's als vangnet, en servercode voor bedrijfsregels. Die combinatie betekent dat een fout in de ene laag niet automatisch data blootstelt - gelaagde verdediging, toegepast op de keukendeur.
 
 ## Na de Oplossing: Deuren Dicht Houden
 
-API's veranderen telkens als er functies worden toegevoegd — en AI-tools voegen gemakkelijk endpoints toe. Houd de deuren door de tijd dicht met een paar gewoonten: elk nieuw endpoint doorloopt dezelfde zes controles; geautomatiseerde toegangstests draaien bij elke wijziging; de inventaris van endpoints wordt bijgewerkt als routes worden toegevoegd of verwijderd; en vóór grote releases vindt een korte review van nieuwe endpoints plaats. Deze gewoonten kosten minuten per functie en voorkomen dat deuren die ooit veilig waren geleidelijk weer opengaan.
+API's veranderen telkens als er functies worden toegevoegd - en AI-tools voegen gemakkelijk endpoints toe. Houd de deuren door de tijd dicht met een paar gewoonten: elk nieuw endpoint doorloopt dezelfde zes controles; geautomatiseerde toegangstests draaien bij elke wijziging; de inventaris van endpoints wordt bijgewerkt als routes worden toegevoegd of verwijderd; en vóór grote releases vindt een korte review van nieuwe endpoints plaats. Deze gewoonten kosten minuten per functie en voorkomen dat deuren die ooit veilig waren geleidelijk weer opengaan.
 
 ## Met Klanten over Uw API Praten
 
@@ -141,11 +141,11 @@ Zakelijke klanten vragen soms hoe hun data "in de API" wordt beschermd. Een duid
 
 ## Eerste Stap
 
-Voer vandaag de hierboven beschreven test met twee accounts uit op uw drie belangrijkste pagina's. Toont er een de data van een ander account, dan hebt u uw eerste — en belangrijkste — deur gevonden om te sluiten.
+Voer vandaag de hierboven beschreven test met twee accounts uit op uw drie belangrijkste pagina's. Toont er een de data van een ander account, dan hebt u uw eerste - en belangrijkste - deur gevonden om te sluiten.
 
 ## Waarom Dit Inzicht Niet-Technische Oprichters Helpt
 
-Zodra u begrijpt dat elk scherm met een keukendeur praat die iedereen kan bereiken, worden veel gesprekken met engineers duidelijker. U kunt betere vragen stellen, antwoorden met meer vertrouwen beoordelen, en herkennen wanneer een voorgestelde oplossing alleen een knop verbergt in plaats van de bestelling te controleren. U begrijpt ook waarom productierijpheid niet kan worden beoordeeld door door de app te klikken: de risico's zitten in verzoeken die uw schermen nooit versturen. Die verschuiving in perspectief is vaak het waardevolste wat een niet-technische oprichter wint voordat een AI-prototype naar productie gaat — waardevoller dan welke afzonderlijke oplossing ook, omdat het elke toekomstige beslissing over functies, leveranciers en prioriteiten vormt.
+Zodra u begrijpt dat elk scherm met een keukendeur praat die iedereen kan bereiken, worden veel gesprekken met engineers duidelijker. U kunt betere vragen stellen, antwoorden met meer vertrouwen beoordelen, en herkennen wanneer een voorgestelde oplossing alleen een knop verbergt in plaats van de bestelling te controleren. U begrijpt ook waarom productierijpheid niet kan worden beoordeeld door door de app te klikken: de risico's zitten in verzoeken die uw schermen nooit versturen. Die verschuiving in perspectief is vaak het waardevolste wat een niet-technische oprichter wint voordat een AI-prototype naar productie gaat - waardevoller dan welke afzonderlijke oplossing ook, omdat het elke toekomstige beslissing over functies, leveranciers en prioriteiten vormt.
 
 ## Onthoud
 
@@ -153,7 +153,7 @@ Uw schermen bepalen wat gebruikers zien; uw API bepaalt wat iedereen kan krijgen
 
 ## Waar LaunchStudio Past
 
-De reviews van LaunchStudio beginnen precies hier: elke deur naar de keuken van uw app in kaart brengen en controleren of elke deur nagaat wie er vraagt en wat die mag hebben. De oplossingen worden achter uw bestaande schermen aangebracht. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het bouwen en beveiligen van API's voor klanten als Vodafone en TNO, met engineers in Ho Chi Minh-stad en klantcontact in Amsterdam en Singapore. Zie [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/). De [OWASP API Security Top 10](https://owasp.org/API-Security/) somt de meest voorkomende API-risico's op, met gebroken autorisatie op objectniveau — het probleem van "een nummer veranderen" — bovenaan.
+De reviews van LaunchStudio beginnen precies hier: elke deur naar de keuken van uw app in kaart brengen en controleren of elke deur nagaat wie er vraagt en wat die mag hebben. De oplossingen worden achter uw bestaande schermen aangebracht. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het bouwen en beveiligen van API's voor klanten als Vodafone en TNO, met engineers in Ho Chi Minh-stad en klantcontact in Amsterdam en Singapore. Zie [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/). De [OWASP API Security Top 10](https://owasp.org/API-Security/) somt de meest voorkomende API-risico's op, met gebroken autorisatie op objectniveau - het probleem van "een nummer veranderen" - bovenaan.
 
 [Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en we doen de test met twee accounts samen met u.
 
@@ -163,16 +163,16 @@ De reviews van LaunchStudio beginnen precies hier: elke deur naar de keuken van 
 
 Liesbeth Hoek, die een scharreleierbedrijf bij Barneveld heeft, bouwde Eierbestel in Bolt: huishoudens nemen een abonnement op wekelijkse eierbezorging, kiezen bezorgdagen en pauzeren als ze op vakantie zijn. Zo'n 700 huishoudens op de Veluwe hadden een abonnement. Liesbeth wist niet wat een API was en dacht niet dat ze er een had.
 
-Een klant die in de IT werkte, mailde haar: door het nummer in het adres van zijn bezorgpagina te veranderen, kon hij de namen, adressen en bezorgnotities ("sleutel onder de mat") van andere klanten zien. Hij merkte ook dat de pagina "route van de chauffeur", verborgen voor klanten, de volledige bezorglijst van de dag teruggaf aan iedereen die het adres opende. Liesbeth vroeg LaunchStudio wat dat betekende. De engineers legden de keukendeur uit — en vonden nog twee ongecontroleerde deuren: de update van het abonnement accepteerde een prijsveld dat door de browser werd meegestuurd, en het endpoint voor bezorgnotities had geen limiet op hoe vaak het kon worden aangeroepen.
+Een klant die in de IT werkte, mailde haar: door het nummer in het adres van zijn bezorgpagina te veranderen, kon hij de namen, adressen en bezorgnotities ("sleutel onder de mat") van andere klanten zien. Hij merkte ook dat de pagina "route van de chauffeur", verborgen voor klanten, de volledige bezorglijst van de dag teruggaf aan iedereen die het adres opende. Liesbeth vroeg LaunchStudio wat dat betekende. De engineers legden de keukendeur uit - en vonden nog twee ongecontroleerde deuren: de update van het abonnement accepteerde een prijsveld dat door de browser werd meegestuurd, en het endpoint voor bezorgnotities had geen limiet op hoe vaak het kon worden aangeroepen.
 
 In vijf werkdagen voegden de engineers van LaunchStudio controles op eigendom toe aan elk klant-endpoint met row level security, beperkten ze de chauffeursroute tot een chauffeursrol, berekenden ze prijzen alleen nog op de server, voegden ze rate limits en invoervalidatie toe, haalden ze notities in de stijl van "sleutel onder de mat" uit de weergave voor de chauffeur behalve op de bezorgdag, en voerden ze de test met twee accounts samen met Liesbeth uit tijdens een gesprek, zodat ze de deuren kon zien sluiten.
 
 **Resultaat:** Liesbeth informeerde de betrokken klanten, van wie de meesten haar bedankten voor de openheid. Eierbestel groeide naar 950 huishoudens, en Liesbeth voert de test met twee accounts nu na elke wijziging zelf uit.
 
 > *"Ik wist niet dat ik een keukendeur had. Nu ken ik elke deur in mijn app, en weet ik dat elke deur controleert wie er klopt."*
-> — **Liesbeth Hoek, Oprichter, Eierbestel (Barneveld)**
+> - **Liesbeth Hoek, Oprichter, Eierbestel (Barneveld)**
 
-**Kosten & Tijdlijn:** € 1.250 (Launch Ready-pakket: toegangscontroles in de API, handhaving van rollen, prijzen op de server, validatie en rate limits) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.250 (Launch Ready-pakket: toegangscontroles in de API, handhaving van rollen, prijzen op de server, validatie en rate limits) - afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 

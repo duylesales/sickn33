@@ -15,7 +15,7 @@ The value of an engineer is no longer in writing syntax. It is in architectural 
 
 *"In the AI era, the human is the compiler, the tester, and the architect. The AI is just the typist."*
 
-At Manifera, our Dutch Tech Leads define the strict system architecture, while our Vietnamese engineering pods act as elite AI Orchestrators — multiplying their velocity by 3x safely.
+At Manifera, our Dutch Tech Leads define the strict system architecture, while our Vietnamese engineering pods act as elite AI Orchestrators - multiplying their velocity by 3x safely.
 
 👇 Read our CTO guide to restructuring your engineering team for the AI era:
 [Read the full breakdown: manifera.com/blog/ai-driven-software-development-end-of-full-stack]

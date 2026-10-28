@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The process has gone well. Two interviews, a technical conversation that felt genuinely interesting, and then an email: before the final stage, the employer would like you to complete an assessment at an external agency. Half a day, a cognitive ability test, a personality questionnaire and an interview with a psychologist. For candidates in AI and data roles — people who evaluate models for a living — this often produces a specific discomfort, because the instrument being applied to you is harder to interrogate than the ones you build. It is worth knowing what these assessments are, what rights you have over the results, and when declining is a reasonable professional choice rather than a red flag.
+The process has gone well. Two interviews, a technical conversation that felt genuinely interesting, and then an email: before the final stage, the employer would like you to complete an assessment at an external agency. Half a day, a cognitive ability test, a personality questionnaire and an interview with a psychologist. For candidates in AI and data roles - people who evaluate models for a living - this often produces a specific discomfort, because the instrument being applied to you is harder to interrogate than the ones you build. It is worth knowing what these assessments are, what rights you have over the results, and when declining is a reasonable professional choice rather than a red flag.
 
 ## What a Dutch Assessment Usually Contains
 
@@ -53,7 +53,7 @@ For AI and data roles specifically, assessments appear most often at larger empl
 
 This is the part most candidates do not know, and it changes the decision.
 
-Under the **NVP Recruitment Code**, which many Dutch employers and assessment agencies follow, a psychological assessment is conducted with your consent, you are entitled to see the report, and you have the right to decide whether it is shared with the employer — the blocking right. Reputable agencies will state this explicitly before you start.
+Under the **NVP Recruitment Code**, which many Dutch employers and assessment agencies follow, a psychological assessment is conducted with your consent, you are entitled to see the report, and you have the right to decide whether it is shared with the employer - the blocking right. Reputable agencies will state this explicitly before you start.
 
 Under the **GDPR**, the assessment results are personal data about you. You can request access to them, ask for correction of factual errors and ask how long they are retained. The **Dutch Data Protection Authority** supervises this, and Dutch guidance indicates application data should not be kept longer than necessary.
 
@@ -71,7 +71,7 @@ For roles where you would be the first data professional, working largely alone,
 
 They do not measure whether you can build a reliable data pipeline, evaluate a model honestly or explain uncertainty to a planner. For AI and data roles, the actual predictive content sits in the technical conversation and any practical assignment, not in an abstract reasoning score.
 
-Personality questionnaires in particular are self-report instruments, easily influenced by how you interpret the questions, and weak as a stand-alone selection tool. Reports can also read as more definitive than the underlying evidence supports — a familiar problem to anyone who has watched a confident model output be treated as fact.
+Personality questionnaires in particular are self-report instruments, easily influenced by how you interpret the questions, and weak as a stand-alone selection tool. Reports can also read as more definitive than the underlying evidence supports - a familiar problem to anyone who has watched a confident model output be treated as fact.
 
 And language matters. A verbal reasoning test in Dutch measures something different for a non-native speaker than for a native one, which is a fairness question worth raising if it applies to you.
 
@@ -129,7 +129,7 @@ Some processes treat an assessment as a fixed step, and knowing which ones saves
 
 **Traineeship programmes** select cohorts rather than individuals, and comparability between candidates is the whole point of their process. Assessments are almost always part of it.
 
-**Public sector and executive agencies** frequently use standardised instruments to demonstrate that selection was objective and defensible — which is also why their processes are slower and more formal.
+**Public sector and executive agencies** frequently use standardised instruments to demonstrate that selection was objective and defensible - which is also why their processes are slower and more formal.
 
 **Large corporates with structured grading systems** apply the same steps to everyone at a given level, and exceptions require someone senior to authorise them.
 
@@ -147,7 +147,7 @@ A data scientist reaches the final stage with a large public organisation and is
 
 The answers are reassuring: an agency working under professional psychological standards, results shared with her before the employer, an explicit blocking right, and the assessment described as one input alongside the interviews and a technical case.
 
-She agrees, spends an evening practising reasoning tests and completes the assessment. The report describes her as strongly analytical, direct in communication and inclined to take on too much — which she recognises and which prompts a useful conversation in the final interview about how the team handles workload.
+She agrees, spends an evening practising reasoning tests and completes the assessment. The report describes her as strongly analytical, direct in communication and inclined to take on too much - which she recognises and which prompts a useful conversation in the final interview about how the team handles workload.
 
 She gets the job. Two years later she uses the same report's observation about over-commitment when negotiating the scope of a new project. The assessment turned out to be the least decisive and most personally useful part of the process.
 
@@ -157,7 +157,7 @@ She gets the job. Two years later she uses the same report's observation about o
 - Under the NVP Recruitment Code you are generally entitled to see the report and to decide whether it is released; under the GDPR you can request access and ask about retention.
 - Assessments predict general performance modestly but say little about the technical work AI and data roles actually require.
 - Ask five questions before agreeing: who, rights over the report, weight in the decision, retention, and whether any part is automated.
-- Declining is reasonable when the request is disproportionate, irrelevant or unclear — propose a technical alternative instead of refusing flatly.
+- Declining is reasonable when the request is disproportionate, irrelevant or unclear - propose a technical alternative instead of refusing flatly.
 
 ## Where to Start
 
@@ -168,7 +168,7 @@ Browse current AI, machine learning and data jobs, free and without an account, 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate invited to an assessment) Am I obliged to do a psychological assessment?
-No. Participation is based on consent, and you can decline — ideally by proposing an alternative such as a technical conversation or a practical exercise.
+No. Participation is based on consent, and you can decline - ideally by proposing an alternative such as a technical conversation or a practical exercise.
 
 ### (Scenario: candidate worried about results) Do I get to see the assessment report?
 Under the NVP Recruitment Code, followed by many Dutch employers and agencies, you are entitled to see the report and to decide whether it is shared with the employer.
@@ -187,11 +187,11 @@ Yes. Dutch equal treatment legislation includes an obligation to make reasonable
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Am I obliged to do a psychological assessment?", "acceptedAnswer": {"@type": "Answer", "text": "No — it is based on consent; propose a technical alternative if you decline."}},
+    {"@type": "Question", "name": "Am I obliged to do a psychological assessment?", "acceptedAnswer": {"@type": "Answer", "text": "No - it is based on consent; propose a technical alternative if you decline."}},
     {"@type": "Question", "name": "Do I get to see the assessment report?", "acceptedAnswer": {"@type": "Answer", "text": "Under the NVP Recruitment Code you are generally entitled to see it and to block its release."}},
-    {"@type": "Question", "name": "Do assessments predict performance in data roles?", "acceptedAnswer": {"@type": "Answer", "text": "Only partly — technical conversations and practical work say more."}},
-    {"@type": "Question", "name": "What if part of the assessment is automated?", "acceptedAnswer": {"@type": "Answer", "text": "Ask — AI Act and GDPR rules on evaluation and automated decisions apply."}},
-    {"@type": "Question", "name": "Can I ask for adjustments during an assessment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — reasonable accommodations are required under Dutch equal treatment law."}}
+    {"@type": "Question", "name": "Do assessments predict performance in data roles?", "acceptedAnswer": {"@type": "Answer", "text": "Only partly - technical conversations and practical work say more."}},
+    {"@type": "Question", "name": "What if part of the assessment is automated?", "acceptedAnswer": {"@type": "Answer", "text": "Ask - AI Act and GDPR rules on evaluation and automated decisions apply."}},
+    {"@type": "Question", "name": "Can I ask for adjustments during an assessment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - reasonable accommodations are required under Dutch equal treatment law."}}
   ]
 }
 </script>

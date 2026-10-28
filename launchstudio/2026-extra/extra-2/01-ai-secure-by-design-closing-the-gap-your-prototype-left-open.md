@@ -31,64 +31,64 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-"Is it secure?" is the question almost every founder eventually asks about a prototype built with Lovable, Bolt, or Cursor — usually right before a launch date, rather than at the start. The honest answer is almost never a simple yes or no. It's "secure against what, exactly?" — and that specificity is precisely what a demo-focused AI coding tool has no reason to volunteer on its own. Founders tend to hear "secure" as a single property, like a light switch that's either on or off, when in practice it's a long list of very specific, very checkable claims, most of which nobody has actually verified yet.
+"Is it secure?" is the question almost every founder eventually asks about a prototype built with Lovable, Bolt, or Cursor - usually right before a launch date, rather than at the start. The honest answer is almost never a simple yes or no. It's "secure against what, exactly?" - and that specificity is precisely what a demo-focused AI coding tool has no reason to volunteer on its own. Founders tend to hear "secure" as a single property, like a light switch that's either on or off, when in practice it's a long list of very specific, very checkable claims, most of which nobody has actually verified yet.
 
 ## What "AI Secure" Actually Means in Practice
 
-Being AI secure isn't a property a tool bakes in by default — it's a specific, verifiable state your application either reaches or doesn't, covering things like: does the server independently verify who's making a request, or does it trust whatever the frontend claims? Are secrets like API keys kept server-side, or did one end up embedded in a client-visible bundle? Is user data isolated per account, or can one logged-in user's request accidentally reach another user's records? Does a failed login attempt get logged and rate-limited, or can it be retried indefinitely by an automated script? None of these are yes-by-default outcomes of AI-assisted coding, and none of them show up as a visible bug during ordinary use — they're the kind of gap that sits quietly until someone specifically goes looking for it, whether that someone is a security reviewer or a stranger with bad intentions.
+Being AI secure isn't a property a tool bakes in by default - it's a specific, verifiable state your application either reaches or doesn't, covering things like: does the server independently verify who's making a request, or does it trust whatever the frontend claims? Are secrets like API keys kept server-side, or did one end up embedded in a client-visible bundle? Is user data isolated per account, or can one logged-in user's request accidentally reach another user's records? Does a failed login attempt get logged and rate-limited, or can it be retried indefinitely by an automated script? None of these are yes-by-default outcomes of AI-assisted coding, and none of them show up as a visible bug during ordinary use - they're the kind of gap that sits quietly until someone specifically goes looking for it, whether that someone is a security reviewer or a stranger with bad intentions.
 
 ## Why the Demo Doesn't Test Any of This
 
-A demo, by its nature, is a cooperative scenario — you, the founder, testing your own product as intended, on your own device, with your own data, clicking the buttons in the order you expect them to be clicked. Nothing about that scenario naturally exercises an attacker's perspective, because you're not trying to break your own app while demoing it to an investor, a friend, or your first ten customers. An attacker's perspective actively looks for the request nobody expected, the field nobody validated, the endpoint nobody remembered existed once the feature shipped. The gap isn't a flaw in the tools themselves; it's the predictable, almost mechanical consequence of what a demo is actually built to prove, which has never included "and here's what happens if someone tries to misuse this."
+A demo, by its nature, is a cooperative scenario - you, the founder, testing your own product as intended, on your own device, with your own data, clicking the buttons in the order you expect them to be clicked. Nothing about that scenario naturally exercises an attacker's perspective, because you're not trying to break your own app while demoing it to an investor, a friend, or your first ten customers. An attacker's perspective actively looks for the request nobody expected, the field nobody validated, the endpoint nobody remembered existed once the feature shipped. The gap isn't a flaw in the tools themselves; it's the predictable, almost mechanical consequence of what a demo is actually built to prove, which has never included "and here's what happens if someone tries to misuse this."
 
 ## The Three Places This Gap Shows Up Most Often
 
-**Client-side trust.** Role checks, premium-feature gating, and permission logic frequently live only in the frontend, which is convenient to build, cheap to iterate on, and looks entirely correct in every demo — but is trivially bypassed by anyone who can read the network requests directly, since the server behind that frontend was never actually asked to check anything itself.
+**Client-side trust.** Role checks, premium-feature gating, and permission logic frequently live only in the frontend, which is convenient to build, cheap to iterate on, and looks entirely correct in every demo - but is trivially bypassed by anyone who can read the network requests directly, since the server behind that frontend was never actually asked to check anything itself.
 
 **Secrets in the wrong place.** API keys and service credentials generated during rapid prototyping sessions often end up hardcoded directly into frontend code, invisible in the rendered UI but fully visible to anyone who opens the browser's developer tools and reads the bundled JavaScript, sometimes for months before anyone notices.
 
-**No independent verification layer.** Without a second pass — someone specifically looking for what a working demo wouldn't surface — these gaps typically remain invisible until a real user, or a real attacker, finds them by accident or on purpose, and by then the exposure has usually already happened rather than merely being theoretical.
+**No independent verification layer.** Without a second pass - someone specifically looking for what a working demo wouldn't surface - these gaps typically remain invisible until a real user, or a real attacker, finds them by accident or on purpose, and by then the exposure has usually already happened rather than merely being theoretical.
 
 ## Why Founders Consistently Underestimate How Quickly This Gets Found
 
-It's tempting to assume nobody's looking — that a small, early-stage product with a few dozen users is too obscure to attract unwanted attention. In practice, much of this discovery isn't targeted at all: automated scanners and bots continuously probe the open internet for exactly these categories of unprotected endpoints and exposed keys, with no idea or interest in who built the app, simply checking whether the gap exists. A product doesn't need to be famous to be found this way — it only needs to be reachable. Tools built specifically to crawl for exposed API keys, open admin panels, and misconfigured storage buckets run continuously, indexing large swaths of the internet a day regardless of a product's traffic volume or public profile — a brand-new app on a fresh domain is often scanned within its first day of being reachable, well before its founder has told a single customer it exists.
+It's tempting to assume nobody's looking - that a small, early-stage product with a few dozen users is too obscure to attract unwanted attention. In practice, much of this discovery isn't targeted at all: automated scanners and bots continuously probe the open internet for exactly these categories of unprotected endpoints and exposed keys, with no idea or interest in who built the app, simply checking whether the gap exists. A product doesn't need to be famous to be found this way - it only needs to be reachable. Tools built specifically to crawl for exposed API keys, open admin panels, and misconfigured storage buckets run continuously, indexing large swaths of the internet a day regardless of a product's traffic volume or public profile - a brand-new app on a fresh domain is often scanned within its first day of being reachable, well before its founder has told a single customer it exists.
 
 ## A Practical Self-Audit Checklist Before You Show This to Investors or Customers
 
-You don't need a security background to run a first-pass check on your own prototype — you need about twenty minutes and a willingness to actively try to break your own product rather than use it as intended. This isn't a substitute for a professional review, but it's a reasonable way to catch the most obvious gaps before anyone else does, and it gives you a much more specific starting point when you do talk to an engineer.
+You don't need a security background to run a first-pass check on your own prototype - you need about twenty minutes and a willingness to actively try to break your own product rather than use it as intended. This isn't a substitute for a professional review, but it's a reasonable way to catch the most obvious gaps before anyone else does, and it gives you a much more specific starting point when you do talk to an engineer.
 
 **Run through these five checks yourself:**
 
-- **Open dev tools and watch the network tab.** Click through every "premium," "admin," or "restricted" feature in your app and watch what data actually comes back in the response, not just what the UI displays — if the full data set arrives and the UI simply chooses not to show parts of it, the restriction is cosmetic.
+- **Open dev tools and watch the network tab.** Click through every "premium," "admin," or "restricted" feature in your app and watch what data actually comes back in the response, not just what the UI displays - if the full data set arrives and the UI simply chooses not to show parts of it, the restriction is cosmetic.
 - **Try requesting a URL directly instead of clicking to it.** If a page is supposed to require login or a specific role, open it in an incognito window with no session at all and see what loads.
-- **Search your own frontend bundle for keys.** Search the browser's "view source" or the compiled JavaScript bundle for the strings "key," "secret," or "token" — anything that returns a real credential rather than a placeholder needs to move server-side immediately.
+- **Search your own frontend bundle for keys.** Search the browser's "view source" or the compiled JavaScript bundle for the strings "key," "secret," or "token" - anything that returns a real credential rather than a placeholder needs to move server-side immediately.
 - **Try changing an ID in the URL.** If your app shows a record by ID (an invoice, a document, a profile), change the number or identifier slightly and see whether you get an error or someone else's actual data.
-- **Check what a failed request tells you.** Deliberately submit a wrong password or an invalid request and read the error message closely — a message that confirms whether an email address exists in your system, for instance, is quietly leaking more than it should.
+- **Check what a failed request tells you.** Deliberately submit a wrong password or an invalid request and read the error message closely - a message that confirms whether an email address exists in your system, for instance, is quietly leaking more than it should.
 
-None of these checks require writing code, and none of them take more than a few minutes each. What they will not catch is the gap that only shows up under the exact conditions this article describes — one endpoint you forgot existed, a role check applied everywhere except one route, a validation rule enforced on the form but not the API behind it. That's the specific class of finding a structured review exists to catch, precisely because it's the kind of gap a founder's own testing, however diligent, tends to walk right past.
+None of these checks require writing code, and none of them take more than a few minutes each. What they will not catch is the gap that only shows up under the exact conditions this article describes - one endpoint you forgot existed, a role check applied everywhere except one route, a validation rule enforced on the form but not the API behind it. That's the specific class of finding a structured review exists to catch, precisely because it's the kind of gap a founder's own testing, however diligent, tends to walk right past.
 
 ## What Actually Closing the Gap Looks Like
 
-Becoming genuinely AI secure doesn't mean rebuilding your product. It means a specific, targeted pass: moving authorization checks server-side, moving secrets into proper environment configuration, testing the boundary between what a user is allowed to do and what your code actually enforces, and confirming that a rejected request fails safely rather than leaking information about why it failed. [LaunchStudio](https://launchstudio.eu/en/) is powered by Manifera, a software development company with over 11 years of experience securing production applications for clients including Vodafone and TNO — the same engineering discipline, scoped specifically to what an AI-native founder's prototype needs before going live.
+Becoming genuinely AI secure doesn't mean rebuilding your product. It means a specific, targeted pass: moving authorization checks server-side, moving secrets into proper environment configuration, testing the boundary between what a user is allowed to do and what your code actually enforces, and confirming that a rejected request fails safely rather than leaking information about why it failed. [LaunchStudio](https://launchstudio.eu/en/) is powered by Manifera, a software development company with over 11 years of experience securing production applications for clients including Vodafone and TNO - the same engineering discipline, scoped specifically to what an AI-native founder's prototype needs before going live.
 
 Manifera's security review process runs through engineering teams spanning its Amsterdam headquarters at Herengracht 420 and its development center on Pho Quang Street in Ho Chi Minh City, giving LaunchStudio the ability to move quickly on a founder's timeline without cutting corners on the review itself.
 
-[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — before a real user finds the gap your demo never tested.
+[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - before a real user finds the gap your demo never tested.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Premium Feature Anyone Could Unlock
 
-Daan, a former personal trainer turned founder in Rotterdam, built FitTrack Pro — an AI-assisted coaching platform generating personalized workout plans — using Lovable, with a paid premium tier gating advanced plan customization behind a subscription check.
+Daan, a former personal trainer turned founder in Rotterdam, built FitTrack Pro - an AI-assisted coaching platform generating personalized workout plans - using Lovable, with a paid premium tier gating advanced plan customization behind a subscription check.
 
-Two weeks after a soft launch, a technically curious client mentioned he'd accessed the premium plan builder without paying, simply by calling the same API endpoint the premium UI used through his browser's developer tools. LaunchStudio's review confirmed the subscription check existed only in the frontend — the API itself served premium data to any authenticated user regardless of payment status.
+Two weeks after a soft launch, a technically curious client mentioned he'd accessed the premium plan builder without paying, simply by calling the same API endpoint the premium UI used through his browser's developer tools. LaunchStudio's review confirmed the subscription check existed only in the frontend - the API itself served premium data to any authenticated user regardless of payment status.
 
 **Result:** LaunchStudio moved the subscription check server-side, so every premium API call now independently verifies an active subscription, closing the gap regardless of what the frontend shows. Daan's core coaching logic and UI were untouched.
 
 > *"I built the paywall the way Lovable suggested and it looked completely correct in every demo I ran. It took one curious client to show me it was basically decorative."*
-> — **Daan Vermeulen, Founder, FitTrack Pro (Rotterdam)**
+> - **Daan Vermeulen, Founder, FitTrack Pro (Rotterdam)**
 
-**Cost & Timeline:** €1,600 (Launch Ready package, server-side authorization hardening) — completed in 6 business days.
+**Cost & Timeline:** €1,600 (Launch Ready package, server-side authorization hardening) - completed in 6 business days.
 
 ---
 
@@ -96,23 +96,23 @@ Two weeks after a soft launch, a technically curious client mentioned he'd acces
 
 ### If a founder can't code, how would they even know to ask for a "server-side" check specifically?
 
-They usually wouldn't, and they shouldn't have to — this is precisely why LaunchStudio's intake process is built around a founder describing what the feature should do, not diagnosing where the check currently lives; translating that into a specific technical fix is the engineering team's job, not the founder's.
+They usually wouldn't, and they shouldn't have to - this is precisely why LaunchStudio's intake process is built around a founder describing what the feature should do, not diagnosing where the check currently lives; translating that into a specific technical fix is the engineering team's job, not the founder's.
 
-### A security engineer might argue every fix should be re-tested by someone other than the person who made it — does LaunchStudio work that way?
+### A security engineer might argue every fix should be re-tested by someone other than the person who made it - does LaunchStudio work that way?
 
-Yes, in practice — the engineer who implements a fix like Daan's is not the same person who signs off on it, a basic separation-of-duties principle borrowed directly from Manifera's enterprise engagements, where the same discipline applies regardless of client size.
+Yes, in practice - the engineer who implements a fix like Daan's is not the same person who signs off on it, a basic separation-of-duties principle borrowed directly from Manifera's enterprise engagements, where the same discipline applies regardless of client size.
 
 ### Is this the kind of gap Herre Roelevink was referring to when he described the shift toward architecture and security as the real challenge now?
 
-It's a near-perfect example — Roelevink's own background running CyberDevOps (now CFLW Cyber Strategies) alongside TNO was built specifically around finding exactly this category of invisible, structural gap, which is the lens he's brought into how LaunchStudio's review process is scoped.
+It's a near-perfect example - Roelevink's own background running CyberDevOps (now CFLW Cyber Strategies) alongside TNO was built specifically around finding exactly this category of invisible, structural gap, which is the lens he's brought into how LaunchStudio's review process is scoped.
 
 ### Does it matter that FitTrack Pro is a small consumer app rather than an enterprise system?
 
-Not to the underlying risk — a subscription bypass costs a small founder real revenue proportionally just as much as a larger breach costs an enterprise, which is part of why LaunchStudio doesn't scale its review rigor down just because the company is small.
+Not to the underlying risk - a subscription bypass costs a small founder real revenue proportionally just as much as a larger breach costs an enterprise, which is part of why LaunchStudio doesn't scale its review rigor down just because the company is small.
 
 ### Could this same gap have been caught with automated scanning tools instead of a human review?
 
-Some automated tools flag certain categories of this issue, but a client-side-only permission check that returns a syntactically valid, correctly-formatted response is easy for automated scanners to miss entirely — which is exactly the kind of case where a specific human review, rather than a generic scan, tends to catch what tooling alone doesn't.
+Some automated tools flag certain categories of this issue, but a client-side-only permission check that returns a syntactically valid, correctly-formatted response is easy for automated scanners to miss entirely - which is exactly the kind of case where a specific human review, rather than a generic scan, tends to catch what tooling alone doesn't.
 
 <script type="application/ld+json">
 {
@@ -124,7 +124,7 @@ Some automated tools flag certain categories of this issue, but a client-side-on
       "name": "How would a non-technical founder know to ask for a server-side check?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They wouldn't need to — describing what the feature should do is enough; translating that into a technical fix is the engineering team's job."
+        "text": "They wouldn't need to - describing what the feature should do is enough; translating that into a technical fix is the engineering team's job."
       }
     },
     {

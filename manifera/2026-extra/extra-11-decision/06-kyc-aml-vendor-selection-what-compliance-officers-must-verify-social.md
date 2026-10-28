@@ -1,9 +1,9 @@
 "98% match accuracy." Ask for the false positive rate at that threshold. It's usually not in the deck. 🕵️‍♀️📊
 
 **The Pain Points:**
-❌ **One-Number Accuracy Claims:** Detection rate without a disclosed false positive rate is unevaluable — a system tuned to catch everything can bury analysts in 95%+ noise.
+❌ **One-Number Accuracy Claims:** Detection rate without a disclosed false positive rate is unevaluable - a system tuned to catch everything can bury analysts in 95%+ noise.
 ❌ **Silent Model Drift:** Risk-scoring models degrade quietly as financial crime typologies shift, with no visible change in the vendor's interface until a retraining event corrects it.
-❌ **Black-Box Risk Scores:** "The algorithm decided" doesn't survive a regulatory examination — GDPR Article 22 and supervisory expectations both demand a human-readable rationale.
+❌ **Black-Box Risk Scores:** "The algorithm decided" doesn't survive a regulatory examination - GDPR Article 22 and supervisory expectations both demand a human-readable rationale.
 
 **The Manifera Solution:**
 ✅ **Blind Test Set Advocacy:** We help compliance teams demand vendor testing against their own data, not a cherry-picked demo dataset.

@@ -59,13 +59,13 @@ Most teams need far less than they fear, and these four cover the majority of th
 
 **The evaluation record.** How performance was measured, on what data, with what result, and what the known limitations are.
 
-Everything else — architecture diagrams, onboarding guides, runbooks — is useful and secondary.
+Everything else - architecture diagrams, onboarding guides, runbooks - is useful and secondary.
 
 ## Writing a Data Dictionary That People Use
 
 This document pays for itself faster than any other, and most organisations either lack one or maintain one nobody reads.
 
-For each important table, record what one row represents — the grain — in a single sentence. This alone prevents a large proportion of analytical errors.
+For each important table, record what one row represents - the grain - in a single sentence. This alone prevents a large proportion of analytical errors.
 
 For each significant field: a plain-language description, the valid values or range, the unit where applicable, whether nulls occur and what they mean, the source system, the refresh frequency, and any history of changed meaning.
 
@@ -93,7 +93,7 @@ Teams that maintain them find that onboarding accelerates, that arguments alread
 
 Beyond code and data, a model deserves its own description, and the structure that has become conventional is worth following.
 
-Record the intended use: what the model is for, what decisions it supports, and — equally important — what it should not be used for. Misuse of a model outside its intended scope is a common and avoidable failure.
+Record the intended use: what the model is for, what decisions it supports, and - equally important - what it should not be used for. Misuse of a model outside its intended scope is a common and avoidable failure.
 
 Record the training data: what period, what population, what was excluded and why, how labels were defined and obtained, and known biases in the data.
 

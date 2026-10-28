@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An Operations Director or technical lead at a parking operator running facilities across multiple cities faces a specific regulatory reality that's easy to underweight during platform planning: municipal rules governing enforcement — grace periods before a fine applies, resident-permit exemptions, disabled-parking accommodation, and the fine structure itself — genuinely vary by city, sometimes down to the individual municipal ordinance, rather than following any single national standard an operator could safely assume applies uniformly across its portfolio. A system architected around a single, hardcoded enforcement ruleset risks either misapplying fines in some cities or failing to honor a legally required exemption in another, both outcomes carrying real regulatory and reputational consequences.
+An Operations Director or technical lead at a parking operator running facilities across multiple cities faces a specific regulatory reality that's easy to underweight during platform planning: municipal rules governing enforcement - grace periods before a fine applies, resident-permit exemptions, disabled-parking accommodation, and the fine structure itself - genuinely vary by city, sometimes down to the individual municipal ordinance, rather than following any single national standard an operator could safely assume applies uniformly across its portfolio. A system architected around a single, hardcoded enforcement ruleset risks either misapplying fines in some cities or failing to honor a legally required exemption in another, both outcomes carrying real regulatory and reputational consequences.
 
 ## Why a Single Hardcoded Ruleset Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A parking enforcement platform built around a single, uniformly applied ruleset 
 
 ## Why City-Configurable Architecture Is Sustainable
 
-A system architected from the start around city-configurable enforcement rules — able to apply, waive, or modify specific grace-period, exemption, and fine-structure mechanics based on a facility's actual municipal jurisdiction — lets an operator comply with each city's specific requirements without under-enforcing in stricter jurisdictions or over-enforcing where local rules require greater leniency. This is not simply a matter of toggling a single fine amount per city, since municipal rules can be considerably more nuanced than a single adjustable number — some cities require time-of-day-specific grace periods, others recognize multiple overlapping permit-exemption categories, meaning the underlying system needs genuinely configurable enforcement logic per city, not just a per-city price field, to accommodate the actual range of municipal approaches across an operator's portfolio.
+A system architected from the start around city-configurable enforcement rules - able to apply, waive, or modify specific grace-period, exemption, and fine-structure mechanics based on a facility's actual municipal jurisdiction - lets an operator comply with each city's specific requirements without under-enforcing in stricter jurisdictions or over-enforcing where local rules require greater leniency. This is not simply a matter of toggling a single fine amount per city, since municipal rules can be considerably more nuanced than a single adjustable number - some cities require time-of-day-specific grace periods, others recognize multiple overlapping permit-exemption categories, meaning the underlying system needs genuinely configurable enforcement logic per city, not just a per-city price field, to accommodate the actual range of municipal approaches across an operator's portfolio.
 
 ## What Building City-Configurable Enforcement Architecture Actually Requires
 
@@ -62,7 +62,7 @@ Parkeerbeheer Gent, a Ghent-based parking operator, had built an initial enforce
 Manifera's Amsterdam team rebuilt the enforcement platform's core architecture around a configurable, city-specific ruleset, supporting both the stricter grace-period requirements of certain cities and the broader exemption categories of others, alongside reliable facility-to-jurisdiction mapping and city-specific dispute-handling support, all without requiring separate, parallel enforcement systems per city.
 
 > *"We had one ruleset and assumed we would just adjust the fine amount wherever a city complained. It turned out the actual rules across our cities were more varied than a single number could capture, and building real configurability was what let us keep enforcing properly everywhere instead of quietly pulling back from the harder cities."*
-> — **Operations Director, Parkeerbeheer Gent**
+> - **Operations Director, Parkeerbeheer Gent**
 
 Parkeerbeheer Gent successfully expanded into its additional target cities with city-appropriate enforcement configurations, and now treats municipal configurability as a standard architectural requirement for any new city onboarding, rather than a single ruleset decided once.
 
@@ -77,7 +77,7 @@ Parkeerbeheer Gent successfully expanded into its additional target cities with 
 
 ## Scoping Your Own Multi-City Enforcement Platform for Regulatory Compliance
 
-Before expanding a parking enforcement platform across multiple cities, architect the system around genuinely configurable, city-specific rulesets — a single hardcoded ruleset forces an unnecessary trade-off between compliance risk and revenue integrity. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready parking enforcement platform.
+Before expanding a parking enforcement platform across multiple cities, architect the system around genuinely configurable, city-specific rulesets - a single hardcoded ruleset forces an unnecessary trade-off between compliance risk and revenue integrity. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready parking enforcement platform.
 
 ## Frequently Asked Questions
 
@@ -91,7 +91,7 @@ It forces a choice between under-enforcing in cities with stricter local rules o
 
 ### (Scenario: engineering lead scoping city configurability) Is a simple per-city fine amount sufficient to handle enforcement rules across cities?
 
-Not always — municipal rules can involve time-specific grace periods and multiple overlapping exemption categories, meaning the system needs genuinely configurable enforcement logic per city, not just an adjustable fine number.
+Not always - municipal rules can involve time-specific grace periods and multiple overlapping exemption categories, meaning the system needs genuinely configurable enforcement logic per city, not just an adjustable fine number.
 
 ### (Scenario: legal counsel reviewing technical architecture) Why does reliable facility-to-jurisdiction mapping matter for regulatory compliance?
 
@@ -108,7 +108,7 @@ Individual cities periodically revise grace periods, exemptions, and fine struct
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: operations director scoping a multi-city enforcement platform) Why does parking enforcement regulation vary meaningfully across cities?", "acceptedAnswer": { "@type": "Answer", "text": "Grace periods, permit exemptions, and fine structures are set at the municipal level and genuinely diverge between cities." } },
     { "@type": "Question", "name": "(Scenario: operator worried about compliance) What's the risk of building an enforcement platform around a single, hardcoded ruleset?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between under-enforcing in stricter cities or issuing legally invalid fines in cities with different rules." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping city configurability) Is a simple per-city fine amount sufficient to handle enforcement rules across cities?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — rules can involve time-specific grace periods and multiple exemption categories, requiring genuine configurability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping city configurability) Is a simple per-city fine amount sufficient to handle enforcement rules across cities?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - rules can involve time-specific grace periods and multiple exemption categories, requiring genuine configurability." } },
     { "@type": "Question", "name": "(Scenario: legal counsel reviewing technical architecture) Why does reliable facility-to-jurisdiction mapping matter for regulatory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying city-specific rules correctly depends on accurately identifying which municipal jurisdiction governs a facility." } },
     { "@type": "Question", "name": "(Scenario: operator planning for future regulatory change) Why should an enforcement platform be designed to accommodate evolving municipal rules, not just current ones?", "acceptedAnswer": { "@type": "Answer", "text": "Cities periodically revise grace periods and fine structures, and rework-heavy systems create ongoing compliance risk." } }
   ]

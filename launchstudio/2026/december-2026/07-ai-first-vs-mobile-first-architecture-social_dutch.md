@@ -3,7 +3,7 @@
 "Mobile-first" heerste een decennium lang. In 2026 luidt de vraag: "Hoe functioneert dit met AI?" En de kostenstructuur is TOTAAL anders. 🧠
 
 Mobile-first: serverkosten ~€0,001 per verzoek, voorspelbaar en minimaal 😴
-AI-first: LLM-aanroepen €0,01 tot €0,50 per verzoek — en het kan uw startup ruïneren 😱
+AI-first: LLM-aanroepen €0,01 tot €0,50 per verzoek - en het kan uw startup ruïneren 😱
 
 ❌ Geen caching = twee keer betalen voor hetzelfde AI-antwoord
 ❌ Vaste lage prijzen = zware gebruikers trekken uw marges naar nul

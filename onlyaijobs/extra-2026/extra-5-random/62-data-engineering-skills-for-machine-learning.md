@@ -38,7 +38,7 @@ Surveys of people working in applied machine learning keep producing the same fi
 
 ## What This Actually Covers
 
-Not the whole of data engineering — you are not expected to build a platform — but a working command of the layer between raw sources and a trained model.
+Not the whole of data engineering - you are not expected to build a platform - but a working command of the layer between raw sources and a trained model.
 
 **Ingestion.** Getting data from databases, files, APIs and streams reliably, including the awkward parts: pagination, rate limits, incremental loads, late-arriving records and sources that change format without warning.
 
@@ -112,7 +112,7 @@ Choices here are invisible until they are expensive.
 
 **Table formats.** Open table formats add transactional behaviour, schema evolution and time travel over files in object storage, which solves the long-standing problem of concurrent writes and partial reads.
 
-**Partitioning.** Organising data by date or another high-cardinality-but-bounded key so that queries read a fraction of the whole. Getting this wrong — too many tiny files, or a partition key that queries never filter on — degrades performance severely.
+**Partitioning.** Organising data by date or another high-cardinality-but-bounded key so that queries read a fraction of the whole. Getting this wrong - too many tiny files, or a partition key that queries never filter on - degrades performance severely.
 
 **File size.** Thousands of small files are slow to read and expensive to list. Compaction is routine maintenance.
 
@@ -138,7 +138,7 @@ In Europe, several obligations land squarely on the data layer, and engineers ar
 
 **Minimisation.** Collect and retain only what is needed for the stated purpose. A pipeline that copies entire source tables because it was easier is a compliance problem as well as a cost one.
 
-**Retention.** Data has a lifetime. Deletion must actually happen, including in intermediate tables, backups and derived datasets — the places teams routinely forget.
+**Retention.** Data has a lifetime. Deletion must actually happen, including in intermediate tables, backups and derived datasets - the places teams routinely forget.
 
 **Erasure requests.** When a person exercises their rights under GDPR, their data must be removed from systems where it persists. Designing datasets so that this is possible, rather than discovering that personal data is scattered through twenty derived tables, is a design decision made early or regretted later.
 
@@ -152,7 +152,7 @@ Building these in from the start costs little. Retrofitting them across an estab
 
 You can develop these skills without a data engineering job, and doing so visibly changes how your applications are read.
 
-Take any project and make it operational. Move the data collection out of a notebook into a scheduled job. Store raw data separately from processed data, and keep the raw. Write the transformations as versioned code with tests. Add quality checks and make the pipeline fail when they do not pass. Run it daily for a month and fix what breaks — and something will break, which is the educational part.
+Take any project and make it operational. Move the data collection out of a notebook into a scheduled job. Store raw data separately from processed data, and keep the raw. Write the transformations as versioned code with tests. Add quality checks and make the pipeline fail when they do not pass. Run it daily for a month and fix what breaks - and something will break, which is the educational part.
 
 Then make it reproducible: given a date, rebuild the dataset as it was on that date. This single exercise teaches more about point-in-time correctness than any amount of reading.
 

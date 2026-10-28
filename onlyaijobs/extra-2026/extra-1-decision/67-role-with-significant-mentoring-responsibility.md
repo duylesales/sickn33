@@ -43,7 +43,7 @@ The Dutch market for experienced AI and data people has been tight for years, an
 
 That has produced traineeship programmes, structured junior tracks, partnerships with hogescholen and universities for internships and graduation projects, and a steady flow of career changers arriving from adjacent fields. All of them need someone experienced to learn from, and that person is increasingly written into the senior vacancy rather than assumed.
 
-The consequence for you is that mentoring has moved from something you did informally to something you are hired and evaluated for — at least in principle.
+The consequence for you is that mentoring has moved from something you did informally to something you are hired and evaluated for - at least in principle.
 
 ## What the Role Actually Involves
 
@@ -69,7 +69,7 @@ The consequence for you is that mentoring has moved from something you did infor
 
 **A route to lead roles.** Where a technical lead track exists, mentoring is usually the qualifying experience.
 
-**Durable professional relationships.** In a market this small, people you trained turn up again — sometimes as the hiring manager.
+**Durable professional relationships.** In a market this small, people you trained turn up again - sometimes as the hiring manager.
 
 ## What It Costs
 
@@ -85,7 +85,7 @@ The consequence for you is that mentoring has moved from something you did infor
 
 Is the mentoring recognised, in the two ways that matter: time and evaluation?
 
-**Time.** Is there an explicit allocation — a proportion of the week, a reduced delivery expectation, a formal role in a programme — or is it expected on top of a full workload? The second is the most common arrangement and the reason these roles sour.
+**Time.** Is there an explicit allocation - a proportion of the week, a reduced delivery expectation, a formal role in a programme - or is it expected on top of a full workload? The second is the most common arrangement and the reason these roles sour.
 
 **Evaluation.** Does developing people count in performance and promotion decisions, or do reviews measure only what you personally delivered? Ask how the last person who invested heavily in juniors was assessed. If nobody can answer, mentoring is invisible work here.
 
@@ -97,7 +97,7 @@ An employer who has thought about both has designed the role. One who has though
 
 **Improvised looks like:** "we've hired two juniors and you'd be the senior", no allocation, no plan, no end state, and an assumption that experience automatically transfers by proximity.
 
-Improvised arrangements are not always bad — many work through goodwill — but they place the entire risk on you, and they collapse the moment delivery pressure arrives.
+Improvised arrangements are not always bad - many work through goodwill - but they place the entire risk on you, and they collapse the moment delivery pressure arrives.
 
 ## The Hidden Risk: Becoming the Support Function
 
@@ -113,7 +113,7 @@ Three habits prevent it. Hold defined availability rather than being permanently
 - **Is there a programme, or would I be designing it?**
 - **Who else mentors, so that I am not the only source?**
 - **Who would I learn from?** The most important question if you would be the most senior person.
-- **What happened to the last cohort — where are they now?**
+- **What happened to the last cohort - where are they now?**
 - **Is there a technical lead track this leads towards?**
 
 ## When to Accept
@@ -142,7 +142,7 @@ Give real work with real consequences, scoped so that failure is survivable. Jun
 
 Write the things you repeat. A short document on how the team validates models, or how the domain works, saves you dozens of conversations and outlives you.
 
-Protect one deep block a week for your own technical work, and defend it. And find your own source of learning outside the team — a peer group, an external reviewer, a community — because the biggest risk in a mentoring-heavy role is that everyone develops except you.
+Protect one deep block a week for your own technical work, and defend it. And find your own source of learning outside the team - a peer group, an external reviewer, a community - because the biggest risk in a mentoring-heavy role is that everyone develops except you.
 
 ## Mentoring Career Changers Is a Different Job
 
@@ -186,7 +186,7 @@ Two years later she leads the team. Her view is that the job itself was rewardin
 
 ## Where to Start
 
-If you want a role with real coaching content, look for employers running structured junior or traineeship programmes rather than those with juniors and no plan — and see which of them are within reach of home.
+If you want a role with real coaching content, look for employers running structured junior or traineeship programmes rather than those with juniors and no plan - and see which of them are within reach of home.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -212,9 +212,9 @@ Fixed availability windows rather than constant interruption, teaching people ho
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is mentoring good for my career?", "acceptedAnswer": {"@type": "Answer", "text": "Usually — it is the qualifying experience for lead roles, if time is allocated and it is recognised."}},
+    {"@type": "Question", "name": "Is mentoring good for my career?", "acceptedAnswer": {"@type": "Answer", "text": "Usually - it is the qualifying experience for lead roles, if time is allocated and it is recognised."}},
     {"@type": "Question", "name": "What should I ask before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "Whether time is allocated, whether it counts in reviews, who else mentors and who you learn from."}},
-    {"@type": "Question", "name": "Will my own delivery suffer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — only a problem if the expectation is not adjusted in writing."}},
+    {"@type": "Question", "name": "Will my own delivery suffer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - only a problem if the expectation is not adjusted in writing."}},
     {"@type": "Question", "name": "What is the biggest risk?", "acceptedAnswer": {"@type": "Answer", "text": "Having nobody to learn from; arrange external review or a peer group first."}},
     {"@type": "Question", "name": "How do I keep it manageable?", "acceptedAnswer": {"@type": "Answer", "text": "Fixed availability, teaching how to find answers, documentation and one protected deep block weekly."}}
   ]

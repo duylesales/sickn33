@@ -1,4 +1,4 @@
-🚨 What if the biggest obstacle to reliable citizen-facing software isn't your codebase — it's the manual deployment ritual nobody has questioned in three years? 🏛️
+🚨 What if the biggest obstacle to reliable citizen-facing software isn't your codebase - it's the manual deployment ritual nobody has questioned in three years? 🏛️
 
 **The Pain Points:**
 ❌ **Tool-First Thinking:** Buying a CI/CD tool without fixing the underlying process just automates the same failures, faster.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Infrastructure as Code:** Terraform-managed environments, reproducible from source, no more drift.
 ✅ **Gated, Auditable Pipelines:** Security scanning and automated rollback built into every release, not bolted on after.
-✅ **51% Lower Day Rate:** €740/day regional agency vs. €365/day governed Manifera pod — same seniority, structurally lower cost.
+✅ **51% Lower Day Rate:** €740/day regional agency vs. €365/day governed Manifera pod - same seniority, structurally lower cost.
 
 A weekend deployment ritual isn't a tooling gap. It's an architecture gap. 🛠️
 

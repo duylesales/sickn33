@@ -22,9 +22,9 @@ target_persona: "CTO"
 
 A dedicated software team that's merely "available" is not the same thing as one that's held to the reliability standard a maritime-operations system actually requires, and the gap between those two only becomes visible during an incident, when it's too late to close it.
 
-**The Pain:** A CTO at a maritime-technology company in Den Helder — home to the Royal Netherlands Navy's main base and a dense cluster of maritime-operations and offshore-energy technology firms — needs a dedicated software team for a fleet-operations platform where downtime has consequences well beyond a typical SaaS outage.
+**The Pain:** A CTO at a maritime-technology company in Den Helder - home to the Royal Netherlands Navy's main base and a dense cluster of maritime-operations and offshore-energy technology firms - needs a dedicated software team for a fleet-operations platform where downtime has consequences well beyond a typical SaaS outage.
 
-**The Agitation:** A CTO who builds a dedicated software team without an explicit reliability standard discovers, usually during the first serious incident, that "dedicated" described the org chart and nothing about the operational discipline underneath it. A reliability gap on a maritime-operations platform isn't a minor service disruption — it's an operational risk that a standard SaaS-grade support model was never built to prevent.
+**The Agitation:** A CTO who builds a dedicated software team without an explicit reliability standard discovers, usually during the first serious incident, that "dedicated" described the org chart and nothing about the operational discipline underneath it. A reliability gap on a maritime-operations platform isn't a minor service disruption - it's an operational risk that a standard SaaS-grade support model was never built to prevent.
 
 ## What a Reliability-Grade Dedicated Team Actually Requires
 
@@ -32,16 +32,16 @@ A dedicated software team, by itself, only guarantees that specific people are a
 
 The first requirement is a defined incident-severity framework with response-time commitments scaled to actual operational impact, not a generic support-ticket SLA borrowed from a consumer-software playbook. A CTO in this domain needs the team to understand the difference between a cosmetic bug and an operational-continuity failure before an incident forces that distinction.
 
-The second is redundancy in team knowledge itself — no single point of failure in who understands the critical paths of the system, so a single person's absence during an incident doesn't become the incident.
+The second is redundancy in team knowledge itself - no single point of failure in who understands the critical paths of the system, so a single person's absence during an incident doesn't become the incident.
 
-The third is a testing and deployment discipline that treats a maritime-operations platform's uptime requirements as non-negotiable from day one — staged rollouts, rollback plans rehearsed in advance, not improvised during a live incident.
+The third is a testing and deployment discipline that treats a maritime-operations platform's uptime requirements as non-negotiable from day one - staged rollouts, rollback plans rehearsed in advance, not improvised during a live incident.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads define the incident-severity framework and response commitments explicitly, matched to the actual operational stakes of the system.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds redundant team knowledge of critical system paths from day one, eliminating single points of failure during an incident.
 
-This is Dutch Management × Vietnamese Mastery — a dedicated team held to the standard the system's operational stakes actually demand. Review Manifera's dedicated team model on the [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a dedicated team held to the standard the system's operational stakes actually demand. Review Manifera's dedicated team model on the [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Tidewell Offshore Systems Ltd, an offshore-energy operations company based in Ab
 Manifera restructured the dedicated team around redundant critical-path knowledge, a defined incident-severity framework, and rehearsed rollback procedures. The next comparable incident was resolved in under forty minutes by an engineer who had never touched that specific module before, using documentation and a runbook built specifically to eliminate that single point of failure.
 
 > *"We had a dedicated team. We didn't have redundancy. Those turned out to be very different things the one time it actually mattered."*
-> — **CTO, Tidewell Offshore Systems Ltd, UK**
+> - **CTO, Tidewell Offshore Systems Ltd, UK**
 
 ## Standard Dedicated Team vs. Manifera's Reliability-Grade Team
 
@@ -66,7 +66,7 @@ Manifera restructured the dedicated team around redundant critical-path knowledg
 
 ## The Economics
 
-A reliability gap on an operationally critical maritime system doesn't show up in a monthly status report — it shows up during the one incident where it matters, and by then the cost is measured in operational disruption, not budget line items. Building redundancy and a defined severity framework into a dedicated team costs a modest upfront investment in documentation and cross-training relative to the exposure it closes. [Talk to Manifera about a reliability-grade dedicated team](https://www.manifera.com/contact-us/).
+A reliability gap on an operationally critical maritime system doesn't show up in a monthly status report - it shows up during the one incident where it matters, and by then the cost is measured in operational disruption, not budget line items. Building redundancy and a defined severity framework into a dedicated team costs a modest upfront investment in documentation and cross-training relative to the exposure it closes. [Talk to Manifera about a reliability-grade dedicated team](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

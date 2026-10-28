@@ -12,7 +12,7 @@ A true software product solves a user problem with the absolute minimum amount o
 ✅ **Architecture:** A Monolith. Vastly cheaper to deploy and debug than microservices.
 ✅ **Edge Cases:** Handle them manually via a support inbox. Don't spend 3 weeks coding an automated workflow for a scenario that happens twice a month.
 
-At Manifera, our Dutch architects ruthlessly enforce Value Engineering on our offshore pods. We act as your technical fiduciary — if a developer proposes a complex architecture for a simple feature, we block the PR. 
+At Manifera, our Dutch architects ruthlessly enforce Value Engineering on our offshore pods. We act as your technical fiduciary - if a developer proposes a complex architecture for a simple feature, we block the PR. 
 
 👇 Stop building a codebase. Read our founder's guide to building a product:
 [Read the full breakdown: manifera.com/blog/build-a-software-product-value-engineering-founder-guide]

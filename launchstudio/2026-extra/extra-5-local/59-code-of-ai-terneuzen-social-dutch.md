@@ -1,4 +1,4 @@
-📄 Kevin Maes bouwde DockFlow, een planning- en documentatietool voor expediteurs die werken met de havenlogistiek van Terneuzen, met Lovable gedurende een paar weken naast zijn dagelijkse baan — toen het inkoopcontact van een logistieke klant vroeg welke beveiligingsstandaard DockFlow hanteerde, was Kevins enige antwoord "het werkt goed." Dat zette de deal stil. 😳
+📄 Kevin Maes bouwde DockFlow, een planning- en documentatietool voor expediteurs die werken met de havenlogistiek van Terneuzen, met Lovable gedurende een paar weken naast zijn dagelijkse baan - toen het inkoopcontact van een logistieke klant vroeg welke beveiligingsstandaard DockFlow hanteerde, was Kevins enige antwoord "het werkt goed." Dat zette de deal stil. 😳
 
 Er bestaat geen officiële "code of AI" om naar te verwijzen. Precies daarom is een gedocumenteerde beoordeling meer, niet minder, van belang. 🧠
 
@@ -11,7 +11,7 @@ Er bestaat geen officiële "code of AI" om naar te verwijzen. Precies daarom is 
 ✅ Sessie- en toegangscontroleproblemen verholpen
 ✅ Een schriftelijke samenvatting die Kevin rechtstreeks naar het inkoopteam van de klant kon sturen
 
-Bij **LaunchStudio** passen we Manifera's beoordelingsstandaard van meer dan 160 zakelijke projecten — waaronder werk met Vodafone en TNO — toe op door AI gegenereerde codebases van elke grote tool. 🛡️
+Bij **LaunchStudio** passen we Manifera's beoordelingsstandaard van meer dan 160 zakelijke projecten - waaronder werk met Vodafone en TNO - toe op door AI gegenereerde codebases van elke grote tool. 🛡️
 
 Zijn resultaat: DockFlow doorstond zijn eerste serieuze inkoopbeoordeling en tekende zijn eerste logistieke klant uit de havensector van Terneuzen. 🚀
 

@@ -22,13 +22,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 "Does it integrate with our system?" is the question that turns a promising conversation into a contract, and it is also the question that has quietly consumed more small-product roadmaps than any other.
 
-The reason is that "integrate" describes four very different commitments, ranging from an afternoon to a permanent obligation, and the founder saying yes and the customer asking are frequently thinking of different ones. Establishing which is being discussed — before the proposal, not after — is the whole skill.
+The reason is that "integrate" describes four very different commitments, ranging from an afternoon to a permanent obligation, and the founder saying yes and the customer asking are frequently thinking of different ones. Establishing which is being discussed - before the proposal, not after - is the whole skill.
 
 ## The Four Levels, From Cheapest to Most Expensive
 
 **Level one: export and import by file.** They can download their data from your product and upload it into theirs, or the reverse, using a standard format. Unglamorous, immediately useful, and often exactly what the customer needs once you ask what they intend to do with the integration.
 
-**Level two: you read from them.** Your product pulls data from their system periodically — a customer list, a price file, an availability feed. You control the schedule and the error handling, which keeps the arrangement manageable.
+**Level two: you read from them.** Your product pulls data from their system periodically - a customer list, a price file, an availability feed. You control the schedule and the error handling, which keeps the arrangement manageable.
 
 **Level three: you receive from them.** Their system pushes events to you as they happen. Faster and considerably harder: you inherit their retry behaviour, their ordering, their duplicate deliveries and their definition of an event.
 
@@ -44,7 +44,7 @@ The answers are usually concrete and modest: our finance team should not retype 
 
 The second question: how often does the data actually change? A customer list that changes weekly does not need real-time anything. Daily is fine; a manual export is frequently fine too.
 
-Asking both takes ten minutes and regularly converts a three-month project into a two-day one — which is better for you and for the customer, who wanted the outcome rather than the mechanism.
+Asking both takes ten minutes and regularly converts a three-month project into a two-day one - which is better for you and for the customer, who wanted the outcome rather than the mechanism.
 
 ## What Level Three Actually Costs
 
@@ -84,7 +84,7 @@ Some integration requests are worth declining politely.
 
 A system with no documented interface, where the proposal involves reading their database directly or automating their user interface. A customer who wants their own bespoke field mapping maintained indefinitely. A request that would make you responsible for the accuracy of data you do not control. And any arrangement where you cannot describe, in one sentence, what happens when the other system is unavailable.
 
-Declining with an alternative — an export, a scheduled import, a documented interface they can build against — keeps the relationship and the deal more often than founders expect.
+Declining with an alternative - an export, a scheduled import, a documented interface they can build against - keeps the relationship and the deal more often than founders expect.
 
 ## Getting It Built Without It Becoming the Product
 
@@ -128,7 +128,7 @@ An integration has two halves and you control one of them. Establishing early wh
 
 ### A Deal Won With a Spreadsheet Export
 
-Karin Moeskops built Leverbaar in Lovable: a delivery scheduling tool used by fifteen regional food producers around Zutphen. A large customer — a wholesaler with forty suppliers — said they would sign if the tool integrated with their enterprise planning system.
+Karin Moeskops built Leverbaar in Lovable: a delivery scheduling tool used by fifteen regional food producers around Zutphen. A large customer - a wholesaler with forty suppliers - said they would sign if the tool integrated with their enterprise planning system.
 
 The quote Karin received from a freelance developer was substantial and the timeline was three months, which would have consumed her entire roadmap.
 
@@ -141,9 +141,9 @@ The wholesaler signed. Fourteen months later they asked for a genuine interface,
 **Result:** the contract closed in a week instead of a quarter, the coordinator's daily retyping disappeared, and the larger integration happened later as a funded project rather than a speculative one.
 
 > *"They asked for an integration. What they wanted was for one person to stop retyping forty lines every afternoon, and that took four days."*
-> — **Karin Moeskops, Founder, Leverbaar (Zutphen)**
+> - **Karin Moeskops, Founder, Leverbaar (Zutphen)**
 
-**Cost & Timeline:** €1,850 (scheduled structured export, validation, delivery and monitoring) — completed in 4 business days.
+**Cost & Timeline:** €1,850 (scheduled structured export, validation, delivery and monitoring) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -185,7 +185,7 @@ When there is no documented interface, when it requires maintaining bespoke mapp
       "name": "Is a file export a legitimate integration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often the right one — if the outcome is that someone stops retyping data, a scheduled export in their system's format delivers it in days."
+        "text": "Often the right one - if the outcome is that someone stops retyping data, a scheduled export in their system's format delivers it in days."
       }
     },
     {
@@ -193,7 +193,7 @@ When there is no documented interface, when it requires maintaining bespoke mapp
       "name": "What makes receiving events from another system hard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Verification, duplicate deliveries, out-of-order arrival, bursts after outages and changes on their side — all of which appear only in production."
+        "text": "Verification, duplicate deliveries, out-of-order arrival, bursts after outages and changes on their side - all of which appear only in production."
       }
     },
     {

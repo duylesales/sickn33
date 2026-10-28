@@ -31,60 +31,60 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Certain beliefs about AI-generated code circulate reliably through founder communities, Slack groups, and casual conversations between people building similar products — not necessarily because they're accurate, but because they're reassuring, and reassurance travels faster than nuance. Five specific myths show up with particular consistency, each one worth naming directly rather than letting it quietly shape a founder's actual decisions.
+Certain beliefs about AI-generated code circulate reliably through founder communities, Slack groups, and casual conversations between people building similar products - not necessarily because they're accurate, but because they're reassuring, and reassurance travels faster than nuance. Five specific myths show up with particular consistency, each one worth naming directly rather than letting it quietly shape a founder's actual decisions.
 
 ## Myth 1: "If It Passed a Big Demo, It's Basically Production-Ready"
 
-A demo, even a genuinely impressive one in front of investors or a large audience, is still a single, cooperative, controlled scenario — the audience size and the stakes of the room don't change the underlying fact that a demo exercises exactly the path it was designed to exercise, nothing more. A flawless demo says the intended path works; it says nothing about adversarial conditions, edge cases, or concurrent real usage, regardless of how many people were watching or how much money was riding on the room.
+A demo, even a genuinely impressive one in front of investors or a large audience, is still a single, cooperative, controlled scenario - the audience size and the stakes of the room don't change the underlying fact that a demo exercises exactly the path it was designed to exercise, nothing more. A flawless demo says the intended path works; it says nothing about adversarial conditions, edge cases, or concurrent real usage, regardless of how many people were watching or how much money was riding on the room.
 
 ## Myth 2: "My AI Coding Tool Is More Advanced Than the Ones People Warn About"
 
-Every generation of AI coding tools genuinely is more capable than the last at satisfying complex prompts — that's real, measurable progress. What doesn't automatically improve alongside raw generation capability is the presence of adversarial verification in the generation process itself, since that's a structurally separate capability from prompt-satisfaction quality, meaning a more advanced tool produces more capable code that still hasn't been tested against conditions nobody described, not fundamentally different code in that specific respect.
+Every generation of AI coding tools genuinely is more capable than the last at satisfying complex prompts - that's real, measurable progress. What doesn't automatically improve alongside raw generation capability is the presence of adversarial verification in the generation process itself, since that's a structurally separate capability from prompt-satisfaction quality, meaning a more advanced tool produces more capable code that still hasn't been tested against conditions nobody described, not fundamentally different code in that specific respect.
 
 ## Myth 3: "I'll Deal With Security Once I Have Real Users, Since That's When It'll Actually Matter"
 
-This gets the risk curve backward in a specific, costly way — the earlier a security gap is closed, the cheaper the fix, and the later it's closed, the more real data and real customer trust has accumulated against whatever gap existed the whole time, unaddressed. Waiting for "real users" to matter doesn't delay the risk; it delays discovering the risk while it continues quietly accumulating consequence.
+This gets the risk curve backward in a specific, costly way - the earlier a security gap is closed, the cheaper the fix, and the later it's closed, the more real data and real customer trust has accumulated against whatever gap existed the whole time, unaddressed. Waiting for "real users" to matter doesn't delay the risk; it delays discovering the risk while it continues quietly accumulating consequence.
 
 ## Myth 4: "A Security Review Will Just Tell Me to Rebuild Everything"
 
-Covered in depth elsewhere in broader guidance specifically because this fear recurs so consistently: production-readiness work is overwhelmingly additive and targeted — moving a secret to proper configuration, adding server-side verification — not a wholesale rebuild of what a founder has already built. The fear is understandable, given how the traditional software industry has sometimes operated, and it's specifically not how this particular category of work actually goes in the overwhelming majority of real cases.
+Covered in depth elsewhere in broader guidance specifically because this fear recurs so consistently: production-readiness work is overwhelmingly additive and targeted - moving a secret to proper configuration, adding server-side verification - not a wholesale rebuild of what a founder has already built. The fear is understandable, given how the traditional software industry has sometimes operated, and it's specifically not how this particular category of work actually goes in the overwhelming majority of real cases.
 
 ## Myth 5: "Other Founders' Apps at My Stage Probably Have the Same Gaps, So It's Fine"
 
-This is true in a narrow, technical sense — the recurring gaps covered throughout broader guidance genuinely are common across AI-generated prototypes at a similar stage — and it's a non sequitur as a reason not to address your own. "Everyone has this gap" doesn't make the gap less exploitable; it just means the pool of exploitable targets is larger, which is a reason for concern, not reassurance.
+This is true in a narrow, technical sense - the recurring gaps covered throughout broader guidance genuinely are common across AI-generated prototypes at a similar stage - and it's a non sequitur as a reason not to address your own. "Everyone has this gap" doesn't make the gap less exploitable; it just means the pool of exploitable targets is larger, which is a reason for concern, not reassurance.
 
 ## Why These Myths Persist Despite Being Checkable
 
-None of these five beliefs require sophisticated technical knowledge to actually verify or debunk — they persist specifically because verifying them requires a small, deliberate action (asking a direct question, running an actual test) that's easier to skip than to do, and skipping it while repeating a reassuring belief instead requires no effort at all, which is precisely why the myth travels faster than the check.
+None of these five beliefs require sophisticated technical knowledge to actually verify or debunk - they persist specifically because verifying them requires a small, deliberate action (asking a direct question, running an actual test) that's easier to skip than to do, and skipping it while repeating a reassuring belief instead requires no effort at all, which is precisely why the myth travels faster than the check.
 
 [LaunchStudio](https://launchstudio.eu/en/) specifically addresses each of these five myths directly during founder conversations, replacing reassuring belief with concrete, checkable answers about a founder's specific prototype, backed by Manifera's engineering discipline across 160+ delivered projects that consistently contradict each myth in the same specific, recurring ways.
 
-[Get the actual answer instead of the reassuring version](https://launchstudio.eu/en/#contact) — these five myths are checkable, and checking is usually less alarming than the myths make delay feel necessary.
+[Get the actual answer instead of the reassuring version](https://launchstudio.eu/en/#contact) - these five myths are checkable, and checking is usually less alarming than the myths make delay feel necessary.
 
 ## Two More Myths That Almost Made the List
 
 Five myths recur with the most consistency, but two more circulate widely enough to name directly, since both quietly shape decisions the same way the original five do.
 
-**"If my AI tool explains its reasoning, the reasoning must be accurate."** AI coding tools frequently generate a confident, articulate explanation alongside whatever code they produce — a paragraph describing why a particular approach was chosen, why it's secure, why it handles a given edge case. That explanation reads with the same fluency and confidence regardless of whether it's actually correct, because generating a plausible-sounding justification is a different capability from the underlying code actually being right. A founder who reads a confident explanation and treats it as verification has confused two separate things: the tool describing what it did, and someone independently checking whether what it did was actually correct. The explanation is worth reading — it's simply not a substitute for the check.
+**"If my AI tool explains its reasoning, the reasoning must be accurate."** AI coding tools frequently generate a confident, articulate explanation alongside whatever code they produce - a paragraph describing why a particular approach was chosen, why it's secure, why it handles a given edge case. That explanation reads with the same fluency and confidence regardless of whether it's actually correct, because generating a plausible-sounding justification is a different capability from the underlying code actually being right. A founder who reads a confident explanation and treats it as verification has confused two separate things: the tool describing what it did, and someone independently checking whether what it did was actually correct. The explanation is worth reading - it's simply not a substitute for the check.
 
-**"A founder who deeply understands the product doesn't need to separately understand its production gaps."** Founders who've spent months refining exactly what their product should do, down to specific user flows and edge cases in the business logic, sometimes extend that deep, earned confidence to a domain it doesn't actually cover — assuming that because they understand the product this well, they'd also recognize a production-readiness gap if one existed. Product understanding and production-readiness evaluation are genuinely different kinds of expertise; a founder can have complete, well-earned mastery of what their product should do for a user and simultaneously have no way of independently recognizing whether authentication is enforced server-side or a secret is sitting in version history. Neither gap reflects poorly on the founder — it just means product fluency and security fluency are separate skills that happen to both matter, not one skill that automatically produces the other.
+**"A founder who deeply understands the product doesn't need to separately understand its production gaps."** Founders who've spent months refining exactly what their product should do, down to specific user flows and edge cases in the business logic, sometimes extend that deep, earned confidence to a domain it doesn't actually cover - assuming that because they understand the product this well, they'd also recognize a production-readiness gap if one existed. Product understanding and production-readiness evaluation are genuinely different kinds of expertise; a founder can have complete, well-earned mastery of what their product should do for a user and simultaneously have no way of independently recognizing whether authentication is enforced server-side or a secret is sitting in version history. Neither gap reflects poorly on the founder - it just means product fluency and security fluency are separate skills that happen to both matter, not one skill that automatically produces the other.
 
-What both of these share with the original five is the same underlying shape: a belief that feels reasonable, costs nothing to hold, and quietly substitutes for an actual check that would take more effort to run. Neither requires deep technical background to recognize once named directly — both simply require noticing the moment a comfortable assumption is doing the work an actual verification should be doing instead.
+What both of these share with the original five is the same underlying shape: a belief that feels reasonable, costs nothing to hold, and quietly substitutes for an actual check that would take more effort to run. Neither requires deep technical background to recognize once named directly - both simply require noticing the moment a comfortable assumption is doing the work an actual verification should be doing instead.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Believing Three of the Five at Once
 
-Timo, a former sales operations manager turned founder in Breda, built KlantVolger, an AI tool tracking sales pipeline activity for small B2B service businesses, using Lovable, and had specifically internalized myths one, three, and five simultaneously — his product had impressed a room of angel investors at a demo day, he'd planned to address security "once real revenue justified it," and he'd read enough about common AI-generated code gaps to assume his product's issues were unremarkable and low-priority.
+Timo, a former sales operations manager turned founder in Breda, built KlantVolger, an AI tool tracking sales pipeline activity for small B2B service businesses, using Lovable, and had specifically internalized myths one, three, and five simultaneously - his product had impressed a room of angel investors at a demo day, he'd planned to address security "once real revenue justified it," and he'd read enough about common AI-generated code gaps to assume his product's issues were unremarkable and low-priority.
 
 A direct conversation with LaunchStudio, walking through each of these three specific beliefs against KlantVolger's actual codebase, revealed the demo-day success had said nothing about server-side authorization, the "wait for real revenue" plan had already let three months of soft-launch usage accumulate against unaddressed gaps, and "probably common" turned out to include a specific, exploitable authentication gap sitting exactly where the myths had told Timo not to worry yet.
 
 **Result:** LaunchStudio closed the authentication gap and the two other findings from the review within a single focused engagement, and Timo specifically noted afterward that reframing his own beliefs against concrete checks, rather than continuing to trust the reassuring version, was the actual unlock that got him to finally act.
 
-> *"I was holding three separate reasons not to worry about this yet, and every single one of them turned out to be more comforting than accurate once someone actually checked. The demo working, waiting for revenue, and assuming it was probably fine like everyone else's — none of those were actually true reasons, they just felt like ones."*
-> — **Timo Verheijen, Founder, KlantVolger (Breda)**
+> *"I was holding three separate reasons not to worry about this yet, and every single one of them turned out to be more comforting than accurate once someone actually checked. The demo working, waiting for revenue, and assuming it was probably fine like everyone else's - none of those were actually true reasons, they just felt like ones."*
+> - **Timo Verheijen, Founder, KlantVolger (Breda)**
 
-**Cost & Timeline:** €1,750 (Launch Ready Package, priority scope) — live in 7 business days.
+**Cost & Timeline:** €1,750 (Launch Ready Package, priority scope) - live in 7 business days.
 
 ---
 
@@ -92,23 +92,23 @@ A direct conversation with LaunchStudio, walking through each of these three spe
 
 ### Are there other common myths beyond these five worth being specifically aware of?
 
-These five recur with particular consistency, though founder communities generate variations on similar underlying reassuring themes — the useful skill is recognizing the pattern of "reassuring belief I haven't actually checked" generally, not memorizing an exhaustive list.
+These five recur with particular consistency, though founder communities generate variations on similar underlying reassuring themes - the useful skill is recognizing the pattern of "reassuring belief I haven't actually checked" generally, not memorizing an exhaustive list.
 
 ### How can a founder tell if they're currently believing one of these myths without realizing it?
 
-Asking directly whether a specific belief about your own product's readiness is based on an actual check or on a general, comforting assumption is the direct self-diagnostic — Timo's case shows a founder can hold several of these simultaneously without recognizing any of them as unverified.
+Asking directly whether a specific belief about your own product's readiness is based on an actual check or on a general, comforting assumption is the direct self-diagnostic - Timo's case shows a founder can hold several of these simultaneously without recognizing any of them as unverified.
 
-### Is myth five — "everyone has this gap" — ever a reasonable basis for deprioritizing a fix?
+### Is myth five - "everyone has this gap" - ever a reasonable basis for deprioritizing a fix?
 
 It can inform relative urgency in a genuinely resource-constrained situation, similar to the tiered prioritization covered elsewhere, but it's not a reason to skip addressing a genuine gap entirely, since commonality doesn't reduce actual exploitability.
 
-### Does believing myth four — fear of a full rebuild — actually cause founders to delay seeking help?
+### Does believing myth four - fear of a full rebuild - actually cause founders to delay seeking help?
 
 Yes, consistently, and it's specifically addressed in depth elsewhere in broader guidance precisely because of how often it drives exactly this kind of avoidance, despite being contradicted by the actual, typically additive nature of most production-readiness work.
 
 ### How did Timo's specific combination of myths compound to create a bigger problem than any single one alone?
 
-Each myth independently justified inaction from a different angle — demo success implying readiness, revenue timing implying it wasn't urgent yet, commonality implying it wasn't uniquely his problem — meaning together they formed a more resilient, harder-to-question justification for delay than any single myth alone would have provided.
+Each myth independently justified inaction from a different angle - demo success implying readiness, revenue timing implying it wasn't urgent yet, commonality implying it wasn't uniquely his problem - meaning together they formed a more resilient, harder-to-question justification for delay than any single myth alone would have provided.
 
 <script type="application/ld+json">
 {

@@ -61,7 +61,7 @@ The single most important lesson in industrial and applied vision is that the im
 
 Teams that struggle with a detection problem for months often solve it in a week by adding a polarising filter, changing to backlighting, or moving the camera. This is why job postings ask for optics and lighting familiarity, and why candidates who only know model training are limited to a narrow slice of the work.
 
-If you cannot control acquisition — analysing existing footage, satellite imagery or user-submitted photographs — then the equivalent skill is characterising variation honestly and designing data collection to cover it.
+If you cannot control acquisition - analysing existing footage, satellite imagery or user-submitted photographs - then the equivalent skill is characterising variation honestly and designing data collection to cover it.
 
 ## Data Strategy Is the Real Technical Work
 
@@ -115,7 +115,7 @@ Practical consequences for engineers: blur or remove faces and plates at ingesti
 
 A recurring surprise for engineers arriving from deep learning courses is how much production vision is done with classical methods, and how often they are the right answer.
 
-Measurement tasks — dimensions, angles, positions — are usually solved with calibration, edge detection and geometric fitting, which give sub-pixel accuracy, deterministic behaviour and no training data requirement. Presence and absence checks with controlled fixturing often need nothing more than thresholding and blob analysis. Alignment, registration and barcode reading have mature, reliable solutions.
+Measurement tasks - dimensions, angles, positions - are usually solved with calibration, edge detection and geometric fitting, which give sub-pixel accuracy, deterministic behaviour and no training data requirement. Presence and absence checks with controlled fixturing often need nothing more than thresholding and blob analysis. Alignment, registration and barcode reading have mature, reliable solutions.
 
 Camera calibration, coordinate transforms and basic photogrammetry are core competencies in any role involving robots or measurement, and they are rarely taught in machine learning curricula.
 
@@ -129,9 +129,9 @@ Large pretrained vision models have shifted the practical starting point for man
 
 Open-vocabulary detection and segmentation models allow rapid prototyping without annotation, which is genuinely useful for feasibility studies and for bootstrapping an annotation pipeline: run the model, correct its output, train a smaller specialised model on the result.
 
-Vision-language models enable applications that were impractical before — describing scenes, answering questions about images, extracting structure from documents and forms, and searching image collections by natural language. Document understanding in particular has become a large commercial application area across European administration and insurance.
+Vision-language models enable applications that were impractical before - describing scenes, answering questions about images, extracting structure from documents and forms, and searching image collections by natural language. Document understanding in particular has become a large commercial application area across European administration and insurance.
 
-What has not changed: the models are large, slow and expensive relative to edge budgets, so production systems on constrained hardware still use small specialised models, often distilled from larger ones. Domain-specific appearance — a particular defect, a specific crop disease, a medical finding — still requires targeted data. And evaluation remains entirely your responsibility.
+What has not changed: the models are large, slow and expensive relative to edge budgets, so production systems on constrained hardware still use small specialised models, often distilled from larger ones. Domain-specific appearance - a particular defect, a specific crop disease, a medical finding - still requires targeted data. And evaluation remains entirely your responsibility.
 
 The realistic pattern is foundation models for prototyping, annotation and open-ended tasks; small trained models for the repetitive, latency-bound production decision.
 
@@ -144,7 +144,7 @@ What does distinguish a candidate is a project with physical reality in it. Choo
 - Document the acquisition setup and show how changing lighting changed results.
 - Collect a test set under different conditions than the training set, deliberately.
 - Report performance by condition, not only in aggregate.
-- Deploy it somewhere constrained — a small single-board computer is ideal — and report latency and memory.
+- Deploy it somewhere constrained - a small single-board computer is ideal - and report latency and memory.
 - Show a failure gallery and explain each failure.
 - Measure annotation agreement if anyone helped you label.
 
@@ -186,7 +186,7 @@ Vision interviews across European employers converge on a small number of scenar
 
 **"How would you know it is still working in six months?"** Monitor input statistics, sample and review predictions, keep a regression set, and arrange to be told about physical or material changes.
 
-**"The customer wants ninety-nine per cent accuracy."** Ask what decision follows, what the cost of each error type is, and what the agreement rate between human inspectors is — often the honest ceiling.
+**"The customer wants ninety-nine per cent accuracy."** Ask what decision follows, what the cost of each error type is, and what the agreement rate between human inspectors is - often the honest ceiling.
 
 ## Real example
 

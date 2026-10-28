@@ -14,7 +14,7 @@ Een stijgende serverrekening is een vertragend signaal, geen automatisch bewijs 
 
 Bij **LaunchStudio**, ondersteund door Manifera's jarenlange ervaring met enterprise-infrastructuur, voeren we zero-downtime migraties uit zonder risico voor uw live gebruikers. 🧱
 
-Zijn resultaat: PgBouncer en één database-index brachten Niels' factuur terug naar €180 en elimineerden alle fouten — geen migratie, geen uitval, geen verloren weekend. 🚀
+Zijn resultaat: PgBouncer en één database-index brachten Niels' factuur terug naar €180 en elimineerden alle fouten - geen migratie, geen uitval, geen verloren weekend. 🚀
 
 👉 Deel uw prototype of hostingfactuur voor een kosteloze beoordeling: https://launchstudio.eu/nl/blog/outgrowing-managed-hosting-when-and-how-to-move
 

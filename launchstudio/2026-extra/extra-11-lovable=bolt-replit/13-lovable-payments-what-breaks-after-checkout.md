@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable Payments: What Breaks After the Customer Clicks Pay",
-  "description": "Test-mode checkout is the easy half. What decides whether your app can actually charge people is webhook handling, reconciliation, failed payments and refunds — the parts AI builders leave out.",
+  "description": "Test-mode checkout is the easy half. What decides whether your app can actually charge people is webhook handling, reconciliation, failed payments and refunds - the parts AI builders leave out.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-15",
@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 There is a moment of genuine triumph when a test payment succeeds. The checkout opens, the card number goes in, the page says paid, and your prototype has just become a business.
 
-Then someone pays with a real card, closes the tab before the confirmation loads, and disappears. Your app has no record of their payment. Your payment provider has their money. Your customer has an email receipt from a provider they have never heard of and no access to the thing they bought. That situation — not the checkout — is what payment integration actually is, and it is the part AI builders almost never produce.
+Then someone pays with a real card, closes the tab before the confirmation loads, and disappears. Your app has no record of their payment. Your payment provider has their money. Your customer has an email receipt from a provider they have never heard of and no access to the thing they bought. That situation - not the checkout - is what payment integration actually is, and it is the part AI builders almost never produce.
 
 ## The Half That Gets Built
 
@@ -40,7 +40,7 @@ That is a correct and useful piece of work. It is also the half of the flow wher
 
 **Reconciliation.** A weekly comparison between what the provider says it collected and what your database says was paid. This is how you find the gaps you did not know about, and almost no small product does it.
 
-**Failure states.** Cards expire. Direct debits fail days later. Banks decline for reasons nobody shares. Your app needs behaviour for each: retry, notify, restrict access, and — crucially — restore access cleanly when the customer fixes it.
+**Failure states.** Cards expire. Direct debits fail days later. Banks decline for reasons nobody shares. Your app needs behaviour for each: retry, notify, restrict access, and - crucially - restore access cleanly when the customer fixes it.
 
 **Refunds and cancellations.** Issued in the provider's dashboard, which your app may never hear about unless it is listening. A customer who was refunded and still has access is a small loss; a customer who cancelled and still gets charged is a complaint and a chargeback.
 
@@ -50,7 +50,7 @@ If you are selling in the Netherlands, iDEAL is not optional in practice. A sign
 
 That usually means Mollie or Stripe, both of which support it, with different strengths: Mollie's local payment method coverage and Dutch-language support are strong, while Stripe's subscription tooling and developer ecosystem are more extensive. Either is a reasonable choice, and switching later is a real project, so it is worth an hour of thought before the first integration.
 
-Two other local realities. Direct debit — incasso — is common for recurring business payments and settles slowly, which means "paid" arrives days after the customer agreed. And VAT handling for digital products sold across EU borders has rules that your accountant should see before your first hundred invoices, not after.
+Two other local realities. Direct debit - incasso - is common for recurring business payments and settles slowly, which means "paid" arrives days after the customer agreed. And VAT handling for digital products sold across EU borders has rules that your accountant should see before your first hundred invoices, not after.
 
 ## Test Mode Is Not a Rehearsal
 
@@ -64,7 +64,7 @@ Founders resist this because it feels like ceremony over a few euros. Those few 
 
 Payments are not really about money moving; they are about entitlement. Your app has to answer one question reliably at any moment: is this person currently allowed to use this?
 
-In AI-built apps that answer is frequently stored as a single field set once at checkout — a boolean that says paid. It cannot express "paid but refunded", "subscription expired", "payment failed and we are retrying", "cancelled but valid until the end of the period", or "on a plan they downgraded last week".
+In AI-built apps that answer is frequently stored as a single field set once at checkout - a boolean that says paid. It cannot express "paid but refunded", "subscription expired", "payment failed and we are retrying", "cancelled but valid until the end of the period", or "on a plan they downgraded last week".
 
 The result is either customers who lose access they paid for or customers who keep access they stopped paying for, and both erode trust in a business that is otherwise working. Entitlement needs to be derived from the payment state, not set once and forgotten.
 
@@ -78,13 +78,13 @@ The result is either customers who lose access they paid for or customers who ke
 - Provider totals compared against your database for the test period.
 - VAT treatment confirmed with whoever does your books.
 
-Seven items, most of them an hour each. Skipping them does not produce an error — it produces a slow accumulation of customers whose situation your app cannot describe.
+Seven items, most of them an hour each. Skipping them does not produce an error - it produces a slow accumulation of customers whose situation your app cannot describe.
 
 ## Getting Payments Actually Finished
 
 This is one of the most common reasons an AI-built product cannot launch, and it is bounded work. LaunchStudio builds the half that generation leaves out: verified webhook handling with idempotency, entitlement derived from payment state rather than a single flag, failure and dunning behaviour, refund and cancellation handling, reconciliation, and a live-mode test pass before anything goes public. Payment integration is explicitly part of the [Launch & Grow package](https://launchstudio.eu/en/#packages), alongside hosting and monitoring.
 
-The frontend you built stays as it is, and the code stays documented and AI-readable so you can keep iterating. The engineers are Manifera's — eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
+The frontend you built stays as it is, and the code stays documented and AI-readable so you can keep iterating. The engineers are Manifera's - eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
 If your checkout works and you are not certain what happens after it, [describe your project](https://launchstudio.eu/en/#contact) and you will get a specific answer within one business day.
 
@@ -114,7 +114,7 @@ Founders hesitate to run live-mode tests because it feels wasteful or, worse, li
 
 **Do the abandonment test deliberately.** Start the payment, complete it at the bank, then close the tab before the redirect finishes. Your app should still grant access, via the webhook, within seconds.
 
-**Trigger a failure on purpose.** Most providers document test scenarios that produce declines and errors even in live mode for specific amounts or methods — check their documentation rather than improvising with a real declined card.
+**Trigger a failure on purpose.** Most providers document test scenarios that produce declines and errors even in live mode for specific amounts or methods - check their documentation rather than improvising with a real declined card.
 
 **Then check three places:** your app's database, the provider dashboard, and the customer's email. All three should agree. If they do not, you have found the gap before a customer did.
 
@@ -124,16 +124,16 @@ Founders hesitate to run live-mode tests because it feels wasteful or, worse, li
 
 Lieke Verbeek's app, Kruidenbox, sold monthly herb-growing subscriptions to home gardeners, built in Lovable with Mollie for payments. The first month went perfectly: 140 subscribers, money arriving, boxes shipped.
 
-The problem appeared in month three, when her accountant asked why revenue had not grown despite subscriber numbers rising. Reconciliation had never been done, and it revealed three separate faults. Nineteen subscriptions had failed to renew — expired cards and a changed bank account — and because there was no webhook handling for failed renewals, those customers had kept full access and kept receiving boxes for two months without paying. Four customers who had cancelled were still being charged, because cancellation updated her database but never told Mollie. And two payments had been recorded twice because the webhook endpoint had no idempotency check and Mollie had retried.
+The problem appeared in month three, when her accountant asked why revenue had not grown despite subscriber numbers rising. Reconciliation had never been done, and it revealed three separate faults. Nineteen subscriptions had failed to renew - expired cards and a changed bank account - and because there was no webhook handling for failed renewals, those customers had kept full access and kept receiving boxes for two months without paying. Four customers who had cancelled were still being charged, because cancellation updated her database but never told Mollie. And two payments had been recorded twice because the webhook endpoint had no idempotency check and Mollie had retried.
 
 Seven business days of work: webhook handling rebuilt with signature verification and idempotency, entitlement derived from live payment state rather than a one-time flag, a dunning flow that emails customers on failed renewal and suspends after two attempts, cancellation wired through to the provider, and a weekly reconciliation report delivered to her inbox.
 
 **Result:** the nineteen lapsed subscribers were contacted, eleven reinstated, the four over-charged customers were refunded before any chargeback was filed, and monthly revenue matched provider settlements exactly from the following cycle onwards.
 
 > *"I thought the payment integration was the part I had finished. It turned out to be the part I had started."*
-> — **Lieke Verbeek, Founder, Kruidenbox (Utrecht)**
+> - **Lieke Verbeek, Founder, Kruidenbox (Utrecht)**
 
-**Cost & Timeline:** €3,300 (Launch & Grow scope: webhooks, entitlement model, dunning and reconciliation) — completed in 7 business days.
+**Cost & Timeline:** €3,300 (Launch & Grow scope: webhooks, entitlement model, dunning and reconciliation) - completed in 7 business days.
 
 ## Frequently Asked Questions
 

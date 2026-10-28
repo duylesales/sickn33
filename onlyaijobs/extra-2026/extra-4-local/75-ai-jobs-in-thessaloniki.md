@@ -40,7 +40,7 @@ Content Format: Career Guide
 }
 </script>
 
-Thessaloniki, Greece's second-largest city, is a lively university city on the Thermaic Gulf with a large student population and a long history as a crossroads of cultures. In recent years, it has attracted international companies that opened digital and technology hubs, adding to a research base anchored by Greece's largest university and one of its most important research centres. For students and recent graduates, AI jobs in Thessaloniki offer a realistic entry into data science and machine learning — often in English-speaking teams — without moving to Athens or abroad. This guide explains where to look and how to get started.
+Thessaloniki, Greece's second-largest city, is a lively university city on the Thermaic Gulf with a large student population and a long history as a crossroads of cultures. In recent years, it has attracted international companies that opened digital and technology hubs, adding to a research base anchored by Greece's largest university and one of its most important research centres. For students and recent graduates, AI jobs in Thessaloniki offer a realistic entry into data science and machine learning - often in English-speaking teams - without moving to Athens or abroad. This guide explains where to look and how to get started.
 
 ## Universities
 
@@ -56,7 +56,7 @@ The Centre for Research and Technology Hellas (CERTH), headquartered in Thessalo
 
 ## International Digital Hubs
 
-Several international companies have opened digital and technology centres in Thessaloniki. Pfizer's Center for Digital Innovation, opened in 2020, employs data scientists, software engineers and AI specialists working on digital solutions across the pharmaceutical value chain — from research and clinical trials to manufacturing and commercial operations. Other technology and services companies have established hubs in the city, drawn by university talent and lower costs than larger European cities.
+Several international companies have opened digital and technology centres in Thessaloniki. Pfizer's Center for Digital Innovation, opened in 2020, employs data scientists, software engineers and AI specialists working on digital solutions across the pharmaceutical value chain - from research and clinical trials to manufacturing and commercial operations. Other technology and services companies have established hubs in the city, drawn by university talent and lower costs than larger European cities.
 
 ## Software Companies and Startups
 
@@ -91,7 +91,7 @@ Greek is the language of daily life and many local companies; English is the wor
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Thessaloniki you will find few or no local vacancies there today. Use Greek job portals, university career offices, company career pages and CERTH's announcements as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by category and real commute. Thessaloniki employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Thessaloniki you will find few or no local vacancies there today. Use Greek job portals, university career offices, company career pages and CERTH's announcements as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by category and real commute. Thessaloniki employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Data Science in a Pharma Digital Hub
 
@@ -137,7 +137,7 @@ Interviews for junior roles in Thessaloniki's digital hubs and software companie
 
 ## Your First Two Years
 
-Build solid foundations in engineering, data and communication, choose a domain to deepen — health, multimedia, logistics or finance — and learn how models reach production. Stay connected with your university and CERTH. These foundations prepare you for senior roles in Thessaloniki, Athens or abroad.
+Build solid foundations in engineering, data and communication, choose a domain to deepen - health, multimedia, logistics or finance - and learn how models reach production. Stay connected with your university and CERTH. These foundations prepare you for senior roles in Thessaloniki, Athens or abroad.
 
 ## Staying in Greece
 
@@ -153,7 +153,7 @@ Thessaloniki's research community has a long track record in multimedia analysis
 
 ## Health and Smart City Applications
 
-Research groups and companies in Thessaloniki also work on digital health — remote monitoring, clinical decision support and analysis of medical images — and on smart city applications such as traffic management, energy efficiency and environmental monitoring. These projects often involve public authorities and hospitals, so they require careful attention to data protection and responsible use. They offer graduates the chance to see AI applied to problems that affect citizens directly.
+Research groups and companies in Thessaloniki also work on digital health - remote monitoring, clinical decision support and analysis of medical images - and on smart city applications such as traffic management, energy efficiency and environmental monitoring. These projects often involve public authorities and hospitals, so they require careful attention to data protection and responsible use. They offer graduates the chance to see AI applied to problems that affect citizens directly.
 
 ## Software Companies, Startups and Remote Work
 

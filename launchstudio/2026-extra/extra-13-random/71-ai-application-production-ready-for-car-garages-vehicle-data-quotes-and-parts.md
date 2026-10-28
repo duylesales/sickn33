@@ -21,13 +21,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Independent garages compete with dealer networks that have polished apps: book a service online, approve extra work with one tap, see the invoice before pick-up. With Bolt or Lovable, a garage owner or automotive founder can build something similar in weeks. Getting that AI application production ready for a workshop, though, involves decisions that generic booking apps never face — about licence plates, customer approval of repairs, parts prices and a planning board that must match what actually happens on the lifts.
+Independent garages compete with dealer networks that have polished apps: book a service online, approve extra work with one tap, see the invoice before pick-up. With Bolt or Lovable, a garage owner or automotive founder can build something similar in weeks. Getting that AI application production ready for a workshop, though, involves decisions that generic booking apps never face - about licence plates, customer approval of repairs, parts prices and a planning board that must match what actually happens on the lifts.
 
 ## Decision 1: Is Vehicle Data Personal Data?
 
 Often, yes. A licence plate, a VIN and a mileage history can be linked to an identifiable owner, which makes them personal data under GDPR. Service history can reveal where someone lives and drives. Treat vehicle records with the same care as customer records: access limited to the customer and the garage, EU hosting and retention rules.
 
-Many apps look up vehicle details by licence plate using the public RDW open data in the Netherlands. That data is public, but combining it with your customer records creates personal data in your system — and the lookup endpoint itself should be rate limited so it cannot be abused as a free lookup service.
+Many apps look up vehicle details by licence plate using the public RDW open data in the Netherlands. That data is public, but combining it with your customer records creates personal data in your system - and the lookup endpoint itself should be rate limited so it cannot be abused as a free lookup service.
 
 ## Decision 2 for an AI Application Production Ready: How Are Extra Repairs Approved?
 
@@ -45,7 +45,7 @@ Workshop capacity depends on lifts, mechanics and job durations. An online booki
 
 ## Decision 5: How Do Customers Pay?
 
-Many customers want to pay before collecting the car, from their phone. That means payment through Mollie or Stripe with iDEAL, confirmed via verified webhooks, and a clear link between payment, invoice and job — so the front desk knows the car can be released. Lease and fleet customers usually pay by invoice instead.
+Many customers want to pay before collecting the car, from their phone. That means payment through Mollie or Stripe with iDEAL, confirmed via verified webhooks, and a clear link between payment, invoice and job - so the front desk knows the car can be released. Lease and fleet customers usually pay by invoice instead.
 
 ## Decision 6: Photos and Evidence
 
@@ -109,15 +109,15 @@ Customers want updates, not spam. Let them choose channels (email, SMS, app noti
 
 ## Mobile Workflows for Mechanics
 
-Mechanics work with dirty hands, gloves and time pressure. Their part of the app should allow quick photo capture tied to the current job, voice-to-text notes, large buttons, offline tolerance in areas with weak Wi-Fi and simple status updates ("waiting for parts," "ready for test drive"). Photos should upload in the background and retry automatically. When mechanic workflows are easy, the data customers see — photos, descriptions, statuses — is complete and timely.
+Mechanics work with dirty hands, gloves and time pressure. Their part of the app should allow quick photo capture tied to the current job, voice-to-text notes, large buttons, offline tolerance in areas with weak Wi-Fi and simple status updates ("waiting for parts," "ready for test drive"). Photos should upload in the background and retry automatically. When mechanic workflows are easy, the data customers see - photos, descriptions, statuses - is complete and timely.
 
 ## Warranty and Recall Information
 
-Garages increasingly handle warranty work and manufacturer recalls. Store which jobs were performed under warranty, which parts carry their own warranty periods, and link recall notices to affected vehicles in your customer base where data allows. This creates opportunities for timely, relevant communication — and protects the garage if warranty claims are later questioned.
+Garages increasingly handle warranty work and manufacturer recalls. Store which jobs were performed under warranty, which parts carry their own warranty periods, and link recall notices to affected vehicles in your customer base where data allows. This creates opportunities for timely, relevant communication - and protects the garage if warranty claims are later questioned.
 
 ## Reporting for Garage Owners
 
-Owners want to know: bay utilisation, average job duration versus planned, approval rate of additional work quotes, revenue per mechanic, outstanding invoices and customer return rates. Build reports on stored jobs, quotes and invoices, so historic figures remain stable. These insights often reveal quick wins — for example, quotes with photos being approved far more often than those without.
+Owners want to know: bay utilisation, average job duration versus planned, approval rate of additional work quotes, revenue per mechanic, outstanding invoices and customer return rates. Build reports on stored jobs, quotes and invoices, so historic figures remain stable. These insights often reveal quick wins - for example, quotes with photos being approved far more often than those without.
 
 ## Launch Checklist for Garage Apps
 
@@ -125,7 +125,7 @@ Before inviting customers: vehicle and customer data separated per garage with t
 
 ## Why Independent Garages Benefit Most
 
-Dealer networks have large IT budgets; independent garages compete on trust and personal service. A production-ready customer app — transparent quotes, reliable planning, easy payment — lets an independent garage offer a digital experience that matches or beats the dealer, while keeping the personal relationship that brought customers there in the first place.
+Dealer networks have large IT budgets; independent garages compete on trust and personal service. A production-ready customer app - transparent quotes, reliable planning, easy payment - lets an independent garage offer a digital experience that matches or beats the dealer, while keeping the personal relationship that brought customers there in the first place.
 
 ## Common Mistakes in AI-Built Garage Apps
 
@@ -137,9 +137,9 @@ Send yourself a quote from your own app, approve it, then try to change the pric
 
 ## Where LaunchStudio Fits
 
-LaunchStudio makes garage apps production ready: vehicle and customer data protection, secure quote approval with frozen prices and evidence, capacity-aware planning, verified payments, private photo storage and multi-garage separation — while keeping the app the garage already likes. LaunchStudio is backed by Manifera, a software development company with 11+ years of experience and clients such as MO Batteries in the energy sector, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); the [RDW open data portal](https://opendata.rdw.nl/) documents what vehicle data is publicly available.
+LaunchStudio makes garage apps production ready: vehicle and customer data protection, secure quote approval with frozen prices and evidence, capacity-aware planning, verified payments, private photo storage and multi-garage separation - while keeping the app the garage already likes. LaunchStudio is backed by Manifera, a software development company with 11+ years of experience and clients such as MO Batteries in the energy sector, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); the [RDW open data portal](https://opendata.rdw.nl/) documents what vehicle data is publicly available.
 
-[Calculate what your project would cost](https://launchstudio.eu/en/#calculator) — "Tool" or "SaaS" with Payments covers most garage apps.
+[Calculate what your project would cost](https://launchstudio.eu/en/#calculator) - "Tool" or "SaaS" with Payments covers most garage apps.
 
 ## Real example
 
@@ -154,9 +154,9 @@ Over eight business days, LaunchStudio's engineers froze quotes at the moment th
 **Result:** Disputed quotes stopped, because every approval now has a fixed price and a record. Monday overbooking disappeared, and Garagepost signed four more independent garages in North Brabant.
 
 > *"Customers trust a garage that shows them the photo and the price. They stop trusting it the moment the price moves after they said yes."*
-> — **Ferry Janssen, Founder, Garagepost (Helmond)**
+> - **Ferry Janssen, Founder, Garagepost (Helmond)**
 
-**Cost & Timeline:** €2,200 (Launch Ready package: quote integrity, access control, capacity planning, payments and data protection) — completed in 8 business days.
+**Cost & Timeline:** €2,200 (Launch Ready package: quote integrity, access control, capacity planning, payments and data protection) - completed in 8 business days.
 
 ## Frequently Asked Questions
 

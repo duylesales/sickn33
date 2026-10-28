@@ -88,7 +88,7 @@ They were using Cursor to write their own internal dashboards to track shipments
 
 Mark investigated and found a "Shadow IT" disaster. A customer success manager had used AI to write a Python script that queried the production database every 5 seconds to check for updates. The script contained a hardcoded master database password. It was running on an unpatched AWS EC2 instance that the manager had provisioned using a corporate credit card. 
 
-Mark couldn't ban AI—the business velocity it provided was too valuable. But he needed control. He hired LaunchStudio to build an AI governance framework.
+Mark couldn't ban AI - the business velocity it provided was too valuable. But he needed control. He hired LaunchStudio to build an AI governance framework.
 
 In 20 business days, the Manifera team deployed an Internal Developer Portal based on Backstage. They locked down AWS IAM permissions, ensuring nobody could manually provision servers. If the operations team wanted a new AI-generated dashboard, they had to click "Create Dashboard" in the IDP. 
 
@@ -97,9 +97,9 @@ The IDP automatically spun up a secure Vercel environment and a GitHub repositor
 **Result:** The shadow IT crisis was neutralized. The operations team continued building internal tools with AI, but they did so within a mathematically secure sandbox. Mark regained total visibility over his cloud architecture, and the AWS bill dropped back to normal levels. The company avoided a massive potential data breach.
 
 > *"AI coding tools turned my non-technical staff into developers overnight, which was amazing for business but terrifying for security. LaunchStudio built the platform engineering guardrails we needed. Now, my team can use AI to build whatever they want, and I can sleep at night knowing the infrastructure won't collapse."*
-> — **Mark van Dijk, VP of Engineering, LogiTech Solutions (Rotterdam)**
+> - **Mark van Dijk, VP of Engineering, LogiTech Solutions (Rotterdam)**
 
-**Cost & Timeline:** €9,500 (Launch & Grow Package with Platform Engineering & IDP Add-on) — production-ready and deployed in 20 business days.
+**Cost & Timeline:** €9,500 (Launch & Grow Package with Platform Engineering & IDP Add-on) - production-ready and deployed in 20 business days.
 
 ---
 

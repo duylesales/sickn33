@@ -1,4 +1,4 @@
-🔒 Dorian bouwde Ledgerly, een multi-tenant AI-boekhoudplatform, met **Bolt** — maar een enterprise-contract van €140.000 was afhankelijk van het slagen voor een SOC 2 Type I-audit binnen slechts 30 dagen. 🧠
+🔒 Dorian bouwde Ledgerly, een multi-tenant AI-boekhoudplatform, met **Bolt** - maar een enterprise-contract van €140.000 was afhankelijk van het slagen voor een SOC 2 Type I-audit binnen slechts 30 dagen. 🧠
 
 Als uw multi-tenant AI-platform Row Level Security wel gedefinieerd maar niet consistent afgedwongen heeft, geen change-managementproces en geen incidentresponsplan, dan vindt een SOC 2-audit elk afzonderlijk hiaat.
 
@@ -12,7 +12,7 @@ Als uw multi-tenant AI-platform Row Level Security wel gedefinieerd maar niet co
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Ledgerly slaagde voor de SOC 2 Type I-audit zonder uitzonderingen, vijf dagen vóór de deadline, en Dorian tekende het jaarcontract van €140.000. (€6.400 (Enterprise Hardening Pakket) — auditklaar in 19 werkdagen.) 🚀
+Ledgerly slaagde voor de SOC 2 Type I-audit zonder uitzonderingen, vijf dagen vóór de deadline, en Dorian tekende het jaarcontract van €140.000. (€6.400 (Enterprise Hardening Pakket) - auditklaar in 19 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/multi-tenant-soc2-case-study
 

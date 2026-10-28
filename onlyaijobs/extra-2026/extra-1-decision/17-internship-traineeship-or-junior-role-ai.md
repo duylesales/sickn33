@@ -75,7 +75,7 @@ Every route has strong and weak versions. These questions identify which one you
 
 **For an internship:** Who supervises me, and how often? Is the data available before I start? Is there a realistic chance of a job afterwards, and has that happened before?
 
-**For a traineeship:** What exactly is the training — hours, content, who delivers it? Am I employed by you or placed with clients? Is there a training cost repayment clause, and under what conditions does it apply? What did last year's cohort do afterwards?
+**For a traineeship:** What exactly is the training - hours, content, who delivers it? Am I employed by you or placed with clients? Is there a training cost repayment clause, and under what conditions does it apply? What did last year's cohort do afterwards?
 
 **For a junior role:** Who reviews my code? Is there anyone more senior in this discipline? What is the first project?
 
@@ -95,7 +95,7 @@ Every route has strong and weak versions. These questions identify which one you
 
 Hiring managers reading a CV two years later care about evidence, not labels.
 
-An internship that produced something concrete — a model in use, a documented pipeline, a report that changed a decision — reads well. An internship with nothing to show reads as time passed.
+An internship that produced something concrete - a model in use, a documented pipeline, a report that changed a decision - reads well. An internship with nothing to show reads as time passed.
 
 A traineeship at a known programme signals selection and structure, which helps. A traineeship where you spent a year on reporting tasks while attending occasional workshops does not, and interviewers ask what you actually built.
 
@@ -111,15 +111,15 @@ If you studied in the Netherlands, the orientation year for highly educated pers
 
 A fifth option sits across the others: taking a junior role while studying part-time. For career switchers in particular, this often beats choosing between earning and learning.
 
-Dutch higher education offers part-time and distance programmes, including at the Open Universiteit, alongside shorter accredited courses and micro-credentials. Many employers contribute to the costs, and some allow part of the study during working hours — which is worth asking about at the offer stage rather than after starting.
+Dutch higher education offers part-time and distance programmes, including at the Open Universiteit, alongside shorter accredited courses and micro-credentials. Many employers contribute to the costs, and some allow part of the study during working hours - which is worth asking about at the offer stage rather than after starting.
 
 Two practical points. First, check the training cost repayment terms before agreeing. Training an employer is legally or contractually required to provide for your job must be free of charge and cannot carry a repayment clause; other study can, typically decreasing over time. Second, be realistic about capacity. A demanding junior role plus a part-time programme is sustainable for many people and exhausting for some; agreeing a four-day week for the duration is a common and sensible compromise.
 
-The advantage over a traineeship is that you keep a normal salary and a real job while the structured learning happens in parallel — and the qualification belongs to you rather than to a programme you may want to leave.
+The advantage over a traineeship is that you keep a normal salary and a real job while the structured learning happens in parallel - and the qualification belongs to you rather than to a programme you may want to leave.
 
 ## The Route Most People Underestimate
 
-The junior role at an ordinary regional employer — a manufacturer, an insurer, a hospital, a water board — is the option graduates most often overlook, because it has no programme name and no cohort. It frequently offers the best combination of real work, normal pay and a short commute.
+The junior role at an ordinary regional employer - a manufacturer, an insurer, a hospital, a water board - is the option graduates most often overlook, because it has no programme name and no cohort. It frequently offers the best combination of real work, normal pay and a short commute.
 
 The single thing to check is whether anyone will review your work. A junior role with a competent reviewer beats a prestigious traineeship with vague training. A junior role with nobody to learn from is the one case where a structured programme is clearly worth the lower salary.
 
@@ -159,7 +159,7 @@ The traineeship was not a bad option. It was a worse one for her, once she knew 
 
 ## Where to Start
 
-Before deciding between routes, look at what junior and internship openings actually exist within your travel radius — the comparison is much easier when it is between real options rather than between labels.
+Before deciding between routes, look at what junior and internship openings actually exist within your travel radius - the comparison is much easier when it is between real options rather than between labels.
 
 Browse current AI, machine learning and data jobs, including junior roles and internships, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

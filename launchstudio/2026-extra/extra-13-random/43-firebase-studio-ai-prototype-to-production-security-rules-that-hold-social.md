@@ -1,4 +1,4 @@
-🚨 Chiara Rossi, a music teacher and choir director in Dordrecht, built Koorplanner in Firebase Studio: amateur choirs schedule rehearsals, share sheet music and recordings, track attendance and collect fees. Within a season, 140 choirs and about 4,000 singers. Then in one week her Firebase bill tripled — and a choir member in IT showed her he could read every choir's member list. 😳
+🚨 Chiara Rossi, a music teacher and choir director in Dordrecht, built Koorplanner in Firebase Studio: amateur choirs schedule rehearsals, share sheet music and recordings, track attendance and collect fees. Within a season, 140 choirs and about 4,000 singers. Then in one week her Firebase bill tripled - and a choir member in IT showed her he could read every choir's member list. 😳
 
 After test mode expired, the rules had been set to "authenticated users can read and write everything". Names, phone numbers and addresses were exposed across choirs, licensed sheet music was downloadable by anyone, members could mark their own fees as paid, and the attendance screen listened in real time to the entire collection. Here's how to take a Firebase Studio prototype to production with rules that hold: 🧠
 
@@ -7,7 +7,7 @@ After test mode expired, the rules had been set to "authenticated users can read
 ❌ Payment status written by the client
 ❌ Collection-wide listeners running up the bill
 
-✅ Firestore and Storage rules rewritten deny-by-default, scoped to choir membership and roles — with 48 emulator tests in CI
+✅ Firestore and Storage rules rewritten deny-by-default, scoped to choir membership and roles - with 48 emulator tests in CI
 ✅ Fee status updated only by a Cloud Function on verified payment webhooks
 ✅ App Check enabled and the listener replaced by a scoped, paginated query
 ✅ Budget alerts and scheduled backups with a test restore

@@ -1,4 +1,4 @@
-🚨 Casper Lindqvist built "ShiftSync," a scheduling tool for healthcare clinics in Malmö, largely in Cursor — reviewing every AI suggestion line by line and confident that counted as solid engineering. Then a shift swap silently failed during a brief connectivity issue, and two nurses each believed they'd successfully swapped shifts. One missed her slot entirely; the other showed up to a shift she thought she'd given away. 😳
+🚨 Casper Lindqvist built "ShiftSync," a scheduling tool for healthcare clinics in Malmö, largely in Cursor - reviewing every AI suggestion line by line and confident that counted as solid engineering. Then a shift swap silently failed during a brief connectivity issue, and two nurses each believed they'd successfully swapped shifts. One missed her slot entirely; the other showed up to a shift she thought she'd given away. 😳
 
 Reviewing every line and testing every failure mode are two different jobs. 🧠
 
@@ -11,7 +11,7 @@ Reviewing every line and testing every failure mode are two different jobs. 🧠
 ✅ Set up error monitoring and alerting so failures surface before a customer does
 ✅ Hardened the shift-swap logic to fail visibly with a clear message instead of failing silently
 
-At **LaunchStudio**, we add exactly this review-and-hardening layer on top of AI-generated first drafts — engineers who've already shipped 160+ projects for enterprise clients, under Manifera's technology practice. 🛡️
+At **LaunchStudio**, we add exactly this review-and-hardening layer on top of AI-generated first drafts - engineers who've already shipped 160+ projects for enterprise clients, under Manifera's technology practice. 🛡️
 
 Casper's result: ShiftSync now fails safely and visibly instead of silently, with both clinics back to trusting the schedule. 🚀
 

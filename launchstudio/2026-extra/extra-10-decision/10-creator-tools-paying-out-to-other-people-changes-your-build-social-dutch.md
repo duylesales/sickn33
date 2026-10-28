@@ -16,7 +16,7 @@ Wat een betrouwbaar creator-platform wél vereist:
 ✅ Een veilige inhoudingstermijn (holdback) van bijv. 14 dagen ter bescherming tegen chargebacks
 ✅ Gestructureerde registratie van jaarinkomsten per maker conform de DAC7-richtlijn
 
-Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers robuuste financiële architecturen en reconciliatielagen voor marktplaatsen — zonder uw frontend aan te tasten.
+Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers robuuste financiële architecturen en reconciliatielagen voor marktplaatsen - zonder uw frontend aan te tasten.
 
 💡 Zo loste digitaal template-platform Twórcy complexe geschillen en chargebacks binnen 10 minuten op dankzij een gesplitste grootboekarchitectuur.
 

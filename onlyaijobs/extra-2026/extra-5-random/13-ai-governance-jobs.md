@@ -43,7 +43,7 @@ Three years ago, AI governance was a topic for conference panels. Today it is a 
 
 The work varies by organisation, but most roles combine some of the following:
 
-- **Inventory and classification.** Finding out which AI systems the organisation actually uses — including the ones bought from vendors or built quietly in a business unit — and classifying them by risk.
+- **Inventory and classification.** Finding out which AI systems the organisation actually uses - including the ones bought from vendors or built quietly in a business unit - and classifying them by risk.
 - **Risk assessment.** Structured evaluation of what could go wrong: harmful outcomes, bias, security, privacy, misuse, dependency on suppliers.
 - **Documentation.** Producing and maintaining technical documentation, model cards, data descriptions, evaluation reports and decision logs.
 - **Evaluation oversight.** Defining what evidence is required before a system is deployed, and reviewing it critically.
@@ -72,9 +72,9 @@ The common thread is translation. Governance professionals turn legal requiremen
 
 ## How the EU AI Act Shapes the Work
 
-The AI Act structures obligations by risk. Some practices are prohibited. High-risk systems — including certain uses in employment, education, essential services, creditworthiness, law enforcement and safety components of regulated products — carry requirements for risk management, data governance, technical documentation, record-keeping, transparency, human oversight, accuracy, robustness and cybersecurity, plus post-market monitoring. Transparency obligations apply to systems that interact with people or generate synthetic content, and providers of general-purpose AI models have their own duties. Obligations apply in stages, and harmonised standards are being developed to translate them into testable practice.
+The AI Act structures obligations by risk. Some practices are prohibited. High-risk systems - including certain uses in employment, education, essential services, creditworthiness, law enforcement and safety components of regulated products - carry requirements for risk management, data governance, technical documentation, record-keeping, transparency, human oversight, accuracy, robustness and cybersecurity, plus post-market monitoring. Transparency obligations apply to systems that interact with people or generate synthetic content, and providers of general-purpose AI models have their own duties. Obligations apply in stages, and harmonised standards are being developed to translate them into testable practice.
 
-For governance professionals, the practical consequences are concrete: someone must maintain an inventory, classify systems, collect evidence, keep documentation current, ensure logs exist and are retained, define human oversight that is real rather than nominal, and monitor deployed systems. These are operational tasks, not philosophical ones — which is why organisations increasingly want people with technical backgrounds rather than policy backgrounds alone.
+For governance professionals, the practical consequences are concrete: someone must maintain an inventory, classify systems, collect evidence, keep documentation current, ensure logs exist and are retained, define human oversight that is real rather than nominal, and monitor deployed systems. These are operational tasks, not philosophical ones - which is why organisations increasingly want people with technical backgrounds rather than policy backgrounds alone.
 
 ## Skills That Matter
 
@@ -87,7 +87,7 @@ For governance professionals, the practical consequences are concrete: someone m
 
 ## Titles You Will See
 
-The field has not settled on vocabulary, which makes searching harder. Common titles include AI governance lead or manager, responsible AI specialist, AI risk officer, model risk validator, AI compliance manager, algorithm auditor, AI assurance consultant, trustworthy AI engineer and — in regulated products — regulatory affairs or quality engineer with AI scope. In the public sector you may see algorithm oversight adviser or data ethics officer.
+The field has not settled on vocabulary, which makes searching harder. Common titles include AI governance lead or manager, responsible AI specialist, AI risk officer, model risk validator, AI compliance manager, algorithm auditor, AI assurance consultant, trustworthy AI engineer and - in regulated products - regulatory affairs or quality engineer with AI scope. In the public sector you may see algorithm oversight adviser or data ethics officer.
 
 Read the responsibilities rather than the label. Some "responsible AI" roles are essentially communications positions; others are deeply technical, involving red-teaming, bias testing and evaluation design. Both exist, and candidates are often disappointed when they discover which one they joined.
 
@@ -95,19 +95,19 @@ Read the responsibilities rather than the label. Some "responsible AI" roles are
 
 Placement shapes the job. In financial services, governance often sits in a second-line risk function, independent of the teams building models, with formal validation responsibilities. In product companies, it may sit inside engineering or product, closer to the work but with less independence. In the public sector it frequently sits with legal, privacy or a dedicated ethics function.
 
-When evaluating a role, ask who the function reports to, whether it can stop a launch, and what happened the last time it disagreed with a business unit. A governance role without the authority to say no is an advisory role — which can still be valuable, but you should know which job you are accepting.
+When evaluating a role, ask who the function reports to, whether it can stop a launch, and what happened the last time it disagreed with a business unit. A governance role without the authority to say no is an advisory role - which can still be valuable, but you should know which job you are accepting.
 
 ## Building Documentation Engineers Will Actually Complete
 
 The most common governance failure is a template nobody fills in. Long forms written by people who have never trained a model produce either empty sections or copied text, and both are worse than nothing because they create the appearance of control.
 
-What works better: a short template tied to artefacts engineers already produce — the evaluation notebook, the data description, the deployment configuration — with automatic population wherever possible; a single page summarising purpose, data, evaluation, limitations, oversight and monitoring; concrete examples of good completions; and a review conversation rather than a document submission. Teams that treat documentation as a by-product of good engineering practice get far better results than teams that treat it as a separate compliance exercise.
+What works better: a short template tied to artefacts engineers already produce - the evaluation notebook, the data description, the deployment configuration - with automatic population wherever possible; a single page summarising purpose, data, evaluation, limitations, oversight and monitoring; concrete examples of good completions; and a review conversation rather than a document submission. Teams that treat documentation as a by-product of good engineering practice get far better results than teams that treat it as a separate compliance exercise.
 
-Governance professionals who can write these templates — because they understand both what regulators need and what engineers actually have — are the ones organisations fight to keep.
+Governance professionals who can write these templates - because they understand both what regulators need and what engineers actually have - are the ones organisations fight to keep.
 
 ## Red-Teaming and Evaluation of Generative Systems
 
-Generative AI has expanded the governance toolkit. Beyond accuracy, teams now test for prompt injection, data leakage, harmful content, jailbreak resistance, hallucination rates on grounded tasks, and behaviour in the languages their users actually speak. Structured red-teaming — adversarial testing with documented scenarios and results — has become a standard expectation for consumer-facing systems.
+Generative AI has expanded the governance toolkit. Beyond accuracy, teams now test for prompt injection, data leakage, harmful content, jailbreak resistance, hallucination rates on grounded tasks, and behaviour in the languages their users actually speak. Structured red-teaming - adversarial testing with documented scenarios and results - has become a standard expectation for consumer-facing systems.
 
 Engineers who can design and run these exercises, and then translate the findings into product changes, occupy one of the most sought-after niches in the field.
 
@@ -121,7 +121,7 @@ This is often the fastest way to add value in a new governance role, because org
 
 The reputation of governance functions is made in the first year. Practices that build cooperation: engage early in projects rather than at the end; bring templates and examples rather than requirements alone; distinguish clearly between legal obligations and internal preferences; be proportionate, spending your effort on the systems that carry real risk; and be willing to say when something is fine. Governance professionals who approve quickly when evidence is adequate earn the credibility they need when they must say no.
 
-Conversely, blanket rules applied to trivial internal tools waste goodwill fast, and teams start hiding projects — which is the outcome governance exists to prevent.
+Conversely, blanket rules applied to trivial internal tools waste goodwill fast, and teams start hiding projects - which is the outcome governance exists to prevent.
 
 ## How to Move Into the Field
 
@@ -133,7 +133,7 @@ Conversely, blanket rules applied to trivial internal tools waste goodwill fast,
 
 **From product management**: your ability to translate between groups is exactly the core skill; add depth in evaluation and documentation.
 
-Certifications exist and are growing in number. They can help with recruiter screening, but in interviews, concrete artefacts — a register you built, a documentation template in use, a red-team report — carry far more weight.
+Certifications exist and are growing in number. They can help with recruiter screening, but in interviews, concrete artefacts - a register you built, a documentation template in use, a red-team report - carry far more weight.
 
 ## Pay and Progression
 
@@ -149,17 +149,17 @@ To be transparent about scope: listings are currently concentrated in the Nether
 
 ## A Final Word
 
-AI governance is unusual among new professions in that it rewards people who already have technical depth. If you have built and evaluated systems, you know where the bodies are buried: which evaluations were rushed, which documentation is fiction, which monitoring exists only in a slide. Turning that knowledge into a function that makes an organisation safer — without making it slower than it needs to be — is a genuinely valuable career, and one that is unlikely to disappear as long as AI keeps being deployed in decisions that matter to people.
+AI governance is unusual among new professions in that it rewards people who already have technical depth. If you have built and evaluated systems, you know where the bodies are buried: which evaluations were rushed, which documentation is fiction, which monitoring exists only in a slide. Turning that knowledge into a function that makes an organisation safer - without making it slower than it needs to be - is a genuinely valuable career, and one that is unlikely to disappear as long as AI keeps being deployed in decisions that matter to people.
 
 ## Real example
 
 ### From ML engineer to governance lead
 
-An ML engineer at a European insurer spent four years building pricing and fraud models. When the company began preparing for the AI Act, she volunteered to help inventory the models in use — partly out of curiosity, partly because she suspected the list was longer than anyone thought.
+An ML engineer at a European insurer spent four years building pricing and fraud models. When the company began preparing for the AI Act, she volunteered to help inventory the models in use - partly out of curiosity, partly because she suspected the list was longer than anyone thought.
 
 It was. Alongside the twelve models her team maintained, business units were using vendor tools for document processing, chatbots for customer service and a screening tool in recruitment. Nobody had a complete picture, and nobody knew what evidence existed for the vendor products.
 
-Over eighteen months she built a register, a classification method, a documentation template that engineers could actually complete, and a lightweight review process that added two weeks rather than two quarters to a project. She now leads AI governance for the group. The technical credibility she brought — she could read a model's evaluation and ask the right question — is precisely why engineers cooperated rather than routing around her.
+Over eighteen months she built a register, a classification method, a documentation template that engineers could actually complete, and a lightweight review process that added two weeks rather than two quarters to a project. She now leads AI governance for the group. The technical credibility she brought - she could read a model's evaluation and ask the right question - is precisely why engineers cooperated rather than routing around her.
 
 ## Key Takeaways
 
@@ -182,7 +182,7 @@ No. Many organisations prefer technical people who can read evaluations; legal c
 Yes, and it is a common route. The gap is usually technical literacy about modern ML and generative systems.
 
 ### (Scenario: candidate in a small company) Do smaller organisations hire for this?
-Often as part of another role — a data lead or product manager with governance responsibility — rather than a dedicated position.
+Often as part of another role - a data lead or product manager with governance responsibility - rather than a dedicated position.
 
 ### (Scenario: engineer worried about the work) Is governance work bureaucratic?
 It can be if done badly. Good governance teams design lightweight processes and spend their time on the systems that actually carry risk.

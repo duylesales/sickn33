@@ -50,7 +50,7 @@ Luxembourg is one of the smallest countries in the EU, yet it hosts one of the w
 
 **High competition for talent.** Banks, fund administrators, Big Four firms, insurers, technology companies and EU institutions all compete for the same data professionals. Salaries are among the highest in Europe, and candidates often have several options.
 
-**Multilingual workplaces.** Luxembourg has three administrative languages — Luxembourgish, French and German — and English is widely used in finance and tech. Language requirements in your vacancy significantly affect the size of your candidate pool.
+**Multilingual workplaces.** Luxembourg has three administrative languages - Luxembourgish, French and German - and English is widely used in finance and tech. Language requirements in your vacancy significantly affect the size of your candidate pool.
 
 **Heavy regulation.** Financial services in Luxembourg are supervised by the CSSF and, for significant banks, the European Central Bank. Data science work in finance is subject to model governance, data protection and, increasingly, the EU AI Act.
 
@@ -86,7 +86,7 @@ Candidates living in France, Belgium or Germany weigh commuting, taxes and flexi
 
 - **Speed matters.** Strong data scientists in the Greater Region receive multiple offers. Aim to complete the process within a few weeks.
 - **Offer remote interviews.** Early rounds by video save cross-border candidates a trip; invite them on site for the final round.
-- **Use relevant technical assessments.** A case based on realistic data — for example classifying fund documents or detecting anomalies in transactions — tells you more than generic puzzles.
+- **Use relevant technical assessments.** A case based on realistic data - for example classifying fund documents or detecting anomalies in transactions - tells you more than generic puzzles.
 - **Involve the team.** Candidates want to meet future colleagues and understand the team's maturity.
 - **Be ready to explain cross-border practicalities.** Candidates appreciate employers who understand the implications for tax, social security and commuting.
 
@@ -96,7 +96,7 @@ For candidates relocating to Luxembourg from elsewhere in the EU, highlight prac
 
 ## How OnlyAIJobs Supports Cross-Border Hiring
 
-OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Its core feature is particularly relevant for Luxembourg: each vacancy is shown at its exact address with the distance from the candidate's home, so a data scientist in Metz or Arlon immediately sees how far your office is. There is no paid placement — every vacancy competes on its content — and applications go directly to your own careers page. Candidates browse without an account.
+OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Its core feature is particularly relevant for Luxembourg: each vacancy is shown at its exact address with the distance from the candidate's home, so a data scientist in Metz or Arlon immediately sees how far your office is. There is no paid placement - every vacancy competes on its content - and applications go directly to your own careers page. Candidates browse without an account.
 
 In the interest of transparency, OnlyAIJobs listings and audience are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For hiring data scientists in Luxembourg, use it alongside Luxembourg and Greater Region job portals, LinkedIn, university channels and referrals. Your first vacancy is free: email a link to info@onlyaijobs.eu.
 
@@ -105,7 +105,7 @@ In the interest of transparency, OnlyAIJobs listings and audience are currently 
 Before writing a vacancy, clarify what kind of data scientist you actually need. In Luxembourg's finance-heavy market, many organisations combine several needs in one role, which makes hiring harder. Consider distinguishing:
 
 - **Data scientist (modelling):** builds predictive models for risk, fraud, pricing or client behaviour.
-- **Data scientist (document and language):** works on extracting information from documents, classification and language models — highly relevant in funds and legal-heavy processes.
+- **Data scientist (document and language):** works on extracting information from documents, classification and language models - highly relevant in funds and legal-heavy processes.
 - **Analytics engineer or data engineer:** builds data pipelines and quality controls, often the foundation for everything else.
 - **ML engineer / MLOps:** brings models into production and maintains them.
 - **Data governance specialist:** ensures data quality, lineage and compliance, including AI Act documentation.
@@ -126,7 +126,7 @@ Given the competition, retention is as important as hiring. Data scientists in L
 
 ## Building an Employer Brand Among Data Professionals
 
-In a small market, reputation spreads quickly. Employers that share their data work publicly — through technical talks at local meetups, collaborations with the University of Luxembourg, participation in hackathons or blog posts about their projects — become known among data professionals in the Greater Region. This makes future hiring easier and attracts candidates who are genuinely interested in the work rather than only in the salary.
+In a small market, reputation spreads quickly. Employers that share their data work publicly - through technical talks at local meetups, collaborations with the University of Luxembourg, participation in hackathons or blog posts about their projects - become known among data professionals in the Greater Region. This makes future hiring easier and attracts candidates who are genuinely interested in the work rather than only in the salary.
 
 ## Onboarding Cross-Border Employees
 
@@ -157,7 +157,7 @@ Treat every candidate as a potential ambassador: in a small, connected market, r
 
 A fund administration company in Luxembourg wants to automate the extraction of information from fund documents and improve data quality in reporting. Its first vacancy, "Data Scientist (m/f)", lists Python, machine learning, French and German as requirements and receives few suitable applications.
 
-The hiring manager rewrites the vacancy. The new title is "Data Scientist — document intelligence for fund data", the description explains the documents, the data and the planned language model approach, English is stated as the working language with French as an asset, the exact office location near a tram stop is given with two remote days per week within cross-border limits, and a pay range is included. The interview process is reduced to three steps with remote first rounds.
+The hiring manager rewrites the vacancy. The new title is "Data Scientist - document intelligence for fund data", the description explains the documents, the data and the planned language model approach, English is stated as the working language with French as an asset, the exact office location near a tram stop is given with two remote days per week within cross-border limits, and a pay range is included. The interview process is reduced to three steps with remote first rounds.
 
 Applications from Metz, Arlon and Trier increase, and the company hires two data scientists within six weeks, one of whom previously worked in a Belgian bank. The team's first model reduces manual document processing substantially, and the company later partners with the University of Luxembourg on a research project.
 
@@ -168,7 +168,7 @@ Applications from Metz, Arlon and Trier increase, and the company hires two data
 - Finance, funds, insurance, consultancies, tech, space and EU institutions all compete for data talent.
 - The University of Luxembourg, SnT, LIST and MeluXina offer research partnerships and talent pipelines.
 - Fast, transparent processes with remote early rounds improve results.
-- OnlyAIJobs shows vacancies at exact address with distance from the candidate's home — ideal for cross-border commuters.
+- OnlyAIJobs shows vacancies at exact address with distance from the candidate's home - ideal for cross-border commuters.
 
 ## Where to Start
 

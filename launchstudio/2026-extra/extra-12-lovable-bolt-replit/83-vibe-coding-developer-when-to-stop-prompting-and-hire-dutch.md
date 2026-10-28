@@ -28,7 +28,7 @@ De nuttige vraag is waar de grens ligt voor uw product, en die blijkt herkenbaar
 
 ## Zes Signalen
 
-**Hetzelfde probleem overleeft drie sessies.** Geen moeilijk probleem — hetzelfde, terugkerend, met fixes die werken en dan niet meer. Dit betekent bijna altijd een structureel probleem dat het model niet kan zien omdat het steeds maar een deel van het plaatje krijgt, zoals het kostenartikel in deze reeks beschrijft. Een uur menselijk leeswerk lost op wat nog twintig prompts niet doen.
+**Hetzelfde probleem overleeft drie sessies.** Geen moeilijk probleem - hetzelfde, terugkerend, met fixes die werken en dan niet meer. Dit betekent bijna altijd een structureel probleem dat het model niet kan zien omdat het steeds maar een deel van het plaatje krijgt, zoals het kostenartikel in deze reeks beschrijft. Een uur menselijk leeswerk lost op wat nog twintig prompts niet doen.
 
 **Er is data van anderen bij betrokken.** Op het moment dat uw product records bevat van iemand die niet u is, zijn de kosten van een fout niet langer de uwe. Niets in dit artikel gaat over bekwaamheid; het gaat over wie de gevolgen van een gat in de autorisatie draagt.
 
@@ -52,11 +52,11 @@ Een vaste aanname is het antwoord op een heel ander probleem: aanhoudende ontwik
 
 De aanname die stilletjes schade doet: dat iemand inschakelen betekent dat u het product overdraagt.
 
-De regeling die voor de meeste oprichters werkt, is een verdeling in plaats van een overdracht. U blijft bouwen wat u begrijpt — de functies, de interface, de dingen waar uw klanten om vragen, waar uw kennis van het bedrijf het bezit is. Iemand anders doet het werk waar een fout duur is: autorisatie, betalingen, dataverwerking, infrastructuur, de beveiligingsreview.
+De regeling die voor de meeste oprichters werkt, is een verdeling in plaats van een overdracht. U blijft bouwen wat u begrijpt - de functies, de interface, de dingen waar uw klanten om vragen, waar uw kennis van het bedrijf het bezit is. Iemand anders doet het werk waar een fout duur is: autorisatie, betalingen, dataverwerking, infrastructuur, de beveiligingsreview.
 
 Die verdeling speelt in op beide kanten. U weet wat het product moet doen; zij weten wat er breekt wanneer er een vreemde binnenkomt. En het kost een fractie van een vaste aanname, omdat het werk is afgebakend.
 
-De oprichters die het slecht doen, zitten aan een van beide uitersten — hulp weigeren totdat een incident ertoe dwingt, of het hele ding overdragen en het vermogen verliezen om hun eigen product te veranderen.
+De oprichters die het slecht doen, zitten aan een van beide uitersten - hulp weigeren totdat een incident ertoe dwingt, of het hele ding overdragen en het vermogen verliezen om hun eigen product te veranderen.
 
 ## De Kosten van Wachten
 
@@ -82,7 +82,7 @@ De signalen hierboven beschrijven waar u stopt. De aanvulling is het benoemen wa
 
 Waar ze slecht in zijn, is wat de zes signalen beschrijven: redeneren over een heel systeem, opmerken wat ontbreekt, en weten wat ertoe doet in uw specifieke bedrijf. Die blijven menselijk, en daar gelden de afgebakende opdrachten uit deze reeks.
 
-Een oprichter die de tools gebruikt voor de eerste lijst en hulp haalt voor de tweede, staat er aanzienlijk beter voor dan een van beide uitersten — en die verdeling, in plaats van een oordeel over bekwaamheid, is het werkelijke antwoord op wanneer u iemand inhuurt.
+Een oprichter die de tools gebruikt voor de eerste lijst en hulp haalt voor de tweede, staat er aanzienlijk beter voor dan een van beide uitersten - en die verdeling, in plaats van een oordeel over bekwaamheid, is het werkelijke antwoord op wanneer u iemand inhuurt.
 
 ## Leer Genoeg om de Controle te Houden
 
@@ -90,7 +90,7 @@ Tussen alles zelf doen en alles overdragen ligt een positie die het nastreven wa
 
 Vier vaardigheden zijn genoeg om een oprichter de controle te laten houden over een product dat zo is gebouwd.
 
-**Een diff lezen.** Geen code schrijven — lezen wat er veranderde, herkennen wanneer er meer veranderde dan u vroeg, en een rechtencontrole of een verwijdering opmerken. Een middag oefenen.
+**Een diff lezen.** Geen code schrijven - lezen wat er veranderde, herkennen wanneer er meer veranderde dan u vroeg, en een rechtencontrole of een verwijdering opmerken. Een middag oefenen.
 
 **Het product lokaal draaien en een runbook volgen.** Het inrichten, een back-up terugzetten, een log bekijken. Dit zijn procedures in plaats van vaardigheden.
 
@@ -108,9 +108,9 @@ De onderscheidende gewoonte is onopvallend: ze handelen op de signalen wanneer d
 
 ## Dit Inrichten
 
-Voor een oprichter die beoordeelt waar hij staat: toets de zes signalen eerlijk; stem de reactie af op het signaal in plaats van naar een vaste aanname te grijpen; blijf de delen bouwen die u begrijpt terwijl u de delen uitbesteedt waar een fout duur is — autorisatie, betalingen, dataverwerking, infrastructuur; laat een betaalde beoordeling doen vóór een grotere opdracht; en eis een overdracht zodat de verdeling van het werk u capabeler maakt in plaats van afhankelijker.
+Voor een oprichter die beoordeelt waar hij staat: toets de zes signalen eerlijk; stem de reactie af op het signaal in plaats van naar een vaste aanname te grijpen; blijf de delen bouwen die u begrijpt terwijl u de delen uitbesteedt waar een fout duur is - autorisatie, betalingen, dataverwerking, infrastructuur; laat een betaalde beoordeling doen vóór een grotere opdracht; en eis een overdracht zodat de verdeling van het werk u capabeler maakt in plaats van afhankelijker.
 
-LaunchStudio is gebouwd voor precies deze verdeling: het productiewerk tegen een vaste prijs vanaf €800, waarbij het product van u blijft om verder te ontwikkelen. Daarachter staat Manifera — elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio is gebouwd voor precies deze verdeling: het productiewerk tegen een vaste prijs vanaf €800, waarbij het product van u blijft om verder te ontwikkelen. Daarachter staat Manifera - elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
 
 [Vertel ons welke van de zes signalen u herkent](https://launchstudio.eu/nl/#contact).
 
@@ -124,16 +124,16 @@ Vijf maanden lang kon hij een probleem niet oplossen waarbij een klein aantal le
 
 Hij had er naar eigen schatting veertig sessies aan besteed in vijf maanden. Elke sessie leverde een fix op, elke fix leek te werken, en de volgende verlengingsperiode leverde dezelfde klachten op.
 
-De oorzaak kostte een ervaren lezer negentig minuten: de verlengingstaak had geen idempotentie en werd via twee paden aangeroepen — een geplande run en een handmatige actie van een beheerder. Wanneer beide binnen hetzelfde venster voor hetzelfde lid plaatsvonden, ontstonden twee afschrijvingen. Geen enkele sessie had beide paden gezien, omdat ze in verschillende delen van de codebase stonden en elk gesprek er maar één had gekregen.
+De oorzaak kostte een ervaren lezer negentig minuten: de verlengingstaak had geen idempotentie en werd via twee paden aangeroepen - een geplande run en een handmatige actie van een beheerder. Wanneer beide binnen hetzelfde venster voor hetzelfde lid plaatsvonden, ontstonden twee afschrijvingen. Geen enkele sessie had beide paden gezien, omdat ze in verschillende delen van de codebase stonden en elk gesprek er maar één had gekregen.
 
 Drie werkdagen: de verlengingstaak idempotent gemaakt op lid en periode, met een test die controleert dat een tweede aanroep niets afschrijft; de twee aanroeppaden samengevoegd zodat beide dezelfde taak in de wachtrij zetten in plaats van de logica te dupliceren; een review die hetzelfde duplicatiepatroon op twee andere plekken vond, waarvan één dubbele welkomstmails verstuurde die niemand had gemeld; een afstemmingsquery die afschrijvingen vergelijkt met periodes, die 31 historische dubbele afschrijvingen over drie jaar vond, allemaal terugbetaald; autorisatie getest over 22 endpoints, waarbij er vier zonder controle werden gevonden; en een overdrachtsgesprek zodat Wouter kan onderhouden wat er is gebouwd.
 
 **Resultaat:** de dubbele afschrijvingen stopten. De 31 historische kwamen neer op €2.840 terugbetaald, en twee verenigingen zeiden dat de proactieve terugbetaling de reden was dat ze verlengden. Wouters eigen opmerking gaat over de vijf maanden, niet over het geld.
 
 > *"Veertig sessies in vijf maanden aan een bug die iemand negentig minuten kostte, omdat hij in twee bestanden zat en geen enkel gesprek ze ooit allebei tegelijk zag."*
-> — **Wouter Klumpenaar, Oprichter, Lidmaatschapbeheer (Zwolle)**
+> - **Wouter Klumpenaar, Oprichter, Lidmaatschapbeheer (Zwolle)**
 
-**Kosten & Doorlooptijd:** €3.400 (idempotente verlengingsverwerking met tests, samenvoegen van aanroeppaden, review op duplicatie in de hele codebase, historische afstemming en terugbetalingen, autorisatietests met vier fixes, overdracht) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (idempotente verlengingsverwerking met tests, samenvoegen van aanroeppaden, review op duplicatie in de hele codebase, historische afstemming en terugbetalingen, autorisatietests met vier fixes, overdracht) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -143,7 +143,7 @@ Zes signalen: hetzelfde probleem dat drie sessies overleeft, data van anderen, g
 
 ### Betekent inhuren dat ik mijn product overdraag?
 
-Nee, en dat moet het ook niet. Blijf bouwen wat u begrijpt en besteed het werk uit waar een fout duur is — autorisatie, betalingen, dataverwerking, infrastructuur.
+Nee, en dat moet het ook niet. Blijf bouwen wat u begrijpt en besteed het werk uit waar een fout duur is - autorisatie, betalingen, dataverwerking, infrastructuur.
 
 ### Heb ik een vaste developer nodig?
 
@@ -175,7 +175,7 @@ Hetzelfde werk, meerdere keren. Een gat in de autorisatie dat bij een review wor
       "name": "Betekent hulp inhuren dat u het product overdraagt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Blijf bouwen wat u begrijpt en besteed het werk uit waar fouten duur zijn — autorisatie, betalingen, data, infrastructuur."
+        "text": "Nee. Blijf bouwen wat u begrijpt en besteed het werk uit waar fouten duur zijn - autorisatie, betalingen, data, infrastructuur."
       }
     },
     {
@@ -183,7 +183,7 @@ Hetzelfde werk, meerdere keren. Een gat in de autorisatie dat bij een review wor
       "name": "Moet ik een vaste developer aannemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In deze fase zelden. De meeste signalen vragen om afgebakend werk — een review, een integratie, een opdracht voor productiegereedheid."
+        "text": "In deze fase zelden. De meeste signalen vragen om afgebakend werk - een review, een integratie, een opdracht voor productiegereedheid."
       }
     },
     {

@@ -18,7 +18,7 @@ Hoe u herhaling dit keer structureel uitsluit:
 
 Bij **LaunchStudio**, ondersteund door Manifera, werken we met vaste prijzen, vaste scopes en volledige transparantie.
 
-💡 Zo hielpen we Marieke Boersma na een eerdere mislukte poging binnen 10 dagen veilig live te gaan met haar trainers-app — zonder scope-discussies.
+💡 Zo hielpen we Marieke Boersma na een eerdere mislukte poging binnen 10 dagen veilig live te gaan met haar trainers-app - zonder scope-discussies.
 
 👉 Lees wat u dit keer concreet anders inricht: https://launchstudio.eu/nl/blog/ive-been-burned-before-what-to-do-differently
 

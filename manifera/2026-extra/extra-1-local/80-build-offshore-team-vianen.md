@@ -20,28 +20,28 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-Most first attempts to build an offshore team don't fail in month six — they fail in week one, when nobody defined what the first 90 days were actually supposed to accomplish, and "ramp-up" became a catch-all excuse for a team that never really got started.
+Most first attempts to build an offshore team don't fail in month six - they fail in week one, when nobody defined what the first 90 days were actually supposed to accomplish, and "ramp-up" became a catch-all excuse for a team that never really got started.
 
-**The Pain:** A VP of Engineering at a logistics-technology company in Vianen — a Utrecht-province town sitting at the junction of the A2 and A27 motorway corridors, itself a logistics hub — is planning to build an offshore team for the first time and has only a vague sense of what "ramp-up" should actually look like day by day.
+**The Pain:** A VP of Engineering at a logistics-technology company in Vianen - a Utrecht-province town sitting at the junction of the A2 and A27 motorway corridors, itself a logistics hub - is planning to build an offshore team for the first time and has only a vague sense of what "ramp-up" should actually look like day by day.
 
-**The Agitation:** A VP of Engineering without a concrete 90-day plan tends to discover, around month four, that the team is still not genuinely productive, without ever being able to point to the specific moment things went off track — because there was no defined plan against which to notice the drift in the first place.
+**The Agitation:** A VP of Engineering without a concrete 90-day plan tends to discover, around month four, that the team is still not genuinely productive, without ever being able to point to the specific moment things went off track - because there was no defined plan against which to notice the drift in the first place.
 
 ## A Concrete Plan, Not a Vague Ramp-Up Promise
 
 Building an offshore team successfully depends on having a specific, milestone-based plan for the first 90 days, not an open-ended "they'll ramp up" assumption that has no way to catch a stall.
 
-The first 30 days should be structured around codebase and domain onboarding with defined, checkable outputs — not just "getting familiar," but specific tasks completed, a first small production change shipped and reviewed, and initial architectural questions raised and answered.
+The first 30 days should be structured around codebase and domain onboarding with defined, checkable outputs - not just "getting familiar," but specific tasks completed, a first small production change shipped and reviewed, and initial architectural questions raised and answered.
 
 The next 30 days, days 31-60, should show the team taking on progressively larger units of independent work, with a VP of Engineering tracking specific velocity and quality signals against a baseline, not a vague sense of "things feel better."
 
-The final 30 days, 61-90, should demonstrate the team operating close to steady-state velocity on real roadmap work, with a formal checkpoint at day 90 where the VP of Engineering and the offshore team's leadership jointly assess against the original plan — a defined moment to catch drift, rather than discovering a stall accidentally months later.
+The final 30 days, 61-90, should demonstrate the team operating close to steady-state velocity on real roadmap work, with a formal checkpoint at day 90 where the VP of Engineering and the offshore team's leadership jointly assess against the original plan - a defined moment to catch drift, rather than discovering a stall accidentally months later.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads co-own the 90-day plan with the client, running the day-90 checkpoint against specific, pre-agreed milestones rather than a subjective feeling of progress.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod executes against defined, checkable outputs at each 30-day stage, with progress visible and measurable throughout.
 
-This is Dutch Management × Vietnamese Mastery — a launch plan with defined checkpoints, not an open-ended ramp-up promise. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a launch plan with defined checkpoints, not an open-ended ramp-up promise. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Logisztikai Rendszerek Kft, a logistics-technology company based in Budapest, Hu
 Manifera restructured the engagement around a specific 30/60/90-day plan with defined, checkable outputs at each stage and a formal day-90 joint checkpoint. The rebuilt team hit each 30-day milestone on schedule, and the day-90 checkpoint confirmed steady-state velocity against pre-agreed metrics, giving the VP of Engineering the first concrete confirmation the launch had actually succeeded.
 
 > *"We'd been told to expect a ramp-up and nobody defined what that meant in checkable terms. The second time, we had a plan with actual milestones, and we could finally tell whether it was working."*
-> — **VP of Engineering, Logisztikai Rendszerek Kft, Hungary**
+> - **VP of Engineering, Logisztikai Rendszerek Kft, Hungary**
 
 ## Vague Ramp-Up Promise vs. Manifera's 90-Day Milestone Plan
 

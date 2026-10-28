@@ -11,7 +11,7 @@ The build is usually fine. The security posture underneath it almost never is. �
 ✅ Move the exposed payment key into secure server-side configuration
 ✅ Deliver both fixes within the original three-week timeline, under NDA, under the agency's own brand
 
-At **LaunchStudio**, we back agencies exactly like Elke's with Manifera's engineers — 160+ enterprise projects delivered, working white-label so the client never has to know who's behind the fix. 🛡️
+At **LaunchStudio**, we back agencies exactly like Elke's with Manifera's engineers - 160+ enterprise projects delivered, working white-label so the client never has to know who's behind the fix. 🛡️
 
 Elke's result: a secure app delivered on time under her agency's own branding, with her client none the wiser about who did the engineering. 🚀
 

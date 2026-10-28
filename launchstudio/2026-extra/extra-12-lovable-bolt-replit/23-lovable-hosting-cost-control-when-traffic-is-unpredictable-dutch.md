@@ -46,7 +46,7 @@ Ongeveer in volgorde van hoe vaak elk iemand verrast.
 
 De neiging na een slechte rekening is alles te verminderen. De betere stap is uitzoeken wat de oorzaak was, en de meeste platforms vertellen u dat als u precies vraagt.
 
-Splits de rekening uit per dienst en vergelijk de maand met de vorige, op zoek naar de post die veranderde in plaats van de grootste post. Zoek dan binnen die dienst de dimensie — welke functie, welk endpoint, welke bucket, welk model.
+Splits de rekening uit per dienst en vergelijk de maand met de vorige, op zoek naar de post die veranderde in plaats van de grootste post. Zoek dan binnen die dienst de dimensie - welke functie, welk endpoint, welke bucket, welk model.
 
 Twee toewijzingen zijn het waard om in het product in te bouwen in plaats van uit een dashboard af te lezen. Kosten per klant, minstens bij benadering, voor alles wat door gebruik wordt gedreven: als u niet kunt zeggen wat uw zwaarste account kost om te bedienen, kunt u niet juist prijzen. En kosten per functie, zodat een dure functie een zakelijke beslissing is in plaats van een ongeluk.
 
@@ -72,7 +72,7 @@ Drie, en ze kosten minuten.
 
 Een budgetmelding bij de helft en bij 90 procent van wat u verwacht uit te geven, zodat ongebruikelijke activiteit binnen dagen zichtbaar is in plaats van aan het eind van de maand.
 
-Een anomaliemelding als uw provider die ondersteunt — uitgaven die flink hoger liggen dan dezelfde dag vorige week, is het patroon dat u wilt opvangen.
+Een anomaliemelding als uw provider die ondersteunt - uitgaven die flink hoger liggen dan dezelfde dag vorige week, is het patroon dat u wilt opvangen.
 
 En één melding op productniveau van uzelf: een telling van de dure handeling, per uur, met een drempel. Verwerkt uw product normaal 40 documenten per uur, dan vindt een melding bij 400 een lus vóór de factuur dat doet.
 
@@ -88,7 +88,7 @@ Serveer afbeeldingen op weergaveformaat in moderne formaten, wat voor producten 
 
 Verwijder wat niemand nodig heeft: afgebroken uploads, weesobjecten, oude exports, originelen van afbeeldingen die alleen als miniatuur worden getoond. Een opruimtaak plus een bewaarregel.
 
-En stuur bij AI-functies minder. Beperk de context tot wat de taak nodig heeft, begrens de lengte van het antwoord, en cache resultaten voor identieke invoer — wat in de praktijk vaker voorkomt dan oprichters verwachten.
+En stuur bij AI-functies minder. Beperk de context tot wat de taak nodig heeft, begrens de lengte van het antwoord, en cache resultaten voor identieke invoer - wat in de praktijk vaker voorkomt dan oprichters verwachten.
 
 ## De Omvang van het Plan Komt Als Laatste
 
@@ -106,17 +106,17 @@ De eerste is uw eigen tijd. Een uur per week besteed aan het onderzoeken van een
 
 De tweede zijn de kosten van wat er misging. De storing in het weekend die twee klanten kostte. De dubbele e-mails die een dag excuses kostten. De trage pagina die drie maanden lang stilletjes de conversie verlaagde. Dit zijn echte bedragen en ze zijn meestal groter dan de infrastructuurpost die iedereen onder de loep neemt.
 
-Dat doet ertoe, omdat kostenbeheersing een eigen valkuil kan worden: een oprichter die bezuinigt op een platformrekening van €90 terwijl er in hetzelfde product een probleem van €4.000 onopgelost ligt. Het juiste kader is niet de factuur minimaliseren — het is weten wat elk deel kost, zodat u bewust kunt beslissen wat u uitgeeft.
+Dat doet ertoe, omdat kostenbeheersing een eigen valkuil kan worden: een oprichter die bezuinigt op een platformrekening van €90 terwijl er in hetzelfde product een probleem van €4.000 onopgelost ligt. Het juiste kader is niet de factuur minimaliseren - het is weten wat elk deel kost, zodat u bewust kunt beslissen wat u uitgeeft.
 
 Een nuttige jaarlijkse oefening: zet de platformrekening, uw tijd aan beheer, en de geschatte kosten van incidenten in dezelfde tabel. Meestal is het de eerste keer dat de drie worden vergeleken, en het verandert doorgaans de volgorde van waar u als volgende aan werkt.
 
 ## Reserveer Capaciteit Pas Als de Vorm Bekend Is
 
-Providers bieden kortingen voor vooraf vastleggen — gereserveerde instanties, jaarplannen, vooruitbetaalde tegoeden — doorgaans 20 tot 40 procent ten opzichte van betalen per gebruik.
+Providers bieden kortingen voor vooraf vastleggen - gereserveerde instanties, jaarplannen, vooruitbetaalde tegoeden - doorgaans 20 tot 40 procent ten opzichte van betalen per gebruik.
 
 De valkuil is vastleggen voordat uw gebruik een stabiele vorm heeft. Een product waarvan de architectuur in een jaar twee keer verandert, legt capaciteit vast die het niet meer gebruikt, wat een korting is op het verkeerde. Erger nog: de verplichting wordt een argument tegen een wijziging die anders juist zou zijn.
 
-De verstandige volgorde: draai op aanvraag totdat het gebruik over drie of vier maanden voorspelbaar is, los eerst de fouten en inefficiënties op zodat u vastlegt voor echte behoefte in plaats van voor verspilling, leg dan de ondergrens van uw gebruik vast in plaats van de piek — het deel dat u zeker zult verbruiken — en laat het variabele deel op aanvraag.
+De verstandige volgorde: draai op aanvraag totdat het gebruik over drie of vier maanden voorspelbaar is, los eerst de fouten en inefficiënties op zodat u vastlegt voor echte behoefte in plaats van voor verspilling, leg dan de ondergrens van uw gebruik vast in plaats van de piek - het deel dat u zeker zult verbruiken - en laat het variabele deel op aanvraag.
 
 Voor de meeste producten onder een paar honderd klanten komt dat punt in jaar twee, en het jaarplan bij de modelprovider of de database is het eerste dat het nemen waard is. Daarvóór is flexibiliteit meer waard dan de korting, want de duurste verplichting is degene die u tegenhoudt iets te repareren.
 
@@ -124,7 +124,7 @@ Voor de meeste producten onder een paar honderd klanten komt dat punt in jaar tw
 
 Voor een bestaand product kost dit doorgaans een halve tot een hele dag: de rekening uitgesplitst per dienst en dimensie met de veranderde post geïdentificeerd, kostentoewijzing voor de dure functie en de zwaarste accounts, uitgavenlimieten ingesteld waar de provider ze biedt, rate limits per gebruiker en per endpoint op dure handelingen, begrensde nieuwe pogingen en time-outs op elke externe aanroep, limieten op grootte en aantal bij werk dat gebruikers indienen, budget- en anomaliemeldingen naar een plek die u leest, caching en beeldtransformatie toegepast, een opruimtaak voor verweesde en afgebroken opslag, en AI-payloads ingekort met antwoordlimieten en caching van resultaten.
 
-LaunchStudio doet dit als onderdeel van de managed regeling van €49 per maand, waarbij de meldingen bij ons binnenkomen en de limieten zijn ingesteld voordat ze nodig zijn. De engineers zijn van Manifera — elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet dit als onderdeel van de managed regeling van €49 per maand, waarbij de meldingen bij ons binnenkomen en de limieten zijn ingesteld voordat ze nodig zijn. De engineers zijn van Manifera - elf jaar, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Stuur ons de rekening van vorige maand](https://launchstudio.eu/nl/#contact) en wij vertellen u welke post een fout is.
 
@@ -134,7 +134,7 @@ LaunchStudio doet dit als onderdeel van de managed regeling van €49 per maand,
 
 Daniël Wubbels bouwde Bestekcheck met Lovable: een tool die bouwbestekken leest en inconsistenties markeert voor kleine aannemers en architecten, 40 abonnees à €95 per maand.
 
-Op een vrijdagavond rolde hij een wijziging uit in hoe documenten werden opgesplitst voordat ze naar het model gingen. De wijziging introduceerde een voorwaarde die bij documenten boven een bepaalde lengte overlappende segmenten opleverde — en elk segment veroorzaakte een verdere opsplitsing.
+Op een vrijdagavond rolde hij een wijziging uit in hoe documenten werden opgesplitst voordat ze naar het model gingen. De wijziging introduceerde een voorwaarde die bij documenten boven een bepaalde lengte overlappende segmenten opleverde - en elk segment veroorzaakte een verdere opsplitsing.
 
 Er kwam geen enkele fout. De functie leek te werken. Op zaterdag en zondag genereerden elf geüploade documenten samen 41.000 modelaanroepen, en zijn providerrekening voor het weekend was €3.100, tegenover een maandomzet van €3.800.
 
@@ -142,12 +142,12 @@ Hij hoorde het op maandagochtend via een factuurmail.
 
 Twee werkdagen: een harde limiet op het aantal segmenten per document, waarbij de taak luid faalt in plaats van door te gaan; de recursiediepte begrensd zodat een opsplitsing geen nieuwe opsplitsing kan veroorzaken; rate limiting per account op documentverwerking, ruim boven normaal gebruik ingesteld; begrensde nieuwe pogingen met oplopende wachttijd ter vervanging van onbeperkt opnieuw proberen bij time-outs van het model; een uitgavenlimiet bij de modelprovider die de dienst opschort in plaats van verder af te rekenen; een melding per uur op het aantal modelaanroepen bij tien keer het normale niveau; kostentoewijzing per document en per account opgenomen in de gebruikstabel, zodat Daniël nu kan zien wat elke klant kost; antwoordlimieten en inkorting van de context die de gewone kosten per document met 40 procent verlaagden; en resultaten gecachet voor identieke documenthashes, wat 18 procent van de uploads bleek te dekken omdat aannemers herziene bestekken opnieuw uploaden die grotendeels ongewijzigd zijn.
 
-**Resultaat:** de provider crediteerde een deel van het weekend nadat Daniël de lus had uitgelegd, en de resterende €1.900 was een maand winst. In de twee jaar daarna is de volumemelding twee keer afgegaan — één keer bij een echte fout die binnen elf minuten werd opgevangen, één keer bij een legitieme grote klant — en de kosten per document liggen 40 procent lager dan vóór het incident.
+**Resultaat:** de provider crediteerde een deel van het weekend nadat Daniël de lus had uitgelegd, en de resterende €1.900 was een maand winst. In de twee jaar daarna is de volumemelding twee keer afgegaan - één keer bij een echte fout die binnen elf minuten werd opgevangen, één keer bij een legitieme grote klant - en de kosten per document liggen 40 procent lager dan vóór het incident.
 
 > *"De functie werkte. De uitvoer klopte. Er viel niets op te merken behalve een getal op een dashboard dat ik op een zaterdag geen enkele reden had om te openen."*
-> — **Daniël Wubbels, Oprichter, Bestekcheck (Zwolle)**
+> - **Daniël Wubbels, Oprichter, Bestekcheck (Zwolle)**
 
-**Kosten & Doorlooptijd:** €2.400 (limieten op segmenten en recursie, rate limiting, begrensde nieuwe pogingen, uitgavenlimiet bij de provider, volumemeldingen, kostentoewijzing per account, inkorten van payload en antwoord, caching van resultaten) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.400 (limieten op segmenten en recursie, rate limiting, begrensde nieuwe pogingen, uitgavenlimiet bij de provider, volumemeldingen, kostentoewijzing per account, inkorten van payload en antwoord, caching van resultaten) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -181,7 +181,7 @@ Controleer eerst op een ontbrekende index, een fout in verbindingen of nieuwe po
       "name": "Wat veroorzaakt plotselinge pieken in de hostingrekening?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een lus — onbegrensde nieuwe pogingen, recursieve verwerking, een pollinginterval uit de ontwikkelfase, of modelaanroepen binnen een lus over rijen."
+        "text": "Een lus - onbegrensde nieuwe pogingen, recursieve verwerking, een pollinginterval uit de ontwikkelfase, of modelaanroepen binnen een lus over rijen."
       }
     },
     {

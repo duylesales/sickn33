@@ -2,7 +2,7 @@
 
 💰 A hybrid design can restore it: ask registrants for their home region, prioritise local candidates for one-to-one conversations, and share address-level vacancy lists before and after the event. Mind the GDPR and accessibility requirements, and encourage employers to show salary ranges.
 
-✅ Measure the share of local attendees — not just total registrations.
+✅ Measure the share of local attendees - not just total registrations.
 
 ✉️ Get in touch: info@onlyaijobs.eu
 

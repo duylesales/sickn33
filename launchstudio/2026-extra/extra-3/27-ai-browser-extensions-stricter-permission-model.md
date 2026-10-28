@@ -31,45 +31,45 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An AI browser extension — summarizing web pages, extracting data, automating repetitive browser tasks — runs with genuinely broader access than a typical web app most founders are used to reasoning about, since a browser extension can, depending on how it's built and what permissions it requests, potentially see everything a user does across every website they visit, not just the interactions confined to your own product's specific interface.
+An AI browser extension - summarizing web pages, extracting data, automating repetitive browser tasks - runs with genuinely broader access than a typical web app most founders are used to reasoning about, since a browser extension can, depending on how it's built and what permissions it requests, potentially see everything a user does across every website they visit, not just the interactions confined to your own product's specific interface.
 
 ## Why This Is a Fundamentally Different Access Model
 
-A typical web app's security boundary is well-understood: it can only see and act within its own domain and whatever the user explicitly submits to it. A browser extension's security boundary is a deliberate, granular set of permissions the user grants at install time — and depending on what those permissions actually cover, an overly broad extension can read page content, form data, and browsing activity far beyond what its actual functionality requires, a mismatch that both browser store review processes and increasingly privacy-conscious users specifically scrutinize.
+A typical web app's security boundary is well-understood: it can only see and act within its own domain and whatever the user explicitly submits to it. A browser extension's security boundary is a deliberate, granular set of permissions the user grants at install time - and depending on what those permissions actually cover, an overly broad extension can read page content, form data, and browsing activity far beyond what its actual functionality requires, a mismatch that both browser store review processes and increasingly privacy-conscious users specifically scrutinize.
 
 ## Where AI-Generated Extension Code Specifically Over-Requests
 
 **Broad host permissions requested by default rather than scoped narrowly.** AI coding tools generating browser extension code frequently default toward requesting access to all websites, since it's the simplest path to guaranteed functionality across whatever site a user might use the extension on, rather than the more deliberate, narrower permission scoping that both store reviewers and privacy-conscious users specifically look for.
 
-**Sensitive page content processed without clear necessity.** An extension that reads full page content to perform its function, when a narrower, more targeted data extraction would suffice, creates unnecessary exposure — both a store review concern and a genuine data-handling consideration if that broader content ever gets transmitted to a backend or an AI model API.
+**Sensitive page content processed without clear necessity.** An extension that reads full page content to perform its function, when a narrower, more targeted data extraction would suffice, creates unnecessary exposure - both a store review concern and a genuine data-handling consideration if that broader content ever gets transmitted to a backend or an AI model API.
 
-**Unclear boundaries around what data actually leaves the browser.** Users and reviewers alike specifically scrutinize whether an extension processes data locally versus sending it to an external server or AI model API — a distinction that needs to be both architecturally clear and clearly communicated, not left ambiguous in either the code or the extension's own privacy disclosure.
+**Unclear boundaries around what data actually leaves the browser.** Users and reviewers alike specifically scrutinize whether an extension processes data locally versus sending it to an external server or AI model API - a distinction that needs to be both architecturally clear and clearly communicated, not left ambiguous in either the code or the extension's own privacy disclosure.
 
 ## Why Store Review Specifically Catches What a Founder's Own Testing Doesn't
 
-Chrome Web Store and Firefox Add-ons review processes specifically examine requested permissions against described functionality, flagging extensions that request broader access than their stated purpose justifies — a check most founders' own functional testing never performs, since functional testing confirms the extension works, not that its permission scope is proportionate to what it actually needs to do.
+Chrome Web Store and Firefox Add-ons review processes specifically examine requested permissions against described functionality, flagging extensions that request broader access than their stated purpose justifies - a check most founders' own functional testing never performs, since functional testing confirms the extension works, not that its permission scope is proportionate to what it actually needs to do.
 
 ## What Proportionate Permission Scoping Actually Looks Like
 
-Requesting access only to the specific sites or page elements the extension's actual functionality requires, processing data locally wherever genuinely possible rather than defaulting to sending everything to a backend, and providing clear, accurate disclosure of exactly what data does leave the browser and why — a discipline that both satisfies store review requirements and builds the kind of user trust broad, unexplained permission requests actively undermine.
+Requesting access only to the specific sites or page elements the extension's actual functionality requires, processing data locally wherever genuinely possible rather than defaulting to sending everything to a backend, and providing clear, accurate disclosure of exactly what data does leave the browser and why - a discipline that both satisfies store review requirements and builds the kind of user trust broad, unexplained permission requests actively undermine.
 
 [LaunchStudio](https://launchstudio.eu/en/) reviews AI browser extensions specifically for permission scope proportionality and data-handling clarity before store submission, closing the gap between an AI coding tool's default broad-access pattern and what store review and user trust actually require, backed by Manifera's broader experience navigating platform-specific review processes across multiple product categories.
 
-[Get your extension's permissions scoped before a store review flags them](https://launchstudio.eu/en/#calculator) — broader access than necessary is both a review risk and a trust risk.
+[Get your extension's permissions scoped before a store review flags them](https://launchstudio.eu/en/#calculator) - broader access than necessary is both a review risk and a trust risk.
 
 ## Four Questions to Ask Before Requesting a New Permission
 
 Every permission a browser extension requests should be a deliberate decision, not a default an AI coding tool reached for because it was the simplest path to guaranteed functionality. Before adding a new permission to a manifest, or accepting one an AI tool generated by default, four questions catch most of the over-requesting this article describes.
 
-**Does the feature actually work without this permission, even in a reduced form?** Sometimes a broader permission was requested not because the feature strictly requires it, but because it was easier to build against, or because a narrower alternative wasn't considered. Testing whether a scaled-down version of the feature works with a narrower permission — even if it means asking the user to actively trigger something rather than having standing access — is worth doing before accepting the broader default.
+**Does the feature actually work without this permission, even in a reduced form?** Sometimes a broader permission was requested not because the feature strictly requires it, but because it was easier to build against, or because a narrower alternative wasn't considered. Testing whether a scaled-down version of the feature works with a narrower permission - even if it means asking the user to actively trigger something rather than having standing access - is worth doing before accepting the broader default.
 
-**Could this be scoped to activation-triggered access rather than standing, persistent access?** As Sander's case shows concretely, "works on every site" and "has standing access to every site at all times" are functionally different claims that AI-generated code frequently treats as the same thing. Many extension features genuinely can be redesigned around activation-triggered permissions — granted only when a user actively invokes the relevant feature — without meaningfully changing what the feature does for the user.
+**Could this be scoped to activation-triggered access rather than standing, persistent access?** As Sander's case shows concretely, "works on every site" and "has standing access to every site at all times" are functionally different claims that AI-generated code frequently treats as the same thing. Many extension features genuinely can be redesigned around activation-triggered permissions - granted only when a user actively invokes the relevant feature - without meaningfully changing what the feature does for the user.
 
 **If this specific permission were denied or later revoked, does the extension fail gracefully or break entirely?** An extension architected around graceful degradation for its more sensitive permissions is generally a sign the permission was scoped thoughtfully in the first place; one that breaks completely and unrecoverably without a given permission is worth a second look at whether that permission is genuinely essential or simply assumed to be.
 
 **Could you explain, in one plain sentence, exactly why this permission is necessary, to a skeptical reviewer or a privacy-conscious user?** If the honest answer requires several sentences of justification, or amounts to "it's just easier this way," that's a reasonable signal the permission request is broader than the feature genuinely requires. A permission that's actually proportionate to its function is usually one a founder can defend in a single, direct sentence without much hedging.
 
-Running each new or existing permission through these four questions, specifically and honestly, tends to be a faster and more reliable check than waiting for a store review process to flag the mismatch after the fact — the same review a founder can do for themselves before submission, rather than treating store rejection as the first real check the permission model ever receives.
+Running each new or existing permission through these four questions, specifically and honestly, tends to be a faster and more reliable check than waiting for a store review process to flag the mismatch after the fact - the same review a founder can do for themselves before submission, rather than treating store rejection as the first real check the permission model ever receives.
 
 It's worth running this same check against permissions already sitting in an extension's existing manifest, not just new ones being added. An extension built quickly, feature by feature, often accumulates a permission or two along the way that made sense for an earlier version of a feature that's since changed or been simplified, but the original permission request was never revisited once the feature itself evolved. A periodic pass through the full manifest, applying these same four questions retroactively, tends to surface at least one permission that's outlived the specific reason it was originally requested.
 
@@ -84,9 +84,9 @@ The Chrome Web Store's review process rejected PaginaSamenvatter's initial submi
 **Result:** LaunchStudio restructured PaginaSamenvatter's permission model to request access only when a user explicitly activated the summarization feature on a specific page, rather than standing broad access, passing store review on resubmission and, as a secondary benefit, giving privacy-conscious users a clearer, more accurate sense of what the extension actually did and didn't access.
 
 > *"I genuinely didn't think about the difference between 'works on every site' and 'has standing access to everything on every site,' since functionally they felt the same to me while building it. The store review's rejection was the first time anyone had actually pushed back on that specific distinction."*
-> — **Sander Kloosterman, Founder, PaginaSamenvatter (Wageningen)**
+> - **Sander Kloosterman, Founder, PaginaSamenvatter (Wageningen)**
 
-**Cost & Timeline:** €850 (permission scoping and store resubmission) — completed in 3 business days.
+**Cost & Timeline:** €850 (permission scoping and store resubmission) - completed in 3 business days.
 
 ---
 
@@ -94,7 +94,7 @@ The Chrome Web Store's review process rejected PaginaSamenvatter's initial submi
 
 ### Does requesting broad, all-sites access ever make sense for a legitimate browser extension?
 
-Sometimes, for extensions whose core functionality genuinely requires standing cross-site access — the concern is specifically about requesting broader access than actual functionality justifies, not about all-sites access being universally inappropriate.
+Sometimes, for extensions whose core functionality genuinely requires standing cross-site access - the concern is specifically about requesting broader access than actual functionality justifies, not about all-sites access being universally inappropriate.
 
 ### How would a founder know if their extension's requested permissions are proportionate before submitting to a store review?
 
@@ -102,15 +102,15 @@ Comparing each specific requested permission against a concrete justification fo
 
 ### Is on-demand, activation-triggered permission always possible, or does it depend on the specific extension's functionality?
 
-Depends on the functionality — some extensions genuinely need standing background access to work as intended, while many, like Sander's summarization tool, can reasonably request access only when the user actively triggers the relevant feature.
+Depends on the functionality - some extensions genuinely need standing background access to work as intended, while many, like Sander's summarization tool, can reasonably request access only when the user actively triggers the relevant feature.
 
 ### Does passing store review guarantee an extension's permission model is genuinely appropriate, or just formally compliant?
 
-Store review provides a meaningful check but isn't a complete guarantee — genuinely proportionate scoping and clear data-handling disclosure benefit user trust beyond whatever the minimum bar for store approval happens to require.
+Store review provides a meaningful check but isn't a complete guarantee - genuinely proportionate scoping and clear data-handling disclosure benefit user trust beyond whatever the minimum bar for store approval happens to require.
 
 ### How is this permission-scoping discipline different from the general secrets and access-control guidance covered elsewhere?
 
-Related in spirit — both concern granting only what's actually necessary — but browser extension permissions specifically govern what the extension itself can see and do within a user's browser, a distinct technical mechanism from backend authentication and authorization.
+Related in spirit - both concern granting only what's actually necessary - but browser extension permissions specifically govern what the extension itself can see and do within a user's browser, a distinct technical mechanism from backend authentication and authorization.
 
 <script type="application/ld+json">
 {
@@ -138,7 +138,7 @@ Related in spirit — both concern granting only what's actually necessary — b
       "name": "Is on-demand, activation-triggered permission always possible?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on functionality — some extensions need standing access, while many can request access only when activated."
+        "text": "Depends on functionality - some extensions need standing access, while many can request access only when activated."
       }
     },
     {

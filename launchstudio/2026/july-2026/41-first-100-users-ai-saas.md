@@ -26,7 +26,7 @@ This method is slow, but the conversion rate is massive because it is rooted in 
 
 Cold email still works if it is hyper-personalized. If you built an AI tool that audits SEO, do not send a generic text email.
 
-Run the prospect's website through your tool. Record a 90-second Loom video of yourself looking at the results: *"Hey John, I ran an AI audit on your site and found 3 major cannibalization issues. Here is exactly how to fix them. I built a tool that automates this—no pressure to buy, but you can use the free trial to fix these specific issues today."*
+Run the prospect's website through your tool. Record a 90-second Loom video of yourself looking at the results: *"Hey John, I ran an AI audit on your site and found 3 major cannibalization issues. Here is exactly how to fix them. I built a tool that automates this - no pressure to buy, but you can use the free trial to fix these specific issues today."*
 
 You only need to send 20 of these highly targeted videos to get 5 paying users. It doesn't scale, but it gets you to 100.
 
@@ -34,7 +34,7 @@ You only need to send 20 of these highly targeted videos to get 5 paying users. 
 
 For your first 20 users, do not let them sign up and figure it out themselves. Mandate a 15-minute Zoom call for onboarding.
 
-During this call, watch them share their screen as they use your app for the first time. Do not correct them if they click the wrong button—take notes. If they are confused, your UI is failing. This forced intimacy guarantees they understand the value of the product, drastically reducing early churn, and gives you a list of UX bugs to fix immediately.
+During this call, watch them share their screen as they use your app for the first time. Do not correct them if they click the wrong button - take notes. If they are confused, your UI is failing. This forced intimacy guarantees they understand the value of the product, drastically reducing early churn, and gives you a list of UX bugs to fix immediately.
 
 ## The Danger of Lifetime Deals (LTDs) for AI
 
@@ -70,7 +70,7 @@ Connor partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 **Result:** Connor onboarded 100+ European businesses without a single billing configuration error.
 
-**Cost & Timeline:** €1,600 (SaaS Tax Integration Package) — production-ready and deployed in 5 business days.
+**Cost & Timeline:** €1,600 (SaaS Tax Integration Package) - production-ready and deployed in 5 business days.
 
 ---
 

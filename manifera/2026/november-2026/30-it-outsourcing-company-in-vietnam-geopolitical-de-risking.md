@@ -54,10 +54,10 @@ However, raw engineering talent without strict Western governance often fails du
 
 **Xpar Vision** is a spinoff from the University of Groningen, specialized in advanced sensor and robot technology for the global container glass and tableware industry. Their systems help glass manufacturers make glass lighter and stronger while improving efficiency and speed, reducing carbon footprint, and reducing human dependency in the manufacturing process.
 
-For a three-month engagement, Manifera provided a remote software development team out of our Vietnam hub — one Technical Lead, two Software Developers, and one Test Engineer — that worked intensively alongside Xpar Vision's own team to build a Customer Relationship Management (CRM) system. Xpar Vision's team stayed focused on product development and on gathering and defining requirements, while the Vietnamese Pod, governed by Manifera's Hybrid Hub structure, handled the technical execution end to end for the full duration of the engagement. The result was an efficiently working CRM system, now used across multiple roles within the Xpar Vision organization — delivered by the same team that started the project, start to finish.
+For a three-month engagement, Manifera provided a remote software development team out of our Vietnam hub - one Technical Lead, two Software Developers, and one Test Engineer - that worked intensively alongside Xpar Vision's own team to build a Customer Relationship Management (CRM) system. Xpar Vision's team stayed focused on product development and on gathering and defining requirements, while the Vietnamese Pod, governed by Manifera's Hybrid Hub structure, handled the technical execution end to end for the full duration of the engagement. The result was an efficiently working CRM system, now used across multiple roles within the Xpar Vision organization - delivered by the same team that started the project, start to finish.
 
-> "Manifera has been a great partner in developing our internal application to track our install base. They do more than just build the application — they also give helpful advice and support on related processes. Their team is professional, skilled, and very engaged, making it easy to work with them. We appreciate their dedication and would highly recommend Manifera."
-> — **Vincent Koster, IT Manager, Xpar Vision**
+> "Manifera has been a great partner in developing our internal application to track our install base. They do more than just build the application - they also give helpful advice and support on related processes. Their team is professional, skilled, and very engaged, making it easy to work with them. We appreciate their dedication and would highly recommend Manifera."
+> - **Vincent Koster, IT Manager, Xpar Vision**
 
 ## Hub Comparison: Legacy Hubs vs. Vietnam Hybrid Hub
 
@@ -71,9 +71,9 @@ For a three-month engagement, Manifera provided a remote software development te
 
 ## What the Research Says About Vietnam and Attrition
 
-Vietnam's rise as an outsourcing destination is not a Manifera narrative — it shows up clearly in third-party market data. Kearney's Global Services Location Index, one of the most widely cited benchmarks for offshore destination attractiveness, places Vietnam among the top six global leaders for software outsourcing. Statista projects Vietnam's IT outsourcing market to reach roughly $698 million in 2025, growing at a compound annual rate of over 16%, on the back of a workforce of an estimated 530,000 to 560,000 software developers with 55,000 to 60,000 new technical graduates entering the market each year — a pipeline scale most legacy hubs cannot match at this point in their maturity curve.
+Vietnam's rise as an outsourcing destination is not a Manifera narrative - it shows up clearly in third-party market data. Kearney's Global Services Location Index, one of the most widely cited benchmarks for offshore destination attractiveness, places Vietnam among the top six global leaders for software outsourcing. Statista projects Vietnam's IT outsourcing market to reach roughly $698 million in 2025, growing at a compound annual rate of over 16%, on the back of a workforce of an estimated 530,000 to 560,000 software developers with 55,000 to 60,000 new technical graduates entering the market each year - a pipeline scale most legacy hubs cannot match at this point in their maturity curve.
 
-Attrition data reinforces the same picture from the other direction. NASSCOM-tracked data on major Indian IT services companies shows LTM (last-twelve-months) attrition stabilizing around 13% as of late FY2024, down from roughly 18% pre-pandemic, while Aon's Annual Salary Increase & Turnover Survey puts India's broader overall attrition rate at 17.1% for 2025. These are the improved, post-pandemic numbers — the peak "Great Resignation" years saw attrition in Indian and Eastern European IT services regularly reported well above 20%. Even at today's improved rates, a mid-teens-percentage annual churn rate means a five-person offshore team can statistically expect to lose and replace close to one member every year, each replacement triggering a fresh onboarding cycle.
+Attrition data reinforces the same picture from the other direction. NASSCOM-tracked data on major Indian IT services companies shows LTM (last-twelve-months) attrition stabilizing around 13% as of late FY2024, down from roughly 18% pre-pandemic, while Aon's Annual Salary Increase & Turnover Survey puts India's broader overall attrition rate at 17.1% for 2025. These are the improved, post-pandemic numbers - the peak "Great Resignation" years saw attrition in Indian and Eastern European IT services regularly reported well above 20%. Even at today's improved rates, a mid-teens-percentage annual churn rate means a five-person offshore team can statistically expect to lose and replace close to one member every year, each replacement triggering a fresh onboarding cycle.
 
 ### Worked Example: Pricing the Attrition Tax
 
@@ -87,7 +87,7 @@ Here is what that churn rate costs in practice, modeled against a five-person of
 | Internal Tech Lead hours diverted to retraining | 15–25 hours | Near zero |
 | Roadmap impact | Recurring multi-week velocity dips | None |
 
-The direct dollar cost is real but modest on its own. The larger cost is the compounding one: every replacement resets a portion of the team's accumulated domain knowledge, and on a multi-year engagement, that reset can happen repeatedly. A Pod with near-zero attrition does not just save the re-onboarding hours — it keeps compounding institutional knowledge instead of periodically losing it, which is the actual mechanism behind sustained delivery velocity over time.
+The direct dollar cost is real but modest on its own. The larger cost is the compounding one: every replacement resets a portion of the team's accumulated domain knowledge, and on a multi-year engagement, that reset can happen repeatedly. A Pod with near-zero attrition does not just save the re-onboarding hours - it keeps compounding institutional knowledge instead of periodically losing it, which is the actual mechanism behind sustained delivery velocity over time.
 
 ## The Mathematical Economics of the Hybrid Hub
 
@@ -118,10 +118,10 @@ Not with the Hybrid Hub model. In a standard offshore setup, if you ask a questi
 Exceedingly well, provided there is strict governance. While raw talent is abundant, our Amsterdam hub provides the rigorous framework. We train and mandate our Vietnamese Pods to operate using elite Western standards: strict Trunk-Based Development, automated AST Linting, and aggressive Unit Testing (TDD), ensuring the code quality matches or exceeds internal teams.
 
 ### (Scenario: CPO tired of 'Yes-Men') We need an offshore team that pushes back on bad ideas, not just takes orders. Is that possible?
-This is the fatal flaw of traditional 'body shops'—they blindly build bad features to bill more hours. Our Amsterdam Product Owners act as your strategic filter. We interrogate your backlog, demand ROI justification for features, and push back on scope creep. We then deliver a lean, mathematically verified architectural blueprint for the Vietnamese Pod to execute flawlessly.
+This is the fatal flaw of traditional 'body shops' - they blindly build bad features to bill more hours. Our Amsterdam Product Owners act as your strategic filter. We interrogate your backlog, demand ROI justification for features, and push back on scope creep. We then deliver a lean, mathematically verified architectural blueprint for the Vietnamese Pod to execute flawlessly.
 
 ### (Scenario: CFO comparing sourcing regions) How much does attrition in traditional outsourcing hubs actually cost us per year?
-Using industry-standard attrition data — NASSCOM-tracked figures put major Indian IT services attrition around 13% LTM, with Aon's Annual Salary Increase & Turnover Survey placing India's broader overall attrition at 17.1% for 2025 — a five-person offshore team can statistically expect to lose close to one member per year. At 120–200 hours of re-onboarding and domain knowledge transfer per replacement, that is roughly $4,800–$8,000 in direct re-onboarding cost alone, before counting the internal Tech Lead hours and the recurring velocity dip each replacement causes.
+Using industry-standard attrition data - NASSCOM-tracked figures put major Indian IT services attrition around 13% LTM, with Aon's Annual Salary Increase & Turnover Survey placing India's broader overall attrition at 17.1% for 2025 - a five-person offshore team can statistically expect to lose close to one member per year. At 120–200 hours of re-onboarding and domain knowledge transfer per replacement, that is roughly $4,800–$8,000 in direct re-onboarding cost alone, before counting the internal Tech Lead hours and the recurring velocity dip each replacement causes.
 
 <script type="application/ld+json">
 {
@@ -165,7 +165,7 @@ Using industry-standard attrition data — NASSCOM-tracked figures put major Ind
       "name": "(Scenario: CPO tired of 'Yes-Men') We need an offshore team that pushes back on bad ideas, not just takes orders. Is that possible?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This is the fatal flaw of traditional 'body shops'—they blindly build bad features to bill more hours. Our Amsterdam Product Owners act as your strategic filter. We interrogate your backlog, demand ROI justification for features, and push back on scope creep. We then deliver a lean, mathematically verified architectural blueprint for the Vietnamese Pod to execute flawlessly."
+        "text": "This is the fatal flaw of traditional 'body shops' - they blindly build bad features to bill more hours. Our Amsterdam Product Owners act as your strategic filter. We interrogate your backlog, demand ROI justification for features, and push back on scope creep. We then deliver a lean, mathematically verified architectural blueprint for the Vietnamese Pod to execute flawlessly."
       }
     },
     {
@@ -173,7 +173,7 @@ Using industry-standard attrition data — NASSCOM-tracked figures put major Ind
       "name": "(Scenario: CFO comparing sourcing regions) How much does attrition in traditional outsourcing hubs actually cost us per year?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Using industry-standard attrition data — NASSCOM-tracked figures put major Indian IT services attrition around 13% LTM, with Aon's Annual Salary Increase & Turnover Survey placing India's broader overall attrition at 17.1% for 2025 — a five-person offshore team can statistically expect to lose close to one member per year. At 120–200 hours of re-onboarding and domain knowledge transfer per replacement, that is roughly $4,800–$8,000 in direct re-onboarding cost alone, before counting the internal Tech Lead hours and the recurring velocity dip each replacement causes."
+        "text": "Using industry-standard attrition data - NASSCOM-tracked figures put major Indian IT services attrition around 13% LTM, with Aon's Annual Salary Increase & Turnover Survey placing India's broader overall attrition at 17.1% for 2025 - a five-person offshore team can statistically expect to lose close to one member per year. At 120–200 hours of re-onboarding and domain knowledge transfer per replacement, that is roughly $4,800–$8,000 in direct re-onboarding cost alone, before counting the internal Tech Lead hours and the recurring velocity dip each replacement causes."
       }
     }
   ]

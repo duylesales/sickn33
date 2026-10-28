@@ -35,13 +35,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-A search for "AI jobs Amsterdam" will show offices on the Zuidas and in the city centre. It will often miss what sits a few tram stops further south. Amstelveen is a separate municipality, and vacancies there are frequently listed under its own name — even though it hosts the headquarters of the national airline, the Dutch head office of one of the Big Four audit firms and the European headquarters of a major Japanese technology company. For data professionals in the Amsterdam region, ignoring Amstelveen means ignoring some of the most data-intensive employers in the metropolitan area.
+A search for "AI jobs Amsterdam" will show offices on the Zuidas and in the city centre. It will often miss what sits a few tram stops further south. Amstelveen is a separate municipality, and vacancies there are frequently listed under its own name - even though it hosts the headquarters of the national airline, the Dutch head office of one of the Big Four audit firms and the European headquarters of a major Japanese technology company. For data professionals in the Amsterdam region, ignoring Amstelveen means ignoring some of the most data-intensive employers in the metropolitan area.
 
 ## The Named Organisations Behind Amstelveen's Data Market
 
 **KLM Royal Dutch Airlines.** KLM's headquarters is in Amstelveen, close to Schiphol. As part of **Air France-KLM**, it runs one of Europe's largest network airlines, with operations that generate data at every step: bookings, pricing, crew scheduling, aircraft rotations, baggage, customer contact and maintenance. KLM has invested in data science and AI teams working on operational and commercial problems.
 
-**KLM Engineering & Maintenance.** The maintenance organisation, based at Schiphol, maintains KLM's fleet and provides services to other airlines. Predictive maintenance — using sensor and maintenance data to anticipate component failures before they cause delays — is a well-known application area within the Air France-KLM group.
+**KLM Engineering & Maintenance.** The maintenance organisation, based at Schiphol, maintains KLM's fleet and provides services to other airlines. Predictive maintenance - using sensor and maintenance data to anticipate component failures before they cause delays - is a well-known application area within the Air France-KLM group.
 
 **KPMG Netherlands.** KPMG's Dutch head office is in Amstelveen. Audit, tax and advisory firms employ data analysts, data scientists and technology specialists who work on audit analytics, forensic investigations, risk advisory and AI assurance. The audit profession is being reshaped by data analytics, which allows full-population testing of transactions rather than samples.
 
@@ -71,7 +71,7 @@ The real complexity lies in disruption. A thunderstorm over Schiphol, a technica
 
 Traditionally, auditors tested a sample of transactions and extrapolated. With modern data tools, it is possible to analyse all journal entries of a company, identify unusual patterns and focus auditor attention on genuine risks. This changes the role of data professionals at audit firms: they build analytics that become part of the audit methodology, which means their work must meet professional standards and be explainable to auditors, clients and regulators.
 
-Two regulatory developments add momentum. The **Corporate Sustainability Reporting Directive (CSRD)** introduces assurance of sustainability information, which requires collecting and verifying new kinds of data. And the **EU Artificial Intelligence Act** creates demand for independent assessment of AI systems — a service that audit and advisory firms are developing.
+Two regulatory developments add momentum. The **Corporate Sustainability Reporting Directive (CSRD)** introduces assurance of sustainability information, which requires collecting and verifying new kinds of data. And the **EU Artificial Intelligence Act** creates demand for independent assessment of AI systems - a service that audit and advisory firms are developing.
 
 ## Regulation That Shapes the Work
 
@@ -87,7 +87,7 @@ Two regulatory developments add momentum. The **Corporate Sustainability Reporti
 
 A data science team builds a model that predicts, several hours in advance, which flights are likely to depart late. On historical data, the model is impressively accurate. In operation, controllers barely use it. The reason is not accuracy: the model tells them a flight will be late but not why, and not what they can do about it.
 
-The team redesigns the output. Instead of a probability, the tool shows the main contributing factors — a late inbound aircraft, a tight crew connection, expected weather — and suggests possible interventions. Adoption increases sharply. The lesson applies to many operational AI settings: a prediction that does not lead to an action a human can take has little value.
+The team redesigns the output. Instead of a probability, the tool shows the main contributing factors - a late inbound aircraft, a tight crew connection, expected weather - and suggests possible interventions. Adoption increases sharply. The lesson applies to many operational AI settings: a prediction that does not lead to an action a human can take has little value.
 
 ## A Common Misconception About Big Corporate Data Teams
 
@@ -113,7 +113,7 @@ Candidates sometimes assume that data teams at large corporations are slow and b
 
 ## Commuting and Living in Amstelveen
 
-Amstelveen is connected to Amsterdam Zuid by the Amsteltram and has good bus connections to Schiphol. For people living in Amsterdam, commuting to Amstelveen is often as easy as commuting within the city — and sometimes easier than crossing the centre. Housing is expensive, as in the rest of the Amsterdam region, but Amstelveen's international schools and established expat community make it popular among international families. For candidates living further south, in Uithoorn, Aalsmeer or Hoofddorp, Amstelveen can be closer than central Amsterdam.
+Amstelveen is connected to Amsterdam Zuid by the Amsteltram and has good bus connections to Schiphol. For people living in Amsterdam, commuting to Amstelveen is often as easy as commuting within the city - and sometimes easier than crossing the centre. Housing is expensive, as in the rest of the Amsterdam region, but Amstelveen's international schools and established expat community make it popular among international families. For candidates living further south, in Uithoorn, Aalsmeer or Hoofddorp, Amstelveen can be closer than central Amsterdam.
 
 ## Career Growth Across Amstelveen's Employers
 
@@ -140,7 +140,7 @@ Audit, tax and advisory firms work with large volumes of documents: contracts, f
 - **Which decisions does the team's work actually influence, and who makes them?** Operational and audit settings both have clear human decision-makers.
 - **How are models validated and approved before use?** In aviation and audit, approval processes are formal.
 - **What is the on-call or busy-season arrangement?** Clarify expectations about availability early.
-- **How is the data team positioned — central, embedded in business units, or both?** Positioning affects influence and career paths.
+- **How is the data team positioned - central, embedded in business units, or both?** Positioning affects influence and career paths.
 - **What does the team do with generative AI, and under what confidentiality controls?** The answer reveals maturity and risk appetite.
 
 ## Key Takeaways
@@ -149,7 +149,7 @@ Audit, tax and advisory firms work with large volumes of documents: contracts, f
 - Work spans airline revenue management, operations recovery, predictive maintenance, audit analytics, forensic analysis and AI assurance.
 - EASA rules, AFM audit supervision, the CSRD, GDPR and the AI Act shape how data and AI are used.
 - Operational AI succeeds when predictions lead to actions people can actually take.
-- Amstelveen is a separate municipality — include it explicitly in an Amsterdam-area job search.
+- Amstelveen is a separate municipality - include it explicitly in an Amsterdam-area job search.
 
 ## Where to Start
 
@@ -166,13 +166,13 @@ Amstelveen is a separate municipality, so many vacancies are listed under its ow
 Revenue management, demand forecasting, disruption recovery, crew and aircraft scheduling, customer analytics and predictive maintenance.
 
 ### (Scenario: data scientist considering an audit firm) Do audit firms really need data scientists?
-Yes — audit analytics, forensic investigations and AI assurance increasingly rely on data science, within professional and regulatory standards.
+Yes - audit analytics, forensic investigations and AI assurance increasingly rely on data science, within professional and regulatory standards.
 
 ### (Scenario: candidate who prefers startups) Is working in a large corporate data team worthwhile?
-It can be — decision-making is slower, but the scale of impact, domain expertise and internal career mobility are significant.
+It can be - decision-making is slower, but the scale of impact, domain expertise and internal career mobility are significant.
 
 ### (Scenario: candidate commuting from Amsterdam) How easy is it to commute to Amstelveen?
-Very easy for most Amsterdam residents — the Amsteltram connects Amstelveen with Amsterdam Zuid.
+Very easy for most Amsterdam residents - the Amsteltram connects Amstelveen with Amsterdam Zuid.
 
 <script type="application/ld+json">
 {
@@ -181,9 +181,9 @@ Very easy for most Amsterdam residents — the Amsteltram connects Amstelveen wi
   "mainEntity": [
     {"@type": "Question", "name": "Why don't Amstelveen jobs appear when I search for Amsterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Amstelveen is a separate municipality; include it explicitly or search by distance."}},
     {"@type": "Question", "name": "What data science work exists at an airline?", "acceptedAnswer": {"@type": "Answer", "text": "Revenue management, forecasting, disruption recovery, scheduling, customer analytics and predictive maintenance."}},
-    {"@type": "Question", "name": "Do audit firms really need data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — audit analytics, forensic investigations and AI assurance rely increasingly on data science."}},
-    {"@type": "Question", "name": "Is working in a large corporate data team worthwhile?", "acceptedAnswer": {"@type": "Answer", "text": "It can be — slower decisions, but large impact, domain expertise and internal mobility."}},
-    {"@type": "Question", "name": "How easy is it to commute to Amstelveen?", "acceptedAnswer": {"@type": "Answer", "text": "Very easy — the Amsteltram connects Amstelveen with Amsterdam Zuid."}}
+    {"@type": "Question", "name": "Do audit firms really need data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - audit analytics, forensic investigations and AI assurance rely increasingly on data science."}},
+    {"@type": "Question", "name": "Is working in a large corporate data team worthwhile?", "acceptedAnswer": {"@type": "Answer", "text": "It can be - slower decisions, but large impact, domain expertise and internal mobility."}},
+    {"@type": "Question", "name": "How easy is it to commute to Amstelveen?", "acceptedAnswer": {"@type": "Answer", "text": "Very easy - the Amsteltram connects Amstelveen with Amsterdam Zuid."}}
   ]
 }
 </script>

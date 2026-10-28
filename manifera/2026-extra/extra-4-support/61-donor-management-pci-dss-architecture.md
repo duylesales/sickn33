@@ -28,11 +28,11 @@ PCI DSS is the security standard governing how organizations handling payment ca
 
 ## Why This Architecture Decision Matters More for Nonprofits Specifically
 
-A nonprofit organization, unlike many commercial businesses processing card payments, frequently doesn't have a dedicated security or compliance team with deep PCI DSS expertise, and the direct cost and ongoing operational burden of achieving and maintaining full PCI DSS compliance for a platform that directly handles card data can be genuinely significant relative to a typical nonprofit's technical resources and budget. This makes the architectural choice to minimize direct cardholder data handling — architecting the platform around a compliant processor's tokenization and hosted field capabilities rather than building custom card data handling — considerably more consequential for a nonprofit specifically than it might be for a well-resourced commercial enterprise with dedicated security infrastructure and compliance staff already in place.
+A nonprofit organization, unlike many commercial businesses processing card payments, frequently doesn't have a dedicated security or compliance team with deep PCI DSS expertise, and the direct cost and ongoing operational burden of achieving and maintaining full PCI DSS compliance for a platform that directly handles card data can be genuinely significant relative to a typical nonprofit's technical resources and budget. This makes the architectural choice to minimize direct cardholder data handling - architecting the platform around a compliant processor's tokenization and hosted field capabilities rather than building custom card data handling - considerably more consequential for a nonprofit specifically than it might be for a well-resourced commercial enterprise with dedicated security infrastructure and compliance staff already in place.
 
 ## Why Getting This Wrong Creates Compounding Technical and Financial Risk
 
-A donor management platform built without this architectural consideration from the start, processing or storing card data more directly than necessary, faces two compounding problems: the genuine ongoing cost and complexity of maintaining full PCI DSS compliance at a level of rigor the organization may not have the resources to sustain reliably, and the real risk that a compliance gap, if it occurs, creates genuine security exposure for donor payment data with real reputational and legal consequences for an organization whose entire operating model depends on donor trust. This is a specific case where architecting the platform to minimize its own compliance burden from the start — rather than accepting a heavier compliance posture and hoping to manage it adequately — is both the more secure and the more operationally sustainable choice for most nonprofit technology contexts specifically.
+A donor management platform built without this architectural consideration from the start, processing or storing card data more directly than necessary, faces two compounding problems: the genuine ongoing cost and complexity of maintaining full PCI DSS compliance at a level of rigor the organization may not have the resources to sustain reliably, and the real risk that a compliance gap, if it occurs, creates genuine security exposure for donor payment data with real reputational and legal consequences for an organization whose entire operating model depends on donor trust. This is a specific case where architecting the platform to minimize its own compliance burden from the start - rather than accepting a heavier compliance posture and hoping to manage it adequately - is both the more secure and the more operationally sustainable choice for most nonprofit technology contexts specifically.
 
 ## What Building a Minimized-Scope PCI Architecture Actually Requires
 
@@ -42,9 +42,9 @@ A donor management platform built without this architectural consideration from 
 
 ## Why This Decision Also Shapes GDPR Compliance for Donor Data More Broadly
 
-A related consideration worth naming directly: donor data extends well beyond payment information specifically, encompassing giving history, personal contact information, and sometimes sensitive information about a donor's specific causes or interests, all of which falls under GDPR's data protection requirements for European donors and organizations. The same architectural discipline that motivates minimizing direct cardholder data handling — reducing the scope of sensitive data the platform's own infrastructure needs to directly manage and secure — extends naturally to broader donor data governance as well, since a platform architected with deliberate attention to data minimization and scope reduction for payment data tends to carry this same discipline into how it handles the platform's broader donor data footprint, rather than treating payment security and general donor data privacy as entirely separate architectural concerns.
+A related consideration worth naming directly: donor data extends well beyond payment information specifically, encompassing giving history, personal contact information, and sometimes sensitive information about a donor's specific causes or interests, all of which falls under GDPR's data protection requirements for European donors and organizations. The same architectural discipline that motivates minimizing direct cardholder data handling - reducing the scope of sensitive data the platform's own infrastructure needs to directly manage and secure - extends naturally to broader donor data governance as well, since a platform architected with deliberate attention to data minimization and scope reduction for payment data tends to carry this same discipline into how it handles the platform's broader donor data footprint, rather than treating payment security and general donor data privacy as entirely separate architectural concerns.
 
-This connection matters practically because a nonprofit's actual GDPR compliance burden, like its PCI DSS burden, scales with how much sensitive data its systems directly hold and process — a platform that's deliberately architected to minimize unnecessary data retention and scope across both payment and broader donor data categories together carries a more sustainable, more defensible compliance posture overall than a platform where these considerations were addressed piecemeal or not considered together as part of a single, deliberate data minimization philosophy applied consistently across the platform's full donor data handling.
+This connection matters practically because a nonprofit's actual GDPR compliance burden, like its PCI DSS burden, scales with how much sensitive data its systems directly hold and process - a platform that's deliberately architected to minimize unnecessary data retention and scope across both payment and broader donor data categories together carries a more sustainable, more defensible compliance posture overall than a platform where these considerations were addressed piecemeal or not considered together as part of a single, deliberate data minimization philosophy applied consistently across the platform's full donor data handling.
 
 ## Why Smaller Nonprofits Face This Decision With Particularly High Stakes
 
@@ -64,7 +64,7 @@ Fundația Speranța Alba, an Alba Iulia-based nonprofit, had built an initial do
 Manifera's Amsterdam team rebuilt the platform's donation processing around a compliant payment processor's hosted payment fields, ensuring raw card data never touched the platform's own infrastructure, and restructured the donor and recurring giving data model around payment tokens rather than any direct card data reference.
 
 > *"We genuinely didn't understand how much compliance burden we'd taken on just by how our old donation form was built. Once we moved to a design where our own systems never actually touched card numbers at all, that whole category of risk and ongoing compliance work essentially disappeared for us."*
-> — **Technical Lead, Fundația Speranța Alba**
+> - **Technical Lead, Fundația Speranța Alba**
 
 Fundația Speranța Alba's rebuilt platform carries a substantially lighter PCI DSS compliance scope, sustainable for the organization's actual technical staffing level, and the nonprofit now evaluates any new payment-related feature specifically against whether it introduces direct cardholder data handling before approving it.
 
@@ -79,7 +79,7 @@ Fundația Speranța Alba's rebuilt platform carries a substantially lighter PCI 
 
 ## Scoping Your Own Donor Management Platform's Payment Architecture
 
-Before building or evaluating a donor management platform, verify its payment architecture is designed to minimize direct cardholder data handling through processor tokenization and hosted fields — this single architectural decision determines whether ongoing PCI DSS compliance is sustainable for your organization's actual technical resources. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a sustainably compliant donor management platform.
+Before building or evaluating a donor management platform, verify its payment architecture is designed to minimize direct cardholder data handling through processor tokenization and hosted fields - this single architectural decision determines whether ongoing PCI DSS compliance is sustainable for your organization's actual technical resources. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a sustainably compliant donor management platform.
 
 ## Frequently Asked Questions
 
@@ -101,7 +101,7 @@ A compliance gap creates genuine security exposure for donor payment data, with 
 
 ### (Scenario: CTO evaluating a nonprofit technology vendor) What should I ask a donor management platform vendor about their payment architecture?
 
-Ask specifically whether raw card data ever touches their platform's own infrastructure or whether all card data capture happens through a compliant processor's hosted fields or tokenization — the answer directly determines the platform's actual compliance scope.
+Ask specifically whether raw card data ever touches their platform's own infrastructure or whether all card data capture happens through a compliant processor's hosted fields or tokenization - the answer directly determines the platform's actual compliance scope.
 
 <script type="application/ld+json">
 {

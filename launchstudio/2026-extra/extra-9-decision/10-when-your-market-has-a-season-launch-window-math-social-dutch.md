@@ -1,4 +1,4 @@
-🚨 Lotte's volledige markt kocht in binnen een voorjaarsvenster van negen weken. Mist ze dat, dan is de volgende kans pas over tien maanden — bij een te late lancering bestaat er geen genadepunt. 😳
+🚨 Lotte's volledige markt kocht in binnen een voorjaarsvenster van negen weken. Mist ze dat, dan is de volgende kans pas over tien maanden - bij een te late lancering bestaat er geen genadepunt. 😳
 
 Een vertraging bij reguliere SaaS is elastisch. Een seizoensgebonden venster heeft twee harde kanten; missen betekent een verloren jaar, geen gemiste week: 🧠
 
@@ -8,7 +8,7 @@ Een vertraging bij reguliere SaaS is elastisch. Een seizoensgebonden venster hee
 ❌ "We lossen het na de lancering wel op" gebeurt zelden zodra de acute tijdsdruk eenmaal wegvalt
 
 ✅ Reken altijd terug vanaf de datum die niet verplaatst kan worden, minus buffer en vakantievertraging
-✅ Rangschik functionaliteiten op resterende weken, niet op budget — betalingen en authenticatie onder piekbelasting gaan altijd voor
+✅ Rangschik functionaliteiten op resterende weken, niet op budget - betalingen en authenticatie onder piekbelasting gaan altijd voor
 ✅ Leg de uitstellijst zwart-op-wit vast en deel deze, anders verandert het in een "misschien-nooit"-lijst
 ✅ Behandel de weken direct na het seizoen als een apart vervolgtraject met een eigen harde deadline
 

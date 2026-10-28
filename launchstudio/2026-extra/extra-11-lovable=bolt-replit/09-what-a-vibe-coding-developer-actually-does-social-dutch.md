@@ -14,7 +14,7 @@ Wat u wél moet inrichten vóór u uw eerste zakelijke abonnementen factureert:
 ✅ Opslag migreren naar private EU-cloudopslag met tijdelijke beveiligde downloadlinks
 ✅ Geautomatiseerde tests inrichten voor uitzonderingen, pieken en herstelscenario's
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, omarmen we de snelheid van vibe coding — en leveren we de technische ruggengraat die uw MVP verandert in een robuust bedrijf.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, omarmen we de snelheid van vibe coding - en leveren we de technische ruggengraat die uw MVP verandert in een robuust bedrijf.
 
 💡 Het resultaat: Ruben Elsinga voltooide het Launch Ready Package in 6 werkdagen voor € 2.150 (storage hardening, logica-consolidatie, regiomigratie). Kassabon doorstond haar eerste zakelijke security-toets en loste de btw-fout op vóórdat klanten belastingaangifte deden. 🚀
 

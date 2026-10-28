@@ -7,12 +7,12 @@ Klanten komen nu binnen met een werkend AI-gegenereerd prototype, geen blanco br
 ❌ Full-stack-tools (Lovable, Bolt) versus alleen-interface-tools (v0) hebben totaal andere voorstellen nodig
 ❌ Elke AI-geassisteerde klant behandelen als een verwarrend randgeval laat geld liggen
 
-✅ Stap 1: een snelle, gestructureerde audit — controleer op terugkerende patronen, niet "hoe goed is deze code"
+✅ Stap 1: een snelle, gestructureerde audit - controleer op terugkerende patronen, niet "hoe goed is deze code"
 ✅ Stap 2: scheid "heeft verharding nodig" van "moet gebouwd worden" voordat je iets prijst
 ✅ Stap 3: prijs rond de specifieke bevindingen van de audit, geen generiek pakket
 ✅ Vaardigheid met AI-gegenereerde codepatronen is een aanleerbare, onderscheidende vaardigheid
 
-Bij **LaunchStudio** zijn we een white-label-productiepartner voor precies dit — audit en verharding geleverd onder JOUW branding. Gesteund door Manifera's team over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** zijn we een white-label-productiepartner voor precies dit - audit en verharding geleverd onder JOUW branding. Gesteund door Manifera's team over 160+ opgeleverde projecten. 🛡️
 
 Zijn resultaat: won de opdracht tegen een eerlijke prijs, en leidt nu elke AI-native klant door audit-eerst. 🚀
 

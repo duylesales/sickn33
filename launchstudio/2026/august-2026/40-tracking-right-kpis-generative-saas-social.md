@@ -1,4 +1,4 @@
-🔥 Scarlett built a prototype using **Cursor** — scarlett, a founder, used **cursor** to build an ai analytics app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Scarlett built a prototype using **Cursor** - scarlett, a founder, used **cursor** to build an ai analytics app, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Scarlett's application achieved silky-smooth performance: Dashboard load times dropped to under 300ms, and primary write performance remained fast. (€1,850 (DB Scaling Package) — production-ready and deployed in 4 business days.). 🚀
+Scarlett's application achieved silky-smooth performance: Dashboard load times dropped to under 300ms, and primary write performance remained fast. (€1,850 (DB Scaling Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/tracking-right-kpis-generative-saas
 

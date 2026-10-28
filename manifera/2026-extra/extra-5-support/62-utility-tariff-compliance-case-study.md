@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager or technical lead at a utility provider operating across multiple regulatory jurisdictions faces a specific compliance reality that's easy to underweight during billing platform planning: tariff structures — tiered consumption pricing, time-of-use rates, seasonal adjustments, and rate caps — are set and periodically revised by each jurisdiction's own regulator, and these genuinely differ from one regulatory territory to the next, sometimes substantially. A billing system architected around a single, hardcoded tariff engine risks either misbilling customers under one regulator's approved structure or failing to reflect an approved rate change under another's, both of which carry real regulatory and customer-trust consequences for a utility provider.
+An IT Manager or technical lead at a utility provider operating across multiple regulatory jurisdictions faces a specific compliance reality that's easy to underweight during billing platform planning: tariff structures - tiered consumption pricing, time-of-use rates, seasonal adjustments, and rate caps - are set and periodically revised by each jurisdiction's own regulator, and these genuinely differ from one regulatory territory to the next, sometimes substantially. A billing system architected around a single, hardcoded tariff engine risks either misbilling customers under one regulator's approved structure or failing to reflect an approved rate change under another's, both of which carry real regulatory and customer-trust consequences for a utility provider.
 
 ## Why a Single Hardcoded Tariff Engine Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A billing platform built around a single, globally uniform tariff calculation en
 
 ## Why Jurisdiction-Configurable Tariff Architecture Is the More Sustainable Approach
 
-A billing platform architected from the start around a jurisdiction-configurable tariff engine — able to apply each regulator's specific tier thresholds, time-of-use windows, seasonal adjustments, and rate caps as a distinct, independently maintainable configuration — lets a utility provider comply with each jurisdiction's specific approved rate structure without maintaining separate, diverging billing codebases per region. This isn't simply a matter of parameterizing a single price number per jurisdiction, since tariff structures can differ more fundamentally than that — some jurisdictions mandate genuinely different tier logic (usage-based tiers versus flat time-of-use pricing) rather than merely different values within the same structure, meaning the underlying tariff engine needs to support genuinely configurable calculation logic, not just configurable numbers, to accommodate the actual range of regulatory approaches across a provider's operating jurisdictions.
+A billing platform architected from the start around a jurisdiction-configurable tariff engine - able to apply each regulator's specific tier thresholds, time-of-use windows, seasonal adjustments, and rate caps as a distinct, independently maintainable configuration - lets a utility provider comply with each jurisdiction's specific approved rate structure without maintaining separate, diverging billing codebases per region. This isn't simply a matter of parameterizing a single price number per jurisdiction, since tariff structures can differ more fundamentally than that - some jurisdictions mandate genuinely different tier logic (usage-based tiers versus flat time-of-use pricing) rather than merely different values within the same structure, meaning the underlying tariff engine needs to support genuinely configurable calculation logic, not just configurable numbers, to accommodate the actual range of regulatory approaches across a provider's operating jurisdictions.
 
 ## What Building Jurisdiction-Configurable Tariff Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Tarif-Steuerung Graz, a Graz-based regional utility provider, had built an initi
 Manifera's Amsterdam team rebuilt the billing platform's core tariff engine around a configurable, jurisdiction-specific ruleset, supporting both tiered consumption pricing for the home territory and time-of-use calculation for the newer territories, alongside reliable customer jurisdiction assignment and regulatory rate-filing reporting support, all without requiring separate, parallel billing codebases per region.
 
 > *"We assumed we'd just adjust our existing pricing logic wherever a new region needed something different. It turned out the actual tariff structures across our territories were different enough in kind, not just in number, that building real configurability was what let us keep billing correctly across all our operating regions rather than maintaining separate systems that would inevitably drift apart."*
-> — **IT Manager, Tarif-Steuerung Graz**
+> - **IT Manager, Tarif-Steuerung Graz**
 
 Tarif-Steuerung Graz successfully launched billing in its expanded territories with jurisdiction-appropriate tariff configurations, and now treats regulatory configurability as a standard architectural requirement for any new tariff mechanic, rather than a single billing structure decided once.
 
@@ -79,7 +79,7 @@ Tarif-Steuerung Graz successfully launched billing in its expanded territories w
 
 ## Scoping Your Own Utility Billing Platform's Tariff Engine for Regulatory Compliance
 
-Before expanding utility billing operations across multiple regulatory jurisdictions, architect the tariff engine around genuinely configurable, jurisdiction-specific rulesets — a single hardcoded engine forces an unnecessary trade-off between compliance risk and diverging, unmaintainable codebases. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready utility tariff engine.
+Before expanding utility billing operations across multiple regulatory jurisdictions, architect the tariff engine around genuinely configurable, jurisdiction-specific rulesets - a single hardcoded engine forces an unnecessary trade-off between compliance risk and diverging, unmaintainable codebases. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a regulation-ready utility tariff engine.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between applying one jurisdiction's structure incorrectly els
 
 ### (Scenario: engineering lead scoping tariff configurability) Is parameterizing a single price number per jurisdiction sufficient to handle tariff variation?
 
-Not always — some jurisdictions mandate genuinely different tier or rate logic, not just different values within the same structure, meaning the engine needs configurable calculation logic, not just configurable numbers.
+Not always - some jurisdictions mandate genuinely different tier or rate logic, not just different values within the same structure, meaning the engine needs configurable calculation logic, not just configurable numbers.
 
 ### (Scenario: compliance lead reviewing technical architecture) Why does reliable customer jurisdiction assignment matter for tariff compliance?
 
@@ -110,7 +110,7 @@ Regulators periodically revise approved tariff structures on staggered timelines
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a multi-jurisdiction billing platform) Why does utility tariff structure vary meaningfully across regulatory jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "Each regulator sets and revises its own tiered pricing, time-of-use windows, and rate caps, which genuinely differ across jurisdictions." } },
     { "@type": "Question", "name": "(Scenario: utility provider worried about compliance) What's the risk of building a billing platform around a single, hardcoded tariff engine?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between misapplying one structure elsewhere or maintaining separate, diverging codebases per region." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping tariff configurability) Is parameterizing a single price number per jurisdiction sufficient to handle tariff variation?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — some jurisdictions mandate genuinely different tier or rate logic, requiring configurable calculation logic, not just numbers." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping tariff configurability) Is parameterizing a single price number per jurisdiction sufficient to handle tariff variation?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - some jurisdictions mandate genuinely different tier or rate logic, requiring configurable calculation logic, not just numbers." } },
     { "@type": "Question", "name": "(Scenario: compliance lead reviewing technical architecture) Why does reliable customer jurisdiction assignment matter for tariff compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying jurisdiction-specific tariffs correctly depends on accurately identifying which regulator's structure governs a given account." } },
     { "@type": "Question", "name": "(Scenario: utility provider planning for future rate changes) Why should a tariff engine be designed to accommodate future rate revisions, not just current rates?", "acceptedAnswer": { "@type": "Answer", "text": "Regulators periodically revise approved tariffs on staggered timelines, and rework-heavy systems create ongoing compliance risk." } }
   ]

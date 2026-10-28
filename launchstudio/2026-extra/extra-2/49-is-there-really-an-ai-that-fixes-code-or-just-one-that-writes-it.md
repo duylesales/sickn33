@@ -31,27 +31,27 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-An AI that fixes code, in the fullest sense founders sometimes hope for, would need to independently recognize a gap it was never told about and correct it unprompted. What actually exists today is closer to a tool that writes new code very well in response to a specific description — a meaningfully different capability, and the distinction becomes very concrete the moment a founder accidentally mixes up a test environment's credentials with a live one. "Writes code" and "fixes code" sound like a small difference in phrasing; in practice they describe two entirely different jobs, and only one of them is what most AI coding tools are actually built to do today.
+An AI that fixes code, in the fullest sense founders sometimes hope for, would need to independently recognize a gap it was never told about and correct it unprompted. What actually exists today is closer to a tool that writes new code very well in response to a specific description - a meaningfully different capability, and the distinction becomes very concrete the moment a founder accidentally mixes up a test environment's credentials with a live one. "Writes code" and "fixes code" sound like a small difference in phrasing; in practice they describe two entirely different jobs, and only one of them is what most AI coding tools are actually built to do today.
 
 ## What "Fixes Code" Would Actually Require
 
-Genuinely fixing an unknown gap requires first recognizing that a gap exists at all — noticing that a configuration value looks wrong, that a credential doesn't match its intended environment, that a specific pattern doesn't match production-safe practice. None of that requires writing new code; it requires judgment about what's currently there, which is a fundamentally different task than generating a new feature from a description. Recognizing an unstated problem means comparing what exists against what should exist, drawing on context — knowledge of common failure patterns, the specific product's history, what "normal" looks like for this particular configuration — that isn't inherently part of the immediate request being handled.
+Genuinely fixing an unknown gap requires first recognizing that a gap exists at all - noticing that a configuration value looks wrong, that a credential doesn't match its intended environment, that a specific pattern doesn't match production-safe practice. None of that requires writing new code; it requires judgment about what's currently there, which is a fundamentally different task than generating a new feature from a description. Recognizing an unstated problem means comparing what exists against what should exist, drawing on context - knowledge of common failure patterns, the specific product's history, what "normal" looks like for this particular configuration - that isn't inherently part of the immediate request being handled.
 
 ## What Coding Tools Actually Do Well Instead
 
-AI coding tools excel at translating a description into new code — "add a payment feature," "build a signup form" — reliably and quickly. They generally don't proactively flag "by the way, the API key you just used in this configuration looks like it might be your test environment's key, not your production one," because nothing about generating the requested code specifically prompts that kind of independent, judgment-based observation. The tool completes the task exactly as framed, which is both its core strength and the precise boundary of what it can be relied on to catch without being explicitly asked.
+AI coding tools excel at translating a description into new code - "add a payment feature," "build a signup form" - reliably and quickly. They generally don't proactively flag "by the way, the API key you just used in this configuration looks like it might be your test environment's key, not your production one," because nothing about generating the requested code specifically prompts that kind of independent, judgment-based observation. The tool completes the task exactly as framed, which is both its core strength and the precise boundary of what it can be relied on to catch without being explicitly asked.
 
 ## Why Environment Mix-Ups Are an Easy, Common Version of This Gap
 
-Founders working across a test or staging environment and a live production one inevitably juggle multiple sets of credentials, and copying the wrong one into the wrong place — using a staging API key in a production configuration, or vice versa — is an easy, understandable mistake that produces no obvious error message, since both credentials are individually valid, just for different intended contexts.
+Founders working across a test or staging environment and a live production one inevitably juggle multiple sets of credentials, and copying the wrong one into the wrong place - using a staging API key in a production configuration, or vice versa - is an easy, understandable mistake that produces no obvious error message, since both credentials are individually valid, just for different intended contexts.
 
 ## Why This Specific Mistake Often Goes Unnoticed for a While
 
-A staging key used in production might still technically work for basic functionality, especially if the staging and production systems are similarly configured, meaning the mistake doesn't necessarily cause a visible failure — it can instead cause subtler issues, like real customer data being processed through a testing-tier service with different reliability, logging, or data-retention guarantees than the production environment a founder assumes is actually in use. It can persist for weeks or months precisely because nothing about it triggers an error message, a failed request, or any of the usual signals founders rely on to notice something is wrong.
+A staging key used in production might still technically work for basic functionality, especially if the staging and production systems are similarly configured, meaning the mistake doesn't necessarily cause a visible failure - it can instead cause subtler issues, like real customer data being processed through a testing-tier service with different reliability, logging, or data-retention guarantees than the production environment a founder assumes is actually in use. It can persist for weeks or months precisely because nothing about it triggers an error message, a failed request, or any of the usual signals founders rely on to notice something is wrong.
 
 ## Why an AI Tool Has No Natural Way to Catch This on Its Own
 
-The tool generating configuration code faithfully uses whatever credential value it's given, with no independent basis for judging whether that specific value is appropriate for the specific environment it's being placed into — that judgment requires external context (which key belongs to which environment) that isn't inherently part of the code-generation task itself.
+The tool generating configuration code faithfully uses whatever credential value it's given, with no independent basis for judging whether that specific value is appropriate for the specific environment it's being placed into - that judgment requires external context (which key belongs to which environment) that isn't inherently part of the code-generation task itself.
 
 ## What Actually Catches This Kind of Gap
 
@@ -67,13 +67,13 @@ Environment mix-ups are common enough, and quiet enough once they happen, that a
 
 **A simple, repeatable checklist:**
 
-- **Name credentials unmistakably by environment** — a key labeled `stripe_key_prod` versus `stripe_key_staging` is far harder to mix up at a glance than two keys distinguished only by which file or dashboard tab they happen to sit in.
-- **Store staging and production credentials in physically separate locations** where practical — different environment files, different secrets managers, or different configuration dashboards — so that copying from "the wrong place" requires a more deliberate, harder-to-do-by-accident action.
+- **Name credentials unmistakably by environment** - a key labeled `stripe_key_prod` versus `stripe_key_staging` is far harder to mix up at a glance than two keys distinguished only by which file or dashboard tab they happen to sit in.
+- **Store staging and production credentials in physically separate locations** where practical - different environment files, different secrets managers, or different configuration dashboards - so that copying from "the wrong place" requires a more deliberate, harder-to-do-by-accident action.
 - **Add a visible environment indicator inside the application itself**, even something as simple as a colored banner reading "STAGING" in a non-production deployment, so a founder or team member glancing at the running application gets an immediate, hard-to-miss visual cue about which environment they're actually looking at.
 - **Review every environment-specific configuration value immediately before a production deployment**, specifically as its own deliberate step, rather than assuming values set correctly once will remain correct through every subsequent deployment.
-- **Periodically confirm production is actually using production services**, not just at initial setup — checking a payment provider's own dashboard for whether recent transactions show up as "live" or "test" mode is a simple, direct way to verify this from outside your own codebase entirely.
+- **Periodically confirm production is actually using production services**, not just at initial setup - checking a payment provider's own dashboard for whether recent transactions show up as "live" or "test" mode is a simple, direct way to verify this from outside your own codebase entirely.
 
-**Why a checklist beats relying on memory alone:** the mistake VersMenu made wasn't a lack of care in general — Zoe was a careful, responsible founder who simply had no specific, repeatable process for the one moment (a rushed final deployment step) where this particular kind of error is most likely to happen. A checklist converts "be careful" into a specific, repeatable action taken at a specific, predictable moment, which is considerably more reliable than good intentions applied inconsistently across dozens of deployments over time.
+**Why a checklist beats relying on memory alone:** the mistake VersMenu made wasn't a lack of care in general - Zoe was a careful, responsible founder who simply had no specific, repeatable process for the one moment (a rushed final deployment step) where this particular kind of error is most likely to happen. A checklist converts "be careful" into a specific, repeatable action taken at a specific, predictable moment, which is considerably more reliable than good intentions applied inconsistently across dozens of deployments over time.
 
 ## Real example
 
@@ -81,14 +81,14 @@ Environment mix-ups are common enough, and quiet enough once they happen, that a
 
 Zoe, a former nutritionist turned founder in Wageningen, built VersMenu, an AI-assisted subscription meal-kit planning app built with v0, integrating a payment provider's staging and production environments during development and launch.
 
-Several early subscribers reported unusually long delays receiving payment confirmation emails, and a closer look revealed VersMenu's production checkout had been configured with the payment provider's staging API key rather than its production one — meaning real charges were technically processing, but through a testing-tier configuration with looser reliability and delayed notification guarantees never intended for genuine customer transactions. LaunchStudio's review confirmed the mix-up had occurred during a rushed final deployment step and had gone unnoticed since VersMenu's own checkout still appeared to "work."
+Several early subscribers reported unusually long delays receiving payment confirmation emails, and a closer look revealed VersMenu's production checkout had been configured with the payment provider's staging API key rather than its production one - meaning real charges were technically processing, but through a testing-tier configuration with looser reliability and delayed notification guarantees never intended for genuine customer transactions. LaunchStudio's review confirmed the mix-up had occurred during a rushed final deployment step and had gone unnoticed since VersMenu's own checkout still appeared to "work."
 
 **Result:** LaunchStudio corrected the environment configuration, moving production checkout to the properly designated production credentials, and audited every other environment-specific configuration value in VersMenu to confirm none shared the same mix-up, closing the gap and restoring reliable, timely payment confirmations for subscribers.
 
 > *"Everything looked completely fine from my side because the checkout itself never actually failed. It just quietly ran through the wrong system the entire time, doing an approximately-fine job instead of the actual, reliable job it was supposed to be doing."*
-> — **Zoe Kuijpers, Founder, VersMenu (Wageningen)**
+> - **Zoe Kuijpers, Founder, VersMenu (Wageningen)**
 
-**Cost & Timeline:** €1,400 (environment configuration audit and remediation) — completed in 5 business days.
+**Cost & Timeline:** €1,400 (environment configuration audit and remediation) - completed in 5 business days.
 
 ---
 
@@ -100,15 +100,15 @@ Yes, common enough that many established engineering teams implement automated e
 
 ### Is this the kind of gap that only affects payment integrations, or does it apply to other services too?
 
-It applies to any service with separate staging and production credentials — email providers, analytics tools, and third-party APIs generally all carry the same underlying risk if their environment-specific configuration values ever get mixed up during setup or deployment.
+It applies to any service with separate staging and production credentials - email providers, analytics tools, and third-party APIs generally all carry the same underlying risk if their environment-specific configuration values ever get mixed up during setup or deployment.
 
-### Manifera manages environment configuration for enterprise production deployments — does that experience matter for a smaller subscription app like VersMenu's?
+### Manifera manages environment configuration for enterprise production deployments - does that experience matter for a smaller subscription app like VersMenu's?
 
-Yes, directly — maintaining strict separation between staging and production environments is a standard discipline in Manifera's broader engineering practice, and applying that same discipline as a specific, deliberate check for a founder-scale product transfers the benefit of that broader experience directly.
+Yes, directly - maintaining strict separation between staging and production environments is a standard discipline in Manifera's broader engineering practice, and applying that same discipline as a specific, deliberate check for a founder-scale product transfers the benefit of that broader experience directly.
 
-### Herre Roelevink has spoken about AI tools completing exactly what's described, nothing more — does this environment mix-up illustrate that limitation well?
+### Herre Roelevink has spoken about AI tools completing exactly what's described, nothing more - does this environment mix-up illustrate that limitation well?
 
-Precisely — the AI tool faithfully used whatever credential it was given, with no basis for independently judging whether that credential matched its intended environment, exactly the boundary between "does what's described" and "catches what wasn't described" Roelevink's commentary on AI-native development consistently draws.
+Precisely - the AI tool faithfully used whatever credential it was given, with no basis for independently judging whether that credential matched its intended environment, exactly the boundary between "does what's described" and "catches what wasn't described" Roelevink's commentary on AI-native development consistently draws.
 
 ### Is there a simple habit a founder can adopt to reduce this specific risk going forward?
 
@@ -148,7 +148,7 @@ Clearly and consistently labeling credentials by environment, and specifically d
       "name": "Does this mix-up illustrate the limits of AI tools completing only what's described?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Precisely — the tool used whatever credential it was given, with no basis to judge if it matched its environment."
+        "text": "Precisely - the tool used whatever credential it was given, with no basis to judge if it matched its environment."
       }
     },
     {

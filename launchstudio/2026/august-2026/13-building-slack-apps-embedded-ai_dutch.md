@@ -37,7 +37,7 @@ Het grootste obstakel in B2B SaaS is niet het bouwen van de software; het is het
 
 Wanneer u een traditionele webapplicatie bouwt die marketingteksten genereert, moet de gebruiker een nieuw browsertabblad openen, inloggen, het juiste tekstvak opzoeken, zijn prompt typen, het resultaat kopiëren en dit vervolgens in de teamchat plakken. Deze workflow veroorzaakt enorme wrijving, en frictie is de grootste voorspeller van churn bij B2B-tools die niet strikt bedrijfskritisch zijn.
 
-Bouwt u een Slack-app, dan typt de gebruiker simpelweg: `@CopyBot stel een e-mail op om onze nieuwe feature aan te kondigen` direct in het marketingkanaal. De bot antwoordt binnen 5 seconden in dezelfde thread. Het team bekijkt het concept, klikt op een Slack-knop om goed te keuren, en de taak is voltooid. De frictie daalt naar nul. Omdat de frictie nul is, schiet het dagelijkse actieve gebruik omhoog, waardoor uw SaaS-abonnement aan het einde van het jaar veel moeilijker te schrappen is voor de CFO — niemand wil immers de tool annuleren waar het hele team dagelijks op vertrouwt in een kanaal dat ze toch al veertig keer per dag controleren.
+Bouwt u een Slack-app, dan typt de gebruiker simpelweg: `@CopyBot stel een e-mail op om onze nieuwe feature aan te kondigen` direct in het marketingkanaal. De bot antwoordt binnen 5 seconden in dezelfde thread. Het team bekijkt het concept, klikt op een Slack-knop om goed te keuren, en de taak is voltooid. De frictie daalt naar nul. Omdat de frictie nul is, schiet het dagelijkse actieve gebruik omhoog, waardoor uw SaaS-abonnement aan het einde van het jaar veel moeilijker te schrappen is voor de CFO - niemand wil immers de tool annuleren waar het hele team dagelijks op vertrouwt in een kanaal dat ze toch al veertig keer per dag controleren.
 
 ## De Architectuur van de Slack Event Loop
 
@@ -45,7 +45,7 @@ Het bouwen van een Slack-app verschilt fundamenteel van het bouwen van een React
 
 1. Een gebruiker typt `@YourBot vat deze thread samen`.
 2. Slack stuurt een HTTP POST-verzoek (een Event) naar uw Next.js backend met de berichtgegevens, het kanaal-ID en een verificatietijdstempel.
-3. **Cruciale Stap:** Uw server heeft exact 3 seconden om Slack te antwoorden met een `200 OK` status, anders gaat Slack ervan uit dat uw server offline is en zal het event opnieuw worden verstuurd — soms meerdere keren, wat kan leiden tot dubbele bot-antwoorden als u niet ontdubbelt op Slack's `event_id`.
+3. **Cruciale Stap:** Uw server heeft exact 3 seconden om Slack te antwoorden met een `200 OK` status, anders gaat Slack ervan uit dat uw server offline is en zal het event opnieuw worden verstuurd - soms meerdere keren, wat kan leiden tot dubbele bot-antwoorden als u niet ontdubbelt op Slack's `event_id`.
 4. Omdat een LLM langer dan 3 seconden nodig heeft om een thread samen te vatten, moet uw server het Slack-verzoek direct bevestigen en het daadwerkelijke werk doorgeven aan een asynchrone achtergrondwachtrij (zoals Inngest of Upstash QStash).
 5. De background worker bevraagt het LLM, ontvangt de samenvatting en gebruikt de Slack Web API (`chat.postMessage`) om de uiteindelijke tekst direct terug te plaatsen in het kanaal van de gebruiker.
 
@@ -62,15 +62,15 @@ Om dit op te lossen, moet u een stream "faken" via sequentiële berichtupdates:
 - Gebruik elke 1–2 seconden Slack's `chat.update` API om het placeholderbericht bij te werken met het nieuwste blok tekst.
 - Dit biedt de visuele feedback waar de gebruiker naar verlangt zonder Slack's Tier 3 API-ratelimieten te overschrijden (circa 50+ verzoeken per minuut per workspace, wat ruim klinkt totdat tientallen gebruikers de bot gelijktijdig aanroepen).
 
-Te agressief updaten — bijvoorbeeld bij elk individueel token — leidt direct tot rate-limiting en storend geflikker van het bericht. Het bundelen van updates in vensters van circa 1 seconde is het beproefde patroon waar de meeste volwassen Slack AI-apps op uitkomen.
+Te agressief updaten - bijvoorbeeld bij elk individueel token - leidt direct tot rate-limiting en storend geflikker van het bericht. Het bundelen van updates in vensters van circa 1 seconde is het beproefde patroon waar de meeste volwassen Slack AI-apps op uitkomen.
 
 ## Monetarisatie en Multi-Workspace State Beheren
 
-Een Slack-app is van nature multi-tenant: één codebase bedient potentieel duizenden onafhankelijke workspace-installaties, elk met een eigen OAuth-token, facturatiestatus en gebruiksquota. Uw database heeft een `workspace_installations` tabel nodig met Slack's `team_id` als sleutel, waarin het bot-token, het Stripe klant-ID van de beheerder en het tegoed- of seat-aantal worden opgeslagen — dezelfde server-side handhavingsdiscipline die geldt voor elk AI-facturatiesysteem is hier van toepassing, want een Slack-bot zonder gebruiksplafond stelt u net zo hard bloot aan ontsporende API-kosten als een webapp. Wanneer het proefabonnement of de licentie van een workspace verloopt, moet uw webhook-handler `workspace_installations` controleren vóórdat het LLM wordt aangeroepen, en antwoorden met een vriendelijke upgrade-melding in plaats van in stilte te falen.
+Een Slack-app is van nature multi-tenant: één codebase bedient potentieel duizenden onafhankelijke workspace-installaties, elk met een eigen OAuth-token, facturatiestatus en gebruiksquota. Uw database heeft een `workspace_installations` tabel nodig met Slack's `team_id` als sleutel, waarin het bot-token, het Stripe klant-ID van de beheerder en het tegoed- of seat-aantal worden opgeslagen - dezelfde server-side handhavingsdiscipline die geldt voor elk AI-facturatiesysteem is hier van toepassing, want een Slack-bot zonder gebruiksplafond stelt u net zo hard bloot aan ontsporende API-kosten als een webapp. Wanneer het proefabonnement of de licentie van een workspace verloopt, moet uw webhook-handler `workspace_installations` controleren vóórdat het LLM wordt aangeroepen, en antwoorden met een vriendelijke upgrade-melding in plaats van in stilte te falen.
 
 ## Dataprivacy Veilig Afhandelen
 
-Enterprise-klanten zullen uw bot niet installeren als ze vermoeden dat deze al hun interne privéberichten meeleest. U moet uw app zo ontwerpen dat deze uitsluitend de minimale OAuth-scopes opvraagt. Vraag alleen `app_mentions:read` aan, zodat uw bot alleen ontwaakt wanneer deze expliciet wordt getagd (`@Bot`). Vraag nooit globale kanaalleestoegang aan (`channels:history`), tenzij uw kernproduct — zoals een security compliance scanner of een notulist-assistent — dit strikt vereist, en wees voorbereid op zware security audits (zowel Slack's eigen App Directory review als de interne InfoSec-vragenlijst van de klant) als u dat wel doet. Ook de opslag van het OAuth bot-token zelf is essentieel: dit moet at-rest versleuteld worden en nooit als platte tekst in een databasekolom staan, aangezien een gelekt bot-token een aanvaller dezelfde lees- en schrijfrechten geeft tot de workspace van die klant als uw app heeft.
+Enterprise-klanten zullen uw bot niet installeren als ze vermoeden dat deze al hun interne privéberichten meeleest. U moet uw app zo ontwerpen dat deze uitsluitend de minimale OAuth-scopes opvraagt. Vraag alleen `app_mentions:read` aan, zodat uw bot alleen ontwaakt wanneer deze expliciet wordt getagd (`@Bot`). Vraag nooit globale kanaalleestoegang aan (`channels:history`), tenzij uw kernproduct - zoals een security compliance scanner of een notulist-assistent - dit strikt vereist, en wees voorbereid op zware security audits (zowel Slack's eigen App Directory review als de interne InfoSec-vragenlijst van de klant) als u dat wel doet. Ook de opslag van het OAuth bot-token zelf is essentieel: dit moet at-rest versleuteld worden en nooit als platte tekst in een databasekolom staan, aangezien een gelekt bot-token een aanvaller dezelfde lees- en schrijfrechten geeft tot de workspace van die klant als uw app heeft.
 
 Dit is precies het soort architectuurbeslissing dat bepaalt of een AI Slack-app een enterprise security review overleeft of in week één wordt afgewezen. Manifera, het bedrijf achter LaunchStudio, bouwt al sinds **2014** dit type veilige, productieklare integraties, met 11+ jaar ervaring verspreid over meer dan 160 opgeleverde projecten voor klanten zoals Vodafone en TNO (Nederlandse Organisatie voor toegepast-natuurwetenschappelijk onderzoek). "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied," zegt Herre Roelevink, Oprichter & Managing Director van Manifera. Aangezien circa 45% van de door AI gegenereerde code exploiteerbare beveiligingslekken bevat, is een te ruime OAuth-scope precies het soort fout waarmee een snel prototype uit Lovable of Bolt gelanceerd dreigt te worden.
 
@@ -79,7 +79,7 @@ Dit is precies het soort architectuurbeslissing dat bepaalt of een AI Slack-app 
 - Het 'Invisible SaaS'-model integreert AI direct in bestaande workflows (zoals Slack), waardoor de frictie van inloggen op aparte dashboards verdwijnt.
 - Slack-apps steunen op een event-driven webhook-architectuur. Uw backend moet binnen 3 seconden reageren, wat betekent dat alle AI-verwerking in asynchrone achtergrondwachtrijen moet plaatsvinden.
 - Slack ondersteunt geen native tekststreaming. U moet streaming simuleren door via de `chat.update` API elke 1–2 seconden een berichtblok bij te werken naarmate er tokens binnenkomen, zonder ratelimieten te overschrijden.
-- Een Slack-app is inherent multi-tenant — bewaak facturatie en gebruiksquota per workspace net zoals bij een reguliere webapp om uw API-budget te beschermen.
+- Een Slack-app is inherent multi-tenant - bewaak facturatie en gebruiksquota per workspace net zoals bij een reguliere webapp om uw API-budget te beschermen.
 - Beperk OAuth-rechten strikt (bijv. alleen berichten lezen waarin de bot expliciet wordt genoemd) en versleutel opgeslagen bot-tokens om te voldoen aan enterprise-beveiligingseisen.
 
 ## Integreer Uw AI Waar Gebruikers Werken
@@ -98,7 +98,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het team implementeerde Vault
 
 **Resultaat:** Enterprise-klantdata volledig beveiligd, waardoor hij moeiteloos slaagde voor zakelijke beveiligingsaudits.
 
-**Kosten & Doorlooptijd:** €2.300 (Security Vault Pakket) — productieklaar en live opgeleverd in 6 werkdagen.
+**Kosten & Doorlooptijd:** €2.300 (Security Vault Pakket) - productieklaar en live opgeleverd in 6 werkdagen.
 
 ---
 

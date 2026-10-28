@@ -12,7 +12,7 @@ Snel, functionele prototypes bouwen en ze productieklaar harden zijn twee versch
 
 Bij **LaunchStudio** zijn wij de partner achter precies dit soort bureau-overdrachten al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De klant van Marloes keurde de lancering goed op schema, en haar vertrouwen bij het aannemen van fintech-aanverwant werk groeide in plaats van te stagneren. (€ 2.300 — Launch & Grow Pakket, gehard en gedocumenteerd in 8 werkdagen.) 🚀
+De klant van Marloes keurde de lancering goed op schema, en haar vertrouwen bij het aannemen van fintech-aanverwant werk groeide in plaats van te stagneren. (€ 2.300 - Launch & Grow Pakket, gehard en gedocumenteerd in 8 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/no-code-agency-partner-decision-launchstudio
 

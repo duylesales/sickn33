@@ -4,16 +4,16 @@ Here's the math nobody puts on one spreadsheet:
 
 Your 12-year-old ERP runs on PHP 5.6.
 Security support ended in 2018.
-Your IT team patches it monthly — not because it'll recover, but because nobody's approved pulling the plug.
+Your IT team patches it monthly - not because it'll recover, but because nobody's approved pulling the plug.
 
 **The 6 hidden cost layers your CFO doesn't see:**
 
-1️⃣ Direct maintenance — €180K/year (devs, hosting, vendor contracts)
-2️⃣ Opportunity cost — your best 4 engineers spend 50% of their time firefighting legacy bugs instead of building revenue features
-3️⃣ Security exposure — EOL systems get 3x more incidents. Average EU breach: €4.3M (IBM 2025)
-4️⃣ Integration friction — every new SaaS connection needs custom middleware (€15-40K each, 5-10 layers over 3 years)
-5️⃣ Talent attrition — 30-50% salary premium for legacy specialists. Your best devs leave for modern stacks
-6️⃣ Compliance creep — GDPR + DORA + NIS2 on a system with no audit trail = thousands of hours of manual documentation
+1️⃣ Direct maintenance - €180K/year (devs, hosting, vendor contracts)
+2️⃣ Opportunity cost - your best 4 engineers spend 50% of their time firefighting legacy bugs instead of building revenue features
+3️⃣ Security exposure - EOL systems get 3x more incidents. Average EU breach: €4.3M (IBM 2025)
+4️⃣ Integration friction - every new SaaS connection needs custom middleware (€15-40K each, 5-10 layers over 3 years)
+5️⃣ Talent attrition - 30-50% salary premium for legacy specialists. Your best devs leave for modern stacks
+6️⃣ Compliance creep - GDPR + DORA + NIS2 on a system with no audit trail = thousands of hours of manual documentation
 
 📊 **3-Year TCO: Legacy vs. Structured Rewrite**
 
@@ -26,11 +26,11 @@ Doesn't include lost revenue from features shipping 4x slower.
 
 **3 migration strategies (not just "rewrite everything"):**
 
-🔄 **API Wrapping** — modern API layer around legacy backend. 30-40% of rewrite cost. Best when core logic is solid but integrations are broken.
+🔄 **API Wrapping** - modern API layer around legacy backend. 30-40% of rewrite cost. Best when core logic is solid but integrations are broken.
 
-🌿 **Strangler Fig** — replace module by module. Both systems run in parallel. Zero downtime. First module live in 6-10 weeks.
+🌿 **Strangler Fig** - replace module by module. Both systems run in parallel. Zero downtime. First module live in 6-10 weeks.
 
-🏗️ **Full Rewrite** — clean slate. Only viable under 100K LOC with crystal-clear requirements.
+🏗️ **Full Rewrite** - clean slate. Only viable under 100K LOC with crystal-clear requirements.
 
 **Real case: Rotterdam logistics company**
 

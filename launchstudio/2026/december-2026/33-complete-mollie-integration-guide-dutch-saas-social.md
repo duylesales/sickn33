@@ -6,16 +6,16 @@ Ask a Dutch customer how they want to pay. The answer is almost always: iDEAL. I
 ❌ Prospective customers literally said "I'd rather pay the normal way"
 
 The switch to Mollie: ✅
-✅ Native iDEAL support — the payment method Dutch customers already trust
+✅ Native iDEAL support - the payment method Dutch customers already trust
 ✅ Recurring mandate system for subscriptions
 ✅ Correct Dutch/EU VAT handling
 ✅ Idempotent webhook handling (same rigor as Stripe)
 
-Bonus gotcha: iDEAL mandate failures don't behave like declined cards — "retry in 3 days" copied from card dunning logic often just fails again. You need re-authorization emails instead. 🔍
+Bonus gotcha: iDEAL mandate failures don't behave like declined cards - "retry in 3 days" copied from card dunning logic often just fails again. You need re-authorization emails instead. 🔍
 
 At **LaunchStudio**, backed by Manifera's Amsterdam-based team's direct familiarity with the Dutch payment landscape, we implement this correctly, not just a checkout button. 🛡️
 
-Her result: checkout conversion MORE THAN DOUBLED — 8% → 19%, same traffic. 🚀
+Her result: checkout conversion MORE THAN DOUBLED - 8% → 19%, same traffic. 🚀
 
 👉 Read the complete Mollie integration guide: https://launchstudio.eu/en/blog/complete-mollie-integration-guide-dutch-saas
 

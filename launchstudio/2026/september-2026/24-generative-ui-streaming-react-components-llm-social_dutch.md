@@ -1,6 +1,6 @@
-💥 Grace, een reisblogger, bouwde een reisroute-generator met **Cursor** — maar de AI retourneerde uitsluitend muren van statische tekst over hotels, wat saai en levenloos aanvoelde. 📝
+💥 Grace, een reisblogger, bouwde een reisroute-generator met **Cursor** - maar de AI retourneerde uitsluitend muren van statische tekst over hotels, wat saai en levenloos aanvoelde. 📝
 
-Gebruikers willen geen lappen tekst over data lezen, zij willen visuele overzichten — en er direct mee interacteren. 🧠
+Gebruikers willen geen lappen tekst over data lezen, zij willen visuele overzichten - en er direct mee interacteren. 🧠
 
 ❌ AI-antwoorden die vastzitten in platte tekst of statische Markdown zonder enige interactiviteit
 ❌ Het model ter plekke ruwe React-code laten genereren, wat traag is en een ernstig XSS-veiligheidsrisico vormt
@@ -12,7 +12,7 @@ Gebruikers willen geen lappen tekst over data lezen, zij willen visuele overzich
 
 Bij **LaunchStudio** bouwen we dit soort geavanceerde component-architecturen via Manifera, verspreid over meer dan 160 opgeleverde projecten sinds 2014. 🛡️
 
-Voor Grace steeg de interactie met haar app met 150% en namen affiliate-boekingen met 40% toe. (€2.400 (Generative UI Integration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Voor Grace steeg de interactie met haar app met 150% en namen affiliate-boekingen met 40% toe. (€2.400 (Generative UI Integration Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek de kracht van Generative UI: https://launchstudio.eu/nl/blog/generative-ui-streaming-react-components-llm
 

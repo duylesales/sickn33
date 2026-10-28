@@ -7,7 +7,7 @@ Your new proptech vendor demoed leasing beautifully. Nobody asked what "real-tim
 
 **The Manifera Solution:**
 ✅ **Sandbox-first validation:** Test accounting sync, credential activation, and work order flow in a non-production environment before a single tenant record moves.
-✅ **API rate limits and latency in writing:** No integration commitment gets accepted on a verbal claim — documented SLAs only.
+✅ **API rate limits and latency in writing:** No integration commitment gets accepted on a verbal claim - documented SLAs only.
 ✅ **Reference checks at matching scale:** We push vendors for customers who migrated a similar unit count in the last 12 months, then ask what broke.
 
 A polished leasing demo tells you nothing about whether your smart locks and your GL will actually agree with each other. 🏢

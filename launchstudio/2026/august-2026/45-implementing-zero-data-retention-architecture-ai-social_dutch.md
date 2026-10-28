@@ -1,4 +1,4 @@
-🔥 Skylar bouwde een prototype met **Bolt** — Skylar, een bankmanager, bouwde een document-samenvatter, maar liep vast op strikte bancaire dataveiligheidseisen omdat uploads permanent in PostgreSQL werden bewaard. 🧠
+🔥 Skylar bouwde een prototype met **Bolt** - Skylar, een bankmanager, bouwde een document-samenvatter, maar liep vast op strikte bancaire dataveiligheidseisen omdat uploads permanent in PostgreSQL werden bewaard. 🧠
 
 Het sluiten van enterprise-deals in gereguleerde sectoren vereist Zero Data Retention (ZDR): een staatloze architectuur en VPC-implementaties.
 
@@ -12,7 +12,7 @@ Het sluiten van enterprise-deals in gereguleerde sectoren vereist Zero Data Rete
 
 Bij **LaunchStudio** lossen we exact dit type zero-retention architectuur en VPC-inrichtingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Skylars platform werd goedgekeurd door bancaire security-teams: Drie grote commerciële banken tekenden direct voor de tool vanwege de waterdichte gegevensbeveiliging. (€3.500 (Zero Retention Pakket) — productieklaar en binnen 8 werkdagen gedeployed). 🚀
+Skylars platform werd goedgekeurd door bancaire security-teams: Drie grote commerciële banken tekenden direct voor de tool vanwege de waterdichte gegevensbeveiliging. (€3.500 (Zero Retention Pakket) - productieklaar en binnen 8 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/implementing-zero-data-retention-architecture-ai
 

@@ -12,7 +12,7 @@ Enterprise security-auditors kijken niet naar flitsende demo's. Ze eisen bewijs 
 
 Bij LaunchStudio harden we AI-prototypes direct op de bestaande code, zodat solo-oprichters enterprise security-audits met vlag en wimpel doorstaan. 🛡️
 
-Priya's dossier werd binnen 4 dagen goedgekeurd door de CISO — contract getekend vóór 31 december. (€ 4.500 (Enterprise Hardening Pakket) — 14 werkdagen.) 🚀
+Priya's dossier werd binnen 4 dagen goedgekeurd door de CISO - contract getekend vóór 31 december. (€ 4.500 (Enterprise Hardening Pakket) - 14 werkdagen.) 🚀
 
 👉 Ontdek het stappenplan: https://launchstudio.eu/nl/blog/solo-founder-enterprise-procurement-q1-case-study
 

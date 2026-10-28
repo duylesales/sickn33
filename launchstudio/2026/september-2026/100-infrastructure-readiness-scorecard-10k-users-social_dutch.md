@@ -1,4 +1,4 @@
-📊 Dario bouwde een AI-tool voor klantfeedbackanalyse met **Cursor** — dario, a startup founder, used **cursor** to build an AI-powered customer feedback analysis tool for product teams, maar had geen duidelijk beeld van wat zou breken vóór een door financiering gedreven groeipush. 🧠
+📊 Dario bouwde een AI-tool voor klantfeedbackanalyse met **Cursor** - dario, a startup founder, used **cursor** to build an AI-powered customer feedback analysis tool for product teams, maar had geen duidelijk beeld van wat zou breken vóór een door financiering gedreven groeipush. 🧠
 
 Als u niet weet welk onderdeel van uw infrastructuur als eerste zou breken bij drie keer uw huidige belasting, is dat de audit die u vóór uw volgende groeipush moet uitvoeren, niet erna.
 
@@ -12,7 +12,7 @@ Als u niet weet welk onderdeel van uw infrastructuur als eerste zou breken bij d
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Dario's platform behaalde productie-gereedheid: zijn platform absorbeerde de daaropvolgende gebruikersgroei zonder prestatieverslechtering en met een gedocumenteerde gereedheidsbeoordeling die hij aan zijn bestuur kon tonen. (€ 3.400 (Relaunch & Scale Pakket) — infrastructuuraudit voltooid en prioritaire oplossingen geverifieerd in 9 werkdagen.) 🚀
+Dario's platform behaalde productie-gereedheid: zijn platform absorbeerde de daaropvolgende gebruikersgroei zonder prestatieverslechtering en met een gedocumenteerde gereedheidsbeoordeling die hij aan zijn bestuur kon tonen. (€ 3.400 (Relaunch & Scale Pakket) - infrastructuuraudit voltooid en prioritaire oplossingen geverifieerd in 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/infrastructure-readiness-scorecard-10k-users
 

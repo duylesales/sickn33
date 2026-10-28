@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-In most European countries, part-time work is an exception. In the Netherlands, it is ordinary. European statistics consistently show that the Netherlands has one of the highest shares of part-time employment in the EU, and Statistics Netherlands data show that part-time work is common among both women and, increasingly, men. Four-day working weeks are normal in many sectors. Yet vacancies for data scientists and ML engineers often state "40 hours" or "36–40 hours" without discussion, and many candidates are unsure whether asking for 32 hours will harm their chances. The reality is more nuanced — and more favourable — than many assume.
+In most European countries, part-time work is an exception. In the Netherlands, it is ordinary. European statistics consistently show that the Netherlands has one of the highest shares of part-time employment in the EU, and Statistics Netherlands data show that part-time work is common among both women and, increasingly, men. Four-day working weeks are normal in many sectors. Yet vacancies for data scientists and ML engineers often state "40 hours" or "36–40 hours" without discussion, and many candidates are unsure whether asking for 32 hours will harm their chances. The reality is more nuanced - and more favourable - than many assume.
 
 ## The Dutch Legal Framework for Working Hours
 
@@ -92,7 +92,7 @@ Reducing working hours affects more than monthly salary. Pension accrual decreas
 
 ## How to Negotiate Part-Time Hours for an AI Role
 
-**During the application process.** If part-time work is essential, mention it when there is genuine mutual interest — for example, after a first positive conversation — rather than in the first sentence of an application. Explain how you organise your work and show examples of delivering results.
+**During the application process.** If part-time work is essential, mention it when there is genuine mutual interest - for example, after a first positive conversation - rather than in the first sentence of an application. Explain how you organise your work and show examples of delivering results.
 
 **Frame it around outcomes.** Emphasise what you will deliver, how you will coordinate with the team and how you handle availability for urgent issues.
 
@@ -106,7 +106,7 @@ Reducing working hours affects more than monthly salary. Pension accrual decreas
 
 A machine learning engineer at an insurer becomes a parent and requests to reduce working hours from 40 to 32. The manager worries about coverage for production models and participation in sprint planning.
 
-Together they agree on a working pattern: the engineer works Monday to Thursday, sprint planning is scheduled on Mondays, and the on-call rotation is adjusted proportionally, with the engineer not on call on Fridays. Stakeholders are informed through calendars and team channels. After three months, the team finds that output has remained strong, partly because the engineer protects focus time more deliberately. The main adjustment needed is documentation: because the engineer is absent one day per week, handovers improve — which benefits the whole team.
+Together they agree on a working pattern: the engineer works Monday to Thursday, sprint planning is scheduled on Mondays, and the on-call rotation is adjusted proportionally, with the engineer not on call on Fridays. Stakeholders are informed through calendars and team channels. After three months, the team finds that output has remained strong, partly because the engineer protects focus time more deliberately. The main adjustment needed is documentation: because the engineer is absent one day per week, handovers improve - which benefits the whole team.
 
 ## How Teams Make Part-Time Work Succeed
 
@@ -120,11 +120,11 @@ A frequent concern is whether working fewer hours slows career progression. Lega
 
 Professionals can reduce the risk by discussing career goals explicitly with their manager, taking ownership of visible projects and ensuring that their results are communicated clearly. Asking during the application process whether team leads or senior specialists work part-time gives useful insight into the organisation's culture.
 
-For people combining work with study or care responsibilities, part-time work can also enable development that would otherwise be impossible — such as a part-time master's programme or a certification track — which can accelerate progression in the longer term.
+For people combining work with study or care responsibilities, part-time work can also enable development that would otherwise be impossible - such as a part-time master's programme or a certification track - which can accelerate progression in the longer term.
 
 ## A Common Misconception About Part-Time Tech Work
 
-The most common misconception is that part-time work is incompatible with serious technical roles. In practice, many experienced data scientists and engineers in the Netherlands work 32 or 36 hours and deliver excellent results. A second misconception is that asking about part-time options always harms an application. Employers who reject part-time work outright may simply not be a good fit, and many employers — particularly in the public sector, healthcare and research — consider flexible hours an important part of their employer offer.
+The most common misconception is that part-time work is incompatible with serious technical roles. In practice, many experienced data scientists and engineers in the Netherlands work 32 or 36 hours and deliver excellent results. A second misconception is that asking about part-time options always harms an application. Employers who reject part-time work outright may simply not be a good fit, and many employers - particularly in the public sector, healthcare and research - consider flexible hours an important part of their employer offer.
 
 ## What Employers Should State in Vacancies
 
@@ -155,13 +155,13 @@ Browse current AI, machine learning and data jobs, and check working hours in ea
 ## Frequently Asked Questions
 
 ### (Scenario: engineer considering a four-day week) Can I work 32 hours as a data scientist in the Netherlands?
-Often yes — part-time arrangements are increasingly common, especially in public sector, healthcare and research, though practices vary by employer.
+Often yes - part-time arrangements are increasingly common, especially in public sector, healthcare and research, though practices vary by employer.
 
 ### (Scenario: employee wanting to reduce hours) Can my employer refuse a request to work fewer hours?
 Under the Flexible Working Act, employers with at least ten employees may refuse a request to change working hours only on substantial business or service grounds.
 
 ### (Scenario: candidate worried about unequal treatment) Are part-time employees entitled to the same benefits?
-Yes, proportionally — the Equal Treatment (Working Hours) Act prohibits unjustified distinctions based on working hours.
+Yes, proportionally - the Equal Treatment (Working Hours) Act prohibits unjustified distinctions based on working hours.
 
 ### (Scenario: candidate comparing arrangements) What is the difference between 32 hours and 4×9?
 32 hours reduces working time and pay proportionally; 4×9 keeps 36 hours of pay over four longer days.
@@ -174,7 +174,7 @@ Usually once there is mutual interest, framed around how you will deliver result
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I work 32 hours as a data scientist in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — increasingly common, especially in public sector, healthcare and research."}},
+    {"@type": "Question", "name": "Can I work 32 hours as a data scientist in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - increasingly common, especially in public sector, healthcare and research."}},
     {"@type": "Question", "name": "Can my employer refuse a request to work fewer hours?", "acceptedAnswer": {"@type": "Answer", "text": "Only on substantial business or service grounds under the Flexible Working Act."}},
     {"@type": "Question", "name": "Are part-time employees entitled to the same benefits?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, proportionally, under the Equal Treatment (Working Hours) Act."}},
     {"@type": "Question", "name": "What is the difference between 32 hours and 4×9?", "acceptedAnswer": {"@type": "Answer", "text": "32 hours reduces time and pay; 4×9 keeps 36 hours of pay over four longer days."}},

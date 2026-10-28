@@ -1,13 +1,13 @@
 🤨 He asked 3 bidders the SAME question: "How would you verify one client's data can't be accessed by another?" One answer won him over instantly.
 
-"My app is small — why would I need a team that's worked with Vodafone?" Fair question. Here's the actual answer:
+"My app is small - why would I need a team that's worked with Vodafone?" Fair question. Here's the actual answer:
 
-❌ The cheap bid described what you'd see on screen — a filter in the UI
+❌ The cheap bid described what you'd see on screen - a filter in the UI
 ❌ The mid-size agency gave a vague "best practices" answer, no specifics
 ❌ Assuming enterprise experience is oversized for a small AI-built app
 ❌ Comparing vendor bids on price alone, without asking what's verified
 
-✅ Same underlying failure patterns exist at any scale — just less visible
+✅ Same underlying failure patterns exist at any scale - just less visible
 ✅ Enterprise scrutiny builds a default habit: verify, don't assume
 ✅ Dutch management + Vietnamese engineering mastery = accuracy AND execution
 ✅ Real experience = a specific testing mechanism, not a general reassurance

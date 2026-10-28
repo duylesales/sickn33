@@ -36,7 +36,7 @@ Voorspellingsartikelen zijn meestal speculatief entertainment. Dit artikel kiest
 
 ## Voorspelling 1: De Kloof Tussen Prototype en Productie Dicht Niet Vanzelf
 
-AI-programmeer-assistenten worden steeds beter in het maken van indrukwekkende prototypes. Ze gaan echter de "last-mile" kloof — beveiliging, betalingen en productie-infrastructuur — niet vanzelf dichten. Dat vraagt namelijk om professionele engineering-discipline. **Voorbereiding:** Reken op een apart budget voor productie-infrastructuur los van de abonnementskosten van uw AI-prototypetool.
+AI-programmeer-assistenten worden steeds beter in het maken van indrukwekkende prototypes. Ze gaan echter de "last-mile" kloof - beveiliging, betalingen en productie-infrastructuur - niet vanzelf dichten. Dat vraagt namelijk om professionele engineering-discipline. **Voorbereiding:** Reken op een apart budget voor productie-infrastructuur los van de abonnementskosten van uw AI-prototypetool.
 
 ## Voorspelling 2: Onderscheidende Waarde Verschuift van "Heeft AI" naar "Betrouwbare AI"
 
@@ -52,7 +52,7 @@ Model-releases en prijswijzigingen zullen in hoog tempo doorgaan. **Voorbereidin
 
 ## Voorspelling 5: De Oprichters Die Winnen Zijn Degenen Die Echt Lanceren
 
-Dit is de minst flitsende voorspelling, maar wel de belangrijkste: de AI-native oprichters die in 2027 duurzame bedrijven bouwen, zijn degenen die daadwerkelijk zijn gelanceerd — zelfs met een imperfect product — in plaats van degenen die hun prototype eeuwig bleven oppoetsen. **Voorbereiding:** Stel "live zijn en leren van echte klanten" boven "een prototype dat eindelijk perfect is".
+Dit is de minst flitsende voorspelling, maar wel de belangrijkste: de AI-native oprichters die in 2027 duurzame bedrijven bouwen, zijn degenen die daadwerkelijk zijn gelanceerd - zelfs met een imperfect product - in plaats van degenen die hun prototype eeuwig bleven oppoetsen. **Voorbereiding:** Stel "live zijn en leren van echte klanten" boven "een prototype dat eindelijk perfect is".
 
 ## De Rode Draad
 
@@ -123,16 +123,16 @@ Een tweede grote trend voor 2027 is de adoptie van compacte, gespecialiseerde op
 
 ### Een AI-native oprichter in actie: Vroeg voorsorteren op wat het nieuwe jaar bracht
 
-Willem, een zelfstandig rij-instructeur in Doetinchem, bouwde RijlesPlan — een AI-tool die persoonlijke lesplannen genereert voor leerlingen op basis van hun zwakke punten — met behulp van v0. In plaats van zijn prototype als "klaar" te beschouwen zodra het in tests werkte, besloot Willem bewust de productielancering door te zetten vóór het einde van het jaar.
+Willem, een zelfstandig rij-instructeur in Doetinchem, bouwde RijlesPlan - een AI-tool die persoonlijke lesplannen genereert voor leerlingen op basis van hun zwakke punten - met behulp van v0. In plaats van zijn prototype als "klaar" te beschouwen zodra het in tests werkte, besloot Willem bewust de productielancering door te zetten vóór het einde van het jaar.
 
 Willem nam contact op met LaunchStudio met het doel: live gaan, echte rijscholen laten betalen en de architectuur zo inrichten dat hij flexibel kon meebewegen met nieuwe AI-modellen. Het team van Manifera regelde de authenticatie, veilige opslag van leerlinggegevens, Mollie-facturatie en een schone abstractielaag om lock-in bij één AI-provider te voorkomen.
 
 **Resultaat:** RijlesPlan lanceerde vóór de jaarwisseling met 8 rijscholen als betalende klant. Willem verzamelde direct operationele ervaring en omzet terwijl zijn concurrenten nog bezig waren met het oppoetsen van demo's.
 
 > *"Ik had genoeg gelezen over oprichters die maandenlang 'bijna lanceerden'. Door vóór het nieuwe jaar live te gaan, leerde ik al van echte rijscholen terwijl anderen nog aan hun demo sleutelden."*
-> — **Willem Kuiper, Oprichter, RijlesPlan (Doetinchem)**
+> - **Willem Kuiper, Oprichter, RijlesPlan (Doetinchem)**
 
-**Kosten & Doorlooptijd:** € 2.600 (Launch & Grow Pakket, prioriteit) — live in 12 werkdagen.
+**Kosten & Doorlooptijd:** € 2.600 (Launch & Grow Pakket, prioriteit) - live in 12 werkdagen.
 
 ---
 
@@ -145,7 +145,7 @@ Zie de voorspellingen als richtingaanwijzers. Het advies voor de voorbereiding (
 Nee. Beveiliging, betalingsverwerking en betrouwbare hosting zijn essentieel voor elk succesvol SaaS-bedrijf, ongeacht toekomstige AI-trends.
 
 ### Welke van de 5 voorspellingen is het meest urgent voor oprichters?
-Voorspelling 5 — dat oprichters die daadwerkelijk lanceren winnen van degenen die blijven poetsen. Het vereist alleen de beslissing om te lanceren wat er nu staat.
+Voorspelling 5 - dat oprichters die daadwerkelijk lanceren winnen van degenen die blijven poetsen. Het vereist alleen de beslissing om te lanceren wat er nu staat.
 
 ### Waar komt Manifera's visie op deze voorspellingen vandaan?
 Uit de dagelijkse praktijk over 160+ opgeleverde software- en AI-projecten voor startups en enterprise-klanten zoals Vodafone en TNO.

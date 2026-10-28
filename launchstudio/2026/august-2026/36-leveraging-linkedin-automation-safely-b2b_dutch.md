@@ -62,7 +62,7 @@ Mocht een avatar-account onverhoopt toch worden geblokkeerd, dan maakt u simpelw
 
 ## De opbouw van het geautomatiseerde bericht
 
-Geautomatiseerde berichten mogen nooit direct verkoperig zijn. Stuur in het initiële connectieverzoek geen lange pitch — dit schrikt direct af en leidt tot meldingen wegens ongewenste berichten.
+Geautomatiseerde berichten mogen nooit direct verkoperig zijn. Stuur in het initiële connectieverzoek geen lange pitch - dit schrikt direct af en leidt tot meldingen wegens ongewenste berichten.
 
 Verstuur een connectieverzoek zonder tekst, of met een korte, gepersonaliseerde observatie: *"Beste Jan, ik zag dat jullie het engineeringteam bij Acme Corp uitbreiden. Ik kom graag met je in contact."*
 
@@ -98,7 +98,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het team implementeerde wille
 
 **Resultaat:** Het accountblokkade-percentage daalde naar 0%, wat zorgde voor een constante en betrouwbare stroom van salesleads.
 
-**Kosten & tijdlijn:** €1.200 (Scraper Optimization Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €1.200 (Scraper Optimization Pakket) - productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 

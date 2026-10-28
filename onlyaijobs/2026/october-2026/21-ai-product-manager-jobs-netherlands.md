@@ -35,11 +35,11 @@ Content Format: Career Guide
 }
 </script>
 
-A traditional product manager decides what to build and why. An AI Product Manager has to do that while also understanding what a model can and cannot reliably do — a distinction that matters enormously in practice but rarely gets clearly defined in a job posting.
+A traditional product manager decides what to build and why. An AI Product Manager has to do that while also understanding what a model can and cannot reliably do - a distinction that matters enormously in practice but rarely gets clearly defined in a job posting.
 
 ## What Separates This Role From Traditional Product Management
 
-**Comfort with probabilistic behavior.** A traditional feature either works or doesn't. A model-driven feature works "most of the time, within a confidence range" — and an AI Product Manager has to make roadmap and UX decisions that account for that uncertainty rather than assuming deterministic behavior.
+**Comfort with probabilistic behavior.** A traditional feature either works or doesn't. A model-driven feature works "most of the time, within a confidence range" - and an AI Product Manager has to make roadmap and UX decisions that account for that uncertainty rather than assuming deterministic behavior.
 
 **Enough technical literacy to catch a bad plan early.** You don't need to train models yourself, but you need enough understanding to recognise when an engineering team's proposed approach won't actually solve the product problem, or when a demo's performance won't generalise to real users.
 
@@ -51,7 +51,7 @@ Because the role is new, some companies hire a traditional product manager and e
 
 ## A Deeper Look at the Probabilistic-Thinking Requirement
 
-Traditional product management operates on a largely binary mental model: a feature works, or it has a bug. AI product management requires holding a fundamentally different mental model in mind at all times — a feature works within a distribution, with a known failure rate that has to be actively managed rather than eliminated. This shows up concretely in decisions like: what confidence threshold triggers a fallback experience, how to communicate an 85%-accurate feature to users without either overselling or undermining trust, and when a model's edge-case failure rate is acceptable to ship versus a blocker.
+Traditional product management operates on a largely binary mental model: a feature works, or it has a bug. AI product management requires holding a fundamentally different mental model in mind at all times - a feature works within a distribution, with a known failure rate that has to be actively managed rather than eliminated. This shows up concretely in decisions like: what confidence threshold triggers a fallback experience, how to communicate an 85%-accurate feature to users without either overselling or undermining trust, and when a model's edge-case failure rate is acceptable to ship versus a blocker.
 
 ## Comparing Traditional PM Skills to AI-Specific PM Skills
 
@@ -64,7 +64,7 @@ Traditional product management operates on a largely binary mental model: a feat
 
 ## Why This Role Will Likely Keep Evolving Rather Than Settle Quickly
 
-Because the underlying AI capabilities themselves are moving quickly — what a model can reliably do changes meaningfully year over year — the AI Product Manager role is unlikely to settle into a single stable definition the way, say, mobile product management eventually did. Candidates entering this field should expect to keep redefining their own skill set alongside the technology, rather than assuming the role they're hired into today will look the same in three years.
+Because the underlying AI capabilities themselves are moving quickly - what a model can reliably do changes meaningfully year over year - the AI Product Manager role is unlikely to settle into a single stable definition the way, say, mobile product management eventually did. Candidates entering this field should expect to keep redefining their own skill set alongside the technology, rather than assuming the role they're hired into today will look the same in three years.
 
 ## The Specific Decisions an AI Product Manager Makes That Others Don't
 
@@ -72,9 +72,9 @@ Abstract descriptions of this role tend to obscure what actually distinguishes i
 
 The first is threshold setting. A model produces a confidence score; someone must decide what confidence level triggers which product behaviour. Set the threshold too high and the feature rarely activates, making it useless. Set it too low and users encounter confident-sounding errors that erode trust in the entire product. This decision cannot be delegated purely to engineering, because it depends on judgements about user tolerance and business risk that engineering has no privileged access to, and it cannot be delegated to design, because it requires understanding what the confidence score actually represents statistically.
 
-The second is fallback design. Every model-driven feature will sometimes produce a low-confidence or clearly wrong output, and the product must do something sensible in that case. Designing this fallback path well — deciding whether to hide the feature, show a degraded version, ask the user for clarification, or hand off to a human — is a product decision with substantial consequences for perceived quality, and it is frequently neglected because it is invisible when things work well.
+The second is fallback design. Every model-driven feature will sometimes produce a low-confidence or clearly wrong output, and the product must do something sensible in that case. Designing this fallback path well - deciding whether to hide the feature, show a degraded version, ask the user for clarification, or hand off to a human - is a product decision with substantial consequences for perceived quality, and it is frequently neglected because it is invisible when things work well.
 
-The third is scope negotiation under genuine uncertainty. When engineering says a capability might be achievable but cannot promise it, a traditional product manager's instinct to demand a commitment produces either false confidence or paralysis. The AI-specific skill is structuring the work so that a genuine answer emerges early and cheaply — funding a bounded investigation with a clear decision point rather than committing to a full build on an unresolved technical question.
+The third is scope negotiation under genuine uncertainty. When engineering says a capability might be achievable but cannot promise it, a traditional product manager's instinct to demand a commitment produces either false confidence or paralysis. The AI-specific skill is structuring the work so that a genuine answer emerges early and cheaply - funding a bounded investigation with a clear decision point rather than committing to a full build on an unresolved technical question.
 
 The fourth, increasingly, is deciding what the product should disclose to users about the AI's involvement and limitations. This sits at the intersection of user experience, trust and, in some domains, regulatory obligation, and it is a decision very few other roles in an organisation are positioned to make well.
 
@@ -102,9 +102,9 @@ A third, more subtle signal is how the organisation talks about model errors. An
 
 Because candidates arrive at this role from two quite different directions, the practical question of how to build credibility differs substantially depending on which direction you are coming from.
 
-Product managers moving toward AI product work benefit most from building enough technical literacy to participate credibly in technical discussions rather than merely receiving conclusions from them. This does not require learning to train models, but it does require understanding what a confusion matrix communicates, why a model that performs well overall may perform poorly for a specific user segment, and what distinguishes a model that will generalise from one that has memorised its training data. Candidates who can demonstrate this literacy — ideally by describing a specific past situation where it changed a decision they made — differentiate themselves sharply from product managers whose AI exposure is limited to having shipped a feature that happened to involve a model built entirely by someone else.
+Product managers moving toward AI product work benefit most from building enough technical literacy to participate credibly in technical discussions rather than merely receiving conclusions from them. This does not require learning to train models, but it does require understanding what a confusion matrix communicates, why a model that performs well overall may perform poorly for a specific user segment, and what distinguishes a model that will generalise from one that has memorised its training data. Candidates who can demonstrate this literacy - ideally by describing a specific past situation where it changed a decision they made - differentiate themselves sharply from product managers whose AI exposure is limited to having shipped a feature that happened to involve a model built entirely by someone else.
 
-Technical practitioners moving toward product work face the mirror-image challenge: demonstrating that they can reason about user needs and business trade-offs rather than optimising technical metrics in isolation. The most convincing evidence here is usually a concrete example of having argued against a technically interesting approach because it did not serve the user or the business well — a story that demonstrates the judgement shift that distinguishes a product thinker from an engineer with product interest.
+Technical practitioners moving toward product work face the mirror-image challenge: demonstrating that they can reason about user needs and business trade-offs rather than optimising technical metrics in isolation. The most convincing evidence here is usually a concrete example of having argued against a technically interesting approach because it did not serve the user or the business well - a story that demonstrates the judgement shift that distinguishes a product thinker from an engineer with product interest.
 
 For both directions, the single most useful preparation is developing a clear, honest account of which half of the role you are stronger in and how you intend to develop the other half. Interviewers for this role expect candidates to be uneven; what distinguishes strong candidates is self-awareness about where the unevenness lies and a credible plan rather than an implausible claim to be equally strong at both.
 
@@ -120,7 +120,7 @@ For candidates who find that prospect energising rather than unsettling, the cur
 
 In the Netherlands, an AI Product Manager increasingly acts as the bridge between product ambitions and European regulation. A working knowledge of the following frameworks is fast becoming an expected part of the role:
 
-- **EU Artificial Intelligence Act.** The AI Act distinguishes between providers and deployers of AI systems and sets obligations based on risk level. Product managers need to know whether their product could fall into a high-risk category — for example AI used in recruitment, credit scoring or access to essential services — because that determines documentation, human oversight and conformity requirements. Since February 2025, the Act also requires organisations to take measures for sufficient **AI literacy** among staff who work with AI systems.
+- **EU Artificial Intelligence Act.** The AI Act distinguishes between providers and deployers of AI systems and sets obligations based on risk level. Product managers need to know whether their product could fall into a high-risk category - for example AI used in recruitment, credit scoring or access to essential services - because that determines documentation, human oversight and conformity requirements. Since February 2025, the Act also requires organisations to take measures for sufficient **AI literacy** among staff who work with AI systems.
 - **ISO/IEC 42001.** The international standard for AI management systems gives organisations a structured way to govern AI development, and product managers are often involved in implementing its processes.
 - **NIST AI Risk Management Framework.** Although American, this framework is widely used internationally as a practical vocabulary for mapping, measuring and managing AI risks.
 - **GDPR.** Personal data in training data and product usage requires a legal basis, and automated decisions with significant effects come with specific rights for individuals.
@@ -128,7 +128,7 @@ In the Netherlands, an AI Product Manager increasingly acts as the bridge betwee
 
 ## Where AI Product Management Roles Appear in the Dutch Market
 
-Companies whose core product depends on data and machine learning tend to be the first to formalise the AI Product Manager role. Dutch examples of organisations known for data-driven products include **Booking.com** in travel, **Adyen** in payments and **ING** in banking — along with many scale-ups and SaaS companies. In practice, the role also appears at insurers, logistics companies and public organisations that are building their first AI-enabled services, often under titles such as "Product Owner Data," "Product Manager Machine Learning" or "Product Lead AI."
+Companies whose core product depends on data and machine learning tend to be the first to formalise the AI Product Manager role. Dutch examples of organisations known for data-driven products include **Booking.com** in travel, **Adyen** in payments and **ING** in banking - along with many scale-ups and SaaS companies. In practice, the role also appears at insurers, logistics companies and public organisations that are building their first AI-enabled services, often under titles such as "Product Owner Data," "Product Manager Machine Learning" or "Product Lead AI."
 
 The **Netherlands AI Coalition (NL AIC)**, a public-private partnership stimulating AI development and adoption, and product management communities and meetups in Amsterdam, Utrecht and Eindhoven are useful places to meet practitioners and understand how different organisations define the role.
 
@@ -136,8 +136,8 @@ On **OnlyAIJobs**, product-oriented AI roles are grouped in the AI Product categ
 
 ## A Practical Checklist for Your First 90 Days as an AI Product Manager
 
-1. **Map every model in your product** — what it predicts, on what data, with what known limitations.
-2. **Define success metrics at two levels** — model metrics and user or business outcomes — and make the link between them explicit.
+1. **Map every model in your product** - what it predicts, on what data, with what known limitations.
+2. **Define success metrics at two levels** - model metrics and user or business outcomes - and make the link between them explicit.
 3. **Classify regulatory risk** with legal and privacy colleagues, including whether the AI Act applies to your use case.
 4. **Establish a feedback loop** for errors reported by users or operations staff.
 5. **Agree on a monitoring and retraining process** with the engineering team, including who decides when a model is taken offline.
@@ -148,11 +148,11 @@ On **OnlyAIJobs**, product-oriented AI roles are grouped in the AI Product categ
 - The AI Act, including its AI literacy obligation, ISO/IEC 42001, the NIST AI RMF and the GDPR form the role's regulatory vocabulary.
 - Data-driven companies such as Booking.com, Adyen and ING, plus scale-ups, insurers and public organisations, hire for this role under varied titles.
 - Assess whether an organisation is ready for the role before accepting it.
-- Search by category — such as the AI Product category on OnlyAIJobs — rather than by one fixed title.
+- Search by category - such as the AI Product category on OnlyAIJobs - rather than by one fixed title.
 
 ## Where to Start
 
-If you're evaluating this path, ask directly which direction the company is hiring from — product-first or technical-first — since that answer predicts what your first six months actually look like far better than the title does.
+If you're evaluating this path, ask directly which direction the company is hiring from - product-first or technical-first - since that answer predicts what your first six months actually look like far better than the title does.
 
 Browse current AI, machine learning and product-adjacent data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -162,16 +162,16 @@ Browse current AI, machine learning and product-adjacent data roles across the N
 Not necessarily deeply technical, but you need enough literacy to recognise when a proposed approach won't solve the product problem, and to understand probabilistic rather than deterministic feature behavior.
 
 ### (Scenario: ML engineer considering a move into product) Can an engineer move into AI product management without traditional PM experience?
-Yes — it's one of two common paths into the role, alongside traditional product managers developing AI literacy. Companies hire from both directions.
+Yes - it's one of two common paths into the role, alongside traditional product managers developing AI literacy. Companies hire from both directions.
 
 ### (Scenario: candidate confused by inconsistent job postings) Why do two "AI Product Manager" postings look so different?
-Because the role is new enough that companies hire from different starting points — some hire product-first and add technical literacy, others hire technical-first and add product instincts.
+Because the role is new enough that companies hire from different starting points - some hire product-first and add technical literacy, others hire technical-first and add product instincts.
 
 ### (Scenario: candidate wondering what makes this role hard) What's the hardest part of this role in practice?
 Translating genuine model uncertainty into decisions stakeholders can act on, without overpromising deterministic behavior a model can't reliably deliver.
 
 ### (Scenario: candidate preparing for an interview) What should I ask in an interview to understand which direction a company is hiring from?
-Ask directly whether they're looking for a product background with technical development, or a technical background with product development — that answer predicts your first six months better than the title.
+Ask directly whether they're looking for a product background with technical development, or a technical background with product development - that answer predicts your first six months better than the title.
 
 <script type="application/ld+json">
 {
@@ -179,8 +179,8 @@ Ask directly whether they're looking for a product background with technical dev
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Do I need to be technical to become an AI Product Manager?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily deeply technical, but enough literacy to recognise when a proposed approach won't solve the product problem."}},
-    {"@type": "Question", "name": "Can an engineer move into AI product management without traditional PM experience?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it's one of two common paths into the role, alongside traditional product managers developing AI literacy."}},
-    {"@type": "Question", "name": "Why do two \"AI Product Manager\" postings look so different?", "acceptedAnswer": {"@type": "Answer", "text": "The role is new enough that companies hire from different starting points — product-first or technical-first."}},
+    {"@type": "Question", "name": "Can an engineer move into AI product management without traditional PM experience?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it's one of two common paths into the role, alongside traditional product managers developing AI literacy."}},
+    {"@type": "Question", "name": "Why do two \"AI Product Manager\" postings look so different?", "acceptedAnswer": {"@type": "Answer", "text": "The role is new enough that companies hire from different starting points - product-first or technical-first."}},
     {"@type": "Question", "name": "What's the hardest part of this role in practice?", "acceptedAnswer": {"@type": "Answer", "text": "Translating genuine model uncertainty into decisions stakeholders can act on, without overpromising."}},
     {"@type": "Question", "name": "What should I ask in an interview to understand which direction a company is hiring from?", "acceptedAnswer": {"@type": "Answer", "text": "Ask directly whether they're looking for a product background with technical development, or vice versa."}}
   ]

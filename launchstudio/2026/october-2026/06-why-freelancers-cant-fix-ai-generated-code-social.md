@@ -1,4 +1,4 @@
-🔥 Stefan built a prototype using **Lovable** — stefan, a gym owner in antwerp (belgium), built a membership management app using **lovable**, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Stefan built a prototype using **Lovable** - stefan, a gym owner in antwerp (belgium), built a membership management app using **lovable**, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Stefan's application achieved production readiness: Stefan's gym now runs on his original AI-designed app. Member satisfaction is higher than with the freelancer's rewrite. He continues to add features using Lovable. The freelancer spent three months building something worse than what I built in two evenings. LaunchStudio understood that my prototype was the product. (€1,400 (Launch Ready package) — completed in 5 business days. Stefan's total cost with the freelancer had been €8,500 for a worse result.). 🚀
+Stefan's application achieved production readiness: Stefan's gym now runs on his original AI-designed app. Member satisfaction is higher than with the freelancer's rewrite. He continues to add features using Lovable. The freelancer spent three months building something worse than what I built in two evenings. LaunchStudio understood that my prototype was the product. (€1,400 (Launch Ready package) - completed in 5 business days. Stefan's total cost with the freelancer had been €8,500 for a worse result.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/why-freelancers-cant-fix-ai-generated-code
 

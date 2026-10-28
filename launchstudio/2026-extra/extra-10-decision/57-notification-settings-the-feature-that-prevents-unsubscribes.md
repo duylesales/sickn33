@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Notifications are the only part of your product that reaches into someone's life uninvited, and they are almost always specified in a single line: "email the user when something happens." That line, implemented literally, produces a product that sends four emails when a team of four adds a comment each, and a customer who reaches for the unsubscribe link at the bottom rather than hunting for a settings page they have no reason to believe exists.
 
-What makes this expensive is what an unsubscribe actually does in most implementations. It does not reduce the noise to a comfortable level; it removes you from that person's inbox permanently, including the messages that matter — a payment failure, an expiring card, a security alert. You have not lost a notification channel. You have lost the ability to tell a paying customer that their subscription is about to lapse.
+What makes this expensive is what an unsubscribe actually does in most implementations. It does not reduce the noise to a comfortable level; it removes you from that person's inbox permanently, including the messages that matter - a payment failure, an expiring card, a security alert. You have not lost a notification channel. You have lost the ability to tell a paying customer that their subscription is about to lapse.
 
 ## The Three Categories, and Why the Distinction Is Load-Bearing
 
@@ -30,17 +30,17 @@ Every message your product sends falls into one of three groups, and treating th
 
 **Critical.** Payment failed, password changed, someone logged in from a new device, your export is ready, your subscription ends tomorrow. These must always arrive, are not subject to preferences beyond the choice of channel, and should never carry a marketing unsubscribe link that suppresses them.
 
-**Activity.** Someone commented, a task was assigned to you, a document was shared, a booking came in. This is where volume comes from and where control belongs — per type, with a digest option, and with an off switch that customers can find.
+**Activity.** Someone commented, a task was assigned to you, a document was shared, a booking came in. This is where volume comes from and where control belongs - per type, with a digest option, and with an off switch that customers can find.
 
 **Promotional.** New features, tips, company news. Requires consent, requires a working unsubscribe, and should be sent through a separate stream so a complaint here does not degrade delivery of the critical category.
 
-The technical consequence is that unsubscribing must be scoped. A single boolean on the user record — `email_notifications: false` — is the implementation almost every prototype produces, and it silences all three categories at once. The correct structure is separate preferences per category, with the critical category not switchable off by an unsubscribe link at all.
+The technical consequence is that unsubscribing must be scoped. A single boolean on the user record - `email_notifications: false` - is the implementation almost every prototype produces, and it silences all three categories at once. The correct structure is separate preferences per category, with the critical category not switchable off by an unsubscribe link at all.
 
 ## Volume Is the Problem, Not Relevance
 
 Founders debug notification complaints by trying to make each message more useful. The actual complaint is nearly always about frequency.
 
-Three mechanisms fix most of it. **Batching**: instead of one email per event, collect events over a window — fifteen minutes for immediate contexts, or once daily — and send one message summarising them. A four-person team producing eleven comments in an afternoon generates one email rather than eleven.
+Three mechanisms fix most of it. **Batching**: instead of one email per event, collect events over a window - fifteen minutes for immediate contexts, or once daily - and send one message summarising them. A four-person team producing eleven comments in an afternoon generates one email rather than eleven.
 
 **Suppression of self-caused events**: never notify someone about something they did. This sounds obvious and is one of the most common defects in generated code, because the event fires without checking who triggered it against who is subscribed. Receiving an email telling you that you commented is the fastest way to teach a customer that your notifications are not worth reading.
 
@@ -54,17 +54,17 @@ Customers should be able to find and understand their options in under thirty se
 
 A single "email notifications" toggle is too coarse; it forces an all-or-nothing decision that most people resolve by choosing nothing. A matrix of twenty-eight checkboxes across four channels is too fine; nobody configures it, and it signals that the defaults were never considered.
 
-The workable shape is one row per notification type — five to eight of them, named in the customer's language — with a small set of options: immediately, daily digest, or off. Channels come second: for most products, email is the whole story, and adding in-app, push, and Slack columns before anyone has asked is complexity you will maintain forever.
+The workable shape is one row per notification type - five to eight of them, named in the customer's language - with a small set of options: immediately, daily digest, or off. Channels come second: for most products, email is the whole story, and adding in-app, push, and Slack columns before anyone has asked is complexity you will maintain forever.
 
-Two details matter more than the layout. Show what the setting means concretely — "when a client comments on a project" rather than "comment_created." And show a sample or a count: "you received 14 of these last week" turns an abstract preference into an informed decision, and is the single most effective thing you can put on that screen.
+Two details matter more than the layout. Show what the setting means concretely - "when a client comments on a project" rather than "comment_created." And show a sample or a count: "you received 14 of these last week" turns an abstract preference into an informed decision, and is the single most effective thing you can put on that screen.
 
-Then reach the screen from where the annoyance happens. A "manage what you receive" link in every activity email, going directly to the relevant setting, captures people at the exact moment they want to change it — which is precisely when they would otherwise click unsubscribe.
+Then reach the screen from where the annoyance happens. A "manage what you receive" link in every activity email, going directly to the relevant setting, captures people at the exact moment they want to change it - which is precisely when they would otherwise click unsubscribe.
 
 ## Defaults Are the Real Decision
 
 Almost nobody changes settings. Whatever you ship as the default is what the overwhelming majority of your customers will live with, which means the default is the design and the settings screen is the escape hatch.
 
-Two workable philosophies. Start quiet — only critical messages plus the one activity type most likely to be genuinely useful — and let customers turn more on when they discover they want it. Or start with a daily digest for all activity, which gives visibility without volume, and let people move individual types to immediate.
+Two workable philosophies. Start quiet - only critical messages plus the one activity type most likely to be genuinely useful - and let customers turn more on when they discover they want it. Or start with a daily digest for all activity, which gives visibility without volume, and let people move individual types to immediate.
 
 Starting loud, with everything immediate, is the common default in generated products and the worst of the three. It maximises the chance that a customer's first week includes a day of twenty emails, and the response to that is an unsubscribe, not a visit to settings.
 
@@ -80,7 +80,7 @@ Preferences must be honoured everywhere, including in any third-party tool you h
 
 Unsubscribe must work immediately and without requiring a login. A link that leads to a sign-in page is not a functioning unsubscribe, and treating it as one causes complaints that damage your sending reputation.
 
-And preference changes should be recorded with a timestamp. If someone later claims they opted out and kept receiving mail, the record is what resolves it — and it costs nothing to keep.
+And preference changes should be recorded with a timestamp. If someone later claims they opted out and kept receiving mail, the record is what resolves it - and it costs nothing to keep.
 
 ## Real example
 
@@ -88,14 +88,14 @@ And preference changes should be recorded with a timestamp. If someone later cla
 
 Marloes Hendriks launched Projectlijn, a client-collaboration tool for architecture practices, built in Bolt. Notifications were implemented exactly as specified: an email whenever anything happened on a project.
 
-A five-person practice adopted it, uploaded drawings, and left comments through one working afternoon. Each member received nineteen emails, including notifications about their own comments and four separate messages for four files uploaded in the same batch. By the following morning three of the five had clicked unsubscribe — a single flag that also suppressed payment and account emails.
+A five-person practice adopted it, uploaded drawings, and left comments through one working afternoon. Each member received nineteen emails, including notifications about their own comments and four separate messages for four files uploaded in the same batch. By the following morning three of the five had clicked unsubscribe - a single flag that also suppressed payment and account emails.
 
 The consequence surfaced six weeks later: the practice's card expired, the failure notice was suppressed for the account owner who had unsubscribed, the subscription lapsed, and the first anyone knew was a support email asking why the product had stopped working.
 
 **Result:** notification categories separated with unsubscribes scoped to activity only, self-caused events suppressed, a fifteen-minute batching window introduced, and defaults changed to a daily digest. Email volume per active account fell by roughly 80%, unsubscribe rate fell to near zero, and no further billing notices were silently suppressed.
 
 > "One checkbox in my database turned a noise complaint into a cancelled subscription. Those two things should never have been the same setting."
-> — **Marloes Hendriks, Founder, Projectlijn**
+> - **Marloes Hendriks, Founder, Projectlijn**
 
 **Cost & Timeline:** notification system and preference centre rebuilt in 3 business days.
 
@@ -111,7 +111,7 @@ Either critical-only plus one genuinely useful activity type, or a daily digest 
 
 ### Is batching notifications worth building before launch?
 
-If your product generates multiple events in short bursts — comments, uploads, team activity — yes. Retrofitting batching later requires event accumulation and scheduled sending that immediate-send implementations do not have.
+If your product generates multiple events in short bursts - comments, uploads, team activity - yes. Retrofitting batching later requires event accumulation and scheduled sending that immediate-send implementations do not have.
 
 ### How granular should notification settings be?
 

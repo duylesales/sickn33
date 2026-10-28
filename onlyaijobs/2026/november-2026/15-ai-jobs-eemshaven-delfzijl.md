@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-On the Groningen coast, where the Eems estuary meets the Wadden Sea, two ports tell the story of how the Netherlands' energy and digital economy is changing. Eemshaven, a relatively young port, has become a landing point for power cables from Norway and Denmark and for offshore wind, and it hosts one of the largest data centre campuses in Europe. A few kilometres south-east, Delfzijl's chemical park produces salt-based chemicals, high-performance fibres and other materials while working on greener production. For data professionals, this remote-looking corner of the country offers work in some of the most critical infrastructure in Europe — and demand that is largely invisible to anyone searching from the Randstad.
+On the Groningen coast, where the Eems estuary meets the Wadden Sea, two ports tell the story of how the Netherlands' energy and digital economy is changing. Eemshaven, a relatively young port, has become a landing point for power cables from Norway and Denmark and for offshore wind, and it hosts one of the largest data centre campuses in Europe. A few kilometres south-east, Delfzijl's chemical park produces salt-based chemicals, high-performance fibres and other materials while working on greener production. For data professionals, this remote-looking corner of the country offers work in some of the most critical infrastructure in Europe - and demand that is largely invisible to anyone searching from the Randstad.
 
 ## Why the Groningen Coast Became Critical Infrastructure
 
@@ -75,7 +75,7 @@ At the same time, the chemical industry in Delfzijl, historically built on local
 
 The growth of AI has made data centres central to energy policy. Large data centres consume significant amounts of electricity, and their arrival in the Netherlands has been politically debated, particularly in relation to grid capacity and the use of renewable energy. For engineers working at or with data centres, this creates concrete optimisation problems: reducing cooling energy, shifting flexible workloads to times with abundant renewable supply, predicting capacity needs and making use of residual heat where possible.
 
-European regulation has added transparency requirements. Under the recast **Energy Efficiency Directive** and its implementing rules, operators of larger data centres must report energy performance and sustainability indicators to a European database. That turns data centre efficiency into a measured, reported and compared metric — and increases demand for people who can collect and analyse the underlying data reliably.
+European regulation has added transparency requirements. Under the recast **Energy Efficiency Directive** and its implementing rules, operators of larger data centres must report energy performance and sustainability indicators to a European database. That turns data centre efficiency into a measured, reported and compared metric - and increases demand for people who can collect and analyse the underlying data reliably.
 
 ## Chemical Industry in Transition
 
@@ -95,7 +95,7 @@ Data-driven process control helps manage this variability. Soft sensors estimate
 
 **Energy Efficiency Directive.** Introduces reporting obligations for larger data centres, as described above.
 
-**GDPR.** Applies to damage claims, reinforcement programmes and any processing of residents' data — which in Groningen involves sensitive situations for many households.
+**GDPR.** Applies to damage claims, reinforcement programmes and any processing of residents' data - which in Groningen involves sensitive situations for many households.
 
 **EU Artificial Intelligence Act.** AI systems used as safety components in the management of critical infrastructure, including electricity supply, can be classified as high-risk.
 
@@ -111,7 +111,7 @@ People who work on these problems often describe it as meaningful work: the goal
 
 A data centre operator wants to reduce cooling energy. Historical sensor data covers temperatures, fan speeds, pump speeds, outside weather and IT load. A model is trained to recommend setpoints that keep equipment within safe temperature limits while using less energy.
 
-In simulations, the model saves significant energy. In practice, operators are cautious: a mistake could cause equipment to overheat. The team introduces the model in advisory mode first, with strict safety constraints and automatic fallback to standard control. Over months, operators gain confidence as recommendations prove safe, and more control is delegated. The approach — advise first, constrain carefully, earn trust, then automate — is typical for AI in critical infrastructure.
+In simulations, the model saves significant energy. In practice, operators are cautious: a mistake could cause equipment to overheat. The team introduces the model in advisory mode first, with strict safety constraints and automatic fallback to standard control. Over months, operators gain confidence as recommendations prove safe, and more control is delegated. The approach - advise first, constrain carefully, earn trust, then automate - is typical for AI in critical infrastructure.
 
 ## A Common Misconception About Remote Industrial Regions
 
@@ -162,7 +162,7 @@ Energy transition and digital infrastructure are long-term trends, and experienc
 
 ## Where to Start
 
-If you want to work on the infrastructure that powers AI itself — or on industry transitioning to renewable energy — the Groningen coast offers challenging and future-proof data work.
+If you want to work on the infrastructure that powers AI itself - or on industry transitioning to renewable energy - the Groningen coast offers challenging and future-proof data work.
 
 Browse current AI, machine learning and data jobs in and around Eemshaven, Delfzijl and Groningen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -178,7 +178,7 @@ By optimising cooling setpoints, forecasting capacity and shifting flexible work
 Process optimisation, soft sensors, energy efficiency, emissions reduction and predictive maintenance for continuous processes.
 
 ### (Scenario: candidate who prefers remote work) Can infrastructure data roles be done remotely?
-Partly — analysis can often be done in a hybrid way, but regular on-site presence is common in critical infrastructure.
+Partly - analysis can often be done in a hybrid way, but regular on-site presence is common in critical infrastructure.
 
 ### (Scenario: candidate living in Groningen) How do people commute from Groningen to Eemshaven and Delfzijl?
 Delfzijl has a train connection to Groningen; Eemshaven is mainly reached by car or bus.
@@ -191,7 +191,7 @@ Delfzijl has a train connection to Groningen; Eemshaven is mainly reached by car
     {"@type": "Question", "name": "What kind of technology work exists on the Groningen coast today?", "acceptedAnswer": {"@type": "Answer", "text": "Data centre operations, interconnectors, offshore wind integration, chemical process optimisation and port operations."}},
     {"@type": "Question", "name": "How does AI help data centres reduce energy use?", "acceptedAnswer": {"@type": "Answer", "text": "By optimising cooling, forecasting capacity and shifting workloads within strict safety constraints."}},
     {"@type": "Question", "name": "What data work exists in the Delfzijl chemical park?", "acceptedAnswer": {"@type": "Answer", "text": "Process optimisation, soft sensors, energy efficiency, emissions reduction and predictive maintenance."}},
-    {"@type": "Question", "name": "Can infrastructure data roles be done remotely?", "acceptedAnswer": {"@type": "Answer", "text": "Partly — hybrid analysis is common, but regular on-site presence is often needed."}},
+    {"@type": "Question", "name": "Can infrastructure data roles be done remotely?", "acceptedAnswer": {"@type": "Answer", "text": "Partly - hybrid analysis is common, but regular on-site presence is often needed."}},
     {"@type": "Question", "name": "How do people commute from Groningen to Eemshaven and Delfzijl?", "acceptedAnswer": {"@type": "Answer", "text": "Delfzijl has a train connection; Eemshaven is mainly reached by car or bus."}}
   ]
 }

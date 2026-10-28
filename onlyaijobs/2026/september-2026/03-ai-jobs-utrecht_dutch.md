@@ -23,7 +23,7 @@ Content Format: Regional Market Analysis
 
 De meeste engineers behandelen Utrecht als terugvaloptie: de plek waar je kijkt als Amsterdam te duur is en Eindhoven te ver. Die framing kost mensen geld en uren, want ze keert om wat er feitelijk waar is over de stad.
 
-Utrecht is het punt in Nederland van waaruit het grootste aantal andere plaatsen binnen een uur bereikbaar is. Voor een tweeverdienershuishouden — de situatie waarvoor de meeste engineers halverwege hun carrière daadwerkelijk optimaliseren — is dat geen terugvaloptie. Het is de oplossing.
+Utrecht is het punt in Nederland van waaruit het grootste aantal andere plaatsen binnen een uur bereikbaar is. Voor een tweeverdienershuishouden - de situatie waarvoor de meeste engineers halverwege hun carrière daadwerkelijk optimaliseren - is dat geen terugvaloptie. Het is de oplossing.
 
 ## De randvoorwaarde die niemand opschrijft
 
@@ -45,7 +45,7 @@ De Utrechtse AI-vraag leunt meer op instituties dan op consumentenplatforms.
 
 **Software en consultancy.** Bedrijven die AI-capaciteit leveren aan alle drie de bovenstaande.
 
-De rode draad is dat AI-werk in Utrecht vaak **verantwoordbaar** AI-werk is. Wil je modellen bouwen waar nooit iemand naar zal kijken, dan is dit de verkeerde stad. Wil je modellen bouwen die een audit overleven — een vaardigheid die schaars en goed betaald wordt — dan is het een ongewoon goede.
+De rode draad is dat AI-werk in Utrecht vaak **verantwoordbaar** AI-werk is. Wil je modellen bouwen waar nooit iemand naar zal kijken, dan is dit de verkeerde stad. Wil je modellen bouwen die een audit overleven - een vaardigheid die schaars en goed betaald wordt - dan is het een ongewoon goede.
 
 ## Vergelijking: optimaliseren op de verkeerde variabele
 
@@ -61,7 +61,7 @@ De rode draad is dat AI-werk in Utrecht vaak **verantwoordbaar** AI-werk is. Wil
 
 Er is een specifieke reden waarom Utrecht in 2026 een tweede blik verdient: de verschuiving in wat werkgevers in gereguleerde sectoren nodig hebben.
 
-Tien jaar lang was de schaarse vaardigheid het bouwen van modellen. Dat wordt iets anders — kunnen uitleggen, documenteren, monitoren en verdedigen van een model tegenover iemand met wettelijke bevoegdheid om het uit te zetten. Zorg, financiën, verzekeringen en openbaar bestuur hebben nu allemaal engineers nodig die beide helften kunnen.
+Tien jaar lang was de schaarse vaardigheid het bouwen van modellen. Dat wordt iets anders - kunnen uitleggen, documenteren, monitoren en verdedigen van een model tegenover iemand met wettelijke bevoegdheid om het uit te zetten. Zorg, financiën, verzekeringen en openbaar bestuur hebben nu allemaal engineers nodig die beide helften kunnen.
 
 Zeer weinig engineers hebben die combinatie bewust opgebouwd. Vrijwel allemaal zitten ze in steden waar gereguleerde werkgevers clusteren. Dat is een arbitrage, en die heeft een houdbaarheidsdatum: over drie jaar is dit een standaardverwachting in plaats van een onderscheidend kenmerk, en is de premie verdwenen.
 
@@ -69,7 +69,7 @@ Zeer weinig engineers hebben die combinatie bewust opgebouwd. Vrijwel allemaal z
 
 Drie ontwerpkeuzes maken OnlyAIJobs geschikt voor hoe Utrechtse engineers daadwerkelijk beslissen.
 
-**Elke vacature draagt het exacte adres.** Niet "Utrecht" maar het gebouw — het verschil tussen tien minuten fietsen vanuit Overvecht en een bus naar een bedrijventerrein aan de ring.
+**Elke vacature draagt het exacte adres.** Niet "Utrecht" maar het gebouw - het verschil tussen tien minuten fietsen vanuit Overvecht en een bus naar een bedrijventerrein aan de ring.
 
 **Afstand wordt berekend vanaf je woonplaats**, zodat rollen in Nieuwegein, Houten, Zeist, Amersfoort en Woerden in dezelfde weergave verschijnen als Utrecht zelf, in plaats van vijf aparte zoekopdrachten te vereisen.
 
@@ -77,17 +77,17 @@ Drie ontwerpkeuzes maken OnlyAIJobs geschikt voor hoe Utrechtse engineers daadwe
 
 ## Waar te beginnen
 
-Teken eerst je straal. Vergelijk aanbiedingen vervolgens op totale uren, niet op brutosalaris — en deel je een huishouden met iemand wiens baan ook aan een locatie vastzit, vergelijk dan het paar in plaats van de positie.
+Teken eerst je straal. Vergelijk aanbiedingen vervolgens op totale uren, niet op brutosalaris - en deel je een huishouden met iemand wiens baan ook aan een locatie vastzit, vergelijk dan het paar in plaats van de positie.
 
 Bekijk actuele AI- en datarollen in en rond Utrecht op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Veelgestelde vragen
 
 ### (Scenario: engineer in een tweeverdienershuishouden) Waarom is Utrecht beter voor stellen dan Amsterdam of Eindhoven?
-Omdat Utrecht bereikbaarheid maximaliseert in plaats van lokale dichtheid. Het is het punt van waaruit het grootste aantal Nederlandse steden binnen ongeveer een uur ligt, wat betekent dat twee mensen met banen op verschillende plekken allebei een draaglijke reis kunnen hebben vanuit één woning. Vacaturebanken modelleren één persoon en één adres, dus dit voordeel verschijnt nooit in een zoekresultaat — het moet bewust doordacht worden.
+Omdat Utrecht bereikbaarheid maximaliseert in plaats van lokale dichtheid. Het is het punt van waaruit het grootste aantal Nederlandse steden binnen ongeveer een uur ligt, wat betekent dat twee mensen met banen op verschillende plekken allebei een draaglijke reis kunnen hebben vanuit één woning. Vacaturebanken modelleren één persoon en één adres, dus dit voordeel verschijnt nooit in een zoekresultaat - het moet bewust doordacht worden.
 
 ### (Scenario: ML-engineer die gereguleerde sectoren overweegt) Is AI-werk in zorg, financiën en publieke sector technisch minder interessant?
-Het is anders interessant. De modellering is vaak meer beperkt, maar het omliggende engineeringwerk — dataherkomst, validatie, monitoring, reproduceerbaarheid, uitlegbaarheid — is zwaarder en consequenter dan in de meeste consumentencontexten. Engineers die er een hekel aan hebben dat hun werk wordt geauditeerd, vinden het frustrerend; engineers die willen dat hun werk over vijf jaar nog draait, vinden het meestal bevredigender.
+Het is anders interessant. De modellering is vaak meer beperkt, maar het omliggende engineeringwerk - dataherkomst, validatie, monitoring, reproduceerbaarheid, uitlegbaarheid - is zwaarder en consequenter dan in de meeste consumentencontexten. Engineers die er een hekel aan hebben dat hun werk wordt geauditeerd, vinden het frustrerend; engineers die willen dat hun werk over vijf jaar nog draait, vinden het meestal bevredigender.
 
 ### (Scenario: kandidaat die een Utrechts en een Amsterdams aanbod vergelijkt) Hoe vergelijk ik twee aanbiedingen in verschillende steden?
 Zet ze om naar dezelfde eenheden. Neem het brutosalaris, trek realistische woonlasten voor de locatie af, trek de jaarlijkse reiskosten af, en trek vervolgens de uren af die de reis kost, gewaardeerd tegen wat een uur van je leven jou waard is. Een verschil van negentig minuten per dag is ruwweg vijfhonderd uur per jaar, wat de meeste salarisverschillen in een ander licht zet.

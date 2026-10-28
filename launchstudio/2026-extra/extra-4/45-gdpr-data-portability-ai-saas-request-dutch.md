@@ -83,9 +83,9 @@ Met de wettelijke klok van 30 dagen die al liep, realiseerde Hugo zich dat er ne
 LaunchStudio bracht elke tabel in KlantPortaal's schema in kaart die persoonlijke gegevens bevatte, bouwde een herbruikbare exportfunctie die de volledige gegevensvoetafdruk van een gebruiker compileert in een gestructureerd JSON-pakket, en voegde een interne beheerderstool toe zodat toekomstige verzoeken in minuten konden worden afgehandeld. **Resultaat:** Hugo voldeed drie dagen vóór de wettelijke deadline aan het oorspronkelijke verzoek. Elk volgend verzoek sinds die tijd heeft minder dan tien minuten gekost.
 
 > *"Ik had hier oprecht nooit over nagedacht totdat de e-mail binnenkwam. Het bouwen van de exportfunctie onder deadline-druk was stressvol op een manier die het toevoegen van een normale functie nooit is."*
-> — **Hugo Meesters, Oprichter, KlantPortaal (Hoorn)**
+> - **Hugo Meesters, Oprichter, KlantPortaal (Hoorn)**
 
-**Kosten en tijdlijn:** € 700 (datatoescheiding, gestructureerde exportfunctie, interne afhandelingstool) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 700 (datatoescheiding, gestructureerde exportfunctie, interne afhandelingstool) - voltooid in 4 werkdagen.
 
 ---
 

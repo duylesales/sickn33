@@ -1,4 +1,4 @@
-🚨 Marijke Doornbos hired a freelancer to take Planbord — production planning for seven manufacturers around Leeuwarden — to production. Terms agreed on a video call, confirmed in a four-sentence email. Two months in, he took a full-time job and replies slowed to weekly. 😳
+🚨 Marijke Doornbos hired a freelancer to take Planbord - production planning for seven manufacturers around Leeuwarden - to production. Terms agreed on a video call, confirmed in a four-sentence email. Two months in, he took a full-time job and replies slowed to weekly. 😳
 
 He wasn't acting badly. He had just registered her domain on his own account because it was faster. Here's what four sentences don't cover: 🧠
 
@@ -14,7 +14,7 @@ He wasn't acting badly. He had just registered her domain on his own account bec
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, every account we touch is in your name from the first day. 📄
 
-Her result: recovery took five weeks and two lawyers' letters, then six business days and €4,200 to move everything into her name and finish the work. Planbord went live eleven weeks late. Her estimate of the recovery cost alone: about €7,000 — against a contract that would have taken an afternoon. 🚀
+Her result: recovery took five weeks and two lawyers' letters, then six business days and €4,200 to move everything into her name and finish the work. Planbord went live eleven weeks late. Her estimate of the recovery cost alone: about €7,000 - against a contract that would have taken an afternoon. 🚀
 
 👉 Scope, IP and payment terms for a Lovable developer: https://launchstudio.eu/en/blog/lovable-developer-contract-scope-ip-and-payment-terms
 

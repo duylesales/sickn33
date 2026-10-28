@@ -2,7 +2,7 @@ A client's portfolio value is off by a few hundred euros vs. the custodian's own
 
 **The Pain Points:**
 ❌ **"We Integrate With Major Custodians":** A vague claim that hides whether it's real-time API access or an overnight batch file inherited from decades-old infrastructure.
-❌ **Silent Reconciliation Tolerance:** Discrepancies are normal — the risk is a platform that lets advisors act on unreconciled data with no flag and no block.
+❌ **Silent Reconciliation Tolerance:** Discrepancies are normal - the risk is a platform that lets advisors act on unreconciled data with no flag and no block.
 ❌ **Summary-Letter SOC 2:** A vendor sharing only the auditor's opinion, not the full report with exceptions, isn't giving you what a fiduciary decision requires.
 
 **The Manifera Solution:**

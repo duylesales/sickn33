@@ -20,11 +20,11 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-A founder at Kennispark, the innovation campus next to the University of Twente, once told us she'd built her entire booking platform in ten days using Lovable, and was ready to onboard her first paying pilot customer the following Monday. She hadn't spoken to an actual software developer once. That's not unusual in Enschede — a city where student spin-offs, high-tech scale-ups, and a genuinely dense innovation ecosystem mean AI tools get adopted early and confidently. The problem is that confidence and production-readiness are two very different things, and most founders don't learn the gap exists until it costs them a customer.
+A founder at Kennispark, the innovation campus next to the University of Twente, once told us she'd built her entire booking platform in ten days using Lovable, and was ready to onboard her first paying pilot customer the following Monday. She hadn't spoken to an actual software developer once. That's not unusual in Enschede - a city where student spin-offs, high-tech scale-ups, and a genuinely dense innovation ecosystem mean AI tools get adopted early and confidently. The problem is that confidence and production-readiness are two very different things, and most founders don't learn the gap exists until it costs them a customer.
 
 ## What AI software developers actually check that founders skip
 
-When AI software developers look at a prototype built with Lovable, Bolt, Cursor, or v0, they're not evaluating whether it works — clearly it does, since the founder is using it right now. They're checking whether it survives contact with someone who isn't the founder: a paying customer who forgets their password, a curious visitor who pokes at the browser's network tab, or a spike of signups after a LinkedIn post goes semi-viral.
+When AI software developers look at a prototype built with Lovable, Bolt, Cursor, or v0, they're not evaluating whether it works - clearly it does, since the founder is using it right now. They're checking whether it survives contact with someone who isn't the founder: a paying customer who forgets their password, a curious visitor who pokes at the browser's network tab, or a spike of signups after a LinkedIn post goes semi-viral.
 
 Enschede's tech scene, anchored by University of Twente spinouts and the broader Overijssel innovation corridor, produces a lot of technically curious founders. That's a double-edged sword. They're comfortable enough with AI tools to build fast, but often not deep enough into backend engineering to notice what's missing: row-level security on the database, rate limiting on public endpoints, proper environment variable handling instead of hardcoded API keys, and authentication flows that don't fall apart under edge cases.
 
@@ -39,13 +39,13 @@ In practice, this pattern breaks down into a short, recognizable list that repea
 - `.env` files or raw API keys accidentally bundled into the deployed frontend, readable by anyone who opens browser dev tools
 - No rate limiting on public-facing API routes, leaving signup forms and AI-powered features open to abuse, scraping, or an unexpectedly large bill
 
-None of this is a reflection on the founder's judgment — it's a reflection on what these tools optimize for, which is getting you to a working demo, not a secure production system. LaunchStudio is powered by Manifera, a software development company with over 11 years of production engineering experience, and our team's day-to-day work is essentially translating "it works on my screen" into "it works when a thousand strangers hit it at once."
+None of this is a reflection on the founder's judgment - it's a reflection on what these tools optimize for, which is getting you to a working demo, not a secure production system. LaunchStudio is powered by Manifera, a software development company with over 11 years of production engineering experience, and our team's day-to-day work is essentially translating "it works on my screen" into "it works when a thousand strangers hit it at once."
 
-Manifera's engineers — more than 120 of them — have shipped 160+ projects for enterprise clients like Vodafone and TNO, and the review process we run on an Enschede-built prototype isn't fundamentally different from the review we'd run on an enterprise codebase. Same checklist, same rigor, just scoped to what a founder actually needs before their first real launch. If you want to see what that looks like in practice, our [process page](https://launchstudio.eu/en/#process) walks through it step by step.
+Manifera's engineers - more than 120 of them - have shipped 160+ projects for enterprise clients like Vodafone and TNO, and the review process we run on an Enschede-built prototype isn't fundamentally different from the review we'd run on an enterprise codebase. Same checklist, same rigor, just scoped to what a founder actually needs before their first real launch. If you want to see what that looks like in practice, our [process page](https://launchstudio.eu/en/#process) walks through it step by step.
 
 ## Why this matters more in a university-adjacent city like Enschede
 
-Overijssel's tech founders skew younger and more technically literate than the national average, which means they often assume "I understand code" is the same as "I understand production security." It isn't. Reading and modifying AI-generated React components is a genuinely different skill from reasoning about authentication token expiry, database indexing under load, or PCI compliance for payment flows. This is also a city where reputations travel fast in a fairly small ecosystem — the coworking floors at Kennispark and the Saxion-adjacent startup scene mean a public security incident gets noticed by exactly the peer network a founder is hoping will refer their next customer. Manifera's team, headquartered out of Amsterdam's Herengracht 420 with engineering depth reaching all the way to our development hub in Ho Chi Minh City, exists specifically to bridge that gap — we don't touch your frontend, we make everything behind it hold up. You can see the breadth of that engineering background on [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
+Overijssel's tech founders skew younger and more technically literate than the national average, which means they often assume "I understand code" is the same as "I understand production security." It isn't. Reading and modifying AI-generated React components is a genuinely different skill from reasoning about authentication token expiry, database indexing under load, or PCI compliance for payment flows. This is also a city where reputations travel fast in a fairly small ecosystem - the coworking floors at Kennispark and the Saxion-adjacent startup scene mean a public security incident gets noticed by exactly the peer network a founder is hoping will refer their next customer. Manifera's team, headquartered out of Amsterdam's Herengracht 420 with engineering depth reaching all the way to our development hub in Ho Chi Minh City, exists specifically to bridge that gap - we don't touch your frontend, we make everything behind it hold up. You can see the breadth of that engineering background on [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
 
 ## How to Tell a Real Production Review From a Surface-Level One
 
@@ -53,38 +53,38 @@ Enschede founders coming out of Kennispark or the University of Twente's spin-of
 
 **Ask what the reviewer actually tests, not just reads.** A static code read catches obvious issues like hardcoded secrets, but it won't catch a row-level security policy that looks correct in the Supabase dashboard but fails under a specific query pattern. A real review includes actively querying the database as an unauthorized user to confirm access controls actually hold, not just that they exist on paper.
 
-**Ask for a written, itemized list of findings, not a verbal summary.** If a reviewer can't hand you a specific list of what they checked and what they found — pass or fail on each item — you have no way to verify the review was thorough, and no record to compare against once fixes are applied.
+**Ask for a written, itemized list of findings, not a verbal summary.** If a reviewer can't hand you a specific list of what they checked and what they found - pass or fail on each item - you have no way to verify the review was thorough, and no record to compare against once fixes are applied.
 
 **Ask whether the reviewer has operated production systems at scale, not just reviewed prototypes.** Reviewing AI-generated code well requires having personally been on call for a production outage at some point. Someone who has only ever reviewed prototypes, without operational experience, tends to miss the failure modes that only show up under real traffic.
 
-**Ask what happens after the review — a report, or a fix.** A report listing twelve vulnerabilities handed back to a non-technical founder isn't much more useful than no review at all. The founders who actually launch safely are the ones who get the fixes applied, not just diagnosed.
+**Ask what happens after the review - a report, or a fix.** A report listing twelve vulnerabilities handed back to a non-technical founder isn't much more useful than no review at all. The founders who actually launch safely are the ones who get the fixes applied, not just diagnosed.
 
-This is the standard we hold ourselves to on every Enschede-based review: active testing rather than passive reading, an itemized findings list, engineers who've operated production systems for enterprise clients, and — critically — the fix included, not just the diagnosis. It's the difference between a report you file away and a product you can actually launch.
+This is the standard we hold ourselves to on every Enschede-based review: active testing rather than passive reading, an itemized findings list, engineers who've operated production systems for enterprise clients, and - critically - the fix included, not just the diagnosis. It's the difference between a report you file away and a product you can actually launch.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Kennispark to Customer One
 
-Sanne Bruggeman, a University of Twente graduate, built Kenniswijzer — a peer-tutoring marketplace connecting students across Enschede's higher-ed institutions — using Lovable over a two-week sprint. The demo was genuinely impressive: clean UI, working booking flow, Stripe checkout wired up. But when LaunchStudio reviewed the codebase before her public launch, we found the Supabase database had no row-level security policies at all — any authenticated user could query and read every other user's booking history, phone number, and payment metadata simply by inspecting API calls in the browser console.
+Sanne Bruggeman, a University of Twente graduate, built Kenniswijzer - a peer-tutoring marketplace connecting students across Enschede's higher-ed institutions - using Lovable over a two-week sprint. The demo was genuinely impressive: clean UI, working booking flow, Stripe checkout wired up. But when LaunchStudio reviewed the codebase before her public launch, we found the Supabase database had no row-level security policies at all - any authenticated user could query and read every other user's booking history, phone number, and payment metadata simply by inspecting API calls in the browser console.
 
-We rebuilt the authorization layer with proper RLS policies scoped to each user's own records, added server-side validation on every write operation, and set up rate limiting on the public API routes before her official campus-wide launch. None of it touched her frontend — the app looked and felt identical to what she'd built.
+We rebuilt the authorization layer with proper RLS policies scoped to each user's own records, added server-side validation on every write operation, and set up rate limiting on the public API routes before her official campus-wide launch. None of it touched her frontend - the app looked and felt identical to what she'd built.
 
 **Result:** Kenniswijzer launched to 400 University of Twente students in its first week with zero data exposure incidents, and Sanne now uses the same Supabase backend as she expands to Saxion University students across the city.
 
-> *"I thought 'it works' meant it was ready. LaunchStudio showed me the difference between a demo and a product — and fixed it without touching a single line of my UI."*
-> — **Sanne Bruggeman, Founder, Kenniswijzer (Enschede)**
+> *"I thought 'it works' meant it was ready. LaunchStudio showed me the difference between a demo and a product - and fixed it without touching a single line of my UI."*
+> - **Sanne Bruggeman, Founder, Kenniswijzer (Enschede)**
 
-**Cost & Timeline:** €1,100 (RLS policy rebuild, API rate limiting, pre-launch security audit) — completed in 6 business days.
+**Cost & Timeline:** €1,100 (RLS policy rebuild, API rate limiting, pre-launch security audit) - completed in 6 business days.
 
 ---
 
 ## Frequently Asked Questions
 
 ### Do I need to be technical to work with LaunchStudio?
-No. Most founders we work with in Enschede and across the Netherlands are non-technical or semi-technical — that's the entire premise of LaunchStudio. You describe what you built and what it needs to do, and Manifera's engineers handle the rest.
+No. Most founders we work with in Enschede and across the Netherlands are non-technical or semi-technical - that's the entire premise of LaunchStudio. You describe what you built and what it needs to do, and Manifera's engineers handle the rest.
 
 ### What exactly do AI software developers at LaunchStudio fix?
-Typically: authentication and authorization gaps, database security policies, exposed API keys, payment integration issues, hosting and deployment configuration, and performance under real traffic. We never rebuild your frontend — we make what's behind it production-grade.
+Typically: authentication and authorization gaps, database security policies, exposed API keys, payment integration issues, hosting and deployment configuration, and performance under real traffic. We never rebuild your frontend - we make what's behind it production-grade.
 
 ### Does LaunchStudio work with founders outside Enschede?
 Yes. While we work with plenty of founders coming out of the University of Twente ecosystem, LaunchStudio serves founders across the Netherlands and Benelux from our Amsterdam office, with engineering support from Manifera's teams internationally.
@@ -104,7 +104,7 @@ Ask whether the reviewer actively tests access controls (not just reads the code
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Do I need to be technical to work with LaunchStudio?", "acceptedAnswer": { "@type": "Answer", "text": "No. Most founders we work with in Enschede and across the Netherlands are non-technical or semi-technical. You describe what you built and Manifera's engineers handle production readiness." } },
-    { "@type": "Question", "name": "What exactly do AI software developers at LaunchStudio fix?", "acceptedAnswer": { "@type": "Answer", "text": "Authentication, database security, exposed API keys, payment integration, hosting, and performance under real traffic — without rebuilding your frontend." } },
+    { "@type": "Question", "name": "What exactly do AI software developers at LaunchStudio fix?", "acceptedAnswer": { "@type": "Answer", "text": "Authentication, database security, exposed API keys, payment integration, hosting, and performance under real traffic - without rebuilding your frontend." } },
     { "@type": "Question", "name": "Does LaunchStudio work with founders outside Enschede?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio serves founders across the Netherlands and Benelux from its Amsterdam office, with engineering support from Manifera internationally." } },
     { "@type": "Question", "name": "How is LaunchStudio different from hiring a local freelancer?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is backed by Manifera, a company with 120+ engineers and 160+ delivered enterprise projects, offering fixed-scope pricing and enterprise-grade review." } },
     { "@type": "Question", "name": "How much does a launch-readiness review cost?", "acceptedAnswer": { "@type": "Answer", "text": "Projects typically range from €800 to €7,500, delivered in 1 to 3 weeks, depending on scope." } },

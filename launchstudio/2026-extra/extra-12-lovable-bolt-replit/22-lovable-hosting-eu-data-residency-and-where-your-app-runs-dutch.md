@@ -34,13 +34,13 @@ De database en haar back-ups. Objectopslag voor geüploade bestanden. De applica
 
 Per dienst drie feiten: waar de data wordt verwerkt, waar ze wordt opgeslagen, en waar de back-ups staan. Elke betrouwbare provider publiceert ze, en geen ervan kost veel tijd om te vinden.
 
-Deze lijst is nuttig buiten de vraag over datalocatie — het is het register van subverwerkers waar uw zakelijke klanten toch om zullen vragen, en het is inhoudelijk vereist door de AVG, ongeacht wie erom vraagt.
+Deze lijst is nuttig buiten de vraag over datalocatie - het is het register van subverwerkers waar uw zakelijke klanten toch om zullen vragen, en het is inhoudelijk vereist door de AVG, ongeacht wie erom vraagt.
 
 ## De Databaseregio Is Niet het Hele Antwoord
 
 Oprichters die hiernaar kijken, controleren meestal de database, zien dat die in Frankfurt of Amsterdam staat, en stoppen.
 
-Drie dingen worden vaak gemist. Back-ups kunnen naar een andere regio worden gerepliceerd dan de primaire database, wat een bewuste veerkrachtfunctie is en een vraag over datalocatie. Serverless functies draaien vaak in de regio die het dichtst bij de bezoeker ligt, tenzij vastgezet, dus uw Europese database wordt bevraagd door code die in Virginia draait. En CDN-randknooppunten houden gecachete content per definitie wereldwijd vast — wat prima is voor publieke pagina's en niet prima als er ooit een gepersonaliseerd antwoord is gecachet.
+Drie dingen worden vaak gemist. Back-ups kunnen naar een andere regio worden gerepliceerd dan de primaire database, wat een bewuste veerkrachtfunctie is en een vraag over datalocatie. Serverless functies draaien vaak in de regio die het dichtst bij de bezoeker ligt, tenzij vastgezet, dus uw Europese database wordt bevraagd door code die in Virginia draait. En CDN-randknooppunten houden gecachete content per definitie wereldwijd vast - wat prima is voor publieke pagina's en niet prima als er ooit een gepersonaliseerd antwoord is gecachet.
 
 Het punt over functies veroorzaakt ook echte vertraging: een applicatie die wereldwijd is uitgerold met een database in één regio, betekent dat elk verzoek een trage heen-en-terugreis maakt. Functies vastzetten in de regio van de database is meestal zowel het compliant antwoord als het snellere.
 
@@ -48,11 +48,11 @@ Het punt over functies veroorzaakt ook echte vertraging: een applicatie die were
 
 Het is de moeite waard precies te zijn, want oprichters denken vaak dat de regels strenger zijn dan ze zijn.
 
-Persoonsgegevens mogen de Europese Economische Ruimte verlaten, mits er een rechtmatige grondslag is voor de doorgifte — een adequaatheidsbesluit voor het land van bestemming, modelcontractbepalingen (standard contractual clauses) met aanvullende maatregelen waar nodig, of een van de smalle uitzonderingen. De meeste grote providers bieden de relevante contractvoorwaarden standaard aan.
+Persoonsgegevens mogen de Europese Economische Ruimte verlaten, mits er een rechtmatige grondslag is voor de doorgifte - een adequaatheidsbesluit voor het land van bestemming, modelcontractbepalingen (standard contractual clauses) met aanvullende maatregelen waar nodig, of een van de smalle uitzonderingen. De meeste grote providers bieden de relevante contractvoorwaarden standaard aan.
 
 Dus "onze error tracking wordt verwerkt in de Verenigde Staten onder modelcontractbepalingen, waarbij persoonsgegevens vóór verzending worden verwijderd" is een legitiem antwoord. Wat niet legitiem is, is het niet weten, en wat contracten kost is niet de doorgifte maar het onvermogen haar te beschrijven.
 
-Twee praktische posities zijn het onderscheiden waard. Een wettelijke eis om data in de EU te houden, is buiten specifieke sectoren zeldzaam. Een contractuele eis van een klant — een ziekenhuis, een gemeente, een bank — komt veel voor, en daarover wordt onderhandeld in plaats van dat ze wettelijk is vastgelegd. Weten met welke van de twee u te maken hebt, verandert wat u eraan moet doen.
+Twee praktische posities zijn het onderscheiden waard. Een wettelijke eis om data in de EU te houden, is buiten specifieke sectoren zeldzaam. Een contractuele eis van een klant - een ziekenhuis, een gemeente, een bank - komt veel voor, en daarover wordt onderhandeld in plaats van dat ze wettelijk is vastgelegd. Weten met welke van de twee u te maken hebt, verandert wat u eraan moet doen.
 
 ## Verminder Wat U Verstuurt Voordat U Verplaatst Waar U Het Naartoe Stuurt
 
@@ -72,7 +72,7 @@ Doe ze in die volgorde, en controleer na elke stap of aan de eis van de klant is
 
 ## Schrijf het Antwoord Op Voordat Erom Wordt Gevraagd
 
-Maak een pagina — een echte pagina op uw website, geen alinea in een e-mail — die beschrijft waar data wordt opgeslagen, welke subverwerkers u gebruikt, wat elk ontvangt, en welke contractuele grondslag een doorgifte buiten de EU dekt.
+Maak een pagina - een echte pagina op uw website, geen alinea in een e-mail - die beschrijft waar data wordt opgeslagen, welke subverwerkers u gebruikt, wat elk ontvangt, en welke contractuele grondslag een doorgifte buiten de EU dekt.
 
 Drie voordelen. Het verkoopgesprek wordt drastisch korter, omdat de inkoopfunctionaris het kan lezen in plaats van ernaar te vragen. Het toont een niveau van serieusheid dat de meeste kleine concurrenten niet bereiken. En het schrijven ervan dwingt de inventarisatie accuraat te zijn, en dat is het deel dat ertoe doet.
 
@@ -88,7 +88,7 @@ Datalocatie is zelden het enige wat een inkoopbeoordeling wil, en de andere punt
 
 **Wat is uw beschikbaarheidstoezegging en uw incidentproces?** Niet per se een formele SLA voor een klein product, maar een genoemd doel en een geschreven beschrijving van hoe u reageert en meldt.
 
-**Gebruikt u klantdata om modellen te trainen?** Steeds vaker de eerste vraag in plaats van de laatste, en het verwachte antwoord is nee, duidelijk gezegd, met de voorwaarden van de leverancier als onderbouwing — sommige model-API's gedragen zich op verschillende niveaus anders, dus controleer het in plaats van het aan te nemen.
+**Gebruikt u klantdata om modellen te trainen?** Steeds vaker de eerste vraag in plaats van de laatste, en het verwachte antwoord is nee, duidelijk gezegd, met de voorwaarden van de leverancier als onderbouwing - sommige model-API's gedragen zich op verschillende niveaus anders, dus controleer het in plaats van het aan te nemen.
 
 Geen van deze vereist een groot bedrijf om goed te beantwoorden. Ze vereisen dat u erover hebt nagedacht voordat erom wordt gevraagd, en dat is het hele verschil tussen een inkoopproces van twee weken en een van twee maanden.
 
@@ -98,7 +98,7 @@ De praktische stap is alle vijf de antwoorden in één intern document te zetten
 
 Voor een bestaand product kost dit doorgaans één tot twee dagen: een inventarisatie van elke dienst die klantdata raakt, met locaties voor verwerking, opslag en back-ups per dienst; serverless functies vastgezet in de regio van de database; gecachete content gecontroleerd zodat niets gepersonaliseerds op randknooppunten staat; error tracking en analytics ingesteld om persoonsgegevens te verwijderen of weg te laten; AI-functies beoordeeld op wat ze werkelijk versturen; contractuele grondslagen bevestigd voor doorgiften buiten de EER; een gepubliceerde pagina over subverwerkers en datalocatie; en een notitie in de repository zodat de lijst wordt bijgewerkt wanneer er een dienst bijkomt.
 
-LaunchStudio doet dit als onderdeel van het klaarmaken van een product voor zakelijke klanten, en het is meestal het stuk dat een contract met een groot bedrijf of de publieke sector deblokkeert. Achter het werk staat Manifera — elf jaar, klanten als Vodafone, TNO en CFLW, met Europese activiteiten vanaf de Herengracht 420 in Amsterdam en ontwikkeling in Singapore en Ho Chi Minh-stad.
+LaunchStudio doet dit als onderdeel van het klaarmaken van een product voor zakelijke klanten, en het is meestal het stuk dat een contract met een groot bedrijf of de publieke sector deblokkeert. Achter het werk staat Manifera - elf jaar, klanten als Vodafone, TNO en CFLW, met Europese activiteiten vanaf de Herengracht 420 in Amsterdam en ontwikkeling in Singapore en Ho Chi Minh-stad.
 
 [Stuur ons de vragenlijst die u kreeg](https://launchstudio.eu/nl/#contact) en wij vertellen u welke antwoorden u al hebt.
 
@@ -108,24 +108,24 @@ LaunchStudio doet dit als onderdeel van het klaarmaken van een product voor zake
 
 Hidde Vermaas bouwde Meldpunt in Lovable: een systeem waarmee gemeenten meldingen van inwoners ontvangen en volgen over straatmeubilair, verlichting en groenonderhoud. Elf kleinere gemeenten gebruikten het toen een grotere gemeente een aanbesteding startte.
 
-Hun vragenlijst vroeg waar persoonsgegevens — namen, adressen en e-mailadressen van melders en vrije-tekstomschrijvingen — werden opgeslagen en verwerkt. Hiddes eerlijke antwoord vergde twee weken onderzoek en was minder comfortabel dan hij verwachtte.
+Hun vragenlijst vroeg waar persoonsgegevens - namen, adressen en e-mailadressen van melders en vrije-tekstomschrijvingen - werden opgeslagen en verwerkt. Hiddes eerlijke antwoord vergde twee weken onderzoek en was minder comfortabel dan hij verwachtte.
 
-De Supabase-database stond in Frankfurt, en dat was prima. Maar zijn serverless functies draaiden in de regio die het dichtst bij de bezoeker lag, dus queries kwamen binnen vanaf drie continenten. Zijn error tracking legde volledige verzoeken vast, inclusief namen en adressen van melders, verwerkt in de Verenigde Staten, zonder opschoning. Geüploade foto's van gemelde problemen stonden in een opslagbucket in een Amerikaanse regio, gekozen door een standaardinstelling waar niemand naar had gekeken. En een functie voor het samenvatten van omschrijvingen, in het voorjaar toegevoegd, stuurde de volledige meldingstekst — inclusief namen — naar een model-API zonder dat er een verwerkersovereenkomst was.
+De Supabase-database stond in Frankfurt, en dat was prima. Maar zijn serverless functies draaiden in de regio die het dichtst bij de bezoeker lag, dus queries kwamen binnen vanaf drie continenten. Zijn error tracking legde volledige verzoeken vast, inclusief namen en adressen van melders, verwerkt in de Verenigde Staten, zonder opschoning. Geüploade foto's van gemelde problemen stonden in een opslagbucket in een Amerikaanse regio, gekozen door een standaardinstelling waar niemand naar had gekeken. En een functie voor het samenvatten van omschrijvingen, in het voorjaar toegevoegd, stuurde de volledige meldingstekst - inclusief namen - naar een model-API zonder dat er een verwerkersovereenkomst was.
 
 Zes werkdagen: de volledige inventarisatie van diensten met locaties voor verwerking, opslag en back-ups gedocumenteerd; functies vastgezet in de regio Frankfurt, wat ook de gemiddelde responstijd met 240 milliseconden verlaagde; error tracking verplaatst naar een in de EU gehoste provider met opschoning van verzoeken ingesteld, zodat persoonsgegevens nooit worden verstuurd; 34.000 foto's gemigreerd naar een EU-opslagregio, met het genereren van URL's herschreven en bestaande links omgeleid; de samenvattingsfunctie omgezet naar een modelendpoint in een EU-regio met een verwerkersovereenkomst, en aangepast om alleen de omschrijving te versturen in plaats van het hele record; een gepubliceerde pagina over subverwerkers en datalocatie; en een gedocumenteerd proces dat een controle op datalocatie vereist voordat er een nieuwe dienst bijkomt.
 
 **Resultaat:** de vragenlijst werd beantwoord vanaf de gepubliceerde pagina met twee verduidelijkende zinnen, en het contract werd gegund. Drie van de elf bestaande gemeenten vroegen binnen een maand om hetzelfde document, en Hidde stuurt de link nu mee voordat erom wordt gevraagd.
 
 > *"Elk van die standaardinstellingen werd gekozen door op een middag door een installatiescherm te klikken. Geen ervan was een beslissing, en alle vier stonden ze op de vragenlijst."*
-> — **Hidde Vermaas, Oprichter, Meldpunt (Deventer)**
+> - **Hidde Vermaas, Oprichter, Meldpunt (Deventer)**
 
-**Kosten & Doorlooptijd:** €4.200 (inventarisatie van diensten, functies vastgezet in een regio, migratie van error tracking met opschoning, opslagmigratie met omleiden van links, wijziging van AI-endpoint en overeenkomst met kleinere payload, gepubliceerde documentatie, procesdefinitie) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** €4.200 (inventarisatie van diensten, functies vastgezet in een regio, migratie van error tracking met opschoning, opslagmigratie met omleiden van links, wijziging van AI-endpoint en overeenkomst met kleinere payload, gepubliceerde documentatie, procesdefinitie) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Is het illegaal om persoonsgegevens uit de EU buiten de EU op te slaan?
 
-Nee. Doorgiften zijn toegestaan met een rechtmatige grondslag — een adequaatheidsbesluit, modelcontractbepalingen met passende maatregelen, of een uitzondering. Wat problemen veroorzaakt, is niet weten wat u doet of het niet kunnen beschrijven.
+Nee. Doorgiften zijn toegestaan met een rechtmatige grondslag - een adequaatheidsbesluit, modelcontractbepalingen met passende maatregelen, of een uitzondering. Wat problemen veroorzaakt, is niet weten wat u doet of het niet kunnen beschrijven.
 
 ### Is het controleren van mijn databaseregio genoeg?
 
@@ -137,7 +137,7 @@ Error tracking die volledige verzoeken vastlegt, analytics met identificaties, l
 
 ### Moet ik alles naar de EU verhuizen?
 
-Meestal niet. Verminder eerst wat u verstuurt — verwijder persoonsgegevens uit error tracking, stuur AI-functies alleen wat ze nodig hebben — en verhuis daarna diensten in volgorde van kosten, waarbij u na elke stap controleert of aan de eis is voldaan.
+Meestal niet. Verminder eerst wat u verstuurt - verwijder persoonsgegevens uit error tracking, stuur AI-functies alleen wat ze nodig hebben - en verhuis daarna diensten in volgorde van kosten, waarbij u na elke stap controleert of aan de eis is voldaan.
 
 ### Moet ik een lijst van subverwerkers publiceren?
 
@@ -153,7 +153,7 @@ Ja. Het verkort verkoopgesprekken met zakelijke klanten, toont serieusheid, en d
       "name": "Is het illegaal om persoonsgegevens uit de EU buiten de EU op te slaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — doorgiften zijn rechtmatig met een adequaatheidsbesluit, modelcontractbepalingen of een uitzondering. Het probleem is niet kunnen beschrijven wat u doet."
+        "text": "Nee - doorgiften zijn rechtmatig met een adequaatheidsbesluit, modelcontractbepalingen of een uitzondering. Het probleem is niet kunnen beschrijven wat u doet."
       }
     },
     {
@@ -185,7 +185,7 @@ Ja. Het verkort verkoopgesprekken met zakelijke klanten, toont serieusheid, en d
       "name": "Moet een klein product een lijst van subverwerkers publiceren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Het verkort inkoopgesprekken en dwingt uw eigen inventarisatie accuraat te blijven — mits u haar actueel houdt."
+        "text": "Ja. Het verkort inkoopgesprekken en dwingt uw eigen inventarisatie accuraat te blijven - mits u haar actueel houdt."
       }
     }
   ]

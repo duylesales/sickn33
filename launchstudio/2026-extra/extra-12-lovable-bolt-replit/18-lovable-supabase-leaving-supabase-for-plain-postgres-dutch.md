@@ -32,7 +32,7 @@ Vier motieven komen steeds terug en geen ervan houdt stand bij nadere beschouwin
 
 **"De prestaties zijn slecht."** Bijna altijd ontbrekende indexen, N+1-queries of slecht beheerde verbindingen. Die problemen verhuizen met u mee. Een product dat op Supabase traag is, is overal traag, tegen hogere kosten.
 
-**"We raken misschien vast."** Supabase is Postgres. Uw data, schema, functies en triggers zijn standaard en overdraagbaar. De lock-in is alleen echt bij auth, opslag en realtime — en zelfs daar is hij bescheiden.
+**"We raken misschien vast."** Supabase is Postgres. Uw data, schema, functies en triggers zijn standaard en overdraagbaar. De lock-in is alleen echt bij auth, opslag en realtime - en zelfs daar is hij bescheiden.
 
 **"Investeerders vroegen naar schaal."** Supabase draait producten die aanzienlijk groter zijn dan het uwe. Moet de vraag worden beantwoord, dan is het antwoord een capaciteitsplan, geen migratie.
 
@@ -44,19 +44,19 @@ Drie, en ze zijn allemaal structureel in plaats van technische ergernissen.
 
 **Een schaal of werklast waarvoor het platform niet is ingericht.** Heel veel schrijfacties, grote analytische werklasten naast transactionele, of behoefte aan Postgres-extensies en configuratie die de beheerde omgeving niet biedt.
 
-**Een bewuste architecturale consolidatie.** U draait elders al substantiële infrastructuur, en de database ernaast hebben — hetzelfde netwerk, dezelfde monitoring, hetzelfde team — is in totaal eenvoudiger. Dit is een echte reden, en ze geldt voor minder kleine producten dan er denken dat ze geldt.
+**Een bewuste architecturale consolidatie.** U draait elders al substantiële infrastructuur, en de database ernaast hebben - hetzelfde netwerk, dezelfde monitoring, hetzelfde team - is in totaal eenvoudiger. Dit is een echte reden, en ze geldt voor minder kleine producten dan er denken dat ze geldt.
 
 ## Wat Makkelijk Verhuist
 
 De database zelf is echt eenvoudig. Het is Postgres: exporteer, herstel, controleer de aantallen rijen. Uw schema, indexen, constraints, functies en triggers komen allemaal mee.
 
-Twee kanttekeningen. Supabase installeert een handvol extensies, waarvan u er misschien enkele gebruikt zonder het te weten — controleer dat voordat u aanneemt dat het doel ze ondersteunt. En row-level security-policies komen mee, maar ze verwijzen naar de identiteit van de aanroepende gebruiker, die na de verhuizing niet meer door de auth van Supabase wordt geleverd. Die policies moeten worden herschreven tegen het mechanisme dat ervoor in de plaats komt.
+Twee kanttekeningen. Supabase installeert een handvol extensies, waarvan u er misschien enkele gebruikt zonder het te weten - controleer dat voordat u aanneemt dat het doel ze ondersteunt. En row-level security-policies komen mee, maar ze verwijzen naar de identiteit van de aanroepende gebruiker, die na de verhuizing niet meer door de auth van Supabase wordt geleverd. Die policies moeten worden herschreven tegen het mechanisme dat ervoor in de plaats komt.
 
 Reken voor dit deel een dag, waarvan het meeste controle is in plaats van overzetten.
 
 ## Wat Niet Makkelijk Verhuist
 
-**Authenticatie is het moeilijke deel.** Wachtwoordhashes kunnen meestal worden geëxporteerd en geïmporteerd, zodat gebruikers hun wachtwoord niet hoeven te resetten — maar de tokens die uw applicatie uitgeeft veranderen van formaat, elke sessie wordt bij de overstap ongeldig, en alles wat afhangt van de identiteitsclaim in die tokens moet worden herschreven. Dat omvat elke row-level security-policy, en daarom zijn de twee stukken werk eigenlijk één.
+**Authenticatie is het moeilijke deel.** Wachtwoordhashes kunnen meestal worden geëxporteerd en geïmporteerd, zodat gebruikers hun wachtwoord niet hoeven te resetten - maar de tokens die uw applicatie uitgeeft veranderen van formaat, elke sessie wordt bij de overstap ongeldig, en alles wat afhangt van de identiteitsclaim in die tokens moet worden herschreven. Dat omvat elke row-level security-policy, en daarom zijn de twee stukken werk eigenlijk één.
 
 Sociale logins moeten bij elke provider opnieuw worden ingericht, en de redirect-URL's bijgewerkt. Gebruikers die zich met Google aanmeldden, behouden hun account alleen als u ze op e-mailadres koppelt, wat zorg vereist om te voorkomen dat u twee mensen samenvoegt die één adres delen.
 
@@ -70,13 +70,13 @@ Sociale logins moeten bij elke provider opnieuw worden ingericht, en de redirect
 
 Doe het in fasen terwijl het product de hele tijd blijft draaien. Alles tegelijk is hoe een weekend een week wordt.
 
-Verplaats eerst de database en laat de applicatie tijdens een kort onderhoudsvenster naar de nieuwe wijzen. Laat auth en opslag waar ze zijn — Supabase-auth kan blijven werken tegen een database die u niet meer bij hen host, en die eigenschap maakt een gefaseerde migratie überhaupt mogelijk.
+Verplaats eerst de database en laat de applicatie tijdens een kort onderhoudsvenster naar de nieuwe wijzen. Laat auth en opslag waar ze zijn - Supabase-auth kan blijven werken tegen een database die u niet meer bij hen host, en die eigenschap maakt een gefaseerde migratie überhaupt mogelijk.
 
 Migreer daarna de authenticatie. Dit is de overstap met zichtbaar effect voor gebruikers: sessies eindigen, iedereen logt opnieuw in. Doe het op een rustig uur, communiceer vooraf, en heb een geteste route terug.
 
 Migreer vervolgens de opslag, met een periode waarin uw applicatie van beide locaties leest, zodat niets breekt terwijl objecten worden gekopieerd.
 
-Verwijder ten slotte de resterende afhankelijkheden en sluit het account — na een behoorlijke tussenperiode, met eerst een gecontroleerde back-up.
+Verwijder ten slotte de resterende afhankelijkheden en sluit het account - na een behoorlijke tussenperiode, met eerst een gecontroleerde back-up.
 
 ## Voordat U zich Vastlegt
 
@@ -98,7 +98,7 @@ Vraag het vóór u migreert. Een gesprek met een leverancier is goedkoper dan ee
 
 Er is een reeks wijzigingen die een toekomstige migratie goedkoop maakt, weinig kost, en uw product verbetert, of u nu ooit vertrekt of niet. Speelt de vraag bij u, dan is dit het werk om in plaats daarvan te doen.
 
-**Zet het platform achter uw eigen grens.** Applicatiecode die overal de Supabase-client aanroept, is code waarin elk bestand weet welke leverancier u gebruikt. Dezelfde code die uw eigen datafuncties aanroept — die van binnen toevallig Supabase gebruiken — verandert op één plek als dat ooit verandert. Dit is gewoon goede structuur, en het is de grootste bepalende factor voor de kosten van een migratie.
+**Zet het platform achter uw eigen grens.** Applicatiecode die overal de Supabase-client aanroept, is code waarin elk bestand weet welke leverancier u gebruikt. Dezelfde code die uw eigen datafuncties aanroept - die van binnen toevallig Supabase gebruiken - verandert op één plek als dat ooit verandert. Dit is gewoon goede structuur, en het is de grootste bepalende factor voor de kosten van een migratie.
 
 **Bezit uw eigen identiteitsmodel.** Houd een eigen gebruikerstabel bij met eigen identificaties, gekoppeld aan de identiteit bij de authprovider in plaats van erop gesleuteld. Dan verandert het wisselen van provider één kolom, niet elke foreign key in het schema.
 
@@ -106,13 +106,13 @@ Er is een reeks wijzigingen die een toekomstige migratie goedkoop maakt, weinig 
 
 **Houd migraties in uw repository.** Een schema dat alleen in een dashboard bestaat, kan nergens opnieuw worden aangemaakt, wat zelfs een generale repetitie onmogelijk maakt.
 
-Doe deze vier en de migratie waar u zich zorgen over maakt, wordt twee weken in plaats van een kwartaal — en in het veel waarschijnlijkere geval dat u nooit migreert, hebt u een schonere codebase en een product dat makkelijker aan iemand anders over te dragen is.
+Doe deze vier en de migratie waar u zich zorgen over maakt, wordt twee weken in plaats van een kwartaal - en in het veel waarschijnlijkere geval dat u nooit migreert, hebt u een schonere codebase en een product dat makkelijker aan iemand anders over te dragen is.
 
 ## Dit Inrichten
 
 Een gefaseerde migratie voor een klein product kost doorgaans twee tot drie weken: een generale repetitie op een kopie met de tijd van elke stap gemeten, databasemigratie met controle van extensies en policies, een authenticatie-overstap inclusief import van wachtwoordhashes, opnieuw inrichten van sociale logins en herschrijven van policies tegen de nieuwe identiteitsbron, opslag gekopieerd met een periode van lezen uit beide en bestaande links afgehandeld, realtime vervangen indien gebruikt, edge functions opnieuw uitgerold met hun geheimen, monitoring en back-ups ingericht op het nieuwe platform met een daadwerkelijk geteste herstelactie, en de oude omgeving na een gecontroleerde tussenperiode buiten gebruik gesteld.
 
-LaunchStudio doet beide helften van dit gesprek — inclusief oprichters vertellen dat ze niet moeten migreren, wat de vaker voorkomende uitkomst is. De engineers zijn van Manifera: elf jaar, 160+ projecten, infrastructuurwerk voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio doet beide helften van dit gesprek - inclusief oprichters vertellen dat ze niet moeten migreren, wat de vaker voorkomende uitkomst is. De engineers zijn van Manifera: elf jaar, 160+ projecten, infrastructuurwerk voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minh-stad.
 
 [Vertel ons waarom u overweegt te verhuizen](https://launchstudio.eu/nl/#contact). De helft van de tijd is het antwoord een index.
 
@@ -131,15 +131,15 @@ Zestien werkdagen verspreid over drie weken: een volledige generale repetitie op
 **Resultaat:** het contract werd getekend. Gerlofs maandelijkse infrastructuurkosten stegen van €85 naar €310, wat hij het minst interessante getal van het project noemt. De generale repetitie is het deel dat hij andere oprichters aanraadt: de overstap van 40 minuten vond plaats om zes uur op een zondagochtend en niemand merkte het.
 
 > *"Ik migreerde niet omdat Supabase niet goed genoeg was. Ik migreerde omdat een inkoopafdeling een specifiek antwoord nodig had, en dat is de enige reden waarom ik het opnieuw zou doen."*
-> — **Gerlof Tichelaar, Oprichter, Zorgdossier (Leeuwarden)**
+> - **Gerlof Tichelaar, Oprichter, Zorgdossier (Leeuwarden)**
 
-**Kosten & Doorlooptijd:** €11.800 (generale repetitie, databasemigratie met controle van extensies en constraints, auth-overstap met import van hashes en herschrijven van 31 policies, opslagkopie met lezen uit beide en omleiden van links, vervanging van realtime, controle van back-up en herstel, buiten gebruik stellen) — afgerond in 16 werkdagen.
+**Kosten & Doorlooptijd:** €11.800 (generale repetitie, databasemigratie met controle van extensies en constraints, auth-overstap met import van hashes en herschrijven van 31 policies, opslagkopie met lezen uit beide en omleiden van links, vervanging van realtime, controle van back-up en herstel, buiten gebruik stellen) - afgerond in 16 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Is Supabase moeilijk te verlaten?
 
-De database niet — dat is standaard Postgres. Authenticatie, opslag en realtime zijn het werk, en authenticatie is degene met zichtbaar effect voor gebruikers, omdat elke sessie bij de overstap eindigt.
+De database niet - dat is standaard Postgres. Authenticatie, opslag en realtime zijn het werk, en authenticatie is degene met zichtbaar effect voor gebruikers, omdat elke sessie bij de overstap eindigt.
 
 ### Moeten mijn gebruikers hun wachtwoord resetten?
 
@@ -149,7 +149,7 @@ Niet als wachtwoordhashes worden geëxporteerd en geïmporteerd, wat normaal ges
 
 Meestal niet. De prijs van Supabase dekt een database, auth, opslag, een API en back-ups; die afzonderlijk vervangen plus de engineeringtijd is vaak duurder om te draaien en altijd duurder om te onderhouden.
 
-### Mijn app is traag — lost verhuizen dat op?
+### Mijn app is traag - lost verhuizen dat op?
 
 Bijna nooit. Traagheid zijn meestal ontbrekende indexen, N+1-queries of slecht beheerde verbindingen, en die reizen tegen hogere kosten met u mee.
 
@@ -175,7 +175,7 @@ Vraag de leverancier of uw eis op andere voorwaarden te vervullen is, voer een h
       "name": "Moeten gebruikers na een migratie hun wachtwoord resetten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Normaal niet — wachtwoordhashes kunnen worden geëxporteerd en geïmporteerd. Iedereen wordt bij de overstap uitgelogd en moet opnieuw inloggen."
+        "text": "Normaal niet - wachtwoordhashes kunnen worden geëxporteerd en geïmporteerd. Iedereen wordt bij de overstap uitgelogd en moet opnieuw inloggen."
       }
     },
     {

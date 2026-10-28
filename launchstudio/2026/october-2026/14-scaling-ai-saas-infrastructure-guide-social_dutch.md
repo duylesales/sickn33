@@ -1,4 +1,4 @@
-🔥 Jeroen bouwde een prototype met **Cursor** — als marketingconsultant in Amsterdam bouwde hij een AI SaaS voor SEO-blogoutlines, maar zijn handmatige MVP-processen blokkeerden zijn groei van $10 naar $1.000 MRR. 🧠
+🔥 Jeroen bouwde een prototype met **Cursor** - als marketingconsultant in Amsterdam bouwde hij een AI SaaS voor SEO-blogoutlines, maar zijn handmatige MVP-processen blokkeerden zijn groei van $10 naar $1.000 MRR. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of geautomatiseerde facturatie heeft, veroorzaakt live verkeer direct crashes en omzetverlies.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Jeroen's platform verwerkt nu moeiteloos honderden gebruikers en schaalde binnen twee maanden door naar €1.200 MRR. (€2.800 (Launch & Grow Pakket) + €49/maand hosting — binnen 10 werkdagen opgeleverd). 🚀
+Jeroen's platform verwerkt nu moeiteloos honderden gebruikers en schaalde binnen twee maanden door naar €1.200 MRR. (€2.800 (Launch & Grow Pakket) + €49/maand hosting - binnen 10 werkdagen opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scaling-ai-saas-infrastructure-guide
 

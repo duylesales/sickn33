@@ -2,15 +2,15 @@
 
 Reading code isn't the review. Verifying agreed things are now true is: 🧠
 
-❌ "Is the code well built?" is the one question you can't answer — and don't need to
+❌ "Is the code well built?" is the one question you can't answer - and don't need to
 ❌ Screenshots only show the path the engineer chose, never the ones nobody planned
 ❌ A checklist made at the end describes what happened, it isn't a contract
 ❌ "Industry-standard security best practices" sounds reassuring and tells you nothing
 
 ✅ Insist on a staging URL you can click through, signup to payment, before approving
-✅ Agree a written acceptance checklist up front — items you personally can perform
+✅ Agree a written acceptance checklist up front - items you personally can perform
 ✅ Ask for a plain-language change log twice a week, not raw commit messages
-✅ Ask "what did you deliberately not do, and why" — it surfaces choices to review
+✅ Ask "what did you deliberately not do, and why" - it surfaces choices to review
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build your acceptance checklist before work starts, so approval is never a guess. ✅
 

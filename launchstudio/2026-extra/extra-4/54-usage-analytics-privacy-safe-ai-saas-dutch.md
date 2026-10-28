@@ -79,9 +79,9 @@ LaunchStudio's ingenieurs auditeerden elke analyse-oproep in de LeerVolg-codebas
 **Resultaat:** LeerVolg's analyses dragen nu nul persoonlijk identificeerbare studentengegevens. Tygo heeft documentatie die exact toont welke gegevens wel en niet het platform verlaten, klaar voor de beoordeling van gegevensbescherming van elke school.
 
 > *"Ik zou nooit bewust studentennamen hebben verzonden naar een tool van een derde partij. Het feit dat het automatisch gebeurde, zonder dat iemand het besloot, was het engste gedeelte."*
-> — **Tygo Peters, Oprichter, LeerVolg (Wageningen)**
+> - **Tygo Peters, Oprichter, LeerVolg (Wageningen)**
 
-**Kosten en tijdlijn:** € 850 (analyse-audit, hashen van identificaties, en documentatie van leveranciersgegevensstromen) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 850 (analyse-audit, hashen van identificaties, en documentatie van leveranciersgegevensstromen) - voltooid in 5 werkdagen.
 
 ---
 

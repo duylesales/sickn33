@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Een AI-Loyalty-App Bouwen? Productieproblemen met Spaarpunten en Fraude",
-  "description": "Spaarpunten zijn een digitale munteenheid, maar AI-gebouwde loyaliteits-apps behandelen ze zelden als zodanig. Dit artikel behandelt de productieproblemen in spaarsystemen — saldo-velden, herbruikbare QR-codes, race conditions, vervaltermijnen, terugboekingen en financiële verantwoording — en hoe een grootboek (ledger) dit oplost.",
+  "description": "Spaarpunten zijn een digitale munteenheid, maar AI-gebouwde loyaliteits-apps behandelen ze zelden als zodanig. Dit artikel behandelt de productieproblemen in spaarsystemen - saldo-velden, herbruikbare QR-codes, race conditions, vervaltermijnen, terugboekingen en financiële verantwoording - en hoe een grootboek (ledger) dit oplost.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-07",
@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
 }
 </script>
 
-Een loyalty-app lijkt het vriendelijkste product dat er bestaat: stempels sparen, punten verdienen, een gratis koffie krijgen. Onder de oppervlakte is het een kleine bank. Punten zijn een valuta die klanten waarderen, winkels betalen en fraudeurs geweldig vinden. AI-codeertools bouwen loyalty-apps alsof punten een getal op een profiel zijn, en daar beginnen de productieproblemen van AI-apps — dubbele beloningen, saldi die afdrijven, en één screenshot van een QR-code die honderd keer wordt ingewisseld.
+Een loyalty-app lijkt het vriendelijkste product dat er bestaat: stempels sparen, punten verdienen, een gratis koffie krijgen. Onder de oppervlakte is het een kleine bank. Punten zijn een valuta die klanten waarderen, winkels betalen en fraudeurs geweldig vinden. AI-codeertools bouwen loyalty-apps alsof punten een getal op een profiel zijn, en daar beginnen de productieproblemen van AI-apps - dubbele beloningen, saldi die afdrijven, en één screenshot van een QR-code die honderd keer wordt ingewisseld.
 
 ## Punten Zijn Geld, Dus Behandel Ze Als Geld
 
@@ -128,11 +128,11 @@ Eenvoudige dashboards en wekelijkse controles vangen de meeste patronen voordat 
 
 ## Afrekening tussen Deelnemende Winkels
 
-In programma's met meerdere winkels is de afrekening het financiële hart. Leg voor elke boeking vast welke winkel punten uitgaf en welke winkel ze inwisselde; waardeer punten tegen een afgesproken koers; maak per winkel een maandoverzicht van uitgegeven punten, ingewisselde punten en het resulterende te betalen of te ontvangen saldo. Stem overzichten af op het grootboek en houd ze onveranderlijk zodra ze zijn uitgegeven. Duidelijke afrekenregels — schriftelijk afgesproken door de deelnemende winkels — voorkomen geschillen die een lokaal programma uit elkaar kunnen spelen.
+In programma's met meerdere winkels is de afrekening het financiële hart. Leg voor elke boeking vast welke winkel punten uitgaf en welke winkel ze inwisselde; waardeer punten tegen een afgesproken koers; maak per winkel een maandoverzicht van uitgegeven punten, ingewisselde punten en het resulterende te betalen of te ontvangen saldo. Stem overzichten af op het grootboek en houd ze onveranderlijk zodra ze zijn uitgegeven. Duidelijke afrekenregels - schriftelijk afgesproken door de deelnemende winkels - voorkomen geschillen die een lokaal programma uit elkaar kunnen spelen.
 
 ## Vervaldatums en Boekhouding
 
-Vervalregels — bijvoorbeeld punten die 12 maanden na het sparen geldig zijn — worden geïmplementeerd als geplande taken die per lid vervalboekingen toevoegen, de oudste punten eerst. Informeer leden voordat punten vervallen, wat ook bezoeken stimuleert. Voor de boekhouding vormen uitstaande punten een verplichting; je boekhouder wil misschien regelmatig rapporten van uitgegeven, ingewisselde, vervallen en uitstaande punten om dit goed in de boeken te verwerken.
+Vervalregels - bijvoorbeeld punten die 12 maanden na het sparen geldig zijn - worden geïmplementeerd als geplande taken die per lid vervalboekingen toevoegen, de oudste punten eerst. Informeer leden voordat punten vervallen, wat ook bezoeken stimuleert. Voor de boekhouding vormen uitstaande punten een verplichting; je boekhouder wil misschien regelmatig rapporten van uitgegeven, ingewisselde, vervallen en uitstaande punten om dit goed in de boeken te verwerken.
 
 ## Privacy in Loyaltyprogramma's
 
@@ -148,19 +148,19 @@ Het ontwerp van beloningen beïnvloedt fraude. Beloningen die kunnen worden inge
 
 ## Acties Zonder Chaos
 
-Dubbelepuntendagen en bonuscampagnes veroorzaken pieken en randgevallen. Configureer acties als data — begin- en eindtijd in lokale tijd, deelnemende winkels en producten, vermenigvuldiger of bonus, limieten per lid — in plaats van als codewijzigingen. Test ze op staging met realistische transacties, monitor de uitgifte tijdens de actie en zorg voor een manier om een campagne eerder te beëindigen als er iets misgaat.
+Dubbelepuntendagen en bonuscampagnes veroorzaken pieken en randgevallen. Configureer acties als data - begin- en eindtijd in lokale tijd, deelnemende winkels en producten, vermenigvuldiger of bonus, limieten per lid - in plaats van als codewijzigingen. Test ze op staging met realistische transacties, monitor de uitgifte tijdens de actie en zorg voor een manier om een campagne eerder te beëindigen als er iets misgaat.
 
 ## De Ervaring van Leden
 
-Leden beoordelen een loyalty-app op eenvoud: snelle toegang tot hun code (ook offline), een duidelijk saldo met geschiedenis, begrijpelijke beloningen en herinneringen voordat punten vervallen. De geschiedenis tonen — "12 punten gespaard bij de bakker op dinsdag" — bouwt vertrouwen op en vermindert supportvragen. Dat kan alleen met een grootboek, wat nog een reden is waarom het grootboek de moeite waard is om vanaf het begin te bouwen.
+Leden beoordelen een loyalty-app op eenvoud: snelle toegang tot hun code (ook offline), een duidelijk saldo met geschiedenis, begrijpelijke beloningen en herinneringen voordat punten vervallen. De geschiedenis tonen - "12 punten gespaard bij de bakker op dinsdag" - bouwt vertrouwen op en vermindert supportvragen. Dat kan alleen met een grootboek, wat nog een reden is waarom het grootboek de moeite waard is om vanaf het begin te bouwen.
 
 ## Supporttools voor Winkels en Beheerders
 
-Winkels moeten fouten kunnen corrigeren — een verkeerd ingevoerd bedrag, een terugbetaling — zonder voor elk geval contact op te nemen met de beheerder van het programma. Geef winkelmanagers een beperkte correctietool waarbij een reden verplicht is en boven bepaalde drempels goedkeuring nodig is; geef beheerders een weergave van het grootboek van elk lid en alle correcties. Elke correctie wordt een nieuwe grootboekboeking, waardoor de volledige geschiedenis behouden blijft.
+Winkels moeten fouten kunnen corrigeren - een verkeerd ingevoerd bedrag, een terugbetaling - zonder voor elk geval contact op te nemen met de beheerder van het programma. Geef winkelmanagers een beperkte correctietool waarbij een reden verplicht is en boven bepaalde drempels goedkeuring nodig is; geef beheerders een weergave van het grootboek van elk lid en alle correcties. Elke correctie wordt een nieuwe grootboekboeking, waardoor de volledige geschiedenis behouden blijft.
 
 ## Rapportage aan Deelnemende Winkels
 
-Winkels blijven in een programma als ze de waarde ervan zien: klanten die vaker komen, bezoeken over en weer vanuit andere winkels, inwisselpatronen en de netto afrekenpositie. Maandrapporten die uit het grootboek zijn opgebouwd — niet uit schattingen — maken de waarde van het programma zichtbaar en houden de deelname hoog.
+Winkels blijven in een programma als ze de waarde ervan zien: klanten die vaker komen, bezoeken over en weer vanuit andere winkels, inwisselpatronen en de netto afrekenpositie. Maandrapporten die uit het grootboek zijn opgebouwd - niet uit schattingen - maken de waarde van het programma zichtbaar en houden de deelname hoog.
 
 ## Als het Programma Groeit
 
@@ -176,7 +176,7 @@ Probeer dezelfde beloning op hetzelfde moment vanaf twee telefoons in te wissele
 
 ## Waar LaunchStudio Past
 
-LaunchStudio maakt van AI-gebouwde loyalty-apps systemen die standhouden: een puntengrootboek met migratie van bestaande saldi, transactionele inwisselingen met idempotentie, wisselende codes voor eenmalig gebruik, audittrails van personeel, fraudemaatregelen, vervaltaken en afrekenrapporten — met de app voor klanten ongewijzigd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het bouwen van transactionele systemen voor klanten als Vodafone, met engineers in Ho Chi Minh-stad en kantoren in Amsterdam en Singapore. Zie [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/). De teksten van Martin Fowler over [accounting patterns](https://martinfowler.com/eaaDev/AccountingNarrative.html) leggen uit waarom grootboeken beter zijn dan saldovelden.
+LaunchStudio maakt van AI-gebouwde loyalty-apps systemen die standhouden: een puntengrootboek met migratie van bestaande saldi, transactionele inwisselingen met idempotentie, wisselende codes voor eenmalig gebruik, audittrails van personeel, fraudemaatregelen, vervaltaken en afrekenrapporten - met de app voor klanten ongewijzigd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het bouwen van transactionele systemen voor klanten als Vodafone, met engineers in Ho Chi Minh-stad en kantoren in Amsterdam en Singapore. Zie [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/). De teksten van Martin Fowler over [accounting patterns](https://martinfowler.com/eaaDev/AccountingNarrative.html) leggen uit waarom grootboeken beter zijn dan saldovelden.
 
 [Vraag een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) voordat je volgende actie live gaat.
 
@@ -186,16 +186,16 @@ LaunchStudio maakt van AI-gebouwde loyalty-apps systemen die standhouden: een pu
 
 Daan Koopman, die een winkeliersvereniging in Bergen op Zoom leidt, bouwde Spaarpas in Bolt: een digitale spaarkaart die door 34 lokale winkels wordt gedeeld. Klanten sparen punten bij elke deelnemende winkel en wisselen ze in voor vouchers bij andere; winkels betalen een maandelijkse bijdrage en rekenen ingewisselde vouchers aan het einde van de maand af. In de eerste drie maanden meldden zich ongeveer 5.200 inwoners aan.
 
-De eerste actie — dubbele punten op een zaterdag — legde alles bloot. Elke klant had een statische QR-code, en punten werden toegevoegd doordat personeel die scande en een bedrag intypte. Screenshots van vouchers werden bij meerdere winkels ingewisseld. Een groep accounts inde tientallen keren de aanmeldbonus met wegwerp-e-mailadressen. Twee winkels ontdekten dat hun tablets punten twee keer hadden uitgegeven toen de verbinding wegviel en personeel het opnieuw probeerde. Aan het einde van de maand klopte het afrekenrapport niet met wat winkels zich herinnerden, en er was geen geschiedenis om het te controleren.
+De eerste actie - dubbele punten op een zaterdag - legde alles bloot. Elke klant had een statische QR-code, en punten werden toegevoegd doordat personeel die scande en een bedrag intypte. Screenshots van vouchers werden bij meerdere winkels ingewisseld. Een groep accounts inde tientallen keren de aanmeldbonus met wegwerp-e-mailadressen. Twee winkels ontdekten dat hun tablets punten twee keer hadden uitgegeven toen de verbinding wegviel en personeel het opnieuw probeerde. Aan het einde van de maand klopte het afrekenrapport niet met wat winkels zich herinnerden, en er was geen geschiedenis om het te controleren.
 
 In negen werkdagen vervingen de engineers van LaunchStudio de saldokolom door een grootboek, waarbij beginsaldi werden gereconstrueerd uit beschikbare logs en onzekere accounts werden gemarkeerd, maakten ze sparen en inwisselen transactioneel met idempotentiesleutels, vervingen ze statische codes door wisselende codes voor eenmalig gebruik die op de server worden gevalideerd, koppelden ze aanmeldbonussen aan geverifieerde telefoonnummers, logden ze elke actie van personeel per medewerker, voegden ze vervaldatums en terugboekingen bij terugbetalingen toe, en bouwden ze een maandelijks afrekenrapport per winkel.
 
 **Resultaat:** De volgende actie verliep zonder dubbele inwisselingen, en de afrekening aan het einde van de maand klopte tot op de voucher. Spaarpas breidde uit naar 51 winkels, en de penningmeester van de vereniging gebruikt nu het grootboekrapport in plaats van een spreadsheet.
 
 > *"We dachten dat we een spaarkaart hadden gebouwd. Eigenlijk hadden we een kleine munteenheid gebouwd zonder boekhouding."*
-> — **Daan Koopman, Oprichter, Spaarpas (Bergen op Zoom)**
+> - **Daan Koopman, Oprichter, Spaarpas (Bergen op Zoom)**
 
-**Kosten & Tijdlijn:** € 2.600 (Launch Ready-pakket: grootboek, transactionele inwisselingen, veilige codes, fraudemaatregelen en afrekening) — afgerond in 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.600 (Launch Ready-pakket: grootboek, transactionele inwisselingen, veilige codes, fraudemaatregelen en afrekening) - afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 

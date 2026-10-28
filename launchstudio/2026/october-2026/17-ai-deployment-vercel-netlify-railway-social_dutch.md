@@ -1,4 +1,4 @@
-🔥 Kevin bouwde een prototype met **Cursor** — als ontwikkelaar in Berlijn bouwde hij een AI SaaS voor podcast-transcripties, maar liep vast op serverless time-outs op Vercel bij langere audiobestanden. 🧠
+🔥 Kevin bouwde een prototype met **Cursor** - als ontwikkelaar in Berlijn bouwde hij een AI SaaS voor podcast-transcripties, maar liep vast op serverless time-outs op Vercel bij langere audiobestanden. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of de juiste hostingarchitectuur heeft, veroorzaakt live verkeer direct crashes en 504-fouten.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Kevin's platform verwerkt nu moeiteloos podcasts van 3 uur zonder time-outs en sloot direct zijn eerste 20 klanten aan. (€2.500 (Launch & Grow Pakket met microservice-extractie) — binnen 7 werkdagen live). 🚀
+Kevin's platform verwerkt nu moeiteloos podcasts van 3 uur zonder time-outs en sloot direct zijn eerste 20 klanten aan. (€2.500 (Launch & Grow Pakket met microservice-extractie) - binnen 7 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-deployment-vercel-netlify-railway
 

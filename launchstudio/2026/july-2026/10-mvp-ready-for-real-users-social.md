@@ -1,4 +1,4 @@
-🔥 Mia built a prototype using **Lovable** — mia, a nutritionist, used **lovable** to generate a client dashboard for tracking daily meals, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Mia built a prototype using **Lovable** - mia, a nutritionist, used **lovable** to generate a client dashboard for tracking daily meals, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mia's application achieved production readiness: Mia's readiness score reached 7/7. She successfully launched her platform, which now supports 2,500 active users with zero data exposure incidents. (€1,600 (Launch Package) — production-ready and deployed in 5 business days.). 🚀
+Mia's application achieved production readiness: Mia's readiness score reached 7/7. She successfully launched her platform, which now supports 2,500 active users with zero data exposure incidents. (€1,600 (Launch Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/mvp-ready-for-real-users
 

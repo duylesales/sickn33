@@ -4,7 +4,7 @@
 
 📜 Under the AI Act, credit scoring of individuals and life and health insurance pricing are high-risk. GDPR Article 22 and the CJEU's SCHUFA ruling affect scoring directly, while DORA governs ICT and third-party risk.
 
-✅ A model is not finished when it performs well. It must be explainable to validators, stable over time and monitored — which is why model validation is a career path of its own.
+✅ A model is not finished when it performs well. It must be explainable to validators, stable over time and monitored - which is why model validation is a career path of its own.
 
 🔎 Browse current jobs: https://onlyaijobs.eu/jobs
 

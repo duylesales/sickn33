@@ -1,6 +1,6 @@
 💰 **"We spent €240,000 on engineering last year. We shipped one feature."**
 
-A startup CEO told me this last month. When I asked for the breakdown, she realized most of it wasn't development — it was recruiting, onboarding, benefits, and management overhead.
+A startup CEO told me this last month. When I asked for the breakdown, she realized most of it wasn't development - it was recruiting, onboarding, benefits, and management overhead.
 
 Here's the math nobody shows you:
 
@@ -22,7 +22,7 @@ But cost isn't everything. Here's the real framework:
 
 ✅ **Outsource when:** Pre-PMF, runway <18 months, need speed
 ✅ **Build in-house when:** Your core product IS the tech, post-PMF
-✅ **Best play:** Hybrid — 1-2 in-house architects + outsourced development team
+✅ **Best play:** Hybrid - 1-2 in-house architects + outsourced development team
 
 The key: **own your code, always.** Dutch contract law. Your repo. Full IP transfer. Non-negotiable.
 

@@ -3,7 +3,7 @@ Every last-mile delivery platform looks great at 200 orders an hour. The questio
 **The Pain Points:**
 ❌ **Pilots Run at Calm Volume:** Most evaluations never touch real peak-hour concurrency, so the highest-risk failure mode goes untested until it's live.
 ❌ **Routing Engines That Choke on Re-Routing:** Initial overnight route plans are easy. Live recalculation when a driver calls in sick mid-peak is the computationally expensive case vendors rarely demo.
-❌ **Driver Apps That Need Constant Signal:** Peak density often hits weak-coverage areas — parking garages, dense buildings — where a non-offline app fails proof-of-delivery capture exactly when volume peaks.
+❌ **Driver Apps That Need Constant Signal:** Peak density often hits weak-coverage areas - parking garages, dense buildings - where a non-offline app fails proof-of-delivery capture exactly when volume peaks.
 
 **The Manifera Solution:**
 ✅ **Committed Load Tests in Writing:** We push vendors to test at 150-200% of your actual historical peak-hour concurrency before go-live.

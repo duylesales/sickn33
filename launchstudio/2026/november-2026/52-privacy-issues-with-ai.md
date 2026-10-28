@@ -86,9 +86,9 @@ Third, they implemented a local PII masking proxy that stripped patient names an
 **Result:** Sarah presented the new architecture to the DPO. She demonstrated the database cascading deletion, proving that the Right to be Forgotten was mathematically enforced. She provided the Azure compliance certificates proving the data remained in Germany. The DPO approved the software, and Sarah successfully launched her startup across five Bavarian clinics.
 
 > *"We were so focused on making the AI smart that we forgot to make it legal. In Europe, if your software isn't GDPR compliant, it doesn't matter how good the AI is. LaunchStudio understood the exact intersection of AI mathematics and European privacy law. They built the infrastructure that saved our company from being shut down."*
-> — **Sarah Weber, Founder, VitaMind (Munich)**
+> - **Sarah Weber, Founder, VitaMind (Munich)**
 
-**Cost & Timeline:** €18,000 (Enterprise Compliance & Azure Migration Package) — production-ready and deployed in 18 business days.
+**Cost & Timeline:** €18,000 (Enterprise Compliance & Azure Migration Package) - production-ready and deployed in 18 business days.
 
 ---
 

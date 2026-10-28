@@ -57,13 +57,13 @@ Two practical points matter more than the details.
 
 ## Timelines, and Why They Matter to Your Decision
 
-Security investigations take substantially longer than ordinary recruitment — a period measured in months rather than weeks, varying with the level and complexity of the case. Employers usually cannot start you in a designated position before the declaration is granted, though some can offer interim work on non-sensitive tasks.
+Security investigations take substantially longer than ordinary recruitment - a period measured in months rather than weeks, varying with the level and complexity of the case. Employers usually cannot start you in a designated position before the declaration is granted, though some can offer interim work on non-sensitive tasks.
 
-For you this has three consequences. A competing offer with a normal timeline may force your hand. Resigning from a current job before a declaration is granted is risky, and most employers will advise against it. And if your situation is complex — recent time abroad, dual nationality, a financial history worth explaining — ask early about expected duration rather than assuming the standard case applies.
+For you this has three consequences. A competing offer with a normal timeline may force your hand. Resigning from a current job before a declaration is granted is risky, and most employers will advise against it. And if your situation is complex - recent time abroad, dual nationality, a financial history worth explaining - ask early about expected duration rather than assuming the standard case applies.
 
 ## Who These Roles Suit
 
-**People who want work that is genuinely unavailable elsewhere.** Sonar and radar classification, autonomy for mine countermeasures, maritime situational awareness, certain kinds of anomaly detection on critical systems — this work exists in very few places.
+**People who want work that is genuinely unavailable elsewhere.** Sonar and radar classification, autonomy for mine countermeasures, maritime situational awareness, certain kinds of anomaly detection on critical systems - this work exists in very few places.
 
 **People comfortable with restricted publishing.** You will often be unable to describe what you do in detail, publish results or discuss your work at meetups.
 
@@ -87,13 +87,13 @@ For you this has three consequences. A competing offer with a normal timeline ma
 
 If a declaration is refused, you cannot occupy that designated position. The decision is administrative and can generally be objected to and appealed through the applicable legal routes, and reasons may be limited because they can involve intelligence information.
 
-It does not make you unemployable. The vast majority of AI and data work in the Netherlands — including at defence suppliers, in critical infrastructure and at government organisations — involves no clearance requirement at all. It is, however, a reason not to build your entire search around roles that depend on one.
+It does not make you unemployable. The vast majority of AI and data work in the Netherlands - including at defence suppliers, in critical infrastructure and at government organisations - involves no clearance requirement at all. It is, however, a reason not to build your entire search around roles that depend on one.
 
 ## Related Restrictions Worth Knowing
 
 **Export control.** Defence and dual-use technologies fall under export control rules such as the **EU Dual-Use Regulation**, which can restrict who may access certain technical information regardless of clearance status, including on nationality grounds.
 
-**Classified handling.** Working with classified material often means dedicated systems, no personal devices, limited remote work and restrictions on where you may work from — practical constraints that shape daily life more than the screening itself.
+**Classified handling.** Working with classified material often means dedicated systems, no personal devices, limited remote work and restrictions on where you may work from - practical constraints that shape daily life more than the screening itself.
 
 **The AI Act's military exclusion.** AI systems used exclusively for military, defence or national security purposes fall outside the AI Act's scope, though international humanitarian law and national policy on responsible military AI apply. Dual-use and civilian applications at the same employer may still be in scope.
 
@@ -113,7 +113,7 @@ An employer accustomed to these roles answers all of this without hesitation. On
 
 This is the question candidates ask least and regret most.
 
-The constraint is describability. You may be unable to name systems, results or even projects, which makes interviews harder — not impossible, since interviewers in the sector understand the situation, but harder outside it. Mitigate it by keeping a record of transferable specifics you *can* describe: methods, scale, constraints, the type of problem, the role you played.
+The constraint is describability. You may be unable to name systems, results or even projects, which makes interviews harder - not impossible, since interviewers in the sector understand the situation, but harder outside it. Mitigate it by keeping a record of transferable specifics you *can* describe: methods, scale, constraints, the type of problem, the role you played.
 
 The advantage is scarcity. Engineers who combine machine learning with signal processing, safety-critical validation and experience of working under security constraints are genuinely rare, and defence budgets in Europe have been rising. Within the sector, cleared experience is an asset that competitors cannot quickly replicate.
 
@@ -143,7 +143,7 @@ She asks the practical questions before applying. It is a designated position; t
 
 She also raises her own complication: three years working in another country, which she expects will lengthen the process. The employer confirms it probably will.
 
-She applies anyway, starts on unclassified work after two months and receives the declaration five months later. She stops speaking publicly about her work, which she misses, and gains access to problems she could not have worked on anywhere else. Two years later she is one of a handful of people in the country with that combination of experience — and says the honest trade was visibility for depth.
+She applies anyway, starts on unclassified work after two months and receives the declaration five months later. She stops speaking publicly about her work, which she misses, and gains access to problems she could not have worked on anywhere else. Two years later she is one of a handful of people in the country with that combination of experience - and says the honest trade was visibility for depth.
 
 ## Key Takeaways
 
@@ -151,11 +151,11 @@ She applies anyway, starts on unclassified work after two months and receives th
 - Investigations examine judicial, financial and personal history to assess reliability; honesty about difficult facts matters more than the facts themselves.
 - Timelines run to months, long periods abroad complicate them, and most employers cannot start you in the position before the declaration is granted.
 - Expect restrictions: limited publishing, dedicated systems, constrained remote work, periodic re-investigation and duties to report certain changes.
-- Refusal blocks that specific position, not your career — but it argues against building an entire job search around cleared roles.
+- Refusal blocks that specific position, not your career - but it argues against building an entire job search around cleared roles.
 
 ## Where to Start
 
-If a cleared role appeals but the timeline is a problem, look at what comparable technical work exists nearby without a screening requirement — plenty of sensor, safety-critical and infrastructure work does not need one.
+If a cleared role appeals but the timeline is a problem, look at what comparable technical work exists nearby without a screening requirement - plenty of sensor, safety-critical and infrastructure work does not need one.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

@@ -1,4 +1,4 @@
-📊 Miriam built DocketFlow, a legal document automation SaaS, with **Lovable** — and spent six weeks and €8,000 recruiting a security engineer before running the numbers on buy vs build.
+📊 Miriam built DocketFlow, a legal document automation SaaS, with **Lovable** - and spent six weeks and €8,000 recruiting a security engineer before running the numbers on buy vs build.
 
 If you default to "hire someone full-time, it'll pay for itself" without running the scorecard, you'll burn months of runway before a single security gap gets fixed.
 
@@ -12,7 +12,7 @@ If you default to "hire someone full-time, it'll pay for itself" without running
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-DocketFlow's security gaps were fully remediated three weeks before the pilot deadline, and the law firm approved the pilot after reviewing the completed remediation report. (€3,600 (Enterprise Hardening Package) — production-ready and deployed in 11 business days.) 🚀
+DocketFlow's security gaps were fully remediated three weeks before the pilot deadline, and the law firm approved the pilot after reviewing the completed remediation report. (€3,600 (Enterprise Hardening Package) - production-ready and deployed in 11 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/enterprise-buy-vs-build-scorecard-launchstudio
 

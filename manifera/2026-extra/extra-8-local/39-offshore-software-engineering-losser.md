@@ -30,17 +30,17 @@ Ask most engineering leaders how many of their business-critical systems would s
 
 Reducing a bus factor of one to something an organization can actually survive requires a deliberate, sequenced program, not a hopeful conversation about "documenting things eventually," and it breaks down into six concrete practices.
 
-First, the knowledge has to be extracted systematically before it becomes urgent, through structured interviews and paired walkthroughs of the codebase with the departing knowledge-holder, focused specifically on the undocumented integration points and business-logic decisions that live only in one person's head — not a generic "write some docs" request, which routinely produces surface-level documentation that misses exactly the tribal knowledge that matters most.
+First, the knowledge has to be extracted systematically before it becomes urgent, through structured interviews and paired walkthroughs of the codebase with the departing knowledge-holder, focused specifically on the undocumented integration points and business-logic decisions that live only in one person's head - not a generic "write some docs" request, which routinely produces surface-level documentation that misses exactly the tribal knowledge that matters most.
 
-Second, a dependency and integration map needs to be built covering how the ASP.NET WebForms scheduling system and the PHP reporting layer actually exchange data, including any shared database tables, file-based handoffs, or scheduled jobs that aren't obvious from either codebase in isolation — this is frequently where the most dangerous undocumented coupling lives, exactly the kind of connection that breaks silently when the one person who understood it is no longer available to ask.
+Second, a dependency and integration map needs to be built covering how the ASP.NET WebForms scheduling system and the PHP reporting layer actually exchange data, including any shared database tables, file-based handoffs, or scheduled jobs that aren't obvious from either codebase in isolation - this is frequently where the most dangerous undocumented coupling lives, exactly the kind of connection that breaks silently when the one person who understood it is no longer available to ask.
 
-Third, redundancy has to be built deliberately through pairing, not assumed to emerge naturally. Bringing in additional engineering capacity to work directly alongside the departing developer on real maintenance and feature work — not a side documentation project disconnected from actual system changes — is what actually transfers tacit knowledge, because the details that matter most usually surface only when someone is actively working through a real problem together with the person who understands the system.
+Third, redundancy has to be built deliberately through pairing, not assumed to emerge naturally. Bringing in additional engineering capacity to work directly alongside the departing developer on real maintenance and feature work - not a side documentation project disconnected from actual system changes - is what actually transfers tacit knowledge, because the details that matter most usually surface only when someone is actively working through a real problem together with the person who understands the system.
 
-Fourth, an explicit code-ownership matrix should replace the informal, single-person ownership model going forward, assigning at least two people to every business-critical module and integration point, so that no future departure — planned or unplanned — recreates the same bus-factor-of-one situation the company is now working to escape.
+Fourth, an explicit code-ownership matrix should replace the informal, single-person ownership model going forward, assigning at least two people to every business-critical module and integration point, so that no future departure - planned or unplanned - recreates the same bus-factor-of-one situation the company is now working to escape.
 
 Fifth, legacy framework risk itself needs a long-term roadmap decision, separate from the immediate knowledge-transfer urgency: whether the ASP.NET WebForms platform gets modernized to a current .NET framework and the PHP reporting layer gets consolidated or replaced, on a timeline that reduces future dependency on increasingly scarce specialist skills in a shrinking talent pool.
 
-Sixth, the whole knowledge-transfer program has to run against a hard deadline tied to the actual retirement date, with milestones the VP of Engineering can report to leadership, rather than an open-ended "documentation project" with no forcing function — eighteen months sounds like a comfortable runway until the knowledge-transfer work competes, as it always does, against every other urgent priority on the roadmap.
+Sixth, the whole knowledge-transfer program has to run against a hard deadline tied to the actual retirement date, with milestones the VP of Engineering can report to leadership, rather than an open-ended "documentation project" with no forcing function - eighteen months sounds like a comfortable runway until the knowledge-transfer work competes, as it always does, against every other urgent priority on the roadmap.
 
 ## By the Numbers
 
@@ -59,10 +59,10 @@ Sixth, the whole knowledge-transfer program has to run against a hard deadline t
 
 ### What This Looks Like in Practice
 
-1. **Weeks 1-2 — Dependency mapping and knowledge-extraction planning:** The Autonomous Pod maps the scheduling-to-reporting integration and all undocumented coupling points, and structures a paired knowledge-transfer plan against the retirement timeline.
-2. **Weeks 2-4 — Paired maintenance and structured interviews:** New engineering capacity works directly alongside the departing developer on real maintenance tasks, capturing tacit knowledge as it surfaces during actual problem-solving rather than through abstract documentation sessions.
-3. **Weeks 4-6 — Code-ownership matrix and redundancy validation:** Ownership is formally distributed across at least two engineers per critical module, validated by having the new team independently handle a real maintenance request without the original developer's direct involvement.
-4. **Weeks 6-8 — Modernization roadmap and long-term handoff:** A costed roadmap for modernizing the legacy WebForms and PHP systems is delivered, along with full documentation and a validated, multi-person ownership model ready to operate independently.
+1. **Weeks 1-2 - Dependency mapping and knowledge-extraction planning:** The Autonomous Pod maps the scheduling-to-reporting integration and all undocumented coupling points, and structures a paired knowledge-transfer plan against the retirement timeline.
+2. **Weeks 2-4 - Paired maintenance and structured interviews:** New engineering capacity works directly alongside the departing developer on real maintenance tasks, capturing tacit knowledge as it surfaces during actual problem-solving rather than through abstract documentation sessions.
+3. **Weeks 4-6 - Code-ownership matrix and redundancy validation:** Ownership is formally distributed across at least two engineers per critical module, validated by having the new team independently handle a real maintenance request without the original developer's direct involvement.
+4. **Weeks 6-8 - Modernization roadmap and long-term handoff:** A costed roadmap for modernizing the legacy WebForms and PHP systems is delivered, along with full documentation and a validated, multi-person ownership model ready to operate independently.
 
 Losser sits directly on the German border within the Twente region of Overijssel, an area with a long and formative history in textile manufacturing that shaped much of the regional economy for over a century before the industry's broader decline. Engineering teams here inherit a particular version of the bus-factor risk common across older Dutch manufacturing and industrial technology firms: systems built decades ago by long-tenured specialists, in frameworks increasingly absent from new graduates' training, maintained in a labor market too thin to simply hire a replacement when that specialist eventually leaves.
 
@@ -82,7 +82,7 @@ Bogaert Textiel Innovatie NV, a Belgian textile-manufacturing technology company
 Manifera embedded a dedicated Autonomous Pod alongside the departing developer for real maintenance and feature work over several months, mapping the undocumented inventory integration and capturing tacit business logic through structured pairing rather than a documentation sprint. By the retirement date, ownership of every critical module had been distributed across at least two engineers, and the team independently resolved a production issue in the system's first month without the original developer's involvement.
 
 > *"We had eighteen months and one person who understood a system our entire production line depended on. Now we have a documented system and a team that's already proven it can run it without him."*
-> — **VP of Engineering, Bogaert Textiel Innovatie NV, Belgium**
+> - **VP of Engineering, Bogaert Textiel Innovatie NV, Belgium**
 
 ## Undocumented Single-Person Ownership vs. Manifera's Structured Continuity Model
 
@@ -102,7 +102,7 @@ If your organization's institutional knowledge about a business-critical system 
 
 ## Frequently Asked Questions
 
-### (Scenario: VP of Engineering who just learned a key developer plans to retire) We have eighteen months before our sole legacy-system expert retires — is that enough time?
+### (Scenario: VP of Engineering who just learned a key developer plans to retire) We have eighteen months before our sole legacy-system expert retires - is that enough time?
 
 It's workable, but only if the knowledge-transfer program starts immediately and runs against a fixed deadline. Eighteen months sounds comfortable, but structured pairing and dependency mapping compete against every other roadmap priority, and the useful runway shrinks quickly if the program isn't prioritized from day one.
 

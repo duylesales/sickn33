@@ -39,9 +39,9 @@ De standaard B2C AI-werkstroom is staatvol (stateful): de gebruiker stuurt een p
 
 Een Zero Data Retention architectuur is daarentegen 100% **staatloos (stateless)**. Wanneer een zakelijke gebruiker een vertrouwelijk PDF-contract uploadt voor analyse:
 
-1. Ontvangt de backend (bijv. een Next.js API-route of serverless Node/Python service) het bestand en houdt dit **uitsluitend vast in het werkgeheugen (RAM)** — het bestand raakt nooit de harde schijf of tijdelijke schijfopslag aan.
+1. Ontvangt de backend (bijv. een Next.js API-route of serverless Node/Python service) het bestand en houdt dit **uitsluitend vast in het werkgeheugen (RAM)** - het bestand raakt nooit de harde schijf of tijdelijke schijfopslag aan.
 2. De tekst wordt direct in het werkgeheugen geëxtraheerd en via een beveiligde API-verbinding naar het Zero Data Retention endpoint van het LLM gestreamd.
-3. Het LLM genereert de analyse en streamt de tokens via Server-Sent Events of WebSockets rechtstreeks terug naar de browser van de gebruiker — zonder tussentijdse buffering in een databasetabel.
+3. Het LLM genereert de analyse en streamt de tokens via Server-Sent Events of WebSockets rechtstreeks terug naar de browser van de gebruiker - zonder tussentijdse buffering in een databasetabel.
 4. Zodra de serverless functie (Vercel, AWS Lambda) klaar is, wordt het RAM-geheugen direct door het besturingssysteem vrijgegeven. Er is geen expliciete "verwijder-stap" nodig omdat data simpelweg nooit persistent is weggeschreven.
 
 Mocht uw startup vijf minuten later gehackt worden, dan vindt de aanvaller met betrekking tot die transactie een volstrekt lege database.
@@ -60,9 +60,9 @@ U lost dit op via directe workflow-integraties: in plaats van rapporten in uw ei
 
 ## De On-Premise en VPC-Oplossing voor RAG
 
-Rust uw product fundamenteel op Retrieval-Augmented Generation (RAG) — wat een permanente vector-database vereist — dan is volledige zero-retention op uw eigen multi-tenant cloudinfrastructuur technisch onmogelijk.
+Rust uw product fundamenteel op Retrieval-Augmented Generation (RAG) - wat een permanente vector-database vereist - dan is volledige zero-retention op uw eigen multi-tenant cloudinfrastructuur technisch onmogelijk.
 
-De oplossing hiervoor is een **VPC (Virtual Private Cloud) Deployment**. Met Infrastructure-as-Code (Terraform of Pulumi) verpakt u uw complete applicatie — frontend, backend en vector-database — en rolt u deze integraal uit binnen het eigen AWS-, Azure- of Google Cloud-account van de zakelijke klant. U heeft zelf geen toegang tot de data; alle software draait 100% binnen hun eigen netwerkbeveiliging. Commercieel vertaalt zich dit doorgaans naar een lucratief maandelijks licentie- of deployment-tarief ($ 5.000 tot $ 15.000/maand).
+De oplossing hiervoor is een **VPC (Virtual Private Cloud) Deployment**. Met Infrastructure-as-Code (Terraform of Pulumi) verpakt u uw complete applicatie - frontend, backend en vector-database - en rolt u deze integraal uit binnen het eigen AWS-, Azure- of Google Cloud-account van de zakelijke klant. U heeft zelf geen toegang tot de data; alle software draait 100% binnen hun eigen netwerkbeveiliging. Commercieel vertaalt zich dit doorgaans naar een lucratief maandelijks licentie- of deployment-tarief ($ 5.000 tot $ 15.000/maand).
 
 Circa 80% van de AI-projecten bereikt nooit een volwassen productiestadium omdat oprichters deze data-architectuur niet vooraf hebben overdacht. Manifera bouwt deze enterprise-systemen sinds **2014**, met 160+ gerealiseerde projecten voor onder meer Vodafone en TNO vanuit haar Europese hoofdkantoor aan de Herengracht 420 in Amsterdam. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Lees meer op [Manifera's webapp-ontwikkeling diensten](https://www.manifera.com/services/web-app-develop/).
 
@@ -90,7 +90,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om een staatloze zero-data
 
 **Resultaat:** Drie grote commerciële banken aangesloten als klant die strikte on-premise-style beveiliging vereisten.
 
-**Kosten & Tijdlijn:** €3.500 (Zero Retention Pakket) — productieklaar en binnen 8 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €3.500 (Zero Retention Pakket) - productieklaar en binnen 8 werkdagen live opgeleverd.
 
 ---
 

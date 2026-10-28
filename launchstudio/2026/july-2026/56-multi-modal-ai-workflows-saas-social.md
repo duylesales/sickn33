@@ -1,4 +1,4 @@
-🔥 Nova built a prototype using **Lovable** — nova, a startup founder, used **lovable** to build a podcast show-notes saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Nova built a prototype using **Lovable** - nova, a startup founder, used **lovable** to build a podcast show-notes saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Nova's application achieved production readiness: Nova supported audio uploads up to 500MB, expanding the service addressable market. (€2,900 (Large File Processing Package) — production-ready and deployed in 9 business days.). 🚀
+Nova's application achieved production readiness: Nova supported audio uploads up to 500MB, expanding the service addressable market. (€2,900 (Large File Processing Package) - production-ready and deployed in 9 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/multi-modal-ai-workflows-saas
 

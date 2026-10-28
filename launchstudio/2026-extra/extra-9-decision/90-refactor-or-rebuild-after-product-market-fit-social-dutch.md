@@ -3,7 +3,7 @@
 Elke engineer die ooit een bestaande codebase overnam, had dezelfde foute reflex: 🧠
 
 ❌ "Helemaal opnieuw beginnen is schoner" is een van de meest gemaakte fouten in tech
-❌ De rommelige stukken bevatten zelden de meeste moeite — de saaie uitzonderingen (edge cases) wél
+❌ De rommelige stukken bevatten zelden de meeste moeite - de saaie uitzonderingen (edge cases) wél
 ❌ "Het dit keer direct goed doen" betekent alle ongedocumenteerde regels opnieuw ontdekken via fouten
 ❌ Netscape's driejarige herbouw kostte hen de browsermarkt die ze nooit meer terugkregen
 

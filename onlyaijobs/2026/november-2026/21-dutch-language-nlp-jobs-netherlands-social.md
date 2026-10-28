@@ -4,7 +4,7 @@
 
 🏛️ GPT-NL, developed by TNO, SURF and the Netherlands Forensic Institute, reflects the interest in Dutch models for sensitive public applications.
 
-✅ Most of this work is titled data scientist, AI specialist or legal knowledge engineer — or posted in Dutch as "taaltechnologie".
+✅ Most of this work is titled data scientist, AI specialist or legal knowledge engineer - or posted in Dutch as "taaltechnologie".
 
 🔎 Browse current jobs: https://onlyaijobs.eu/jobs
 

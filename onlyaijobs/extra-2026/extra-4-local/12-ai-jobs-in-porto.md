@@ -41,7 +41,7 @@ Content Format: Career Guide
 }
 </script>
 
-Porto has changed a great deal over the past decade. Once known mainly for its port wine and historic riverside, the city now has a vibrant technology scene, a strong engineering university and research institutes that work closely with industry. For students and recent graduates, AI jobs in Porto offer a realistic way to start a machine learning career in a city with a manageable size, a strong community and, compared with many Western European capitals, a lower cost of living — though rising housing costs are a real concern. This guide explains how the Porto AI ecosystem works, which entry-level roles exist, how to build a profile that gets noticed and when it makes sense to look beyond Portugal.
+Porto has changed a great deal over the past decade. Once known mainly for its port wine and historic riverside, the city now has a vibrant technology scene, a strong engineering university and research institutes that work closely with industry. For students and recent graduates, AI jobs in Porto offer a realistic way to start a machine learning career in a city with a manageable size, a strong community and, compared with many Western European capitals, a lower cost of living - though rising housing costs are a real concern. This guide explains how the Porto AI ecosystem works, which entry-level roles exist, how to build a profile that gets noticed and when it makes sense to look beyond Portugal.
 
 ## Why Porto for a First AI Role
 
@@ -140,7 +140,7 @@ Porto's technology employers are spread across several areas: the city centre an
 Graduate postings for AI jobs in Porto vary in quality. Some describe the problem, the team and the tools clearly; others list every technology in the field. A few signals help you separate strong opportunities from weak ones:
 
 - **Specific problem descriptions** usually indicate a team that knows what it is building.
-- **Realistic requirements** for a junior role — fundamentals, curiosity, a portfolio — suggest the employer is prepared to train.
+- **Realistic requirements** for a junior role - fundamentals, curiosity, a portfolio - suggest the employer is prepared to train.
 - **Mention of mentoring, code review or a learning budget** signals investment in juniors.
 - **Clear information on contract type and pay** shows transparency; the EU Pay Transparency Directive will make pay information before interviews a requirement across the EU.
 - **Vague titles such as "AI ninja" or long lists of unrelated tools** often indicate unclear expectations.
@@ -161,7 +161,7 @@ Most graduates receive many rejections before a first offer, and this is normal 
 
 A graduate in informatics engineering from FEUP completed a thesis on anomaly detection in industrial sensors at a research institute. She receives two offers: a junior researcher contract at the institute and a junior data scientist position at a Porto software consultancy serving European clients.
 
-The research role offers deeper technical work and the possibility of a PhD, while the consultancy offers slightly higher pay, variety and exposure to production systems. She talks to people in both roles, asks about mentoring and future paths and chooses the consultancy, agreeing with her former supervisor to stay in touch for a possible industrial PhD later. After two years, she has deployed models for three clients and moves into a machine learning engineer role in a Porto product company — a common path for Porto graduates who want both depth and production experience.
+The research role offers deeper technical work and the possibility of a PhD, while the consultancy offers slightly higher pay, variety and exposure to production systems. She talks to people in both roles, asks about mentoring and future paths and chooses the consultancy, agreeing with her former supervisor to stay in touch for a possible industrial PhD later. After two years, she has deployed models for three clients and moves into a machine learning engineer role in a Porto product company - a common path for Porto graduates who want both depth and production experience.
 
 ## Key Takeaways
 

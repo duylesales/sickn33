@@ -1,4 +1,4 @@
-🔥 Lily bouwde een prototype met **Cursor** — Lily, een SaaS-oprichter, gebruikte Cursor om een AI-taaksamenvatter add-on te bouwen, maar haar facturatiesysteem crashte toen legacy-gebruikers de add-on wilden afrekenen. 🧠
+🔥 Lily bouwde een prototype met **Cursor** - Lily, een SaaS-oprichter, gebruikte Cursor om een AI-taaksamenvatter add-on te bouwen, maar haar facturatiesysteem crashte toen legacy-gebruikers de add-on wilden afrekenen. 🧠
 
 Het succesvol monetizen van AI-functies bij bestaande gebruikers vraagt om modulaire add-ons, in-workflow teasers en gewoontevormende bèta's.
 
@@ -12,7 +12,7 @@ Het succesvol monetizen van AI-functies bij bestaande gebruikers vraagt om modul
 
 Bij **LaunchStudio** lossen we exact dit type facturatie- en software-integratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Lily's platform zag een enorme stijging: 28% van de bestaande gebruikersbasis activeerde en betaalde de AI-add-on binnen de eerste maand. (€1.900 (Stripe Refactoring Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Lily's platform zag een enorme stijging: 28% van de bestaande gebruikersbasis activeerde en betaalde de AI-add-on binnen de eerste maand. (€1.900 (Stripe Refactoring Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/upselling-ai-features-existing-saas-customers
 

@@ -33,7 +33,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 You posted a job listing: "Developer needed to make my AI-built prototype production-ready." Fifty-three applications arrived. Not a single applicant had experience working with Lovable, Bolt, or Cursor-generated codebases.
 
-This is the developer gap nobody talks about. There are millions of software developers in the world. Very few of them qualify as AI software developers — engineers who understand AI-generated code patterns well enough to improve them without rewriting them.
+This is the developer gap nobody talks about. There are millions of software developers in the world. Very few of them qualify as AI software developers - engineers who understand AI-generated code patterns well enough to improve them without rewriting them.
 
 The difference is not theoretical. It determines whether your launch takes three weeks or three months, costs €3,000 or €30,000, and preserves your interface or destroys it.
 
@@ -98,7 +98,7 @@ The challenge: verifying freelancer expertise with AI codebases is difficult. As
 **Timeline:** 1–3 weeks
 **Best for:** Founders who need production infrastructure built once, correctly, without ongoing commitments
 
-[LaunchStudio](https://launchstudio.eu/en/) was created specifically for this use case. The engineering team at [Manifera](https://www.manifera.com/about-us/) works with AI-generated codebases daily — they understand the patterns, know the vulnerabilities, and have refined a systematic process for production-hardening them.
+[LaunchStudio](https://launchstudio.eu/en/) was created specifically for this use case. The engineering team at [Manifera](https://www.manifera.com/about-us/) works with AI-generated codebases daily - they understand the patterns, know the vulnerabilities, and have refined a systematic process for production-hardening them.
 
 Manifera's 120+ engineers, working from their development center at 10 Pho Quang Street, Ho Chi Minh City, have shipped 160+ projects under the leadership of Dutch founder Herre Roelevink. The company's European headquarters at Herengracht 420, Amsterdam manages quality and client relationships. The Singapore office at 100 Tras Street provides additional APAC coverage.
 
@@ -136,14 +136,14 @@ He hired three developers sequentially:
 
 Total spend on developers: €19,200 over 8 weeks. No working product.
 
-Sander found LaunchStudio through the LaunchStudio website calculator. The Manifera team reviewed his codebase — including the damage from three previous developers — in a 15-minute call. They identified that the original Lovable frontend was solid, but the modifications from developers 2 and 3 had introduced structural problems. Their approach: revert to the original Lovable code, then build clean backend infrastructure from scratch.
+Sander found LaunchStudio through the LaunchStudio website calculator. The Manifera team reviewed his codebase - including the damage from three previous developers - in a 15-minute call. They identified that the original Lovable frontend was solid, but the modifications from developers 2 and 3 had introduced structural problems. Their approach: revert to the original Lovable code, then build clean backend infrastructure from scratch.
 
 **Result:** MoneyMind launched 10 business days later with proper Stripe billing, secure bank data handling, and AI recommendations running through a server-side proxy. Sander now has 89 subscribers at €12.99/month, generating €1,156/month recurring revenue.
 
-> *"I spent €19,000 on three developers who could not work with AI-generated code. LaunchStudio spent €3,200 and launched in 10 days. The difference was not price — it was that they actually understood Lovable code."*
-> — **Sander Dijkstra, Founder, MoneyMind (Groningen)**
+> *"I spent €19,000 on three developers who could not work with AI-generated code. LaunchStudio spent €3,200 and launched in 10 days. The difference was not price - it was that they actually understood Lovable code."*
+> - **Sander Dijkstra, Founder, MoneyMind (Groningen)**
 
-**Cost & Timeline:** €3,200 (Launch Ready Package) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €3,200 (Launch Ready Package) - production-ready and deployed in 10 business days.
 
 ---
 
@@ -151,11 +151,11 @@ Sander found LaunchStudio through the LaunchStudio website calculator. The Manif
 
 ### (Scenario: Founder about to hire their first developer) How do I find a developer who understands AI-generated code?
 
-Look for specific experience with Lovable, Bolt, or Cursor codebases — not just general AI tool usage. Ask for portfolio examples of AI-generated projects taken to production. If you cannot find individual developers, consider LaunchStudio, whose entire engineering team specializes in AI-generated code production-hardening.
+Look for specific experience with Lovable, Bolt, or Cursor codebases - not just general AI tool usage. Ask for portfolio examples of AI-generated projects taken to production. If you cannot find individual developers, consider LaunchStudio, whose entire engineering team specializes in AI-generated code production-hardening.
 
 ### (Scenario: Founder who already hired a developer who wants to rebuild everything) My developer says my AI code needs to be completely rewritten. Is that true?
 
-In 90% of cases, no. AI-generated frontends (React components, routing, styling) are production-quality. What needs replacing is the backend infrastructure — database access patterns, security, payment processing. A developer who insists on rebuilding the frontend likely does not understand AI-generated code patterns.
+In 90% of cases, no. AI-generated frontends (React components, routing, styling) are production-quality. What needs replacing is the backend infrastructure - database access patterns, security, payment processing. A developer who insists on rebuilding the frontend likely does not understand AI-generated code patterns.
 
 ### (Scenario: CTO evaluating in-house vs. outsourced AI development) Should I build an in-house AI software development team or outsource?
 
@@ -167,7 +167,7 @@ Hourly rates incentivize developers to take longer. Fixed pricing incentivizes e
 
 ### (Scenario: Developer curious about transitioning to AI software development) How can traditional developers upskill to become AI software developers?
 
-Build five projects using Lovable, Bolt, and Cursor. Then production-harden each one — add proper security, payments, and deployment. This hands-on experience teaches you the patterns, gaps, and infrastructure needs that define AI software development. Manifera actively recruits developers with this combined skillset.
+Build five projects using Lovable, Bolt, and Cursor. Then production-harden each one - add proper security, payments, and deployment. This hands-on experience teaches you the patterns, gaps, and infrastructure needs that define AI software development. Manifera actively recruits developers with this combined skillset.
 
 <script type="application/ld+json">
 {

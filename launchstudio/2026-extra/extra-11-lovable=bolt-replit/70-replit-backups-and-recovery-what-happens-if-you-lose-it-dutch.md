@@ -20,7 +20,7 @@ Doelgroep: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Tijdens een agent-sessie om elf uur 's ochtends krijgt de AI de opdracht om een ongebruikte kolom op te ruimen. Het genereert een migratie, voert deze uit en meldt succes. De kolom was echter helemaal niet ongebruikt — een rapport dat vier maanden eerder was geschreven las deze nog steeds uit — en de migratie dropte de kolom samen met veertien maanden aan historische waarden.
+Tijdens een agent-sessie om elf uur 's ochtends krijgt de AI de opdracht om een ongebruikte kolom op te ruimen. Het genereert een migratie, voert deze uit en meldt succes. De kolom was echter helemaal niet ongebruikt - een rapport dat vier maanden eerder was geschreven las deze nog steeds uit - en de migratie dropte de kolom samen met veertien maanden aan historische waarden.
 
 Er lijkt niets stuk. De applicatie draait gewoon door. Maar de data is verdwenen, en de vraag die bepaalt hoe de rest van je week verloopt, is een vraag die niemand eerder heeft gesteld: wat kan er precies worden hersteld, vanaf welk tijdstip, en door wie?
 
@@ -32,17 +32,17 @@ Ze vereisen elk een andere voorbereiding, en een plan voor de ene dekt de andere
 
 **Het platform heeft een storing.** Een uitval bij de cloudprovider, een regio-incident of een hardwarefout. Dit is waar mensen aan denken bij het woord "backup", en het is statistisch gezien de minst waarschijnlijke van de drie. Managed providers vangen dit doorgaans beter op dan je zelf zou kunnen.
 
-**Iemand vernietigt data.** Een databasemigratie die een kolom verwijdert, een SQL-query zonder `WHERE`-filter, een bulk-delete met een foutieve voorwaarde, of een synchronisatiescript dat goede records overschrijft met corrupte data. Dit is veruit de meest voorkomende oorzaak van reëel dataverlies bij kleine softwareproducten — en de schade wordt aangericht door een geautoriseerde actie in plaats van een technische crash.
+**Iemand vernietigt data.** Een databasemigratie die een kolom verwijdert, een SQL-query zonder `WHERE`-filter, een bulk-delete met een foutieve voorwaarde, of een synchronisatiescript dat goede records overschrijft met corrupte data. Dit is veruit de meest voorkomende oorzaak van reëel dataverlies bij kleine softwareproducten - en de schade wordt aangericht door een geautoriseerde actie in plaats van een technische crash.
 
-**Je verliest de toegang.** Een geblokkeerd account, een verlopen creditcard, een domeinnaam geregistreerd door een onbereikbare ex-collega, of een workspace die eigendom was van een vertrokken freelancer. Er is geen data verloren gegaan, maar je kunt er simpelweg niet meer bij — wat vanuit het perspectief van je klanten exact hetzelfde resultaat oplevert.
+**Je verliest de toegang.** Een geblokkeerd account, een verlopen creditcard, een domeinnaam geregistreerd door een onbereikbare ex-collega, of een workspace die eigendom was van een vertrokken freelancer. Er is geen data verloren gegaan, maar je kunt er simpelweg niet meer bij - wat vanuit het perspectief van je klanten exact hetzelfde resultaat oplevert.
 
-Het tweede scenario is waar je je primair op moet voorbereiden, en het is precies het scenario waartegen standaard platformbackups het minst effectief beschermen — want vanuit het systeem bezien ging er immers niets mis.
+Het tweede scenario is waar je je primair op moet voorbereiden, en het is precies het scenario waartegen standaard platformbackups het minst effectief beschermen - want vanuit het systeem bezien ging er immers niets mis.
 
 ## Wat Je Platform Werkelijk Backupt
 
 Lees de documentatie van je provider nauwkeurig in plaats van aannames te doen, want de dekking is vaak veel beperkter dan verwacht.
 
-**Beheerde databases** beschikken doorgaans over geautomatiseerde backups met een specifieke bewaartermijn (retention window). De betere abonnementen bieden point-in-time recovery — de mogelijkheid om de staat van de database te herstellen naar een exact tijdstip, wat precies is wat je nodig hebt bij een per ongeluk gedropte kolom. Controleer welk type je hebt en wat de bewaartermijn is; "we hebben backups" en "we hebben backups die de afgelopen zeven dagen dekken" zijn wezenlijk verschillende zinnen wanneer een dataprobleem pas na drie weken aan het licht komt.
+**Beheerde databases** beschikken doorgaans over geautomatiseerde backups met een specifieke bewaartermijn (retention window). De betere abonnementen bieden point-in-time recovery - de mogelijkheid om de staat van de database te herstellen naar een exact tijdstip, wat precies is wat je nodig hebt bij een per ongeluk gedropte kolom. Controleer welk type je hebt en wat de bewaartermijn is; "we hebben backups" en "we hebben backups die de afgelopen zeven dagen dekken" zijn wezenlijk verschillende zinnen wanneer een dataprobleem pas na drie weken aan het licht komt.
 
 **Object storage** heeft versiebeheer (versioning) mogelijk niet standaard ingeschakeld. Zonder versiebeheer is een overschreven of verwijderd bestand definitief weg.
 
@@ -50,7 +50,7 @@ Lees de documentatie van je provider nauwkeurig in plaats van aannames te doen, 
 
 **Secrets en configuratievariabelen** worden over het algemeen op geen enkele bruikbare manier geback-upt. Het verliezen van je werkomgeving betekent vaak dat je elke API-sleutel en omgevingsvariabele handmatig moet reconstrueren.
 
-**Status opgeslagen in externe diensten** — actieve abonnementen bij je payment provider, contacten in je e-mailmarketingtool — behoort toe aan die platforms, niet aan jou. Het terugzetten van je database naar een eerder tijdstip draait die externe status niet terug. Deze discrepantie is vaak het meest complexe onderdeel van een echt dataherstel.
+**Status opgeslagen in externe diensten** - actieve abonnementen bij je payment provider, contacten in je e-mailmarketingtool - behoort toe aan die platforms, niet aan jou. Het terugzetten van je database naar een eerder tijdstip draait die externe status niet terug. Deze discrepantie is vaak het meest complexe onderdeel van een echt dataherstel.
 
 ## De Twee Getallen Die Een Backup Definiëren
 
@@ -100,7 +100,7 @@ Bewaar dit draaiboek op een plek die buiten het beschreven systeem valt. Dat kli
 
 ## Wat Je Klanten Vertelt Terwijl Je Het Probleem Oplost
 
-Het technische herstel is slechts de helft van het incident. De andere helft is wat de mensen horen die afhankelijk zijn van jouw software — en die communicatie bepaalt of ze blijven of vertrekken.
+Het technische herstel is slechts de helft van het incident. De andere helft is wat de mensen horen die afhankelijk zijn van jouw software - en die communicatie bepaalt of ze blijven of vertrekken.
 
 **Informeer hen voordat zij jou moeten waarschuwen.** Een klant die het probleem zelf ontdekt en contact opneemt, heeft al geconcludeerd dat je niet oplette. Dezelfde klant die proactief door jou wordt geïnformeerd, concludeert dat je de situatie onder controle hebt. De feiten zijn identiek; de klantrelatie is dat allerminst.
 
@@ -110,7 +110,7 @@ Het technische herstel is slechts de helft van het incident. De andere helft is 
 
 **Geef praktische instructies voor de tussentijd.** Vertel wat gebruikers moeten doen: tijdelijk stoppen met invoeren, papieren bonnen bewaren, of teruggrijpen naar de export van vorige week. Concrete instructies zijn wat klanten zich achteraf positief herinneren.
 
-**Volg op zodra het incident is afgerond.** Leg uit wat er gebeurde, wat er eventueel verloren is gegaan, en welke maatregelen je hebt getroffen om herhaling te voorkomen. Dit evaluatiebericht herstelt het vertrouwen — en het is het bericht dat veel oprichters overslaan zodra de acute crisis voorbij is.
+**Volg op zodra het incident is afgerond.** Leg uit wat er gebeurde, wat er eventueel verloren is gegaan, en welke maatregelen je hebt getroffen om herhaling te voorkomen. Dit evaluatiebericht herstelt het vertrouwen - en het is het bericht dat veel oprichters overslaan zodra de acute crisis voorbij is.
 
 **Wijs vooraf aan wie de communicatie verzorgt.** In een tweekoppig team lijkt dat overbodig, totdat beide oprichters aannemen dat de ander de communicatie oppakt terwijl beiden tegelijk in de database aan het spitten zijn.
 
@@ -122,28 +122,28 @@ Voor een draaiend softwareproduct vergt dit een halve dag inrichting en één ge
 
 LaunchStudio verzorgt dit standaard binnen onze productiegereedheidsaudits en in onze managed hosting-dienstverlening vanaf €49 per maand, waarbij hersteloefeningen periodiek worden herhaald in plaats van eenmalig uitgevoerd. Onze engineers zijn afkomstig van Manifera: elf jaar ervaring in het beheren van bedrijfskritische productiesystemen voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
-[Vertel ons welke data jouw applicatie beheert](https://launchstudio.eu/nl/#contact) voor een eerlijke analyse van je werkelijke herstelcapaciteit — doorgaans binnen één werkdag — of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
+[Vertel ons welke data jouw applicatie beheert](https://launchstudio.eu/nl/#contact) voor een eerlijke analyse van je werkelijke herstelcapaciteit - doorgaans binnen één werkdag - of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
 
 ## Echt voorbeeld
 
 ### Veertien Maanden Voorraadhistorie Gewist in Eén Migratie
 
-Daan Poelman bouwde Voorraadje op Replit: een voorraadbeheertool die gebruikt wordt door zes gespecialiseerde winkels rondom Venlo — een fietsenmaker, twee boekhandels, een verlichtingsspeciaalzaak en twee ijzerwarenzaken.
+Daan Poelman bouwde Voorraadje op Replit: een voorraadbeheertool die gebruikt wordt door zes gespecialiseerde winkels rondom Venlo - een fietsenmaker, twee boekhandels, een verlichtingsspeciaalzaak en twee ijzerwarenzaken.
 
 Tijdens een agent-sessie waarin werd gevraagd om het databaseschema op te schonen, genereerde de AI een migratie die een kolom verwijderde die als ongebruikt werd aangemerkt. In deze kolom stond de inkoopprijs waarmee elke voorraadmutatie was geregistreerd. De kolom werd op geen enkel scherm getoond, maar het jaarlijkse fiscale waarderingsrapport berekende er wel de totale balanswaarde mee. Veertien maanden aan data over circa 90.000 voorraadmutaties werden gewist.
 
 Daan ontdekte het verlies pas negen dagen later, toen een winkelier zijn jaarlijkse voorraadwaardering opvroeg en alle totalen op nul uitkwamen.
 
-Het herstel was complex en tijdrovend. De automatische backups van het platform hadden een retentieperiode van zeven dagen — die al verstreken was. Point-in-time recovery was niet geactiveerd op zijn abonnementsvorm. Wat Daan redde, was een handmatige export die hij drie maanden eerder voor een losse test had gedownload en in een map op zijn laptop had laten staan. Hierdoor kon drie maanden aan inkoopprijzen worden hersteld, maar bleef een gat van zes weken over.
+Het herstel was complex en tijdrovend. De automatische backups van het platform hadden een retentieperiode van zeven dagen - die al verstreken was. Point-in-time recovery was niet geactiveerd op zijn abonnementsvorm. Wat Daan redde, was een handmatige export die hij drie maanden eerder voor een losse test had gedownload en in een map op zijn laptop had laten staan. Hierdoor kon drie maanden aan inkoopprijzen worden hersteld, maar bleef een gat van zes weken over.
 
 Zeven werkdagen aan herstelwerk: de drie maanden oude export werd teruggezet in een aparte database en de ontbrekende kolom werd gereconstrueerd door mutaties te matchen op id en timestamp; de zes onherstelbare weken werden voor vier van de zes winkels handmatig herbouwd aan de hand van bewaarde inkoopfacturen, en voor de overige twee na overleg afgeboekt; point-in-time recovery werd geactiveerd; een wekelijkse automatische export naar een tweede cloudprovider werd ingericht; versiebeheer op bestandsopslag werd ingeschakeld; soft deletion en een audit-log werden toegevoegd aan de voorraadtabellen; de database-inloggegevens van de app werden gescheiden van beheerdersrechten met DDL-bevoegdheid, zodat een AI-agent nooit meer tabellen kan verwijderen; er werd een strikte regel ingevoerd dat migraties met data-impact door Daan persoonlijk worden gereviewd en voorafgegaan worden door een handmatige snapshot; en een volledige herstelprocedure werd gerepeteerd en geklokt op 34 minuten.
 
 **Resultaat:** De twee winkels die zes weken aan waarderingshistorie verloren, bleven klant, hoewel Daan het gesprek omschrijft als het moeilijkste uit zijn ondernemersbestaan. Sindsdien is er geen byte aan data meer verloren gegaan en is het herstelproces al tweemaal opnieuw geoefend.
 
 > *"Mijn backups waren zeven dagen oud en de fout was negen dagen oud. Een verschil van twee dagen. De enige reden dat we iets konden redden, was een vergeten bestand op mijn eigen laptop."*
-> — **Daan Poelman, Oprichter, Voorraadje (Venlo)**
+> - **Daan Poelman, Oprichter, Voorraadje (Venlo)**
 
-**Kosten & Doorlooptijd:** €3.800 (datareconstructie, point-in-time recovery, geautomatiseerde externe export, soft deletion en audit-trail, scheiding van databaserechten, hersteloefening) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** €3.800 (datareconstructie, point-in-time recovery, geautomatiseerde externe export, soft deletion en audit-trail, scheiding van databaserechten, hersteloefening) - afgerond in 7 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -185,7 +185,7 @@ Ja. Een wekelijkse geautomatiseerde export van je database en bestanden naar een
       "name": "Wat is de meest waarschijnlijke oorzaak van dataverlies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een geautoriseerde actie — zoals een migratie die een kolom verwijdert, een ongefilterde query of een foutieve bulkverwijdering — in plaats van een technische platformstoring."
+        "text": "Een geautoriseerde actie - zoals een migratie die een kolom verwijdert, een ongefilterde query of een foutieve bulkverwijdering - in plaats van een technische platformstoring."
       }
     },
     {

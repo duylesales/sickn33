@@ -6,7 +6,7 @@ If you hired a solitary **dedicated developer** (a freelance "Rockstar") to buil
 
 Rockstars optimize for their own typing speed. They write clever, highly compressed logic. They skip unit tests. When they leave in Month 6, you are left with 150,000 lines of undocumented code that nobody else understands. The diagnosis from the next team? *"We have to rewrite it from scratch."*
 
-*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."* — Martin Fowler
+*"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."* - Martin Fowler
 
 True engineering velocity doesn't come from isolated geniuses typing quickly. It comes from Engineering Pods operating with shared context, mandatory peer reviews, and automated CI/CD pipelines that force knowledge out of individual heads and into the system.
 

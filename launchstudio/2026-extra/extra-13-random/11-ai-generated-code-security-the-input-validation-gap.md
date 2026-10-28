@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Generated Code Security: The Input Validation Gap, Explained",
-  "description": "Why AI generated code so often validates input in the browser but not on the server, what that enables — mass assignment, stored XSS, oversized payloads — and a practical pattern for closing the gap with schema validation at every boundary.",
+  "description": "Why AI generated code so often validates input in the browser but not on the server, what that enables - mass assignment, stored XSS, oversized payloads - and a practical pattern for closing the gap with schema validation at every boundary.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-11",
@@ -21,13 +21,13 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Ask Cursor to build a signup form and you will get polished validation: a red border when the email is malformed, a strength meter on the password, a disabled submit button until everything is filled in. Look at the API route that receives the form and, very often, you will find it trusts whatever arrives. That asymmetry — careful in the browser, trusting on the server — is one of the most consistent patterns in AI generated code security, and it is the root of several vulnerability classes at once.
+Ask Cursor to build a signup form and you will get polished validation: a red border when the email is malformed, a strength meter on the password, a disabled submit button until everything is filled in. Look at the API route that receives the form and, very often, you will find it trusts whatever arrives. That asymmetry - careful in the browser, trusting on the server - is one of the most consistent patterns in AI generated code security, and it is the root of several vulnerability classes at once.
 
 This article is for founders who can read code and want to understand why the gap exists, what it enables, and how to close it systematically rather than endpoint by endpoint.
 
 ## Why AI Generated Code Security Has This Gap
 
-AI coding tools respond to what you can see. When you prompt for a form, you are describing a user experience, and the model produces one. Frontend validation is visible in the preview; you can test it by typing a bad email. Server-side validation is invisible in a demo — the frontend never sends bad data, so the server's lack of checks never shows.
+AI coding tools respond to what you can see. When you prompt for a form, you are describing a user experience, and the model produces one. Frontend validation is visible in the preview; you can test it by typing a bad email. Server-side validation is invisible in a demo - the frontend never sends bad data, so the server's lack of checks never shows.
 
 There is also a training-data effect. Tutorials and example repositories frequently show frontend validation in detail and leave the API as a minimal "save the body to the database" handler for brevity. The model learns that shape.
 
@@ -37,9 +37,9 @@ The result: the browser acts as the only gatekeeper. But the browser is not your
 
 **Mass assignment.** If the API takes the request body and writes it straight to the database, a user can add fields the form never showed. Signing up with `"role": "admin"` or updating a profile with `"plan": "enterprise"` works if the server does not restrict which fields are accepted. This is especially common with ORMs and Supabase client calls that accept whole objects.
 
-**Stored cross-site scripting (XSS).** If user text — a comment, a project name, a bio — is saved without validation and later rendered without escaping, a script placed in it runs in other users' browsers. React escapes by default, but AI-generated code often uses `dangerouslySetInnerHTML` to render formatted text, or passes content into Markdown renderers configured to allow raw HTML.
+**Stored cross-site scripting (XSS).** If user text - a comment, a project name, a bio - is saved without validation and later rendered without escaping, a script placed in it runs in other users' browsers. React escapes by default, but AI-generated code often uses `dangerouslySetInnerHTML` to render formatted text, or passes content into Markdown renderers configured to allow raw HTML.
 
-**Type confusion.** A field expected to be a number arrives as a string, an array or an object. Loosely typed handlers accept it, and downstream logic behaves unpredictably — a quantity of `"-5"`, a price of `{}`, a date of `"yesterday"`.
+**Type confusion.** A field expected to be a number arrives as a string, an array or an object. Loosely typed handlers accept it, and downstream logic behaves unpredictably - a quantity of `"-5"`, a price of `{}`, a date of `"yesterday"`.
 
 **Oversized payloads.** Without size limits, one request can carry megabytes of text into a field meant for a name, bloating the database or crashing a function that processes it.
 
@@ -47,7 +47,7 @@ The result: the browser acts as the only gatekeeper. But the browser is not your
 
 ## The Pattern That Closes It
 
-The fix is not to sprinkle checks into every handler. It is to define, once per endpoint, exactly what the server accepts — and reject everything else before any logic runs.
+The fix is not to sprinkle checks into every handler. It is to define, once per endpoint, exactly what the server accepts - and reject everything else before any logic runs.
 
 In a TypeScript stack, a schema library such as Zod makes this concise:
 
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
 }
 ```
 
-Three details matter. `.strict()` turns mass assignment from a vulnerability into a validation error. Length limits handle oversized payloads. And only the parsed result — never the raw body — is passed onwards.
+Three details matter. `.strict()` turns mass assignment from a vulnerability into a validation error. Length limits handle oversized payloads. And only the parsed result - never the raw body - is passed onwards.
 
 The same schema can be shared with the frontend so both sides agree, which also removes a class of bugs where the browser allows something the server later rejects.
 
@@ -102,7 +102,7 @@ Forms are the obvious place for validation, but AI generated code security depen
 - **Query parameters and route parameters.** A `?limit=1000000` or `?sort=password` can turn a harmless list endpoint into a performance or data-exposure problem. Validate and cap them.
 - **Webhooks from third parties.** Payment, email and CRM webhooks deliver JSON you did not write. Verify signatures and validate the shape before trusting fields.
 - **File uploads.** Check the actual content type (magic bytes), not the extension; enforce size limits; store privately; strip metadata.
-- **Imports (CSV, Excel).** Imported rows need the same schema validation as form fields — plus protection against formula injection when the data is later exported to spreadsheets (cells beginning with `=`, `+`, `-` or `@`).
+- **Imports (CSV, Excel).** Imported rows need the same schema validation as form fields - plus protection against formula injection when the data is later exported to spreadsheets (cells beginning with `=`, `+`, `-` or `@`).
 - **Headers and cookies.** Values like `X-Forwarded-For` or custom headers are attacker-controlled unless your infrastructure sets them.
 - **AI model output.** If your app uses a model to generate text or structured data, validate the output as strictly as user input before storing or acting on it.
 
@@ -116,7 +116,7 @@ With forty endpoints, validation must be systematic or it will drift. A structur
 4. **A lint or CI check** that fails if a route handler reads `req.json()` without going through the wrapper.
 5. **Rejection tests** per endpoint: one test sends an extra field, one sends a wrong type.
 
-With this in place, adding an endpoint without validation becomes harder than adding one with it — which is exactly the property you want when an AI tool is generating new handlers.
+With this in place, adding an endpoint without validation becomes harder than adding one with it - which is exactly the property you want when an AI tool is generating new handlers.
 
 ## Output Encoding in Different Contexts
 
@@ -144,13 +144,13 @@ A useful review question for any AI-generated schema is: "what is the worst vali
 
 ## A Five-Minute Check You Can Run Today
 
-Open your browser's developer tools, submit your profile form, and copy the request as a fetch or curl command. Add a field the form does not have — `"role": "admin"` or `"plan": "pro"` — and send it again. Then reload your profile. If the extra field was saved, your app has a mass-assignment gap and needs server-side schemas before launch. If the request was rejected with a clear 400 response, the boundary is doing its job. Repeat the test for the two or three forms that matter most: signup, profile and anything touching payments or permissions.
+Open your browser's developer tools, submit your profile form, and copy the request as a fetch or curl command. Add a field the form does not have - `"role": "admin"` or `"plan": "pro"` - and send it again. Then reload your profile. If the extra field was saved, your app has a mass-assignment gap and needs server-side schemas before launch. If the request was rejected with a clear 400 response, the boundary is doing its job. Repeat the test for the two or three forms that matter most: signup, profile and anything touching payments or permissions.
 
 ## Why This Is Worth a Second Pair of Eyes
 
 Input validation is easy to understand and tedious to apply consistently. An app with forty endpoints needs forty schemas, and the one you forget is the one that matters. It is also the kind of fix AI tools can undo: regenerate a handler and the schema may quietly disappear.
 
-LaunchStudio's review treats validation as a system: a schema at every server boundary, a shared definition with the frontend, output sanitisation where HTML is rendered, and a CSP header as a safety net — plus a small test per endpoint that sends a disallowed field and expects rejection, so regressions are caught in CI. The engineering comes from Manifera, which has hardened web applications for enterprise clients for more than eleven years from its development centre on Pho Quang Street in Ho Chi Minh City and its offices in Amsterdam and Singapore; Manifera's own founder began his career in cybersecurity. If you would like that pass on your codebase, [describe your project](https://launchstudio.eu/en/#contact) and you will hear back within a working day. Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice applies the same standards at larger scale.
+LaunchStudio's review treats validation as a system: a schema at every server boundary, a shared definition with the frontend, output sanitisation where HTML is rendered, and a CSP header as a safety net - plus a small test per endpoint that sends a disallowed field and expects rejection, so regressions are caught in CI. The engineering comes from Manifera, which has hardened web applications for enterprise clients for more than eleven years from its development centre on Pho Quang Street in Ho Chi Minh City and its offices in Amsterdam and Singapore; Manifera's own founder began his career in cybersecurity. If you would like that pass on your codebase, [describe your project](https://launchstudio.eu/en/#contact) and you will hear back within a working day. Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice applies the same standards at larger scale.
 
 ## Real example
 
@@ -162,12 +162,12 @@ The check found two problems within an hour. A survey respondent could submit an
 
 LaunchStudio's engineers added Zod schemas with strict mode to all 34 API routes, shared those schemas with the frontend, replaced the raw HTML rendering with a sanitised Markdown renderer limited to basic formatting, added a Content Security Policy blocking inline scripts, and wrote a rejection test for each route so that CI would fail if a future Cursor edit removed a schema. Existing stored answers were scanned and cleaned.
 
-**Result:** Formlab passed the client's follow-up security check two weeks later and was approved for internal use — which led to that client's three sister companies subscribing. The CI tests have since caught two regressions introduced by AI-generated edits.
+**Result:** Formlab passed the client's follow-up security check two weeks later and was approved for internal use - which led to that client's three sister companies subscribing. The CI tests have since caught two regressions introduced by AI-generated edits.
 
 > *"The forms looked bulletproof. I just never looked at what the server did when someone skipped the form entirely."*
-> — **Mehmet Kaya, Founder, Formlab (Tilburg)**
+> - **Mehmet Kaya, Founder, Formlab (Tilburg)**
 
-**Cost & Timeline:** €1,350 (server-side validation across all routes, output sanitisation, CSP and regression tests) — completed in 5 business days.
+**Cost & Timeline:** €1,350 (server-side validation across all routes, output sanitisation, CSP and regression tests) - completed in 5 business days.
 
 ## Frequently Asked Questions
 

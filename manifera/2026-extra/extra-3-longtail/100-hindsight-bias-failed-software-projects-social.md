@@ -1,4 +1,4 @@
-🚨 "We've already spent €150,000 on this architecture, so we have to keep going." — The sunk cost fallacy that destroys enterprise software budgets. 🧠📉
+🚨 "We've already spent €150,000 on this architecture, so we have to keep going." - The sunk cost fallacy that destroys enterprise software budgets. 🧠📉
 
 **The Pain Points:**
 ❌ **Sunk Cost & Planning Fallacies:** Throwing more capital and time into a fundamentally broken architecture instead of pivoting early.

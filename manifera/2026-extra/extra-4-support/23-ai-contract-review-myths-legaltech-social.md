@@ -1,4 +1,4 @@
-🚨 "The AI Just Needs to Read the Contract and Flag Problems" — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "The AI Just Needs to Read the Contract and Flag Problems" - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "The AI Just Needs to Read the Contract and Flag Problems":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

@@ -1,4 +1,4 @@
-📊 Esther Bergsma built "HandelsGrip," a B2B ordering SaaS, using Cursor, with clean usage-based pricing tiers scaled by order volume. An enterprise prospect's procurement team reviewed her pricing page before the first call and arrived already asking about per-tenant data isolation. Esther genuinely didn't have an answer — she'd never checked.
+📊 Esther Bergsma built "HandelsGrip," a B2B ordering SaaS, using Cursor, with clean usage-based pricing tiers scaled by order volume. An enterprise prospect's procurement team reviewed her pricing page before the first call and arrived already asking about per-tenant data isolation. Esther genuinely didn't have an answer - she'd never checked.
 
 Your pricing page is telling buyers more about your architecture than you think. 🧠
 

@@ -7,7 +7,7 @@ Your board just asked why headcount keeps growing before revenue justifies it. D
 
 **The Manifera Solution:**
 ✅ **40-60% Lower Cost, Same Output:** A dedicated agency team delivers comparable results without recruiting overhead or idle capacity between sprints.
-✅ **First Sprint in 2-4 Weeks:** vs. 3-6 months to hire in-house — a head start that becomes real market feedback, not just saved time.
+✅ **First Sprint in 2-4 Weeks:** vs. 3-6 months to hire in-house - a head start that becomes real market feedback, not just saved time.
 ✅ **Elastic Scaling:** Flex from six engineers to two for maintenance, then back up ahead of the next push, within weeks, not quarters.
 
 Run the comparison with your own numbers before you default to instinct. 🧮

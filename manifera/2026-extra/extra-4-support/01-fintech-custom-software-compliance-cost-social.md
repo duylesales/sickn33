@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom fintech custom software compliance builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom fintech custom software compliance builds. 💸💥
 
 **The Pain Points:**
 ❌ **PSD2: What It Specifically Requires, and What That Costs to Build:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

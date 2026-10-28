@@ -43,7 +43,7 @@ Content Format: Local Guide
 }
 </script>
 
-Rome is Italy's capital and its largest city, and although Milan is usually seen as the country's business centre, Rome hosts an unusual concentration of large organisations: energy groups with global operations, the space and aerospace industry, telecom and postal services, national statistical and cybersecurity institutions, ministries and one of Europe's largest universities. For experienced machine learning engineers, AI jobs in Rome span energy analytics, satellite and space data, telecom, financial and postal services, public administration and research — often in organisations whose decisions affect millions of people. This guide explains the landscape and what to consider before moving.
+Rome is Italy's capital and its largest city, and although Milan is usually seen as the country's business centre, Rome hosts an unusual concentration of large organisations: energy groups with global operations, the space and aerospace industry, telecom and postal services, national statistical and cybersecurity institutions, ministries and one of Europe's largest universities. For experienced machine learning engineers, AI jobs in Rome span energy analytics, satellite and space data, telecom, financial and postal services, public administration and research - often in organisations whose decisions affect millions of people. This guide explains the landscape and what to consider before moving.
 
 ## Energy and Utilities
 
@@ -51,7 +51,7 @@ Rome is home to the headquarters of major Italian energy groups with operations 
 
 ## Space and Aerospace
 
-Rome is the centre of Italy's space sector. The Italian Space Agency has its headquarters in the city, and major aerospace and defence companies, satellite operators and service providers are based in Rome and the surrounding region. AI applications include Earth observation image analysis, satellite operations and telemetry monitoring, space mission data processing, defence electronics and geospatial services. Earth observation in particular — monitoring land use, agriculture, disasters and climate — is a growing field with European programmes providing open satellite data.
+Rome is the centre of Italy's space sector. The Italian Space Agency has its headquarters in the city, and major aerospace and defence companies, satellite operators and service providers are based in Rome and the surrounding region. AI applications include Earth observation image analysis, satellite operations and telemetry monitoring, space mission data processing, defence electronics and geospatial services. Earth observation in particular - monitoring land use, agriculture, disasters and climate - is a growing field with European programmes providing open satellite data.
 
 ## Telecom, Postal and Financial Services
 
@@ -92,7 +92,7 @@ Rome combines extraordinary history with the everyday life of a large capital: n
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Rome you will find few or no local vacancies there today. Use Italian job portals, corporate career pages, public sector recruitment portals and university and CNR announcements as primary sources. OnlyAIJobs is useful for comparing Rome with the Netherlands — where energy, logistics and technology employers such as VINCI Energies, Rexel, Sendcloud and Accenture list AI roles — and its distance-based approach matters in a city where traffic makes the exact office location decisive. Employers in Lazio can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Rome you will find few or no local vacancies there today. Use Italian job portals, corporate career pages, public sector recruitment portals and university and CNR announcements as primary sources. OnlyAIJobs is useful for comparing Rome with the Netherlands - where energy, logistics and technology employers such as VINCI Energies, Rexel, Sendcloud and Accenture list AI roles - and its distance-based approach matters in a city where traffic makes the exact office location decisive. Employers in Lazio can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Earth Observation and Space Data
 
@@ -137,11 +137,11 @@ Large Roman organisations tend to be hierarchical and process-oriented, particul
 
 ## Who Rome Suits Best
 
-Rome suits engineers who want AI work with societal scale — energy systems, satellites, public services — who speak or will learn Italian and who value living in one of the world's most extraordinary cities, provided they plan their commute carefully.
+Rome suits engineers who want AI work with societal scale - energy systems, satellites, public services - who speak or will learn Italian and who value living in one of the world's most extraordinary cities, provided they plan their commute carefully.
 
 ## Telecom and Network AI
 
-Telecom operators headquartered in Rome manage fixed and mobile networks serving millions of customers. Machine learning supports predicting and detecting network faults, optimising radio and transport resources, planning fibre and 5G rollouts, reducing energy consumption in network equipment, detecting fraud and improving customer service with conversational AI. Network data arrives continuously and in enormous volumes, so engineers work with streaming systems and large-scale storage as much as with models. Regulatory obligations on service quality and data protection shape what is possible. For engineers with interests in systems and infrastructure, telecom offers technically demanding work and stable employers, and the skills — time series, anomaly detection, optimisation and large-scale data engineering — transfer well to energy, transport and cloud infrastructure roles.
+Telecom operators headquartered in Rome manage fixed and mobile networks serving millions of customers. Machine learning supports predicting and detecting network faults, optimising radio and transport resources, planning fibre and 5G rollouts, reducing energy consumption in network equipment, detecting fraud and improving customer service with conversational AI. Network data arrives continuously and in enormous volumes, so engineers work with streaming systems and large-scale storage as much as with models. Regulatory obligations on service quality and data protection shape what is possible. For engineers with interests in systems and infrastructure, telecom offers technically demanding work and stable employers, and the skills - time series, anomaly detection, optimisation and large-scale data engineering - transfer well to energy, transport and cloud infrastructure roles.
 
 ## Defence and Security Technology
 

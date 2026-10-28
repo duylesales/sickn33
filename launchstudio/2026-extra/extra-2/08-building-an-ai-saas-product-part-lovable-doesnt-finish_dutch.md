@@ -82,9 +82,9 @@ Een gebruiker meldde dat zijn bankgegevens voor uitbetalingen waren gewijzigd zo
 **Resultaat:** LaunchStudio voegde CSRF-tokens toe aan elk formulier in TicketFlow dat status wijzigt, en verifieerde de weigering van elk verzoek dat een geldig token miste, waardoor de blootstelling werd gesloten zonder het ontwerp of de werkstroom van de instellingenpagina te veranderen.
 
 > *"Het idee dat simpelweg ingelogd zijn ergens anders op het internet een totaal ongerelateerde pagina mijn bankgegevens zou kunnen laten wijzigen is oprecht beangstigend. Ik had geen idee dat het überhaupt mogelijk was totdat dit gebeurde."*
-> — **Eva Willems, Oprichter, TicketFlow (Breda)**
+> - **Eva Willems, Oprichter, TicketFlow (Breda)**
 
-**Kosten en tijdlijn:** € 1.800 (CSRF-bescherming en audit van formulierbeveiliging) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.800 (CSRF-bescherming en audit van formulierbeveiliging) - voltooid in 6 werkdagen.
 
 ---
 

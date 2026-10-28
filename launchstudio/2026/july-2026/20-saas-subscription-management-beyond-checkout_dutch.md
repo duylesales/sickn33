@@ -102,7 +102,7 @@ Mia werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsk
 
 **Resultaat:** Mia geautomatiseerde updates van de abonnementslevenscyclus, waardoor misbruik van functies wordt voorkomen en overheadkosten worden verminderd.
 
-**Kosten en tijdlijn:** € 1.400 (abonnementspakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.400 (abonnementspakket) - productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
 

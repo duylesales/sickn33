@@ -1,4 +1,4 @@
-🔥 Stella built a prototype using **Bolt** — stella, an hr tech founder, used **bolt** to build a candidate evaluator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Stella built a prototype using **Bolt** - stella, an hr tech founder, used **bolt** to build a candidate evaluator, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Stella's application achieved silky-smooth performance: Monthly hosting costs dropped to €350, boosting gross margins from 20% to 85%. (€3,800 (GPU Hosting Migration) — production-ready and deployed in 9 business days.). 🚀
+Stella's application achieved silky-smooth performance: Monthly hosting costs dropped to €350, boosting gross margins from 20% to 85%. (€3,800 (GPU Hosting Migration) - production-ready and deployed in 9 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/economics-open-source-vs-api-models-ai
 

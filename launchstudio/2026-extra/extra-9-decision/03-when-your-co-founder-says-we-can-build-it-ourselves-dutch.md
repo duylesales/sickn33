@@ -39,7 +39,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 "Eerlijk? Dat kunnen we prima zelf bouwen. Ik heb het meeste al in elkaar gezet in Cursor. Geef me twee weekenden."
 
-Als u de niet-technische helft van dit gesprek vormt, bevindt u zich nu in een discussie die u op technische gronden niet kunt winnen en ook niet zou moeten proberen te winnen. U weet immers niet of twee weekenden realistisch is. Uw medeoprichter weet dat waarschijnlijk zelf ook niet — en het cruciale punt is: ze zijn niet oneerlijk. Ze beantwoorden een aanzienlijk smallere vraag dan de vraag die u stelde, en het volledige conflict bevindt zich precies in die kloof.
+Als u de niet-technische helft van dit gesprek vormt, bevindt u zich nu in een discussie die u op technische gronden niet kunt winnen en ook niet zou moeten proberen te winnen. U weet immers niet of twee weekenden realistisch is. Uw medeoprichter weet dat waarschijnlijk zelf ook niet - en het cruciale punt is: ze zijn niet oneerlijk. Ze beantwoorden een aanzienlijk smallere vraag dan de vraag die u stelde, en het volledige conflict bevindt zich precies in die kloof.
 
 ## Drie Verschillende Zinnen Die Identiek Klinken
 
@@ -51,7 +51,7 @@ Als u de niet-technische helft van dit gesprek vormt, bevindt u zich nu in een d
 
 **"Ik ga hier binnenkort daadwerkelijk de tijd voor vinden om het tot een goed einde te brengen."** Dit is de bewering die in de praktijk het vaakst sneuvelt, en het is het punt waar niemand kritisch naar kijkt, omdat het klinkt als een planningkwestie in plaats van een inhoudelijk risico.
 
-Uw taak is niet om de eerste stelling aan te vechten. Uw taak is om deze drie beweringen expliciet uit elkaar te trekken. Het moment dat u ze scheidt, transformeert het gesprek van een beladen discussie over competentie naar een pragmatisch overleg over tijd en scope — en niemand voelt zich aangevallen door een agenda.
+Uw taak is niet om de eerste stelling aan te vechten. Uw taak is om deze drie beweringen expliciet uit elkaar te trekken. Het moment dat u ze scheidt, transformeert het gesprek van een beladen discussie over competentie naar een pragmatisch overleg over tijd en scope - en niemand voelt zich aangevallen door een agenda.
 
 ## Vertaal "Zelf": Wie Voert Het Werk Feitelijk Uit?
 
@@ -67,13 +67,13 @@ Die formulering is geen pleidooi tegen zelf bouwen. Er zijn genoeg teams die het
 
 Ga dit gesprek in met een helder besef van welk terrein u direct moet toegeven, want dat direct erkennen is precies wat de rest van het gesprek constructief maakt.
 
-Uw medeoprichter heeft gelijk dat veel van deze materie te leren is. Ze hebben gelijk dat alles uitbesteden afhankelijkheid creëert — een oprichter die zijn eigen deployment-pipeline nooit heeft aangeraakt, is één verstoorde relatie verwijderd van een complete blokkade. Ze hebben gelijk dat niemand de logica van uw product zo door en door begrijpt als zijzelf. En ze hebben volkomen gelijk dat sommige offertes voor dit werk absurd zijn: traditionele softwarebureaus offreren herbouwtijden van € 20.000 tot € 50.000, en als dat het referentiekader is, is "we doen het zelf" een volstrekt logische reactie.
+Uw medeoprichter heeft gelijk dat veel van deze materie te leren is. Ze hebben gelijk dat alles uitbesteden afhankelijkheid creëert - een oprichter die zijn eigen deployment-pipeline nooit heeft aangeraakt, is één verstoorde relatie verwijderd van een complete blokkade. Ze hebben gelijk dat niemand de logica van uw product zo door en door begrijpt als zijzelf. En ze hebben volkomen gelijk dat sommige offertes voor dit werk absurd zijn: traditionele softwarebureaus offreren herbouwtijden van € 20.000 tot € 50.000, en als dat het referentiekader is, is "we doen het zelf" een volstrekt logische reactie.
 
 Spreek dat allemaal luid en duidelijk uit. Verscherp de discussie daarna tot de enige vraag die er werkelijk toe doet: niet *kunnen we het*, maar *móéten we het willen, gezien wat die uren elders opleveren en wat de gevolgen zijn als we er per ongeluk naast zitten?*
 
 ## Wat Je Niet in Één Weekend Leert
 
-Er bestaat een categorie werk waarbij het risico niet zit in de programmeercomplexiteit, maar in *weten waar je moet zoeken* — en dat onderscheid is essentieel voor een niet-technische oprichter om te begrijpen.
+Er bestaat een categorie werk waarbij het risico niet zit in de programmeercomplexiteit, maar in *weten waar je moet zoeken* - en dat onderscheid is essentieel voor een niet-technische oprichter om te begrijpen.
 
 Het bouwen van een inlogscherm is een afgebakende taak met een zichtbare finishlijn: het werkt wel of het werkt niet. Zorgen dat geen enkele ingelogde gebruiker de dossiers van een andere gebruiker kan inzien, is geen geïsoleerde taak, het is een *systematische sweep*. Het vereist het nalopen van elk endpoint, elke query, elke bestandsupload en elke data-export met telkens dezelfde kritische vraag. Ziet u er eentje over het hoofd, dan lijkt alles aan de oppervlakte nog steeds vlekkeloos te functioneren. Er verschijnt geen foutmelding. De applicatie werkt ogenschijnlijk perfect, totdat iemand een cijfer in een URL aanpast en ineens de privégegevens van een concurrent op het scherm heeft staan.
 
@@ -85,15 +85,15 @@ Dát is wat senioriteit toevoegt: niet zozeer het intypen van de uiteindelijke r
 
 Maak deze berekening samen, open en eerlijk op papier. Het beëindigt discussies sneller dan welk debat ook.
 
-**De uren.** Vraag uw medeoprichter om een realistische inschatting van de volledige sweep — niet alleen de leuke features, maar de hele audit. Pas vervolgens de vermenigvuldiger toe die elke eerlijke software-engineer op zijn eigen schattingen legt. Zegt men twee weekenden, reken dan op vier. Dat betekent zestig tot tachtig avonduren voor een doorsnee prototype met accounts, database en betalingen.
+**De uren.** Vraag uw medeoprichter om een realistische inschatting van de volledige sweep - niet alleen de leuke features, maar de hele audit. Pas vervolgens de vermenigvuldiger toe die elke eerlijke software-engineer op zijn eigen schattingen legt. Zegt men twee weekenden, reken dan op vier. Dat betekent zestig tot tachtig avonduren voor een doorsnee prototype met accounts, database en betalingen.
 
-**De alternatieve kosten.** Niet het theoretische salaris, maar wat er níét gebeurt. Zestig uur van uw enige techneut staat gelijk aan ruimschoots drie weken voltijds productwerk — drie weken aan features, klantinterviews of stabiliteitsverbeteringen die blijven liggen.
+**De alternatieve kosten.** Niet het theoretische salaris, maar wat er níét gebeurt. Zestig uur van uw enige techneut staat gelijk aan ruimschoots drie weken voltijds productwerk - drie weken aan features, klantinterviews of stabiliteitsverbeteringen die blijven liggen.
 
 **De vertraging.** Als die uren uit spaarzame vrije avonden moeten komen, betekent zestig uur bij tien uur per week een vertraging van zes weken. Vergelijk dat met een vaste doorlooptijd van 1 tot 3 weken. Dat verschil is vier weken op uw livegang. Heeft u wachtende klanten of een tikkende runway, dan vertegenwoordigt die maand vertraging een heel concreet bedrag in euro's.
 
 **Het gemiste risico.** Vermenigvuldig de kans dat er iets over het hoofd wordt gezien met de kosten van die fout. Een datalek met echte klantgegevens is geen eenvoudig bugje; het betekent AVG-meldplichten, imagoschade en teruggaven. Zelfs een kans van 20% op een incident van € 10.000 vertegenwoordigt een risicowaarde van € 2.000.
 
-Vergelijk dat totaalbedrag met de offerte. Soms wint de offerte met vlag en wimpel. Soms niet — een oprichter met zeeën van tijd en een simpel product kan onderaan de streep goedkoper uit zijn, en in dat geval: bouw het van harte zelf. Wat u in beide gevallen wint, is een beslissing gebaseerd op feiten en cijfers, in plaats van op wie het hardst zijn gelijk opeiste.
+Vergelijk dat totaalbedrag met de offerte. Soms wint de offerte met vlag en wimpel. Soms niet - een oprichter met zeeën van tijd en een simpel product kan onderaan de streep goedkoper uit zijn, en in dat geval: bouw het van harte zelf. Wat u in beide gevallen wint, is een beslissing gebaseerd op feiten en cijfers, in plaats van op wie het hardst zijn gelijk opeiste.
 
 ## De Drievragentest
 
@@ -103,7 +103,7 @@ Wilt u een snelle indicatie van waar u staat? Stel uw medeoprichter deze drie vr
 2. **"Wat gebeurt er in ons systeem als Stripe ons per ongeluk twee keer dezelfde betalingsnotificatie stuurt?"** Het juiste antwoord benoemt dat de tweede melding als duplicaat (idempotent) wordt genegeerd. Een vaag antwoord betekent dat deze logica nog nergens geschreven is.
 3. **"Als onze database vannacht per ongeluk gewist wordt, wat doen we dan morgenochtend om 9:00 uur?"** Het juiste antwoord beschrijft een hersteltest die men recent persoonlijk heeft uitgevoerd. "Er zijn automatische back-ups in de cloud" is een vrome wens, geen noodplan.
 
-Drie concrete, specifieke antwoorden: ze hebben de materie waarschijnlijk goed in de vingers en u kunt het met een gerust hart aan hen toevertrouwen. Drie ontwijkende of algemene antwoorden: men begrijpt de theorie, maar heeft de venijnige praktijkdetails nog niet ontmoet — wat exact de situatie is waarin ontwikkelaars de benodigde tijd met een factor drie onderschatten.
+Drie concrete, specifieke antwoorden: ze hebben de materie waarschijnlijk goed in de vingers en u kunt het met een gerust hart aan hen toevertrouwen. Drie ontwijkende of algemene antwoorden: men begrijpt de theorie, maar heeft de venijnige praktijkdetails nog niet ontmoet - wat exact de situatie is waarin ontwikkelaars de benodigde tijd met een factor drie onderschatten.
 
 ## De Taakverdeling Die de Knoop Meestal Doorhakt
 
@@ -115,9 +115,9 @@ Dit werkt uitstekend om twee redenen die veel zwaarder wegen dan alleen geld. Uw
 
 De frontend die zij hebben gebouwd, blijft onaangeroerd. Dat is geen doekje voor het bloeden; het is de enige juiste manier waarop backend-hardening hoort te werken. Het neemt direct de diepere angst weg die schuilt achter "we bouwen het zelf": de angst dat een externe partij hun levenswerk overhoop gooit en ze hun eigen applicatie niet meer herkennen.
 
-In tegenstelling tot anonieme marktplaats-freelancers, wordt LaunchStudio ondersteund door Manifera — [een software engineering-organisatie](https://www.manifera.com/about-us/) met meer dan 120 engineers, vertrouwd door partijen zoals Vodafone, TNO en CFLW. Daarom krijgt u na de sweep heldere documentatie in handen in plaats van een ondoorzichtige black box waar uw team later niets mee kan.
+In tegenstelling tot anonieme marktplaats-freelancers, wordt LaunchStudio ondersteund door Manifera - [een software engineering-organisatie](https://www.manifera.com/about-us/) met meer dan 120 engineers, vertrouwd door partijen zoals Vodafone, TNO en CFLW. Daarom krijgt u na de sweep heldere documentatie in handen in plaats van een ondoorzichtige black box waar uw team later niets mee kan.
 
-Komt u er samen in theorie niet uit? Laat de feiten spreken: [stuur ons de link naar uw prototype voor een kosteloze eerste blik](https://launchstudio.eu/nl/#contact). Een overzicht van wat al wel en nog niet goed is ingericht, beëindigt de discussie direct — en af en toe bevestigt die lijst simpelweg dat uw medeoprichter het inderdaad prima zelf aankan.
+Komt u er samen in theorie niet uit? Laat de feiten spreken: [stuur ons de link naar uw prototype voor een kosteloze eerste blik](https://launchstudio.eu/nl/#contact). Een overzicht van wat al wel en nog niet goed is ingericht, beëindigt de discussie direct - en af en toe bevestigt die lijst simpelweg dat uw medeoprichter het inderdaad prima zelf aankan.
 
 ## Echt voorbeeld
 
@@ -125,16 +125,16 @@ Komt u er samen in theorie niet uit? Laat de feiten spreken: [stuur ons de link 
 
 Femke Doornbos en haar technische medeoprichter Tim runden Rondje, een in Utrecht gevestigde plannings- en reserveringstool voor lokale amateursportverenigingen. De tool was gebouwd in Lovable, waarna Tim in Cursor aan de slag was gegaan. Femke had een offerte liggen van € 2.900 voor backend-hardening. Tim had een plan dat volgens hem "drie weekenden" zou kosten. Ze draaiden er al zes weken omheen, en in die hele periode kwam het platform geen stap dichter bij lancering.
 
-Ze doorbraken de patstelling door een kosteloze technische review aan te vragen in plaats van blind werk uit te besteden. De uitkomsten vielen verrassend uit, en geen van beiden had de exacte uitkomst voorspeld. Tim bleek veel meer zaken al uitstekend te hebben geregeld dan Femke dacht: sessiebeheer, wachtwoordresets en een overzichtelijke databasestructuur stonden als een huis. Echter: autorisatie op clubniveau bleek slechts in twee van de elf API-endpoints daadwerkelijk afgedwongen te worden, de Google Maps API-sleutel stond open en bloot in de client-side code, en de Mollie-koppeling accepteerde betalingsbevestigingen zonder te controleren of het verzoek wel echt van Mollie afkomstig was — wat betekende dat een slim verzoek een sportclub gratis op 'actief' kon zetten.
+Ze doorbraken de patstelling door een kosteloze technische review aan te vragen in plaats van blind werk uit te besteden. De uitkomsten vielen verrassend uit, en geen van beiden had de exacte uitkomst voorspeld. Tim bleek veel meer zaken al uitstekend te hebben geregeld dan Femke dacht: sessiebeheer, wachtwoordresets en een overzichtelijke databasestructuur stonden als een huis. Echter: autorisatie op clubniveau bleek slechts in twee van de elf API-endpoints daadwerkelijk afgedwongen te worden, de Google Maps API-sleutel stond open en bloot in de client-side code, en de Mollie-koppeling accepteerde betalingsbevestigingen zonder te controleren of het verzoek wel echt van Mollie afkomstig was - wat betekende dat een slim verzoek een sportclub gratis op 'actief' kon zetten.
 
 Ze besloten de sweep in te kopen en Tim de rest te laten doen. De elf routes werden onder één waterdichte RLS-policy gebracht, de geheime sleutel werd verplaatst naar een veilige server-route en geroteerd, en verificatie van webhooks met idempotentielogica werd geïmplementeerd. Tim gebruikte diezelfde twee weken om de wachtlijstfunctie te bouwen waar drie aangesloten verenigingen al weken om smeekten.
 
-**Resultaat:** Rondje lanceerde achttien dagen later met negen betalende sportclubs. Tim gebruikte de gedocumenteerde codeaanpassingen als blauwdruk toen hij de maand erop zelf twee nieuwe endpoints toevoegde — waarbij hij de club-autorisatie direct foutloos implementeerde.
+**Resultaat:** Rondje lanceerde achttien dagen later met negen betalende sportclubs. Tim gebruikte de gedocumenteerde codeaanpassingen als blauwdruk toen hij de maand erop zelf twee nieuwe endpoints toevoegde - waarbij hij de club-autorisatie direct foutloos implementeerde.
 
 > *"Ik had geen ongelijk dat ik het zelf kón bouwen. Ik had ongelijk over op hoeveel plekken het precies moest gebeuren. De lijst met elf concrete endpoints zien was meer waard dan wéér een avond discussiëren."*
-> — **Femke Doornbos, Medeoprichter Rondje (Utrecht)**
+> - **Femke Doornbos, Medeoprichter Rondje (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 2.900 (Launch Ready Pakket, autorisatie-sweep, beveiliging van geheimen en betalingsverificatie) — live in 11 werkdagen.
+**Kosten & Doorlooptijd:** € 2.900 (Launch Ready Pakket, autorisatie-sweep, beveiliging van geheimen en betalingsverificatie) - live in 11 werkdagen.
 
 ---
 
@@ -154,7 +154,7 @@ Niet wanneer u bedingt dat al het werk helder gedocumenteerd wordt opgeleverd in
 
 ### Kunnen we het werk opsplitsen zodat mijn medeoprichter een deel zelf doet?
 
-Dat is in de praktijk vrijwel altijd de beste oplossing. Koop de audit en sweep in voor zaken waar ervaren speurwerk vereist is — autorisatie over alle routes, gelekte API-sleutels, webhook-validatie en geteste back-ups — en houd productfunctionaliteit en design binnenshuis waar uw medeoprichter de meeste waarde toevoegt.
+Dat is in de praktijk vrijwel altijd de beste oplossing. Koop de audit en sweep in voor zaken waar ervaren speurwerk vereist is - autorisatie over alle routes, gelekte API-sleutels, webhook-validatie en geteste back-ups - en houd productfunctionaliteit en design binnenshuis waar uw medeoprichter de meeste waarde toevoegt.
 
 ### Wat als mijn medeoprichter externe hulp botweg weigert en ik denk dat dat onverstandig is?
 

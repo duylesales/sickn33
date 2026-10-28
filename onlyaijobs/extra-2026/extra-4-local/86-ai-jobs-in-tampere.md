@@ -83,17 +83,17 @@ Finnish workplaces are flat, trust-based and focused on reliability and work-lif
 
 ## Living in Tampere
 
-Tampere consistently ranks as one of Finland's most popular cities to live in, with a lively centre, lakes on both sides, saunas — it calls itself the sauna capital of the world — and a new tram network. Housing is more affordable than in Helsinki, and trains reach the capital in about 1.5 hours. The student community is large, and the city has an active cultural scene.
+Tampere consistently ranks as one of Finland's most popular cities to live in, with a lively centre, lakes on both sides, saunas - it calls itself the sauna capital of the world - and a new tram network. Housing is more affordable than in Helsinki, and trains reach the capital in about 1.5 hours. The student community is large, and the city has an active cultural scene.
 
 ## How OnlyAIJobs Fits a Tampere Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Tampere you will find few or no local vacancies there today. Use Finnish job portals, university career services, summer job programmes and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where engineering and industrial employers such as Holland Innovative, VINCI Energies and Heijmans list AI roles — and as a model for searching by category and real commute. Tampere employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Tampere you will find few or no local vacancies there today. Use Finnish job portals, university career services, summer job programmes and company career pages as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where engineering and industrial employers such as Holland Innovative, VINCI Energies and Heijmans list AI roles - and as a model for searching by category and real commute. Tampere employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Autonomous Heavy Machinery
 
-Autonomous and remotely operated heavy machines — in mining, construction, forestry and ports — are a Finnish speciality, and Tampere is a centre for this work. These machines operate in harsh, unstructured environments: dust, darkness, mud, snow and changing terrain. Perception systems must detect obstacles and people reliably, localisation must work where GPS is unavailable, and planning must account for heavy loads and safety. Machine learning supports perception and prediction, while control engineering ensures safe motion. Safety is paramount, and the EU Machinery Regulation and the EU AI Act set requirements for AI used as safety components. For graduates, this field offers a rare combination of robotics, ML and real industrial impact.
+Autonomous and remotely operated heavy machines - in mining, construction, forestry and ports - are a Finnish speciality, and Tampere is a centre for this work. These machines operate in harsh, unstructured environments: dust, darkness, mud, snow and changing terrain. Perception systems must detect obstacles and people reliably, localisation must work where GPS is unavailable, and planning must account for heavy loads and safety. Machine learning supports perception and prediction, while control engineering ensures safe motion. Safety is paramount, and the EU Machinery Regulation and the EU AI Act set requirements for AI used as safety components. For graduates, this field offers a rare combination of robotics, ML and real industrial impact.
 
 ## Process Industry and Paper Technology
 
@@ -129,7 +129,7 @@ Tampere has an active tech community, with events on the Hervanta campus, startu
 
 ## Your First Two Years
 
-Build foundations in engineering practices, ML and your chosen domain — autonomous machines, signal processing, telecom or software. Ask for feedback and take ownership of small deliverables. Tampere's ecosystem makes it easy to move between research and industry later.
+Build foundations in engineering practices, ML and your chosen domain - autonomous machines, signal processing, telecom or software. Ask for feedback and take ownership of small deliverables. Tampere's ecosystem makes it easy to move between research and industry later.
 
 ## Preparing for Interviews
 
@@ -145,7 +145,7 @@ Apply for summer jobs early, choose a thesis with a company, attend campus event
 
 ## Mining and Rock Excavation Technology
 
-Mining equipment developed in Tampere operates in mines around the world, from underground tunnels to open pits. Modern mining machines are increasingly automated: drill rigs position themselves, loaders navigate tunnels autonomously and fleets are monitored remotely from control rooms far from the mine. Data science supports these systems in several ways — perception and navigation for autonomous machines, predictive maintenance using sensor data from engines, hydraulics and drills, optimisation of drilling patterns and fleet scheduling, and analysis of energy use as machines move toward battery-electric power. The work combines ML with mechanical engineering, hydraulics and safety, and it contributes to making mining safer by keeping people away from hazardous areas. Graduates who join these teams gain experience with some of the most demanding real-world autonomy problems anywhere, as well as the chance to see their work deployed on machines used globally. Tampere University's research on heavy machinery automation and the companies' own R&D centres create a steady stream of thesis and junior opportunities.
+Mining equipment developed in Tampere operates in mines around the world, from underground tunnels to open pits. Modern mining machines are increasingly automated: drill rigs position themselves, loaders navigate tunnels autonomously and fleets are monitored remotely from control rooms far from the mine. Data science supports these systems in several ways - perception and navigation for autonomous machines, predictive maintenance using sensor data from engines, hydraulics and drills, optimisation of drilling patterns and fleet scheduling, and analysis of energy use as machines move toward battery-electric power. The work combines ML with mechanical engineering, hydraulics and safety, and it contributes to making mining safer by keeping people away from hazardous areas. Graduates who join these teams gain experience with some of the most demanding real-world autonomy problems anywhere, as well as the chance to see their work deployed on machines used globally. Tampere University's research on heavy machinery automation and the companies' own R&D centres create a steady stream of thesis and junior opportunities.
 
 ## Health Technology
 

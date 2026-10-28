@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The role is attractive and the team is not here. Your manager sits in Dublin, or Boston, or Singapore, and you would be one of a small number of people — sometimes the only person — working from the Netherlands. Everything about the job description looks familiar. What changes is the shape of your day, how quickly you get answers, who sees your work, and whether the evening belongs to you. Distributed teams work extremely well in some configurations and grind people down in others, and the difference is largely arithmetic: how many hours you genuinely share with the people you depend on.
+The role is attractive and the team is not here. Your manager sits in Dublin, or Boston, or Singapore, and you would be one of a small number of people - sometimes the only person - working from the Netherlands. Everything about the job description looks familiar. What changes is the shape of your day, how quickly you get answers, who sees your work, and whether the evening belongs to you. Distributed teams work extremely well in some configurations and grind people down in others, and the difference is largely arithmetic: how many hours you genuinely share with the people you depend on.
 
 ## The Configurations, From Easiest to Hardest
 
@@ -151,7 +151,7 @@ Protect the boundary from the start. The first quarter establishes what is norma
 
 Time zones are the visible difference. The invisible one is that teams communicate differently, and Dutch professionals working in foreign-centred teams encounter this constantly.
 
-**Directness reads differently abroad.** Dutch working culture prizes saying plainly that an approach will not work. In several other business cultures the same sentence lands as an attack on the person who proposed it, and the reaction — polite agreement followed by nothing changing — is easy to misread as consent. If your feedback is not producing change, consider that it may not have been heard as feedback.
+**Directness reads differently abroad.** Dutch working culture prizes saying plainly that an approach will not work. In several other business cultures the same sentence lands as an attack on the person who proposed it, and the reaction - polite agreement followed by nothing changing - is easy to misread as consent. If your feedback is not producing change, consider that it may not have been heard as feedback.
 
 **Silence means different things.** In some teams, no response means agreement; in others it means the question was not understood and nobody wants to say so. Across time zones you cannot read the room, so ask explicitly for a yes or a no rather than for objections.
 
@@ -175,19 +175,19 @@ She raises it as a structure problem rather than a complaint. Three things chang
 
 She also flies over once a quarter for a week, paid by the employer, and the difference in how her work is discussed afterwards is obvious to her.
 
-Two years in, the arrangement works. Her conclusion is that the time difference was never the real problem — the problem was that nobody had designed for it, and asking for that design was entirely reasonable.
+Two years in, the arrangement works. Her conclusion is that the time difference was never the real problem - the problem was that nobody had designed for it, and asking for that design was entirely reasonable.
 
 ## Key Takeaways
 
 - Count the hours of genuine overlap with the people you depend on; that number predicts your experience better than any statement about culture.
-- What occupies the overlap matters as much as its size — meetings that fill it leave nothing for the conversations that actually need it.
+- What occupies the overlap matters as much as its size - meetings that fill it leave nothing for the conversations that actually need it.
 - Autonomous technical work travels well across time zones; debugging, early problem definition and messy data investigation do not.
 - Dutch working time and duty-of-care rules apply to you wherever your colleagues sit; settle evening availability and incident response in writing.
 - Establish core hours, batch questions, over-document, rotate awkward meeting times and travel early to build standing.
 
 ## Where to Start
 
-If a distributed role appeals, weigh it against employers whose teams sit within your own travel radius — the comparison is usually closer than it appears once evening meetings are counted as working time.
+If a distributed role appeals, weigh it against employers whose teams sit within your own travel radius - the comparison is usually closer than it appears once evening meetings are counted as working time.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -215,7 +215,7 @@ Raise it as a structure problem: protect the overlap for decisions, move or halv
   "mainEntity": [
     {"@type": "Question", "name": "How much overlap do I need?", "acceptedAnswer": {"@type": "Answer", "text": "Under two hours makes collaborative roles hard; count hours shared with those you depend on."}},
     {"@type": "Question", "name": "Can my employer expect evening calls?", "acceptedAnswer": {"@type": "Answer", "text": "Dutch working time and rest rules apply wherever colleagues sit; agree expectations in writing."}},
-    {"@type": "Question", "name": "Does working outside the main location affect promotion?", "acceptedAnswer": {"@type": "Answer", "text": "It can — ask how performance is decided remotely and travel to the centre periodically."}},
+    {"@type": "Question", "name": "Does working outside the main location affect promotion?", "acceptedAnswer": {"@type": "Answer", "text": "It can - ask how performance is decided remotely and travel to the centre periodically."}},
     {"@type": "Question", "name": "What is the best question to ask in the interview?", "acceptedAnswer": {"@type": "Answer", "text": "Where the team and manager sit, and how long remote colleagues have stayed."}},
     {"@type": "Question", "name": "How do I fix a bad arrangement?", "acceptedAnswer": {"@type": "Answer", "text": "Protect overlap for decisions, reduce recurring meetings, agree review turnaround and rotate times."}}
   ]

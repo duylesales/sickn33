@@ -1,4 +1,4 @@
-Standard vendor onboarding is a checklist: sign, provision, kickoff. Regulated onboarding is a risk process wearing a checklist's clothes — and most templates are missing half of it. ✅🔐
+Standard vendor onboarding is a checklist: sign, provision, kickoff. Regulated onboarding is a risk process wearing a checklist's clothes - and most templates are missing half of it. ✅🔐
 
 **The Pain Points:**
 ❌ **Uniform Checklists, Uneven Risk:** Treating a dashboard vendor the same as one with direct access to customer financial records either over-burdens the low-risk vendor or under-protects the high-risk one.

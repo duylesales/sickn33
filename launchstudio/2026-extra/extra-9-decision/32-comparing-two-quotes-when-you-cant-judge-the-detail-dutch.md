@@ -31,9 +31,9 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-Elf gedetailleerde posten in de ene offerte. Twee beknopte alinea's in de andere. Hetzelfde prototype, dezelfde briefing, uitgebracht in dezelfde week — en een prijsverschil van maar liefst € 7.000 ertussen.
+Elf gedetailleerde posten in de ene offerte. Twee beknopte alinea's in de andere. Hetzelfde prototype, dezelfde briefing, uitgebracht in dezelfde week - en een prijsverschil van maar liefst € 7.000 ertussen.
 
-De meeste niet-technische oprichters in deze situatie doen het enige wat binnen hun bereik lijkt te liggen: ze herlezen beide documenten meerdere malen, voelen een knagend onbehagen en hakken de knoop uiteindelijk door op basis van wie tijdens het videogesprek het sympathiekst overkwam. Dat is een prima criterium wanneer twee voorstellen volkomen gelijkwaardig zijn, maar een gevaarlijke hoofdmaatstaf. De twee documenten beschrijven namelijk vrijwel zeker fundamenteel ander werk. Voordat u bedragen kunt vergelijken, moet u de offertes eerst inhoudelijk normaliseren — en dat is een oefening die u uitstekend kunt uitvoeren zónder enige technische achtergrond. Het kost u anderhalf uur en een eenvoudig spreadsheet.
+De meeste niet-technische oprichters in deze situatie doen het enige wat binnen hun bereik lijkt te liggen: ze herlezen beide documenten meerdere malen, voelen een knagend onbehagen en hakken de knoop uiteindelijk door op basis van wie tijdens het videogesprek het sympathiekst overkwam. Dat is een prima criterium wanneer twee voorstellen volkomen gelijkwaardig zijn, maar een gevaarlijke hoofdmaatstaf. De twee documenten beschrijven namelijk vrijwel zeker fundamenteel ander werk. Voordat u bedragen kunt vergelijken, moet u de offertes eerst inhoudelijk normaliseren - en dat is een oefening die u uitstekend kunt uitvoeren zónder enige technische achtergrond. Het kost u anderhalf uur en een eenvoudig spreadsheet.
 
 ## Accepteer Dat U Nu Nog Geen Prijzen Vergelijkt
 
@@ -45,18 +45,18 @@ De eerste stap is daarom: stop met het blindstaren op het totaalbedrag. Schrijf 
 
 Open een leeg spreadsheet. Maak één kolom per ontwikkelpartner en zet in de eerste kolom de volgende twaalf rijen. Deze lijst is niet willekeurig samengesteld; elk item vertegenwoordigt een onderdeel waarvan oprichters achteraf stelselmatig ontdekken dat niemand zich ervoor verantwoordelijk voelde nadat de factuur al was voldaan.
 
-1. **Authenticatie** — registratie, inloggen, wachtwoordherstel, e-mailverificatie
-2. **Permissies en autorisaties** — wie mag welke data inzien en bewerken, afgedwongen op de server
-3. **Betalingsverwerking** — payment provider, abonnementen versus eenmalig, mislukte incasso's, terugbetalingen
-4. **Database** — schemawissels, indexering, back-upbeleid en wie het database-account beheert
-5. **Hosting en deployment** — welk cloudplatform, op wiens naam, en wie betaalt de maandelijkse rekening
-6. **Domein, SSL en e-mailverzending** — inclusief SPF-, DKIM- en DMARC-configuratie voor transactionele e-mails
-7. **Datamigratie** — het veilig overzetten van bestaande test- of proefgebruikers naar de productieomgeving
-8. **Omgevingen** — is er een aparte staging-omgeving, of worden wijzigingen rechtstreeks op de live website doorgevoerd?
-9. **Testen en kwaliteitsborging** — wat wordt er getest, door wie, en wat is de definitie van "klaar" (acceptance criteria)?
-10. **Documentatie en overdracht** — kan een andere ontwikkelaar dit over zes maanden probleemloos overnemen?
-11. **Garantie en nazorg** — gedurende welke periode worden fouten kosteloos hersteld, wat valt eronder en welke responstijden gelden er?
-12. **Eigenaarschap en beheer** — repository, cloudaccounts en API-sleutels van derden: op wiens naam staan deze geregistreerd?
+1. **Authenticatie** - registratie, inloggen, wachtwoordherstel, e-mailverificatie
+2. **Permissies en autorisaties** - wie mag welke data inzien en bewerken, afgedwongen op de server
+3. **Betalingsverwerking** - payment provider, abonnementen versus eenmalig, mislukte incasso's, terugbetalingen
+4. **Database** - schemawissels, indexering, back-upbeleid en wie het database-account beheert
+5. **Hosting en deployment** - welk cloudplatform, op wiens naam, en wie betaalt de maandelijkse rekening
+6. **Domein, SSL en e-mailverzending** - inclusief SPF-, DKIM- en DMARC-configuratie voor transactionele e-mails
+7. **Datamigratie** - het veilig overzetten van bestaande test- of proefgebruikers naar de productieomgeving
+8. **Omgevingen** - is er een aparte staging-omgeving, of worden wijzigingen rechtstreeks op de live website doorgevoerd?
+9. **Testen en kwaliteitsborging** - wat wordt er getest, door wie, en wat is de definitie van "klaar" (acceptance criteria)?
+10. **Documentatie en overdracht** - kan een andere ontwikkelaar dit over zes maanden probleemloos overnemen?
+11. **Garantie en nazorg** - gedurende welke periode worden fouten kosteloos hersteld, wat valt eronder en welke responstijden gelden er?
+12. **Eigenaarschap en beheer** - repository, cloudaccounts en API-sleutels van derden: op wiens naam staan deze geregistreerd?
 
 Loop nu beide offertes regel voor regel na en plak de letterlijke bewoordingen van de aanbieder in de betreffende rij. Wanneer een offerte over een bepaald onderwerp zwijgt, schrijft u in felrode letters: **"niet vermeld"**. Schrijf nooit "zal er wel bij horen". De werkelijke waarde van deze analyse schuilt immers juist in de rode cellen.
 
@@ -64,7 +64,7 @@ Loop nu beide offertes regel voor regel na en plak de letterlijke bewoordingen v
 
 Hieronder ziet u een geanonimiseerde, genormaliseerde vergelijking voor een in Lovable gebouwde boekingsapplicatie:
 
-| Onderdeel | Aanbieder A — € 2.900 vast | Aanbieder B — € 11.400 (geschat op uurbasis) |
+| Onderdeel | Aanbieder A - € 2.900 vast | Aanbieder B - € 11.400 (geschat op uurbasis) |
 |---|---|---|
 | Authenticatie | "Bestaande Supabase-auth verstevigen, wachtwoordherstel toevoegen" | "Authenticatie volledig herbouwen met NextAuth" |
 | Permissies | "Serverside autorisatieregels per organisatie inrichten" | Niet vermeld |
@@ -79,7 +79,7 @@ Hieronder ziet u een geanonimiseerde, genormaliseerde vergelijking voor een in L
 | Nazorg | "30 dagen kosteloos herstel van bugs inbegrepen" | "Support op basis van nacalculatie à € 95/uur" |
 | Eigenaarschap | "Alle code en accounts direct op uw naam geregistreerd" | "Repo in onze GitHub-organisatie, overdracht bij slotbetaling" |
 
-Kijk goed naar wat er zojuist zichtbaar is geworden: het duurste voorstel bevat *meer* rode cellen dan het voordelige voorstel. Het dure voorstel sloopt tevens een werkende interface en houdt uw code gegijzeld in de eigen organisatie tot de laatste euro is overgemaakt. Dat diskwalificeert Aanbieder B niet automatisch — sommige bureaus werken nu eenmaal zo — maar het is nu een objectief, bespreekbaar feit geworden in plaats van een verborgen verrassing.
+Kijk goed naar wat er zojuist zichtbaar is geworden: het duurste voorstel bevat *meer* rode cellen dan het voordelige voorstel. Het dure voorstel sloopt tevens een werkende interface en houdt uw code gegijzeld in de eigen organisatie tot de laatste euro is overgemaakt. Dat diskwalificeert Aanbieder B niet automatisch - sommige bureaus werken nu eenmaal zo - maar het is nu een objectief, bespreekbaar feit geworden in plaats van een verborgen verrassing.
 
 ## Stel Beide Partijen Dezelfde Drie Vragen
 
@@ -108,7 +108,7 @@ Zodra u de ontbrekende informatie binnenheeft, hangt u een reëel prijskaartje a
 - **Een separate staging-omgeving**: circa € 200 tot € 500 (het cruciale vangnet dat voorkomt dat u om 23:00 uur per ongeluk uw live applicatie breekt)
 - **Dertig dagen nazorg op bugs**: uitgaande van € 95 per uur en 6 tot 10 uur reserve, rekent u op € 570 tot € 950
 
-Tel deze bedragen op bij het voorstel dat ze uitsluit. In het eerdere rekenvoorbeeld groeit de € 11.400 van Aanbieder B ineens naar € 13.500 à € 15.000 zodra permissies, transactionele mail, staging en nazorg worden meegerekend — en dan staat de code nog steeds niet op uw eigen naam.
+Tel deze bedragen op bij het voorstel dat ze uitsluit. In het eerdere rekenvoorbeeld groeit de € 11.400 van Aanbieder B ineens naar € 13.500 à € 15.000 zodra permissies, transactionele mail, staging en nazorg worden meegerekend - en dan staat de code nog steeds niet op uw eigen naam.
 
 Het omgekeerde komt overigens net zo vaak voor: een op het oog bijzonder goedkope offerte blijkt spotgoedkoop omdat de twee meest arbeidsintensieve en cruciale onderdelen simpelweg zijn weggelaten. Ook dat inzicht is goud waard.
 
@@ -116,7 +116,7 @@ Het omgekeerde komt overigens net zo vaak voor: een op het oog bijzonder goedkop
 
 Elk softwareprototype verbergt onvoorziene complexiteit. De relevante vraag is nooit óf er verrassingen opduiken, maar wie de financiële consequenties daarvan draagt.
 
-Een **vaste prijs (fixed fee)** legt dat risico volledig bij de ontwikkelpartner neer. Zij hebben uw code bekeken, een professionele inschatting gemaakt, en als het 40% meer tijd kost dan gedacht, is dat hun ondernemersrisico. De keerzijde is dat u een risico-opslag betaalt voor die zekerheid en dat de ontwikkelaar strikt zal toezien op scope-discipline — wat logisch is, want die discipline maakt een vaste prijs mogelijk.
+Een **vaste prijs (fixed fee)** legt dat risico volledig bij de ontwikkelpartner neer. Zij hebben uw code bekeken, een professionele inschatting gemaakt, en als het 40% meer tijd kost dan gedacht, is dat hun ondernemersrisico. De keerzijde is dat u een risico-opslag betaalt voor die zekerheid en dat de ontwikkelaar strikt zal toezien op scope-discipline - wat logisch is, want die discipline maakt een vaste prijs mogelijk.
 
 Een **uurtarief met een urenschatting** verlegt het volledige risico naar uw bord. Gaat alles soepel, dan bent u wellicht voordeliger uit. Maar in een door AI gegenereerde codebase gaat zelden alles soepel. Ziet u in een offerte staan "geschatte doorlooptijd: 90 tot 120 uur", hanteer dan direct 120 uur als uw absolute ondergrens en vraag vooraf zwart-op-wit wat er gebeurt wanneer de teller op 150 uur staat.
 
@@ -126,9 +126,9 @@ Voeg tot slot het betalingsschema toe als dertiende rij aan uw spreadsheet. Een 
 
 ## Als Ze Onvergelijkbaar Blijven: Laat Ze Elkaars Scope Beprijzen
 
-Blijven twee offertes na deze normalisatie onvergelijkbaar omdat ze twee totaal verschillende projecten voorstellen — de een verstevigt uw bestaande prototype, de ander wil alles slopen en herbouwen — dan heeft u nog één uiterst krachtige zet over. Stuur beide partijen de geanonimiseerde scope van de concurrent en vraag: **"Kunt u deze specifieke scope beprijzen, en als u van mening bent dat dit de verkeerde aanpak is, kunt u mij dan in maximaal drie zinnen uitleggen waarom?"**
+Blijven twee offertes na deze normalisatie onvergelijkbaar omdat ze twee totaal verschillende projecten voorstellen - de een verstevigt uw bestaande prototype, de ander wil alles slopen en herbouwen - dan heeft u nog één uiterst krachtige zet over. Stuur beide partijen de geanonimiseerde scope van de concurrent en vraag: **"Kunt u deze specifieke scope beprijzen, en als u van mening bent dat dit de verkeerde aanpak is, kunt u mij dan in maximaal drie zinnen uitleggen waarom?"**
 
-Dit is de meest waardevolle gratis analyse die u ooit zult ontvangen. U ontdekt direct of de dure partij een gegronde technische reden heeft voor de herbouw of dat het puur een kwestie van programmeurgemak is. Tevens ontdekt u of de goedkope partij efficiënt opereert of cruciale beveiligingslagen bewust overslaat. Bovendien ziet u hoe beide partijen reageren wanneer ze professioneel worden uitgedaagd — exact het gedrag waarmee u de komende maanden moet samenwerken.
+Dit is de meest waardevolle gratis analyse die u ooit zult ontvangen. U ontdekt direct of de dure partij een gegronde technische reden heeft voor de herbouw of dat het puur een kwestie van programmeurgemak is. Tevens ontdekt u of de goedkope partij efficiënt opereert of cruciale beveiligingslagen bewust overslaat. Bovendien ziet u hoe beide partijen reageren wanneer ze professioneel worden uitgedaagd - exact het gedrag waarmee u de komende maanden moet samenwerken.
 
 ## Beslissen Wanneer het Prijsverschil Minimaal Is
 
@@ -141,7 +141,7 @@ Landen twee genormaliseerde offertes binnen een marge van circa 15% van elkaar, 
 
 Ter referentie voor het marktniveau: traditionele bureaus offreren voor maatwerktrajecten veelal tussen de € 20.000 en € 100.000+ en sturen steevast aan op complete herbouw. Freelancers zitten doorgaans tussen de € 5.000 en € 20.000, met een enorme spreiding in kwaliteit. [LaunchStudio](https://launchstudio.eu/nl/) positioneert zich bewust anders: € 800 tot € 3.500 vaste prijs voor gerichte productie-afronding, één tot drie weken doorlooptijd, uw frontend onaangeroerd en alle accounts direct in uw bezit. De engineeringkracht wordt geleverd door het ervaren team van [Manifera](https://www.manifera.com/portfolio/), dat al meer dan 160 succesvolle softwareprojecten heeft opgeleverd. Zet ons gerust in kolom drie van uw spreadsheet en pas dezelfde kritische controle toe. Als een andere offerte de vergelijking beter doorstaat, kiest u met een gerust hart voor hen.
 
-**Wilt u vooraf een realistisch ijkpunt? Met de [LaunchStudio prijscalculator](https://launchstudio.eu/nl/#calculator) berekent u binnen één minuut een heldere richtprijs — ideaal als derde referentiepunt wanneer twee offertes mijlenver uit elkaar liggen.**
+**Wilt u vooraf een realistisch ijkpunt? Met de [LaunchStudio prijscalculator](https://launchstudio.eu/nl/#calculator) berekent u binnen één minuut een heldere richtprijs - ideaal als derde referentiepunt wanneer twee offertes mijlenver uit elkaar liggen.**
 
 ## Echt voorbeeld
 
@@ -154,7 +154,7 @@ Het normaliseren van beide voorstellen in een matrix van twaalf rijen zette dat 
 **Resultaat:** Thijs gunde de opdracht aan de voordeligere partij voor een vaste prijs van € 3.400, voegde strikte datascheiding per podium en Mollie-abonnementsbetalingen toe voor € 900 meerprijs die vooraf zwart-op-wit werd overeengekomen, en ging binnen elf werkdagen live met alle cloudaccounts en broncode op zijn eigen naam.
 
 > *"Ik had bijna vier keer zoveel betaald voor een voorstel waarin de twee dingen ontbraken waar ik letterlijk van wakker lag. Het invullen van dat spreadsheet kostte me één avond, en het was zonder twijfel de best betaalde avond van mijn hele jaar."*
-> — **Thijs van Ommeren, Oprichter, StageCrew (Eindhoven)**
+> - **Thijs van Ommeren, Oprichter, StageCrew (Eindhoven)**
 
 ---
 

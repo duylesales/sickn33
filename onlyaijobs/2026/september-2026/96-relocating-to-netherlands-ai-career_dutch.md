@@ -31,9 +31,9 @@ Verifieer actuele eisen bij officiële bronnen, want drempels en voorwaarden ver
 
 **Voor niet-EU-burgers** is de hoofdroute de kennismigrantenregeling. Het bepalende kenmerk: de werkgever is de aanvrager, niet jij. Een werkgever moet erkend referent zijn bij de immigratiedienst, en de functie moet aan een salarisdrempel voldoen die per leeftijdscategorie verschilt.
 
-**Het gevolg dat het meest telt**: je zoektocht is beperkt tot erkende referenten. Een klein bedrijf dat nooit internationaal heeft aangenomen, wil misschien geen referent worden voor één kandidaat — een commerciële afweging, geen oordeel over jou. Referentstatus checken vóór je in een sollicitatie investeert, bespaart veel tijd.
+**Het gevolg dat het meest telt**: je zoektocht is beperkt tot erkende referenten. Een klein bedrijf dat nooit internationaal heeft aangenomen, wil misschien geen referent worden voor één kandidaat - een commerciële afweging, geen oordeel over jou. Referentstatus checken vóór je in een sollicitatie investeert, bespaart veel tijd.
 
-**Er zijn andere routes.** Het zoekjaar voor recent afgestudeerden van Nederlandse en bepaalde buitenlandse universiteiten laat je zonder werkgeverssponsoring werken voor een beperkte periode — een werkelijk waardevolle brug. Ook bestaan intra-concernoverplaatsing, de EU-blauwe kaart en zelfstandigenroutes.
+**Er zijn andere routes.** Het zoekjaar voor recent afgestudeerden van Nederlandse en bepaalde buitenlandse universiteiten laat je zonder werkgeverssponsoring werken voor een beperkte periode - een werkelijk waardevolle brug. Ook bestaan intra-concernoverplaatsing, de EU-blauwe kaart en zelfstandigenroutes.
 
 **De positie van je partner vraagt aparte aandacht.** Gezinsleden van kennismigranten hebben doorgaans het recht te werken zonder aparte vergunning, maar bevestig dat.
 
@@ -76,7 +76,7 @@ Verifieer actuele eisen bij officiële bronnen, want drempels en voorwaarden ver
 
 **Planningscultuur is sterk.** Afspraken worden ruim vooraf gemaakt, ook sociale.
 
-**Engels volstaat op het werk in de meeste technische omgevingen, en Nederlands telt daarbuiten.** Administratieve brieven, schoolcommunicatie, medische papieren, buren en sociale settings zijn een ander verhaal — en verschillende sectoren in deze reeks vragen Nederlands ook professioneel.
+**Engels volstaat op het werk in de meeste technische omgevingen, en Nederlands telt daarbuiten.** Administratieve brieven, schoolcommunicatie, medische papieren, buren en sociale settings zijn een ander verhaal - en verschillende sectoren in deze reeks vragen Nederlands ook professioneel.
 
 ## De eerlijke beoordeling van Nederlands leren
 

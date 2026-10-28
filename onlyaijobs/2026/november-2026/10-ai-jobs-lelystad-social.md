@@ -1,6 +1,6 @@
 💡 Lelystad stands on land that was seabed less than a century ago. That origin still shapes the work: large, uniform polder fields and a province kept dry by pumping.
 
-🌾 Flevoland is a natural laboratory for precision agriculture — variable-rate application, drone and satellite crop monitoring, field robotics — with Wageningen research and the national precision agriculture field lab nearby.
+🌾 Flevoland is a natural laboratory for precision agriculture - variable-rate application, drone and satellite crop monitoring, field robotics - with Wageningen research and the national precision agriculture field lab nearby.
 
 🐄 Wageningen Bioveterinary Research in Lelystad works on infectious animal diseases as a national reference laboratory. Outbreak modelling, genomic analysis and surveillance design have direct national consequences under the EU Animal Health Law.
 

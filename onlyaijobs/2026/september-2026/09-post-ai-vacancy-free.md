@@ -35,34 +35,34 @@ Content Format: Decision-Stage Guide
 
 Posting a vacancy on Indeed takes a few clicks. Wading through the pile of CVs from candidates who have "IT" in their profile but have never trained a model takes half a working day. That second part is rarely counted as a cost, but it is exactly where things go wrong when you post an AI, ML or data vacancy on a general platform.
 
-This is not a criticism of the candidates who apply. It is a predictable consequence of how a general job platform is built — and that immediately explains what needs to change structurally, not just how you write the vacancy text.
+This is not a criticism of the candidates who apply. It is a predictable consequence of how a general job platform is built - and that immediately explains what needs to change structurally, not just how you write the vacancy text.
 
 ## Why This Is a Structural Problem, Not a Writing Problem
 
-A general job platform makes money by creating as many matches as possible between employers and job seekers, because that keeps both sides — paying employers and job seekers who search for free — on the platform. Relevance is subordinate to volume. The result: the matching algorithm treats a word like "AI" or "data" as a way to increase reach, not to filter.
+A general job platform makes money by creating as many matches as possible between employers and job seekers, because that keeps both sides - paying employers and job seekers who search for free - on the platform. Relevance is subordinate to volume. The result: the matching algorithm treats a word like "AI" or "data" as a way to increase reach, not to filter.
 
 On top of that, visibility depends partly on budget: a vacancy from a small AI team with a modest budget is drowned out by a large company's "Software Engineer" vacancy that happens to mention machine learning in the fifth bullet point. Both vacancies compete for the same pool of applicants, most of whom are not specifically looking for either role.
 
 ## What This Actually Costs You
 
-The visible problem is time: wading through a pile of applications of which only a small share is relevant. The less visible problem is worse — candidates who are specifically looking for AI/ML/data work scroll past hundreds of irrelevant IT vacancies on a general platform to find the few that fit. If your vacancy competes on the same results page with backend, DevOps and IT support roles, you are not just fishing in a crowded pond — the fish you want to catch have often already stopped fishing there.
+The visible problem is time: wading through a pile of applications of which only a small share is relevant. The less visible problem is worse - candidates who are specifically looking for AI/ML/data work scroll past hundreds of irrelevant IT vacancies on a general platform to find the few that fit. If your vacancy competes on the same results page with backend, DevOps and IT support roles, you are not just fishing in a crowded pond - the fish you want to catch have often already stopped fishing there.
 
 ## What a Specialist Platform Does Differently
 
-**The audience has already filtered itself.** Everyone browsing OnlyAIJobs does so because they are specifically looking for an AI, ML or data role. You are not paying for broad reach and hoping relevance sorts itself out — the relevance comes before your vacancy.
+**The audience has already filtered itself.** Everyone browsing OnlyAIJobs does so because they are specifically looking for an AI, ML or data role. You are not paying for broad reach and hoping relevance sorts itself out - the relevance comes before your vacancy.
 
 **Visibility does not depend on budget.** Every vacancy is shown on equal terms, regardless of company size or advertising budget. A small team with an interesting AI problem is not drowned out by the bigger recruitment budget of a company with an unrelated vacancy that happens to mention the same keyword.
 
-**Location does real filtering work.** Vacancies show the exact address and the distance from the candidate's home, not just a city name. Candidates who click through have already accepted the commute before they apply — fewer drop-outs from people who only discover how far the drive is when they see the address.
+**Location does real filtering work.** Vacancies show the exact address and the distance from the candidate's home, not just a city name. Candidates who click through have already accepted the commute before they apply - fewer drop-outs from people who only discover how far the drive is when they see the address.
 
 ## Two Routes Side by Side
 
 | | General platform | Specialist AI/ML/Data platform |
 |---|---|---|
-| Audience composition | Broad — all sectors, all roles | Narrow — AI, ML, data only |
+| Audience composition | Broad - all sectors, all roles | Narrow - AI, ML, data only |
 | Ranking logic | Partly advertising budget | Equal visibility for every employer |
 | Location signal | City name only | Exact address + distance |
-| Screening burden on your team | High — most applicants not a fit | Lower — audience already pre-filtered |
+| Screening burden on your team | High - most applicants not a fit | Lower - audience already pre-filtered |
 | Cost of the first vacancy | Paid placement or boost | Free |
 | Best suited for | High-volume, generic hiring | Roles where "specifically AI/ML/data" is decisive |
 
@@ -74,7 +74,7 @@ The visible problem is time: wading through a pile of applications of which only
 |---|---|---|---|
 | **Indeed** | Organic job listings | Sponsored jobs for more visibility | Large reach, little filtering by specialism |
 | **LinkedIn** | Limited basic job posts | Promoted jobs and recruiter licences | Strong for approaching senior candidates directly, noisy for inbound |
-| **werk.nl (UWV)** | Posting vacancies through the employer portal | — | Broad audience, rarely the source of experienced ML engineers |
+| **werk.nl (UWV)** | Posting vacancies through the employer portal | - | Broad audience, rarely the source of experienced ML engineers |
 | **Nationale Vacaturebank** | Limited | Paid packages | General Dutch-language reach |
 | **University and university of applied sciences career portals** | Usually free for employers | Sometimes events or career days | Strong for internships, graduates and junior roles |
 | **Meetups and communities** | Showing up | Sponsorship or speaking slots | Slow, but good for credibility with engineers |
@@ -127,9 +127,9 @@ A specialist audience reads a vacancy more critically than a general audience. E
 
 ## What Posting Looks Like in Practice
 
-There is no dashboard to configure and no self-service account needed. You send a link to the vacancy on your own careers page to info@onlyaijobs.eu, together with the city or exact address where the role is based — precise enough for the distance-from-home search that candidates actually use. The vacancy goes live under the correct AI/ML/Data category. Your first vacancy costs nothing.
+There is no dashboard to configure and no self-service account needed. You send a link to the vacancy on your own careers page to info@onlyaijobs.eu, together with the city or exact address where the role is based - precise enough for the distance-from-home search that candidates actually use. The vacancy goes live under the correct AI/ML/Data category. Your first vacancy costs nothing.
 
-That matters more than it sounds. A low-threshold posting process is not a nice extra for a recruiter considering a fourth or fifth channel for a role that has been open for weeks — it is the difference between actually trying a specialist platform and never getting round to it.
+That matters more than it sounds. A low-threshold posting process is not a nice extra for a recruiter considering a fourth or fifth channel for a role that has been open for weeks - it is the difference between actually trying a specialist platform and never getting round to it.
 
 ## Key Takeaways
 
@@ -141,7 +141,7 @@ That matters more than it sounds. A low-threshold posting process is not a nice 
 
 ## Where to Start
 
-If you are currently hiring for an AI, machine learning, data science or related role, the fastest way to see whether a specialist audience makes a difference to the quality of applications is simply to post the vacancy you already have — not to redesign your whole recruitment process around it first.
+If you are currently hiring for an AI, machine learning, data science or related role, the fastest way to see whether a specialist audience makes a difference to the quality of applications is simply to post the vacancy you already have - not to redesign your whole recruitment process around it first.
 
 Send a link to your open vacancy to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) and it will go live under the right category, on equal footing with every other employer on the platform, free for your first posting.
 
@@ -154,13 +154,13 @@ General platforms are built to create as many matches as possible across their w
 Yes, structurally even more than on a general platform. Vacancies are shown on equal terms, regardless of company size or advertising budget, so a small team's vacancy is not systematically drowned out by a larger company paying for placement.
 
 ### (Scenario: recruiter unsure whether a new platform is worthwhile alongside Indeed and LinkedIn) Is it worth also posting on a specialist AI platform if I already use Indeed and LinkedIn?
-It is a cheap test, not a replacement. The composition of the audience is fundamentally different — everyone visiting a specialist platform is specifically looking for AI, ML or data roles. Because the first posting is free, the only cost of testing is the time it takes to send a link.
+It is a cheap test, not a replacement. The composition of the audience is fundamentally different - everyone visiting a specialist platform is specifically looking for AI, ML or data roles. Because the first posting is free, the only cost of testing is the time it takes to send a link.
 
 ### (Scenario: employer who doesn't know what is needed to post) What exactly do I need to post a vacancy?
 A link to the vacancy on your own website or careers page, and the city or exact address where the role is based. The address powers the distance-from-home search for candidates, so being specific improves the match, not just the reach.
 
 ### (Scenario: recruiter wondering why an exact address matters) Why does showing an exact address instead of just a city change the applications I get?
-Because candidates see the real commute before they apply, instead of discovering it at the first interview. That pre-filtering means those who do apply have already accepted the commute — fewer drop-outs at a later stage.
+Because candidates see the real commute before they apply, instead of discovering it at the first interview. That pre-filtering means those who do apply have already accepted the commute - fewer drop-outs at a later stage.
 
 <script type="application/ld+json">
 {

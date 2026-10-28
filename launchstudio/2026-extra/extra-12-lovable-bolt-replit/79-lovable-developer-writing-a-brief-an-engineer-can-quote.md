@@ -40,7 +40,7 @@ Seven things, in this order.
 
 **What you know is wrong.** The bug you cannot fix, the page that is slow, the thing you suspect is insecure. Nobody will think less of you and it saves an hour of discovery.
 
-**Constraints.** Your budget range, your deadline, anything the product must keep — a customer's integration, a design somebody paid for, a platform you cannot leave.
+**Constraints.** Your budget range, your deadline, anything the product must keep - a customer's integration, a design somebody paid for, a platform you cannot leave.
 
 **Who you are in this.** Will you keep building alongside them, hand it over entirely, or something between? This determines how the work is structured and is the question most often left unanswered.
 
@@ -48,7 +48,7 @@ Seven things, in this order.
 
 Founders withhold the number believing it produces a better price. It produces a worse process.
 
-An engineer who knows you have €3,000 will tell you what €3,000 buys and what it does not, which is a useful conversation. One who does not know will either quote for everything — a number that frightens you — or quote for the minimum and discover mid-project that you expected more.
+An engineer who knows you have €3,000 will tell you what €3,000 buys and what it does not, which is a useful conversation. One who does not know will either quote for everything - a number that frightens you - or quote for the minimum and discover mid-project that you expected more.
 
 A range is enough. "Between €2,000 and €5,000, depending on what is necessary" is honest, and any competent supplier will tell you which end your situation falls at.
 
@@ -68,7 +68,7 @@ Four details that change a quote materially and are almost always omitted.
 
 **How many customers and how they are separated.** One organisation per account, or several users sharing? Multi-tenancy is the single largest structural factor.
 
-**What it integrates with.** Every external service — payments, email, accounting, an industry system. Integrations are where estimates go wrong.
+**What it integrates with.** Every external service - payments, email, accounting, an industry system. Integrations are where estimates go wrong.
 
 **Whether anyone else has worked on it.** A codebase with two previous contractors' approaches in it takes longer to work in than one with a single author, even if that author was a tool.
 
@@ -86,11 +86,11 @@ Half the delay in these engagements is administrative, and it is entirely avoida
 
 What a supplier needs, and what to prepare.
 
-**The code**, in a repository they can be added to. If it has never been exported from the building tool, do that first — it is the step that otherwise consumes the first day of a paid engagement.
+**The code**, in a repository they can be added to. If it has never been exported from the building tool, do that first - it is the step that otherwise consumes the first day of a paid engagement.
 
 **A working environment**, or a note explaining what is missing. A supplier who cannot run your product spends their first hours getting it running, at your expense.
 
-**Read access to the relevant dashboards** — hosting, database, payment provider, email — rather than the account password. Most platforms support adding a collaborator, and doing it that way means removing access afterwards is one click rather than a rotation.
+**Read access to the relevant dashboards** - hosting, database, payment provider, email - rather than the account password. Most platforms support adding a collaborator, and doing it that way means removing access afterwards is one click rather than a rotation.
 
 **Test accounts** at each permission level, so they can see the product as your customers do.
 
@@ -124,9 +124,9 @@ The exception is a codebase where the data model cannot represent what the busin
 
 ## Setting This Up
 
-Before contacting anyone, write one page covering: what the product does and who uses it, where it is now including customers and revenue, what you want to happen with a date and a number, access to the code or a note that it has never been exported, what you already know is wrong, your budget range and hard constraints, your own intended role afterwards, and the boring facts — data volume, tenancy, integrations, previous contributors. Describe problems rather than solutions.
+Before contacting anyone, write one page covering: what the product does and who uses it, where it is now including customers and revenue, what you want to happen with a date and a number, access to the code or a note that it has never been exported, what you already know is wrong, your budget range and hard constraints, your own intended role afterwards, and the boring facts - data volume, tenancy, integrations, previous contributors. Describe problems rather than solutions.
 
-LaunchStudio quotes from exactly this, and the Launch Ready package starts at €800 for a prototype that needs securing and launching. Behind it is Manifera — eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
+LaunchStudio quotes from exactly this, and the Launch Ready package starts at €800 for a prototype that needs securing and launching. Behind it is Manifera - eleven years, 160+ projects, 120+ engineers, from Herengracht 420 in Amsterdam.
 
 [Send us your page](https://launchstudio.eu/en/#contact) and we will come back with an itemised quote rather than a discovery call.
 
@@ -142,14 +142,14 @@ The quotes were €2,400, €11,000 and €38,000. None of them could be compare
 
 He spent three weeks in calls establishing what each had meant.
 
-Two hours of writing, then a different outcome: a one-page brief stating what the product does and that 14 garages use it daily; that it is live, holds 4,000 records and takes no payments yet; that the goal is to accept payments and onboard 40 garages before the October tyre season, a date with a number; a link to the repository, exported that morning; three known problems named — a slow list page for the largest garage, uncertainty about whether garages could see each other's data, and an email that sometimes does not arrive; a budget range of €4,000 to €9,000; a constraint that the product must stay live throughout; and a statement that he intends to keep building features himself afterwards.
+Two hours of writing, then a different outcome: a one-page brief stating what the product does and that 14 garages use it daily; that it is live, holds 4,000 records and takes no payments yet; that the goal is to accept payments and onboard 40 garages before the October tyre season, a date with a number; a link to the repository, exported that morning; three known problems named - a slow list page for the largest garage, uncertainty about whether garages could see each other's data, and an email that sometimes does not arrive; a budget range of €4,000 to €9,000; a constraint that the product must stay live throughout; and a statement that he intends to keep building features himself afterwards.
 
-**Result:** the three revised quotes came back at €5,200, €6,800 and €7,500 — comparable, itemised, and all within his range. Two of the three told him unprompted that his slow page was probably an index rather than an architecture problem. He chose the middle quote, and the work took nine days against an estimate of eight.
+**Result:** the three revised quotes came back at €5,200, €6,800 and €7,500 - comparable, itemised, and all within his range. Two of the three told him unprompted that his slow page was probably an index rather than an architecture problem. He chose the middle quote, and the work took nine days against an estimate of eight.
 
-> *"Three quotes, from twenty-four hundred to thirty-eight thousand, for what I thought was the same question. It was not the same question — I had asked three different things without realising it."*
-> — **Machiel Verduijn, Founder, Bandenwissel (Emmen)**
+> *"Three quotes, from twenty-four hundred to thirty-eight thousand, for what I thought was the same question. It was not the same question - I had asked three different things without realising it."*
+> - **Machiel Verduijn, Founder, Bandenwissel (Emmen)**
 
-**Cost & Timeline:** €6,800 (security review and remediation, multi-tenant separation, payment integration, email deliverability, performance work, launch support) — completed in 9 business days.
+**Cost & Timeline:** €6,800 (security review and remediation, multi-tenant separation, payment integration, email deliverability, performance work, launch support) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -163,7 +163,7 @@ Whether the code is in a repository you control or has never left the tool. It c
 
 ### Should I specify the technical solution?
 
-No. Describe the problem — "this page takes eight seconds for our largest customer" — and let the engineer diagnose. Specifying an implementation frequently buys the wrong work.
+No. Describe the problem - "this page takes eight seconds for our largest customer" - and let the engineer diagnose. Specifying an implementation frequently buys the wrong work.
 
 ### What should a good quote contain?
 
@@ -191,7 +191,7 @@ The good ones tell you that part of what you asked for is unnecessary, and ask a
       "name": "What is the most important fact in a brief?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Whether the code is in a repository you control or has never left the building tool — it changes the assessment most."
+        "text": "Whether the code is in a repository you control or has never left the building tool - it changes the assessment most."
       }
     },
     {

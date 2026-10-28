@@ -20,7 +20,7 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager or technical lead at a multi-state veterinary practice group scoping a controlled-substance logging system faces a specific compliance reality that's easy to underweight during architecture planning: recordkeeping requirements for controlled substances administered in veterinary practice — ketamine, opioids used for pain management, and other Schedule II through V substances — are governed at the federal level by DEA recordkeeping rules but layered with additional, genuinely divergent state veterinary board requirements around logging detail, reporting frequency, and reconciliation procedures. A system architected around a single, hardcoded logging format risks either failing audits in stricter states or unnecessarily over-burdening staff with excess documentation requirements in more permissive ones.
+An IT Manager or technical lead at a multi-state veterinary practice group scoping a controlled-substance logging system faces a specific compliance reality that's easy to underweight during architecture planning: recordkeeping requirements for controlled substances administered in veterinary practice - ketamine, opioids used for pain management, and other Schedule II through V substances - are governed at the federal level by DEA recordkeeping rules but layered with additional, genuinely divergent state veterinary board requirements around logging detail, reporting frequency, and reconciliation procedures. A system architected around a single, hardcoded logging format risks either failing audits in stricter states or unnecessarily over-burdening staff with excess documentation requirements in more permissive ones.
 
 ## Why a Single Hardcoded Logging Format Creates Real Compliance Risk
 
@@ -28,7 +28,7 @@ A controlled-substance logging system built around a single, uniform logging for
 
 ## Why Region-Configurable Architecture Is the More Sustainable Approach
 
-A system architected from the start around region-configurable logging rules — able to apply the correct logging detail, reconciliation frequency, and reporting format based on a specific clinic location's actual state jurisdiction — lets a practice group comply with each state's specific requirements without unnecessarily burdening staff in states where lighter documentation remains legally sufficient. This isn't simply a matter of toggling a stricter or lighter logging mode per state, since state board requirements can be more nuanced than a binary strict/lenient distinction — some states specifically require dual-witness verification for waste disposal of controlled substances while others require only single-staff documentation, and some states mandate electronic reconciliation against purchase records on a specific schedule that others don't require at all, meaning the underlying system needs to support genuinely configurable behavior, not just a single severity toggle, to accommodate the actual range of state board approaches across a practice group's operating states.
+A system architected from the start around region-configurable logging rules - able to apply the correct logging detail, reconciliation frequency, and reporting format based on a specific clinic location's actual state jurisdiction - lets a practice group comply with each state's specific requirements without unnecessarily burdening staff in states where lighter documentation remains legally sufficient. This isn't simply a matter of toggling a stricter or lighter logging mode per state, since state board requirements can be more nuanced than a binary strict/lenient distinction - some states specifically require dual-witness verification for waste disposal of controlled substances while others require only single-staff documentation, and some states mandate electronic reconciliation against purchase records on a specific schedule that others don't require at all, meaning the underlying system needs to support genuinely configurable behavior, not just a single severity toggle, to accommodate the actual range of state board approaches across a practice group's operating states.
 
 ## What Building Region-Configurable Compliance Architecture Actually Requires
 
@@ -64,7 +64,7 @@ Dyrlæge Journalføring Aalborg, an Aalborg-based veterinary practice group with
 Manifera's Amsterdam team rebuilt the logging system's core architecture around a configurable, per-jurisdiction ruleset, supporting both dual-witness verification for stricter jurisdictions and streamlined single-staff logging for jurisdictions where it remained sufficient, alongside reliable clinic-location jurisdiction determination and consistent federal-equivalent reporting support, all without requiring separate, parallel logging systems per location.
 
 > *"We'd built one logging format and assumed we'd just tighten it wherever a regulator pushed back. It turned out the actual requirements across our jurisdictions were more varied than a single format could handle, and building real configurability was what let us keep expanding into new territories properly instead of holding every location to the same rigid process regardless of what was actually required there."*
-> — **IT Manager, Dyrlæge Journalføring Aalborg**
+> - **IT Manager, Dyrlæge Journalføring Aalborg**
 
 Dyrlæge Journalføring Aalborg successfully expanded into its additional target territories with jurisdiction-appropriate logging configurations, and now treats regulatory configurability as a standard architectural requirement for any new clinic location, rather than a single format applied and adjusted reactively.
 
@@ -79,7 +79,7 @@ Dyrlæge Journalføring Aalborg successfully expanded into its additional target
 
 ## Scoping Your Own Veterinary Practice Group's Controlled-Substance Logging Architecture
 
-Before expanding a controlled-substance logging system across multiple states or jurisdictions, architect the system around genuinely configurable, per-jurisdiction rulesets — a single hardcoded format forces an unnecessary trade-off between staff burden and real audit exposure. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready controlled-substance logging system.
+Before expanding a controlled-substance logging system across multiple states or jurisdictions, architect the system around genuinely configurable, per-jurisdiction rulesets - a single hardcoded format forces an unnecessary trade-off between staff burden and real audit exposure. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a compliance-ready controlled-substance logging system.
 
 ## Frequently Asked Questions
 
@@ -93,7 +93,7 @@ It forces a choice between unnecessarily burdening staff with excess documentati
 
 ### (Scenario: engineering lead scoping logging configurability) Is a simple strict-versus-lenient toggle sufficient to handle controlled-substance logging across states?
 
-Not always — state board requirements vary along multiple dimensions like witness verification and reconciliation schedule, meaning the system needs genuinely configurable behavior per jurisdiction, not just a binary strict/lenient toggle.
+Not always - state board requirements vary along multiple dimensions like witness verification and reconciliation schedule, meaning the system needs genuinely configurable behavior per jurisdiction, not just a binary strict/lenient toggle.
 
 ### (Scenario: compliance lead reviewing technical architecture) Why does reliable clinic-location jurisdiction determination matter for regulatory compliance?
 
@@ -110,7 +110,7 @@ State veterinary board recordkeeping rules are revised on a genuinely regular ba
   "mainEntity": [
     { "@type": "Question", "name": "(Scenario: IT manager scoping a controlled-substance logging system) Why does controlled-substance recordkeeping vary meaningfully across jurisdictions?", "acceptedAnswer": { "@type": "Answer", "text": "DEA rules apply federally, but individual state veterinary boards layer on additional, divergent logging and reconciliation requirements." } },
     { "@type": "Question", "name": "(Scenario: practice group worried about compliance) What's the risk of building a logging system around a single, hardcoded format?", "acceptedAnswer": { "@type": "Answer", "text": "It forces a choice between excess documentation burden in permissive states or audit failure risk in stricter ones." } },
-    { "@type": "Question", "name": "(Scenario: engineering lead scoping logging configurability) Is a simple strict-versus-lenient toggle sufficient to handle controlled-substance logging across states?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — requirements vary along multiple dimensions, requiring genuinely configurable behavior per jurisdiction." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping logging configurability) Is a simple strict-versus-lenient toggle sufficient to handle controlled-substance logging across states?", "acceptedAnswer": { "@type": "Answer", "text": "Not always - requirements vary along multiple dimensions, requiring genuinely configurable behavior per jurisdiction." } },
     { "@type": "Question", "name": "(Scenario: compliance lead reviewing technical architecture) Why does reliable clinic-location jurisdiction determination matter for regulatory compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Applying rules correctly depends on identifying which state's requirements apply to a specific clinic location or appointment." } },
     { "@type": "Question", "name": "(Scenario: practice group planning for future regulatory change) Why should a logging system be designed to accommodate evolving state requirements, not just current ones?", "acceptedAnswer": { "@type": "Answer", "text": "State recordkeeping rules are revised regularly, and a system requiring rework for each change creates ongoing compliance risk." } }
   ]

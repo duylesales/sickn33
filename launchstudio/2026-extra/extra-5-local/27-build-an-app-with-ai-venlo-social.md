@@ -1,4 +1,4 @@
-🚨 Stijn Gerrits built GrensVracht — a booking and documentation tool for freight carriers moving goods between the Netherlands and Germany — using Cursor in three weeks. Dutch carriers loved it. The first German carrier hit a wall almost immediately: the invoicing module assumed Dutch VAT rules throughout, with no logic for intra-EU cross-border freight VAT treatment. 😳
+🚨 Stijn Gerrits built GrensVracht - a booking and documentation tool for freight carriers moving goods between the Netherlands and Germany - using Cursor in three weeks. Dutch carriers loved it. The first German carrier hit a wall almost immediately: the invoicing module assumed Dutch VAT rules throughout, with no logic for intra-EU cross-border freight VAT treatment. 😳
 
 Their accountant flagged the invoices as non-compliant in the first billing cycle. 🧠
 

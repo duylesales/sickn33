@@ -20,19 +20,19 @@ target_persona: "CFO"
 }
 </script>
 
-A region that spent a century building its economy on peat extraction and then had to rebuild it around something entirely different knows that a genuine industrial pivot isn't a side project — and a CFO funding the software platform behind that pivot needs to budget it the same way.
+A region that spent a century building its economy on peat extraction and then had to rebuild it around something entirely different knows that a genuine industrial pivot isn't a side project - and a CFO funding the software platform behind that pivot needs to budget it the same way.
 
-**The Pain:** A CFO at a renewable-energy technology company in Stadskanaal — a former Groningen peat-extraction region that has spent recent decades pivoting its industrial base toward renewable energy and green technology — is commissioning software product engineering for an energy-management platform central to the company's core business, and internal budget conversations have treated it, by habit, as a supporting IT cost rather than product infrastructure the entire business depends on.
+**The Pain:** A CFO at a renewable-energy technology company in Stadskanaal - a former Groningen peat-extraction region that has spent recent decades pivoting its industrial base toward renewable energy and green technology - is commissioning software product engineering for an energy-management platform central to the company's core business, and internal budget conversations have treated it, by habit, as a supporting IT cost rather than product infrastructure the entire business depends on.
 
-**The Agitation:** A CFO who budgets a genuinely core software product using the same assumptions applied to internal IT tooling — minimal ongoing investment, treated as a sunk cost once initially built — ends up underfunding the platform's evolution, maintenance, and reliability relative to what a product the business actually depends on for revenue requires, producing a gap that surfaces as competitive erosion over time rather than an obvious budget line item failure.
+**The Agitation:** A CFO who budgets a genuinely core software product using the same assumptions applied to internal IT tooling - minimal ongoing investment, treated as a sunk cost once initially built - ends up underfunding the platform's evolution, maintenance, and reliability relative to what a product the business actually depends on for revenue requires, producing a gap that surfaces as competitive erosion over time rather than an obvious budget line item failure.
 
 ## Budgeting a Product, Not a Cost Center
 
 Software product engineering for a platform that's core to the business, not a supporting internal tool, needs a fundamentally different budget model, one that treats the software as ongoing product infrastructure rather than a one-time IT expense.
 
-The first budget shift is recognizing that a core product platform needs continuous investment in reliability and evolution, not a one-time build followed by minimal maintenance — competitors don't stop improving, and a platform funded like a static IT tool falls behind one funded like an evolving product.
+The first budget shift is recognizing that a core product platform needs continuous investment in reliability and evolution, not a one-time build followed by minimal maintenance - competitors don't stop improving, and a platform funded like a static IT tool falls behind one funded like an evolving product.
 
-The second is pricing the cost of technical debt accumulation realistically — a core revenue-generating platform that accumulates unaddressed technical debt at the same rate an internal tool might tolerate eventually produces reliability and velocity problems that directly affect customer-facing product quality, a cost category with real revenue implications a CFO's model needs to reflect.
+The second is pricing the cost of technical debt accumulation realistically - a core revenue-generating platform that accumulates unaddressed technical debt at the same rate an internal tool might tolerate eventually produces reliability and velocity problems that directly affect customer-facing product quality, a cost category with real revenue implications a CFO's model needs to reflect.
 
 The third is recognizing that the team building and maintaining a core product platform needs institutional continuity and deep domain understanding that a rotating, minimally invested internal-IT-style engagement structurally can't provide, making retention and long-term team stability a real budget consideration, not an afterthought.
 
@@ -41,7 +41,7 @@ The third is recognizing that the team building and maintaining a core product p
 - **Amsterdam (Governance/Strategy):** Dutch-based leads help build a CFO's budget model around the platform's actual status as core product infrastructure, with realistic ongoing investment in reliability and evolution.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod is structured for long-term continuity on the account, building the deep domain understanding a core product platform genuinely requires.
 
-This is Dutch Management × Vietnamese Mastery — software product engineering funded and structured like the core infrastructure it actually is. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - software product engineering funded and structured like the core infrastructure it actually is. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Uusiutuva Energia Suomi Oy, a renewable-energy technology company based in Oulu,
 Manifera restructured the engagement around treating the platform as core product infrastructure, with an ongoing reliability and technical-debt budget explicitly built into the engagement, and a long-tenure team structure providing institutional continuity. Platform reliability metrics recovered over the following two quarters, and the CFO reported the revised budget model, while higher than the original IT-style allocation, was materially lower than the cost of the customer churn the underfunded platform had been quietly causing.
 
 > *"We budgeted it like an internal tool because that's the habit we brought from every other IT line item. It was never an internal tool. It was the product, and once we funded it like the product, the churn problem actually started reversing."*
-> — **CFO, Uusiutuva Energia Suomi Oy, Finland**
+> - **CFO, Uusiutuva Energia Suomi Oy, Finland**
 
 ## Internal-IT-Style Budgeting vs. Manifera's Core-Product Investment Model
 

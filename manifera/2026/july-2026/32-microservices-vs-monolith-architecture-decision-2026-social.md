@@ -8,9 +8,9 @@ In 2026: "It depends." (finally)
 **The uncomfortable truth:**
 
 Every company you admire started as a monolith:
-→ Shopify — monolith serving billions
-→ Stack Overflow — 100M users, one .NET app
-→ Basecamp — $100M business, single Rails app
+→ Shopify - monolith serving billions
+→ Stack Overflow - 100M users, one .NET app
+→ Basecamp - $100M business, single Rails app
 
 **The hidden costs nobody shows at conferences:**
 

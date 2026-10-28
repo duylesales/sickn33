@@ -31,11 +31,11 @@ Doelgroep: HealthTech Founders / Security Engineers
 }
 </script>
 
-Voor snelgroeiende technologiebedrijven is de klantenservice vaak het slachtoffer van het eigen commerciële succes. Hoe sneller het aantal actieve gebruikers groeit, hoe sneller de support-wachtrij ontploft — wat bedrijven dwingt om continu nieuwe eerstelijns supportmedewerkers aan te nemen om te voorkomen dat de reactietijden instorten. Deze casestudy beschrijft hoe LaunchStudio een Series B FinTech startup ("PayFlow") hielp deze lineaire kostenexplosie te doorbreken door een geavanceerde Retrieval-Augmented Generation (RAG) agent te implementeren, waarmee **62% van de supporttickets volledig autonoom werd opgelost** en jaarlijks **$ 800.000 aan loonkosten werd bespaard**.
+Voor snelgroeiende technologiebedrijven is de klantenservice vaak het slachtoffer van het eigen commerciële succes. Hoe sneller het aantal actieve gebruikers groeit, hoe sneller de support-wachtrij ontploft - wat bedrijven dwingt om continu nieuwe eerstelijns supportmedewerkers aan te nemen om te voorkomen dat de reactietijden instorten. Deze casestudy beschrijft hoe LaunchStudio een Series B FinTech startup ("PayFlow") hielp deze lineaire kostenexplosie te doorbreken door een geavanceerde Retrieval-Augmented Generation (RAG) agent te implementeren, waarmee **62% van de supporttickets volledig autonoom werd opgelost** en jaarlijks **$ 800.000 aan loonkosten werd bespaard**.
 
 ## De Crisis: De Lawine aan Eerstelijns Supporttickets
 
-PayFlow levert een betalingsgateway voor e-commerce via API's. Toen het platform de grens van 100.000 aangesloten webwinkels passeerde, explodeerde de Zendesk-wachtrij naar 1.500 tickets per dag. Meer dan 70% van deze tickets betrof repetitieve eerstelijns (Tier 1) vragen: *"Hoe reset ik mijn API-sleutel?"*, *"Waarom faalt deze betaling met Foutcode 402?"*, of *"Wat is het retry-beleid voor mislukte uitbetalingen?"* — vragen met een eenduidig antwoord dat simpelweg opgezocht moest worden in de documentatie.
+PayFlow levert een betalingsgateway voor e-commerce via API's. Toen het platform de grens van 100.000 aangesloten webwinkels passeerde, explodeerde de Zendesk-wachtrij naar 1.500 tickets per dag. Meer dan 70% van deze tickets betrof repetitieve eerstelijns (Tier 1) vragen: *"Hoe reset ik mijn API-sleutel?"*, *"Waarom faalt deze betaling met Foutcode 402?"*, of *"Wat is het retry-beleid voor mislukte uitbetalingen?"* - vragen met een eenduidig antwoord dat simpelweg opgezocht moest worden in de documentatie.
 
 PayFlow had eerder traditionele beslisboom-chatbots geprobeerd. Dat was een drama. Als een gebruiker ook maar minimaal afweek van het voorgeprogrammeerde script, faalde de bot en werd het ticket alsnog geëscaleerd naar een menselijke medewerker (een escalatieratio van 95%). Klanten raakten gefrustreerd en de kosten bleven onverminderd hoog.
 
@@ -90,7 +90,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om een Human-in-the-Loop v
 
 **Resultaat:** De automatische ticket-resolutie steeg naar 82%, terwijl het foutpercentage daalde naar exact 0%.
 
-**Kosten & Tijdlijn:** €1.800 (Support Safety Dashboard Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.800 (Support Safety Dashboard Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 

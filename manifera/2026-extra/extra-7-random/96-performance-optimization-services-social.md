@@ -1,4 +1,4 @@
-"Just add more servers" works — for a while. Right up until the bottleneck was never capacity at all. 🐌⚡
+"Just add more servers" works - for a while. Right up until the bottleneck was never capacity at all. 🐌⚡
 
 **The Pain Points:**
 ❌ **Scaling Around the Wrong Problem:** Bigger instances, temporary relief, then the slowdown creeps right back.
@@ -8,9 +8,9 @@
 **The Manifera Solution:**
 ✅ **Profile Real Production Load:** Find where time is genuinely being spent, not where it's assumed to be.
 ✅ **Amsterdam Diagnostic Discipline:** Prioritize fixes by actual measured impact.
-✅ **Vietnam Execution:** Fix the query, the cache, the bundle — then prove the improvement under load.
+✅ **Vietnam Execution:** Fix the query, the cache, the bundle - then prove the improvement under load.
 
-One fix cut checkout load time 68% and let the team downgrade their database instance. Not upgrade — downgrade. 📉
+One fix cut checkout load time 68% and let the team downgrade their database instance. Not upgrade - downgrade. 📉
 
 👉 Read our full deep dive on performance optimization services: https://www.manifera.com/blog/performance-optimization-services
 

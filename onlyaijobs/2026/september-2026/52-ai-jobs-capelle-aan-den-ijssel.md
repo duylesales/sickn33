@@ -38,7 +38,7 @@ Capelle aan den IJssel lies in Rotterdam's shadow, and that is exactly why the e
 
 ## What Kind of Data Work Actually Happens Here
 
-E-commerce and consumer services companies in this region typically deal with demand forecasting, customer segmentation and recommendation logic at consumer scale — work whose toolset is close to what an Amsterdam scale-up does, but without the visibility a bigger brand name brings.
+E-commerce and consumer services companies in this region typically deal with demand forecasting, customer segmentation and recommendation logic at consumer scale - work whose toolset is close to what an Amsterdam scale-up does, but without the visibility a bigger brand name brings.
 
 ## Why This Work Is Easily Overlooked
 
@@ -59,19 +59,19 @@ The disadvantage is obvious: companies here are overshadowed in search results b
 
 ## What This Means for Your Search Strategy
 
-If you have a background in consumer-facing data science — recommender systems, customer segmentation, pricing optimisation — this work is probably a better match for your skills than the port-related roles a regional search for Rotterdam automatically leads you to. Search specifically for e-commerce and consumer services companies in the immediate area, not for "Rotterdam" as a whole.
+If you have a background in consumer-facing data science - recommender systems, customer segmentation, pricing optimisation - this work is probably a better match for your skills than the port-related roles a regional search for Rotterdam automatically leads you to. Search specifically for e-commerce and consumer services companies in the immediate area, not for "Rotterdam" as a whole.
 
 ## A Concrete Scenario of How This Invisibility Arises
 
-A data scientist with experience in recommender systems is looking for a new role and types "AI jobs Rotterdam" into a search engine. The results are dominated by port-related companies and logistics providers, simply because those are most associated with the region in news coverage and marketing. An e-commerce company in Capelle aan den IJssel offering exactly the kind of work this candidate is looking for appears nowhere in those first results — not because the company has no vacancy, but because the search itself is already unconsciously steered towards a different type of employer.
+A data scientist with experience in recommender systems is looking for a new role and types "AI jobs Rotterdam" into a search engine. The results are dominated by port-related companies and logistics providers, simply because those are most associated with the region in news coverage and marketing. An e-commerce company in Capelle aan den IJssel offering exactly the kind of work this candidate is looking for appears nowhere in those first results - not because the company has no vacancy, but because the search itself is already unconsciously steered towards a different type of employer.
 
 ## A Common Misconception About Regional Searches
 
-Candidates often assume that searching on a big city name automatically covers all relevant employers in the wider region. In practice, this backfires when the larger city has a strongly dominant image — like Rotterdam with its port — because search results and coverage cluster around that dominant image, burying different kinds of employers in the same region.
+Candidates often assume that searching on a big city name automatically covers all relevant employers in the wider region. In practice, this backfires when the larger city has a strongly dominant image - like Rotterdam with its port - because search results and coverage cluster around that dominant image, burying different kinds of employers in the same region.
 
 ## Why This Pattern Repeats in Almost Every Large Dutch City
 
-This isn't unique to Rotterdam and Capelle aan den IJssel — the same pattern plays out in Eindhoven (dominated by high-tech industry, with logistics and services in the shadow) and in Amsterdam (dominated by consumer tech, with traditional sectors in the shadow). If you recognise this pattern, you can deliberately break it by always searching specifically for the type of work that interests you, instead of relying on what a city name automatically brings to mind.
+This isn't unique to Rotterdam and Capelle aan den IJssel - the same pattern plays out in Eindhoven (dominated by high-tech industry, with logistics and services in the shadow) and in Amsterdam (dominated by consumer tech, with traditional sectors in the shadow). If you recognise this pattern, you can deliberately break it by always searching specifically for the type of work that interests you, instead of relying on what a city name automatically brings to mind.
 
 ## How to Build a Targeted Search for Hidden Regional Markets Like This
 
@@ -85,7 +85,7 @@ Capelle aan den IJssel offers a specific combination not every place near Rotter
 
 Capelle aan den IJssel isn't a Rotterdam district, but an independent municipality with its own office and business landscape. The best-known example is **Rivium**, a large office park on the Nieuwe Maas river, home to many business service providers, IT companies and regional headquarters.
 
-Rivium also has a special place in Dutch mobility history: the **ParkShuttle Rivium** was one of the first automated people movers in the world to operate in public space, connecting the office park with the Kralingse Zoom metro station. For anyone working in AI, that is a nice detail — it shows autonomous systems have been part of everyday life here for decades.
+Rivium also has a special place in Dutch mobility history: the **ParkShuttle Rivium** was one of the first automated people movers in the world to operate in public space, connecting the office park with the Kralingse Zoom metro station. For anyone working in AI, that is a nice detail - it shows autonomous systems have been part of everyday life here for decades.
 
 **The OnlyAIJobs audit of September 2026** explicitly named Capelle aan den IJssel as one of the Dutch places with active AI and data vacancies on the platform. That confirms the point of this article: there is supply here, but it is overshadowed by the Rotterdam name.
 
@@ -100,13 +100,13 @@ Capelle aan den IJssel is on the east side of Rotterdam and well connected to se
 | **A16 and A20 motorways** | Fast access to the rest of the Randstad and Brabant |
 | **Bike and e-bike** | Rivium, Kralingen and the Erasmus campus are within cycling distance |
 
-A realistic search radius from Capelle therefore includes not only Rotterdam, but also Krimpen aan den IJssel, Nieuwerkerk aan den IJssel (Zuidplas), Gouda and — by train — Utrecht. Searching by distance from your home instead of by "Rotterdam" automatically brings those municipalities into view.
+A realistic search radius from Capelle therefore includes not only Rotterdam, but also Krimpen aan den IJssel, Nieuwerkerk aan den IJssel (Zuidplas), Gouda and - by train - Utrecht. Searching by distance from your home instead of by "Rotterdam" automatically brings those municipalities into view.
 
 ## The Talent Pipeline Around Capelle
 
 Employers in Capelle recruit from the same strong educational institutions as Rotterdam companies:
 
-- **Erasmus University Rotterdam.** The Woudestein campus is on the east side of Rotterdam, close to Capelle. The Erasmus School of Economics is known for econometrics, and the Rotterdam School of Management produces many analysts for marketing, pricing and customer data — exactly the skills e-commerce and consumer companies look for.
+- **Erasmus University Rotterdam.** The Woudestein campus is on the east side of Rotterdam, close to Capelle. The Erasmus School of Economics is known for econometrics, and the Rotterdam School of Management produces many analysts for marketing, pricing and customer data - exactly the skills e-commerce and consumer companies look for.
 - **Rotterdam University of Applied Sciences.** Trains large numbers of ICT, data and business professionals with a practice-oriented approach.
 - **Delft University of Technology.** A short distance away, and an important source of technically strong data engineers and ML engineers for the whole region.
 
@@ -148,7 +148,7 @@ Consumer-facing data teams in the Rotterdam region look for a different skill pr
 - **Causal inference.** Estimating the effect of a campaign or price change when a clean experiment isn't possible, for example with uplift modelling or quasi-experimental methods.
 - **Customer models.** Segmentation, churn prediction, customer lifetime value and recommender systems.
 - **Modern data stack.** SQL, dbt and cloud data warehouses, so analyses are reproducible and reliable.
-- **Measuring without full tracking.** Stricter cookie and privacy rules increasingly mean complete customer journeys are missing. Anyone who knows how to deal with that — through aggregated measurement, model-based attribution and first-party data — is valuable.
+- **Measuring without full tracking.** Stricter cookie and privacy rules increasingly mean complete customer journeys are missing. Anyone who knows how to deal with that - through aggregated measurement, model-based attribution and first-party data - is valuable.
 
 A candidate who can link these skills to concrete business outcomes, such as fewer returns or higher customer value, clearly stands out from candidates who only report model accuracy.
 
@@ -158,7 +158,7 @@ A candidate who can link these skills to concrete business outcomes, such as few
 - The OnlyAIJobs audit of September 2026 named Capelle as a place with active AI and data vacancies.
 - The metro, Rotterdam Alexander station and the A16/A20 put Rotterdam, Gouda and Utrecht within reach; search by distance, not city name.
 - Erasmus University Rotterdam, Rotterdam University of Applied Sciences and TU Delft form the talent pipeline.
-- Consumer-facing data work requires knowledge of the GDPR, DSA, ACM supervision and cookie rules — a different profile from port work.
+- Consumer-facing data work requires knowledge of the GDPR, DSA, ACM supervision and cookie rules - a different profile from port work.
 
 ## Where to Start
 
@@ -169,13 +169,13 @@ Browse current AI, machine learning and data jobs in and around Capelle aan den 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who only thinks of port work around Rotterdam) Is all data work around Rotterdam port-related?
-No — right next to the port there is also a cluster of e-commerce and consumer services companies with their own consumer-facing data demand around demand forecasting and customer segmentation.
+No - right next to the port there is also a cluster of e-commerce and consumer services companies with their own consumer-facing data demand around demand forecasting and customer segmentation.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Rotterdam"?
 Because coverage of the region focuses mainly on the port and industry, so candidates unconsciously aim their search at that and miss consumer-facing data vacancies in the immediate area.
 
 ### (Scenario: candidate unsure whether this work is comparable to Amsterdam) Is this work comparable to what an Amsterdam scale-up does?
-In terms of toolset, often yes — demand forecasting, customer segmentation and recommendation logic are comparable techniques, just without the brand visibility of a larger Amsterdam employer.
+In terms of toolset, often yes - demand forecasting, customer segmentation and recommendation logic are comparable techniques, just without the brand visibility of a larger Amsterdam employer.
 
 ### (Scenario: candidate who wants to broaden their search area) Should I broaden my search area if I live near Rotterdam?
 Yes, it pays to look beyond the port industry and central Rotterdam, since the immediate surroundings have their own, less visible employers with data work.
@@ -188,7 +188,7 @@ Filter by category and distance from home instead of by the best-known company n
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is all data work around Rotterdam port-related?", "acceptedAnswer": {"@type": "Answer", "text": "No — right next to the port there is also a cluster of e-commerce and consumer services companies with their own consumer-facing data demand."}},
+    {"@type": "Question", "name": "Is all data work around Rotterdam port-related?", "acceptedAnswer": {"@type": "Answer", "text": "No - right next to the port there is also a cluster of e-commerce and consumer services companies with their own consumer-facing data demand."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Rotterdam\"?", "acceptedAnswer": {"@type": "Answer", "text": "Coverage of the region focuses mainly on the port and industry, so candidates unconsciously aim their search at that."}},
     {"@type": "Question", "name": "Is this work comparable to what an Amsterdam scale-up does?", "acceptedAnswer": {"@type": "Answer", "text": "In terms of toolset, often yes, just without the brand visibility of a larger Amsterdam employer."}},
     {"@type": "Question", "name": "Should I broaden my search area if I live near Rotterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it pays to look beyond the port industry and central Rotterdam."}},

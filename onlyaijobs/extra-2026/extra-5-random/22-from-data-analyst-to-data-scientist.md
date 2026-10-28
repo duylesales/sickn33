@@ -34,7 +34,7 @@ Content Format: Career Transition Guide
 }
 </script>
 
-The move from data analyst to data scientist is the most common career transition in the data field, and the most misunderstood. Many analysts assume the gap is a list of algorithms they have not learned. In practice, the gap is usually about problem framing, engineering practice and statistical care — and analysts already hold advantages that outsiders spend years acquiring. This guide sets out what genuinely differs between the roles in European organisations, which gaps matter, and how to make the move without quitting to do a bootcamp.
+The move from data analyst to data scientist is the most common career transition in the data field, and the most misunderstood. Many analysts assume the gap is a list of algorithms they have not learned. In practice, the gap is usually about problem framing, engineering practice and statistical care - and analysts already hold advantages that outsiders spend years acquiring. This guide sets out what genuinely differs between the roles in European organisations, which gaps matter, and how to make the move without quitting to do a bootcamp.
 
 ## From Data Analyst to Data Scientist: What Actually Differs
 
@@ -44,7 +44,7 @@ Titles vary enormously between employers, so compare the work, not the label.
 
 **Output type.** An analyst's output is usually an answer, a dashboard or a recommendation. A data scientist's output is more often a system that keeps producing answers, which brings code quality, testing, deployment and monitoring into scope.
 
-**Uncertainty.** Data scientists are expected to quantify how confident they are and to design studies — experiments, holdouts, causal designs — rather than only describe what happened.
+**Uncertainty.** Data scientists are expected to quantify how confident they are and to design studies - experiments, holdouts, causal designs - rather than only describe what happened.
 
 **Time horizon.** Analyst work is often measured in days; data science projects in weeks or months, with higher failure rates and more ambiguity.
 
@@ -66,7 +66,7 @@ Not all gaps matter equally. In order of how often they block an analyst in inte
 
 **1. Statistical care.** Understanding sampling variation, multiple comparisons, confidence intervals, the difference between correlation and effect, and why a model evaluated on data it was tuned against is meaningless. This is the gap that most often produces wrong conclusions, and it is the one interviewers probe hardest.
 
-**2. Engineering practice.** Version control, code that runs outside your laptop, environment management, tests, scheduling. Not advanced software engineering — just enough that your work is reproducible and someone else can maintain it.
+**2. Engineering practice.** Version control, code that runs outside your laptop, environment management, tests, scheduling. Not advanced software engineering - just enough that your work is reproducible and someone else can maintain it.
 
 **3. Problem framing.** Turning "we want to use AI for churn" into a defined prediction, a target population, a time horizon, an evaluation metric and a decision the output will inform.
 
@@ -74,7 +74,7 @@ Not all gaps matter equally. In order of how often they block an analyst in inte
 
 **5. Deployment.** Getting something to run on a schedule, with monitoring. Basic competence is enough for most roles; specialists handle the rest.
 
-Analysts who invert this order — starting with deep learning courses and never learning time-based validation — make slow progress despite considerable effort.
+Analysts who invert this order - starting with deep learning courses and never learning time-based validation - make slow progress despite considerable effort.
 
 ## Using Your Current Job as the Training Ground
 
@@ -82,7 +82,7 @@ The most reliable route runs through work you are already paid to do. A practica
 
 **Choose a question that recurs.** Something a colleague asks monthly, or a manual estimate someone makes. Recurrence justifies automation and gives you a baseline to beat.
 
-**Establish the current baseline honestly.** How accurate is the existing approach — a rule of thumb, a spreadsheet, a person's judgement? Many projects fail to show value because nobody measured what was already happening.
+**Establish the current baseline honestly.** How accurate is the existing approach - a rule of thumb, a spreadsheet, a person's judgement? Many projects fail to show value because nobody measured what was already happening.
 
 **Do the boring version first.** A simple model, evaluated properly, deployed on a schedule. Simple and running beats sophisticated and theoretical for both business value and your CV.
 
@@ -99,7 +99,7 @@ Analysts rarely fail for lack of effort; they fail by spreading effort thinly ac
 - **One structured course in statistics or experimentation**, worked through properly rather than watched. Most analysts' weakest area, and the most transferable.
 - **A working knowledge of Python** if you are primarily a SQL and BI user, focused on data manipulation, writing functions and using version control. Two evenings a week for two months is enough to be useful.
 - **One project**, as described above, carried to completion.
-- **Reading how others describe production systems** — engineering blogs, post-mortems, conference talks — to build vocabulary for interviews.
+- **Reading how others describe production systems** - engineering blogs, post-mortems, conference talks - to build vocabulary for interviews.
 
 Deliberately skip, for now, distributed computing frameworks you will not use, the newest model architecture, and any certification that does not require you to build something. They can be added later if a role demands them.
 
@@ -173,7 +173,7 @@ To be transparent about coverage: listings are currently concentrated in the Net
 
 A commercial analyst at a European logistics company spent three years building reports on delivery performance. She wanted to move into data science and assumed she needed a master's degree.
 
-Instead, she chose one recurring question — which shipments were likely to miss their promised delivery window — and treated it as a project rather than a report. She built a model, but more importantly she did the surrounding work: a proper time-based validation, an honest comparison against the existing rule of thumb, a cost analysis of false alarms, and a small service that scored shipments each morning and posted a list to the planning team's channel.
+Instead, she chose one recurring question - which shipments were likely to miss their promised delivery window - and treated it as a project rather than a report. She built a model, but more importantly she did the surrounding work: a proper time-based validation, an honest comparison against the existing rule of thumb, a cost analysis of false alarms, and a small service that scored shipments each morning and posted a list to the planning team's channel.
 
 It took four months of partial time. The model was modest and she said so. What convinced her manager was the operational reality: planners used the list daily, and she monitored its accuracy and reported drift honestly.
 

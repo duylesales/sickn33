@@ -1,4 +1,4 @@
-Can your prospective dedicated team produce an actual pull request thread — real comments, real revision requests, a real merge decision — or only a description of "rigorous code review"? 🔍👨‍💻
+Can your prospective dedicated team produce an actual pull request thread - real comments, real revision requests, a real merge decision - or only a description of "rigorous code review"? 🔍👨‍💻
 
 **The Pain Points:**
 ❌ **LGTM-Only Reviews:** Approvals with no substantive comments mean the quality control in the sales deck may not exist in practice.
@@ -8,9 +8,9 @@ Can your prospective dedicated team produce an actual pull request thread — re
 **The Manifera Solution:**
 ✅ **Request the Redacted PR Thread:** Real review behavior beats a described process every time.
 ✅ **Ask for Hard Numbers:** Deployments per week, rollback percentage, p95/p99 latency with a named load-testing tool.
-✅ **Score Five Categories Before Comparing Vendors:** Code review evidence, CI/CD maturity, architecture docs, performance benchmarks, and security posture — weighted to your project, not averaged blindly.
+✅ **Score Five Categories Before Comparing Vendors:** Code review evidence, CI/CD maturity, architecture docs, performance benchmarks, and security posture - weighted to your project, not averaged blindly.
 
-Once you sign, your leverage to demand process changes drops sharply — gather the evidence now, while you still can. 🛡️
+Once you sign, your leverage to demand process changes drops sharply - gather the evidence now, while you still can. 🛡️
 
 👉 Read our full deep dive on running technical due diligence: https://www.manifera.com/blog/how-to-run-technical-due-diligence-dedicated-software-development-team
 

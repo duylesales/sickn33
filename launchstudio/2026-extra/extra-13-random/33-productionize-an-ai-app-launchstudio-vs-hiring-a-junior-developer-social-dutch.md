@@ -10,9 +10,9 @@ Hij had de boekingskalender opnieuw gebouwd (die had gewerkt), een nieuw beheerd
 ✅ De werkende kalender hersteld uit de versiegeschiedenis
 ✅ Toegang tot gastenlijsten afgedwongen in de database
 ✅ Aanbetalingen bevestigd via geverifieerde Mollie-webhooks, wachtwoordherstel gerepareerd
-✅ Beheerdersrollen aan de serverkant, tests, een deploymentpipeline en documentatie — zodat de afgestudeerde veilig verder kon bouwen
+✅ Beheerdersrollen aan de serverkant, tests, een deploymentpipeline en documentatie - zodat de afgestudeerde veilig verder kon bouwen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, doen we het eenmalige werk dat ervaring vraagt — en dragen we een basis over waarop uw volgende aanname kan bouwen. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, doen we het eenmalige werk dat ervaring vraagt - en dragen we een basis over waarop uw volgende aanname kan bouwen. ⚙️
 
 💡 Het resultaat: € 2.200, acht werkdagen. Kinderfeestje verwerkte in voorjaar en zomer 640 boekingen zonder incidenten met betalingen of data, en de afgestudeerde leverde drie nieuwe functies op de versterkte basis. 🚀
 

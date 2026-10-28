@@ -56,11 +56,11 @@ At Manifera, we eradicate network latency by engineering elite Local-First topol
 
 ### Case Study: Eradicating Downtime for a Global Inspection Firm (Illustrative Scenario)
 
-Consider a representative scenario for a large industrial inspection firm digitizing its pipeline inspection process: the incumbent agency built a standard React Native app that relied on REST APIs for every form submission, and inspectors deep in the field routinely lost signal — and with it, hours of inspection data.
+Consider a representative scenario for a large industrial inspection firm digitizing its pipeline inspection process: the incumbent agency built a standard React Native app that relied on REST APIs for every form submission, and inspectors deep in the field routinely lost signal - and with it, hours of inspection data.
 
 In this scenario, the firm transitions to Manifera. Our Amsterdam architects mandate a complete shift to a Local-First Architecture utilizing CRDTs, and the Vietnamese Pod rebuilds the app around an embedded local database. Inspectors download their daily route each morning, drive into a dead zone, and complete hundreds of complex inspection forms with zero loading spinners, because every write lands on the device first. When they return to a hotel with Wi-Fi, the CRDT sync engine reconciles the day's payload against the AWS backend, automatically resolving any conflicts without a developer ever writing manual merge logic.
 
-The architectural approach underpinning this scenario is not proprietary to Manifera — it is grounded in published research. The term "local-first software" itself comes from a 2019 research paper by Ink & Switch, co-authored by distributed-systems researcher Martin Kleppmann, which argues that CRDTs allow applications to be simultaneously offline-capable, multi-user, and free of a central server as the single source of truth (Kleppmann, Wiggins, van Hardenberg, McGranaghan, "Local-first software: you own your data, in spite of the cloud," Onward! 2019). What we engineer for field-service and inspection clients is a production implementation of that same principle: the phone, not the cloud, is the primary database.
+The architectural approach underpinning this scenario is not proprietary to Manifera - it is grounded in published research. The term "local-first software" itself comes from a 2019 research paper by Ink & Switch, co-authored by distributed-systems researcher Martin Kleppmann, which argues that CRDTs allow applications to be simultaneously offline-capable, multi-user, and free of a central server as the single source of truth (Kleppmann, Wiggins, van Hardenberg, McGranaghan, "Local-first software: you own your data, in spite of the cloud," Onward! 2019). What we engineer for field-service and inspection clients is a production implementation of that same principle: the phone, not the cloud, is the primary database.
 
 ## Architecture Comparison: 'Cloud-First' Agency vs. Local-First Pod
 
@@ -76,9 +76,9 @@ The architectural approach underpinning this scenario is not proprietary to Mani
 
 The financial impact of a Local-First architecture is measured in user retention for consumer apps and extreme productivity for B2B apps.
 
-In the consumer space, the relationship between latency and revenue is one of the most widely cited findings in web and mobile performance engineering: former Amazon engineer Greg Linden has described internal Amazon experiments from the mid-2000s showing that every additional 100 milliseconds of page load latency measurably reduced sales by roughly 1%. That figure is now two decades old and specific to Amazon's own traffic and margins, so it should not be read as a universal constant — but the direction of the effect (latency suppresses conversion, and the relationship is closer to linear than most teams assume) has been replicated in various forms across the performance engineering literature ever since. A Local-First architecture that responds in single-digit milliseconds, rather than the 200–3000ms typical of a network round trip, is architecturally positioned at the favorable end of that curve by default, rather than needing continuous latency-optimization work to get there.
+In the consumer space, the relationship between latency and revenue is one of the most widely cited findings in web and mobile performance engineering: former Amazon engineer Greg Linden has described internal Amazon experiments from the mid-2000s showing that every additional 100 milliseconds of page load latency measurably reduced sales by roughly 1%. That figure is now two decades old and specific to Amazon's own traffic and margins, so it should not be read as a universal constant - but the direction of the effect (latency suppresses conversion, and the relationship is closer to linear than most teams assume) has been replicated in various forms across the performance engineering literature ever since. A Local-First architecture that responds in single-digit milliseconds, rather than the 200–3000ms typical of a network round trip, is architecturally positioned at the favorable end of that curve by default, rather than needing continuous latency-optimization work to get there.
 
-In the B2B space, the scale of the mobile workforce affected by this decision is larger than most engineering leaders assume. IDC projected that the number of mobile workers in the United States would reach approximately 93.5 million by 2024 — nearly 60% of the total US workforce — growing at roughly 4% annually, faster than overall workforce growth (IDC, "Mobile Workers Will Be 60% of the Total U.S. Workforce by 2024," 2020). Field service, inspection, logistics, and delivery workers make up a large share of that population, and for these roles, the cost of a Cloud-First app is not lost conversion revenue — it is idle labor.
+In the B2B space, the scale of the mobile workforce affected by this decision is larger than most engineering leaders assume. IDC projected that the number of mobile workers in the United States would reach approximately 93.5 million by 2024 - nearly 60% of the total US workforce - growing at roughly 4% annually, faster than overall workforce growth (IDC, "Mobile Workers Will Be 60% of the Total U.S. Workforce by 2024," 2020). Field service, inspection, logistics, and delivery workers make up a large share of that population, and for these roles, the cost of a Cloud-First app is not lost conversion revenue - it is idle labor.
 
 ### A Worked Illustration: Field-Team Downtime
 
@@ -86,12 +86,12 @@ To make the productivity trade-off concrete, consider a simplified, illustrative
 
 | Metric | Assumption | Illustrative Monthly Cost |
 | :--- | :--- | :--- |
-| Lost time per worker per shift | 10 minutes | — |
+| Lost time per worker per shift | 10 minutes | - |
 | Working days per month | 21 | 210 minutes/worker/month (3.5 hours) |
 | Fully loaded labor cost | €35/hour | €122.50/worker/month |
-| Fleet of 1,000 workers | — | **≈ €122,500/month, or ≈ €1.47M/year** |
+| Fleet of 1,000 workers | - | **≈ €122,500/month, or ≈ €1.47M/year** |
 
-This is illustrative, not a guaranteed outcome for any specific organization — actual lost minutes per shift, headcount, and loaded labor cost vary substantially by industry and geography. But it illustrates why, for a large field workforce, even a modest per-shift latency tax compounds into a meaningful annual figure — one that a Local-First rebuild, which eliminates network-dependent blocking entirely, is well positioned to recover.
+This is illustrative, not a guaranteed outcome for any specific organization - actual lost minutes per shift, headcount, and loaded labor cost vary substantially by industry and geography. But it illustrates why, for a large field workforce, even a modest per-shift latency tax compounds into a meaningful annual figure - one that a Local-First rebuild, which eliminates network-dependent blocking entirely, is well positioned to recover.
 
 ## Why SQLite Is the Right Foundation
 

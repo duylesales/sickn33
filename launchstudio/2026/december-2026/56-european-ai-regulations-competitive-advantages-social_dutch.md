@@ -1,8 +1,8 @@
 🚨 Ze pitchte tegen een goedkopere Amerikaanse concurrent. De beslissende factor was niet de prijs, de functies of de demo. Het was ÉÉN vraag over dataopslag! 🔒
 
-"Europese regelgeving remt innovatie alleen maar af" — een van de meest herhaalde aannames. Dit is wat dat perspectief over het hoofd ziet: 🧠
+"Europese regelgeving remt innovatie alleen maar af" - een van de meest herhaalde aannames. Dit is wat dat perspectief over het hoofd ziet: 🧠
 
-❌ AVG/GDPR voelt als pure frictie — verwerkersovereenkomsten, transparantieregels, risicoscans
+❌ AVG/GDPR voelt als pure frictie - verwerkersovereenkomsten, transparantieregels, risicoscans
 ❌ Buitenlandse concurrenten slaan alles over en "bewegen sneller"
 ❌ Oprichters denken dat compliance alleen maar geld kost
 ❌ Naderhand ombouwen (compliance retrofit) kost tienduizenden euro's en maanden vertraging
@@ -12,7 +12,7 @@
 ✅ Overheden en grote bedrijven móeten AVG-conforme leveranciers kiezen
 ✅ "Snel bouwen, later regelen" is op termijn altijd de duurste optie
 
-🎯 De EU AI Act in de praktijk: de meeste SaaS-tools vallen simpelweg onder "beperkt risico" — wat betekent dat de hoofdverplichting louter transparantie is, geen zware bureaucratie!
+🎯 De EU AI Act in de praktijk: de meeste SaaS-tools vallen simpelweg onder "beperkt risico" - wat betekent dat de hoofdverplichting louter transparantie is, geen zware bureaucratie!
 
 Bij **LaunchStudio** is AVG-conforme architectuur de standaard op elke lancering. Gesteund door Manifera's ervaring bij enterprise-klanten zoals TNO. 🛡️
 

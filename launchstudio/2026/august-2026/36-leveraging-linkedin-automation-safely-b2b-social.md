@@ -1,4 +1,4 @@
-🔥 Logan built a prototype using **Bolt** — logan, a sales rep, used **bolt** to build a linkedin scraper, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Logan built a prototype using **Bolt** - logan, a sales rep, used **bolt** to build a linkedin scraper, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Logan's application achieved silky-smooth performance: Account block rate dropped to 0%, securing a reliable flow of sales leads. (€1,200 (Scraper Optimization Package) — production-ready and deployed in 3 business days.). 🚀
+Logan's application achieved silky-smooth performance: Account block rate dropped to 0%, securing a reliable flow of sales leads. (€1,200 (Scraper Optimization Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/leveraging-linkedin-automation-safely-b2b
 

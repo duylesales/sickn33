@@ -30,7 +30,7 @@ This is not an argument against offering one. Products that integrate win busine
 
 The central shift in thinking.
 
-In a web application it is possible — common, even — for protection to live in the interface. A page not linked anywhere, a button hidden from users without a role, a form that only submits valid combinations. None of that exists in an API. Protection must be in the code that handles the request, on every endpoint, without exception.
+In a web application it is possible - common, even - for protection to live in the interface. A page not linked anywhere, a button hidden from users without a role, a form that only submits valid combinations. None of that exists in an API. Protection must be in the code that handles the request, on every endpoint, without exception.
 
 The practical consequence: when you publish an API, every endpoint that exists becomes part of it, including the ones your own frontend uses and the ones left over from a feature you removed. Inventory them first. The endpoints nobody remembers are the ones without checks.
 
@@ -44,13 +44,13 @@ Two separate questions, and confusing them is the most damaging API mistake.
 
 The failure is almost universal in generated APIs: an endpoint verifies the key, then fetches whatever identifier the request contains. A valid customer asks for another customer's invoice and receives it, because the code checked that they were somebody rather than that they were the right somebody.
 
-Every endpoint that accepts an identifier must verify that the authenticated caller may access that object. This must be enforced server-side — in the database through policies, or in the query itself — and it should be tested by making that exact request from a second account.
+Every endpoint that accepts an identifier must verify that the authenticated caller may access that object. This must be enforced server-side - in the database through policies, or in the query itself - and it should be tested by making that exact request from a second account.
 
 ## Limits Are Not Optional
 
 A program calling you does not get tired.
 
-**Rate limits per key,** so one caller's bad loop does not degrade everybody. Return a clear signal — the standard response code and a header saying when to retry — so well-behaved clients back off correctly.
+**Rate limits per key,** so one caller's bad loop does not degrade everybody. Return a clear signal - the standard response code and a header saying when to retry - so well-behaved clients back off correctly.
 
 **Pagination, enforced.** An endpoint returning everything is a performance problem and a bulk-extraction tool. Set a maximum page size and apply it even when the caller asks for more.
 
@@ -64,7 +64,7 @@ A program calling you does not get tired.
 
 The caller is not a browser and will not be constrained by your form.
 
-Validate types, ranges, formats and enumerated values on every field, and reject unknown fields rather than ignoring them — that rejection catches both integration bugs and attempts to set fields you did not intend to expose. This last case is worth naming: an update endpoint that accepts a whole object and applies it to a record lets a caller modify any column, including the tenant, the owner, the price or the role. Accept a defined list of fields, always.
+Validate types, ranges, formats and enumerated values on every field, and reject unknown fields rather than ignoring them - that rejection catches both integration bugs and attempts to set fields you did not intend to expose. This last case is worth naming: an update endpoint that accepts a whole object and applies it to a record lets a caller modify any column, including the tenant, the owner, the price or the role. Accept a defined list of fields, always.
 
 ## What Your Errors Give Away
 
@@ -80,7 +80,7 @@ Once customers' systems call yours, your API is a contract. Renaming a field bre
 
 Version from the first day, even with a single version. Add fields rather than changing them. When something must change, run both versions for a stated period, tell customers in advance, and use your last-used-per-key data to see who is still on the old one.
 
-This is a security matter as much as a product one, because the alternative — customers who cannot upgrade — leads to old endpoints kept alive indefinitely, unmaintained, and eventually forgotten.
+This is a security matter as much as a product one, because the alternative - customers who cannot upgrade - leads to old endpoints kept alive indefinitely, unmaintained, and eventually forgotten.
 
 ## Documentation Is a Control, Not Just Marketing
 
@@ -104,7 +104,7 @@ A web application tells you when something is wrong, because people complain. An
 
 **Alert on shape, not only on failure.** A key that has called you every ten minutes for a year and stops is a broken integration nobody has reported. A key that suddenly makes fifty times its usual volume is a loop, a migration, or a compromise. Both are worth knowing about within the hour rather than at month end.
 
-**Watch error rates per customer, not in aggregate.** One integration failing every request is invisible in a total that includes 33 healthy ones — and it is the customer about to cancel.
+**Watch error rates per customer, not in aggregate.** One integration failing every request is invisible in a total that includes 33 healthy ones - and it is the customer about to cancel.
 
 **Publish a status page.** Hosted somewhere other than your own infrastructure, so it works during the event it describes. Integrators check a status page before opening a ticket, which saves you the ticket.
 
@@ -132,22 +132,22 @@ Each webshop had a key. Endpoints verified the key and then used the identifiers
 
 A developer at one webshop found it while debugging. He had typed an order number from a paper note into a test request, received an order for a different retailer, and recognised the competitor's name in the delivery address.
 
-Eight business days of work: authorisation added per object on all 23 endpoints — seven of which were internal endpoints his own frontend used and which had become public the moment the API was published, including one that listed every capacity record in the system; the update endpoints changed to accept a defined field list after testing showed a caller could set the owning webshop on an order; rate limits added per key with standard retry headers, after logs showed one integration polling every two seconds around the clock; pagination enforced with a maximum page size, replacing an endpoint that had been returning 40,000 capacity rows; errors made generic outward with detail moved to logs, since responses had been quoting column names; versioning introduced with the existing behaviour frozen as version one; documentation written including key-safety guidance, after two webshops were found to be calling the API from browser JavaScript with the key in the page; and the whole surface tested from a second account.
+Eight business days of work: authorisation added per object on all 23 endpoints - seven of which were internal endpoints his own frontend used and which had become public the moment the API was published, including one that listed every capacity record in the system; the update endpoints changed to accept a defined field list after testing showed a caller could set the owning webshop on an order; rate limits added per key with standard retry headers, after logs showed one integration polling every two seconds around the clock; pagination enforced with a maximum page size, replacing an endpoint that had been returning 40,000 capacity rows; errors made generic outward with detail moved to logs, since responses had been quoting column names; versioning introduced with the existing behaviour frozen as version one; documentation written including key-safety guidance, after two webshops were found to be calling the API from browser JavaScript with the key in the page; and the whole surface tested from a second account.
 
 Those two webshops had effectively published their keys to every visitor of their shops. Both keys were rotated and the integrations moved server-side.
 
 **Result:** the reporting developer's employer expanded to three of its sister companies, and Tim's per-key usage view now catches polling misconfigurations within a day rather than at invoicing.
 
 > *"Seven endpoints my own website used quietly became public the day I published an API, and one of them listed every delivery slot for every retailer I had."*
-> — **Tim Roozendaal, Founder, Bezorgtijd (Tilburg)**
+> - **Tim Roozendaal, Founder, Bezorgtijd (Tilburg)**
 
-**Cost & Timeline:** €4,400 (per-object authorisation across 23 endpoints, field-list updates, rate limiting and pagination, error handling, versioning, documentation, adversarial testing) — completed in 8 business days.
+**Cost & Timeline:** €4,400 (per-object authorisation across 23 endpoints, field-list updates, rate limiting and pagination, error handling, versioning, documentation, adversarial testing) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
 ### What is the most common API security flaw?
 
-Checking authentication but not authorisation. The endpoint verifies the key, then trusts the identifier in the request — so a valid customer can fetch another customer's records by changing a number.
+Checking authentication but not authorisation. The endpoint verifies the key, then trusts the identifier in the request - so a valid customer can fetch another customer's records by changing a number.
 
 ### Do my internal endpoints become public when I publish an API?
 
@@ -155,7 +155,7 @@ Effectively yes. Anything reachable is part of your surface, including endpoints
 
 ### Why should an update endpoint reject unknown fields?
 
-Because accepting a whole object lets a caller set columns you never intended to expose — the owning customer, the price, a role. Accept a defined list of fields on every write.
+Because accepting a whole object lets a caller set columns you never intended to expose - the owning customer, the price, a role. Accept a defined list of fields on every write.
 
 ### What limits does a public API need?
 
@@ -175,7 +175,7 @@ A generic message and a consistent code. Distinguishing "not found" from "not pe
       "name": "What is the most common API security flaw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Authentication without per-object authorisation — the key is verified, then the identifier in the request is trusted, letting one customer fetch another's records."
+        "text": "Authentication without per-object authorisation - the key is verified, then the identifier in the request is trusted, letting one customer fetch another's records."
       }
     },
     {

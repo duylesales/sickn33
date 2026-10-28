@@ -40,7 +40,7 @@ Europe's chemical, refining, pharmaceutical production, food processing, paper, 
 
 **Process optimisation.** Adjusting operating conditions to improve yield, throughput, quality or energy consumption within safety and quality limits.
 
-**Soft sensors.** Estimating properties that are measured slowly or only in a laboratory — composition, viscosity, purity — from fast process measurements, so operators can act in real time rather than hours later.
+**Soft sensors.** Estimating properties that are measured slowly or only in a laboratory - composition, viscosity, purity - from fast process measurements, so operators can act in real time rather than hours later.
 
 **Predictive maintenance.** Rotating equipment, heat exchangers, compressors, catalysts and instrumentation, where failure is expensive and sometimes hazardous.
 
@@ -78,7 +78,7 @@ Machine learning does not participate in these layers. A learned model may advis
 
 This has design consequences. Any optimisation must express hard constraints as constraints rather than as penalties in an objective function. Systems must fail to a safe state, which usually means handing control back to existing logic. And every recommendation should be visible to an operator who retains authority.
 
-Candidates who articulate this correctly are treated seriously. Those who propose end-to-end learned control of a hazardous process are not, and the reaction is not conservatism — it is the accumulated experience of an industry that has learned what happens when protection layers are compromised.
+Candidates who articulate this correctly are treated seriously. Those who propose end-to-end learned control of a hazardous process are not, and the reaction is not conservatism - it is the accumulated experience of an industry that has learned what happens when protection layers are compromised.
 
 ## Soft Sensors in Depth
 
@@ -102,7 +102,7 @@ The practical difficulties are where the expertise lies.
 
 The most effective approaches in this sector combine engineering models with data-driven components, and candidates who understand why are valued.
 
-Purely physical models — mass and energy balances, kinetics, thermodynamics — are principled and extrapolate sensibly, but they rely on parameters that are difficult to determine and they simplify reality.
+Purely physical models - mass and energy balances, kinetics, thermodynamics - are principled and extrapolate sensibly, but they rely on parameters that are difficult to determine and they simplify reality.
 
 Purely data-driven models capture what actually happens in the specific plant, and they fail outside the conditions observed, which in a process that has never operated at a given condition means they fail exactly where you most want guidance.
 
@@ -128,7 +128,7 @@ For candidates, this is where much of the current investment sits. It combines p
 
 Not all process manufacturing is continuous, and batch operations have their own analytical character.
 
-In a batch process — common in speciality chemicals, pharmaceuticals and food — material is processed in discrete quantities through a sequence of steps. The data is therefore a set of trajectories rather than a continuous stream, and each batch has a profile over its duration.
+In a batch process - common in speciality chemicals, pharmaceuticals and food - material is processed in discrete quantities through a sequence of steps. The data is therefore a set of trajectories rather than a continuous stream, and each batch has a profile over its duration.
 
 The methods differ accordingly. Batch trajectories are aligned and compared against a reference to detect deviation. Multivariate techniques summarise a whole batch into a small number of components, against which new batches are monitored. Golden batch analysis identifies the conditions associated with the best outcomes.
 

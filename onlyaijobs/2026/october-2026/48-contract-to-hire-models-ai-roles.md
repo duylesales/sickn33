@@ -35,13 +35,13 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A contract-to-hire model — first a temporary arrangement, with the intention of moving to a permanent contract if the match is good — can structurally reduce the risk of a wrong AI hire. It only works if both sides are honest beforehand about what the model is and isn't.
+A contract-to-hire model - first a temporary arrangement, with the intention of moving to a permanent contract if the match is good - can structurally reduce the risk of a wrong AI hire. It only works if both sides are honest beforehand about what the model is and isn't.
 
 ## When This Model Actually Makes Sense
 
 **When the precise scope of a new role is uncertain.** If a team isn't yet fully sure what the role will involve in six months, a trial arrangement gives both sides room to work that out together without the weight of an immediate permanent appointment.
 
-**For a first AI hire in a team without experience of this kind of recruitment.** A team hiring its first AI specialist may not yet have a good calibration point for what "good" means in this role — a trial arrangement gives room to discover it.
+**For a first AI hire in a team without experience of this kind of recruitment.** A team hiring its first AI specialist may not yet have a good calibration point for what "good" means in this role - a trial arrangement gives room to discover it.
 
 ## Why It Doesn't Fit Every Situation
 
@@ -63,7 +63,7 @@ Be explicit beforehand about the criteria for moving to a permanent contract, an
 
 ## The Legal Frame for a Direct Fixed-Term Route
 
-**Probation period.** Under the Dutch Civil Code, no probation period is allowed in fixed-term contracts of six months or less. For contracts longer than six months but shorter than two years, the maximum is one month; for contracts of two years or more and permanent contracts, two months. A contract-to-hire model therefore can't simply be "a long probation period" — the legal probation period is short, and the fixed-term contract itself becomes the evaluation period.
+**Probation period.** Under the Dutch Civil Code, no probation period is allowed in fixed-term contracts of six months or less. For contracts longer than six months but shorter than two years, the maximum is one month; for contracts of two years or more and permanent contracts, two months. A contract-to-hire model therefore can't simply be "a long probation period" - the legal probation period is short, and the fixed-term contract itself becomes the evaluation period.
 
 **Chain rule.** Under the chain rule (*ketenregeling*), a series of fixed-term contracts generally becomes permanent after more than three contracts or after a total duration of more than three years, unless a collective labour agreement provides otherwise. Plan the route so that the decision point is clear well before these limits.
 
@@ -79,7 +79,7 @@ Be explicit beforehand about the criteria for moving to a permanent contract, an
 
 ## A Deeper Look at Why Vague Criteria Do the Most Damage
 
-A contract-to-hire route without clear criteria quickly feels to a candidate like a disguised, extended probation period — exactly the feeling the model should avoid. The damage isn't in the model itself, but in the ambiguity around it: a candidate who doesn't know what they're being assessed on can't prove themselves in a targeted way, and an employer who hasn't set criteria often falls back on a vague gut-feeling decision at the end.
+A contract-to-hire route without clear criteria quickly feels to a candidate like a disguised, extended probation period - exactly the feeling the model should avoid. The damage isn't in the model itself, but in the ambiguity around it: a candidate who doesn't know what they're being assessed on can't prove themselves in a targeted way, and an employer who hasn't set criteria often falls back on a vague gut-feeling decision at the end.
 
 ## Comparison Table: Contract-to-Hire With and Without Clear Criteria
 
@@ -117,11 +117,11 @@ Strong AI candidates weigh a contract-to-hire offer against the security of perm
 
 ## When a Permanent Contract With a Probation Period Is the Better Choice
 
-For many AI roles, a permanent contract with the legal two-month probation period is simpler and more attractive. It signals commitment, lowers the unemployment insurance premium and avoids a transition payment on non-renewal. Choose contract-to-hire only when there is a genuine uncertainty that a two-month probation period can't resolve — typically about the scope of the role rather than the candidate's ability.
+For many AI roles, a permanent contract with the legal two-month probation period is simpler and more attractive. It signals commitment, lowers the unemployment insurance premium and avoids a transition payment on non-renewal. Choose contract-to-hire only when there is a genuine uncertainty that a two-month probation period can't resolve - typically about the scope of the role rather than the candidate's ability.
 
 ## Using Categories to Describe the Role Clearly
 
-Whichever structure you choose, describe the role precisely in the vacancy. On **OnlyAIJobs**, vacancies are grouped by type of work, such as Development, Machine Learning, Infrastructure or AI Product. If a role's scope is still uncertain, say so explicitly in the vacancy and explain which categories it may evolve towards — that honesty attracts candidates who enjoy shaping a new role.
+Whichever structure you choose, describe the role precisely in the vacancy. On **OnlyAIJobs**, vacancies are grouped by type of work, such as Development, Machine Learning, Infrastructure or AI Product. If a role's scope is still uncertain, say so explicitly in the vacancy and explain which categories it may evolve towards - that honesty attracts candidates who enjoy shaping a new role.
 
 ## A Sample Conversion Timeline for a Twelve-Month Fixed-Term Contract
 
@@ -134,7 +134,7 @@ Whichever structure you choose, describe the role precisely in the vacancy. On *
 | Month 9 | Decision conversation | Permanent offer, or honest explanation and transition plan |
 | Month 10–12 | Handover or transition to permanent contract | Contract signed, or orderly end with transition payment settled |
 
-Making the decision at month nine gives the employee time to plan and the employer time to arrange the permanent contract before the fixed-term contract ends — and avoids an automatic, unplanned extension.
+Making the decision at month nine gives the employee time to plan and the employer time to arrange the permanent contract before the fixed-term contract ends - and avoids an automatic, unplanned extension.
 
 ## A Checklist for the Offer Letter
 
@@ -146,12 +146,12 @@ Making the decision at month nine gives the employee time to plan and the employ
 - What happens if the decision is negative, including notice and any transition payment.
 - Who the candidate can contact with questions during the arrangement.
 
-A candidate who receives this level of clarity is far more likely to accept a contract-to-hire offer — and far less likely to feel misled if the outcome is not a permanent contract.
+A candidate who receives this level of clarity is far more likely to accept a contract-to-hire offer - and far less likely to feel misled if the outcome is not a permanent contract.
 
 ## Key Takeaways
 
 - Contract-to-hire suits roles with uncertain scope and first AI hires, not every vacancy.
-- In the Netherlands it takes three forms: direct fixed-term contracts, agency placement or freelance assignments — each with different legal rules.
+- In the Netherlands it takes three forms: direct fixed-term contracts, agency placement or freelance assignments - each with different legal rules.
 - Probation periods are short, the chain rule limits fixed-term series, non-renewal usually triggers a transition payment, and flexible contracts carry a higher WW premium.
 - The Waadi allows agency workers to join the client, possibly with a reasonable fee; the freelance route carries false self-employment risk under the DBA Act.
 - Set concrete conversion criteria, evaluation moments and a decision date in writing.
@@ -160,7 +160,7 @@ A candidate who receives this level of clarity is far more likely to accept a co
 
 Consider this model specifically for uncertain scope or a first AI hire, be explicit about conversion criteria, and accept that this model won't attract every strong candidate.
 
-Post your vacancy — first listing free: [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu)
+Post your vacancy - first listing free: [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu)
 
 ## Frequently Asked Questions
 
@@ -168,16 +168,16 @@ Post your vacancy — first listing free: [info@onlyaijobs.eu](mailto:info@onlya
 Mainly when the precise scope of the role is uncertain, or for a first AI hire in a team without experience of this kind of recruitment.
 
 ### (Scenario: employer wanting to apply this by default) Should I apply this model to every AI vacancy by default?
-Not necessarily — for candidates with several permanent offers, this model is often less attractive than a direct permanent appointment.
+Not necessarily - for candidates with several permanent offers, this model is often less attractive than a direct permanent appointment.
 
 ### (Scenario: employer staying vague about criteria) What should I make clear beforehand in a contract-to-hire route?
-The criteria for moving to a permanent contract and the timeline on which that decision is made — vagueness here feels like a disguised probation period.
+The criteria for moving to a permanent contract and the timeline on which that decision is made - vagueness here feels like a disguised probation period.
 
 ### (Scenario: employer wanting to reduce hiring risk) Does this model reduce the risk of a wrong hire?
-Yes, structurally — it gives both sides time to confirm the match works before a permanent commitment arises.
+Yes, structurally - it gives both sides time to confirm the match works before a permanent commitment arises.
 
 ### (Scenario: employer unsure whether candidates accept this) Do strong candidates accept a contract-to-hire route?
-Some do, especially with uncertain scope or an interesting project — but not every strong candidate, so be realistic about who it attracts.
+Some do, especially with uncertain scope or an interesting project - but not every strong candidate, so be realistic about who it attracts.
 
 <script type="application/ld+json">
 {
@@ -185,9 +185,9 @@ Some do, especially with uncertain scope or an interesting project — but not e
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "When is a contract-to-hire model a good idea for an AI role?", "acceptedAnswer": {"@type": "Answer", "text": "Mainly when the scope of the role is uncertain, or for a first AI hire in a team without experience."}},
-    {"@type": "Question", "name": "Should I apply this model to every AI vacancy by default?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — for candidates with several permanent offers, it is often less attractive."}},
+    {"@type": "Question", "name": "Should I apply this model to every AI vacancy by default?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - for candidates with several permanent offers, it is often less attractive."}},
     {"@type": "Question", "name": "What should I make clear beforehand in a contract-to-hire route?", "acceptedAnswer": {"@type": "Answer", "text": "The criteria for moving to a permanent contract and the timeline for that decision."}},
-    {"@type": "Question", "name": "Does this model reduce the risk of a wrong hire?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, structurally — it gives both sides time to confirm the match."}},
+    {"@type": "Question", "name": "Does this model reduce the risk of a wrong hire?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, structurally - it gives both sides time to confirm the match."}},
     {"@type": "Question", "name": "Do strong candidates accept a contract-to-hire route?", "acceptedAnswer": {"@type": "Answer", "text": "Some do, but not every strong candidate, so be realistic."}}
   ]
 }

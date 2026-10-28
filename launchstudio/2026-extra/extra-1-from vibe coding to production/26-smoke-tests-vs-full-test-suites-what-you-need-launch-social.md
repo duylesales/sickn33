@@ -9,7 +9,7 @@
 
 ✅ Smoke test = does core functionality work at all, not every edge case perfectly
 ✅ Cover your critical few: signup, core feature, payment/checkout
-✅ This catches the highest-consequence failure — a change that silently breaks something that worked
+✅ This catches the highest-consequence failure - a change that silently breaks something that worked
 ✅ Full coverage earns its cost LATER, as the product and team actually grow
 
 At **LaunchStudio**, we implement exactly this right-sized coverage as standard on every Launch Ready engagement. Backed by Manifera's experience across products at every stage. 🛡️

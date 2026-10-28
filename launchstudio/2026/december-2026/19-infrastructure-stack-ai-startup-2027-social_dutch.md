@@ -16,9 +16,9 @@ De complete 7-lagen stack die elke AI-startup nodig heeft: 📊
 6️⃣ Live, beveiligde cloud hosting met SSL ❌
 7️⃣ Monitoring, Sentry-foutdetectie & alerts ❌
 
-AI-tools leveren laag 1 en een deel van 2. Lagen 3 t/m 7 is exact wat **LaunchStudio** bouwt — ondersteund door Manifera's 120+ engineers en 160+ enterprise-projecten. 🛡️
+AI-tools leveren laag 1 en een deel van 2. Lagen 3 t/m 7 is exact wat **LaunchStudio** bouwt - ondersteund door Manifera's 120+ engineers en 160+ enterprise-projecten. 🛡️
 
-📐 De volgorde maakt uit: authenticatie komt ALTIJD eerst — alle andere lagen leunen op het betrouwbaar identificeren van de gebruiker.
+📐 De volgorde maakt uit: authenticatie komt ALTIJD eerst - alle andere lagen leunen op het betrouwbaar identificeren van de gebruiker.
 
 Ze lanceerde foutloos naar 19 planners, met nul incidenten. 🚀
 

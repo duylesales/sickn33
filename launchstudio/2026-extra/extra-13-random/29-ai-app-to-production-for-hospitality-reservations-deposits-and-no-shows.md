@@ -21,15 +21,15 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Saturday, 19:30. The restaurant is full, two tables of four are empty because the guests never showed, and a couple at the door is being turned away. Hospitality runs on margins where no-shows hurt, which is why so many restaurant owners and hospitality founders are building reservation tools with deposits, reminders and waiting lists using Bolt or Lovable. Taking that AI app to production in hospitality means making a series of decisions that are part business, part technical — and getting them wrong shows up on the busiest night of the week.
+Saturday, 19:30. The restaurant is full, two tables of four are empty because the guests never showed, and a couple at the door is being turned away. Hospitality runs on margins where no-shows hurt, which is why so many restaurant owners and hospitality founders are building reservation tools with deposits, reminders and waiting lists using Bolt or Lovable. Taking that AI app to production in hospitality means making a series of decisions that are part business, part technical - and getting them wrong shows up on the busiest night of the week.
 
 ## Decision 1: Deposit, Card Guarantee or Nothing?
 
 There are three common models for protecting against no-shows:
 
-- **Prepaid deposit** — money is charged at booking and deducted from the bill or kept on a no-show.
-- **Card guarantee** — card details are saved (or a payment is authorised) and charged only on a no-show or late cancellation.
-- **No payment** — reminders only, perhaps with a no-show record.
+- **Prepaid deposit** - money is charged at booking and deducted from the bill or kept on a no-show.
+- **Card guarantee** - card details are saved (or a payment is authorised) and charged only on a no-show or late cancellation.
+- **No payment** - reminders only, perhaps with a no-show record.
 
 Each has technical consequences. Deposits need refunds on cancellation. Card guarantees need secure card storage through the payment provider (never in your own database) and a way to charge later with the guest's prior consent. Authorisations expire after several days, so a hold placed at booking three weeks ahead will not still be valid on the evening.
 
@@ -43,19 +43,19 @@ Your cancellation terms must also appear clearly before booking, and consumer la
 
 ## Decision 3: How Is Capacity Modelled?
 
-A reservation system is a capacity system. The simplest AI-generated model — a fixed number of bookings per time slot — fails quickly in real restaurants, where capacity depends on table sizes, how long tables are occupied, and which tables can be combined.
+A reservation system is a capacity system. The simplest AI-generated model - a fixed number of bookings per time slot - fails quickly in real restaurants, where capacity depends on table sizes, how long tables are occupied, and which tables can be combined.
 
 At minimum, decide: do you book tables or covers? How long does a sitting last, and does it vary by party size? Can staff override capacity for walk-ins? Then make sure capacity is enforced in the database so two guests booking the last table at the same moment cannot both succeed.
 
 ## Decision 4: How Do Payments Get Confirmed?
 
-As with any payment flow, the booking must be confirmed by the payment provider's verified webhook, not by the guest's browser returning to your site. For iDEAL and Bancontact, which redirect to banking apps, guests frequently never return — and browser-based confirmation then loses paid bookings or confirms unpaid ones.
+As with any payment flow, the booking must be confirmed by the payment provider's verified webhook, not by the guest's browser returning to your site. For iDEAL and Bancontact, which redirect to banking apps, guests frequently never return - and browser-based confirmation then loses paid bookings or confirms unpaid ones.
 
 ## Decision 5: What Guest Data Do You Keep?
 
 Reservation systems accumulate names, phone numbers, emails, allergies, dietary requirements, special occasions and sometimes notes about guests. Allergies and some dietary information can be health data. Staff notes can be personal and occasionally inappropriate.
 
-Decide what you need to collect, who among staff can see it, how long you keep it and whether you use it for marketing — which requires consent. Marketing emails to guests who only made a reservation need a legal basis, usually opt-in.
+Decide what you need to collect, who among staff can see it, how long you keep it and whether you use it for marketing - which requires consent. Marketing emails to guests who only made a reservation need a legal basis, usually opt-in.
 
 ## Decision 6: What Happens on the Busiest Evening?
 
@@ -82,10 +82,10 @@ The capacity model is the heart of any reservation system, and it is where AI-ge
 
 - **Tables** with minimum and maximum covers, a zone (inside, terrace, bar) and whether they can be combined with specific neighbours.
 - **Service periods** (lunch, first seating, second seating) with start times and last booking times.
-- **Turn times** by party size — for example 90 minutes for two, 120 for four, 150 for larger groups — adjustable per day.
+- **Turn times** by party size - for example 90 minutes for two, 120 for four, 150 for larger groups - adjustable per day.
 - **Buffers** between seatings for clearing and resetting.
 - **Holds** for walk-ins, regulars or VIPs that online booking cannot use.
-- **Exceptions** — closed days, private events, reduced terrace capacity when it rains.
+- **Exceptions** - closed days, private events, reduced terrace capacity when it rains.
 
 The booking engine then answers a precise question: is there a table or combination of tables free for this party size, for the full turn time, including buffers? The final reservation must be written with a database constraint that prevents two bookings claiming the same table for overlapping time ranges.
 
@@ -108,7 +108,7 @@ Reminders are the cheapest no-show defence. A typical effective sequence is a co
 
 ## Handling Walk-Ins, Overrides and the Floor
 
-Online booking must coexist with what happens at the door. Staff need to seat walk-ins, move bookings between tables, extend a table that is running late and mark no-shows — quickly, on a tablet, during service. Each of these actions should update availability instantly for online bookings, and each should be logged with the staff member's name. Overrides are necessary, but an audit trail prevents confusion when a guest disputes a no-show fee.
+Online booking must coexist with what happens at the door. Staff need to seat walk-ins, move bookings between tables, extend a table that is running late and mark no-shows - quickly, on a tablet, during service. Each of these actions should update availability instantly for online bookings, and each should be logged with the staff member's name. Overrides are necessary, but an audit trail prevents confusion when a guest disputes a no-show fee.
 
 ## Allergens and Guest Notes
 
@@ -116,7 +116,7 @@ Allergy information has to reach the kitchen reliably and stay out of places it 
 
 ## Integrations With the Rest of the Restaurant
 
-Reservation systems often connect to point-of-sale systems, review platforms and marketing tools. Each integration adds data flows to document and credentials to manage. Keep integrations minimal at launch — typically POS for linking bookings to bills — and add others only when their value is clear. Use per-integration credentials and log what is sent.
+Reservation systems often connect to point-of-sale systems, review platforms and marketing tools. Each integration adds data flows to document and credentials to manage. Keep integrations minimal at launch - typically POS for linking bookings to bills - and add others only when their value is clear. Use per-integration credentials and log what is sent.
 
 ## Preparing for Peak Days
 
@@ -128,17 +128,17 @@ Groups with several restaurants need separated data per venue, shared guest prof
 
 ## Guest Data, Marketing and Consent
 
-Reservation systems collect valuable guest data: visit frequency, party sizes, preferences, special occasions. Using it for marketing — birthday offers, newsletters, event invitations — generally requires consent, recorded separately from the booking itself. Offer a clear, unticked option at booking, store the consent with its date and text, and honour unsubscribes immediately across every tool. Guests who feel respected are more likely to return; guests who receive unexpected marketing after one booking are more likely to leave a critical review.
+Reservation systems collect valuable guest data: visit frequency, party sizes, preferences, special occasions. Using it for marketing - birthday offers, newsletters, event invitations - generally requires consent, recorded separately from the booking itself. Offer a clear, unticked option at booking, store the consent with its date and text, and honour unsubscribes immediately across every tool. Guests who feel respected are more likely to return; guests who receive unexpected marketing after one booking are more likely to leave a critical review.
 
 ## Metrics Restaurant Owners Care About
 
-Owners judge a reservation system by outcomes: covers booked online, no-show rate, share of tables filled, average booking lead time and revenue protected by deposits or fees. Build a simple owner dashboard showing these per week and per service period. It helps owners adjust policies — for example requiring deposits only on Saturday evenings — and it demonstrates the value of your product every time they log in.
+Owners judge a reservation system by outcomes: covers booked online, no-show rate, share of tables filled, average booking lead time and revenue protected by deposits or fees. Build a simple owner dashboard showing these per week and per service period. It helps owners adjust policies - for example requiring deposits only on Saturday evenings - and it demonstrates the value of your product every time they log in.
 
 ## A Pre-Launch Test Script for Hospitality Apps
 
 Before launch, run through: a booking at the last available table from two browsers at once; a booking just inside and just outside the cancellation window, in local time; a deposit paid in a banking app with the tab closed; a refund triggered from the payment dashboard; a walk-in seated at a table that was bookable online; and an allergy note checked on the kitchen view. If all six behave correctly, the app is ready for a busy Saturday.
 
-If any of them fails, fix it before opening bookings — a Saturday night is the worst possible time to discover it.
+If any of them fails, fix it before opening bookings - a Saturday night is the worst possible time to discover it.
 
 ## Where LaunchStudio Fits
 
@@ -146,7 +146,7 @@ LaunchStudio implements these decisions underneath the booking interface you bui
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience and 120+ engineers across Amsterdam, Singapore and Ho Chi Minh City. For an overview of Manifera's approach to web applications, see [Manifera's web app development](https://www.manifera.com/services/web-app-develop/); [Mollie's documentation on payments and webhooks](https://docs.mollie.com/) is a good external reference.
 
-To see what your project would cost, [try the price calculator](https://launchstudio.eu/en/#calculator) — select "Tool" or "SaaS" and add Payments.
+To see what your project would cost, [try the price calculator](https://launchstudio.eu/en/#calculator) - select "Tool" or "SaaS" and add Payments.
 
 ## Real example
 
@@ -154,16 +154,16 @@ To see what your project would cost, [try the price calculator](https://launchst
 
 Evi Janssens, a restaurant manager in Maastricht, built Tafelgarant in Bolt for her own restaurant and then offered it to others: guests book online, pay a €10 per-person deposit via iDEAL or card, receive reminders and can cancel for free up to 24 hours ahead. Nine restaurants in Maastricht and Heerlen used it, handling around 2,500 covers a month.
 
-Carnival weekend exposed everything. Deposits were confirmed when the guest's browser returned from Mollie; many guests paid in their banking app and never came back, so their bookings stayed "pending" and were released to others — leading to double-booked tables and furious guests with payment receipts. The 24-hour cancellation deadline was calculated in UTC, so guests cancelling at 19:30 for a 20:00 dinner the next evening — still inside the free-cancellation window — were refused. Refunds were manual. Capacity was a fixed count per half hour, ignoring table sizes, and two parties booked the last large table simultaneously. Allergy notes were visible to all staff accounts at all nine restaurants through the API.
+Carnival weekend exposed everything. Deposits were confirmed when the guest's browser returned from Mollie; many guests paid in their banking app and never came back, so their bookings stayed "pending" and were released to others - leading to double-booked tables and furious guests with payment receipts. The 24-hour cancellation deadline was calculated in UTC, so guests cancelling at 19:30 for a 20:00 dinner the next evening - still inside the free-cancellation window - were refused. Refunds were manual. Capacity was a fixed count per half hour, ignoring table sizes, and two parties booked the last large table simultaneously. Allergy notes were visible to all staff accounts at all nine restaurants through the API.
 
 LaunchStudio's engineers moved deposit confirmation to verified Mollie webhooks and reconciled the carnival bookings, implemented cancellation deadlines in Europe/Amsterdam time with automatic refunds, replaced the slot count with a table-based capacity model enforced in the database (including sitting duration by party size), separated data by restaurant, limited allergy notes to that venue's floor staff and kitchen, and moved reminders to a transactional email and SMS provider with authenticated sending.
 
 **Result:** In the following two months, Tafelgarant recorded no double bookings. No-shows at participating restaurants fell to under 2% of covers, and four more restaurants joined before the summer terrace season.
 
 > *"Our guests don't care how the booking works. They care that the table is there when they arrive. Carnival showed me it wasn't, often enough to matter."*
-> — **Evi Janssens, Founder, Tafelgarant (Maastricht)**
+> - **Evi Janssens, Founder, Tafelgarant (Maastricht)**
 
-**Cost & Timeline:** €2,950 (Launch Ready package with payments, cancellation logic, capacity model and data separation) — completed in 10 business days.
+**Cost & Timeline:** €2,950 (Launch Ready package with payments, cancellation logic, capacity model and data separation) - completed in 10 business days.
 
 ## Frequently Asked Questions
 

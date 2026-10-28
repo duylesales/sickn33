@@ -1,4 +1,4 @@
-🤖 Marit Sluijter runde Vakwijzer in Lovable voor 14 opleidingsinstituten rond Apeldoorn. Wanneer potentiële klanten ChatGPT of Perplexity vroegen naar Vakwijzer, toonden AI-zoekmachines verouderde info van een failliete concurrent — omdat de app geen enkele gestructureerde JSON-LD schema-markup of machineleesbare entiteitsdata bevatte. 😳
+🤖 Marit Sluijter runde Vakwijzer in Lovable voor 14 opleidingsinstituten rond Apeldoorn. Wanneer potentiële klanten ChatGPT of Perplexity vroegen naar Vakwijzer, toonden AI-zoekmachines verouderde info van een failliete concurrent - omdat de app geen enkele gestructureerde JSON-LD schema-markup of machineleesbare entiteitsdata bevatte. 😳
 
 Traditionele SEO mikt op zoekwoorden; Answer Engine Optimization (AEO) richt zich op AI-kennisgrafieken. Hoe u AI-zoekmachines voedt:
 

@@ -2,7 +2,7 @@
 
 Een analytics-dashboard breekt zelden op logica; het bezwijkt op schaal, precies in de blinde vlek die een demo nooit laat zien: 🧠
 
-❌ N+1-query's vuren één database-aanroep per rij af — onopgemerkt bij demodata, fataal bij echte volumes
+❌ N+1-query's vuren één database-aanroep per rij af - onopgemerkt bij demodata, fataal bij echte volumes
 ❌ Ontbrekende samengestelde indexen dwingen bij elke gefilterde query een trage full table scan af
 ❌ Complexe aggregaties worden bij elke paginaload herberekend zonder caching of duidelijke verversingstijdstempel
 ❌ Nachtelijke exporttaken bevragen om exact hetzelfde tijdstip de volledige historie van alle klanten tegelijk

@@ -2,7 +2,7 @@ Een perceptiemodel dat perfect werkt in een notebook kan alsnog falen op een rob
 
 Dat is het hele verschil, en de meeste algemene AI-vacatures toetsen er niet op.
 
-Drie dingen die robotica-AI onderscheiden: realtime-randvoorwaarden waar de fysieke wereld niet op wacht, een stack die regeltechniek en soms embedded C++ omvat naast ML, en falen dat fysiek is — een botsing of veiligheidsstop in plaats van een slechte aanbeveling.
+Drie dingen die robotica-AI onderscheiden: realtime-randvoorwaarden waar de fysieke wereld niet op wacht, een stack die regeltechniek en soms embedded C++ omvat naast ML, en falen dat fysiek is - een botsing of veiligheidsstop in plaats van een slechte aanbeveling.
 
 Daarom lopen sterke ML-kandidaten hier soms vast in gesprekken. Niet omdat de ML-lat hoger ligt, maar omdat de systeemhelft onbekend terrein is.
 

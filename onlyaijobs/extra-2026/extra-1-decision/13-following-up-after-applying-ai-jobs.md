@@ -35,13 +35,13 @@ Content Format: Decision Guide
 }
 </script>
 
-You spent an evening tailoring an application, sent it, and heard nothing. Two weeks later you are refreshing your inbox and wondering whether a follow-up would look keen or desperate. Most candidates resolve this by doing nothing, which is understandable and usually a small mistake. A short, well-timed follow-up rarely changes a decision that has already been made, but it regularly produces information — and information is what lets you stop waiting for a role that is gone and put your effort somewhere it can still work.
+You spent an evening tailoring an application, sent it, and heard nothing. Two weeks later you are refreshing your inbox and wondering whether a follow-up would look keen or desperate. Most candidates resolve this by doing nothing, which is understandable and usually a small mistake. A short, well-timed follow-up rarely changes a decision that has already been made, but it regularly produces information - and information is what lets you stop waiting for a role that is gone and put your effort somewhere it can still work.
 
 ## Why Silence Is So Common
 
 Silence usually has mundane causes rather than hidden meaning.
 
-**Volume.** Specialised roles at attractive employers can attract many applications, and smaller employers often have no recruiter at all — the hiring manager reads applications between meetings.
+**Volume.** Specialised roles at attractive employers can attract many applications, and smaller employers often have no recruiter at all - the hiring manager reads applications between meetings.
 
 **Internal candidates.** Some processes are effectively decided before external applications are reviewed.
 
@@ -97,7 +97,7 @@ A workable shape: *"I applied on 3 November for the data engineer role and wante
 
 ## Following Up After an Interview
 
-The dynamic changes after you have met people. A brief message within a day or two thanking the interviewers and adding one substantive point — a clarification you did not make well, a link to something discussed — is well received in most Dutch organisations, provided it is genuinely short.
+The dynamic changes after you have met people. A brief message within a day or two thanking the interviewers and adding one substantive point - a clarification you did not make well, a link to something discussed - is well received in most Dutch organisations, provided it is genuinely short.
 
 If the interviewer promised an answer by a date and that date passes, following up is straightforward and expected. If no date was given, ask at the end of the interview: "When can I expect to hear from you?" That single question removes most of the uncertainty that later makes follow-ups awkward.
 
@@ -105,7 +105,7 @@ If the interviewer promised an answer by a date and that date passes, following 
 
 This is the one situation where a follow-up is not just acceptable but expected. Tell the employer plainly: you have received an offer with a decision deadline, you are genuinely interested in their role, and you wanted to ask whether their process can be accelerated.
 
-Employers respond to this professionally, because it is a normal part of hiring. It also produces a clear answer quickly — either they move, or they tell you they cannot, which is itself useful information.
+Employers respond to this professionally, because it is a normal part of hiring. It also produces a clear answer quickly - either they move, or they tell you they cannot, which is itself useful information.
 
 Do not invent a competing offer that does not exist. In a small market, the bluff is unnecessary and the reputational risk is real.
 
@@ -125,7 +125,7 @@ The answer you get is often more informative than the answer you wanted.
 
 Separately from the outcome, you have rights over the data you handed over. Under the **GDPR** you can ask what an employer stores about you, request deletion and object to further processing. Dutch guidance from the **Dutch Data Protection Authority** indicates that application data should generally be deleted within a short period after the procedure ends, unless you consent to longer retention for future vacancies.
 
-If you would like to be considered later, say so explicitly — that consent is what allows an employer to keep your details legitimately.
+If you would like to be considered later, say so explicitly - that consent is what allows an employer to keep your details legitimately.
 
 ## Keep a Follow-Up Log, Not Just an Application List
 
@@ -143,7 +143,7 @@ Saved jobs on a board covers the first half of this. A spreadsheet with six colu
 
 Two follow-ups without a substantive answer is the end of the line. The practical response is not to feel wronged but to update your own process: mark the application closed, note the employer and date in your tracker, and allocate the attention to applications that are moving.
 
-It is also worth checking your funnel. If most applications end in silence rather than rejection, the issue is usually targeting or a CV that does not show fit quickly — not the follow-up etiquette.
+It is also worth checking your funnel. If most applications end in silence rather than rejection, the issue is usually targeting or a CV that does not show fit quickly - not the follow-up etiquette.
 
 ## Following Up After a Take-Home Assignment
 
@@ -163,7 +163,7 @@ If the answer is a rejection, ask once more, specifically: which part of the app
 
 A data analyst in Den Bosch applies to four roles in a fortnight and hears nothing from any of them. Rather than waiting, she sends three-sentence follow-ups at the two-and-a-half-week mark.
 
-One employer replies the same day: interviews start next week and her application is in the shortlist. A second replies after three days to say the role was filled internally, apologising for not informing candidates. The third never answers, and she closes it after a second attempt. The fourth replies that the process is paused until budget approval in January, and asks whether she would like to be contacted then — she says yes, in writing, which also gives them a basis to keep her details.
+One employer replies the same day: interviews start next week and her application is in the shortlist. A second replies after three days to say the role was filled internally, apologising for not informing candidates. The third never answers, and she closes it after a second attempt. The fourth replies that the process is paused until budget approval in January, and asks whether she would like to be contacted then - she says yes, in writing, which also gives them a basis to keep her details.
 
 Three follow-ups, roughly fifteen minutes of work, and she goes from four unknowns to one live process, two closed files and one future option. The follow-ups did not change any decision. They let her stop spending attention on processes that were already over.
 
@@ -173,7 +173,7 @@ Three follow-ups, roughly fifteen minutes of work, and she goes from four unknow
 - The NVP Recruitment Code, followed by many Dutch employers, expects candidates to be informed within reasonable timeframes and given reasons on request.
 - Follow up two to three weeks after applying, or one week after a stated response date, by email to a named person and in three sentences.
 - A competing offer justifies an immediate follow-up; never invent one.
-- Two attempts without a substantive answer means the answer is no — close it and move your effort to live processes.
+- Two attempts without a substantive answer means the answer is no - close it and move your effort to live processes.
 
 ## Where to Start
 
@@ -187,10 +187,10 @@ Browse current AI, machine learning and data jobs, free and without an account, 
 Two to three weeks if no timeline was given, or one week after the response date stated in the vacancy.
 
 ### (Scenario: candidate worried about appearing pushy) Is following up seen as unprofessional in the Netherlands?
-No — a short, polite email is normal, and the NVP Recruitment Code expects employers to inform candidates within reasonable timeframes.
+No - a short, polite email is normal, and the NVP Recruitment Code expects employers to inform candidates within reasonable timeframes.
 
 ### (Scenario: candidate who applied through an agency) Should I contact the employer directly if an agency submitted me?
-No — follow up with the recruiter who presented you. Contacting the employer directly can create confusion and disputes about who introduced you.
+No - follow up with the recruiter who presented you. Contacting the employer directly can create confusion and disputes about who introduced you.
 
 ### (Scenario: candidate with a competing offer) Can I ask an employer to speed up their process?
 Yes, and it is expected. State the deadline honestly and confirm your interest; never invent an offer you do not have.
@@ -204,8 +204,8 @@ Treat it as a no. Close the application in your tracker and spend the attention 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How long should I wait before following up on an application?", "acceptedAnswer": {"@type": "Answer", "text": "Two to three weeks, or one week after a stated response date."}},
-    {"@type": "Question", "name": "Is following up seen as unprofessional in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No — a short polite email is normal and consistent with the NVP Recruitment Code."}},
-    {"@type": "Question", "name": "Should I contact the employer directly if an agency submitted me?", "acceptedAnswer": {"@type": "Answer", "text": "No — follow up with the recruiter who presented you."}},
+    {"@type": "Question", "name": "Is following up seen as unprofessional in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No - a short polite email is normal and consistent with the NVP Recruitment Code."}},
+    {"@type": "Question", "name": "Should I contact the employer directly if an agency submitted me?", "acceptedAnswer": {"@type": "Answer", "text": "No - follow up with the recruiter who presented you."}},
     {"@type": "Question", "name": "Can I ask an employer to speed up their process?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you have a genuine offer with a deadline; never invent one."}},
     {"@type": "Question", "name": "What does it mean if nobody replies after two follow-ups?", "acceptedAnswer": {"@type": "Answer", "text": "Treat it as a no and move your effort to live processes."}}
   ]

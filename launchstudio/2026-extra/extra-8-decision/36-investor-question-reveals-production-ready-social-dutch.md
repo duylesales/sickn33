@@ -1,6 +1,6 @@
 🥶 "Wat breekt er als dit morgen tien keer zo groot wordt?" Vera bevroor. Het gesprek was voorbij voordat het goed en wel begonnen was.
 
-Dit is de vraag die bijna elke investeerder stelt — niet uit het deck, maar wel degene die de rest van het gesprek bepaalt. Zo herken je waarom oprichters hier struikelen: 🧠
+Dit is de vraag die bijna elke investeerder stelt - niet uit het deck, maar wel degene die de rest van het gesprek bepaalt. Zo herken je waarom oprichters hier struikelen: 🧠
 
 ❌ Een prototype getest door alleen de oprichter zelf, op zijn eigen laptop, tegen zijn eigen keurige gebruik
 ❌ Geen idee wat er gebeurt bij tien keer de belasting, tien keer de gebruikers
@@ -12,9 +12,9 @@ Dit is de vraag die bijna elke investeerder stelt — niet uit het deck, maar we
 ✅ Gegevensisolatie en rate limiting die een piek daadwerkelijk opvangen
 ✅ Een zelfverzekerd, specifiek antwoord in plaats van een gok
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering, bereiden we oprichters voor op precies deze vraag — met echt werk, geen talking points. 🛡️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering, bereiden we oprichters voor op precies deze vraag - met echt werk, geen talking points. 🛡️
 
-Vera's resultaat: gegevensisolatie en rate limiting binnen 11 werkdagen — en een leidende investeerder die haar ronde sloot na dat exacte antwoord. 🚀
+Vera's resultaat: gegevensisolatie en rate limiting binnen 11 werkdagen - en een leidende investeerder die haar ronde sloot na dat exacte antwoord. 🚀
 
 👉 Ontdek of u klaar bent voor de vraag voordat hij gesteld wordt: https://launchstudio.eu/nl/blog/investor-question-reveals-production-ready
 

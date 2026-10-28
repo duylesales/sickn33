@@ -59,7 +59,7 @@ Deze specifieke controle – het verifiëren van de actualiteit van een suggesti
 
 [LaunchStudio](https://launchstudio.eu/nl/) controleert zowel de actualiteit van door AI voorgestelde afhankelijkheden bij overname als hun voortdurende onderhoudsstatus in de loop van de tijd. Hiermee wordt deze specifieke verouderingskloof gedicht naast de bredere afhankelijkheidsaudit die gedurende productieverharding wordt behandeld, ondersteund door Manifera's bredere engineering-discipline die op de hoogte blijft van evoluerende ecosysteem-standaarden over alle opgeleverde projecten.
 
-[Laat de voorgestelde afhankelijkheden van uw AI-tool controleren tegen wat daadwerkelijk actueel is](https://launchstudio.eu/nl/#calculator) — een zelfverzekerde aanbeveling en een actuele aanbeveling zijn niet automatisch dezelfde claim.
+[Laat de voorgestelde afhankelijkheden van uw AI-tool controleren tegen wat daadwerkelijk actueel is](https://launchstudio.eu/nl/#calculator) - een zelfverzekerde aanbeveling en een actuele aanbeveling zijn niet automatisch dezelfde claim.
 
 ## Niet alle verouderingswaarschuwingen betekenen hetzelfde: Een kader voor wat eerst te herstellen
 
@@ -88,9 +88,9 @@ Toen LaunchStudio een afhankelijkheidsbeoordeling uitvoerde voorafgaand aan de l
 **Resultaat:** LaunchStudio verving de verouderde bibliotheek voor de lancering door het actief onderhouden aanbevolen alternatief. Hiermee werd een kloof gedicht die, wanneer deze onbehandeld zou zijn gelaten, zou hebben betekend dat de kern-routingfunctionaliteit van RouteCalc vanaf de allereerste versie afhing van een pakket zonder voortdurend beveiligingsonderhoud.
 
 > *"Cursor beval het met totale zelfverzekerdheid aan, op dezelfde manier waarop het alles aanbeveelt, en ik had geen reden om eraan te twijfelen. Het bleek dat de bibliotheek al maanden verouderd was tegen de tijd dat ik begon te bouwen, wat de tool zelf op geen enkele manier kon weten aangezien de training simpelweg voorafging aan die veroudering."*
-> — **Sem Vermeer, Oprichter, RouteCalc (Zwolle)**
+> - **Sem Vermeer, Oprichter, RouteCalc (Zwolle)**
 
-**Kosten en tijdlijn:** € 650 (beoordeling van actualiteit van afhankelijkheden en vervanging) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 650 (beoordeling van actualiteit van afhankelijkheden en vervanging) - voltooid in 2 werkdagen.
 
 ---
 
@@ -142,7 +142,7 @@ Tot op zekere hoogte wel, specifiek voor de categorie van "wat momenteel wordt a
       "name": "Moet een verouderd maar werkend pakket direct vervangen worden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hangt af van de rol — beveiligingsgevoelige functies vragen snellere vervanging dan cosmetische onderdelen."
+        "text": "Hangt af van de rol - beveiligingsgevoelige functies vragen snellere vervanging dan cosmetische onderdelen."
       }
     },
     {

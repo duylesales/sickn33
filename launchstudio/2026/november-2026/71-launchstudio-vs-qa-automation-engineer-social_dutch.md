@@ -1,4 +1,4 @@
-🧪 Dennis lanceerde een planningstool voor wagenparkonderhoud op **Bolt** voor 40 betalende transportbedrijven — met 0 geautomatiseerde tests. Een wijziging in de datumkiezer brak stilletjes alle herinneringen gedurende 3 dagen. 😬
+🧪 Dennis lanceerde een planningstool voor wagenparkonderhoud op **Bolt** voor 40 betalende transportbedrijven - met 0 geautomatiseerde tests. Een wijziging in de datumkiezer brak stilletjes alle herinneringen gedurende 3 dagen. 😬
 
 Het aannemen van een fulltime QA automation engineer duurt 10-16 weken en kost € 70k-€ 110k per jaar. Vroege oprichters kunnen daar simpelweg niet op wachten.
 
@@ -12,7 +12,7 @@ Het aannemen van een fulltime QA automation engineer duurt 10-16 weken en kost �
 
 Bij LaunchStudio bouwen we geautomatiseerde testsuites direct op uw Lovable-, Bolt- of Cursor-codebase zonder herbouw. 🛡️
 
-Dennis bracht zijn testtijd terug van een halve dag naar <10 minuten per release, met 0 regressie-incidenten. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
+Dennis bracht zijn testtijd terug van een halve dag naar <10 minuten per release, met 0 regressie-incidenten. (€ 2.600 (Launch & Grow Pakket) - 9 werkdagen.) 🚀
 
 👉 Ontdek hoe wij dit aanpakken: https://launchstudio.eu/nl/blog/launchstudio-vs-qa-automation-engineer
 

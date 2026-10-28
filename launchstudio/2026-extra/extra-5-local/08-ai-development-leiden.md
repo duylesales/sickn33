@@ -24,11 +24,11 @@ Here's a statistic that surprises most people outside the industry: a majority o
 
 ## The Myth: "I'm From the University, So I Understand the Data Requirements"
 
-There's a common assumption among Leiden's academic-adjacent founders — many spinning out of Leiden University or the Leiden Bio Science Park, one of the largest life sciences clusters in Europe — that having worked with sensitive research data inside an institutional setting means they already understand what's needed to handle it safely in a commercial product. It's an understandable assumption, given how much time these founders have spent around data-handling protocols in a lab context. This is only partly true, and the part that's false is exactly where AI development tools quietly fail founders.
+There's a common assumption among Leiden's academic-adjacent founders - many spinning out of Leiden University or the Leiden Bio Science Park, one of the largest life sciences clusters in Europe - that having worked with sensitive research data inside an institutional setting means they already understand what's needed to handle it safely in a commercial product. It's an understandable assumption, given how much time these founders have spent around data-handling protocols in a lab context. This is only partly true, and the part that's false is exactly where AI development tools quietly fail founders.
 
 Working with data inside a university lab, behind institutional IT infrastructure and ethics board oversight, is a completely different environment from running a standalone SaaS product with your own database, your own hosting, and your own security posture. AI development tools like v0 or Bolt can generate a functional data-entry interface for lab samples or research workflows in an afternoon. They don't, on their own, add encryption at rest, audit logging, or the kind of access controls that reviewers, ethics boards, or enterprise research partners will expect to see.
 
-Inside the university, all of that infrastructure was invisible to the researcher precisely because it was somebody else's job — a central IT department that already had encryption, backup, and access policies applied uniformly across every system. The moment a founder spins out and builds their own product with their own database, that invisible safety net disappears, and nothing about an AI development tool's output tells you it's gone. The interface looks the same. The protections underneath it don't exist unless someone deliberately adds them.
+Inside the university, all of that infrastructure was invisible to the researcher precisely because it was somebody else's job - a central IT department that already had encryption, backup, and access policies applied uniformly across every system. The moment a founder spins out and builds their own product with their own database, that invisible safety net disappears, and nothing about an AI development tool's output tells you it's gone. The interface looks the same. The protections underneath it don't exist unless someone deliberately adds them.
 
 ## What Leiden Founders Get Right
 
@@ -40,13 +40,13 @@ To be fair, there's a lot working in favor of Leiden's AI-development founder co
 
 ## What Gets Missed
 
-The recurring gap is data protection infrastructure that AI development tools simply don't generate unprompted: encryption at rest for sensitive fields, detailed audit logs showing who accessed what and when, and formal data processing documentation that research partners or institutional review boards will ask for before agreeing to a pilot. What makes this particularly easy to miss is that none of it shows up during a normal product demo — a data protection officer doesn't test your product by clicking through the interface, they ask to see documentation and configuration details that a founder focused on features has usually never been asked about before. LaunchStudio, backed by Manifera's team of 120+ engineers working from a hub in Singapore alongside the Amsterdam office, has handled this exact category of hardening for clients in regulated and research-adjacent industries.
+The recurring gap is data protection infrastructure that AI development tools simply don't generate unprompted: encryption at rest for sensitive fields, detailed audit logs showing who accessed what and when, and formal data processing documentation that research partners or institutional review boards will ask for before agreeing to a pilot. What makes this particularly easy to miss is that none of it shows up during a normal product demo - a data protection officer doesn't test your product by clicking through the interface, they ask to see documentation and configuration details that a founder focused on features has usually never been asked about before. LaunchStudio, backed by Manifera's team of 120+ engineers working from a hub in Singapore alongside the Amsterdam office, has handled this exact category of hardening for clients in regulated and research-adjacent industries.
 
-Manifera's [company background](https://www.manifera.com/about-us/) reflects over a decade of experience building for clients like TNO, a research organization with rigorous data-handling standards — the same discipline that transfers directly to a Leiden founder's early-stage biotech SaaS, whether the pilot is with a single spinout lab or a larger institutional research partner. Founders wondering whether their AI-development prototype meets that bar can start at [LaunchStudio's homepage](https://launchstudio.eu/en/) to see the full path from prototype to a product that survives institutional scrutiny, rather than finding out the hard way during a due diligence call they weren't prepared for.
+Manifera's [company background](https://www.manifera.com/about-us/) reflects over a decade of experience building for clients like TNO, a research organization with rigorous data-handling standards - the same discipline that transfers directly to a Leiden founder's early-stage biotech SaaS, whether the pilot is with a single spinout lab or a larger institutional research partner. Founders wondering whether their AI-development prototype meets that bar can start at [LaunchStudio's homepage](https://launchstudio.eu/en/) to see the full path from prototype to a product that survives institutional scrutiny, rather than finding out the hard way during a due diligence call they weren't prepared for.
 
 ## Why This Matters More For a University-Town Product
 
-A product built for university spinouts, researchers, or lab environments in Leiden and the wider Zuid-Holland region will eventually be evaluated by people who know exactly what to look for in data handling. Getting the infrastructure right before that evaluation happens — rather than scrambling afterward — is the difference between a stalled pilot and a signed contract.
+A product built for university spinouts, researchers, or lab environments in Leiden and the wider Zuid-Holland region will eventually be evaluated by people who know exactly what to look for in data handling. Getting the infrastructure right before that evaluation happens - rather than scrambling afterward - is the difference between a stalled pilot and a signed contract.
 
 ## What "Audit-Ready" Actually Means for a Research-Facing Product
 
@@ -54,11 +54,11 @@ A product built for university spinouts, researchers, or lab environments in Lei
 
 **Access logging that reconstructs a timeline**
 
-A DPO reviewing your product doesn't just want to know that access control exists — they want to know that if something goes wrong, you can answer "who accessed this specific record, and when" with a real log, not a best guess. This needs to be built in from the start, because you can't retroactively generate history for the period before logging existed.
+A DPO reviewing your product doesn't just want to know that access control exists - they want to know that if something goes wrong, you can answer "who accessed this specific record, and when" with a real log, not a best guess. This needs to be built in from the start, because you can't retroactively generate history for the period before logging existed.
 
 **Encryption that matches the sensitivity of the field, not the whole database**
 
-Not every field needs the same level of protection — a study's public methodology section doesn't need the same treatment as a field containing an identifiable research subject's health data. A DPO will often ask specifically about field-level protections, not just "is the database encrypted," because a single database-wide encryption setting can still leave sensitive fields readable to anyone with general query access.
+Not every field needs the same level of protection - a study's public methodology section doesn't need the same treatment as a field containing an identifiable research subject's health data. A DPO will often ask specifically about field-level protections, not just "is the database encrypted," because a single database-wide encryption setting can still leave sensitive fields readable to anyone with general query access.
 
 **A documented data retention and deletion policy**
 
@@ -68,29 +68,29 @@ Research data frequently has legal or ethical requirements around how long it's 
 
 Institutional partners will often ask for one before agreeing to any data-sharing pilot. Having a solid template ready, rather than scrambling to draft one under time pressure once a lab asks, shortens the path from interested reviewer to signed pilot considerably.
 
-None of this is exotic engineering — it's the specific, checkable list an institutional reviewer works from, and building to it deliberately is far cheaper than retrofitting it after a DPO says no. A rejected pilot doesn't just cost the deal; it costs the founder credibility with a reviewer who now has a documented reason to be cautious the next time the product comes up for reconsideration.
+None of this is exotic engineering - it's the specific, checkable list an institutional reviewer works from, and building to it deliberately is far cheaper than retrofitting it after a DPO says no. A rejected pilot doesn't just cost the deal; it costs the founder credibility with a reviewer who now has a documented reason to be cautious the next time the product comes up for reconsideration.
 
 ## Real example
 
 ### An AI-Native Founder in Action: LabLoop's Unencrypted Sample Records
 
-Tim Verhoeven, a recent PhD graduate from Leiden University, built LabLoop with v0 — a sample-tracking tool for small university spinout labs to log experiment batches, storage conditions, and chain-of-custody for biological samples. He piloted it with two spinout teams working near the Bio Science Park, and the product handled the actual workflow well.
+Tim Verhoeven, a recent PhD graduate from Leiden University, built LabLoop with v0 - a sample-tracking tool for small university spinout labs to log experiment batches, storage conditions, and chain-of-custody for biological samples. He piloted it with two spinout teams working near the Bio Science Park, and the product handled the actual workflow well.
 
-When one of the pilot labs' data protection officers reviewed LabLoop as part of standard due diligence before wider adoption, they found that sample records — some tied to identifiable research subjects — were stored without encryption at rest, and there was no audit trail showing which lab members had accessed or modified records. This was disqualifying for the lab's compliance requirements as it stood.
+When one of the pilot labs' data protection officers reviewed LabLoop as part of standard due diligence before wider adoption, they found that sample records - some tied to identifiable research subjects - were stored without encryption at rest, and there was no audit trail showing which lab members had accessed or modified records. This was disqualifying for the lab's compliance requirements as it stood.
 
 **Result:** LaunchStudio implemented field-level encryption for sensitive records and built a full audit logging system, after which the data protection officer approved LabLoop for continued use across three additional labs.
 
 > *"I knew the science. I genuinely didn't know that 'the app works' and 'the app meets a DPO's requirements' were two completely different bars to clear."*
-> — **Tim Verhoeven, Founder, LabLoop (Leiden)**
+> - **Tim Verhoeven, Founder, LabLoop (Leiden)**
 
-**Cost & Timeline:** €1,950 (field-level encryption, audit logging, data processing documentation) — completed in 7 business days.
+**Cost & Timeline:** €1,950 (field-level encryption, audit logging, data processing documentation) - completed in 7 business days.
 
 ---
 
 ## Frequently Asked Questions
 
 ### Does my product need this level of data protection if it's not strictly biotech?
-Only if it handles sensitive personal, health, or research data. Many products don't need this level of hardening — but any founder unsure should get a specific assessment rather than assume either way.
+Only if it handles sensitive personal, health, or research data. Many products don't need this level of hardening - but any founder unsure should get a specific assessment rather than assume either way.
 
 ### Is LaunchStudio only relevant for Leiden founders coming out of academia?
 No. This pattern is common in Leiden specifically because of its university and Bio Science Park concentration, but LaunchStudio works with founders across all industries and cities in the Netherlands and Benelux.
@@ -102,7 +102,7 @@ Manifera has delivered projects for TNO, a Dutch research and technology organiz
 HTTPS protects data in transit between a browser and server. Field-level encryption at rest protects the actual data stored in your database, so that even a database breach doesn't expose sensitive records in plain text.
 
 ### Can I get this kind of review before I even have a pilot lined up?
-Yes — book a free 15-minute intro call to walk an engineer through what your product handles, and get a sense of what data protection work is actually needed before institutional partners ask.
+Yes - book a free 15-minute intro call to walk an engineer through what your product handles, and get a sense of what data protection work is actually needed before institutional partners ask.
 
 <script type="application/ld+json">
 {
@@ -113,7 +113,7 @@ Yes — book a free 15-minute intro call to walk an engineer through what your p
     { "@type": "Question", "name": "Is LaunchStudio only relevant for Leiden founders coming out of academia?", "acceptedAnswer": { "@type": "Answer", "text": "No. This pattern is common in Leiden due to its university and Bio Science Park concentration, but LaunchStudio works with founders across all industries and cities." } },
     { "@type": "Question", "name": "What experience does Manifera actually have with regulated or sensitive data?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera has delivered projects for TNO, a research organization with strict data-handling standards, among 160+ total projects across 11+ years." } },
     { "@type": "Question", "name": "How is field-level encryption different from just having HTTPS on my website?", "acceptedAnswer": { "@type": "Answer", "text": "HTTPS protects data in transit; field-level encryption at rest protects stored data so a database breach doesn't expose records in plain text." } },
-    { "@type": "Question", "name": "Can I get this kind of review before I even have a pilot lined up?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — book a free 15-minute intro call to get a sense of what data protection work is needed before institutional partners ask." } }
+    { "@type": "Question", "name": "Can I get this kind of review before I even have a pilot lined up?", "acceptedAnswer": { "@type": "Answer", "text": "Yes - book a free 15-minute intro call to get a sense of what data protection work is needed before institutional partners ask." } }
   ]
 }
 </script>

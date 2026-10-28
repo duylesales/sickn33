@@ -6,7 +6,7 @@
 ❌ **A Business Case That Doesn't Hold:** The migration finishes and the promised economics never show up.
 
 **The Manifera Solution:**
-✅ **Redesign Where It Counts:** Application-level changes — auto-scaling, serverless, managed services — for genuine cost capture.
+✅ **Redesign Where It Counts:** Application-level changes - auto-scaling, serverless, managed services - for genuine cost capture.
 ✅ **Amsterdam Strategic Governance:** Honest expectations about what lift-and-shift delivers versus real redesign.
 ✅ **Vietnam Execution Velocity:** Cloud-native architecture built specifically where the economics justify it.
 

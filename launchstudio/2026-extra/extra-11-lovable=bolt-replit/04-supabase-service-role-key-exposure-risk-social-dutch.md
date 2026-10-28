@@ -1,4 +1,4 @@
-🔐 Thomas de Wit bouwde Factuurly in Cursor voor 180 zzp'ers in Utrecht. Tijdens een code-audit bleek zijn Supabase `service_role` key direct in de client-side JavaScript-bundle te staan — waarmee elke bezoeker volledige admin-rechten had om facturen van alle gebruikers in te zien of te wissen. 😳
+🔐 Thomas de Wit bouwde Factuurly in Cursor voor 180 zzp'ers in Utrecht. Tijdens een code-audit bleek zijn Supabase `service_role` key direct in de client-side JavaScript-bundle te staan - waarmee elke bezoeker volledige admin-rechten had om facturen van alle gebruikers in te zien of te wissen. 😳
 
 De `service_role` key omzeilt alle Row Level Security. Waar het vaak misgaat bij API-sleutels in AI-code:
 

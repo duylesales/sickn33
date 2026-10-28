@@ -1,8 +1,8 @@
-🚨 Twee offertes voor dezelfde boekingsapp: € 3.400 en € 12.800. Hij dacht dat de duurste grondig was en de goedkope naïef — totdat een spreadsheet met 12 rijen méér lege cellen in de dure offerte liet zien. 😳
+🚨 Twee offertes voor dezelfde boekingsapp: € 3.400 en € 12.800. Hij dacht dat de duurste grondig was en de goedkope naïef - totdat een spreadsheet met 12 rijen méér lege cellen in de dure offerte liet zien. 😳
 
-Twee offertes voor hetzelfde prototype beschrijven zelden hetzelfde werk — de laagste prijs op zichzelf zegt helemaal niets: 🧠
+Twee offertes voor hetzelfde prototype beschrijven zelden hetzelfde werk - de laagste prijs op zichzelf zegt helemaal niets: 🧠
 
-❌ De dure offerte sloeg permissies tussen accounts over — precies wat data van elkaar gescheiden houdt
+❌ De dure offerte sloeg permissies tussen accounts over - precies wat data van elkaar gescheiden houdt
 ❌ Geen van beide offertes noemde transactionele e-mail of een aparte staging-omgeving
 ❌ Het antwoord van de dure partij op "wat als het 50% uitloopt?" was vaag "dat overleggen we dan wel"
 ❌ De broncode bleef in de GitHub-organisatie van het bureau tot de allerlaatste betaling binnen was

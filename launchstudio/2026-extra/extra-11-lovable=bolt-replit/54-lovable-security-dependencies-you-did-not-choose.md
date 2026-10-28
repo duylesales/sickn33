@@ -20,13 +20,13 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Open the package list of a Lovable or Bolt project and count. A modest application — a few screens, a form, a chart — routinely depends on several hundred packages, almost none of which you selected, most of which you have never heard of, and all of which run with the same privileges as the code you wrote.
+Open the package list of a Lovable or Bolt project and count. A modest application - a few screens, a form, a chart - routinely depends on several hundred packages, almost none of which you selected, most of which you have never heard of, and all of which run with the same privileges as the code you wrote.
 
-That is not a scandal. It is how modern web development works, and the same is true of applications built entirely by hand. What is different in AI-built projects is that nobody paused at any point to consider whether a package was necessary, maintained, or the one it appeared to be — because the tool added it silently while solving the problem you described.
+That is not a scandal. It is how modern web development works, and the same is true of applications built entirely by hand. What is different in AI-built projects is that nobody paused at any point to consider whether a package was necessary, maintained, or the one it appeared to be - because the tool added it silently while solving the problem you described.
 
 ## What Gets Installed on Your Behalf
 
-Ask a builder for a date picker and it installs a date library. Ask for a chart and it installs a charting package, which installs a rendering utility, which installs three helpers. Ask for animation, icons, form validation, file handling — each request adds a package you chose and several you did not.
+Ask a builder for a date picker and it installs a date library. Ask for a chart and it installs a charting package, which installs a rendering utility, which installs three helpers. Ask for animation, icons, form validation, file handling - each request adds a package you chose and several you did not.
 
 The ones you did not choose are called transitive dependencies, and in a typical project they outnumber your direct choices by roughly ten to one. They are also where nearly all the risk sits, because you have no relationship with them at all: you have never read their name, never checked whether they are maintained, and would not notice if one changed hands.
 
@@ -66,13 +66,13 @@ That is the entire programme. An hour a month, and it puts you ahead of most pro
 
 A lockfile records the exact version of every package, direct and transitive, that your project uses. Without one, a build tomorrow may install different versions than a build today, which means your production environment can differ from what you tested for reasons nobody introduced deliberately.
 
-Two consequences for security. A lockfile means a compromised new release does not reach you automatically — you upgrade when you choose. And it means that when something does break, the set of things that changed is knowable rather than mysterious.
+Two consequences for security. A lockfile means a compromised new release does not reach you automatically - you upgrade when you choose. And it means that when something does break, the set of things that changed is knowable rather than mysterious.
 
 If your project has no lockfile committed, that is the first fix, and it takes a minute.
 
 ## Automated Updates: Useful and Noisy
 
-Tools that open a pull request when a dependency has a new version are genuinely helpful and, on default settings, overwhelming for a solo founder — a project with hundreds of packages produces updates faster than one person can review them, and the outcome is that all of them get ignored, including the one that mattered.
+Tools that open a pull request when a dependency has a new version are genuinely helpful and, on default settings, overwhelming for a solo founder - a project with hundreds of packages produces updates faster than one person can review them, and the outcome is that all of them get ignored, including the one that mattered.
 
 The configuration that works for a small product: security updates raised immediately and separately, everything else batched monthly, and patch-level updates grouped rather than individual. The goal is a small number of notifications you actually read.
 
@@ -86,7 +86,7 @@ The best dependency management is not adding things. Three questions before acce
 
 **How many things come with it?** A package that installs forty others is forty more things you now depend on.
 
-When an AI tool proposes a dependency, this is exactly the moment to intervene — it optimises for solving your immediate request, not for the size of the tree it leaves behind.
+When an AI tool proposes a dependency, this is exactly the moment to intervene - it optimises for solving your immediate request, not for the size of the tree it leaves behind.
 
 ## The Audit You Can Run Today
 
@@ -96,7 +96,7 @@ For each reported issue, ask two questions. **Does this affect code that runs in
 
 This distinction matters because an unfiltered audit report on a typical project produces an alarming number and paralysis. Triaged properly, most projects have a handful of items that deserve action and a long tail that does not.
 
-Then check your direct dependency list by hand and remove anything you no longer use — projects accumulate packages from features that were deleted, and the dependency survived.
+Then check your direct dependency list by hand and remove anything you no longer use - projects accumulate packages from features that were deleted, and the dependency survived.
 
 ## When an Alert Actually Matters
 
@@ -122,7 +122,7 @@ A distinction that makes triage far faster once you hold it, and that most audit
 
 **A package running in the browser** executes on your user's device with access to what they see and type on your page. A compromise there can read form inputs, session tokens held in the page, and anything displayed. It cannot reach your database credentials, because those are not there.
 
-**A package running on your server or in a function** executes with your application's privileges. A compromise there can read environment variables — your database credentials, your payment secret, your model API key — and act as your application against your own data.
+**A package running on your server or in a function** executes with your application's privileges. A compromise there can read environment variables - your database credentials, your payment secret, your model API key - and act as your application against your own data.
 
 **Build-time packages** run on the machine that builds your project and never reach users at all. A vulnerability in one is a real concern for a large organisation with a shared build system and a minor one for a solo founder building from a laptop.
 
@@ -143,9 +143,9 @@ Four business days of work: a lockfile committed, since the project had none and
 **Result:** the accountant's question was answered with a documented process, and the monthly update review has since taken Denise under fifteen minutes, with two security items acted on in nine months.
 
 > *"Two hundred alerts made me feel like my product was made of wet paper. Four of them were real, and I could not tell which four without someone showing me how to look."*
-> — **Denise Kuiper, Founder, Boekhoudmaat (Utrecht)**
+> - **Denise Kuiper, Founder, Boekhoudmaat (Utrecht)**
 
-**Cost & Timeline:** €1,450 (lockfile and reproducible builds, triage, four remediations, update configuration, triage documentation) — completed in 4 business days.
+**Cost & Timeline:** €1,450 (lockfile and reproducible builds, triage, four remediations, update configuration, triage documentation) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -179,7 +179,7 @@ Intervene when one is proposed: ask whether the whole library is needed for the 
       "name": "How many dependencies does a typical AI-built app have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often several hundred once transitive dependencies are counted, roughly ten indirect for every direct choice — normal for modern web development, but unreviewed in AI-built projects."
+        "text": "Often several hundred once transitive dependencies are counted, roughly ten indirect for every direct choice - normal for modern web development, but unreviewed in AI-built projects."
       }
     },
     {
@@ -195,7 +195,7 @@ Intervene when one is proposed: ask whether the whole library is needed for the 
       "name": "My audit reports hundreds of vulnerabilities. Is my app unsafe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually not to that degree — most concern build tooling or unreachable code paths. Triage by asking whether the code runs in production and whether your app exercises it."
+        "text": "Usually not to that degree - most concern build tooling or unreachable code paths. Triage by asking whether the code runs in production and whether your app exercises it."
       }
     },
     {

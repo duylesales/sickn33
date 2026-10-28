@@ -11,7 +11,7 @@ If you are building an AI-native startup using a serverless architecture, you wi
 
 Most AI-generated apps consist of a React frontend and a Supabase database. The React code runs directly in the user's browser (Chrome, Safari). Because it runs on the user's machine, the user can inspect it, modify it, and extract any data hidden within it.
 
-This creates a massive problem: If you want to use the OpenAI API to generate text, or the Stripe API to process a payment, you need to provide a Secret Key. If you put that Secret Key in your React code, any user can steal it. You need a secure middleman—a server that you control, where the secrets are safe from prying eyes.
+This creates a massive problem: If you want to use the OpenAI API to generate text, or the Stripe API to process a payment, you need to provide a Secret Key. If you put that Secret Key in your React code, any user can steal it. You need a secure middleman - a server that you control, where the secrets are safe from prying eyes.
 
 ## Enter the Edge Function
 
@@ -79,7 +79,7 @@ William partnered with **LaunchStudio (by Manifera)** to make the product launch
 
 **Result:** William eliminated user-facing timeout errors and supported PDF generation of up to 200 pages.
 
-**Cost & Timeline:** €1,750 (Edge Architecture Package) — production-ready and deployed in 6 business days.
+**Cost & Timeline:** €1,750 (Edge Architecture Package) - production-ready and deployed in 6 business days.
 
 ---
 

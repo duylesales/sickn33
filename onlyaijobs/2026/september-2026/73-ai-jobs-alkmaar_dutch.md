@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Alkmaar telt ongeveer 110.000 inwoners in Noord-Holland, zo'n veertig minuten noordelijk van Amsterdam. Het technische profiel rust op energie — netbeheer, een energie-innovatiecluster en waterstofactiviteit — plus de regionale publieke en zorgwerkgevers die elke stad van deze grootte kent.
+Alkmaar telt ongeveer 110.000 inwoners in Noord-Holland, zo'n veertig minuten noordelijk van Amsterdam. Het technische profiel rust op energie - netbeheer, een energie-innovatiecluster en waterstofactiviteit - plus de regionale publieke en zorgwerkgevers die elke stad van deze grootte kent.
 
 ## Netdatawerk is nu een van de meest beklemde problemen van het land
 
@@ -31,7 +31,7 @@ Aansluitcapaciteit is in grote delen van het land volledig vergeven, waardoor ni
 
 **Belastingvoorspelling op netsegmentniveau.** Vraag en opwek voorspellen op specifieke netdelen, van minuten tot jaren, waarbij de historische patronen actief breken door elektrificatie van warmte en vervoer plus decentrale zon.
 
-**Congestiemanagement.** Vaststellen waar en wanneer het net beklemd raakt, en flexibiliteit coördineren — vraag die kan schuiven, opslag die kan absorberen, opwek die kan afschakelen. Een coördinatieprobleem over vele partijen met eigen doelen.
+**Congestiemanagement.** Vaststellen waar en wanneer het net beklemd raakt, en flexibiliteit coördineren - vraag die kan schuiven, opslag die kan absorberen, opwek die kan afschakelen. Een coördinatieprobleem over vele partijen met eigen doelen.
 
 **Decentrale opwek en tweerichtingsstroom.** Een net ontworpen voor eenrichtingsstroom van grote centrales naar afnemers voert nu vermogen in twee richtingen vanuit miljoenen kleine bronnen.
 
@@ -84,7 +84,7 @@ Amsterdam op vijfendertig tot vijfenveertig minuten is werkelijk forenzbaar, en 
 
 Maar de rit is echt. Veertig minuten enkele reis op een route die in de spits vol zit, is ruwweg negentig minuten van je dag. Over een jaar is dat substantieel, en kandidaten die het als kosteloos behandelen herzien dat meestal binnen een half jaar.
 
-Twee observaties helpen. Hybride afspraken veranderen de rekening drastisch — een kantoorweek van twee dagen maakt veertig minuten veel verdraaglijker dan vijf. En de trein is productieve tijd als je die zo gebruikt, wat sommigen echt doen en anderen echt niet.
+Twee observaties helpen. Hybride afspraken veranderen de rekening drastisch - een kantoorweek van twee dagen maakt veertig minuten veel verdraaglijker dan vijf. En de trein is productieve tijd als je die zo gebruikt, wat sommigen echt doen en anderen echt niet.
 
 ## Wat energiedatawerk als loopbaan onderscheidt
 
@@ -100,7 +100,7 @@ Eén ding verdient een heldere formulering: dit werk heeft een publiek doel dat 
 
 De overdraagbare vaardigheden zijn standaarder dan kandidaten aannemen. Tijdreeksvoorspelling, optimalisatie onder randvoorwaarden, anomaliedetectie op sensordata en ruimtelijke analyse zijn alle kernvaardigheden in energie, en alle worden elders opgedaan.
 
-Wat je in het begin mist, is begrip van hoe het fysieke systeem zich gedraagt — waarom spanning telt, wat een transformator doet, waarom blindvermogen bestaat — en van hoe markt- en toezichtstructuren werken. Beide zijn leerbaar, en netbeheerders verwachten die te onderwijzen.
+Wat je in het begin mist, is begrip van hoe het fysieke systeem zich gedraagt - waarom spanning telt, wat een transformator doet, waarom blindvermogen bestaat - en van hoe markt- en toezichtstructuren werken. Beide zijn leerbaar, en netbeheerders verwachten die te onderwijzen.
 
 Waar ze op screenen is of je het fysieke systeem serieus neemt. Wie netdata als abstract tijdreeksprobleem behandelt, presteert slecht in gesprekken. Wie genoeg heeft gelezen om een intelligente vraag te stellen over hoe flexibiliteit werkelijk wordt ingekocht, presteert goed, ook zonder sectorachtergrond.
 
@@ -109,7 +109,7 @@ Waar ze op screenen is of je het fysieke systeem serieus neemt. Wie netdata als 
 - Netcapaciteitsschaarste heeft netdatawerk ongewoon consequent gemaakt, met een direct verband tussen betere voorspelling en aansluitingen die anders worden geweigerd.
 - De inhoud omvat belastingvoorspelling op segmentniveau, congestiemanagement over vele partijen, tweerichtingsstroom en meterdata op populatieschaal.
 - De waterstof- en opslaglaag voegt stochastische optimalisatie met directe financiële inzet toe.
-- Amsterdam op vijfendertig tot vijfenveertig minuten maakt deze markt niet-isolerend — maar negentig minuten dagelijkse reistijd is een echte kostenpost.
+- Amsterdam op vijfendertig tot vijfenveertig minuten maakt deze markt niet-isolerend - maar negentig minuten dagelijkse reistijd is een echte kostenpost.
 - Regelgeving vormt het werk direct, tijdschalen lopen van seconden tot decennia, en de sector groeit sneller dan hij werft.
 - Instappen zonder energie-ervaring is realistisch; netbeheerders onderwijzen domeinkennis maar screenen op echte nieuwsgierigheid naar het fysieke systeem.
 

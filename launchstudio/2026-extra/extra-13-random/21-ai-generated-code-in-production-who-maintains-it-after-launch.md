@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-There is a question most founders never ask before launch, and almost all of them ask it within six months afterwards: who is responsible for this code now? The AI tool generated it. A freelancer may have adjusted it. You approved it. But when a dependency needs a security update, when Stripe changes an API version, when a customer finds a bug on a Saturday — AI generated code in production needs a maintainer, and "the AI" is not one.
+There is a question most founders never ask before launch, and almost all of them ask it within six months afterwards: who is responsible for this code now? The AI tool generated it. A freelancer may have adjusted it. You approved it. But when a dependency needs a security update, when Stripe changes an API version, when a customer finds a bug on a Saturday - AI generated code in production needs a maintainer, and "the AI" is not one.
 
 This is not a legal question about who owns the code (you should, always). It is a practical question about who looks after it.
 
@@ -33,7 +33,7 @@ Founders often imagine maintenance as occasional bug fixes. In practice, a live 
 
 **Platform changes.** Hosting providers, databases, payment providers and email services change their APIs, deprecate features and update requirements. Stripe and Mollie version their APIs; Supabase and Firebase update their SDKs; Node.js versions reach end of life. Each change comes with a deadline.
 
-**Certificates and domains.** SSL certificates usually renew automatically — until an automatic renewal fails. Domains expire if a card on file expires.
+**Certificates and domains.** SSL certificates usually renew automatically - until an automatic renewal fails. Domains expire if a card on file expires.
 
 **Backups and monitoring.** Backups that are never checked quietly stop working. Alerts that go to someone who left the company go nowhere.
 
@@ -64,9 +64,9 @@ Many founders combine models: a managed service for infrastructure and security,
 
 ## Four Things That Protect You Whichever Model You Choose
 
-- **All accounts in your name.** Repository, hosting, database, domain, payment provider, email — owned by a company email you control, with two-factor authentication. Never on a freelancer's account.
+- **All accounts in your name.** Repository, hosting, database, domain, payment provider, email - owned by a company email you control, with two-factor authentication. Never on a freelancer's account.
 - **Documentation in the repository.** A plain README explaining how the app is structured, how to deploy, where secrets live and what the main integrations are. It also helps AI tools produce better changes.
-- **Tests on critical paths.** A few automated tests on signup, login, payment and the core action catch regressions — including ones introduced by AI regeneration.
+- **Tests on critical paths.** A few automated tests on signup, login, payment and the core action catch regressions - including ones introduced by AI regeneration.
 - **A maintenance log.** A simple record of what was updated, when and why. It turns handovers from archaeology into reading.
 
 These cost little and make every model more resilient.
@@ -87,7 +87,7 @@ Maintenance becomes manageable when it is scheduled rather than remembered. A si
 | Yearly | Rotate long-lived keys; review domain and certificate renewals | 1 hour |
 | Yearly | Focused security review of changes since the last one | Days, external |
 
-Put these in a shared calendar with a named owner. The total is a few hours a month in quiet periods — far less than the unplanned days an unmaintained app eventually demands.
+Put these in a shared calendar with a named owner. The total is a few hours a month in quiet periods - far less than the unplanned days an unmaintained app eventually demands.
 
 ## How to Triage Dependency Alerts
 
@@ -95,20 +95,20 @@ Dependency alerts are the most frequent maintenance task and the easiest to igno
 
 ## Platform Changes You Should Expect
 
-Over a year, a typical AI-built app on common infrastructure will encounter several externally driven changes: a Node.js version reaching end of life on your host, a new major version of the Supabase or Firebase client library, a payment provider API version being retired, a change in how an email provider handles authentication records, and occasional changes to browser behaviour (cookie handling, for example). None arrives as a surprise if you read the providers' changelogs or deprecation emails — which is why "someone reads these" belongs in your maintenance plan.
+Over a year, a typical AI-built app on common infrastructure will encounter several externally driven changes: a Node.js version reaching end of life on your host, a new major version of the Supabase or Firebase client library, a payment provider API version being retired, a change in how an email provider handles authentication records, and occasional changes to browser behaviour (cookie handling, for example). None arrives as a surprise if you read the providers' changelogs or deprecation emails - which is why "someone reads these" belongs in your maintenance plan.
 
 ## Writing Documentation That Survives Handovers
 
 Documentation for an AI-built codebase does not need to be long. A README with these sections covers most handover situations:
 
 1. **What the app does** in five sentences.
-2. **Architecture** — frontend, backend functions, database, storage, external services.
-3. **Environments** — development, staging, production, and where each lives.
-4. **Deploying** — step by step, including how to roll back.
-5. **Secrets** — names and where they are stored, never values.
-6. **Data** — main tables, personal data, backups and retention.
-7. **Integrations** — each external service, its purpose, the account owner.
-8. **Known issues and decisions** — what was consciously postponed and why.
+2. **Architecture** - frontend, backend functions, database, storage, external services.
+3. **Environments** - development, staging, production, and where each lives.
+4. **Deploying** - step by step, including how to roll back.
+5. **Secrets** - names and where they are stored, never values.
+6. **Data** - main tables, personal data, backups and retention.
+7. **Integrations** - each external service, its purpose, the account owner.
+8. **Known issues and decisions** - what was consciously postponed and why.
 
 A secondary benefit: AI coding tools read README files and project rules, and produce noticeably better, safer changes when this context exists.
 
@@ -122,11 +122,11 @@ Look out for: dependency alerts older than a month, a backup job that last succe
 
 ## Using AI Tools Safely for Maintenance
 
-AI coding tools are useful maintenance assistants — for upgrading dependencies, explaining unfamiliar code or fixing a reported bug — provided they work within guardrails. Keep maintenance changes small and on their own branch; run the full test suite before merging; ask the tool to explain what it changed and why; and reject changes that touch unrelated files. For upgrades, ask the tool to read the library's migration guide first and list breaking changes before editing code. With these habits, AI assistance speeds up maintenance rather than creating the next round of regressions.
+AI coding tools are useful maintenance assistants - for upgrading dependencies, explaining unfamiliar code or fixing a reported bug - provided they work within guardrails. Keep maintenance changes small and on their own branch; run the full test suite before merging; ask the tool to explain what it changed and why; and reject changes that touch unrelated files. For upgrades, ask the tool to read the library's migration guide first and list breaking changes before editing code. With these habits, AI assistance speeds up maintenance rather than creating the next round of regressions.
 
 ## Budgeting for Maintenance
 
-Maintenance is a recurring cost that belongs in your plan from day one. For a small SaaS, a realistic budget combines hosting and service fees (usage-based), a managed service or your own time for routine tasks (a few hours a month, or around €49 per month for LaunchStudio's managed hosting), and a reserve for platform changes and incidents — perhaps the equivalent of a few days of engineering per year. Founders who budget nothing tend to pay more in the end, because deferred updates accumulate into larger, riskier upgrades that must be done under time pressure.
+Maintenance is a recurring cost that belongs in your plan from day one. For a small SaaS, a realistic budget combines hosting and service fees (usage-based), a managed service or your own time for routine tasks (a few hours a month, or around €49 per month for LaunchStudio's managed hosting), and a reserve for platform changes and incidents - perhaps the equivalent of a few days of engineering per year. Founders who budget nothing tend to pay more in the end, because deferred updates accumulate into larger, riskier upgrades that must be done under time pressure.
 
 ## When to Bring Maintenance In-House
 
@@ -155,9 +155,9 @@ LaunchStudio's engineers began by consolidating ownership: repository, hosting, 
 **Result:** PraatMaat has run for fourteen months since without an unplanned outage. The tests have blocked three regressions from Cursor edits, and when Charlotte hired a part-time developer the following year, onboarding took two days instead of weeks, thanks to the README and log.
 
 > *"I owned the code in theory. In practice, the only person who understood it had just moved to Berlin."*
-> — **Charlotte Meijer, Founder, PraatMaat (Amstelveen)**
+> - **Charlotte Meijer, Founder, PraatMaat (Amstelveen)**
 
-**Cost & Timeline:** €2,000 (ownership consolidation, fixes, tests, documentation and dependency updates) — completed in 8 business days, then €49/month managed hosting and maintenance.
+**Cost & Timeline:** €2,000 (ownership consolidation, fixes, tests, documentation and dependency updates) - completed in 8 business days, then €49/month managed hosting and maintenance.
 
 ## Frequently Asked Questions
 

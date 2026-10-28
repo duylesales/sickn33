@@ -20,9 +20,9 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-"Moet ik mijn app weghalen van de hosting van Lovable?" is een vraag die oprichters stellen met meer angst dan nodig is — meestal nadat een softwareontwikkelaar heeft laten doorschemeren dat een 'echt' product niet draait op de infrastructuur van een builder.
+"Moet ik mijn app weghalen van de hosting van Lovable?" is een vraag die oprichters stellen met meer angst dan nodig is - meestal nadat een softwareontwikkelaar heeft laten doorschemeren dat een 'echt' product niet draait op de infrastructuur van een builder.
 
-Het eerlijke antwoord is dat dit afhangt van zes concrete factoren, dat voor een aanzienlijk deel van de applicaties het antwoord simpelweg 'nee' luidt, en dat deze beslissing niets te maken heeft met je geloofwaardigheid. Het draait volledig om controle — specifiek om de vraag of je het punt hebt bereikt waarop je grip nodig hebt op deployments, afzonderlijke omgevingen en configuraties die de standaard hosting van het platform niet biedt.
+Het eerlijke antwoord is dat dit afhangt van zes concrete factoren, dat voor een aanzienlijk deel van de applicaties het antwoord simpelweg 'nee' luidt, en dat deze beslissing niets te maken heeft met je geloofwaardigheid. Het draait volledig om controle - specifiek om de vraag of je het punt hebt bereikt waarop je grip nodig hebt op deployments, afzonderlijke omgevingen en configuraties die de standaard hosting van het platform niet biedt.
 
 ## Wat Je Wint Door te Blijven
 
@@ -42,13 +42,13 @@ Vercel en Netlify zijn gebouwd voor één specifieke taak: webapplicaties herhaa
 
 **Een geautomatiseerde build-pipeline gekoppeld aan je Git-repository.** Elke wijziging wordt reproduceerbaar vanuit de broncode gebouwd, met een waterdicht logboek van wat er precies is gedeployed.
 
-**Preview-deployments.** Elke pull request of codewijziging krijgt een eigen tijdelijke URL vóórdat deze in productie belandt — veruit de handigste functie voor een oprichter die een update eerst op zijn eigen mobiel wil controleren voordat klanten hem zien.
+**Preview-deployments.** Elke pull request of codewijziging krijgt een eigen tijdelijke URL vóórdat deze in productie belandt - veruit de handigste functie voor een oprichter die een update eerst op zijn eigen mobiel wil controleren voordat klanten hem zien.
 
 **Echte scheiding van omgevingen.** Productie, staging en testomgevingen hebben elk hun eigen configuratie, databases en API-sleutels, in plaats van één enkel live systeem.
 
 **Directe rollback.** Terugkeren naar de vorige stabiele versie met één muisklik, als een beheerste actie in plaats van een nachtelijke noodreparatie.
 
-**Configuratievrijheid.** Aangepaste redirects, HTTP-beveiligingsheaders, caching-regels, specifieke dataregio's en serverless edge-functies — precies de eisen die zakelijke klanten stellen.
+**Configuratievrijheid.** Aangepaste redirects, HTTP-beveiligingsheaders, caching-regels, specifieke dataregio's en serverless edge-functies - precies de eisen die zakelijke klanten stellen.
 
 **Volledige portabiliteit.** Je applicatie wordt uitgerold vanuit je eigen code-repository, waardoor overstappen naar een andere partij in de toekomst een middag werk is in plaats van een groot migratietraject.
 
@@ -68,7 +68,7 @@ In plaats van ellenlange featurelijsten te vergelijken, kun je volstaan met deze
 
 **Voel je je comfortabel bij het beheer van een extra systeem?** Een eerlijke gewetensvraag. Een verkeerd geconfigureerde Vercel-pipeline die je niet begrijpt is riskanter dan de eenvoudige hosting van Lovable die je wél overziet.
 
-Twee of meer keren 'ja' betekent dat verhuizen waarschijnlijk de juiste stap is. Zes keer 'nee' betekent dat de angst onterecht is en je je engineeringbudget veel beter kunt besteden aan toegangscontrole, betalingen en back-ups — de zaken die een livegang daadwerkelijk kunnen blokkeren.
+Twee of meer keren 'ja' betekent dat verhuizen waarschijnlijk de juiste stap is. Zes keer 'nee' betekent dat de angst onterecht is en je je engineeringbudget veel beter kunt besteden aan toegangscontrole, betalingen en back-ups - de zaken die een livegang daadwerkelijk kunnen blokkeren.
 
 ## Wat Verhuizen Níet Verandert
 
@@ -78,7 +78,7 @@ Goed om helder voor ogen te houden, omdat oprichters soms wonderen verwachten va
 
 **Je beveiligingsniveau blijft ongewijzigd.** Een app zonder autorisatieregels heeft op Vercel net zomin autorisatieregels. Verhuizen lost je deploymentproces op, niet je autorisatiegaten.
 
-**Je laadsnelheid verandert nauwelijks.** De klassieke oorzaken van een trage AI-app — ongeoptimaliseerde afbeeldingen, ontbrekende database-indexen, overmatige API-calls — verhuizen integraal met je mee.
+**Je laadsnelheid verandert nauwelijks.** De klassieke oorzaken van een trage AI-app - ongeoptimaliseerde afbeeldingen, ontbrekende database-indexen, overmatige API-calls - verhuizen integraal met je mee.
 
 **Je kunt doorgaans gewoon blijven bouwen in Lovable,** mits de codebase netjes en conventioneel blijft. Het is verstandig dit vooraf expliciet te laten borgen, want het verlies van die mogelijkheid doet de hele reden teniet waarom je voor deze tool koos.
 
@@ -88,7 +88,7 @@ Voor een typisch Lovable-project functioneren beide platforms uitstekend, en de 
 
 Beide bieden Git-gestuurde builds, preview-deployments, beheer van omgevingsvariabelen, serverless functies, custom domeinen met automatische SSL-certificaten, en een royaal gratis instapmodel voor startende producten. Beide beschikken over datacenters in de EU (zoals Frankfurt of Dublin), wat van belang is voor Nederlandse bedrijven met zakelijke afnemers.
 
-Praktische overwegingen die in specifieke situaties de doorslag geven: welk frontend-framework je gebruikt (Vercel is de maker van Next.js; voor Vite/React zijn beiden gelijkwaardig), hoe redirects en headers worden geconfigureerd, en hoe het prijsmodel eruitziet bij toenemend dataverkeer — met name bandbreedte kan bij apps met veel zware media tot verrassingen leiden.
+Praktische overwegingen die in specifieke situaties de doorslag geven: welk frontend-framework je gebruikt (Vercel is de maker van Next.js; voor Vite/React zijn beiden gelijkwaardig), hoe redirects en headers worden geconfigureerd, en hoe het prijsmodel eruitziet bij toenemend dataverkeer - met name bandbreedte kan bij apps met veel zware media tot verrassingen leiden.
 
 Heb je geen specifieke randvoorwaarden? Kies het platform waarvan je de interface en documentatie het prettigst vindt werken. De keuze is binnen een middag omkeerbaar, en dat is precies de kracht van Git-gebaseerd deployen.
 
@@ -96,7 +96,7 @@ Heb je geen specifieke randvoorwaarden? Kies het platform waarvan je de interfac
 
 Voor een compact Lovable-project vergt een overstap doorgaans één tot drie werkdagen.
 
-De Git-repository wordt de centrale bron van waarheid, waarbij de build-instructies expliciet worden vastgelegd. Omgevingsvariabelen worden overgezet naar de geheime opslag van de nieuwe host — hét moment om te controleren of er geheimen tussen zitten die eigenlijk alleen aan de serverkant horen te leven. Er wordt een staging-omgeving ingericht. Het domein wordt omgezet en SSL-certificaten worden gecontroleerd. De callback-URL's bij betaalproviders (zoals Stripe of Mollie) en authenticatie-aanbieders worden bijgewerkt — de stap die het vaakst wordt vergeten en die geruisloos leidt tot mislukte logins of betalingen.
+De Git-repository wordt de centrale bron van waarheid, waarbij de build-instructies expliciet worden vastgelegd. Omgevingsvariabelen worden overgezet naar de geheime opslag van de nieuwe host - hét moment om te controleren of er geheimen tussen zitten die eigenlijk alleen aan de serverkant horen te leven. Er wordt een staging-omgeving ingericht. Het domein wordt omgezet en SSL-certificaten worden gecontroleerd. De callback-URL's bij betaalproviders (zoals Stripe of Mollie) en authenticatie-aanbieders worden bijgewerkt - de stap die het vaakst wordt vergeten en die geruisloos leidt tot mislukte logins of betalingen.
 
 Vervolgens blijft de oude Lovable-deployment nog een week onaangeroerd online staan als vangnet. Niets is goedkoper dan een fallback die je uiteindelijk niet nodig bleek te hebben.
 
@@ -105,7 +105,7 @@ Vervolgens blijft de oude Lovable-deployment nog een week onaangeroerd online st
 - Je product is een interne bedrijfstool of een pilot met een handvol bekende testers.
 - Je past de opzet van het product nog wekelijks drastisch aan en niemand is er zakelijk van afhankelijk.
 - Geen enkele klant heeft eisen gesteld waar de hosting van het platform niet aan voldoet.
-- Je resterende ontwikkelbudget rendeert beter op het gebied van Row Level Security, betalingsafhandeling of back-upgaranties — wat voor vrijwel elke startende AI-app het geval is.
+- Je resterende ontwikkelbudget rendeert beter op het gebied van Row Level Security, betalingsafhandeling of back-upgaranties - wat voor vrijwel elke startende AI-app het geval is.
 
 Er bestaat geen reputatieschade voor het draaien op platformhosting. Klanten vragen waar hun data wordt bewaard en of het AVG-proof is. Geen enkele klant heeft ooit gevraagd welke server de JavaScript-bestanden serveert.
 
@@ -113,9 +113,9 @@ Er bestaat geen reputatieschade voor het draaien op platformhosting. Klanten vra
 
 Welke richting je ook kiest: het loont om de deployment-infrastructuur eenmalig vakkundig neer te zetten, in plaats van te improviseren tijdens een hectische lanceringsweek.
 
-LaunchStudio verzorgt dit fundament als vast onderdeel van het klaarmaken van AI-software voor productie: eigenaarschap van de repository met transparante build-scripts, hosting ingericht met staging en één-klik-rollback, geheimen strikt gescheiden per omgeving, domeinnaam en SSL-certificaten vlekkeloos overgezet, alle externe callbacks gecontroleerd, monitoring ingeregeld — en de codebase zo schoon gehouden dat je daarna moeiteloos kunt blijven prompten in Lovable.
+LaunchStudio verzorgt dit fundament als vast onderdeel van het klaarmaken van AI-software voor productie: eigenaarschap van de repository met transparante build-scripts, hosting ingericht met staging en één-klik-rollback, geheimen strikt gescheiden per omgeving, domeinnaam en SSL-certificaten vlekkeloos overgezet, alle externe callbacks gecontroleerd, monitoring ingeregeld - en de codebase zo schoon gehouden dat je daarna moeiteloos kunt blijven prompten in Lovable.
 
-Hierachter staat Manifera: elf jaar productie-engineering voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) voor een eerlijk advies over de vraag of verhuizen zinvol is — soms adviseren we om gewoon te blijven — meestal binnen één werkdag, of bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) dekt.
+Hierachter staat Manifera: elf jaar productie-engineering voor opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Beschrijf je project](https://launchstudio.eu/nl/#contact) voor een eerlijk advies over de vraag of verhuizen zinvol is - soms adviseren we om gewoon te blijven - meestal binnen één werkdag, of bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) dekt.
 
 ## De Derde Optie: Volledig Beheerde Hosting
 
@@ -127,7 +127,7 @@ De bovenstaande vergelijking gaat ervan uit dat je de hosting zelf beheert, op w
 
 **Wanneer dit niet loont:** wanneer je infrastructuur zelf leuk vindt om te beheren, wanneer het om een vrijblijvende pilot gaat, of wanneer je gebruik zó eenvoudig is dat een gratis uptime-alert voldoende rust geeft.
 
-**Waar je op moet letten bij beheerde hosting:** zorg dat de accounts altijd op jouw bedrijfsnaam blijven staan, weet wat er binnen het vaste bedrag valt versus nacalculatie, welke responstijd er gegarandeerd wordt bij calamiteiten, en of je direct kunt vertrekken zonder ingewikkelde migratie — wat altijd kan als alles draait vanuit je eigen Git-repository.
+**Waar je op moet letten bij beheerde hosting:** zorg dat de accounts altijd op jouw bedrijfsnaam blijven staan, weet wat er binnen het vaste bedrag valt versus nacalculatie, welke responstijd er gegarandeerd wordt bij calamiteiten, en of je direct kunt vertrekken zonder ingewikkelde migratie - wat altijd kan als alles draait vanuit je eigen Git-repository.
 
 De uiteindelijke beslissing gaat minder over technologie dan over wiens vrije avond het is wanneer er iets omvalt. Voor een oprichter die levert aan bedrijven beantwoordt die vraag zichzelf meestal snel.
 
@@ -147,16 +147,16 @@ Tessa van Dijk runde Zorgmaatje, een applicatie voor zorgcoördinatie gebouwd in
 
 Dat was de aanleiding. Wat ze tot dan toe had, was een knop in de editor en een vaste gewoonte.
 
-De overstap kostte drie werkdagen. De build-configuratie van het project werd vastgelegd in de Git-repository, de deployment verhuisde naar een host met preview-builds per pull request, er werd een staging-omgeving ingericht met een gescheiden testdatabase zodat schema-aanpassingen veilig konden worden gevalideerd met realistische data, het domein en de certificaten werden omgezet, en de betaal- en authenticatie-callbacks werden gecorrigeerd — waarvan er één nog altijd verwees naar de allereerste preview-URL en daardoor bij een deel van de gebruikers stilletjes mislukte.
+De overstap kostte drie werkdagen. De build-configuratie van het project werd vastgelegd in de Git-repository, de deployment verhuisde naar een host met preview-builds per pull request, er werd een staging-omgeving ingericht met een gescheiden testdatabase zodat schema-aanpassingen veilig konden worden gevalideerd met realistische data, het domein en de certificaten werden omgezet, en de betaal- en authenticatie-callbacks werden gecorrigeerd - waarvan er één nog altijd verwees naar de allereerste preview-URL en daardoor bij een deel van de gebruikers stilletjes mislukte.
 
 Twee onverwachte voordelen dienden zich direct aan. Dankzij de preview-deployments kon ze elke layoutwijziging eerst op haar eigen smartphone testen voordat zorgmedewerkers deze zagen, wat in de eerste maand direct twee pijnlijke weergavefouten voorkwam. En dankzij de rollback-functie kon een haperende update op vrijdagmiddag binnen één minuut worden teruggedraaid, in plaats van live gerepareerd te moeten worden onder hoogspanning.
 
 **Resultaat:** de inkoopvragenlijst werd beantwoord met een helder gedocumenteerd proces, het zorgcontract werd getekend, en Tessa gaf aan dat de preview-omgevingen haar dagelijkse manier van werken meer hebben verbeterd dan welke andere aanpassing dan ook.
 
 > *"Ik verhuisde puur omdat een inkoopformulier erom vroeg. Ik bleef verhuisd omdat ik sindsdien nooit meer bang ben om op vrijdagmiddag een update live te zetten."*
-> — **Tessa van Dijk, Oprichter, Zorgmaatje (Apeldoorn)**
+> - **Tessa van Dijk, Oprichter, Zorgmaatje (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** € 1.750 (repository- en build-configuratie, hosting met staging en rollback, domeinmigratie, callback-controle) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** € 1.750 (repository- en build-configuratie, hosting met staging en rollback, domeinmigratie, callback-controle) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -174,7 +174,7 @@ Nee. Hosting van de frontend en data-opslag zijn afzonderlijke systemen. Je data
 
 ### Vercel of Netlify voor een Lovable-project?
 
-Beide platforms functioneren uitstekend voor een standaard project; beiden bieden Git-gestuurde builds, previews, veilige variabelen, serverless functies en Europese datacenters. Laat een eventuele specifieke technische eis de doorslag geven, en kies anders de documentatie die je het prettigst vindt — de keuze is binnen een middag omkeerbaar.
+Beide platforms functioneren uitstekend voor een standaard project; beiden bieden Git-gestuurde builds, previews, veilige variabelen, serverless functies en Europese datacenters. Laat een eventuele specifieke technische eis de doorslag geven, en kies anders de documentatie die je het prettigst vindt - de keuze is binnen een middag omkeerbaar.
 
 ### Wat gaat er het vaakst mis tijdens een hostingverhuizing?
 

@@ -1,4 +1,4 @@
-🔥 Xavier bouwde een prototype met **Lovable** — Xavier, een bureau-eigenaar, bouwde een app voor het beantwoorden van klantbeoordelingen, maar liep vast op klachten over eigendom van teksten en ontbrekende akkoord-registraties. 🧠
+🔥 Xavier bouwde een prototype met **Lovable** - Xavier, een bureau-eigenaar, bouwde een app voor het beantwoorden van klantbeoordelingen, maar liep vast op klachten over eigendom van teksten en ontbrekende akkoord-registraties. 🧠
 
 Het juridisch dichttimmeren van generatieve AI-applicaties vereist specifieke voorwaarden voor hallucinaties, pass-through aansprakelijkheid en acceptabel gebruik.
 
@@ -12,7 +12,7 @@ Het juridisch dichttimmeren van generatieve AI-applicaties vereist specifieke vo
 
 Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en consent-modal vraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Xaviers registratieproces werd waterdicht: Aanmeldingen verliepen met duidelijke, gelogde akkoorden op de voorwaarden, waardoor juridische risico's direct werden geminimaliseerd. (€800 (Legal Compliance Modals) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Xaviers registratieproces werd waterdicht: Aanmeldingen verliepen met duidelijke, gelogde akkoorden op de voorwaarden, waardoor juridische risico's direct werden geminimaliseerd. (€800 (Legal Compliance Modals) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/writing-terms-of-service-generative-ai-apps
 

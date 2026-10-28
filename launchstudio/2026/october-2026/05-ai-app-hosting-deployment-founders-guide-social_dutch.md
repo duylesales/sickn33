@@ -1,4 +1,4 @@
-🔥 Thijs bouwde een prototype met **Bolt** — als freelance marketingconsultant in Eindhoven bouwde hij een contentkalender-tool voor zijn bureauklanten, maar liep vast bij het koppelen van zijn eigen domein en SSL. 🧠
+🔥 Thijs bouwde een prototype met **Bolt** - als freelance marketingconsultant in Eindhoven bouwde hij een contentkalender-tool voor zijn bureauklanten, maar liep vast bij het koppelen van zijn eigen domein en SSL. 🧠
 
 Als uw AI-prototype uitsluitend draait op een preview-link zonder eigen domeinnaam, SSL-certificaat of productie-omgevingsvariabelen, vertrouwen klanten uw applicatie niet.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype uitsluitend draait op een preview-link zonder eigen domeinna
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort hosting- en deploymentvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Thijs bedient nu 7 bureauklanten op zijn eigen domein en genereert €395/maand aan terugkerende omzet. (€1.100 (Launch Ready Pakket) — binnen 3 werkdagen live). 🚀
+Thijs bedient nu 7 bureauklanten op zijn eigen domein en genereert €395/maand aan terugkerende omzet. (€1.100 (Launch Ready Pakket) - binnen 3 werkdagen live). 🚀
 
 👉 Lees de complete deployment-gids: https://launchstudio.eu/nl/blog/ai-app-hosting-deployment-founders-guide
 

@@ -11,7 +11,7 @@ Het 4-vragen filter om uw eigen scope creep te stoppen:
 ❌ Wat verdringt dit in déze specifieke week van de planning? (Verdringt het vitale tests?)
 ✅ Kan dit in week 1 NÁ de lancering gebouwd worden i.p.v. week -1 ervóór?
 
-Zet uw ideeën op een "Post-Launch Backlog". U wijst ze niet af, u stelt ze uit. Eén week na livegang leert echte gebruikersdata u welke 2 features écht nodig zijn — en welke 10 faalangst waren.
+Zet uw ideeën op een "Post-Launch Backlog". U wijst ze niet af, u stelt ze uit. Eén week na livegang leert echte gebruikersdata u welke 2 features écht nodig zijn - en welke 10 faalangst waren.
 
 Bij **LaunchStudio**, ondersteund door Manifera, beschermen we uw streefdatum met een vaste, onwrikbare scope.
 

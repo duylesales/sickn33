@@ -11,9 +11,9 @@ Tegen de tijd dat u groot genoeg bent om een privacyspecialist in te huren, zijn
 ✅ Hosting bevestigd en aangepast om EU-datalocatie te garanderen
 ✅ Gegevensexport en -verwijdering op accountniveau gebouwd, plus doorlopende monitoring om melding van datalekken te ondersteunen
 
-Bij **LaunchStudio** behandelen we dit als engineeringwerk in de kleding van een juridisch document — opgelost met Manifera's meer dan tien jaar ervaring in enterprise-compliancelevering, op basis van een vaste scope die het product dat klanten al gebruiken onaangetast laat. 🛡️
+Bij **LaunchStudio** behandelen we dit als engineeringwerk in de kleding van een juridisch document - opgelost met Manifera's meer dan tien jaar ervaring in enterprise-compliancelevering, op basis van een vaste scope die het product dat klanten al gebruiken onaangetast laat. 🛡️
 
-Matteo's resultaat: volledige subverwerkersdocumentatie, bevestigde EU-residency en werkende gegevensrechten op tijd geregeld om de deal te sluiten — in plaats van deze te verliezen door een vastgelopen inkoopbeoordeling. 🚀
+Matteo's resultaat: volledige subverwerkersdocumentatie, bevestigde EU-residency en werkende gegevensrechten op tijd geregeld om de deal te sluiten - in plaats van deze te verliezen door een vastgelopen inkoopbeoordeling. 🚀
 
 👉 Stelt een zakelijke inkoopafdeling vragen over dataverwerking die uw door AI gebouwde SaaS nog niet kan beantwoorden? Bekijk het snelste pad naar gereedheid: https://launchstudio.eu/nl/blog/privacy-and-ai-what-eu-founders-need-before
 

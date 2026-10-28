@@ -62,7 +62,7 @@ A rapidly growing B2B logistics platform was paralyzing their sales team. Every 
 
 They engaged Manifera's Amsterdam architects to halt the chaos. We immediately ripped out their rigid RBAC system and implemented an ABAC architecture utilizing Open Policy Agent. Our Vietnamese Pod abstracted all authorization logic out of the microservices and into centralized Rego policies. When the next major client requested a highly bespoke permission structure, the engineering team didn't touch the application code at all; they simply wrote a new 10-line OPA policy. The sales team could now confidently guarantee any level of granular security required by the enterprise market.
 
-The stakes behind that kind of scenario are well documented at the industry level. Verizon's *2025 Data Breach Investigations Report* found that human involvement — including credential abuse and privilege misuse — factored into roughly 60% of breaches, and that credential abuse alone accounted for 22% of initial attack vectors, among the leading single causes in the entire dataset. Hardcoded, scattered authorization logic is exactly the kind of system where privilege misuse hides: nobody can audit "who can see what, under which conditions" when the answer is buried across hundreds of `if/else` statements instead of centralized, machine-readable policy.
+The stakes behind that kind of scenario are well documented at the industry level. Verizon's *2025 Data Breach Investigations Report* found that human involvement - including credential abuse and privilege misuse - factored into roughly 60% of breaches, and that credential abuse alone accounted for 22% of initial attack vectors, among the leading single causes in the entire dataset. Hardcoded, scattered authorization logic is exactly the kind of system where privilege misuse hides: nobody can audit "who can see what, under which conditions" when the answer is buried across hundreds of `if/else` statements instead of centralized, machine-readable policy.
 
 ## Security Comparison: 'Hardcoded' Agency vs. ABAC Pod
 
@@ -76,7 +76,7 @@ The stakes behind that kind of scenario are well documented at the industry leve
 
 ## The Economics of Unblocking Enterprise Sales
 
-The financial penalty of bad permission architecture is measured in lost enterprise deals. When a B2B SaaS platform attempts to move upmarket, the single biggest roadblock is always compliance and granular security. If your platform cannot mathematically guarantee that European managers are physically blocked from seeing North American employee salaries, the Fortune 500 client will terminate the contract. Compliance automation vendor Vanta, which surveys thousands of security, IT, and GRC professionals for its annual *State of Trust Report*, reports that giving enterprise buyers a clear, auditable trust and access story can cut deal cycles by roughly 30% — the difference between a security review that closes in weeks versus one that stalls in legal and procurement review for a quarter or more.
+The financial penalty of bad permission architecture is measured in lost enterprise deals. When a B2B SaaS platform attempts to move upmarket, the single biggest roadblock is always compliance and granular security. If your platform cannot mathematically guarantee that European managers are physically blocked from seeing North American employee salaries, the Fortune 500 client will terminate the contract. Compliance automation vendor Vanta, which surveys thousands of security, IT, and GRC professionals for its annual *State of Trust Report*, reports that giving enterprise buyers a clear, auditable trust and access story can cut deal cycles by roughly 30% - the difference between a security review that closes in weeks versus one that stalls in legal and procurement review for a quarter or more.
 
 By investing in an elite ABAC architecture (OPA), you eliminate this sales friction. You transform your security posture from a massive technical liability into a powerful sales weapon, allowing your team to close highly lucrative enterprise contracts with absolute confidence.
 
@@ -90,7 +90,7 @@ To make the sales-velocity argument concrete, consider a hypothetical B2B SaaS c
 | Typical security review delay | Quarter or more, or deal lost entirely | Weeks |
 | Deals lost per year to failed/stalled security review (illustrative, mid-market SaaS) | ~15% of enterprise pipeline | ~3-5% of enterprise pipeline |
 | Lost annual revenue on a $2M enterprise pipeline (illustrative) | ~$300,000 | ~$60,000-$100,000 |
-| One-time ABAC/OPA migration investment | — | ~$60,000-$120,000 (architecture + Rego policy library) |
+| One-time ABAC/OPA migration investment | - | ~$60,000-$120,000 (architecture + Rego policy library) |
 
 The illustrative math shows the migration paying for itself inside a single enterprise sales cycle once you count both the recovered pipeline and the eliminated per-deal engineering cost. Hardcoded RBAC does not just create a security liability; it creates a recurring tax on every enterprise deal your sales team tries to close.
 

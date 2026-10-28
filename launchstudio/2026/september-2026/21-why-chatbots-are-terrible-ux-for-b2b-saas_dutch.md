@@ -12,13 +12,13 @@ In 2023 bouwde vrijwel elke B2B AI-startup in de tech-sector exact hetzelfde gen
 
 Wanneer een zakelijke inkoper of operationeel directeur software aanschaft voor zijn organisatie, koopt hij in essentie een kortere weg. Hij zoekt een betrouwbare knop die een tijdrovende, complexe werktaak binnen één enkele seconde foutloos en deterministisch uitvoert. Hij koopt géén nieuwe technische vaardigheid die hij eerst wekenlang moeizaam onder de knie moet zien te krijgen.
 
-Een chatinterface is het exacte tegendeel van een kortere weg. Het dwingt de betalende gebruiker om zelf een amateur "prompt engineer" te worden. Om een kwalitatief, accuraat maandelijks verkooprapport uit een AI-chatbot te krijgen, moet een commercieel manager een gedetailleerde alinea van 300 woorden typen waarin de exacte opmaak, formattering, toon, uitzonderingsregels en datumreeksen nauwgezet zijn vastgelegd. Vergeet hij daarbij één cruciaal detail — bijvoorbeeld dat de valuta in EUR moet worden weergegeven in plaats van USD, of dat geannuleerde deals uit Q4 moeten worden uitgesloten — dan is de complete gegenereerde uitvoer direct onbruikbaar. De gebruiker moet de complete prompt handmatig aanpassen, of erger nog, een geheel nieuwe chatsessie starten omdat het contextvenster van het taalmodel is vervuild en eerdere instructies zijn vergeten.
+Een chatinterface is het exacte tegendeel van een kortere weg. Het dwingt de betalende gebruiker om zelf een amateur "prompt engineer" te worden. Om een kwalitatief, accuraat maandelijks verkooprapport uit een AI-chatbot te krijgen, moet een commercieel manager een gedetailleerde alinea van 300 woorden typen waarin de exacte opmaak, formattering, toon, uitzonderingsregels en datumreeksen nauwgezet zijn vastgelegd. Vergeet hij daarbij één cruciaal detail - bijvoorbeeld dat de valuta in EUR moet worden weergegeven in plaats van USD, of dat geannuleerde deals uit Q4 moeten worden uitgesloten - dan is de complete gegenereerde uitvoer direct onbruikbaar. De gebruiker moet de complete prompt handmatig aanpassen, of erger nog, een geheel nieuwe chatsessie starten omdat het contextvenster van het taalmodel is vervuild en eerdere instructies zijn vergeten.
 
 Dit is mentaal uiterst vermoeiend. Analytics uit productietools zoals PostHog en Amplitude tonen consistent een dramatische uitval van 40% tot 60% tussen de eerste interactie en de tweede sessie bij chat-gedreven B2B-applicaties in de eerste week. Als een zakelijke gebruiker hard moet zwoegen om waarde uit uw software te persen, zegt hij zijn abonnement genadeloos op. Vergelijk dit met een doordacht SaaS-dashboard: de gebruiker klikt op "Exporteer Kwartaalrapport", kiest de gewenste periode in een visuele kalenderwidget en downloadt binnen vier seconden het voltooide PDF-rapport. Geen syntaxisfouten, geen prompt-angst, geen ambiguïteit.
 
 ## De Verlamming van het Blanco Scherm (Blank Canvas Paralysis)
 
-Een leeg invoerveld met een knipperende cursor en een generieke placeholder-tekst zoals *"Stel mij een willekeurige vraag over uw data"* is ronduit intimiderend voor een nieuwe gebruiker. Dit psychologische interactiefenomeen staat in de gedragswetenschap bekend als **Blank Canvas Paralysis (Blanco Scherm Verlamming)** — dezelfde verlammende angst die schrijvers ervaren bij een lege pagina papier.
+Een leeg invoerveld met een knipperende cursor en een generieke placeholder-tekst zoals *"Stel mij een willekeurige vraag over uw data"* is ronduit intimiderend voor een nieuwe gebruiker. Dit psychologische interactiefenomeen staat in de gedragswetenschap bekend als **Blank Canvas Paralysis (Blanco Scherm Verlamming)** - dezelfde verlammende angst die schrijvers ervaren bij een lege pagina papier.
 
 Omdat de interface geen kaders, visuele knoppen of structurele restricties aanreikt, weet de gebruiker simpelweg niet wat het onderliggende AI-systeem daadwerkelijk kan. Heeft de tool realtime toegang tot het CRM? Kan het overweg met lokale btw-tarieven? Begrijpt het specifieke juridische wetgeving? Geconfronteerd met oneindige mogelijkheden en nul operationele begeleiding, typt de gebruiker een vage, generieke vraag ("Vat mijn verkoopcijfers samen"), ontvangt een nietszeggend algemeen antwoord en trekt direct de conclusie dat het product waardeloos is. UX-onderzoek wijst uit dat na twee opeenvolgende teleurstellende chatbot-interacties meer dan 70% van de zakelijke proefgebruikers de software nooit meer opent en definitief afhaakt.
 
@@ -75,7 +75,7 @@ Hij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in. Het engine
 
 **Resultaat:** Gebruikersretentie en dagelijkse activiteit stegen direct met 35% dankzij de intuïtieve, frictieloze dashboard-interface.
 
-**Kosten & Tijdlijn:** €2.200 (Dashboard Refactoring Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.200 (Dashboard Refactoring Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

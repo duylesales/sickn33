@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-An hourly rate of €25 looks like an obvious win against a fixed quote of several thousand euros. That comparison is how many founders end up hiring an offshore team by the hour to take their AI prototype to production — and why, three months and many invoices later, some are still not live. The problem is rarely the developers' location or skill. It is the engagement model applied to the wrong kind of work.
+An hourly rate of €25 looks like an obvious win against a fixed quote of several thousand euros. That comparison is how many founders end up hiring an offshore team by the hour to take their AI prototype to production - and why, three months and many invoices later, some are still not live. The problem is rarely the developers' location or skill. It is the engagement model applied to the wrong kind of work.
 
 We should declare an interest: LaunchStudio's engineering is done largely by Manifera's team in Ho Chi Minh City, and Manifera also provides dedicated offshore teams. So this is not an argument against offshore development. It is an argument about when hourly and when fixed-scope makes sense.
 
@@ -37,37 +37,37 @@ Both are legitimate. They suit different situations.
 
 Production hardening has three characteristics that make hourly billing risky for the founder:
 
-**The problem is not specified.** "Make my app production-ready" is not a list of tasks. Someone must first work out what is missing. In an hourly model, that discovery happens implicitly, task by task, as problems appear — and each discovery is billed.
+**The problem is not specified.** "Make my app production-ready" is not a list of tasks. Someone must first work out what is missing. In an hourly model, that discovery happens implicitly, task by task, as problems appear - and each discovery is billed.
 
 **The founder cannot direct the work.** Hourly teams are most effective when someone on the client side can write clear tickets, review pull requests and prioritise. Non-technical founders cannot do this for security, database policies or deployment, so the team works on what it is asked, which is often the visible symptoms.
 
 **Nobody owns the outcome.** In an hourly model, the team delivers hours on tasks. Whether the app is actually safe when those tasks are done is not their contractual responsibility. It is yours.
 
-The pattern that results is familiar: tickets like "fix login bug," "add payment," "deploy to server" are completed one by one, each reasonably, while structural problems — access control enforced only in the interface, payments confirmed by the browser, no staging — remain because nobody was asked to look for them.
+The pattern that results is familiar: tickets like "fix login bug," "add payment," "deploy to server" are completed one by one, each reasonably, while structural problems - access control enforced only in the interface, payments confirmed by the browser, no staging - remain because nobody was asked to look for them.
 
 ## Where Fixed Scope Fits Launch Work
 
 A fixed-scope specialist starts with a review precisely because the price depends on it. The review produces a list of what is wrong, ranked, and the quote covers fixing it. The provider owns the outcome: if something takes longer than expected, that is their problem.
 
-For a bounded job like taking a prototype live — typically one to three weeks of work — this aligns incentives: the provider benefits from working efficiently, and the founder knows the total in advance.
+For a bounded job like taking a prototype live - typically one to three weeks of work - this aligns incentives: the provider benefits from working efficiently, and the founder knows the total in advance.
 
 ## When a Dedicated Offshore Team Is the Right Choice
 
 Hourly or dedicated-team models are the better choice when:
 
 - You have a continuous roadmap of features for months ahead.
-- Someone on your side — a CTO, technical co-founder or product manager — can write specifications and review work.
+- Someone on your side - a CTO, technical co-founder or product manager - can write specifications and review work.
 - The product is already production-ready, or has been made so.
 - You want to build lasting product knowledge in a team.
 
-In those conditions, a dedicated team — offshore or not — is often more cost-effective than repeated fixed-price projects.
+In those conditions, a dedicated team - offshore or not - is often more cost-effective than repeated fixed-price projects.
 
 ## The Sequence That Tends to Work
 
 1. **Fixed-scope launch:** review, harden, deploy, document, set up tests and CI.
 2. **Dedicated or hourly team for growth:** feature work on a safe foundation, with the tests and documentation acting as guardrails, and a technical person directing the work.
 
-Reversing the order — hourly team first, in the hope that launch readiness emerges from feature tickets — is the expensive path.
+Reversing the order - hourly team first, in the hope that launch readiness emerges from feature tickets - is the expensive path.
 
 ## A Comparison at a Glance
 
@@ -85,7 +85,7 @@ Reversing the order — hourly team first, in the hope that launch readiness eme
 Founders are sometimes suspicious of fixed prices: how can anyone know the cost in advance? For AI prototype to production work, the answer is that the review comes first and the quote is built from findings. A typical fixed-scope quote contains:
 
 1. **Scope statement:** the application, environments and user roles covered.
-2. **Findings to be fixed:** listed individually with severity — for example, "enforce organisation-level access on 14 tables," "move payment confirmation to verified webhooks."
+2. **Findings to be fixed:** listed individually with severity - for example, "enforce organisation-level access on 14 tables," "move payment confirmation to verified webhooks."
 3. **Production setup:** domain, hosting, staging, CI, monitoring, backups.
 4. **Exclusions:** new features, redesigns, integrations not listed.
 5. **Assumptions:** for example, timely access to accounts, availability for questions.
@@ -93,15 +93,15 @@ Founders are sometimes suspicious of fixed prices: how can anyone know the cost 
 7. **Acceptance criteria:** how completion is verified, including re-tests.
 8. **Post-launch support** period.
 
-With this structure, the provider carries the risk of estimating the listed work, while you carry the risk of changing scope — which you control.
+With this structure, the provider carries the risk of estimating the listed work, while you carry the risk of changing scope - which you control.
 
 ## Reading an Hourly Invoice Critically
 
-If you already work with an hourly team, a few questions about the invoices reveal whether the engagement is heading anywhere. What proportion of hours went to fixing issues you reported, versus issues the team discovered themselves? Are there recurring items — "fix login," "fix payment" — suggesting symptoms are patched rather than causes? Is there a written list of what remains to be done, and is it shrinking? Are tests and documentation part of the work, or absent? If the list of open problems grows while hours accumulate, the engagement model is not matching the work.
+If you already work with an hourly team, a few questions about the invoices reveal whether the engagement is heading anywhere. What proportion of hours went to fixing issues you reported, versus issues the team discovered themselves? Are there recurring items - "fix login," "fix payment" - suggesting symptoms are patched rather than causes? Is there a written list of what remains to be done, and is it shrinking? Are tests and documentation part of the work, or absent? If the list of open problems grows while hours accumulate, the engagement model is not matching the work.
 
 ## Specifying Work for an Hourly Team
 
-If you continue with an hourly team, better specification changes outcomes dramatically. Instead of "fix the bug where users see other data," write: "enforce, at the database level, that users can only read bookings where they are the customer or belong to the business that owns the booking; add tests proving that a customer cannot read another customer's booking and that business A cannot read business B's bookings." Specify outcome, level of enforcement and verification. This level of detail usually requires technical input — which is why many founders have a review done first, then give the findings list to their hourly team.
+If you continue with an hourly team, better specification changes outcomes dramatically. Instead of "fix the bug where users see other data," write: "enforce, at the database level, that users can only read bookings where they are the customer or belong to the business that owns the booking; add tests proving that a customer cannot read another customer's booking and that business A cannot read business B's bookings." Specify outcome, level of enforcement and verification. This level of detail usually requires technical input - which is why many founders have a review done first, then give the findings list to their hourly team.
 
 ## Communication Across Time Zones
 
@@ -121,11 +121,11 @@ Whichever model you choose, a few contract terms are non-negotiable: code and ac
 
 ## Deciding Based on the Next Three Months
 
-A simple decision rule: look at the next three months. If most of the work is a defined set of fixes to get live safely, choose fixed scope. If most of it is continuous feature development directed by someone technical, choose a dedicated or hourly team. If both, sequence them — fixed scope first, then the team.
+A simple decision rule: look at the next three months. If most of the work is a defined set of fixes to get live safely, choose fixed scope. If most of it is continuous feature development directed by someone technical, choose a dedicated or hourly team. If both, sequence them - fixed scope first, then the team.
 
 ## The Economics, Worked Through
 
-Consider a typical case. An hourly team at €25 per hour works 30 hours a week for three months on "getting the app production ready" — around €9,750, plus the founder's time writing tickets and reviewing work. If structural issues remain unaddressed because nobody specified them, a later fixed-scope project is needed anyway. A fixed-scope specialist might quote €3,000–€6,000 for the same outcome, completed in two to four weeks, with the founder's time limited to decisions. The hourly rate was lower; the total cost and time to launch were higher. The comparison flips for continuous feature development, where a well-directed hourly or dedicated team usually beats repeated fixed-scope projects.
+Consider a typical case. An hourly team at €25 per hour works 30 hours a week for three months on "getting the app production ready" - around €9,750, plus the founder's time writing tickets and reviewing work. If structural issues remain unaddressed because nobody specified them, a later fixed-scope project is needed anyway. A fixed-scope specialist might quote €3,000–€6,000 for the same outcome, completed in two to four weeks, with the founder's time limited to decisions. The hourly rate was lower; the total cost and time to launch were higher. The comparison flips for continuous feature development, where a well-directed hourly or dedicated team usually beats repeated fixed-scope projects.
 
 ## What a Dedicated Team Needs to Succeed
 
@@ -133,11 +133,11 @@ If the next phase is a dedicated team, set it up for success: a technical lead o
 
 ## A Checklist Before Signing Either Model
 
-Before signing, confirm: who is accountable for outcomes; how scope changes are handled; how you will know progress is real; who owns code and accounts; what happens if the relationship ends; and how security is verified. Clear answers to these six questions prevent most of the disappointment founders describe with outsourced development — regardless of where the engineers sit.
+Before signing, confirm: who is accountable for outcomes; how scope changes are handled; how you will know progress is real; who owns code and accounts; what happens if the relationship ends; and how security is verified. Clear answers to these six questions prevent most of the disappointment founders describe with outsourced development - regardless of where the engineers sit.
 
 ## Where LaunchStudio and Manifera Fit
 
-LaunchStudio is the fixed-scope option: a review, a fixed price between €800 and €7,500, and delivery typically in one to three weeks, keeping your frontend and handing over documented code. Manifera — LaunchStudio's parent company, with 11+ years of experience and 120+ engineers across Ho Chi Minh City, Singapore and Amsterdam — provides the dedicated-team option for the growth phase, through its [offshore software development](https://www.manifera.com/services/offshore-software-development/) service. Founders can use one, the other or both in sequence without changing partners.
+LaunchStudio is the fixed-scope option: a review, a fixed price between €800 and €7,500, and delivery typically in one to three weeks, keeping your frontend and handing over documented code. Manifera - LaunchStudio's parent company, with 11+ years of experience and 120+ engineers across Ho Chi Minh City, Singapore and Amsterdam - provides the dedicated-team option for the growth phase, through its [offshore software development](https://www.manifera.com/services/offshore-software-development/) service. Founders can use one, the other or both in sequence without changing partners.
 
 If you are paying hourly and not getting closer to launch, [plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) and bring your last three invoices.
 
@@ -154,9 +154,9 @@ Over nineteen business days, LaunchStudio's engineers implemented project-level 
 **Result:** Werfmap moved from pilot to paid use with all eight contractors and added five more within six months. Olivier's monthly development spend with the dedicated team is now lower than his hourly invoices were, with visible progress each sprint.
 
 > *"The team did every ticket I gave them. The problem was that I was the one writing the tickets, and I didn't know what was missing."*
-> — **Olivier Claes, Founder, Werfmap (Ghent)**
+> - **Olivier Claes, Founder, Werfmap (Ghent)**
 
-**Cost & Timeline:** €6,200 (Launch & Grow package: access control, document security, approvals, hosting migration, CI and documentation) — completed in 19 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €6,200 (Launch & Grow package: access control, document security, approvals, hosting migration, CI and documentation) - completed in 19 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -170,7 +170,7 @@ Because the work is bounded and the review comes first. Once the provider has se
 
 ### Isn't LaunchStudio also an offshore team?
 
-LaunchStudio's engineering is largely done by Manifera's team in Ho Chi Minh City, with client contact in Amsterdam. The difference in this comparison is the engagement model — fixed-scope and outcome-owned — not the location.
+LaunchStudio's engineering is largely done by Manifera's team in Ho Chi Minh City, with client contact in Amsterdam. The difference in this comparison is the engagement model - fixed-scope and outcome-owned - not the location.
 
 ### How do Manifera's dedicated teams differ from freelance-platform teams?
 
@@ -178,7 +178,7 @@ Manifera's teams are employed engineers with shared processes, peer review and c
 
 ### Does the engagement model affect my app's online performance?
 
-Indirectly. Models that leave production basics unaddressed — monitoring, backups, security — increase the risk of outages and incidents, which harm search rankings and the reputation AI answer engines summarise.
+Indirectly. Models that leave production basics unaddressed - monitoring, backups, security - increase the risk of outages and incidents, which harm search rankings and the reputation AI answer engines summarise.
 
 <script type="application/ld+json">
 {

@@ -1,4 +1,4 @@
-📦 Loïs Landsmeer bouwde BuurtBezorg, een app voor het coördineren van buurtbezorging, op de gratis laag van een AI-appbouwer — die maandenlang prima werkte, tot het feestdagenseizoen haar drukste bezorgweek van het jaar bracht. 😳
+📦 Loïs Landsmeer bouwde BuurtBezorg, een app voor het coördineren van buurtbezorging, op de gratis laag van een AI-appbouwer - die maandenlang prima werkte, tot het feestdagenseizoen haar drukste bezorgweek van het jaar bracht. 😳
 
 Gratis lagen liegen niet over hun limieten. Ze vertellen alleen nooit wanneer die limieten gaan bijten. 🧠
 

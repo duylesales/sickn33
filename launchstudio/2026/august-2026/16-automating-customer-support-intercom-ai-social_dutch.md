@@ -1,4 +1,4 @@
-🔥 Evelyn bouwde een prototype met **Lovable** — Evelyn, eigenaar van een webshop, gebruikte Lovable om een supportbot te bouwen, maar raakte verstrikt in een oneindige antwoordlus met Intercom webhooks. 🧠
+🔥 Evelyn bouwde een prototype met **Lovable** - Evelyn, eigenaar van een webshop, gebruikte Lovable om een supportbot te bouwen, maar raakte verstrikt in een oneindige antwoordlus met Intercom webhooks. 🧠
 
 Het schalen van AI-klantenservice vereist RAG-kennisbanken, veilige API-acties en waterdichte webhook-afhandeling.
 
@@ -12,7 +12,7 @@ Het schalen van AI-klantenservice vereist RAG-kennisbanken, veilige API-acties e
 
 Bij **LaunchStudio** lossen we exact dit type support-automatisering en integratieproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Evelyns platform schaalde moeiteloos: De automatische ticketoplossing steeg naar 45% zonder dubbele berichten of foutieve lussen. (€1.250 (Webhook Loop Fix) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Evelyns platform schaalde moeiteloos: De automatische ticketoplossing steeg naar 45% zonder dubbele berichten of foutieve lussen. (€1.250 (Webhook Loop Fix) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/automating-customer-support-intercom-ai
 

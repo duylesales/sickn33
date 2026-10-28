@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Een AI-App voor Contractondertekening Bouwen? Beveiliging van AI-Code voor Digitale Handtekeningen",
-  "description": "Een digitale handtekening is juridisch alleen zoveel waard als het bewijs dat je eromheen kunt leveren. Dit artikel behandelt de beveiligingsrisico's in zelfgebouwde ondertekenstromen — documentintegriteit, identificatie van ondertekenaars, veilige links, audit trails en eIDAS-niveaus.",
+  "description": "Een digitale handtekening is juridisch alleen zoveel waard als het bewijs dat je eromheen kunt leveren. Dit artikel behandelt de beveiligingsrisico's in zelfgebouwde ondertekenstromen - documentintegriteit, identificatie van ondertekenaars, veilige links, audit trails en eIDAS-niveaus.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-08",
@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
 }
 </script>
 
-"Voeg een handtekeningveld toe aan de offertepagina." Het is een van de makkelijkste functies om een AI-codeertool om te vragen, en Cursor levert een canvas waarop klanten hun naam tekenen, een knop die de afbeelding opslaat, en een pdf waarop de handtekening is gestempeld. Het ziet er precies uit als ondertekenen. Of het standhoudt als een klant het contract later betwist, is een heel andere zaak — en daar raakt de beveiliging van AI-gegenereerde code aan juridisch bewijs.
+"Voeg een handtekeningveld toe aan de offertepagina." Het is een van de makkelijkste functies om een AI-codeertool om te vragen, en Cursor levert een canvas waarop klanten hun naam tekenen, een knop die de afbeelding opslaat, en een pdf waarop de handtekening is gestempeld. Het ziet er precies uit als ondertekenen. Of het standhoudt als een klant het contract later betwist, is een heel andere zaak - en daar raakt de beveiliging van AI-gegenereerde code aan juridisch bewijs.
 
 ## Wat een Handtekening Moet Bewijzen
 
@@ -36,7 +36,7 @@ Een getekende afbeelding op een pdf beantwoordt geen van deze vragen op zichzelf
 
 ## Het Juridische Kader in het Kort
 
-In de EU definieert de eIDAS-verordening drie niveaus van elektronische handtekening. Een **gewone elektronische handtekening** kan zo eenvoudig zijn als een getypte naam of een klik — juridisch geldig, maar de bewijskracht hangt af van het omringende bewijs. Een **geavanceerde elektronische handtekening** is op unieke wijze aan de ondertekenaar verbonden en kan die identificeren, staat onder diens uitsluitende controle, en is zo aan de gegevens gekoppeld dat latere wijzigingen detecteerbaar zijn. Een **gekwalificeerde elektronische handtekening** is een geavanceerde handtekening die is gemaakt met een gekwalificeerd middel en certificaat, met in de hele EU dezelfde rechtsgevolgen als een handgeschreven handtekening.
+In de EU definieert de eIDAS-verordening drie niveaus van elektronische handtekening. Een **gewone elektronische handtekening** kan zo eenvoudig zijn als een getypte naam of een klik - juridisch geldig, maar de bewijskracht hangt af van het omringende bewijs. Een **geavanceerde elektronische handtekening** is op unieke wijze aan de ondertekenaar verbonden en kan die identificeren, staat onder diens uitsluitende controle, en is zo aan de gegevens gekoppeld dat latere wijzigingen detecteerbaar zijn. Een **gekwalificeerde elektronische handtekening** is een geavanceerde handtekening die is gemaakt met een gekwalificeerd middel en certificaat, met in de hele EU dezelfde rechtsgevolgen als een handgeschreven handtekening.
 
 Voor de meeste offertes en dienstverleningsovereenkomsten tussen bedrijven en consumenten is een goed onderbouwde gewone of geavanceerde handtekening gebruikelijk. Sommige documenten vereisen meer, en sommige kunnen helemaal niet elektronisch worden ondertekend. Vraag juridisch advies voor jouw soorten documenten.
 
@@ -50,7 +50,7 @@ Voor de meeste offertes en dienstverleningsovereenkomsten tussen bedrijven en co
 
 **Geen bewijs van integriteit.** Zonder een cryptografische hash van het definitieve document, opgeslagen bij het ondertekenrecord, kun je niet aantonen dat het achteraf niet is gewijzigd.
 
-**Zwak bewijsspoor.** Het spoor hoort vast te leggen wanneer het document is verstuurd, geopend, bekeken en ondertekend, met IP-adres en user agent, de hash van het document en de methode van identiteitsverificatie — zo opgeslagen dat het niet kan worden bewerkt.
+**Zwak bewijsspoor.** Het spoor hoort vast te leggen wanneer het document is verstuurd, geopend, bekeken en ondertekend, met IP-adres en user agent, de hash van het document en de methode van identiteitsverificatie - zo opgeslagen dat het niet kan worden bewerkt.
 
 **Tijdstempels van de client.** Tijden uit de browser van de ondertekenaar zijn kinderlijk eenvoudig fout of gemanipuleerd. Gebruik de tijd van de server, en voor sterker bewijs een vertrouwde tijdstempeldienst.
 
@@ -58,7 +58,7 @@ Voor de meeste offertes en dienstverleningsovereenkomsten tussen bedrijven en co
 
 ## Bouwen of Integreren?
 
-Voor veel oprichters is het juiste antwoord voor productie een gespecialiseerde ondertekenaanbieder te integreren — er zijn verschillende in de EU gevestigde diensten die via API's geavanceerde en gekwalificeerde handtekeningen bieden — en je app de zakelijke flow eromheen te laten afhandelen. Zelf bouwen is redelijk voor eenvoudige overeenkomsten met een lage waarde, zolang het bewijsspoor, de integriteit en de linkbeveiliging hierboven op orde zijn. De doorslaggevende factoren zijn de waarde van de contracten, de juridische eisen voor je soorten documenten en de verwachtingen van je klanten.
+Voor veel oprichters is het juiste antwoord voor productie een gespecialiseerde ondertekenaanbieder te integreren - er zijn verschillende in de EU gevestigde diensten die via API's geavanceerde en gekwalificeerde handtekeningen bieden - en je app de zakelijke flow eromheen te laten afhandelen. Zelf bouwen is redelijk voor eenvoudige overeenkomsten met een lage waarde, zolang het bewijsspoor, de integriteit en de linkbeveiliging hierboven op orde zijn. De doorslaggevende factoren zijn de waarde van de contracten, de juridische eisen voor je soorten documenten en de verwachtingen van je klanten.
 
 ## De Opbouw van een Verdedigbaar Ondertekenrecord
 
@@ -70,7 +70,7 @@ Voor de beveiliging van AI-gegenereerde code in ondertekenflows is het doel een 
 | Documenthash | SHA-256 van de bevroren pdf | Bewijst dat het document niet is veranderd |
 | Identiteit van de ondertekenaar | Naam, e-mail, geverifieerd via de link; telefoon geverifieerd via sms-code | Koppelt de handtekening aan een persoon |
 | Instemmingsverklaring | "Ik ga akkoord met deze offerte en de voorwaarden" + vinkje | Toont de bedoeling |
-| Events | Verstuurd, geopend, elke pagina bekeken, ondertekend — met tijdstempels van de server | Reconstrueert het proces |
+| Events | Verstuurd, geopend, elke pagina bekeken, ondertekend - met tijdstempels van de server | Reconstrueert het proces |
 | Technische context | IP-adres, user agent | Ondersteunt de identificatie |
 | Tijdstempeltoken | Van een vertrouwde tijdstempeldienst | Onafhankelijk bewijs van tijd |
 | Certificaatpagina | Samenvatting toegevoegd aan de ondertekende pdf | Leesbaar bewijs voor mensen |
@@ -91,7 +91,7 @@ await db.insert("document_versions", { quoteId, version, hash, frozenAt: new Dat
 
 ## Beveiliging van Ondertekenlinks
 
-Ondertekenlinks verdienen dezelfde zorg als links voor wachtwoordherstel: lange willekeurige tokens, gehasht opgeslagen, gekoppeld aan één ondertekenaar en één documentversie, verlopend na een redelijke periode, ongeldig na het ondertekenen en bestand tegen e-mailscanners die links vooraf openen (een bevestigingsstap voordat de handtekening wordt geplaatst). Wordt een link doorgestuurd, dan beperkt de verificatiestap — bezit van het e-mailadres plus een sms-code bij documenten met een hogere waarde — de schade.
+Ondertekenlinks verdienen dezelfde zorg als links voor wachtwoordherstel: lange willekeurige tokens, gehasht opgeslagen, gekoppeld aan één ondertekenaar en één documentversie, verlopend na een redelijke periode, ongeldig na het ondertekenen en bestand tegen e-mailscanners die links vooraf openen (een bevestigingsstap voordat de handtekening wordt geplaatst). Wordt een link doorgestuurd, dan beperkt de verificatiestap - bezit van het e-mailadres plus een sms-code bij documenten met een hogere waarde - de schade.
 
 ## Het Juiste Niveau van Handtekening Kiezen
 
@@ -110,7 +110,7 @@ Veel ondertekenaanbieders in de EU bieden API's: maak een ondertekenverzoek aan 
 
 ## Opslag en Bewaartermijn van Ondertekende Documenten
 
-Ondertekende contracten bevatten persoonlijke en commerciële data en moeten worden bewaard zolang er geschillen of wettelijke verplichtingen kunnen ontstaan — vaak jaren. Bewaar ze privé, versleuteld in opslag, met toegang beperkt tot de partijen en gelogde downloads. Plan bewaartermijnen per soort document met je klanten, en zorg dat het verwijderen van een account geen documenten verwijdert die nog moeten worden bewaard, terwijl persoonsgegevens zonder doel wel worden verwijderd.
+Ondertekende contracten bevatten persoonlijke en commerciële data en moeten worden bewaard zolang er geschillen of wettelijke verplichtingen kunnen ontstaan - vaak jaren. Bewaar ze privé, versleuteld in opslag, met toegang beperkt tot de partijen en gelogde downloads. Plan bewaartermijnen per soort document met je klanten, en zorg dat het verwijderen van een account geen documenten verwijdert die nog moeten worden bewaard, terwijl persoonsgegevens zonder doel wel worden verwijderd.
 
 ## Bewijs Presenteren bij een Geschil
 
@@ -118,7 +118,7 @@ Wordt een handtekening aangevochten, dan moet je een duidelijk pakket kunnen lev
 
 ## Toegankelijkheid en Gebruiksgemak van het Ondertekenen
 
-Ondertekenaars gebruiken telefoons, vaak buiten kantooruren. Maak de onderteken­pagina leesbaar op mobiel, laat inzoomen op het document toe, bied alternatieven voor het tekenen van een handtekening zoals een getypte naam of tekenen met een klik, en houd de stappen kort. Duidelijke, toegankelijke ondertekenflows verminderen het aantal afhakers en leveren bewijs van een weloverwogen bedoeling — en beide doen ertoe als een handtekening later ter discussie staat.
+Ondertekenaars gebruiken telefoons, vaak buiten kantooruren. Maak de onderteken­pagina leesbaar op mobiel, laat inzoomen op het document toe, bied alternatieven voor het tekenen van een handtekening zoals een getypte naam of tekenen met een klik, en houd de stappen kort. Duidelijke, toegankelijke ondertekenflows verminderen het aantal afhakers en leveren bewijs van een weloverwogen bedoeling - en beide doen ertoe als een handtekening later ter discussie staat.
 
 ## Omgaan met Wijzigingen en Tegenvoorstellen
 
@@ -130,7 +130,7 @@ Veel documenten hebben meerdere handtekeningen nodig: beide partners in een huis
 
 ## Checklist voor de Beveiligingsreview van Ondertekenflows
 
-Controleer voordat je in productie op een ondertekenflow vertrouwt: tokens zijn willekeurig, gehasht, verlopend en voor eenmalig gebruik; documenten worden vóór verzending bevroren en gehasht; ondertekende documenten kunnen niet worden bewerkt; bewijsrecords zijn append-only; tijdstempels komen van de server of een vertrouwde dienst; opslag is privé met gelogde toegang; webhooks van ondertekenaanbieders worden geverifieerd; en een dossier voor een geschil kan in minuten worden samengesteld. Voeg tests toe voor de belangrijkste hiervan — vooral dat het bewerken van een ondertekend document onmogelijk is.
+Controleer voordat je in productie op een ondertekenflow vertrouwt: tokens zijn willekeurig, gehasht, verlopend en voor eenmalig gebruik; documenten worden vóór verzending bevroren en gehasht; ondertekende documenten kunnen niet worden bewerkt; bewijsrecords zijn append-only; tijdstempels komen van de server of een vertrouwde dienst; opslag is privé met gelogde toegang; webhooks van ondertekenaanbieders worden geverifieerd; en een dossier voor een geschil kan in minuten worden samengesteld. Voeg tests toe voor de belangrijkste hiervan - vooral dat het bewerken van een ondertekend document onmogelijk is.
 
 ## Wat Aannemers en Kleine Bedrijven het Meest Nodig Hebben
 
@@ -142,7 +142,7 @@ Een handtekening is een moment; bewijs is wat je in staat stelt dat moment maand
 
 ## Waar LaunchStudio Past
 
-LaunchStudio beoordeelt ondertekenflows in AI-gebouwde apps en versterkt ze — veilige links voor eenmalig gebruik, verificatie per e-mail en optioneel per sms, bevroren documenten, hashes, tijdstempels aan de serverkant, een onveranderlijk bewijsspoor en privéopslag — of integreert een ondertekenaanbieder als de documenten om geavanceerde of gekwalificeerde handtekeningen vragen. De rest van je app blijft zoals je hem bouwde.
+LaunchStudio beoordeelt ondertekenflows in AI-gebouwde apps en versterkt ze - veilige links voor eenmalig gebruik, verificatie per e-mail en optioneel per sms, bevroren documenten, hashes, tijdstempels aan de serverkant, een onveranderlijk bewijsspoor en privéopslag - of integreert een ondertekenaanbieder als de documenten om geavanceerde of gekwalificeerde handtekeningen vragen. De rest van je app blijft zoals je hem bouwde.
 
 LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft die de opvatting van het bedrijf vormt dat bewijs onderdeel is van beveiliging. De engineers van Manifera in Ho Chi Minh-stad bouwen al meer dan 11 jaar documentintensieve bedrijfssystemen, met klantcontact vanaf de Herengracht 420 in Amsterdam. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/); de [eIDAS-pagina's van de Europese Commissie](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation) leggen de niveaus van handtekeningen uit.
 
@@ -161,9 +161,9 @@ In acht werkdagen bevroren de engineers van LaunchStudio elk document als pdf op
 **Resultaat:** De betwiste zaak werd geschikt, en Loes herstelde het vertrouwen met een transparante uitleg aan alle aannemers. Sinds de wijzigingen zijn twee verdere geschillen snel opgelost met het bewijscertificaat, en Tekenklaar groeide naar 70 aannemers.
 
 > *"De handtekening zag er echt uit. Wat ontbrak, was alles wat bewijst dat een handtekening echt is."*
-> — **Loes Vermaat, Oprichter, Tekenklaar (Gorinchem)**
+> - **Loes Vermaat, Oprichter, Tekenklaar (Gorinchem)**
 
-**Kosten & Tijdlijn:** € 2.400 (Launch Ready-pakket: documentintegriteit, veilige ondertekenlinks, verificatie, bewijsspoor en integratie van een aanbieder) — afgerond in 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.400 (Launch Ready-pakket: documentintegriteit, veilige ondertekenlinks, verificatie, bewijsspoor en integratie van een aanbieder) - afgerond in 8 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -173,7 +173,7 @@ In de EU kan die gelden als een gewone elektronische handtekening, maar de bewij
 
 ### Wat moet een bewijsspoor voor een e-handtekening bevatten?
 
-Events van verzenden, openen en ondertekenen met tijdstempels van de server, IP-adres en user agent, de gebruikte verificatiemethode en een cryptografische hash van het exacte ondertekende document — zo opgeslagen dat het niet kan worden bewerkt.
+Events van verzenden, openen en ondertekenen met tijdstempels van de server, IP-adres en user agent, de gebruikte verificatiemethode en een cryptografische hash van het exacte ondertekende document - zo opgeslagen dat het niet kan worden bewerkt.
 
 ### Moet ik mijn eigen ondertekenflow bouwen of een aanbieder gebruiken?
 

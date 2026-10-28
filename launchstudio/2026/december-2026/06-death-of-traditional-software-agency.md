@@ -45,7 +45,7 @@ The agency's value proposition was clear: **access to a complete engineering tea
 
 ## What Killed It: The Prototype Is No Longer the Hard Part
 
-AI tools — Lovable, Bolt, Cursor — systematically eliminated the most expensive and time-consuming phases of the traditional agency engagement:
+AI tools - Lovable, Bolt, Cursor - systematically eliminated the most expensive and time-consuming phases of the traditional agency engagement:
 
 | Phase | Traditional Agency | AI Tools (2026) |
 |---|---|---|
@@ -56,17 +56,17 @@ AI tools — Lovable, Bolt, Cursor — systematically eliminated the most expens
 | Project Management | Ongoing, €2,000–€5,000/month | Self-managed by founder |
 | **Total for prototype** | **€20,000–€90,000** | **€0–€200** |
 
-When a founder can generate a complete frontend with routing, components, database connections, and authentication in a single afternoon, paying €50,000 for the same output spread over three months is absurd. The traditional agency's core value proposition — "we build the thing you cannot build" — evaporated.
+When a founder can generate a complete frontend with routing, components, database connections, and authentication in a single afternoon, paying €50,000 for the same output spread over three months is absurd. The traditional agency's core value proposition - "we build the thing you cannot build" - evaporated.
 
 ## The Last Mile: What AI Cannot Do (Yet)
 
-But here is where the story gets nuanced. AI tools eliminated the visible 50% of software development. The invisible 50% — the part that separates a demo from a product — remains stubbornly resistant to automation:
+But here is where the story gets nuanced. AI tools eliminated the visible 50% of software development. The invisible 50% - the part that separates a demo from a product - remains stubbornly resistant to automation:
 
-- **Production security** — Row Level Security, encryption, rate limiting, OWASP compliance, penetration testing
-- **Payment infrastructure** — Stripe/Mollie webhook handling, subscription lifecycle management, dunning flows, invoice generation, tax calculation
-- **Deployment architecture** — CI/CD pipelines, staging environments, zero-downtime deployment, CDN configuration, SSL management
-- **Monitoring and alerting** — Error tracking, performance monitoring, uptime alerts, log aggregation
-- **Compliance** — GDPR data handling, consent management, audit logging, data retention policies
+- **Production security** - Row Level Security, encryption, rate limiting, OWASP compliance, penetration testing
+- **Payment infrastructure** - Stripe/Mollie webhook handling, subscription lifecycle management, dunning flows, invoice generation, tax calculation
+- **Deployment architecture** - CI/CD pipelines, staging environments, zero-downtime deployment, CDN configuration, SSL management
+- **Monitoring and alerting** - Error tracking, performance monitoring, uptime alerts, log aggregation
+- **Compliance** - GDPR data handling, consent management, audit logging, data retention policies
 
 This invisible infrastructure is exactly what [LaunchStudio](https://launchstudio.eu/en/) provides. And it represents a fundamentally different business model from the traditional agency.
 
@@ -94,15 +94,15 @@ Some traditional agencies maintain proprietary hosting arrangements or use custo
 
 Traditional software agencies in 2026 found themselves in one of three positions:
 
-**The Adapters** — A small number of agencies recognized the shift and repositioned as "AI prototype accelerators" or "last-mile engineering services." These agencies survived by reducing scope, lowering prices, and embracing AI-generated code as a starting point rather than a competitor.
+**The Adapters** - A small number of agencies recognized the shift and repositioned as "AI prototype accelerators" or "last-mile engineering services." These agencies survived by reducing scope, lowering prices, and embracing AI-generated code as a starting point rather than a competitor.
 
-**The Deniers** — Many agencies continued operating as if nothing had changed, quoting €50,000 projects to founders who had already built functional prototypes for free. These agencies experienced rapidly declining sales as founders realized the emperor had no clothes.
+**The Deniers** - Many agencies continued operating as if nothing had changed, quoting €50,000 projects to founders who had already built functional prototypes for free. These agencies experienced rapidly declining sales as founders realized the emperor had no clothes.
 
-**The Enterprise Retreaters** — Some agencies abandoned the startup market entirely and retreated upmarket to enterprise clients with large budgets and complex legacy systems. This is viable but narrows the addressable market significantly.
+**The Enterprise Retreaters** - Some agencies abandoned the startup market entirely and retreated upmarket to enterprise clients with large budgets and complex legacy systems. This is viable but narrows the addressable market significantly.
 
 ## Why the Hybrid Model Wins
 
-The most effective model combines the speed and accessibility of AI prototyping with the depth and reliability of professional engineering — the exact model Manifera built with LaunchStudio.
+The most effective model combines the speed and accessibility of AI prototyping with the depth and reliability of professional engineering - the exact model Manifera built with LaunchStudio.
 
 Manifera's engineering team of 120+ developers, operating from their development center at Pho Quang Street in Ho Chi Minh City with European management at Herengracht 420 in Amsterdam, brings 11 years of enterprise delivery experience to every LaunchStudio project. But instead of charging enterprise prices, the last-mile scope means projects complete in days instead of months, at a fraction of traditional agency costs.
 
@@ -124,7 +124,7 @@ The total cost to go from idea to live, paying product: under €8,000 and under
 
 ### An AI-Native Founder in Action: Firing a €45,000 Agency and Launching in 8 Days
 
-Marco, a restaurant technology consultant in Leiden, had hired a local Dutch development agency to build an AI-powered menu optimization tool. After four months and €45,000 in invoices, the agency had delivered a partially functional prototype with basic restaurant analytics. The AI features — which were the entire value proposition — had not been started yet. The agency quoted another €30,000 and three months for "Phase 2."
+Marco, a restaurant technology consultant in Leiden, had hired a local Dutch development agency to build an AI-powered menu optimization tool. After four months and €45,000 in invoices, the agency had delivered a partially functional prototype with basic restaurant analytics. The AI features - which were the entire value proposition - had not been started yet. The agency quoted another €30,000 and three months for "Phase 2."
 
 Marco cancelled the contract. Over a single weekend, he rebuilt the entire frontend in Lovable, incorporating the AI menu analysis features using OpenAI prompts that the agency had claimed would take months to develop. The Lovable prototype did everything the agency's Phase 1 output did, plus the AI analysis that was supposed to be Phase 2.
 
@@ -135,9 +135,9 @@ The Manifera team kept his entire Lovable frontend, implemented proper Row Level
 **Result:** MenuGenius launched to 6 restaurants from Marco's existing consulting network within the first week. Within one month, 11 restaurants were paying between €79 and €199/month depending on their tier, generating €1,529/month in MRR. The total cost of his LaunchStudio engagement was less than 5% of what the agency had already charged for an inferior product.
 
 > *"I spent €45,000 and four months with an agency and got nothing usable. I spent one weekend with Lovable and 8 days with LaunchStudio and got a launched product with paying customers. The agency model is dead. I am living proof."*
-> — **Marco Rossi, Founder, MenuGenius (Leiden)**
+> - **Marco Rossi, Founder, MenuGenius (Leiden)**
 
-**Cost & Timeline:** €1,600 (Launch Ready Package) — production-ready and deployed in 8 business days.
+**Cost & Timeline:** €1,600 (Launch Ready Package) - production-ready and deployed in 8 business days.
 
 ---
 
@@ -145,7 +145,7 @@ The Manifera team kept his entire Lovable frontend, implemented proper Row Level
 
 ### Are traditional software development agencies completely obsolete?
 
-Not completely, but their addressable market has shrunk dramatically. Traditional agencies still serve enterprise clients with complex legacy system integrations and long-term maintenance contracts. However, for startups and SMBs building new products, the combination of AI prototyping tools and specialized last-mile services like LaunchStudio delivers better results at a fraction of the cost and time. Manifera itself demonstrates this evolution — it serves both enterprise clients through traditional engagements and AI-native founders through LaunchStudio.
+Not completely, but their addressable market has shrunk dramatically. Traditional agencies still serve enterprise clients with complex legacy system integrations and long-term maintenance contracts. However, for startups and SMBs building new products, the combination of AI prototyping tools and specialized last-mile services like LaunchStudio delivers better results at a fraction of the cost and time. Manifera itself demonstrates this evolution - it serves both enterprise clients through traditional engagements and AI-native founders through LaunchStudio.
 
 ### Why do agencies insist on rebuilding everything from scratch?
 
@@ -159,7 +159,7 @@ Yes, because the scope is fundamentally different from a full agency build. Laun
 
 LaunchStudio code is built by the same Manifera engineering team that has delivered 160+ enterprise projects for clients including Vodafone and TNO. The code follows production-grade standards: proper API routes, server-side validation, comprehensive error handling, and security best practices. Herre Roelevink's team brings 11 years of enterprise delivery rigor to every project, regardless of size. The only difference from a traditional engagement is scope (last-mile only) and pricing (fixed, transparent).
 
-### What if I already have an agency contract — should I cancel it?
+### What if I already have an agency contract - should I cancel it?
 
 Evaluate honestly: is the agency delivering value proportional to their cost and timeline? If you have spent months and tens of thousands of euros without a launchable product, consider whether a weekend with Lovable plus two weeks with LaunchStudio could achieve the same result. Many LaunchStudio clients are former agency clients who made exactly this calculation. However, if your agency is delivering well on a complex enterprise project, the traditional model may still be appropriate for your specific needs.
 
@@ -173,7 +173,7 @@ Evaluate honestly: is the agency delivering value proportional to their cost and
       "name": "Are traditional software development agencies completely obsolete?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not completely — they still serve enterprise clients with complex legacy systems. But for startups building new products, AI tools plus specialized last-mile services like LaunchStudio deliver better results at a fraction of the cost."
+        "text": "Not completely - they still serve enterprise clients with complex legacy systems. But for startups building new products, AI tools plus specialized last-mile services like LaunchStudio deliver better results at a fraction of the cost."
       }
     },
     {
@@ -202,7 +202,7 @@ Evaluate honestly: is the agency delivering value proportional to their cost and
     },
     {
       "@type": "Question",
-      "name": "What if I already have an agency contract — should I cancel it?",
+      "name": "What if I already have an agency contract - should I cancel it?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Evaluate if the agency delivers value proportional to cost. If months and tens of thousands of euros haven't produced a launchable product, a weekend with Lovable plus two weeks with LaunchStudio may achieve the same result."

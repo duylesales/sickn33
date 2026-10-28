@@ -95,7 +95,7 @@ Evelyn partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 **Result:** Evelyn restored complete repository security and passed HIPAA compliance scans.
 
-**Cost & Timeline:** €1,600 (Security Recovery Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,600 (Security Recovery Package) - production-ready and deployed in 4 business days.
 
 ---
 

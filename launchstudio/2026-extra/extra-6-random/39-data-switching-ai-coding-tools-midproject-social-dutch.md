@@ -1,8 +1,8 @@
-🗄️ Lieke Timmer bouwde DocuFlow, een documentworkflowtool in Muiden, en begon in Lovable. Halverwege migreerde ze naar Cursor voor meer controle over de backend. De migratie oogde soepel — totdat ze weken later merkte dat de versiegeschiedenis van documenten ouder dan een bepaald punt gewoon was verdwenen. Geen fout, geen waarschuwing. 😳
+🗄️ Lieke Timmer bouwde DocuFlow, een documentworkflowtool in Muiden, en begon in Lovable. Halverwege migreerde ze naar Cursor voor meer controle over de backend. De migratie oogde soepel - totdat ze weken later merkte dat de versiegeschiedenis van documenten ouder dan een bepaald punt gewoon was verdwenen. Geen fout, geen waarschuwing. 😳
 
 🧠 Halverwege een project van AI-codeertool wisselen is geen frontend-beslissing. Het is een databasebeslissing in vermomming.
 
-❌ Elke AI-codeertool heeft zijn eigen huisstijl voor het structureren van een database — niets daarvan reist standaard mee tussen tools
+❌ Elke AI-codeertool heeft zijn eigen huisstijl voor het structureren van een database - niets daarvan reist standaard mee tussen tools
 ❌ Een nieuwe tool die een project "voortzet," legt zijn eigen aannames over een schema dat met andere aannames is gebouwd
 ❌ Migraties die velden of relaties verkeerd koppelen, kunnen zonder foutmeldingen voltooien terwijl ze stilletjes gegevens laten vallen
 ❌ U merkt het verlies vaak pas weken later, wanneer u op zoek gaat naar iets dat er niet meer is

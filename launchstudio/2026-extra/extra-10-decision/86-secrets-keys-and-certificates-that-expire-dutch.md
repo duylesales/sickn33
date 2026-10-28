@@ -32,13 +32,13 @@ Elk modern softwareproduct verzamelt binnen de kortste keren een indrukwekkende 
 Niets hiervan is conceptueel ingewikkeld. Toch veroorzaken deze geheimen een **buitenproportioneel groot deel van alle ernstige serverstoringen én datalekken**.
 
 Dat gebeurt via twee faalmechanismen die elkaars tegenpolen zijn:
-1. **Lekken (*Credential Leakage*):** Een geheime sleutel belandt op straat — in een openbare GitHub-repository, een frontend JavaScript-bundel, een logbestand of een foutrapportage.
+1. **Lekken (*Credential Leakage*):** Een geheime sleutel belandt op straat - in een openbare GitHub-repository, een frontend JavaScript-bundel, een logbestand of een foutrapportage.
 2. **Geruisloos Verloop (*Silent Expiry*):** Iets stopt er plotseling op zaterdagochtend mee omdat een certificaat of token een harde verloopdatum had die niemand ooit in een agenda had genoteerd.
 
-## Waar Geheimen Thuishoren — En Waar Ze Steeds Weer Opduiken
+## Waar Geheimen Thuishoren - En Waar Ze Steeds Weer Opduiken
 
 De gouden regel van security engineering is eenvoudig:
-> **Geheimen leven uitsluitend in de beveiligde omgevingsvariabelen (*environment variables / secrets vault*) van het systeem dat ze direct nodig heeft — en nergens anders.**
+> **Geheimen leven uitsluitend in de beveiligde omgevingsvariabelen (*environment variables / secrets vault*) van het systeem dat ze direct nodig heeft - en nergens anders.**
 
 Niet in uw applicatiecode, niet in een gecommit bestand, en niet in een Slack-bericht naar een freelance collega.
 
@@ -85,7 +85,7 @@ Ga er vanuit dat het ooit gebeurt. Volg dan direct deze vaste volgorde:
 3. **Schoon de Repository:** Gebruik tools zoals *git-filter-repo* of *BFG Repo-Cleaner* om het geheim definitief uit de Git-geschiedenis te wissen.
 4. **Beoordeel Uw AVG-Meldplicht:** Gaf de gelekte sleutel toegang tot persoonsgegevens van klanten? Dan kwalificeert dit als een datalek en geldt er onder de AVG/GDPR mogelijk een **strikte meldtermijn van 72 uur** bij de Autoriteit Persoonsgegevens!
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise security audits) scannen we repositories op gelekte credentials, richten we zero-downtime sleutelrotatie in en implementeren we SSL-verloopmonitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw security-hygiëne met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw geheimen veilig blijven.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise security audits) scannen we repositories op gelekte credentials, richten we zero-downtime sleutelrotatie in en implementeren we SSL-verloopmonitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw security-hygiëne met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat uw geheimen veilig blijven.
 
 ## Echt voorbeeld
 
@@ -107,7 +107,7 @@ Bij de daaropvolgende security-audit door LaunchStudio kwamen nog drie tikkende 
 **Resultaat:** Binnen twee werkdagen saneerde LaunchStudio het complete credential-landschap: alle API-sleutels en database-wachtwoorden werden geroteerd, de Git-geschiedenis werd gezuiverd, uploads werden omgebouwd naar kortlevende *presigned URL's* vanaf de backend, en er werd een externe monitoringcheck ingericht die 14 dagen vóór het verlopen van certificaten direct een SMS-alarm verstuurt.
 
 > *"Het verlopen certificaat was het zichtbare probleem. Maar de audit die erop volgde vond een Stripe-sleutel die al meer dan een jaar in mijn Git-historie rondslingerde. Dát was het werkelijke gevaar."*
-> — **Youssef Hamdi, Oprichter, Wachtkamer**
+> - **Youssef Hamdi, Oprichter, Wachtkamer**
 
 **Kosten & Doorlooptijd:** Credential-audit, sleutelrotatie en monitoring op verloopdata opgeleverd in 2 werkdagen.
 

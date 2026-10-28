@@ -1,9 +1,9 @@
-😬 Twan Hermans' app OogstData broke live, mid-demo, in front of a prospective pilot customer — a data import feature failed silently, showing stale harvest numbers instead of fresh ones. Rattled, he spent the weekend teaching himself to code so he could fix it himself. 📉
+😬 Twan Hermans' app OogstData broke live, mid-demo, in front of a prospective pilot customer - a data import feature failed silently, showing stale harvest numbers instead of fresh ones. Rattled, he spent the weekend teaching himself to code so he could fix it himself. 📉
 
 Learning to code as a crisis response is almost always the wrong instinct. 🧠
 
 ❌ His weekend fix addressed a symptom without touching the actual underlying cause
-❌ In the process, he introduced a second bug — a data type mismatch that quietly corrupted historical records
+❌ In the process, he introduced a second bug - a data type mismatch that quietly corrupted historical records
 ❌ The corruption wasn't discovered until the pilot customer tried to pull a historical report and got nonsensical numbers
 ❌ A same-week fix turned into a two-week delay because of the extra damage
 

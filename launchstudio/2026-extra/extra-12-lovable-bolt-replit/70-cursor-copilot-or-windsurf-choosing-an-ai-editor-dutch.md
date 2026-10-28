@@ -48,7 +48,7 @@ De behoefte aan de praktijken eromheen. Versiebeheer, tests, een afsprakenbestan
 
 ## Beoordeel in een Middag
 
-Lees geen vergelijkingen. Neem een echte taak uit uw eigen project — geen speelgoedvoorbeeld — en doe die in elke kandidaat.
+Lees geen vergelijkingen. Neem een echte taak uit uw eigen project - geen speelgoedvoorbeeld - en doe die in elke kandidaat.
 
 Vier dingen om op te letten.
 
@@ -66,7 +66,7 @@ Een middag per tool, op echt werk, vertelt u meer dan welke hoeveelheid leeswerk
 
 De reden om niet te blijven twijfelen: uw project bestaat uit bestanden in een repository, en elk van deze tools werkt daarmee.
 
-Wat u zou meenemen, is een afsprakenbestand — platte tekst die overal werkt — en uw gewoonten. Er is geen lock-in en geen migratie.
+Wat u zou meenemen, is een afsprakenbestand - platte tekst die overal werkt - en uw gewoonten. Er is geen lock-in en geen migratie.
 
 Kies dus degene die na een middag het beste voelt, gebruik hem drie maanden, en heroverweeg als er iets verandert. Dit is een beslissing om snel te nemen en goedkoop te herzien, het tegenovergestelde van hoe oprichters er meestal mee omgaan.
 
@@ -88,7 +88,7 @@ Een editor werkt binnen een codebase die al bestaat, volgt de afspraken ervan, e
 
 De natuurlijke volgorde is de een en daarna de ander gebruiken: het prototype bouwen met een bouwer, de code in een repository zetten, en verdergaan met een editor zodra het product bestaat en de wijzigingen specifiek zijn. De tweede fase proberen met een bouwer levert de kostenproblemen op die eerder in deze reeks zijn beschreven; de eerste proberen met een editor is traag.
 
-De oprichters die deze overgang het moeilijkst vinden, zijn degenen die geen code kunnen lezen, omdat de werkwijze van de editor ervan uitgaat dat ze dat wel kunnen. Voor hen zijn de eerlijke opties langer bij een bouwer blijven, genoeg leren om een diff te lezen, of iemand inschakelen voor het productiewerk — en dat is het punt waarop de meeste oprichters in deze reeks die keuze maakten.
+De oprichters die deze overgang het moeilijkst vinden, zijn degenen die geen code kunnen lezen, omdat de werkwijze van de editor ervan uitgaat dat ze dat wel kunnen. Voor hen zijn de eerlijke opties langer bij een bouwer blijven, genoeg leren om een diff te lezen, of iemand inschakelen voor het productiewerk - en dat is het punt waarop de meeste oprichters in deze reeks die keuze maakten.
 
 ## De Tool Is Niet Lang de Bottleneck
 
@@ -108,19 +108,19 @@ Twee verschuivingen zijn zichtbaar genoeg om rekening mee te houden, zonder deta
 
 Assistenten gaan van het aanvullen van code naar het afronden van taken. In plaats van de volgende regels voor te stellen, nemen ze een beschreven doel, werken ze over bestanden heen, voeren ze dingen uit, lezen ze het resultaat en itereren ze. Dat verandert wat de mens doet: minder typen, meer specificeren en reviewen, en een veel grotere waarde in precies kunnen zeggen wat u wilt en kunnen beoordelen of u het kreeg.
 
-En de context die ze kunnen vasthouden groeit, wat het probleem verkleint van een model dat maar een deel van het plaatje ziet — de oorzaak van verschillende fouten die in deze reeks worden beschreven, waaronder de bug in twee bestanden die drie sessies overleefde.
+En de context die ze kunnen vasthouden groeit, wat het probleem verkleint van een model dat maar een deel van het plaatje ziet - de oorzaak van verschillende fouten die in deze reeks worden beschreven, waaronder de bug in twee bestanden die drie sessies overleefde.
 
 Beide verschuivingen wijzen dezelfde kant op voor een oprichter die beslist waarin hij investeert. De vaardigheden die in waarde stijgen, zijn helder specificeren, kritisch reviewen en de regels van uw eigen product kennen. De vaardigheden die dalen, zijn de mechanische die de tools nu beter doen.
 
-Dat is een reden om de moeite te steken in de dingen waar deze reeks steeds op terugkomt — het afsprakenbestand, de tests, het beslissingenlogboek, de reviewgewoonten — in plaats van in bijhouden welke editor wat uitbracht. Die artefacten worden nuttiger naarmate de tools capabeler worden, omdat een capabelere tool een heldere specificatie verder volgt. Een vage specificatie doet gewoon meer, sneller, in een richting die niemand koos.
+Dat is een reden om de moeite te steken in de dingen waar deze reeks steeds op terugkomt - het afsprakenbestand, de tests, het beslissingenlogboek, de reviewgewoonten - in plaats van in bijhouden welke editor wat uitbracht. Die artefacten worden nuttiger naarmate de tools capabeler worden, omdat een capabelere tool een heldere specificatie verder volgt. Een vage specificatie doet gewoon meer, sneller, in een richting die niemand koos.
 
 ## Dit Inrichten
 
-Voor een oprichter die kiest of overstapt, is dit een middag: een echte taak uit uw eigen project geprobeerd in elke kandidaat, met aandacht voor projectbegrip, naleving van uw afspraken, de omvang van wijzigingen en of hij past bij hoe u werkt; de voorwaarden gecontroleerd op bewaring, training en verwerkingslocatie, met een zakelijk abonnement geëvalueerd als u verplichtingen jegens klanten hebt; een afsprakenbestand in de repository zodat welke tool u ook kiest uw patronen volgt; en de gewoonten die er meer toe doen dan de keuze — commit vóór elke sessie, lees de diff, één verzoek tegelijk, een kleine testsuite.
+Voor een oprichter die kiest of overstapt, is dit een middag: een echte taak uit uw eigen project geprobeerd in elke kandidaat, met aandacht voor projectbegrip, naleving van uw afspraken, de omvang van wijzigingen en of hij past bij hoe u werkt; de voorwaarden gecontroleerd op bewaring, training en verwerkingslocatie, met een zakelijk abonnement geëvalueerd als u verplichtingen jegens klanten hebt; een afsprakenbestand in de repository zodat welke tool u ook kiest uw patronen volgt; en de gewoonten die er meer toe doen dan de keuze - commit vóór elke sessie, lees de diff, één verzoek tegelijk, een kleine testsuite.
 
-LaunchStudio werkt naast welke tools oprichters ook gebruiken, en de praktijken die we inrichten zijn bewust toolonafhankelijk. De engineers zijn van Manifera — elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
+LaunchStudio werkt naast welke tools oprichters ook gebruiken, en de praktijken die we inrichten zijn bewust toolonafhankelijk. De engineers zijn van Manifera - elf jaar, 120+ engineers, 160+ projecten, vanuit Amsterdam en Ho Chi Minh-stad.
 
-[Vraag ons een week van uw AI-ondersteunde wijzigingen te reviewen](https://launchstudio.eu/nl/#contact) — de gewoonten worden sneller zichtbaar dan de tool.
+[Vraag ons een week van uw AI-ondersteunde wijzigingen te reviewen](https://launchstudio.eu/nl/#contact) - de gewoonten worden sneller zichtbaar dan de tool.
 
 ## Echt voorbeeld
 
@@ -130,16 +130,16 @@ Emiel Vrieze bouwde Keuringsplanner in Cursor: planning van keuringen voor keuri
 
 Hij had drie maanden lang tussen editors gewisseld. Elke keer dat iets hem frustreerde, stapte hij over, met de redenering dat een betere tool betere resultaten zou opleveren. Hij had er vier gebruikt, veel vergelijkingsmateriaal gelezen, en zijn product was niet merkbaar verbeterd.
 
-De beoordeling vond dat zijn problemen niets met de tools te maken hadden. De eerste twee maanden had hij geen repository en was hij twee keer werk kwijtgeraakt. Hij had geen afsprakenbestand, dus elke tool leverde code in een andere stijl op, wat zijn indruk versterkte dat de tools inconsistent waren. Hij accepteerde wijzigingen zonder diffs te lezen, dus ongevraagde aanpassingen stapelden zich op. Hij stelde brede vragen — "verbeter de planningslogica" — en besteedde daarna meerdere rondes aan het corrigeren van grote wijzigingen. En hij had geen tests, dus hij kon niet zien of iets wat hij accepteerde iets had gebroken.
+De beoordeling vond dat zijn problemen niets met de tools te maken hadden. De eerste twee maanden had hij geen repository en was hij twee keer werk kwijtgeraakt. Hij had geen afsprakenbestand, dus elke tool leverde code in een andere stijl op, wat zijn indruk versterkte dat de tools inconsistent waren. Hij accepteerde wijzigingen zonder diffs te lezen, dus ongevraagde aanpassingen stapelden zich op. Hij stelde brede vragen - "verbeter de planningslogica" - en besteedde daarna meerdere rondes aan het corrigeren van grote wijzigingen. En hij had geen tests, dus hij kon niet zien of iets wat hij accepteerde iets had gebroken.
 
 Twee werkdagen: een repository met geschiedenis en een werkwijze met een branch per wijziging; een afsprakenbestand geschreven op basis van de bestaande code met patronen, naamgeving, gekozen bibliotheken, vier onschendbare regels en de woordenschat van het product; een testsuite van 34 tests voor autorisatie over 19 endpoints, de berekeningen van keuringsintervallen en één end-to-end-flow; een werkwijze van committen vóór elke sessie, diffs lezen, en om één ding tegelijk vragen; en een besluit om drie maanden bij één tool te blijven voordat hij heroverweegt.
 
 **Resultaat:** Emiel bleef bij de editor die hij toevallig gebruikte. In het kwartaal daarna leverde hij vier functies op die hij in de drie maanden van wisselen niet had kunnen afronden, en hij meldt dat het afsprakenbestand de uitvoer meer veranderde dan welke toolwissel ook.
 
-> *"Ik ben vier keer overgestapt op zoek naar een tool die consistente code zou opleveren. De inconsistentie lag bij mij — ik had nooit opgeschreven wat consistent betekende."*
-> — **Emiel Vrieze, Oprichter, Keuringsplanner (Ede)**
+> *"Ik ben vier keer overgestapt op zoek naar een tool die consistente code zou opleveren. De inconsistentie lag bij mij - ik had nooit opgeschreven wat consistent betekende."*
+> - **Emiel Vrieze, Oprichter, Keuringsplanner (Ede)**
 
-**Kosten & Doorlooptijd:** €2.200 (repository en branchwerkwijze, afsprakenbestand op basis van bestaande code, testsuite van 34 tests voor autorisatie en berekeningen, werkpraktijken ingericht) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.200 (repository en branchwerkwijze, afsprakenbestand op basis van bestaande code, testsuite van 34 tests voor autorisatie en berekeningen, werkpraktijken ingericht) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -157,7 +157,7 @@ Nee. Uw project bestaat uit bestanden in een repository en elke tool werkt daarm
 
 ### Verschillen ze in codekwaliteit?
 
-Niet veel voor routinewerk — ze gebruiken vergelijkbare modellen. Ze delen ook dezelfde faalwijzen: ontbrekende autorisatie, afwezige foutafhandeling, verzonnen interfaces.
+Niet veel voor routinewerk - ze gebruiken vergelijkbare modellen. Ze delen ook dezelfde faalwijzen: ontbrekende autorisatie, afwezige foutafhandeling, verzonnen interfaces.
 
 ### Wat maakt het grootste verschil voor de resultaten?
 
@@ -189,7 +189,7 @@ Committen vóór elke sessie, diffs lezen, een afsprakenbestand, een kleine test
       "name": "Is overstappen tussen AI-editors kostbaar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — het project bestaat uit bestanden in een repository. Alleen een afsprakenbestand in platte tekst en uw gewoonten gaan mee."
+        "text": "Nee - het project bestaat uit bestanden in een repository. Alleen een afsprakenbestand in platte tekst en uw gewoonten gaan mee."
       }
     },
     {
@@ -197,7 +197,7 @@ Committen vóór elke sessie, diffs lezen, een afsprakenbestand, een kleine test
       "name": "Verschillen AI-editors in codekwaliteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Weinig voor routinewerk, omdat ze vergelijkbare modellen gebruiken — en ze delen dezelfde faalwijzen."
+        "text": "Weinig voor routinewerk, omdat ze vergelijkbare modellen gebruiken - en ze delen dezelfde faalwijzen."
       }
     },
     {

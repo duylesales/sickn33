@@ -65,9 +65,9 @@ The difference between these two approaches is invisible in a demo. With real us
 
 ### 4. Payment Processing
 
-**Fast/Fragile:** Stripe Checkout redirect with no webhook handling — payments go through, but your database never knows about it.
+**Fast/Fragile:** Stripe Checkout redirect with no webhook handling - payments go through, but your database never knows about it.
 
-**Durable:** Stripe or Mollie with complete webhook pipeline — payment succeeded, payment failed, subscription renewed, subscription cancelled, invoice created, tax calculated. Every payment event updates your database in real-time, triggering appropriate user-facing actions (granting access, sending receipts, notifying of failed payments).
+**Durable:** Stripe or Mollie with complete webhook pipeline - payment succeeded, payment failed, subscription renewed, subscription cancelled, invoice created, tax calculated. Every payment event updates your database in real-time, triggering appropriate user-facing actions (granting access, sending receipts, notifying of failed payments).
 
 ### 5. Deployment and Operations
 
@@ -77,7 +77,7 @@ The difference between these two approaches is invisible in a demo. With real us
 
 ## When to Build It Yourself vs. When to Delegate
 
-If you are a technical founder — someone who can read and write code, understands HTTP requests, and knows what a database index does — you are in a unique position. You can evaluate AI-generated code quality, identify security gaps, and make informed architecture decisions.
+If you are a technical founder - someone who can read and write code, understands HTTP requests, and knows what a database index does - you are in a unique position. You can evaluate AI-generated code quality, identify security gaps, and make informed architecture decisions.
 
 But evaluating architecture and implementing architecture are different skills requiring different time investments. Consider this decision matrix:
 
@@ -91,9 +91,9 @@ But evaluating architecture and implementing architecture are different skills r
 
 For most technical founders, the sweet spot is building the AI integration layer (your competitive advantage) and delegating infrastructure (a solved problem) to [LaunchStudio](https://launchstudio.eu/en/).
 
-LaunchStudio is powered by [Manifera](https://www.manifera.com/services/custom-software-development/), whose engineering team has built 160+ production applications across financial services, logistics, healthcare, and SaaS. Their development center at 10 Pho Quang Street, Ho Chi Minh City houses the engineering team, while European project management operates from Herengracht 420, Amsterdam. This is not a generic outsourcing shop — it is a specialized engineering organization under the direction of Herre Roelevink, who has spent over a decade building the systems that turn prototypes into products.
+LaunchStudio is powered by [Manifera](https://www.manifera.com/services/custom-software-development/), whose engineering team has built 160+ production applications across financial services, logistics, healthcare, and SaaS. Their development center at 10 Pho Quang Street, Ho Chi Minh City houses the engineering team, while European project management operates from Herengracht 420, Amsterdam. This is not a generic outsourcing shop - it is a specialized engineering organization under the direction of Herre Roelevink, who has spent over a decade building the systems that turn prototypes into products.
 
-[Book a 15-minute architecture review](https://launchstudio.eu/en/#contact) — free, no commitment, and you will walk away with a specific assessment of your build AI app's production readiness.
+[Book a 15-minute architecture review](https://launchstudio.eu/en/#contact) - free, no commitment, and you will walk away with a specific assessment of your build AI app's production readiness.
 
 ## Real example
 
@@ -103,20 +103,20 @@ Kai, a software developer in Berlin working remotely, decided to build AI-powere
 
 As a technical founder, Kai knew he needed proper infrastructure. He spent two weeks implementing Stripe billing with webhooks. Three weeks on a multi-tenant database schema with Row Level Security. Two weeks configuring CI/CD with GitHub Actions, Docker containers, and staging/production environments. One week on Sentry error tracking and monitoring dashboards.
 
-Eight weeks of infrastructure work. Zero weeks of user acquisition. His competitor — another solo developer — launched a simpler version with basic infrastructure two months earlier and captured 400 paying users.
+Eight weeks of infrastructure work. Zero weeks of user acquisition. His competitor - another solo developer - launched a simpler version with basic infrastructure two months earlier and captured 400 paying users.
 
 Kai realized his infrastructure obsession was a different kind of trap from the "no infrastructure" trap. He was building enterprise-grade systems for a product with zero users.
 
 When Kai discovered LaunchStudio, the calculus changed immediately. He could have delegated the entire infrastructure build to Manifera's team for €4,500 and had it done in two weeks instead of eight. He would have launched six weeks earlier, with the same production quality, and spent those six weeks on the customer acquisition that actually determines startup survival.
 
-For his next product — an AI documentation generator — Kai used LaunchStudio from the start. He focused exclusively on the AI logic and frontend, handed the infrastructure to LaunchStudio, and launched in three weeks total.
+For his next product - an AI documentation generator - Kai used LaunchStudio from the start. He focused exclusively on the AI logic and frontend, handed the infrastructure to LaunchStudio, and launched in three weeks total.
 
 **Result:** DocuMind acquired 67 paying users in its first month, generating €2,010/month at €30/user. Kai estimates he would have spent another two months on infrastructure if he had done it himself.
 
-> *"As a developer, I thought I should build everything myself. LaunchStudio taught me that the best use of my time is the code only I can write — the AI logic. Let specialists handle the infrastructure I would build the same way they do, just slower."*
-> — **Kai Richter, Founder, DocuMind (Berlin/Remote)**
+> *"As a developer, I thought I should build everything myself. LaunchStudio taught me that the best use of my time is the code only I can write - the AI logic. Let specialists handle the infrastructure I would build the same way they do, just slower."*
+> - **Kai Richter, Founder, DocuMind (Berlin/Remote)**
 
-**Cost & Timeline:** €4,500 (Launch & Grow Package) — production-ready and deployed in 11 business days.
+**Cost & Timeline:** €4,500 (Launch & Grow Package) - production-ready and deployed in 11 business days.
 
 ---
 
@@ -124,11 +124,11 @@ For his next product — an AI documentation generator — Kai used LaunchStudio
 
 ### (Scenario: Technical founder deciding on database architecture) Should I use Supabase or a custom PostgreSQL setup when I build AI apps?
 
-Start with Supabase. It provides PostgreSQL with built-in authentication, Row Level Security, and real-time subscriptions — all essential for AI apps. You avoid weeks of database configuration while getting production-grade infrastructure. LaunchStudio frequently uses Supabase and can optimize your schema for scale.
+Start with Supabase. It provides PostgreSQL with built-in authentication, Row Level Security, and real-time subscriptions - all essential for AI apps. You avoid weeks of database configuration while getting production-grade infrastructure. LaunchStudio frequently uses Supabase and can optimize your schema for scale.
 
 ### (Scenario: Founder worried about AI model switching costs) How do I avoid vendor lock-in with OpenAI when building an AI app?
 
-Implement an AI abstraction layer — a server-side function that accepts a standard prompt format and routes it to the configured provider. This lets you switch from OpenAI to Claude to Llama without changing your application code. LaunchStudio implements this pattern by default for all AI integrations.
+Implement an AI abstraction layer - a server-side function that accepts a standard prompt format and routes it to the configured provider. This lets you switch from OpenAI to Claude to Llama without changing your application code. LaunchStudio implements this pattern by default for all AI integrations.
 
 ### (Scenario: Developer evaluating build vs. buy for infrastructure) Is it faster to build infrastructure myself or use LaunchStudio?
 
@@ -136,7 +136,7 @@ For a typical SaaS with auth, payments, and deployment, building yourself takes 
 
 ### (Scenario: Founder planning for scale) Will the architecture LaunchStudio builds handle growth to 10,000 users?
 
-Yes. LaunchStudio builds with horizontal scalability in mind — containerized deployments, connection pooling, database indexing, and caching layers. The architecture handles growth from 10 to 10,000 users without redesign. For growth beyond that, Manifera offers full-scale engineering engagements.
+Yes. LaunchStudio builds with horizontal scalability in mind - containerized deployments, connection pooling, database indexing, and caching layers. The architecture handles growth from 10 to 10,000 users without redesign. For growth beyond that, Manifera offers full-scale engineering engagements.
 
 ### (Scenario: Technical founder concerned about code quality) Can I review and approve LaunchStudio's code before it deploys?
 
@@ -152,7 +152,7 @@ Absolutely. All code is committed to your GitHub repository with clear pull requ
       "name": "Should I use Supabase or a custom PostgreSQL setup when I build AI apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Start with Supabase. It provides PostgreSQL with built-in authentication, Row Level Security, and real-time subscriptions — all essential for AI apps. You avoid weeks of database configuration while getting production-grade infrastructure. LaunchStudio frequently uses Supabase and can optimize your schema for scale."
+        "text": "Start with Supabase. It provides PostgreSQL with built-in authentication, Row Level Security, and real-time subscriptions - all essential for AI apps. You avoid weeks of database configuration while getting production-grade infrastructure. LaunchStudio frequently uses Supabase and can optimize your schema for scale."
       }
     },
     {
@@ -160,7 +160,7 @@ Absolutely. All code is committed to your GitHub repository with clear pull requ
       "name": "How do I avoid vendor lock-in with OpenAI when building an AI app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implement an AI abstraction layer — a server-side function that accepts a standard prompt format and routes it to the configured provider. This lets you switch from OpenAI to Claude to Llama without changing your application code. LaunchStudio implements this pattern by default for all AI integrations."
+        "text": "Implement an AI abstraction layer - a server-side function that accepts a standard prompt format and routes it to the configured provider. This lets you switch from OpenAI to Claude to Llama without changing your application code. LaunchStudio implements this pattern by default for all AI integrations."
       }
     },
     {
@@ -176,7 +176,7 @@ Absolutely. All code is committed to your GitHub repository with clear pull requ
       "name": "Will the architecture LaunchStudio builds handle growth to 10,000 users?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. LaunchStudio builds with horizontal scalability in mind — containerized deployments, connection pooling, database indexing, and caching layers. The architecture handles growth from 10 to 10,000 users without redesign. For growth beyond that, Manifera offers full-scale engineering engagements."
+        "text": "Yes. LaunchStudio builds with horizontal scalability in mind - containerized deployments, connection pooling, database indexing, and caching layers. The architecture handles growth from 10 to 10,000 users without redesign. For growth beyond that, Manifera offers full-scale engineering engagements."
       }
     },
     {

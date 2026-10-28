@@ -52,7 +52,7 @@ Nokia has a large R&D site in Oulu, historically important for mobile radio tech
 
 ## Wearables and Sensor Data
 
-Oulu has produced notable wearable technology companies. Oura, known for its smart ring that tracks sleep, activity and physiological signals, was founded in Oulu. Polar Electro, a pioneer of heart rate monitors and sports watches, is based in nearby Kempele. Wearables generate continuous sensor data — heart rate, movement, temperature — and machine learning turns this data into insights about sleep, recovery, fitness and health. Data scientists and ML engineers work on signal processing, algorithm development, personalisation and validation, often in collaboration with health researchers.
+Oulu has produced notable wearable technology companies. Oura, known for its smart ring that tracks sleep, activity and physiological signals, was founded in Oulu. Polar Electro, a pioneer of heart rate monitors and sports watches, is based in nearby Kempele. Wearables generate continuous sensor data - heart rate, movement, temperature - and machine learning turns this data into insights about sleep, recovery, fitness and health. Data scientists and ML engineers work on signal processing, algorithm development, personalisation and validation, often in collaboration with health researchers.
 
 ## Health Technology
 
@@ -81,13 +81,13 @@ Finnish workplaces are flat and trust-based, value reliability and honesty, and 
 
 ## Living in Oulu
 
-Oulu is a compact, bicycle-friendly city — famous for year-round cycling, even in winter — with a large student population and affordable housing compared with Helsinki. Winters are long and dark, summers bright with midnight sun. Oulu was a European Capital of Culture in 2026, adding to its cultural life. Nature, sea and islands are close, and flights connect to Helsinki in about an hour.
+Oulu is a compact, bicycle-friendly city - famous for year-round cycling, even in winter - with a large student population and affordable housing compared with Helsinki. Winters are long and dark, summers bright with midnight sun. Oulu was a European Capital of Culture in 2026, adding to its cultural life. Nature, sea and islands are close, and flights connect to Helsinki in about an hour.
 
 ## How OnlyAIJobs Fits an Oulu Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Oulu you will find few or no local vacancies there today. Use Finnish job portals, the University of Oulu's career services, company summer job programmes and research vacancy lists as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where engineering and technology employers such as Holland Innovative, Cegeka and Accenture list AI roles — and as a model for searching by category and real commute. Oulu employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Oulu you will find few or no local vacancies there today. Use Finnish job portals, the University of Oulu's career services, company summer job programmes and research vacancy lists as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where engineering and technology employers such as Holland Innovative, Cegeka and Accenture list AI roles - and as a model for searching by category and real commute. Oulu employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## AI in Future Networks
 
@@ -99,7 +99,7 @@ Working with wearable data means dealing with noisy, continuous signals from sen
 
 ## Computer Vision and Affective Computing
 
-The University of Oulu's research in machine vision and signal analysis has a long history, including work on facial analysis, biometrics and affective computing — recognising emotions and physiological states from signals such as video. This research connects with health, human–computer interaction and security applications, and it raises ethical questions that are increasingly regulated; the EU AI Act restricts certain uses of emotion recognition and biometric identification. Graduates interested in vision can join research groups or companies applying these techniques responsibly.
+The University of Oulu's research in machine vision and signal analysis has a long history, including work on facial analysis, biometrics and affective computing - recognising emotions and physiological states from signals such as video. This research connects with health, human–computer interaction and security applications, and it raises ethical questions that are increasingly regulated; the EU AI Act restricts certain uses of emotion recognition and biometric identification. Graduates interested in vision can join research groups or companies applying these techniques responsibly.
 
 ## Building a Profile for Oulu Employers
 
@@ -143,7 +143,7 @@ Apply for summer jobs early, choose a thesis with a company or research group, a
 
 ## Health Technology in Practice
 
-OuluHealth brings together researchers, clinicians and companies to develop and test new health technologies in real clinical environments. For graduates, this means projects such as analysing data from remote patient monitoring, building models that predict deterioration in hospital patients, supporting imaging diagnostics or optimising hospital logistics. Finland's national framework for secondary use of health and social data enables research while protecting privacy, and projects must follow strict ethics and data protection procedures. Working in health technology teaches graduates rigorous validation, collaboration with clinicians and responsible handling of sensitive data — skills that are valued throughout the health sector in Europe. Combining Oulu's sensor and wearable expertise with clinical research is a particular strength of the city, and some graduates find their niche exactly at that intersection.
+OuluHealth brings together researchers, clinicians and companies to develop and test new health technologies in real clinical environments. For graduates, this means projects such as analysing data from remote patient monitoring, building models that predict deterioration in hospital patients, supporting imaging diagnostics or optimising hospital logistics. Finland's national framework for secondary use of health and social data enables research while protecting privacy, and projects must follow strict ethics and data protection procedures. Working in health technology teaches graduates rigorous validation, collaboration with clinicians and responsible handling of sensitive data - skills that are valued throughout the health sector in Europe. Combining Oulu's sensor and wearable expertise with clinical research is a particular strength of the city, and some graduates find their niche exactly at that intersection.
 
 ## Software Companies and Startups
 
@@ -155,7 +155,7 @@ Finnish salaries for graduates are defined by collective agreements in many sect
 
 ## Responsible AI
 
-Wearables, health technology and biometric research all involve sensitive personal data. Graduates who understand GDPR and the EU AI Act — including restrictions on some biometric and emotion recognition uses — bring clear value to Oulu's employers.
+Wearables, health technology and biometric research all involve sensitive personal data. Graduates who understand GDPR and the EU AI Act - including restrictions on some biometric and emotion recognition uses - bring clear value to Oulu's employers.
 
 ## Surviving and Enjoying Northern Winters
 

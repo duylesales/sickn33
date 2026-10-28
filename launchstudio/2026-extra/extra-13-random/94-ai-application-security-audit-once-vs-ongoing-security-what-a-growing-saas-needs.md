@@ -69,7 +69,7 @@ Ongoing security for a small SaaS does not mean a security team. It means a hand
 
 **Monitoring and alerts.** Error tracking, unusual traffic patterns, failed logins and changes to access policies.
 
-**Periodic light reviews.** A focused review of changes since the last one — every quarter, or before a major release — rather than a full audit every time.
+**Periodic light reviews.** A focused review of changes since the last one - every quarter, or before a major release - rather than a full audit every time.
 
 **An incident plan.** Who acts, how breaches are assessed and reported within 72 hours, and how customers are informed.
 
@@ -85,7 +85,7 @@ Ongoing security for a small SaaS does not mean a security team. It means a hand
 | Regression risk | Grows with every change | Mostly caught in CI |
 | Customer assurance | Report ages quickly | Current evidence |
 
-For most growing SaaS products, the second column costs a little more upfront and much less over a year — because full re-audits and incident clean-ups are expensive.
+For most growing SaaS products, the second column costs a little more upfront and much less over a year - because full re-audits and incident clean-ups are expensive.
 
 ## Designing a Continuous Security Programme for a Small SaaS
 
@@ -102,7 +102,7 @@ Each layer is small; together they keep security current as the product evolves.
 
 ## Writing Guardrail Tests From Audit Findings
 
-The most effective way to prevent regressions is to turn every audit finding into a test. For example, if the audit found that a reporting endpoint exposed other retailers' data, add a test that logs in as retailer B and requests retailer A's report, expecting a denial. If the audit found a secret in the frontend bundle, add a CI step that scans the built bundle for key patterns. Over time, the test suite becomes a living record of every weakness the product has ever had — and a guarantee that none of them returns unnoticed.
+The most effective way to prevent regressions is to turn every audit finding into a test. For example, if the audit found that a reporting endpoint exposed other retailers' data, add a test that logs in as retailer B and requests retailer A's report, expecting a denial. If the audit found a secret in the frontend bundle, add a CI step that scans the built bundle for key patterns. Over time, the test suite becomes a living record of every weakness the product has ever had - and a guarantee that none of them returns unnoticed.
 
 ## Detecting Drift in Database Policies
 
@@ -122,11 +122,11 @@ B2B customers increasingly ask for annual security updates. Maintain a security 
 
 ## Incident Readiness as Part of the Programme
 
-Ongoing security includes being ready for the day something goes wrong: a written incident procedure, contacts for engineers and providers, templates for notifying customers and the data protection authority, and one rehearsal per year. Small companies with a rehearsed plan respond in hours rather than days — and that speed often determines how customers judge the incident.
+Ongoing security includes being ready for the day something goes wrong: a written incident procedure, contacts for engineers and providers, templates for notifying customers and the data protection authority, and one rehearsal per year. Small companies with a rehearsed plan respond in hours rather than days - and that speed often determines how customers judge the incident.
 
 ## Budgeting the Programme
 
-For a small AI-built SaaS, ongoing security typically combines: managed hosting and updates (around €49 per month at LaunchStudio), a few hours of internal time per month for routines, and one or two focused reviews per year. Compared with the cost of a full re-audit plus incident response after a regression, the programme is modest — and it keeps security evidence ready for every customer conversation.
+For a small AI-built SaaS, ongoing security typically combines: managed hosting and updates (around €49 per month at LaunchStudio), a few hours of internal time per month for routines, and one or two focused reviews per year. Compared with the cost of a full re-audit plus incident response after a regression, the programme is modest - and it keeps security evidence ready for every customer conversation.
 
 ## Metrics That Show Whether Security Is Holding
 
@@ -142,7 +142,7 @@ Quarterly light reviews cover most needs, but some events justify a full review:
 
 ## Sharing Responsibility With Your Providers
 
-Managed platforms handle part of security for you — infrastructure patching, physical security, some network protections. Understand the shared-responsibility boundary for each provider: what they secure, what remains yours (your code, access policies, configuration, secrets, data). Ongoing security focuses on your side of that line; the providers' certifications and documentation cover theirs.
+Managed platforms handle part of security for you - infrastructure patching, physical security, some network protections. Understand the shared-responsibility boundary for each provider: what they secure, what remains yours (your code, access policies, configuration, secrets, data). Ongoing security focuses on your side of that line; the providers' certifications and documentation cover theirs.
 
 ## The Culture Behind the Programme
 
@@ -158,7 +158,7 @@ The difference between a company that had an audit and a company that has securi
 
 ## Remember
 
-An audit tells you where you stood on one day; a programme tells you where you stand today — and that is the question customers actually ask.
+An audit tells you where you stood on one day; a programme tells you where you stand today - and that is the question customers actually ask.
 
 ## The Minimum Programme
 
@@ -187,9 +187,9 @@ Over eight business days, LaunchStudio's engineers fixed all four, then added 38
 **Result:** In the following year, CI blocked six changes that would have reintroduced cross-tenant access or secrets, and two quarterly reviews found only minor issues. Vloerwijzer grew to 64 retailers and answers security questionnaires from a current security page.
 
 > *"The audit was accurate the day it was written. My codebase just didn't stay the same codebase."*
-> — **Laurens Dijkman, Founder, Vloerwijzer (Heemskerk)**
+> - **Laurens Dijkman, Founder, Vloerwijzer (Heemskerk)**
 
-**Cost & Timeline:** €2,400 (change review, fixes, CI guardrails and review schedule) — completed in 8 business days, plus €49/month managed hosting.
+**Cost & Timeline:** €2,400 (change review, fixes, CI guardrails and review schedule) - completed in 8 business days, plus €49/month managed hosting.
 
 ## Frequently Asked Questions
 
@@ -207,7 +207,7 @@ Negative authorisation tests, secret and dependency scanning, regular updates, m
 
 ### How does Manifera support security after launch?
 
-Through managed hosting with updates, backups and monitoring, CI guardrails left in the codebase and scheduled focused reviews — practices from maintaining enterprise systems over 11+ years.
+Through managed hosting with updates, backups and monitoring, CI guardrails left in the codebase and scheduled focused reviews - practices from maintaining enterprise systems over 11+ years.
 
 ### Does ongoing security help with customer trust and AI search?
 

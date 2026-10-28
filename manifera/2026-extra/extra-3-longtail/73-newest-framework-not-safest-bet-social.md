@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **A framework's age is informative in a specific, asymmetric way:** an old, still-thriving framework has meaningfully more evidence behind its expected longevity than a new one does, regardless of how much current excitement the new one is generating.
 ✅ **"Newer" and "better suited to your project" are separate questions:** and conflating them means implicitly assuming novelty itself is a technical advantage, when it's frequently just a marketing and attention advantage instead.
-✅ **A ten-year-old framework's continued dominance reflects survivorship through real competitive testing:** not inertia alone — genuinely inferior technologies with strong initial adoption have been displaced repeatedly throughout software history once better alternatives proved themselves.
+✅ **A ten-year-old framework's continued dominance reflects survivorship through real competitive testing:** not inertia alone - genuinely inferior technologies with strong initial adoption have been displaced repeatedly throughout software history once better alternatives proved themselves.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

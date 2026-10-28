@@ -26,7 +26,7 @@ Founders whose products were built by AI tools tend to inherit an unusually larg
 
 ## Lock Your Versions, Then Update Deliberately
 
-The first requirement is a lockfile — the file recording the exact version of every package installed, including the ones you did not choose. It is generated automatically and its only job is to guarantee that the code running in production is the code you tested.
+The first requirement is a lockfile - the file recording the exact version of every package installed, including the ones you did not choose. It is generated automatically and its only job is to guarantee that the code running in production is the code you tested.
 
 Without it committed to your repository, two deployments a week apart install different versions, and a failure appears with no corresponding change from you. This is one of the most confusing categories of bug available, and it is entirely preventable by committing a file that already exists.
 
@@ -42,7 +42,7 @@ Not all updates are equal, and treating them equally is why the task feels endle
 
 **Major versions** contain deliberate breaking changes and deserve to be handled individually, with the release notes read and time set aside. One major upgrade at a time.
 
-**Everything else** — indirect dependencies, packages you use for one function, tooling — can be updated on a periodic sweep rather than reactively.
+**Everything else** - indirect dependencies, packages you use for one function, tooling - can be updated on a periodic sweep rather than reactively.
 
 The failure mode to avoid is the opposite of neglect: reacting to every automated alert immediately, which consumes real time and occasionally introduces breakage in pursuit of a vulnerability that does not apply to you.
 
@@ -50,7 +50,7 @@ The failure mode to avoid is the opposite of neglect: reacting to every automate
 
 Monthly is a reasonable cadence for most small products, and it is short enough to keep each batch small.
 
-Once a month: review outstanding advisories and assess which affect running code; apply patch and minor updates in one batch; run your tests; deploy; watch for a day. Handle major versions separately, one at a time, when there is a reason — a feature you need, security support ending, or the version you are on falling out of maintenance.
+Once a month: review outstanding advisories and assess which affect running code; apply patch and minor updates in one batch; run your tests; deploy; watch for a day. Handle major versions separately, one at a time, when there is a reason - a feature you need, security support ending, or the version you are on falling out of maintenance.
 
 Automated dependency tools that open update proposals are helpful, provided they are configured to group minor updates rather than producing a stream of individual ones. Configured badly they become noise, and noise gets ignored, which returns you to neglect by a different route.
 
@@ -62,7 +62,7 @@ Beyond libraries, the platform itself moves, and these updates have dates attach
 
 Language runtimes reach end of life on published schedules, after which they stop receiving security fixes. Hosting platforms eventually stop supporting old versions and will, with notice, migrate or disable applications that have not moved. Managed databases have upgrade windows. Certificates expire, and increasingly so do API versions at providers such as payment processors.
 
-These are the updates most likely to cause an unplanned emergency, because they are announced by email months ahead and then forgotten. Keeping a short list of everything with a date — runtime end of life, database version support, provider API deprecations, certificate and domain renewals — and reviewing it quarterly converts each from a surprise into a scheduled task.
+These are the updates most likely to cause an unplanned emergency, because they are announced by email months ahead and then forgotten. Keeping a short list of everything with a date - runtime end of life, database version support, provider API deprecations, certificate and domain renewals - and reviewing it quarterly converts each from a surprise into a scheduled task.
 
 Establishing a dependency and platform maintenance routine, with the tests that make it safe, is ordinary production work and one of the things most often missing from AI-generated products, which typically arrive with a large dependency list and no test suite. LaunchStudio, backed by Manifera's 11+ years of production engineering, puts both in place. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
@@ -70,9 +70,9 @@ Establishing a dependency and platform maintenance routine, with the tests that 
 
 Every product eventually depends on something abandoned: last release three years ago, open issues unanswered, and now an advisory against it with no fix coming.
 
-Assess honestly. If it is small and does one thing, the best answer is often to replace it with your own code — many such packages are fifty lines. If a maintained alternative exists, migrate. If it is deeply embedded and the vulnerability does not affect how you use it, documenting that assessment and moving on is legitimate, provided the decision is recorded rather than forgotten.
+Assess honestly. If it is small and does one thing, the best answer is often to replace it with your own code - many such packages are fifty lines. If a maintained alternative exists, migrate. If it is deeply embedded and the vulnerability does not affect how you use it, documenting that assessment and moving on is legitimate, provided the decision is recorded rather than forgotten.
 
-The prevention is worth more than the cure: when adding a dependency, spend two minutes checking when it was last updated, how many people rely on it, and whether it is maintained by more than one person. AI-generated code frequently reaches for obscure packages that happened to be in its training data, and reviewing what has been added — rather than accepting the list — is a cheap habit.
+The prevention is worth more than the cure: when adding a dependency, spend two minutes checking when it was last updated, how many people rely on it, and whether it is maintained by more than one person. AI-generated code frequently reaches for obscure packages that happened to be in its training data, and reviewing what has been added - rather than accepting the list - is a cheap habit.
 
 There is also a supply-chain dimension worth a sentence. Compromised packages are a real attack vector, and the practical defences are unremarkable: pin exact versions through your lockfile, avoid installing packages you have not looked at, and be sceptical of a dependency that appeared without your choosing it.
 
@@ -84,14 +84,14 @@ Sam Verhagen ran Zaalplanner, a room-booking tool for community centres, built i
 
 The prompt was a platform notice: the runtime version his product ran on would stop being supported in six weeks, after which the application would not be redeployable. Moving forward one runtime version required updating the web framework, which required updating six other libraries, three of which had breaking changes across two major versions each.
 
-Two further problems emerged. Because the lockfile was not committed, the versions running in production were not knowable with certainty, and a rebuild produced a subtly different set. And one library — a date-handling utility with 40 usages throughout the code — had been abandoned 18 months earlier, with an unpatched advisory and no maintained successor with a compatible interface.
+Two further problems emerged. Because the lockfile was not committed, the versions running in production were not knowable with certainty, and a rebuild produced a subtly different set. And one library - a date-handling utility with 40 usages throughout the code - had been abandoned 18 months earlier, with an unpatched advisory and no maintained successor with a compatible interface.
 
 There were no tests, so verifying that anything still worked meant clicking through every flow by hand, repeatedly.
 
 **Result:** the lockfile committed, the runtime and framework brought current through a sequence of individual major upgrades, the abandoned date library replaced with the platform's own capabilities, a test suite covering the eight critical flows added, and a monthly update routine established with grouped automated proposals. Nine business days in total, most of it spent on work that a monthly hour would have avoided.
 
 > "Two years of not updating anything cost me nine days and a deadline I did not choose. The individual updates would have taken about an hour a month."
-> — **Sam Verhagen, Founder, Zaalplanner**
+> - **Sam Verhagen, Founder, Zaalplanner**
 
 **Cost & Timeline:** dependency modernisation, test suite, and maintenance routine delivered in 9 business days.
 

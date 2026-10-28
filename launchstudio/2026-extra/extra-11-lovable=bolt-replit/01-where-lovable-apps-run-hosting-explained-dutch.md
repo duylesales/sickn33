@@ -22,7 +22,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 
 Bram had een link. Dat was het punt waar hij telkens naar terugkeerde: hij had binnen negen dagen in Lovable een reserveringstool voor padelbanen in Rotterdam gebouwd, en hij had een link die hij naar iedereen kon sturen, en het werkte. Twee clubeigenaren openden de link op hun telefoon en voltooiden een testreservering. Toen zijn accountant hem vervolgens vroeg waar de applicatie eigenlijk werd gehost, bracht die vraag hem oprecht in verwarring. Het stond toch op het internet? Iedereen kon het openen. Was dat dan geen hosting?
 
-Dat is het wel, op dezelfde manier waarop een modelwoning huisvesting is. Alles wat nodig is om het idee te zien is aanwezig, maar vrijwel niets van wat nodig is om er daadwerkelijk in te wonen. De kloof tussen een Lovable preview-URL en een volwaardige productie-omgeving is geen technisch detail waar software-engineers zich enkel om esthetische redenen druk over maken — het is het verschil tussen een applicatie die zijn eerste drukke maandag overleeft en een applicatie die onderuitgaat.
+Dat is het wel, op dezelfde manier waarop een modelwoning huisvesting is. Alles wat nodig is om het idee te zien is aanwezig, maar vrijwel niets van wat nodig is om er daadwerkelijk in te wonen. De kloof tussen een Lovable preview-URL en een volwaardige productie-omgeving is geen technisch detail waar software-engineers zich enkel om esthetische redenen druk over maken - het is het verschil tussen een applicatie die zijn eerste drukke maandag overleeft en een applicatie die onderuitgaat.
 
 ## Wat Die Preview-URL Werkelijk Is
 
@@ -34,13 +34,13 @@ De praktische vertaling voor een oprichter: uw preview-link is het bewijs dat he
 
 ## De Vier Zaken Die Zich Anders Gedragen Bij Echte Gebruikers
 
-**Gelijktijdigheid (concurrency) is niet langer theoretisch.** Twee vrienden die wat rondklikken veroorzaakt een volstrekt ander belastingpatroon dan veertig mensen die om 09:00 uur tegelijk binnenkomen via een LinkedIn-post. Preview-omgevingen hanteren vaak limieten op gelijktijdige verzoeken die niemand opmerkt totdat ze worden overschreden — en wanneer dat gebeurt, zien uw gebruikers een leeg wit scherm in plaats van een foutmelding die u kunt verklaren.
+**Gelijktijdigheid (concurrency) is niet langer theoretisch.** Twee vrienden die wat rondklikken veroorzaakt een volstrekt ander belastingpatroon dan veertig mensen die om 09:00 uur tegelijk binnenkomen via een LinkedIn-post. Preview-omgevingen hanteren vaak limieten op gelijktijdige verzoeken die niemand opmerkt totdat ze worden overschreden - en wanneer dat gebeurt, zien uw gebruikers een leeg wit scherm in plaats van een foutmelding die u kunt verklaren.
 
-**Geheimen (secrets) worden een reëel gevaar.** Tijdens de bouwfase is een API-sleutel in uw frontend-code onzichtbaar voor u omdat alles gewoon functioneert. In productie is diezelfde sleutel zichtbaar voor iedereen die de ontwikkelhulpprogramma's van de browser opent. Voor iedereen. Dit is de meest voorkomende beveiligingsbevinding wanneer een door AI gebouwde app ter beoordeling binnenkomt, en de oplossing is architectonisch van aard — de sleutel moet verhuizen naar een serverloze backend-functie — niet een schuifje dat u aanzet in de instellingen.
+**Geheimen (secrets) worden een reëel gevaar.** Tijdens de bouwfase is een API-sleutel in uw frontend-code onzichtbaar voor u omdat alles gewoon functioneert. In productie is diezelfde sleutel zichtbaar voor iedereen die de ontwikkelhulpprogramma's van de browser opent. Voor iedereen. Dit is de meest voorkomende beveiligingsbevinding wanneer een door AI gebouwde app ter beoordeling binnenkomt, en de oplossing is architectonisch van aard - de sleutel moet verhuizen naar een serverloze backend-functie - niet een schuifje dat u aanzet in de instellingen.
 
-**Databaseverbindingen raken uitgeput.** Uw applicatie communiceert met een database, en elke bezoekerssessie opent een verbinding. Ontwikkelverkeer put die pool nooit uit. Echt verkeer doet dat wel, en wanneer dat gebeurt, is het symptoom dat de site vlekkeloos werkt voor de eerste dertig bezoekers en foutmeldingen geeft voor iedereen daarna — exact op het moment dat u dat het minst kunt gebruiken.
+**Databaseverbindingen raken uitgeput.** Uw applicatie communiceert met een database, en elke bezoekerssessie opent een verbinding. Ontwikkelverkeer put die pool nooit uit. Echt verkeer doet dat wel, en wanneer dat gebeurt, is het symptoom dat de site vlekkeloos werkt voor de eerste dertig bezoekers en foutmeldingen geeft voor iedereen daarna - exact op het moment dat u dat het minst kunt gebruiken.
 
-**Bestandsuploads zijn niet langer gratis.** Als uw applicatie gebruikers toestaat iets te uploaden — een profielfoto, een document, een screenshot van een baanreservering — moet die data ergens worden opgeslagen onder strikte regels over bestandsgrootte, type en toegangsrechten. Door AI gegenereerde apps accepteren doorgaans blindelings alles wat wordt aangeboden, wat betekent dat zowel uw opslagfactuur als uw beveiligingsrisico meeschaalt met uw minst voorzichtige gebruiker.
+**Bestandsuploads zijn niet langer gratis.** Als uw applicatie gebruikers toestaat iets te uploaden - een profielfoto, een document, een screenshot van een baanreservering - moet die data ergens worden opgeslagen onder strikte regels over bestandsgrootte, type en toegangsrechten. Door AI gegenereerde apps accepteren doorgaans blindelings alles wat wordt aangeboden, wat betekent dat zowel uw opslagfactuur als uw beveiligingsrisico meeschaalt met uw minst voorzichtige gebruiker.
 
 ## Uw Database Draait Ergens Heel Anders
 
@@ -48,7 +48,7 @@ Dit is het onderdeel dat niet-technische oprichters het meest verrast, en het ve
 
 De meeste Lovable-projecten slaan hun gegevens op in Supabase. Dat Supabase-project heeft zijn eigen regio, zijn eigen back-upinstellingen, zijn eigen beveiligingsregels en zijn eigen factuur. U kunt de hosting van uw frontend wijzigen zonder de database aan te raken, en u kunt uw volledige database kwijtraken terwijl uw frontend er kerngezond blijft uitzien.
 
-Daaruit volgen twee consequenties. Ten eerste: wanneer u vraagt "waar wordt mijn app gehost?", stelt u in werkelijkheid twee vragen, en de datavraag weegt zwaarder, want een frontend kan binnen een dag opnieuw worden gebouwd, maar een klantendatabase niet. Ten tweede: de regio waarin uw Supabase-project draait, is gekozen bij het aanmaken, vaak standaard, en voor Europese oprichters bevindt die standaardregio zich dikwijls buiten Europa (zoals in de VS). Dit later verplaatsen is een volledige migratie, geen simpele instelling — exporteren, herstellen, verifiëren en overzetten — dus het loont om dit nu te controleren terwijl het u slechts één keuzemenu kost.
+Daaruit volgen twee consequenties. Ten eerste: wanneer u vraagt "waar wordt mijn app gehost?", stelt u in werkelijkheid twee vragen, en de datavraag weegt zwaarder, want een frontend kan binnen een dag opnieuw worden gebouwd, maar een klantendatabase niet. Ten tweede: de regio waarin uw Supabase-project draait, is gekozen bij het aanmaken, vaak standaard, en voor Europese oprichters bevindt die standaardregio zich dikwijls buiten Europa (zoals in de VS). Dit later verplaatsen is een volledige migratie, geen simpele instelling - exporteren, herstellen, verifiëren en overzetten - dus het loont om dit nu te controleren terwijl het u slechts één keuzemenu kost.
 
 ## "Gedeployd" en "Gelanceerd" Zijn Twee Verschillende Begrippen
 
@@ -73,7 +73,7 @@ Oprichters slaan dit vaak over omdat het voelt als overbodige enterprise-rompslo
 
 Stel uzelf één vraag: als uw database op dit moment volledig zou worden gewist, wat bent u dan kwijt?
 
-Voor de meeste vroege Lovable-apps is het eerlijke antwoord: "alles, en ik weet niet zeker of er een kopie bestaat." Beheerde databaseproviders bieden doorgaans back-ups aan, soms enkel op betaalde abonnementen en vaak met een kortere bewaartermijn dan oprichters veronderstellen. Het cruciale detail is niet of er back-ups bestaan, maar of iemand er ooit een heeft teruggezet — een ongeteste back-up is een hypothese, geen vangnet.
+Voor de meeste vroege Lovable-apps is het eerlijke antwoord: "alles, en ik weet niet zeker of er een kopie bestaat." Beheerde databaseproviders bieden doorgaans back-ups aan, soms enkel op betaalde abonnementen en vaak met een kortere bewaartermijn dan oprichters veronderstellen. Het cruciale detail is niet of er back-ups bestaan, maar of iemand er ooit een heeft teruggezet - een ongeteste back-up is een hypothese, geen vangnet.
 
 ## Uw Drie Realistische Hostingopties
 
@@ -98,7 +98,7 @@ Kunt u zes van de zes vragen beantwoorden? Dan is uw app werkelijk klaar voor ee
 
 ## Van Link naar Lancering
 
-Het goede nieuws is dat dit een afgebakend stuk werk betreft, geen complete herbouw. De software-engineers van LaunchStudio nemen de frontend die u reeds heeft gebouwd — onaangeroerd — en brengen de productielaag eronder aan: omgevingsgeheimen verhuisd naar de serverzijde, databaseverbindingen netjes gepoold, hosting geconfigureerd met SSL en een betrouwbare deploy-pipeline, monitoring gekoppeld en back-ups daadwerkelijk getest. Dat is het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), doorgaans gerealiseerd binnen twee weken in plaats van maanden, met dezelfde engineeringdiscipline die Manifera al meer dan elf jaar toepast op enterprisesystemen vanuit haar kantoren in Amsterdam en Ho Chi Minh City.
+Het goede nieuws is dat dit een afgebakend stuk werk betreft, geen complete herbouw. De software-engineers van LaunchStudio nemen de frontend die u reeds heeft gebouwd - onaangeroerd - en brengen de productielaag eronder aan: omgevingsgeheimen verhuisd naar de serverzijde, databaseverbindingen netjes gepoold, hosting geconfigureerd met SSL en een betrouwbare deploy-pipeline, monitoring gekoppeld en back-ups daadwerkelijk getest. Dat is het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), doorgaans gerealiseerd binnen twee weken in plaats van maanden, met dezelfde engineeringdiscipline die Manifera al meer dan elf jaar toepast op enterprisesystemen vanuit haar kantoren in Amsterdam en Ho Chi Minh City.
 
 Wilt u liever eerst weten waar u aan toe bent voordat u toezeggingen doet? [Stuur ons uw prototypelink](https://launchstudio.eu/nl/#contact) en u ontvangt een eerlijk, direct antwoord over wat al solide is en wat als eerste aandacht vereist.
 
@@ -106,18 +106,18 @@ Wilt u liever eerst weten waar u aan toe bent voordat u toezeggingen doet? [Stuu
 
 ### Een Padel-Reserveringstool Ontmoet Zijn Eerste Drukke Maandag
 
-Bram Verhoevens applicatie, CourtSlot, bediende drie padelclubs in de regio Rotterdam. Hij lanceerde de app door op een zondagavond de Lovable preview-link te mailen naar de ledenbestanden van de clubs — in totaal circa 900 mensen. Tegen maandagochtend probeerden ongeveer zestig van hen binnen hetzelfde tijdvak van twintig minuten een baan te reserveren.
+Bram Verhoevens applicatie, CourtSlot, bediende drie padelclubs in de regio Rotterdam. Hij lanceerde de app door op een zondagavond de Lovable preview-link te mailen naar de ledenbestanden van de clubs - in totaal circa 900 mensen. Tegen maandagochtend probeerden ongeveer zestig van hen binnen hetzelfde tijdvak van twintig minuten een baan te reserveren.
 
 De frontend hield stand. De database niet: verbindingen werden per sessie geopend en nooit gepoold, waardoor leden vanaf nummer eenendertig een leeg scherm zagen zonder enige toelichting. Twee leden belden de club, de club belde Bram, en Bram had geen logs om te bekijken omdat error tracking nooit was ingesteld. Tijdens zijn onderzoek ontdekte hij bovendien dat het Supabase-project draaide in een Amerikaanse regio en dat zijn reserverings-API-sleutel open en bloot leesbaar was in de paginabroncode.
 
 Het herstelwerk nam acht werkdagen in beslag: connection pooling en query-optimalisaties doorgevoerd, de API-sleutel verplaatst naar een serverless backend-functie, de database gemigreerd naar een EU-regio met een geteste herstelprocedure, hosting verplaatst naar een volwaardige deployment-pipeline met staging-omgeving, en uptime- plus foutmonitoring gekoppeld aan zijn telefoon. De frontend die hij in Lovable had gebouwd bleef volledig intact.
 
-**Resultaat:** CourtSlot verwerkte zes weken later een lancering voor 400 leden van een vierde club zonder enig incident. En van de enige storing die zich daarna nog voordeed — een netwerkprobleem bij de provider van vier minuten — werd Bram gewaarschuwd via zijn telefoon in plaats van door een verontwaardigde clubmanager.
+**Resultaat:** CourtSlot verwerkte zes weken later een lancering voor 400 leden van een vierde club zonder enig incident. En van de enige storing die zich daarna nog voordeed - een netwerkprobleem bij de provider van vier minuten - werd Bram gewaarschuwd via zijn telefoon in plaats van door een verontwaardigde clubmanager.
 
 > *"Ik dacht dat hosting gewoon een vinkje was dat je aanzet. Het bleek het verschil te zijn tussen mensen die een baan boeken en mensen die de club bellen om over mij te klagen."*
-> — **Bram Verhoeven, Oprichter, CourtSlot (Rotterdam)**
+> - **Bram Verhoeven, Oprichter, CourtSlot (Rotterdam)**
 
-**Kosten & Doorlooptijd:** €2.400 (Launch Ready-pakket: hosting, databasemigratie, geheimenbeheer en monitoring) — live in 8 werkdagen, plus managed hosting voor €49/maand.
+**Kosten & Doorlooptijd:** €2.400 (Launch Ready-pakket: hosting, databasemigratie, geheimenbeheer en monitoring) - live in 8 werkdagen, plus managed hosting voor €49/maand.
 
 ---
 
@@ -125,7 +125,7 @@ Het herstelwerk nam acht werkdagen in beslag: connection pooling en query-optima
 
 ### Kan ik de Lovable preview-link niet gewoon blijven gebruiken als mijn echte app?
 
-Voor een kleine interne tool of een vroege pilot met een handvol bekenden kan dat soms wel. Het wordt echter direct een probleem zodra u betalende klanten heeft, echte persoonsgegevens verwerkt of te maken krijgt với piekverkeer — preview-omgevingen zijn immers ontworpen voor iteratie, niet voor hoge gelijktijdigheid, uptime-garanties of herstel na incidenten.
+Voor een kleine interne tool of een vroege pilot met een handvol bekenden kan dat soms wel. Het wordt echter direct een probleem zodra u betalende klanten heeft, echte persoonsgegevens verwerkt of te maken krijgt với piekverkeer - preview-omgevingen zijn immers ontworpen voor iteratie, niet voor hoge gelijktijdigheid, uptime-garanties of herstel na incidenten.
 
 ### Betekent het verhuizen van hosting dat mijn app opnieuw gebouwd moet worden?
 
@@ -133,11 +133,11 @@ Nee. De frontend die u heeft gebouwd blijft precies zoals hij is. Het verplaatse
 
 ### Wordt mijn Supabase-database beïnvloed als ik de frontend-hosting verander?
 
-Niet automatisch — het zijn afzonderlijke diensten met afzonderlijke instellingen. Die onafhankelijkheid werkt twee kanten op: u kunt de hosting verplaatsen zonder gegevens aan te raken, maar u kunt ook een perfect werkende frontend hebben die gekoppeld is aan een database zonder back-ups en in de verkeerde regio.
+Niet automatisch - het zijn afzonderlijke diensten met afzonderlijke instellingen. Die onafhankelijkheid werkt twee kanten op: u kunt de hosting verplaatsen zonder gegevens aan te raken, maar u kunt ook een perfect werkende frontend hebben die gekoppeld is aan een database zonder back-ups en in de verkeerde regio.
 
 ### Hoeveel verkeer kan een standaard Lovable-opstelling eigenlijk aan?
 
-Er is geen eenduidig getal te geven, omdat dit afhangt van wat elke pagina uitvoert en hoe database-queries zijn opgebouwd. De meer relevante vraag is wat er gebeurt tijdens uw realistische piekbelasting — zoals een e-mailcampagne bij de lancering of media-aandacht — en of er ergens in de keten een harde limiet zit die u op dat moment raakt.
+Er is geen eenduidig getal te geven, omdat dit afhangt van wat elke pagina uitvoert en hoe database-queries zijn opgebouwd. De meer relevante vraag is wat er gebeurt tijdens uw realistische piekbelasting - zoals een e-mailcampagne bij de lancering of media-aandacht - en of er ergens in de keten een harde limiet zit die u op dat moment raakt.
 
 ### Wat omvat managed hosting eigenlijk precies?
 

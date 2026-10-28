@@ -6,7 +6,7 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **Repeated missed milestones without a credible explanation or corrected plan:** — one missed deadline with a clear reason and adjustment is normal project friction.
+✅ **Repeated missed milestones without a credible explanation or corrected plan:** - one missed deadline with a clear reason and adjustment is normal project friction.
 ✅ **Deteriorating communication quality over time:** especially defensive or evasive responses to direct questions about progress or problems, rather than transparent status updates even when the news is bad.
 ✅ **Technical debt or quality issues discovered that the vendor was aware of and didn't disclose:** revealing a trust problem beyond the specific technical issue itself.
 

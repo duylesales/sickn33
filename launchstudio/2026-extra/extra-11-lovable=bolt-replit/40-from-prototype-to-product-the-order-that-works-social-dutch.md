@@ -1,4 +1,4 @@
-🗺️ Bo Klaassen bouwde Groeiplan in Lovable voor 90 businesscoaches in Utrecht en Amersfoort. Ze besteedde drie maanden aan het verfijnen van de UI, marketing en een tweede taal, maar stelde security uit. Toen een coachingnetwerk de app toetste, bleek dat coaches elkaars cliëntdossiers konden inzien — wat bijna het einde van haar startup betekende. 😳
+🗺️ Bo Klaassen bouwde Groeiplan in Lovable voor 90 businesscoaches in Utrecht en Amersfoort. Ze besteedde drie maanden aan het verfijnen van de UI, marketing en een tweede taal, maar stelde security uit. Toen een coachingnetwerk de app toetste, bleek dat coaches elkaars cliëntdossiers konden inzien - wat bijna het einde van haar startup betekende. 😳
 
 Veel oprichters polijsten eerst de buitenkant en bewaren de fundering voor het laatst. De juiste volgorde van prototype naar product:
 

@@ -1,4 +1,4 @@
-⚖️ Layla, een juridisch assistent, bouwde een contract-zoekmachine met **Lovable** — maar het vanaf nul zelf bouwen van vector search bleek te traag en technisch te complex om te lanceren. 📚
+⚖️ Layla, een juridisch assistent, bouwde een contract-zoekmachine met **Lovable** - maar het vanaf nul zelf bouwen van vector search bleek te traag en technisch te complex om te lanceren. 📚
 
 Een verkeerde beslissing bij Kopen versus Zelf Bouwen kost u ofwel zes maanden ontwikkeltijd voor iets wat al bestaat, ofwel uw concurrentievoordeel en winstmarge. 🧠
 
@@ -12,7 +12,7 @@ Een verkeerde beslissing bij Kopen versus Zelf Bouwen kost u ofwel zes maanden o
 
 Bij **LaunchStudio** adviseren en bouwen we sinds 2014 enterprise-architecturen via Manifera, met meer dan 160 gerealiseerde projecten. 🛡️
 
-LaunchStudio integreerde managed vector search voor Layla — zoekopdrachten werden uiterst accuraat en zoektijden daalden met 80%. (€2.200 (Vector Search Integratie Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+LaunchStudio integreerde managed vector search voor Layla - zoekopdrachten werden uiterst accuraat en zoektijden daalden met 80%. (€2.200 (Vector Search Integratie Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Bereken uw Kopen versus Bouwen-opties met onze prijscalculator: https://launchstudio.eu/nl/blog/buy-vs-build-decision-ai-infrastructure
 

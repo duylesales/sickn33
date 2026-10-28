@@ -1,9 +1,9 @@
-🚨 Hij schreef een test die controleerde of zijn AI exact een bepaalde tekst teruggaf. De test faalde willekeurig — zelfs toen de AI perfect werkte. Dit is waarom: 🤯
+🚨 Hij schreef een test die controleerde of zijn AI exact een bepaalde tekst teruggaf. De test faalde willekeurig - zelfs toen de AI perfect werkte. Dit is waarom: 🤯
 
 Traditionele softwaretests gaan uit van: dezelfde invoer = altijd exact dezelfde uitvoer. AI breekt die regel volledig. AI testen "als normale code" werkt simpelweg niet: 😱
 
 ❌ Exacte woordtests falen voortdurend door onschuldige synoniemen
-❌ Gefrustreerd stopte hij helemaal met testen — en vertrouwde op snelle steekproefjes
+❌ Gefrustreerd stopte hij helemaal met testen - en vertrouwde op snelle steekproefjes
 ❌ Een echte bug glipte door: het woonoppervlak werd stilletjes weggelaten in advertentieteksten
 
 Wat u wél moet testen bij AI: ✅

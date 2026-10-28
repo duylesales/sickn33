@@ -1,4 +1,4 @@
-💡 Every organisation that wants to use AI eventually finds the same bottleneck. Not the model — the data: definitions that differ per department, unclear ownership and uncertainty about what may lawfully be used.
+💡 Every organisation that wants to use AI eventually finds the same bottleneck. Not the model - the data: definitions that differ per department, unclear ownership and uncertainty about what may lawfully be used.
 
 📋 That is why data governance has moved from paperwork to strategy. Roles include data steward, data quality specialist, metadata and catalogue specialist, data architect, chief data officer and, increasingly, AI governance specialist.
 

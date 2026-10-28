@@ -120,13 +120,13 @@ None of this requires martyrdom. It simply means leaving in a way you would be c
 
 When you resign, there is a reasonable chance of a counteroffer, particularly if you are hard to replace. Think about it in advance, because the moment is emotionally loaded.
 
-Ask what the counteroffer actually changes. If you are leaving because the work is not interesting, the manager is difficult or the direction is wrong, more money does not address it. If you are leaving primarily because you are underpaid and everything else is good, a counteroffer can be legitimate — though it is worth asking why the correction required a resignation.
+Ask what the counteroffer actually changes. If you are leaving because the work is not interesting, the manager is difficult or the direction is wrong, more money does not address it. If you are leaving primarily because you are underpaid and everything else is good, a counteroffer can be legitimate - though it is worth asking why the correction required a resignation.
 
 Consider the aftermath. In many organisations you are now known as someone who looked, which can affect how you are considered for long-term projects. In others it is treated as normal. You know which kind of place you work in.
 
 Whatever you decide, do not use an offer you will not accept as leverage. It works occasionally and damages trust permanently when it does not.
 
-If you accept the counteroffer, tell the other employer promptly and honestly. If you decline it, thank your manager genuinely — resignation conversations handled with grace are remembered as long as the ungraceful ones.
+If you accept the counteroffer, tell the other employer promptly and honestly. If you decline it, thank your manager genuinely - resignation conversations handled with grace are remembered as long as the ungraceful ones.
 
 ## Resigning and Leaving Well
 
@@ -144,7 +144,7 @@ Finally, take a break between jobs if you possibly can, even a week. Starting a 
 
 Searching while working is tiring in a specific way: it adds a second set of obligations without removing the first, and rejection arrives while you are already depleted.
 
-A few things genuinely help. Keep a written record of what you have done rather than what you have achieved, because outcomes are slow and effort is not. Limit applications so that each one is worth the energy; ten considered applications will outperform fifty rushed ones and cost less. Expect a hit rate that feels low — a handful of interviews from twenty applications is normal in European AI hiring, even for strong candidates — so that it does not read as a verdict on you.
+A few things genuinely help. Keep a written record of what you have done rather than what you have achieved, because outcomes are slow and effort is not. Limit applications so that each one is worth the energy; ten considered applications will outperform fifty rushed ones and cost less. Expect a hit rate that feels low - a handful of interviews from twenty applications is normal in European AI hiring, even for strong candidates - so that it does not read as a verdict on you.
 
 Tell one person outside work. A partner or friend who knows what you are doing makes the process less isolating and provides a reality check when a single rejection starts to feel like a pattern.
 

@@ -8,7 +8,7 @@ Two DevOps vendors, two proposals. One pushed multi-cloud "for resilience." Only
 **The Manifera Solution:**
 ✅ **Risk-Profile-First Architecture:** We recommend multi-cloud only when scale, regulation, or existential risk actually justifies it.
 ✅ **Multi-Region Resilience:** Single-cloud, well-architected setups routinely hit 99.95%+ availability.
-✅ **Transparent Cost Modeling:** The real engineering headcount cost, stated upfront — not buried in the proposal.
+✅ **Transparent Cost Modeling:** The real engineering headcount cost, stated upfront - not buried in the proposal.
 
 Sophisticated-sounding isn't the same as right-sized. 🎯
 

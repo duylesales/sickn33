@@ -79,7 +79,7 @@ The tool was so effective that Joris showed it to a friend who ran another agenc
 
 Joris confidently said €49/month. He went home and told Lovable to "add Stripe and user accounts." The AI dutifully added a Stripe checkout button to the frontend. 
 
-The next day, Joris's friend paid the €49, logged in, and immediately saw all of Joris's highly confidential client blog posts. Worse, the Stripe integration didn't actually restrict access—anyone who knew the URL could bypass the paywall completely because the API routes had no authentication middleware. 
+The next day, Joris's friend paid the €49, logged in, and immediately saw all of Joris's highly confidential client blog posts. Worse, the Stripe integration didn't actually restrict access - anyone who knew the URL could bypass the paywall completely because the API routes had no authentication middleware. 
 
 Realizing he had a massive security breach on his hands, Joris took the tool offline and contacted LaunchStudio.
 
@@ -87,12 +87,12 @@ The Manifera engineering team conducted a rapid architectural review. The core A
 
 In 11 business days, LaunchStudio built the SaaS infrastructure. They implemented Supabase authentication tied to strict RLS policies, ensuring absolute data isolation between agencies. They built a secure Node.js backend to handle the Stripe webhooks, automatically granting and revoking access based on subscription status. Finally, they implemented a token-tracking system so Joris could offer a "Basic" tier (100 checks/month) and a "Pro" tier (unlimited checks).
 
-**Result:** EEAT-Checker relaunched as a true B2B SaaS. Because the data isolation was now mathematically secure, Joris aggressively marketed the tool. Within 6 months, EEAT-Checker acquired 140 agency customers. It now generates €8,400 in MRR—more profit than Joris's actual SEO agency services.
+**Result:** EEAT-Checker relaunched as a true B2B SaaS. Because the data isolation was now mathematically secure, Joris aggressively marketed the tool. Within 6 months, EEAT-Checker acquired 140 agency customers. It now generates €8,400 in MRR - more profit than Joris's actual SEO agency services.
 
 > *"I am a marketer. I know how to design a tool that marketers want. But I had no idea how to build the billing and security infrastructure to actually sell it. LaunchStudio took my internal script and turned it into a software company."*
-> — **Joris van der Meer, Founder, EEAT-Checker (Utrecht)**
+> - **Joris van der Meer, Founder, EEAT-Checker (Utrecht)**
 
-**Cost & Timeline:** €4,200 (Launch & Grow Package) — production-ready and deployed in 11 business days.
+**Cost & Timeline:** €4,200 (Launch & Grow Package) - production-ready and deployed in 11 business days.
 
 ---
 

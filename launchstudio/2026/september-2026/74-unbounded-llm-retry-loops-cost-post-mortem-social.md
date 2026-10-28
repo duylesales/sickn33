@@ -1,4 +1,4 @@
-💸 Niels built a document summarizer using **Cursor** — one malformed PDF triggered an uncapped retry loop, and a $180/month OpenAI budget became a $6,400 bill in nine days. 😳
+💸 Niels built a document summarizer using **Cursor** - one malformed PDF triggered an uncapped retry loop, and a $180/month OpenAI budget became a $6,400 bill in nine days. 😳
 
 If your AI SaaS retries failed LLM calls without a max attempt count, exponential backoff, or an enforced spend ceiling, a single bad input can turn into a five-figure invoice with zero visible errors along the way.
 
@@ -12,7 +12,7 @@ If your AI SaaS retries failed LLM calls without a max attempt count, exponentia
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Niels's OpenAI spend returned to a predictable $150-220/month, and the next malformed document cost under $2 instead of a five-figure risk (€1,900 (Launch & Grow Package) — implemented in 7 business days.). 🚀
+Niels's OpenAI spend returned to a predictable $150-220/month, and the next malformed document cost under $2 instead of a five-figure risk (€1,900 (Launch & Grow Package) - implemented in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/unbounded-llm-retry-loops-cost-post-mortem
 

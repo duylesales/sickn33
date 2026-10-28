@@ -35,7 +35,7 @@ Content Format: Policy Brief
 }
 </script>
 
-An in-person regional job fair has a built-in filter: every employer present is physically located nearby, and every attendee has chosen to show up in that specific place. When such an event moves online — for reach, cost or convenience — that geographic filter often disappears unless someone deliberately rebuilds it.
+An in-person regional job fair has a built-in filter: every employer present is physically located nearby, and every attendee has chosen to show up in that specific place. When such an event moves online - for reach, cost or convenience - that geographic filter often disappears unless someone deliberately rebuilds it.
 
 ## What Gets Lost in the Move Online
 
@@ -43,7 +43,7 @@ A generic virtual job fair platform typically shows employers and attendees from
 
 ## What a Specialist, Address-Level List Restores
 
-Pointing attendees towards a resource that shows AI, machine learning and data vacancies at exact address level, filtered by distance, restores the local specificity a generic virtual fair platform loses — without requiring the organising body to build that filtering capability itself.
+Pointing attendees towards a resource that shows AI, machine learning and data vacancies at exact address level, filtered by distance, restores the local specificity a generic virtual fair platform loses - without requiring the organising body to build that filtering capability itself.
 
 ## The Named Job Fair Landscape in the Netherlands
 
@@ -55,7 +55,7 @@ Job fairs in the Netherlands come in several forms, each with its own organisers
 
 **Sector and regional career events.** Business associations, regional development organisations and sector bodies organise career events focused on particular regions or sectors, such as technology or logistics.
 
-**European online events.** The **EURES** network organises **European Online Job Days**, virtual recruitment events connecting employers and job seekers across Europe — useful for cross-border and international recruitment, but by design not locally filtered.
+**European online events.** The **EURES** network organises **European Online Job Days**, virtual recruitment events connecting employers and job seekers across Europe - useful for cross-border and international recruitment, but by design not locally filtered.
 
 ## How This Pairs With an Existing Event
 
@@ -67,7 +67,7 @@ Job fairs in the Netherlands come in several forms, each with its own organisers
 
 ## A Deeper Look at Why Geographic Specificity Was the Hidden Value All Along
 
-Organisers moving a job fair online often focus on replicating the visible features of the in-person event — booths, scheduled conversations, a registration system — without noticing that the event's real value partly came from an invisible feature: everyone present was already geographically filtered by having shown up in person. That filter has no obvious digital equivalent unless someone deliberately rebuilds it.
+Organisers moving a job fair online often focus on replicating the visible features of the in-person event - booths, scheduled conversations, a registration system - without noticing that the event's real value partly came from an invisible feature: everyone present was already geographically filtered by having shown up in person. That filter has no obvious digital equivalent unless someone deliberately rebuilds it.
 
 ## Comparing Three Ways to Handle the Format Change
 
@@ -149,7 +149,7 @@ Employers often measure a job fair by the number of conversations, not by their 
 
 ## Why This Insight Applies Beyond AI and Data Job Fairs
 
-While this site focuses on AI, machine learning and data hiring, the underlying insight — that moving an inherently local event online silently discards its geographic filter unless someone rebuilds it — applies to any regional job fair in any industry. Organisers of fairs for other sectors face the identical structural problem and could apply the same fix.
+While this site focuses on AI, machine learning and data hiring, the underlying insight - that moving an inherently local event online silently discards its geographic filter unless someone rebuilds it - applies to any regional job fair in any industry. Organisers of fairs for other sectors face the identical structural problem and could apply the same fix.
 
 ## A Concrete Scenario
 
@@ -192,7 +192,7 @@ A generic virtual platform typically shows employers and attendees from anywhere
 By showing AI, machine learning and data vacancies at exact address level, filtered by distance, restoring local specificity without the organiser building that filtering capability.
 
 ### (Scenario: organiser wondering if this replaces employer booths) Does this replace the value of employer booths at a job fair?
-No — it's a complement, not a replacement, for the direct conversations and booths that remain the core value of a fair.
+No - it's a complement, not a replacement, for the direct conversations and booths that remain the core value of a fair.
 
 ### (Scenario: organiser wondering about timing) Should this resource be shared before, during or after the event?
 Both before (for research) and after (as an ongoing reference), since a fair is a single date but hiring continues beyond it.
@@ -207,7 +207,7 @@ Share a link to a local, distance-filtered AI, machine learning and data vacancy
   "mainEntity": [
     {"@type": "Question", "name": "Why does a job fair feel less locally relevant after moving online?", "acceptedAnswer": {"@type": "Answer", "text": "A generic virtual platform typically shows employers from anywhere, diluting the geographic filter of the original event."}},
     {"@type": "Question", "name": "How can a specialist job list help restore that local specificity?", "acceptedAnswer": {"@type": "Answer", "text": "By showing vacancies at exact address level, filtered by distance, without the organiser building that capability."}},
-    {"@type": "Question", "name": "Does this replace the value of employer booths at a job fair?", "acceptedAnswer": {"@type": "Answer", "text": "No — it's a complement, not a replacement, for direct conversations and booths."}},
+    {"@type": "Question", "name": "Does this replace the value of employer booths at a job fair?", "acceptedAnswer": {"@type": "Answer", "text": "No - it's a complement, not a replacement, for direct conversations and booths."}},
     {"@type": "Question", "name": "Should this resource be shared before, during or after the event?", "acceptedAnswer": {"@type": "Answer", "text": "Both before and after, since hiring continues beyond a single fair date."}},
     {"@type": "Question", "name": "What's a low-effort way to try this for an upcoming fair?", "acceptedAnswer": {"@type": "Answer", "text": "Share a link to a local, distance-filtered vacancy list in event materials."}}
   ]

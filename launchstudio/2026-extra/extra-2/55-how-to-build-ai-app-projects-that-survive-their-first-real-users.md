@@ -35,7 +35,7 @@ Building AI app projects that genuinely survive their first real users means ant
 
 ## Step One: Understand What a Refund Feature Needs to Verify
 
-A refund request feature needs to confirm, before processing anything, that the specific order being referenced genuinely exists, genuinely belongs to the requesting customer, and genuinely hasn't already been refunded — three separate checks that each need to happen, not just the surface-level "does this look like a valid refund request" check that a form's basic structure alone provides.
+A refund request feature needs to confirm, before processing anything, that the specific order being referenced genuinely exists, genuinely belongs to the requesting customer, and genuinely hasn't already been refunded - three separate checks that each need to happen, not just the surface-level "does this look like a valid refund request" check that a form's basic structure alone provides.
 
 ## Step Two: Recognize Why AI-Generated Refund Flows Sometimes Skip This
 
@@ -43,11 +43,11 @@ Building a refund form that accepts an order reference and a reason, and process
 
 ## Step Three: See Why This Passes Every Test Involving Real, Correct Orders
 
-Testing a refund feature using real, existing orders that genuinely belong to the test account produces correct results every time, because the described scenario (a legitimate customer requesting a refund for their own real order) is exactly what the feature was built and tested against — nothing about this natural testing process reveals what happens if someone references an order that doesn't actually exist or doesn't belong to them. A founder testing their own refund flow naturally uses their own test account, referencing their own test orders, because that's the only scenario readily available to test against — there's no natural reason to construct a fabricated order number and see what happens, since doing so requires deliberately trying to break the feature rather than confirming it works as intended.
+Testing a refund feature using real, existing orders that genuinely belong to the test account produces correct results every time, because the described scenario (a legitimate customer requesting a refund for their own real order) is exactly what the feature was built and tested against - nothing about this natural testing process reveals what happens if someone references an order that doesn't actually exist or doesn't belong to them. A founder testing their own refund flow naturally uses their own test account, referencing their own test orders, because that's the only scenario readily available to test against - there's no natural reason to construct a fabricated order number and see what happens, since doing so requires deliberately trying to break the feature rather than confirming it works as intended.
 
 ## Step Four: Understand the Specific Fraud Risk This Creates
 
-Without proper verification, a refund request referencing a fabricated or altered order reference can potentially be processed and paid out regardless of whether any such order genuinely exists, effectively creating a mechanism for extracting money from the business with no legitimate underlying transaction at all — a materially different and more serious risk than a simple UI bug. This is also a risk that scales in a specific, unfortunate direction: unlike a UI bug that a handful of users might stumble into by accident, an unverified refund path is discoverable and repeatable — anyone who figures out the pattern once can apply it again and again, deliberately, until someone notices it in the underlying financial records rather than in any customer-facing symptom.
+Without proper verification, a refund request referencing a fabricated or altered order reference can potentially be processed and paid out regardless of whether any such order genuinely exists, effectively creating a mechanism for extracting money from the business with no legitimate underlying transaction at all - a materially different and more serious risk than a simple UI bug. This is also a risk that scales in a specific, unfortunate direction: unlike a UI bug that a handful of users might stumble into by accident, an unverified refund path is discoverable and repeatable - anyone who figures out the pattern once can apply it again and again, deliberately, until someone notices it in the underlying financial records rather than in any customer-facing symptom.
 
 ## Step Five: Implement Verification Without Complicating Legitimate Refunds
 
@@ -59,29 +59,29 @@ Manifera's business-logic and fraud-prevention engineering is delivered through 
 
 ## A Checklist for Any Feature That Moves Money Based on a User's Claim
 
-Refunds are one specific instance of a broader category: any feature where a user references something (an order, a coupon, a referral, a prior transaction) and the system takes an action — usually involving money — based on that reference being genuine. The same checklist applies across all of them.
+Refunds are one specific instance of a broader category: any feature where a user references something (an order, a coupon, a referral, a prior transaction) and the system takes an action - usually involving money - based on that reference being genuine. The same checklist applies across all of them.
 
 **Does the feature verify the referenced thing actually exists?**
 
-A refund, credit, or payout request referencing an order, coupon code, or transaction ID should fail immediately if that specific reference doesn't correspond to a real record — not process anyway on the assumption that a plausible-looking reference is probably genuine.
+A refund, credit, or payout request referencing an order, coupon code, or transaction ID should fail immediately if that specific reference doesn't correspond to a real record - not process anyway on the assumption that a plausible-looking reference is probably genuine.
 
 **Does the feature verify the requester actually owns or is entitled to it?**
 
-Existence alone isn't enough — a real order belonging to a different customer entirely is still a real order, and a feature that verifies existence but not ownership can still be exploited by anyone who can guess or discover another customer's order reference.
+Existence alone isn't enough - a real order belonging to a different customer entirely is still a real order, and a feature that verifies existence but not ownership can still be exploited by anyone who can guess or discover another customer's order reference.
 
 **Does the feature check whether the action has already happened?**
 
-An order that's already been refunded once, a coupon that's already been redeemed, a referral bonus that's already been paid out — without a check against prior status, the same legitimate reference can potentially be reused repeatedly for repeated payouts.
+An order that's already been refunded once, a coupon that's already been redeemed, a referral bonus that's already been paid out - without a check against prior status, the same legitimate reference can potentially be reused repeatedly for repeated payouts.
 
 **Does the feature log who requested what, and when, in a way a human can actually review?**
 
-Even with the checks above in place, a clear, reviewable log of every payout-triggering action gives a founder or their finance function a way to spot an unusual pattern after the fact — a single account requesting an unusual number of refunds in a short window, for instance — that automated checks alone might not flag as invalid on their own.
+Even with the checks above in place, a clear, reviewable log of every payout-triggering action gives a founder or their finance function a way to spot an unusual pattern after the fact - a single account requesting an unusual number of refunds in a short window, for instance - that automated checks alone might not flag as invalid on their own.
 
 **Apply the same checklist beyond refunds specifically**
 
 Loyalty point redemption, referral bonuses, discount code application, and any "apply this credit to my account" feature all share the same underlying shape and the same underlying risk if built quickly from a description that only specified the happy path: a real customer submitting a genuine, valid request.
 
-A founder reviewing their own product against these four questions for every money-moving feature, not just the obvious ones like refunds, gets a genuinely useful starting map of where a dedicated review is worth prioritizing first — the features that fail more than one of these checks are the ones where a gap is most likely already exploitable, not merely theoretical.
+A founder reviewing their own product against these four questions for every money-moving feature, not just the obvious ones like refunds, gets a genuinely useful starting map of where a dedicated review is worth prioritizing first - the features that fail more than one of these checks are the ones where a gap is most likely already exploitable, not merely theoretical.
 
 ## Real example
 
@@ -94,9 +94,9 @@ A finance review noticed several processed refunds referencing order numbers tha
 **Result:** LaunchStudio implemented proper order verification against PlantAbonnement's actual order records before any refund is processed, closing the gap and preventing further payouts against fabricated order references, without adding friction to genuine customers' legitimate refund requests.
 
 > *"We were genuinely just processing refunds trustingly, one after another, with no reason to suspect any of them weren't real until the finance review specifically flagged the mismatch. It's a strange feeling realizing you've been paying out against orders that simply didn't exist."*
-> — **Wim Peters, Founder, PlantAbonnement (Roermond)**
+> - **Wim Peters, Founder, PlantAbonnement (Roermond)**
 
-**Cost & Timeline:** €1,800 (order verification and refund logic hardening) — completed in 6 business days.
+**Cost & Timeline:** €1,800 (order verification and refund logic hardening) - completed in 6 business days.
 
 ---
 
@@ -104,23 +104,23 @@ A finance review noticed several processed refunds referencing order numbers tha
 
 ### Would a fraud-prevention specialist consider unverified refund requests a common gap in quickly built products?
 
-Yes, reasonably common — building a refund form that submits and processes a request is the directly described, obvious part of the feature, while verifying the underlying order reference against actual records is a separate, additional check that's easy to treat as implied rather than explicitly required.
+Yes, reasonably common - building a refund form that submits and processes a request is the directly described, obvious part of the feature, while verifying the underlying order reference against actual records is a separate, additional check that's easy to treat as implied rather than explicitly required.
 
 ### Does this risk only apply to subscription products, or other transaction types too?
 
-It applies to any feature processing a payout or credit based on a user-referenced transaction — refunds, credits, loyalty point redemptions, and similar features all share the same underlying need to verify the referenced transaction actually exists and matches before anything gets processed.
+It applies to any feature processing a payout or credit based on a user-referenced transaction - refunds, credits, loyalty point redemptions, and similar features all share the same underlying need to verify the referenced transaction actually exists and matches before anything gets processed.
 
-### Manifera has built fraud-resistant transactional systems for various clients — does that experience transfer meaningfully to a smaller subscription app like PlantAbonnement's?
+### Manifera has built fraud-resistant transactional systems for various clients - does that experience transfer meaningfully to a smaller subscription app like PlantAbonnement's?
 
-Yes, directly — the specific verification pattern (confirm existence, ownership, and status before processing) is a standard, repeatable practice regardless of transaction volume or company size, and applying an already-established pattern is considerably more reliable than developing an equivalent check from scratch for each new client.
+Yes, directly - the specific verification pattern (confirm existence, ownership, and status before processing) is a standard, repeatable practice regardless of transaction volume or company size, and applying an already-established pattern is considerably more reliable than developing an equivalent check from scratch for each new client.
 
-### Herre Roelevink has spoken about gaps that specifically cost real money rather than representing abstract risk — does this refund case illustrate that well?
+### Herre Roelevink has spoken about gaps that specifically cost real money rather than representing abstract risk - does this refund case illustrate that well?
 
-Very directly — unlike many purely theoretical security risks, this gap had already resulted in genuine, quantifiable financial loss before it was caught, exactly the concrete, immediately costly category of gap Roelevink's broader commentary on AI-native founders' financial exposure consistently emphasizes.
+Very directly - unlike many purely theoretical security risks, this gap had already resulted in genuine, quantifiable financial loss before it was caught, exactly the concrete, immediately costly category of gap Roelevink's broader commentary on AI-native founders' financial exposure consistently emphasizes.
 
 ### Should a founder review their own transaction records periodically to catch this kind of issue themselves, even without a full audit?
 
-Periodically reviewing refund or payout records for anything referencing orders that don't clearly correspond to a real transaction is a reasonable habit, though it's a reactive check that only catches the issue after money has already been paid out — a proactive review that verifies the underlying logic itself prevents the loss from occurring in the first place, rather than merely detecting it afterward.
+Periodically reviewing refund or payout records for anything referencing orders that don't clearly correspond to a real transaction is a reasonable habit, though it's a reactive check that only catches the issue after money has already been paid out - a proactive review that verifies the underlying logic itself prevents the loss from occurring in the first place, rather than merely detecting it afterward.
 
 <script type="application/ld+json">
 {
@@ -156,7 +156,7 @@ Periodically reviewing refund or payout records for anything referencing orders 
       "name": "Does this refund case illustrate immediately costly rather than abstract risk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very directly — this gap had already resulted in genuine, quantifiable financial loss before it was caught."
+        "text": "Very directly - this gap had already resulted in genuine, quantifiable financial loss before it was caught."
       }
     },
     {

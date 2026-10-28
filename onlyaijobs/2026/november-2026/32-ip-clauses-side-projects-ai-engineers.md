@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Machine learning engineers and data scientists are builders by nature. Many maintain open-source libraries, publish notebooks, train small models over the weekend, build tools that later become startups or contribute to community projects. At some point, a question arises that few think about in advance: does this work belong to me or to my employer? The answer in the Netherlands depends on a combination of copyright law, patent law, trade secret protection, the employment contract and — for open-source work — licences. Understanding these rules protects both your projects and your relationship with your employer.
+Machine learning engineers and data scientists are builders by nature. Many maintain open-source libraries, publish notebooks, train small models over the weekend, build tools that later become startups or contribute to community projects. At some point, a question arises that few think about in advance: does this work belong to me or to my employer? The answer in the Netherlands depends on a combination of copyright law, patent law, trade secret protection, the employment contract and - for open-source work - licences. Understanding these rules protects both your projects and your relationship with your employer.
 
 This article provides general information, not legal advice. For specific situations, consult an intellectual property or employment lawyer.
 
@@ -43,13 +43,13 @@ This article provides general information, not legal advice. For specific situat
 
 Software, documentation, notebooks and many other outputs of AI work can be protected by copyright if they are original creations. Under **Article 7 of the Dutch Copyright Act**, when an employee creates a work in the performance of their duties, the employer is considered the maker of that work, unless otherwise agreed.
 
-The key phrase is "in the performance of their duties". Work that clearly falls within your job — code written for your employer's product, models trained for your team's project — belongs to the employer. Work created outside your job, unrelated to your duties and without using employer resources, generally remains yours under the default rule.
+The key phrase is "in the performance of their duties". Work that clearly falls within your job - code written for your employer's product, models trained for your team's project - belongs to the employer. Work created outside your job, unrelated to your duties and without using employer resources, generally remains yours under the default rule.
 
 The difficult cases lie in between. A tool built in the evening that solves a problem you face at work, a library that generalises code you wrote for your employer or a model trained on your own time but using techniques developed at work can raise genuine questions.
 
 ## Patents: When the Nature of the Job Involves Inventing
 
-Most AI software is protected by copyright rather than patents, but some AI-related inventions — particularly technical applications in hardware, medical devices or industrial processes — can be patented. Under **Article 12 of the Dutch Patents Act 1995**, an employer is entitled to a patent for an invention made by an employee if the nature of the employee's position requires using special knowledge to make inventions of that kind. In some circumstances, the employee may be entitled to fair remuneration if the invention's value exceeds what can reasonably be considered covered by salary.
+Most AI software is protected by copyright rather than patents, but some AI-related inventions - particularly technical applications in hardware, medical devices or industrial processes - can be patented. Under **Article 12 of the Dutch Patents Act 1995**, an employer is entitled to a patent for an invention made by an employee if the nature of the employee's position requires using special knowledge to make inventions of that kind. In some circumstances, the employee may be entitled to fair remuneration if the invention's value exceeds what can reasonably be considered covered by salary.
 
 For researchers and engineers at companies that file patents, this means inventions related to the job generally belong to the employer, while inventions unrelated to the role may remain with the employee.
 
@@ -88,7 +88,7 @@ Open-source work adds another layer.
 
 **Contributions made as part of your job.** If your employer encourages or requires contributions to open-source projects, the employer typically owns the copyright in those contributions and decides under which licence they are released. Many companies have open-source policies that specify approval processes.
 
-**Contributions made in your own time.** Personal contributions to open-source projects generally belong to you, unless your contract assigns them to the employer. Many projects require contributors to sign a contributor licence agreement, in which you confirm you have the right to contribute — something you should only do if you are sure your employer does not claim the rights.
+**Contributions made in your own time.** Personal contributions to open-source projects generally belong to you, unless your contract assigns them to the employer. Many projects require contributors to sign a contributor licence agreement, in which you confirm you have the right to contribute - something you should only do if you are sure your employer does not claim the rights.
 
 **Licences.** Permissive licences such as the **MIT License** and the **Apache License 2.0** allow broad reuse, while copyleft licences such as the **GNU General Public License** require derivative works to be distributed under the same licence. Using copyleft code in employer products without approval can create compliance problems.
 
@@ -106,17 +106,17 @@ In practice, the boundary can be subtle. Rewriting a former employer's proprieta
 
 Good practices when leaving include returning or deleting all company data and equipment, not forwarding work documents to personal accounts and being cautious about recreating specific internal tools. New employers also have an interest here: most will explicitly ask new hires not to bring confidential information from previous jobs, to avoid legal exposure.
 
-For open-source projects you maintained as part of your job, check whether you can continue contributing personally after leaving — many projects welcome this, but the previous employer may control the project's governance.
+For open-source projects you maintained as part of your job, check whether you can continue contributing personally after leaving - many projects welcome this, but the previous employer may control the project's governance.
 
 ## A Concrete Scenario: The Weekend Library That Became a Product
 
-A machine learning engineer at a logistics company builds an open-source library in the evenings for time series forecasting of intermittent demand — a problem she encountered at work. The library becomes popular, and a startup offers to hire her to build a commercial product on top of it.
+A machine learning engineer at a logistics company builds an open-source library in the evenings for time series forecasting of intermittent demand - a problem she encountered at work. The library becomes popular, and a startup offers to hire her to build a commercial product on top of it.
 
-Her employer's legal department raises concerns: the library solves a problem closely related to her job, and some ideas resemble internal work. Her contract contains a broad IP clause covering inventions "related to the business". After review, it becomes clear that she wrote the library on her own equipment, outside working hours, without using internal code or data, and that she informed her manager when she started. The employer agrees to confirm in writing that it does not claim rights to the library. The situation is resolved because she kept clear boundaries — and documented them.
+Her employer's legal department raises concerns: the library solves a problem closely related to her job, and some ideas resemble internal work. Her contract contains a broad IP clause covering inventions "related to the business". After review, it becomes clear that she wrote the library on her own equipment, outside working hours, without using internal code or data, and that she informed her manager when she started. The employer agrees to confirm in writing that it does not claim rights to the library. The situation is resolved because she kept clear boundaries - and documented them.
 
 ## A Common Misconception
 
-A widespread misconception is that anything created outside working hours automatically belongs to the employee. In reality, the connection to the job, the use of employer resources and information and the contract terms all matter. The reverse misconception — that employers own everything an employee ever creates — is also incorrect. The truth lies in the details, which is why clarity at the start of employment and transparency during it are so valuable.
+A widespread misconception is that anything created outside working hours automatically belongs to the employee. In reality, the connection to the job, the use of employer resources and information and the contract terms all matter. The reverse misconception - that employers own everything an employee ever creates - is also incorrect. The truth lies in the details, which is why clarity at the start of employment and transparency during it are so valuable.
 
 ## Practical Steps to Protect Your Side Projects
 
@@ -142,19 +142,19 @@ A widespread misconception is that anything created outside working hours automa
 - Under the Dutch Copyright Act, employers own works employees create in the performance of their duties; unrelated work created independently generally remains with the employee.
 - The Patents Act gives employers rights to inventions when the nature of the job involves making such inventions, sometimes with fair remuneration for the employee.
 - Contract IP clauses often go further than the law; read and negotiate them before signing.
-- Trade secret, database and copyright rules — including text and data mining opt-outs — limit what employer information and external data can be used in side projects.
+- Trade secret, database and copyright rules - including text and data mining opt-outs - limit what employer information and external data can be used in side projects.
 - Side activity restrictions require objective justification, and transparency with your employer is the best protection for your projects.
 
 ## Where to Start
 
-Before your next job change, list your personal and open-source projects, read the IP clauses carefully and agree on clear boundaries — it is far easier than resolving disputes later.
+Before your next job change, list your personal and open-source projects, read the IP clauses carefully and agree on clear boundaries - it is far easier than resolving disputes later.
 
 Browse current AI, machine learning and data jobs at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: engineer building a tool in the evening) Does my employer own code I write outside working hours?
-Not automatically — it depends on whether the work relates to your duties, whether you used employer resources or information, and what your contract says.
+Not automatically - it depends on whether the work relates to your duties, whether you used employer resources or information, and what your contract says.
 
 ### (Scenario: engineer contributing to open source) Can I contribute to open-source projects while employed?
 Generally yes for personal contributions, but check your contract and the employer's open-source policy, especially for projects related to your work.
@@ -173,7 +173,7 @@ This remains legally uncertain, because copyright generally requires original hu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does my employer own code I write outside working hours?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically — it depends on the link to your duties, use of resources and your contract."}},
+    {"@type": "Question", "name": "Does my employer own code I write outside working hours?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - it depends on the link to your duties, use of resources and your contract."}},
     {"@type": "Question", "name": "Can I contribute to open-source projects while employed?", "acceptedAnswer": {"@type": "Answer", "text": "Generally yes for personal contributions; check your contract and open-source policy."}},
     {"@type": "Question", "name": "Who owns a patentable invention I made at work?", "acceptedAnswer": {"@type": "Answer", "text": "The employer if your role requires such inventions, sometimes with fair remuneration for you."}},
     {"@type": "Question", "name": "Can I turn my side project into a company?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly, if built independently and not assigned by contract; seek advice first."}},

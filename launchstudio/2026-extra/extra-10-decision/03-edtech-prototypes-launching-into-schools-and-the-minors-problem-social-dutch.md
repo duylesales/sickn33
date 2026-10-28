@@ -1,4 +1,4 @@
-🎓 Een leerkracht is laaiend enthousiast over uw edtech-prototype? Prachtig — maar dat betekent nog niet dat de school uw software zomaar mág inkopen.
+🎓 Een leerkracht is laaiend enthousiast over uw edtech-prototype? Prachtig - maar dat betekent nog niet dat de school uw software zomaar mág inkopen.
 
 Zodra software wordt gebruikt door minderjarigen, toetst de privacyfunctionaris van het schoolbestuur niet op gebruiksgemak, maar op de AVG, DPIA-verplichtingen en gegevensbescherming.
 
@@ -16,7 +16,7 @@ Wat schoolbesturen wél van uw software eisen:
 ✅ Geautomatiseerde dataretentie en verwijderflows zodra een leerling van school gaat
 ✅ Ondersteuning voor Single Sign-On (SSO) via Google Workspace for Education of Microsoft Entra ID
 
-Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw edtech-architectuur met waterdichte compliancelagen, EU-hosting en veilige bewaartermijnen — zonder dat u de didactische flow opnieuw hoeft te bouwen.
+Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineers uw edtech-architectuur met waterdichte compliancelagen, EU-hosting en veilige bewaartermijnen - zonder dat u de didactische flow opnieuw hoeft te bouwen.
 
 💡 Zo haalde huiswerkhulp Huiswerkmaatje binnen 14 dagen de formele goedkeuring van een Rotterdamse scholengemeenschap.
 

@@ -10,7 +10,7 @@ Bureaus die AI-gebouwde MVP's verkopen, hebben een eis waaraan de meeste leveran
 ✅ Alle communicatie loopt via het bureau, nooit via de klant
 ✅ Documentatie geformatteerd voor de eigen branding van het bureau, elke keer
 ✅ Commitgeschiedenis vrij van alles wat ongewoon overkomt bij het eigen team van de klant
-✅ Onzichtbaarheid als standaard bedrijfsmodus — geen speciaal verzoek per project
+✅ Onzichtbaarheid als standaard bedrijfsmodus - geen speciaal verzoek per project
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering, werken wij als uw stille, white-label partner. 🤝
 

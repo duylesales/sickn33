@@ -1,4 +1,4 @@
-🔥 Chloe bouwde een prototype met **Cursor** — Chloe, een customer support lead, gebruikte Cursor om een AI-ticketclassifier te bouwen, maar liep vast op een gigantische JavaScript-bundel en 5 seconden laadtijd door LangChain in de browser. 🧠
+🔥 Chloe bouwde een prototype met **Cursor** - Chloe, een customer support lead, gebruikte Cursor om een AI-ticketclassifier te bouwen, maar liep vast op een gigantische JavaScript-bundel en 5 seconden laadtijd door LangChain in de browser. 🧠
 
 Het kiezen van het verkeerde AI-orkestratieframework kan uw ontwikkelsnelheid ernstig verlammen en zorgt voor onnodig zware client-side applicaties.
 
@@ -12,7 +12,7 @@ Het kiezen van het verkeerde AI-orkestratieframework kan uw ontwikkelsnelheid er
 
 Bij **LaunchStudio** lossen we exact dit type framework- en architectuurkeuzes op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Chloe's applicatie werd vederlicht: De laadtijd daalde van 5,0s naar 0,8s en de JavaScript-bundelgrootte werd met 70% verminderd. (€2.200 (Framework Migration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Chloe's applicatie werd vederlicht: De laadtijd daalde van 5,0s naar 0,8s en de JavaScript-bundelgrootte werd met 70% verminderd. (€2.200 (Framework Migration Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/vercel-ai-sdk-vs-langchain-frameworks
 

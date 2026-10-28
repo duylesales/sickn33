@@ -1,6 +1,6 @@
 📹 Uw klant ontdekt dat u een video-opname heeft van haar muis en haar getypte gegevens. Zonder dat ze ooit toestemming gaf.
 
-Dat is GEEN doemscenario — het is de standaardinstelling van Hotjar, FullStory en Clarity als u niets configureert.
+Dat is GEEN doemscenario - het is de standaardinstelling van Hotjar, FullStory en Clarity als u niets configureert.
 
 Sessie-replay is geweldig om UX-frictie op te sporen. Maar het verschil tussen "handige supporttool" en "AVG-datalek van tienduizenden euro's" zit in een paar instellingen.
 

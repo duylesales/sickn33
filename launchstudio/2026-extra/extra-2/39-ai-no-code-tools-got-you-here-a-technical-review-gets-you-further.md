@@ -31,23 +31,23 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Nadia built her entire tutoring marketplace without writing a single line of code herself, using AI no code tools to assemble everything from student-tutor matching to a built-in messaging feature letting parents and tutors coordinate lesson times directly. It's a genuinely impressive amount of functionality for someone with no development background — and it took one confused parent to reveal that the messaging feature wasn't quite keeping conversations as separate as everyone assumed.
+Nadia built her entire tutoring marketplace without writing a single line of code herself, using AI no code tools to assemble everything from student-tutor matching to a built-in messaging feature letting parents and tutors coordinate lesson times directly. It's a genuinely impressive amount of functionality for someone with no development background - and it took one confused parent to reveal that the messaging feature wasn't quite keeping conversations as separate as everyone assumed.
 
 ## Why Private Messaging Features Are Trickier Than They Look
 
-A messaging feature seems conceptually simple — two people exchange messages, and only those two people can see them. Implementing that correctly requires every single message-retrieval request to explicitly verify the requester is actually one of the two participants in that specific conversation, a check that's easy to describe but easy to build incompletely without someone specifically testing for its absence. The sending side of a messaging feature is usually built and tested carefully, since a message that goes to the wrong recipient is an obvious, visible bug; the retrieval side, by contrast, can silently lack the equivalent check while still appearing to work perfectly for every participant who's supposed to see a given conversation.
+A messaging feature seems conceptually simple - two people exchange messages, and only those two people can see them. Implementing that correctly requires every single message-retrieval request to explicitly verify the requester is actually one of the two participants in that specific conversation, a check that's easy to describe but easy to build incompletely without someone specifically testing for its absence. The sending side of a messaging feature is usually built and tested carefully, since a message that goes to the wrong recipient is an obvious, visible bug; the retrieval side, by contrast, can silently lack the equivalent check while still appearing to work perfectly for every participant who's supposed to see a given conversation.
 
 ## Why This Specific Gap Is Common in Quickly Assembled Messaging Features
 
-AI no code and AI coding tools alike tend to correctly implement the core, described behavior — sending a message, displaying a conversation thread to its participants — because that's exactly what a founder describes and directly tests. The specific, adversarial question of whether a different, uninvolved user's request for the same conversation ID gets properly rejected is a separate check that a founder's own straightforward testing, always accessing their own conversations correctly, never exercises.
+AI no code and AI coding tools alike tend to correctly implement the core, described behavior - sending a message, displaying a conversation thread to its participants - because that's exactly what a founder describes and directly tests. The specific, adversarial question of whether a different, uninvolved user's request for the same conversation ID gets properly rejected is a separate check that a founder's own straightforward testing, always accessing their own conversations correctly, never exercises.
 
 ## Why a Working Chat Interface Gives False Confidence Here
 
-Testing your own tutoring marketplace's messaging by having two test accounts message each other, and confirming both can see the conversation correctly, proves the feature works for its intended participants. It says nothing about whether a completely different, uninvolved third account could also retrieve that same conversation by directly requesting its ID — a scenario that requires deliberately trying to access someone else's conversation to discover.
+Testing your own tutoring marketplace's messaging by having two test accounts message each other, and confirming both can see the conversation correctly, proves the feature works for its intended participants. It says nothing about whether a completely different, uninvolved third account could also retrieve that same conversation by directly requesting its ID - a scenario that requires deliberately trying to access someone else's conversation to discover.
 
 ## Why Messaging Gaps Carry a Particular Kind of Trust Risk
 
-Beyond the general severity of any data-isolation gap, a messaging feature specifically involves conversations people reasonably expect to be private between named participants — parents discussing their children's tutoring needs, personal scheduling details — meaning exposure here damages user trust in a particularly direct, personal way compared to a more abstract data leak elsewhere in the same product. A leaked spreadsheet row feels like a system failure; a leaked private conversation feels personal, and users tend to respond to the two very differently even when the underlying technical severity is comparable.
+Beyond the general severity of any data-isolation gap, a messaging feature specifically involves conversations people reasonably expect to be private between named participants - parents discussing their children's tutoring needs, personal scheduling details - meaning exposure here damages user trust in a particularly direct, personal way compared to a more abstract data leak elsewhere in the same product. A leaked spreadsheet row feels like a system failure; a leaked private conversation feels personal, and users tend to respond to the two very differently even when the underlying technical severity is comparable.
 
 ## What Fixing This Requires
 
@@ -55,18 +55,18 @@ A proper fix adds an explicit participant check to every message and conversatio
 
 Manifera's messaging and access-control audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
-[Share a link to your prototype — we'll look it over for free](https://launchstudio.eu/en/#contact).
+[Share a link to your prototype - we'll look it over for free](https://launchstudio.eu/en/#contact).
 
 ## Other Shared-Resource Features That Need the Same Ownership Check
 
-Private messaging is the clearest example of a shared-resource feature, but the same underlying principle — explicitly verifying a requester's legitimate relationship to a resource before returning it, rather than trusting that a valid-looking ID implies authorized access — applies just as directly to several other common features:
+Private messaging is the clearest example of a shared-resource feature, but the same underlying principle - explicitly verifying a requester's legitimate relationship to a resource before returning it, rather than trusting that a valid-looking ID implies authorized access - applies just as directly to several other common features:
 
-- **Group bookings and shared calendars** — a scheduling feature involving multiple participants (a family booking several tutoring sessions, or a group class) needs the same per-participant verification as a two-person conversation, just applied across a larger, variable set of legitimate viewers.
-- **Shared documents and file uploads** — a homework file, a lesson plan, or an uploaded document tied to a specific tutor-student pairing needs the same check before being served to whoever requests it by ID or link, not just whoever is logged in.
-- **Comments and reviews tied to a specific relationship** — a private note or review visible only to the two parties involved in a specific booking carries the identical risk if the retrieval logic doesn't verify the requester is one of those two parties.
-- **Notification and activity feeds** — a feed showing "recent activity" scoped to a specific family or tutor pairing needs the same participant check as the underlying messages or bookings it's summarizing, since a feed is often built as a secondary view over the same data.
+- **Group bookings and shared calendars** - a scheduling feature involving multiple participants (a family booking several tutoring sessions, or a group class) needs the same per-participant verification as a two-person conversation, just applied across a larger, variable set of legitimate viewers.
+- **Shared documents and file uploads** - a homework file, a lesson plan, or an uploaded document tied to a specific tutor-student pairing needs the same check before being served to whoever requests it by ID or link, not just whoever is logged in.
+- **Comments and reviews tied to a specific relationship** - a private note or review visible only to the two parties involved in a specific booking carries the identical risk if the retrieval logic doesn't verify the requester is one of those two parties.
+- **Notification and activity feeds** - a feed showing "recent activity" scoped to a specific family or tutor pairing needs the same participant check as the underlying messages or bookings it's summarizing, since a feed is often built as a secondary view over the same data.
 
-The common thread across all four is that each feature was very likely built and tested the same way LesMaatje's messaging was: correctly for its intended, cooperative use, with the specific adversarial question — "can someone who isn't a legitimate participant retrieve this by ID?" — never naturally arising during honest testing. A review that finds and fixes the gap in one shared-resource feature has good reason to check every other feature built on the same underlying pattern, rather than treating the fix as complete after addressing the one place it happened to surface first.
+The common thread across all four is that each feature was very likely built and tested the same way LesMaatje's messaging was: correctly for its intended, cooperative use, with the specific adversarial question - "can someone who isn't a legitimate participant retrieve this by ID?" - never naturally arising during honest testing. A review that finds and fixes the gap in one shared-resource feature has good reason to check every other feature built on the same underlying pattern, rather than treating the fix as complete after addressing the one place it happened to surface first.
 
 ## Real example
 
@@ -74,14 +74,14 @@ The common thread across all four is that each feature was very likely built and
 
 Nadia, a former school administrator turned founder in Doetinchem, built LesMaatje, an AI-assisted tutoring marketplace connecting families with independent tutors, built largely with v0 and a connected no-code backend, including a built-in messaging feature for coordinating lessons.
 
-A parent contacted support confused after briefly seeing what looked like a fragment of a different family's conversation flash on screen while navigating between messages. LaunchStudio's review found that conversation IDs were sequential and predictable, and that the message-retrieval endpoint didn't verify the requester was actually a participant in the requested conversation — a bug that, under specific navigation timing, could briefly expose the wrong conversation's content.
+A parent contacted support confused after briefly seeing what looked like a fragment of a different family's conversation flash on screen while navigating between messages. LaunchStudio's review found that conversation IDs were sequential and predictable, and that the message-retrieval endpoint didn't verify the requester was actually a participant in the requested conversation - a bug that, under specific navigation timing, could briefly expose the wrong conversation's content.
 
 **Result:** LaunchStudio added explicit participant verification to every conversation and message request, closing the exposure entirely regardless of navigation timing or conversation ID guessing, without changing LesMaatje's messaging interface or user experience.
 
 > *"It was just a flash on screen, barely a second, and I could have easily written it off as a glitch. I'm genuinely glad that parent mentioned it instead of assuming it was nothing."*
-> — **Nadia Bouras, Founder, LesMaatje (Doetinchem)**
+> - **Nadia Bouras, Founder, LesMaatje (Doetinchem)**
 
-**Cost & Timeline:** €1,800 (messaging access control audit and participant verification) — completed in 6 business days.
+**Cost & Timeline:** €1,800 (messaging access control audit and participant verification) - completed in 6 business days.
 
 ---
 
@@ -89,27 +89,27 @@ A parent contacted support confused after briefly seeing what looked like a frag
 
 ### Would a backend engineer consider a messaging feature harder to secure correctly than a typical data list feature?
 
-Somewhat, since messaging inherently involves multiple participants with shared access to the same resource, which requires a slightly more nuanced ownership check than a simple single-owner record — but the underlying principle (verify the requester's legitimate relationship to the resource before returning it) is the same broader pattern applied to a specific, two-participant case.
+Somewhat, since messaging inherently involves multiple participants with shared access to the same resource, which requires a slightly more nuanced ownership check than a simple single-owner record - but the underlying principle (verify the requester's legitimate relationship to the resource before returning it) is the same broader pattern applied to a specific, two-participant case.
 
 ### Is this the kind of gap that specifically affects no-code platforms more than AI coding tools like Lovable or Bolt?
 
-Not particularly more — the underlying risk (missing participant verification on a shared resource) is a pattern that can appear regardless of which specific tool or platform was used to build the feature, since it's about what verification logic was or wasn't included, not about any particular tool's inherent capability.
+Not particularly more - the underlying risk (missing participant verification on a shared resource) is a pattern that can appear regardless of which specific tool or platform was used to build the feature, since it's about what verification logic was or wasn't included, not about any particular tool's inherent capability.
 
 ### Does Manifera's experience building communication features for enterprise clients transfer meaningfully to a small tutoring marketplace?
 
-Yes, directly — secure multi-party messaging is a well-established pattern in Manifera's broader engineering experience, and applying that same established, tested pattern to LesMaatje's messaging feature is considerably more reliable than developing an equivalent check from scratch specifically for this one product.
+Yes, directly - secure multi-party messaging is a well-established pattern in Manifera's broader engineering experience, and applying that same established, tested pattern to LesMaatje's messaging feature is considerably more reliable than developing an equivalent check from scratch specifically for this one product.
 
-### Herre Roelevink has emphasized that AI-native founders deserve the same technical rigor larger, funded companies have always had — does a messaging privacy fix like this reflect that philosophy?
+### Herre Roelevink has emphasized that AI-native founders deserve the same technical rigor larger, funded companies have always had - does a messaging privacy fix like this reflect that philosophy?
 
-Yes, directly — secure multi-party access control is exactly the kind of rigor a well-funded, technically staffed company would apply as a matter of course, and bringing that same rigor to a solo, no-code-built tutoring marketplace at founder-appropriate cost is precisely the philosophy Roelevink has described as core to LaunchStudio's purpose.
+Yes, directly - secure multi-party access control is exactly the kind of rigor a well-funded, technically staffed company would apply as a matter of course, and bringing that same rigor to a solo, no-code-built tutoring marketplace at founder-appropriate cost is precisely the philosophy Roelevink has described as core to LaunchStudio's purpose.
 
 ### If a founder used a well-known no-code messaging plugin rather than building the feature from scratch, would this risk still be possible?
 
-It depends on the specific plugin and how it's configured — established plugins often include built-in access control, but incorrect configuration or gaps in how the plugin was integrated into the broader application can still reproduce the same underlying risk, which is why a review checks the actual behavior rather than assuming a plugin's reputation guarantees correct configuration.
+It depends on the specific plugin and how it's configured - established plugins often include built-in access control, but incorrect configuration or gaps in how the plugin was integrated into the broader application can still reproduce the same underlying risk, which is why a review checks the actual behavior rather than assuming a plugin's reputation guarantees correct configuration.
 
 ### If a review confirms messaging is properly secured, does that mean the rest of the product's shared features are safe too?
 
-Not automatically — each shared-resource feature (bookings, shared documents, reviews, activity feeds) needs its own participant check confirmed independently, since a fix applied to messaging doesn't propagate to a separately built calendar or file-sharing feature. A thorough review treats messaging as one instance of a broader pattern worth checking everywhere it appears, not as a single fix that covers the whole product.
+Not automatically - each shared-resource feature (bookings, shared documents, reviews, activity feeds) needs its own participant check confirmed independently, since a fix applied to messaging doesn't propagate to a separately built calendar or file-sharing feature. A thorough review treats messaging as one instance of a broader pattern worth checking everywhere it appears, not as a single fix that covers the whole product.
 
 <script type="application/ld+json">
 {
@@ -129,7 +129,7 @@ Not automatically — each shared-resource feature (bookings, shared documents, 
       "name": "Does this gap affect no-code platforms more than AI coding tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not particularly — the risk depends on what verification logic was included, not on the specific tool used."
+        "text": "Not particularly - the risk depends on what verification logic was included, not on the specific tool used."
       }
     },
     {
@@ -153,7 +153,7 @@ Not automatically — each shared-resource feature (bookings, shared documents, 
       "name": "Does using a known no-code messaging plugin eliminate this risk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — incorrect configuration or integration gaps can reproduce the same risk regardless of the plugin's reputation."
+        "text": "Not necessarily - incorrect configuration or integration gaps can reproduce the same risk regardless of the plugin's reputation."
       }
     },
     {
@@ -161,7 +161,7 @@ Not automatically — each shared-resource feature (bookings, shared documents, 
       "name": "If messaging is secured, are other shared features automatically safe too?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not automatically — bookings, shared documents, and activity feeds each need their own participant check confirmed independently."
+        "text": "Not automatically - bookings, shared documents, and activity feeds each need their own participant check confirmed independently."
       }
     }
   ]

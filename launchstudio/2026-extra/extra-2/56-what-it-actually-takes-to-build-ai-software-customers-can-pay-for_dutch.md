@@ -60,24 +60,24 @@ Manifera's beveiligingsbeoordelingen voor gegevensopslag in de frontend worden u
 
 ## Wat Thuishoort in Local Storage, en Wat Beslist Niet
 
-Niet alles hoeft rigoureus uit `localStorage` te worden verbannen — het behandelen als universeel verboden is net zo onpraktisch als het behandelen als universeel veilig. De nuttige vraag is in welke specifieke categorie een bepaald gegeven valt.
+Niet alles hoeft rigoureus uit `localStorage` te worden verbannen - het behandelen als universeel verboden is net zo onpraktisch als het behandelen als universeel veilig. De nuttige vraag is in welke specifieke categorie een bepaald gegeven valt.
 
 **Over het algemeen prima geschikt voor Local Storage:**
 
-- Voorkeuren voor de gebruikersinterface — donkere modus (dark mode), status van een ingeklapte menubalk, taalvoorkeur of het laatst geopende tabblad.
-- Niet-gevoelige concepten van formulierinvoer die het gebruikersgemak vergroten — tijdelijk opgeslagen tekst van een review waaraan wordt gewerkt, zodat deze niet verloren gaat bij een browser-crash.
+- Voorkeuren voor de gebruikersinterface - donkere modus (dark mode), status van een ingeklapte menubalk, taalvoorkeur of het laatst geopende tabblad.
+- Niet-gevoelige concepten van formulierinvoer die het gebruikersgemak vergroten - tijdelijk opgeslagen tekst van een review waaraan wordt gewerkt, zodat deze niet verloren gaat bij een browser-crash.
 - Data die elders al openbaar beschikbaar is, waarbij lokale opslag louter dient als prestatie-optimalisatie om laadtijden te versnellen.
 
 **Absoluut ongeschikt voor Local Storage (moet naar beveiligde cookies of de backend):**
 
-- Authenticatietokens, sessiesleutels en JWT's — alles wat, indien uitgelezen door een kwaadaardig script, dat script in staat stelt te handelen namens de ingelogde gebruiker.
+- Authenticatietokens, sessiesleutels en JWT's - alles wat, indien uitgelezen door een kwaadaardig script, dat script in staat stelt te handelen namens de ingelogde gebruiker.
 - Opgeslagen bezorgadressen, telefoonnummers of persoonlijke contactgegevens van klanten.
 - Iedere verwijzing naar betaalmethoden, transactietokens of creditcardgegevens.
 - Gegevens waarvan de openbaarmaking de ene klant in staat zou stellen de gegevens van een andere klant in te zien of te wijzigen.
 
 **De test die elk twijfelgeval direct beslecht:**
 
-Stel uzelf bij elk gegeven in `localStorage` de directe vraag: "Als een toekomstige, nog onbekende scriptkwetsbaarheid een aanvaller in staat stelt om vandaag alles in `localStorage` uit te lezen, wat is dan het allerslechtste dat ermee kan gebeuren?" Bij een donkere modus-voorkeur is dat 'iemand ontdekt dat u van donkere thema's houdt' — volstrekt onschadelijk. Bij een sessietoken of opgeslagen adres ziet het antwoord er heel anders uit. Dat verschil bepaalt exact waar de data hoort te leven. Een proactieve migratie van gevoelige data naar afgeschermde server-side sessies voorkomt dat latere scriptlekken ooit kunnen escaleren tot een volwaardig datalek, wat de continuïteit van uw platform direct veiligstelt.
+Stel uzelf bij elk gegeven in `localStorage` de directe vraag: "Als een toekomstige, nog onbekende scriptkwetsbaarheid een aanvaller in staat stelt om vandaag alles in `localStorage` uit te lezen, wat is dan het allerslechtste dat ermee kan gebeuren?" Bij een donkere modus-voorkeur is dat 'iemand ontdekt dat u van donkere thema's houdt' - volstrekt onschadelijk. Bij een sessietoken of opgeslagen adres ziet het antwoord er heel anders uit. Dat verschil bepaalt exact waar de data hoort te leven. Een proactieve migratie van gevoelige data naar afgeschermde server-side sessies voorkomt dat latere scriptlekken ooit kunnen escaleren tot een volwaardig datalek, wat de continuïteit van uw platform direct veiligstelt.
 
 
 ## Echt voorbeeld
@@ -91,9 +91,9 @@ Een ongerelateerde, relatief kleine scripting-kwetsbaarheid ontdekt in een nieuw
 **Resultaat:** LaunchStudio herstelde de initiële scripting-kwetsbaarheid en migreerde afzonderlijk WasService's gevoelige gegevens aan de client-zijde naar beveiligde cookie-opslag, wat de potentiële impact van eventuele toekomstige kwetsbaarheden beperkt.
 
 > *"De oorspronkelijke fout zelf was eerlijk gezegd vrij klein op zichzelf. Het was specifiek hoe we hadden gekozen om gegevens op te slaan dat een kleine fout veranderde in iets met echte tanden."*
-> — **Renske Bosman, Oprichter, WasService (Sittard)**
+> - **Renske Bosman, Oprichter, WasService (Sittard)**
 
-**Kosten en tijdlijn:** € 2.200 (beveiligingsmigratie van client-side opslag) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (beveiligingsmigratie van client-side opslag) - voltooid in 7 werkdagen.
 
 ---
 
@@ -109,9 +109,9 @@ Het opslaan van sessietokens in `HttpOnly`, `Secure` cookies. Deze cookies worde
 
 ### Is `localStorage` dan helemaal nergens goed voor?
 
-Zeker wel — voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk.
+Zeker wel - voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk.
 
-### Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten — hoe pakt het team sessieopslag aan?
+### Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten - hoe pakt het team sessieopslag aan?
 
 Manifera hanteert een 'defense-in-depth' benadering waarbij sessietokens uitsluitend via beveiligde cookies worden uitgewisseld, gecombineerd met Content Security Policies (CSP) die voorkomen dat kwaadaardige scripts überhaupt op de pagina kunnen worden geladen.
 
@@ -145,12 +145,12 @@ Nee, de backend moet worden aangepast om het token via een Set-Cookie header ter
       "name": "Is `localStorage` dan helemaal nergens goed voor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeker wel — voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk."
+        "text": "Zeker wel - voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk."
       }
     },
     {
       "@type": "Question",
-      "name": "Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten — hoe pakt het team sessieopslag aan?",
+      "name": "Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten - hoe pakt het team sessieopslag aan?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Manifera hanteert een 'defense-in-depth' benadering waarbij sessietokens uitsluitend via beveiligde cookies worden uitgewisseld, gecombineerd met Content Security Policies (CSP) die voorkomen dat kwaadaardige scripts überhaupt op de pagina kunnen worden geladen."

@@ -20,23 +20,23 @@ target_persona: "CFO"
 }
 </script>
 
-AI automation applied to a business process that has an underlying structural or logical flaw doesn't fix that flaw — it executes it faster and at greater scale, and a CFO evaluating an AI automation investment should confirm the underlying process is genuinely sound before funding its automation, because automating a broken process is a well-known and specifically avoidable mistake.
+AI automation applied to a business process that has an underlying structural or logical flaw doesn't fix that flaw - it executes it faster and at greater scale, and a CFO evaluating an AI automation investment should confirm the underlying process is genuinely sound before funding its automation, because automating a broken process is a well-known and specifically avoidable mistake.
 
-**The Pain:** A CFO evaluating AI automation for business is naturally focused on the automation technology itself and its projected efficiency gains, while the question of whether the process being automated is actually the right process — logically sound, free of the kind of accumulated exceptions and workarounds that most real business processes acquire over years of ad hoc adjustment — gets comparatively little scrutiny before the automation investment is approved.
+**The Pain:** A CFO evaluating AI automation for business is naturally focused on the automation technology itself and its projected efficiency gains, while the question of whether the process being automated is actually the right process - logically sound, free of the kind of accumulated exceptions and workarounds that most real business processes acquire over years of ad hoc adjustment - gets comparatively little scrutiny before the automation investment is approved.
 
 **The Agitation:** A CFO who funds AI automation for a process that hasn't been genuinely audited discovers, once the automation is live, that it faithfully executes the process's existing flaws at speed and scale, producing errors more quickly and more consistently than the manual version did, while also making the flaw harder to notice and correct, since a human executing a flawed process manually often catches and quietly corrects obvious errors as a matter of course, a correction an automated system won't apply unless it was explicitly built to.
 
 ## The Audit That Should Precede Automation
 
-Before funding AI automation for a specific business process, a CFO should insist on a genuine process audit — a deliberate examination of whether the process as currently defined is actually the right process to automate, not an assumption that the existing process, simply because it's the one currently in use, is sound enough to execute faster.
+Before funding AI automation for a specific business process, a CFO should insist on a genuine process audit - a deliberate examination of whether the process as currently defined is actually the right process to automate, not an assumption that the existing process, simply because it's the one currently in use, is sound enough to execute faster.
 
 The first audit question is whether the process's core logic is actually correct and current, or whether it reflects historical decisions, exceptions, and workarounds accumulated over years that no longer serve their original purpose, or serve a purpose that's since become obsolete. Most real business processes, examined honestly after years of incremental adjustment, contain steps whose original rationale has been forgotten and whose removal would improve the process, and automating before this examination locks in whatever accumulated complexity exists at the moment of automation, often for considerably longer than it would have persisted under continued manual, ad hoc adjustment.
 
-The second audit question is whether the process's exception handling is actually well-defined, since most real processes handle the common case well but rely on informal human judgment for edge cases that were never explicitly documented — a process automated without genuine attention to these edge cases either fails to handle them at all, or worse, handles them using logic based on a misunderstanding of what the informal human judgment was actually doing, producing errors specifically in the harder cases that most need to be handled correctly.
+The second audit question is whether the process's exception handling is actually well-defined, since most real processes handle the common case well but rely on informal human judgment for edge cases that were never explicitly documented - a process automated without genuine attention to these edge cases either fails to handle them at all, or worse, handles them using logic based on a misunderstanding of what the informal human judgment was actually doing, producing errors specifically in the harder cases that most need to be handled correctly.
 
 The third audit question is whether the process's current metrics of success are actually the right ones to optimize for, since automation tends to genuinely optimize for whatever is explicitly measured, and a process whose informal, currently-measured success criteria don't fully capture what actually matters (a process measured only on speed, for instance, when quality matters equally) gets automated toward the measured criteria specifically, potentially degrading the unmeasured ones that a human executing the process manually was implicitly balancing without anyone having made that balance explicit.
 
-A CFO who requires this genuine process audit before approving AI automation investment — confirming the process logic is current, the exception handling is genuinely well-defined, and the success metrics actually capture what matters — avoids funding the automation of a process's existing flaws, and often discovers the audit itself surfaces process improvements worth making regardless of whether automation follows.
+A CFO who requires this genuine process audit before approving AI automation investment - confirming the process logic is current, the exception handling is genuinely well-defined, and the success metrics actually capture what matters - avoids funding the automation of a process's existing flaws, and often discovers the audit itself surfaces process improvements worth making regardless of whether automation follows.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -54,7 +54,7 @@ This is Dutch Management × Vietnamese Mastery: European rigor in auditing a pro
 Manifera helped audit the process before rebuilding the automation, identifying and correcting the outdated rule along with two other accumulated inconsistencies, before automating the corrected version. The rebuilt automation eliminated the error pattern entirely while still delivering the intended efficiency gain.
 
 > *"We automated exactly what we had, assuming what we had was fine because it had always worked. It turned out 'worked' meant our staff were quietly fixing a mistake baked into the process for years. The automation didn't know to fix it, so it just did the mistake faster."*
-> — **CFO, Ψηφιακή Διανομή Θεσσαλονίκη Α.Ε., Greece**
+> - **CFO, Ψηφιακή Διανομή Θεσσαλονίκη Α.Ε., Greece**
 
 ## Automate-As-Is vs. Manifera's Audit-First Automation
 

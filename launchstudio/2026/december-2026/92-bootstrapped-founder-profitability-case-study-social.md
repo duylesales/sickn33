@@ -1,10 +1,10 @@
-💰 Priya built her compliance tool solo, on savings, over 18 months with **Bolt** — five accounting firms wanted to pay her, but her Stripe integration was just a button that redirected nowhere. 🧠
+💰 Priya built her compliance tool solo, on savings, over 18 months with **Bolt** - five accounting firms wanted to pay her, but her Stripe integration was just a button that redirected nowhere. 🧠
 
-Bootstrapped founders can't afford to overbuild infrastructure they don't need yet — but they also can't afford the one bad week that scares off their first paying customers.
+Bootstrapped founders can't afford to overbuild infrastructure they don't need yet - but they also can't afford the one bad week that scares off their first paying customers.
 
 ❌ Row Level Security existed on paper but wasn't actually enforced between client accounts
 ❌ An OpenAI API key exposed directly in client-side code
-❌ No working webhook — payment success was never confirmed server-side
+❌ No working webhook - payment success was never confirmed server-side
 
 ✅ RLS policies rewritten and scoped to auth.uid(), enforced at the database layer
 ✅ API key moved into a secure server-side Edge Function

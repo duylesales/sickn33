@@ -1,12 +1,12 @@
-🎯 Lily, an agency owner, built a review responder app with **Bolt** — but every time she needed to tweak the AI's wording, it meant redeploying her entire Next.js codebase. 🐢
+🎯 Lily, an agency owner, built a review responder app with **Bolt** - but every time she needed to tweak the AI's wording, it meant redeploying her entire Next.js codebase. 🐢
 
-Prompt engineering never stops — so hardcoding your prompts into application logic guarantees your team becomes the bottleneck. 🧠
+Prompt engineering never stops - so hardcoding your prompts into application logic guarantees your team becomes the bottleneck. 🧠
 
 ❌ System prompts hardcoded directly inside backend controllers
 ❌ A one-word wording fix requiring a full PR, code review, and production redeploy
 ❌ Engineers stuck approving copy decisions they have no real way to evaluate
 
-✅ The Configuration Pattern — prompts stored as data in a database, not buried in code
+✅ The Configuration Pattern - prompts stored as data in a database, not buried in code
 ✅ An admin dashboard where product managers edit and test prompts without touching Git
 ✅ Version history and instant rollbacks the moment a new prompt causes a regression
 

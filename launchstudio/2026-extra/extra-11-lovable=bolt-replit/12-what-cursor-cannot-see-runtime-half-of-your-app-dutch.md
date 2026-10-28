@@ -26,7 +26,7 @@ Dat doet hij niet, en de reden daarvoor is geen beperking van het onderliggende 
 
 ## De twee helften, helder benoemd
 
-**De statische helft** is je broncode: logica, structuur, dependencies, types. AI-editors zijn hier uitzonderlijk goed in — het signaleren van inconsistenties, voorstellen doen voor refactoring, een vergeten null-check opvangen en onbekende code sneller uitleggen dan je het zelf kunt lezen.
+**De statische helft** is je broncode: logica, structuur, dependencies, types. AI-editors zijn hier uitzonderlijk goed in - het signaleren van inconsistenties, voorstellen doen voor refactoring, een vergeten null-check opvangen en onbekende code sneller uitleggen dan je het zelf kunt lezen.
 
 **De runtime-helft** is alles wat pas bestaat zodra de app daadwerkelijk draait op echte infrastructuur met echte gebruikers. Omgevingsvariabelen en hun actuele waarden. Toegangsbeleid van databases. Netwerkgrenzen en welke service met welke andere service mag communiceren. Gegevens die patronen hebben aangenomen die niemand vooraf had ontworpen. Concurrency en gelijktijdige requests. Externe API-koppelingen van derden met hun eigen kuren en downtimes.
 
@@ -38,7 +38,7 @@ Een AI-editor redeneert met veel verstand over de eerste helft, maar heeft struc
 
 **De race condition.** Twee gebruikers reserveren binnen dezelfde seconde het allerlaatste beschikbare tijdslot. Als je de boekingsfunctie doorleest, klopt de logica ogenschijnlijk helemaal: controleer eerst de beschikbaarheid en schrijf vervolgens de boeking weg. In runtime gebeuren beide controles echter vóórdat een van beide wegschrijvingen is afgerond. Het resultaat: je hebt exact dezelfde stoel twee keer verkocht. Er staat geen enkele syntax- of logicafout in het bestand; de fout zit puur in de gelijktijdige afhandeling van processen.
 
-**De data-vormige bug.** Je rapportagefunctie werkt vlekkeloos voor elk testrecord dat je handmatig hebt aangemaakt. Maar dan voert een echte gebruiker een naam in met een apostrof, een bestelhoeveelheid van nul, of een geboortedatum uit 1970, en een query retourneert plotseling een absurde fout. De code kan alleen overweg met de data waarvoor hij is geschreven — en dat was de ideale data die jij in je hoofd had.
+**De data-vormige bug.** Je rapportagefunctie werkt vlekkeloos voor elk testrecord dat je handmatig hebt aangemaakt. Maar dan voert een echte gebruiker een naam in met een apostrof, een bestelhoeveelheid van nul, of een geboortedatum uit 1970, en een query retourneert plotseling een absurde fout. De code kan alleen overweg met de data waarvoor hij is geschreven - en dat was de ideale data die jij in je hoofd had.
 
 **De verrassing van een externe partij.** Een externe provider retourneert een statuscode die je tijdens de ontwikkelingsfase nooit bent tegengekomen, heeft een time-out halverwege een verzoek, of wijzigt stilletjes de structuur van een JSON-respons in een tussenversie. Je integratie klopt exact volgens de officiële documentatie, maar faalt tegen de daadwerkelijke werkelijkheid.
 
@@ -48,7 +48,7 @@ Hoe vaak je de repository ook laat scannen: geen enkele analyse brengt dit aan h
 
 Er zit een psychologische dimensie aan dit probleem die benoemd moet worden, omdat het zowel ervaren ontwikkelaars als beginners beïnvloedt.
 
-Code die is geschreven of beoordeeld door een capabele AI-assistent leest soepel. De code is idiomatisch, consistent geformatteerd, logisch gestructureerd en draait meestal direct bij de eerste poging. Die combinatie genereert een krachtig betrouwbaarheidssignaal dat je brein in de loop der jaren heeft leren vertrouwen — historisch gezien betekende code die er zó coherent uitzag meestal dat er grondig over was nagedacht.
+Code die is geschreven of beoordeeld door een capabele AI-assistent leest soepel. De code is idiomatisch, consistent geformatteerd, logisch gestructureerd en draait meestal direct bij de eerste poging. Die combinatie genereert een krachtig betrouwbaarheidssignaal dat je brein in de loop der jaren heeft leren vertrouwen - historisch gezien betekende code die er zó coherent uitzag meestal dat er grondig over was nagedacht.
 
 Die correlatie gaat vandaag de dag niet meer op. Vloeiendheid is tegenwoordig goedkoop; daadwerkelijke correctheid is dat niet. En de kloof tussen die twee is precies waar productie-incidenten ontstaan. De praktische implicatie is niet dat je het gereedschap moet wantrouwen. Het betekent dat je moet stoppen met het behandelen van "het ziet er goed uit en het draait" als bewijs voor iets anders dan dat het er goed uitziet en draait.
 
@@ -90,9 +90,9 @@ De volgorde is hierbij cruciaal: observeer eerst, vraag daarna pas om advies. Ee
 
 Die runtime-laag is exact wat LaunchStudio bouwt onder een bestaand prototype: configuratie expliciet en controleerbaar maken in plaats van verstopt in willekeurige dashboards; database-beveiligingsregels schrijven en testen door er actief op in te breken; concurrency en race conditions afvangen waar het commercieel telt; integraties van derden voorzien van robuuste foutafhandeling; en error tracking, logregistratie, uptime-checks en alerts inrichten zodat jij incidenten ontdekt vóór je klanten erover klagen.
 
-De frontend die je hebt gebouwd in Cursor, Lovable of Bolt blijft volledig intact, de codebase blijft conventioneel en leesbaar voor AI, en alle intellectuele eigendom blijft van jou. Dit werk wordt uitgevoerd door de senior engineers van Manifera, die al elf jaar lang productiesystemen realiseren voor organisaties zoals Vodafone, TNO en CFLW — werk dat voor het overgrote deel bestaat uit precies die runtime-helft.
+De frontend die je hebt gebouwd in Cursor, Lovable of Bolt blijft volledig intact, de codebase blijft conventioneel en leesbaar voor AI, en alle intellectuele eigendom blijft van jou. Dit werk wordt uitgevoerd door de senior engineers van Manifera, die al elf jaar lang productiesystemen realiseren voor organisaties zoals Vodafone, TNO en CFLW - werk dat voor het overgrote deel bestaat uit precies die runtime-helft.
 
-Heb je al een product live staan zonder inzicht in wanneer en waarom het faalt? [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — of bekijk wat [Launch Ready](https://launchstudio.eu/nl/#packages) inhoudt voordat je het wiel zelf probeert uit te vinden.
+Heb je al een product live staan zonder inzicht in wanneer en waarom het faalt? [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) - of bekijk wat [Launch Ready](https://launchstudio.eu/nl/#packages) inhoudt voordat je het wiel zelf probeert uit te vinden.
 
 ## Een foutmelding lezen zonder paniek
 
@@ -106,7 +106,7 @@ Zodra je error tracking actief is, ontvang je meldingen die je wellicht nog nooi
 
 **Onderscheid een 'verwachte fout' van een 'gebroken applicatie'.** Een geweigerde creditcard of mislukte iDEAL-transactie is een normale gebeurtenis die je app hoort op te vangen. Als dit als een onafgevangen uitzondering (unhandled exception) binnenkomt, is de ontbrekende foutafhandeling de bug, niet de geweigerde transactie zelf.
 
-**Voorkom dat je puur de symptomen in de stack trace fixt.** De foutmelding beschrijft het symptoom op het moment dat alles omviel — wat vaak pas enkele stappen na de daadwerkelijke programmeerfout plaatsvindt. Zoek naar de allereerste aanname in de keten die niet klopte, niet naar het laatste onderdeel dat brak.
+**Voorkom dat je puur de symptomen in de stack trace fixt.** De foutmelding beschrijft het symptoom op het moment dat alles omviel - wat vaak pas enkele stappen na de daadwerkelijke programmeerfout plaatsvindt. Zoek naar de allereerste aanname in de keten die niet klopte, niet naar het laatste onderdeel dat brak.
 
 Oprichters die hiermee leren omgaan, stoppen met het ervaren van productie als iets dat hen overkomt. Het is het fundamentele verschil tussen een applicatie beheren en simpelweg hopen dat alles blijft werken.
 
@@ -134,18 +134,18 @@ Tot overmaat van ramp werd het probleem pas twee dagen later ontdekt. Er was gee
 
 Zes werkdagen waren nodig voor het herstel: de boekingstransactie werd herschreven als één ondeelbare, atomische databasetransactie met een unieke database-constraint, waardoor een stoel ongeacht de timing technisch nooit twee keer verkocht kan worden. Daarnaast werden error tracking en gestructureerde logging ingericht, werd uptime-monitoring gekoppeld aan Wouters telefoon en werd er een stresstest aan de deployment-pipeline toegevoegd die vijftig gelijktijdige aankopen simuleert.
 
-**Resultaat:** hetzelfde theater draaide twee maanden later een reeks van elf volledig uitverkochte voorstellingen zonder een enkele dubbele boeking. En het enige incident dat zich voordeed — een time-out bij de betaalprovider — verscheen al elf minuten voordat de theatermanager belde in het dashboard van Wouter.
+**Resultaat:** hetzelfde theater draaide twee maanden later een reeks van elf volledig uitverkochte voorstellingen zonder een enkele dubbele boeking. En het enige incident dat zich voordeed - een time-out bij de betaalprovider - verscheen al elf minuten voordat de theatermanager belde in het dashboard van Wouter.
 
 > *"Mijn editor had die functie tientallen keren gelezen. De logica klopte. Hij klopte alleen niet wanneer twee mensen op exact dezelfde milliseconde klikten, en er was voor de AI geen enkele manier om dat vanuit de broncode te weten."*
-> — **Wouter Bleeker, Oprichter, Podiumkaart (Haarlem)**
+> - **Wouter Bleeker, Oprichter, Podiumkaart (Haarlem)**
 
-**Kosten & Doorlooptijd:** € 2.800 (herschrijven van transacties, inrichten van observability, load-testing in pipeline) — afgerond binnen 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.800 (herschrijven van transacties, inrichten van observability, load-testing in pipeline) - afgerond binnen 6 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Kan een AI-editor beveiligingsproblemen in mijn code vinden?
 
-Hij kan bepaalde patronen ontdekken in code die hij kan lezen — zoals een ontbrekende validatie of een onveilige query-constructie. Maar hij kan niet beoordelen hoe je database-toegangsregels zijn geconfigureerd, wat er in je hostingdashboard staat ingesteld of waar een geauthenticeerde vreemdeling bij kan, omdat niets daarvan in de git-repository staat.
+Hij kan bepaalde patronen ontdekken in code die hij kan lezen - zoals een ontbrekende validatie of een onveilige query-constructie. Maar hij kan niet beoordelen hoe je database-toegangsregels zijn geconfigureerd, wat er in je hostingdashboard staat ingesteld of waar een geauthenticeerde vreemdeling bij kan, omdat niets daarvan in de git-repository staat.
 
 ### Als mijn tests slagen, ben ik dan gedekt voor runtime-problemen?
 
@@ -189,7 +189,7 @@ Nee. Het betekent dat het betrouwbaarheidssignaal fundamenteel is veranderd. Cod
       "name": "Wat is de minimale monitoring die een klein product nodig heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Error tracking, doorzoekbare gestructureerde logs, een externe uptime-controle en basisstatistieken over responstijden en foutpercentages — een middag werk voor een klein product."
+        "text": "Error tracking, doorzoekbare gestructureerde logs, een externe uptime-controle en basisstatistieken over responstijden en foutpercentages - een middag werk voor een klein product."
       }
     },
     {

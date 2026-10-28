@@ -57,7 +57,7 @@ Telecommunications operators sit on some of the largest and most continuous data
 
 Telecom data is high-volume, high-velocity and largely time series. Network counters arrive at fixed intervals from tens of thousands of elements; session records arrive continuously; alarms burst during incidents.
 
-This makes streaming and distributed processing a genuine requirement rather than a resume line. Engineers in this sector routinely work with event streaming platforms, columnar stores and pipelines that must not fall behind. Aggregation strategy — what to keep at full resolution, what to roll up, how long to retain — is a design decision with real cost implications.
+This makes streaming and distributed processing a genuine requirement rather than a resume line. Engineers in this sector routinely work with event streaming platforms, columnar stores and pipelines that must not fall behind. Aggregation strategy - what to keep at full resolution, what to roll up, how long to retain - is a design decision with real cost implications.
 
 It also makes anomaly detection at scale a core competency. Thousands of series, each with its own seasonality, where you must detect meaningful deviations without generating alert volumes nobody can act on.
 
@@ -79,7 +79,7 @@ Network work is the area candidates know least about and where the most distinct
 
 **Predicting failures.** Hardware degradation, power issues, optical signal deterioration and weather-related faults all have precursors. As with industrial maintenance, the practical question is whether a prediction reaches someone who can act in time.
 
-**Quality of experience.** Network counters measure the network; customers experience streaming quality and page load times. Bridging the two — predicting perceived quality from network measurements — is a commercially important and technically interesting problem.
+**Quality of experience.** Network counters measure the network; customers experience streaming quality and page load times. Bridging the two - predicting perceived quality from network measurements - is a commercially important and technically interesting problem.
 
 ## Capacity, Energy and Cost
 
@@ -87,7 +87,7 @@ Operators spend heavily on infrastructure and energy, and analytical work that r
 
 Capacity planning combines traffic forecasting per cell and per site with the lead times of physical upgrades. Forecasts must handle growth, seasonality, special events that saturate particular locations, and the effect of new devices or services on consumption patterns. Errors are expensive in both directions: under-provisioning degrades service, over-provisioning wastes capital.
 
-Energy has become a prominent concern. Radio access networks consume a substantial share of an operator's electricity, and features that put equipment into low-power states during quiet periods can reduce consumption significantly — provided the decision to sleep a cell does not degrade service. Predicting demand accurately enough to sleep equipment safely is a genuine machine learning problem with measurable financial and environmental value.
+Energy has become a prominent concern. Radio access networks consume a substantial share of an operator's electricity, and features that put equipment into low-power states during quiet periods can reduce consumption significantly - provided the decision to sleep a cell does not degrade service. Predicting demand accurately enough to sleep equipment safely is a genuine machine learning problem with measurable financial and environmental value.
 
 Related work includes site-level energy analytics, battery and generator management, and integration with the sustainability reporting that large European companies now produce under the Corporate Sustainability Reporting Directive.
 
@@ -121,7 +121,7 @@ Telecom fraud is varied and continuous, and detecting it employs a steady number
 
 Subscription fraud involves obtaining services with no intention to pay, often using stolen or synthetic identities. Traffic-based fraud exploits interconnect billing arrangements. SIM swap attacks target individuals to intercept authentication codes, which makes this a consumer protection issue as much as a revenue one. Device trafficking, roaming abuse and premium rate schemes add further categories.
 
-Revenue assurance is the adjacent discipline of ensuring that services delivered are actually billed correctly across complex systems — unglamorous, quantifiable and valued.
+Revenue assurance is the adjacent discipline of ensuring that services delivered are actually billed correctly across complex systems - unglamorous, quantifiable and valued.
 
 Security operations have grown in importance under NIS2, which strengthens cybersecurity and incident reporting obligations for operators of critical infrastructure across the EU. Detecting anomalous behaviour across network and enterprise estates, correlating signals and reducing alert fatigue are machine learning problems with the same shape as network assurance.
 
@@ -131,7 +131,7 @@ For candidates, this area suits people who like adversarial problems with weak l
 
 The sector has several employer types worth distinguishing.
 
-**Network operators** — national and pan-European groups — employ the largest internal data teams, often split between central analytics functions and country operations.
+**Network operators** - national and pan-European groups - employ the largest internal data teams, often split between central analytics functions and country operations.
 
 **Equipment and software vendors** supply the network technology and increasingly the analytics layered on it, with strong research presence in Sweden, Finland, Germany and France.
 
@@ -169,7 +169,7 @@ Operators have pursued network automation for years, and the ambition shapes whi
 
 The stated goal across the industry is networks that detect, diagnose and in some cases resolve issues with progressively less human intervention. In practice, most operators are somewhere early on that path: automated detection is widespread, automated diagnosis is emerging, and automated remediation is applied cautiously to well-understood, low-risk actions such as restarting a process or rebalancing traffic.
 
-The interesting engineering sits in making closed-loop actions safe. That requires confidence estimation, blast radius limits, staged rollout, automatic rollback and thorough audit logging — a discipline much closer to site reliability engineering than to modelling.
+The interesting engineering sits in making closed-loop actions safe. That requires confidence estimation, blast radius limits, staged rollout, automatic rollback and thorough audit logging - a discipline much closer to site reliability engineering than to modelling.
 
 Alongside this, retrieval and language systems are being applied to operational documentation, configuration standards and historical incident records, helping engineers find how a similar problem was resolved three years ago. Given the size of these documentation estates, the value is real and the projects are numerous.
 

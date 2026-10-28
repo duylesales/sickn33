@@ -12,7 +12,7 @@ During the initial Generative AI boom, the prevailing wisdom was that every star
 
 If you use a dedicated vector database, your architecture is split. You store user profiles, billing data, and document metadata in your primary PostgreSQL database. You store the actual AI vector embeddings of those documents in Pinecone, or Weaviate, or wherever.
 
-What happens when a user deletes a document? You must write an SQL query to delete the row in Postgres, and a separate API call to delete the vector in the external store. If that second call fails — because of a timeout, a rate limit, or a deploy happening mid-request — you have an "orphaned vector." Your AI will continue to retrieve and generate answers based on a document the user believes they deleted. In a B2B context this is not a minor bug; it is a GDPR Article 17 "right to erasure" violation that can trigger real regulatory exposure. Unifying your architecture with Postgres eliminates this risk at the transaction level, because a single `DELETE` statement inside a single ACID transaction removes both the row and its vector atomically.
+What happens when a user deletes a document? You must write an SQL query to delete the row in Postgres, and a separate API call to delete the vector in the external store. If that second call fails - because of a timeout, a rate limit, or a deploy happening mid-request - you have an "orphaned vector." Your AI will continue to retrieve and generate answers based on a document the user believes they deleted. In a B2B context this is not a minor bug; it is a GDPR Article 17 "right to erasure" violation that can trigger real regulatory exposure. Unifying your architecture with Postgres eliminates this risk at the transaction level, because a single `DELETE` statement inside a single ACID transaction removes both the row and its vector atomically.
 
 ## Enter pgvector
 
@@ -26,7 +26,7 @@ The main criticism of pgvector in its early days was speed. If you have 1 millio
 
 To optimize Postgres, you must implement an **HNSW (Hierarchical Navigable Small World) Index**, which superseded the older IVFFlat index as the recommended default in pgvector 0.5+. HNSW is an algorithm that organizes your vectors into a multi-layered graph, where each node has short-range connections at the top layers for fast global navigation and dense connections at the bottom layer for precision. Instead of checking every row, it navigates the graph to find an "Approximate Nearest Neighbor" in milliseconds. Building an HNSW index on your pgvector column is the difference between a 3-second query and a 30-millisecond query.
 
-Two parameters matter in practice: `m` (the number of connections per node, typically 16) controls index size and recall, while `ef_construction` (typically 64-200) controls build-time search depth. At query time, `hnsw.ef_search` trades recall for latency — raising it from 40 to 100 will improve accuracy but add a few milliseconds per query. Getting these three numbers wrong is the single most common reason teams report pgvector "isn't fast enough" when the real issue is an unindexed or badly tuned column, not the extension itself.
+Two parameters matter in practice: `m` (the number of connections per node, typically 16) controls index size and recall, while `ef_construction` (typically 64-200) controls build-time search depth. At query time, `hnsw.ef_search` trades recall for latency - raising it from 40 to 100 will improve accuracy but add a few milliseconds per query. Getting these three numbers wrong is the single most common reason teams report pgvector "isn't fast enough" when the real issue is an unindexed or badly tuned column, not the extension itself.
 
 ## The Power of Relational Filtering (Pre-Filtering)
 
@@ -34,7 +34,7 @@ The greatest advantage of pgvector is the ability to leverage standard SQL filte
 
 If an enterprise user queries your AI, you must ensure they do not retrieve another company's data. With pgvector, you can enforce strict, cryptographically secure tenant isolation natively in SQL by combining a `WHERE tenant_id = $1` clause with the vector operator in the same query, and even enforcing it at the database layer with Postgres Row-Level Security (RLS) policies so that a bug in application code cannot leak cross-tenant data:
 
-The database filters out the millions of rows belonging to other companies *first* using a standard B-tree index on `tenant_id`, and only performs the heavier vector math on Acme Corp's specific subset of data. This is radically more efficient and secure than doing it across two disconnected systems, where pre-filtering has to be reconstructed manually through metadata filters passed as API parameters — a pattern that is easy to get wrong and hard to audit. Given that 45% of AI-generated code carries at least one security vulnerability, RLS-enforced tenant isolation at the database layer (rather than only in application code) is one of the highest-value fixes a security review can make.
+The database filters out the millions of rows belonging to other companies *first* using a standard B-tree index on `tenant_id`, and only performs the heavier vector math on Acme Corp's specific subset of data. This is radically more efficient and secure than doing it across two disconnected systems, where pre-filtering has to be reconstructed manually through metadata filters passed as API parameters - a pattern that is easy to get wrong and hard to audit. Given that 45% of AI-generated code carries at least one security vulnerability, RLS-enforced tenant isolation at the database layer (rather than only in application code) is one of the highest-value fixes a security review can make.
 
 ## When pgvector Stops Being Enough
 
@@ -67,7 +67,7 @@ He reached out to **LaunchStudio (by Manifera)**. The team created a custom HNSW
 
 **Result:** Query latency dropped to under 120ms, restoring instant search responses for active law firm clients.
 
-**Cost & Timeline:** €1,850 (Vector Index Optimization) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,850 (Vector Index Optimization) - production-ready and deployed in 4 business days.
 
 ---
 
@@ -91,4 +91,4 @@ An algorithm that organizes vectors into a multi-layered navigable graph, allowi
 
 ### How does LaunchStudio decide between pgvector and a dedicated vector database for a given project?
 
-LaunchStudio, backed by Manifera's engineering teams operating since 2014, benchmarks the actual dataset size, query volume, and update frequency before recommending an architecture — the default recommendation is almost always to start with a properly indexed pgvector setup, since it avoids the synchronization risk of a two-database architecture, and only move to a dedicated engine like the ones covered by [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) practice once there is measured evidence Postgres is the bottleneck.
+LaunchStudio, backed by Manifera's engineering teams operating since 2014, benchmarks the actual dataset size, query volume, and update frequency before recommending an architecture - the default recommendation is almost always to start with a properly indexed pgvector setup, since it avoids the synchronization risk of a two-database architecture, and only move to a dedicated engine like the ones covered by [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) practice once there is measured evidence Postgres is the bottleneck.

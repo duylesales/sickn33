@@ -1,4 +1,4 @@
-🔥 David built a prototype using **Supabase** — david, a solo technical founder in amsterdam, built an ai legal assistant using next, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 David built a prototype using **Supabase** - david, a solo technical founder in amsterdam, built an ai legal assistant using next, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-David's application achieved production readiness: David relaunched the app 5 days later. The platform is now cryptographically secure at the database level. He recently passed a strict security audit from a major Dutch law firm, securing a €3,000 MRR enterprise contract. I built a great AI tool, but I built a terrible database. LaunchStudio secured my backend and saved my company from a massive lawsuit. (€2,800 (Launch Ready database hardening package) — completed in 5 business days.). 🚀
+David's application achieved production readiness: David relaunched the app 5 days later. The platform is now cryptographically secure at the database level. He recently passed a strict security audit from a major Dutch law firm, securing a €3,000 MRR enterprise contract. I built a great AI tool, but I built a terrible database. LaunchStudio secured my backend and saved my company from a massive lawsuit. (€2,800 (Launch Ready database hardening package) - completed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/supabase-postgresql-row-level-security-ai
 

@@ -1,4 +1,4 @@
-🚨 Marijke's running app had a "how did you feel" field. Months later it was full of entries like "back to running after my ACL surgery" — visible in full to any running-club captain in the group. 😳
+🚨 Marijke's running app had a "how did you feel" field. Months later it was full of entries like "back to running after my ACL surgery" - visible in full to any running-club captain in the group. 😳
 
 Wellness apps accumulate health data one honest note at a time, without anyone deciding to build a health product: 🧠
 

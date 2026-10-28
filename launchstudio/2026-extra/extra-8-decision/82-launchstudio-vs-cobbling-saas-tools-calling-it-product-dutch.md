@@ -51,9 +51,9 @@ Een eigen backend betekent niet een overgeëngineerd enterprise-monoliet. Voor e
 
 In plaats van €300/maand te betalen verspreid over een lappendeken van automatiseringstools, communiceert uw applicatie rechtstreeks met uw eigen database. Workflows gebeuren transactioneel in milliseconden, mislukte verzoeken proberen automatisch opnieuw met gestructureerde logging, en klantgegevens bevinden zich veilig in één rechtsgebied onder uw directe controle.
 
-[LaunchStudio](https://launchstudio.eu/nl/) vervangt fragiele multi-app-lijm door schone, productieklare backendarchitectuur — ondersteund door Manifera's 11+ jaar enterprise software-engineering-ervaring.
+[LaunchStudio](https://launchstudio.eu/nl/) vervangt fragiele multi-app-lijm door schone, productieklare backendarchitectuur - ondersteund door Manifera's 11+ jaar enterprise software-engineering-ervaring.
 
-[Breng ons uw no-code workflow en laat ons er een echte backend van maken](https://launchstudio.eu/nl/#contact) — uw product draait sneller, kost minder en stopt met kapot gaan terwijl u slaapt.
+[Breng ons uw no-code workflow en laat ons er een echte backend van maken](https://launchstudio.eu/nl/#contact) - uw product draait sneller, kost minder en stopt met kapot gaan terwijl u slaapt.
 
 ## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Ontsnappen aan de 7-Tool Frankenstein-Stack
@@ -66,10 +66,10 @@ LaunchStudio auditeerde Bastiaans workflow en verving de hele 5-tool automatiser
 
 **Resultaat:** Maandelijkse software-abonnementskosten daalden van €340/maand naar €25/maand. Het webhook-faalpercentage daalde naar 0%, en de kandidaatverwerkingstijd daalde van 45 seconden over meerdere API's naar minder dan 1,5 seconden.
 
-> *"Ik dacht dat ik slim was door developers te vermijden met Zapier en Airtable. Toen het brak bij een live klantdeal, besefte ik dat ik geen softwareproduct had — ik had een kaartenhuis. LaunchStudio maakte er in tien dagen solide software van."*
-> — **Bastiaan Kuijpers, Oprichter, MatchVinder (Rotterdam)**
+> *"Ik dacht dat ik slim was door developers te vermijden met Zapier en Airtable. Toen het brak bij een live klantdeal, besefte ik dat ik geen softwareproduct had - ik had een kaartenhuis. LaunchStudio maakte er in tien dagen solide software van."*
+> - **Bastiaan Kuijpers, Oprichter, MatchVinder (Rotterdam)**
 
-**Kosten & Doorlooptijd:** €2.400 (Launch Ready Pakket, workflowconsolidatie + verenigde database + geautomatiseerde facturering) — live in 10 werkdagen.
+**Kosten & Doorlooptijd:** €2.400 (Launch Ready Pakket, workflowconsolidatie + verenigde database + geautomatiseerde facturering) - live in 10 werkdagen.
 
 ---
 

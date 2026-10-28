@@ -1,4 +1,4 @@
-🚨 3 days before launch, he found 8 real gaps — including ZERO database backups. "I thought I was being paranoid. I wasn't." 😱
+🚨 3 days before launch, he found 8 real gaps - including ZERO database backups. "I thought I was being paranoid. I wasn't." 😱
 
 The night before launch is NOT when you want to discover your database has no backups. Here's the 25-item checklist that catches it first: 📋
 
@@ -12,7 +12,7 @@ The night before launch is NOT when you want to discover your database has no ba
 
 Most polished AI prototypes satisfy only a HANDFUL of these 25 by default. 📉
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production discipline, we verify all 25 as standard — before you announce a launch date, not after a crisis. 🛡️🚀
+At **LaunchStudio**, backed by Manifera's 11+ years of production discipline, we verify all 25 as standard - before you announce a launch date, not after a crisis. 🛡️🚀
 
 👉 Get the full 25-point checklist: https://launchstudio.eu/en/blog/pre-launch-checklist-25-things-verify-ai-saas
 

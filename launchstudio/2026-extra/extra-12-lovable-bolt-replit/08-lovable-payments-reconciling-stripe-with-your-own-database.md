@@ -28,7 +28,7 @@ They will not match, and the interesting part is that the reasons are almost alw
 
 Webhooks are not guaranteed the way founders assume. Your endpoint can be down during a deploy, return a 500 because of an unrelated bug, time out under load, or reject an event because a signature check was misconfigured after a key rotation. Providers retry, generously, and then they stop.
 
-Manual actions in the dashboard are the second source. Every refund, cancellation or subscription edit made by a human in the provider's interface is a change your application learns about only through a webhook — which is the same mechanism that just failed.
+Manual actions in the dashboard are the second source. Every refund, cancellation or subscription edit made by a human in the provider's interface is a change your application learns about only through a webhook - which is the same mechanism that just failed.
 
 The third is your own code. An event handler that throws part-way through leaves the provider believing the event was delivered, because it returned a 200 before the work finished, or leaves your database half-updated because there was no transaction around the writes.
 
@@ -42,7 +42,7 @@ Pull every charge, refund and dispute the provider recorded in the period. Pull 
 
 **In the provider, not in your database.** Someone paid and your application does not know. This is the one that costs you a customer, because they have paid for access they do not have.
 
-**In your database, not at the provider.** Usually a record created optimistically before confirmation — a pending payment that never completed but was written as though it had.
+**In your database, not at the provider.** Usually a record created optimistically before confirmation - a pending payment that never completed but was written as though it had.
 
 **In both, but different.** Different amount, different status, refunded on one side only. These are the ones that quietly corrupt revenue figures.
 
@@ -50,7 +50,7 @@ For a product doing a few hundred transactions a month this runs in seconds and 
 
 ## Reconcile Against the Bank as Well
 
-Provider and database agreeing is not the end of it, because what reaches your bank is the provider's payout — a batched amount, arriving days later, net of fees, refunds and sometimes disputes from a different period.
+Provider and database agreeing is not the end of it, because what reaches your bank is the provider's payout - a batched amount, arriving days later, net of fees, refunds and sometimes disputes from a different period.
 
 Founders trying to match individual payments to bank lines find it impossible and conclude that reconciliation is beyond a small company. The correct unit is the payout: each bank deposit corresponds to one payout report listing exactly which transactions it contains and what was deducted.
 
@@ -72,7 +72,7 @@ And keep the failures somewhere you will see them. An unhandled events list with
 
 When reconciliation finds a gap, resist the temptation to correct it by hand in the database.
 
-Every provider lets you retrieve historical events and replay them into your endpoint. Because your handler is idempotent — it is, isn't it — replaying is safe: events already processed are recognised and skipped, missing ones are applied through exactly the same code path that would have run originally.
+Every provider lets you retrieve historical events and replay them into your endpoint. Because your handler is idempotent - it is, isn't it - replaying is safe: events already processed are recognised and skipped, missing ones are applied through exactly the same code path that would have run originally.
 
 This matters because hand-written corrections do not run your business logic. An access grant made with an UPDATE statement skips the email, the audit record and the entitlement calculation, so the row looks right and the customer still cannot use the feature.
 
@@ -82,19 +82,19 @@ Once reconciliation exists, three numbers become trustworthy, and it is worth na
 
 Recognised revenue, from your own invoices and credit notes, is the figure for your accountant. Cash received, from payouts, is the figure for your bank balance and your runway. Active subscription value, from your database, is the figure for how the business is doing right now.
 
-They are different numbers legitimately — an annual plan paid in January is cash in January and revenue across twelve months. What reconciliation gives you is confidence that the differences are the real ones rather than accumulated errors.
+They are different numbers legitimately - an annual plan paid in January is cash in January and revenue across twelve months. What reconciliation gives you is confidence that the differences are the real ones rather than accumulated errors.
 
 ## Do This Before You Need an Investor
 
 There is a version of this article that only matters when something goes wrong. There is another version that matters when something goes right.
 
-Any serious diligence — an investor, an acquirer, a bank, a larger customer's procurement team — will ask for revenue figures and then test whether your systems produce them consistently. A founder who can show that provider, application and bank agree every month, with the reconciliation output to prove it, answers the question in one exchange. A founder who cannot spends three weeks reconstructing two years of history under time pressure, and every discrepancy found becomes a question about everything else.
+Any serious diligence - an investor, an acquirer, a bank, a larger customer's procurement team - will ask for revenue figures and then test whether your systems produce them consistently. A founder who can show that provider, application and bank agree every month, with the reconciliation output to prove it, answers the question in one exchange. A founder who cannot spends three weeks reconstructing two years of history under time pressure, and every discrepancy found becomes a question about everything else.
 
 The work is the same in both cases. Only the circumstances differ.
 
 ## Test Clocks and the Failures You Cannot Wait For
 
-The uncomfortable thing about billing bugs is that most of them only appear on a date in the future. A renewal that fails, a trial that converts, an annual plan that comes round again — you cannot reasonably wait eleven months to find out whether your code handles it.
+The uncomfortable thing about billing bugs is that most of them only appear on a date in the future. A renewal that fails, a trial that converts, an annual plan that comes round again - you cannot reasonably wait eleven months to find out whether your code handles it.
 
 Providers solve this with test clocks: a simulated time in the sandbox that you advance deliberately. Create a subscription, move the clock forward a month, and watch what your application does with the renewal. Move it again with a card configured to fail, and watch the past-due path. Advance it through the whole retry schedule and see whether access actually ends.
 
@@ -104,7 +104,7 @@ Do it once before launch and again after any change to billing code. It is the o
 
 ## Keep a Record of Every Reconciliation
 
-Run the check, then write down that you ran it and what it found — a dated line in a file, or a row in a table. Three words when it is clean.
+Run the check, then write down that you ran it and what it found - a dated line in a file, or a row in a table. Three words when it is clean.
 
 This costs nothing and does two things. It proves the routine is actually happening, which matters when the person running it is you and the month has been busy. And when a discrepancy is eventually found in an old period, the log tells you when it appeared, which narrows the cause from everything you have ever deployed to whatever changed in one particular month.
 
@@ -114,7 +114,7 @@ For a product already taking payments this is one to two days: the provider refe
 
 LaunchStudio includes reconciliation in payment work rather than treating it as an accounting concern, and under the €49 per month managed arrangement the monthly check runs as part of operations. Behind it is Manifera: eleven years, 160+ projects, and financial systems delivered from Amsterdam, Singapore and Ho Chi Minh City.
 
-[Ask us to run one month's reconciliation on your product](https://launchstudio.eu/en/#contact) — the first one usually finds something.
+[Ask us to run one month's reconciliation on your product](https://launchstudio.eu/en/#contact) - the first one usually finds something.
 
 ## Real example
 
@@ -126,14 +126,14 @@ His webhook handler worked. It had also been down for eleven minutes during a de
 
 Seventeen people paid during those eleven minutes. Their money reached the provider and his bank account. His application had no record of them, so they did not appear on the start list, and the organiser found out on race day when seventeen runners arrived with confirmation emails from a payment provider and no bib numbers.
 
-Two business days of work afterwards: the provider reference added to every payment row; a reconciliation query producing the three difference lists, run monthly and after every deploy; payout records stored with their constituent transactions so bank deposits explain themselves; the webhook handler rewritten to record each event before processing, wrapped in a transaction, and made idempotent on the event identifier; an unhandled-events list visible on his admin page; and a replay procedure documented, which was then used to recover the seventeen registrations through the normal code path — issuing the confirmations and start-list entries that had never been created.
+Two business days of work afterwards: the provider reference added to every payment row; a reconciliation query producing the three difference lists, run monthly and after every deploy; payout records stored with their constituent transactions so bank deposits explain themselves; the webhook handler rewritten to record each event before processing, wrapped in a transaction, and made idempotent on the event identifier; an unhandled-events list visible on his admin page; and a replay procedure documented, which was then used to recover the seventeen registrations through the normal code path - issuing the confirmations and start-list entries that had never been created.
 
 **Result:** the seventeen runners were reinstated correctly rather than typed in by hand, and over the following year reconciliation caught four further gaps, all small, all within a month. The organiser renewed.
 
 > *"Eleven minutes of downtime on a Saturday morning, and I found out about it on a Sunday in September with seventeen people standing at a registration desk."*
-> — **Joost Berkhout, Founder, Inschrijfpunt (Apeldoorn)**
+> - **Joost Berkhout, Founder, Inschrijfpunt (Apeldoorn)**
 
-**Cost & Timeline:** €1,850 (payment references, reconciliation queries, payout records, event logging with idempotent transactional handling, unhandled-events view, replay procedure and recovery) — completed in 2 business days.
+**Cost & Timeline:** €1,850 (payment references, reconciliation queries, payout records, event logging with idempotent transactional handling, unhandled-events view, replay procedure and recovery) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -147,7 +147,7 @@ They are retried, not guaranteed. A deploy, a timeout, an unrelated 500 or a mis
 
 ### Why not fix a missing payment directly in the database?
 
-Because an UPDATE skips your business logic — the confirmation email, the entitlement calculation, the audit record. Replay the event through your webhook endpoint so the normal code path runs.
+Because an UPDATE skips your business logic - the confirmation email, the entitlement calculation, the audit record. Replay the event through your webhook endpoint so the normal code path runs.
 
 ### How do I match my bank deposits to payments?
 
@@ -155,7 +155,7 @@ Not individually. Match at the payout level: each deposit corresponds to one pay
 
 ### Is this worth it for a product with fifty customers?
 
-The setup is one to two days and the monthly run is minutes. At fifty customers a single missed payment is one percent of your revenue and a lost customer, so yes — and the habit is far easier to establish now than at five hundred.
+The setup is one to two days and the monthly run is minutes. At fifty customers a single missed payment is one percent of your revenue and a lost customer, so yes - and the habit is far easier to establish now than at five hundred.
 
 <script type="application/ld+json">
 {
@@ -167,7 +167,7 @@ The setup is one to two days and the monthly run is minutes. At fifty customers 
       "name": "How often should I reconcile payments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Monthly as a routine, plus after any deploy touching payments or causing downtime — that is where the largest gaps come from."
+        "text": "Monthly as a routine, plus after any deploy touching payments or causing downtime - that is where the largest gaps come from."
       }
     },
     {
@@ -199,7 +199,7 @@ The setup is one to two days and the monthly run is minutes. At fifty customers 
       "name": "Is reconciliation worth it for a small product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — one to two days to set up, minutes per month to run, and at fifty customers one missed payment is a meaningful share of revenue."
+        "text": "Yes - one to two days to set up, minutes per month to run, and at fifty customers one missed payment is a meaningful share of revenue."
       }
     }
   ]

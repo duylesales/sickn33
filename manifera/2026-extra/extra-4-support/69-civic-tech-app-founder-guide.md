@@ -22,11 +22,11 @@ target_persona: "D"
 }
 </script>
 
-A first-time founder building a civic-tech app — reporting potholes, requesting municipal services, flagging community issues — often scopes the MVP around a simple reporting form: describe the issue, submit, done. The genuinely hard, value-determining part of a civic-tech app isn't the submission form, which is a comparatively simple interface problem; it's whether a submitted report actually reaches and gets acted on by the specific municipal department responsible for it, a question that depends entirely on data structure and integration decisions largely invisible in a basic reporting form demo.
+A first-time founder building a civic-tech app - reporting potholes, requesting municipal services, flagging community issues - often scopes the MVP around a simple reporting form: describe the issue, submit, done. The genuinely hard, value-determining part of a civic-tech app isn't the submission form, which is a comparatively simple interface problem; it's whether a submitted report actually reaches and gets acted on by the specific municipal department responsible for it, a question that depends entirely on data structure and integration decisions largely invisible in a basic reporting form demo.
 
 ## Step 1: Understand Why Municipal Integration Determines Real Impact
 
-A civic-tech app that collects reports but has no reliable pathway getting those reports to the actual responsible municipal department, in a format that department's own systems and workflows can actually process, produces reports that may simply sit unaddressed regardless of how polished the submission experience feels to the citizen using it. A founder's own sense of the app's success — reports submitted, users engaged — can look strong even while the app is failing at its actual core purpose, since submission volume is visible and easy to track while actual municipal responsiveness and issue resolution, the outcome that genuinely matters to the citizens using the app, is considerably harder to see without deliberate tracking and genuine municipal integration.
+A civic-tech app that collects reports but has no reliable pathway getting those reports to the actual responsible municipal department, in a format that department's own systems and workflows can actually process, produces reports that may simply sit unaddressed regardless of how polished the submission experience feels to the citizen using it. A founder's own sense of the app's success - reports submitted, users engaged - can look strong even while the app is failing at its actual core purpose, since submission volume is visible and easy to track while actual municipal responsiveness and issue resolution, the outcome that genuinely matters to the citizens using the app, is considerably harder to see without deliberate tracking and genuine municipal integration.
 
 ## Step 2: Decide on Structured Issue Categorization From the Start
 
@@ -34,7 +34,7 @@ A reporting form that captures issues as free-text descriptions, without structu
 
 ## Step 3: Plan for Status Tracking and Feedback Loops Explicitly
 
-A civic-tech app that only supports one-way submission, without any mechanism for a citizen to see what happened to their report after submitting it, tends to produce a specific, corrosive outcome over time: citizens who submit reports and never see any indication of resolution or even acknowledgment reasonably conclude the app doesn't actually work, reducing future engagement regardless of whether reports are, in fact, being addressed behind the scenes. Building status tracking and feedback infrastructure — even something as simple as a status update when a municipal partner marks an issue as received, in progress, or resolved — directly addresses this trust and engagement problem, and is architecturally much easier to build in from the start than retrofitting a status tracking system onto a data model that was never designed to represent report lifecycle state.
+A civic-tech app that only supports one-way submission, without any mechanism for a citizen to see what happened to their report after submitting it, tends to produce a specific, corrosive outcome over time: citizens who submit reports and never see any indication of resolution or even acknowledgment reasonably conclude the app doesn't actually work, reducing future engagement regardless of whether reports are, in fact, being addressed behind the scenes. Building status tracking and feedback infrastructure - even something as simple as a status update when a municipal partner marks an issue as received, in progress, or resolved - directly addresses this trust and engagement problem, and is architecturally much easier to build in from the start than retrofitting a status tracking system onto a data model that was never designed to represent report lifecycle state.
 
 ## Step 4: Scope Data Ownership and Public Records Considerations Early
 
@@ -42,7 +42,7 @@ Reports submitted through a civic-tech app working with municipal partners may b
 
 ## Why This Foundation Is Easy to Underweight at MVP Stage
 
-A specific reason municipal integration, structured categorization, and status tracking are easy to deprioritize early: a working reporting form MVP, demoed to a handful of test users or even a prospective municipal partner in an early meeting, can look complete and compelling based purely on the submission experience, since the actual test of whether reports reach and get acted on by the right department only becomes visible once the app operates in genuine partnership with a real municipality processing real reports through real workflows. This is precisely the trap — the app's actual civic value is invisible until real municipal integration is tested, by which point a data structure built without integration in mind is a genuinely costly thing to retrofit.
+A specific reason municipal integration, structured categorization, and status tracking are easy to deprioritize early: a working reporting form MVP, demoed to a handful of test users or even a prospective municipal partner in an early meeting, can look complete and compelling based purely on the submission experience, since the actual test of whether reports reach and get acted on by the right department only becomes visible once the app operates in genuine partnership with a real municipality processing real reports through real workflows. This is precisely the trap - the app's actual civic value is invisible until real municipal integration is tested, by which point a data structure built without integration in mind is a genuinely costly thing to retrofit.
 
 ## Why Researching a Specific Municipal Partner's Workflow Beats Building a Generic Solution First
 
@@ -63,8 +63,8 @@ A non-technical founder at Sfântu Gheorghe-based startup Oraș Activ had built 
 
 Manifera's Amsterdam team, engaged for the rebuild, restructured issue categorization to align directly with the municipal partner's actual department structure, built status tracking reflecting the municipality's real workflow stages, and researched the specific public records requirements applicable to the partnership to ensure the data handling approach met the municipality's actual legal obligations.
 
-> *"We had a signed partnership and a nice-looking app, and genuinely didn't understand why usage was declining until we actually sat with municipal staff and watched them manually untangle every submission we sent them. The reporting form was never the hard part — getting our data structure to actually match how they worked was."*
-> — **Founder, Oraș Activ**
+> *"We had a signed partnership and a nice-looking app, and genuinely didn't understand why usage was declining until we actually sat with municipal staff and watched them manually untangle every submission we sent them. The reporting form was never the hard part - getting our data structure to actually match how they worked was."*
+> - **Founder, Oraș Activ**
 
 Oraș Activ's rebuilt app produced measurably faster municipal response times and recovered citizen engagement following the introduction of visible status tracking, and the founder now treats municipal workflow research as a required first step for any new city partnership, before any app customization work begins.
 
@@ -79,7 +79,7 @@ Oraș Activ's rebuilt app produced measurably faster municipal response times an
 
 ## Scoping Your Own Civic-Tech App's Municipal Integration Correctly
 
-Before building a civic-tech reporting app, structure issue categorization around actual municipal workflows, build status tracking from the start, and research applicable public records requirements early — a polished reporting form alone doesn't guarantee reports actually reach and get acted on by the right department. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) about scoping a genuinely impactful civic-tech app MVP.
+Before building a civic-tech reporting app, structure issue categorization around actual municipal workflows, build status tracking from the start, and research applicable public records requirements early - a polished reporting form alone doesn't guarantee reports actually reach and get acted on by the right department. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) about scoping a genuinely impactful civic-tech app MVP.
 
 ## Frequently Asked Questions
 

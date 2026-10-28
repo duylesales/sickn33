@@ -10,7 +10,7 @@ What if the reason your last dedicated-developer engagement underperformed had n
 ✅ **Amsterdam Writes the Terms That Make "Dedicated" Real:** Dutch-based leads specify exclusivity, access parity, and reversibility explicitly, so the contract matches the practice.
 ✅ **Vietnam Delivers 52% Below Local Cost:** €7,744/month versus roughly €16,192/month for a direct Vught/'s-Hertogenbosch hire, with independent ownership typically reached in 4-6 weeks.
 
-A German maritime software firm nearly ruled out the model after one bad engagement. The rebuilt one reached independent module ownership by week five — and expanded to two more developers the next quarter. ⚓
+A German maritime software firm nearly ruled out the model after one bad engagement. The rebuilt one reached independent module ownership by week five - and expanded to two more developers the next quarter. ⚓
 
 👉 Read our full deep dive on dedicated software developers serving Vught: https://www.manifera.com/blog/dedicated-software-developers-vught
 

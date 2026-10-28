@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "On-Call, Night Batches and Burnout in ML and Data Teams: Questions to Ask Before You Accept",
-  "description": "As models move into production, data teams inherit operational duty without always inheriting the practices that make it sustainable — and Dutch rules on standby, working time and workload apply.",
+  "description": "As models move into production, data teams inherit operational duty without always inheriting the practices that make it sustainable - and Dutch rules on standby, working time and workload apply.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-18",
@@ -55,9 +55,9 @@ The Netherlands regulates working time and standby duty more explicitly than man
 
 **Working time.** The Working Hours Act sets limits on working hours and minimum rest periods. Being called out at night affects the rest period that must follow, which has practical consequences for the next working day.
 
-**Standby duty.** The Act contains specific provisions for standby arrangements — how often they may be scheduled, and how call-outs interact with rest. Many collective agreements add compensation: an allowance for being available, plus payment or time off for actual call-outs.
+**Standby duty.** The Act contains specific provisions for standby arrangements - how often they may be scheduled, and how call-outs interact with rest. Many collective agreements add compensation: an allowance for being available, plus payment or time off for actual call-outs.
 
-**Workload as a health and safety matter.** Under the Working Conditions Act, employers must assess and address risks including psychosocial workload — work pressure is a formal occupational risk, not a personal failing. A structurally overloaded team is a health and safety issue with a legal dimension.
+**Workload as a health and safety matter.** Under the Working Conditions Act, employers must assess and address risks including psychosocial workload - work pressure is a formal occupational risk, not a personal failing. A structurally overloaded team is a health and safety issue with a legal dimension.
 
 **Works council involvement.** Arrangements concerning working times and standby schedules typically fall within the works council's remit, which means employees have a collective route to change them.
 
@@ -127,7 +127,7 @@ Measure first: a simple log of alerts, hours outside working time and what trigg
 
 Then raise it as a team rather than individually, because a structural problem presented by one person reads as a personal capacity issue.
 
-Then propose the specific change — rotation size, alert reduction, reserved reliability capacity — rather than only describing the pain. Managers respond better to proposals than to symptoms.
+Then propose the specific change - rotation size, alert reduction, reserved reliability capacity - rather than only describing the pain. Managers respond better to proposals than to symptoms.
 
 If nothing changes after a genuine attempt, treat it as information about the organisation rather than about yourself. Burnout recovery in the Netherlands is a long process with real protections, but the far better outcome is not needing them.
 
@@ -151,7 +151,7 @@ Neither choice is more serious than the other, and treating on-call as a badge o
 - Dutch law regulates working time, standby and rest, and treats work pressure as an occupational health risk.
 - Collective agreements frequently entitle you to standby compensation that employers do not always mention.
 - A rotation of two is not a rotation; healthy arrangements have five or six people, runbooks, alert hygiene and protected reliability time.
-- Measure the load before raising it, and raise it as a team — a structural problem framed individually reads as personal capacity.
+- Measure the load before raising it, and raise it as a team - a structural problem framed individually reads as personal capacity.
 
 ## What Good Employers Do Differently
 
@@ -161,7 +161,7 @@ They treat reliability as a product requirement rather than an engineering prefe
 
 They also make failure discussable. Post-incident reviews look at the system rather than the person, alerts that fire without action are deleted rather than tolerated, and someone senior says out loud that a 3 a.m. page is a design failure, not a normal cost of doing business.
 
-Candidates can detect most of this in one interview question: "Tell me about the last incident and what changed afterwards." An employer with healthy practice will describe a concrete change to the system. One without will describe how quickly someone fixed it — which tells you exactly what your nights will look like.
+Candidates can detect most of this in one interview question: "Tell me about the last incident and what changed afterwards." An employer with healthy practice will describe a concrete change to the system. One without will describe how quickly someone fixed it - which tells you exactly what your nights will look like.
 
 ## Where to Start
 
@@ -181,10 +181,10 @@ Many collective agreements provide standby allowances and compensation for call-
 Working time rules set minimum rest periods, and a call-out affects them; employers should adjust the following day accordingly.
 
 ### (Scenario: overloaded team member) Is work pressure a formal issue in the Netherlands?
-Yes — psychosocial workload is part of the employer's occupational risk assessment obligations, and the works council has a role.
+Yes - psychosocial workload is part of the employer's occupational risk assessment obligations, and the works council has a role.
 
 ### (Scenario: candidate who wants no on-call) Are there data roles without it?
-Yes — analysis, research, consultancy and many project-based roles have no operational duty; ask explicitly rather than assuming.
+Yes - analysis, research, consultancy and many project-based roles have no operational duty; ask explicitly rather than assuming.
 
 <script type="application/ld+json">
 {
@@ -194,8 +194,8 @@ Yes — analysis, research, consultancy and many project-based roles have no ope
     {"@type": "Question", "name": "What should I ask before accepting a role with on-call?", "acceptedAnswer": {"@type": "Answer", "text": "Rotation size, out-of-hours alert counts, compensation arrangements and whether runbooks exist."}},
     {"@type": "Question", "name": "Am I entitled to standby compensation in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Many collective agreements provide standby allowances and call-out compensation; check the applicable agreement."}},
     {"@type": "Question", "name": "Can I be expected to work normally after a night call-out?", "acceptedAnswer": {"@type": "Answer", "text": "Working time rules set minimum rest periods that a call-out affects, so the following day should be adjusted."}},
-    {"@type": "Question", "name": "Is work pressure treated as a formal issue in Dutch workplaces?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — psychosocial workload falls under the employer's occupational risk assessment obligations."}},
-    {"@type": "Question", "name": "Are there data roles without on-call duty?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — analysis, research, consultancy and many project-based roles carry no operational duty."}}
+    {"@type": "Question", "name": "Is work pressure treated as a formal issue in Dutch workplaces?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - psychosocial workload falls under the employer's occupational risk assessment obligations."}},
+    {"@type": "Question", "name": "Are there data roles without on-call duty?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - analysis, research, consultancy and many project-based roles carry no operational duty."}}
   ]
 }
 </script>

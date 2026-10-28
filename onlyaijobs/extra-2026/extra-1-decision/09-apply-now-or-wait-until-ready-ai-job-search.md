@@ -41,7 +41,7 @@ There is a version of the job search that never quite begins. One more course fi
 
 The first cause is a real skill gap: you cannot yet do a substantial part of what the role requires. Someone who has never written SQL applying for an analyst role has a genuine gap, and applying will produce rejections that teach little.
 
-The second cause is a confidence gap: you can do the work, but you have no external evidence, so you assume everyone else is further ahead. This is extremely common among career switchers, recent graduates and people returning after a break — and it is not solved by more preparation, because no amount of solo study produces the external validation the feeling is asking for.
+The second cause is a confidence gap: you can do the work, but you have no external evidence, so you assume everyone else is further ahead. This is extremely common among career switchers, recent graduates and people returning after a break - and it is not solved by more preparation, because no amount of solo study produces the external validation the feeling is asking for.
 
 The two feel identical from the inside. Separating them is the whole decision.
 
@@ -57,7 +57,7 @@ Take one realistic vacancy and read the section describing daily work, not the r
 
 **Is there one specific thing I genuinely cannot do?** Name it precisely. "I have never deployed a model" is actionable. "I am not good enough yet" is not.
 
-If your answers are mostly positive with one named gap, apply now and address the gap explicitly. If there are three or four named gaps in the core of the job, a focused month of preparation is reasonable — but with a date on the calendar for when applications start regardless.
+If your answers are mostly positive with one named gap, apply now and address the gap explicitly. If there are three or four named gaps in the core of the job, a focused month of preparation is reasonable - but with a date on the calendar for when applications start regardless.
 
 ## What Waiting Actually Costs
 
@@ -65,7 +65,7 @@ Delay is not neutral, and its costs are easy to underestimate.
 
 **You learn nothing about the real bar.** Interviews are the only reliable source of information about what employers actually test. Candidates who apply early discover that their assumed weaknesses are irrelevant and that something they never considered matters.
 
-**Preparation without feedback drifts.** Months spent on advanced deep learning may add nothing for a market that wants SQL, evaluation discipline and communication — but you cannot know that from inside a course.
+**Preparation without feedback drifts.** Months spent on advanced deep learning may add nothing for a market that wants SQL, evaluation discipline and communication - but you cannot know that from inside a course.
 
 **Timing is partly luck.** The role that fits you may be published this month and filled next month. Being in the market is how you catch it.
 
@@ -100,7 +100,7 @@ Note the asymmetry: preparation should be specific and time-boxed. "Learn more" 
 
 The most effective route for most people is not sequential but parallel: apply and prepare at the same time.
 
-Applications take a few hours each and are spread across weeks of waiting. That waiting time is exactly when preparation happens — and it is better preparation, because interviews tell you what to work on. A rejection that mentions weak evaluation discipline turns a vague plan into a specific one.
+Applications take a few hours each and are spread across weeks of waiting. That waiting time is exactly when preparation happens - and it is better preparation, because interviews tell you what to work on. A rejection that mentions weak evaluation discipline turns a vague plan into a specific one.
 
 Practically: apply to two roles a week, and spend the rest of your available time on the single most relevant gap. After a month you will have both evidence about the market and a genuine improvement, instead of one or the other.
 
@@ -110,7 +110,7 @@ Practically: apply to two roles a week, and spend the rest of your available tim
 
 **If you are between jobs**, the practical pressure is different. People receiving unemployment benefits have obligations to look for work, and the UWV provides support for job seeking; check what applies to your situation.
 
-**If you are an international graduate**, permits such as the orientation year for highly educated persons have a defined duration. Using that window to search actively — rather than to prepare further — is usually the better allocation.
+**If you are an international graduate**, permits such as the orientation year for highly educated persons have a defined duration. Using that window to search actively - rather than to prepare further - is usually the better allocation.
 
 **Probation periods** cut both ways. Dutch probation periods are short and legally capped, which makes employers somewhat more willing to take a chance on a candidate who is not a perfect match, and also gives you an exit if the role turns out differently than described.
 
@@ -120,11 +120,11 @@ Practically: apply to two roles a week, and spend the rest of your available tim
 
 As the EU Pay Transparency Directive is implemented, employers must provide information about the initial pay or its range before the interview and may not ask about pay history. For someone deciding whether to start applying, this reduces one source of hesitation: you can see earlier whether a role is in a realistic band for you, rather than discovering it after three rounds.
 
-## Applying as Practice — With One Caution
+## Applying as Practice - With One Caution
 
 Treating early applications as practice is reasonable: interviews are a skill, and the first one in two years is rarely your best. Applying to a few roles that are a stretch is a legitimate way to calibrate.
 
-The caution is that the Dutch AI market is small and interconnected. Hiring managers move between employers, and specialist recruiters have long memories. Deliberately wasting an employer's time — applying with no interest, or arriving unprepared repeatedly at the same company — is remembered. Practise on real opportunities you would actually accept, and prepare for each one properly.
+The caution is that the Dutch AI market is small and interconnected. Hiring managers move between employers, and specialist recruiters have long memories. Deliberately wasting an employer's time - applying with no interest, or arriving unprepared repeatedly at the same company - is remembered. Practise on real opportunities you would actually accept, and prepare for each one properly.
 
 ## Readiness Is Role-Dependent, Not Absolute
 
@@ -142,7 +142,7 @@ The practical version: instead of asking whether you are ready, ask whether you 
 
 A former teacher in Nijmegen retrains towards data work. Six months after finishing a part-time programme, she has completed four courses, started three projects and applied to nothing. Every time she considers applying, she finds something else to learn first.
 
-She changes the rule: applications start on the first of next month regardless of what is finished, at two per week. Before that date she completes one project properly — a forecast on public data with honest validation and a clear README — instead of starting a fourth.
+She changes the rule: applications start on the first of next month regardless of what is finished, at two per week. Before that date she completes one project properly - a forecast on public data with honest validation and a clear README - instead of starting a fourth.
 
 Her first three applications produce two rejections and one first conversation, in which the interviewer asks nothing about deep learning and a great deal about how she would explain a model to non-technical colleagues. That feedback reshapes her preparation entirely. Two months later she is hired as a data analyst at a healthcare organisation twenty minutes from home, in a team that values exactly the teaching background she had been treating as a liability.
 
@@ -156,7 +156,7 @@ Her first three applications produce two rejections and one first conversation, 
 
 ## Where to Start
 
-Pick one vacancy you would genuinely accept, read the daily work section, and decide today whether what stops you is a named gap or a feeling — then either close that gap with a deadline or apply this week.
+Pick one vacancy you would genuinely accept, read the daily work section, and decide today whether what stops you is a named gap or a feeling - then either close that gap with a deadline or apply this week.
 
 Browse current AI, machine learning and data jobs, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -169,13 +169,13 @@ Read the daily work section of a real vacancy and ask whether you could produce 
 One well-documented project with honest evaluation usually beats several unfinished ones. Depth and clarity matter more than quantity.
 
 ### (Scenario: employed candidate) Should I wait until I can start immediately?
-No — the statutory notice period for employees is one month unless a longer period is agreed, and employers expect it when planning a start date.
+No - the statutory notice period for employees is one month unless a longer period is agreed, and employers expect it when planning a start date.
 
 ### (Scenario: candidate worried about wasting employers' time) Is it acceptable to apply for practice?
 Apply only to roles you would genuinely accept, and prepare properly. The Dutch AI market is small, and repeated unprepared applications are remembered.
 
 ### (Scenario: international graduate) Does my residence permit affect when I should start?
-Yes — permits such as the orientation year have a defined duration, so using that window for active applications rather than further preparation is usually better.
+Yes - permits such as the orientation year have a defined duration, so using that window for active applications rather than further preparation is usually better.
 
 <script type="application/ld+json">
 {
@@ -184,9 +184,9 @@ Yes — permits such as the orientation year have a defined duration, so using t
   "mainEntity": [
     {"@type": "Question", "name": "How do I know whether I am actually ready to apply?", "acceptedAnswer": {"@type": "Answer", "text": "Test yourself against the described daily work; if you could produce a rough version today, the gap is confidence."}},
     {"@type": "Question", "name": "How many portfolio projects do I need before applying?", "acceptedAnswer": {"@type": "Answer", "text": "One well-documented project with honest evaluation usually beats several unfinished ones."}},
-    {"@type": "Question", "name": "Should I wait until I can start immediately?", "acceptedAnswer": {"@type": "Answer", "text": "No — a one-month notice period is standard and expected by employers."}},
+    {"@type": "Question", "name": "Should I wait until I can start immediately?", "acceptedAnswer": {"@type": "Answer", "text": "No - a one-month notice period is standard and expected by employers."}},
     {"@type": "Question", "name": "Is it acceptable to apply for practice?", "acceptedAnswer": {"@type": "Answer", "text": "Only for roles you would accept, and with proper preparation; the market is small."}},
-    {"@type": "Question", "name": "Does my residence permit affect when I should start?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — permits such as the orientation year have a limited duration."}}
+    {"@type": "Question", "name": "Does my residence permit affect when I should start?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - permits such as the orientation year have a limited duration."}}
   ]
 }
 </script>

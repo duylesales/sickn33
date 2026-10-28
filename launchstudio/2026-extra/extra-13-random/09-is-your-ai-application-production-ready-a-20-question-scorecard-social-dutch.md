@@ -5,14 +5,14 @@ Haar "nee"-antwoorden zaten precies waar het het meeste pijn doet: klanten zagen
 ❌ Data van andere klanten zichtbaar via de URL (vraag 1)
 ❌ Betalingen bevestigd door de browser, niet door de server (vraag 9)
 ❌ Een beheerpagina die voor iedereen bereikbaar was (vraag 2)
-❌ Geen meldingen, geen staging, geen geteste back-ups — plus een open upload en een zichtbare Mollie-sleutel
+❌ Geen meldingen, geen staging, geen geteste back-ups - plus een open upload en een zichtbare Mollie-sleutel
 
 ✅ Row level security op bestellingen en klanten
 ✅ Aanbetalingen bevestigd via geverifieerde Mollie-webhooks
 ✅ Beheergedeelte achter rolcontroles op de server, uploads beperkt, de sleutel geroteerd en naar de server verplaatst
 ✅ EU-back-ups met een getest herstel, staging en meldingen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, beoordelen we dezelfde vijf gebieden — toegang, data, geld, beheer, vertrouwen — en lossen we op wat de score laat zien. ⚙️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, beoordelen we dezelfde vijf gebieden - toegang, data, geld, beheer, vertrouwen - en lossen we op wat de score laat zien. ⚙️
 
 💡 Het resultaat: € 1.750, zeven werkdagen. Bij de herkansing scoorde ze 19 (het laatste punt was een privacyverklaring die ze zelf schreef). De Instagramlancering leverde in twee weken 212 geconfigureerde bestellingen en 58 betaalde aanbetalingen op, zonder één betaalafwijking. 🚀
 

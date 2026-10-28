@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Four Questions Standard RFPs Never Ask:** Who owns architecture post-signature, is there independent governance, how specific is the IP protection, and what's the real ramp-up timeline.
-✅ **Amsterdam Strategic Governance:** Architecture sign-off, independent progress verification, and contractual IP protection — the layer a CTO can name and hold accountable.
+✅ **Amsterdam Strategic Governance:** Architecture sign-off, independent progress verification, and contractual IP protection - the layer a CTO can name and hold accountable.
 ✅ **Vietnam Execution Velocity:** Autonomous pods executing against a documented ramp-up plan, technical leadership embedded from day one.
 
 Answer every question on this checklist before a CTO has to ask twice. 🛡️

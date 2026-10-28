@@ -87,7 +87,7 @@ Logan werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Logan garandeert kredietvoorziening voor alle succesvolle betalingen, waardoor handmatige klantenondersteuningstickets worden geëlimineerd.
 
-**Kosten en tijdlijn:** € 1.100 (Webhook-integratiepakket) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (Webhook-integratiepakket) - klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
 

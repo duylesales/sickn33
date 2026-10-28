@@ -1,6 +1,6 @@
-🚨 Elijah, a travel agent, used **Lovable** to build an AI trip planner — but the general-purpose chatbot kept going off-topic and failed to collect required booking details in the right sequence. ✈️
+🚨 Elijah, a travel agent, used **Lovable** to build an AI trip planner - but the general-purpose chatbot kept going off-topic and failed to collect required booking details in the right sequence. ✈️
 
-A chatbot isn't an Agent — a real Agent is an LLM wrapped in a loop with tools, structured error-handling, and a hard stop. 🧠
+A chatbot isn't an Agent - a real Agent is an LLM wrapped in a loop with tools, structured error-handling, and a hard stop. 🧠
 
 ❌ No deterministic structure, so the AI wandered off-task mid-conversation
 ❌ No tool calling, so the model couldn't reliably query or act on real data

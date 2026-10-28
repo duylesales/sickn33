@@ -12,7 +12,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Gratis AI-software: wat er verandert op het moment dat u een betalende klant hebt",
-  "description": "Bouwen op gratis AI-software voelt functioneel identiek aan bouwen op een betaald niveau, totdat een specifieke reeks beperkingen — snelheidslimieten, voorwaarden voor gegevensgebruik, ondersteuningsgaranties — er plotseling toe doet op manieren die ze tijdens het prototypen nooit deden.",
+  "description": "Bouwen op gratis AI-software voelt functioneel identiek aan bouwen op een betaald niveau, totdat een specifieke reeks beperkingen - snelheidslimieten, voorwaarden voor gegevensgebruik, ondersteuningsgaranties - er plotseling toe doet op manieren die ze tijdens het prototypen nooit deden.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -53,7 +53,7 @@ De juiste reactie is niet noodzakelijkerwijs "upgrade altijd voor de lancering" 
 
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt precies deze overgang als onderdeel van elke opdracht voor productiegereedheid – controleren of de specifieke voorwaarden en limieten van uw huidige niveau daadwerkelijk compatibel zijn met het bedienen van echte betalende klanten, niet alleen of het product werkt – ondersteund door Manifera's ervaring met het helpen van oprichters om deze exacte evaluatie te maken over een breed scala aan AI-aanbieders en tools.
 
-[Ontdek of uw gratis niveau daadwerkelijk klaar is voor een betalende klant](https://launchstudio.eu/nl/#calculator) — de mismatch is onzichtbaar totdat echt gebruik het specifiek activeert.
+[Ontdek of uw gratis niveau daadwerkelijk klaar is voor een betalende klant](https://launchstudio.eu/nl/#calculator) - de mismatch is onzichtbaar totdat echt gebruik het specifiek activeert.
 
 ## Een audit-checklist voor het gratis niveau om uit te voeren voor uw eerste betalende klant
 
@@ -79,14 +79,14 @@ Het uitvoeren van deze audit, voorafgaand aan een echte lancering, kost een paar
 
 Coen, een voormalig horecatrainer die oprichter werd in Zwolle, bouwde TeamRooster, een AI-tool die eerlijke, gebalanceerde personeelsroosters genereert voor kleine horecabedrijven, met behulp van Cursor, volledig gebouwd op een gratis AI-model API gedurende de gehele ontwikkeling en het testen, zonder dat er ooit problemen naar voren kwamen tijdens zijn eigen solo-gebruik.
 
-Op de dag dat TeamRooster opende voor haar eerste acht betalende pilotklanten tegelijkertijd, raakten meerderen van hen binnen de eerste paar uur het dagelijkse verzoekenplafond van het gratis niveau, aangezien acht echte bedrijven die tegelijkertijd roosters genereerden een aanzienlijk groter verzoekvolume vertegenwoordigden dan Coen's eigen solo-testen ooit hadden geproduceerd — de app stopte simpelweg met het genereren van nieuwe roosters voor de rest van de dag zodra het gedeelde plafond werd bereikt, zonder waarschuwing aan Coen of uitleg aan de getroffen klanten.
+Op de dag dat TeamRooster opende voor haar eerste acht betalende pilotklanten tegelijkertijd, raakten meerderen van hen binnen de eerste paar uur het dagelijkse verzoekenplafond van het gratis niveau, aangezien acht echte bedrijven die tegelijkertijd roosters genereerden een aanzienlijk groter verzoekvolume vertegenwoordigden dan Coen's eigen solo-testen ooit hadden geproduceerd - de app stopte simpelweg met het genereren van nieuwe roosters voor de rest van de dag zodra het gedeelde plafond werd bereikt, zonder waarschuwing aan Coen of uitleg aan de getroffen klanten.
 
-**Resultaat:** LaunchStudio upgrade TeamRooster naar een betaald niveau met gebruikslimieten die passen bij een echt klantvolume, en voegde specifiek bewaking toe om Coen te waarschuwen voordat een toekomstige limiet werd genaderd in plaats van nadat deze al was geraakt — waardoor een kloof werd gedicht die hem een oprecht embarrassing eerste indruk had gekost bij meerdere van zijn allereerste betalende klanten.
+**Resultaat:** LaunchStudio upgrade TeamRooster naar een betaald niveau met gebruikslimieten die passen bij een echt klantvolume, en voegde specifiek bewaking toe om Coen te waarschuwen voordat een toekomstige limiet werd genaderd in plaats van nadat deze al was geraakt - waardoor een kloof werd gedicht die hem een oprecht embarrassing eerste indruk had gekost bij meerdere van zijn allereerste betalende klanten.
 
 > *"Alles werkte maandenlang perfect tijdens mijn eigen testen, omdat ik het alleen was. De exacte dag dat echte klanten het tegelijkertijd gebruikten, stopte het gratis niveau gewoon met werken, zonder enige waarschuwing en zonder enige uitleg voor de betrokkenen."*
-> — **Coen Hendriksen, Oprichter, TeamRooster (Zwolle)**
+> - **Coen Hendriksen, Oprichter, TeamRooster (Zwolle)**
 
-**Kosten en tijdlijn:** € 800 (niveau-upgrade en instelling van gebruiksbewaking) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 800 (niveau-upgrade en instelling van gebruiksbewaking) - voltooid in 3 werkdagen.
 
 ---
 

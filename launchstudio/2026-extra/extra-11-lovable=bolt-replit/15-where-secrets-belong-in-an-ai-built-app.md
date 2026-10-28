@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A founder in Tilburg discovered his mapping provider had billed him for 1.4 million requests in eleven days. He had roughly 200 users. The key that authorised those requests had been sitting in his published JavaScript since launch, and somebody — or more likely something — had found it and started using his account as free infrastructure.
+A founder in Tilburg discovered his mapping provider had billed him for 1.4 million requests in eleven days. He had roughly 200 users. The key that authorised those requests had been sitting in his published JavaScript since launch, and somebody - or more likely something - had found it and started using his account as free infrastructure.
 
 Nothing was hacked. No system was breached. He had simply published a credential, which is what most AI-built applications do by default, and the bill arrived before anyone noticed.
 
@@ -42,7 +42,7 @@ If you are unsure which category something falls into, the provider's documentat
 
 **In the frontend bundle.** The most common. It happens because the fastest way to make an API call work is to make it from the code you are already editing, and in an AI-assisted workflow that is the code the model is looking at.
 
-**In the repository.** A `.env` file committed early, before anyone added it to the ignore list. Everything downstream — every clone, every fork, every collaborator — carries a copy.
+**In the repository.** A `.env` file committed early, before anyone added it to the ignore list. Everything downstream - every clone, every fork, every collaborator - carries a copy.
 
 **In a platform dashboard nobody can leave.** Variables configured in a hosting or builder interface, known only to whoever set them up. This is safer than the first two and becomes a problem when you migrate, when a contractor leaves, or when you need to rotate and cannot find every location.
 
@@ -52,7 +52,7 @@ If you are unsure which category something falls into, the provider's documentat
 
 This is the mechanic that produces the most surprised founders.
 
-Frontend build tools need a way to pass configuration into browser code, so they expose environment variables that carry a specific prefix — the exact prefix depends on the framework. Anything with that prefix is inlined into the JavaScript your users download. That is not a leak; it is the documented behaviour.
+Frontend build tools need a way to pass configuration into browser code, so they expose environment variables that carry a specific prefix - the exact prefix depends on the framework. Anything with that prefix is inlined into the JavaScript your users download. That is not a leak; it is the documented behaviour.
 
 The trap is that a variable in a `.env` file *feels* private regardless of its name. Put a secret key into a prefixed variable and it looks exactly like configuration while being published to the world. This is precisely how the mapping key in the opening story travelled, and it is invisible in the source code because the source only shows the variable name.
 
@@ -70,13 +70,13 @@ The correct response is rotation rather than history rewriting. Rewriting histor
 
 **In server-side environments only.** Serverless function configuration, your hosting platform's secret storage, or a dedicated secrets manager. Never in code that reaches a browser.
 
-**Behind your own endpoint.** When a frontend needs something a secret unlocks — a map render, a model completion, an SMS — it calls your own server-side function, which checks who the user is, applies your own rate limit, then calls the third party with the secret. Your key never leaves your infrastructure and you gain the ability to cut off abuse.
+**Behind your own endpoint.** When a frontend needs something a secret unlocks - a map render, a model completion, an SMS - it calls your own server-side function, which checks who the user is, applies your own rate limit, then calls the third party with the secret. Your key never leaves your infrastructure and you gain the ability to cut off abuse.
 
 **Scoped as narrowly as the provider allows.** Many services issue restricted keys: read-only, domain-restricted, limited to specific endpoints, capped in spend. If a key must be exposed by design, a scoped one limits the damage.
 
 **With spending limits configured.** For any metered service, set a hard cap in the provider's dashboard. It will not prevent a leak and it turns an unbounded bill into a bounded one.
 
-**Rotatable in one place.** If changing a key means editing six files and redeploying three services, rotation becomes something you avoid — and avoided rotation is how a contractor from last year still has working access.
+**Rotatable in one place.** If changing a key means editing six files and redeploying three services, rotation becomes something you avoid - and avoided rotation is how a contractor from last year still has working access.
 
 ## A Ten-Minute Audit
 
@@ -85,19 +85,19 @@ The correct response is rotation rather than history rewriting. Rewriting histor
 - Search your repository for `.env`, and check whether it is in the ignore file. Then search the history, not just the current files.
 - Open your hosting platform's environment settings and read every variable. Ask, for each one, whether it is prefixed for browser exposure.
 - Check the billing dashboard of every metered service for usage that does not match your traffic.
-- Ask yourself who else has ever held these values — contractors, former co-founders, a chat thread.
+- Ask yourself who else has ever held these values - contractors, former co-founders, a chat thread.
 
 Anything ambiguous should be rotated. Rotation is cheap; discovery is not.
 
 ## What Good Looks Like Afterwards
 
-A short list of secrets, each existing in exactly one authoritative place. Frontend code containing only public identifiers. Every third-party call that uses a secret routed through your own endpoint with authentication and a rate limit in front of it. Spending caps on anything metered. A documented rotation procedure that takes minutes. And ideally a check in your deployment pipeline that fails the build if a credential pattern appears in a client bundle — because the original mistake is always made late in the evening under deadline pressure, and a pipeline does not get tired.
+A short list of secrets, each existing in exactly one authoritative place. Frontend code containing only public identifiers. Every third-party call that uses a secret routed through your own endpoint with authentication and a rate limit in front of it. Spending caps on anything metered. A documented rotation procedure that takes minutes. And ideally a check in your deployment pipeline that fails the build if a credential pattern appears in a client bundle - because the original mistake is always made late in the evening under deadline pressure, and a pipeline does not get tired.
 
 ## Getting There Without Rebuilding
 
 Credential handling is one of the most common findings when an AI-built application comes in for review, and it is also one of the fastest to resolve. LaunchStudio audits every credential in the codebase, the build configuration and the git history, rotates what is exposed, moves privileged calls behind server-side functions with authentication and rate limiting, configures scoped keys and spending caps, and adds a build-time check so it does not recur.
 
-The interface you built in Lovable, Bolt or Cursor stays exactly as it is, and the codebase is left conventional and AI-readable so you can keep working in your own tool. That is part of the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers — eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
+The interface you built in Lovable, Bolt or Cursor stays exactly as it is, and the codebase is left conventional and AI-readable so you can keep working in your own tool. That is part of the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers - eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
 If your ten-minute audit turned up something you cannot explain, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
 
@@ -115,7 +115,7 @@ The technical audit above finds keys in code. It does not find keys in people, a
 
 The remedy is a short offboarding routine applied every time someone stops working on the product: remove their account access from each service, rotate any shared credential they could have copied, and check whether anything was in their name rather than yours. It takes twenty minutes and it is the difference between access that ends and access that merely stops being used.
 
-Make the list of who has ever held what, and keep it. Not out of suspicion — out of the same instinct that makes you keep a list of who has keys to an office.
+Make the list of who has ever held what, and keep it. Not out of suspicion - out of the same instinct that makes you keep a list of who has keys to an office.
 
 ## Real example
 
@@ -125,16 +125,16 @@ Stefan Rombouts built Bezorgroute in Cursor: a delivery route optimiser sold to 
 
 The first month's invoice was ordinary. The second was forty times larger. Usage analytics showed requests originating from addresses across three continents, at a rate no catering company in Brabant could produce.
 
-The remediation took four business days. The mapping key was revoked and reissued with domain restrictions and a hard monthly spending cap. All mapping calls moved behind a server-side function that authenticates the caller, checks they are an active subscriber, and rate-limits per account. The git history was audited, which surfaced two further credentials committed eight months earlier — an email provider key and a database connection string — both rotated. A build-time check was added that fails deployment if a credential pattern appears in the client bundle.
+The remediation took four business days. The mapping key was revoked and reissued with domain restrictions and a hard monthly spending cap. All mapping calls moved behind a server-side function that authenticates the caller, checks they are an active subscriber, and rate-limits per account. The git history was audited, which surfaced two further credentials committed eight months earlier - an email provider key and a database connection string - both rotated. A build-time check was added that fails deployment if a credential pattern appears in the client bundle.
 
 The provider credited part of the fraudulent usage after Stefan demonstrated the key had been restricted and the architecture changed, which would not have been possible without evidence of the fix.
 
 **Result:** mapping costs returned to normal and have stayed proportional to subscriber count for fourteen months, and the build check has since blocked one further attempt to expose a key during a rushed feature release.
 
 > *"I was paying for someone else's product. The key was in my own website, visible to anyone who pressed the right button in their browser."*
-> — **Stefan Rombouts, Founder, Bezorgroute (Tilburg)**
+> - **Stefan Rombouts, Founder, Bezorgroute (Tilburg)**
 
-**Cost & Timeline:** €1,650 (credential audit, key rotation, server-side proxy with rate limiting, pipeline check) — completed in 4 business days.
+**Cost & Timeline:** €1,650 (credential audit, key rotation, server-side proxy with rate limiting, pipeline check) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -152,7 +152,7 @@ Route the call through your own server-side endpoint instead. Your function auth
 
 ### Why did my key get found so quickly?
 
-Automated scanners continuously scrape public repositories and published JavaScript for credential patterns. There is rarely a human looking for your specific key — it is found by a script, often within hours of exposure.
+Automated scanners continuously scrape public repositories and published JavaScript for credential patterns. There is rarely a human looking for your specific key - it is found by a script, often within hours of exposure.
 
 ### Do spending limits protect me from a leaked key?
 

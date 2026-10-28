@@ -102,9 +102,9 @@ LaunchStudio rolde de nieuwe Node.js-microservice gedurende twee weken uit in "S
 **Resultaat:** De Planningsmodule werd succesvol afgesplitst. Deze draait nu op een moderne, automatisch schaalbare Node.js-microservice. Het team kan updates aan het planningssysteem uitrollen binnen 20 minuten zonder enig risico voor de receptenmodule. Omdat AI de domeinontdekking en testgeneratie enorm versnelde, voltooide LaunchStudio de afsplitsing in 4 maanden in plaats van de geprojecteerde 12 maanden, wat het bedrijf € 120.000 aan engineeringkosten bespaarde met nul downtime.
 
 > *"Het proberen te herschrijven van een monoliet is als het proberen te wisselen van autobanden terwijl u met 120 km/u op de snelweg rijdt. LaunchStudio gebruikte AI niet alleen om code te schrijven, maar om de gekte van ons 10 jaar oude systeem te ontwarren. Het Strangler Fig-patroon dat zij implementeerden gaf ons bestuur het vertrouwen om zonder angst te moderniseren."*
-> — **Thomas Gruber, VP of Engineering, MedTech Solutions (Wenen)**
+> - **Thomas Gruber, VP of Engineering, MedTech Solutions (Wenen)**
 
-**Kosten & Doorlooptijd:** € 35.000 (Enterprise Modernization Pakket - Fase 1 Extraction) — productieklaar en uitgerold in 4 maanden.
+**Kosten & Doorlooptijd:** € 35.000 (Enterprise Modernization Pakket - Fase 1 Extraction) - productieklaar en uitgerold in 4 maanden.
 
 ---
 

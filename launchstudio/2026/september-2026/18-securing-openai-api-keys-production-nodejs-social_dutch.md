@@ -1,6 +1,6 @@
-🚨 Evelyn, een makelaar, bouwde een tool voor woningomschrijvingen met **Cursor** — een concurrent achterhaalde haar private OpenAI API-sleutel direct uit de JavaScript-code en genereerde voor €600 aan ongeautoriseerde kosten voordat zij het merkte. 🔑
+🚨 Evelyn, een makelaar, bouwde een tool voor woningomschrijvingen met **Cursor** - een concurrent achterhaalde haar private OpenAI API-sleutel direct uit de JavaScript-code en genereerde voor €600 aan ongeautoriseerde kosten voordat zij het merkte. 🔑
 
-Een blootgestelde API-sleutel staat gelijk aan het achterlaten van uw zakelijke creditcard op een openbare parkbank — uw frontend mag deze nooit bevatten. 🧠
+Een blootgestelde API-sleutel staat gelijk aan het achterlaten van uw zakelijke creditcard op een openbare parkbank - uw frontend mag deze nooit bevatten. 🧠
 
 ❌ OpenAI rechtstreeks aanroepen vanuit React, waardoor de geheime sleutel naar de browser wordt meegestuurd
 ❌ Iedereen die via browser DevTools zoekt op "sk-" kan de sleutel binnen enkele seconden stelen
@@ -12,7 +12,7 @@ Een blootgestelde API-sleutel staat gelijk aan het achterlaten van uw zakelijke 
 
 Bij **LaunchStudio** voeren we sinds 2014 diepgaande security-audits uit via Manifera, voor enterprise-opdrachtgevers zoals Vodafone, TNO en CFLW Cyber Strategies. 🛡️
 
-Evelyns blootgestelde sleutel werd direct geroteerd en beveiligd, waardoor toekomstige financiële lekken definitief werden afgesloten. (€850 (Secrets Security Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Evelyns blootgestelde sleutel werd direct geroteerd en beveiligd, waardoor toekomstige financiële lekken definitief werden afgesloten. (€850 (Secrets Security Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Bekijk de complete beveiligingschecklist: https://launchstudio.eu/nl/blog/securing-openai-api-keys-production-nodejs
 

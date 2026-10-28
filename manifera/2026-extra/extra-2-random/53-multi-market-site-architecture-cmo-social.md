@@ -1,4 +1,4 @@
-🚨 Twelve markets, twelve local marketing teams, and one CMS that was architected for a single country three years ago — every new market launch is now a bespoke engineering project disguised as a "quick localization." ⚙️💥
+🚨 Twelve markets, twelve local marketing teams, and one CMS that was architected for a single country three years ago - every new market launch is now a bespoke engineering project disguised as a "quick localization." ⚙️💥
 
 **The Pain Points:**
 ❌ **Multi Market Site Crisis:** A CMO overseeing pan-European expansion has watched each new market launch take longer than the last, not faster, because the CMS was never architected for multi-market content at scale. Every local team wants campaign-specific landing pages, region-specific promotions, and localized checkout flows, and every request routes through the same overloaded two-person web team that also maintains the flagship market's site.

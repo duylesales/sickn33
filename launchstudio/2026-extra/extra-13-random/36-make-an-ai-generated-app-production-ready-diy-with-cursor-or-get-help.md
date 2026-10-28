@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Make an AI Generated App Production Ready: DIY With Cursor or Get Help?",
-  "description": "For technical founders, a practical framework to decide which production readiness tasks to do yourself with Cursor and which to hand to a specialist — based on risk, reversibility, verification and your time.",
+  "description": "For technical founders, a practical framework to decide which production readiness tasks to do yourself with Cursor and which to hand to a specialist - based on risk, reversibility, verification and your time.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-05",
@@ -50,9 +50,9 @@ Tasks with low damage, visible failure, easy reversal and clear verification are
 
 ## Tasks Where Help Usually Pays Off
 
-**Access control and database policies.** High damage, silent failure. A wrong row-level security policy looks fine until someone reads another customer's data. Verifying it requires thinking adversarially about every role and table — exactly the thinking that is hard to apply to your own code. AI tools are notably unreliable here: ask Cursor to "fix RLS" and it may produce policies that pass your tests because your tests use the happy path.
+**Access control and database policies.** High damage, silent failure. A wrong row-level security policy looks fine until someone reads another customer's data. Verifying it requires thinking adversarially about every role and table - exactly the thinking that is hard to apply to your own code. AI tools are notably unreliable here: ask Cursor to "fix RLS" and it may produce policies that pass your tests because your tests use the happy path.
 
-**Payment webhooks and subscription state.** Revenue at stake, failures often silent (the customer keeps access after cancelling; nobody complains). Edge cases — retries, out-of-order events, failed renewals, refunds — are numerous.
+**Payment webhooks and subscription state.** Revenue at stake, failures often silent (the customer keeps access after cancelling; nobody complains). Edge cases - retries, out-of-order events, failed renewals, refunds - are numerous.
 
 **Secret rotation after exposure.** If keys were in the browser bundle or git history, rotation must be complete and coordinated. Missing one is irreversible in the sense that the exposure already happened.
 
@@ -62,7 +62,7 @@ Tasks with low damage, visible failure, easy reversal and clear verification are
 
 ## A Middle Path: DIY With a Review
 
-Many technical founders take a hybrid approach: do most of the work themselves, then pay for a focused review of the high-risk areas. This keeps costs low while covering the blind spots. A review of access control, payments and secrets typically costs a fraction of a full project and produces a specific list of what to fix — which you can then fix yourself or hand over.
+Many technical founders take a hybrid approach: do most of the work themselves, then pay for a focused review of the high-risk areas. This keeps costs low while covering the blind spots. A review of access control, payments and secrets typically costs a fraction of a full project and produces a specific list of what to fix - which you can then fix yourself or hand over.
 
 LaunchStudio offers this directly: a focused review from €800, with the option to have findings fixed at a fixed price or to take the list and do it yourself.
 
@@ -73,7 +73,7 @@ If you do the work yourself, a few practices make Cursor far more reliable:
 - **Write the rule before the code.** Describe the access model in a document (who can see what), then ask Cursor to implement policies against it, and to write tests that attempt forbidden access.
 - **Ask for negative tests.** "Write a test proving user B cannot read user A's invoice" is more valuable than "write tests for invoices."
 - **Review diffs for scope.** Cursor often changes more than you asked; reject diffs that touch unrelated files.
-- **Keep a rules file.** Cursor's project rules can remind it of your security conventions — never trust client-provided IDs, always validate input with schemas.
+- **Keep a rules file.** Cursor's project rules can remind it of your security conventions - never trust client-provided IDs, always validate input with schemas.
 - **Never paste secrets into prompts.** Use environment variable names.
 
 The [Supabase row-level security guide](https://supabase.com/docs/guides/database/postgres/row-level-security) is a good reference for the policy side if you use Supabase.
@@ -89,11 +89,11 @@ If you plan to make an AI generated app production ready yourself, structure you
 5. **Search for bypasses:** service-role keys, admin clients, `security definer` functions, raw SQL.
 6. **Review secrets:** bundle search, git history scan, environment separation.
 7. **Walk the money:** every payment state, from created to refunded, in test mode.
-8. **Break the environment:** stop the database in staging, slow down an API, expire a token — observe behaviour.
+8. **Break the environment:** stop the database in staging, slow down an API, expire a token - observe behaviour.
 
 This takes a few days for a typical app, but it transforms "I think it's fine" into evidence.
 
-## Where Cursor Helps Most — and Least
+## Where Cursor Helps Most - and Least
 
 Cursor is excellent at some production tasks and risky at others:
 
@@ -116,11 +116,11 @@ Cursor's project rules let you encode conventions it will follow in every genera
 
 ## Time Budget: DIY vs. Help
 
-It is worth estimating honestly how long DIY takes. For a technical founder new to production hardening, the high-risk areas typically take much longer than expected: learning RLS thoroughly and applying it to every table (several days), implementing and testing webhooks with all edge cases (several days), setting up environments, CI and monitoring (a few days), plus research time. Compare that time with its opportunity cost — sales conversations, user interviews, features. For many founders, doing the low-risk tasks themselves and buying help for the high-risk ones is the best use of both money and time.
+It is worth estimating honestly how long DIY takes. For a technical founder new to production hardening, the high-risk areas typically take much longer than expected: learning RLS thoroughly and applying it to every table (several days), implementing and testing webhooks with all edge cases (several days), setting up environments, CI and monitoring (a few days), plus research time. Compare that time with its opportunity cost - sales conversations, user interviews, features. For many founders, doing the low-risk tasks themselves and buying help for the high-risk ones is the best use of both money and time.
 
 ## Knowing When You Are Out of Your Depth
 
-Some signals suggest it is time to ask for help: you have loosened a security rule to make something work and are not sure why it failed; a migration has behaved unexpectedly on real data; you cannot explain why a payment state is what it is; you have rotated a key but something still uses the old one; or you find yourself asking your AI tool to "just make it work" repeatedly for the same area. None of these is a failure — they are the moments where an experienced second pair of eyes saves the most.
+Some signals suggest it is time to ask for help: you have loosened a security rule to make something work and are not sure why it failed; a migration has behaved unexpectedly on real data; you cannot explain why a payment state is what it is; you have rotated a key but something still uses the old one; or you find yourself asking your AI tool to "just make it work" repeatedly for the same area. None of these is a failure - they are the moments where an experienced second pair of eyes saves the most.
 
 ## After the Review: Keeping Ownership
 
@@ -147,17 +147,17 @@ Seven of these items are genuinely DIY-friendly for a technical founder. The las
 
 ## Documenting as You Go
 
-Doing it yourself has one hidden risk: the knowledge lives only in your head. Write a short note for each production decision — why RLS is structured this way, how webhooks are verified, where secrets are stored, how to roll back. It takes minutes per decision and pays off the first time you hire someone, raise money, or return to a part of the codebase after six months of feature work.
+Doing it yourself has one hidden risk: the knowledge lives only in your head. Write a short note for each production decision - why RLS is structured this way, how webhooks are verified, where secrets are stored, how to roll back. It takes minutes per decision and pays off the first time you hire someone, raise money, or return to a part of the codebase after six months of feature work.
 
 ## The Hybrid in Practice
 
-The hybrid model — DIY for most things, focused review for the risky ones — tends to cost a fraction of a full project while covering the areas where mistakes are silent and expensive. It also teaches you: each review finding comes with an explanation, and after one or two cycles, many founders can spot the same issues themselves in new code.
+The hybrid model - DIY for most things, focused review for the risky ones - tends to cost a fraction of a full project while covering the areas where mistakes are silent and expensive. It also teaches you: each review finding comes with an explanation, and after one or two cycles, many founders can spot the same issues themselves in new code.
 
 ## Why a Second Pair of Eyes Helps Even Experts
 
 Even at Manifera, a software development company with 11+ years of experience and 160+ projects, code is reviewed by someone other than its author. That is not because engineers lack skill; it is because peer review catches a class of mistakes self-review does not. LaunchStudio brings that practice to solo founders: an outside review by engineers at Manifera's development centre in Ho Chi Minh City, coordinated from Amsterdam's Herengracht 420. For more about the team, see [Manifera's about page](https://www.manifera.com/about-us/).
 
-[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — even if you plan to do most of it yourself.
+[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - even if you plan to do most of it yourself.
 
 ## Real example
 
@@ -172,15 +172,15 @@ LaunchStudio fixed the storage access and the Stripe lifecycle handling (cancell
 **Result:** Paadje launched subscriptions in spring and reached 1,900 paying hikers by autumn. Stijn has maintained the app alone since, extending the negative tests for each new feature; they have caught one policy regression introduced by a Cursor refactor.
 
 > *"I didn't need someone to build my app. I needed someone to look at the three things I was quietly worried about. All three were worth worrying about."*
-> — **Stijn Vermeulen, Founder, Paadje (Voorburg)**
+> - **Stijn Vermeulen, Founder, Paadje (Voorburg)**
 
-**Cost & Timeline:** €1,600 (focused review plus fixes for storage, subscription lifecycle and RLS policies, with test handover) — completed in 6 business days.
+**Cost & Timeline:** €1,600 (focused review plus fixes for storage, subscription lifecycle and RLS policies, with test handover) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
 ### Can a technical founder make an AI generated app production ready alone?
 
-Much of it, yes: domains, SSL, email, monitoring, CI and performance. The highest-risk areas — access control, payments, secret rotation and data migration — benefit from an outside review because failures are silent and costly.
+Much of it, yes: domains, SSL, email, monitoring, CI and performance. The highest-risk areas - access control, payments, secret rotation and data migration - benefit from an outside review because failures are silent and costly.
 
 ### Is Cursor reliable for writing database security policies?
 

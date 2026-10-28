@@ -28,7 +28,7 @@ Both errors are expensive in different ways, and the decision is less about cost
 
 The calculation people perform: a few engagements a year against a salary. The one they skip: what employing someone in the Netherlands actually costs and commits you to.
 
-A salary is the visible part. On top of it sit holiday allowance, pension contributions where a scheme applies, employer social contributions, paid holiday and sick leave, equipment, software licences and the administrative overhead of payroll. The total employer cost is substantially above the gross salary, and the exact multiple depends on the arrangement — which is a conversation for your accountant before it is a decision.
+A salary is the visible part. On top of it sit holiday allowance, pension contributions where a scheme applies, employer social contributions, paid holiday and sick leave, equipment, software licences and the administrative overhead of payroll. The total employer cost is substantially above the gross salary, and the exact multiple depends on the arrangement - which is a conversation for your accountant before it is a decision.
 
 Then the commitments. Dutch employment gives notice periods, protection against dismissal that requires a formal route, and in defined circumstances a transition payment when employment ends. Hiring someone is a durable obligation rather than a monthly expense you can stop, which is appropriate and is exactly the thing to understand before signing.
 
@@ -38,7 +38,7 @@ None of that argues against hiring. It argues against hiring as a cost-saving me
 
 **The work is continuous rather than lumpy.** You have something for an engineer every week, not a project every quarter. This is the strongest signal and the one that actually predicts whether a hire will be productive.
 
-**You are waiting.** Not for the work itself, but for availability — a freelancer's next free slot, an agency's scheduling. If waiting is costing you customers or opportunities, that is a real business cost that a hire removes.
+**You are waiting.** Not for the work itself, but for availability - a freelancer's next free slot, an agency's scheduling. If waiting is costing you customers or opportunities, that is a real business cost that a hire removes.
 
 **Context is the bottleneck.** Every engagement begins with someone re-learning your product. When the explaining costs more than the work, continuity is worth paying for.
 
@@ -62,11 +62,11 @@ None of that argues against hiring. It argues against hiring as a cost-saving me
 
 The choice is rarely binary, and three arrangements sit between an engagement and an employee.
 
-**A retainer with the people who built it.** A fixed monthly amount for a defined amount of attention — maintenance, small changes, availability when something breaks. Continuity without employment, and the most common answer for products with steady but modest technical needs. LaunchStudio's managed option at €49 per month covers the operational half of this; larger retainers cover development capacity.
+**A retainer with the people who built it.** A fixed monthly amount for a defined amount of attention - maintenance, small changes, availability when something breaks. Continuity without employment, and the most common answer for products with steady but modest technical needs. LaunchStudio's managed option at €49 per month covers the operational half of this; larger retainers cover development capacity.
 
 **A part-time employee.** Two or three days a week is a genuinely common arrangement in the Netherlands and frequently matches a small product's actual volume better than a full-time role.
 
-**A fractional technical lead.** Someone experienced, a day a week, who makes the architectural decisions and reviews the work — while the building is done by contractors or by you. This addresses the assessment problem directly and is underused by non-technical founders.
+**A fractional technical lead.** Someone experienced, a day a week, who makes the architectural decisions and reviews the work - while the building is done by contractors or by you. This addresses the assessment problem directly and is underused by non-technical founders.
 
 **A white-label production partner,** if you are an agency rather than a product founder: engineering capacity that appears when a client project requires it and costs nothing when it does not.
 
@@ -74,19 +74,19 @@ The choice is rarely binary, and three arrangements sit between an engagement an
 
 Whatever the arrangement, these are prerequisites rather than nice-to-haves, and a founder who lacks them will get poor results from a good engineer.
 
-**Ownership of everything.** Repository, accounts, domain, database — in your name, so a new person is granted access rather than inheriting somebody else's.
+**Ownership of everything.** Repository, accounts, domain, database - in your name, so a new person is granted access rather than inheriting somebody else's.
 
 **A documented current state.** What exists, how it deploys, what is known to be wrong. Without it, your new hire spends their first month doing archaeology you have already paid for once.
 
 **A working deployment process.** An engineer who cannot ship safely on day three will build a workaround, and the workaround becomes how your product is deployed.
 
-**A view of what the first six months are for.** Not a roadmap — a direction, so that the person's first decisions point somewhere.
+**A view of what the first six months are for.** Not a roadmap - a direction, so that the person's first decisions point somewhere.
 
 ## Hiring Your First Engineer When You Cannot Assess Code
 
 The genuine difficulty for a non-technical founder, and it has practical answers.
 
-**Buy assessment.** Pay an experienced engineer — ideally one who has worked on your product — to interview candidates with you. A day of their time is cheap against a bad hire.
+**Buy assessment.** Pay an experienced engineer - ideally one who has worked on your product - to interview candidates with you. A day of their time is cheap against a bad hire.
 
 **Use a paid trial task,** a real piece of work from your list, at their normal rate. It tells you about communication, scope discipline and whether the result works.
 
@@ -102,21 +102,21 @@ Three things, worth expecting.
 
 **Standards need stating.** An employee inherits the codebase and its conventions, which in an AI-built product may not exist yet. Writing them down at the start is easier than correcting drift later.
 
-**Your own involvement changes shape.** Founders frequently find they stop building and become the person who decides what gets built, which suits some people and not others — and it is worth knowing which you are before the hire rather than after.
+**Your own involvement changes shape.** Founders frequently find they stop building and become the person who decides what gets built, which suits some people and not others - and it is worth knowing which you are before the hire rather than after.
 
 ## Getting the Foundations Ready Either Way
 
-Whether you hire or continue with engagements, the same groundwork determines how well it goes: ownership in your name, a product whose state is documented, a deployment process that works, and a codebase left conventional and AI-readable so that a newcomer — human or tool — can work with it.
+Whether you hire or continue with engagements, the same groundwork determines how well it goes: ownership in your name, a product whose state is documented, a deployment process that works, and a codebase left conventional and AI-readable so that a newcomer - human or tool - can work with it.
 
 That is what LaunchStudio hands over at the end of an engagement as standard: repository and accounts yours throughout, a written record of what changed and why, a runbook covering deploy, rollback and restore, a secrets inventory, and an honest list of what was found and not fixed. It is also why founders who later hire report a shorter ramp-up than they expected.
 
-Behind it is Manifera, with eleven years of engineering for clients including Vodafone, TNO and CFLW, from Amsterdam, Singapore and Ho Chi Minh City. [Describe your project](https://launchstudio.eu/en/#contact) and we will tell you honestly whether your volume of work justifies a hire — sometimes it clearly does — usually within one business day, or see what the [packages](https://launchstudio.eu/en/#packages) include.
+Behind it is Manifera, with eleven years of engineering for clients including Vodafone, TNO and CFLW, from Amsterdam, Singapore and Ho Chi Minh City. [Describe your project](https://launchstudio.eu/en/#contact) and we will tell you honestly whether your volume of work justifies a hire - sometimes it clearly does - usually within one business day, or see what the [packages](https://launchstudio.eu/en/#packages) include.
 
 ## Telling the People Who Built It
 
 If you do hire, there is a transition to handle with whoever has been doing the work, and founders frequently handle it badly by saying nothing until the new person starts.
 
-**Tell them before you advertise.** Not as a courtesy — as self-interest. A supplier who learns from a job advertisement has no reason to invest in the handover, and the handover is the thing you need most.
+**Tell them before you advertise.** Not as a courtesy - as self-interest. A supplier who learns from a job advertisement has no reason to invest in the handover, and the handover is the thing you need most.
 
 **Ask them to help you hire.** The people who built your product can assess candidates in a way you cannot, and most will do it willingly for a day's fee. It is the cheapest insurance available against a bad first hire.
 
@@ -136,14 +136,14 @@ Before advertising, she spent an evening listing the technical work of the previ
 
 A full-time hire would have been idle for most of the year, and she would have invented work to fill it.
 
-What she arranged instead: a managed hosting and monitoring arrangement covering the operational half, a modest retainer with the team that knew the product for small changes and availability, and a fractional technical adviser for one day a month to review decisions — which addressed the thing she had actually been worried about, which was making architectural choices alone.
+What she arranged instead: a managed hosting and monitoring arrangement covering the operational half, a modest retainer with the team that knew the product for small changes and availability, and a fractional technical adviser for one day a month to review decisions - which addressed the thing she had actually been worried about, which was making architectural choices alone.
 
 Fourteen months later, the volume had genuinely changed: two large customers, a required integration and a roadmap she could describe for a year. She hired then, into a product with documented state, working deployment and ownership in her own name.
 
 **Result:** the new engineer shipped their first feature in week one, and Marloes reports that the year of retainer cost less than the year of salary she nearly committed to before the work existed.
 
 > *"I was about to hire someone to sit and wait for me to think of things. Writing down what had actually happened week by week took an hour and saved me a year of paying for idleness."*
-> — **Marloes Timmerman, Founder, Praktijkbeheer (Arnhem)**
+> - **Marloes Timmerman, Founder, Praktijkbeheer (Arnhem)**
 
 **Cost & Timeline:** €49/month managed hosting plus a retainer, for fourteen months, before hiring.
 
@@ -155,7 +155,7 @@ Usually not until the work is continuous. Employer cost in the Netherlands sits 
 
 ### What is the strongest signal that it is time to hire?
 
-Continuous rather than lumpy work — something for an engineer every week rather than a project each quarter. Waiting for availability and repeatedly paying for context transfer are the next strongest.
+Continuous rather than lumpy work - something for an engineer every week rather than a project each quarter. Waiting for availability and repeatedly paying for context transfer are the next strongest.
 
 ### What should I do if the work is lumpy but constant enough to worry me?
 

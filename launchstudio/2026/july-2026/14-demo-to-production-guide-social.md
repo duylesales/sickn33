@@ -1,4 +1,4 @@
-🔥 Ethan built a prototype using **Lovable** — ethan, a startup founder, used **lovable** to build a logistics route optimizer prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Ethan built a prototype using **Lovable** - ethan, a startup founder, used **lovable** to build a logistics route optimizer prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ethan's application achieved production readiness: Ethan transitioned smoothly to production, enrolling 12 fleet operators on day one. (€1,500 (Demo to Production Package) — production-ready and deployed in 4 business days.). 🚀
+Ethan's application achieved production readiness: Ethan transitioned smoothly to production, enrolling 12 fleet operators on day one. (€1,500 (Demo to Production Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/demo-to-production-guide
 

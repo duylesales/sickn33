@@ -1,4 +1,4 @@
-🔥 Mateus Silva bouwde BudgetBuddy AI — een AI-budgetteringsapp met **Lovable** — en zag 60% van de betalende klanten afhaken tijdens de installatie, zonder ooit hun AI-gegenereerde budget te zien. 🧠
+🔥 Mateus Silva bouwde BudgetBuddy AI - een AI-budgetteringsapp met **Lovable** - en zag 60% van de betalende klanten afhaken tijdens de installatie, zonder ooit hun AI-gegenereerde budget te zien. 🧠
 
 Hij nam aan dat het product niet overtuigend genoeg was en begon nieuwe functies te plannen. Het echte probleem verschool zich in de onboarding-flow zelf.
 
@@ -12,7 +12,7 @@ Hij nam aan dat het product niet overtuigend genoeg was en begon nieuwe functies
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De voltooiing van onboarding steeg van 40% naar 87%, en opzeggingen binnen de eerste 30 dagen daalden met meer dan de helft. (€ 1.900 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
+De voltooiing van onboarding steeg van 40% naar 87%, en opzeggingen binnen de eerste 30 dagen daalden met meer dan de helft. (€ 1.900 (Launch & Grow Pakket) - 7 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/churn-causing-onboarding-fix-case-study
 

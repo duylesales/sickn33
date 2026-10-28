@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-When you open a travel site, a webshop, a food delivery app or a news website, much of what you see first was chosen by an algorithm. Recommender systems and search ranking determine which hotels appear on top, which products are suggested, which restaurants are shown and which articles are highlighted. The Netherlands, and Amsterdam in particular, is home to several technology companies operating these systems at European and global scale. For machine learning engineers and data scientists, recommendation and personalisation offer some of the most mature, data-rich and experimentation-driven AI work in the country — increasingly shaped by European rules on transparency and fairness.
+When you open a travel site, a webshop, a food delivery app or a news website, much of what you see first was chosen by an algorithm. Recommender systems and search ranking determine which hotels appear on top, which products are suggested, which restaurants are shown and which articles are highlighted. The Netherlands, and Amsterdam in particular, is home to several technology companies operating these systems at European and global scale. For machine learning engineers and data scientists, recommendation and personalisation offer some of the most mature, data-rich and experimentation-driven AI work in the country - increasingly shaped by European rules on transparency and fairness.
 
 ## Why Recommendation Is One of the Most Valuable ML Applications
 
@@ -57,7 +57,7 @@ The work also involves difficult trade-offs: relevance versus diversity, short-t
 
 **DPG Media.** The media company, with major operations in Amsterdam, uses data for personalisation of news and media platforms.
 
-Many other companies — broadcasters, streaming services, marketplaces, retailers and job platforms — also work on search and recommendation, often with smaller teams.
+Many other companies - broadcasters, streaming services, marketplaces, retailers and job platforms - also work on search and recommendation, often with smaller teams.
 
 ## Where Recommender Systems Jobs Are
 
@@ -100,7 +100,7 @@ Many other companies — broadcasters, streaming services, marketplaces, retaile
 
 ## A Concrete Scenario: When Clicks Are Not Enough
 
-An e-commerce platform introduces a new recommendation model that increases click-through rates in an A/B test. The team celebrates — until a follow-up analysis shows that return rates for purchased products increased and repeat visits declined slightly. The model had learned to promote attractive-looking products with lower satisfaction.
+An e-commerce platform introduces a new recommendation model that increases click-through rates in an A/B test. The team celebrates - until a follow-up analysis shows that return rates for purchased products increased and repeat visits declined slightly. The model had learned to promote attractive-looking products with lower satisfaction.
 
 The team redefines success metrics, adding post-purchase signals such as returns and reviews, and introduces longer-running experiments to capture repeat behaviour. The next model shows smaller click improvements but better long-term outcomes. The case illustrates a central lesson in recommendation work: optimising the easiest metric can harm users and the business over time.
 
@@ -128,11 +128,11 @@ In practice, many teams work on both, and modern systems increasingly blur the b
 
 Personalisation depends on data about users, but expectations and rules around privacy are strict. In the Netherlands, placing non-essential cookies and similar tracking technologies generally requires consent under the Telecommunications Act, and the GDPR requires a lawful basis for profiling. As a result, platforms increasingly rely on first-party data from logged-in users, contextual signals such as the current search or page, and session-based recommendations that do not require long-term profiles.
 
-Techniques such as aggregation, data minimisation and on-device processing can reduce privacy risks. For engineers, designing recommendations that work well with limited personal data is a valuable skill — and one that becomes more important as regulation and user expectations evolve.
+Techniques such as aggregation, data minimisation and on-device processing can reduce privacy risks. For engineers, designing recommendations that work well with limited personal data is a valuable skill - and one that becomes more important as regulation and user expectations evolve.
 
 ## A Common Misconception About Recommendation Careers
 
-Many engineers assume recommendation work is mainly about training sophisticated deep learning models. In reality, much of the impact comes from problem framing, data quality, feature engineering, retrieval efficiency, experimentation design and metric definition. Another misconception is that recommendation is only relevant at big tech companies. Many mid-sized Dutch companies — retailers, publishers, job platforms and marketplaces — need search and recommendation expertise and often offer broader responsibility.
+Many engineers assume recommendation work is mainly about training sophisticated deep learning models. In reality, much of the impact comes from problem framing, data quality, feature engineering, retrieval efficiency, experimentation design and metric definition. Another misconception is that recommendation is only relevant at big tech companies. Many mid-sized Dutch companies - retailers, publishers, job platforms and marketplaces - need search and recommendation expertise and often offer broader responsibility.
 
 ## Skills That Stand Out
 
@@ -170,7 +170,7 @@ Recommendation careers can progress towards senior ML engineer or scientist role
 
 ## Where to Start
 
-If you enjoy large-scale experimentation and user behaviour data, look for search, ranking and personalisation roles — including at mid-sized platforms that offer broad responsibility.
+If you enjoy large-scale experimentation and user behaviour data, look for search, ranking and personalisation roles - including at mid-sized platforms that offer broad responsibility.
 
 Browse current AI, machine learning and data jobs, including recommender systems roles, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

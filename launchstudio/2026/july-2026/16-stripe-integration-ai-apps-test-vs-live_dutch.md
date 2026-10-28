@@ -77,7 +77,7 @@ Aria werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 
 **Resultaat:** Aria heeft alle betalingsstromen beveiligd en € 2.800 aan geldige inkomsten binnengehaald in de eerste week van live-gebruik.
 
-**Kosten en tijdlijn:** € 950 (factureringsintegratiepakket) — klaar voor productie en geïmplementeerd binnen 3 werkdagen.
+**Kosten en tijdlijn:** € 950 (factureringsintegratiepakket) - klaar voor productie en geïmplementeerd binnen 3 werkdagen.
 
 ---
 

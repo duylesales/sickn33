@@ -35,13 +35,13 @@ Content Format: Policy Brief
 }
 </script>
 
-OnlyAIJobs was founded on a simple observation from research into regional labour markets: many job seekers from North Brabant move to the Randstad not necessarily because they want to live there, but because they do not know which interesting companies exist in their own region. That observation applies far beyond Brabant. Across the Netherlands, provinces invest in innovation programmes, high-tech clusters, science parks and knowledge institutions — and then watch a share of the graduates they helped educate leave for Amsterdam, Utrecht or Rotterdam. For AI and data talent, which every region's economy increasingly needs, this is a costly policy gap. The good news is that part of the gap is about information, and information problems can be solved at relatively low cost.
+OnlyAIJobs was founded on a simple observation from research into regional labour markets: many job seekers from North Brabant move to the Randstad not necessarily because they want to live there, but because they do not know which interesting companies exist in their own region. That observation applies far beyond Brabant. Across the Netherlands, provinces invest in innovation programmes, high-tech clusters, science parks and knowledge institutions - and then watch a share of the graduates they helped educate leave for Amsterdam, Utrecht or Rotterdam. For AI and data talent, which every region's economy increasingly needs, this is a costly policy gap. The good news is that part of the gap is about information, and information problems can be solved at relatively low cost.
 
 ## Why Provinces Care About AI and Data Talent
 
 Dutch provinces have responsibilities and ambitions in regional economic development, spatial planning, mobility and innovation. AI and data talent connects to all of them.
 
-**Economic competitiveness.** Manufacturing, agrifood, logistics, energy and healthcare — the sectors that dominate many regional economies — depend increasingly on data skills to automate, optimise and innovate.
+**Economic competitiveness.** Manufacturing, agrifood, logistics, energy and healthcare - the sectors that dominate many regional economies - depend increasingly on data skills to automate, optimise and innovate.
 
 **Energy transition and climate adaptation.** Grid congestion, water management and sustainable agriculture require data-driven planning in which provinces are closely involved.
 
@@ -65,7 +65,7 @@ Graduates leave regions for many reasons: career opportunities, salaries, urban 
 
 ## The Visibility Gap in AI and Data Vacancies
 
-Many regional employers with AI and data needs are small and medium-sized companies without large recruitment budgets. On generalist job boards, their vacancies compete with large companies that pay for promotion. Their job titles often do not use AI vocabulary — "process engineer data", "planning analyst", "quality specialist" — so graduates searching for "data scientist" or "AI" do not find them. And city-based searches miss employers located in smaller municipalities, business parks or rural areas.
+Many regional employers with AI and data needs are small and medium-sized companies without large recruitment budgets. On generalist job boards, their vacancies compete with large companies that pay for promotion. Their job titles often do not use AI vocabulary - "process engineer data", "planning analyst", "quality specialist" - so graduates searching for "data scientist" or "AI" do not find them. And city-based searches miss employers located in smaller municipalities, business parks or rural areas.
 
 The result is a structural information asymmetry: jobs exist, but talented people nearby cannot see them. Making vacancies visible at exact location, sorted by distance from home and categorised by type of work rather than job title, directly addresses this asymmetry.
 
@@ -85,7 +85,7 @@ The result is a structural information asymmetry: jobs exist, but talented peopl
 
 ## Policy Levers That Improve Retention
 
-**1. Make regional AI and data employment visible.** Support platforms and campaigns that show local vacancies and employers, including in smaller municipalities. Encourage regional employers — especially SMEs — to publish vacancies where specialist talent searches.
+**1. Make regional AI and data employment visible.** Support platforms and campaigns that show local vacancies and employers, including in smaller municipalities. Encourage regional employers - especially SMEs - to publish vacancies where specialist talent searches.
 
 **2. Connect students to regional employers early.** Fund or facilitate internships, graduation projects and company challenges with regional employers, particularly SMEs that lack capacity to organise them.
 
@@ -113,13 +113,13 @@ Together with its regional development agency and two universities of applied sc
 
 ## Labour Markets Do Not Stop at Provincial Borders
 
-Graduates and professionals choose jobs based on travel time, not administrative boundaries. A data engineer living in Nijmegen may work in Oss or Arnhem; a professional in Maastricht may consider Heerlen, Sittard-Geleen or Aachen; someone in Zwolle may commute to Lelystad or Apeldoorn. Talent strategies that promote only employers within one province miss part of the realistic labour market — and may compete unnecessarily with neighbouring regions.
+Graduates and professionals choose jobs based on travel time, not administrative boundaries. A data engineer living in Nijmegen may work in Oss or Arnhem; a professional in Maastricht may consider Heerlen, Sittard-Geleen or Aachen; someone in Zwolle may commute to Lelystad or Apeldoorn. Talent strategies that promote only employers within one province miss part of the realistic labour market - and may compete unnecessarily with neighbouring regions.
 
 Provinces can benefit from cooperation: sharing information about vacancies within commuting distance across borders, coordinating events and supporting mobility connections between neighbouring cities. In border regions, cooperation with Belgian and German partners through Euregio structures adds a cross-border dimension.
 
 ## The Role of Employers Themselves
 
-Policy can create conditions, but employers determine whether talent chooses to stay. Regional employers improve their attractiveness by publishing clear vacancies with salary ranges, offering internships and graduation projects, providing development opportunities and flexible working, and describing the concrete technical work involved. Provinces and development agencies can encourage these practices — for example by sharing examples of employers that successfully attract data talent, or by including recruitment practices in business support programmes.
+Policy can create conditions, but employers determine whether talent chooses to stay. Regional employers improve their attractiveness by publishing clear vacancies with salary ranges, offering internships and graduation projects, providing development opportunities and flexible working, and describing the concrete technical work involved. Provinces and development agencies can encourage these practices - for example by sharing examples of employers that successfully attract data talent, or by including recruitment practices in business support programmes.
 
 ## Common Pitfalls
 
@@ -138,15 +138,15 @@ Including talent considerations in these policies can make a significant differe
 
 ## Using Vacancy Data in Provincial Monitoring
 
-Provinces regularly publish economic monitors and labour market reports. Adding indicators about AI and data vacancies — where they appear, in which sectors and at which employers — provides a more current picture than annual statistics alone. Location-based vacancy data can reveal clusters of demand outside city centres, such as business parks or campuses, that deserve attention in mobility or housing planning. Tracking these indicators over time also shows whether interventions such as internship programmes or visibility campaigns coincide with changes in regional hiring.
+Provinces regularly publish economic monitors and labour market reports. Adding indicators about AI and data vacancies - where they appear, in which sectors and at which employers - provides a more current picture than annual statistics alone. Location-based vacancy data can reveal clusters of demand outside city centres, such as business parks or campuses, that deserve attention in mobility or housing planning. Tracking these indicators over time also shows whether interventions such as internship programmes or visibility campaigns coincide with changes in regional hiring.
 
 ## What This Is Not
 
-Improving visibility of regional vacancies is not a substitute for broader economic, housing and education policy. It will not keep every graduate in the region, nor should it: mobility is valuable for individuals and the economy. The goal is that graduates make informed choices — and that those who would prefer to stay are not pushed away by a lack of information.
+Improving visibility of regional vacancies is not a substitute for broader economic, housing and education policy. It will not keep every graduate in the region, nor should it: mobility is valuable for individuals and the economy. The goal is that graduates make informed choices - and that those who would prefer to stay are not pushed away by a lack of information.
 
 ## Key Takeaways
 
-- Many graduates leave their region partly because they do not know relevant employers nearby — an information problem regions can address.
+- Many graduates leave their region partly because they do not know relevant employers nearby - an information problem regions can address.
 - AI and data vacancies at regional SMEs are often invisible because of limited budgets, non-AI job titles and city-based searches.
 - Provinces can mobilise regional development agencies, clusters, knowledge institutions, municipalities and funding instruments such as Regio Deals and ERDF programmes.
 - Effective levers include visibility of local vacancies, early student-employer connections, career stories, housing and mobility, returnee outreach and professional communities.
@@ -154,7 +154,7 @@ Improving visibility of regional vacancies is not a substitute for broader econo
 
 ## Where to Start
 
-Ask your regional development agency and one knowledge institution how many local AI and data vacancies they know of — and how many graduates know about them. The gap between the two answers is where policy can start.
+Ask your regional development agency and one knowledge institution how many local AI and data vacancies they know of - and how many graduates know about them. The gap between the two answers is where policy can start.
 
 Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss how visible local AI vacancies can support your region's talent strategy.
 
@@ -167,7 +167,7 @@ Regional sectors such as manufacturing, agrifood, logistics, energy and healthca
 Among other reasons, because they are unaware of relevant regional employers, whose vacancies are often less visible or use titles without AI terminology.
 
 ### (Scenario: province considering its own job portal) Should a province build its own regional job platform?
-Usually not — building and maintaining a portal is costly; cooperating with existing specialist platforms and partners is often more effective.
+Usually not - building and maintaining a portal is costly; cooperating with existing specialist platforms and partners is often more effective.
 
 ### (Scenario: regional development agency) What role can regional development agencies play?
 They can encourage companies to publish vacancies, connect employers with knowledge institutions and include talent visibility in business support.
@@ -182,7 +182,7 @@ Combine CBS statistics with indicators such as regional vacancy data, internship
   "mainEntity": [
     {"@type": "Question", "name": "Why should a province care about AI and data talent?", "acceptedAnswer": {"@type": "Answer", "text": "Regional sectors depend on data skills, and retention protects investment in knowledge."}},
     {"@type": "Question", "name": "Why do graduates leave regions even when jobs exist?", "acceptedAnswer": {"@type": "Answer", "text": "Partly because regional employers and vacancies are not visible to them."}},
-    {"@type": "Question", "name": "Should a province build its own regional job platform?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — cooperating with existing platforms is more effective."}},
+    {"@type": "Question", "name": "Should a province build its own regional job platform?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - cooperating with existing platforms is more effective."}},
     {"@type": "Question", "name": "What role can regional development agencies play?", "acceptedAnswer": {"@type": "Answer", "text": "Encouraging vacancy visibility and connecting employers with knowledge institutions."}},
     {"@type": "Question", "name": "How can a province measure progress on talent retention?", "acceptedAnswer": {"@type": "Answer", "text": "Combine CBS statistics with vacancy, internship and graduate destination data."}}
   ]

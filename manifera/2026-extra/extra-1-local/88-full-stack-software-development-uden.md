@@ -22,26 +22,26 @@ target_persona: "VP of Engineering"
 
 Most full-stack software development pitches assume a clean slate. A VP of Engineering managing a system that has to talk to a fifteen-year-old ERP every day doesn't have a clean slate, and a vendor who builds like they don't know that produces a beautiful new system that can't actually talk to the one it needs to.
 
-**The Pain:** A VP of Engineering at a logistics and defense-adjacent technology company in Uden — a Noord-Brabant town near the Volkel airbase with a strong logistics and industrial-technology sector — needs full-stack software development for a new operations platform that has to integrate deeply and reliably with an entrenched legacy ERP system the business can't replace anytime soon.
+**The Pain:** A VP of Engineering at a logistics and defense-adjacent technology company in Uden - a Noord-Brabant town near the Volkel airbase with a strong logistics and industrial-technology sector - needs full-stack software development for a new operations platform that has to integrate deeply and reliably with an entrenched legacy ERP system the business can't replace anytime soon.
 
-**The Agitation:** A VP of Engineering who hires a full-stack team optimized purely for modern greenfield development gets a system that's technically excellent in isolation and fragile at exactly the integration boundary with the legacy ERP that matters most operationally — a mismatch that surfaces as recurring data-sync failures and manual reconciliation work that erodes the value of the new system.
+**The Agitation:** A VP of Engineering who hires a full-stack team optimized purely for modern greenfield development gets a system that's technically excellent in isolation and fragile at exactly the integration boundary with the legacy ERP that matters most operationally - a mismatch that surfaces as recurring data-sync failures and manual reconciliation work that erodes the value of the new system.
 
 ## Full-Stack Development That Takes Legacy Integration Seriously
 
-Full-stack software development around an entrenched legacy system needs a specifically different discipline than a greenfield build, because the legacy system's real constraints — undocumented behavior, brittle interfaces, inconsistent data quality — have to shape the new system's design, not just be bolted onto it afterward.
+Full-stack software development around an entrenched legacy system needs a specifically different discipline than a greenfield build, because the legacy system's real constraints - undocumented behavior, brittle interfaces, inconsistent data quality - have to shape the new system's design, not just be bolted onto it afterward.
 
-The first requirement is a thorough legacy-system discovery phase before significant new development starts — mapping the ERP's actual behavior, including its undocumented quirks and data-quality inconsistencies, rather than trusting official documentation that often doesn't reflect what the system actually does in practice.
+The first requirement is a thorough legacy-system discovery phase before significant new development starts - mapping the ERP's actual behavior, including its undocumented quirks and data-quality inconsistencies, rather than trusting official documentation that often doesn't reflect what the system actually does in practice.
 
-The second is an integration layer designed explicitly to be resilient to the legacy system's actual failure modes — retry logic, data validation, and reconciliation tooling built assuming the legacy side will occasionally behave unpredictably, rather than assuming a clean, well-behaved interface that greenfield development habits default to expecting.
+The second is an integration layer designed explicitly to be resilient to the legacy system's actual failure modes - retry logic, data validation, and reconciliation tooling built assuming the legacy side will occasionally behave unpredictably, rather than assuming a clean, well-behaved interface that greenfield development habits default to expecting.
 
-The third is a migration and cutover strategy that doesn't require a risky big-bang replacement — an incremental approach where the new system and legacy ERP run in parallel with verified data consistency, reducing the operational risk of the transition itself.
+The third is a migration and cutover strategy that doesn't require a risky big-bang replacement - an incremental approach where the new system and legacy ERP run in parallel with verified data consistency, reducing the operational risk of the transition itself.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads own the legacy-system discovery phase and the incremental migration strategy, ensuring the new platform's design accounts for the ERP's real-world behavior from the start.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds the integration layer specifically resilient to the legacy system's actual failure modes, not an idealized interface.
 
-This is Dutch Management × Vietnamese Mastery — full-stack development that respects the legacy system it has to live alongside. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - full-stack development that respects the legacy system it has to live alongside. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Karoo Logistieke Oplossings (Pty) Ltd, a logistics-technology company based in J
 Manifera ran a four-week legacy-discovery phase, documenting the ERP's actual undocumented behavior, then rebuilt the integration layer with retry logic and validation specifically designed around the ERP's real failure patterns. Sync failures dropped to zero over the following six months, with the incremental parallel-run migration strategy avoiding any operational disruption during cutover.
 
 > *"The new system was genuinely well built. It just wasn't built for the fifteen-year-old system it actually had to talk to every single day, and that gap cost us twice a week until someone actually studied the old system properly."*
-> — **VP of Engineering, Karoo Logistieke Oplossings (Pty) Ltd, South Africa**
+> - **VP of Engineering, Karoo Logistieke Oplossings (Pty) Ltd, South Africa**
 
 ## Greenfield-Only Approach vs. Manifera's Legacy-Aware Integration
 

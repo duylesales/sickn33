@@ -1,4 +1,4 @@
-🧮 Ze had webhookbeveiliging zelf kunnen leren — ze had het eerder gedaan. De echte vraag was niet "kan ik het," maar "waar stop ik deze week mee als ik het doe." 💭
+🧮 Ze had webhookbeveiliging zelf kunnen leren - ze had het eerder gedaan. De echte vraag was niet "kan ik het," maar "waar stop ik deze week mee als ik het doe." 💭
 
 Technische oprichters die LaunchStudio afwegen tegen het zelf leren programmeren, framen het meestal als een capaciteitsvraag. Dat is het niet. Het is een tijdskostenvraag, en die heeft een echt antwoord. 🧠
 

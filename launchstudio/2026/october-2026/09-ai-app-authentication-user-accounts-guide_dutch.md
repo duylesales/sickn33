@@ -7,11 +7,11 @@ Doelpersona: B (Technische Solo-Oprichter)
 
 # Authenticatie en Gebruikersbeheer Beveiligen in Uw AI-Gegenereerde App in Productie AI Deployment
 
-Een nieuwe gebruiker meldt zich vol verwachting aan voor uw gloednieuwe software-applicatie. Hij logt in en begint zijn persoonlijke dashboard te vullen met vertrouwelijke zakelijke gegevens. Even later meldt een tweede, volstrekt onafhankelijke gebruiker zich aan via het registratieformulier. Wanneer deze tweede gebruiker vervolgens inlogt, ziet hij niet alleen zijn eigen lege startscherm — hij ziet direct alle privégegevens, bestanden en documenten van de allereerste gebruiker. U heeft op dag één een catastrofaal datalek, en u heeft geen flauw idee waardoor dit precies wordt veroorzaakt.
+Een nieuwe gebruiker meldt zich vol verwachting aan voor uw gloednieuwe software-applicatie. Hij logt in en begint zijn persoonlijke dashboard te vullen met vertrouwelijke zakelijke gegevens. Even later meldt een tweede, volstrekt onafhankelijke gebruiker zich aan via het registratieformulier. Wanneer deze tweede gebruiker vervolgens inlogt, ziet hij niet alleen zijn eigen lege startscherm - hij ziet direct alle privégegevens, bestanden en documenten van de allereerste gebruiker. U heeft op dag één een catastrofaal datalek, en u heeft geen flauw idee waardoor dit precies wordt veroorzaakt.
 
 Dit nachtmerriescenario voltrekt zich helaas aan de lopende band bij solo-oprichters die applicaties bouwen met behulp van moderne AI-tools zoals Cursor, Bolt of Lovable. U vroeg het AI-model immers om *"een gebruikersdashboard met een veilig inlogscherm"*. De AI leverde keurig een visueel aantrekkelijke React-frontend op met een soepel werkend inlogformulier. Wat het model in werkelijkheid echter heeft gegenereerd, is een oppervlakkige **lokale status-illusie** die volkomen losstaat van echte, veilige server-side authenticatie en autorisatie.
 
-Authenticatie is fundamenteel geen simpele UI-component of invulschermpje. Het is een fundamentele beveiligingsarchitectuur die bepaalt hoe, wanneer en waarom uw backend-server de browser van de gebruiker vertrouwt. AI-codegeneratoren begrijpen deze diepe vertrouwensrelatie vrijwel nooit, wat resulteert in vier ernstige, structurele kwetsbaarheden — en authenticatielekken komen onevenredig vaak voor in de **45% van de door AI gegenereerde codebases** die aantoonbare beveiligingsfouten bevatten, simpelweg omdat een inlogscherm een van de makkelijkste dingen is om visueel overtuigend na te bootsen.
+Authenticatie is fundamenteel geen simpele UI-component of invulschermpje. Het is een fundamentele beveiligingsarchitectuur die bepaalt hoe, wanneer en waarom uw backend-server de browser van de gebruiker vertrouwt. AI-codegeneratoren begrijpen deze diepe vertrouwensrelatie vrijwel nooit, wat resulteert in vier ernstige, structurele kwetsbaarheden - en authenticatielekken komen onevenredig vaak voor in de **45% van de door AI gegenereerde codebases** die aantoonbare beveiligingsfouten bevatten, simpelweg omdat een inlogscherm een van de makkelijkste dingen is om visueel overtuigend na te bootsen.
 
 ## De 4 Fatale Authenticatiekwetsbaarheden in AI-Gegenereerde Code
 
@@ -21,7 +21,7 @@ Wanneer AI-tools authenticatiestromen genereren, optimaliseren zij primair voor 
 
 De meest voorkomende binnenbocht die AI-tools nemen is het opslaan van het authenticatietoken in de browser via `localStorage`. De AI genereert een inlogfunctie die de inloggegevens controleert, een token ontvangt en dit wegschrijft: `localStorage.setItem('auth_token', token)`.
 
-**Waarom dit faalt:** Elk JavaScript-script dat op uw pagina draait — inclusief een kwaadaardig script dat wordt geïnjecteerd via een externe advertentiebibliotheek, een gecompromitteerd npm-pakket of een Cross-Site Scripting (XSS) kwetsbaarheid elders in uw applicatie — kan `localStorage` ongehinderd uitlezen. Zodra een aanvaller dat token steelt, kan hij de identiteit van het slachtoffer voor onbepaalde tijd aannemen zonder dat de gebruiker of de oprichter daar ooit iets van merkt, omdat de server het verzoek als een volkomen legitieme sessie beschouwt.
+**Waarom dit faalt:** Elk JavaScript-script dat op uw pagina draait - inclusief een kwaadaardig script dat wordt geïnjecteerd via een externe advertentiebibliotheek, een gecompromitteerd npm-pakket of een Cross-Site Scripting (XSS) kwetsbaarheid elders in uw applicatie - kan `localStorage` ongehinderd uitlezen. Zodra een aanvaller dat token steelt, kan hij de identiteit van het slachtoffer voor onbepaalde tijd aannemen zonder dat de gebruiker of de oprichter daar ooit iets van merkt, omdat de server het verzoek als een volkomen legitieme sessie beschouwt.
 
 **De Productie-Oplossing:** Authenticatietokens moeten strikt worden opgeslagen in beveiligde, **httpOnly cookies** met `SameSite=Strict` en `Secure` vlaggen. Deze cookies zijn fysiek ontoegankelijk voor client-side JavaScript, gekoppeld aan een korte geldigheidsduur en geautomatiseerde refresh-token rotatie, waardoor een eventueel buitgemaakt token binnen enkele minuten volstrekt waardeloos wordt.
 
@@ -31,7 +31,7 @@ Een AI-tool genereert zonder blikken of blozen code zoals: `if (user.role === 'a
 
 **Waarom dit faalt:** Dit is zuiver cosmetische schijnveiligheid. Als de achterliggende API-endpoints die de administratieve data leveren de gebruikersrechten niet onafhankelijk op de server controleren, kan elke technisch onderlegde gebruiker de React-interface simpelweg omzeilen en de API rechtstreeks aanroepen via Postman, cURL of de browserconsole om admin-data te downloaden. De React-voorwaarde draait immers uitsluitend in de browser en beschermt niets anders dan de visuele layout.
 
-**De Productie-Oplossing:** Elk afzonderlijk API-endpoint moet de identiteit en rechten van de verzoeker onafhankelijk en server-side valideren op basis van een cryptografisch ondertekend token — en nooit vertrouwen op een statusvlag of rolwaarde die afkomstig is uit de browser.
+**De Productie-Oplossing:** Elk afzonderlijk API-endpoint moet de identiteit en rechten van de verzoeker onafhankelijk en server-side valideren op basis van een cryptografisch ondertekend token - en nooit vertrouwen op een statusvlag of rolwaarde die afkomstig is uit de browser.
 
 ### 3. Het Volledig Ontbreken van Sessie-Intrekking (Missing Session Revocation)
 
@@ -51,9 +51,9 @@ Door AI gegenereerde "wachtwoord vergeten"-stromen slaan met regelmaat vitale be
 
 Het structureel oplossen van deze kwetsbaarheden vereist dat de oppervlakkige client-side logica wordt vervangen door robuust server-side sessiebeheer. Voor Supabase-gebruikers betekent dit een sluitende implementatie van Supabase Auth gecombineerd met Row Level Security (RLS) policies die direct zijn gekoppeld aan `auth.uid()`, zodat de database zelf weigert data aan de verkeerde gebruiker te verstrekken, zelfs als een API-endpoint per abuis verkeerd is geconfigureerd.
 
-Bij [LaunchStudio](https://launchstudio.eu/nl/) is authenticatie-hardening een kernonderdeel van ons **Launch Ready Pakket**. Gesteund door de diepgaande enterprise-ervaring van [Manifera](https://www.manifera.com/) vanuit ons ontwikkelcentrum aan Pho Quang Street in **Ho Chi Minhstad, Vietnam** — met security-audits gecoördineerd vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** — zijn wij gespecialiseerd in het beveiligen van met AI gebouwde codebases.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) is authenticatie-hardening een kernonderdeel van ons **Launch Ready Pakket**. Gesteund door de diepgaande enterprise-ervaring van [Manifera](https://www.manifera.com/) vanuit ons ontwikkelcentrum aan Pho Quang Street in **Ho Chi Minhstad, Vietnam** - met security-audits gecoördineerd vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** - zijn wij gespecialiseerd in het beveiligen van met AI gebouwde codebases.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Wij herontwerpen uw inlogschermen niet en blijven van uw UI-componenten af. Wij koppelen uw bestaande frontend simpelweg aan een veilige, beproefde backend-architectuur die uw gebruikers en uw zakelijke reputatie beschermt. Een typisch authenticatietraject kost tussen **€ 800 en € 1.600** en wordt binnen **3 tot 5 werkdagen** volledig opgeleverd.
 
@@ -87,7 +87,7 @@ Noors door Cursor gegenereerde code had weliswaar een werkend inlogscherm, maar 
 
 **Resultaat:** Het datalek werd definitief gedicht. Noors cliënten gebruiken de applicatie nu met het volste vertrouwen in hun privacy. De gebruikersinterface bleef exact zoals Noor deze had ontworpen, maar de onderliggende backend is nu veilig genoeg voor gevoelige gezondheidsdata. *"Ik dacht dat een inlogscherm betekende dat de app veilig was. LaunchStudio liet me het cruciale verschil zien tussen een afgesloten deur en een foto van een afgesloten deur."*
 
-**Kosten & Tijdlijn:** €950 (Beveiligingsmodule) — binnen 4 werkdagen productieklaar opgeleverd.
+**Kosten & Tijdlijn:** €950 (Beveiligingsmodule) - binnen 4 werkdagen productieklaar opgeleverd.
 
 ---
 

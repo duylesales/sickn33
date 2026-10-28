@@ -1,4 +1,4 @@
-🤔 Tomas built his support-ticket AI on **Cursor** with LangChain handling orchestration — tomas, a startup founder, used **cursor** to build a customer support triage agent, but hit rising latency and debugging headaches he couldn't diagnose himself. 🧠
+🤔 Tomas built his support-ticket AI on **Cursor** with LangChain handling orchestration - tomas, a startup founder, used **cursor** to build a customer support triage agent, but hit rising latency and debugging headaches he couldn't diagnose himself. 🧠
 
 If your team picked LangChain by default rather than by design, it may be quietly working against your latency budget and your ability to debug bad outputs fast.
 
@@ -12,7 +12,7 @@ If your team picked LangChain by default rather than by design, it may be quietl
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Tomas got his answer, backed by data: average response latency dropped from 8+ seconds to under 3 seconds, with bad outputs now traceable in minutes. (€1,650 (Launch Ready Package) — 6 business days.) 🚀
+Tomas got his answer, backed by data: average response latency dropped from 8+ seconds to under 3 seconds, with bad outputs now traceable in minutes. (€1,650 (Launch Ready Package) - 6 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/langchain-vs-direct-api-calls-expert-decision
 

@@ -5,7 +5,7 @@ Een dashboard met statusupdates, een notificatiebel en een live multiplayer canv
 De 3 opties voor actuele data in uw web-app:
 
 1️⃣ Polling (elke 10–15s): Geen speciale servers nodig, werkt altijd en overal, en volstaat perfect voor managementdashboards en rapportages.
-2️⃣ Server-Sent Events (SSE): Push-notificaties rechtstreeks vanaf uw bestaande server naar de browser. Ideaal voor meldingen en feeds — zónder de zware verbindingslast van WebSockets.
+2️⃣ Server-Sent Events (SSE): Push-notificaties rechtstreeks vanaf uw bestaande server naar de browser. Ideaal voor meldingen en feeds - zónder de zware verbindingslast van WebSockets.
 3️⃣ WebSockets: Full-duplex tweerichtingsverkeer met sub-100ms latency. Pas écht nodig voor live chat, multiplayer tools of interactieve cursors.
 
 De 4 grootste valkuilen bij real-time architectuur:
@@ -15,7 +15,7 @@ De 4 grootste valkuilen bij real-time architectuur:
 ❌ Polling gebruiken op intervallen van 1 seconde voor chat, wat leidt tot een overbelaste database
 ❌ "Real-time" roepen zonder eerst vast te leggen of updates binnen 200 milliseconden of 5 seconden binnen moeten komen
 
-Bij **LaunchStudio**, ondersteund door Manifera, auditen en implementeren onze senior engineers de juiste realtime architectuur voor uw app — schaalbaar en kostenefficiënt.
+Bij **LaunchStudio**, ondersteund door Manifera, auditen en implementeren onze senior engineers de juiste realtime architectuur voor uw app - schaalbaar en kostenefficiënt.
 
 💡 Zo bespaarde wagenparkplatform Fleetnest duizenden euro's aan Ably-licenties door live bestelwagenstatussen via Server-Sent Events te serveren.
 

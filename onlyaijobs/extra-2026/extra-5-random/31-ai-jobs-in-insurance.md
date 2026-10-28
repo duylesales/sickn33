@@ -67,7 +67,7 @@ Insurance modelling has a structure worth understanding before an interview, bec
 
 Claims are modelled as frequency and severity separately: how often a claim occurs, and how large it is when it does. Frequency is typically count data with many zeros; severity is highly skewed with a long tail where a handful of claims dominate the total cost.
 
-Generalised linear models remain the backbone, because they handle these distributions naturally, produce interpretable multiplicative rating factors and are well understood by regulators. Gradient boosting is now widely used alongside them — often to identify interactions and non-linearities that are then incorporated into the interpretable model, a pattern that gives much of the accuracy with none of the explainability problem.
+Generalised linear models remain the backbone, because they handle these distributions naturally, produce interpretable multiplicative rating factors and are well understood by regulators. Gradient boosting is now widely used alongside them - often to identify interactions and non-linearities that are then incorporated into the interpretable model, a pattern that gives much of the accuracy with none of the explainability problem.
 
 Exposure matters: a policy held for three months is not comparable to one held for a year, and handling exposure correctly is a standard technical question. Credibility, the principle of blending group-level and individual estimates when data is thin, is another concept that transfers directly to hierarchical modelling elsewhere.
 
@@ -101,7 +101,7 @@ European insurers have spent recent years reassessing exposure to weather-relate
 
 Flood, storm, hail, wildfire and subsidence all affect property portfolios, and the historical record is a decreasingly reliable guide to the future. Catastrophe modelling combines hazard data, exposure information and vulnerability curves to estimate portfolio loss, and insurers supplement vendor models with their own analysis of their specific book.
 
-Related work includes geospatial analysis of property portfolios, integration of elevation and land-use data, assessment of accumulation risk in particular postcodes, and pricing that reflects local hazard without making cover unaffordable — a genuinely difficult public policy question that insurers face commercially.
+Related work includes geospatial analysis of property portfolios, integration of elevation and land-use data, assessment of accumulation risk in particular postcodes, and pricing that reflects local hazard without making cover unaffordable - a genuinely difficult public policy question that insurers face commercially.
 
 Sustainability reporting adds another strand. Under the Corporate Sustainability Reporting Directive, large firms report on climate-related risks, which requires data infrastructure and analysis that many insurers are still building.
 
@@ -125,7 +125,7 @@ The sector has several distinct employer types, and knowing them makes a search 
 
 **Large composite insurers and groups** operate across multiple countries and lines, with substantial central and local data teams.
 
-**Specialist and commercial insurers** focus on particular risks — marine, aviation, credit, cyber, agriculture — where underwriting expertise is deep and data work is often bespoke.
+**Specialist and commercial insurers** focus on particular risks - marine, aviation, credit, cyber, agriculture - where underwriting expertise is deep and data work is often bespoke.
 
 **Reinsurers** carry risk for insurers and run some of the most sophisticated modelling in the industry, particularly in catastrophe and capital work.
 
@@ -161,7 +161,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 One structural feature of insurance shapes the working life more than any other: you often wait years to learn whether a decision was good.
 
-A motor policy priced today generates claims over the following twelve months, some of which settle quickly and some of which — bodily injury, liability — take years. A life or health product may take decades to reveal its experience. This means the usual machine learning rhythm of rapid iteration against observed outcomes is unavailable.
+A motor policy priced today generates claims over the following twelve months, some of which settle quickly and some of which - bodily injury, liability - take years. A life or health product may take decades to reveal its experience. This means the usual machine learning rhythm of rapid iteration against observed outcomes is unavailable.
 
 Teams compensate in several ways. They monitor leading indicators rather than final outcomes: quote conversion, claim notification rates, early severity signals. They use techniques that allow for claims incurred but not yet reported when comparing periods. They run controlled comparisons where possible, offering different approaches to comparable segments and measuring the difference carefully. And they rely more heavily on out-of-time validation, checking whether a model built on older data would have performed well in a period it never saw.
 
@@ -171,7 +171,7 @@ For an engineer used to daily dashboards, this requires a different temperament.
 
 ### The variable that improved accuracy and was removed anyway
 
-A pricing team at a European motor insurer tested a new feature derived from a customer's behaviour on their website — how long they spent comparing options before purchasing. It improved the model's predictive accuracy measurably.
+A pricing team at a European motor insurer tested a new feature derived from a customer's behaviour on their website - how long they spent comparing options before purchasing. It improved the model's predictive accuracy measurably.
 
 The proposal went to review. Two questions ended it. Was the variable causally related to the risk of an accident, or was it a proxy for price sensitivity? And could the pricing decision be explained to a customer in terms they would accept as fair?
 

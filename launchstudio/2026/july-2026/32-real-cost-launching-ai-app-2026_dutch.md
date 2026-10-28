@@ -92,7 +92,7 @@ Lily werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 
 **Resultaat:** Lily ging voor een fractie van de kosten live, waardoor het ontwikkelingsbudget voor gebruikersacquisitie behouden bleef.
 
-**Kosten en tijdlijn:** € 2.100 (productielanceringspakket) — klaar voor productie en geïmplementeerd binnen 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (productielanceringspakket) - klaar voor productie en geïmplementeerd binnen 7 werkdagen.
 
 ---
 

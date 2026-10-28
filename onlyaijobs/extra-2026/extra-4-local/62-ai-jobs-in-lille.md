@@ -75,7 +75,7 @@ EuraTechnologies, located in a converted textile mill in Lille, is one of Europe
 
 ## Entry Paths: Internships and Work-Study
 
-In France, most engineering and business school students complete internships (stages) as part of their degree, typically ending with a five- to six-month final internship. Work-study contracts (alternance), in which students alternate between school and a company, are widespread and often lead to permanent jobs. In Lille, retail groups, cloud companies, consultancies and startups offer many internships and work-study positions in data. Choosing these carefully — with real projects and good mentoring — is one of the most important decisions for a graduate's first job.
+In France, most engineering and business school students complete internships (stages) as part of their degree, typically ending with a five- to six-month final internship. Work-study contracts (alternance), in which students alternate between school and a company, are widespread and often lead to permanent jobs. In Lille, retail groups, cloud companies, consultancies and startups offer many internships and work-study positions in data. Choosing these carefully - with real projects and good mentoring - is one of the most important decisions for a graduate's first job.
 
 France's CIFRE scheme also allows companies to employ PhD students supervised by academic labs, which is used in Lille for research projects in retail, logistics and AI.
 
@@ -91,11 +91,11 @@ French is essential for daily life and for most employers in Lille. Internationa
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Lille you will find few or no local vacancies there today. Use French job portals, your school's career service and internship platforms, company career pages and EuraTechnologies' job boards as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands — which is within reach via Belgium — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles, and as a model for searching by category and real commute. Lille employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Lille you will find few or no local vacancies there today. Use French job portals, your school's career service and internship platforms, company career pages and EuraTechnologies' job boards as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands - which is within reach via Belgium - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles, and as a model for searching by category and real commute. Lille employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Retail Data Science in Practice
 
-Retail offers graduates a broad range of data problems. Demand forecasting must handle thousands of products across hundreds of stores and online channels, with seasonality, promotions, weather and local events. Supply chain teams optimise inventory, replenishment and warehouse operations. Pricing teams analyse price elasticity and competition. Marketing teams personalise offers and measure campaign impact. E-commerce teams work on search, recommendations and conversion. Increasingly, retailers use language models for product descriptions, customer service and internal knowledge. For graduates, the advantage of retail is that results are visible quickly — a better forecast reduces stock-outs and waste — and that retail data teams in Lille are large enough to offer mentoring and career paths.
+Retail offers graduates a broad range of data problems. Demand forecasting must handle thousands of products across hundreds of stores and online channels, with seasonality, promotions, weather and local events. Supply chain teams optimise inventory, replenishment and warehouse operations. Pricing teams analyse price elasticity and competition. Marketing teams personalise offers and measure campaign impact. E-commerce teams work on search, recommendations and conversion. Increasingly, retailers use language models for product descriptions, customer service and internal knowledge. For graduates, the advantage of retail is that results are visible quickly - a better forecast reduces stock-outs and waste - and that retail data teams in Lille are large enough to offer mentoring and career paths.
 
 ## Cloud, Infrastructure and AI Platforms
 
@@ -103,7 +103,7 @@ Working for a cloud provider exposes graduates to data problems at infrastructur
 
 ## Reinforcement Learning and Research in Lille
 
-Inria Lille and the CRIStAL laboratory have a notable research tradition in sequential decision-making, bandits and reinforcement learning — methods used in recommendation, online advertising, robotics and resource allocation. For graduates interested in research, Lille offers PhD positions in these areas, often in collaboration with companies. Research experience in reinforcement learning is valued by companies working on personalisation, pricing and optimisation.
+Inria Lille and the CRIStAL laboratory have a notable research tradition in sequential decision-making, bandits and reinforcement learning - methods used in recommendation, online advertising, robotics and resource allocation. For graduates interested in research, Lille offers PhD positions in these areas, often in collaboration with companies. Research experience in reinforcement learning is valued by companies working on personalisation, pricing and optimisation.
 
 ## Building a Profile for Lille Employers
 
@@ -121,13 +121,13 @@ Lille is a lively, friendly city with Flemish-influenced architecture, a strong 
 
 - What projects will I work on during the internship or work-study contract?
 - Who will mentor me, and how often will I receive feedback?
-- What happened to previous interns or work-study students — were they hired?
+- What happened to previous interns or work-study students - were they hired?
 - Which collective agreement applies, and what is the cadre working-time arrangement?
 - What is the working language, and is English used in the team?
 
 ## Your First Two Years
 
-Use your first years to build strong foundations: clean code, reliable data pipelines, careful evaluation and clear communication with business teams. Choose a domain to deepen — retail, supply chain, cloud or finance — and learn how models reach production and are monitored. Stay connected with your school and with EuraTechnologies' community, which links startups, corporates and investors across the region.
+Use your first years to build strong foundations: clean code, reliable data pipelines, careful evaluation and clear communication with business teams. Choose a domain to deepen - retail, supply chain, cloud or finance - and learn how models reach production and are monitored. Stay connected with your school and with EuraTechnologies' community, which links startups, corporates and investors across the region.
 
 ## Cross-Border Opportunities
 
@@ -135,7 +135,7 @@ Lille's proximity to Belgium creates cross-border opportunities: Kortrijk, Ghent
 
 ## Preparing for Interviews
 
-Interviews for junior data roles in Lille usually include a conversation about motivation and your school projects, a technical test on Python, SQL and machine learning basics, and often a business case — for example forecasting sales for a new product or analysing why a promotion underperformed. Retail companies look for curiosity about their business and the ability to translate data into recommendations. Prepare by explaining your projects clearly, including limitations, and by reading about the company's products and strategy. Asking thoughtful questions about the data team's organisation and how models are used in decisions leaves a good impression and helps you assess whether the role offers the learning you need.
+Interviews for junior data roles in Lille usually include a conversation about motivation and your school projects, a technical test on Python, SQL and machine learning basics, and often a business case - for example forecasting sales for a new product or analysing why a promotion underperformed. Retail companies look for curiosity about their business and the ability to translate data into recommendations. Prepare by explaining your projects clearly, including limitations, and by reading about the company's products and strategy. Asking thoughtful questions about the data team's organisation and how models are used in decisions leaves a good impression and helps you assess whether the role offers the learning you need.
 
 ## Networking in Lille
 
@@ -151,11 +151,11 @@ Retailers use customer data extensively, so GDPR compliance, transparency about 
 
 ## Consulting and IT Services
 
-Lille has a large consulting and IT services sector, with firms that serve retail, banking, insurance, logistics and public-sector clients across the north of France and Belgium. For graduates, consulting roles offer rapid exposure to different industries, technologies and data problems, as well as structured training programmes. A junior data consultant might build a forecasting model for a retailer in one project, a customer churn analysis for an insurer in the next and a data platform migration after that. The pace can be demanding, and long-term ownership of products is limited, but the breadth of experience is valuable. Many graduates spend two or three years in consulting before joining an in-house team in the sector they enjoyed most — a path that works well in Lille, where consulting firms and retail headquarters are close together.
+Lille has a large consulting and IT services sector, with firms that serve retail, banking, insurance, logistics and public-sector clients across the north of France and Belgium. For graduates, consulting roles offer rapid exposure to different industries, technologies and data problems, as well as structured training programmes. A junior data consultant might build a forecasting model for a retailer in one project, a customer churn analysis for an insurer in the next and a data platform migration after that. The pace can be demanding, and long-term ownership of products is limited, but the breadth of experience is valuable. Many graduates spend two or three years in consulting before joining an in-house team in the sector they enjoyed most - a path that works well in Lille, where consulting firms and retail headquarters are close together.
 
 ## Logistics in Hauts-de-France
 
-The region's position between Paris, Belgium and the Channel ports makes it a major logistics hub, with distribution centres and transport companies using data for forecasting, warehouse optimisation and route planning — another accessible field for data graduates.
+The region's position between Paris, Belgium and the Channel ports makes it a major logistics hub, with distribution centres and transport companies using data for forecasting, warehouse optimisation and route planning - another accessible field for data graduates.
 
 ## A Final Tip
 

@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Compounding Technical Debt:** A CFO notices that feature delivery has slowed by nearly half over two years despite a stable engineering headcount, and every quarterly review from the CTO attributes it to "legacy code" without ever quantifying what that legacy code is actually costing the business in delayed revenue and inflated maintenance spend.
-❌ **Feature Release Paralysis:** Unmanaged technical debt typically consumes 30-40% of engineering capacity in large or aging codebases — capacity that should be building revenue-generating features — meaning a company spending €1.2 million a year on engineering may be burning €400,000-€480,000 of it simply keeping fragile systems standing still, a cost that never appears as its own line item anywhere in the financial statements.
+❌ **Feature Release Paralysis:** Unmanaged technical debt typically consumes 30-40% of engineering capacity in large or aging codebases - capacity that should be building revenue-generating features - meaning a company spending €1.2 million a year on engineering may be burning €400,000-€480,000 of it simply keeping fragile systems standing still, a cost that never appears as its own line item anywhere in the financial statements.
 ❌ **Critical Production Outages:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

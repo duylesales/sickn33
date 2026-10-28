@@ -1,6 +1,6 @@
 🚨 Verkoopt u een abonnement van € 10 aan een consument in Duitsland? Dan bent u Duitse btw verschuldigd tegen het Duitse tarief, zelfs als uw bedrijf er nooit een kantoor heeft gehad. 😳
 
-De EU heeft hiervoor één centraal loket opgericht om 27 afzonderlijke belastingaangiftes te voorkomen — maar weten dat het bestaat en het technisch juist inrichten zijn twee verschillende werelden: 🧠
+De EU heeft hiervoor één centraal loket opgericht om 27 afzonderlijke belastingaangiftes te voorkomen - maar weten dat het bestaat en het technisch juist inrichten zijn twee verschillende werelden: 🧠
 
 ❌ Geloven dat "Stripe de belasting regelt" automatisch betekent dat uw factuur wettig is
 ❌ Een zakelijke klant in Duitsland wiens administratie een factuur weigert wegens ontbrekende btw-specificatie

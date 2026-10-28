@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A founder asked us why creating a project in his app sent two emails. It took an afternoon to answer, and the answer was that his application sent one and a database trigger — written by an AI session four months earlier, in response to a request he had forgotten making — sent the other.
+A founder asked us why creating a project in his app sent two emails. It took an afternoon to answer, and the answer was that his application sent one and a database trigger - written by an AI session four months earlier, in response to a request he had forgotten making - sent the other.
 
 That is the characteristic failure of database logic in AI-built products. Not that triggers are wrong, but that they are invisible. Nothing in the application code mentions them. They do not appear in a search for the feature. They run anyway, on every insert, forever, and the first sign of their existence is behaviour nobody can account for.
 
@@ -32,13 +32,13 @@ Before deciding anything, list what exists. Supabase's dashboard shows database 
 
 Read each one and write a sentence next to it: what it does, what fires it, and whether anything still depends on it. This takes an hour and is the entire diagnosis.
 
-Expect to find three categories. A few that are load-bearing and correct — timestamp maintenance, a counter, the standard profile-creation trigger on user signup. Several that duplicate something your application also does, which is where the double emails come from. And one or two that no longer do anything meaningful because the feature that needed them was removed, leaving a trigger firing into a table nobody reads.
+Expect to find three categories. A few that are load-bearing and correct - timestamp maintenance, a counter, the standard profile-creation trigger on user signup. Several that duplicate something your application also does, which is where the double emails come from. And one or two that no longer do anything meaningful because the feature that needed them was removed, leaving a trigger firing into a table nobody reads.
 
 ## What Belongs in the Database
 
 Three kinds of logic are genuinely better placed in Postgres, and moving them there makes a small product more reliable rather than more complex.
 
-**Rules that must hold no matter what wrote the data.** A constraint that an amount cannot be negative, that a booking cannot end before it starts, that an email is unique within an organisation. These are not business logic in the interesting sense — they are statements about what a valid row is, and enforcing them in the database means they hold when data arrives through an import script, an admin action, or an AI session that forgot the rule existed.
+**Rules that must hold no matter what wrote the data.** A constraint that an amount cannot be negative, that a booking cannot end before it starts, that an email is unique within an organisation. These are not business logic in the interesting sense - they are statements about what a valid row is, and enforcing them in the database means they hold when data arrives through an import script, an admin action, or an AI session that forgot the rule existed.
 
 **Derived values that must never drift.** A timestamp of last modification, a search vector, a denormalised counter that would be expensive to compute. A trigger maintaining these is genuinely better than application code, because it cannot be bypassed.
 
@@ -62,7 +62,7 @@ It is also how row-level security gets defeated by accident. A helper function w
 
 Three habits contain the risk. Use it only when there is a specific reason, and write that reason in a comment. Inside such a function, check the caller's identity explicitly rather than assuming the caller was already authorised. And set the search path explicitly on every security definer function, because without it the function can be persuaded to call something other than what its author intended.
 
-If your project has security definer functions nobody can explain, that is the first thing to review — ahead of the policies themselves.
+If your project has security definer functions nobody can explain, that is the first thing to review - ahead of the policies themselves.
 
 ## Triggers and the Double-Write Problem
 
@@ -70,13 +70,13 @@ The most common concrete bug is simple: both the trigger and the application do 
 
 It happens because the trigger was added in one session and the application code in another, and neither knew about the other. The symptoms are duplicated rows, doubled counters, two emails, or an audit log with every entry twice.
 
-Finding them is mechanical. For each trigger, search the application for code doing the same work. Then decide which one stays — usually the application, unless the rule must hold for data arriving by other routes — and remove the other rather than leaving both with a condition to keep them from colliding. Conditions like that are how the situation got confusing in the first place.
+Finding them is mechanical. For each trigger, search the application for code doing the same work. Then decide which one stays - usually the application, unless the rule must hold for data arriving by other routes - and remove the other rather than leaving both with a condition to keep them from colliding. Conditions like that are how the situation got confusing in the first place.
 
 ## Keep Them in Migrations
 
 Functions and triggers created by typing into the Supabase SQL editor exist only in that database. They are not in your repository, they will not be in a new environment, and a restore from backup may or may not include the version you expected.
 
-Everything belongs in migration files, checked in, applied the same way to staging and production. For logic that already exists only in the dashboard, dump the definitions and commit them as a baseline migration — an hour of work that converts an undocumented database into a reproducible one.
+Everything belongs in migration files, checked in, applied the same way to staging and production. For logic that already exists only in the dashboard, dump the definitions and commit them as a baseline migration - an hour of work that converts an undocumented database into a reproducible one.
 
 This is also what makes the rest of this article possible. You cannot review what you cannot read, and a schema that lives only in a hosted dashboard is a schema nobody reviews.
 
@@ -96,13 +96,13 @@ A unique constraint on an email within an organisation. A check that a percentag
 
 The reason this matters more in an AI-built product than elsewhere is that your application code changes constantly and unpredictably. A validation written in a component in March can disappear in an August refactor nobody reviewed, and no test will notice because the test was generated from the same code. A database constraint survives every rewrite, every new endpoint, every import script and every session where an agent decided to restructure your forms.
 
-The objection is that constraint violations produce ugly errors. That is true and it is a presentation problem: catch the specific violation and show a sensible message. The alternative — permissive data and validation that exists only where somebody remembered — is how a product acquires rows that its own code cannot handle.
+The objection is that constraint violations produce ugly errors. That is true and it is a presentation problem: catch the specific violation and show a sensible message. The alternative - permissive data and validation that exists only where somebody remembered - is how a product acquires rows that its own code cannot handle.
 
 ## Setting This Up
 
 For an existing Supabase project this is one to two days: every function and trigger listed and described, duplicates between database and application resolved in one direction, anything performing external calls moved into application code, constraints and derived-value triggers kept and documented, security definer functions reviewed with explicit authorisation checks and search paths, dead logic removed, everything captured in migrations and committed, and a short note in the repository explaining what the database does on its own so the next person is not surprised by it.
 
-LaunchStudio does this as part of taking over or hardening an AI-built codebase, and it is usually where the unexplained behaviour lives. The engineers are Manifera's — eleven years of Postgres in production, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this as part of taking over or hardening an AI-built codebase, and it is usually where the unexplained behaviour lives. The engineers are Manifera's - eleven years of Postgres in production, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Ask us what your database does that your code does not mention](https://launchstudio.eu/en/#contact).
 
@@ -114,24 +114,24 @@ Marnix Oosterveld runs Offerteroute, built with Lovable and extended over a year
 
 Installers complained that customers received two copies of every quotation, sometimes minutes apart and sometimes hours. Two customers had replied to both, creating duplicate follow-ups and one argument about a price that had changed between versions.
 
-The application sent a quotation email when a quotation was marked sent. So did a trigger on the quotations table, written eight months earlier, which fired on any update where the status column changed — including the nightly job that updated expiry dates, which is why some duplicates arrived at three in the morning.
+The application sent a quotation email when a quotation was marked sent. So did a trigger on the quotations table, written eight months earlier, which fired on any update where the status column changed - including the nightly job that updated expiry dates, which is why some duplicates arrived at three in the morning.
 
 The review found more. Eleven triggers in total: four maintaining timestamps and counters correctly, two duplicating application logic, one calling an external webhook inside a transaction that had caused three timeouts, three doing nothing because their target tables had been replaced, and one security definer function fetching quotations with no authorisation check at all, callable by any authenticated user against any company's data.
 
-Three business days: every function and trigger inventoried and described; the email trigger and the webhook trigger removed with the work moved into the application where it can be retried and logged; the duplicate-logic pairs resolved; three dead triggers dropped; the security definer function rewritten with an explicit membership check and a fixed search path; timestamp and counter triggers kept, documented and covered by SQL tests; and the whole schema — functions and triggers included — dumped into a baseline migration and committed, replacing a database that existed only in the dashboard.
+Three business days: every function and trigger inventoried and described; the email trigger and the webhook trigger removed with the work moved into the application where it can be retried and logged; the duplicate-logic pairs resolved; three dead triggers dropped; the security definer function rewritten with an explicit membership check and a fixed search path; timestamp and counter triggers kept, documented and covered by SQL tests; and the whole schema - functions and triggers included - dumped into a baseline migration and committed, replacing a database that existed only in the dashboard.
 
 **Result:** duplicate emails stopped, the intermittent timeouts stopped with them, and the exposed function was closed before anyone had used it. Marnix now has a two-page document describing what his database does without being asked, which he says is the first time he has understood his own product's behaviour since month three.
 
 > *"Nothing in my code sent a second email. It took an afternoon to accept that the database was doing it by itself, because I had asked it to, in a chat I do not remember."*
-> — **Marnix Oosterveld, Founder, Offerteroute (Waalwijk)**
+> - **Marnix Oosterveld, Founder, Offerteroute (Waalwijk)**
 
-**Cost & Timeline:** €2,700 (schema inventory, trigger and function review, duplicate resolution, external calls moved to application code, security definer remediation, SQL tests, baseline migration) — completed in 3 business days.
+**Cost & Timeline:** €2,700 (schema inventory, trigger and function review, duplicate resolution, external calls moved to application code, security definer remediation, SQL tests, baseline migration) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
 ### Are database triggers a bad idea in Supabase?
 
-No — for constraints, derived values and atomic multi-table operations they are the better place. The problem is invisibility: logic in the database that nothing in your code mentions.
+No - for constraints, derived values and atomic multi-table operations they are the better place. The problem is invisibility: logic in the database that nothing in your code mentions.
 
 ### Should a trigger send email or call a webhook?
 
@@ -159,7 +159,7 @@ Because logic created in the SQL editor exists in one database only. It will not
       "name": "Are database triggers a bad idea in Supabase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — constraints, derived values and atomic multi-table operations belong there. The danger is logic your application code never mentions."
+        "text": "No - constraints, derived values and atomic multi-table operations belong there. The danger is logic your application code never mentions."
       }
     },
     {
@@ -191,7 +191,7 @@ Because logic created in the SQL editor exists in one database only. It will not
       "name": "Why must database functions live in migration files?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Logic created in the SQL editor exists in that one database — absent from new environments, uncertain after a restore, and invisible in your repository."
+        "text": "Logic created in the SQL editor exists in that one database - absent from new environments, uncertain after a restore, and invisible in your repository."
       }
     }
   ]

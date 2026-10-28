@@ -63,14 +63,14 @@ De meeste oprichters kunnen hun eigen cryptografie niet zelfstandig auditeren, m
 
 **Hoe een moderne implementatie er doorgaans uitziet**
 
-- Verwijzingen naar `bcrypt`, `argon2`, `scrypt` of `pbkdf2` — dit zijn moderne, trage hash-algoritmen die specifiek zijn ontworpen voor wachtwoordopslag en die elk aanzienlijke rekenkracht vereisen per poging, precies om grootschalige geautomatiseerde aanvallen te vertragen.
-- Een expliciete configuratie voor 'werklast' of 'moeilijkheidsgraad' — een getal (zoals een bcrypt-cost factor van minimaal 10 tot 12) dat bepaalt hoeveel rekenwerk nodig is om elke hash te berekenen, waardoor de beveiliging in de loop van de tijd kan worden opgeschaald naarmate hardware sneller wordt.
-- Automatische 'salting' per wachtwoord — moderne bibliotheken genereren standaard automatisch een unieke willekeurige salt voor elk wachtwoord, waardoor twee gebruikers met exact hetzelfde wachtwoord toch volstrekt verschillende opgeslagen hashwaarden in de database krijgen.
+- Verwijzingen naar `bcrypt`, `argon2`, `scrypt` of `pbkdf2` - dit zijn moderne, trage hash-algoritmen die specifiek zijn ontworpen voor wachtwoordopslag en die elk aanzienlijke rekenkracht vereisen per poging, precies om grootschalige geautomatiseerde aanvallen te vertragen.
+- Een expliciete configuratie voor 'werklast' of 'moeilijkheidsgraad' - een getal (zoals een bcrypt-cost factor van minimaal 10 tot 12) dat bepaalt hoeveel rekenwerk nodig is om elke hash te berekenen, waardoor de beveiliging in de loop van de tijd kan worden opgeschaald naarmate hardware sneller wordt.
+- Automatische 'salting' per wachtwoord - moderne bibliotheken genereren standaard automatisch een unieke willekeurige salt voor elk wachtwoord, waardoor twee gebruikers met exact hetzelfde wachtwoord toch volstrekt verschillende opgeslagen hashwaarden in de database krijgen.
 
 **Waarschuwingssignalen die onmiddellijke aandacht vereisen**
 
-- Functies zoals `md5()`, `sha1()`, `sha256()` of `sha512()` die rechtstreeks op het wachtwoord worden aangeroepen zonder trage hash-functie of unieke salt — dit zijn snelle cryptografische algoritmen die uitstekend zijn voor het verifiëren van bestandsintegriteit, maar volstrekt ongeschikt voor wachtwoorden omdat moderne grafische kaarten (GPU's) miljarden combinaties per seconde kunnen berekenen.
-- Wachtwoorden die in platte tekst worden opgeslagen — hoewel dit zeldzaam is bij gevestigde auth-bibliotheken, kan een zelfgeschreven registratiestroom in een vroeg prototype wachtwoorden per ongeluk rechtstreeks in een ongehashte kolom opslaan.
+- Functies zoals `md5()`, `sha1()`, `sha256()` of `sha512()` die rechtstreeks op het wachtwoord worden aangeroepen zonder trage hash-functie of unieke salt - dit zijn snelle cryptografische algoritmen die uitstekend zijn voor het verifiëren van bestandsintegriteit, maar volstrekt ongeschikt voor wachtwoorden omdat moderne grafische kaarten (GPU's) miljarden combinaties per seconde kunnen berekenen.
+- Wachtwoorden die in platte tekst worden opgeslagen - hoewel dit zeldzaam is bij gevestigde auth-bibliotheken, kan een zelfgeschreven registratiestroom in een vroeg prototype wachtwoorden per ongeluk rechtstreeks in een ongehashte kolom opslaan.
 
 Deze controle van tien minuten vertelt u niet of uw volledige authenticatiestroom vlekkeloos is ingericht, maar het beantwoordt wel direct de meest kritieke vraag over de bescherming van de inloggegevens van uw gebruikers.
 
@@ -85,9 +85,9 @@ Een vriend die fotograaf is met een baan in cybersecurity bekeek FotoBoeking's c
 **Resultaat:** LaunchStudio upgrade de wachtwoord-hashing van FotoBoeking naar een modern algoritme en implementeerde een veilig migratiepad voor bestaande accounts. Dit sloot de kloof zonder dat er verplichte wachtwoord-resets nodig waren voor huidige gebruikers.
 
 > *"Elke inlog werkte de hele tijd perfect, dus er was oprecht niets dat suggereerde dat er iets mis was. Er was een vriend voor nodig die toevallig exact wist waar hij naar moest kijken om het überhaupt op te merken."*
-> — **Twan Meijer, Oprichter, FotoBoeking (Barneveld)**
+> - **Twan Meijer, Oprichter, FotoBoeking (Barneveld)**
 
-**Kosten en tijdlijn:** € 2.100 (upgrade van wachtwoord-hashing en veilige accountmigratie) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (upgrade van wachtwoord-hashing en veilige accountmigratie) - voltooid in 7 werkdagen.
 
 ---
 
@@ -95,7 +95,7 @@ Een vriend die fotograaf is met een baan in cybersecurity bekeek FotoBoeking's c
 
 ### Zou een cryptografiespecialist het gebruik van verouderde hash-algoritmen beschouwen als een urgent risico?
 
-Ja, zeer ernstig — verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt.
+Ja, zeer ernstig - verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt.
 
 ### Komt dit probleem alleen voor bij zelfgebouwde authenticatie, of ook bij bekende auth-providers?
 
@@ -107,7 +107,7 @@ Door strikt de actuele standaarden van internationale beveiligingsautoriteiten z
 
 ### Hoe sluit dit aan bij de stelling van Herre Roelevink dat 'het werkt' iets heel anders is dan 'het is best practice'?
 
-Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen — functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise.
+Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen - functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise.
 
 ### Moet een oprichter zijn AI-assistent expliciet vragen om een specifiek hash-algoritme zoals Argon2 of bcrypt?
 
@@ -123,7 +123,7 @@ Ja, dat is een uitstekende gerichte instructie die voorkomt dat het model terugv
       "name": "Zou een cryptografiespecialist het gebruik van verouderde hash-algoritmen beschouwen als een urgent risico?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zeer ernstig — verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt."
+        "text": "Ja, zeer ernstig - verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt."
       }
     },
     {
@@ -147,7 +147,7 @@ Ja, dat is een uitstekende gerichte instructie die voorkomt dat het model terugv
       "name": "Hoe sluit dit aan bij de stelling van Herre Roelevink dat 'het werkt' iets heel anders is dan 'het is best practice'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen — functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise."
+        "text": "Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen - functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise."
       }
     },
     {

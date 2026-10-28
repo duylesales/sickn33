@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Als u uw applicatie bouwt met Cursor, ziet uw releaseproces er waarschijnlijk zo uit: u accepteert de diff, werpt er een snelle blik op, maakt een commit, pusht naar `main`, en laat Vercel of Netlify de boel binnen een minuut automatisch uitrollen. Het voelt professioneel, want er is git en er draait een pipeline. Maar voor het overbrengen van AI-code naar productie is dit tevens een van de meest risicovolle werkwijzen die een solo-oprichter kan hanteren — niet omdat een afzonderlijke stap verkeerd is, maar omdat er tussen "het taalmodel heeft dit geschreven" en "klanten gebruiken dit nu" niets is ingebouwd dat 'nee' kan zeggen.
+Als u uw applicatie bouwt met Cursor, ziet uw releaseproces er waarschijnlijk zo uit: u accepteert de diff, werpt er een snelle blik op, maakt een commit, pusht naar `main`, en laat Vercel of Netlify de boel binnen een minuut automatisch uitrollen. Het voelt professioneel, want er is git en er draait een pipeline. Maar voor het overbrengen van AI-code naar productie is dit tevens een van de meest risicovolle werkwijzen die een solo-oprichter kan hanteren - niet omdat een afzonderlijke stap verkeerd is, maar omdat er tussen "het taalmodel heeft dit geschreven" en "klanten gebruiken dit nu" niets is ingebouwd dat 'nee' kan zeggen.
 
 Dit is een praktische gids voor technische oprichters: wat een minimaal releaseproces daadwerkelijk vereist, waarom door AI gegenereerde code-diffs dit belangrijker maken in plaats van minder belangrijk, en hoe u dit inricht zonder een compact productteam te veranderen in een bureaucratische molen.
 
@@ -35,7 +35,7 @@ Bij handgeschreven code wordt dat gat deels opgevangen door het eigen begrip van
 
 U heeft geen log corporate change-advisory board nodig. U heeft vijf sluizen (gates) nodig, die stuk voor stuk geautomatiseerd kunnen worden of teruggebracht kunnen worden tot een overzichtelijke checklist.
 
-**Sluis 1: Geautomatiseerde controles bij elke push.** Type-checking, linting en alle bestaande tests draaien in CI (GitHub Actions volstaat uitstekend) op een afzonderlijke branch — niet direct op `main`. Falen de checks, dan wordt het samenvoegen (mergen) geblokkeerd. Dit vangt direct de klassieke AI-fout op waarbij code er logisch uitziet, maar verwijst naar een variabele of functie die elders al is hernoemd of gewist.
+**Sluis 1: Geautomatiseerde controles bij elke push.** Type-checking, linting en alle bestaande tests draaien in CI (GitHub Actions volstaat uitstekend) op een afzonderlijke branch - niet direct op `main`. Falen de checks, dan wordt het samenvoegen (mergen) geblokkeerd. Dit vangt direct de klassieke AI-fout op waarbij code er logisch uitziet, maar verwijst naar een variabele of functie die elders al is hernoemd of gewist.
 
 **Sluis 2: Een preview- of staging-deployment.** Elke branch wordt uitgerold naar een omgeving die identiek is aan productie maar het niet ís, gekoppeld aan een staging-database met fictieve of geanonimiseerde data. Daar klikt u de wijziging handmatig door. Vrijwel elk modern hostingplatform biedt gratis preview-deployments; het ontbrekende puzzelstukje is meestal de afzonderlijke database.
 
@@ -43,7 +43,7 @@ U heeft geen log corporate change-advisory board nodig. U heeft vijf sluizen (ga
 
 **Sluis 4: Een rollback-procedure die u daadwerkelijk heeft uitgeprobeerd.** Uw hostingplatform kan een vorige build waarschijnlijk met één klik herstellen. De cruciale vraag is of dat nog steeds werkt nadat er een databasemigratie is uitgevoerd. Een rollback-plan dat de database negeert, is slechts een half plan.
 
-**Sluis 5: Een mens die bewust besluit te releasen.** Zelfs voor een solo-oprichter moet de uiteindelijke merge naar `main` een bewuste handeling zijn, uitgevoerd op een verstandig tijdstip — niet om 23:40 uur op vrijdagavond omdat de diff er op het eerste gezicht goed uitzag.
+**Sluis 5: Een mens die bewust besluit te releasen.** Zelfs voor een solo-oprichter moet de uiteindelijke merge naar `main` een bewuste handeling zijn, uitgevoerd op een verstandig tijdstip - niet om 23:40 uur op vrijdagavond omdat de diff er op het eerste gezicht goed uitzag.
 
 ## Waarom AI-Diffs Strengere Sluizen Vereisen, Niet Soepelere
 
@@ -83,7 +83,7 @@ Zodra dit een vaste routine is, kost het u hooguit tien minuten per release. De 
 
 ## Een Minimale CI-Pipeline in de Praktijk
 
-Praten over "sluizen" kan abstract klinken. Hieronder ziet u hoe een minimale CI-configuratie voor een met Cursor gebouwde Next.js- en Supabase-app eruitziet in GitHub Actions. Het is bewust beknopt gehouden — de essentie is dat het automatisch draait op elke pull request en het mergen fysiek blokkeert bij een fout:
+Praten over "sluizen" kan abstract klinken. Hieronder ziet u hoe een minimale CI-configuratie voor een met Cursor gebouwde Next.js- en Supabase-app eruitziet in GitHub Actions. Het is bewust beknopt gehouden - de essentie is dat het automatisch draait op elke pull request en het mergen fysiek blokkeert bij een fout:
 
 ```yaml
 name: ci
@@ -110,7 +110,7 @@ jobs:
           fi
 ```
 
-In combinatie met branch protection op GitHub — waarbij deze job verplicht moet slagen én uw eigen goedkeuring vereist is — kan AI-gegenereerde code de beveiliging niet meer omzeilen. Niet door een vermoeide oprichter om middernacht, en niet door een autonome agent.
+In combinatie met branch protection op GitHub - waarbij deze job verplicht moet slagen én uw eigen goedkeuring vereist is - kan AI-gegenereerde code de beveiliging niet meer omzeilen. Niet door een vermoeide oprichter om middernacht, en niet door een autonome agent.
 
 De controle op migraties is bewust pragmatisch. Het verbiedt niet om een kolom te verwijderen; het dwingt af dat een mens er bewust naar kijkt. In de praktijk voegt u simpelweg een override-label of een opmerking toe aan de pull request voor doelbewuste destructieve aanpassingen, waarna de rest soepel doorloopt.
 
@@ -119,7 +119,7 @@ De controle op migraties is bewust pragmatisch. Het verbiedt niet om een kolom t
 Voor Supabase-projecten verloopt de meest betrouwbare workflow via SQL-bestanden in de repository, toegepast via de Supabase CLI in plaats van via het online dashboard:
 
 1. Voer de schemawijziging eerst lokaal of op een branch-database uit.
-2. Genereer een migratiebestand met `supabase db diff` en lees dit aandachtig door — door AI gegenereerde diffs bevatten regelmatig meer wijzigingen dan u verwacht.
+2. Genereer een migratiebestand met `supabase db diff` en lees dit aandachtig door - door AI gegenereerde diffs bevatten regelmatig meer wijzigingen dan u verwacht.
 3. Commit de migratie in een eigen pull request, met een notitie over de omkeerbaarheid.
 4. Pas de migratie via CI toe op staging en test de app grondig.
 5. Maak een back-up (of controleer of point-in-time recovery actief is) en pas de migratie toe op productie.
@@ -132,11 +132,11 @@ Een release is niet klaar op het moment dat het deployment-lampje op groen sprin
 
 ## Drie Reële Releasescenario's, Correct Aangepakt
 
-**Een tekstwijziging.** Cursor past de prijzen en copy aan op de marketingpagina. CI slaagt, de preview ziet er strak uit, u merget overdag. Totale extra inspanning: twee minuten ten opzichte van direct naar `main` pushen. Het proces vertraagt triviale aanpassingen nauwelijks — en dat maakt het duurzaam vol te houden.
+**Een tekstwijziging.** Cursor past de prijzen en copy aan op de marketingpagina. CI slaagt, de preview ziet er strak uit, u merget overdag. Totale extra inspanning: twee minuten ten opzichte van direct naar `main` pushen. Het proces vertraagt triviale aanpassingen nauwelijks - en dat maakt het duurzaam vol te houden.
 
 **Een nieuwe feature met een schemawijziging.** U introduceert de mogelijkheid om een lidmaatschap tijdelijk te pauzeren (zoals in het onderstaande praktijkvoorbeeld). De migratie gaat in een eigen pull request die uitsluitend een optionele (nullable) kolom en een nieuwe statuswaarde toevoegt, vooraf gereviewd en uitgerold. De featurecode volgt in een tweede pull request, bij voorkeur achter een feature flag. Bestaande rijen blijven onaangeroerd, en bij een eventuele rollback blijft de database 100% compatibel.
 
-**Een urgente hotfix tijdens een live storing.** Betalingen lopen vast. De snelste veilige route is: rol direct terug naar de laatste stabiele deploy, bevestig dat betalingen weer binnenkomen, en ontwikkel de fix vervolgens rustig op een aparte branch met CI-dekking. Weersta de verleiding om "voor deze ene keer" direct in productiecode te sleutelen — tijdens incidenten richt ongevalideerde code traditioneel de grootste ravage aan.
+**Een urgente hotfix tijdens een live storing.** Betalingen lopen vast. De snelste veilige route is: rol direct terug naar de laatste stabiele deploy, bevestig dat betalingen weer binnenkomen, en ontwikkel de fix vervolgens rustig op een aparte branch met CI-dekking. Weersta de verleiding om "voor deze ene keer" direct in productiecode te sleutelen - tijdens incidenten richt ongevalideerde code traditioneel de grootste ravage aan.
 
 ## Tekenen Dat Uw Releaseproces Werkt
 
@@ -144,13 +144,13 @@ Na een maand merkt u direct resultaat: aanzienlijk minder "wat is hier zojuist v
 
 ## Wanneer het Proces Eenvoudiger Mag Blijven
 
-Niet elk project vereist vanaf dag één alle vijf de sluizen. Een statische marketingwebsite zonder database kan prima direct vanaf `main` deployen. Een interne tool voor vijf directe collega's kan voorlopig zonder preview-deployments. De sluizen worden echter onmisbaar zodra er sprake is van echte klantdata, online betalingen of contractuele uptime — en voor de meeste met AI gebouwde SaaS-applicaties is dat exact het moment waarop ze het waard zijn om gelanceerd te worden.
+Niet elk project vereist vanaf dag één alle vijf de sluizen. Een statische marketingwebsite zonder database kan prima direct vanaf `main` deployen. Een interne tool voor vijf directe collega's kan voorlopig zonder preview-deployments. De sluizen worden echter onmisbaar zodra er sprake is van echte klantdata, online betalingen of contractuele uptime - en voor de meeste met AI gebouwde SaaS-applicaties is dat exact het moment waarop ze het waard zijn om gelanceerd te worden.
 
 ## Waar LaunchStudio U Ondersteunt
 
 Voor technische oprichters is de rol van LaunchStudio meestal niet om uw features te schrijven. Onze rol is om het betrouwbare fundament onder uw AI-code naar productie-workflow te leggen: CI ingericht, staging strikt gescheiden, geheimen per omgeving beveiligd, migratiestromen gestroomlijnd en monitoring actief gekoppeld. De technische expertise hierachter is afkomstig van Manifera, dat al meer dan 11 jaar enterprise-kwaliteit levert aan innovatieve bedrijven van Amsterdam tot Singapore. U blijft uw code schrijven in Cursor zoals u gewend bent; het cruciale verschil is wat er voortaan tussen uw diff en uw betalende klanten staat.
 
-Klinkt dit herkenbaar? [Spreek met een engineer die AI-code door en door begrijpt](https://launchstudio.eu/nl/#contact) — het eerste gesprek kost 15 minuten en levert u een vaste prijs en plan op. Manifera's bredere [web app development praktijk](https://www.manifera.com/services/web-app-develop/) hanteert exact dezelfde pipeline-patronen op grotere schaal.
+Klinkt dit herkenbaar? [Spreek met een engineer die AI-code door en door begrijpt](https://launchstudio.eu/nl/#contact) - het eerste gesprek kost 15 minuten en levert u een vaste prijs en plan op. Manifera's bredere [web app development praktijk](https://www.manifera.com/services/web-app-develop/) hanteert exact dezelfde pipeline-patronen op grotere schaal.
 
 ## Praktijkvoorbeeld
 
@@ -158,16 +158,16 @@ Klinkt dit herkenbaar? [Spreek met een engineer die AI-code door en door begrijp
 
 Daan Visser, voormalig data-analist in Delft, bouwde PlankPal met behulp van Cursor: een ledenadministratie- en incheck-app voor twee lokale boulderhallen. Leden scanden een QR-code bij de ingang; balievrijwilligers zagen direct de live bezetting en verlopende abonnementen. Daan pushte meerdere keren per dag naar `main`, waarna Vercel elke push automatisch uitrolde.
 
-Op een donderdagavond vroeg Daan Cursor om een status voor "gepauzeerd lidmaatschap" toe te voegen. De gegenereerde databasemigratie zette de statuskolom om van platte tekst naar een ENUM-type, en herschreef daarbij per ongeluk alle bestaande rijen — waarbij alle statussen die de ENUM niet herkende automatisch op `NULL` werden gezet. De deployment duurde veertig seconden. Gedurende de twee uur daarna werden tientallen leden met een geldig abonnement bij de deur geweigerd, omdat het incheckscherm een lege status interpreteerde als verlopen. Het terugdraaien van de code hielp niet, want de database was immers al gewijzigd.
+Op een donderdagavond vroeg Daan Cursor om een status voor "gepauzeerd lidmaatschap" toe te voegen. De gegenereerde databasemigratie zette de statuskolom om van platte tekst naar een ENUM-type, en herschreef daarbij per ongeluk alle bestaande rijen - waarbij alle statussen die de ENUM niet herkende automatisch op `NULL` werden gezet. De deployment duurde veertig seconden. Gedurende de twee uur daarna werden tientallen leden met een geldig abonnement bij de deur geweigerd, omdat het incheckscherm een lege status interpreteerde als verlopen. Het terugdraaien van de code hielp niet, want de database was immers al gewijzigd.
 
 De engineers van LaunchStudio herstelden de beschadigde rijen direct via een point-in-time back-up en bouwden vervolgens een solide releaseproces rondom Daans workflow: GitHub Actions die type-checks en geautomatiseerde inchecktests uitvoeren op elke branch, een gescheiden Supabase staging-project met representatieve testdata, migraties ondergebracht in eigen gecontroleerde pull requests, en een verplichte rollback-instructie in elk PR-sjabloon. Foutopsporing werd gekoppeld aan Daans smartphone.
 
 **Resultaat:** Gedurende de vier maanden daarna voerde PlankPal 212 succesvolle releases uit. De CI-pipeline blokkeerde in die periode negen keer een foute merge, waaronder twee databasemigraties die bestaande data overschreven zouden hebben. Er vond geen enkele incheckstoring meer plaats.
 
 > *"Ik had een pipeline, dus ik dacht dat ik een releaseproces had. Wat ik werkelijk had, was een angstaanjagend snelle manier om alles wat Cursor bedacht linea recta naar productie te sturen."*
-> — **Daan Visser, Oprichter, PlankPal (Delft)**
+> - **Daan Visser, Oprichter, PlankPal (Delft)**
 
-**Kosten & Tijdlijn:** €1.600 (inrichten release-pipeline, staging-scheiding, migratieworkflow en dataherstel) — opgeleverd in 6 werkdagen.
+**Kosten & Tijdlijn:** €1.600 (inrichten release-pipeline, staging-scheiding, migratieworkflow en dataherstel) - opgeleverd in 6 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -185,7 +185,7 @@ Cursor kan zeker een prima startpunt genereren. Het risico is echter dat door AI
 
 ### Wat voegt de ervaring van Manifera toe aan het releaseproces van een solo-oprichter?
 
-Vooral patroonherkenning. De engineers van Manifera hebben in ruim 160 projecten exact gezien welke releasefouten tot echte incidenten leiden. Daardoor richten zij een minimaal, doelgericht proces in — zonder overbodige bureaucratie, maar met keiharde sluizen waar data of geld op het spel staan.
+Vooral patroonherkenning. De engineers van Manifera hebben in ruim 160 projecten exact gezien welke releasefouten tot echte incidenten leiden. Daardoor richten zij een minimaal, doelgericht proces in - zonder overbodige bureaucratie, maar met keiharde sluizen waar data of geld op het spel staan.
 
 ### Draagt een gedegen releaseproces bij aan online vindbaarheid en SEO?
 

@@ -42,7 +42,7 @@ Know which one the link you are about to send provides. The most common mistake 
 
 The rule that prevents the worst outcome: a demonstration runs on invented data, always.
 
-Using a previous client's data to demonstrate to a prospect is a disclosure of that client's information to a third party. It happens because it is convenient — the product is populated, the screens look real — and it is a breach of the agreement you signed with the first client.
+Using a previous client's data to demonstrate to a prospect is a disclosure of that client's information to a third party. It happens because it is convenient - the product is populated, the screens look real - and it is a breach of the agreement you signed with the first client.
 
 Build a demonstration dataset instead: plausible names, realistic volumes, the awkward cases that make the product look capable. It takes an afternoon once, it is reusable across every demonstration, and it lets you construct the scenario that shows your product at its best rather than whatever happens to be in a real account.
 
@@ -60,11 +60,11 @@ Three levels, in increasing order of protection.
 
 **A time limit.** The link stops working after a fortnight, which as the client work article in this series describes, also prevents the demonstration from being quietly adopted as a live system.
 
-Add a noindex directive regardless, so it does not appear in search results — which is how a client discovers that their unannounced product is publicly visible.
+Add a noindex directive regardless, so it does not appear in search results - which is how a client discovers that their unannounced product is publicly visible.
 
 ## Make It Obvious What It Is
 
-A visible banner on every screen: *demonstration — not for use with real data*.
+A visible banner on every screen: *demonstration - not for use with real data*.
 
 This is not decoration. It is what prevents the client's operations manager from putting the link in front of forty customers, which is the incident the Bolt client work article in this series describes in detail.
 
@@ -76,7 +76,7 @@ The demonstration should run with its own everything: its own database, its own 
 
 The reason is not elegance. A prospect clicking through a demonstration that shares a database with a live client is one confused screen away from seeing real records, and a demonstration that can send email is one form submission away from emailing somebody real.
 
-For an agency running several demonstrations, a template project with a fresh copy of the dataset per prospect is worth the hour it takes to set up. Each prospect gets their own copy, nothing is shared, and a demonstration can be wrecked without consequence — which is what you want a prospect to feel free to do.
+For an agency running several demonstrations, a template project with a fresh copy of the dataset per prospect is worth the hour it takes to set up. Each prospect gets their own copy, nothing is shared, and a demonstration can be wrecked without consequence - which is what you want a prospect to feel free to do.
 
 ## Build the Dataset Deliberately
 
@@ -98,15 +98,15 @@ Regenerate it rather than accumulating in it. A demonstration account that has b
 
 Two things happen next, and both deserve a decision made in advance rather than in the moment.
 
-**The prospect asks to keep using it.** This is a good sign and the answer is not yes. A demonstration environment has no security, no backups and no reliability, and the incidents throughout this series begin with exactly this. The answer that works: yes, and that starts the production stage — here is what that involves and what it costs.
+**The prospect asks to keep using it.** This is a good sign and the answer is not yes. A demonstration environment has no security, no backups and no reliability, and the incidents throughout this series begin with exactly this. The answer that works: yes, and that starts the production stage - here is what that involves and what it costs.
 
 **The prospect goes quiet.** The link keeps working, the data sits there, and in six months it is still there with credentials nobody has rotated. Expire demonstrations automatically and delete their data on a schedule, so that a dormant opportunity does not become a liability with your name on it.
 
 For an agency, both of these argue for treating the demonstration as a deliverable with a lifecycle rather than as an artefact left lying around. Created for a prospect, protected, labelled, expiring, and deleted when the opportunity closes either way.
 
-One further habit worth adopting: record what you showed. Which version, which dataset, which scenario. When the same prospect returns three months later saying "it did X when you showed us", you want to be able to check rather than to contradict them — and a product that changes weekly will have moved since.
+One further habit worth adopting: record what you showed. Which version, which dataset, which scenario. When the same prospect returns three months later saying "it did X when you showed us", you want to be able to check rather than to contradict them - and a product that changes weekly will have moved since.
 
-A line in a file per demonstration — date, prospect, version, dataset — takes seconds and settles that conversation in one look rather than one guess.
+A line in a file per demonstration - date, prospect, version, dataset - takes seconds and settles that conversation in one look rather than one guess.
 
 It is also useful internally: three months of those lines tells you which scenarios you actually demonstrate, which is usually a shorter list than the product's feature set and a good guide to what the marketing pages should emphasise.
 
@@ -116,7 +116,7 @@ One further use: when a prospect who went quiet returns a year later, the record
 
 For an agency or founder demonstrating regularly this is typically half a day, once: a reusable demonstration dataset of invented but realistic data, a template project cloned per prospect with its own database, credentials and storage, outbound email disabled by the absence of credentials rather than by configuration, a deployment link rather than project access, protected by a password or individual accounts with a time limit, a noindex directive, a visible banner on every screen, and a written statement of what the demonstration is sent alongside the link.
 
-LaunchStudio does the production build after the demonstration has done its work, as a white-label partner for agencies who keep the client relationship. Behind it is Manifera — eleven years, 120+ engineers, 160+ projects, from Herengracht 420 in Amsterdam.
+LaunchStudio does the production build after the demonstration has done its work, as a white-label partner for agencies who keep the client relationship. Behind it is Manifera - eleven years, 120+ engineers, 160+ projects, from Herengracht 420 in Amsterdam.
 
 [Ask us to quote the production stage](https://launchstudio.eu/en/#contact) from a demonstration you have already shown.
 
@@ -137,9 +137,9 @@ Three business days: the project made private immediately and the database crede
 **Result:** the physiotherapy practice remained a client, which Fabienne attributes entirely to telling them within a day and in full. The dental group did not proceed. Her assessment is that the demonstration dataset has made her demonstrations better as well as safer, because she can arrange the scenario rather than working with whatever a real practice happens to have.
 
 > *"I shared a project link so they could have a proper look, and what they could look at was nine hundred real patients and a codebase somebody else had paid for."*
-> — **Fabienne Schuurmans, Partner, studio in Utrecht**
+> - **Fabienne Schuurmans, Partner, studio in Utrecht**
 
-**Cost & Timeline:** €3,400 (credential rotation and access assessment, client notification and regulatory report, demonstration dataset, per-prospect template with isolated resources, protected expiring deployment links with banner and noindex, written demonstration statement) — completed in 3 business days.
+**Cost & Timeline:** €3,400 (credential rotation and access assessment, client notification and regulatory report, demonstration dataset, per-prospect template with isolated resources, protected expiring deployment links with banner and noindex, written demonstration statement) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -181,7 +181,7 @@ Nothing. Its own database, credentials and storage, and no email credentials at 
       "name": "Can I demonstrate using a real client's data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it discloses their data to a third party and breaches your agreement. Use an invented dataset you control."
+        "text": "No - it discloses their data to a third party and breaches your agreement. Use an invented dataset you control."
       }
     },
     {
@@ -205,7 +205,7 @@ Nothing. Its own database, credentials and storage, and no email credentials at 
       "name": "What should a demo environment share with production?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nothing — its own database, credentials and storage, and no email credentials so it cannot reach real people."
+        "text": "Nothing - its own database, credentials and storage, and no email credentials so it cannot reach real people."
       }
     }
   ]

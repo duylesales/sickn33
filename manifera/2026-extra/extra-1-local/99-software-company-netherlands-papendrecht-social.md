@@ -1,7 +1,7 @@
 🚨 An industry that builds ships to survive open ocean for a century doesn't accept "it mostly works" from a shipyard. Don't accept it from your software vendor either. ⚓⚙️
 
 **The Pain Points:**
-❌ **Generic Vendor Checklist:** Portfolio, references, day rate — none of it reflects your industry's actual engineering culture.
+❌ **Generic Vendor Checklist:** Portfolio, references, day rate - none of it reflects your industry's actual engineering culture.
 ❌ **No Documentation Traceability:** "It works" without the paper trail a demanding industry expects.
 ❌ **Short-Horizon Software Defaults:** Built for a typical SaaS lifespan, not the decades your equipment actually runs.
 

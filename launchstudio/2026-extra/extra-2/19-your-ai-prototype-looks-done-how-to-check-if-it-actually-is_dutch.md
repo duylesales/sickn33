@@ -57,11 +57,11 @@ Een handmatige zoekopdracht vangt duidelijke gevallen op maar is niet uitputtend
 
 Manifera's beveiligingsaudits voor betalingen worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Beschrijf wat u bouwt — we antwoorden binnen één werkdag](https://launchstudio.eu/nl/#contact).
+[Beschrijf wat u bouwt - we antwoorden binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Verder Dan Stripe-Sleutels: Een Volledige Frontend-Bundel Audit
 
-Het controleren op een gelekte geheime Stripe-sleutel (`sk_live_`) is een uitstekende eerste stap, maar dezelfde onderliggende fout — een servergeheim dat per ongeluk terechtkomt in de publieke JavaScript-code die naar elke browser wordt gestuurd — doet zich voor bij tal van andere diensten.
+Het controleren op een gelekte geheime Stripe-sleutel (`sk_live_`) is een uitstekende eerste stap, maar dezelfde onderliggende fout - een servergeheim dat per ongeluk terechtkomt in de publieke JavaScript-code die naar elke browser wordt gestuurd - doet zich voor bij tal van andere diensten.
 
 **Doorzoek uw client-bundel specifiek op deze patronen:**
 
@@ -89,9 +89,9 @@ Een ontwikkelaar die op vrijwillige basis een andere non-profit hielp om SchenkP
 **Resultaat:** LaunchStudio roteerde de blootgestelde Stripe-sleutel onmiddellijk, scheidde het gebruik van de openbare en geheime sleutel correct over de frontend- en backend-code, en auditeerde de rest van de integratie op vergelijkbare fouten. Dit sloot de blootstelling zonder de donatiestroom die non-profits al gebruikten te verstoren.
 
 > *"Donaties werden de gehele tijd met succes verwerkt, dus niets aan het gebruik van de app suggereerde ooit dat er iets mis was. Er was een vrijwilliger met een ontwikkelaarsachtergrond voor nodig die uit gewoonte rondkeek om het te vinden."*
-> — **Wouter Smeets, Oprichter, SchenkPunt (Dordrecht)**
+> - **Wouter Smeets, Oprichter, SchenkPunt (Dordrecht)**
 
-**Kosten en tijdlijn:** € 1.400 (Stripe-sleutelaudit en herstel van veilige integratie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (Stripe-sleutelaudit en herstel van veilige integratie) - voltooid in 5 werkdagen.
 
 ---
 

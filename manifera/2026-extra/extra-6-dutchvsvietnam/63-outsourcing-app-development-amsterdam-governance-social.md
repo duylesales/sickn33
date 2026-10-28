@@ -1,4 +1,4 @@
-🚨 If your offshore app vendor disappeared tomorrow — no warning, no handover — how much of your contractual, financial, and IP exposure could you actually name? ⚙️💥
+🚨 If your offshore app vendor disappeared tomorrow - no warning, no handover - how much of your contractual, financial, and IP exposure could you actually name? ⚙️💥
 
 **The Pain Points:**
 ❌ **A Two-Party Relationship, No Independent Check:** The vendor grades its own homework when something goes wrong.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Three Questions Before Signing:** Enforceable quality accountability, per-engineer IP documentation, and a governance layer with real authority to halt work.
 ✅ **Amsterdam Strategic Governance:** Contractual accountability for architecture sign-off and IP chain of custody, disputes resolved under Dutch law.
-✅ **Vietnam Execution Velocity:** Execution against Amsterdam-approved specifications — quality issues surface in weeks, not quarters.
+✅ **Vietnam Execution Velocity:** Execution against Amsterdam-approved specifications - quality issues surface in weeks, not quarters.
 
 Due diligence eighteen months later should be a formality, not a fire drill. 🛡️
 

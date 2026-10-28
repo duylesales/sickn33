@@ -62,9 +62,9 @@ They engaged Manifera's Amsterdam architects. We recognized the Dual-Codebase he
 
 ## Why Redundant Codebases Are So Expensive: The Research
 
-The Dual-Codebase problem is not a niche architectural quirk — it sits inside a much larger, well-documented cost category: technical debt and redundant engineering effort. The Consortium for Information & Software Quality (CISQ), in its 2022 *Cost of Poor Software Quality in the US* report (sponsored by Synopsys), put the total cost of poor software quality across the US economy at **$2.41 trillion** for that year alone, with accumulated technical debt — the rework cost baked into existing, suboptimal codebases — estimated at roughly **$1.52 trillion**. A Dual- or Triple-Codebase architecture is technical debt by design: every duplicated component, every out-of-sync business rule, and every platform-specific reimplementation of the same checkout flow adds directly to that rework balance, sprint after sprint, for as long as the architecture persists.
+The Dual-Codebase problem is not a niche architectural quirk - it sits inside a much larger, well-documented cost category: technical debt and redundant engineering effort. The Consortium for Information & Software Quality (CISQ), in its 2022 *Cost of Poor Software Quality in the US* report (sponsored by Synopsys), put the total cost of poor software quality across the US economy at **$2.41 trillion** for that year alone, with accumulated technical debt - the rework cost baked into existing, suboptimal codebases - estimated at roughly **$1.52 trillion**. A Dual- or Triple-Codebase architecture is technical debt by design: every duplicated component, every out-of-sync business rule, and every platform-specific reimplementation of the same checkout flow adds directly to that rework balance, sprint after sprint, for as long as the architecture persists.
 
-On the framework side, the market has already consolidated around a small number of proven cross-platform approaches rather than fragmenting further. Stack Overflow's 2024 Developer Survey found React Native and Flutter used by roughly 9% of professional developers each, making them, combined, the two dominant frameworks for teams that have deliberately chosen not to maintain fully separate native codebases. That adoption level — comparable in scale to many mainstream backend frameworks — reflects a market that has moved past the "cross-platform apps feel cheap" skepticism of the Cordova/PhoneGap era. The tooling matured; the organizations maintaining three parallel codebases for one product increasingly look like the exception rather than the norm.
+On the framework side, the market has already consolidated around a small number of proven cross-platform approaches rather than fragmenting further. Stack Overflow's 2024 Developer Survey found React Native and Flutter used by roughly 9% of professional developers each, making them, combined, the two dominant frameworks for teams that have deliberately chosen not to maintain fully separate native codebases. That adoption level - comparable in scale to many mainstream backend frameworks - reflects a market that has moved past the "cross-platform apps feel cheap" skepticism of the Cordova/PhoneGap era. The tooling matured; the organizations maintaining three parallel codebases for one product increasingly look like the exception rather than the norm.
 
 ## Development Comparison: 'Siloed Agency' vs. Unified Pod
 
@@ -82,7 +82,7 @@ The financial penalty of a Dual-Codebase is compounding. It is not just the upfr
 
 ### A Worked Illustration: Three Teams vs. One Pod
 
-To make the arithmetic concrete, consider an illustrative mid-market B2B platform that needs feature parity across Web, iOS, and Android — a common brief for logistics, fintech, and marketplace clients:
+To make the arithmetic concrete, consider an illustrative mid-market B2B platform that needs feature parity across Web, iOS, and Android - a common brief for logistics, fintech, and marketplace clients:
 
 | Cost Driver | Siloed Architecture (Web + iOS + Android teams) | Unified Pod (React Native Web) |
 | :--- | :--- | :--- |
@@ -90,9 +90,9 @@ To make the arithmetic concrete, consider an illustrative mid-market B2B platfor
 | Annual salary/rate load (illustrative, blended offshore + Amsterdam governance rate) | ~$450,000-$600,000 across three specialist tracks | ~$220,000-$280,000 for one unified track |
 | QA cycles per release | 3 separate regression suites | 1 shared regression suite, plus thin platform-specific smoke tests |
 | Time-to-parity for a new feature | Weeks to months (whichever platform team is least backlogged) | Same release, same day |
-| Annual redundancy cost avoided | — | Roughly $200,000-$300,000+ depending on team size and feature velocity |
+| Annual redundancy cost avoided | - | Roughly $200,000-$300,000+ depending on team size and feature velocity |
 
-This is illustrative math, not a quote for any specific engagement — actual savings depend on how much genuinely platform-specific logic (camera access, biometric auth, offline sync) your product requires, since that portion is never fully unifiable. But the direction is consistent with what CISQ's technical-debt research above describes at macro scale: duplicated logic is rework waiting to happen, and every day it exists is a day your team pays the "maintain it twice" tax whether a feature ships or not.
+This is illustrative math, not a quote for any specific engagement - actual savings depend on how much genuinely platform-specific logic (camera access, biometric auth, offline sync) your product requires, since that portion is never fully unifiable. But the direction is consistent with what CISQ's technical-debt research above describes at macro scale: duplicated logic is rework waiting to happen, and every day it exists is a day your team pays the "maintain it twice" tax whether a feature ships or not.
 
 ## Eradicate Codebase Redundancy Today
 

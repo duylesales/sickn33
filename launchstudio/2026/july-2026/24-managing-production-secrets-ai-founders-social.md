@@ -1,4 +1,4 @@
-🔥 Evelyn built a prototype using **Bolt** — evelyn, a startup founder, used **bolt** to build a medical transcription saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Evelyn built a prototype using **Bolt** - evelyn, a startup founder, used **bolt** to build a medical transcription saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Evelyn's application achieved production readiness: Evelyn restored complete repository security and passed HIPAA compliance scans. (€1,600 (Security Recovery Package) — production-ready and deployed in 4 business days.). 🚀
+Evelyn's application achieved production readiness: Evelyn restored complete repository security and passed HIPAA compliance scans. (€1,600 (Security Recovery Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/managing-production-secrets-ai-founders
 

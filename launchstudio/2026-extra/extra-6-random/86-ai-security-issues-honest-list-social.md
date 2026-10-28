@@ -1,10 +1,10 @@
-🔓 Iris Voorschoten built "MeldGrip," a facilities-issue reporting tool for property managers, using Lovable. It worked great for pilot users. A pre-rollout review turned up three recurring AI security issues at once — none of which had caused a problem yet. 😳
+🔓 Iris Voorschoten built "MeldGrip," a facilities-issue reporting tool for property managers, using Lovable. It worked great for pilot users. A pre-rollout review turned up three recurring AI security issues at once - none of which had caused a problem yet. 😳
 
 Nothing about normal use ever reveals these. That's exactly what makes them dangerous.
 
 ❌ The admin route showing issues across every building had no check confirming the visitor was a manager
 ❌ The storage bucket holding photos of building interiors and unit numbers was publicly readable
-❌ The SMS webhook had no signature verification — anyone who found the URL could fake "issue reported" events
+❌ The SMS webhook had no signature verification - anyone who found the URL could fake "issue reported" events
 ❌ All three sat invisible until someone actively looked for them, or exploited them
 
 ✅ Lock down the admin route with a proper role check

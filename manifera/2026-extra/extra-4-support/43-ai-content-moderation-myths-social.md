@@ -1,4 +1,4 @@
-🚨 "Off-the-Shelf AI Moderation Tools Handle Most Content Types Reliably" — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "Off-the-Shelf AI Moderation Tools Handle Most Content Types Reliably" - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "Off-the-Shelf AI Moderation Tools Handle Most Content Types Reliably":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

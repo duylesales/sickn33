@@ -22,23 +22,23 @@ target_persona: "CTO"
 
 Uptime is the metric that everyone agrees matters and almost nobody measures rigorously until the week it collapses in front of the customers who matter most.
 
-**The Pain:** A CTO at a beach-resort booking and hospitality-management platform based in Veere — the Walcheren peninsula municipality anchored by the Domburg beach resort, in an economy built almost entirely around seasonal tourism — has watched platform uptime quietly degrade every July and August for three consecutive years, as visitor-driven booking volume climbs far past what the in-house engineering team, sized for the off-season, can comfortably support. Each summer produces a handful of degraded-performance incidents that never quite become full outages but reliably slow booking conversion during the platform's highest-revenue weeks.
+**The Pain:** A CTO at a beach-resort booking and hospitality-management platform based in Veere - the Walcheren peninsula municipality anchored by the Domburg beach resort, in an economy built almost entirely around seasonal tourism - has watched platform uptime quietly degrade every July and August for three consecutive years, as visitor-driven booking volume climbs far past what the in-house engineering team, sized for the off-season, can comfortably support. Each summer produces a handful of degraded-performance incidents that never quite become full outages but reliably slow booking conversion during the platform's highest-revenue weeks.
 
-**The Agitation:** The pattern has become predictable enough that the sales team now quietly warns hotel and resort partners each June to expect "some slowness" during peak weeks — an admission that has started costing the platform credibility with exactly the partners it depends on for renewal. Last August, a database contention issue during a single high-traffic weekend degraded response times enough that a major resort partner's booking conversion dropped by an estimated 18% for three days, a decline the partner noticed independently and raised directly with the CTO before the platform's own monitoring had even flagged the severity of the problem.
+**The Agitation:** The pattern has become predictable enough that the sales team now quietly warns hotel and resort partners each June to expect "some slowness" during peak weeks - an admission that has started costing the platform credibility with exactly the partners it depends on for renewal. Last August, a database contention issue during a single high-traffic weekend degraded response times enough that a major resort partner's booking conversion dropped by an estimated 18% for three days, a decline the partner noticed independently and raised directly with the CTO before the platform's own monitoring had even flagged the severity of the problem.
 
 ## The Mandate: Making Uptime a Measured, Owned, and Defended Metric
 
 A dedicated engineering team improves uptime only when reliability is treated as an explicitly owned engineering discipline with its own targets and accountability, not as a byproduct of however much capacity happens to be left over after feature work.
 
-The first requirement is a defined and monitored Service Level Objective for the specific seasonal load pattern the platform actually experiences, not a generic industry-standard uptime figure copied from an unrelated context. A booking platform that sees ten times its baseline traffic in July needs an SLO validated against that real seasonal multiple, with the monitoring infrastructure to detect degradation — not just full outages — before a partner has to report it first.
+The first requirement is a defined and monitored Service Level Objective for the specific seasonal load pattern the platform actually experiences, not a generic industry-standard uptime figure copied from an unrelated context. A booking platform that sees ten times its baseline traffic in July needs an SLO validated against that real seasonal multiple, with the monitoring infrastructure to detect degradation - not just full outages - before a partner has to report it first.
 
 Second, the team needs a standing incident-review discipline: every degraded-performance event, even one that never became a full outage, gets a documented root-cause analysis and a tracked remediation item, so the same contention issue does not recur three summers in a row. A pattern of "some slowness in peak weeks" being treated as an accepted cost of doing business, rather than a solvable engineering problem, is itself the root cause worth fixing.
 
 Third, capacity and performance testing has to run months ahead of season against realistic projected peak load, informed by actual historical traffic data and known partner-side promotional calendars, so that a database contention limit or a connection-pool ceiling is caught in a March load test rather than discovered live during an August weekend.
 
-Fourth, the dedicated team's on-call and monitoring posture needs to scale with the season deliberately — heightened monitoring granularity, faster escalation thresholds, and more on-call coverage during the exact months when a ten-minute degraded-performance window costs meaningfully more in lost bookings than the same window would in January.
+Fourth, the dedicated team's on-call and monitoring posture needs to scale with the season deliberately - heightened monitoring granularity, faster escalation thresholds, and more on-call coverage during the exact months when a ten-minute degraded-performance window costs meaningfully more in lost bookings than the same window would in January.
 
-Fifth, uptime and performance data should be treated as something worth sharing proactively with key partners rather than only defending reactively when a partner raises a complaint — a CTO who can show a hotel partner a genuine, improving uptime trend line each season is building the kind of trust that renewal conversations depend on, rather than hoping the topic doesn't come up.
+Fifth, uptime and performance data should be treated as something worth sharing proactively with key partners rather than only defending reactively when a partner raises a complaint - a CTO who can show a hotel partner a genuine, improving uptime trend line each season is building the kind of trust that renewal conversations depend on, rather than hoping the topic doesn't come up.
 
 Sixth, the SLO itself should be revisited and tightened year over year rather than treated as a fixed target set once and forgotten. A platform that grows its partner base or booking volume between seasons faces a genuinely higher peak load each year, and an SLO calibrated to two summers ago will quietly understate the real risk unless it is recalibrated against the current season's actual growth trajectory before peak traffic arrives.
 
@@ -64,7 +64,7 @@ Sixth, the SLO itself should be revisited and tightened year over year rather th
 3. **Weeks 5-6:** Remediate any capacity ceilings identified in testing, and establish the standing incident-review discipline for the season ahead.
 4. **Weeks 7-8 and through peak season:** Scale on-call coverage and monitoring granularity for peak months, and track uptime performance data to share proactively with key partners.
 
-Veere sits on the Walcheren peninsula and is anchored by the Domburg beach resort, in a Zeeland economy where tourism is not one sector among several but close to the entire basis of the local business calendar, and the hospitality, booking, and resort-management platforms headquartered here inherit a seasonal traffic multiple as extreme as any coastal tourism destination in the Netherlands — making uptime during a handful of peak summer weeks disproportionately consequential to the business's entire year. A single bad weekend in late July can weigh more heavily on annual revenue and partner sentiment than an entire quiet month in November, which is precisely why treating uptime as a year-round average obscures the metric that actually matters to the business.
+Veere sits on the Walcheren peninsula and is anchored by the Domburg beach resort, in a Zeeland economy where tourism is not one sector among several but close to the entire basis of the local business calendar, and the hospitality, booking, and resort-management platforms headquartered here inherit a seasonal traffic multiple as extreme as any coastal tourism destination in the Netherlands - making uptime during a handful of peak summer weeks disproportionately consequential to the business's entire year. A single bad weekend in late July can weigh more heavily on annual revenue and partner sentiment than an entire quiet month in November, which is precisely why treating uptime as a year-round average obscures the metric that actually matters to the business.
 
 ## The Governance Split
 
@@ -80,8 +80,8 @@ Côte Réservations SAS, a beach-resort and villa booking platform based in Nice
 
 Manifera defined a seasonal SLO validated against Côte Réservations' actual historical July-August traffic multiple, and the Ho Chi Minh City pod ran capacity testing in April that caught a database contention issue nearly identical to the one that had caused the previous summer's worst incident. The issue was remediated two months before peak season, and a standing incident-review process ensured any new degraded-performance event during the season received documented root-cause analysis rather than being absorbed as "expected slowness."
 
-> *"We used to warn our hotel partners in June to expect some slowness in July. This past season, for the first time in four years, we didn't have to send that email — and we could show them the uptime numbers proving why."*
-> — **CTO, Côte Réservations SAS, France**
+> *"We used to warn our hotel partners in June to expect some slowness in July. This past season, for the first time in four years, we didn't have to send that email - and we could show them the uptime numbers proving why."*
+> - **CTO, Côte Réservations SAS, France**
 
 ## Ad Hoc Seasonal Support vs. Manifera Dedicated Team
 
@@ -119,7 +119,7 @@ Months ahead, ideally informed by actual historical traffic data and any known p
 
 ### (Scenario: CTO wanting to rebuild partner trust after a reliability issue) How can we rebuild partner trust after a visible reliability problem?
 
-Share real, improving uptime data proactively with key partners each season rather than only addressing reliability defensively when a complaint arrives — a demonstrable trend line does more for trust than a reactive apology, and it also gives the sales team something concrete to say heading into renewal season instead of a vague reassurance.
+Share real, improving uptime data proactively with key partners each season rather than only addressing reliability defensively when a complaint arrives - a demonstrable trend line does more for trust than a reactive apology, and it also gives the sales team something concrete to say heading into renewal season instead of a vague reassurance.
 
 <script type="application/ld+json">
 {

@@ -5,7 +5,7 @@ Vertrouwen is geen toegangsmodel. Op "Invite" klikken en blind de allerhoogste r
 ❌ Een Supabase `service_role` key die in Cursor-chats en Discord-threads is geplakt
 ❌ Een voormalige ontwerper die nog Write-rechten heeft, plus een onverklaarbare deploy key
 ❌ Een persoonlijke repository zonder auditlogs en zonder centrale offboarding
-❌ Een registrar-wachtwoord gedeeld via chat — de sleutel waarmee uw complete identiteit te kapen is
+❌ Een registrar-wachtwoord gedeeld via chat - de sleutel waarmee uw complete identiteit te kapen is
 
 ✅ Verleen uitvoeringskracht, geen eigenaarschap: Write op GitHub, Developer op Supabase, nooit Admin
 ✅ Verhuis uitbesteed werk vooraf naar een eigen GitHub- en Supabase-organisatie
@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: alle drie de beveiligingslekken gedicht vóór de start, gebouwd op strikt afgebakende rollen, en een definitieve offboarding in slechts elf minuten. 🚀
 
-👉 Spar met een engineer die dagelijks AI-code doorlicht — leg uw repository en rechtenstructuur aan ons voor: https://launchstudio.eu/nl/blog/giving-repo-and-cloud-access-without-handing-over-everything
+👉 Spar met een engineer die dagelijks AI-code doorlicht - leg uw repository en rechtenstructuur aan ons voor: https://launchstudio.eu/nl/blog/giving-repo-and-cloud-access-without-handing-over-everything
 
 #IndieHacker #SupabaseSecurity #SoftwareBeveiliging #DevSecOps #LaunchStudio #Manifera

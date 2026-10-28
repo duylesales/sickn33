@@ -35,27 +35,27 @@ Ask a founder why they've delayed getting their vibe-coded prototype production-
 
 ## Where This Fear Comes From
 
-Traditional agencies, historically, often did default toward rebuilding client-provided code from scratch — sometimes for legitimate technical reasons, sometimes because rebuilding is more billable and more comfortable for a team unfamiliar with someone else's codebase and unfamiliar specifically with AI-generated patterns. Founders who've encountered this pattern, or heard about it from other founders, reasonably generalize it to any conversation about "getting production-ready," even though the actual work involved in hardening an AI-generated prototype is structurally different from what motivated that traditional rebuild-by-default pattern.
+Traditional agencies, historically, often did default toward rebuilding client-provided code from scratch - sometimes for legitimate technical reasons, sometimes because rebuilding is more billable and more comfortable for a team unfamiliar with someone else's codebase and unfamiliar specifically with AI-generated patterns. Founders who've encountered this pattern, or heard about it from other founders, reasonably generalize it to any conversation about "getting production-ready," even though the actual work involved in hardening an AI-generated prototype is structurally different from what motivated that traditional rebuild-by-default pattern.
 
 ## What Actually Changes, Precisely
 
-Every gap covered throughout this series — hardcoded secrets, frontend-only authentication, missing error handling, absent testing, no observability — is additive or corrective at a specific, narrow point, not a wholesale replacement of the application. Moving a secret from hardcoded text to an environment variable doesn't touch your application logic. Adding server-side authorization checks doesn't change your frontend. Adding structured error handling wraps existing calls rather than replacing the calls themselves. None of these changes require regenerating or rewriting the parts of your product that define what it actually does and how it looks.
+Every gap covered throughout this series - hardcoded secrets, frontend-only authentication, missing error handling, absent testing, no observability - is additive or corrective at a specific, narrow point, not a wholesale replacement of the application. Moving a secret from hardcoded text to an environment variable doesn't touch your application logic. Adding server-side authorization checks doesn't change your frontend. Adding structured error handling wraps existing calls rather than replacing the calls themselves. None of these changes require regenerating or rewriting the parts of your product that define what it actually does and how it looks.
 
 ## What Doesn't Change
 
-Your frontend — the interface, the interactions, the visual design you refined through iteration — stays exactly as you built it. Your core application logic — the actual business rules, the AI prompts and logic that make your product do what it does — stays exactly as you built it. What changes is specifically the infrastructure layer sitting around and underneath that logic, the part invisible to a user clicking through your app normally, which is precisely why production-readiness work is often surprising to founders in how little visibly changes once it's complete.
+Your frontend - the interface, the interactions, the visual design you refined through iteration - stays exactly as you built it. Your core application logic - the actual business rules, the AI prompts and logic that make your product do what it does - stays exactly as you built it. What changes is specifically the infrastructure layer sitting around and underneath that logic, the part invisible to a user clicking through your app normally, which is precisely why production-readiness work is often surprising to founders in how little visibly changes once it's complete.
 
 ## The Specific Cases Where Something Closer to Rebuilding Actually Is Warranted
 
-This isn't an absolute claim that rebuilding is never appropriate. Genuinely poor architectural decisions — a data model that fundamentally can't support your product's actual requirements, not just needs hardening around the edges — occasionally do warrant more substantial restructuring. A concrete example: a prototype built around a data model that stores each customer's data as a single flat record with no way to represent multiple users belonging to the same account genuinely can't be patched into supporting team accounts later without restructuring how that data is organized, since the limitation is structural, not a missing feature bolted onto an otherwise sound foundation. But this is meaningfully rarer than the fear suggests, and a proper audit, the kind covered throughout this series, distinguishes clearly between "needs hardening" and "needs restructuring" rather than defaulting to the more dramatic, more expensive assumption without actually examining the specific codebase first.
+This isn't an absolute claim that rebuilding is never appropriate. Genuinely poor architectural decisions - a data model that fundamentally can't support your product's actual requirements, not just needs hardening around the edges - occasionally do warrant more substantial restructuring. A concrete example: a prototype built around a data model that stores each customer's data as a single flat record with no way to represent multiple users belonging to the same account genuinely can't be patched into supporting team accounts later without restructuring how that data is organized, since the limitation is structural, not a missing feature bolted onto an otherwise sound foundation. But this is meaningfully rarer than the fear suggests, and a proper audit, the kind covered throughout this series, distinguishes clearly between "needs hardening" and "needs restructuring" rather than defaulting to the more dramatic, more expensive assumption without actually examining the specific codebase first.
 
 ## Why an Audit-First Approach Specifically Addresses This Fear
 
-The reason a scoped audit, rather than a generic proposal, is the right starting point isn't just about accurate pricing — it's specifically designed to answer the rebuild-or-harden question concretely, for your specific codebase, rather than leaving a founder to guess or assume based on secondhand horror stories about other founders' experiences with other providers.
+The reason a scoped audit, rather than a generic proposal, is the right starting point isn't just about accurate pricing - it's specifically designed to answer the rebuild-or-harden question concretely, for your specific codebase, rather than leaving a founder to guess or assume based on secondhand horror stories about other founders' experiences with other providers.
 
 ## What This Means for How You Should Evaluate Any Production-Readiness Proposal
 
-A proposal that immediately jumps to "let's rebuild this properly" without first auditing your specific codebase is worth being skeptical of, not because rebuilding is never the right call, but because the correct sequence is audit first, recommendation second — a provider proposing the more dramatic, more expensive path before actually examining what you've built hasn't done the work needed to justify that recommendation yet.
+A proposal that immediately jumps to "let's rebuild this properly" without first auditing your specific codebase is worth being skeptical of, not because rebuilding is never the right call, but because the correct sequence is audit first, recommendation second - a provider proposing the more dramatic, more expensive path before actually examining what you've built hasn't done the work needed to justify that recommendation yet.
 
 ## What a Typical Hardening Engagement's Change Log Actually Looks Like
 
@@ -68,13 +68,13 @@ Abstract reassurance that "nothing gets rebuilt" is less convincing than seeing 
 - A handful of new database indexes or a backup configuration addition, neither of which touches the schema's actual shape.
 - A new CI configuration file and a folder of test scripts, entirely additive since nothing like it existed before.
 
-**What the diff essentially never contains,** in a genuinely hardening-scoped engagement: changes to your component tree, your styling, your core prompt logic, or the actual sequence of screens a user moves through. A founder who reviews the actual pull request from a hardening engagement, rather than just trusting a description of it, can verify this directly — the changed files cluster almost entirely in configuration, middleware, and a new tests folder, while the files defining what your product looks like and does remain untouched.
+**What the diff essentially never contains,** in a genuinely hardening-scoped engagement: changes to your component tree, your styling, your core prompt logic, or the actual sequence of screens a user moves through. A founder who reviews the actual pull request from a hardening engagement, rather than just trusting a description of it, can verify this directly - the changed files cluster almost entirely in configuration, middleware, and a new tests folder, while the files defining what your product looks like and does remain untouched.
 
 This is worth asking for explicitly: a provider willing to show you the actual diff, not just describe the work in general terms, gives you something concretely checkable rather than another verbal reassurance to take on faith.
 
 [LaunchStudio](https://launchstudio.eu/en/) starts every engagement with exactly this kind of scoped audit, hardening what exists rather than defaulting to a rebuild, and being transparent about the rare cases where restructuring genuinely is warranted, backed by Manifera's engineering discipline across 160+ delivered projects of hardening, not just building from scratch.
 
-[Find out what your specific prototype actually needs before assuming the worst](https://launchstudio.eu/en/#contact) — the answer is usually smaller and less disruptive than the fear suggests.
+[Find out what your specific prototype actually needs before assuming the worst](https://launchstudio.eu/en/#contact) - the answer is usually smaller and less disruptive than the fear suggests.
 
 ## Real example
 
@@ -84,12 +84,12 @@ Judith, a former veterinary assistant turned founder in Assen, built DierenDossi
 
 When Judith finally reached out to LaunchStudio, she led with this specific fear directly, asking upfront whether a rebuild was likely before agreeing to any audit at all. The team explained the audit-first approach specifically and proceeded on that basis, examining DierenDossier's actual codebase rather than making any assumption in either direction beforehand.
 
-**Result:** The audit found a genuinely well-structured Bolt-generated codebase requiring targeted hardening — server-side authentication, error handling for the veterinary record database connection, and basic testing coverage — with zero changes to DierenDossier's interface or core record-keeping logic, directly contradicting the rebuild scenario Judith had spent three months anxiously anticipating based on her friend's unrelated experience.
+**Result:** The audit found a genuinely well-structured Bolt-generated codebase requiring targeted hardening - server-side authentication, error handling for the veterinary record database connection, and basic testing coverage - with zero changes to DierenDossier's interface or core record-keeping logic, directly contradicting the rebuild scenario Judith had spent three months anxiously anticipating based on her friend's unrelated experience.
 
 > *"I'd basically decided a rebuild quote was inevitable before I even asked, because that's what happened to my friend. Getting an actual audit instead of an assumption in either direction was the thing that finally got me to move forward, three months later than I probably should have waited."*
-> — **Judith Kramer, Founder, DierenDossier (Assen)**
+> - **Judith Kramer, Founder, DierenDossier (Assen)**
 
-**Cost & Timeline:** €2,050 (Launch Ready Package, targeted hardening) — live in 9 business days.
+**Cost & Timeline:** €2,050 (Launch Ready Package, targeted hardening) - live in 9 business days.
 
 ---
 
@@ -97,15 +97,15 @@ When Judith finally reached out to LaunchStudio, she led with this specific fear
 
 ### If a provider proposes a rebuild after examining my specific codebase, not before, is that a legitimate recommendation?
 
-Yes — a rebuild recommendation that follows an actual audit of your specific code, rather than a generic assumption made before looking, can be legitimate in genuinely warranted cases; the concern is specifically with proposals that jump to rebuilding without first examining what you've actually built.
+Yes - a rebuild recommendation that follows an actual audit of your specific code, rather than a generic assumption made before looking, can be legitimate in genuinely warranted cases; the concern is specifically with proposals that jump to rebuilding without first examining what you've actually built.
 
 ### How can I tell, before committing to any engagement, whether a provider defaults toward rebuilds or toward hardening what exists?
 
-Asking directly about their audit process and what percentage of their engagements result in hardening versus rebuilding is a reasonable, direct question — a provider with genuine experience specifically with AI-generated codebases should have a clear, non-evasive answer, similar to the diagnostic approach covered elsewhere in this series for evaluating any technical partner.
+Asking directly about their audit process and what percentage of their engagements result in hardening versus rebuilding is a reasonable, direct question - a provider with genuine experience specifically with AI-generated codebases should have a clear, non-evasive answer, similar to the diagnostic approach covered elsewhere in this series for evaluating any technical partner.
 
 ### Does this guidance apply equally across Lovable, Bolt, Cursor, and v0-generated prototypes?
 
-The general principle applies broadly, though the specific starting point differs — as covered elsewhere in this series, a v0-based prototype genuinely needs an entire backend built (not "hardened," since it doesn't exist yet), which is different from Judith's case, but still doesn't require rebuilding the interface work already done.
+The general principle applies broadly, though the specific starting point differs - as covered elsewhere in this series, a v0-based prototype genuinely needs an entire backend built (not "hardened," since it doesn't exist yet), which is different from Judith's case, but still doesn't require rebuilding the interface work already done.
 
 ### Is there a way to get a rough sense of whether my prototype needs hardening or restructuring before committing to a paid audit?
 
@@ -113,7 +113,7 @@ A quick initial conversation describing your prototype's origin, what it does, a
 
 ### What specifically makes a codebase warrant restructuring rather than hardening, in the rare cases where that's genuinely the right call?
 
-Fundamental data model limitations that can't support the product's actual core requirements — not edge cases or missing security layers, but the underlying structure itself being incompatible with what the product needs to do — is the primary genuine trigger, and it's identifiable specifically through the audit process, not assumed in advance.
+Fundamental data model limitations that can't support the product's actual core requirements - not edge cases or missing security layers, but the underlying structure itself being incompatible with what the product needs to do - is the primary genuine trigger, and it's identifiable specifically through the audit process, not assumed in advance.
 
 <script type="application/ld+json">
 {
@@ -141,7 +141,7 @@ Fundamental data model limitations that can't support the product's actual core 
       "name": "Does this guidance apply equally across Lovable, Bolt, Cursor, and v0-generated prototypes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The general principle applies broadly, though the starting point differs — a v0-based prototype needs a backend built rather than hardened."
+        "text": "The general principle applies broadly, though the starting point differs - a v0-based prototype needs a backend built rather than hardened."
       }
     },
     {

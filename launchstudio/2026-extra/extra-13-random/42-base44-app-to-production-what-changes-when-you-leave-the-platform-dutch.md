@@ -29,21 +29,21 @@ Dit artikel legt uit wat er verandert, wat je vooraf moet controleren en wanneer
 
 Bij een alles-in-één platform levert het ecosysteem doorgaans de complete stack:
 
-- **De frontend** — automatisch gegenereerde interfacecode.
-- **De backendlogica** — serverfuncties, validaties en bedrijfsregels.
-- **De database** — entiteiten, tabellen en datarecords die door het platform worden beheerd.
-- **Authenticatie** — gebruikersregistratie, inlogsessies en wachtwoordbeheer.
-- **Integraties** — e-mailverzending, bestandsopslag, AI-modellen en soms eenvoudige betaalmodules.
-- **Hosting** — de gehele applicatie draait op de gesloten infrastructuur van het platform.
+- **De frontend** - automatisch gegenereerde interfacecode.
+- **De backendlogica** - serverfuncties, validaties en bedrijfsregels.
+- **De database** - entiteiten, tabellen en datarecords die door het platform worden beheerd.
+- **Authenticatie** - gebruikersregistratie, inlogsessies en wachtwoordbeheer.
+- **Integraties** - e-mailverzending, bestandsopslag, AI-modellen en soms eenvoudige betaalmodules.
+- **Hosting** - de gehele applicatie draait op de gesloten infrastructuur van het platform.
 
 De exportmogelijkheden voor programmacode verschillen sterk per platform en licentievorm, en wijzigen regelmatig. Zelfs wanneer je de frontendcode probleemloos kunt exporteren, maken die interfaces onder de motorkap aanroepen naar backend-endpoints die eigendom zijn van het platform en die buiten dat platform niet zomaar reageren.
 
 ## Waarom Vertrekken Hier een Grotere Stap Is Dan bij Andere Tools
 
-Bij ontwikkeltools zoals Lovable of Cursor staan de database en authenticatie doorgaans al in een dienst die op jouw eigen naam staat — meestal Supabase. Het productierijp maken behelst dan vooral het versterken van wat er al staat. Bij een all-in-one builder betekent migreren dat je alle ingebouwde platformdiensten moet vervangen door onafhankelijke componenten waarover jij zélf de volledige zeggenschap hebt:
+Bij ontwikkeltools zoals Lovable of Cursor staan de database en authenticatie doorgaans al in een dienst die op jouw eigen naam staat - meestal Supabase. Het productierijp maken behelst dan vooral het versterken van wat er al staat. Bij een all-in-one builder betekent migreren dat je alle ingebouwde platformdiensten moet vervangen door onafhankelijke componenten waarover jij zélf de volledige zeggenschap hebt:
 
 - De interne database van het platform wordt vervangen door bijvoorbeeld een eigen PostgreSQL-database via Supabase.
-- De ingebouwde inlogmodule wordt vervangen door Supabase Auth, Auth0 of een soortgelijke provider — waarbij bestaande gebruikers idealiter moeten overgaan zonder massaal hun wachtwoord opnieuw te hoeven instellen.
+- De ingebouwde inlogmodule wordt vervangen door Supabase Auth, Auth0 of een soortgelijke provider - waarbij bestaande gebruikers idealiter moeten overgaan zonder massaal hun wachtwoord opnieuw te hoeven instellen.
 - Ingebouwde platformkoppelingen (e-mail, mediaopslag, LLM-aanroepen) worden omgezet naar directe API-koppelingen met gespecialiseerde dienstverleners.
 - De hosting verhuist naar moderne serverless platforms zoals Vercel of Netlify.
 
@@ -85,7 +85,7 @@ Een beheerste en veilige migratie volgt doorgaans deze vaste volgorde:
 2. Herbouw het datamodel en de bedrijfslogica, direct voorzien van strikte autorisatieregels (zoals Row-Level Security).
 3. Koppel de geëxporteerde frontend aan de nieuwe backend en test de functionaliteiten grondig op een staging-omgeving.
 4. Exporteer en migreer alle data en bestanden; verifieer nauwgezet alle recordaantallen en relationele integriteit.
-5. Migreer de gebruikersaccounts — met behoud van wachtwoordhashes indien ondersteund, anders via een geautomatiseerde en soepele "bevestig je account"-e-mailflow.
+5. Migreer de gebruikersaccounts - met behoud van wachtwoordhashes indien ondersteund, anders via een geautomatiseerde en soepele "bevestig je account"-e-mailflow.
 6. Voer de definitieve overstap (cut-over) uit tijdens een rustig tijdstip, waarbij het oude platform tijdelijk in alleen-lezen modus blijft staan als noodplan.
 7. Archiveer de oorspronkelijke platformexport als veilige historische back-up.
 
@@ -96,7 +96,7 @@ De migratie is tevens het uitgelezen moment om hiaten op te lossen die no-code b
 Neem geen overhaaste beslissingen op basis van aannames, maar voer eerst een gerichte proefexport uit:
 
 1. **Exporteer de frontendcode** (indien je abonnement dit toelaat) en probeer deze lokaal te compileren en te draaien.
-2. **Exporteer een representatieve steekproef van data** — enkele tabellen met onderlinge relaties — en controleer de consistentie: blijven unieke ID's behouden, kloppen de foreign keys en zijn datums bruikbaar geformatteerd?
+2. **Exporteer een representatieve steekproef van data** - enkele tabellen met onderlinge relaties - en controleer de consistentie: blijven unieke ID's behouden, kloppen de foreign keys en zijn datums bruikbaar geformatteerd?
 3. **Download een set geüploade bestanden** en controleer of de bestandsreferenties intact zijn.
 4. **Breng alle backendlogica in kaart**: triggers, workflows, geplande taken en externe integraties die in het platform zijn ingesteld.
 5. **Inspecteer de gebruikersgegevens**: worden wachtwoordhashes meegeleverd, of betreft het puur een lijst met e-mailadressen?
@@ -133,7 +133,7 @@ Een beproefd cut-over scenario: blokkeer nieuwe invoer op het oude platform op e
 
 ## Bedrijfslogica Herbouwen Met Geautomatiseerde Tests
 
-Logica die voorheen in de visuele workflows van de builder zat — zoals statusovergangen van bestellingen, geautomatiseerde e-mailnotificaties of prijsberekeningen — moet in schone code worden herbouwd en afgedekt met geautomatiseerde tests. Vergelijk tijdens een overgangsperiode waar mogelijk de uitkomsten van het oude en het nieuwe systeem op exact dezelfde invoerdata. Dit levert het onomstotelijke bewijs dat de nieuwe backend exact presteert zoals verwacht, en aanzienlijk sneller en betrouwbaarder reageert waar dat telt.
+Logica die voorheen in de visuele workflows van de builder zat - zoals statusovergangen van bestellingen, geautomatiseerde e-mailnotificaties of prijsberekeningen - moet in schone code worden herbouwd en afgedekt met geautomatiseerde tests. Vergelijk tijdens een overgangsperiode waar mogelijk de uitkomsten van het oude en het nieuwe systeem op exact dezelfde invoerdata. Dit levert het onomstotelijke bewijs dat de nieuwe backend exact presteert zoals verwacht, en aanzienlijk sneller en betrouwbaarder reageert waar dat telt.
 
 ## Kostenvergelijking op Termijn: Blijven versus Verhuizen
 
@@ -149,11 +149,11 @@ Een migratie is het ideale moment om de datavervuiling op te ruimen die tijdens 
 
 ## Beveiligingsvoordelen van een Onafhankelijke Stack
 
-Het bezitten van je eigen softwarestack stelt je in staat om beveiligingsmaatregelen door te voeren die no-code builders technisch simpelweg niet kunnen faciliteren: fijnmazige Row-Level Security per klantorganisatie, configureerbare rate limiting tegen abuse, uitgebreide audit-logging voor compliance, enterprise security-headers, strikte hosting binnen de EU voor elk individueel component en een eigen, onafhankelijk back-up- en herstelprotocol. Voor B2B-klanten met uitgebreide security-vragenlijsten vormen deze waarborgen — en jouw vermogen om ze gedetailleerd te documenteren — vaak de doorslaggevende reden om voor jouw platform te kiezen.
+Het bezitten van je eigen softwarestack stelt je in staat om beveiligingsmaatregelen door te voeren die no-code builders technisch simpelweg niet kunnen faciliteren: fijnmazige Row-Level Security per klantorganisatie, configureerbare rate limiting tegen abuse, uitgebreide audit-logging voor compliance, enterprise security-headers, strikte hosting binnen de EU voor elk individueel component en een eigen, onafhankelijk back-up- en herstelprotocol. Voor B2B-klanten met uitgebreide security-vragenlijsten vormen deze waarborgen - en jouw vermogen om ze gedetailleerd te documenteren - vaak de doorslaggevende reden om voor jouw platform te kiezen.
 
 ## De Migratie Helder Communiceren naar Zakelijke Klanten
 
-Wanneer zakelijke klanten afhankelijk zijn van jouw software, betrek hen dan tijdig bij het proces. Leg helder uit waarom de overstap plaatsvindt (hogere betrouwbaarheid, superieure prestaties, betere AVG-waarborgen), wat de tijdlijn is, wat er voor hun medewerkers verandert en wat vertrouwd blijft. Bied hen desgewenst een korte testperiode op de staging-omgeving aan en wijs een vast aanspreekpunt aan voor eventuele vragen. Zakelijke opdrachtgevers verwelkomen moderniseringen die de databeveiliging en controle verbeteren van harte — mits ze er niet door worden overvallen.
+Wanneer zakelijke klanten afhankelijk zijn van jouw software, betrek hen dan tijdig bij het proces. Leg helder uit waarom de overstap plaatsvindt (hogere betrouwbaarheid, superieure prestaties, betere AVG-waarborgen), wat de tijdlijn is, wat er voor hun medewerkers verandert en wat vertrouwd blijft. Bied hen desgewenst een korte testperiode op de staging-omgeving aan en wijs een vast aanspreekpunt aan voor eventuele vragen. Zakelijke opdrachtgevers verwelkomen moderniseringen die de databeveiliging en controle verbeteren van harte - mits ze er niet door worden overvallen.
 
 ## Signalen Dat de Migratie Geslaagd Is
 
@@ -177,16 +177,16 @@ Wil je een betrouwbare inschatting van de benodigde investering? [Gebruik onze o
 
 Dennis Kok runt een succesvol keukenmontagebedrijf in Purmerend en bouwde Keukenplanner in Base44: een applicatie waarin consumenten hun keukenopstelling intekenen, maatvoeringen en foto's uploaden, een inmeetafspraak inplannen en de voortgang van de montage volgen. De monteurs zien hun dagplanning en vinken stappen af op hun smartphone. Het systeem werkte uitstekend voor Dennis' eigen bedrijf, waarna drie bevriende montagebedrijven in Noord-Holland de software onder hun eigen handelsnaam gingen gebruiken.
 
-De snelle groei bracht echter knelpunten aan het licht die het platform niet kon oplossen. Een grote klant van een van de montagebedrijven — een regionale woningcorporatie — eiste schriftelijk uitsluitsel over waar de persoonsgegevens fysiek stonden opgeslagen en welke subverwerkers toegang hadden. Dennis wilde bovendien aanbetalingen via iDEAL incasseren via Mollie, wat binnen de builder alleen via omslachtige omwegen kon. De maandelijkse softwarefacturen van het platform stegen fors bij elk aangesloten bedrijf. Bovendien ontbrak een staging-omgeving: elke wijziging in de editor ging direct live voor alle vier de aangesloten montagebedrijven tegelijk.
+De snelle groei bracht echter knelpunten aan het licht die het platform niet kon oplossen. Een grote klant van een van de montagebedrijven - een regionale woningcorporatie - eiste schriftelijk uitsluitsel over waar de persoonsgegevens fysiek stonden opgeslagen en welke subverwerkers toegang hadden. Dennis wilde bovendien aanbetalingen via iDEAL incasseren via Mollie, wat binnen de builder alleen via omslachtige omwegen kon. De maandelijkse softwarefacturen van het platform stegen fors bij elk aangesloten bedrijf. Bovendien ontbrak een staging-omgeving: elke wijziging in de editor ging direct live voor alle vier de aangesloten montagebedrijven tegelijk.
 
 De audit van LaunchStudio toonde aan dat de frontend en data netjes konden worden geëxporteerd en dat gebruikersaccounts via een soepele e-mailbevestigingsflow konden worden overgezet. In een traject van dertien werkdagen richtte het engineeringteam een EU-gehoste Supabase-backend in met Row-Level Security die de vier bedrijven strikt van elkaar isoleerde, werd de planningslogica herbouwd in betrouwbare code, werd Mollie geïntegreerd met geverifieerde webhooks, werd de geëxporteerde frontend opnieuw gekoppeld, werden 2.300 klantendossiers en 9.000 montagefoto's gecontroleerd gemigreerd, werden gebruikers geactiveerd via een gerichte e-mailcampagne en werden monitoring, staging en geautomatiseerde back-ups ingericht. De live overstap vond plaats op een zondagavond, waarbij de oude applicatie nog een maand als alleen-lezen archief operationeel bleef.
 
 **Het resultaat:** Binnen twee weken had 94% van alle actieve gebruikers zijn account succesvol geactiveerd. De woningcorporatie keurde het verwerkersoverzicht goed, wat resulteerde in een meerjarig raamcontract dat meer waard was dan Dennis' totale software-omzet van het voorgaande jaar. De maandelijkse exploitatiekosten daalden met ruim 40% ten opzichte van de geprojecteerde kosten op het oorspronkelijke platform.
 
 > *"De app-builder hielp me fantastisch van idee naar vier montagebedrijven. Maar hij kon me niet binnenloodsen bij een woningcorporatie. Daarvoor moest ik zélf de baas zijn over mijn techniek en data."*
-> — **Dennis Kok, Oprichter, Keukenplanner (Purmerend)**
+> - **Dennis Kok, Oprichter, Keukenplanner (Purmerend)**
 
-**Kosten & Tijdlijn:** € 3.700 (Launch & Grow-pakket: backendmigratie, data- en gebruikersmigratie, betalingen en productie-inrichting) — gerealiseerd binnen 13 werkdagen, plus € 49 per maand voor managed hosting.
+**Kosten & Tijdlijn:** € 3.700 (Launch & Grow-pakket: backendmigratie, data- en gebruikersmigratie, betalingen en productie-inrichting) - gerealiseerd binnen 13 werkdagen, plus € 49 per maand voor managed hosting.
 
 ## Veelgestelde Vragen
 
@@ -200,7 +200,7 @@ Dat hangt af van de mogelijkheid om wachtwoordhashes te exporteren en te importe
 Vrijwel altijd wel. De geëxporteerde frontendcode kan behouden blijven en opnieuw worden gekoppeld aan de nieuwe, onafhankelijke backend, waardoor de vertrouwde gebruikerservaring volledig intact blijft.
 
 ### Hoe pakt Manifera platformmigraties aan?
-Als een gefaseerd en strikt gecontroleerd proces met verificatie bij elke stap — datarecords, foreign keys, media-opslag en gebruikersaccounts — inclusief een beproefd nood- en rollback-plan. Manifera migreert al meer dan tien jaar bedrijfskritische systemen voor internationale ondernemingen.
+Als een gefaseerd en strikt gecontroleerd proces met verificatie bij elke stap - datarecords, foreign keys, media-opslag en gebruikersaccounts - inclusief een beproefd nood- en rollback-plan. Manifera migreert al meer dan tien jaar bedrijfskritische systemen voor internationale ondernemingen.
 
 ### Heeft het verlaten van een all-in-one builder invloed op mijn SEO-posities?
 Dat kan zowel positief als negatief uitpakken. Zorg dat bestaande URL's behouden blijven of netjes worden doorgelinkt met 301-redirects, behoud alle metadata en profiteer van de migratie om de laadtijden drastisch te verbeteren. Vakkundig uitgevoerd leidt een eigen stack vrijwel altijd tot betere Core Web Vitals en hogere zoekposities.

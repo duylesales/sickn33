@@ -2,8 +2,8 @@ Five months. That's the median time a Noord-Holland scale-up spends trying to fi
 
 **The Pain Points:**
 ❌ **Sprints Running at 60-70%:** Two empty senior seats means your sprint velocity quietly craters while the board still expects the original roadmap.
-❌ **Slipping Launch Dates Nobody Announces:** By month four, "Q2 launch" is "Q3 launch" — and nobody officially said why.
-❌ **Losing the Local Hiring War:** Velsen's software talent gets pulled toward Amsterdam salaries 20 minutes down the A9 — you're fishing in a shrinking pool.
+❌ **Slipping Launch Dates Nobody Announces:** By month four, "Q2 launch" is "Q3 launch" - and nobody officially said why.
+❌ **Losing the Local Hiring War:** Velsen's software talent gets pulled toward Amsterdam salaries 20 minutes down the A9 - you're fishing in a shrinking pool.
 
 **The Manifera Solution:**
 ✅ **Full Velocity in 2-3 Weeks:** An Autonomous Pod reaches full sprint velocity in 2-3 weeks against a documented architecture, not the 6-10 week ramp of a fresh local hire.

@@ -80,7 +80,7 @@ Rail adds infrastructure capacity constraints: trains cannot pass on single trac
 
 Crew scheduling deserves particular mention because the constraints are legal and contractual. Working time rules, collective agreements and rest requirements vary by country and operator, and a mathematically optimal roster that violates them is worthless.
 
-Robustness is the modern emphasis. A timetable optimised purely for efficiency has no slack, so a small delay propagates across the network. Building schedules that recover from disruption, rather than merely being efficient when everything works, is where much current effort sits — and it is a good example of an objective that required a rethink rather than a better solver.
+Robustness is the modern emphasis. A timetable optimised purely for efficiency has no slack, so a small delay propagates across the network. Building schedules that recover from disruption, rather than merely being efficient when everything works, is where much current effort sits - and it is a good example of an objective that required a rethink rather than a better solver.
 
 ## Real-Time Operations and Disruption
 
@@ -134,7 +134,7 @@ Transport is a public service in most of Europe, and that shapes the work in way
 
 Performance is published. Punctuality, cancellations and crowding are reported, scrutinised by media and politicians, and frequently tied to contractual arrangements between authorities and operators. Analysis that affects these figures is examined closely, and methodology must be defensible.
 
-Decisions affect people without alternatives. Reducing service on a route affects people who depend on it, and equity considerations — accessibility, coverage of less profitable areas, affordability — are explicit policy objectives rather than externalities.
+Decisions affect people without alternatives. Reducing service on a route affects people who depend on it, and equity considerations - accessibility, coverage of less profitable areas, affordability - are explicit policy objectives rather than externalities.
 
 Privacy is a live concern. Smart card and mobile ticketing data reveals individual movement patterns in detail, which is among the more sensitive categories of personal data. European operators work with aggregation thresholds, pseudonymisation, defined retention periods and careful governance of research access. Camera-based counting and monitoring raises further questions, and the prohibitions and high-risk classifications in the EU AI Act around biometric identification in publicly accessible spaces are directly relevant to any proposal involving cameras.
 
@@ -198,7 +198,7 @@ A European metro operator improved its arrival time predictions, reducing averag
 
 Complaints rose.
 
-Investigation found the cause. The previous system had been conservative, usually predicting slightly longer than actual. The new system was accurate on average, which meant it was sometimes early — and a passenger who arrives at the platform expecting two minutes and finds the train gone is considerably more upset than one who waits an extra minute.
+Investigation found the cause. The previous system had been conservative, usually predicting slightly longer than actual. The new system was accurate on average, which meant it was sometimes early - and a passenger who arrives at the platform expecting two minutes and finds the train gone is considerably more upset than one who waits an extra minute.
 
 The team changed the objective rather than the model. Predictions displayed to passengers were adjusted to be conservative by a small margin, deliberately trading average accuracy for asymmetric error cost. The unadjusted predictions continued to be used for internal operational decisions, where the asymmetry does not apply.
 

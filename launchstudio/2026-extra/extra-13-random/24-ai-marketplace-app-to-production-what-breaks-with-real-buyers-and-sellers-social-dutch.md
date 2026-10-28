@@ -1,6 +1,6 @@
 🚨 Tim de Graaf, softwaretester in Breda, bouwde Gereedschapdelen op Replit: buren verhuren elkaar heggenscharen, tegelsnijders en tapijtreinigers per dag, met een borg. Drie wijken, 600 gebruikers, zo'n 150 verhuringen per maand. En op elk moment had Tim ongeveer € 2.000 van anderen op zijn persoonlijke Stripe-account staan. 😳
 
-Hij betaalde uitleners wekelijks uit vanuit een spreadsheet. Borgsommen werden volledig afgeschreven en met de hand teruggestort, soms dagen te laat. Twee huurders boekten regelmatig hetzelfde gereedschap voor dezelfde dag. Iedereen kon reviews plaatsen — één uitlener werd door een ontevreden buurman overspoeld met nepreviews — en geschorste gebruikers konden nog boeken. Dit gaat er mis als een AI-marktplaats echte kopers en verkopers ontmoet:
+Hij betaalde uitleners wekelijks uit vanuit een spreadsheet. Borgsommen werden volledig afgeschreven en met de hand teruggestort, soms dagen te laat. Twee huurders boekten regelmatig hetzelfde gereedschap voor dezelfde dag. Iedereen kon reviews plaatsen - één uitlener werd door een ontevreden buurman overspoeld met nepreviews - en geschorste gebruikers konden nog boeken. Dit gaat er mis als een AI-marktplaats echte kopers en verkopers ontmoet:
 
 ❌ Geld van de marktplaats via de eigen rekening van de oprichter
 ❌ Volledige borgafschrijvingen met handmatige terugbetalingen

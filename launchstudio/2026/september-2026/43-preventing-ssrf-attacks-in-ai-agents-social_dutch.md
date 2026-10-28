@@ -1,4 +1,4 @@
-🚨 Owen, een softwareontwikkelaar, bouwde een prijs-scraper met **Lovable** — maar onveilige browserverzoeken zorgden ervoor dat zijn scrapers door vrijwel elke doelwebsite werden geblokkeerd. 🕸️
+🚨 Owen, een softwareontwikkelaar, bouwde een prijs-scraper met **Lovable** - maar onveilige browserverzoeken zorgden ervoor dat zijn scrapers door vrijwel elke doelwebsite werden geblokkeerd. 🕸️
 
 Het geven van een "haal deze URL op"-tool aan een AI-agent overhandigt de sleutels van uw servernetwerk. Eén ongeïsoleerd verzoek kan leiden tot een verwoestende SSRF-aanval. 🧠
 
@@ -12,7 +12,7 @@ Het geven van een "haal deze URL op"-tool aan een AI-agent overhandigt de sleute
 
 Bij **LaunchStudio** bouwen we sinds 2014 enterprise-beveiligingen via Manifera, met meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-LaunchStudio implementeerde roterende proxy's en domeinfilters voor Owen — het succespercentage van zijn scrapers steeg naar 98% en leverde betrouwbare data op. (€1.400 (Scraper Security Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+LaunchStudio implementeerde roterende proxy's en domeinfilters voor Owen - het succespercentage van zijn scrapers steeg naar 98% en leverde betrouwbare data op. (€1.400 (Scraper Security Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u agent-tools veilig isoleert: https://launchstudio.eu/nl/blog/preventing-ssrf-attacks-in-ai-agents
 

@@ -20,33 +20,33 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Nobody reads the fine print on a free tier when the alternative is shipping a working app for zero dollars. That's the whole appeal of free software ai options during the earliest phase of building something — you get a fully functional product without spending a cent, and the terms and conditions feel like a formality you can worry about later. The problem isn't that founders skip reading them at month one. The problem is that "later" always arrives, usually right when it's least convenient.
+Nobody reads the fine print on a free tier when the alternative is shipping a working app for zero dollars. That's the whole appeal of free software ai options during the earliest phase of building something - you get a fully functional product without spending a cent, and the terms and conditions feel like a formality you can worry about later. The problem isn't that founders skip reading them at month one. The problem is that "later" always arrives, usually right when it's least convenient.
 
 ## Why free tiers feel safe in month one
 
-At the start, everything about a free-tier AI model matches your actual usage. You're the only user, maybe testing with a handful of friends or early signups, and the request volume is a fraction of what any free tier allows before rate limits kick in. Under these conditions, the free tier isn't a constraint at all — it's invisible, which is exactly why founders stop thinking about it. There's no reason to read rate-limit documentation for a limit you're nowhere near hitting.
+At the start, everything about a free-tier AI model matches your actual usage. You're the only user, maybe testing with a handful of friends or early signups, and the request volume is a fraction of what any free tier allows before rate limits kick in. Under these conditions, the free tier isn't a constraint at all - it's invisible, which is exactly why founders stop thinking about it. There's no reason to read rate-limit documentation for a limit you're nowhere near hitting.
 
 ## Why the same terms become dangerous by month six
 
-The trouble is that founder momentum and free-tier limits move in opposite directions. As your app goes from personal testing to friends to an actual customer base, usage climbs steadily — and free tiers are, by design, built to accommodate light usage, not growing production traffic. The exact moment your app starts succeeding, meaning real customers using it simultaneously during real usage patterns, is the exact moment you're most likely to hit whatever ceiling the free tier quietly had in place the whole time. Success is what triggers the failure, which is a uniquely frustrating way to lose a launch week.
+The trouble is that founder momentum and free-tier limits move in opposite directions. As your app goes from personal testing to friends to an actual customer base, usage climbs steadily - and free tiers are, by design, built to accommodate light usage, not growing production traffic. The exact moment your app starts succeeding, meaning real customers using it simultaneously during real usage patterns, is the exact moment you're most likely to hit whatever ceiling the free tier quietly had in place the whole time. Success is what triggers the failure, which is a uniquely frustrating way to lose a launch week.
 
 ## The three things to check before you have real customers, not after
 
 - **What is the actual rate limit, in requests per minute or per day, and how does that compare to your expected concurrent usage once you have real customers?** Most founders never do this math until an outage forces them to.
-- **What happens when the limit is hit — a queue, a graceful error, or a silent failure?** Some free tiers degrade gracefully. Others simply stop responding with no useful signal to your users, which is the worst version for a founder trying to figure out why their app suddenly seems broken.
+- **What happens when the limit is hit - a queue, a graceful error, or a silent failure?** Some free tiers degrade gracefully. Others simply stop responding with no useful signal to your users, which is the worst version for a founder trying to figure out why their app suddenly seems broken.
 - **Is there a clear, fast upgrade path from free tier to paid, and what does it cost at your expected volume?** Knowing the number in advance means you can budget for it before you need it in an emergency, rather than discovering the paid tier's pricing while your app is already down.
 
 ## Why this matters more for AI-native founders specifically
 
-Founders building with Lovable, Bolt, Cursor, or v0 are often working with an underlying AI model API as a core dependency of the product itself, not just a development tool — which means the free tier terms aren't a side detail, they're load-bearing infrastructure for whatever the app actually does. A free software ai limit hit at the wrong moment doesn't just slow down a background task. It can take down the actual feature your customers are trying to use, at the exact moment they're trying to use it, which tends to be the worst possible moment for a young product's reputation with its first real users.
+Founders building with Lovable, Bolt, Cursor, or v0 are often working with an underlying AI model API as a core dependency of the product itself, not just a development tool - which means the free tier terms aren't a side detail, they're load-bearing infrastructure for whatever the app actually does. A free software ai limit hit at the wrong moment doesn't just slow down a background task. It can take down the actual feature your customers are trying to use, at the exact moment they're trying to use it, which tends to be the worst possible moment for a young product's reputation with its first real users.
 
-LaunchStudio reviews exactly this kind of dependency risk as part of production readiness work — checking not just what an app's code does, but what happens when an external free-tier limit gets hit during real usage. Our engineers, drawing on Manifera's main engineering center in Ho Chi Minh City, have seen this exact failure pattern enough times to check for it by default rather than waiting for an outage to reveal it. If you're relying on a free-tier AI model and getting close to real customers, [calculate what a readiness review would cost](https://launchstudio.eu/en/#calculator) before your busiest week becomes your worst one. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice routinely audits exactly this class of external dependency risk for clients well beyond the founder stage.
+LaunchStudio reviews exactly this kind of dependency risk as part of production readiness work - checking not just what an app's code does, but what happens when an external free-tier limit gets hit during real usage. Our engineers, drawing on Manifera's main engineering center in Ho Chi Minh City, have seen this exact failure pattern enough times to check for it by default rather than waiting for an outage to reveal it. If you're relying on a free-tier AI model and getting close to real customers, [calculate what a readiness review would cost](https://launchstudio.eu/en/#calculator) before your busiest week becomes your worst one. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice routinely audits exactly this class of external dependency risk for clients well beyond the founder stage.
 
 ## How to Actually Read an AI Provider's Rate-Limit Documentation
 
-Most founders who skip reading rate-limit documentation aren't being lazy — they open the page, find a wall of terminology that doesn't map to anything they're trying to plan for, and close the tab. The documentation is genuinely written for a different audience than a non-technical founder trying to figure out "will this survive my launch week." Here's what the specific terms actually mean and which ones deserve your attention before you commit to a tier.
+Most founders who skip reading rate-limit documentation aren't being lazy - they open the page, find a wall of terminology that doesn't map to anything they're trying to plan for, and close the tab. The documentation is genuinely written for a different audience than a non-technical founder trying to figure out "will this survive my launch week." Here's what the specific terms actually mean and which ones deserve your attention before you commit to a tier.
 
-**Requests per minute (RPM) versus requests per day (RPD).** These are two separate ceilings, and hitting either one causes the same failure. A free tier might comfortably handle your daily volume in total while still failing during a short burst — ten customers using a feature within the same two minutes, for instance — because the per-minute limit is the tighter constraint at that moment, even though the per-day number looks fine on paper.
+**Requests per minute (RPM) versus requests per day (RPD).** These are two separate ceilings, and hitting either one causes the same failure. A free tier might comfortably handle your daily volume in total while still failing during a short burst - ten customers using a feature within the same two minutes, for instance - because the per-minute limit is the tighter constraint at that moment, even though the per-day number looks fine on paper.
 
 **Tokens per minute (TPM), a limit separate from request count entirely.** If your app sends longer prompts or expects longer responses, you can hit a token ceiling well before you hit a request-count ceiling. This is one of the most commonly missed limits, because founders tend to think in terms of "how many times does my app call the AI," not "how much text does each call actually involve."
 
@@ -56,26 +56,26 @@ Most founders who skip reading rate-limit documentation aren't being lazy — th
 
 **Whether there's any uptime or support commitment at all.** Paid tiers frequently come with a service-level commitment; free tiers typically come with none, meaning an outage on the provider's end during your launch week has no guaranteed resolution time and, in many cases, no support channel to escalate through.
 
-**The actual dollar cost at double your best-case usage estimate, not your expected one.** Founders who do check pricing tend to check it against their expected volume. Check it against double that number instead — launches routinely exceed projections in the good scenario, and knowing the cost at that level in advance means a successful launch doesn't also become a billing surprise.
+**The actual dollar cost at double your best-case usage estimate, not your expected one.** Founders who do check pricing tend to check it against their expected volume. Check it against double that number instead - launches routinely exceed projections in the good scenario, and knowing the cost at that level in advance means a successful launch doesn't also become a billing surprise.
 
-None of this requires deep technical fluency to check — it requires reading the specific numbers in the specific sections above rather than skimming past the whole page because it looks like it wasn't written for you. Ten minutes spent finding these six numbers is considerably cheaper than finding them out during an outage.
+None of this requires deep technical fluency to check - it requires reading the specific numbers in the specific sections above rather than skimming past the whole page because it looks like it wasn't written for you. Ten minutes spent finding these six numbers is considerably cheaper than finding them out during an outage.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Loes Peters' Launch-Week Outage
 
-Loes Peters, founder of PlanStroom, an appointment scheduling app in Spijkenisse built with Lovable, had built the entire product on a free-tier AI model API from day one. It made sense during development — usage was light, the free tier covered everything comfortably, and there was no reason to think about it further while the app was still being refined.
+Loes Peters, founder of PlanStroom, an appointment scheduling app in Spijkenisse built with Lovable, had built the entire product on a free-tier AI model API from day one. It made sense during development - usage was light, the free tier covered everything comfortably, and there was no reason to think about it further while the app was still being refined.
 
-The free tier's rate limits kicked in during the exact week PlanStroom's first real paying customers started using the app simultaneously — the launch week Loes had been building toward for months. As multiple customers booked appointments around the same time, requests to the AI model started hitting the free tier's ceiling, and the app began failing intermittently during exactly the moments Loes most needed it to perform flawlessly. Customers saw errors or unresponsive screens with no clear explanation, right as they were forming their first impression of the product.
+The free tier's rate limits kicked in during the exact week PlanStroom's first real paying customers started using the app simultaneously - the launch week Loes had been building toward for months. As multiple customers booked appointments around the same time, requests to the AI model started hitting the free tier's ceiling, and the app began failing intermittently during exactly the moments Loes most needed it to perform flawlessly. Customers saw errors or unresponsive screens with no clear explanation, right as they were forming their first impression of the product.
 
 LaunchStudio was brought in mid-crisis to stabilize the situation. The immediate fix was migrating PlanStroom to a paid tier with appropriate rate limits for its actual usage, alongside adding graceful error handling and request queuing so that any future limit would degrade politely instead of failing silently. LaunchStudio's engineers also reviewed the rest of PlanStroom's external dependencies for similar unrecognized free-tier risk.
 
 **Result:** PlanStroom's outages stopped within hours of the migration, and the app handled its second launch push the following month without any rate-limit related incidents.
 
 > *"I never once thought about the free tier until it was the reason my launch week was falling apart in real time."*
-> — **Loes Peters, Founder, PlanStroom (Spijkenisse)**
+> - **Loes Peters, Founder, PlanStroom (Spijkenisse)**
 
-**Cost & Timeline:** €640 (tier migration, rate-limit handling, and dependency review) — completed in 3 business days.
+**Cost & Timeline:** €640 (tier migration, rate-limit handling, and dependency review) - completed in 3 business days.
 
 ---
 
@@ -87,7 +87,7 @@ Because usage during personal testing and early friends-and-family use is far be
 
 ### What's the actual risk of staying on a free tier too long?
 
-The risk is that real customer growth and free-tier limits move in opposite directions — the app is most likely to hit its ceiling at exactly the moment it starts succeeding with real, simultaneous users.
+The risk is that real customer growth and free-tier limits move in opposite directions - the app is most likely to hit its ceiling at exactly the moment it starts succeeding with real, simultaneous users.
 
 ### What should founders check before relying on a free-tier AI model in production?
 

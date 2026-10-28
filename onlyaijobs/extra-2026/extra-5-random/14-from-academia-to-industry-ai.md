@@ -35,7 +35,7 @@ Content Format: Career Transition Guide
 }
 </script>
 
-Moving from academia to industry in AI is easier than it was a decade ago and harder than the headlines suggest. Employers genuinely value what researchers bring — depth, independence, the ability to read and implement new methods — but they hire for different outputs. A paper is not a product, and a group of five people who each own their own project is not a team shipping one system together. Researchers who understand the difference make the transition quickly; those who assume their credentials speak for themselves often spend a frustrating year. This guide covers which industry roles suit which academic backgrounds, what to emphasise and what to unlearn, how to translate your CV and how to handle the first months.
+Moving from academia to industry in AI is easier than it was a decade ago and harder than the headlines suggest. Employers genuinely value what researchers bring - depth, independence, the ability to read and implement new methods - but they hire for different outputs. A paper is not a product, and a group of five people who each own their own project is not a team shipping one system together. Researchers who understand the difference make the transition quickly; those who assume their credentials speak for themselves often spend a frustrating year. This guide covers which industry roles suit which academic backgrounds, what to emphasise and what to unlearn, how to translate your CV and how to handle the first months.
 
 ## Which Roles Suit Researchers
 
@@ -59,7 +59,7 @@ Not the title. What they value is evidence of:
 - **Depth**: you can go further than a quick literature scan when the problem requires it.
 - **Rigour**: you understand experimental design, statistical claims and what constitutes evidence.
 - **Learning speed**: you can absorb a new field quickly, which is exactly what applied work requires.
-- **Communication**: you have explained complex work to audiences before — although often to specialists rather than stakeholders.
+- **Communication**: you have explained complex work to audiences before - although often to specialists rather than stakeholders.
 
 Employers discount: publication counts beyond a few relevant examples, the prestige of your supervisor, and technique-first thinking. Nobody in a product team cares that a method is novel if a simpler one performs adequately.
 
@@ -92,7 +92,7 @@ If you completed an industrial PhD or a collaboration with a company, lead with 
 
 There is no single right moment, but some are easier than others.
 
-**During a PhD.** Internships and industrial collaborations are the lowest-risk way to test industry work, and they often lead to offers. Where available, industrial PhD schemes — where a company employs the doctoral researcher while a university supervises — produce candidates who need almost no transition at all.
+**During a PhD.** Internships and industrial collaborations are the lowest-risk way to test industry work, and they often lead to offers. Where available, industrial PhD schemes - where a company employs the doctoral researcher while a university supervises - produce candidates who need almost no transition at all.
 
 **Immediately after the PhD.** A common and well-trodden path. Employers expect limited production experience and are usually willing to invest, especially for applied scientist and domain roles.
 
@@ -110,7 +110,7 @@ You do not need to leave to start building the profile that gets you hired:
 - **Take ownership of infrastructure**: the pipeline that runs experiments, the data management, the cluster workflows.
 - **Collaborate with a company** through a research project, and take on the part that faces their systems.
 - **Supervise students** and describe it as mentoring and project management.
-- **Present to non-specialists** — industry days, outreach, consortium meetings — and get comfortable with the register.
+- **Present to non-specialists** - industry days, outreach, consortium meetings - and get comfortable with the register.
 - **Contribute to open source** in your field, even modestly.
 
 Each of these translates directly into an interview answer. The transition is rarely about acquiring a new skill set; it is about accumulating evidence that you can deliver things other people depend on.
@@ -129,7 +129,7 @@ The first months feel disorienting for most researchers, in predictable ways.
 
 **Collaboration.** Code review, shared repositories, standups and pair work are normal. Sharing unfinished work is a professional norm, not an admission of weakness.
 
-**Evidence standards.** In some ways lower — nobody demands a theoretical guarantee — and in others higher: your model will be measured by whether it helps in production, on data that keeps changing.
+**Evidence standards.** In some ways lower - nobody demands a theoretical guarantee - and in others higher: your model will be measured by whether it helps in production, on data that keeps changing.
 
 **Politics.** Priorities are negotiated between teams. Learning who decides what is a real skill, and it is one academia teaches badly.
 
@@ -137,7 +137,7 @@ Advice that helps: spend the first weeks asking how things are done rather than 
 
 ## Staying Connected to Research
 
-Leaving academia does not mean leaving research. Many industry roles allow publication, and applied conferences welcome industrial work. You can supervise students through university collaborations, review papers, or take part in consortium projects. Some researchers keep an affiliation or teach part-time. If continuing to publish matters to you, ask about it explicitly in interviews — policies vary enormously between companies, and it is far easier to agree before joining than afterwards.
+Leaving academia does not mean leaving research. Many industry roles allow publication, and applied conferences welcome industrial work. You can supervise students through university collaborations, review papers, or take part in consortium projects. Some researchers keep an affiliation or teach part-time. If continuing to publish matters to you, ask about it explicitly in interviews - policies vary enormously between companies, and it is far easier to agree before joining than afterwards.
 
 ## Which Sectors Value Which Backgrounds
 
@@ -153,7 +153,7 @@ Your domain is usually your strongest differentiator. Generic "AI researcher" po
 
 ## Salary and Level Expectations
 
-In most European markets, a PhD entering industry is placed at mid-level rather than junior, often with credit for research years in domain-relevant roles. Research-specific positions in large labs pay well but are scarce; applied roles in industry pay solidly and are plentiful. Compare total packages, including pension, holiday and stability, rather than headline salaries — and be wary of accepting a junior title "to get in", which can take two years to correct.
+In most European markets, a PhD entering industry is placed at mid-level rather than junior, often with credit for research years in domain-relevant roles. Research-specific positions in large labs pay well but are scarce; applied roles in industry pay solidly and are plentiful. Compare total packages, including pension, holiday and stability, rather than headline salaries - and be wary of accepting a junior title "to get in", which can take two years to correct.
 
 ## How OnlyAIJobs Fits a Transition Search
 
@@ -165,13 +165,13 @@ To be transparent about scope: listings are currently concentrated in the Nether
 
 ## A Final Word
 
-The researchers who transition best are not the ones who abandon their academic identity but the ones who bring its best parts: curiosity, rigour and the willingness to keep asking whether a result is real. Add the industrial habits — shipping small, sharing early, valuing simplicity — and you become the colleague every applied team wants: someone who can tell the difference between a model that performs and a model that merely appears to.
+The researchers who transition best are not the ones who abandon their academic identity but the ones who bring its best parts: curiosity, rigour and the willingness to keep asking whether a result is real. Add the industrial habits - shipping small, sharing early, valuing simplicity - and you become the colleague every applied team wants: someone who can tell the difference between a model that performs and a model that merely appears to.
 
 ## Explaining Why You Are Leaving
 
 Interviewers will ask, and the answer matters more than candidates expect. Avoid framing the move as an escape from a broken system, however justified that feeling may be: it reads as unresolved rather than considered. Equally, avoid pretending you always planned an industrial career if you did not.
 
-What works is specific and forward-looking: you want your work to be used rather than cited; you enjoyed the applied part of your project most; you want to build systems that run rather than experiments that end; you want a team working on one problem together; you want a different pace, or more stability, or a location you can settle in. Any of these is a perfectly good reason, and stating it plainly signals self-knowledge — which is what the question is really testing.
+What works is specific and forward-looking: you want your work to be used rather than cited; you enjoyed the applied part of your project most; you want to build systems that run rather than experiments that end; you want a team working on one problem together; you want a different pace, or more stability, or a location you can settle in. Any of these is a perfectly good reason, and stating it plainly signals self-knowledge - which is what the question is really testing.
 
 ## Real example
 
@@ -181,11 +181,11 @@ A computational physics postdoc decided to leave academia after six years and th
 
 She spent three months doing one thing: taking the simulation analysis code her group used, turning it into a documented package with tests and a small command-line tool, and deploying a version that ran nightly on a cloud instance, with monitoring and alerts when a run failed. She wrote a short article explaining the design decisions.
 
-Her next applications went differently. In interviews she could describe software other people depended on, an operational failure she had diagnosed, and the trade-offs she had made. She was hired as a data scientist at an energy company, where her simulation background turned out to be directly relevant to forecasting problems — but it was the operational story that opened the door.
+Her next applications went differently. In interviews she could describe software other people depended on, an operational failure she had diagnosed, and the trade-offs she had made. She was hired as a data scientist at an energy company, where her simulation background turned out to be directly relevant to forecasting problems - but it was the operational story that opened the door.
 
 ## Key Takeaways
 
-- Employers value independence, depth, rigour and learning speed — not titles or publication counts.
+- Employers value independence, depth, rigour and learning speed - not titles or publication counts.
 - The habits to unlearn are novelty-seeking, working alone until finished, and perfecting before shipping.
 - Rewrite your CV around problems, actions and outcomes, and surface engineering evidence.
 - One piece of software that other people run is worth more than three more papers in an application.

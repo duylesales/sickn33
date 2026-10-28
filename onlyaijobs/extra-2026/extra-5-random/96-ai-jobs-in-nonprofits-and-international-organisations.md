@@ -69,7 +69,7 @@ Europe hosts a dense concentration of nonprofits, humanitarian agencies, researc
 
 Evaluation is the sector's equivalent of experimentation in commercial technology, and it is more methodologically demanding than most newcomers expect.
 
-The question is whether a programme caused an improvement, which requires a counterfactual. Randomised designs are used where ethically and practically possible — allocating a programme by lottery when it cannot reach everyone is sometimes the fairest method as well as the most informative. Where randomisation is impossible, the quasi-experimental methods described in the experimentation guide apply: difference-in-differences, matching, regression discontinuity around eligibility thresholds, and synthetic controls.
+The question is whether a programme caused an improvement, which requires a counterfactual. Randomised designs are used where ethically and practically possible - allocating a programme by lottery when it cannot reach everyone is sometimes the fairest method as well as the most informative. Where randomisation is impossible, the quasi-experimental methods described in the experimentation guide apply: difference-in-differences, matching, regression discontinuity around eligibility thresholds, and synthetic controls.
 
 The complications are substantial. Sample sizes are small, attrition is high in populations that move, measurement relies on self-report, and the outcomes that matter may appear years after the intervention.
 
@@ -173,7 +173,7 @@ Recruitment here works differently, and the conventional approach of applying to
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Browsing is free and requires no account, vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, and no employer can pay for a higher position.
 
-Many organisations in this sector advertise only on their own sites or on specialist networks, so a focused board is a complement rather than a replacement. It is most useful for finding the adjacent commercial roles — geospatial, evaluation, logistics, forecasting — that build the skills this sector needs and pay while you acquire them.
+Many organisations in this sector advertise only on their own sites or on specialist networks, so a focused board is a complement rather than a replacement. It is most useful for finding the adjacent commercial roles - geospatial, evaluation, logistics, forecasting - that build the skills this sector needs and pay while you acquire them.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, The Hague's surrounding region, Eindhoven and Groningen. Employers, including nonprofits, can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -199,7 +199,7 @@ A data scientist built a model predicting need from household survey data. It pe
 
 The programme team raised two objections. Affected communities would have to accept the process as fair, and a model whose reasoning could not be explained in a community meeting would be rejected regardless of its accuracy. And the input data was self-reported under conditions where people had obvious incentives, which the model treated as reliable.
 
-The eventual approach used a small number of transparent criteria agreed with community representatives, applied consistently, with the model used instead to check the outcome for unintended patterns — including whether particular groups were being systematically excluded.
+The eventual approach used a small number of transparent criteria agreed with community representatives, applied consistently, with the model used instead to check the outcome for unintended patterns - including whether particular groups were being systematically excluded.
 
 The analyst's conclusion was that the statistical question had been the easy one. The real question was what process people would accept as legitimate, and in that context a less accurate method that could be explained and contested was the better system.
 

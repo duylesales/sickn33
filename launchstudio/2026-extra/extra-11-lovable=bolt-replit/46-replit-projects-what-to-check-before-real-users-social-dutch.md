@@ -1,4 +1,4 @@
-🚀 Selma Bouhali bouwde Leerpunt op Replit voor 11 zakelijke trainingsgroepen in Nijmegen. Toen een financiële instelling 200 managers wilde opleiden, wees hun IT-audit uit dat de app draaide op een tijdelijke Replit-container zonder back-upregime, met publieke omgevingsvariabelen en gedeelde resources — wat de deal direct blokkeerde. 😳
+🚀 Selma Bouhali bouwde Leerpunt op Replit voor 11 zakelijke trainingsgroepen in Nijmegen. Toen een financiële instelling 200 managers wilde opleiden, wees hun IT-audit uit dat de app draaide op een tijdelijke Replit-container zonder back-upregime, met publieke omgevingsvariabelen en gedeelde resources - wat de deal direct blokkeerde. 😳
 
 Replit is ideaal voor prototypes, maar niet ontworpen voor zakelijke SLA's en compliance. Waar het misgaat vóór livegang:
 

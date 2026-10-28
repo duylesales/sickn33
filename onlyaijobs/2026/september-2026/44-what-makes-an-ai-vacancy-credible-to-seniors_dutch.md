@@ -21,25 +21,25 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-Een senior AI-kandidaat heeft al meerdere vacatureteksten gelezen die veel beloven en weinig concreets zeggen. Die ervaring maakt hen sneller sceptisch dan een junior kandidaat, en ze screenen een tekst dus anders — niet op enthousiasme, maar op signalen dat het team weet waar het mee bezig is.
+Een senior AI-kandidaat heeft al meerdere vacatureteksten gelezen die veel beloven en weinig concreets zeggen. Die ervaring maakt hen sneller sceptisch dan een junior kandidaat, en ze screenen een tekst dus anders - niet op enthousiasme, maar op signalen dat het team weet waar het mee bezig is.
 
 ## Wat senior kandidaten specifiek zoeken in een vacaturetekst
 
 **Een concreet technisch probleem, geen mission statement.** Senioren herkennen het verschil tussen "we willen AI inzetten om te innoveren" en "we hebben een model dat X doet en worstelt met Y" onmiddellijk. Het tweede signaleert dat het team het probleem al begrijpt, wat vertrouwen wekt.
 
-**Eerlijkheid over technische schuld.** Een senior kandidaat weet dat elk bedrijf technische schuld heeft. Het niet noemen ervan wekt wantrouwen, niet vertrouwen — het klinkt alsof de vacaturetekst is geschreven door iemand die het systeem niet kent.
+**Eerlijkheid over technische schuld.** Een senior kandidaat weet dat elk bedrijf technische schuld heeft. Het niet noemen ervan wekt wantrouwen, niet vertrouwen - het klinkt alsof de vacaturetekst is geschreven door iemand die het systeem niet kent.
 
-**Wie de vacature daadwerkelijk heeft geschreven.** Een tekst die duidelijk door een technisch teamlid is meegeschreven, in plaats van uitsluitend door HR, leest anders voor iemand die al jaren in het vak zit — de details verraden wie de auteur is.
+**Wie de vacature daadwerkelijk heeft geschreven.** Een tekst die duidelijk door een technisch teamlid is meegeschreven, in plaats van uitsluitend door HR, leest anders voor iemand die al jaren in het vak zit - de details verraden wie de auteur is.
 
 ## Waarom generieke taal senior kandidaten sneller afschrikt dan junioren
 
-Junior kandidaten hebben minder referentiekader om een generieke vacaturetekst te herkennen als generiek. Senior kandidaten hebben dat referentiekader wel, en interpreteren vage taal vaak als een teken dat het team zelf niet scherp weet wat het zoekt — een rood signaal, niet een neutraal signaal.
+Junior kandidaten hebben minder referentiekader om een generieke vacaturetekst te herkennen als generiek. Senior kandidaten hebben dat referentiekader wel, en interpreteren vage taal vaak als een teken dat het team zelf niet scherp weet wat het zoekt - een rood signaal, niet een neutraal signaal.
 
 ## Waar te beginnen
 
 Laat een technisch teamlid meeschrijven aan de vacaturetekst, wees specifiek over het huidige probleem en de bestaande technische schuld, en vermijd taal die evengoed bij honderd andere vacatures zou passen.
 
-Plaats je openstaande AI-, machine learning- of datavacature — de eerste plaatsing is gratis — via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
+Plaats je openstaande AI-, machine learning- of datavacature - de eerste plaatsing is gratis - via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Een checklist voordat je een vacature voor senior kandidaten publiceert
 
@@ -55,26 +55,26 @@ Plaats je openstaande AI-, machine learning- of datavacature — de eerste plaat
 
 | Signaal | Overtuigt senior kandidaten | Overtuigt senior kandidaten niet |
 |---|---|---|
-| Concreet, huidig technisch probleem | Ja | — |
-| Eerlijkheid over technische schuld | Ja | — |
-| Generieke taal ("innovatief", "dynamisch") | — | Ja, werkt averechts |
-| Lange lijst vereisten zonder prioritering | — | Ja, wekt wantrouwen |
+| Concreet, huidig technisch probleem | Ja | - |
+| Eerlijkheid over technische schuld | Ja | - |
+| Generieke taal ("innovatief", "dynamisch") | - | Ja, werkt averechts |
+| Lange lijst vereisten zonder prioritering | - | Ja, wekt wantrouwen |
 
 ## Waarom dit specifiek voor senior kandidaten zwaarder weegt dan voor junioren
 
-Een senior kandidaat heeft vaak al meerdere keren meegemaakt dat een vacaturetekst iets beloofde wat de praktijk niet waarmaakte, en is daardoor sneller geneigd om vage taal te interpreteren als een waarschuwingssignaal in plaats van als neutrale marketing. Dit is geen kwestie van cynisme — het is geleerd gedrag op basis van eerdere ervaring, en het betekent dat de investering in een eerlijke, specifieke vacaturetekst zich bij deze doelgroep sneller terugbetaalt dan bij junior kandidaten.
+Een senior kandidaat heeft vaak al meerdere keren meegemaakt dat een vacaturetekst iets beloofde wat de praktijk niet waarmaakte, en is daardoor sneller geneigd om vage taal te interpreteren als een waarschuwingssignaal in plaats van als neutrale marketing. Dit is geen kwestie van cynisme - het is geleerd gedrag op basis van eerdere ervaring, en het betekent dat de investering in een eerlijke, specifieke vacaturetekst zich bij deze doelgroep sneller terugbetaalt dan bij junior kandidaten.
 
 ## Een concreet scenario: hoe een senior kandidaat een vacature daadwerkelijk leest
 
-Een senior data scientist met tien jaar ervaring leest een vacaturetekst niet lineair van boven naar beneden — ze scannen eerst op specifieke technische details en slaan generieke openingszinnen over. Wanneer de tekst begint met "Wij zijn een innovatief bedrijf op zoek naar een gepassioneerde data scientist", is de kans groot dat deze kandidaat al afhaakt voordat ze bij de daadwerkelijke functieomschrijving komen — niet uit onwil, maar omdat ervaring hen heeft geleerd dat dit soort openingszinnen zelden gevolgd wordt door iets substantieels.
+Een senior data scientist met tien jaar ervaring leest een vacaturetekst niet lineair van boven naar beneden - ze scannen eerst op specifieke technische details en slaan generieke openingszinnen over. Wanneer de tekst begint met "Wij zijn een innovatief bedrijf op zoek naar een gepassioneerde data scientist", is de kans groot dat deze kandidaat al afhaakt voordat ze bij de daadwerkelijke functieomschrijving komen - niet uit onwil, maar omdat ervaring hen heeft geleerd dat dit soort openingszinnen zelden gevolgd wordt door iets substantieels.
 
 ## Een veelvoorkomend misverstand over wat senioren "verdienen" te horen
 
-Werkgevers denken soms dat senior kandidaten vooral overtuigd moeten worden met status en prestige — een indrukwekkend klinkend bedrijf, een hoog salaris, een grote naam. Terwijl deze factoren zeker meespelen, onderschat deze aanname hoezeer senior kandidaten specifiek zoeken naar bewijs van technische substantie, juist omdat ze al vaker zijn teleurgesteld door vacatures die veel beloofden en weinig waarmaakten.
+Werkgevers denken soms dat senior kandidaten vooral overtuigd moeten worden met status en prestige - een indrukwekkend klinkend bedrijf, een hoog salaris, een grote naam. Terwijl deze factoren zeker meespelen, onderschat deze aanname hoezeer senior kandidaten specifiek zoeken naar bewijs van technische substantie, juist omdat ze al vaker zijn teleurgesteld door vacatures die veel beloofden en weinig waarmaakten.
 
 ## Waarom deze aanpak ook de kwaliteit van je sollicitatiegesprekken verbetert
 
-Een vacaturetekst die specifiek en eerlijk is geschreven, trekt niet alleen betere kandidaten aan — het zorgt er ook voor dat het eerste gesprek dieper en relevanter verloopt, omdat de kandidaat al een concreet beeld heeft van het probleem en gerichte vragen kan stellen, in plaats van een gesprek te beginnen met basale verduidelijkingsvragen die een specifiekere vacaturetekst had kunnen voorkomen.
+Een vacaturetekst die specifiek en eerlijk is geschreven, trekt niet alleen betere kandidaten aan - het zorgt er ook voor dat het eerste gesprek dieper en relevanter verloopt, omdat de kandidaat al een concreet beeld heeft van het probleem en gerichte vragen kan stellen, in plaats van een gesprek te beginnen met basale verduidelijkingsvragen die een specifiekere vacaturetekst had kunnen voorkomen.
 
 ## Hoe je feedback van eerdere sollicitanten kunt gebruiken om je tekst te verbeteren
 
@@ -82,7 +82,7 @@ Als je eerdere vacatureteksten hebt gebruikt en weinig reactie kreeg van senior 
 
 ## Waarom dit een doorlopend proces is, geen eenmalige exercitie
 
-Een vacaturetekst die vandaag goed werkt voor senior kandidaten, hoeft dat over een jaar niet meer te zijn — naarmate de markt verandert en kandidaten andere verwachtingen ontwikkelen, verschuift ook wat als "eerlijk en specifiek" wordt ervaren. Behandel het schrijven van een overtuigende senior-vacaturetekst daarom als iets wat periodiek wordt herzien op basis van actuele feedback, niet als een sjabloon dat eenmaal goed is geschreven en daarna ongewijzigd kan blijven.
+Een vacaturetekst die vandaag goed werkt voor senior kandidaten, hoeft dat over een jaar niet meer te zijn - naarmate de markt verandert en kandidaten andere verwachtingen ontwikkelen, verschuift ook wat als "eerlijk en specifiek" wordt ervaren. Behandel het schrijven van een overtuigende senior-vacaturetekst daarom als iets wat periodiek wordt herzien op basis van actuele feedback, niet als een sjabloon dat eenmaal goed is geschreven en daarna ongewijzigd kan blijven.
 
 ## Veelgestelde vragen
 
@@ -90,7 +90,7 @@ Een vacaturetekst die vandaag goed werkt voor senior kandidaten, hoeft dat over 
 Senior kandidaten hebben meer referentiekader om generieke taal te herkennen als generiek, en interpreteren dat vaker als een teken dat het team zelf niet scherp weet wat het zoekt.
 
 ### (Scenario: werkgever die twijfelt of technische schuld genoemd mag worden) Moet ik technische schuld noemen in een vacature gericht op senior kandidaten?
-Ja — een senior kandidaat weet dat elk bedrijf technische schuld heeft, en het niet noemen ervan wekt eerder wantrouwen dan vertrouwen.
+Ja - een senior kandidaat weet dat elk bedrijf technische schuld heeft, en het niet noemen ervan wekt eerder wantrouwen dan vertrouwen.
 
 ### (Scenario: werkgever die de vacature alleen door HR laat schrijven) Maakt het uit wie de vacaturetekst heeft geschreven?
 Ja, senior kandidaten herkennen vaak of een technisch teamlid heeft meegeschreven aan specifieke details, versus een tekst die uitsluitend door HR is opgesteld.
@@ -107,7 +107,7 @@ Laat een technisch teamlid meeschrijven, benoem een specifiek huidig probleem in
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Waarom reageren senior kandidaten anders op een generieke vacaturetekst dan junioren?", "acceptedAnswer": {"@type": "Answer", "text": "Senior kandidaten hebben meer referentiekader om generieke taal te herkennen, en interpreteren dat als een teken dat het team niet scherp weet wat het zoekt."}},
-    {"@type": "Question", "name": "Moet ik technische schuld noemen in een vacature gericht op senior kandidaten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja — het niet noemen ervan wekt eerder wantrouwen dan vertrouwen bij een ervaren kandidaat."}},
+    {"@type": "Question", "name": "Moet ik technische schuld noemen in een vacature gericht op senior kandidaten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja - het niet noemen ervan wekt eerder wantrouwen dan vertrouwen bij een ervaren kandidaat."}},
     {"@type": "Question", "name": "Maakt het uit wie de vacaturetekst heeft geschreven?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, senior kandidaten herkennen vaak of een technisch teamlid heeft meegeschreven aan specifieke details."}},
     {"@type": "Question", "name": "Waarom werkt een concreet technisch probleem beter dan een missieverklaring?", "acceptedAnswer": {"@type": "Answer", "text": "Het signaleert dat het team het probleem al begrijpt, wat vertrouwen wekt bij een ervaren kandidaat."}},
     {"@type": "Question", "name": "Wat is de snelste manier om een vacaturetekst geloofwaardiger te maken voor senioren?", "acceptedAnswer": {"@type": "Answer", "text": "Laat een technisch teamlid meeschrijven, benoem een specifiek huidig probleem, en wees eerlijk over bestaande technische schuld."}}

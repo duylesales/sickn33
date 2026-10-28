@@ -67,7 +67,7 @@ The most common mistake is choosing topics from what is being discussed rather t
 
 **Start from your work.** What is the hardest problem on your current project, or the part you handle worst? Learning aimed at a real problem sticks, because you apply it immediately and get feedback.
 
-**Read twenty vacancies for the role you want next.** Not your current role — the next one. The intersection of what they ask for and what you lack is your syllabus, and it is grounded in what employers actually pay for rather than in what is fashionable.
+**Read twenty vacancies for the role you want next.** Not your current role - the next one. The intersection of what they ask for and what you lack is your syllabus, and it is grounded in what employers actually pay for rather than in what is fashionable.
 
 **Ask two people whose work you respect** what they wish they had learned earlier. The answers are usually unglamorous: statistics, systems, writing, one domain.
 
@@ -141,7 +141,7 @@ If an employer consistently refuses time and budget for development, that is use
 
 How you allocate learning shapes what you become, and it is worth being deliberate rather than drifting.
 
-**Depth** in one area — forecasting, retrieval systems, computer vision, causal inference, a particular domain — makes you the person who gets called. It compounds, it is hard to replicate quickly, and it commands better roles. The risk is narrowing into an area that declines.
+**Depth** in one area - forecasting, retrieval systems, computer vision, causal inference, a particular domain - makes you the person who gets called. It compounds, it is hard to replicate quickly, and it commands better roles. The risk is narrowing into an area that declines.
 
 **Breadth** makes you adaptable and useful in small teams, where one person covers several functions. The risk is being competent at everything and indispensable for nothing.
 
@@ -159,7 +159,7 @@ Once a year, ideally at a quiet point rather than in January with everyone else,
 
 Then set two or three learning objectives for the year, no more, each tied to something you will build or a role you are working toward. Write them down. Tell your manager, which turns them into something the organisation supports rather than something you do alone.
 
-Attend one substantial event a year if you can — a European conference or a serious workshop. The value is less in the talks than in the conversations and in the correction it provides to a view of the field formed entirely online.
+Attend one substantial event a year if you can - a European conference or a serious workshop. The value is less in the talks than in the conversations and in the correction it provides to a view of the field formed entirely online.
 
 ## How OnlyAIJobs Fits Continuous Learning
 
@@ -175,7 +175,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 A machine learning engineer in Denmark reached a point where he was reading constantly and retaining nothing, opening papers he never finished and feeling permanently behind.
 
-He stopped. For one year he read no announcements, no newsletters, no social media in his field. Instead he chose two topics related to his actual work — evaluation methodology and retrieval systems — and worked through a small number of substantial sources properly, building something with each.
+He stopped. For one year he read no announcements, no newsletters, no social media in his field. Instead he chose two topics related to his actual work - evaluation methodology and retrieval systems - and worked through a small number of substantial sources properly, building something with each.
 
 At the end of the year he had missed a great deal of news. He had also become the person at his company others consulted about evaluation, because he understood it rather than recognising the vocabulary.
 

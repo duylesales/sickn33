@@ -22,13 +22,13 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Most startup advisors have a well-worn list of questions for a founder building with AI tools: how big is the market, what's the plan for customer acquisition, how does the unit economics look at scale. All good questions. All ones an ai native founder should be ready to answer.
 
-There are three questions almost nobody asks, and they're the ones that tend to matter most when something concrete — an investor, a partner, a due diligence process — finally puts real pressure on the product underneath the pitch.
+There are three questions almost nobody asks, and they're the ones that tend to matter most when something concrete - an investor, a partner, a due diligence process - finally puts real pressure on the product underneath the pitch.
 
 ## Question one: who actually owns the infrastructure?
 
-Not "who owns the company" — who owns, in a technical and contractual sense, the servers, the hosting account, the database, and the deployment pipeline the product runs on. For a founder who built with an AI tool and never touched a terminal, the honest answer is sometimes "I'm not entirely sure" — the AI platform may hold accounts, credentials, or configurations that the founder has never had to directly access.
+Not "who owns the company" - who owns, in a technical and contractual sense, the servers, the hosting account, the database, and the deployment pipeline the product runs on. For a founder who built with an AI tool and never touched a terminal, the honest answer is sometimes "I'm not entirely sure" - the AI platform may hold accounts, credentials, or configurations that the founder has never had to directly access.
 
-That answer is fine in the earliest days. It becomes a real problem the moment anyone outside the founder needs to verify it — an investor's technical advisor, a potential enterprise customer's procurement team, a partner doing basic diligence before signing an agreement.
+That answer is fine in the earliest days. It becomes a real problem the moment anyone outside the founder needs to verify it - an investor's technical advisor, a potential enterprise customer's procurement team, a partner doing basic diligence before signing an agreement.
 
 ## Question two: who controls the data?
 
@@ -36,47 +36,47 @@ Similar question, different layer. Where does customer data physically live, who
 
 ## Question three: what happens if the underlying AI tool changes or disappears?
 
-Every AI development platform is itself a product built by a company, subject to pricing changes, feature changes, or in the worst case, discontinuation. A founder who has never asked "if this platform changed its terms tomorrow, could I still operate my product" has an unexamined dependency sitting underneath their entire business — one that's invisible until the day it isn't.
+Every AI development platform is itself a product built by a company, subject to pricing changes, feature changes, or in the worst case, discontinuation. A founder who has never asked "if this platform changed its terms tomorrow, could I still operate my product" has an unexamined dependency sitting underneath their entire business - one that's invisible until the day it isn't.
 
 ## Why these three questions get skipped
 
-Advisors, even good ones, tend to ask questions from their own area of expertise — market strategy, fundraising narrative, go-to-market sequencing. Infrastructure and data ownership fall into a gap: too technical for a strategy-focused advisor to feel qualified to probe, and too invisible in a product demo for anyone to think to ask. The product works. The demo is smooth. There's no natural prompt for "wait, who actually controls the thing underneath this."
+Advisors, even good ones, tend to ask questions from their own area of expertise - market strategy, fundraising narrative, go-to-market sequencing. Infrastructure and data ownership fall into a gap: too technical for a strategy-focused advisor to feel qualified to probe, and too invisible in a product demo for anyone to think to ask. The product works. The demo is smooth. There's no natural prompt for "wait, who actually controls the thing underneath this."
 
-That gap is exactly why it tends to surface at the worst possible moment — not during a casual conversation, but during a formal process where someone else is specifically checking for it.
+That gap is exactly why it tends to surface at the worst possible moment - not during a casual conversation, but during a formal process where someone else is specifically checking for it.
 
 ## Ties's stalled partnership
 
-Ties Bakker, a founder in Zutphen, built SubsidieCheck — a grant application tool — using Lovable. His startup advisor was engaged and helpful on strategy, fundraising positioning, and market sizing. The advisor never once asked about data ownership or who actually controlled the underlying infrastructure.
+Ties Bakker, a founder in Zutphen, built SubsidieCheck - a grant application tool - using Lovable. His startup advisor was engaged and helpful on strategy, fundraising positioning, and market sizing. The advisor never once asked about data ownership or who actually controlled the underlying infrastructure.
 
-That gap stayed invisible until a promising partnership opportunity moved into due diligence. The potential partner's team asked, directly, who owned the infrastructure SubsidieCheck ran on and how grant applicant data was stored and controlled. Ties didn't have a confident answer, and the process stalled — not because SubsidieCheck wasn't a good product, but because nobody had ever pressure-tested these specific questions before someone else needed them answered on a deadline.
+That gap stayed invisible until a promising partnership opportunity moved into due diligence. The potential partner's team asked, directly, who owned the infrastructure SubsidieCheck ran on and how grant applicant data was stored and controlled. Ties didn't have a confident answer, and the process stalled - not because SubsidieCheck wasn't a good product, but because nobody had ever pressure-tested these specific questions before someone else needed them answered on a deadline.
 
 ## What asking these questions early actually buys you
 
-The value of these three questions isn't that they need perfect answers on day one. It's that having them asked — and answered honestly, even if the honest answer is "we need to fix this" — turns an invisible risk into a known, addressable one. A founder who can say "we've reviewed our infrastructure ownership and data control, and here's our setup" walks into due diligence in a completely different position than one hearing the question for the first time in that room.
+The value of these three questions isn't that they need perfect answers on day one. It's that having them asked - and answered honestly, even if the honest answer is "we need to fix this" - turns an invisible risk into a known, addressable one. A founder who can say "we've reviewed our infrastructure ownership and data control, and here's our setup" walks into due diligence in a completely different position than one hearing the question for the first time in that room.
 
-Our team, based in Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, works with founders specifically on making these three answers concrete — proper infrastructure ownership, clear data control, and a documented path forward regardless of what any single AI tool does next. LaunchStudio is powered by Manifera, a company with 11+ years of production engineering experience across 160+ delivered projects, and this kind of ownership clarification is a routine part of getting a project production-ready. If you want a straight answer to these three questions about your own product, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact).
+Our team, based in Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, works with founders specifically on making these three answers concrete - proper infrastructure ownership, clear data control, and a documented path forward regardless of what any single AI tool does next. LaunchStudio is powered by Manifera, a company with 11+ years of production engineering experience across 160+ delivered projects, and this kind of ownership clarification is a routine part of getting a project production-ready. If you want a straight answer to these three questions about your own product, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact).
 
 ## How to Prepare Honest Answers to All Three Questions Before Anyone Asks
 
 Knowing the three questions matter is the easy part. Actually being able to answer them, calmly and specifically, when an investor's technical advisor or a partner's diligence team asks, requires a bit of groundwork most founders never get around to until the questions are already being asked under pressure. A focused pass through the following checklist, done once, produces the concrete answers each question actually needs.
 
-**List every account that touches your infrastructure, and who can log into each one.** Hosting, database, domain registrar, any AI platform account tied to deployment — write down each one and whose name and credentials control it. It's common to discover that a co-founder, an early contractor, or the AI platform itself technically holds access nobody has thought to consolidate under the company's own control.
+**List every account that touches your infrastructure, and who can log into each one.** Hosting, database, domain registrar, any AI platform account tied to deployment - write down each one and whose name and credentials control it. It's common to discover that a co-founder, an early contractor, or the AI platform itself technically holds access nobody has thought to consolidate under the company's own control.
 
 **Confirm your company, not an individual or a third-party platform, owns the domain and hosting accounts.** A domain registered under a personal email, or a hosting account tied to an AI tool's managed infrastructure rather than an account your company independently controls, is exactly the kind of detail that reads as a red flag in due diligence, however innocent its origin.
 
-**Write down, in plain language, where customer data physically lives.** Which database, which provider, which region — and whether you could produce a specific customer's data, or delete it entirely, without needing anyone else's help to do so. If the honest answer involves "I'd have to ask the AI platform" or "I'm not sure," that's the gap worth closing before anyone else asks.
+**Write down, in plain language, where customer data physically lives.** Which database, which provider, which region - and whether you could produce a specific customer's data, or delete it entirely, without needing anyone else's help to do so. If the honest answer involves "I'd have to ask the AI platform" or "I'm not sure," that's the gap worth closing before anyone else asks.
 
 **Read the terms of service for any AI platform your infrastructure depends on.** Specifically look for what happens to your deployed application and its data if the platform changes its terms, discontinues a feature, or terminates your account. Knowing the answer, even if it's uncomfortable, is a materially different position than not knowing it exists as a question.
 
-**Draft a one-page summary of all three answers before you need it.** A short, plain-language document — who owns the infrastructure, how data is controlled, what the contingency is if the underlying platform changes — is something you can hand to an advisor, an investor, or a partner's diligence team on short notice, rather than assembling the answers for the first time while someone waits on the other end of a call.
+**Draft a one-page summary of all three answers before you need it.** A short, plain-language document - who owns the infrastructure, how data is controlled, what the contingency is if the underlying platform changes - is something you can hand to an advisor, an investor, or a partner's diligence team on short notice, rather than assembling the answers for the first time while someone waits on the other end of a call.
 
-Doing this once, early, costs a few hours. Doing it for the first time in response to a due diligence request costs considerably more — not just in time, but in the impression it leaves at exactly the moment a partner or investor is deciding how much to trust the rest of what you've told them. The three questions this article opened with aren't a test you pass or fail once; they're a standing part of the business worth being able to answer at any point, not just the point when someone finally asks.
+Doing this once, early, costs a few hours. Doing it for the first time in response to a due diligence request costs considerably more - not just in time, but in the impression it leaves at exactly the moment a partner or investor is deciding how much to trust the rest of what you've told them. The three questions this article opened with aren't a test you pass or fail once; they're a standing part of the business worth being able to answer at any point, not just the point when someone finally asks.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Due Diligence Questions Nobody Had Asked First
 
-Ties Bakker had built SubsidieCheck to help small businesses navigate the grant application process — a genuinely useful tool that had already attracted interest from a larger organization exploring a distribution partnership. Throughout early development, Ties had leaned on a startup advisor for guidance on positioning and growth, and the advice had been solid on every front the advisor covered.
+Ties Bakker had built SubsidieCheck to help small businesses navigate the grant application process - a genuinely useful tool that had already attracted interest from a larger organization exploring a distribution partnership. Throughout early development, Ties had leaned on a startup advisor for guidance on positioning and growth, and the advice had been solid on every front the advisor covered.
 
 Nobody had raised infrastructure or data ownership until the partner's due diligence team did, midway through formal discussions. Their questions were specific: where was applicant data stored, who had administrative access, and what contractual control did Ties actually have over the systems SubsidieCheck depended on. Ties brought the project to LaunchStudio to get real answers before the process could move forward.
 
@@ -85,9 +85,9 @@ Manifera's engineers documented SubsidieCheck's full infrastructure, migrated ho
 **Result:** The partnership discussion resumed with a documented, founder-owned infrastructure setup, and Ties now asks these three questions of any advisor or tool before relying on their guidance.
 
 > *"Nobody had ever asked me who actually owned any of it. I hadn't thought to ask myself either."*
-> — **Ties Bakker, Founder, SubsidieCheck (Zutphen)**
+> - **Ties Bakker, Founder, SubsidieCheck (Zutphen)**
 
-**Cost & Timeline:** €1,600 (infrastructure ownership migration and data documentation) — completed in 10 business days.
+**Cost & Timeline:** €1,600 (infrastructure ownership migration and data documentation) - completed in 10 business days.
 
 ---
 

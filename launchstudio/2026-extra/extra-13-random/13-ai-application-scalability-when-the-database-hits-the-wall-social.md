@@ -1,9 +1,9 @@
-🚨 Koen Hendriks, a librarian in Enschede, built Leesclub on Replit: book clubs schedule meetings, track reading progress chapter by chapter and discuss books. It grew through library networks to ~1,900 clubs and 14,000 readers. Then Sunday evenings started breaking it — slow, then errors. He upgraded to bigger machines twice. Nothing changed. 😳
+🚨 Koen Hendriks, a librarian in Enschede, built Leesclub on Replit: book clubs schedule meetings, track reading progress chapter by chapter and discuss books. It grew through library networks to ~1,900 clubs and 14,000 readers. Then Sunday evenings started breaking it - slow, then errors. He upgraded to bigger machines twice. Nothing changed. 😳
 
 The servers were fine. The database wasn't: every request opened a new Postgres connection, discussion pages ran one query per comment, a 3.2-million-row table had no index on club or user, and every progress update fought over one counter row. Here's why AI app scalability hits the database first: 🧠
 
 ❌ Connections exhausted minutes into the Sunday peak
-❌ N+1 queries — one per comment to fetch its author
+❌ N+1 queries - one per comment to fetch its author
 ❌ No indexes on the columns every query filtered by
 ❌ A "hot row" counter that made large-club members queue
 

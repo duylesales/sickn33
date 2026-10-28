@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 
 Er is een wezenlijk verschil tussen een AI-assistent die één regeltje code suggereert en een autonome AI-agent die zelfstandig een complete applicatie in elkaar zet. De eerste stelt iets voor; jij accepteert of weigert, en de reikwijdte van die beslissing staat helder voor je neus op het scherm. De tweede maakt ongemerkt bestanden aan die je nog nooit hebt geopend, installeert externe npm- of python-packages waarvan je de naam niet kent, past serverconfiguraties aan waarvan je het bestaan niet vermoedde, en meldt vrolijk dat de feature klaar is voor gebruik.
 
-Beide tools zijn waardevol. Maar alleen de tweede vereist een strikte, vaste review-routine. En vrijwel niemand hanteert die routine, juist omdat de opgeleverde functionaliteit direct zichtbaar werkt in de browser — wat exact de eigenschap is die de drang om onder de motorkap te kijken wegneemt.
+Beide tools zijn waardevol. Maar alleen de tweede vereist een strikte, vaste review-routine. En vrijwel niemand hanteert die routine, juist omdat de opgeleverde functionaliteit direct zichtbaar werkt in de browser - wat exact de eigenschap is die de drang om onder de motorkap te kijken wegneemt.
 
 ## Wat een agent op de achtergrond daadwerkelijk aanraakt
 
@@ -32,7 +32,7 @@ Het is goed om dit op een rij te zetten, want veel oprichters onderschatten hoe 
 
 **Afhankelijkheden (dependencies),** geïnstalleerd om iets snel werkend te krijgen. Een simpel verzoek om een interactieve grafiek of een datumkiezer voegt al snel meerdere packages toe, en daarmee direct álle onderliggende bibliotheken waar die packages weer op leunen.
 
-**Configuratiebestanden.** Build-instellingen, opstartcommando's, poorttoewijzingen en runtime-definities — precies de onderdelen die bepalen hoe jouw project opstart en welke netwerktoegang het heeft.
+**Configuratiebestanden.** Build-instellingen, opstartcommando's, poorttoewijzingen en runtime-definities - precies de onderdelen die bepalen hoe jouw project opstart en welke netwerktoegang het heeft.
 
 **API-sleutels en omgevingsvariabelen (secrets),** geregeld aangemaakt met tijdelijke placeholder-waarden die er misleidend realistisch uitzien.
 
@@ -46,7 +46,7 @@ Drie specifieke eigenschappen maken door agents gegenereerde code uniek en verra
 
 **Het model optimaliseert uitsluitend voor "het werkt nu".** Het enige succescriterium van de agent is dat jouw gevraagde prompt visueel functioneert. Niets in dat optimalisatiedoel houdt rekening met de vraag wie er nog meer bij die data kan, wat er gebeurt onder zware serverbelasting, of een extra bibliotheek van 40 megabyte wel proportioneel was.
 
-**De agent kent jouw zakelijke intentie niet.** Jij vroeg om een functionaliteit; het model leidde de rest af — de datastructuur, het autorisatiemodel, de foutafhandeling — op basis van wat het meest waarschijnlijk leek. Die impliciete aannames zijn nergens zichtbaar in het eindresultaat.
+**De agent kent jouw zakelijke intentie niet.** Jij vroeg om een functionaliteit; het model leidde de rest af - de datastructuur, het autorisatiemodel, de foutafhandeling - op basis van wat het meest waarschijnlijk leek. Die impliciete aannames zijn nergens zichtbaar in het eindresultaat.
 
 **Het leest bedrieglijk vlot.** Gegenereerde code ziet er verzorgd uit, is consistent ingesprongen en start bij de eerste poging op. Dit wekt een psychologisch gevoel van betrouwbaarheid op dat onze hersenen associëren met vakmanschap, maar dat in de praktijk totaal niet correleert met robuustheid of veiligheid.
 
@@ -58,7 +58,7 @@ Je hoeft niet elke regel code minutieus uit te pluizen. Het controleren van deze
 
 **2. Alles wat datatoegang regelt.** Kijk waar de code de database leest of beschrijft, en controleer of daar een expliciete controle plaatsvindt op de identiteit van de ingelogde gebruiker. Dit is waar de ernstigste datalekken in AI-apps ontstaan: een agent bouwt uit zichzelf nooit een toegangsbeperking in waar niemand om heeft gevraagd.
 
-**3. API-keys en inloggegevens.** Doorzoek het project op strings die lijken op API-sleutels of database-wachtwoorden. Controleer met name of de agent geen geheime service-role keys heeft geplaatst in code die in de browser van de gebruiker draait — de klassieke fout die een werkende app transformeert in een publiek toegankelijke database.
+**3. API-keys en inloggegevens.** Doorzoek het project op strings die lijken op API-sleutels of database-wachtwoorden. Controleer met name of de agent geen geheime service-role keys heeft geplaatst in code die in de browser van de gebruiker draait - de klassieke fout die een werkende app transformeert in een publiek toegankelijke database.
 
 **4. Configuratie- en build-wijzigingen.** Opstartscripts, poorten, proxy-instellingen en omgevingsvariabelen. Dit wordt zelden gelezen, maar bepaalt hoe stabiel en veilig je app draait zodra hij naar productie gaat.
 
@@ -70,7 +70,7 @@ Veel oprichters die Replit Agent gebruiken hebben geen diepgaande technische ach
 
 **Vraag de agent om in gewone mensentaal uit te leggen wat hij heeft aangepast,** vóórdat je de wijzigingen definitief accepteert. Als de uitleg niet logisch aansluit op wat jij vroeg, weet je direct dat er iets mis is zonder ook maar één regel code te hoeven ontleden.
 
-**Vraag expliciet: "Welke aannames heb je gedaan waar ik niet om heb gevraagd?"** Deze ene vraag legt direct de verborgen keuzes bloot — het gekozen datamodel, de bibliotheek die hij handig vond, of aannames over wie welke schermen mag zien.
+**Vraag expliciet: "Welke aannames heb je gedaan waar ik niet om heb gevraagd?"** Deze ene vraag legt direct de verborgen keuzes bloot - het gekozen datamodel, de bibliotheek die hij handig vond, of aannames over wie welke schermen mag zien.
 
 **Vraag de agent: "Wat zou deze code kunnen laten crashen?"** AI-modellen zijn verrassend eerlijk en accuraat in het opsommen van hun eigen zwakke plekken. Dit levert je direct een kant-en-klare testlijst op.
 
@@ -108,7 +108,7 @@ Na elke flinke sessie: bekijk de lijst met gewijzigde bestanden, check nieuwe pa
 
 Wekelijks: loop de volledige dependency-lijst door, verwijder ongebruikte pakketten en controleer of er geen gevoelige keys in de client-side code zijn beland.
 
-Vóór elke publieke release: voer de zes essentiële productietests uit — probeer met account A de data van account B te lezen, controleer of API-keys zichtbaar zijn in de browserbundel, breek een betaling halverwege af, upload een ongeldig bestandstype, navigeer uitgelogd naar een beveiligde URL en bekijk de foutenlogboeken.
+Vóór elke publieke release: voer de zes essentiële productietests uit - probeer met account A de data van account B te lezen, controleer of API-keys zichtbaar zijn in de browserbundel, breek een betaling halverwege af, upload een ongeldig bestandstype, navigeer uitgelogd naar een beveiligde URL en bekijk de foutenlogboeken.
 
 Dit vertraagt je niet. Het transformeert chaotische bouwsnelheid naar betrouwbare, schaalbare snelheid.
 
@@ -132,7 +132,7 @@ De remedie is simpel: reserveer één keer per maand dertig minuten om je projec
 
 Dit is de meest voorkomende uitkomst bij een project dat meerdere intensieve agent-sessies heeft doorlopen. Het is absoluut geen reden om in paniek opnieuw te beginnen.
 
-LaunchStudio lost dit gericht op als een afgebakend traject: een grondige audit van wat de agent heeft gebouwd, het opschonen van overbodige dependencies, het bouwen en verifiëren van waterdichte autorisatieregels, het centraliseren en roteren van API-sleutels, het verplaatsen van bestandsuploads naar duurzame cloudopslag (zoals S3 of Supabase Storage) en het reproduceerbaar maken van deployments — terwijl de interface die jij hebt ontworpen volledig intact blijft en de codebase 100% geschikt blijft voor verdere samenwerking met de agent.
+LaunchStudio lost dit gericht op als een afgebakend traject: een grondige audit van wat de agent heeft gebouwd, het opschonen van overbodige dependencies, het bouwen en verifiëren van waterdichte autorisatieregels, het centraliseren en roteren van API-sleutels, het verplaatsen van bestandsuploads naar duurzame cloudopslag (zoals S3 of Supabase Storage) en het reproduceerbaar maken van deployments - terwijl de interface die jij hebt ontworpen volledig intact blijft en de codebase 100% geschikt blijft voor verdere samenwerking met de agent.
 
 Onze engineers komen van Manifera: elf jaar ervaring in enterprise productiesystemen voor partijen zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad, waar het reviewen en beveiligen van andermans code dagelijkse kost is.
 
@@ -146,16 +146,16 @@ Freek Wiersma bouwde via Replit Werkbriefje: een digitale werkbonnen-app voor vi
 
 Freek zette de update live zonder de lijst met gewijzigde bestanden te inspecteren.
 
-Drie weken later weigerde de server ineens op te starten na een reguliere herstart. Onderzoek bracht aan het licht wat er tijdens die ene sessie werkelijk was gebeurd: de PDF-functie had elf nieuwe packages geïnstalleerd, waaronder een complete headless Chrome-browser die bij elke start gigantisch veel servergeheugen opeiste. Daarnaast had de agent een lokaal cache-mapje aangemaakt om gegenereerde bestanden naast de broncode op te slaan — waardoor bij elke server-herstart alle eerder gegenereerde werkbonnen geruisloos werden gewist. Tot overmaat van ramp had het model een licentiesleutel voor een commerciële library hardcoded in een bestand opgeslagen en meegecommit naar de repository.
+Drie weken later weigerde de server ineens op te starten na een reguliere herstart. Onderzoek bracht aan het licht wat er tijdens die ene sessie werkelijk was gebeurd: de PDF-functie had elf nieuwe packages geïnstalleerd, waaronder een complete headless Chrome-browser die bij elke start gigantisch veel servergeheugen opeiste. Daarnaast had de agent een lokaal cache-mapje aangemaakt om gegenereerde bestanden naast de broncode op te slaan - waardoor bij elke server-herstart alle eerder gegenereerde werkbonnen geruisloos werden gewist. Tot overmaat van ramp had het model een licentiesleutel voor een commerciële library hardcoded in een bestand opgeslagen en meegecommit naar de repository.
 
 De herstelwerkzaamheden vergden vijf werkdagen: de PDF-generator herbouwd met een lichte, serverless-vriendelijke bibliotheek die aansloot op het werkelijke volume, negen overbodige packages verwijderd, bestandsuploads verplaatst naar externe objectopslag met strikte autorisatie per installatiebedrijf, de gelekte sleutel geroteerd en verplaatst naar veilige omgevingsvariabelen, en een vaste review-gewoonte geïntroduceerd.
 
-**Resultaat:** de opstarttijd van de server normaliseerde direct, de verdwenen werkbonnen werden opnieuw gegenereerd uit de database en Freek controleert nu standaard na elke agent-sessie de bestandslijst — wat hem twee minuten per sessie kost en waarmee hij sindsdien al twee overbodige packages tijdig wist te voorkomen.
+**Resultaat:** de opstarttijd van de server normaliseerde direct, de verdwenen werkbonnen werden opnieuw gegenereerd uit de database en Freek controleert nu standaard na elke agent-sessie de bestandslijst - wat hem twee minuten per sessie kost en waarmee hij sindsdien al twee overbodige packages tijdig wist te voorkomen.
 
 > *"Het model bouwde die functie in twintig minuten en ik was dolblij. Maar het installeerde op de achtergrond een complete browser om een documentje te printen en dropte een geheime sleutel in mijn repo. Daar kwam ik pas drie weken later achter."*
-> — **Freek Wiersma, Oprichter, Werkbriefje (Zutphen)**
+> - **Freek Wiersma, Oprichter, Werkbriefje (Zutphen)**
 
-**Kosten & Doorlooptijd:** € 2.200 (opschonen dependencies, herbouw PDF-pipeline, migratie bestandsopslag, key-rotatie) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.200 (opschonen dependencies, herbouw PDF-pipeline, migratie bestandsopslag, key-rotatie) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 

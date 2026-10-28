@@ -1,4 +1,4 @@
-🚨 Charlotte, a career coach, used **Cursor** to build a resume optimizer — but manually managing the streaming chunks in React caused UI flickering and duplicate token rendering on every suggestion. ⚡
+🚨 Charlotte, a career coach, used **Cursor** to build a resume optimizer - but manually managing the streaming chunks in React caused UI flickering and duplicate token rendering on every suggestion. ⚡
 
 Parsing a raw AI text stream by hand is a nightmare; the Vercel AI SDK reduces that entire headache to one React hook. 🧠
 

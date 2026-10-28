@@ -1,4 +1,4 @@
-🏛️ Noah, a legal tech founder, built an AI contract finder using **Cursor** — then watched his search queries stall at 5+ seconds as his database grew to 50,000 document chunks, destroying the user experience for law firm clients. 📄
+🏛️ Noah, a legal tech founder, built an AI contract finder using **Cursor** - then watched his search queries stall at 5+ seconds as his database grew to 50,000 document chunks, destroying the user experience for law firm clients. 📄
 
 Maintaining a separate vector database alongside SQL creates synchronization bugs, orphaned vectors, and slow unindexed full-table scans. 🧠
 

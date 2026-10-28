@@ -93,16 +93,16 @@ Het Manifera-team herbouwde het platform in 15 werkdagen:
 **Resultaat:** AdCopyAI transformeerde van een simpele wrapper naar een onmisbaar marketingplatform. De maandelijkse churn daalde van 80% naar slechts 4%. Sophie verhoogde de abonnementsprijs naar €89 per maand en de maandelijks terugkerende omzet stabiliseerde op €14.000 MRR.
 
 > *"Ik dacht dat ik een SaaS had gebouwd, maar ik had eigenlijk gewoon een API-doorgeefluik gemaakt. Het extreme verloop bracht mijn bedrijf bijna ten val. LaunchStudio bouwde de diepe workflow-koppelingen en datastromen die mijn software écht waardevol maakten."*
-> — **Sophie Laurent, Oprichter, AdCopyAI (Parijs)**
+> - **Sophie Laurent, Oprichter, AdCopyAI (Parijs)**
 
-**Kosten & Doorlooptijd:** €6.500 (Launch & Grow Pakket met Workflow Integraties Add-on) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €6.500 (Launch & Grow Pakket met Workflow Integraties Add-on) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Wordt mijn AI SaaS overbodig zodra OpenAI een nieuw en slimmer model uitbrengt?
-Als u een oppervlakkige Thin Wrapper heeft: ja. Maar als u een Thick Wrapper bouwt met LaunchStudio — waarin unieke bedrijfsdata via RAG is gekoppeld en de AI is ingebed in een complete menselijke workflow — maakt een nieuw model uw platform juist sterker. U wisselt simpelweg het API-endpoint en uw product wordt direct sneller en intelligenter.
+Als u een oppervlakkige Thin Wrapper heeft: ja. Maar als u een Thick Wrapper bouwt met LaunchStudio - waarin unieke bedrijfsdata via RAG is gekoppeld en de AI is ingebed in een complete menselijke workflow - maakt een nieuw model uw platform juist sterker. U wisselt simpelweg het API-endpoint en uw product wordt direct sneller en intelligenter.
 
 ### Hoe bespaart semantische caching concreet geld voor mijn AI SaaS?
 Traditionele caching vereist een 100% letterlijke overeenkomst. Semantische caching zet de vraag om in een vector en vergelijkt de betekenis wiskundig. Is de strekking voor 95% gelijk, dan levert het direct het gecachete antwoord. LaunchStudio implementeert dit via Redis, wat bij herhalende taken tot 60% op uw API-factuur bespaart.

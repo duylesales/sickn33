@@ -24,7 +24,7 @@ Most B2B products eventually produce documents. Invoices and credit notes, quote
 
 They are also among the least reliable parts of AI-built products. The first PDF feature is usually generated in the browser by taking a screenshot of an HTML page and placing it in a PDF. It looks acceptable on the founder's laptop for a one-page invoice. On a phone, for a twelve-page report, in another browser, or a year later when someone needs to know exactly what was sent, it falls apart.
 
-This article covers why browser-generated PDFs fail, the server-side approaches that work, the property that matters most — a document that was sent must never change — and the details that separate a professional document from one that looks generated.
+This article covers why browser-generated PDFs fail, the server-side approaches that work, the property that matters most - a document that was sent must never change - and the details that separate a professional document from one that looks generated.
 
 ## Why Browser-Generated PDFs Fail
 
@@ -36,7 +36,7 @@ The common AI-generated pattern renders the document as a hidden HTML element, c
 
 **It depends on the device.** Fonts, screen width, pixel density and memory differ. Large documents exhaust memory on phones and fail silently, which is exactly where field staff generate them.
 
-**It is regenerated from current data.** Each download renders the document again from whatever is in the database now — which is the problem described below.
+**It is regenerated from current data.** Each download renders the document again from whatever is in the database now - which is the problem described below.
 
 **It cannot run without a person.** A document generated in the browser cannot be created by a scheduled job, attached to an automatic email, or produced in bulk at month end.
 
@@ -46,13 +46,13 @@ Each of these is tolerable for a prototype. Together they mean documents should 
 
 | Approach | How it works | Strengths | Weaknesses |
 |---|---|---|---|
-| HTML to PDF with headless Chromium | Render an HTML template in a real browser engine and print it to PDF | Use HTML and CSS you already know; excellent typography; tables and layouts are easy | Chromium is heavy — it does not run in a Supabase edge function; needs a container or a service |
+| HTML to PDF with headless Chromium | Render an HTML template in a real browser engine and print it to PDF | Use HTML and CSS you already know; excellent typography; tables and layouts are easy | Chromium is heavy - it does not run in a Supabase edge function; needs a container or a service |
 | Programmatic PDF libraries | Build the document in code with a library such as PDFKit, pdf-lib or React-PDF | Lightweight, runs almost anywhere, precise control | Layout is laborious; complex tables and flowing text take real effort |
 | A document service | Send data and a template to a hosted API that returns the PDF | Nothing to operate; often handles PDF/A, fonts and scale | A per-document cost; customer data leaves your infrastructure, so it is a subprocessor |
 
-For most products the right choice is HTML to PDF with headless Chromium, run either as a small container on a platform that supports long-running processes — a self-hosted Gotenberg instance is a common choice — or through a hosted rendering service in the EU. Templates are HTML and CSS, which a developer and an AI assistant can both work with, and the output has real, selectable text.
+For most products the right choice is HTML to PDF with headless Chromium, run either as a small container on a platform that supports long-running processes - a self-hosted Gotenberg instance is a common choice - or through a hosted rendering service in the EU. Templates are HTML and CSS, which a developer and an AI assistant can both work with, and the output has real, selectable text.
 
-Programmatic libraries suit simple, highly regular documents — a certificate, a label, a one-page receipt — where layout is fixed and you want to avoid running a browser.
+Programmatic libraries suit simple, highly regular documents - a certificate, a label, a one-page receipt - where layout is fixed and you want to avoid running a browser.
 
 Whichever you choose, the rendering does not belong in the request that the user is waiting on. That is the next section.
 
@@ -62,7 +62,7 @@ Rendering a twenty-page report takes seconds, sometimes tens of seconds, and occ
 
 The pattern from the background work article in this series applies directly:
 
-1. The action — "send invoice", "finalise report" — creates a `documents` record with status `pending`.
+1. The action - "send invoice", "finalise report" - creates a `documents` record with status `pending`.
 2. A worker picks it up, renders the PDF, stores it, and sets the status to `ready` along with the storage path, size and checksum.
 3. The interface shows progress and the result; an email with a link is sent once the document is ready.
 4. Failed renders are retried with backoff; after the final failure the record shows an error that someone is alerted to.
@@ -95,9 +95,9 @@ For invoices this is also a legal matter. Dutch bookkeeping obligations require 
 
 The rules:
 
-- **Generate once, at the moment the document is issued** — when the invoice is sent, the quote is shared, the report is finalised — and store the file.
+- **Generate once, at the moment the document is issued** - when the invoice is sent, the quote is shared, the report is finalised - and store the file.
 - **Serve the stored file** from then on. Never re-render an issued document.
-- **Snapshot the data** the document was built from — line items, prices, addresses, VAT rates — in the record itself or in a JSON column, so the document and its data agree forever.
+- **Snapshot the data** the document was built from - line items, prices, addresses, VAT rates - in the record itself or in a JSON column, so the document and its data agree forever.
 - **Record a checksum.** A SHA-256 hash of the file proves later that it has not been altered.
 - **Correct with a new document.** A wrong invoice is followed by a credit note and a new invoice; a revised quote is version 2, with version 1 still available. Nothing is overwritten.
 
@@ -113,11 +113,11 @@ The difference between a document that looks generated and one that looks profes
 
 **Headers, footers and page numbers.** "Pagina 3 van 7" in the footer, with the company details and the document number on every page. Headless Chromium supports header and footer templates for exactly this.
 
-**Embed fonts.** Bundle the font files with the template rather than relying on what the rendering machine has installed. A missing font silently falls back, and a missing euro sign — "€" rendered as an empty box — is surprisingly common.
+**Embed fonts.** Bundle the font files with the template rather than relying on what the rendering machine has installed. A missing font silently falls back, and a missing euro sign - "€" rendered as an empty box - is surprisingly common.
 
 **Use the locale.** Amounts as € 1.250,50 and dates as 13 maart 2028 for Dutch documents, as the internationalisation article in this series describes; the document language follows the customer's settings rather than the user's interface language.
 
-**Version the template.** Store the template version on each document. When the design changes, old documents keep their old appearance because they are stored files — and you can still tell which template produced them.
+**Version the template.** Store the template version on each document. When the design changes, old documents keep their old appearance because they are stored files - and you can still tell which template produced them.
 
 ## Archiving and Accessibility
 
@@ -125,20 +125,20 @@ Two standards are worth knowing.
 
 **PDF/A** is the archival profile of PDF: fonts embedded, no external dependencies, no features that may not render in twenty years. Accountants, government bodies and some sectors expect it for records that must be kept. Most rendering services and Chromium-based tools can produce PDF/A-2b with the right settings, or the output can be converted. If you issue invoices or certificates, produce PDF/A.
 
-**Tagged PDF** carries the document structure — headings, tables, reading order — so screen readers can interpret it. The European Accessibility Act article in this series explains when this becomes an obligation; producing documents from semantic HTML through Chromium gets most of the way there, while image-based PDFs never can.
+**Tagged PDF** carries the document structure - headings, tables, reading order - so screen readers can interpret it. The European Accessibility Act article in this series explains when this becomes an obligation; producing documents from semantic HTML through Chromium gets most of the way there, while image-based PDFs never can.
 
 ## The Security Risk in Rendering HTML
 
 Rendering HTML on a server introduces a risk that is easy to miss: the template contains data that users typed.
 
-A customer name, an address line or a note containing HTML — `<img src="http://169.254.169.254/latest/meta-data/">` or `<iframe src="file:///etc/passwd">` — is interpreted by the headless browser when the document is rendered. Depending on the setup, the browser on your server fetches internal URLs, reads local files or makes requests to arbitrary sites, and the result may even appear in the PDF. This is server-side request forgery through the document generator, and it has been found in many products.
+A customer name, an address line or a note containing HTML - `<img src="http://169.254.169.254/latest/meta-data/">` or `<iframe src="file:///etc/passwd">` - is interpreted by the headless browser when the document is rendered. Depending on the setup, the browser on your server fetches internal URLs, reads local files or makes requests to arbitrary sites, and the result may even appear in the PDF. This is server-side request forgery through the document generator, and it has been found in many products.
 
 Four measures close it:
 
 - **Escape all user data** in templates. Use a templating engine that escapes by default, and never insert user content as raw HTML.
-- **Disable network access** for the rendering process except to the specific hosts it needs — usually none, if fonts and images are bundled.
+- **Disable network access** for the rendering process except to the specific hosts it needs - usually none, if fonts and images are bundled.
 - **Disable JavaScript** in templates unless it is required.
-- **Run the renderer isolated** — its own container, no credentials, no access to your database or internal network.
+- **Run the renderer isolated** - its own container, no credentials, no access to your database or internal network.
 
 Treat the renderer as you would treat any component that processes untrusted input, as the file upload articles in this series describe.
 
@@ -146,15 +146,15 @@ Treat the renderer as you would treat any component that processes untrusted inp
 
 Generated documents are files, and the storage articles in this series apply in full.
 
-Store them in a private bucket under an organisation-first path — `org/{id}/invoices/{invoice}/v1.pdf` — and serve them through short-lived signed URLs after checking that the user may see that document. Email a link to the document in the product rather than attaching it, except where the recipient genuinely needs the attachment — invoices sent to a customer's accounts payable address are the common exception, and then only the invoice itself.
+Store them in a private bucket under an organisation-first path - `org/{id}/invoices/{invoice}/v1.pdf` - and serve them through short-lived signed URLs after checking that the user may see that document. Email a link to the document in the product rather than attaching it, except where the recipient genuinely needs the attachment - invoices sent to a customer's accounts payable address are the common exception, and then only the invoice itself.
 
-Remember that documents are personal data when they contain names and addresses. They belong in your retention register, they must be included in full account exports, as the data exports article describes, and they must be deleted when the retention period ends — except where bookkeeping law requires you to keep them, which is a reason to write the retention rule per document type.
+Remember that documents are personal data when they contain names and addresses. They belong in your retention register, they must be included in full account exports, as the data exports article describes, and they must be deleted when the retention period ends - except where bookkeeping law requires you to keep them, which is a reason to write the retention rule per document type.
 
 ## When a PDF Is Not Enough: E-Invoicing
 
 For invoices specifically, a PDF is increasingly only half the answer.
 
-Dutch public bodies — ministries, municipalities, provinces and many semi-public organisations — require suppliers to send e-invoices: structured files in the European standard format, typically UBL following the Dutch NLCIUS profile, delivered through the Peppol network rather than by email. A PDF attached to an email is not accepted by their processing systems. Larger private companies increasingly ask for the same, because a structured invoice goes straight into their accounts payable process without anyone typing it in, and the European move towards mandatory e-invoicing for business-to-business transactions makes this a direction rather than an option.
+Dutch public bodies - ministries, municipalities, provinces and many semi-public organisations - require suppliers to send e-invoices: structured files in the European standard format, typically UBL following the Dutch NLCIUS profile, delivered through the Peppol network rather than by email. A PDF attached to an email is not accepted by their processing systems. Larger private companies increasingly ask for the same, because a structured invoice goes straight into their accounts payable process without anyone typing it in, and the European move towards mandatory e-invoicing for business-to-business transactions makes this a direction rather than an option.
 
 Three consequences for document generation:
 
@@ -162,13 +162,13 @@ Three consequences for document generation:
 - **Embed or attach the PDF as the human-readable version.** UBL allows the PDF to be included, so the recipient has both.
 - **Use an access point for Peppol.** Sending through Peppol requires a certified access point; for a small product this is a service you connect to, often the same one your customers' accounting software already uses, rather than something you build.
 
-If your customers sell to public bodies — care providers, installers, consultancies, training providers frequently do — e-invoicing will be one of the first enterprise requirements they bring to you, and it is far simpler when invoices are already immutable, snapshotted records.
+If your customers sell to public bodies - care providers, installers, consultancies, training providers frequently do - e-invoicing will be one of the first enterprise requirements they bring to you, and it is far simpler when invoices are already immutable, snapshotted records.
 
 ## Bulk and Scheduled Generation
 
 Month end brings the volume problem: four hundred invoices to generate and send at once, or a report per location every Monday.
 
-Queue them as individual document jobs rather than one large job, so a single failure affects one document. Limit concurrency to what the renderer can handle — Chromium uses significant memory per page — and monitor the queue length. A month-end run that takes three hours because it was rendered serially in one process is a common discovery the first time it happens.
+Queue them as individual document jobs rather than one large job, so a single failure affects one document. Limit concurrency to what the renderer can handle - Chromium uses significant memory per page - and monitor the queue length. A month-end run that takes three hours because it was rendered serially in one process is a common discovery the first time it happens.
 
 Record a batch for bulk runs, with counts of rendered, failed and sent documents, so the person who started it can see that all four hundred actually went out.
 
@@ -179,14 +179,14 @@ Documents are easy to break without noticing: a template change shifts a column,
 Three kinds of test help:
 
 - **Text assertions.** Extract the text from a generated PDF and assert that the invoice number, totals, VAT amounts and dates are present and correct.
-- **Visual snapshots.** Render a set of representative documents — one line, forty lines, a long customer name, a zero-rated line — to images and compare them with approved snapshots, failing on significant differences.
+- **Visual snapshots.** Render a set of representative documents - one line, forty lines, a long customer name, a zero-rated line - to images and compare them with approved snapshots, failing on significant differences.
 - **Edge cases.** A document that spans exactly a page boundary, characters such as ë, ß and €, and a user value containing HTML that must appear as literal text.
 
 ## Setting This Up
 
 For a Lovable product that issues documents, this is typically three to five days: server-side rendering with headless Chromium in an isolated container or an EU rendering service, generation as background jobs with idempotent document records, retries and alerting, issued documents generated once and stored with a data snapshot, template version and checksum, corrections as new versions or credit notes, print CSS for A4 with controlled page breaks, repeated table headers, page numbers and embedded fonts, locale-aware formatting, PDF/A for records that must be archived, escaped templates with network and JavaScript disabled in the renderer, private storage with signed URLs and links instead of attachments, retention rules per document type, queued bulk generation with batch reporting, and text and visual snapshot tests.
 
-LaunchStudio builds this when documents are the part of the product customers forward to their own customers. The engineers are Manifera's — eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio builds this when documents are the part of the product customers forward to their own customers. The engineers are Manifera's - eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Send us a PDF your product generated](https://launchstudio.eu/en/#contact) and we will tell you how it was made.
 
@@ -196,7 +196,7 @@ LaunchStudio builds this when documents are the part of the product customers fo
 
 Hidde Brouwer built Offertetool in Lovable: quotes and order confirmations for kitchen and bathroom installers, used by 38 companies whose sales staff work largely on site with customers.
 
-Quotes were generated in the browser with `html2canvas` and `jsPDF`. Multi-page quotes cut table rows in half at page breaks, the text could not be selected, and on phones — where most quotes were produced, in customers' kitchens — quotes longer than three pages failed without an error. Every download rendered the quote again from the current database.
+Quotes were generated in the browser with `html2canvas` and `jsPDF`. Multi-page quotes cut table rows in half at page breaks, the text could not be selected, and on phones - where most quotes were produced, in customers' kitchens - quotes longer than three pages failed without an error. Every download rendered the quote again from the current database.
 
 The problem became expensive when an installer updated their price list. A homeowner who had signed a quote in January downloaded it again in April to compare with the invoice and found different prices: the April download had been rendered from the new price list. The difference was €2,300, the homeowner had the April PDF, and the installer had nothing to show what had been sent in January. They honoured the lower price.
 
@@ -205,9 +205,9 @@ Four business days: rendering moved to a headless Chromium container behind a jo
 **Result:** forty-page quotes render in around six seconds and work from any phone, because the phone no longer does the work. Every quote sent since can be shown exactly as it was sent, with its checksum. Two installers have since used the stored versions to settle disagreements in their favour within a day.
 
 > *"The customer had a PDF of our quote with prices we never offered. We had generated it ourselves, three months later, from the new price list."*
-> — **Hidde Brouwer, Founder, Offertetool (Veenendaal)**
+> - **Hidde Brouwer, Founder, Offertetool (Veenendaal)**
 
-**Cost & Timeline:** €3,900 (server-side rendering with job queue, immutable versioned documents with data snapshots and checksums, A4 print templates with pagination and embedded fonts, PDF/A output, renderer isolation and escaping, signed storage, snapshot test suite) — completed in 4 business days.
+**Cost & Timeline:** €3,900 (server-side rendering with job queue, immutable versioned documents with data snapshots and checksums, A4 print templates with pagination and embedded fonts, PDF/A output, renderer isolation and escaping, signed storage, snapshot test suite) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

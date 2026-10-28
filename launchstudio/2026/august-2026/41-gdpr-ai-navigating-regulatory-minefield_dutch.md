@@ -37,9 +37,9 @@ De kernfilosofie van Machine Learning is: "verzamel alle data en bewaar alles vo
 
 Onder Artikel 17 van de AVG heeft elke Europese burger het "Recht op Gegevenswissing". Als een gebruiker uw startup mailt met het verzoek: "Verwijder mijn account en alle data die aan mij gekoppeld is," heeft u wettelijk maximaal 30 dagen om hieraan te voldoen, waarbij toezichthouders in de praktijk verwachten dat de ontvangst van het verzoek binnen 72 uur wordt bevestigd.
 
-In een traditionele SaaS voert u een eenvoudige SQL-query uit (`DELETE FROM users WHERE email='john@smith.com'`) en bent u direct compliant. In een AI-startup ontstaat echter een juridische crisissituatie als u historische supporttickets of documenten van deze gebruiker heeft gebruikt om een custom LLM te trainen of te fine-tunen. Neurale netwerkgewichten (weights) kennen geen gebruikers-ID's — er bestaat geen `WHERE`-clausule die u kunt uitvoeren op een getraind model van 7 miljard parameters. Academisch onderzoek naar "Machine Unlearning" (zoals SISA-training of gradiënt-gebaseerde invloedsverwijdering) bestaat weliswaar, maar is nog lang niet productierijp genoeg om stand te houden voor een privacy-toezichthouder. Als het model later data van die gebruiker hallucineert naar een andere klant, pleegt u een aantoonbare AVG-overtreding met een zeer moeilijk te verklaren bronoorzaak.
+In een traditionele SaaS voert u een eenvoudige SQL-query uit (`DELETE FROM users WHERE email='john@smith.com'`) en bent u direct compliant. In een AI-startup ontstaat echter een juridische crisissituatie als u historische supporttickets of documenten van deze gebruiker heeft gebruikt om een custom LLM te trainen of te fine-tunen. Neurale netwerkgewichten (weights) kennen geen gebruikers-ID's - er bestaat geen `WHERE`-clausule die u kunt uitvoeren op een getraind model van 7 miljard parameters. Academisch onderzoek naar "Machine Unlearning" (zoals SISA-training of gradiënt-gebaseerde invloedsverwijdering) bestaat weliswaar, maar is nog lang niet productierijp genoeg om stand te houden voor een privacy-toezichthouder. Als het model later data van die gebruiker hallucineert naar een andere klant, pleegt u een aantoonbare AVG-overtreding met een zeer moeilijk te verklaren bronoorzaak.
 
-**De Oplossing:** Gebruik nooit data van Europese gebruikers voor het trainen of fine-tunen van modellen, tenzij u beschikt over expliciete, actieve en vrijelijk herroepbare toestemming onder Artikel 7 AVG. Hanteer uitsluitend Retrieval-Augmented Generation (RAG) architecturen, waarbij relevante context tijdens de zoekvraag dynamisch wordt opgehaald zonder de onderliggende modelgewichten aan te passen — waardoor gegevensverwijdering een pure database-operatie blijft in plaats van een onoplosbaar machine learning probleem.
+**De Oplossing:** Gebruik nooit data van Europese gebruikers voor het trainen of fine-tunen van modellen, tenzij u beschikt over expliciete, actieve en vrijelijk herroepbare toestemming onder Artikel 7 AVG. Hanteer uitsluitend Retrieval-Augmented Generation (RAG) architecturen, waarbij relevante context tijdens de zoekvraag dynamisch wordt opgehaald zonder de onderliggende modelgewichten aan te passen - waardoor gegevensverwijdering een pure database-operatie blijft in plaats van een onoplosbaar machine learning probleem.
 
 ## RAG en het Verwijderen van Vector-Embeddings
 
@@ -51,7 +51,7 @@ Uw verwijderingsscripts moeten daarom een volledige trapsgewijze verwijdering (c
 
 Onder de AVG bent u de **Verwerkingsverantwoordelijke** (Data Controller) en is de externe AI-provider (zoals OpenAI of Anthropic) uw **Verwerker** (Data Processor) onder Artikel 28. Als uw SaaS de tekst van een Europese gebruiker naar een LLM-API stuurt, bent u wettelijk verplicht om een officiële Verwerkersovereenkomst (Data Processing Agreement, DPA) met hen af te sluiten, waarin alle subverwerkers en cloudinfrastructuur (zoals Azure, AWS of GCP) expliciet vermeld staan.
 
-Daarnaast speelt de internationale gegevensdoorgifte een cruciale rol. Sinds het *Schrems II*-arrest vereist doorgifte van persoonsgegevens naar Amerikaanse servers Standard Contractual Clauses (SCC's) en een Transfer Impact Assessment (TIA). Grote LLM-providers bieden inmiddels verwerking binnen Europese datacenters aan — voor enterprise- en overheidsopdrachten in Duitsland, Frankrijk en Nederland is verwerking binnen de EU inmiddels een keiharde inkoopeis.
+Daarnaast speelt de internationale gegevensdoorgifte een cruciale rol. Sinds het *Schrems II*-arrest vereist doorgifte van persoonsgegevens naar Amerikaanse servers Standard Contractual Clauses (SCC's) en een Transfer Impact Assessment (TIA). Grote LLM-providers bieden inmiddels verwerking binnen Europese datacenters aan - voor enterprise- en overheidsopdrachten in Duitsland, Frankrijk en Nederland is verwerking binnen de EU inmiddels een keiharde inkoopeis.
 
 Cruciaal is bovendien dat u uitsluitend zakelijke API-tiers gebruikt die **Zero Data Retention** voor modeltraining contractueel garanderen. Consumenteninterfaces gebruiken gespreksdata standaard voor modeltraining; de zakelijke enterprise API-tier doet dit niet. U moet in uw privacybeleid expliciet vastleggen dat data uitsluitend voor verwerking wordt doorgestuurd en binnen een afgebakend venster van de servers van de provider wordt gewist.
 
@@ -63,7 +63,7 @@ Een DPIA dwingt u om datastromen, risico's en mitigerende beveiligingsmaatregele
 
 ## De Samenloop met de Europese AI Act
 
-Sinds 2026 legt de **Europese AI Act** een aanvullende wetgevingslaag bovenop de AVG. Wordt uw AI-software ingezet voor beslissingen die de levens van burgers direct beïnvloeden — zoals geautomatiseerde cv-screening bij werving of kredietbeoordeling — dan valt uw applicatie in de categorie "Hoog Risico" (High-Risk).
+Sinds 2026 legt de **Europese AI Act** een aanvullende wetgevingslaag bovenop de AVG. Wordt uw AI-software ingezet voor beslissingen die de levens van burgers direct beïnvloeden - zoals geautomatiseerde cv-screening bij werving of kredietbeoordeling - dan valt uw applicatie in de categorie "Hoog Risico" (High-Risk).
 
 U bent dan verplicht om transparante toelichtingen te bieden over hoe de AI tot een besluit is gekomen én te zorgen voor een **Human-in-the-Loop (HITL)** met bevoegdheid om algoritmes te overrulen. De transparantie-eisen van de AI Act en Artikel 22 van de AVG (recht om niet onderworpen te worden aan uitsluitend geautomatiseerde besluitvorming) lopen direct in elkaar over, en uw architectuur moet aan beide tegelijkertijd voldoen.
 
@@ -94,7 +94,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implement
 
 **Resultaat:** Het portaal werd 100% AVG-conform en slaagde glansrijk voor externe Europese privacy-audits.
 
-**Kosten & Tijdlijn:** €2.200 (AVG Compliance Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.200 (AVG Compliance Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

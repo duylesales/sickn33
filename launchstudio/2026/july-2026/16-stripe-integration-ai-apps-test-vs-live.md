@@ -5,7 +5,7 @@ Buyer Stage: Awareness
 ---
 
 # Stripe Integration for AI Development: Test Mode vs. Live Mode
-When you prompt an AI builder like Lovable or Cursor to "add Stripe payments," it generates a test mode integration. It looks real, the checkout window opens, and the success page renders — but it cannot process real money. The transition from a test mode prototype to a live, production-ready Stripe integration is one of the most critical steps before launch. Here is the technical roadmap for crossing that bridge safely.
+When you prompt an AI builder like Lovable or Cursor to "add Stripe payments," it generates a test mode integration. It looks real, the checkout window opens, and the success page renders - but it cannot process real money. The transition from a test mode prototype to a live, production-ready Stripe integration is one of the most critical steps before launch. Here is the technical roadmap for crossing that bridge safely.
 
 ## Why AI Builders Stop at Test Mode
 
@@ -77,7 +77,7 @@ Aria partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 
 **Result:** Aria secured all payment flows, capturing €2,800 in valid revenue in its first week of live operation.
 
-**Cost & Timeline:** €950 (Billing Integration Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €950 (Billing Integration Package) - production-ready and deployed in 3 business days.
 
 ---
 

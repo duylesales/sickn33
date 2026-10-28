@@ -1,4 +1,4 @@
-🚨 "We code incredibly fast!" — The most dangerous lie told by cheap offshore agencies. ☠️💸
+🚨 "We code incredibly fast!" - The most dangerous lie told by cheap offshore agencies. ☠️💸
 
 Many enterprises fall into the trap of hiring **Custom Software Development Firms** based purely on the lowest initial quote. The result? A massive mountain of Technical Debt, zero Unit Tests, and a fragmented architecture. 💥
 

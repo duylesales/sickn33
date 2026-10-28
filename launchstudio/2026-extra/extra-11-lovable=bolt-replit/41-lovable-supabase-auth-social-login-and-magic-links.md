@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Authentication is the part of an AI-built app that most convincingly looks finished. Signup works, login works, the password reset email arrives, and there is a button for signing in with Google. A founder reasonably concludes that this box is ticked.
 
-It is ticked for the path you tested. The settings underneath were chosen to make building fast, and several of them are actively wrong for a product with real users — not in a way that produces errors, but in a way that produces accounts on addresses nobody owns, redirects that break at launch, and a recovery flow that becomes your support queue.
+It is ticked for the path you tested. The settings underneath were chosen to make building fast, and several of them are actively wrong for a product with real users - not in a way that produces errors, but in a way that produces accounts on addresses nobody owns, redirects that break at launch, and a recovery flow that becomes your support queue.
 
 ## What Arrives Configured, and What Does Not
 
@@ -34,7 +34,7 @@ What it does not get is a decision about how any of it should behave for your pr
 
 The most consequential toggle in the whole system. With confirmation disabled, anyone can create an account on any address, including one belonging to someone else.
 
-That matters more than it sounds. Your app will send things to that address — notifications about their data, an invoice, a password reset, sometimes content from other users. An unconfirmed account means you are sending to an address nobody has proven they control. It also means abuse costs nothing: automated signups need no mailbox at all.
+That matters more than it sounds. Your app will send things to that address - notifications about their data, an invoice, a password reset, sometimes content from other users. An unconfirmed account means you are sending to an address nobody has proven they control. It also means abuse costs nothing: automated signups need no mailbox at all.
 
 Enable confirmation before launch and test the whole path afterwards, because enabling it changes what happens immediately after signup. An app built assuming instant access frequently drops people on a blank screen once a confirmation step appears between them and the product.
 
@@ -42,9 +42,9 @@ Enable confirmation before launch and test the whole path afterwards, because en
 
 Social providers work flawlessly in development and break at exactly one moment: when you connect a custom domain.
 
-The mechanism is simple. Each provider holds a list of addresses it is permitted to send users back to after authenticating. During development that list contains your preview URL. When your app moves to its own domain, the provider still returns people to the old address — or refuses entirely with an error that means nothing to the person reading it.
+The mechanism is simple. Each provider holds a list of addresses it is permitted to send users back to after authenticating. During development that list contains your preview URL. When your app moves to its own domain, the provider still returns people to the old address - or refuses entirely with an error that means nothing to the person reading it.
 
-Three things to check before launch. The redirect addresses configured at each provider include your real domain. The site URL configured in Supabase matches. And every environment you actually use — production, staging, local — is listed, because forgetting staging means your own testing stops working the day after you tidy the list.
+Three things to check before launch. The redirect addresses configured at each provider include your real domain. The site URL configured in Supabase matches. And every environment you actually use - production, staging, local - is listed, because forgetting staging means your own testing stops working the day after you tidy the list.
 
 There is a second, subtler issue worth knowing. If someone signs up with an email address and later signs in with a social provider using the same address, do they get one account or two? The behaviour depends on your configuration, and discovering it through a confused customer is worse than deciding it deliberately.
 
@@ -52,11 +52,11 @@ There is a second, subtler issue worth knowing. If someone signs up with an emai
 
 Passwordless sign-in is pleasant and removes a class of support requests. It introduces two issues that generated implementations rarely handle.
 
-**The link is a credential.** Anyone holding it is authenticated. Which means it must expire quickly, must be single-use, and must not survive being forwarded — a link sitting in a shared or forwarded inbox is a working key to that account for as long as it remains valid.
+**The link is a credential.** Anyone holding it is authenticated. Which means it must expire quickly, must be single-use, and must not survive being forwarded - a link sitting in a shared or forwarded inbox is a working key to that account for as long as it remains valid.
 
 **Deliverability becomes your login system.** If your transactional email is not properly authenticated, magic links land in spam, and the consequence is not an inconvenience but a user who cannot get in at all. Passwordless products need their email configuration to be genuinely solid rather than adequate.
 
-If you offer both magic links and passwords, decide what happens when someone uses one after the other, and make sure a magic link cannot be used to bypass a step you intended — such as a required confirmation.
+If you offer both magic links and passwords, decide what happens when someone uses one after the other, and make sure a magic link cannot be used to bypass a step you intended - such as a required confirmation.
 
 ## Password Rules That Help and Rules That Do Not
 
@@ -70,7 +70,7 @@ Rate limiting deserves emphasis, because it is the single control that turns cre
 
 Changing an account's email address is a security operation disguised as a settings form.
 
-Done carelessly, it lets someone who has temporary access to an account — a shared computer, a borrowed session — move that account to an address they control, permanently. Done properly, the new address must be confirmed before it takes effect, and the old address is notified that a change was requested.
+Done carelessly, it lets someone who has temporary access to an account - a shared computer, a borrowed session - move that account to an address they control, permanently. Done properly, the new address must be confirmed before it takes effect, and the old address is notified that a change was requested.
 
 Test it specifically: change your email, confirm, then attempt a password reset to both addresses and see which works. The answer tells you whether your account recovery is sound.
 
@@ -78,7 +78,7 @@ Test it specifically: change your email, confirm, then attempt a password reset 
 
 For most consumer products at launch, multi-factor authentication is not required and is worth planning for. For products holding financial, health or business-critical data, it arrives as a customer requirement sooner than founders expect.
 
-If you add it, the part to get right is recovery. Recovery codes that users actually save, and a support process for people who lose their device that does not amount to "email us and we will turn it off" — because an account recovery path weaker than the authentication it protects is where takeovers happen.
+If you add it, the part to get right is recovery. Recovery codes that users actually save, and a support process for people who lose their device that does not amount to "email us and we will turn it off" - because an account recovery path weaker than the authentication it protects is where takeovers happen.
 
 ## When the Provider Is Unavailable
 
@@ -98,7 +98,7 @@ Anything that behaves unexpectedly is a finding, and all of them are configurati
 
 None of this requires rebuilding what Lovable generated. It requires deciding the behaviour your product needs and configuring it, then verifying by trying to break it.
 
-That is part of what LaunchStudio does when taking an AI-built product live: confirmation and session behaviour set deliberately, redirect addresses aligned across every environment and provider, magic link expiry and single use enforced, email change and recovery flows made safe, rate limiting on authentication endpoints, and a fallback route for every account — alongside the transactional email configuration that passwordless flows depend on.
+That is part of what LaunchStudio does when taking an AI-built product live: confirmation and session behaviour set deliberately, redirect addresses aligned across every environment and provider, magic link expiry and single use enforced, email change and recovery flows made safe, rate limiting on authentication endpoints, and a fallback route for every account - alongside the transactional email configuration that passwordless flows depend on.
 
 The interface you built stays untouched, the code stays yours and AI-readable, and the work sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages). The engineers are Manifera's: eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
@@ -116,7 +116,7 @@ Everything above assumes individual accounts. Selling to businesses adds a secon
 
 **Removal must be immediate.** When someone leaves a customer's organisation, their access to that organisation's data should end on the next request rather than when a token expires.
 
-**Single sign-on will eventually be requested.** Larger business customers ask for it, and it is a substantial piece of work rather than a setting. Knowing it is coming lets you avoid decisions that make it harder later — principally, keeping identity and organisation membership as separate concepts rather than entangling them.
+**Single sign-on will eventually be requested.** Larger business customers ask for it, and it is a substantial piece of work rather than a setting. Knowing it is coming lets you avoid decisions that make it harder later - principally, keeping identity and organisation membership as separate concepts rather than entangling them.
 
 ## Real example
 
@@ -126,16 +126,16 @@ Ilja Verweij built Baanplanner in Lovable: a court-booking tool for six tennis a
 
 On launch morning, the clubs sent the link to roughly 1,400 members. Sign-in failed for everyone using Google, with a provider error page nobody could interpret. The cause was the redirect address: the provider's configuration still listed the preview URL, and the app now lived on the club's own domain.
 
-Two further problems surfaced during the repair. Email confirmation was disabled, so the accounts created in the first hour existed on addresses nobody had verified — including four obvious typos that would never receive a booking confirmation. And a magic link, offered as a fallback, remained valid for a day and could be used repeatedly.
+Two further problems surfaced during the repair. Email confirmation was disabled, so the accounts created in the first hour existed on addresses nobody had verified - including four obvious typos that would never receive a booking confirmation. And a magic link, offered as a fallback, remained valid for a day and could be used repeatedly.
 
 Four business days of work: redirect addresses corrected across every provider and environment, site URL aligned, email confirmation enabled with the post-signup flow reworked so new members were not dropped on a blank screen, magic links limited to fifteen minutes and single use, rate limiting added to login and reset, and account merging defined for members whose Google address matched an existing account.
 
 **Result:** the relaunch four days later processed 900 sign-ins in the first evening without incident, and the four typo accounts were identified and corrected before anyone booked a court they could not be told about.
 
 > *"It worked for three weeks and failed for everyone at once, because the thing that broke was a setting in a dashboard I had never opened."*
-> — **Ilja Verweij, Founder, Baanplanner (Amersfoort)**
+> - **Ilja Verweij, Founder, Baanplanner (Amersfoort)**
 
-**Cost & Timeline:** €2,150 (authentication configuration, redirect alignment, confirmation flow, rate limiting) — completed in 4 business days.
+**Cost & Timeline:** €2,150 (authentication configuration, redirect alignment, confirmation flow, rate limiting) - completed in 4 business days.
 
 ## Frequently Asked Questions
 
@@ -149,7 +149,7 @@ Because each provider only returns users to addresses on its allowed list, which
 
 ### Are magic links safe to use as the only sign-in method?
 
-They are safe if links expire quickly and are single-use, and only if your transactional email is properly authenticated — because with passwordless sign-in, email deliverability becomes your login system rather than a convenience.
+They are safe if links expire quickly and are single-use, and only if your transactional email is properly authenticated - because with passwordless sign-in, email deliverability becomes your login system rather than a convenience.
 
 ### What password rules should I enforce?
 
@@ -169,7 +169,7 @@ Changing an email address. Done without confirming the new address and notifying
       "name": "Should I enable email confirmation in Supabase before launch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes in almost every case — without it, accounts exist on addresses nobody controls, affecting deliverability, abuse and anything sensitive you send. Enable it early and rework the post-signup screen."
+        "text": "Yes in almost every case - without it, accounts exist on addresses nobody controls, affecting deliverability, abuse and anything sensitive you send. Enable it early and rework the post-signup screen."
       }
     },
     {
@@ -201,7 +201,7 @@ Changing an email address. Done without confirming the new address and notifying
       "name": "What is the most overlooked authentication flow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Changing an email address — without confirming the new address and notifying the old one, temporary account access can be turned into permanent control."
+        "text": "Changing an email address - without confirming the new address and notifying the old one, temporary account access can be turned into permanent control."
       }
     }
   ]

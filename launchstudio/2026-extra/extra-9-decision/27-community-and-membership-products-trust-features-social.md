@@ -1,9 +1,9 @@
-🚨 It's 02:40. Your phone buzzes: a post naming real families in your paid community. No delete, no suspend, no reporting — just a database you can't reach from your phone. 😳
+🚨 It's 02:40. Your phone buzzes: a post naming real families in your paid community. No delete, no suspend, no reporting - just a database you can't reach from your phone. 😳
 
 In most software the risk is technical. In a community, members create the content, and the risk arrives at 2 AM: 🧠
 
 ❌ Open signup with no email verification invites bot accounts within days
-❌ A report button exists but goes nowhere — no queue, owner or record
+❌ A report button exists but goes nowhere - no queue, owner or record
 ❌ Moderation tools only work from a laptop, not the phone
 ❌ Membership gets checked once at signup, not on every gated request
 

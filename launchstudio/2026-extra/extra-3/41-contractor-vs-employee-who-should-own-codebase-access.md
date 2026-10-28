@@ -31,47 +31,47 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A founder deciding how much codebase and system access to grant a new contractor tends to base that decision on personal trust — how well they know this specific person, how confident they feel in their judgment — rather than on the structurally different legal and practical relationship a contractor has with the company compared to an employee. Trust is genuinely relevant, and it isn't the only relevant factor, since employment status itself changes what's reasonable and appropriate independent of how much any individual is personally trusted.
+A founder deciding how much codebase and system access to grant a new contractor tends to base that decision on personal trust - how well they know this specific person, how confident they feel in their judgment - rather than on the structurally different legal and practical relationship a contractor has with the company compared to an employee. Trust is genuinely relevant, and it isn't the only relevant factor, since employment status itself changes what's reasonable and appropriate independent of how much any individual is personally trusted.
 
 ## Why Employment Status Matters Beyond Personal Trust
 
-An employee typically has clearer, more enforceable ongoing obligations to the company — confidentiality, non-compete considerations depending on jurisdiction, a more defined offboarding process when the relationship ends. A contractor's relationship is often shorter-term, less formally structured, and the company's practical ability to enforce data-handling expectations or ensure clean offboarding can be genuinely weaker, regardless of how trustworthy the specific individual actually is — meaning the appropriate default access level reasonably differs based on this structural difference, not personal judgment about character.
+An employee typically has clearer, more enforceable ongoing obligations to the company - confidentiality, non-compete considerations depending on jurisdiction, a more defined offboarding process when the relationship ends. A contractor's relationship is often shorter-term, less formally structured, and the company's practical ability to enforce data-handling expectations or ensure clean offboarding can be genuinely weaker, regardless of how trustworthy the specific individual actually is - meaning the appropriate default access level reasonably differs based on this structural difference, not personal judgment about character.
 
 ## Why This Isn't About Distrusting Contractors as People
 
-This distinction isn't a claim that contractors are inherently less trustworthy than employees — most contractor relationships are entirely professional and uneventful. It's a claim about structural risk management: the internal access control principle covered elsewhere in broader guidance, of scoping access to actual need rather than blanket trust, applies with particular force to relationships that are inherently shorter, less formally governed, and harder to enforce ongoing obligations against once they've ended.
+This distinction isn't a claim that contractors are inherently less trustworthy than employees - most contractor relationships are entirely professional and uneventful. It's a claim about structural risk management: the internal access control principle covered elsewhere in broader guidance, of scoping access to actual need rather than blanket trust, applies with particular force to relationships that are inherently shorter, less formally governed, and harder to enforce ongoing obligations against once they've ended.
 
 ## Where This Specifically Shows Up as a Practical Decision
 
 **Contractor access should default to task-scoped, not company-wide.** A contractor brought in for a specific feature or task genuinely needs access to what that task requires, not the same broad access an ongoing, long-term employee might reasonably accumulate over time as trust and role clarity develop.
 
-**Offboarding needs to be clean and prompt, specifically because contractor relationships often end more abruptly or informally than employee relationships.** The access-rotation gap covered elsewhere in broader guidance applies with particular urgency here, since a contractor engagement ending — sometimes with less formal process than an employee departure — creates a real, specific window where access review needs to happen deliberately rather than being assumed to happen naturally.
+**Offboarding needs to be clean and prompt, specifically because contractor relationships often end more abruptly or informally than employee relationships.** The access-rotation gap covered elsewhere in broader guidance applies with particular urgency here, since a contractor engagement ending - sometimes with less formal process than an employee departure - creates a real, specific window where access review needs to happen deliberately rather than being assumed to happen naturally.
 
 **Sensitive systems warrant a higher bar for contractor access regardless of task relevance.** Access to production databases, payment systems, or customer data specifically should require a deliberate, considered decision for any contractor, rather than being granted by default simply because it's technically convenient for them to have it.
 
 ## Why Getting This Distinction Right Matters More as a Company Scales
 
-A very early-stage company with one or two contractors, all personally known and closely supervised by the founder, carries lower practical risk from this specific gap than a growing company bringing on contractors at greater arm's length, where personal familiarity and close supervision naturally decrease — precisely the scale-up dynamic covered elsewhere in broader guidance regarding how risk compounds with growth generally.
+A very early-stage company with one or two contractors, all personally known and closely supervised by the founder, carries lower practical risk from this specific gap than a growing company bringing on contractors at greater arm's length, where personal familiarity and close supervision naturally decrease - precisely the scale-up dynamic covered elsewhere in broader guidance regarding how risk compounds with growth generally.
 
 [LaunchStudio](https://launchstudio.eu/en/) helps founders establish appropriate, employment-status-aware access policies as part of broader internal access-control hardening, distinguishing what's reasonable for contractors versus employees rather than defaulting to uniform, trust-based access for everyone, backed by Manifera's own internal practices managing access across a distributed team spanning Amsterdam, Singapore, and Ho Chi Minh City.
 
-[Get your contractor and employee access policies reviewed before the distinction matters](https://launchstudio.eu/en/#contact) — personal trust and structural risk management are related but genuinely different considerations.
+[Get your contractor and employee access policies reviewed before the distinction matters](https://launchstudio.eu/en/#contact) - personal trust and structural risk management are related but genuinely different considerations.
 
 ## What a Contractor Access Agreement Should Actually Cover
 
-Task-scoped access and prompt offboarding, as covered above, are the practical, technical side of this problem. The other side is what's actually written down before a contractor gets access to anything — a short agreement that exists specifically so the technical practices above have something formal to point back to, rather than depending entirely on an informal understanding that can get fuzzy exactly when it matters most.
+Task-scoped access and prompt offboarding, as covered above, are the practical, technical side of this problem. The other side is what's actually written down before a contractor gets access to anything - a short agreement that exists specifically so the technical practices above have something formal to point back to, rather than depending entirely on an informal understanding that can get fuzzy exactly when it matters most.
 
-**Confidentiality and data handling, made explicit rather than assumed.** A contractor working with customer data, even briefly, should have a clear, written expectation about what they can and can't do with anything they see — not because most contractors would misuse it, but because a written expectation is the thing that actually exists if a question ever comes up later, rather than relying on a shared understanding that was never actually stated out loud.
+**Confidentiality and data handling, made explicit rather than assumed.** A contractor working with customer data, even briefly, should have a clear, written expectation about what they can and can't do with anything they see - not because most contractors would misuse it, but because a written expectation is the thing that actually exists if a question ever comes up later, rather than relying on a shared understanding that was never actually stated out loud.
 
-**IP assignment, specifically covering what they build.** Work a contractor produces for the company should be clearly assigned to the company, in writing, before work begins rather than after — a detail founders sometimes assume is automatic or obvious that, depending on jurisdiction and the specifics of the working relationship, isn't always as automatic as assumed without an explicit agreement covering it.
+**IP assignment, specifically covering what they build.** Work a contractor produces for the company should be clearly assigned to the company, in writing, before work begins rather than after - a detail founders sometimes assume is automatic or obvious that, depending on jurisdiction and the specifics of the working relationship, isn't always as automatic as assumed without an explicit agreement covering it.
 
-**An explicit access scope, tied to the actual task.** The task-scoped access principle covered above works considerably better when the agreement itself states, even briefly, what access the engagement actually requires — turning "task-scoped access" from an informal intention into something the agreement itself can be checked against if scope quietly expands over time.
+**An explicit access scope, tied to the actual task.** The task-scoped access principle covered above works considerably better when the agreement itself states, even briefly, what access the engagement actually requires - turning "task-scoped access" from an informal intention into something the agreement itself can be checked against if scope quietly expands over time.
 
 **A defined end trigger for access, not just for payment.** Most contractor agreements clearly define when payment obligations end; fewer explicitly define when system access should end, even though the two don't necessarily happen on the same day. Stating explicitly that access review and revocation happens at engagement end, as a specific, named step rather than an assumed side effect of the relationship ending, closes exactly the gap that tends to leave access lingering.
 
-**A point of contact for anything found after the engagement ends.** Occasionally something surfaces after a contractor engagement has wrapped — a question about a specific piece of code, a follow-up on how something was implemented. A brief note on how that gets handled, and who's expected to respond, avoids an awkward, undefined situation later.
+**A point of contact for anything found after the engagement ends.** Occasionally something surfaces after a contractor engagement has wrapped - a question about a specific piece of code, a follow-up on how something was implemented. A brief note on how that gets handled, and who's expected to respond, avoids an awkward, undefined situation later.
 
-None of this requires a lengthy, heavily lawyered contract for every small engagement — a short, clear, reusable template covering these five areas, adjusted slightly per engagement, is usually proportionate for most early-stage contractor relationships, with more formal legal review reserved for genuinely higher-stakes or longer-term arrangements.
+None of this requires a lengthy, heavily lawyered contract for every small engagement - a short, clear, reusable template covering these five areas, adjusted slightly per engagement, is usually proportionate for most early-stage contractor relationships, with more formal legal review reserved for genuinely higher-stakes or longer-term arrangements.
 
 ## Real example
 
@@ -79,14 +79,14 @@ None of this requires a lengthy, heavily lawyered contract for every small engag
 
 Joost, a founder in Leiden running ProjectVolg, an AI tool tracking project milestones and deliverables for small consultancy firms, brought on a contractor to help with a specific integration feature, granting full production database access because it was the fastest way to let the contractor work independently without repeatedly asking Joost for specific data.
 
-The contractor engagement ended somewhat abruptly when the contractor took on a full-time role elsewhere, with no formal offboarding conversation and no immediate review of what access they still retained — meaning full production database access remained technically active for several weeks after the working relationship had genuinely ended, discovered only when Joost happened to review his system's access list for an unrelated reason.
+The contractor engagement ended somewhat abruptly when the contractor took on a full-time role elsewhere, with no formal offboarding conversation and no immediate review of what access they still retained - meaning full production database access remained technically active for several weeks after the working relationship had genuinely ended, discovered only when Joost happened to review his system's access list for an unrelated reason.
 
 **Result:** LaunchStudio helped Joost implement task-scoped access for future contractor engagements and established a clear, prompt offboarding checklist specifically triggered whenever any contractor relationship ends, closing both the immediate lingering access and the broader process gap that had allowed it to happen without anyone specifically noticing in real time.
 
-> *"I trusted this person completely, and that trust wasn't actually the problem — nobody misused anything. The problem was that I'd given contractor-level access the same broad scope I'd give a long-term employee, and had no actual process for noticing when that access should have ended along with the working relationship."*
-> — **Joost Hendriks, Founder, ProjectVolg (Leiden)**
+> *"I trusted this person completely, and that trust wasn't actually the problem - nobody misused anything. The problem was that I'd given contractor-level access the same broad scope I'd give a long-term employee, and had no actual process for noticing when that access should have ended along with the working relationship."*
+> - **Joost Hendriks, Founder, ProjectVolg (Leiden)**
 
-**Cost & Timeline:** €800 (contractor access policy and offboarding process) — completed in 3 business days.
+**Cost & Timeline:** €800 (contractor access policy and offboarding process) - completed in 3 business days.
 
 ---
 
@@ -94,15 +94,15 @@ The contractor engagement ended somewhat abruptly when the contractor took on a 
 
 ### Does this mean contractors should never be granted meaningful system access, regardless of the task?
 
-No — the guidance is about scoping access to what a specific task actually requires and ensuring clean offboarding, not categorically restricting contractors from meaningful access when a task genuinely warrants it.
+No - the guidance is about scoping access to what a specific task actually requires and ensuring clean offboarding, not categorically restricting contractors from meaningful access when a task genuinely warrants it.
 
 ### How is task-scoped access practically different from the broader access an employee might have?
 
-Task-scoped access limits a contractor to specifically what their current work requires — a particular feature's codebase, a specific data subset — rather than the broader, accumulated access an ongoing employee might reasonably have across the full system.
+Task-scoped access limits a contractor to specifically what their current work requires - a particular feature's codebase, a specific data subset - rather than the broader, accumulated access an ongoing employee might reasonably have across the full system.
 
 ### What's a reasonable trigger for reviewing and revoking contractor access, given engagements sometimes end informally, as in Joost's case?
 
-Establishing a fixed process — reviewing access at the natural end of any contracted engagement or project, regardless of how formally or informally that ending actually occurs — removes reliance on someone happening to remember, similar to Joost's case where the gap was only caught by chance.
+Establishing a fixed process - reviewing access at the natural end of any contracted engagement or project, regardless of how formally or informally that ending actually occurs - removes reliance on someone happening to remember, similar to Joost's case where the gap was only caught by chance.
 
 ### Does a long-term, ongoing contractor relationship warrant the same restricted access as a short-term one?
 

@@ -8,13 +8,13 @@ Scope creep on a founder-led build almost always comes from the founder, not the
 ❌ Nearly treating a payment-retry bug (cancelling subscriptions on the 2nd failed attempt instead of the 4th) as a nice-to-have feature
 
 ✅ Ask four questions in order: does it work without this, who asked for it, what does it cost this specific week, can it wait to week one
-✅ Keep a single "Post-Launch, Not Pre-Launch" list — every deferred idea gets a one-line reason, not a rejection
+✅ Keep a single "Post-Launch, Not Pre-Launch" list - every deferred idea gets a one-line reason, not a rejection
 ✅ Review the list with real usage data in week one, not speculation
 ✅ Treat genuine defects, not missing features, as launch blockers that skip the filter entirely
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our fixed-scope model gives founders a shared reference point for every new idea that shows up mid-build. 🗂️
 
-His result: Omzethelder launched on its original date with the payment-retry bug fixed and none of the fourteen deferred ideas included — the two ideas actually built in week one shipped faster because real usage replaced speculation. 🚀
+His result: Omzethelder launched on its original date with the payment-retry bug fixed and none of the fourteen deferred ideas included - the two ideas actually built in week one shipped faster because real usage replaced speculation. 🚀
 
 👉 Get the four-question filter for your own launch list: https://launchstudio.eu/en/blog/saying-no-to-your-own-feature-ideas-before-launch
 

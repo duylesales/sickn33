@@ -22,13 +22,13 @@ Target Persona: SaaS Scale-Up
 
 One person with an AI editor produces an inconsistent codebase slowly. Two people with AI editors produce one twice as fast, and in two different directions.
 
-The reason is that each person's assistant follows the code it can see and the instructions it has been given. Two people, two sets of habits, two sets of preferences expressed in conversation — and within a month the invoicing module and the reporting module are written in noticeably different styles, use different libraries for the same job, and handle errors in incompatible ways.
+The reason is that each person's assistant follows the code it can see and the instructions it has been given. Two people, two sets of habits, two sets of preferences expressed in conversation - and within a month the invoicing module and the reporting module are written in noticeably different styles, use different libraries for the same job, and handle errors in incompatible ways.
 
 The fix is a written set of rules that both assistants read, and it is the highest-leverage document a small technical team can have.
 
 ## Put the Rules Where the Tools Read Them
 
-Every serious AI editor supports a project-level instructions file — a file in the repository describing how this codebase works, which is included in the assistant's context automatically.
+Every serious AI editor supports a project-level instructions file - a file in the repository describing how this codebase works, which is included in the assistant's context automatically.
 
 That file is the mechanism. Instructions given in a conversation last for that conversation; instructions in the repository apply to everybody, every session, including the ones your colleague runs on a Tuesday while you are elsewhere.
 
@@ -56,13 +56,13 @@ The temptation is to write the rules you wish you followed. That produces a docu
 
 Write it from what the codebase actually does, where that is deliberate, and mark the exceptions explicitly: "invoicing uses the old pattern; new code uses the one described above". Then converge as you touch things.
 
-Two people should write it together, in an hour, because the process of writing it is where the disagreements surface — and disagreements settled in a document are cheaper than disagreements discovered in a merge.
+Two people should write it together, in an hour, because the process of writing it is where the disagreements surface - and disagreements settled in a document are cheaper than disagreements discovered in a merge.
 
 ## Review Each Other's Changes, Briefly
 
 With two people, formal review processes are overhead. Something is still needed, because the failure mode is specific: each person's assistant produces plausible code that the other person has never seen and cannot maintain.
 
-The proportionate arrangement: everything goes through a pull request, and the other person looks at the diff before it merges. Not a line-by-line audit — five minutes, checking that it does what it says, that it follows the conventions, and that the five never-broken rules hold.
+The proportionate arrangement: everything goes through a pull request, and the other person looks at the diff before it merges. Not a line-by-line audit - five minutes, checking that it does what it says, that it follows the conventions, and that the five never-broken rules hold.
 
 Reserve real scrutiny for the categories the review article in this series names: money, permissions, deletion, outbound communication, schema. Everything else gets the five-minute pass.
 
@@ -72,7 +72,7 @@ The secondary benefit matters as much as the first. Two people who read each oth
 
 A rules file written once and left becomes wrong, and a wrong rules file is worse than none because it is confidently followed.
 
-Two habits. When a decision is made — a library chosen, a pattern settled, a rule agreed after an incident — it goes into the file in the same commit. And it is read again every few months, which takes ten minutes and usually removes something obsolete.
+Two habits. When a decision is made - a library chosen, a pattern settled, a rule agreed after an incident - it goes into the file in the same commit. And it is read again every few months, which takes ten minutes and usually removes something obsolete.
 
 The signal that it needs attention: the assistant producing code that does not match the file. That means either the file is out of date or the surrounding code contradicts it, and both are worth resolving rather than working around.
 
@@ -102,7 +102,7 @@ Three small measures prevent the resulting confusion.
 
 **Keep main deployable.** If anything on the main branch can be deployed at any time, then the other person deploying is never a problem. This is the practical reason for the branch-per-change workflow rather than an aesthetic one.
 
-Add one shared record of what was deployed and when — a line in a file, or whatever your platform already logs. When something breaks on a Thursday afternoon, the first question is always what changed, and with two people the answer is no longer obvious to either of them.
+Add one shared record of what was deployed and when - a line in a file, or whatever your platform already logs. When something breaks on a Thursday afternoon, the first question is always what changed, and with two people the answer is no longer obvious to either of them.
 
 ## What Does Not Need a Process
 
@@ -118,13 +118,13 @@ No estimates in points. Two people know how long things take and can say so in h
 
 No architecture documents beyond the rules file. The codebase is small enough to read.
 
-What is worth having is the short list this article describes: shared rules, small reviewed changes, deployment awareness, and both people able to work anywhere in the product. That is perhaps two hours of setup and no ongoing ceremony, and it is the whole of what a team this size needs — the rest becomes worth adding somewhere around the fifth or sixth person, and adding it earlier is a cost with no return.
+What is worth having is the short list this article describes: shared rules, small reviewed changes, deployment awareness, and both people able to work anywhere in the product. That is perhaps two hours of setup and no ongoing ceremony, and it is the whole of what a team this size needs - the rest becomes worth adding somewhere around the fifth or sixth person, and adding it earlier is a cost with no return.
 
 ## Setting This Up
 
 For a two-person team this is typically half a day: a project rules file written together from what the codebase actually does, covering stack and structure, naming and formatting conventions, the chosen library for each job, the patterns for data access, authorisation and error handling, the rules that must never be broken, and the product's vocabulary; exceptions marked explicitly with a convergence plan; the file committed so both assistants read it; every change going through a pull request with a five-minute diff review; real scrutiny reserved for money, permissions, deletion, outbound communication and schema; and the file updated in the same commit as any decision it records.
 
-LaunchStudio produces this document when handing a project to a client team, because it is what keeps the work consistent after we leave. The engineers are Manifera's — eleven years, 120+ engineers, from Amsterdam and Ho Chi Minh City.
+LaunchStudio produces this document when handing a project to a client team, because it is what keeps the work consistent after we leave. The engineers are Manifera's - eleven years, 120+ engineers, from Amsterdam and Ho Chi Minh City.
 
 [Ask us to write your project's rules file](https://launchstudio.eu/en/#contact) from the code you already have.
 
@@ -134,20 +134,20 @@ LaunchStudio produces this document when handing a project to a client team, bec
 
 Steven Doornekamp and his co-founder built Zorgdeclaratie together in Cursor: declaration handling between allied health practices and insurers, used by 52 practices.
 
-They divided the work — one took declarations and insurer integration, the other took practice administration and reporting — and worked in parallel for four months without a rules file or any review.
+They divided the work - one took declarations and insurer integration, the other took practice administration and reporting - and worked in parallel for four months without a rules file or any review.
 
 The result was two codebases in one repository. Declarations used one date library and one form approach; administration used different ones for both. Errors were thrown in one half and returned as values in the other. Database tables were named in the plural on one side and the singular on the other. Two separate validation libraries were in the dependency list. And neither could work confidently in the other's area, which meant that a week of illness stopped half the product.
 
 The bug that forced the issue: a declaration period calculated with one date library in one half and a different one in the other, disagreeing about week numbers at the end of December, which sent 60 declarations with the wrong period and had them rejected by two insurers.
 
-Three business days: a rules file written together in an afternoon, from the code, choosing one library per job — one date library, one form approach, one validation library, one error handling pattern — and stating the naming conventions, the patterns and five rules that must never be broken; the losing choices removed from the dependency list and converted in the areas both touched, with the rest marked as an exception to converge over time; the date handling unified and the week number disagreement fixed with a test written from the insurer specification; pull requests adopted with a five-minute diff review by the other person; and the vocabulary settled — declaration, practice, insurer, period — replacing three sets of synonyms.
+Three business days: a rules file written together in an afternoon, from the code, choosing one library per job - one date library, one form approach, one validation library, one error handling pattern - and stating the naming conventions, the patterns and five rules that must never be broken; the losing choices removed from the dependency list and converted in the areas both touched, with the rest marked as an exception to converge over time; the date handling unified and the week number disagreement fixed with a test written from the insurer specification; pull requests adopted with a five-minute diff review by the other person; and the vocabulary settled - declaration, practice, insurer, period - replacing three sets of synonyms.
 
 **Result:** the 60 rejected declarations were resubmitted. The more significant change, in Steven's assessment, is that both of them can now work in either half, which he discovered when his co-founder was away for two weeks and the product kept moving.
 
 > *"We had one repository and two products in it. Neither of us could work in the other's half, and a date library disagreement at the end of December got sixty declarations rejected."*
-> — **Steven Doornekamp, Founder, Zorgdeclaratie (Arnhem)**
+> - **Steven Doornekamp, Founder, Zorgdeclaratie (Arnhem)**
 
-**Cost & Timeline:** €3,100 (rules file from existing code, library consolidation with one choice per job, date handling unification with specification-derived tests, convergence plan for exceptions, pull request and review practice, vocabulary settlement) — completed in 3 business days.
+**Cost & Timeline:** €3,100 (rules file from existing code, library consolidation with one choice per job, date handling unification with specification-derived tests, convergence plan for exceptions, pull request and review practice, vocabulary settlement) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Every change through a pull request with a five-minute diff check, and real scru
       "name": "Where should shared coding rules live?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In a project instructions file in the repository, which editors include automatically — conversation instructions do not persist."
+        "text": "In a project instructions file in the repository, which editors include automatically - conversation instructions do not persist."
       }
     },
     {

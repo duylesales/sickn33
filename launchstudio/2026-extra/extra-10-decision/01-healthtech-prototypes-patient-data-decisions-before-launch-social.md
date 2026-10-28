@@ -2,7 +2,7 @@
 
 AI tools build a symptom field exactly like a name field. Here's why that's a problem the moment a real patient shows up: 🧠
 
-❌ One Supabase table, one RLS policy — every authenticated clinic account could read every patient's full symptom history
+❌ One Supabase table, one RLS policy - every authenticated clinic account could read every patient's full symptom history
 ❌ A general "I agree to terms" checkbox isn't explicit consent for special category health data under Article 9
 ❌ Symptom text was flowing to a marketing email tool that had never seen a DPA
 ❌ Lovable and Bolt projects on Supabase often default to a non-EU region nobody thought to check

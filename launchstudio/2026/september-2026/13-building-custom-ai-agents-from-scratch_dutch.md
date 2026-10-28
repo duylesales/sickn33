@@ -6,13 +6,13 @@ Koperfase: Overweging
 
 # Maatwerk AI-Agenten Bouwen vanaf de Grond met Moderne AI-Technologieën in Moderne AI Code Development
 
-De tech-industrie strooit tegenwoordig maar al te graag met de term "AI-Agent". Een simpele chatbot die op commando een e-mailtekst genereert, is echter géén agent. Een echte AI-agent is een autonoom softwaresysteem dat in staat is om zelfstandig te redeneren over een complex einddoel, sequentiële acties uit te voeren via API's en tools, en zichzelf automatisch te corrigeren wanneer een tussenstap faalt. Waar veel oprichters direct grijpen naar zware, logge frameworks zoals LangChain, is de onderliggende software-architectuur van een agent in werkelijkheid verbluffend eenvoudig. Dit artikel legt uit hoe u een robuuste, betrouwbare AI-agent in pure Node.js bouwt — exact het ontwerppatroon dat LaunchStudio hanteert wanneer een met AI gegenereerd prototype moet uitgroeien tot volwaardige productiesoftware.
+De tech-industrie strooit tegenwoordig maar al te graag met de term "AI-Agent". Een simpele chatbot die op commando een e-mailtekst genereert, is echter géén agent. Een echte AI-agent is een autonoom softwaresysteem dat in staat is om zelfstandig te redeneren over een complex einddoel, sequentiële acties uit te voeren via API's en tools, en zichzelf automatisch te corrigeren wanneer een tussenstap faalt. Waar veel oprichters direct grijpen naar zware, logge frameworks zoals LangChain, is de onderliggende software-architectuur van een agent in werkelijkheid verbluffend eenvoudig. Dit artikel legt uit hoe u een robuuste, betrouwbare AI-agent in pure Node.js bouwt - exact het ontwerppatroon dat LaunchStudio hanteert wanneer een met AI gegenereerd prototype moet uitgroeien tot volwaardige productiesoftware.
 
 ## De Fundamentele Voorwaarde: Tool Calling (Function Calling)
 
 Een Large Language Model is in de kern een geïsoleerd brein in een glazen stolp. Het kan uit zichzelf niets anders doen dan tekst voorspellen. Om van een LLM een echte agent te maken, moet u het handen geven. Dit wordt gerealiseerd via **Tool Calling** (voorheen Function Calling, gestandaardiseerd over OpenAI, Anthropic en Google API's).
 
-Wanneer u een prompt naar het model stuurt, verzendt uw server tevens een array van JSON-schema's die de beschikbare functies op uw Node.js-backend beschrijven — inclusief een functienaam, een heldere beschrijving die het model vertelt *wanneer* de tool relevant is, en een Zod-schema voor de verplichte parameters.
+Wanneer u een prompt naar het model stuurt, verzendt uw server tevens een array van JSON-schema's die de beschikbare functies op uw Node.js-backend beschrijven - inclusief een functienaam, een heldere beschrijving die het model vertelt *wanneer* de tool relevant is, en een Zod-schema voor de verplichte parameters.
 
 Vraagt de gebruiker: *"Hoeveel omzet heeft klant Acme Corp dit kwartaal gegenereerd?"*, dan herkent het model dat het deze data niet bezit. In plaats van te hallucineren pauzeert het LLM de tekstgeneratie en retourneert een gestructureerde tool-aanroep: `{"call": "get_customer_revenue", "args": {"id": "acme"}}`. Uw Node.js-server parseert deze JSON, voert de database-query uit en voegt het feitelijke omzetcijfer als een nieuw tool-bericht (`role: "tool"`) toe aan de conversatiehistorie, waarna het model de generatie voltooit.
 
@@ -30,11 +30,11 @@ De `while`-lus start direct de volgende cyclus en stuurt de complete bijgewerkte
 
 In de praktijk maken AI-agenten regelmatig fouten. Het model kan een verkeerd datatype doorgeven (een string in plaats van een integer), een klant-ID verkeerd spellen of een verplicht veld leeg laten. In een log framework kan een dergelijke fout de complete applicatie doen crashen met diepe, ondoorgrondelijke stack-traces.
 
-Wanneer u vanaf de basis bouwt, wikkelt u de tool-executie op uw Node.js-server in een eenvoudig `try/catch` block. Faalt de functie, dan vangt u de foutmelding op en stuurt deze als observatie *terug* naar het taalmodel: `"Fout: klant-ID moet een numerieke integer zijn, ontving 'acme-corp'"`. Het LLM leest de foutmelding, begrijpt zijn eigen vergissing en corrigeert de tool-aanroep in de volgende cyclus met de juiste parameters. Zelfcorrectie is het ultieme kenmerk van een echte AI-agent, en het vereist geen complex framework — enkel transparante foutterugkoppeling.
+Wanneer u vanaf de basis bouwt, wikkelt u de tool-executie op uw Node.js-server in een eenvoudig `try/catch` block. Faalt de functie, dan vangt u de foutmelding op en stuurt deze als observatie *terug* naar het taalmodel: `"Fout: klant-ID moet een numerieke integer zijn, ontving 'acme-corp'"`. Het LLM leest de foutmelding, begrijpt zijn eigen vergissing en corrigeert de tool-aanroep in de volgende cyclus met de juiste parameters. Zelfcorrectie is het ultieme kenmerk van een echte AI-agent, en het vereist geen complex framework - enkel transparante foutterugkoppeling.
 
 ## De Noodrem: Beveiliging Tegen Oneindige Lussen (Max Iterations)
 
-Omdat een agent autonoom beslissingen neemt, kan hij in een zogeheten 'degeneratieve toestand' belanden. Het model roept een tool aan, faalt, probeert het opnieuw en raakt verstrikt in een oneindige herhaallus — bijvoorbeeld omdat de opgevraagde data simpelweg niet bestaat in de database. Bij krachtige redeneermodellen kan een onbewaakte oneindige lus binnen enkele uren honderden tot duizenden euro's aan API-kosten verbranden.
+Omdat een agent autonoom beslissingen neemt, kan hij in een zogeheten 'degeneratieve toestand' belanden. Het model roept een tool aan, faalt, probeert het opnieuw en raakt verstrikt in een oneindige herhaallus - bijvoorbeeld omdat de opgevraagde data simpelweg niet bestaat in de database. Bij krachtige redeneermodellen kan een onbewaakte oneindige lus binnen enkele uren honderden tot duizenden euro's aan API-kosten verbranden.
 
 Uw custom Node.js-architectuur moet daarom altijd voorzien zijn van een harde **Max Iterations** teller. Bereikt de lus bijvoorbeeld 5 tot 8 iteraties (afgestemd op uw specifieke workflow), dan breekt uw code de lus geforceerd af en stuurt een veilige fallback naar de gebruiker: *"Er is een fout opgetreden bij het voltooien van deze taak; ons engineeringteam is automatisch genotificeerd."* Deze simpele controle van vijf regels code beschermt uw startup tegen financiële schade.
 
@@ -68,7 +68,7 @@ Hij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in om de plann
 
 **Resultaat:** Het slagingspercentage van voltooide boekingsaanvragen steeg van 40% naar 95%, waarbij de AI ontbrekende gegevens stap voor stap en foutloos opvroeg.
 
-**Kosten & Tijdlijn:** €2.400 (Maatwerk Agent Ontwikkeling Pakket) — productieklaar en binnen 6 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.400 (Maatwerk Agent Ontwikkeling Pakket) - productieklaar en binnen 6 werkdagen live opgeleverd.
 
 ---
 

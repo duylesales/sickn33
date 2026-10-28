@@ -20,23 +20,23 @@ target_persona: "CTO"
 }
 </script>
 
-Coordination overhead in a growing engineering organization scales roughly with the number of communication pathways between people, which grows quadratically as headcount grows linearly — meaning a CTO who scales a development team without deliberately restructuring communication patterns along the way ends up with coordination costs growing considerably faster than the team's actual output.
+Coordination overhead in a growing engineering organization scales roughly with the number of communication pathways between people, which grows quadratically as headcount grows linearly - meaning a CTO who scales a development team without deliberately restructuring communication patterns along the way ends up with coordination costs growing considerably faster than the team's actual output.
 
-**The Pain:** A CTO scaling a development team typically focuses hiring effort on adding capable individual engineers, reasonably assuming that more skilled people produce more output, without deliberately re-examining team structure and communication patterns at each significant size threshold — treating structure as something that was set once, appropriately, at a smaller size, and doesn't need active redesign as the team continues to grow.
+**The Pain:** A CTO scaling a development team typically focuses hiring effort on adding capable individual engineers, reasonably assuming that more skilled people produce more output, without deliberately re-examining team structure and communication patterns at each significant size threshold - treating structure as something that was set once, appropriately, at a smaller size, and doesn't need active redesign as the team continues to grow.
 
-**The Agitation:** A CTO who scales headcount without restructuring communication patterns experiences a specific, measurable pattern — output per engineer that was strong at a smaller team size gradually declines as the team grows, not because individual engineers became less capable, but because an increasing share of each person's time goes into coordination overhead that scales faster than the team itself, a dynamic that's easy to misdiagnose as an individual performance or hiring-quality problem when it's actually a structural scaling problem entirely within the CTO's control to address.
+**The Agitation:** A CTO who scales headcount without restructuring communication patterns experiences a specific, measurable pattern - output per engineer that was strong at a smaller team size gradually declines as the team grows, not because individual engineers became less capable, but because an increasing share of each person's time goes into coordination overhead that scales faster than the team itself, a dynamic that's easy to misdiagnose as an individual performance or hiring-quality problem when it's actually a structural scaling problem entirely within the CTO's control to address.
 
 ## Restructuring Deliberately at Each Size Threshold
 
 Scaling a development team without coordination costs outpacing output requires deliberately re-examining and restructuring communication patterns at specific size thresholds, rather than assuming a structure that worked at a smaller size will continue working as headcount grows past it.
 
-The core structural principle is limiting the number of people who need direct, frequent communication with each other, since coordination overhead grows with the number of communication pathways, not the number of people in isolation — a team of five where everyone talks to everyone has ten pathways; a team of fifteen structured the same way has over a hundred, an overhead increase far outpacing the roughly threefold headcount growth. The practical response is decomposing a growing team into smaller sub-teams, each with clear ownership boundaries that minimize the need for cross-sub-team communication on a day-to-day basis, restoring the smaller-team communication-pathway count within each sub-team while coordination between sub-teams happens through more structured, less frequent channels rather than ad hoc, high-frequency cross-team chatter.
+The core structural principle is limiting the number of people who need direct, frequent communication with each other, since coordination overhead grows with the number of communication pathways, not the number of people in isolation - a team of five where everyone talks to everyone has ten pathways; a team of fifteen structured the same way has over a hundred, an overhead increase far outpacing the roughly threefold headcount growth. The practical response is decomposing a growing team into smaller sub-teams, each with clear ownership boundaries that minimize the need for cross-sub-team communication on a day-to-day basis, restoring the smaller-team communication-pathway count within each sub-team while coordination between sub-teams happens through more structured, less frequent channels rather than ad hoc, high-frequency cross-team chatter.
 
-This decomposition needs to happen proactively, at specific size thresholds, rather than reactively once coordination problems are already visibly degrading output — a CTO who waits until the symptoms (declining output per engineer, increasing meeting load, slower decision-making) are already apparent is restructuring under pressure, with less room to do it thoughtfully, than a CTO who anticipates the threshold and restructures ahead of it. Common thresholds where restructuring becomes necessary tend to cluster around team sizes where the direct-communication pathway count starts becoming genuinely unmanageable — often somewhere in the range of eight to twelve people reporting into a shared, tightly-coordinated structure, though the exact threshold varies by team and work type.
+This decomposition needs to happen proactively, at specific size thresholds, rather than reactively once coordination problems are already visibly degrading output - a CTO who waits until the symptoms (declining output per engineer, increasing meeting load, slower decision-making) are already apparent is restructuring under pressure, with less room to do it thoughtfully, than a CTO who anticipates the threshold and restructures ahead of it. Common thresholds where restructuring becomes necessary tend to cluster around team sizes where the direct-communication pathway count starts becoming genuinely unmanageable - often somewhere in the range of eight to twelve people reporting into a shared, tightly-coordinated structure, though the exact threshold varies by team and work type.
 
-The second structural discipline, alongside decomposition, is deliberately investing in the connective ownership role covered earlier in the context of team roles broadly — as a team decomposes into more sub-teams, the risk of coherence gaps between them grows, and explicit end-to-end ownership for initiatives that cross sub-team boundaries becomes increasingly necessary precisely because decomposition, while solving the pathway-count problem within each sub-team, reintroduces a coordination challenge across the boundaries it creates.
+The second structural discipline, alongside decomposition, is deliberately investing in the connective ownership role covered earlier in the context of team roles broadly - as a team decomposes into more sub-teams, the risk of coherence gaps between them grows, and explicit end-to-end ownership for initiatives that cross sub-team boundaries becomes increasingly necessary precisely because decomposition, while solving the pathway-count problem within each sub-team, reintroduces a coordination challenge across the boundaries it creates.
 
-A CTO who treats scaling a development team as requiring active, periodic structural redesign — not just periodic hiring — keeps coordination overhead growing roughly in line with the team rather than outpacing it, preserving the output-per-engineer level that made the smaller team effective in the first place.
+A CTO who treats scaling a development team as requiring active, periodic structural redesign - not just periodic hiring - keeps coordination overhead growing roughly in line with the team rather than outpacing it, preserving the output-per-engineer level that made the smaller team effective in the first place.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -53,8 +53,8 @@ Piața Digitală București S.R.L., a Bucharest-based marketplace company, had s
 
 Manifera helped decompose the team into four clearly-bounded sub-teams with explicit ownership domains, along with dedicated connective ownership for the two initiatives that genuinely needed to span sub-team boundaries. Output per engineer, tracked through the company's existing delivery metrics, recovered to within 90% of its original smaller-team level within the following quarter.
 
-> *"We kept hiring good people and kept getting less out of each new hire than the last. It wasn't the people — it was that we never restructured while we grew, so everyone was still trying to coordinate with everyone. Breaking into real sub-teams fixed most of it almost immediately."*
-> — **CTO, Piața Digitală București S.R.L., Romania**
+> *"We kept hiring good people and kept getting less out of each new hire than the last. It wasn't the people - it was that we never restructured while we grew, so everyone was still trying to coordinate with everyone. Breaking into real sub-teams fixed most of it almost immediately."*
+> - **CTO, Piața Digitală București S.R.L., Romania**
 
 ## Hire-Only Scaling vs. Manifera's Structural Restructuring Approach
 
@@ -72,9 +72,9 @@ A CTO who scales a development team by hiring alone, without deliberately restru
 
 ## The Pathway Math: Why 12 Feels Like a Cliff Edge
 
-The communication-pathway count for a fully-connected group of n people is n(n-1)/2 — a formula that turns an apparently modest headcount increase into a dramatically larger coordination surface. A team of 6 has 15 pathways. A team of 12 has 66 pathways — headcount doubled, pathways grew 4.4x. A team of 20 has 190 pathways — headcount grew 67% from 12, pathways grew nearly 3x. This is the concrete mechanism behind why a CTO scaling an engineering team past roughly 10-12 people in one flat structure experiences a specific, sudden-feeling drop in output per engineer: the team didn't get worse, the coordination surface underneath it crossed a threshold where informal, ad hoc communication stops scaling.
+The communication-pathway count for a fully-connected group of n people is n(n-1)/2 - a formula that turns an apparently modest headcount increase into a dramatically larger coordination surface. A team of 6 has 15 pathways. A team of 12 has 66 pathways - headcount doubled, pathways grew 4.4x. A team of 20 has 190 pathways - headcount grew 67% from 12, pathways grew nearly 3x. This is the concrete mechanism behind why a CTO scaling an engineering team past roughly 10-12 people in one flat structure experiences a specific, sudden-feeling drop in output per engineer: the team didn't get worse, the coordination surface underneath it crossed a threshold where informal, ad hoc communication stops scaling.
 
-The practical fix isn't fewer meetings — it's fewer people who need to be in the room. Decomposing a 20-person team into four sub-teams of five restores each sub-team's internal pathway count to 10, with cross-team coordination handled through a smaller number of designated connective roles rather than full-mesh communication. A CTO tracking this should watch pull-request review latency and cross-team blocked-ticket count as the two leading indicators — both typically spike 2-3 weeks before output-per-engineer visibly declines, giving a real window to restructure proactively rather than reactively.
+The practical fix isn't fewer meetings - it's fewer people who need to be in the room. Decomposing a 20-person team into four sub-teams of five restores each sub-team's internal pathway count to 10, with cross-team coordination handled through a smaller number of designated connective roles rather than full-mesh communication. A CTO tracking this should watch pull-request review latency and cross-team blocked-ticket count as the two leading indicators - both typically spike 2-3 weeks before output-per-engineer visibly declines, giving a real window to restructure proactively rather than reactively.
 
 ## Frequently Asked Questions
 
@@ -100,7 +100,7 @@ Often somewhere in the range of eight to twelve people reporting into a shared, 
 
 ### (Scenario: CTO trying to identify early warning signs before output per engineer visibly declines) What leading indicators warn a CTO to restructure a scaling development team before output per engineer drops?
 
-Watch pull-request review latency and cross-team blocked-ticket count — both typically spike 2-3 weeks before the output-per-engineer decline becomes visible in delivery metrics, giving a real window to restructure proactively.
+Watch pull-request review latency and cross-team blocked-ticket count - both typically spike 2-3 weeks before the output-per-engineer decline becomes visible in delivery metrics, giving a real window to restructure proactively.
 
 ### (Scenario: CTO deciding the right size for a newly decomposed sub-team) What's the ideal sub-team size when decomposing a scaling engineering team to control coordination overhead?
 
@@ -112,7 +112,7 @@ Manifera caps individual pods at 5-8 engineers with clear domain ownership, addi
 
 ### (Scenario: CTO measuring whether a team restructuring actually worked) What metric proves a development team restructuring successfully controlled coordination overhead?
 
-Output per engineer recovering toward its pre-scaling level — tracked through existing delivery metrics like story points or cycle time per engineer — is the clearest proof; a restructuring that doesn't move this number within one to two quarters likely didn't address the actual pathway-count problem.
+Output per engineer recovering toward its pre-scaling level - tracked through existing delivery metrics like story points or cycle time per engineer - is the clearest proof; a restructuring that doesn't move this number within one to two quarters likely didn't address the actual pathway-count problem.
 
 <script type="application/ld+json">
 {

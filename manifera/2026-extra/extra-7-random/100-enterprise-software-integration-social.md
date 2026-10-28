@@ -10,7 +10,7 @@ Every integration project starts with a diagram: two clean boxes, one arrow. The
 ✅ **Amsterdam Governance:** An explicit ownership model for who's authoritative for what data.
 ✅ **Vietnam Execution:** Idempotent, retry-safe integration logic with real monitoring on the sync itself.
 
-Integration projects run over budget 50%+ of the time — almost always in the parts nobody scoped. 📊
+Integration projects run over budget 50%+ of the time - almost always in the parts nobody scoped. 📊
 
 👉 Read our full deep dive on enterprise software integration: https://www.manifera.com/blog/enterprise-software-integration
 

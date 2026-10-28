@@ -12,7 +12,7 @@ Voordat u €1 aan Google of LinkedIn Ads uitgeeft, moet u deze 5 trechterstappe
 ✅ Activatiemoment bereikt (goedkope signups die nooit activeren zijn peperduur)
 ✅ Eerste betaling permanent gekoppeld aan de oorspronkelijke marketingcampagne
 
-Als de klikratio op uw advertentie gelijk blijft, maar de formulier-voltooiing halveert, is uw advertentie NIET stuk — dan blokkeert een validatiefout of trage database uw aanmeldingen.
+Als de klikratio op uw advertentie gelijk blijft, maar de formulier-voltooiing halveert, is uw advertentie NIET stuk - dan blokkeert een validatiefout of trage database uw aanmeldingen.
 
 Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we end-to-end trechtermetingen in vóórdat er marketingbudget wordt ingezet.
 

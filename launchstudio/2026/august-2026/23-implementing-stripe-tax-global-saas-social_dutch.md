@@ -1,4 +1,4 @@
-🔥 Connor bouwde een prototype met **Bolt** — Connor, een legal tech oprichter, gebruikte Bolt om een contract-checker te bouwen, maar kreeg te maken met fiscale naheffingen door ontbrekende regionale btw-berekeningen. 🧠
+🔥 Connor bouwde een prototype met **Bolt** - Connor, een legal tech oprichter, gebruikte Bolt om een contract-checker te bouwen, maar kreeg te maken met fiscale naheffingen door ontbrekende regionale btw-berekeningen. 🧠
 
 Het internationaal verkopen van SaaS verplicht uw startup tot het innen van lokale belastingen (btw, GST, Sales Tax) op basis van de locatie van de klant.
 
@@ -12,7 +12,7 @@ Het internationaal verkopen van SaaS verplicht uw startup tot het innen van loka
 
 Bij **LaunchStudio** lossen we exact dit type facturatie- en compliance-vraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Connors platform werd 100% fiscaal compliant: Alle wereldwijde belastingberekeningen en facturen zijn nu volledig dekkend, waardoor juridische risico's verdwenen. (€1.400 (Stripe Tax Integratie) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Connors platform werd 100% fiscaal compliant: Alle wereldwijde belastingberekeningen en facturen zijn nu volledig dekkend, waardoor juridische risico's verdwenen. (€1.400 (Stripe Tax Integratie) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/implementing-stripe-tax-global-saas
 

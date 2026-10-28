@@ -35,18 +35,18 @@ Doelpersona: Bureau / Freelancer (White-Label Partner)
 
 ## Waarom Offshore Ontwikkeling Mislukt Wanneer het Mislukt
 
-Het klassieke faalpatroon heeft zelden te maken met het talent van de programmeurs — het zit in de structuur. Offshore-projecten lopen spaak door voorspelbare weeffouten: geen heldere specificatie vóór aanvang van de werkzaamheden, geen vast lokaal aanspreekpunt dat verantwoordelijk is voor kwaliteitsborging, tijdzoneverschillen die een simpele verduidelijkingsvraag veranderen in een vertraging van 24 uur, en een prijsmodel (puur uurtje-factuurtje) dat de prikkels van het ontwikkelteam niet afstemt op het daadwerkelijke eindresultaat van de klant.
+Het klassieke faalpatroon heeft zelden te maken met het talent van de programmeurs - het zit in de structuur. Offshore-projecten lopen spaak door voorspelbare weeffouten: geen heldere specificatie vóór aanvang van de werkzaamheden, geen vast lokaal aanspreekpunt dat verantwoordelijk is voor kwaliteitsborging, tijdzoneverschillen die een simpele verduidelijkingsvraag veranderen in een vertraging van 24 uur, en een prijsmodel (puur uurtje-factuurtje) dat de prikkels van het ontwikkelteam niet afstemt op het daadwerkelijke eindresultaat van de klant.
 
 ## Wat 11 Jaar aan Manifera's Amsterdam-Singapore-Vietnam Structuur Leert
 
 ### Een Europees Aanspreekpunt Maakt het Verschil
-Manifera heeft haar Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** bewust ingericht zodat opdrachtgevers een direct Nederlands aanspreekpunt hebben. Dit team begrijpt zowel de zakelijke context van de klant als de dagelijkse werkzaamheden van de engineers — waardoor klanten niet zelfstandig over een cultuur- en tijdzonekloof heen hoeven te schakelen.
+Manifera heeft haar Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** bewust ingericht zodat opdrachtgevers een direct Nederlands aanspreekpunt hebben. Dit team begrijpt zowel de zakelijke context van de klant als de dagelijkse werkzaamheden van de engineers - waardoor klanten niet zelfstandig over een cultuur- en tijdzonekloof heen hoeven te schakelen.
 
 ### De Hub in Singapore Overbrugt het Tijdzoneverschil
 Onze vestiging aan 100 Tras Street in Singapore fungeert als operationele brug tussen het Europese klantenteam en het ontwikkelcentrum in Ho Chi Minh-stad. Dit creëert een soepele overlap in kantooruren over de gehele keten, in plaats van een gat van 6 tot 7 uur tussen Amsterdam en Vietnam dat ad-hoc moet worden opgevangen.
 
 ### Ho Chi Minh-Stad als Eigen Ontwikkelcentrum, Niet als Uitbesteed Bureau
-Manifera's ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad is een vast, permanent onderdeel van het bedrijf — geen pool van losse onderaannemers. Dit onderscheid is cruciaal: een vast team van **120+ software-engineers** in vaste dienst bouwt institutionele kennis en consistente kwaliteitsstandaarden op, iets wat een wisselende freelance-groep simpelweg niet kan leveren.
+Manifera's ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad is een vast, permanent onderdeel van het bedrijf - geen pool van losse onderaannemers. Dit onderscheid is cruciaal: een vast team van **120+ software-engineers** in vaste dienst bouwt institutionele kennis en consistente kwaliteitsstandaarden op, iets wat een wisselende freelance-groep simpelweg niet kan leveren.
 
 ### Vaste Scope en Vaste Prijzen Zorgen voor Gelijkgerichte Belangen
 Zowel Manifera's enterprise-projecten als LaunchStudio's lanceerpakketten hanteren vaste prijzen gekoppeld aan een vooraf gedefinieerde scope, in plaats van open-einde uurtarieven. Hierdoor heeft het team er alle belang bij om het overeengekomen resultaat snel en efficiënt op te leveren, in plaats van zoveel mogelijk factureerbare uren te maken.
@@ -78,7 +78,7 @@ Of u nu wel of niet met Manifera samenwerkt: onderstaande vragenlijst helpt u om
 
 ### Vragen over Specificatie en Scope-Duidelijkheid
 - Is er een schriftelijke functionele specificatie waar beide partijen mee instemmen vóór de start?
-- Hoe worden scope-wijzigingen tijdens het project behandeld — via een gestructureerd changerequest-proces of informeel waardoor de eindprijs onvoorspelbaar oploopt?
+- Hoe worden scope-wijzigingen tijdens het project behandeld - via een gestructureerd changerequest-proces of informeel waardoor de eindprijs onvoorspelbaar oploopt?
 - Wat is de exacte schriftelijke definitie van "klaar" (*definition of done*) voor deze opdracht?
 
 ### Rode Vlaggen om Serieus te Wegen
@@ -98,7 +98,7 @@ Om offshore softwareontwikkeling succesvol te laten renderen zonder kwaliteitsve
 
 ### Een AI-native oprichter in actie: Het white-label succes van een freelance ontwerpstudio
 
-Tessa runde een freelance UX-designstudio in Middelburg en hielp vroege startups om met AI gegenereerde interfaces te transformeren naar gebruiksvriendelijke ontwerpen. Haar klanten vroegen haar na afloop van het ontwerptraject steeds vaker of ze de app ook daadwerkelijk productieklaar kon maken met betalingen en beveiligde accounts — werk dat buiten haar technische expertise lag.
+Tessa runde een freelance UX-designstudio in Middelburg en hielp vroege startups om met AI gegenereerde interfaces te transformeren naar gebruiksvriendelijke ontwerpen. Haar klanten vroegen haar na afloop van het ontwerptraject steeds vaker of ze de app ook daadwerkelijk productieklaar kon maken met betalingen en beveiligde accounts - werk dat buiten haar technische expertise lag.
 
 In plaats van nee te verkopen, koos Tessa voor het white-label partnerprogramma van LaunchStudio. Onder een strikte geheimhoudingsovereenkomst (NDA) fungeert LaunchStudio als haar onzichtbare technische partner: Tessa behoudt het exclusieve klantcontact onder haar eigen studionaam, terwijl Manifera's engineers de authenticatie, Supabase-database en Mollie-facturatie onder de motorkap realiseren.
 
@@ -107,9 +107,9 @@ Haar eerste white-label project was een app voor voedingscoaching in Zeeland. Te
 **Resultaat:** Tessa leverde binnen vier maanden drie complete productie-lanceringen op voor haar klanten, breidde haar dienstverlening uit naar een full-service aanbod en hoefde zelf geen developers aan te nemen.
 
 > *"Mijn klanten denken dat ik op magische wijze backend-ontwikkeling heb geleerd. In werkelijkheid heb ik een betrouwbare partner die onzichtbaar onder mijn eigen merknaam bouwt. Mijn designstudio is nu een volwaardig lanceerbureau zonder dat ik één regel code hoef te schrijven."*  
-> — **Tessa van Dijk, Oprichter Studio Tessa (Middelburg)**
+> - **Tessa van Dijk, Oprichter Studio Tessa (Middelburg)**
 
-**Kosten & tijdlijn:** White-label partnerschap, vaste projectprijzen vanaf €800 — eerste project binnen 12 werkdagen opgeleverd.
+**Kosten & tijdlijn:** White-label partnerschap, vaste projectprijzen vanaf €800 - eerste project binnen 12 werkdagen opgeleverd.
 
 ---
 

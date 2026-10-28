@@ -31,13 +31,13 @@ Doelgroep: FinOps / Enterprise Developers / Product Managers
 }
 </script>
 
-Wanneer traditionele software crasht, inspecteert een softwareontwikkelaar de stack-trace, vindt de exacte regel falende code en legt haarfijn uit waarom de fout optrad. Wanneer een Large Language Model echter een fictieve juridische uitspraak verzint, een kredietaanvraag afwijst of de ene sollicitant boven de andere rangschikt, ligt de verklaring begraven in miljarden probabilistische neurale netwerkgewichten — een onvervalste "Black Box". Enterprise-klanten, met name in de financiële sector, gezondheidszorg en HR, mogen wettelijk geen Black Box-software gebruiken voor beslissingen die de rechten of levens van mensen raken. Om aan deze gereguleerde sectoren te verkopen, moet u **Uitlegbaarheid (Explainability)** direct in uw software-architectuur verankeren via onveranderlijke audittrails, ontworpen vanaf dag één.
+Wanneer traditionele software crasht, inspecteert een softwareontwikkelaar de stack-trace, vindt de exacte regel falende code en legt haarfijn uit waarom de fout optrad. Wanneer een Large Language Model echter een fictieve juridische uitspraak verzint, een kredietaanvraag afwijst of de ene sollicitant boven de andere rangschikt, ligt de verklaring begraven in miljarden probabilistische neurale netwerkgewichten - een onvervalste "Black Box". Enterprise-klanten, met name in de financiële sector, gezondheidszorg en HR, mogen wettelijk geen Black Box-software gebruiken voor beslissingen die de rechten of levens van mensen raken. Om aan deze gereguleerde sectoren te verkopen, moet u **Uitlegbaarheid (Explainability)** direct in uw software-architectuur verankeren via onveranderlijke audittrails, ontworpen vanaf dag één.
 
 ## De Anatomie van een Volledig AI-Logbestand
 
-U kunt niet simpelweg de gebruikersvraag en het AI-antwoord opslaan. Die combinatie biedt nagenoeg nul diagnostische waarde wanneer er een hallucinatie of een bevooroordeelde beslissing optreedt — het vertelt u uitsluitend *wát* er gebeurde, niet *waarom*. Uw backend-architectuur moet de volledige "Prompt State" voor elke afzonderlijke transactie vastleggen:
+U kunt niet simpelweg de gebruikersvraag en het AI-antwoord opslaan. Die combinatie biedt nagenoeg nul diagnostische waarde wanneer er een hallucinatie of een bevooroordeelde beslissing optreedt - het vertelt u uitsluitend *wát* er gebeurde, niet *waarom*. Uw backend-architectuur moet de volledige "Prompt State" voor elke afzonderlijke transactie vastleggen:
 
-- **De Geversioneerde Systeemprompt:** De exacte hoofdinstructies die op die specifieke milliseconde actief waren, inclusief versienummer — omdat u prompts regelmatig bijwerkt en toezichthouders of enterprise-klanten exact zullen vragen welke promptversie actief was op het moment van de betwiste beslissing.
+- **De Geversioneerde Systeemprompt:** De exacte hoofdinstructies die op die specifieke milliseconde actief waren, inclusief versienummer - omdat u prompts regelmatig bijwerkt en toezichthouders of enterprise-klanten exact zullen vragen welke promptversie actief was op het moment van de betwiste beslissing.
 - **De Exacte Modelversie:** Log nooit generiek "GPT-4", maar de exacte model-snapshot (bijv. `gpt-4-0613` of `claude-sonnet-4-5-20250929`). Zodra een provider de onderliggende gewichten bijwerkt, kan het redeneergedrag bij een identieke prompt subtiel of drastisch veranderen.
 - **De Opgehaalde RAG-Context:** De exacte tekstfragmenten die uw vectordatabase heeft opgehaald en aan het model heeft doorgegeven, inclusief de unieke brondocument-ID's en similarity-scores.
 - **Sampling-Parameters:** De exacte instellingen voor `temperature`, `top_p`, maximale tokens en aangeroepen tool-definities tijdens de generatie.
@@ -90,13 +90,13 @@ LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internati
 
 ### Een AI-Native Oprichter in Actie: Gestructureerde Besluitvormings-Audits Bouwen voor een Retailplanner
 
-Sadie, een winkeleigenaar, gebruikte **Lovable** om een geautomatiseerde inkoopplanner te bouwen. Zij kon niet achterhalen waarom de AI foutieve inkooporders genereerde, omdat de app uitsluitend het uiteindelijke bestelaantal opsloeg — zonder de achterliggende prompt, context of parameters.
+Sadie, een winkeleigenaar, gebruikte **Lovable** om een geautomatiseerde inkoopplanner te bouwen. Zij kon niet achterhalen waarom de AI foutieve inkooporders genereerde, omdat de app uitsluitend het uiteindelijke bestelaantal opsloeg - zonder de achterliggende prompt, context of parameters.
 
 Zij schakelde **LaunchStudio (door Manifera)** in om een gestructureerde JSON-audittrail te bouwen die voor elke AI-beslissing de invoerprompts, opgehaalde voorraadcontext, temperatuurvariabelen en volledige API-responses vastlegde.
 
 **Resultaat:** Volledige transparantie hersteld, waardoor inkoopfouten binnen 24 uur konden worden opgelost wat € 5.000 aan foute orders bespaarde.
 
-**Kosten & Tijdlijn:** €1.600 (Audit Logging Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Audit Logging Pakket) - productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
@@ -120,7 +120,7 @@ Door het LLM te dwingen klikbare voetnoten naar brondocumenten te genereren, kun
 
 ### Bouwt LaunchStudio zelf de complete logging-infrastructuur?
 
-Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplijn — inclusief message queues, cold storage en tamper-evident archivering — binnen enkele werkdagen.
+Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplijn - inclusief message queues, cold storage en tamper-evident archivering - binnen enkele werkdagen.
 
 <script type="application/ld+json">
 {
@@ -164,7 +164,7 @@ Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplij
       "name": "Bouwt LaunchStudio zelf de complete logging-infrastructuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplijn — inclusief message queues, cold storage en tamper-evident archivering — binnen enkele werkdagen."
+        "text": "Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplijn - inclusief message queues, cold storage en tamper-evident archivering - binnen enkele werkdagen."
       }
     }
   ]

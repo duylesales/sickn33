@@ -86,7 +86,7 @@ Ella werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 
 **Resultaat:** Ella stond dagelijkse updates toe zonder actieve klantsessies te onderbreken.
 
-**Kosten en tijdlijn:** € 1.400 (CI/CD Pipeline Package) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.400 (CI/CD Pipeline Package) - productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
 

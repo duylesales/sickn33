@@ -1,4 +1,4 @@
-🔥 Naledi Dube bouwde WriteWise AI — een AI-schrijfassistent met **Cursor** — en lanceerde een zelfgebouwd affiliateprogramma met een in een weekend gebouwd referral-linksysteem. 🧠
+🔥 Naledi Dube bouwde WriteWise AI - een AI-schrijfassistent met **Cursor** - en lanceerde een zelfgebouwd affiliateprogramma met een in een weekend gebouwd referral-linksysteem. 🧠
 
 Binnen een maand betwistten drie topaffiliates ontbrekende commissies van mobiel-naar-desktop-conversies, en één restitutie werd nooit teruggevorderd van een al uitbetaalde commissie.
 
@@ -12,7 +12,7 @@ Binnen een maand betwistten drie topaffiliates ontbrekende commissies van mobiel
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Het affiliateprogramma van WriteWise AI verzoent nu automatisch en verwerkt uitbetalingen zonder één handmatige correctie. (€ 2.300 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
+Het affiliateprogramma van WriteWise AI verzoent nu automatisch en verwerkt uitbetalingen zonder één handmatige correctie. (€ 2.300 (Launch & Grow Pakket) - 8 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/affiliate-program-build-vs-hire-cost
 

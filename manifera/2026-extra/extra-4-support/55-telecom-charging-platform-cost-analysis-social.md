@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom telecom charging builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom telecom charging builds. 💸💥
 
 **The Pain Points:**
 ❌ **Low-Latency, High-Throughput Authorization Logic:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

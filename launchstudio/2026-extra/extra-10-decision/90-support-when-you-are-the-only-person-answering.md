@@ -42,11 +42,11 @@ A dedicated support tool becomes worth its cost when more than one person is ans
 
 The habit that keeps support from growing linearly with customers is treating repetition as a signal.
 
-Keep a tally. When a question arrives for the third time, it is no longer a support question — it is a product or documentation defect with a specific location. The remedy is usually small: a clearer label, a sentence of helper text, a better empty state, a changed default, or a paragraph in your documentation.
+Keep a tally. When a question arrives for the third time, it is no longer a support question - it is a product or documentation defect with a specific location. The remedy is usually small: a clearer label, a sentence of helper text, a better empty state, a changed default, or a paragraph in your documentation.
 
 Most products have a handful of questions accounting for the majority of their support volume, and they are almost always about the same things: getting data in, finding something that is not where the customer expected, and understanding what a screen is telling them. Fixing three of those changes the shape of your week.
 
-There is a second category worth separating: messages that are not questions but reports of things that are broken. These deserve to be recorded rather than merely answered, because a bug reported by one customer has usually been experienced silently by ten. If your error tracking attaches accounts to errors, a support message becomes a way to find everyone else affected — which turns a single complaint into a fix for a group of customers who were about to leave without telling you.
+There is a second category worth separating: messages that are not questions but reports of things that are broken. These deserve to be recorded rather than merely answered, because a bug reported by one customer has usually been experienced silently by ten. If your error tracking attaches accounts to errors, a support message becomes a way to find everyone else affected - which turns a single complaint into a fix for a group of customers who were about to leave without telling you.
 
 ## What Only You Should Answer
 
@@ -62,7 +62,7 @@ Not everything should be deflected. Some conversations are worth your time speci
 
 Conversely, three categories are best handled by a change rather than a reply: password resets and account access, which should be self-service; billing details and invoices, which should be downloadable; and "how do I do X", which after the third occurrence belongs in the product.
 
-Building the self-service paths that remove routine support — password reset, invoice access, account settings, data export — is ordinary production work, and their absence is a common reason founders of AI-built products spend their weeks answering messages instead of building. LaunchStudio, backed by Manifera's 11+ years of production engineering, implements these paths, and the customer context that makes the remaining support fast. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
+Building the self-service paths that remove routine support - password reset, invoice access, account settings, data export - is ordinary production work, and their absence is a common reason founders of AI-built products spend their weeks answering messages instead of building. LaunchStudio, backed by Manifera's 11+ years of production engineering, implements these paths, and the customer context that makes the remaining support fast. [Describe your project](https://launchstudio.eu/en/#contact) for a review within one business day.
 
 ## Boundaries That Keep It Sustainable
 
@@ -70,7 +70,7 @@ Two failures are common, and they pull in opposite directions.
 
 The first is being always available: replying at 22:00 on Sunday because the message arrived, which sets an expectation that becomes impossible to meet and quietly resentful to maintain. Stated hours, honestly kept, are better than heroic availability that erodes.
 
-The second is disappearing during difficult periods. Support volume rises precisely when something is wrong, which is also when founders most want to be fixing rather than replying — and the silence compounds the original problem, as customers who cannot get an answer escalate, complain publicly, or leave.
+The second is disappearing during difficult periods. Support volume rises precisely when something is wrong, which is also when founders most want to be fixing rather than replying - and the silence compounds the original problem, as customers who cannot get an answer escalate, complain publicly, or leave.
 
 The practical middle is batching. Two or three fixed times a day for support, rather than responding continuously, protects the blocks of attention that development requires while keeping replies within a day. An auto-reply confirming receipt and stating when you answer removes most of the anxiety that drives follow-up messages, which are themselves a meaningful share of volume.
 
@@ -80,11 +80,11 @@ And write down what you will not do, so it is a policy rather than an improvised
 
 The reframe worth holding onto: for a product at this stage, the support inbox is the most reliable research instrument available, and it is free.
 
-Read it as data monthly. Group the messages into categories — confusion, defects, missing capability, billing — and count them. The distribution tells you where the product is weakest, with a directness that no survey achieves, because these are people describing a problem they had while trying to get something done rather than an opinion they formed when asked.
+Read it as data monthly. Group the messages into categories - confusion, defects, missing capability, billing - and count them. The distribution tells you where the product is weakest, with a directness that no survey achieves, because these are people describing a problem they had while trying to get something done rather than an opinion they formed when asked.
 
 Pay particular attention to the questions that make you slightly defensive, and to what customers *call* things. Terminology mismatches between your interface and your customers' vocabulary are a common, cheap-to-fix source of confusion, and support is the only place they surface.
 
-The moment to hire or delegate is when support consistently prevents you from doing the work that would reduce support. Until then, answering it yourself is not overhead — it is the fastest feedback loop you will ever have.
+The moment to hire or delegate is when support consistently prevents you from doing the work that would reduce support. Until then, answering it yourself is not overhead - it is the fastest feedback loop you will ever have.
 
 ## Real example
 
@@ -96,10 +96,10 @@ Categorising three months of messages took an afternoon and showed that 61% fell
 
 Each had a specific cause. The import expected a format his customers' previous system did not produce, so everyone needed help. The export was on a settings page nobody found. The month problem was a timezone defect placing late-evening receipts in the following month. And there was no way for a firm's administrator to reset a colleague's password.
 
-**Result:** the import extended to accept the two common formats with a mapping step, the export moved to the main navigation, the timezone defect fixed, and administrator password reset added — four days of work. Support volume fell by roughly two thirds within a month, and the timezone fix also corrected historical data for 31 firms who had never reported it.
+**Result:** the import extended to accept the two common formats with a mapping step, the export moved to the main navigation, the timezone defect fixed, and administrator password reset added - four days of work. Support volume fell by roughly two thirds within a month, and the timezone fix also corrected historical data for 31 firms who had never reported it.
 
 > "Three days a week of support, and two thirds of it was four things I could have fixed in four days. One of them was a bug that thirty-one customers had lived with without mentioning."
-> — **Jasper Middelkoop, Founder, Bonnenbox**
+> - **Jasper Middelkoop, Founder, Bonnenbox**
 
 **Cost & Timeline:** self-service paths and defect fixes delivered in 4 business days.
 
@@ -119,7 +119,7 @@ One you can keep, such as within one business day. Saying nothing is worse, beca
 
 ### Which messages should the founder answer personally?
 
-Anyone considering cancelling, anyone reporting a problem with their data, your largest customers, and anyone attempting something the product does not yet support — the last category is where your roadmap comes from.
+Anyone considering cancelling, anyone reporting a problem with their data, your largest customers, and anyone attempting something the product does not yet support - the last category is where your roadmap comes from.
 
 ### When should I hire someone to handle support?
 

@@ -80,7 +80,7 @@ Alexander werkte samen met **LaunchStudio (door Manifera)** om het product lance
 
 **Resultaat:** Alexander heeft de portal beveiligd met HTTPS, waardoor browserbeveiligingswaarschuwingen voor bezoekers zijn opgelost.
 
-**Kosten en tijdlijn:** € 800 (domeinconfiguratiepakket) — productieklaar en binnen 2 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 800 (domeinconfiguratiepakket) - productieklaar en binnen 2 werkdagen geïmplementeerd.
 
 ---
 

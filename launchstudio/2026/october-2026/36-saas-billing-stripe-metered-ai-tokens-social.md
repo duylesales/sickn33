@@ -1,4 +1,4 @@
-🔥 David built a prototype using **AI builders** — david, a solo developer in amsterdam, built an ai tool that automatically transcribed and translated long-form youtube videos using openai's whisper api, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 David built a prototype using **AI builders** - david, a solo developer in amsterdam, built an ai tool that automatically transcribed and translated long-form youtube videos using openai's whisper api, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-David's application achieved production readiness: David re-launched with a pay-as-you-go model, charging $0.10 per minute of transcribed audio. The digital marketing agency returned, but this time, to process 400 hours of video, they had to pre-purchase $2,400 worth of credits. David's OpenAI costs were fully covered before the API was even called. LaunchStudio fixed my unit economics. Without their metered billing architecture, my 'successful' app would have bankrupted me in a month. (€2,800 (Stripe Metered Billing & Edge Function Security) — completed in 7 business days.). 🚀
+David's application achieved production readiness: David re-launched with a pay-as-you-go model, charging $0.10 per minute of transcribed audio. The digital marketing agency returned, but this time, to process 400 hours of video, they had to pre-purchase $2,400 worth of credits. David's OpenAI costs were fully covered before the API was even called. LaunchStudio fixed my unit economics. Without their metered billing architecture, my 'successful' app would have bankrupted me in a month. (€2,800 (Stripe Metered Billing & Edge Function Security) - completed in 7 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/saas-billing-stripe-metered-ai-tokens
 

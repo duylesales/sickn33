@@ -1,4 +1,4 @@
-🚨 Thomas de Wit built Factuurly in Cursor with 180 paying freelancers across Utrecht. During a pre-scaling performance review, an audit revealed his Supabase `service_role` key was bundled directly into client-side JavaScript — giving every visitor master admin power to bypass RLS and read or delete all invoices. 😳
+🚨 Thomas de Wit built Factuurly in Cursor with 180 paying freelancers across Utrecht. During a pre-scaling performance review, an audit revealed his Supabase `service_role` key was bundled directly into client-side JavaScript - giving every visitor master admin power to bypass RLS and read or delete all invoices. 😳
 
 The `service_role` key bypasses all database rules. If it's in your frontend bundle, your entire database is wide open: 🧠
 

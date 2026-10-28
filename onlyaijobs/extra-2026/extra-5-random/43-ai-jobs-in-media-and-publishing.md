@@ -35,7 +35,7 @@ Content Format: Sector Guide
 }
 </script>
 
-European media organisations occupy an unusual position: they hold enormous, valuable archives, they operate under public interest obligations and strict copyright rules, and they compete for attention with platforms that have vastly larger engineering budgets. AI jobs in media and publishing sit at that intersection, and the work combines classic recommendation engineering with problems — archival metadata, editorial judgement, rights management — that barely exist elsewhere.
+European media organisations occupy an unusual position: they hold enormous, valuable archives, they operate under public interest obligations and strict copyright rules, and they compete for attention with platforms that have vastly larger engineering budgets. AI jobs in media and publishing sit at that intersection, and the work combines classic recommendation engineering with problems - archival metadata, editorial judgement, rights management - that barely exist elsewhere.
 
 ## Where AI Jobs in Media and Publishing Are Found
 
@@ -59,7 +59,7 @@ Media recommendation is not the same problem as commerce recommendation, and int
 
 **Freshness dominates.** A news article has a useful life measured in hours. Classic collaborative filtering struggles because items have no interaction history when they matter most, which makes content understanding and rapid cold start essential.
 
-**Editorial values constrain the objective.** A purely engagement-maximising system produces narrow, sensational and repetitive output, which European media organisations — particularly public broadcasters — treat as a failure rather than a success. Diversity, breadth and public interest are explicit objectives in many systems.
+**Editorial values constrain the objective.** A purely engagement-maximising system produces narrow, sensational and repetitive output, which European media organisations - particularly public broadcasters - treat as a failure rather than a success. Diversity, breadth and public interest are explicit objectives in many systems.
 
 **Metrics are contested.** Clicks, dwell time, completion, subscription conversion and long-term retention pull in different directions. Choosing and defending an objective is a substantial part of the job.
 
@@ -103,7 +103,7 @@ Some of the most satisfying work in the sector is building tools for journalists
 
 Investigative work generates document analysis problems at scale: leaked datasets, freedom of information releases, corporate registries and court records that must be searched, linked and cross-referenced. Several major European investigations have depended on exactly this kind of engineering.
 
-Routine production benefits from transcription, subtitling, translation, image search across archives, and automatic generation of routine reports — election results, sports fixtures, financial disclosures — where the data is structured and the output is formulaic.
+Routine production benefits from transcription, subtitling, translation, image search across archives, and automatic generation of routine reports - election results, sports fixtures, financial disclosures - where the data is structured and the output is formulaic.
 
 Verification tooling has grown in importance: reverse image search, detection of manipulated media, provenance checking and cross-referencing against known sources.
 
@@ -115,7 +115,7 @@ Engineers who enjoy working directly alongside expert users, with fast feedback 
 
 Media sits inside several overlapping European regulatory regimes, and they affect daily engineering decisions.
 
-Data protection constrains audience analytics directly. Consent requirements for tracking, restrictions on combining datasets, and limits on profiling shape what personalisation is possible. Many European publishers have invested in first-party data strategies — logged-in audiences, newsletters, registration walls — partly because third-party tracking has become legally and technically unreliable.
+Data protection constrains audience analytics directly. Consent requirements for tracking, restrictions on combining datasets, and limits on profiling shape what personalisation is possible. Many European publishers have invested in first-party data strategies - logged-in audiences, newsletters, registration walls - partly because third-party tracking has become legally and technically unreliable.
 
 The Digital Services Act imposes obligations around content moderation, transparency of recommender systems and advertising disclosure, with heavier requirements for the largest platforms. Media organisations that host user contributions fall within parts of it.
 
@@ -187,7 +187,7 @@ The data team rebuilt the system with explicit constraints: a guaranteed share o
 
 Click-through fell slightly. Subscription retention improved, and the editorial objection disappeared.
 
-The engineer who led the change said the technical work was straightforward and the difficult part was getting agreement on what the system was for — a sentence that describes most media data projects accurately.
+The engineer who led the change said the technical work was straightforward and the difficult part was getting agreement on what the system was for - a sentence that describes most media data projects accurately.
 
 ## Key Takeaways
 

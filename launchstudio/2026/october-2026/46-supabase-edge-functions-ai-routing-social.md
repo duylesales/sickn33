@@ -1,4 +1,4 @@
-🔥 Jonas built a prototype using **AI builders** — jonas, a developer in berlin, built an ai translation app for local clinics, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Jonas built a prototype using **AI builders** - jonas, a developer in berlin, built an ai translation app for local clinics, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jonas's application achieved production readiness: Jonas re-launched the app one week later. His API keys were completely invisible to the frontend. Because the Edge Function stripped the PII before the text hit the LLM, he passed a strict data-privacy audit from a major Berlin hospital network and secured a €40,000 enterprise contract. LaunchStudio's Edge Function architecture saved my business. Without their middleman logic, I was bankrupt and legally exposed. (€3,500 (Edge Function Routing & PII Sanitization) — completed in 8 business days.). 🚀
+Jonas's application achieved production readiness: Jonas re-launched the app one week later. His API keys were completely invisible to the frontend. Because the Edge Function stripped the PII before the text hit the LLM, he passed a strict data-privacy audit from a major Berlin hospital network and secured a €40,000 enterprise contract. LaunchStudio's Edge Function architecture saved my business. Without their middleman logic, I was bankrupt and legally exposed. (€3,500 (Edge Function Routing & PII Sanitization) - completed in 8 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/supabase-edge-functions-ai-routing
 

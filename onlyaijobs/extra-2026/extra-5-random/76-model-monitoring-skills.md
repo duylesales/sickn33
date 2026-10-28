@@ -43,7 +43,7 @@ A deployed model does not fail the way a service fails. It keeps responding, wit
 
 **Data.** The distribution of every important input feature, compared against a recent baseline: means, quantiles, null rates, category frequencies, and the appearance of unseen categories. This is the layer that catches what matters and the layer most teams omit.
 
-**Outcome.** The distribution of predictions, the rate of extreme or default outputs, and — where labels eventually arrive — realised performance by segment over time.
+**Outcome.** The distribution of predictions, the rate of extreme or default outputs, and - where labels eventually arrive - realised performance by segment over time.
 
 Above these sits a business layer that is often the most sensitive of all: total predicted demand, aggregate price movement, number of cases flagged for review, share of automated decisions. These catch compound errors that no individual technical check would detect.
 
@@ -125,7 +125,7 @@ Review the alerts quarterly. Any alert that has fired repeatedly without action 
 
 Detection is half the skill; knowing what to do is the other half, and machine learning incidents rarely have fast fixes.
 
-The sequence that works: establish whether the system is producing harmful output right now; if so, mitigate rather than fix — fall back to a previous model, a simpler rule or the prior period's output, or route cases to human review; then diagnose.
+The sequence that works: establish whether the system is producing harmful output right now; if so, mitigate rather than fix - fall back to a previous model, a simpler rule or the prior period's output, or route cases to human review; then diagnose.
 
 Diagnosis should follow the layers. Did the pipeline run? Did the inputs change? Did the outputs change? Did the world change? In most incidents the answer is found at the input layer, and comparing the current feature distributions against the training distribution is the first thing to look at.
 
@@ -145,7 +145,7 @@ Sectoral rules add further layers. Financial services model risk frameworks have
 
 GDPR contributes too: where decisions significantly affect individuals, being able to explain what happened in a particular case requires the logging described earlier.
 
-The practical consequence for engineers is that monitoring artefacts — what is measured, what thresholds apply, who reviews the output, what was found and what was done — are documentation that someone may read. Building them as records rather than as dashboards is the difference between a system that can be evidenced and one that cannot.
+The practical consequence for engineers is that monitoring artefacts - what is measured, what thresholds apply, who reviews the output, what was found and what was done - are documentation that someone may read. Building them as records rather than as dashboards is the difference between a system that can be evidenced and one that cannot.
 
 This is also why monitoring experience has become a hiring differentiator in regulated European sectors specifically.
 

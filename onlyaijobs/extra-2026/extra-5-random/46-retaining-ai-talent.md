@@ -73,7 +73,7 @@ Agency fees, where used, are typically a substantial percentage of first-year sa
 
 Conservatively, the total is comparable to a significant fraction of an annual salary, and for a specialist with deep domain knowledge it can exceed it.
 
-Set against that, the measures that retain people — a salary correction, an engineer who owns deployment, protected learning time, a clearer progression conversation — are inexpensive. The asymmetry is large enough that retention deserves the same management attention as hiring, and in most organisations it receives far less.
+Set against that, the measures that retain people - a salary correction, an engineer who owns deployment, protected learning time, a clearer progression conversation - are inexpensive. The asymmetry is large enough that retention deserves the same management attention as hiring, and in most organisations it receives far less.
 
 ## Pay Without Illusions
 
@@ -95,7 +95,7 @@ Things that provide this cheaply:
 
 **Increasing scope.** Ownership of a larger system, a harder problem, or responsibility for an area rather than a task.
 
-**Technical depth.** Protected time to learn something the role will need — a day a fortnight, used properly, is more than most people get.
+**Technical depth.** Protected time to learn something the role will need - a day a fortnight, used properly, is more than most people get.
 
 **Mentoring others.** Supervising a junior or an intern develops people faster than almost anything else and provides visible seniority without a vacancy.
 
@@ -113,7 +113,7 @@ Technical frustration is an underrated cause of departure, and it is specific en
 
 The recurring complaints in data teams are consistent: pipelines that break weekly with no time allocated to fix them properly; no access to the data required without a three-week request process; an environment where deploying anything takes a month; tooling chosen years ago and never revisited; and no monitoring, so problems are discovered by stakeholders.
 
-Each of these is a decision about investment, and each is usually cheaper to fix than to tolerate. A recurring engineering allocation — a fixed share of capacity for foundations, defended rather than sacrificed to the next urgent request — is the standard remedy, and teams that hold to it report both better delivery and better retention.
+Each of these is a decision about investment, and each is usually cheaper to fix than to tolerate. A recurring engineering allocation - a fixed share of capacity for foundations, defended rather than sacrificed to the next urgent request - is the standard remedy, and teams that hold to it report both better delivery and better retention.
 
 The signal it sends matters as much as the work. A team that is permitted to fix what it complains about concludes that its judgement is trusted. A team that raises the same problem for two years and is always told there is no time concludes the opposite, and the good engineers, who have options, act on that conclusion first.
 
@@ -137,7 +137,7 @@ Teams also notice how a manager behaves when a project fails. A manager who abso
 
 In much of Europe, working conditions are a more powerful retention lever than employers assume, and often cheaper than pay.
 
-Hybrid arrangements are now standard for most data work, and imposing a rigid office requirement without a reason that the team accepts is a reliable way to lose people who have arranged their lives around flexibility. Where presence genuinely matters — collaboration with operations, laboratory work, secure environments — say why.
+Hybrid arrangements are now standard for most data work, and imposing a rigid office requirement without a reason that the team accepts is a reliable way to lose people who have arranged their lives around flexibility. Where presence genuinely matters - collaboration with operations, laboratory work, secure environments - say why.
 
 Part-time and compressed arrangements are well established in several European countries and are frequently the difference between a valued colleague staying and leaving after parental leave. Several countries give employees statutory rights to request reduced hours; treating such requests as normal rather than exceptional costs little.
 
@@ -151,7 +151,7 @@ These measures cost almost nothing and are visible to every candidate you later 
 
 Keep it simple, and act on what you learn.
 
-Track voluntary departures over a rolling period, tenure at departure, and the distribution across the team — losing three people from one sub-team is a different problem from losing three across the department.
+Track voluntary departures over a rolling period, tenure at departure, and the distribution across the team - losing three people from one sub-team is a different problem from losing three across the department.
 
 Run proper exit conversations, ideally not with the person's direct manager, and ask specific questions: what would have had to change for you to stay, when did you first consider leaving, what did we not notice. The honest answer is usually available if the conversation is genuinely confidential and the person is already leaving.
 
@@ -161,7 +161,7 @@ Watch for early signals: disengagement in design discussions, reduced willingnes
 
 ## How OnlyAIJobs Fits a Long-Term Talent Strategy
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a higher position — vacancies compete on content rather than on advertising spend.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a higher position - vacancies compete on content rather than on advertising spend.
 
 Retention and hiring are connected in a way worth stating. If your team is stable, you hire less often and from a stronger position, because candidates ask how long people stay and the honest answer is persuasive. If your team churns, you will be recruiting permanently and explaining the turnover to every candidate who checks.
 

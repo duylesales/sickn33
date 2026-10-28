@@ -1,4 +1,4 @@
-🔥 Gavin bouwde een prototype met **Lovable** — Gavin, een marketeer, bouwde een gratis PDF-vertaaltool, maar geautomatiseerde bots deden zijn Anthropic API-factuur binnen 24 uur met €800 exploderen. 🧠
+🔥 Gavin bouwde een prototype met **Lovable** - Gavin, een marketeer, bouwde een gratis PDF-vertaaltool, maar geautomatiseerde bots deden zijn Anthropic API-factuur binnen 24 uur met €800 exploderen. 🧠
 
 Het tijdperk van statische PDF-leadmagnets is voorbij; interactieve AI-softwaretools (Engineering-as-Marketing) realiseren 5x hogere leadconversies.
 
@@ -12,7 +12,7 @@ Het tijdperk van statische PDF-leadmagnets is voorbij; interactieve AI-softwaret
 
 Bij **LaunchStudio** lossen we exact dit type lead-magnet architectuur en API-beveiligingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Gavins tool werd een veilige groeimotor: Botverkeer werd per direct geblokkeerd en zijn API-budget werd beschermd terwijl echte inschrijvingen binnenstroomden. (€950 (Bot Security Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Gavins tool werd een veilige groeimotor: Botverkeer werd per direct geblokkeerd en zijn API-budget werd beschermd terwijl echte inschrijvingen binnenstroomden. (€950 (Bot Security Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/building-ai-lead-magnet-actually-converts
 

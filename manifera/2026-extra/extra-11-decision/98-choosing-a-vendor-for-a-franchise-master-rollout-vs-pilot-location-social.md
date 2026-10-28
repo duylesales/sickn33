@@ -1,4 +1,4 @@
-Pilot succeeded at 3 flagship locations. Four locations into the 60-site rollout, onboarding stalled — the vendor's product worked, but their delivery capacity didn't scale. 🏪
+Pilot succeeded at 3 flagship locations. Four locations into the 60-site rollout, onboarding stalled - the vendor's product worked, but their delivery capacity didn't scale. 🏪
 
 **The Pain Points:**
 ❌ **Flattering Pilot Sites:** Testing at your best, most cooperative location tells you almost nothing about how a vendor performs across a real network.
@@ -6,7 +6,7 @@ Pilot succeeded at 3 flagship locations. Four locations into the 60-site rollout
 ❌ **Untested Delivery Capacity:** A vendor can deliver excellent hands-on support for 3 sites and still have no repeatable onboarding playbook for 60.
 
 **The Manifera Solution:**
-✅ **Representative Pilot Design:** We help franchisors pilot at typical — and deliberately harder — locations, not just the flagship.
+✅ **Representative Pilot Design:** We help franchisors pilot at typical - and deliberately harder - locations, not just the flagship.
 ✅ **Two-Phase Contracts:** Pilot and rollout get negotiated separately, with real performance data informing rollout pricing and scope.
 ✅ **Delivery Capacity Testing:** We push vendors to show a documented onboarding playbook at scale, not just describe one verbally.
 

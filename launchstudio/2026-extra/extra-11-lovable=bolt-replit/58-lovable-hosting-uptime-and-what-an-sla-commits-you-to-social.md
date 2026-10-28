@@ -1,4 +1,4 @@
-🚨 Ruud Bosman ran Inspectiepunt, a building-inspection reporting tool in Lovable for 7 inspection firms in Deventer. A major regional housing corporation agreed to adopt the tool across all properties, but their enterprise contract demanded a 99.9% uptime Service Level Agreement with severe financial penalties for unannounced downtime — while Ruud had no automated uptime tracking, failover, or disaster recovery SLA. 😳
+🚨 Ruud Bosman ran Inspectiepunt, a building-inspection reporting tool in Lovable for 7 inspection firms in Deventer. A major regional housing corporation agreed to adopt the tool across all properties, but their enterprise contract demanded a 99.9% uptime Service Level Agreement with severe financial penalties for unannounced downtime - while Ruud had no automated uptime tracking, failover, or disaster recovery SLA. 😳
 
 Promising 'three nines' (99.9%) allows only 43 minutes of downtime per month. Don't sign an SLA you cannot measure or support: 🧠
 

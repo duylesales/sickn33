@@ -31,34 +31,34 @@ Target Persona: AI-Native Founder
 }
 </script>
 
-It's launch day. You've bought the custom domain, you're excited, and switching over feels like it should take five minutes: change a few DNS records, done. Then for the next eight hours, some visitors reach your app fine and others get an error or a blank page, depending on which DNS cache happens to be serving them at that exact moment — and there's nothing you can do to speed it up once it's already in motion.
+It's launch day. You've bought the custom domain, you're excited, and switching over feels like it should take five minutes: change a few DNS records, done. Then for the next eight hours, some visitors reach your app fine and others get an error or a blank page, depending on which DNS cache happens to be serving them at that exact moment - and there's nothing you can do to speed it up once it's already in motion.
 
 ## Why DNS changes don't happen instantly, even though it feels like they should
 
-DNS records come with a Time To Live (TTL) value — a number, typically in seconds, that tells every server and browser caching that record how long they're allowed to keep using the old answer before checking again. If your domain's DNS records were set up with a default TTL of, say, 24 hours (86,400 seconds), then when you change where that domain points, every DNS resolver around the world that already cached the old record keeps using it for up to 24 hours after your change, regardless of when you actually made it. Some visitors get routed to your new app immediately. Others keep hitting the old subdomain, or a dead endpoint, for hours, purely based on when their local resolver last refreshed its cache.
+DNS records come with a Time To Live (TTL) value - a number, typically in seconds, that tells every server and browser caching that record how long they're allowed to keep using the old answer before checking again. If your domain's DNS records were set up with a default TTL of, say, 24 hours (86,400 seconds), then when you change where that domain points, every DNS resolver around the world that already cached the old record keeps using it for up to 24 hours after your change, regardless of when you actually made it. Some visitors get routed to your new app immediately. Others keep hitting the old subdomain, or a dead endpoint, for hours, purely based on when their local resolver last refreshed its cache.
 
-Most founders switching from a temporary Lovable or Bolt subdomain to a real custom domain don't know TTL exists until they've already made the switch and started fielding "your site is down" messages from people who, an hour later, say it's working fine. The fix isn't something you can apply retroactively once the migration is underway — it has to happen *before* you touch the actual A or CNAME record.
+Most founders switching from a temporary Lovable or Bolt subdomain to a real custom domain don't know TTL exists until they've already made the switch and started fielding "your site is down" messages from people who, an hour later, say it's working fine. The fix isn't something you can apply retroactively once the migration is underway - it has to happen *before* you touch the actual A or CNAME record.
 
 ## The sequence that actually gets you a clean cutover
 
-A zero-downtime domain migration follows a specific order: first, lower the TTL on the existing DNS record — often down to 300 seconds or less — and wait at least as long as the *old* TTL value before doing anything else, so that every cache worldwide has had a chance to pick up the new, shorter TTL. Only once that waiting period has passed do you actually change the record to point at the new destination; because every resolver is now honoring the short TTL, the change propagates globally within minutes instead of hours. After the cutover is confirmed stable, the TTL can be raised back to a normal value for everyday performance.
+A zero-downtime domain migration follows a specific order: first, lower the TTL on the existing DNS record - often down to 300 seconds or less - and wait at least as long as the *old* TTL value before doing anything else, so that every cache worldwide has had a chance to pick up the new, shorter TTL. Only once that waiting period has passed do you actually change the record to point at the new destination; because every resolver is now honoring the short TTL, the change propagates globally within minutes instead of hours. After the cutover is confirmed stable, the TTL can be raised back to a normal value for everyday performance.
 
-As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A domain migration is a small, one-time example of exactly that gap — it's not a coding problem an AI tool can solve, it's an infrastructure sequencing problem that requires knowing what to do a day in advance.
+As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A domain migration is a small, one-time example of exactly that gap - it's not a coding problem an AI tool can solve, it's an infrastructure sequencing problem that requires knowing what to do a day in advance.
 
 LaunchStudio's engineers, supported from Manifera's Singapore office at 100 Tras Street, handle domain and infrastructure migrations as a standard part of moving an AI-built prototype toward a production-ready launch. If your domain switch is still ahead of you, it's worth [talking to an engineer about your migration plan](https://launchstudio.eu/en/#contact) a few days before you intend to flip the switch, not the morning of.
 
 ## A Clean DNS Cutover Still Fails Without a Certificate Waiting For It
 
-Getting TTL sequencing right solves the propagation problem, but it solves a different problem than the one that catches founders next: even a perfectly-timed DNS cutover routes visitors to a new domain that has no valid HTTPS certificate covering it yet. Most hosting platforms provision a TLS certificate automatically, but only *after* they detect the domain is actually pointing at them — which means the certificate request doesn't even start until the same DNS change that was supposed to be instant, creating a second, separate delay stacked on top of (or masquerading as) the DNS propagation window.
+Getting TTL sequencing right solves the propagation problem, but it solves a different problem than the one that catches founders next: even a perfectly-timed DNS cutover routes visitors to a new domain that has no valid HTTPS certificate covering it yet. Most hosting platforms provision a TLS certificate automatically, but only *after* they detect the domain is actually pointing at them - which means the certificate request doesn't even start until the same DNS change that was supposed to be instant, creating a second, separate delay stacked on top of (or masquerading as) the DNS propagation window.
 
 ```
-1. DNS cutover completes — new domain now points at your host
+1. DNS cutover completes - new domain now points at your host
 2. Host detects the domain and requests a TLS certificate
 3. Certificate authority validates domain ownership (minutes to hours)
 4. Until validation completes, HTTPS requests to the new domain fail
 ```
 
-The fix is to trigger certificate provisioning ahead of the actual cutover wherever the hosting platform supports it — many providers let you add and pre-validate a domain before it's live, so the certificate is already issued and waiting the moment DNS actually points there, rather than starting a second countdown right when visitors first arrive. Confirming this step explicitly, rather than assuming "DNS is fixed, so the migration is done," is what separates a cutover that's clean end to end from one that trades an eight-hour DNS problem for a shorter but still visible certificate-error window.
+The fix is to trigger certificate provisioning ahead of the actual cutover wherever the hosting platform supports it - many providers let you add and pre-validate a domain before it's live, so the certificate is already issued and waiting the moment DNS actually points there, rather than starting a second countdown right when visitors first arrive. Confirming this step explicitly, rather than assuming "DNS is fixed, so the migration is done," is what separates a cutover that's clean end to end from one that trades an eight-hour DNS problem for a shorter but still visible certificate-error window.
 
 ## Real example
 
@@ -66,14 +66,14 @@ The fix is to trigger certificate provisioning ahead of the actual cutover where
 
 Milo Prins, a founder in Purmerend, built ReisPlanner, a travel itinerary SaaS, using Bolt. Ready to launch publicly, he'd been running the app on a temporary subdomain during development and wanted to switch to his purchased custom domain on launch morning. The change itself was simple enough on paper: update the DNS records to point the new domain at the app.
 
-What Milo didn't account for was the existing DNS record's TTL, which had been left at its default, long value. The moment he changed the record, DNS resolvers that had already cached the old configuration kept using it for hours, while resolvers that happened to refresh sooner picked up the new domain immediately. The result was a patchy, unpredictable eight-hour window where roughly half of ReisPlanner's launch-day visitors got a broken experience depending purely on their location and their ISP's DNS cache — precisely the day Milo could least afford it.
+What Milo didn't account for was the existing DNS record's TTL, which had been left at its default, long value. The moment he changed the record, DNS resolvers that had already cached the old configuration kept using it for hours, while resolvers that happened to refresh sooner picked up the new domain immediately. The result was a patchy, unpredictable eight-hour window where roughly half of ReisPlanner's launch-day visitors got a broken experience depending purely on their location and their ISP's DNS cache - precisely the day Milo could least afford it.
 
 LaunchStudio audited the DNS configuration after the fact and rebuilt Milo's process for future changes: pre-lowering TTL a full day ahead of any planned DNS change, waiting out the old TTL window before cutting over, executing the actual record change once propagation would be near-instant, and restoring normal TTL only after confirming stability. **Result:** ReisPlanner's subsequent infrastructure changes, including a later hosting migration, completed with no visitor-facing downtime at all.
 
 > *"I didn't even know DNS caching was a thing that could bite me for eight hours. It felt like such a small technical step, right up until it wasn't."*
-> — **Milo Prins, Founder, ReisPlanner (Purmerend)**
+> - **Milo Prins, Founder, ReisPlanner (Purmerend)**
 
-**Cost & Timeline:** €450 (DNS audit, migration sequencing, documented cutover procedure) — completed in 2 business days.
+**Cost & Timeline:** €450 (DNS audit, migration sequencing, documented cutover procedure) - completed in 2 business days.
 
 ---
 
@@ -85,23 +85,23 @@ TTL (Time To Live) tells DNS resolvers how long to cache a record before recheck
 
 ### How far in advance should I lower my DNS TTL before migrating a domain?
 
-At minimum, you should wait out the existing (old) TTL value after lowering it before making the actual destination change — if the old TTL was 24 hours, plan the lowering step at least a day ahead of the real cutover.
+At minimum, you should wait out the existing (old) TTL value after lowering it before making the actual destination change - if the old TTL was 24 hours, plan the lowering step at least a day ahead of the real cutover.
 
 ### Can this same issue happen with hosting migrations, not just domain changes?
 
-Yes — any change that involves updating where a domain's DNS records point, including moving between hosting providers, is subject to the same TTL propagation delay if it isn't sequenced correctly.
+Yes - any change that involves updating where a domain's DNS records point, including moving between hosting providers, is subject to the same TTL propagation delay if it isn't sequenced correctly.
 
 ### Why does Herre Roelevink describe this kind of issue as an architecture problem rather than a coding problem?
 
-Because it isn't something an AI coding tool generates or omits in code — it's an infrastructure sequencing decision that requires planning a day or more ahead, which is exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch.
+Because it isn't something an AI coding tool generates or omits in code - it's an infrastructure sequencing decision that requires planning a day or more ahead, which is exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch.
 
 ### If DNS propagates cleanly, is the migration actually finished?
 
-Not necessarily — most hosting platforms only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, which can create a separate HTTPS-error window even after DNS itself has cut over cleanly, so pre-validating the domain with the host ahead of the cutover is worth confirming explicitly.
+Not necessarily - most hosting platforms only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, which can create a separate HTTPS-error window even after DNS itself has cut over cleanly, so pre-validating the domain with the host ahead of the cutover is worth confirming explicitly.
 
 ### Does LaunchStudio handle domain migrations as a standalone service?
 
-Yes — LaunchStudio's team, including engineers supported from the Singapore office, handles DNS and domain migrations as part of getting AI-built prototypes production-ready, whether that's a standalone fix or part of a broader launch package.
+Yes - LaunchStudio's team, including engineers supported from the Singapore office, handles DNS and domain migrations as part of getting AI-built prototypes production-ready, whether that's a standalone fix or part of a broader launch package.
 
 <script type="application/ld+json">
 {
@@ -116,7 +116,7 @@ Yes — LaunchStudio's team, including engineers supported from the Singapore of
     {
       "@type": "Question",
       "name": "How far in advance should I lower my DNS TTL before migrating a domain?",
-      "acceptedAnswer": { "@type": "Answer", "text": "At minimum, wait out the existing TTL value after lowering it before making the actual destination change — if the old TTL was 24 hours, plan a day ahead." }
+      "acceptedAnswer": { "@type": "Answer", "text": "At minimum, wait out the existing TTL value after lowering it before making the actual destination change - if the old TTL was 24 hours, plan a day ahead." }
     },
     {
       "@type": "Question",
@@ -126,7 +126,7 @@ Yes — LaunchStudio's team, including engineers supported from the Singapore of
     {
       "@type": "Question",
       "name": "Why does Herre Roelevink describe this kind of issue as an architecture problem rather than a coding problem?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Because it's an infrastructure sequencing decision requiring planning ahead, not something an AI coding tool generates or omits in code — exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Because it's an infrastructure sequencing decision requiring planning ahead, not something an AI coding tool generates or omits in code - exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch." }
     },
     {
       "@type": "Question",
@@ -136,7 +136,7 @@ Yes — LaunchStudio's team, including engineers supported from the Singapore of
     {
       "@type": "Question",
       "name": "If DNS propagates cleanly, is the migration actually finished?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — hosting platforms often only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, creating a separate HTTPS-error window even after DNS itself has cut over cleanly." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily - hosting platforms often only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, creating a separate HTTPS-error window even after DNS itself has cut over cleanly." }
     }
   ]
 }

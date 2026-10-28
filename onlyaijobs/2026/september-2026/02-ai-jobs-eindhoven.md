@@ -45,7 +45,7 @@ This changes the engineering in ways that rarely appear in a job title.
 
 **Latency is a physical constraint, not a UX preference.** If a vision model must classify a part while the line is moving, the budget is measured in milliseconds and there is no option to degrade gracefully with a spinner.
 
-**Data is expensive to collect and often scarce.** You cannot A/B test your way to a training set when each labelled example requires a physical sample and a domain expert. Techniques that are academic curiosities elsewhere — synthetic data, few-shot approaches, careful transfer learning — become daily practice.
+**Data is expensive to collect and often scarce.** You cannot A/B test your way to a training set when each labelled example requires a physical sample and a domain expert. Techniques that are academic curiosities elsewhere - synthetic data, few-shot approaches, careful transfer learning - become daily practice.
 
 **Failure has a cost with a unit.** A misclassification is a scrapped part, an unplanned stop, or a safety review. Model evaluation becomes an engineering discipline rather than a leaderboard.
 
@@ -59,7 +59,7 @@ First, the titles do not match the search. A role that is eighty percent machine
 
 Second, many of the employers are industrial or engineering firms rather than tech companies. They have no employer brand in the tech community, no careers-page copywriter, and no recruitment marketing budget. On a board that ranks by advertising spend, they are structurally invisible.
 
-Third, the region's geography is dispersed. The relevant employers are in Eindhoven, Veldhoven, Helmond, Best, Son, Nuenen and Oss. A candidate who filters by "Eindhoven" excludes most of them by definition — even when several are closer to their home than the Eindhoven addresses that did appear.
+Third, the region's geography is dispersed. The relevant employers are in Eindhoven, Veldhoven, Helmond, Best, Son, Nuenen and Oss. A candidate who filters by "Eindhoven" excludes most of them by definition - even when several are closer to their home than the Eindhoven addresses that did appear.
 
 ## Comparative Analysis: Two Ways to Search the Same Region
 
@@ -68,7 +68,7 @@ Third, the region's geography is dispersed. The relevant employers are in Eindho
 | City filter "Eindhoven" | Employers with an Eindhoven postal address | Everything in Veldhoven, Helmond, Best, Son, Oss |
 | Keyword "machine learning" | Roles that use the phrase in the title | Vision, R&D and process roles that are ML in substance |
 | Generalist board ranking | Employers with recruitment budget | Industrial SMEs with one vacancy and no budget |
-| Radius from your address | Every AI role within a commute you accept | Nothing — this is the superset |
+| Radius from your address | Every AI role within a commute you accept | Nothing - this is the superset |
 
 The last row is the point. Distance is the only filter that maps onto the decision you are actually making.
 
@@ -82,9 +82,9 @@ On OnlyAIJobs, employers currently listing in and around this region include Ceg
 
 Eindhoven's AI market is unusual in how directly its education and research institutions feed specific kinds of industrial work.
 
-**Eindhoven University of Technology (TU/e).** The region's anchor institution. TU/e's strength has always been engineering that has to work in the physical world — mechanical, electrical, control systems, applied physics — and its AI research inherits that orientation. Graduates tend to arrive with a systems mindset rather than a purely statistical one, which is exactly what the region's employers screen for.
+**Eindhoven University of Technology (TU/e).** The region's anchor institution. TU/e's strength has always been engineering that has to work in the physical world - mechanical, electrical, control systems, applied physics - and its AI research inherits that orientation. Graduates tend to arrive with a systems mindset rather than a purely statistical one, which is exactly what the region's employers screen for.
 
-**Eindhoven Artificial Intelligence Systems Institute (EAISI).** TU/e's institute for AI, set up to combine data, algorithms and physical systems research across faculties. Its focus areas — high-tech systems, mobility, health and energy — map almost one-to-one onto the sectors that hire AI engineers in the region. If a Brainport employer describes a project as "AI for high-tech systems", EAISI is often somewhere in its academic network.
+**Eindhoven Artificial Intelligence Systems Institute (EAISI).** TU/e's institute for AI, set up to combine data, algorithms and physical systems research across faculties. Its focus areas - high-tech systems, mobility, health and energy - map almost one-to-one onto the sectors that hire AI engineers in the region. If a Brainport employer describes a project as "AI for high-tech systems", EAISI is often somewhere in its academic network.
 
 **Jheronimus Academy of Data Science (JADS).** A joint initiative of TU/e and Tilburg University, based in 's-Hertogenbosch. JADS combines data science with business and entrepreneurship, and its graduates frequently end up in the data and analytics roles of Brabant firms that are not tech companies at all.
 
@@ -94,7 +94,7 @@ The implication for experienced engineers is that Eindhoven employers are used t
 
 ## Mapping the Brainport Region by Campus and Corridor
 
-Brainport Eindhoven is best understood as a set of connected clusters rather than one city. **Brainport Development**, the region's economic development organisation, promotes it as a triple-helix region in which companies, knowledge institutions and government cooperate closely — and that cooperation is visible in the physical layout.
+Brainport Eindhoven is best understood as a set of connected clusters rather than one city. **Brainport Development**, the region's economic development organisation, promotes it as a triple-helix region in which companies, knowledge institutions and government cooperate closely - and that cooperation is visible in the physical layout.
 
 | Location | What clusters there | AI and data work you are likely to find |
 |---|---|---|
@@ -118,7 +118,7 @@ Several practical differences between Brainport employers and Randstad tech comp
 
 **Export control and confidentiality.** Semiconductor and high-tech employers operate under strict confidentiality and, in some areas, export-control regimes. This can affect which projects a candidate can discuss at interview, which parts of the work can be done remotely, and occasionally which nationalities can be granted access to certain programmes. Ask early rather than assuming.
 
-**Long product cycles.** A model deployed in industrial equipment may run for a decade. Documentation, validation and maintainability carry more weight than rapid iteration — a contrast many engineers from consumer platforms find surprisingly satisfying.
+**Long product cycles.** A model deployed in industrial equipment may run for a decade. Documentation, validation and maintainability carry more weight than rapid iteration - a contrast many engineers from consumer platforms find surprisingly satisfying.
 
 ## The Salary Conversation, Corrected
 
@@ -146,7 +146,7 @@ OnlyAIJobs is built for exactly this problem. Every vacancy is shown at its exac
 
 ## Where to Start
 
-Set a radius, not a city. Then read the responsibilities rather than the titles — in this region, the title is the least informative part of the advertisement.
+Set a radius, not a city. Then read the responsibilities rather than the titles - in this region, the title is the least informative part of the advertisement.
 
 Browse current AI, machine learning and data roles across the Brainport region at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -162,7 +162,7 @@ Because the relevant employers are distributed across Veldhoven, Helmond, Best, 
 Because many are advertised as Software Engineer, Vision Engineer, R&D Engineer or Process Engineer, with the machine learning content described in the responsibilities rather than the title. Starting from a board that contains only AI and data roles and then filtering by category avoids the problem, since you are never searching for the keyword in the first place.
 
 ### (Scenario: Candidate weighing Eindhoven against an Amsterdam offer) Is it worth taking a lower salary to work in the Brainport region?
-Compare the figures that actually affect your life: salary minus housing cost, minus commuting cost, minus the hours the commute consumes. A shorter commute in a lower-cost housing market frequently closes a nominal salary gap entirely. There is also a career effect — in a smaller ecosystem you become visible to decision-makers faster, which compounds over several years.
+Compare the figures that actually affect your life: salary minus housing cost, minus commuting cost, minus the hours the commute consumes. A shorter commute in a lower-cost housing market frequently closes a nominal salary gap entirely. There is also a career effect - in a smaller ecosystem you become visible to decision-makers faster, which compounds over several years.
 
 ### (Scenario: Engineer new to industrial AI) Do I need a hardware background to work on AI in Eindhoven?
 Usually not, but you need willingness to work with domain constraints and domain experts. What employers value is an engineer who can reason about latency budgets, data scarcity and failure cost, and who will sit with a process engineer to understand why a model's error mode matters. The hardware knowledge is learnable on the job; the disposition to take physical constraints seriously is what gets tested at interview.

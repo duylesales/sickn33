@@ -1,4 +1,4 @@
-👥 Nadine Peters runde Kliniekagenda in Lovable voor 11 privéklinieken in Breda met patiëntendossiers en afspraken. In twee jaar tijd werkte ze met vier freelancers — waarbij ze productiewachtwoorden en API-sleutels via Slack deelde zonder deze ooit in te trekken na afloop van de opdracht. 😳
+👥 Nadine Peters runde Kliniekagenda in Lovable voor 11 privéklinieken in Breda met patiëntendossiers en afspraken. In twee jaar tijd werkte ze met vier freelancers - waarbij ze productiewachtwoorden en API-sleutels via Slack deelde zonder deze ooit in te trekken na afloop van de opdracht. 😳
 
 Productiewachtwoorden delen met externe krachten is de snelste route naar een datalek. Waar het misgaat bij developer access:
 

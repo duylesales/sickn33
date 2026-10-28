@@ -22,66 +22,66 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Hiring your first developer feels like the moment you can finally stop worrying about the codebase. Someone qualified is now responsible for it. But hiring the right person and confirming they actually understand what they've inherited are two different steps, and skipping the second one is one of the quietest ways a growing product can drift into trouble.
 
-Here's a practical way to check — before an incident forces the question.
+Here's a practical way to check - before an incident forces the question.
 
 ## Step 1: Ask about one specific piece of functionality, not the whole system
 
-Don't ask "do you understand the codebase." Nobody says no to that question, and it doesn't tell you anything. Instead, pick one specific, moderately important feature — something with real logic behind it, not a static page — and ask your developer to walk you through exactly how it works, in plain language you can follow.
+Don't ask "do you understand the codebase." Nobody says no to that question, and it doesn't tell you anything. Instead, pick one specific, moderately important feature - something with real logic behind it, not a static page - and ask your developer to walk you through exactly how it works, in plain language you can follow.
 
 The goal isn't to test their vocabulary. It's to see whether they can trace cause and effect: what triggers this, what does it check, what does it do next, what happens if that check fails. A developer who genuinely understands the code can do this smoothly, even in simple terms. A developer who hasn't actually dug in yet will hedge, generalize, or steer toward "it just works" without landing on specifics.
 
 ## Step 2: Ask what happens in a failure case
 
-Follow up with a "what if" question about the same feature. What happens if this call fails? What happens if a user submits something unexpected here? This is the question that separates surface familiarity from real comprehension, because AI-generated code often handles the success path clearly but leaves failure handling vague or absent — and a developer who has actually read the code will know whether that gap exists, while one who hasn't will assume it's handled because most demos never hit the failure case.
+Follow up with a "what if" question about the same feature. What happens if this call fails? What happens if a user submits something unexpected here? This is the question that separates surface familiarity from real comprehension, because AI-generated code often handles the success path clearly but leaves failure handling vague or absent - and a developer who has actually read the code will know whether that gap exists, while one who hasn't will assume it's handled because most demos never hit the failure case.
 
 ## Step 3: Watch for confident answers that don't get specific
 
-The riskiest signal isn't "I don't know" — that's honest, and workable. It's a confident, general answer that never gets concrete: "it's all handled," "that's standard," "don't worry about that part." Real understanding sounds like specifics — a particular check, a particular condition, a particular file or function. Vague confidence is often a sign that nobody, including the developer answering you, has actually verified how a piece of functionality works.
+The riskiest signal isn't "I don't know" - that's honest, and workable. It's a confident, general answer that never gets concrete: "it's all handled," "that's standard," "don't worry about that part." Real understanding sounds like specifics - a particular check, a particular condition, a particular file or function. Vague confidence is often a sign that nobody, including the developer answering you, has actually verified how a piece of functionality works.
 
 ## Fien's onboarding moment
 
-Fien Kramer, a founder in Harderwijk, built TicketVolg — a support ticket app — using Bolt. As the product grew, she hired a developer to help maintain and extend it. During onboarding, Fien asked simple, direct questions about a critical piece of functionality — how tickets were routed and prioritized internally.
+Fien Kramer, a founder in Harderwijk, built TicketVolg - a support ticket app - using Bolt. As the product grew, she hired a developer to help maintain and extend it. During onboarding, Fien asked simple, direct questions about a critical piece of functionality - how tickets were routed and prioritized internally.
 
-The new hire couldn't clearly explain it. Not because they weren't capable, but because nobody — not the developer, and as it turned out, not the AI tool's original output either — had ever actually verified how that routing logic worked or whether it handled edge cases correctly. The onboarding conversation, meant to be a formality, revealed a real gap: a core piece of the product had been running on logic nobody could currently explain.
+The new hire couldn't clearly explain it. Not because they weren't capable, but because nobody - not the developer, and as it turned out, not the AI tool's original output either - had ever actually verified how that routing logic worked or whether it handled edge cases correctly. The onboarding conversation, meant to be a formality, revealed a real gap: a core piece of the product had been running on logic nobody could currently explain.
 
 ## Step 4: Bring in a second, independent review if the answers don't add up
 
-If step one and two surface gaps, the fix isn't necessarily to blame the new developer — the AI-generated code itself may never have been reviewed by anyone qualified. At that point, the useful move is an independent technical review: someone who reads the actual code, verifies what it does against what everyone assumed it did, and documents the real behavior so both the founder and the developer are working from the same ground truth.
+If step one and two surface gaps, the fix isn't necessarily to blame the new developer - the AI-generated code itself may never have been reviewed by anyone qualified. At that point, the useful move is an independent technical review: someone who reads the actual code, verifies what it does against what everyone assumed it did, and documents the real behavior so both the founder and the developer are working from the same ground truth.
 
-Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, put it plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Verifying that a developer actually understands what they're maintaining is a small, concrete piece of that larger maturity question — but it's often the first place the gap becomes visible.
+Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, put it plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Verifying that a developer actually understands what they're maintaining is a small, concrete piece of that larger maturity question - but it's often the first place the gap becomes visible.
 
-Our team in Amsterdam, backed by Manifera's 120+ engineers, regularly steps into exactly this kind of gap — reading through AI-generated code that nobody has fully verified and documenting what it actually does. LaunchStudio brings that same standard used across Manifera's [portfolio of 160+ delivered projects](https://www.manifera.com/portfolio/) to founder-scale products. If your own onboarding conversation raised more questions than it answered, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+Our team in Amsterdam, backed by Manifera's 120+ engineers, regularly steps into exactly this kind of gap - reading through AI-generated code that nobody has fully verified and documenting what it actually does. LaunchStudio brings that same standard used across Manifera's [portfolio of 160+ delivered projects](https://www.manifera.com/portfolio/) to founder-scale products. If your own onboarding conversation raised more questions than it answered, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
 
 ## Why "It's Been Working Fine" Is the Weakest Reassurance in This Conversation
 
-When a comprehension check like the one described above surfaces a vague answer, the most common recovery move — from either the founder or the developer — is to point at the system's track record: it's been running fine, nobody's complained, so it's probably fine. That reassurance feels reasonable and is worth examining specifically, because it's weaker than it sounds for a few concrete reasons.
+When a comprehension check like the one described above surfaces a vague answer, the most common recovery move - from either the founder or the developer - is to point at the system's track record: it's been running fine, nobody's complained, so it's probably fine. That reassurance feels reasonable and is worth examining specifically, because it's weaker than it sounds for a few concrete reasons.
 
-**A demo and a track record are testing different things.** A feature "working fine" usually means it's handled every request that's actually come through it so far — which says a great deal about the traffic pattern it's seen and very little about the traffic pattern it hasn't. Routing logic that's never had to handle two conflicting rules at once hasn't been tested against that case; it's simply never encountered it, which is a different and much weaker claim than "it handles that case correctly."
+**A demo and a track record are testing different things.** A feature "working fine" usually means it's handled every request that's actually come through it so far - which says a great deal about the traffic pattern it's seen and very little about the traffic pattern it hasn't. Routing logic that's never had to handle two conflicting rules at once hasn't been tested against that case; it's simply never encountered it, which is a different and much weaker claim than "it handles that case correctly."
 
-**Low volume hides bugs that high volume exposes.** A logic gap that triggers in one out of five hundred cases is functionally invisible at fifty users a day and functionally inevitable at five thousand. "It's been working fine" is frequently a true statement about the current volume and a false prediction about what happens once that volume grows — which is exactly the direction most founders are hoping their product moves in.
+**Low volume hides bugs that high volume exposes.** A logic gap that triggers in one out of five hundred cases is functionally invisible at fifty users a day and functionally inevitable at five thousand. "It's been working fine" is frequently a true statement about the current volume and a false prediction about what happens once that volume grows - which is exactly the direction most founders are hoping their product moves in.
 
-**Nobody complaining isn't the same as nobody affected.** A silent misrouting, a data gap, or a quietly wrong calculation doesn't generate a complaint unless someone notices the specific absence or error — and plenty of users experience a minor issue, shrug, and move on without ever reporting it. The absence of complaints measures how many people bothered to say something, not how many people were affected.
+**Nobody complaining isn't the same as nobody affected.** A silent misrouting, a data gap, or a quietly wrong calculation doesn't generate a complaint unless someone notices the specific absence or error - and plenty of users experience a minor issue, shrug, and move on without ever reporting it. The absence of complaints measures how many people bothered to say something, not how many people were affected.
 
-**"Fine" is doing a lot of unexamined work in that sentence.** Ask what specifically would have to go wrong for the person saying "it's fine" to actually notice — and whether that failure mode would produce a visible error or fail silently the way AI-generated code so often does on unhandled edge cases. If the honest answer is "we'd probably only notice if a customer complained loudly enough," that's not evidence the system works. It's evidence nobody's watching closely enough to know either way.
+**"Fine" is doing a lot of unexamined work in that sentence.** Ask what specifically would have to go wrong for the person saying "it's fine" to actually notice - and whether that failure mode would produce a visible error or fail silently the way AI-generated code so often does on unhandled edge cases. If the honest answer is "we'd probably only notice if a customer complained loudly enough," that's not evidence the system works. It's evidence nobody's watching closely enough to know either way.
 
-None of this means every "it's working fine" is hiding a problem — plenty of code genuinely does work correctly, including code nobody's formally verified. The point is narrower: track record is a weak substitute for comprehension, because a track record only covers what's already happened, while a founder's actual risk sits in what hasn't happened yet. The comprehension check described earlier in this article exists precisely because it tests understanding directly, rather than inferring it from an absence of visible failure so far.
+None of this means every "it's working fine" is hiding a problem - plenty of code genuinely does work correctly, including code nobody's formally verified. The point is narrower: track record is a weak substitute for comprehension, because a track record only covers what's already happened, while a founder's actual risk sits in what hasn't happened yet. The comprehension check described earlier in this article exists precisely because it tests understanding directly, rather than inferring it from an absence of visible failure so far.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Onboarding Questions That Exposed a Gap Nobody Knew Existed
 
-Fien Kramer had grown TicketVolg into a genuinely useful support ticket tool, and hiring a second developer felt like a natural next step as ticket volume grew. During onboarding, she walked through the ticket routing logic with the new hire, expecting a quick confirmation that they'd gotten up to speed. Instead, the answers stayed vague — "it prioritizes based on some rules," without specifics on what the rules actually were or how conflicts between them were resolved.
+Fien Kramer had grown TicketVolg into a genuinely useful support ticket tool, and hiring a second developer felt like a natural next step as ticket volume grew. During onboarding, she walked through the ticket routing logic with the new hire, expecting a quick confirmation that they'd gotten up to speed. Instead, the answers stayed vague - "it prioritizes based on some rules," without specifics on what the rules actually were or how conflicts between them were resolved.
 
-Fien brought the codebase to LaunchStudio for an independent read. Manifera's engineers traced the actual routing logic and found it handled the common cases reasonably well but had no defined behavior for tickets that matched multiple priority rules simultaneously — it silently picked whichever rule happened to be checked last in the code, which nobody, including Bolt's original output, had ever explicitly decided should be the behavior.
+Fien brought the codebase to LaunchStudio for an independent read. Manifera's engineers traced the actual routing logic and found it handled the common cases reasonably well but had no defined behavior for tickets that matched multiple priority rules simultaneously - it silently picked whichever rule happened to be checked last in the code, which nobody, including Bolt's original output, had ever explicitly decided should be the behavior.
 
 The team documented the actual logic, fixed the ambiguous case with an explicit, intentional priority order, and gave both Fien and her new developer a clear written reference for how the system was supposed to work going forward.
 
 **Result:** TicketVolg's routing logic now behaves predictably and is documented clearly enough that any future developer can be tested against it the same way Fien tested her new hire.
 
 > *"I asked a simple question expecting a simple answer, and instead I found out nobody actually knew how a core part of my own product worked."*
-> — **Fien Kramer, Founder, TicketVolg (Harderwijk)**
+> - **Fien Kramer, Founder, TicketVolg (Harderwijk)**
 
-**Cost & Timeline:** €1,300 (code comprehension audit and routing logic documentation) — completed in 8 business days.
+**Cost & Timeline:** €1,300 (code comprehension audit and routing logic documentation) - completed in 8 business days.
 
 ---
 
@@ -89,7 +89,7 @@ The team documented the actual logic, fixed the ambiguous case with an explicit,
 
 ### What's the best type of question to ask a new developer during onboarding?
 
-A specific question about one real feature — how it works, step by step, in plain language — reveals far more than a general question like "do you understand the codebase," which almost anyone will answer yes to regardless of actual familiarity.
+A specific question about one real feature - how it works, step by step, in plain language - reveals far more than a general question like "do you understand the codebase," which almost anyone will answer yes to regardless of actual familiarity.
 
 ### Is it a bad sign if a new developer says "I don't know yet" during onboarding?
 

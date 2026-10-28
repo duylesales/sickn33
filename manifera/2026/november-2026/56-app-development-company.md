@@ -82,11 +82,11 @@ This is not a theoretical architecture debate confined to engineering blogs. Goo
 
 GraphQL adoption itself has moved from experimental to mainstream over the past several years without ever displacing REST outright. Postman's 2025 State of the API Report found that REST still dominates overall usage at 93% of surveyed developers, while 33% now use GraphQL for at least part of their API surface, typically the customer-facing, latency-sensitive layer rather than internal service-to-service calls. That pattern matches exactly how we deploy it inside the Hybrid Hub: REST or internal RPC between backend microservices, GraphQL at the edge where mobile clients are the actual consumer.
 
-The bandwidth cost is not abstract either. AWS bills data transfer out to the internet starting at $0.09 per GB for the first 10TB per month once you exceed the 100GB monthly free tier. That fee is charged whether or not the mobile client ever uses the data it downloaded — every over-fetched field you discard on the device is a field you already paid AWS to serialize, encrypt, and transmit.
+The bandwidth cost is not abstract either. AWS bills data transfer out to the internet starting at $0.09 per GB for the first 10TB per month once you exceed the 100GB monthly free tier. That fee is charged whether or not the mobile client ever uses the data it downloaded - every over-fetched field you discard on the device is a field you already paid AWS to serialize, encrypt, and transmit.
 
 ## A Worked Example: The Bandwidth Bill Nobody Audits
 
-Consider a mid-sized consumer app with 500,000 monthly active users, each opening the product catalog screen an average of 5 times per month — a directional, illustrative model, not a specific client's numbers.
+Consider a mid-sized consumer app with 500,000 monthly active users, each opening the product catalog screen an average of 5 times per month - a directional, illustrative model, not a specific client's numbers.
 
 **REST catalog API (10MB per load):** 2,500,000 catalog loads × 10MB works out to roughly 25,000GB (25TB) of outbound data transfer every month for this single screen. At AWS's blended $0.09/GB rate, that is approximately **$2,250 per month, or around $27,000 per year**, just to serve product thumbnails and prices that 99% of the payload was never going to display.
 

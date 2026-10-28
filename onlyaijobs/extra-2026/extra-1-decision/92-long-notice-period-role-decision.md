@@ -37,7 +37,7 @@ Content Format: Decision Guide
 
 Most of the contract is what you expected, and then the notice clause says three months, or four, or in occasional cases six. It is easy to sign past, because it concerns something that has not happened yet and may never happen. It is also one of the few terms that determines how much freedom you have for the entire time you hold the job: how quickly you can accept a better offer, how patient your next employer has to be, and how long you would keep being paid if the organisation decided to let you go.
 
-This is general information rather than legal advice — check your own contract and any applicable collective agreement, and take advice if something looks unusual.
+This is general information rather than legal advice - check your own contract and any applicable collective agreement, and take advice if something looks unusual.
 
 ## What Dutch Rules Say
 
@@ -45,7 +45,7 @@ The starting point in the Dutch Civil Code is that an employee's notice period i
 
 Parties can agree a longer notice period for the employee in writing, within limits: it may not exceed six months, and if the employee's notice period is extended, the employer's notice period must in principle be at least double the employee's. A collective agreement can vary some of this, and shorter employer notice is possible in specific circumstances a CAO allows.
 
-Two practical consequences follow. First, a long employee notice period is not free for the employer — it comes with a longer obligation on their side, which is a useful fact in a negotiation. Second, if a contract gives you three months and the employer one, that arrangement should be checked, because it does not reflect what the rules generally require.
+Two practical consequences follow. First, a long employee notice period is not free for the employer - it comes with a longer obligation on their side, which is a useful fact in a negotiation. Second, if a contract gives you three months and the employer one, that arrangement should be checked, because it does not reflect what the rules generally require.
 
 Notice is also usually given against the end of a calendar month unless agreed otherwise, which in practice means a resignation submitted in early March with two months' notice often runs to the end of May rather than to early May.
 
@@ -75,7 +75,7 @@ The first three are reasonable. The fourth is the one worth negotiating against.
 
 This is the part candidates overlook. A long notice period is mutual protection.
 
-If the employer's notice is at least double yours, a three-month employee notice implies a substantial employer obligation — meaning that if they end the contract, you continue to be paid for a considerable period while you search. In an uncertain sector or a company with an unclear future, that is worth something real.
+If the employer's notice is at least double yours, a three-month employee notice implies a substantial employer obligation - meaning that if they end the contract, you continue to be paid for a considerable period while you search. In an uncertain sector or a company with an unclear future, that is worth something real.
 
 It also signals that the role is not disposable. Employers rarely attach long notice to positions they expect to eliminate.
 
@@ -83,7 +83,7 @@ It also signals that the role is not disposable. Employers rarely attach long no
 
 In the Dutch market, one and two month notice periods are unremarkable, and three months is common at senior level and in regulated sectors. Four months and longer prompts questions.
 
-Most employers will wait for a candidate they want, and some cannot, especially where the role covers a departure or a fixed deadline. If your notice period is long, say so early in the process rather than at the offer stage — it gives the employer time to plan, and it avoids the situation where you become the candidate who was almost right.
+Most employers will wait for a candidate they want, and some cannot, especially where the role covers a departure or a fixed deadline. If your notice period is long, say so early in the process rather than at the offer stage - it gives the employer time to plan, and it avoids the situation where you become the candidate who was almost right.
 
 ## The Interaction With Other Clauses
 
@@ -95,7 +95,7 @@ Most employers will wait for a candidate they want, and some cannot, especially 
 
 ## What to Negotiate
 
-**Symmetry, at minimum.** If your notice is extended, the employer's should be at least double under the general rule — make sure the contract says so.
+**Symmetry, at minimum.** If your notice is extended, the employer's should be at least double under the general rule - make sure the contract says so.
 
 **A shorter period for the first year,** which employers often accept, since the risk they are managing accumulates with your knowledge rather than existing on day one.
 
@@ -119,7 +119,7 @@ Most employers will wait for a candidate they want, and some cannot, especially 
 - The period exceeds three months without a specific justification.
 - Your notice is longer than the employer's, or the contract is silent on theirs.
 - It is combined with a broad non-compete clause.
-- You are in a phase where you may need to move quickly — a partner's relocation, a visa consideration, an uncertain employer.
+- You are in a phase where you may need to move quickly - a partner's relocation, a visa consideration, an uncertain employer.
 - The employer will not discuss it at all, which tells you how other reasonable requests will be received.
 
 ## What the Notice Period Is Actually Like
@@ -130,11 +130,11 @@ Candidates think about notice as a delay. In practice it is a distinct phase of 
 
 **The counteroffer usually arrives within days.** Decide in advance what you would do, because the conversation is much easier when the answer already exists. Accepting a counteroffer after resigning changes how you are seen regardless of the outcome.
 
-**Handover is the work.** In a data role, the valuable handover is not a document listing systems: it is the undocumented knowledge — why a threshold is set where it is, which source cannot be trusted, what breaks in December. Write that down. It is the most professional thing you can leave behind, and it is remembered.
+**Handover is the work.** In a data role, the valuable handover is not a document listing systems: it is the undocumented knowledge - why a threshold is set where it is, which source cannot be trusted, what breaks in December. Write that down. It is the most professional thing you can leave behind, and it is remembered.
 
 **Access and permissions get removed early in some organisations,** particularly in finance and the public sector. If you need access to complete a handover, say so at the start rather than discovering it in week six.
 
-**Holiday balances are usually settled,** either taken during the period or paid out. Agree which, in writing, early — it is the most common source of friction at the end.
+**Holiday balances are usually settled,** either taken during the period or paid out. Agree which, in writing, early - it is the most common source of friction at the end.
 
 **Garden leave happens.** Some employers prefer you not to work the period. If that is a possibility, ask how it would be handled, since being paid not to work is pleasant and being told on the day is not.
 
@@ -158,13 +158,13 @@ If you are reading this because you are trapped rather than because you are sign
 
 A data engineer is offered a role at a financial services company. The contract specifies three months' notice on his side. The employer's notice is stated as one month.
 
-He raises it, not as a complaint but as a question: his understanding is that where the employee's notice is extended, the employer's should be at least double, and could they confirm the intention. The HR contact checks, apologises, and corrects the contract — it was an old template.
+He raises it, not as a complaint but as a question: his understanding is that where the employee's notice is extended, the employer's should be at least double, and could they confirm the intention. The HR contact checks, apologises, and corrects the contract - it was an old template.
 
 He also asks for two additions: one month's notice during his first year, and a line allowing earlier release by mutual agreement.
 
 The first is accepted, the second is accepted with the wording "subject to a documented handover".
 
-Two years later he is approached about a role he wants. His notice is three months by then, and the handover clause lets him agree an earlier release once he has documented the pipelines — which takes six weeks.
+Two years later he is approached about a role he wants. His notice is three months by then, and the handover clause lets him agree an earlier release once he has documented the pipelines - which takes six weeks.
 
 His view: the ten minutes he spent on that clause saved him about two months, and revealed that the employer's contract template had been quietly wrong for everyone who signed it before him.
 
@@ -173,12 +173,12 @@ His view: the ten minutes he spent on that clause saved him about two months, an
 - Dutch rules set one month as the employee's default and step the employer's up with length of service; a longer employee period can be agreed in writing up to six months, and the employer's must then in principle be at least double.
 - Long notice costs you access to roles with near-term start dates and locks you in when circumstances change; it gains you a longer paid period if the employer ends the contract.
 - Notice usually runs against the end of a calendar month, which makes real periods longer than they look.
-- Read notice and non-compete clauses together — combined, they can keep you out of the market for a long time.
+- Read notice and non-compete clauses together - combined, they can keep you out of the market for a long time.
 - Negotiate symmetry, a shorter period in year one, an early release provision and a cap beyond three months.
 
 ## Where to Start
 
-If your current notice period is long, tell prospective employers early — and check what is open near you well before you need to move, since a long notice period rewards planning.
+If your current notice period is long, tell prospective employers early - and check what is open near you well before you need to move, since a long notice period rewards planning.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -205,10 +205,10 @@ Yes. Where the employer's obligation is correspondingly long, you would continue
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "What is a normal notice period in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "One month for the employee by default; one to three months is ordinary, beyond three needs justification."}},
-    {"@type": "Question", "name": "Can my notice be longer than my employer's?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not — an extended employee period must be in writing and the employer's at least double."}},
+    {"@type": "Question", "name": "Can my notice be longer than my employer's?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not - an extended employee period must be in writing and the employer's at least double."}},
     {"@type": "Question", "name": "Does a long notice period hurt my chances elsewhere?", "acceptedAnswer": {"@type": "Answer", "text": "It rules out roles needing a fast start; mention it early so employers can plan."}},
     {"@type": "Question", "name": "What should I ask for?", "acceptedAnswer": {"@type": "Answer", "text": "Symmetry, a shorter first-year period, an early release clause and clarity on month-end timing."}},
-    {"@type": "Question", "name": "Is a long notice period ever an advantage?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a correspondingly long employer obligation means continued pay if they end the contract."}}
+    {"@type": "Question", "name": "Is a long notice period ever an advantage?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - a correspondingly long employer obligation means continued pay if they end the contract."}}
   ]
 }
 </script>

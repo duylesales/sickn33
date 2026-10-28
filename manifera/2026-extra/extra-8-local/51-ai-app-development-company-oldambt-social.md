@@ -1,4 +1,4 @@
-Fewer than 1 in 5 enterprise generative AI pilots ever reach production — and the gap is almost never the model's fault. 🤖⚠️
+Fewer than 1 in 5 enterprise generative AI pilots ever reach production - and the gap is almost never the model's fault. 🤖⚠️
 
 **The Pain Points:**
 ❌ **The Demo Only Has to Work Once:** A prototype that wowed leadership stalls the moment it needs to handle real customer data, unanticipated inputs, and silent upstream model changes.
@@ -10,7 +10,7 @@ Fewer than 1 in 5 enterprise generative AI pilots ever reach production — and 
 ✅ **Amsterdam Defines Risk Classification First:** Dutch-based leads set evaluation criteria and EU AI Act documentation structure before a single line of the feature is built.
 ✅ **Vietnam Ships in Weeks, Not Months:** 35-45% below a generalist freelance blended cost once the €18,000-€25,000 in typical compliance rework is counted.
 
-A Portuguese healthtech pilot stalled for six months. The rebuilt version shipped to a pilot ward in nine weeks — and the compliance officer signed off on the first submission. 🏥
+A Portuguese healthtech pilot stalled for six months. The rebuilt version shipped to a pilot ward in nine weeks - and the compliance officer signed off on the first submission. 🏥
 
 👉 Read our full deep dive on AI app development company Oldambt: https://www.manifera.com/blog/ai-app-development-company-oldambt
 

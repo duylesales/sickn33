@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype met **Lovable** — Elena, een B2B sales-oprichter, gebruikte Lovable om een lead-analyse-tool te bouwen, maar had te maken met stille API-crashes waardoor gebruikers naar lege schermen keken. 🧠
+🔥 Elena bouwde een prototype met **Lovable** - Elena, een B2B sales-oprichter, gebruikte Lovable om een lead-analyse-tool te bouwen, maar had te maken met stille API-crashes waardoor gebruikers naar lege schermen keken. 🧠
 
 Zonder volwaardige LLMOps-observabiliteit weet u niet of uw AI hallucineert, tokens verspilt of bezwijkt onder piekverkeer totdat klanten opzeggen.
 
@@ -12,7 +12,7 @@ Zonder volwaardige LLMOps-observabiliteit weet u niet of uw AI hallucineert, tok
 
 Bij **LaunchStudio** lossen we exact dit type monitoring- en telemetrievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Elena's platform kreeg volledige controle: Realtime alerts stelden haar in staat om API-fouten direct op te lossen voordat gebruikers er iets van merkten. (€1.300 (Monitoring Setup Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Elena's platform kreeg volledige controle: Realtime alerts stelden haar in staat om API-fouten direct op te lossen voordat gebruikers er iets van merkten. (€1.300 (Monitoring Setup Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/monitoring-ai-app-performance-production
 

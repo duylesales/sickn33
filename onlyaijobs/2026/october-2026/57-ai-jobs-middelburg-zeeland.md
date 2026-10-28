@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Zeeland's coastal location and growing offshore wind sector create a specific kind of data work: energy yield forecasting, predictive maintenance of offshore wind turbines and grid optimisation — technically demanding work that is rarely mentioned in conversations about Dutch AI employment.
+Zeeland's coastal location and growing offshore wind sector create a specific kind of data work: energy yield forecasting, predictive maintenance of offshore wind turbines and grid optimisation - technically demanding work that is rarely mentioned in conversations about Dutch AI employment.
 
 ## What Kind of Data Work Actually Happens Here
 
-Sensor data from offshore wind turbines must be modelled for maintenance prediction and yield optimisation — a combination of time series analysis and operational constraints comparable to what you see in the Port of Rotterdam, but applied to renewable energy instead of shipping.
+Sensor data from offshore wind turbines must be modelled for maintenance prediction and yield optimisation - a combination of time series analysis and operational constraints comparable to what you see in the Port of Rotterdam, but applied to renewable energy instead of shipping.
 
 ## Why This Work Stays Underexposed
 
@@ -63,7 +63,7 @@ Energy companies in this sector rarely compete for visibility on general job pla
 
 ## A Deeper Look at the Technical Nature of Offshore Wind Data
 
-Sensor data from offshore wind turbines includes vibration patterns, weather conditions, energy output and maintenance history — a combination of time series that must be modelled under conditions far harder to reach for physical inspection than an onshore turbine. That raises the importance of accurate predictive models: a missed maintenance moment at sea is considerably more costly to fix than on land.
+Sensor data from offshore wind turbines includes vibration patterns, weather conditions, energy output and maintenance history - a combination of time series that must be modelled under conditions far harder to reach for physical inspection than an onshore turbine. That raises the importance of accurate predictive models: a missed maintenance moment at sea is considerably more costly to fix than on land.
 
 ## Comparison Table: Offshore Wind Data vs. Other Energy Data Work
 
@@ -123,7 +123,7 @@ These datasets connect offshore wind with the ecological research tradition in Z
 | Senior | Lead data scientist or asset performance manager | Portfolio-wide analytics, forecasting strategy, integration with grid and trading teams |
 | Specialist or management | Head of asset analytics, consultant or research lead | Strategy for data-driven operations across wind farms, or specialist advisory work |
 
-Because offshore wind is international, experience gained with North Sea wind farms is transferable to projects in other European countries and beyond — a career advantage for those willing to work in an international sector.
+Because offshore wind is international, experience gained with North Sea wind farms is transferable to projects in other European countries and beyond - a career advantage for those willing to work in an international sector.
 
 ## Skills That Stand Out
 
@@ -144,7 +144,7 @@ Because offshore wind is international, experience gained with North Sea wind fa
 
 ## Accessibility and Search Radius
 
-Middelburg is the capital of Zeeland and lies on the railway line to Vlissingen, Goes and Roosendaal, with connections onwards to the rest of the Netherlands. Vlissingen is a few minutes away and Goes around a quarter of an hour. A realistic search radius includes Vlissingen, Goes, Borssele and — via the Western Scheldt Tunnel — Terneuzen. Some offshore roles involve rotation schedules or travel to other North Sea ports. Check current travel times in the NS journey planner.
+Middelburg is the capital of Zeeland and lies on the railway line to Vlissingen, Goes and Roosendaal, with connections onwards to the rest of the Netherlands. Vlissingen is a few minutes away and Goes around a quarter of an hour. A realistic search radius includes Vlissingen, Goes, Borssele and - via the Western Scheldt Tunnel - Terneuzen. Some offshore roles involve rotation schedules or travel to other North Sea ports. Check current travel times in the NS journey planner.
 
 ## Offshore Wind Data Beyond Zeeland's Borders
 
@@ -156,7 +156,7 @@ For candidates, that has three practical consequences:
 - **Skills transfer across projects.** Experience with SCADA data, condition monitoring and weather-constrained maintenance planning applies to wind farms throughout the North Sea.
 - **International teams are common.** Offshore wind is an international industry, so English-speaking teams and cross-border cooperation are normal.
 
-Searching by category — for example Machine Learning, Infrastructure or Development — rather than only by "Zeeland" helps candidates see the full range of offshore wind data roles, wherever the employer happens to be based.
+Searching by category - for example Machine Learning, Infrastructure or Development - rather than only by "Zeeland" helps candidates see the full range of offshore wind data roles, wherever the employer happens to be based.
 
 ## Key Takeaways
 
@@ -175,16 +175,16 @@ Browse current AI, machine learning and data jobs in and around Middelburg and Z
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't see Zeeland as an AI location) Is there really AI-related work in Zeeland?
-Yes — the growing offshore wind sector creates work around energy yield forecasting and predictive maintenance of wind turbines.
+Yes - the growing offshore wind sector creates work around energy yield forecasting and predictive maintenance of wind turbines.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Zeeland"?
 Energy companies rarely compete for visibility, and job titles such as "Energy Generation Data Analyst" rarely reveal the modelling component.
 
 ### (Scenario: candidate comparing this with port work) How does this work compare with logistics work in Rotterdam?
-Comparable in technical core — time series analysis under operational constraints — but applied to renewable energy instead of shipping.
+Comparable in technical core - time series analysis under operational constraints - but applied to renewable energy instead of shipping.
 
 ### (Scenario: candidate unsure whether this is a growing sector) Is this a growing sector to work in?
-The offshore wind sector is growing in the Netherlands in general, although we can't guarantee specific vacancy numbers — look at current vacancies yourself.
+The offshore wind sector is growing in the Netherlands in general, although we can't guarantee specific vacancy numbers - look at current vacancies yourself.
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work?
 Filter by category instead of job title, and look directly at energy companies in the region.
@@ -194,10 +194,10 @@ Filter by category instead of job title, and look directly at energy companies i
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there really AI-related work in Zeeland?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the growing offshore wind sector creates work around yield forecasting and predictive maintenance."}},
+    {"@type": "Question", "name": "Is there really AI-related work in Zeeland?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the growing offshore wind sector creates work around yield forecasting and predictive maintenance."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Zeeland\"?", "acceptedAnswer": {"@type": "Answer", "text": "Energy companies rarely compete for visibility, and job titles rarely reveal the modelling component."}},
     {"@type": "Question", "name": "How does this work compare with logistics work in Rotterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Comparable in technical core, but applied to renewable energy."}},
-    {"@type": "Question", "name": "Is this a growing sector to work in?", "acceptedAnswer": {"@type": "Answer", "text": "The offshore wind sector is growing in general — look at current vacancies yourself for specifics."}},
+    {"@type": "Question", "name": "Is this a growing sector to work in?", "acceptedAnswer": {"@type": "Answer", "text": "The offshore wind sector is growing in general - look at current vacancies yourself for specifics."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category instead of job title, and look at energy companies in the region."}}
   ]
 }

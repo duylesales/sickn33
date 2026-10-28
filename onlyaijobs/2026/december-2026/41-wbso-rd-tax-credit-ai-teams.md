@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Funding an AI Team With R&D Tax Credit: What Dutch Employers Should Know Before Hiring",
-  "description": "Dutch R&D tax relief can reduce the wage cost of technical staff substantially, but it applies to development work with technical novelty — and the administration has to be built into how the team works.",
+  "description": "Dutch R&D tax relief can reduce the wage cost of technical staff substantially, but it applies to development work with technical novelty - and the administration has to be built into how the team works.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-21",
@@ -75,13 +75,13 @@ Consider a director weighing whether to hire one senior engineer or a senior plu
 
 It also changes what kind of work you should keep in-house. Outsourced development generally does not give you the same relief on someone else's wage bill, while your own employees' qualifying hours do. For companies weighing a contractor against a permanent hire, this is a genuine factor alongside the usual considerations of knowledge retention and cost.
 
-There is a second, separate instrument worth knowing about: the innovation box regime, which applies a reduced corporate tax rate to profits attributable to qualifying innovative activities, with access generally linked to holding the R&D declaration. For a profitable company with a genuine technology product, the combination can be substantial — and it is a conversation for your accountant, not for a job advert.
+There is a second, separate instrument worth knowing about: the innovation box regime, which applies a reduced corporate tax rate to profits attributable to qualifying innovative activities, with access generally linked to holding the R&D declaration. For a profitable company with a genuine technology product, the combination can be substantial - and it is a conversation for your accountant, not for a job advert.
 
 ## A Concrete Scenario: The Claim That Did Not Survive Review
 
 A company applies for relief covering the development of a machine learning system, describing genuine technical challenges around data quality and model robustness. The application is approved.
 
-At review, problems appear. The hour administration records "AI project" against entire days for three engineers without distinguishing between development and routine implementation. A substantial share of the claimed hours turn out, on inspection, to have been spent configuring a cloud environment, building dashboards and holding stakeholder meetings — none of which qualify. The technical progress records consist of a handful of Jira tickets with one-line descriptions.
+At review, problems appear. The hour administration records "AI project" against entire days for three engineers without distinguishing between development and routine implementation. A substantial share of the claimed hours turn out, on inspection, to have been spent configuring a cloud environment, building dashboards and holding stakeholder meetings - none of which qualify. The technical progress records consist of a handful of Jira tickets with one-line descriptions.
 
 The correction is unpleasant and avoidable. What the company needed was a simple, honest weekly record: which project, how many hours, on what technical problem, with a short note on what was tried and what was learned. That takes an engineer five minutes a week and turns a risky claim into a defensible one.
 
@@ -107,7 +107,7 @@ Two practical consequences for recruitment.
 
 First, if your work genuinely qualifies, say so. Candidates respond well to knowing that an employer invests in development rather than only in maintenance, and the presence of an R&D declaration is a credible signal that real technical work exists.
 
-Second, be honest about the mix. A role advertised as cutting-edge development that turns out to be seventy per cent reporting produces a short tenure and a bad reputation in a small market. If the role is implementation-heavy, describe it accurately — plenty of good candidates prefer that work, and they are easier to retain when the advert matched reality.
+Second, be honest about the mix. A role advertised as cutting-edge development that turns out to be seventy per cent reporting produces a short tenure and a bad reputation in a small market. If the role is implementation-heavy, describe it accurately - plenty of good candidates prefer that work, and they are easier to retain when the advert matched reality.
 
 ## Structuring the Team So the Work Qualifies
 
@@ -147,7 +147,7 @@ For an employer planning to hire, this conversation belongs before the vacancy i
 
 Before writing the vacancy, ask your accountant whether the work you intend to hire for would qualify, and decide who will own the hour administration. Both answers affect what you can afford to hire.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -155,7 +155,7 @@ Post your AI, machine learning or data vacancy — first listing free — at inf
 It can reduce the wage cost of qualifying development hours meaningfully, which for smaller employers sometimes makes a second hire viable.
 
 ### (Scenario: employer using standard AI tools) Does fine-tuning an existing model qualify?
-Not automatically — the test is technical novelty and uncertainty for your organisation, not the commercial value of the result.
+Not automatically - the test is technical novelty and uncertainty for your organisation, not the commercial value of the result.
 
 ### (Scenario: employer weighing contractors) Does outsourced development attract the same relief?
 The wage-based relief applies to your own employees' qualifying hours, which is a genuine factor when comparing contracting with hiring.
@@ -164,7 +164,7 @@ The wage-based relief applies to your own employees' qualifying hours, which is 
 Modest if built into the routine: hours per project and short notes on technical progress; reconstructing it retrospectively is where employers get into difficulty.
 
 ### (Scenario: employer recruiting) Should I mention R&D status in a vacancy?
-Yes if genuine — it signals real development work, but describe the actual mix of development and implementation honestly.
+Yes if genuine - it signals real development work, but describe the actual mix of development and implementation honestly.
 
 <script type="application/ld+json">
 {
@@ -172,9 +172,9 @@ Yes if genuine — it signals real development work, but describe the actual mix
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Can Dutch R&D tax relief change what an SME can afford to hire?", "acceptedAnswer": {"@type": "Answer", "text": "It reduces the wage cost of qualifying development hours, which can make an additional hire viable."}},
-    {"@type": "Question", "name": "Does fine-tuning an existing model qualify for R&D relief?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically — the criterion is technical novelty and uncertainty, not commercial value."}},
+    {"@type": "Question", "name": "Does fine-tuning an existing model qualify for R&D relief?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - the criterion is technical novelty and uncertainty, not commercial value."}},
     {"@type": "Question", "name": "Does outsourced development attract the same R&D relief?", "acceptedAnswer": {"@type": "Answer", "text": "The wage-based relief applies to your own employees' qualifying hours, which matters when comparing contracting with hiring."}},
-    {"@type": "Question", "name": "How heavy is the R&D administration burden?", "acceptedAnswer": {"@type": "Answer", "text": "Modest when built into routine — hours per project and short technical progress notes; retrospective reconstruction causes problems."}},
+    {"@type": "Question", "name": "How heavy is the R&D administration burden?", "acceptedAnswer": {"@type": "Answer", "text": "Modest when built into routine - hours per project and short technical progress notes; retrospective reconstruction causes problems."}},
     {"@type": "Question", "name": "Should employers mention R&D status in vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if genuine, but describe the real mix of development and implementation work honestly."}}
   ]
 }

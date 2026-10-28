@@ -41,7 +41,7 @@ Content Format: Local Guide
 }
 </script>
 
-Every year, a large group of students graduates from programmes in and around Eindhoven with exactly the skills the AI job market wants — and a surprising number of them pack up and move to Amsterdam, Utrecht or Rotterdam for their first job. Research into regional labour markets has repeatedly shown the same pattern that led to OnlyAIJobs: many job seekers from Noord-Brabant leave for the Randstad not because they want to live there, but because they do not know which interesting companies are in their own region. This guide to AI jobs in Eindhoven is written for students and recent graduates who want to know what is actually available close to home before deciding to leave.
+Every year, a large group of students graduates from programmes in and around Eindhoven with exactly the skills the AI job market wants - and a surprising number of them pack up and move to Amsterdam, Utrecht or Rotterdam for their first job. Research into regional labour markets has repeatedly shown the same pattern that led to OnlyAIJobs: many job seekers from Noord-Brabant leave for the Randstad not because they want to live there, but because they do not know which interesting companies are in their own region. This guide to AI jobs in Eindhoven is written for students and recent graduates who want to know what is actually available close to home before deciding to leave.
 
 ## The Brabant Paradox
 
@@ -77,7 +77,7 @@ For graduates, learning the local vocabulary is half the job search. Titles that
 | Research scientist / research engineer | Prototyping new methods, often with ML |
 | Process or yield engineer | Statistical analysis, anomaly detection |
 
-On a board where every listing is already an AI, machine learning or data role, searching by category rather than by title catches these positions. On general sites, search for the problems — "computer vision," "predictive maintenance," "forecasting" — rather than for the word "AI."
+On a board where every listing is already an AI, machine learning or data role, searching by category rather than by title catches these positions. On general sites, search for the problems - "computer vision," "predictive maintenance," "forecasting" - rather than for the word "AI."
 
 ## Starting Routes: Internship, Traineeship or Junior Role
 
@@ -89,7 +89,7 @@ Graduates in Brainport typically enter through one of four routes.
 
 **Junior roles.** Direct junior positions exist, especially at mid-sized companies and startups. Titles are often "junior data scientist," "junior software engineer (data)" or "medior" roles open to strong graduates.
 
-**PhD or research engineer positions.** For graduates drawn to research, doctoral positions at TU/e and research roles in industry labs are an option — with the advantage that many industry labs sit in the same region.
+**PhD or research engineer positions.** For graduates drawn to research, doctoral positions at TU/e and research roles in industry labs are an option - with the advantage that many industry labs sit in the same region.
 
 ## Why Distance Matters More Than the City Name
 
@@ -107,13 +107,13 @@ Hiring managers in the region tend to value three things beyond grades.
 
 **Practical projects.** A graduation project, a student team (the region has well-known student teams in areas such as robotics and automotive) or a personal project with real data carries weight.
 
-**Understanding of the domain.** In high-tech manufacturing, a model is only useful if it fits the physics, the machine and the process. Showing curiosity about how systems work — not just how to train models — makes a graduate stand out.
+**Understanding of the domain.** In high-tech manufacturing, a model is only useful if it fits the physics, the machine and the process. Showing curiosity about how systems work - not just how to train models - makes a graduate stand out.
 
 **Communication.** Engineers in Brainport work in multidisciplinary teams with mechanical, electrical and software specialists. Explaining what a model does, and what it cannot do, is a daily task.
 
 ## How OnlyAIJobs Helps in Eindhoven Specifically
 
-Eindhoven is one of the cities where OnlyAIJobs has listings today, alongside other Dutch cities such as Ede, Groningen, Utrecht, Amsterdam and Capelle aan den IJssel. The platform lists only AI, machine learning and data vacancies, shows each at its actual address with the distance from your home, and does not let employers pay for higher placement — so a small supplier with one interesting role appears alongside larger companies. Employers currently using the platform include organisations such as Accenture, Cegeka, Heijmans, Holland Innovative and VINCI Energies.
+Eindhoven is one of the cities where OnlyAIJobs has listings today, alongside other Dutch cities such as Ede, Groningen, Utrecht, Amsterdam and Capelle aan den IJssel. The platform lists only AI, machine learning and data vacancies, shows each at its actual address with the distance from your home, and does not let employers pay for higher placement - so a small supplier with one interesting role appears alongside larger companies. Employers currently using the platform include organisations such as Accenture, Cegeka, Heijmans, Holland Innovative and VINCI Energies.
 
 Browsing is free and needs no account; applications go directly to the employer's own vacancy page. For companies in the region, the first vacancy is free: email a link to the posting to info@onlyaijobs.eu.
 
@@ -125,19 +125,19 @@ Browsing is free and needs no account; applications go directly to the employer'
 4. Ask your university's career centre and professors which companies host graduation projects.
 5. Apply to a mix of roles: a few at large companies, several at mid-sized firms, one or two startups.
 6. For each application, name the specific problem the employer works on and how your project experience relates to it.
-7. Decide deliberately whether moving to the Randstad would improve your career — rather than assuming it would.
+7. Decide deliberately whether moving to the Randstad would improve your career - rather than assuming it would.
 
 ## The Wider Brabant Map: Den Bosch, Tilburg, Breda and Helmond
 
-Eindhoven is the centre of Brainport, but graduates who limit their search to the city miss a large part of the regional market. 's-Hertogenbosch hosts the Jheronimus Academy of Data Science, a joint initiative of TU/e and Tilburg University, and a mix of financial, construction and service companies building data teams. Tilburg combines a university with strengths in data science and cognitive science with logistics and retail employers. Breda sits close to logistics corridors and has growing IT and data activity, while Helmond is known for automotive and mechatronics. Because these cities are connected by train, a graduate living in Eindhoven or Den Bosch can realistically consider employers across all of them — as long as they check the address of the actual office rather than assuming the station is nearby.
+Eindhoven is the centre of Brainport, but graduates who limit their search to the city miss a large part of the regional market. 's-Hertogenbosch hosts the Jheronimus Academy of Data Science, a joint initiative of TU/e and Tilburg University, and a mix of financial, construction and service companies building data teams. Tilburg combines a university with strengths in data science and cognitive science with logistics and retail employers. Breda sits close to logistics corridors and has growing IT and data activity, while Helmond is known for automotive and mechatronics. Because these cities are connected by train, a graduate living in Eindhoven or Den Bosch can realistically consider employers across all of them - as long as they check the address of the actual office rather than assuming the station is nearby.
 
 ## How to Talk About Your Thesis in Brainport Interviews
 
-Your graduation thesis is often your strongest asset, and Brainport interviewers probe it in a particular way. Expect questions not only about your model's accuracy but about data quality, how you validated results, what you would change with more time and how your approach would behave on real machines or in real clinical settings. Prepare a one-page summary that explains the problem, your data, your method, your evaluation and the limitations in plain language. If your thesis was theoretical, connect it to a concrete industrial problem in the company's domain — for example, how an anomaly detection method could be used for predictive maintenance on production equipment. Showing that you can translate research into engineering value is exactly what regional employers are looking for when they hire graduates into AI and data roles.
+Your graduation thesis is often your strongest asset, and Brainport interviewers probe it in a particular way. Expect questions not only about your model's accuracy but about data quality, how you validated results, what you would change with more time and how your approach would behave on real machines or in real clinical settings. Prepare a one-page summary that explains the problem, your data, your method, your evaluation and the limitations in plain language. If your thesis was theoretical, connect it to a concrete industrial problem in the company's domain - for example, how an anomaly detection method could be used for predictive maintenance on production equipment. Showing that you can translate research into engineering value is exactly what regional employers are looking for when they hire graduates into AI and data roles.
 
 ## Salary Expectations Without the Guesswork
 
-Graduates often ask what they can expect to earn in an AI or data role in Brainport, and online answers vary widely. Rather than relying on anonymous figures, use three reliable signals. First, many Dutch employers publish salary ranges in their vacancies, and the EU Pay Transparency Directive will make pay information before the interview the norm. Second, collective labour agreements (cao's) apply in several sectors, including metal and electrical engineering, and publish salary scales that tell you where a junior role sits. Third, your university's career service and alumni network can share what recent graduates accepted at regional employers. Compare offers on total package — pension, training budget, travel allowance and flexibility — and remember that the lower housing costs outside the Randstad often make a regional offer stronger than a slightly higher salary in Amsterdam.
+Graduates often ask what they can expect to earn in an AI or data role in Brainport, and online answers vary widely. Rather than relying on anonymous figures, use three reliable signals. First, many Dutch employers publish salary ranges in their vacancies, and the EU Pay Transparency Directive will make pay information before the interview the norm. Second, collective labour agreements (cao's) apply in several sectors, including metal and electrical engineering, and publish salary scales that tell you where a junior role sits. Third, your university's career service and alumni network can share what recent graduates accepted at regional employers. Compare offers on total package - pension, training budget, travel allowance and flexibility - and remember that the lower housing costs outside the Randstad often make a regional offer stronger than a slightly higher salary in Amsterdam.
 
 ## One Question Worth Asking Yourself
 
@@ -163,12 +163,12 @@ She interviews at all three and at one Amsterdam company. She accepts the offer 
 
 ## Where to Start
 
-Before you sign a lease in the Randstad, spend one evening mapping AI and data vacancies within your realistic commute from home. Browse current AI, machine learning and data jobs by category and distance at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs) — free and without an account.
+Before you sign a lease in the Randstad, spend one evening mapping AI and data vacancies within your realistic commute from home. Browse current AI, machine learning and data jobs by category and distance at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs) - free and without an account.
 
 ## Frequently Asked Questions
 
 ### (Scenario: final-year student) Are there enough AI jobs in Eindhoven for graduates?
-Yes, but many are titled as engineering roles — system engineer, algorithm developer, data engineer — rather than "AI engineer." Searching by category and problem type reveals far more than searching by title.
+Yes, but many are titled as engineering roles - system engineer, algorithm developer, data engineer - rather than "AI engineer." Searching by category and problem type reveals far more than searching by title.
 
 ### (Scenario: international graduate) Do I need Dutch to get an AI job in Brainport?
 Many high-tech companies and research groups work in English, but Dutch helps with smaller suppliers and customer-facing roles, and matters for staying long term.
@@ -180,7 +180,7 @@ Not inherently. Brainport offers deep technical AI work in manufacturing, health
 Check each employer's exact address and test the route by train, bus or bike. OnlyAIJobs shows the distance from your home for each vacancy.
 
 ### (Scenario: Brainport supplier) We are a small company hiring one data engineer. Is OnlyAIJobs worth trying?
-Yes — employers cannot buy higher placement, so small companies appear alongside large ones. Your first vacancy is free via info@onlyaijobs.eu.
+Yes - employers cannot buy higher placement, so small companies appear alongside large ones. Your first vacancy is free via info@onlyaijobs.eu.
 
 <script type="application/ld+json">
 {
@@ -191,7 +191,7 @@ Yes — employers cannot buy higher placement, so small companies appear alongsi
     {"@type": "Question", "name": "Do I need Dutch to get an AI job in Brainport?", "acceptedAnswer": {"@type": "Answer", "text": "Many high-tech firms work in English; Dutch helps with smaller suppliers, customer-facing roles and staying long term."}},
     {"@type": "Question", "name": "Is it worse for my career to start in Brabant instead of Amsterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently; compare actual work, mentoring and commute rather than city reputation."}},
     {"@type": "Question", "name": "How do I avoid jobs that are hard to reach?", "acceptedAnswer": {"@type": "Answer", "text": "Check exact addresses and test routes; OnlyAIJobs shows distance from home for each vacancy."}},
-    {"@type": "Question", "name": "We are a small company hiring one data engineer. Is OnlyAIJobs worth trying?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — no paid placement means small companies appear alongside large ones; the first vacancy is free via info@onlyaijobs.eu."}}
+    {"@type": "Question", "name": "We are a small company hiring one data engineer. Is OnlyAIJobs worth trying?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - no paid placement means small companies appear alongside large ones; the first vacancy is free via info@onlyaijobs.eu."}}
   ]
 }
 </script>

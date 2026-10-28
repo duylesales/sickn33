@@ -1,10 +1,10 @@
-🐛 Nina Bosch bouwde ArchiefKoppel, een documentbeheer-SaaS voor juridische en administratieve kantoren, met Cursor. Ze loste een bug in toegangsrechten op, bracht de update uit en ging verder — totdat weken later een klant precies dezelfde bug meldde in een ander deel van het product. 😳
+🐛 Nina Bosch bouwde ArchiefKoppel, een documentbeheer-SaaS voor juridische en administratieve kantoren, met Cursor. Ze loste een bug in toegangsrechten op, bracht de update uit en ging verder - totdat weken later een klant precies dezelfde bug meldde in een ander deel van het product. 😳
 
-Door AI gegenereerde technische schuld heeft geen beslissingsspoor — niemand koos ervoor, dus niemand let erop. 🧠
+Door AI gegenereerde technische schuld heeft geen beslissingsspoor - niemand koos ervoor, dus niemand let erop. 🧠
 
 ❌ Cursor had bijna-identieke logica voor toegangscontrole geïmplementeerd in acht verschillende bestanden in plaats van in één gedeelde functie
 ❌ Elk bestand zag er op zichzelf lokaal netjes, goed benoemd en redelijk uit
-❌ Nina loste de bug één keer op, bevestigde het, bracht het uit — en het was nog steeds overal elders kapot
+❌ Nina loste de bug één keer op, bevestigde het, bracht het uit - en het was nog steeds overal elders kapot
 ❌ Niemand had reden om op duplicatie te controleren, omdat niemand bewust koos om de logica te dupliceren
 
 ✅ Zoek systematisch naar bijna-identieke functies door de hele codebase heen, niet bestand voor bestand

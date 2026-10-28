@@ -43,7 +43,7 @@ It usually comes out sideways. A hiring manager mentions that "we also looked in
 
 **You infer it from the team interview.** A colleague who asks pointed questions about your experience, or who describes the role as though they had thought about doing it themselves.
 
-**You discover it afterwards.** The worst case, because it means nobody planned for the aftermath — and you spend your first month working out why a particular colleague is cool with you.
+**You discover it afterwards.** The worst case, because it means nobody planned for the aftermath - and you spend your first month working out why a particular colleague is cool with you.
 
 If it has not been mentioned by the final stage, ask. "Were there internal candidates for this role?" is a normal question, and the way it is answered is as useful as the answer.
 
@@ -51,7 +51,7 @@ If it has not been mentioned by the final stage, ask. "Were there internal candi
 
 There are legitimate reasons, and knowing which one applies helps you understand the position you are walking into.
 
-**A capability gap.** The internal person is strong but has not done the specific thing the organisation now needs — production systems, a regulated domain, leading a team.
+**A capability gap.** The internal person is strong but has not done the specific thing the organisation now needs - production systems, a regulated domain, leading a team.
 
 **Scale of change.** Where the mandate is to change how things are done, someone with no history in the existing arrangements can do it more easily.
 
@@ -65,7 +65,7 @@ The first three are ordinary and manageable. The fourth deserves careful attenti
 
 ## What Is Normal in the Netherlands
 
-Many Dutch employers advertise vacancies internally first, sometimes as a matter of policy and sometimes under provisions in a collective agreement, and in some organisations the works council has a role in appointment procedures. Recruitment practice is also guided by the **NVP recruitment code**, which sets expectations about transparency and timely, reasoned communication to applicants — internal ones included.
+Many Dutch employers advertise vacancies internally first, sometimes as a matter of policy and sometimes under provisions in a collective agreement, and in some organisations the works council has a role in appointment procedures. Recruitment practice is also guided by the **NVP recruitment code**, which sets expectations about transparency and timely, reasoned communication to applicants - internal ones included.
 
 What this means practically: in a well-run organisation, the internal candidate has had a proper conversation, a reason and ideally a development plan. In a badly run one, they received a short email while you were being welcomed. You are not responsible for which of those happened, and you will live with the consequences either way, so it is worth knowing which it was.
 
@@ -75,7 +75,7 @@ What this means practically: in a well-run organisation, the internal candidate 
 
 **The wounded colleague.** Cooperative in public, unhelpful in the specifics: information withheld, context not shared, a slight delay in every answer. Not malicious, and genuinely costly, because they hold the knowledge you need.
 
-**The departing colleague.** They have already decided to leave and are working out their notice period internally. You inherit their systems without their knowledge, which is a practical problem rather than an emotional one — and a reason to accelerate handover immediately.
+**The departing colleague.** They have already decided to leave and are working out their notice period internally. You inherit their systems without their knowledge, which is a practical problem rather than an emotional one - and a reason to accelerate handover immediately.
 
 Ask the hiring manager, directly, which they think it is. A manager who has thought about it will have an answer and a plan; one who says "it will be fine" has not.
 
@@ -84,7 +84,7 @@ Ask the hiring manager, directly, which they think it is. A manager who has thou
 - **Were there internal candidates, and has the decision been communicated to them?**
 - **Would that person report to me, be my peer, or sit elsewhere?** Reporting to you is a much bigger consideration than being a colleague.
 - **What was the reason they were not selected, in general terms?** You do not need details, but "not ready for the level" and "we needed someone from outside" mean different things.
-- **What was offered to them instead?** A development plan, a different role, a conversation about next time — or nothing.
+- **What was offered to them instead?** A development plan, a different role, a conversation about next time - or nothing.
 - **How does the manager plan to support both of us in the first months?**
 - **Do they hold critical knowledge that I will depend on?**
 - **Is there any expectation that I will change how they work?**
@@ -93,7 +93,7 @@ Ask the hiring manager, directly, which they think it is. A manager who has thou
 
 The relationship is decided early, and mostly by small things.
 
-**Acknowledge it once, briefly, if they raise it.** Not an apology — you did nothing wrong — but a plain acknowledgement that the situation is awkward and that you would like to work well together. Then let it go.
+**Acknowledge it once, briefly, if they raise it.** Not an apology - you did nothing wrong - but a plain acknowledgement that the situation is awkward and that you would like to work well together. Then let it go.
 
 **Do not pretend you do not know.** Nothing damages trust faster than obvious pretence about something everyone is aware of.
 
@@ -107,7 +107,7 @@ The relationship is decided early, and mostly by small things.
 
 ## What Not to Do
 
-Do not raise it repeatedly, which makes it larger. Do not use it as an explanation for every difficulty in the team. Do not go to the manager about their attitude in the first weeks, before you have built any relationship yourself. And do not treat their knowledge as an obstacle to be routed around — it is the asset you were hired to work with.
+Do not raise it repeatedly, which makes it larger. Do not use it as an explanation for every difficulty in the team. Do not go to the manager about their attitude in the first weeks, before you have built any relationship yourself. And do not treat their knowledge as an obstacle to be routed around - it is the asset you were hired to work with.
 
 ## When to Accept
 
@@ -131,7 +131,7 @@ Do not raise it repeatedly, which makes it larger. Do not use it as an explanati
 
 Some do, and it is not a failure on your part. Plan for the possibility: prioritise knowledge transfer in your first weeks, document what only they know, and make sure critical systems are not dependent on a single person's memory.
 
-If they leave well, keep the relationship. The Dutch data community is small, and a colleague who left gracefully after being passed over frequently becomes a useful contact — occasionally the person hiring at your next employer.
+If they leave well, keep the relationship. The Dutch data community is small, and a colleague who left gracefully after being passed over frequently becomes a useful contact - occasionally the person hiring at your next employer.
 
 ## What to Watch During the Team Interview
 
@@ -161,7 +161,7 @@ She asks the manager how he plans to support both of them. He describes a joint 
 
 She accepts. The first weeks are cool but civil. She asks him to walk her through the platform he built, listens for two hours without suggesting anything, and leaves the ownership with him publicly.
 
-Eighteen months later he is her deputy and the person she relies on most. Her summary is that she did almost nothing clever — she asked the question before accepting, and then treated his knowledge as an asset rather than a threat.
+Eighteen months later he is her deputy and the person she relies on most. Her summary is that she did almost nothing clever - she asked the question before accepting, and then treated his knowledge as an asset rather than a threat.
 
 ## Key Takeaways
 
@@ -173,7 +173,7 @@ Eighteen months later he is her deputy and the person she relies on most. Her su
 
 ## Where to Start
 
-If a role comes with this dynamic, weigh it against comparable roles near you where it does not — and ask the question early enough that it informs your decision rather than your first month.
+If a role comes with this dynamic, weigh it against comparable roles near you where it does not - and ask the question early enough that it informs your decision rather than your first month.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -192,16 +192,16 @@ Rarely on its own. Be careful when the person was given no explanation, holds al
 Acknowledge the situation once if it is raised, ask for their expertise genuinely, avoid changing things immediately and give specific public credit for their work.
 
 ### (Scenario: candidate whose colleague resigns) What if they leave anyway?
-Plan for it: prioritise knowledge transfer early, document what only they know, and part on good terms — the Dutch data community is small.
+Plan for it: prioritise knowledge transfer early, document what only they know, and part on good terms - the Dutch data community is small.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I ask whether there were internal candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, at the final stage — the way it is answered shows whether the situation was handled deliberately."}},
+    {"@type": "Question", "name": "Should I ask whether there were internal candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, at the final stage - the way it is answered shows whether the situation was handled deliberately."}},
     {"@type": "Question", "name": "Does it matter whether they would report to me?", "acceptedAnswer": {"@type": "Answer", "text": "Considerably; managing them requires an early career conversation and manager support."}},
-    {"@type": "Question", "name": "Is this a reason to decline?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely alone — be careful if nothing was offered to them or a personal conflict is the real reason."}},
+    {"@type": "Question", "name": "Is this a reason to decline?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely alone - be careful if nothing was offered to them or a personal conflict is the real reason."}},
     {"@type": "Question", "name": "How should I handle the first month?", "acceptedAnswer": {"@type": "Answer", "text": "Acknowledge once, ask for their expertise, change little and give precise public credit."}},
     {"@type": "Question", "name": "What if they leave anyway?", "acceptedAnswer": {"@type": "Answer", "text": "Prioritise knowledge transfer, document single-person dependencies and part on good terms."}}
   ]

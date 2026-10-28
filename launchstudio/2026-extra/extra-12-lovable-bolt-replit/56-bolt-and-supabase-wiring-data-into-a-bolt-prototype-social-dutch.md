@@ -1,4 +1,4 @@
-🚨 Hidde Kwakernaak bouwde Ritmeester met Bolt — stalbeheer voor zes manegebedrijven in Gelderland en Utrecht: paarden, eigenaren, stallen, voer, dierenartsafspraken en facturatie. Hij vroeg de tool scherm voor scherm een database toe te voegen. Na drie weken: 19 tabellen. 😳
+🚨 Hidde Kwakernaak bouwde Ritmeester met Bolt - stalbeheer voor zes manegebedrijven in Gelderland en Utrecht: paarden, eigenaren, stallen, voer, dierenartsafspraken en facturatie. Hij vroeg de tool scherm voor scherm een database toe te voegen. Na drie weken: 19 tabellen. 😳
 
 Paarden stonden in twee tabellen, gegevens van eigenaren in drie, met verschillende waarden. Geen foreign keys, geen row-level security. Toen het tweede manegebedrijf het ging gebruiken, verschenen hun paarden in de stallenlijst van het eerste. Zo sluit u data aan op een Bolt-prototype:
 

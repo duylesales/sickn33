@@ -43,7 +43,7 @@ Candidates ask about the stack, the team size and the projects. Very few ask whi
 
 **Under finance.** Common where analytics grew out of reporting and control.
 
-**Inside a business unit.** Operations, commerce, supply chain, claims, marketing — the team belongs to the department it serves.
+**Inside a business unit.** Operations, commerce, supply chain, claims, marketing - the team belongs to the department it serves.
 
 **Standalone,** reporting to a chief data officer, a director of data, or occasionally directly to the executive board.
 
@@ -141,7 +141,7 @@ Data teams move. In most larger Dutch organisations, the analytics function has 
 
 **The procedural side.** Significant reorganisations follow formal processes in the Netherlands, including consultation with the works council on major organisational decisions. That means these changes are usually visible internally well before they are announced, and it is legitimate to ask in an interview whether any reorganisation is currently in consultation.
 
-**Reading a history of moves.** A team that has moved twice in three years is telling you that the organisation has not resolved what it wants the function to be. That is not always bad — sometimes the third placement is the right one — but it predicts further instability, and it makes the sponsor question even more important.
+**Reading a history of moves.** A team that has moved twice in three years is telling you that the organisation has not resolved what it wants the function to be. That is not always bad - sometimes the third placement is the right one - but it predicts further instability, and it makes the sponsor question even more important.
 
 **What to ask.** Where the team has sat previously, why it moved, whether anything is currently under discussion, and what happened to people's scales and budgets when it last happened. Managers answer this more candidly than candidates expect, because it is an ordinary fact of organisational life rather than a secret.
 
@@ -169,7 +169,7 @@ Her summary: both teams were competent, and only one of them could get anything 
 
 ## Where to Start
 
-Ask where the team sits in your first conversation with any employer — then compare how different employers near you have answered the same question.
+Ask where the team sits in your first conversation with any employer - then compare how different employers near you have answered the same question.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -195,10 +195,10 @@ Sponsor seniority, whether the team owns its budget, how quickly data access is 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does it matter where the data team reports?", "acceptedAnswer": {"@type": "Answer", "text": "Considerably — it predicts priorities, budget, data access and distance from decisions."}},
-    {"@type": "Question", "name": "Is reporting into IT a bad sign?", "acceptedAnswer": {"@type": "Answer", "text": "No — you gain access and engineering practice; the risk is a request-driven service framing."}},
+    {"@type": "Question", "name": "Does it matter where the data team reports?", "acceptedAnswer": {"@type": "Answer", "text": "Considerably - it predicts priorities, budget, data access and distance from decisions."}},
+    {"@type": "Question", "name": "Is reporting into IT a bad sign?", "acceptedAnswer": {"@type": "Answer", "text": "No - you gain access and engineering practice; the risk is a request-driven service framing."}},
     {"@type": "Question", "name": "What is the risk of a standalone data function?", "acceptedAnswer": {"@type": "Answer", "text": "Fragility and lack of system access; ask what it has delivered rather than defined."}},
-    {"@type": "Question", "name": "Can placement affect my salary?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — many Dutch employers grade by job family, which changes the scale."}},
+    {"@type": "Question", "name": "Can placement affect my salary?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - many Dutch employers grade by job family, which changes the scale."}},
     {"@type": "Question", "name": "What matters more than the reporting line?", "acceptedAnswer": {"@type": "Answer", "text": "Sponsor seniority, budget ownership, speed of data access and decision rights."}}
   ]
 }

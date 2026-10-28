@@ -20,9 +20,9 @@ target_persona: "CFO"
 }
 </script>
 
-A vendor selling team augmentation services will tell a CFO the new capacity pays for itself within a month. The honest answer, in most engagements, is closer to a full quarter — and the gap between those two numbers is exactly what a board asks about when the initial budget doesn't hold.
+A vendor selling team augmentation services will tell a CFO the new capacity pays for itself within a month. The honest answer, in most engagements, is closer to a full quarter - and the gap between those two numbers is exactly what a board asks about when the initial budget doesn't hold.
 
-**The Pain:** A CFO at a healthtech company in Houten — a Utrecht-region town known for its cycling-first urban planning and a growing cluster of health-services and insurance-adjacent organizations — is evaluating team augmentation services to accelerate a compliance-driven platform build and needs a realistic break-even timeline, not the vendor's best-case ramp-up projection.
+**The Pain:** A CFO at a healthtech company in Houten - a Utrecht-region town known for its cycling-first urban planning and a growing cluster of health-services and insurance-adjacent organizations - is evaluating team augmentation services to accelerate a compliance-driven platform build and needs a realistic break-even timeline, not the vendor's best-case ramp-up projection.
 
 **The Agitation:** A CFO who budgets against a vendor's optimistic one-month ramp-up and discovers actual productivity arrives closer to ten weeks in has to explain the gap to a board that approved the faster number, damaging credibility on the next budget request regardless of whether the underlying engagement is actually working.
 
@@ -32,16 +32,16 @@ Team augmentation services rarely deliver full productivity from day one, and a 
 
 The first factor is codebase and domain onboarding time, which for a compliance-sensitive healthtech platform typically runs longer than a generic web application, given the regulatory context augmented engineers need to absorb before contributing safely to sensitive modules.
 
-The second is the productivity curve itself — augmented engineers typically reach 50-60% productivity within the first two to three weeks and full productivity closer to eight to ten weeks, a curve a CFO's budget model should reflect explicitly rather than assuming a step-function jump to full output on day one.
+The second is the productivity curve itself - augmented engineers typically reach 50-60% productivity within the first two to three weeks and full productivity closer to eight to ten weeks, a curve a CFO's budget model should reflect explicitly rather than assuming a step-function jump to full output on day one.
 
-The third is what "break-even" actually measures — not just the point where output matches cost, but the point where the roadmap value delivered exceeds what the same calendar time would have cost in continued delay, which is usually a more forgiving and more honest number than a pure cost-per-output calculation.
+The third is what "break-even" actually measures - not just the point where output matches cost, but the point where the roadmap value delivered exceeds what the same calendar time would have cost in continued delay, which is usually a more forgiving and more honest number than a pure cost-per-output calculation.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads provide a documented, realistic ramp-up curve upfront, so a CFO's budget model reflects the actual timeline rather than an optimistic best case.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod is staffed with domain-relevant experience where possible, shortening the compliance-context onboarding curve specifically.
 
-This is Dutch Management × Vietnamese Mastery — a break-even timeline a CFO can actually defend to the board. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - a break-even timeline a CFO can actually defend to the board. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Gesundheitsdigital GmbH, a healthtech company based in Munich, Germany, had budg
 Manifera rebuilt the CFO's model around a documented, realistic ramp curve from the outset, with domain-relevant engineers reducing the compliance-context onboarding time specifically. The revised timeline matched actual delivery within one week of the projection, and the CFO reported the board's confidence in the next augmentation request was materially higher having seen an honest number hold.
 
 > *"The first vendor's number made the board meeting easy and the second board meeting hard. The honest number made both meetings straightforward, because it was actually true."*
-> — **CFO, Gesundheitsdigital GmbH, Germany**
+> - **CFO, Gesundheitsdigital GmbH, Germany**
 
 ## Optimistic Ramp-Up Promise vs. Manifera's Documented Curve
 
@@ -70,9 +70,9 @@ A CFO who budgets against an optimistic ramp-up promise and then has to explain 
 
 ## Break-Even by the Numbers: A Sample Houten Engagement Model
 
-Run the actual arithmetic instead of trusting a vendor's slide. A three-engineer augmentation pod at a blended rate of roughly €55-65/hour costs a Houten healthtech CFO approximately €28,000-33,000 per month fully loaded. Against that, model the delay cost: a compliance-driven platform build slipping by one additional month typically costs a healthtech company more in lost renewal revenue or delayed certification than the entire monthly augmentation spend — often €40,000-60,000 for a mid-market Utrecht-region health-services firm.
+Run the actual arithmetic instead of trusting a vendor's slide. A three-engineer augmentation pod at a blended rate of roughly €55-65/hour costs a Houten healthtech CFO approximately €28,000-33,000 per month fully loaded. Against that, model the delay cost: a compliance-driven platform build slipping by one additional month typically costs a healthtech company more in lost renewal revenue or delayed certification than the entire monthly augmentation spend - often €40,000-60,000 for a mid-market Utrecht-region health-services firm.
 
-Applying the realistic 8-10 week productivity curve, break-even against pure cost-per-output lands around week 9-11. Break-even against cost-of-delay — the more honest measure — typically lands two to three weeks earlier, around week 6-8, because even partial productivity during ramp-up is already offsetting delay costs that would otherwise compound.
+Applying the realistic 8-10 week productivity curve, break-even against pure cost-per-output lands around week 9-11. Break-even against cost-of-delay - the more honest measure - typically lands two to three weeks earlier, around week 6-8, because even partial productivity during ramp-up is already offsetting delay costs that would otherwise compound.
 
 Three levers move that number materially: domain-relevant staffing (shaves 1-2 weeks off ramp), a documented onboarding package covering the compliance context before day one (shaves another 1-2 weeks), and a fixed weekly deliverable cadence that surfaces underperformance by week 3 rather than week 8. A CFO's budget model should show all three explicitly, not just a single break-even date.
 
@@ -108,7 +108,7 @@ A Utrecht-region senior engineer typically costs €75,000-95,000 fully loaded a
 
 ### (Scenario: CFO worried scope changes mid-engagement will blow up the break-even model) What happens to the break-even timeline if project scope changes after the team has ramped up?
 
-A scope change resets part of the domain-onboarding curve but not the technical-onboarding curve, so the break-even delay is typically 2-4 weeks rather than a full restart — budget models should flag scope stability as a risk factor upfront, not absorb it silently.
+A scope change resets part of the domain-onboarding curve but not the technical-onboarding curve, so the break-even delay is typically 2-4 weeks rather than a full restart - budget models should flag scope stability as a risk factor upfront, not absorb it silently.
 
 ### (Scenario: CFO handling cross-border invoicing for a Vietnam-based augmentation pod) How does invoicing and VAT treatment work for a Houten company augmenting with a Vietnam-based team through a Dutch entity?
 

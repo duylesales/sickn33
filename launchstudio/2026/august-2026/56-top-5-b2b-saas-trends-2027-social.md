@@ -1,4 +1,4 @@
-🔥 Mia built a prototype using **Cursor** — mia, a realtor, used **cursor** to build an ai flyer maker, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Mia built a prototype using **Cursor** - mia, a realtor, used **cursor** to build an ai flyer maker, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mia's application achieved silky-smooth performance: Active user engagement rose by 180%, accelerating real estate sales. (€2,400 (Generative UI Development) — production-ready and deployed in 5 business days.). 🚀
+Mia's application achieved silky-smooth performance: Active user engagement rose by 180%, accelerating real estate sales. (€2,400 (Generative UI Development) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/top-5-b2b-saas-trends-2027
 

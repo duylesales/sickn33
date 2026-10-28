@@ -41,7 +41,7 @@ Venlo's position directly on the German border made it one of the country's majo
 
 **Logistics and distribution.** Route optimisation, warehouse automation and cross-border supply chain forecasting, shaped by the specific complexity of goods flowing between Dutch and German systems.
 
-**Greenhouse horticulture.** Climate and growth-cycle modelling inside controlled-environment agriculture — a genuinely technical, sensor-heavy discipline that rarely gets described as "AI" despite involving real predictive modelling.
+**Greenhouse horticulture.** Climate and growth-cycle modelling inside controlled-environment agriculture - a genuinely technical, sensor-heavy discipline that rarely gets described as "AI" despite involving real predictive modelling.
 
 ## Why This Combination Is Easy to Miss
 
@@ -55,7 +55,7 @@ Neither logistics nor horticulture employers in this region compete for tech-sce
 
 **Tradeport Venlo.** A large business park for logistics and distribution, close to the A67 and A73 motorways and the German border. Many European distribution centres of international companies are located here and in comparable business parks around the city.
 
-**Rail and inland shipping connections.** Venlo has rail terminals with connections to the ports of Rotterdam and Antwerp and to German inland terminals, and access to the Maas for inland shipping. This multimodal character — road, rail and water — is exactly what makes logistics optimisation here more complex than in a purely road-based hub.
+**Rail and inland shipping connections.** Venlo has rail terminals with connections to the ports of Rotterdam and Antwerp and to German inland terminals, and access to the Maas for inland shipping. This multimodal character - road, rail and water - is exactly what makes logistics optimisation here more complex than in a purely road-based hub.
 
 **LIOF.** Limburg's regional development agency supports innovation and business development in the province, including in logistics and agri-food.
 
@@ -95,7 +95,7 @@ Neither logistics nor horticulture employers in this region compete for tech-sce
 
 ## Why Energy Has Become a Data Problem in Greenhouses
 
-Greenhouse horticulture is energy-intensive, and fluctuating gas and electricity prices have made energy one of the largest cost factors for growers. That has turned climate control into an optimisation problem: when to heat, when to use artificial lighting, when to store heat, and how to balance crop growth against energy cost. The sector-wide approach known as **Next Generation Growing** (Het Nieuwe Telen), developed with research and industry partners, uses knowledge of plant physiology to grow with less energy — and depends on accurate sensor data and models. The sector association **Glastuinbouw Nederland** is closely involved in the industry's energy transition. For a data scientist, this makes greenhouse work a practical example of optimisation with both biological and economic constraints.
+Greenhouse horticulture is energy-intensive, and fluctuating gas and electricity prices have made energy one of the largest cost factors for growers. That has turned climate control into an optimisation problem: when to heat, when to use artificial lighting, when to store heat, and how to balance crop growth against energy cost. The sector-wide approach known as **Next Generation Growing** (Het Nieuwe Telen), developed with research and industry partners, uses knowledge of plant physiology to grow with less energy - and depends on accurate sensor data and models. The sector association **Glastuinbouw Nederland** is closely involved in the industry's energy transition. For a data scientist, this makes greenhouse work a practical example of optimisation with both biological and economic constraints.
 
 ## Regulation and Cross-Border Rules
 
@@ -111,11 +111,11 @@ Few other Dutch logistics hubs deal with goods, data standards and administrativ
 
 ## A Walkthrough: A Cross-Border Logistics Optimisation Project
 
-A logistics operator in Venlo needs to optimise routing for goods that cross the German border multiple times as they move through a distribution network — each crossing potentially subject to different documentation, customs timing and checks depending on the goods category. A data scientist joining this project spends considerable early time mapping out the actual operational and regulatory constraints before any optimisation modelling can begin, since a mathematically optimal route that ignores a specific customs requirement is worse than useless in practice. This upfront investment in understanding cross-border operational reality is what separates a model that actually gets deployed from one that looks impressive in a demo but fails against real constraints.
+A logistics operator in Venlo needs to optimise routing for goods that cross the German border multiple times as they move through a distribution network - each crossing potentially subject to different documentation, customs timing and checks depending on the goods category. A data scientist joining this project spends considerable early time mapping out the actual operational and regulatory constraints before any optimisation modelling can begin, since a mathematically optimal route that ignores a specific customs requirement is worse than useless in practice. This upfront investment in understanding cross-border operational reality is what separates a model that actually gets deployed from one that looks impressive in a demo but fails against real constraints.
 
 ## A Misconception About Whether Greenhouse Data Work Requires Specialised Knowledge
 
-Candidates without any horticultural background sometimes assume this segment is inaccessible to them. In practice, much of the core technical challenge — building reliable models from continuous sensor streams under real physical constraints — transfers directly from other sensor-heavy domains like manufacturing quality control or environmental monitoring. What's required isn't prior horticultural expertise but a willingness to learn the domain constraints alongside the data work, ideally in close collaboration with growers or crop advisers.
+Candidates without any horticultural background sometimes assume this segment is inaccessible to them. In practice, much of the core technical challenge - building reliable models from continuous sensor streams under real physical constraints - transfers directly from other sensor-heavy domains like manufacturing quality control or environmental monitoring. What's required isn't prior horticultural expertise but a willingness to learn the domain constraints alongside the data work, ideally in close collaboration with growers or crop advisers.
 
 ## Why This Region's Dual Specialisation Offers Long-Term Career Flexibility
 
@@ -123,7 +123,7 @@ Few regions in the Netherlands offer genuine depth in two such different special
 
 ## What Makes a Strong Application to Either Segment
 
-For the logistics side, a strong application demonstrates comfort with operations research thinking — not just statistical modelling, but optimisation under multiple competing real-world constraints such as delivery windows, regulatory requirements and cost. For the horticulture side, it demonstrates genuine curiosity about the biological and environmental processes being modelled. In both cases, generic machine learning credentials alone are less persuasive than evidence of engaging with the specific operational or biological constraints.
+For the logistics side, a strong application demonstrates comfort with operations research thinking - not just statistical modelling, but optimisation under multiple competing real-world constraints such as delivery windows, regulatory requirements and cost. For the horticulture side, it demonstrates genuine curiosity about the biological and environmental processes being modelled. In both cases, generic machine learning credentials alone are less persuasive than evidence of engaging with the specific operational or biological constraints.
 
 ## Skills That Stand Out in Venlo
 
@@ -162,7 +162,7 @@ Because Venlo's employers vary from multinational distribution centres to family
 
 ## Accessibility and Search Radius
 
-Venlo has direct train connections towards Eindhoven, Nijmegen and Roermond, and cross-border connections towards Germany. The German cities of Düsseldorf and Mönchengladbach are within commuting distance by car. A realistic search radius includes Tegelen, Blerick, Horst aan de Maas, Grubbenvorst, Venray and Roermond — and, for cross-border workers, parts of North Rhine-Westphalia. Anyone considering working on one side of the border and living on the other should check tax and social security consequences in advance through a cross-border information point. Check current travel times in the NS journey planner.
+Venlo has direct train connections towards Eindhoven, Nijmegen and Roermond, and cross-border connections towards Germany. The German cities of Düsseldorf and Mönchengladbach are within commuting distance by car. A realistic search radius includes Tegelen, Blerick, Horst aan de Maas, Grubbenvorst, Venray and Roermond - and, for cross-border workers, parts of North Rhine-Westphalia. Anyone considering working on one side of the border and living on the other should check tax and social security consequences in advance through a cross-border information point. Check current travel times in the NS journey planner.
 
 ## Key Takeaways
 
@@ -184,13 +184,13 @@ Browse current AI, machine learning and data jobs in and around Venlo at [onlyai
 Two distinct kinds: cross-border logistics and distribution optimisation, and greenhouse horticulture data work involving climate and growth-cycle modelling.
 
 ### (Scenario: candidate who assumes horticulture isn't technical) Is greenhouse horticulture data work technically serious?
-Yes — controlled-environment agriculture involves genuine predictive modelling for climate control and yield optimisation, a sensor-heavy discipline that rarely gets labelled as AI.
+Yes - controlled-environment agriculture involves genuine predictive modelling for climate control and yield optimisation, a sensor-heavy discipline that rarely gets labelled as AI.
 
 ### (Scenario: candidate searching nationally and finding little) Why doesn't Venlo show up in a national AI job search?
 Neither logistics nor horticulture employers here compete for tech-scene visibility, and job titles reflect their own department vocabulary rather than AI-industry terms.
 
 ### (Scenario: candidate deciding which specialisation to pursue) Should I focus on logistics or horticulture data work in this region?
-It depends on your interest and background — both are genuinely present and distinct, so it's worth exploring the actual listings rather than assuming one dominates.
+It depends on your interest and background - both are genuinely present and distinct, so it's worth exploring the actual listings rather than assuming one dominates.
 
 ### (Scenario: candidate deciding how to search) How should I search for this kind of work in Venlo?
 Filter by category rather than title, and consider both logistics and agri-tech employers rather than assuming only one type of work exists in the region.
@@ -201,9 +201,9 @@ Filter by category rather than title, and consider both logistics and agri-tech 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "What kind of AI-adjacent work exists specifically in Venlo?", "acceptedAnswer": {"@type": "Answer", "text": "Two distinct kinds: cross-border logistics optimisation, and greenhouse horticulture data work involving climate and growth-cycle modelling."}},
-    {"@type": "Question", "name": "Is greenhouse horticulture data work technically serious?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — controlled-environment agriculture involves genuine predictive modelling for climate control and yield optimisation."}},
+    {"@type": "Question", "name": "Is greenhouse horticulture data work technically serious?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - controlled-environment agriculture involves genuine predictive modelling for climate control and yield optimisation."}},
     {"@type": "Question", "name": "Why doesn't Venlo show up in a national AI job search?", "acceptedAnswer": {"@type": "Answer", "text": "Neither logistics nor horticulture employers compete for tech-scene visibility, and job titles reflect department vocabulary rather than AI terms."}},
-    {"@type": "Question", "name": "Should I focus on logistics or horticulture data work in this region?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your interest and background — both are genuinely present, so explore the actual listings rather than assuming one dominates."}},
+    {"@type": "Question", "name": "Should I focus on logistics or horticulture data work in this region?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your interest and background - both are genuinely present, so explore the actual listings rather than assuming one dominates."}},
     {"@type": "Question", "name": "How should I search for this kind of work in Venlo?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category rather than title, and consider both logistics and agri-tech employers."}}
   ]
 }

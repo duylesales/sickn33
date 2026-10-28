@@ -1,4 +1,4 @@
-🏛️ Noah, een legal-tech founder, bouwde een AI-contractzoeker met **Cursor** — en zag zijn zoekqueries oplopen tot meer dan 5 seconden naarmate zijn database groeide naar 50.000 documentfragmenten, wat de gebruikerservaring voor advocatenkantoren verwoestte. 📄
+🏛️ Noah, een legal-tech founder, bouwde een AI-contractzoeker met **Cursor** - en zag zijn zoekqueries oplopen tot meer dan 5 seconden naarmate zijn database groeide naar 50.000 documentfragmenten, wat de gebruikerservaring voor advocatenkantoren verwoestte. 📄
 
 Het onderhouden van een losse vectordatabase naast uw SQL-database creëert synchronisatiefouten, verweesde vectoren en trage, niet-geïndexeerde full-table scans. 🧠
 
@@ -12,7 +12,7 @@ Het onderhouden van een losse vectordatabase naast uw SQL-database creëert sync
 
 Bij **LaunchStudio** optimaliseren we sinds 2014 enterprise database-architecturen via Manifera, verspreid over meer dan 160 succesvol opgeleverde projecten. 🛡️
 
-Noahs querylatentie daalde van 5.000 ms naar minder dan 120 ms, waardoor advocatenkantoren direct interactief kunnen zoeken. (€1.850 (Vector Index Optimization Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Noahs querylatentie daalde van 5.000 ms naar minder dan 120 ms, waardoor advocatenkantoren direct interactief kunnen zoeken. (€1.850 (Vector Index Optimization Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Vereenvoudig uw AI-database-architectuur: https://launchstudio.eu/nl/blog/optimizing-postgres-for-vector-search-pgvector
 

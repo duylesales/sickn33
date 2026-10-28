@@ -13,7 +13,7 @@ Dergelijke sandbox-omgevingen zijn ronduit magisch voor snelle prototyping en va
 
 Om van uw prototype een renderend softwarebedrijf te maken, moet u de broncode exporteren en hosten op een professioneel, hoog-beschikbaar infrastructuurplatform zoals **Vercel**.
 
-Het overzetten van een door AI gegenereerde Next.js applicatie van een sandbox naar een live productieserver is in de praktijk echter zelden zo eenvoudig als het klikken op een exportknop — het is feitelijk de allerbelangrijkste plek waar AI-softwareprojecten definitief stranden. Circa **80% van de met AI gebouwde prototypes bereikt nooit een stabiele productielancering**, en een deployment die *"bijna werkt"* is vaak nog gevaarlijker dan eentje die direct crasht, omdat deze geruisloos kan lekken met hardcoded geheimen.
+Het overzetten van een door AI gegenereerde Next.js applicatie van een sandbox naar een live productieserver is in de praktijk echter zelden zo eenvoudig als het klikken op een exportknop - het is feitelijk de allerbelangrijkste plek waar AI-softwareprojecten definitief stranden. Circa **80% van de met AI gebouwde prototypes bereikt nooit een stabiele productielancering**, en een deployment die *"bijna werkt"* is vaak nog gevaarlijker dan eentje die direct crasht, omdat deze geruisloos kan lekken met hardcoded geheimen.
 
 Hier leest u wat u moet weten over het professioneel hosten van uw AI-app, en waarom deskundige engineering onmisbaar is.
 
@@ -27,7 +27,7 @@ In tegenstelling tot traditionele hosting (waarbij uw applicatie op één enkele
 
 ### 2. Serverless en Edge Functions voor AI API-Aanroepen
 
-AI-applicaties leunen zwaar op externe API-aanroepen — het versturen van prompts naar OpenAI of Anthropic en het wachten op antwoorden die enkele seconden kunnen duren. Vercel biedt twee krachtige uitvoeringsmodellen: standaard Serverless Functions (Node.js runtime voor zwaardere achtergrondtaken) en Edge Functions (een vederlichte V8-isolate runtime met nagenoeg nul koude starttijd, ideaal voor realtime streaming antwoorden). Hierdoor kan uw Next.js applicatie veilige server-side API-calls uitvoeren — inclusief het token-voor-token streamen van LLM-antwoorden naar de browser — zonder dat u zelf een dedicated server hoeft te onderhouden.
+AI-applicaties leunen zwaar op externe API-aanroepen - het versturen van prompts naar OpenAI of Anthropic en het wachten op antwoorden die enkele seconden kunnen duren. Vercel biedt twee krachtige uitvoeringsmodellen: standaard Serverless Functions (Node.js runtime voor zwaardere achtergrondtaken) en Edge Functions (een vederlichte V8-isolate runtime met nagenoeg nul koude starttijd, ideaal voor realtime streaming antwoorden). Hierdoor kan uw Next.js applicatie veilige server-side API-calls uitvoeren - inclusief het token-voor-token streamen van LLM-antwoorden naar de browser - zonder dat u zelf een dedicated server hoeft te onderhouden.
 
 ### 3. Continuous Deployment (CI/CD) en Automatische Preview-Omgevingen
 
@@ -37,7 +37,7 @@ Wanneer u host op Vercel, koppelt het platform naadloos met uw GitHub-repository
 
 Hoewel Vercel uiterst krachtig is, is het overzetten van een door AI gegenereerde applicatie naar Vercel technisch buitengewoon complex.
 
-Wanneer u broncode exporteert uit een AI-builder, is deze code vrijwel altijd incompleet. De AI veronderstelt dat u exact weet hoe u `.env` (omgevingsvariabelen) bestanden configureert om uw OpenAI-sleutels af te schermen — en dat u Vercel's drie afzonderlijke scopes begrijpt (Production, Preview en Development), zodat een preview-test niet per ongeluk uw echte Stripe-account belast. De AI veronderstelt dat u weet hoe u GitHub configureert met een correcte `.gitignore` die geheimen uitsluit, hoe u **CORS-policies** (Cross-Origin Resource Sharing) instelt zodat uw maatwerkdomein veilig met uw Supabase-database kan communiceren, en hoe u DNS-records (A-records en CNAMEs) instelt bij uw domeinregistrar zonder uw zakelijke e-mail te verstoren.
+Wanneer u broncode exporteert uit een AI-builder, is deze code vrijwel altijd incompleet. De AI veronderstelt dat u exact weet hoe u `.env` (omgevingsvariabelen) bestanden configureert om uw OpenAI-sleutels af te schermen - en dat u Vercel's drie afzonderlijke scopes begrijpt (Production, Preview en Development), zodat een preview-test niet per ongeluk uw echte Stripe-account belast. De AI veronderstelt dat u weet hoe u GitHub configureert met een correcte `.gitignore` die geheimen uitsluit, hoe u **CORS-policies** (Cross-Origin Resource Sharing) instelt zodat uw maatwerkdomein veilig met uw Supabase-database kan communiceren, en hoe u DNS-records (A-records en CNAMEs) instelt bij uw domeinregistrar zonder uw zakelijke e-mail te verstoren.
 
 Slaat u deze stappen over, dan gebeurt onvermijdelijk een van de volgende drie dingen:
 
@@ -45,7 +45,7 @@ Slaat u deze stappen over, dan gebeurt onvermijdelijk een van de volgende drie d
 2. **Gelekte API-Sleutels:** Uw app gaat live, maar uw OpenAI- en Stripe-sleutels worden meegeleverd in de client-side JavaScript van de browser, waardoor uw API-tegoeden binnen enkele uren na lancering massaal worden leeggeroofd door kwaadwillende bots die publieke webpagina's scannen.
 3. **Stille Databaseblokkades:** De build slaagt weliswaar, maar een foutieve CORS-configuratie blokkeert in productie geruisloos alle database-verzoeken terwijl alles in de sandbox nog vlekkeloos werkte. Dit leidt tot een uiterst frustrerende situatie waarbij gebruikers blanco schermen zien zonder duidelijke foutmelding.
 
-Dit is geen denkbeeldig gevaar — **45% van de met AI gebouwde codebases bevat ernstige beveiligingslekken**, en hardcoded of publiekelijk blootgestelde API-sleutels tijdens het deployen behoren tot de meest kostbare en meest voorkomende missers onder beginnende software-oprichters. Het correct scheiden van publieke en private variabelen is de eerste verdedigingslinie van elke serieuze webapplicatie.
+Dit is geen denkbeeldig gevaar - **45% van de met AI gebouwde codebases bevat ernstige beveiligingslekken**, en hardcoded of publiekelijk blootgestelde API-sleutels tijdens het deployen behoren tot de meest kostbare en meest voorkomende missers onder beginnende software-oprichters. Het correct scheiden van publieke en private variabelen is de eerste verdedigingslinie van elke serieuze webapplicatie.
 
 ## LaunchStudio: Uw Veilige Brug naar Productie
 
@@ -53,11 +53,11 @@ U bent een ondernemer, geen DevOps-specialist. U moet uw tijd besteden aan het w
 
 Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uw lancering versnelt.
 
-Gesteund door het senior softwareteam van [Manifera](https://www.manifera.com/) — met meer dan 11 jaar enterprise software-ervaring, ruim 120 senior engineers en 160+ succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons ontwikkelcentrum aan **Pho Quang Street in Ho Chi Minhstad, Vietnam** — is LaunchStudio gespecialiseerd in het bevrijden van AI-prototypes uit de sandbox en het veilig deployen naar enterprise productieomgevingen.
+Gesteund door het senior softwareteam van [Manifera](https://www.manifera.com/) - met meer dan 11 jaar enterprise software-ervaring, ruim 120 senior engineers en 160+ succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons ontwikkelcentrum aan **Pho Quang Street in Ho Chi Minhstad, Vietnam** - is LaunchStudio gespecialiseerd in het bevrijden van AI-prototypes uit de sandbox en het veilig deployen naar enterprise productieomgevingen.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
-Met onze deployment-pakketten overhandigt u simpelweg de door Bolt.new, Lovable of v0 gegenereerde broncode. Wij schonen de sandbox-artefacten op, richten uw GitHub-repository in met branch protection, en configureren de Vercel-omgeving met correct gescheiden omgevingsvariabelen. Wij zorgen ervoor dat uw Stripe- en OpenAI-sleutels cryptografisch worden afgeschermd op de server. We koppelen uw eigen domeinnaam, regelen de DNS- en SSL-certificaten en leveren een live, razendsnelle en veilige Next.js SaaS aan u op — zie onze [deployment-pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes en vaste projectprijzen. Dit geeft u de zekerheid van een vlekkeloze, professionele livegang zonder onverwachte serverfouten.
+Met onze deployment-pakketten overhandigt u simpelweg de door Bolt.new, Lovable of v0 gegenereerde broncode. Wij schonen de sandbox-artefacten op, richten uw GitHub-repository in met branch protection, en configureren de Vercel-omgeving met correct gescheiden omgevingsvariabelen. Wij zorgen ervoor dat uw Stripe- en OpenAI-sleutels cryptografisch worden afgeschermd op de server. We koppelen uw eigen domeinnaam, regelen de DNS- en SSL-certificaten en leveren een live, razendsnelle en veilige Next.js SaaS aan u op - zie onze [deployment-pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes en vaste projectprijzen. Dit geeft u de zekerheid van een vlekkeloze, professionele livegang zonder onverwachte serverfouten.
 
 ## Wat U Moet Controleren Vóórdat U op Deploy Klikt
 
@@ -68,7 +68,7 @@ Voer een snelle vijf-minuten controle uit: zoek in uw geëxporteerde code naar t
 - Sandbox-URL's zijn uitsluitend bedoeld voor prototyping; zakelijke B2B-klanten eisen een eigen domeinnaam op professionele infrastructuur.
 - Vercel is de wereldwijde standaard voor Next.js applicaties dankzij het Edge Network, Serverless/Edge Functions en automatische Preview Deployments.
 - Het direct exporteren van AI-code naar Vercel vereist strikte configuratie van omgevingsvariabelen, GitHub-branches en CORS om build errors en beveiligingslekken te voorkomen.
-- 45% van de AI-codebases bevat kwetsbaarheden — gelekte API-sleutels bij amateuristische deployments behoren tot de grootste financiële risico's.
+- 45% van de AI-codebases bevat kwetsbaarheden - gelekte API-sleutels bij amateuristische deployments behoren tot de grootste financiële risico's.
 - LaunchStudio levert de senior DevOps-engineering om uw AI-prototype binnen 48 uur naadloos en veilig naar een live Vercel-productieomgeving te migreren.
 
 [Stop met worstelen met deployment-fouten. Laat LaunchStudio uw AI-app vandaag nog professioneel lanceren op Vercel](https://launchstudio.eu/nl/#contact).
@@ -89,7 +89,7 @@ Onze DevOps-engineers zagen het probleem direct. De sandbox verborg cruciale ach
 
 **Resultaat:** De applicatie compileerde direct bij de allereerste poging vlekkeloos. We koppelden haar maatwerkdomein (`toetsgen.nl`), configureerden de DNS-records en Sophia was binnen 48 uur live. Zij lanceerde de app binnen haar onderwijsnetwerk en sloot in de eerste week direct **150 betalende docenten** aan. *"Ik stond op het punt het project op te geven omdat de lancering maar niet lukte. LaunchStudio loste de servernachtmerrie op zodat ik me volledig op de verkoop kon richten."*
 
-**Kosten & Tijdlijn:** €900 (Snelle Vercel Deployment & GitHub Configuratie) — binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €900 (Snelle Vercel Deployment & GitHub Configuratie) - binnen 2 werkdagen live opgeleverd.
 
 ---
 
@@ -105,7 +105,7 @@ Vercel biedt een royale gratis "Hobby"-tier die ideaal is voor experimenten. Zod
 
 ### Wat is een omgevingsvariabele (`.env`) en waarom is deze zo belangrijk?
 
-Een omgevingsvariabele is een beveiligde methode om geheime gegevens — zoals uw OpenAI API-sleutel of Stripe Secret Key — buiten uw broncode op te slaan en pas tijdens runtime in te laden. Vercel ondersteunt aparte scopes voor Production, Preview en Development. Als u deze sleutels direct in uw React-code opneemt, worden ze naar de browser van elke bezoeker gestuurd en binnen no-time gestolen.
+Een omgevingsvariabele is een beveiligde methode om geheime gegevens - zoals uw OpenAI API-sleutel of Stripe Secret Key - buiten uw broncode op te slaan en pas tijdens runtime in te laden. Vercel ondersteunt aparte scopes voor Production, Preview en Development. Als u deze sleutels direct in uw React-code opneemt, worden ze naar de browser van elke bezoeker gestuurd en binnen no-time gestolen.
 
 ### Waarom is een koppeling met GitHub noodzakelijk voor hosting op Vercel?
 

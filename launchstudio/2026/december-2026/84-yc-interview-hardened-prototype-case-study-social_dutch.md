@@ -12,7 +12,7 @@ YC-partners prikken direct door mooie demo's heen. Ze testen live wat er gebeurt
 
 Bij LaunchStudio harden we AI-prototypes voor zware investor demo's en accelerator interviews. 🛡️
 
-Sanne beantwoordde alle technische vragen foutloos en werd toegelaten tot YC ($ 500k investering). (€ 3.200 (Investor Hardening) — 8 werkdagen.) ✨
+Sanne beantwoordde alle technische vragen foutloos en werd toegelaten tot YC ($ 500k investering). (€ 3.200 (Investor Hardening) - 8 werkdagen.) ✨
 
 👉 Ontdek het YC hardening stappenplan: https://launchstudio.eu/nl/blog/yc-interview-hardened-prototype-case-study
 

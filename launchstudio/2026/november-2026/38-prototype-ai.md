@@ -82,7 +82,7 @@ Lucas, a former real estate agent in Berlin, used Cursor to build "LeaseLogic," 
 
 He built the prototype in 48 hours. He tested it on three standard 10-page leases. The AI flawlessly highlighted a tricky indemnity clause in seconds. Lucas was ecstatic. He secured a pilot with a major Berlin property management firm.
 
-On day one of the pilot, the firm uploaded a "Master Lease Agreement"—a complex, 350-page PDF containing thousands of clauses and scanned addendums. 
+On day one of the pilot, the firm uploaded a "Master Lease Agreement" - a complex, 350-page PDF containing thousands of clauses and scanned addendums. 
 
 Lucas's prototype collapsed instantly. First, the basic PDF parsing library failed to read the scanned pages. Then, when Lucas tried to manually copy-paste the text, the API rejected it because it exceeded GPT-4's context limits. He tried switching to Claude 3 Opus, but the synchronous API call timed out after 15 seconds on his serverless hosting provider. 
 
@@ -95,9 +95,9 @@ In a grueling 14-day rescue operation, the Manifera engineering team rebuilt the
 **Result:** When the firm uploaded the next 350-page lease, the UI didn't freeze. It displayed a progress bar. The backend processed the document in chunks, executing parallel AI calls, and assembled a comprehensive, accurate report in 45 seconds. The firm signed a €15,000 annual contract.
 
 > *"I thought I was a genius because I built an AI app in a weekend. LaunchStudio humbled me, but they also saved me. They showed me that building a cool UI with an API key is just the starting line. They built the heavy machinery that actually allowed my app to process real-world corporate data without crashing."*
-> — **Lucas Wagner, Founder, LeaseLogic (Berlin)**
+> - **Lucas Wagner, Founder, LeaseLogic (Berlin)**
 
-**Cost & Timeline:** €7,500 (Launch & Grow Package with Heavy Data Processing Add-on) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €7,500 (Launch & Grow Package with Heavy Data Processing Add-on) - production-ready and deployed in 14 business days.
 
 ---
 
@@ -109,7 +109,7 @@ You can use it to demonstrate the *vision*, but technical VCs in 2026 know the d
 
 ### (Scenario: Developer frustrated with context limits) Why shouldn't I just use the model with the largest context window available (e.g., 2 million tokens)?
 
-Two reasons: Cost and Accuracy. Passing 2 million tokens per request will bankrupt a startup instantly (often costing several euros per single query). Furthermore, despite having a massive window, LLMs suffer from "Lost in the Middle" syndrome—they often ignore facts buried deep in a massive prompt. A RAG pipeline built by LaunchStudio retrieves only the 3 relevant paragraphs, ensuring high accuracy and keeping costs at fractions of a cent per query.
+Two reasons: Cost and Accuracy. Passing 2 million tokens per request will bankrupt a startup instantly (often costing several euros per single query). Furthermore, despite having a massive window, LLMs suffer from "Lost in the Middle" syndrome - they often ignore facts buried deep in a massive prompt. A RAG pipeline built by LaunchStudio retrieves only the 3 relevant paragraphs, ensuring high accuracy and keeping costs at fractions of a cent per query.
 
 ### (Scenario: CTO optimizing gross margins) How much money can Semantic Caching actually save a production AI app?
 

@@ -61,7 +61,7 @@ Manifera's log- en gegevensafhandelingsaudits worden uitgevoerd door het enginee
 
 ## Een Praktische Audit-Methode om Gevoelige Data in Uw Eigen Logs te Vinden
 
-Een oprichter heeft geen kostbare gespecialiseerde compliance-software nodig om een eerste, zeer effectieve inspectie uit te voeren — een systematische zoektocht door de codebase en een blik op wat er daadwerkelijk in logbestanden wordt weggeschreven, brengt de meeste risico's direct aan het licht.
+Een oprichter heeft geen kostbare gespecialiseerde compliance-software nodig om een eerste, zeer effectieve inspectie uit te voeren - een systematische zoektocht door de codebase en een blik op wat er daadwerkelijk in logbestanden wordt weggeschreven, brengt de meeste risico's direct aan het licht.
 
 **Doorzoek de codebase als eerste op alle log-aanroepen**
 
@@ -91,9 +91,9 @@ Tijdens het voorbereiden van documentatie voor een mogelijke integratie met een 
 **Resultaat:** LaunchStudio auditeerde elke log-regel in BudgetBase, verwijderde of maskeerde gevoelige transactievelden uit alle toekomstige logboeken, en werkte met Roos om een bewaarbeleid toe te passen op bestaande loggegevens. Dit sloot de kloof voordat het gesprek met de bankpartner verder ging.
 
 > *"Ik voegde die log-regel zelf al vroeg toe omdat het debuggen er zoveel gemakkelijker door werd. Ik ben nooit één keer teruggekeerd om na te denken over wat het betekende dat het nog steeds exact op dezelfde manier draaide tegen echte bankgegevens."*
-> — **Roos Bakker, Oprichter, BudgetBase (Zaandam)**
+> - **Roos Bakker, Oprichter, BudgetBase (Zaandam)**
 
-**Kosten en tijdlijn:** € 2.100 (log-audit en maskering van gevoelige gegevens) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (log-audit en maskering van gevoelige gegevens) - voltooid in 7 werkdagen.
 
 ---
 

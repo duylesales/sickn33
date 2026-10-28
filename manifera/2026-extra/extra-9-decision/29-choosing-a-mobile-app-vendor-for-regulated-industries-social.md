@@ -2,7 +2,7 @@ A generalist agency can ship a beautiful health or fintech app in 12 weeks. What
 
 **The Pain Points:**
 ❌ **"GDPR Compliant" Means Almost Nothing:** A marketing-site GDPR claim and Article 9 special-category health data handling are entirely different engineering problems.
-❌ **Retrofitted Audit Logging:** Vendors unfamiliar with HIPAA underestimate logging every READ of PHI, not just writes — expensive to bolt on after launch.
+❌ **Retrofitted Audit Logging:** Vendors unfamiliar with HIPAA underestimate logging every READ of PHI, not just writes - expensive to bolt on after launch.
 ❌ **Blocked Payment Flows:** A generic "we'll add two-factor auth" answer signals a vendor has never actually built a PSD2-compliant Strong Customer Authentication flow.
 
 **The Manifera Solution:**

@@ -1,4 +1,4 @@
-🚨 The vendor said "our onboarding takes about 6-8 weeks." They weren't describing a limitation of offshore work — they were describing the absence of a plan. 📅⚙️
+🚨 The vendor said "our onboarding takes about 6-8 weeks." They weren't describing a limitation of offshore work - they were describing the absence of a plan. 📅⚙️
 
 **The Pain Points:**
 ❌ **Three Weeks In, Zero Features Shipped:** "Environment setup" and "codebase familiarization" as the only completed milestones.

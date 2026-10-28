@@ -1,4 +1,4 @@
-🚨 "Neem gewoon een senior developer aan," adviseerde een mede-oprichter Sanne tijdens een borrel — waar maar volstrekt nutteloos, want ze kon een zelfverzekerd antwoord niet onderscheiden van een correct antwoord. 😬
+🚨 "Neem gewoon een senior developer aan," adviseerde een mede-oprichter Sanne tijdens een borrel - waar maar volstrekt nutteloos, want ze kon een zelfverzekerd antwoord niet onderscheiden van een correct antwoord. 😬
 
 Het probleem is niet het besluit óm te werven. De bottleneck is het beoordelen van een discipline die u zelf niet beheerst: 🧠
 
@@ -14,7 +14,7 @@ Het probleem is niet het besluit óm te werven. De bottleneck is het beoordelen 
 
 Bij **LaunchStudio**, ondersteund door Manifera's team van 120+ software-engineers, schuiven we aan bij technische gesprekken en beoordelen we praktijkopdrachten direct tegen uw bestaande architectuur. 🔎
 
-Haar resultaat: de kandidaat met het mooiste cv bleek de slechtste match — de aangenomen engineer leverde binnen vijf weken zelfstandig een volwaardige feature op zonder storingen. 🚀
+Haar resultaat: de kandidaat met het mooiste cv bleek de slechtste match - de aangenomen engineer leverde binnen vijf weken zelfstandig een volwaardige feature op zonder storingen. 🚀
 
 👉 Bespreek met een engineer hoe wij kunnen aanschuiven bij uw volgende sollicitatieronde: https://launchstudio.eu/nl/blog/hiring-your-first-engineer-after-youve-launched
 

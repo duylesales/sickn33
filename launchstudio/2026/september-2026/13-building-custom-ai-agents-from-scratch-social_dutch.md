@@ -1,6 +1,6 @@
-🚨 Elijah, een reisadviseur, bouwde een AI-reisplanner met **Lovable** — maar de generieke chatbot raakte continu van het onderwerp af en slaagde er niet in om boekingsgegevens in de juiste volgorde te verzamelen. ✈️
+🚨 Elijah, een reisadviseur, bouwde een AI-reisplanner met **Lovable** - maar de generieke chatbot raakte continu van het onderwerp af en slaagde er niet in om boekingsgegevens in de juiste volgorde te verzamelen. ✈️
 
-Een chatbot is nog geen Agent — een echte Agent is een LLM binnen een gestructureerde uitvoeringslus met tools, robuuste foutafhandeling en harde veiligheidsgrenzen. 🧠
+Een chatbot is nog geen Agent - een echte Agent is een LLM binnen een gestructureerde uitvoeringslus met tools, robuuste foutafhandeling en harde veiligheidsgrenzen. 🧠
 
 ❌ Geen deterministische structuur, waardoor de AI halverwege afdwaalde van de kerntaak
 ❌ Geen native tool-calling, waardoor het model geen realtime datakoppelingen kon uitvoeren
@@ -12,7 +12,7 @@ Een chatbot is nog geen Agent — een echte Agent is een LLM binnen een gestruct
 
 Bij **LaunchStudio** ontwerpen we sinds 2014 betrouwbare enterprise AI-agents via Manifera, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten. 🛡️
 
-Elijahs succespercentage voor boekingsverzameling steeg van 40% naar 95%, doordat de AI gebruikers nu gestructureerd om ontbrekende gegevens vraagt. (€2.400 (Custom Agent Development Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Elijahs succespercentage voor boekingsverzameling steeg van 40% naar 95%, doordat de AI gebruikers nu gestructureerd om ontbrekende gegevens vraagt. (€2.400 (Custom Agent Development Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u betrouwbare AI-agents bouwt: https://launchstudio.eu/nl/blog/building-custom-ai-agents-from-scratch
 

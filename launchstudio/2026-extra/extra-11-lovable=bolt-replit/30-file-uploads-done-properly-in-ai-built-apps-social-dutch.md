@@ -1,4 +1,4 @@
-🖼️ Ravi Mehta bouwde Vintagehoek in Lovable voor vintage meubels in Haarlem. Verkopers fotografeerden meubels thuis. Uit een audit bleek echter dat foto's alle EXIF-metadata behielden — waardoor exacte GPS-huisadressen van verkopers openbaar waren — terwijl ongecomprimeerde 8MB foto's de cloudfactuur opdreven en mobiele browsers deden haperen. 😳
+🖼️ Ravi Mehta bouwde Vintagehoek in Lovable voor vintage meubels in Haarlem. Verkopers fotografeerden meubels thuis. Uit een audit bleek echter dat foto's alle EXIF-metadata behielden - waardoor exacte GPS-huisadressen van verkopers openbaar waren - terwijl ongecomprimeerde 8MB foto's de cloudfactuur opdreven en mobiele browsers deden haperen. 😳
 
 Bestandsuploads zijn het gevaarlijkste aanvalsoppervlak voor privacylekken en onnodige cloudkosten. Waar het misgaat:
 

@@ -84,7 +84,7 @@ Begin 2026 lanceerde Simons team een innovatieve feature: een Autonome Categoris
 
 De feature was technisch een triomf, maar zakelijk een ramp:
 Het accountantskantoor was zo enthousiast over de AI dat zij de 80 junior medewerkers die handmatige invoer deden konden herplaatsen, en hun licenties terugbrachten naar 20 senior reviewers.
-Simons maandelijkse omzet bij zijn grootste klant kelderde direct van €4.000 naar €800 — puur omdat zijn AI te goed werkte.
+Simons maandelijkse omzet bij zijn grootste klant kelderde direct van €4.000 naar €800 - puur omdat zijn AI te goed werkte.
 
 Simon schakelde LaunchStudio in voor een acute herinrichting van zijn platformarchitectuur en prijsmodel.
 
@@ -95,9 +95,9 @@ Het Manifera-team voerde in 30 werkdagen een volledige verbruiks-integratie uit:
 **Resultaat:** Het kantoor verwerkte 100.000 transacties per maand. Onder het nieuwe model betaalden zij Simon €10.000 voor de transacties plus €200 voor de 20 licenties: een totale omzet van €10.200 per maand. Het kantoor was uiterst tevreden omdat zij nog steeds €300.000 per maand aan salariskosten bespaarden. Simon koppelde zijn omzet aan werkelijke bedrijfswaarde en redde zijn bedrijf.
 
 > *"We bouwden een fantastische AI, en onze beloning was een omzetdaling van 80% omdat ons prijsmodel vastzat in het verleden. LaunchStudio begreep niet alleen de code, maar ook de SaaS-economie. Zij bouwden de complexe realtime meetinfrastructuur waarmee we de werkelijke waarde van onze AI konden verzilveren."*
-> — **Simon Hayes, CEO, LedgerLogic (Londen)**
+> - **Simon Hayes, CEO, LedgerLogic (Londen)**
 
-**Kosten & Doorlooptijd:** €22.000 (Launch & Grow Pakket met Metronome Integratie & Metering Add-on) — productie-klaar en live binnen 30 werkdagen.
+**Kosten & Doorlooptijd:** €22.000 (Launch & Grow Pakket met Metronome Integratie & Metering Add-on) - productie-klaar en live binnen 30 werkdagen.
 
 ---
 

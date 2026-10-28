@@ -84,9 +84,9 @@ Het probleem bleef maandenlang onzichtbaar omdat FactuurFlow's vroege klanten vo
 LaunchStudio herbouwde FactuurFlow's facturatielogica om het land van elke klant te bepalen op basis van zowel IP- als factuuradres, het correcte btw-tarief op te halen uit een automatisch bijwerkende EU-tarieftabel, verleggingslogica automatisch toe te passen wanneer een geldig btw-nummer werd opgegeven, en de beïnvloede historische facturen opnieuw te genereren met correcte regelitems. **Resultaat:** FactuurFlow factureert nu correct over elk EU-land waarin het actief is, met een auditspoor dat een boekhouder daadwerkelijk kan aftekenen.
 
 > *"Ik bouwde een factureringstool en verzond op de een of andere manier de exacte bug die ik mijn klanten probeerde te helpen vermijden. Het op de juiste manier herstellen van de belastinglogica was niet optioneel – het was het gehele product."*
-> — **Quinten Adriaans, Oprichter, FactuurFlow (Roosendaal)**
+> - **Quinten Adriaans, Oprichter, FactuurFlow (Roosendaal)**
 
-**Kosten en tijdlijn:** € 1.800 (herbouw van de btw-engine, VIES-integratie, correctie van historische facturen) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 1.800 (herbouw van de btw-engine, VIES-integratie, correctie van historische facturen) - voltooid in 9 werkdagen.
 
 ---
 

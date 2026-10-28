@@ -1,6 +1,6 @@
 💸 **Why the cheapest dev quote always becomes the most expensive project:**
 
-The CFO sees two proposals: €35/hr vs €18/hr. "No brainer," she says. 8 months later, the project costs €140K — double the "expensive" option.
+The CFO sees two proposals: €35/hr vs €18/hr. "No brainer," she says. 8 months later, the project costs €140K - double the "expensive" option.
 
 Here's the autopsy:
 

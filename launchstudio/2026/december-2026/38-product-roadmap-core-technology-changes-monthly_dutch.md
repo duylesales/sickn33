@@ -32,11 +32,11 @@ Doelpersona: SaaS Oprichter Scale-Up
 }
 </script>
 
-U heeft een strakke product-roadmap geschreven voor het komende kwartaal. Twee weken later past uw AI-provider zijn onderliggende model aan, en drie geplande functies worden ineens ofwel triviaalt eenvoudig om te bouwen, ofwel volledig achterhaald. Dit is een volstrekt nieuw probleem voor productplanning — traditionele methodologieën zijn immers ontwikkeld voor technologie-stacks die over jaren veranderen, en niet over weken.
+U heeft een strakke product-roadmap geschreven voor het komende kwartaal. Twee weken later past uw AI-provider zijn onderliggende model aan, en drie geplande functies worden ineens ofwel triviaalt eenvoudig om te bouwen, ofwel volledig achterhaald. Dit is een volstrekt nieuw probleem voor productplanning - traditionele methodologieën zijn immers ontwikkeld voor technologie-stacks die over jaren veranderen, en niet over weken.
 
 ## Waarom Traditionele Roadmaps van Verkeerde Aannames Uitgaan
 
-Klassieke product-roadmap frameworks (kwartaal-OKR's, gedetailleerde meermaandelijkse functieplannen) gaan er impliciet van uit dat uw onderliggende technische mogelijkheden stabiel zijn — de roadmap veranderd door marktfeedback en prioriteiten, en niet omdat het fundament zelf verschuift. AI-native oprichters die bouwen op snel evoluerende AI-modellen worden geconfronteerd met een andere realiteit: mogelijkheden die vorig kwartaal technisch onmogelijk of onbetaalbaar waren, worden dit kwartaal triviaal, en omgekeerd.
+Klassieke product-roadmap frameworks (kwartaal-OKR's, gedetailleerde meermaandelijkse functieplannen) gaan er impliciet van uit dat uw onderliggende technische mogelijkheden stabiel zijn - de roadmap veranderd door marktfeedback en prioriteiten, en niet omdat het fundament zelf verschuift. AI-native oprichters die bouwen op snel evoluerende AI-modellen worden geconfronteerd met een andere realiteit: mogelijkheden die vorig kwartaal technisch onmogelijk of onbetaalbaar waren, worden dit kwartaal triviaal, en omgekeerd.
 
 ## Een Roadmap-Aanpak Geschikt voor Instabiliteit
 
@@ -82,9 +82,9 @@ Cap de tijdsinvesterings bewust: 30 tot 60 minuten gefocuste review per maand is
 ### Dynamisch Roadmappen: Het 30-60-90 Dagen Horizon-Model
 
 In een technologisch landschap waar AI-modellen en frameworks maandelijks verouderen, is een statische jaar-roadmap een recept voor kapitaalverspilling. Succesvolle oprichters hanteren een flexibel drie-fasen model:
-- **Horizon 1 (0-30 Dagen — Harde Executie):** Vaste, onveranderlijke sprints gericht op kernfunctionaliteit, pre-launch hardening, beveiliging en betalingsbetrouwbaarheid. Geen tussentijdse koerswijzigingen toegestaan.
-- **Horizon 2 (30-60 Dagen — Gevalideerde Verbeteringen):** Features die wachten op feedback van de eerste betalende klanten. Specificaties worden pas 14 dagen voor de geplande start definitief bevroren.
-- **Horizon 3 (60-90 Dagen — Strategische Verkenning):** Experimentele ideeën en evaluatie van nieuwe modelcapaciteiten (zoals multimodaliteit of agentic workflows). Dient als flexibele buffer die maandelijks wordt herzien.
+- **Horizon 1 (0-30 Dagen - Harde Executie):** Vaste, onveranderlijke sprints gericht op kernfunctionaliteit, pre-launch hardening, beveiliging en betalingsbetrouwbaarheid. Geen tussentijdse koerswijzigingen toegestaan.
+- **Horizon 2 (30-60 Dagen - Gevalideerde Verbeteringen):** Features die wachten op feedback van de eerste betalende klanten. Specificaties worden pas 14 dagen voor de geplande start definitief bevroren.
+- **Horizon 3 (60-90 Dagen - Strategische Verkenning):** Experimentele ideeën en evaluatie van nieuwe modelcapaciteiten (zoals multimodaliteit of agentic workflows). Dient als flexibele buffer die maandelijks wordt herzien.
 
 ### Waarom Architectuur-Flexibiliteit Belangrijker Is Dan Feature-Snelheid
 
@@ -126,16 +126,16 @@ Voer elke maand deze drie technische controles uit:
 
 ### Een AI-native oprichter in actie: Een model-update omzetten in een versnelde roadmap
 
-Rick, eigenaar van een klein marketingbureau in Spijkenisse, bouwde ContentSchema — een AI-tool die gestructureerde content-briefings en SEO-outlines genereert voor zijn tekstschrijvers. Rick had een complexe functie gepland voor Q1: het automatisch genereren van meertalige contentvariaties, wat naar zijn schatting maanden maatwerk zou kosten.
+Rick, eigenaar van een klein marketingbureau in Spijkenisse, bouwde ContentSchema - een AI-tool die gestructureerde content-briefings en SEO-outlines genereert voor zijn tekstschrijvers. Rick had een complexe functie gepland voor Q1: het automatisch genereren van meertalige contentvariaties, wat naar zijn schatting maanden maatwerk zou kosten.
 
 Toen zijn AI-provider halverwege het kwartaal een grote update uitbracht met drastisch verbeterde meertalige mogelijkheden, vreesde Rick aanvankelijk dat zijn planning waardeloos was geworden. Omdat LaunchStudio de AI-integratie van ContentSchema tijdens de productielancering had gebouwd met een schone abstractielaag, kon Rick het nieuwe model doorvoeren via een eenvoudige configuratiewijziging. De meertalige functie werd binnen enkele weken werkelijkheid.
 
 **Resultaat:** ContentSchema lanceerde de meertalige functie ongeveer twee maanden eerder dan gepland, tegen een fractie van het oorspronkelijk gebudgetteerde engineering-budget.
 
 > *"Ik dacht altijd dat een model-update mijn plannen verstoorde. Nu werkt het juist voor mij, omdat onze architectuur er direct van kan profiteren zonder dat alles opnieuw gebouwd moet worden."*
-> — **Rick Molenaar, Oprichter, ContentSchema (Spijkenisse)**
+> - **Rick Molenaar, Oprichter, ContentSchema (Spijkenisse)**
 
-**Kosten & Doorlooptijd:** € 1.750 (functie-versnelling na model-upgrade) — voltooid in 9 werkdagen.
+**Kosten & Doorlooptijd:** € 1.750 (functie-versnelling na model-upgrade) - voltooid in 9 werkdagen.
 
 ---
 

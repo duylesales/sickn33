@@ -35,7 +35,7 @@ Being specific matters, because "research skills" as a phrase means nothing to a
 
 **Knowing when a result is not real.** Multiple comparisons, selection effects, insufficient power, confounding, and the difference between a finding and an artefact. The sector analyses in this series describe these problems in semiconductor yield work, clinical prediction, drug discovery and marketing measurement. Researchers trained to be sceptical of their own results are valuable precisely where the cost of being wrong is high.
 
-**Quantifying uncertainty honestly.** Producing a calibrated statement about what you do and do not know, rather than a point estimate with unwarranted confidence. Several sectors — semiconductor metrology, flood risk, energy forecasting, medical imaging — treat this as a requirement rather than a refinement.
+**Quantifying uncertainty honestly.** Producing a calibrated statement about what you do and do not know, rather than a point estimate with unwarranted confidence. Several sectors - semiconductor metrology, flood risk, energy forecasting, medical imaging - treat this as a requirement rather than a refinement.
 
 **Reading and using literature.** Finding out whether a problem has been solved, and whether the solution actually applies to your situation. Many industrial teams reinvent things unnecessarily because nobody is comfortable in the literature.
 
@@ -69,7 +69,7 @@ Concrete reframing, because this is where most candidates lose ground.
 
 **Foreground the engineering you did.** Almost every research project involves substantial software, data pipelines and infrastructure. You built it and you probably do not mention it. Mention it.
 
-**Describe collaborations accurately.** Supervising students, coordinating with other groups, working with domain experts in another field — these are the teamwork and stakeholder-management experiences employers ask about, and researchers routinely fail to recognise them as such.
+**Describe collaborations accurately.** Supervising students, coordinating with other groups, working with domain experts in another field - these are the teamwork and stakeholder-management experiences employers ask about, and researchers routinely fail to recognise them as such.
 
 **Name failures and what you learned.** Industrial interviews ask about this, and a research career contains many honest examples. A candidate who can describe an approach that did not work and what they concluded is more credible than one presenting an unbroken record.
 
@@ -87,13 +87,13 @@ Researchers frequently prepare for the wrong thing, so it is worth describing wh
 
 **Whether you can communicate with a non-specialist.** Expect at least one interviewer without a technical background. Their assessment carries real weight, and a candidate who cannot explain their work to them is a hiring risk regardless of technical strength.
 
-**Coding, at a level lower than researchers fear.** Industrial coding interviews usually test whether you write clear, working, reasonably structured code — not competitive programming. Researchers who write code daily are generally fine, and those who panic about this typically underestimate themselves. The genuine gap is usually in testing, version control discipline and code review practice, all of which are learnable quickly and worth acquiring before you start.
+**Coding, at a level lower than researchers fear.** Industrial coding interviews usually test whether you write clear, working, reasonably structured code - not competitive programming. Researchers who write code daily are generally fine, and those who panic about this typically underestimate themselves. The genuine gap is usually in testing, version control discipline and code review practice, all of which are learnable quickly and worth acquiring before you start.
 
 ## What the First Six Months Actually Feel Like
 
 Useful to know in advance, because the experience follows a predictable pattern and people who expect it handle it better.
 
-**Weeks one to four: disorientation.** You will not know where the data is, who to ask, why things are done as they are, or what your actual job is. This is normal and is not evidence you made a mistake. The most useful thing you can do is map the organisation — who knows what, who decides what — rather than trying to produce output.
+**Weeks one to four: disorientation.** You will not know where the data is, who to ask, why things are done as they are, or what your actual job is. This is normal and is not evidence you made a mistake. The most useful thing you can do is map the organisation - who knows what, who decides what - rather than trying to produce output.
 
 **Months two and three: the competence dip.** You will feel less capable than you were in research, because you are. Your accumulated knowledge is partly inapplicable and your new environment rewards skills you have not developed. Almost everyone experiences this and almost nobody mentions it.
 
@@ -119,7 +119,7 @@ The practical implication is to target the sectors where your specific training 
 
 One option deserves separate mention because it suits researchers particularly well and is frequently overlooked in the binary framing of academia versus industry.
 
-The Netherlands has a substantial applied research sector — organisations working on real problems for external partners, with methodological standards closer to academia than to commercial practice. Several appear throughout this series: the applied research organisation working across defence, mobility, energy and health; the water and subsurface institute; the aerospace institute; the agricultural research organisation; the radio astronomy institute.
+The Netherlands has a substantial applied research sector - organisations working on real problems for external partners, with methodological standards closer to academia than to commercial practice. Several appear throughout this series: the applied research organisation working across defence, mobility, energy and health; the water and subsurface institute; the aerospace institute; the agricultural research organisation; the radio astronomy institute.
 
 For someone leaving academia, these have specific advantages.
 
@@ -142,7 +142,7 @@ The honest positioning is that applied research institutes are an excellent seco
 - Choosing a sophisticated method where a simple one suffices is the single most common and most damaging mistake.
 - Translate your record by leading with the problem rather than the method, quantifying impact, and foregrounding the engineering you almost certainly did but do not mention.
 - Do not open by apologising for lacking industry experience; it frames the conversation as a deficit.
-- Target sectors where research training is the scarce input — semiconductor, drug discovery, materials, medical imaging, official statistics — rather than the most accessible ones.
+- Target sectors where research training is the scarce input - semiconductor, drug discovery, materials, medical imaging, official statistics - rather than the most accessible ones.
 
 ## Where to Start
 
@@ -159,7 +159,7 @@ The ability to design an investigation that can answer a question, and to recogn
 Choosing a sophisticated approach where a simple one suffices. In research novelty is required; in industry a solution must work and be maintainable, so unnecessary complexity reads as poor judgement rather than capability.
 
 ### (Scenario: researcher writing applications) How should I describe my work?
-Lead with the problem and the outcome rather than the method, quantify what you can, and include the software and data infrastructure you built — which almost every research project involves and which candidates routinely omit.
+Lead with the problem and the outcome rather than the method, quantify what you can, and include the software and data infrastructure you built - which almost every research project involves and which candidates routinely omit.
 
 ### (Scenario: researcher choosing a sector) Where is my training worth most?
 Semiconductor metrology, drug discovery, materials informatics, medical imaging, official statistics and instrumentation, where small expensive data, experimental design and validation standards are central. Retail and consumer technology value it least.

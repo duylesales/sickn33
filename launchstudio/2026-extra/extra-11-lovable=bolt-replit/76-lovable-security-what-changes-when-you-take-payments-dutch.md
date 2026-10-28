@@ -22,7 +22,7 @@ Doelgroep: AI-Native Founder (non-technical)
 
 Er is een glashelder kantelpunt in de levenscyclus van elk softwareproduct, en dat is niet de officiële lanceringsdatum. Het is het moment waarop de allereerste echte betaling binnenkomt.
 
-Vóór dat moment kost een programmeerfout u niet meer dan een welgemeend excuus. Na dat moment kost een fout echt geld — soms het geld van uw klant, soms uw eigen spaargeld, en af en toe dat van de betalingsverwerker, met strenge contractuele en juridische verplichtingen als gevolg. Uw product wordt bovendien plotseling interessant voor een categorie kwaadwillenden die eerder geen enkele aandacht aan u schonk, want alles waar geld doorheen stroomt is het aftasten waard.
+Vóór dat moment kost een programmeerfout u niet meer dan een welgemeend excuus. Na dat moment kost een fout echt geld - soms het geld van uw klant, soms uw eigen spaargeld, en af en toe dat van de betalingsverwerker, met strenge contractuele en juridische verplichtingen als gevolg. Uw product wordt bovendien plotseling interessant voor een categorie kwaadwillenden die eerder geen enkele aandacht aan u schonk, want alles waar geld doorheen stroomt is het aftasten waard.
 
 Dit vereist geen voltijds securityteam. Het vereist dat u begrijpt welke vier fundamentele zaken er technisch veranderen.
 
@@ -30,7 +30,7 @@ Dit vereist geen voltijds securityteam. Het vereist dat u begrijpt welke vier fu
 
 De allereerste regel, en degene die al het overige beheerbaar houdt:
 
-Moderne betalingsproviders (zoals Stripe, Mollie of Adyen) zijn zo ontworpen dat creditcardgegevens en gevoelige bankdata rechtstreeks vanuit de browser van de consument naar de betaalprovider worden verzonden, zonder ooit door uw backend of database te reizen. Uw applicatie ontvangt uitsluitend een geabstraheerd token en een statusbevestiging. Deze architectuur is de enige reden waarom een klein softwareteam van twee personen überhaupt online betalingen kan accepteren — het zelf verwerken of aanraken van creditcardgegevens trekt u binnen het loodzware PCI-DSS compliance-regime, wat voor een vroege startup volstrekt onhaalbaar is.
+Moderne betalingsproviders (zoals Stripe, Mollie of Adyen) zijn zo ontworpen dat creditcardgegevens en gevoelige bankdata rechtstreeks vanuit de browser van de consument naar de betaalprovider worden verzonden, zonder ooit door uw backend of database te reizen. Uw applicatie ontvangt uitsluitend een geabstraheerd token en een statusbevestiging. Deze architectuur is de enige reden waarom een klein softwareteam van twee personen überhaupt online betalingen kan accepteren - het zelf verwerken of aanraken van creditcardgegevens trekt u binnen het loodzware PCI-DSS compliance-regime, wat voor een vroege startup volstrekt onhaalbaar is.
 
 De regel is daarom absoluut: bouw nooit uw eigen formulier voor betaalkaarten, log nooit creditcardnummers of CVC-codes, sla kaartgegevens nooit "tijdelijk" op in een sessie, en accepteer kaartgegevens nooit via e-mail of telefoon om ze handmatig in te tikken. Gebruik altijd de officiële gehoste checkoutpagina's of ingesloten componenten (zoals Stripe Elements of Mollie Components). AI-codegeneratoren doen dit meestal standaard goed als u vraagt om een betaalkoppeling; het reële risico ontstaat later, wanneer iemand vraagt om een "mooiere checkout op maat" en een onervaren ontwikkelaar per ongeluk de kaartnummers zelf gaat afvangen.
 
@@ -38,7 +38,7 @@ Wat u wél veilig mag opslaan: het betalingstoken, de laatste vier cijfers van d
 
 ## De Webhook Is Het Zwakste Punt
 
-Uw payment provider informeert uw applicatie over geslaagde transacties door een geautomatiseerd webhook-verzoek naar een endpoint op uw server te sturen. Die notificatie activeert het account van de klant, markeert een factuur als voldaan of zet een bestelling in gang — wat dit specifieke endpoint het meest waardevolle doelwit in uw hele applicatie maakt.
+Uw payment provider informeert uw applicatie over geslaagde transacties door een geautomatiseerd webhook-verzoek naar een endpoint op uw server te sturen. Die notificatie activeert het account van de klant, markeert een factuur als voldaan of zet een bestelling in gang - wat dit specifieke endpoint het meest waardevolle doelwit in uw hele applicatie maakt.
 
 Er moeten drie technische garanties gelden:
 
@@ -46,7 +46,7 @@ Er moeten drie technische garanties gelden:
 
 **Inkomende events moeten strikt idempotent worden verwerkt.** Payment providers sturen notificaties opnieuw bij vertraging of netwerkfouten (retries), en dat is normaal gedrag. Sla het unieke ID van elk verwerkt event op en negeer herhaalde berichten. Doet u dat niet, dan leidt één betaling onbedoeld tot twee abonnementen, twee facturen of dubbele leveringen.
 
-**Het endpoint moet permanent bereikbaar zijn.** Een webhook-endpoint op een serverloze functie die "in slaap valt" (cold start time-outs) kan berichten missen. Het gevolg: een klant die keurig heeft betaald maar wiens account geblokkeerd blijft — de storing die de meest woedende supportberichten oplevert die u ooit zult ontvangen.
+**Het endpoint moet permanent bereikbaar zijn.** Een webhook-endpoint op een serverloze functie die "in slaap valt" (cold start time-outs) kan berichten missen. Het gevolg: een klant die keurig heeft betaald maar wiens account geblokkeerd blijft - de storing die de meest woedende supportberichten oplevert die u ooit zult ontvangen.
 
 Vertrouw daarnaast nooit op bedragen of abonnementsvormen die vanuit de browser worden meegestuurd. Een gebruiker kan elke meegestuurde parameter in de frontend manipuleren; het enige leidende bedrag is het bedrag dat uw backend direct aan de betaalprovider heeft doorgegeven.
 
@@ -56,7 +56,7 @@ Zodra er geld stroomt, ontstaat er ook een intern bedrijfsrisico.
 
 Iedereen binnen uw team die een terugbetaling kan initiëren, kan geld wegsluizen. Iedereen die een abonnement handmatig kan upgraden, kan gratis toegang weggeven. Iedereen die een factuur kan bewerken, kan officiële boekhoudkundige stukken wijzigen. In een tweekoppig team voelt dit theoretisch; het houdt direct op theoretisch te zijn zodra u een externe freelancer, een parttime helpdeskmedewerker of een externe boekhouder inschakelt.
 
-Vier overzichtelijke maatregelen: Beperk de rechten om financiële mutaties uit te voeren strikt tot bevoegde personen. Log elke financiële handeling met actor, bedrag, reden en tijdstempel in een audittabel die niet kan worden gewijzigd. Maak een toelichtingsveld verplicht bij refunds — dat verandert menselijk gedrag aanzienlijk. En stel een drempelbedrag in waarboven een tweede goedkeuring vereist is.
+Vier overzichtelijke maatregelen: Beperk de rechten om financiële mutaties uit te voeren strikt tot bevoegde personen. Log elke financiële handeling met actor, bedrag, reden en tijdstempel in een audittabel die niet kan worden gewijzigd. Maak een toelichtingsveld verplicht bij refunds - dat verandert menselijk gedrag aanzienlijk. En stel een drempelbedrag in waarboven een tweede goedkeuring vereist is.
 
 Deze logboeken zijn bovendien precies wat uw accountant aan het einde van het boekjaar opvraagt, waardoor de investering zich dubbel uitbetaalt.
 
@@ -68,7 +68,7 @@ Twee veelvoorkomende patronen waar elke SaaS-oprichter van op de hoogte moet zij
 
 **Chargebacks (terugboekingen).** Een kaarthouder betwist een afschrijving bij zijn bank en het geld wordt met boete ingehouden. Het winnen van een chargeback vereist hard bewijs: wat is gekocht, wanneer, door welk account, vanaf welk IP-adres en wanneer is de dienst daadwerkelijk gebruikt. Als uw database dit logt, zijn disputen te winnen; zo niet, dan bent u uw geld én een boete kwijt.
 
-Voor periodieke abonnementen geldt daarnaast een strakke dunning-procedure: wat gebeurt er als een automatische incasso of creditcardbetaling mislukt? Een vastgelegde volgorde — opnieuw proberen na 3 dagen, e-mail sturen, toegang beperken, opzeggen — voorkomt zowel de trouwe klant die onaangekondigd buitengesloten raakt als de wanbetaler die vier maanden gratis blijft inloggen.
+Voor periodieke abonnementen geldt daarnaast een strakke dunning-procedure: wat gebeurt er als een automatische incasso of creditcardbetaling mislukt? Een vastgelegde volgorde - opnieuw proberen na 3 dagen, e-mail sturen, toegang beperken, opzeggen - voorkomt zowel de trouwe klant die onaangekondigd buitengesloten raakt als de wanbetaler die vier maanden gratis blijft inloggen.
 
 ## Facturen, Btw en Wettelijke Bewaarplicht
 
@@ -82,7 +82,7 @@ De beveiligingskant: facturen moeten onveranderlijk (immutable) zijn. Een factuu
 
 Zes stappen die samen minder dan een uur kosten:
 
-Kaartgegevens raken uw server nooit — controleer in de netwerktab van uw browser wat de checkout verzendt. Het webhook-endpoint verifieert cryptografische handtekeningen — test dit door een ongetekend cURL-verzoek te sturen en bevestig dat het geweigerd wordt met HTTP 400/401. Webhook-events worden ontdubbeld — test dit door een event opnieuw af te spelen vanuit het dashboard van uw payment provider. Prijzen en plannen worden berekend op de server, niet overgenomen uit de frontend. Financiële handelingen zijn gelogd in een audit-trail. En een afgebroken of mislukte betaling leidt tot de juiste status in uw app, getest door een betaling halverwege te annuleren.
+Kaartgegevens raken uw server nooit - controleer in de netwerktab van uw browser wat de checkout verzendt. Het webhook-endpoint verifieert cryptografische handtekeningen - test dit door een ongetekend cURL-verzoek te sturen en bevestig dat het geweigerd wordt met HTTP 400/401. Webhook-events worden ontdubbeld - test dit door een event opnieuw af te spelen vanuit het dashboard van uw payment provider. Prijzen en plannen worden berekend op de server, niet overgenomen uit de frontend. Financiële handelingen zijn gelogd in een audit-trail. En een afgebroken of mislukte betaling leidt tot de juiste status in uw app, getest door een betaling halverwege te annuleren.
 
 Die laatste test is degene die vrijwel iedereen overslaat, en degene die steevast onthult dat een klant wél geld kan overmaken maar vervolgens met een lege pagina blijft zitten.
 
@@ -106,7 +106,7 @@ Voor een applicatie die betalingen accepteert, pakt LaunchStudio dit aan als een
 
 Onze engineers zijn afkomstig van Manifera: elf jaar ervaring in het ontwikkelen en beveiligen van financiële en enterprise systemen voor toonaangevende klanten zoals Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad.
 
-[Vertel ons hoe uw applicatie momenteel betalingen verwerkt](https://launchstudio.eu/nl/#contact) voor een gerichte audit van uw transactieveiligheid — doorgaans binnen één werkdag — of bekijk ons [Launch Ready pakket](https://launchstudio.eu/nl/#packages).
+[Vertel ons hoe uw applicatie momenteel betalingen verwerkt](https://launchstudio.eu/nl/#contact) voor een gerichte audit van uw transactieveiligheid - doorgaans binnen één werkdag - of bekijk ons [Launch Ready pakket](https://launchstudio.eu/nl/#packages).
 
 ## Echt voorbeeld
 
@@ -116,7 +116,7 @@ Bas Tolhuizen bouwde Lesgeld met Lovable: software voor het innen van lesgelden 
 
 De betaalkoppeling was tijdens een eerdere ontwikkelsessie gegenereerd en functioneerde ogenschijnlijk naar behoren. Het webhook-endpoint accepteerde echter elk inkomend HTTP-verzoek zonder de handtekening van de payment provider te verifiëren.
 
-Iemand ontdekte het webhook-adres — dat een voor de hand liggend pad volgde — en stuurde handmatig een vervalst `payment.succeeded` JSON-verzoek. Het werkte direct. Gedurende elf dagen werden er 23 organisatie-accounts geactiveerd zonder dat er ooit één euro was betaald. Een aantal van die accounts werd direct gebruikt om echt lesgeld van ouders te incasseren, met het platform van Bas als tussenpersoon.
+Iemand ontdekte het webhook-adres - dat een voor de hand liggend pad volgde - en stuurde handmatig een vervalst `payment.succeeded` JSON-verzoek. Het werkte direct. Gedurende elf dagen werden er 23 organisatie-accounts geactiveerd zonder dat er ooit één euro was betaald. Een aantal van die accounts werd direct gebruikt om echt lesgeld van ouders te incasseren, met het platform van Bas als tussenpersoon.
 
 Bas ontdekte het probleem pas tijdens de maandelijkse financiële reconciliatie, toen de bankrekening niet overeenkwam met de database.
 
@@ -127,9 +127,9 @@ De frauduleuze accounts werden per direct geblokkeerd en getroffen ouders werden
 **Resultaat:** De maandelijkse aansluiting klopt sindsdien tot op de cent, en de vier dubbel gefactureerde sportclubs kregen hun onterecht geïncasseerde gelden netjes teruggestort.
 
 > *"Iedereen die het adres van dat ene endpoint kende, kon mijn applicatie vertellen dat er betaald was. Drieëntwintig accounts deden dat, en inden vervolgens echt geld via mijn platform."*
-> — **Bas Tolhuizen, Oprichter, Lesgeld (Roermond)**
+> - **Bas Tolhuizen, Oprichter, Lesgeld (Roermond)**
 
-**Kosten & Doorlooptijd:** €4.300 (webhook-handtekeningverificatie, historische reconciliatie, idempotency, server-side prijsbepaling, fraudefilters, financiële audit-trail, dunning-cyclus) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** €4.300 (webhook-handtekeningverificatie, historische reconciliatie, idempotency, server-side prijsbepaling, fraudefilters, financiële audit-trail, dunning-cyclus) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 

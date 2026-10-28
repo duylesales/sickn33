@@ -1,4 +1,4 @@
-🚩 Selin's "full-service" bureau miste de backend volledig — Selin Kaya, oprichter van RestSlate (gebouwd met **Lovable**), ontdekte pas dat RLS uitstond en betalingswebhooks ontbraken toen een zakelijke klant haar app controleerde vóór ondertekening. 🧠
+🚩 Selin's "full-service" bureau miste de backend volledig - Selin Kaya, oprichter van RestSlate (gebouwd met **Lovable**), ontdekte pas dat RLS uitstond en betalingswebhooks ontbraken toen een zakelijke klant haar app controleerde vóór ondertekening. 🧠
 
 Als het team dat uw betalings- en databeveiliging regelt hetzelfde team is dat uw advertentiecampagnes beheert, loopt u het risico dat kritieke kwetsbaarheden onopgemerkt blijven.
 
@@ -12,7 +12,7 @@ Als het team dat uw betalings- en databeveiliging regelt hetzelfde team is dat u
 
 Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering problemen al sinds 2014 op via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Selin sloot alsnog haar zakelijke deal: Selin's app slaagde twee weken later voor de security review en tekende een jaarcontract voor 200 medewerkers. (€2.700 (Launch & Grow Pakket) — live in 10 werkdagen). 🚀
+Selin sloot alsnog haar zakelijke deal: Selin's app slaagde twee weken later voor de security review en tekende een jaarcontract voor 200 medewerkers. (€2.700 (Launch & Grow Pakket) - live in 10 werkdagen). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/launchstudio-vs-marketing-agency-also-does-dev
 

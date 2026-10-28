@@ -113,13 +113,13 @@ Zorg ervoor dat u vóór de lancering beschikt over:
 
 Wees op uw hoede voor deze valse positieven die oprichters laten denken dat ze er klaar voor zijn, terwijl ze dat niet zijn:
 
-- **"Het ziet er professioneel uit"** — Een mooie gebruikersinterface staat niet gelijk aan productiegereedheid. AI-tools creëren verbluffende interfaces en laten tegelijkertijd cruciale gaten in de infrastructuur achter.
+- **"Het ziet er professioneel uit"** - Een mooie gebruikersinterface staat niet gelijk aan productiegereedheid. AI-tools creëren verbluffende interfaces en laten tegelijkertijd cruciale gaten in de infrastructuur achter.
 
-- **"Mijn vrienden zeggen dat het geweldig werkt"** — Vrienden zijn te aardig en te bekend met uw product om u eerlijke feedback over de bruikbaarheid te geven. Test met vreemden uit uw doelgroep.
+- **"Mijn vrienden zeggen dat het geweldig werkt"** - Vrienden zijn te aardig en te bekend met uw product om u eerlijke feedback over de bruikbaarheid te geven. Test met vreemden uit uw doelgroep.
 
-- **"Ik heb alles getest en het werkt"** — Je hebt het gelukkige pad getest. Je hebt niet getest wat er gebeurt als er iets misgaat – en dat is precies wat de productie blootlegt.
+- **"Ik heb alles getest en het werkt"** - Je hebt het gelukkige pad getest. Je hebt niet getest wat er gebeurt als er iets misgaat – en dat is precies wat de productie blootlegt.
 
-- **"Ik ben al maanden aan het bouwen"** — Bestede tijd staat niet gelijk aan gereedheid. Een project van 3 maanden zonder beveiliging is minder klaar dan een project van 2 weken met de juiste verharding.
+- **"Ik ben al maanden aan het bouwen"** - Bestede tijd staat niet gelijk aan gereedheid. Een project van 3 maanden zonder beveiliging is minder klaar dan een project van 2 weken met de juiste verharding.
 
 ## Het gereedheidsbeslissingskader
 
@@ -162,7 +162,7 @@ Mia werkte samen met **LaunchStudio (door Manifera)**. Het technische team liet 
 
 **Resultaat:** Mia's gereedheidsscore bereikte 7/7. Ze lanceerde met succes haar platform, dat nu 2.500 actieve gebruikers ondersteunt zonder incidenten met gegevensblootstelling.
 
-**Kosten en tijdlijn:** € 1.600 (lanceringspakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.600 (lanceringspakket) - productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
 

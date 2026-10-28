@@ -21,24 +21,24 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-When an AI coding assistant writes an API route, the error handling usually looks something like this: catch the error, return it as JSON with a 500 status. It is helpful during development — you see exactly what went wrong in the browser. It is also one of the most underrated issues in AI generated code security, because in production the same helpfulness is extended to everyone, including people looking for a way in.
+When an AI coding assistant writes an API route, the error handling usually looks something like this: catch the error, return it as JSON with a 500 status. It is helpful during development - you see exactly what went wrong in the browser. It is also one of the most underrated issues in AI generated code security, because in production the same helpfulness is extended to everyone, including people looking for a way in.
 
 ## What a Raw Error Can Reveal
 
 Depending on the stack and the failure, errors returned to the browser can contain:
 
-- **Stack traces** with file paths, framework versions and function names — a map of your codebase.
-- **SQL statements and database errors**, revealing table names, column names and constraints — and sometimes confirming that input reaches a query unsanitised.
+- **Stack traces** with file paths, framework versions and function names - a map of your codebase.
+- **SQL statements and database errors**, revealing table names, column names and constraints - and sometimes confirming that input reaches a query unsanitised.
 - **Connection strings or hostnames** for databases and internal services.
 - **Responses from third-party providers**, which can include account identifiers, request IDs, and in poorly designed cases, parts of API keys or configuration.
-- **Validation details** that reveal what exists — "user with this email already exists," "coupon code expired" — enabling enumeration.
+- **Validation details** that reveal what exists - "user with this email already exists," "coupon code expired" - enabling enumeration.
 - **Other users' data**, when an error message includes the record that caused a conflict.
 
-Each item on its own may seem minor. Together they turn a blind guess into an informed attack. The OWASP category for this — improper error handling, part of security misconfiguration — exists because it so reliably helps attackers.
+Each item on its own may seem minor. Together they turn a blind guess into an informed attack. The OWASP category for this - improper error handling, part of security misconfiguration - exists because it so reliably helps attackers.
 
 ## Why AI Generated Code Security Suffers From This Pattern
 
-Three reasons. First, returning the error message is the most helpful behaviour in the context the tool can see — your development session. Second, many examples and tutorials the models learned from do exactly this for brevity. Third, when you ask the tool to fix a bug, it often adds more error detail to help you diagnose, and that detail stays.
+Three reasons. First, returning the error message is the most helpful behaviour in the context the tool can see - your development session. Second, many examples and tutorials the models learned from do exactly this for brevity. Third, when you ask the tool to fix a bug, it often adds more error detail to help you diagnose, and that detail stays.
 
 There is a related pattern in frameworks: development mode shows detailed error pages, production mode hides them. AI-built apps are sometimes deployed in development mode, or custom handlers bypass the framework's production behaviour.
 
@@ -57,11 +57,11 @@ You can check your own app in about fifteen minutes:
 Safe error handling does not mean less information for you. It means information goes to the right place:
 
 - **For users:** a short, useful message ("Something went wrong saving your booking. Please try again.") and a reference ID.
-- **For you:** the full error — stack trace, context, request details (minus secrets and sensitive personal data) — sent to an error-tracking service and logs, tagged with the same reference ID.
+- **For you:** the full error - stack trace, context, request details (minus secrets and sensitive personal data) - sent to an error-tracking service and logs, tagged with the same reference ID.
 
 When a user reports a problem, they give you the reference, and you find the full details instantly. You lose nothing in debuggability and give attackers nothing.
 
-In practice this means a central error handler for API routes that maps known errors (validation failures, not found, not permitted) to clear, safe responses with appropriate status codes, and maps everything else to a generic 500 with a reference ID — plus careful scrubbing so secrets and personal data are not written to logs either.
+In practice this means a central error handler for API routes that maps known errors (validation failures, not found, not permitted) to clear, safe responses with appropriate status codes, and maps everything else to a generic 500 with a reference ID - plus careful scrubbing so secrets and personal data are not written to logs either.
 
 ## The Enumeration Details
 
@@ -74,7 +74,7 @@ Some messages are useful to users and useful to attackers. Common examples:
 
 ## Don't Forget the Logs Themselves
 
-Moving errors out of responses and into logs is right — but logs can leak too. AI-generated code often logs entire request bodies, which may include passwords, tokens, payment details or health information. Error-tracking services then store them. Scrub sensitive fields before logging, and restrict who can access logs.
+Moving errors out of responses and into logs is right - but logs can leak too. AI-generated code often logs entire request bodies, which may include passwords, tokens, payment details or health information. Error-tracking services then store them. Scrub sensitive fields before logging, and restrict who can access logs.
 
 ## A Central Error Handler, Written Out
 
@@ -101,7 +101,7 @@ export function handleError(err: unknown) {
 }
 ```
 
-Known, expected errors — validation failures, not found, not permitted — are thrown as `AppError` with a safe message and appropriate status. Everything else becomes a generic 500 with a reference, while the full details go to error tracking. Every route handler wraps its logic in a try/catch that calls `handleError`, or a framework middleware does it for all routes.
+Known, expected errors - validation failures, not found, not permitted - are thrown as `AppError` with a safe message and appropriate status. Everything else becomes a generic 500 with a reference, while the full details go to error tracking. Every route handler wraps its logic in a try/catch that calls `handleError`, or a framework middleware does it for all routes.
 
 ## Choosing Status Codes That Reveal Little
 
@@ -140,7 +140,7 @@ Add tests that assert error responses do not contain sensitive content. For exam
 
 ## Helping Users and Support at the Same Time
 
-Good error handling improves support, not just security. When the user sees "Something went wrong (ref 3f9a2c1b)," support can find the exact error in seconds. Pair this with user-friendly messages for common failures — "Your session expired, please log in again," "This file is too large (max 10 MB)" — and many support tickets never get written at all.
+Good error handling improves support, not just security. When the user sees "Something went wrong (ref 3f9a2c1b)," support can find the exact error in seconds. Pair this with user-friendly messages for common failures - "Your session expired, please log in again," "This file is too large (max 10 MB)" - and many support tickets never get written at all.
 
 ## A Pre-Launch Error Audit
 
@@ -152,7 +152,7 @@ Leaks are not limited to API responses. Frontend code generated by AI tools some
 
 ## Third-Party Error Responses
 
-When your app calls an external service and it fails, the service's error response may contain account identifiers, internal request IDs, rate-limit details or fragments of your request. Never pass these through to users. Map external failures to your own error types — "payment provider unavailable, please try again," "address lookup failed" — and log the raw details privately. This also makes your app more resilient to changes in providers' error formats.
+When your app calls an external service and it fails, the service's error response may contain account identifiers, internal request IDs, rate-limit details or fragments of your request. Never pass these through to users. Map external failures to your own error types - "payment provider unavailable, please try again," "address lookup failed" - and log the raw details privately. This also makes your app more resilient to changes in providers' error formats.
 
 ## Timing and Behaviour Leaks
 
@@ -174,16 +174,16 @@ If your self-audit turned up a stack trace, [plan a free 15-minute intro call](h
 
 Fleur Verhoef, a logistics analyst in Bussum, built Pakketpunt with Cursor: a network of local shops acting as parcel pickup points, with an app where recipients see which shop holds their parcel and shops scan parcels in and out. Sixty shops in the Gooi region participated.
 
-A shop owner's nephew, studying cybersecurity, sent Fleur a friendly report. By submitting malformed tracking codes, he had received errors containing full SQL statements with table and column names, the internal hostname of the Postgres database, and stack traces showing library versions. A failed request to the carrier's API returned the carrier's full error response, including Pakketpunt's account identifier. The login form distinguished unknown emails from wrong passwords, and the error-tracking service stored full request bodies — including shop staff passwords submitted at login.
+A shop owner's nephew, studying cybersecurity, sent Fleur a friendly report. By submitting malformed tracking codes, he had received errors containing full SQL statements with table and column names, the internal hostname of the Postgres database, and stack traces showing library versions. A failed request to the carrier's API returned the carrier's full error response, including Pakketpunt's account identifier. The login form distinguished unknown emails from wrong passwords, and the error-tracking service stored full request bodies - including shop staff passwords submitted at login.
 
-Over four business days, LaunchStudio's engineers introduced a central error handler with safe messages and reference IDs, moved detailed errors to the error tracker with scrubbing of passwords, tokens and personal data, removed stored passwords from the tracker's history and forced a password reset for affected staff, unified login and reset messages, confirmed production configuration, and — since SQL appearing in errors suggested it — reviewed the tracking-code lookup, which turned out to use parameterised queries safely.
+Over four business days, LaunchStudio's engineers introduced a central error handler with safe messages and reference IDs, moved detailed errors to the error tracker with scrubbing of passwords, tokens and personal data, removed stored passwords from the tracker's history and forced a password reset for affected staff, unified login and reset messages, confirmed production configuration, and - since SQL appearing in errors suggested it - reviewed the tracking-code lookup, which turned out to use parameterised queries safely.
 
 **Result:** Pakketpunt's error responses now reveal nothing beyond a friendly message and a reference. Support is faster, because shop staff quote the reference and Fleur finds the full error within seconds. The nephew has since become Pakketpunt's part-time security tester.
 
 > *"My app was so helpful when it failed that it told a stranger how my database was built. Now it's helpful to me instead."*
-> — **Fleur Verhoef, Founder, Pakketpunt (Bussum)**
+> - **Fleur Verhoef, Founder, Pakketpunt (Bussum)**
 
-**Cost & Timeline:** €980 (error handling, log scrubbing, enumeration fixes and configuration review) — completed in 4 business days.
+**Cost & Timeline:** €980 (error handling, log scrubbing, enumeration fixes and configuration review) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

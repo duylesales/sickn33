@@ -6,7 +6,7 @@
 ❌ **Communication & Governance Gaps:** Disjointed engineering handoffs lead to missed deadlines and misaligned business expectations.
 
 **The Manifera Solution:**
-✅ **Specific, reasoned pushback:** not just disagreement — "this approach will cost X in future maintainability" rather than a vague "we don't recommend that.".
+✅ **Specific, reasoned pushback:** not just disagreement - "this approach will cost X in future maintainability" rather than a vague "we don't recommend that.".
 ✅ **Proactive flagging of risk:** before it becomes a problem, not just responsive damage control after something breaks.
 ✅ **Willingness to say "that will cost more than you think" or "that will take longer than you're hoping":** even when it's an uncomfortable thing to tell a client mid-relationship.
 

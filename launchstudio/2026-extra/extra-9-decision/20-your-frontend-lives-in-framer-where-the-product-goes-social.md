@@ -1,9 +1,9 @@
 🚨 "I'd convinced myself the answer was to throw away the site I loved." Iris spent five weeks forcing her coaching programme into a Framer members area. 😳
 
-A page-builder publishes; it doesn't keep secrets — the moment your product needs to, no plugin helps: 🧠
+A page-builder publishes; it doesn't keep secrets - the moment your product needs to, no plugin helps: 🧠
 
 ❌ Clients needed to see only their own entries; the gating told members apart, nothing finer
-❌ Coaches needed their own clients and nobody else's — no membership feature writes that rule
+❌ Coaches needed their own clients and nobody else's - no membership feature writes that rule
 ❌ She was considering rebuilding the marketing site too, losing a design she loved
 ❌ Five weeks went into fighting a feature toward a job it was never built for
 

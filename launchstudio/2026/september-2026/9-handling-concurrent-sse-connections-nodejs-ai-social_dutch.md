@@ -1,4 +1,4 @@
-⚡ Mason, een productmanager, bouwde een klantportaal met **Cursor** — en zag zijn realtime AI-typemachinestream haperen doordat Nginx-proxybuffering tekst pas na 15 seconden in grote blokken weergaf. 💻
+⚡ Mason, een productmanager, bouwde een klantportaal met **Cursor** - en zag zijn realtime AI-typemachinestream haperen doordat Nginx-proxybuffering tekst pas na 15 seconden in grote blokken weergaf. 💻
 
 Het gelijktijdig openhouden van duizenden langdurige Server-Sent Events (SSE) verbindingen put de Linux bestandsdescriptorlimieten (`ulimit -n`) snel uit en leidt tot servercrashes onder belasting. 🧠
 
@@ -12,7 +12,7 @@ Het gelijktijdig openhouden van duizenden langdurige Server-Sent Events (SSE) ve
 
 Bij **LaunchStudio** ontwerpen we sinds 2014 realtime, hoog-gelijktijdige Node.js streamingsystemen via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Masons tekststream werd vloeiend gerenderd in realtime, wat zorgde voor een directe typemachine-ervaring voor alle actieve gebruikers. (€950 (SSE Configuration Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Masons tekststream werd vloeiend gerenderd in realtime, wat zorgde voor een directe typemachine-ervaring voor alle actieve gebruikers. (€950 (SSE Configuration Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Schaal uw SSE-datastromen: https://launchstudio.eu/nl/blog/handling-concurrent-sse-connections-nodejs-ai
 

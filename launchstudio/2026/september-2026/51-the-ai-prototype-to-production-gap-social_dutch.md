@@ -1,6 +1,6 @@
-🚨 Isaac, een HR-tech oprichter, bouwde een cv-beoordelingstool met **Cursor**. Het prototype had geen database RLS-policies — elke geauthenticeerde gebruiker kon potentieel kandidatenrecords van andere bedrijven opvragen. 🔓
+🚨 Isaac, een HR-tech oprichter, bouwde een cv-beoordelingstool met **Cursor**. Het prototype had geen database RLS-policies - elke geauthenticeerde gebruiker kon potentieel kandidatenrecords van andere bedrijven opvragen. 🔓
 
-Een AI-prototype 80% betrouwbaar maken is eenvoudig; de overige 20% — beveiliging, toegangscontrole, productiehardening — is waar de meeste AI-native oprichters vastlopen. 🧠
+Een AI-prototype 80% betrouwbaar maken is eenvoudig; de overige 20% - beveiliging, toegangscontrole, productiehardening - is waar de meeste AI-native oprichters vastlopen. 🧠
 
 ❌ Geen Row-Level Security waardoor data niet per organisatie wordt afgeschermd
 ❌ API-sleutels hardcoded in de client-side code, zichtbaar voor iedereen die DevTools opent
@@ -12,7 +12,7 @@ Een AI-prototype 80% betrouwbaar maken is eenvoudig; de overige 20% — beveilig
 
 Bij **LaunchStudio** versterken we sinds 2014 via Manifera exact dit soort productiebeveiliging voor enterprise-klanten zoals Vodafone en TNO. 🛡️
 
-Isaac's browserwaarschuwingen en datalekrisico's verdwenen en de applicatie was volledig productieklaar. (€1.850 (Production Readiness Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Isaac's browserwaarschuwingen en datalekrisico's verdwenen en de applicatie was volledig productieklaar. (€1.850 (Production Readiness Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij de kloof overbruggen: https://launchstudio.eu/nl/blog/the-ai-prototype-to-production-gap
 

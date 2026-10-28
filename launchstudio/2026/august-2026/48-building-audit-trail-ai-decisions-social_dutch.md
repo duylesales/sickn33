@@ -1,4 +1,4 @@
-🔥 Sadie bouwde een prototype met **Lovable** — Sadie, een winkeleigenaar, bouwde een automatische besteltool, maar kon niet achterhalen waarom de AI foutieve orders plaatste omdat prompts en context niet werden gelogd. 🧠
+🔥 Sadie bouwde een prototype met **Lovable** - Sadie, een winkeleigenaar, bouwde een automatische besteltool, maar kon niet achterhalen waarom de AI foutieve orders plaatste omdat prompts en context niet werden gelogd. 🧠
 
 Het bouwen van verklaarbare AI (Explainability) met onwijzigbare audittrails en RAG-bronvermeldingen is essentieel voor enterprise compliance onder de EU AI Act.
 
@@ -12,7 +12,7 @@ Het bouwen van verklaarbare AI (Explainability) met onwijzigbare audittrails en 
 
 Bij **LaunchStudio** lossen we exact dit type audit-architectuur en RAG-transparantievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Sadies bestelplatform werd volledig transparant: Fouten konden direct worden geanalyseerd en verholpen, wat €5.000 aan onjuiste bestellingen bespaarde. (€1.600 (Audit Logging Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Sadies bestelplatform werd volledig transparant: Fouten konden direct worden geanalyseerd en verholpen, wat €5.000 aan onjuiste bestellingen bespaarde. (€1.600 (Audit Logging Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/building-audit-trail-ai-decisions
 

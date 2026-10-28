@@ -13,7 +13,7 @@ Wanneer een oprichter op zoek gaat naar een ontwikkelpartner via platforms als U
 
 ## Alarmsignaal 1: De Offerte Bevat Geen Gespecificeerde Onderdelen (Line Items)
 
-Als een bureau u een offerte stuurt met één enkel totaalbedrag en een vage omschrijving zoals "Ontwikkeling van AI SaaS Platform — € 18.000", wijst u dit direct af. Een professionele offerte specificeert elk onderdeel: database-architectuur, authenticatiestromen, Stripe-webhook implementatie, API-validatie, CI/CD-pipeline en testdekking, inclusief de bijbehorende acceptatiecriteria. Zonder gespecificeerde line items heeft u juridisch geen enkel houvast over wat er wel en niet wordt opgeleverd.
+Als een bureau u een offerte stuurt met één enkel totaalbedrag en een vage omschrijving zoals "Ontwikkeling van AI SaaS Platform - € 18.000", wijst u dit direct af. Een professionele offerte specificeert elk onderdeel: database-architectuur, authenticatiestromen, Stripe-webhook implementatie, API-validatie, CI/CD-pipeline en testdekking, inclusief de bijbehorende acceptatiecriteria. Zonder gespecificeerde line items heeft u juridisch geen enkel houvast over wat er wel en niet wordt opgeleverd.
 
 ## Alarmsignaal 2: Ze Eisen Dat de Frontend Vanaf Nul Wordt Herbouwd
 
@@ -25,7 +25,7 @@ Tijdens het verkoopgesprek spreekt u met een welbespraakte accountmanager of een
 
 ## Alarmsignaal 4: Recensies Die U Niet Onafhankelijk Kunt Verifiëren
 
-Vage getuigenissen met alleen een voornaam ("John D. — Geweldige samenwerking!") zijn waardeloos. Een betrouwbare partner toont verifieerbare cases van echte oprichters, inclusief bedrijfsnamen en live links. Vraag gerust om een 10-minuten referentiegesprek met een eerdere klant.
+Vage getuigenissen met alleen een voornaam ("John D. - Geweldige samenwerking!") zijn waardeloos. Een betrouwbare partner toont verifieerbare cases van echte oprichters, inclusief bedrijfsnamen en live links. Vraag gerust om een 10-minuten referentiegesprek met een eerdere klant.
 
 ## Alarmsignaal 5: Betalingsvoorwaarden Die Hun Risico Tot Nul Reduceren
 
@@ -123,7 +123,7 @@ In tegenstelling tot traditionele dev-shops die verdwijnen achter ticket-systeme
 
 Door te kiezen voor de transparante, gestructureerde aanpak van LaunchStudio investeert u in een technologie-fundament dat bestand is tegen de eisen van veeleisende zakelijke klanten. Wij leveren robuuste software die uw reputatie versterkt en uw startup op voorsprong zet in de markt.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging - waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 
 ## Echt voorbeeld
 
@@ -135,7 +135,7 @@ LaunchStudio auditte de bestaande Bolt-codebase, ontdekte dat voertuiglocaties g
 
 **Resultaat:** Daniel lanceerde zijn platform binnen 9 werkdagen en onboardde direct zijn eerste vier transportbedrijven.
 
-**Investering & Doorlooptijd:** € 2.800 (Launch & Grow Pakket) — 9 werkdagen.
+**Investering & Doorlooptijd:** € 2.800 (Launch & Grow Pakket) - 9 werkdagen.
 
 ---
 

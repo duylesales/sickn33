@@ -29,7 +29,7 @@ Een luchthaven met reservecapaciteit absorbeert verstoring. Vertragingen planten
 
 **Alles is gekoppeld.** Baanallocatie raakt taxitijd, dat raakt gatebezetting, dat raakt turnaround, dat raakt vertrek, dat raakt de volgende aankomst die die gate nodig had. Elk onderdeel geïsoleerd optimaliseren levert per saldo slechtere uitkomsten op.
 
-**Verstoringsherstel telt zwaarder dan nominale planning.** Een plan voor een normale dag is relatief eenvoudig. Beslissen wat te doen wanneer een baan twee uur sluit, weer de capaciteit verlaagt, of een bemanning uitvalt — daar zit de waarde.
+**Verstoringsherstel telt zwaarder dan nominale planning.** Een plan voor een normale dag is relatief eenvoudig. Beslissen wat te doen wanneer een baan twee uur sluit, weer de capaciteit verlaagt, of een bemanning uitvalt - daar zit de waarde.
 
 **Milieugrenzen zijn harde randvoorwaarden, geen voorkeuren.** Geluidsruimte en emissieverplichtingen zijn juridisch bindend. Een schema dat operationeel efficiënt zou zijn maar de geluidsruimte schendt, is onbruikbaar.
 
@@ -49,7 +49,7 @@ Een luchthaven met reservecapaciteit absorbeert verstoring. Vertragingen planten
 
 **Luchtverkeersmanagement.** Capaciteitsvoorspelling, aankomstsequencing, conflictdetectie, en steeds meer trajectgebaseerde operaties.
 
-**Vracht.** Capaciteitstoewijzing tussen buikruimte en vrachttoestellen, opbouwplanning, en de versproblemen uit het logistiekstuk — bloemen en groente gaan per vliegtuig.
+**Vracht.** Capaciteitstoewijzing tussen buikruimte en vrachttoestellen, opbouwplanning, en de versproblemen uit het logistiekstuk - bloemen en groente gaan per vliegtuig.
 
 **Veiligheidsanalyse.** Incidentrapporten, vluchtdata en onderhoudsdossiers analyseren om risico te vinden voordat het zich manifesteert. Tekstintensief, statistisch zorgvuldig, en cultureel centraal.
 
@@ -59,7 +59,7 @@ De luchtvaart heeft een volwassen veiligheidsaanpak, gebouwd op de premisse dat 
 
 **Bewijsnormen zijn hoog.** Een claim dat iets risico verlaagt, moet worden onderbouwd. De luchtvaart neemt geen veranderingen aan op basis van een belovende correlatie.
 
-**Zeldzame gebeurtenissen zijn het hele punt.** Wat je het liefst voorspelt, heeft bijna geen voorbeelden, omdat het systeem is ontworpen om het te voorkomen. Dat duwt het werk naar precursoranalyse — de omstandigheden en kleine afwijkingen die ernstige gebeurtenissen voorafgaan.
+**Zeldzame gebeurtenissen zijn het hele punt.** Wat je het liefst voorspelt, heeft bijna geen voorbeelden, omdat het systeem is ontworpen om het te voorkomen. Dat duwt het werk naar precursoranalyse - de omstandigheden en kleine afwijkingen die ernstige gebeurtenissen voorafgaan.
 
 **Human factors worden serieus genomen.** Een systeem dat technisch correct is maar de werklast op een kritiek moment verhoogt, of zelfgenoegzaamheid uitlokt, is een veiligheidsprobleem.
 
@@ -87,7 +87,7 @@ De luchtvaart heeft een volwassen veiligheidsaanpak, gebouwd op de premisse dat 
 
 Tegen de sector: de luchtvaart staat onder echte druk van emissiebeleid, geluidsrandvoorwaarden, spoorconcurrentie op korte routes, en publieke weerstand tegen uitbreiding. Groei in vluchtvolume op de hoofdhub is door ontwerp beperkt, niet door vraag. Wie een groeisector zoekt, moet elders kijken.
 
-Voor de sector: beperking vergroot de waarde van optimalisatie in plaats van die te verkleinen. Kun je geen capaciteit toevoegen, dan wordt beter gebruiken van wat er is de enige beschikbare verbetering — en dat is precies wat datawerk levert. Milieuverplichtingen creëren ook nieuwe analytische vraag.
+Voor de sector: beperking vergroot de waarde van optimalisatie in plaats van die te verkleinen. Kun je geen capaciteit toevoegen, dan wordt beter gebruiken van wat er is de enige beschikbare verbetering - en dat is precies wat datawerk levert. Milieuverplichtingen creëren ook nieuwe analytische vraag.
 
 De sector groeit niet, maar de technische functie erbinnen wel.
 

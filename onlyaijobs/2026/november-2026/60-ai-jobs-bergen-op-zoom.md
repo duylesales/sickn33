@@ -39,13 +39,13 @@ Bergen op Zoom is best known in the Netherlands for its historic centre, its for
 
 ## Why Bergen op Zoom Became a Plastics Location
 
-In the early 1970s, General Electric established a plastics production site in Bergen op Zoom, attracted by the location between Rotterdam and Antwerp, access to water and space for industry. The site grew into a major centre for engineering thermoplastics — high-performance plastics used where strength, heat resistance or transparency matter. In 2007, GE sold its plastics business to **SABIC**, which continues to operate the site.
+In the early 1970s, General Electric established a plastics production site in Bergen op Zoom, attracted by the location between Rotterdam and Antwerp, access to water and space for industry. The site grew into a major centre for engineering thermoplastics - high-performance plastics used where strength, heat resistance or transparency matter. In 2007, GE sold its plastics business to **SABIC**, which continues to operate the site.
 
 The industrial area around the **Theodorushaven** port area also hosts other companies in logistics, food processing and manufacturing. Together with nearby Roosendaal and the wider West Brabant region, Bergen op Zoom is part of an industrial corridor that connects the ports of Rotterdam and Antwerp.
 
 ## The Named Organisations Behind Bergen op Zoom's Industrial Market
 
-**SABIC.** The Bergen op Zoom site produces engineering thermoplastics and specialty materials and has been associated with research, application development and technical support for customers. Production of polymers involves continuous and batch chemical processes, compounding, quality control and extensive laboratory work — all generating data that can be used to improve processes and develop materials.
+**SABIC.** The Bergen op Zoom site produces engineering thermoplastics and specialty materials and has been associated with research, application development and technical support for customers. Production of polymers involves continuous and batch chemical processes, compounding, quality control and extensive laboratory work - all generating data that can be used to improve processes and develop materials.
 
 **Theodorushaven port and industrial area.** The port area hosts logistics companies, processors and manufacturers, with connections to inland shipping routes towards Rotterdam and Antwerp.
 
@@ -78,7 +78,7 @@ The main challenge is data. Historical laboratory data is often stored in differ
 
 The plastics industry is under strong pressure to reduce its environmental impact. Policies in the EU aim to increase recycling, introduce recycled content requirements and reduce plastic waste. Producers are investing in mechanically and chemically recycled feedstocks, bio-based raw materials and products designed for recyclability.
 
-Recycled feedstocks introduce variability. A virgin raw material has consistent properties; recycled material depends on the waste stream it came from. Process control and quality assurance must adapt to this variability while still meeting demanding customer specifications, particularly for engineering plastics used in safety-relevant applications. Data-driven approaches — characterising incoming material, adjusting process settings and predicting final product properties — are key to making circular materials work at industrial scale.
+Recycled feedstocks introduce variability. A virgin raw material has consistent properties; recycled material depends on the waste stream it came from. Process control and quality assurance must adapt to this variability while still meeting demanding customer specifications, particularly for engineering plastics used in safety-relevant applications. Data-driven approaches - characterising incoming material, adjusting process settings and predicting final product properties - are key to making circular materials work at industrial scale.
 
 ## Regulation That Shapes the Work
 
@@ -98,7 +98,7 @@ Recycled feedstocks introduce variability. A virgin raw material has consistent 
 
 A production line occasionally produces batches that do not meet customer specifications for a key mechanical property. The property is only measured in the laboratory hours after production, so off-spec material is discovered late and must be reprocessed or sold at a lower value.
 
-A data scientist builds a soft sensor that predicts the property in real time from process variables such as temperatures, pressures, feed rates and raw material batch information. The model identifies that deviations are often linked to specific raw material lots combined with certain temperature profiles. Operators receive an early warning and can adjust settings before large quantities of off-spec material are produced. The model is maintained carefully, because changes in raw materials — including the introduction of recycled feedstock — can shift the relationships it has learned. The project demonstrates how process data and laboratory data together create value that neither provides alone.
+A data scientist builds a soft sensor that predicts the property in real time from process variables such as temperatures, pressures, feed rates and raw material batch information. The model identifies that deviations are often linked to specific raw material lots combined with certain temperature profiles. Operators receive an early warning and can adjust settings before large quantities of off-spec material are produced. The model is maintained carefully, because changes in raw materials - including the introduction of recycled feedstock - can shift the relationships it has learned. The project demonstrates how process data and laboratory data together create value that neither provides alone.
 
 ## A Common Misconception About Chemical Industry Data Work
 
@@ -149,14 +149,14 @@ Experience in plastics and chemical process data is valued across the Netherland
 
 ## Where to Start
 
-If you want to apply data science to materials and chemistry — and help industry move towards circular plastics — Bergen op Zoom offers specialised work in a well-connected corner of West Brabant.
+If you want to apply data science to materials and chemistry - and help industry move towards circular plastics - Bergen op Zoom offers specialised work in a well-connected corner of West Brabant.
 
 Browse current AI, machine learning and data jobs in and around Bergen op Zoom at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who knows Bergen op Zoom only for carnival) Is Bergen op Zoom a location for technical data work?
-Yes — it hosts a large engineering plastics production site and an industrial port area with process, materials and logistics data roles.
+Yes - it hosts a large engineering plastics production site and an industrial port area with process, materials and logistics data roles.
 
 ### (Scenario: data scientist interested in materials) What is materials informatics?
 The use of data science and machine learning to predict material properties and guide experiments, shortening development cycles for new formulations.
@@ -165,21 +165,21 @@ The use of data science and machine learning to predict material properties and 
 Recycled feedstocks vary in quality, so characterising materials, adapting process settings and predicting product properties require data-driven approaches.
 
 ### (Scenario: data scientist new to chemical companies) Is chemical industry data ready for machine learning?
-Often not immediately — data is spread across process, laboratory and maintenance systems, so integration and understanding come first.
+Often not immediately - data is spread across process, laboratory and maintenance systems, so integration and understanding come first.
 
 ### (Scenario: candidate living in Breda or Roosendaal) How easy is it to commute to Bergen op Zoom?
-Easy — Bergen op Zoom is about ten minutes from Roosendaal by train and well connected to Breda by rail and road.
+Easy - Bergen op Zoom is about ten minutes from Roosendaal by train and well connected to Breda by rail and road.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Bergen op Zoom a location for technical data work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it hosts a large engineering plastics site and an industrial port area."}},
+    {"@type": "Question", "name": "Is Bergen op Zoom a location for technical data work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it hosts a large engineering plastics site and an industrial port area."}},
     {"@type": "Question", "name": "What is materials informatics?", "acceptedAnswer": {"@type": "Answer", "text": "Using data science to predict material properties and guide experiments."}},
     {"@type": "Question", "name": "How does circular plastics production create data work?", "acceptedAnswer": {"@type": "Answer", "text": "Variable recycled feedstocks require data-driven characterisation and process adaptation."}},
-    {"@type": "Question", "name": "Is chemical industry data ready for machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Often not immediately — integration and understanding come first."}},
-    {"@type": "Question", "name": "How easy is it to commute to Bergen op Zoom?", "acceptedAnswer": {"@type": "Answer", "text": "Easy — about ten minutes from Roosendaal by train and well connected to Breda."}}
+    {"@type": "Question", "name": "Is chemical industry data ready for machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Often not immediately - integration and understanding come first."}},
+    {"@type": "Question", "name": "How easy is it to commute to Bergen op Zoom?", "acceptedAnswer": {"@type": "Answer", "text": "Easy - about ten minutes from Roosendaal by train and well connected to Breda."}}
   ]
 }
 </script>

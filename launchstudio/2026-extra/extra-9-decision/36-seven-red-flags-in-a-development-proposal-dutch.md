@@ -31,15 +31,15 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-De heersende opvatting is dat het belangrijkste alarmsignaal in een software-offerte de prijs is: als een offerte verdacht laag binnenkomt, moet er wel iets mis zijn. Het is een geruststellende stelregel omdat hij zo eenvoudig toe te passen is — maar hij klopt meestal niet. Voordelige offertes zijn soms voordelig omdat het werk simpelweg strikt is afgebakend, terwijl peperdure offertes aan de lopende band ontsporen — vaak juist omdat een ruim budget meer speelruimte biedt voor vertraging en scope-drift.
+De heersende opvatting is dat het belangrijkste alarmsignaal in een software-offerte de prijs is: als een offerte verdacht laag binnenkomt, moet er wel iets mis zijn. Het is een geruststellende stelregel omdat hij zo eenvoudig toe te passen is - maar hij klopt meestal niet. Voordelige offertes zijn soms voordelig omdat het werk simpelweg strikt is afgebakend, terwijl peperdure offertes aan de lopende band ontsporen - vaak juist omdat een ruim budget meer speelruimte biedt voor vertraging en scope-drift.
 
-De werkelijk betrouwbare waarschuwingssignalen zijn structureel van aard, en stuk voor stuk herkenbaar voor iemand die nog nooit één regel code heeft geschreven. Ze gaan over wat een voorstel *niet* benoemt, wie uiteindelijk aan de touwtjes trekt, en of degene die het document heeft opgesteld überhaupt de moeite heeft genomen om uw product te bekijken. Hieronder vindt u zeven concrete alarmsignalen, geordend naar de financiële schade die ze doorgaans veroorzaken wanneer ze worden genegeerd — inclusief wat u kunt zeggen en, minstens zo belangrijk, wanneer het toevallig wél acceptabel is.
+De werkelijk betrouwbare waarschuwingssignalen zijn structureel van aard, en stuk voor stuk herkenbaar voor iemand die nog nooit één regel code heeft geschreven. Ze gaan over wat een voorstel *niet* benoemt, wie uiteindelijk aan de touwtjes trekt, en of degene die het document heeft opgesteld überhaupt de moeite heeft genomen om uw product te bekijken. Hieronder vindt u zeven concrete alarmsignalen, geordend naar de financiële schade die ze doorgaans veroorzaken wanneer ze worden genegeerd - inclusief wat u kunt zeggen en, minstens zo belangrijk, wanneer het toevallig wél acceptabel is.
 
 ## 1. Het Voorstel Noemt Uw Product Nergens Specifiek
 
-Open het ontvangen document en zoek met Ctrl+F (of Cmd+F) naar een specifiek kernbegrip dat uitsluitend in uw applicatie voorkomt. De naam van uw centrale entiteit — bijvoorbeeld "zending", "repetitie", "beoordelingsmatrix" of "borgsom". Zoek vervolgens naar de tools waarmee u uw prototype heeft gebouwd: Lovable, Bolt, Cursor, v0 of Supabase.
+Open het ontvangen document en zoek met Ctrl+F (of Cmd+F) naar een specifiek kernbegrip dat uitsluitend in uw applicatie voorkomt. De naam van uw centrale entiteit - bijvoorbeeld "zending", "repetitie", "beoordelingsmatrix" of "borgsom". Zoek vervolgens naar de tools waarmee u uw prototype heeft gebouwd: Lovable, Bolt, Cursor, v0 of Supabase.
 
-Komen beide nergens in de tekst voor, dan heeft u een generiek standaardsjabloon in handen. Het kan een keurig sjabloon zijn van een prima bureau, maar het bewijst dat niemand zich inhoudelijk heeft verdiept in uw specifieke software. Alles wat daarop volgt — de prijs, de planning en de scope — is een slag in de lucht, vermomd in een professionele lay-out.
+Komen beide nergens in de tekst voor, dan heeft u een generiek standaardsjabloon in handen. Het kan een keurig sjabloon zijn van een prima bureau, maar het bewijst dat niemand zich inhoudelijk heeft verdiept in uw specifieke software. Alles wat daarop volgt - de prijs, de planning en de scope - is een slag in de lucht, vermomd in een professionele lay-out.
 
 **Wat u kunt zeggen:** *"Voordat we verder praten: kunt u mij twee specifieke eigenschappen van mijn huidige codebase noemen die dit project makkelijker of juist complexer maken dan een standaardtraject?"* Een partij die uw code heeft bekeken, beantwoordt dit binnen dertig seconden.
 
@@ -49,9 +49,9 @@ Komen beide nergens in de tekst voor, dan heeft u een generiek standaardsjabloon
 
 "Wij raden aan om dit vanaf de grond af netjes opnieuw op te bouwen." Dit is met afstand de duurste zin in de software-industrie, en hij valt verbazingwekkend vaak al tijdens een eerste gesprek, nog vóórdat het bureau ook maar één regel uit uw repository heeft ingezien.
 
-De reden is zelden kwade opzet. Het ontleden van andermans code — zeker code die door AI op basis van prompts is gegenereerd, zonder strikte architectuurconventies — is traag, taai en weinig glamoureus werk. Vanaf nul opnieuw beginnen is voor een ontwikkelaar veel comfortabeler en levert aanzienlijk meer declareerbare uren op. Het gooit echter tevens het enige weg wat u al wél heeft gevalideerd: een gebruikersinterface die u iteratief heeft ontwikkeld met echte gebruikers.
+De reden is zelden kwade opzet. Het ontleden van andermans code - zeker code die door AI op basis van prompts is gegenereerd, zonder strikte architectuurconventies - is traag, taai en weinig glamoureus werk. Vanaf nul opnieuw beginnen is voor een ontwikkelaar veel comfortabeler en levert aanzienlijk meer declareerbare uren op. Het gooit echter tevens het enige weg wat u al wél heeft gevalideerd: een gebruikersinterface die u iteratief heeft ontwikkeld met echte gebruikers.
 
-**Wat u kunt zeggen:** *"Welke specifieke onderdelen kunnen volgens u technisch niet worden aangepast, en wat zou het kosten om uitsluitend dát knelpunt te repareren in plaats van alles te slopen?"* Een legitiem herbouwadvies benoemt een concreet structureel defect — meestal kan het datamodel een cruciale bedrijfsregel niet ondersteunen — en kan beide routes helder becijferen.
+**Wat u kunt zeggen:** *"Welke specifieke onderdelen kunnen volgens u technisch niet worden aangepast, en wat zou het kosten om uitsluitend dát knelpunt te repareren in plaats van alles te slopen?"* Een legitiem herbouwadvies benoemt een concreet structureel defect - meestal kan het datamodel een cruciale bedrijfsregel niet ondersteunen - en kan beide routes helder becijferen.
 
 **Wanneer het acceptabel is:** Wanneer ze de code grondig hebben onderzocht en exact kunnen aanwijzen waar het wringt. Sommige prototypes zijn inderdaad niet te redden. Het alarmsignaal zit niet in het advies zelf, maar in de volgorde waarin het wordt gegeven.
 
@@ -59,21 +59,21 @@ De reden is zelden kwade opzet. Het ontleden van andermans code — zeker code d
 
 "Backend-ontwikkeling: 120 tot 160 uur à € 85 per uur."
 
-Dit is geen offerte voor een product; dit is een aanbod om uren in te kopen. Tijd is een reële productiefactor, maar het is geen meetbaar eindresultaat. Een voorstel dat louter leunt op urenramingen kent geen objectieve definitie van "klaar". Wanneer uur 160 is verstreken en het herstellen van wachtwoorden werkt nog steeds niet, hebben beide partijen formeel gelijk — en zit u met de gebakken peren.
+Dit is geen offerte voor een product; dit is een aanbod om uren in te kopen. Tijd is een reële productiefactor, maar het is geen meetbaar eindresultaat. Een voorstel dat louter leunt op urenramingen kent geen objectieve definitie van "klaar". Wanneer uur 160 is verstreken en het herstellen van wachtwoorden werkt nog steeds niet, hebben beide partijen formeel gelijk - en zit u met de gebakken peren.
 
-**Wat u kunt zeggen:** *"Kunt u deze uren vertalen naar concrete acceptatiecriteria — functionaliteiten die ik aan het einde zelfstandig kan verifiëren en aanklikken?"* U zoekt naar heldere toezeggingen zoals: *"een nieuwe bezoeker kan zich registreren, zijn e-mailadres bevestigen en een vergeten wachtwoord herstellen op de live productieomgeving."*
+**Wat u kunt zeggen:** *"Kunt u deze uren vertalen naar concrete acceptatiecriteria - functionaliteiten die ik aan het einde zelfstandig kan verifiëren en aanklikken?"* U zoekt naar heldere toezeggingen zoals: *"een nieuwe bezoeker kan zich registreren, zijn e-mailadres bevestigen en een vergeten wachtwoord herstellen op de live productieomgeving."*
 
-**Wanneer het acceptabel is:** Bij puur verkennend onderzoek — zoals het doorgronden van een onverklaarbare bug of een technische haalbaarheidsstudie — is werken op uurbasis integer en een vaste prijs een illusie. Vraag in dat geval om een strikt urenplafond met een tussentijdse evaluatie: *"maximaal twaalf uur, waarna we gezamenlijk overleggen vóórdat er verder wordt gewerkt."*
+**Wanneer het acceptabel is:** Bij puur verkennend onderzoek - zoals het doorgronden van een onverklaarbare bug of een technische haalbaarheidsstudie - is werken op uurbasis integer en een vaste prijs een illusie. Vraag in dat geval om een strikt urenplafond met een tussentijdse evaluatie: *"maximaal twaalf uur, waarna we gezamenlijk overleggen vóórdat er verder wordt gewerkt."*
 
 ## 4. Er Wordt Niets Uitdrukkelijk Uitgesloten
 
-Doorzoek de offerte naar het woord "niet". Sterke voorstellen bevatten een nuchtere, expliciete lijst van uitsluitingen: *niet inbegrepen — mobiele apps, copywriting en contentcreatie, juridische AVG-audits, zoekmachine-optimalisatie (SEO), stresstests boven 500 gelijktijdige gebruikers, en maandelijkse clouddienstabonnementen.*
+Doorzoek de offerte naar het woord "niet". Sterke voorstellen bevatten een nuchtere, expliciete lijst van uitsluitingen: *niet inbegrepen - mobiele apps, copywriting en contentcreatie, juridische AVG-audits, zoekmachine-optimalisatie (SEO), stresstests boven 500 gelijktijdige gebruikers, en maandelijkse clouddienstabonnementen.*
 
 Een voorstel zonder enige uitsluiting is een garantie dat elk grijs gebied later uitmondt in een discussie. Ontwikkelaars die vaker met het bijltje hebben gehakt, stellen zo'n lijst uit zichzelf op. De aanwezigheid van een scherpe uitsluitingenlijst is dan ook een van de meest geruststellende signalen in het hele document.
 
 **Wat u kunt zeggen:** *"Wat is er uitdrukkelijk níet inbegrepen in deze prijs? Ik weet dat liever vandaag dan dat we er in week drie over moeten onderhandelen."* Geen enkele serieuze partij zal deze vraag vreemd vinden.
 
-**Wanneer het acceptabel is:** Bij een hele kleine, enkelvoudige taak — zoals "wachtwoordherstel toevoegen voor € 400 vast" — is een formele uitsluitingenlijst overbodig. Schaal uw verwachtingen mee met de omvang van de opdracht.
+**Wanneer het acceptabel is:** Bij een hele kleine, enkelvoudige taak - zoals "wachtwoordherstel toevoegen voor € 400 vast" - is een formele uitsluitingenlijst overbodig. Schaal uw verwachtingen mee met de omvang van de opdracht.
 
 ## 5. U Bent Vanaf Dag Één Geen Eigenaar van de Accounts
 
@@ -83,13 +83,13 @@ Controleer nauwgezet waar uw digitale activa worden ondergebracht. Let op de for
 
 **Wat u kunt zeggen:** *"Op wiens naam staan het GitHub-account, de database, de hostingomgeving en het Stripe-account vanaf dag één? En kunt u contractueel vastleggen dat ik gedurende het gehele traject over volledige beheerdersrechten beschik?"*
 
-**Wanneer het acceptabel is:** Het tijdelijk achterhouden van de *broncode* tot de slotfactuur is voldaan, is een begrijpelijke bescherming tegen wanbetaling bij een eerste samenwerking — mits de overdracht contractueel gegarandeerd is en u te allen tijde over leesrechten beschikt. Uw *live productie-accounts* op andermans infrastructuur parkeren is een heel ander verhaal en moet u te allen tijde weigeren.
+**Wanneer het acceptabel is:** Het tijdelijk achterhouden van de *broncode* tot de slotfactuur is voldaan, is een begrijpelijke bescherming tegen wanbetaling bij een eerste samenwerking - mits de overdracht contractueel gegarandeerd is en u te allen tijde over leesrechten beschikt. Uw *live productie-accounts* op andermans infrastructuur parkeren is een heel ander verhaal en moet u te allen tijde weigeren.
 
 ## 6. Het Uitvoerende Team Blijft Volledig Anoniem
 
 "Ons team van senior software engineers" is geen team; het is een marketingterm. Uw project zal in de praktijk worden uitgevoerd door twee of drie specifieke individuen. Hun identiteit is bekend, en hun beschikbaarheid bepaalt voor 90% het succes van uw lancering.
 
-Het risico is de onbedoelde 'bait-and-switch': tijdens het verkoopgesprek zit u aan tafel met indrukwekkende senior architecten, maar zodra het contract getekend is, wordt het werk doorgeschoven naar wie er toevallig net een gaatje in de planning had. Dat gebeurt zelden uit kwade wil — de ervaren krachten worden simpelweg op een groter project gezet — maar voor uw eindresultaat maakt dat geen verschil.
+Het risico is de onbedoelde 'bait-and-switch': tijdens het verkoopgesprek zit u aan tafel met indrukwekkende senior architecten, maar zodra het contract getekend is, wordt het werk doorgeschoven naar wie er toevallig net een gaatje in de planning had. Dat gebeurt zelden uit kwade wil - de ervaren krachten worden simpelweg op een groter project gezet - maar voor uw eindresultaat maakt dat geen verschil.
 
 **Wat u kunt zeggen:** *"Wie zijn de twee specifieke engineers die dit gaan bouwen, aan welke andere projecten werken zij de komende zes weken, en wat gebeurt er contractueel wanneer een van hen wordt vervangen?"* Vraag vervolgens een referent hoe de teambezetting tijdens hun project verliep.
 
@@ -99,7 +99,7 @@ Het risico is de onbedoelde 'bait-and-switch': tijdens het verkoopgesprek zit u 
 
 De livegang is niet het einde van het softwareproject; het is het begin van de fase waarin echte gebruikers onvoorziene fouten aan het licht brengen. Een voorstel dat abrupt stopt bij "oplevering op productie", laat de meest voorspelbare kostenpost van het hele traject volstrekt ongedefinieerd.
 
-Waar u naar zoekt: hoeveel dagen nazorg op bugs zijn inbegrepen, wat kwalificeert formeel als een bug (het systeem doet niet wat de specificatie voorschrijft — in tegenstelling tot een nieuwe wens die u later bedenkt), wat is de gegarandeerde responstijd, wat gebeurt er op dag 31, en wat kosten hosting en beheer per maand?
+Waar u naar zoekt: hoeveel dagen nazorg op bugs zijn inbegrepen, wat kwalificeert formeel als een bug (het systeem doet niet wat de specificatie voorschrijft - in tegenstelling tot een nieuwe wens die u later bedenkt), wat is de gegarandeerde responstijd, wat gebeurt er op dag 31, en wat kosten hosting en beheer per maand?
 
 **Wat u kunt zeggen:** *"Wat valt er concreet onder de nazorg gedurende de eerste dertig dagen, welke reactietijd garandeert u, en wat kost ondersteuning in maand twee als ik uw team beschikbaar wil houden?"*
 
@@ -115,7 +115,7 @@ Weten wanneer iets géén alarmsignaal is, is minstens zo belangrijk. Oprichters
 
 **Een verzoek om een aanbetaling.** Een aanbetaling van 30% tot 50% bij aanvang is volkomen standaard bij projecten van deze omvang en beschermt beide partijen. Een eis van 100% vooruitbetaling is de variant waartegen u zich wél moet verzetten.
 
-**Een remote of internationaal team.** Softwareontwikkeling over landsgrenzen heen is al ruim een decennium de wereldwijde norm. Waar het om gaat zijn overlappende werkuren, een vast aanspreekpunt en vlotte responstijden — niet de postcode van de programmeur.
+**Een remote of internationaal team.** Softwareontwikkeling over landsgrenzen heen is al ruim een decennium de wereldwijde norm. Waar het om gaat zijn overlappende werkuren, een vast aanspreekpunt en vlotte responstijden - niet de postcode van de programmeur.
 
 **Een standaardcontract (boilerplate).** De juridische hoofdovereenkomst *hoort* gestandaardiseerd te zijn. Zaken zoals aansprakelijkheid, ontbinding, intellectueel eigendom en geheimhouding vereisen geen literaire creativiteit. Een op maat geschreven contract voor een opdracht van € 2.500 betekent vooral dat iemand onnodige advocatenkosten moet terugverdienen. De inhoudelijke scherpte hoort thuis in de scope-bijlage. Besteed uw aandacht aan de technische specificaties.
 
@@ -137,7 +137,7 @@ Beoordeel de antwoorden op snelheid en inhoudelijke directheid. Na het lezen van
 
 Toets [LaunchStudio](https://launchstudio.eu/nl/) gerust met exact dezelfde vragen. Onze offertes hanteren vaste prijzen met harde acceptatiecriteria, alle accounts staan direct op uw eigen naam en onze engineers zijn afkomstig van moederbedrijf [Manifera](https://www.manifera.com/), dat al ruim elf jaar complexe enterprise-applicaties bouwt waarbij onduidelijkheden simpelweg niet worden getolereerd. Beantwoordt een concurrent al deze vijf vragen overtuigender dan wij, dan heeft u uw ideale partner gevonden en moet u beslist voor hen kiezen.
 
-**Heeft u momenteel één offerte liggen en mist u vergelijkingsmateriaal? Vraag ons om een vaste-prijsanalyse voor dezelfde scope — een helder tweede voorstel met expliciete uitsluitingen maakt de eerste offerte direct leesbaar.**
+**Heeft u momenteel één offerte liggen en mist u vergelijkingsmateriaal? Vraag ons om een vaste-prijsanalyse voor dezelfde scope - een helder tweede voorstel met expliciete uitsluitingen maakt de eerste offerte direct leesbaar.**
 
 ## Echt voorbeeld
 
@@ -147,12 +147,12 @@ Bram Sterkenburg, voormalig praktijkmanager van een dierenartsenpraktijk in Zwol
 
 Toen hij het document doorzocht op het woord "kliniek", leverde dat nul resultaten op. Ook de termen "Lovable", "Supabase" en de naam van zijn eigen applicatie kwamen nergens in de tekst voor. Het voorstel beschreef een generieke webapplicatie, adviseerde om alles opnieuw te bouwen in een ander framework en offreerde 168 uur zonder enig tastbaar eindresultaat. Op de vijf controlevragen antwoordde het bureau dat de hosting op hun eigen servers zou draaien voor € 190 per maand.
 
-Bram legde dezelfde vijf vragen voor aan twee andere partijen. Eén partij reageerde binnen vier uur, noemde de twee vaste engineers bij naam, somde zes heldere uitsluitingen op en wees erop dat de tabel met behandelverslagen in zijn database geen autorisatiefilter per kliniek bevatte op de server — een cruciaal veiligheidslek dat uitsluitend opgemerkt kon worden door iemand die zijn code daadwerkelijk had bestudeerd.
+Bram legde dezelfde vijf vragen voor aan twee andere partijen. Eén partij reageerde binnen vier uur, noemde de twee vaste engineers bij naam, somde zes heldere uitsluitingen op en wees erop dat de tabel met behandelverslagen in zijn database geen autorisatiefilter per kliniek bevatte op de server - een cruciaal veiligheidslek dat uitsluitend opgemerkt kon worden door iemand die zijn code daadwerkelijk had bestudeerd.
 
 **Resultaat:** PetChart werd binnen twaalf werkdagen succesvol gelanceerd voor een vaste prijs van € 2.950, inclusief serverside isolatie tussen klinieken, geverifieerde Mollie-betalingen en alle cloudaccounts geregistreerd op Bram's eigen bedrijf.
 
 > *"Zestien pagina's dik en niet één alinea ging over dierenklinieken. Zodra ik dat doorkreeg, was het document ineens niet meer indrukwekkend, maar veranderde het in duur behangpapier."*
-> — **Bram Sterkenburg, Oprichter, PetChart (Zwolle)**
+> - **Bram Sterkenburg, Oprichter, PetChart (Zwolle)**
 
 ---
 

@@ -1,11 +1,11 @@
 🚨 200 echte leden van een imkersvereniging stonden op het punt in te loggen. Een pre-launch inspectie vond 4 serieuze beveiligingslekken die zijn testvrienden nooit hadden opgemerkt! 🐝
 
-Niet elke AI-app heeft enterprise-beveiliging nodig op dag één. Maar er is een HARDE, niet-onderhandelbare ondergrens — hetzelfde voor 10 of 10.000 klanten: 🧠
+Niet elke AI-app heeft enterprise-beveiliging nodig op dag één. Maar er is een HARDE, niet-onderhandelbare ondergrens - hetzelfde voor 10 of 10.000 klanten: 🧠
 
 De 10 minimumpunten voor livegang: ✅
 1️⃣ Geen API-sleutels of secrets in de browsercode
 2️⃣ Wachtwoorden nooit in platte tekst
-3️⃣ Data-isolatie tussen accounts — GETEST, niet gegokt
+3️⃣ Data-isolatie tussen accounts - GETEST, niet gegokt
 4️⃣ HTTPS overal, zonder uitzonderingen
 5️⃣ Basis invoervalidatie op alle formulieren
 6️⃣ Sessietokens die daadwerkelijk verlopen
@@ -16,7 +16,7 @@ De 10 minimumpunten voor livegang: ✅
 
 🧪 Test het zelf: typ 20 keer een fout wachtwoord in. Als u niet wordt geblokkeerd, faalt punt 8 al direct!
 
-AI-prototypes zakken standaard voor meerdere van deze punten — onzichtbaar, totdat het misgaat. 😱
+AI-prototypes zakken standaard voor meerdere van deze punten - onzichtbaar, totdat het misgaat. 😱
 
 Bij **LaunchStudio**, geleid door Herre Roelevinks cybersecurity-ervaring (CFLW, TNO), is deze checklist standaard bij elke livegang. 🛡️
 

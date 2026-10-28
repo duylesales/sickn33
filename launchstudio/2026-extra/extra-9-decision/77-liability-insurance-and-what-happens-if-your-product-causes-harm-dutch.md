@@ -31,11 +31,11 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-"Ik heb een verzekering afgesloten, dus we zijn volledig gedekt." Die geruststellende uitspraak, uitgesproken door oprichters van vroege softwarebedrijven over hun beroeps- of cyberaansprakelijkheidspolis, is vaker onjuist dan juist. Niet omdat verzekeringen waardeloos zijn, maar omdat de werkelijke dekking veel specifieker, strenger geconditioneerd en sterker afhankelijk is van het voorafgaande beveiligingsgedrag van de oprichter dan de uitspraak suggereert. In veel gesprekken tussen oprichters wordt een verzekering behandeld als een simpele aan/uit-schakelaar: je hebt er een, of je hebt er geen — en als je er een hebt, is het financiële risico afgewikkeld. De juridische realiteit bestaat echter uit een verzameling zeer specifieke, begrensde toezeggingen met harde uitsluitingsclausules, strikte voorwaarden en reële kosten. Het begrijpen van die kleine lettertjes bepaalt of een polis u te hulp schiet wanneer het misgaat, of dat het verandert in een tweede deceptie bovenop het oorspronkelijke incident.
+"Ik heb een verzekering afgesloten, dus we zijn volledig gedekt." Die geruststellende uitspraak, uitgesproken door oprichters van vroege softwarebedrijven over hun beroeps- of cyberaansprakelijkheidspolis, is vaker onjuist dan juist. Niet omdat verzekeringen waardeloos zijn, maar omdat de werkelijke dekking veel specifieker, strenger geconditioneerd en sterker afhankelijk is van het voorafgaande beveiligingsgedrag van de oprichter dan de uitspraak suggereert. In veel gesprekken tussen oprichters wordt een verzekering behandeld als een simpele aan/uit-schakelaar: je hebt er een, of je hebt er geen - en als je er een hebt, is het financiële risico afgewikkeld. De juridische realiteit bestaat echter uit een verzameling zeer specifieke, begrensde toezeggingen met harde uitsluitingsclausules, strikte voorwaarden en reële kosten. Het begrijpen van die kleine lettertjes bepaalt of een polis u te hulp schiet wanneer het misgaat, of dat het verandert in een tweede deceptie bovenop het oorspronkelijke incident.
 
 ## Mythe: Een Verzekering Betekent Dat Ik Mijn Beveiliging Niet Hoef te Verbeteren
 
-Dit is de meest schadelijke mythe omdat het gedrag in de verkeerde richting stuurt. Aanbieders van beroepsaansprakelijkheids- en cyberverzekeringen stellen in hun polisvoorwaarden steevast een basale zorgplicht verplicht: redelijke beveiligingsmaatregelen, tijdige updates van kwetsbare software en elementaire toegangscontroles. Een schadeclaim kan fors worden verlaagd of categorisch worden afgewezen als het forensisch onderzoek van de verzekeraar aantoont dat het incident voortkwam uit overduidelijke nalatigheid — zoals wachtwoorden opslaan in platte tekst of een adminpaneel zonder tweefactorauthenticatie open op het publieke internet laten staan. Verzekeraars hanteren tegenwoordig gedetailleerde technische vragenlijsten tijdens het acceptatieproces om dit risico in te schatten. Het onjuist voorstellen van uw werkelijke beveiligingsniveau op zo'n formulier — zelfs onopzettelijk, door simpelweg het antwoord niet exact te weten — is een directe juridische grond voor polisweigering bij schade. Een verzekering is een vangnet voor het restrisico dat overblijft ná gedegen beveiligingswerk, geen vrijbrief om dat werk achterwege te laten.
+Dit is de meest schadelijke mythe omdat het gedrag in de verkeerde richting stuurt. Aanbieders van beroepsaansprakelijkheids- en cyberverzekeringen stellen in hun polisvoorwaarden steevast een basale zorgplicht verplicht: redelijke beveiligingsmaatregelen, tijdige updates van kwetsbare software en elementaire toegangscontroles. Een schadeclaim kan fors worden verlaagd of categorisch worden afgewezen als het forensisch onderzoek van de verzekeraar aantoont dat het incident voortkwam uit overduidelijke nalatigheid - zoals wachtwoorden opslaan in platte tekst of een adminpaneel zonder tweefactorauthenticatie open op het publieke internet laten staan. Verzekeraars hanteren tegenwoordig gedetailleerde technische vragenlijsten tijdens het acceptatieproces om dit risico in te schatten. Het onjuist voorstellen van uw werkelijke beveiligingsniveau op zo'n formulier - zelfs onopzettelijk, door simpelweg het antwoord niet exact te weten - is een directe juridische grond voor polisweigering bij schade. Een verzekering is een vangnet voor het restrisico dat overblijft ná gedegen beveiligingswerk, geen vrijbrief om dat werk achterwege te laten.
 
 ## Mythe: AVG-boetes Worden Volledig Vergoed Door Mijn Polis
 
@@ -56,7 +56,7 @@ De premie varieert afhankelijk van het type software en de gevoeligheid van de d
 
 ## Wanneer Het Nog Niet Urgent Is
 
-Voor een pre-revenue prototype, een product dat nog met een handvol bevriende testgebruikers wordt gevalideerd, of een startup zonder lopende zakelijke contracten die om een bewijs van dekking vragen, kan een aansprakelijkheidsverzekering rationeel worden uitgesteld. Niet omdat het risico nul is, maar omdat de feitelijke financiële blootstelling (harde bedrijfsschade bij betalende klanten of een grootschalig datalek) zich in deze fase nog niet materieel manifesteert. Het beschikbare budget kan in die vroege dagen effectiever worden ingezet. Dit is geen pleidooi om verzekeringen structureel te negeren, maar om ze niet te verwarren met technische productieveiligheid — die immers voorkomt dat er überhaupt een incident ontstaat, in plaats van achteraf de schade te verzachten.
+Voor een pre-revenue prototype, een product dat nog met een handvol bevriende testgebruikers wordt gevalideerd, of een startup zonder lopende zakelijke contracten die om een bewijs van dekking vragen, kan een aansprakelijkheidsverzekering rationeel worden uitgesteld. Niet omdat het risico nul is, maar omdat de feitelijke financiële blootstelling (harde bedrijfsschade bij betalende klanten of een grootschalig datalek) zich in deze fase nog niet materieel manifesteert. Het beschikbare budget kan in die vroege dagen effectiever worden ingezet. Dit is geen pleidooi om verzekeringen structureel te negeren, maar om ze niet te verwarren met technische productieveiligheid - die immers voorkomt dat er überhaupt een incident ontstaat, in plaats van achteraf de schade te verzachten.
 
 ## Wanneer Het een Harde Prioriteit Wordt
 
@@ -78,7 +78,7 @@ De belangrijkste vaardigheid bij het kiezen van een verzekering is het bestudere
 - **De retroactieve datum (inlooprisico):** Bepaalt of incidenten die zijn ontstaan vóór de ingangsdatum van de polis maar pas tijdens de looptijd worden ontdekt, alsnog onder de dekking vallen. Voor een startup die al enige tijd live is alvorens te verzekeren, is een deugdelijke inloopdekking cruciaal.
 - **Claims-made versus Occurrence:** De meeste beroeps- en cyberpolissen werken op "claims-made"-basis: de claim moet worden ingediend terwijl de polis actief is. Zodra u de polis opzegt, vervalt de dekking voor incidenten uit het verleden, tenzij u een uitloopdekking heeft afgesloten.
 
-[De software engineers van Manifera hebben meer dan 160 enterprise projecten opgeleverd](https://www.manifera.com/about-us/). De strenge securitystandaarden die worden toegepast binnen LaunchStudio — van fijnmazige toegangscontrole en dataconvenanten tot grondige dependency-audits — vormen exact de solide basis die voorkomt dat een verzekeringsclaim wordt afgewezen op grond van nalatigheid.
+[De software engineers van Manifera hebben meer dan 160 enterprise projecten opgeleverd](https://www.manifera.com/about-us/). De strenge securitystandaarden die worden toegepast binnen LaunchStudio - van fijnmazige toegangscontrole en dataconvenanten tot grondige dependency-audits - vormen exact de solide basis die voorkomt dat een verzekeringsclaim wordt afgewezen op grond van nalatigheid.
 
 [Gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator) om direct te zien wat het kost om uw technische beveiligingshiaten professioneel te dichten, vóórdat u afhankelijk bent van een verzekeraar om de gaten te dichten die u open heeft gelaten.
 
@@ -93,7 +93,7 @@ Casper had geen enkele polis afgesloten en bleek bovendien meerdere onderliggend
 **Resultaat:** Het contract werd zes weken later dan gepland alsnog definitief getekend. Casper houdt het verzekeringscertificaat en het ingevulde security-template sindsdien gestandaardiseerd klaar, waardoor de doorlooptijd bij drie daaropvolgende enterprise-aanvragen werd verkort tot minder dan 48 uur.
 
 > *"Ik beschouwde een verzekering altijd als een administratieve kostenpost voor later. Het bleek in de praktijk het cruciale document te zijn dat tussen mij en een getekend contract stond voor een deal die inhoudelijk al lang was gewonnen."*
-> — **Casper Dujardin, Oprichter van LegalPing**
+> - **Casper Dujardin, Oprichter van LegalPing**
 
 ## Veelgestelde Vragen
 
@@ -103,7 +103,7 @@ Doorgaans niet met spoed. Het financiële risico waartegen een verzekering besch
 
 ### Wat is het verschil tussen een beroepsaansprakelijkheidsverzekering en een algemene bedrijfsaansprakelijkheidsverzekering voor een softwarebedrijf?
 
-Een beroepsaansprakelijkheidsverzekering dekt zuivere vermogensschade veroorzaakt door fouten in uw software of dienstverlening. Een bedrijfsaansprakelijkheidsverzekering (AVB) dekt materiële zaakschade en lichamelijk letsel — risico's die bij een pure softwareonderneming zelden relevant zijn. Voor een SaaS-bedrijf zijn een BAV en een cyberverzekering de essentiële polissen.
+Een beroepsaansprakelijkheidsverzekering dekt zuivere vermogensschade veroorzaakt door fouten in uw software of dienstverlening. Een bedrijfsaansprakelijkheidsverzekering (AVB) dekt materiële zaakschade en lichamelijk letsel - risico's die bij een pure softwareonderneming zelden relevant zijn. Voor een SaaS-bedrijf zijn een BAV en een cyberverzekering de essentiële polissen.
 
 ### Maakt het hebben van een verzekering het sluiten van enterprise-deals makkelijker of moeilijker?
 

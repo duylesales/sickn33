@@ -84,7 +84,7 @@ Nederland heeft een van de grootste pensioenstelsels ter wereld ten opzichte van
 | Eindhoven | 50–60 minuten | Halfgeleiders, hightech systemen |
 | Düsseldorf en Keulen | 1 tot 1,5 uur | Grote Duitse zakelijke en industriële markten |
 
-Aken op dertig tot veertig minuten is het opvallendste feit. Voor een kandidaat met Duits omvat de toegankelijke markt vanuit Heerlen een groot Duits technisch centrum — een propositie die geen Nederlandse binnenlandse stad van deze grootte kan evenaren.
+Aken op dertig tot veertig minuten is het opvallendste feit. Voor een kandidaat met Duits omvat de toegankelijke markt vanuit Heerlen een groot Duits technisch centrum - een propositie die geen Nederlandse binnenlandse stad van deze grootte kan evenaren.
 
 ## Waarom deze markt bij sommige loopbaanfases beter past
 

@@ -1,7 +1,7 @@
-The cheapest outsourcing quote you get is almost never the cheapest option — it just moves the real cost to a quarter nobody budgeted for. 🧾
+The cheapest outsourcing quote you get is almost never the cheapest option - it just moves the real cost to a quarter nobody budgeted for. 🧾
 
 **The Pain Points:**
-❌ **Rotating Staff, Rotating Answers:** Three different lead engineers on one account in five months, each inheriting undocumented decisions from the last — and a critical bug that outlives all three.
+❌ **Rotating Staff, Rotating Answers:** Three different lead engineers on one account in five months, each inheriting undocumented decisions from the last - and a critical bug that outlives all three.
 ❌ **Every Clarification Becomes a Change Order:** A vendor relationship optimizes for the invoice. Ambiguity in the spec turns into billable scope, not a shared problem to solve.
 ❌ **The Hidden Re-Learning Tax:** Lost continuity on a vendor engagement typically costs €25,000–€45,000 in pure re-learning overhead across a 6-9 month project.
 

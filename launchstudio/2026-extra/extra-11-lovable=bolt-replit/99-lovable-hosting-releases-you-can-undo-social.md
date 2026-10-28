@@ -1,4 +1,4 @@
-🚨 Mark Oudshoorn's Kassakoppeling syncs sales from 34 shops around Gorinchem and Leerdam into their stock and accounting systems. He deployed straight to production, with no staging. One Thursday an agent session "tidied up" the sales table — and its migration dropped the column recording which till each sale came from. 😳
+🚨 Mark Oudshoorn's Kassakoppeling syncs sales from 34 shops around Gorinchem and Leerdam into their stock and accounting systems. He deployed straight to production, with no staging. One Thursday an agent session "tidied up" the sales table - and its migration dropped the column recording which till each sale came from. 😳
 
 Reverting the code took thirty seconds and changed nothing, because the data was gone. Restoring the morning backup would have wiped a day of trading for all 34 shops. Here's why undo and rollback aren't the same thing: 🧠
 
@@ -14,7 +14,7 @@ Reverting the code took thirty seconds and changed nothing, because the data was
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make every release something you can undo. ↩️
 
-His result: six business days and €3,400 later — the lost column reconstructed from till receipts (two shops' gaps written off with their agreement) and eleven months without an incident. The read-before-run rule has since caught two more destructive suggestions. 🚀
+His result: six business days and €3,400 later - the lost column reconstructed from till receipts (two shops' gaps written off with their agreement) and eleven months without an incident. The read-before-run rule has since caught two more destructive suggestions. 🚀
 
 👉 Releases you can undo: https://launchstudio.eu/en/blog/lovable-hosting-releases-you-can-undo
 

@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 "Can it update live?" is a reasonable request that arrives in almost every product conversation, and it is usually answered with a yes before anyone has asked what it costs.
 
-Supabase makes live updates straightforward enough that adding them feels free. They are not free, and the price is paid in places founders do not look: an open connection per viewer, a security decision that is easy to get wrong, battery on mobile devices, and a set of failure modes — reconnection, missed events, duplicates — that only appear once real people use the product on real networks.
+Supabase makes live updates straightforward enough that adding them feels free. They are not free, and the price is paid in places founders do not look: an open connection per viewer, a security decision that is easy to get wrong, battery on mobile devices, and a set of failure modes - reconnection, missed events, duplicates - that only appear once real people use the product on real networks.
 
 None of that means avoid it. It means decide, rather than adding it because it demonstrates well.
 
@@ -32,7 +32,7 @@ Three distinct mechanisms, frequently conflated.
 
 **Database change subscriptions.** Your client is notified when rows in a table are inserted, updated or deleted. This is what most people mean by live updates, and it requires configuration on the database side to publish those changes.
 
-**Broadcast.** Sending messages between connected clients through a channel, without going through the database. Suited to ephemeral things — a cursor position, a typing indicator, a notification that does not need storing.
+**Broadcast.** Sending messages between connected clients through a channel, without going through the database. Suited to ephemeral things - a cursor position, a typing indicator, a notification that does not need storing.
 
 **Presence.** Tracking who is currently connected to a channel. This is how "three people are viewing this record" works, and it is genuinely useful for preventing the editing conflicts that otherwise produce lost updates.
 
@@ -42,25 +42,25 @@ They have different costs and different security considerations, and choosing th
 
 This is the part that deserves the most attention, because an incorrectly configured realtime subscription can distribute data that your ordinary queries correctly protect.
 
-Database change subscriptions can respect row level security, and doing so requires deliberate configuration — the policies must exist, and the subscription must be set up to enforce them. A project that enabled realtime on a table without that configuration can be broadcasting every change on that table to every connected client, regardless of who they are.
+Database change subscriptions can respect row level security, and doing so requires deliberate configuration - the policies must exist, and the subscription must be set up to enforce them. A project that enabled realtime on a table without that configuration can be broadcasting every change on that table to every connected client, regardless of who they are.
 
 The consequence is specific and severe: your application might correctly show a user only their own bookings, while the realtime channel notifies them about everybody's.
 
 Broadcast and presence channels have their own authorisation model, and the default for a new channel is not necessarily what you want for a product with multiple customers. Anyone able to connect to a channel receives what is sent on it.
 
-Two things to verify, since the details change as the platform evolves: check the current documentation for how authorisation is configured for each mechanism, and then test it empirically — connect as one user, make a change as another, and observe whether the first receives it.
+Two things to verify, since the details change as the platform evolves: check the current documentation for how authorisation is configured for each mechanism, and then test it empirically - connect as one user, make a change as another, and observe whether the first receives it.
 
 ## When Realtime Genuinely Earns Its Place
 
 **Collaborative editing,** where two people work on the same record and seeing each other's changes prevents conflicts and lost work.
 
-**Operational displays.** A kitchen screen, a dispatch board, a queue display — anything where somebody is watching a screen and acting on what appears, and where a delay has a cost measured in minutes of someone's work.
+**Operational displays.** A kitchen screen, a dispatch board, a queue display - anything where somebody is watching a screen and acting on what appears, and where a delay has a cost measured in minutes of someone's work.
 
 **Chat and messaging,** where the interaction is the point.
 
 **Presence indicators,** which are a small feature with a disproportionate effect on multi-user products because they prevent problems rather than reporting them.
 
-**Live status of a long operation** — an import, a generation, a payment confirmation — where the alternative is a user staring at a spinner wondering whether it has failed.
+**Live status of a long operation** - an import, a generation, a payment confirmation - where the alternative is a user staring at a spinner wondering whether it has failed.
 
 The common thread: someone is watching, and the delay costs something real.
 
@@ -82,7 +82,7 @@ Polling has real advantages beyond simplicity: it works through every network co
 
 **Connections are a limited resource.** Each viewer holds an open connection, and plans have limits. A product that works with fifty concurrent users can behave differently at five hundred, and the symptom is not a clean error but connections that fail to establish.
 
-**Mobile battery and data.** A persistent connection on a phone consumes both. For an application people keep open all day — which is exactly the operational use case realtime suits — this matters.
+**Mobile battery and data.** A persistent connection on a phone consumes both. For an application people keep open all day - which is exactly the operational use case realtime suits - this matters.
 
 **Reconnection is your problem.** Networks drop. Phones sleep, switch from wifi to mobile, and go through tunnels. When the connection returns, your client has missed everything that happened while it was gone, and unless you refetch the current state on reconnect, the user is looking at a confidently stale screen.
 
@@ -108,7 +108,7 @@ Where both answers point to realtime, apply it to that screen only. The mistake 
 
 **Make handlers idempotent,** so a duplicate event does not duplicate a row on screen or an action behind it.
 
-**Unsubscribe when the component goes away.** Leaked subscriptions accumulate as a user navigates and eventually exhaust the connection limit — a slow failure that appears as the app becoming unreliable over a long session.
+**Unsubscribe when the component goes away.** Leaked subscriptions accumulate as a user navigates and eventually exhaust the connection limit - a slow failure that appears as the app becoming unreliable over a long session.
 
 **Give the user a fallback.** A manual refresh control and a visible indication when the connection is lost, so a stale screen announces itself rather than lying quietly.
 
@@ -118,7 +118,7 @@ Where both answers point to realtime, apply it to that screen only. The mistake 
 
 For most AI-built products the correct answer is realtime on one or two screens, polling elsewhere, and a security configuration that has been verified rather than assumed.
 
-LaunchStudio handles that as part of taking a product live: reviewing where live updates genuinely earn their cost, configuring authorisation so subscriptions respect your access rules, adding reconnection and idempotent handling, scoping subscriptions properly, cleaning up leaked ones, and replacing realtime with polling where it was added for demonstration rather than need — without touching the interface you built in Lovable.
+LaunchStudio handles that as part of taking a product live: reviewing where live updates genuinely earn their cost, configuring authorisation so subscriptions respect your access rules, adding reconnection and idempotent handling, scoping subscriptions properly, cleaning up leaked ones, and replacing realtime with polling where it was added for demonstration rather than need - without touching the interface you built in Lovable.
 
 The engineers are Manifera's, with eleven years of production systems behind them for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. [Describe your project](https://launchstudio.eu/en/#contact) and we will tell you whether your realtime configuration is exposing anything, usually within one business day, or see the [packages](https://launchstudio.eu/en/#packages).
 
@@ -126,7 +126,7 @@ The engineers are Manifera's, with eleven years of production systems behind the
 
 Live updates cannot be verified from one browser on a good connection, which is how most of them reach production untested. Six exercises, none requiring tooling.
 
-**Two accounts, two devices.** Make a change as one and confirm the other receives exactly what it should — and, more importantly, nothing it should not. This is the security test, and it is the one that matters most.
+**Two accounts, two devices.** Make a change as one and confirm the other receives exactly what it should - and, more importantly, nothing it should not. This is the security test, and it is the one that matters most.
 
 **The aeroplane-mode test.** Put a phone into flight mode for two minutes while changes happen elsewhere, then reconnect. Does the screen catch up, or does it sit there confidently showing stale data?
 
@@ -148,18 +148,18 @@ Youri Hendriks built Ritplanner in Lovable: a dispatch tool used by six small co
 
 Live updates were the product's selling point, and they worked beautifully in demonstration.
 
-Two problems emerged in the first month. The realtime subscription on the jobs table had been enabled without authorisation configured, so every connected driver received a notification for every job created across all six companies — including customer addresses and prices from competing couriers. The application only displayed their own jobs, so nobody noticed until a driver mentioned seeing an unfamiliar address flash briefly on screen.
+Two problems emerged in the first month. The realtime subscription on the jobs table had been enabled without authorisation configured, so every connected driver received a notification for every job created across all six companies - including customer addresses and prices from competing couriers. The application only displayed their own jobs, so nobody noticed until a driver mentioned seeing an unfamiliar address flash briefly on screen.
 
-Second, drivers reported the board "going stale" during long shifts. Subscriptions were never cleaned up as they navigated, connections accumulated until the limit was reached, and no refetch happened on reconnect after a tunnel or a wifi handover — so a driver could be looking at a board that had stopped updating without any indication.
+Second, drivers reported the board "going stale" during long shifts. Subscriptions were never cleaned up as they navigated, connections accumulated until the limit was reached, and no refetch happened on reconnect after a tunnel or a wifi handover - so a driver could be looking at a board that had stopped updating without any indication.
 
 Five business days of work: authorisation configured so subscriptions respect row level security with the company condition enforced, verified by connecting as drivers from two companies simultaneously; subscriptions scoped to the driver's own jobs rather than the whole table; cleanup on navigation; a refetch on every reconnect; idempotent handling so duplicate events do not duplicate rows; and a visible connection indicator with a manual refresh.
 
 **Result:** the cross-company exposure was closed before any complaint, the six companies were informed with a written account, and stale-board reports stopped entirely.
 
 > *"The app showed each driver only their own jobs. The live channel was telling all of them about all of it, and the only reason we found out was a driver noticing an address blink."*
-> — **Youri Hendriks, Founder, Ritplanner (Eindhoven)**
+> - **Youri Hendriks, Founder, Ritplanner (Eindhoven)**
 
-**Cost & Timeline:** €2,550 (realtime authorisation, subscription scoping and cleanup, reconnect handling, connection indicator) — completed in 5 business days.
+**Cost & Timeline:** €2,550 (realtime authorisation, subscription scoping and cleanup, reconnect handling, connection indicator) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -193,7 +193,7 @@ No. Apply it to the specific screens where someone is watching and delay has a c
       "name": "Does Supabase realtime respect my row level security policies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It can, with deliberate configuration rather than automatically. An unconfigured subscription may broadcast every change on a table to every client — verify empirically with two accounts."
+        "text": "It can, with deliberate configuration rather than automatically. An unconfigured subscription may broadcast every change on a table to every client - verify empirically with two accounts."
       }
     },
     {
@@ -225,7 +225,7 @@ No. Apply it to the specific screens where someone is watching and delay has a c
       "name": "Should my whole app use realtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — apply it to screens where someone watches and delay costs something, and use polling or optimistic updates elsewhere."
+        "text": "No - apply it to screens where someone watches and delay costs something, and use polling or optimistic updates elsewhere."
       }
     }
   ]

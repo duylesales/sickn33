@@ -63,7 +63,7 @@ South Limburg has organised much of its innovation around four Brightlands campu
 
 ## Heerlen: A Hub for Public and Financial Data
 
-Heerlen, 25 minutes from Maastricht, hosts organisations that process enormous volumes of data for the Dutch public. Statistics Netherlands has a large office there, and pension administration and public service organisations operate in the city. Data scientists in these organisations work on official statistics, fraud and error detection, forecasting, process automation and data quality — work with direct societal relevance, often in Dutch but increasingly with English-speaking data teams.
+Heerlen, 25 minutes from Maastricht, hosts organisations that process enormous volumes of data for the Dutch public. Statistics Netherlands has a large office there, and pension administration and public service organisations operate in the city. Data scientists in these organisations work on official statistics, fraud and error detection, forecasting, process automation and data quality - work with direct societal relevance, often in Dutch but increasingly with English-speaking data teams.
 
 ## Manufacturing and Industry
 
@@ -84,11 +84,11 @@ South and Central Limburg have a strong manufacturing base, including automotive
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, with listings currently concentrated in the Netherlands. Every vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and there is no paid placement. Employers listing AI and data roles on the platform include organisations such as Accenture, Cegeka, Holland Innovative, Heijmans and Rexel.
 
-For data science jobs in Maastricht, the distance view is particularly valuable because the region's employers are spread across Maastricht, Heerlen, Sittard-Geleen and industrial areas, and because the most relevant alternatives may be across the border rather than in the Randstad. OnlyAIJobs was founded to address exactly this kind of mismatch — graduates leaving because they don't know regional employers — first seen in Noord-Brabant and equally visible in Limburg.
+For data science jobs in Maastricht, the distance view is particularly valuable because the region's employers are spread across Maastricht, Heerlen, Sittard-Geleen and industrial areas, and because the most relevant alternatives may be across the border rather than in the Randstad. OnlyAIJobs was founded to address exactly this kind of mismatch - graduates leaving because they don't know regional employers - first seen in Noord-Brabant and equally visible in Limburg.
 
 ## Health Data Science on the Maastricht Campus
 
-Maastricht UMC+ and the Brightlands Maastricht Health Campus offer a range of health data science opportunities. Researchers apply machine learning to cardiac imaging, radiotherapy planning, oncology outcomes and nutrition studies. Maastricht has been active in radiomics — extracting quantitative features from medical images — and in privacy-preserving approaches that allow hospitals to learn from each other's data without sharing it directly. Companies on the campus work on diagnostics, medical devices and digital health. Health data is protected by GDPR and medical ethics rules, and AI tools for clinical use may fall under the EU Medical Device Regulation and the high-risk requirements of the EU AI Act. Graduates who combine ML with statistical rigour and an understanding of these frameworks are in demand.
+Maastricht UMC+ and the Brightlands Maastricht Health Campus offer a range of health data science opportunities. Researchers apply machine learning to cardiac imaging, radiotherapy planning, oncology outcomes and nutrition studies. Maastricht has been active in radiomics - extracting quantitative features from medical images - and in privacy-preserving approaches that allow hospitals to learn from each other's data without sharing it directly. Companies on the campus work on diagnostics, medical devices and digital health. Health data is protected by GDPR and medical ethics rules, and AI tools for clinical use may fall under the EU Medical Device Regulation and the high-risk requirements of the EU AI Act. Graduates who combine ML with statistical rigour and an understanding of these frameworks are in demand.
 
 ## Chemicals, Materials and Industrial Data
 
@@ -128,11 +128,11 @@ Dutch packages usually include a holiday allowance of around eight percent, pens
 
 ## Your First Two Years
 
-Use your first years to build depth in one domain — health, chemicals, public data or manufacturing — along with strong engineering and statistical skills. If you plan to stay, invest in Dutch. Keep in touch with Maastricht University and its alumni, many of whom work across the Euroregion.
+Use your first years to build depth in one domain - health, chemicals, public data or manufacturing - along with strong engineering and statistical skills. If you plan to stay, invest in Dutch. Keep in touch with Maastricht University and its alumni, many of whom work across the Euroregion.
 
 ## A Weekly Search Routine
 
-Set your home address, choose a commuting radius that includes Heerlen, Sittard-Geleen and possibly Aachen, review new vacancies weekly and attend Brightlands and university events. Follow up personally with people you meet — regional employers appreciate proactive interest.
+Set your home address, choose a commuting radius that includes Heerlen, Sittard-Geleen and possibly Aachen, review new vacancies weekly and attend Brightlands and university events. Follow up personally with people you meet - regional employers appreciate proactive interest.
 
 ## Logistics in North and Central Limburg
 
@@ -144,7 +144,7 @@ Graduates who stay in South Limburg often find that they gain responsibility fas
 
 ## Preparing for Interviews
 
-Interviews for junior data roles in Limburg usually include a conversation about motivation and background, a technical interview covering statistics, programming and machine learning fundamentals, and often a case based on the employer's domain — for example estimating missing values in a register, forecasting demand for a warehouse or evaluating a model for detecting anomalies in a chemical process. Public organisations may add an assessment or ask for a certificate of good conduct. Prepare by explaining your thesis and projects clearly, including limitations and what you would do differently. Maastricht University's problem-based learning prepares students well for group discussions and case interviews; draw on that experience. Dutch interviewers appreciate directness and honest reflection more than polished sales pitches, and they often discuss salary early, so research typical pay scales beforehand.
+Interviews for junior data roles in Limburg usually include a conversation about motivation and background, a technical interview covering statistics, programming and machine learning fundamentals, and often a case based on the employer's domain - for example estimating missing values in a register, forecasting demand for a warehouse or evaluating a model for detecting anomalies in a chemical process. Public organisations may add an assessment or ask for a certificate of good conduct. Prepare by explaining your thesis and projects clearly, including limitations and what you would do differently. Maastricht University's problem-based learning prepares students well for group discussions and case interviews; draw on that experience. Dutch interviewers appreciate directness and honest reflection more than polished sales pitches, and they often discuss salary early, so research typical pay scales beforehand.
 
 ## Networking in the Region
 

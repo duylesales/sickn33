@@ -27,11 +27,11 @@ Dit is geen strikvraag en vereist geen informatica-diploma om goed te beantwoord
 
 ## "Welke delen zijn echt AI, en welke delen zijn gewoon software?"
 
-Dit is de vraag waar de meeste oprichters over struikelen, omdat het de vraag is waar niet-technische oprichters het minst op voorbereid zijn om die delen te scheiden. Investeerders hebben geleerd dat "AI-powered" vaak één kleine functie betekent die een model aanroept, verpakt in een veel grotere hoeveelheid volledig conventionele software — authenticatie, een database, een UI. Ze willen de verhouding weten, want die vertelt hen wat ze eigenlijk waarderen: een echte AI-capaciteit, of een normaal product met een AI-garnering.
+Dit is de vraag waar de meeste oprichters over struikelen, omdat het de vraag is waar niet-technische oprichters het minst op voorbereid zijn om die delen te scheiden. Investeerders hebben geleerd dat "AI-powered" vaak één kleine functie betekent die een model aanroept, verpakt in een veel grotere hoeveelheid volledig conventionele software - authenticatie, een database, een UI. Ze willen de verhouding weten, want die vertelt hen wat ze eigenlijk waarderen: een echte AI-capaciteit, of een normaal product met een AI-garnering.
 
 ## "Wat gebeurt er als de modelleverancier de voorwaarden, prijzen of toegang wijzigt?"
 
-Investeerders hebben genoeg AI-afhankelijke producten zien wankelen door een prijswijziging van een leverancier om deze vraag reflexmatig te stellen. Als u geen antwoord heeft — een fallbackplan, een kostenplafond, een alternatief leveranciertraject — wordt dat gelezen als een enkel storingspunt midden in uw businessmodel.
+Investeerders hebben genoeg AI-afhankelijke producten zien wankelen door een prijswijziging van een leverancier om deze vraag reflexmatig te stellen. Als u geen antwoord heeft - een fallbackplan, een kostenplafond, een alternatief leveranciertraject - wordt dat gelezen als een enkel storingspunt midden in uw businessmodel.
 
 ## "Wie heeft de beveiliging en gegevensverwerking beoordeeld?"
 
@@ -41,9 +41,9 @@ AI-coderingstools genereren snel werkende software, maar "werkend" en "veilig" z
 
 Deze vraag gaat eigenlijk over afhankelijkheid van de oprichter versus afhankelijkheid van de tool. Investeerders willen de geruststelling dat de waarde van het product leeft in uw begrip van het probleem en de architectuur, en niet volledig in een black box die u niet zelfstandig kunt uitleggen of onderhouden.
 
-Lotte Jansen, een oprichter in Utrecht, liep recht tegen deze muur op. Ze bouwde "GroeiMetric", een analysedashboard, met Cursor, en had een veelbelovend eerste pitchgesprek — totdat een investeerder haar vroeg de technische architectuur toe te lichten en aan te geven welke delen van het product echt "AI" waren versus aangepaste logica. Ze had geen kant-en-klaar antwoord, en het gesprek liep vast op een vraag waar ze nog nooit eerder over had hoeven nadenken.
+Lotte Jansen, een oprichter in Utrecht, liep recht tegen deze muur op. Ze bouwde "GroeiMetric", een analysedashboard, met Cursor, en had een veelbelovend eerste pitchgesprek - totdat een investeerder haar vroeg de technische architectuur toe te lichten en aan te geven welke delen van het product echt "AI" waren versus aangepaste logica. Ze had geen kant-en-klaar antwoord, en het gesprek liep vast op een vraag waar ze nog nooit eerder over had hoeven nadenken.
 
-Dit is precies het gat dat LaunchStudio wil dichten voordat het een oprichter een investeringsronde kost. Gesteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — werkt ons team, inclusief engineers gevestigd in Singapore, rechtstreeks met niet-technische oprichters om de architectuur duidelijk genoeg te documenteren om investeerdersonderzoek te doorstaan, niet alleen om een demo te doorstaan. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) als u een pitch voor de boeg heeft en uw architectuurverhaal op orde wilt hebben voordat u de kamer binnenstapt. Voor de standaard waaraan onze engineers klantwerk houden, zie [de aanpak van Manifera](https://www.manifera.com/about-us/).
+Dit is precies het gat dat LaunchStudio wil dichten voordat het een oprichter een investeringsronde kost. Gesteund door Manifera - vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW - werkt ons team, inclusief engineers gevestigd in Singapore, rechtstreeks met niet-technische oprichters om de architectuur duidelijk genoeg te documenteren om investeerdersonderzoek te doorstaan, niet alleen om een demo te doorstaan. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) als u een pitch voor de boeg heeft en uw architectuurverhaal op orde wilt hebben voordat u de kamer binnenstapt. Voor de standaard waaraan onze engineers klantwerk houden, zie [de aanpak van Manifera](https://www.manifera.com/about-us/).
 
 ## Uw Architectuur-Antwoord op Één A4 Voorbereiden Voordat U Binnenstapt
 
@@ -64,18 +64,18 @@ Wanneer u een zakelijke prospect dit gestructureerde overzicht kunt overhandigen
 
 ### Een AI-native oprichter in actie: De vraag die Lottes pitch deed vastlopen
 
-Lotte Jansen had GroeiMetric gebouwd om een echt probleem op te lossen — Nederlandse mkb-bedrijven hadden een eenvoudigere manier nodig om groeicijfers bij te houden zonder een data-analist aan te nemen. Met Cursor kon ze snel bewegen, en tegen de tijd dat ze investeerders pitchte, zag het product er gepolijst uit, werkte het betrouwbaar in demo's en had het een handvol betalende pilotklanten. Ze voelde zich klaar.
+Lotte Jansen had GroeiMetric gebouwd om een echt probleem op te lossen - Nederlandse mkb-bedrijven hadden een eenvoudigere manier nodig om groeicijfers bij te houden zonder een data-analist aan te nemen. Met Cursor kon ze snel bewegen, en tegen de tijd dat ze investeerders pitchte, zag het product er gepolijst uit, werkte het betrouwbaar in demo's en had het een handvol betalende pilotklanten. Ze voelde zich klaar.
 
-Het gesprek verliep goed totdat een investeerder, middenin het gesprek, haar vroeg de technische architectuur toe te lichten: wat was de datapijplijn, waar zat de "AI" eigenlijk in de stack, en wat was op maat gebouwd versus gegenereerd door de tool. Lotte besefte dat ze deze onderdelen nooit eerder in haar eigen hoofd had hoeven scheiden — Cursor had het geheel als één doorlopende flow gebouwd, en zij had zich gericht op de productervaring, niet op de onderliggende kaart. Ze gaf een vaag antwoord, de vragen van de investeerder bleven doorborduren, en het gesprek eindigde met een beleefd "laten we contact houden" dat nooit echt tot een termsheet leidde.
+Het gesprek verliep goed totdat een investeerder, middenin het gesprek, haar vroeg de technische architectuur toe te lichten: wat was de datapijplijn, waar zat de "AI" eigenlijk in de stack, en wat was op maat gebouwd versus gegenereerd door de tool. Lotte besefte dat ze deze onderdelen nooit eerder in haar eigen hoofd had hoeven scheiden - Cursor had het geheel als één doorlopende flow gebouwd, en zij had zich gericht op de productervaring, niet op de onderliggende kaart. Ze gaf een vaag antwoord, de vragen van de investeerder bleven doorborduren, en het gesprek eindigde met een beleefd "laten we contact houden" dat nooit echt tot een termsheet leidde.
 
 Lotte bracht GroeiMetric daarna naar LaunchStudio, niet voor een herbouw, maar voor precies dit: een duidelijke architectuurbeoordeling en documentatie die ze in haar eigen woorden kon toelichten in het volgende gesprek. Engineers brachten het systeem in kaart, gaven aan wat echt AI-gedreven was versus standaard applicatielogica, signaleerden onderweg een paar beveiligingsgaten, en maakten een architectuursamenvatting in gewone taal waar Lotte vol vertrouwen over kon spreken.
 
-**Resultaat:** Lottes volgende investeerdersgesprek bevatte dezelfde architectuurvraag — deze keer beantwoordde ze die in minder dan twee minuten, zonder notities.
+**Resultaat:** Lottes volgende investeerdersgesprek bevatte dezelfde architectuurvraag - deze keer beantwoordde ze die in minder dan twee minuten, zonder notities.
 
 > *"Ik hoefde geen engineer te worden. Ik had iemand nodig die me de kaart gaf van wat ik al had gebouwd."*
-> — **Lotte Jansen, oprichter, GroeiMetric (Utrecht)**
+> - **Lotte Jansen, oprichter, GroeiMetric (Utrecht)**
 
-**Kosten en tijdlijn:** € 900 (architectuurbeoordeling en oprichter-gerichte documentatie) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 900 (architectuurbeoordeling en oprichter-gerichte documentatie) - voltooid in 3 werkdagen.
 
 ---
 
@@ -95,7 +95,7 @@ De engineers van Manifera, inclusief het team gevestigd in Singapore, beoordelen
 
 ### Moet ik beveiligingsgaten bij investeerders noemen voordat ze ernaar vragen?
 
-Over het algemeen wel — proactief een bekend gat en uw plan om het op te lossen benoemen komt veel beter over dan onvoorbereid betrapt worden wanneer een investeerder er rechtstreeks naar vraagt.
+Over het algemeen wel - proactief een bekend gat en uw plan om het op te lossen benoemen komt veel beter over dan onvoorbereid betrapt worden wanneer een investeerder er rechtstreeks naar vraagt.
 
 ### Kan dit soort beoordeling snel gebeuren vóór een pitch-deadline?
 
@@ -135,7 +135,7 @@ Ja, architectuurbeoordelingen worden doorgaans binnen een paar werkdagen gescope
       "name": "Moet ik beveiligingsgaten bij investeerders noemen voordat ze ernaar vragen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Over het algemeen wel — proactief een bekend gat en uw plan om het op te lossen benoemen komt veel beter over dan onvoorbereid betrapt worden wanneer een investeerder er rechtstreeks naar vraagt."
+        "text": "Over het algemeen wel - proactief een bekend gat en uw plan om het op te lossen benoemen komt veel beter over dan onvoorbereid betrapt worden wanneer een investeerder er rechtstreeks naar vraagt."
       }
     },
     {

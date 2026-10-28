@@ -8,11 +8,11 @@ Een CTO-as-a-Service en een lanceringshardeningstraject lossen twee verschillend
 
 ✅ Een traject met vaste scope, een gedefinieerde kostprijs en een verharde, gedeployde applicatie
 ✅ Specialisten die persoonlijk betalingen, databasebeveiliging en infrastructuurhiaten repareren
-✅ Geen retainer, geen aandelengesprek — gewoon de specifieke, gevaarlijke hiaten gedicht
+✅ Geen retainer, geen aandelengesprek - gewoon de specifieke, gevaarlijke hiaten gedicht
 
 Bij **LaunchStudio** lossen wij precies dit afgebakende engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Willem lanceerde vier weken later dan gepland, maar met een geverifieerd veilige app, en bespaarde de retainer voor een fase waar hij nog niet is. (€ 2.600 — Launch & Grow Pakket, gehard en gedeployed in 10 werkdagen.) 🚀
+Willem lanceerde vier weken later dan gepland, maar met een geverifieerd veilige app, en bespaarde de retainer voor een fase waar hij nog niet is. (€ 2.600 - Launch & Grow Pakket, gehard en gedeployed in 10 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-cto-as-a-service
 

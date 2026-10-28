@@ -60,7 +60,7 @@ For a typical Bolt application of twenty to forty components, this is one to thr
 
 Do not stop feature work for a month. Migrate in stages.
 
-Start with the public pages — marketing, blog, anything that needs to rank — as a new application on the same domain, with the existing application still serving everything behind the login. This delivers the main benefit immediately and touches nothing customers depend on.
+Start with the public pages - marketing, blog, anything that needs to rank - as a new application on the same domain, with the existing application still serving everything behind the login. This delivers the main benefit immediately and touches nothing customers depend on.
 
 Then move the application's screens one at a time, beginning with the simplest and the least used, verifying each before the next. Both applications share the same database throughout, so there is no data migration at all.
 
@@ -68,7 +68,7 @@ Then authentication, which is the step with user-visible effect because sessions
 
 Then remove the old application, once nothing routes to it.
 
-At every stage the product works. If the migration stalls — and they do, when something more urgent appears — you are left in a working state rather than half-way through a rewrite.
+At every stage the product works. If the migration stalls - and they do, when something more urgent appears - you are left in a working state rather than half-way through a rewrite.
 
 ## The Middle Path Worth Considering
 
@@ -82,7 +82,7 @@ This is a day of work rather than three weeks, it addresses the most common genu
 
 One consequence of migrating is rarely mentioned and matters for products built this way: the tools behave differently against a full framework than against the application they generated.
 
-Bolt and its equivalents are at their best producing a self-contained application from scratch. Against an established framework codebase with server components, route conventions and its own patterns, a general assistant such as Cursor or Claude Code is the better fit — it reads the existing code, follows the conventions it finds, and makes contained changes.
+Bolt and its equivalents are at their best producing a self-contained application from scratch. Against an established framework codebase with server components, route conventions and its own patterns, a general assistant such as Cursor or Claude Code is the better fit - it reads the existing code, follows the conventions it finds, and makes contained changes.
 
 So a migration is usually also a change in how you work: from describing features to a builder that generates them, to editing a codebase with an assistant that helps. That is a real shift, and founders who are not developers sometimes find it harder rather than easier, which is worth knowing before committing.
 
@@ -94,7 +94,7 @@ If neither of those appeals, that is itself an argument for the middle path: kee
 
 If a migration is genuinely warranted, the choice among the serious options matters less than founders expect, and the decision can be made in an afternoon.
 
-**Next.js** is the default for React applications, which is what Bolt produces, and has the largest ecosystem and the most material for coding assistants to have learned from. That last point is not trivial in a product built this way — an assistant writes better Next.js than it writes almost anything else, simply because there is more of it in the world.
+**Next.js** is the default for React applications, which is what Bolt produces, and has the largest ecosystem and the most material for coding assistants to have learned from. That last point is not trivial in a product built this way - an assistant writes better Next.js than it writes almost anything else, simply because there is more of it in the world.
 
 **Remix** has a cleaner data model in several respects and a smaller community.
 
@@ -102,7 +102,7 @@ If a migration is genuinely warranted, the choice among the serious options matt
 
 **SvelteKit** and others are fine and mean discarding your React components, which is most of what transfers.
 
-For a Bolt application with a real reason to move, Next.js is the sensible default and the burden of argument is on any alternative. The one genuine fork is Astro for a product that is mostly content — and in that case, the day-long option of a separate static marketing site achieves the same thing without touching the application at all.
+For a Bolt application with a real reason to move, Next.js is the sensible default and the burden of argument is on any alternative. The one genuine fork is Astro for a product that is mostly content - and in that case, the day-long option of a separate static marketing site achieves the same thing without touching the application at all.
 
 ## Set a Budget and a Stopping Rule
 
@@ -110,7 +110,7 @@ Migrations of this kind have a characteristic failure: they take twice as long a
 
 Two protections, agreed with yourself before starting.
 
-**A time budget with a review point.** Three weeks, with an honest assessment at the end of week two. If the public pages are done and the application screens are going slowly, stopping there is a legitimate outcome — you have the benefit that justified the work, and the rest can wait indefinitely.
+**A time budget with a review point.** Three weeks, with an honest assessment at the end of week two. If the public pages are done and the application screens are going slowly, stopping there is a legitimate outcome - you have the benefit that justified the work, and the rest can wait indefinitely.
 
 **A rule that the product keeps shipping.** At least one customer-visible improvement a week during the migration, however small. It keeps you in contact with the people paying you and it prevents the quiet slide into a quarter spent on infrastructure.
 
@@ -120,7 +120,7 @@ The staged approach described above makes both possible, because there is no poi
 
 For a product with a real reason to migrate this is typically one to three weeks: the reason stated specifically and tested against the alternatives, public pages moved first as a separate application on the same domain, screens migrated one at a time from least to most used with both applications sharing the database, data fetching moved to the server, environment variables renamed with the bundle checked for secrets, authentication migrated to a cookie-based server-aware pattern at a quiet hour with notice, the old application retired once nothing routes to it, and the whole thing kept working at every stage.
 
-LaunchStudio does this migration, and also tells founders when the day-long alternative is sufficient — which it often is. The engineers are Manifera's — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this migration, and also tells founders when the day-long alternative is sufficient - which it often is. The engineers are Manifera's - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Tell us what you are trying to fix](https://launchstudio.eu/en/#contact) and we will tell you whether a migration is the way to fix it.
 
@@ -132,16 +132,16 @@ Ties Grootveld built Aanbestedingsradar with Bolt: a service that monitors Dutch
 
 He had been told repeatedly that he should move to Next.js. His stated reasons were that his marketing pages did not rank and that the product felt slow.
 
-The assessment separated the two. The marketing pages genuinely needed server rendering — they were a single-page application serving an empty document, which is why none of his eleven articles were indexed. The application's slowness was something else entirely: the tender list fetched every row a company had ever been matched with and paginated in the browser, which for his largest subscriber was 41,000 rows.
+The assessment separated the two. The marketing pages genuinely needed server rendering - they were a single-page application serving an empty document, which is why none of his eleven articles were indexed. The application's slowness was something else entirely: the tender list fetched every row a company had ever been matched with and paginated in the browser, which for his largest subscriber was 41,000 rows.
 
 One business day, not three weeks: the marketing site and blog rebuilt as a statically generated application serving real HTML, deployed at the domain root, with the existing Bolt application moved to `/app` and excluded from indexing; canonical URLs and a sitemap added; the tender list converted to cursor pagination with an index on the matching table, taking the largest subscriber's list from 9 seconds to 210 milliseconds; and a note written recording that a full framework migration remains available if server-side logic ever justifies it.
 
 **Result:** nine of eleven articles indexed within a month and organic enquiries began arriving for the first time. The application's speed problem, which the migration would not have fixed, was resolved by an index and a query change. Ties has not migrated the application and, two years on, has not needed to.
 
 > *"Everyone told me the framework was the problem. The marketing pages did need fixing. The slow screen was a query that fetched forty-one thousand rows, and it would have been just as slow in Next.js."*
-> — **Ties Grootveld, Founder, Aanbestedingsradar (Den Haag)**
+> - **Ties Grootveld, Founder, Aanbestedingsradar (Den Haag)**
 
-**Cost & Timeline:** €2,400 (static marketing application with server-rendered HTML, application relocation and index exclusion, canonical URLs and sitemap, cursor pagination with indexing, documented migration option) — completed in 1 business day.
+**Cost & Timeline:** €2,400 (static marketing application with server-rendered HTML, application relocation and index exclusion, canonical URLs and sitemap, cursor pagination with indexing, documented migration option) - completed in 1 business day.
 
 ## Frequently Asked Questions
 
@@ -175,7 +175,7 @@ Often. A separate statically generated marketing site at the domain root with th
       "name": "When should a Bolt app move to a full framework?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When public pages must rank, substantial server-side logic is needed, or data should be fetched on the server — not for professionalism or unexplained slowness."
+        "text": "When public pages must rank, substantial server-side logic is needed, or data should be fetched on the server - not for professionalism or unexplained slowness."
       }
     },
     {
@@ -199,7 +199,7 @@ Often. A separate statically generated marketing site at the domain root with th
       "name": "Can the migration happen without downtime?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — public pages first, then screens one at a time sharing the same database, with authentication migrated last."
+        "text": "Yes - public pages first, then screens one at a time sharing the same database, with authentication migrated last."
       }
     },
     {

@@ -43,7 +43,7 @@ Niet elke kleine wijziging heeft een feature flag nodig. Als u overal vlaggen om
 
 Vier use-cases zijn de investering dubbel en dwars waard:
 
-1. **De Geleidelijke Uitrol (*Gradual Rollout*):** Voor alles wat kernprocessen raakt — zoals de betaalcheckout, het onboardingtraject of het hoofddashboard. Rol uit naar 5%, monitor de foutpercentages en serverbelasting, en breid pas daarna uit.
+1. **De Geleidelijke Uitrol (*Gradual Rollout*):** Voor alles wat kernprocessen raakt - zoals de betaalcheckout, het onboardingtraject of het hoofddashboard. Rol uit naar 5%, monitor de foutpercentages en serverbelasting, en breid pas daarna uit.
 2. **De Noodschakelaar (*Kill Switch*):** Voor features die kostbare externe API's aanroepen (zoals dure LLM-tokens van OpenAI of Anthropic) of integraties die onvoorspelbaar kunnen haperen. Als de externe API vastloopt of de kosten exploderen, deactiveert u de functie direct zonder downtime.
 3. **Vroege Toegang voor Bètaklanten (*Beta Access*):** Geef een gloednieuwe module exclusief aan een selecte groep power users. Hun gerichte feedback is goud waard vóórdat u de massa confronteert met kinderziektes.
 4. **Pakketgebaseerde Toegang (*Plan Gating*):** Bepaalde geavanceerde functies uitsluitend activeren voor klanten op een Enterprise-abonnement.
@@ -93,7 +93,7 @@ Drie regels tegen flag debt:
 - **Het verwijderen van de flag hoort bij het afronden van de feature:** De taak is pas 'Done' als de if/else-vertakking is opgeruimd en de flag-tabel is geschoond.
 - **Voer maandelijks een flag-audit uit:** Loop eenmaal per maand in vijf minuten door uw vlaggenlijst.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste SaaS-systemen) bouwen we server-side rollout-mechanismes, auditbare toggles en monitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw uitrolstrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat u nieuwe functies lanceert met totale controle.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste SaaS-systemen) bouwen we server-side rollout-mechanismes, auditbare toggles en monitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw uitrolstrategie met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat u nieuwe functies lanceert met totale controle.
 
 ## Echt voorbeeld
 
@@ -107,10 +107,10 @@ Binnen een uur barstte de bom:
 
 Omdat er geen feature flag was, kon Lotte de functionaliteit niet simpelweg uitzetten. Ze moest koortsachtig anderhalf uur lang live op productie troubleshooten, codewijzigingen pushen en testen. Gedurende die negentig minuten lagen de financiële data van al haar klanten op straat. Twee grote bureaus stelden haar aansprakelijk voor het lekken van vertrouwelijke tarieven.
 
-**Resultaat:** LaunchStudio richtte binnen twee werkdagen een waterdichte feature flag-structuur in: een PostgreSQL-tabel met server-side middleware, stabiele account-hashing en een overzichtelijk dashboardje. De eerstvolgende grote update — een vernieuwde media-uploadmodule — werd stapsgewijs uitgerold: eerst Lotte zelf, daarna vijf testbureaus, daarna 10%. Bij die 10% trad direct een geheugenlek op bij Safari-gebruikers. Lotte deactiveerde de flag binnen **20 seconden vanaf haar iPhone** tijdens een etentje. Slechts drie bureaus merkten er iets van, en er lekte geen byte data.
+**Resultaat:** LaunchStudio richtte binnen twee werkdagen een waterdichte feature flag-structuur in: een PostgreSQL-tabel met server-side middleware, stabiele account-hashing en een overzichtelijk dashboardje. De eerstvolgende grote update - een vernieuwde media-uploadmodule - werd stapsgewijs uitgerold: eerst Lotte zelf, daarna vijf testbureaus, daarna 10%. Bij die 10% trad direct een geheugenlek op bij Safari-gebruikers. Lotte deactiveerde de flag binnen **20 seconden vanaf haar iPhone** tijdens een etentje. Slechts drie bureaus merkten er iets van, en er lekte geen byte data.
 
 > *"Drie maanden werk bereikte iedereen in één seconde, en het kostte anderhalf uur paniek om het terug te draaien. De volgende release bereikte negen bureaus, en toen er een fout opdook zette ik het uit vanaf mijn telefoon."*
-> — **Lotte Vermeer, Oprichter, Studiolijn**
+> - **Lotte Vermeer, Oprichter, Studiolijn**
 
 **Kosten & Doorlooptijd:** Feature flag architectuur, server-side evaluatie en migratie-hashing opgeleverd in 2 werkdagen.
 

@@ -1,4 +1,4 @@
-🔥 Xavier built a prototype using **Lovable** — xavier, a startup founder, used **lovable** to build a medical diagnostic assistant prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Xavier built a prototype using **Lovable** - xavier, a startup founder, used **lovable** to build a medical diagnostic assistant prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Xavier's application achieved production readiness: Xavier boosted task completion rates by 48% and decreased input errors by medical staff. (€3,100 (UX Refactoring Package) — production-ready and deployed in 9 business days.). 🚀
+Xavier's application achieved production readiness: Xavier boosted task completion rates by 48% and decreased input errors by medical staff. (€3,100 (UX Refactoring Package) - production-ready and deployed in 9 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/future-ai-interfaces-beyond-chatbots
 

@@ -1,8 +1,8 @@
 🚨 What happens to your production system the day the one person who understands it stops answering his phone? ⚙️💥
 
 **The Pain Points:**
-❌ **The Groningen Engineering Talent Trap:** A CTO at a Groningen energy-transition company inherited a bespoke scheduling and asset-tracking system built four years ago by a single freelance developer — cheap, fast, and, at the time, exactly what a lean scale-up needed. That freelancer has since gone quiet: no forwarding contact, no handover notes, no architecture diagram, no test suite, and a Git history (if one exists at all) that reads like a private diary only he could interpret.
-❌ **Compounding Burn Rate & Delayed Roadmaps:** This is not a theoretical risk — it is an active one, and the meter is running. Every week the CTO delays action is a week closer to a server failure, a dependency going out of support, or a data-corruption bug with no one able to safely touch the code to fix it.
+❌ **The Groningen Engineering Talent Trap:** A CTO at a Groningen energy-transition company inherited a bespoke scheduling and asset-tracking system built four years ago by a single freelance developer - cheap, fast, and, at the time, exactly what a lean scale-up needed. That freelancer has since gone quiet: no forwarding contact, no handover notes, no architecture diagram, no test suite, and a Git history (if one exists at all) that reads like a private diary only he could interpret.
+❌ **Compounding Burn Rate & Delayed Roadmaps:** This is not a theoretical risk - it is an active one, and the meter is running. Every week the CTO delays action is a week closer to a server failure, a dependency going out of support, or a data-corruption bug with no one able to safely touch the code to fix it.
 ❌ **The Local Monolith & Freelancer Risk:** Relying on fragmented freelancers or legacy local agencies leads to single-developer dependency, zero test automation, and brittle production deployments.
 
 **The Manifera Solution:**

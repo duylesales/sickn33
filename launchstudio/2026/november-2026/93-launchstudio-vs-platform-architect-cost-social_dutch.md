@@ -1,6 +1,6 @@
 🏗️ Tien weken bezig met het interviewen van kandidaten voor platform architect, en precies het probleem waar u omheen probeert aan te nemen, ontploft net voor de ogen van een grote klant.
 
-Als uw datamodel en servicegrenzen nooit bewust zijn ontworpen — maar simpelweg zijn geërfd van wat een AI-builder toevallig heeft opgezet — dan vindt de groeiende belasting van een klant de scheuren eerder dan de startdatum van uw nieuwe aanwerving.
+Als uw datamodel en servicegrenzen nooit bewust zijn ontworpen - maar simpelweg zijn geërfd van wat een AI-builder toevallig heeft opgezet - dan vindt de groeiende belasting van een klant de scheuren eerder dan de startdatum van uw nieuwe aanwerving.
 
 ❌ 4+ maanden wachten tot een senior architect is geworven, ingewerkt en volledig productief is
 ❌ €120.000-€180.000 aan volledig belaste kosten betalen in het eerste jaar voor een rol die vaak pieksgewijs is, niet dagelijks
@@ -12,7 +12,7 @@ Als uw datamodel en servicegrenzen nooit bewust zijn ontworpen — maar simpelwe
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Eén founder pauzeerde een zoektocht van 10 weken naar een architect nadat de vlootomvang van een pilotklant een monolithisch datamodel blootlegde — wij herontwierpen het en brachten de queryduur terug van vertragingen van meerdere seconden naar minder dan 200ms. (€4.800, Relaunch & Scale Pakket — 12 werkdagen.) 🚀
+Eén founder pauzeerde een zoektocht van 10 weken naar een architect nadat de vlootomvang van een pilotklant een monolithisch datamodel blootlegde - wij herontwierpen het en brachten de queryduur terug van vertragingen van meerdere seconden naar minder dan 200ms. (€4.800, Relaunch & Scale Pakket - 12 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-platform-architect-cost
 

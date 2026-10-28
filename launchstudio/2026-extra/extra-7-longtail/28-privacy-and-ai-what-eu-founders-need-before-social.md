@@ -11,9 +11,9 @@ By the time you're big enough to hire a privacy specialist, the architecture dec
 ✅ Confirm and adjust hosting to guarantee EU data residency
 ✅ Build account-level data export and deletion, plus ongoing monitoring to support breach notification
 
-At **LaunchStudio**, we treat this as engineering work wearing a legal document's clothes — closed with Manifera's decade-plus of enterprise compliance delivery, on a fixed scope that keeps the product customers already use untouched. 🛡️
+At **LaunchStudio**, we treat this as engineering work wearing a legal document's clothes - closed with Manifera's decade-plus of enterprise compliance delivery, on a fixed scope that keeps the product customers already use untouched. 🛡️
 
-Matteo's result: full subprocessor documentation, confirmed EU residency, and working data rights in place in time to close the deal — not lose it to a stalled procurement review. 🚀
+Matteo's result: full subprocessor documentation, confirmed EU residency, and working data rights in place in time to close the deal - not lose it to a stalled procurement review. 🚀
 
 👉 Enterprise procurement asking data-handling questions your AI-built SaaS can't answer yet? See the fastest path to ready: https://launchstudio.eu/en/blog/privacy-and-ai-what-eu-founders-need-before
 

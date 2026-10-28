@@ -1,4 +1,4 @@
-🔥 Connor bouwde een prototype met **Lovable** — Connor, een operationeel directeur, bouwde een AI-voorraadplanner, maar zakelijke leads weigerden hun echte inventarisdata te uploaden tijdens live verkoopdemo's. 🧠
+🔥 Connor bouwde een prototype met **Lovable** - Connor, een operationeel directeur, bouwde een AI-voorraadplanner, maar zakelijke leads weigerden hun echte inventarisdata te uploaden tijdens live verkoopdemo's. 🧠
 
 Het converteren van zakelijke enterprise AI-contracten vereist Sales-Led Growth, een Discovery-gestuurde funnel en geïsoleerde demo-sandboxes.
 
@@ -12,7 +12,7 @@ Het converteren van zakelijke enterprise AI-contracten vereist Sales-Led Growth,
 
 Bij **LaunchStudio** lossen we exact dit type enterprise-funnel en demo-architectuurvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Connors verkooptraject transformeerde: De lead-naar-demo conversie steeg met 40%, wat direct resulteerde in 3 getekende pilotprojecten. (€1.700 (Sandbox Workspace Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Connors verkooptraject transformeerde: De lead-naar-demo conversie steeg met 40%, wat direct resulteerde in 3 getekende pilotprojecten. (€1.700 (Sandbox Workspace Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/building-sales-funnel-enterprise-ai
 

@@ -1,4 +1,4 @@
-🔥 Sarah bouwde een prototype via **Next.js op Vercel** — als oprichter van een B2B SaaS voor Zoom-transcripties liepen haar serverless functies vast op 60-seconden time-outs en schoot haar hostingfactuur omhoog naar $8.500/mnd. 🧠
+🔥 Sarah bouwde een prototype via **Next.js op Vercel** - als oprichter van een B2B SaaS voor Zoom-transcripties liepen haar serverless functies vast op 60-seconden time-outs en schoot haar hostingfactuur omhoog naar $8.500/mnd. 🧠
 
 Als uw AI-applicatie lange verwerkingstaken (zoals audio, video of multi-step agents) draait op serverless functies, vernietigt de GB-second serverless-belasting direct uw brutomarge.
 
@@ -12,7 +12,7 @@ Als uw AI-applicatie lange verwerkingstaken (zoals audio, video of multi-step ag
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Sarah herstelde direct de winstgevendheid van haar startup en schaalde moeiteloos verder. (€14.000 (DevOps Audit & Dedicated Migratie) — binnen 25 werkdagen live). 🚀
+Sarah herstelde direct de winstgevendheid van haar startup en schaalde moeiteloos verder. (€14.000 (DevOps Audit & Dedicated Migratie) - binnen 25 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/serverless-vs-dedicated-servers-ai
 

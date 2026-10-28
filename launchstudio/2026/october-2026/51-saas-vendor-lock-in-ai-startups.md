@@ -13,7 +13,7 @@ It is a great strategy for your first 100 users. But what happens when you scale
 
 One day, OpenAI announces a massive price hike. Or worse, their API goes down for six hours on a Tuesday afternoon. Because your entire codebase is hardcoded to specifically use their proprietary endpoints, your app goes offline. You are losing money by the minute, and you cannot do anything about it.
 
-This is the nightmare of **Vendor Lock-In**. You do not own your infrastructure; you are merely renting space on someone else's platform, and they control your destiny. It's one of the quieter reasons roughly 80% of AI-built projects never make it to a stable, durable production state — the app worked fine in the demo, but nobody engineered an escape hatch for when a single dependency stumbled. Here is how relying on a single AI vendor threatens your startup, and how to engineer your escape.
+This is the nightmare of **Vendor Lock-In**. You do not own your infrastructure; you are merely renting space on someone else's platform, and they control your destiny. It's one of the quieter reasons roughly 80% of AI-built projects never make it to a stable, durable production state - the app worked fine in the demo, but nobody engineered an escape hatch for when a single dependency stumbled. Here is how relying on a single AI vendor threatens your startup, and how to engineer your escape.
 
 ## The Three Traps of AI Vendor Lock-In
 
@@ -27,7 +27,7 @@ AI is moving too fast to bet on one horse. Today, one provider might be the best
 
 ### 3. The Unannounced Deprecation
 
-When you rely heavily on closed, proprietary frameworks — like a specific vendor's "Assistants API" or specific no-code platform plugins — the vendor can deprecate or fundamentally alter how that tool works with little to no warning. A single update to their platform can break months of your hard work, forcing you to rewrite your app overnight instead of on your own schedule.
+When you rely heavily on closed, proprietary frameworks - like a specific vendor's "Assistants API" or specific no-code platform plugins - the vendor can deprecate or fundamentally alter how that tool works with little to no warning. A single update to their platform can break months of your hard work, forcing you to rewrite your app overnight instead of on your own schedule.
 
 ### 4. The Database Lock-In Nobody Mentions
 
@@ -45,18 +45,18 @@ Backed by [Manifera's](https://www.manifera.com/) extensive enterprise software 
 
 We use open-source frameworks (like LangChain) running on secure Node.js or Python backends, and we build your data layer on standard PostgreSQL rather than a proprietary format, so your data itself is never held hostage either. If OpenAI goes down, our architecture automatically "fails over" and routes your users' prompts to an Anthropic server within milliseconds. Your users never even notice the outage. By owning your own backend logic, you regain total control over your pricing, your uptime, and your startup's destiny. This is the same architectural discipline we apply across [custom software development](https://www.manifera.com/services/custom-software-development/) engagements for enterprise clients.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
 ## A Quick Self-Check: How Locked In Are You?
 
 Before you can escape vendor lock-in, you need to know how deep it goes. Ask yourself these four questions honestly:
 
 1. **Can you name every place in your codebase that calls an LLM directly?** If the answer is "no, it's scattered across dozens of components," you don't have a router, you have tangled wiring.
-2. **Do you own a portable export of your database schema?** If your data lives entirely inside a proprietary no-code platform, you don't actually own your data — you're renting access to it.
+2. **Do you own a portable export of your database schema?** If your data lives entirely inside a proprietary no-code platform, you don't actually own your data - you're renting access to it.
 3. **Have you ever tested what happens when your primary AI provider is down?** If you haven't deliberately simulated an outage in staging, you don't know how your app behaves under real failure, and neither do your users until it happens live.
 4. **Is your pricing model hardcoded to one provider's cost structure?** If your margins assume a specific price-per-token that a vendor could change tomorrow, your unit economics are only as stable as their next pricing email.
 
-If you answered "no" to more than one of these, vendor lock-in isn't a future risk for your startup — it's a present one.
+If you answered "no" to more than one of these, vendor lock-in isn't a future risk for your startup - it's a present one.
 
 ## Key Takeaways
 
@@ -81,7 +81,7 @@ We orchestrated a complete "escape" from his vendor lock-in. Our team extracted 
 
 **Result:** Mark never suffered another AI outage again. Because his new architecture was agnostic, he was also able to route simple tasks to cheaper, open-source models, cutting his overall API bill by 40%. *"I didn't realize I was being held hostage until the servers went down. LaunchStudio built the universal router that gave me my business back."*
 
-**Cost & Timeline:** €11,500 (Agnostic Backend Rebuild & Dynamic LLM Routing) — completed in 20 business days.
+**Cost & Timeline:** €11,500 (Agnostic Backend Rebuild & Dynamic LLM Routing) - completed in 20 business days.
 
 ---
 

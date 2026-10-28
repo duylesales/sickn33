@@ -38,7 +38,7 @@ Most technical hiring processes are inherited rather than designed. A team copie
 
 ## Start From the Job, Not From the Stages
 
-Write down what the person will actually do in their first year. Not the job advertisement — the real work. Then list the four or five capabilities that determine whether they will do it well.
+Write down what the person will actually do in their first year. Not the job advertisement - the real work. Then list the four or five capabilities that determine whether they will do it well.
 
 For a machine learning engineer building production systems, those might be: writing maintainable code, framing a problem and choosing an appropriate method, evaluating honestly, deploying and operating systems, and working with non-technical stakeholders. For a research-oriented role the list looks different. For a data engineer, different again.
 
@@ -46,13 +46,13 @@ Each capability gets assessed once, by someone qualified to assess it, with an a
 
 ## Designing an AI Interview Process: A Four-Stage Default
 
-**Stage 1 — Screening call (30 minutes, recruiter or hiring manager).** Confirm mutual interest, explain the role honestly, check practical constraints such as location, availability and salary range. Salary should be discussed here; under the EU Pay Transparency Directive (EU) 2023/970 member states are introducing requirements to provide pay range information to applicants, and early transparency prevents wasted processes.
+**Stage 1 - Screening call (30 minutes, recruiter or hiring manager).** Confirm mutual interest, explain the role honestly, check practical constraints such as location, availability and salary range. Salary should be discussed here; under the EU Pay Transparency Directive (EU) 2023/970 member states are introducing requirements to provide pay range information to applicants, and early transparency prevents wasted processes.
 
-**Stage 2 — Technical conversation (60 minutes, engineer).** Go deep on one project the candidate has done. Ask why they made each decision, what they would do differently, what went wrong. This is the highest-signal hour in most processes.
+**Stage 2 - Technical conversation (60 minutes, engineer).** Go deep on one project the candidate has done. Ask why they made each decision, what they would do differently, what went wrong. This is the highest-signal hour in most processes.
 
-**Stage 3 — Applied exercise (90 minutes live, or a short take-home with a live discussion).** Realistic, scoped and related to your actual work. Evaluate reasoning as much as output.
+**Stage 3 - Applied exercise (90 minutes live, or a short take-home with a live discussion).** Realistic, scoped and related to your actual work. Evaluate reasoning as much as output.
 
-**Stage 4 — Team and stakeholder round (60 minutes).** Collaboration, communication, and a real conversation with someone from the business side the person will support.
+**Stage 4 - Team and stakeholder round (60 minutes).** Collaboration, communication, and a real conversation with someone from the business side the person will support.
 
 Four stages, ideally within two to three weeks. Add a fifth only if you can name the specific capability it measures.
 
@@ -86,7 +86,7 @@ The practical stage is where most processes go wrong, either by testing somethin
 
 **It respects the candidate's data and effort.** Never use candidate submissions in your product. Delete them after the process in line with your retention policy, and say so.
 
-Offering a choice — live session or take-home — accommodates people with caring responsibilities or current jobs, and costs nothing.
+Offering a choice - live session or take-home - accommodates people with caring responsibilities or current jobs, and costs nothing.
 
 ## Questions That Produce Signal
 
@@ -149,13 +149,13 @@ You cannot improve a hiring process you do not measure, and the useful metrics a
 
 Track time from application to decision, and the drop-off at each stage. A stage where half of candidates withdraw is a design problem, not a quality filter. Track the offer acceptance rate; repeated declines usually indicate a pay or process problem rather than a market problem. Track how long candidates wait between stages, which is the most common reason for losing people to faster employers.
 
-The harder and more valuable measurement is predictive validity: do the people who scored well in your process perform well in the job? Six to twelve months after each hire, ask the manager which stage best predicted what they now see. Over a handful of hires, patterns emerge — and teams are often surprised to find that the stage they were proudest of predicted nothing.
+The harder and more valuable measurement is predictive validity: do the people who scored well in your process perform well in the job? Six to twelve months after each hire, ask the manager which stage best predicted what they now see. Over a handful of hires, patterns emerge - and teams are often surprised to find that the stage they were proudest of predicted nothing.
 
 Review rejected candidates occasionally too. If a person you rejected is thriving in an equivalent role elsewhere, that is information about your bar.
 
 ## How OnlyAIJobs Supports Hiring Teams
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own career page rather than through an intermediary, and no employer can pay for a better position — placement is not for sale, so a well-written vacancy competes on content.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own career page rather than through an intermediary, and no employer can pay for a better position - placement is not for sale, so a well-written vacancy competes on content.
 
 Two features help hiring teams specifically. Vacancies display the exact address and distance from the candidate's home, which reduces the applications that fail on commute after three interviews. And because the board carries only AI, ML and data roles, your vacancy appears among relevant comparisons rather than in a general feed.
 
@@ -203,7 +203,7 @@ The structure travels; expectations about formality, notice periods and salary d
 ### (Scenario: employer using AI screening tools) Can we use AI to screen candidates?
 Take advice first. Recruitment systems are treated as high-risk under the EU AI Act, and GDPR rules on automated decision-making apply.
 
-### (Scenario: small company) We hire once a year — is this worth the effort?
+### (Scenario: small company) We hire once a year - is this worth the effort?
 Yes, and more so. Infrequent hiring means no practised instincts, which is exactly when structure helps most.
 
 <script type="application/ld+json">

@@ -37,15 +37,15 @@ Most candidates treat Amersfoort as a place to live that happens to be close to 
 
 ## What Kind of Data Work Actually Happens Here
 
-Insurance and financial service providers in and around Amersfoort need risk modelling, fraud detection and customer segmentation — work conceptually similar to what you see in Zwolle or The Hague, but with the city's central location in the country.
+Insurance and financial service providers in and around Amersfoort need risk modelling, fraud detection and customer segmentation - work conceptually similar to what you see in Zwolle or The Hague, but with the city's central location in the country.
 
 ## Why the Central Location Is an Underused Advantage
 
-A central location in the Netherlands means a job in Amersfoort offers a relatively short commute for many people from a wider area than just the immediate surroundings — something few candidates explicitly consider, because they usually start with a city name rather than a travel radius.
+A central location in the Netherlands means a job in Amersfoort offers a relatively short commute for many people from a wider area than just the immediate surroundings - something few candidates explicitly consider, because they usually start with a city name rather than a travel radius.
 
 ## Why Central Location Is an Underused Search Variable
 
-Most candidates search by city name, not by travel time from a central point — which means a city like Amersfoort, relatively well connected to an unusually large part of the country, is rarely valued as such in a search. That is a missed opportunity, particularly for people who are flexible about where they live but do care about a reasonable commute.
+Most candidates search by city name, not by travel time from a central point - which means a city like Amersfoort, relatively well connected to an unusually large part of the country, is rarely valued as such in a search. That is a missed opportunity, particularly for people who are flexible about where they live but do care about a reasonable commute.
 
 ## Comparison Table: Amersfoort vs. a Comparable Less Central City
 
@@ -58,27 +58,27 @@ Most candidates search by city name, not by travel time from a central point —
 
 ## What This Means for Someone Who Hasn't Chosen Where to Live Yet
 
-If you aren't yet tied to a specific place to live and central accessibility is a real consideration — for example in a dual-income household with two different work locations — Amersfoort deserves a place on your list next to the obvious cities, for exactly the reason that leaves the rest of this market underused: nobody searches for it explicitly.
+If you aren't yet tied to a specific place to live and central accessibility is a real consideration - for example in a dual-income household with two different work locations - Amersfoort deserves a place on your list next to the obvious cities, for exactly the reason that leaves the rest of this market underused: nobody searches for it explicitly.
 
 ## A Concrete Scenario for a Dual-Income Household
 
-Two partners work in Utrecht and Amsterdam respectively. Instead of choosing between living close to one workplace or the other — with a long commute for whoever is left — they choose Amersfoort, from where both cities are reachable within a reasonable travel time. If one of them then also finds an AI or data role at a local Amersfoort company, the central location becomes not just a compromise between two commutes, but possibly a way to eliminate one of those commutes altogether.
+Two partners work in Utrecht and Amsterdam respectively. Instead of choosing between living close to one workplace or the other - with a long commute for whoever is left - they choose Amersfoort, from where both cities are reachable within a reasonable travel time. If one of them then also finds an AI or data role at a local Amersfoort company, the central location becomes not just a compromise between two commutes, but possibly a way to eliminate one of those commutes altogether.
 
 ## A Common Misconception About "Central" as a Vague Concept
 
-People often use "centrally located" as a vague, qualitative description without making it concrete in travel time. For a specific applicant, the question isn't "is Amersfoort central in the Netherlands" but "what is my concrete travel time from Amersfoort to the specific cities that matter to me" — a question with a different answer for each person that can't be summed up in one generic claim about the city.
+People often use "centrally located" as a vague, qualitative description without making it concrete in travel time. For a specific applicant, the question isn't "is Amersfoort central in the Netherlands" but "what is my concrete travel time from Amersfoort to the specific cities that matter to me" - a question with a different answer for each person that can't be summed up in one generic claim about the city.
 
 ## Why This Is Specifically Relevant to People Not Yet Tied to a Place
 
-For candidates who already live somewhere and don't plan to move, this information is less directly useful. For candidates who still have to choose where to live — for example with a job change that involves a move anyway — a central location like Amersfoort deserves a place on the shortlist next to the obvious big cities, precisely because it increases flexibility for future job changes.
+For candidates who already live somewhere and don't plan to move, this information is less directly useful. For candidates who still have to choose where to live - for example with a job change that involves a move anyway - a central location like Amersfoort deserves a place on the shortlist next to the obvious big cities, precisely because it increases flexibility for future job changes.
 
 ## How to Quantify This Central Location for Your Own Situation
 
-Instead of relying on the general claim that Amersfoort is "central," it is useful to calculate for your own situation the actual travel time to each city that matters to you — a partner working in another city, family, friends, or specific employers you are considering. This concrete calculation, specific to your own life, is a more reliable basis for a decision than a generic claim about the city's central location in general.
+Instead of relying on the general claim that Amersfoort is "central," it is useful to calculate for your own situation the actual travel time to each city that matters to you - a partner working in another city, family, friends, or specific employers you are considering. This concrete calculation, specific to your own life, is a more reliable basis for a decision than a generic claim about the city's central location in general.
 
 ## Why Amersfoort Is an Underrated Alternative When Choosing Between Two Jobs
 
-For a candidate torn between two jobs in different cities — say one in Utrecht and one in Amsterdam — Amersfoort offers a rarely considered third option: instead of choosing to live near one workplace or the other, you can consider living somewhere from which both are reasonably reachable, which can reduce the pressure of a definitive choice between two jobs if you aren't yet sure which one you ultimately want to accept.
+For a candidate torn between two jobs in different cities - say one in Utrecht and one in Amsterdam - Amersfoort offers a rarely considered third option: instead of choosing to live near one workplace or the other, you can consider living somewhere from which both are reasonably reachable, which can reduce the pressure of a definitive choice between two jobs if you aren't yet sure which one you ultimately want to accept.
 
 ## "Central" Made Concrete: Amersfoort Centraal as a Rail Hub
 
@@ -105,7 +105,7 @@ Besides the insurance and services sector this article describes, Amersfoort is 
 
 **Nutreco.** The animal nutrition and aquafeed company has its headquarters in Amersfoort. Nutrition models, production optimisation and sustainability data are core activities here, often with a strong research component.
 
-**Cultural Heritage Agency of the Netherlands.** The national agency is based in Amersfoort and works with large collections and geographic data on monuments, archaeology and landscape — a niche in which image recognition and spatial analysis are increasingly used.
+**Cultural Heritage Agency of the Netherlands.** The national agency is based in Amersfoort and works with large collections and geographic data on monuments, archaeology and landscape - a niche in which image recognition and spatial analysis are increasingly used.
 
 **Meander Medical Centre.** The hospital in Amersfoort adds a healthcare segment with data on capacity, quality and patient flows.
 
@@ -123,7 +123,7 @@ Risk and fraud work at insurers falls under a specific supervisory framework. Th
 
 ## Where the Talent Comes From
 
-Amersfoort has no university of its own, which partly explains why the city is rarely seen as an AI destination. Yet the talent pipeline is close by. Utrecht University and HU University of Applied Sciences Utrecht are a fifteen-minute train ride away, Wageningen University & Research is a short distance away, and the Amsterdam universities can be reached within three quarters of an hour. Employers in Amersfoort therefore recruit from the same graduates as Utrecht companies — with the advantage that some of those graduates prefer to live and work in a quieter city. For candidates, this means you'll find colleagues in Amersfoort with the same educational background as in Utrecht, without the bustle of the bigger city.
+Amersfoort has no university of its own, which partly explains why the city is rarely seen as an AI destination. Yet the talent pipeline is close by. Utrecht University and HU University of Applied Sciences Utrecht are a fifteen-minute train ride away, Wageningen University & Research is a short distance away, and the Amsterdam universities can be reached within three quarters of an hour. Employers in Amersfoort therefore recruit from the same graduates as Utrecht companies - with the advantage that some of those graduates prefer to live and work in a quieter city. For candidates, this means you'll find colleagues in Amersfoort with the same educational background as in Utrecht, without the bustle of the bigger city.
 
 ## The Search Radius Around Amersfoort and Which Titles to Use
 
@@ -158,10 +158,10 @@ Browse current AI, machine learning and data jobs in and around Amersfoort at [o
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who sees Amersfoort only as a place to live) Is Amersfoort only a place to live, or also a real work location for AI work?
-Also a real work location — the city has an insurance and services sector with data work around risk modelling and fraud detection, comparable to what you see elsewhere in the country.
+Also a real work location - the city has an insurance and services sector with data work around risk modelling and fraud detection, comparable to what you see elsewhere in the country.
 
 ### (Scenario: candidate unsure whether this work is serious) Is insurance and services data work as technically demanding as consumer AI?
-Often, yes — risk modelling and fraud detection at scale require serious statistical and machine learning knowledge, even though the sector isn't known as "tech."
+Often, yes - risk modelling and fraud detection at scale require serious statistical and machine learning knowledge, even though the sector isn't known as "tech."
 
 ### (Scenario: candidate who doesn't factor in the central location) Why is Amersfoort's central location relevant to my search?
 Because a central location gives many people a relatively short commute from a wider area, something you miss when you search only by city name instead of by travel radius.
@@ -177,8 +177,8 @@ Filter by category and distance from home instead of by city name alone, and exp
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Amersfoort only a place to live, or also a real work location for AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Also a real work location — the city has an insurance and services sector with data work around risk modelling and fraud detection."}},
-    {"@type": "Question", "name": "Is insurance and services data work as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes — risk modelling and fraud detection at scale require serious statistical and machine learning knowledge."}},
+    {"@type": "Question", "name": "Is Amersfoort only a place to live, or also a real work location for AI work?", "acceptedAnswer": {"@type": "Answer", "text": "Also a real work location - the city has an insurance and services sector with data work around risk modelling and fraud detection."}},
+    {"@type": "Question", "name": "Is insurance and services data work as technically demanding as consumer AI?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes - risk modelling and fraud detection at scale require serious statistical and machine learning knowledge."}},
     {"@type": "Question", "name": "Why is Amersfoort's central location relevant to my search?", "acceptedAnswer": {"@type": "Answer", "text": "A central location gives many people a relatively short commute from a wider area than you might expect."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Amersfoort\"?", "acceptedAnswer": {"@type": "Answer", "text": "This work is often titled 'risk analyst' or 'insurance data analyst' instead of using AI vocabulary."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work in Amersfoort?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category and distance from home, and explicitly consider Amersfoort as a work location, not just a place to live."}}

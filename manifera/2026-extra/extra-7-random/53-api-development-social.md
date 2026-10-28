@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Data-Model Separation:** Structured around what the data genuinely is, not how the first consumer displays it.
-✅ **Amsterdam Strategic Governance:** Conscious, not default, optimization tradeoffs — and versioning built in from day one.
+✅ **Amsterdam Strategic Governance:** Conscious, not default, optimization tradeoffs - and versioning built in from day one.
 ✅ **Vietnam Execution Velocity:** Shipping just as fast for the known use case, without hidden coupling for the next one.
 
 We built the API exactly the way our first user needed it. The second user broke that assumption immediately. The third time, we designed it to not care who was asking. 🛡️

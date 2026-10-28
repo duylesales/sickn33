@@ -1,4 +1,4 @@
-📦 Loïs Landsmeer built BuurtBezorg, a neighborhood delivery-coordination app, on a free-tier AI app builder — fine for months, until the holiday season hit her single busiest delivery week of the year. 😳
+📦 Loïs Landsmeer built BuurtBezorg, a neighborhood delivery-coordination app, on a free-tier AI app builder - fine for months, until the holiday season hit her single busiest delivery week of the year. 😳
 
 Free tiers don't lie about their limits. They just never tell you when those limits will bind. 🧠
 

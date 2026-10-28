@@ -55,7 +55,7 @@ Het periodiek herbeoordelen van de daadwerkelijke uitvoerkwaliteit van uw AI-fun
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het instellen van exact deze voortdurende waakzaamheid rond AI-model-updates als onderdeel van een bredere observatiepraktijk (observability). Wij behandelen modelgedrag als iets om actief te monitoren in plaats van een eenmalige integratie die aangenomen wordt voor onbepaalde tijd stabiel te blijven, ondersteund door Manifera's bredere engineering-discipline in het behouden van productkwaliteit tegen evoluerende externe afhankelijkheden.
 
-[Krijg een voortdurend proces om kwaliteitsverschuivingen door modellen op te merken voordat klanten dat doen](https://launchstudio.eu/nl/#calculator) — dit is geen eenmalige integratie, het is een voortdurende relatie met een afhankelijkheid die blijft veranderen.
+[Krijg een voortdurend proces om kwaliteitsverschuivingen door modellen op te merken voordat klanten dat doen](https://launchstudio.eu/nl/#calculator) - dit is geen eenmalige integratie, het is een voortdurende relatie met een afhankelijkheid die blijft veranderen.
 
 ## Het bouwen van een lichtgewicht respons-protocol voor model-updates
 
@@ -84,9 +84,9 @@ Na een routinematige onderliggende model-update van Kim's AI-provider – aangek
 **Resultaat:** LaunchStudio hielp Kim bij het opnieuw afstellen van SchrijfAssist's prompts specifiek tegen het bijgewerkte model om de gevestigde, verwachte toon te herstellen. Wij stelden een voortdurend beoordelingsproces in dat specifiek getriggerd wordt door toekomstige model-updates, zodat elke latere verschuiving proactief zou worden opgemerkt en aangepakt in plaats van achteraf ontdekt te worden via klantklachten.
 
 > *"Er brak technisch niets, wat exact de reden is dat ik er nooit aan dacht om iets te controleren. De toon was simpelweg stilletjes onder me verschoven omdat mijn AI-provider hun model bijwerkte. En klanten die gewend waren aan een specifieke stem merkten het op voordat ik dat deed."*
-> — **Kim Verbeek, Oprichter, SchrijfAssist (Eindhoven)**
+> - **Kim Verbeek, Oprichter, SchrijfAssist (Eindhoven)**
 
-**Kosten en tijdlijn:** € 700 (opnieuw afstellen van prompts en beoordelingsproces voor model-updates) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 700 (opnieuw afstellen van prompts en beoordelingsproces voor model-updates) - voltooid in 3 werkdagen.
 
 ---
 

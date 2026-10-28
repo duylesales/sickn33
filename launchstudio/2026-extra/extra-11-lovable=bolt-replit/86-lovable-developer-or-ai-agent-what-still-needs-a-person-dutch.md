@@ -24,13 +24,13 @@ Een volkomen terechte vraag die elke maand vaker wordt gesteld: als AI-tooling z
 
 Die vraag verdient een nuchter en eerlijk antwoord in plaats van een defensief betoog. AI-agents schrijven vandaag de dag oprecht goede code. Ze zijn sneller dan een mens bij vrijwel alle reguliere implementatietaken, ze raken nooit verveeld en ze boeken razendsnel progressie. Iedereen in de softwarebranche die het tegendeel beweert, moet je niet serieus nemen.
 
-Het cruciale onderscheid ligt echter niet tussen wat AI wel kan en wat het niet kan. Het ligt tussen beslissingen die logisch voortvloeien uit de informatie die de agent ter beschikking heeft, en beslissingen die afhangen van context die uitsluitend jij — of een aansprakelijk persoon — kan kennen.
+Het cruciale onderscheid ligt echter niet tussen wat AI wel kan en wat het niet kan. Het ligt tussen beslissingen die logisch voortvloeien uit de informatie die de agent ter beschikking heeft, en beslissingen die afhangen van context die uitsluitend jij - of een aansprakelijk persoon - kan kennen.
 
 ## Wat agents beter doen dan de meeste mensen
 
 Laten we dit klip-en-klaar benoemen, want alleen tegen die achtergrond heeft de rest betekenis:
 
-Het implementeren van een helder omschreven feature. Het schrijven van boilerplate-code — invoerformulieren, datatabellen, formuliervalidatie en het loodgieterswerk tussen een database en een scherm. Het omzetten van code tussen programmeertalen en frameworks. Het uitleggen van onbekende code. Het genereren van een eerste ruwe opzet van vrijwel alles. En het opsporen van een syntaxfout, sneller dan het menselijk oog kan knipperen.
+Het implementeren van een helder omschreven feature. Het schrijven van boilerplate-code - invoerformulieren, datatabellen, formuliervalidatie en het loodgieterswerk tussen een database en een scherm. Het omzetten van code tussen programmeertalen en frameworks. Het uitleggen van onbekende code. Het genereren van een eerste ruwe opzet van vrijwel alles. En het opsporen van een syntaxfout, sneller dan het menselijk oog kan knipperen.
 
 Voor een niet-technische oprichter die een product bouwt, is dit revolutionair en onbetwist. Vrijwel alles waarvoor vijf jaar geleden een junior developer werd aangenomen, is nu gereduceerd tot een prompt. En dat is een uitstekende ontwikkeling.
 
@@ -38,11 +38,11 @@ Voor een niet-technische oprichter die een product bouwt, is dit revolutionair e
 
 Er zijn vier fundamentele categorieën die buiten het bereik van een AI-agent vallen:
 
-**Wat je data werkelijk betekent.** Welke velden zijn privacygevoelig, welke datamodellen identificeren herleidbaar een natuurlijk persoon, wat mag een concurrent onder geen beding inzien en wat vereist een zakelijke klant contractueel? Een agent kan elk autorisatiemodel bouwen dat je beschrijft, maar kan je niet vertellen welk model het juiste is — want 'juist' hangt af van jouw klanten en jouw juridische verplichtingen.
+**Wat je data werkelijk betekent.** Welke velden zijn privacygevoelig, welke datamodellen identificeren herleidbaar een natuurlijk persoon, wat mag een concurrent onder geen beding inzien en wat vereist een zakelijke klant contractueel? Een agent kan elk autorisatiemodel bouwen dat je beschrijft, maar kan je niet vertellen welk model het juiste is - want 'juist' hangt af van jouw klanten en jouw juridische verplichtingen.
 
 **Wat je product belooft.** Moet het systeem bij een mislukte incasso direct de toegang blokkeren of een coulanceperiode hanteren? Wat gebeurt er met historische data als een gebruiker zijn abonnement opzegt? Moet een functionaliteit gelimiteerd zijn of onbeperkt? Dit zijn commerciële beslissingen met directe financiële consequenties. Vraag je een agent om dit te bepalen, dan kiest hij een willekeurige, generieke standaardwaarde.
 
-**Wat de moeite waard is om te bouwen.** Het strategische oordeel dat déze functie prioriteit heeft en een andere overbodig is; dat het verzoek van een klant representatief is voor een bredere marktvraag of juist een eenmalige uitzondering. Dat inzicht ontstaat uitsluitend door diepgaande gesprekken met klanten — een activiteit die een AI-agent niet voor je uitvoert.
+**Wat de moeite waard is om te bouwen.** Het strategische oordeel dat déze functie prioriteit heeft en een andere overbodig is; dat het verzoek van een klant representatief is voor een bredere marktvraag of juist een eenmalige uitzondering. Dat inzicht ontstaat uitsluitend door diepgaande gesprekken met klanten - een activiteit die een AI-agent niet voor je uitvoert.
 
 **Wie de aansprakelijkheid draagt.** Wanneer een toezichthouder (zoals de Autoriteit Persoonsgegevens), de bedrijfsjurist van een klant of een verzekeraar vraagt wie verantwoordelijk is voor een bepaalde systeemarchitectuur, is *"de AI stelde dit voor"* juridisch waardeloos. Er moet altijd een mens zijn die instaat voor de gemaakte keuzes.
 
@@ -52,7 +52,7 @@ Er is sprake van een specifieke asymmetrie die je moet begrijpen, omdat het vrij
 
 Een AI-agent optimaliseert uitsluitend voor het slagen van jouw directe prompt. Vraag je de agent om een *"permission denied foutmelding op te lossen"*, dan voldoet het compleet uitschakelen van de permissiecontrole perfect aan je opdracht: de foutmelding is immers verdwenen. Vraag je om een databasequery sneller te maken, dan bereikt het weglaten van een tenant-filter exact dat doel. Vraag je om een koppeling werkend te krijgen, dan installeert hij zonder aarzeling externe packages die dat bewerkstelligen.
 
-Dit is geen fout in het model. Dit is precies wat *"zorg dat dit werkt"* betekent voor een neuraal netwerk dat geen besef heeft van randvoorwaarden die permanent waar moeten blijven. Een mens met domeinkennis voegt de kaders toe die de prompt heeft weggelaten. En hoe capabeler de agent wordt, hoe efficiënter hij een onvolledig gespecificeerd doel zal nastreven — desnoods ten koste van je beveiliging.
+Dit is geen fout in het model. Dit is precies wat *"zorg dat dit werkt"* betekent voor een neuraal netwerk dat geen besef heeft van randvoorwaarden die permanent waar moeten blijven. Een mens met domeinkennis voegt de kaders toe die de prompt heeft weggelaten. En hoe capabeler de agent wordt, hoe efficiënter hij een onvolledig gespecificeerd doel zal nastreven - desnoods ten koste van je beveiliging.
 
 Daarom wordt een kritische code review naarmate AI-tools krachtiger worden niet minder belangrijk, maar juist véél belangrijker.
 
@@ -108,11 +108,11 @@ Onderdelen ervan zullen veranderen, en het is goed om daar volkomen transparant 
 
 **Het implementatiegat zal zich verder sluiten.** Taken waarvoor vandaag nog een ontwikkelaar nodig is omdat de AI-output haperingen vertoont, zullen over twee jaar volledig autonoom door tooling worden afgehandeld. Iedereen wiens verdienmodel uitsluitend leunt op sneller coderen dan een AI-agent, bevindt zich in een krimpende markt.
 
-**Agents zullen hun eigen omissies steeds beter signaleren.** Autorisatieregels, foutafhandeling en geautomatiseerde tests — zaken die momenteel ontbreken omdat een leek er niet om vraagt — zullen door toekomstige agents standaard worden meegeleverd.
+**Agents zullen hun eigen omissies steeds beter signaleren.** Autorisatieregels, foutafhandeling en geautomatiseerde tests - zaken die momenteel ontbreken omdat een leek er niet om vraagt - zullen door toekomstige agents standaard worden meegeleverd.
 
 **Wat echter nooit zal veranderen, is aansprakelijkheid.** Iemand moet instaan voor de keuzes wanneer de bedrijfsjurist van een klant, een accountant of een privacytoezichthouder vragen stelt. Die verantwoordelijkheid kan per definitie niet worden gedelegeerd aan software. Niet omdat de software niet deugt, maar omdat aansprakelijkheid een formele relatie is tussen mensen, organisaties en de wet. Tegen de security officer van een ziekenhuis zeggen dat het datamodel door een neuraal netwerk is bedacht, beëindigt het inkoopproces ter plekke.
 
-**Evenmin verdwijnt het contextgat.** Wat jouw bedrijfsdata betekent, welke garanties je aan klanten hebt afgegeven, welke contractuele afspraken er gelden en wat acceptabel is bij systeemuitval — deze kennis leeft buiten de broncode. Hoe beter de tools worden, hoe meer het werk bestaat uit het specificeren van exact deze context. Specificeren was altijd al het moeilijkste onderdeel van softwareontwikkeling.
+**Evenmin verdwijnt het contextgat.** Wat jouw bedrijfsdata betekent, welke garanties je aan klanten hebt afgegeven, welke contractuele afspraken er gelden en wat acceptabel is bij systeemuitval - deze kennis leeft buiten de broncode. Hoe beter de tools worden, hoe meer het werk bestaat uit het specificeren van exact deze context. Specificeren was altijd al het moeilijkste onderdeel van softwareontwikkeling.
 
 **En de asymmetrie blijft bestaan.** Een systeem dat optimaliseert voor een gesteld doel zal dat doel efficiënt nastreven, inclusief routes die de indiener van de prompt niet voorzag. Krachtigere modellen maken die neveneffecten ingrijpender, niet minder ingrijpend.
 
@@ -134,26 +134,26 @@ Gijs Wagenaar bouwde met Lovable het platform Kweekplan: een teeltplanningssyste
 
 Gijs bouwde vrijwel uitsluitend met AI-agentsessies en het verliep voortvarend. De applicatie deed precies wat tuinders wilden en twee van hen betaalden al een maandelijks abonnement.
 
-Het probleem openbaarde zich toen een derde tuinder — een aanzienlijk groter bedrijf dat aangesloten was bij een telerscoöperatie — drie concrete vragen stelde vóór ondertekening: Kan onze externe teeltadviseur een alleen-lezen account krijgen zonder dat hij inzicht heeft in onze loonkosten? Waar wordt de data fysiek opgeslagen? En wat gebeurt er met onze historische teeltgegevens als we het contract beëindigen?
+Het probleem openbaarde zich toen een derde tuinder - een aanzienlijk groter bedrijf dat aangesloten was bij een telerscoöperatie - drie concrete vragen stelde vóór ondertekening: Kan onze externe teeltadviseur een alleen-lezen account krijgen zonder dat hij inzicht heeft in onze loonkosten? Waar wordt de data fysiek opgeslagen? En wat gebeurt er met onze historische teeltgegevens als we het contract beëindigen?
 
-Op geen van de vragen had Gijs een sluitend antwoord. Onderzoek bracht vervolgens een vierde, veel acuter probleem aan het licht. Verspreid over vier afzonderlijke bouwsessies had de AI vier ogenschijnlijk rationele keuzes gemaakt die niemand bewust had goedgekeurd: Toegangsrechten waren gekoppeld aan individuele gebruikers in plaats van organisaties, waardoor collega's elkaars teeltschema's niet konden zien — wat de telers hadden opgelost door massaal inloggegevens te delen. Oogstcijfers werden opgeslagen met een afronding waardoor historische getallen afweken van de interne weegbrugbonnen van twee tuinders. Een 'verwijder'-knop wiste wel het planningsrecord, maar liet de gekoppelde gewasfoto's openbaar op de cloudserver staan. En een agent die was gevraagd om een traag overzichtsscherm te versnellen, had een SQL-filter verwijderd waardoor plantdichtheden van de ene tuinder plotseling zichtbaar waren in de vergelijkingsgrafiek van een ander.
+Op geen van de vragen had Gijs een sluitend antwoord. Onderzoek bracht vervolgens een vierde, veel acuter probleem aan het licht. Verspreid over vier afzonderlijke bouwsessies had de AI vier ogenschijnlijk rationele keuzes gemaakt die niemand bewust had goedgekeurd: Toegangsrechten waren gekoppeld aan individuele gebruikers in plaats van organisaties, waardoor collega's elkaars teeltschema's niet konden zien - wat de telers hadden opgelost door massaal inloggegevens te delen. Oogstcijfers werden opgeslagen met een afronding waardoor historische getallen afweken van de interne weegbrugbonnen van twee tuinders. Een 'verwijder'-knop wiste wel het planningsrecord, maar liet de gekoppelde gewasfoto's openbaar op de cloudserver staan. En een agent die was gevraagd om een traag overzichtsscherm te versnellen, had een SQL-filter verwijderd waardoor plantdichtheden van de ene tuinder plotseling zichtbaar waren in de vergelijkingsgrafiek van een ander.
 
 Elke beslissing was op zichzelf verdedigbaar binnen de context van de specifieke prompt. Samen vormden ze een product dat onmogelijk aan een professionele coöperatie kon worden verkocht.
 
 In tien werkdagen brachten ervaren engineers uitkomst: een multi-tenant organisatiestructuur met rolgebaseerde rechten (zodat telers, medewerkers en externe teeltadviseurs strikt gescheiden toegang hebben en loonkosten uitsluitend zichtbaar zijn voor de directie); het splitsen van gedeelde accounts in individuele veilige logins; herstel van het dashboard-filter en een audit op alle aggregatiequery's; correctie van de afrondingslogica inclusief herberekening en toelichting naar de getroffen tuinders; volledige dataverwijdering inclusief gekoppelde mediabestanden; formele vastlegging van datalocatie en bewaartermijnen; en een schriftelijk security-rapport dat Gijs rechtstreeks aan de directie van de coöperatie kon overhandigen.
 
-**Resultaat:** De aangesloten tuinder ondertekende het jaarcontract en bracht direct twee collega-leden mee. Gijs bouwt nog steeds nieuwe features met AI-agents — met het cruciale verschil dat hij nu vooraf expliciet databeveiligingsregels meegeeft in zijn prompts en elke codewijziging grondig controleert.
+**Resultaat:** De aangesloten tuinder ondertekende het jaarcontract en bracht direct twee collega-leden mee. Gijs bouwt nog steeds nieuwe features met AI-agents - met het cruciale verschil dat hij nu vooraf expliciet databeveiligingsregels meegeeft in zijn prompts en elke codewijziging grondig controleert.
 
 > *"Vier afzonderlijke sessies namen vier logische beslissingen en leverden samen een product op dat ik juridisch en commercieel niet kon verkopen. Niet één ervan was op zichzelf een programmeerfout."*
-> — **Gijs Wagenaar, Oprichter, Kweekplan (Naaldwijk)**
+> - **Gijs Wagenaar, Oprichter, Kweekplan (Naaldwijk)**
 
-**Kosten & Doorlooptijd:** € 4.800 (organisatie- en rollenmodel, data-audit, dataherstel, veilige verwijderprocedures, compliance-documentatie) — opgeleverd in 10 werkdagen.
+**Kosten & Doorlooptijd:** € 4.800 (organisatie- en rollenmodel, data-audit, dataherstel, veilige verwijderprocedures, compliance-documentatie) - opgeleverd in 10 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Kan een AI-agent een softwareontwikkelaar volledig vervangen?
 
-Voor de uitvoerende implementatie van standaardcode in toenemende mate wel. Voor beslissingen over wat data juridisch betekent, welke contractuele toezeggingen je doet, welke features strategisch relevant zijn en wie de wettelijke aansprakelijkheid draagt niet — die vereisen domeinkennis die een AI-agent niet bezit.
+Voor de uitvoerende implementatie van standaardcode in toenemende mate wel. Voor beslissingen over wat data juridisch betekent, welke contractuele toezeggingen je doet, welke features strategisch relevant zijn en wie de wettelijke aansprakelijkheid draagt niet - die vereisen domeinkennis die een AI-agent niet bezit.
 
 ### Waarom verwijderen AI-agents soms beveiligingscontroles?
 
@@ -169,7 +169,7 @@ Vóórdat je een zakelijke verplichting aangaat in plaats van ná een beveiligin
 
 ### Betekent het inschakelen van een ontwikkelaar dat ik direct vastzit aan een fulltime salaris?
 
-Zeker niet. Bij applicaties gebouwd met AI gaat het vrijwel altijd om een compact, fixed-price traject voor de cruciale fundering — autorisatieregels, betalingen, back-ups, deployment en documentatie — waarna je zelfstandig en veilig verder kunt bouwen met AI-tools.
+Zeker niet. Bij applicaties gebouwd met AI gaat het vrijwel altijd om een compact, fixed-price traject voor de cruciale fundering - autorisatieregels, betalingen, back-ups, deployment en documentatie - waarna je zelfstandig en veilig verder kunt bouwen met AI-tools.
 
 <script type="application/ld+json">
 {

@@ -16,10 +16,10 @@ The difference? Matching the model to your growth stage.
 → Team of 4-8+ engineers
 
 **The Growth Stage Cheat Sheet:**
-🌱 Pre-Seed: Dedicated team (2-3 devs) — need turnkey execution
-🌿 Seed: Staff augmentation (1-2 devs) — CTO manages directly
-🌳 Series A: Dedicated team (4-6 devs) — CTO should strategize, not manage tasks
-🏢 Series B+: Hybrid — core team + augmented specialists
+🌱 Pre-Seed: Dedicated team (2-3 devs) - need turnkey execution
+🌿 Seed: Staff augmentation (1-2 devs) - CTO manages directly
+🌳 Series A: Dedicated team (4-6 devs) - CTO should strategize, not manage tasks
+🏢 Series B+: Hybrid - core team + augmented specialists
 
 💰 Hidden cost difference: Staff aug requires 8-12h/week of YOUR management time. Dedicated teams? 3-5h/week.
 

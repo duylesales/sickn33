@@ -66,13 +66,13 @@ SSO heeft de neiging de eerste vereiste te zijn die naar boven komt, maar het is
 
 Het voorblijven van deze punten vóór uw eerste serieuze enterprise-gesprek, in plaats van tijdens een gesprek, is het verschil tussen inkoop die een formaliteit is en inkoop die de deal-breaker is. [Onze pakketten](https://launchstudio.eu/nl/#packages) zijn gebouwd rond exact dit soort werk voor productie-uitharding – een met AI gegenereerde app nemen die werkt voor vroege gebruikers en deze geloofwaardig maken voor een beveiligingsbeoordeling van een enterprise, zonder de frontend aan te raken die uw team al heeft gebouwd.
 
-## Just-in-Time Provisioning handelt inloggen in af — En niet werknemers eruit
+## Just-in-Time Provisioning handelt inloggen in af - En niet werknemers eruit
 
 Just-in-time provisioning lost de helft van het identiteitslevenscyclus-probleem op: een nieuwe werknemer logt voor het eerst in via SSO, en uw app maakt automatisch zijn account aan. De helft die het niet lost is wat er gebeurt wanneer die werknemer het bedrijf verlaat of van rol verandert. Niets aan JIT-provisioning verwijdert toegang – het voegt het alleen ooit toe. Het account van een uitgestroomde werknemer in uw app blijft dus volledig actief totdat iemand aan de kant van de klant het toevallig opmerkt en het handmatig intrekt in uw product specifiek. Dat doet het gehele doel van het centraliseren van identiteit in de eerste plaats teniet.
 
 ```
 1. IT-beheerder verwijdert gebruiker uit Okta/Azure AD
-2. Uw app heeft geen gebeurtenis om op te reageren — er is niets veranderd aan uw kant
+2. Uw app heeft geen gebeurtenis om op te reageren - er is niets veranderd aan uw kant
 3. Het account van de gebruiker in uw app is nog steeds actief
 4. Het blijft actief totdat iemand het handmatig verwijdert in uw beheerderspaneel
 ```
@@ -92,9 +92,9 @@ LaunchStudio's ingenieurs implementeerden ondersteuning voor SAML SSO voor TeamD
 **Resultaat:** de deal sloot volgens schema. TeamDocs vermeldt SSO nu als een standaardmogelijkheid in elk volgend enterprise-verkoopgesprek in plaats van een reactieve haastklus.
 
 > *"We verloren bijna een contract van zes cijfers over een functie waarvan ik niet eens wist dat we die nodig hadden totdat inkoop het woord 'SAML' zei. Nu staat het op de prijzenpagina in plaats van een brandalarm."*
-> — **Kirsten Mol, Oprichter, TeamDocs (Veenendaal)**
+> - **Kirsten Mol, Oprichter, TeamDocs (Veenendaal)**
 
-**Kosten en tijdlijn:** € 2.400 (implementatie van SAML SSO met ondersteuning voor meerdere providers, JIT-provisioning, en self-service beheerdersconfiguratie) — voltooid in 10 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (implementatie van SAML SSO met ondersteuning voor meerdere providers, JIT-provisioning, en self-service beheerdersconfiguratie) - voltooid in 10 werkdagen.
 
 ---
 

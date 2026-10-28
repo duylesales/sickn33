@@ -1,4 +1,4 @@
-🔥 Alexander bouwde een prototype met **Bolt** — Alexander, een venture partner, bouwde een CRM-landingspagina, maar door ongeoptimaliseerde visuele assets duurde het laden 4,5 seconden waardoor 40% van de bezoekers direct afhaakte. 🧠
+🔥 Alexander bouwde een prototype met **Bolt** - Alexander, een venture partner, bouwde een CRM-landingspagina, maar door ongeoptimaliseerde visuele assets duurde het laden 4,5 seconden waardoor 40% van de bezoekers direct afhaakte. 🧠
 
 Het ontwerpen van een converterende B2B SaaS-landingspagina vereist radicale helderheid, echte UI-screenshots en een hoog-contrasterende CTA.
 
@@ -12,7 +12,7 @@ Het ontwerpen van een converterende B2B SaaS-landingspagina vereist radicale hel
 
 Bij **LaunchStudio** lossen we exact dit type frontend-architectuur en Lighthouse-optimalisatievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Alexanders landingspagina werd een conversiekanon: De laadtijd daalde naar 0,7 seconden en de Lighthouse-score steeg naar 98/100, wat leidde tot een verdubbeling van de aanmeldconversie. (€950 (Lighthouse Optimization Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Alexanders landingspagina werd een conversiekanon: De laadtijd daalde naar 0,7 seconden en de Lighthouse-score steeg naar 98/100, wat leidde tot een verdubbeling van de aanmeldconversie. (€950 (Lighthouse Optimization Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/crafting-perfect-b2b-saas-landing-page
 

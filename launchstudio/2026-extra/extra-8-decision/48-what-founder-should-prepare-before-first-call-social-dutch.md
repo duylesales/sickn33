@@ -1,6 +1,6 @@
 🕑 Saskia besteedde 20 minuten de avond vóór haar scoping call aan het opschrijven van vijf simpele feiten. Het resultaat: een gesprek dat twee keer zo snel ging én een deadline die met twee weken buffer werd gehaald. 📋
 
-De meeste oprichters komen met een vaag gevoel dat "er iets aan beveiliging moet gebeuren." Dat is prima om te starten — maar dit is wat écht het verschil maakt: 🧠
+De meeste oprichters komen met een vaag gevoel dat "er iets aan beveiliging moet gebeuren." Dat is prima om te starten - maar dit is wat écht het verschil maakt: 🧠
 
 ❌ Geen idee waar de code, database of betaaldienst precies draait
 ❌ "Gebouwd" en "gepland" door elkaar halen tijdens het gesprek

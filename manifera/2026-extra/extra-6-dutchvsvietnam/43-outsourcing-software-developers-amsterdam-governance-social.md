@@ -6,7 +6,7 @@
 ❌ **A VAT Detail Finance Catches Too Late:** Contracting a non-EU entity complicates the reverse-charge mechanism EU B2B transactions rely on.
 
 **The Manifera Solution:**
-✅ **Jurisdiction as the Real Risk Variable:** IP enforceability, GDPR accountability, VAT treatment, and dispute-resolution leverage — all resolved by where the contract sits.
+✅ **Jurisdiction as the Real Risk Variable:** IP enforceability, GDPR accountability, VAT treatment, and dispute-resolution leverage - all resolved by where the contract sits.
 ✅ **Amsterdam Strategic Governance:** A Netherlands-registered entity signing the DPA directly and holding contractual accountability under Dutch law.
 ✅ **Vietnam Execution Velocity:** Real cost efficiency from Southeast Asian delivery, paired with real contractual enforceability from an EU-domiciled counterparty.
 

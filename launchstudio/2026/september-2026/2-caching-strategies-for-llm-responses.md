@@ -23,15 +23,15 @@ A Semantic Cache intercepts the prompt before it reaches the heavy LLM. The work
 
 1. **Embedding Generation:** When User B asks their question, your backend immediately sends the query to a fast, cheap embedding model (like `text-embedding-3-small` at roughly $0.02 per million tokens, or an open-source alternative like `bge-small-en`). This converts the English sentence into a mathematical vector, typically 1536 dimensions.
 
-2. **Vector Similarity Search:** Your backend queries your cache — a fast vector index, whether that's pgvector, Redis with the RediSearch vector module, or a dedicated engine — to see if this new vector mathematically matches any previously asked question, usually via cosine similarity.
+2. **Vector Similarity Search:** Your backend queries your cache - a fast vector index, whether that's pgvector, Redis with the RediSearch vector module, or a dedicated engine - to see if this new vector mathematically matches any previously asked question, usually via cosine similarity.
 
 3. **The Threshold Hit:** If the mathematical similarity score is above your defined threshold (e.g., 95% similarity to User A's question), it is a "Cache Hit." The system instantly returns the answer generated for User A, often after a lightweight rerank step to catch false positives.
 
-The LLM is completely bypassed. A 10-second wait time drops to 100 milliseconds. A $0.05 API cost drops to $0.0001 — a reduction of roughly three orders of magnitude on that specific request, though your blended savings across all traffic depends heavily on how repetitive your actual query distribution is.
+The LLM is completely bypassed. A 10-second wait time drops to 100 milliseconds. A $0.05 API cost drops to $0.0001 - a reduction of roughly three orders of magnitude on that specific request, though your blended savings across all traffic depends heavily on how repetitive your actual query distribution is.
 
 ## Tuning the Confidence Threshold
 
-The most difficult part of Semantic Caching is tuning the similarity threshold. If you set the threshold too low (e.g., 75%), the system will aggressively return cached answers for questions that are only mildly related, leading to completely incorrect responses and furious users. This failure mode is worse than a slow API call, because the user has no signal that anything went wrong — they simply receive confidently wrong information.
+The most difficult part of Semantic Caching is tuning the similarity threshold. If you set the threshold too low (e.g., 75%), the system will aggressively return cached answers for questions that are only mildly related, leading to completely incorrect responses and furious users. This failure mode is worse than a slow API call, because the user has no signal that anything went wrong - they simply receive confidently wrong information.
 
 If you set the threshold too high (e.g., 99%), the cache will almost never trigger, rendering the entire architecture useless since near-identical phrasing rarely produces vectors that close.
 
@@ -41,7 +41,7 @@ You must calibrate this based on your industry and build a feedback loop: log ev
 
 Caching becomes highly complex when combined with Retrieval-Augmented Generation (RAG). If the underlying company documentation changes, your cached AI answers are now outdated and legally dangerous.
 
-You must build an automated **Cache Invalidation Pipeline**. If the HR department updates the PDF regarding "Vacation Policy" in your vector database, your system must automatically purge every single cached response related to "vacation" or "PTO" — typically implemented by tagging each cache entry with the source document IDs it was generated from, so that a document update event can cascade a targeted purge rather than a blunt full-cache flush. Without strict invalidation protocols, your lightning-fast cache will simply serve lightning-fast lies. This matters more than most founders assume: 45% of AI-generated code ships with at least one security or correctness vulnerability, and an un-invalidated cache serving stale compliance answers is exactly the kind of defect that only surfaces after a client complaint.
+You must build an automated **Cache Invalidation Pipeline**. If the HR department updates the PDF regarding "Vacation Policy" in your vector database, your system must automatically purge every single cached response related to "vacation" or "PTO" - typically implemented by tagging each cache entry with the source document IDs it was generated from, so that a document update event can cascade a targeted purge rather than a blunt full-cache flush. Without strict invalidation protocols, your lightning-fast cache will simply serve lightning-fast lies. This matters more than most founders assume: 45% of AI-generated code ships with at least one security or correctness vulnerability, and an un-invalidated cache serving stale compliance answers is exactly the kind of defect that only surfaces after a client complaint.
 
 ## Layered Caching: Combining Exact-Match and Semantic
 
@@ -61,7 +61,7 @@ Herre Roelevink, Founder & Managing Director of Manifera, has seen this pattern 
 
 Are you paying OpenAI or Anthropic thousands of dollars a month to generate repetitive answers? **LaunchStudio** architects high-performance Semantic Caching layers that drastically reduce your token costs while slashing perceived latency for your users. Use the [pricing calculator](https://launchstudio.eu/en/#calculator) to estimate what this would cost for your specific stack.
 
-LaunchStudio is an initiative powered by **Manifera**, an international software development company founded in **2014** by **Herre Roelevink**. Recognizing the shortage of experienced developers in Europe, Herre established development hubs in **Singapore** (100 Tras Street #16-01, 100 AM Singapore 079027) and **Ho Chi Minh City, Vietnam** (Floor 11, Block C, 10 Pho Quang Street, Tan Son Hoa Ward), to leverage high-efficiency engineering talent. Guided by the philosophy of combining "Dutch management with Vietnamese mastery," Manifera operates its European HQ in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ Amsterdam), and has delivered 160+ projects for enterprise clients including Vodafone and CFLW — see the [portfolio](https://www.manifera.com/portfolio/). Through LaunchStudio, AI-native founders gain direct access to this enterprise-grade global software development expertise, at roughly 20% of traditional agency cost, to get their prototypes secure, scalable, and launch-ready in just 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is an initiative powered by **Manifera**, an international software development company founded in **2014** by **Herre Roelevink**. Recognizing the shortage of experienced developers in Europe, Herre established development hubs in **Singapore** (100 Tras Street #16-01, 100 AM Singapore 079027) and **Ho Chi Minh City, Vietnam** (Floor 11, Block C, 10 Pho Quang Street, Tan Son Hoa Ward), to leverage high-efficiency engineering talent. Guided by the philosophy of combining "Dutch management with Vietnamese mastery," Manifera operates its European HQ in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ Amsterdam), and has delivered 160+ projects for enterprise clients including Vodafone and CFLW - see the [portfolio](https://www.manifera.com/portfolio/). Through LaunchStudio, AI-native founders gain direct access to this enterprise-grade global software development expertise, at roughly 20% of traditional agency cost, to get their prototypes secure, scalable, and launch-ready in just 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact).
 
 ## Real example
 
@@ -73,7 +73,7 @@ She partnered with **LaunchStudio (by Manifera)** to implement a semantic cachin
 
 **Result:** Average response time dropped from 2.5s to 80ms for cached queries, and monthly OpenAI API costs were cut by 60%.
 
-**Cost & Timeline:** €1,500 (API Caching Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,500 (API Caching Package) - production-ready and deployed in 4 business days.
 
 ---
 
@@ -97,4 +97,4 @@ Yes. You can build it yourself using Redis, pgvector, or a dedicated vector stor
 
 ### How does LaunchStudio's relationship with Manifera help with caching architecture specifically?
 
-LaunchStudio applies Manifera's decade-plus of production backend engineering — the same discipline used to architect caching and performance layers for enterprise clients since 2014 — directly to the semantic caching problem AI founders face today. Rather than a generic caching tutorial, you get an engagement scoped to your actual query patterns, invalidation risks, and cost targets, delivered through [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) practice.
+LaunchStudio applies Manifera's decade-plus of production backend engineering - the same discipline used to architect caching and performance layers for enterprise clients since 2014 - directly to the semantic caching problem AI founders face today. Rather than a generic caching tutorial, you get an engagement scoped to your actual query patterns, invalidation risks, and cost targets, delivered through [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/) practice.

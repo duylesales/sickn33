@@ -55,7 +55,7 @@ Oprichters die correct identificeren in welke categorie ze daadwerkelijk bouwen,
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om dit specifieke onderscheid concreet te maken tijdens de afbakening – prijzen en bouwen volgens wat er daadwerkelijk wordt gebouwd in plaats van hoe het wordt genoemd – gebruikmakend van Manifera's bredere ervaring met het bouwen van zowel afgebakende producten als echte multi-tenant platforms voor klanten in haar kantoren in Amsterdam en Singapore.
 
-[Krijg helderheid over welke u daadwerkelijk bouwt voordat u het geprijsd heeft](https://launchstudio.eu/nl/#calculator) — het onderscheid veranderd meer dan alleen het etiket.
+[Krijg helderheid over welke u daadwerkelijk bouwt voordat u het geprijsd heeft](https://launchstudio.eu/nl/#calculator) - het onderscheid veranderd meer dan alleen het etiket.
 
 ## Een kader voor het prijzen van een echt platform
 
@@ -82,9 +82,9 @@ Naarmate WerkflowMotor groeide, begonnen verschillende grotere klanten steeds co
 **Resultaat:** LaunchStudio hielp Daniël te herkennen dat WerkflowMotor organisch was geëvolueerd tot een echt platform voor een aantal van zijn zwaarste klanten. De prijsstelling werd geherstructureerd rond het daadwerkelijke gebruiksvolume voor dat segment, terwijl de eenvoudigere vaste prijs behouden bleef voor klanten die het gebruikten zoals oorspronkelijk bedoeld – waarmee een groeiend margeprobleem werd opgelost dat vaste prijzen stilletjes hadden gecreëerd toen de zwaarste gebruikers schaalden.
 
 > *"Ik noemde het een platform in mijn pitchdeck omdat het beter klonk, terwijl ik het de hele tijd geprijsd had als een eenvoudig product. Er was iemand voor nodig die er op wees dat een paar klanten het echt als een platform gebruikten, met gebruik op platformschaal, voordat ik me realiseerde dat mijn prijsstelling nooit echt was ingehaald door wat een deel van mijn klantenbestand er daadwerkelijk mee deed."*
-> — **Daniël Post, Oprichter, WerkflowMotor (Groningen)**
+> - **Daniël Post, Oprichter, WerkflowMotor (Groningen)**
 
-**Kosten en tijdlijn:** € 1.900 (op gebruik gebaseerde prijsarchitectuur en gelaagde herstructurering) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (op gebruik gebaseerde prijsarchitectuur en gelaagde herstructurering) - voltooid in 8 werkdagen.
 
 ---
 
@@ -136,7 +136,7 @@ Ja, en dit is een redelijke, bewuste keuze voor veel bedrijven – niet elk succ
       "name": "Eist de overgang naar prijzen op gebruik een herbouw van het product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet typisch — de onderliggende engine blijft hetzelfde, terwijl de facturatielaag wordt geherstructureerd."
+        "text": "Niet typisch - de onderliggende engine blijft hetzelfde, terwijl de facturatielaag wordt geherstructureerd."
       }
     },
     {
@@ -152,7 +152,7 @@ Ja, en dit is een redelijke, bewuste keuze voor veel bedrijven – niet elk succ
       "name": "Kan een product bewust afgebakend blijven zonder platform-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, een redelijke en bewuste keuze — niet elk succesvol product hoeft een platform te worden."
+        "text": "Ja, een redelijke en bewuste keuze - niet elk succesvol product hoeft een platform te worden."
       }
     }
   ]

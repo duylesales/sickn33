@@ -35,7 +35,7 @@ Het raakvlak tussen kunstmatige intelligentie en de Europese privacywetgeving he
 
 AI- en privacykwesties zijn allerminst een formaliteit op papier; het zijn complexe software-architectuurvraagstukken. Wanneer een gebruiker persoonsgegevens invoert in uw AI-app en uw code stuurt dit door naar de API van OpenAI of Anthropic, initieert u een gegevensoverdracht naar een derde partij. Bevat die data direct herleidbare persoonsgegevens (PII) van een Europese burger en wordt dit verwerkt op servers buiten de Europese Economische Ruimte (EER) zonder passende waarborgen, dan overtreedt u rechtstreeks de Algemene Verordening Gegevensbescherming (AVG/GDPR).
 
-Vrijwel alle met AI gebouwde prototypes schenden standaard de AVG. Tools zoals Cursor, Bolt en Lovable genereren directe API-aanroepen die invoer van gebruikers als één ruwe string blind doorsturen naar Amerikaanse LLM's. Voor een startup die wil opschalen — zeker in de B2B-markt of binnen Europa — vormt deze opzet een levensgrote juridische aansprakelijkheid met mogelijke boetes tot €20 miljoen of 4% van de wereldwijde jaaromzet.
+Vrijwel alle met AI gebouwde prototypes schenden standaard de AVG. Tools zoals Cursor, Bolt en Lovable genereren directe API-aanroepen die invoer van gebruikers als één ruwe string blind doorsturen naar Amerikaanse LLM's. Voor een startup die wil opschalen - zeker in de B2B-markt of binnen Europa - vormt deze opzet een levensgrote juridische aansprakelijkheid met mogelijke boetes tot €20 miljoen of 4% van de wereldwijde jaaromzet.
 
 ## De Drie Lagen van Een Privacy-First AI-Architectuur
 
@@ -109,9 +109,9 @@ Binnen 14 werkdagen richtte LaunchStudio een beveiligde Python-backend in op AWS
 **Resultaat:** ContractClear doorstond de hernieuwde beveiligingsaudit zonder een enkele opmerking. Mathijs sloot niet alleen de pilot succesvol af, maar gebruikte zijn nieuwe enterprise-privacycertificering om direct drie extra zakelijke klanten te contracteren (€8.500 MRR).
 
 > *"Ik dacht dat het bouwen van de AI-functies het moeilijkste deel was. Dat had ik mis. De privacy-infrastructuur bouwen zodat bedrijven hun data aan je toevertrouwen, dát is het echte werk. LaunchStudio heeft mijn software zakelijk levensvatbaar gemaakt."*
-> — **Mathijs van der Meer, Oprichter, ContractClear (Den Haag)**
+> - **Mathijs van der Meer, Oprichter, ContractClear (Den Haag)**
 
-**Kosten & Doorlooptijd:** €7.200 (Launch & Grow Pakket met Enterprise Security Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €7.200 (Launch & Grow Pakket met Enterprise Security Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

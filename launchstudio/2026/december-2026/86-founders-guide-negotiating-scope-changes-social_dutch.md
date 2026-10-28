@@ -1,4 +1,4 @@
-🔄 Lars ontdekte halverwege zijn **Lovable** sprint dat dierenartsen multi-locatie beheer eisten — terwijl het geplande exportdashboard niet nodig was. 🏥
+🔄 Lars ontdekte halverwege zijn **Lovable** sprint dat dierenartsen multi-locatie beheer eisten - terwijl het geplande exportdashboard niet nodig was. 🏥
 
 Nieuwe klantinzichten halverwege een project zijn normaal. De kunst is 'Scope Trading': ruilen in plaats van stapelen.
 
@@ -12,7 +12,7 @@ Nieuwe klantinzichten halverwege een project zijn normaal. De kunst is 'Scope Tr
 
 Bij LaunchStudio combineren we vaste prijsgaranties met wendbaarheid voor veranderende markteisen. 🛡️
 
-Lars lanceerde op tijd binnen zijn budget van € 2.800 en sloot direct een kliniek met 3 vestigingen aan. (€ 2.800 (Launch & Grow) — 10 werkdagen.) 🚀
+Lars lanceerde op tijd binnen zijn budget van € 2.800 en sloot direct een kliniek met 3 vestigingen aan. (€ 2.800 (Launch & Grow) - 10 werkdagen.) 🚀
 
 👉 Leer hoe u professioneel onderhandelt over scope: https://launchstudio.eu/nl/blog/founders-guide-negotiating-scope-changes
 

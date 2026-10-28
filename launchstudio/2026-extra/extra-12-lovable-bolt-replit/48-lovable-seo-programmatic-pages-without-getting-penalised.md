@@ -44,7 +44,7 @@ Programmatic pages work when you have a real dataset. Small products usually hav
 
 **Public data recombined usefully.** Official registers, published statistics, open data. The value is in the combination and presentation rather than the data.
 
-**Structured content you actually produce.** Detailed comparisons, worked examples, guides per use case — genuinely written, not generated from a pattern.
+**Structured content you actually produce.** Detailed comparisons, worked examples, guides per use case - genuinely written, not generated from a pattern.
 
 If you have none of these, you do not have a programmatic SEO opportunity. You have an idea for one, and publishing it anyway is the version that damages the site.
 
@@ -70,7 +70,7 @@ The last of these is the most common and the most avoidable. A page with eighty 
 
 Where you do have a dataset, the work is in making each page substantially its own.
 
-Lead with the specific data, not with the template's introduction. The numbers, the list, the comparison — the thing that differs — should be the first thing on the page and the majority of it.
+Lead with the specific data, not with the template's introduction. The numbers, the list, the comparison - the thing that differs - should be the first thing on the page and the majority of it.
 
 Vary the structure where the data varies. A page with three data points should not be padded to the length of one with forty; it should be shorter, and that is fine.
 
@@ -94,11 +94,11 @@ Data pages have a property that written articles do not: they go stale silently,
 
 Median prices from eighteen months ago, a count of active providers that includes twelve who left, a "most requested services" list reflecting last winter. Nothing on the page indicates any of this, and a visitor who acts on it has been misled by you specifically.
 
-Three measures keep it honest. Regenerate on a schedule appropriate to the data — monthly for prices, weekly for counts — rather than at publication time only. Show the date the figures are from, visibly, which both sets expectations and signals that the page is maintained. And set a minimum data threshold below which the page is withdrawn rather than published with a caveat: a median calculated from four quotes is not a median.
+Three measures keep it honest. Regenerate on a schedule appropriate to the data - monthly for prices, weekly for counts - rather than at publication time only. Show the date the figures are from, visibly, which both sets expectations and signals that the page is maintained. And set a minimum data threshold below which the page is withdrawn rather than published with a caveat: a median calculated from four quotes is not a median.
 
 There is a benefit beyond accuracy. A page whose figures update regularly gives people a reason to return and gives other sites a reason to link to it as a reference, which is worth considerably more than the page's own ranking. The trade publications citing regional pricing in the example above did so because the numbers were current; they would not have cited a snapshot from a year ago.
 
-Automate the regeneration as part of your scheduled work, with the same monitoring as anything else that runs unattended — because a data page whose refresh job stopped in March is exactly the failure this section is about.
+Automate the regeneration as part of your scheduled work, with the same monitoring as anything else that runs unattended - because a data page whose refresh job stopped in March is exactly the failure this section is about.
 
 ## The Alternative Nobody Considers
 
@@ -108,7 +108,7 @@ Twenty programmatic pages take a day to build and produce, in the good case, a s
 
 The way to find those six: read your last fifty support conversations and your last twenty sales calls. The questions that recur are the articles. They are already phrased the way people search, they are answerable with knowledge you demonstrably have, and nobody else in your niche has written them because nobody else has had those conversations.
 
-This is unglamorous compared with generating four hundred pages in an afternoon, and it is the approach that works for products without a dataset — which is most of them in the first two years.
+This is unglamorous compared with generating four hundred pages in an afternoon, and it is the approach that works for products without a dataset - which is most of them in the first two years.
 
 The sequence that serves most founders: write the six articles first, see what they produce, and only consider generated pages once you have both a real dataset and evidence that the written pages are performing. Programmatic SEO is an amplifier of a working content operation rather than a substitute for one.
 
@@ -116,7 +116,7 @@ The sequence that serves most founders: write the six articles first, see what t
 
 For a product considering this, the work is typically two to four days: identifying whether a genuine dataset exists, defining the page set from combinations with real demand rather than from a full cross-product, building the generation with each page leading on its specific data, writing genuine content for the highest-value pages, proper internal linking rather than a footer dump, unique titles and descriptions per page, publishing in batches rather than all at once, measurement per page, and a scheduled review that prunes what produced nothing.
 
-LaunchStudio builds this where a product has the data to justify it, and advises against it where it does not — which is the more common outcome. Behind it is Manifera — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio builds this where a product has the data to justify it, and advises against it where it does not - which is the more common outcome. Behind it is Manifera - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Tell us what data your product holds](https://launchstudio.eu/en/#contact) and we will tell you whether there are pages in it.
 
@@ -130,20 +130,20 @@ An AI session generated 412 pages: every trade crossed with every town above 20,
 
 For two months, nothing. In the third month, organic traffic to the whole site fell by 60 percent, including to the six genuinely written guides that had been his only source of signups.
 
-Five business days: all 412 template pages removed; an assessment of what data the platform actually held, which was substantial — 14,000 completed quotes with prices, durations and job types by region; 26 pages rebuilt from that data, one per trade in the six largest regions, each leading with real figures: median quote price for that trade in that region, typical range, average time to first response, number of active tradespeople, and the five most requested job types with their own price ranges; each page shorter or longer according to how much data existed, with regions below a data threshold omitted entirely rather than padded; two sentences of genuine written context per page; proper navigation from a regional index rather than a footer list; unique titles and descriptions per page; the 26 published across three weeks rather than at once; and a quarterly review comparing each page's impressions and conversions.
+Five business days: all 412 template pages removed; an assessment of what data the platform actually held, which was substantial - 14,000 completed quotes with prices, durations and job types by region; 26 pages rebuilt from that data, one per trade in the six largest regions, each leading with real figures: median quote price for that trade in that region, typical range, average time to first response, number of active tradespeople, and the five most requested job types with their own price ranges; each page shorter or longer according to how much data existed, with regions below a data threshold omitted entirely rather than padded; two sentences of genuine written context per page; proper navigation from a regional index rather than a footer list; unique titles and descriptions per page; the 26 published across three weeks rather than at once; and a quarterly review comparing each page's impressions and conversions.
 
-**Result:** traffic recovered to its previous level within ten weeks and exceeded it by month five. The 26 data pages now produce more organic signups than the six guides, and three have been cited by trade publications as a source for regional pricing — which no template page would ever have been. Six of the 26 were pruned at the first quarterly review for producing nothing, leaving 20.
+**Result:** traffic recovered to its previous level within ten weeks and exceeded it by month five. The 26 data pages now produce more organic signups than the six guides, and three have been cited by trade publications as a source for regional pricing - which no template page would ever have been. Six of the 26 were pruned at the first quarterly review for producing nothing, leaving 20.
 
 > *"Four hundred pages that said nothing cost me the six pages that said something. The data to do it properly had been in my database the whole time."*
-> — **Ivo Zwiers, Founder, Klusprijzen (Amersfoort)**
+> - **Ivo Zwiers, Founder, Klusprijzen (Amersfoort)**
 
-**Cost & Timeline:** €4,200 (template page removal, data assessment and aggregation, 26 data-driven pages with genuine figures, written context, navigation and internal linking, per-page metadata, staged publication, measurement and pruning process) — completed in 5 business days.
+**Cost & Timeline:** €4,200 (template page removal, data assessment and aggregation, 26 data-driven pages with genuine figures, written context, navigation and internal linking, per-page metadata, staged publication, measurement and pruning process) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### Do programmatic SEO pages still work?
 
-Only where each page contains genuinely different, genuinely useful information — usually from a real dataset. Template pages with a substituted variable now harm the whole site rather than merely underperforming.
+Only where each page contains genuinely different, genuinely useful information - usually from a real dataset. Template pages with a substituted variable now harm the whole site rather than merely underperforming.
 
 ### How many pages should I publish at once?
 

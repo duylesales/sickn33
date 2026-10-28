@@ -86,9 +86,9 @@ They discarded the standalone vector database and migrated the embeddings to Sup
 **Result:** The AI Compliance Officer was deployed to production in exactly 30 days. Because LaunchStudio built the complex infrastructure (Layer 2), Lars's internal engineers were finally freed to focus on what they actually understood: the financial business logic and the frontend UI (Layer 3). The project succeeded, and Lars saved his job.
 
 > *"We had arrogant engineers who thought that because they could build a React app, they could build an enterprise AI pipeline. We wasted 8 months trying to invent the wheel. LaunchStudio came in, installed the enterprise-grade AI engine into our VPC, and let our team focus on building the car around it. It was the best strategic decision we made."*
-> — **Lars Knudsen, VP of Engineering, CompliFi (Copenhagen)**
+> - **Lars Knudsen, VP of Engineering, CompliFi (Copenhagen)**
 
-**Cost & Timeline:** €25,000 (Launch & Grow Package with Architecture Rescue & RAG Optimization Add-on) — production-ready and deployed in 30 business days.
+**Cost & Timeline:** €25,000 (Launch & Grow Package with Architecture Rescue & RAG Optimization Add-on) - production-ready and deployed in 30 business days.
 
 ---
 

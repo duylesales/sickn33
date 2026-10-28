@@ -44,7 +44,7 @@ Odense, Denmark's third-largest city and the birthplace of Hans Christian Anders
 
 ## The Odense Robotics Cluster
 
-Odense's robotics story is well known in the industry. Universal Robots, founded in Odense, helped create the market for collaborative robots — robot arms designed to work safely alongside people. Mobile Industrial Robots (MiR), also founded in Odense, develops autonomous mobile robots for logistics in factories and warehouses. Both are now part of the US company Teradyne and retain major operations in the city. Around them, Odense Robotics, the cluster organisation, brings together many companies working on robots, automation, drones and related technologies.
+Odense's robotics story is well known in the industry. Universal Robots, founded in Odense, helped create the market for collaborative robots - robot arms designed to work safely alongside people. Mobile Industrial Robots (MiR), also founded in Odense, develops autonomous mobile robots for logistics in factories and warehouses. Both are now part of the US company Teradyne and retain major operations in the city. Around them, Odense Robotics, the cluster organisation, brings together many companies working on robots, automation, drones and related technologies.
 
 AI and machine learning play a growing role in robotics: perception for picking and navigation, learning from demonstration, motion planning, anomaly detection, fleet management and user interfaces that make robots easier to program. Engineers in Odense work on problems that combine ML with control, mechanics and real-world uncertainty.
 
@@ -54,7 +54,7 @@ The University of Southern Denmark (SDU) has its main campus in Odense. Its Maer
 
 ## Health Technology
 
-Odense University Hospital (OUH) is one of Denmark's largest hospitals and is part of a major new hospital development in the city. Together with SDU's health sciences and companies in health technology, it creates opportunities in medical imaging, clinical data science, hospital logistics and welfare technology — including robotics in healthcare, a field where Odense's two strengths meet. Denmark's comprehensive health registers support research, within strict data protection rules.
+Odense University Hospital (OUH) is one of Denmark's largest hospitals and is part of a major new hospital development in the city. Together with SDU's health sciences and companies in health technology, it creates opportunities in medical imaging, clinical data science, hospital logistics and welfare technology - including robotics in healthcare, a field where Odense's two strengths meet. Denmark's comprehensive health registers support research, within strict data protection rules.
 
 ## Offshore Wind and Industry
 
@@ -83,7 +83,7 @@ Odense is compact and bicycle-friendly, with a historic centre, a new light rail
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Odense you will find few or no local vacancies there today. Use Danish job portals, the robotics cluster's company overviews, SDU vacancy lists and company career pages as primary sources. OnlyAIJobs is useful for comparing Odense with the Netherlands — where engineering and automation employers such as Holland Innovative, VINCI Energies and Boltrics list AI roles — and as a method: filter by category and real commute rather than by title. Danish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Odense you will find few or no local vacancies there today. Use Danish job portals, the robotics cluster's company overviews, SDU vacancy lists and company career pages as primary sources. OnlyAIJobs is useful for comparing Odense with the Netherlands - where engineering and automation employers such as Holland Innovative, VINCI Energies and Boltrics list AI roles - and as a method: filter by category and real commute rather than by title. Danish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Machine Learning in Robotics
 
@@ -95,7 +95,7 @@ Beyond robot manufacturers, Odense and southern Denmark have many automation int
 
 ## Welfare Technology and Health Robotics
 
-Denmark has invested in welfare technology — technology that supports care for elderly and disabled people and relieves pressure on healthcare staff. Odense has been active in this area, combining its robotics expertise with hospitals and municipalities. Examples include robots that assist with logistics in hospitals, disinfection, rehabilitation and care support. AI helps these systems navigate, recognise situations and adapt to users. Projects must address safety, privacy and acceptance by staff and patients, making them as much about human-centred design as about technology.
+Denmark has invested in welfare technology - technology that supports care for elderly and disabled people and relieves pressure on healthcare staff. Odense has been active in this area, combining its robotics expertise with hospitals and municipalities. Examples include robots that assist with logistics in hospitals, disinfection, rehabilitation and care support. AI helps these systems navigate, recognise situations and adapt to users. Projects must address safety, privacy and acceptance by staff and patients, making them as much about human-centred design as about technology.
 
 ## Medical AI at the University Hospital
 
@@ -103,7 +103,7 @@ Odense University Hospital and SDU researchers apply AI to medical imaging, path
 
 ## Questions to Ask Odense Employers
 
-- What will I work on — perception, planning, fleet software or applications?
+- What will I work on - perception, planning, fleet software or applications?
 - How much time is spent on real hardware versus simulation?
 - What is the working language of the team?
 - How are safety and validation handled for learning-based features?
@@ -119,7 +119,7 @@ Odense employers value computer vision, 3D perception, motion planning, ROS and 
 
 ## Preparing for Interviews
 
-Robotics interviews often include coding tasks in C++ or Python, questions on geometry, kinematics and perception, system design for a robotic application and discussion of past hands-on projects. Some companies include practical exercises with real robots or simulations. Be ready to explain how you handled real-world messiness — sensor noise, calibration, edge cases.
+Robotics interviews often include coding tasks in C++ or Python, questions on geometry, kinematics and perception, system design for a robotic application and discussion of past hands-on projects. Some companies include practical exercises with real robots or simulations. Be ready to explain how you handled real-world messiness - sensor noise, calibration, edge cases.
 
 ## Evaluating an Offer
 
@@ -131,7 +131,7 @@ Odense suits engineers who love robotics and automation, want to see their code 
 
 ## Robotics Startups and Scale-ups
 
-The success of Odense's pioneering robot companies has inspired a wave of startups: companies building robots for agriculture, construction, healthcare, inspection and logistics, as well as software for programming, simulating and managing robots. Founders are often former employees of the larger robotics companies or SDU researchers, and the cluster organisation, incubators and investors support them. For engineers, startups offer broad responsibility — you might work on perception, integration and customer pilots in the same month — and equity, with the usual uncertainty about funding. Odense's startup community is collaborative, and knowledge flows easily between companies, which accelerates learning for everyone involved.
+The success of Odense's pioneering robot companies has inspired a wave of startups: companies building robots for agriculture, construction, healthcare, inspection and logistics, as well as software for programming, simulating and managing robots. Founders are often former employees of the larger robotics companies or SDU researchers, and the cluster organisation, incubators and investors support them. For engineers, startups offer broad responsibility - you might work on perception, integration and customer pilots in the same month - and equity, with the usual uncertainty about funding. Odense's startup community is collaborative, and knowledge flows easily between companies, which accelerates learning for everyone involved.
 
 ## Drones and Autonomous Systems
 
@@ -143,7 +143,7 @@ Robots that work alongside people raise questions of safety, trust and workplace
 
 ## Research Careers at SDU
 
-The University of Southern Denmark offers PhD, postdoc and research engineer positions in robotics, AI, drones, health informatics and energy. Danish PhD positions are paid employment with pensions and holidays, and many projects are carried out with companies in the robotics cluster or with the university hospital. SDU's close connection to industry makes transitions between research and companies common: many engineers at Odense robotics firms have SDU backgrounds, and some return to the university for collaborations or part-time teaching. For experienced engineers, research roles provide a chance to explore new methods — for example learning-based manipulation, human–robot interaction or robot safety — while remaining close to real applications.
+The University of Southern Denmark offers PhD, postdoc and research engineer positions in robotics, AI, drones, health informatics and energy. Danish PhD positions are paid employment with pensions and holidays, and many projects are carried out with companies in the robotics cluster or with the university hospital. SDU's close connection to industry makes transitions between research and companies common: many engineers at Odense robotics firms have SDU backgrounds, and some return to the university for collaborations or part-time teaching. For experienced engineers, research roles provide a chance to explore new methods - for example learning-based manipulation, human–robot interaction or robot safety - while remaining close to real applications.
 
 ## Offshore Wind Operations
 

@@ -1,4 +1,4 @@
-🚨 James, een zorgtechnologie-oprichter, bouwde een tool om patiëntendossiers samen te vatten met **Bolt** — maar privacyregels verboden het verzenden van medische data naar openbare API's, waardoor hij geen enkele kliniek kon aansluiten. 🏥
+🚨 James, een zorgtechnologie-oprichter, bouwde een tool om patiëntendossiers samen te vatten met **Bolt** - maar privacyregels verboden het verzenden van medische data naar openbare API's, waardoor hij geen enkele kliniek kon aansluiten. 🏥
 
 Soms gaat de keuze tussen commerciële API's en open-source niet om kosten, maar om wet- en regelgeving; openbare endpoints zijn voor veel enterprise-sectoren simpelweg geen optie. 🧠
 
@@ -12,7 +12,7 @@ Soms gaat de keuze tussen commerciële API's en open-source niet om kosten, maar
 
 Bij **LaunchStudio** bouwen we sinds 2014 private, data-soevereine infrastructuren via Manifera, voor enterprise-organisaties zoals Vodafone en TNO. 🛡️
 
-James doorstond alle medische privacy-audits en sloot direct 5 regionale klinieken succesvol aan als klant. (€4.500 (Self-Hosted LLM Setup Pakket) — productieklaar en binnen 10 werkdagen gedeployed). 🚀
+James doorstond alle medische privacy-audits en sloot direct 5 regionale klinieken succesvol aan als klant. (€4.500 (Self-Hosted LLM Setup Pakket) - productieklaar en binnen 10 werkdagen gedeployed). 🚀
 
 👉 Ontdek de economie van open-source AI: https://launchstudio.eu/nl/blog/economics-of-open-source-models-vs-api-providers
 

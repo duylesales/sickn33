@@ -1,4 +1,4 @@
-A title agency's new "end-to-end closing automation" platform still delivered wire instructions over plain, unauthenticated email — the exact channel BEC fraud rings target during real estate closings. 🏦
+A title agency's new "end-to-end closing automation" platform still delivered wire instructions over plain, unauthenticated email - the exact channel BEC fraud rings target during real estate closings. 🏦
 
 **The Pain Points:**
 ❌ **Wire fraud left as an afterthought:** Document workflow gets automated while the highest-liability step, wire instruction delivery, stays on unauthenticated email.

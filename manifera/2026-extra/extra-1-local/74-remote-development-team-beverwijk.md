@@ -22,26 +22,26 @@ target_persona: "VP of Engineering"
 
 A VP of Engineering can't sit in on every standup a remote development team runs, and if accountability depends on real-time observation, the model was broken before the team even started.
 
-**The Pain:** A VP of Engineering at an industrial-technology company in Beverwijk — an IJmond municipality shaped by the Tata Steel plant and its dense surrounding industrial-technology supply chain — is managing a remote development team for the first time and is used to accountability coming from proximity: seeing work happen, catching issues in real time, correcting course in the hallway.
+**The Pain:** A VP of Engineering at an industrial-technology company in Beverwijk - an IJmond municipality shaped by the Tata Steel plant and its dense surrounding industrial-technology supply chain - is managing a remote development team for the first time and is used to accountability coming from proximity: seeing work happen, catching issues in real time, correcting course in the hallway.
 
 **The Agitation:** A VP of Engineering who tries to replicate proximity-based accountability remotely, through constant check-ins and real-time monitoring, burns out fast and still misses problems that only surface between check-ins. A remote team managed this way either drifts unaccountably or consumes far more of the VP's own time than the arrangement was supposed to save.
 
 ## Accountability That Doesn't Require Constant Observation
 
-Managing a remote development team well means replacing proximity-based accountability with structural accountability — mechanisms that surface problems and verify progress without requiring the VP of Engineering to watch continuously.
+Managing a remote development team well means replacing proximity-based accountability with structural accountability - mechanisms that surface problems and verify progress without requiring the VP of Engineering to watch continuously.
 
-The first mechanism is asynchronous, written progress documentation that's genuinely informative, not a status theater exercise — specific, checkable claims about what shipped and what's blocked, reviewable in minutes rather than requiring a live meeting to interpret.
+The first mechanism is asynchronous, written progress documentation that's genuinely informative, not a status theater exercise - specific, checkable claims about what shipped and what's blocked, reviewable in minutes rather than requiring a live meeting to interpret.
 
 The second is independent quality verification built into the process itself: automated test coverage thresholds, code review gates, and periodic architecture review that catch drift structurally, rather than relying on the VP personally noticing a problem in real time.
 
-The third is a named technical lead on the remote team with genuine decision-making authority, who resolves ambiguity locally instead of escalating every judgment call back to the VP — accountability distributed to someone empowered to hold it, not centralized on one overloaded person.
+The third is a named technical lead on the remote team with genuine decision-making authority, who resolves ambiguity locally instead of escalating every judgment call back to the VP - accountability distributed to someone empowered to hold it, not centralized on one overloaded person.
 
 ## The Hybrid Hub: How Manifera Executes This
 
-- **Amsterdam (Governance/Strategy):** Dutch-based leads build the structural accountability mechanisms — verification gates, architecture review — that replace the need for constant real-time oversight.
+- **Amsterdam (Governance/Strategy):** Dutch-based leads build the structural accountability mechanisms - verification gates, architecture review - that replace the need for constant real-time oversight.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod's named technical lead resolves day-to-day ambiguity locally, with specific, checkable async progress documentation as standard practice.
 
-This is Dutch Management × Vietnamese Mastery — accountability that scales without consuming your calendar. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - accountability that scales without consuming your calendar. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -51,8 +51,8 @@ Průmyslová Automatizace s.r.o., an industrial-automation technology company ba
 
 Manifera restructured the engagement around specific written async progress reports, automated quality gates, and a named technical lead empowered to resolve ambiguity without escalation. The VP's oversight time dropped by more than half within a month, while issue-detection speed improved because the structural checks caught problems the real-time meetings had been missing.
 
-> *"I was trying to manage remotely the way I'd managed in person, and it was exhausting and still not working. The fix wasn't more meetings — it was different structure entirely."*
-> — **VP of Engineering, Průmyslová Automatizace s.r.o., Czech Republic**
+> *"I was trying to manage remotely the way I'd managed in person, and it was exhausting and still not working. The fix wasn't more meetings - it was different structure entirely."*
+> - **VP of Engineering, Průmyslová Automatizace s.r.o., Czech Republic**
 
 ## Proximity-Based Oversight vs. Manifera's Structural Accountability
 
@@ -66,17 +66,17 @@ Manifera restructured the engagement around specific written async progress repo
 
 ## The Economics
 
-A VP of Engineering managing a remote development team through constant real-time oversight typically spends more hours in management than the remote arrangement was meant to save, while still missing problems that occur between check-ins. Structural accountability mechanisms — async documentation, quality gates, empowered local leadership — cost a modest setup investment and then scale without consuming the VP's calendar. [Talk to Manifera about a structural accountability model](https://www.manifera.com/contact-us/).
+A VP of Engineering managing a remote development team through constant real-time oversight typically spends more hours in management than the remote arrangement was meant to save, while still missing problems that occur between check-ins. Structural accountability mechanisms - async documentation, quality gates, empowered local leadership - cost a modest setup investment and then scale without consuming the VP's calendar. [Talk to Manifera about a structural accountability model](https://www.manifera.com/contact-us/).
 
 ## The 30-Day Rollout Checklist for Structural Accountability
 
-A VP of Engineering running five daily check-ins across an eight-person team loses roughly 8-10 hours a week to oversight meetings alone — time structural accountability is designed to reclaim. Rolling it out follows a four-week sequence, not a single policy change.
+A VP of Engineering running five daily check-ins across an eight-person team loses roughly 8-10 hours a week to oversight meetings alone - time structural accountability is designed to reclaim. Rolling it out follows a four-week sequence, not a single policy change.
 
-Week 1: define the async documentation standard with four mandatory fields — what shipped (linked to a commit or ticket), what's blocked (with a named owner), confidence level on the current sprint, and the next 48-hour plan. Reports that skip a field get bounced back, not accepted.
+Week 1: define the async documentation standard with four mandatory fields - what shipped (linked to a commit or ticket), what's blocked (with a named owner), confidence level on the current sprint, and the next 48-hour plan. Reports that skip a field get bounced back, not accepted.
 
-Week 2: instrument automated gates — a test-coverage floor (typically 70-80% on critical paths for industrial-tech systems handling supply-chain or safety data), mandatory lint/type-check as merge blockers, and a 24-hour PR review SLA.
+Week 2: instrument automated gates - a test-coverage floor (typically 70-80% on critical paths for industrial-tech systems handling supply-chain or safety data), mandatory lint/type-check as merge blockers, and a 24-hour PR review SLA.
 
-Week 3: write the decision-authority matrix — which calls the technical lead owns outright (library selection, sprint re-sequencing, architecture choices under a defined impact threshold) versus what escalates (scope changes touching external commitments, budget shifts).
+Week 3: write the decision-authority matrix - which calls the technical lead owns outright (library selection, sprint re-sequencing, architecture choices under a defined impact threshold) versus what escalates (scope changes touching external commitments, budget shifts).
 
 Week 4: run the first structural retro, comparing what the documentation claimed against what actually shipped, and recalibrate the rubric. Teams that follow this sequence typically see check-in-driven meeting time drop 60-70% within the first month, with issue-detection speed holding steady or improving.
 
@@ -96,7 +96,7 @@ Build automated test coverage thresholds and periodic architecture review into t
 
 ### (Scenario: VP of Engineering deciding how much decision authority to delegate) Should a remote team's technical lead have real decision-making authority, or escalate everything?
 
-Genuine local authority to resolve ambiguity is essential — a technical lead who escalates every judgment call back to the VP recreates the same time-cost problem structural accountability is meant to solve.
+Genuine local authority to resolve ambiguity is essential - a technical lead who escalates every judgment call back to the VP recreates the same time-cost problem structural accountability is meant to solve.
 
 ### (Scenario: VP of Engineering estimating the setup cost of structural accountability) Is building structural accountability mechanisms a large upfront investment?
 
@@ -104,15 +104,15 @@ It requires a modest setup investment in documentation standards, quality gates,
 
 ### (Scenario: VP of Engineering managing across the Netherlands-Vietnam time gap) Does the time difference between Beverwijk and a Vietnam-based remote team undermine structural accountability?
 
-No — with async-first documentation and a clear decision-authority matrix, the roughly 5-6 hour gap between CET and Indochina Time extends the effective working day instead of blocking it, with a 2-3 hour overlap window reserved for genuine escalations rather than routine status checks.
+No - with async-first documentation and a clear decision-authority matrix, the roughly 5-6 hour gap between CET and Indochina Time extends the effective working day instead of blocking it, with a 2-3 hour overlap window reserved for genuine escalations rather than routine status checks.
 
 ### (Scenario: VP of Engineering skeptical that async reports are just paperwork) How do we verify async progress documentation isn't just status theater?
 
-Audit each report against a rubric: it must reference a specific artifact — a commit, ticket, or test result — name a blocker with an owner, and be independently verifiable in under five minutes; any report that can't be checked against a real artifact gets flagged and returned.
+Audit each report against a rubric: it must reference a specific artifact - a commit, ticket, or test result - name a blocker with an owner, and be independently verifiable in under five minutes; any report that can't be checked against a real artifact gets flagged and returned.
 
 ### (Scenario: VP of Engineering managing an industrial-tech supply-chain vendor relationship) Does structural accountability satisfy supply-chain audit requirements tied to Beverwijk's industrial-tech ecosystem?
 
-Yes — the same async documentation and quality gates produce the traceable record auditors want: who approved a change, when, and against which test evidence, which typically satisfies ISO 9001-style supply-chain traceability requirements more reliably than informal real-time oversight.
+Yes - the same async documentation and quality gates produce the traceable record auditors want: who approved a change, when, and against which test evidence, which typically satisfies ISO 9001-style supply-chain traceability requirements more reliably than informal real-time oversight.
 
 ### (Scenario: VP of Engineering managing in-house staff resistant to remote structural accountability) How do we get a team used to hallway-style oversight to trust a structural accountability model?
 

@@ -21,7 +21,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-De meeste artikelen over AI-gegenereerde code in productie richten zich op beveiligingslekken. Die zijn uiteraard belangrijk, en we schrijven er regelmatig over. Maar wanneer de engineers van LaunchStudio de logs analyseren van met AI gebouwde applicaties die al live staan, zijn de meest voorkomende problemen geen hacks of inbraken. Het zijn betrouwbaarheidsproblemen — code die feilloos werkt tijdens een demo, maar op subtiele, specifieke manieren degradeert zodra er sprake is van echt dataverkeer, wankele netwerken en echte tijdzones.
+De meeste artikelen over AI-gegenereerde code in productie richten zich op beveiligingslekken. Die zijn uiteraard belangrijk, en we schrijven er regelmatig over. Maar wanneer de engineers van LaunchStudio de logs analyseren van met AI gebouwde applicaties die al live staan, zijn de meest voorkomende problemen geen hacks of inbraken. Het zijn betrouwbaarheidsproblemen - code die feilloos werkt tijdens een demo, maar op subtiele, specifieke manieren degradeert zodra er sprake is van echt dataverkeer, wankele netwerken en echte tijdzones.
 
 Hier zijn de vijf patronen die we keer op keer tegenkomen, hoe ze eruitzien wanneer je eindelijk in de logs duikt, en hoe de oplossing er in de praktijk uitziet.
 
@@ -37,7 +37,7 @@ Hier zijn de vijf patronen die we keer op keer tegenkomen, hoe ze eruitzien wann
 
 ## Patroon 2: De optimistische time-out
 
-**Hoe het eruitziet in de code:** uitgaande API-aanroepen naar e-maildiensten, betalingsproviders, AI-modellen of geocoding-services zonder geconfigureerde time-out, of met de standaardinstelling van de library — die soms oneindig is.
+**Hoe het eruitziet in de code:** uitgaande API-aanroepen naar e-maildiensten, betalingsproviders, AI-modellen of geocoding-services zonder geconfigureerde time-out, of met de standaardinstelling van de library - die soms oneindig is.
 
 **Hoe het zich uit in productie:** zodra een externe dienst vertraging oploopt, vertraagt jouw gehele applicatie mee. Serverless functies blijven hangen totdat het platform ze geforceerd afbreekt, gebruikers staren naar oneindige laadanimaties, en omdat elk hangend verzoek een databaseverbinding vasthoudt, verspreidt de vertraging zich naar pagina's die helemaal niets met die externe dienst te maken hebben.
 
@@ -49,7 +49,7 @@ Hier zijn de vijf patronen die we keer op keer tegenkomen, hoe ze eruitzien wann
 
 **Hoe het eruitziet in de code:** `select * from orders where user_id = ...` zonder paginering of limiet, of een dashboard dat alle records ophaalt en pas in de browser filtert. Met tien testrecords werkt dit razendsnel.
 
-**Hoe het zich uit in productie:** wekenlang gaat het goed, dan wordt het geleidelijk trager, en plotseling breekt het systeem. De eerste actieve klant met 4.000 orders opent zijn dashboard en het duurt veertig seconden om te laden — of de serverless functie crasht door geheugengebrek (out-of-memory).
+**Hoe het zich uit in productie:** wekenlang gaat het goed, dan wordt het geleidelijk trager, en plotseling breekt het systeem. De eerste actieve klant met 4.000 orders opent zijn dashboard en het duurt veertig seconden om te laden - of de serverless functie crasht door geheugengebrek (out-of-memory).
 
 **Hoe het eruitziet in de logs:** responstijden die week na week sluipend toenemen voor hetzelfde endpoint, gevolgd door out-of-memory errors die zich concentreren rond een handvol zware gebruikers.
 
@@ -69,7 +69,7 @@ Hier zijn de vijf patronen die we keer op keer tegenkomen, hoe ze eruitzien wann
 
 **Hoe het eruitziet in de code:** een retry-loop rondom een falende API-aanroep, zonder exponential backoff en zonder maximum aantal pogingen. Vaak toegevoegd door de AI om de code "robuuster te maken" nadat je vroeg om een intermitterende fout op te lossen.
 
-**Hoe het zich uit in productie:** zodra de externe service een korte hapering doormaakt, probeert elk verzoek het direct en herhaaldelijk opnieuw. Jouw applicatie vuurt honderden verzoeken per seconde af op een service die het toch al zwaar heeft, waardoor je tegen rate limits aanloopt die je langer blokkeren dan de oorspronkelijke storing — en bij betaalde API's leidt dit tot torenhoge facturen.
+**Hoe het zich uit in productie:** zodra de externe service een korte hapering doormaakt, probeert elk verzoek het direct en herhaaldelijk opnieuw. Jouw applicatie vuurt honderden verzoeken per seconde af op een service die het toch al zwaar heeft, waardoor je tegen rate limits aanloopt die je langer blokkeren dan de oorspronkelijke storing - en bij betaalde API's leidt dit tot torenhoge facturen.
 
 **Hoe het eruitziet in de logs:** een plotselinge gigantische piek van identieke uitgaande verzoeken, direct gevolgd door HTTP 429 ("Too Many Requests") responses.
 
@@ -106,7 +106,7 @@ De structurele oplossing achter alle vijf de patronen is om voor elke externe af
 | AI-model API | Stream gedeeltelijk resultaat | Toon gecachte versie of handmatige optie | Hanteer strikt quotum per gebruiker |
 | Kaarten / Geocoding | Gebruik laatst bekende coördinaten | Verberg kaart, behoud adres als tekst | Cache resultaten agressief |
 
-Zodra dit op papier staat, vertaalt elke rij zich naar een klein, overzichtelijk stukje testbare code. Zonder deze afspraken is het gedrag overgeleverd aan wat de AI toevallig genereerde — meestal "blijven hangen en vervolgens geruisloos falen."
+Zodra dit op papier staat, vertaalt elke rij zich naar een klein, overzichtelijk stukje testbare code. Zonder deze afspraken is het gedrag overgeleverd aan wat de AI toevallig genereerde - meestal "blijven hangen en vervolgens geruisloos falen."
 
 ## Fouten testen vóórdat je gebruikers dat doen
 
@@ -120,7 +120,7 @@ Betrouwbaarheidswerk heeft pas waarde als het in de praktijk op de proef wordt g
 
 ## Logs waar je echt iets aan hebt
 
-Het praktijkvoorbeeld van Burak hieronder toont aan hoeveel inzichten boven water komen zodra er gestructureerde logging aanwezig is. Bruikbare productielogs delen vaste eigenschappen: elk inkomend verzoek draagt een uniek request-ID dat terugkomt in elke logregel en foutrapportage; fouten vermelden de uitgevoerde operatie, de externe dienst en de duur, maar nooit gevoelige persoonsgegevens; en logs worden lang genoeg bewaard — minimaal 14 tot 30 dagen — in een doorzoekbare tool in plaats van in een tijdelijke serverless console. Door dit één keer goed in te richten, verandert elk toekomstig incident van giswerk in een zoekopdracht van vijf minuten.
+Het praktijkvoorbeeld van Burak hieronder toont aan hoeveel inzichten boven water komen zodra er gestructureerde logging aanwezig is. Bruikbare productielogs delen vaste eigenschappen: elk inkomend verzoek draagt een uniek request-ID dat terugkomt in elke logregel en foutrapportage; fouten vermelden de uitgevoerde operatie, de externe dienst en de duur, maar nooit gevoelige persoonsgegevens; en logs worden lang genoeg bewaard - minimaal 14 tot 30 dagen - in een doorzoekbare tool in plaats van in een tijdelijke serverless console. Door dit één keer goed in te richten, verandert elk toekomstig incident van giswerk in een zoekopdracht van vijf minuten.
 
 ## Prioriteiten stellen bij betrouwbaarheidsfixes
 
@@ -129,19 +129,19 @@ Niet elk foutpatroon vereist dezelfde urgentie. Een beproefde volgorde is:
 2. **Time-outs** op externe API-aanroepen, omdat zij kettingreacties en algehele traagheid veroorzaken.
 3. **Retry-limieten**, omdat ongecontroleerde loops tot torenhoge rekeningen en API-blokkades leiden.
 4. **Onbegrensde queries**, op volgorde van pagina's die je meest actieve klanten bezoeken.
-5. **Klok- en tijdzoneafhandeling**, tenzij je product een plannings- of agendasysteem is — in dat geval staat dit met stip op één.
+5. **Klok- en tijdzoneafhandeling**, tenzij je product een plannings- of agendasysteem is - in dat geval staat dit met stip op één.
 
 Evalueer deze rangschikking na twee weken foutmetingen: echte productiedata bevestigt meestal je prioriteiten en legt soms onverwachte knelpunten bloot.
 
 ## Betrouwbaarheid is een gewoonte, geen eenmalig project
 
-De patronen in dit artikel keren terug telkens wanneer er nieuwe code wordt gegenereerd. Voorkom terugval met vaste werkgewoonten: een lint-regel die lege catch-blokken markeert, een gedeelde HTTP-helper met ingebouwde time-out die elke nieuwe integratie verplicht moet gebruiken, een pagineringshelper voor lijst-queries, een datummodule die altijd een tijdzone vereist, en een retry-helper met ingebouwde backoff. Wanneer je AI-tool expliciet opdracht krijgt deze helpers te gebruiken — via projectregels of een `.cursorrules` / `README`-sectie — erft nieuw gegenereerde code automatisch robuust gedrag in plaats van toevalstreffers. Bekijk je foutenregistratie wekelijks op nieuwe typen fouten; een nieuw fouttype is vaak het eerste signaal dat een AI-wijziging per ongeluk om de vaste helpers heen is geschreven.
+De patronen in dit artikel keren terug telkens wanneer er nieuwe code wordt gegenereerd. Voorkom terugval met vaste werkgewoonten: een lint-regel die lege catch-blokken markeert, een gedeelde HTTP-helper met ingebouwde time-out die elke nieuwe integratie verplicht moet gebruiken, een pagineringshelper voor lijst-queries, een datummodule die altijd een tijdzone vereist, en een retry-helper met ingebouwde backoff. Wanneer je AI-tool expliciet opdracht krijgt deze helpers te gebruiken - via projectregels of een `.cursorrules` / `README`-sectie - erft nieuw gegenereerde code automatisch robuust gedrag in plaats van toevalstreffers. Bekijk je foutenregistratie wekelijks op nieuwe typen fouten; een nieuw fouttype is vaak het eerste signaal dat een AI-wijziging per ongeluk om de vaste helpers heen is geschreven.
 
 ## Wat een betrouwbaarheidscontrole omvat
 
 Wanneer LaunchStudio een betrouwbaarheidscontrole uitvoert op AI-gegenereerde code in productie, is dat een gerichte audit in plaats van een complete herbouw: we controleren elk `catch`-blok, elke uitgaande netwerkaanroep en elke databasequery zonder limiet; we onderzoeken hoe datums worden berekend en opgeslagen; we beoordelen de retry-logica; en we richten monitoring en error tracking in zodat het volgende incident binnen enkele minuten zichtbaar is. Voor de meeste compacte SaaS-applicaties is dit een kwestie van enkele dagen werk, geen maanden.
 
-LaunchStudio wordt aangedreven door Manifera — onze software engineers hebben ruim 160 projecten opgeleverd voor enterprise-opdrachtgevers, en staan nu klaar om jouw applicatie naar productieniveau te tillen. Dezelfde betrouwbaarheidschecklist die Manifera hanteert voor complexe enterprisesystemen vanuit het ontwikkelcentrum in Ho Chi Minhstad, passen wij toe, afgestemd op de schaal en het budget van ambitieuze oprichters. Je kunt [een vrijblijvend kennismakingsgesprek van 15 minuten inplannen](https://launchstudio.eu/nl/#contact), of meer lezen over [de technologieën waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio wordt aangedreven door Manifera - onze software engineers hebben ruim 160 projecten opgeleverd voor enterprise-opdrachtgevers, en staan nu klaar om jouw applicatie naar productieniveau te tillen. Dezelfde betrouwbaarheidschecklist die Manifera hanteert voor complexe enterprisesystemen vanuit het ontwikkelcentrum in Ho Chi Minhstad, passen wij toe, afgestemd op de schaal en het budget van ambitieuze oprichters. Je kunt [een vrijblijvend kennismakingsgesprek van 15 minuten inplannen](https://launchstudio.eu/nl/#contact), of meer lezen over [de technologieën waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
 
 ## Praktijkvoorbeeld
 
@@ -156,9 +156,9 @@ De engineers van LaunchStudio vervingen de stille catches door heldere foutrappo
 **Resultaat:** In het daaropvolgende kwartaal werd elke onderhoudsbeurt binnen FleetNote tijdig geregistreerd, daalde het aantal mislukte fotouploads naar nagenoeg nul dankzij de herhaalpogingen van chauffeurs, en daalde de API-factuur voor voertuigdata met circa 40% doordat de retry-storm was verholpen.
 
 > *"Er crashte nooit iets, en daarom vertrouwde ik het blind. Achteraf bleek de applicatie uiterst beleefd te falen, zonder het iemand te laten weten."*
-> — **Burak Aydın, Oprichter, FleetNote (Zaandam)**
+> - **Burak Aydın, Oprichter, FleetNote (Zaandam)**
 
-**Kosten & Tijdlijn:** € 2.200 (betrouwbaarheidsreview, error handling, time-outs, planningscorrecties en monitoring) — afgerond binnen 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.200 (betrouwbaarheidsreview, error handling, time-outs, planningscorrecties en monitoring) - afgerond binnen 8 werkdagen.
 
 ## Veelgestelde Vragen
 

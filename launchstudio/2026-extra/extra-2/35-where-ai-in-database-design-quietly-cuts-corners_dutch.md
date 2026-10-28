@@ -61,11 +61,11 @@ Manifera's configuratie-audits vóór de lancering worden uitgevoerd door het en
 
 Standaard beheerderswachtwoorden zijn de meest ingrijpende variant van dit patroon, maar ze zijn zelden de enige ongewijzigde standaardwaarde in een pas gelanceerd product. Voordat u een applicatie openstelt voor echte betalende klanten, is het essentieel om bewust elk van de volgende punten na te lopen:
 
-- **Beheerders- en seed-accounts** — controleer elk account dat een AI-codeertool of database-migratiescript automatisch heeft aangemaakt tijdens de ontwikkeling. Bevestig dat elk account een uniek, sterk wachtwoord heeft gekregen of dat het testaccount volledig is verwijderd.
-- **API-sleutels en inloggegevens van externe diensten** — betaalproviders, e-maildiensten en analysetools leveren vaak afzonderlijke test- en live-sleutels. Lancering met een testsleutel die nog gekoppeld is aan een live functie kan betalingen stilletjes blokkeren, terwijl het omgekeerde (een live sleutel hardcoded in broncode) reële inloggegevens kan lekken.
-- **Database-verbindingsstrings** — een standaard lokaal ontwikkelwachtwoord dat ongewijzigd blijft in de configuratie van de productiedatabase is functioneel identiek aan een standaard beheerderslogin, alleen één laag dieper in de infrastructuur.
-- **Demo- of voorbeeldgegevens** — dummy-vermeldingen, testgebruikers of tijdelijke content die tijdens het bouwen zijn gegenereerd en na lancering nog openbaar zichtbaar zijn. Dit is meer een kwestie van professionele afwerking dan van pure beveiliging, maar het schaadt het vertrouwen van vroege klanten direct.
-- **Omgevingsvariabelen en configuratievlaggen** — een "debug mode" of "verbose logging" vlag die per ongeluk aan blijft staan vanuit de ontwikkelfase kan diepe interne stack traces tonen in foutmeldingen die een reguliere bezoeker nooit te zien zou mogen krijgen.
+- **Beheerders- en seed-accounts** - controleer elk account dat een AI-codeertool of database-migratiescript automatisch heeft aangemaakt tijdens de ontwikkeling. Bevestig dat elk account een uniek, sterk wachtwoord heeft gekregen of dat het testaccount volledig is verwijderd.
+- **API-sleutels en inloggegevens van externe diensten** - betaalproviders, e-maildiensten en analysetools leveren vaak afzonderlijke test- en live-sleutels. Lancering met een testsleutel die nog gekoppeld is aan een live functie kan betalingen stilletjes blokkeren, terwijl het omgekeerde (een live sleutel hardcoded in broncode) reële inloggegevens kan lekken.
+- **Database-verbindingsstrings** - een standaard lokaal ontwikkelwachtwoord dat ongewijzigd blijft in de configuratie van de productiedatabase is functioneel identiek aan een standaard beheerderslogin, alleen één laag dieper in de infrastructuur.
+- **Demo- of voorbeeldgegevens** - dummy-vermeldingen, testgebruikers of tijdelijke content die tijdens het bouwen zijn gegenereerd en na lancering nog openbaar zichtbaar zijn. Dit is meer een kwestie van professionele afwerking dan van pure beveiliging, maar het schaadt het vertrouwen van vroege klanten direct.
+- **Omgevingsvariabelen en configuratievlaggen** - een "debug mode" of "verbose logging" vlag die per ongeluk aan blijft staan vanuit de ontwikkelfase kan diepe interne stack traces tonen in foutmeldingen die een reguliere bezoeker nooit te zien zou mogen krijgen.
 
 Geen van deze punten kost veel tijd om te controleren en geen ervan vereist diepe technische vakkennis om te begrijpen zodra het is gesignaleerd. De echte valkuil is niet complexiteit, maar simpelweg dat niemand in het enthousiasme van de lancering een bewuste, systematische controle van deze lijst heeft ingepland. Die systematische kwaliteitscontrole is precies waar een pre-launch review voor dient.
 
@@ -80,9 +80,9 @@ Weken na een bescheiden lancering ontving Rick een gealarmeerd bericht van een v
 **Resultaat:** LaunchStudio schakelde de standaardaccount onmiddellijk uit, stelde op de juiste manier unieke beheerdersinloggegevens in, en auditeerde KunstMarkt's bredere configuratie op eventuele andere ongewijzigde standaardwaarden. Dit sloot de blootstelling en herstelde de correcte commissietarieven.
 
 > *"Ik herinner me oprecht dat ik dacht 'dat verander ik later wel' tijdens de opwinding van het voor het eerst laten draaien van de hele marktplaats. Later gebeurde simpelweg niet totdat dit de kwestie afdwong."*
-> — **Rick Boersma, Oprichter, KunstMarkt (Schiedam)**
+> - **Rick Boersma, Oprichter, KunstMarkt (Schiedam)**
 
-**Kosten en tijdlijn:** € 1.700 (herstel van standaard inloggegevens en configuratie-audit) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.700 (herstel van standaard inloggegevens en configuratie-audit) - voltooid in 6 werkdagen.
 
 ---
 

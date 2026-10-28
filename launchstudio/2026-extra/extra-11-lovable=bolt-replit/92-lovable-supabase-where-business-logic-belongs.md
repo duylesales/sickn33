@@ -22,7 +22,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 There is a rule your product depends on. A booking cannot overlap another booking. An invoice total must equal the sum of its lines. A discount cannot exceed the order value. An order belongs to exactly one customer.
 
-Where is that rule written? In an AI-built product the answer is almost always: in the screen where a user enters the data. Which means it is a suggestion, not a rule — enforced for people who use your interface, absent for anyone using the API directly, and absent for every other path into your data.
+Where is that rule written? In an AI-built product the answer is almost always: in the screen where a user enters the data. Which means it is a suggestion, not a rule - enforced for people who use your interface, absent for anyone using the API directly, and absent for every other path into your data.
 
 The question of where a rule lives is not academic. It decides whether your data stays coherent as the product grows.
 
@@ -30,13 +30,13 @@ The question of where a rule lives is not academic. It decides whether your data
 
 **In the browser.** Fast feedback, good for the user, and no protection at all. Anything the client enforces, the client can skip.
 
-**In server-side code.** Real enforcement for traffic that goes through that code. The weakness is that products acquire several paths — a web app, an API, a scheduled job, an import, an admin tool — and a rule written in one is absent from the others.
+**In server-side code.** Real enforcement for traffic that goes through that code. The weakness is that products acquire several paths - a web app, an API, a scheduled job, an import, an admin tool - and a rule written in one is absent from the others.
 
 **In the database as a constraint.** Enforced no matter how the data arrives. Cannot be bypassed, cannot be forgotten, and applies to your own scripts as well as your customers.
 
 **In the database as a function or trigger.** For rules needing more than a constraint can express.
 
-The principle that resolves nearly every case: the closer a rule lives to the data, the harder it is to violate — so put the rules that must always hold where they always apply, and put everything else where it is easiest to read.
+The principle that resolves nearly every case: the closer a rule lives to the data, the harder it is to violate - so put the rules that must always hold where they always apply, and put everything else where it is easiest to read.
 
 ## What Should Be a Constraint, Always
 
@@ -78,13 +78,13 @@ A balancing section, because the failure mode here is real.
 
 **Complex chains.** Triggers firing triggers become impossible to reason about, and debugging them is genuinely unpleasant. Two levels is usually one too many.
 
-The heuristic: use the database for invariants — things that must be true of the data itself, always. Use code for policy — things that are true because you decided them this quarter.
+The heuristic: use the database for invariants - things that must be true of the data itself, always. Use code for policy - things that are true because you decided them this quarter.
 
 ## Why Generated Products Get This Wrong
 
 Consistently, and for an understandable reason.
 
-A generation tool builds a screen that satisfies a request. Validation in that screen is visible, immediate and demonstrably works. Constraints in the database are invisible, require a separate migration, and make no difference to the feature being demonstrated — so they are not produced unless asked for.
+A generation tool builds a screen that satisfies a request. Validation in that screen is visible, immediate and demonstrably works. Constraints in the database are invisible, require a separate migration, and make no difference to the feature being demonstrated - so they are not produced unless asked for.
 
 The result is a schema of permissive columns with the rules living in whichever screen happened to need them, and three screens implementing the same rule slightly differently. The fix is to ask explicitly: "add a foreign key", "make this column not null", "add a check constraint", "enforce this uniqueness in the database". Tools do this well when asked and never volunteer.
 
@@ -92,7 +92,7 @@ The result is a schema of permissive columns with the rules living in whichever 
 
 Adding enforcement to a product with existing data is a defined exercise.
 
-Write down the rules your product depends on, in plain language. For each, query the database to see how many existing rows violate it — this number is always higher than expected. Decide how to correct the violations, which for some will require asking customers. Fix the data, then add the constraint, then remove the now-redundant validation from wherever it was duplicated. Keep the client-side validation for the user experience, but treat it as a convenience rather than the enforcement.
+Write down the rules your product depends on, in plain language. For each, query the database to see how many existing rows violate it - this number is always higher than expected. Decide how to correct the violations, which for some will require asking customers. Fix the data, then add the constraint, then remove the now-redundant validation from wherever it was duplicated. Keep the client-side validation for the user experience, but treat it as a convenience rather than the enforcement.
 
 Do the highest-value rules first: anything about money, anything about who owns what, anything about uniqueness.
 
@@ -106,9 +106,9 @@ Constraints, functions and triggers added by clicking in a dashboard exist only 
 
 A constraint you have not tried to violate is a belief about a constraint. Fifteen minutes of deliberate misbehaviour is what turns it into knowledge.
 
-**Try to break each rule directly.** Not through your interface — through the API with your public key, or in the SQL editor. Insert an order with no customer. Create a second membership for the same person in the same organisation. Submit a negative quantity. Set an end date before its start date. Each attempt should fail with a clear error, and each one that succeeds is a rule you thought you had.
+**Try to break each rule directly.** Not through your interface - through the API with your public key, or in the SQL editor. Insert an order with no customer. Create a second membership for the same person in the same organisation. Submit a negative quantity. Set an end date before its start date. Each attempt should fail with a clear error, and each one that succeeds is a rule you thought you had.
 
-**Check what your application does when a constraint fires.** This is the part people skip. A database rejection arrives in your code as an error, and generated code frequently displays it raw — so a user sees a message naming your table and column, which is both confusing and a small information leak. Catch the specific violations you expect and translate them into sentences a person can act on: "This email address is already registered", not a constraint name.
+**Check what your application does when a constraint fires.** This is the part people skip. A database rejection arrives in your code as an error, and generated code frequently displays it raw - so a user sees a message naming your table and column, which is both confusing and a small information leak. Catch the specific violations you expect and translate them into sentences a person can act on: "This email address is already registered", not a constraint name.
 
 **Test the race, not just the single case.** Uniqueness and capacity rules exist precisely because two things can happen at once. Submit the same form twice in rapid succession, or open two browsers and claim the last place simultaneously. Application-level checks pass this test individually and fail it under simultaneity, which is exactly why the rule belongs in the database.
 
@@ -132,7 +132,7 @@ Carola Mudde built Declaratie with Lovable: expense claim handling used by two s
 
 The rules lived in the submission screen. A claim could not exceed €500 without approval, a receipt was required above €50, and a claim could be submitted once. All three were enforced in the browser.
 
-Three problems arrived together. A finance officer at one municipality had been using a spreadsheet import Carola had built for bulk entry, which did not go through the screen and therefore enforced nothing — 60 claims had been imported without receipts. A double-click on a slow connection had submitted eleven claims twice, and eight of those had been paid twice before anyone reconciled. And an intern had discovered that editing the amount after approval was possible, because approval status was checked in the interface only; two claims had been altered after approval, one innocently and one not.
+Three problems arrived together. A finance officer at one municipality had been using a spreadsheet import Carola had built for bulk entry, which did not go through the screen and therefore enforced nothing - 60 claims had been imported without receipts. A double-click on a slow connection had submitted eleven claims twice, and eight of those had been paid twice before anyone reconciled. And an intern had discovered that editing the amount after approval was possible, because approval status was checked in the interface only; two claims had been altered after approval, one innocently and one not.
 
 The database had no constraints at all: no foreign keys, no uniqueness, every column nullable.
 
@@ -143,15 +143,15 @@ The eight double payments were recovered over the following two months. The alte
 **Result:** no duplicate or unsupported claims in the fourteen months since, and the audit trail became the artefact one municipality's accountant asks for at each year end.
 
 > *"My rules were written in a screen, and three different ways into the data did not go through that screen. One of them was an import I had built myself."*
-> — **Carola Mudde, Founder, Declaratie (Sittard)**
+> - **Carola Mudde, Founder, Declaratie (Sittard)**
 
-**Cost & Timeline:** €4,900 (rule definition, violation correction across 214 rows, constraints and foreign keys, uniqueness and immutability triggers, audit trail, import rewrite, migrations) — completed in 9 business days.
+**Cost & Timeline:** €4,900 (rule definition, violation correction across 214 rows, constraints and foreign keys, uniqueness and immutability triggers, audit trail, import rewrite, migrations) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
 ### Why is validation in the browser not enough?
 
-Because anything the client enforces, the client can skip — and products acquire other paths into the data: an API, an import, a scheduled job, an admin tool. A rule written in one screen is absent from all of them.
+Because anything the client enforces, the client can skip - and products acquire other paths into the data: an API, an import, a scheduled job, an admin tool. A rule written in one screen is absent from all of them.
 
 ### What should always be a database constraint?
 
@@ -159,7 +159,7 @@ Required fields as not null, foreign keys so references are guaranteed valid, un
 
 ### When is a trigger the right tool?
 
-For guaranteed audit trails, derived values that must not drift, atomic multi-step operations such as allocating limited capacity, and preventing overlapping bookings — cases where being bypassed by a new code path would be a real problem.
+For guaranteed audit trails, derived values that must not drift, atomic multi-step operations such as allocating limited capacity, and preventing overlapping bookings - cases where being bypassed by a new code path would be a real problem.
 
 ### What should not go in a trigger?
 
@@ -167,7 +167,7 @@ Anything calling an external service, business policy that changes with the quar
 
 ### How do I add constraints to a product that already has data?
 
-Expect the first attempt to fail, because it will find existing violations — that list is the point. Write the rules down, query how many rows breach each, correct the data with your customers, then add the constraint and remove the now-duplicated validation.
+Expect the first attempt to fail, because it will find existing violations - that list is the point. Write the rules down, query how many rows breach each, correct the data with your customers, then add the constraint and remove the now-duplicated validation.
 
 <script type="application/ld+json">
 {
@@ -179,7 +179,7 @@ Expect the first attempt to fail, because it will find existing violations — t
       "name": "Why is validation in the browser not enough?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anything the client enforces can be skipped, and other paths into the data — API, imports, jobs, admin tools — never pass through that screen."
+        "text": "Anything the client enforces can be skipped, and other paths into the data - API, imports, jobs, admin tools - never pass through that screen."
       }
     },
     {

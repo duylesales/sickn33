@@ -1,4 +1,4 @@
-🔥 Tom bouwde een prototype via **AI builders & freelancers** — als oprichter van een logistieke AI-startup in Rotterdam schaalde hij naar €35k MRR, maar een internationaal transportconcern legde een megadeal stil wegens hardcoded database-tokens. 🧠
+🔥 Tom bouwde een prototype via **AI builders & freelancers** - als oprichter van een logistieke AI-startup in Rotterdam schaalde hij naar €35k MRR, maar een internationaal transportconcern legde een megadeal stil wegens hardcoded database-tokens. 🧠
 
 Als uw groeiende AI SaaS leunt op één freelancer zonder DevOps-discipline, geautomatiseerde tests of redundancy, veroorzaakt live verkeer direct crashes en het verlies van enterprise-deals.
 
@@ -12,7 +12,7 @@ Als uw groeiende AI SaaS leunt op één freelancer zonder DevOps-discipline, gea
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Tom slaagde voor de heraudit van het transportconcern en tekende het contract van €12.000 MRR. (€6.000 (Enterprise Infrastructure Refactoring) — binnen 21 werkdagen live). 🚀
+Tom slaagde voor de heraudit van het transportconcern en tekende het contract van €12.000 MRR. (€6.000 (Enterprise Infrastructure Refactoring) - binnen 21 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/freelance-developers-vs-enterprise-team-ai
 

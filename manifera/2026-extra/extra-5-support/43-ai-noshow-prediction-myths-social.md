@@ -1,4 +1,4 @@
-🚨 "AI No-Show Prediction Can Simply Replace a Front-Desk Manager's Judgment at S..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI No-Show Prediction Can Simply Replace a Front-Desk Manager's Judgment at S..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI No-Show Prediction Can Simply Replace a Front-Des...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

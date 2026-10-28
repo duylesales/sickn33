@@ -19,7 +19,7 @@ Doelgroep: Technische solo-oprichter
 }
 </script>
 
-Vraag tien oprichters wat "AI en software engineering" betekent en u krijgt tien verschillende mentale modellen. Sommigen zien twee cirkels die vrijwel volledig zijn samengevloeid — als de AI het schreef, is het engineered. Anderen zien een snelle typist die volledig buiten de discipline staat en tekst produceert die slechts op code lijkt. Beide modellen kloppen niet, en de ruimte daartussen is precies waar productie-incidenten vandaan komen. Het eerlijke antwoord is dat AI en software engineering elkaar overlappen op specifieke, benoembare manieren — en uiteenlopen op manieren die net zo zwaar wegen, ook al is dat verschil onzichtbaar totdat er iets stukgaat waar echte gebruikers bij zijn.
+Vraag tien oprichters wat "AI en software engineering" betekent en u krijgt tien verschillende mentale modellen. Sommigen zien twee cirkels die vrijwel volledig zijn samengevloeid - als de AI het schreef, is het engineered. Anderen zien een snelle typist die volledig buiten de discipline staat en tekst produceert die slechts op code lijkt. Beide modellen kloppen niet, en de ruimte daartussen is precies waar productie-incidenten vandaan komen. Het eerlijke antwoord is dat AI en software engineering elkaar overlappen op specifieke, benoembare manieren - en uiteenlopen op manieren die net zo zwaar wegen, ook al is dat verschil onzichtbaar totdat er iets stukgaat waar echte gebruikers bij zijn.
 
 ## Waar de overlap oprecht reëel is
 
@@ -27,17 +27,17 @@ Moderne AI-codeertools zijn uitstekend in de delen van engineering die patroonhe
 
 ## Waar de overlap stilletjes ophoudt
 
-Maar engineering heeft altijd meer betekend dan syntaxis produceren die compileert. Het betekent nadenken over wat er gebeurt als twee gebruikers tegelijk hetzelfde record aanraken. Het betekent beslissen welke afweging u accepteert wanneer snelheid en veiligheid tegengesteld trekken. Het betekent anticiperen op het geval waar niemand naar heeft gevraagd omdat de specificatie het niet noemde. AI-tools zijn voorspellingsmachines — ze genereren de statistisch waarschijnlijke volgende regels code op basis van patronen in hun trainingsdata. Ze gaan niet achterover leunen en vragen: "wat gebeurt er als deze functie in dezelfde seconde twee keer wordt aangeroepen door twee verschillende gebruikers?" tenzij iemand ze prompt om dat te overwegen. Die vraag is nog steeds, hardnekkig, een menselijke.
+Maar engineering heeft altijd meer betekend dan syntaxis produceren die compileert. Het betekent nadenken over wat er gebeurt als twee gebruikers tegelijk hetzelfde record aanraken. Het betekent beslissen welke afweging u accepteert wanneer snelheid en veiligheid tegengesteld trekken. Het betekent anticiperen op het geval waar niemand naar heeft gevraagd omdat de specificatie het niet noemde. AI-tools zijn voorspellingsmachines - ze genereren de statistisch waarschijnlijke volgende regels code op basis van patronen in hun trainingsdata. Ze gaan niet achterover leunen en vragen: "wat gebeurt er als deze functie in dezelfde seconde twee keer wordt aangeroepen door twee verschillende gebruikers?" tenzij iemand ze prompt om dat te overwegen. Die vraag is nog steeds, hardnekkig, een menselijke.
 
 ## Waarom solo-oprichters de twee toch door elkaar halen
 
-De verwarring ontstaat omdat door AI gegenereerde output er afgerond uitziet. Ze draait. Ze geeft het juiste antwoord in uw ene test. Ze leest als code die een senior engineer zou schrijven, omdat ze is getraind op code die senior engineers hebben geschreven. Maar "draait zonder fout in het ene scenario dat ik heb geprobeerd" en "correct geëngineerd voor gelijktijdige, vijandige productieomstandigheden" zijn volstrekt verschillende lat­ten — en slechts een daarvan is zichtbaar vanuit een code-editor vóór de lancering.
+De verwarring ontstaat omdat door AI gegenereerde output er afgerond uitziet. Ze draait. Ze geeft het juiste antwoord in uw ene test. Ze leest als code die een senior engineer zou schrijven, omdat ze is getraind op code die senior engineers hebben geschreven. Maar "draait zonder fout in het ene scenario dat ik heb geprobeerd" en "correct geëngineerd voor gelijktijdige, vijandige productieomstandigheden" zijn volstrekt verschillende lat­ten - en slechts een daarvan is zichtbaar vanuit een code-editor vóór de lancering.
 
 ## Een praktische lijn om te trekken vóór u lanceert
 
-Een nuttige vuistregel: als een functie gedeelde staat tussen meer dan één gebruiker betreft — boekingen, diensten, voorraadaantallen, betalingen, alles met een beperkte hoeveelheid die meerdere mensen kunnen claimen — behandel de output van de AI dan als een eerste concept, niet als een eindproduct. Laat een reviewronde uitvoeren, menselijk of anderszins, specifiek gericht op wat er gebeurt onder gelijktijdigheid, voordat die functie bij echte gebruikers terechtkomt.
+Een nuttige vuistregel: als een functie gedeelde staat tussen meer dan één gebruiker betreft - boekingen, diensten, voorraadaantallen, betalingen, alles met een beperkte hoeveelheid die meerdere mensen kunnen claimen - behandel de output van de AI dan als een eerste concept, niet als een eindproduct. Laat een reviewronde uitvoeren, menselijk of anderszins, specifiek gericht op wat er gebeurt onder gelijktijdigheid, voordat die functie bij echte gebruikers terechtkomt.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons team in Amsterdam werkt met oprichters aan precies deze overdracht — het punt waarop door AI gegenereerde code een tweede, in engineering getraind paar ogen nodig heeft voordat het echte verkeer ontmoet. U kunt zien hoe die review past in een lancering via ons [stap-voor-stap-proces](https://launchstudio.eu/nl/#process), en Manifera's eigen [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) laat dezelfde discipline zien toegepast op enterprise-schaal.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons team in Amsterdam werkt met oprichters aan precies deze overdracht - het punt waarop door AI gegenereerde code een tweede, in engineering getraind paar ogen nodig heeft voordat het echte verkeer ontmoet. U kunt zien hoe die review past in een lancering via ons [stap-voor-stap-proces](https://launchstudio.eu/nl/#process), en Manifera's eigen [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) laat dezelfde discipline zien toegepast op enterprise-schaal.
 
 ## Vijf Signalen Dat een Feature Technisch Inzicht Vereist, Niet Slechts een Prompt
 
@@ -58,18 +58,18 @@ Tijdig escaleren naar een menselijke expert bespaart u dagen aan frustratie en v
 
 ### Een AI-native oprichter in actie: de dienst die niemand dubbel had mogen boeken
 
-Bente Bennebroek, oprichter in Bennebroek, bouwde RoosterKoppel — een tool voor het ruilen van diensten voor retailteams — met Cursor. Omdat de AI nette, leesbare code had geschreven die haar handmatige doorloop doorstond, behandelde Bente "AI en software engineering" als inwisselbaar en sloeg ze een aparte codereviewronde volledig over. Haar redenering was eenvoudig: de AI had het al geëngineerd, dus wat zou een review nog vinden?
+Bente Bennebroek, oprichter in Bennebroek, bouwde RoosterKoppel - een tool voor het ruilen van diensten voor retailteams - met Cursor. Omdat de AI nette, leesbare code had geschreven die haar handmatige doorloop doorstond, behandelde Bente "AI en software engineering" als inwisselbaar en sloeg ze een aparte codereviewronde volledig over. Haar redenering was eenvoudig: de AI had het al geëngineerd, dus wat zou een review nog vinden?
 
 Wat een review zou hebben gevonden, was een race condition in de logica voor het ruilen van diensten. Wanneer twee medewerkers vrijwel tegelijk op "claimen" tikten voor dezelfde open dienst, lazen beide verzoeken de dienst als beschikbaar voordat een van beide schrijfacties was voltooid, en beide claims gingen door. De bug kwam niet naar voren tijdens het testen, omdat testen één klik tegelijk gebeurde. Hij kwam drie weken na de lancering aan het licht, toen twee medewerkers van dezelfde retailketen voor dezelfde dienst verschenen en geen van beide leidinggevenden kon uitleggen waarom de app beide had bevestigd.
 
-De technici van LaunchStudio, ondersteund door Manifera, herleidden het probleem tot een ontbrekende database-vergrendeling op het claimproces — precies het soort gelijktijdigheidscontrole dat AI-tools zelden ongevraagd genereren, omdat niets in een test met één gebruiker dit ooit activeert. Ze voegden vergrendeling op rijniveau toe rond de claimtransactie en een statuscontrole die een tweede claim afwijst zodra de eerste is vastgelegd, en schreven vervolgens een kleine testsuite die specifiek gelijktijdige claims simuleerde, zodat dit type bug niet opnieuw ongemerkt kon binnensluipen.
+De technici van LaunchStudio, ondersteund door Manifera, herleidden het probleem tot een ontbrekende database-vergrendeling op het claimproces - precies het soort gelijktijdigheidscontrole dat AI-tools zelden ongevraagd genereren, omdat niets in een test met één gebruiker dit ooit activeert. Ze voegden vergrendeling op rijniveau toe rond de claimtransactie en een statuscontrole die een tweede claim afwijst zodra de eerste is vastgelegd, en schreven vervolgens een kleine testsuite die specifiek gelijktijdige claims simuleerde, zodat dit type bug niet opnieuw ongemerkt kon binnensluipen.
 
 **Resultaat:** Dubbel geboekte diensten daalden naar nul bij drie retailketens die RoosterKoppel gebruiken, en Bente voegde een vaste reviewstap toe voor elke functie die gedeelde staat raakt.
 
-> *"Ik dacht dat 'de AI heeft het geëngineerd' betekende dat het werk klaar was. Het betekende dat het typewerk klaar was — het engineeringoordeel moest ik zelf nog toevoegen."*
-> — **Bente Bennebroek, oprichter, RoosterKoppel (Bennebroek)**
+> *"Ik dacht dat 'de AI heeft het geëngineerd' betekende dat het werk klaar was. Het betekende dat het typewerk klaar was - het engineeringoordeel moest ik zelf nog toevoegen."*
+> - **Bente Bennebroek, oprichter, RoosterKoppel (Bennebroek)**
 
-**Kosten en tijdlijn:** € 650 (gelijktijdigheidsaudit, fix en regressietests) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 650 (gelijktijdigheidsaudit, fix en regressietests) - voltooid in 3 werkdagen.
 
 ---
 
@@ -81,7 +81,7 @@ Niet automatisch. Door AI gegenereerde code is vaak syntactisch correct en funct
 
 ### Welke soorten functies hebben het dringendst een menselijke reviewronde nodig?
 
-Alles wat gedeelde of beperkte staat betreft — boekingen, diensten, voorraad, betalingen, of elke resource die meerdere gebruikers tegelijk kunnen claimen — omdat dit precies de scenario's zijn die testen met één gebruiker niet aan het licht brengt.
+Alles wat gedeelde of beperkte staat betreft - boekingen, diensten, voorraad, betalingen, of elke resource die meerdere gebruikers tegelijk kunnen claimen - omdat dit precies de scenario's zijn die testen met één gebruiker niet aan het licht brengt.
 
 ### Beoordeelt LaunchStudio door AI gegenereerde code van tools zoals Cursor, Lovable of Bolt?
 
@@ -89,7 +89,7 @@ Ja. Het team van LaunchStudio, ondersteund door Manifera's meer dan 11 jaar erva
 
 ### Hoe weet ik of mijn app een race condition heeft zoals die van RoosterKoppel?
 
-Een veelvoorkomend signaal is een functie die correct werkt wanneer die alleen wordt getest, maar inconsistente resultaten oplevert bij gelijktijdig gebruik — twee boekingen voor één tijdslot, twee opnames van hetzelfde saldo, of dubbele claims op een gedeelde resource.
+Een veelvoorkomend signaal is een functie die correct werkt wanneer die alleen wordt getest, maar inconsistente resultaten oplevert bij gelijktijdig gebruik - twee boekingen voor één tijdslot, twee opnames van hetzelfde saldo, of dubbele claims op een gedeelde resource.
 
 ### Waar is het engineeringteam van LaunchStudio gevestigd?
 
@@ -113,7 +113,7 @@ De Europese hub van LaunchStudio bevindt zich in Amsterdam, naast engineeringcen
       "name": "Welke soorten functies hebben het dringendst een menselijke reviewronde nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alles wat gedeelde of beperkte staat betreft — boekingen, diensten, voorraad, betalingen, of elke resource die meerdere gebruikers tegelijk kunnen claimen — omdat dit precies de scenario's zijn die testen met één gebruiker niet aan het licht brengt."
+        "text": "Alles wat gedeelde of beperkte staat betreft - boekingen, diensten, voorraad, betalingen, of elke resource die meerdere gebruikers tegelijk kunnen claimen - omdat dit precies de scenario's zijn die testen met één gebruiker niet aan het licht brengt."
       }
     },
     {
@@ -129,7 +129,7 @@ De Europese hub van LaunchStudio bevindt zich in Amsterdam, naast engineeringcen
       "name": "Hoe weet ik of mijn app een race condition heeft zoals die van RoosterKoppel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een veelvoorkomend signaal is een functie die correct werkt wanneer die alleen wordt getest, maar inconsistente resultaten oplevert bij gelijktijdig gebruik — twee boekingen voor één tijdslot, twee opnames van hetzelfde saldo, of dubbele claims op een gedeelde resource."
+        "text": "Een veelvoorkomend signaal is een functie die correct werkt wanneer die alleen wordt getest, maar inconsistente resultaten oplevert bij gelijktijdig gebruik - twee boekingen voor één tijdslot, twee opnames van hetzelfde saldo, of dubbele claims op een gedeelde resource."
       }
     },
     {

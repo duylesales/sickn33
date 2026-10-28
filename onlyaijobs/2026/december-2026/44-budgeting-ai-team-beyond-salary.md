@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Budgeting for an AI Team: The Costs That Are Not Salary",
-  "description": "Compute, tooling, data acquisition, annotation, compliance and the maintenance of everything you have already built routinely exceed what employers plan for — and under-budgeting is why capable teams stall.",
+  "description": "Compute, tooling, data acquisition, annotation, compliance and the maintenance of everything you have already built routinely exceed what employers plan for - and under-budgeting is why capable teams stall.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-22",
@@ -43,7 +43,7 @@ Start with the obvious item, correctly calculated. A Dutch employee costs consid
 
 Then add recruitment. For scarce technical roles, expect either a long internal search consuming management time, or agency fees calculated as a percentage of first-year salary. And account for ramp-up: a new data hire is rarely productive in month one, because they are learning your data, which nobody has documented.
 
-The practical consequence is that the first year of a hire costs meaningfully more than the annual run rate — which is why hiring two people six months apart is often easier to absorb than hiring two at once.
+The practical consequence is that the first year of a hire costs meaningfully more than the annual run rate - which is why hiring two people six months apart is often easier to absorb than hiring two at once.
 
 ## Compute: The Line That Surprises People
 
@@ -81,7 +81,7 @@ A production model requires monitoring, periodic retraining, pipeline maintenanc
 
 The practical implication for planning is that a team's ability to deliver new work declines as its portfolio grows, unless capacity grows with it or systems are deliberately retired. Employers who plan a constant output from a constant headcount are planning for disappointment.
 
-A reasonable rule of thumb used by many teams is to reserve a meaningful share of capacity — often a quarter to a third — for maintenance and reliability once a few systems are in production, and to treat that as a fixed cost of having built them.
+A reasonable rule of thumb used by many teams is to reserve a meaningful share of capacity - often a quarter to a third - for maintenance and reliability once a few systems are in production, and to treat that as a fixed cost of having built them.
 
 ## Compliance and Governance
 
@@ -121,7 +121,7 @@ Individually modest, collectively significant, and frequently bought twice becau
 
 A working data team typically needs: a data platform or warehouse, orchestration, version control and CI, a monitoring and alerting stack, a business intelligence tool, an experiment tracking or model registry function, annotation tooling if relevant, and development environments. Add collaboration tools, security tooling and whatever the rest of the organisation already pays for.
 
-Two failure modes recur. The first is duplication: the analytics team buys a BI tool, another department already had one, and the organisation pays twice while producing two conflicting versions of the same number. The second is abandoned subscriptions — a platform trialled during a project, never cancelled, renewing annually.
+Two failure modes recur. The first is duplication: the analytics team buys a BI tool, another department already had one, and the organisation pays twice while producing two conflicting versions of the same number. The second is abandoned subscriptions - a platform trialled during a project, never cancelled, renewing annually.
 
 The fix is unglamorous and effective: one list, one owner, an annual review, and a rule that new tooling requires naming what it replaces. Employers who do this typically find a meaningful amount of recoverable spend in the first review.
 
@@ -131,7 +131,7 @@ The deepest problem with AI budgeting is that the accurate estimate cannot exist
 
 The workable approach is to split funding into phases with a decision point between them.
 
-**Discovery.** A small, time-boxed investment — often a few weeks — to establish what data exists, what state it is in, and whether the problem is tractable. The deliverable is an informed plan, not a model.
+**Discovery.** A small, time-boxed investment - often a few weeks - to establish what data exists, what state it is in, and whether the problem is tractable. The deliverable is an informed plan, not a model.
 
 **Build.** Funded on the basis of what discovery found, with a scope that reflects reality rather than ambition.
 
@@ -139,7 +139,7 @@ The workable approach is to split funding into phases with a decision point betw
 
 **Operate.** The ongoing line, budgeted as a permanent commitment rather than as a project cost.
 
-Organisations that fund in phases stop far fewer projects mid-flight and waste far less money, because the decision to continue is made with information rather than optimism. It also gives the team permission to report that something is not feasible — which is a cheap outcome at the end of discovery and an expensive one at the end of a year.
+Organisations that fund in phases stop far fewer projects mid-flight and waste far less money, because the decision to continue is made with information rather than optimism. It also gives the team permission to report that something is not feasible - which is a cheap outcome at the end of discovery and an expensive one at the end of a year.
 
 ## Measuring Whether Any of It Paid Off
 
@@ -147,7 +147,7 @@ The final budget question is the one employers ask least rigorously: did the spe
 
 The honest difficulty is that attribution is hard. A forecasting improvement coincides with a change in purchasing behaviour; a fraud model launches in a quarter when fraud patterns shifted anyway. Claiming the whole effect for the model is the standard temptation and the reason many AI benefit claims are not believed internally.
 
-The practical approach is to decide the measurement before the build. Agree the baseline — what happens if we do nothing — and the metric, and where possible retain a holdout: a set of stores, regions or cases where the old approach continues. A holdout costs a little forgone benefit and buys a credible number, which is worth considerably more the second time you ask for budget.
+The practical approach is to decide the measurement before the build. Agree the baseline - what happens if we do nothing - and the metric, and where possible retain a holdout: a set of stores, regions or cases where the old approach continues. A holdout costs a little forgone benefit and buys a credible number, which is worth considerably more the second time you ask for budget.
 
 Also measure the operational effects that do not appear in a business case: hours of manual work removed, decisions made faster, errors avoided. These are frequently larger than the headline financial benefit and easier to substantiate.
 
@@ -165,7 +165,7 @@ Organisations that do this build a track record and find their subsequent propos
 
 Before approving the next AI business case, ask what it allocates to data access, annotation and maintenance. If the answer is nothing, the plan is a modelling plan rather than a project plan.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -182,7 +182,7 @@ Each production system carries ongoing maintenance, which consumes capacity unle
 It varies with risk category, but designing documentation and oversight in from the start is far cheaper than retrofitting.
 
 ### (Scenario: SME with a limited budget) Where should limited money go first?
-Data access and quality — a capable person with unusable data will produce nothing, while decent data makes modest modelling valuable.
+Data access and quality - a capable person with unusable data will produce nothing, while decent data makes modest modelling valuable.
 
 <script type="application/ld+json">
 {

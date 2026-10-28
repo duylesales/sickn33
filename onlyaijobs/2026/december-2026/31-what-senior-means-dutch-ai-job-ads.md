@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "What 'Senior' Actually Means in Dutch AI Job Ads: Decoding Levels Before You Apply",
-  "description": "Junior, medior, senior, lead and principal mean different things at every Dutch employer — and the mismatch between title and expectation is one of the most common causes of a bad hire on both sides.",
+  "description": "Junior, medior, senior, lead and principal mean different things at every Dutch employer - and the mismatch between title and expectation is one of the most common causes of a bad hire on both sides.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-16",
@@ -63,7 +63,7 @@ Several forces push titles upward, and knowing them helps you read an advert acc
 
 **Consultancy structures.** Client-facing firms use levels that signal billing rates rather than capability, which leaks into the wider market.
 
-The consequence is that a title tells you about the employer's culture and pay band, and very little about the work — which is precisely why you have to read the rest of the advert.
+The consequence is that a title tells you about the employer's culture and pay band, and very little about the work - which is precisely why you have to read the rest of the advert.
 
 ## How to Read the Advert for the Real Level
 
@@ -94,7 +94,7 @@ Years of experience are the weakest of these indicators and the one most heavily
 
 A company hires a senior data scientist to "build our machine learning capability". The candidate has five strong years of modelling experience and expects to work on models.
 
-Reality arrives quickly. There is no data platform, no clear ownership of source systems, no test environment, and no agreement about which business problem matters most. The job is not modelling; it is founding a function — which requires stakeholder management, architecture decisions, hiring input and the confidence to tell executives that their first idea is not feasible yet.
+Reality arrives quickly. There is no data platform, no clear ownership of source systems, no test environment, and no agreement about which business problem matters most. The job is not modelling; it is founding a function - which requires stakeholder management, architecture decisions, hiring input and the confidence to tell executives that their first idea is not feasible yet.
 
 The candidate is good and the employer is reasonable, but the match is wrong. Within a year both are frustrated, and the departure is written up as a hiring mistake when it was a levelling mistake.
 
@@ -104,7 +104,7 @@ The question that would have surfaced it in an interview: what exists today, and
 
 Internally, the better Dutch employers have moved towards explicit competency frameworks: written descriptions of what each level means in terms of scope, autonomy, influence and impact, used consistently for hiring, promotion and pay.
 
-When such a framework exists, ask to see it. It tells you exactly what would be expected and what the next level requires, and it is a strong signal of a well-run organisation. Its absence is not disqualifying — plenty of good employers manage informally — but in that case you should ask directly how promotion decisions are made and how often they happen.
+When such a framework exists, ask to see it. It tells you exactly what would be expected and what the next level requires, and it is a strong signal of a well-run organisation. Its absence is not disqualifying - plenty of good employers manage informally - but in that case you should ask directly how promotion decisions are made and how often they happen.
 
 Pay transparency rules arriving across Europe will push more employers to formalise this, because published ranges require defensible levels behind them. Candidates will benefit: comparing two offers becomes possible when both employers can explain what their levels mean.
 
@@ -122,7 +122,7 @@ The inverse misconception exists too: that seniority requires becoming a manager
 
 **If you are junior**, apply to medior roles when the scope described matches what you have already done independently. Do not apply to roles requiring you to define direction; you will be doing it without support.
 
-**If you are medior**, the fastest route to senior is not another year of the same work. It is taking ownership of something ambiguous — a migration, a new system, a problem nobody wants — and seeing it through. That story is what a senior interview is looking for.
+**If you are medior**, the fastest route to senior is not another year of the same work. It is taking ownership of something ambiguous - a migration, a new system, a problem nobody wants - and seeing it through. That story is what a senior interview is looking for.
 
 **If you are senior**, be sceptical of titles offered at other companies. A "lead" role with no scope beyond your own project is a lateral move dressed up. Ask what decisions you would own and who else would be affected.
 
@@ -169,7 +169,7 @@ When moving between these worlds, expect to explain your level in terms of scope
 
 ## Where to Start
 
-Before your next application, rewrite the advert in your own words describing scope, ownership and dependencies. If you cannot, ask — and the answer will tell you whether the level is real.
+Before your next application, rewrite the advert in your own words describing scope, ownership and dependencies. If you cannot, ask - and the answer will tell you whether the level is real.
 
 Browse current AI, machine learning and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -182,13 +182,13 @@ It is the Dutch term for the level between junior and senior: independent on sco
 Scarcity, recruitment mechanics, flat structures and title-based retention all push titles upward without changing the underlying work.
 
 ### (Scenario: candidate offered a lead title) Is a bigger title always a step up?
-No — a lead role with no scope beyond your own project is a lateral move; ask which decisions you would own and who is affected.
+No - a lead role with no scope beyond your own project is a lateral move; ask which decisions you would own and who is affected.
 
 ### (Scenario: medior candidate) How do I actually reach senior?
 Take ownership of something ambiguous and see it through; that narrative, not another year of similar work, is what senior interviews assess.
 
 ### (Scenario: candidate who dislikes management) Can I progress without managing people?
-Increasingly yes — individual contributor tracks to principal or architect exist at many larger Dutch employers, so ask explicitly.
+Increasingly yes - individual contributor tracks to principal or architect exist at many larger Dutch employers, so ask explicitly.
 
 <script type="application/ld+json">
 {
@@ -197,9 +197,9 @@ Increasingly yes — individual contributor tracks to principal or architect exi
   "mainEntity": [
     {"@type": "Question", "name": "What does medior mean in Dutch job adverts?", "acceptedAnswer": {"@type": "Answer", "text": "The level between junior and senior: independent on scoped problems but not yet setting direction."}},
     {"@type": "Question", "name": "Why do senior requirements vary so much between employers?", "acceptedAnswer": {"@type": "Answer", "text": "Scarcity, recruitment mechanics, flat structures and title-based retention push titles upward without changing the work."}},
-    {"@type": "Question", "name": "Is a lead title always a step up?", "acceptedAnswer": {"@type": "Answer", "text": "No — a lead role without scope beyond your own project is a lateral move; ask which decisions you would own."}},
+    {"@type": "Question", "name": "Is a lead title always a step up?", "acceptedAnswer": {"@type": "Answer", "text": "No - a lead role without scope beyond your own project is a lateral move; ask which decisions you would own."}},
     {"@type": "Question", "name": "How do I progress from medior to senior?", "acceptedAnswer": {"@type": "Answer", "text": "Own something ambiguous end to end; that narrative is what senior interviews assess."}},
-    {"@type": "Question", "name": "Can I progress without becoming a manager?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly yes — individual contributor tracks to principal or architect exist at many larger Dutch employers."}}
+    {"@type": "Question", "name": "Can I progress without becoming a manager?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly yes - individual contributor tracks to principal or architect exist at many larger Dutch employers."}}
   ]
 }
 </script>

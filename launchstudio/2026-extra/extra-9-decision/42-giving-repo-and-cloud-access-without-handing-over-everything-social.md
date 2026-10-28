@@ -5,7 +5,7 @@ Trust is not an access model. Clicking Invite and picking the highest role is ho
 ❌ A `service_role` key pasted into a Cursor chat and a Discord thread
 ❌ A former designer still holding Write access, plus an unexplained deploy key
 ❌ A personal repo with no audit log and no clean way to offboard anyone
-❌ A registrar login shared over chat — the credential that can take your identity
+❌ A registrar login shared over chat - the credential that can take your identity
 
 ✅ Grant capability, not ownership: Write on GitHub, Developer on Supabase, never Admin
 ✅ Move contracted work into its own GitHub org and Supabase organisation first
@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: all three exposures resolved before the engagement began, run on scoped roles, offboarding done in eleven. 🚀
 
-👉 Talk to an engineer who reads AI-generated code daily — bring your repo and permissions: https://launchstudio.eu/en/blog/giving-repo-and-cloud-access-without-handing-over-everything
+👉 Talk to an engineer who reads AI-generated code daily - bring your repo and permissions: https://launchstudio.eu/en/blog/giving-repo-and-cloud-access-without-handing-over-everything
 
 #IndieHacker #SupabaseSecurity #LaunchStudio #Manifera #AICoding #DevSecOps

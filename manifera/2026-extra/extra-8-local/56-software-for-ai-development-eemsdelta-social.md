@@ -2,12 +2,12 @@ Most "software for AI development" is built by teams who've never had to explain
 
 **The Pain Points:**
 ❌ **Data Provenance Gaps:** No way to trace a specific prediction back to the sensor data that produced it, months later.
-❌ **Clean-Data Assumptions:** Generic AI tooling assumes complete, reliable input — industrial sensor networks never deliver that.
+❌ **Clean-Data Assumptions:** Generic AI tooling assumes complete, reliable input - industrial sensor networks never deliver that.
 ❌ **Retrofitted Explainability:** Interpretability bolted on only after a regulator or buyer asks "why did the model say this?"
 
 **The Manifera Solution:**
 ✅ **Versioned Data + Model Pipelines:** Training data and model weights tracked as one traceable unit from day one.
-✅ **Built-In Sensor Reliability Handling:** Explicit logic for gaps, drift, and outliers — not an afterthought.
+✅ **Built-In Sensor Reliability Handling:** Explicit logic for gaps, drift, and outliers - not an afterthought.
 ✅ **Decision-Level Audit Logging:** Every recommendation explainable within minutes, not weeks.
 
 Industrial AI needs an architecture built for provenance, not just prediction. ⚙️

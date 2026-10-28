@@ -2,7 +2,7 @@
 
 Is your new SaaS prototype leaking data right now? 
 
-AI coding tools like Bolt and Cursor are incredible for speed, but they train on the most common code patterns—not the most secure ones. 
+AI coding tools like Bolt and Cursor are incredible for speed, but they train on the most common code patterns - not the most secure ones. 
 
 The 5 most common AI security flaws:
 🔴 Exposed API Keys in the frontend (stealing your OpenAI credits)

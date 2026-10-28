@@ -38,7 +38,7 @@ Most teams that want a broader range of candidates approach it as an outreach pr
 
 ## Where Candidates Are Actually Lost
 
-**At the vacancy.** Long requirement lists deter candidates who meet most but not all of them, and this self-selection is unevenly distributed. Unnecessary demands — a specific degree, years of experience with a framework, a driving licence — exclude people for reasons unrelated to capability.
+**At the vacancy.** Long requirement lists deter candidates who meet most but not all of them, and this self-selection is unevenly distributed. Unnecessary demands - a specific degree, years of experience with a framework, a driving licence - exclude people for reasons unrelated to capability.
 
 **At application.** Processes requiring an account, an hour of form-filling or a cover letter nobody reads lose people with less time.
 
@@ -152,7 +152,7 @@ Recruiting a broader range of people and then losing them is worse than not recr
 
 The conditions that determine retention are ordinary management: a defined first project, a named person to ask questions, feedback given early and specifically, and work that develops rather than repeats.
 
-Two patterns deserve particular attention in technical teams. Being the only person of a given background on a team is isolating, and hiring in pairs rather than individually changes the experience substantially. And informal knowledge transfer — the conversations where things are actually decided — can exclude people who are not part of the established social group, which is fixed by making decisions in writing rather than in corridors.
+Two patterns deserve particular attention in technical teams. Being the only person of a given background on a team is isolating, and hiring in pairs rather than individually changes the experience substantially. And informal knowledge transfer - the conversations where things are actually decided - can exclude people who are not part of the established social group, which is fixed by making decisions in writing rather than in corridors.
 
 Meeting behaviour matters more than policy. Who gets interrupted, whose suggestion is attributed to someone else, who is asked to take notes. Managers who notice and correct these patterns retain people; those who do not lose them for reasons that never appear in an exit interview.
 
@@ -182,7 +182,7 @@ OnlyAIJobs is a European job board listing only AI, machine learning and data ro
 
 Several of those properties matter for reach. Free browsing without registration removes a barrier for candidates who are unwilling to create accounts or hand over data before seeing what exists. Direct application means there is no intermediary screening candidates against criteria you did not set. And because placement cannot be bought, a small employer's carefully written vacancy sits alongside those of larger organisations on equal terms, which matters most for employers without a recognisable name.
 
-Listings also show the exact address and the distance from the candidate's home. That surfaces employers who would otherwise be invisible to people searching by city, and it lets candidates judge whether a role is practical before investing in an application — which particularly helps those with caring responsibilities or without a car.
+Listings also show the exact address and the distance from the candidate's home. That surfaces employers who would otherwise be invisible to people searching by city, and it lets candidates judge whether a role is practical before investing in an application - which particularly helps those with caring responsibilities or without a car.
 
 That regional visibility problem is why the platform exists. It began from an observation in Noord-Brabant: people were leaving for the Randstad not because the work was unavailable nearby, but because they had no way of knowing which local companies were doing it.
 

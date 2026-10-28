@@ -1,4 +1,4 @@
-🔥 Noor bouwde een prototype met **Cursor** — als mental health coach in Rotterdam ontwikkelde ze een journaling- en habit-tracking app voor haar cliënten, maar ontdekte ernstige authenticatielekken vóór de livegang. 🧠
+🔥 Noor bouwde een prototype met **Cursor** - als mental health coach in Rotterdam ontwikkelde ze een journaling- en habit-tracking app voor haar cliënten, maar ontdekte ernstige authenticatielekken vóór de livegang. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en beveiligingsrisico's.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Noor's cliënten gebruiken de app nu in alle privacy en vertrouwen, terwijl haar in Cursor ontworpen frontend 100% behouden bleef. (€950 (Security Hardening Module) — binnen 4 werkdagen opgeleverd). 🚀
+Noor's cliënten gebruiken de app nu in alle privacy en vertrouwen, terwijl haar in Cursor ontworpen frontend 100% behouden bleef. (€950 (Security Hardening Module) - binnen 4 werkdagen opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-app-authentication-user-accounts-guide
 

@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-The Netherlands exports an extraordinary volume of agricultural and food products for a country of its size, and it does so not because of its land but because of its technology: breeding, greenhouses, machinery, processing equipment, logistics and knowledge. That makes agri-food one of the largest technology sectors in the country — and one of the least visible to data professionals, who overwhelmingly apply to banks, consultancies and tech companies instead.
+The Netherlands exports an extraordinary volume of agricultural and food products for a country of its size, and it does so not because of its land but because of its technology: breeding, greenhouses, machinery, processing equipment, logistics and knowledge. That makes agri-food one of the largest technology sectors in the country - and one of the least visible to data professionals, who overwhelmingly apply to banks, consultancies and tech companies instead.
 
 ## What Counts as Agri-Food Data Work
 
@@ -43,7 +43,7 @@ The sector is a chain, and the data work differs at every link.
 
 **Breeding and genetics.** Plant and animal breeding companies run selection programmes on genomic and phenotypic data, mathematically close to human genetics and commercially decisive over decades.
 
-**Primary production.** Farms and growers — arable, horticultural, livestock — using precision equipment, climate control and monitoring systems.
+**Primary production.** Farms and growers - arable, horticultural, livestock - using precision equipment, climate control and monitoring systems.
 
 **Machinery and technology suppliers.** The companies building robots, sorting lines, climate computers and sensors, which is where much of the software and vision work sits.
 
@@ -57,7 +57,7 @@ A candidate should decide early which link appeals, because the daily work diffe
 
 ## Why the Sector Is Hiring
 
-**Labour scarcity.** Skilled agricultural and food production labour is increasingly hard to find, which pushes automation into tasks that were previously manual — harvesting, grading, inspection, packing.
+**Labour scarcity.** Skilled agricultural and food production labour is increasingly hard to find, which pushes automation into tasks that were previously manual - harvesting, grading, inspection, packing.
 
 **Sustainability reporting.** European reporting requirements are pushing food companies to quantify emissions, land use and water impacts across supply chains that reach back to individual farms. Producing defensible numbers at that granularity is a substantial data problem, and it is currently one of the strongest drivers of hiring in the sector.
 
@@ -75,7 +75,7 @@ A candidate should decide early which link appeals, because the daily work diffe
 
 **Chain fragmentation.** The data needed to answer a question is usually spread across independent companies with no obligation to share, and negotiating access takes longer than the analysis.
 
-**Seasonality and weather.** Annual cycles dominate, which means a model gets one new observation per year for some questions — a brutal constraint on learning.
+**Seasonality and weather.** Annual cycles dominate, which means a model gets one new observation per year for some questions - a brutal constraint on learning.
 
 **Small labelled datasets.** Expert labels in agriculture come from agronomists and inspectors whose time is expensive, making active learning and transfer learning practical necessities rather than research curiosities.
 
@@ -112,7 +112,7 @@ What is genuinely different is the tempo of feedback. Biology has its own calend
 ## Skills That Stand Out
 
 - **Statistics with biological variation.** Mixed models, experimental design, and comfort with irreducible noise.
-- **Computer vision.** Grading, sorting, crop and animal monitoring — usually with limited labelled data.
+- **Computer vision.** Grading, sorting, crop and animal monitoring - usually with limited labelled data.
 - **Forecasting and optimisation.** Perishable demand, production planning, allocation and routing.
 - **Geospatial analysis.** Field-level data, satellite imagery and spatial variability.
 - **Data engineering across organisations.** Identifiers, contracts and chain-wide integration.
@@ -149,7 +149,7 @@ It helps to know in advance which applications have proven themselves and which 
 
 **Reliably successful.** Optical grading and sorting is mature and everywhere: colour, size, shape and surface defect classification on high-speed lines. Climate control in greenhouses has moved from rule-based to model-based and continues to improve. Demand forecasting in processing and retail is standard. Machine condition monitoring on processing equipment works well because the machines are instrumented and failures are expensive.
 
-**Working but harder than expected.** Internal quality prediction — sugar content, firmness, shelf life — from external measurements is genuinely difficult, because the property of interest is hidden and the calibration drifts by variety, season and origin. Disease detection in the field works in controlled trials and degrades in practice because symptoms overlap and lighting varies. Yield prediction improves steadily but remains weather-limited.
+**Working but harder than expected.** Internal quality prediction - sugar content, firmness, shelf life - from external measurements is genuinely difficult, because the property of interest is hidden and the calibration drifts by variety, season and origin. Disease detection in the field works in controlled trials and degrades in practice because symptoms overlap and lighting varies. Yield prediction improves steadily but remains weather-limited.
 
 **Mostly still ambition.** Fully autonomous harvesting of delicate crops, end-to-end chain optimisation across independent companies, and genuinely predictive animal health at individual level in extensive systems are all active areas where honest practitioners will tell you the results are partial.
 
@@ -159,7 +159,7 @@ A candidate who can discuss this map credibly stands out immediately, because it
 
 **Multinational food companies.** Structured career paths, international mobility, formal data organisations and the resources to do things properly. The trade-off is process: a model may take a year to reach production, and you will work through category and brand structures.
 
-**Cooperatives.** A distinctive Dutch form in which farmers collectively own the processing company. Decision-making includes member interests, which changes what is acceptable — a model that improves efficiency at some members' expense is a political question, not only a commercial one.
+**Cooperatives.** A distinctive Dutch form in which farmers collectively own the processing company. Decision-making includes member interests, which changes what is acceptable - a model that improves efficiency at some members' expense is a political question, not only a commercial one.
 
 **Technology suppliers.** Machinery, sensors, climate systems and software. Usually the most technically engaging environments in the sector, with real engineering teams and international customers.
 
@@ -191,13 +191,13 @@ Browse current agri-food, horticulture and supply chain data roles at [onlyaijob
 At technology suppliers, breeding companies, multinationals and retailers, yes; farm-level roles generally pay less.
 
 ### (Scenario: candidate without agricultural knowledge) Can I enter without a background in the sector?
-Yes — forecasting, vision and geospatial skills transfer directly, and visiting a production site quickly closes the domain gap.
+Yes - forecasting, vision and geospatial skills transfer directly, and visiting a production site quickly closes the domain gap.
 
 ### (Scenario: international candidate) How much Dutch do I need?
 Farmer-facing and production roles usually require Dutch; research institutes and multinationals frequently work in English.
 
 ### (Scenario: candidate interested in sustainability) Is sustainability data work real or cosmetic here?
-Increasingly real — reporting requirements demand primary data from supply chains, and assurance makes weak numbers a liability.
+Increasingly real - reporting requirements demand primary data from supply chains, and assurance makes weak numbers a liability.
 
 ### (Scenario: ML engineer) What limits model accuracy in this sector?
 Biological variability and small labelled datasets set a practical ceiling that better architectures cannot lift.
@@ -208,9 +208,9 @@ Biological variability and small labelled datasets set a practical ceiling that 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Does agri-food pay competitively for data roles?", "acceptedAnswer": {"@type": "Answer", "text": "At technology suppliers, breeding companies, multinationals and retailers yes; farm-level roles generally pay less."}},
-    {"@type": "Question", "name": "Can I enter agri-food data work without sector knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — forecasting, vision and geospatial skills transfer directly, and site visits close the domain gap quickly."}},
+    {"@type": "Question", "name": "Can I enter agri-food data work without sector knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - forecasting, vision and geospatial skills transfer directly, and site visits close the domain gap quickly."}},
     {"@type": "Question", "name": "How much Dutch is needed in agri-food data jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Farmer-facing and production roles usually require Dutch; research institutes and multinationals often work in English."}},
-    {"@type": "Question", "name": "Is sustainability data work in food real?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly — reporting rules demand primary supply chain data and assurance makes weak numbers a liability."}},
+    {"@type": "Question", "name": "Is sustainability data work in food real?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly - reporting rules demand primary supply chain data and assurance makes weak numbers a liability."}},
     {"@type": "Question", "name": "What limits model accuracy in agri-food?", "acceptedAnswer": {"@type": "Answer", "text": "Biological variability and small labelled datasets set a practical ceiling that architecture cannot overcome."}}
   ]
 }

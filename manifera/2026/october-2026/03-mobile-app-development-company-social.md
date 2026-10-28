@@ -9,7 +9,7 @@ Your enterprise requires **Engineering-Led Design**. ⚙️
 At **Manifera**, we don't just paint screens. We architect massive distributed systems:
 🛡️ **Offline-First Architecture**: High-speed local database synchronization.
 🚀 **GraphQL Middleware**: Optimizing payloads from legacy enterprise systems.
-🌍 **Hybrid Hub**: Brilliant strategy in Amsterdam 🇳🇱 — Elite execution in Vietnam 🇻🇳.
+🌍 **Hybrid Hub**: Brilliant strategy in Amsterdam 🇳🇱 - Elite execution in Vietnam 🇻🇳.
 
 Stop paying for unscalable mockups. Build true mobile engineering engines! 💪
 👉 Discover why Enterprise Mobile requires Engineering-Led Design: https://www.manifera.com/blog/mobile-app-development-company

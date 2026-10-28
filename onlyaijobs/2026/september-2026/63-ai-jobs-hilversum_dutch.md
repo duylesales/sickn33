@@ -27,7 +27,7 @@ Hilversum telt zo'n 90.000 inwoners tussen Amsterdam en Utrecht, en bevat iets w
 
 **Aanbevelen onder randvoorwaarden die commerciële platforms niet kennen.** Een publieke omroep heeft een wettelijke en redactionele opdracht die pluriformiteit, representatie van minderheidsstandpunten en bereik over bevolkingsgroepen omvat. De doelfunctie kan dus niet simpelweg engagement zijn. Een aanbevelingssysteem bouwen dat relevantie afweegt tegen diversiteitsverplichtingen, én uitlegbaar is aan een redactieraad en een toezichthouder, is een aanzienlijk lastiger probleem dan kijktijd optimaliseren.
 
-**Spraak- en audioverwerking in het Nederlands.** Automatische spraakherkenning, sprekerdiarisatie, ondertitelgeneratie en audiozoeken moeten werken op het Nederlands — een taal met veel minder trainingsdata dan Engels, met regionale accenten die sterk verschillen, en een omroeparchief dat bijna een eeuw wisselende opnamekwaliteit beslaat.
+**Spraak- en audioverwerking in het Nederlands.** Automatische spraakherkenning, sprekerdiarisatie, ondertitelgeneratie en audiozoeken moeten werken op het Nederlands - een taal met veel minder trainingsdata dan Engels, met regionale accenten die sterk verschillen, en een omroeparchief dat bijna een eeuw wisselende opnamekwaliteit beslaat.
 
 **Archiefverrijking op schaal.** Het nationale audiovisuele archief bevat een enorme hoeveelheid materiaal, deels nauwelijks gecatalogiseerd. Automatische annotatie, gezichts- en plaatsherkenning, onderwerpclassificatie en cross-modaal zoeken over decennia film, band en digitaal materiaal.
 
@@ -63,20 +63,20 @@ Het tweede is specifiek voor de omroep. Veel technisch werk zit binnen publieke 
 
 | | Publieke omroep en archief | Commerciële media |
 |---|---|---|
-| Doelfunctie | Beperkt door opdracht — pluriformiteit, bereik, toegankelijkheid | Engagement, retentie, advertentie-inkomsten |
+| Doelfunctie | Beperkt door opdracht - pluriformiteit, bereik, toegankelijkheid | Engagement, retentie, advertentie-inkomsten |
 | Tempo | Langzamer; redactionele en governancelagen | Sneller; dichter bij consumentenproductcycli |
 | Salaris | Begrensd door cao, voorspelbaar | Hoger plafond, variabeler |
 | Baanzekerheid | Doorgaans hoog | Sectorafhankelijk, volatieler |
-| Uitlegbaarheidsdruk | Hoog — verdedigbaar voor redactie en toezichthouder | Gemiddeld |
-| Portfoliowaarde | Onderscheidend — aanbevelen met randvoorwaarden is zeldzaam | Conventioneler, draagt makkelijk over |
+| Uitlegbaarheidsdruk | Hoog - verdedigbaar voor redactie en toezichthouder | Gemiddeld |
+| Portfoliowaarde | Onderscheidend - aanbevelen met randvoorwaarden is zeldzaam | Conventioneler, draagt makkelijk over |
 
-Het niet-evidente punt: de publieke kant levert vaak het onderscheidender portfolio. Bijna elke aanbevelingsengineer heeft engagement geoptimaliseerd. Weinigen hebben een systeem gebouwd dat aan een diversiteitsopdracht moest voldoen en redactionele toetsing moest doorstaan — ervaring die onverwacht goed overdraagt naar gereguleerde domeinen als financiën en zorg.
+Het niet-evidente punt: de publieke kant levert vaak het onderscheidender portfolio. Bijna elke aanbevelingsengineer heeft engagement geoptimaliseerd. Weinigen hebben een systeem gebouwd dat aan een diversiteitsopdracht moest voldoen en redactionele toetsing moest doorstaan - ervaring die onverwacht goed overdraagt naar gereguleerde domeinen als financiën en zorg.
 
 ## Waarom de Nederlandse taaleis hier echt is
 
 In de meeste Nederlandse AI-markten volstaat Engels. Hilversum is een van de duidelijkste uitzonderingen, om structurele redenen.
 
-Het product is Nederlandstalige content, voor een Nederlandstalig publiek, gemaakt door redacties die in het Nederlands werken. Raakt je werk spraakherkenning, ondertiteling, contentclassificatie, zoeken of metadata, dan moet je output in het Nederlands kunnen beoordelen — en beoordelen of een automatisch transcript goed is, vereist dat je de taal goed genoeg begrijpt om de fouten te horen.
+Het product is Nederlandstalige content, voor een Nederlandstalig publiek, gemaakt door redacties die in het Nederlands werken. Raakt je werk spraakherkenning, ondertiteling, contentclassificatie, zoeken of metadata, dan moet je output in het Nederlands kunnen beoordelen - en beoordelen of een automatisch transcript goed is, vereist dat je de taal goed genoeg begrijpt om de fouten te horen.
 
 Er zijn echte uitzonderingen: platform-engineering, infrastructuur, backend en sommige pure modelleringsfuncties lopen bij verschillende organisaties in het Engels, vooral bij de grotere commerciële.
 
@@ -84,7 +84,7 @@ Er zijn echte uitzonderingen: platform-engineering, infrastructuur, backend en s
 
 Tussen de omroepen en de productiehuizen zit een derde categorie: kleine en middelgrote mediatechnologiebedrijven die audio- en video-analyseproducten bouwen en internationaal verkopen aan omroepen.
 
-Zij hebben de domeindiepte van het cluster, maar hun klanten zitten in Duitsland, het Verenigd Koninkrijk en Scandinavië. Hun werk vraagt iets bouwen dat robuust genoeg is om in de infrastructuur van iemand anders te draaien, op content in talen die het team misschien niet spreekt. Ze werken daarom vaker intern in het Engels — waarmee ze het toegankelijkste instappunt vormen voor een internationale kandidaat die het domein wil zonder de taaleis.
+Zij hebben de domeindiepte van het cluster, maar hun klanten zitten in Duitsland, het Verenigd Koninkrijk en Scandinavië. Hun werk vraagt iets bouwen dat robuust genoeg is om in de infrastructuur van iemand anders te draaien, op content in talen die het team misschien niet spreekt. Ze werken daarom vaker intern in het Engels - waarmee ze het toegankelijkste instappunt vormen voor een internationale kandidaat die het domein wil zonder de taaleis.
 
 ## De geografie die Hilversum praktisch maakt
 
@@ -112,7 +112,7 @@ De praktische consequentie is niet de sector vermijden, maar specifieke vragen s
 - Publiek aanbevelingswerk onder pluriformiteits- en uitlegbaarheidseisen levert een onderscheidend portfolio op dat goed overdraagt naar gereguleerde sectoren.
 - Nederlands is hier echt vereist voor contentgericht werk, anders dan in de meeste Nederlandse AI-markten.
 - Amsterdam en Utrecht liggen beide binnen 25 minuten, wat het risico van specialiseren verlaagt.
-- Financieringsdruk is reëel — vraag of een team operationeel of programmatisch wordt gefinancierd.
+- Financieringsdruk is reëel - vraag of een team operationeel of programmatisch wordt gefinancierd.
 
 ## Waar te beginnen
 

@@ -1,4 +1,4 @@
-🚨 Het bureau van Frederik Holm, Studio Nine, beoordeelde MedNote — een app voor patiënten-intakenotities voor klinieken, deels gebouwd met Cursor — vóór de lancering in Aarhus. Inloggen, wachtwoord-hashing en toegangsbeheer bleken allemaal in orde. Niemand had gecontroleerd wat er met de daadwerkelijke patiëntnotities gebeurde zodra ze waren opgeslagen. 😳
+🚨 Het bureau van Frederik Holm, Studio Nine, beoordeelde MedNote - een app voor patiënten-intakenotities voor klinieken, deels gebouwd met Cursor - vóór de lancering in Aarhus. Inloggen, wachtwoord-hashing en toegangsbeheer bleken allemaal in orde. Niemand had gecontroleerd wat er met de daadwerkelijke patiëntnotities gebeurde zodra ze waren opgeslagen. 😳
 
 "Werkt het" en "zijn klantgegevens daadwerkelijk beschermd" houden stilletjes op dezelfde vraag te zijn. 🧠
 
@@ -11,9 +11,9 @@
 ✅ Een toegangslogboek bouwen gekoppeld aan elke bekeken record
 ✅ Autorisatiecontroles op rijniveau toevoegen zodat elk kliniekaccount alleen zijn eigen data kan bereiken
 
-Bij **LaunchStudio** bestaat ons white-label partnerschap precies hiervoor — bureaus behouden de klantrelatie en Manifera's 120+ technici handelen de beveiligingsreview stilletjes af, onder de eigen branding van het bureau. 🛡️
+Bij **LaunchStudio** bestaat ons white-label partnerschap precies hiervoor - bureaus behouden de klantrelatie en Manifera's 120+ technici handelen de beveiligingsreview stilletjes af, onder de eigen branding van het bureau. 🛡️
 
-Frederik's resultaat: MedNote draait nu met versleutelde notities, volledige toegangslogging en geverifieerde autorisatie — en zijn klant heeft nooit geweten dat de kloof had bestaan. 🚀
+Frederik's resultaat: MedNote draait nu met versleutelde notities, volledige toegangslogging en geverifieerde autorisatie - en zijn klant heeft nooit geweten dat de kloof had bestaan. 🚀
 
 👉 Ondertekent u de lancering van een door AI gebouwde app van een klant? Doorloop deze checklist eerst: https://launchstudio.eu/nl/blog/data-security-using-ai-tools-what-they-handle
 

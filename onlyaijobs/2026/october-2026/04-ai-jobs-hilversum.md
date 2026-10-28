@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Hilversum has been known for decades as the heart of the Dutch broadcasting and media sector, and that concentration of media organisations creates its own kind of data demand: viewing behaviour analysis, content recommendation and making vast archives searchable — work that is technically close to consumer AI, but rarely presented in that context.
+Hilversum has been known for decades as the heart of the Dutch broadcasting and media sector, and that concentration of media organisations creates its own kind of data demand: viewing behaviour analysis, content recommendation and making vast archives searchable - work that is technically close to consumer AI, but rarely presented in that context.
 
 ## What Kind of Data Work Actually Happens Here
 
-Media organisations deal with large volumes of video, audio and text data that need to be searchable and analysable — a technical problem that touches natural language processing, recommender systems and sometimes computer vision, without the sector presenting itself as "tech."
+Media organisations deal with large volumes of video, audio and text data that need to be searchable and analysable - a technical problem that touches natural language processing, recommender systems and sometimes computer vision, without the sector presenting itself as "tech."
 
 ## Why This Work Is Less Visible Than It Should Be
 
@@ -51,7 +51,7 @@ Media organisations don't compete with scale-ups for visibility on general job p
 
 **NPO and the public broadcasters.** The **NPO** (Nederlandse Publieke Omroep) coordinates the national public broadcasting system, including its streaming service NPO Start. Public broadcasting associations and task-based broadcasters such as **NOS** (news and sport) are based in Hilversum. Public broadcasters need data for audience research, personalisation within public-service limits, accessibility and archive access.
 
-**Netherlands Institute for Sound & Vision (Beeld & Geluid).** Located on the Media Park, Sound & Vision manages one of the largest audiovisual archives in Europe, containing a large share of Dutch broadcasting heritage. Making that archive searchable — through speech recognition, automatic metadata and visual analysis — is a textbook AI problem with a cultural mission.
+**Netherlands Institute for Sound & Vision (Beeld & Geluid).** Located on the Media Park, Sound & Vision manages one of the largest audiovisual archives in Europe, containing a large share of Dutch broadcasting heritage. Making that archive searchable - through speech recognition, automatic metadata and visual analysis - is a textbook AI problem with a cultural mission.
 
 **RTL Nederland.** The largest commercial broadcaster in the Netherlands has its base in Hilversum, operating TV channels and the streaming service Videoland. Commercial streaming depends on recommendation, churn prediction, advertising optimisation and content performance analytics.
 
@@ -87,7 +87,7 @@ Media organisations don't compete with scale-ups for visibility on general job p
 | Advertising optimisation | Plans and prices ad inventory | Forecasting, optimisation |
 | Content moderation and verification | Detects manipulated media and misinformation | Computer vision, multimodal models |
 
-**Dutch language technology is a speciality.** Speech recognition and language models for Dutch — including regional accents, dialects and older archive recordings — perform less well out of the box than English models. Media organisations therefore need engineers who can adapt, fine-tune and evaluate models for Dutch specifically.
+**Dutch language technology is a speciality.** Speech recognition and language models for Dutch - including regional accents, dialects and older archive recordings - perform less well out of the box than English models. Media organisations therefore need engineers who can adapt, fine-tune and evaluate models for Dutch specifically.
 
 ## Regulation That Shapes Media AI
 
@@ -97,23 +97,23 @@ Media organisations don't compete with scale-ups for visibility on general job p
 - **European Accessibility Act.** Raises accessibility expectations for audiovisual media services, increasing the relevance of subtitling and audio description.
 - **GDPR.** Personalisation on streaming platforms depends on a valid legal basis and transparency towards viewers.
 
-For public broadcasters, there is an additional tension: personalisation must not undermine the public-service goal of offering a diverse range of content. Designing recommenders that balance relevance with diversity is a recognised research topic — and a practical challenge in Hilversum.
+For public broadcasters, there is an additional tension: personalisation must not undermine the public-service goal of offering a diverse range of content. Designing recommenders that balance relevance with diversity is a recognised research topic - and a practical challenge in Hilversum.
 
 ## Why This Work Becomes More Relevant as Archives Grow
 
-As media organisations build up more decades of digitised archive material, the need for searchability and classification grows proportionally — this isn't a temporary trend but a structurally growing problem as long as content is produced and archived. For a candidate, this means that this niche, however invisible, has stable and growing demand regardless of what happens in the wider AI market.
+As media organisations build up more decades of digitised archive material, the need for searchability and classification grows proportionally - this isn't a temporary trend but a structurally growing problem as long as content is produced and archived. For a candidate, this means that this niche, however invisible, has stable and growing demand regardless of what happens in the wider AI market.
 
 ## A Concrete Scenario: Making an Archive Searchable
 
-A public broadcasting organisation has built up decades of video archive, largely unstructured and with inconsistent metadata from different eras of digitisation. A team is tasked with making this archive searchable by content, not just by title or date — a problem that combines speech recognition, text analysis and sometimes image recognition. The project starts by assessing which parts of the archive are already somewhat structured and which have to be processed almost from scratch, an inventory that alone can take months before a first working prototype of a search system exists.
+A public broadcasting organisation has built up decades of video archive, largely unstructured and with inconsistent metadata from different eras of digitisation. A team is tasked with making this archive searchable by content, not just by title or date - a problem that combines speech recognition, text analysis and sometimes image recognition. The project starts by assessing which parts of the archive are already somewhat structured and which have to be processed almost from scratch, an inventory that alone can take months before a first working prototype of a search system exists.
 
 ## A Common Misconception About the Scale of These Projects
 
-People often underestimate how large and technically challenging an archive project at a media organisation can be, because the end result — a search bar for finding old broadcasts — looks simple to the user. The underlying complexity of processing decades of inconsistently archived content is comparable to, or sometimes greater than, similar data projects at a large tech company, just less visible to the outside world.
+People often underestimate how large and technically challenging an archive project at a media organisation can be, because the end result - a search bar for finding old broadcasts - looks simple to the user. The underlying complexity of processing decades of inconsistently archived content is comparable to, or sometimes greater than, similar data projects at a large tech company, just less visible to the outside world.
 
 ## Why This Niche Suits Candidates With a Linguistics or NLP Background
 
-For candidates with specific experience in natural language processing, speech recognition or computer vision applied to unstructured content, Hilversum's media sector offers a less obvious but technically serious application of exactly these skills — an alternative to more predictable NLP roles at large tech companies, with potentially less competition for the same positions.
+For candidates with specific experience in natural language processing, speech recognition or computer vision applied to unstructured content, Hilversum's media sector offers a less obvious but technically serious application of exactly these skills - an alternative to more predictable NLP roles at large tech companies, with potentially less competition for the same positions.
 
 ## Typical Job Titles to Search For
 
@@ -128,7 +128,7 @@ Many roles at public broadcasters require Dutch, since editorial and audience wo
 
 ## Accessibility and Search Radius
 
-Hilversum is well connected by rail. Amsterdam and Utrecht are each roughly 20 to 30 minutes away, and Amersfoort about 20 minutes. From Hilversum Media Park station, the media park is within walking distance. A realistic search radius includes Bussum, Huizen, Baarn, Utrecht and Amsterdam Zuid — so searching by distance from home rather than by "Hilversum" captures the whole Gooi region and beyond. Check current travel times in the NS journey planner.
+Hilversum is well connected by rail. Amsterdam and Utrecht are each roughly 20 to 30 minutes away, and Amersfoort about 20 minutes. From Hilversum Media Park station, the media park is within walking distance. A realistic search radius includes Bussum, Huizen, Baarn, Utrecht and Amsterdam Zuid - so searching by distance from home rather than by "Hilversum" captures the whole Gooi region and beyond. Check current travel times in the NS journey planner.
 
 ## Skills and Portfolio Projects That Stand Out
 
@@ -138,7 +138,7 @@ Media employers are impressed by projects that show you understand both the tech
 - **Multimodal search.** A small demo that finds video fragments using a text query, combining transcripts with visual embeddings, mirrors real archive enrichment problems.
 - **Recommendation with diversity constraints.** A recommender that balances relevance with variety, and a clear explanation of how you measured both, speaks directly to the public broadcasting context.
 - **Audience analytics.** Survival analysis for churn, or a well-reasoned causal analysis of a campaign effect, shows maturity beyond dashboarding.
-- **Evaluation discipline.** Media organisations care about errors that embarrass them in public — a wrong name in a subtitle, a misclassified news item. Showing how you evaluate error types, not only overall accuracy, is valuable.
+- **Evaluation discipline.** Media organisations care about errors that embarrass them in public - a wrong name in a subtitle, a misclassified news item. Showing how you evaluate error types, not only overall accuracy, is valuable.
 
 ## Public-Service Values in Practice
 
@@ -149,7 +149,7 @@ Working for a public broadcaster adds considerations that a commercial streaming
 - **Editorial independence.** Algorithms must not undermine editorial choices made by journalists and programme makers.
 - **Accessibility as a core task.** Subtitling, audio description and sign language support are part of the mission, not a side project.
 
-Commercial media companies face different trade-offs, focused on engagement, subscriber retention and advertising revenue. Neither environment is better in itself — but knowing which trade-offs you prefer helps you choose where you will feel at home, and it gives you meaningful questions to ask during an interview.
+Commercial media companies face different trade-offs, focused on engagement, subscriber retention and advertising revenue. Neither environment is better in itself - but knowing which trade-offs you prefer helps you choose where you will feel at home, and it gives you meaningful questions to ask during an interview.
 
 ## Key Takeaways
 
@@ -168,16 +168,16 @@ Browse current AI, machine learning and data jobs in and around Hilversum at [on
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't see media as a tech sector) Does the media sector in Hilversum really do machine learning?
-Yes — viewing behaviour analysis, content recommendation and archive search across large volumes of video, audio and text data are technically comparable to what consumer AI companies do.
+Yes - viewing behaviour analysis, content recommendation and archive search across large volumes of video, audio and text data are technically comparable to what consumer AI companies do.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Hilversum"?
 Media organisations don't compete for visibility on general job platforms, and job titles such as "Audience Research Analyst" rarely reveal the underlying machine learning component.
 
 ### (Scenario: candidate unsure whether this is technically interesting) Is this work as technically interesting as at a tech company?
-Often, yes — NLP, recommender systems and sometimes computer vision applied to media content are serious technical challenges, even though the sector doesn't present itself as tech.
+Often, yes - NLP, recommender systems and sometimes computer vision applied to media content are serious technical challenges, even though the sector doesn't present itself as tech.
 
 ### (Scenario: candidate unsure about the size of this market) Is this a large market, or a small niche?
-Hard to say concretely without looking at current vacancies — but the concentration of media organisations in Hilversum is real and long-established.
+Hard to say concretely without looking at current vacancies - but the concentration of media organisations in Hilversum is real and long-established.
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work?
 Filter by category instead of job title, and look directly at media organisations in the region instead of relying on a generic national search.
@@ -187,10 +187,10 @@ Filter by category instead of job title, and look directly at media organisation
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does the media sector in Hilversum really do machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — viewing behaviour analysis, content recommendation and archive search are technically comparable to what consumer AI companies do."}},
+    {"@type": "Question", "name": "Does the media sector in Hilversum really do machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - viewing behaviour analysis, content recommendation and archive search are technically comparable to what consumer AI companies do."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Hilversum\"?", "acceptedAnswer": {"@type": "Answer", "text": "Media organisations don't compete for visibility, and job titles rarely reveal the underlying machine learning component."}},
-    {"@type": "Question", "name": "Is this work as technically interesting as at a tech company?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes — NLP and recommender systems applied to media content are serious technical challenges."}},
-    {"@type": "Question", "name": "Is this a large market, or a small niche?", "acceptedAnswer": {"@type": "Answer", "text": "Look at current vacancies yourself — the concentration of media organisations in Hilversum is real and long-established."}},
+    {"@type": "Question", "name": "Is this work as technically interesting as at a tech company?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes - NLP and recommender systems applied to media content are serious technical challenges."}},
+    {"@type": "Question", "name": "Is this a large market, or a small niche?", "acceptedAnswer": {"@type": "Answer", "text": "Look at current vacancies yourself - the concentration of media organisations in Hilversum is real and long-established."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category instead of job title, and look directly at media organisations in the region."}}
   ]
 }

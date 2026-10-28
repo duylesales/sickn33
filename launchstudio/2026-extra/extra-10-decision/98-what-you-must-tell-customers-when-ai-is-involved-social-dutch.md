@@ -14,7 +14,7 @@ De 4 grootste juridische valkuilen bij AI-features:
 
 Hoe u compliant blijft onder de EU AI Act:
 ✅ **Direct melden bij aanvang:** *"U chat met de virtuele AI-assistent van [App]"*
-✅ **Markeer gegenereerde content:** Subtiele badge *"AI-concept — controleer termijnen zelf"*
+✅ **Markeer gegenereerde content:** Subtiele badge *"AI-concept - controleer termijnen zelf"*
 ✅ **Human-in-the-Loop bij impact:** Laat AI adviseren, maar een bevoegd mens definitief beslissen
 ✅ **Bied escalatie naar een mens:** Altijd een optie om een echte medewerker te spreken
 ✅ **Houd een AI-register bij:** Welke modellen draaien er, welke data gaat ernaartoe en waar?

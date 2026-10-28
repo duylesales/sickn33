@@ -1,9 +1,9 @@
-🚨 Koen Hendriks, bibliothecaris in Enschede, bouwde Leesclub op Replit: leesclubs plannen bijeenkomsten, houden de voortgang per hoofdstuk bij en bespreken boeken. Via bibliotheeknetwerken groeide het naar ~1.900 clubs en 14.000 lezers. Toen begon de zondagavond het te breken — traag, daarna fouten. Hij upgradede twee keer naar grotere machines. Er veranderde niets. 😳
+🚨 Koen Hendriks, bibliothecaris in Enschede, bouwde Leesclub op Replit: leesclubs plannen bijeenkomsten, houden de voortgang per hoofdstuk bij en bespreken boeken. Via bibliotheeknetwerken groeide het naar ~1.900 clubs en 14.000 lezers. Toen begon de zondagavond het te breken - traag, daarna fouten. Hij upgradede twee keer naar grotere machines. Er veranderde niets. 😳
 
 De servers waren in orde. De database niet: elk verzoek opende een nieuwe Postgres-verbinding, discussiepagina's draaiden één query per reactie, een tabel met 3,2 miljoen rijen had geen index op club of gebruiker, en elke voortgangsupdate vocht om één tellerrij. Daarom loopt de schaalbaarheid van AI-apps eerst vast in de database:
 
 ❌ Verbindingen uitgeput binnen minuten na de zondagse piek
-❌ N+1-query's — één per reactie om de auteur op te halen
+❌ N+1-query's - één per reactie om de auteur op te halen
 ❌ Geen indexen op de kolommen waarop elke query filterde
 ❌ Een teller op een "hete rij" waardoor leden van grote clubs in de rij stonden
 

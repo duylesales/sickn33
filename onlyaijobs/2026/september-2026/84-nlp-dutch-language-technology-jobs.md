@@ -40,7 +40,7 @@ That constraint is the central technical fact of this field here, and understand
 
 **Pretrained models underperform and the gap is uneven.** Multilingual models include Dutch, but their Dutch capability is generally weaker than their English capability, and the weakness is not uniform across tasks. Performance on well-represented general text may be acceptable while performance on specialised domain language is poor. You cannot assume a benchmark result in English predicts behaviour in Dutch.
 
-**Domain-specific Dutch is scarcer still.** Dutch legal language, Dutch medical records, Dutch municipal administrative text, Dutch insurance claim descriptions — each is a specialised register with its own vocabulary and conventions, and the available training data in each is small even by Dutch standards.
+**Domain-specific Dutch is scarcer still.** Dutch legal language, Dutch medical records, Dutch municipal administrative text, Dutch insurance claim descriptions - each is a specialised register with its own vocabulary and conventions, and the available training data in each is small even by Dutch standards.
 
 **Annotation is expensive and hard to outsource.** Annotating English text at scale is a mature industry. Annotating Dutch requires Dutch speakers, which is a much smaller labour pool at much higher cost. This changes the economics of any project requiring supervised data and pushes work toward approaches that need less of it.
 
@@ -72,7 +72,7 @@ Dutch public administration has recent, serious institutional experience of auto
 
 The practical implications are concrete.
 
-**A model that affects a citizen's case must be explainable to that citizen.** Not interpretable in a technical sense — explainable in terms a person can understand and contest. This rules out approaches whose reasoning cannot be articulated.
+**A model that affects a citizen's case must be explainable to that citizen.** Not interpretable in a technical sense - explainable in terms a person can understand and contest. This rules out approaches whose reasoning cannot be articulated.
 
 **Human decision-making must be genuine rather than nominal.** A system that presents a recommendation which the human official always accepts is, in practice, automated decision-making with a human formality attached. Regulators and internal oversight increasingly look for evidence that human review is substantive.
 
@@ -104,7 +104,7 @@ Candidates sometimes see working in a lower-resource language as a disadvantage.
 
 Working in English means competing with an enormous international talent pool on problems where well-resourced organisations have already applied substantial effort. Working in Dutch means the available approaches have been less thoroughly explored, the datasets have often not been built yet, and the number of people who can do the work competently is far smaller.
 
-More importantly, the skills you develop transfer to every other language with limited resources — which is most languages. Techniques for working with scarce annotated data, evaluating without established benchmarks, handling code-mixing, and adapting multilingual models to a specific register are directly applicable across dozens of markets. Engineers who have genuinely solved these problems in Dutch are equipped for a category of work that is far larger than the Dutch market itself.
+More importantly, the skills you develop transfer to every other language with limited resources - which is most languages. Techniques for working with scarce annotated data, evaluating without established benchmarks, handling code-mixing, and adapting multilingual models to a specific register are directly applicable across dozens of markets. Engineers who have genuinely solved these problems in Dutch are equipped for a category of work that is far larger than the Dutch market itself.
 
 There is a practical corollary. A candidate who speaks Dutch and can do competent NLP work occupies a small intersection, and the scarcity is reflected in how employers treat those candidates.
 
@@ -116,7 +116,7 @@ This is the question candidates ask most, and the honest answer is more differen
 
 **You do not need Dutch for infrastructure and platform work.** Building the pipeline, the serving layer, the retrieval system and the evaluation harness requires software engineering, not Dutch. These roles exist and are often the bottleneck.
 
-**You do not necessarily need Dutch for multilingual or English-facing work.** Some Dutch employers work primarily in English — international companies, research groups, product companies selling abroad. Their NLP work may be English or multilingual.
+**You do not necessarily need Dutch for multilingual or English-facing work.** Some Dutch employers work primarily in English - international companies, research groups, product companies selling abroad. Their NLP work may be English or multilingual.
 
 **Partial Dutch is more useful than candidates assume.** Reading comprehension sufficient to evaluate output is a much lower bar than fluency, and it is achievable in months rather than years. Many international candidates in this field reach useful reading ability well before conversational fluency.
 
@@ -136,7 +136,7 @@ Three things come up consistently, and none is knowledge of recent model release
 
 If there is one investment that pays disproportionately in this field, it is becoming good at building evaluation sets.
 
-The reason is structural. In a well-resourced language you can rely on established benchmarks and spend your effort on modelling. In Dutch you frequently cannot, which means the quality of your conclusions depends entirely on the quality of an evaluation set you built yourself. Most people build these carelessly — sampling whatever is convenient, under-representing hard cases, failing to check annotator agreement, not stratifying by the dimensions that matter.
+The reason is structural. In a well-resourced language you can rely on established benchmarks and spend your effort on modelling. In Dutch you frequently cannot, which means the quality of your conclusions depends entirely on the quality of an evaluation set you built yourself. Most people build these carelessly - sampling whatever is convenient, under-representing hard cases, failing to check annotator agreement, not stratifying by the dimensions that matter.
 
 An engineer who builds evaluation sets deliberately produces trustworthy results while colleagues produce numbers that do not survive deployment. That difference compounds over a career, and it is visible to anyone technical who reviews your work.
 
@@ -161,7 +161,7 @@ Browse current NLP, machine learning and AI vacancies across the Netherlands at 
 Unevenly. General text performance may be acceptable while specialised domain language is poor, and English benchmark results do not predict Dutch behaviour. Verifying rather than assuming is the job.
 
 ### (Scenario: international candidate) Do I need Dutch for NLP work here?
-For evaluating output on Dutch text, yes — metric watching does not substitute for being able to read a sentence and judge whether the output is good. For infrastructure, platform and multilingual work, no.
+For evaluating output on Dutch text, yes - metric watching does not substitute for being able to read a sentence and judge whether the output is good. For infrastructure, platform and multilingual work, no.
 
 ### (Scenario: candidate learning the language) How much Dutch is enough?
 Reading comprehension sufficient to evaluate output, which is a much lower bar than fluency and achievable in months. Many international candidates reach useful reading ability well before conversational fluency.

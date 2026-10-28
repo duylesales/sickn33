@@ -35,11 +35,11 @@ Right now, somewhere in Amsterdam, a founder is showing their AI prototype to a 
 
 The founder pauses. They do not know the answer. Because between the AI prototype running on their screen and a product that accepts payments from strangers, there is a canyon of engineering work they have not started and might not fully understand.
 
-This guide bridges that canyon. Not with vague advice, but with the exact steps, costs, and timelines required to take an AI prototype — built with Lovable, Bolt, Cursor, or any AI coding tool — from demo to production in 2026.
+This guide bridges that canyon. Not with vague advice, but with the exact steps, costs, and timelines required to take an AI prototype - built with Lovable, Bolt, Cursor, or any AI coding tool - from demo to production in 2026.
 
-## Step 1: Honest Assessment — What Does Your AI Prototype Actually Have?
+## Step 1: Honest Assessment - What Does Your AI Prototype Actually Have?
 
-Before planning the transition, inventory what your AI prototype includes and what it lacks. Be brutally honest — overestimating your prototype's readiness is the most common and most expensive mistake.
+Before planning the transition, inventory what your AI prototype includes and what it lacks. Be brutally honest - overestimating your prototype's readiness is the most common and most expensive mistake.
 
 **Your AI prototype almost certainly has:**
 - A functional frontend (React/Next.js components, routing, styling)
@@ -112,7 +112,7 @@ Three options for transitioning your AI prototype to production:
 ### Use LaunchStudio
 **Realistic timeline:** 1–3 weeks
 **Cost:** €800–€7,500 (fixed, predictable)
-**Risk:** Minimal — specialized in AI prototype transitions
+**Risk:** Minimal - specialized in AI prototype transitions
 **Best for:** Founders who want to launch quickly and focus on business
 
 [LaunchStudio](https://launchstudio.eu/en/) is an initiative by [Manifera](https://www.manifera.com/), a custom software development company with 120+ engineers, 160+ shipped projects, and offices in Amsterdam (Herengracht 420), Singapore (100 Tras Street), and Ho Chi Minh City (10 Pho Quang Street). The company is led by Herre Roelevink, a Dutch entrepreneur with over 11 years of experience managing international engineering teams.
@@ -154,9 +154,9 @@ LaunchStudio handles managed hosting, SSL renewal, security updates, automated b
 
 Bas, a former marketing director in Haarlem, built an AI-powered ad copy generator using Lovable. The tool let e-commerce store owners paste their product URL, and the AI generated optimized Facebook ad copy, Google Ads headlines, and Instagram captions in multiple languages.
 
-Bas demonstrated the AI prototype at a local e-commerce meetup. Twelve store owners signed up for a "beta" on the spot. But the beta was just a demo — there was no way to save generated copy (data disappeared on refresh), no user accounts (everyone saw the same interface), no billing (Bas planned to charge €39/month), and the OpenAI API key was in the browser JavaScript.
+Bas demonstrated the AI prototype at a local e-commerce meetup. Twelve store owners signed up for a "beta" on the spot. But the beta was just a demo - there was no way to save generated copy (data disappeared on refresh), no user accounts (everyone saw the same interface), no billing (Bas planned to charge €39/month), and the OpenAI API key was in the browser JavaScript.
 
-He needed a fast transition. His e-commerce audience expected professional tools — any friction or instability would lose them permanently.
+He needed a fast transition. His e-commerce audience expected professional tools - any friction or instability would lose them permanently.
 
 LaunchStudio assigned a priority timeline. The Manifera team completed the full Category C transition in 12 business days: Supabase authentication with email verification, saved copy history per user, Mollie subscription billing (critical for Dutch e-commerce merchants who prefer iDEAL), server-side AI proxy with response caching, and Vercel deployment with custom domain.
 
@@ -164,10 +164,10 @@ Bas emailed his 12 beta signups on launch day. Nine converted to paying subscrib
 
 **Result:** AdCraft reached €4,017/month recurring revenue within 21 days of launch. AI costs stabilized at €380/month (9.5% of revenue) thanks to aggressive caching of similar product descriptions.
 
-> *"From prototype demo to €4K MRR in three weeks. My AI prototype needed exactly what LaunchStudio provides — security, billing, and deployment. Nothing more, nothing less."*
-> — **Bas Hendriks, Founder, AdCraft (Haarlem)**
+> *"From prototype demo to €4K MRR in three weeks. My AI prototype needed exactly what LaunchStudio provides - security, billing, and deployment. Nothing more, nothing less."*
+> - **Bas Hendriks, Founder, AdCraft (Haarlem)**
 
-**Cost & Timeline:** €3,800 (Launch & Grow Package) — production-ready and deployed in 12 business days.
+**Cost & Timeline:** €3,800 (Launch & Grow Package) - production-ready and deployed in 12 business days.
 
 ---
 
@@ -175,11 +175,11 @@ Bas emailed his 12 beta signups on launch day. Nine converted to paying subscrib
 
 ### (Scenario: Founder unsure if their prototype is ready for transition) How do I know if my AI prototype is mature enough to transition to production?
 
-If real users have interacted with your prototype and confirmed they would pay for it, it is ready. The prototype does not need to be perfect — LaunchStudio fixes infrastructure gaps regardless of prototype maturity. What matters is validated demand, not technical completeness.
+If real users have interacted with your prototype and confirmed they would pay for it, it is ready. The prototype does not need to be perfect - LaunchStudio fixes infrastructure gaps regardless of prototype maturity. What matters is validated demand, not technical completeness.
 
 ### (Scenario: Founder comparing transition timelines) Can LaunchStudio transition my AI prototype in less than a week?
 
-For Category A projects (marketing sites), yes — typically 3–5 business days. For Category B (web apps), 5–10 days. For Category C (SaaS with billing), 10–15 days. The timeline depends on complexity, not effort — LaunchStudio's team works on your project full-time during the sprint.
+For Category A projects (marketing sites), yes - typically 3–5 business days. For Category B (web apps), 5–10 days. For Category C (SaaS with billing), 10–15 days. The timeline depends on complexity, not effort - LaunchStudio's team works on your project full-time during the sprint.
 
 ### (Scenario: Founder who iterated on their prototype extensively) Will my heavily modified AI prototype be harder to transition?
 
@@ -191,7 +191,7 @@ Yes. LaunchStudio writes AI-readable code specifically designed for compatibilit
 
 ### (Scenario: Founder with a prototype built in an unusual AI tool) Does LaunchStudio work with prototypes from any AI tool, or just Lovable and Bolt?
 
-LaunchStudio works with any AI-generated codebase — Lovable, Bolt, Cursor, v0, Windsurf, Replit, or even custom AI pipelines. The engineering team at Manifera evaluates any JavaScript/TypeScript frontend and builds production infrastructure underneath it, regardless of how the frontend was generated.
+LaunchStudio works with any AI-generated codebase - Lovable, Bolt, Cursor, v0, Windsurf, Replit, or even custom AI pipelines. The engineering team at Manifera evaluates any JavaScript/TypeScript frontend and builds production infrastructure underneath it, regardless of how the frontend was generated.
 
 <script type="application/ld+json">
 {
@@ -211,7 +211,7 @@ LaunchStudio works with any AI-generated codebase — Lovable, Bolt, Cursor, v0,
       "name": "Can LaunchStudio transition my AI prototype in less than a week?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For Category A projects (marketing sites), yes — typically 3–5 business days. For Category B (web apps), 5–10 days. For Category C (SaaS with billing), 10–15 days. The timeline depends on complexity."
+        "text": "For Category A projects (marketing sites), yes - typically 3–5 business days. For Category B (web apps), 5–10 days. For Category C (SaaS with billing), 10–15 days. The timeline depends on complexity."
       }
     },
     {
@@ -235,7 +235,7 @@ LaunchStudio works with any AI-generated codebase — Lovable, Bolt, Cursor, v0,
       "name": "Does LaunchStudio work with prototypes from any AI tool, or just Lovable and Bolt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio works with any AI-generated codebase — Lovable, Bolt, Cursor, v0, Windsurf, Replit, or custom AI pipelines. The Manifera engineering team evaluates any JavaScript/TypeScript frontend and builds production infrastructure underneath it."
+        "text": "LaunchStudio works with any AI-generated codebase - Lovable, Bolt, Cursor, v0, Windsurf, Replit, or custom AI pipelines. The Manifera engineering team evaluates any JavaScript/TypeScript frontend and builds production infrastructure underneath it."
       }
     }
   ]

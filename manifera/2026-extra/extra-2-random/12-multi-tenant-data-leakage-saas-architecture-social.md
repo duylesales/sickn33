@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Multi-Tenant Data Leakage Risk:** A CTO at a B2B SaaS company gets an email from a customer's security team with a screenshot of another company's invoice data appearing in their billing dashboard. It happened for eleven minutes before a cache was invalidated.
-❌ **Cross-Tenant Query Contamination:** Cross-tenant data exposure isn't a bug, it's a breach-notification event. Under GDPR, a confirmed data leak between customers can trigger mandatory disclosure obligations, contractual penalty clauses, and in enterprise SaaS deals, an automatic right of termination — a single incident with a large account can cost a mid-market SaaS vendor €150,000-€400,000 in lost contract value, legal exposure, and the security audits every remaining customer will now demand.
+❌ **Cross-Tenant Query Contamination:** Cross-tenant data exposure isn't a bug, it's a breach-notification event. Under GDPR, a confirmed data leak between customers can trigger mandatory disclosure obligations, contractual penalty clauses, and in enterprise SaaS deals, an automatic right of termination - a single incident with a large account can cost a mid-market SaaS vendor €150,000-€400,000 in lost contract value, legal exposure, and the security audits every remaining customer will now demand.
 ❌ **Catastrophic GDPR & Compliance Breaches:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

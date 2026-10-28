@@ -85,7 +85,7 @@ Elk van deze 25 punten lijkt afzonderlijk wellicht een detail. Gezamenlijk vorme
 
 De 25 bovenstaande punten vormen een universele basis voor vrijwel elke AI-SaaS, maar de diepgang van de verificatie verschuift afhankelijk van wat uw product verwerkt en wie de eindgebruikers zijn:
 
-**Bij het verwerken van financiële, fiscale of medische gegevens** verdienen punten 7 (backup-restore verificatie), 10 (data-verwijderingsprocessen) en 16 (btw/factuurafhandeling) aanzienlijk zwaardere toetsing dan bij een simpele productiviteitstool — het herstellen van een backup die drie dagen aan financiële transacties mist is een fundamenteel ander probleem dan het kwijtraken van een to-do lijstje.
+**Bij het verwerken van financiële, fiscale of medische gegevens** verdienen punten 7 (backup-restore verificatie), 10 (data-verwijderingsprocessen) en 16 (btw/factuurafhandeling) aanzienlijk zwaardere toetsing dan bij een simpele productiviteitstool - het herstellen van een backup die drie dagen aan financiële transacties mist is een fundamenteel ander probleem dan het kwijtraken van een to-do lijstje.
 
 **Marketplaces en multi-sided platforms** (waarbij uw AI-SaaS twee verschillende typen gebruikers verbindt, zoals leveranciers en consumenten) vereisen dat punt 8 (tenant-isolatie) ook over rol-grenzen heen wordt getoetst. Een leverancier die de privétarieven van een concurrerende leverancier kan inzien is een catastrofaal datalek dat een standaard test met twee gelijke accounts niet altijd blootlegt.
 
@@ -121,14 +121,14 @@ Dennis, accountant in Gorinchem, bouwde met Lovable AangifteHulp: een AI-tool wa
 
 Bij het langslopen van de lijst ontdekte Dennis acht serieuze hiaten die hij niet kon verifiëren: er waren geen geautomatiseerde database-backups ingesteld, multi-tenancy was niet getest, er was geen rate-limiting op inloggen, geen data-verwijderingsproces (zeer riskant bij gevoelige fiscale documenten), geen kosten-monitoring op AI-aanroepen, geen fallback bij storingen, geen statuspagina en hij had de registratiestraat nog nooit zelf als onbekende bezoeker doorlopen.
 
-Dennis nam met spoed contact op met LaunchStudio. Het engineeringteam van Manifera pakte direct de meest risicovolle punten aan — database-backups, tenant-isolatie en het AVG-verwijderingsproces — en verifieerde de volledige lijst binnen het krappe tijdslot.
+Dennis nam met spoed contact op met LaunchStudio. Het engineeringteam van Manifera pakte direct de meest risicovolle punten aan - database-backups, tenant-isolatie en het AVG-verwijderingsproces - en verifieerde de volledige lijst binnen het krappe tijdslot.
 
 **Resultaat:** AangifteHulp lanceerde exact op de geplande datum met alle 25 punten geverifieerd, zónder uitstel en met de zekerheid dat gevoelige financiële documenten veilig waren afgeschermd.
 
 > *"Drie dagen voor livegang dacht ik dat ik overdreven paranoïde was door een checklist te pakken. Dat was ik niet: ik vond acht reële gaten, waaronder nul backups. LaunchStudio heeft alles op tijd gerepareerd, wat voelde als een echte redding."*  
-> — **Dennis Kramer, Oprichter AangifteHulp (Gorinchem)**
+> - **Dennis Kramer, Oprichter AangifteHulp (Gorinchem)**
 
-**Kosten & tijdlijn:** €2.600 (spoed pre-launch verificatie en reparatiesprint) — binnen 3 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €2.600 (spoed pre-launch verificatie en reparatiesprint) - binnen 3 werkdagen live opgeleverd.
 
 ---
 

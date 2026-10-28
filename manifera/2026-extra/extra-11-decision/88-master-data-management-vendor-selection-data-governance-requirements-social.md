@@ -6,7 +6,7 @@ Same customer. Nine systems. Nine slightly different names. Four different tax I
 ❌ **One-size survivorship rules:** "Most recent update wins" applied to every field produces golden records that are right on some fields and silently wrong on others.
 
 **The Manifera Solution:**
-✅ **Governance model fit first:** We map your actual data creation patterns — who creates records, how often, under what approval process — before recommending a model.
+✅ **Governance model fit first:** We map your actual data creation patterns - who creates records, how often, under what approval process - before recommending a model.
 ✅ **Proof-of-concept matching on your data:** We push vendors to test false-positive and false-negative rates against your real records, not their published benchmarks.
 ✅ **Stewardship workflow that works:** We evaluate the human review layer as carefully as the automated engine, because that's where most MDM rollouts actually fail.
 

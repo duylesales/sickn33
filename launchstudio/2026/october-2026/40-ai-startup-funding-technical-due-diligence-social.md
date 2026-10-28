@@ -1,4 +1,4 @@
-🔥 Alex built a prototype using **AI builders** — alex, a solo developer in frankfurt, built an ai platform that helped cfos forecast runway based on messy excel exports, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Alex built a prototype using **AI builders** - alex, a solo developer in frankfurt, built an ai platform that helped cfos forecast runway based on messy excel exports, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Alex's application achieved production readiness: The VC's technical auditor spent three days reviewing the code. The auditor explicitly praised the PII-masking middleware and the strict AWS security groups. Alex passed the audit without a single red flag, the €2 Million hit his bank account, and the VC noted that his infrastructure was unusually mature for a solo founder. LaunchStudio literally saved my funding round. They turned my weekend hackathon project into an investable tech company. (€9,500 (Emergency Infrastructure Hardening & Documentation) — completed in 10 business days.). 🚀
+Alex's application achieved production readiness: The VC's technical auditor spent three days reviewing the code. The auditor explicitly praised the PII-masking middleware and the strict AWS security groups. Alex passed the audit without a single red flag, the €2 Million hit his bank account, and the VC noted that his infrastructure was unusually mature for a solo founder. LaunchStudio literally saved my funding round. They turned my weekend hackathon project into an investable tech company. (€9,500 (Emergency Infrastructure Hardening & Documentation) - completed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-startup-funding-technical-due-diligence
 

@@ -10,11 +10,11 @@ Most security questionnaires aren't secretly asking for a certification: ⚖️
 ✅ Most mid-market buyers accept documented, honest practices as real evidence
 ✅ A third-party pen test report is concrete, credible, and achievable in one to two weeks
 ✅ Documented core security policies demonstrate real maturity months before an audit could conclude
-✅ This interim work isn't wasted — it becomes the foundation if certification is needed later
+✅ This interim work isn't wasted - it becomes the foundation if certification is needed later
 
 At **LaunchStudio**, backed by Manifera's 11+ years securing systems for TNO and CFLW, we build the readiness pass that satisfies most buyers immediately. 🛡️
 
-His result: five weeks of documentation and a pen test, roughly a tenth of the planned audit cost — the next two enterprise deals closed without either buyer requesting certification. 🚀
+His result: five weeks of documentation and a pen test, roughly a tenth of the planned audit cost - the next two enterprise deals closed without either buyer requesting certification. 🚀
 
 👉 Use the price calculator to see what a security readiness pass costs: https://launchstudio.eu/en/blog/do-you-actually-need-soc2-or-iso27001-yet
 

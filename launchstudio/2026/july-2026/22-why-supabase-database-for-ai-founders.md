@@ -17,7 +17,7 @@ Supabase is a "Backend as a Service" (BaaS). It provides a hosted PostgreSQL dat
 
 AI code generators excel at writing frontend React code. But setting up backend servers, configuring ORMs (Object-Relational Mappers), and routing API endpoints introduces massive complexity and points of failure into AI generation.
 
-Because Supabase provides a powerful JavaScript SDK, the AI can perform complex database operations (Create, Read, Update, Delete) directly from the React components. Furthermore, Supabase is built on PostgreSQL—the world's most robust relational database. AI models (like GPT-4 and Claude) have been trained on billions of lines of SQL, meaning they are incredibly accurate at designing Supabase database schemas and writing the exact queries needed for your app.
+Because Supabase provides a powerful JavaScript SDK, the AI can perform complex database operations (Create, Read, Update, Delete) directly from the React components. Furthermore, Supabase is built on PostgreSQL - the world's most robust relational database. AI models (like GPT-4 and Claude) have been trained on billions of lines of SQL, meaning they are incredibly accurate at designing Supabase database schemas and writing the exact queries needed for your app.
 
 ## The 3 Pillars of Supabase
 
@@ -35,7 +35,7 @@ If the frontend can query the database directly, what stops User A from requesti
 
 ## Free Tier vs. Pro Plan
 
-Supabase's Free Tier is famously generous. It includes 500MB of database space and 50,000 monthly active users—more than enough to build and test your MVP.
+Supabase's Free Tier is famously generous. It includes 500MB of database space and 50,000 monthly active users - more than enough to build and test your MVP.
 
 However, you should upgrade to the Pro Plan ($25/month) before launching to real users for two reasons:
 
@@ -71,7 +71,7 @@ Harper partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 **Result:** Harper reduced database response times from 7.2 seconds down to 180 milliseconds under load.
 
-**Cost & Timeline:** €1,300 (Database Tuning Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,300 (Database Tuning Package) - production-ready and deployed in 4 business days.
 
 ---
 
@@ -90,7 +90,7 @@ Supabase uses a relational database (PostgreSQL) which is better for complex Saa
 
 ### Is the Supabase free tier enough for my launch?
 
-It is enough for prototyping, but not for launch. Free projects pause after inactivity and lack automated daily backups—a critical requirement for production data.
+It is enough for prototyping, but not for launch. Free projects pause after inactivity and lack automated daily backups - a critical requirement for production data.
 
 ### What is the biggest mistake founders make with Supabase?
 
@@ -126,7 +126,7 @@ LaunchStudio, operated by senior engineers from Manifera (founded in 2014), impl
       "name": "Is the Supabase free tier enough for my launch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is enough for prototyping, but not for launch. Free projects pause after inactivity and lack automated daily backups—a critical requirement for production data."
+        "text": "It is enough for prototyping, but not for launch. Free projects pause after inactivity and lack automated daily backups - a critical requirement for production data."
       }
     },
     {

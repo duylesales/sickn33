@@ -45,7 +45,7 @@ Bouwt u bijvoorbeeld een premium AI-platform voor vastgoedmakelaars van 199 doll
 2. De makelaar klikt op "Optimaliseer".
 3. Er verschijnt een gerichte pop-up: *"Vul uw e-mailadres in om uw herschreven, SEO-geoptimaliseerde woningtekst binnen 10 seconden in uw inbox te ontvangen."*
 
-Omdat de tool een direct, tijdrovend probleem oplost, ligt het conversiepercentage op een dergelijk e-mailformulier vaak 5 keer hoger dan bij een traditionele PDF-download — soms zelfs boven de 25%.
+Omdat de tool een direct, tijdrovend probleem oplost, ligt het conversiepercentage op een dergelijk e-mailformulier vaak 5 keer hoger dan bij een traditionele PDF-download - soms zelfs boven de 25%.
 
 ## De architectuur van een converterende AI-lead magnet
 
@@ -100,7 +100,7 @@ Hij schakelde **LaunchStudio (door Manifera)** in. Het team integreerde Cloudfla
 
 **Resultaat:** Botverkeer werd per direct geblokkeerd, waardoor zijn API-kosten daalden tot normale niveaus terwijl legitieme leads behouden bleven.
 
-**Kosten & tijdlijn:** €950 (Bot Security Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €950 (Bot Security Pakket) - productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 

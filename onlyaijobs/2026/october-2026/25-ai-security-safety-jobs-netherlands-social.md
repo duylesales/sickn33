@@ -1,4 +1,4 @@
-💡 AI security and safety is about how models fail or get attacked — a discipline distinct from building them, and one of the least standardised in the Dutch market.
+💡 AI security and safety is about how models fail or get attacked - a discipline distinct from building them, and one of the least standardised in the Dutch market.
 
 🛡️ Without established credentials, practitioners use OWASP's Top 10 for LLM Applications, MITRE ATLAS and NIST AI 100-2 as a shared language. NCSC-NL, the AIVD, Hague Security Delta and TNO shape the Dutch landscape.
 

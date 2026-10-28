@@ -35,7 +35,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-From the air, Westland looks like a sea of glass. Between The Hague, Delft and the Hook of Holland lies one of the most intensive horticultural areas in the world, where tomatoes, peppers, cucumbers, flowers and plants are grown under controlled conditions year-round. Behind that glass is a technology sector that exports climate computers, breeding knowledge and greenhouse concepts worldwide. For data scientists and engineers, Westland is where plant biology, control engineering and machine learning come together — in a region that most AI job searches never touch.
+From the air, Westland looks like a sea of glass. Between The Hague, Delft and the Hook of Holland lies one of the most intensive horticultural areas in the world, where tomatoes, peppers, cucumbers, flowers and plants are grown under controlled conditions year-round. Behind that glass is a technology sector that exports climate computers, breeding knowledge and greenhouse concepts worldwide. For data scientists and engineers, Westland is where plant biology, control engineering and machine learning come together - in a region that most AI job searches never touch.
 
 ## Why Westland Became a Global Horticultural Hub
 
@@ -47,7 +47,7 @@ What makes the region special is not only the scale of cultivation but the conce
 
 **World Horti Center.** Located in Naaldwijk, the World Horti Center brings together education, research, government and companies in horticulture. It hosts demonstration greenhouses, education programmes and companies showcasing innovations, and is a meeting place for the international horticultural sector.
 
-**Priva.** Based in De Lier, Priva develops climate control and process automation systems for greenhouses and buildings. Climate computers regulate temperature, humidity, CO2, irrigation and lighting — and they are a natural platform for data-driven and autonomous control.
+**Priva.** Based in De Lier, Priva develops climate control and process automation systems for greenhouses and buildings. Climate computers regulate temperature, humidity, CO2, irrigation and lighting - and they are a natural platform for data-driven and autonomous control.
 
 **Rijk Zwaan.** The vegetable breeding company, headquartered in De Lier, develops new vegetable varieties for growers worldwide. Modern plant breeding combines genetics, phenotyping and large-scale data analysis.
 
@@ -71,11 +71,11 @@ What makes the region special is not only the scale of cultivation but the conce
 
 ## The Autonomous Greenhouse: From Experiment to Product
 
-Growing crops in a greenhouse involves thousands of decisions: when to open windows, how much to heat, when to switch lights on, how much water and nutrients to give. Traditionally, these decisions were made by experienced growers adjusting settings in climate computers based on observation and intuition. The shortage of experienced growers — and the desire to replicate Dutch know-how in greenhouses worldwide — has driven interest in autonomous cultivation.
+Growing crops in a greenhouse involves thousands of decisions: when to open windows, how much to heat, when to switch lights on, how much water and nutrients to give. Traditionally, these decisions were made by experienced growers adjusting settings in climate computers based on observation and intuition. The shortage of experienced growers - and the desire to replicate Dutch know-how in greenhouses worldwide - has driven interest in autonomous cultivation.
 
 The Autonomous Greenhouse Challenge showed that teams using AI and sensors could compete with or exceed experienced growers on certain metrics in controlled experiments. Since then, technology companies and research groups have worked on turning these concepts into commercial products: systems that combine sensors, crop models and algorithms to propose or execute climate strategies.
 
-The challenge is not just technical. A grower's income depends on the crop, so trust is built slowly. Successful systems typically start by advising, show their reasoning and allow growers to intervene — before taking over more decisions.
+The challenge is not just technical. A grower's income depends on the crop, so trust is built slowly. Successful systems typically start by advising, show their reasoning and allow growers to intervene - before taking over more decisions.
 
 ## Plant Breeding: Genomics Meets Phenotyping
 
@@ -95,7 +95,7 @@ Data work in breeding includes managing genotype data, analysing phenotype measu
 
 **GDPR and data ownership.** Cultivation data belongs to growers, and data sharing between growers, suppliers and advisers requires clear agreements.
 
-**EU Artificial Intelligence Act.** Most horticultural AI is not high-risk, but machinery with AI-based safety functions — for example robots working near people — must meet product safety requirements.
+**EU Artificial Intelligence Act.** Most horticultural AI is not high-risk, but machinery with AI-based safety functions - for example robots working near people - must meet product safety requirements.
 
 ## A Concrete Scenario: A Robot That Must See Through Leaves
 
@@ -128,7 +128,7 @@ Candidates sometimes picture horticulture as traditional farming with little tec
 
 ## Commuting and Living Near Westland
 
-Westland has no railway station, so most people commute by car, bike or bus. The region borders The Hague and is close to Delft, Maassluis and Rotterdam, with typical travel times of twenty to thirty minutes from these cities. For graduates of TU Delft or professionals living in The Hague, Westland companies are often within cycling or short driving distance — a fact that many overlook because the region is not associated with technology jobs.
+Westland has no railway station, so most people commute by car, bike or bus. The region borders The Hague and is close to Delft, Maassluis and Rotterdam, with typical travel times of twenty to thirty minutes from these cities. For graduates of TU Delft or professionals living in The Hague, Westland companies are often within cycling or short driving distance - a fact that many overlook because the region is not associated with technology jobs.
 
 ## Career Growth in Horticultural Technology
 
@@ -138,7 +138,7 @@ Westland companies sell their technology and knowledge worldwide, which gives ca
 
 Greenhouse horticulture has long depended on a large workforce for harvesting, deleafing, packing and plant handling, a significant share of which consists of labour migrants from other European countries. Recruiting and housing enough workers has become increasingly difficult, and labour costs weigh heavily on growers' margins. This is one of the strongest drivers of investment in robotics, automated logistics inside greenhouses and data-driven planning of labour.
 
-For data professionals, this has two consequences. First, many AI projects in the region have a very concrete business case: reducing dependence on scarce labour. Second, automation is often introduced step by step — a robot that performs one task in one crop, a planning tool that predicts how many workers are needed next week. Engineers who can deliver these practical, incremental improvements are more valuable to growers than those promising fully autonomous greenhouses tomorrow.
+For data professionals, this has two consequences. First, many AI projects in the region have a very concrete business case: reducing dependence on scarce labour. Second, automation is often introduced step by step - a robot that performs one task in one crop, a planning tool that predicts how many workers are needed next week. Engineers who can deliver these practical, incremental improvements are more valuable to growers than those promising fully autonomous greenhouses tomorrow.
 
 Workforce-related data also needs care. Labour planning and productivity measurement involve personal data about workers, and in companies with a works council, introducing systems that monitor employees generally requires the council's consent under Dutch law.
 
@@ -167,10 +167,10 @@ Browse current AI, machine learning and data jobs in and around Westland at [onl
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who associates horticulture with low tech) Is greenhouse horticulture really a technology sector?
-Yes — modern greenhouses use climate computers, sensors, automated irrigation, LED lighting and increasingly AI-based control and robotics.
+Yes - modern greenhouses use climate computers, sensors, automated irrigation, LED lighting and increasingly AI-based control and robotics.
 
 ### (Scenario: candidate interested in reinforcement learning) Is autonomous greenhouse control a real application?
-Yes — research competitions and commercial developments have shown AI-based climate control, although adoption depends on growers' trust.
+Yes - research competitions and commercial developments have shown AI-based climate control, although adoption depends on growers' trust.
 
 ### (Scenario: bioinformatician) What data work exists in plant breeding?
 Genomic prediction, phenotyping image analysis, trial statistics and management of large genotype datasets.
@@ -179,18 +179,18 @@ Genomic prediction, phenotyping image analysis, trial statistics and management 
 Occluded fruits, variable lighting, plant variation and the need to operate fast and reliably enough to be economically viable.
 
 ### (Scenario: candidate living in The Hague or Delft) Is Westland within commuting distance?
-Yes — Westland borders The Hague and is typically twenty to thirty minutes from Delft and Rotterdam, mainly by car, bike or bus.
+Yes - Westland borders The Hague and is typically twenty to thirty minutes from Delft and Rotterdam, mainly by car, bike or bus.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is greenhouse horticulture really a technology sector?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — climate computers, sensors, automation, lighting and increasingly AI-based control and robotics."}},
-    {"@type": "Question", "name": "Is autonomous greenhouse control a real application?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — research competitions and commercial developments show AI-based climate control, with adoption depending on trust."}},
+    {"@type": "Question", "name": "Is greenhouse horticulture really a technology sector?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - climate computers, sensors, automation, lighting and increasingly AI-based control and robotics."}},
+    {"@type": "Question", "name": "Is autonomous greenhouse control a real application?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - research competitions and commercial developments show AI-based climate control, with adoption depending on trust."}},
     {"@type": "Question", "name": "What data work exists in plant breeding?", "acceptedAnswer": {"@type": "Answer", "text": "Genomic prediction, phenotyping image analysis, trial statistics and genotype data management."}},
     {"@type": "Question", "name": "What makes greenhouse robotics difficult?", "acceptedAnswer": {"@type": "Answer", "text": "Occlusion, variable lighting, plant variation and economic viability requirements."}},
-    {"@type": "Question", "name": "Is Westland within commuting distance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it borders The Hague and is twenty to thirty minutes from Delft and Rotterdam."}}
+    {"@type": "Question", "name": "Is Westland within commuting distance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it borders The Hague and is twenty to thirty minutes from Delft and Rotterdam."}}
   ]
 }
 </script>

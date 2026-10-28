@@ -76,7 +76,7 @@ Several international IT and business service centres operate in Debrecen, provi
 
 ## Pay, Language and Cost of Living
 
-Salaries in Debrecen are generally lower than in Budapest and well below Western Europe, but living costs — especially rent — are also lower. Salaries are paid in Hungarian forints, and Hungary has a flat personal income tax rate. Hungarian is the language of daily life; international companies and teams often work in English, and German is an asset with some automotive employers. International graduates of the University of Debrecen can find English-speaking roles, particularly in IT centres.
+Salaries in Debrecen are generally lower than in Budapest and well below Western Europe, but living costs - especially rent - are also lower. Salaries are paid in Hungarian forints, and Hungary has a flat personal income tax rate. Hungarian is the language of daily life; international companies and teams often work in English, and German is an asset with some automotive employers. International graduates of the University of Debrecen can find English-speaking roles, particularly in IT centres.
 
 ## Living in Debrecen
 
@@ -86,11 +86,11 @@ Debrecen is a green, relaxed city with a large student population, thermal baths
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Debrecen you will find few or no local vacancies there today. Use Hungarian job portals, the university's career services, company career pages and industry programmes as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where industrial and engineering employers such as Holland Innovative, VINCI Energies, Heijmans and Rexel list AI roles — and as a model for searching by category and real commute; factories on the city's industrial parks can be far from the centre. Debrecen employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Debrecen you will find few or no local vacancies there today. Use Hungarian job portals, the university's career services, company career pages and industry programmes as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where industrial and engineering employers such as Holland Innovative, VINCI Energies, Heijmans and Rexel list AI roles - and as a model for searching by category and real commute; factories on the city's industrial parks can be far from the centre. Debrecen employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Data in a Digital Factory
 
-Modern vehicle and battery plants are designed around data. Every production step — stamping, welding, painting, assembly, cell manufacturing, formation and testing — produces measurements. Digital factories connect these data to platforms where engineers monitor performance and data scientists build models. Typical graduate projects include building dashboards for production KPIs, developing anomaly detection for equipment, supporting computer vision inspection of parts, analysing energy use and linking quality data across process steps to find root causes of defects. Graduates learn to work with industrial data sources, time series, image data and the constraints of production environments, where reliability and safety come first.
+Modern vehicle and battery plants are designed around data. Every production step - stamping, welding, painting, assembly, cell manufacturing, formation and testing - produces measurements. Digital factories connect these data to platforms where engineers monitor performance and data scientists build models. Typical graduate projects include building dashboards for production KPIs, developing anomaly detection for equipment, supporting computer vision inspection of parts, analysing energy use and linking quality data across process steps to find root causes of defects. Graduates learn to work with industrial data sources, time series, image data and the constraints of production environments, where reliability and safety come first.
 
 ## Battery Production Analytics
 
@@ -104,7 +104,7 @@ Battery cell production is a complex electrochemical process in which small vari
 - **Reliability and documentation habits**, essential in industrial settings.
 - **English communication**, and ideally German or Hungarian.
 
-Projects using public industrial datasets — for example predictive maintenance or defect detection — are good portfolio items.
+Projects using public industrial datasets - for example predictive maintenance or defect detection - are good portfolio items.
 
 ## IT Service Centres as a Starting Point
 
@@ -124,7 +124,7 @@ Interviews for junior data roles in Debrecen typically include technical questio
 
 ## Your First Two Years
 
-Build strong foundations in data engineering and analysis, learn how factories and industrial systems work and develop one area of depth — such as time series, vision or data platforms. Improve your language skills if needed. Industrial data experience from Debrecen is transferable to manufacturing regions across Europe.
+Build strong foundations in data engineering and analysis, learn how factories and industrial systems work and develop one area of depth - such as time series, vision or data platforms. Improve your language skills if needed. Industrial data experience from Debrecen is transferable to manufacturing regions across Europe.
 
 ## Networking
 
@@ -140,7 +140,7 @@ Apply for internships with one manufacturer and one IT centre, build a portfolio
 
 ## Computer Vision for Quality Inspection
 
-One of the most common AI applications in Debrecen's factories is visual quality inspection. Cameras capture images of parts, welds, paint surfaces, battery electrodes or assembled components, and models detect defects that would be difficult or slow for humans to spot consistently. Graduates working on such projects learn to collect and label images of rare defects, handle variation in lighting and materials, evaluate models on metrics that matter to production — such as missed defects versus false alarms — and deploy models on industrial computers near the line. Because inspection decisions affect product quality and safety, models usually support rather than replace human inspectors, and changes follow strict procedures. The EU AI Act classifies AI systems used as safety components in certain regulated products as high-risk, which increases the importance of documentation and validation. Experience with industrial computer vision is highly transferable to manufacturing across Europe.
+One of the most common AI applications in Debrecen's factories is visual quality inspection. Cameras capture images of parts, welds, paint surfaces, battery electrodes or assembled components, and models detect defects that would be difficult or slow for humans to spot consistently. Graduates working on such projects learn to collect and label images of rare defects, handle variation in lighting and materials, evaluate models on metrics that matter to production - such as missed defects versus false alarms - and deploy models on industrial computers near the line. Because inspection decisions affect product quality and safety, models usually support rather than replace human inspectors, and changes follow strict procedures. The EU AI Act classifies AI systems used as safety components in certain regulated products as high-risk, which increases the importance of documentation and validation. Experience with industrial computer vision is highly transferable to manufacturing across Europe.
 
 ## Predictive Maintenance and Energy
 
@@ -156,7 +156,7 @@ When comparing offers, check the contract type, gross salary in forints, benefit
 
 ## International Students in Debrecen
 
-The University of Debrecen attracts many international students, particularly in medicine, engineering and informatics. International graduates who want to stay should explore employers that work in English — typically IT service centres and international manufacturing teams — and check permit requirements for non-EU citizens. Learning basic Hungarian improves daily life and shows commitment to employers.
+The University of Debrecen attracts many international students, particularly in medicine, engineering and informatics. International graduates who want to stay should explore employers that work in English - typically IT service centres and international manufacturing teams - and check permit requirements for non-EU citizens. Learning basic Hungarian improves daily life and shows commitment to employers.
 
 ## Responsible AI in Industry
 

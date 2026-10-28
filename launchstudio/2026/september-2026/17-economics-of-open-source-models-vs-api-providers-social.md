@@ -1,6 +1,6 @@
-🚨 James, a medical tech founder, used **Bolt** to build a patient notes summarizer — but data privacy regulations prohibited sending documents to public API endpoints, blocking him from onboarding a single clinic. 🏥
+🚨 James, a medical tech founder, used **Bolt** to build a patient notes summarizer - but data privacy regulations prohibited sending documents to public API endpoints, blocking him from onboarding a single clinic. 🏥
 
-Sometimes the closed-API-vs-open-source decision isn't about cost at all — it's about compliance, and a public endpoint simply isn't an option. 🧠
+Sometimes the closed-API-vs-open-source decision isn't about cost at all - it's about compliance, and a public endpoint simply isn't an option. 🧠
 
 ❌ Public API endpoints that regulated clients like healthcare providers explicitly forbid
 ❌ Assuming self-hosting is automatically cheaper, when fixed GPU costs can dwarf token savings at low scale

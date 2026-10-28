@@ -70,9 +70,9 @@ This is also why jobs need a timeout and an alert on duration: a job that grows 
 
 ## Failure Four: Time Zones and the Clock Change
 
-The Netherlands moves between central European time and summer time twice a year, and jobs configured in local time behave strangely on those two nights — an hour skipped, or an hour repeated, which for a job scheduled at 02:30 means either not running or running twice.
+The Netherlands moves between central European time and summer time twice a year, and jobs configured in local time behave strangely on those two nights - an hour skipped, or an hour repeated, which for a job scheduled at 02:30 means either not running or running twice.
 
-The fix is to schedule in a fixed reference time, usually coordinated universal time, and convert for display rather than for scheduling. If your job genuinely must run at a local hour — a summary that should arrive before a working day starts — make the conversion explicit and test both transitions.
+The fix is to schedule in a fixed reference time, usually coordinated universal time, and convert for display rather than for scheduling. If your job genuinely must run at a local hour - a summary that should arrive before a working day starts - make the conversion explicit and test both transitions.
 
 ## Schedules Versus Queues
 
@@ -82,7 +82,7 @@ A distinction worth understanding, because it determines which failures you get.
 
 **Queued work** happens in response to an event, deferred so the user does not wait: sending an email after signup, generating a thumbnail after upload, calling a slow third party. Failures look like a backlog.
 
-Queues need their own monitoring — depth, age of the oldest item, failure counts — and their own dead-letter handling so that one poisonous item does not block everything behind it. AI-built products rarely have either, because generation produces the happy path and nothing that inspects it.
+Queues need their own monitoring - depth, age of the oldest item, failure counts - and their own dead-letter handling so that one poisonous item does not block everything behind it. AI-built products rarely have either, because generation produces the happy path and nothing that inspects it.
 
 ## Making Jobs Safe
 
@@ -124,7 +124,7 @@ If something in your product happens on a schedule and you are not certain it ha
 
 ## Queues Need Their Own Attention
 
-If your product defers work rather than scheduling it — sending an email after signup, generating a thumbnail after upload, calling a slow third party — the failure modes differ from scheduled jobs and need their own handling.
+If your product defers work rather than scheduling it - sending an email after signup, generating a thumbnail after upload, calling a slow third party - the failure modes differ from scheduled jobs and need their own handling.
 
 **Depth is the primary signal.** A queue that normally holds a handful of items and now holds four thousand is telling you something is stuck or something upstream has spiked. Alert on depth, not only on errors.
 
@@ -150,18 +150,18 @@ The consequences arrived slowly: late returns climbed because customers had stop
 
 Five business days of work: an inventory identifying seven scheduled jobs, three of which nobody remembered existed and one of which had never run successfully; heartbeat monitoring on all seven with alerts when a successful run is overdue; idempotency added so a repeated run cannot duplicate reminders or charges; locking to prevent overlap; batching and resumability on the reconciliation job, which had grown past its execution window; scheduling moved to a fixed reference time after the March clock change had caused an earlier double-send; and a manual trigger for each job.
 
-**Result:** two subsequent job failures — a credential rotation and a provider timeout — were detected within an hour instead of weeks, and late returns fell back to their previous level within a fortnight.
+**Result:** two subsequent job failures - a credential rotation and a provider timeout - were detected within an hour instead of weeks, and late returns fell back to their previous level within a fortnight.
 
 > *"My app was up the whole time. It just quietly stopped doing three of the things it was for, and nothing anywhere was capable of telling me."*
-> — **Steven Bogaerts, Founder, Huurmaat (Arnhem)**
+> - **Steven Bogaerts, Founder, Huurmaat (Arnhem)**
 
-**Cost & Timeline:** €2,400 (job inventory, heartbeat monitoring, idempotency and locking, batching, manual triggers) — completed in 5 business days.
+**Cost & Timeline:** €2,400 (job inventory, heartbeat monitoring, idempotency and locking, batching, manual triggers) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### Why does uptime monitoring not catch a failed scheduled job?
 
-Because uptime checks whether your app responds to a request. A scheduled job failing produces no request and no response — the symptom is that something did not happen, which requires monitoring absence rather than presence.
+Because uptime checks whether your app responds to a request. A scheduled job failing produces no request and no response - the symptom is that something did not happen, which requires monitoring absence rather than presence.
 
 ### What is a heartbeat check?
 
@@ -189,7 +189,7 @@ Yes, on two counts: it may overlap with its next execution, and the growth tells
       "name": "Why does uptime monitoring not catch a failed scheduled job?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uptime checks whether the app responds to requests. A failed scheduled job produces no request — the symptom is an absence, which requires monitoring for missing success reports."
+        "text": "Uptime checks whether the app responds to requests. A failed scheduled job produces no request - the symptom is an absence, which requires monitoring for missing success reports."
       }
     },
     {
@@ -221,7 +221,7 @@ Yes, on two counts: it may overlap with its next execution, and the growth tells
       "name": "My job used to finish in minutes and now takes an hour. Is that a problem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — it may overlap its next run and signals data growth beyond its design. Add locking, bounded batches and a duration alert."
+        "text": "Yes - it may overlap its next run and signals data growth beyond its design. Add locking, bounded batches and a duration alert."
       }
     }
   ]

@@ -20,7 +20,7 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Open de belangrijkste lijstpagina van een door AI gebouwd product en kijk naar het netwerktabblad. In een groot deel ervan ziet u één verzoek dat elke rij van het account teruggeeft — vierhonderd, negenduizend, wat er ook bestaat — waarna de browser filtert, sorteert en er twintig van toont.
+Open de belangrijkste lijstpagina van een door AI gebouwd product en kijk naar het netwerktabblad. In een groot deel ervan ziet u één verzoek dat elke rij van het account teruggeeft - vierhonderd, negenduizend, wat er ook bestaat - waarna de browser filtert, sorteert en er twintig van toont.
 
 Het werkt. In het begin is het snel. En het gaat langs drie assen tegelijk achteruit: de database leest meer, het netwerk verstuurt meer, en de browser houdt meer in het geheugen, totdat een telefoon in de trein de pagina helemaal niet meer kan openen.
 
@@ -34,13 +34,13 @@ Het probleem zit in wat overslaan betekent. Om rij 8.001 tot 8.020 gesorteerd op
 
 Voor de meeste producten doet dit er nooit toe, omdat niemand pagina 400 bezoekt en omdat hun tabellen klein zijn. Het doet ertoe in drie specifieke gevallen: een export of synchronisatie die in een lus elke pagina doorloopt, een lijst die zo is gesorteerd dat de interessante rijen aan het eind staan, en een tabel die voorbij een paar honderdduizend rijen is gegroeid.
 
-Er is een tweede, subtieler probleem. Offsets zijn instabiel. Wordt er een rij ingevoegd terwijl iemand aan het pagineren is, dan schuift alles één plek op — zodat een item op twee opeenvolgende pagina's kan verschijnen, of helemaal kan worden overgeslagen. Voor een mens die doorklikt is het een curiositeit. Voor een taak die elke pagina in een ander systeem importeert, is het stil dataverlies.
+Er is een tweede, subtieler probleem. Offsets zijn instabiel. Wordt er een rij ingevoegd terwijl iemand aan het pagineren is, dan schuift alles één plek op - zodat een item op twee opeenvolgende pagina's kan verschijnen, of helemaal kan worden overgeslagen. Voor een mens die doorklikt is het een curiositeit. Voor een taak die elke pagina in een ander systeem importeert, is het stil dataverlies.
 
 ## Cursorpaginering, Eén Keer Uitgelegd
 
 Het alternatief stelt een andere vraag. In plaats van "sla 8.000 rijen over" zegt het "geef me de volgende 20 rijen na deze specifieke rij".
 
-De cursor is de sorteersleutel van de laatste rij die u zag — doorgaans een tijdstempel en een identificatie om gelijke waarden uit elkaar te houden. De volgende pagina is een eenvoudig filter, dat een index direct beantwoordt, hoe diep u ook bent. Pagina 400 kost evenveel als pagina 1, en rijen kunnen niet worden gedupliceerd of overgeslagen door inserts die elders plaatsvinden.
+De cursor is de sorteersleutel van de laatste rij die u zag - doorgaans een tijdstempel en een identificatie om gelijke waarden uit elkaar te houden. De volgende pagina is een eenvoudig filter, dat een index direct beantwoordt, hoe diep u ook bent. Pagina 400 kost evenveel als pagina 1, en rijen kunnen niet worden gedupliceerd of overgeslagen door inserts die elders plaatsvinden.
 
 De prijs is dat u niet naar een willekeurig paginanummer kunt springen, omdat de cursor alleen de rij kent die u net zag. In de praktijk past dat bij de meeste productinterfaces, die meer-ladenknoppen of oneindig scrollen gebruiken in plaats van genummerde pagina's.
 
@@ -50,7 +50,7 @@ De vuistregel: genummerde pagina's met offsets voor beheerschermen over bescheid
 
 Beide benaderingen breken op dezelfde manier als de sorteervolgorde dubbelzinnig is.
 
-Alleen sorteren op aanmaakdatum is niet genoeg, omdat twee rijen dezelfde tijdstempel kunnen hebben — en als dat zo is, mag de database ze elke keer in een andere volgorde teruggeven. Met offsets levert dat rijen op die twee keer verschijnen over pagina's heen. Met cursors levert het een paginagrens op die een rij verliest of herhaalt.
+Alleen sorteren op aanmaakdatum is niet genoeg, omdat twee rijen dezelfde tijdstempel kunnen hebben - en als dat zo is, mag de database ze elke keer in een andere volgorde teruggeven. Met offsets levert dat rijen op die twee keer verschijnen over pagina's heen. Met cursors levert het een paginagrens op die een rij verliest of herhaalt.
 
 Sorteer altijd op iets unieks als beslisser: de datum, dan de identificatie. De index moet precies met die volgorde overeenkomen, en de cursor moet beide waarden meedragen.
 
@@ -60,9 +60,9 @@ Dit is een wijziging van twee minuten die een hele categorie meldingen als "soms
 
 De pagineringsvraag sleept altijd een tweede vraag mee: het totaal tonen.
 
-Een telling over een grote gefilterde tabel is vaak duurder dan het ophalen van de pagina, en ze draait bij elke paginalading. Voor de meeste interfaces is het totaal decoratie — gebruikers willen de eerste twintig resultaten en een manier om verder te gaan, niet weten dat het er 8.412 zijn.
+Een telling over een grote gefilterde tabel is vaak duurder dan het ophalen van de pagina, en ze draait bij elke paginalading. Voor de meeste interfaces is het totaal decoratie - gebruikers willen de eerste twintig resultaten en een manier om verder te gaan, niet weten dat het er 8.412 zijn.
 
-Drie verstandige opties. Laat het weg, en gebruik een volgende-knop die verschijnt als er meer rijen zijn — wat u kunt bepalen door één rij meer op te vragen dan u toont. Schat het, met de eigen statistieken van de database, en markeer het als benadering. Of houd bewust een teller bij voor de ene plek waar het echt telt.
+Drie verstandige opties. Laat het weg, en gebruik een volgende-knop die verschijnt als er meer rijen zijn - wat u kunt bepalen door één rij meer op te vragen dan u toont. Schat het, met de eigen statistieken van de database, en markeer het als benadering. Of houd bewust een teller bij voor de ene plek waar het echt telt.
 
 De goedkope truc is het noemen waard: vraag 21 rijen op, toon er 20, en het bestaan van de 21e vertelt u dat er een volgende pagina is. Geen telling, geen extra query.
 
@@ -72,11 +72,11 @@ Een lijstpagina waarop gebruikers kunnen filteren en sorteren, is eigenlijk een 
 
 Wees bewust in wat u aanbiedt. Drie nuttige filters en twee sorteervolgordes, elk ondersteund door een passende index, levert een snelle pagina op. Twaalf filters in willekeurige combinaties levert een pagina op die snel is in de combinaties die u testte en traag in degene die klanten gebruiken.
 
-Gebruik voor zoeken in tekst geen patroonvergelijking met een wildcard vooraan — die kan geen gewone index gebruiken en leest de tabel. Postgres heeft echte full-text search, en die invoeren voor het ene veld waarop mensen zoeken, is meestal een uur werk.
+Gebruik voor zoeken in tekst geen patroonvergelijking met een wildcard vooraan - die kan geen gewone index gebruiken en leest de tabel. Postgres heeft echte full-text search, en die invoeren voor het ene veld waarop mensen zoeken, is meestal een uur werk.
 
 ## Oneindig Scrollen Heeft Eigen Kosten
 
-Blijft de interface rijen toevoegen terwijl de gebruiker scrollt, dan stapelt de browser elke opgehaalde rij op. Vierhonderd rijen met rijke lijstitems is een pagina die hapert op een middenklasse telefoon, en de gebruiker koos daar niet voor — hij bleef gewoon scrollen.
+Blijft de interface rijen toevoegen terwijl de gebruiker scrollt, dan stapelt de browser elke opgehaalde rij op. Vierhonderd rijen met rijke lijstitems is een pagina die hapert op een middenklasse telefoon, en de gebruiker koos daar niet voor - hij bleef gewoon scrollen.
 
 Twee maatregelen, in volgorde van moeite. Houd de rijen licht: vermijd zware componenten per rij en laad afbeeldingen lazy op het formaat dat werkelijk wordt getoond. En worden lijsten echt lang, render dan alleen wat zichtbaar is, wat goed wordt ondersteund door bibliotheken en het punt is waarop oneindig scrollen niet langer gratis is.
 
@@ -86,17 +86,17 @@ Geef mensen ook een uitweg. Een filter of een zoekvak is een beter antwoord dan 
 
 De plek waar offsets de meeste schade aanrichten, is de export waar niemand aan denkt als lijstpagina.
 
-Een CSV van alles, opgebouwd door alle rijen tegelijk op te halen, werkt totdat een klant genoeg data heeft om het geheugen uit te putten of een time-out te overschrijden — en ze faalt voor uw grootste klant, degene die u het minst wilt teleurstellen.
+Een CSV van alles, opgebouwd door alle rijen tegelijk op te halen, werkt totdat een klant genoeg data heeft om het geheugen uit te putten of een time-out te overschrijden - en ze faalt voor uw grootste klant, degene die u het minst wilt teleurstellen.
 
-Loop de data door met een cursor, stream die gaandeweg naar de client of naar een bestand, en genereer alles wat echt groot is op de achtergrond en stuur een link als het klaar is. De middelste optie — streamen — is meestal genoeg en een kleine wijziging ten opzichte van wat er al is.
+Loop de data door met een cursor, stream die gaandeweg naar de client of naar een bestand, en genereer alles wat echt groot is op de achtergrond en stuur een link als het klaar is. De middelste optie - streamen - is meestal genoeg en een kleine wijziging ten opzichte van wat er al is.
 
 ## Paginering Hoort bij de API, Niet bij de Pagina
 
 Eén ontwerpbeslissing bespaart later veel herwerk: maak de begrensde pagina overal de vorm van uw datatoegang, niet iets wat u aan één scherm hebt toegevoegd.
 
-Is records ophalen altijd "geef me een pagina, hier is de cursor", dan erft elke afnemer dat — het lijstscherm, de mobiele weergave die u volgend jaar bouwt, de export, de API voor klanten, de interne beheertool, de synchronisatie met iemands boekhoudpakket. Is de standaard in plaats daarvan "haal alles op", met paginering vastgeplakt aan de ene pagina die traag werd, dan begint elke nieuwe afnemer bij de onbegrensde versie en wordt het probleem telkens opnieuw ontdekt.
+Is records ophalen altijd "geef me een pagina, hier is de cursor", dan erft elke afnemer dat - het lijstscherm, de mobiele weergave die u volgend jaar bouwt, de export, de API voor klanten, de interne beheertool, de synchronisatie met iemands boekhoudpakket. Is de standaard in plaats daarvan "haal alles op", met paginering vastgeplakt aan de ene pagina die traag werd, dan begint elke nieuwe afnemer bij de onbegrensde versie en wordt het probleem telkens opnieuw ontdekt.
 
-In de praktijk betekent dit dat de functie die uw applicatie aanroept om records te lezen een limiet en een cursor aanneemt, en geen modus heeft die alles teruggeeft. Code die echt alle rijen nodig heeft — een nachtelijke taak, een migratie — loopt expliciet door pagina's, wat zowel eerlijk is over wat ze doet als veilig terwijl de data groeit.
+In de praktijk betekent dit dat de functie die uw applicatie aanroept om records te lezen een limiet en een cursor aanneemt, en geen modus heeft die alles teruggeeft. Code die echt alle rijen nodig heeft - een nachtelijke taak, een migratie - loopt expliciet door pagina's, wat zowel eerlijk is over wat ze doet als veilig terwijl de data groeit.
 
 Hetzelfde geldt voor alles wat u aan klanten beschikbaar stelt. Een endpoint zonder maximale paginagrootte is een endpoint waar één klant honderdduizend rijen van opvraagt, in een lus, vanuit een script dat hij om half vijf op een vrijdag schreef. Stel een plafond in, documenteer het, en geef de cursor terug in het antwoord, zodat het juiste gebruik ook het makkelijke gebruik is.
 
@@ -114,7 +114,7 @@ LaunchStudio doet dit als onderdeel van prestatiewerk, meestal samen met indexer
 
 Rutger Doedens bouwde Urenstaat met Lovable: urenregistratie en projecturen voor ingenieursbureaus, 34 bureaus, de grootste met 90 consultants.
 
-In dezelfde twee weken kwamen er twee klachten binnen. Het urenoverzicht deed er elf seconden over om te laden voor dat grootste bureau, en was voor iedereen anders direct beschikbaar. En de maandelijkse export — waarmee elk bureau op de eerste werkdag zijn klanten factureert — faalde voor datzelfde bureau met een time-out, elke maand, wat ze omzeilden door per week te exporteren.
+In dezelfde twee weken kwamen er twee klachten binnen. Het urenoverzicht deed er elf seconden over om te laden voor dat grootste bureau, en was voor iedereen anders direct beschikbaar. En de maandelijkse export - waarmee elk bureau op de eerste werkdag zijn klanten factureert - faalde voor datzelfde bureau met een time-out, elke maand, wat ze omzeilden door per week te exporteren.
 
 Beide hadden dezelfde oorzaak. Het overzicht haalde elke urenregel van het bureau op en pagineerde in de browser: 240.000 rijen voor het grote bureau, 3.000 voor een gemiddeld bureau. De export deed hetzelfde en bouwde dan een CSV in het geheugen.
 
@@ -123,9 +123,9 @@ Eén werkdag: het overzicht omgezet naar cursorpaginering op tijdstempel en iden
 **Resultaat:** het overzicht ging van 11 seconden naar 240 milliseconden voor het grootste bureau, en de maandelijkse export was in 9 seconden klaar in plaats van te falen. Rutgers grootste klant stopte met per week exporteren, en noemde dat bij de verlenging.
 
 > *"Mijn ergste prestatieproblemen zaten allemaal in het account van mijn beste klant. Zij waren de enigen met genoeg data om ze te vinden, en de laatsten die ik ze wilde laten vinden."*
-> — **Rutger Doedens, Oprichter, Urenstaat (Enschede)**
+> - **Rutger Doedens, Oprichter, Urenstaat (Enschede)**
 
-**Kosten & Doorlooptijd:** €1.900 (cursorpaginering met samengestelde index, volledige sortering, verwijderen van tellingen, herzien van filters en zoeken, streamende export met generatie op de achtergrond, controle onder belasting met geseed volume) — afgerond in 1 werkdag.
+**Kosten & Doorlooptijd:** €1.900 (cursorpaginering met samengestelde index, volledige sortering, verwijderen van tellingen, herzien van filters en zoeken, streamende export met generatie op de achtergrond, controle onder belasting met geseed volume) - afgerond in 1 werkdag.
 
 ## Veelgestelde vragen
 

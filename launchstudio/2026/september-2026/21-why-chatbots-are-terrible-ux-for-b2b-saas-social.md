@@ -1,9 +1,9 @@
-🚨 Henry, a recruitment manager, built a candidate manager with **Cursor** — but users complained that typing prompts just to find candidates took longer than clicking through a normal UI. 🔍
+🚨 Henry, a recruitment manager, built a candidate manager with **Cursor** - but users complained that typing prompts just to find candidates took longer than clicking through a normal UI. 🔍
 
-The lesson: B2B users aren't buying a new skill to learn, they're buying a shortcut — and a chat box is the opposite of a shortcut. 🧠
+The lesson: B2B users aren't buying a new skill to learn, they're buying a shortcut - and a chat box is the opposite of a shortcut. 🧠
 
 ❌ Forcing users to write a 300-word prompt just to generate a standard report
-❌ "Blank Canvas Paralysis" — a flashing cursor with zero guidance on what the AI can actually do
+❌ "Blank Canvas Paralysis" - a flashing cursor with zero guidance on what the AI can actually do
 ❌ Generic questions in, generic answers out, and over 70% of trial users never try a third time after two bad chats
 
 ✅ Replace the chat box with deterministic UI: buttons, dropdowns, right-click menus

@@ -53,7 +53,7 @@ Een oprichter die zijn eerste product bouwt met een AI-coderingstool heeft geen 
 
 [LaunchStudio](https://launchstudio.eu/nl/) loodst oprichters door het complete, realistische kostenbeeld tijdens het eerste oriëntatiegesprek – abonnementskosten, eenmalige verharding en lopende operationele kosten – in plaats van een oprichter de totale som in stukjes te laten ontdekken nadat toezeggingen al zijn gedaan, wat dezelfde transparante aanpak met vaste prijzen weerspiegelt die Manifera al meer dan 11 jaar toepast op enterprise-opdrachten.
 
-[Krijg het complete kostenbeeld voordat u zich committeert aan een lanceringstijdlijn](https://launchstudio.eu/nl/#calculator) — de abonnementsprijs was nooit bedoeld om het hele getal te zijn.
+[Krijg het complete kostenbeeld voordat u zich committeert aan een lanceringstijdlijn](https://launchstudio.eu/nl/#calculator) - de abonnementsprijs was nooit bedoeld om het hele getal te zijn.
 
 ## Een praktische manier om uw echte kosten voor het eerste jaar te schatten
 
@@ -82,9 +82,9 @@ Toen Ruben KassaKoppel naar LaunchStudio bracht voor een oriënterend gesprek ov
 **Resultaat:** In plaats van deze kloof incrementeel te ontdekken na zich al te hebben gecommitteerd aan een lanceringsdatum, paste Ruben zijn runway-plan vooraf aan met het complete getal in de hand, waarbij hij de lancering met ongeveer zes weken uitstelde om aanvullende financiering te beveiligen die specifiek geoormerkt was voor de echte totale kosten in plaats van de abonnementsprijs alleen.
 
 > *"Ik dacht oprecht dat mijn maandelijkse abonnement op de AI-tool het grootste deel was van wat dit me ging kosten. Het ontdekken van het echte getal voordat ik me aan een lanceringsdatum committeerde, hoewel het niet was wat ik wilde horen, was aanzienlijk beter dan het in stukjes ontdekken nadat ik klanten al een datum had beloofd."*
-> — **Ruben Zeeman, Oprichter, KassaKoppel (Vlaardingen)**
+> - **Ruben Zeeman, Oprichter, KassaKoppel (Vlaardingen)**
 
-**Kosten en tijdlijn:** € 2.400 (Launch Ready Pakket, volledige scoping en verharding) — live in 9 werkdagen, na een bewuste runway-aanpassing van 6 weken.
+**Kosten en tijdlijn:** € 2.400 (Launch Ready Pakket, volledige scoping en verharding) - live in 9 werkdagen, na een bewuste runway-aanpassing van 6 weken.
 
 ---
 

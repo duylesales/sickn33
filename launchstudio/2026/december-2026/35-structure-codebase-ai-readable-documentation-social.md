@@ -6,14 +6,14 @@ If you keep building with Cursor/Lovable/Bolt after launch, your codebase's docu
 ❌ Inconsistent patterns = AI can't infer the right way to do things
 ❌ No architecture overview = AI missing crucial context every single prompt
 
-The fix — document for AI, not just humans: ✅
+The fix - document for AI, not just humans: ✅
 ✅ Explicit comments explaining WHY, not just what
 ✅ Consistent patterns across the whole codebase
 ✅ A living architecture overview document
 ✅ Clear API and data model documentation
-✅ One root `AGENTS.md`/`CLAUDE.md` file — most AI tools auto-read it every session, no prompting needed
+✅ One root `AGENTS.md`/`CLAUDE.md` file - most AI tools auto-read it every session, no prompting needed
 
-At **LaunchStudio**, all code ships documented and AI-readable — because most clients keep building with AI tools after we hand off. Backed by Manifera's discipline across 160+ projects. 🛡️
+At **LaunchStudio**, all code ships documented and AI-readable - because most clients keep building with AI tools after we hand off. Backed by Manifera's discipline across 160+ projects. 🛡️
 
 Her result: Cursor suggestions got noticeably more accurate. 3 new features, self-built, in 2 months. 🚀
 

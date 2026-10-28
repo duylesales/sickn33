@@ -97,7 +97,7 @@ Bordeaux combines a beautiful historic centre, a lively food and wine culture an
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Bordeaux you will find few or no local vacancies there today. Use French job portals, APEC, company career pages and Inria and university vacancy lists as primary sources. OnlyAIJobs is useful for comparing Bordeaux with the Netherlands — where engineering and e-commerce employers such as Holland Innovative, Sendcloud, Cegeka and Accenture list AI roles — and as a method: in a metropolitan area where aerospace sites, laser facilities and offices are spread far apart, searching by real commute is essential. Bordeaux employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Bordeaux you will find few or no local vacancies there today. Use French job portals, APEC, company career pages and Inria and university vacancy lists as primary sources. OnlyAIJobs is useful for comparing Bordeaux with the Netherlands - where engineering and e-commerce employers such as Holland Innovative, Sendcloud, Cegeka and Accenture list AI roles - and as a method: in a metropolitan area where aerospace sites, laser facilities and offices are spread far apart, searching by real commute is essential. Bordeaux employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## AI in Aircraft Design and Maintenance
 
@@ -150,7 +150,7 @@ Bordeaux suits engineers who want AI work in aerospace, e-commerce or photonics,
 
 ## Skills That Stand Out
 
-Bordeaux employers value engineers who combine ML with physics and engineering — surrogate modelling, time series, computer vision for inspection and embedded deployment — as well as product ML skills for e-commerce. Rigorous documentation and testing practices are essential in aerospace and defence, where models must be traceable and validated. Strong French communication and the ability to work with engineers and certification specialists make a significant difference in career progression. Knowledge of the EU AI Act is increasingly relevant for AI components in regulated products.
+Bordeaux employers value engineers who combine ML with physics and engineering - surrogate modelling, time series, computer vision for inspection and embedded deployment - as well as product ML skills for e-commerce. Rigorous documentation and testing practices are essential in aerospace and defence, where models must be traceable and validated. Strong French communication and the ability to work with engineers and certification specialists make a significant difference in career progression. Knowledge of the EU AI Act is increasingly relevant for AI components in regulated products.
 
 ## Health and Neuroscience Research
 
@@ -166,7 +166,7 @@ Visit the site where you would work before accepting; in Bordeaux, a campus in M
 
 A data scientist working on aircraft maintenance analytics in Toulouse receives an offer from an aerospace company near Bordeaux to lead a small team working on predictive maintenance for business jets. The role involves close collaboration with engineers, customers and certification experts.
 
-He compares the offer with his current salary, investigates housing in the western suburbs near the site and checks whether the role requires security clearance — it does not, although some neighbouring projects do. He accepts. After a year, he says the team's small size gives him more ownership than in his previous role, and his family enjoys weekends on the Atlantic coast.
+He compares the offer with his current salary, investigates housing in the western suburbs near the site and checks whether the role requires security clearance - it does not, although some neighbouring projects do. He accepts. After a year, he says the team's small size gives him more ownership than in his previous role, and his family enjoys weekends on the Atlantic coast.
 
 ## Key Takeaways
 

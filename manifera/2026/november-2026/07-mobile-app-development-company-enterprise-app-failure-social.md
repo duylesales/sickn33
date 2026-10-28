@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Tightly Coupled Mobile Monoliths:** Low-tier agencies treat mobile apps like static websites. They execute network requests directly on the main UI thread.
-❌ **Memory Leaks & App Store Rating Plunge:** As soon as your app hits real-world conditions—poor 4G connections, older Android devices, large dataset payloads—it collapses. The UI freezes (Application Not Responding errors), memory leaks trigger silent crashes, and your users are met with endless loading spinners.
+❌ **Memory Leaks & App Store Rating Plunge:** As soon as your app hits real-world conditions - poor 4G connections, older Android devices, large dataset payloads - it collapses. The UI freezes (Application Not Responding errors), memory leaks trigger silent crashes, and your users are met with endless loading spinners.
 ❌ **Dual-Codebase Inefficiency Tax:** Traditional vendors sell junior headcount without architectural maturity, forcing your senior in-house architects to spend 60% of their time fixing low-quality code.
 
 **The Manifera Solution:**

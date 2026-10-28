@@ -34,7 +34,7 @@ Zes, en elk is een functieverzoek in juridische kleding.
 
 **Data-export.** Meestal in een gestructureerd, gangbaar formaat. Een klant die recht heeft op zijn data in machineleesbare vorm, heeft een export nodig die u hebt gebouwd, geen databasedump die u met de hand maakt.
 
-**Melding van datalekken.** Vaak "zonder onredelijke vertraging" en regelmatig een specifiek aantal uren — 24 of 48 is gebruikelijk, krapper dan de 72 uur van de toezichthouder zelf. Om dat te halen moet u een lek kunnen detecteren, wat logging en meldingen betekent in plaats van goede bedoelingen.
+**Melding van datalekken.** Vaak "zonder onredelijke vertraging" en regelmatig een specifiek aantal uren - 24 of 48 is gebruikelijk, krapper dan de 72 uur van de toezichthouder zelf. Om dat te halen moet u een lek kunnen detecteren, wat logging en meldingen betekent in plaats van goede bedoelingen.
 
 **Hulp bij rechten van betrokkenen.** U moet de verwerkingsverantwoordelijke helpen verzoeken om inzage, correctie en verwijdering te beantwoorden, binnen hun termijn. In de praktijk betekent dit de functies die de klant zelf kan bedienen, zoals elders in deze reeks beschreven.
 
@@ -48,7 +48,7 @@ Een kleine leverancier kan over meer onderhandelen dan oprichters verwachten, vo
 
 **Auditrechten ter plaatse.** Veel sjablonen staan de klant toe uw bedrijf op elk moment te auditen. Voor een eenmanszaak is dat onpraktisch. Een redelijk tegenvoorstel: audits voldaan via documentatie en een samenvattend rapport van uw jaarlijkse beveiligingstest, met bezoeken ter plaatse beperkt tot één keer per jaar, met aankondiging en op kosten van de klant.
 
-**Onbeperkte aansprakelijkheid.** Onbegrensde blootstelling kan een bedrijf van uw omvang niet dragen, en verzekeraars prijzen het daarnaar. Een limiet gekoppeld aan de betaalde vergoedingen — twaalf maanden is een gebruikelijk eindpunt — is normale commerciële praktijk.
+**Onbeperkte aansprakelijkheid.** Onbegrensde blootstelling kan een bedrijf van uw omvang niet dragen, en verzekeraars prijzen het daarnaar. Een limiet gekoppeld aan de betaalde vergoedingen - twaalf maanden is een gebruikelijk eindpunt - is normale commerciële praktijk.
 
 **Meldtermijnen korter dan u kunt halen.** Zegt de clausule 24 uur en zou uw detectie realistisch langer duren, bouw dan de detectie of onderhandel over de termijn. Tekenen en hopen is de slechtste optie.
 
@@ -58,7 +58,7 @@ Een kleine leverancier kan over meer onderhandelen dan oprichters verwachten, vo
 
 De nuttigste stap is ophouden met reageren op de documenten van klanten.
 
-Maak uw eigen verwerkersovereenkomst — in het Nederlands als u aan Nederlandse bedrijven verkoopt — één keer beoordeeld door een gekwalificeerde jurist, en afgestemd op wat uw product werkelijk doet. Stuur haar mee met uw voorstel, voordat iemand erom vraagt.
+Maak uw eigen verwerkersovereenkomst - in het Nederlands als u aan Nederlandse bedrijven verkoopt - één keer beoordeeld door een gekwalificeerde jurist, en afgestemd op wat uw product werkelijk doet. Stuur haar mee met uw voorstel, voordat iemand erom vraagt.
 
 Drie voordelen. Het bepaalt het uitgangspunt, zodat onderhandelen begint bij voorwaarden die u kunt nakomen. Het verkort het proces aanzienlijk, omdat veel middelgrote klanten een redelijke leveranciersovereenkomst accepteren in plaats van op hun eigen versie te staan. En het straalt een volwassenheid uit die de meeste concurrenten van uw omvang niet uitstralen.
 
@@ -76,7 +76,7 @@ Houd haar actueel. Een bijlage met vijf subverwerkers terwijl u er zeven gebruik
 
 Een product met veertig klanten heeft veertig verwerkersovereenkomsten, mogelijk veertig varianten, en geen realistische manier om bij te houden wie waarmee instemde.
 
-Twee gewoontes houden dit beheersbaar. Standaardiseer: één overeenkomst, minimale variatie, met elke onderhandelde wijziging vastgelegd bij die klant. En houd een register bij — klant, getekende versie, datum, afwijkingen, verlenging — zodat u bij het wijzigen van een subverwerker weet wie moet worden geïnformeerd en onder welke voorwaarden.
+Twee gewoontes houden dit beheersbaar. Standaardiseer: één overeenkomst, minimale variatie, met elke onderhandelde wijziging vastgelegd bij die klant. En houd een register bij - klant, getekende versie, datum, afwijkingen, verlenging - zodat u bij het wijzigen van een subverwerker weet wie moet worden geïnformeerd en onder welke voorwaarden.
 
 Het alternatief, ontdekt op schaal, is dat een wijziging in uw infrastructuur betekent dat u veertig contracten moet lezen om te weten wat u beloofde.
 
@@ -88,7 +88,7 @@ Een verwerkersovereenkomst dekt persoonsgegevens. Ze dekt een aantal dingen niet
 
 **Support.** Reactietijden, kanalen, en wat telt als noodgeval.
 
-**Intellectueel eigendom en eigendom van data.** Wie de data van de klant bezit — zij — en wie de software bezit — u. Het duidelijk zeggen voorkomt een discussie die anders bij beëindiging plaatsvindt.
+**Intellectueel eigendom en eigendom van data.** Wie de data van de klant bezit - zij - en wie de software bezit - u. Het duidelijk zeggen voorkomt een discussie die anders bij beëindiging plaatsvindt.
 
 **Hulp bij vertrek naast data.** Sommige klanten hebben hulp bij migratie nodig, niet alleen een exportbestand. Of dat is inbegrepen of wordt gefactureerd, moet zijn opgeschreven voordat erom wordt gevraagd.
 
@@ -102,15 +102,15 @@ De bijlage met uw technische en organisatorische maatregelen is de clausule die 
 
 Schrijf haar over wat u hebt. Voor een klein product betekent dat echt zoiets als: data versleuteld tijdens transport en in opslag; toegang tot productie beperkt tot genoemde personen met tweestapsverificatie en vastgelegde toegang; autorisatie op rijniveau afgedwongen in de database; back-ups versleuteld, bewaard onder gescheiden inloggegevens, met twee keer per jaar een geteste herstelactie; afhankelijkheden automatisch gescand met beveiligingsupdates binnen een genoemde termijn toegepast; gestructureerde logging met een genoemde bewaartermijn; een jaarlijkse externe beveiligingsbeoordeling; en een gedocumenteerde incidentprocedure met benoemde verantwoordelijkheden.
 
-Elk daarvan is haalbaar voor een eenmanszaak en elk is controleerbaar. Dat is precies het punt — een bijlage die een beoordelaar kan verifiëren, is meer waard dan een indrukwekkende lijst waarvan hij vermoedt dat ze wensdenken is.
+Elk daarvan is haalbaar voor een eenmanszaak en elk is controleerbaar. Dat is precies het punt - een bijlage die een beoordelaar kan verifiëren, is meer waard dan een indrukwekkende lijst waarvan hij vermoedt dat ze wensdenken is.
 
-Twee regels. Noem geen maatregel die u niet hebt, want de bijlage wordt een contractuele belofte en het verschil tussen haar en de werkelijkheid is precies wat een incidentonderzoek bekijkt. En herzie haar jaarlijks, omdat ze afdrijft naarmate uw product verandert — meestal in de richting van meer waar, en dat is een prettig soort update.
+Twee regels. Noem geen maatregel die u niet hebt, want de bijlage wordt een contractuele belofte en het verschil tussen haar en de werkelijkheid is precies wat een incidentonderzoek bekijkt. En herzie haar jaarlijks, omdat ze afdrijft naarmate uw product verandert - meestal in de richting van meer waar, en dat is een prettig soort update.
 
 ## Dit Inrichten
 
-Voor een product dat aan bedrijven verkoopt, kost dit doorgaans twee tot vier dagen, waarvan het meeste inventarisatie is in plaats van opstellen: een ingevulde verwerkingsbijlage met datacategorieën, doelen, bewaartermijnen en subverwerkers; uw eigen overeenkomst opgesteld tegen wat het product werkelijk doet en één keer beoordeeld door een gekwalificeerde jurist; elke operationele clausule getoetst aan echte mogelijkheden — verwijdering, export, detectie van lekken, hulp bij rechten, beveiligingsmaatregelen; onderhandelingsposities voorbereid voor audits, aansprakelijkheid, meldtermijnen en bezwaren tegen subverwerkers; een register van getekende overeenkomsten met versies en afwijkingen; en een meldproces voor wijzigingen in subverwerkers.
+Voor een product dat aan bedrijven verkoopt, kost dit doorgaans twee tot vier dagen, waarvan het meeste inventarisatie is in plaats van opstellen: een ingevulde verwerkingsbijlage met datacategorieën, doelen, bewaartermijnen en subverwerkers; uw eigen overeenkomst opgesteld tegen wat het product werkelijk doet en één keer beoordeeld door een gekwalificeerde jurist; elke operationele clausule getoetst aan echte mogelijkheden - verwijdering, export, detectie van lekken, hulp bij rechten, beveiligingsmaatregelen; onderhandelingsposities voorbereid voor audits, aansprakelijkheid, meldtermijnen en bezwaren tegen subverwerkers; een register van getekende overeenkomsten met versies en afwijkingen; en een meldproces voor wijzigingen in subverwerkers.
 
-LaunchStudio bouwt de mogelijkheden waartoe de overeenkomst u verplicht, de helft die juristen niet dekken. Achter het werk staat Manifera — elf jaar, 160+ projecten, contracten met Europese ondernemingen als Vodafone, TNO en CFLW vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio bouwt de mogelijkheden waartoe de overeenkomst u verplicht, de helft die juristen niet dekken. Achter het werk staat Manifera - elf jaar, 160+ projecten, contracten met Europese ondernemingen als Vodafone, TNO en CFLW vanaf de Herengracht 420 in Amsterdam.
 
 [Stuur ons de overeenkomst die u moest tekenen](https://launchstudio.eu/nl/#contact) en wij vertellen u welke clausules uw product nu niet kan nakomen.
 
@@ -124,16 +124,16 @@ Ze had de eigen verwerkersovereenkomst van elke klant getekend zonder veel contr
 
 Twee jaar later beëindigde een bijlesgroep het contract en beriep zich op haar clausule: alle persoonsgegevens binnen 30 dagen verwijderd, inclusief back-ups, met schriftelijke bevestiging van afronding.
 
-Haar product had geen verwijderfunctie. De data van die groep stond verweven met die van alle anderen over veertien tabellen. Haar back-ups hadden geen bewaarlimiet en gingen terug tot de lancering. En de clausule die ze had getekend — die ze die week voor het eerst goed las — bevatte ook een onafhankelijk auditrecht en melding van elk lek binnen 24 uur.
+Haar product had geen verwijderfunctie. De data van die groep stond verweven met die van alle anderen over veertien tabellen. Haar back-ups hadden geen bewaarlimiet en gingen terug tot de lancering. En de clausule die ze had getekend - die ze die week voor het eerst goed las - bevatte ook een onafhankelijk auditrecht en melding van elk lek binnen 24 uur.
 
 Zes werkdagen: een verwijderfunctie per organisatie over alle tabellen, met een gedocumenteerd onderscheid tussen verwijderde records, records die werden geanonimiseerd voor statistische continuïteit, en facturen die onder fiscale verplichtingen worden bewaard; een bewaartermijn voor back-ups van 90 dagen met een automatische regel, en een gedocumenteerde procedure die voorkomt dat verwijderde data via een herstel terugkomt; een automatisch gegenereerd bewijs van afronding; een exportfunctie die een gestructureerd archief maakt, omdat twee andere overeenkomsten er een vereisten; alle 28 overeenkomsten gelezen en hun verplichtingen in een tabel gezet, wat vier verschillende verwijdertermijnen, drie meldtermijnen en twee auditrechten opleverde die ze niet had kunnen ondersteunen; haar eigen verwerkersovereenkomst opgesteld in het Nederlands en beoordeeld door een privacyjurist; een register van getekende overeenkomsten met versies en afwijkingen; en de detectie van lekken verbeterd, zodat een melding binnen 24 uur realistisch werd in plaats van wensdenken.
 
 **Resultaat:** de verwijdering werd binnen de termijn afgerond met een bewijs dat de klant accepteerde. Van de 28 klanten zijn er sindsdien 19 bij verlenging overgestapt op haar standaardovereenkomst. Annemieke schat dat het lezen van de contracten vóór ondertekening over twee jaar vier uur had gekost, tegenover zes dagen herstel onder een deadline.
 
 > *"Elk van die overeenkomsten was een lijst van dingen die mijn software moest kunnen. Ik tekende er achtentwintig zonder te controleren of ze er ook maar één kon."*
-> — **Annemieke Vervoort, Oprichter, Leerlingdossier (Tilburg)**
+> - **Annemieke Vervoort, Oprichter, Leerlingdossier (Tilburg)**
 
-**Kosten & Doorlooptijd:** €4.600 (verwijdering per organisatie met anonimisering en bewaarregels, bewaartermijn van back-ups en herstelprocedure, bewijzen van afronding, gestructureerde export, beoordeling van verplichtingen in 28 overeenkomsten, opstellen en juridische beoordeling van eigen overeenkomst, register van overeenkomsten, detectie van lekken) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** €4.600 (verwijdering per organisatie met anonimisering en bewaarregels, bewaartermijn van back-ups en herstelprocedure, bewijzen van afronding, gestructureerde export, beoordeling van verplichtingen in 28 overeenkomsten, opstellen en juridische beoordeling van eigen overeenkomst, register van overeenkomsten, detectie van lekken) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -175,7 +175,7 @@ Houd een register bij van wie welke versie tekende met welke afwijkingen, en een
       "name": "Moet ik mijn eigen verwerkersovereenkomst aanleveren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — meegestuurd met het voorstel, in het Nederlands voor Nederlandse klanten. Ze begint bij voorwaarden die u kunt nakomen en verkort de inkoop."
+        "text": "Ja - meegestuurd met het voorstel, in het Nederlands voor Nederlandse klanten. Ze begint bij voorwaarden die u kunt nakomen en verkort de inkoop."
       }
     },
     {

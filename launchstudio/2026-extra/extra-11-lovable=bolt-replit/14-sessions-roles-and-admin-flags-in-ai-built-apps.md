@@ -38,11 +38,11 @@ Authentication in a real product is not one problem but three, and generated app
 
 The pattern is ubiquitous because it is the obvious thing to generate: users have properties, admin-ness is a property, so it goes in the users table.
 
-The danger arrives when that table is exposed through an automatically generated API, as it is in a typical Supabase setup, and the access policy allows people to update their own row. That policy is reasonable on its face — users should be able to change their own display name. It also means a user can send an update setting their own role to admin, unless the policy explicitly prevents writing to that specific column.
+The danger arrives when that table is exposed through an automatically generated API, as it is in a typical Supabase setup, and the access policy allows people to update their own row. That policy is reasonable on its face - users should be able to change their own display name. It also means a user can send an update setting their own role to admin, unless the policy explicitly prevents writing to that specific column.
 
 The attack requires no tooling and no skill: open the network tab, observe the shape of a profile update request, send the same request with an extra field. If your app then reads the role from that table to decide what the user may see, you have handed out administrative access through a settings page.
 
-There is a second, quieter version. Some generated apps read the role in the browser and use it to decide which interface to render. Hiding a button is not a permission check — anyone can call the underlying endpoint directly. If the server does not independently verify the role, the admin panel is protected by politeness.
+There is a second, quieter version. Some generated apps read the role in the browser and use it to decide which interface to render. Hiding a button is not a permission check - anyone can call the underlying endpoint directly. If the server does not independently verify the role, the admin panel is protected by politeness.
 
 ## What a Sound Model Looks Like
 
@@ -50,17 +50,17 @@ There is a second, quieter version. Some generated apps read the role in the bro
 
 **Permissions are enforced at the data layer.** Not in the interface, and not only in an API route. In a Supabase-backed app that means row level security policies that check the requester's role for the operations that matter, so an endpoint cannot be bypassed by calling the database API directly.
 
-**The server decides, the interface follows.** Render an admin menu based on a role if you like — but every privileged operation must re-check the role server-side, as if the interface did not exist.
+**The server decides, the interface follows.** Render an admin menu based on a role if you like - but every privileged operation must re-check the role server-side, as if the interface did not exist.
 
 **Roles are few and named after the business.** Owner, staff, member, viewer. Five well-understood roles beat twenty granular permissions that nobody can reason about and that drift out of alignment with reality.
 
-**Changes take effect immediately.** When someone is removed from a team or demoted, the next request should reflect it. If your app caches permissions in a long-lived token, a removed user stays powerful until that token expires — which is exactly the window you were trying to close.
+**Changes take effect immediately.** When someone is removed from a team or demoted, the next request should reflect it. If your app caches permissions in a long-lived token, a removed user stays powerful until that token expires - which is exactly the window you were trying to close.
 
 ## The Multi-Tenant Trap
 
 The most common serious version of this problem appears in products selling to organisations: a clinic, a school, a hospitality group. Users belong to an organisation, and data belongs to an organisation.
 
-Generated apps typically enforce "you can see your own records" and stop there, because that is the rule a single-user prototype needs. What they miss is the second condition — you can see records belonging to your organisation, and only your organisation.
+Generated apps typically enforce "you can see your own records" and stop there, because that is the rule a single-user prototype needs. What they miss is the second condition - you can see records belonging to your organisation, and only your organisation.
 
 The failure looks like this: an employee of Clinic A can read records from Clinic B by changing an identifier, because every check is about the individual rather than about the tenancy. For a business-to-business product, this is not merely a bug. It is the specific thing every procurement questionnaire asks about, and the reason a deal stalls after a security review.
 
@@ -99,13 +99,13 @@ If you have an `is_admin` column and you are not certain who can write to it, [t
 
 If your product has teams or organisations, the invitation flow deserves its own scrutiny, because it is where permission decisions are made by people who are not thinking about permissions.
 
-**Invitation links are credentials.** A link that grants membership on click is a key sent by email. It should be single-use, tied to a specific address, and expire — a week is generous. Generated invite flows routinely produce links that work forever, for anyone, and those links end up forwarded, pasted into group chats and left in inboxes indefinitely.
+**Invitation links are credentials.** A link that grants membership on click is a key sent by email. It should be single-use, tied to a specific address, and expire - a week is generous. Generated invite flows routinely produce links that work forever, for anyone, and those links end up forwarded, pasted into group chats and left in inboxes indefinitely.
 
 **The inviter's rights bound the invitation.** A member should not be able to invite someone as an administrator. If the role is chosen in the browser and sent with the request, it can be altered, so the server must check that the inviter is permitted to grant that role.
 
 **Email change is an access change.** If a user can change their account email without confirming the new address, an invitation tied to an address becomes transferable. Confirm new addresses before they take effect, and notify the old one.
 
-**Removal must be immediate and complete.** When someone leaves an organisation, their sessions should stop working for that organisation's data on the next request — not when a token expires. Test this specifically: remove a user in one browser and try to load an organisation record in theirs.
+**Removal must be immediate and complete.** When someone leaves an organisation, their sessions should stop working for that organisation's data on the next request - not when a token expires. Test this specifically: remove a user in one browser and try to load an organisation record in theirs.
 
 **Pending invitations are state.** An invitation sent to someone who has not yet accepted, for an organisation that has since changed hands or deleted a project, should not grant access to whatever now occupies that place.
 
@@ -117,7 +117,7 @@ Each of these is a small piece of logic, and together they decide whether your t
 
 Marijn Kuipers built DierZorg in Lovable: a shared platform where independent veterinary practices around Apeldoorn manage appointments and patient records. Eleven clinics had signed up before the first security review.
 
-Two findings mattered. The user profile table contained a `role` field with a policy allowing users to update their own row, so any registered user could make themselves an administrator by adding one field to a settings request. And every data policy checked only that the requester was authenticated and owned the record — nothing checked which clinic the record belonged to, so a vet at one practice could open another practice's patient records by changing a number in the address.
+Two findings mattered. The user profile table contained a `role` field with a policy allowing users to update their own row, so any registered user could make themselves an administrator by adding one field to a settings request. And every data policy checked only that the requester was authenticated and owned the record - nothing checked which clinic the record belonged to, so a vet at one practice could open another practice's patient records by changing a number in the address.
 
 The second finding was the commercial one: DierZorg was in the middle of a procurement conversation with a nine-practice group whose questionnaire asked precisely this.
 
@@ -126,9 +126,9 @@ Nine business days of work: roles moved into a server-managed table with read-on
 **Result:** the nine-practice group signed six weeks later after a clean security review, and DierZorg now runs the permission test suite on every deploy.
 
 > *"Any of my users could have promoted themselves to admin from the settings page. It had been live for four months and the only reason nothing happened is that nobody tried."*
-> — **Marijn Kuipers, Founder, DierZorg (Apeldoorn)**
+> - **Marijn Kuipers, Founder, DierZorg (Apeldoorn)**
 
-**Cost & Timeline:** €3,700 (Launch Ready Package: role model, tenancy isolation, session hardening, permission tests) — completed in 9 business days.
+**Cost & Timeline:** €3,700 (Launch Ready Package: role model, tenancy isolation, session hardening, permission tests) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -194,7 +194,7 @@ Largely yes. Create two accounts, try to read each other's data by changing iden
       "name": "Can I test this without technical help?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Largely yes — create two accounts, try to read each other's data by changing identifiers, attempt to add a role field to a profile update, and check whether a password change ends a second session."
+        "text": "Largely yes - create two accounts, try to read each other's data by changing identifiers, attempt to add a role field to a profile update, and check whether a password change ends a second session."
       }
     }
   ]

@@ -35,7 +35,7 @@ Generatieve AI heeft traditionele uitgaande sales fundamenteel ontwricht. Omdat 
 
 ## Het Einde van 'Hagel Schieten' (Spray and Pray)
 
-Het oude handboek was simpel: schraap 5.000 e-mailadressen uit Apollo of ZoomInfo, laad ze in een sequencetool, voeg een `{{first_name}}` variabele toe en druk op verzenden. Vandaag de dag levert deze aanpak een openingspercentage van 0,1% op en resulteert het in een permanente zwarte lijst voor uw domein. Een domeinreputatie herstellen op Spamhaus of Google Feedback Loops kost 60 tot 90 dagen van vrijwel nul verzendvolume — een eeuwigheid voor een startup.
+Het oude handboek was simpel: schraap 5.000 e-mailadressen uit Apollo of ZoomInfo, laad ze in een sequencetool, voeg een `{{first_name}}` variabele toe en druk op verzenden. Vandaag de dag levert deze aanpak een openingspercentage van 0,1% op en resulteert het in een permanente zwarte lijst voor uw domein. Een domeinreputatie herstellen op Spamhaus of Google Feedback Loops kost 60 tot 90 dagen van vrijwel nul verzendvolume - een eeuwigheid voor een startup.
 
 Enterprise-kopers herkennen een standaard AI-mail direct aan typische clichés zoals "duiken in", "revolutioneren", "ontgrendelen" en "synergie". Ziet een e-mail eruit alsof deze in 2 seconden is gegenereerd, dan verwijdert de ontvanger deze in 1 seconde en markeert hij het bericht als spam, wat uw bezorgbaarheid voor alle toekomstige mails beschadigt.
 
@@ -82,7 +82,7 @@ Het bouwen van deze backend-pijplijnen is exact het soort volwassen software-inr
 
 ## Automatiseer Uw B2B Outbound
 
-Stop met het versturen van ongerichte spam en start met het boeken van gekwalificeerde demo's. **LaunchStudio** bouwt geavanceerde AI-verrijkingspijplijnen en geharde e-mailinfrastructuur om uw B2B SaaS-outreach op schaal te personaliseren — tegen circa 20% van de tarieven van een traditioneel bureau.
+Stop met het versturen van ongerichte spam en start met het boeken van gekwalificeerde demo's. **LaunchStudio** bouwt geavanceerde AI-verrijkingspijplijnen en geharde e-mailinfrastructuur om uw B2B SaaS-outreach op schaal te personaliseren - tegen circa 20% van de tarieven van een traditioneel bureau.
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek [ons pakkettenoverzicht](https://launchstudio.eu/nl/#packages). Zie ook Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) praktijk.
 
@@ -96,7 +96,7 @@ Hij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om secu
 
 **Resultaat:** De bezorgbaarheid van zijn e-mails steeg van 40% naar 98%, wat resulteerde in een constante stroom van B2B-salesdemo's.
 
-**Kosten & Tijdlijn:** €950 (Domein & Deliverability Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €950 (Domein & Deliverability Pakket) - productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
@@ -120,7 +120,7 @@ Het geleidelijk opbouwen van de verzendreputatie van een nieuw geregistreerd dom
 
 ### Richt LaunchStudio alleen e-mailtools in of complete software-architecturen?
 
-LaunchStudio levert de complete backend-pijplijn — inclusief scrapers, LLM-verrijking, DNS-authenticatie en CRM-koppelingen — ondersteund door 11+ jaar software-expertise van Manifera.
+LaunchStudio levert de complete backend-pijplijn - inclusief scrapers, LLM-verrijking, DNS-authenticatie en CRM-koppelingen - ondersteund door 11+ jaar software-expertise van Manifera.
 
 <script type="application/ld+json">
 {
@@ -164,7 +164,7 @@ LaunchStudio levert de complete backend-pijplijn — inclusief scrapers, LLM-ver
       "name": "Richt LaunchStudio alleen e-mailtools in of complete software-architecturen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio levert de complete backend-pijplijn — inclusief scrapers, LLM-verrijking, DNS-authenticatie en CRM-koppelingen — ondersteund door 11+ jaar software-expertise van Manifera."
+        "text": "LaunchStudio levert de complete backend-pijplijn - inclusief scrapers, LLM-verrijking, DNS-authenticatie en CRM-koppelingen - ondersteund door 11+ jaar software-expertise van Manifera."
       }
     }
   ]

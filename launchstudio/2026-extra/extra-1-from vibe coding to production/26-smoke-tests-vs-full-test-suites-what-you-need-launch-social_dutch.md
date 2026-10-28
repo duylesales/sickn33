@@ -9,7 +9,7 @@
 
 ✅ Smoke test = werkt kernfunctionaliteit überhaupt, niet elk randgeval perfect
 ✅ Dek jouw kritieke paar: registratie, kernfunctie, betaling/afrekenen
-✅ Dit vangt de hoogste-consequentie-storing — een wijziging die stilletjes iets breekt dat werkte
+✅ Dit vangt de hoogste-consequentie-storing - een wijziging die stilletjes iets breekt dat werkte
 ✅ Volledige dekking verdient zijn kosten LATER, naarmate het product en team daadwerkelijk groeien
 
 Bij **LaunchStudio** implementeren we precies deze juist-gemaate dekking standaard bij elke Launch Ready-opdracht. Gesteund door Manifera's ervaring over producten in elke fase. 🛡️

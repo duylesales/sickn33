@@ -1,4 +1,4 @@
-🚨 "AI Health Risk Prediction Can Simply Replace an Actuary's or Benefits Consult..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Health Risk Prediction Can Simply Replace an Actuary's or Benefits Consult..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Health Risk Prediction Can Simply Replace an Actu...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

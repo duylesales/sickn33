@@ -73,7 +73,7 @@ James werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** James stabiliseerde de client-UI, waardoor een naadloze planning van meer dan 100 berichten in batchbewerkingen mogelijk werd.
 
-**Kosten en tijdlijn:** € 2.200 (aangepast backendpakket) — klaar voor productie en geïmplementeerd binnen 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (aangepast backendpakket) - klaar voor productie en geïmplementeerd binnen 7 werkdagen.
 
 ---
 

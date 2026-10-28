@@ -1,4 +1,4 @@
-🔥 Sophia bouwde een prototype met **Lovable** — Sophia, een makelaar, gebruikte Lovable om een pagina-generator voor vastgoed te bouwen, maar liep aan tegen een extreem trage LCP van 6,5s vóór haar lancering. 🧠
+🔥 Sophia bouwde een prototype met **Lovable** - Sophia, een makelaar, gebruikte Lovable om een pagina-generator voor vastgoed te bouwen, maar liep aan tegen een extreem trage LCP van 6,5s vóór haar lancering. 🧠
 
 Als uw AI-applicatie uitsluitend draait op client-side rendering (CSR), bestraft Google uw pagina's en haken potentiële klanten direct af.
 
@@ -12,7 +12,7 @@ Als uw AI-applicatie uitsluitend draait op client-side rendering (CSR), bestraft
 
 Bij **LaunchStudio** lossen we exact dit type Core Web Vitals-problemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Sophia's applicatie behaalde topscores: De LCP daalde van 6,5s naar 1,4s, wat resulteerde in hogere SEO-posities en betere retentie. (€2.100 (Core Web Vitals Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Sophia's applicatie behaalde topscores: De LCP daalde van 6,5s naar 1,4s, wat resulteerde in hogere SEO-posities en betere retentie. (€2.100 (Core Web Vitals Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/reducing-lcp-ai-saas
 

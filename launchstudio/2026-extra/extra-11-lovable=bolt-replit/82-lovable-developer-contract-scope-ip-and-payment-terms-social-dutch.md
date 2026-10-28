@@ -1,4 +1,4 @@
-🚨 Marijke Doornbos huurde een freelancer in om Planbord — productieplanning voor zeven maakbedrijven rond Leeuwarden — productieklaar te maken. Afspraken gemaakt in een videocall, bevestigd in een mail van vier zinnen. Na twee maanden nam hij een vaste baan en reageerde hij nog maar wekelijks. 😳
+🚨 Marijke Doornbos huurde een freelancer in om Planbord - productieplanning voor zeven maakbedrijven rond Leeuwarden - productieklaar te maken. Afspraken gemaakt in een videocall, bevestigd in een mail van vier zinnen. Na twee maanden nam hij een vaste baan en reageerde hij nog maar wekelijks. 😳
 
 Hij deed niets verkeerd. Hij had haar domein alleen op zijn eigen account geregistreerd omdat dat sneller was. Dit staat er niet in vier zinnen:
 
@@ -14,7 +14,7 @@ Hij deed niets verkeerd. Hij had haar domein alleen op zijn eigen account geregi
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, staat elk account dat we aanraken vanaf de eerste dag op uw naam. 📄
 
-💡 Het resultaat: het herstel kostte vijf weken en twee advocatenbrieven, daarna zes werkdagen en € 4.200 om alles op haar naam te zetten en het werk af te maken. Planbord ging elf weken te laat live. Haar schatting van alleen de herstelkosten: zo'n € 7.000 — tegenover een contract dat een middag had gekost. 🚀
+💡 Het resultaat: het herstel kostte vijf weken en twee advocatenbrieven, daarna zes werkdagen en € 4.200 om alles op haar naam te zetten en het werk af te maken. Planbord ging elf weken te laat live. Haar schatting van alleen de herstelkosten: zo'n € 7.000 - tegenover een contract dat een middag had gekost. 🚀
 
 👉 Scope, IP en betalingsvoorwaarden voor een Lovable-developer: https://launchstudio.eu/nl/blog/lovable-developer-contract-scope-ip-and-payment-terms
 

@@ -22,7 +22,7 @@ Target Persona: SaaS Scale-Up
 
 The deal is going well. The demo landed, the price is accepted, the champion inside the company wants it. Then an email arrives from someone you have not spoken to, with a spreadsheet attached and forty questions in it, and a note saying procurement needs this before contracting.
 
-This is the moment where a large number of promising deals quietly die — not because the answers are bad, but because the founder does not answer for three weeks, answers vaguely, or panics and claims something that is not true.
+This is the moment where a large number of promising deals quietly die - not because the answers are bad, but because the founder does not answer for three weeks, answers vaguely, or panics and claims something that is not true.
 
 The questionnaire is survivable. It is not a test you pass by having a compliance department; it is a test you pass by knowing how your own product works and saying so plainly.
 
@@ -50,7 +50,7 @@ Prepare these and you have covered most of any questionnaire.
 
 **How are customers separated from each other?** The tenancy answer: a tenant on every record, enforced in the database rather than remembered by application code, verified by testing from a second account.
 
-**Is data encrypted in transit and at rest?** With managed providers, yes on both counts — confirm it rather than assuming, and name the mechanism.
+**Is data encrypted in transit and at rest?** With managed providers, yes on both counts - confirm it rather than assuming, and name the mechanism.
 
 **How do you handle authentication?** Password requirements, whether two-factor is available, session handling, and what happens on repeated failed attempts.
 
@@ -58,7 +58,7 @@ Prepare these and you have covered most of any questionnaire.
 
 **What are your backup and recovery arrangements?** Frequency, retention, and whether you have actually restored. The honest "backups are automated daily, retained thirty days, last restore rehearsed in June and took 34 minutes" is a better answer than most enterprises give.
 
-**How would you detect and report an incident?** Monitoring, logging, and who decides. Under GDPR a notifiable personal data breach must be reported to the supervisory authority — in the Netherlands, the Autoriteit Persoonsgegevens — without undue delay and where feasible within 72 hours, and customers will want to know how quickly you would tell them. Obligations vary with circumstances, so confirm current requirements for your case.
+**How would you detect and report an incident?** Monitoring, logging, and who decides. Under GDPR a notifiable personal data breach must be reported to the supervisory authority - in the Netherlands, the Autoriteit Persoonsgegevens - without undue delay and where feasible within 72 hours, and customers will want to know how quickly you would tell them. Obligations vary with circumstances, so confirm current requirements for your case.
 
 **Can we export our data, and what happens at termination?** Format, timescale, and deletion afterwards.
 
@@ -68,9 +68,9 @@ Prepare these and you have covered most of any questionnaire.
 
 Most small suppliers have no certification, and most procurement teams know that and buy anyway. What they need is evidence of deliberate practice.
 
-You can say your infrastructure runs on providers that hold relevant certifications, and name them — that is your suppliers' compliance, not yours, and stating the distinction clearly builds credibility rather than costing it. You can describe your access controls concretely. You can point to a written access model, a retention policy, an incident procedure, and a tested restore. You can offer to sign a data processing agreement, which for a GDPR-relevant service you should have ready in any case.
+You can say your infrastructure runs on providers that hold relevant certifications, and name them - that is your suppliers' compliance, not yours, and stating the distinction clearly builds credibility rather than costing it. You can describe your access controls concretely. You can point to a written access model, a retention policy, an incident procedure, and a tested restore. You can offer to sign a data processing agreement, which for a GDPR-relevant service you should have ready in any case.
 
-What you cannot do is imply a certification you do not hold. Beyond the contractual risk, procurement teams verify, and a supplier caught overstating is finished — not just for this deal.
+What you cannot do is imply a certification you do not hold. Beyond the contractual risk, procurement teams verify, and a supplier caught overstating is finished - not just for this deal.
 
 ## The Three Answers That Kill Deals
 
@@ -80,11 +80,11 @@ What you cannot do is imply a certification you do not hold. Beyond the contract
 
 **Over-claiming.** "Fully GDPR compliant and enterprise-grade secure" is not an answer, and a reviewer reads it as someone who does not know what the words mean.
 
-The answer that works is specific, short, and honest about gaps — with a date attached. "Two-factor authentication is not currently enforced for customer accounts; it is available for administrators and we are extending it to all users this quarter" is a perfectly acceptable answer. Procurement teams accept known gaps with plans. They reject unknown gaps.
+The answer that works is specific, short, and honest about gaps - with a date attached. "Two-factor authentication is not currently enforced for customer accounts; it is available for administrators and we are extending it to all users this quarter" is a perfectly acceptable answer. Procurement teams accept known gaps with plans. They reject unknown gaps.
 
 ## Prepare Once, Reuse Every Time
 
-Build a security page — an internal document, four to six pages — covering: architecture and hosting with regions; the access model, internal and customer-facing; authentication; the subprocessor list; encryption; backup, recovery and retention; logging and monitoring; the incident process with roles and timelines; development practices; data export and deletion; and a short, honest roadmap of what you are improving.
+Build a security page - an internal document, four to six pages - covering: architecture and hosting with regions; the access model, internal and customer-facing; authentication; the subprocessor list; encryption; backup, recovery and retention; logging and monitoring; the incident process with roles and timelines; development practices; data export and deletion; and a short, honest roadmap of what you are improving.
 
 Written once, it answers most questionnaires by copying. It shortens the sales cycle noticeably. And the act of writing it is itself the most efficient security review a small product can have, because every section you cannot complete is a gap you have just found before a customer did.
 
@@ -102,7 +102,7 @@ Alongside the questionnaire there is usually a contract, and founders treat it a
 
 **Subprocessors must be listed, and changes notified.** This is the same list the questionnaire asked for, and the agreement usually adds a duty to inform customers before you add a new one. That has a practical consequence: casually adding an analytics tool or a new AI provider becomes a contractual event. Knowing this in advance prevents an awkward conversation later.
 
-**Where processing happens matters.** For personal data of EU residents, transfers outside the EEA need a valid mechanism, and the agreement will ask you to name it. If every provider you use offers an EU region, the honest and simple answer is that data stays in the EU — which is one more reason to choose regions deliberately at the start.
+**Where processing happens matters.** For personal data of EU residents, transfers outside the EEA need a valid mechanism, and the agreement will ask you to name it. If every provider you use offers an EU region, the honest and simple answer is that data stays in the EU - which is one more reason to choose regions deliberately at the start.
 
 **Breach notification will carry a timescale.** Frequently shorter than the regulatory one, sometimes 24 hours, and it obliges you to tell the customer rather than a supervisory authority. You cannot meet a 24-hour commitment without monitoring and an error tracker somebody watches.
 
@@ -110,13 +110,13 @@ Alongside the questionnaire there is usually a contract, and founders treat it a
 
 **Audit rights are normal.** Usually satisfied by documentation rather than a visit, which is another argument for having the security document written.
 
-Read it rather than signing it, mark anything your product cannot currently do, and negotiate those clauses instead of promising them — a supplier who asks to change a deadline from 24 to 48 hours reads as competent, while one who agrees to everything and then misses it reads as neither. Have a lawyer review the final version; the details here depend on your data and your situation, and this is a description of what to expect rather than legal advice.
+Read it rather than signing it, mark anything your product cannot currently do, and negotiate those clauses instead of promising them - a supplier who asks to change a deadline from 24 to 48 hours reads as competent, while one who agrees to everything and then misses it reads as neither. Have a lawyer review the final version; the details here depend on your data and your situation, and this is a description of what to expect rather than legal advice.
 
 ## Getting Ready Before the Spreadsheet Arrives
 
-LaunchStudio does this as a defined engagement for founders selling into Dutch businesses: the product assessed against the questions that actually get asked, the genuine gaps fixed — access model, tenant isolation, two-factor authentication, logging, backup verification, subprocessor inventory, retention and erasure — and a security document written in the language procurement teams expect, ready to send.
+LaunchStudio does this as a defined engagement for founders selling into Dutch businesses: the product assessed against the questions that actually get asked, the genuine gaps fixed - access model, tenant isolation, two-factor authentication, logging, backup verification, subprocessor inventory, retention and erasure - and a security document written in the language procurement teams expect, ready to send.
 
-The engineers are Manifera's: eleven years supplying enterprise clients including Vodafone, TNO and CFLW, from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City — which means the questions on that spreadsheet are ones we have answered from both sides.
+The engineers are Manifera's: eleven years supplying enterprise clients including Vodafone, TNO and CFLW, from Amsterdam Herengracht 420, Singapore and Ho Chi Minh City - which means the questions on that spreadsheet are ones we have answered from both sides.
 
 [Send us the questionnaire](https://launchstudio.eu/en/#contact) and you will get an honest assessment of what you can answer today and what needs work, usually within one business day, or see the [packages](https://launchstudio.eu/en/#packages).
 
@@ -126,7 +126,7 @@ The engineers are Manifera's: eleven years supplying enterprise clients includin
 
 Femke Ravensbergen built Keuringsrapport with Lovable: inspection reporting used by technical inspection firms for lifting equipment, fire systems and electrical installations, with eleven customers around Middelburg and Vlissingen.
 
-A regional hospital wanted to use it for internal equipment inspections — a contract worth roughly four times her largest existing customer. The demo went well. Then the questionnaire arrived: 41 questions, a data processing agreement to review, and a two-week deadline.
+A regional hospital wanted to use it for internal equipment inspections - a contract worth roughly four times her largest existing customer. The demo went well. Then the questionnaire arrived: 41 questions, a data processing agreement to review, and a two-week deadline.
 
 She could answer eleven of them.
 
@@ -137,15 +137,15 @@ Eleven business days of work: tenant isolation moved into database policies and 
 **Result:** the contract was signed six weeks later. The hospital's reviewer commented that the audit trail and the willingness to name unfinished items were what moved the file forward. Femke has since sent the same document to four prospects without changes and reports that two of them skipped the questionnaire entirely.
 
 > *"Forty-one questions arrived and I could answer eleven. The document I wrote to fix that has since won me two contracts I never had to fill in a spreadsheet for."*
-> — **Femke Ravensbergen, Founder, Keuringsrapport (Middelburg)**
+> - **Femke Ravensbergen, Founder, Keuringsrapport (Middelburg)**
 
-**Cost & Timeline:** €5,200 (tenant isolation in policies, audit trail, two-factor authentication, restore verification, subprocessor cleanup, retention and erasure, security documentation) — completed in 11 business days.
+**Cost & Timeline:** €5,200 (tenant isolation in policies, audit trail, two-factor authentication, restore verification, subprocessor cleanup, retention and erasure, security documentation) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
 ### Can I win enterprise deals without a security certification?
 
-Frequently, yes. Procurement teams know small suppliers rarely hold certifications; what they need is evidence of deliberate practice — a documented access model, tested backups, a subprocessor list, an incident process, and honest answers.
+Frequently, yes. Procurement teams know small suppliers rarely hold certifications; what they need is evidence of deliberate practice - a documented access model, tested backups, a subprocessor list, an incident process, and honest answers.
 
 ### What should I never write in a questionnaire?
 
@@ -157,7 +157,7 @@ State the gap, state the plan, state the date. Known gaps with plans are routine
 
 ### What is the subprocessor list and why do I need one?
 
-Every third party that processes customer data — hosting, database, email, analytics, any AI provider — with purpose and region. Customers ask for it, GDPR expects it, and compiling it usually surfaces services founders had forgotten were receiving data.
+Every third party that processes customer data - hosting, database, email, analytics, any AI provider - with purpose and region. Customers ask for it, GDPR expects it, and compiling it usually surfaces services founders had forgotten were receiving data.
 
 ### Is there a way to avoid answering a questionnaire every time?
 

@@ -28,11 +28,11 @@ A contract is not a defence against a bad developer. It is a device for finding 
 
 ## Ownership: The Clause That Actually Matters
 
-Under Dutch law, the default position for work by an independent contractor is not automatically what founders assume. Copyright in software generally sits with its creator unless it has been transferred in writing — an employer-employee relationship is treated differently from a freelance engagement. So a founder who paid for a product and never signed an assignment may find that ownership was never transferred.
+Under Dutch law, the default position for work by an independent contractor is not automatically what founders assume. Copyright in software generally sits with its creator unless it has been transferred in writing - an employer-employee relationship is treated differently from a freelance engagement. So a founder who paid for a product and never signed an assignment may find that ownership was never transferred.
 
 The contract therefore needs an explicit written transfer of all intellectual property in the deliverables, effective on payment, covering code, designs, database structures and documentation. Include a clause obliging the developer to sign whatever further paperwork is needed to make the transfer effective.
 
-Two sensible exceptions. A developer's pre-existing general components — their own libraries and utilities — usually remain theirs, licensed to you perpetually. And open-source dependencies keep their own licences, which is normal; what you should ask for is a list of them, since some licences carry obligations that matter if you later sell the company.
+Two sensible exceptions. A developer's pre-existing general components - their own libraries and utilities - usually remain theirs, licensed to you perpetually. And open-source dependencies keep their own licences, which is normal; what you should ask for is a list of them, since some licences carry obligations that matter if you later sell the company.
 
 The question that increasingly arises is whether AI-generated code can be owned at all. The law is unsettled, jurisdictions differ, and the practical answer for a small company is to contract for everything the developer can transfer, keep the repository and accounts in your own name, and treat possession and control as the protection that actually works. Verify current requirements with a lawyer for anything consequential; this is what to expect, not legal advice.
 
@@ -40,9 +40,9 @@ The question that increasingly arises is whether AI-generated code can be owned 
 
 "Build a booking platform" is not a scope. It is a hope shared by two people who each imagine a different product.
 
-A workable scope lists the user-facing capabilities in plain language — what a user can do, screen by screen or flow by flow. It states what is explicitly excluded, which is the more valuable half: no mobile app, no accounting integration, Dutch language only, no multi-user organisations. It names the integrations and who provides the accounts. It states what "done" means for each item, in terms you can check without reading code.
+A workable scope lists the user-facing capabilities in plain language - what a user can do, screen by screen or flow by flow. It states what is explicitly excluded, which is the more valuable half: no mobile app, no accounting integration, Dutch language only, no multi-user organisations. It names the integrations and who provides the accounts. It states what "done" means for each item, in terms you can check without reading code.
 
-And it sets out how changes are handled: a short written note, a price, an effect on the timeline, agreed before work starts. Most disputes are change disputes wearing a scope costume — a feature that grew by three conversations without anyone noticing it had become a different feature.
+And it sets out how changes are handled: a short written note, a price, an effect on the timeline, agreed before work starts. Most disputes are change disputes wearing a scope costume - a feature that grew by three conversations without anyone noticing it had become a different feature.
 
 ## Payment Structured Against Milestones
 
@@ -50,7 +50,7 @@ Hourly billing suits open-ended work and gives a non-technical founder no cost c
 
 Whatever the model, tie payment to milestones you can verify. A deposit to start, payments at stages where something is demonstrable, and a final payment on handover. Avoid paying the entire amount before you hold the accounts and the code.
 
-A note on the Dutch context: payment terms for business-to-business are generally expected to be reasonable — 30 days is customary, and statutory limits apply to how long they can be — and late payment carries statutory interest. Agree the term explicitly, and if you are the one paying, respect it, because reputation in a small market travels quickly.
+A note on the Dutch context: payment terms for business-to-business are generally expected to be reasonable - 30 days is customary, and statutory limits apply to how long they can be - and late payment carries statutory interest. Agree the term explicitly, and if you are the one paying, respect it, because reputation in a small market travels quickly.
 
 ## The Accounts Clause
 
@@ -70,7 +70,7 @@ That last item is worth paying for. A developer who documents what is approximat
 
 ## Warranty, Liability and Who Fixes What
 
-Agree a period — commonly 30 to 90 days after delivery — during which defects in the agreed scope are corrected without further charge, with a clear definition separating a defect from a new request.
+Agree a period - commonly 30 to 90 days after delivery - during which defects in the agreed scope are corrected without further charge, with a clear definition separating a defect from a new request.
 
 Cap liability at something proportionate, usually the contract value. Unlimited liability is not something a freelancer can carry, and insisting on it produces either a refusal or a price that reflects the risk. Conversely, be sceptical of a contract excluding all liability including for gross negligence.
 
@@ -86,13 +86,13 @@ Skip the non-compete. In a specialised market it is largely unenforceable in pra
 
 A specific case, because it is now the common one: you built the product yourself with AI tooling and you are hiring someone to make it production-ready.
 
-Two things change. The scope should be written against findings rather than features — a list from an assessment, each item with a definition of done. And ownership needs a sentence covering the existing code as well as the new work, so the finished product is not half yours and half ambiguous.
+Two things change. The scope should be written against findings rather than features - a list from an assessment, each item with a definition of done. And ownership needs a sentence covering the existing code as well as the new work, so the finished product is not half yours and half ambiguous.
 
 ## When the Developer Touches Your Customers' Data
 
 A clause founders skip entirely, and the one their own customers will eventually ask about.
 
-If your product holds personal data — names, addresses, health information, employment records — and a freelancer can reach it, then under GDPR that freelancer is processing personal data on your behalf. You are the controller; they are a processor; and the relationship needs a written agreement covering what they may do with it, confidentiality, security measures, and what happens at the end.
+If your product holds personal data - names, addresses, health information, employment records - and a freelancer can reach it, then under GDPR that freelancer is processing personal data on your behalf. You are the controller; they are a processor; and the relationship needs a written agreement covering what they may do with it, confidentiality, security measures, and what happens at the end.
 
 This is not bureaucracy for its own sake. It has three practical consequences.
 
@@ -100,11 +100,11 @@ This is not bureaucracy for its own sake. It has three practical consequences.
 
 **It sets expectations before they matter.** The agreement is where you state that production data is not copied to a personal laptop, not used for testing, and not retained after the engagement. Saying it afterwards is an accusation; saying it in a contract is procedure.
 
-**It makes the alternative visible.** Most of the time the developer does not need production data at all. A development environment with anonymised records — real structure, real volume, fictional people — resolves the question entirely and is worth building before the first engagement rather than during it.
+**It makes the alternative visible.** Most of the time the developer does not need production data at all. A development environment with anonymised records - real structure, real volume, fictional people - resolves the question entirely and is worth building before the first engagement rather than during it.
 
 Two further details. Specify that access is granted to a named individual rather than a firm, so you know who actually holds it. And specify that any copy of customer data made during the work is deleted at the end, with confirmation.
 
-Where processing happens matters too, particularly if the developer works outside the EEA. Confirm the arrangement rather than assuming, and have a lawyer review anything consequential — this is what to expect rather than legal advice, and obligations vary with the data involved.
+Where processing happens matters too, particularly if the developer works outside the EEA. Confirm the arrangement rather than assuming, and have a lawyer review anything consequential - this is what to expect rather than legal advice, and obligations vary with the data involved.
 
 ## Getting the Engagement Right From the Start
 
@@ -126,14 +126,14 @@ What the four sentences had not covered: ownership of the code, which had never 
 
 He was not acting badly. He was busy, and nothing obliged him to prioritise a project he had effectively left.
 
-Recovery took five weeks and two lawyers' letters, and succeeded mainly because he eventually cooperated. Six business days of work after that: the code moved into a repository owned by her company; the domain transferred with automatic renewal and two administrators; a new database created in an EU region and the data migrated; every credential rotated; the remaining scope completed — the parts he had left were access rules and the payment webhook, which were also the parts nobody had verified; a handover document written covering deployment, scheduled jobs, services and costs; and a proper agreement drafted for her next engagement, with the accounts clause first.
+Recovery took five weeks and two lawyers' letters, and succeeded mainly because he eventually cooperated. Six business days of work after that: the code moved into a repository owned by her company; the domain transferred with automatic renewal and two administrators; a new database created in an EU region and the data migrated; every credential rotated; the remaining scope completed - the parts he had left were access rules and the payment webhook, which were also the parts nobody had verified; a handover document written covering deployment, scheduled jobs, services and costs; and a proper agreement drafted for her next engagement, with the accounts clause first.
 
-**Result:** Planbord went live eleven weeks later than planned. Marijke's estimate of the direct cost of the five-week recovery, excluding the delay, is roughly €7,000 — against a contract that would have taken an afternoon to write.
+**Result:** Planbord went live eleven weeks later than planned. Marijke's estimate of the direct cost of the five-week recovery, excluding the delay, is roughly €7,000 - against a contract that would have taken an afternoon to write.
 
 > *"He had done nothing wrong. He had just registered my domain on his own account because it was faster, and then he got a job."*
-> — **Marijke Doornbos, Founder, Planbord (Leeuwarden)**
+> - **Marijke Doornbos, Founder, Planbord (Leeuwarden)**
 
-**Cost & Timeline:** €4,200 (repository and account transfers, database migration, credential rotation, completion of remaining scope, handover documentation) — completed in 6 business days after access was recovered.
+**Cost & Timeline:** €4,200 (repository and account transfers, database migration, credential rotation, completion of remaining scope, handover documentation) - completed in 6 business days after access was recovered.
 
 ## Frequently Asked Questions
 
@@ -155,7 +155,7 @@ Against verifiable milestones: a deposit, staged payments where something is dem
 
 ### What is the clause founders most often forget?
 
-The accounts clause. Every account — domain, hosting, database, payments, email, repository — registered in your company's name from the start, with the developer given access rather than ownership, and access removed at the end.
+The accounts clause. Every account - domain, hosting, database, payments, email, repository - registered in your company's name from the start, with the developer given access rather than ownership, and access removed at the end.
 
 <script type="application/ld+json">
 {
@@ -167,7 +167,7 @@ The accounts clause. Every account — domain, hosting, database, payments, emai
       "name": "Do I automatically own code I paid a freelancer to write?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily — under Dutch law copyright generally stays with the creator unless assigned in writing, so include an explicit transfer effective on payment."
+        "text": "Not necessarily - under Dutch law copyright generally stays with the creator unless assigned in writing, so include an explicit transfer effective on payment."
       }
     },
     {
@@ -191,7 +191,7 @@ The accounts clause. Every account — domain, hosting, database, payments, emai
       "name": "How should payment be structured?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Against verifiable milestones — deposit, staged payments, final on handover — and never in full before you hold the accounts and code."
+        "text": "Against verifiable milestones - deposit, staged payments, final on handover - and never in full before you hold the accounts and code."
       }
     },
     {

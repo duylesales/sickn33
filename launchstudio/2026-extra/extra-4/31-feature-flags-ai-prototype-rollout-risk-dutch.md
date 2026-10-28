@@ -70,7 +70,7 @@ Manifera's ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengrach
 Een noodknop stopt een slecht codepad voor de *volgende* aanvraag, maar het doet niets aan de aanvragen die er al doorheen gingen terwijl de vlag aan stond. Dit is de kloof die de meeste oprichters ontdekken de eerste keer dat ze daadwerkelijk een vlag moeten gebruiken in paniek: ze gooien hem om, voelen een golf van verlichting, en realiseren zich dan dat de vlag alleen nieuwe slechte uitkomsten voorkwam. Elke ruil, afschrijving of verzending die plaatsvond in het venster vóór het omgooien zit nog steeds in de database exact zoals de code met de bug het achterliet.
 
 ```
-// Het uitschakelen hiervan stopt nieuwe evaluaties —
+// Het uitschakelen hiervan stopt nieuwe evaluaties -
 // het raakt niet de 7 ruilen die al zijn goedgekeurd
 // terwijl het aan stond.
 await flags.disable("shift_swap_v2");
@@ -91,9 +91,9 @@ LaunchStudio's ingenieurs herbouwden de goedkeuringslogica voor dienstruilen met
 **Resultaat:** Wessel verzendt nu wekelijks nieuwe planningslogica in plaats van per kwartaal, omdat een slechte uitrol hem een vlag-omgooiing kost, en geen incident.
 
 > *"Ik was vroeger doodsbang om iets te verzenden dat goedkeuringen raakte. Als er nu iets niet goed uitziet, schakel ik het in tien seconden uit en herstel het zonder dat klanten het ooit merken."*
-> — **Wessel Groen, Oprichter, RoosterFlex (Hengelo)**
+> - **Wessel Groen, Oprichter, RoosterFlex (Hengelo)**
 
-**Kosten en tijdlijn:** € 950 (herstelling van logica voor dienstruilen plus feature-flag-infrastructuur over drie kernwerkstromen) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 950 (herstelling van logica voor dienstruilen plus feature-flag-infrastructuur over drie kernwerkstromen) - voltooid in 6 werkdagen.
 
 ---
 

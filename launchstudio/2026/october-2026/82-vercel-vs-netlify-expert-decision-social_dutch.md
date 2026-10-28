@@ -1,4 +1,4 @@
-⚡ Sanne deployde haar AI-receptenapp (gebouwd in **Lovable**) standaard naar Netlify — de functietimeout kapte stilletjes 15% van haar langere AI-gegenereerde recepten midden in de stream af.
+⚡ Sanne deployde haar AI-receptenapp (gebouwd in **Lovable**) standaard naar Netlify - de functietimeout kapte stilletjes 15% van haar langere AI-gegenereerde recepten midden in de stream af.
 
 Vercel vs. Netlify is geen muntworp zodra een LLM-aanroep op uw kritieke pad staat.
 
@@ -12,7 +12,7 @@ Vercel vs. Netlify is geen muntworp zodra een LLM-aanroep op uw kritieke pad sta
 
 Bij **LaunchStudio** maken wij precies dit soort infrastructuurbeslissingen al sinds 2014 via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Afgekapte AI-antwoorden daalden van 15% naar vrijwel nul, en de app van Sanne verwerkte een piek van 6.000 bezoekers zonder één timeout. (€ 1.600 — Launch & Grow Pakket, gemigreerd en gedeployed in 7 werkdagen.) 🚀
+Afgekapte AI-antwoorden daalden van 15% naar vrijwel nul, en de app van Sanne verwerkte een piek van 6.000 bezoekers zonder één timeout. (€ 1.600 - Launch & Grow Pakket, gemigreerd en gedeployed in 7 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vercel-vs-netlify-expert-decision
 

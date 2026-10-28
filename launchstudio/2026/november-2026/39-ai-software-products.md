@@ -31,7 +31,7 @@ Target Persona: SaaS Founder / CFO / CTO
 }
 </script>
 
-In the traditional SaaS business model, the Cost of Goods Sold (COGS) approaches zero. Once you pay the fixed cost of developing a traditional application, adding a new user costs you pennies in AWS server fees. This allows traditional software products to enjoy 85% to 90% gross margins—the metric that drives software valuations.
+In the traditional SaaS business model, the Cost of Goods Sold (COGS) approaches zero. Once you pay the fixed cost of developing a traditional application, adding a new user costs you pennies in AWS server fees. This allows traditional software products to enjoy 85% to 90% gross margins - the metric that drives software valuations.
 
 AI software products break this fundamental economic rule. 
 
@@ -92,7 +92,7 @@ He offered a flat €49/month subscription. The product was a massive hit. He ac
 
 However, David had built the prototype using Cursor, and he hardcoded the backend to use GPT-4 for every step of the process. For every 100 reviews, the app called GPT-4 to translate them, called GPT-4 to classify the sentiment (Positive/Negative/Neutral), and finally called GPT-4 to write the summary report. 
 
-By month three, his AWS and OpenAI bills combined were €35,000. He was generating €39,200 in revenue. His gross margin was 10%—a catastrophic number for a software company. His investors told him that if he didn't fix his unit economics immediately, they would not fund his Seed round.
+By month three, his AWS and OpenAI bills combined were €35,000. He was generating €39,200 in revenue. His gross margin was 10% - a catastrophic number for a software company. His investors told him that if he didn't fix his unit economics immediately, they would not fund his Seed round.
 
 David engaged LaunchStudio. The Manifera engineering team executed a ruthless "Margin Optimization Sprint" in 15 business days.
 
@@ -104,10 +104,10 @@ Finally, they implemented Semantic Caching, so if a merchant clicked "Generate R
 
 **Result:** David's API costs plummeted by 78%. His €35,000 monthly bill dropped to €7,700. His gross margin expanded from a lethal 10% to a highly attractive 80%. He successfully raised his Seed round one month later, with investors praising his "mature understanding of AI unit economics."
 
-> *"I was so focused on building a cool feature that I didn't realize I had built a machine designed to drain my bank account. LaunchStudio didn't change what the user saw—the reports still looked amazing. But they completely re-engineered the engine underneath. They saved my gross margins, which literally saved my company."*
-> — **David Lindberg, Founder, ReviewSense AI (Stockholm)**
+> *"I was so focused on building a cool feature that I didn't realize I had built a machine designed to drain my bank account. LaunchStudio didn't change what the user saw - the reports still looked amazing. But they completely re-engineered the engine underneath. They saved my gross margins, which literally saved my company."*
+> - **David Lindberg, Founder, ReviewSense AI (Stockholm)**
 
-**Cost & Timeline:** €8,500 (Launch & Grow Package with Margin Optimization & Routing Add-on) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €8,500 (Launch & Grow Package with Margin Optimization & Routing Add-on) - production-ready and deployed in 15 business days.
 
 ---
 
@@ -115,7 +115,7 @@ Finally, they implemented Semantic Caching, so if a merchant clicked "Generate R
 
 ### (Scenario: Founder choosing a pricing model) Should I use flat monthly subscriptions or usage-based billing (credits) for my AI SaaS?
 
-If your COGS (Cost of Goods Sold) are unpredictable—meaning User A might consume 1,000 tokens a month, but User B might consume 5,000,000 tokens—you MUST use usage-based billing (or a credit system). If you use a flat subscription, power users will bankrupt you. LaunchStudio builds the complex Stripe webhooks required to track token usage in real-time and deduct credits from a user's account safely.
+If your COGS (Cost of Goods Sold) are unpredictable - meaning User A might consume 1,000 tokens a month, but User B might consume 5,000,000 tokens - you MUST use usage-based billing (or a credit system). If you use a flat subscription, power users will bankrupt you. LaunchStudio builds the complex Stripe webhooks required to track token usage in real-time and deduct credits from a user's account safely.
 
 ### (Scenario: Developer deciding on models) Is it actually safe to use cheaper models like GPT-4o-mini for production tasks?
 

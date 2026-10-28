@@ -12,7 +12,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Prototype AI: een verklarende woordenlijst voor oprichters voordat u met een engineer praat",
-  "description": "Een korte, eenvoudig geformuleerde verklarende woordenlijst van de termen die een engineer zal gebruiken wanneer hij uw prototype AI voor het eerst met u bespreekt — geschreven zodat u het gesprek kunt volgen en scherpere vragen kunt stellen, niet zodat u zelf technisch hoeft te worden.",
+  "description": "Een korte, eenvoudig geformuleerde verklarende woordenlijst van de termen die een engineer zal gebruiken wanneer hij uw prototype AI voor het eerst met u bespreekt - geschreven zodat u het gesprek kunt volgen en scherpere vragen kunt stellen, niet zodat u zelf technisch hoeft te worden.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -67,7 +67,7 @@ Niets uit deze woordenlijst maakt u in staat om zelf code te schrijven of te beo
 
 [LaunchStudio](https://launchstudio.eu/nl/) bouwt haar gesprekken met oprichters specifiek rond deze woordenschat, waarbij technische bevindingen worden vertaald naar taal die een niet-technische oprichter oprecht kan volgen in plaats van uit te gaan van eerdere vaardigheid, een aanpak gevormd door Manifera's eigen ervaring met het uitleggen van technische beslissingen op enterprise-niveau aan niet-technische belanghebbenden bij meer dan 160 geleverde projecten.
 
-[Breng uw prototype AI naar een gesprek dat u daadwerkelijk kunt volgen](https://launchstudio.eu/nl/#contact) — het begrijpen van de woordenschat verandert hoe nuttig het gesprek is, onmiddellijk.
+[Breng uw prototype AI naar een gesprek dat u daadwerkelijk kunt volgen](https://launchstudio.eu/nl/#contact) - het begrijpen van de woordenschat verandert hoe nuttig het gesprek is, onmiddellijk.
 
 ## Nog vijf termen die u zult horen zodra het gesprek technisch wordt
 
@@ -104,9 +104,9 @@ Voorafgaand aan haar eerste oriëntatiegesprek met LaunchStudio heeft Nadia spec
 **Resultaat:** Door het nauwkeurigere gesprek kon LaunchStudio de daadwerkelijke opdracht van EventCheck sneller en nauwkeuriger scopen bij het eerste gesprek, aangezien Nadia rechtstreeks kon bevestigen welke van de specifieke functies van haar product gevoelige gastgegevens raakten en welke niet.
 
 > *"Ik knikte vroeger gewoon mee in deze gesprekken in de hoop dat het uiteindelijk logisch zou worden. Het vooraf daadwerkelijk kennen van termen als 'autorisatie' en 'backend' betekende dat ik de ene vervolgvraag kon stellen die er echt toe deed."*
-> — **Nadia Verschuur, Oprichter, EventCheck (Leiden)**
+> - **Nadia Verschuur, Oprichter, EventCheck (Leiden)**
 
-**Kosten en tijdlijn:** € 1.400 (Launch Ready Pakket, verharding van toegang tot gastgegevens) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (Launch Ready Pakket, verharding van toegang tot gastgegevens) - voltooid in 6 werkdagen.
 
 ---
 
@@ -142,7 +142,7 @@ Dit omvat de termen die het meest consistent naar voren komen in vroege producti
       "name": "Moet ik deze woordenlijst uit mijn hoofd leren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terugverwijzen is volkomen prima — het doel is een realtime gesprek met vertrouwen te volgen."
+        "text": "Terugverwijzen is volkomen prima - het doel is een realtime gesprek met vertrouwen te volgen."
       }
     },
     {
@@ -150,7 +150,7 @@ Dit omvat de termen die het meest consistent naar voren komen in vroege producti
       "name": "Zal het leren van deze termen me in staat stellen werk zelf te evalueren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet volledig — het helpt u een gesprek te volgen, maar evalueren vereist nog steeds vaardigheid of een beoordelaar."
+        "text": "Niet volledig - het helpt u een gesprek te volgen, maar evalueren vereist nog steeds vaardigheid of een beoordelaar."
       }
     },
     {
@@ -158,7 +158,7 @@ Dit omvat de termen die het meest consistent naar voren komen in vroege producti
       "name": "Is het redelijk om een engineer te vragen een onbekende term te definiëren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Volkomen redelijk — een goede engineer moet elk begrip ter plekke duidelijk kunnen definiëren."
+        "text": "Volkomen redelijk - een goede engineer moet elk begrip ter plekke duidelijk kunnen definiëren."
       }
     },
     {

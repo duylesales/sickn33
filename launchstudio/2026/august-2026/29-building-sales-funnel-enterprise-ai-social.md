@@ -1,4 +1,4 @@
-🔥 Connor built a prototype using **Lovable** — connor, an operations director, used **lovable** to build an inventory planner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Connor built a prototype using **Lovable** - connor, an operations director, used **lovable** to build an inventory planner, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Connor's application achieved silky-smooth performance: Enterprise lead-to-demo conversion increased by 40%, securing 3 pilot projects. (€1,700 (Sandbox Workspace Package) — production-ready and deployed in 4 business days.). 🚀
+Connor's application achieved silky-smooth performance: Enterprise lead-to-demo conversion increased by 40%, securing 3 pilot projects. (€1,700 (Sandbox Workspace Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/building-sales-funnel-enterprise-ai
 

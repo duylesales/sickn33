@@ -1,4 +1,4 @@
-A founder's demo worked in every rehearsal — then crashed live in front of the one investor who mattered. The flow nobody tested was the one that got clicked. 💥📱
+A founder's demo worked in every rehearsal - then crashed live in front of the one investor who mattered. The flow nobody tested was the one that got clicked. 💥📱
 
 **The Pain Points:**
 ❌ **No Single Owner:** Multiple freelancers, no one accountable for the core data model.

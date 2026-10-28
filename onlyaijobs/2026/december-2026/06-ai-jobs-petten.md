@@ -13,7 +13,7 @@ Content Format: Regional Market Analysis
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Jobs in Petten: Energy Research, Medical Isotopes and a Campus in the Dunes",
-  "description": "Behind the dunes of North Holland sits a research campus for energy transition technology and nuclear medicine — a small, highly technical labour market for modelling, simulation and sensor data work.",
+  "description": "Behind the dunes of North Holland sits a research campus for energy transition technology and nuclear medicine - a small, highly technical labour market for modelling, simulation and sensor data work.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-03",
@@ -39,9 +39,9 @@ Drive north along the North Holland coast, past Bergen and Schoorl, and the road
 
 ## Why a Village in the Dunes Became a Research Site
 
-The location was chosen in the 1950s for a research reactor — isolated, coastal, with cooling water and distance from population centres. Around that nucleus, decades of research capability accumulated: nuclear technology and materials, and later a large energy research programme covering solar, wind, energy systems and industrial heat.
+The location was chosen in the 1950s for a research reactor - isolated, coastal, with cooling water and distance from population centres. Around that nucleus, decades of research capability accumulated: nuclear technology and materials, and later a large energy research programme covering solar, wind, energy systems and industrial heat.
 
-The result today is a campus where two quite different communities sit side by side. One works on radiation, materials and isotope production under an exceptionally strict safety regime. The other works on the energy transition — photovoltaics, wind, storage, hydrogen and system modelling. Both are deeply quantitative, and neither advertises for "AI engineers".
+The result today is a campus where two quite different communities sit side by side. One works on radiation, materials and isotope production under an exceptionally strict safety regime. The other works on the energy transition - photovoltaics, wind, storage, hydrogen and system modelling. Both are deeply quantitative, and neither advertises for "AI engineers".
 
 ## The Named Organisations Behind Petten's Data Market
 
@@ -49,9 +49,9 @@ The result today is a campus where two quite different communities sit side by s
 
 **NRG and the High Flux Reactor.** The nuclear research organisation operates the **High Flux Reactor** in Petten, a research reactor used for irradiation experiments, materials research and the production of medical isotopes. A substantial share of Europe's supply of certain diagnostic and therapeutic isotopes depends on a small number of reactors, and Petten is one of them. That gives operational reliability a significance well beyond the site itself: a shutdown is felt in hospitals.
 
-**The PALLAS project.** A new reactor is being realised in Petten to secure future isotope production and irradiation capacity. Large nuclear construction projects generate their own data work — licensing documentation, safety analysis, simulation, quality assurance and construction data management.
+**The PALLAS project.** A new reactor is being realised in Petten to secure future isotope production and irradiation capacity. Large nuclear construction projects generate their own data work - licensing documentation, safety analysis, simulation, quality assurance and construction data management.
 
-**The campus.** The site is developed as an **Energy and Health Campus**, intended to attract companies and research groups around those two themes. The surrounding region — **Alkmaar**, Schagen, Den Helder and Hollands Kroon — supplies the workforce and adds energy infrastructure of its own, including grid, gas and offshore connections.
+**The campus.** The site is developed as an **Energy and Health Campus**, intended to attract companies and research groups around those two themes. The surrounding region - **Alkmaar**, Schagen, Den Helder and Hollands Kroon - supplies the workforce and adds energy infrastructure of its own, including grid, gas and offshore connections.
 
 ## What Kind of AI and Data Work Actually Happens Here
 
@@ -81,7 +81,7 @@ For someone with an operations research or forecasting background, this is a gen
 | Typical AI work | Simulation, energy system modelling, materials data, safety analysis | Business analytics, healthcare data, grid and utility analytics |
 | Employer mix | A few specialised research organisations | A broad regional mix |
 | Working language | English in research groups, Dutch in operations | Dutch dominant |
-| Distance | — | About 25 minutes by car |
+| Distance | - | About 25 minutes by car |
 
 Almost nobody lives in Petten itself. The workforce commutes from Alkmaar, Schagen, Heerhugowaard, Den Helder and the coastal villages, and a large share drives, because public transport to the site is limited.
 
@@ -103,7 +103,7 @@ A team builds a day-ahead solar forecast for a portfolio of installations. Mean 
 
 The energy traders using it report no benefit. The reason is that their costs are driven by a small number of hours with large imbalance prices, typically when a front moves through faster or slower than predicted. Average error is the wrong target: what matters is the error distribution in those specific hours, and whether the forecast communicates its own uncertainty so a trader can hedge.
 
-Version two produces probabilistic forecasts, is evaluated with scoring rules that reward honest uncertainty, and is benchmarked on financial outcome rather than MAE. This mismatch — optimising an average when the value lies in the tail — is the single most common error in energy forecasting, and a candidate who raises it in an interview marks themselves as experienced.
+Version two produces probabilistic forecasts, is evaluated with scoring rules that reward honest uncertainty, and is benchmarked on financial outcome rather than MAE. This mismatch - optimising an average when the value lies in the tail - is the single most common error in energy forecasting, and a candidate who raises it in an interview marks themselves as experienced.
 
 ## A Common Misconception About Research Campuses
 
@@ -136,7 +136,7 @@ The trade-off is a thin specialist market. If a role at the campus ends, compara
 
 ## Career Growth From Energy and Nuclear Research
 
-This is one of the strongest domain-credential markets in the country. Energy system modelling experience transfers to grid operators, utilities, consultancies and regulators — all of which are hiring as the transition accelerates. Nuclear and radiation modelling is a small world with high barriers to entry and correspondingly durable careers, including international options at research reactors and safety authorities. Materials data experience transfers to semiconductor, chemical and manufacturing research.
+This is one of the strongest domain-credential markets in the country. Energy system modelling experience transfers to grid operators, utilities, consultancies and regulators - all of which are hiring as the transition accelerates. Nuclear and radiation modelling is a small world with high barriers to entry and correspondingly durable careers, including international options at research reactors and safety authorities. Materials data experience transfers to semiconductor, chemical and manufacturing research.
 
 ## Two Different Working Cultures on One Site
 
@@ -144,7 +144,7 @@ Candidates should understand that the campus contains two distinct professional 
 
 The energy research side works like applied research generally does: project-based, internationally collaborative, publishing where possible, with a mix of public funding and industry partnerships. Timelines are measured in project years, teams are mixed-nationality, and the balance between scientific curiosity and industrial usefulness is a constant negotiation.
 
-The nuclear side works under a licensed safety regime. Procedures are formal, access is controlled, documentation is exhaustive, and changes to anything that touches the safety case require review before implementation. That environment suits people who find rigour reassuring and frustrates those who prefer to iterate quickly. It also builds a professional profile — working inside a licensed, audited technical environment — that is directly transferable to aviation, pharmaceutical manufacturing, rail safety and other high-consequence sectors.
+The nuclear side works under a licensed safety regime. Procedures are formal, access is controlled, documentation is exhaustive, and changes to anything that touches the safety case require review before implementation. That environment suits people who find rigour reassuring and frustrates those who prefer to iterate quickly. It also builds a professional profile - working inside a licensed, audited technical environment - that is directly transferable to aviation, pharmaceutical manufacturing, rail safety and other high-consequence sectors.
 
 Neither culture is better. But arriving at one while expecting the other is the most common source of disappointment among new staff, and asking about it explicitly in an interview is entirely legitimate.
 
@@ -183,7 +183,7 @@ Yes for energy systems, forecasting and data engineering roles; nuclear safety a
 Research groups largely work in English, but operations, safety documentation and contractor coordination run in Dutch, and some roles require screening.
 
 ### (Scenario: candidate interested in climate) Is this genuinely climate-relevant work?
-Yes — solar technology, wind, storage, industrial heat and national energy system studies are core activities on the site.
+Yes - solar technology, wind, storage, industrial heat and national energy system studies are core activities on the site.
 
 ### (Scenario: ML practitioner) Is machine learning actually used, or is it all simulation?
 Both: simulation and optimisation dominate, with machine learning used for forecasting, surrogate modelling, materials discovery and anomaly detection.
@@ -198,8 +198,8 @@ Connections are limited and most staff drive; check the route from Alkmaar or Sc
   "mainEntity": [
     {"@type": "Question", "name": "Can I work in energy research in Petten without a physics background?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for energy systems, forecasting and data engineering roles; nuclear safety analysis usually requires physics or engineering training."}},
     {"@type": "Question", "name": "Is English sufficient to work in Petten?", "acceptedAnswer": {"@type": "Answer", "text": "Research groups largely work in English; operations, safety documentation and contractor coordination run in Dutch."}},
-    {"@type": "Question", "name": "Is the work in Petten climate-relevant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — solar technology, wind, storage, industrial heat and national energy system studies are core activities."}},
-    {"@type": "Question", "name": "Is machine learning used in energy research, or only simulation?", "acceptedAnswer": {"@type": "Answer", "text": "Both — simulation and optimisation dominate, with ML used for forecasting, surrogate models, materials discovery and anomaly detection."}},
+    {"@type": "Question", "name": "Is the work in Petten climate-relevant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - solar technology, wind, storage, industrial heat and national energy system studies are core activities."}},
+    {"@type": "Question", "name": "Is machine learning used in energy research, or only simulation?", "acceptedAnswer": {"@type": "Answer", "text": "Both - simulation and optimisation dominate, with ML used for forecasting, surrogate models, materials discovery and anomaly detection."}},
     {"@type": "Question", "name": "Is Petten reachable by public transport?", "acceptedAnswer": {"@type": "Answer", "text": "Connections are limited and most staff drive from Alkmaar, Schagen or Den Helder."}}
   ]
 }

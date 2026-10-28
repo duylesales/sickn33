@@ -6,7 +6,7 @@ A returned item doesn't become sellable inventory the second a customer drops it
 ❌ **No Fraud Detection:** Fixed refund policies and zero return-abuse scoring leave wardrobing and serial-return fraud unchecked.
 
 **The Manifera Solution:**
-✅ **Integration-First Evaluation:** We help IT teams stress-test WMS, OMS, carrier, and POS integration points before signature — not after go-live.
+✅ **Integration-First Evaluation:** We help IT teams stress-test WMS, OMS, carrier, and POS integration points before signature - not after go-live.
 ✅ **BORIS-Ready Architecture:** We verify buy-online-return-in-store logic updates inventory and order status correctly from POS-initiated transactions.
 ✅ **Structured Return Data:** We push vendors to expose return-reason data via API so it feeds merchandising insight, not just a support ticket queue.
 

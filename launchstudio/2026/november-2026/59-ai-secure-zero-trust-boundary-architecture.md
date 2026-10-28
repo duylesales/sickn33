@@ -95,9 +95,9 @@ Third, they installed a NeMo Guardrails Semantic Firewall at the Ingress Boundar
 **Result:** When the pentester returned and tried the exact same Prompt Injection attack, the Semantic Firewall instantly flagged the "database administrator" roleplay and dropped the connection. Even if the firewall had failed, the database's RLS would have physically rejected the query because the pentester's JWT token lacked the permissions to view other accounts. Julian's platform passed the penetration test and was safely redeployed.
 
 > *"We made the classic mistake of trusting the AI to follow the rules we gave it. LaunchStudio taught us that you must treat the AI as a hostile actor. They built the physical database constraints and the middleware firewalls that made our platform mathematically secure, regardless of what the AI tried to do. They saved our company's reputation."*
-> — **Julian Bauer, CTO, WealthSync (Zurich)**
+> - **Julian Bauer, CTO, WealthSync (Zurich)**
 
-**Cost & Timeline:** €19,500 (Launch & Grow Package with Zero-Trust Security & Penetration Testing Add-on) — production-ready and deployed in 18 business days.
+**Cost & Timeline:** €19,500 (Launch & Grow Package with Zero-Trust Security & Penetration Testing Add-on) - production-ready and deployed in 18 business days.
 
 ---
 

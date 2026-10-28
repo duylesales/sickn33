@@ -24,7 +24,7 @@ Een klant vraagt je om hun half afgebouwde Lovable-applicatie productierijp te m
 
 Tegen je gangbare uurtarief levert dat een bescheiden factuur op voor werk dat de klant heeft behoed voor een ernstig datalek én een langverwacht kwartaalcontract heeft veiliggesteld. Je bent betaald voor je typsnelheid in plaats van voor je expertise om te weten wélke elf uur er werkelijk toe deden.
 
-Dit is het kernprobleem van uurtje-factuurtje in een vakgebied waarin de benodigde uren zijn gekrompen, maar de bedrijfswaarde gelijk is gebleven of zelfs gestegen. Voor een freelancer of boutique studio is dit uitstekend op te lossen — maar niet door simpelweg je uurtarief te verhogen.
+Dit is het kernprobleem van uurtje-factuurtje in een vakgebied waarin de benodigde uren zijn gekrompen, maar de bedrijfswaarde gelijk is gebleven of zelfs gestegen. Voor een freelancer of boutique studio is dit uitstekend op te lossen - maar niet door simpelweg je uurtarief te verhogen.
 
 ## Waarom factureren per uur snelheid afstraft
 
@@ -44,9 +44,9 @@ Het logische alternatief is een vaste prijs (fixed price) gekoppeld aan een sche
 
 Bedenk wat het werk voor de klant waard is. Een productiegereedheidstraject waarmee een B2B SaaS-startup een enterprise-contract kan ondertekenen, is een veelvoud waard van de paar dagen die het jou kost. Een beveiligingsingreep die een meldingsplichtig datalek voorkomt, is veel meer waard dan de middag die je eraan besteedt. Een marktintroductie die zes weken eerder plaatsvindt, levert zes weken extra omzet op.
 
-Dat betekent niet dat je willekeurige bedragen kunt vragen. Het betekent dat je prijs zich bevindt tussen jouw leveringskosten en de ontvangen klantwaarde — en die bandbreedte is vrijwel altijd aanzienlijk groter dan een uurtarief suggereert.
+Dat betekent niet dat je willekeurige bedragen kunt vragen. Het betekent dat je prijs zich bevindt tussen jouw leveringskosten en de ontvangen klantwaarde - en die bandbreedte is vrijwel altijd aanzienlijk groter dan een uurtarief suggereert.
 
-Twee toetsvragen houden je scherp: Zou je dit project met een goed gevoel uitvoeren als het onverhoopt twee keer zoveel tijd kost? En oogt de prijs realistisch in vergelijking met de alternatieven van de klant — een traditionele bureauofferte, een vaste aanstelling, of de doorlopende kosten van een onopgelost probleem?
+Twee toetsvragen houden je scherp: Zou je dit project met een goed gevoel uitvoeren als het onverhoopt twee keer zoveel tijd kost? En oogt de prijs realistisch in vergelijking met de alternatieven van de klant - een traditionele bureauofferte, een vaste aanstelling, of de doorlopende kosten van een onopgelost probleem?
 
 ## Productiseer het werk dat je herhaaldelijk doet
 
@@ -56,7 +56,7 @@ Na een dozijn opdrachten merk je dat je steeds hetzelfde traject doorloopt: een 
 
 Het effect op acquisitie is direct merkbaar. Een potentiële opdrachtgever die drie freelancers vergelijkt die allemaal *"ontwikkeling op uurbasis"* aanbieden, kan geen onderscheid maken en kiest op de laagste prijs. Een prospect die leest: *"Productiegereedheid: Row-Level Security, API-secrets, back-ups, monitoring, deployment en documentatie, opgeleverd in vijf werkdagen, vaste prijs"* krijgt een kant-en-klaar besluit voorgelegd dat direct te accorderen is.
 
-LaunchStudio structureert zijn eigen dienstverlening exact op deze manier — vaste pakketten van € 800 tot € 7.500 op basis van scope, met managed hosting vanaf € 49 per maand — om precies deze reden: het ontneemt elke discussie over uren nog voordat het project begint.
+LaunchStudio structureert zijn eigen dienstverlening exact op deze manier - vaste pakketten van € 800 tot € 7.500 op basis van scope, met managed hosting vanaf € 49 per maand - om precies deze reden: het ontneemt elke discussie over uren nog voordat het project begint.
 
 ## Scoping die scherp genoeg is voor een vaste prijs
 
@@ -116,7 +116,7 @@ Een goed tarief hanteren en betalingen tijdig innen zijn twee verschillende disc
 
 **Herinner tijdig en zakelijk.** Een vriendelijke herinnering op dag 31 is reguliere administratie. Een boze mail op dag 75 is een conflict. De meeste betalingsachterstanden bij het mkb ontstaan door administratieve drukte, niet door kwade wil. Wie snel herinnert, wordt doorgaans snel betaald.
 
-**Bouw een liquiditeitsbuffer op.** Projectinkomsten komen in pieken en dalen. Een financiële buffer van minimaal drie maanden operationele kosten stelt je in staat om slechte opdrachten resoluut af te wijzen — wat op zichzelf een van de sterkste factoren is voor een gezond prijsniveau.
+**Bouw een liquiditeitsbuffer op.** Projectinkomsten komen in pieken en dalen. Een financiële buffer van minimaal drie maanden operationele kosten stelt je in staat om slechte opdrachten resoluut af te wijzen - wat op zichzelf een van de sterkste factoren is voor een gezond prijsniveau.
 
 **Zorg voor een vlekkeloze administratie.** Facturen met opeenvolgende factuurnummers, correcte btw-vermelding (inclusief btw-verlegd regelingen bij grensoverschrijdende diensten binnen de EU) en naleving van de wettelijke fiscale bewaarplicht. Stem dit af met een boekhouder; fouten op dit vlak zijn eenvoudig te voorkomen en professioneel advies verdient zichzelf direct terug.
 
@@ -126,7 +126,7 @@ Een praktijk die vaste prijzen hanteert, gefaseerd factureert en strak debiteure
 
 Er is een tweede aantrekkelijke markt: traditionele marketing- en designbureaus met klanten van wie de webapplicatie is gebouwd met tools zoals Lovable of Bolt, maar die zelf niet de diepgaande technische capaciteit in huis hebben om deze naar productie te brengen.
 
-LaunchStudio neemt dit werk aan op white-label basis, volledig geleverd onder jouw eigen bureaulabel, met een vaste scope en een vaste prijs zodat je met maximale zekerheid naar je eindklant kunt offreren. De software engineers zijn afkomstig van Manifera — elf jaar ervaring, meer dan 160 gerealiseerde projecten en klanten zoals Vodafone, TNO en CFLW, opererend vanuit Amsterdam Herengracht 420, Singapore en Ho Chi Minhstad.
+LaunchStudio neemt dit werk aan op white-label basis, volledig geleverd onder jouw eigen bureaulabel, met een vaste scope en een vaste prijs zodat je met maximale zekerheid naar je eindklant kunt offreren. De software engineers zijn afkomstig van Manifera - elf jaar ervaring, meer dan 160 gerealiseerde projecten en klanten zoals Vodafone, TNO en CFLW, opererend vanuit Amsterdam Herengracht 420, Singapore en Ho Chi Minhstad.
 
 [Vertel ons wat jouw klant heeft gebouwd](https://launchstudio.eu/nl/#contact), of bekijk hoe onze [pakketten](https://launchstudio.eu/nl/#packages) zijn opgebouwd.
 
@@ -147,9 +147,9 @@ De eerste drie prospects na deze ommezwaai accepteerden de vaste pakketprijs zon
 **Resultaat:** Gedurende de daaropvolgende acht maanden leverde Sem veertien fixed-price projecten op met een gemiddelde omzet van € 2.400 tegen een gemiddelde doorlooptijd van iets minder dan vier werkdagen, gecombineerd met negen doorlopende onderhoudscontracten. Zijn omzet verdrievoudigde bij nagenoeg gelijkblijvende werkuren, en gesprekken met prospects gaan tegenwoordig uitsluitend over bedrijfsresultaten in plaats van gewerkte uren.
 
 > *"Ik factureerde driehonderdveertig euro voor de elf uur werk waarmee mijn klant een contract binnensleepte bij elf rijscholen. De kwaliteit van het programmeerwerk was niet het probleem; mijn prijsmodel was dat wel."*
-> — **Sem Bruggeman, Freelance vibe coding developer (Groningen)**
+> - **Sem Bruggeman, Freelance vibe coding developer (Groningen)**
 
-**Kosten & Doorlooptijd:** Omgevormd van € 55 per uur naar vaste pakketten van € 250 / € 2.200 / € 5.500 plus € 65 per maand onderhoud — ingericht binnen één weekend.
+**Kosten & Doorlooptijd:** Omgevormd van € 55 per uur naar vaste pakketten van € 250 / € 2.200 / € 5.500 plus € 65 per maand onderhoud - ingericht binnen één weekend.
 
 ## Veelgestelde vragen
 

@@ -43,7 +43,7 @@ You did not fail the tutorial. The tutorial failed you. It taught AI development
 
 AI development, in its current form, is the act of using artificial intelligence tools to generate application code from descriptions, templates, or conversational prompts. It produces working software quickly and accessibly.
 
-Software engineering is the discipline of building software that works reliably under real-world conditions — including conditions nobody anticipated. It encompasses security architecture, performance optimization, failure recovery, data integrity, and compliance with regulations like GDPR.
+Software engineering is the discipline of building software that works reliably under real-world conditions - including conditions nobody anticipated. It encompasses security architecture, performance optimization, failure recovery, data integrity, and compliance with regulations like GDPR.
 
 The confusion between these two disciplines costs founders months of wasted effort and thousands of euros in failed launches. Understanding where AI development ends and software engineering begins is the single most important insight for any non-technical founder.
 
@@ -92,17 +92,17 @@ Cost: €800–€7,500 (fixed). Timeline: 1–3 weeks. Risk: minimal, because t
 
 [LaunchStudio](https://launchstudio.eu/en/) is Option C. It is an initiative by [Manifera](https://www.manifera.com/about-us/), a software development company founded by Herre Roelevink that has operated from Amsterdam (Herengracht 420), Singapore (100 Tras Street), and Ho Chi Minh City (10 Pho Quang Street) for over 11 years.
 
-The key differentiator: LaunchStudio's engineers work with AI-generated codebases every day. They understand Lovable's React patterns, Bolt's WebContainer output, and Cursor's context-aware generation. They do not need to learn your code structure — they already know it.
+The key differentiator: LaunchStudio's engineers work with AI-generated codebases every day. They understand Lovable's React patterns, Bolt's WebContainer output, and Cursor's context-aware generation. They do not need to learn your code structure - they already know it.
 
 ## The Real AI Development Workflow
 
 Here is the workflow that actually produces a launched product:
 
-1. **Validate the idea** (1 week) — Use Bolt to create a visual prototype and show it to 10 potential users
-2. **Build the interface** (1–2 weeks) — Use Lovable or Cursor to generate the complete frontend
-3. **Test with users** (1 week) — Share the prototype with 20 users and collect feedback
-4. **Production engineering** (1–3 weeks) — Hand the validated prototype to LaunchStudio for backend infrastructure
-5. **Launch and iterate** (ongoing) — Go live, collect real usage data, and improve based on evidence
+1. **Validate the idea** (1 week) - Use Bolt to create a visual prototype and show it to 10 potential users
+2. **Build the interface** (1–2 weeks) - Use Lovable or Cursor to generate the complete frontend
+3. **Test with users** (1 week) - Share the prototype with 20 users and collect feedback
+4. **Production engineering** (1–3 weeks) - Hand the validated prototype to LaunchStudio for backend infrastructure
+5. **Launch and iterate** (ongoing) - Go live, collect real usage data, and improve based on evidence
 
 Total timeline: 4–7 weeks from idea to revenue. Total cost: tool subscriptions (€40/month) plus LaunchStudio (€800–€7,500).
 
@@ -116,20 +116,20 @@ Compare that to the traditional path: hire a CTO (€8,000/month), spend three m
 
 Sofia, a paralegal in Leiden, followed seven YouTube tutorials to build a client intake dashboard for small law firms. She used Cursor with her basic HTML knowledge, combining snippets from different tutorials into a Next.js application with a form builder, document upload, and case tracking interface.
 
-The application worked on her computer. Then she sent the URL to a lawyer friend. The page showed a 502 error. The development server was not running on Sofia's laptop anymore. She restarted it, shared the localhost URL again — same error. She did not understand that localhost means her computer only.
+The application worked on her computer. Then she sent the URL to a lawyer friend. The page showed a 502 error. The development server was not running on Sofia's laptop anymore. She restarted it, shared the localhost URL again - same error. She did not understand that localhost means her computer only.
 
-After two more weeks of tutorial-following, Sofia managed to deploy to Vercel. The page loaded, but the form submissions went nowhere — the email integration from Tutorial #4 was configured for a test inbox that no longer existed. The document upload stored files in a temporary directory that Vercel cleared every 24 hours.
+After two more weeks of tutorial-following, Sofia managed to deploy to Vercel. The page loaded, but the form submissions went nowhere - the email integration from Tutorial #4 was configured for a test inbox that no longer existed. The document upload stored files in a temporary directory that Vercel cleared every 24 hours.
 
 Sofia found LaunchStudio through a search for "make my prototype work." The Manifera team assessed her Cursor-built application in a 15-minute call. They immediately identified seven critical issues, including the document storage problem, missing authentication (any visitor could access any case file), and the non-functional email pipeline.
 
-Within 10 business days, the team rebuilt the backend: proper file storage using AWS S3, email delivery via SendGrid, Supabase authentication with role-based access (admin lawyer vs. client), and proper deployment with environment variables. Sofia's entire frontend — every form, every button, every layout — stayed exactly as she built it.
+Within 10 business days, the team rebuilt the backend: proper file storage using AWS S3, email delivery via SendGrid, Supabase authentication with role-based access (admin lawyer vs. client), and proper deployment with environment variables. Sofia's entire frontend - every form, every button, every layout - stayed exactly as she built it.
 
 **Result:** LegalFlow onboarded its first three law firms within two weeks of launch, each paying €149/month for the platform.
 
 > *"I watched dozens of tutorials and still could not get my app to work for other people. LaunchStudio showed me the difference between building on my computer and building for the internet. Ten days later, I had paying clients."*
-> — **Sofia de Groot, Founder, LegalFlow (Leiden)**
+> - **Sofia de Groot, Founder, LegalFlow (Leiden)**
 
-**Cost & Timeline:** €3,100 (Launch & Grow Package) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €3,100 (Launch & Grow Package) - production-ready and deployed in 10 business days.
 
 ---
 
@@ -141,15 +141,15 @@ Your application is likely running on a local development server (localhost), wh
 
 ### (Scenario: Founder deciding how much to invest in AI development learning) How much coding do I need to learn to use AI development tools effectively?
 
-Zero coding knowledge is needed for Lovable and Bolt. For Cursor, basic familiarity with HTML and JavaScript helps you guide the AI more effectively. You do not need to learn backend development, database management, or deployment — those are exactly the components LaunchStudio provides.
+Zero coding knowledge is needed for Lovable and Bolt. For Cursor, basic familiarity with HTML and JavaScript helps you guide the AI more effectively. You do not need to learn backend development, database management, or deployment - those are exactly the components LaunchStudio provides.
 
 ### (Scenario: Founder comparing AI development platforms) Is Lovable, Bolt, or Cursor better for AI development of a SaaS product?
 
-Lovable is best for complete SaaS applications with user accounts and database needs. Bolt is best for rapid prototyping and validation. Cursor is best for founders with some coding experience who want granular control. Many successful founders use Bolt to validate, Lovable to build, and Cursor to customize — then LaunchStudio to launch.
+Lovable is best for complete SaaS applications with user accounts and database needs. Bolt is best for rapid prototyping and validation. Cursor is best for founders with some coding experience who want granular control. Many successful founders use Bolt to validate, Lovable to build, and Cursor to customize - then LaunchStudio to launch.
 
 ### (Scenario: Founder worried about long-term maintenance costs) What ongoing costs should I expect after launching an AI-developed product?
 
-Hosting (Vercel free tier or €20/month for Pro), database (Supabase free tier or €25/month for Pro), email service (SendGrid free tier for up to 100 emails/day), and optionally LaunchStudio's managed hosting at €49/month. Total: €0–€94/month for most early-stage products — far less than hiring a developer.
+Hosting (Vercel free tier or €20/month for Pro), database (Supabase free tier or €25/month for Pro), email service (SendGrid free tier for up to 100 emails/day), and optionally LaunchStudio's managed hosting at €49/month. Total: €0–€94/month for most early-stage products - far less than hiring a developer.
 
 ### (Scenario: Experienced developer evaluating AI development for a side project) Can AI development tools produce code clean enough for a professional engineer to maintain?
 
@@ -173,7 +173,7 @@ Yes, with caveats. Lovable generates clean React code with consistent patterns. 
       "name": "How much coding do I need to learn to use AI development tools effectively?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zero coding knowledge is needed for Lovable and Bolt. For Cursor, basic familiarity with HTML and JavaScript helps you guide the AI more effectively. You do not need to learn backend development, database management, or deployment — those are exactly the components LaunchStudio provides."
+        "text": "Zero coding knowledge is needed for Lovable and Bolt. For Cursor, basic familiarity with HTML and JavaScript helps you guide the AI more effectively. You do not need to learn backend development, database management, or deployment - those are exactly the components LaunchStudio provides."
       }
     },
     {
@@ -181,7 +181,7 @@ Yes, with caveats. Lovable generates clean React code with consistent patterns. 
       "name": "Is Lovable, Bolt, or Cursor better for AI development of a SaaS product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lovable is best for complete SaaS applications with user accounts and database needs. Bolt is best for rapid prototyping and validation. Cursor is best for founders with some coding experience who want granular control. Many successful founders use Bolt to validate, Lovable to build, and Cursor to customize — then LaunchStudio to launch."
+        "text": "Lovable is best for complete SaaS applications with user accounts and database needs. Bolt is best for rapid prototyping and validation. Cursor is best for founders with some coding experience who want granular control. Many successful founders use Bolt to validate, Lovable to build, and Cursor to customize - then LaunchStudio to launch."
       }
     },
     {

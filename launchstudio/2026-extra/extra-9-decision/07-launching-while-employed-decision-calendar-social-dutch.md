@@ -1,11 +1,11 @@
-🚨 Vijfenhalf uur per week. Dat was wat Nadia werkelijk overhield voor Tarievenwijzer naast haar baan — niet de vijftien uur waar ze op rekende. 😳
+🚨 Vijfenhalf uur per week. Dat was wat Nadia werkelijk overhield voor Tarievenwijzer naast haar baan - niet de vijftien uur waar ze op rekende. 😳
 
 Een side-project vertraagt niet met weken, maar met kwartalen, tenzij uw planning is afgestemd op sessies van zeventig minuten: 🧠
 
 ❌ Haar winterplan was om zelfstandig autorisaties en rollen te leren bouwen, gebaseerd op een onrealistische urenschatting
 ❌ Rolscheiding tussen gemeentelijke inkopers en leveranciers ontbrak volledig in de codebase
 ❌ Een API-sleutel voor Excel-parsing lag open en bloot in de client-side code
-❌ Onvoorspelbaar werk — zoals een autorisatie-audit — past simpelweg niet in een donderdagavond
+❌ Onvoorspelbaar werk - zoals een autorisatie-audit - past simpelweg niet in een donderdagavond
 
 ✅ Vier harde beslismomenten (gates) met vaste data verslaan achttien maanden doelloos aanmodderen
 ✅ Koop het werk in waarvan u de duur niet kunt voorspellen, behoud het overzichtelijke werk dat u zelf kunt afronden

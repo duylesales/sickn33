@@ -56,7 +56,7 @@ Copenhagen regularly appears near the top of rankings for quality of life, and f
 
 **Finance.** Danske Bank, Nordea's Danish operations, pension funds and fintech companies hire data scientists for risk, fraud, customer analytics and investment.
 
-**Technology and startups.** Copenhagen has produced well-known software companies — Zendesk and Unity both have Danish roots — and Trustpilot has its headquarters in the city. A lively startup ecosystem covers fintech, healthtech, climate tech and B2B software.
+**Technology and startups.** Copenhagen has produced well-known software companies - Zendesk and Unity both have Danish roots - and Trustpilot has its headquarters in the city. A lively startup ecosystem covers fintech, healthtech, climate tech and B2B software.
 
 **Public sector.** Danish public administration is highly digitised, and national agencies, regions and municipalities use data for planning and services.
 
@@ -98,7 +98,7 @@ The Øresund region adds another option. Malmö and Lund in southern Sweden are 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Every vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page and there is no paid placement, so listings compete on content rather than advertising budget. Browsing is free and requires no account.
 
-To be transparent: listings on OnlyAIJobs are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For data science jobs in Copenhagen, you will find few or no local vacancies there today, so use Danish job portals, company career pages, university vacancy lists and your network as your primary sources. OnlyAIJobs is useful if you are comparing Denmark with the Netherlands, and its approach — filter by category and real commute rather than by title and city — works for any search. Danish employers can list their first AI vacancy free via info@onlyaijobs.eu.
+To be transparent: listings on OnlyAIJobs are currently concentrated in the Netherlands, with employers such as Accenture, Cegeka, Mollie and Sendcloud. For data science jobs in Copenhagen, you will find few or no local vacancies there today, so use Danish job portals, company career pages, university vacancy lists and your network as your primary sources. OnlyAIJobs is useful if you are comparing Denmark with the Netherlands, and its approach - filter by category and real commute rather than by title and city - works for any search. Danish employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Typical Data Science Problems by Sector
 
@@ -118,7 +118,7 @@ Knowing which of these problem types excites you helps narrow a Copenhagen searc
 
 Danish hiring processes are usually thorough but friendly. Expect a first interview focused on motivation, background and team fit, followed by a technical interview or case and sometimes a personality or cognitive test, which are relatively common in Danish recruitment. Many employers publish a deadline for applications and interview candidates after it closes, so timelines can be longer than in markets with rolling recruitment. Cover letters are still expected by many Danish employers; keep them concise and specific about why this company and this role.
 
-Salary negotiations are straightforward. Research market levels for your role, consider whether the job falls under a collective agreement and remember that pension contributions — often substantial in Denmark — are part of the total package. Ask about the notice period, which can be long for employees who have worked for some time, as it affects when you can start.
+Salary negotiations are straightforward. Research market levels for your role, consider whether the job falls under a collective agreement and remember that pension contributions - often substantial in Denmark - are part of the total package. Ask about the notice period, which can be long for employees who have worked for some time, as it affects when you can start.
 
 ## Settling In
 
@@ -153,7 +153,7 @@ Many international data scientists who move to Copenhagen for a first role stay 
 
 An ML engineer working on recommendation systems in Berlin receives an offer from a Copenhagen logistics technology company. The gross salary is higher than in Berlin, but Danish taxes are also higher and rents are steep.
 
-He calculates net pay, including the special tax scheme he may be eligible for, and compares rent for a flat near an S-train line north of the city with his Berlin rent. He also considers working conditions: shorter standard hours, strong parental leave and a team that works in English. After visiting the office and meeting the team, he accepts the offer. In his first months, he finds the flat hierarchy challenging — his manager expects him to propose the roadmap for the forecasting system rather than wait for instructions — but after adjusting, he describes it as the most autonomous role of his career.
+He calculates net pay, including the special tax scheme he may be eligible for, and compares rent for a flat near an S-train line north of the city with his Berlin rent. He also considers working conditions: shorter standard hours, strong parental leave and a team that works in English. After visiting the office and meeting the team, he accepts the offer. In his first months, he finds the flat hierarchy challenging - his manager expects him to propose the roadmap for the forecasting system rather than wait for instructions - but after adjusting, he describes it as the most autonomous role of his career.
 
 ## Key Takeaways
 

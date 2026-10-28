@@ -34,7 +34,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Public administration in Europe holds some of the richest data on the continent and faces some of the hardest constraints on using it. That combination makes AI jobs in the public sector unusual: the problems are consequential, the scrutiny is real, and the pace is set by legitimacy rather than by competitive advantage. For engineers who want their work to matter to people who cannot choose another provider, it is among the most meaningful places to work — provided you know what you are joining.
+Public administration in Europe holds some of the richest data on the continent and faces some of the hardest constraints on using it. That combination makes AI jobs in the public sector unusual: the problems are consequential, the scrutiny is real, and the pace is set by legitimacy rather than by competitive advantage. For engineers who want their work to matter to people who cannot choose another provider, it is among the most meaningful places to work - provided you know what you are joining.
 
 ## Who Actually Hires
 
@@ -80,7 +80,7 @@ Public data is unlike commercial data in ways that shape every project.
 
 **Quality varies by purpose.** Fields used for payments are accurate; fields filled in for statistics may not be.
 
-**Open data is abundant.** Statistics offices, environment agencies and cities publish extensively, which makes it possible to practise this work before you are hired — a genuine advantage over sectors where relevant data is inaccessible to outsiders.
+**Open data is abundant.** Statistics offices, environment agencies and cities publish extensively, which makes it possible to practise this work before you are hired - a genuine advantage over sectors where relevant data is inaccessible to outsiders.
 
 ## Transparency, Registers and Public Accountability
 
@@ -114,7 +114,7 @@ Senior technical specialists usually earn less than they would at a technology c
 
 Career progression follows defined grades. Advancement is more predictable and slower than in industry, and moving between organisations within the public sector is common and usually preserves your conditions.
 
-Two practical points. First, temporary contracts and project-funded positions exist and are worth asking about, particularly in research institutes. Second, the application process is often formal, with fixed closing dates, standard forms and structured competency interviews — quite different from a startup's conversation over coffee, and worth preparing for on its own terms.
+Two practical points. First, temporary contracts and project-funded positions exist and are worth asking about, particularly in research institutes. Second, the application process is often formal, with fixed closing dates, standard forms and structured competency interviews - quite different from a startup's conversation over coffee, and worth preparing for on its own terms.
 
 ## Applying Successfully
 
@@ -166,7 +166,7 @@ To be clear about coverage: listings are currently concentrated in the Netherlan
 
 A Dutch municipality's data team was asked to build a model prioritising which housing inspections to carry out first. Technically it was straightforward.
 
-Before building, the team ran an impact assessment with legal and policy colleagues. Two issues emerged. The historical inspection data reflected where inspectors had previously been sent, not where problems actually were, so the model would have reproduced and amplified past patterns of attention in particular neighbourhoods. And the consequence for residents — an inspection — was intrusive enough to require a clear basis and a route to object.
+Before building, the team ran an impact assessment with legal and policy colleagues. Two issues emerged. The historical inspection data reflected where inspectors had previously been sent, not where problems actually were, so the model would have reproduced and amplified past patterns of attention in particular neighbourhoods. And the consequence for residents - an inspection - was intrusive enough to require a clear basis and a route to object.
 
 They stopped. Instead they built a simpler tool that surfaced objective indicators, left prioritisation to inspectors, and logged which indicators had been shown.
 

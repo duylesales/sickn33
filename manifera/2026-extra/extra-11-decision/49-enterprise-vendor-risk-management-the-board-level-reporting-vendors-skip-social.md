@@ -8,9 +8,9 @@
 **The Manifera Solution:**
 ✅ **Explicit Concentration Metrics:** Top vendor dependencies mapped against critical processes, with alternative-vendor status documented, not assumed.
 ✅ **Certification Currency Tracking:** A defined field for when a vendor's security certification was last reviewed, flagged when it's gone stale.
-✅ **A Real Translation Layer:** Operational vendor risk data converted into consistent, trend-visible board reporting — not a summary written under deadline pressure.
+✅ **A Real Translation Layer:** Operational vendor risk data converted into consistent, trend-visible board reporting - not a summary written under deadline pressure.
 
-DORA didn't invent this reporting gap — it just made ignoring it a compliance risk too. 📑
+DORA didn't invent this reporting gap - it just made ignoring it a compliance risk too. 📑
 
 👉 Read our full deep dive on the board-level vendor risk reporting most organizations skip: https://www.manifera.com/blog/enterprise-vendor-risk-management-the-board-level-reporting-vendors-skip
 

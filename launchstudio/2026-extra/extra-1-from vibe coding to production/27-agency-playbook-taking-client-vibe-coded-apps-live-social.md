@@ -7,12 +7,12 @@ Clients now show up with a working AI-generated prototype, not a blank brief. Tr
 ❌ Full-stack tools (Lovable, Bolt) vs. interface-only tools (v0) need totally different proposals
 ❌ Treating every AI-assisted client as a confusing edge case leaves money on the table
 
-✅ Step 1: a rapid, structured audit — check for the recurring patterns, not "how good is this code"
+✅ Step 1: a rapid, structured audit - check for the recurring patterns, not "how good is this code"
 ✅ Step 2: separate "needs hardening" from "needs building" before pricing anything
 ✅ Step 3: price around the audit's specific findings, not a generic package
 ✅ Fluency with AI-generated code patterns is a learnable, differentiating skill
 
-At **LaunchStudio**, we're a white-label production partner for exactly this — audit and hardening delivered under YOUR branding. Backed by Manifera's team across 160+ delivered projects. 🛡️
+At **LaunchStudio**, we're a white-label production partner for exactly this - audit and hardening delivered under YOUR branding. Backed by Manifera's team across 160+ delivered projects. 🛡️
 
 His result: won the engagement at a fair price, and now runs every AI-native client through audit-first. 🚀
 

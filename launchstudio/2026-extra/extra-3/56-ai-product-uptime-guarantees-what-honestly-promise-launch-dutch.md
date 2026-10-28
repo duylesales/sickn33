@@ -55,7 +55,7 @@ Voor een oprecht product in een vroeg stadium zonder uitgebreide operationele ge
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het bepalen van een oprecht eerlijke, haalbare uptime-toezegging op basis van de daadwerkelijke infrastructuur en afhankelijkheidsbetrouwbaarheid, in plaats van een getal dat gekozen is om hoe professioneel het klinkt. Dit wordt ondersteund door Manifera's bredere engineering-discipline in het instellen en nakomen van realistische service-toezeggingen over haar enterprise-opdrachten.
 
-[Krijg een eerlijk uptime-getal dat uw infrastructuur daadwerkelijk kan ondersteunen](https://launchstudio.eu/nl/#contact) — een indrukwekkend klinkende belofte die u niet kunt nakomen kost meer dan een behoudende belofte die u wel kunt nakomen.
+[Krijg een eerlijk uptime-getal dat uw infrastructuur daadwerkelijk kan ondersteunen](https://launchstudio.eu/nl/#contact) - een indrukwekkend klinkende belofte die u niet kunt nakomen kost meer dan een behoudende belofte die u wel kunt nakomen.
 
 ## Wat daadwerkelijk op schrift thuishoort zodra u zich wel aan een getal verbindt
 
@@ -84,9 +84,9 @@ Toen een echte storing van verschillende uren – veroorzaakt door een probleem 
 **Resultaat:** LaunchStudio hielp Merel bij het heronderhandelen van toekomstige contracten rond een meer behoudend, oprecht haalbaar uptime-getal dat specifiek rekening hield met de eigen historische betrouwbaarheid van haar AI-provider. Dit ging samen met het implementeren van de observatiepraktijken die nodig zijn om de uptime voortaan nauwkeurig bij te houden en te rapporteren. Hiermee werd een aspiratiegetal vervangen door een specifiek, eerlijk en verdedigbaar getal.
 
 > *"Ik koos 99,9% omdat het is wat ik andere bedrijven zag adverteren, zonder enige daadwerkelijke wiskunde te doen over of mijn eigen opzet (inclusief een afhankelijkheid die ik niet beheer) dat oprecht kon leveren. De eerste echte storing die niet eens mijn eigen schuld was zette me nog steeds in contractbreuk van een getal waarvan ik nooit daadwerkelijk had geverifieerd dat ik het kon halen."*
-> — **Merel Jansen, Oprichter, FactuurVolg (Delft)**
+> - **Merel Jansen, Oprichter, FactuurVolg (Delft)**
 
-**Kosten en tijdlijn:** € 900 (herkalibratie van uptime-toezegging en instellen van observatie) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 900 (herkalibratie van uptime-toezegging en instellen van observatie) - voltooid in 4 werkdagen.
 
 ---
 

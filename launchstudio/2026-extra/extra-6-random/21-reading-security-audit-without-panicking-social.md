@@ -1,6 +1,6 @@
 😳 Tessa Groen opened her security audit PDF at her kitchen table in Hilversum and hit a wall of jargon she'd never seen strung together before: "critical," "SQL injection," "exposed service role key," "CVSS 9.1." She'd commissioned the audit herself, on her own MediaFlow app, and had no idea whether to feel relieved or terrified.
 
-A report a founder can't interpret doesn't actually reduce risk — it just relocates the anxiety. 🧠
+A report a founder can't interpret doesn't actually reduce risk - it just relocates the anxiety. 🧠
 
 ❌ Two Critical findings and three High findings landed with zero plain-language explanation
 ❌ Terms like "exposed service role key" and "missing row-level security policy" meant nothing to her
@@ -11,7 +11,7 @@ A report a founder can't interpret doesn't actually reduce risk — it just relo
 ✅ Sort findings into "must fix before launch" (Critical/High) vs. "backlog for next month" (Medium/Low)
 ✅ Treat the report as a checklist, not a verdict
 
-At **LaunchStudio**, every security audit ships with a plain-language executive summary and a walkthrough call — the same rigor Manifera's 11+ years of production engineering brings to every report. 🛡️
+At **LaunchStudio**, every security audit ships with a plain-language executive summary and a walkthrough call - the same rigor Manifera's 11+ years of production engineering brings to every report. 🛡️
 
 Her result: MediaFlow onboarded its first three paying customers on schedule, with both Critical vulnerabilities closed and a documented remediation plan for the rest. 🚀
 

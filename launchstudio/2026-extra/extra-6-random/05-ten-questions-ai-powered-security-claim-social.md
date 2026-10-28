@@ -1,4 +1,4 @@
-🔍 Fenna Aarden built "ZorgMeld," a care coordination app, using Lovable. Before launch she ran a third-party "AI-powered security scan" and got a clean result — reassured, she moved forward with her launch plan. 😳
+🔍 Fenna Aarden built "ZorgMeld," a care coordination app, using Lovable. Before launch she ran a third-party "AI-powered security scan" and got a clean result - reassured, she moved forward with her launch plan. 😳
 
 A green checkmark can mean almost anything. That's the problem. 🧠
 
@@ -11,7 +11,7 @@ A green checkmark can mean almost anything. That's the problem. 🧠
 ✅ Implement server-side authorization tied to each user's actual assignments, not just their login
 ✅ Treat a clean automated scan as a starting point, not a conclusion, for anything handling sensitive data
 
-At **LaunchStudio**, Manifera's 120+ engineers combine automated checks with real human verification of authorization and data-access logic — coordinated in part through our Singapore hub. 🛡️
+At **LaunchStudio**, Manifera's 120+ engineers combine automated checks with real human verification of authorization and data-access logic - coordinated in part through our Singapore hub. 🛡️
 
 Her result: ZorgMeld now enforces authorization checks scoped to each coordinator's caseload, closing a gap the original "AI-powered" scan was never built to find. 🚀
 

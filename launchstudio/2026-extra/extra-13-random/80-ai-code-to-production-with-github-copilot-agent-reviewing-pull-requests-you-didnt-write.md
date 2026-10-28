@@ -25,7 +25,7 @@ Assign an issue to GitHub Copilot's coding agent and, some minutes later, a pull
 
 ## Why Review Becomes the Bottleneck for AI Code to Production
 
-When you write code yourself, understanding comes for free. When an agent writes it, understanding has to be rebuilt from the diff. Founders under time pressure tend to skim, see green checks and merge. The problems that slip through are not usually syntax errors — CI catches those — but decisions: a new public route, a loosened permission, a migration that rewrites a column, a dependency you did not choose.
+When you write code yourself, understanding comes for free. When an agent writes it, understanding has to be rebuilt from the diff. Founders under time pressure tend to skim, see green checks and merge. The problems that slip through are not usually syntax errors - CI catches those - but decisions: a new public route, a loosened permission, a migration that rewrites a column, a dependency you did not choose.
 
 ## Step 1: Make Main Unmergeable Without You
 
@@ -33,7 +33,7 @@ Configure branch protection on your main branch:
 
 - Require pull requests; no direct pushes.
 - Require status checks to pass (type checks, linting, tests, secret scanning).
-- Require your approval — the agent cannot approve its own work.
+- Require your approval - the agent cannot approve its own work.
 - Restrict who and what can push, including automation tokens.
 
 This turns "the agent merged something" from a possibility into an impossibility.
@@ -54,7 +54,7 @@ For each agent pull request, check in this order:
 6. **Tests.** Do the tests assert the intended behaviour, including what must be refused?
 7. **Error handling.** Are failures reported, or swallowed?
 
-Most pull requests take a few minutes with this list. The ones touching items 2, 3 or 5 deserve slower reading — or a second pair of eyes.
+Most pull requests take a few minutes with this list. The ones touching items 2, 3 or 5 deserve slower reading - or a second pair of eyes.
 
 ## Step 4: Let CI Do the Tedious Checks
 
@@ -112,7 +112,7 @@ These are small scripts, and they turn your review conventions into automated en
 
 ## Security of the Agent's Environment
 
-The agent runs in an environment with access to your repository and possibly secrets. Keep production secrets out of that environment, limit network access where the platform allows, review any changes the agent proposes to CI workflows (which could expose secrets) and treat content from external sources — issues opened by strangers, third-party documentation — as potentially containing instructions aimed at the agent.
+The agent runs in an environment with access to your repository and possibly secrets. Keep production secrets out of that environment, limit network access where the platform allows, review any changes the agent proposes to CI workflows (which could expose secrets) and treat content from external sources - issues opened by strangers, third-party documentation - as potentially containing instructions aimed at the agent.
 
 ## Measuring Agent Contribution
 
@@ -120,7 +120,7 @@ Track how agent pull requests perform: share merged without changes, share requi
 
 ## Keeping Humans in the Loop for What Matters
 
-Delegate routine tasks — test additions, small bug fixes, dependency updates, documentation — freely. Keep humans firmly in charge of authentication, authorisation, payments, data migrations, infrastructure and anything involving personal data. The division is not about distrust; it is about matching the cost of a mistake to the level of review.
+Delegate routine tasks - test additions, small bug fixes, dependency updates, documentation - freely. Keep humans firmly in charge of authentication, authorisation, payments, data migrations, infrastructure and anything involving personal data. The division is not about distrust; it is about matching the cost of a mistake to the level of review.
 
 ## Handling Agent Pull Requests That Go Wrong
 
@@ -128,7 +128,7 @@ Sometimes an agent pull request is simply off track: it misread the issue, touch
 
 ## Keeping Documentation in Step
 
-Agents read repository documentation. When your architecture or conventions change — a new authorisation helper, a different way of handling payments — update the README and instruction files in the same pull request. Otherwise the agent keeps following old patterns, and you spend review time correcting them. Treat documentation updates as part of the definition of done.
+Agents read repository documentation. When your architecture or conventions change - a new authorisation helper, a different way of handling payments - update the README and instruction files in the same pull request. Otherwise the agent keeps following old patterns, and you spend review time correcting them. Treat documentation updates as part of the definition of done.
 
 ## Release Discipline With High Change Volume
 
@@ -136,7 +136,7 @@ Agent-assisted development can produce many small merges per day. Batch deployme
 
 ## Lessons From Early Adopters
 
-Founders who adopted coding agents early report similar lessons: the first weeks require investment in issue quality, repository rules and CI; after that, agents reliably handle a large share of routine work; review remains essential, especially for security-sensitive areas; and the biggest wins come from delegating tasks founders had been postponing for months — tests, refactors, documentation. The risk is not the agent itself, but merging its work without the guardrails described here.
+Founders who adopted coding agents early report similar lessons: the first weeks require investment in issue quality, repository rules and CI; after that, agents reliably handle a large share of routine work; review remains essential, especially for security-sensitive areas; and the biggest wins come from delegating tasks founders had been postponing for months - tests, refactors, documentation. The risk is not the agent itself, but merging its work without the guardrails described here.
 
 ## Final Checklist for Agent-Driven Development
 
@@ -144,7 +144,7 @@ Branch protection and code owners configured; required checks including route gu
 
 ## Why This Matters More Every Month
 
-Coding agents are becoming more capable and more autonomous with each release. Their output will grow in volume and in scope — longer tasks, more files, more decisions made without asking. That trend makes the guardrails in this article more important over time, not less. Founders who set up branch protection, code owners, targeted CI checks and a disciplined review habit now will be able to delegate ever larger tasks safely as agents improve. Those who rely on quick skims of green pull requests will find that the gap between what the agent did and what they understood keeps widening — until a customer discovers the difference first. Investing a few hours in guardrails today buys the freedom to use tomorrow's agents with confidence.
+Coding agents are becoming more capable and more autonomous with each release. Their output will grow in volume and in scope - longer tasks, more files, more decisions made without asking. That trend makes the guardrails in this article more important over time, not less. Founders who set up branch protection, code owners, targeted CI checks and a disciplined review habit now will be able to delegate ever larger tasks safely as agents improve. Those who rely on quick skims of green pull requests will find that the gap between what the agent did and what they understood keeps widening - until a customer discovers the difference first. Investing a few hours in guardrails today buys the freedom to use tomorrow's agents with confidence.
 
 ## First Step
 
@@ -152,9 +152,9 @@ Enable branch protection on your main branch today, require one approval and pas
 
 ## Where LaunchStudio Fits
 
-LaunchStudio sets up the guardrails that make agent-driven development safe: branch protection, CI gates including negative authorisation tests and secret scanning, migration checks, repository instructions for the agent, staging and rollback — and reviews what the agent has already merged. LaunchStudio is powered by Manifera, whose engineers use AI-assisted development daily inside review practices refined across 160+ projects, working from Ho Chi Minh City with client contact in Amsterdam and Singapore. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); GitHub's documentation on [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) explains the settings.
+LaunchStudio sets up the guardrails that make agent-driven development safe: branch protection, CI gates including negative authorisation tests and secret scanning, migration checks, repository instructions for the agent, staging and rollback - and reviews what the agent has already merged. LaunchStudio is powered by Manifera, whose engineers use AI-assisted development daily inside review practices refined across 160+ projects, working from Ho Chi Minh City with client contact in Amsterdam and Singapore. See [Manifera's custom software development](https://www.manifera.com/services/custom-software-development/); GitHub's documentation on [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) explains the settings.
 
-[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — including the code your agent wrote last night.
+[Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) - including the code your agent wrote last night.
 
 ## Real example
 
@@ -162,16 +162,16 @@ LaunchStudio sets up the guardrails that make agent-driven development safe: bra
 
 Rutger Veldkamp, who runs a family campsite near Nunspeet and knows enough code to be dangerous, built Campingplan: a reservation system for small campsites with pitch maps, seasonal pricing and online payment. He began assigning issues to GitHub Copilot's coding agent and, in two months, merged about forty of its pull requests, most after a quick look. Nine campsites in the Veluwe used the system.
 
-A review before the summer season found what had slipped through. One pull request, meant to fix a pricing display bug, had also made the availability API public without authentication, exposing guest names per pitch. Another added a migration that recalculated all stored booking prices using the new seasonal rules — changing prices of bookings already paid. A third introduced a package for date handling that duplicated an existing one. The agent's workflow had access to a repository secret containing the production database URL. There was no branch protection; Rutger had occasionally merged from his phone.
+A review before the summer season found what had slipped through. One pull request, meant to fix a pricing display bug, had also made the availability API public without authentication, exposing guest names per pitch. Another added a migration that recalculated all stored booking prices using the new seasonal rules - changing prices of bookings already paid. A third introduced a package for date handling that duplicated an existing one. The agent's workflow had access to a repository secret containing the production database URL. There was no branch protection; Rutger had occasionally merged from his phone.
 
 Over seven business days, LaunchStudio's engineers restored authentication on the availability API, reverted the price recalculation and restored original booking prices from backups, removed the duplicate package, rotated the database credentials and removed production secrets from the agent's environment, configured branch protection with required checks, added negative authorisation tests, migration linting and secret scanning to CI, wrote repository instructions for the agent and set up staging with preview deployments.
 
-**Result:** Rutger still assigns most issues to the agent. In the following season, CI blocked five agent pull requests before review — two with permission changes — and no incorrect changes reached guests or campsite owners.
+**Result:** Rutger still assigns most issues to the agent. In the following season, CI blocked five agent pull requests before review - two with permission changes - and no incorrect changes reached guests or campsite owners.
 
 > *"The agent did what I asked, plus a few things I didn't. The checklist is how I find the few things."*
-> — **Rutger Veldkamp, Founder, Campingplan (Nunspeet)**
+> - **Rutger Veldkamp, Founder, Campingplan (Nunspeet)**
 
-**Cost & Timeline:** €2,100 (review of merged changes, fixes, branch protection, CI gates and agent guardrails) — completed in 7 business days.
+**Cost & Timeline:** €2,100 (review of merged changes, fixes, branch protection, CI gates and agent guardrails) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Keep production credentials out of the agent's environment and repository secret
 
 ### How does Manifera combine AI agents with code review?
 
-Manifera's engineers use AI agents for speed and keep human review focused on permissions, data changes and dependencies, supported by CI gates — the same model LaunchStudio sets up for founders.
+Manifera's engineers use AI agents for speed and keep human review focused on permissions, data changes and dependencies, supported by CI gates - the same model LaunchStudio sets up for founders.
 
 ### Does a disciplined review process affect site reliability and SEO?
 

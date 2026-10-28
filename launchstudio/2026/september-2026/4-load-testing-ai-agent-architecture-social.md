@@ -1,4 +1,4 @@
-⚡ Olivia, an operations lead, built a multi-agent support tool using **Lovable** — then watched her agents send duplicate responses and crash with a wall of `429 Too Many Requests` errors the moment 100 concurrent users logged in. 👥
+⚡ Olivia, an operations lead, built a multi-agent support tool using **Lovable** - then watched her agents send duplicate responses and crash with a wall of `429 Too Many Requests` errors the moment 100 concurrent users logged in. 👥
 
 Load testing an AI app is fundamentally different: your bottleneck is third-party API rate limits, not your own CPU and memory. 🧠
 

@@ -34,11 +34,11 @@ Content Format: Policy Brief
 }
 </script>
 
-A municipality that wants to show its residents that there is interesting work locally often has little more than a generic reference to "the job board" or a list of companies on a business park. That isn't a concrete tool — it doesn't tell a resident which specific role is open at what specific distance from their home.
+A municipality that wants to show its residents that there is interesting work locally often has little more than a generic reference to "the job board" or a list of companies on a business park. That isn't a concrete tool - it doesn't tell a resident which specific role is open at what specific distance from their home.
 
 ## Why This Is Relevant to Municipal Policy
 
-Municipalities with a technology sector or knowledge cluster — often including AI, ML or data work — want to show that this employment exists, both to residents and to companies considering settling there. An address-level job board makes that concrete: not "there is work in our municipality" as an abstract claim, but a directly checkable list of open roles with exact distance.
+Municipalities with a technology sector or knowledge cluster - often including AI, ML or data work - want to show that this employment exists, both to residents and to companies considering settling there. An address-level job board makes that concrete: not "there is work in our municipality" as an abstract claim, but a directly checkable list of open roles with exact distance.
 
 ## How This Fits With Existing Municipal Work
 
@@ -46,7 +46,7 @@ Municipalities with a technology sector or knowledge cluster — often including
 
 **Support for employers on business parks.** If the municipality already maintains contact with local employers about business location policy or permits, encouraging a free first vacancy listing is a small, logical addition.
 
-**Substantiating business location policy.** A visible list of local AI/ML/Data vacancies is a concrete, verifiable signal to companies considering settling in the municipality — stronger than a general claim about "an attractive business climate."
+**Substantiating business location policy.** A visible list of local AI/ML/Data vacancies is a concrete, verifiable signal to companies considering settling in the municipality - stronger than a general claim about "an attractive business climate."
 
 ## What This Is Not
 
@@ -64,14 +64,14 @@ This is not a replacement for municipal labour market or business location polic
 
 | Aspect | "There is plenty of employment here" | Visible, address-level vacancy list |
 |---|---|---|
-| Verifiability for a resident | Low | High — directly checkable |
+| Verifiability for a resident | Low | High - directly checkable |
 | Usable in a report | Limited, hard to substantiate | Concrete data point |
-| Cost to maintain | None, but also no evidential value | Minimal — it already exists elsewhere |
+| Cost to maintain | None, but also no evidential value | Minimal - it already exists elsewhere |
 | Credibility with press/administrators | Variable | Higher thanks to verifiability |
 
 ## Why This Can Also Strengthen the Relationship With Local Employers
 
-A municipality that actively points out the option to post a vacancy for free offers local employers a concrete, cost-free benefit — something tangible in a relationship that otherwise often stays limited to permits and regulations. This small gesture can noticeably improve the tone of the wider contact between municipality and business owner, simply because for once it is something the municipality offers the business rather than the other way round.
+A municipality that actively points out the option to post a vacancy for free offers local employers a concrete, cost-free benefit - something tangible in a relationship that otherwise often stays limited to permits and regulations. This small gesture can noticeably improve the tone of the wider contact between municipality and business owner, simply because for once it is something the municipality offers the business rather than the other way round.
 
 ## A Concrete Scenario of How This Enriches an Existing Conversation
 
@@ -83,15 +83,15 @@ Municipalities sometimes assume this kind of information is best spread through 
 
 ## Why This Can Also Improve How Local Business Owners Perceive the Municipality
 
-A municipality that is mainly associated with regulations, permits and enforcement gets a chance, with small, free tips like this, to also position itself as a partner that actively thinks along about a company's growth — a relatively cheap way to noticeably improve the tone of the relationship between municipality and business owner.
+A municipality that is mainly associated with regulations, permits and enforcement gets a chance, with small, free tips like this, to also position itself as a partner that actively thinks along about a company's growth - a relatively cheap way to noticeably improve the tone of the relationship between municipality and business owner.
 
 ## How to Measure This Without Setting Up a Complicated New System
 
-A municipality doesn't need an extensive new monitoring system to see whether this approach produces anything — a simple, periodic check (for example, every quarter) of how many companies actually used the free first vacancy listing after a municipal mention is enough as a first indicator. It doesn't need perfect attribution — even a rough estimate gives a municipality enough basis to decide whether the approach is worth continuing or expanding.
+A municipality doesn't need an extensive new monitoring system to see whether this approach produces anything - a simple, periodic check (for example, every quarter) of how many companies actually used the free first vacancy listing after a municipal mention is enough as a first indicator. It doesn't need perfect attribution - even a rough estimate gives a municipality enough basis to decide whether the approach is worth continuing or expanding.
 
 ## Why This Initiative Lends Itself Well to Cooperation Between Neighbouring Municipalities
 
-Municipalities close to each other can take up this approach together instead of each reinventing the wheel — a shared communication effort towards local employers across a whole region, rather than municipality by municipality, saves time and ensures a more consistent message to companies that often operate across municipal boundaries anyway.
+Municipalities close to each other can take up this approach together instead of each reinventing the wheel - a shared communication effort towards local employers across a whole region, rather than municipality by municipality, saves time and ensures a more consistent message to companies that often operate across municipal boundaries anyway.
 
 ## Where This Fits in the Municipal Toolkit
 
@@ -107,7 +107,7 @@ Municipalities have several roles in the labour market. Visibility of local AI v
 
 The core: it isn't a new policy area, but a connecting element between departments that are each already in conversation with employers or residents.
 
-## Data Municipalities Already Use — and What Vacancy Data Adds
+## Data Municipalities Already Use - and What Vacancy Data Adds
 
 For economic monitoring, municipalities often work with established sources. Vacancy data complements them on one specific point.
 
@@ -144,7 +144,7 @@ Because labour markets don't stop at the municipal boundary, cooperation is the 
 A reference doesn't have to be long. A text like this fits in the "Working and doing business" section:
 
 > **Working in [municipality] in AI, data and technology**
-> Companies in our municipality and region work on data, software and artificial intelligence — often without you knowing them. Want to know which roles are open now and how far they are from your home? Take a look at, among others, [address-level job board] and UWV's vacancy services. Are you an employer who wants to make your vacancy visible? Contact our account management team or the Employer Service Point in the region.
+> Companies in our municipality and region work on data, software and artificial intelligence - often without you knowing them. Want to know which roles are open now and how far they are from your home? Take a look at, among others, [address-level job board] and UWV's vacancy services. Are you an employer who wants to make your vacancy visible? Contact our account management team or the Employer Service Point in the region.
 
 ## Common Mistakes to Avoid
 
@@ -173,16 +173,16 @@ Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whet
 An address-level job board shows the exact distance from home for AI/ML/Data work specifically, which a resident can check directly, instead of a general claim that there is local work.
 
 ### (Scenario: municipality that thinks this requires a big project) Is this a large policy project, or something smaller?
-Something smaller — it is a concrete addition to existing communication with residents or existing employer relationships, not a new policy project in itself.
+Something smaller - it is a concrete addition to existing communication with residents or existing employer relationships, not a new policy project in itself.
 
 ### (Scenario: municipality wanting to use this for business location policy) Can this help attract new companies to the municipality?
-It can be a concrete, verifiable signal about existing local employment, which comes across as stronger than a general claim about the business climate — but it doesn't replace broader business location policy.
+It can be a concrete, verifiable signal about existing local employment, which comes across as stronger than a general claim about the business climate - but it doesn't replace broader business location policy.
 
 ### (Scenario: municipality unsure whether this duplicates employer relationships) Does this overlap with contact we already have with local employers?
-Not as duplication — it is a small, logical addition to existing contact, for example through business location policy or permits, in which you encourage employers to make vacancies visible.
+Not as duplication - it is a small, logical addition to existing contact, for example through business location policy or permits, in which you encourage employers to make vacancies visible.
 
 ### (Scenario: municipality wanting to know whether this solves a structural shortage) Does this solve a structural shortage of employment if there is one?
-No — it specifically solves the visibility problem for employment that already exists. A structural shortage requires broader economic development measures.
+No - it specifically solves the visibility problem for employment that already exists. A structural shortage requires broader economic development measures.
 
 <script type="application/ld+json">
 {
@@ -190,10 +190,10 @@ No — it specifically solves the visibility problem for employment that already
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "What does this add compared with a generic reference to \"the job board\"?", "acceptedAnswer": {"@type": "Answer", "text": "An address-level job board shows the exact distance from home for AI/ML/Data work specifically, directly checkable by a resident."}},
-    {"@type": "Question", "name": "Is this a large policy project, or something smaller?", "acceptedAnswer": {"@type": "Answer", "text": "Something smaller — a concrete addition to existing communication or employer relationships."}},
+    {"@type": "Question", "name": "Is this a large policy project, or something smaller?", "acceptedAnswer": {"@type": "Answer", "text": "Something smaller - a concrete addition to existing communication or employer relationships."}},
     {"@type": "Question", "name": "Can this help attract new companies to the municipality?", "acceptedAnswer": {"@type": "Answer", "text": "It can be a concrete signal about existing local employment, but it doesn't replace broader business location policy."}},
-    {"@type": "Question", "name": "Does this overlap with contact we already have with local employers?", "acceptedAnswer": {"@type": "Answer", "text": "Not as duplication — it is a small, logical addition to existing contact."}},
-    {"@type": "Question", "name": "Does this solve a structural shortage of employment if there is one?", "acceptedAnswer": {"@type": "Answer", "text": "No — it specifically solves the visibility problem for employment that already exists."}}
+    {"@type": "Question", "name": "Does this overlap with contact we already have with local employers?", "acceptedAnswer": {"@type": "Answer", "text": "Not as duplication - it is a small, logical addition to existing contact."}},
+    {"@type": "Question", "name": "Does this solve a structural shortage of employment if there is one?", "acceptedAnswer": {"@type": "Answer", "text": "No - it specifically solves the visibility problem for employment that already exists."}}
   ]
 }
 </script>

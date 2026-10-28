@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Veldhoven telt ongeveer 45.000 inwoners naast Eindhoven en is het mondiale centrum van lithografieapparatuur voor halfgeleiders. De machines die hier worden gebouwd bepalen de fysieke grens van hoe klein een transistor gemaakt kan worden — een van de weinige plekken ter wereld waar de beperking fundamentele fysica is en niet ingenieursinspanning.
+Veldhoven telt ongeveer 45.000 inwoners naast Eindhoven en is het mondiale centrum van lithografieapparatuur voor halfgeleiders. De machines die hier worden gebouwd bepalen de fysieke grens van hoe klein een transistor gemaakt kan worden - een van de weinige plekken ter wereld waar de beperking fundamentele fysica is en niet ingenieursinspanning.
 
 ## Het probleem is meten, niet voorspellen
 
@@ -31,7 +31,7 @@ In de meeste commerciële situaties heb je overvloedige metingen en zit de moeil
 
 **Inverse problemen domineren.** Reconstrueren wat er op een wafer staat uit verstrooid licht, elektronensignalen of interferentiepatronen is een invers probleem met een fysisch gefundeerd voorwaarts model. Machine learning komt binnen als manier om de inverse afbeelding te benaderen, of om het voorwaartse model te versnellen zodat iteratieve inversie haalbaar wordt.
 
-**Physics-informed methoden zijn de norm, geen noviteit.** Puur datagedreven modellen die de bekende fysica negeren presteren slechter en, belangrijker, falen onvoorspelbaar buiten hun trainingsverdeling — onacceptabel wanneer het gevolg is dat je wafers van grote waarde afkeurt.
+**Physics-informed methoden zijn de norm, geen noviteit.** Puur datagedreven modellen die de bekende fysica negeren presteren slechter en, belangrijker, falen onvoorspelbaar buiten hun trainingsverdeling - onacceptabel wanneer het gevolg is dat je wafers van grote waarde afkeurt.
 
 **Data is duur en schaars juist waar het telt.** Gelabelde voorbeelden genereren vraagt echte processen op echte hardware. Voor de zeldzame faalvormen die het meest tellen, gaat het soms om tientallen voorbeelden.
 
@@ -41,7 +41,7 @@ In de meeste commerciële situaties heb je overvloedige metingen en zit de moeil
 
 **Computational lithography.** Voorspellen hoe een patroon zal afdrukken gegeven de optiek, en het masker voorvervormen zodat het resultaat overeenkomt met de bedoeling.
 
-**Metrologie.** Meten wat er werkelijk is geproduceerd — afmetingen, overlay-uitlijning tussen lagen, defecten — op schalen waar de meting zelf een inferentieprobleem is.
+**Metrologie.** Meten wat er werkelijk is geproduceerd - afmetingen, overlay-uitlijning tussen lagen, defecten - op schalen waar de meting zelf een inferentieprobleem is.
 
 **Defectdetectie en -classificatie.** Anomalieën vinden en categoriseren in beeldmateriaal waar defecten zeldzaam en gevarieerd zijn, en waar een gemist systematisch defect veel duurder is dan een vals alarm.
 
@@ -51,7 +51,7 @@ In de meeste commerciële situaties heb je overvloedige metingen en zit de moeil
 
 ## Het entiteitenlandschap
 
-**ASML.** Met hoofdvestiging in Veldhoven ontwikkelt en produceert het bedrijf lithografiesystemen voor halfgeleiderfabrikanten wereldwijd. Het domineert de lokale arbeidsmarkt volledig, en door de schaal bevat het feitelijk vele gescheiden technische organisaties — computational lithography, metrologie, optiek, mechatronica, software, productie.
+**ASML.** Met hoofdvestiging in Veldhoven ontwikkelt en produceert het bedrijf lithografiesystemen voor halfgeleiderfabrikanten wereldwijd. Het domineert de lokale arbeidsmarkt volledig, en door de schaal bevat het feitelijk vele gescheiden technische organisaties - computational lithography, metrologie, optiek, mechatronica, software, productie.
 
 **Het regionale toeleveranciersnetwerk.** De machines bestaan uit componenten van een groot netwerk gespecialiseerde toeleveranciers in en buiten Brainport. Veel daarvan doen geavanceerde precisietechniek en nemen steeds vaker dataspecialisten aan. Ze zijn veel minder zichtbaar en aanzienlijk toegankelijker.
 
@@ -85,7 +85,7 @@ Het eerlijke advies is je instappunt te laten passen bij je achtergrond, in plaa
 
 **Jouw probleem is een fragment van een groter geheel.** Een machine omvat optiek, mechanica, thermisch beheer, elektronica, regelsoftware en metrologie, alles in interactie. Jij bezit een smalle strook. Begrijpen hoe die het geheel beïnvloedt, vraagt bewuste inspanning, want niemand geeft je die context.
 
-**Bij de interfaces zit de moeilijkheid.** Doordat het systeem over veel teams is opgedeeld, zitten de lastige problemen vaak op de grenzen — waar aannames van de één die van de ander raken.
+**Bij de interfaces zit de moeilijkheid.** Doordat het systeem over veel teams is opgedeeld, zitten de lastige problemen vaak op de grenzen - waar aannames van de één die van de ander raken.
 
 **Documentatie en traceerbaarheid zijn dragend.** Een machine bij een klant moet jarenlang ondersteunbaar zijn door mensen die niet bij de bouw waren.
 
@@ -95,7 +95,7 @@ Het eerlijke advies is je instappunt te laten passen bij je achtergrond, in plaa
 
 Een enkele machine verkoopt voor een bedrag vergelijkbaar met een groot gebouw, de klantenkring is klein en technisch extreem eisend, en een prestatievoordeel vertaalt direct in marktpositie. De economie ondersteunt hoge beloning.
 
-Verwacht daarom grondige technische gesprekken met echte diepgang. Voorbereiding op fundamenten — kansrekening, lineaire algebra, optimalisatie, relevante fysica — is veel nuttiger dan breedte in tooling.
+Verwacht daarom grondige technische gesprekken met echte diepgang. Voorbereiding op fundamenten - kansrekening, lineaire algebra, optimalisatie, relevante fysica - is veel nuttiger dan breedte in tooling.
 
 ## De internationale dimensie
 
@@ -132,7 +132,7 @@ De meeste mensen wonen in Eindhoven of omgeving en komen op de fiets of met de a
 - Onzekerheidskwantificering is een kernvereiste, geen verfijning.
 - De dominante werkgever is competitief; de toeleveranciers- en dienstverlenerslagen zijn echte, toegankelijke alternatieven.
 - Laat je instappunt passen bij je achtergrond in plaats van te concluderen dat het cluster dicht is.
-- Beloning is bij de hoogste in Nederlandse engineering en Engels is de werktaal — maar vraag naar exportcontrole.
+- Beloning is bij de hoogste in Nederlandse engineering en Engels is de werktaal - maar vraag naar exportcontrole.
 
 ## Waar te beginnen
 

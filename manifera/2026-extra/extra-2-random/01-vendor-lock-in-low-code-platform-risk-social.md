@@ -1,4 +1,4 @@
-🚨 The low-code platform that got your MVP to market in six weeks is the same platform that can now hold your entire company hostage — and most CTOs don't find out until an investor asks the one question the sales demo never covered: "Can you export this?" ⚙️💥
+🚨 The low-code platform that got your MVP to market in six weeks is the same platform that can now hold your entire company hostage - and most CTOs don't find out until an investor asks the one question the sales demo never covered: "Can you export this?" ⚙️💥
 
 **The Pain Points:**
 ❌ **Proprietary Runtime Lock-In:** A CTO at a Series A logistics SaaS built the entire product on a popular low-code platform to hit an aggressive investor deadline. Eighteen months later, the platform's proprietary data model, closed runtime, and workflow engine mean no engineer outside the vendor's certified partner network can touch the codebase, and the vendor has just announced a 40% price increase on the enterprise tier.

@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Near the end of the contract there is a short clause about a trial period. It rarely attracts attention, because it describes a few weeks at the start of something you are looking forward to. For anyone leaving a secure job — particularly one they have held for years — it is the single riskiest term in the document, because during that period either side can end the employment immediately, without notice and without giving a reason. It is also, used well, the most useful period you will have for deciding whether the job is what you were told.
+Near the end of the contract there is a short clause about a trial period. It rarely attracts attention, because it describes a few weeks at the start of something you are looking forward to. For anyone leaving a secure job - particularly one they have held for years - it is the single riskiest term in the document, because during that period either side can end the employment immediately, without notice and without giving a reason. It is also, used well, the most useful period you will have for deciding whether the job is what you were told.
 
 This is general information rather than legal advice. Check your own contract and any applicable collective agreement, and the free **Juridisch Loket** can help with general questions.
 
@@ -51,13 +51,13 @@ A probation period must be agreed **in writing** and must be **the same length f
 
 A collective agreement can in some circumstances extend a one-month period, so check whether one applies to you.
 
-If a probation clause exceeds what is permitted, or is agreed where none is allowed, the consequence is generally that there is no valid probation period at all — not that it is reduced to the maximum. That matters, because an employer relying on an invalid clause to end your contract would be on weak ground.
+If a probation clause exceeds what is permitted, or is agreed where none is allowed, the consequence is generally that there is no valid probation period at all - not that it is reduced to the maximum. That matters, because an employer relying on an invalid clause to end your contract would be on weak ground.
 
 A probation period also cannot normally be agreed again for a follow-up contract with the same employer for substantially the same work.
 
 ## What It Actually Means
 
-During a valid probation period, either party may end the employment with immediate effect. No notice, no permission required, and no obligation to give a reason — though if you ask for the reason in writing, the employer should provide it.
+During a valid probation period, either party may end the employment with immediate effect. No notice, no permission required, and no obligation to give a reason - though if you ask for the reason in writing, the employer should provide it.
 
 Two things still apply. Equal treatment rules mean the ending may not be based on discriminatory grounds. And an employer may not end the contract for reasons connected to specific protected circumstances; if you believe something like that has happened, take advice promptly, because the time limits in Dutch employment law can be short.
 
@@ -65,7 +65,7 @@ Being ill during probation does not by itself prevent termination in the way it 
 
 ## Why This Matters More Than It Looks
 
-If you are leaving a permanent position after several years, you are exchanging accrued security for a job that can end in week three. That is not a reason to refuse — almost every Dutch contract includes probation — but it is a reason to take the earlier parts of this decision seriously: the scope in writing, the conversation with your future colleagues, the question about what happened to your predecessor.
+If you are leaving a permanent position after several years, you are exchanging accrued security for a job that can end in week three. That is not a reason to refuse - almost every Dutch contract includes probation - but it is a reason to take the earlier parts of this decision seriously: the scope in writing, the conversation with your future colleagues, the question about what happened to your predecessor.
 
 The risk is not theoretical. Roles are cancelled after reorganisations, managers change their minds, budgets move. It is uncommon, and it happens.
 
@@ -91,7 +91,7 @@ Decide in advance what you are checking: whether the work matches the descriptio
 
 If something is clearly wrong in week two, raise it rather than waiting. In the first month, a direct conversation about a mismatch usually produces a correction, because nobody wants a hire to fail that early.
 
-And if it cannot be corrected, leaving during probation is far less costly — professionally and practically — than resigning six months later, and it is easier to explain than candidates fear.
+And if it cannot be corrected, leaving during probation is far less costly - professionally and practically - than resigning six months later, and it is easier to explain than candidates fear.
 
 ## Red Flags in the Clause
 
@@ -129,7 +129,7 @@ And if it cannot be corrected, leaving during probation is far less costly — p
 
 ## If It Ends Badly
 
-If the employer ends the contract during probation, ask for the reason in writing. Check that the clause was valid — the limits above are strict, and invalid clauses are more common than people assume. Ask about any outstanding entitlements, including accrued holiday.
+If the employer ends the contract during probation, ask for the reason in writing. Check that the clause was valid - the limits above are strict, and invalid clauses are more common than people assume. Ask about any outstanding entitlements, including accrued holiday.
 
 If you believe the reason was discriminatory or otherwise unlawful, take advice quickly rather than after a few weeks, because time limits matter. Your union, your legal expenses insurer or the Juridisch Loket are the usual starting points.
 
@@ -143,13 +143,13 @@ Probation is not only a test of you. A serious employer uses the period delibera
 
 **Something concrete to deliver.** A first task that is small, useful and finishable within a few weeks gives both sides real information rather than impressions.
 
-**Feedback within the first fortnight.** Not a formal review — a short conversation about how it is going in both directions.
+**Feedback within the first fortnight.** Not a formal review - a short conversation about how it is going in both directions.
 
 **A scheduled conversation before the period ends.** Employers who plan this rarely end contracts abruptly, because nothing has gone unsaid.
 
 **Clarity about what "completed" means.** Ask what they would be looking for. Vague answers are common and worth pressing on, because a standard nobody can articulate is a standard you cannot meet deliberately.
 
-If none of this exists, it does not mean the employer intends to end your contract. It usually means nobody has thought about onboarding at all — which tells you something useful about how the rest of the first year will go, and is worth asking about before you resign from anything.
+If none of this exists, it does not mean the employer intends to end your contract. It usually means nobody has thought about onboarding at all - which tells you something useful about how the rest of the first year will go, and is worth asking about before you resign from anything.
 
 ## Real example
 
@@ -157,7 +157,7 @@ If none of this exists, it does not mean the employer intends to end your contra
 
 A data scientist with five years at a stable employer is offered a role at a company she likes, on an indefinite contract with a two-month probation period. The clause itself is within the rules.
 
-Before resigning, she asks three questions. How many people did not complete probation in the past two years — one, out of eleven hires, and the manager explains why. Is any reorganisation pending — no, and the budget for the team is approved for two years. Will there be a review conversation before the period ends — yes, at six weeks.
+Before resigning, she asks three questions. How many people did not complete probation in the past two years - one, out of eleven hires, and the manager explains why. Is any reorganisation pending - no, and the budget for the team is approved for two years. Will there be a review conversation before the period ends - yes, at six weeks.
 
 She also asks for the scope and the two commitments she negotiated to be added to the offer letter, which takes a day.
 
@@ -173,11 +173,11 @@ Her view: the probation clause was never the risk. The risk was everything she w
 - A clause exceeding the limits is generally invalid entirely rather than reduced, and probation usually cannot be repeated for a follow-up contract for the same work.
 - During probation either side can end the employment immediately without notice or reason, although equal treatment rules still apply.
 - Reduce the risk before resigning: scope in writing, a conversation with a future colleague, the record of past probation outcomes, and a signed contract in hand.
-- Use the period yourself — it is the cheapest moment to correct a mismatch or to leave if the role is not what you were told.
+- Use the period yourself - it is the cheapest moment to correct a mismatch or to leave if the role is not what you were told.
 
 ## Where to Start
 
-Before resigning from something secure, make sure you know what else is available near you — it is what turns a probation period from a risk into a calculated step.
+Before resigning from something secure, make sure you know what else is available near you - it is what turns a probation period from a risk into a calculated step.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -193,7 +193,7 @@ Generally the whole probation clause is invalid rather than reduced to the maxim
 The risk is real but small, and it is reduced by getting the scope in writing, speaking to future colleagues, asking about past probation outcomes and only resigning once the contract is signed.
 
 ### (Scenario: new joiner in the first weeks) Can I use the probation period myself?
-Yes — it is mutual, and it is the cheapest point to raise a mismatch or to leave. Decide in advance what you are checking, and raise problems early rather than waiting.
+Yes - it is mutual, and it is the cheapest point to raise a mismatch or to leave. Decide in advance what you are checking, and raise problems early rather than waiting.
 
 ### (Scenario: candidate whose contract was ended) What should I do if my probation is ended?
 Ask for the reason in writing, check whether the clause was valid, settle outstanding entitlements, and take advice quickly if you believe the reason was unlawful, since time limits can be short.
@@ -205,7 +205,7 @@ Ask for the reason in writing, check whether the clause was valid, settle outsta
   "mainEntity": [
     {"@type": "Question", "name": "How long can a probation period be in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "None under six months; one month up to two years; two months for two years or more or indefinite."}},
     {"@type": "Question", "name": "What if the clause is longer than allowed?", "acceptedAnswer": {"@type": "Answer", "text": "It is generally invalid entirely, meaning no probation period applies."}},
-    {"@type": "Question", "name": "How risky is it to resign for a job with probation?", "acceptedAnswer": {"@type": "Answer", "text": "Small but real — get scope in writing, talk to colleagues and resign only after signing."}},
+    {"@type": "Question", "name": "How risky is it to resign for a job with probation?", "acceptedAnswer": {"@type": "Answer", "text": "Small but real - get scope in writing, talk to colleagues and resign only after signing."}},
     {"@type": "Question", "name": "Can I use the probation period myself?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it is mutual and the cheapest moment to correct a mismatch or leave."}},
     {"@type": "Question", "name": "What should I do if my probation is ended?", "acceptedAnswer": {"@type": "Answer", "text": "Get the reason in writing, check the clause's validity and take advice quickly if it seems unlawful."}}
   ]

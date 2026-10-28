@@ -20,23 +20,23 @@ target_persona: "CEO"
 }
 </script>
 
-Most guides to building an application from scratch start with technology choices — which framework, which cloud provider, which database — and skip the one step that actually determines whether any of those choices matter: confirming the application solves a problem someone will pay to have solved before a single line of code exists.
+Most guides to building an application from scratch start with technology choices - which framework, which cloud provider, which database - and skip the one step that actually determines whether any of those choices matter: confirming the application solves a problem someone will pay to have solved before a single line of code exists.
 
-**The Pain:** A CEO with an idea for a new application is naturally drawn to the exciting, concrete part of building an application from scratch — the technology, the architecture, the roadmap — while the less exciting, more abstract validation step that should come first gets treated as a formality already settled by the CEO's own conviction that the idea is good.
+**The Pain:** A CEO with an idea for a new application is naturally drawn to the exciting, concrete part of building an application from scratch - the technology, the architecture, the roadmap - while the less exciting, more abstract validation step that should come first gets treated as a formality already settled by the CEO's own conviction that the idea is good.
 
-**The Agitation:** A CEO who moves straight from idea to technical build, skipping genuine validation, risks spending the full cost of building an application from scratch — commonly €80,000-€250,000 for a functional first version — only to discover after launch that the assumed demand wasn't real, a discovery that's dramatically cheaper to make before the build than after it, and one that a genuine validation step, costing a small fraction of the full build, is specifically designed to catch early.
+**The Agitation:** A CEO who moves straight from idea to technical build, skipping genuine validation, risks spending the full cost of building an application from scratch - commonly €80,000-€250,000 for a functional first version - only to discover after launch that the assumed demand wasn't real, a discovery that's dramatically cheaper to make before the build than after it, and one that a genuine validation step, costing a small fraction of the full build, is specifically designed to catch early.
 
 ## The Validation Step Before the Technical Build
 
-Building an application from scratch should start with a validation phase specifically designed to test the core assumption behind the idea — that a defined group of people has a real problem and would actually pay, in money or meaningful behavior change, for this specific application to solve it — before committing to the technical build that assumes the answer is already yes.
+Building an application from scratch should start with a validation phase specifically designed to test the core assumption behind the idea - that a defined group of people has a real problem and would actually pay, in money or meaningful behavior change, for this specific application to solve it - before committing to the technical build that assumes the answer is already yes.
 
 The practical form this takes varies by application, but the common thread is testing the assumption with something far cheaper than a full build: a landing page describing the application's value proposition, measuring whether the target audience actually signs up or expresses real interest; direct conversations with a sample of the target audience about the specific problem, testing whether it's actually painful enough that they'd pay for a solution; or a manual, non-software version of the core value proposition, delivered by hand to a small number of early users to see whether they actually value the outcome, independent of the polish a real application would add.
 
-A CEO running this validation step honestly needs to be genuinely willing to hear that the assumption doesn't hold — a validation process designed to confirm a conclusion the CEO has already reached isn't validation, it's a formality, and it provides none of the protection real validation offers against building an application from scratch that nobody actually needed.
+A CEO running this validation step honestly needs to be genuinely willing to hear that the assumption doesn't hold - a validation process designed to confirm a conclusion the CEO has already reached isn't validation, it's a formality, and it provides none of the protection real validation offers against building an application from scratch that nobody actually needed.
 
-Once validation genuinely supports the idea, the technical build phase should still start narrower than most CEOs' initial instinct — a minimum viable version focused specifically on the core value proposition that validation confirmed, not the full feature set the CEO originally imagined, because the validation step confirms the core idea, not every specific feature built around it, and those still need real usage data to prioritize correctly.
+Once validation genuinely supports the idea, the technical build phase should still start narrower than most CEOs' initial instinct - a minimum viable version focused specifically on the core value proposition that validation confirmed, not the full feature set the CEO originally imagined, because the validation step confirms the core idea, not every specific feature built around it, and those still need real usage data to prioritize correctly.
 
-This validation-first approach doesn't slow down building an application from scratch in any meaningful way — the validation phase typically takes weeks, not months, and a genuine validation finding that the assumption doesn't hold saves the full cost of a build that would have failed anyway, while a validation finding that confirms the assumption gives the subsequent technical build a considerably clearer, evidence-based scope to execute against.
+This validation-first approach doesn't slow down building an application from scratch in any meaningful way - the validation phase typically takes weeks, not months, and a genuine validation finding that the assumption doesn't hold saves the full cost of a build that would have failed anyway, while a validation finding that confirms the assumption gives the subsequent technical build a considerably clearer, evidence-based scope to execute against.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -51,10 +51,10 @@ This is Dutch Management × Vietnamese Mastery: European rigor in testing an ide
 
 Solutions Numériques Nantes SAS, a Nantes-based startup, had a founder convinced of an application idea for small-business scheduling, ready to commit to a full technical build based on personal conviction alone, without testing the assumption against the actual target audience.
 
-Manifera ran a two-week validation phase first — a landing page and direct conversations with 40 target small-business owners — revealing that the specific problem the founder assumed was painful was actually a minor annoyance for most of the sample, while a genuinely painful adjacent problem emerged repeatedly in the conversations instead. The application was re-scoped around the validated problem before any technical build began.
+Manifera ran a two-week validation phase first - a landing page and direct conversations with 40 target small-business owners - revealing that the specific problem the founder assumed was painful was actually a minor annoyance for most of the sample, while a genuinely painful adjacent problem emerged repeatedly in the conversations instead. The application was re-scoped around the validated problem before any technical build began.
 
 > *"I was ready to spend six figures building the application I had in my head. Two weeks of actually talking to the people I thought needed it showed me I had the wrong problem. That was the cheapest six figures I never spent."*
-> — **CEO, Solutions Numériques Nantes SAS, France**
+> - **CEO, Solutions Numériques Nantes SAS, France**
 
 ## Build-First Approach vs. Manifera's Validation-First Approach
 
@@ -74,7 +74,7 @@ A CEO who skips genuine validation before building an application from scratch r
 
 ### (Scenario: CEO with an application idea ready to start technical development) What step do most guides to building an application from scratch skip?
 
-Genuine validation of the core assumption — that a defined group of people has a real problem and would actually pay for this specific application to solve it — before any technical build begins.
+Genuine validation of the core assumption - that a defined group of people has a real problem and would actually pay for this specific application to solve it - before any technical build begins.
 
 ### (Scenario: CEO trying to validate an application idea cheaply) What are practical ways to validate an application idea before building it?
 

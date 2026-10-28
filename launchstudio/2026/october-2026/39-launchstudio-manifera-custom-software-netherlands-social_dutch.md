@@ -1,4 +1,4 @@
-🔥 Pieter bouwde een prototype met **Lovable** — als bedrijfsjurist in Den Haag bouwde hij een AI-tool voor contractbeoordeling, maar een Amsterdams bureau vroeg €45k en 4 maanden om zijn database en iDEAL-betalingen te bouwen. 🧠
+🔥 Pieter bouwde een prototype met **Lovable** - als bedrijfsjurist in Den Haag bouwde hij een AI-tool voor contractbeoordeling, maar een Amsterdams bureau vroeg €45k en 4 maanden om zijn database en iDEAL-betalingen te bouwen. 🧠
 
 Als Nederlandse startups vasthouden aan onbetaalbare traditionele bureaus (€90k+/jaar per developer) of anonieme freelancers, strandt hun AI-lancering op budget en compliance.
 
@@ -12,7 +12,7 @@ Als Nederlandse startups vasthouden aan onbetaalbare traditionele bureaus (€90
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Pieter lanceerde binnen 3 weken en sloot direct een accountantskantoor aan dankzij de betrouwbare Nederlandse tech-infrastructuur. (€4.500 (Database & iDEAL Integratie) — binnen 15 werkdagen live). 🚀
+Pieter lanceerde binnen 3 weken en sloot direct een accountantskantoor aan dankzij de betrouwbare Nederlandse tech-infrastructuur. (€4.500 (Database & iDEAL Integratie) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/launchstudio-manifera-custom-software-netherlands
 

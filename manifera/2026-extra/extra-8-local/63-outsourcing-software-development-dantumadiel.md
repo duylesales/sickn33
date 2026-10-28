@@ -20,33 +20,33 @@ target_persona: "VP of Engineering"
 }
 </script>
 
-Every outsourcing vendor's sales deck looks essentially identical — senior talent, agile process, transparent communication — which means the deck itself has stopped being useful information, and the real evaluation has to happen somewhere the sales team doesn't control.
+Every outsourcing vendor's sales deck looks essentially identical - senior talent, agile process, transparent communication - which means the deck itself has stopped being useful information, and the real evaluation has to happen somewhere the sales team doesn't control.
 
-**The Pain:** A VP of Engineering at a growing software company based in Dantumadiel — a rural Friesland municipality near the historic town of Dokkum — has been burned once already by an outsourcing vendor that looked excellent in the pitch and delivered a codebase nobody wanted to maintain six months later, and is now evaluating a second round of vendors with considerably more skepticism but no structured framework for actually testing the claims being made.
+**The Pain:** A VP of Engineering at a growing software company based in Dantumadiel - a rural Friesland municipality near the historic town of Dokkum - has been burned once already by an outsourcing vendor that looked excellent in the pitch and delivered a codebase nobody wanted to maintain six months later, and is now evaluating a second round of vendors with considerably more skepticism but no structured framework for actually testing the claims being made.
 
-**The Agitation:** A VP of Engineering who evaluates this second round of vendors the same way as the first — a few reference calls, a portfolio review, a gut feeling from the sales conversation — is likely to get burned the same way twice, because the vendors most skilled at sales conversations are not reliably the vendors most skilled at engineering delivery, and a portfolio of past work reveals almost nothing about how a vendor actually communicates, escalates problems, or handles the inevitable moment when a project goes sideways. Getting this decision wrong a second time doesn't just cost the project budget — it costs the internal credibility needed to get leadership to approve a third attempt at all.
+**The Agitation:** A VP of Engineering who evaluates this second round of vendors the same way as the first - a few reference calls, a portfolio review, a gut feeling from the sales conversation - is likely to get burned the same way twice, because the vendors most skilled at sales conversations are not reliably the vendors most skilled at engineering delivery, and a portfolio of past work reveals almost nothing about how a vendor actually communicates, escalates problems, or handles the inevitable moment when a project goes sideways. Getting this decision wrong a second time doesn't just cost the project budget - it costs the internal credibility needed to get leadership to approve a third attempt at all.
 
 ## A Concrete Playbook for Vetting an Outsourcing Software Development Vendor
 
 A rigorous vendor vetting process has to test for the specific failure modes that sink outsourced projects, rather than confirming the generic claims every vendor makes in a sales conversation. The playbook below is built around direct verification rather than trust.
 
-The first step is a paid, scoped pilot project before any larger commitment — a genuinely representative two-to-three-week piece of real work, not a toy exercise, delivered under the same communication and process conditions the full engagement would use. A vendor's behavior on a real, paid pilot reveals far more about code quality, communication discipline, and problem-handling than any number of reference calls or portfolio reviews, because a pilot is the first interaction where the vendor's own sales team isn't managing the narrative.
+The first step is a paid, scoped pilot project before any larger commitment - a genuinely representative two-to-three-week piece of real work, not a toy exercise, delivered under the same communication and process conditions the full engagement would use. A vendor's behavior on a real, paid pilot reveals far more about code quality, communication discipline, and problem-handling than any number of reference calls or portfolio reviews, because a pilot is the first interaction where the vendor's own sales team isn't managing the narrative.
 
 The second step is verifying architectural governance structure specifically, not just team seniority. Ask directly: who is accountable for architectural decisions, who has authority to escalate a technical disagreement, and what happens when the offshore execution team and the client's own engineering standards conflict. A vendor that can't answer this clearly, or whose answer amounts to "our senior engineers handle it," likely lacks the explicit governance structure that prevents architectural drift over a long engagement.
 
-The third step is reference calls conducted with a structured, specific question set rather than an open-ended "how was your experience" conversation. Ask a reference client directly about a project that went wrong or hit a delay, and how the vendor handled it — every vendor has had a project encounter friction, and a reference who can't recall a single instance of friction either hasn't worked with the vendor long enough to matter, or is being selectively presented as a reference for a reason worth investigating further.
+The third step is reference calls conducted with a structured, specific question set rather than an open-ended "how was your experience" conversation. Ask a reference client directly about a project that went wrong or hit a delay, and how the vendor handled it - every vendor has had a project encounter friction, and a reference who can't recall a single instance of friction either hasn't worked with the vendor long enough to matter, or is being selectively presented as a reference for a reason worth investigating further.
 
-The fourth step is a direct code quality audit of the pilot deliverable, performed by the client's own senior engineers, evaluating not just whether the code works but whether it's maintainable — test coverage, documentation, adherence to stated architectural patterns, and the kind of technical debt that doesn't show up in a demo but shows up six months later during the first major feature addition. A vendor's pilot code is the single most honest signal available before a larger contract commitment.
+The fourth step is a direct code quality audit of the pilot deliverable, performed by the client's own senior engineers, evaluating not just whether the code works but whether it's maintainable - test coverage, documentation, adherence to stated architectural patterns, and the kind of technical debt that doesn't show up in a demo but shows up six months later during the first major feature addition. A vendor's pilot code is the single most honest signal available before a larger contract commitment.
 
-The fifth step is testing communication and escalation under a deliberately introduced constraint during the pilot — a tight deadline, an ambiguous requirement, or a request to explain a technical tradeoff to a non-technical stakeholder. How a vendor handles ambiguity and pressure during a low-stakes pilot is the clearest available predictor of how they'll handle the same pressure once real production stakes are involved.
+The fifth step is testing communication and escalation under a deliberately introduced constraint during the pilot - a tight deadline, an ambiguous requirement, or a request to explain a technical tradeoff to a non-technical stakeholder. How a vendor handles ambiguity and pressure during a low-stakes pilot is the clearest available predictor of how they'll handle the same pressure once real production stakes are involved.
 
-The sixth step, often skipped entirely, is confirming data security, IP ownership, and contractual terms around code ownership and confidentiality in writing before the pilot even begins, not after a larger engagement is already underway. A vendor's willingness to commit clearly and specifically to these terms early is itself informative — vagueness here in the sales process reliably predicts vagueness in the actual contract.
+The sixth step, often skipped entirely, is confirming data security, IP ownership, and contractual terms around code ownership and confidentiality in writing before the pilot even begins, not after a larger engagement is already underway. A vendor's willingness to commit clearly and specifically to these terms early is itself informative - vagueness here in the sales process reliably predicts vagueness in the actual contract.
 
 ## By the Numbers
 
 Engineering leaders who have formalized a structured vendor vetting process, after a prior bad outsourcing experience, tend to report consistent patterns:
 
-- A paid pilot project surfaces significant red flags — communication gaps, code quality issues, or governance ambiguity — in a meaningful share of vendor evaluations, well before a larger contract commitment would have been signed.
+- A paid pilot project surfaces significant red flags - communication gaps, code quality issues, or governance ambiguity - in a meaningful share of vendor evaluations, well before a larger contract commitment would have been signed.
 - Structured reference calls that specifically probe for a past project difficulty routinely surface more useful information than open-ended reference conversations.
 - Vendors that clearly articulate an explicit architectural governance structure before being asked directly are consistently associated with lower rates of architectural drift over the life of a longer engagement.
 - Teams that conduct an independent code quality audit of pilot work, rather than relying solely on the vendor's own testing claims, catch maintainability issues considerably more often than teams that skip this step.
@@ -61,12 +61,12 @@ Engineering leaders who have formalized a structured vendor vetting process, aft
 
 ## What This Looks Like in Practice
 
-1. **Weeks 1-2 — Vendor Shortlist and Governance Interviews.** Candidate vendors are narrowed based on direct, structured interviews about their architectural governance structure and escalation process, not just portfolio and pricing.
-2. **Weeks 3-4 — Structured Reference Calls and Pilot Scoping.** Reference calls using a specific, probing question set are conducted, and a genuinely representative paid pilot project is scoped with the top one or two candidates.
-3. **Weeks 5-6 — Paid Pilot Execution.** The pilot runs under the same communication and process conditions the full engagement would use, including a deliberately introduced ambiguity or constraint to test the vendor's handling of pressure.
-4. **Weeks 7-8 — Independent Code Audit and Final Decision.** The client's own senior engineers audit the pilot deliverable for maintainability and architectural fit, and a final vendor decision is made based on verified evidence rather than sales-conversation impressions.
+1. **Weeks 1-2 - Vendor Shortlist and Governance Interviews.** Candidate vendors are narrowed based on direct, structured interviews about their architectural governance structure and escalation process, not just portfolio and pricing.
+2. **Weeks 3-4 - Structured Reference Calls and Pilot Scoping.** Reference calls using a specific, probing question set are conducted, and a genuinely representative paid pilot project is scoped with the top one or two candidates.
+3. **Weeks 5-6 - Paid Pilot Execution.** The pilot runs under the same communication and process conditions the full engagement would use, including a deliberately introduced ambiguity or constraint to test the vendor's handling of pressure.
+4. **Weeks 7-8 - Independent Code Audit and Final Decision.** The client's own senior engineers audit the pilot deliverable for maintainability and architectural fit, and a final vendor decision is made based on verified evidence rather than sales-conversation impressions.
 
-Dantumadiel is a rural municipality in Friesland near the historic town of Dokkum, one of the province's oldest settlements. Companies based in this kind of smaller, more rural Frisian municipality often have limited internal bandwidth to run an elaborate vendor evaluation process alongside their existing workload, which makes a structured, time-bounded playbook especially valuable — it converts vendor vetting from an open-ended, easily-deprioritized task into a concrete, scoped process that fits around a lean team's existing commitments rather than competing indefinitely with them.
+Dantumadiel is a rural municipality in Friesland near the historic town of Dokkum, one of the province's oldest settlements. Companies based in this kind of smaller, more rural Frisian municipality often have limited internal bandwidth to run an elaborate vendor evaluation process alongside their existing workload, which makes a structured, time-bounded playbook especially valuable - it converts vendor vetting from an open-ended, easily-deprioritized task into a concrete, scoped process that fits around a lean team's existing commitments rather than competing indefinitely with them.
 
 ## The Governance/Execution Split
 
@@ -79,12 +79,12 @@ This structure is built specifically to survive the kind of rigorous vetting out
 
 ### A German Logistics-Tech Company's Second-Attempt Vendor Selection
 
-Dokkumer Handelslogistik GmbH — despite the name, headquartered in Lower Saxony rather than Friesland, a coincidence the team found amusing during early calls — had been left with an unmaintainable codebase after its first outsourcing vendor delivered a project that passed every demo and then required a near-total rewrite once the client's own engineers tried to extend it. For the second vendor search, the VP of Engineering insisted on a structured playbook rather than repeating the previous process.
+Dokkumer Handelslogistik GmbH - despite the name, headquartered in Lower Saxony rather than Friesland, a coincidence the team found amusing during early calls - had been left with an unmaintainable codebase after its first outsourcing vendor delivered a project that passed every demo and then required a near-total rewrite once the client's own engineers tried to extend it. For the second vendor search, the VP of Engineering insisted on a structured playbook rather than repeating the previous process.
 
 Manifera was evaluated through a paid three-week pilot, structured reference calls that specifically probed for past project friction, and an independent code audit performed by the client's own senior engineers, who found the pilot code met the team's existing test-coverage and documentation standards without exception. The governance interview clearly identified which Amsterdam-based architect would own escalation decisions throughout the engagement, a level of specificity the previous vendor had never provided. Six months into the resulting full engagement, the client's engineers reported the codebase remained as maintainable as the pilot had indicated it would be.
 
 > *"The pilot told us more in three weeks than the entire sales process for our first vendor told us in three months. This time, we knew exactly what we were getting before we signed anything larger."*
-> — **VP of Engineering, Dokkumer Handelslogistik GmbH, Germany**
+> - **VP of Engineering, Dokkumer Handelslogistik GmbH, Germany**
 
 ## Sales-Pitch-Based Vendor Selection vs. Manifera's Verified Vetting Process
 
@@ -120,7 +120,7 @@ Ask directly who is accountable for architectural decisions, who has authority t
 
 ### (Scenario: VP of Engineering deciding when to lock down IP and confidentiality terms) When should we finalize IP ownership and confidentiality terms with a vendor?
 
-Before the pilot project even begins, in writing — a vendor's willingness to commit clearly and specifically to these terms early is itself a useful signal, since vagueness during the sales process reliably predicts vagueness in the eventual contract.
+Before the pilot project even begins, in writing - a vendor's willingness to commit clearly and specifically to these terms early is itself a useful signal, since vagueness during the sales process reliably predicts vagueness in the eventual contract.
 
 <script type="application/ld+json">
 {

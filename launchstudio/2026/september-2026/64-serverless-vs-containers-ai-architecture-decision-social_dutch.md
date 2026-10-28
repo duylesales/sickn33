@@ -1,4 +1,4 @@
-⏱️ Dario's met Bolt gebouwde due-diligence-tool werkte prima tijdens het testen — totdat zijn eerste echte klant een dataruimte met 340 documenten uploadde en de ingestietaak de serverless timeout raakte en stilzwijgend halverwege stierf. 🧠
+⏱️ Dario's met Bolt gebouwde due-diligence-tool werkte prima tijdens het testen - totdat zijn eerste echte klant een dataruimte met 340 documenten uploadde en de ingestietaak de serverless timeout raakte en stilzwijgend halverwege stierf. 🧠
 
 Als uw AI SaaS documentverwerking, batch-embedding of agent-ketens draait op dezelfde serverless functies die uw CRUD afhandelen, zullen echte workloads timeoutlimieten raken waar uw AI-builder u nooit voor waarschuwde.
 

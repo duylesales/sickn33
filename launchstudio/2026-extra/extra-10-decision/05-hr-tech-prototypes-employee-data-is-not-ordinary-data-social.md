@@ -1,11 +1,11 @@
 🚨 Sanne's HR director loved Feedbackloop and signed the contract. Three weeks before rollout, the works council formally objected to a feature nobody had cleared with them. 😳
 
-Selling to HR isn't the same as being approved by everyone with a legal say — here's the misconception that nearly cost the deal: 🧠
+Selling to HR isn't the same as being approved by everyone with a legal say - here's the misconception that nearly cost the deal: 🧠
 
-❌ "We'll just get employees to consent" — consent isn't freely given when refusing risks your job
+❌ "We'll just get employees to consent" - consent isn't freely given when refusing risks your job
 ❌ The engagement-scoring feature pulled calendar and messaging metadata with no granular opt-out
 ❌ No plain-language explanation showed employees what actually fed into their score
-❌ The buyer with the budget didn't have unilateral authority — works councils in Germany, France and the Netherlands have a legal consultation right over monitoring tech
+❌ The buyer with the budget didn't have unilateral authority - works councils in Germany, France and the Netherlands have a legal consultation right over monitoring tech
 
 ✅ Ground lawful basis in contract performance or legal obligation, not a meaningless consent checkbox
 ✅ Make monitoring features separable and disableable at the account level, not all-or-nothing

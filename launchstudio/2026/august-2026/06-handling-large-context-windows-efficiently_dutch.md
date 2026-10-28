@@ -31,7 +31,7 @@ Doelgroep: AI Engineers / Backend Developers
 }
 </script>
 
-In 2023 worstelden oprichters nog met de strikte limiet van 4.000 tokens in GPT-3.5, waarbij prompts zorgvuldig moesten worden ingekort om binnen de grenzen te passen. Tegen 2026 bieden modellen van Anthropic en Google context windows van 200.000 tot wel 2 miljoen tokens. De verleiding die hierdoor ontstaat ligt voor de hand: dump simpelweg complete codebases, hele bibliotheken aan PDF-documenten of de volledige transactiegeschiedenis van een klant rechtstreeks in de prompt en laat het model het zelf maar uitzoeken. Deze "brute force" methode is echter een kapitale fout voor elk product met echte gebruikers en een reëel budget. Het vernietigt uw winstmarges, introduceert ernstige netwerklatentie en — tegen de intuïtie in — verslechtert de feitelijke nauwkeurigheid van de antwoorden aanzienlijk. Hier leest u hoe u massale contextdata efficiënt verwerkt in plaats van simpelweg te betalen voor steeds grotere context windows.
+In 2023 worstelden oprichters nog met de strikte limiet van 4.000 tokens in GPT-3.5, waarbij prompts zorgvuldig moesten worden ingekort om binnen de grenzen te passen. Tegen 2026 bieden modellen van Anthropic en Google context windows van 200.000 tot wel 2 miljoen tokens. De verleiding die hierdoor ontstaat ligt voor de hand: dump simpelweg complete codebases, hele bibliotheken aan PDF-documenten of de volledige transactiegeschiedenis van een klant rechtstreeks in de prompt en laat het model het zelf maar uitzoeken. Deze "brute force" methode is echter een kapitale fout voor elk product met echte gebruikers en een reëel budget. Het vernietigt uw winstmarges, introduceert ernstige netwerklatentie en - tegen de intuïtie in - verslechtert de feitelijke nauwkeurigheid van de antwoorden aanzienlijk. Hier leest u hoe u massale contextdata efficiënt verwerkt in plaats van simpelweg te betalen voor steeds grotere context windows.
 
 ## De financiële kosten van 'Context Stuffing'
 
@@ -43,23 +43,23 @@ Bouwt u bijvoorbeeld een "AI Legal Assistant" en laadt u bij elke vervolgvraag v
 
 Naast de hoge kosten kampen gigantische context windows met een structurele beperking in hoe transformer-modellen informatie verwerken: het zogeheten "Lost in the Middle"-fenomeen. Wetenschappelijk onderzoek toont aan dat LLM's een U-vormige herinneringscurve vertonen over lange prompts: ze onthouden instructies aan het begin van de prompt (primacy) en gegevens aan het einde van de prompt (recency) zeer betrouwbaar.
 
-Wanneer de cruciale informatie — die ene specifieke clausule die de advocaat nodig heeft — echter begraven ligt op pagina 40 van een prompt van 100 pagina's, zal het model regelmatig een plausibel klinkend maar foutief antwoord hallucineren, of stellig beweren dat de informatie niet aanwezig is. Dit is geen fout die verdwijnt door een "slimmer" model of een groter context window te kiezen; het is een wiskundige eigenschap van hoe aandachtsmechanismen (attention mechanisms) tokens over extreem lange reeksen wegen. Vertrouwen op ruwe contextgrootte leidt onherroepelijk tot een onbetrouwbare applicatie.
+Wanneer de cruciale informatie - die ene specifieke clausule die de advocaat nodig heeft - echter begraven ligt op pagina 40 van een prompt van 100 pagina's, zal het model regelmatig een plausibel klinkend maar foutief antwoord hallucineren, of stellig beweren dat de informatie niet aanwezig is. Dit is geen fout die verdwijnt door een "slimmer" model of een groter context window te kiezen; het is een wiskundige eigenschap van hoe aandachtsmechanismen (attention mechanisms) tokens over extreem lange reeksen wegen. Vertrouwen op ruwe contextgrootte leidt onherroepelijk tot een onbetrouwbare applicatie.
 
 ## De oplossing: Precisie-RAG (Retrieval-Augmented Generation)
 
 Het antwoord op context stuffing is Retrieval-Augmented Generation (RAG). In plaats van de complete hooiberg naar het LLM te sturen bij elke query, bouwt u een systeem dat eerst de naald zoekt en uitsluitend die specifieke naald doorstuurt.
 
-1. **Vectoriseren**: Wanneer de gebruiker een dossier van 100 pagina's uploadt, splitst u het document op in kleine, overlappende tekstbrokken (chunks) — doorgaans 300 tot 800 tokens per stuk met enige overlap om de context over chunk-grenzen heen te bewaren. Voor elk tekstblokje genereert u een embedding-vector met een model zoals OpenAI's `text-embedding-3-small` of een open-source alternatief. Deze vectoren slaat u op in een Supabase PostgreSQL-database met de `pgvector`-extensie, waarmee u similarity searches rechtstreeks in SQL kunt uitvoeren.
+1. **Vectoriseren**: Wanneer de gebruiker een dossier van 100 pagina's uploadt, splitst u het document op in kleine, overlappende tekstbrokken (chunks) - doorgaans 300 tot 800 tokens per stuk met enige overlap om de context over chunk-grenzen heen te bewaren. Voor elk tekstblokje genereert u een embedding-vector met een model zoals OpenAI's `text-embedding-3-small` of een open-source alternatief. Deze vectoren slaat u op in een Supabase PostgreSQL-database met de `pgvector`-extensie, waarmee u similarity searches rechtstreeks in SQL kunt uitvoeren.
 
 2. **Zoeken**: Wanneer de gebruiker een vraag stelt ("Wat was het alibi van de verdachte?"), genereert uw server een embedding voor die specifieke vraag en voert een nearest-neighbor search uit (met cosinus-overeenkomst of via een geoptimaliseerde HNSW-index) tegen de vectordatabase. Het systeem vindt direct de tekstblokken waarvan de semantische betekenis het dichtst bij de vraag ligt.
 
-3. **Injecteren**: U haalt uitsluitend de 3 tot 5 meest relevante tekstblokken op — doorgaans slechts 1.500 tot 2.500 tokens in totaal in plaats van de oorspronkelijke 100.000 tokens — en injecteert deze in een strak geformuleerde prompt: *"Beantwoord de vraag van de gebruiker strikt en uitsluitend op basis van de onderstaande tekstfragmenten. Als het antwoord niet in de fragmenten staat, geef dit dan expliciet aan."*
+3. **Injecteren**: U haalt uitsluitend de 3 tot 5 meest relevante tekstblokken op - doorgaans slechts 1.500 tot 2.500 tokens in totaal in plaats van de oorspronkelijke 100.000 tokens - en injecteert deze in een strak geformuleerde prompt: *"Beantwoord de vraag van de gebruiker strikt en uitsluitend op basis van de onderstaande tekstfragmenten. Als het antwoord niet in de fragmenten staat, geef dit dan expliciet aan."*
 
 Deze aanpak verlaagt uw API-kosten per query met circa 95% vergeleken met volledige document-stuffing, elimineert het "Lost in the Middle"-probleem en dwingt het AI-model om feitelijk nauwkeurige en traceerbare antwoorden te formuleren.
 
 ## Prompt Caching benutten
 
-Soms is het daadwerkelijk noodzakelijk dat een model een compleet document in zijn geheel analyseert — bijvoorbeeld wanneer gevraagd wordt: "Vat de overkoepelende juridische strategie van dit dossier van 80 pagina's samen." Voor dergelijke holistische taken gebruikt u **Prompt Caching**.
+Soms is het daadwerkelijk noodzakelijk dat een model een compleet document in zijn geheel analyseert - bijvoorbeeld wanneer gevraagd wordt: "Vat de overkoepelende juridische strategie van dit dossier van 80 pagina's samen." Voor dergelijke holistische taken gebruikt u **Prompt Caching**.
 
 Modelleveranciers zoals Anthropic en OpenAI bieden de mogelijkheid om een groot, statisch contextblok te cachen op hun servers. Wanneer u vervolgens een nieuwe vraag stelt die hetzelfde gecachete document gebruikt, krijgt u tot wel 90% korting op de invoerkosten voor dat gecachete deel en daalt de time-to-first-token aanzienlijk. Als gebruikers herhaaldelijk vragen stellen over hetzelfde grote basisdocument (zoals een dossier, codebase of technisch handboek), is prompt caching essentieel om die workflow financieel rendabel te houden.
 
@@ -79,7 +79,7 @@ De engineeringteams van Manifera bouwen dit type geavanceerde datapijplijnen sin
 
 ## Bouw efficiënte datapijplijnen
 
-Laat uw startup niet financieel leegbloeden op API-kosten door een architectuur die data-opvraging en generatie niet scheidt. **LaunchStudio** ontwerpt geoptimaliseerde RAG-pijplijnen met Supabase pgvector om te zorgen dat uw app nauwkeurige, onderbouwde antwoorden levert tegen minimale kosten — met behoud van uw bestaande interface. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+Laat uw startup niet financieel leegbloeden op API-kosten door een architectuur die data-opvraging en generatie niet scheidt. **LaunchStudio** ontwerpt geoptimaliseerde RAG-pijplijnen met Supabase pgvector om te zorgen dat uw app nauwkeurige, onderbouwde antwoorden levert tegen minimale kosten - met behoud van uw bestaande interface. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren ontwikkelaars in Europa aan te pakken, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/nl/#contact).
 
@@ -93,7 +93,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam bouwde ee
 
 **Resultaat:** Het aantal time-outs daalde naar nul en de API-kosten per document daalden met maar liefst 40%.
 
-**Kosten & tijdlijn:** €2.450 (API Optimization Pakket) — productieklaar en binnen 7 werkdagen live opgeleverd.
+**Kosten & tijdlijn:** €2.450 (API Optimization Pakket) - productieklaar en binnen 7 werkdagen live opgeleverd.
 
 ---
 

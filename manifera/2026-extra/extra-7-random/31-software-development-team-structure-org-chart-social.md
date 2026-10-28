@@ -1,4 +1,4 @@
-🚨 A software development team structure that works brilliantly at one company and gets copied wholesale into another rarely produces the same result. The structure wasn't generically good — it was well-matched to that specific product. ⚙️🧩
+🚨 A software development team structure that works brilliantly at one company and gets copied wholesale into another rarely produces the same result. The structure wasn't generically good - it was well-matched to that specific product. ⚙️🧩
 
 **The Pain Points:**
 ❌ **Borrowed Prestige, No Fit Check:** Adopting a popular structure without examining whether it matches your own architecture.
@@ -6,7 +6,7 @@
 ❌ **Artificially Separated Teams:** Tightly-coupled code split across teams that now need constant cross-team coordination.
 
 **The Manifera Solution:**
-✅ **Structure Follows Architecture:** Conway's Law applied deliberately — team boundaries matched to actual product coupling.
+✅ **Structure Follows Architecture:** Conway's Law applied deliberately - team boundaries matched to actual product coupling.
 ✅ **Amsterdam Strategic Governance:** Honest assessment of real communication friction, not idealized assumptions.
 ✅ **Vietnam Execution Velocity:** Teams structured to match the systems they actually own.
 

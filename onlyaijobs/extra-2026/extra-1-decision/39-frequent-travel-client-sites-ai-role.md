@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Some of the most interesting applied AI work in the Netherlands happens where the problem physically is: a production line in Brabant, a greenhouse in Westland, a substation in Gelderland, a customer's warehouse in Limburg, a test facility that cannot be reached by video call. Roles at machine builders, engineering firms, consultancies and multi-site employers therefore come with travel attached — sometimes a few days a month, sometimes most of the week. Job descriptions describe this in a single line, usually as a percentage that nobody can define precisely, and candidates rarely think it through until the third week of driving. It deserves the same scrutiny as salary, because it is the part of the job you cannot renegotiate afterwards without changing roles.
+Some of the most interesting applied AI work in the Netherlands happens where the problem physically is: a production line in Brabant, a greenhouse in Westland, a substation in Gelderland, a customer's warehouse in Limburg, a test facility that cannot be reached by video call. Roles at machine builders, engineering firms, consultancies and multi-site employers therefore come with travel attached - sometimes a few days a month, sometimes most of the week. Job descriptions describe this in a single line, usually as a percentage that nobody can define precisely, and candidates rarely think it through until the third week of driving. It deserves the same scrutiny as salary, because it is the part of the job you cannot renegotiate afterwards without changing roles.
 
 ## The Kinds of Travel, Which Are Not Alike
 
@@ -85,7 +85,7 @@ Data professionals who visit sites consistently produce better models than those
 
 ## Practical Dutch Points
 
-**Reimbursement.** Many Dutch employers provide a travel allowance, a public transport card, a mobility budget or a company car for roles with structural travel. What is customary depends on the sector and any collective agreement, and the differences between employers are substantial — this is a legitimate negotiation point.
+**Reimbursement.** Many Dutch employers provide a travel allowance, a public transport card, a mobility budget or a company car for roles with structural travel. What is customary depends on the sector and any collective agreement, and the differences between employers are substantial - this is a legitimate negotiation point.
 
 **Working time.** Working hours and rest are regulated under the Working Hours Act, and whether travel time counts as working time is often addressed in collective agreements or company policy rather than being obvious. Ask how it is handled here, particularly for long days.
 
@@ -139,7 +139,7 @@ Before signing, she asks the concrete questions. The answers: typically four to 
 
 She negotiates one addition: a maximum of four nights away per month except during commissioning, agreed in writing, with commissioning trips discussed in advance.
 
-Two years later she describes the site visits as the reason her models work. The cap has been tested twice and held. The part she underestimated was not the nights away but the fragmentation — she now blocks two fixed days a week with no travel, which the team has come to respect.
+Two years later she describes the site visits as the reason her models work. The cap has been tested twice and held. The part she underestimated was not the nights away but the fragmentation - she now blocks two fixed days a week with no travel, which the team has come to respect.
 
 ## Travel and the Rest of Your Life
 
@@ -147,7 +147,7 @@ The decision is rarely only about the job. Frequent travel interacts with everyt
 
 **Childcare and school logistics** assume predictability. A partner who also travels, or a fixed pickup time, makes short-notice trips genuinely difficult rather than merely inconvenient.
 
-**Anything with a weekly rhythm suffers first** — sport, evening classes, volunteering, a standing commitment with friends. These are the things people quietly drop, and their absence accumulates.
+**Anything with a weekly rhythm suffers first** - sport, evening classes, volunteering, a standing commitment with friends. These are the things people quietly drop, and their absence accumulates.
 
 **Recovery time is real.** A day that starts at half past five and ends at eight in the evening is not a normal working day, even if only eight hours were billable.
 
@@ -157,11 +157,11 @@ Before accepting, look at an ordinary month in your actual life and place the tr
 
 ## Making Travel Days Productive
 
-If you take the role, a few habits recover a surprising amount of the lost time. Travel by train where the route allows and treat the journey as a work block rather than dead time. Batch site visits so that one trip covers several purposes — data collection, stakeholder conversations, and the informal observation that produces the best insights. Keep a written note per visit, because details blur after the third site in a week. And protect at least one full day a week with no travel for work that needs continuity.
+If you take the role, a few habits recover a surprising amount of the lost time. Travel by train where the route allows and treat the journey as a work block rather than dead time. Batch site visits so that one trip covers several purposes - data collection, stakeholder conversations, and the informal observation that produces the best insights. Keep a written note per visit, because details blur after the third site in a week. And protect at least one full day a week with no travel for work that needs continuity.
 
 ## Key Takeaways
 
-- Travel comes in distinct forms — client visits, secondment, field work, commissioning, multi-site — and a percentage in a vacancy tells you almost nothing about which.
+- Travel comes in distinct forms - client visits, secondment, field work, commissioning, multi-site - and a percentage in a vacancy tells you almost nothing about which.
 - Ask about nights away, planning horizon, geography, whether travel counts as working time, reimbursement and who decides a visit is necessary.
 - Physical presence genuinely improves applied AI work: processes, workarounds, sensor differences and user trust are not visible in the data.
 - The costs are fragmented deep work, unpredictability, physical toll and uneven distribution across a team.
@@ -185,7 +185,7 @@ It depends on the employer, the collective agreement and the nature of the journ
 Commonly a travel allowance, public transport card, mobility budget or company car, plus hotel and meal expenses. The differences between employers are significant and negotiable.
 
 ### (Scenario: candidate with family commitments) Can I negotiate a limit on travel?
-Yes — a cap on nights away per month, guaranteed travel-free weeks and advance notice are all reasonable requests, and should be confirmed in writing.
+Yes - a cap on nights away per month, guaranteed travel-free weeks and advance notice are all reasonable requests, and should be confirmed in writing.
 
 ### (Scenario: candidate weighing the benefit) Is site visiting worth the disruption?
 Often yes for applied AI: seeing the real process, the workarounds and how people use your output produces better models than working from data alone.
@@ -195,11 +195,11 @@ Often yes for applied AI: seeing the real process, the workarounds and how peopl
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "What does a travel percentage in a vacancy actually mean?", "acceptedAnswer": {"@type": "Answer", "text": "Little on its own — ask for days per month, nights away, planning horizon and geography."}},
+    {"@type": "Question", "name": "What does a travel percentage in a vacancy actually mean?", "acceptedAnswer": {"@type": "Answer", "text": "Little on its own - ask for days per month, nights away, planning horizon and geography."}},
     {"@type": "Question", "name": "Does travel time count as working time in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the employer and collective agreement; ask explicitly."}},
     {"@type": "Question", "name": "What is usually reimbursed for travel-heavy roles?", "acceptedAnswer": {"@type": "Answer", "text": "Travel allowance, transport card, mobility budget or company car, plus expenses."}},
-    {"@type": "Question", "name": "Can I negotiate a limit on travel?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — caps, travel-free weeks and notice periods, confirmed in writing."}},
-    {"@type": "Question", "name": "Is site visiting worth the disruption?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — seeing the real process produces better applied models."}}
+    {"@type": "Question", "name": "Can I negotiate a limit on travel?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - caps, travel-free weeks and notice periods, confirmed in writing."}},
+    {"@type": "Question", "name": "Is site visiting worth the disruption?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - seeing the real process produces better applied models."}}
   ]
 }
 </script>

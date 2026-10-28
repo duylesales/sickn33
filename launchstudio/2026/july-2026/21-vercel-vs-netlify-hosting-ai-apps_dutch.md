@@ -95,7 +95,7 @@ Elijah werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 
 **Resultaat:** Elijah behaalde een succespercentage van 100% en een soepele routing op alle boekingspagina's.
 
-**Kosten en tijdlijn:** € 850 (hosting- en implementatiepakket) — productieklaar en binnen 3 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 850 (hosting- en implementatiepakket) - productieklaar en binnen 3 werkdagen geïmplementeerd.
 
 ---
 

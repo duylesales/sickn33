@@ -89,7 +89,7 @@ Recruitment in the EU institutions follows specific procedures that differ from 
 
 **Seconded national experts** are staff from national administrations who work in EU institutions for a limited period, paid partly by their home administration.
 
-**Traineeships** — such as the Commission's paid traineeship programme — offer five-month placements for recent graduates and are a common entry point.
+**Traineeships** - such as the Commission's paid traineeship programme - offer five-month placements for recent graduates and are a common entry point.
 
 EU recruitment generally requires citizenship of an EU Member State for most positions, knowledge of at least two EU languages and suitable qualifications. Selection processes can take many months, so plan accordingly and keep an eye on vacancy announcements from the institutions and the AI Office.
 
@@ -97,7 +97,7 @@ EU recruitment generally requires citizenship of an EU Member State for most pos
 
 - **Technical depth:** hands-on experience with ML models, evaluation, data pipelines and deployment, ideally including large language models.
 - **Understanding of legislation:** the AI Act's risk-based structure, obligations for high-risk systems and general-purpose AI models, and its interaction with GDPR, the Digital Services Act and product safety law.
-- **Writing:** clear, precise writing for non-technical readers — briefs, position papers, guidance.
+- **Writing:** clear, precise writing for non-technical readers - briefs, position papers, guidance.
 - **Stakeholder communication:** explaining technical issues to lawyers, politicians and the public without oversimplifying.
 - **Patience with process:** policy moves slowly and involves compromise.
 - **Languages:** English dominates the Brussels policy world, but French is widely used, and other EU languages are assets.
@@ -110,7 +110,7 @@ Brussels is a multilingual, international city. French and Dutch are its officia
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home, without paid placement and with applications going straight to the employer. Browsing is free and requires no account.
 
-To be clear about its scope: OnlyAIJobs listings are currently concentrated in the Netherlands, and most are technical roles rather than policy positions. For AI policy jobs in Brussels, the primary sources are the EU institutions' own vacancy pages, EPSO, the AI Office, specialised public affairs job boards, consultancy and think tank career pages and your network. OnlyAIJobs is useful if you want to keep a technical role as an option or build governance experience within an engineering job first — for instance at Dutch employers such as Accenture or Cegeka, where AI governance work is growing alongside engineering. Organisations hiring AI governance talent can list their first vacancy free via info@onlyaijobs.eu.
+To be clear about its scope: OnlyAIJobs listings are currently concentrated in the Netherlands, and most are technical roles rather than policy positions. For AI policy jobs in Brussels, the primary sources are the EU institutions' own vacancy pages, EPSO, the AI Office, specialised public affairs job boards, consultancy and think tank career pages and your network. OnlyAIJobs is useful if you want to keep a technical role as an option or build governance experience within an engineering job first - for instance at Dutch employers such as Accenture or Cegeka, where AI governance work is growing alongside engineering. Organisations hiring AI governance talent can list their first vacancy free via info@onlyaijobs.eu.
 
 ## What the Work Looks Like Day to Day
 
@@ -128,7 +128,7 @@ For some engineers, this rhythm is energising; for others, it is frustrating. Ta
 
 ## Understanding the AI Act as a Technical Expert
 
-Anyone pursuing AI policy jobs in Brussels should know the structure of the AI Act well. In broad terms, it follows a risk-based approach. Certain AI practices considered unacceptable are prohibited. AI systems classified as high-risk — for example in certain areas of employment, education, access to essential services, law enforcement and as safety components of regulated products — are subject to requirements on risk management, data governance, technical documentation, record-keeping, transparency, human oversight, accuracy, robustness and cybersecurity. Transparency obligations apply to certain other systems, such as those interacting with people or generating synthetic content. Providers of general-purpose AI models have specific obligations, with additional ones for models considered to pose systemic risk. The obligations apply in stages over several years after entry into force.
+Anyone pursuing AI policy jobs in Brussels should know the structure of the AI Act well. In broad terms, it follows a risk-based approach. Certain AI practices considered unacceptable are prohibited. AI systems classified as high-risk - for example in certain areas of employment, education, access to essential services, law enforcement and as safety components of regulated products - are subject to requirements on risk management, data governance, technical documentation, record-keeping, transparency, human oversight, accuracy, robustness and cybersecurity. Transparency obligations apply to certain other systems, such as those interacting with people or generating synthetic content. Providers of general-purpose AI models have specific obligations, with additional ones for models considered to pose systemic risk. The obligations apply in stages over several years after entry into force.
 
 For technical experts, the most interesting questions often lie in implementation: how to evaluate robustness in practice, what adequate data governance means for a specific use case, how to document training data for large models, how to measure and mitigate bias, and how to design human oversight that works. Codes of practice, guidelines and harmonised standards translate the legal requirements into concrete practice, and technical experts are needed to draft and review them.
 
@@ -149,7 +149,7 @@ Pay in AI policy roles varies widely. EU institution salaries follow published g
 
 ## Beyond Brussels: National Authorities
 
-The AI Act is enforced not only in Brussels. Each Member State designates national competent authorities, including market surveillance authorities, which supervise AI systems on their markets. These authorities also need technical experts. If moving to Brussels is not an option, national authorities in your own country — or data protection authorities, which already handle many AI-related questions under GDPR — can offer similar work closer to home. In the Netherlands, for example, supervisors such as the Dutch Data Protection Authority have taken on coordinating roles in algorithm supervision. Experience at a national authority is also valuable if you later apply to EU-level roles.
+The AI Act is enforced not only in Brussels. Each Member State designates national competent authorities, including market surveillance authorities, which supervise AI systems on their markets. These authorities also need technical experts. If moving to Brussels is not an option, national authorities in your own country - or data protection authorities, which already handle many AI-related questions under GDPR - can offer similar work closer to home. In the Netherlands, for example, supervisors such as the Dutch Data Protection Authority have taken on coordinating roles in algorithm supervision. Experience at a national authority is also valuable if you later apply to EU-level roles.
 
 ## Real example
 

@@ -1,4 +1,4 @@
-🔍 Nadia bouwde ClauseBank, een SaaS voor contractzoeken voor advocatenkantoren, met **Bolt** — en voegde semantisch zoeken toe met pgvector via een tutorial die het binnen een dag werkend kreeg. Acht maanden en 40 kantoren later stelde een enterprise-beveiligingsbeoordeling één vraag die ze niet met vertrouwen kon beantwoorden.
+🔍 Nadia bouwde ClauseBank, een SaaS voor contractzoeken voor advocatenkantoren, met **Bolt** - en voegde semantisch zoeken toe met pgvector via een tutorial die het binnen een dag werkend kreeg. Acht maanden en 40 kantoren later stelde een enterprise-beveiligingsbeoordeling één vraag die ze niet met vertrouwen kon beantwoorden.
 
 Als u vectorzoeken toevoegt zonder dezelfde Row Level Security-scrutiny die u op elke andere tabel zou toepassen, wordt "gewoon zoeken" een cross-tenant datalek dat wacht om ontdekt te worden.
 
@@ -12,7 +12,7 @@ Als u vectorzoeken toevoegt zonder dezelfde Row Level Security-scrutiny die u op
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-ClauseBank slaagde voor de beveiligingsbeoordeling van de enterprise-klant met de kwetsbaarheid volledig gedocumenteerd als verholpen, en Nadia sloot het grootste contract van het kantoor tot nu toe — een enterprise-implementatie met 200 zetels. (€ 1.700 (Launch & Grow Pakket) — beveiligd en geverifieerd in 6 werkdagen.) 🚀
+ClauseBank slaagde voor de beveiligingsbeoordeling van de enterprise-klant met de kwetsbaarheid volledig gedocumenteerd als verholpen, en Nadia sloot het grootste contract van het kantoor tot nu toe - een enterprise-implementatie met 200 zetels. (€ 1.700 (Launch & Grow Pakket) - beveiligd en geverifieerd in 6 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-vector-database-vendor-enterprise
 

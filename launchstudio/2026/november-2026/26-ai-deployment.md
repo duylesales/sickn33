@@ -110,9 +110,9 @@ Within 10 business days, LaunchStudio built a resilient AI deployment pipeline. 
 **Result:** MedLiterature relaunched successfully. It handled 300 concurrent syntheses on the new architecture without a single timeout. Lars now has university departments paying €1,200/month for institutional access, and he never worries about deployment timeouts again.
 
 > *"I am a researcher, not a DevOps engineer. The code I built with AI was scientifically sound, but the cloud infrastructure crushed it instantly. LaunchStudio built the asynchronous deployment pipeline my app desperately needed. They made my prototype real."*
-> — **Dr. Lars van der Berg, Founder, MedLiterature (Leiden)**
+> - **Dr. Lars van der Berg, Founder, MedLiterature (Leiden)**
 
-**Cost & Timeline:** €5,200 (Launch & Grow Package with Async Architecture Add-on) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €5,200 (Launch & Grow Package with Async Architecture Add-on) - production-ready and deployed in 10 business days.
 
 ---
 

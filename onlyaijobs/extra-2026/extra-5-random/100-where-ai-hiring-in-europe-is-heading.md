@@ -80,11 +80,11 @@ For candidates, the practical implication is that governance literacy has become
 
 Across the hundred guides in this series, a pattern is visible in which sectors sustain demand regardless of technology cycles.
 
-**Sectors with physical operations and expensive failures** — manufacturing, energy, utilities, transport, aerospace, chemicals, semiconductors — hire steadily because small improvements have measurable value and the problems do not disappear.
+**Sectors with physical operations and expensive failures** - manufacturing, energy, utilities, transport, aerospace, chemicals, semiconductors - hire steadily because small improvements have measurable value and the problems do not disappear.
 
-**Regulated sectors** — banking, insurance, pharmaceuticals, medical devices, public administration — hire because obligations require continuous model work and because documentation and validation are ongoing.
+**Regulated sectors** - banking, insurance, pharmaceuticals, medical devices, public administration - hire because obligations require continuous model work and because documentation and validation are ongoing.
 
-**Sectors with dense operational data** — logistics, retail, telecommunications, customer operations — hire because forecasting, optimisation and classification deliver quantifiable returns.
+**Sectors with dense operational data** - logistics, retail, telecommunications, customer operations - hire because forecasting, optimisation and classification deliver quantifiable returns.
 
 **Public bodies and infrastructure operators** hire steadily, with stability and public purpose as their offer.
 
@@ -102,7 +102,7 @@ Work follows industry. Semiconductors are in Eindhoven, Dresden and Grenoble. Au
 
 Hybrid working, now the European norm for data roles, has widened the catchment of every employer. A company thirty minutes from a university city competes for anyone within commuting distance, and for people who moved to the region for family or housing reasons and would prefer not to travel.
 
-This matters for both sides. Candidates who assume they must relocate overlook substantial opportunity near where they already live. Employers outside major cities who assume they cannot compete are frequently invisible rather than uncompetitive — a vacancy described generically on a general board reaches nobody in particular.
+This matters for both sides. Candidates who assume they must relocate overlook substantial opportunity near where they already live. Employers outside major cities who assume they cannot compete are frequently invisible rather than uncompetitive - a vacancy described generically on a general board reaches nobody in particular.
 
 The practical advice for candidates is to search by distance rather than by city name, and to read vacancies from employers whose names mean nothing to you. Several of the most interesting technical problems in Europe are at companies the general public has never heard of.
 
@@ -188,7 +188,7 @@ That last point is why OnlyAIJobs exists. It began from an observation in Noord-
 
 ## How OnlyAIJobs Fits
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, vacancies show their exact address and the distance from the candidate's home, applications go directly to the employer's own page, and no employer can pay for a higher position — vacancies compete on how clearly they are written rather than on advertising spend.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, vacancies show their exact address and the distance from the candidate's home, applications go directly to the employer's own page, and no employer can pay for a higher position - vacancies compete on how clearly they are written rather than on advertising spend.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Accenture, Cegeka, Sendcloud, Mollie, Heijmans, Rexel, VINCI Energies, AMCS, Boltrics and Holland Innovative among those listing AI and data roles. Elsewhere in Europe, use it alongside national boards and company career pages.
 

@@ -1,4 +1,4 @@
-🇳🇱 Sanne bouwde LogiFlow AI met **Lovable** — een veelbelovende pilot met een grote Nederlandse retailgroep liep bijna vast toen hun beveiligingsafdeling een formele leveranciersbeoordeling stuurde. 🧠
+🇳🇱 Sanne bouwde LogiFlow AI met **Lovable** - een veelbelovende pilot met een grote Nederlandse retailgroep liep bijna vast toen hun beveiligingsafdeling een formele leveranciersbeoordeling stuurde. 🧠
 
 Als uw AI SaaS geen EU-only dataresidentie, gehandhaafde Row Level Security en NEN 7510-afgestemde documentatie kan aantonen, loopt een Nederlandse enterprise-beoordeling uw deal snel vast.
 
@@ -12,7 +12,7 @@ Als uw AI SaaS geen EU-only dataresidentie, gehandhaafde Row Level Security en N
 
 Bij **LaunchStudio** dichten wij dit soort hiaten al sinds 2014 via Manifera, vanuit onze eigen thuisbasis in Amsterdam. 🛡️
 
-Sannes product doorstond de beoordeling met twee dagen speling en de deal ging direct door naar contractonderhandeling. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
+Sannes product doorstond de beoordeling met twee dagen speling en de deal ging direct door naar contractonderhandeling. (€ 2.600 (Launch & Grow Pakket) - 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/dutch-enterprise-vendor-security-review-case-study
 

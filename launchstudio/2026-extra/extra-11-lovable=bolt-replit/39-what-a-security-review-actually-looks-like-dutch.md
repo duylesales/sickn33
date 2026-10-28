@@ -30,7 +30,7 @@ Vooraf exact weten hoe zo'n traject verloopt maakt het proces veel minder intimi
 
 **Een penetratietest (Pentest)** valt het draaiende productiesysteem aan vanaf de buitenkant, meestal zonder toegang tot de broncode (black-box), om te simuleren wat een kwaadwillende externe hacker kan forceren. Dat beantwoordt een andere vraag en is doorgaans wat enterprise-inkopers bedoelen wanneer ze formeel om een pentest vragen.
 
-**Een geautomatiseerde kwetsbaarheidsscan** laat softwarematige tools los op je dependencies en URL's. Dit is goedkoop en nuttig om verouderde bibliotheken op te sporen, maar volkomen blind voor het meest voorkomende en gevaarlijke lek in AI-gebouwde software — namelijk dat klant A de privégegevens van klant B kan inzien — simpelweg omdat een geautomatiseerde scanner de semantische betekenis van jouw data niet begrijpt.
+**Een geautomatiseerde kwetsbaarheidsscan** laat softwarematige tools los op je dependencies en URL's. Dit is goedkoop en nuttig om verouderde bibliotheken op te sporen, maar volkomen blind voor het meest voorkomende en gevaarlijke lek in AI-gebouwde software - namelijk dat klant A de privégegevens van klant B kan inzien - simpelweg omdat een geautomatiseerde scanner de semantische betekenis van jouw data niet begrijpt.
 
 Voor een vroege SaaS-applicatie is een gerichte security review de enige juiste eerste stap. De kwetsbaarheden in door AI gegenereerde code zijn immers vrijwel altijd ontwerpfouten en ontbrekende autorisatieregels, geen exotische cryptografische exploits.
 
@@ -98,13 +98,13 @@ Dat remediëringsverslag is goud waard. Het is exact het document dat je overhan
 - **Wanneer je een bestaande applicatie overneemt** die je niet zelf hebt gebouwd.
 - **Jaarlijks als periodieke check:** na de eerste grondige review is dat een aanzienlijk lichter en goedkoper traject.
 
-Wacht niet tot er daadwerkelijk een beveiligingsincident plaatsvindt — hoewel dat helaas het moment is waarop de meeste oprichters pas contact opnemen.
+Wacht niet tot er daadwerkelijk een beveiligingsincident plaatsvindt - hoewel dat helaas het moment is waarop de meeste oprichters pas contact opnemen.
 
 ## Wat een review kost en wat het bespaart
 
 Voor een compacte AI-gebouwde applicatie valt een gerichte audit inclusief volledige technische remediëring binnen de vaste LaunchStudio-pakketprijzen tussen € 800 en € 7.500, afhankelijk van de complexiteit van de applicatie. Dat staat in schril contrast met de alternatieven: een enterprise-klant die tijdens zijn eigen security-evaluatie een lek ontdekt en afhaakt, of een datalek dat verplicht moet worden gemeld bij de Autoriteit Persoonsgegevens.
 
-De inspectie en het herstelwerk worden uitgevoerd door de senior engineers van Manifera — elf jaar ervaring met bedrijfskritische softwaresystemen voor veeleisende opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. De interface die je in Lovable, Bolt of Cursor hebt gebouwd blijft volledig intact. Bekijk de inhoud van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), of [deel je prototypelink](https://launchstudio.eu/nl/#contact) voor een initiële analyse binnen één werkdag.
+De inspectie en het herstelwerk worden uitgevoerd door de senior engineers van Manifera - elf jaar ervaring met bedrijfskritische softwaresystemen voor veeleisende opdrachtgevers als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. De interface die je in Lovable, Bolt of Cursor hebt gebouwd blijft volledig intact. Bekijk de inhoud van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), of [deel je prototypelink](https://launchstudio.eu/nl/#contact) voor een initiële analyse binnen één werkdag.
 
 ## Hoe je je optimaal voorbereidt op een audit
 
@@ -148,9 +148,9 @@ De remediëring nam acht werkdagen in beslag, in strikte volgorde van prioriteit
 **Resultaat:** het accountantskantoor verlengde het contract per ommegaande. Anne-Fleur heeft het remediëringsverslag sindsdien proactief gedeeld in twee nieuwe salestrajecten, wat beide verkoopgesprekken aanzienlijk heeft verkort.
 
 > *"Veertien kwetsbaarheden klonk in eerste instantie als een totale ramp. Maar er waren er drie die er écht toe deden, en het rapport legde exact de vinger op de zere plek. Dat maakte het elke euro waard."*
-> — **Anne-Fleur Sluiter, Oprichter, Bewaarplan (Apeldoorn)**
+> - **Anne-Fleur Sluiter, Oprichter, Bewaarplan (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** € 4.100 (security review plus volledige remediëring van elf bevindingen, inclusief hertest en documentatie) — afgerond in 11 werkdagen.
+**Kosten & Doorlooptijd:** € 4.100 (security review plus volledige remediëring van elf bevindingen, inclusief hertest en documentatie) - afgerond in 11 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -167,7 +167,7 @@ Doorgaans tussen de acht en twintig bevindingen over verschillende risiconiveaus
 Bevindingen gerangschikt op zakelijke impact, reproduceerbaar bewijs voor elk punt, concrete oplossingen voor jouw specifieke tech-stack, een eerlijke risicobeoordeling en een overzicht van wat gecontroleerd is en veilig bleek.
 
 ### Wanneer is het ideale moment voor een security review?
-Vóór je eerste betalende zakelijke klant, vóórdat je privacygevoelige gegevens verwerkt, na grote wijzigingen aan authenticatie of betalingen en wanneer je een bestaande codebase overneemt — niet pas nadat er een incident heeft plaatsgevonden.
+Vóór je eerste betalende zakelijke klant, vóórdat je privacygevoelige gegevens verwerkt, na grote wijzigingen aan authenticatie of betalingen en wanneer je een bestaande codebase overneemt - niet pas nadat er een incident heeft plaatsgevonden.
 
 <script type="application/ld+json">
 {
@@ -211,7 +211,7 @@ Vóór je eerste betalende zakelijke klant, vóórdat je privacygevoelige gegeve
       "name": "Wanneer is het ideale moment voor een security review?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vóór je eerste zakelijke klant, vóór het opslaan van gevoelige data, na grote releases en bij overname van code — vóórdat er een incident optreedt."
+        "text": "Vóór je eerste zakelijke klant, vóór het opslaan van gevoelige data, na grote releases en bij overname van code - vóórdat er een incident optreedt."
       }
     }
   ]

@@ -31,15 +31,15 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-Veelgeciteerd onderzoek van de University of California, Irvine toont aan dat het na een willekeurige werkonderbreking gemiddeld ruim 23 minuten duurt om weer volledig geconcentreerd terug te keren naar de oorspronkelijke taak. Of dat getal voor elke specifieke context exact op de minuut klopt is onderwerp van debat; wat volstrekt onomstotelijk vaststaat, is de vernietigende impact van dit mechanisme op een kort ontwikkeltraject van twee tot drie weken. Zes spontane chatberichten verspreid over een werkdag — stuk voor stuk volkomen begrijpelijk, en elk met acht seconden moeite verstuurd — kunnen gerust het leeuwendeel van een productieve middag deep work opslokken waar u juist voor betaalt.
+Veelgeciteerd onderzoek van de University of California, Irvine toont aan dat het na een willekeurige werkonderbreking gemiddeld ruim 23 minuten duurt om weer volledig geconcentreerd terug te keren naar de oorspronkelijke taak. Of dat getal voor elke specifieke context exact op de minuut klopt is onderwerp van debat; wat volstrekt onomstotelijk vaststaat, is de vernietigende impact van dit mechanisme op een kort ontwikkeltraject van twee tot drie weken. Zes spontane chatberichten verspreid over een werkdag - stuk voor stuk volkomen begrijpelijk, en elk met acht seconden moeite verstuurd - kunnen gerust het leeuwendeel van een productieve middag deep work opslokken waar u juist voor betaalt.
 
 Dit is het ongemakkelijke paradox van softwareontwikkeling. Oprichters die het allermeest betrokken zijn bij hun lancering, zijn in de praktijk vaak degene die onbedoeld voor de meeste vertraging zorgen. En niemand vertelt hen dat recht in het gezicht, want *"deze klant is heel betrokken"* is niet iets waar een ontwikkelaar openlijk over durft te klagen. De oplossing is niet minder betrokken zijn. De oplossing is uw betrokkenheid zó structureren dat het het team versterkt in plaats van onderbreekt.
 
 ## Waarom Technische Onderbrekingen Veel Meer Kosten Dan Vergaderingen
 
-Een engineer die sleutelt aan de beveiliging en datatoegangsregels van uw product, houdt op dat moment een enorme mentale architectuur in zijn hoofd vast: welke tabellen aan elkaar zijn gekoppeld, via welke API-endpoints ze worden benaderd, welke code de AI-tool automatisch genereerde, en welke aannames in uw prototype zitten die nergens formeel worden afgedwongen. Het opbouwen van die mentale blauwdruk kost dertig tot veertig minuten geconcentreerde focus — en die focus verdwijnt als sneeuw voor de zon bij elke notificatie. Een ogenschijnlijk simpel vraagje om 11:20 uur kost niet slechts de twee minuten die nodig zijn om te antwoorden; het kost die twee minuten plus de tijd om de volledige gedachtegang opnieuw op te bouwen.
+Een engineer die sleutelt aan de beveiliging en datatoegangsregels van uw product, houdt op dat moment een enorme mentale architectuur in zijn hoofd vast: welke tabellen aan elkaar zijn gekoppeld, via welke API-endpoints ze worden benaderd, welke code de AI-tool automatisch genereerde, en welke aannames in uw prototype zitten die nergens formeel worden afgedwongen. Het opbouwen van die mentale blauwdruk kost dertig tot veertig minuten geconcentreerde focus - en die focus verdwijnt als sneeuw voor de zon bij elke notificatie. Een ogenschijnlijk simpel vraagje om 11:20 uur kost niet slechts de twee minuten die nodig zijn om te antwoorden; het kost die twee minuten plus de tijd om de volledige gedachtegang opnieuw op te bouwen.
 
-Bij korte trajecten is dit effect desastreus, omdat er geen speling in de planning zit. In een enterprise-project van twaalf maanden verdwijnt een verstoorde middag geruisloos in de marge. In een fixed-price software-hardening traject van twee weken zijn er welgeteld tien werkdagen. De eerste dag staat in het teken van onboarding en oriëntatie, de laatste dag van overdracht en livegang — er resteren dus acht dagen effectieve bouwtijd. Verliest een engineer dagelijks negentig minuten aan context-switches, dan raakt u anderhalve dag kwijt: zo'n 18% van de totale productieve bouwtijd verdampt, zonder dat de scope, de prijs of iemands inzet formeel is veranderd.
+Bij korte trajecten is dit effect desastreus, omdat er geen speling in de planning zit. In een enterprise-project van twaalf maanden verdwijnt een verstoorde middag geruisloos in de marge. In een fixed-price software-hardening traject van twee weken zijn er welgeteld tien werkdagen. De eerste dag staat in het teken van onboarding en oriëntatie, de laatste dag van overdracht en livegang - er resteren dus acht dagen effectieve bouwtijd. Verliest een engineer dagelijks negentig minuten aan context-switches, dan raakt u anderhalve dag kwijt: zo'n 18% van de totale productieve bouwtijd verdampt, zonder dat de scope, de prijs of iemands inzet formeel is veranderd.
 
 De oprichter ziet dit mechanisme niet. Wat de oprichter wél merkt: alles wordt uiteindelijk opgeleverd, maar de laatste paar checklist-items voelen gehaast, en die fijne optimalisatie die in week één terloops werd genoemd heeft de eindstreep niet gehaald. Dát is hoe een versnipperde communicatie er aan de buitenkant uitziet.
 
@@ -49,13 +49,13 @@ Vergelijk hoe exact hetzelfde project kan verlopen onder twee verschillende werk
 
 **Ritme A (De constante stroom):** De oprichter kijkt de hele dag door met een schuin oog in het gezamenlijke Slack- of WhatsApp-kanaal.  
 - Dinsdag 09:40: *"Goedemorgen! Hoe staat het ervoor vandaag?"*  
-- Dinsdag 11:15: *"Kort vraagje — bevatten de transactionele e-mails straks ook ons logo?"*  
-- Dinsdag 14:30: *"Sorry, nog één ding — moeten we de proefperiode op 14 of 30 dagen zetten? Ik denk even hardop na."*  
+- Dinsdag 11:15: *"Kort vraagje - bevatten de transactionele e-mails straks ook ons logo?"*  
+- Dinsdag 14:30: *"Sorry, nog één ding - moeten we de proefperiode op 14 of 30 dagen zetten? Ik denk even hardop na."*  
 - Dinsdag 16:50: *"Is er vandaag nog tijd om naar de mobiele weergave te kijken?"*  
 
-Vier beleefde berichten, geen enkele met acute spoed. De engineer reageert telkens binnen enkele minuten, want snel antwoorden voelt immers als goede service. Het resultaat: vier context-switches, circa twee uur productieve engineering verloren, en de vraag over de proefperiode — een wezenlijk strategisch productbesluit — kreeg een haastig antwoord van dertig seconden in plaats van een gefundeerde discussie.
+Vier beleefde berichten, geen enkele met acute spoed. De engineer reageert telkens binnen enkele minuten, want snel antwoorden voelt immers als goede service. Het resultaat: vier context-switches, circa twee uur productieve engineering verloren, en de vraag over de proefperiode - een wezenlijk strategisch productbesluit - kreeg een haastig antwoord van dertig seconden in plaats van een gefundeerde discussie.
 
-**Ritme B (De gebundelde discipline):** Dezelfde oprichter, met exact dezelfde vier vragen. Hij noteert ze echter gedurende de dag in een kladblok. Om 16:00 uur stuurt hij één overzichtelijk bericht, gemarkeerd als: *"Geen haast, morgen oppakken is prima; bij punt 3 (duur proefperiode) moeten we even goed stilstaan."* De engineer beantwoordt drie vragen in zes minuten aan het einde van zijn werkdag en reserveert tien minuten in het vaste wekelijkse overleg voor vraag drie. Nul context-switches overdag. De strategische vraag krijgt de diepgang die het verdient: de engineer legt rustig uit dat een proefperiode van 30 dagen mét creditcardregistratie vooraf de dunning-logica complexer maakt en een halve dag extra programmeerwerk kost — een cruciaal inzicht dat de oprichter bij een gehaast chatantwoord nooit had gekregen.
+**Ritme B (De gebundelde discipline):** Dezelfde oprichter, met exact dezelfde vier vragen. Hij noteert ze echter gedurende de dag in een kladblok. Om 16:00 uur stuurt hij één overzichtelijk bericht, gemarkeerd als: *"Geen haast, morgen oppakken is prima; bij punt 3 (duur proefperiode) moeten we even goed stilstaan."* De engineer beantwoordt drie vragen in zes minuten aan het einde van zijn werkdag en reserveert tien minuten in het vaste wekelijkse overleg voor vraag drie. Nul context-switches overdag. De strategische vraag krijgt de diepgang die het verdient: de engineer legt rustig uit dat een proefperiode van 30 dagen mét creditcardregistratie vooraf de dunning-logica complexer maakt en een halve dag extra programmeerwerk kost - een cruciaal inzicht dat de oprichter bij een gehaast chatantwoord nooit had gekregen.
 
 Zelfde betrokkenheid. Zelfde vragen. Twee uur méér daadwerkelijke programmeertijd, en een kwalitatief superieur besluit over de kernfunctionaliteit.
 
@@ -73,11 +73,11 @@ Dit kost u welgeteld negentig minuten per week, creëert één voorspelbaar cont
 
 Niet elk bericht kent dezelfde urgentie. Het expliciet vastleggen van drie escalatieniveaus bij de start neemt vrijwel alle wrijving weg:
 
-- **Niveau 1 — Direct onderbreken, ongeacht het tijdstip.** Een acuut live-incident: de productiesite ligt plat, betalingen lopen massaal fout, klantgegevens dreigen te lekken, of er gaat per abuis een bulkmail naar echte gebruikers. Dit komt tijdens een pre-launch traject zelden voor, maar als het gebeurt is de urgentie onmiskenbaar.
-- **Niveau 2 — Zelfde werkdag, in het dagelijkse middagbericht.** Alles wat de directe voortgang van de engineer blokkeert (*blockers*): een ontbrekende API-sleutel, een accountverificatie die u moet autoriseren, of een besluit zonder welk de ontwikkelaar niet verder kan. Uw responstijd als oprichter hoort hier kort en duidelijk te zijn: *"Vragen met het label 'blocker' beantwoord ik binnen vier werkuren."*
-- **Niveau 3 — Het wekelijkse vaste overleg.** Vrijwel al het overige: vormgevingsmeningen, ideeën voor toekomstige features, vragen over randvoorwaarden, *"zullen we misschien ook nog..."*, en hardop nadenken. Deze punten zijn niet onbelangrijk, maar kennen geen acute tijdsdruk. Ze worden kwalitatief veel beter opgelost wanneer er rustig tijd voor is gereserveerd.
+- **Niveau 1 - Direct onderbreken, ongeacht het tijdstip.** Een acuut live-incident: de productiesite ligt plat, betalingen lopen massaal fout, klantgegevens dreigen te lekken, of er gaat per abuis een bulkmail naar echte gebruikers. Dit komt tijdens een pre-launch traject zelden voor, maar als het gebeurt is de urgentie onmiskenbaar.
+- **Niveau 2 - Zelfde werkdag, in het dagelijkse middagbericht.** Alles wat de directe voortgang van de engineer blokkeert (*blockers*): een ontbrekende API-sleutel, een accountverificatie die u moet autoriseren, of een besluit zonder welk de ontwikkelaar niet verder kan. Uw responstijd als oprichter hoort hier kort en duidelijk te zijn: *"Vragen met het label 'blocker' beantwoord ik binnen vier werkuren."*
+- **Niveau 3 - Het wekelijkse vaste overleg.** Vrijwel al het overige: vormgevingsmeningen, ideeën voor toekomstige features, vragen over randvoorwaarden, *"zullen we misschien ook nog..."*, en hardop nadenken. Deze punten zijn niet onbelangrijk, maar kennen geen acute tijdsdruk. Ze worden kwalitatief veel beter opgelost wanneer er rustig tijd voor is gereserveerd.
 
-Bespreek deze drie niveaus hardop op dag één. Daarmee geeft u uw engineer expliciet toestemming om niet binnen twee minuten op elk willekeurig appje te reageren — iets waar een professionele ontwikkelaar uiterst dankbaar voor zal zijn.
+Bespreek deze drie niveaus hardop op dag één. Daarmee geeft u uw engineer expliciet toestemming om niet binnen twee minuten op elk willekeurig appje te reageren - iets waar een professionele ontwikkelaar uiterst dankbaar voor zal zijn.
 
 ## Hoe U een Vraag Zes Uur Lang Vastkoudt
 
@@ -87,7 +87,7 @@ Houd één doorlopend digitaal kladblok bij (Notities, Google Docs of Notion). E
 
 Twee handige gewoontes:
 - **Nummer uw vragen:** Dan kan de ontwikkelaar bondig antwoorden per nummer in plaats van lappen tekst te moeten citeren.
-- **Formuleer uw eigen voorkeur direct mee:** *"Ik neig naar een proefperiode van 14 dagen zonder creditcard vooraf — zie jij daar vanuit de techniek bezwaren tegen?"* Dat levert u in vijf minuten een deskundig antwoord op, terwijl een open vraag als *"hoe denk jij over proefperiodes?"* uitmondt in een tijdrovende meeting.
+- **Formuleer uw eigen voorkeur direct mee:** *"Ik neig naar een proefperiode van 14 dagen zonder creditcard vooraf - zie jij daar vanuit de techniek bezwaren tegen?"* Dat levert u in vijf minuten een deskundig antwoord op, terwijl een open vraag als *"hoe denk jij over proefperiodes?"* uitmondt in een tijdrovende meeting.
 
 De engineers van LaunchStudio en Manifera hebben meer dan 160 complexe softwareprojecten opgeleverd. Eén les geldt voor zowel multinationals als startups: de meest productieve klantrelaties zijn niet de stilste relaties, maar de meest voorspelbare.
 
@@ -96,10 +96,10 @@ De engineers van LaunchStudio en Manifera hebben meer dan 160 complexe softwarep
 Niet alle input heeft hetzelfde effect. In een chatvenster lijken ze op elkaar, maar de impact verschilt hemelsbreed:
 
 **Versnellende feedback** gaat over *concreet waargenomen feiten*.  
-*"Ik heb de registratie getest op staging met een Gmail-adres en de bevestigingsmail deed er negen minuten over"* — dit is goud waard: specifiek, direct reproduceerbaar en tastbaar. Dat geldt ook voor het corrigeren van verkeerde functionele aannames: *"Jullie hebben gebouwd dat een admin alle cliënten kan zien, maar in onze branche mag een boekhouder onder geen beding de cliënten van een andere boekhouder inzien."* Deze feedback in week één bespaart dagen; dezelfde opmerking in week drie kost kapitalen.
+*"Ik heb de registratie getest op staging met een Gmail-adres en de bevestigingsmail deed er negen minuten over"* - dit is goud waard: specifiek, direct reproduceerbaar en tastbaar. Dat geldt ook voor het corrigeren van verkeerde functionele aannames: *"Jullie hebben gebouwd dat een admin alle cliënten kan zien, maar in onze branche mag een boekhouder onder geen beding de cliënten van een andere boekhouder inzien."* Deze feedback in week één bespaart dagen; dezelfde opmerking in week drie kost kapitalen.
 
 **Vertragende feedback (planning-resets)** gaat over *voorkeuren vermomd als nieuwe systeemeisen*.  
-*"Nu jullie toch bezig zijn, kunnen we dan ook direct even..."* is de duurste zin in softwareontwikkeling. Bij een fixed-price project gaat een niet-begrote toevoeging onvermijdelijk ten koste van testtijd, of leidt het op vrijdagmiddag tot een pijnlijke scope-discussie. Nieuwe ideeën zijn niet verboden — ze zijn onvermijdelijk en welkom — maar ze horen thuis op een aparte parkeerlijst voor na de lancering.
+*"Nu jullie toch bezig zijn, kunnen we dan ook direct even..."* is de duurste zin in softwareontwikkeling. Bij een fixed-price project gaat een niet-begrote toevoeging onvermijdelijk ten koste van testtijd, of leidt het op vrijdagmiddag tot een pijnlijke scope-discussie. Nieuwe ideeën zijn niet verboden - ze zijn onvermijdelijk en welkom - maar ze horen thuis op een aparte parkeerlijst voor na de lancering.
 
 Maak vanaf dag één een zichtbare lijst aan met de titel *"Wensen ná de lancering"*. Dat voorkomt dat goede ingevingen verloren gaan, én voorkomt dat ze het lopende traject langzaam uithollen.
 
@@ -120,28 +120,28 @@ Dit zijn de meest waardevolle twintig minuten van het hele project. Hier maakt u
 
 Volledige radiostilte kent zijn eigen gevaren. Als u de staging-omgeving een week lang niet opent, bent u niet aan het delegeren; u zorgt ervoor dat fouten pas door echte klanten worden ontdekt. Als u een blocker-vraag pas na drie dagen beantwoordt, wordt uw terughoudendheid de flessenhals die u probeerde te voorkomen.
 
-Het doel is niet minimale betrokkenheid. Het doel is **geconcentreerde betrokkenheid**: voorspelbaar, gebundeld en gericht op wat uitsluitend ú kunt doen — uw product testen als eigenaar, knopen doorhakken en het team deblokkeren.
+Het doel is niet minimale betrokkenheid. Het doel is **geconcentreerde betrokkenheid**: voorspelbaar, gebundeld en gericht op wat uitsluitend ú kunt doen - uw product testen als eigenaar, knopen doorhakken en het team deblokkeren.
 
-Leg dit ritme vast bij de aftrap en u krijgt wat veel oprichters voor onmogelijk houden: maximale controle én een softwarelancering die stipt op tijd live gaat. Het ontwikkelproces van [LaunchStudio](https://launchstudio.eu/nl/) volgt exact deze cadans — tweewekelijkse schriftelijke updates, één vaste call, dagelijks gebundelde vragen — ondersteund door de beproefde leveringsdiscipline van [Manifera](https://www.manifera.com/portfolio/).
+Leg dit ritme vast bij de aftrap en u krijgt wat veel oprichters voor onmogelijk houden: maximale controle én een softwarelancering die stipt op tijd live gaat. Het ontwikkelproces van [LaunchStudio](https://launchstudio.eu/nl/) volgt exact deze cadans - tweewekelijkse schriftelijke updates, één vaste call, dagelijks gebundelde vragen - ondersteund door de beproefde leveringsdiscipline van [Manifera](https://www.manifera.com/portfolio/).
 
-**Vertel ons over uw project en uw gewenste manier van samenwerken — u ontvangt binnen één werkdag een passend communicatievoorstel en een realistische planning.**
+**Vertel ons over uw project en uw gewenste manier van samenwerken - u ontvangt binnen één werkdag een passend communicatievoorstel en een realistische planning.**
 
 ## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Week Die Zijn Middagen Terugkreeg
 
-Daan Willems, zelfstandig fotograaf in Groningen, bouwde in Lovable het platform Boekplek — een reserverings- en apparatuurbeheersysteem voor creatieve studio's en freelancers. Voorafgaand aan de voorjaarslancering schakelde hij een ontwikkelteam in voor de backend-hardening. In de eerste week was hij vrijwel continu aanwezig in het gedeelde Slack-kanaal: gemiddeld zo'n zeven berichten per werkdag, vriendelijk van toon en geen enkele met acute spoed.
+Daan Willems, zelfstandig fotograaf in Groningen, bouwde in Lovable het platform Boekplek - een reserverings- en apparatuurbeheersysteem voor creatieve studio's en freelancers. Voorafgaand aan de voorjaarslancering schakelde hij een ontwikkelteam in voor de backend-hardening. In de eerste week was hij vrijwel continu aanwezig in het gedeelde Slack-kanaal: gemiddeld zo'n zeven berichten per werkdag, vriendelijk van toon en geen enkele met acute spoed.
 
 Tijdens het overleg op vrijdagmiddag sneed de lead engineer dit openhartig aan. Ze spraken direct een heldere structuur af: Niveau 1 voor live incidenten, blockers gebundeld om uiterlijk 16:00 uur, en alle overige gedachten geparkeerd voor het wekelijkse overleg op donderdag. Daan begon een digitaal kladblok en een "na lancering"-lijst.
 
-In week twee stuurde hij welgeteld negen berichten in plaats van vijfendertig. Het vaste overleg op donderdag duurde veertig minuten in plaats van een half uur, omdat er nu volop rust en ruimte was om een potentieel conflict in de reserveringslogica te bespreken — een punt dat Daan in week één al een paar keer vluchtig had genoemd maar dat door de waan van de dag was ondergesneeuwd.
+In week twee stuurde hij welgeteld negen berichten in plaats van vijfendertig. Het vaste overleg op donderdag duurde veertig minuten in plaats van een half uur, omdat er nu volop rust en ruimte was om een potentieel conflict in de reserveringslogica te bespreken - een punt dat Daan in week één al een paar keer vluchtig had genoemd maar dat door de waan van de dag was ondergesneeuwd.
 
-**Resultaat:** Die vraag bleek van cruciaal belang. In het Lovable-prototype konden twee gebruikers op exact dezelfde milliseconde dezelfde fotostudio boeken als ze gelijktijdig doorklikten — een klassieke 'race condition' die niemand eerder had opgemerkt. Met de ontwikkeltijd die in week twee werd bespaard door het ontbreken van constante onderbrekingen, kon de engineer deze database-lock direct implementeren. Boekplek lanceerde exact volgens planning, inclusief waterdichte preventie van dubbele boekingen.
+**Resultaat:** Die vraag bleek van cruciaal belang. In het Lovable-prototype konden twee gebruikers op exact dezelfde milliseconde dezelfde fotostudio boeken als ze gelijktijdig doorklikten - een klassieke 'race condition' die niemand eerder had opgemerkt. Met de ontwikkeltijd die in week twee werd bespaard door het ontbreken van constante onderbrekingen, kon de engineer deze database-lock direct implementeren. Boekplek lanceerde exact volgens planning, inclusief waterdichte preventie van dubbele boekingen.
 
 > *"Ik dacht oprecht dat ik een geweldige opdrachtgever was door overal binnen vijf minuten bovenop te zitten. Het bleek juist averechts te werken. De week waarin ik stopte met continu appen, was exact de week waarin we de meest kritieke bug in het hele systeem opspoorden."*
-> — **Daan Willems, Oprichter, Boekplek (Groningen)**
+> - **Daan Willems, Oprichter, Boekplek (Groningen)**
 
-**Kosten & Doorlooptijd:** €2.200 (Launch Ready pakket, concurrency-beveiliging voor boekingen, authenticatie en Mollie-betalingen) — binnen 10 werkdagen live in productie.
+**Kosten & Doorlooptijd:** €2.200 (Launch Ready pakket, concurrency-beveiliging voor boekingen, authenticatie en Mollie-betalingen) - binnen 10 werkdagen live in productie.
 
 ---
 
@@ -151,13 +151,13 @@ In week twee stuurde hij welgeteld negen berichten in plaats van vijfendertig. H
 Een dagelijkse stand-up is waardevol bij langdurige projecten met grote interne teams die onderling werk moeten afstemmen. Bij een kort traject van één tot drie weken met één of twee engineers kost een dagelijkse meeting veel meer aan focusverlies dan het oplevert. Twee beknopte schriftelijke updates per week en één gerichte wekelijkse call bieden exact dezelfde transparantie zonder de dagelijkse bouwtijd te verstoren.
 
 ### Wat als ik de hele dag door over mijn product nadenk en er continu vragen bij me opkomen?
-Dat is volkomen normaal en juist een enorme kracht van een gedreven ondernemer — mits die ingevingen in een kladblok belanden en niet direct in de chat van de ontwikkelaar. Schrijf ze direct op; dat geeft mentale rust. Door ze één keer per dag gebundeld te versturen, beschermt u de focus van het team. Bovendien zult u merken dat een aanzienlijk deel van uw vragen aan het eind van de middag al niet meer actueel is.
+Dat is volkomen normaal en juist een enorme kracht van een gedreven ondernemer - mits die ingevingen in een kladblok belanden en niet direct in de chat van de ontwikkelaar. Schrijf ze direct op; dat geeft mentale rust. Door ze één keer per dag gebundeld te versturen, beschermt u de focus van het team. Bovendien zult u merken dat een aanzienlijk deel van uw vragen aan het eind van de middag al niet meer actueel is.
 
 ### Hoe weet ik of een vraag telt als een acute blocker of kan wachten tot de wekelijkse call?
 Stel uzelf de vraag: *kan de engineer op dit moment zinvol verder werken aan een ander onderdeel zonder mijn antwoord?* Is het antwoord nee, dan betreft het een blocker en verdient het binnen enkele uren uw reactie. Kan de engineer ondertussen prima doorbouwen aan een andere taak, dan hoort het onderwerp thuis op de agenda van het vaste wekelijkse overleg.
 
 ### Waar laat ik nieuwe functionaliteiten of ideeën die tijdens de bouw ontstaan?
-Plaats ze direct op een zichtbare "Wensen ná de lancering"-lijst. Bij een project met een vaste prijs moet extra werk ergens vandaan komen — meestal gaat dit ten koste van testtijd of documentatie. Door een parkeerlijst bij te houden gaan waardevolle ideeën niet verloren, maar voorkomt u dat ze de overeengekomen kwaliteitsstandaard van de eerste versie geruisloos uithollen.
+Plaats ze direct op een zichtbare "Wensen ná de lancering"-lijst. Bij een project met een vaste prijs moet extra werk ergens vandaan komen - meestal gaat dit ten koste van testtijd of documentatie. Door een parkeerlijst bij te houden gaan waardevolle ideeën niet verloren, maar voorkomt u dat ze de overeengekomen kwaliteitsstandaard van de eerste versie geruisloos uithollen.
 
 ### Moet ik als oprichter toegang vragen om alle commits en pull requests live te volgen?
 U mag hier uiteraard om vragen, maar het levert u als niet-technische oprichter zelden nuttig inzicht op en leidt vaak tot verkeerde conclusies. Een productieve dag waarop een ontwikkelaar rustig datastructuren en architectuur doorgrondt, resulteert soms in nul commits. De tweewekelijkse schriftelijke update en uw eigen praktijktests op de staging-omgeving geven een oneindig veel betrouwbaarder beeld van de werkelijke voortgang.

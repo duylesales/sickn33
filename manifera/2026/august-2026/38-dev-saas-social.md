@@ -16,7 +16,7 @@ Fix: Multi-region edge compute (Cloudflare Workers). Regional data planes with a
 The infrastructure cost model is counterintuitive:
 - 50 customers: €800/month cloud cost
 - 10,000 customers: €120,000/month
-- Per-customer cost actually DECREASES with scale — but only if you build for horizontal scaling from Day 1.
+- Per-customer cost actually DECREASES with scale - but only if you build for horizontal scaling from Day 1.
 
 At Manifera, we don't build MVPs that need rewriting at 200 customers. We build architectures that scale to 10,000.
 

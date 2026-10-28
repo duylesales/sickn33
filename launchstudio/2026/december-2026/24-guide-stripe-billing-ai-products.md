@@ -36,27 +36,27 @@ Stripe's "accept a payment" quickstart takes about fifteen minutes to implement.
 ## Beyond "Accept a Payment": What Real SaaS Billing Requires
 
 ### Subscription Lifecycle Management
-Customers don't just subscribe once — they upgrade, downgrade, cancel, and resubscribe. Your billing system needs to handle each transition correctly, including prorating charges for mid-cycle plan changes and ensuring access is granted or revoked at the right moment relative to the billing cycle, not immediately or arbitrarily.
+Customers don't just subscribe once - they upgrade, downgrade, cancel, and resubscribe. Your billing system needs to handle each transition correctly, including prorating charges for mid-cycle plan changes and ensuring access is granted or revoked at the right moment relative to the billing cycle, not immediately or arbitrarily.
 
 ### Failed Payment Handling
-Cards expire, get declined for insufficient funds, or get flagged by fraud detection. Stripe's "Smart Retries" can automatically retry failed payments, but your application needs to handle the interim state correctly — typically a grace period rather than immediate service cutoff — and communicate clearly with the customer about what happened.
+Cards expire, get declined for insufficient funds, or get flagged by fraud detection. Stripe's "Smart Retries" can automatically retry failed payments, but your application needs to handle the interim state correctly - typically a grace period rather than immediate service cutoff - and communicate clearly with the customer about what happened.
 
 ### Webhook Reliability
-Stripe communicates billing events (successful payment, failed payment, subscription cancelled) to your application via webhooks. If your webhook handler isn't idempotent — capable of safely processing the same event twice — duplicate webhook deliveries (which Stripe's own documentation says can happen) can cause double-charging logic errors or inconsistent account states.
+Stripe communicates billing events (successful payment, failed payment, subscription cancelled) to your application via webhooks. If your webhook handler isn't idempotent - capable of safely processing the same event twice - duplicate webhook deliveries (which Stripe's own documentation says can happen) can cause double-charging logic errors or inconsistent account states.
 
 ### Usage-Based Billing for AI Costs
-Many AI products have variable costs tied directly to usage — more AI generations, more API calls, more compute. Passing some of this cost through to customers via metered billing requires accurately tracking usage server-side and reconciling it with Stripe's metered billing APIs, a meaningfully more complex integration than flat-rate subscriptions.
+Many AI products have variable costs tied directly to usage - more AI generations, more API calls, more compute. Passing some of this cost through to customers via metered billing requires accurately tracking usage server-side and reconciling it with Stripe's metered billing APIs, a meaningfully more complex integration than flat-rate subscriptions.
 
 ### Tax and Invoicing Compliance
 EU-based SaaS businesses need to handle VAT correctly, which varies by customer location and business type (B2B vs. B2C). Stripe Tax can automate much of this, but it needs to be configured correctly for your specific jurisdiction and customer base.
 
 ## The Common AI-Generated Prototype Gap
 
-AI tools like Lovable and Bolt can generate a basic Stripe checkout flow relatively well — it's a well-documented pattern with abundant training examples. What they consistently miss is the surrounding system: webhook handling, subscription state synchronization between Stripe and your own database, failed payment grace periods, and usage-based cost pass-through. A prototype that can "accept a payment" in a demo is a meaningful distance from a system that can bill 100 real subscribers reliably for a year.
+AI tools like Lovable and Bolt can generate a basic Stripe checkout flow relatively well - it's a well-documented pattern with abundant training examples. What they consistently miss is the surrounding system: webhook handling, subscription state synchronization between Stripe and your own database, failed payment grace periods, and usage-based cost pass-through. A prototype that can "accept a payment" in a demo is a meaningful distance from a system that can bill 100 real subscribers reliably for a year.
 
 ## Getting This Right the First Time
 
-Billing bugs are uniquely damaging because they touch money directly — a subscription that doesn't properly cancel, or a customer charged twice due to a non-idempotent webhook handler, creates both a financial problem and a trust problem simultaneously. [LaunchStudio](https://launchstudio.eu/en/) implements Stripe (and Mollie, common for Dutch and EU customers) billing systems as a core part of the Launch & Grow package, built on Manifera's experience integrating payment systems across 160+ delivered projects.
+Billing bugs are uniquely damaging because they touch money directly - a subscription that doesn't properly cancel, or a customer charged twice due to a non-idempotent webhook handler, creates both a financial problem and a trust problem simultaneously. [LaunchStudio](https://launchstudio.eu/en/) implements Stripe (and Mollie, common for Dutch and EU customers) billing systems as a core part of the Launch & Grow package, built on Manifera's experience integrating payment systems across 160+ delivered projects.
 
 [Talk to an engineer about your billing architecture](https://launchstudio.eu/en/#calculator) before your first double-charge complaint arrives.
 
@@ -66,33 +66,33 @@ Even a correctly built, idempotent webhook handler doesn't guarantee your applic
 
 **Common sources of drift that idempotent webhooks alone don't prevent:**
 
-- **Manual changes made directly in the Stripe dashboard.** A support agent (or the founder) canceling, refunding, or adjusting a subscription manually in Stripe's dashboard doesn't automatically notify your application unless that specific action also fires a webhook your handler processes correctly — and it's easy to miss covering every possible dashboard action when building the handler.
-- **Webhook delivery failures that exceed Stripe's retry window.** Stripe retries failed webhook deliveries, but not indefinitely. A prolonged outage on your application's side — a deployment, a server restart at the wrong moment — can cause an event to eventually stop retrying, leaving your database permanently unaware of something that happened in Stripe.
+- **Manual changes made directly in the Stripe dashboard.** A support agent (or the founder) canceling, refunding, or adjusting a subscription manually in Stripe's dashboard doesn't automatically notify your application unless that specific action also fires a webhook your handler processes correctly - and it's easy to miss covering every possible dashboard action when building the handler.
+- **Webhook delivery failures that exceed Stripe's retry window.** Stripe retries failed webhook deliveries, but not indefinitely. A prolonged outage on your application's side - a deployment, a server restart at the wrong moment - can cause an event to eventually stop retrying, leaving your database permanently unaware of something that happened in Stripe.
 - **Race conditions between multiple events for the same customer.** If a customer upgrades and then immediately downgrades their plan, two webhook events can arrive in an order that doesn't match the order the actions actually happened in, especially under network delays, leading to your database reflecting the wrong final state.
-- **Clock and timezone mismatches in trial or billing-cycle logic.** Subtle bugs in how your application calculates cycle boundaries, versus how Stripe calculates them internally, can cause access to be granted or revoked a day early or late — rarely catastrophic on its own, but a steady source of support tickets.
+- **Clock and timezone mismatches in trial or billing-cycle logic.** Subtle bugs in how your application calculates cycle boundaries, versus how Stripe calculates them internally, can cause access to be granted or revoked a day early or late - rarely catastrophic on its own, but a steady source of support tickets.
 
-**The fix most production billing systems eventually need is a periodic reconciliation job**, separate from the real-time webhook handler, that runs on a schedule (daily is common) and does the following: pulls the current state of every active subscription directly from Stripe's API, compares it against what your own database believes to be true for each customer, and flags — or automatically corrects — any mismatch found. This job is what catches the failures that webhooks, by design, cannot: the ones where an event never arrived or arrived out of order in the first place.
+**The fix most production billing systems eventually need is a periodic reconciliation job**, separate from the real-time webhook handler, that runs on a schedule (daily is common) and does the following: pulls the current state of every active subscription directly from Stripe's API, compares it against what your own database believes to be true for each customer, and flags - or automatically corrects - any mismatch found. This job is what catches the failures that webhooks, by design, cannot: the ones where an event never arrived or arrived out of order in the first place.
 
-**Treat Stripe as the source of truth, not your own database.** When reconciliation finds a mismatch, the correct resolution in almost every case is to update your database to match Stripe's records, not the reverse — Stripe is the system of record for what was actually charged and when, and your database is a cache of that information for fast application-level access. Building the reconciliation job with this asymmetry in mind from the start avoids a class of bugs where two systems disagree and neither is clearly authoritative.
+**Treat Stripe as the source of truth, not your own database.** When reconciliation finds a mismatch, the correct resolution in almost every case is to update your database to match Stripe's records, not the reverse - Stripe is the system of record for what was actually charged and when, and your database is a cache of that information for fast application-level access. Building the reconciliation job with this asymmetry in mind from the start avoids a class of bugs where two systems disagree and neither is clearly authoritative.
 
-Stripe's own dashboard exports and reporting APIs can seed this process rather than requiring a fully custom sync job built from scratch — for most AI-native founders, a scheduled task that pulls Stripe's subscription list and diffs it against the application database is a modest addition once the core webhook handler already exists, not a second full integration.
+Stripe's own dashboard exports and reporting APIs can seed this process rather than requiring a fully custom sync job built from scratch - for most AI-native founders, a scheduled task that pulls Stripe's subscription list and diffs it against the application database is a modest addition once the core webhook handler already exists, not a second full integration.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Fixing a Double-Charging Bug Before It Spread
 
-Daniel, a freelance graphic designer in Gouda, built OntwerpFlow, a client proposal and invoicing tool for freelance designers, using Lovable, including a Stripe checkout flow for the monthly subscription tier. The checkout itself worked — new subscribers were charged correctly on signup.
+Daniel, a freelance graphic designer in Gouda, built OntwerpFlow, a client proposal and invoicing tool for freelance designers, using Lovable, including a Stripe checkout flow for the monthly subscription tier. The checkout itself worked - new subscribers were charged correctly on signup.
 
-Three weeks after launch, a subscriber emailed Daniel confused about seeing two identical charges on their card statement for the same billing period. Investigating, Daniel discovered his Stripe webhook handler processed the "invoice.paid" event by creating a new subscription record every time it received the event — and because Stripe sometimes delivers the same webhook event more than once (by design, for reliability), a subset of customers had been double-charged due to the handler running its charge-confirmation logic twice.
+Three weeks after launch, a subscriber emailed Daniel confused about seeing two identical charges on their card statement for the same billing period. Investigating, Daniel discovered his Stripe webhook handler processed the "invoice.paid" event by creating a new subscription record every time it received the event - and because Stripe sometimes delivers the same webhook event more than once (by design, for reliability), a subset of customers had been double-charged due to the handler running its charge-confirmation logic twice.
 
 Daniel found LaunchStudio through a developer forum thread specifically discussing Stripe webhook idempotency issues in AI-generated apps. The Manifera team rebuilt the webhook handler to be properly idempotent (checking whether an event had already been processed before taking action), reconciled and refunded the affected double-charges, and added subscription state synchronization to prevent drift between Stripe's records and OntwerpFlow's own database going forward.
 
 **Result:** All six affected customers were refunded within 24 hours of Daniel identifying the issue, with a personal apology email that (unexpectedly) improved retention rather than causing churn, since customers noted the fast, transparent response. Zero billing incidents occurred in the following four months post-fix.
 
-> *"I built the 'happy path' checkout flow fine. It was the invisible stuff — webhooks firing twice — that actually charged people money incorrectly. LaunchStudio fixed the plumbing I didn't know was leaking."*
-> — **Daniel Smit, Founder, OntwerpFlow (Gouda)**
+> *"I built the 'happy path' checkout flow fine. It was the invisible stuff - webhooks firing twice - that actually charged people money incorrectly. LaunchStudio fixed the plumbing I didn't know was leaking."*
+> - **Daniel Smit, Founder, OntwerpFlow (Gouda)**
 
-**Cost & Timeline:** €1,650 (billing system audit and remediation) — resolved in 6 business days.
+**Cost & Timeline:** €1,650 (billing system audit and remediation) - resolved in 6 business days.
 
 ---
 
@@ -104,19 +104,19 @@ Both work well; Mollie is particularly popular with Dutch customers because it n
 
 ### What is webhook idempotency and why does it matter so much?
 
-Idempotency means an operation produces the same result no matter how many times it's triggered by the same event. Stripe explicitly warns that webhook events can be delivered more than once, so your handler must check whether it already processed a given event before taking billing-affecting action — otherwise, duplicate deliveries cause duplicate charges or corrupted state, as happened with OntwerpFlow.
+Idempotency means an operation produces the same result no matter how many times it's triggered by the same event. Stripe explicitly warns that webhook events can be delivered more than once, so your handler must check whether it already processed a given event before taking billing-affecting action - otherwise, duplicate deliveries cause duplicate charges or corrupted state, as happened with OntwerpFlow.
 
 ### How do I handle a customer whose card is declined mid-subscription?
 
-Best practice is a grace period — Stripe's Smart Retries attempt to recharge automatically over several days, during which your application should maintain access but flag the account, only revoking access if all retries fail. Immediately cutting off access on the first failed payment creates unnecessary churn from what are often temporary card issues.
+Best practice is a grace period - Stripe's Smart Retries attempt to recharge automatically over several days, during which your application should maintain access but flag the account, only revoking access if all retries fail. Immediately cutting off access on the first failed payment creates unnecessary churn from what are often temporary card issues.
 
 ### Does usage-based billing for AI costs make sense for every AI product?
 
-Not always — many AI SaaS products successfully use flat-rate subscriptions and simply price them to cover average expected AI usage costs. Usage-based billing makes the most sense when usage varies dramatically between customers, making a flat rate either overpriced for light users or underpriced (and unprofitable) for heavy users.
+Not always - many AI SaaS products successfully use flat-rate subscriptions and simply price them to cover average expected AI usage costs. Usage-based billing makes the most sense when usage varies dramatically between customers, making a flat rate either overpriced for light users or underpriced (and unprofitable) for heavy users.
 
 ### Can LaunchStudio fix a billing system that's already live and has already caused customer issues?
 
-Yes, this is a common engagement. Fixing live billing systems requires careful handling to avoid disrupting active subscriptions during the remediation, including reconciling any past billing errors — exactly the kind of work the Manifera team performed for OntwerpFlow's double-charging incident.
+Yes, this is a common engagement. Fixing live billing systems requires careful handling to avoid disrupting active subscriptions during the remediation, including reconciling any past billing errors - exactly the kind of work the Manifera team performed for OntwerpFlow's double-charging incident.
 
 <script type="application/ld+json">
 {

@@ -34,7 +34,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Europe has a deep aerospace industry — aircraft and engine manufacturers, airlines, airports, air navigation service providers, space agencies and a growing satellite sector — and all of it runs on data collected obsessively for decades. AI jobs in aviation and aerospace combine genuinely large engineering datasets with a safety culture that treats assurance as the core of the work rather than an obstacle to it.
+Europe has a deep aerospace industry - aircraft and engine manufacturers, airlines, airports, air navigation service providers, space agencies and a growing satellite sector - and all of it runs on data collected obsessively for decades. AI jobs in aviation and aerospace combine genuinely large engineering datasets with a safety culture that treats assurance as the core of the work rather than an obstacle to it.
 
 ## Where AI Jobs in Aviation and Aerospace Sit
 
@@ -80,13 +80,13 @@ Candidates with industrial reliability, condition monitoring or signal processin
 
 Operations is where the largest number of general data roles in aviation sit, and it is closer to logistics than to engineering.
 
-Airlines run tightly coupled networks where a delay propagates: an aircraft arriving late affects its next rotation, crew duty limits, passenger connections and slot availability. Disruption recovery — deciding which flights to delay, cancel, swap or reroute when something breaks — is a large-scale optimisation problem executed under time pressure.
+Airlines run tightly coupled networks where a delay propagates: an aircraft arriving late affects its next rotation, crew duty limits, passenger connections and slot availability. Disruption recovery - deciding which flights to delay, cancel, swap or reroute when something breaks - is a large-scale optimisation problem executed under time pressure.
 
 Related work includes predicting turnaround times, forecasting crew availability and sickness, optimising fuel loading within safety margins, predicting passenger no-shows for overbooking decisions, and planning schedules and fleet assignment.
 
 Airports have their own set: passenger flow through security and immigration, baggage system performance, stand and gate allocation, ground handling resource planning, and increasingly modelling of queue times for passenger information.
 
-Both domains combine prediction with optimisation, and both have hard operational constraints — crew duty regulations, slot rules, safety margins — that cannot be traded against efficiency.
+Both domains combine prediction with optimisation, and both have hard operational constraints - crew duty regulations, slot rules, safety margins - that cannot be traded against efficiency.
 
 The feedback loop is fast and the results are visible daily, which many data scientists find more satisfying than long-horizon engineering work. Revenue management adds a further quantitative specialism with decades of established methodology.
 
@@ -96,7 +96,7 @@ Air navigation service providers across Europe employ data specialists, and the 
 
 European airspace is fragmented across national providers coordinated centrally, and capacity is a binding constraint at busy periods. Analytical work supports flow management: predicting demand on sectors hours ahead, estimating capacity given staffing and weather, identifying where delays will propagate, and evaluating routing strategies.
 
-Trajectory prediction is a core technical problem — estimating where an aircraft will be, given flight plan, weather, performance and controller intervention — and it underpins much of the rest.
+Trajectory prediction is a core technical problem - estimating where an aircraft will be, given flight plan, weather, performance and controller intervention - and it underpins much of the rest.
 
 Post-operations analysis is equally substantial: understanding why delays occurred, assessing the environmental impact of routing inefficiency, and evaluating changes to procedures.
 
@@ -128,7 +128,7 @@ Production of aircraft structures, engines and systems involves processes where 
 
 Analytical applications include vision and non-destructive testing analysis for defect detection, process parameter optimisation in composite layup, machining and additive manufacturing, predicting quality outcomes from process data, supply chain risk analysis across a long and specialised supplier base, and analysing test and inspection results.
 
-The volumes are lower than in automotive — aircraft are built in hundreds, not millions — which means small-sample methods, transfer between programmes and physics-informed approaches matter more than data-hungry techniques.
+The volumes are lower than in automotive - aircraft are built in hundreds, not millions - which means small-sample methods, transfer between programmes and physics-informed approaches matter more than data-hungry techniques.
 
 Rate increases and supply chain constraints have made production efficiency a strategic priority across European aerospace, which has driven investment in exactly this kind of analysis.
 
@@ -170,7 +170,7 @@ Above all, demonstrate that you can say what your system does not cover. In a se
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-For this sector, note that many roles sit at specific sites — manufacturing plants, maintenance bases, airports, control centres and agency establishments — rather than in city offices, so the exact address and distance are practically useful before applying.
+For this sector, note that many roles sit at specific sites - manufacturing plants, maintenance bases, airports, control centres and agency establishments - rather than in city offices, so the exact address and distance are practically useful before applying.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen and Ede, with employers such as Accenture, Cegeka, VINCI Energies, Holland Innovative and Heijmans among those listing AI and data roles. For the French, German, Spanish and Italian aerospace clusters, use the board alongside national sites and company career pages. Employers can list a first vacancy free via info@onlyaijobs.eu.
 
@@ -180,7 +180,7 @@ The question that occupies the sector most is how to assure systems whose behavi
 
 Traditional software assurance rests on requirements: the system shall do this, and here is the evidence that it does. A learned model has no equivalent specification, only a training process and a measured performance. That gap is what regulators and manufacturers have been working to bridge.
 
-The emerging approach centres on several ideas. Define the operational design domain precisely — the conditions under which the system is intended to work — and demonstrate performance within it. Monitor for operation outside that domain and degrade safely when it occurs. Establish data quality and representativeness requirements for the training set, treating the data as part of the design. Provide means of interpretation sufficient for a human to exercise oversight. And retain independent conventional safeguards where the consequences are severe.
+The emerging approach centres on several ideas. Define the operational design domain precisely - the conditions under which the system is intended to work - and demonstrate performance within it. Monitor for operation outside that domain and degrade safely when it occurs. Establish data quality and representativeness requirements for the training set, treating the data as part of the design. Provide means of interpretation sufficient for a human to exercise oversight. And retain independent conventional safeguards where the consequences are severe.
 
 The EU AI Act's requirements for high-risk systems align closely with this thinking, and aviation's existing safety frameworks give the sector a head start in implementing them.
 
@@ -194,7 +194,7 @@ An engine health monitoring team at a European maintenance organisation develope
 
 The technical result was good. Deployment took another year.
 
-The questions raised in review were not about accuracy. Which engine types and operating conditions was the model valid for, and how would anyone know when an aircraft operated outside them? What would happen if the model failed silently — would the existing threshold-based checks still run? Who decides to remove an engine on the basis of the prediction, and what evidence do they see? How is every prediction recorded so that a decision can be reconstructed years later?
+The questions raised in review were not about accuracy. Which engine types and operating conditions was the model valid for, and how would anyone know when an aircraft operated outside them? What would happen if the model failed silently - would the existing threshold-based checks still run? Who decides to remove an engine on the basis of the prediction, and what evidence do they see? How is every prediction recorded so that a decision can be reconstructed years later?
 
 The team built the answers: an explicit validity envelope with automated monitoring, retention of the legacy checks as an independent layer, an interface showing the underlying parameter trends rather than only a score, and full logging.
 

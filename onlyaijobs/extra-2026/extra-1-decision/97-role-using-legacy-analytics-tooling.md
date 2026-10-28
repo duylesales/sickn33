@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The interview is going well and then the stack is described. The core analytical work runs in a statistical platform you last saw at university, or in a reporting suite that predates the cloud, or — in more organisations than anyone admits — in a large and load-bearing collection of spreadsheets with macros. This is not rare in the Netherlands: banks, insurers, hospitals, pharmaceutical companies, government bodies and utilities all run critical analysis on tooling that has been in place for fifteen years or more. The question is not whether the tooling is modern. It is whether the role leaves you more employable in three years than it found you.
+The interview is going well and then the stack is described. The core analytical work runs in a statistical platform you last saw at university, or in a reporting suite that predates the cloud, or - in more organisations than anyone admits - in a large and load-bearing collection of spreadsheets with macros. This is not rare in the Netherlands: banks, insurers, hospitals, pharmaceutical companies, government bodies and utilities all run critical analysis on tooling that has been in place for fifteen years or more. The question is not whether the tooling is modern. It is whether the role leaves you more employable in three years than it found you.
 
 ## What Legacy Tooling Looks Like Here
 
@@ -53,7 +53,7 @@ The unifying feature is not age. It is that the organisation depends on it and c
 
 ## Why It Persists
 
-**Validation and regulatory acceptance.** In regulated modelling — capital requirements, actuarial reserves, clinical analysis — a change of platform means revalidation, documentation and supervisory scrutiny. That cost is real and is often the whole explanation.
+**Validation and regulatory acceptance.** In regulated modelling - capital requirements, actuarial reserves, clinical analysis - a change of platform means revalidation, documentation and supervisory scrutiny. That cost is real and is often the whole explanation.
 
 **The logic is the asset.** Decades of business rules encoded in procedures that nobody fully understands. Rewriting risks changing results that must not change.
 
@@ -79,7 +79,7 @@ And expect the interesting problems to be domain problems rather than technical 
 
 **Your recent work becomes hard to describe.** "I maintained the reporting estate" is a weaker story than "I built and deployed a system that did X".
 
-**The team may be ageing.** If everyone around you is ten years from retirement and nobody joins, the organisation has a succession problem and you are the succession plan — which is a position with both leverage and lock-in.
+**The team may be ageing.** If everyone around you is ten years from retirement and nobody joins, the organisation has a succession problem and you are the succession plan - which is a position with both leverage and lock-in.
 
 ## The Career Opportunity
 
@@ -95,7 +95,7 @@ There is a real upside, and it is specific.
 
 ## The Question That Decides It
 
-Is a migration planned, funded and staffed — and would you be part of it?
+Is a migration planned, funded and staffed - and would you be part of it?
 
 **Yes:** the role is likely excellent. You learn the legacy system, translate it, build the replacement, and leave with both the domain knowledge and current engineering experience. This is one of the better mid-career moves available.
 
@@ -115,7 +115,7 @@ Is a migration planned, funded and staffed — and would you be part of it?
 
 - A funded migration is underway or imminent and you would help lead it.
 - New development happens in current tooling, even if maintenance does not.
-- The domain is one you want — banking risk, actuarial, clinical, official statistics — and the depth is worth more than the tool.
+- The domain is one you want - banking risk, actuarial, clinical, official statistics - and the depth is worth more than the tool.
 - The scarcity gives you real leverage on salary and conditions, and you use it.
 - You set a horizon and a plan for keeping current skills alive.
 - Process discipline is strong and you would learn it.
@@ -132,7 +132,7 @@ Is a migration planned, funded and staffed — and would you be part of it?
 
 **Keep one foot in current tooling.** Ask for new work to be built in a modern stack, and volunteer for the parts that are.
 
-**Learn the domain deliberately,** since that is the part that transfers. Write down what the old procedures actually do in business terms — a document the organisation will value enormously and that becomes your own understanding.
+**Learn the domain deliberately,** since that is the part that transfers. Write down what the old procedures actually do in business terms - a document the organisation will value enormously and that becomes your own understanding.
 
 **Push for the migration business case.** You are well placed to build it: count manual steps, licence costs, incidents, and the time lost to workarounds.
 
@@ -144,7 +144,7 @@ Is a migration planned, funded and staffed — and would you be part of it?
 
 If you join for the migration, it helps to know why these projects take longer than anyone plans. The difficulty is rarely the new platform.
 
-**Results must match, and matching is hard.** Statistical platforms differ in default handling of missing values, rounding, sort order, random number generation and estimation procedures. Reproducing a number exactly, rather than approximately, is where months go — and in regulated work, approximately is not acceptable.
+**Results must match, and matching is hard.** Statistical platforms differ in default handling of missing values, rounding, sort order, random number generation and estimation procedures. Reproducing a number exactly, rather than approximately, is where months go - and in regulated work, approximately is not acceptable.
 
 **The old logic encodes undocumented decisions.** A filter added in 2014 excludes a category for a reason nobody remembers. Removing it changes the result; keeping it requires understanding it. Every migration surfaces dozens of these.
 
@@ -154,9 +154,9 @@ If you join for the migration, it helps to know why these projects take longer t
 
 **Scope reduction is the main lever.** Most legacy estates contain reports and models nobody uses. Retiring them is faster than migrating them, and identifying which is which is work only someone reading the old system can do.
 
-**Licence costs are frequently the business case.** Where the legacy platform carries substantial annual licensing, the migration is justified by the saving rather than by capability — which is useful to know, because it means the decommissioning date is the deliverable management actually cares about, and anything that delays it gets attention quickly.
+**Licence costs are frequently the business case.** Where the legacy platform carries substantial annual licensing, the migration is justified by the saving rather than by capability - which is useful to know, because it means the decommissioning date is the deliverable management actually cares about, and anything that delays it gets attention quickly.
 
-The practical consequence for your decision: a migration role is a translation job with a testing discipline attached. If you enjoy detective work and precision, it is genuinely satisfying and highly employable afterwards — every organisation in these sectors has the same problem. If you wanted to build new models, be clear that this is a different activity.
+The practical consequence for your decision: a migration role is a translation job with a testing discipline attached. If you enjoy detective work and precision, it is genuinely satisfying and highly employable afterwards - every organisation in these sectors has the same problem. If you wanted to build new models, be clear that this is a different activity.
 
 ## Real example
 
@@ -164,17 +164,17 @@ The practical consequence for your decision: a migration role is a translation j
 
 An analyst joins an insurer where the reserving and reporting work runs on a long-established statistical platform. The vacancy mentions modernisation vaguely.
 
-He asks the decisive question: is the migration funded? The answer is partly — a programme exists, with budget for two years and a supervisory expectation behind it.
+He asks the decisive question: is the migration funded? The answer is partly - a programme exists, with budget for two years and a supervisory expectation behind it.
 
 He takes the role and spends his first nine months doing something nobody had done: reading the old procedures and writing down, in business terms, what each one actually computes. It turns out that three of them implement rules that changed in 2019 and were never updated.
 
-That document becomes the basis of the migration specification. He then builds the replacement pipeline in the company's modern stack, with tests, version control and documented validation — practices the old environment never had.
+That document becomes the basis of the migration specification. He then builds the replacement pipeline in the company's modern stack, with tests, version control and documented validation - practices the old environment never had.
 
 Two years later he has both: deep actuarial domain knowledge and current engineering experience. When he interviews elsewhere, the conversation is entirely about the translation work, because every insurer in the country has the same problem.
 
 ## Key Takeaways
 
-- Legacy analytics tooling persists in Dutch banks, insurers, hospitals, pharmaceutical companies and government because of validation costs, encoded business rules and risk aversion — not inertia alone.
+- Legacy analytics tooling persists in Dutch banks, insurers, hospitals, pharmaceutical companies and government because of validation costs, encoded business rules and risk aversion - not inertia alone.
 - The risk is a narrowing market for tool-specific skill and weak current engineering practice; the opportunity is scarcity, migration work and regulated domain depth.
 - The decisive question is whether a migration is planned, funded and staffed, and whether you would be part of it.
 - Ask what new development is built in, what the age profile of the team is, and whether anyone has moved from this team into modern engineering work.
@@ -182,7 +182,7 @@ Two years later he has both: deep actuarial domain knowledge and current enginee
 
 ## Where to Start
 
-Vacancies often omit the stack, so ask early what runs the core work and what new development uses — then compare with employers near you already working in current tooling.
+Vacancies often omit the stack, so ask early what runs the core work and what new development uses - then compare with employers near you already working in current tooling.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

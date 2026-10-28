@@ -1,10 +1,10 @@
-⚠️ Marije Terpstra built "ZorgAgenda," a healthcare scheduling app, using Lovable. The interface was so clean and intuitive that a pilot clinic assumed the whole product matched. Then someone ran a testing tool against the API just to check its behavior under load — and the API went offline for an entire afternoon, taking scheduling down during clinic hours.
+⚠️ Marije Terpstra built "ZorgAgenda," a healthcare scheduling app, using Lovable. The interface was so clean and intuitive that a pilot clinic assumed the whole product matched. Then someone ran a testing tool against the API just to check its behavior under load - and the API went offline for an entire afternoon, taking scheduling down during clinic hours.
 
 A beautiful interface tells you nothing about what's protecting the backend behind it. 🧠
 
 ❌ No rate limiting meant no ceiling on how many requests one source could send
 ❌ No request validation meant malformed payloads reached the application logic unchecked
-❌ Nobody asked pointed questions about the backend — the frontend had already answered that, incorrectly
+❌ Nobody asked pointed questions about the backend - the frontend had already answered that, incorrectly
 ❌ The frontend kept rendering fine right up until the backend actually went down
 
 ✅ Implement rate limiting on every API endpoint

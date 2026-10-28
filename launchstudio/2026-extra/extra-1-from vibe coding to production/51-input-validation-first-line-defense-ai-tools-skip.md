@@ -31,23 +31,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every piece of data entering your application — a form submission, an API request, an uploaded file — arrives from somewhere you don't control, meaning it can contain anything: correctly formatted values, malformed garbage, or deliberately crafted malicious input designed to exploit exactly the gap this article describes. Input validation is the layer that checks incoming data against what's actually expected before it reaches anything else, and it's a foundational layer AI-generated code frequently implements loosely, if at all.
+Every piece of data entering your application - a form submission, an API request, an uploaded file - arrives from somewhere you don't control, meaning it can contain anything: correctly formatted values, malformed garbage, or deliberately crafted malicious input designed to exploit exactly the gap this article describes. Input validation is the layer that checks incoming data against what's actually expected before it reaches anything else, and it's a foundational layer AI-generated code frequently implements loosely, if at all.
 
 ## Why Input Validation Sits Upstream of Everything Else
 
-Every other category covered throughout this series — error handling, authentication, database logic — assumes, implicitly, that the data it's working with is at least reasonably well-formed. Input validation is the layer responsible for making that assumption actually true, by rejecting or sanitizing anything that doesn't meet expectations before it reaches business logic, your database, or any external service call. Weak validation doesn't just risk one specific bug — it undermines the reliability of everything downstream, since every layer built on top of it is implicitly trusting that validation already happened correctly.
+Every other category covered throughout this series - error handling, authentication, database logic - assumes, implicitly, that the data it's working with is at least reasonably well-formed. Input validation is the layer responsible for making that assumption actually true, by rejecting or sanitizing anything that doesn't meet expectations before it reaches business logic, your database, or any external service call. Weak validation doesn't just risk one specific bug - it undermines the reliability of everything downstream, since every layer built on top of it is implicitly trusting that validation already happened correctly.
 
 ## Why AI-Generated Code Frequently Under-Implements This
 
-A prompt describing "let users submit their name and email" gets satisfied by code that accepts a name and email field and does something with them — validation that the email is actually a plausible email format, that the name doesn't contain unexpected characters or excessive length, is a separate, additional requirement that the core functional description doesn't naturally include, meaning it's frequently thin or absent unless specifically requested.
+A prompt describing "let users submit their name and email" gets satisfied by code that accepts a name and email field and does something with them - validation that the email is actually a plausible email format, that the name doesn't contain unexpected characters or excessive length, is a separate, additional requirement that the core functional description doesn't naturally include, meaning it's frequently thin or absent unless specifically requested.
 
 ## What Weak Validation Specifically Enables
 
 **Application errors and crashes.** Unexpected data types or formats reaching business logic that assumed well-formed input can produce confusing errors or outright crashes, the exact downstream symptom of the error-handling gaps covered elsewhere in this series, often traceable back to validation that should have caught the problem earlier.
 
-**Injection-style attacks.** While modern frameworks and database libraries provide substantial built-in protection against classic SQL injection, insufficient validation of user input used in dynamic queries, file paths, or system commands can still create exploitable gaps — a category of risk that's less catastrophically common than it once was industry-wide, but not eliminated simply by using a modern framework without deliberate validation discipline.
+**Injection-style attacks.** While modern frameworks and database libraries provide substantial built-in protection against classic SQL injection, insufficient validation of user input used in dynamic queries, file paths, or system commands can still create exploitable gaps - a category of risk that's less catastrophically common than it once was industry-wide, but not eliminated simply by using a modern framework without deliberate validation discipline.
 
-**Data integrity issues that surface much later.** Malformed data that gets accepted and stored without validation can corrupt reports, break downstream integrations, or produce confusing, hard-to-diagnose issues considerably after the original bad input was accepted — a delayed-consequence pattern that makes root-causing the eventual problem genuinely harder than if it had been rejected immediately at the point of entry.
+**Data integrity issues that surface much later.** Malformed data that gets accepted and stored without validation can corrupt reports, break downstream integrations, or produce confusing, hard-to-diagnose issues considerably after the original bad input was accepted - a delayed-consequence pattern that makes root-causing the eventual problem genuinely harder than if it had been rejected immediately at the point of entry.
 
 ## What Proper Validation Actually Looks Like
 
@@ -55,25 +55,25 @@ Beyond basic type checking (is this a number, is this a string), proper validati
 
 ## A Practical Framework for Prioritizing Which Fields to Fix First
 
-Retrofitting validation across an entire existing application in one pass is rarely realistic for a solo founder already stretched across product, marketing, and support — and treating it as an all-or-nothing project is a common reason it never actually gets started. A more workable approach prioritizes by exposure and consequence rather than attempting comprehensive coverage all at once.
+Retrofitting validation across an entire existing application in one pass is rarely realistic for a solo founder already stretched across product, marketing, and support - and treating it as an all-or-nothing project is a common reason it never actually gets started. A more workable approach prioritizes by exposure and consequence rather than attempting comprehensive coverage all at once.
 
-**Start with anything that touches money or authentication.** A quantity field feeding a payment calculation, or any field used in a login or password-reset flow, carries the highest consequence if it accepts something unexpected — these deserve validation attention before, say, a contact form's optional bio field, even though both are technically "unvalidated input" in the abstract sense.
+**Start with anything that touches money or authentication.** A quantity field feeding a payment calculation, or any field used in a login or password-reset flow, carries the highest consequence if it accepts something unexpected - these deserve validation attention before, say, a contact form's optional bio field, even though both are technically "unvalidated input" in the abstract sense.
 
 **Prioritize fields used in dynamic queries, file paths, or system commands.** Any input incorporated into a database query, a constructed file path, or a shell command carries injection-style risk beyond simple data-integrity concerns, making these a higher priority than fields that only ever get displayed back to the user who submitted them.
 
-**Address publicly reachable endpoints before internal or admin-only ones.** A form any anonymous visitor can reach is exposed to far more potential malicious or malformed input, by sheer volume, than an internal tool only your own team accesses — both eventually warrant validation, but the public-facing surface is the more urgent starting point.
+**Address publicly reachable endpoints before internal or admin-only ones.** A form any anonymous visitor can reach is exposed to far more potential malicious or malformed input, by sheer volume, than an internal tool only your own team accesses - both eventually warrant validation, but the public-facing surface is the more urgent starting point.
 
-**Use a schema validation library rather than hand-rolling checks field by field.** Libraries like Zod, Yup, or Joi in the JavaScript ecosystem let you define a field's expected shape once — type, format, range, required versus optional — and get that shape enforced consistently everywhere the schema is applied, considerably more maintainable over time than scattered, ad hoc `if` statements checking each field individually across different parts of a growing codebase.
+**Use a schema validation library rather than hand-rolling checks field by field.** Libraries like Zod, Yup, or Joi in the JavaScript ecosystem let you define a field's expected shape once - type, format, range, required versus optional - and get that shape enforced consistently everywhere the schema is applied, considerably more maintainable over time than scattered, ad hoc `if` statements checking each field individually across different parts of a growing codebase.
 
-Working through existing fields in roughly this order — money and authentication first, injection-risk fields second, public-facing surface before internal tooling, schema libraries over hand-rolled checks — turns an overwhelming, indefinite backlog into a sequence of small, finishable steps, applying the same tiered-prioritization logic covered throughout this series specifically to validation work.
+Working through existing fields in roughly this order - money and authentication first, injection-risk fields second, public-facing surface before internal tooling, schema libraries over hand-rolled checks - turns an overwhelming, indefinite backlog into a sequence of small, finishable steps, applying the same tiered-prioritization logic covered throughout this series specifically to validation work.
 
 ## Why This Deserves Deliberate Attention, Not Just Trust in Framework Defaults
 
-Modern frameworks provide real, substantial protection by default against several classic vulnerability categories, and it's reasonable to rely on that baseline protection. What frameworks don't automatically provide is validation specific to your application's actual business rules — a valid-looking but nonsensical value (a negative quantity, an appointment date in the past) passes generic framework-level checks while still representing invalid input for your specific product, requiring validation logic specific to what your application actually needs to be true.
+Modern frameworks provide real, substantial protection by default against several classic vulnerability categories, and it's reasonable to rely on that baseline protection. What frameworks don't automatically provide is validation specific to your application's actual business rules - a valid-looking but nonsensical value (a negative quantity, an appointment date in the past) passes generic framework-level checks while still representing invalid input for your specific product, requiring validation logic specific to what your application actually needs to be true.
 
-[LaunchStudio](https://launchstudio.eu/en/) implements comprehensive input validation — both generic security-relevant checks and business-rule-specific validation — as a standard part of production hardening, backed by Manifera's engineering discipline across 160+ delivered projects handling real, unpredictable user input.
+[LaunchStudio](https://launchstudio.eu/en/) implements comprehensive input validation - both generic security-relevant checks and business-rule-specific validation - as a standard part of production hardening, backed by Manifera's engineering discipline across 160+ delivered projects handling real, unpredictable user input.
 
-[Get your input validation checked against both security and business-logic requirements](https://launchstudio.eu/en/#calculator) — the layer that protects everything built on top of it.
+[Get your input validation checked against both security and business-logic requirements](https://launchstudio.eu/en/#calculator) - the layer that protects everything built on top of it.
 
 ## Real example
 
@@ -81,14 +81,14 @@ Modern frameworks provide real, substantial protection by default against severa
 
 Wesley, a former warehouse supervisor turned founder in Tilburg, built BestelBeheer, an AI tool helping small wholesale distributors manage bulk order quantities and pricing calculations for their business customers, using Bolt, with an order form accepting a quantity field that Wesley's own testing had always populated with reasonable, positive numbers.
 
-A business customer, apparently attempting to correct a previous order by entering what they intended as an adjustment, submitted a negative quantity value directly into the order form — a value BestelBeheer's validation didn't specifically check for or reject, since the underlying field only verified the input was numeric, not that it represented a sensible, positive order quantity. The negative value flowed through to Wesley's order total calculation, silently producing an incorrect total that took Wesley several confused hours to trace back to its actual source once the customer's invoice looked wrong.
+A business customer, apparently attempting to correct a previous order by entering what they intended as an adjustment, submitted a negative quantity value directly into the order form - a value BestelBeheer's validation didn't specifically check for or reject, since the underlying field only verified the input was numeric, not that it represented a sensible, positive order quantity. The negative value flowed through to Wesley's order total calculation, silently producing an incorrect total that took Wesley several confused hours to trace back to its actual source once the customer's invoice looked wrong.
 
-**Result:** LaunchStudio implemented business-rule-specific validation rejecting negative or otherwise nonsensical quantity values at the point of entry, along with broader validation review across BestelBeheer's other input fields, closing a category of gap that generic framework-level protection had never been designed to catch, since a negative number is a perfectly valid number in the abstract — just not a valid order quantity for Wesley's specific business.
+**Result:** LaunchStudio implemented business-rule-specific validation rejecting negative or otherwise nonsensical quantity values at the point of entry, along with broader validation review across BestelBeheer's other input fields, closing a category of gap that generic framework-level protection had never been designed to catch, since a negative number is a perfectly valid number in the abstract - just not a valid order quantity for Wesley's specific business.
 
 > *"The field technically only needed to accept a number, and negative four is technically a number. Nothing checked whether it made sense for what the field was actually supposed to represent, and by the time the wrong total showed up on an invoice, tracing it back to one customer entering a value nobody had thought to specifically block was genuinely confusing."*
-> — **Wesley Verbeek, Founder, BestelBeheer (Tilburg)**
+> - **Wesley Verbeek, Founder, BestelBeheer (Tilburg)**
 
-**Cost & Timeline:** €1,050 (input validation review and business-rule hardening) — completed in 4 business days.
+**Cost & Timeline:** €1,050 (input validation review and business-rule hardening) - completed in 4 business days.
 
 ---
 
@@ -100,19 +100,19 @@ Frameworks provide meaningful baseline protection against several classic vulner
 
 ### How would I identify which specific fields in my app need business-rule validation beyond basic type checking?
 
-Reviewing each input field and asking "what values would be technically valid but nonsensical for this specific field's purpose" — negative quantities, dates in the past for future appointments, unreasonably long text for a short field — is the direct way to identify these gaps systematically rather than discovering them reactively.
+Reviewing each input field and asking "what values would be technically valid but nonsensical for this specific field's purpose" - negative quantities, dates in the past for future appointments, unreasonably long text for a short field - is the direct way to identify these gaps systematically rather than discovering them reactively.
 
 ### Is input validation something that needs to happen on the frontend, the backend, or both?
 
-Both, though for genuinely different reasons — frontend validation improves user experience by providing immediate feedback, while backend validation is the actual security and integrity boundary, since frontend validation alone can always be bypassed by a request constructed directly against your API, the same pattern covered throughout this series regarding frontend-only enforcement generally.
+Both, though for genuinely different reasons - frontend validation improves user experience by providing immediate feedback, while backend validation is the actual security and integrity boundary, since frontend validation alone can always be bypassed by a request constructed directly against your API, the same pattern covered throughout this series regarding frontend-only enforcement generally.
 
 ### Does thorough input validation meaningfully slow down form submissions or API requests?
 
-No meaningfully — validation checks are computationally lightweight compared to the actual processing that follows, meaning the performance cost is negligible relative to the protection and data-integrity benefit it provides.
+No meaningfully - validation checks are computationally lightweight compared to the actual processing that follows, meaning the performance cost is negligible relative to the protection and data-integrity benefit it provides.
 
 ### How is input validation different from the structured error handling covered elsewhere in this series?
 
-Related but sequential — input validation happens first, rejecting or sanitizing bad data before it's used at all; error handling concerns what happens when something downstream (an external service call, for instance) fails despite receiving well-validated input, addressing a different point in the request's lifecycle.
+Related but sequential - input validation happens first, rejecting or sanitizing bad data before it's used at all; error handling concerns what happens when something downstream (an external service call, for instance) fails despite receiving well-validated input, addressing a different point in the request's lifecycle.
 
 <script type="application/ld+json">
 {
@@ -140,7 +140,7 @@ Related but sequential — input validation happens first, rejecting or sanitizi
       "name": "Does input validation need to happen on the frontend, backend, or both?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both — frontend improves user experience, while backend is the actual security and integrity boundary since frontend alone can be bypassed."
+        "text": "Both - frontend improves user experience, while backend is the actual security and integrity boundary since frontend alone can be bypassed."
       }
     },
     {
@@ -148,7 +148,7 @@ Related but sequential — input validation happens first, rejecting or sanitizi
       "name": "Does thorough input validation meaningfully slow down requests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No meaningfully — validation checks are computationally lightweight compared to the processing that follows."
+        "text": "No meaningfully - validation checks are computationally lightweight compared to the processing that follows."
       }
     },
     {
@@ -156,7 +156,7 @@ Related but sequential — input validation happens first, rejecting or sanitizi
       "name": "How is input validation different from structured error handling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sequential — validation rejects bad data before use; error handling addresses failures downstream despite well-validated input."
+        "text": "Sequential - validation rejects bad data before use; error handling addresses failures downstream despite well-validated input."
       }
     }
   ]

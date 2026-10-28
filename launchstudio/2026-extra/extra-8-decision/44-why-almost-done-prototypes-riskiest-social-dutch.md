@@ -12,7 +12,7 @@ Een prototype op 95% voelt veiliger aan dan een op 30%. Dat gevoel is precies de
 ✅ Vraag: wat gebeurt er als een afhankelijkheid uitvalt midden in een verzoek?
 ✅ Vage antwoorden hierop betekenen dat u waarschijnlijk nu al in de risicozone zit
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineeringervaring, sluiten wij exact deze onzichtbare laatste loodjes — zonder uw frontend aan te raken. 🛡️
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineeringervaring, sluiten wij exact deze onzichtbare laatste loodjes - zonder uw frontend aan te raken. 🛡️
 
 Haar resultaat: multi-tenant autorisatie gerepareerd in 8 dagen, vóór de volgende praktijkdemo. 🚀
 

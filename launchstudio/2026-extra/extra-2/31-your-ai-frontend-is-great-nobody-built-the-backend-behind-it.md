@@ -31,11 +31,11 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-An AI frontend tool like v0 genuinely excels at exactly what it's built for — clean, responsive, well-organized interfaces that make a product feel polished from the first click. What it doesn't do, because it isn't what it was built for, is independently verify on a server that the numbers a beautifully designed interface displays and calculates are the same numbers that actually get charged.
+An AI frontend tool like v0 genuinely excels at exactly what it's built for - clean, responsive, well-organized interfaces that make a product feel polished from the first click. What it doesn't do, because it isn't what it was built for, is independently verify on a server that the numbers a beautifully designed interface displays and calculates are the same numbers that actually get charged.
 
 ## Before: A Frontend That Calculates Everything Correctly
 
-**Before backend verification exists,** a travel itinerary tool that lets users add optional excursions, upgrade seat classes, or apply a discount code can calculate a running total entirely in the browser, updating instantly and correctly as a user makes selections — a genuinely good user experience, and one that works perfectly for every legitimate interaction a founder tests.
+**Before backend verification exists,** a travel itinerary tool that lets users add optional excursions, upgrade seat classes, or apply a discount code can calculate a running total entirely in the browser, updating instantly and correctly as a user makes selections - a genuinely good user experience, and one that works perfectly for every legitimate interaction a founder tests.
 
 ## After: A Backend That Independently Confirms the Same Total
 
@@ -43,15 +43,15 @@ An AI frontend tool like v0 genuinely excels at exactly what it's built for — 
 
 ## Why Trusting the Frontend's Number Is a Structural Risk, Not a Coding Mistake
 
-A browser is fundamentally a piece of software running entirely on a device the customer controls, and any value it sends — including a calculated total — can be modified before it reaches the server, using nothing more exotic than the same browser developer tools available to any visitor. Opening the Network tab, finding the checkout request, and editing a single number in the request payload before it's sent takes under a minute for anyone mildly curious about how a website actually works underneath — no specialized hacking tools required, no account access beyond a normal signup. A backend that accepts and charges whatever total the frontend reports is trusting a number it has no ability to independently verify came from an unmodified calculation.
+A browser is fundamentally a piece of software running entirely on a device the customer controls, and any value it sends - including a calculated total - can be modified before it reaches the server, using nothing more exotic than the same browser developer tools available to any visitor. Opening the Network tab, finding the checkout request, and editing a single number in the request payload before it's sent takes under a minute for anyone mildly curious about how a website actually works underneath - no specialized hacking tools required, no account access beyond a normal signup. A backend that accepts and charges whatever total the frontend reports is trusting a number it has no ability to independently verify came from an unmodified calculation.
 
 ## Why This Passes Every Normal Test a Founder Runs
 
-Testing the booking flow honestly — selecting real excursions, applying a real discount code, checking out — produces a correct charge every single time, because a founder testing their own product has no reason to modify the calculated total before submitting it. Running through the same flow twenty times with twenty different combinations of excursions and upgrades still proves nothing about this specific risk, because every one of those twenty tests remains an honest test. The gap only becomes visible from the perspective of someone deliberately altering that number, which honest testing never simulates.
+Testing the booking flow honestly - selecting real excursions, applying a real discount code, checking out - produces a correct charge every single time, because a founder testing their own product has no reason to modify the calculated total before submitting it. Running through the same flow twenty times with twenty different combinations of excursions and upgrades still proves nothing about this specific risk, because every one of those twenty tests remains an honest test. The gap only becomes visible from the perspective of someone deliberately altering that number, which honest testing never simulates.
 
 ## What a Genuine Fix Requires
 
-Closing this gap means moving the authoritative price calculation to the server, using only the underlying selections (which excursion, which seat class, which discount code) sent from the frontend — never the final calculated total itself — and recalculating independently before any charge is processed. [LaunchStudio](https://launchstudio.eu/en/) implements exactly this kind of server-side pricing verification as a standard part of its payment integration work, backed by Manifera's 11+ years of experience building trustworthy transactional systems.
+Closing this gap means moving the authoritative price calculation to the server, using only the underlying selections (which excursion, which seat class, which discount code) sent from the frontend - never the final calculated total itself - and recalculating independently before any charge is processed. [LaunchStudio](https://launchstudio.eu/en/) implements exactly this kind of server-side pricing verification as a standard part of its payment integration work, backed by Manifera's 11+ years of experience building trustworthy transactional systems.
 
 Manifera's pricing and transaction security work is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
@@ -61,16 +61,16 @@ Manifera's pricing and transaction security work is delivered through the Ho Chi
 
 Checkout pricing is the most visible version of this gap, but it's rarely the only place a frontend-calculated number gets trusted without server-side verification. A quick audit of any AI-generated application should specifically check each of these:
 
-- **Shipping and delivery costs** — calculated based on address, weight, or a selected speed tier, and just as easy to intercept and alter as a discount total if the server doesn't independently recompute it from the actual order details.
-- **Tax calculation** — especially in products serving multiple regions, where a frontend estimate is convenient for display but should never be the number actually charged.
-- **Quantity and inventory limits** — a frontend that stops a user from adding an 11th item to a cart capped at 10 is a UI convenience, not enforcement, unless the server independently rejects the 11th item too.
-- **Loyalty points and reward redemption** — a running points balance and the discount it unlocks should be recalculated from the user's actual transaction history server-side, not accepted as a reported number.
-- **Coupon and discount stacking** — a frontend that correctly prevents combining two mutually exclusive discount codes in the interface says nothing about whether the server independently enforces the same restriction.
-- **Subscription tier gating** — a "Pro" badge shown based on a locally cached subscription status is a display choice, not access control, unless every gated action re-checks the user's actual tier on the server.
+- **Shipping and delivery costs** - calculated based on address, weight, or a selected speed tier, and just as easy to intercept and alter as a discount total if the server doesn't independently recompute it from the actual order details.
+- **Tax calculation** - especially in products serving multiple regions, where a frontend estimate is convenient for display but should never be the number actually charged.
+- **Quantity and inventory limits** - a frontend that stops a user from adding an 11th item to a cart capped at 10 is a UI convenience, not enforcement, unless the server independently rejects the 11th item too.
+- **Loyalty points and reward redemption** - a running points balance and the discount it unlocks should be recalculated from the user's actual transaction history server-side, not accepted as a reported number.
+- **Coupon and discount stacking** - a frontend that correctly prevents combining two mutually exclusive discount codes in the interface says nothing about whether the server independently enforces the same restriction.
+- **Subscription tier gating** - a "Pro" badge shown based on a locally cached subscription status is a display choice, not access control, unless every gated action re-checks the user's actual tier on the server.
 
 The pattern connecting all six is identical to RouteDroom's pricing gap: a value calculated or displayed correctly in the browser gets treated, somewhere in the backend, as if calculating it correctly is the same thing as being trusted to report it honestly. Those are different guarantees, and only one of them survives a user who opens developer tools with intent to test the boundary rather than simply use the product.
 
-A founder without a technical background can run a rough version of this audit themselves: for each of the six items above, ask "if I changed this value in my browser before submitting, would the server even notice?" A confident "yes, it would reject that" for all six is a reasonable bar for calling a product's pricing and access logic production-ready. Any uncertain answer is worth flagging for a proper review before real customers — and their browser developer tools — start interacting with the product at volume.
+A founder without a technical background can run a rough version of this audit themselves: for each of the six items above, ask "if I changed this value in my browser before submitting, would the server even notice?" A confident "yes, it would reject that" for all six is a reasonable bar for calling a product's pricing and access logic production-ready. Any uncertain answer is worth flagging for a proper review before real customers - and their browser developer tools - start interacting with the product at volume.
 
 ## Real example
 
@@ -83,9 +83,9 @@ A curious early user, modifying a request in their browser's developer tools mos
 **Result:** LaunchStudio moved price calculation authority entirely to the server, recalculating every checkout independently from the underlying selections rather than trusting the frontend's reported total, closing the gap without changing RouteDroom's smooth, instant-feeling pricing display.
 
 > *"He told me exactly what he'd done and how, almost like he was doing me a favor, which honestly he was. It never occurred to me that the number showing on screen and the number actually being trusted at checkout could be two different things."*
-> — **Jelle Roos, Founder, RouteDroom (Emmen)**
+> - **Jelle Roos, Founder, RouteDroom (Emmen)**
 
-**Cost & Timeline:** €1,900 (server-side pricing verification implementation) — completed in 6 business days.
+**Cost & Timeline:** €1,900 (server-side pricing verification implementation) - completed in 6 business days.
 
 ---
 
@@ -93,27 +93,27 @@ A curious early user, modifying a request in their browser's developer tools mos
 
 ### Would a payments engineer consider trusting a frontend-calculated total a common mistake, or a rare one?
 
-Fairly common, specifically in products built quickly with a UI-first tool — it's a natural byproduct of building the pleasant, responsive pricing display first and treating server-side verification as a separate, later concern that sometimes never gets added before launch.
+Fairly common, specifically in products built quickly with a UI-first tool - it's a natural byproduct of building the pleasant, responsive pricing display first and treating server-side verification as a separate, later concern that sometimes never gets added before launch.
 
 ### Does this issue only affect products with complex, customizable pricing, or simple flat-rate ones too?
 
-It matters most for customizable, multi-component pricing like RouteDroom's excursions and upgrades, since flat-rate pricing has less room for a client-side calculation to diverge from the correct value — though any product accepting a client-reported amount at all, rather than deriving it server-side, carries some version of this risk.
+It matters most for customizable, multi-component pricing like RouteDroom's excursions and upgrades, since flat-rate pricing has less room for a client-side calculation to diverge from the correct value - though any product accepting a client-reported amount at all, rather than deriving it server-side, carries some version of this risk.
 
-### Manifera's experience spans travel, e-commerce, and other transactional sectors — does that variety matter for catching a gap like Jelle's?
+### Manifera's experience spans travel, e-commerce, and other transactional sectors - does that variety matter for catching a gap like Jelle's?
 
 Yes, since the underlying principle (never trust a client-reported total) is identical across sectors, and having reviewed this exact pattern across many different kinds of transactional products means the fix gets applied quickly and correctly regardless of what specific product category a founder is building in.
 
 ### Is this the kind of gap CEO Herre Roelevink refers to when discussing why a beautiful frontend isn't the same as a secure product?
 
-Precisely — RouteDroom's frontend was genuinely well-built and gave every visual impression of correctness, which is exactly the disconnect Roelevink's public commentary consistently highlights between visible polish and the invisible, structural verification a product actually needs underneath it.
+Precisely - RouteDroom's frontend was genuinely well-built and gave every visual impression of correctness, which is exactly the disconnect Roelevink's public commentary consistently highlights between visible polish and the invisible, structural verification a product actually needs underneath it.
 
 ### If a founder used a well-known payment provider's checkout widget instead of building checkout from scratch, would this risk still apply?
 
-It depends on exactly how the integration is wired — using a provider's hosted checkout with server-side price setting largely avoids this risk, but a custom integration that still passes a calculated total from the frontend into the payment request can reproduce the same underlying gap regardless of which provider is ultimately used to process the charge.
+It depends on exactly how the integration is wired - using a provider's hosted checkout with server-side price setting largely avoids this risk, but a custom integration that still passes a calculated total from the frontend into the payment request can reproduce the same underlying gap regardless of which provider is ultimately used to process the charge.
 
 ### Beyond checkout pricing, are there other value types this same gap affects?
 
-Yes — shipping costs, tax calculation, quantity limits, loyalty point redemption, discount stacking, and subscription tier gating all carry some version of the same risk whenever a value calculated in the browser is trusted rather than independently recomputed server-side. A founder can self-check most of these by asking whether the server would actually notice a manually altered value, though confirming coupon stacking and tier gating specifically usually requires reading the actual backend logic rather than just observing visible behavior.
+Yes - shipping costs, tax calculation, quantity limits, loyalty point redemption, discount stacking, and subscription tier gating all carry some version of the same risk whenever a value calculated in the browser is trusted rather than independently recomputed server-side. A founder can self-check most of these by asking whether the server would actually notice a manually altered value, though confirming coupon stacking and tier gating specifically usually requires reading the actual backend logic rather than just observing visible behavior.
 
 <script type="application/ld+json">
 {
@@ -149,7 +149,7 @@ Yes — shipping costs, tax calculation, quantity limits, loyalty point redempti
       "name": "Does this reflect the gap between visible polish and structural security the CEO describes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Precisely — a well-built frontend gave every visual impression of correctness despite the underlying gap."
+        "text": "Precisely - a well-built frontend gave every visual impression of correctness despite the underlying gap."
       }
     },
     {
@@ -157,7 +157,7 @@ Yes — shipping costs, tax calculation, quantity limits, loyalty point redempti
       "name": "Does using a known payment provider's checkout widget eliminate this risk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the integration — hosted checkout with server-set pricing avoids it, but custom integrations can still reproduce it."
+        "text": "It depends on the integration - hosted checkout with server-set pricing avoids it, but custom integrations can still reproduce it."
       }
     },
     {
@@ -165,7 +165,7 @@ Yes — shipping costs, tax calculation, quantity limits, loyalty point redempti
       "name": "Beyond checkout pricing, are there other value types this same gap affects?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — shipping, tax, quantity limits, loyalty points, discount stacking, and subscription tier gating all carry the same risk if the server doesn't independently recompute them."
+        "text": "Yes - shipping, tax, quantity limits, loyalty points, discount stacking, and subscription tier gating all carry the same risk if the server doesn't independently recompute them."
       }
     }
   ]

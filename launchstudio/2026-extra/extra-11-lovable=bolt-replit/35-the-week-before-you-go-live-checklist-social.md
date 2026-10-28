@@ -1,4 +1,4 @@
-🚨 Daan Coppens had a launch date for Voorraadje, a stock-tracking tool for 11 retail stores in Maastricht and Heerlen. With 48 hours to go-live, a pre-flight audit revealed his Stripe webhooks were unverified, email DNS lacked SPF/DKIM, and no backup restore had ever been tested — putting his entire launch at immediate risk. 😳
+🚨 Daan Coppens had a launch date for Voorraadje, a stock-tracking tool for 11 retail stores in Maastricht and Heerlen. With 48 hours to go-live, a pre-flight audit revealed his Stripe webhooks were unverified, email DNS lacked SPF/DKIM, and no backup restore had ever been tested - putting his entire launch at immediate risk. 😳
 
 Seven days before go-live is when unseen technical omissions surface. Here is your mandatory pre-flight launch checklist: 🧠
 

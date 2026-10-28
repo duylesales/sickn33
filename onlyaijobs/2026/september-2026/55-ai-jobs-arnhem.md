@@ -38,17 +38,17 @@ Arnhem doesn't fit easily into a single economic category, and that makes its lo
 
 ## Two Very Different Kinds of Data Work
 
-**Energy and grid management.** Forecasting energy demand, optimising grid load and analysing risk around the transition to renewable generation are real, technically demanding applications of machine learning — rarely advertised under that name, more often as "energy transition data analyst."
+**Energy and grid management.** Forecasting energy demand, optimising grid load and analysing risk around the transition to renewable generation are real, technically demanding applications of machine learning - rarely advertised under that name, more often as "energy transition data analyst."
 
-**Fashion and creative technology.** The city's fashion-oriented education tradition produces a smaller stream of work around product visualisation, trend forecasting and supply chain data in the fashion industry — a niche rarely recognised as data work on a general job platform.
+**Fashion and creative technology.** The city's fashion-oriented education tradition produces a smaller stream of work around product visualisation, trend forecasting and supply chain data in the fashion industry - a niche rarely recognised as data work on a general job platform.
 
 ## Why This Is Rarely Recognised as AI Work
 
-Both segments are titled by departments that don't see the work as an "AI role" — an energy company calls it "data analyst" or "planner," a fashion company calls it "trend analyst" or "supply chain planner." Filtering by category is the only way to make both visible.
+Both segments are titled by departments that don't see the work as an "AI role" - an energy company calls it "data analyst" or "planner," a fashion company calls it "trend analyst" or "supply chain planner." Filtering by category is the only way to make both visible.
 
 ## Why These Two Segments Are Rarely Shown Side by Side on the Same Job Site
 
-Energy and fashion are such different worlds that even a specialist platform rarely mentions them in the same breath — and yet they exist literally in the same city, which makes Arnhem an unusually varied labour market for anyone willing to look beyond one sector.
+Energy and fashion are such different worlds that even a specialist platform rarely mentions them in the same breath - and yet they exist literally in the same city, which makes Arnhem an unusually varied labour market for anyone willing to look beyond one sector.
 
 ## Comparison Table: Energy vs. Fashion Technology in Arnhem
 
@@ -61,23 +61,23 @@ Energy and fashion are such different worlds that even a specialist platform rar
 
 ## What This Means for a Targeted Search
 
-First decide which of the two segments interests you, then search specifically within that segment — a generic search for "AI Arnhem" probably returns results from neither, simply because both segments use their own, non-AI vocabulary. Filtering by category rather than by city alone is essential here, not optional.
+First decide which of the two segments interests you, then search specifically within that segment - a generic search for "AI Arnhem" probably returns results from neither, simply because both segments use their own, non-AI vocabulary. Filtering by category rather than by city alone is essential here, not optional.
 
 ## A Concrete Scenario of How These Two Worlds Rarely Meet
 
-A data scientist with experience in the energy sector never applies to a fashion technology company, and vice versa — not because the underlying skills don't overlap (both require time series analysis and predictive modelling), but because the sector-specific vocabulary and networks of the two worlds barely cross. A candidate willing to look outside their own sector bubble can therefore gain access to a part of the labour market that most other candidates with the same technical background never consider.
+A data scientist with experience in the energy sector never applies to a fashion technology company, and vice versa - not because the underlying skills don't overlap (both require time series analysis and predictive modelling), but because the sector-specific vocabulary and networks of the two worlds barely cross. A candidate willing to look outside their own sector bubble can therefore gain access to a part of the labour market that most other candidates with the same technical background never consider.
 
 ## A Common Misconception About Sector-Specific Experience
 
-Candidates often assume that experience in, for example, the energy sector makes them unsuitable for a role in fashion technology, or the other way round. In reality, the underlying technical skill — time series forecasting, pattern recognition, statistical modelling — is largely transferable between these two sectors; what is missing is specific domain knowledge, which in practice can be built up faster than the core skills themselves.
+Candidates often assume that experience in, for example, the energy sector makes them unsuitable for a role in fashion technology, or the other way round. In reality, the underlying technical skill - time series forecasting, pattern recognition, statistical modelling - is largely transferable between these two sectors; what is missing is specific domain knowledge, which in practice can be built up faster than the core skills themselves.
 
 ## Why Arnhem's Diversity Is an Underused Asset for Flexible Candidates
 
-For a candidate not tied to one specific sector, Arnhem's unusual combination of energy and fashion technology offers a rare chance to switch sectors within the same regional labour market without having to move — a flexibility most other Dutch cities, with their more one-sided economic profiles, don't offer.
+For a candidate not tied to one specific sector, Arnhem's unusual combination of energy and fashion technology offers a rare chance to switch sectors within the same regional labour market without having to move - a flexibility most other Dutch cities, with their more one-sided economic profiles, don't offer.
 
 ## How to Decide Which of the Two Segments Suits You Better
 
-If you are torn between the energy side and the fashion technology side of Arnhem's labour market, a useful question is: do you get more satisfaction from work with direct, measurable operational impact (energy and grid management) or from work with a creative, aesthetic component (fashion technology)? Both require comparable technical skills, but the daily satisfaction you get from them depends heavily on which kind of problem motivates you intrinsically — a question more important for your long-term satisfaction than which segment happens to have more vacancies right now.
+If you are torn between the energy side and the fashion technology side of Arnhem's labour market, a useful question is: do you get more satisfaction from work with direct, measurable operational impact (energy and grid management) or from work with a creative, aesthetic component (fashion technology)? Both require comparable technical skills, but the daily satisfaction you get from them depends heavily on which kind of problem motivates you intrinsically - a question more important for your long-term satisfaction than which segment happens to have more vacancies right now.
 
 ## Why This Combination May Become Even More Relevant
 
@@ -112,7 +112,7 @@ The **Netherlands Authority for Consumers and Markets (ACM)** is the Dutch energ
 
 **ArtEZ University of the Arts.** Arnhem's fashion tradition is closely linked to ArtEZ's fashion programme, which enjoys international recognition and has produced designers active in the global fashion industry. A creative ecosystem of designers, studios and small fashion companies has grown up around the programme.
 
-**Data work in fashion.** In the fashion industry, it is about demand and trend forecasting, inventory and production planning, return prediction in e-commerce, visual search and recommender systems and — with sustainability in mind — reducing overproduction. That last application fits remarkably well with Arnhem's broader sustainability profile.
+**Data work in fashion.** In the fashion industry, it is about demand and trend forecasting, inventory and production planning, return prediction in e-commerce, visual search and recommender systems and - with sustainability in mind - reducing overproduction. That last application fits remarkably well with Arnhem's broader sustainability profile.
 
 ## Education, Healthcare and Accessibility
 
@@ -168,28 +168,28 @@ Browse current AI, machine learning and data jobs in and around Arnhem at [onlya
 ## Frequently Asked Questions
 
 ### (Scenario: candidate unsure whether Arnhem has a serious AI market) Does Arnhem have a serious AI labour market, or is it too diverse to see as one market?
-It is indeed diverse — energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real but serve very different profiles.
+It is indeed diverse - energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real but serve very different profiles.
 
 ### (Scenario: candidate interested in energy-related work) What kind of data work happens specifically in the energy sector around Arnhem?
-Forecasting energy demand, optimising grid load and analysing risk around the renewable energy transition — technically demanding work, rarely advertised under the name "AI."
+Forecasting energy demand, optimising grid load and analysing risk around the renewable energy transition - technically demanding work, rarely advertised under the name "AI."
 
 ### (Scenario: candidate interested in fashion technology) Is there really data work in the fashion industry around Arnhem?
-Yes, although it is a smaller niche — product visualisation, trend forecasting and supply chain data in the fashion industry, rarely recognised as data work on a general platform.
+Yes, although it is a smaller niche - product visualisation, trend forecasting and supply chain data in the fashion industry, rarely recognised as data work on a general platform.
 
 ### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Arnhem"?
 Because both segments are titled by departments that don't see the work as an AI role, using terms like "energy transition data analyst" or "trend analyst" instead of AI vocabulary.
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work in Arnhem?
-Filter by category rather than job title, and look specifically at the segment that interests you — energy or fashion technology — instead of a broad, generic search.
+Filter by category rather than job title, and look specifically at the segment that interests you - energy or fashion technology - instead of a broad, generic search.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does Arnhem have a serious AI labour market, or is it too diverse to see as one market?", "acceptedAnswer": {"@type": "Answer", "text": "It is diverse — energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real."}},
+    {"@type": "Question", "name": "Does Arnhem have a serious AI labour market, or is it too diverse to see as one market?", "acceptedAnswer": {"@type": "Answer", "text": "It is diverse - energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real."}},
     {"@type": "Question", "name": "What kind of data work happens specifically in the energy sector around Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Forecasting energy demand, optimising grid load and analysing risk around the renewable energy transition."}},
-    {"@type": "Question", "name": "Is there really data work in the fashion industry around Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although it is a smaller niche — product visualisation, trend forecasting and supply chain data in the fashion industry."}},
+    {"@type": "Question", "name": "Is there really data work in the fashion industry around Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although it is a smaller niche - product visualisation, trend forecasting and supply chain data in the fashion industry."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Arnhem\"?", "acceptedAnswer": {"@type": "Answer", "text": "Both segments are titled by departments that don't see the work as an AI role."}},
     {"@type": "Question", "name": "How do I search specifically for this kind of work in Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category rather than job title, and look specifically at the segment that interests you."}}
   ]

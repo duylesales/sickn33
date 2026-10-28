@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Beveiliging van AI-Apps: Wachtwoordherstel en Magic Links Goed Inrichten",
-  "description": "Wachtwoordherstel en magic links vormen de geruisloze achterdeur in de beveiliging van AI-gebouwde apps. Dit artikel behandelt token-entropie, verlooptermijnen, eenmalig gebruik, host header poisoning, enumeratie, sessie-invalidatie en e-mailbezorging — inclusief checklist voor technische oprichters.",
+  "description": "Wachtwoordherstel en magic links vormen de geruisloze achterdeur in de beveiliging van AI-gebouwde apps. Dit artikel behandelt token-entropie, verlooptermijnen, eenmalig gebruik, host header poisoning, enumeratie, sessie-invalidatie en e-mailbezorging - inclusief checklist voor technische oprichters.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-01",
@@ -21,9 +21,9 @@ Doelgroep: Technische Solo-oprichters / Indie Hackers
 }
 </script>
 
-Aanvallers breken zelden je inlogformulier. Ze gaan eromheen. De flow voor wachtwoordherstel — en zijn neefje, de magic link — is een tweede weg naar elk account, en binnen de beveiliging van AI-gegenereerde apps is het een van de minst onderzochte delen van de codebase. Het inlogscherm krijgt aandacht omdat iedereen het gebruikt. De herstelflow wordt zelden gebruikt, één keer getest en daarna vergeten, en dat is precies wat hem aantrekkelijk maakt.
+Aanvallers breken zelden je inlogformulier. Ze gaan eromheen. De flow voor wachtwoordherstel - en zijn neefje, de magic link - is een tweede weg naar elk account, en binnen de beveiliging van AI-gegenereerde apps is het een van de minst onderzochte delen van de codebase. Het inlogscherm krijgt aandacht omdat iedereen het gebruikt. De herstelflow wordt zelden gebruikt, één keer getest en daarna vergeten, en dat is precies wat hem aantrekkelijk maakt.
 
-Draait je authenticatie volledig op een volwassen aanbieder zoals Supabase Auth, Auth0 of Firebase Auth, dan wordt het meeste hiervan voor je geregeld — zolang je het niet in eigen code hebt verpakt. De problemen beginnen als een AI-tool zijn eigen herstellogica genereert, of zijn eigen "wachtwoordloze" login, bovenop die aanbieder.
+Draait je authenticatie volledig op een volwassen aanbieder zoals Supabase Auth, Auth0 of Firebase Auth, dan wordt het meeste hiervan voor je geregeld - zolang je het niet in eigen code hebt verpakt. De problemen beginnen als een AI-tool zijn eigen herstellogica genereert, of zijn eigen "wachtwoordloze" login, bovenop die aanbieder.
 
 ## Wat een Herstellink Echt Is
 
@@ -31,11 +31,11 @@ Een herstellink is een tijdelijk wachtwoord. Wie hem heeft, kan het account over
 
 ## Beveiliging van AI-Gegenereerde Apps: Zeven Fouten in Herstelflows
 
-**1. Raadbare tokens.** Tokens gemaakt met `Math.random()`, tijdstempels, gebruikers-ID's of korte numerieke codes kunnen worden voorspeld of met brute force worden geraden. Tokens moeten uit een cryptografisch veilige randomgenerator komen en lang genoeg zijn — 128 bits of meer.
+**1. Raadbare tokens.** Tokens gemaakt met `Math.random()`, tijdstempels, gebruikers-ID's of korte numerieke codes kunnen worden voorspeld of met brute force worden geraden. Tokens moeten uit een cryptografisch veilige randomgenerator komen en lang genoeg zijn - 128 bits of meer.
 
 **2. Geen vervaltijd, of een lange.** Links die dagen of voor altijd werken, maken van elke oude e-mail in iemands inbox een sleutel. Vijftien tot zestig minuten is gebruikelijk voor herstel; magic links zijn vaak korter geldig.
 
-**3. Herbruikbare tokens.** Na een geslaagd herstel hoort het token ongeldig te worden. Veel gegenereerde flows laten het geldig, zodat iedereen die de link later ziet — in een doorgestuurde e-mail, een gedeeld scherm, de browsergeschiedenis — hem opnieuw kan gebruiken.
+**3. Herbruikbare tokens.** Na een geslaagd herstel hoort het token ongeldig te worden. Veel gegenereerde flows laten het geldig, zodat iedereen die de link later ziet - in een doorgestuurde e-mail, een gedeeld scherm, de browsergeschiedenis - hem opnieuw kan gebruiken.
 
 **4. Tokens opgeslagen als platte tekst.** Slaat de database hersteltokens ongewijzigd op, dan kan iedereen met leestoegang tot die tabel, of een gelekte back-up, accounts met een lopend herstel overnemen. Sla een hash op, zoals je bij een wachtwoord zou doen.
 
@@ -43,7 +43,7 @@ Een herstellink is een tijdelijk wachtwoord. Wie hem heeft, kan het account over
 
 **6. Enumeratie.** "Geen account gevonden met dat e-mailadres" vertelt een aanvaller welke adressen klant zijn. Reageer altijd met dezelfde melding.
 
-**7. Sessies overleven het herstel.** Herstelt iemand een wachtwoord — vaak omdat hij vermoedt dat zijn account is gecompromitteerd — dan horen bestaande sessies elders te eindigen. AI-gegenereerde flows werken meestal alleen de wachtwoordhash bij.
+**7. Sessies overleven het herstel.** Herstelt iemand een wachtwoord - vaak omdat hij vermoedt dat zijn account is gecompromitteerd - dan horen bestaande sessies elders te eindigen. AI-gegenereerde flows werken meestal alleen de wachtwoordhash bij.
 
 ## Voor Magic Links Gelden Dezelfde Regels, en Nog Eén
 
@@ -117,7 +117,7 @@ Magic links zijn handig op hetzelfde apparaat; eenmalige codes werken beter als 
 
 ## Accountherstel buiten E-mail om
 
-Verliest een gebruiker de toegang tot zijn e-mail, dan wordt herstel een supportproces — en een doelwit voor social engineering. Leg vooraf vast welk bewijs je accepteert (bijvoorbeeld toegang tot een geverifieerd telefoonnummer, recente betaalgegevens of identiteitsverificatie bij waardevolle accounts), log herstelacties, informeer het oude e-mailadres over de wijziging en hanteer een afkoelperiode vóór gevoelige acties. Bied bij apps met gevoelige data tweestapsverificatie met herstelcodes aan, zodat gebruikers zonder support kunnen herstellen.
+Verliest een gebruiker de toegang tot zijn e-mail, dan wordt herstel een supportproces - en een doelwit voor social engineering. Leg vooraf vast welk bewijs je accepteert (bijvoorbeeld toegang tot een geverifieerd telefoonnummer, recente betaalgegevens of identiteitsverificatie bij waardevolle accounts), log herstelacties, informeer het oude e-mailadres over de wijziging en hanteer een afkoelperiode vóór gevoelige acties. Bied bij apps met gevoelige data tweestapsverificatie met herstelcodes aan, zodat gebruikers zonder support kunnen herstellen.
 
 ## Meldingen die Gebruikers Helpen Aanvallen te Herkennen
 
@@ -137,7 +137,7 @@ Bied bij apps met gevoelige data of beheerdersbevoegdheden tweestapsverificatie 
 
 ## Passkeys: Waar Authenticatie Naartoe Gaat
 
-Passkeys vervangen wachtwoorden door cryptografische inloggegevens die op de apparaten van gebruikers worden bewaard en door hun platform worden gesynchroniseerd. Ze zijn bestand tegen phishing en credential stuffing en maken wachtwoordherstel in veel gevallen overbodig. De ondersteuning groeit in browsers, besturingssystemen en bij authenticatieaanbieders. Voor nieuwe AI-gebouwde apps is het aanbieden van passkeys naast inloggen via e-mail een steeds praktischere optie — en het verkleint het aanvalsoppervlak dat dit artikel beschrijft.
+Passkeys vervangen wachtwoorden door cryptografische inloggegevens die op de apparaten van gebruikers worden bewaard en door hun platform worden gesynchroniseerd. Ze zijn bestand tegen phishing en credential stuffing en maken wachtwoordherstel in veel gevallen overbodig. De ondersteuning groeit in browsers, besturingssystemen en bij authenticatieaanbieders. Voor nieuwe AI-gebouwde apps is het aanbieden van passkeys naast inloggen via e-mail een steeds praktischere optie - en het verkleint het aanvalsoppervlak dat dit artikel beschrijft.
 
 ## Veelgestelde Vragen van Gebruikers
 
@@ -149,11 +149,11 @@ Vraag een herstel aan voor een echt account en bekijk alles: het afzenderdomein 
 
 ## Waarom Dit de Aandacht van de Oprichter Verdient
 
-Flows voor wachtwoordherstel en magic links komen zelden voor in demo's, en oprichters klikken ze na de lancering zelden aan. Toch bepalen ze of een aanvaller een account kan overnemen zonder ooit het wachtwoord te kennen. Een paar uur besteed aan tokensterkte, vervaltijd, eenmalig gebruik, veilige URL's, rate limits en het intrekken van sessies beschermt elk account in je app — inclusief je eigen beheerdersaccount, vaak het waardevolste doelwit van allemaal. Zet de controles op je lanceringslijst naast betalingen en toegangsbeheer, waar ze horen.
+Flows voor wachtwoordherstel en magic links komen zelden voor in demo's, en oprichters klikken ze na de lancering zelden aan. Toch bepalen ze of een aanvaller een account kan overnemen zonder ooit het wachtwoord te kennen. Een paar uur besteed aan tokensterkte, vervaltijd, eenmalig gebruik, veilige URL's, rate limits en het intrekken van sessies beschermt elk account in je app - inclusief je eigen beheerdersaccount, vaak het waardevolste doelwit van allemaal. Zet de controles op je lanceringslijst naast betalingen en toegangsbeheer, waar ze horen.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio beoordeelt authenticatieflows bij elke beveiligingsronde, en logica voor herstel en magic links is waar eigen AI-gegenereerde code het vaakst moet worden vervangen door een ingebouwde flow van een aanbieder of een versterkte implementatie. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink zijn loopbaan in cybersecurity begon — hij was medeoprichter van CyberDevOps, nu CFLW Cyber Strategies — en wiens engineers in Ho Chi Minh-stad al meer dan 11 jaar authenticatie bouwen voor enterprisesystemen. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
+LaunchStudio beoordeelt authenticatieflows bij elke beveiligingsronde, en logica voor herstel en magic links is waar eigen AI-gegenereerde code het vaakst moet worden vervangen door een ingebouwde flow van een aanbieder of een versterkte implementatie. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink zijn loopbaan in cybersecurity begon - hij was medeoprichter van CyberDevOps, nu CFLW Cyber Strategies - en wiens engineers in Ho Chi Minh-stad al meer dan 11 jaar authenticatie bouwen voor enterprisesystemen. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
 Weet je niet zeker wie je herstelflow heeft geschreven, [praat dan met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
@@ -161,7 +161,7 @@ Weet je niet zeker wie je herstelflow heeft geschreven, [praat dan met een engin
 
 ### Een AI-Native Oprichter in Actie: Een Planner voor Schoonmaakbedrijven met een Achterdeur van Zes Cijfers
 
-Tijmen Boersma, die een schoonmaakbedrijf voor bedrijfspanden heeft in Almelo, bouwde Poetsplan met Cursor: een plannings-SaaS voor schoonmaakbedrijven, waarin planners schoonmakers toewijzen aan kantoorgebouwen en klanten voltooide rondes en toegangsnotities voor gebouwen zien — inclusief alarmcodes. Tweeëntwintig schoonmaakbedrijven in Twente gebruikten het.
+Tijmen Boersma, die een schoonmaakbedrijf voor bedrijfspanden heeft in Almelo, bouwde Poetsplan met Cursor: een plannings-SaaS voor schoonmaakbedrijven, waarin planners schoonmakers toewijzen aan kantoorgebouwen en klanten voltooide rondes en toegangsnotities voor gebouwen zien - inclusief alarmcodes. Tweeëntwintig schoonmaakbedrijven in Twente gebruikten het.
 
 Tijmen had Cursor gevraagd om "inloggen zonder wachtwoord met een code per e-mail". Het resultaat stuurde een numerieke code van zes cijfers, 24 uur geldig, zonder limiet op het aantal pogingen. Een klant met oog voor beveiliging testte het en raadde met een eenvoudig script binnen een middag zijn weg in een testaccount binnen. De review vond meer: de aparte flow voor wachtwoordherstel bouwde zijn link op uit de host-header van het verzoek, tokens werden als platte tekst opgeslagen, herstel beëindigde geen andere sessies, en het inlogformulier meldde "onbekend e-mailadres" voor niet-klanten.
 
@@ -170,9 +170,9 @@ De engineers van LaunchStudio vervingen de eigen inlog- en herstelcode door de i
 **Resultaat:** De vervolgtest van de klant vond geen weg naar binnen, en Poetsplan doorstond de beveiligingscontrole voor leveranciers van die klant. Het is sindsdien gegroeid naar 35 schoonmaakbedrijven.
 
 > *"Ik vroeg om gemak en kreeg een slot met zes cijfers en onbeperkt raden. De oplossing was vooral gebruiken wat mijn authenticatieaanbieder al goed deed."*
-> — **Tijmen Boersma, Oprichter, Poetsplan (Almelo)**
+> - **Tijmen Boersma, Oprichter, Poetsplan (Almelo)**
 
-**Kosten & Tijdlijn:** € 1.150 (vervanging van authenticatieflows, rate limiting, sessiebeheer en inrichting van e-mail) — afgerond in 4 werkdagen.
+**Kosten & Tijdlijn:** € 1.150 (vervanging van authenticatieflows, rate limiting, sessiebeheer en inrichting van e-mail) - afgerond in 4 werkdagen.
 
 ## Veelgestelde Vragen
 

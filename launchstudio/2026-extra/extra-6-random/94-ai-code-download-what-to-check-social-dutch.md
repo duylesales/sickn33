@@ -4,7 +4,7 @@ Wat stilletjes meelift in uw configuratiebestanden telt zwaarder dan wat u testt
 
 ❌ Een oude test-API-sleutel stond rechtstreeks in een configuratiebestand, niet in een omgevingsvariabele
 ❌ Ze verhuisde onopgemerkt mee met de code naar de nieuwe provider
-❌ Ze bleef actief — nog steeds geldig, nog steeds aanroepbaar — gedurende drie weken na de migratie
+❌ Ze bleef actief - nog steeds geldig, nog steeds aanroepbaar - gedurende drie weken na de migratie
 ❌ Django ontdekte het puur bij toeval, tijdens een niet-gerelateerde opschoning
 
 ✅ Voer een volledige geheimen- en afhankelijkhedenaudit uit op elke gedownloade codebase voordat u verder bouwt

@@ -42,7 +42,7 @@ In 2026, the most dangerous vulnerabilities in an AI SaaS are not SQL injections
 ### 1. Denial of Wallet (DoW) Attacks
 In a traditional SaaS, a DDoS (Distributed Denial of Service) attack attempts to crash your server by overwhelming its CPU or bandwidth. In an AI SaaS, a DoW attack attempts to bankrupt your company by maxing out your OpenAI or Anthropic API billing limits.
 
-Because LLM API calls are charged per token (and are relatively expensive), a malicious script that repeatedly sends maximum-length prompts to your unsecured AI endpoint can rack up thousands of euros in charges in a matter of hours. The server does not crash—it happily processes the requests—but your corporate credit card is decimated.
+Because LLM API calls are charged per token (and are relatively expensive), a malicious script that repeatedly sends maximum-length prompts to your unsecured AI endpoint can rack up thousands of euros in charges in a matter of hours. The server does not crash - it happily processes the requests - but your corporate credit card is decimated.
 
 **The Architectural Defense:** DoW attacks cannot be solved by simply hiding the API key. You must implement aggressive, multi-layered rate limiting at the infrastructure level (e.g., using Redis and Upstash). Crucially, the rate limiting must be tied to a strict Quota Management system enforced by a secure backend API proxy. If a user is on a "Free Tier," the backend must track their exact token consumption and physically block the request *before* it reaches the OpenAI API once the threshold is crossed.
 
@@ -93,9 +93,9 @@ They also implemented a pre-processing filter to stop prompt injections, as stud
 **Result:** Liam paid off the debt and relaunched GradeGenius securely. The new architecture flawlessly repelled subsequent script attacks. Confident in the platform's stability, Liam began selling to entire school districts. GradeGenius is now a profitable SaaS generating €8,500/month, and Liam's API bill has never exceeded his projections.
 
 > *"I thought hacking meant stealing passwords. I didn't realize someone could hack me just by asking the AI too many questions and sticking me with the bill. LaunchStudio didn't just fix a bug; they built the financial shield my business needed to survive on the internet."*
-> — **Liam O'Connor, Founder, GradeGenius (Dublin)**
+> - **Liam O'Connor, Founder, GradeGenius (Dublin)**
 
-**Cost & Timeline:** €5,500 (Launch & Grow Package with Security Hardening Add-on) — production-ready and deployed in 10 business days.
+**Cost & Timeline:** €5,500 (Launch & Grow Package with Security Hardening Add-on) - production-ready and deployed in 10 business days.
 
 ---
 

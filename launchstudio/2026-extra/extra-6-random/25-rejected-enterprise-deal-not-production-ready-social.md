@@ -1,10 +1,10 @@
-📧 The email landed on a Tuesday, three weeks after what had felt like the best sales call of the quarter for Marit Loots, founder of PersoneelsPortaal. It didn't say no outright — it said the deal was "on hold pending further review of our security posture." Corporate for no, not yet, maybe never. 😬
+📧 The email landed on a Tuesday, three weeks after what had felt like the best sales call of the quarter for Marit Loots, founder of PersoneelsPortaal. It didn't say no outright - it said the deal was "on hold pending further review of our security posture." Corporate for no, not yet, maybe never. 😬
 
 An enterprise buyer's user saying yes and procurement saying yes are two completely separate gates. 🧠
 
 ❌ Data was encrypted in transit but not consistently at rest across all storage
 ❌ There was no centralized access logging for who viewed employee records
-❌ There was no written incident response plan at all — not even an informal one
+❌ There was no written incident response plan at all - not even an informal one
 ❌ None of this showed up in the demo the champion user loved
 
 ✅ Implement encryption at rest across the entire database

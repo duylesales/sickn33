@@ -10,7 +10,7 @@ You can engineer the most advanced LLM orchestration layer in the world, but if 
 
 ## The Hero Section: Clarity Over Cleverness
 
-The Hero Section is the very top of the page visible before the user scrolls. You have roughly 5 seconds before the user clicks the "Back" button — heatmap studies of B2B landing pages consistently show that the vast majority of visitors never scroll past the fold at all. Do not write poetic, Apple-style marketing copy unless you are a trillion-dollar company with decades of brand equity to lean on.
+The Hero Section is the very top of the page visible before the user scrolls. You have roughly 5 seconds before the user clicks the "Back" button - heatmap studies of B2B landing pages consistently show that the vast majority of visitors never scroll past the fold at all. Do not write poetic, Apple-style marketing copy unless you are a trillion-dollar company with decades of brand equity to lean on.
 
 **Bad Headline:** "Empowering the Future of Synergy."
 
@@ -20,9 +20,9 @@ The sub-headline immediately below it must explain the mechanics and the ROI: *"
 
 ## Show the UI, Burn the Vector Art
 
-A massive mistake made by early-stage founders is using generic, abstract vector illustrations (e.g., a cartoon person holding a giant magnifying glass next to a gear). This signals to the enterprise buyer that your software is either unfinished or low-quality — and in 2026, when so many AI-native founders are shipping prototypes built in Lovable or Bolt, a generic illustration reads as "this is still a demo," which is precisely the impression you cannot afford.
+A massive mistake made by early-stage founders is using generic, abstract vector illustrations (e.g., a cartoon person holding a giant magnifying glass next to a gear). This signals to the enterprise buyer that your software is either unfinished or low-quality - and in 2026, when so many AI-native founders are shipping prototypes built in Lovable or Bolt, a generic illustration reads as "this is still a demo," which is precisely the impression you cannot afford.
 
-B2B buyers want to see the product. Your Hero section must feature a massive, high-fidelity screenshot (or a short, looping 5-second video) of your actual user interface. They need to visualize themselves using the dashboard. If your UI looks incredibly polished, it subconsciously communicates that the underlying engineering is also robust — and the inverse is equally true: a rough, inconsistent UI plants a doubt about your backend security and reliability that no amount of copy can talk them out of.
+B2B buyers want to see the product. Your Hero section must feature a massive, high-fidelity screenshot (or a short, looping 5-second video) of your actual user interface. They need to visualize themselves using the dashboard. If your UI looks incredibly polished, it subconsciously communicates that the underlying engineering is also robust - and the inverse is equally true: a rough, inconsistent UI plants a doubt about your backend security and reliability that no amount of copy can talk them out of.
 
 ### The Speed Tax on Your Hero Assets
 
@@ -42,13 +42,13 @@ When scrolling down to the features, do not list a massive wall of text. Use the
 
 - **Row 2:** UI screenshot on the left, Text description on the right.
 
-This alternating layout keeps the user's eye moving dynamically down the page, preventing reading fatigue while continuously associating the benefit with the visual proof of the interface. Each row should follow a consistent formula: a specific, benefit-oriented subheading (not a feature name), one sentence of mechanism, and a visual that proves it — resist the urge to explain every feature; three to five well-illustrated rows outperform ten thin ones.
+This alternating layout keeps the user's eye moving dynamically down the page, preventing reading fatigue while continuously associating the benefit with the visual proof of the interface. Each row should follow a consistent formula: a specific, benefit-oriented subheading (not a feature name), one sentence of mechanism, and a visual that proves it - resist the urge to explain every feature; three to five well-illustrated rows outperform ten thin ones.
 
 ## The Singular Call to Action (CTA)
 
 A landing page must have a single objective. Do not ask the user to "Start a Free Trial," "Subscribe to our Newsletter," and "Read our Blog" with the same visual weight. It causes decision paralysis, and every additional competing link measurably dilutes conversion on your primary action.
 
-Choose one primary CTA (e.g., **"Start 14-Day Free Trial"**). This button should be a highly contrasting color (like vibrant purple or bright blue) that appears nowhere else on the page except on buttons — reserving the color makes the CTA impossible to miss subconsciously. Place it in the top right navigation bar, place it prominently in the Hero section, and place a massive, impossible-to-miss version of it at the very bottom of the page (the "Footer CTA"). Every pixel of the page must funnel the user toward that single click.
+Choose one primary CTA (e.g., **"Start 14-Day Free Trial"**). This button should be a highly contrasting color (like vibrant purple or bright blue) that appears nowhere else on the page except on buttons - reserving the color makes the CTA impossible to miss subconsciously. Place it in the top right navigation bar, place it prominently in the Hero section, and place a massive, impossible-to-miss version of it at the very bottom of the page (the "Footer CTA"). Every pixel of the page must funnel the user toward that single click.
 
 ### What Happens After the Click Matters Just as Much
 
@@ -82,7 +82,7 @@ He worked with **LaunchStudio (by Manifera, founded in 2014)** to refactor asset
 
 **Result:** Page load times dropped to 0.7 seconds, raising Lighthouse performance scores to 98/100.
 
-**Cost & Timeline:** €950 (Lighthouse Optimization) — production-ready and deployed in 2 business days.
+**Cost & Timeline:** €950 (Lighthouse Optimization) - production-ready and deployed in 2 business days.
 
 ---
 

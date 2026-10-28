@@ -30,15 +30,15 @@ This article covers the whole path from file to database: parsing what Dutch cus
 
 The file your customer exports from their old system or saves from Excel is not the RFC 4180 CSV your parser was tested on.
 
-**The delimiter is often a semicolon.** Excel with Dutch regional settings uses the comma as the decimal separator, so it saves "CSV" with semicolons between fields. A parser that assumes commas reads each line as one enormous field — or, worse, splits on the commas inside amounts.
+**The delimiter is often a semicolon.** Excel with Dutch regional settings uses the comma as the decimal separator, so it saves "CSV" with semicolons between fields. A parser that assumes commas reads each line as one enormous field - or, worse, splits on the commas inside amounts.
 
-**The encoding is often Windows-1252.** Files saved by older Excel versions and many legacy systems are not UTF-8. Read as UTF-8, "Hélène" becomes "HÃ©lÃ¨ne" and "€" becomes garbage. Files saved as "CSV UTF-8" from modern Excel start with a byte order mark that, unhandled, ends up glued to the first column name — so the column `naam` is not found because it is actually `﻿naam`.
+**The encoding is often Windows-1252.** Files saved by older Excel versions and many legacy systems are not UTF-8. Read as UTF-8, "Hélène" becomes "HÃ©lÃ¨ne" and "€" becomes garbage. Files saved as "CSV UTF-8" from modern Excel start with a byte order mark that, unhandled, ends up glued to the first column name - so the column `naam` is not found because it is actually `﻿naam`.
 
 **Fields contain line breaks and quotes.** An address or a note spanning two lines, wrapped in quotes, with quotes inside it doubled. Splitting the file on newlines before parsing breaks these rows in half.
 
 **Header rows vary.** Column names in Dutch or English, with trailing spaces, different capitalisation, sometimes two header rows, sometimes none.
 
-The response is to never hand-write a parser. Use a maintained CSV library, detect the delimiter by inspecting the first lines, detect the encoding — or, simpler, ask the user and default to the most likely — strip the byte order mark, and normalise header names (trim, lowercase) before matching.
+The response is to never hand-write a parser. Use a maintained CSV library, detect the delimiter by inspecting the first lines, detect the encoding - or, simpler, ask the user and default to the most likely - strip the byte order mark, and normalise header names (trim, lowercase) before matching.
 
 Better still, accept `.xlsx` directly. Reading the spreadsheet format with a library avoids delimiter and encoding problems entirely, and it is what most customers have anyway; CSV is often just the format they were told to convert to.
 
@@ -46,15 +46,15 @@ Better still, accept `.xlsx` directly. Reading the spreadsheet format with a lib
 
 Parsing errors are visible: rows fail, columns are missing. The dangerous errors are the ones where a value is read successfully and means something different.
 
-**Numbers.** "1.250,00" is twelve hundred and fifty in Dutch. A parser using English conventions reads it as 1.25, or fails, depending on the library. "1,250" is one and a quarter in Dutch and one thousand two hundred and fifty in English. Decide the expected format per import — from the user's locale or an explicit choice — and reject values that do not match it rather than guessing.
+**Numbers.** "1.250,00" is twelve hundred and fifty in Dutch. A parser using English conventions reads it as 1.25, or fails, depending on the library. "1,250" is one and a quarter in Dutch and one thousand two hundred and fifty in English. Decide the expected format per import - from the user's locale or an explicit choice - and reject values that do not match it rather than guessing.
 
 **Dates.** "03-04-2028" is the third of April in the Netherlands and the fourth of March in the United States. "3-4-28" adds a century question. Excel may also have exported the date as a serial number, such as 46115. Accept an explicit set of formats, parse strictly, and show the interpreted date in the preview so the customer can see "3 april 2028" and confirm it.
 
-**Leading zeros.** Excel strips them from anything it believes is a number. Phone numbers lose their 0, article codes "00451" become 451, KvK numbers and some postcodes change. Treat these columns as text by definition, never infer them as numbers, and validate their length — a Dutch mobile number has ten digits.
+**Leading zeros.** Excel strips them from anything it believes is a number. Phone numbers lose their 0, article codes "00451" become 451, KvK numbers and some postcodes change. Treat these columns as text by definition, never infer them as numbers, and validate their length - a Dutch mobile number has ten digits.
 
 **Long numbers.** IBANs survive because they contain letters. Long numeric identifiers do not: Excel converts anything above fifteen digits to scientific notation and loses precision permanently. If a customer's file contains "8,71234E+15", the original value is gone; detect the pattern and reject the row with an explanation rather than storing the wrong number.
 
-**Booleans and enumerations.** "Ja", "ja", "J", "1", "waar", "yes", "x". Map an explicit set of accepted values to your codes and reject the rest — and remember the internationalisation article's rule that statuses are stored as codes, not as Dutch words.
+**Booleans and enumerations.** "Ja", "ja", "J", "1", "waar", "yes", "x". Map an explicit set of accepted values to your codes and reject the rest - and remember the internationalisation article's rule that statuses are stored as codes, not as Dutch words.
 
 ## The Staged Pipeline
 
@@ -62,9 +62,9 @@ The structural fix for imports is to never write directly into production tables
 
 **1. Upload.** The file goes to storage, a row is created in an `import_batches` table with the organisation, the user, the filename and a status. Nothing has touched the data yet.
 
-**2. Parse and map.** The file is parsed and the customer maps their columns to your fields — "Klantnaam" to `name`, "Postcode" to `postal_code`. Remember the mapping per organisation, because they will import the same export again next month.
+**2. Parse and map.** The file is parsed and the customer maps their columns to your fields - "Klantnaam" to `name`, "Postcode" to `postal_code`. Remember the mapping per organisation, because they will import the same export again next month.
 
-**3. Validate into staging.** Each row is written to a staging table with its parsed values and a list of errors and warnings. Validation is the same as for a form — required fields, formats, ranges, references to existing records — plus import-specific checks such as duplicates within the file.
+**3. Validate into staging.** Each row is written to a staging table with its parsed values and a list of errors and warnings. Validation is the same as for a form - required fields, formats, ranges, references to existing records - plus import-specific checks such as duplicates within the file.
 
 ```sql
 create table import_rows (
@@ -80,7 +80,7 @@ create table import_rows (
 );
 ```
 
-**4. Preview.** The customer sees a summary — 812 rows will be created, 64 updated, 23 have errors — and can inspect each error and each update. Errors can be downloaded as a file with the original row and the reason, fixed in Excel and re-uploaded. This is the stage that turns a silent problem into a visible one.
+**4. Preview.** The customer sees a summary - 812 rows will be created, 64 updated, 23 have errors - and can inspect each error and each update. Errors can be downloaded as a file with the original row and the reason, fixed in Excel and re-uploaded. This is the stage that turns a silent problem into a visible one.
 
 **5. Commit.** Only on confirmation are the valid rows written to production tables, in a transaction, with every created or updated row tagged with the batch ID. The batch records its outcome: counts, duration, and who confirmed it.
 
@@ -98,9 +98,9 @@ What is not defensible is the default AI-generated behaviour: insert rows one by
 
 ## Deduplication and Updates
 
-Customers import the same data more than once — a corrected file, next month's export, a second branch's list. An import that only creates records produces duplicates every time.
+Customers import the same data more than once - a corrected file, next month's export, a second branch's list. An import that only creates records produces duplicates every time.
 
-Decide on a matching key per entity: an external identifier from the source system if there is one, otherwise a natural key — email for contacts, article number for products, postcode plus house number plus addition for addresses. Store the external identifier in its own column with a unique constraint per organisation, and use it to upsert:
+Decide on a matching key per entity: an external identifier from the source system if there is one, otherwise a natural key - email for contacts, article number for products, postcode plus house number plus addition for addresses. Store the external identifier in its own column with a unique constraint per organisation, and use it to upsert:
 
 ```sql
 insert into clients (organisation_id, external_ref, name, email, import_batch_id)
@@ -110,17 +110,17 @@ on conflict (organisation_id, external_ref) do update
   set name = excluded.name, email = excluded.email, import_batch_id = excluded.import_batch_id;
 ```
 
-Show matched records in the preview as updates, with the fields that will change. And decide whether empty cells in the file mean "leave unchanged" or "clear this field" — the safe default is the former, because a column the customer did not export should not wipe data they entered in your product.
+Show matched records in the preview as updates, with the fields that will change. And decide whether empty cells in the file mean "leave unchanged" or "clear this field" - the safe default is the former, because a column the customer did not export should not wipe data they entered in your product.
 
-Duplicates within the file itself — the same client twice because two branches both listed them — are flagged during validation, not silently merged.
+Duplicates within the file itself - the same client twice because two branches both listed them - are flagged during validation, not silently merged.
 
 ## Undo Is a Feature
 
 Every row written by an import carries its batch ID. That makes the most valuable import feature possible: undoing a batch.
 
-For a batch that only created records, undo deletes those records — provided nothing else has started referring to them, which the database's foreign keys will tell you. For a batch that updated records, undo requires the previous values, which is a reason to store them in the staging row before committing.
+For a batch that only created records, undo deletes those records - provided nothing else has started referring to them, which the database's foreign keys will tell you. For a batch that updated records, undo requires the previous values, which is a reason to store them in the staging row before committing.
 
-Offer undo for a limited period — a day, a week — and to administrators. It converts "we imported the wrong file" from a support emergency into a button, and it is the strongest argument for the staged design.
+Offer undo for a limited period - a day, a week - and to administrators. It converts "we imported the wrong file" from a support emergency into a button, and it is the strongest argument for the staged design.
 
 ## Large Files and Timeouts
 
@@ -134,13 +134,13 @@ Set explicit limits: a maximum file size, a maximum number of rows per import, a
 
 Imports are an input like any other, and they come with risks of their own.
 
-**Organisation scoping.** Imports often run with the service role, which bypasses row level security. Every write must set the organisation from the batch — which comes from the authenticated user — never from a column in the file. A file with an `organisation_id` column must not be able to place data in someone else's account.
+**Organisation scoping.** Imports often run with the service role, which bypasses row level security. Every write must set the organisation from the batch - which comes from the authenticated user - never from a column in the file. A file with an `organisation_id` column must not be able to place data in someone else's account.
 
 **Formula injection.** A cell beginning with `=`, `+`, `-` or `@` is executed as a formula when the data is later exported and opened in Excel: `=HYPERLINK("https://evil.example","Klik hier")`. Store the value as text, and when exporting, prefix such cells with an apostrophe so spreadsheet software treats them as text. The data exports article in this series covers the export side.
 
 **File size and content.** Limit the size, check that the file actually is CSV or XLSX rather than trusting the extension, and process it outside the request path, as the file upload articles in this series describe.
 
-**Personal data.** An import file often contains more personal data than your product needs — a full export from an old CRM with dates of birth and notes. Import only mapped columns, delete the uploaded file after the batch is committed or abandoned, and keep the staging rows only as long as undo requires.
+**Personal data.** An import file often contains more personal data than your product needs - a full export from an old CRM with dates of birth and notes. Import only mapped columns, delete the uploaded file after the batch is committed or abandoned, and keep the staging rows only as long as undo requires.
 
 ## Test With Nasty Files
 
@@ -157,7 +157,7 @@ An import tested with a clean sample file is untested. Keep a folder of delibera
 - A cell starting with `=HYPERLINK(`.
 - A row with an `organisation_id` column pointing at another organisation.
 
-Each fixture has an expected outcome — parsed values, errors, or rejection — and the tests assert it. When a customer's real file breaks something, it becomes a fixture.
+Each fixture has an expected outcome - parsed values, errors, or rejection - and the tests assert it. When a customer's real file breaks something, it becomes a fixture.
 
 ## Import Is Onboarding
 
@@ -165,17 +165,17 @@ The technical pipeline is half the work. The other half is that the import is us
 
 **Offer a template.** A downloadable XLSX with your columns, an example row, and a second sheet explaining each field and its accepted formats. Customers who start from the template produce clean files; customers who start from their old system's export need the mapping step.
 
-**Recognise the common sources.** If most customers come from the same two or three systems — a particular accounting package, a well-known industry tool — save a ready-made column mapping for each. "Importing from Exact? We have mapped the columns for you" removes the most tedious step entirely.
+**Recognise the common sources.** If most customers come from the same two or three systems - a particular accounting package, a well-known industry tool - save a ready-made column mapping for each. "Importing from Exact? We have mapped the columns for you" removes the most tedious step entirely.
 
 **Write errors for the person fixing the file.** Not `invalid_date at row 412`, but "Row 412: the date '31-02-2028' does not exist. Use the format DD-MM-YYYY." The error file should open in Excel with the original row and a final column explaining what to change.
 
-**Measure it.** Record how many batches are started, how many reach preview, how many are committed and how long each stage takes. An import where half of all batches are abandoned at preview is telling you which validation messages customers cannot act on — and that number is one of the most useful onboarding metrics a B2B product has.
+**Measure it.** Record how many batches are started, how many reach preview, how many are committed and how long each stage takes. An import where half of all batches are abandoned at preview is telling you which validation messages customers cannot act on - and that number is one of the most useful onboarding metrics a B2B product has.
 
 ## Setting This Up
 
 For a Lovable product with an import feature, this is typically three to four days: a maintained CSV and XLSX library with delimiter and encoding detection and byte order mark handling, saved column mappings per organisation, explicit number, date and boolean formats with strict parsing, identifier columns treated as text with length validation, a staged pipeline of upload, parse, validate into staging, preview and transactional commit, a stated policy for rows with errors and a downloadable error file, external identifiers with upsert-based deduplication, batch IDs on every imported row and undo within a defined period, background processing with progress and explicit limits, organisation set from the authenticated batch, formula injection neutralised, uploaded files deleted after processing, and a CI suite of difficult fixtures.
 
-LaunchStudio builds this when onboarding is held back by the import. The engineers are Manifera's — eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio builds this when onboarding is held back by the import. The engineers are Manifera's - eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Send us the worst file a customer has given you](https://launchstudio.eu/en/#contact) and we will tell you what your import does with it.
 
@@ -194,9 +194,9 @@ Three business days: an XLSX and CSV parser with delimiter and encoding detectio
 **Result:** the 214 tenants were collected correctly the following week and the 380 duplicates merged using the source system's tenant number. In the next quarter, eleven new organisations imported their data; the preview caught amount or date problems in four of the files before anything was written.
 
 > *"The import said it had worked. Our customer found out from their bank that two hundred and fourteen tenants had paid one euro twenty-five in rent."*
-> — **Annelies Vos, Founder, Huurbeheer (Zwolle)**
+> - **Annelies Vos, Founder, Huurbeheer (Zwolle)**
 
-**Cost & Timeline:** €3,600 (robust CSV and XLSX parsing, explicit Dutch formats, staged import with preview and error files, upsert-based deduplication, batch undo, background processing, organisation scoping, formula neutralisation, fourteen-fixture test suite, cleanup of affected data) — completed in 3 business days.
+**Cost & Timeline:** €3,600 (robust CSV and XLSX parsing, explicit Dutch formats, staged import with preview and error files, upsert-based deduplication, batch undo, background processing, organisation scoping, formula neutralisation, fourteen-fixture test suite, cleanup of affected data) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -238,7 +238,7 @@ A cell starting with `=`, `+`, `-` or `@` that runs as a formula when the data i
       "name": "Should a CSV import write directly to production tables?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — validate into a staging table, show a preview with errors, then commit in a transaction with a batch ID on each row."
+        "text": "No - validate into a staging table, show a preview with errors, then commit in a transaction with a batch ID on each row."
       }
     },
     {

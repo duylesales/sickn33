@@ -48,7 +48,7 @@ The need for the practices around them. Version control, tests, a conventions fi
 
 ## Evaluate in an Afternoon
 
-Do not read comparisons. Take a real task from your own project — not a toy — and do it in each candidate.
+Do not read comparisons. Take a real task from your own project - not a toy - and do it in each candidate.
 
 Four things to notice.
 
@@ -66,7 +66,7 @@ An afternoon each, on real work, tells you more than any amount of reading.
 
 The reason not to deliberate: your project is files in a repository, and every one of these tools works with that.
 
-What you would move is a conventions file — which is plain text and works everywhere — and your habits. There is no lock-in and no migration.
+What you would move is a conventions file - which is plain text and works everywhere - and your habits. There is no lock-in and no migration.
 
 So choose the one that feels best after an afternoon, use it for three months, and reconsider if something changes. This is a decision to make quickly and revisit cheaply, which is the opposite of how founders usually treat it.
 
@@ -88,7 +88,7 @@ An editor works inside a codebase that already exists, follows its conventions, 
 
 The natural sequence is to use one and then the other: build the prototype with a builder, take the code into a repository, and continue with an editor once the product exists and the changes are specific. Trying to do the second phase with a builder produces the cost problems described earlier in this series; trying to do the first with an editor is slow.
 
-The founders who find this transition hardest are those who cannot read code, because the editor's mode of working assumes they can. For them, the honest options are to stay with a builder longer, to learn enough to read a diff, or to bring in someone for the production work — which is the point at which most of the founders in this series made the call.
+The founders who find this transition hardest are those who cannot read code, because the editor's mode of working assumes they can. For them, the honest options are to stay with a builder longer, to learn enough to read a diff, or to bring in someone for the production work - which is the point at which most of the founders in this series made the call.
 
 ## The Tool Is Not the Bottleneck for Long
 
@@ -108,19 +108,19 @@ Two shifts are visible enough to plan around, without needing to predict details
 
 Assistants are moving from completing code to completing tasks. Rather than suggesting the next lines, they take a described goal, work across files, run things, read the result and iterate. That changes what the human does: less typing, more specifying and reviewing, and a much greater premium on being able to state precisely what you want and to tell whether you got it.
 
-And the context they can hold is growing, which reduces the problem of a model seeing only part of the picture — the cause of several failures described throughout this series, including the two-file bug that survived three sessions.
+And the context they can hold is growing, which reduces the problem of a model seeing only part of the picture - the cause of several failures described throughout this series, including the two-file bug that survived three sessions.
 
 Both shifts point the same way for a founder deciding what to invest in. The skills that increase in value are specifying clearly, reviewing critically and knowing your own product's rules. The skills that decrease are the mechanical ones the tools now do better.
 
-Which is a reason to put the effort into the things this series keeps returning to — the conventions file, the tests, the decisions log, the review habits — rather than into keeping up with which editor released what. Those artefacts get more useful as the tools get more capable, because a more capable tool follows a clear specification further. A vague one just does more, faster, in a direction nobody chose.
+Which is a reason to put the effort into the things this series keeps returning to - the conventions file, the tests, the decisions log, the review habits - rather than into keeping up with which editor released what. Those artefacts get more useful as the tools get more capable, because a more capable tool follows a clear specification further. A vague one just does more, faster, in a direction nobody chose.
 
 ## Setting This Up
 
-For a founder choosing or switching, this is an afternoon: a real task from your own project attempted in each candidate, noting project understanding, adherence to your conventions, the size of its changes and whether it fits how you work; the terms checked for retention, training and processing location, with a business tier evaluated if you have customer obligations; a conventions file in the repository so whichever tool you choose follows your patterns; and the habits that matter more than the choice — commit before every session, read the diff, one request at a time, a small test suite.
+For a founder choosing or switching, this is an afternoon: a real task from your own project attempted in each candidate, noting project understanding, adherence to your conventions, the size of its changes and whether it fits how you work; the terms checked for retention, training and processing location, with a business tier evaluated if you have customer obligations; a conventions file in the repository so whichever tool you choose follows your patterns; and the habits that matter more than the choice - commit before every session, read the diff, one request at a time, a small test suite.
 
-LaunchStudio works alongside whichever tools founders use, and the practices we set up are deliberately tool-independent. The engineers are Manifera's — eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio works alongside whichever tools founders use, and the practices we set up are deliberately tool-independent. The engineers are Manifera's - eleven years, 120+ engineers, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
-[Ask us to review a week of your AI-assisted changes](https://launchstudio.eu/en/#contact) — the habits show up faster than the tool does.
+[Ask us to review a week of your AI-assisted changes](https://launchstudio.eu/en/#contact) - the habits show up faster than the tool does.
 
 ## Real example
 
@@ -130,16 +130,16 @@ Emiel Vrieze built Keuringsplanner in Cursor: inspection scheduling for lift and
 
 He had spent three months moving between editors. Each time something frustrated him he switched, reasoning that a better tool would produce better results. He had used four, read a great deal of comparison material, and his product had not noticeably improved.
 
-The assessment found that his difficulties were not tool-related. He had no repository for the first two months and had lost work twice. He had no conventions file, so every tool produced code in a different style, which reinforced his impression that the tools were inconsistent. He accepted changes without reading diffs, so unrequested modifications accumulated. He asked broad questions — "improve the scheduling logic" — and then spent several turns correcting large changes. And he had no tests, so he could not tell whether anything he accepted had broken something.
+The assessment found that his difficulties were not tool-related. He had no repository for the first two months and had lost work twice. He had no conventions file, so every tool produced code in a different style, which reinforced his impression that the tools were inconsistent. He accepted changes without reading diffs, so unrequested modifications accumulated. He asked broad questions - "improve the scheduling logic" - and then spent several turns correcting large changes. And he had no tests, so he could not tell whether anything he accepted had broken something.
 
 Two business days: a repository with history and a branch-per-change workflow; a conventions file written from the existing code covering patterns, naming, chosen libraries, four inviolable rules and the product's vocabulary; a test suite of 34 tests covering authorisation across 19 endpoints, the inspection interval calculations and one end-to-end flow; a working practice of committing before each session, reading diffs, and asking for one thing at a time; and a decision to stay on one tool for three months before reconsidering.
 
 **Result:** Emiel stayed with the editor he happened to be using. Over the following quarter he shipped four features he had been unable to complete during the three months of switching, and reports that the conventions file changed the output more than any change of tool had.
 
-> *"I switched four times looking for a tool that would produce consistent code. The inconsistency was mine — I had never written down what consistent meant."*
-> — **Emiel Vrieze, Founder, Keuringsplanner (Ede)**
+> *"I switched four times looking for a tool that would produce consistent code. The inconsistency was mine - I had never written down what consistent meant."*
+> - **Emiel Vrieze, Founder, Keuringsplanner (Ede)**
 
-**Cost & Timeline:** €2,200 (repository and branch workflow, conventions file from existing code, 34-test suite covering authorisation and calculations, working practices established) — completed in 2 business days.
+**Cost & Timeline:** €2,200 (repository and branch workflow, conventions file from existing code, 34-test suite covering authorisation and calculations, working practices established) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -157,7 +157,7 @@ No. Your project is files in a repository and every tool works with that. What m
 
 ### Do they differ in code quality?
 
-Not much for routine work — they use similar models. They share the same failure modes too: missing authorisation, absent error handling, invented interfaces.
+Not much for routine work - they use similar models. They share the same failure modes too: missing authorisation, absent error handling, invented interfaces.
 
 ### What makes the biggest difference to results?
 
@@ -189,7 +189,7 @@ Committing before every session, reading diffs, a conventions file, a small test
       "name": "Is switching AI editors costly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — the project is files in a repository. Only a plain-text conventions file and your habits move with you."
+        "text": "No - the project is files in a repository. Only a plain-text conventions file and your habits move with you."
       }
     },
     {
@@ -197,7 +197,7 @@ Committing before every session, reading diffs, a conventions file, a small test
       "name": "Do AI editors differ in code quality?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Little for routine work, since they use similar models — and they share the same failure modes."
+        "text": "Little for routine work, since they use similar models - and they share the same failure modes."
       }
     },
     {

@@ -39,7 +39,7 @@ A manufacturing company with eighty employees has years of production data in it
 
 ## Why SMEs Matter for AI Employment
 
-Most Dutch businesses are small and medium-sized, and SMEs employ a large share of the workforce. Statistics Netherlands data show that AI adoption among smaller companies lags behind larger companies but is growing. As SMEs digitalise, many will create their first data and AI roles in the coming years — often in regions and sectors that data professionals rarely associate with such work. These roles can offer broad responsibility and visible impact, but only when the organisation is prepared.
+Most Dutch businesses are small and medium-sized, and SMEs employ a large share of the workforce. Statistics Netherlands data show that AI adoption among smaller companies lags behind larger companies but is growing. As SMEs digitalise, many will create their first data and AI roles in the coming years - often in regions and sectors that data professionals rarely associate with such work. These roles can offer broad responsibility and visible impact, but only when the organisation is prepared.
 
 ## Step 1: Assess Readiness Before Hiring
 
@@ -86,7 +86,7 @@ A common successful path is to hire a versatile data analyst or analytics engine
 
 **Business associations and the KVK.** The **Netherlands Chamber of Commerce (KVK)** and associations such as **MKB-Nederland** provide information and events on digitalisation and AI for SMEs.
 
-**AI literacy obligation.** Since February 2025, **Article 4 of the EU AI Act** requires organisations using AI systems to take measures to ensure sufficient AI literacy among staff — a reason to combine a first data hire with broader training.
+**AI literacy obligation.** Since February 2025, **Article 4 of the EU AI Act** requires organisations using AI systems to take measures to ensure sufficient AI literacy among staff - a reason to combine a first data hire with broader training.
 
 ## Step 3: Write a Vacancy That Attracts the Right Candidate
 
@@ -139,7 +139,7 @@ Many SMEs budget only for the salary of the first data hire and are surprised by
 
 **Management time.** The sponsor and domain experts will spend time explaining processes, reviewing results and making decisions. That time is a real investment.
 
-**Contingency for quick wins.** A small budget to implement the first improvements — for example, adjusting a planning process based on a forecast — ensures results actually change something.
+**Contingency for quick wins.** A small budget to implement the first improvements - for example, adjusting a planning process based on a forecast - ensures results actually change something.
 
 Planning these costs upfront prevents a common situation in which a data professional is hired but cannot access the data or tools needed to do the job.
 
@@ -171,7 +171,7 @@ The second company first commissions a student project to map data and test a si
 
 ## A Common Misconception
 
-The most common misconception is that hiring a skilled data scientist automatically creates value. In SMEs, value depends at least as much on data access, a clear problem, an engaged sponsor and realistic expectations. A second misconception is that SMEs cannot compete for data talent. Many data professionals are attracted by broad responsibility, visible impact and working close to home — advantages SMEs can offer.
+The most common misconception is that hiring a skilled data scientist automatically creates value. In SMEs, value depends at least as much on data access, a clear problem, an engaged sponsor and realistic expectations. A second misconception is that SMEs cannot compete for data talent. Many data professionals are attracted by broad responsibility, visible impact and working close to home - advantages SMEs can offer.
 
 ## Key Takeaways
 
@@ -183,14 +183,14 @@ The most common misconception is that hiring a skilled data scientist automatica
 
 ## Where to Start
 
-Write down one business problem you want data to solve, list the data sources involved and identify who will sponsor the work — then decide which first role fits.
+Write down one business problem you want data to solve, list the data sources involved and identify who will sponsor the work - then decide which first role fits.
 
-Post your first AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your first AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: SME owner considering a data scientist) Should an SME hire a data scientist first?
-Not always — if data is scattered or reporting is unreliable, a data analyst or analytics engineer is often a better first hire.
+Not always - if data is scattered or reporting is unreliable, a data analyst or analytics engineer is often a better first hire.
 
 ### (Scenario: company without technical staff) How can we assess data candidates without internal expertise?
 Involve an external reviewer, use a small realistic assignment and focus on communication, pragmatism and questions about data.
@@ -202,18 +202,18 @@ Options include the WBSO R&D tax credit for qualifying projects, the SLIM traini
 A concrete business problem, accessible data, an internal sponsor, time from domain experts, a budget for tools and training and realistic expectations.
 
 ### (Scenario: SME competing with large companies) Can an SME attract good data professionals?
-Yes — broad responsibility, visible impact, short decision lines and a shorter commute appeal to many candidates, especially with a clear vacancy and salary range.
+Yes - broad responsibility, visible impact, short decision lines and a shorter commute appeal to many candidates, especially with a clear vacancy and salary range.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should an SME hire a data scientist first?", "acceptedAnswer": {"@type": "Answer", "text": "Not always — an analyst or analytics engineer is often a better first hire."}},
+    {"@type": "Question", "name": "Should an SME hire a data scientist first?", "acceptedAnswer": {"@type": "Answer", "text": "Not always - an analyst or analytics engineer is often a better first hire."}},
     {"@type": "Question", "name": "How can we assess data candidates without internal expertise?", "acceptedAnswer": {"@type": "Answer", "text": "Use an external reviewer and a small realistic assignment."}},
     {"@type": "Question", "name": "Are there Dutch schemes that support SMEs with data roles?", "acceptedAnswer": {"@type": "Answer", "text": "WBSO, SLIM and SME Digitalisation Workshops may help; check conditions."}},
     {"@type": "Question", "name": "What should we have in place before hiring?", "acceptedAnswer": {"@type": "Answer", "text": "A concrete problem, accessible data, a sponsor, expert time, budget and patience."}},
-    {"@type": "Question", "name": "Can an SME attract good data professionals?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — responsibility, impact and proximity attract many candidates."}}
+    {"@type": "Question", "name": "Can an SME attract good data professionals?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - responsibility, impact and proximity attract many candidates."}}
   ]
 }
 </script>

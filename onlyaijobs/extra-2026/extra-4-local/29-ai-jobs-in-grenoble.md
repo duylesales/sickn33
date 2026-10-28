@@ -68,7 +68,7 @@ Grenoble is a mid-sized city surrounded by mountains, but in science and technol
 | Health technology | Medical imaging, sensors, diagnostics | Medtech companies and hospitals |
 | Research | ML theory, vision, robotics, optimisation | MIAI, Inria, LIG, university labs |
 
-The emphasis on embedded and hardware-efficient AI is particularly distinctive. As AI moves from data centres onto devices — sensors, cars, phones, industrial equipment — the ability to design models that run with limited power and memory becomes valuable. Grenoble's combination of chip expertise and ML research makes it one of Europe's centres for this field.
+The emphasis on embedded and hardware-efficient AI is particularly distinctive. As AI moves from data centres onto devices - sensors, cars, phones, industrial equipment - the ability to design models that run with limited power and memory becomes valuable. Grenoble's combination of chip expertise and ML research makes it one of Europe's centres for this field.
 
 ## Entry Paths for Graduates
 
@@ -78,11 +78,11 @@ The emphasis on embedded and hardware-efficient AI is particularly distinctive. 
 
 **CIFRE PhDs.** The CIFRE scheme lets a company hire a doctoral student whose research is supervised by an academic lab, co-funded by the state. Grenoble's close industry–research links make CIFRE PhDs common, particularly in embedded AI, semiconductors and energy.
 
-**Research engineer positions.** Research institutes hire engineers on project contracts to develop software, run experiments and build prototypes — an excellent first role for graduates who enjoy research but do not want a PhD yet.
+**Research engineer positions.** Research institutes hire engineers on project contracts to develop software, run experiments and build prototypes - an excellent first role for graduates who enjoy research but do not want a PhD yet.
 
 **Junior roles in industry.** Companies hire junior data scientists, ML engineers and embedded software engineers, often from local schools.
 
-**VIE.** The Volontariat International en Entreprise allows young French and EU graduates to work abroad for French companies for a limited period — relevant if you want international experience with a Grenoble employer.
+**VIE.** The Volontariat International en Entreprise allows young French and EU graduates to work abroad for French companies for a limited period - relevant if you want international experience with a Grenoble employer.
 
 ## Language
 
@@ -96,7 +96,7 @@ Grenoble sits at the foot of the Alps, surrounded by the Chartreuse, Vercors and
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each at its exact address with the distance from your home. Applications go directly to the employer's own page, no account is needed to browse and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Grenoble you will find few or no local vacancies there today. Use university career services, school job boards (Ensimag and Grenoble INP are well connected to industry), French job portals, APEC for graduate-level roles and research institute vacancy pages as primary sources. OnlyAIJobs is useful if you are considering the Netherlands — whose semiconductor and high-tech region around Eindhoven has much in common with Grenoble, and where employers such as Holland Innovative, Cegeka and Accenture list AI roles — and as a model for searching by category and real commute. Grenoble employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Grenoble you will find few or no local vacancies there today. Use university career services, school job boards (Ensimag and Grenoble INP are well connected to industry), French job portals, APEC for graduate-level roles and research institute vacancy pages as primary sources. OnlyAIJobs is useful if you are considering the Netherlands - whose semiconductor and high-tech region around Eindhoven has much in common with Grenoble, and where employers such as Holland Innovative, Cegeka and Accenture list AI roles - and as a model for searching by category and real commute. Grenoble employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Embedded AI: Skills Worth Building
 
@@ -106,14 +106,14 @@ If Grenoble's embedded AI focus interests you, these skills will make you stand 
 - **Hardware awareness:** understanding memory hierarchies, accelerators, energy consumption and how neural network operations map to hardware.
 - **Programming for constrained devices:** C and C++, embedded toolchains and frameworks for deploying models on microcontrollers and edge processors.
 - **Neural architecture search and efficient architectures:** designing models that balance accuracy with latency and energy.
-- **Signal processing:** many edge applications process sensor signals — audio, vibration, radar or images.
+- **Signal processing:** many edge applications process sensor signals - audio, vibration, radar or images.
 - **Evaluation under constraints:** measuring accuracy, latency and energy together, and understanding trade-offs.
 
-Student projects that deploy a model on a real low-power device — for example keyword spotting on a microcontroller or anomaly detection on sensor data — are strong portfolio items for Grenoble employers.
+Student projects that deploy a model on a real low-power device - for example keyword spotting on a microcontroller or anomaly detection on sensor data - are strong portfolio items for Grenoble employers.
 
 ## AI in Semiconductor Manufacturing
 
-Semiconductor fabs are among the most complex manufacturing environments in the world. Hundreds of process steps, extremely tight tolerances and expensive equipment generate vast amounts of data. Machine learning helps in several ways: predicting yield from process measurements, detecting defects in wafer images, identifying the root causes of process drift, scheduling equipment maintenance and optimising process recipes. Data scientists work closely with process engineers, and domain knowledge is essential. For graduates, a role in a fab offers intensive learning about a strategically important industry — Europe's efforts to strengthen its semiconductor capabilities, including through the European Chips Act, underline its importance.
+Semiconductor fabs are among the most complex manufacturing environments in the world. Hundreds of process steps, extremely tight tolerances and expensive equipment generate vast amounts of data. Machine learning helps in several ways: predicting yield from process measurements, detecting defects in wafer images, identifying the root causes of process drift, scheduling equipment maintenance and optimising process recipes. Data scientists work closely with process engineers, and domain knowledge is essential. For graduates, a role in a fab offers intensive learning about a strategically important industry - Europe's efforts to strengthen its semiconductor capabilities, including through the European Chips Act, underline its importance.
 
 ## Scientific Data at the Research Facilities
 
@@ -125,7 +125,7 @@ Grenoble has a long history in hydroelectric power and electrical engineering, a
 
 ## Preparing Your Applications
 
-French employers expect a concise CV (one page for graduates), a motivation letter tailored to the company and, for internships and work-study, clear information on dates and duration. Highlight projects and internships with concrete results. In interviews, expect questions about your technical choices, your understanding of the company's domain and your motivation for the specific role. For research positions, prepare to discuss your academic projects in depth and to show curiosity about the lab's work. School and university career services in Grenoble offer CV reviews and interview practice — use them.
+French employers expect a concise CV (one page for graduates), a motivation letter tailored to the company and, for internships and work-study, clear information on dates and duration. Highlight projects and internships with concrete results. In interviews, expect questions about your technical choices, your understanding of the company's domain and your motivation for the specific role. For research positions, prepare to discuss your academic projects in depth and to show curiosity about the lab's work. School and university career services in Grenoble offer CV reviews and interview practice - use them.
 
 ## Student Life and Networking
 
@@ -133,11 +133,11 @@ Grenoble's large student population and research community create many opportuni
 
 ## Understanding French Graduate Offers
 
-When you receive your first job offer in France, a few elements are worth understanding. The contract type — a permanent CDI or a fixed-term CDD — affects stability and access to housing and loans, since landlords often prefer CDI holders. Engineering graduates are usually hired with executive (cadre) status, which often comes with a days-based working-time arrangement and additional rest days (RTT). Salaries are expressed as annual gross amounts, sometimes including a thirteenth month; net pay is lower after social contributions. Many employers apply a collective agreement, such as the Syntec agreement for engineering and IT services or the metallurgy agreement for industry, which sets minimum conditions. Benefits commonly include meal vouchers or a subsidised canteen, supplementary health insurance, reimbursement of half the cost of public transport passes and sometimes profit-sharing schemes.
+When you receive your first job offer in France, a few elements are worth understanding. The contract type - a permanent CDI or a fixed-term CDD - affects stability and access to housing and loans, since landlords often prefer CDI holders. Engineering graduates are usually hired with executive (cadre) status, which often comes with a days-based working-time arrangement and additional rest days (RTT). Salaries are expressed as annual gross amounts, sometimes including a thirteenth month; net pay is lower after social contributions. Many employers apply a collective agreement, such as the Syntec agreement for engineering and IT services or the metallurgy agreement for industry, which sets minimum conditions. Benefits commonly include meal vouchers or a subsidised canteen, supplementary health insurance, reimbursement of half the cost of public transport passes and sometimes profit-sharing schemes.
 
 ## Your First Two Years
 
-Use your first years to build deep expertise in one domain — embedded AI, manufacturing data, energy or scientific data — while strengthening engineering fundamentals: clean code, testing, version control and working with hardware or process engineers. Keep in touch with your school and lab, because Grenoble's ecosystem rewards people who move between research and industry. And take advantage of the mountains: the work-life balance is one of the city's greatest assets.
+Use your first years to build deep expertise in one domain - embedded AI, manufacturing data, energy or scientific data - while strengthening engineering fundamentals: clean code, testing, version control and working with hardware or process engineers. Keep in touch with your school and lab, because Grenoble's ecosystem rewards people who move between research and industry. And take advantage of the mountains: the work-life balance is one of the city's greatest assets.
 
 ## Beyond Grenoble: The Auvergne-Rhône-Alpes Region
 
@@ -153,7 +153,7 @@ Pick three labs and three companies in Grenoble, attend one of their events, app
 
 An Ensimag student specialising in data science completed her final internship at a research institute working on compressing neural networks for low-power chips. She enjoyed the combination of ML and hardware constraints, but hesitated between a data science job in Paris and staying in Grenoble.
 
-She was offered a CIFRE PhD with a semiconductor company, supervised by a university lab, on hardware-aware neural architecture search. She compared the options: the Paris job paid more immediately, but the CIFRE PhD offered a salary, deep expertise in a growing field and strong connections to industry. She chose the PhD. Three years later, she joined the company's AI team as an engineer specialising in edge AI — a profile that is in demand across Europe.
+She was offered a CIFRE PhD with a semiconductor company, supervised by a university lab, on hardware-aware neural architecture search. She compared the options: the Paris job paid more immediately, but the CIFRE PhD offered a salary, deep expertise in a growing field and strong connections to industry. She chose the PhD. Three years later, she joined the company's AI team as an engineer specialising in edge AI - a profile that is in demand across Europe.
 
 ## Key Takeaways
 

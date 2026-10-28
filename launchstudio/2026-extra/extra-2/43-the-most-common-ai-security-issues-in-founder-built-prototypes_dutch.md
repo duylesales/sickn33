@@ -65,11 +65,11 @@ Manifera's audits voor verificatie en authenticatie worden uitgevoerd door het e
 
 Een verificatiecode die nooit vervalt of onbeperkt kan worden geraden, is een open uitnodiging voor geautomatiseerde brute-force aanvallen. Een effectieve beveiliging balanceert robuuste bescherming met een frictieloze ervaring voor de eerlijke gebruiker:
 
-- **Stel een strikte vervaltermijn in op elke code** — een numerieke verificatiecode (OTP) via e-mail of sms moet binnen 5 tot maximaal 10 minuten vervallen. Een code die uren of dagen geldig blijft, geeft kwaadwillenden veel te veel tijd voor geautomatiseerde aanvalspogingen.
-- **Beperk het aantal pogingen per sessie** — sta maximaal 3 tot 5 invoerpogingen toe per gegenereerde code. Zodra die drempel wordt overschreden, moet de code definitief ongeldig worden gemaakt en moet de gebruiker een nieuwe code aanvragen.
-- **Hanteer een afkoelperiode tussen nieuwe aanvragen (rate limiting)** — voorkom dat een gebruiker (of script) elke seconde een nieuwe verificatie-e-mail of sms kan triggeren door minimaal 60 seconden wachttijd af te dwingen tussen opeenvolgende verzoeken. Dit beschermt ook direct tegen torenhoge sms-kosten.
-- **Maak eerdere codes direct ongeldig zodra een nieuwe wordt aangevraagd** — er mag op elk moment slechts één actieve verificatiecode per actie bestaan. Als een gebruiker op 'Opnieuw verzenden' klikt, moet de vorige code per direct onbruikbaar worden.
-- **Bied duidelijke foutmeldingen zonder gevoelige details te lekken** — vertel de gebruiker duidelijk wanneer een code is verlopen of dat het maximaal aantal pogingen is bereikt, met een heldere optie om een nieuwe code aan te vragen.
+- **Stel een strikte vervaltermijn in op elke code** - een numerieke verificatiecode (OTP) via e-mail of sms moet binnen 5 tot maximaal 10 minuten vervallen. Een code die uren of dagen geldig blijft, geeft kwaadwillenden veel te veel tijd voor geautomatiseerde aanvalspogingen.
+- **Beperk het aantal pogingen per sessie** - sta maximaal 3 tot 5 invoerpogingen toe per gegenereerde code. Zodra die drempel wordt overschreden, moet de code definitief ongeldig worden gemaakt en moet de gebruiker een nieuwe code aanvragen.
+- **Hanteer een afkoelperiode tussen nieuwe aanvragen (rate limiting)** - voorkom dat een gebruiker (of script) elke seconde een nieuwe verificatie-e-mail of sms kan triggeren door minimaal 60 seconden wachttijd af te dwingen tussen opeenvolgende verzoeken. Dit beschermt ook direct tegen torenhoge sms-kosten.
+- **Maak eerdere codes direct ongeldig zodra een nieuwe wordt aangevraagd** - er mag op elk moment slechts één actieve verificatiecode per actie bestaan. Als een gebruiker op 'Opnieuw verzenden' klikt, moet de vorige code per direct onbruikbaar worden.
+- **Bied duidelijke foutmeldingen zonder gevoelige details te lekken** - vertel de gebruiker duidelijk wanneer een code is verlopen of dat het maximaal aantal pogingen is bereikt, met een heldere optie om een nieuwe code aan te vragen.
 
 Deze beschermende maatregelen worden geïmplementeerd in de backend-validatielogica en vereisen geen ingrijpende verandering in het uiterlijk van uw inlog- of bevestigingsscherm.
 
@@ -84,9 +84,9 @@ Een medewerker van de locatie merkte een onbekende naam op die binnen enkele min
 **Resultaat:** LaunchStudio voegde pogingsbeperking en een redelijk vervalvenster toe aan het incheckcodesysteem, samen met consistente, niet-informatieve mislukkingsreacties. Dit sloot de kloof zonder merkbare wrijving toe te voegen voor oprechte deelnemers die normaal inchecken.
 
 > *"We dachten oprecht dat incheckcodes een gemaksvoorziening met lage belangen waren, niet iets dat dezelfde controle nodig had als een inlogwachtwoord. Het bleek dat het onderliggende risico vergelijkbaarder was dan ik verwacht had."*
-> — **Esmee Kramers, Oprichter, EventGrip (Capelle aan den IJssel)**
+> - **Esmee Kramers, Oprichter, EventGrip (Capelle aan den IJssel)**
 
-**Kosten en tijdlijn:** € 1.700 (snelheidsbeperking en vervalimplementatie voor verificatiecodes) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.700 (snelheidsbeperking en vervalimplementatie voor verificatiecodes) - voltooid in 6 werkdagen.
 
 ---
 
@@ -94,19 +94,19 @@ Een medewerker van de locatie merkte een onbekende naam op die binnen enkele min
 
 ### Zou een authenticatie-ingenieur het ontbreken van een vervaltermijn op verificatiecodes beschouwen als een ernstig ontwerplek?
 
-Ja, zonder twijfel — een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat.
+Ja, zonder twijfel - een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat.
 
 ### Geldt dit risico alleen voor sms- en e-mailverificatie, of ook voor andere tijdelijke tokens?
 
 Het geldt voor elk type eenmalig token: links voor het opnieuw instellen van een wachtwoord, e-mailbevestigingstokens, uitnodigingscodes en API-sessietokens. Elk tijdelijk geheim moet een strikte vervaltijd hebben en na gebruik of overschrijding van het aantal pogingen direct worden vernietigd.
 
-### Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren — hoe beïnvloedt die ervaring de omgang met OTP-codes?
+### Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren - hoe beïnvloedt die ervaring de omgang met OTP-codes?
 
 In gereguleerde sectoren zijn cryptografisch veilige random generators, strikte rate limiting per IP en per gebruikersaccount, en onmiddellijke invalidatie na gebruik wettelijke verplichtingen. Manifera past deze beproefde standaarden standaard toe op elk prototype dat doorgroeit naar productie.
 
 ### Is dit een van de architectuurkloven die volgens Herre Roelevink onzichtbaar blijven tijdens normale gebruikerstests?
 
-Exact — tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt.
+Exact - tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt.
 
 ### Wat is de aanbevolen geldigheidstermijn voor een e-mail- of sms-verificatiecode?
 
@@ -122,7 +122,7 @@ Een geldigheid van 5 tot maximaal 10 minuten, gecombineerd met een limiet van ma
       "name": "Zou een authenticatie-ingenieur het ontbreken van een vervaltermijn op verificatiecodes beschouwen als een ernstig ontwerplek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, zonder twijfel — een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat."
+        "text": "Ja, zonder twijfel - een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat."
       }
     },
     {
@@ -135,7 +135,7 @@ Een geldigheid van 5 tot maximaal 10 minuten, gecombineerd met een limiet van ma
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren — hoe beïnvloedt die ervaring de omgang met OTP-codes?",
+      "name": "Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren - hoe beïnvloedt die ervaring de omgang met OTP-codes?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In gereguleerde sectoren zijn cryptografisch veilige random generators, strikte rate limiting per IP en per gebruikersaccount, en onmiddellijke invalidatie na gebruik wettelijke verplichtingen. Manifera past deze beproefde standaarden standaard toe op elk prototype dat doorgroeit naar productie."
@@ -146,7 +146,7 @@ Een geldigheid van 5 tot maximaal 10 minuten, gecombineerd met een limiet van ma
       "name": "Is dit een van de architectuurkloven die volgens Herre Roelevink onzichtbaar blijven tijdens normale gebruikerstests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Exact — tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt."
+        "text": "Exact - tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt."
       }
     },
     {

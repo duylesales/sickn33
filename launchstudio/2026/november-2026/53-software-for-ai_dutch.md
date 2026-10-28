@@ -35,7 +35,7 @@ Elk decennium maakt software-engineering een tektonische verschuiving door in ha
 
 In 2026 vereist het ontwikkelen van software voor AI een fundamenteel nieuwe architectuur. Het draaien van een drukbezochte AI-applicatie op een traditionele REST-API en een standaard relationele database leidt onherroepelijk tot trage reactietijden, torenhoge cloudkosten en ernstige kwetsbaarheden.
 
-Wie als CTO een nieuw AI-product ontwerpt — of een bestaande applicatie moderniseert — moet de **AI-Native Enterprise Stack** omarmen. Deze stack is specifiek ontworpen voor meerdimensionale vectorwiskunde, niet-deterministische agent-routering en realtime gestreamde Generatieve UI.
+Wie als CTO een nieuw AI-product ontwerpt - of een bestaande applicatie moderniseert - moet de **AI-Native Enterprise Stack** omarmen. Deze stack is specifiek ontworpen voor meerdimensionale vectorwiskunde, niet-deterministische agent-routering en realtime gestreamde Generatieve UI.
 
 ## De 4 Pijlers van de Enterprise AI-Stack
 
@@ -98,9 +98,9 @@ In een intensieve sprint van 14 werkdagen verving het Manifera-team de backend-a
 **Resultaat:** Het platform stabiliseerde direct. De nieuwe Edge-architectuur verwerkte de week daarop 50.000 gelijktijdige studenten met nul time-outs. Door de semantische cache en failover-gateway daalden Maria's API-kosten met 45% en zakte de ervaren latentie voor studenten van 15 seconden naar 200 milliseconden.
 
 > *"We probeerden AI door de leidingen van een traditionele web-app te persen en de leidingen barstten. LaunchStudio schreef niet zomaar wat code; ze installeerden een compleet nieuwe, AI-native infrastructuur. Ze gaven ons de motor die nodig was om enterprise-schaal te overleven."*
-> — **Maria Costa, CTO, StudyMind (Barcelona)**
+> - **Maria Costa, CTO, StudyMind (Barcelona)**
 
-**Kosten & Doorlooptijd:** €19.500 (Launch & Grow Pakket met AI Infrastructuur Migratie Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €19.500 (Launch & Grow Pakket met AI Infrastructuur Migratie Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

@@ -1,8 +1,8 @@
-🚨 Tomas's recruiter filtered to 43 dormant contacts, ticked select-all, and hit delete. Select-all had actually grabbed every contact id the frontend had loaded — 214 records, including active clients on other pages. 😳
+🚨 Tomas's recruiter filtered to 43 dormant contacts, ticked select-all, and hit delete. Select-all had actually grabbed every contact id the frontend had loaded - 214 records, including active clients on other pages. 😳
 
 Founders ship bulk actions as a checkbox column and a delete button. Here's why that's the riskiest control in most products: 🧠
 
-❌ Select-all was ambiguous — it looked like it meant the 43 filtered rows and actually meant every id the page had loaded
+❌ Select-all was ambiguous - it looked like it meant the 43 filtered rows and actually meant every id the page had loaded
 ❌ "Are you sure?" told her nothing about the real number about to be affected
 ❌ The deletion ran inside the request, timed out at 180 of 214 records, and she clicked delete again on what remained
 ❌ Related notes and placement history vanished through cascade rules nobody had reviewed

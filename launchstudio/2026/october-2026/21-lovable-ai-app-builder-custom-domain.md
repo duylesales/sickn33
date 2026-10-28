@@ -11,7 +11,7 @@ You just spent the weekend prompting the Lovable AI app builder. The result is s
 
 But right now, your masterpiece lives on a URL that looks something like `preview-xyz123.lovable.app`.
 
-You cannot pitch an investor or ask a customer to enter their credit card on a generated preview link. To become a real business, your app needs to live on `yourstartup.com`. For non-technical founders, bridging the gap between an AI sandbox and a live custom domain is incredibly intimidating. It involves DNS records, A records, CNAMEs, and deployment pipelines. None of this is visible or explained inside the Lovable interface itself — the tool's job ends at generating your code, not at putting it on the internet under your own brand. Here is the reality of deploying your Lovable AI app to a custom domain, and how to do it safely.
+You cannot pitch an investor or ask a customer to enter their credit card on a generated preview link. To become a real business, your app needs to live on `yourstartup.com`. For non-technical founders, bridging the gap between an AI sandbox and a live custom domain is incredibly intimidating. It involves DNS records, A records, CNAMEs, and deployment pipelines. None of this is visible or explained inside the Lovable interface itself - the tool's job ends at generating your code, not at putting it on the internet under your own brand. Here is the reality of deploying your Lovable AI app to a custom domain, and how to do it safely.
 
 ## The Deployment Reality Check
 
@@ -27,37 +27,37 @@ Pushing to GitHub is mandatory if you want a professional setup. A GitHub reposi
 
 Your custom domain is just an address; it needs a house to point to. For Lovable-generated React apps, traditional shared hosting (like GoDaddy or Bluehost) is a terrible choice. Those servers are designed for WordPress, not modern JavaScript frameworks.
 
-You need a modern edge-hosting provider like Vercel or Netlify. These platforms are designed to take your GitHub repository, build the React code, and distribute it across global servers so your app loads instantly whether the user is in Amsterdam or New York. They also handle the build step automatically — every time new code lands on your main branch, the platform compiles it fresh, rather than you manually running a build command and uploading the output.
+You need a modern edge-hosting provider like Vercel or Netlify. These platforms are designed to take your GitHub repository, build the React code, and distribute it across global servers so your app loads instantly whether the user is in Amsterdam or New York. They also handle the build step automatically - every time new code lands on your main branch, the platform compiles it fresh, rather than you manually running a build command and uploading the output.
 
 ### 3. The DNS Configuration Nightmare
 
 This is where most non-technical founders get stuck. Once your app is on Vercel, you must configure your domain registrar (where you bought `yourstartup.com`).
 
-You have to log into your registrar, find the DNS (Domain Name System) settings, delete the default parking records, and add specific `A` records and `CNAME` records provided by Vercel. If you make a typo here, your website goes offline, and DNS propagation delays mean you might not realize it is fixed for another 24 hours, because DNS changes cache across the internet at every level — your ISP, intermediate resolvers, even your own browser — and there is no single "refresh" button that clears all of them instantly. Furthermore, you must ensure an SSL certificate is generated so your site loads over secure `HTTPS`, and that certificate needs to auto-renew every 90 days without you having to remember to do anything.
+You have to log into your registrar, find the DNS (Domain Name System) settings, delete the default parking records, and add specific `A` records and `CNAME` records provided by Vercel. If you make a typo here, your website goes offline, and DNS propagation delays mean you might not realize it is fixed for another 24 hours, because DNS changes cache across the internet at every level - your ISP, intermediate resolvers, even your own browser - and there is no single "refresh" button that clears all of them instantly. Furthermore, you must ensure an SSL certificate is generated so your site loads over secure `HTTPS`, and that certificate needs to auto-renew every 90 days without you having to remember to do anything.
 
 Registrars also differ meaningfully in how they expose these settings. A domain bought through a Dutch registrar like TransIP behaves differently from one bought through GoDaddy or Namecheap, and some registrars require you to explicitly disable "domain parking" or "forwarding" features before your new DNS records will even take effect. None of this is documented anywhere Lovable shows you, because it happens entirely outside the AI tool's scope.
 
 ### 4. What Happens When You Actually Need Two Domains
 
-A detail non-technical founders rarely anticipate: most real businesses eventually need more than one domain-related decision. You'll want `www.yourstartup.com` to redirect cleanly to `yourstartup.com` (or vice versa) rather than serving as two separate, confusing versions of your site to search engines. You may want a subdomain like `app.yourstartup.com` for the logged-in product while `yourstartup.com` itself hosts a separate marketing page. Each of these choices has its own DNS and redirect configuration, and getting them wrong doesn't just look unprofessional — it can silently split your SEO authority across multiple URLs that Google treats as competing rather than as one site.
+A detail non-technical founders rarely anticipate: most real businesses eventually need more than one domain-related decision. You'll want `www.yourstartup.com` to redirect cleanly to `yourstartup.com` (or vice versa) rather than serving as two separate, confusing versions of your site to search engines. You may want a subdomain like `app.yourstartup.com` for the logged-in product while `yourstartup.com` itself hosts a separate marketing page. Each of these choices has its own DNS and redirect configuration, and getting them wrong doesn't just look unprofessional - it can silently split your SEO authority across multiple URLs that Google treats as competing rather than as one site.
 
 ### 5. Preview Deployments vs. the Live Site
 
-Once you're on a real hosting platform, every push to a non-main branch (or every pull request, if you're working with a developer) can generate its own preview URL — a fully working copy of your app that isn't yet visible to the public. This is genuinely useful: it lets you or a collaborator check that a Lovable-generated change looks right before it goes live on `yourstartup.com`. But it's also a common source of confusion for non-technical founders, who sometimes share a preview URL with an investor by mistake, or panic when a preview deployment fails to build while the actual live site is completely unaffected. Understanding the difference between "a preview exists" and "the production site changed" is a small piece of knowledge that saves a lot of unnecessary panic once your deployment pipeline is live.
+Once you're on a real hosting platform, every push to a non-main branch (or every pull request, if you're working with a developer) can generate its own preview URL - a fully working copy of your app that isn't yet visible to the public. This is genuinely useful: it lets you or a collaborator check that a Lovable-generated change looks right before it goes live on `yourstartup.com`. But it's also a common source of confusion for non-technical founders, who sometimes share a preview URL with an investor by mistake, or panic when a preview deployment fails to build while the actual live site is completely unaffected. Understanding the difference between "a preview exists" and "the production site changed" is a small piece of knowledge that saves a lot of unnecessary panic once your deployment pipeline is live.
 
 ## The "Last Mile" Partner for Lovable Founders
 
 If terms like "GitHub pipelines," "CNAME propagation," and "SSL provisioning" make you want to close your laptop, you are not alone. You used Lovable to avoid learning infrastructure engineering.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
-This is why [LaunchStudio](https://launchstudio.eu/en/) exists. Backed by [Manifera's](https://www.manifera.com/) enterprise engineering team — with offices in Amsterdam, Singapore, and Ho Chi Minh City and a [portfolio](https://www.manifera.com/portfolio/) spanning 160+ delivered projects — we handle the "last mile" of your AI startup journey.
+This is why [LaunchStudio](https://launchstudio.eu/en/) exists. Backed by [Manifera's](https://www.manifera.com/) enterprise engineering team - with offices in Amsterdam, Singapore, and Ho Chi Minh City and a [portfolio](https://www.manifera.com/portfolio/) spanning 160+ delivered projects - we handle the "last mile" of your AI startup journey.
 
 With our "Launch Ready" package, you simply grant us access to your Lovable GitHub repository. We do the rest. We set up the Vercel hosting environment, securely configure the complex DNS records to link your custom domain (including the www/apex and subdomain decisions most founders never think to make), provision your SSL certificates, and ensure your app is live, fast, and secure.
 
 More importantly, we set up a Continuous Integration (CI) pipeline. This means when you go back into Lovable AI to tweak a button color next week, that change will automatically sync to your live custom domain without you ever having to touch a server.
 
-For a pure frontend deployment — no complex backend, no payment gateway to wire up — LaunchStudio typically has your custom domain live, secured, and connected to your Lovable codebase in 2 to 4 business days. If your app also needs a database, authentication, or payments, that timeline extends to our standard 1 to 3 week Launch Ready window, since those pieces require their own security review on top of the domain and hosting work.
+For a pure frontend deployment - no complex backend, no payment gateway to wire up - LaunchStudio typically has your custom domain live, secured, and connected to your Lovable codebase in 2 to 4 business days. If your app also needs a database, authentication, or payments, that timeline extends to our standard 1 to 3 week Launch Ready window, since those pieces require their own security review on top of the domain and hosting work.
 
 ## Key Takeaways
 
@@ -83,7 +83,7 @@ Crucially, we fixed his broken DNS settings, correctly pointing his `A` and `CNA
 
 **Result:** Within 48 hours, Thomas's app was live at `https://snelwaarderen.nl`. Furthermore, because we set up a continuous deployment pipeline, Thomas was able to use Lovable a week later to add a new "Contact Agent" button. As soon as he clicked save in Lovable, the button magically appeared on his live custom domain 30 seconds later. *"I was pulling my hair out over DNS records. LaunchStudio made my app real in two days, and now I just focus on my business."*
 
-**Cost & Timeline:** €900 (Basic Launch Ready package for frontend deployment) — completed in 2 business days.
+**Cost & Timeline:** €900 (Basic Launch Ready package for frontend deployment) - completed in 2 business days.
 
 ---
 

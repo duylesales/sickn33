@@ -67,7 +67,7 @@ The rules change periodically, including on agency work specifically, so verify 
 
 ## The Phase System, in Plain Terms
 
-Agency employment in the Netherlands is structured in phases. In the early phase, the arrangement is the most flexible: an **agency clause** may apply, meaning the contract can end when the assignment ends, and there is little notice on either side. As you accumulate time, you progress to phases with more security — a sequence of fixed-term contracts, and eventually an open-ended arrangement with the agency.
+Agency employment in the Netherlands is structured in phases. In the early phase, the arrangement is the most flexible: an **agency clause** may apply, meaning the contract can end when the assignment ends, and there is little notice on either side. As you accumulate time, you progress to phases with more security - a sequence of fixed-term contracts, and eventually an open-ended arrangement with the agency.
 
 Two practical consequences follow. First, early-phase agency work is genuinely insecure: an assignment ending can mean employment ending, quickly. Second, time accrues, so it matters whether previous work with the same agency or at the same client counts towards your position. Ask explicitly which phase you would start in, what the current durations are, and what happens at each transition.
 
@@ -89,8 +89,8 @@ Two practical consequences follow. First, early-phase agency work is genuinely i
 
 - **It is a genuine route in.** Some employers hire almost exclusively through a trial period on an agency contract, particularly for career changers, and convert afterwards. If that is the pattern, ask how often conversion actually happens.
 - **You are new to the Dutch market** and need first local experience and references.
-- **You want flexibility yourself** — a defined period, a project, a bridge between roles.
-- **The work is genuinely temporary** — parental leave cover, a project with an end date — and the client is honest about it.
+- **You want flexibility yourself** - a defined period, a project, a bridge between roles.
+- **The work is genuinely temporary** - parental leave cover, a project with an end date - and the client is honest about it.
 - **The equal terms position is clear and in writing.**
 
 ## When to Push for Direct Employment
@@ -106,7 +106,7 @@ Asking is normal. A reasonable question is simply: is direct employment possible
 
 ## Questions to Ask Before Signing
 
-- **Which arrangement is this exactly — agency, payroll or secondment?**
+- **Which arrangement is this exactly - agency, payroll or secondment?**
 - **Which collective agreement applies, and which phase do I start in?**
 - **Which employment terms are matched to the client's own employees, and which are not?**
 - **What happens if the client ends the assignment early?**
@@ -117,7 +117,7 @@ Asking is normal. A reasonable question is simply: is direct employment possible
 
 ## How to Use the Arrangement Well If You Take It
 
-Get the conversion conversation on the calendar from the start, with a date rather than a vague intention. Perform as an employee rather than as a guest — ask to join the team's rituals, reviews and knowledge sessions, since exclusion is usually administrative rather than deliberate. Keep your own record of what you build, because agency workers are frequently left out of formal evaluation processes and you will need the evidence. And keep an eye on the market throughout, since the arrangement's flexibility runs in both directions.
+Get the conversion conversation on the calendar from the start, with a date rather than a vague intention. Perform as an employee rather than as a guest - ask to join the team's rituals, reviews and knowledge sessions, since exclusion is usually administrative rather than deliberate. Keep your own record of what you build, because agency workers are frequently left out of formal evaluation processes and you will need the evidence. And keep an eye on the market throughout, since the arrangement's flexibility runs in both directions.
 
 ## Spotting the Arrangement Before the Offer Stage
 
@@ -131,7 +131,7 @@ Vacancies do not always make this clear, and candidates frequently reach the off
 
 **Who conducts the interviews.** An initial conversation with a consultant, followed by a meeting with the actual manager, is the standard intermediary pattern.
 
-The question to ask in the first conversation is simply: who would my employment contract be with, and which collective agreement applies? It is a normal question, it costs nothing, and the answer determines everything in this article. A recruiter who is vague about it is worth pressing, because the difference between agency work and payroll employment carries real consequences for your terms — and the person arranging it should be able to say which one this is.
+The question to ask in the first conversation is simply: who would my employment contract be with, and which collective agreement applies? It is a normal question, it costs nothing, and the answer determines everything in this article. A recruiter who is vague about it is worth pressing, because the difference between agency work and payroll employment carries real consequences for your terms - and the person arranging it should be able to say which one this is.
 
 ## Real example
 
@@ -157,7 +157,7 @@ At ten months he is offered a direct contract. His conclusion is that the agency
 
 ## Where to Start
 
-Vacancies rarely state whether the contract is direct or through an intermediary, so ask early — and check which employers near you are hiring directly for comparable work.
+Vacancies rarely state whether the contract is direct or through an intermediary, so ask early - and check which employers near you are hiring directly for comparable work.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -186,7 +186,7 @@ Ask how many placed workers were converted last year, agree a review date in wri
     {"@type": "Question", "name": "Is an agency contract worse than direct employment?", "acceptedAnswer": {"@type": "Answer", "text": "Less secure and often different on secondary terms, but a viable route into a first Dutch role."}},
     {"@type": "Question", "name": "Am I entitled to the same pay as the client's own staff?", "acceptedAnswer": {"@type": "Answer", "text": "In principle yes under the Waadi, and payroll employees are broadly entitled to the client's terms."}},
     {"@type": "Question", "name": "What happens if the assignment ends early?", "acceptedAnswer": {"@type": "Answer", "text": "With an agency clause in the early phase, employment can end with the assignment at short notice."}},
-    {"@type": "Question", "name": "Does an agency contract affect a mortgage?", "acceptedAnswer": {"@type": "Answer", "text": "Usually — lenders are more cautious, though a declaration of intent can help."}},
+    {"@type": "Question", "name": "Does an agency contract affect a mortgage?", "acceptedAnswer": {"@type": "Answer", "text": "Usually - lenders are more cautious, though a declaration of intent can help."}},
     {"@type": "Question", "name": "How do I improve the chance of a direct contract?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about past conversions, agree a review date in writing and keep evidence of your work."}}
   ]
 }

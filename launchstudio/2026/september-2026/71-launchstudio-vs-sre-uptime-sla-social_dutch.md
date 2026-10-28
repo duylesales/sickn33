@@ -1,6 +1,6 @@
-⏱️ Sten beloofde een zorggroep 99,5% uptime — hij gebruikte **Cursor** om de planningsassistent te bouwen, maar had niets op de achtergrond draaien om dat cijfer daadwerkelijk te bewijzen. 🚨
+⏱️ Sten beloofde een zorggroep 99,5% uptime - hij gebruikte **Cursor** om de planningsassistent te bouwen, maar had niets op de achtergrond draaien om dat cijfer daadwerkelijk te bewijzen. 🚨
 
-Als uw eerste enterprise-SLA binnenkomt voordat u een Site Reliability Engineer heeft aangenomen, is een wervingscyclus van 3 tot 6 maanden geen optie — het contract vereist betrouwbare infrastructuur nu, niet volgend kwartaal.
+Als uw eerste enterprise-SLA binnenkomt voordat u een Site Reliability Engineer heeft aangenomen, is een wervingscyclus van 3 tot 6 maanden geen optie - het contract vereist betrouwbare infrastructuur nu, niet volgend kwartaal.
 
 ❌ Geen gestructureerde uptime-monitoring of klantspecifieke statuspagina
 ❌ Geen alarmering gekoppeld aan Slack, zodat storingen worden ontdekt via boze e-mails in plaats van een dashboard
@@ -12,7 +12,7 @@ Als uw eerste enterprise-SLA binnenkomt voordat u een Site Reliability Engineer 
 
 Bij **LaunchStudio** overbruggen we exact deze kloof sinds 2014 via Manifera, verspreid over 160+ opgeleverde projecten. 🛡️
 
-Stens platform behaalde 99,7% uptime gedurende de daaropvolgende twee maanden, geverifieerd via een dashboard dat hij rechtstreeks aan procurement overhandigde (€3.600 (Relaunch & Scale Pakket) — voltooid in 10 werkdagen). 🚀
+Stens platform behaalde 99,7% uptime gedurende de daaropvolgende twee maanden, geverifieerd via een dashboard dat hij rechtstreeks aan procurement overhandigde (€3.600 (Relaunch & Scale Pakket) - voltooid in 10 werkdagen). 🚀
 
 👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/launchstudio-vs-sre-uptime-sla
 

@@ -21,11 +21,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Schiedam heeft een lange traditie in distilleerderijen en voedingsmiddelenproductie, en die traditie levert een eigen soort datawerk op — kwaliteitscontrole en procesoptimalisatie in productieomgevingen — dat inhoudelijk verschilt van de havengerelateerde logistiek waar Rotterdam om bekendstaat, ondanks de korte afstand ertussen.
+Schiedam heeft een lange traditie in distilleerderijen en voedingsmiddelenproductie, en die traditie levert een eigen soort datawerk op - kwaliteitscontrole en procesoptimalisatie in productieomgevingen - dat inhoudelijk verschilt van de havengerelateerde logistiek waar Rotterdam om bekendstaat, ondanks de korte afstand ertussen.
 
 ## Wat voor datawerk hier daadwerkelijk gebeurt
 
-Kwaliteitscontrole in voedingsmiddelen- en drankenproductie vereist statistische modellering met directe gevolgen voor productconsistentie en voedselveiligheid — ander werk dan de logistieke optimalisatie die de Rotterdamse haven kenmerkt, ook al liggen beide vlak bij elkaar.
+Kwaliteitscontrole in voedingsmiddelen- en drankenproductie vereist statistische modellering met directe gevolgen voor productconsistentie en voedselveiligheid - ander werk dan de logistieke optimalisatie die de Rotterdamse haven kenmerkt, ook al liggen beide vlak bij elkaar.
 
 ## Waarom dit werk minder zichtbaar is
 
@@ -39,7 +39,7 @@ Bekijk actuele AI-, machine learning- en datavacatures in en rond Schiedam op [o
 
 ## Een dieper kijkje in wat kwaliteitscontrole bij dranken en voeding onderscheidt
 
-Distilleerderijen en voedingsmiddelenproducenten werken met processen waarbij consistentie tussen batches essentieel is — een kleine afwijking in een productieproces kan een compleet product onbruikbaar maken voor verkoop. Dit soort kwaliteitscontrole vereist statistische modellen die niet alleen gemiddelde prestaties meten, maar juist uitschieters en afwijkingen vroeg detecteren, vaak met een striktere tolerantie dan bij minder gereguleerde productcategorieën.
+Distilleerderijen en voedingsmiddelenproducenten werken met processen waarbij consistentie tussen batches essentieel is - een kleine afwijking in een productieproces kan een compleet product onbruikbaar maken voor verkoop. Dit soort kwaliteitscontrole vereist statistische modellen die niet alleen gemiddelde prestaties meten, maar juist uitschieters en afwijkingen vroeg detecteren, vaak met een striktere tolerantie dan bij minder gereguleerde productcategorieën.
 
 ## Vergelijkingstabel: Schiedam vs. andere voedingsmiddelen-datawerk-regio's
 
@@ -56,16 +56,16 @@ Schiedam, Alkmaar en Gouda vertegenwoordigen samen een patroon dat in geen enkel
 ## Veelgestelde vragen
 
 ### (Scenario: kandidaat die Schiedam met Rotterdam-haven gelijkstelt) Is al het datawerk rond Rotterdam havengerelateerd?
-Nee — Schiedam heeft een eigen, lange traditie in distilleerderijen en voedingsmiddelenproductie met een eigen soort kwaliteitscontrole-datawerk.
+Nee - Schiedam heeft een eigen, lange traditie in distilleerderijen en voedingsmiddelenproductie met een eigen soort kwaliteitscontrole-datawerk.
 
 ### (Scenario: kandidaat die niets vindt via een zoekmachine) Waarom vind ik dit soort vacatures niet als ik op "AI Rotterdam" zoek?
 Een zoekopdracht naar "AI Rotterdam" richt zich vaak automatisch op de haven, waardoor de aangrenzende productiesector in Schiedam buiten beeld blijft.
 
 ### (Scenario: kandidaat die twijfelt of dit technisch veeleisend is) Is kwaliteitscontrole in voedingsmiddelen- en drankenproductie technisch veeleisend?
-Vaak wel — voedselveiligheids- en consistentienormen laten weinig ruimte voor een model dat slechts "meestal goed genoeg" is.
+Vaak wel - voedselveiligheids- en consistentienormen laten weinig ruimte voor een model dat slechts "meestal goed genoeg" is.
 
 ### (Scenario: kandidaat die dit vergelijkt met Rotterdam-haven) Hoe verhoudt dit werk zich tot logistiek werk in de Rotterdamse haven?
-Anders qua aard — kwaliteitscontrole in productie in plaats van logistieke optimalisatie — ook al liggen beide regio's vlak bij elkaar.
+Anders qua aard - kwaliteitscontrole in productie in plaats van logistieke optimalisatie - ook al liggen beide regio's vlak bij elkaar.
 
 ### (Scenario: kandidaat die wil weten hoe te zoeken) Hoe zoek ik gericht naar dit soort werk?
 Filter op categorie in plaats van op functietitel, en kijk specifiek naar voedingsmiddelen- en productiebedrijven in Schiedam.
@@ -75,10 +75,10 @@ Filter op categorie in plaats van op functietitel, en kijk specifiek naar voedin
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is al het datawerk rond Rotterdam havengerelateerd?", "acceptedAnswer": {"@type": "Answer", "text": "Nee — Schiedam heeft een eigen traditie in distilleerderijen en voedingsmiddelenproductie met eigen datawerk."}},
+    {"@type": "Question", "name": "Is al het datawerk rond Rotterdam havengerelateerd?", "acceptedAnswer": {"@type": "Answer", "text": "Nee - Schiedam heeft een eigen traditie in distilleerderijen en voedingsmiddelenproductie met eigen datawerk."}},
     {"@type": "Question", "name": "Waarom vind ik dit soort vacatures niet als ik op \"AI Rotterdam\" zoek?", "acceptedAnswer": {"@type": "Answer", "text": "Een zoekopdracht naar Rotterdam richt zich vaak automatisch op de haven."}},
-    {"@type": "Question", "name": "Is kwaliteitscontrole in voedingsmiddelen- en drankenproductie technisch veeleisend?", "acceptedAnswer": {"@type": "Answer", "text": "Vaak wel — voedselveiligheidsnormen laten weinig ruimte voor benaderende modellen."}},
-    {"@type": "Question", "name": "Hoe verhoudt dit werk zich tot logistiek werk in de Rotterdamse haven?", "acceptedAnswer": {"@type": "Answer", "text": "Anders qua aard — kwaliteitscontrole in productie in plaats van logistieke optimalisatie."}},
+    {"@type": "Question", "name": "Is kwaliteitscontrole in voedingsmiddelen- en drankenproductie technisch veeleisend?", "acceptedAnswer": {"@type": "Answer", "text": "Vaak wel - voedselveiligheidsnormen laten weinig ruimte voor benaderende modellen."}},
+    {"@type": "Question", "name": "Hoe verhoudt dit werk zich tot logistiek werk in de Rotterdamse haven?", "acceptedAnswer": {"@type": "Answer", "text": "Anders qua aard - kwaliteitscontrole in productie in plaats van logistieke optimalisatie."}},
     {"@type": "Question", "name": "Hoe zoek ik gericht naar dit soort werk?", "acceptedAnswer": {"@type": "Answer", "text": "Filter op categorie, en kijk naar voedingsmiddelen- en productiebedrijven in Schiedam."}}
   ]
 }

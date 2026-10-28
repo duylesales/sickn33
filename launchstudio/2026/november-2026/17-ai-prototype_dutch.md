@@ -35,9 +35,9 @@ Op dit moment toont ergens in Amsterdam een oprichter vol trots zijn met AI gebo
 
 De oprichter valt stil. Het antwoord blijft uit. Want tussen het prototype op het scherm en een live applicatie die veilig betalingen verwerkt van onbekenden, gaapt een diepe kloof van software-engineering die nog moet worden overbrugd.
 
-Deze gids overbrugt die kloof. Niet met vage adviezen, maar met de exacte stappen, kosten en doorlooptijden die nodig zijn om een AI-prototype — gebouwd met Lovable, Bolt of Cursor — succesvol naar productie te brengen in 2026.
+Deze gids overbrugt die kloof. Niet met vage adviezen, maar met de exacte stappen, kosten en doorlooptijden die nodig zijn om een AI-prototype - gebouwd met Lovable, Bolt of Cursor - succesvol naar productie te brengen in 2026.
 
-## Stap 1: Eerlijke Inventarisatie — Wat Heeft Uw Prototype Eigenlijk?
+## Stap 1: Eerlijke Inventarisatie - Wat Heeft Uw Prototype Eigenlijk?
 
 Voordat u de overstap plant, moet u helder in kaart brengen wat uw prototype wél en níét bevat. Uzelf rijk rekenen is de meest gemaakte en kostbare fout.
 
@@ -110,7 +110,7 @@ Er zijn drie routes om uw AI-prototype productierijp te maken:
 **3. LaunchStudio Inschakelen**
 *Reële doorlooptijd:* 1 tot 3 weken.
 *Kosten:* €800 tot €7.500 (vaste projectprijs).
-*Risico:* Minimaal — gespecialiseerd in het live zetten van AI-prototypes.
+*Risico:* Minimaal - gespecialiseerd in het live zetten van AI-prototypes.
 
 [LaunchStudio](https://launchstudio.eu/nl/) is een initiatief van [Manifera](https://www.manifera.com/), met 120+ software-engineers, 160+ succesvol opgeleverde projecten en kantoren in Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10) onder leiding van Herre Roelevink.
 
@@ -165,16 +165,16 @@ Op de lanceringsdag mailde Bas zijn 12 bètatesters: negen van hen activeerden d
 **Resultaat:** AdCraft behaalde binnen 21 dagen na livegang een maandelijks terugkerende omzet van €4.017. De AI-kosten bleven dankzij slimme caching beperkt tot €380 per maand (slechts 9,5% van de omzet).
 
 > *"Van prototype naar €4.000 MRR in drie weken tijd. Mijn AI-prototype had exact nodig wat LaunchStudio levert: beveiliging, betalingen en deployment. Niets meer en niets minder."*
-> — **Bas Hendriks, Oprichter, AdCraft (Haarlem)**
+> - **Bas Hendriks, Oprichter, AdCraft (Haarlem)**
 
-**Kosten & Doorlooptijd:** €3.800 (Launch & Grow Pakket) — productie-klaar en live binnen 12 werkdagen.
+**Kosten & Doorlooptijd:** €3.800 (Launch & Grow Pakket) - productie-klaar en live binnen 12 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Wanneer weet ik of mijn AI-prototype volwassen genoeg is voor de stap naar productie?
-Zodra potentiële klanten uw prototype hebben gezien en bevestigen dat ze bereid zijn ervoor te betalen. Het prototype hoeft technisch niet perfect te zijn — LaunchStudio lost de ontbrekende backend-infrastructuur op. Het gaat om gevalideerde marktvraag.
+Zodra potentiële klanten uw prototype hebben gezien en bevestigen dat ze bereid zijn ervoor te betalen. Het prototype hoeft technisch niet perfect te zijn - LaunchStudio lost de ontbrekende backend-infrastructuur op. Het gaat om gevalideerde marktvraag.
 
 ### Kan LaunchStudio mijn AI-prototype binnen een week productierijp opleveren?
 Voor Categorie A (statische sites) duurt het 3 tot 5 werkdagen. Voor Categorie B (webapps) 5 tot 10 werkdagen. Voor Categorie C (SaaS met betalingen) 10 tot 15 werkdagen. Ons team werkt fulltime aan uw sprint om de snelst mogelijke oplevering te garanderen.
@@ -186,7 +186,7 @@ Soms. Codebases waar meerdere freelancers aan hebben gewerkt kunnen wat opschoni
 Ja, absoluut. LaunchStudio schrijft schone, AI-leesbare code die 100% compatibel blijft met Lovable, Cursor en Bolt. U kunt de frontend moeiteloos blijven doorontwikkelen met AI terwijl de backend-infrastructuur stabiel blijft.
 
 ### Werkt LaunchStudio met prototypes uit álle AI-tools, of alleen Lovable en Bolt?
-LaunchStudio werkt met elke op standaarden gebaseerde AI-codebase — Lovable, Bolt, Cursor, v0, Windsurf, Replit of custom stacks. Onze engineers bouwen professionele cloud-infrastructuren onder elke moderne JavaScript/TypeScript frontend.
+LaunchStudio werkt met elke op standaarden gebaseerde AI-codebase - Lovable, Bolt, Cursor, v0, Windsurf, Replit of custom stacks. Onze engineers bouwen professionele cloud-infrastructuren onder elke moderne JavaScript/TypeScript frontend.
 
 <script type="application/ld+json">
 {

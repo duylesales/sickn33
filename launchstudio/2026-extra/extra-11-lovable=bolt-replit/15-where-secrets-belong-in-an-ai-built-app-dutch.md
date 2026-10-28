@@ -20,9 +20,9 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 }
 </script>
 
-Een software-oprichter in Tilburg ontdekte dat zijn leverancier van kaartdiensten hem binnen elf dagen facturen stuurde voor 1,4 miljoen API-verzoeken. Hij had op dat moment ongeveer 200 actieve gebruikers. De API-sleutel die deze verzoeken autoriseerde, stond sinds de lancering open en bloot in de gepubliceerde JavaScript-bundel van zijn website. Iemand — of waarschijnlijker: een geautomatiseerd script — had de sleutel gevonden en zijn account gebruikt als gratis infrastructuur voor eigen projecten.
+Een software-oprichter in Tilburg ontdekte dat zijn leverancier van kaartdiensten hem binnen elf dagen facturen stuurde voor 1,4 miljoen API-verzoeken. Hij had op dat moment ongeveer 200 actieve gebruikers. De API-sleutel die deze verzoeken autoriseerde, stond sinds de lancering open en bloot in de gepubliceerde JavaScript-bundel van zijn website. Iemand - of waarschijnlijker: een geautomatiseerd script - had de sleutel gevonden en zijn account gebruikt als gratis infrastructuur voor eigen projecten.
 
-Er was niets gehackt. Er was geen enkel systeem binnengedrongen. De oprichter had simpelweg een geheime sleutel gepubliceerd — precies wat de meeste met AI gebouwde applicaties standaard doen — en de rekening viel op de mat voordat iemand ook maar iets in de gaten had.
+Er was niets gehackt. Er was geen enkel systeem binnengedrongen. De oprichter had simpelweg een geheime sleutel gepubliceerd - precies wat de meeste met AI gebouwde applicaties standaard doen - en de rekening viel op de mat voordat iemand ook maar iets in de gaten had.
 
 Dit artikel legt uit welke inloggegevens en tokens écht gevoelig zijn, waar ze per ongeluk belanden, en hoe je binnen tien minuten controleert waar jouw geheimen rondslingeren.
 
@@ -36,7 +36,7 @@ Het is essentieel om eerst een helder onderscheid te maken. Alles behandelen als
 
 **De categorie die mensen het vaakst overvalt: sleutels die direct geld kosten.** API's voor routekaarten, sms-verificatie, machinevertalingen en AI-taalmodellen rekenen af per verzoek of token. Een gelekte sleutel van dit type is niet zozeer een datalek, maar een automatische incasso zonder limiet. Geautomatiseerde internetscanners vinden openbare sleutels vaak al binnen enkele minuten na publicatie.
 
-Twijfel je in welke categorie een sleutel valt? De documentatie van de leverancier vermeldt dit altijd expliciet — en het loont om dat vooraf te controleren in plaats van achteraf.
+Twijfel je in welke categorie een sleutel valt? De documentatie van de leverancier vermeldt dit altijd expliciet - en het loont om dat vooraf te controleren in plaats van achteraf.
 
 ## De vier plekken waar geheimen per ongeluk belanden
 
@@ -52,7 +52,7 @@ Twijfel je in welke categorie een sleutel valt? De documentatie van de leveranci
 
 Dit is het mechanisme dat de meeste oprichters met verbijstering achterlaat.
 
-Moderne frontend-buildtools (zoals Vite of Next.js) moeten configuratiewaarden kunnen doorgeven aan JavaScript-code die in de browser draait. Daarom stellen ze automatisch alle omgevingsvariabelen bloot die beginnen met een specifiek voorvoegsel — zoals `VITE_` of `NEXT_PUBLIC_`. Elke variabele met zo'n prefix wordt tijdens het buildproces letterlijk als platte tekst ingebakken in de JavaScript-bestanden die je eindgebruikers downloaden. Dat is geen datalek; het is de gedocumenteerde werking van het framework.
+Moderne frontend-buildtools (zoals Vite of Next.js) moeten configuratiewaarden kunnen doorgeven aan JavaScript-code die in de browser draait. Daarom stellen ze automatisch alle omgevingsvariabelen bloot die beginnen met een specifiek voorvoegsel - zoals `VITE_` of `NEXT_PUBLIC_`. Elke variabele met zo'n prefix wordt tijdens het buildproces letterlijk als platte tekst ingebakken in de JavaScript-bestanden die je eindgebruikers downloaden. Dat is geen datalek; het is de gedocumenteerde werking van het framework.
 
 De valkuil is dat een variabele in een lokaal `.env`-bestand voor je gevoel altijd privé *lijkt*, ongeacht de naam. Als je een geheime API-sleutel plakt achter een variabele met zo'n publiek voorvoegsel, ziet het er in de editor uit als een nette omgevingsvariabele, maar publiceer je deze in werkelijkheid direct naar het hele internet. Dat is exact hoe de kaartensleutel in het openingsverhaal uitlekte. In de broncode zie je immers alleen de variabelenaam staan, waardoor het gevaar onzichtbaar blijft.
 
@@ -62,7 +62,7 @@ Vuistregel: als een variabele wordt uitgelezen door code die in de browser van d
 
 Een geheime sleutel uit een bestand verwijderen en opnieuw committen verwijdert het geheim alleen uit de huidige toestand van je project, niet uit het geheugen van git. Elke eerdere commit bevat de sleutel nog steeds ongewijzigd, en iedereen met leestoegang tot de repository kan hem direct uitlezen via de commit-historie.
 
-Als een repository ooit publiek op GitHub heeft gestaan — al was het maar vijf minuten — moet je ervan uitgaan dat elk geheim dat erin stond definitief is gecompromitteerd. Geautomatiseerde crawlers scannen publieke repositories continu, en het tijdsverschil tussen publicatie en scraping bedraagt zelden meer dan een paar minuten.
+Als een repository ooit publiek op GitHub heeft gestaan - al was het maar vijf minuten - moet je ervan uitgaan dat elk geheim dat erin stond definitief is gecompromitteerd. Geautomatiseerde crawlers scannen publieke repositories continu, en het tijdsverschil tussen publicatie en scraping bedraagt zelden meer dan een paar minuten.
 
 De enige juiste reactie is directe sleutelrotatie, niet het herschrijven van je git-geschiedenis. De geschiedenis herschrijven is foutgevoelig, en het haalt kopieën die al door derden zijn gedownload niet terug. Door de sleutel direct bij de provider in te trekken en een nieuwe aan te maken, worden alle bestaande kopieën in één klap waardeloos.
 
@@ -70,7 +70,7 @@ De enige juiste reactie is directe sleutelrotatie, niet het herschrijven van je 
 
 **Uitsluitend in server-side omgevingen.** In de configuratie van serverless Edge Functions, de beveiligde secret store van je hostingplatform (zoals Vercel of Supabase Vault), of een dedicated secrets manager. Nooit in code die de browser van een gebruiker bereikt.
 
-**Achter je eigen backend-endpoint.** Wanneer een frontend functionaliteit nodig heeft die door een geheim wordt ontgrendeld — zoals het genereren van een AI-antwoord, het versturen van een sms of het ophalen van adresgegevens — roept de frontend jouw eigen serverfunctie aan. Jouw server verifieert de identiteit van de ingelogde gebruiker, past een rate limit toe, en roept vervolgens pas de externe API aan met de geheime sleutel. Jouw geheime sleutel verlaat jouw infrastructuur nooit, en je behoudt altijd de regie om misbruik direct af te knijpen.
+**Achter je eigen backend-endpoint.** Wanneer een frontend functionaliteit nodig heeft die door een geheim wordt ontgrendeld - zoals het genereren van een AI-antwoord, het versturen van een sms of het ophalen van adresgegevens - roept de frontend jouw eigen serverfunctie aan. Jouw server verifieert de identiteit van de ingelogde gebruiker, past een rate limit toe, en roept vervolgens pas de externe API aan met de geheime sleutel. Jouw geheime sleutel verlaat jouw infrastructuur nooit, en je behoudt altijd de regie om misbruik direct af te knijpen.
 
 **Met de kleinst mogelijke bevoegdheden (scoping).** Veel diensten bieden beperkte sleutels aan: alleen-lezen, beperkt tot specifieke IP-adressen of domeinen, of begrensd tot bepaalde API-paden. Als een sleutel door het ontwerp openbaar moet zijn, beperkt een scoped sleutel de potentiële schade aanzienlijk.
 
@@ -85,13 +85,13 @@ De enige juiste reactie is directe sleutelrotatie, niet het herschrijven van je 
 - Zoek in je repository naar `.env`-bestanden en controleer of ze expliciet in `.gitignore` staan. Doorzoek vervolgens ook de git-commitgeschiedenis.
 - Bekijk de instellingen voor omgevingsvariabelen in je hostingplatform en lees elke regel zorgvuldig door. Bevatten variabelen met een publiek voorvoegsel per ongeluk geheime tokens?
 - Bekijk het facturatiedashboard van elke verbruiksafhankelijke API en controleer of het dataverbruik strookt met je werkelijke gebruikersaantallen.
-- Vraag jezelf af wie er in het verleden toegang heeft gehad tot deze waarden — ingehuurde ontwikkelaars, voormalige medeoprichters, of een gedeeld chatgesprek.
+- Vraag jezelf af wie er in het verleden toegang heeft gehad tot deze waarden - ingehuurde ontwikkelaars, voormalige medeoprichters, of een gedeeld chatgesprek.
 
 Elke sleutel waarover twijfel bestaat, moet direct worden geroteerd. Het aanmaken van een nieuwe sleutel kost vijf minuten; een onopgemerkt datalek of torenhoge factuur kost duizenden euro's.
 
 ## Hoe een volwassen inrichting eruitziet
 
-Een overzichtelijke lijst van geheimen, waarbij elk geheim op exact één gezaghebbende plek bestaat. Frontend-code die uitsluitend publieke identificatiecodes bevat. Elke externe API-aanroep die een geheim vereist, verloopt via een eigen backend-route voorzien van authenticatie en snelheidsbegrenzing. Harde uitgavenlimieten ingesteld op alle betaalde accounts. Een beknopte, gedocumenteerde rotatieprocedure die binnen enkele minuten kan worden uitgevoerd. En idealiter een geautomatiseerde check in je CI/CD-pipeline die de build direct afbreekt zodra een patroon van een geheime sleutel in een client-side bestand wordt gedetecteerd — want fouten worden altijd laat op de avond onder tijdsdruk gemaakt, en een geautomatiseerde pipeline wordt nooit moe.
+Een overzichtelijke lijst van geheimen, waarbij elk geheim op exact één gezaghebbende plek bestaat. Frontend-code die uitsluitend publieke identificatiecodes bevat. Elke externe API-aanroep die een geheim vereist, verloopt via een eigen backend-route voorzien van authenticatie en snelheidsbegrenzing. Harde uitgavenlimieten ingesteld op alle betaalde accounts. Een beknopte, gedocumenteerde rotatieprocedure die binnen enkele minuten kan worden uitgevoerd. En idealiter een geautomatiseerde check in je CI/CD-pipeline die de build direct afbreekt zodra een patroon van een geheime sleutel in een client-side bestand wordt gedetecteerd - want fouten worden altijd laat op de avond onder tijdsdruk gemaakt, en een geautomatiseerde pipeline wordt nooit moe.
 
 ## Veilig zonder je applicatie opnieuw te hoeven bouwen
 
@@ -103,7 +103,7 @@ Heeft je audit van tien minuten iets aan het licht gebracht dat je niet kunt ver
 
 ## Inloggegevens die de samenwerking overleven
 
-De technische controle hierboven spoort sleutels in programmacode op. Hij vindt echter geen sleutels die in het geheugen van mensen zitten — en dat is de categorie die in de praktijk tot de pijnlijkste situaties leidt:
+De technische controle hierboven spoort sleutels in programmacode op. Hij vindt echter geen sleutels die in het geheugen van mensen zitten - en dat is de categorie die in de praktijk tot de pijnlijkste situaties leidt:
 
 **Freelancers en bureaus.** Een externe ontwikkelaar die in het voorjaar drie weken aan je app heeft gewerkt, beschikt vaak nog steeds over directe databasetoegang, een dashboardinlog bij je host en een beheerdersuitnodiging bij je betaalprovider. Het project is afgerond; de toegang is blijven bestaan omdat niemand een checklist bijhield.
 
@@ -123,18 +123,18 @@ Maak een lijst van wie er ooit over welke sleutel heeft beschikt, en houd die ac
 
 Stefan Rombouts bouwde Bezorgroute in Cursor: een route-optimalisatietool voor lokale cateringbedrijven rond Tilburg. De app riep een commerciële kaarten-API aan voor afstands- en routeberekeningen. De bijbehorende API-sleutel stond opgeslagen in een omgevingsvariabele met een framework-voorvoegsel, waardoor deze tijdens het builden automatisch werd ingebakken in de openbare frontend-bundel.
 
-De factuur van de eerste maand was normaal. De factuur van de tweede maand was veertig keer zo hoog. De gebruiksstatistieken lieten honderdduizenden verzoeken zien, afkomstig van IP-adressen verspreid over drie continenten — een volume dat geen enkel cateringbedrijf in Brabant ooit had kunnen genereren.
+De factuur van de eerste maand was normaal. De factuur van de tweede maand was veertig keer zo hoog. De gebruiksstatistieken lieten honderdduizenden verzoeken zien, afkomstig van IP-adressen verspreid over drie continenten - een volume dat geen enkel cateringbedrijf in Brabant ooit had kunnen genereren.
 
-Het herstel kostte vier werkdagen: de gelekte API-sleutel werd direct ingetrokken en vervangen door een nieuwe sleutel met strikte domeinbeperkingen en een hard maandelijks bestedingsplafond. Alle kaartaanroepen werden verplaatst naar een serverfunctie die controleert of de aanvrager een ingelogde en betalende klant is, gecombineerd met een strikte rate limit per account. Bij een audit van de git-historie kwamen nog twee andere gevoelige sleutels aan het licht die acht maanden eerder waren gecommit — een token voor een e-maildienst en een database-wachtwoord — die beide direct werden geroteerd. Tot slot werd een build-time security-check toegevoegd die elke deployment direct blokkeert zodra er een sleutelpatroon in de client-bundel verschijnt.
+Het herstel kostte vier werkdagen: de gelekte API-sleutel werd direct ingetrokken en vervangen door een nieuwe sleutel met strikte domeinbeperkingen en een hard maandelijks bestedingsplafond. Alle kaartaanroepen werden verplaatst naar een serverfunctie die controleert of de aanvrager een ingelogde en betalende klant is, gecombineerd met een strikte rate limit per account. Bij een audit van de git-historie kwamen nog twee andere gevoelige sleutels aan het licht die acht maanden eerder waren gecommit - een token voor een e-maildienst en een database-wachtwoord - die beide direct werden geroteerd. Tot slot werd een build-time security-check toegevoegd die elke deployment direct blokkeert zodra er een sleutelpatroon in de client-bundel verschijnt.
 
-De leverancier van de kaartdienst schold een aanzienlijk deel van de frauduleuze kosten kwijt nadat Stefan kon aantonen dat de sleutel direct was ingetrokken en de architectuur structureel was beveiligd — wat zonder tastbaar bewijs van de uitgevoerde fixes nooit was gelukt.
+De leverancier van de kaartdienst schold een aanzienlijk deel van de frauduleuze kosten kwijt nadat Stefan kon aantonen dat de sleutel direct was ingetrokken en de architectuur structureel was beveiligd - wat zonder tastbaar bewijs van de uitgevoerde fixes nooit was gelukt.
 
 **Resultaat:** de maandelijkse hosting- en API-kosten keerden direct terug naar een normaal niveau en zijn sindsdien al veertien maanden netjes evenredig aan het aantal betalende abonnees. Bovendien heeft de geautomatiseerde build-check sindsdien al één poging tot het per ongeluk publiceren van een API-sleutel tijdens een haastige release succesvol tegengehouden.
 
 > *"Ik betaalde letterlijk voor de infrastructuur van een wildvreemde. De sleutel stond gewoon in mijn eigen website, open en bloot voor iedereen die op de juiste knop in zijn browser drukte."*
-> — **Stefan Rombouts, Oprichter, Bezorgroute (Tilburg)**
+> - **Stefan Rombouts, Oprichter, Bezorgroute (Tilburg)**
 
-**Kosten & Doorlooptijd:** € 1.650 (audit van inloggegevens, sleutelrotatie, server-side proxy met rate limiting, CI/CD pipeline-check) — afgerond binnen 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.650 (audit van inloggegevens, sleutelrotatie, server-side proxy met rate limiting, CI/CD pipeline-check) - afgerond binnen 4 werkdagen.
 
 ## Veelgestelde vragen
 

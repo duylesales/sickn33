@@ -29,7 +29,7 @@ Zakelijke enterprise AI-software vereist onwrikbare databeveiliging. Als een int
 
 ### 3. Afleiding van Uw Kerncompetenties
 
-Uw bureau blinkt uit in UI/UX-design, merkstrategie en commercieel klantcontact. Het managen van technische Jira-sprints, het uitvoeren van complexe code-reviews, het onderhouden van Linux-cloudservers en het bijhouden van wekelijkse framework-updates is een totaal ander vakgebied. Het leidt uw directie en beste mensen af van wat u het beste doet — en waar u daadwerkelijk nieuwe klanten mee binnenhaalt.
+Uw bureau blinkt uit in UI/UX-design, merkstrategie en commercieel klantcontact. Het managen van technische Jira-sprints, het uitvoeren van complexe code-reviews, het onderhouden van Linux-cloudservers en het bijhouden van wekelijkse framework-updates is een totaal ander vakgebied. Het leidt uw directie en beste mensen af van wat u het beste doet - en waar u daadwerkelijk nieuwe klanten mee binnenhaalt.
 
 ## De Oplossing: White-Label Software-Engineering
 
@@ -37,22 +37,22 @@ Een white-label softwarepartner is een gerenommeerd software-ontwikkelbedrijf da
 
 Voor uw klant lijkt het alsof uw eigen bureau 100% van het werk zelfstandig heeft uitgevoerd.
 
-Dit is exact hoe [LaunchStudio](https://launchstudio.eu/nl/) Europese bureaus helpt te schalen. Gesteund door de immense ontwikkelkracht van [Manifera](https://www.manifera.com/) — met ruim **120 senior engineers** verspreid over vestigingen in Amsterdam, Singapore en Ho Chi Minhstad — fungeren wij als de discrete "machinekamer" voor toonaangevende ontwerp- en marketingbureaus.
+Dit is exact hoe [LaunchStudio](https://launchstudio.eu/nl/) Europese bureaus helpt te schalen. Gesteund door de immense ontwikkelkracht van [Manifera](https://www.manifera.com/) - met ruim **120 senior engineers** verspreid over vestigingen in Amsterdam, Singapore en Ho Chi Minhstad - fungeren wij als de discrete "machinekamer" voor toonaangevende ontwerp- en marketingbureaus.
 
 Wanneer u samenwerkt met LaunchStudio profiteert u van:
 
 - **Nul Vaste Personeelskosten:** U betaalt geen salarissen, pensioenen of leegloopuren. U schakelt ons uitsluitend in wanneer u daadwerkelijk een project heeft verkocht, waardoor uw vaste bureaukosten gelijk blijven.
-- **Enterprise Beveiliging en Kwaliteit:** Wij brengen ruim 11 jaar ISO-conforme enterprise ervaring mee, met meer dan [160 succesvol opgeleverde softwareprojecten](https://www.manifera.com/portfolio/) voor klanten zoals Vodafone en TNO. Wij waarborgen dat de data van uw klant versleuteld is, 100% AVG-conform is en zware IT-audits glansrijk doorstaat — exact de horde waar 80% van de door AI gebouwde prototypes op sneuvelt.
+- **Enterprise Beveiliging en Kwaliteit:** Wij brengen ruim 11 jaar ISO-conforme enterprise ervaring mee, met meer dan [160 succesvol opgeleverde softwareprojecten](https://www.manifera.com/portfolio/) voor klanten zoals Vodafone en TNO. Wij waarborgen dat de data van uw klant versleuteld is, 100% AVG-conform is en zware IT-audits glansrijk doorstaat - exact de horde waar 80% van de door AI gebouwde prototypes op sneuvelt.
 - **Volledig Onzichtbare Uitvoering:** Wij gebruiken e-mailadressen van uw domein (zoals `devs@uwebureau.nl`). Onze senior architecten sluiten desgewenst aan bij klantgesprekken als uw "Head of Engineering". Wij beschermen uw reputatie en laten uw bureau stralen als een technologische grootmacht.
 - **Vaste Transparante Projectprijzen:** In tegenstelling tot freelancers die declareren op basis van onvoorspelbare uurtarieven, hanteren wij vaste prijzen per deliverable. Hierdoor kunt u uw klantofferte en uw winstmarge vooraf met 100% zekerheid calculeren.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Hoe een White-Label Samenwerking in de Praktijk Verloopt
 
 Bureau-eigenaren die dit model overwegen, willen weten wat er concreet gebeurt tussen het winnen van de deal en de oplevering aan de klant:
 
-1. **Scoping en Architectuurgesprek:** U levert de wensen van de klant aan — zelfs een ruwe Figma-schets en een bulletlist van features is voldoende. Onze software-architecten vertalen dit binnen enkele werkdagen naar een technische specificatie en een vaste projectofferte.
+1. **Scoping en Architectuurgesprek:** U levert de wensen van de klant aan - zelfs een ruwe Figma-schets en een bulletlist van features is voldoende. Onze software-architecten vertalen dit binnen enkele werkdagen naar een technische specificatie en een vaste projectofferte.
 2. **Contract en Geheimhouding (NDA):** U tekent een waterdichte overeenkomst rechtstreeks met LaunchStudio. Uw klant ziet onze naam nooit. Betalingsmijlpalen zijn gekoppeld aan concrete deliverables, niet aan vage urenbriefjes.
 3. **Ontwikkelingssprints:** Onze engineers bouwen de applicatie in overzichtelijke tweewekelijkse sprints en leveren staging-omgevingen op die uw team direct kan testen en als "interne voortgang" kan presenteren aan de klant.
 4. **Security & QA Gate:** Vóór de livegang voeren we een rigoureuze kwaliteitscontrole uit: RLS-policies, API-sleutelbeveiliging, inputvalidatie en dependency-scans worden minutieus gecontroleerd.
@@ -84,7 +84,7 @@ Gedurende de volgende drie maanden werkten onze engineers volledig achter de sch
 
 **Resultaat:** De zorgketen ontving een vlekkeloos werkende, streng beveiligde applicatie en prees Sophies bureau voor de "ongekende technische executiekracht". Sophie realiseerde **€ 45.000 aan bruto winst** zonder zelf programmeurs aan te nemen of serverzorgen te hebben. *"LaunchStudio gaf ons in één klap de slagkracht van een techbedrijf met 50 man. Wij pitchen nu vol vertrouwen maatwerk AI-software aan al onze zakelijke klanten."*
 
-**Kosten & Tijdlijn:** €35.000 (White-Label Enterprise Backend & AI Integratie) — binnen 60 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €35.000 (White-Label Enterprise Backend & AI Integratie) - binnen 60 werkdagen live opgeleverd.
 
 ---
 

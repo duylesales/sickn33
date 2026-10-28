@@ -2,13 +2,13 @@
 
 Oprichters kiezen een uptime-doel van de statuspagina van een concurrent in plaats van te berekenen wat de volgende negen kost: 🧠
 
-❌ Van 99% naar 99,9% lijkt één procentpunt — het is het verschil tussen maandelijkse uitval versus vrijwel nooit
+❌ Van 99% naar 99,9% lijkt één procentpunt - het is het verschil tussen maandelijkse uitval versus vrijwel nooit
 ❌ 99,99% vereist een continue on-call dienst en multi-region infrastructuur die een klein team niet nodig heeft
 ❌ De uptime-garantie van uw host dekt hún servers, niet het functioneren van úw applicatie
 ❌ Uw uptime op twee decimalen nauwkeurig weten terwijl u twee maanden geen features uitrolt, is overinvestering
 
 ✅ Koppel het niveau aan een harde consequentie: een contractuele boeteclausule of direct omzetverlies
-✅ 99,5% — beheerde hosting, health checks en gerichte monitoring — is perfect voor vroege producten
+✅ 99,5% - beheerde hosting, health checks en gerichte monitoring - is perfect voor vroege producten
 ✅ Een complete monitoringstack kost minder dan € 60/maand en dicht het grootste operationele risico
 ✅ Geld bespaard door betrouwbaarheid niet te over-engineeren is vaak beter besteed aan een medewerker
 

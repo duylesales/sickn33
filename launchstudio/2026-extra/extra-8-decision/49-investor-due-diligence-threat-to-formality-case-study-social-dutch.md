@@ -1,4 +1,4 @@
-🚨 Een databasewachtwoord in platte tekst, verstopt in de repository-geschiedenis. Wolfgang ontdekte het pas toen een investeerder due diligence aankondigde — met een termsheet al in de maak. 😳
+🚨 Een databasewachtwoord in platte tekst, verstopt in de repository-geschiedenis. Wolfgang ontdekte het pas toen een investeerder due diligence aankondigde - met een termsheet al in de maak. 😳
 
 Je eigen producttests gaan ervan uit dat alles werkt. Een due-diligencebeoordelaar gaat van niets uit. Dit is wat dat verschil in de praktijk betekent: 🧠
 
@@ -14,7 +14,7 @@ Je eigen producttests gaan ervan uit dat alles werkt. Een due-diligencebeoordela
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering, wordt de checklist van investeerders al gesloten voordat hij onder druk wordt toegepast. 🛡️
 
-Wolfgangs resultaat: LedgerTrust doorstond due diligence zonder één openstaande bevinding — binnen 11 werkdagen gedicht. 🚀
+Wolfgangs resultaat: LedgerTrust doorstond due diligence zonder één openstaande bevinding - binnen 11 werkdagen gedicht. 🚀
 
 👉 Ontdek hoe je due diligence van bedreiging naar formaliteit maakt: https://launchstudio.eu/nl/blog/investor-due-diligence-threat-to-formality-case-study
 

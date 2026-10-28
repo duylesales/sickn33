@@ -27,7 +27,7 @@ A CFO approves a €150,000 budget for custom software. Twelve months later, the
 
 This is not a failure of engineering. It is a failure of financial modeling.
 
-The real **custom software development cost** is never the number on the agency's proposal. That number captures only one layer of a seven-layer financial structure. If you model software the same way you model buying equipment — one purchase price, straight-line depreciation — you will be wrong by a factor of two or three. Every single time.
+The real **custom software development cost** is never the number on the agency's proposal. That number captures only one layer of a seven-layer financial structure. If you model software the same way you model buying equipment - one purchase price, straight-line depreciation - you will be wrong by a factor of two or three. Every single time.
 
 This article is not for engineers. It is for the financial decision-maker who needs to forecast software investment with the same rigor they apply to CapEx machinery or real estate.
 
@@ -95,20 +95,20 @@ If your competitor ships a comparable product 4 months before you because their 
 
 The Netherlands boardroom scenario above is not an outlier. It is the statistical norm, and CFOs who understand why can budget for it instead of being blindsided by it.
 
-The Standish Group's CHAOS Report — the longest-running study of IT project outcomes, tracking tens of thousands of projects since 1994 — defines a "successful" project as one delivered on time, on the original budget, and with the full agreed feature set. In the most recent published edition, only 31% of software projects met that bar. 50% were "challenged" (over budget, late, or delivered with reduced scope), and 19% failed outright — cancelled before completion or abandoned after launch. Critically, project size matters enormously: large projects succeed less than 10% of the time, while small, tightly scoped projects succeed far more often.
+The Standish Group's CHAOS Report - the longest-running study of IT project outcomes, tracking tens of thousands of projects since 1994 - defines a "successful" project as one delivered on time, on the original budget, and with the full agreed feature set. In the most recent published edition, only 31% of software projects met that bar. 50% were "challenged" (over budget, late, or delivered with reduced scope), and 19% failed outright - cancelled before completion or abandoned after launch. Critically, project size matters enormously: large projects succeed less than 10% of the time, while small, tightly scoped projects succeed far more often.
 
-The magnitude of overrun, when a project is challenged rather than outright failed, is documented by a separate, widely cited study from McKinsey & Company and the University of Oxford's BT Centre for Major Programme Management, which analyzed more than 5,400 large IT projects (initial budgets above $15 million). The finding: on average, large IT projects run **45% over budget** and **7% over schedule**, while delivering **56% less value than predicted**. That study covers enterprise-scale programs far larger than a typical €80,000–€350,000 mid-market SaaS build — but the underlying pattern it documents (scope creep, underestimated integration complexity, and optimism bias in the original estimate) applies at every budget size, which is exactly why Layers 2 through 7 of this framework exist.
+The magnitude of overrun, when a project is challenged rather than outright failed, is documented by a separate, widely cited study from McKinsey & Company and the University of Oxford's BT Centre for Major Programme Management, which analyzed more than 5,400 large IT projects (initial budgets above $15 million). The finding: on average, large IT projects run **45% over budget** and **7% over schedule**, while delivering **56% less value than predicted**. That study covers enterprise-scale programs far larger than a typical €80,000–€350,000 mid-market SaaS build - but the underlying pattern it documents (scope creep, underestimated integration complexity, and optimism bias in the original estimate) applies at every budget size, which is exactly why Layers 2 through 7 of this framework exist.
 
-**The CFO-relevant conclusion:** a single-point cost estimate — "this will cost €150,000" — is not a forecast, it is a guess dressed up as a number. A defensible budget bakes in contingency based on how well-defined the scope actually is:
+**The CFO-relevant conclusion:** a single-point cost estimate - "this will cost €150,000" - is not a forecast, it is a guess dressed up as a number. A defensible budget bakes in contingency based on how well-defined the scope actually is:
 
 | Scope Certainty | Example | Recommended Contingency on Top of Layer 1 Quote |
 |---|---|---|
 | **Fixed, fully-specified scope** (rare) | A well-documented API integration with no new UX | 10–15% |
 | **Discovery-validated scope** (recommended baseline) | A Discovery phase (Layer 2) has produced wireframes, a data model, and API contracts before the quote is finalized | 15–25% |
-| **Evolving / MVP scope** | "We know the problem, not yet the exact feature set" — typical of a first SaaS product | 30–50% |
+| **Evolving / MVP scope** | "We know the problem, not yet the exact feature set" - typical of a first SaaS product | 30–50% |
 | **Undefined scope, fixed deadline** (highest risk) | "Build us something like Product X, launch in 4 months" | 50%+, or push back on the deadline |
 
-The single highest-leverage move a CFO can make is refusing to approve a budget built on the "Undefined scope, fixed deadline" row without first funding a Discovery phase (Layer 2) to move it up the table — that €8,000–€25,000, 2–4 week investment is precisely what converts a McKinsey-style 45%-over-budget outcome into a Standish-style "successful" one.
+The single highest-leverage move a CFO can make is refusing to approve a budget built on the "Undefined scope, fixed deadline" row without first funding a Discovery phase (Layer 2) to move it up the table - that €8,000–€25,000, 2–4 week investment is precisely what converts a McKinsey-style 45%-over-budget outcome into a Standish-style "successful" one.
 
 ## The TCO Forecasting Model
 
@@ -125,9 +125,9 @@ Here is a simplified 3-year Total Cost of Ownership model for a mid-complexity B
 | **3-Year TCO** | **€153,000** | **€239,000** | **€494,000** |
 | **Quality Risk** | **Critical (no tests, no architecture)** | **Low (full CI/CD, peer review)** | **Low** |
 
-The cheapest upfront quote (€50,000) results in a 3-year TCO of €153,000 — and a product with critical security and scalability risks. The Hybrid Offshore model delivers enterprise-grade architecture at roughly half the cost of a local EU agency.
+The cheapest upfront quote (€50,000) results in a 3-year TCO of €153,000 - and a product with critical security and scalability risks. The Hybrid Offshore model delivers enterprise-grade architecture at roughly half the cost of a local EU agency.
 
-Notice how this table already reflects the contingency logic above: the "Pure Offshore" column has no Discovery line item, no budgeted maintenance reserve worth the name, and a Year 2 rewrite line that exists precisely because nobody funded the risk-reduction work upfront. It is the McKinsey/Oxford overrun pattern playing out in miniature — a project that looked cheapest at quote time, then absorbed its entire "savings" as an unplanned Year 2 cost. A TCO model that does not include a contingency line, sized according to the scope-certainty table above, is not a forecast a CFO should sign off on.
+Notice how this table already reflects the contingency logic above: the "Pure Offshore" column has no Discovery line item, no budgeted maintenance reserve worth the name, and a Year 2 rewrite line that exists precisely because nobody funded the risk-reduction work upfront. It is the McKinsey/Oxford overrun pattern playing out in miniature - a project that looked cheapest at quote time, then absorbed its entire "savings" as an unplanned Year 2 cost. A TCO model that does not include a contingency line, sized according to the scope-certainty table above, is not a forecast a CFO should sign off on.
 
 ## Why the Hybrid Offshore Model Wins on TCO
 
@@ -144,7 +144,7 @@ Talk to one of our senior architects about your specific challenge. We will buil
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing a board presentation) What is the real custom software development cost for a mid-market B2B application?
-The initial V1.0 build is only 35–40% of the 3-year Total Cost of Ownership. A mid-complexity B2B web application with 15–25 screens typically costs €80,000–€350,000 for V1.0 depending on the development model, but the 3-year TCO — including infrastructure, maintenance, features, and technical debt remediation — ranges from €150,000 to €500,000.
+The initial V1.0 build is only 35–40% of the 3-year Total Cost of Ownership. A mid-complexity B2B web application with 15–25 screens typically costs €80,000–€350,000 for V1.0 depending on the development model, but the 3-year TCO - including infrastructure, maintenance, features, and technical debt remediation - ranges from €150,000 to €500,000.
 
 ### (Scenario: CTO evaluating agency proposals) Why do cheap offshore quotes end up costing more over 3 years?
 Cheap agencies protect their margins by skipping Product Discovery, automated testing, and architectural planning. The resulting codebase accumulates severe technical debt. Within 12–18 months, adding new features becomes so slow and error-prone that a partial rewrite is unavoidable, which typically costs 40–60% of the original build.
@@ -159,7 +159,7 @@ The industry standard is 15–20% of the initial build cost per year. For a €1
 The Hybrid model keeps high-cost activities (architectural oversight, project governance, legal compliance) in Europe, and executes the high-volume engineering work through elite teams in lower-cost regions like Vietnam. This reduces hourly engineering rates by 40–60% while maintaining European architectural standards, peer review rigor, and full CI/CD automation.
 
 ### (Scenario: CFO building contingency into a board-approved budget) How much budget contingency should I add on top of an agency's quote?
-It depends entirely on how well-defined the scope is at the time of quoting, not on a flat industry percentage. A fixed, fully-specified scope justifies only 10–15% contingency. A scope validated through a completed Discovery phase (wireframes, data model, API contracts) justifies 15–25%. An evolving MVP scope — typical for a first SaaS product — warrants 30–50%. An undefined scope paired with a fixed deadline is the highest-risk combination and should either carry 50%+ contingency or be pushed back until Discovery narrows it. This risk gradient reflects why, per the Standish Group's CHAOS Report, only 31% of software projects historically finish on time, on budget, and on scope, and why a McKinsey and University of Oxford study of over 5,400 large IT projects found they run 45% over budget on average — funding Discovery before finalizing a budget is the single highest-leverage way to move a project out of the high-risk category.
+It depends entirely on how well-defined the scope is at the time of quoting, not on a flat industry percentage. A fixed, fully-specified scope justifies only 10–15% contingency. A scope validated through a completed Discovery phase (wireframes, data model, API contracts) justifies 15–25%. An evolving MVP scope - typical for a first SaaS product - warrants 30–50%. An undefined scope paired with a fixed deadline is the highest-risk combination and should either carry 50%+ contingency or be pushed back until Discovery narrows it. This risk gradient reflects why, per the Standish Group's CHAOS Report, only 31% of software projects historically finish on time, on budget, and on scope, and why a McKinsey and University of Oxford study of over 5,400 large IT projects found they run 45% over budget on average - funding Discovery before finalizing a budget is the single highest-leverage way to move a project out of the high-risk category.
 
 <script type="application/ld+json">
 {
@@ -179,7 +179,7 @@ It depends entirely on how well-defined the scope is at the time of quoting, not
       "name": "Why do cheap offshore quotes end up costing more over 3 years?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cheap agencies skip Product Discovery, automated testing, and architectural planning to protect their margins. The resulting technical debt forces a partial rewrite within 12–18 months, which typically costs 40–60% of the original build — erasing all initial savings."
+        "text": "Cheap agencies skip Product Discovery, automated testing, and architectural planning to protect their margins. The resulting technical debt forces a partial rewrite within 12–18 months, which typically costs 40–60% of the original build - erasing all initial savings."
       }
     },
     {

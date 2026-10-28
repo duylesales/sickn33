@@ -1,8 +1,8 @@
-🗄️ Gijs Veenstra, a Noordoostpolder farmer with a software background, built Perceelbeheer — a land parcel tool tracking soil data, crop history, and lease agreements — using Bolt, letting the AI tool generate the database schema and never reviewing it structurally. LaunchStudio's schema audit found 3 of 4 classic issues: an unindexed foreign key, sequential parcel IDs exposed directly in the API, and zero migration history.
+🗄️ Gijs Veenstra, a Noordoostpolder farmer with a software background, built Perceelbeheer - a land parcel tool tracking soil data, crop history, and lease agreements - using Bolt, letting the AI tool generate the database schema and never reviewing it structurally. LaunchStudio's schema audit found 3 of 4 classic issues: an unindexed foreign key, sequential parcel IDs exposed directly in the API, and zero migration history.
 
 "I just let the AI figure it out and assumed it knew what it was doing. It didn't, not really." 🧠
 
-❌ A foreign key with no index — fine at 50 test rows, painfully slow past a few thousand real ones
+❌ A foreign key with no index - fine at 50 test rows, painfully slow past a few thousand real ones
 ❌ Sequential IDs in the API meant a farmer could guess neighboring parcel IDs and see leases that weren't his
 ❌ Every schema change applied ad hoc through the AI chat interface, with no migration history at all
 ❌ None of it was visible until real data volume and real users arrived

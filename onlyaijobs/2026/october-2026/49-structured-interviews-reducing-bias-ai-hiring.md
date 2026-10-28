@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-Two interviewers asking a candidate open-ended, unplanned questions will each end up evaluating different things, shaped by whatever came to mind in the moment — including unconscious preferences that have nothing to do with job performance. That inconsistency is easy to mistake for a thorough, well-rounded evaluation, when it's actually closer to noise.
+Two interviewers asking a candidate open-ended, unplanned questions will each end up evaluating different things, shaped by whatever came to mind in the moment - including unconscious preferences that have nothing to do with job performance. That inconsistency is easy to mistake for a thorough, well-rounded evaluation, when it's actually closer to noise.
 
 ## What Structuring an Interview Actually Involves
 
@@ -47,17 +47,17 @@ Two interviewers asking a candidate open-ended, unplanned questions will each en
 
 ## Why This Doesn't Have to Slow Down Hiring
 
-Structuring an interview is mostly a preparation cost, done once per role rather than per candidate — it doesn't meaningfully add interview time, and it often shortens post-interview debate because the evaluation criteria are already shared and explicit.
+Structuring an interview is mostly a preparation cost, done once per role rather than per candidate - it doesn't meaningfully add interview time, and it often shortens post-interview debate because the evaluation criteria are already shared and explicit.
 
 ## What the Research Says
 
-The case for structured interviews rests on decades of research in personnel psychology. A widely cited meta-analysis by **Schmidt and Hunter (1998)** found that structured interviews predict job performance considerably better than unstructured interviews. A later re-analysis by **Sackett, Zhang, Berry and Lievens (2022)**, which corrected methodological issues in earlier work, lowered many validity estimates across selection methods — but structured interviews came out as one of the strongest predictors among commonly used methods.
+The case for structured interviews rests on decades of research in personnel psychology. A widely cited meta-analysis by **Schmidt and Hunter (1998)** found that structured interviews predict job performance considerably better than unstructured interviews. A later re-analysis by **Sackett, Zhang, Berry and Lievens (2022)**, which corrected methodological issues in earlier work, lowered many validity estimates across selection methods - but structured interviews came out as one of the strongest predictors among commonly used methods.
 
 The practical conclusion is consistent across this research: consistency in questions and scoring improves the quality of hiring decisions, while the feeling of confidence that unstructured interviews produce isn't a reliable indicator of accuracy.
 
 ## A Deeper Look at Why "Gut Feeling" Feels Reliable but Often Isn't
 
-Interviewers who rely on unstructured gut feeling often report high confidence in their judgements, and that confidence is itself part of the problem — it isn't correlated with actual accuracy the way people assume. First impressions, similarity to the interviewer, fluency in the interview language and confidence of delivery all influence unstructured judgements, even though none of them are what the job requires.
+Interviewers who rely on unstructured gut feeling often report high confidence in their judgements, and that confidence is itself part of the problem - it isn't correlated with actual accuracy the way people assume. First impressions, similarity to the interviewer, fluency in the interview language and confidence of delivery all influence unstructured judgements, even though none of them are what the job requires.
 
 ## Two Types of Structured Questions
 
@@ -108,11 +108,11 @@ Writing anchors takes an hour per question the first time, but makes scores comp
 
 ## AI Tools in Interviews: What Is and Isn't Allowed
 
-Some vendors offer AI tools that analyse recorded interviews. Under the **EU Artificial Intelligence Act**, AI systems used for recruitment and selection — including evaluating candidates in interviews — are classified as high-risk, with requirements for risk management, human oversight and transparency. More strictly, the Act has prohibited, since February 2025, AI systems that infer emotions of people in the workplace, except for medical or safety reasons. Tools claiming to read a candidate's enthusiasm, honesty or stress from facial expressions or voice therefore raise serious legal concerns. For AI teams in particular, using such tools would also send a poor signal about the organisation's understanding of responsible AI.
+Some vendors offer AI tools that analyse recorded interviews. Under the **EU Artificial Intelligence Act**, AI systems used for recruitment and selection - including evaluating candidates in interviews - are classified as high-risk, with requirements for risk management, human oversight and transparency. More strictly, the Act has prohibited, since February 2025, AI systems that infer emotions of people in the workplace, except for medical or safety reasons. Tools claiming to read a candidate's enthusiasm, honesty or stress from facial expressions or voice therefore raise serious legal concerns. For AI teams in particular, using such tools would also send a poor signal about the organisation's understanding of responsible AI.
 
 ## Why Structuring Doesn't Mean Losing the Human Element
 
-Some interviewers resist structured interviews because they fear it turns a conversation into a checklist exercise. In practice, structure applies to what gets evaluated and how it's scored — it doesn't prevent a warm, conversational tone, follow-up questions specific to what a candidate says, or genuine back-and-forth. The structure lives in the evaluation criteria, not in making the conversation robotic.
+Some interviewers resist structured interviews because they fear it turns a conversation into a checklist exercise. In practice, structure applies to what gets evaluated and how it's scored - it doesn't prevent a warm, conversational tone, follow-up questions specific to what a candidate says, or genuine back-and-forth. The structure lives in the evaluation criteria, not in making the conversation robotic.
 
 ## A Sample Scorecard for a Machine Learning Engineer Interview
 
@@ -132,7 +132,7 @@ Interviewers fill in the evidence column during or right after the interview, us
 Structured interviews only work if interviewers apply them consistently. A short training session of about an hour covers most of what is needed:
 
 1. **Why structure matters.** Briefly explain the research and the risks of unstructured judgement.
-2. **Practising anchors.** Have interviewers score two example answers individually, then compare scores and discuss differences — this calibrates the team quickly.
+2. **Practising anchors.** Have interviewers score two example answers individually, then compare scores and discuss differences - this calibrates the team quickly.
 3. **Follow-up questions.** Practise neutral follow-ups such as "What did you do next?" or "What would you do differently?" that deepen evidence without steering the candidate.
 4. **Legal boundaries.** Review which questions are not allowed under equal treatment rules, and how to respond if a candidate raises sensitive topics themselves.
 5. **Note-taking.** Agree on recording evidence, not opinions, and on where notes are stored and when they are deleted.
@@ -141,13 +141,13 @@ Repeat a short calibration exercise once or twice a year, or when new interviewe
 
 ## Interviewing Candidates Who Work in a Second Language
 
-Dutch AI teams often interview international candidates in English, which is a second language for most interviewers and many candidates. Unstructured interviews tend to reward fluency and confident delivery, which can disadvantage strong candidates whose English — or Dutch — is less polished. Structure helps here in three ways:
+Dutch AI teams often interview international candidates in English, which is a second language for most interviewers and many candidates. Unstructured interviews tend to reward fluency and confident delivery, which can disadvantage strong candidates whose English - or Dutch - is less polished. Structure helps here in three ways:
 
 - **Scoring content, not delivery.** Anchors describe what a strong answer contains, so interviewers focus on reasoning and evidence rather than accent or speed of speech.
 - **Sharing questions in writing.** For complex case questions, showing the question on screen or on paper reduces misunderstandings caused by listening alone.
 - **Allowing clarification.** Explicitly inviting candidates to ask for a question to be rephrased makes the interview test the job-relevant skill rather than listening comprehension under pressure.
 
-If a role genuinely requires strong Dutch or English communication, assess that as a separate, explicit criterion — not implicitly through every answer.
+If a role genuinely requires strong Dutch or English communication, assess that as a separate, explicit criterion - not implicitly through every answer.
 
 ## Rolling It Out in One Afternoon
 
@@ -169,7 +169,7 @@ If a role genuinely requires strong Dutch or English communication, assess that 
 
 Write down three to five core questions and what a strong answer looks like before your next round of interviews for a role, and have interviewers score independently before discussing as a group.
 
-Post your open AI, machine learning or data role — first listing free — at [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
+Post your open AI, machine learning or data role - first listing free - at [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 
@@ -177,13 +177,13 @@ Post your open AI, machine learning or data role — first listing free — at [
 Because each interviewer evaluates based on whatever came to mind in the moment, introducing inconsistency that's easy to mistake for thoroughness but is actually closer to noise.
 
 ### (Scenario: employer worried structuring will slow hiring down) Does structuring interviews add significant time to the hiring process?
-Mostly it's a preparation cost done once per role, not per candidate — it doesn't meaningfully add interview time and often shortens post-interview debate.
+Mostly it's a preparation cost done once per role, not per candidate - it doesn't meaningfully add interview time and often shortens post-interview debate.
 
 ### (Scenario: employer wondering what structuring actually means in practice) What does a "structured interview" actually involve?
 The same core questions for every candidate at a stage, evaluation criteria defined before the interview, and independent scoring before group discussion.
 
 ### (Scenario: employer worried this eliminates useful follow-up questions) Does structuring an interview mean I can't ask follow-up questions specific to a candidate?
-No — it ensures a shared baseline while still allowing follow-up questions specific to a candidate's background and answers.
+No - it ensures a shared baseline while still allowing follow-up questions specific to a candidate's background and answers.
 
 ### (Scenario: employer wondering about group discussion dynamics) Why does independent scoring before group discussion matter?
 It avoids anchoring on the first strong opinion in the room, which otherwise tends to dominate the group's final judgement.
@@ -196,7 +196,7 @@ It avoids anchoring on the first strong opinion in the room, which otherwise ten
     {"@type": "Question", "name": "Why can unstructured interviews introduce bias even with good intentions?", "acceptedAnswer": {"@type": "Answer", "text": "Each interviewer evaluates based on whatever came to mind in the moment, introducing inconsistency mistaken for thoroughness."}},
     {"@type": "Question", "name": "Does structuring interviews add significant time to the hiring process?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly a preparation cost done once per role, not per candidate."}},
     {"@type": "Question", "name": "What does a \"structured interview\" actually involve?", "acceptedAnswer": {"@type": "Answer", "text": "Same core questions for every candidate, criteria defined in advance, and independent scoring before discussion."}},
-    {"@type": "Question", "name": "Does structuring an interview mean I can't ask follow-up questions specific to a candidate?", "acceptedAnswer": {"@type": "Answer", "text": "No — it ensures a shared baseline while still allowing candidate-specific follow-ups."}},
+    {"@type": "Question", "name": "Does structuring an interview mean I can't ask follow-up questions specific to a candidate?", "acceptedAnswer": {"@type": "Answer", "text": "No - it ensures a shared baseline while still allowing candidate-specific follow-ups."}},
     {"@type": "Question", "name": "Why does independent scoring before group discussion matter?", "acceptedAnswer": {"@type": "Answer", "text": "It avoids anchoring on the first strong opinion in the room."}}
   ]
 }

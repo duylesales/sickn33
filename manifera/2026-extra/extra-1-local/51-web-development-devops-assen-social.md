@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Decoupled Architecture & Autonomous Pods:** Separates strategic governance from high-velocity execution, deploying dedicated cross-functional pods (backend, frontend, QA, DevOps) with automated CI/CD from sprint one.
 ✅ **Amsterdam Strategic Governance & IP Shield:** Our Dutch-based architects design the CI/CD and environment strategy with your engineering leadership, own the risk model around deployment safety, and act as the quality gate before anything reaches production.
-✅ **Vietnam Deep Engineering Mastery:** Autonomous Pods in Ho Chi Minh City build and maintain the pipeline itself — writing the test coverage, configuring the infrastructure-as-code, and running the day-to-day DevOps discipline that keeps deploys boring.
+✅ **Vietnam Deep Engineering Mastery:** Autonomous Pods in Ho Chi Minh City build and maintain the pipeline itself - writing the test coverage, configuring the infrastructure-as-code, and running the day-to-day DevOps discipline that keeps deploys boring.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

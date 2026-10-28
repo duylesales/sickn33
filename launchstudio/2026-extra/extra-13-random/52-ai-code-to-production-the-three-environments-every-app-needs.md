@@ -21,13 +21,13 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Ask a founder whose app was built on Replit, Bolt or Lovable where their development environment is, and the answer is often a puzzled look. There is one app. It runs somewhere. Changes happen there, tests happen there, customers use it there. Moving AI code to production properly starts with separating that single place into three — and understanding what must be different in each.
+Ask a founder whose app was built on Replit, Bolt or Lovable where their development environment is, and the answer is often a puzzled look. There is one app. It runs somewhere. Changes happen there, tests happen there, customers use it there. Moving AI code to production properly starts with separating that single place into three - and understanding what must be different in each.
 
 ## Before: One Environment Doing Three Jobs
 
 In a single-environment setup:
 
-- Code changes are visible to customers the moment they are made — including half-finished ones.
+- Code changes are visible to customers the moment they are made - including half-finished ones.
 - Test signups, test orders and test messages land in the same database as real ones.
 - Test payments use the same payment account, sometimes in live mode.
 - Emails from testing go to real addresses.
@@ -39,7 +39,7 @@ Each of these causes real incidents: customers receiving test emails, analytics 
 
 **Development** is where you build. It can break at any moment. It uses fake data, sandbox integrations and keys that can do no harm. It can be your laptop, a Replit workspace or a cloud development environment.
 
-**Staging** is where you check. It mirrors production as closely as possible — same hosting type, same database version, same configuration structure — but with separate data and test-mode integrations. Changes pass through staging before customers see them.
+**Staging** is where you check. It mirrors production as closely as possible - same hosting type, same database version, same configuration structure - but with separate data and test-mode integrations. Changes pass through staging before customers see them.
 
 **Production** is where customers are. It changes only through a controlled deployment. Its credentials are available to as few people and systems as possible.
 
@@ -83,7 +83,7 @@ The mechanics of separating environments for AI code to production come down to 
 
 1. **List every variable** your app uses, with a short description and whether it is secret.
 2. **Create a template file** (`.env.example`) in the repository with names and dummy values, never real secrets.
-3. **Store real values per environment** in the hosting provider's secret store — Vercel, Netlify, Replit Deployments, or your CI system.
+3. **Store real values per environment** in the hosting provider's secret store - Vercel, Netlify, Replit Deployments, or your CI system.
 4. **Validate at startup**: a small schema that checks required variables exist and have the right format, and refuses to start otherwise.
 5. **Guard against mix-ups**: in non-production environments, fail if a variable looks like a production value (for example a live payment key prefix or the production database host).
 6. **Rotate on exposure**: if a value leaks, rotate it in its environment only, and record the rotation.
@@ -121,7 +121,7 @@ Staging drifts from production when changes are made directly in production dash
 
 ## Preview Environments for Each Change
 
-Many hosting platforms create a preview deployment per branch or pull request. Previews are excellent for reviewing changes, but only when connected to staging data and secrets, protected from public access and cleaned up after merging. A preview accidentally connected to production — a surprisingly common setup — turns every branch into a potential production change.
+Many hosting platforms create a preview deployment per branch or pull request. Previews are excellent for reviewing changes, but only when connected to staging data and secrets, protected from public access and cleaned up after merging. A preview accidentally connected to production - a surprisingly common setup - turns every branch into a potential production change.
 
 ## Environments for Integrations
 
@@ -129,7 +129,7 @@ Third-party services need matching environments too: payment providers in test m
 
 ## Costs of Three Environments
 
-Founders worry that extra environments triple hosting costs. In practice, development runs locally or on free tiers, staging can use smaller database plans and scale-to-zero hosting, and only production needs full capacity. For most small AI-built apps, staging adds a modest monthly amount — far less than a single incident caused by testing against production.
+Founders worry that extra environments triple hosting costs. In practice, development runs locally or on free tiers, staging can use smaller database plans and scale-to-zero hosting, and only production needs full capacity. For most small AI-built apps, staging adds a modest monthly amount - far less than a single incident caused by testing against production.
 
 ## Signs Your Environments Are Working
 
@@ -139,22 +139,22 @@ You know the setup works when developers and AI tools can experiment freely with
 
 Several mistakes appear repeatedly when AI-built apps are first split into environments:
 
-- **Copying `.env` files between environments** and forgetting to change one value — usually the database URL.
+- **Copying `.env` files between environments** and forgetting to change one value - usually the database URL.
 - **Using one payment account in test mode for staging but the same webhook URL for all environments**, so staging receives production events or vice versa.
 - **Shared storage buckets**, so files uploaded in staging appear in production listings.
 - **Shared authentication projects**, so test users can log into production.
 - **Email not restricted in staging**, so test flows send real emails to real customers.
 - **Scheduled jobs running in every environment**, sending reminders from staging.
 
-A short checklist per environment — database, auth, storage, payments, email, webhooks, scheduled jobs — catches these before they cause incidents.
+A short checklist per environment - database, auth, storage, payments, email, webhooks, scheduled jobs - catches these before they cause incidents.
 
 ## Naming and Visual Cues
 
-Humans make mistakes when environments look identical. Give staging a visible banner ("STAGING — test data"), a different favicon or colour, and a distinct domain such as `staging.yourapp.nl`. Name databases, buckets and projects with the environment in the name. These cues cost minutes and prevent the classic mistake of deleting data in what someone thought was staging.
+Humans make mistakes when environments look identical. Give staging a visible banner ("STAGING - test data"), a different favicon or colour, and a distinct domain such as `staging.yourapp.nl`. Name databases, buckets and projects with the environment in the name. These cues cost minutes and prevent the classic mistake of deleting data in what someone thought was staging.
 
 ## Environments for AI-Assisted Development
 
-AI coding tools work in development. Make sure the development environment gives them everything they need — realistic seed data, local services or dev projects, test keys — so they never need production access to make something work. When an AI tool suggests connecting to production "to check the data," the answer should be structurally impossible, not a matter of willpower.
+AI coding tools work in development. Make sure the development environment gives them everything they need - realistic seed data, local services or dev projects, test keys - so they never need production access to make something work. When an AI tool suggests connecting to production "to check the data," the answer should be structurally impossible, not a matter of willpower.
 
 ## From Three Environments to a Release Process
 
@@ -166,7 +166,7 @@ Some products add a demo environment for sales and pitches, or a pre-production 
 
 ## Checklist to Close With
 
-Before you consider your environments done, confirm: separate databases, auth projects, storage and payment modes per environment; variables validated at startup; production changed only through the pipeline; staging visibly labelled and refreshed with anonymised data; previews protected and pointed at staging; email captured outside production; and scheduled jobs enabled only where they belong. When every item is true, your team — and your AI tools — can move quickly without putting real customers at risk.
+Before you consider your environments done, confirm: separate databases, auth projects, storage and payment modes per environment; variables validated at startup; production changed only through the pipeline; staging visibly labelled and refreshed with anonymised data; previews protected and pointed at staging; email captured outside production; and scheduled jobs enabled only where they belong. When every item is true, your team - and your AI tools - can move quickly without putting real customers at risk.
 
 ## Where LaunchStudio Fits
 
@@ -182,16 +182,16 @@ To see what it would cost for your app, [use the price calculator](https://launc
 
 Jeroen Smits, a keen angler and IT support specialist in Roosendaal, built Visvergunning on Replit: an app where anglers buy day and season permits for private fishing waters in West Brabant, show a QR permit to wardens, and water owners see sales. About 2,800 anglers had bought permits through it.
 
-Everything ran in one Replit project. While testing a new season-permit feature, Jeroen created a batch of test permits using real anglers' email addresses from the database, to "see how it looked" — and 340 anglers received permits for waters they had not paid for. Earlier, a test payment made with a real card in live Mollie mode had to be refunded manually. Water owners' sales dashboards included dozens of test sales, and a migration run while developing the season-permit feature briefly locked the permits table on a Saturday morning, leaving wardens unable to verify QR codes.
+Everything ran in one Replit project. While testing a new season-permit feature, Jeroen created a batch of test permits using real anglers' email addresses from the database, to "see how it looked" - and 340 anglers received permits for waters they had not paid for. Earlier, a test payment made with a real card in live Mollie mode had to be refunded manually. Water owners' sales dashboards included dozens of test sales, and a migration run while developing the season-permit feature briefly locked the permits table on a Saturday morning, leaving wardens unable to verify QR codes.
 
 Over seven business days, LaunchStudio's engineers split Visvergunning into development, staging and production: separate databases, Mollie test mode in development and staging, email captured in development and restricted to Jeroen's addresses in staging, per-environment secrets in Replit Deployments, startup validation of environment variables, seed data for staging, and a deployment process with migrations run deliberately outside peak fishing hours. Test sales were removed from production reports, and the mistaken permits were cancelled with an apology email.
 
 **Result:** In the following season, Visvergunning sold around 4,500 permits with no test data reaching anglers or owners and no weekend outages. Jeroen now builds new features freely in development, knowing nothing he does there can reach a real angler.
 
 > *"I thought I was testing. I was actually running experiments on my customers. Three environments meant I could finally experiment on myself."*
-> — **Jeroen Smits, Founder, Visvergunning (Roosendaal)**
+> - **Jeroen Smits, Founder, Visvergunning (Roosendaal)**
 
-**Cost & Timeline:** €1,800 (Launch Ready package: environment separation, secrets, staging data, validation and deployment process) — completed in 7 business days.
+**Cost & Timeline:** €1,800 (Launch Ready package: environment separation, secrets, staging data, validation and deployment process) - completed in 7 business days.
 
 ## Frequently Asked Questions
 

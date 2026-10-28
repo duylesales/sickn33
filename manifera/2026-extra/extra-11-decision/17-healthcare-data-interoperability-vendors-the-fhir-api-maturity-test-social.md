@@ -1,7 +1,7 @@
 "10,000+ healthcare organizations connected." Direct FHIR, an HL7 v2 translation layer, or a data broker? The number won't tell you. 🔌
 
 **The Pain Points:**
-❌ **Aggregate connectivity claims:** Vendors quote network size, not data freshness or connection quality per source — and those vary enormously underneath.
+❌ **Aggregate connectivity claims:** Vendors quote network size, not data freshness or connection quality per source - and those vary enormously underneath.
 ❌ **Vague FHIR support:** "We do FHIR" says nothing about US Core conformance for the specific resources your product actually needs.
 ❌ **No TEFCA signal:** Without QHIN participation, a vendor's connectivity claims haven't passed any independent review process.
 

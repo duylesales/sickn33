@@ -20,13 +20,13 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager at an insurtech company building a parametric insurance platform — automatically triggering claims payouts based on measurable external data (rainfall levels, wind speed, flight delay duration) crossing a predefined threshold, rather than traditional loss assessment — faces a specific architectural requirement that's easy to underweight relative to the more visible policy and payout automation logic: the platform's automated payout decisions are only as reliable as the external data source, or "oracle," it depends on for trigger determination, and a platform relying on a single external data source without validation or dispute handling creates genuine risk of both incorrect payouts and, just as damaging, incorrectly withheld payouts a policyholder genuinely deserved.
+An IT Manager at an insurtech company building a parametric insurance platform - automatically triggering claims payouts based on measurable external data (rainfall levels, wind speed, flight delay duration) crossing a predefined threshold, rather than traditional loss assessment - faces a specific architectural requirement that's easy to underweight relative to the more visible policy and payout automation logic: the platform's automated payout decisions are only as reliable as the external data source, or "oracle," it depends on for trigger determination, and a platform relying on a single external data source without validation or dispute handling creates genuine risk of both incorrect payouts and, just as damaging, incorrectly withheld payouts a policyholder genuinely deserved.
 
 ## Why Single-Source Trigger Data Creates a Genuine Reliability Single Point of Failure
 
 Recognizing this exposure explicitly, before a real outage or data anomaly actually occurs against live policies, is what separates a parametric insurance platform that earns lasting policyholder trust from one that loses it in a single damaging incident.
 
-Parametric insurance's core value proposition — fast, automated payout without the traditional claims assessment process — depends entirely on the underlying trigger data being genuinely reliable and accurate, since the whole model removes the human judgment layer that might otherwise catch and correct a data error in traditional claims assessment. A platform relying on a single external data provider for trigger determination inherits that single provider's own data quality, uptime, and potential error risk directly and completely, with no independent verification catching a genuine data error before it drives an incorrect automated payout decision, in either direction — a false trigger causing an incorrect payout, or a missed trigger incorrectly withholding a payout a policyholder genuinely earned.
+Parametric insurance's core value proposition - fast, automated payout without the traditional claims assessment process - depends entirely on the underlying trigger data being genuinely reliable and accurate, since the whole model removes the human judgment layer that might otherwise catch and correct a data error in traditional claims assessment. A platform relying on a single external data provider for trigger determination inherits that single provider's own data quality, uptime, and potential error risk directly and completely, with no independent verification catching a genuine data error before it drives an incorrect automated payout decision, in either direction - a false trigger causing an incorrect payout, or a missed trigger incorrectly withholding a payout a policyholder genuinely earned.
 
 ## Why This Risk Is Particularly Consequential for Parametric Insurance Specifically
 
@@ -63,7 +63,7 @@ Seguros Paramétricos Aracaju, an Aracaju-based insurtech offering parametric ra
 Manifera's Amsterdam team rebuilt the platform's trigger architecture around multiple independent weather data sources with explicit cross-validation logic, added anomaly detection flagging implausible readings for review, and built a structured dispute resolution process letting policyholders formally challenge a specific automated determination with defined investigation and resolution steps.
 
 > *"We'd built our entire automated payout promise on top of a single data provider's reliability, and didn't have any real process for what happens when that one provider has a bad day. The outage that caused real, deserved payouts to be missed is what forced us to actually build the redundancy and dispute process we should have had from the start."*
-> — **IT Manager, Seguros Paramétricos Aracaju**
+> - **IT Manager, Seguros Paramétricos Aracaju**
 
 Seguros Paramétricos Aracaju's rebuilt platform has since correctly triggered payouts despite subsequent individual data source issues, thanks to its cross-validation logic, and the company's structured dispute process has resolved several policyholder challenges satisfactorily, directly rebuilding trust the original single-source incident had damaged.
 
@@ -78,7 +78,7 @@ Seguros Paramétricos Aracaju's rebuilt platform has since correctly triggered p
 
 ## Scoping Your Own Parametric Insurance Platform's Trigger Architecture
 
-Before building a parametric insurance platform, source trigger data from multiple independent providers with genuine cross-validation, build anomaly detection, and establish a structured dispute process — a single data source creates a genuine reliability single point of failure for the platform's entire automated payout promise. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely reliable parametric insurance trigger architecture.
+Before building a parametric insurance platform, source trigger data from multiple independent providers with genuine cross-validation, build anomaly detection, and establish a structured dispute process - a single data source creates a genuine reliability single point of failure for the platform's entire automated payout promise. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a genuinely reliable parametric insurance trigger architecture.
 
 ## Frequently Asked Questions
 

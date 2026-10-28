@@ -39,11 +39,11 @@ Sittard-Geleen telt ongeveer 92.000 inwoners in Zuid-Limburg, en bevat een van d
 
 ## Industriële procesdata op zeer grote schaal
 
-De procesproblemen zijn die uit de stukken over Emmen en Zaanstad — soft sensors voor eigenschappen die achterlopen op productie, gradewisselingen, energieverlaging onder harde veiligheidsenveloppen. Wat hier verschilt is omvang en integratie.
+De procesproblemen zijn die uit de stukken over Emmen en Zaanstad - soft sensors voor eigenschappen die achterlopen op productie, gradewisselingen, energieverlaging onder harde veiligheidsenveloppen. Wat hier verschilt is omvang en integratie.
 
 Een groot geïntegreerd terrein heeft processen die elkaar voeden: de output van de ene fabriek is de grondstof van de andere, voorzieningen zijn gedeeld, en een verstoring plant zich voort. Eén fabriek geïsoleerd optimaliseren kan het terrein slechter maken. Optimalisatie op terreinniveau, waarbij je die koppelingen meeneemt, is aanzienlijk lastiger en is waar de grootste waarde zit.
 
-Energie- en utilitiesintegratie is een verwant probleem. Een terrein van deze aard verbruikt energie op een schaal waarop het als grote partij met het elektriciteitsnet interacteert, wat procesoptimalisatie verbindt met de energiemarkt- en netcongestieproblemen uit het Alkmaar-stuk. Flexibiliteit — energie-intensieve bewerkingen in tijd verschuiven — is commercieel betekenisvol geworden.
+Energie- en utilitiesintegratie is een verwant probleem. Een terrein van deze aard verbruikt energie op een schaal waarop het als grote partij met het elektriciteitsnet interacteert, wat procesoptimalisatie verbindt met de energiemarkt- en netcongestieproblemen uit het Alkmaar-stuk. Flexibiliteit - energie-intensieve bewerkingen in tijd verschuiven - is commercieel betekenisvol geworden.
 
 Emissies en circulariteit voegen een dimensie toe. Chemische terreinen staan onder forse regel- en marktdruk om emissies te verlagen en gerecyclede en biobased grondstoffen op te nemen. Beide veranderen de ingangsvariabiliteit en de randvoorwaarden, waardoor eerder stabiele optimalisatieproblemen weer dynamisch worden.
 

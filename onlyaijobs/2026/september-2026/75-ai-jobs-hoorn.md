@@ -41,7 +41,7 @@ That framing is more useful than an inflated account of a market that does not e
 
 Being concrete about the layers that exist is more helpful than a general impression.
 
-**Regional healthcare.** The regional hospital and associated care organisations serve West-Friesland, and healthcare data work at this level involves capacity and scheduling, administrative automation, quality reporting and increasingly imaging support. Teams are small — often one to five people — and the work is applied rather than research-oriented. The domain is genuine and the constraint is scale.
+**Regional healthcare.** The regional hospital and associated care organisations serve West-Friesland, and healthcare data work at this level involves capacity and scheduling, administrative automation, quality reporting and increasingly imaging support. Teams are small - often one to five people - and the work is applied rather than research-oriented. The domain is genuine and the constraint is scale.
 
 **Food production and agriculture.** West-Friesland has substantial agriculture and food-related activity, including seed and horticulture businesses. The technical work here resembles what is described in the agrifood analyses elsewhere in this series: variable biological inputs, quality assessment, yield and process optimisation.
 
@@ -57,13 +57,13 @@ The total number of roles across all of these that a machine learning engineer w
 
 One thing deserves correcting before the commute discussion, because it is the most substantive technical opportunity in this area and it is easy to miss.
 
-The area around Hoorn — extending toward Enkhuizen and Andijk — is one of the most important vegetable seed breeding concentrations in the world. Several major seed companies and a supporting network of specialists operate here, and the Netherlands is a leading exporter of vegetable seed by value. The industry is genuinely global: varieties developed here are grown across continents.
+The area around Hoorn - extending toward Enkhuizen and Andijk - is one of the most important vegetable seed breeding concentrations in the world. Several major seed companies and a supporting network of specialists operate here, and the Netherlands is a leading exporter of vegetable seed by value. The industry is genuinely global: varieties developed here are grown across continents.
 
 This matters because plant breeding has become a data-intensive science, and the technical problems are substantial.
 
 **Genomic prediction.** Predicting whether a plant will express desirable traits from its genetic markers, rather than waiting to grow it out and observe. This is high-dimensional regression where the number of markers vastly exceeds the number of individuals tested, with population structure creating confounding that must be handled properly.
 
-**Phenotyping at scale.** Measuring plant traits — growth, disease resistance, fruit characteristics, stress tolerance — across thousands of experimental lines. Increasingly this uses imaging and sensors rather than manual assessment, which turns it into a computer vision problem on non-standard imagery.
+**Phenotyping at scale.** Measuring plant traits - growth, disease resistance, fruit characteristics, stress tolerance - across thousands of experimental lines. Increasingly this uses imaging and sensors rather than manual assessment, which turns it into a computer vision problem on non-standard imagery.
 
 **Trial design and analysis.** Field and greenhouse trials are expensive, seasonal and subject to spatial variation across a plot. Extracting reliable genetic signal from environmental noise requires careful statistical design, and getting more information from fewer trials has direct commercial value.
 
@@ -71,7 +71,7 @@ This matters because plant breeding has become a data-intensive science, and the
 
 **Breeding programme optimisation.** Deciding which crosses to make, how many progeny to evaluate and where to allocate limited trial capacity is a sequential decision problem under uncertainty spanning years.
 
-The relevant point for a candidate is that this work combines statistics, genetics and machine learning in a way that is unusual and hard to acquire elsewhere. It is also, like the Wageningen agrifood market, hidden behind domain vocabulary — roles appear as "breeding data specialist", "quantitative geneticist" or "phenotyping researcher" rather than carrying machine learning terminology.
+The relevant point for a candidate is that this work combines statistics, genetics and machine learning in a way that is unusual and hard to acquire elsewhere. It is also, like the Wageningen agrifood market, hidden behind domain vocabulary - roles appear as "breeding data specialist", "quantitative geneticist" or "phenotyping researcher" rather than carrying machine learning terminology.
 
 If plant breeding data interests you, this area is one of the strongest locations in the world for it, which is a genuinely different statement from anything else in this analysis.
 
@@ -120,7 +120,7 @@ This analysis has framed the choice as local employment versus commuting, but th
 
 Fully remote or heavily remote technical roles exist, including with employers elsewhere in the Netherlands and internationally. For a candidate in a location like this, remote work changes the calculation more than any other factor, because it decouples where you live from where the work is entirely.
 
-Three cautions are worth stating. Remote roles are more competitive, because you compete with candidates across a much wider geography rather than those willing to commute to a specific office. Remote work suits some people and genuinely does not suit others, and the failure mode — professional isolation, reduced access to informal learning, slower progression — is real rather than hypothetical. And remote arrangements with Dutch employers have tightened in several organisations, so an arrangement that exists today may not persist.
+Three cautions are worth stating. Remote roles are more competitive, because you compete with candidates across a much wider geography rather than those willing to commute to a specific office. Remote work suits some people and genuinely does not suit others, and the failure mode - professional isolation, reduced access to informal learning, slower progression - is real rather than hypothetical. And remote arrangements with Dutch employers have tightened in several organisations, so an arrangement that exists today may not persist.
 
 The practical approach for someone in a thin market is to treat all three options as live simultaneously: local roles for their convenience, commutable roles for their depth, and remote roles for their independence from geography. Candidates who consider only one systematically underestimate their options.
 
@@ -136,7 +136,7 @@ What does not work is treating Hoorn as a place to find technical work in itself
 
 ## What Small-Team Healthcare Data Work Is Actually Like
 
-Since regional healthcare is the most substantial local employer category, it deserves specific treatment — and it differs considerably from healthcare data work at a university medical centre.
+Since regional healthcare is the most substantial local employer category, it deserves specific treatment - and it differs considerably from healthcare data work at a university medical centre.
 
 **You are generalist by necessity.** A team of three covering a hospital's data needs does capacity planning, reporting, data quality, integration work and occasional modelling. There is no specialisation. Engineers who want depth in one technique will be frustrated; those who like breadth and visible impact often prefer it.
 
@@ -177,7 +177,7 @@ Browse current AI, machine learning and data vacancies in and around Hoorn at [o
 ## Frequently Asked Questions
 
 ### (Scenario: candidate hoping for a local market) How many relevant roles exist in Hoorn itself?
-Thin for general machine learning — a handful at any time across regional healthcare, food production, small manufacturing and public sector. The exception is plant breeding: the surrounding area is a leading global seed cluster with genuinely substantial data work.
+Thin for general machine learning - a handful at any time across regional healthcare, food production, small manufacturing and public sector. The exception is plant breeding: the surrounding area is a leading global seed cluster with genuinely substantial data work.
 
 ### (Scenario: candidate unaware of the seed cluster) What does plant breeding data work involve?
 Genomic prediction where markers vastly outnumber tested individuals, phenotyping by imaging across thousands of experimental lines, trial design that separates genetic signal from spatial variation, and predicting performance across climates from limited trials.

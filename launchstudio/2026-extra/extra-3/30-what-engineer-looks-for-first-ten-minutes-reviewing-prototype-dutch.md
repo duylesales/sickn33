@@ -59,7 +59,7 @@ De volgorde is niet willekeurig – het spiegelt dezelfde schade-omvang redeneri
 
 [LaunchStudio](https://launchstudio.eu/nl/) past exact deze consistente, op schade-omvang geordende eerste ronde toe op elke nieuwe codebase die wordt beoordeeld. Dit zorgt ervoor dat bevindingen met de grootste consequenties binnen de vroegste minuten van een opdracht naar boven komen, in plaats van pas veel later te worden ontdekt in een minder gestructureerde beoordeling. Het weerspiegelt Manifera's bredere engineeringdiscipline van een consistent, herhaalbaar proces in meer dan 160 opgeleverde projecten.
 
-[Zie wat een ervaren eerste ronde over uw eigen prototype daadwerkelijk zou vinden](https://launchstudio.eu/nl/#calculator) — de eerste tien minuten onthullen vaak meer dan oprichters verwachten.
+[Zie wat een ervaren eerste ronde over uw eigen prototype daadwerkelijk zou vinden](https://launchstudio.eu/nl/#calculator) - de eerste tien minuten onthullen vaak meer dan oprichters verwachten.
 
 ## Wat u klaar moet hebben staan voordat deze eerste tien minuten plaatsvinden
 
@@ -88,7 +88,7 @@ Binnen de eerste tien minuten nadat de beoordelend engineer de codebase van Vrac
 **Resultaat:** De blootgestelde sleutel werd nog dezelfde dag geroteerd, waarmee een echte, actieve blootstelling werd gedicht die al bestond sinds een van VrachtVolger's vroegste ontwikkelingssessies. Dit werd specifiek ontdekt omdat de sequentie van tien minuten dit eerst controleert, in plaats van te wachten tot een latere, uitgebreidere beoordelingsfase om er bij uit te komen.
 
 > *"Ik verwachtte dat het gesprek een algemeen gesprek over mijn stappenplan zou zijn. In plaats daarvan had ik binnen misschien acht minuten een specifieke, concrete bevinding over een daadwerkelijke blootgestelde sleutel waarvan ik oprecht vergeten was dat hij er ooit was geweest. Dat is niet wat ik dacht dat een 'eerste oriënterend gesprek' betekende, op een goede manier."*
-> — **Rick Janssen, Oprichter, VrachtVolger (Almere)**
+> - **Rick Janssen, Oprichter, VrachtVolger (Almere)**
 
 **Kosten en tijdlijn:** Eerste oriënterend gesprek: kosteloos; sleutelrotatie en vervolgaudit op geheimen: € 500, voltooid in dezelfde week.
 
@@ -126,7 +126,7 @@ Redelijk typisch, eigenlijk, gegeven hoe consistent de terugkerende patronen die
       "name": "Betekent een snelle bevinding dat de rest ook ernstige problemen heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — een specifieke bevinding wijst niet automatisch op bredere problemen, maar informeert de prioritering."
+        "text": "Niet noodzakelijkerwijs - een specifieke bevinding wijst niet automatisch op bredere problemen, maar informeert de prioritering."
       }
     },
     {

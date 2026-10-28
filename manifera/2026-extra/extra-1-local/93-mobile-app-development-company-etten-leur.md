@@ -22,26 +22,26 @@ target_persona: "CMO"
 
 A mobile app that looks beautiful in an app-store screenshot and gets abandoned by field workers within two weeks has failed at the only thing that actually mattered, and a CMO who only reviewed the screenshots wouldn't have seen it coming.
 
-**The Pain:** A CMO at an SME manufacturing company in Etten-Leur — a Noord-Brabant town with a strong small-and-mid-sized manufacturing and plastics-packaging industry base — is choosing a mobile app development company for a field-service tool that technicians will use daily, and the vendor pitches all emphasize visual polish over the operational realism that actually determines whether field workers keep using the app past week two.
+**The Pain:** A CMO at an SME manufacturing company in Etten-Leur - a Noord-Brabant town with a strong small-and-mid-sized manufacturing and plastics-packaging industry base - is choosing a mobile app development company for a field-service tool that technicians will use daily, and the vendor pitches all emphasize visual polish over the operational realism that actually determines whether field workers keep using the app past week two.
 
-**The Agitation:** A CMO who selects a vendor purely on demo polish risks shipping an app that looks impressive in a conference room and fails in the field — poor offline handling, clunky data entry under time pressure, or a workflow that doesn't match how technicians actually move through a job — producing low adoption that undermines the entire investment regardless of how good the launch screenshots looked.
+**The Agitation:** A CMO who selects a vendor purely on demo polish risks shipping an app that looks impressive in a conference room and fails in the field - poor offline handling, clunky data entry under time pressure, or a workflow that doesn't match how technicians actually move through a job - producing low adoption that undermines the entire investment regardless of how good the launch screenshots looked.
 
 ## Testing for Field Adoption, Not Demo Polish
 
 A mobile app development company pitching a field-worker tool needs to be evaluated on operational realism specifically, because the failure modes that kill field adoption are almost invisible in a clean, controlled demo environment.
 
-The first test is offline resilience — field workers frequently operate in areas with unreliable connectivity, and an app that assumes constant connectivity fails exactly where it's needed most, so a CMO should specifically ask how the vendor handles offline data capture and sync, not assume it's covered by default.
+The first test is offline resilience - field workers frequently operate in areas with unreliable connectivity, and an app that assumes constant connectivity fails exactly where it's needed most, so a CMO should specifically ask how the vendor handles offline data capture and sync, not assume it's covered by default.
 
-The second is data-entry speed under real field conditions — a technician standing at a job site, possibly wearing gloves or working one-handed, needs an interface optimized for fast, low-friction entry, which is a fundamentally different design discipline than a polished consumer-app interface optimized for browsing.
+The second is data-entry speed under real field conditions - a technician standing at a job site, possibly wearing gloves or working one-handed, needs an interface optimized for fast, low-friction entry, which is a fundamentally different design discipline than a polished consumer-app interface optimized for browsing.
 
-The third is whether the vendor actually observed real field workers doing the job before designing the workflow, rather than designing from a stakeholder's office-based description of the process — a workflow designed without direct field observation routinely misses the actual sequence and constraints technicians work under, producing an app that looks logical and doesn't match reality.
+The third is whether the vendor actually observed real field workers doing the job before designing the workflow, rather than designing from a stakeholder's office-based description of the process - a workflow designed without direct field observation routinely misses the actual sequence and constraints technicians work under, producing an app that looks logical and doesn't match reality.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads require direct field observation as part of the discovery process for any field-worker tool, not stakeholder-only requirements gathering.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod builds offline-first architecture and low-friction data entry specifically designed for real field conditions, not a browsing-optimized consumer interface.
 
-This is Dutch Management × Vietnamese Mastery — mobile development tested for field adoption, not just demo polish. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - mobile development tested for field adoption, not just demo polish. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Tehnica Industrială Transilvania S.R.L., a manufacturing company based in Cluj-
 Manifera rebuilt the app around offline-first architecture with background sync and a streamlined, single-screen data-entry flow designed after directly observing technicians on actual job sites. Adoption reached 90% of active field technicians within the first month of the rebuilt app's launch, sustained over the following two quarters.
 
 > *"The first app photographed beautifully in every demo. Nobody in the field kept using it past the second week, because nobody who built it had actually watched a technician work a real job."*
-> — **CMO, Tehnica Industrială Transilvania S.R.L., Romania**
+> - **CMO, Tehnica Industrială Transilvania S.R.L., Romania**
 
 ## Demo-Polished App vs. Manifera's Field-Adoption-Tested Build
 
@@ -72,7 +72,7 @@ A field-service app that fails to sustain worker adoption past the first few wee
 
 ### (Scenario: CMO choosing a mobile app development company for a field-worker tool) Why does a polished demo app sometimes fail badly with real field workers?
 
-Because the failure modes that kill field adoption — poor offline handling, slow data entry under time pressure, a workflow mismatched to real job conditions — are largely invisible in a clean, controlled demo environment.
+Because the failure modes that kill field adoption - poor offline handling, slow data entry under time pressure, a workflow mismatched to real job conditions - are largely invisible in a clean, controlled demo environment.
 
 ### (Scenario: CMO trying to evaluate offline resilience before committing) What should a CMO ask a vendor about offline functionality for a field-worker app?
 

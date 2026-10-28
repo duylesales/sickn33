@@ -1,4 +1,4 @@
-🔥 Mia bouwde een prototype met **Cursor** — Mia, een salesmanager, bouwde een AI-assistent voor CRM-systemen, maar haar salesteam kon niet real-time zien welke gratis gebruikers tegen hun gebruikslimieten aanliepen. 🧠
+🔥 Mia bouwde een prototype met **Cursor** - Mia, een salesmanager, bouwde een AI-assistent voor CRM-systemen, maar haar salesteam kon niet real-time zien welke gratis gebruikers tegen hun gebruikslimieten aanliepen. 🧠
 
 Puur self-serve Product-Led Growth kent een omzetplafond; Product-Led Sales (PLS) benut actieve gebruikersdata om zes-cijferige enterprise-contracten te sluiten.
 
@@ -12,7 +12,7 @@ Puur self-serve Product-Led Growth kent een omzetplafond; Product-Led Sales (PLS
 
 Bij **LaunchStudio** lossen we exact dit type telemetrie-architectuur en CRM-integratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Mia's salesteam boekte direct succes: Het conversiepercentage van gratis gebruikers naar enterprise-pakketten steeg met 40%. (€1.550 (Sales CRM Integratie) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Mia's salesteam boekte direct succes: Het conversiepercentage van gratis gebruikers naar enterprise-pakketten steeg met 40%. (€1.550 (Sales CRM Integratie) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/product-led-sales-motion-ai
 

@@ -20,17 +20,17 @@ target_persona: "C"
 }
 </script>
 
-An IT Manager at a mobile virtual network operator scoping a custom billing and rating platform — calculating usage charges, managing subscription plans, and reconciling wholesale costs with the host mobile network operator — faces an architecture decision with direct operational consequence: whether the platform's data model and integration approach follow TM Forum's Open API standards, the telecommunications industry's widely adopted framework for business process and system interoperability, or a proprietary internal structure built without this framework in mind.
+An IT Manager at a mobile virtual network operator scoping a custom billing and rating platform - calculating usage charges, managing subscription plans, and reconciling wholesale costs with the host mobile network operator - faces an architecture decision with direct operational consequence: whether the platform's data model and integration approach follow TM Forum's Open API standards, the telecommunications industry's widely adopted framework for business process and system interoperability, or a proprietary internal structure built without this framework in mind.
 
 ## What TM Forum Standards Actually Provide
 
 Understanding this distinction correctly from the outset is what separates a billing platform decision made deliberately from one inherited by default from whatever internal structure happened to be easiest to build first.
 
-TM Forum, the telecommunications industry association behind widely adopted frameworks like the Open API suite and the eTOM (enhanced Telecom Operations Map) business process framework, provides standardized data models and API specifications covering core telecom business functions — usage and event data, billing and charging, customer and product management — specifically designed to let systems from different vendors and different organizations (an MVNO and its host network operator, for instance) exchange business data in a consistent, interoperable way rather than requiring bespoke integration for every system-to-system relationship.
+TM Forum, the telecommunications industry association behind widely adopted frameworks like the Open API suite and the eTOM (enhanced Telecom Operations Map) business process framework, provides standardized data models and API specifications covering core telecom business functions - usage and event data, billing and charging, customer and product management - specifically designed to let systems from different vendors and different organizations (an MVNO and its host network operator, for instance) exchange business data in a consistent, interoperable way rather than requiring bespoke integration for every system-to-system relationship.
 
 ## Why Proprietary Billing Architecture Creates a Real Wholesale Reconciliation Problem
 
-An MVNO's billing platform doesn't operate in isolation — it needs to reconcile its own subscriber usage and billing records against wholesale usage data provided by the host mobile network operator whose infrastructure the MVNO actually operates over, since accurate wholesale cost reconciliation is directly tied to the MVNO's own margin and financial accuracy. A billing platform built around a proprietary internal data model, without TM Forum-aligned interoperability, tends to require a custom-built translation layer to reconcile against the host operator's usage data feeds, which are frequently structured around TM Forum-aligned formats given the standard's wide adoption across the telecom industry specifically. This translation layer becomes a genuine, ongoing point of fragility and reconciliation risk, since any format or structure change on the host operator's side requires a corresponding update to the MVNO's custom translation logic, creating a persistent maintenance burden and real risk of reconciliation errors during the gap between a host operator format change and the MVNO's platform being updated to match it.
+An MVNO's billing platform doesn't operate in isolation - it needs to reconcile its own subscriber usage and billing records against wholesale usage data provided by the host mobile network operator whose infrastructure the MVNO actually operates over, since accurate wholesale cost reconciliation is directly tied to the MVNO's own margin and financial accuracy. A billing platform built around a proprietary internal data model, without TM Forum-aligned interoperability, tends to require a custom-built translation layer to reconcile against the host operator's usage data feeds, which are frequently structured around TM Forum-aligned formats given the standard's wide adoption across the telecom industry specifically. This translation layer becomes a genuine, ongoing point of fragility and reconciliation risk, since any format or structure change on the host operator's side requires a corresponding update to the MVNO's custom translation logic, creating a persistent maintenance burden and real risk of reconciliation errors during the gap between a host operator format change and the MVNO's platform being updated to match it.
 
 ## Why This Also Matters for Partner and Reseller Integration
 
@@ -50,7 +50,7 @@ This is a specific, practical reason a smaller MVNO evaluating its billing platf
 
 ## Why Margin Accuracy Specifically Depends on Getting This Right
 
-A related, direct financial consequence worth naming explicitly: an MVNO's actual profit margin is a function of subscriber revenue minus wholesale cost paid to the host operator, and if the wholesale reconciliation process itself contains errors or delays due to translation layer fragility, the MVNO's own understanding of its real-time margin becomes correspondingly unreliable. This isn't merely an operational inconvenience — a company making pricing, marketing spend, or growth investment decisions based on an inaccurate understanding of its actual current margin is making real business decisions on a flawed financial foundation, a risk that compounds the longer a reconciliation discrepancy goes undetected, exactly as happened during Mobil Szolgáltató Pécs's affected billing cycles before the gap was caught. This direct tie between billing architecture reliability and financial decision-making accuracy is a specific reason this technical architecture decision deserves attention from an MVNO's finance leadership directly, not just its technical team.
+A related, direct financial consequence worth naming explicitly: an MVNO's actual profit margin is a function of subscriber revenue minus wholesale cost paid to the host operator, and if the wholesale reconciliation process itself contains errors or delays due to translation layer fragility, the MVNO's own understanding of its real-time margin becomes correspondingly unreliable. This isn't merely an operational inconvenience - a company making pricing, marketing spend, or growth investment decisions based on an inaccurate understanding of its actual current margin is making real business decisions on a flawed financial foundation, a risk that compounds the longer a reconciliation discrepancy goes undetected, exactly as happened during Mobil Szolgáltató Pécs's affected billing cycles before the gap was caught. This direct tie between billing architecture reliability and financial decision-making accuracy is a specific reason this technical architecture decision deserves attention from an MVNO's finance leadership directly, not just its technical team.
 
 ## Manifera's Approach: Building MVNO Billing Platforms on Interoperable Telecom Standards
 
@@ -66,7 +66,7 @@ Mobil Szolgáltató Pécs, a Pécs-based MVNO, had built an initial billing plat
 Manifera's Amsterdam team rebuilt the platform's core billing and usage data model around native TM Forum Open API alignment, eliminating the custom translation layer and enabling direct, standards-based reconciliation against the host operator's usage reporting without ongoing bespoke maintenance.
 
 > *"Every format change on our host operator's side used to mean an urgent fire drill on our side to update our translation layer before it broke our reconciliation. Once we rebuilt around the same standard they were already using, that entire category of fire drill just stopped happening."*
-> — **IT Manager, Mobil Szolgáltató Pécs**
+> - **IT Manager, Mobil Szolgáltató Pécs**
 
 Mobil Szolgáltató Pécs has experienced zero reconciliation discrepancies since the rebuild, and the company now evaluates any new partner or system integration first against TM Forum compliance, since standards-aligned partners integrate with meaningfully less custom engineering effort than non-aligned ones.
 
@@ -81,7 +81,7 @@ Mobil Szolgáltató Pécs has experienced zero reconciliation discrepancies sinc
 
 ## Scoping Your Own MVNO Billing Platform on Interoperable Standards
 
-Before building or rebuilding an MVNO billing and rating platform, structure the core data model around TM Forum Open API standards from the start — a proprietary architecture creates ongoing reconciliation fragility and compounding integration cost across host operator and partner relationships. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a TM Forum-aligned MVNO billing platform.
+Before building or rebuilding an MVNO billing and rating platform, structure the core data model around TM Forum Open API standards from the start - a proprietary architecture creates ongoing reconciliation fragility and compounding integration cost across host operator and partner relationships. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building a TM Forum-aligned MVNO billing platform.
 
 ## Frequently Asked Questions
 
@@ -99,7 +99,7 @@ Standards-aligned partners can integrate with meaningfully less custom engineeri
 
 ### (Scenario: IT director evaluating platform vendors) What should I ask a billing platform vendor about their TM Forum compliance?
 
-Ask specifically whether the platform's core data model natively maps to TM Forum entities or whether compliance is achieved through a translation layer over a proprietary internal structure — the distinction directly affects long-term maintenance burden.
+Ask specifically whether the platform's core data model natively maps to TM Forum entities or whether compliance is achieved through a translation layer over a proprietary internal structure - the distinction directly affects long-term maintenance burden.
 
 ### (Scenario: MVNO operator trying to correct an existing platform) Can TM Forum alignment be added to an existing proprietary billing platform later?
 

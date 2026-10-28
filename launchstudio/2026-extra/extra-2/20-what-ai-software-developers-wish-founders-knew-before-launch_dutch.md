@@ -67,7 +67,7 @@ Het blokkeren van een account na meerdere mislukte inlogpogingen sluit de meest 
 
 **Bouw deze beschermingslagen gecombineerd op, niet als elkaars alternatief:**
 
-1. **Snelheidsbeperking op IP-adres, naast accountvergrendeling:** Beschermt tegen aanvallers die geautomatiseerd proberen in te loggen op duizenden verschillende accounts vanaf één bron — een patroon dat accountvergrendeling alleen niet detecteert.
+1. **Snelheidsbeperking op IP-adres, naast accountvergrendeling:** Beschermt tegen aanvallers die geautomatiseerd proberen in te loggen op duizenden verschillende accounts vanaf één bron - een patroon dat accountvergrendeling alleen niet detecteert.
 2. **Een CAPTCHA of wiskundige verificatie na drie mislukte pogingen:** Voegt frictie toe voor bots zonder een legitieme gebruiker direct volledig buiten te sluiten bij een simpele typefout.
 3. **Tweefactorauthenticatie (2FA) als optie en later als standaard:** Zelfs een succesvol geraden of uitgelekt wachtwoord is niet langer voldoende zodra een tweede factor vereist is.
 4. **Automatische sessie-inactivatie bij wachtwoordwijziging:** Wanneer een gebruiker zijn wachtwoord reset, moeten alle andere actieve sessies op alle apparaten direct worden beëindigd.
@@ -96,9 +96,9 @@ Een routineuze beoordeling van serverlogboeken markeerde een ongebruikelijk patr
 **Resultaat:** LaunchStudio implementeerde het bijhouden van mislukte pogingen met een tijdelijke vergrendeling na een redelijke drempel, wat de blootstelling aan brute-force sloot terwijl er nul wrijving werd toegevoegd aan normale, legitieme inlogpogingen.
 
 > *"Ik zag de inlogpogingen in de logboeken en mijn eerste reactie was verwarring, niet alarm. Ik wist oprecht niet dat dat iets was waar een inlogscherm standaard bescherming tegen nodig had."*
-> — **Merel Kuipers, Oprichter, TaalSprong (Venlo)**
+> - **Merel Kuipers, Oprichter, TaalSprong (Venlo)**
 
-**Kosten en tijdlijn:** € 1.900 (uitharding van authenticatie en brute-force bescherming) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (uitharding van authenticatie en brute-force bescherming) - voltooid in 6 werkdagen.
 
 ---
 

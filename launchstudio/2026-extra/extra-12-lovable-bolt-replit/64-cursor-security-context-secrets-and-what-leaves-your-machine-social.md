@@ -1,4 +1,4 @@
-🚨 Marnix Bouwhuis's Debiteurenbeheer handles receivables for 29 accountancy offices — around 18,000 debtors. While debugging, he exported a production table to a CSV and left it in his project folder. For four months. Cursor indexed it, and he pasted rows from it into a chat twice to ask why amounts didn't match. 😳
+🚨 Marnix Bouwhuis's Debiteurenbeheer handles receivables for 29 accountancy offices - around 18,000 debtors. While debugging, he exported a production table to a CSV and left it in his project folder. For four months. Cursor indexed it, and he pasted rows from it into a chat twice to ask why amounts didn't match. 😳
 
 Nothing was hacked. But his customers' customers' data had gone to a company none of his processing agreements named. Here's what actually leaves your machine when you use an AI editor: 🧠
 
@@ -8,7 +8,7 @@ Nothing was hacked. But his customers' customers' data had gone to a company non
 ❌ No written position on whether dev tooling touches customer data
 
 ✅ The export deleted and a rule: production data never enters the project directory
-✅ An ignore file for env files, keys, exports and dumps — plus privacy mode and a business tier
+✅ An ignore file for env files, keys, exports and dumps - plus privacy mode and a business tier
 ✅ A realistic seeded dataset, so production data isn't needed for everyday work
 ✅ Redact-before-paste, an absolute no-keys rule, and a documented minimal-anonymised-delete procedure
 

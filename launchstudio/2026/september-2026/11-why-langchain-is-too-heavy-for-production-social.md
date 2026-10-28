@@ -1,6 +1,6 @@
-🚨 Oliver, a customer support lead, used **Bolt** to build a ticket router — but the heavy LangChain dependency caused slow start times and made debugging on serverless routes nearly impossible. 🐌
+🚨 Oliver, a customer support lead, used **Bolt** to build a ticket router - but the heavy LangChain dependency caused slow start times and made debugging on serverless routes nearly impossible. 🐌
 
-If a framework hides the exact prompt sent to your model, you've lost control of the most critical part of your app — and you're paying for it in tokens you never see. 🧠
+If a framework hides the exact prompt sent to your model, you've lost control of the most critical part of your app - and you're paying for it in tokens you never see. 🧠
 
 ❌ Hidden system prompts wrapped around every call, making hallucinations impossible to trace
 ❌ Invisible "thought loop" sub-queries that silently multiply your OpenAI bill

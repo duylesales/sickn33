@@ -1,4 +1,4 @@
-🔥 Lucas bouwde een prototype met **Supabase** — als technische solo-oprichter in Utrecht bouwde hij een AI CRM voor tandartspraktijken, maar ontdekte dat een React-state bug medische patiëntdata lekte tussen concurrerende praktijken. 🧠
+🔥 Lucas bouwde een prototype met **Supabase** - als technische solo-oprichter in Utrecht bouwde hij een AI CRM voor tandartspraktijken, maar ontdekte dat een React-state bug medische patiëntdata lekte tussen concurrerende praktijken. 🧠
 
 Als uw AI-prototype authenticatie alleen op de frontend regelt zonder Row Level Security (RLS) in de database, veroorzaakt live verkeer direct ernstige datalekken en AVG-boetes.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype authenticatie alleen op de frontend regelt zonder Row Level 
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Lucas herlanceerde zijn app veilig binnen 6 dagen, slaagde voor een strenge data-privacy audit en schaalde op naar 15 tandartspraktijken met €3.000 MRR. (€2.500 (Launch Ready Pakket) — binnen 6 werkdagen live). 🚀
+Lucas herlanceerde zijn app veilig binnen 6 dagen, slaagde voor een strenge data-privacy audit en schaalde op naar 15 tandartspraktijken met €3.000 MRR. (€2.500 (Launch Ready Pakket) - binnen 6 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/secure-auth-for-ai-supabase
 

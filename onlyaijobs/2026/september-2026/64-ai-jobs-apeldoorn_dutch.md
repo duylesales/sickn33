@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Apeldoorn telt ongeveer 165.000 inwoners aan de rand van de Veluwe, en vormt een van de minst besproken maar meest data-intensieve arbeidsmarkten van Nederland. De stad huisvest het Kadaster, grote onderdelen van de Belastingdienst en een omvangrijk verzekerings- en pensioencluster. De rode draad: deze organisaties beheren registers op nationale schaal over grond, vastgoed, inkomen en risico — datasets waarvan de omvang en autoriteit geen commercieel equivalent kennen.
+Apeldoorn telt ongeveer 165.000 inwoners aan de rand van de Veluwe, en vormt een van de minst besproken maar meest data-intensieve arbeidsmarkten van Nederland. De stad huisvest het Kadaster, grote onderdelen van de Belastingdienst en een omvangrijk verzekerings- en pensioencluster. De rode draad: deze organisaties beheren registers op nationale schaal over grond, vastgoed, inkomen en risico - datasets waarvan de omvang en autoriteit geen commercieel equivalent kennen.
 
 ## Waarom nationale registers een bijzondere technische omgeving zijn
 
@@ -39,13 +39,13 @@ Dat laatste punt bepaalt de werkcultuur. Wie governance als bureaucratische wrij
 
 De organisatie die verantwoordelijk is voor het Nederlandse kadaster, de openbare registers en de landelijke kartografie beheert perceelgrenzen, eigendomsgegevens, topografische basiskaarten en steeds meer driedimensionale en ondergrondse informatie voor het hele land.
 
-**Verandering detecteren uit lucht- en satellietbeelden.** Nieuwbouw, sloop, landgebruikswijziging en niet-geregistreerde bouwwerkzaamheden opsporen door beelden te vergelijken met het register. Een computer vision-probleem met een bijzondere eigenschap: de grondwaarheid is een juridisch register, dus een verschil tussen model en register is óf een modelfout óf een echte, niet-geregistreerde verandering — en dat onderscheid maken is het eigenlijke werk.
+**Verandering detecteren uit lucht- en satellietbeelden.** Nieuwbouw, sloop, landgebruikswijziging en niet-geregistreerde bouwwerkzaamheden opsporen door beelden te vergelijken met het register. Een computer vision-probleem met een bijzondere eigenschap: de grondwaarheid is een juridisch register, dus een verschil tussen model en register is óf een modelfout óf een echte, niet-geregistreerde verandering - en dat onderscheid maken is het eigenlijke werk.
 
 **Automatische kaartgeneralisatie en objectextractie.** Topografische objecten afleiden uit puntenwolken en beelden, met consistente weergave op meerdere schaalniveaus.
 
 **Driedimensionale en ondergrondse modellering.** Nederland heeft ongewoon gedetailleerde ondergronddata vanwege zijn waterbeheer- en bouwgeschiedenis. Dat combineren met bovengrondse registers ondersteunt werk aan bodemdaling, kabel- en leidingnetwerken en bouwrisico.
 
-**Registers koppelen.** Vastgoed-, adres-, gebouw- en eigendomsdata verbinden met andere landelijke datasets binnen privacyrandvoorwaarden. Minder spectaculair dan modelleren, maar hier zit veel praktische waarde — en het brengt echt lastige entity resolution-problemen mee.
+**Registers koppelen.** Vastgoed-, adres-, gebouw- en eigendomsdata verbinden met andere landelijke datasets binnen privacyrandvoorwaarden. Minder spectaculair dan modelleren, maar hier zit veel praktische waarde - en het brengt echt lastige entity resolution-problemen mee.
 
 ## Het entiteitenlandschap van Apeldoorn
 

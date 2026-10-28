@@ -1,4 +1,4 @@
-⚡ Marcus built Transcriptly, an AI meeting-transcription platform, with **Bolt** — committed to a year of reserved GPU capacity to cut API costs, then watched utilization sit at 28% while latency got worse. 🧠
+⚡ Marcus built Transcriptly, an AI meeting-transcription platform, with **Bolt** - committed to a year of reserved GPU capacity to cut API costs, then watched utilization sit at 28% while latency got worse. 🧠
 
 If your reserved GPU cluster isn't tuned with proper batching, calibrated autoscaling, and real monitoring, you're paying for capacity that never delivers the savings the reservation promised.
 
@@ -12,7 +12,7 @@ If your reserved GPU cluster isn't tuned with proper batching, calibrated autosc
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-GPU utilization rose to 74% during peak hours and transcription latency dropped by more than half. (€4,200 (Relaunch & Scale Package) — production-ready and deployed in 11 business days.) 🚀
+GPU utilization rose to 74% during peak hours and transcription latency dropped by more than half. (€4,200 (Relaunch & Scale Package) - production-ready and deployed in 11 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/gpu-infrastructure-reserved-instances-vs-managed
 

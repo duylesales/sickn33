@@ -106,7 +106,7 @@ A central skill in operations research is choosing the right solution approach f
 
 **Exact methods** such as mixed-integer programming can find provably optimal solutions or give a bound on how far a solution is from optimal. They work well for problems of moderate size and are valued when decisions must be defensible, for example in capacity allocation. Their limitation is computation time for very large or complex problems.
 
-**Heuristics and metaheuristics** — such as local search, large neighbourhood search or genetic algorithms — find good solutions quickly for large problems like national parcel routing. They do not guarantee optimality, but in practice often deliver solutions within a small margin of the best achievable.
+**Heuristics and metaheuristics** - such as local search, large neighbourhood search or genetic algorithms - find good solutions quickly for large problems like national parcel routing. They do not guarantee optimality, but in practice often deliver solutions within a small margin of the best achievable.
 
 **Decomposition approaches** split large problems into smaller subproblems, for example planning rolling stock first and crews afterwards, sometimes iterating between them.
 
@@ -124,7 +124,7 @@ The Dutch OR community is relatively close-knit. The LNMB organises national PhD
 
 ## A Common Misconception About OR Careers
 
-Many students and professionals believe OR is an old-fashioned discipline replaced by machine learning. In practice, optimisation remains the backbone of planning in transport, logistics, energy and healthcare, and demand for people who can formulate and solve real-world optimisation problems is strong. The misconception often arises because OR roles are titled differently — planning, supply chain, decision science — and are less visible in AI job searches.
+Many students and professionals believe OR is an old-fashioned discipline replaced by machine learning. In practice, optimisation remains the backbone of planning in transport, logistics, energy and healthcare, and demand for people who can formulate and solve real-world optimisation problems is strong. The misconception often arises because OR roles are titled differently - planning, supply chain, decision science - and are less visible in AI job searches.
 
 ## Skills That Stand Out
 
@@ -156,7 +156,7 @@ OR careers often progress from analyst roles to lead optimisation engineer, plan
 
 - Operations research uses mathematical optimisation to make decisions in scheduling, routing, allocation, network design, inventory and pricing.
 - The Netherlands has strong OR traditions at NS, ProRail, PostNL and ORTEC, supported by universities and the LNMB.
-- OR jobs exist across rail, logistics, airlines, energy, healthcare, manufacturing, retail, software vendors and consultancies — often under planning or supply chain titles.
+- OR jobs exist across rail, logistics, airlines, energy, healthcare, manufacturing, retail, software vendors and consultancies - often under planning or supply chain titles.
 - Rules such as EU driving time regulations, working hours rules, the AI Act and GDPR shape optimisation models.
 - Combining optimisation with machine learning and strong communication skills creates highly valued profiles.
 
@@ -178,7 +178,7 @@ They are often titled planning specialist, logistics engineer, supply chain anal
 Rail and public transport, logistics, airlines, energy, healthcare, manufacturing, retail, optimisation software vendors and consultancies.
 
 ### (Scenario: candidate interested in regulation) Do laws influence optimisation models?
-Yes — driving time rules, working hours regulations and capacity allocation rules often become constraints in the models.
+Yes - driving time rules, working hours regulations and capacity allocation rules often become constraints in the models.
 
 ### (Scenario: engineer building skills) Which tools should I learn for optimisation roles?
 Mathematical modelling, solvers such as Gurobi, CPLEX, OR-Tools or HiGHS, heuristics, programming and simulation.
@@ -191,7 +191,7 @@ Mathematical modelling, solvers such as Gurobi, CPLEX, OR-Tools or HiGHS, heuris
     {"@type": "Question", "name": "What is the difference between operations research and machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "ML predicts outcomes; OR determines optimal decisions under constraints."}},
     {"@type": "Question", "name": "Why are OR jobs hard to find with AI searches?", "acceptedAnswer": {"@type": "Answer", "text": "They are often titled planning, logistics or decision science roles."}},
     {"@type": "Question", "name": "Which Dutch sectors hire operations research specialists?", "acceptedAnswer": {"@type": "Answer", "text": "Rail, logistics, airlines, energy, healthcare, manufacturing, retail, software vendors and consultancies."}},
-    {"@type": "Question", "name": "Do laws influence optimisation models?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — driving time and working hours rules often become constraints."}},
+    {"@type": "Question", "name": "Do laws influence optimisation models?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - driving time and working hours rules often become constraints."}},
     {"@type": "Question", "name": "Which tools should I learn for optimisation roles?", "acceptedAnswer": {"@type": "Answer", "text": "Modelling, solvers, heuristics, programming and simulation."}}
   ]
 }

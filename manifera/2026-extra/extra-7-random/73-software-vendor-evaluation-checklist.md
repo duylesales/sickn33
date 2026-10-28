@@ -20,28 +20,28 @@ target_persona: "CTO"
 }
 </script>
 
-Most software vendor evaluation checklists a CTO finds online cover the obvious items — technology expertise, portfolio, pricing — and skip the operational due diligence that actually predicts whether the engagement will run smoothly: how the vendor handles IP assignment, what their actual bench depth looks like versus what's staffed on the sales call, and whether their code quality practices survive contact with a real, messy production system rather than a curated case study.
+Most software vendor evaluation checklists a CTO finds online cover the obvious items - technology expertise, portfolio, pricing - and skip the operational due diligence that actually predicts whether the engagement will run smoothly: how the vendor handles IP assignment, what their actual bench depth looks like versus what's staffed on the sales call, and whether their code quality practices survive contact with a real, messy production system rather than a curated case study.
 
-**The Pain:** A CTO tasked with evaluating software development vendors is usually working from a checklist built around what's easy to verify — years in business, technology stack listed on the website, a case study portfolio — rather than the operational specifics that actually determine whether code ships reliably and IP ends up cleanly owned by the client, because those specifics require asking harder, more technical questions that a standard procurement checklist doesn't prompt for.
+**The Pain:** A CTO tasked with evaluating software development vendors is usually working from a checklist built around what's easy to verify - years in business, technology stack listed on the website, a case study portfolio - rather than the operational specifics that actually determine whether code ships reliably and IP ends up cleanly owned by the client, because those specifics require asking harder, more technical questions that a standard procurement checklist doesn't prompt for.
 
-**The Agitation:** A vendor evaluation that misses operational due diligence produces engagements where a CTO discovers, months in, that the vendor's actual code review process is inconsistent, that the "senior team" from the pitch was staffed differently in practice, or — in a genuinely costly failure mode — that IP assignment language in the contract was vague enough to create ambiguity over who owns the code, a problem that's dramatically cheaper to catch during evaluation than to untangle after a dispute.
+**The Agitation:** A vendor evaluation that misses operational due diligence produces engagements where a CTO discovers, months in, that the vendor's actual code review process is inconsistent, that the "senior team" from the pitch was staffed differently in practice, or - in a genuinely costly failure mode - that IP assignment language in the contract was vague enough to create ambiguity over who owns the code, a problem that's dramatically cheaper to catch during evaluation than to untangle after a dispute.
 
 ## The Technical and Operational Items a Real Checklist Includes
 
 **Code quality and engineering practice verification, not just claims.** A checklist item that simply asks "do you follow code review practices" invites a yes from every vendor; a real evaluation asks for a sample pull request history or a description of a specific recent incident and how the team's process caught or missed it, which reveals actual practice rather than a claimed one.
 
-**IP assignment and source control ownership, verified explicitly.** The contract should specify, unambiguously, that all code, documentation, and work product is assigned to the client upon payment, with source control access and repository ownership residing with the client from day one rather than transferred at project end — a CTO should verify this in writing before work begins, not assume it's standard, since ambiguous IP language is one of the most consequential and avoidable vendor risks.
+**IP assignment and source control ownership, verified explicitly.** The contract should specify, unambiguously, that all code, documentation, and work product is assigned to the client upon payment, with source control access and repository ownership residing with the client from day one rather than transferred at project end - a CTO should verify this in writing before work begins, not assume it's standard, since ambiguous IP language is one of the most consequential and avoidable vendor risks.
 
-**Actual bench depth versus sales-call staffing.** A CTO should ask specifically how many engineers the vendor has at the seniority level being proposed, what the vendor's current utilization looks like, and what happens if a proposed team member becomes unavailable — a vendor that can't answer with specifics is signaling that the team on the sales call may not be the team that actually delivers.
+**Actual bench depth versus sales-call staffing.** A CTO should ask specifically how many engineers the vendor has at the seniority level being proposed, what the vendor's current utilization looks like, and what happens if a proposed team member becomes unavailable - a vendor that can't answer with specifics is signaling that the team on the sales call may not be the team that actually delivers.
 
-**Security and infrastructure practices at the vendor level, not just the project level.** Beyond how the delivered software handles security, a thorough checklist asks how the vendor itself manages access to client systems and code — multi-factor authentication, device management, background checks for engineers with production access — since a vendor's own security posture becomes the client's exposure the moment access is granted.
+**Security and infrastructure practices at the vendor level, not just the project level.** Beyond how the delivered software handles security, a thorough checklist asks how the vendor itself manages access to client systems and code - multi-factor authentication, device management, background checks for engineers with production access - since a vendor's own security posture becomes the client's exposure the moment access is granted.
 
-**Business continuity and geographic risk.** A CTO should understand where the vendor's team is physically located, what contingency exists if a specific office or region faces a disruption, and whether the vendor relies on a single point of failure in either personnel or infrastructure — this due diligence item is frequently skipped entirely but matters enormously for any engagement expected to run for more than a few months.
+**Business continuity and geographic risk.** A CTO should understand where the vendor's team is physically located, what contingency exists if a specific office or region faces a disruption, and whether the vendor relies on a single point of failure in either personnel or infrastructure - this due diligence item is frequently skipped entirely but matters enormously for any engagement expected to run for more than a few months.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch leads provide explicit, written IP assignment and source control ownership terms from day one, and answer bench depth and continuity questions with specifics rather than reassurance.
-- **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod operates under verifiable engineering practices — documented code review, access control, and security hygiene — a CTO can audit rather than take on faith.
+- **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod operates under verifiable engineering practices - documented code review, access control, and security hygiene - a CTO can audit rather than take on faith.
 
 This is Dutch Management × Vietnamese Mastery: European contractual clarity on IP and governance answering exactly the due diligence questions a real checklist should ask, paired with execution capacity whose practices hold up to direct technical scrutiny. Learn more about [Manifera's dedicated teams](https://www.manifera.com/services/dedicated-teams/) and how a rigorous vendor evaluation should look past the pitch to the operational specifics that actually matter.
 
@@ -49,12 +49,12 @@ This is Dutch Management × Vietnamese Mastery: European contractual clarity on 
 
 ### A Bologna Manufacturer's Ambiguous IP Discovery
 
-Bologna Tecnologie Srl, an Italian manufacturing software buyer, had worked with a previous vendor for over a year before discovering, during a fundraising due diligence process, that the contract's IP assignment language was ambiguous enough that the vendor could plausibly claim partial rights to reusable components built during the engagement — a gap that hadn't mattered until an investor's legal team flagged it as a material risk.
+Bologna Tecnologie Srl, an Italian manufacturing software buyer, had worked with a previous vendor for over a year before discovering, during a fundraising due diligence process, that the contract's IP assignment language was ambiguous enough that the vendor could plausibly claim partial rights to reusable components built during the engagement - a gap that hadn't mattered until an investor's legal team flagged it as a material risk.
 
 Manifera was engaged for the company's next major project with explicit, unambiguous IP assignment terms reviewed by the CTO's own legal counsel before work began, along with documented evidence of code review practices and access control policies the CTO could independently verify. The fundraising process that followed cleared technical due diligence without a single IP-related flag.
 
 > *"We didn't find the IP problem until an investor's lawyer found it for us. That's the worst possible way to learn your vendor checklist had a gap. This time we asked the hard questions upfront, in writing, before any code got written."*
-> — **CTO, Bologna Tecnologie Srl, Italy**
+> - **CTO, Bologna Tecnologie Srl, Italy**
 
 ## Standard Vendor Checklist vs. Manifera's Operational Due Diligence
 

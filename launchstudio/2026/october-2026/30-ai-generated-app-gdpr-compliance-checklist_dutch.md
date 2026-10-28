@@ -20,7 +20,7 @@ Vóórdat u één enkele euro accepteert van een Europese klant, moet u garander
 Onder de AVG vereist het exporteren van persoonsgegevens van Europese burgers naar servers buiten de Europese Economische Ruimte (zoals de Verenigde Staten) strikte juridische mechanismen (zoals Standard Contractual Clauses of het EU-US Data Privacy Framework).
 
 - **Het AI-Risico:** Wanneer u een AI vraagt om *"een database in te richten"*, kiest het model standaard de goedkoopste, wereldwijd verspreide Amerikaanse serverregio (zoals `us-east-1` in Virginia).
-- **De Oplossing:** U moet uw database (zoals Supabase PostgreSQL of AWS RDS) expliciet en handmatig provisioneren binnen een Europese datacenterregio (zoals Frankfurt, Amsterdam of Ierland). Ook alle geautomatiseerde back-ups moeten strikt binnen de EU blijven. Controleer dit expliciet — veel managed cloudproviders zetten nieuwe projecten standaard op een Amerikaanse regio, en het migreren van een actieve productiedatabase na de lancering is een zware technische ingreep.
+- **De Oplossing:** U moet uw database (zoals Supabase PostgreSQL of AWS RDS) expliciet en handmatig provisioneren binnen een Europese datacenterregio (zoals Frankfurt, Amsterdam of Ierland). Ook alle geautomatiseerde back-ups moeten strikt binnen de EU blijven. Controleer dit expliciet - veel managed cloudproviders zetten nieuwe projecten standaard op een Amerikaanse regio, en het migreren van een actieve productiedatabase na de lancering is een zware technische ingreep.
 
 ## 2. Verwerkersovereenkomsten voor Externe API's (Het OpenAI-Dilemma)
 
@@ -41,13 +41,13 @@ Artikel 25 van de AVG verplicht ondernemingen tot "Gegevensbescherming door ontw
 Onder Artikel 17 van de AVG hebben gebruikers het wettelijke recht om te allen tijde de onmiddellijke en volledige verwijdering van al hun persoonsgegevens te eisen.
 
 - **Het AI-Risico:** Als u door AI gegenereerde teksten opslaat in een vector-database (`pgvector`) voor semantisch zoeken of RAG (Retrieval-Augmented Generation), is het opsporen en wissen van de specifieke embeddings van één gebruiker tussen miljoenen vectoren een technische nachtmerrie.
-- **De Oplossing:** Uw database-architectuur moet elke afzonderlijke vector-embedding strikt labelen met een uniek `user_id`. U moet een geautomatiseerd "Account Verwijderen" endpoint bouwen dat trapsgewijs (cascading) alle data wist uit uw PostgreSQL-database, uw vector-opslag, uw AWS S3-bestandsopslag en uw Stripe-klantenbestand — en het verwijderingsverzoek logt (zonder de persoonsdata zelf) om compliance aan te tonen.
+- **De Oplossing:** Uw database-architectuur moet elke afzonderlijke vector-embedding strikt labelen met een uniek `user_id`. U moet een geautomatiseerd "Account Verwijderen" endpoint bouwen dat trapsgewijs (cascading) alle data wist uit uw PostgreSQL-database, uw vector-opslag, uw AWS S3-bestandsopslag en uw Stripe-klantenbestand - en het verwijderingsverzoek logt (zonder de persoonsdata zelf) om compliance aan te tonen.
 
 ## 5. Gereedheid voor Datalekmeldingen Binnen 72 Uur (Artikel 33)
 
-Artikel 33 van de AVG verplicht u om een ernstig datalek binnen **72 uur** na ontdekking formeel te melden bij de nationale toezichthouder (zoals de Autoriteit Persoonsgegevens) — en bij hoog risico tevens direct aan alle getroffen gebruikers.
+Artikel 33 van de AVG verplicht u om een ernstig datalek binnen **72 uur** na ontdekking formeel te melden bij de nationale toezichthouder (zoals de Autoriteit Persoonsgegevens) - en bij hoog risico tevens direct aan alle getroffen gebruikers.
 
-- **Het AI-Risico:** De meeste met AI gebouwde prototypes bevatten nul gestructureerde serverlogs, geen audittrails en geen enkele monitoring. Als er een datalek plaatsvindt, heeft de oprichter geen enkel idee welke data is ingezien, door wie of wanneer — waardoor een conforme melding binnen 72 uur fysiek onmogelijk is.
+- **Het AI-Risico:** De meeste met AI gebouwde prototypes bevatten nul gestructureerde serverlogs, geen audittrails en geen enkele monitoring. Als er een datalek plaatsvindt, heeft de oprichter geen enkel idee welke data is ingezien, door wie of wanneer - waardoor een conforme melding binnen 72 uur fysiek onmogelijk is.
 - **De Oplossing:** Uw backend vereist gestructureerde toegangslogs op gevoelige tabellen, alerts bij afwijkend query-gedrag (zoals een account dat plots duizenden rijen downloadt) en een gedocumenteerd incident response protocol dat vooraf is vastgelegd en getest. Sla hierbij uitsluitend metadata op (wie, wanneer, welk record-ID) en vermijd het loggen van de daadwerkelijke gevoelige persoonsdata zélf in logbestanden.
 
 ### Een Belangrijke Noot over Cookie-Toestemming en Analytics
@@ -58,13 +58,13 @@ Een veelgemaakte fout: een simpele cookiebanner is niet hetzelfde als AVG-compli
 
 Het configureren van Europese serverregio's, het schrijven van waterdichte RLS-policies, het bouwen van cascading verwijderingsroutes en het inrichten van audit-logging is geen klusje voor een verloren zondagmiddag. Het vereist diepgaande senior backend software-engineering. Als u als bureau of oprichter faalt op een AVG-audit, verliest u onmiddellijk het vertrouwen van uw zakelijke klanten en riskeert u substantiële toezichthoudersboetes.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 Dit is exact waarom scale-ups en bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/nl/).
 
-Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in het ontwikkelen van [enterprise maatwerksoftware](https://www.manifera.com/services/custom-software-development/) voor veeleisende Europese organisaties — met softwareteams in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze vestiging aan **100 Tras Street in Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** — verankert LaunchStudio uw met AI gegenereerde frontend aan een **100% AVG-conforme backend**.
+Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in het ontwikkelen van [enterprise maatwerksoftware](https://www.manifera.com/services/custom-software-development/) voor veeleisende Europese organisaties - met softwareteams in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze vestiging aan **100 Tras Street in Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** - verankert LaunchStudio uw met AI gegenereerde frontend aan een **100% AVG-conforme backend**.
 
-Via ons **"Launch Ready" pakket** richten wij uw cloud-databases exclusief in binnen streng beveiligde EU-datacenters, implementeren we PostgreSQL Row Level Security over alle tabellen en operaties, beveiligen we uw AI API-koppelingen tegen datalekken en documenteren we uw sub-verwerkers voor uw juridische privacyverklaring. Wij leveren de technische fundering waarmee u zakelijke security-audits vanaf dag één glansrijk doorstaat — binnen **1 tot 3 weken** tegen een vaste, transparante projectprijs. Dit stelt u in staat om met een gerust hart zaken te doen met ziekenhuizen, financiële instellingen en overheidsinstanties in heel Europa.
+Via ons **"Launch Ready" pakket** richten wij uw cloud-databases exclusief in binnen streng beveiligde EU-datacenters, implementeren we PostgreSQL Row Level Security over alle tabellen en operaties, beveiligen we uw AI API-koppelingen tegen datalekken en documenteren we uw sub-verwerkers voor uw juridische privacyverklaring. Wij leveren de technische fundering waarmee u zakelijke security-audits vanaf dag één glansrijk doorstaat - binnen **1 tot 3 weken** tegen een vaste, transparante projectprijs. Dit stelt u in staat om met een gerust hart zaken te doen met ziekenhuizen, financiële instellingen en overheidsinstanties in heel Europa.
 
 ## Belangrijkste Inzichten
 
@@ -93,7 +93,7 @@ Onze enterprise engineers herstructureerden zijn backend onmiddellijk. We migree
 
 **Resultaat:** Gewapend met de nieuwe LaunchStudio-infrastructuur diende Dr. Visser zijn aanvraag opnieuw in bij het ziekenhuis. Hij slaagde met vlag en wimpel voor de audit en sloot direct een meerjarig contract af ter waarde van **€ 6.000 aan MRR**. *"Ik had een fantastisch medisch concept, maar nul verstand van privacywetgeving. LaunchStudio bouwde de conforme backend die van mijn prototype een volwaardig, legaal softwarebedrijf maakte."*
 
-**Kosten & Tijdlijn:** €4.500 (Enterprise Compliance Hardening Pakket) — binnen 15 werkdagen volledig live opgeleverd.
+**Kosten & Tijdlijn:** €4.500 (Enterprise Compliance Hardening Pakket) - binnen 15 werkdagen volledig live opgeleverd.
 
 ---
 

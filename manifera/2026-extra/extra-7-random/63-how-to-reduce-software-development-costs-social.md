@@ -1,4 +1,4 @@
-🚨 Most advice on reducing software development costs is actually advice on reducing what gets delivered. That genuinely cuts the invoice — and relocates the cost somewhere more expensive later. 💶⚙️
+🚨 Most advice on reducing software development costs is actually advice on reducing what gets delivered. That genuinely cuts the invoice - and relocates the cost somewhere more expensive later. 💶⚙️
 
 **The Pain Points:**
 ❌ **Cheaper Team, More Rework:** Less experienced engineers, lower-quality code, costlier fixes later.

@@ -30,11 +30,11 @@ De review is ontworpen om in een dag te worden uitgevoerd door een oprichter, bi
 
 Reserveer een dag. Open het product, het Supabase-dashboard, het hostingplatform, de repository en uw facturen. Beantwoord voor elk van de tien gebieden hieronder de kernvraag eerlijk, controleer de rode vlaggen, en geef het gebied een score:
 
-- **Groen** — het gebied is in goede staat; niets urgents.
-- **Oranje** — er zijn gaten, maar die veroorzaken waarschijnlijk geen incident in de komende drie maanden of zijn goedkoop te herstellen.
-- **Rood** — een gat dat kan leiden tot blootgestelde data, verloren data, verloren omzet of een mislukte audit van een klant, of dat duur of onmogelijk terug te draaien is.
+- **Groen** - het gebied is in goede staat; niets urgents.
+- **Oranje** - er zijn gaten, maar die veroorzaken waarschijnlijk geen incident in de komende drie maanden of zijn goedkoop te herstellen.
+- **Rood** - een gat dat kan leiden tot blootgestelde data, verloren data, verloren omzet of een mislukte audit van een klant, of dat duur of onmogelijk terug te draaien is.
 
-Schrijf per score één of twee zinnen onderbouwing. "Back-ups: rood — automatische back-ups aan, nooit teruggezet, geen kopie buiten Supabase" is nuttig; "back-ups: waarschijnlijk in orde" niet.
+Schrijf per score één of twee zinnen onderbouwing. "Back-ups: rood - automatische back-ups aan, nooit teruggezet, geen kopie buiten Supabase" is nuttig; "back-ups: waarschijnlijk in orde" niet.
 
 Wees streng. Het doel van de review is de rode gebieden te vinden voordat een klant, een aanvaller of een auditor dat doet.
 
@@ -52,7 +52,7 @@ De meeste andere gebieden hangen van dit gebied af. Een product waarvan de code 
 
 ## 2. Datascheiding Tussen Klanten
 
-**Kernvraag:** kan een gebruiker van de ene klant, op welke manier ook — interface, API, een aangepast ID in een URL — de data van een andere klant zien of wijzigen?
+**Kernvraag:** kan een gebruiker van de ene klant, op welke manier ook - interface, API, een aangepast ID in een URL - de data van een andere klant zien of wijzigen?
 
 **Rode vlaggen:**
 - Tabellen zonder row level security, of met policies die voor elke ingelogde gebruiker `true` zijn.
@@ -71,7 +71,7 @@ Dit is het gebied waar AI-gebouwde producten het vaakst en het ernstigst falen. 
 - Uitnodigingslinks die nooit verlopen of werken voor iedereen die ze ontvangt.
 - Flows voor wachtwoordherstel die verraden of een account bestaat of hergebruikte tokens accepteren.
 - Beheerfuncties die alleen worden beschermd door knoppen te verbergen.
-- Kritieke accounts — domein, hosting, database — in handen van één persoon.
+- Kritieke accounts - domein, hosting, database - in handen van één persoon.
 
 De artikelen over sessies, wachtwoordherstel, uitnodigingen, SSO en beheerpanelen behandelen dit gebied.
 
@@ -89,7 +89,7 @@ De artikelen over het roteren van geheimen, omgevingsvariabelen en Replit Secret
 
 ## 5. Betalingen en Geld
 
-**Kernvraag:** als uw betaalprovider en uw database het oneens zijn, zou u dat dan weten — en welke zou gelijk hebben?
+**Kernvraag:** als uw betaalprovider en uw database het oneens zijn, zou u dat dan weten - en welke zou gelijk hebben?
 
 **Rode vlaggen:**
 - Webhooks geaccepteerd zonder controle van de handtekening.
@@ -108,13 +108,13 @@ De acht betaalartikelen aan het begin van deze reeks, en het artikel over boekho
 - Back-ups aan maar nooit teruggezet.
 - Geen kopie van de database of geüploade bestanden buiten het hoofdplatform.
 - Geüploade bestanden op het bestandssysteem van een container in plaats van in object storage.
-- Geen plan voor het verlies van een kritieke leverancier — e-mail, betalingen, AI-aanbieder, de bouwtool zelf.
+- Geen plan voor het verlies van een kritieke leverancier - e-mail, betalingen, AI-aanbieder, de bouwtool zelf.
 
 Een product dat nog nooit een back-up heeft teruggezet, weet niet of het er een heeft. De artikelen over back-ups, object storage en vendor lock-in beschrijven hoe groen eruitziet.
 
 ## 7. Betrouwbaarheid en Beheer
 
-**Kernvraag:** als het product om zeven uur op een maandagochtend stukging, wie zou het dan als eerste weten — u of uw klanten?
+**Kernvraag:** als het product om zeven uur op een maandagochtend stukging, wie zou het dan als eerste weten - u of uw klanten?
 
 **Rode vlaggen:**
 - Geen uptimebewaking van buiten het platform.
@@ -127,7 +127,7 @@ De artikelen over monitoring, logs, cron, achtergrondwerk, feature flags en stat
 
 ## 8. Prestaties en Schaal
 
-**Kernvraag:** hoe gedraagt het product zich met de data van uw grootste klant, op hun drukste uur — en met een klant die twee keer zo groot is?
+**Kernvraag:** hoe gedraagt het product zich met de data van uw grootste klant, op hun drukste uur - en met een klant die twee keer zo groot is?
 
 **Rode vlaggen:**
 - Lijsten die elke rij laden; query's zonder indexen op de kolommen waarop ze filteren.
@@ -165,7 +165,7 @@ De compliance-artikelen in het midden van deze reeks, en de artikelen over analy
 - AI-functies zonder evaluatieset, zodat modelwijzigingen ongetest zijn.
 - Documenten die bij het downloaden opnieuw worden gemaakt in plaats van bij uitgifte te worden opgeslagen.
 
-De laatste artikelen in deze reeks — i18n, teams, rollen, SSO, imports, exports, documenten, boekhoudkoppelingen, API-versiebeheer, AI-evaluatie — beschrijven waar grotere klanten doorgaans om vragen, ongeveer in de volgorde waarin ze erom vragen.
+De laatste artikelen in deze reeks - i18n, teams, rollen, SSO, imports, exports, documenten, boekhoudkoppelingen, API-versiebeheer, AI-evaluatie - beschrijven waar grotere klanten doorgaans om vragen, ongeveer in de volgorde waarin ze erom vragen.
 
 ## Scores Omzetten in een Plan
 
@@ -173,7 +173,7 @@ Een review levert een lijst op. Een plan bepaalt de volgorde. Drie regels maken 
 
 **Rood vóór oranje, en onomkeerbaar vóór omkeerbaar.** Blootgestelde data, verloren data en geld dat niet meer te innen is, kunnen niet ongedaan worden gemaakt; een trage pagina wel. Los de rode gebieden in twee, vier, vijf en zes op vóór al het andere, ook als ze minder urgent lijken dan het functieverzoek van een klant.
 
-**Fundament vóór functies.** Gebied één — code in een repository, tests, review — maakt elke latere fix veiliger en sneller. Is het rood, dan komt het eerst, omdat iets anders veranderen zonder dit fundament de manier is waarop nieuwe incidenten ontstaan.
+**Fundament vóór functies.** Gebied één - code in een repository, tests, review - maakt elke latere fix veiliger en sneller. Is het rood, dan komt het eerst, omdat iets anders veranderen zonder dit fundament de manier is waarop nieuwe incidenten ontstaan.
 
 **Volg voor de rest de omzet.** Geef onder de oranje gebieden en gebied tien voorrang aan wat de volgende belangrijke klant of de volgende verlenging nodig heeft. Een prospect die op SSO wacht, rechtvaardigt het SSO-werk dit kwartaal; een theoretische enterprisefunctie niet.
 
@@ -196,7 +196,7 @@ Oprichters vragen terecht wat het plan kost voordat ze zich eraan verbinden. In 
 | Privacy en compliance | 2–4 dagen: overeenkomsten, registers, bewaartermijnen, opschonen van analyse |
 | Volwassenheid voor grotere klanten | Per functie: 2–6 dagen elk voor rollen, SSO, exports, API en vergelijkbaar |
 
-De getallen zijn werkdagen, geen doorlooptijd, en gaan ervan uit dat de code in een repository staat; is gebied één rood, dan komt het eerst en maakt het de andere goedkoper. Een product met drie rode en een aantal oranje gebieden heeft doorgaans tien tot twintig dagen werk nodig om een staat te bereiken die een veeleisende klant accepteert — een fractie van een herbouw, en meestal minder dan de waarde van het contract dat de review in gang zette.
+De getallen zijn werkdagen, geen doorlooptijd, en gaan ervan uit dat de code in een repository staat; is gebied één rood, dan komt het eerst en maakt het de andere goedkoper. Een product met drie rode en een aantal oranje gebieden heeft doorgaans tien tot twintig dagen werk nodig om een staat te bereiken die een veeleisende klant accepteert - een fractie van een herbouw, en meestal minder dan de waarde van het contract dat de review in gang zette.
 
 De getallen verklaren ook waarom de volgorde ertoe doet. Datascheiding oplossen kost een paar dagen vóór een incident; erna kost het dezelfde paar dagen plus melding, onderzoek, juridisch advies en een klantrelatie.
 
@@ -212,13 +212,13 @@ Een review is een momentopname. Producten die met AI-tools zijn gebouwd, verande
 
 Herhaal de review elke zes maanden, en vóór elk moment waarop er meer op het spel staat: de onboarding van een grote klant, een inkoopproces, een investeringsronde, een gesprek over overname, een wijziging in regelgeving. Bewaar de scores en onderbouwing van elke review, zodat de volgende begint waar de vorige eindigde en de trend zichtbaar is.
 
-Het doel is geen product zonder risico. Het is een product waarvan de risico's bekend, gerangschikt en afnemend zijn — en dat is waar klanten, investeerders en auditors eigenlijk naar vragen wanneer ze vragen of het "productieklaar" is.
+Het doel is geen product zonder risico. Het is een product waarvan de risico's bekend, gerangschikt en afnemend zijn - en dat is waar klanten, investeerders en auditors eigenlijk naar vragen wanneer ze vragen of het "productieklaar" is.
 
 ## Dit Inrichten
 
 Voor een Lovable-, Bolt- of Replit-product is een review volgens deze structuur doorgaans één tot twee dagen: de tien gebieden gescoord als groen, oranje of rood met geschreven onderbouwing, controles op codeniveau van datascheiding, authenticatie, geheimen en prestaties door iemand met ervaring, een test op toegang tussen organisaties, een test van het terugzetten van een back-up, een review van betaalwebhooks en afstemming, een controle van privacydocumenten, een lijst van wat grotere klanten nodig zouden hebben, een plan van negentig dagen geordend op onomkeerbaarheid, fundament en omzet, en een datum voor de volgende review.
 
-LaunchStudio voert deze review uit voor oprichters die willen weten waar ze staan, en doet daarna het werk dat rood groen maakt — tegen een vaste prijs, vanaf €800 voor het Launch Ready-pakket. Daarachter staat Manifera — elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam en Ho Chi Minh-stad.
+LaunchStudio voert deze review uit voor oprichters die willen weten waar ze staan, en doet daarna het werk dat rood groen maakt - tegen een vaste prijs, vanaf €800 voor het Launch Ready-pakket. Daarachter staat Manifera - elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam en Ho Chi Minh-stad.
 
 [Vraag ons om een productiereview van de architectuur](https://launchstudio.eu/nl/#contact) en ontvang de scores, de onderbouwing en het plan van negentig dagen.
 
@@ -230,20 +230,20 @@ Sophie Mulder bouwde Leerlingvolg in Lovable: het volgen van de voortgang van le
 
 Een schoolbestuur dat verantwoordelijk is voor 40 scholen wilde het product op alle scholen invoeren, onder voorbehoud van een beoordeling door zijn functionarissen voor informatiebeveiliging en privacy. Sophie had een vragenlijst met 120 vragen en een deadline van zes weken, en geen duidelijk beeld van welke antwoorden een probleem zouden zijn.
 
-De review duurde twee dagen. Drie gebieden scoorden rood. Zes tabellen met leerlingdata hadden row level security policies waarmee elke ingelogde leerkracht via de API records van andere scholen kon lezen, hoewel de interface ze nooit toonde. Back-ups waren nooit teruggezet, en geüploade ondersteuningsplannen stonden in één opslagbucket zonder kopie elders. En er was geen sjabloon voor een verwerkersovereenkomst, geen lijst met subverwerkers en geen bewaartermijnen — voor een product met data over kinderen, inclusief informatie over extra ondersteuningsbehoeften. Negen gebieden scoorden oranje, waaronder ongeteste geplande taken, sleutels gedeeld tussen omgevingen en een analysescript met session replay aan.
+De review duurde twee dagen. Drie gebieden scoorden rood. Zes tabellen met leerlingdata hadden row level security policies waarmee elke ingelogde leerkracht via de API records van andere scholen kon lezen, hoewel de interface ze nooit toonde. Back-ups waren nooit teruggezet, en geüploade ondersteuningsplannen stonden in één opslagbucket zonder kopie elders. En er was geen sjabloon voor een verwerkersovereenkomst, geen lijst met subverwerkers en geen bewaartermijnen - voor een product met data over kinderen, inclusief informatie over extra ondersteuningsbehoeften. Negen gebieden scoorden oranje, waaronder ongeteste geplande taken, sleutels gedeeld tussen omgevingen en een analysescript met session replay aan.
 
-**Resultaat:** het plan van negentig dagen zette de drie rode gebieden in de eerste drie weken: policies herschreven en gecontroleerd met een testsuite tussen scholen, elke nacht versleutelde exports van database en bestanden naar een tweede aanbieder met een getimed herstel, en een verwerkersovereenkomst, lijst met subverwerkers, verwerkingsregister en bewaarregister opgesteld met een privacyjurist. Session replay werd in dezelfde periode verwijderd en omgevingen werden gescheiden. De vragenlijst werd in week vijf met onderbouwing bij elk antwoord ingevuld, de functionarissen van het bestuur kwamen met vier kleine punten, en het contract voor 40 scholen werd in week zeven getekend — ruwweg een verdubbeling van de omzet van het product. Een tweede review zes maanden later scoorde geen enkel rood gebied.
+**Resultaat:** het plan van negentig dagen zette de drie rode gebieden in de eerste drie weken: policies herschreven en gecontroleerd met een testsuite tussen scholen, elke nacht versleutelde exports van database en bestanden naar een tweede aanbieder met een getimed herstel, en een verwerkersovereenkomst, lijst met subverwerkers, verwerkingsregister en bewaarregister opgesteld met een privacyjurist. Session replay werd in dezelfde periode verwijderd en omgevingen werden gescheiden. De vragenlijst werd in week vijf met onderbouwing bij elk antwoord ingevuld, de functionarissen van het bestuur kwamen met vier kleine punten, en het contract voor 40 scholen werd in week zeven getekend - ruwweg een verdubbeling van de omzet van het product. Een tweede review zes maanden later scoorde geen enkel rood gebied.
 
 > *"Ik wist dat er vragen zouden zijn die ik niet kon beantwoorden. Ik wist niet dat leerkrachten via de API de leerlingdossiers van andere scholen konden lezen. Twee dagen review vertelden me precies waar ik moest beginnen."*
-> — **Sophie Mulder, Oprichter, Leerlingvolg (Amersfoort)**
+> - **Sophie Mulder, Oprichter, Leerlingvolg (Amersfoort)**
 
-**Kosten & Doorlooptijd:** €1.800 (productiereview van de architectuur over tien gebieden met controles op codeniveau, test op toegang tussen organisaties, test van terugzetten van back-ups, beoordeling van privacydocumenten, scorerapport met onderbouwing en plan van negentig dagen) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €1.800 (productiereview van de architectuur over tien gebieden met controles op codeniveau, test op toegang tussen organisaties, test van terugzetten van back-ups, beoordeling van privacydocumenten, scorerapport met onderbouwing en plan van negentig dagen) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat is een productiereview van de architectuur?
 
-Een gestructureerde controle van de gebieden die in AI-gebouwde producten het vaakst incidenten veroorzaken — codebeheer, datascheiding, toegang, geheimen, betalingen, herstel, beheer, prestaties, privacy en klaar zijn voor grotere klanten — elk gescoord met onderbouwing.
+Een gestructureerde controle van de gebieden die in AI-gebouwde producten het vaakst incidenten veroorzaken - codebeheer, datascheiding, toegang, geheimen, betalingen, herstel, beheer, prestaties, privacy en klaar zijn voor grotere klanten - elk gescoord met onderbouwing.
 
 ### Hoe lang duurt een review?
 
@@ -251,7 +251,7 @@ Eén tot twee dagen voor de meeste Lovable-, Bolt- of Replit-producten: een dag 
 
 ### Wat moet als eerste worden opgelost?
 
-Rode gebieden die onomkeerbaar zijn — blootgestelde data, verloren data, geld dat niet meer te innen is — en het fundament van codebeheer, daarna wat de volgende belangrijke klant of verlenging nodig heeft.
+Rode gebieden die onomkeerbaar zijn - blootgestelde data, verloren data, geld dat niet meer te innen is - en het fundament van codebeheer, daarna wat de volgende belangrijke klant of verlenging nodig heeft.
 
 ### Kan een oprichter de review alleen uitvoeren?
 
@@ -295,7 +295,7 @@ Elke zes maanden, en vóór elk moment waarop veel op het spel staat, zoals de o
       "name": "Kunnen oprichters hun eigen product reviewen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gedeeltelijk — gebieden op codeniveau zoals datascheiding, authenticatie, geheimen en prestaties hebben baat bij een ervaren reviewer."
+        "text": "Gedeeltelijk - gebieden op codeniveau zoals datascheiding, authenticatie, geheimen en prestaties hebben baat bij een ervaren reviewer."
       }
     },
     {

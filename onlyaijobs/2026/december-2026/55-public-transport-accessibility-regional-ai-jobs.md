@@ -49,7 +49,7 @@ The difference is not marginal. It can halve the effective candidate pool for a 
 
 Dutch rail connectivity between cities is genuinely good. The weakness is the final stretch, and it is concentrated exactly where employment sits.
 
-Industrial estates, logistics parks and manufacturing sites were located for land, road access and freight logic rather than for passenger accessibility. Many are two to eight kilometres from a station — too far to walk, awkward by bus, entirely reasonable by bicycle in good weather and unpleasant in a Dutch January.
+Industrial estates, logistics parks and manufacturing sites were located for land, road access and freight logic rather than for passenger accessibility. Many are two to eight kilometres from a station - too far to walk, awkward by bus, entirely reasonable by bicycle in good weather and unpleasant in a Dutch January.
 
 Several practical instruments address this, and none require new infrastructure.
 
@@ -93,7 +93,7 @@ This is not an unusual story. It is the most common form of hidden recruitment c
 
 Regions move slowly; employers do not have to.
 
-Provide bicycles at the station, or fund a shared arrangement with neighbouring companies. Offer a full public transport subscription rather than a per-kilometre allowance, which changes the calculation for someone deciding whether to own a car. Align start times with the actual train timetable rather than with tradition. Use hybrid policy deliberately, since two office days makes a longer commute acceptable that five days would not. And state the commute honestly in the vacancy, including the cycle time from the station — candidates who discover it later withdraw later, which wastes everyone's time.
+Provide bicycles at the station, or fund a shared arrangement with neighbouring companies. Offer a full public transport subscription rather than a per-kilometre allowance, which changes the calculation for someone deciding whether to own a car. Align start times with the actual train timetable rather than with tradition. Use hybrid policy deliberately, since two office days makes a longer commute acceptable that five days would not. And state the commute honestly in the vacancy, including the cycle time from the station - candidates who discover it later withdraw later, which wastes everyone's time.
 
 There is also a reporting dimension: employers of a certain size in the Netherlands face obligations around reporting work-related mobility, and sustainability reporting increasingly covers commuting emissions. The measures that improve accessibility generally also improve those numbers, which makes the internal business case easier.
 
@@ -103,7 +103,7 @@ Accessibility policy is usually justified in terms of congestion, emissions or e
 
 A region that makes its employment locations reachable within forty-five minutes by public transport and bicycle expands the effective labour pool of every employer within it, without building anything new or spending money on recruitment. It also retains people who would otherwise move closer to a more accessible job elsewhere, and it makes the regional labour market function as one market rather than several disconnected ones.
 
-For a province weighing a mobility investment against a talent attraction campaign, the accessibility measure is frequently the better purchase — and unlike a campaign, it keeps working after the budget ends.
+For a province weighing a mobility investment against a talent attraction campaign, the accessibility measure is frequently the better purchase - and unlike a campaign, it keeps working after the budget ends.
 
 ## Key Takeaways
 
@@ -117,12 +117,12 @@ For a province weighing a mobility investment against a talent attraction campai
 
 Take your three hardest-to-fill employment locations and calculate the realistic public transport plus cycle journey from the nearest three cities, at 08:00 on a Tuesday. The result usually explains more than any labour market study.
 
-Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss making regional technical jobs — and their real commutes — visible to candidates.
+Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss making regional technical jobs - and their real commutes - visible to candidates.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer with a long-open vacancy) Could the commute be the problem?
-Frequently yes — check where applicants live and where suitable candidates withdraw; the last kilometre from the station is a common cause.
+Frequently yes - check where applicants live and where suitable candidates withdraw; the last kilometre from the station is a common cause.
 
 ### (Scenario: municipality planning mobility) What is the cheapest effective measure?
 Improving the station-to-business-park link with cycle infrastructure, shared bicycles or a jointly funded shuttle.
@@ -134,18 +134,18 @@ They are often built around school and shopping patterns rather than shift and o
 Provide bicycles at the station, offer full public transport subscriptions, align start times with trains, and describe the commute honestly.
 
 ### (Scenario: province comparing investments) Is accessibility better value than a talent campaign?
-Often — it permanently expands every local employer's candidate pool, while a campaign stops working when the budget ends.
+Often - it permanently expands every local employer's candidate pool, while a campaign stops working when the budget ends.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Could commuting difficulty explain an unfilled vacancy?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently — check where applicants live and where candidates withdraw; the last kilometre from the station is a common cause."}},
+    {"@type": "Question", "name": "Could commuting difficulty explain an unfilled vacancy?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently - check where applicants live and where candidates withdraw; the last kilometre from the station is a common cause."}},
     {"@type": "Question", "name": "What is the cheapest accessibility improvement for employment sites?", "acceptedAnswer": {"@type": "Answer", "text": "Improving the station-to-business-park link via cycle infrastructure, shared bicycles or a jointly funded shuttle."}},
     {"@type": "Question", "name": "Why do regional bus timetables serve commuters poorly?", "acceptedAnswer": {"@type": "Answer", "text": "They are often planned around school and shopping patterns rather than employment start and shift times."}},
     {"@type": "Question", "name": "What can employers do about accessibility themselves?", "acceptedAnswer": {"@type": "Answer", "text": "Provide station bicycles, full public transport subscriptions, align start times with trains and describe commutes honestly."}},
-    {"@type": "Question", "name": "Is accessibility investment better value than a talent campaign?", "acceptedAnswer": {"@type": "Answer", "text": "Often — it permanently expands every local employer's candidate pool, while campaigns stop working when funding ends."}}
+    {"@type": "Question", "name": "Is accessibility investment better value than a talent campaign?", "acceptedAnswer": {"@type": "Answer", "text": "Often - it permanently expands every local employer's candidate pool, while campaigns stop working when funding ends."}}
   ]
 }
 </script>

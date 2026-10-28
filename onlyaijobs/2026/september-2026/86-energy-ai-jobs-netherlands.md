@@ -34,7 +34,7 @@ Content Format: Sector Analysis
 
 The Dutch electricity system is the subject of an active operational crisis, and that crisis is the single best explanation for why energy has become one of the more attractive sectors for technical work in the country. Connection capacity across large areas is fully allocated. New industrial sites, and sometimes new housing, cannot obtain the grid capacity they need. Physical reinforcement takes years.
 
-The consequence is that managing the system with the infrastructure that already exists has become an urgent economic problem rather than an engineering nicety, and the tools for doing so are forecasting, optimisation and coordination — which is to say, data work.
+The consequence is that managing the system with the infrastructure that already exists has become an urgent economic problem rather than an engineering nicety, and the tools for doing so are forecasting, optimisation and coordination - which is to say, data work.
 
 ## Why the Urgency Is Real Rather Than Rhetorical
 
@@ -126,7 +126,7 @@ The transferable skills are more standard than candidates assume, and the domain
 
 **What transfers directly.** Time series forecasting at multiple horizons. Optimisation under constraints. Anomaly detection on sensor data. Spatial analysis. Stochastic optimisation and decision-making under uncertainty. Working with operational systems where mistakes have consequences.
 
-**What you will need to learn.** How the physical system behaves — why voltage matters, what a transformer does, what reactive power is, why a network has limits that are not simply a maximum number. How the market is structured — day-ahead, intraday, balancing, and who is responsible for what. How regulation constrains action.
+**What you will need to learn.** How the physical system behaves - why voltage matters, what a transformer does, what reactive power is, why a network has limits that are not simply a maximum number. How the market is structured - day-ahead, intraday, balancing, and who is responsible for what. How regulation constrains action.
 
 None of this requires an engineering degree. It requires a few weeks of genuine reading and a willingness to ask questions of people who know the system.
 
@@ -153,7 +153,7 @@ The second corollary is that the work has a public purpose that is easy to artic
 
 ## Where to Start
 
-Spend a few hours understanding the structure of the electricity system and the current capacity constraint before applying anywhere in this sector — it will change how you read every posting. Network operators are the largest employers and currently the most under-resourced relative to their scope, which makes them the most accessible substantial entry point.
+Spend a few hours understanding the structure of the electricity system and the current capacity constraint before applying anywhere in this sector - it will change how you read every posting. Network operators are the largest employers and currently the most under-resourced relative to their scope, which makes them the most accessible substantial entry point.
 
 Browse current energy, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

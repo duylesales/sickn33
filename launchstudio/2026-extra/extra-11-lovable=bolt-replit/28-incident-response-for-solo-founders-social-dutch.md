@@ -1,4 +1,4 @@
-🚨 Thijs Marsman runde Werkbon voor 70 installatiebedrijven in Noord-Holland. Een update op woensdagavond brak het werkbonnenscherm volledig. Zonder geautomatiseerde rollback ontdekte Thijs de storing pas na 90 minuten via een boze WhatsApp van een klant — waarna het 5 stressvolle uren kostte om de productie weer draaiend te krijgen. 😳
+🚨 Thijs Marsman runde Werkbon voor 70 installatiebedrijven in Noord-Holland. Een update op woensdagavond brak het werkbonnenscherm volledig. Zonder geautomatiseerde rollback ontdekte Thijs de storing pas na 90 minuten via een boze WhatsApp van een klant - waarna het 5 stressvolle uren kostte om de productie weer draaiend te krijgen. 😳
 
 Als uw software om 22:00 uur crasht, is paniek geen strategie. Waarom solo-oprichters een strak incidenten-draaiboek nodig hebben:
 

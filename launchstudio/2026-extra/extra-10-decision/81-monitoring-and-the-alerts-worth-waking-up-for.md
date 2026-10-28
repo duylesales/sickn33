@@ -28,11 +28,11 @@ The right question is not "is the site up" but "which failures would matter, and
 
 The single highest-value change to typical monitoring is to check a real flow rather than a page.
 
-A synthetic check — a script running every few minutes from outside your infrastructure — that logs in as a test account, loads the main screen, and performs one meaningful read tells you what a customer would experience. If it can log in and see data, the application, the database, and authentication are all working, which is most of your product in one check.
+A synthetic check - a script running every few minutes from outside your infrastructure - that logs in as a test account, loads the main screen, and performs one meaningful read tells you what a customer would experience. If it can log in and see data, the application, the database, and authentication are all working, which is most of your product in one check.
 
 Two or three of these cover a small product: the core read path, the core write path if it can be done safely with a test account, and the login itself. Run them from outside your own hosting, so that an infrastructure failure does not take the monitoring with it.
 
-Underneath, add a health endpoint that reports whether the application can actually reach its dependencies — database, storage, queue — rather than merely responding. An application that returns a page while unable to reach its database is a specific and common state, and a naive check calls it healthy.
+Underneath, add a health endpoint that reports whether the application can actually reach its dependencies - database, storage, queue - rather than merely responding. An application that returns a page while unable to reach its database is a specific and common state, and a naive check calls it healthy.
 
 ## The Failures That Never Return an Error
 
@@ -46,7 +46,7 @@ This is the category that catches founders, because nothing in ordinary monitori
 
 **Scheduled work that silently did nothing.** A nightly report that runs successfully but produces zero rows because a query changed. Alert on the absence of expected output, not only on errors.
 
-**Certificates and credentials approaching expiry.** These fail completely, on a known date, and are entirely preventable — which makes them the most annoying category to be caught by.
+**Certificates and credentials approaching expiry.** These fail completely, on a known date, and are entirely preventable - which makes them the most annoying category to be caught by.
 
 Each is a small check. Together they cover the failures that otherwise get reported by customers days later, which is both the most expensive way to find out and the one that costs the most trust.
 
@@ -76,7 +76,7 @@ What this looks like in practice, for a product with a few hundred customers and
 
 An external uptime service running two or three synthetic journey checks every few minutes, alerting after two consecutive failures to avoid noise from momentary blips. Error tracking with account context, alerting on new error types and on rate spikes. Heartbeats on every scheduled job and background worker. Queue depth and age alerts. A weekly review of the top errors and slowest endpoints. Expiry alerts for certificates, domains, and API credentials, set weeks ahead.
 
-Cost is modest — the free and entry tiers of common services cover most of this at this scale — and the setup is an afternoon. The thing that makes it work is not the tooling but the discipline of keeping the urgent tier small and acting on what it tells you.
+Cost is modest - the free and entry tiers of common services cover most of this at this scale - and the setup is an afternoon. The thing that makes it work is not the tooling but the discipline of keeping the urgent tier small and acting on what it tells you.
 
 ## Real example
 
@@ -93,7 +93,7 @@ The review found two more silent failures in progress: payment webhooks had been
 **Result:** heartbeat monitoring on all scheduled jobs alerting when a run is missed, synthetic checks covering login and the core read path, error tracking with account context, webhook delivery monitoring, and alerts on expected output being absent. The nightly job failure would now be detected within an hour.
 
 > "My uptime monitor was green the entire time. It was telling me the truth about the only thing it was watching, which happened not to be the part that mattered."
-> — **Timo van Loon, Founder, Abonnee**
+> - **Timo van Loon, Founder, Abonnee**
 
 **Cost & Timeline:** monitoring and alerting setup delivered in 2 business days.
 

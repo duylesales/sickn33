@@ -91,6 +91,6 @@ Halfgeleiderapparatuur en geavanceerde chiptechnologie vallen onder exportcontro
 
 ## Waar te beginnen
 
-Trekt deze sector je en is je achtergrond niet fysica of een nauw verwant kwantitatief vak, begin dan bij het precisietoeleveranciersnetwerk of engineeringdiensten. Bereid je voor door statistiekfundamenten op te frissen — experimenteel ontwerp, meervoudig toetsen, meetfout — in plaats van recente architecturen.
+Trekt deze sector je en is je achtergrond niet fysica of een nauw verwant kwantitatief vak, begin dan bij het precisietoeleveranciersnetwerk of engineeringdiensten. Bereid je voor door statistiekfundamenten op te frissen - experimenteel ontwerp, meervoudig toetsen, meetfout - in plaats van recente architecturen.
 
 Bekijk actuele halfgeleider-, hightech productie- en machine learning-vacatures in Nederland op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).

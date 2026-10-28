@@ -21,7 +21,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Nonprofits run on trust. A donor gives because they believe the money reaches its purpose; a volunteer signs up because they believe the organisation is careful with them and with the people they help. When a foundation or association builds its own tool with Lovable or Bolt — often because commercial platforms are too expensive or too rigid — that trust transfers to the software. Making a nonprofit AI application production ready is less about scale and more about not breaking that trust.
+Nonprofits run on trust. A donor gives because they believe the money reaches its purpose; a volunteer signs up because they believe the organisation is careful with them and with the people they help. When a foundation or association builds its own tool with Lovable or Bolt - often because commercial platforms are too expensive or too rigid - that trust transfers to the software. Making a nonprofit AI application production ready is less about scale and more about not breaking that trust.
 
 ## Decision 1: One-Off, Recurring or Both?
 
@@ -33,7 +33,7 @@ Real recurring donations need a proper mandate (Mollie and Stripe both support S
 
 Donors to organisations with ANBI status in the Netherlands may be able to deduct gifts from their taxes, and periodic gifts under a written agreement have their own rules. Donors expect clear confirmations, and some expect annual overviews.
 
-Decide what your app sends — confirmation per donation, annual summary, periodic gift agreements — and make sure amounts, dates and your organisation's details are correct and consistent. The [Belastingdienst's ANBI information](https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken) explains the donor side.
+Decide what your app sends - confirmation per donation, annual summary, periodic gift agreements - and make sure amounts, dates and your organisation's details are correct and consistent. The [Belastingdienst's ANBI information](https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken) explains the donor side.
 
 ## Decision 3: How Is Donor Data Used?
 
@@ -43,13 +43,13 @@ Also decide who inside the organisation sees donor data. A volunteer coordinator
 
 ## Decision 4: What Do You Collect From Volunteers?
 
-Volunteer platforms collect contact details, availability and skills — and sometimes more sensitive information: a Certificate of Conduct (VOG) status for volunteers working with children or vulnerable adults, health information relevant to certain activities, emergency contacts. Some organisations are tempted to store scans of VOG certificates and IDs "just in case."
+Volunteer platforms collect contact details, availability and skills - and sometimes more sensitive information: a Certificate of Conduct (VOG) status for volunteers working with children or vulnerable adults, health information relevant to certain activities, emergency contacts. Some organisations are tempted to store scans of VOG certificates and IDs "just in case."
 
-Decide the minimum: often it is enough to record that a VOG was checked, on which date, by whom — not to keep the document. Restrict access to screening information to the people responsible for it.
+Decide the minimum: often it is enough to record that a VOG was checked, on which date, by whom - not to keep the document. Restrict access to screening information to the people responsible for it.
 
 ## Decision 5: Are Vulnerable People in Your Data?
 
-Food banks, refugee support, elderly care visitors, youth programmes — many nonprofits hold data about people in vulnerable situations. That data can include special category information (health, religion, ethnicity) or information that would be harmful if exposed, such as addresses of people escaping violence.
+Food banks, refugee support, elderly care visitors, youth programmes - many nonprofits hold data about people in vulnerable situations. That data can include special category information (health, religion, ethnicity) or information that would be harmful if exposed, such as addresses of people escaping violence.
 
 If this applies, it changes the build: stricter access controls, data minimisation, possibly a data protection impact assessment, and careful logging of who views what. AI-generated apps do not distinguish between a volunteer's email and a client's address; your production system must.
 
@@ -82,7 +82,7 @@ Every one of these steps reduces donor attrition, which for recurring programmes
 
 ## Periodic Gifts and Tax Paperwork
 
-In the Netherlands, periodic gifts to ANBI-registered organisations — typically committed for at least five years in a written agreement — can be fully deductible for donors. Supporting this properly means generating the agreement with the correct details, recording both parties' signatures, tracking the agreed period and producing annual statements. The rules are set by the tax authority and change occasionally, so the text and conditions should be confirmed with an adviser; the app's job is to store the facts and produce accurate documents on time.
+In the Netherlands, periodic gifts to ANBI-registered organisations - typically committed for at least five years in a written agreement - can be fully deductible for donors. Supporting this properly means generating the agreement with the correct details, recording both parties' signatures, tracking the agreed period and producing annual statements. The rules are set by the tax authority and change occasionally, so the text and conditions should be confirmed with an adviser; the app's job is to store the facts and produce accurate documents on time.
 
 ## Separating Donor, Volunteer and Client Data
 
@@ -94,7 +94,7 @@ Nonprofit platforms often mix three very different groups: donors, volunteers an
 | Volunteers | Contact, availability, skills, screening status | Coordinators | VOG status recorded, not documents |
 | Clients / beneficiaries | Contact, needs, sometimes sensitive circumstances | Only assigned coordinators | Minimisation, access logging, strict retention |
 
-Keeping these groups in separate tables with separate access policies prevents the most damaging kind of mix-up — a volunteer seeing a vulnerable client's details they have no reason to know.
+Keeping these groups in separate tables with separate access policies prevents the most damaging kind of mix-up - a volunteer seeing a vulnerable client's details they have no reason to know.
 
 ## Volunteer Management Without Over-Collection
 
@@ -110,7 +110,7 @@ Donors increasingly check how charities handle both money and data. A clear page
 
 ## Low-Cost Tools for Small Foundations
 
-Budgets are tight, but several essentials are cheap or free: nonprofit discounts on many SaaS tools, free tiers for uptime monitoring and error tracking, and payment providers with transparent per-transaction pricing. Spend the engineering budget on the parts that protect people — access control, payments, sensitive data — and use free tools for the rest.
+Budgets are tight, but several essentials are cheap or free: nonprofit discounts on many SaaS tools, free tiers for uptime monitoring and error tracking, and payment providers with transparent per-transaction pricing. Spend the engineering budget on the parts that protect people - access control, payments, sensitive data - and use free tools for the rest.
 
 ## Incident Readiness for Charities
 
@@ -122,7 +122,7 @@ Charities have their own peaks: a televised appeal, a local disaster, year-end g
 
 ## Reporting to the Board and Funders
 
-Boards and institutional funders want reliable numbers: total donations per period, recurring donor retention, cost per euro raised, volunteer hours contributed. When the app records donations and volunteer activity accurately — with refunds, failed collections and cancellations properly reflected — these reports can be generated directly instead of being assembled from spreadsheets. Accurate reporting also supports applications for grants and recognitions that require audited figures.
+Boards and institutional funders want reliable numbers: total donations per period, recurring donor retention, cost per euro raised, volunteer hours contributed. When the app records donations and volunteer activity accurately - with refunds, failed collections and cancellations properly reflected - these reports can be generated directly instead of being assembled from spreadsheets. Accurate reporting also supports applications for grants and recognitions that require audited figures.
 
 ## Working With Shared Platforms for Several Foundations
 
@@ -138,7 +138,7 @@ A nonprofit app is production ready when donors are never charged wrongly, volun
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's work for nonprofits covers recurring payment setup, correct donor records and confirmations, consent tracking, role-based access with personal accounts, minimal handling of screening data, stricter protection where vulnerable people are involved, and the operational basics. Our engineers have shipped 160+ projects for enterprise clients — now they are here to launch yours, whether you are a startup or a foundation. The work is done by Manifera's engineers in Ho Chi Minh City, coordinated from Amsterdam and Singapore. See [Manifera's portfolio](https://www.manifera.com/portfolio/) for the range of organisations it has worked with.
+LaunchStudio's work for nonprofits covers recurring payment setup, correct donor records and confirmations, consent tracking, role-based access with personal accounts, minimal handling of screening data, stricter protection where vulnerable people are involved, and the operational basics. Our engineers have shipped 160+ projects for enterprise clients - now they are here to launch yours, whether you are a startup or a foundation. The work is done by Manifera's engineers in Ho Chi Minh City, coordinated from Amsterdam and Singapore. See [Manifera's portfolio](https://www.manifera.com/portfolio/) for the range of organisations it has worked with.
 
 [Describe your project](https://launchstudio.eu/en/#contact) and we will reply within one working day.
 
@@ -146,18 +146,18 @@ LaunchStudio's work for nonprofits covers recurring payment setup, correct donor
 
 ### An AI-Native Founder in Action: A Volunteer and Donation Platform in Friesland
 
-Gerrit Zijlstra, a retired teacher and board member of several local foundations in Sneek, built Vrijwilligersplein in Lovable: a shared platform where small Frisian foundations — a food bank, a visiting service for isolated elderly people, a sports foundation for children with disabilities — could recruit volunteers, schedule shifts and collect donations. Eleven foundations and about 700 volunteers used it.
+Gerrit Zijlstra, a retired teacher and board member of several local foundations in Sneek, built Vrijwilligersplein in Lovable: a shared platform where small Frisian foundations - a food bank, a visiting service for isolated elderly people, a sports foundation for children with disabilities - could recruit volunteers, schedule shifts and collect donations. Eleven foundations and about 700 volunteers used it.
 
-When a new treasurer asked how recurring donations were handled, Gerrit realised they were not: "monthly donors" received a monthly email with a payment link, and about half stopped paying within three months. A LaunchStudio review found more. Volunteers at the food bank could see the visiting service's client list — names and addresses of isolated elderly people — through the API. Scans of VOG certificates and passports were stored in a public bucket. Several foundations shared a single admin login, used by board members past and present. Donation confirmations showed amounts but not the foundation's ANBI details.
+When a new treasurer asked how recurring donations were handled, Gerrit realised they were not: "monthly donors" received a monthly email with a payment link, and about half stopped paying within three months. A LaunchStudio review found more. Volunteers at the food bank could see the visiting service's client list - names and addresses of isolated elderly people - through the API. Scans of VOG certificates and passports were stored in a public bucket. Several foundations shared a single admin login, used by board members past and present. Donation confirmations showed amounts but not the foundation's ANBI details.
 
 Over nine business days, the team implemented SEPA recurring donations via Mollie mandates with failed-payment handling and donor self-service cancellation, separated data per foundation in the database, restricted client data at each foundation to coordinators with two-factor authentication and logged access, replaced stored VOG scans with a recorded check date and deleted the existing scans, created personal accounts for every board member and removed the shared login, and corrected donation confirmations and added annual donor summaries.
 
 **Result:** Recurring donor retention across the foundations rose from roughly 50% to over 90% after six months. The visiting service's clients' data is now visible only to its three coordinators, and two further foundations joined after seeing the access setup.
 
 > *"We were asking people to trust us with money and with their neighbours' addresses. The software had to deserve that as much as the volunteers do."*
-> — **Gerrit Zijlstra, Founder, Vrijwilligersplein (Sneek)**
+> - **Gerrit Zijlstra, Founder, Vrijwilligersplein (Sneek)**
 
-**Cost & Timeline:** €2,400 (Launch Ready package with recurring payments, data separation, access control and screening data changes) — completed in 9 business days.
+**Cost & Timeline:** €2,400 (Launch Ready package with recurring payments, data separation, access control and screening data changes) - completed in 9 business days.
 
 ## Frequently Asked Questions
 

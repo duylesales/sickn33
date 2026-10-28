@@ -36,7 +36,7 @@ Content Format: Sector Guide
 }
 </script>
 
-Logistics is one of the few sectors where an AI professional can see the result of their work physically: a truck that leaves fuller, a warehouse aisle that is walked less, a container that waits fewer hours. It is also a sector where the most valuable techniques are often not the most fashionable ones — operations research and forecasting do more work than deep learning in most companies. AI jobs in logistics are plentiful across Europe, from parcel networks and freight forwarders to ports, retailers and manufacturers, and they reward people who enjoy messy operational data and measurable improvements. This guide explains where the roles are, what the problems look like, which skills employers test and how to enter the field.
+Logistics is one of the few sectors where an AI professional can see the result of their work physically: a truck that leaves fuller, a warehouse aisle that is walked less, a container that waits fewer hours. It is also a sector where the most valuable techniques are often not the most fashionable ones - operations research and forecasting do more work than deep learning in most companies. AI jobs in logistics are plentiful across Europe, from parcel networks and freight forwarders to ports, retailers and manufacturers, and they reward people who enjoy messy operational data and measurable improvements. This guide explains where the roles are, what the problems look like, which skills employers test and how to enter the field.
 
 ## Where AI Jobs in Logistics Are Found
 
@@ -58,7 +58,7 @@ Logistics is one of the few sectors where an AI professional can see the result 
 
 Logistics budgets follow measurable savings, and four categories dominate:
 
-- **Forecasting volumes and demand**, because everything downstream — staffing, vehicles, stock — is planned from it.
+- **Forecasting volumes and demand**, because everything downstream - staffing, vehicles, stock - is planned from it.
 - **Routing and scheduling**, where a few percent of distance or time translates directly into cost and emissions.
 - **Arrival and delay prediction**, because promises to customers depend on it and so do downstream operations.
 - **Inventory decisions**, where the trade-off between stockouts and working capital is measured in millions.
@@ -69,7 +69,7 @@ A fifth category has grown quickly: sustainability reporting and emissions optim
 
 The distinguishing feature of logistics data work is that a prediction is rarely the end product. You forecast volumes so that a planner can decide how many vans to book; you predict travel times so that a routing engine can sequence stops; you estimate demand so that an inventory policy can set order quantities.
 
-This means two things for your skill set. First, probabilistic forecasting matters more than point accuracy, because downstream decisions depend on uncertainty — a planner needs to know the busy-day risk, not the average. Second, you need at least working knowledge of optimisation: linear and mixed-integer programming, heuristics for vehicle routing, and the practical reality that a solver which returns a good answer in thirty seconds beats an optimal one that takes an hour.
+This means two things for your skill set. First, probabilistic forecasting matters more than point accuracy, because downstream decisions depend on uncertainty - a planner needs to know the busy-day risk, not the average. Second, you need at least working knowledge of optimisation: linear and mixed-integer programming, heuristics for vehicle routing, and the practical reality that a solver which returns a good answer in thirty seconds beats an optimal one that takes an hour.
 
 Teams that treat forecasting and optimisation as separate worlds usually produce models nobody uses. The people who connect them are the ones promoted.
 
@@ -85,7 +85,7 @@ OnlyAIJobs is a European job board that lists only AI, machine learning and data
 
 Logistics is a sector where exact location matters unusually much: distribution centres, depots, terminals and port offices are typically outside city centres, often in industrial areas with limited public transport. A vacancy labelled with a city name can mean a site half an hour beyond it. Seeing the real distance from your home before applying prevents a common disappointment late in the process.
 
-To be transparent about scope: listings are currently concentrated in the Netherlands — a natural logistics market, with vacancies in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, and employers such as Sendcloud, Boltrics, Accenture, Cegeka, VINCI Energies and Rexel among those listing AI and data roles. Elsewhere in Europe, combine it with national job boards and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
+To be transparent about scope: listings are currently concentrated in the Netherlands - a natural logistics market, with vacancies in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, and employers such as Sendcloud, Boltrics, Accenture, Cegeka, VINCI Energies and Rexel among those listing AI and data roles. Elsewhere in Europe, combine it with national job boards and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
 
 ## Routing and Scheduling in Practice
 
@@ -111,7 +111,7 @@ Emissions and congestion have become policy priorities in European ports, adding
 
 Logistics demand is rarely smooth. Promotions, holidays, weather, strikes, port congestion and geopolitical disruptions all shift volumes, and history alone is a poor guide. Practical approaches combine calendars and event data, promotional plans shared by commercial teams, weather forecasts, and explicit scenario modelling for known risks.
 
-The organisational challenge is often larger than the statistical one: commercial teams may not share promotion plans in time, and planners may keep their own spreadsheet adjustments. A forecasting project that ignores these human factors produces accurate numbers nobody uses. Building a shared, versioned forecast that planners can adjust — with their adjustments tracked and evaluated — is usually more valuable than a marginally better model.
+The organisational challenge is often larger than the statistical one: commercial teams may not share promotion plans in time, and planners may keep their own spreadsheet adjustments. A forecasting project that ignores these human factors produces accurate numbers nobody uses. Building a shared, versioned forecast that planners can adjust - with their adjustments tracked and evaluated - is usually more valuable than a marginally better model.
 
 ## Emissions and Sustainability Reporting
 
@@ -121,9 +121,9 @@ This is unglamorous data engineering with genuine consequences, and it has creat
 
 ## Skills and Titles to Look For
 
-Titles vary: data scientist (supply chain), operations research analyst, optimisation engineer, forecasting specialist, network analyst, data engineer (logistics), and increasingly AI engineer for teams building assistant tools over operational documents. Read responsibilities rather than titles — an "analyst" role in a parcel network can be more technically demanding than a "data scientist" role elsewhere.
+Titles vary: data scientist (supply chain), operations research analyst, optimisation engineer, forecasting specialist, network analyst, data engineer (logistics), and increasingly AI engineer for teams building assistant tools over operational documents. Read responsibilities rather than titles - an "analyst" role in a parcel network can be more technically demanding than a "data scientist" role elsewhere.
 
-Skills that recur in vacancies: Python and SQL, time series forecasting, mixed-integer programming or heuristics, geospatial analysis, simulation, and experience with planning or transport management systems. Domain vocabulary — SKU, lead time, fill rate, cut-off, linehaul, cross-dock, demurrage — is learnable quickly and signals seriousness in interviews.
+Skills that recur in vacancies: Python and SQL, time series forecasting, mixed-integer programming or heuristics, geospatial analysis, simulation, and experience with planning or transport management systems. Domain vocabulary - SKU, lead time, fill rate, cut-off, linehaul, cross-dock, demurrage - is learnable quickly and signals seriousness in interviews.
 
 ## Entering the Sector
 
@@ -136,13 +136,13 @@ Simulation experience is a quiet advantage: many logistics decisions are evaluat
 
 ## Working With Planners and Drivers
 
-The people who will use your output have decades of accumulated knowledge and a healthy scepticism of headquarters projects. Winning their trust follows a pattern: ride along or sit in the planning room first; ask what they currently do when the system is wrong; show them early versions and take their objections seriously; give them an override and analyse it rather than locking them out; and report results in their units — vehicles, hours, stops, euros — rather than in model metrics.
+The people who will use your output have decades of accumulated knowledge and a healthy scepticism of headquarters projects. Winning their trust follows a pattern: ride along or sit in the planning room first; ask what they currently do when the system is wrong; show them early versions and take their objections seriously; give them an override and analyse it rather than locking them out; and report results in their units - vehicles, hours, stops, euros - rather than in model metrics.
 
 Teams that do this consistently deploy far more models than teams with better algorithms and worse relationships. In logistics, adoption is the hard part, and adoption is a human problem.
 
 ## A Final Word
 
-Logistics will not offer the newest techniques, but it offers something many AI professionals want and rarely find: problems that are genuinely operational, feedback within days, and improvements you can point at in the physical world. If you enjoy messy data, constraints and the discipline of making a model fit a real decision, it is one of the most rewarding sectors in Europe — and one where experienced people remain in demand regardless of which technology is currently fashionable.
+Logistics will not offer the newest techniques, but it offers something many AI professionals want and rarely find: problems that are genuinely operational, feedback within days, and improvements you can point at in the physical world. If you enjoy messy data, constraints and the discipline of making a model fit a real decision, it is one of the most rewarding sectors in Europe - and one where experienced people remain in demand regardless of which technology is currently fashionable.
 
 ## Pay, Progression and Employer Types
 
@@ -158,7 +158,7 @@ An analyst joined a European parcel company to improve delivery time prediction.
 
 When he sat with a depot planner for two days, the reason became clear. The planner did not need a better average; she needed to know which routes risked finishing after the driver's legal hours, because those were the ones she had to intervene in the morning. Average error across all stops was irrelevant to her decision.
 
-He rebuilt the model to produce a probability of overrun per route, with a calibrated threshold that triggered an alert. Adoption was immediate, because the output matched a decision she already made. A year later the same framing was extended to two other depots, and he moved into a role designing planning tools rather than models — because he had learned the most valuable logistics skill: starting from the decision.
+He rebuilt the model to produce a probability of overrun per route, with a calibrated threshold that triggered an alert. Adoption was immediate, because the output matched a decision she already made. A year later the same framing was extended to two other depots, and he moved into a role designing planning tools rather than models - because he had learned the most valuable logistics skill: starting from the decision.
 
 ## Key Takeaways
 
@@ -170,7 +170,7 @@ He rebuilt the model to produce a probability of overrun per route, with a calib
 
 ## Where to Start
 
-Choose one logistics decision — staffing, routing, replenishment — and build a project that produces a decision, not just a prediction. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire supply chain data talent, list your first vacancy free via info@onlyaijobs.eu.
+Choose one logistics decision - staffing, routing, replenishment - and build a project that produces a decision, not just a prediction. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire supply chain data talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

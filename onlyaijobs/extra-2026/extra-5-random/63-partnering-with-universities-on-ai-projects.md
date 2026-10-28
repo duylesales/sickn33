@@ -70,17 +70,17 @@ Europe's higher education systems generally distinguish between research-oriente
 
 **Research universities** produce students trained in method and theory, often with stronger mathematical foundations. Their graduation projects are expected to contain an element of novelty, which suits genuinely open problems. Academic supervisors are interested in research questions, so a brief framed only as "build this for us" may be declined.
 
-**Universities of applied sciences** — hogescholen in the Netherlands, Fachhochschulen in German-speaking countries, and their equivalents elsewhere — train students for professional practice, with internships built into the curriculum. Their projects are typically more implementation-oriented and more directly useful to a company with a practical problem.
+**Universities of applied sciences** - hogescholen in the Netherlands, Fachhochschulen in German-speaking countries, and their equivalents elsewhere - train students for professional practice, with internships built into the curriculum. Their projects are typically more implementation-oriented and more directly useful to a company with a practical problem.
 
 For most organisations investigating whether something is feasible, applied science institutions are the better first contact: the students are oriented toward delivery, the timelines are predictable, and the institutions are accustomed to working with regional employers.
 
-For a hard problem where the answer is genuinely unknown — an unusual sensing challenge, a modelling question with no standard approach — a research group is the right partner, and the collaboration will be slower and deeper.
+For a hard problem where the answer is genuinely unknown - an unusual sensing challenge, a modelling question with no standard approach - a research group is the right partner, and the collaboration will be slower and deeper.
 
 ## Writing the Brief
 
 A well-written one-page brief is what determines whether you attract a good student and whether the project succeeds.
 
-Include: the organisation and what it does, in two sentences a student will understand; the business problem in plain language; the decision that would change if the question were answered; what data exists, in what form, over what period, with approximate volumes; what has already been tried; the expected deliverable; the practical arrangements — location, days on site, supervision, allowance; and what the student will learn.
+Include: the organisation and what it does, in two sentences a student will understand; the business problem in plain language; the decision that would change if the question were answered; what data exists, in what form, over what period, with approximate volumes; what has already been tried; the expected deliverable; the practical arrangements - location, days on site, supervision, allowance; and what the student will learn.
 
 Avoid: a wish list of several problems, technology requirements copied from a job advertisement, and language implying you already know the answer.
 
@@ -94,7 +94,7 @@ These three topics cause most of the friction, and all three are manageable if a
 
 **Data access.** Arrange it first. Decide what the student may see, in what environment, and who extracts it. An extract prepared in week one is worth more than a promise of access to production systems that requires three approvals.
 
-**Personal data.** If the data concerns people — customers, patients, employees — GDPR applies to the student's processing as it does to yours. Options include anonymisation, pseudonymisation, working with a subset, or working inside your environment under your controls. Involve whoever handles data protection in your organisation early; this is a short conversation if held at the right time and a project-ending one if held late.
+**Personal data.** If the data concerns people - customers, patients, employees - GDPR applies to the student's processing as it does to yours. Options include anonymisation, pseudonymisation, working with a subset, or working inside your environment under your controls. Involve whoever handles data protection in your organisation early; this is a short conversation if held at the right time and a project-ending one if held late.
 
 **Intellectual property.** Rules differ by country and institution, and universities often have standard agreements. Typical arrangements give the company rights to use the results while the student retains the right to publish their thesis, with confidential material handled separately. Read what the institution proposes rather than sending your own contract first; their template is usually reasonable and faster to agree.
 
@@ -158,7 +158,7 @@ And the most common failure is entirely within your control: a project that stal
 
 ## How OnlyAIJobs Fits a Regional Talent Strategy
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position — vacancies compete on how well they are written rather than on advertising spend.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page, and no employer can pay for a better position - vacancies compete on how well they are written rather than on advertising spend.
 
 Student collaboration and recruitment work together. When a project shows that the capability is worth having permanently, you need a vacancy that reaches people locally, and listings show the exact address and distance from the candidate's home so that nearby employers are visible to candidates who would otherwise never find them.
 
@@ -174,7 +174,7 @@ Through a local university of applied sciences, they took on a graduation studen
 
 The production manager met the student weekly. The IT manager arranged a data extract in the first week, before the project formally started.
 
-The result was mixed in the best way. Prediction was possible for two of five defect categories and not for the others, and the student explained clearly why — the remaining categories depended on material properties that were never measured. The report included a recommendation to instrument two additional measurements.
+The result was mixed in the best way. Prediction was possible for two of five defect categories and not for the others, and the student explained clearly why - the remaining categories depended on material properties that were never measured. The report included a recommendation to instrument two additional measurements.
 
 They implemented the recommendation, hired the student after graduation, and two years later had a small internal data team.
 

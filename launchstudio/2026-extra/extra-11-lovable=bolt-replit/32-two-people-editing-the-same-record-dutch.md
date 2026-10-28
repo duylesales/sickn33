@@ -34,7 +34,7 @@ In productie is de dynamiek het tegenovergestelde: tientalle gebruikers gelijkti
 
 ## Fout één: De verloren update (Lost Update)
 
-Het scenario hierboven beschreven. Twee gebruikers laden hetzelfde record in hun browser, beiden passen iets aan en slaan op. De tweede opslagactie overschrijft geruisloos de wijzigingen van de eerste — inclusief velden die de tweede persoon niet eens heeft aangeraakt, omdat een webformulier standaard álle velden meestuurt die het oorspronkelijk heeft ingeladen.
+Het scenario hierboven beschreven. Twee gebruikers laden hetzelfde record in hun browser, beiden passen iets aan en slaan op. De tweede opslagactie overschrijft geruisloos de wijzigingen van de eerste - inclusief velden die de tweede persoon niet eens heeft aangeraakt, omdat een webformulier standaard álle velden meestuurt die het oorspronkelijk heeft ingeladen.
 
 **De eenvoudigste en meest betrouwbare oplossing is optimistische gelijktijdigheid (optimistic concurrency).** Voeg een versienummer (`version INT`) of een `updated_at`-tijdstempel toe aan de databaserij. Zodra een gebruiker het formulier opent, ontvangt hij de huidige versie. Bij het opslaan wordt de update uitsluitend doorgevoerd als het versienummer in de database nog exact overeenkomt met de ingeladen versie (`WHERE id = $1 AND version = $2`). Heeft een collega in de tussentijd al opgeslagen? Dan raakt de update nul rijen. Je applicatie vangt dit op, legt aan de gebruiker uit dat het record tussentijds is gewijzigd en toont netjes de verschillen.
 
@@ -50,13 +50,13 @@ Het uitschakelen (disablen) van de verzendknop na de eerste klik via JavaScript 
 
 **De oplossing is idempotentietoetsing (idempotency):** de frontend genereert een unieke sleutel (een willekeurige UUID) voor de specifieke actie en stuurt deze mee in de header van het verzoek. De server registreert deze sleutel. Komt er binnen enkele minuten een tweede verzoek binnen met exact dezelfde sleutel? Dan voert de server de actie niet nogmaals uit, maar retourneert simpelweg het oorspronkelijke resultaat. Alle grote betaalproviders (zoals Stripe en Mollie) hanteren dit principe om dubbele incasso's te voorkomen, en ditzelfde patroon hoort thuis op elk endpoint dat records aanmaakt of transacties uitvoert.
 
-Voor eenvoudigere use-cases volstaat een database-uniekheidsrestrictie (`UNIQUE constraint`) — bijvoorbeeld één actieve boeking per gebruiker per tijdslot, afgedwongen op het niveau waar omzeiling onmogelijk is.
+Voor eenvoudigere use-cases volstaat een database-uniekheidsrestrictie (`UNIQUE constraint`) - bijvoorbeeld één actieve boeking per gebruiker per tijdslot, afgedwongen op het niveau waar omzeiling onmogelijk is.
 
 ## Fout drie: De race condition op schaarse capaciteit
 
 Tien beschikbare concertkaartjes, tien stoelen verkocht, twee bezoekers die op exact dezelfde seconde klikken, elf uitgegeven tickets.
 
-De door AI gegenereerde code leest volkomen logisch: controleer eerst of er nog plek is (`count < capacity`), en maak vervolgens de boeking aan (`INSERT INTO bookings`). In productie voeren beide browsers de controle tegelijkertijd uit vóórdat een van beiden de nieuwe rij heeft weggeschreven. Beiden zien één vrije plek, beiden krijgen groen licht, en beiden slaan op. Hoe vaak je die codefunctie ook doorleest, je vindt de fout niet — want het probleem schuilt in het tijdsverschil tussen de twee afzonderlijke SQL-commando's.
+De door AI gegenereerde code leest volkomen logisch: controleer eerst of er nog plek is (`count < capacity`), en maak vervolgens de boeking aan (`INSERT INTO bookings`). In productie voeren beide browsers de controle tegelijkertijd uit vóórdat een van beiden de nieuwe rij heeft weggeschreven. Beiden zien één vrije plek, beiden krijgen groen licht, en beiden slaan op. Hoe vaak je die codefunctie ook doorleest, je vindt de fout niet - want het probleem schuilt in het tijdsverschil tussen de twee afzonderlijke SQL-commando's.
 
 **De oplossing hoort thuis in de database, niet in je applicatielogica.** Voer de controle en het wegschrijven uit als één ondeelbare, atomaire operatie: een voorwaardelijke update die uitsluitend slaagt zolang de capaciteit groter is dan nul (`UPDATE events SET booked = booked + 1 WHERE id = $1 AND booked < capacity`), of wikkel beide acties in een databasetransactie met expliciete rijvergrendeling (`SELECT ... FOR UPDATE`).
 
@@ -72,7 +72,7 @@ Voor een oprichter zonder diepgaande databasekennis luidt de vuistregel: elke be
 
 Het afvangen van gelijktijdigheidsconflicten betekent dat de applicatie soms een bewerking moet weigeren. Hoe je dat formuleert, bepaalt de gebruikerservaring.
 
-*"Dit record is zojuist aangepast door een collega terwijl u aan het bewerken was. Hier ziet u de gewijzigde gegevens — wilt u uw versie overschrijven of de pagina vernieuwen?"* is een uitstekende melding: het legt de situatie helder uit, toont wat er veranderd is en biedt de gebruiker controle.
+*"Dit record is zojuist aangepast door een collega terwijl u aan het bewerken was. Hier ziet u de gewijzigde gegevens - wilt u uw versie overschrijven of de pagina vernieuwen?"* is een uitstekende melding: het legt de situatie helder uit, toont wat er veranderd is en biedt de gebruiker controle.
 
 *"Foutmelding: versieconflict (409 Conflict)"* is dezelfde technische beveiliging, maar gepresenteerd als een systeemcrash die direct leidt tot gefrustreerde support-e-mails.
 
@@ -110,9 +110,9 @@ Verkoopt jouw applicatie iets met beperkte beschikbaarheid en wil je zeker weten
 
 Er bestaan twee overkoepelende strategieën voor gegevensbeveiliging, en de keuze daartussen is logischer dan de termen doen vermoeden:
 
-**Optimistisch vergrendelen** gaat ervan uit dat gelijktijdige bewerkingen relatief zeldzaam zijn. Iedereen kan direct beginnen met bewerken; pas op het moment van opslaan wordt gecontroleerd of er een conflict is opgetreden. Dit is het model met de versiekolom, en het is de ideale aanpak voor records die incidenteel door meerdere mensen worden geraadpleegd — zoals een klantkaart, vacaturetekst of productomschrijving. Het risico is dat een gebruiker zijn wijzigingen kan kwijtraken bij het opslaan, wat je opvangt door de verschillen inzichtelijk te maken.
+**Optimistisch vergrendelen** gaat ervan uit dat gelijktijdige bewerkingen relatief zeldzaam zijn. Iedereen kan direct beginnen met bewerken; pas op het moment van opslaan wordt gecontroleerd of er een conflict is opgetreden. Dit is het model met de versiekolom, en het is de ideale aanpak voor records die incidenteel door meerdere mensen worden geraadpleegd - zoals een klantkaart, vacaturetekst of productomschrijving. Het risico is dat een gebruiker zijn wijzigingen kan kwijtraken bij het opslaan, wat je opvangt door de verschillen inzichtelijk te maken.
 
-**Pessimistisch vergrendelen (locking)** voorkomt conflicten vooraf door data te blokkeren: zodra één persoon begint te bewerken, is het record voor anderen geblokkeerd. Dit past bij schermen waar gebruikers urenlang intensief aan werken en waar elk dataverlies desastreus is — zoals een complexe juridische overeenkomst of een uitgebreid medisch dossier. Het nadeel is dat locks moeten verlopen met een time-out, omdat een gebruiker die zijn laptop dichtklapt anders het hele record permanent blokkeert voor collega's.
+**Pessimistisch vergrendelen (locking)** voorkomt conflicten vooraf door data te blokkeren: zodra één persoon begint te bewerken, is het record voor anderen geblokkeerd. Dit past bij schermen waar gebruikers urenlang intensief aan werken en waar elk dataverlies desastreus is - zoals een complexe juridische overeenkomst of een uitgebreid medisch dossier. Het nadeel is dat locks moeten verlopen met een time-out, omdat een gebruiker die zijn laptop dichtklapt anders het hele record permanent blokkeert voor collega's.
 
 Voor de meeste vroege SaaS-producten is optimistisch vergrendelen de aangewezen standaard, eventueel aangevuld met actieve aanwezigheidsindicatoren in de interface.
 
@@ -132,10 +132,10 @@ In vijf werkdagen werd de backend gehard: capaciteit werd omgezet naar een atoma
 
 **Resultaat:** twee maanden later verliep de lancering van een uitverkochte reeks van zes workshops vlekkeloos zonder enige overboeking. De geautomatiseerde test bewees direct zijn waarde door een regressiefout op te vangen toen er later een wachtlijstfunctie werd toegevoegd.
 
-> *"Ik heb die boekingsfunctie wel twintig keer herlezen op zoek naar de bug. De bug was dat twee mensen op exact dezelfde seconde klikten — en dat is iets wat je met het blote oog nooit in de code kunt zien."*
-> — **Marloes Huisman, Oprichter, Ambachtsklas (Utrecht)**
+> *"Ik heb die boekingsfunctie wel twintig keer herlezen op zoek naar de bug. De bug was dat twee mensen op exact dezelfde seconde klikten - en dat is iets wat je met het blote oog nooit in de code kunt zien."*
+> - **Marloes Huisman, Oprichter, Ambachtsklas (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 2.500 (atomaire capaciteitsbewaking, idempotentietoetsing, versienummering, gelijktijdigheidstests in deployment-pipeline) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.500 (atomaire capaciteitsbewaking, idempotentietoetsing, versienummering, gelijktijdigheidstests in deployment-pipeline) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 

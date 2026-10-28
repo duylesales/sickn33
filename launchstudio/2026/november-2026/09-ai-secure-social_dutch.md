@@ -2,7 +2,7 @@
 
 Lekt uw nieuwe SaaS-prototype op dit moment gevoelige data? 
 
-AI-tools zoals Bolt en Cursor zijn geweldig voor snelheid, maar ze trainen op de meest voorkomende codefragmenten — niet op de meest veilige. 
+AI-tools zoals Bolt en Cursor zijn geweldig voor snelheid, maar ze trainen op de meest voorkomende codefragmenten - niet op de meest veilige. 
 
 De 5 meest voorkomende AI-beveiligingsfouten:
 🔴 Zichtbare API-sleutels in de frontend (leegtrekken van uw OpenAI-tegoed)

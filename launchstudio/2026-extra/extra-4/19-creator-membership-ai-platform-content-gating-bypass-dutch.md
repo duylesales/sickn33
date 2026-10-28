@@ -33,7 +33,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
 
 Controleert uw lidmaatschapsplatform daadwerkelijk wie er vraagt voordat het premium inhoud serveert, of controleert het alleen wie er is ingelogd *voordat het de link toont* naar die inhoud? Dat klinkt als hetzelfde ding. Dat is het niet – en de kloof ertussen is exact hoe een betalend lid ontdekt dat uw gehele inhoudsbibliotheek één geraden URL verwijderd is van iedereen op het internet.
 
-## De bug zit niet in uw code — het zit in wat uw code niet controleert
+## De bug zit niet in uw code - het zit in wat uw code niet controleert
 
 AI-paginabouwers zoals Bolt zijn erg goed in voorwaardelijke weergave: als de gebruiker een ingelogd lid is, toon de knop "Bekijken"; zo niet, toon een betaalmuur. Waar ze niet automatisch goed in zijn, is het afdwingen van diezelfde afscherming op de bronlaag – het daadwerkelijke videobestand, de afbeelding of de PDF die wordt opgevraagd. Een veelvoorkomend patroon in met AI gegenereerde apps is het opslaan van premium media op een voorspelbare, openbaar bereikbare URL, en vervolgens volledig vertrouwen op de frontend om te beslissen of een link daarnaar wordt weergegeven. Dat is afscherming aan de clientzijde. En afscherming aan de clientzijde is geen toegangsbeheer. Het is een UI-gemak dat toevallig ook het gehele beveiligingsmodel is, wat betekent dat iedereen die de directe URL verkrijgt – of raadt – uw inlogscherm volledig kan omzeilen.
 
@@ -80,9 +80,9 @@ LaunchStudio's ingenieurs verplaatsten de levering van premium video achter een 
 **Resultaat:** premium inhoud kan niet langer worden geopend via een gedeelde of geraden URL – elk verzoek is nu aan de serverzijde geautoriseerd, onafhankelijk van wat de frontend toont.
 
 > *"Een lid dat me bijna terloops vertelde dat hij gewoon een link kon plakken en de inlog volledig kon overslaan – dat is het moment waarop ik me realiseerde dat mijn betaalmuur decoratief was."*
-> — **Lieke Hermans, Oprichter, CreatorClub (Amersfoort)**
+> - **Lieke Hermans, Oprichter, CreatorClub (Amersfoort)**
 
-**Kosten en tijdlijn:** € 850 (toegangsbeheer via ondertekende URL's, geauthenticeerde medialevering, volledige opslag- en API-route-audit) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 850 (toegangsbeheer via ondertekende URL's, geauthenticeerde medialevering, volledige opslag- en API-route-audit) - voltooid in 4 werkdagen.
 
 ---
 

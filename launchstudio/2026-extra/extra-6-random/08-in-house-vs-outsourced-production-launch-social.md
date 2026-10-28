@@ -1,4 +1,4 @@
-🚌 Iris Hendricks was building LabRooster, a lab scheduling SaaS for research facilities, using Bolt. She hired a freelancer to take it production-ready. Three weeks in, he stopped responding — no handoff call, no final commit message, nothing. 😳
+🚌 Iris Hendricks was building LabRooster, a lab scheduling SaaS for research facilities, using Bolt. She hired a freelancer to take it production-ready. Three weeks in, he stopped responding - no handoff call, no final commit message, nothing. 😳
 
 The scariest part wasn't that something was broken. It was that nobody knew what had changed. 🧠
 
@@ -11,7 +11,7 @@ The scariest part wasn't that something was broken. It was that nobody knew what
 ✅ Mapped which changes were complete versus abandoned mid-edit
 ✅ Rebuilt the missing documentation before touching a single new feature
 
-At **LaunchStudio**, we're Manifera's team of 120+ engineers — the same group that has delivered 160+ projects for clients like Vodafone and TNO — with continuity that's structural rather than personal. 🛡️
+At **LaunchStudio**, we're Manifera's team of 120+ engineers - the same group that has delivered 160+ projects for clients like Vodafone and TNO - with continuity that's structural rather than personal. 🛡️
 
 Her result: LabRooster relaunched to its three pilot labs eight days later than planned, but with a documented, stable codebase and a paper trail her next contractor would never have to reconstruct from scratch. 🚀
 

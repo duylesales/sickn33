@@ -45,7 +45,7 @@ Europe's automotive industry is in the middle of the largest engineering transit
 
 **Vehicle data and connected services.** Fleets of connected vehicles generate enormous telemetry used for diagnostics, predictive maintenance, warranty analysis, battery health and usage-based services.
 
-**Manufacturing.** Vision inspection, process optimisation, robot performance and logistics inside plants — often the largest employer of data people at a carmaker, and the least discussed.
+**Manufacturing.** Vision inspection, process optimisation, robot performance and logistics inside plants - often the largest employer of data people at a carmaker, and the least discussed.
 
 **Supply chain and aftersales.** Demand forecasting, parts planning, supplier risk, pricing and warranty claim analysis.
 
@@ -67,7 +67,7 @@ Three consequences shape the work:
 
 **Storage and retrieval are engineering problems in their own right.** Teams need to find the ninety seconds of recorded driving that contain a specific scenario across petabytes of logs. Metadata extraction, scenario tagging and searchable indexes of drive data are substantial systems, and the people who build them are valued.
 
-**Labelling is expensive and never finished.** Annotating sensor data at scale requires tooling, quality control and often external providers. Deciding what to label — which rare scenarios are worth the cost — is a strategic decision, not a clerical one.
+**Labelling is expensive and never finished.** Annotating sensor data at scale requires tooling, quality control and often external providers. Deciding what to label - which rare scenarios are worth the cost - is a strategic decision, not a clerical one.
 
 **Privacy applies.** Video from public roads contains faces and licence plates; cabin sensing captures occupants; connected vehicles reveal movement patterns. GDPR obligations mean anonymisation pipelines, retention limits and documented lawful bases are part of the data infrastructure rather than an afterthought.
 
@@ -79,7 +79,7 @@ You cannot drive enough kilometres to validate a system against rare events, so 
 
 The work includes building scenario libraries, generating synthetic sensor data, running massive parallel simulation campaigns, measuring coverage of the operational design domain, and analysing where real and simulated behaviour diverge. It combines software engineering, statistics and domain modelling, and it suits people who like rigorous measurement more than model architecture.
 
-Two things make it durable. First, regulation and internal safety processes require evidence, and simulation is how that evidence is produced at scale. Second, the skills transfer to any safety-relevant AI domain — medical devices, industrial robotics, aviation — because the underlying question, how do you know this works outside the cases you tested, is universal.
+Two things make it durable. First, regulation and internal safety processes require evidence, and simulation is how that evidence is produced at scale. Second, the skills transfer to any safety-relevant AI domain - medical devices, industrial robotics, aviation - because the underlying question, how do you know this works outside the cases you tested, is universal.
 
 Candidates often overlook this track because it is less glamorous than perception research. That is precisely why competition is lower and the hiring pipelines are more open, particularly at suppliers and engineering service companies across Germany, central Europe and Scandinavia.
 
@@ -89,7 +89,7 @@ Understanding the industry's structure makes a job search far more efficient.
 
 **Vehicle manufacturers** hire for platform software, perception, connected services, manufacturing and corporate analytics. Processes are formal, projects are long, and stability is generally high.
 
-**Tier 1 suppliers** build the systems that go into vehicles — sensors, control units, software stacks. They employ a large share of the industry's machine learning engineers and often offer deeper technical work than the carmaker itself.
+**Tier 1 suppliers** build the systems that go into vehicles - sensors, control units, software stacks. They employ a large share of the industry's machine learning engineers and often offer deeper technical work than the carmaker itself.
 
 **Engineering service providers** supply project teams to both of the above. Variety is high, you may work on several programmes, and it is a common entry route for people without automotive experience.
 
@@ -105,7 +105,7 @@ If you have no automotive background, suppliers, service providers and software 
 
 The shift to electric vehicles has produced a data domain that barely existed a decade ago, and it is hiring steadily.
 
-Battery state estimation — charge, health, remaining life — is a modelling problem with real physics underneath, where hybrid approaches combining electrochemical models with machine learning are standard. Thermal management, charging optimisation, range prediction under real conditions and degradation forecasting all follow.
+Battery state estimation - charge, health, remaining life - is a modelling problem with real physics underneath, where hybrid approaches combining electrochemical models with machine learning are standard. Thermal management, charging optimisation, range prediction under real conditions and degradation forecasting all follow.
 
 Beyond the vehicle, charging infrastructure operators forecast demand and manage load, fleet operators optimise charging schedules against energy prices, and manufacturers analyse warranty and field data to understand degradation across populations of vehicles.
 
@@ -161,7 +161,7 @@ Technical documentation is the obvious case. A vehicle programme produces requir
 
 Warranty and field quality is another. Dealer reports and technician notes are free text, written quickly, often in local languages with heavy abbreviation. Classifying them and linking them to vehicle telemetry helps quality teams detect emerging issues sooner, which has direct financial consequences.
 
-Engineering productivity applications — code assistance, test generation, requirement analysis — are being trialled under careful controls, because intellectual property and traceability requirements limit what can leave the organisation.
+Engineering productivity applications - code assistance, test generation, requirement analysis - are being trialled under careful controls, because intellectual property and traceability requirements limit what can leave the organisation.
 
 For candidates, these roles are considerably easier to enter than perception work, use familiar skills, and sit inside the same companies. They are a legitimate route into the sector rather than a consolation prize.
 
@@ -193,7 +193,7 @@ Equally important is the ability to reason about failure. Interviewers ask what 
 
 ## Where to Start
 
-Build depth in one area — perception, telemetry or manufacturing data — and learn to describe a system's operational limits precisely. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Build depth in one area - perception, telemetry or manufacturing data - and learn to describe a system's operational limits precisely. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

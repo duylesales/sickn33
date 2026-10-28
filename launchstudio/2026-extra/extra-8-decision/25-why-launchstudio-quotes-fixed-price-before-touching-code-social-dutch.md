@@ -1,4 +1,4 @@
-🚨 Geschat: 12 uur. Uiteindelijke factuur, zes weken later: meer dan 60 uur — zonder duidelijke verantwoording waarom. Dat overkwam Naomi met haar vorige freelancer. 😳
+🚨 Geschat: 12 uur. Uiteindelijke factuur, zes weken later: meer dan 60 uur - zonder duidelijke verantwoording waarom. Dat overkwam Naomi met haar vorige freelancer. 😳
 
 Uurtariefbilling beloont stilletjes de verkeerde prikkel: hoe langer het duurt, hoe meer er wordt verdiend. Dit is waarom een vaste prijs vóór het scopinggesprek werkt: 🧠
 
@@ -10,7 +10,7 @@ Uurtariefbilling beloont stilletjes de verkeerde prikkel: hoe langer het duurt, 
 ✅ LaunchStudio beoordeelt uw codebase tegen een bekende, afgebakende set risicocategorieën vóórdat er wordt gequoteerd
 ✅ U ontvangt een gespecificeerde offerte: elk gat, elk risico, elke kostenpost apart uitgelegd
 ✅ Het risico van onderschatting ligt bij LaunchStudio, niet bij u
-✅ Vaste pakketprijs — geen open-ended uren, geen verrassingen achteraf
+✅ Vaste pakketprijs - geen open-ended uren, geen verrassingen achteraf
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, wordt elke opdracht zo gescoped voordat er een getal wordt genoemd. 🛡️
 

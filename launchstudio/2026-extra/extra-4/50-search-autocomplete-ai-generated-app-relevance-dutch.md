@@ -78,9 +78,9 @@ In het daadwerkelijke dagelijkse gebruik bij winkels was het patroon heel anders
 LaunchStudio verving de zoekopdracht met exacte sub-tekenreeksen door een fuzzy-matching implementatie die typfouten, gedeeltelijke termen en verschillen in woordvolgorde tolerant afhandelt. We voegden relevantieranking toe zodat de dichtstbijzijnde matches als eerste naar boven komen in plaats van dat resultaten in willekeurige databasevolgorde verschijnen. **Resultaat:** winkelpersoneel dat zoekt onder echte, imperfecte omstandigheden met tijdsdruk vindt nu betrouwbaar wat er daadwerkelijk op voorraad is in plaats van aan te nemen dat het ontbreekt.
 
 > *"Ik had geen idee hoeveel omzet we verloren aan een zoekbalk die het simpelweg opgaf bij typfouten. Het daadwerkelijk zien werken met echte, rommelige invoer van personeel was oprecht het moment dat het product af voelde."*
-> — **Puck Hendriksen, Oprichter, VoorraadZoek (Heerenveen)**
+> - **Puck Hendriksen, Oprichter, VoorraadZoek (Heerenveen)**
 
-**Kosten en tijdlijn:** € 850 (implementatie van fuzzy search, relevantieranking, bruikbaarheidstesten voor personeel) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 850 (implementatie van fuzzy search, relevantieranking, bruikbaarheidstesten voor personeel) - voltooid in 5 werkdagen.
 
 ---
 

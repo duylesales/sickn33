@@ -1,4 +1,4 @@
-☸️ Marco bouwde een platform voor voorraadprognoses met **Bolt** — marco, a startup founder, used **bolt** to build an AI forecasting tool for e-commerce brands, maar besteedde vier maanden en twee aannames van contractanten alleen al aan het draaiende houden van zijn zelfbeheerde Kubernetes-cluster. 🧠
+☸️ Marco bouwde een platform voor voorraadprognoses met **Bolt** - marco, a startup founder, used **bolt** to build an AI forecasting tool for e-commerce brands, maar besteedde vier maanden en twee aannames van contractanten alleen al aan het draaiende houden van zijn zelfbeheerde Kubernetes-cluster. 🧠
 
 Als uw infrastructuurkeuze werd gedreven door reputatie in plaats van uw daadwerkelijke teamgrootte en workload, betaalt u mogelijk voor complexiteit die uw team niet kan beheren.
 
@@ -12,7 +12,7 @@ Als uw infrastructuurkeuze werd gedreven door reputatie in plaats van uw daadwer
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Marco's team liet de contractant volledig los: infrastructuuruitgaven daalden met ongeveer 40%, en onvoorspelbare taakfouten verdwenen voorgoed. (€3.600 (Relaunch & Scale Pakket) — 12 werkdagen, voor een vergelijkbaar traject.) 🚀
+Marco's team liet de contractant volledig los: infrastructuuruitgaven daalden met ongeveer 40%, en onvoorspelbare taakfouten verdwenen voorgoed. (€3.600 (Relaunch & Scale Pakket) - 12 werkdagen, voor een vergelijkbaar traject.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/self-managed-kubernetes-vs-launchstudio-serverless
 

@@ -35,7 +35,7 @@ It's 11pm and a founder is refreshing a dashboard, watching a queue counter that
 
 ## Retries Are Not a Reliability Strategy on Their Own
 
-Most AI code generators, when asked to build a background job — process a file, send a notification, sync a record — will happily wrap it in a try/catch and add a retry loop. That's a reasonable instinct. The problem is what happens after the retries run out. A typical AI-generated pattern retries a job two or three times with a short fixed delay, and if the third attempt also fails, the job is simply marked as failed and left there. No dead-letter queue captures it for review. No alert tells anyone it happened. No process re-attempts it later once the underlying issue — a timeout, a rate limit, a downstream service being briefly unavailable — has cleared.
+Most AI code generators, when asked to build a background job - process a file, send a notification, sync a record - will happily wrap it in a try/catch and add a retry loop. That's a reasonable instinct. The problem is what happens after the retries run out. A typical AI-generated pattern retries a job two or three times with a short fixed delay, and if the third attempt also fails, the job is simply marked as failed and left there. No dead-letter queue captures it for review. No alert tells anyone it happened. No process re-attempts it later once the underlying issue - a timeout, a rate limit, a downstream service being briefly unavailable - has cleared.
 
 This is a fine failure mode for the demo, because in a demo nothing ever actually fails three times in a row. In production, with real data volumes and real third-party APIs that occasionally hiccup, it fails constantly, and it fails silently. The job queue becomes a place where work goes to quietly die.
 
@@ -58,15 +58,15 @@ async function processJob(job, attempt = 1) {
 }
 ```
 
-Exponential backoff gives transient failures — a downstream API rate limit, a brief database connection blip — room to resolve themselves before the next attempt. The dead-letter queue means a permanently failed job is visible and reprocessable instead of vanishing into a failed-status row nobody queries. And the alert is what turns "we noticed three weeks later" into "we noticed in four minutes."
+Exponential backoff gives transient failures - a downstream API rate limit, a brief database connection blip - room to resolve themselves before the next attempt. The dead-letter queue means a permanently failed job is visible and reprocessable instead of vanishing into a failed-status row nobody queries. And the alert is what turns "we noticed three weeks later" into "we noticed in four minutes."
 
-Manifera's 120+ engineers see this exact gap constantly when reviewing AI-generated backends: the happy path works, the retry exists, but the failure path is a dead end with no visibility. It's rarely a rewrite — it's usually a queue library swap and a Slack or email webhook wired to a threshold.
+Manifera's 120+ engineers see this exact gap constantly when reviewing AI-generated backends: the happy path works, the retry exists, but the failure path is a dead end with no visibility. It's rarely a rewrite - it's usually a queue library swap and a Slack or email webhook wired to a threshold.
 
 ## Idempotency: The Retry Problem Nobody Mentions
 
-Adding retries introduces a second, quieter problem that most AI-generated job code never accounts for: what happens if the job actually succeeded, but the confirmation never made it back? A payment charge goes through, the response times out before your app records success, and the retry logic — doing exactly what it was told — charges the customer a second time. A confirmation email sends, the mail provider's acknowledgment is delayed past the timeout, and the retry sends a duplicate email. Retrying a job is only safe if running that job twice produces the same real-world result as running it once, a property called idempotency, and AI coding tools almost never build for it unless explicitly told to, because a demo never runs the same job twice in a way that exposes the gap.
+Adding retries introduces a second, quieter problem that most AI-generated job code never accounts for: what happens if the job actually succeeded, but the confirmation never made it back? A payment charge goes through, the response times out before your app records success, and the retry logic - doing exactly what it was told - charges the customer a second time. A confirmation email sends, the mail provider's acknowledgment is delayed past the timeout, and the retry sends a duplicate email. Retrying a job is only safe if running that job twice produces the same real-world result as running it once, a property called idempotency, and AI coding tools almost never build for it unless explicitly told to, because a demo never runs the same job twice in a way that exposes the gap.
 
-The fix is a dedup check keyed to something stable about the job — an order ID, an invoice number, a natural key — checked before the side effect runs, not after:
+The fix is a dedup check keyed to something stable about the job - an order ID, an invoice number, a natural key - checked before the side effect runs, not after:
 
 ```javascript
 async function processPaymentJob(job) {
@@ -87,15 +87,15 @@ Not every background job needs the same rigor. A job that regenerates a thumbnai
 - **Silent-fail-safe**: cosmetic or easily re-triggerable jobs where a missed run has no real consequence
 - **Silent-fail-costly**: anything touching money, compliance, or a customer-facing commitment, where a missed run means manual cleanup or an angry customer
 
-A quick heuristic that works well in practice: for each job type, ask "if this silently failed right now, would I want a text message about it before a customer tells me?" If the honest answer is yes, it belongs in the second bucket, and it needs the full treatment — backoff, dead-letter queue, alert, and an idempotency check if it has any real-world side effect. If the answer is a shrug, it can stay simple.
+A quick heuristic that works well in practice: for each job type, ask "if this silently failed right now, would I want a text message about it before a customer tells me?" If the honest answer is yes, it belongs in the second bucket, and it needs the full treatment - backoff, dead-letter queue, alert, and an idempotency check if it has any real-world side effect. If the answer is a shrug, it can stay simple.
 
-Our team, working out of the Singapore office serving founders across Southeast Asia and beyond, typically finds that founders have never actually made this list — everything is running through the same undifferentiated queue with the same weak retry logic, regardless of what's actually at stake if it fails. Mapping that out is often the fastest way to know where to spend the engineering budget first. If you're unsure where your own app's queue stands, [see what a production reliability review covers](https://launchstudio.eu/en/#process).
+Our team, working out of the Singapore office serving founders across Southeast Asia and beyond, typically finds that founders have never actually made this list - everything is running through the same undifferentiated queue with the same weak retry logic, regardless of what's actually at stake if it fails. Mapping that out is often the fastest way to know where to spend the engineering budget first. If you're unsure where your own app's queue stands, [see what a production reliability review covers](https://launchstudio.eu/en/#process).
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Invoice Batch That Stopped Retrying
 
-Femke Bruins built FactuurVerwerker, an invoice-processing SaaS for small businesses in the Ede region, using Bolt. The core flow ingested uploaded invoices, ran them through a parsing job, and pushed the extracted data into the customer's bookkeeping system. It worked well in every test she ran — right up until a batch of invoices hit a parsing edge case that made the job fail consistently.
+Femke Bruins built FactuurVerwerker, an invoice-processing SaaS for small businesses in the Ede region, using Bolt. The core flow ingested uploaded invoices, ran them through a parsing job, and pushed the extracted data into the customer's bookkeeping system. It worked well in every test she ran - right up until a batch of invoices hit a parsing edge case that made the job fail consistently.
 
 The background job retried exactly three times, each attempt seconds apart, then marked the job as failed and moved on. There was no dead-letter queue to catch it and no alert to tell Femke anything had gone wrong. An entire batch of invoices sat permanently unprocessed, invisible in the app's UI, until a customer called asking why their invoice hadn't shown up in their bookkeeping software days later.
 
@@ -103,10 +103,10 @@ LaunchStudio's engineers rebuilt the job processing layer with exponential backo
 
 **Result:** Femke now finds out about a stuck batch in minutes instead of finding out from a customer days later.
 
-> *"The scariest part wasn't that jobs failed — it's that I had genuinely no idea they were failing. Now I get a message before a customer even notices."*
-> — **Femke Bruins, Founder, FactuurVerwerker (Ede)**
+> *"The scariest part wasn't that jobs failed - it's that I had genuinely no idea they were failing. Now I get a message before a customer even notices."*
+> - **Femke Bruins, Founder, FactuurVerwerker (Ede)**
 
-**Cost & Timeline:** €850 (retry logic overhaul, dead-letter queue, and alerting across all background jobs) — completed in 5 business days.
+**Cost & Timeline:** €850 (retry logic overhaul, dead-letter queue, and alerting across all background jobs) - completed in 5 business days.
 
 ---
 
@@ -114,7 +114,7 @@ LaunchStudio's engineers rebuilt the job processing layer with exponential backo
 
 ### Why doesn't Bolt or Lovable generate proper retry logic by default?
 
-AI code tools optimize for a working demo, and a demo rarely exercises repeated real-world failure — so they generate a basic retry loop that satisfies "does it try again" without addressing what happens once retries are exhausted.
+AI code tools optimize for a working demo, and a demo rarely exercises repeated real-world failure - so they generate a basic retry loop that satisfies "does it try again" without addressing what happens once retries are exhausted.
 
 ### What's a dead-letter queue, in plain terms?
 
@@ -122,21 +122,21 @@ It's a holding area for jobs that failed every retry attempt, so they're visible
 
 ### How does Manifera decide which background jobs need the strongest reliability guarantees?
 
-Our engineers, drawing on patterns from 160+ delivered projects, prioritize any job tied to money, compliance, or a customer-facing promise — cosmetic jobs get lighter treatment, since the cost of a missed alert should match the cost of a missed job.
+Our engineers, drawing on patterns from 160+ delivered projects, prioritize any job tied to money, compliance, or a customer-facing promise - cosmetic jobs get lighter treatment, since the cost of a missed alert should match the cost of a missed job.
 
 ### Can this be retrofitted without touching my existing frontend?
 
-Yes — job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users.
+Yes - job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users.
 
 ### What is idempotency, and why does it matter more once retries are added?
 
-Idempotency means running a job twice produces the same real-world result as running it once — without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable.
+Idempotency means running a job twice produces the same real-world result as running it once - without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable.
 
 ### Does LaunchStudio work with whatever job queue library my AI tool already generated?
 
-Usually yes — we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, which is consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision.
+Usually yes - we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, which is consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision.
 
-Send us your prototype link — [we'll give you free advice](https://launchstudio.eu/en/#contact) on where your job queue actually stands.
+Send us your prototype link - [we'll give you free advice](https://launchstudio.eu/en/#contact) on where your job queue actually stands.
 
 For a deeper look at how production backend systems get built right the first time, see [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
 
@@ -148,7 +148,7 @@ For a deeper look at how production backend systems get built right the first ti
     {
       "@type": "Question",
       "name": "Why doesn't Bolt or Lovable generate proper retry logic by default?",
-      "acceptedAnswer": { "@type": "Answer", "text": "AI code tools optimize for a working demo, and a demo rarely exercises repeated real-world failure — so they generate a basic retry loop that satisfies 'does it try again' without addressing what happens once retries are exhausted." }
+      "acceptedAnswer": { "@type": "Answer", "text": "AI code tools optimize for a working demo, and a demo rarely exercises repeated real-world failure - so they generate a basic retry loop that satisfies 'does it try again' without addressing what happens once retries are exhausted." }
     },
     {
       "@type": "Question",
@@ -158,22 +158,22 @@ For a deeper look at how production backend systems get built right the first ti
     {
       "@type": "Question",
       "name": "How does Manifera decide which background jobs need the strongest reliability guarantees?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Our engineers, drawing on patterns from 160+ delivered projects, prioritize any job tied to money, compliance, or a customer-facing promise — cosmetic jobs get lighter treatment, since the cost of a missed alert should match the cost of a missed job." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Our engineers, drawing on patterns from 160+ delivered projects, prioritize any job tied to money, compliance, or a customer-facing promise - cosmetic jobs get lighter treatment, since the cost of a missed alert should match the cost of a missed job." }
     },
     {
       "@type": "Question",
       "name": "Can this be retrofitted without touching my existing frontend?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users." }
     },
     {
       "@type": "Question",
       "name": "What is idempotency, and why does it matter more once retries are added?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Idempotency means running a job twice produces the same real-world result as running it once — without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Idempotency means running a job twice produces the same real-world result as running it once - without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable." }
     },
     {
       "@type": "Question",
       "name": "Does LaunchStudio work with whatever job queue library my AI tool already generated?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes - we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision." }
     }
   ]
 }

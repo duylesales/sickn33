@@ -4,7 +4,7 @@ Klanten arriveren met 4 jaar aan Excel-data.
 En de eerste vraag aan uw product is altijd:
 "Krijg ik mijn bestanden hier fatsoenlijk in?"
 
-Import is géén bijzaak — het is de ultieme poortwachter van uw onboarding.
+Import is géén bijzaak - het is de ultieme poortwachter van uw onboarding.
 
 En waar falen 9 van de 10 AI-prototypes?
 ❌ Naïeve loops: op rij 431 van 800 crasht de code. Gevolg: 430 rijen opgeslagen, 370 niet.

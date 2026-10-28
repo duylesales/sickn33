@@ -26,7 +26,7 @@ What determines that is fit: whether the tool matches how you think about your i
 
 ## The Question to Answer First
 
-Before comparing anything: **can you read code?** Not write it — read it, and tell whether something looks wrong.
+Before comparing anything: **can you read code?** Not write it - read it, and tell whether something looks wrong.
 
 This single answer splits the four tools into two groups, and getting it wrong is the most common source of frustration. Someone who cannot read code working in an editor-based tool spends their time confused; someone who can, working in a prompt-only builder, spends their time fighting for control they could have had directly.
 
@@ -34,7 +34,7 @@ Be honest rather than aspirational. "I did a bit of HTML years ago" is a no for 
 
 ## Lovable: For the Founder Who Thinks in Screens
 
-If you picture your product as a sequence of screens — this page, then this form, then this dashboard — Lovable matches that model closely. You describe screens and behaviour, it produces them, and the backend is wired up as a consequence rather than as a separate exercise.
+If you picture your product as a sequence of screens - this page, then this form, then this dashboard - Lovable matches that model closely. You describe screens and behaviour, it produces them, and the backend is wired up as a consequence rather than as a separate exercise.
 
 **It suits** non-technical founders, people who want a working product rather than a codebase, and anyone whose idea is clearer as an interface than as a system.
 
@@ -48,7 +48,7 @@ Bolt produces a conventional, readable codebase quickly. It is close to Lovable 
 
 **It suits** founders who expect to hand the project to a developer before long, technical people who want a scaffold rather than a finished thing, and anyone who cares about what the code looks like even if they cannot read it.
 
-**It leaves you** with a cleaner starting point and typically less of the backend connected — a data layer sketched rather than built.
+**It leaves you** with a cleaner starting point and typically less of the backend connected - a data layer sketched rather than built.
 
 **Choose it if** you want a product now and an engineer later, and you would rather that engineer inherit something tidy.
 
@@ -58,7 +58,7 @@ Cursor is an editor. It assumes you are working in files, reviewing changes and 
 
 **It suits** technical founders, developers building outside their usual stack, and anyone who wants AI assistance without giving up control.
 
-**It leaves you** with a codebase shaped by your own decisions, which is an advantage when those decisions are good and a liability when they are inconsistent — which is why written conventions matter more here than anywhere else.
+**It leaves you** with a codebase shaped by your own decisions, which is an advantage when those decisions are good and a liability when they are inconsistent - which is why written conventions matter more here than anywhere else.
 
 **Choose it if** you answered yes to the reading question, and accept that you are responsible for coherence over time.
 
@@ -108,9 +108,9 @@ Five answers, and the choice usually makes itself.
 
 ## What Actually Decides Whether You Launch
 
-Not the tool. The gap afterwards — and whether you close it deliberately or discover it during a customer's security review.
+Not the tool. The gap afterwards - and whether you close it deliberately or discover it during a customer's security review.
 
-LaunchStudio exists for that gap, whichever of the four produced the frontend: access rules written and tested by attempting to bypass them, secrets moved server-side, payments that reconcile, deployment with staging and rollback, backups tested, monitoring wired up — with the interface you built left untouched and the codebase kept conventional and AI-readable so you can carry on in your own tool afterwards.
+LaunchStudio exists for that gap, whichever of the four produced the frontend: access rules written and tested by attempting to bypass them, secrets moved server-side, payments that reconcile, deployment with staging and rollback, backups tested, monitoring wired up - with the interface you built left untouched and the codebase kept conventional and AI-readable so you can carry on in your own tool afterwards.
 
 Fixed price between €800 and €7,500 depending on how much of the backend exists and how much data you hold, typically one to three weeks. The engineers are Manifera's: eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
@@ -122,7 +122,7 @@ Plenty of founders read this having already moved between tools, with two or thr
 
 **Stop and pick the most complete version,** not the newest. The one closest to something a person could use is the one worth finishing, even if it was built in the tool you liked least.
 
-**Write down what is missing from it** — features, not infrastructure. Six lines. This is your remaining product work.
+**Write down what is missing from it** - features, not infrastructure. Six lines. This is your remaining product work.
 
 **Choose the tool that fits the self-test above** and commit to it for that list. Not forever; just until the list is done.
 
@@ -130,13 +130,13 @@ Plenty of founders read this having already moved between tools, with two or thr
 
 **Then close the production gap once,** on whichever version you finished.
 
-The pattern behind repeated switching is almost always that the friction was product complexity rather than tool limitation — the hard part arrived, and a new tool offered the feeling of progress without the difficulty. Recognising that is usually enough to break it.
+The pattern behind repeated switching is almost always that the friction was product complexity rather than tool limitation - the hard part arrived, and a new tool offered the feeling of progress without the difficulty. Recognising that is usually enough to break it.
 
 ## Why the Habits Matter More Than the Tool
 
 Founders who finish products share a small set of habits, and none of them are tool-specific. Adopting them matters considerably more than which of the four you chose.
 
-**They ship something small to a real person early.** Not a demo — something used. It reorders every subsequent priority, because real use exposes what matters and what never did.
+**They ship something small to a real person early.** Not a demo - something used. It reorders every subsequent priority, because real use exposes what matters and what never did.
 
 **They read what the tool produced,** at least enough to notice when something looks unfamiliar. This is the habit that separates people who direct a tool from people who hope.
 
@@ -156,18 +156,18 @@ Lotte Gerritsen spent five months trying to build Klantboek, a simple client-rec
 
 Three regenerations, none finished, and a growing conviction that she was not capable of building software.
 
-The conversation that changed it was a question rather than advice: could she read code well enough to spot a mistake? No, clearly not — which meant Cursor had never been a sensible choice and the two weeks lost there were not a reflection of her ability.
+The conversation that changed it was a question rather than advice: could she read code well enough to spot a mistake? No, clearly not - which meant Cursor had never been a sensible choice and the two weeks lost there were not a reflection of her ability.
 
-She rebuilt once more in Lovable, which matched how she described the product — a list of clients, a session form, a notes screen, a simple report — and had a working version in nine days. The backend came wired, which was exactly what she needed and exactly the thing she could not have assembled herself.
+She rebuilt once more in Lovable, which matched how she described the product - a list of clients, a session form, a notes screen, a simple report - and had a working version in nine days. The backend came wired, which was exactly what she needed and exactly the thing she could not have assembled herself.
 
 Then she stopped and had the production work done rather than continuing to iterate: access rules so therapists could not see each other's clients, session notes classified and encrypted, hosting on her own domain, backups tested, and monitoring.
 
 **Result:** Klantboek launched with fourteen therapists eleven weeks after she first started, and Lotte has added four features herself in Lovable since.
 
 > *"I thought I was bad at this. I had just spent two months using a tool that assumes you can read the code it writes, which I cannot, and nobody had asked me that question."*
-> — **Lotte Gerritsen, Founder, Klantboek (Utrecht)**
+> - **Lotte Gerritsen, Founder, Klantboek (Utrecht)**
 
-**Cost & Timeline:** €3,200 (access rules, data classification, hosting, backups and monitoring) — completed in 8 business days.
+**Cost & Timeline:** €3,200 (access rules, data classification, hosting, backups and monitoring) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -189,7 +189,7 @@ Only marginally. Cost follows how much backend exists, whether money is involved
 
 ### I cannot read code. Is Cursor unusable for me?
 
-As a primary tool, largely yes — it assumes you can review what it writes. That is a poor fit rather than a personal failing, and a prompt-based builder will get you considerably further.
+As a primary tool, largely yes - it assumes you can review what it writes. That is a poor fit rather than a personal failing, and a prompt-based builder will get you considerably further.
 
 <script type="application/ld+json">
 {
@@ -217,7 +217,7 @@ As a primary tool, largely yes — it assumes you can review what it writes. Tha
       "name": "Can I use two tools together?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — a prompt-based builder for the interface and Cursor for structural work, provided the codebase stays conventional and each has an agreed area."
+        "text": "Yes - a prompt-based builder for the interface and Cursor for structural work, provided the codebase stays conventional and each has an agreed area."
       }
     },
     {
@@ -225,7 +225,7 @@ As a primary tool, largely yes — it assumes you can review what it writes. Tha
       "name": "Does the tool I choose change what production work costs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only marginally — cost follows how much backend exists, whether money is involved and how much data you hold."
+        "text": "Only marginally - cost follows how much backend exists, whether money is involved and how much data you hold."
       }
     },
     {

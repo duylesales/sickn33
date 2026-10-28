@@ -8,7 +8,7 @@ De echte staat van je data, inclusief de rommelige delen. Dat trekt mensen aan d
 
 Een écht onderscheid tussen must-have en nice-to-have. Staat alles als vereist, dan filter je gekwalificeerde mensen weg die niet elk vakje aanvinken.
 
-De angst dat eerlijkheid over rommelige data sterke kandidaten afschrikt, klopt meestal niet. Ervaren mensen hebben dat eerder meegemaakt en vinden het geruststellend — het is juist de overgepolijste vacature die ze leren wantrouwen.
+De angst dat eerlijkheid over rommelige data sterke kandidaten afschrikt, klopt meestal niet. Ervaren mensen hebben dat eerder meegemaakt en vinden het geruststellend - het is juist de overgepolijste vacature die ze leren wantrouwen.
 
 Test: zou tien andere bedrijven deze tekst kunnen publiceren met alleen een andere naam?
 

@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **"Patch It in the Morning" Doesn't Work Here:** A standard software instinct that fails when downtime has a physical-world cost.
-❌ **Deployments on Engineering's Schedule:** Not the operation's — releases pushed without regard for active collection windows.
+❌ **Deployments on Engineering's Schedule:** Not the operation's - releases pushed without regard for active collection windows.
 ❌ **Generic Monitoring, Missed Signals:** Infrastructure metrics that don't watch for the failure modes that actually matter operationally.
 
 **The Manifera Solution:**

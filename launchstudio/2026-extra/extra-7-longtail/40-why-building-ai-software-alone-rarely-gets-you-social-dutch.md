@@ -1,4 +1,4 @@
-🚨 Henrik Lindholm besteedde vier maanden aan het bouwen van RouteOptix, een optimalisatietool voor bezorgroutes, alleen in Helsinki met Cursor en Bolt. Tegen maand drie presteerde de routing-engine beter dan concurrenten. Vervolgens stuitte hij op een beveiligingsreview die hij niet wist uit te voeren — en zijn deploymentpijplijn schreef een databasewachtwoord direct in build-logboeken die iedereen met repository-toegang kon lezen. 😳
+🚨 Henrik Lindholm besteedde vier maanden aan het bouwen van RouteOptix, een optimalisatietool voor bezorgroutes, alleen in Helsinki met Cursor en Bolt. Tegen maand drie presteerde de routing-engine beter dan concurrenten. Vervolgens stuitte hij op een beveiligingsreview die hij niet wist uit te voeren - en zijn deploymentpijplijn schreef een databasewachtwoord direct in build-logboeken die iedereen met repository-toegang kon lezen. 😳
 
 De functies bouwen is het snelle deel. Productierijp worden is een heel andere specialiteit. 🧠
 
@@ -9,7 +9,7 @@ De functies bouwen is het snelle deel. Productierijp worden is een heel andere s
 
 ✅ Een ervaren review van het volledige autorisatiemodel ontvangen, geen gok van een beginner
 ✅ De blootstelling in build-logs verhelpen en de implementatiepijplijn verstevigen
-✅ Bevestigen wat daadwerkelijk solide is — zijn routing-engine had nul wijzigingen nodig
+✅ Bevestigen wat daadwerkelijk solide is - zijn routing-engine had nul wijzigingen nodig
 
 Bij **LaunchStudio** brengt Manifera's team van 120+ doorgewinterde technici precies de routine die solo-oprichters missen, waardoor een maand van onzekerheid verandert in een paar gerichte dagen. 🛡️
 

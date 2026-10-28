@@ -1,4 +1,4 @@
-🔥 Ava built a prototype using **Bolt** — ava, an international translator, used **bolt** to build an ai translation tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Ava built a prototype using **Bolt** - ava, an international translator, used **bolt** to build an ai translation tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Ava's application achieved silky-smooth performance: Response time dropped to under 150ms globally, making translations feel instant. (€1,200 (Edge Configuration Package) — production-ready and deployed in 3 business days.). 🚀
+Ava's application achieved silky-smooth performance: Response time dropped to under 150ms globally, making translations feel instant. (€1,200 (Edge Configuration Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/edge-computing-low-latency-ai
 

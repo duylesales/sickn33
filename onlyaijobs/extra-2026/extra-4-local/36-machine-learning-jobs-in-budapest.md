@@ -95,13 +95,13 @@ EU citizens can work freely in Hungary and register their residence if staying l
 
 ## Living in Budapest
 
-Budapest is one of Europe's most beautiful capitals, with the Danube, historic architecture, thermal baths and a lively cultural scene. Public transport — metro, trams, buses and suburban trains — is extensive and affordable. Many R&D centres and finance hubs are located in central Budapest or in business districts along the river, while some automotive engineering campuses are further out. Housing is more affordable than in Vienna, Munich or Amsterdam, and the city offers a high quality of life for its cost.
+Budapest is one of Europe's most beautiful capitals, with the Danube, historic architecture, thermal baths and a lively cultural scene. Public transport - metro, trams, buses and suburban trains - is extensive and affordable. Many R&D centres and finance hubs are located in central Budapest or in business districts along the river, while some automotive engineering campuses are further out. Housing is more affordable than in Vienna, Munich or Amsterdam, and the city offers a high quality of life for its cost.
 
 ## How OnlyAIJobs Fits a Budapest Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for machine learning jobs in Budapest you will find few or no local vacancies there today. Use Hungarian and international job portals, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Budapest with the Netherlands — where employers such as Accenture, Cegeka, AMCS and Holland Innovative list AI roles — and as a method: filter by AI category and real commute rather than by title. Hungarian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for machine learning jobs in Budapest you will find few or no local vacancies there today. Use Hungarian and international job portals, company career pages and research institute vacancy lists as primary sources. OnlyAIJobs is useful for comparing Budapest with the Netherlands - where employers such as Accenture, Cegeka, AMCS and Holland Innovative list AI roles - and as a method: filter by AI category and real commute rather than by title. Hungarian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Evaluating an R&D Centre Role
 
@@ -114,11 +114,11 @@ Many machine learning jobs in Budapest are in R&D or technology centres of inter
 - **Technical environment:** what tools, data and compute are available?
 - **Collaboration:** how often do you work with colleagues in other countries, and in which time zones?
 
-Centres that own significant parts of their products tend to offer more interesting work and better growth. Talking to current engineers — for example at meetups — is the best way to find out.
+Centres that own significant parts of their products tend to offer more interesting work and better growth. Talking to current engineers - for example at meetups - is the best way to find out.
 
 ## Automotive AI in Budapest
 
-Budapest has become an important location for automotive software and automated driving development. Engineering centres work on perception, sensor fusion, planning, simulation and validation, often as part of global development teams. Hungary also hosts ZalaZONE, an automotive proving ground in the west of the country used for testing automated and connected vehicles. For ML engineers, automotive work in Budapest offers experience with large sensor datasets, simulation, safety standards and embedded deployment — skills in demand across Europe.
+Budapest has become an important location for automotive software and automated driving development. Engineering centres work on perception, sensor fusion, planning, simulation and validation, often as part of global development teams. Hungary also hosts ZalaZONE, an automotive proving ground in the west of the country used for testing automated and connected vehicles. For ML engineers, automotive work in Budapest offers experience with large sensor datasets, simulation, safety standards and embedded deployment - skills in demand across Europe.
 
 ## Finance Technology Hubs
 
@@ -146,11 +146,11 @@ Global telecom vendors have run R&D in Budapest for decades, and network AI is a
 
 ## Language Technology for Hungarian
 
-Hungarian's agglutinative structure, rich morphology and relatively small speaker population make it an interesting challenge for natural language processing. Hungarian researchers have developed corpora, benchmarks and language models for Hungarian, and companies need models that handle the language well for customer service, document processing and search. For NLP engineers, working on Hungarian offers experience with low-resource and morphologically rich languages — expertise that transfers to many other European languages.
+Hungarian's agglutinative structure, rich morphology and relatively small speaker population make it an interesting challenge for natural language processing. Hungarian researchers have developed corpora, benchmarks and language models for Hungarian, and companies need models that handle the language well for customer service, document processing and search. For NLP engineers, working on Hungarian offers experience with low-resource and morphologically rich languages - expertise that transfers to many other European languages.
 
 ## Career Development in Budapest
 
-Budapest's mix of R&D centres, finance hubs, product companies and research institutes allows varied careers without relocating. Engineers often move between automotive, telecom, finance and product roles, and some return to research or found startups. Building a reputation in the local community — by speaking at meetups, contributing to open source or collaborating with universities — helps in making these moves. For international engineers, Budapest can be both a destination and a stepping stone: the experience gained in large R&D centres is recognised across Europe.
+Budapest's mix of R&D centres, finance hubs, product companies and research institutes allows varied careers without relocating. Engineers often move between automotive, telecom, finance and product roles, and some return to research or found startups. Building a reputation in the local community - by speaking at meetups, contributing to open source or collaborating with universities - helps in making these moves. For international engineers, Budapest can be both a destination and a stepping stone: the experience gained in large R&D centres is recognised across Europe.
 
 ## Settling In
 

@@ -1,4 +1,4 @@
-🔥 David built a prototype using **Cursor** — david, a solo developer in rotterdam, used **cursor** to build an inventory management dashboard for local retail shops, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 David built a prototype using **Cursor** - david, a solo developer in rotterdam, used **cursor** to build an inventory management dashboard for local retail shops, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-David's application achieved production readiness: David can now prompt Cursor to rewrite his entire frontend UI every single day if he wants to, without any fear of causing a data breach or breaking the core application logic. He launched the secure version three weeks later and rapidly scaled to €2,000 MRR. I was terrified to update my app because the AI code was so intertwined. LaunchStudio separated the layers. Now my frontend is fast, and my backend is bulletproof. (€3,200 (Launch Ready package with architectural refactoring) — completed in 15 business days.). 🚀
+David's application achieved production readiness: David can now prompt Cursor to rewrite his entire frontend UI every single day if he wants to, without any fear of causing a data breach or breaking the core application logic. He launched the secure version three weeks later and rapidly scaled to €2,000 MRR. I was terrified to update my app because the AI code was so intertwined. LaunchStudio separated the layers. Now my frontend is fast, and my backend is bulletproof. (€3,200 (Launch Ready package with architectural refactoring) - completed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-native-startup-anatomy-fast-frontend
 

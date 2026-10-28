@@ -1,4 +1,4 @@
-🚨 Sanne Wouters had a Lovable prototype for Groenplan, a maintenance-scheduling tool for landscaping firms around Breda, with a pilot starting in 5 weeks. Her first freelancer spent 3 weeks tweaking button animations and color schemes, leaving database persistence, payment webhooks, and access controls completely unbuilt — putting the client pilot in jeopardy. 😳
+🚨 Sanne Wouters had a Lovable prototype for Groenplan, a maintenance-scheduling tool for landscaping firms around Breda, with a pilot starting in 5 weeks. Her first freelancer spent 3 weeks tweaking button animations and color schemes, leaving database persistence, payment webhooks, and access controls completely unbuilt - putting the client pilot in jeopardy. 😳
 
 Vague briefs produce vanity work. Here is how technical founders brief, scope, and verify work with an external Lovable expert: 🧠
 

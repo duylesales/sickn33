@@ -1,8 +1,8 @@
 🚨 She was pitching against a cheaper US competitor. The deal-breaker wasn't price, features, or the demo. It was ONE question about data storage. 🔒
 
-"EU regulation just slows Europeans down" — one of the most repeated (and incomplete) takes in AI-native founder circles. Here's what that framing misses: 🧠
+"EU regulation just slows Europeans down" - one of the most repeated (and incomplete) takes in AI-native founder circles. Here's what that framing misses: 🧠
 
-❌ AVG/GDPR feels like pure friction — processing agreements, transparency rules, risk assessments
+❌ AVG/GDPR feels like pure friction - processing agreements, transparency rules, risk assessments
 ❌ US-first competitors skip all of it and "move faster"
 ❌ Founders assume compliance is a tax with zero upside
 ❌ Retrofitting compliance later is treated as a someday-problem
@@ -12,11 +12,11 @@
 ✅ Enterprise & public-sector clients often REQUIRE compliance-readiness
 ✅ "Move fast, comply later" is almost always the more expensive path
 
-🎯 Most AI-native founders assume a stricter EU AI Act tier applies than actually does. Reality check: typical SaaS tools (scheduling, content gen, recommendations) usually sit in "limited risk" — meaning the core obligation is just transparency, not a heavy compliance program.
+🎯 Most AI-native founders assume a stricter EU AI Act tier applies than actually does. Reality check: typical SaaS tools (scheduling, content gen, recommendations) usually sit in "limited risk" - meaning the core obligation is just transparency, not a heavy compliance program.
 
-At **LaunchStudio**, GDPR-aware architecture is standard on every production deployment — not a special request. Informed by Herre Roelevink's cybersecurity background and Manifera's work with compliance-heavy clients like TNO. 🛡️
+At **LaunchStudio**, GDPR-aware architecture is standard on every production deployment - not a special request. Informed by Herre Roelevink's cybersecurity background and Manifera's work with compliance-heavy clients like TNO. 🛡️
 
-Her result: won a mid-sized manufacturing contract specifically because she could answer every data question instantly — the US competitor never gave a straight answer. 🚀
+Her result: won a mid-sized manufacturing contract specifically because she could answer every data question instantly - the US competitor never gave a straight answer. 🚀
 
 👉 Read how EU regulation becomes a competitive edge: https://launchstudio.eu/en/blog/european-ai-regulations-competitive-advantages
 

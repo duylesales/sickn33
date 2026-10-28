@@ -1,4 +1,4 @@
-🔒 Jonas bouwde een AI-assistent voor financiële rapportage met **Lovable** — jonas, a startup founder, used **lovable** to build an AI-powered financial reporting assistant for accounting firms, maar ontdekte dat zijn SOC 2 Type II-vernieuwing op het spel stond door een gebroken audit trail. 🧠
+🔒 Jonas bouwde een AI-assistent voor financiële rapportage met **Lovable** - jonas, a startup founder, used **lovable** to build an AI-powered financial reporting assistant for accounting firms, maar ontdekte dat zijn SOC 2 Type II-vernieuwing op het spel stond door een gebroken audit trail. 🧠
 
 Als uw compliance-controles afhangen van één persoon die handmatig aan toegangsbeoordelingen moet denken, is uw volgende SOC 2 Type II-vernieuwing riskanter dan uw laatste auditcertificaat doet vermoeden.
 
@@ -12,7 +12,7 @@ Als uw compliance-controles afhangen van één persoon die handmatig aan toegang
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Jonas' vernieuwingsaudit werd afgesloten zonder openstaande bevindingen op toegangscontrole, en zijn team onderhoudt geen enkel handmatig toegangslogboek meer. (€ 5.400 (Enterprise Hardening Pakket) — audit trail herbouwd en geverifieerd in 13 werkdagen.). 🚀
+Jonas' vernieuwingsaudit werd afgesloten zonder openstaande bevindingen op toegangscontrole, en zijn team onderhoudt geen enkel handmatig toegangslogboek meer. (€ 5.400 (Enterprise Hardening Pakket) - audit trail herbouwd en geverifieerd in 13 werkdagen.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/soc2-type-ii-renewal-in-house-vs-launchstudio
 

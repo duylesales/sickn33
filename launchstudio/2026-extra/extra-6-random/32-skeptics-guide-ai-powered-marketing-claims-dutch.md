@@ -27,14 +27,14 @@ Ik wil betogen dat scepsis hier geen cynisme is. Het is gewoon leesvaardigheid t
 
 "AI-powered" is een bijvoeglijk naamwoord dat veel werk verzet. De vraag die er werkelijk toe doet, is het zelfstandig naamwoord dat het bepaalt. "AI-powered beveiligingsscans" kan betekenen dat een large language model over uw authenticatielogica redeneert en een kapotte autorisatiecontrole signaleert. Het kan ook betekenen dat het gaat om een statische-analysetool die al sinds 2015 bestaat, is omgedoopt, en nog steeds dezelfde op regex gebaseerde patroonherkenning draait als altijd, met een LLM erbovenop geplakt om de samenvattende alinea aan het einde te schrijven.
 
-Beide zijn technisch gezien "AI-powered." Slechts één ervan zoekt daadwerkelijk naar het soort kwetsbaarheid dat wordt uitgebuit. De marketingpagina vertelt u niet welke van de twee u krijgt. Het product doet dat uiteindelijk wel — meestal op het slechtst mogelijke moment.
+Beide zijn technisch gezien "AI-powered." Slechts één ervan zoekt daadwerkelijk naar het soort kwetsbaarheid dat wordt uitgebuit. De marketingpagina vertelt u niet welke van de twee u krijgt. Het product doet dat uiteindelijk wel - meestal op het slechtst mogelijke moment.
 
 ## Vragen die inhoud van kruiderij scheiden
 
 Een sceptische koper stelt vragen die een marketingpagina niet kan beantwoorden met nog meer bijvoeglijke naamwoorden:
 
 - **Welke specifieke categorie kwetsbaarheden vangt dit op die een standaardlinter niet zou opmerken?** Als het antwoord vaag is ("een breed scala aan beveiligingsproblemen"), is dat een teken aan de wand.
-- **Begrijpt het de logica van uw applicatie, of matcht het alleen patronen tegen bekende signaturen?** Patroonherkenning tegen bekende CVE's is nuttig en prima — het is alleen niet dezelfde claim als "begrijpt uw code."
+- **Begrijpt het de logica van uw applicatie, of matcht het alleen patronen tegen bekende signaturen?** Patroonherkenning tegen bekende CVE's is nuttig en prima - het is alleen niet dezelfde claim als "begrijpt uw code."
 - **Hoe ziet een echte bevinding eruit?** Vraag om een daadwerkelijk voorbeeld van de output, geen screenshot van een dashboard met groene vinkjes.
 - **Wie of wat beoordeelt de bevinding voordat deze bij u terechtkomt?** Een tool die 200 "problemen" signaleert, waarvan de meeste ruis zijn, is niet hetzelfde als een tool die de drie problemen naar boven haalt die er echt toe doen.
 - **Wat gebeurt er als het fout zit?** Elke geautomatiseerde tool heeft valse positieven en valse negatieven. Een leverancier die niet kan uitleggen hoe hun tool faalt, heeft niet goed nagedacht over het eigen product.
@@ -43,11 +43,11 @@ Geen van deze vragen vereist dat u een beveiligingsengineer bent. Ze vereisen al
 
 ## Waarom dit er in het huidige AI-tijdperk specifiek nog meer toe doet
 
-Dit is geen nieuw probleem — "AI-powered" is gewoon de huidige versie van "next-generation" en "enterprise-grade" ervoor. Maar het landt nu anders, omdat zoveel oprichters die bouwen met Lovable, Bolt of Cursor per definitie minder goed in staat zijn om een beveiligingsclaim zelf te verifiëren door de onderliggende code te lezen. Dat is geen kritiek — het is precies de hele belofte van deze tools. Maar het betekent wel dat de marketingclaim meer ongecontroleerd gewicht krijgt dan bij een oprichter met een beveiligingsachtergrond die gewoon onder de motorkap kan kijken.
+Dit is geen nieuw probleem - "AI-powered" is gewoon de huidige versie van "next-generation" en "enterprise-grade" ervoor. Maar het landt nu anders, omdat zoveel oprichters die bouwen met Lovable, Bolt of Cursor per definitie minder goed in staat zijn om een beveiligingsclaim zelf te verifiëren door de onderliggende code te lezen. Dat is geen kritiek - het is precies de hele belofte van deze tools. Maar het betekent wel dat de marketingclaim meer ongecontroleerd gewicht krijgt dan bij een oprichter met een beveiligingsachtergrond die gewoon onder de motorkap kan kijken.
 
 Dat gat tussen "kan niet gemakkelijk verifiëren" en "moet de marketing vertrouwen" is precies waar dunne tools gedijen. Het loont om dat gat actief te dichten door leveranciers de directe vragen hierboven te stellen, in plaats van een goed vormgegeven landingspagina de beslissing voor u te laten nemen.
 
-De technici van Manifera — meer dan 120 in aantal, met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor klanten zoals Vodafone en TNO — besteden behoorlijk wat tijd aan precies dit soort beoordelingen namens oprichters, waarbij ze tools met echte analysecapaciteit onderscheiden van tools met echte marketingbudgetten. Onze vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence voorafgaand aan elke productielancering. Als u een tweede mening wilt over een beveiligingsleverancier die u aan het evalueren bent, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) en dan vertellen we u eerlijk wat we denken dat de tool daadwerkelijk doet. Voor een breder beeld van hoe teams met productieniveau engineering dit aanpakken, laat het [portfolio](https://www.manifera.com/portfolio/) van Manifera het soort beveiligingsnauwkeurigheid zien dat is toegepast bij meer dan 160 opgeleverde projecten.
+De technici van Manifera - meer dan 120 in aantal, met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor klanten zoals Vodafone en TNO - besteden behoorlijk wat tijd aan precies dit soort beoordelingen namens oprichters, waarbij ze tools met echte analysecapaciteit onderscheiden van tools met echte marketingbudgetten. Onze vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence voorafgaand aan elke productielancering. Als u een tweede mening wilt over een beveiligingsleverancier die u aan het evalueren bent, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) en dan vertellen we u eerlijk wat we denken dat de tool daadwerkelijk doet. Voor een breder beeld van hoe teams met productieniveau engineering dit aanpakken, laat het [portfolio](https://www.manifera.com/portfolio/) van Manifera het soort beveiligingsnauwkeurigheid zien dat is toegepast bij meer dan 160 opgeleverde projecten.
 
 ## Nog Vijf Uitspraken Die Exact Dezelfde Kritische Blik Verdienen
 
@@ -59,7 +59,7 @@ In eerdere analyses behandelden we al sussende uitspraken van ontwikkelaars en b
 
 **3. "We hebben de code getest met geautomatiseerde AI-tests."** *Wat het werkelijk betekent:* Een AI heeft triviale tests gegenereerd die uitsluitend controleren of componenten renderen, zonder ooit complexe randvoorwaarden of foutscenario's te testen. *Uw reactie:* Vraag welke specifieke 'edge cases' en autorisatiefouten in de testsuite zijn opgenomen.
 
-**4. "Niemand kan die URL raden, dus het is veilig."** *Wat het werkelijk betekent:* 'Security through obscurity' — een levensgevaarlijke misvatting. Zodra één link wordt gedeeld of onderschept, ligt het hele record openbaar. *Uw reactie:* Eis dat elk record strikt wordt geautoriseerd op basis van de actieve gebruikerssessie.
+**4. "Niemand kan die URL raden, dus het is veilig."** *Wat het werkelijk betekent:* 'Security through obscurity' - een levensgevaarlijke misvatting. Zodra één link wordt gedeeld of onderschept, ligt het hele record openbaar. *Uw reactie:* Eis dat elk record strikt wordt geautoriseerd op basis van de actieve gebruikerssessie.
 
 **5. "Dat bouwen we later wel in een refactor-ronde."** *Wat het werkelijk betekent:* We schuiven het structurele probleem voor ons uit totdat het ons dwingt om het hele fundament open te breken. *Uw reactie:* Bepaal of het onderdeel bedrijfskritiek is; zo ja, bouw het dan direct degelijk.
 
@@ -70,18 +70,18 @@ Door deze uitspraken direct te ontmaskeren, dwingt u technische partners tot pro
 
 ### Een AI-native oprichter in actie: de linter met een beveiligingsbadge om
 
-Milo Post, een oprichter in Purmerend, bouwde VeiligPunt — een tool voor het melden van veiligheidsincidenten — met Bolt. Omdat VeiligPunt gevoelige incidentmeldingen verwerkte, ging Milo gericht op zoek naar een leverancier die "AI-powered security"-functionaliteit adverteerde, met de redenering dat een tool die expliciet was gebouwd rond AI-gedreven beveiligingsanalyse meer zou opvangen dan hij zelf kon. De taal op de landingspagina was zelfverzekerd: geautomatiseerde detectie van kwetsbaarheden, intelligente codebeoordeling, continue beveiligingsmonitoring.
+Milo Post, een oprichter in Purmerend, bouwde VeiligPunt - een tool voor het melden van veiligheidsincidenten - met Bolt. Omdat VeiligPunt gevoelige incidentmeldingen verwerkte, ging Milo gericht op zoek naar een leverancier die "AI-powered security"-functionaliteit adverteerde, met de redenering dat een tool die expliciet was gebouwd rond AI-gedreven beveiligingsanalyse meer zou opvangen dan hij zelf kon. De taal op de landingspagina was zelfverzekerd: geautomatiseerde detectie van kwetsbaarheden, intelligente codebeoordeling, continue beveiligingsmonitoring.
 
-Toen Milo de tool daadwerkelijk integreerde en goed keek naar wat er werd gesignaleerd, kwam het beeld niet overeen met de pitch. Het ving ongebruikte variabelen, inconsistente naamgeving en een handvol stijlovertredingen — de output van een vrij standaard codelinter, zonder enig bewijs dat het redeneerde over authenticatieflows, blootstelling van gegevens of autorisatielogica. De "AI" in de marketing bleek beperkt tot een door een LLM gegenereerde samenvattende zin, toegevoegd aan verder conventionele lint-output. Niets wat het signaleerde, zou het soort bevinding hebben opgevangen dat er daadwerkelijk toe deed voor een tool die incidentmeldingen verwerkte die aan echte mensen gekoppeld waren.
+Toen Milo de tool daadwerkelijk integreerde en goed keek naar wat er werd gesignaleerd, kwam het beeld niet overeen met de pitch. Het ving ongebruikte variabelen, inconsistente naamgeving en een handvol stijlovertredingen - de output van een vrij standaard codelinter, zonder enig bewijs dat het redeneerde over authenticatieflows, blootstelling van gegevens of autorisatielogica. De "AI" in de marketing bleek beperkt tot een door een LLM gegenereerde samenvattende zin, toegevoegd aan verder conventionele lint-output. Niets wat het signaleerde, zou het soort bevinding hebben opgevangen dat er daadwerkelijk toe deed voor een tool die incidentmeldingen verwerkte die aan echte mensen gekoppeld waren.
 
-Milo bracht VeiligPunt naar LaunchStudio voor een echte productiegereedheidsbeoordeling. Engineers ontdekten dat het eindpunt voor het indienen van incidentmeldingen geen rate limiting had en dat bijlagen bij meldingen werden opgeslagen met voorspelbare, te raden URL's — geen van beide had de "AI-powered" tool gesignaleerd, omdat geen van beide iets is dat een linter is gebouwd om te zien.
+Milo bracht VeiligPunt naar LaunchStudio voor een echte productiegereedheidsbeoordeling. Engineers ontdekten dat het eindpunt voor het indienen van incidentmeldingen geen rate limiting had en dat bijlagen bij meldingen werden opgeslagen met voorspelbare, te raden URL's - geen van beide had de "AI-powered" tool gesignaleerd, omdat geen van beide iets is dat een linter is gebouwd om te zien.
 
 **Resultaat:** Milo verving de linter-vermomd-als-beveiligingstool door een echt beoordelingsproces en dichtte beide gaten vóór de publieke lancering van VeiligPunt.
 
 > *"Ik betaalde voor 'AI-powered security' en kreeg een zeer goed gemarketeerde linter. Wat ik eigenlijk nodig had, was iemand die kon lezen wat mijn app doet en me kon vertellen waar het breekt."*
-> — **Milo Post, oprichter, VeiligPunt (Purmerend)**
+> - **Milo Post, oprichter, VeiligPunt (Purmerend)**
 
-**Kosten en tijdlijn:** € 950 (beveiligingsbeoordeling, oplossing rate limiting, toegangscontrole voor bijlagen) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 950 (beveiligingsbeoordeling, oplossing rate limiting, toegangscontrole voor bijlagen) - voltooid in 6 werkdagen.
 
 ---
 
@@ -97,7 +97,7 @@ Het is geen fraude, maar het is wel marketing die meer werk verzet dan het produ
 
 ### Beoordeelt het team van Manifera beveiligingstools van derden, of bouwt het alleen maatwerkoplossingen?
 
-Beide — de technici van Manifera beoordelen regelmatig of de bestaande tooling van een oprichter daadwerkelijk werk verzet, voordat ze adviseren om deze te behouden, te vervangen of aan te vullen met een handmatige beoordeling.
+Beide - de technici van Manifera beoordelen regelmatig of de bestaande tooling van een oprichter daadwerkelijk werk verzet, voordat ze adviseren om deze te behouden, te vervangen of aan te vullen met een handmatige beoordeling.
 
 ### Waarom is dit specifiek belangrijker voor oprichters die Lovable, Bolt of Cursor gebruiken?
 
@@ -133,7 +133,7 @@ Ja, de vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precie
       "name": "Beoordeelt het team van Manifera beveiligingstools van derden, of bouwt het alleen maatwerkoplossingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beide — de technici van Manifera beoordelen regelmatig of de bestaande tooling van een oprichter daadwerkelijk werk verzet, voordat ze adviseren om deze te behouden, te vervangen of aan te vullen met een handmatige beoordeling."
+        "text": "Beide - de technici van Manifera beoordelen regelmatig of de bestaande tooling van een oprichter daadwerkelijk werk verzet, voordat ze adviseren om deze te behouden, te vervangen of aan te vullen met een handmatige beoordeling."
       }
     },
     {

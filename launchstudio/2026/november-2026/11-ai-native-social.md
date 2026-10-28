@@ -10,7 +10,7 @@ The economics have flipped:
 ⏱️ Time to prototype: 4 months ➡️ 4 days
 🔄 Iteration speed: Weeks per feature ➡️ Hours per feature
 
-But there is a trap. AI Native founders move at lightspeed until they hit the "infrastructure wall"—auth, payment webhooks, database architecture, and deployment pipelines. 
+But there is a trap. AI Native founders move at lightspeed until they hit the "infrastructure wall" - auth, payment webhooks, database architecture, and deployment pipelines. 
 
 You build the interface with AI. You still need professionals to build the infrastructure. 
 

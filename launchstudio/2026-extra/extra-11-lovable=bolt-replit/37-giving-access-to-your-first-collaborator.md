@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 The message is friendly and entirely reasonable: "Can you send me the login details so I can get started?"
 
-What happens next, in most small products, is that a founder shares a password manager entry containing everything — the database, the hosting account, the payment provider, the domain registrar — because separating them would take an hour nobody has on a Monday. The contractor is competent and honest, the work gets done, and eighteen months later that access still exists, in a person who has moved on, for a product that now has four hundred customers.
+What happens next, in most small products, is that a founder shares a password manager entry containing everything - the database, the hosting account, the payment provider, the domain registrar - because separating them would take an hour nobody has on a Monday. The contractor is competent and honest, the work gets done, and eighteen months later that access still exists, in a person who has moved on, for a product that now has four hundred customers.
 
 None of that requires bad intent to become a problem. It requires only that nobody ever wrote down who has what.
 
@@ -44,7 +44,7 @@ Before deciding what to grant, list what exists. For a typical AI-built product 
 
 **Third-party services.** Error tracking, analytics, model APIs, anything metered.
 
-These are not one credential. They are seven, with different consequences if misused, and the point of separating them is not distrust — it is that a compromised laptop, a reused password or a forgotten offboarding should not hand over all seven at once.
+These are not one credential. They are seven, with different consequences if misused, and the point of separating them is not distrust - it is that a compromised laptop, a reused password or a forgotten offboarding should not hand over all seven at once.
 
 ## Least Privilege, Practically
 
@@ -78,7 +78,7 @@ Every service worth using supports inviting a second user. The invitation takes 
 
 **Read-only production access**, temporary and logged, for the situation where a bug only exists with real data. This is legitimate, and it should be a deliberate, time-limited grant rather than a standing arrangement.
 
-There is a compliance dimension too. If your product handles personal data, a contractor processing it on your behalf is a processor, which usually means an agreement in place before they start — the same conversation you have with your hosting provider, in smaller form.
+There is a compliance dimension too. If your product handles personal data, a contractor processing it on your behalf is a processor, which usually means an agreement in place before they start - the same conversation you have with your hosting provider, in smaller form.
 
 ## Onboarding, in Order
 
@@ -98,13 +98,13 @@ There is a compliance dimension too. If your product handles personal data, a co
 
 The routine that prevents the eighteen-months-later problem. It takes twenty minutes and should happen the day the work finishes.
 
-Remove their account from each of the seven categories, working from your written list. Rotate any shared credential they could have copied — API keys, database passwords, anything that existed before they arrived and was not personal to them. Check whether anything was registered in their name rather than yours. Confirm the code is in your repository and not only in theirs. And note the date, so you know when access ended.
+Remove their account from each of the seven categories, working from your written list. Rotate any shared credential they could have copied - API keys, database passwords, anything that existed before they arrived and was not personal to them. Check whether anything was registered in their name rather than yours. Confirm the code is in your repository and not only in theirs. And note the date, so you know when access ended.
 
 The test of whether this worked: can you state, today, the complete list of people with access to your customers' data? Most founders cannot, and the reason is always that offboarding was an intention rather than a routine.
 
 ## When It Is an Employee Rather Than a Contractor
 
-The same principles, with two additions. Access grows over time as people take on more, which means it needs reviewing rather than granting once. And departures are emotionally complicated in a way that makes a written routine more valuable, not less — following a checklist on someone's last day is kinder and more reliable than improvising while feeling awkward about it.
+The same principles, with two additions. Access grows over time as people take on more, which means it needs reviewing rather than granting once. And departures are emotionally complicated in a way that makes a written routine more valuable, not less - following a checklist on someone's last day is kinder and more reliable than improvising while feeling awkward about it.
 
 For a growing team, the practice that scales is grouping permissions by role rather than by person, so that adding someone means assigning a role rather than remembering eleven individual grants.
 
@@ -112,13 +112,13 @@ For a growing team, the practice that scales is grouping permissions by role rat
 
 Access separation is one of those things that takes an afternoon before you have collaborators and a week afterwards. LaunchStudio sets it up as part of preparing an AI-built product for real operation: accounts separated and owned by you, staging environments with seeded or anonymised data so nobody needs production to work, role-based access where services support it, credentials inventoried with a rotation procedure, audit logging on administrative access, and a written onboarding and offboarding checklist you can hand to anyone.
 
-The interface you built in Lovable stays exactly as it is, and the code remains yours throughout — which is itself one of the points. That sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers from Amsterdam and Ho Chi Minh City, who have been managing exactly this across distributed teams for eleven years for clients including Vodafone, TNO and CFLW.
+The interface you built in Lovable stays exactly as it is, and the code remains yours throughout - which is itself one of the points. That sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers from Amsterdam and Ho Chi Minh City, who have been managing exactly this across distributed teams for eleven years for clients including Vodafone, TNO and CFLW.
 
 If you are about to give someone access to a product you built alone, [describe your project](https://launchstudio.eu/en/#contact) and we will tell you what they actually need, usually within one business day.
 
 ## The Access Review Nobody Schedules
 
-Onboarding and offboarding handle the moments people arrive and leave. What they miss is the slow accumulation in between — a temporary grant that became permanent, a service added last spring, a role widened for one task and never narrowed.
+Onboarding and offboarding handle the moments people arrive and leave. What they miss is the slow accumulation in between - a temporary grant that became permanent, a service added last spring, a role widened for one task and never narrowed.
 
 A quarterly review takes twenty minutes and answers four questions.
 
@@ -138,7 +138,7 @@ There is a second benefit that founders discover afterwards. The review forces y
 
 ### A Founder Who Discovered Four People Still Had Her Database
 
-Nadine Peters built Kliniekagenda in Lovable: a scheduling tool used by eleven small private clinics around Breda, holding appointment records and patient contact details. Over two years she had worked with four contractors — a designer, two developers and a marketing freelancer.
+Nadine Peters built Kliniekagenda in Lovable: a scheduling tool used by eleven small private clinics around Breda, holding appointment records and patient contact details. Over two years she had worked with four contractors - a designer, two developers and a marketing freelancer.
 
 The review question that prompted everything was routine: a clinic's privacy officer asked for a list of everyone with access to patient data.
 
@@ -149,9 +149,9 @@ Six business days of work: individual accounts created for everyone who genuinel
 **Result:** the clinic received a documented access list naming two people, the privacy review passed, and the offboarding checklist has since been used twice without anything being missed.
 
 > *"I hadn't given anyone access to patient data deliberately. I'd given four people one password because it was faster, and then never thought about it again."*
-> — **Nadine Peters, Founder, Kliniekagenda (Breda)**
+> - **Nadine Peters, Founder, Kliniekagenda (Breda)**
 
-**Cost & Timeline:** €2,700 (account separation, credential rotation, staging with generated data, access logging, documented procedures) — completed in 6 business days.
+**Cost & Timeline:** €2,700 (account separation, credential rotation, staging with generated data, access logging, documented procedures) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ Usually not. A staging environment with generated or anonymised data covers most
 
 ### What counts as proper anonymisation for a development copy?
 
-Replacing names, redirecting email addresses to a dummy domain, scrambling phone numbers and removing uploaded documents — with the test being whether a remaining combination of fields could still identify a person.
+Replacing names, redirecting email addresses to a dummy domain, scrambling phone numbers and removing uploaded documents - with the test being whether a remaining combination of fields could still identify a person.
 
 ### Do I need an agreement with a freelancer who touches customer data?
 
@@ -185,7 +185,7 @@ Remove their account from every service on your written list, rotate any shared 
       "name": "Can I just share my login with a contractor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Avoid it — you cannot revoke it cleanly, every action carries your name so there is no audit trail, and it often breaches service terms. Invite them as their own user."
+        "text": "Avoid it - you cannot revoke it cleanly, every action carries your name so there is no audit trail, and it often breaches service terms. Invite them as their own user."
       }
     },
     {
@@ -201,7 +201,7 @@ Remove their account from every service on your written list, rotate any shared 
       "name": "What counts as proper anonymisation for a development copy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Replaced names, redirected email addresses, scrambled phone numbers and removed documents — tested by whether remaining fields could still identify someone."
+        "text": "Replaced names, redirected email addresses, scrambled phone numbers and removed documents - tested by whether remaining fields could still identify someone."
       }
     },
     {

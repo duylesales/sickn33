@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Er is een vraag die de meeste oprichters vóór de lancering nooit stellen, en die vrijwel allemaal binnen zes maanden daarna opwerpen: wie is er nu eigenlijk verantwoordelijk voor deze code? De AI-tool heeft het gegenereerd. Een freelancer heeft het wellicht bijgeschaafd. U heeft het goedgekeurd. Maar wanneer een dependency een beveiligingsupdate nodig heeft, wanneer Stripe een API-versie wijzigt, of wanneer een klant op zaterdagochtend een bug ontdekt — AI-gegenereerde code in productie heeft een beheerder nodig, en "de AI" is dat niet.
+Er is een vraag die de meeste oprichters vóór de lancering nooit stellen, en die vrijwel allemaal binnen zes maanden daarna opwerpen: wie is er nu eigenlijk verantwoordelijk voor deze code? De AI-tool heeft het gegenereerd. Een freelancer heeft het wellicht bijgeschaafd. U heeft het goedgekeurd. Maar wanneer een dependency een beveiligingsupdate nodig heeft, wanneer Stripe een API-versie wijzigt, of wanneer een klant op zaterdagochtend een bug ontdekt - AI-gegenereerde code in productie heeft een beheerder nodig, en "de AI" is dat niet.
 
 Dit is geen juridische vraag over wie de eigenaar is van de code (dat zou u altijd zelf moeten zijn). Het is een praktische vraag over wie er daadwerkelijk voor zorgt.
 
@@ -33,7 +33,7 @@ Oprichters stellen zich onderhoud vaak voor als af en toe een bug oplossen. In d
 
 **Platformwijzigingen.** Hostingproviders, databases, betaaldiensten en e-mailproviders wijzigen hun API's, beëindigen oude functies en scherpen vereisten aan. Stripe en Mollie hanteren versies voor hun API's; Supabase en Firebase updaten hun SDK's; Node.js-versies bereiken hun end-of-life. Elke wijziging brengt een deadline met zich mee.
 
-**Certificaten en domeinen.** SSL-certificaten worden doorgaans automatisch verlengd — totdat een automatische verlenging een keer faalt. Domeinnamen verlopen geruisloos als de gekoppelde creditcard verloopt.
+**Certificaten en domeinen.** SSL-certificaten worden doorgaans automatisch verlengd - totdat een automatische verlenging een keer faalt. Domeinnamen verlopen geruisloos als de gekoppelde creditcard verloopt.
 
 **Back-ups en monitoring.** Back-ups die nooit worden geverifieerd, stoppen op een dag stilletjes met werken. Foutmeldingen en alerts die worden gestuurd naar het e-mailadres van iemand die het bedrijf al heeft verlaten, komen nergens aan.
 
@@ -64,9 +64,9 @@ Veel oprichters combineren modellen: een beheerde dienst voor infrastructuur en 
 
 ## Vier Zaken Die U Beschermen, Welk Model U Ook Kiest
 
-- **Alle accounts op uw eigen naam.** Versiebeheer (repository), hosting, database, domeinnaam, payment provider en e-mailprovider — alles geregistreerd onder een zakelijk e-mailadres dat u beheert, beschermd met tweefactorauthenticatie (2FA). Nooit op het persoonlijke account van een freelancer.
+- **Alle accounts op uw eigen naam.** Versiebeheer (repository), hosting, database, domeinnaam, payment provider en e-mailprovider - alles geregistreerd onder een zakelijk e-mailadres dat u beheert, beschermd met tweefactorauthenticatie (2FA). Nooit op het persoonlijke account van een freelancer.
 - **Documentatie direct in de repository.** Een helder README-bestand waarin wordt uitgelegd hoe de applicatie is opgebouwd, hoe deployments werken, waar omgevingsvariabelen (secrets) worden opgeslagen en wat de belangrijkste integraties zijn. Dit helpt AI-tools bovendien om veel betere wijzigingen door te voeren.
-- **Geautomatiseerde tests op kritieke paden.** Een handvol tests op registratie, authenticatie, betalingen en de kernactie van de app vangen regressies op — inclusief bugs die door AI-hergeneratie worden geïntroduceerd.
+- **Geautomatiseerde tests op kritieke paden.** Een handvol tests op registratie, authenticatie, betalingen en de kernactie van de app vangen regressies op - inclusief bugs die door AI-hergeneratie worden geïntroduceerd.
 - **Een onderhoudslogboek.** Een beknopt logboek waarin staat wat er is bijgewerkt, wanneer en waarom. Dit verandert toekomstige overdrachten van archeologisch graafwerk in helder leeswerk.
 
 Deze maatregelen kosten weinig tijd en maken elk operationeel model direct robuuster.
@@ -87,7 +87,7 @@ Onderhoud wordt pas beheersbaar wanneer het structureel wordt ingepland in plaat
 | Jaarlijks | Langlevende API-sleutels roteren; domein- en certificaatverlengingen controleren | 1 uur |
 | Jaarlijks | Gerichte externe beveiligingsaudit van alle wijzigingen sinds de vorige review | Enkele dagen, extern |
 
-Zet deze taken in een gedeelde teamkalender met een vaste verantwoordelijke. In rustige maanden kost dit slechts enkele uren — aanzienlijk minder dan de ongeplande dagen paniek die een verwaarloosde app vroeg of laat eist.
+Zet deze taken in een gedeelde teamkalender met een vaste verantwoordelijke. In rustige maanden kost dit slechts enkele uren - aanzienlijk minder dan de ongeplande dagen paniek die een verwaarloosde app vroeg of laat eist.
 
 ## Hoe U Dependency-Meldingen Prioriteert
 
@@ -95,20 +95,20 @@ Meldingen over kwetsbare dependencies vormen de meest voorkomende onderhoudstaak
 
 ## Platformwijzigingen Waar U Rekening Mee Moet Houden
 
-In de loop van een jaar zal een typische AI-gebouwde webapplicatie te maken krijgen met diverse externe wijzigingen: een Node.js-versie die door uw hostingprovider wordt uitgefaseerd, een nieuwe hoofdversie van de Supabase- of Firebase-bibliotheek, een payment provider die een oude API-versie uitschakelt, aangescherpte authenticatie-eisen voor e-mailbezorging (zoals SPF/DKIM/DMARC) en browsers die hun cookiebeleid aanscherpen. Geen van deze zaken komt als een verrassing als iemand de releasenotes en deprecation-e-mails leest — en daarom hoort "iemand leest deze berichten" expliciet thuis in uw onderhoudsplan.
+In de loop van een jaar zal een typische AI-gebouwde webapplicatie te maken krijgen met diverse externe wijzigingen: een Node.js-versie die door uw hostingprovider wordt uitgefaseerd, een nieuwe hoofdversie van de Supabase- of Firebase-bibliotheek, een payment provider die een oude API-versie uitschakelt, aangescherpte authenticatie-eisen voor e-mailbezorging (zoals SPF/DKIM/DMARC) en browsers die hun cookiebeleid aanscherpen. Geen van deze zaken komt als een verrassing als iemand de releasenotes en deprecation-e-mails leest - en daarom hoort "iemand leest deze berichten" expliciet thuis in uw onderhoudsplan.
 
 ## Documentatie Schrijven Die Overdrachten Overleeft
 
 Documentatie voor een AI-gebouwde codebase hoeft geen boekwerk te zijn. Een README met de volgende onderdelen dekt de meeste overdrachtsscenario's volledig af:
 
 1. **Wat de applicatie doet** in maximaal vijf zinnen.
-2. **Architectuur** — frontend, backendfuncties, database, bestandsopslag en externe koppelingen.
-3. **Omgevingen** — lokaal, staging en productie, inclusief waar ze gehost worden.
-4. **Deployments** — stapsgewijze instructies, inclusief hoe een rollback wordt uitgevoerd.
-5. **Geheimen en omgevingsvariabelen** — de namen van de variabelen en waar ze worden beheerd, nooit de feitelijke waarden.
-6. **Gegevensbeheer** — belangrijkste databasetabellen, persoonsgegevens, back-upbeleid en bewaartermijnen.
-7. **Integraties** — elk extern platform, het doeleinde en wie het beheerdersaccount bezit.
-8. **Bekende beperkingen en beslissingen** — wat er bewust is uitgesteld en om welke reden.
+2. **Architectuur** - frontend, backendfuncties, database, bestandsopslag en externe koppelingen.
+3. **Omgevingen** - lokaal, staging en productie, inclusief waar ze gehost worden.
+4. **Deployments** - stapsgewijze instructies, inclusief hoe een rollback wordt uitgevoerd.
+5. **Geheimen en omgevingsvariabelen** - de namen van de variabelen en waar ze worden beheerd, nooit de feitelijke waarden.
+6. **Gegevensbeheer** - belangrijkste databasetabellen, persoonsgegevens, back-upbeleid en bewaartermijnen.
+7. **Integraties** - elk extern platform, het doeleinde en wie het beheerdersaccount bezit.
+8. **Bekende beperkingen en beslissingen** - wat er bewust is uitgesteld en om welke reden.
 
 Een waardevol bijkomend voordeel: moderne AI-tools lezen README-bestanden en projectrichtlijnen uit en genereren aantoonbaar betere en veiligere codewijzigingen wanneer deze context aanwezig is.
 
@@ -122,11 +122,11 @@ Let op de volgende alarmsignalen: beveiligingsmeldingen die al langer dan een ma
 
 ## AI-Tools Veilig Inzetten voor Onderhoud
 
-AI-codingtools zijn uitstekende hulpmiddelen bij het uitvoeren van onderhoud — voor het upgraden van packages, het verklaren van complexe code of het verhelpen van gemelde fouten — mits u binnen strikte kaders werkt. Voer onderhoudswijzigingen altijd uit op een aparte branch; draai de volledige testsuite voordat u samenvoegt; laat de AI expliciet toelichten wat er is gewijzigd en waarom; en weiger suggesties die ongerelateerde bestanden aanpassen. Vraag de AI bij bibliotheekupgrades eerst de officiële migratiehandleiding te bestuderen en potentiële breekpunten op te sommen alvorens code aan te passen. Met deze werkwijze versnelt AI het onderhoud zonder nieuwe regressies te introduceren.
+AI-codingtools zijn uitstekende hulpmiddelen bij het uitvoeren van onderhoud - voor het upgraden van packages, het verklaren van complexe code of het verhelpen van gemelde fouten - mits u binnen strikte kaders werkt. Voer onderhoudswijzigingen altijd uit op een aparte branch; draai de volledige testsuite voordat u samenvoegt; laat de AI expliciet toelichten wat er is gewijzigd en waarom; en weiger suggesties die ongerelateerde bestanden aanpassen. Vraag de AI bij bibliotheekupgrades eerst de officiële migratiehandleiding te bestuderen en potentiële breekpunten op te sommen alvorens code aan te passen. Met deze werkwijze versnelt AI het onderhoud zonder nieuwe regressies te introduceren.
 
 ## Begroten voor Onderhoud
 
-Onderhoud is een structurele kostenpost die vanaf dag één in uw financiële planning thuishoort. Voor een compacte SaaS-toepassing combineert een realistische begroting hosting en clouddiensten (op basis van verbruik), een beheerde dienst of eigen uren voor routinematige controle (enkele uren per maand, of circa €49 per maand via het Launch & Grow-pakket van LaunchStudio), en een financiële buffer voor platformupgrades en incidenten — gelijk aan enkele ontwikkeldagen per jaar. Oprichters die nul euro budgetteren, betalen aan het einde van de rit steevast meer: uitgestelde updates cumuleren tot complexe, riskante migraties die onder hoge tijdsdruk moeten worden uitgevoerd.
+Onderhoud is een structurele kostenpost die vanaf dag één in uw financiële planning thuishoort. Voor een compacte SaaS-toepassing combineert een realistische begroting hosting en clouddiensten (op basis van verbruik), een beheerde dienst of eigen uren voor routinematige controle (enkele uren per maand, of circa €49 per maand via het Launch & Grow-pakket van LaunchStudio), en een financiële buffer voor platformupgrades en incidenten - gelijk aan enkele ontwikkeldagen per jaar. Oprichters die nul euro budgetteren, betalen aan het einde van de rit steevast meer: uitgestelde updates cumuleren tot complexe, riskante migraties die onder hoge tijdsdruk moeten worden uitgevoerd.
 
 ## Wanneer Onderhoud Naar Binnen Wordt Gehaald
 
@@ -136,7 +136,7 @@ Naarmate de omzet groeit, nemen veel oprichters uiteindelijk een interne ontwikk
 
 Het uitgangspunt van LaunchStudio is helder: de code is en blijft van u. Alles staat in uw eigen repository, op uw eigen accounts, gedocumenteerd en direct leesbaar voor tools zoals Lovable, Cursor of Bolt, zodat u ongehinderd kunt blijven bouwen. Na een Launch Ready-traject onderhoudt u de applicatie op de manier die u het beste past, zonder vendor lock-in.
 
-Voor oprichters die de voorkeur geven aan een ontzorgd model biedt het Launch & Grow-pakket managed hosting, SSL, continue uptime-monitoring, geautomatiseerde back-ups en beveiligingsupdates voor €49 per maand, inclusief prioriteitsondersteuning bij verstoringen. Dit pakket is ontstaan omdat veel oprichters er — vaak pas na een incident — achter komen dat niemand het onderhoud structureel borgde.
+Voor oprichters die de voorkeur geven aan een ontzorgd model biedt het Launch & Grow-pakket managed hosting, SSL, continue uptime-monitoring, geautomatiseerde back-ups en beveiligingsupdates voor €49 per maand, inclusief prioriteitsondersteuning bij verstoringen. Dit pakket is ontstaan omdat veel oprichters er - vaak pas na een incident - achter komen dat niemand het onderhoud structureel borgde.
 
 LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbureau met meer dan 11 jaar ervaring in het onderhouden van bedrijfskritische productiesystemen voor opdrachtgevers zoals Vodafone en Statler BI. Het technisch beheer wordt uitgevoerd door senior engineers in Manifera's ontwikkelcentrum in Ho Chi Minhstad, met directe Europese ondersteuning via de vestiging aan de Herengracht 420 in Amsterdam. Manifera's [offshore software development teams](https://www.manifera.com/services/offshore-software-development/) bieden tevens langetermijnoplossingen voor applicaties die de fase van managed hosting ontgroeien. Om een beeld te krijgen van de noodzaak hiervan toont de [GitHub Advisory Database](https://github.com/advisories) hoe frequent nieuwe kwetsbaarheden in packages aan het licht komen.
 
@@ -155,9 +155,9 @@ De engineers van LaunchStudio startten met het centraliseren van het eigenaarsch
 **Resultaat:** PraatMaat draait inmiddels veertien maanden zonder een enkele ongeplande uitval. De geautomatiseerde tests hebben driemaal een regressie door latere Cursor-aanpassingen tegengehouden. Toen Charlotte het daaropvolgende jaar een parttime ontwikkelaar aannam, vergde diens onboarding dankzij de documentatie en het logboek slechts twee dagen in plaats van weken.
 
 > *"In theorie was ik eigenaar van de code. In de praktijk was de enige persoon die het systeem werkelijk begreep zojuist naar Berlijn verhuisd."*
-> — **Charlotte Meijer, Oprichter, PraatMaat (Amstelveen)**
+> - **Charlotte Meijer, Oprichter, PraatMaat (Amstelveen)**
 
-**Kosten & Tijdlijn:** €2.000 (centralisatie van eigenaarschap, bugfixes, tests, documentatie en dependency-updates) — afgerond binnen 8 werkdagen, gevolgd door €49/maand voor managed hosting en onderhoud.
+**Kosten & Tijdlijn:** €2.000 (centralisatie van eigenaarschap, bugfixes, tests, documentatie en dependency-updates) - afgerond binnen 8 werkdagen, gevolgd door €49/maand voor managed hosting en onderhoud.
 
 ## Veelgestelde Vragen
 

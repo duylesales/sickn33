@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App to Production on a €3,500 Budget: What the Mid-Range Actually Buys",
-  "description": "What does €3,500 buy when you take an AI app to production? A breakdown of the typical mid-range scope — security, accounts, data, payments, hosting and email — what usually does not fit, and how to make the budget go further.",
+  "description": "What does €3,500 buy when you take an AI app to production? A breakdown of the typical mid-range scope - security, accounts, data, payments, hosting and email - what usually does not fit, and how to make the budget go further.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-15",
@@ -27,9 +27,9 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 LaunchStudio's fixed prices range from €800 to €7,500. Roughly:
 
-- **€800–€1,500:** a focused review and fixes for a simple app — security basics, data location, backups, domain. Often without payments.
+- **€800–€1,500:** a focused review and fixes for a simple app - security basics, data location, backups, domain. Often without payments.
 - **€2,000–€3,500:** the mid-range. A working app with accounts and payments made production ready end to end.
-- **€4,000–€7,500:** more complex products — multiple roles, marketplaces, integrations, heavy data, peaks, managed operations.
+- **€4,000–€7,500:** more complex products - multiple roles, marketplaces, integrations, heavy data, peaks, managed operations.
 
 The price calculator reflects this: a Webshop starts around €1,500–€3,500, a Tool around €1,200–€3,000, and a SaaS around €2,833–€7,167, with add-ons such as Payments (+€400), User accounts (+€250), Security (+€500) and Database/backend (+€350).
 
@@ -87,7 +87,7 @@ To make "what does €3,500 buy" concrete, here is how a mid-range AI app to pro
 | Transactional email with authenticated domain | ~5% | Yes |
 | Monitoring and alerts | ~5% | Yes |
 | Testing and launch support | ~10% | Yes |
-| New features (waiting list, advanced reports) | — | Usually not |
+| New features (waiting list, advanced reports) | - | Usually not |
 
 The exact split varies, but the pattern holds: most of the budget protects data and money, the rest makes the app operable.
 
@@ -103,7 +103,7 @@ The exact split varies, but the pattern holds: most of the budget protects data 
 | Backend | Mature service (Supabase, Firebase) | Custom or platform-locked |
 | Scope discipline | Frozen | Growing during the project |
 
-Knowing these factors helps you predict where your project will land before the intro call — and which choices would bring it lower.
+Knowing these factors helps you predict where your project will land before the intro call - and which choices would bring it lower.
 
 ## Getting More Value From a Fixed Budget
 
@@ -118,7 +118,7 @@ Several choices stretch a mid-range budget:
 
 ## Comparing €3,500 With Alternatives
 
-For the same scope, founders commonly receive quotes ranging from a few thousand euros from freelancers billing hourly (with uncertain totals) to tens of thousands from agencies proposing rebuilds. The difference is rarely the hourly rate alone; it is scope — whether the frontend is rebuilt, whether discovery phases are included — and who carries the risk of overruns. When comparing, look at what each quote actually delivers against the work packages above.
+For the same scope, founders commonly receive quotes ranging from a few thousand euros from freelancers billing hourly (with uncertain totals) to tens of thousands from agencies proposing rebuilds. The difference is rarely the hourly rate alone; it is scope - whether the frontend is rebuilt, whether discovery phases are included - and who carries the risk of overruns. When comparing, look at what each quote actually delivers against the work packages above.
 
 ## Running Costs After Launch
 
@@ -130,7 +130,7 @@ Some apps do not need the mid-range at all: a simple website, a tool without acc
 
 ## What You Should Receive for €3,500
 
-At the end of a mid-range project, expect concrete deliverables: the findings list with every item marked fixed or deliberately postponed; code changes in your repository with readable commit history; tests for access control and payments; production and staging environments on your accounts; documented environment variables and secrets locations; backup configuration and a restore test result; monitoring and alert routing; and a short handover document describing how to deploy, roll back and get support. If any of these are missing, ask — they are what turn a fixed price into lasting value.
+At the end of a mid-range project, expect concrete deliverables: the findings list with every item marked fixed or deliberately postponed; code changes in your repository with readable commit history; tests for access control and payments; production and staging environments on your accounts; documented environment variables and secrets locations; backup configuration and a restore test result; monitoring and alert routing; and a short handover document describing how to deploy, roll back and get support. If any of these are missing, ask - they are what turn a fixed price into lasting value.
 
 ## Paying in Stages
 
@@ -142,7 +142,7 @@ After launch, many founders budget in smaller steps: managed hosting monthly, a 
 
 ## A Note on Value
 
-€3,500 is a meaningful amount for a small business or early startup. Its value lies less in the hours than in the outcomes: customers who can pay without problems, data that cannot leak between accounts, a product that stays up during busy periods and a founder who no longer spends evenings reconciling payments. For most founders who reach this stage, those outcomes repay the investment within the first months of operation — often through a single avoided incident or a handful of customers who would otherwise have been lost to a broken checkout.
+€3,500 is a meaningful amount for a small business or early startup. Its value lies less in the hours than in the outcomes: customers who can pay without problems, data that cannot leak between accounts, a product that stays up during busy periods and a founder who no longer spends evenings reconciling payments. For most founders who reach this stage, those outcomes repay the investment within the first months of operation - often through a single avoided incident or a handful of customers who would otherwise have been lost to a broken checkout.
 
 ## How to Get a Precise Number
 
@@ -154,7 +154,7 @@ Founders budgeting a launch sometimes forget items outside the engineering quote
 
 ## The Mid-Range Sweet Spot
 
-For most AI-built booking apps, webshops and early SaaS products, the mid-range is where safety and affordability meet: enough to protect data and money properly, get live on your own domain and operate calmly, without paying for rebuilds or features you do not yet need. Spend it on the non-negotiables, postpone the rest deliberately, and let real usage decide what comes next. That discipline is what makes a €3,500 launch feel like a sound investment rather than a leap of faith — and it leaves room in the budget for the marketing that brings your first customers in.
+For most AI-built booking apps, webshops and early SaaS products, the mid-range is where safety and affordability meet: enough to protect data and money properly, get live on your own domain and operate calmly, without paying for rebuilds or features you do not yet need. Spend it on the non-negotiables, postpone the rest deliberately, and let real usage decide what comes next. That discipline is what makes a €3,500 launch feel like a sound investment rather than a leap of faith - and it leaves room in the budget for the marketing that brings your first customers in.
 
 ## First Step
 
@@ -170,7 +170,7 @@ A fixed mid-range budget, spent in the right order, buys a safe launch.
 
 ## Why the Price Is Fixed
 
-After a 15-minute intro call and a look at your prototype, LaunchStudio gives a fixed price with scope and timeline. That is possible because the work — hardening an existing app — is well understood by a team that has done it many times. It also means the €3,500 you agree is the €3,500 you pay.
+After a 15-minute intro call and a look at your prototype, LaunchStudio gives a fixed price with scope and timeline. That is possible because the work - hardening an existing app - is well understood by a team that has done it many times. It also means the €3,500 you agree is the €3,500 you pay.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, 120+ engineers and 160+ projects. Most engineering happens at Manifera's development centre on Pho Quang Street in Ho Chi Minh City, with client contact in Amsterdam, which is how a fixed price at about 20% of agency rates remains realistic. See [Manifera's offshore development](https://www.manifera.com/services/offshore-software-development/) for how that model works. For payment fees on top of your build budget, [Mollie's pricing page](https://www.mollie.com/pricing) is a useful reference.
 
@@ -189,9 +189,9 @@ The fixed quote covered: access control on students, lessons and notes; key rota
 **Result:** Muziekmoment went live after twelve business days. Bank-transfer reconciliation disappeared, lesson card sales rose because students could pay instantly with iDEAL, and the school grew to 230 students by the end of the season.
 
 > *"I didn't get everything on my wish list. I got everything I needed to stop doing bookkeeping at midnight."*
-> — **Ilse Dekkers, Founder, Muziekmoment (Emmen)**
+> - **Ilse Dekkers, Founder, Muziekmoment (Emmen)**
 
-**Cost & Timeline:** €3,500 (Launch Ready package with payments, security and email) — completed in 12 business days.
+**Cost & Timeline:** €3,500 (Launch Ready package with payments, security and email) - completed in 12 business days.
 
 ## Frequently Asked Questions
 

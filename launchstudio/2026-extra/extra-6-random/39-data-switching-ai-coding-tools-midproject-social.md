@@ -1,8 +1,8 @@
-🗄️ Lieke Timmer built DocuFlow, a document workflow tool in Muiden, starting in Lovable. Partway through, she migrated to Cursor for more backend control. The migration looked smooth — until weeks later, when she noticed document version histories older than a certain point had simply vanished. No error, no warning. 😳
+🗄️ Lieke Timmer built DocuFlow, a document workflow tool in Muiden, starting in Lovable. Partway through, she migrated to Cursor for more backend control. The migration looked smooth - until weeks later, when she noticed document version histories older than a certain point had simply vanished. No error, no warning. 😳
 
 🧠 Switching AI coding tools mid-project isn't a frontend decision. It's a database decision wearing a disguise.
 
-❌ Every AI coding tool has its own house style for structuring a database — none of it travels between tools by default
+❌ Every AI coding tool has its own house style for structuring a database - none of it travels between tools by default
 ❌ A new tool "continuing" a project layers its own assumptions on top of a schema built with different ones
 ❌ Migrations that mis-map fields or relationships can complete with zero errors while silently dropping data
 ❌ You often don't notice the loss until weeks later, when you go looking for something that isn't there anymore

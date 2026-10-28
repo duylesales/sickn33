@@ -1,4 +1,4 @@
-🎯 Hij stelde één freelance ontwikkelaar één vraag — niet over zijn stack, niet over zijn tarief — en het bespaarde hem een herbouw van €12.000 die hij nooit nodig had. 👀
+🎯 Hij stelde één freelance ontwikkelaar één vraag - niet over zijn stack, niet over zijn tarief - en het bespaarde hem een herbouw van €12.000 die hij nooit nodig had. 👀
 
 Oprichters die ontwikkelaars screenen voor hun AI-gegenereerde prototype vragen bijna altijd naar techstacks en uurtarieven. Die vragen voorspellen niet wat er daadwerkelijk toe doet. 🧠
 

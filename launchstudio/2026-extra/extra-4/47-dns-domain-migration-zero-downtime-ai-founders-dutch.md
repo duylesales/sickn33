@@ -52,7 +52,7 @@ LaunchStudio's ingenieurs, ondersteund vanuit Manifera's kantoor in Singapore op
 Het goed krijgen van de TTL-volgorde lost het verspreidingsprobleem op, maar het lost een ander probleem op dan het probleem dat oprichters vervolgens opvangt: zelfs een perfect getimede DNS-omzetting leidt bezoekers naar een nieuw domein dat nog geen geldig HTTPS-certificaat heeft dat het dekt. De meeste hostingplatformen leveren een TLS-certificaat automatisch, maar pas *nadat* ze detecteren dat het domein daadwerkelijk naar hen wijst. Dit betekent dat het certificaatverzoek pas begint bij dezelfde DNS-wijziging die onmiddellijk zou moeten zijn, wat een tweede, afzonderlijke vertraging creëert bovenop het DNS-verspreidingsvenster.
 
 ```
-1. DNS-omzetting voltooit — nieuw domein wijst nu naar uw host
+1. DNS-omzetting voltooit - nieuw domein wijst nu naar uw host
 2. Host detecteert het domein en vraagt een TLS-certificaat aan
 3. Certificaatautoriteit valideert domeineigendom (minuten tot uren)
 4. Totdat de validatie is voltooid mislukken HTTPS-verzoeken naar het nieuwe domein
@@ -71,9 +71,9 @@ Waar Milo geen rekening mee hield was de TTL van het bestaande DNS-record, die o
 LaunchStudio auditeerde de DNS-configuratie achteraf en herbouwde Milo's proces voor toekomstige wijzigingen: verlaag de TTL een volledige dag vóór een geplande DNS-wijziging, wacht het oude TTL-venster af voordat u omzet, voer de daadwerkelijke recordwijziging uit zodra de versreiding vrijwel onmiddellijk zal zijn, en herstel de normale TTL pas na het bevestigen van de stabiliteit. **Resultaat:** ReisPlanner's daaropvolgende infrastructuurwijzigingen voltooien nu zonder enige bezoekersgerichte uitval.
 
 > *"Ik wist niet eens dat DNS-caching iets was wat me acht uur lang kon bijten. Het voelde als zo'n kleine technische stap, totdat het dat niet meer was."*
-> — **Milo Prins, Oprichter, ReisPlanner (Purmerend)**
+> - **Milo Prins, Oprichter, ReisPlanner (Purmerend)**
 
-**Kosten en tijdlijn:** € 450 (DNS-audit, migratie-volgorde, gedocumenteerde omzettingsprocedure) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 450 (DNS-audit, migratie-volgorde, gedocumenteerde omzettingsprocedure) - voltooid in 2 werkdagen.
 
 ---
 

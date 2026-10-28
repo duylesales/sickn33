@@ -73,7 +73,7 @@ Meanwhile you become the person who knows the reporting layer, and that knowledg
 
 - **Something predictive is already in production somewhere in the organisation,** in any team.
 - **Someone has made this move internally before,** and you can be told their name and what they work on now.
-- **There is a named problem waiting** — churn, demand, maintenance, fraud — with a business owner who wants it.
+- **There is a named problem waiting** - churn, demand, maintenance, fraud - with a business owner who wants it.
 - **The data platform can support it:** history retained, pipelines that run, an environment where models can actually be deployed.
 - **The training budget and time are contractual,** not aspirational.
 - **The team structure has somewhere to go,** rather than a single reporting job with a hopeful title.
@@ -81,7 +81,7 @@ Meanwhile you become the person who knows the reporting layer, and that knowledg
 ## Signals It Is Not
 
 - Nothing predictive exists anywhere and nobody can name a candidate problem.
-- "We are still getting the basics right" — often true, and often true indefinitely.
+- "We are still getting the basics right" - often true, and often true indefinitely.
 - The reporting backlog is enormous and you would be the only person on it.
 - The manager is enthusiastic about your ambition but cannot describe what would need to happen.
 - Analytics reports into a function with no appetite for uncertainty in outputs.
@@ -103,7 +103,7 @@ If you accept, treat the transition as a project you run rather than a promise y
 
 **Do the reporting work exceptionally well first.** Credibility is the currency, and nobody grants modelling latitude to someone whose dashboards are late.
 
-**Choose prediction-shaped questions.** Many reporting requests are forecasting questions in disguise: how many will we need next month, which of these is likely to fail, where will demand be. Answer one properly — with a baseline, a holdout period and an honest error measure — and present it as an extension of the reporting you already do.
+**Choose prediction-shaped questions.** Many reporting requests are forecasting questions in disguise: how many will we need next month, which of these is likely to fail, where will demand be. Answer one properly - with a baseline, a holdout period and an honest error measure - and present it as an extension of the reporting you already do.
 
 **Make it small and useful.** A modest, well-validated forecast that a planner actually uses is worth more than an ambitious model nobody adopts.
 
@@ -117,7 +117,7 @@ If you accept, treat the transition as a project you run rather than a promise y
 
 ## How Employers Read This Experience Later
 
-Recruiters and hiring managers do not dismiss reporting backgrounds — a great many senior Dutch data scientists have one. What they look for is evidence that you moved beyond it: a project with a validation design, a metric you can defend, a system that ran on a schedule, a decision that changed because of your work.
+Recruiters and hiring managers do not dismiss reporting backgrounds - a great many senior Dutch data scientists have one. What they look for is evidence that you moved beyond it: a project with a validation design, a metric you can defend, a system that ran on a schedule, a decision that changed because of your work.
 
 Two candidates with three years in a reporting team can look completely different on paper. One lists dashboards and tools. The other lists a demand forecast that reduced manual planning effort, with the method and the evaluation described in two sentences. The second is not more talented; they were more deliberate.
 
@@ -131,7 +131,7 @@ Job titles in this area are close to meaningless in the Dutch market. "Data scie
 
 **Look at who you would work with.** "Part of the BI team, reporting to the finance manager" places the role in reporting. "Working with data engineers and the platform team" places it closer to production.
 
-**Look at what already runs.** Vacancies that describe existing models — what they predict, for whom — are describing reality. Vacancies that describe ambitions in the future tense are describing a hope.
+**Look at what already runs.** Vacancies that describe existing models - what they predict, for whom - are describing reality. Vacancies that describe ambitions in the future tense are describing a hope.
 
 **Notice the word "also".** "You will build dashboards and also explore predictive possibilities" almost always means the first part is the job and the second is the aspiration, because the first has deadlines and the second does not.
 
@@ -147,7 +147,7 @@ She spends nine months doing reporting properly and building a reputation for de
 
 It is slightly better than the manual approach, and much faster. The planners adopt it for that category, then for two more.
 
-By her second year, a third of her time is forecasting work, and the company has hired an analyst to take on some of the reporting. When she interviews elsewhere at four years, the conversation is entirely about the forecasting, the validation and the adoption problem she solved — not about the dashboards she built first.
+By her second year, a third of her time is forecasting work, and the company has hired an analyst to take on some of the reporting. When she interviews elsewhere at four years, the conversation is entirely about the forecasting, the validation and the adoption problem she solved - not about the dashboards she built first.
 
 ## Key Takeaways
 
@@ -159,7 +159,7 @@ By her second year, a third of her time is forecasting work, and the company has
 
 ## Where to Start
 
-Compare the reporting offer with what else is realistically available near you — including employers whose vacancies mention models already running in production rather than planned.
+Compare the reporting offer with what else is realistically available near you - including employers whose vacancies mention models already running in production rather than planned.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

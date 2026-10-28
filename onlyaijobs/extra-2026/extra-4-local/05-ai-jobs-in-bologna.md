@@ -41,7 +41,7 @@ Content Format: Local Guide
 }
 </script>
 
-Bologna is best known for its university — the oldest in the Western world still in operation — its food and its porticoes. Fewer people know that the city has become one of Europe's most important sites for high-performance computing, or that the surrounding region builds some of the world's most sophisticated machines, from sports cars to packaging lines. For students and recent graduates, AI jobs in Bologna and across Emilia-Romagna offer a rare combination: world-class computing infrastructure, deep industrial problems that need machine learning, and a city where young people can still build a life without the costs of Milan. This guide explains where the AI work is, how the Italian job market describes it and how to start a career in the region.
+Bologna is best known for its university - the oldest in the Western world still in operation - its food and its porticoes. Fewer people know that the city has become one of Europe's most important sites for high-performance computing, or that the surrounding region builds some of the world's most sophisticated machines, from sports cars to packaging lines. For students and recent graduates, AI jobs in Bologna and across Emilia-Romagna offer a rare combination: world-class computing infrastructure, deep industrial problems that need machine learning, and a city where young people can still build a life without the costs of Milan. This guide explains where the AI work is, how the Italian job market describes it and how to start a career in the region.
 
 ## A City That Became a Computing Hub
 
@@ -53,7 +53,7 @@ For graduates, this creates roles that are unusual in most European cities: rese
 
 Emilia-Romagna's industrial base is remarkable for its concentration of high-end manufacturing.
 
-**Motor Valley.** The area between Bologna and Modena is home to famous automotive and motorcycle manufacturers — Ducati in Bologna, Lamborghini in Sant'Agata Bolognese and Ferrari in Maranello, among others — and their suppliers. Data and AI work here includes telemetry analysis, simulation, predictive maintenance, quality control and, in motorsport, performance optimisation.
+**Motor Valley.** The area between Bologna and Modena is home to famous automotive and motorcycle manufacturers - Ducati in Bologna, Lamborghini in Sant'Agata Bolognese and Ferrari in Maranello, among others - and their suppliers. Data and AI work here includes telemetry analysis, simulation, predictive maintenance, quality control and, in motorsport, performance optimisation.
 
 **Packaging and automatic machinery.** Bologna and its surroundings form one of the world's leading clusters for automatic packaging machinery, supplying food, pharmaceutical and consumer goods industries worldwide. Companies in this "packaging valley" increasingly add sensors, computer vision and machine learning to their machines for inspection, predictive maintenance and process optimisation.
 
@@ -104,7 +104,7 @@ A few features of the Italian job market are worth understanding before you acce
 
 **Codice fiscale.** Your Italian tax code is required for employment, renting and most services. Get it early.
 
-**Collective agreements (CCNL).** Most employment contracts follow a national collective agreement for the sector — for example the metalworking agreement in manufacturing — which defines pay levels, working hours and benefits.
+**Collective agreements (CCNL).** Most employment contracts follow a national collective agreement for the sector - for example the metalworking agreement in manufacturing - which defines pay levels, working hours and benefits.
 
 **Thirteenth month and sometimes fourteenth.** Italian salaries are often paid in thirteen or fourteen instalments. Compare annual totals, not monthly figures.
 
@@ -125,27 +125,27 @@ For HPC and research roles, experience with parallel computing, scientific Pytho
 
 ## Why Bologna Can Be a Better Start Than a Bigger City
 
-Many Italian graduates move to Milan or abroad for their first job. For some, that is the right choice. But Bologna offers a strong alternative: a lively student city, meaningful industrial and research work, and living costs that — while rising — are typically lower than Milan's. The same insight that led to OnlyAIJobs in the Netherlands applies here: many graduates leave not because they want to, but because they do not see the interesting employers close to home. Mapping the regional market carefully before leaving is always worth the effort.
+Many Italian graduates move to Milan or abroad for their first job. For some, that is the right choice. But Bologna offers a strong alternative: a lively student city, meaningful industrial and research work, and living costs that - while rising - are typically lower than Milan's. The same insight that led to OnlyAIJobs in the Netherlands applies here: many graduates leave not because they want to, but because they do not see the interesting employers close to home. Mapping the regional market carefully before leaving is always worth the effort.
 
 ## How OnlyAIJobs Fits a Bologna Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, shows vacancies at exact address level with the distance from your home, and does not rank employers by advertising budget. Its listings today are concentrated in the Netherlands, where the platform began, so for Bologna you will find few or no local listings on the platform right now; combine it with Italian job sites, university career services and company career pages.
 
-It remains useful in two ways: to compare an Italian start with opportunities in the Netherlands, where employers such as Accenture, Cegeka, Heijmans and Holland Innovative list AI roles at exact addresses; and as a method — search by category and distance, not by title. For employers in Emilia-Romagna hiring AI talent, the first vacancy on OnlyAIJobs is free: email a link to the posting to info@onlyaijobs.eu.
+It remains useful in two ways: to compare an Italian start with opportunities in the Netherlands, where employers such as Accenture, Cegeka, Heijmans and Holland Innovative list AI roles at exact addresses; and as a method - search by category and distance, not by title. For employers in Emilia-Romagna hiring AI talent, the first vacancy on OnlyAIJobs is free: email a link to the posting to info@onlyaijobs.eu.
 
 ## A Graduate's Plan for AI Jobs in Bologna
 
 1. **Choose a direction:** research and HPC, industrial AI, or data roles in services.
 2. **Build a target list** of thirty organisations across the Tecnopolo, Motor Valley, packaging machinery and services.
 3. **Search in both languages** and by problem type (vision, maintenance, forecasting).
-4. **Use your thesis** as a bridge — propose or choose topics with regional companies.
+4. **Use your thesis** as a bridge - propose or choose topics with regional companies.
 5. **Consider an industrial doctorate** if you enjoy research but want industry contact.
 6. **Check commutes** along the Via Emilia corridor against each employer's address.
 7. **Compare offers** on annual total, contract type and conversion prospects.
 
 ## Climate, Weather and Scientific AI
 
-The presence of ECMWF's data centre and major computing resources has made Bologna a focal point for data-intensive environmental science. Weather and climate modelling increasingly combine traditional numerical simulation with machine learning — for example to emulate parts of physical models, post-process forecasts or downscale predictions to local conditions. For graduates with backgrounds in physics, mathematics or environmental science as well as computer science, this is a distinctive career path: roles in research institutes, public agencies and companies that build services on top of weather and climate data. Skills in handling very large gridded datasets, parallel computing and careful validation against observations are particularly valued, and the work has visible societal impact, from agriculture to energy planning.
+The presence of ECMWF's data centre and major computing resources has made Bologna a focal point for data-intensive environmental science. Weather and climate modelling increasingly combine traditional numerical simulation with machine learning - for example to emulate parts of physical models, post-process forecasts or downscale predictions to local conditions. For graduates with backgrounds in physics, mathematics or environmental science as well as computer science, this is a distinctive career path: roles in research institutes, public agencies and companies that build services on top of weather and climate data. Skills in handling very large gridded datasets, parallel computing and careful validation against observations are particularly valued, and the work has visible societal impact, from agriculture to energy planning.
 
 ## Student Life to Working Life: Using Your Years in Bologna
 
@@ -169,7 +169,7 @@ Look at Bologna's computing hub and industrial clusters before assuming an AI ca
 
 A computer engineering graduate from Bologna assumes that AI work means moving to Milan or abroad. His applications go to large consultancies in Milan and to companies in Germany.
 
-His thesis supervisor suggests looking at the region's machinery companies. He discovers that a packaging machinery manufacturer near Bologna is developing vision-based inspection for its lines and is looking for someone to work on defect detection. The vacancy is titled "sviluppatore software visione artificiale" — it never mentions AI in English. The site is reachable by regional train and a short bike ride from the station.
+His thesis supervisor suggests looking at the region's machinery companies. He discovers that a packaging machinery manufacturer near Bologna is developing vision-based inspection for its lines and is looking for someone to work on defect detection. The vacancy is titled "sviluppatore software visione artificiale" - it never mentions AI in English. The site is reachable by regional train and a short bike ride from the station.
 
 He starts with a six-month internship linked to his thesis, which converts into a permanent contract. He works on models deployed on real machines shipped worldwide, stays in the city he likes and keeps the option of an industrial doctorate open for later.
 
@@ -183,7 +183,7 @@ He starts with a six-month internship linked to his thesis, which converts into 
 
 ## Where to Start
 
-Before deciding that an AI career means leaving Emilia-Romagna, map the employers within your realistic commute and compare them with options elsewhere. Browse current AI, machine learning and data jobs by category and distance at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs) — and if you hire in the region, your first vacancy is free via info@onlyaijobs.eu.
+Before deciding that an AI career means leaving Emilia-Romagna, map the employers within your realistic commute and compare them with options elsewhere. Browse current AI, machine learning and data jobs by category and distance at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs) - and if you hire in the region, your first vacancy is free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

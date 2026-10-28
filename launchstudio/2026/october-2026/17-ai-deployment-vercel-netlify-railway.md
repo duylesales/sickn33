@@ -43,23 +43,23 @@ Vercel and Netlify are serverless platforms. Railway is a modern Platform-as-a-S
 
 ### 4. What Happens When You Outgrow the Free Tier
 
-Every one of these platforms has a generous free or low-cost starter tier, and that's precisely what makes the transition painful. AI-generated apps are rarely built with cost-awareness — an AI tool has no reason to warn you that a `useEffect` re-fetching on every render will multiply your database read count, or that an unmemoized component is triggering redundant API calls on Vercel that each count against your function invocation quota. Founders regularly discover their real hosting bill only after a viral moment or a single misbehaving beta user drives usage past the free tier ceiling. Vercel's Pro plan bills per-function-invocation and per-GB-hour of compute; Railway bills by actual container resource usage; Netlify bills by build minutes and function invocations. None of these cost models are visible from inside your AI tool's chat window, which means the first time many founders think about hosting economics is the month they get an unexpectedly large invoice.
+Every one of these platforms has a generous free or low-cost starter tier, and that's precisely what makes the transition painful. AI-generated apps are rarely built with cost-awareness - an AI tool has no reason to warn you that a `useEffect` re-fetching on every render will multiply your database read count, or that an unmemoized component is triggering redundant API calls on Vercel that each count against your function invocation quota. Founders regularly discover their real hosting bill only after a viral moment or a single misbehaving beta user drives usage past the free tier ceiling. Vercel's Pro plan bills per-function-invocation and per-GB-hour of compute; Railway bills by actual container resource usage; Netlify bills by build minutes and function invocations. None of these cost models are visible from inside your AI tool's chat window, which means the first time many founders think about hosting economics is the month they get an unexpectedly large invoice.
 
 ### 5. The Hybrid Pattern Most Founders Actually Need
 
-In practice, the strongest architecture for an AI-generated SaaS is rarely "pick one platform." It's a hybrid: deploy the frontend and fast API routes to Vercel or Netlify for edge speed, and extract anything long-running or stateful — video processing, large file transcription, WebSocket connections, queue workers — into a persistent service on Railway or Render. AI tools almost never generate this split on their own, because a single prompt produces a single deployable unit by default. Recognizing when your codebase actually needs two deployment targets, not one, is an architectural judgment call that requires understanding your workload, not just your framework.
+In practice, the strongest architecture for an AI-generated SaaS is rarely "pick one platform." It's a hybrid: deploy the frontend and fast API routes to Vercel or Netlify for edge speed, and extract anything long-running or stateful - video processing, large file transcription, WebSocket connections, queue workers - into a persistent service on Railway or Render. AI tools almost never generate this split on their own, because a single prompt produces a single deployable unit by default. Recognizing when your codebase actually needs two deployment targets, not one, is an architectural judgment call that requires understanding your workload, not just your framework.
 
 ## The Deployment Reality Check
 
 The truth is, your AI-generated codebase is likely messy. It might have memory leaks in the `useEffect` hooks or inefficient database queries that will crash a serverless function instantly under concurrent load, even if it works flawlessly for a single test user.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
-At [LaunchStudio](https://launchstudio.eu/en/), we see founders struggle with this daily. Backed by [Manifera's](https://www.manifera.com/) 11+ years of enterprise engineering experience — the same team behind Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice for enterprise clients — we take the guesswork out of AI deployment.
+At [LaunchStudio](https://launchstudio.eu/en/), we see founders struggle with this daily. Backed by [Manifera's](https://www.manifera.com/) 11+ years of enterprise engineering experience - the same team behind Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice for enterprise clients - we take the guesswork out of AI deployment.
 
-We do not just push your code to a generic server. We audit the backend logic your AI generated, optimize the API routes for the specific constraints of serverless environments, and deploy it to the architecture that actually fits your business logic — splitting workloads across platforms when your app genuinely needs it, rather than forcing everything onto whichever platform your AI tool defaulted to.
+We do not just push your code to a generic server. We audit the backend logic your AI generated, optimize the API routes for the specific constraints of serverless environments, and deploy it to the architecture that actually fits your business logic - splitting workloads across platforms when your app genuinely needs it, rather than forcing everything onto whichever platform your AI tool defaulted to.
 
-Whether it requires the edge speed of Vercel or the sustained compute of Railway, we handle the deployment, SSL, and uptime monitoring so you can focus on your users. That includes a cost review before we finalize the architecture — we would rather tell you upfront that your workload needs a €40/month Railway container than let you discover a €600 Vercel function bill three weeks after launch.
+Whether it requires the edge speed of Vercel or the sustained compute of Railway, we handle the deployment, SSL, and uptime monitoring so you can focus on your users. That includes a cost review before we finalize the architecture - we would rather tell you upfront that your workload needs a €40/month Railway container than let you discover a €600 Vercel function bill three weeks after launch.
 
 ## Key Takeaways
 
@@ -78,7 +78,7 @@ Whether it requires the edge speed of Vercel or the sustained compute of Railway
 
 Kevin, a developer in Berlin, used **Cursor** to build an AI SaaS that ingested podcast audio files, transcribed them, and generated SEO-optimized blog posts. The app worked flawlessly on his local machine.
 
-He deployed his Next.js app to **Vercel**. When he uploaded a 5-minute audio clip, it worked. But when his first beta user uploaded a 45-minute podcast, the transcription took 25 seconds. Vercel's serverless function timed out after 15 seconds, returning a 504 error and crashing the user's experience. Kevin spent a week trying to hack together a solution using Vercel's Edge functions, but the strict constraints of the platform were incompatible with his heavy backend task — Edge runtime doesn't even support the native audio-processing libraries his transcription pipeline depended on.
+He deployed his Next.js app to **Vercel**. When he uploaded a 5-minute audio clip, it worked. But when his first beta user uploaded a 45-minute podcast, the transcription took 25 seconds. Vercel's serverless function timed out after 15 seconds, returning a 504 error and crashing the user's experience. Kevin spent a week trying to hack together a solution using Vercel's Edge functions, but the strict constraints of the platform were incompatible with his heavy backend task - Edge runtime doesn't even support the native audio-processing libraries his transcription pipeline depended on.
 
 Frustrated, Kevin contacted **LaunchStudio (by Manifera)**. Our engineering team immediately diagnosed the architectural mismatch. We preserved his beautiful Next.js frontend on Vercel for maximum speed but decoupled his heavy transcription logic.
 
@@ -86,7 +86,7 @@ Within 7 days, we extracted the AI processing code into a separate Node.js micro
 
 **Result:** Kevin's platform can now process 3-hour podcasts without a single timeout error. He successfully launched his beta and secured his first 20 paying customers. *"I was trying to force a heavy engine into a lightweight chassis. LaunchStudio fixed the architecture in a week."*
 
-**Cost & Timeline:** €2,500 (Launch & Grow package with microservice extraction) — completed in 7 business days.
+**Cost & Timeline:** €2,500 (Launch & Grow package with microservice extraction) - completed in 7 business days.
 
 ---
 
@@ -99,7 +99,7 @@ Your local development server (running on your laptop) has no strict time limits
 You can, but Edge functions have their own severe limitations. They run on a lightweight V8 isolate, meaning many standard Node.js libraries (like native database drivers, audio/video processing libraries, or heavy AI SDKs) will not compile or run in an Edge environment.
 
 ### Which platform is best for an AI-generated SaaS?
-It depends entirely on your workload. If your app is mostly UI with fast database reads, Vercel or Netlify is perfect. If your app processes audio, video, runs complex background scripts, or relies heavily on WebSockets, a persistent PaaS like Railway or Render is mandatory — and many real apps need both, split by workload.
+It depends entirely on your workload. If your app is mostly UI with fast database reads, Vercel or Netlify is perfect. If your app processes audio, video, runs complex background scripts, or relies heavily on WebSockets, a persistent PaaS like Railway or Render is mandatory - and many real apps need both, split by workload.
 
 ### Does LaunchStudio handle the deployment platform selection for me?
 Yes. During our technical assessment, we analyze the specific backend requirements of your AI-generated codebase. We then recommend and configure the optimal deployment architecture, including hybrid setups that split fast edge routes from long-running processing, ensuring you get the best balance of speed, cost, and reliability.

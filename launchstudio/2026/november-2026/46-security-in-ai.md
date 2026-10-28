@@ -92,9 +92,9 @@ Second, they installed a NeMo Guardrails semantic firewall.
 **Result:** When the junior employee tried the attack again, two things happened. The semantic firewall flagged the "debug mode" phrasing and blocked the prompt. But even if the prompt had bypassed the firewall, the database's RLS physically prevented the query from returning `Salary_Bands.csv` because the JWT lacked the `role: executive` claim. The enterprise client audited the new architecture, approved it, and re-enabled the feature.
 
 > *"We treated the AI like a friendly librarian, forgetting that a malicious user could trick the librarian into handing over the master keys. LaunchStudio didn't just fix a bug; they fundamentally re-architected our security posture. They made it mathematically impossible for the AI to access data it shouldn't see, saving our biggest enterprise contract."*
-> — **Elena Rodriguez, Founder, HR-Flow (Madrid)**
+> - **Elena Rodriguez, Founder, HR-Flow (Madrid)**
 
-**Cost & Timeline:** €13,500 (Launch & Grow Package with Zero Trust Security & RLS Add-on) — production-ready and deployed in 12 business days.
+**Cost & Timeline:** €13,500 (Launch & Grow Package with Zero Trust Security & RLS Add-on) - production-ready and deployed in 12 business days.
 
 ---
 

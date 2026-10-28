@@ -43,7 +43,7 @@ Content Format: Local Guide
 }
 </script>
 
-Stuttgart is the heart of one of Europe's most industrial regions. Mercedes-Benz and Porsche were born here, Bosch has its headquarters on the city's outskirts, and hundreds of engineering companies — from global suppliers to specialised family-owned Mittelstand firms — surround the city. Add Cyber Valley, one of Europe's largest research consortia in artificial intelligence, and you have a region where AI meets hardware, manufacturing and vehicles. AI jobs in Stuttgart are therefore distinctive: they often involve sensors, physical systems, production lines and safety requirements. This guide explains the landscape, the skills employers seek, how working in the German industrial sector differs from tech startups and what to consider before moving.
+Stuttgart is the heart of one of Europe's most industrial regions. Mercedes-Benz and Porsche were born here, Bosch has its headquarters on the city's outskirts, and hundreds of engineering companies - from global suppliers to specialised family-owned Mittelstand firms - surround the city. Add Cyber Valley, one of Europe's largest research consortia in artificial intelligence, and you have a region where AI meets hardware, manufacturing and vehicles. AI jobs in Stuttgart are therefore distinctive: they often involve sensors, physical systems, production lines and safety requirements. This guide explains the landscape, the skills employers seek, how working in the German industrial sector differs from tech startups and what to consider before moving.
 
 ## The Industrial Base Behind AI Jobs in Stuttgart
 
@@ -84,7 +84,7 @@ AI jobs in Stuttgart at large industrial employers differ from those at tech sta
 
 **Collective agreements.** Many industrial employers in the region are bound by collective agreements, notably in the metal and electrical industry negotiated with the IG Metall union. These agreements set pay scales, working hours, holiday and other conditions, and often provide attractive packages. Some roles are above the tariff range and negotiated individually.
 
-**Works councils.** Most large German companies have a works council (Betriebsrat) with co-determination rights on topics such as working time and the introduction of technical systems that can monitor employees — which can include some AI tools.
+**Works councils.** Most large German companies have a works council (Betriebsrat) with co-determination rights on topics such as working time and the introduction of technical systems that can monitor employees - which can include some AI tools.
 
 **Language.** Many engineering teams work in German, although international teams and research groups often use English. German skills significantly broaden your options, especially at Mittelstand companies.
 
@@ -96,7 +96,7 @@ EU citizens can work freely in Germany and must register their address (Anmeldun
 
 ## Living and Commuting in the Stuttgart Region
 
-Stuttgart lies in a basin surrounded by hills, and the region extends into many towns connected by the S-Bahn and regional trains. Many employers are located outside the city centre — in Sindelfingen, Böblingen, Renningen, Weissach, Gerlingen, Ditzingen, Esslingen or Ludwigsburg — so where you live determines your commute. Housing in Stuttgart is among the more expensive in Germany, and traffic congestion can be significant at peak times.
+Stuttgart lies in a basin surrounded by hills, and the region extends into many towns connected by the S-Bahn and regional trains. Many employers are located outside the city centre - in Sindelfingen, Böblingen, Renningen, Weissach, Gerlingen, Ditzingen, Esslingen or Ludwigsburg - so where you live determines your commute. Housing in Stuttgart is among the more expensive in Germany, and traffic congestion can be significant at peak times.
 
 When comparing jobs, look at the exact address of the site where your team works. A job listed as "Stuttgart" might be in the city centre or at a campus 30 kilometres away. This is exactly why OnlyAIJobs shows vacancies at exact address level with the distance from your home: in a polycentric region, city labels hide the real commute.
 
@@ -140,7 +140,7 @@ For international engineers, German is the single most important investment for 
 
 ## The Changing Automotive Landscape
 
-The automotive industry is undergoing profound change: electrification, software-defined vehicles, new competitors and pressure on costs. For AI professionals, this creates both opportunities and uncertainty. Demand for software, data and AI skills in the sector remains significant, as manufacturers and suppliers build software capabilities, battery expertise and data platforms. At the same time, restructuring and cost programmes at some companies mean that job security is not guaranteed in every business unit. When evaluating an automotive role, ask how the team is funded, how central its work is to the company's strategy and how the business unit is positioned. Diversifying your domain experience — for example across manufacturing, energy or robotics — also makes your career more resilient in a region so closely tied to one industry.
+The automotive industry is undergoing profound change: electrification, software-defined vehicles, new competitors and pressure on costs. For AI professionals, this creates both opportunities and uncertainty. Demand for software, data and AI skills in the sector remains significant, as manufacturers and suppliers build software capabilities, battery expertise and data platforms. At the same time, restructuring and cost programmes at some companies mean that job security is not guaranteed in every business unit. When evaluating an automotive role, ask how the team is funded, how central its work is to the company's strategy and how the business unit is positioned. Diversifying your domain experience - for example across manufacturing, energy or robotics - also makes your career more resilient in a region so closely tied to one industry.
 
 ## Research-to-Industry Pathways
 
@@ -160,7 +160,7 @@ One of the region's strengths is the flow between research and industry. PhD stu
 
 A computer vision engineer with experience in medical imaging wants to move into automotive. He receives two offers in the Stuttgart region: one at a large supplier's development centre working on perception validation, and one at a Tübingen startup spun out of university research in 3D vision.
 
-The supplier offers a collective agreement package, structured career paths and exposure to production-scale systems, but the team works mostly in German and processes are formal. The startup offers English as a working language, broader responsibility and equity, but less stability. He maps both locations, considers his limited German and his wish to learn production-grade processes, and chooses the supplier, committing to intensive German lessons. After two years, he leads validation work for a perception module — experience he could hardly have gained elsewhere.
+The supplier offers a collective agreement package, structured career paths and exposure to production-scale systems, but the team works mostly in German and processes are formal. The startup offers English as a working language, broader responsibility and equity, but less stability. He maps both locations, considers his limited German and his wish to learn production-grade processes, and chooses the supplier, committing to intensive German lessons. After two years, he leads validation work for a perception module - experience he could hardly have gained elsewhere.
 
 ## Key Takeaways
 

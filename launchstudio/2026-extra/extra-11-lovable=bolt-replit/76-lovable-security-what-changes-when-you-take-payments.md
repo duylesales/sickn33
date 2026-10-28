@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (non-technical)
 
 There is a clear before and after in the life of a product, and it is not launch. It is the first real payment.
 
-Before it, a mistake costs you an apology. After it, a mistake costs money — sometimes your customers', sometimes yours, occasionally a provider's, and it arrives with obligations attached. Your product also becomes interesting to a category of person who was not previously paying attention, because anything that moves money is worth probing.
+Before it, a mistake costs you an apology. After it, a mistake costs money - sometimes your customers', sometimes yours, occasionally a provider's, and it arrives with obligations attached. Your product also becomes interesting to a category of person who was not previously paying attention, because anything that moves money is worth probing.
 
 None of this requires a security team. It requires knowing which four things change.
 
@@ -30,15 +30,15 @@ None of this requires a security team. It requires knowing which four things cha
 
 The first rule, and the one that makes everything else manageable.
 
-Modern payment providers are built so card details go from the customer's browser to the provider, never passing through your application. You receive a token and a result. That architecture is the reason a two-person company can take payments at all — handling card data yourself pulls you into a compliance regime that is entirely out of proportion to a small product.
+Modern payment providers are built so card details go from the customer's browser to the provider, never passing through your application. You receive a token and a result. That architecture is the reason a two-person company can take payments at all - handling card data yourself pulls you into a compliance regime that is entirely out of proportion to a small product.
 
-So the rule is absolute: never build your own card form, never log card details, never store a card number "temporarily", and never accept card details by email or over the phone into a text field in your product. Use the provider's hosted or embedded components, which is also what a generation tool will do by default if you ask for payments — the risk arrives later, when somebody asks for a "nicer" checkout and the obvious implementation collects the numbers first.
+So the rule is absolute: never build your own card form, never log card details, never store a card number "temporarily", and never accept card details by email or over the phone into a text field in your product. Use the provider's hosted or embedded components, which is also what a generation tool will do by default if you ask for payments - the risk arrives later, when somebody asks for a "nicer" checkout and the obvious implementation collects the numbers first.
 
 What you may store: the token, the last four digits, the card type, and your own records. That is enough for every legitimate purpose.
 
 ## The Webhook Is the Weak Point
 
-Your provider tells you about payments by calling an address on your server. That notification is what grants access, marks an invoice paid, or ships an order — which makes it the most valuable endpoint in your product.
+Your provider tells you about payments by calling an address on your server. That notification is what grants access, marks an invoice paid, or ships an order - which makes it the most valuable endpoint in your product.
 
 Three things must be true about it.
 
@@ -46,7 +46,7 @@ Three things must be true about it.
 
 **Events must be processed once.** Providers retry, and retries are normal rather than exceptional. Record each event's identifier and ignore repeats, or a single payment becomes two subscriptions, two orders, or two shipments.
 
-**It must be reachable.** An endpoint on a deployment that sleeps may miss notifications quietly, producing customers who paid and got nothing — the failure that generates the angriest support emails you will ever receive.
+**It must be reachable.** An endpoint on a deployment that sleeps may miss notifications quietly, producing customers who paid and got nothing - the failure that generates the angriest support emails you will ever receive.
 
 Beyond correctness, never trust an amount or a plan sent by the browser. The client can change any value it submits; the authoritative amount is the one your server told the provider, verified against what the provider reports back.
 
@@ -68,7 +68,7 @@ Two patterns worth knowing about.
 
 **Chargebacks.** A customer disputes a charge and the money is reversed, often with a fee. Defending one requires evidence: what was purchased, when, by whom, from which address, and whether it was delivered or used. If your product records that, disputes are winnable; if not, they are not. This is one more argument for the audit trail.
 
-For subscriptions there is a related discipline: when a payment fails, what should happen and when. A defined sequence — retry, notify, restrict, cancel — with each step recorded, prevents both the customer who lost access with no warning and the one who used your product free for four months.
+For subscriptions there is a related discipline: when a payment fails, what should happen and when. A defined sequence - retry, notify, restrict, cancel - with each step recorded, prevents both the customer who lost access with no warning and the one who used your product free for four months.
 
 ## Invoices, VAT and Records You Must Keep
 
@@ -82,7 +82,7 @@ The security-relevant part: financial records must be immutable and attributable
 
 Six checks, an hour.
 
-Card details never touch your server — confirm by looking at what your checkout submits. The webhook verifies signatures — confirm by sending an unsigned request and checking it is rejected. Events are deduplicated — confirm by replaying one from the provider's dashboard. Amounts come from your server, not the browser. Money operations are restricted and logged. And a failed payment produces the behaviour you intended, tested by abandoning a real payment halfway.
+Card details never touch your server - confirm by looking at what your checkout submits. The webhook verifies signatures - confirm by sending an unsigned request and checking it is rejected. Events are deduplicated - confirm by replaying one from the provider's dashboard. Amounts come from your server, not the browser. Money operations are restricted and logged. And a failed payment produces the behaviour you intended, tested by abandoning a real payment halfway.
 
 That last test is the one people skip and the one that most often reveals a customer who can pay and receive nothing.
 
@@ -100,7 +100,7 @@ Most payment problems in AI-built products are not cryptographic. They are the c
 
 **Decide what happens to the data.** On cancellation: how long is it retained, can it be exported, when is it deleted. On reactivation three months later: is it still there. These are questions customers ask before buying, and a clear answer removes a real objection.
 
-**Test the unhappy paths deliberately.** A card that expires mid-subscription, a payment that fails on the third renewal, a customer who cancels and returns, a plan downgraded mid-period. Each one is a state transition, and each is where products quietly grant free access or cut off paying customers — both of which you discover from an angry email rather than from your own records.
+**Test the unhappy paths deliberately.** A card that expires mid-subscription, a payment that fails on the third renewal, a customer who cancels and returns, a plan downgraded mid-period. Each one is a state transition, and each is where products quietly grant free access or cut off paying customers - both of which you discover from an angry email rather than from your own records.
 
 ## Making the Money Path Sound
 
@@ -118,7 +118,7 @@ Bas Tolhuizen built Lesgeld with Lovable: tuition and lesson-fee collection used
 
 The payment integration had been generated in a single session and worked correctly for paying customers. The webhook endpoint accepted any request that reached it. It did not verify the provider's signature.
 
-Someone found the address — it followed an obvious pattern — and sent it a forged payment-succeeded event. It worked. Over eleven days, 23 organisation accounts were activated without a single payment, several of which were then used to collect real money from real parents, with Bas's platform as the intermediary.
+Someone found the address - it followed an obvious pattern - and sent it a forged payment-succeeded event. It worked. Over eleven days, 23 organisation accounts were activated without a single payment, several of which were then used to collect real money from real parents, with Bas's platform as the intermediary.
 
 He discovered it during a monthly reconciliation that did not balance.
 
@@ -126,12 +126,12 @@ Nine business days of work: signature verification implemented on the webhook an
 
 The fraudulent accounts were closed and the affected parents were refunded by the payment provider. Bas covered roughly €2,100 in fees and reversals himself.
 
-**Result:** reconciliation has balanced every month since, and the four duplicate subscriptions — which had been quietly overcharging four organisations — were found and refunded as part of the same work.
+**Result:** reconciliation has balanced every month since, and the four duplicate subscriptions - which had been quietly overcharging four organisations - were found and refunded as part of the same work.
 
 > *"Anyone who knew the address of one endpoint could tell my product that they had paid. Twenty-three of them did, and then collected money from parents through my platform."*
-> — **Bas Tolhuizen, Founder, Lesgeld (Roermond)**
+> - **Bas Tolhuizen, Founder, Lesgeld (Roermond)**
 
-**Cost & Timeline:** €4,300 (webhook signature verification and historical revalidation, deduplication, server-side amounts, deployment change, fraud controls, money audit trail, dunning sequence) — completed in 9 business days.
+**Cost & Timeline:** €4,300 (webhook signature verification and historical revalidation, deduplication, server-side amounts, deployment change, fraud controls, money audit trail, dunning sequence) - completed in 9 business days.
 
 ## Frequently Asked Questions
 
@@ -173,7 +173,7 @@ Restrict who can refund, credit or change plans; log every money operation with 
       "name": "What is the most common payment security mistake in AI-built apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An unverified webhook — without signature verification, anyone who finds the address can forge a successful payment."
+        "text": "An unverified webhook - without signature verification, anyone who finds the address can forge a successful payment."
       }
     },
     {

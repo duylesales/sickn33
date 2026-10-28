@@ -47,7 +47,7 @@ Het solo bouwen en testen van een uitnodigingslink-functie betekent testen met m
 
 ## Waarom doorgestuurde links een compleet voorspelbaar risico in de echte wereld zijn
 
-Links worden voortdurend doorgestuurd, vaak met de beste bedoelingen — een enthousiast lid van een energiecoöperatie deelt een uitnodigingslink met een goede vriend van wie hij denkt dat die ook geïnteresseerd is, zonder te beseffen dat de formele toelatingscriteria van het platform die vriend uitsluiten (bijvoorbeeld omdat diegene buiten het verzorgingsgebied woont). Zonder een geautomatiseerde verificatiestap leidt dit goedbedoelde doorsturen geruisloos tot het doorbreken van een toelatingsgrens die de oprichter juist had moeten bewaken. Dit is geen zeldzaam hypothetisch scenario: het delen van een nuttige link met vrienden of collega's is het meest natuurlijke gedrag van tevreden gebruikers. Een oprichter van een besloten platform moet er altijd vanuit gaan dat links worden doorgestuurd en de toelatingscontrole daarop inrichten.
+Links worden voortdurend doorgestuurd, vaak met de beste bedoelingen - een enthousiast lid van een energiecoöperatie deelt een uitnodigingslink met een goede vriend van wie hij denkt dat die ook geïnteresseerd is, zonder te beseffen dat de formele toelatingscriteria van het platform die vriend uitsluiten (bijvoorbeeld omdat diegene buiten het verzorgingsgebied woont). Zonder een geautomatiseerde verificatiestap leidt dit goedbedoelde doorsturen geruisloos tot het doorbreken van een toelatingsgrens die de oprichter juist had moeten bewaken. Dit is geen zeldzaam hypothetisch scenario: het delen van een nuttige link met vrienden of collega's is het meest natuurlijke gedrag van tevreden gebruikers. Een oprichter van een besloten platform moet er altijd vanuit gaan dat links worden doorgestuurd en de toelatingscontrole daarop inrichten.
 
 
 ## Wat het op de juiste manier herstellen hiervan vereist
@@ -64,7 +64,7 @@ Zodra een oprichter besluit dat een uitnodigingslink een vorm van geschiktheidsc
 
 **1. E-maildomeinvalidatie**
 
-Werkt uitstekend wanneer toegang gekoppeld is aan een organisatie — een zakelijke werkruimte, een universiteitsnetwerk of een beroepsvereniging gebonden aan een specifiek werkgeversdomein. Werkt niet voor groepen met geografische of openbare criteria.
+Werkt uitstekend wanneer toegang gekoppeld is aan een organisatie - een zakelijke werkruimte, een universiteitsnetwerk of een beroepsvereniging gebonden aan een specifiek werkgeversdomein. Werkt niet voor groepen met geografische of openbare criteria.
 
 **2. Adres- of postcodecontrole**
 
@@ -93,9 +93,9 @@ Een lid stuurde haar persoonlijke uitnodigingslink door naar een vriendin die in
 **Resultaat:** LaunchStudio voegde een geschiktheidsverificatiestap toe aan het uitnodigingsproces van BuurEnergie. Dit bevestigt dat de locatie van een aspirant-lid overeenkomt met het daadwerkelijke servicegebied van de coöperatie voordat volledige toegang wordt verleend.
 
 > *"Ze bedoelde het als een oprecht compliment en raadde ons aan bij een vriendin. Het was nooit in ons opgekomen dat ons eigen platform absoluut geen manier had om te weten dat haar vriendin eigenlijk niet in aanmerking kwam om lid te worden."*
-> — **Marit Jansen, Oprichter, BuurEnergie (Goes)**
+> - **Marit Jansen, Oprichter, BuurEnergie (Goes)**
 
-**Kosten en tijdlijn:** € 1.500 (implementatie van geschiktheidsverificatie voor uitnodigingen) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.500 (implementatie van geschiktheidsverificatie voor uitnodigingen) - voltooid in 5 werkdagen.
 
 ---
 
@@ -107,9 +107,9 @@ Omdat een generieke link die door één genodigde wordt ontvangen, binnen enkele
 
 ### Welke verificatiemethode is het meest geschikt voor organisaties en zakelijke netwerken?
 
-E-maildomeinvalidatie — dwing af dat nieuwe aanmeldingen uitsluitend worden geaccepteerd als ze afkomstig zijn van een vooraf goedgekeurd zakelijk domein (zoals `@bedrijf.nl`), gecombineerd met verplichte e-mailbevestiging vóórdat het account wordt geactiveerd.
+E-maildomeinvalidatie - dwing af dat nieuwe aanmeldingen uitsluitend worden geaccepteerd als ze afkomstig zijn van een vooraf goedgekeurd zakelijk domein (zoals `@bedrijf.nl`), gecombineerd met verplichte e-mailbevestiging vóórdat het account wordt geactiveerd.
 
-### Manifera heeft leden- en communitysystemen gerealiseerd — hoe wordt daar toelatingscontrole ingericht?
+### Manifera heeft leden- en communitysystemen gerealiseerd - hoe wordt daar toelatingscontrole ingericht?
 
 Afhankelijk van de use-case combineert Manifera geautomatiseerde controles (zoals postcodevalidatie of domeinchecks) met een flexibele moderatiewachtrij voor beheerders, zodat legitieme uitzonderingen snel kunnen worden behandeld zonder dat onbevoegden automatisch binnenkomen.
 
@@ -139,12 +139,12 @@ Zet alle nieuwe aanmeldingen via een uitnodigingslink standaard in een 'in behan
       "name": "Welke verificatiemethode is het meest geschikt voor organisaties en zakelijke netwerken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "E-maildomeinvalidatie — dwing af dat nieuwe aanmeldingen uitsluitend worden geaccepteerd als ze afkomstig zijn van een vooraf goedgekeurd zakelijk domein (zoals `@bedrijf.nl`), gecombineerd met verplichte e-mailbevestiging vóórdat het account wordt geactiveerd."
+        "text": "E-maildomeinvalidatie - dwing af dat nieuwe aanmeldingen uitsluitend worden geaccepteerd als ze afkomstig zijn van een vooraf goedgekeurd zakelijk domein (zoals `@bedrijf.nl`), gecombineerd met verplichte e-mailbevestiging vóórdat het account wordt geactiveerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Manifera heeft leden- en communitysystemen gerealiseerd — hoe wordt daar toelatingscontrole ingericht?",
+      "name": "Manifera heeft leden- en communitysystemen gerealiseerd - hoe wordt daar toelatingscontrole ingericht?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Afhankelijk van de use-case combineert Manifera geautomatiseerde controles (zoals postcodevalidatie of domeinchecks) met een flexibele moderatiewachtrij voor beheerders, zodat legitieme uitzonderingen snel kunnen worden behandeld zonder dat onbevoegden automatisch binnenkomen."

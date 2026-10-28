@@ -1,4 +1,4 @@
-🔥 Stella bouwde een prototype met **Cursor** — Stella, een tekstschrijver, bouwde een AI-copywriting generator, maar een zakelijke klant klaagde over merkinbreuk door gegenereerde teksten met merknamen van concurrenten. 🧠
+🔥 Stella bouwde een prototype met **Cursor** - Stella, een tekstschrijver, bouwde een AI-copywriting generator, maar een zakelijke klant klaagde over merkinbreuk door gegenereerde teksten met merknamen van concurrenten. 🧠
 
 Het intellectueel eigendomsrecht rondom AI vereist menselijke bewerking voor auteursrecht en enterprise-modellen met contractuele vrijwaring (Copyright Indemnification).
 
@@ -12,7 +12,7 @@ Het intellectueel eigendomsrecht rondom AI vereist menselijke bewerking voor aut
 
 Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en content-filtering vraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Stella's generator werd enterprise-proof: Risicovolle merknamen werden automatisch geblokkeerd en het platform voldeed aan alle compliance-eisen van grote klanten. (€1.900 (Copyright Filter Integratie) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Stella's generator werd enterprise-proof: Risicovolle merknamen werden automatisch geblokkeerd en het platform voldeed aan alle compliance-eisen van grote klanten. (€1.900 (Copyright Filter Integratie) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/copyright-dilemma-who-owns-ai-output
 

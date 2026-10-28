@@ -22,7 +22,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 
 De grote aantrekkingskracht van bouwen met AI-tools is dat wijzigingen goedkoop zijn. Je bedenkt 's ochtends iets en rond de lunch staat het live. Voor een product zonder gebruikers is dat een ongekend voordeel.
 
-Op het moment dat er betalende klanten binnengekomen zijn, verandert die eigenschap plotseling in een risico: een aanpassing die tien minuten kost om te maken, kan drie uur kosten om terug te draaien — als terugdraaien überhaupt nog mogelijk is. En de snelheid die je zo productief maakte, zorgt er nu voor dat een foute beslissing direct iedereen raakt voordat iemand ernaar heeft gekeken.
+Op het moment dat er betalende klanten binnengekomen zijn, verandert die eigenschap plotseling in een risico: een aanpassing die tien minuten kost om te maken, kan drie uur kosten om terug te draaien - als terugdraaien überhaupt nog mogelijk is. En de snelheid die je zo productief maakte, zorgt er nu voor dat een foute beslissing direct iedereen raakt voordat iemand ernaar heeft gekeken.
 
 Het antwoord is niet om langzamer te gaan werken. Het antwoord is om terugdraaien zo saai en voorspelbaar te maken dat snel shippen geen gok meer is.
 
@@ -30,17 +30,17 @@ Het antwoord is niet om langzamer te gaan werken. Het antwoord is om terugdraaie
 
 **Development** is waar jij en je tooling werken. Het bevat fictieve testdata, het mag op elk moment kapotgaan en niemand van buitenaf kan erbij.
 
-**Staging** is een exacte kopie van productie — dezelfde codepaden, dezelfde configuratiestructuur, maar een eigen database — waar een wijziging gecontroleerd wordt voordat gebruikers ermee in aanraking komen. Dit is de omgeving die beginnende producten vaak overslaan, en het is precies de omgeving die zichzelf bij het eerste incident direct terugbetaalt.
+**Staging** is een exacte kopie van productie - dezelfde codepaden, dezelfde configuratiestructuur, maar een eigen database - waar een wijziging gecontroleerd wordt voordat gebruikers ermee in aanraking komen. Dit is de omgeving die beginnende producten vaak overslaan, en het is precies de omgeving die zichzelf bij het eerste incident direct terugbetaalt.
 
 **Productie** is wat je klanten dagelijks gebruiken. Deze omgeving mag uitsluitend wijzigingen ontvangen die aantoonbaar al ergens anders werkend zijn gezien.
 
-Twee regels maken dit effectief in plaats van puur decoratief. Staging krijgt eigen data, geanonimiseerd vanuit productie en nooit direct gekoppeld — een staging-omgeving die naar de live database wijst, betekent immers dat een testverwijdering een echte dataverwijdering wordt. Daarnaast moet staging afgeschermd zijn voor zoekmachines en bij voorkeur beveiligd zijn met een wachtwoord, anders creëer je onbedoeld een tweede versie van je website die concurreert met het origineel.
+Twee regels maken dit effectief in plaats van puur decoratief. Staging krijgt eigen data, geanonimiseerd vanuit productie en nooit direct gekoppeld - een staging-omgeving die naar de live database wijst, betekent immers dat een testverwijdering een echte dataverwijdering wordt. Daarnaast moet staging afgeschermd zijn voor zoekmachines en bij voorkeur beveiligd zijn met een wachtwoord, anders creëer je onbedoeld een tweede versie van je website die concurreert met het origineel.
 
 ## Rollback is de belangrijkste feature
 
 Stel jezelf één simpele vraag: als de wijziging die je op het punt staat live te zetten fout blijkt te zijn, hoe lang duurt het dan voordat deze is teruggedraaid, en ken je de exacte stappen?
 
-Als het antwoord denkwerk vereist, heb je geen rollback-procedure — je hebt hoop. En het moment om die stappen uit te zoeken is niet wanneer betalende klanten er actief last van ondervinden.
+Als het antwoord denkwerk vereist, heb je geen rollback-procedure - je hebt hoop. En het moment om die stappen uit te zoeken is niet wanneer betalende klanten er actief last van ondervinden.
 
 De meeste hostingplatforms bewaren voorgaande deployments en kunnen er binnen zestig seconden een herstellen. Zoek vandaag nog uit waar die knop zit, zolang er niets aan de hand is. Test het vervolgens bewust: deploy iets triviaals, draai het terug en meet de tijd. Een rollback die je al eens in de praktijk hebt uitgevoerd, durf je direct in te zetten; een rollback waar je alleen over gelezen hebt, stel je uit op exact het verkeerde moment.
 
@@ -58,7 +58,7 @@ Hetzelfde geldt voor onomkeerbare acties in de buitenwereld: verzonden e-mails, 
 
 Een kleine techniek met een enorme impact.
 
-Een feature flag is een eenvoudige conditie in je code die controleert of een functie getoond moet worden. Hierdoor kan code al veilig gedeployed worden terwijl de functionaliteit zelf uitgeschakeld blijft. Je kunt hem aanzetten voor jezelf, daarna voor een vriendelijke testklant, vervolgens voor iedereen — en binnen seconden uitschakelen als er iets mis blijkt te zijn.
+Een feature flag is een eenvoudige conditie in je code die controleert of een functie getoond moet worden. Hierdoor kan code al veilig gedeployed worden terwijl de functionaliteit zelf uitgeschakeld blijft. Je kunt hem aanzetten voor jezelf, daarna voor een vriendelijke testklant, vervolgens voor iedereen - en binnen seconden uitschakelen als er iets mis blijkt te zijn.
 
 Drie use cases maken deze moeite meer dan waard voor een compact product:
 1. Een nieuwe functionaliteit geleidelijk uitrollen in plaats van direct voor vierhonderd gebruikers tegelijk.
@@ -69,7 +69,7 @@ Houd het eenvoudig: gebruik een configuratiewaarde of een kleine databasetabel, 
 
 ## Een release-routine voor één persoon
 
-**Vooraf:** de wijziging staat op staging en je hebt hem getest zoals een echte gebruiker dat zou doen. Als de wijziging raakt aan data, betalingen of permissies, heeft iemand anders meegekeken — en als je alleen bent, lees je de git diff bewust regel voor regel door in plaats van blind te vertrouwen op de gegenereerde output.
+**Vooraf:** de wijziging staat op staging en je hebt hem getest zoals een echte gebruiker dat zou doen. Als de wijziging raakt aan data, betalingen of permissies, heeft iemand anders meegekeken - en als je alleen bent, lees je de git diff bewust regel voor regel door in plaats van blind te vertrouwen op de gegenereerde output.
 
 **Tijdens:** deploy op een tijdstip waarop je de monitoring in de gaten kunt houden. Niet op vrijdagmiddag om vijf uur, en niet vlak voordat je de deur uitloopt.
 
@@ -83,7 +83,7 @@ Automatisch deployen bij elke commit (continuous deployment) is geweldig voor ee
 
 De verstandige groeicurve: begin met handmatige deployments met een vooraf geteste rollback; ga vervolgens naar automatische deployments naar staging met handmatige promotie naar productie; schakel pas over naar volledige productie-automatisering zodra er betrouwbare tests zijn. Direct naar de eindfase springen omdat volwassen teams dat doen, geeft je wel de snelheid van zo'n team, maar geen van hun vangnetten.
 
-Wat wél direct vanaf dag één geautomatiseerd moet worden: het build-proces zelf. Zorg dat deployen één enkele actie is in plaats van een lijst handmatig te onthouden terminalcommando's. De meeste mislukte releases bij kleine bedrijven zijn immers geen programmeerfouten — het zijn vergeten tussenstappen.
+Wat wél direct vanaf dag één geautomatiseerd moet worden: het build-proces zelf. Zorg dat deployen één enkele actie is in plaats van een lijst handmatig te onthouden terminalcommando's. De meeste mislukte releases bij kleine bedrijven zijn immers geen programmeerfouten - het zijn vergeten tussenstappen.
 
 ## Wanneer een release toch misgaat
 
@@ -126,9 +126,9 @@ Zes werkdagen aan herstelwerkzaamheden volgden: de kassakolom werd voor de getro
 **Resultaat:** elf maanden zonder incidenten. Mark geeft aan dat de kleinste verandering voor hem de meeste waarde heeft: de verplichte regel om datamigraties eerst handmatig te lezen, waarmee hij sindsdien al twee destructieve AI-suggesties op tijd heeft onderschept.
 
 > *"Het terugdraaien van de code kostte dertig seconden en veranderde helemaal niets, omdat de kolom weg was. Dat was de middag waarop ik leerde dat 'ongedaan maken' en 'rollback' niet hetzelfde zijn."*
-> — **Mark Oudshoorn, Oprichter, Kassakoppeling (Gorinchem)**
+> - **Mark Oudshoorn, Oprichter, Kassakoppeling (Gorinchem)**
 
-**Kosten & Doorlooptijd:** € 3.400 (datareconstructie, staging-omgeving, reproduceerbare builds met geteste rollback, expand-and-contract migraties, feature flags en scheiding van databaserechten) — opgeleverd in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 3.400 (datareconstructie, staging-omgeving, reproduceerbare builds met geteste rollback, expand-and-contract migraties, feature flags en scheiding van databaserechten) - opgeleverd in 6 werkdagen.
 
 ## Veelgestelde vragen
 

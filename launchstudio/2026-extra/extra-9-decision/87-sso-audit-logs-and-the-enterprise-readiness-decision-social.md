@@ -1,13 +1,13 @@
-🚨 "Do you support SSO?" A procurement contact asks it, then comes a security questionnaire, a DPA request, audit log retention — each capable of stalling the deal. 😰
+🚨 "Do you support SSO?" A procurement contact asks it, then comes a security questionnaire, a DPA request, audit log retention - each capable of stalling the deal. 😰
 
-Enterprise requirements arrive in a fairly predictable order — building out of it wastes budget: 📋
+Enterprise requirements arrive in a fairly predictable order - building out of it wastes budget: 📋
 
 ❌ Trying to build SSO, SCIM, audit logs, and an SLA all at once
-❌ Audit logs can't be backfilled — the clock starts once they're implemented
+❌ Audit logs can't be backfilled - the clock starts once they're implemented
 ❌ SCIM built before basic SSO is live has no buyer to use it yet
 ❌ A live deal stalls on the simple requirement while budget chases the wrong one
 
-✅ Authentication comes first — can the buyer's IT enforce their own identity provider
+✅ Authentication comes first - can the buyer's IT enforce their own identity provider
 ✅ OIDC alone covers most modern buyers; add SAML once a specific deal requires it
 ✅ Build the next requirement when a real, qualified deal asks for it, not speculatively
 ✅ Gate SSO, SCIM, and audit logs behind a higher-priced enterprise tier

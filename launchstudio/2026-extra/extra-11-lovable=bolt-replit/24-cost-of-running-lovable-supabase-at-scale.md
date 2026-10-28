@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The bill for your first hundred users is almost nothing. That is the genuinely good news about building this way, and it is also why the second bill is such a shock — not because the numbers are large in absolute terms, but because nobody told you which line would grow and why.
+The bill for your first hundred users is almost nothing. That is the genuinely good news about building this way, and it is also why the second bill is such a shock - not because the numbers are large in absolute terms, but because nobody told you which line would grow and why.
 
 Prices change constantly across every provider in this stack, so this article deliberately avoids quoting them. What does not change is the *shape*: which costs scale with your user count, which scale with engineering decisions, and which arrive suddenly when a threshold is crossed. Understanding the shape lets you read any pricing page and predict your own bill.
 
@@ -28,7 +28,7 @@ Prices change constantly across every provider in this stack, so this article de
 
 **Application hosting.** Serving your frontend and running server-side functions. Usually the smallest line for a small product, and often free at low volume.
 
-**The database.** Compute, storage, and the features you need around it — backups, point-in-time recovery, connection pooling, a guaranteed region. Normally the largest line once you are past the free tier.
+**The database.** Compute, storage, and the features you need around it - backups, point-in-time recovery, connection pooling, a guaranteed region. Normally the largest line once you are past the free tier.
 
 **File storage and bandwidth.** Storing user uploads and, more expensively, serving them repeatedly.
 
@@ -44,7 +44,7 @@ This distinction is the practical heart of the matter.
 
 **Scales with engineering decisions, avoidably:** bandwidth consumed by unoptimised images, database compute wasted on missing indexes and repeated queries, storage filled with original-resolution uploads nobody views, metered API calls made from a client without limits, and log retention nobody configured.
 
-The second list is where surprising bills come from. A product with efficient queries and a proper image pipeline can serve several thousand users on modest infrastructure. The same product with neither can struggle at a few hundred and cost several times as much doing it — which is why upgrading a plan to solve slowness is so often paying more to run the same waste faster.
+The second list is where surprising bills come from. A product with efficient queries and a proper image pipeline can serve several thousand users on modest infrastructure. The same product with neither can struggle at a few hundred and cost several times as much doing it - which is why upgrading a plan to solve slowness is so often paying more to run the same waste faster.
 
 ## The Thresholds That Bite
 
@@ -54,7 +54,7 @@ Costs in this stack are not smooth. They step, and the steps arrive at predictab
 
 **Needing point-in-time recovery.** A paid feature on most platforms, and the right call for anything transactional. Worth budgeting before an incident makes the decision for you.
 
-**Connection limits.** Hitting them looks like random errors under load rather than a cost problem, and the fix is often pooling rather than a bigger instance — a configuration change rather than a payment.
+**Connection limits.** Hitting them looks like random errors under load rather than a cost problem, and the fix is often pooling rather than a bigger instance - a configuration change rather than a payment.
 
 **Email volume and reputation.** Free tiers on transactional email are small. Exceeding them is cheap; getting your sending domain into trouble first is not.
 
@@ -88,7 +88,7 @@ Rather than searching for a benchmark figure that will be out of date, do this.
 
 In rough order of return for a typical AI-built application: process images at upload and serve appropriate sizes; add the missing database indexes so queries stop consuming compute; collapse repeated queries on your busiest pages; move metered API calls behind your own endpoint with authentication and limits; set retention on logs; and clean up orphaned files that belong to deleted records, which accumulate invisibly in almost every product.
 
-Together these routinely reduce infrastructure spend substantially while making the product faster — which is the useful thing about this category of work: performance and cost are the same problem viewed from two angles.
+Together these routinely reduce infrastructure spend substantially while making the product faster - which is the useful thing about this category of work: performance and cost are the same problem viewed from two angles.
 
 ## When Paying More Is the Right Answer
 
@@ -98,7 +98,7 @@ The judgement is not "cheapest" but "what does this buy me, and what is my time 
 
 ## Getting the Shape Right Before It Matters
 
-Cost and performance are the same engineering work, and both are far cheaper to address before your user count makes them urgent. LaunchStudio handles it as part of preparing an AI-built product for real usage: image pipeline, indexes and query efficiency, metered calls moved server-side with limits and caps, log retention configured, environments sized sensibly, and spending alerts set — with managed hosting available at €49 per month if you would rather not think about any of it again.
+Cost and performance are the same engineering work, and both are far cheaper to address before your user count makes them urgent. LaunchStudio handles it as part of preparing an AI-built product for real usage: image pipeline, indexes and query efficiency, metered calls moved server-side with limits and caps, log retention configured, environments sized sensibly, and spending alerts set - with managed hosting available at €49 per month if you would rather not think about any of it again.
 
 The interface you built in Lovable stays exactly as it is. Behind the work is Manifera, eleven years of production engineering for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City, where sizing infrastructure to actual need rather than to fear is an ordinary part of delivery.
 
@@ -106,9 +106,9 @@ The interface you built in Lovable stays exactly as it is. Behind the work is Ma
 
 ## Pricing Your Product Against These Costs
 
-Infrastructure spending only means something next to revenue, and this is where founders with AI-built products most often get caught — not by the size of the bill but by its relationship to what they charge.
+Infrastructure spending only means something next to revenue, and this is where founders with AI-built products most often get caught - not by the size of the bill but by its relationship to what they charge.
 
-**Know your cost per user per month.** Divide your total infrastructure and third-party spend by active users. For most small products the figure is small. For products making metered API calls on behalf of users — anything wrapping an AI model, sending SMS, or processing media — it can be a meaningful fraction of the subscription price.
+**Know your cost per user per month.** Divide your total infrastructure and third-party spend by active users. For most small products the figure is small. For products making metered API calls on behalf of users - anything wrapping an AI model, sending SMS, or processing media - it can be a meaningful fraction of the subscription price.
 
 **Watch the heavy users.** Averages hide the problem. In most products a small number of accounts generate a disproportionate share of cost, and a flat subscription means those accounts can be unprofitable individually. Look at your top five users' consumption before setting a price.
 
@@ -118,7 +118,7 @@ Infrastructure spending only means something next to revenue, and this is where 
 
 **Re-check after every feature.** Adding an AI-powered feature changes your unit economics immediately, and it is the kind of change that does not announce itself until the invoice arrives.
 
-None of this requires a financial model. It requires one number — cost per active user — reviewed quarterly and after any feature that calls something you pay for.
+None of this requires a financial model. It requires one number - cost per active user - reviewed quarterly and after any feature that calls something you pay for.
 
 ## Real example
 
@@ -126,16 +126,16 @@ None of this requires a financial model. It requires one number — cost per act
 
 Koen Bruinsma's app, Tweedehands Atelier, was a marketplace for second-hand craft and hobby equipment, built in Lovable with Supabase, serving about 1,200 registered users around Utrecht and Amersfoort. His monthly infrastructure spend had grown steadily and was becoming the largest line in a business with modest commission revenue.
 
-The analysis took an afternoon. Listing photographs were stored and served at original camera resolution, some over six megabytes, on a browse page showing thirty at a time — bandwidth was the single largest line on the bill. The search query had no index on the category column and was scanning the entire listings table on every page load, keeping database compute elevated continuously. Orphaned images from deleted listings had never been cleaned up and accounted for a substantial share of stored data. And verbose logging from the build phase had never been turned down, with indefinite retention.
+The analysis took an afternoon. Listing photographs were stored and served at original camera resolution, some over six megabytes, on a browse page showing thirty at a time - bandwidth was the single largest line on the bill. The search query had no index on the category column and was scanning the entire listings table on every page load, keeping database compute elevated continuously. Orphaned images from deleted listings had never been cleaned up and accounted for a substantial share of stored data. And verbose logging from the build phase had never been turned down, with indefinite retention.
 
 Five business days of work: an upload pipeline generating thumbnail, card and full sizes in a modern format with the original discarded unless needed; four indexes added; orphan cleanup implemented and run once historically; log level and retention configured; and spending alerts set on every service.
 
 **Result:** monthly infrastructure spend fell to roughly a quarter of its previous level, the browse page load time on mobile dropped from over four seconds to under one, and Koen moved to a smaller database tier without any loss of headroom.
 
 > *"I assumed the bill was the price of having users. Most of it was the price of storing photographs the size of posters and searching without an index."*
-> — **Koen Bruinsma, Founder, Tweedehands Atelier (Amersfoort)**
+> - **Koen Bruinsma, Founder, Tweedehands Atelier (Amersfoort)**
 
-**Cost & Timeline:** €2,100 (image pipeline, indexes, orphan cleanup, logging and alerts) — completed in 5 business days.
+**Cost & Timeline:** €2,100 (image pipeline, indexes, orphan cleanup, logging and alerts) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -153,7 +153,7 @@ Usually not first. A larger instance runs inefficient queries faster without rem
 
 ### What is the most common forgotten cost?
 
-Egress — serving files out is often billed separately from storing them — followed by log retention and orphaned files from deleted records, which accumulate silently in nearly every product.
+Egress - serving files out is often billed separately from storing them - followed by log retention and orphaned files from deleted records, which accumulate silently in nearly every product.
 
 ### When is paying more the right decision?
 
@@ -177,7 +177,7 @@ When it removes operational worry you would otherwise carry: point-in-time recov
       "name": "Which line usually grows fastest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bandwidth from unoptimised images and database compute from unindexed queries — both scale with engineering decisions rather than users."
+        "text": "Bandwidth from unoptimised images and database compute from unindexed queries - both scale with engineering decisions rather than users."
       }
     },
     {
@@ -201,7 +201,7 @@ When it removes operational worry you would otherwise carry: point-in-time recov
       "name": "When is paying more the right decision?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When it removes operational worry — point-in-time recovery, database headroom, or managed hosting so someone else notices at three in the morning."
+        "text": "When it removes operational worry - point-in-time recovery, database headroom, or managed hosting so someone else notices at three in the morning."
       }
     }
   ]

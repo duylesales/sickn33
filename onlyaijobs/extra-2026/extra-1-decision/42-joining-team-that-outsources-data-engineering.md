@@ -35,13 +35,13 @@ Content Format: Decision Guide
 }
 </script>
 
-The interview describes an interesting modelling problem, a supportive manager and a data platform that is "managed externally". That last phrase is easy to skim past and it determines a great deal about what your working week will look like. In many Dutch organisations — municipalities, care institutions, manufacturers, wholesalers, smaller insurers — the data warehouse, the integrations and often the whole infrastructure belong to an external supplier. Whether that is a convenience or the defining frustration of your role depends on things you can find out in advance, if you know to ask.
+The interview describes an interesting modelling problem, a supportive manager and a data platform that is "managed externally". That last phrase is easy to skim past and it determines a great deal about what your working week will look like. In many Dutch organisations - municipalities, care institutions, manufacturers, wholesalers, smaller insurers - the data warehouse, the integrations and often the whole infrastructure belong to an external supplier. Whether that is a convenience or the defining frustration of your role depends on things you can find out in advance, if you know to ask.
 
 ## Why So Many Dutch Employers Outsource This
 
 Organisations without a technology department rarely build one for a single function. A supplier already runs their ERP or care system, offers a reporting layer with it, and extending that contract is far easier than hiring engineers. For organisations with strict availability requirements or limited internal capacity, it is often a sound decision.
 
-It becomes a problem only at a specific moment: when the organisation decides to do something the supplier did not anticipate — which is exactly what hiring a data scientist implies.
+It becomes a problem only at a specific moment: when the organisation decides to do something the supplier did not anticipate - which is exactly what hiring a data scientist implies.
 
 ## What Changes in Your Daily Work
 
@@ -59,7 +59,7 @@ None of this makes the role impossible. It makes speed a function of the contrac
 
 ## The Questions That Expose the Risk
 
-- **Who owns the data — the organisation or the supplier?** It should be obvious and sometimes is not.
+- **Who owns the data - the organisation or the supplier?** It should be obvious and sometimes is not.
 - **Do I get direct read access to the source data, or only to their reporting layer?** This single answer predicts most of your first year.
 - **What does the contract cover?** Ask specifically about new extracts, schema changes, additional environments and running models in production.
 - **How long does a typical change request take, and what does it cost?** Ask for a real recent example rather than a target.
@@ -106,7 +106,7 @@ Batch your requests. Five small extract requests over five weeks cost more and t
 
 Specify precisely. The most common cause of a six-week delay is a change request that had to be clarified twice.
 
-Document what you cannot get. A short list of blocked work with the business value attached is what eventually changes a contract — vague complaints do not.
+Document what you cannot get. A short list of blocked work with the business value attached is what eventually changes a contract - vague complaints do not.
 
 And keep your own skills current. If the supplier handles all the engineering, your engineering practice will atrophy unless you deliberately maintain it in the environment you control.
 
@@ -122,7 +122,7 @@ And keep your own skills current. If the supplier handles all the engineering, y
 ## When It Is Fine, or Even Good
 
 - A reliable extract lands in an environment you control.
-- The supplier handles what you do not want to own anyway — availability, backups, source system stability.
+- The supplier handles what you do not want to own anyway - availability, backups, source system stability.
 - The organisation has budget and someone senior who manages the relationship actively.
 - The problems are genuinely interesting and the data exists today.
 - You want to focus on modelling and stakeholder work rather than infrastructure.
@@ -135,17 +135,17 @@ Timing matters more than most candidates realise. An outsourcing contract nearin
 
 If renewal or a tender is approaching, the organisation is about to make decisions about what it keeps internal, which systems move and what the next supplier must provide. A data professional who arrives at that moment has unusual influence: the requirements document is being written, and the person who can explain what analytical work actually needs is scarce.
 
-That is an opportunity and a warning. The opportunity is shaping the environment you will work in for years. The warning is that everything else stalls while the process runs — change requests to the outgoing supplier become difficult, investment pauses, and a migration may consume your second year entirely.
+That is an opportunity and a warning. The opportunity is shaping the environment you will work in for years. The warning is that everything else stalls while the process runs - change requests to the outgoing supplier become difficult, investment pauses, and a migration may consume your second year entirely.
 
 Ask three questions. When does the current contract end and what is the plan? Would I be involved in specifying requirements? And what happens to my projects during a transition?
 
-If the answers suggest you would spend your first eighteen months writing specifications and waiting for a migration, that is a legitimate job — but it is procurement and platform work, not data science, and you should accept it knowing which one you are taking.
+If the answers suggest you would spend your first eighteen months writing specifications and waiting for a migration, that is a legitimate job - but it is procurement and platform work, not data science, and you should accept it knowing which one you are taking.
 
 ## Real example
 
 ### A data scientist in Alkmaar who asked for one environment
 
-A data scientist is offered a role at a care organisation. The care registration system and all reporting are run by an external supplier. The problem — predicting which appointments are likely to be cancelled — is genuinely useful, and the manager is engaged.
+A data scientist is offered a role at a care organisation. The care registration system and all reporting are run by an external supplier. The problem - predicting which appointments are likely to be cancelled - is genuinely useful, and the manager is engaged.
 
 She asks the questions. There is no development environment. Every new extract is a change request with a lead time of about six weeks and a quote attached. Nobody has ever deployed a model there. The contract runs for three more years.
 
@@ -165,7 +165,7 @@ Three habits keep the gap from opening.
 
 **Stay fluent in what the supplier does.** Read their pipeline definitions when you can see them, ask how the extracts are built, understand the scheduling. You may not be able to change it, but understanding it keeps your technical judgement calibrated and makes you a far better counterpart in change requests.
 
-If none of this is possible — no environment, no deployment, no visibility — then the role is analytical rather than technical, and you should accept it knowing that, with a plan for where the engineering practice comes from next.
+If none of this is possible - no environment, no deployment, no visibility - then the role is analytical rather than technical, and you should accept it knowing that, with a plan for where the engineering practice comes from next.
 
 ## Key Takeaways
 
@@ -177,7 +177,7 @@ If none of this is possible — no environment, no deployment, no visibility —
 
 ## Where to Start
 
-If a role depends on an external supplier, ask how long the last change request took and what it cost — then compare with employers nearby who run their own data platform.
+If a role depends on an external supplier, ask how long the last change request took and what it cost - then compare with employers nearby who run their own data platform.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -203,7 +203,7 @@ An analytical environment under the employer's control, a budget for change requ
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is outsourced data engineering a problem for a data science role?", "acceptedAnswer": {"@type": "Answer", "text": "It depends — an extract into your own environment is fine; a locked supplier platform is not."}},
+    {"@type": "Question", "name": "Is outsourced data engineering a problem for a data science role?", "acceptedAnswer": {"@type": "Answer", "text": "It depends - an extract into your own environment is fine; a locked supplier platform is not."}},
     {"@type": "Question", "name": "What is the single most important question to ask?", "acceptedAnswer": {"@type": "Answer", "text": "Whether you get source access and your own development environment."}},
     {"@type": "Question", "name": "How long do change requests usually take?", "acceptedAnswer": {"@type": "Answer", "text": "Often weeks; ask for a real recent example rather than a target."}},
     {"@type": "Question", "name": "Can I put a model into production in a supplier's environment?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the contract covers it; get it agreed in writing."}},

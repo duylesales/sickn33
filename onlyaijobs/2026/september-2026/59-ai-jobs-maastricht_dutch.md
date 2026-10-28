@@ -21,11 +21,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Maastricht ligt fysiek dichter bij Aken en Luik dan bij Amsterdam, en die grensligging, gecombineerd met een sterk internationaal georiënteerde universiteit, geeft de stad een AI-arbeidsmarkt die anders aanvoelt dan de rest van Nederland — internationaler qua samenstelling, en sterk verbonden met gezondheidszorg en life sciences.
+Maastricht ligt fysiek dichter bij Aken en Luik dan bij Amsterdam, en die grensligging, gecombineerd met een sterk internationaal georiënteerde universiteit, geeft de stad een AI-arbeidsmarkt die anders aanvoelt dan de rest van Nederland - internationaler qua samenstelling, en sterk verbonden met gezondheidszorg en life sciences.
 
 ## Wat dit grensregio-karakter concreet betekent
 
-Een kandidaat die in Maastricht zoekt naar AI- of datawerk, concurreert vaak met een internationaler samengestelde kandidatenpool dan in een vergelijkbare Nederlandse stad verder van de grens — deels door de universiteit, deels door de nabijheid van Duitse en Belgische werkgevers die soms ook Nederlandse kandidaten werven.
+Een kandidaat die in Maastricht zoekt naar AI- of datawerk, concurreert vaak met een internationaler samengestelde kandidatenpool dan in een vergelijkbare Nederlandse stad verder van de grens - deels door de universiteit, deels door de nabijheid van Duitse en Belgische werkgevers die soms ook Nederlandse kandidaten werven.
 
 ## Wat voor datawerk hier daadwerkelijk gebeurt
 
@@ -33,13 +33,13 @@ De sterke gezondheidszorg- en life sciences-oriëntatie van de regio levert werk
 
 ## Waar te beginnen
 
-Als je openstaat voor een internationalere werkomgeving en geïnteresseerd bent in gezondheidszorg- of onderzoeksgerelateerd datawerk, is Maastricht de moeite van het overwegen waard — kijk specifiek naar de regio in plaats van aan te nemen dat serieus AI-werk alleen in de Randstad te vinden is.
+Als je openstaat voor een internationalere werkomgeving en geïnteresseerd bent in gezondheidszorg- of onderzoeksgerelateerd datawerk, is Maastricht de moeite van het overwegen waard - kijk specifiek naar de regio in plaats van aan te nemen dat serieus AI-werk alleen in de Randstad te vinden is.
 
 Bekijk actuele AI-, machine learning- en datavacatures in en rond Maastricht op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Wat de internationale samenstelling concreet betekent voor een sollicitatie
 
-Een internationalere kandidatenpool betekent niet per se meer concurrentie in absolute aantallen — het betekent een andere soort concurrentie, waarbij Engelstalige vaardigheden en ervaring met internationale samenwerking zwaarder kunnen wegen dan in een puur Nederlandse regionale markt. Voor een kandidaat die zich prettig voelt in een internationale werkomgeving, kan dit een reëel voordeel zijn ten opzichte van een monocultureler regionaal team elders in het land.
+Een internationalere kandidatenpool betekent niet per se meer concurrentie in absolute aantallen - het betekent een andere soort concurrentie, waarbij Engelstalige vaardigheden en ervaring met internationale samenwerking zwaarder kunnen wegen dan in een puur Nederlandse regionale markt. Voor een kandidaat die zich prettig voelt in een internationale werkomgeving, kan dit een reëel voordeel zijn ten opzichte van een monocultureler regionaal team elders in het land.
 
 ## Vergelijkingstabel: Maastricht vs. een vergelijkbare Nederlandse universiteitsstad
 
@@ -60,11 +60,11 @@ Een onderzoeksgroep verbonden aan de universiteit in Maastricht werkt samen met 
 
 ## Een veelvoorkomend misverstand over wat "internationaal werken" betekent
 
-Kandidaten associëren internationaal werken vaak met verhuizen naar het buitenland. Maastricht biedt een tussenweg die zelden expliciet wordt overwogen: een internationale werkomgeving, met collega's en soms werkgevers uit meerdere landen, zonder dat je zelf naar een ander land hoeft te verhuizen — een optie die specifiek voor mensen met een gezin of andere redenen om in Nederland te blijven, een reëel alternatief kan zijn.
+Kandidaten associëren internationaal werken vaak met verhuizen naar het buitenland. Maastricht biedt een tussenweg die zelden expliciet wordt overwogen: een internationale werkomgeving, met collega's en soms werkgevers uit meerdere landen, zonder dat je zelf naar een ander land hoeft te verhuizen - een optie die specifiek voor mensen met een gezin of andere redenen om in Nederland te blijven, een reëel alternatief kan zijn.
 
 ## Waarom deze grensregio-dynamiek zich waarschijnlijk zal versterken, niet verzwakken
 
-Naarmate Europese samenwerking op het gebied van gezondheidszorg, onderzoek en regelgeving verder toeneemt, is de verwachting dat grensregio's zoals Maastricht een groeiende, niet krimpende, rol zullen spelen als knooppunt voor dit soort internationale samenwerking — wat deze regio op langere termijn aantrekkelijker maakt voor kandidaten die nu al internationaal georiënteerd werk zoeken.
+Naarmate Europese samenwerking op het gebied van gezondheidszorg, onderzoek en regelgeving verder toeneemt, is de verwachting dat grensregio's zoals Maastricht een groeiende, niet krimpende, rol zullen spelen als knooppunt voor dit soort internationale samenwerking - wat deze regio op langere termijn aantrekkelijker maakt voor kandidaten die nu al internationaal georiënteerd werk zoeken.
 
 ## Hoe je je sollicitatie aanpast voor deze internationale context
 
@@ -77,7 +77,7 @@ Voor kandidaten die op termijn een internationale carrière ambiëren maar nu no
 ## Veelgestelde vragen
 
 ### (Scenario: kandidaat die twijfelt of Maastricht een serieuze AI-markt heeft) Heeft Maastricht een serieuze AI-arbeidsmarkt, ondanks de afstand tot de Randstad?
-Ja, met een eigen karakter — sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling door de grensligging en de universiteit.
+Ja, met een eigen karakter - sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling door de grensligging en de universiteit.
 
 ### (Scenario: kandidaat die twijfelt over concurrentie) Is de concurrentie voor AI-vacatures in Maastricht anders dan elders in Nederland?
 Vaak internationaler qua samenstelling, deels door de universiteit en de nabijheid van Duitse en Belgische werkgevers die soms ook Nederlandse kandidaten werven.
@@ -96,7 +96,7 @@ Filter op categorie en afstand tot huis, en kijk specifiek naar gezondheidszorg-
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Heeft Maastricht een serieuze AI-arbeidsmarkt, ondanks de afstand tot de Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, met een eigen karakter — sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling."}},
+    {"@type": "Question", "name": "Heeft Maastricht een serieuze AI-arbeidsmarkt, ondanks de afstand tot de Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, met een eigen karakter - sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling."}},
     {"@type": "Question", "name": "Is de concurrentie voor AI-vacatures in Maastricht anders dan elders in Nederland?", "acceptedAnswer": {"@type": "Answer", "text": "Vaak internationaler qua samenstelling, deels door de universiteit en de nabijheid van Duitse en Belgische werkgevers."}},
     {"@type": "Question", "name": "Wat voor datawerk gebeurt er specifiek in de gezondheidszorgsector rond Maastricht?", "acceptedAnswer": {"@type": "Answer", "text": "Klinische data-analyse en gezondheidsonderzoek, met een nadrukkelijker internationale component dan elders."}},
     {"@type": "Question", "name": "Wat maakt Maastricht anders dan andere Nederlandse universiteitssteden voor AI-werk?", "acceptedAnswer": {"@type": "Answer", "text": "De grensligging bij België en Duitsland en de internationaal georiënteerde universiteit geven een internationalere kandidatenpool."}},

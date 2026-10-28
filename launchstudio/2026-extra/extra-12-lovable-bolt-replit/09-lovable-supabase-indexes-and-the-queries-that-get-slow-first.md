@@ -28,7 +28,7 @@ AI coding tools create tables and write queries. They rarely create the indexes 
 
 ## Find the Slow Ones Before Guessing
 
-Do not add indexes by intuition. Supabase exposes query statistics — every statement your application has run, how often, and how much total time it consumed — and it is the only honest source.
+Do not add indexes by intuition. Supabase exposes query statistics - every statement your application has run, how often, and how much total time it consumed - and it is the only honest source.
 
 Sort by total time rather than by the slowest single execution. A query taking 900 milliseconds that runs once a day matters far less than one taking 40 milliseconds that runs on every page load, and founders optimise the wrong one constantly because the slow number is more alarming.
 
@@ -54,7 +54,7 @@ Add them one at a time and measure. An index that does not change a plan is an i
 
 Indexes are not free and the trade is worth understanding, because the instinct after reading the above is to index everything.
 
-Every index consumes storage, and more importantly every index must be updated on every insert, update and delete of the indexed column. A table with eleven indexes writes considerably slower than the same table with three. For a product doing far more reading than writing — which is most — the trade favours indexes heavily. For a table receiving high-volume writes, such as an event or logging table, be sparing.
+Every index consumes storage, and more importantly every index must be updated on every insert, update and delete of the indexed column. A table with eleven indexes writes considerably slower than the same table with three. For a product doing far more reading than writing - which is most - the trade favours indexes heavily. For a table receiving high-volume writes, such as an event or logging table, be sparing.
 
 Unused indexes are pure cost. Postgres tracks how often each one has been used, and reviewing that after a few months of real traffic usually reveals two or three that were added speculatively and never touched. Drop them.
 
@@ -64,7 +64,7 @@ Before adding anything, check whether your problem is actually the number of que
 
 The pattern: a page lists 50 projects, and for each project the code fetches its owner. That is 51 queries where two would do. Each is fast, the page is slow, and no index will help.
 
-This is endemic in AI-generated code because it is the natural way to express the logic — get the list, then loop over it. The fix is to fetch related data in one query rather than in a loop, which in Supabase means selecting the related table alongside the main one rather than calling the client inside a loop.
+This is endemic in AI-generated code because it is the natural way to express the logic - get the list, then loop over it. The fix is to fetch related data in one query rather than in a loop, which in Supabase means selecting the related table alongside the main one rather than calling the client inside a loop.
 
 Distinguishing the two cases takes thirty seconds: if your slow page produced dozens of fast queries, it is this. If it produced three slow ones, it is indexes.
 
@@ -72,7 +72,7 @@ Distinguishing the two cases takes thirty seconds: if your slow page produced do
 
 `SELECT count(*)` on a large table is slower than people expect, because Postgres genuinely counts. On a list page with pagination, that count often costs more than fetching the page itself.
 
-Three options, in order of preference for small products. Do not show a total at all — "showing 1-25" with a next button is sufficient for most interfaces. Show an approximate count, which the database can estimate cheaply. Or maintain a counter yourself if the number is genuinely important, updated as rows are created and deleted.
+Three options, in order of preference for small products. Do not show a total at all - "showing 1-25" with a next button is sufficient for most interfaces. Show an approximate count, which the database can estimate cheaply. Or maintain a counter yourself if the number is genuinely important, updated as rows are created and deleted.
 
 The general principle applies beyond counting: a number displayed in the corner of a page is rarely worth a query that grows with your data.
 
@@ -80,7 +80,7 @@ The general principle applies beyond counting: a number displayed in the corner 
 
 On a table with real data, creating an index normally locks writes while it builds, which on a large table means a period where your application cannot insert anything.
 
-Postgres offers a concurrent build that does not take that lock. It is slower and occasionally fails, leaving an invalid index that must be dropped and retried — but it does not stop your product working, which is the property you want at four in the afternoon.
+Postgres offers a concurrent build that does not take that lock. It is slower and occasionally fails, leaving an invalid index that must be dropped and retried - but it does not stop your product working, which is the property you want at four in the afternoon.
 
 Two habits go with it. Create indexes through migration files rather than by typing into a dashboard, so that your staging and production databases stay identical and the change is recorded. And measure the same query before and after, because an index that did not change the plan means the database decided not to use it, and knowing that immediately is better than assuming it worked.
 
@@ -90,27 +90,27 @@ One refinement worth knowing, because it applies to almost every product and cos
 
 Most applications query a fraction of their data over and over. Open tickets, active subscriptions, unarchived projects, unprocessed jobs. The closed, cancelled and archived rows accumulate forever and are almost never read, yet a normal index dutifully includes every one of them.
 
-A partial index covers only the rows matching a condition — active records, say — which makes it dramatically smaller, faster to search and cheaper to maintain. On a table where 95 percent of rows are historical, the difference is not marginal.
+A partial index covers only the rows matching a condition - active records, say - which makes it dramatically smaller, faster to search and cheaper to maintain. On a table where 95 percent of rows are historical, the difference is not marginal.
 
 The catch is that the database only uses a partial index when the query's condition matches the index's condition, so the filter has to appear in the query itself. That is usually already true: the screens that feel slow are the ones showing current work.
 
-The same thinking applies to a queue table. An index over pending jobs only, rather than every job ever run, keeps the polling query fast no matter how much history accumulates behind it — and history accumulating behind a working queue is precisely what happens to every successful product.
+The same thinking applies to a queue table. An index over pending jobs only, rather than every job ever run, keeps the polling query fast no matter how much history accumulates behind it - and history accumulating behind a working queue is precisely what happens to every successful product.
 
 ## When Indexes Are Not the Answer
 
 Three situations look like an indexing problem and are not, and recognising them saves a day.
 
-**Search across text.** Filtering on a word appearing anywhere in a description cannot use an ordinary index. That needs full-text search, which Postgres supports natively, or a dedicated search service — and reaching for one before the other is a decision worth making deliberately.
+**Search across text.** Filtering on a word appearing anywhere in a description cannot use an ordinary index. That needs full-text search, which Postgres supports natively, or a dedicated search service - and reaching for one before the other is a decision worth making deliberately.
 
 **Aggregations over everything.** A dashboard summing every transaction since launch will get slower forever regardless of indexes, because the work grows with your history. Those numbers belong in a summary table updated as data arrives, or computed nightly.
 
-**Row-level security doing more work than you think.** Supabase policies are conditions applied to every query, and a policy containing a subquery against another table executes for each row considered. A slow query with a simple plan and an expensive policy is a policy problem, and the fix is to make the policy's own lookup indexed — or to restructure it so it compares against a value already on the row.
+**Row-level security doing more work than you think.** Supabase policies are conditions applied to every query, and a policy containing a subquery against another table executes for each row considered. A slow query with a simple plan and an expensive policy is a policy problem, and the fix is to make the policy's own lookup indexed - or to restructure it so it compares against a value already on the row.
 
 ## Setting This Up
 
 For a running Supabase application this is typically one to two days: query statistics reviewed and ranked by total time, plans captured for the worst offenders, foreign key indexes created across the schema, composite indexes for tenancy and sort order on the tables behind your main screens, unique indexes on natural lookup columns, N+1 query patterns rewritten to fetch related data in one statement, expensive counts removed or estimated, everything applied through migrations with concurrent builds, and a note of the before-and-after timings so the next person can see what was done and why.
 
-LaunchStudio does this as part of production readiness, and it is usually the cheapest performance work available to a growing product — hours rather than a rebuild. The engineers are Manifera's: eleven years, 160+ projects, Postgres in production long before it was fashionable.
+LaunchStudio does this as part of production readiness, and it is usually the cheapest performance work available to a growing product - hours rather than a rebuild. The engineers are Manifera's: eleven years, 160+ projects, Postgres in production long before it was fashionable.
 
 [Send us your slowest page](https://launchstudio.eu/en/#contact) and we will tell you whether it is indexes or queries.
 
@@ -120,7 +120,7 @@ LaunchStudio does this as part of production readiness, and it is usually the ch
 
 Wendy Roos runs Verzuimlijn, built in Lovable: absence registration for small employers, used by 140 companies covering around 4,000 employees.
 
-Everything was fine for eight months. Then the dashboard — the first screen every user opens — began taking four to six seconds, always worst between nine and ten in the morning when most of her users log in at once. Two customers complained and one asked whether the product could handle their size.
+Everything was fine for eight months. Then the dashboard - the first screen every user opens - began taking four to six seconds, always worst between nine and ten in the morning when most of her users log in at once. Two customers complained and one asked whether the product could handle their size.
 
 The absence records table had reached 310,000 rows and had exactly one index: its primary key. The dashboard query filtered by employer and sorted by date, so the database read all 310,000 rows and sorted them, every time, for every user. The morning peak was simply many people doing that at once.
 
@@ -129,9 +129,9 @@ Two business days: query statistics reviewed, showing the dashboard query consum
 **Result:** the dashboard went from 4.2 seconds at the morning peak to 180 milliseconds, on the same hardware and the same plan. Wendy's database CPU during peak hours fell from routinely above 80 percent to under 15, which removed a planned upgrade she had budgeted €340 a month for.
 
 > *"I assumed I had outgrown the plan and needed to pay for a bigger one. It turned out I had never created a single index, and nobody had told me that was a thing I was supposed to do."*
-> — **Wendy Roos, Founder, Verzuimlijn (Helmond)**
+> - **Wendy Roos, Founder, Verzuimlijn (Helmond)**
 
-**Cost & Timeline:** €1,600 (query analysis, composite and foreign key indexes via concurrent migrations, N+1 remediation, count removal, index usage review) — completed in 2 business days.
+**Cost & Timeline:** €1,600 (query analysis, composite and foreign key indexes via concurrent migrations, N+1 remediation, count removal, index usage review) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -145,7 +145,7 @@ No. Each index slows every write to that table and consumes storage. Index forei
 
 ### Why is my page slow when every query is fast?
 
-Because there are dozens of them — a list fetching related data in a loop. No index fixes that; fetching the related rows in one query does.
+Because there are dozens of them - a list fetching related data in a loop. No index fixes that; fetching the related rows in one query does.
 
 ### Is it safe to add an index to a live table?
 
@@ -181,7 +181,7 @@ Postgres counts genuinely rather than storing a total. On large tables, drop the
       "name": "Why is my page slow when every query is fast?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You are running dozens of them — related data fetched inside a loop. Fetch it in a single query instead; no index will help."
+        "text": "You are running dozens of them - related data fetched inside a loop. Fetch it in a single query instead; no index will help."
       }
     },
     {

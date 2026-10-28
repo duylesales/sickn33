@@ -52,7 +52,7 @@ Vienna regularly ranks among the most liveable cities in the world, and for mach
 
 **ISTA.** The Institute of Science and Technology Austria, located in Klosterneuburg just outside Vienna, is a research institute for basic research in the natural and computer sciences. Its machine learning and computer science groups are internationally recognised, and it offers a doctoral programme with an international profile.
 
-**The Linz connection.** Johannes Kepler University Linz, about an hour and a quarter from Vienna by train, is known for its Institute for Machine Learning, where Sepp Hochreiter — co-inventor of the LSTM — leads research. Linz also has a strong industrial base and technology companies.
+**The Linz connection.** Johannes Kepler University Linz, about an hour and a quarter from Vienna by train, is known for its Institute for Machine Learning, where Sepp Hochreiter - co-inventor of the LSTM - leads research. Linz also has a strong industrial base and technology companies.
 
 **Other institutes.** The Complexity Science Hub Vienna studies complex systems with data-driven methods. The Austrian Institute of Technology (AIT) conducts applied research, including in AI and digital systems, and various other institutes contribute to the ecosystem.
 
@@ -75,7 +75,7 @@ Vienna's role as a gateway to Central and Eastern Europe means that some banking
 
 Austria's employment system has some distinctive features that matter when evaluating AI jobs in Vienna.
 
-**Collective agreements.** Almost all employees in Austria are covered by a collective agreement (Kollektivvertrag), which sets minimum salaries by job category and experience, working hours and other conditions. The IT sector has its own collective agreement, and banks, insurers and industry have theirs. Job postings in Austria are legally required to state the minimum salary under the applicable collective agreement and whether overpayment is possible — a useful feature for candidates.
+**Collective agreements.** Almost all employees in Austria are covered by a collective agreement (Kollektivvertrag), which sets minimum salaries by job category and experience, working hours and other conditions. The IT sector has its own collective agreement, and banks, insurers and industry have theirs. Job postings in Austria are legally required to state the minimum salary under the applicable collective agreement and whether overpayment is possible - a useful feature for candidates.
 
 **Fourteen salaries.** Austrian salaries are typically paid in 14 instalments: 12 monthly salaries plus holiday pay and Christmas pay, which are taxed favourably. When comparing with other countries, calculate annual net pay rather than monthly figures.
 
@@ -95,7 +95,7 @@ Vienna combines imperial architecture, extensive green spaces, excellent public 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, at exact address level with the distance from your home. Applications go to the employer's own page, browsing requires no account and no employer can pay for better visibility.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Vienna you will find few or no local vacancies there today. Use Austrian job portals, company career pages, university and institute vacancy lists and the international organisations' recruitment sites as primary sources. OnlyAIJobs is useful for comparing Austria with the Netherlands — where employers such as Accenture, Cegeka, Mollie and AMCS list AI roles — and as a method: filter by AI category and real commute rather than by title. Austrian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Vienna you will find few or no local vacancies there today. Use Austrian job portals, company career pages, university and institute vacancy lists and the international organisations' recruitment sites as primary sources. OnlyAIJobs is useful for comparing Austria with the Netherlands - where employers such as Accenture, Cegeka, Mollie and AMCS list AI roles - and as a method: filter by AI category and real commute rather than by title. Austrian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Reading an Austrian Job Posting
 
@@ -158,7 +158,7 @@ Vienna's AI community meets at university lectures, meetups on data science and 
 
 A data scientist working on fraud detection at a German bank in Frankfurt receives an offer from a Vienna fintech. The monthly salary looks lower, but she learns that Austrian salaries are paid 14 times a year, with favourable taxation of the extra payments.
 
-She calculates annual net pay, compares rents and the cost of Vienna's annual transport pass with her Frankfurt costs, and finds the offers roughly comparable. The fintech works in English, offers a hybrid arrangement and gives her ownership of transaction risk models across several European markets. She accepts, starts German lessons and, after a year, says Vienna's quality of life exceeded her expectations — though she notes that bureaucratic procedures on arrival took patience.
+She calculates annual net pay, compares rents and the cost of Vienna's annual transport pass with her Frankfurt costs, and finds the offers roughly comparable. The fintech works in English, offers a hybrid arrangement and gives her ownership of transaction risk models across several European markets. She accepts, starts German lessons and, after a year, says Vienna's quality of life exceeded her expectations - though she notes that bureaucratic procedures on arrival took patience.
 
 ## Key Takeaways
 

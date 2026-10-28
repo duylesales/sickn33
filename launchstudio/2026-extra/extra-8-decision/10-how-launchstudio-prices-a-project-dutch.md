@@ -32,15 +32,15 @@ Doelgroep: SaaS Oprichter Scale-Up
 }
 </script>
 
-Een tarievenpagina met vier pakketten variërend van €800 tot €7.500 roept bij elke oprichter die serieus een budget probeert op te stellen een begrijpelijke vraag op: waar belandt mijn specifieke project, en waarom? Het eerlijke antwoord is geen simpele formule die een oprichter zelf kan invullen voordat hij met iemand heeft gesproken — het hangt af van wat een intakegesprek en codebase-review daadwerkelijk aan het licht brengen. Maar de onderliggende logica waarmee die bevindingen worden vertaald naar een vast getal is volkomen helder uit te leggen. Begrijpen hoe dat werkt, is precies wat een brede prijsrange op een website verandert in een concreet, betrouwbaar bedrag waar een oprichter daadwerkelijk op kan plannen.
+Een tarievenpagina met vier pakketten variërend van €800 tot €7.500 roept bij elke oprichter die serieus een budget probeert op te stellen een begrijpelijke vraag op: waar belandt mijn specifieke project, en waarom? Het eerlijke antwoord is geen simpele formule die een oprichter zelf kan invullen voordat hij met iemand heeft gesproken - het hangt af van wat een intakegesprek en codebase-review daadwerkelijk aan het licht brengen. Maar de onderliggende logica waarmee die bevindingen worden vertaald naar een vast getal is volkomen helder uit te leggen. Begrijpen hoe dat werkt, is precies wat een brede prijsrange op een website verandert in een concreet, betrouwbaar bedrag waar een oprichter daadwerkelijk op kan plannen.
 
 ## Waarom Prijspagina's Ranges Tonen, Geen Vaste Getallen
 
-De bandbreedte binnen elk pakketniveau bestaat omdat een categorie zoals "Launch Ready" een type werk beschrijft — het beveiligen van authenticatie, beheer van API-sleutels en verificatie van betalingen — en geen statische checklist die voor elk project identiek is. Een Launch Ready-opdracht voor een app met één enkele functionaliteit en één betaalkoppeling bevindt zich aan de onderkant van die prijsrange. Hetzelfde pakket voor een app met een complexer datamodel of een tweede, minder gangbare betaalmethode valt hoger uit binnen hetzelfde niveau, zonder dat het direct noodzakelijk is om naar een zwaarder pakket over te stappen. De prijsrange markeert de grenzen van wat een niveau omvat; het intakegesprek bepaalt waarbinnen die grenzen een specifiek project daadwerkelijk landt.
+De bandbreedte binnen elk pakketniveau bestaat omdat een categorie zoals "Launch Ready" een type werk beschrijft - het beveiligen van authenticatie, beheer van API-sleutels en verificatie van betalingen - en geen statische checklist die voor elk project identiek is. Een Launch Ready-opdracht voor een app met één enkele functionaliteit en één betaalkoppeling bevindt zich aan de onderkant van die prijsrange. Hetzelfde pakket voor een app met een complexer datamodel of een tweede, minder gangbare betaalmethode valt hoger uit binnen hetzelfde niveau, zonder dat het direct noodzakelijk is om naar een zwaarder pakket over te stappen. De prijsrange markeert de grenzen van wat een niveau omvat; het intakegesprek bepaalt waarbinnen die grenzen een specifiek project daadwerkelijk landt.
 
 ## De Vier Pakketten en Wat Ze Werkelijk van Elkaar Scheidt
 
-Launch Ready (€800–1.500) dekt de universele basiskwetsbaarheden: beheer van geheimen en omgevingsvariabelen, basisauthenticatie en betalingsverificatie voor een overzichtelijke applicatie met één product. Launch & Grow (€1.500–3.500) breidt dit uit naar complexere autorisatielogica, zoals op rollen gebaseerde toegangscontrole (RBAC) voor meerdere gebruikerstypen, en past doorgaans bij producten met een uitgebreidere functionaliteit of een vroege gebruikersgroep die er al dagelijks op leunt. Relaunch & Scale (€2.500–4.500) richt zich op structureel complexere situaties — multi-tenant data-isolatie, diepere integraties met externe diensten, of een platform dat zich voorbereidt op een grootschalige uitrol waarbij de gevolgen van een beveiligingslek vele malen groter zijn. Enterprise Hardening (€5.000–7.500) is bedoeld voor producten met strikte compliance-eisen, veeleisende uptime-verwachtingen, of een architectuur die dermate complex is dat een diepgaande gelijktijdige audit over alle risicocategorieën vereist is.
+Launch Ready (€800–1.500) dekt de universele basiskwetsbaarheden: beheer van geheimen en omgevingsvariabelen, basisauthenticatie en betalingsverificatie voor een overzichtelijke applicatie met één product. Launch & Grow (€1.500–3.500) breidt dit uit naar complexere autorisatielogica, zoals op rollen gebaseerde toegangscontrole (RBAC) voor meerdere gebruikerstypen, en past doorgaans bij producten met een uitgebreidere functionaliteit of een vroege gebruikersgroep die er al dagelijks op leunt. Relaunch & Scale (€2.500–4.500) richt zich op structureel complexere situaties - multi-tenant data-isolatie, diepere integraties met externe diensten, of een platform dat zich voorbereidt op een grootschalige uitrol waarbij de gevolgen van een beveiligingslek vele malen groter zijn. Enterprise Hardening (€5.000–7.500) is bedoeld voor producten met strikte compliance-eisen, veeleisende uptime-verwachtingen, of een architectuur die dermate complex is dat een diepgaande gelijktijdige audit over alle risicocategorieën vereist is.
 
 ## Wat het Intakegesprek Daadwerkelijk Meet
 
@@ -48,7 +48,7 @@ Tijdens het intakegesprek en de eerste verkenning van de codebase meet het team 
 
 ## Waarom Twee Schijnbaar Gelijke Projecten Verschillende Offertes Krijgen
 
-Twee oprichters kunnen oppervlakkig gezien vrijwel identieke producten voorleggen — beide met AI gebouwde SaaS-tools, beide met klantdata, beide op zoek naar "security fixes" — en toch aanzienlijk verschillende offertes ontvangen. De bepalende factor is immers niet de productcategorie, maar wat de audit onder de motorkap aantreft. Een product dat door een AI-tool schoon is opgezet met een handvol afgebakende kwesties kost minder om productieklaar te maken dan een product waarbij één vroege ontwerpfout — zoals inconsistente roldefinities — is doorgesijpeld naar tientallen schermen en functies, zelfs als beide producten er aan de buitenkant even gelikt uitzien. Dit is precies de reden waarom LaunchStudio nooit offreert op basis van een productomschrijving alleen; dezelfde omschrijving kan een totaal andere hoeveelheid werk maskeren.
+Twee oprichters kunnen oppervlakkig gezien vrijwel identieke producten voorleggen - beide met AI gebouwde SaaS-tools, beide met klantdata, beide op zoek naar "security fixes" - en toch aanzienlijk verschillende offertes ontvangen. De bepalende factor is immers niet de productcategorie, maar wat de audit onder de motorkap aantreft. Een product dat door een AI-tool schoon is opgezet met een handvol afgebakende kwesties kost minder om productieklaar te maken dan een product waarbij één vroege ontwerpfout - zoals inconsistente roldefinities - is doorgesijpeld naar tientallen schermen en functies, zelfs als beide producten er aan de buitenkant even gelikt uitzien. Dit is precies de reden waarom LaunchStudio nooit offreert op basis van een productomschrijving alleen; dezelfde omschrijving kan een totaal andere hoeveelheid werk maskeren.
 
 ## Wat een Project Naar een Hoger Pakket Stuwt
 
@@ -56,7 +56,7 @@ Bepaalde specifieke bevindingen verschuiven een offerte betrouwbaar naar de bove
 
 [LaunchStudio](https://launchstudio.eu/nl/) prijst elk traject volgens deze transparante logica, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering om een feitelijke audit te vertalen naar een bedrag waar oprichters met een gerust hart op kunnen plannen.
 
-[Ontdek de werkelijke berekening achter uw offerte](https://launchstudio.eu/nl/#contact) — tijdens een intakegesprek ziet u exact welke bevindingen bepalen waar uw project uitkomt.
+[Ontdek de werkelijke berekening achter uw offerte](https://launchstudio.eu/nl/#contact) - tijdens een intakegesprek ziet u exact welke bevindingen bepalen waar uw project uitkomt.
 
 ## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: Begrijpen Waarom Haar Offerte Niet in het Laagste Pakket Viel
@@ -65,12 +65,12 @@ Anouk Peters, voormalig data-analist en nu oprichter in Delft, bouwde MetricMerg
 
 In plaats van het bedrag klakkeloos te accepteren, vroeg Anouk gericht wat het hogere niveau rechtvaardigde. Het team van Manifera liep de feitelijke auditbevindingen stap voor stap met haar door: MetricMerge's multi-tenant architectuur, waarbij de data van elk afzonderlijk bureau strikt geïsoleerd moest blijven van andere accounts, kende inconsistente data-scoping in zes van de elf dashboard-views. Dit was een structureel ander en omvangrijker probleem dan de single-tenant authenticatielogica waar Launch Ready op is geprijsd, en sloot naadloos aan op de gedefinieerde scope van Relaunch & Scale (multi-tenant data-isolatie).
 
-**Resultaat:** Doordat de specifieke kwetsbaarheden exact werden aangewezen, begreep Anouk precies waarvoor ze betaalde en gaf ze akkoord op Relaunch & Scale. Daarmee werden alle zes de lekkende dashboard-views gecorrigeerd met centrale tenant-filtering — een kwetsbaarheid die, indien onopgemerkt, ertoe had geleid dat het ene bureau vroeg of laat de vertrouwelijke marketingdata van een ander bureau had kunnen inzien.
+**Resultaat:** Doordat de specifieke kwetsbaarheden exact werden aangewezen, begreep Anouk precies waarvoor ze betaalde en gaf ze akkoord op Relaunch & Scale. Daarmee werden alle zes de lekkende dashboard-views gecorrigeerd met centrale tenant-filtering - een kwetsbaarheid die, indien onopgemerkt, ertoe had geleid dat het ene bureau vroeg of laat de vertrouwelijke marketingdata van een ander bureau had kunnen inzien.
 
-> *"Ik wilde bijna protesteren tegen de prijs voordat ik begreep wat deze inhield. Zodra ik de specifieke views zag die openstonden, was het bedrag volkomen logisch — het was geen hoger getal voor hetzelfde probleem, het was een groter probleem dan ik zelf had doorzien."*  
-> — **Anouk Peters, Founder, MetricMerge (Delft)**
+> *"Ik wilde bijna protesteren tegen de prijs voordat ik begreep wat deze inhield. Zodra ik de specifieke views zag die openstonden, was het bedrag volkomen logisch - het was geen hoger getal voor hetzelfde probleem, het was een groter probleem dan ik zelf had doorzien."*  
+> - **Anouk Peters, Founder, MetricMerge (Delft)**
 
-**Kosten & Tijdlijn:** €3.600 (Relaunch & Scale Pakket, multi-tenant data-isolatie over zes dashboard-views) — live in 13 werkdagen.
+**Kosten & Tijdlijn:** €3.600 (Relaunch & Scale Pakket, multi-tenant data-isolatie over zes dashboard-views) - live in 13 werkdagen.
 
 ---
 
@@ -78,7 +78,7 @@ In plaats van het bedrag klakkeloos te accepteren, vroeg Anouk gericht wat het h
 
 ### Waarom kan LaunchStudio mij geen exacte prijs geven vóór het intakegesprek?
 
-Een betrouwbare prijs is afhankelijk van wat het intakegesprek en de codebase-review feitelijk aantreffen — hoeveel risicocategorieën aanwezig zijn, hoe diep ze in de code zitten en hoe complex het datamodel is. Dat kan niet verantwoord worden ingeschat op basis van een globale productomschrijving alleen, zoals Anouk's situatie bewees.
+Een betrouwbare prijs is afhankelijk van wat het intakegesprek en de codebase-review feitelijk aantreffen - hoeveel risicocategorieën aanwezig zijn, hoe diep ze in de code zitten en hoe complex het datamodel is. Dat kan niet verantwoord worden ingeschat op basis van een globale productomschrijving alleen, zoals Anouk's situatie bewees.
 
 ### Wat is het daadwerkelijke verschil tussen Launch Ready en Launch & Grow?
 
@@ -90,7 +90,7 @@ Het intakegesprek benoemt altijd exact de onderliggende bevinding, zoals multi-t
 
 ### Kunnen twee producten in dezelfde branche sterk verschillende offertes krijgen?
 
-Ja — de doorslaggevende factor is wat de audit onder de motorkap aantreft, niet de branche. Een schone codebase met afgebakende issues kost minder dan een codebase waarin een vroege architectuurfout door tientallen features heen woekert.
+Ja - de doorslaggevende factor is wat de audit onder de motorkap aantreft, niet de branche. Een schone codebase met afgebakende issues kost minder dan een codebase waarin een vroege architectuurfout door tientallen features heen woekert.
 
 ### Is de prijs ooit onderhandelbaar zodra het intakegesprek is afgerond?
 

@@ -1,4 +1,4 @@
-🚨 Rick Damen built Vracht360, a shipment-tracking tool for small logistics operators, using Bolt over three intense weeks — it looked exactly like the five-figure SaaS products his old employer used to pay for. Then a prospect asked one routine question during a demo: what happens to their data if he shuts the tool down, and where is it hosted? He didn't have an answer. 😳
+🚨 Rick Damen built Vracht360, a shipment-tracking tool for small logistics operators, using Bolt over three intense weeks - it looked exactly like the five-figure SaaS products his old employer used to pay for. Then a prospect asked one routine question during a demo: what happens to their data if he shuts the tool down, and where is it hosted? He didn't have an answer. 😳
 
 The code looked finished. The operational thinking behind it wasn't. 🧠
 
@@ -11,7 +11,7 @@ The code looked finished. The operational thinking behind it wasn't. 🧠
 ✅ Implement automated daily backups
 ✅ Add field-level access controls to every customer-facing endpoint
 
-At **LaunchStudio**, Manifera's engineers — with 160+ delivered projects for clients like Vodafone and TNO — treat this exact data-separation and access-control gap as a standard pre-launch check. 🛡️
+At **LaunchStudio**, Manifera's engineers - with 160+ delivered projects for clients like Vodafone and TNO - treat this exact data-separation and access-control gap as a standard pre-launch check. 🛡️
 
 Vracht360's result: it passed its next prospect's data-security questions without hesitation, all without altering the existing Bolt-built interface. 🚀
 

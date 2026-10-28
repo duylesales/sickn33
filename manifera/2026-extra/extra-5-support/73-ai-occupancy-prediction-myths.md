@@ -20,11 +20,11 @@ target_persona: "B"
 }
 </script>
 
-An Operations Director or technical lead at a parking operator evaluating AI-based occupancy prediction — forecasting how full a facility will be at a given time, and using that forecast to drive dynamic pricing or proactive driver guidance — often approaches the technology with assumptions shaped by AI's visible progress in other forecasting domains, assumptions that don't fully account for the specific operational judgment, cost-scaling, and liability considerations occupancy prediction actually carries. Several of these assumptions deserve direct correction before they shape a platform build decision.
+An Operations Director or technical lead at a parking operator evaluating AI-based occupancy prediction - forecasting how full a facility will be at a given time, and using that forecast to drive dynamic pricing or proactive driver guidance - often approaches the technology with assumptions shaped by AI's visible progress in other forecasting domains, assumptions that don't fully account for the specific operational judgment, cost-scaling, and liability considerations occupancy prediction actually carries. Several of these assumptions deserve direct correction before they shape a platform build decision.
 
 ## Myth 1: "AI Occupancy Prediction Can Simply Replace a Facility Manager's Judgment at Similar Reliability"
 
-Occupancy prediction models have genuinely improved at forecasting demand patterns from historical data, and it's reasonable to extrapolate from strong model performance on clean historical data toward an assumption that AI prediction can substitute broadly for a facility manager's day-to-day judgment. What this underweights is the difference between a model trained on historical patterns and the kind of situational judgment a facility manager applies in real time — a nearby event disrupting normal traffic patterns, a temporary closure shifting demand to an adjacent facility, or a local anomaly the model has no historical precedent for. Current occupancy prediction approaches, however genuinely useful as a forecasting input, don't reliably substitute for the specific, situational judgment a facility manager brings to conditions the model's historical training data doesn't actually represent.
+Occupancy prediction models have genuinely improved at forecasting demand patterns from historical data, and it's reasonable to extrapolate from strong model performance on clean historical data toward an assumption that AI prediction can substitute broadly for a facility manager's day-to-day judgment. What this underweights is the difference between a model trained on historical patterns and the kind of situational judgment a facility manager applies in real time - a nearby event disrupting normal traffic patterns, a temporary closure shifting demand to an adjacent facility, or a local anomaly the model has no historical precedent for. Current occupancy prediction approaches, however genuinely useful as a forecasting input, don't reliably substitute for the specific, situational judgment a facility manager brings to conditions the model's historical training data doesn't actually represent.
 
 ## Myth 2: "AI Prediction Tooling Cuts Operations Cost Roughly Proportionally to the Number of Facilities Covered"
 
@@ -32,11 +32,11 @@ An operator reasonably expects that if an occupancy prediction model works well 
 
 ## Myth 3: "Liability for AI-Driven Dynamic-Pricing Decisions Gone Wrong Is a Settled, Low-Risk Legal Question"
 
-The legal landscape around AI-driven dynamic pricing — questions of consumer-protection compliance when a model raises prices in response to predicted demand, transparency obligations toward drivers about how a price was actually determined, and liability when a mispriced or mispredicted recommendation causes a driver measurable harm — remains genuinely unsettled in multiple jurisdictions relevant to parking operations, with evolving consumer-protection guidance and active regulatory attention to algorithmic pricing generally, rather than a stable, low-risk legal consensus an operator can confidently build a pricing engine around without ongoing attention. An operator treating this as a solved, low-risk legal question, rather than an actively evolving area requiring ongoing legal monitoring specific to the operator's own pricing model and disclosure practices, risks building meaningful commercial value on a legal foundation that could shift in ways affecting the operator's actual pricing authority.
+The legal landscape around AI-driven dynamic pricing - questions of consumer-protection compliance when a model raises prices in response to predicted demand, transparency obligations toward drivers about how a price was actually determined, and liability when a mispriced or mispredicted recommendation causes a driver measurable harm - remains genuinely unsettled in multiple jurisdictions relevant to parking operations, with evolving consumer-protection guidance and active regulatory attention to algorithmic pricing generally, rather than a stable, low-risk legal consensus an operator can confidently build a pricing engine around without ongoing attention. An operator treating this as a solved, low-risk legal question, rather than an actively evolving area requiring ongoing legal monitoring specific to the operator's own pricing model and disclosure practices, risks building meaningful commercial value on a legal foundation that could shift in ways affecting the operator's actual pricing authority.
 
 ## Why These Myths Deserve Direct Correction Before Production Decisions
 
-These assumptions aren't unreasonable — AI prediction's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and consistency advantages a mature forecasting technology appears to offer. What makes occupancy prediction specifically different from some other AI-forecasting use cases is the combination of genuinely situational, locally specific conditions a historical model cannot fully represent (unlike a clean backtest, real-time facility management needs to hold up against genuine anomalies), a real, non-proportional validation cost that limits how directly portfolio size translates into deployment savings, and a genuinely unsettled legal landscape specifically relevant to an operator's ability to price and disclose confidently.
+These assumptions aren't unreasonable - AI prediction's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and consistency advantages a mature forecasting technology appears to offer. What makes occupancy prediction specifically different from some other AI-forecasting use cases is the combination of genuinely situational, locally specific conditions a historical model cannot fully represent (unlike a clean backtest, real-time facility management needs to hold up against genuine anomalies), a real, non-proportional validation cost that limits how directly portfolio size translates into deployment savings, and a genuinely unsettled legal landscape specifically relevant to an operator's ability to price and disclose confidently.
 
 ## What This Means for Scoping an AI-Assisted Occupancy Platform Correctly
 
@@ -65,7 +65,7 @@ Parkraum-Analytik Linz, a Linz-based parking operator, had planned an ambitious 
 Manifera's Amsterdam team, engaged to rework the rollout plan, repositioned AI prediction as a decision-support tool paired with genuine facility-manager oversight for anomalous conditions, rebuilt the budget around realistic per-facility validation cost, and established ongoing legal review specific to the operator's actual dynamic-pricing disclosure practices.
 
 > *"We had budgeted as if one good model and rollout scale moved together in a straight line. What we actually found was that every facility had its own quirks the model needed to learn, and that per-facility validation work was where our original budget really fell apart."*
-> — **Operations Director, Parkraum-Analytik Linz**
+> - **Operations Director, Parkraum-Analytik Linz**
 
 Parkraum-Analytik Linz's recalibrated platform, focused on prediction within supervised operational constraints rather than full pricing autonomy, delivered dynamic pricing recommendations meeting the operator's actual reliability bar within a realistically budgeted rollout timeline.
 
@@ -85,15 +85,15 @@ Before building a platform around AI-based occupancy prediction and dynamic pric
 
 ### (Scenario: operator scoping an AI occupancy platform) Can AI occupancy prediction simply replace a facility manager's judgment at similar reliability?
 
-Not reliably — local anomalies and situational conditions a historical model has no precedent for typically require genuine human judgment, which current prediction approaches don't fully substitute for.
+Not reliably - local anomalies and situational conditions a historical model has no precedent for typically require genuine human judgment, which current prediction approaches don't fully substitute for.
 
 ### (Scenario: operator projecting cost savings across a portfolio) Do AI occupancy prediction cost savings scale proportionally with the number of facilities covered?
 
-Not typically — most facilities require a genuine, facility-specific validation and tuning pass before predictions can be trusted, and this cost doesn't shrink proportionally with portfolio size, limiting realistic savings.
+Not typically - most facilities require a genuine, facility-specific validation and tuning pass before predictions can be trusted, and this cost doesn't shrink proportionally with portfolio size, limiting realistic savings.
 
 ### (Scenario: operator assuming legal questions are settled) Is liability for AI-driven dynamic-pricing decisions a settled, low-risk legal question?
 
-No — consumer-protection compliance and disclosure obligations around algorithmic pricing remain genuinely unsettled in multiple jurisdictions, requiring ongoing legal monitoring rather than a one-time assessment.
+No - consumer-protection compliance and disclosure obligations around algorithmic pricing remain genuinely unsettled in multiple jurisdictions, requiring ongoing legal monitoring rather than a one-time assessment.
 
 ### (Scenario: operator deciding where to apply AI prediction) Where does AI occupancy prediction add the most genuine value in a parking platform?
 
@@ -108,8 +108,8 @@ Budget genuine per-facility validation and tuning cost alongside deployment cost
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "(Scenario: operator scoping an AI occupancy platform) Can AI occupancy prediction simply replace a facility manager's judgment at similar reliability?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — local anomalies a historical model has no precedent for typically require genuine human judgment." } },
-    { "@type": "Question", "name": "(Scenario: operator projecting cost savings across a portfolio) Do AI occupancy prediction cost savings scale proportionally with the number of facilities covered?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically — facility-specific validation cost doesn't shrink proportionally with portfolio size." } },
+    { "@type": "Question", "name": "(Scenario: operator scoping an AI occupancy platform) Can AI occupancy prediction simply replace a facility manager's judgment at similar reliability?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably - local anomalies a historical model has no precedent for typically require genuine human judgment." } },
+    { "@type": "Question", "name": "(Scenario: operator projecting cost savings across a portfolio) Do AI occupancy prediction cost savings scale proportionally with the number of facilities covered?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically - facility-specific validation cost doesn't shrink proportionally with portfolio size." } },
     { "@type": "Question", "name": "(Scenario: operator assuming legal questions are settled) Is liability for AI-driven dynamic-pricing decisions a settled, low-risk legal question?", "acceptedAnswer": { "@type": "Answer", "text": "No, consumer-protection and disclosure obligations around algorithmic pricing remain genuinely unsettled." } },
     { "@type": "Question", "name": "(Scenario: operator deciding where to apply AI prediction) Where does AI occupancy prediction add the most genuine value in a parking platform?", "acceptedAnswer": { "@type": "Answer", "text": "Proactive driver guidance within a human-supervised operations model aligns best with prediction's actual strengths." } },
     { "@type": "Question", "name": "(Scenario: operator budgeting an occupancy platform rollout) How should an operator budget for AI-assisted occupancy prediction realistically?", "acceptedAnswer": { "@type": "Answer", "text": "Budget genuine per-facility validation cost explicitly, rather than projecting proportional portfolio-based savings." } }

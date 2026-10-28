@@ -34,11 +34,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Nijmegen is home to a research university with a long-standing cognitive-science and medical tradition, and that lineage shapes the AI job market in the region more than any product company's roadmap does. Roles here tend to sit closer to research methodology than to shipping a feature — which is either exactly what a candidate wants, or a mismatch worth knowing about before applying.
+Nijmegen is home to a research university with a long-standing cognitive-science and medical tradition, and that lineage shapes the AI job market in the region more than any product company's roadmap does. Roles here tend to sit closer to research methodology than to shipping a feature - which is either exactly what a candidate wants, or a mismatch worth knowing about before applying.
 
 ## A Market Shaped by a University, Not a Product Cycle
 
-Where a scale-up's AI team optimises for iteration speed, a research-adjacent employer in Nijmegen — a hospital data team, a cognitive-science spinout, a medical-imaging group — optimises for methodological rigor: reproducibility, peer-reviewable results, and careful handling of sensitive health data. The pace is different, the evaluation criteria are different, and the career path afterward often leads toward specialist research roles rather than general product engineering.
+Where a scale-up's AI team optimises for iteration speed, a research-adjacent employer in Nijmegen - a hospital data team, a cognitive-science spinout, a medical-imaging group - optimises for methodological rigor: reproducibility, peer-reviewable results, and careful handling of sensitive health data. The pace is different, the evaluation criteria are different, and the career path afterward often leads toward specialist research roles rather than general product engineering.
 
 **Health and medical-imaging data.** Work involving diagnostic imaging, clinical data or treatment-outcome modeling, almost always under strict governance requirements that shape the engineering as much as the science does.
 
@@ -46,11 +46,11 @@ Where a scale-up's AI team optimises for iteration speed, a research-adjacent em
 
 ## Why This Segment Rarely Shows Up in a Generic Job Search
 
-Research-adjacent employers recruit differently than product companies — through academic networks, institutional postings, and word of mouth — long before a role reaches a general job board. A candidate relying only on keyword search sees a market that looks thinner than it is, because the recruiting channel itself is different, not because the roles don't exist.
+Research-adjacent employers recruit differently than product companies - through academic networks, institutional postings, and word of mouth - long before a role reaches a general job board. A candidate relying only on keyword search sees a market that looks thinner than it is, because the recruiting channel itself is different, not because the roles don't exist.
 
 ## The Entity Landscape: Research-Adjacent Employers in Nijmegen
 
-**University-affiliated medical and cognitive research groups** form the backbone of this market. These groups typically operate on multi-year grant cycles, hire for specific sub-specializations (a particular imaging modality, a particular class of language model), and recruit through academic conferences and institutional postings well before — sometimes instead of — a public job board listing.
+**University-affiliated medical and cognitive research groups** form the backbone of this market. These groups typically operate on multi-year grant cycles, hire for specific sub-specializations (a particular imaging modality, a particular class of language model), and recruit through academic conferences and institutional postings well before - sometimes instead of - a public job board listing.
 
 **Hospital data and clinical informatics teams** sit adjacent to the research groups but answer to clinical governance rather than academic publication pressure, which means the evaluation standard shifts from "is this reproducible and publishable" to "is this safe enough to inform a clinical decision."
 
@@ -72,7 +72,7 @@ Candidates coming from fast-iteration product environments sometimes read Nijmeg
 
 ## A Walkthrough: How a Research-Adjacent Role Actually Gets Filled
 
-A typical Nijmegen research-adjacent hire starts well before any job posting exists. A professor's grant proposal is funded, specifying a particular research direction — say, a specific approach to modeling cognitive processes from behavioral data. The professor then recruits for the position primarily through their existing academic network: former students, conference contacts, collaborators at other institutions who might know a suitable candidate. A public job board posting, if it appears at all, often comes after these informal channels have already been exhausted, functioning more as a formality to satisfy institutional hiring requirements than as the primary recruitment channel. For a candidate, this means that by the time you see a posting, the timeline for that specific grant-funded position may already be tight, and your best strategy for future opportunities is building visibility within the relevant academic community well before you need a job, not waiting for postings to appear.
+A typical Nijmegen research-adjacent hire starts well before any job posting exists. A professor's grant proposal is funded, specifying a particular research direction - say, a specific approach to modeling cognitive processes from behavioral data. The professor then recruits for the position primarily through their existing academic network: former students, conference contacts, collaborators at other institutions who might know a suitable candidate. A public job board posting, if it appears at all, often comes after these informal channels have already been exhausted, functioning more as a formality to satisfy institutional hiring requirements than as the primary recruitment channel. For a candidate, this means that by the time you see a posting, the timeline for that specific grant-funded position may already be tight, and your best strategy for future opportunities is building visibility within the relevant academic community well before you need a job, not waiting for postings to appear.
 
 ## A Misconception About the Pace of This Work
 
@@ -80,21 +80,21 @@ It's easy to assume that "slower pace" means "less demanding," but the opposite 
 
 ## Long-Term Career Implications of This Research-First Path
 
-Time spent in Nijmegen's research-adjacent ecosystem builds a specific kind of credibility — the ability to defend a methodology under serious scrutiny — that transfers well to senior technical roles even outside academia, particularly at companies where AI decisions carry real regulatory or clinical stakes (healthcare, life sciences, increasingly any domain touched by the EU AI Act). Candidates sometimes worry that a research-heavy early career limits their options later; in practice, this background is frequently an asset precisely in the growing segment of the AI industry where defensibility and rigor matter as much as shipping speed.
+Time spent in Nijmegen's research-adjacent ecosystem builds a specific kind of credibility - the ability to defend a methodology under serious scrutiny - that transfers well to senior technical roles even outside academia, particularly at companies where AI decisions carry real regulatory or clinical stakes (healthcare, life sciences, increasingly any domain touched by the EU AI Act). Candidates sometimes worry that a research-heavy early career limits their options later; in practice, this background is frequently an asset precisely in the growing segment of the AI industry where defensibility and rigor matter as much as shipping speed.
 
 ## What Sets Apart Candidates Who Thrive in This Environment
 
-Beyond technical competence, candidates who do well in Nijmegen's research-adjacent market tend to share a specific comfort with methodological scrutiny that's different from what a fast-moving product environment selects for. In a peer-review-adjacent culture, having your approach questioned in detail — sometimes repeatedly, sometimes by someone more senior specifically probing for weaknesses — is a normal, expected part of the process rather than a sign that something has gone wrong. Candidates who interpret this kind of scrutiny personally, as criticism of their competence rather than as the standard mechanism by which research quality gets maintained, often struggle here regardless of their underlying technical skill. Conversely, candidates who've developed genuine comfort defending a specific methodological choice under direct, detailed questioning — whether from an academic background or simply from personal disposition — tend to find this market's culture a natural fit rather than a stressful adjustment.
+Beyond technical competence, candidates who do well in Nijmegen's research-adjacent market tend to share a specific comfort with methodological scrutiny that's different from what a fast-moving product environment selects for. In a peer-review-adjacent culture, having your approach questioned in detail - sometimes repeatedly, sometimes by someone more senior specifically probing for weaknesses - is a normal, expected part of the process rather than a sign that something has gone wrong. Candidates who interpret this kind of scrutiny personally, as criticism of their competence rather than as the standard mechanism by which research quality gets maintained, often struggle here regardless of their underlying technical skill. Conversely, candidates who've developed genuine comfort defending a specific methodological choice under direct, detailed questioning - whether from an academic background or simply from personal disposition - tend to find this market's culture a natural fit rather than a stressful adjustment.
 
 ## How Publication and Output Expectations Differ From Industry Norms
 
-A meaningful difference candidates should understand before entering this market: research-adjacent roles often carry an explicit or implicit expectation of eventual publication or public presentation of results, in a way that most industry data science roles don't. This isn't merely an academic formality — it means your work is built, from the outset, with a level of rigor and documentation sufficient to survive external scrutiny by people who weren't part of your original team and have no institutional incentive to be generous in their assessment. This standard shapes the entire working process, from how experiments are logged to how negative results are handled, in ways that candidates coming from a "ship and iterate" industry background sometimes find initially unfamiliar but, over time, often come to value as a genuinely useful discipline that improves the quality of their work even after they eventually move to less publication-driven roles.
+A meaningful difference candidates should understand before entering this market: research-adjacent roles often carry an explicit or implicit expectation of eventual publication or public presentation of results, in a way that most industry data science roles don't. This isn't merely an academic formality - it means your work is built, from the outset, with a level of rigor and documentation sufficient to survive external scrutiny by people who weren't part of your original team and have no institutional incentive to be generous in their assessment. This standard shapes the entire working process, from how experiments are logged to how negative results are handled, in ways that candidates coming from a "ship and iterate" industry background sometimes find initially unfamiliar but, over time, often come to value as a genuinely useful discipline that improves the quality of their work even after they eventually move to less publication-driven roles.
 
 ## The Institutions Behind "Research-First", by Name
 
 The research tradition this article describes is concentrated in a small number of institutions, most of them on or near the same campus in the south of the city.
 
-**Radboud University.** Nijmegen's university has offered Artificial Intelligence as a degree programme for decades, with an unusually strong orientation towards cognition, language and human behaviour rather than purely engineering-driven AI. Its Institute for Computing and Information Sciences (iCIS) covers machine learning, data science, software science and digital security — the latter a well-known Radboud strength.
+**Radboud University.** Nijmegen's university has offered Artificial Intelligence as a degree programme for decades, with an unusually strong orientation towards cognition, language and human behaviour rather than purely engineering-driven AI. Its Institute for Computing and Information Sciences (iCIS) covers machine learning, data science, software science and digital security - the latter a well-known Radboud strength.
 
 **Donders Institute for Brain, Cognition and Behaviour.** One of the largest cognitive neuroscience research institutes in Europe, spanning Radboud University and Radboudumc. Its work on brain imaging, neural computation and cognitive modelling generates data-intensive research-engineering roles in signal processing, neuroimaging analysis and computational modelling.
 
@@ -104,7 +104,7 @@ The research tradition this article describes is concentrated in a small number 
 
 **HAN University of Applied Sciences.** With campuses in Nijmegen and Arnhem, the HAN trains applied ICT, health and engineering professionals and runs applied research programmes with regional healthcare and industry partners.
 
-**Novio Tech Campus.** An innovation campus in Nijmegen focused on health technology and semiconductors, hosting start-ups and scale-ups in medical devices, diagnostics and chip technology — a natural home for small AI teams spun out of the region's research base.
+**Novio Tech Campus.** An innovation campus in Nijmegen focused on health technology and semiconductors, hosting start-ups and scale-ups in medical devices, diagnostics and chip technology - a natural home for small AI teams spun out of the region's research base.
 
 ## Regulation That Shapes Health-Data AI Work in Nijmegen
 
@@ -117,7 +117,7 @@ Candidates coming from consumer ML are often surprised by how much of the engine
 | **AVG (GDPR)** | Personal data, with health data as a special category | Strict legal bases, data minimisation, pseudonymisation and data protection impact assessments |
 | **WMO (Medical Research Involving Human Subjects Act)** | Medical research involving human participants | Research protocols may require review by a medical research ethics committee (METC) before data collection |
 
-The practical consequence is that the "slower pace" discussed above is often a regulatory reality rather than an organisational preference. An engineer who understands these frameworks can move faster within them — which is exactly why that understanding is valued in interviews.
+The practical consequence is that the "slower pace" discussed above is often a regulatory reality rather than an organisational preference. An engineer who understands these frameworks can move faster within them - which is exactly why that understanding is valued in interviews.
 
 ## Academic Employment Conditions and Where Vacancies Appear
 
@@ -153,13 +153,13 @@ Browse current AI, machine learning and data vacancies in and around Nijmegen at
 Both exist, and they're closely linked. The region's research tradition in health and cognitive science produces spinouts and applied groups with real commercial or clinical applications, even though the roles often carry research-style rigor and evaluation standards.
 
 ### (Scenario: engineer used to fast iteration cycles) How is health-data or cognitive-science AI work different from product-company ML?
-The pace is slower and the evaluation criteria are stricter — reproducibility, peer-reviewable results, and governance around sensitive data matter more than shipping speed. It suits candidates who value depth over velocity.
+The pace is slower and the evaluation criteria are stricter - reproducibility, peer-reviewable results, and governance around sensitive data matter more than shipping speed. It suits candidates who value depth over velocity.
 
 ### (Scenario: candidate who searched and found few listings) Why does this segment look smaller on a general job search than it probably is?
 Research-adjacent employers often recruit through academic networks and institutional channels before a role ever reaches a general job board, so keyword search underrepresents the actual size of the market.
 
 ### (Scenario: candidate wondering about career trajectory) Where does a research-adjacent AI role in Nijmegen typically lead?
-Often toward specialist research or applied-science roles rather than general product engineering — a different trajectory than the one most Randstad scale-up roles offer, and worth choosing deliberately rather than by default.
+Often toward specialist research or applied-science roles rather than general product engineering - a different trajectory than the one most Randstad scale-up roles offer, and worth choosing deliberately rather than by default.
 
 ### (Scenario: candidate deciding how to search) How should I search for these roles given they're rarely titled "AI"?
 Filter by category rather than by job title, and treat "Data Analist," "Onderzoeker" or discipline-specific titles as worth checking even when they don't mention AI explicitly.
@@ -170,7 +170,7 @@ Filter by category rather than by job title, and treat "Data Analist," "Onderzoe
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Is AI work in Nijmegen mostly academic, or is there commercial demand too?", "acceptedAnswer": {"@type": "Answer", "text": "Both exist and are closely linked. The region's research tradition in health and cognitive science produces spinouts and applied groups with real commercial or clinical applications, even with research-style rigor."}},
-    {"@type": "Question", "name": "How is health-data or cognitive-science AI work different from product-company ML?", "acceptedAnswer": {"@type": "Answer", "text": "The pace is slower and evaluation criteria stricter — reproducibility, peer-reviewable results, and governance around sensitive data matter more than shipping speed."}},
+    {"@type": "Question", "name": "How is health-data or cognitive-science AI work different from product-company ML?", "acceptedAnswer": {"@type": "Answer", "text": "The pace is slower and evaluation criteria stricter - reproducibility, peer-reviewable results, and governance around sensitive data matter more than shipping speed."}},
     {"@type": "Question", "name": "Why does this segment look smaller on a general job search than it probably is?", "acceptedAnswer": {"@type": "Answer", "text": "Research-adjacent employers often recruit through academic networks and institutional channels before a role reaches a general job board, so keyword search underrepresents the market."}},
     {"@type": "Question", "name": "Where does a research-adjacent AI role in Nijmegen typically lead?", "acceptedAnswer": {"@type": "Answer", "text": "Often toward specialist research or applied-science roles rather than general product engineering."}},
     {"@type": "Question", "name": "How should I search for these roles given they're rarely titled \"AI\"?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category rather than by job title, and treat 'Data Analist,' 'Onderzoeker' or discipline-specific titles as worth checking even without the word AI."}}

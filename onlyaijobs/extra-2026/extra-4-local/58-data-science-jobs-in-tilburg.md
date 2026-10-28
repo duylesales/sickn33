@@ -42,7 +42,7 @@ Content Format: Regional Career Guide
 }
 </script>
 
-Tilburg is one of Noord-Brabant's largest cities and a university town with a strong profile in economics, social sciences and data science. It is also a major logistics hub, the home of large health and insurance organisations and a city that has transformed its former railway workshops into a centre for innovation and culture. For students and recent graduates, data science jobs in Tilburg span insurance and financial services, logistics, public organisations, human-centred AI and startups — and Eindhoven, 's-Hertogenbosch and Breda are all within half an hour. This guide explains where to look and why Tilburg graduates don't need to move to the Randstad to start a strong data career.
+Tilburg is one of Noord-Brabant's largest cities and a university town with a strong profile in economics, social sciences and data science. It is also a major logistics hub, the home of large health and insurance organisations and a city that has transformed its former railway workshops into a centre for innovation and culture. For students and recent graduates, data science jobs in Tilburg span insurance and financial services, logistics, public organisations, human-centred AI and startups - and Eindhoven, 's-Hertogenbosch and Breda are all within half an hour. This guide explains where to look and why Tilburg graduates don't need to move to the Randstad to start a strong data career.
 
 OnlyAIJobs started in Noord-Brabant, where its founders saw that many graduates left for the Randstad because they didn't know local employers. Tilburg is a clear example of a city where the jobs exist but often go unnoticed.
 
@@ -54,7 +54,7 @@ Fontys University of Applied Sciences has campuses in Tilburg and elsewhere in B
 
 ## MindLabs and the Spoorzone
 
-The Spoorzone, Tilburg's redeveloped railway zone, has become a hub for education, culture and innovation, with the LocHal — a former locomotive hall turned library and meeting place — as its landmark. MindLabs, located in the Spoorzone, is a collaboration of knowledge institutions, companies and government focused on human-centred AI, interactive technology and behavioural science. It offers a meeting point for students, researchers and companies interested in AI that understands and supports people.
+The Spoorzone, Tilburg's redeveloped railway zone, has become a hub for education, culture and innovation, with the LocHal - a former locomotive hall turned library and meeting place - as its landmark. MindLabs, located in the Spoorzone, is a collaboration of knowledge institutions, companies and government focused on human-centred AI, interactive technology and behavioural science. It offers a meeting point for students, researchers and companies interested in AI that understands and supports people.
 
 ## Where Data Science Jobs in Tilburg Are Found
 
@@ -66,7 +66,7 @@ The Spoorzone, Tilburg's redeveloped railway zone, has become a hub for educatio
 
 **Healthcare.** Hospitals and healthcare organisations in the region use data for capacity planning, quality and research.
 
-**Startups and consultancies.** Data consultancies, software companies and startups — some linked to MindLabs and the universities — work on analytics, AI applications and digital services.
+**Startups and consultancies.** Data consultancies, software companies and startups - some linked to MindLabs and the universities - work on analytics, AI applications and digital services.
 
 | Employer type | Typical entry roles | What you learn |
 |---|---|---|
@@ -79,7 +79,7 @@ The Spoorzone, Tilburg's redeveloped railway zone, has become a hub for educatio
 
 ## Searching by Distance in Brabant
 
-Tilburg sits in the middle of a dense network of Brabant cities. By train, Eindhoven's high-tech sector, 's-Hertogenbosch with JADS and public organisations, and Breda with logistics and games are all within roughly 15 to 35 minutes. This makes the whole province part of a Tilburg graduate's job market. Searching by category and distance from your home, rather than by title and city name, reveals employers that students often overlook — exactly the approach OnlyAIJobs was built around. OnlyAIJobs already lists vacancies in the region, including in Eindhoven.
+Tilburg sits in the middle of a dense network of Brabant cities. By train, Eindhoven's high-tech sector, 's-Hertogenbosch with JADS and public organisations, and Breda with logistics and games are all within roughly 15 to 35 minutes. This makes the whole province part of a Tilburg graduate's job market. Searching by category and distance from your home, rather than by title and city name, reveals employers that students often overlook - exactly the approach OnlyAIJobs was built around. OnlyAIJobs already lists vacancies in the region, including in Eindhoven.
 
 ## How OnlyAIJobs Works for a Tilburg Search
 
@@ -93,7 +93,7 @@ Health insurers occupy a special place in the Dutch healthcare system: they purc
 
 ## Logistics Data Science
 
-The Tilburg–Waalwijk logistics region handles goods flows for retailers and manufacturers across Europe. Distribution centres use data to forecast order volumes, plan staff, optimise picking routes and slotting, and coordinate automation. Transport companies optimise routes, loads and multimodal connections via rail and inland waterways. Logistics data roles are accessible for graduates, offer rapid responsibility and produce measurable results — improvements in forecasting or planning show up directly in costs, service levels and emissions.
+The Tilburg–Waalwijk logistics region handles goods flows for retailers and manufacturers across Europe. Distribution centres use data to forecast order volumes, plan staff, optimise picking routes and slotting, and coordinate automation. Transport companies optimise routes, loads and multimodal connections via rail and inland waterways. Logistics data roles are accessible for graduates, offer rapid responsibility and produce measurable results - improvements in forecasting or planning show up directly in costs, service levels and emissions.
 
 ## Human-Centred AI and Language Technology
 
@@ -127,9 +127,9 @@ Tilburg is an energetic, affordable student city with a lively centre, festivals
 
 ## Your First Two Years
 
-Build strong foundations in data engineering, modelling and communication, choose a domain to deepen — insurance, logistics, public services or language technology — and invest in Dutch if you plan to stay. Keep in touch with Tilburg University, JADS and MindLabs, whose networks connect you with employers across Brabant.
+Build strong foundations in data engineering, modelling and communication, choose a domain to deepen - insurance, logistics, public services or language technology - and invest in Dutch if you plan to stay. Keep in touch with Tilburg University, JADS and MindLabs, whose networks connect you with employers across Brabant.
 
-## Why Brabant Graduates Leave — and How to Avoid It
+## Why Brabant Graduates Leave - and How to Avoid It
 
 Many graduates leave Brabant because the employers they know by name are in the Randstad. Regional employers are less visible: they post vacancies in Dutch, use titles such as "data-analist" or "BI-specialist" and rarely appear at national career fairs. The fix is simple. Search by category and distance from your home; read vacancy descriptions rather than titles; ask your university's career service for regional employers; and attend events where Brabant companies present their data work. Graduates who do this often find that the most interesting role for them is within a short bike or train ride.
 
@@ -139,11 +139,11 @@ Dutch packages usually include a holiday allowance of around eight percent, pens
 
 ## A Weekly Search Routine
 
-Set your home address, review new AI and data vacancies within your commuting radius weekly, search in Dutch and English and keep a list of regional employers you would like to work for. Contact them directly — regional organisations appreciate proactive interest.
+Set your home address, review new AI and data vacancies within your commuting radius weekly, search in Dutch and English and keep a list of regional employers you would like to work for. Contact them directly - regional organisations appreciate proactive interest.
 
 ## Preparing for Interviews
 
-Interviews for junior data roles in Tilburg usually include a conversation about motivation, a technical interview on statistics, programming and ML, and often a case linked to the employer's domain — for example estimating healthcare costs, forecasting warehouse volumes or evaluating a chatbot. Public organisations and insurers may ask about ethics and privacy. Prepare by explaining your thesis clearly, including limitations. Dutch interviewers value directness and honest reflection, and salary is often discussed early, so research typical pay scales beforehand.
+Interviews for junior data roles in Tilburg usually include a conversation about motivation, a technical interview on statistics, programming and ML, and often a case linked to the employer's domain - for example estimating healthcare costs, forecasting warehouse volumes or evaluating a chatbot. Public organisations and insurers may ask about ethics and privacy. Prepare by explaining your thesis clearly, including limitations. Dutch interviewers value directness and honest reflection, and salary is often discussed early, so research typical pay scales beforehand.
 
 ## Networking in Brabant
 
@@ -151,7 +151,7 @@ Tilburg University, Fontys and MindLabs host regular events, and data meetups in
 
 ## Public Sector Data and Responsible Algorithms
 
-The Dutch public sector has become one of Europe's most active in responsible algorithm use, partly in response to past problems with automated decision-making that caused serious harm to citizens. Municipalities and public organisations now use algorithm registers, impact assessments and ethical review, and the EU AI Act classifies many public-sector uses — such as decisions about access to essential services — as high-risk. For Tilburg graduates, this creates meaningful roles: analysing data to support social services, mobility and housing policy, evaluating algorithms for fairness and documenting systems transparently. Tilburg University's strengths in law, ethics and social sciences give its graduates a natural advantage in these roles, and the work offers a direct connection between data science and the well-being of residents.
+The Dutch public sector has become one of Europe's most active in responsible algorithm use, partly in response to past problems with automated decision-making that caused serious harm to citizens. Municipalities and public organisations now use algorithm registers, impact assessments and ethical review, and the EU AI Act classifies many public-sector uses - such as decisions about access to essential services - as high-risk. For Tilburg graduates, this creates meaningful roles: analysing data to support social services, mobility and housing policy, evaluating algorithms for fairness and documenting systems transparently. Tilburg University's strengths in law, ethics and social sciences give its graduates a natural advantage in these roles, and the work offers a direct connection between data science and the well-being of residents.
 
 ## Startups and Consultancies
 

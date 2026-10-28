@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-Most junior hires spend their first 90 days trying to prove technical competence — shipping code, building models, demonstrating what they learned in school. That instinct is understandable, but it's usually not what actually determines how the first quarter is judged internally.
+Most junior hires spend their first 90 days trying to prove technical competence - shipping code, building models, demonstrating what they learned in school. That instinct is understandable, but it's usually not what actually determines how the first quarter is judged internally.
 
 ## What Actually Gets Noticed in the First 90 Days
 
@@ -51,7 +51,7 @@ A technically correct piece of work delivered without context, communication or 
 
 ## A Deeper Look at Why Timing Judgment Is So Hard to Self-Assess
 
-New hires consistently misjudge their own timing in two opposite directions: some ask too many questions too early, before attempting anything themselves, and read as unable to work independently; others ask too few, out of fear of seeming incompetent, and waste days on a wrong approach that a five-minute question would have corrected. The actual skill isn't "ask more" or "ask less" — it's calibrating to a specific threshold: have you spent a reasonable, bounded amount of time trying on your own, and does the blocker genuinely require someone else's context to resolve?
+New hires consistently misjudge their own timing in two opposite directions: some ask too many questions too early, before attempting anything themselves, and read as unable to work independently; others ask too few, out of fear of seeming incompetent, and waste days on a wrong approach that a five-minute question would have corrected. The actual skill isn't "ask more" or "ask less" - it's calibrating to a specific threshold: have you spent a reasonable, bounded amount of time trying on your own, and does the blocker genuinely require someone else's context to resolve?
 
 ## A Practical Timing Framework for the First 90 Days
 
@@ -60,7 +60,7 @@ New hires consistently misjudge their own timing in two opposite directions: som
 | Stuck on something for under 30 minutes, no clear next step | Try one or two more approaches before asking |
 | Stuck for over an hour with no progress | Ask, with a clear description of what you've already tried |
 | Uncertain whether an approach matches team conventions | Ask before investing significant time, not after |
-| Genuinely unsure if a task is even the right priority | Ask immediately — this isn't a technical question, it's a scope question |
+| Genuinely unsure if a task is even the right priority | Ask immediately - this isn't a technical question, it's a scope question |
 
 ## Why the Team's Response to Your Questions Tells You Something Too
 
@@ -70,31 +70,31 @@ How a team responds to a new hire's early questions is itself useful information
 
 Describing the first 90 days in general terms obscures how the phases differ, and a more granular picture helps new hires calibrate whether their experience is normal.
 
-The first two weeks are almost entirely about access and orientation, and new hires frequently mistake the slowness of this phase for a problem. Getting credentials for the systems you need, understanding where data actually lives, learning who owns what, and mapping the informal structure of who to ask about what — this consumes far more of the first fortnight than most people expect, particularly in the industrial and institutional contexts described throughout this site where data access involves more approvals than in a typical software company.
+The first two weeks are almost entirely about access and orientation, and new hires frequently mistake the slowness of this phase for a problem. Getting credentials for the systems you need, understanding where data actually lives, learning who owns what, and mapping the informal structure of who to ask about what - this consumes far more of the first fortnight than most people expect, particularly in the industrial and institutional contexts described throughout this site where data access involves more approvals than in a typical software company.
 
 Weeks three through six are typically where a first small piece of real work appears. The most common mistake in this window is over-scoping: taking on something ambitious to demonstrate capability, and then spending weeks without visible progress. The stronger move is completing something modest and useful quickly, which establishes that you deliver and buys credibility for larger work later.
 
-Weeks seven through twelve are where you begin to develop independent judgement about the specific context — which data sources are reliable, which stakeholders need what kind of communication, where the organisation's real constraints lie. This is also typically when new hires start noticing things that could be improved, and when the timing question discussed elsewhere in this article becomes practically important: raising an improvement before you understand why the current approach exists reads differently than raising it after.
+Weeks seven through twelve are where you begin to develop independent judgement about the specific context - which data sources are reliable, which stakeholders need what kind of communication, where the organisation's real constraints lie. This is also typically when new hires start noticing things that could be improved, and when the timing question discussed elsewhere in this article becomes practically important: raising an improvement before you understand why the current approach exists reads differently than raising it after.
 
 ## How to Ask Questions Without Undermining Yourself
 
 Since question-asking is central to the first 90 days, it deserves more specific treatment than the general advice to ask early.
 
-The form of a question matters as much as its timing. "I don't understand this" invites a general explanation and signals little about your own effort. "I've been trying to reconcile these two tables and I think the mismatch comes from the timestamp handling — is that right, or am I missing something?" demonstrates that you engaged seriously before asking, narrows what the other person needs to explain, and frequently gets a faster and more useful answer.
+The form of a question matters as much as its timing. "I don't understand this" invites a general explanation and signals little about your own effort. "I've been trying to reconcile these two tables and I think the mismatch comes from the timestamp handling - is that right, or am I missing something?" demonstrates that you engaged seriously before asking, narrows what the other person needs to explain, and frequently gets a faster and more useful answer.
 
 Batching questions helps considerably in environments where your colleagues are frequently in meetings or focused work. Keeping a running list and raising several at once, rather than interrupting repeatedly through a day, respects other people's attention and produces better conversations than a series of fragmentary exchanges.
 
 Knowing who to ask matters as much as what to ask. Technical questions about the codebase go to different people than questions about why a business rule exists, and new hires who route questions well are noticed for it. Building a mental map of who knows what, early, is one of the higher-return activities of the first weeks.
 
-Finally, closing the loop is underrated. Reporting back briefly on what you did with an answer — that it worked, or that it revealed a further complication — makes people more willing to help next time and demonstrates that their time produced something.
+Finally, closing the loop is underrated. Reporting back briefly on what you did with an answer - that it worked, or that it revealed a further complication - makes people more willing to help next time and demonstrates that their time produced something.
 
 ## Understanding the Team Before Proposing Changes
 
 New hires with strong technical backgrounds frequently arrive with observations about what could be better, and the handling of those observations shapes early reputation more than almost anything else.
 
-The reason a seemingly obvious improvement has not been made is usually one of three things: a constraint you cannot see, a previous attempt that failed for reasons that are not documented, or a genuine oversight. All three are common, and the ratio is not what most new hires assume — the third is rarer than it appears from the outside.
+The reason a seemingly obvious improvement has not been made is usually one of three things: a constraint you cannot see, a previous attempt that failed for reasons that are not documented, or a genuine oversight. All three are common, and the ratio is not what most new hires assume - the third is rarer than it appears from the outside.
 
-The productive approach is to frame observations as questions rather than proposals during the first weeks. "I noticed we're doing X rather than Y — is there history there?" invites the constraint or the previous attempt to surface, and if the answer turns out to be that nobody had considered it, you have now made the proposal in a way that costs nothing and takes no position you would need to retreat from.
+The productive approach is to frame observations as questions rather than proposals during the first weeks. "I noticed we're doing X rather than Y - is there history there?" invites the constraint or the previous attempt to surface, and if the answer turns out to be that nobody had considered it, you have now made the proposal in a way that costs nothing and takes no position you would need to retreat from.
 
 This is not about being deferential for its own sake. It is that a proposal made without understanding the constraints frequently has to be withdrawn once they emerge, and a new hire who withdraws several proposals in their first month has spent credibility they will want later for a proposal that is actually right.
 
@@ -122,7 +122,7 @@ The second adaptation is to establish external technical relationships early, si
 
 Not every start goes well, and a new hire who recognises problems early has considerably more room to correct course than one who waits for a formal review to surface them.
 
-The most common recoverable problem is a mismatch between what you were told the role involved and what you are actually doing. If eight weeks in you are doing work substantially different from what was described, raising this directly — framed as seeking clarity rather than as a complaint — is far more productive than absorbing it silently. Roles frequently drift for organisational reasons that have nothing to do with you, and managers are often unaware of how the gap looks from your side.
+The most common recoverable problem is a mismatch between what you were told the role involved and what you are actually doing. If eight weeks in you are doing work substantially different from what was described, raising this directly - framed as seeking clarity rather than as a complaint - is far more productive than absorbing it silently. Roles frequently drift for organisational reasons that have nothing to do with you, and managers are often unaware of how the gap looks from your side.
 
 A second recoverable problem is insufficient access or support. If you are blocked on something and the blockage has persisted for more than a week or two, escalating is appropriate rather than presumptuous. New hires frequently interpret persistent blockers as a test of resourcefulness when they are usually just an oversight nobody has noticed.
 
@@ -163,26 +163,26 @@ Sharing a plan like this in your first week signals exactly the proactive, trans
 
 ## Where to Start
 
-In your first 90 days, prioritize asking questions early, understanding existing systems before proposing changes, and sharing progress incrementally — technical skill is necessary, but these habits are what actually get evaluated most closely in a new role.
+In your first 90 days, prioritize asking questions early, understanding existing systems before proposing changes, and sharing progress incrementally - technical skill is necessary, but these habits are what actually get evaluated most closely in a new role.
 
 Browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: new hire focused entirely on technical output) Should I focus mainly on proving my technical skill in my first 90 days?
-Technical skill matters, but it's usually not the main thing being evaluated — asking questions at the right time, understanding existing systems, and sharing progress incrementally tend to matter more.
+Technical skill matters, but it's usually not the main thing being evaluated - asking questions at the right time, understanding existing systems, and sharing progress incrementally tend to matter more.
 
 ### (Scenario: new hire hesitant to ask questions) Will asking questions early make me look less capable?
-Generally the opposite — asking a clarifying question before spending days on a wrong approach is valued more than working silently and producing the wrong thing.
+Generally the opposite - asking a clarifying question before spending days on a wrong approach is valued more than working silently and producing the wrong thing.
 
 ### (Scenario: new hire eager to suggest improvements immediately) Should I propose improvements to the existing system right away?
-Understand why the current approach exists first — suggesting changes before that understanding reads as inexperience, even when the suggestion has technical merit.
+Understand why the current approach exists first - suggesting changes before that understanding reads as inexperience, even when the suggestion has technical merit.
 
 ### (Scenario: new hire planning to deliver a polished final product) Is it better to disappear and deliver a polished final result, or share progress along the way?
 Sharing rough intermediate progress is generally received better than a silent, big-bang delivery, even if the final result is technically impressive.
 
 ### (Scenario: new hire wondering what actually gets judged) What's actually being evaluated in the first 90 days of a junior role?
-A combination of judgment about timing (when to ask, when to share) and technical competence — judgment is often weighted more heavily than most new hires expect.
+A combination of judgment about timing (when to ask, when to share) and technical competence - judgment is often weighted more heavily than most new hires expect.
 
 <script type="application/ld+json">
 {
@@ -190,8 +190,8 @@ A combination of judgment about timing (when to ask, when to share) and technica
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Should I focus mainly on proving my technical skill in my first 90 days?", "acceptedAnswer": {"@type": "Answer", "text": "Technical skill matters, but asking questions at the right time and sharing progress incrementally tend to matter more."}},
-    {"@type": "Question", "name": "Will asking questions early make me look less capable?", "acceptedAnswer": {"@type": "Answer", "text": "Generally the opposite — a clarifying question before a wrong approach is valued more than silent work leading to a wrong result."}},
-    {"@type": "Question", "name": "Should I propose improvements to the existing system right away?", "acceptedAnswer": {"@type": "Answer", "text": "Understand why the current approach exists first — early suggestions read as inexperience even with technical merit."}},
+    {"@type": "Question", "name": "Will asking questions early make me look less capable?", "acceptedAnswer": {"@type": "Answer", "text": "Generally the opposite - a clarifying question before a wrong approach is valued more than silent work leading to a wrong result."}},
+    {"@type": "Question", "name": "Should I propose improvements to the existing system right away?", "acceptedAnswer": {"@type": "Answer", "text": "Understand why the current approach exists first - early suggestions read as inexperience even with technical merit."}},
     {"@type": "Question", "name": "Is it better to disappear and deliver a polished final result, or share progress along the way?", "acceptedAnswer": {"@type": "Answer", "text": "Sharing rough intermediate progress is generally received better than a silent, big-bang delivery."}},
     {"@type": "Question", "name": "What's actually being evaluated in the first 90 days of a junior role?", "acceptedAnswer": {"@type": "Answer", "text": "A combination of judgment about timing and technical competence, with judgment often weighted more heavily."}}
   ]

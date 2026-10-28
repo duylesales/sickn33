@@ -1,4 +1,4 @@
-🌐 Tessa van Dijk runde Zorgmaatje in Lovable voor 9 thuiszorgorganisaties in Apeldoorn. Toen een regionaal zorgnetwerk wilde uitbreiden, eiste hun inkoopafdeling bewijs van aparte staging-omgevingen, geautomatiseerde rollbacks en Git-codebasebeheer — opties die de standaard Lovable preview-hosting niet biedt. 😳
+🌐 Tessa van Dijk runde Zorgmaatje in Lovable voor 9 thuiszorgorganisaties in Apeldoorn. Toen een regionaal zorgnetwerk wilde uitbreiden, eiste hun inkoopafdeling bewijs van aparte staging-omgevingen, geautomatiseerde rollbacks en Git-codebasebeheer - opties die de standaard Lovable preview-hosting niet biedt. 😳
 
 Standaard preview-hosting is ideaal voor concepten, maar ongeschikt voor professioneel beheer. De verschillen met Vercel en Netlify:
 

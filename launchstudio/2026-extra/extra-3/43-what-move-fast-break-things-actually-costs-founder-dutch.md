@@ -55,7 +55,7 @@ Niets hiervan is een pleidooi voor een cultuur van overmatige voorzichtigheid of
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt oprichtersteams bij het bewust onderzoeken en afstellen van hun eigen culturele standaarden rond snelheid en verificatie, in plaats van het overerven van een ononderzochte filosofie uit een oprecht andere context van een ander bedrijf. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van teams om een cultuur op te bouwen die echte snelheid op een gepaste manier balanceert met echte zorgvuldigheid.
 
-[Onderzoek of de snelheidscultuur van uw team daadwerkelijk past bij de echte belangen van uw team](https://launchstudio.eu/nl/#contact) — een overgeërfde filosofie is niet automatisch de juiste voor de specifieke situatie van een team van vijf personen.
+[Onderzoek of de snelheidscultuur van uw team daadwerkelijk past bij de echte belangen van uw team](https://launchstudio.eu/nl/#contact) - een overgeërfde filosofie is niet automatisch de juiste voor de specifieke situatie van een team van vijf personen.
 
 ## Een snelle zelftest: Is de snelheidscultuur van uw team al afgeweken?
 
@@ -84,9 +84,9 @@ Toen Robin later de noodzaak inzag om meer bewuste test- en beoordelingsdiscipli
 **Resultaat:** LaunchStudio hielp Robin de culturele verschuiving specifiek te herkaderen rond het onderscheid tussen omkeerbaar en onomkeerbaar, in plaats van snelheid volledig op te geven. Dit behield snelle iteratie bij oprecht omkeerbare beslissingen terwijl bewuste zorgvuldigheid specifiek werd geïntroduceerd voor de categorieën met hogere belangen. Dit herkaderen stuitte op aanzienlijk minder interne weerstand dan een ongedifferentieerde oproep om simpelweg "voorzichtiger te zijn" zou hebben gehad.
 
 > *"Ik had onze hele cultuur gebouwd rond een frase die ik had geleend zonder echt te onderzoeken of deze paste bij een team van vijf personen zoals het paste waar ik het oorspronkelijk hoorde. Het later introduceren van meer zorgvuldige beoordeling voelde voor een deel van mijn eigen team alsof ik alles tegensprak wat ik hen had verteld dat ertoe deed. Dat maakte een al noodzakelijke verandering moeilijker dan het hoefde te zijn."*
-> — **Robin Aarsen, Oprichter, FlexPlan (Nijmegen)**
+> - **Robin Aarsen, Oprichter, FlexPlan (Nijmegen)**
 
-**Kosten en tijdlijn:** € 1.100 (consultatie over cultuur en proces van productiegereedheid, samen met technische verharding) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (consultatie over cultuur en proces van productiegereedheid, samen met technische verharding) - voltooid in 5 werkdagen.
 
 ---
 
@@ -138,7 +138,7 @@ Gerelateerd maar afzonderlijk – die richtlijnen behandelen waarom een individu
       "name": "Is weerstand tegen latere discipline een gebruikelijk patroon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een gebruikelijk patroon — gevestigde cultuur creëert traagheid, waardoor latere koerscorrectie meer wrijving geeft."
+        "text": "Een gebruikelijk patroon - gevestigde cultuur creëert traagheid, waardoor latere koerscorrectie meer wrijving geeft."
       }
     },
     {

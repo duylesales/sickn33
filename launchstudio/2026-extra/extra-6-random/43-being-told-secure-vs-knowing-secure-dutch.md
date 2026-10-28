@@ -11,7 +11,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Het verschil tussen te horen krijgen dat het 'veilig' is en weten dat het veilig is",
-  "description": "Een opiniestuk over waarom een ai secure-label in uw bouwtool u bijna niets vertelt over of uw product daadwerkelijk veilig is om te lanceren — en wat oprichters in plaats daarvan zouden moeten vragen.",
+  "description": "Een opiniestuk over waarom een ai secure-label in uw bouwtool u bijna niets vertelt over of uw product daadwerkelijk veilig is om te lanceren - en wat oprichters in plaats daarvan zouden moeten vragen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
@@ -27,13 +27,13 @@ Die kloof tussen te horen krijgen dat iets ai secure is en het daadwerkelijk wet
 
 Beveiliging is geen enkele eigenschap. Het is een lange lijst van specifieke, apart verifieerbare claims: gegevens versleuteld tijdens transport, gegevens versleuteld in rust, wachtwoorden gehasht in plaats van in platte tekst opgeslagen, toegang correct afgebakend zodat de ene gebruiker de gegevens van een andere niet kan zien, afhankelijkheden vrij van bekende kwetsbaarheden, geheimen buiten de broncode gehouden. Een tool kan volledig eerlijk zijn wanneer hij zegt "uw gegevens zijn versleuteld", terwijl daarmee slechts één van die zes dingen wordt bedoeld.
 
-De oprichter die dat bericht leest, heeft geen manier om te weten welke daarvan wordt bedoeld. Dat is geen tekortkoming die uniek is voor een bepaalde AI-codeertool — het is een structureel probleem van het samenpersen van een technische, meerledige claim tot een geruststelling van twee woorden, gericht op iemand zonder de achtergrond om die uit te pakken.
+De oprichter die dat bericht leest, heeft geen manier om te weten welke daarvan wordt bedoeld. Dat is geen tekortkoming die uniek is voor een bepaalde AI-codeertool - het is een structureel probleem van het samenpersen van een technische, meerledige claim tot een geruststelling van twee woorden, gericht op iemand zonder de achtergrond om die uit te pakken.
 
 ## Een onderscheid dat geen reden heeft om intuïtief te zijn
 
-Julia Mertens, een oprichter in Renkum, bouwde KliniekAfspraak — een afsprakenapp voor een klein netwerk van klinieken — met Lovable. Op een gegeven moment vertelde de interface haar, botweg, dat haar gegevens versleuteld waren. Dat klopte. Het betekende alleen versleuteld tijdens transport — beschermd tijdens de beweging tussen de browsers van haar gebruikers en haar servers — niet versleuteld in rust, wat betekent onbeschermd zodra de gegevens in de database lagen.
+Julia Mertens, een oprichter in Renkum, bouwde KliniekAfspraak - een afsprakenapp voor een klein netwerk van klinieken - met Lovable. Op een gegeven moment vertelde de interface haar, botweg, dat haar gegevens versleuteld waren. Dat klopte. Het betekende alleen versleuteld tijdens transport - beschermd tijdens de beweging tussen de browsers van haar gebruikers en haar servers - niet versleuteld in rust, wat betekent onbeschermd zodra de gegevens in de database lagen.
 
-Er is geen reden waarom Julia had moeten weten dat ze moest vragen om welk type het ging. Niets aan de zin "uw gegevens zijn versleuteld" geeft aan dat die slechts de helft van het plaatje beschrijft. Dit is geen kritiek op haar oordeel. Het is precies het soort onderscheid dat pas duidelijk wordt zodra iemand met de juiste achtergrond het uitlegt — en tegen die tijd is het vaak al relevant, omdat er al echte patiëntafspraakgegevens in die database staan.
+Er is geen reden waarom Julia had moeten weten dat ze moest vragen om welk type het ging. Niets aan de zin "uw gegevens zijn versleuteld" geeft aan dat die slechts de helft van het plaatje beschrijft. Dit is geen kritiek op haar oordeel. Het is precies het soort onderscheid dat pas duidelijk wordt zodra iemand met de juiste achtergrond het uitlegt - en tegen die tijd is het vaak al relevant, omdat er al echte patiëntafspraakgegevens in die database staan.
 
 ## Wat "weten" er in de praktijk uitziet
 
@@ -43,11 +43,11 @@ Geen van deze vragen vereist dat de oprichter engineer wordt. Ze vereisen dat de
 
 ## Waarom dit specifiek meer betekent voor AI-native oprichters
 
-Oprichters die met AI-tools bouwen, bouwen per definitie vaak dingen die ze een paar jaar geleden niet alleen hadden kunnen bouwen — wat op zich echt goed is. Maar de tools die het bouwen toegankelijk maakten, maakten beveiliging niet ook leesbaar. De interface die u vertelt "versleuteld" laat u de versleuteling niet zien. De tool die "auth afhandelt" laat u niet zien wat er gebeurt als een token gestolen wordt. Het vertrouwen dat de interface uitstraalt en de daadwerkelijke staat van het systeem eronder zijn slechts losjes met elkaar verbonden, en oprichters zonder technische achtergrond hebben geen ingebouwde manier om die kloof aan te voelen.
+Oprichters die met AI-tools bouwen, bouwen per definitie vaak dingen die ze een paar jaar geleden niet alleen hadden kunnen bouwen - wat op zich echt goed is. Maar de tools die het bouwen toegankelijk maakten, maakten beveiliging niet ook leesbaar. De interface die u vertelt "versleuteld" laat u de versleuteling niet zien. De tool die "auth afhandelt" laat u niet zien wat er gebeurt als een token gestolen wordt. Het vertrouwen dat de interface uitstraalt en de daadwerkelijke staat van het systeem eronder zijn slechts losjes met elkaar verbonden, en oprichters zonder technische achtergrond hebben geen ingebouwde manier om die kloof aan te voelen.
 
-Dat is geen argument tegen het bouwen met AI-tools. Het is een argument om "er staat dat het veilig is" en "het is daadwerkelijk veilig" te behandelen als twee verschillende claims die twee verschillende soorten verificatie nodig hebben — één van de tool, één van iemand die gekwalificeerd is om het te controleren.
+Dat is geen argument tegen het bouwen met AI-tools. Het is een argument om "er staat dat het veilig is" en "het is daadwerkelijk veilig" te behandelen als twee verschillende claims die twee verschillende soorten verificatie nodig hebben - één van de tool, één van iemand die gekwalificeerd is om het te controleren.
 
-Onze technici, werkend vanuit Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort vertaalwerk — het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard, verfijnd over meer dan 160 opgeleverde projecten, naar dat vertaalwerk. Weet u niet zeker in welke categorie uw eigen product valt, dan kunt u [ons de link naar uw prototype sturen voor een gratis beoordeling van waar het staat](https://launchstudio.eu/nl/#contact).
+Onze technici, werkend vanuit Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort vertaalwerk - het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard, verfijnd over meer dan 160 opgeleverde projecten, naar dat vertaalwerk. Weet u niet zeker in welke categorie uw eigen product valt, dan kunt u [ons de link naar uw prototype sturen voor een gratis beoordeling van waar het staat](https://launchstudio.eu/nl/#contact).
 
 ## Zes Vragen Die Verder Gaan Dan 'Is Het Veilig?'
 
@@ -72,18 +72,18 @@ De antwoorden op deze zes vragen onthullen direct het verschil tussen een kwetsb
 
 ### Een AI-native oprichter in actie: de zin die de helft betekende van wat Julia dacht
 
-Julia Mertens had KliniekAfspraak gebouwd om een klein netwerk van klinieken patiëntafspraken te laten beheren zonder gejongleer met telefoontjes en papieren agenda's. De interface van Lovable stelde haar vroeg gerust dat gegevens versleuteld waren — een zin die ze, redelijkerwijs, opvatte als groen licht om verder te gaan met het onboarden van echte klinieken en echte patiëntendossiers.
+Julia Mertens had KliniekAfspraak gebouwd om een klein netwerk van klinieken patiëntafspraken te laten beheren zonder gejongleer met telefoontjes en papieren agenda's. De interface van Lovable stelde haar vroeg gerust dat gegevens versleuteld waren - een zin die ze, redelijkerwijs, opvatte als groen licht om verder te gaan met het onboarden van echte klinieken en echte patiëntendossiers.
 
-Toen LaunchStudio het project beoordeelde voorafgaand aan die onboarding, kwam het onderscheid meteen naar boven: de versleuteling waar Julia over verteld was, dekte alleen gegevens tijdens transport. Zodra afspraakgegevens van patiënten de database bereikten, lagen ze daar onversleuteld — leesbaar voor iedereen met directe databasetoegang, of dat nu via een verkeerd geconfigureerde integratie was, een gecompromitteerde inlogcode, of gewoon een over het hoofd geziene toestemmingsinstelling. Voor een systeem dat zorgafspraakgegevens verwerkt, was die lacune geen kleine technische voetnoot.
+Toen LaunchStudio het project beoordeelde voorafgaand aan die onboarding, kwam het onderscheid meteen naar boven: de versleuteling waar Julia over verteld was, dekte alleen gegevens tijdens transport. Zodra afspraakgegevens van patiënten de database bereikten, lagen ze daar onversleuteld - leesbaar voor iedereen met directe databasetoegang, of dat nu via een verkeerd geconfigureerde integratie was, een gecompromitteerde inlogcode, of gewoon een over het hoofd geziene toestemmingsinstelling. Voor een systeem dat zorgafspraakgegevens verwerkt, was die lacune geen kleine technische voetnoot.
 
-De technici van Manifera implementeerden versleuteling in rust in de hele database, beoordeelden per kliniek de toegangsrechten, en gaven Julia een samenvatting in gewone taal van precies wat er nu beschermd was en hoe — het soort specifiek antwoord dat "het is veilig" nooit eerder had gegeven.
+De technici van Manifera implementeerden versleuteling in rust in de hele database, beoordeelden per kliniek de toegangsrechten, en gaven Julia een samenvatting in gewone taal van precies wat er nu beschermd was en hoe - het soort specifiek antwoord dat "het is veilig" nooit eerder had gegeven.
 
 **Resultaat:** KliniekAfspraak verwerkt patiëntgegevens nu met versleuteling in beide fasen, en Julia heeft een schriftelijke uitleg die ze aan elke IT-contactpersoon van een kliniek kan overhandigen die ernaar vraagt.
 
 > *"Ik wist niet dat er een verschil was tot iemand het me uitlegde. Nu is het het eerste wat ik vraag bij alles wat ik bouw."*
-> — **Julia Mertens, oprichter, KliniekAfspraak (Renkum)**
+> - **Julia Mertens, oprichter, KliniekAfspraak (Renkum)**
 
-**Kosten en tijdlijn:** € 1.100 (implementatie versleuteling in rust en toegangsbeoordeling) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (implementatie versleuteling in rust en toegangsbeoordeling) - voltooid in 8 werkdagen.
 
 ---
 
@@ -95,7 +95,7 @@ Versleuteling tijdens transport beschermt gegevens terwijl ze zich verplaatsen t
 
 ### Waarom zou een AI-codeertool maar één type versleuteling noemen?
 
-Het is niet noodzakelijk opzettelijk misleidend — de tool kan versleuteling tijdens transport standaard implementeren via gangbare webprotocollen, terwijl versleuteling in rust een extra, bewuste configuratiestap vereist die niet altijd automatisch is inbegrepen.
+Het is niet noodzakelijk opzettelijk misleidend - de tool kan versleuteling tijdens transport standaard implementeren via gangbare webprotocollen, terwijl versleuteling in rust een extra, bewuste configuratiestap vereist die niet altijd automatisch is inbegrepen.
 
 ### Hoe kan een niet-technische oprichter beveiligingsclaims verifiëren zonder te leren programmeren?
 
@@ -127,7 +127,7 @@ Het komt vaak genoeg voor om een van de meest voorkomende bevindingen te zijn bi
       "name": "Waarom zou een AI-codeertool maar één type versleuteling noemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is niet noodzakelijk opzettelijk misleidend — de tool kan versleuteling tijdens transport standaard implementeren via gangbare webprotocollen, terwijl versleuteling in rust een extra, bewuste configuratiestap vereist die niet altijd automatisch is inbegrepen."
+        "text": "Het is niet noodzakelijk opzettelijk misleidend - de tool kan versleuteling tijdens transport standaard implementeren via gangbare webprotocollen, terwijl versleuteling in rust een extra, bewuste configuratiestap vereist die niet altijd automatisch is inbegrepen."
       }
     },
     {

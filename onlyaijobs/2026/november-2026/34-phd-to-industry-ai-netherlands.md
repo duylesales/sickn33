@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "From PhD to Industry AI in the Netherlands: How Researchers Make the Move Without Losing What Made Them Good",
-  "description": "Most PhD graduates in the Netherlands build careers outside academia. A guide for PhD candidates and postdocs moving into industry AI roles — timing, translating research experience, interviews, residence options for internationals and the cultural shifts to expect.",
+  "description": "Most PhD graduates in the Netherlands build careers outside academia. A guide for PhD candidates and postdocs moving into industry AI roles - timing, translating research experience, interviews, residence options for internationals and the cultural shifts to expect.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-17",
@@ -37,7 +37,7 @@ Content Format: Career Guide
 
 In the Netherlands, PhD candidates are usually employees rather than students: they have employment contracts, salaries and pension accrual, typically for a four-year project. At the end of that contract, most face a choice. Academic positions are scarce and often temporary, while industry demand for people with deep expertise in machine learning, statistics and scientific computing remains strong. Many PhD graduates therefore build careers outside universities. Yet the move can feel daunting. Researchers worry that their experience does not translate, that industry work will be less intellectually interesting or that leaving academia is a kind of failure. None of these fears needs to be true.
 
-## Why Industry Wants PhD Graduates — and Where It Hesitates
+## Why Industry Wants PhD Graduates - and Where It Hesitates
 
 Industry employers value several qualities that PhD research develops:
 
@@ -114,7 +114,7 @@ Academic researchers are used to publishing results openly. In industry, publica
 
 **Definition of success.** Success is measured by impact on products, customers or decisions, not by novelty or publication.
 
-**Identity.** Many former researchers go through a period of adjustment in professional identity. It helps to recognise that scientific thinking remains valuable — it is simply applied to different questions.
+**Identity.** Many former researchers go through a period of adjustment in professional identity. It helps to recognise that scientific thinking remains valuable - it is simply applied to different questions.
 
 ## Bridges Between Academia and Industry
 
@@ -143,7 +143,7 @@ Check your new employment contract first. Intellectual property clauses, confide
 
 A PhD candidate specialising in segmentation of medical images applies to an energy company for a data scientist role focused on inspection images of grid assets. At first, she hesitates because the domain is completely different.
 
-In her application, she describes her experience with limited labelled data, careful evaluation, domain shift between hospitals and collaboration with clinicians. In the interview, she explains how those lessons apply to inspection images from different camera types and field conditions. She also shares a well-documented repository from her PhD. The hiring team is impressed less by her publications than by her ability to transfer methods and her understanding of evaluation pitfalls. She receives the offer — and discovers that the transition to a new domain is faster than she expected.
+In her application, she describes her experience with limited labelled data, careful evaluation, domain shift between hospitals and collaboration with clinicians. In the interview, she explains how those lessons apply to inspection images from different camera types and field conditions. She also shares a well-documented repository from her PhD. The hiring team is impressed less by her publications than by her ability to transfer methods and her understanding of evaluation pitfalls. She receives the offer - and discovers that the transition to a new domain is faster than she expected.
 
 ## A Common Misconception About Leaving Academia
 
@@ -154,7 +154,7 @@ The most persistent misconception is that leaving academia means abandoning rese
 - **How much time is available for exploration and learning?**
 - **Can I publish or attend conferences, and what are the approval processes?**
 - **How do research results move into products or decisions?**
-- **Who will I work with daily — researchers, engineers, product teams?**
+- **Who will I work with daily - researchers, engineers, product teams?**
 - **What does career progression look like for specialists who do not want to become managers?**
 
 ## Key Takeaways
@@ -163,7 +163,7 @@ The most persistent misconception is that leaving academia means abandoning rese
 - Roles range from research scientist and applied scientist to data scientist, ML engineer, research engineer, domain specialist, quant and consultant.
 - Start orientation six to nine months before your contract ends, rewrite your CV for industry and prepare for coding and system design interviews.
 - International graduates can use the orientation year and the highly skilled migrant scheme, with conditions set by the IND.
-- Expect differences in pace, collaboration, success criteria and publication policies — while recognising that scientific thinking remains a major asset.
+- Expect differences in pace, collaboration, success criteria and publication policies - while recognising that scientific thinking remains a major asset.
 
 ## Where to Start
 
@@ -183,7 +183,7 @@ Many employers accept candidates whose thesis is submitted; starting before subm
 The orientation year for highly educated persons and, afterwards, the highly skilled migrant scheme with a lower salary threshold may apply; check IND conditions.
 
 ### (Scenario: researcher worried about losing research work) Will I still do research in industry?
-Often yes in a different form — hypotheses, experiments and new methods are common, with shorter timelines and product-focused goals.
+Often yes in a different form - hypotheses, experiments and new methods are common, with shorter timelines and product-focused goals.
 
 ### (Scenario: PhD graduate preparing for interviews) How are industry interviews different from academic evaluations?
 They often include coding, ML system design, case studies and behavioural questions focused on pragmatic problem-solving and communication.

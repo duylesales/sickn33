@@ -2,7 +2,7 @@
 
 A dashboard doesn't break on logic; it breaks on scale, in the gap a demo never reveals: 🧠
 
-❌ N+1 queries fire one call per row — fine at demo scale, timeouts at real volume
+❌ N+1 queries fire one call per row - fine at demo scale, timeouts at real volume
 ❌ Missing composite indexes force a full table scan on every filtered query
 ❌ Aggregations recompute on every load with no caching or "last updated" stamp
 ❌ Nightly exports query every customer's full history at the same hour

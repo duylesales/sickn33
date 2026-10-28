@@ -2,7 +2,7 @@
 
 It stayed down for fifty minutes, and the organiser had to reschedule. Here's what breaks under a launch-day spike: 🧠
 
-❌ A new database connection per request — the limit hit at around 90 concurrent users
+❌ A new database connection per request - the limit hit at around 90 concurrent users
 ❌ "Places remaining" counted by scanning an unindexed table on every refresh
 ❌ The email provider's rate limit hit in four minutes, so people who had entered re-entered
 ❌ A landing page rendered by the app instead of served as a static file
@@ -14,7 +14,7 @@ It stayed down for fifty minutes, and the organiser had to reschedule. Here's wh
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we load-test your launch before your customers do. 🏁
 
-His result: seven business days and €4,400 later, the rescheduled opening took 4,100 entries in nine minutes with no downtime and a 1.2-second peak response time. The 31 duplicate entries were refunded — and the organiser has since brought three more events. 🚀
+His result: seven business days and €4,400 later, the rescheduled opening took 4,100 entries in nine minutes with no downtime and a 1.2-second peak response time. The 31 duplicate entries were refunded - and the organiser has since brought three more events. 🚀
 
 👉 Surviving a launch-day spike: https://launchstudio.eu/en/blog/lovable-hosting-surviving-a-launch-day-spike
 

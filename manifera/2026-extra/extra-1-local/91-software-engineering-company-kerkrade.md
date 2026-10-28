@@ -22,26 +22,26 @@ target_persona: "CTO"
 
 A CTO in the Parkstad Limburg region can recruit across two national labor markets within a thirty-minute drive and still come up short on senior software engineering talent, because a thin regional pool is a thin regional pool no matter how many borders it happens to straddle.
 
-**The Pain:** A CTO at a manufacturing-technology company in Kerkrade — a former mining town in Parkstad Limburg with deep cross-border ties to neighboring Germany — has access to both the Dutch and German labor markets for hiring but is still struggling to fill senior software engineering roles, because the regional talent pool for specialized engineering skills is genuinely thin on both sides of the border.
+**The Pain:** A CTO at a manufacturing-technology company in Kerkrade - a former mining town in Parkstad Limburg with deep cross-border ties to neighboring Germany - has access to both the Dutch and German labor markets for hiring but is still struggling to fill senior software engineering roles, because the regional talent pool for specialized engineering skills is genuinely thin on both sides of the border.
 
-**The Agitation:** A CTO who keeps trying to solve a thin regional talent pool by widening the local search radius incrementally — one more nearby city, one more cross-border recruiter — eventually exhausts the realistic options without closing the gap, while the roadmap continues slipping every month the senior roles stay open.
+**The Agitation:** A CTO who keeps trying to solve a thin regional talent pool by widening the local search radius incrementally - one more nearby city, one more cross-border recruiter - eventually exhausts the realistic options without closing the gap, while the roadmap continues slipping every month the senior roles stay open.
 
 ## When the Regional Pool Itself Is the Constraint
 
-A software engineering company evaluated purely on proximity solves the wrong problem when the actual constraint is genuine talent scarcity across the entire regional market, cross-border or not — proximity doesn't create senior engineers that don't exist in a market at any accessible radius.
+A software engineering company evaluated purely on proximity solves the wrong problem when the actual constraint is genuine talent scarcity across the entire regional market, cross-border or not - proximity doesn't create senior engineers that don't exist in a market at any accessible radius.
 
-The first recognition a CTO needs to make is that a thin regional talent pool isn't a recruiting-effort problem solvable with more time or a wider local net — it's a market-size problem that requires either accepting extended vacancy periods or looking beyond the regional labor market entirely for the specific seniority tier needed.
+The first recognition a CTO needs to make is that a thin regional talent pool isn't a recruiting-effort problem solvable with more time or a wider local net - it's a market-size problem that requires either accepting extended vacancy periods or looking beyond the regional labor market entirely for the specific seniority tier needed.
 
-The second is that a software engineering company with access to a genuinely larger talent pool — not just a wider regional radius but an entirely different labor market — can offer both faster time-to-capacity and a deeper bench of specialized seniority than any incremental widening of a Parkstad-Aachen search radius realistically will.
+The second is that a software engineering company with access to a genuinely larger talent pool - not just a wider regional radius but an entirely different labor market - can offer both faster time-to-capacity and a deeper bench of specialized seniority than any incremental widening of a Parkstad-Aachen search radius realistically will.
 
-The third is that this doesn't mean abandoning the regional relationship model a CTO values — a well-governed partner can combine the deeper talent access of a larger market with the same accountability and communication quality a CTO would expect from a nearby vendor, without the fundamental talent-pool constraint.
+The third is that this doesn't mean abandoning the regional relationship model a CTO values - a well-governed partner can combine the deeper talent access of a larger market with the same accountability and communication quality a CTO would expect from a nearby vendor, without the fundamental talent-pool constraint.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads provide the accountability and communication quality a CTO in a thin regional market values from a nearby vendor, without the talent-pool constraint that market carries.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod draws from a substantially deeper senior engineering talent pool than a Parkstad-Aachen cross-border search realistically accesses.
 
-This is Dutch Management × Vietnamese Mastery — talent depth a thin regional market can't offer, governed with the accountability a CTO expects locally. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - talent depth a thin regional market can't offer, governed with the accountability a CTO expects locally. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Grenzregion Fertigungstechnik GmbH, a manufacturing-technology company based in 
 Manifera provided two senior engineers within three weeks, governed by an Amsterdam-based technical lead who maintained the same communication cadence and accountability the CTO had expected from a regional hire. The roadmap milestone shipped six weeks after the original deadline, a fraction of the delay the continued regional search would likely have caused.
 
 > *"We kept widening the search radius by another twenty kilometers every month and it never mattered, because the constraint was never distance. It was that the people we needed just weren't in that market at all."*
-> — **CTO, Grenzregion Fertigungstechnik GmbH, Germany**
+> - **CTO, Grenzregion Fertigungstechnik GmbH, Germany**
 
 ## Incrementally Widened Regional Search vs. Manifera's Deeper Talent Pool
 

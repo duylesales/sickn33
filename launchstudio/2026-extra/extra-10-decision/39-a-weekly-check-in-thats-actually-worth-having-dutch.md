@@ -25,7 +25,7 @@ Hier is exact dezelfde wekelijkse voortgangscall, uitgevoerd op twee totaal vers
 
 **Versie één:** "Hé, hoe gaat het?" "Goed, we boeken lekkere vooruitgang." "Zijn er nog blokkades?" "Nee hoor, niet echt, het gewone werk." Dertig minuten kabbelen voorbij. Beide partijen hangen op met een vaag gevoel van geruststelling. Twaalf dagen later ontdekt de oprichter tot zijn verbijstering dat de Stripe-koppeling al een volle week stiligt omdat er gewacht werd op een beslissing over terugbetalingen die niemand als urgent had gemarkeerd. Want "nee hoor, niet echt" is precies wat mensen antwoorden als een vraag niet scherp genoeg is gesteld om het echte probleem naar boven te halen.
 
-**Versie twee:** exact dezelfde twee mensen, exact dezelfde dertig minuten, exact dezelfde week aan ontwikkelwerk achter de rug. Maar de vragen zijn fundamenteel anders. Al in minuut tien ligt er een concreet risico op tafel — een webhook-integratie die afhankelijk is van een ticket bij een externe helpdesk dat al vier dagen openstaat — en er ontstaat direct een plan voor wat er moet gebeuren als er donderdag nog geen uitsluitsel is.
+**Versie twee:** exact dezelfde twee mensen, exact dezelfde dertig minuten, exact dezelfde week aan ontwikkelwerk achter de rug. Maar de vragen zijn fundamenteel anders. Al in minuut tien ligt er een concreet risico op tafel - een webhook-integratie die afhankelijk is van een ticket bij een externe helpdesk dat al vier dagen openstaat - en er ontstaat direct een plan voor wat er moet gebeuren als er donderdag nog geen uitsluitsel is.
 
 Er is niets veranderd aan de onderliggende software tussen deze twee versies van de call. Wat veranderde, is of de meeting was ingericht om een **oppervlakkige status op te dreunen**, of om **verborgen risico's vroegtijdig bloot te leggen**.
 
@@ -39,11 +39,11 @@ Ten tweede: als hetzelfde sluimerende risico twee weken achter elkaar opduikt zo
 
 ## Waarom "Hoe Gaat Het?" Altijd Faalt als Vraag
 
-Het probleem met open, vrijblijvende statusvragen is niet dat mensen liegen — het probleem is dat zo'n vraag automatisch uitnodigt tot een **gemiddeld antwoord**.
+Het probleem met open, vrijblijvende statusvragen is niet dat mensen liegen - het probleem is dat zo'n vraag automatisch uitnodigt tot een **gemiddeld antwoord**.
 
 Als een week bestond uit vier soepele dagen en één dag met een gigantische blokkade, produceert "hoe gaat het?" vrijwel altijd: *"Prima, we liggen goed op koers"*. De antwoorder vat immers onbewust de hele week samen in plaats van die ene pijnlijke uitzondering te benoemen. Een effectieve check-in vraagt niet om een gemiddelde samenvatting; hij vraagt doelgericht naar de uitschieters. Want in de uitschieters leeft het risico, terwijl samenvattingen het risico vakkundig maskeren.
 
-Dit is geen kwestie van wantrouwen of slechte communicatie — het is simpelweg hoe menselijke psychologie werkt. Het vervangen van open beleefdheidsvragen door gerichte, risico-zoekende vragen is de hele oplossing.
+Dit is geen kwestie van wantrouwen of slechte communicatie - het is simpelweg hoe menselijke psychologie werkt. Het vervangen van open beleefdheidsvragen door gerichte, risico-zoekende vragen is de hele oplossing.
 
 ## De 30-Minuten Risico-Agenda
 
@@ -93,15 +93,15 @@ Bij een doorlopend Launch & Grow-traject dat na de initiële lancering overgaat 
 
 Als uw project wordt uitgevoerd door een team van meerdere engineers, weersta dan de neiging om iedereen in de call uit te nodigen "om betrokken te blijven bij het hele team".
 
-Eén vast aanspreekpunt — een lead engineer of technisch projectleider met overzicht over het complete plaatje — kan de bovenstaande agenda veel eerlijker, scherper en completer beantwoorden dan een groepsmeeting. In een volle call voelen individuele developers zich geremd om openlijk over twijfels of risico's te speculeren in het bijzijn van collega's. Houd het overleg klein en vertrouwelijk: één-op-één tussen de Product Owner en de Lead Engineer.
+Eén vast aanspreekpunt - een lead engineer of technisch projectleider met overzicht over het complete plaatje - kan de bovenstaande agenda veel eerlijker, scherper en completer beantwoorden dan een groepsmeeting. In een volle call voelen individuele developers zich geremd om openlijk over twijfels of risico's te speculeren in het bijzijn van collega's. Houd het overleg klein en vertrouwelijk: één-op-één tussen de Product Owner en de Lead Engineer.
 
 Heeft u een medeoprichter of investeerder die geïnformeerd moet blijven? Stuur na afloop een beknopte samenvatting van vier regels: wat is er af, wat staat er geblokkeerd, en wat houden we in de gaten. Dat bespaart iedereen tijd en bewaart de scherpte van de meeting.
 
 ## Wat Er Verandert Als U Dit Consequent Toepast
 
-Het meetbare verschil van deze methode zit niet in het gevoel van de meeting — al rapporteren oprichters unaniem dat versie twee voelt als een krachtige werksessie in plaats van obligaat vergadertheater. Het meetbare verschil zit in **het moment waarop problemen aan het licht komen**.
+Het meetbare verschil van deze methode zit niet in het gevoel van de meeting - al rapporteren oprichters unaniem dat versie twee voelt als een krachtige werksessie in plaats van obligaat vergadertheater. Het meetbare verschil zit in **het moment waarop problemen aan het licht komen**.
 
-Een blokkade die op dinsdagochtend in minuut acht wordt gesignaleerd, heeft nog een volle week speling om rustig te worden omzeild zonder dat de livegang in gevaar komt. Ditzelfde probleem, onbesproken gelaten tot het onvermijdelijk escaleert, ontploft pas twee dagen vóór de deadline — exact het verschil tussen een beheerste procesbijsturing en een paniekerige nachtelijke crisis.
+Een blokkade die op dinsdagochtend in minuut acht wordt gesignaleerd, heeft nog een volle week speling om rustig te worden omzeild zonder dat de livegang in gevaar komt. Ditzelfde probleem, onbesproken gelaten tot het onvermijdelijk escaleert, ontploft pas twee dagen vóór de deadline - exact het verschil tussen een beheerste procesbijsturing en een paniekerige nachtelijke crisis.
 
 Het oplevermodel van [LaunchStudio](https://launchstudio.eu/nl/) is integraal gebaseerd op deze risico-gestuurde methodiek. Onze senior engineers hanteren deze structuur als vaste standaard, ondersteund door [Manifera's 11+ jaar ervaring](https://www.manifera.com/about-us/manifera-technologies/) in bedrijfskritische softwaretrajecten.
 
@@ -121,10 +121,10 @@ Omdat dit risico zes weken van tevoren bekend was in plaats van tijdens een live
 
 **Resultaat:** Weekmenu lanceerde na de e-mailfix alsnog succesvol, en het potentiële beeldenprobleem werd zonder enige stress verholpen vóórdat ook maar één betalende klant er hinder van ondervond.
 
-> *"Vroeger dacht ik dat ik goed bezig was door elke week even gezellig te bellen over de voortgang. In werkelijkheid verzamelde ik alleen maar loze geruststellingen. De nieuwe agenda vond de echte risico's — inclusief een probleem dat nog niet eens was gebeurd."*
-> — **Lotte Faassen, Oprichter, Weekmenu**
+> *"Vroeger dacht ik dat ik goed bezig was door elke week even gezellig te bellen over de voortgang. In werkelijkheid verzamelde ik alleen maar loze geruststellingen. De nieuwe agenda vond de echte risico's - inclusief een probleem dat nog niet eens was gebeurd."*
+> - **Lotte Faassen, Oprichter, Weekmenu**
 
-**Kosten & Doorlooptijd:** €3.300 (Launch & Grow Package) — live met 2 dagen vertraging door de initiële e-mailfix, daarna 100% stabiel zonder enige ongeplande downtime.
+**Kosten & Doorlooptijd:** €3.300 (Launch & Grow Package) - live met 2 dagen vertraging door de initiële e-mailfix, daarna 100% stabiel zonder enige ongeplande downtime.
 
 ## Veelgestelde Vragen
 
@@ -134,7 +134,7 @@ Benadruk dat u niet vraagt om een keiharde garantie of schuldtoewijzing, maar pu
 ### Werkt deze agenda ook via een asynchrone tekstupdate in Slack?
 Voor de eerste vijf minuten (wat is er af) wel, maar voor het blootleggen van risico's werkt een korte live call (video of telefoon) vele malen beter. In tekst poetsen mensen de rauwe randjes van een probleem onbewust weg; in een live gesprek hoort u de aarzeling direct.
 
-### Wat als alles vlekkeloos loopt en er geen blokkades zijn — moeten we dan toch 30 minuten volmaken?
+### Wat als alles vlekkeloos loopt en er geen blokkades zijn - moeten we dan toch 30 minuten volmaken?
 Beslist niet. Als alle punten binnen vijftien minuten zijn afgevinkt en er geen enkel risico op tafel ligt, sluit u de call direct af. De dertig minuten is een maximum plafond, geen verplichting om vol te kletsen.
 
 ### Moet ik als niet-technische oprichter notulen maken van deze meeting?
@@ -166,7 +166,7 @@ Een blokkade legt het werk *vandaag* actief stil (bijvoorbeeld: wachten op een A
     },
     {
       "@type": "Question",
-      "name": "Wat als alles vlekkeloos loopt — moeten we dan toch 30 minuten volmaken?",
+      "name": "Wat als alles vlekkeloos loopt - moeten we dan toch 30 minuten volmaken?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Nee, rond direct af zodra alle punten behandeld zijn. De dertig minuten is een functioneel plafond, geen verplichting om tijd vol te praten."

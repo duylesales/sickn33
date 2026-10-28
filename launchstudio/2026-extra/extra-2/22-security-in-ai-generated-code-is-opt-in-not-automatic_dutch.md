@@ -61,15 +61,15 @@ Manifera's beoordelingen van opslagbeveiliging worden uitgevoerd door het engine
 
 ## Een Checklist voor het Auditeren van Elke Opslag-Bucket Die Uw App Gebruikt
 
-Een volledig openbare bucket is de meest voor de hand liggende versie van dit probleem, maar het is zelden de enige die het controleren waard is. Een mentaal model gericht op één enkel probleem — "is mijn bucket openbaar, ja of nee" — ziet verschillende gerelateerde misconfiguraties over het hoofd die exact hetzelfde risico op blootstelling veroorzaken:
+Een volledig openbare bucket is de meest voor de hand liggende versie van dit probleem, maar het is zelden de enige die het controleren waard is. Een mentaal model gericht op één enkel probleem - "is mijn bucket openbaar, ja of nee" - ziet verschillende gerelateerde misconfiguraties over het hoofd die exact hetzelfde risico op blootstelling veroorzaken:
 
-- **Is de bucket zelf opzoekbaar (listable), zelfs als individuele bestanden een directe link vereisen?** Een bucket die mappenlijsten toestaat, laat iedereen elke bestandsnaam die erin zit opsommen, zelfs als de bestanden zelf zijn gemarkeerd als privé — wat de namen van vertrouwelijke uploads direct blootstelt aan iedereen die de hoofdadres van de bucket bezoekt.
-- **Hoe lang blijven uw ondertekende URL's geldig?** Een ondertekende URL is slechts zo beschermend als zijn vervaltijd — een ondertekende URL die na tien minuten vervalt is een echte toegangscontrole, terwijl een ondertekende URL die na een jaar vervalt functioneel identiek is aan een openbare link zodra iemand deze deelt of opslaat.
+- **Is de bucket zelf opzoekbaar (listable), zelfs als individuele bestanden een directe link vereisen?** Een bucket die mappenlijsten toestaat, laat iedereen elke bestandsnaam die erin zit opsommen, zelfs als de bestanden zelf zijn gemarkeerd als privé - wat de namen van vertrouwelijke uploads direct blootstelt aan iedereen die de hoofdadres van de bucket bezoekt.
+- **Hoe lang blijven uw ondertekende URL's geldig?** Een ondertekende URL is slechts zo beschermend als zijn vervaltijd - een ondertekende URL die na tien minuten vervalt is een echte toegangscontrole, terwijl een ondertekende URL die na een jaar vervalt functioneel identiek is aan een openbare link zodra iemand deze deelt of opslaat.
 - **Heeft u vergeten staging-, back-up- of test-buckets overgehouden van eerdere ontwikkeling?** Deze bevatten vaak kopieën van dezelfde gevoelige bestanden, gemaakt tijdens het testen en vervolgens vergeten, die blijven bestaan met permissies die nooit zijn aangescherpt voor productie.
 - **Is uw CORS-configuratie breder geopend dan nodig is?** Een overdreven tolerante cross-origin resource sharing (CORS)-regel op een opslag-bucket kan een script dat op een heel andere website draait in staat stellen om bestanden namens een bezoeker op te halen, waardoor een secundaire route naar gegevens ontstaat die verder correct beveiligd leken.
 - **Heeft de opslagservice van uw app een gescheiden beheerdersaccount?** Als de inloggegevens die uw app gebruikt om bestanden te uploaden volledige beheerdersrechten hebben over uw gehele cloud-opslagaccount, kan een lek van die ene API-sleutel veel meer blootstellen dan alleen de bucket die uw app daadwerkelijk gebruikt.
 
-Het doorlopen van deze checklist vereist geen diepgaande cloud-beveiligingsexpertise — het vereist simpelweg het besef dat bestandsopslag een eigen set afzonderlijke instellingen heeft die apart moeten worden gecontroleerd van de code van de applicatie zelf.
+Het doorlopen van deze checklist vereist geen diepgaande cloud-beveiligingsexpertise - het vereist simpelweg het besef dat bestandsopslag een eigen set afzonderlijke instellingen heeft die apart moeten worden gecontroleerd van de code van de applicatie zelf.
 
 ## Echt voorbeeld
 
@@ -82,9 +82,9 @@ Een technisch ingestelde ouder, die nieuwsgierig werd nadat ze het URL-patroon v
 **Resultaat:** LaunchStudio herbouwde de opslag-bucket om geauthenticeerde, ondertekende toegang te vereisen voor elk document. Ze vervingen alle bestaande openbare URL's en bevestigden dat geen enkel ander bestandstype in KinderKring dezelfde verkeerde configuratie deelde.
 
 > *"Ze had gewoon stilletjes niets kunnen zeggen. In plaats daarvan vertelde ze het ons rechtstreeks, en ik denk er nog steeds over na hoe compleet anders dat had kunnen verlopen als ze dat niet had gedaan."*
-> — **Anouk Peeters, Oprichter, KinderKring (Antwerpen)**
+> - **Anouk Peeters, Oprichter, KinderKring (Antwerpen)**
 
-**Kosten en tijdlijn:** € 2.200 (audit van opslagtoegang en herstel van ondertekende URL's) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (audit van opslagtoegang en herstel van ondertekende URL's) - voltooid in 7 werkdagen.
 
 ---
 

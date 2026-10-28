@@ -1,4 +1,4 @@
-🔥 Laura built a prototype using **Cursor** — laura, a former compliance officer in amsterdam, used **cursor ai** to build a dashboard that helped small financial firms track regulatory changes, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Laura built a prototype using **Cursor** - laura, a former compliance officer in amsterdam, used **cursor ai** to build a dashboard that helped small financial firms track regulatory changes, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Laura's application achieved production readiness: LaunchStudio provided Laura with the exact security documentation the auditors required. She passed the audit the following week and signed two major Dutch financial firms, securing €4,500 in MRR. I had the industry knowledge, and AI helped me build the UI. But LaunchStudio's enterprise engineers built the fortress I needed to actually sell to banks. (€4,500 (Enterprise Infrastructure Hardening package) — completed in 14 business days.). 🚀
+Laura's application achieved production readiness: LaunchStudio provided Laura with the exact security documentation the auditors required. She passed the audit the following week and signed two major Dutch financial firms, securing €4,500 in MRR. I had the industry knowledge, and AI helped me build the UI. But LaunchStudio's enterprise engineers built the fortress I needed to actually sell to banks. (€4,500 (Enterprise Infrastructure Hardening package) - completed in 14 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-manifera-enterprise-grade-ai
 

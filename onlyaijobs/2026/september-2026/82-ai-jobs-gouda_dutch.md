@@ -21,7 +21,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Gouda telt ongeveer 75.000 inwoners in Zuid-Holland, in het Groene Hart tussen de vier grootste steden van het land. De lokale technische markt is bescheiden. De ligging is uitzonderlijk — Rotterdam en Utrecht liggen elk op zo'n twintig minuten, Den Haag op circa dertig, Amsterdam op circa vijftig. Geen andere Nederlandse stad van deze grootte heeft dat.
+Gouda telt ongeveer 75.000 inwoners in Zuid-Holland, in het Groene Hart tussen de vier grootste steden van het land. De lokale technische markt is bescheiden. De ligging is uitzonderlijk - Rotterdam en Utrecht liggen elk op zo'n twintig minuten, Den Haag op circa dertig, Amsterdam op circa vijftig. Geen andere Nederlandse stad van deze grootte heeft dat.
 
 Omdat Gouda het helderste voorbeeld is van een locatie die je kiest op reiseconomie in plaats van op lokale werkgelegenheid, behandelt dit stuk die beslissing goed. Het kader geldt voor veel locaties; Gouda is simpelweg waar het het zuiverst geldt.
 
@@ -39,7 +39,7 @@ Omdat Gouda het helderste voorbeeld is van een locatie die je kiest op reisecono
 
 **Zakelijke dienstverlening en IT-leveranciers.** Middelgrote bedrijven voor regionale en landelijke klanten.
 
-Het realistische aantal functies dat een ML-engineer als sterke match zou herkennen, is bescheiden — meer dan Hoorn, aanzienlijk minder dan Rotterdam.
+Het realistische aantal functies dat een ML-engineer als sterke match zou herkennen, is bescheiden - meer dan Hoorn, aanzienlijk minder dan Rotterdam.
 
 ## De reisafweging, goed uitgewerkt
 
@@ -98,13 +98,13 @@ Levensveranderingen. Kinderen, het werk van een partner of zorgtaken kunnen een 
 
 De meeste forensenlocaties geven toegang tot één stad. Woon je in Hoorn, dan forens je naar Amsterdam. In Alkmaar idem. Je opties zijn feitelijk één markt.
 
-Gouda geeft toegang tot vier. Rotterdam, Utrecht, Den Haag en Amsterdam zijn alle bereikbaar, met werkelijk verschillende werkgeversprofielen — haven en energie, zorg en consultancy, overheid en internationale organisaties, scale-ups en finance. Die diversiteit is de eigenlijke waarde, en het gaat niet om gemak maar om weerbaarheid: van werkgever wisselen vraagt geen verhuizing, en van sector wisselen ook niet.
+Gouda geeft toegang tot vier. Rotterdam, Utrecht, Den Haag en Amsterdam zijn alle bereikbaar, met werkelijk verschillende werkgeversprofielen - haven en energie, zorg en consultancy, overheid en internationale organisaties, scale-ups en finance. Die diversiteit is de eigenlijke waarde, en het gaat niet om gemak maar om weerbaarheid: van werkgever wisselen vraagt geen verhuizing, en van sector wisselen ook niet.
 
 Voor een kandidaat met een werkende partner telt dat nog zwaarder. Twee mensen kunnen banen in verschillende steden hebben vanuit één huis.
 
 ## De verzekeringshoek verdient een nadere blik
 
-Verzekeren is een bedrijf van gekwantificeerde onzekerheid, wat het van nature statistisch maakt op een manier die weinig sectoren zijn. De kernoperaties — risico beprijzen, reserveren voor toekomstige schade, fraude opsporen — zijn modelleerproblemen die machine learning met een eeuw voorgaan en een volwassen methodologische traditie hebben.
+Verzekeren is een bedrijf van gekwantificeerde onzekerheid, wat het van nature statistisch maakt op een manier die weinig sectoren zijn. De kernoperaties - risico beprijzen, reserveren voor toekomstige schade, fraude opsporen - zijn modelleerproblemen die machine learning met een eeuw voorgaan en een volwassen methodologische traditie hebben.
 
 Die traditie interacteert nu met moderne methoden, en die interactie is werkelijk interessant. Toezichthouders beperken steeds meer welke variabelen bij premiestelling mogen worden gebruikt en eisen dat besluiten die klanten raken uitlegbaar zijn. Rechtvaardigheid in schadebehandeling en premiestelling is een actueel toezichtthema. Document- en beeldverwerking op schadeমateriaal is een grote praktische toepassing.
 
@@ -114,7 +114,7 @@ De randvoorwaarde die dit intellectueel interessant maakt, is dezelfde als in de
 
 Zit je vroeg in je loopbaan, dan telt nabijheid meer dan je verwacht. Informeel leren, avondbijeenkomsten, spontane gesprekken en zichtbaarheid pleiten alle voor zijn waar het werk is.
 
-Werk je in een functie die frequente fysieke aanwezigheid vraagt — hardware, lab, fabriek — dan zijn hybride afspraken beperkt.
+Werk je in een functie die frequente fysieke aanwezigheid vraagt - hardware, lab, fabriek - dan zijn hybride afspraken beperkt.
 
 Weet je niet of je bij je werkgever blijft, bedenk dan dat je volgende functie ook forenzbaar moet zijn.
 
@@ -124,7 +124,7 @@ En heb je de verwachting over kantoordagen niet schriftelijk, neem dan geen woon
 
 - De lokale markt is bescheiden, met verzekeringen en financiële dienstverlening als stevigste categorie.
 - Het uitzonderlijke kenmerk is ligging: Rotterdam en Utrecht op twintig minuten, Den Haag op dertig, Amsterdam op vijftig.
-- Werk de reisrekening in zes stappen uit — echte deur-tot-deurtijd, echte kantoordagen, eerlijke waardering van de tijd, vergelijking met de rit die je toch zou hebben, gekwantificeerd voordeel, en faalvormen.
+- Werk de reisrekening in zes stappen uit - echte deur-tot-deurtijd, echte kantoordagen, eerlijke waardering van de tijd, vergelijking met de rit die je toch zou hebben, gekwantificeerd voordeel, en faalvormen.
 - De marginale vergelijking telt zwaarder dan de absolute.
 - De specifieke kracht van Gouda is toegang tot vier verschillende werkgeversprofielen in plaats van één.
 - Reisafweging is het verkeerde antwoord vroeg in een loopbaan, bij functies die fysieke aanwezigheid vragen, en wanneer de kantoordagverwachting niet schriftelijk vastligt.

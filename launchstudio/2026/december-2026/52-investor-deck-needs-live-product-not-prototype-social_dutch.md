@@ -12,11 +12,11 @@ Wat vandaag de dag wél overtuigt: ✅
 ✅ Bewijs dat uw server niet crasht bij gelijktijdig gebruik
 ✅ Een oprichter die echte operationele klantvragen heeft opgelost
 
-🔍 Zodra u hun interesse heeft, volgt technische due diligence: bewijs van database-isolatie (geen vage claims), vendor lock-in risico's en marges bij 10x groei. Oprichters die live zijn beantwoorden dit met rust — oprichters met een demo moeten gokken.
+🔍 Zodra u hun interesse heeft, volgt technische due diligence: bewijs van database-isolatie (geen vage claims), vendor lock-in risico's en marges bij 10x groei. Oprichters die live zijn beantwoorden dit met rust - oprichters met een demo moeten gokken.
 
-De snelste route naar een overtuigende pitch is niet nóg meer schaven aan uw slides — het is daadwerkelijk lanceren! 🎯
+De snelste route naar een overtuigende pitch is niet nóg meer schaven aan uw slides - het is daadwerkelijk lanceren! 🎯
 
-Bij **LaunchStudio** bent u in 1 tot 3 weken live, zodat u echte data meeneemt naar uw volgende pitch. Gesteund door Manifera — vertrouwd door Vodafone, TNO en CFLW. 🛡️
+Bij **LaunchStudio** bent u in 1 tot 3 weken live, zodat u echte data meeneemt naar uw volgende pitch. Gesteund door Manifera - vertrouwd door Vodafone, TNO en CFLW. 🛡️
 
 Haar resultaat: pitch #1 kreeg beleefde afwijzingen. Pitch #2 (met echte klanten) haalde een seed-ronde van €150.000 op! 🚀
 

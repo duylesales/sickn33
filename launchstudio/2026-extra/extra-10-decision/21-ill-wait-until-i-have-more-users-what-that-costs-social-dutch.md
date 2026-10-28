@@ -1,6 +1,6 @@
 ⏳ "Ik wacht wel met security tot ik meer gebruikers heb." Een begrijpelijke gedachte... maar wat kost wachten u werkelijk?
 
-Wachten is slim wanneer u nog nul tractie en nul echte data heeft. Maar zodra er data van één echt persoon in uw database staat, is "wachten" geen lean-strategie meer — het is uitstelgedrag met rente.
+Wachten is slim wanneer u nog nul tractie en nul echte data heeft. Maar zodra er data van één echt persoon in uw database staat, is "wachten" geen lean-strategie meer - het is uitstelgedrag met rente.
 
 De 4 verborgen kosten van wachten:
 
@@ -15,7 +15,7 @@ De gezonde middenweg voor oprichters:
 ✅ Koppel uitstel aan een harde, meetbare trigger (bijv. "bij de 10e betalende klant buiten mijn netwerk")
 ✅ Wees eerlijk: telt uw app 10 echte gebruikers, dan heeft u allang echte verantwoordelijkheid
 
-Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u de basis vóór de groei potdicht te zetten — snel, pragmatisch en betaalbaar.
+Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u de basis vóór de groei potdicht te zetten - snel, pragmatisch en betaalbaar.
 
 💡 Zo hielpen we een fysiotherapie-app een openstaand patiëntendossier-lek op te lossen vóórdat 340 patiëntenrecords publiek werden.
 

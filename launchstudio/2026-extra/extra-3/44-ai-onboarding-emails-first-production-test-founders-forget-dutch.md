@@ -55,7 +55,7 @@ Het meerdere keren aanmelden met bewust gevarieerde, onvolmaakte gegevens – ee
 
 [LaunchStudio](https://launchstudio.eu/nl/) test onboarding-e-mailreeksen specifiek tegen gevarieerde, onvolmaakte aanmeldingsscenario's als onderdeel van een bredere beoordeling van lanceringvoorbereiding. Wij behandelen dit als kerninfrastructuur die dezelfde zorgvuldigheid verdient als elk ander klantgericht systeem, ondersteund door Manifera's bredere ervaring in het herkennen dat systemen voor de eerste indruk een onevenredig gewicht dragen ten opzichte van hun schijnbare technische eenvoud.
 
-[Laat uw onboarding-reeks testen tegen echte, onvolmaakte aanmeldingspatronen](https://launchstudio.eu/nl/#calculator) — dit krijgt vaak minder aandacht dan al het andere, ondanks dat het het meest uitmaakt.
+[Laat uw onboarding-reeks testen tegen echte, onvolmaakte aanmeldingspatronen](https://launchstudio.eu/nl/#calculator) - dit krijgt vaak minder aandacht dan al het andere, ondanks dat het het meest uitmaakt.
 
 ## Transactioneel of Marketing? Het onderscheid dat verandert wat er daadwerkelijk vereist is
 
@@ -84,9 +84,9 @@ Verschillende vroege klanten die hun instelling snel voltooiden bleven dagen daa
 **Resultaat:** LaunchStudio implementeerde een gepaste statuscontrole voordat elke herinneringse-mail verzendt, waarbij wordt bevestigd dat de klant de relevante stap niet al heeft voltooid. Ook voegden we gevarieerde scenariotesten toe die snelle voltooiing, annulerings- en andere randgevallen dekken voorbij het enkele standaardtempo dat Eva's oorspronkelijke testen had uitgeoefend.
 
 > *"Mijn ene testaanmelding ging exact zoals ik verwachtte, in de volgorde die ik verwachtte, op het tempo dat ik verwachtte. Het was nooit bij me opgekomen dat een klant die het instellen sneller voltooide dan mijn aangenomen tijdlijn zou blijven horen dat hij iets moest doen wat hij al had gedaan. Dat is een oprecht slechte eerste indruk om per ongeluk te creëren."*
-> — **Eva Bakker, Oprichter, OnboardFlow (Amersfoort)**
+> - **Eva Bakker, Oprichter, OnboardFlow (Amersfoort)**
 
-**Kosten en tijdlijn:** € 700 (statuscontrole van onboarding-reeks en testen van randgevallen) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 700 (statuscontrole van onboarding-reeks en testen van randgevallen) - voltooid in 3 werkdagen.
 
 ---
 
@@ -138,7 +138,7 @@ Aanvullend maar afzonderlijk – bezorgbaarheid betreft de vraag of e-mails tech
       "name": "Vraagt het herstellen van onboarding-reeksen veel werk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meestal bescheiden — een statuscontrole toevoegen voor verzending, geen volledige herstructurering van het systeem."
+        "text": "Meestal bescheiden - een statuscontrole toevoegen voor verzending, geen volledige herstructurering van het systeem."
       }
     },
     {
@@ -154,7 +154,7 @@ Aanvullend maar afzonderlijk – bezorgbaarheid betreft de vraag of e-mails tech
       "name": "Hoe verhoudt dit zich tot algemene e-mailbezorgbaarheid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aanvullend — bezorgbaarheid gaat over het bereiken van de inbox; dit over de correcte inhoud en timing bij aankomst."
+        "text": "Aanvullend - bezorgbaarheid gaat over het bereiken van de inbox; dit over de correcte inhoud en timing bij aankomst."
       }
     }
   ]

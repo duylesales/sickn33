@@ -1,4 +1,4 @@
-🚨 Hanneke Doorn ran Buurtkracht, a neighborhood community platform in Zwolle. Two members submitted formal GDPR Article 17 deletion requests. Hanneke deleted their records in `auth.users`, but foreign key constraints failed silently — leaving names, mobile numbers, and home addresses scattered across 8 relational tables and external email lists. 😳
+🚨 Hanneke Doorn ran Buurtkracht, a neighborhood community platform in Zwolle. Two members submitted formal GDPR Article 17 deletion requests. Hanneke deleted their records in `auth.users`, but foreign key constraints failed silently - leaving names, mobile numbers, and home addresses scattered across 8 relational tables and external email lists. 😳
 
 Deleting a row in your user table is not GDPR erasure. Dutch privacy laws require complete, verifiable data removal: 🧠
 

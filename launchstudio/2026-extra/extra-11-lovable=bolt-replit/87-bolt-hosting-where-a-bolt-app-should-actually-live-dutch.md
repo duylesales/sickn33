@@ -24,7 +24,7 @@ Het ontstaan van een Bolt-project is indrukwekkend om te zien. Je beschrijft een
 
 Die gegenereerde weblink is echter het probleem. De omgeving waarin deze preview draait, is uitsluitend gebouwd om vlot te experimenteren, niet om betalende klanten te bedienen. In de kloof tussen die twee doeleinden verliezen oprichters kostbare klantdata, lekken ze geheime API-keys en ontdekken ze dat hun live-applicatie plotseling verandert zodra ze op een late avond nog even een prompt testen.
 
-Een Bolt-applicatie verhuizen naar een solide, permanente hostingomgeving is niet ingewikkeld. Het vraagt om een handvol doelgerichte keuzes — beslissingen die in het prototype nooit aan bod kwamen omdat het prototype ook zonder prima leek te werken.
+Een Bolt-applicatie verhuizen naar een solide, permanente hostingomgeving is niet ingewikkeld. Het vraagt om een handvol doelgerichte keuzes - beslissingen die in het prototype nooit aan bod kwamen omdat het prototype ook zonder prima leek te werken.
 
 ## Wat de prototype-omgeving daadwerkelijk doet
 
@@ -34,7 +34,7 @@ Er zijn drie essentiële eigenschappen die je moet begrijpen:
 
 **Er is geen scheiding tussen ontwikkelen en serveren.** Er bestaat geen concept van een formele release of goedgekeurde versie. Wat er in de editor staat, draait live. Een experimentele prompt om elf uur 's avonds is direct zichtbaar voor bezoekers om elf uur 's avonds.
 
-**De data-opslag is vluchtig.** Bestanden of data die lokaal binnen de prototype-omgeving worden weggeschreven, verdwijnen zodra de container opnieuw wordt opgebouwd — en dat gebeurt aanzienlijk vaker dan je verwacht.
+**De data-opslag is vluchtig.** Bestanden of data die lokaal binnen de prototype-omgeving worden weggeschreven, verdwijnen zodra de container opnieuw wordt opgebouwd - en dat gebeurt aanzienlijk vaker dan je verwacht.
 
 Dit is geen ontwerpfout van Bolt. Het is exact de juiste architectuur voor een zandbak waarin je razendsnel concepten uitprobeert.
 
@@ -44,7 +44,7 @@ Voordat je een definitieve hostinglocatie kiest, moet je weten wat je in handen 
 
 **Een frontend.** JavaScript- of TypeScript-code die wordt gecompileerd tot statische webbestanden: HTML, CSS en geoptimaliseerde scriptbundels. Dit is het overgrote deel van wat je in de browser ziet. Deze statische bestanden kunnen door vrijwel elk modern hostingplatform spotgoedkoop, vliegensvlug en wereldwijd geserveerd worden via een CDN.
 
-**Server-side componenten (indien nodig).** Alles wat beslist niet in de browser van de eindgebruiker mag worden uitgevoerd: API-aanroepen met beheerdersrechten, betalingsafhandeling, webhook-endpoints en achtergrondtaken. Soms genereert Bolt deze endpoints als serverless functies; soms voert het prototype alles rechtstreeks in de browser uit. In dat laatste geval ontbreekt de serverlaag volledig — en dat is precies de situatie waarin gelekte API-sleutels ontstaan.
+**Server-side componenten (indien nodig).** Alles wat beslist niet in de browser van de eindgebruiker mag worden uitgevoerd: API-aanroepen met beheerdersrechten, betalingsafhandeling, webhook-endpoints en achtergrondtaken. Soms genereert Bolt deze endpoints als serverless functies; soms voert het prototype alles rechtstreeks in de browser uit. In dat laatste geval ontbreekt de serverlaag volledig - en dat is precies de situatie waarin gelekte API-sleutels ontstaan.
 
 Het mentaal scheiden van die twee lagen vormt de kern van je hostingstrategie. Statische bestanden horen thuis op een statisch hostingplatform. De server-side logica hoort thuis op een beveiligde runtime die secrets kan bewaren.
 
@@ -54,7 +54,7 @@ Voor een typische Bolt-applicatie zijn er drie logische infrastructurele modelle
 
 **Statische hosting gecombineerd met managed backend services.** De frontend wordt gehost op een modern CDN of statische host; de database, authenticatie en bestandsopslag worden verzorgd door een managed platform zoals Supabase; en de beperkte server-side logica draait als serverless Edge Functions. Dit is veruit de goedkoopste, snelste en meest robuuste opzet voor het overgrote deel van de B2B SaaS-producten.
 
-**Een uniform applicatieplatform.** Eén clouddienst die zowel de frontend serveert als de server-side code en API-routes draait, inclusief automatische preview-omgevingen per Git-branch. Iets duurder, maar je hoeft minder losse diensten te koppelen — voor velen de standaardkeuze.
+**Een uniform applicatieplatform.** Eén clouddienst die zowel de frontend serveert als de server-side code en API-routes draait, inclusief automatische preview-omgevingen per Git-branch. Iets duurder, maar je hoeft minder losse diensten te koppelen - voor velen de standaardkeuze.
 
 **Eigen cloud-infrastructuur.** Een Docker-container of virtuele server die je zelf beheert (bijvoorbeeld via AWS, GCP of een Europese cloudprovider). Dit is uitsluitend gerechtvaardigd wanneer contractuele compliance van enterprise-klanten dit vereist of bij zeer specifieke architectuureisen. In alle andere situaties levert het onnodige operationele beheerlast op waar een klein team zijn tijd niet aan moet verspillen.
 
@@ -64,7 +64,7 @@ Twee randvoorwaarden maken de keuze snel concreet: verkoop je aan Nederlandse of
 
 Dit is veruit de meest voorkomende fout bij het migreren van een AI-prototype naar een productieomgeving:
 
-Alles wat wordt meegenomen in een frontend-build is openbaar. Niet versleuteld, niet verborgen — het staat letterlijk in platte tekst in de JavaScript-bestanden die elke bezoeker naar zijn browser downloadt. Build-tools (zoals Vite of Next.js) vereisen een specifiek voorvoegsel (zoals `VITE_` of `NEXT_PUBLIC_`) voor variabelen die bestemd zijn voor de browser. Dat voorvoegsel is een formele markering dat de waarde publiek is, geen beveiligingsmechanisme dat data afschermt.
+Alles wat wordt meegenomen in een frontend-build is openbaar. Niet versleuteld, niet verborgen - het staat letterlijk in platte tekst in de JavaScript-bestanden die elke bezoeker naar zijn browser downloadt. Build-tools (zoals Vite of Next.js) vereisen een specifiek voorvoegsel (zoals `VITE_` of `NEXT_PUBLIC_`) voor variabelen die bestemd zijn voor de browser. Dat voorvoegsel is een formele markering dat de waarde publiek is, geen beveiligingsmechanisme dat data afschermt.
 
 De vuistregel is onverbiddelijk: een anonieme publieke sleutel (zoals een Supabase anon key of Stripe publishable key) mag in de frontend staan, mits beschermd door database autorisatieregels. De service role key, Stripe secret key, OpenAI API-key en alle andere geprivilegieerde tokens horen uitsluitend thuis in server-side code. Ze worden geconfigureerd als environment variables in het hostingdashboard en mogen nooit in de Git-repository worden gecommit.
 
@@ -124,18 +124,18 @@ LaunchStudio voert deze migratie uit zonder de interface die Bolt heeft ontworpe
 
 Luuk Hendrickx bouwde met Bolt het platform Standplaats: een online reserveringssysteem voor weekmarkten, in gebruik bij twee gemeenten en drie marktbureaus in de regio Venray en Horst. Marktkramers reserveren een standplaats, marktmeesters wijzen plekken toe en de facturatie volgt automatisch.
 
-Zes maanden na de start draaide de applicatie nog altijd rechtstreeks vanuit de Bolt-previewomgeving. Het webadres dat Luuk aan marktkramers meegaf bevatte de naam van het platform en een lange willekeurige tekenreeks. Hij vermeed het doorvoeren van wijzigingen op donderdag en vrijdag, omdat de markten in het weekend plaatsvonden en elke prompt direct live ging. Twee keer had een marktmeester gemeld dat het systeem *"onbereikbaar"* was — momenten die exact samenvielen met het dichtklappen van Luuks laptop.
+Zes maanden na de start draaide de applicatie nog altijd rechtstreeks vanuit de Bolt-previewomgeving. Het webadres dat Luuk aan marktkramers meegaf bevatte de naam van het platform en een lange willekeurige tekenreeks. Hij vermeed het doorvoeren van wijzigingen op donderdag en vrijdag, omdat de markten in het weekend plaatsvonden en elke prompt direct live ging. Twee keer had een marktmeester gemeld dat het systeem *"onbereikbaar"* was - momenten die exact samenvielen met het dichtklappen van Luuks laptop.
 
-Tijdens een technische audit kwamen twee acute risico's aan het licht. Een betaalde kaart-API-sleutel waarmee standplaatsplattegronden werden getekend stond in platte tekst in de frontend-bundel, al zes maanden openbaar voor het hele internet. En geüploade documenten van marktkramers — zoals WA-verzekeringspolissen en inschrijvingen bij de Kamer van Koophandel — werden opgeslagen in een lokale tijdelijke projectmap, waardoor een onbekend aantal certificaten geruisloos was verdwenen bij container-herstarts. De marktbureaus vroegen kramers regelmatig opnieuw om documenten en dachten dat de ondernemers simpelweg laks waren met uploaden.
+Tijdens een technische audit kwamen twee acute risico's aan het licht. Een betaalde kaart-API-sleutel waarmee standplaatsplattegronden werden getekend stond in platte tekst in de frontend-bundel, al zes maanden openbaar voor het hele internet. En geüploade documenten van marktkramers - zoals WA-verzekeringspolissen en inschrijvingen bij de Kamer van Koophandel - werden opgeslagen in een lokale tijdelijke projectmap, waardoor een onbekend aantal certificaten geruisloos was verdwenen bij container-herstarts. De marktbureaus vroegen kramers regelmatig opnieuw om documenten en dachten dat de ondernemers simpelweg laks waren met uploaden.
 
 In acht werkdagen werd de situatie structureel opgelost: het project werd overgezet naar een afgeschermde GitHub-repository met een reproduceerbare build-configuratie; de frontend werd uitgerold naar een schaalbaar static hosting platform binnen de EU met staging-omgeving en one-click rollback; kaart-API-aanroepen werden verplaatst achter een beveiligde serverless endpoint met rate-limiting per marktbureau, waarbij de uitgelekte sleutel werd geroteerd en van domeinrestricties voorzien; de database verhuisde naar een beheerde PostgreSQL-omgeving in de EU met gecontroleerde autorisatieregels; documenten verhuisden naar een beveiligde object storage bucket met tijdelijk ondertekende downloadlinks (signed URLs), waarbij ontbrekende bestanden direct werden geïdentificeerd zodat marktmeesters heel gericht konden navragen; een eigen `.nl`-domein werd ingericht met SSL; error tracking en uptime-monitoring werden geactiveerd; en automatische back-ups werden gevalideerd met een hersteltest van 14 minuten.
 
 **Resultaat:** Nul ongeplande downtime in de acht maanden daarna, de maandelijkse rekening van de kaart-API normaliseerde naar een fractie van het eerdere bedrag, en bij de contractverlenging met een van de gemeenten werd de overstap naar een eigen domein en gegarandeerde EU-dataopslag expliciet genoemd als een voldane contractvoorwaarde.
 
 > *"Mijn hele bedrijfsvoering draaide in een browsertabblad op mijn laptop. Zodra ik op vrijdagmiddag mijn laptop dichtklapte, konden marktkooplieden in Venray geen kraam meer reserveren."*
-> — **Luuk Hendrickx, Oprichter, Standplaats (Venray)**
+> - **Luuk Hendrickx, Oprichter, Standplaats (Venray)**
 
-**Kosten & Doorlooptijd:** € 3.700 (repository, reproduceerbare build, static hosting met staging en rollback, server-side API-proxy met sleutelrotatie, database- en storagemigratie, domeinconfiguratie, monitoring, back-upvalidatie) — opgeleverd in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 3.700 (repository, reproduceerbare build, static hosting met staging en rollback, server-side API-proxy met sleutelrotatie, database- en storagemigratie, domeinconfiguratie, monitoring, back-upvalidatie) - opgeleverd in 8 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -177,7 +177,7 @@ Een eigen domeinnaam met HTTPS, realtime foutopsporing (error tracking), uptime-
       "name": "Waar hoort een Bolt-applicatie in productie te draaien?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Frontend als statische bestanden op een CDN of platform, gekoppeld aan managed databases en serverless functies voor geheime logica — binnen een EU-datacenter."
+        "text": "Frontend als statische bestanden op een CDN of platform, gekoppeld aan managed databases en serverless functies voor geheime logica - binnen een EU-datacenter."
       }
     },
     {

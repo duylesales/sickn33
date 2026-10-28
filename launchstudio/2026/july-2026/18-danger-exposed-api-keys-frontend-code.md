@@ -71,7 +71,7 @@ Isabella partnered with **LaunchStudio (by Manifera)** to make the product launc
 
 **Result:** Isabella secured the API keys, preventing unauthorized access and locking down LLM request limits.
 
-**Cost & Timeline:** €800 (Secrets Security Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €800 (Secrets Security Package) - production-ready and deployed in 3 business days.
 
 ---
 

@@ -41,7 +41,7 @@ A rose cut in Kenya in the morning can be sold in Aalsmeer the next day and be o
 
 **Royal FloraHolland** is a cooperative of growers and the world's largest marketplace for flowers and plants. Its largest location is in Aalsmeer, historically known for one of the biggest commercial buildings in the world by floor area, where trolleys full of flowers move through halls every morning. Other major locations include Naaldwijk in the Westland and Rijnsburg.
 
-For more than a century, the auction clock set flower prices: the price starts high and drops until a buyer presses a button. That mechanism — a descending or "Dutch" auction — is famous in economics textbooks. What has changed is how the trade happens. Buyers increasingly bid remotely, and a growing share of trade takes place through direct digital trading between growers and buyers rather than through the clock. The digital platform **Floriday** connects growers, buyers and logistics service providers for this trade.
+For more than a century, the auction clock set flower prices: the price starts high and drops until a buyer presses a button. That mechanism - a descending or "Dutch" auction - is famous in economics textbooks. What has changed is how the trade happens. Buyers increasingly bid remotely, and a growing share of trade takes place through direct digital trading between growers and buyers rather than through the clock. The digital platform **Floriday** connects growers, buyers and logistics service providers for this trade.
 
 ## The Wider Ecosystem Around Greenport Aalsmeer
 
@@ -80,7 +80,7 @@ Prices depend on weather in producing countries, harvest timing, transport disru
 
 **EU Artificial Intelligence Act.** Most marketplace and logistics applications are not high-risk, but organisations must ensure AI literacy among staff and consider transparency when AI influences prices or rankings for business users.
 
-**Competition law.** Price information in a marketplace is sensitive. Data products that share market insight must be designed so they do not facilitate coordination between competitors — a consideration that shapes what analytics may be shown to whom.
+**Competition law.** Price information in a marketplace is sensitive. Data products that share market insight must be designed so they do not facilitate coordination between competitors - a consideration that shapes what analytics may be shown to whom.
 
 ## A Concrete Scenario: Recommending Products to Buyers
 
@@ -125,17 +125,17 @@ Anyone joining a data team in floriculture learns the calendar quickly. Valentin
 
 Supply has its own seasons. In winter, a larger share of cut flowers comes from producing countries with favourable climates, such as Kenya, Ethiopia and Colombia, which increases the dependence on air freight and on customs and inspection processes. In spring and summer, European production plays a larger role.
 
-For a forecasting model, this means that "last year" is often a poor guide: holidays move, weather in producing regions changes harvest timing and transport disruptions shift supply. Teams therefore combine statistical models with the knowledge of experienced traders — and the best data scientists in the sector learn to talk to those traders early and often.
+For a forecasting model, this means that "last year" is often a poor guide: holidays move, weather in producing regions changes harvest timing and transport disruptions shift supply. Teams therefore combine statistical models with the knowledge of experienced traders - and the best data scientists in the sector learn to talk to those traders early and often.
 
 ## Working With Many Small Parties
 
 The floriculture chain consists of thousands of growers, many exporters and wholesalers, and numerous logistics and service companies. Many of these are family businesses with limited IT capacity. For data professionals, this means integration is a recurring challenge: data arrives in different formats, with different levels of quality, and adoption of new digital tools depends on convincing busy business owners that the tool saves them time.
 
-This makes the work more interesting than it may seem. Designing a data product for a sector of small businesses requires simplicity, reliability and a clear benefit — lessons that apply to many B2B marketplaces.
+This makes the work more interesting than it may seem. Designing a data product for a sector of small businesses requires simplicity, reliability and a clear benefit - lessons that apply to many B2B marketplaces.
 
 ## Questions Worth Asking Before Joining
 
-- **Which part of the trade does the team support — clock auction, direct digital trade or logistics?** Each has different data and different users.
+- **Which part of the trade does the team support - clock auction, direct digital trade or logistics?** Each has different data and different users.
 - **How is data from growers and buyers collected and standardised?** Data quality is often the main constraint.
 - **How are commercially sensitive price insights shared?** The answer shows awareness of competition law and marketplace fairness.
 - **How do traders and planners use the models today?** Adoption by experienced professionals is the real test of value.
@@ -157,7 +157,7 @@ Browse current AI, machine learning and data jobs in and around Aalsmeer at [onl
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who associates agriculture with low tech) Is there serious data work in the flower trade?
-Yes — the sector runs electronic auctions, digital trading platforms and time-critical logistics, with complex pricing and marketplace problems.
+Yes - the sector runs electronic auctions, digital trading platforms and time-critical logistics, with complex pricing and marketplace problems.
 
 ### (Scenario: candidate interested in pricing) What makes pricing flowers different from other products?
 Flowers are perishable, demand peaks sharply around holidays and supply depends on weather and transport, making forecasting unusually difficult.
@@ -166,21 +166,21 @@ Flowers are perishable, demand peaks sharply around holidays and supply depends 
 It is still part of the marketplace, but remote buying and direct digital trading between growers and buyers have become increasingly important.
 
 ### (Scenario: computer vision engineer) Is computer vision relevant in floriculture?
-Yes — product photos and quality assessment are important in digital trading, where buyers cannot inspect products physically.
+Yes - product photos and quality assessment are important in digital trading, where buyers cannot inspect products physically.
 
 ### (Scenario: candidate living in Amstelveen or Hoofddorp) Is Aalsmeer within commuting distance?
-Yes — Aalsmeer borders Amstelveen and is close to Hoofddorp, Uithoorn and Schiphol.
+Yes - Aalsmeer borders Amstelveen and is close to Hoofddorp, Uithoorn and Schiphol.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there serious data work in the flower trade?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — electronic auctions, digital trading platforms and time-critical logistics create complex data problems."}},
+    {"@type": "Question", "name": "Is there serious data work in the flower trade?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - electronic auctions, digital trading platforms and time-critical logistics create complex data problems."}},
     {"@type": "Question", "name": "What makes pricing flowers different from other products?", "acceptedAnswer": {"@type": "Answer", "text": "Perishability, sharp holiday peaks and supply dependent on weather and transport."}},
     {"@type": "Question", "name": "Is the auction clock still used?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but remote buying and direct digital trading have become increasingly important."}},
-    {"@type": "Question", "name": "Is computer vision relevant in floriculture?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — product photos and quality assessment matter in digital trading."}},
-    {"@type": "Question", "name": "Is Aalsmeer within commuting distance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it borders Amstelveen and is close to Hoofddorp, Uithoorn and Schiphol."}}
+    {"@type": "Question", "name": "Is computer vision relevant in floriculture?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - product photos and quality assessment matter in digital trading."}},
+    {"@type": "Question", "name": "Is Aalsmeer within commuting distance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - it borders Amstelveen and is close to Hoofddorp, Uithoorn and Schiphol."}}
   ]
 }
 </script>

@@ -31,19 +31,19 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A senior AI candidate has already read many job ads that promise a lot and say little that is concrete. That experience makes them more sceptical than a junior candidate, so they screen a text differently — not for enthusiasm, but for signals that the team knows what it is doing.
+A senior AI candidate has already read many job ads that promise a lot and say little that is concrete. That experience makes them more sceptical than a junior candidate, so they screen a text differently - not for enthusiasm, but for signals that the team knows what it is doing.
 
 ## What Senior Candidates Specifically Look for in a Job Ad
 
 **A concrete technical problem, not a mission statement.** Seniors immediately recognise the difference between "we want to use AI to innovate" and "we have a model that does X and struggles with Y." The second signals that the team already understands the problem, which builds trust.
 
-**Honesty about technical debt.** A senior candidate knows every company has technical debt. Not mentioning it creates distrust, not trust — it sounds as if the job ad was written by someone who doesn't know the system.
+**Honesty about technical debt.** A senior candidate knows every company has technical debt. Not mentioning it creates distrust, not trust - it sounds as if the job ad was written by someone who doesn't know the system.
 
-**Who actually wrote the vacancy.** A text that was clearly co-written by a technical team member, rather than by HR alone, reads differently to someone who has been in the field for years — the details reveal who the author is.
+**Who actually wrote the vacancy.** A text that was clearly co-written by a technical team member, rather than by HR alone, reads differently to someone who has been in the field for years - the details reveal who the author is.
 
 ## Why Generic Language Puts Senior Candidates Off Faster Than Juniors
 
-Junior candidates have less of a frame of reference to recognise a generic job ad as generic. Senior candidates do have that frame of reference, and often interpret vague language as a sign that the team itself doesn't know exactly what it is looking for — a red flag, not a neutral signal.
+Junior candidates have less of a frame of reference to recognise a generic job ad as generic. Senior candidates do have that frame of reference, and often interpret vague language as a sign that the team itself doesn't know exactly what it is looking for - a red flag, not a neutral signal.
 
 ## A Checklist Before Publishing a Vacancy for Senior Candidates
 
@@ -59,26 +59,26 @@ Junior candidates have less of a frame of reference to recognise a generic job a
 
 | Signal | Convinces senior candidates | Doesn't convince senior candidates |
 |---|---|---|
-| Concrete, current technical problem | Yes | — |
-| Honesty about technical debt | Yes | — |
-| Generic language ("innovative," "dynamic") | — | Yes, backfires |
-| Long list of requirements without prioritisation | — | Yes, creates distrust |
+| Concrete, current technical problem | Yes | - |
+| Honesty about technical debt | Yes | - |
+| Generic language ("innovative," "dynamic") | - | Yes, backfires |
+| Long list of requirements without prioritisation | - | Yes, creates distrust |
 
 ## Why This Weighs More Heavily for Senior Candidates Than for Juniors
 
-A senior candidate has often experienced several times that a job ad promised something practice didn't deliver, and is therefore quicker to interpret vague language as a warning sign rather than neutral marketing. This isn't cynicism — it is learned behaviour based on previous experience, and it means that investing in an honest, specific job ad pays back faster with this audience than with junior candidates.
+A senior candidate has often experienced several times that a job ad promised something practice didn't deliver, and is therefore quicker to interpret vague language as a warning sign rather than neutral marketing. This isn't cynicism - it is learned behaviour based on previous experience, and it means that investing in an honest, specific job ad pays back faster with this audience than with junior candidates.
 
 ## A Concrete Scenario: How a Senior Candidate Actually Reads a Vacancy
 
-A senior data scientist with ten years of experience doesn't read a job ad linearly from top to bottom — they first scan for specific technical details and skip generic opening lines. When the text starts with "We are an innovative company looking for a passionate data scientist," there is a good chance this candidate drops out before even reaching the actual job description — not out of unwillingness, but because experience has taught them that such opening lines are rarely followed by anything substantial.
+A senior data scientist with ten years of experience doesn't read a job ad linearly from top to bottom - they first scan for specific technical details and skip generic opening lines. When the text starts with "We are an innovative company looking for a passionate data scientist," there is a good chance this candidate drops out before even reaching the actual job description - not out of unwillingness, but because experience has taught them that such opening lines are rarely followed by anything substantial.
 
 ## A Common Misconception About What Seniors "Deserve" to Hear
 
-Employers sometimes think senior candidates mainly need to be convinced with status and prestige — an impressive-sounding company, a high salary, a big name. While these factors certainly play a role, this assumption underestimates how much senior candidates specifically look for evidence of technical substance, precisely because they have often been disappointed by vacancies that promised a lot and delivered little.
+Employers sometimes think senior candidates mainly need to be convinced with status and prestige - an impressive-sounding company, a high salary, a big name. While these factors certainly play a role, this assumption underestimates how much senior candidates specifically look for evidence of technical substance, precisely because they have often been disappointed by vacancies that promised a lot and delivered little.
 
 ## Why This Approach Also Improves the Quality of Your Interviews
 
-A job ad written specifically and honestly doesn't just attract better candidates — it also makes the first conversation deeper and more relevant, because the candidate already has a concrete picture of the problem and can ask targeted questions, instead of starting with basic clarification questions a more specific job ad could have prevented.
+A job ad written specifically and honestly doesn't just attract better candidates - it also makes the first conversation deeper and more relevant, because the candidate already has a concrete picture of the problem and can ask targeted questions, instead of starting with basic clarification questions a more specific job ad could have prevented.
 
 ## How to Use Feedback From Previous Applicants to Improve Your Text
 
@@ -86,7 +86,7 @@ If you have used job ads before and received little response from senior candida
 
 ## Why This Is an Ongoing Process, Not a One-Off Exercise
 
-A job ad that works well for senior candidates today may no longer do so in a year — as the market changes and candidates develop different expectations, what is experienced as "honest and specific" shifts too. So treat writing a convincing senior job ad as something that is periodically reviewed based on current feedback, not as a template that, once written well, can remain unchanged.
+A job ad that works well for senior candidates today may no longer do so in a year - as the market changes and candidates develop different expectations, what is experienced as "honest and specific" shifts too. So treat writing a convincing senior job ad as something that is periodically reviewed based on current feedback, not as a template that, once written well, can remain unchanged.
 
 ## The Six Questions a Senior Candidate Wants Your Vacancy to Answer
 
@@ -135,7 +135,7 @@ Senior candidates compare offers on more than the monthly salary. Mention these 
 For senior candidates, the assessment of your organisation starts with the selection process.
 
 - **Let a senior counterpart conduct the first substantive interview.** A senior candidate wants to spar with someone at their level, not only with HR.
-- **Replace puzzle assignments with a realistic conversation.** Discussing a real problem from your team — or a previous project of the candidate — says more to both sides than an algorithm puzzle.
+- **Replace puzzle assignments with a realistic conversation.** Discussing a real problem from your team - or a previous project of the candidate - says more to both sides than an algorithm puzzle.
 - **Offer a conversation with future colleagues.** Seniors want to know who they will be working with.
 - **Keep the process short.** Senior candidates often have several options at once; a six-week process loses them.
 
@@ -143,7 +143,7 @@ For senior candidates, the assessment of your organisation starts with the selec
 
 > "Our fraud detection models have been running in production for two years, but we're seeing more and more false positives with new payment methods. We're looking for someone to redesign the evaluation and retraining approach and make the technical choices in it."
 
-An opening like this names an existing system, a concrete problem and the role's decision-making scope — exactly the three things a senior candidate scans for in the first seconds.
+An opening like this names an existing system, a concrete problem and the role's decision-making scope - exactly the three things a senior candidate scans for in the first seconds.
 
 ## Key Takeaways
 
@@ -157,7 +157,7 @@ An opening like this names an existing system, a concrete problem and the role's
 
 Have a technical team member co-write the job ad, be specific about the current problem and existing technical debt, and avoid language that would fit a hundred other vacancies just as well.
 
-Post your open AI, machine learning or data vacancy — the first listing is free — via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
+Post your open AI, machine learning or data vacancy - the first listing is free - via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ Post your open AI, machine learning or data vacancy — the first listing is fre
 Senior candidates have more of a frame of reference to recognise generic language as generic, and more often interpret it as a sign that the team itself doesn't know exactly what it is looking for.
 
 ### (Scenario: employer unsure whether technical debt may be mentioned) Should I mention technical debt in a vacancy aimed at senior candidates?
-Yes — a senior candidate knows every company has technical debt, and not mentioning it creates distrust rather than trust.
+Yes - a senior candidate knows every company has technical debt, and not mentioning it creates distrust rather than trust.
 
 ### (Scenario: employer who has HR write the vacancy alone) Does it matter who wrote the job ad?
 Yes, senior candidates often recognise whether a technical team member co-wrote specific details, versus a text drafted solely by HR.
@@ -182,7 +182,7 @@ Have a technical team member co-write it, name a specific current problem instea
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Why do senior candidates react differently to a generic job ad than juniors?", "acceptedAnswer": {"@type": "Answer", "text": "Senior candidates have more of a frame of reference to recognise generic language, and interpret it as a sign that the team doesn't know exactly what it is looking for."}},
-    {"@type": "Question", "name": "Should I mention technical debt in a vacancy aimed at senior candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — not mentioning it creates distrust rather than trust with an experienced candidate."}},
+    {"@type": "Question", "name": "Should I mention technical debt in a vacancy aimed at senior candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - not mentioning it creates distrust rather than trust with an experienced candidate."}},
     {"@type": "Question", "name": "Does it matter who wrote the job ad?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, senior candidates often recognise whether a technical team member co-wrote specific details."}},
     {"@type": "Question", "name": "Why does a concrete technical problem work better than a mission statement?", "acceptedAnswer": {"@type": "Answer", "text": "It signals that the team already understands the problem, which builds trust with an experienced candidate."}},
     {"@type": "Question", "name": "What is the quickest way to make a job ad more credible to seniors?", "acceptedAnswer": {"@type": "Answer", "text": "Have a technical team member co-write it, name a specific current problem, and be honest about existing technical debt."}}

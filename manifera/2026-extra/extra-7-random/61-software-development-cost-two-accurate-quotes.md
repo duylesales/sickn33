@@ -24,21 +24,21 @@ Two software development vendors can each provide a genuinely honest, carefully 
 
 **The Pain:** A CFO collecting software development cost quotes from multiple vendors expects the quotes to be roughly comparable, since they're ostensibly pricing the same project, and a wide spread between quotes is often interpreted as evidence that some vendors are overpricing or others are underpricing, without examining whether the wide spread actually reflects different vendors making different assumptions about scope, quality bar, and what's included versus treated as a later addition.
 
-**The Agitation:** A CFO who selects a vendor based primarily on the lowest quote, without confirming the quotes are actually scoped comparably, risks discovering mid-project that the lower quote excluded work the CFO assumed was included — a less thorough testing approach, a narrower interpretation of "done," a lower assumed quality bar for edge-case handling — turning what looked like meaningful savings into a project that either delivers less than expected or requires costly change orders to add back the scope the CFO had assumed was there from the start.
+**The Agitation:** A CFO who selects a vendor based primarily on the lowest quote, without confirming the quotes are actually scoped comparably, risks discovering mid-project that the lower quote excluded work the CFO assumed was included - a less thorough testing approach, a narrower interpretation of "done," a lower assumed quality bar for edge-case handling - turning what looked like meaningful savings into a project that either delivers less than expected or requires costly change orders to add back the scope the CFO had assumed was there from the start.
 
 ## What Actually Explains a Wide Quote Spread
 
 A wide spread between honest software development cost quotes for what appears to be the same project usually traces back to a small number of specific, identifiable scope and assumption differences, and a CFO who explicitly probes for these differences can make quotes genuinely comparable rather than comparing numbers that represent different actual projects.
 
-The first major source of variation is testing and quality assurance depth — a quote that assumes a light testing pass covering happy-path functionality is pricing a meaningfully different project than a quote that assumes the risk-weighted, thorough testing approach covered earlier in the context of software testing broadly, and this difference alone can account for a substantial share of the price gap between two quotes for ostensibly the same feature set.
+The first major source of variation is testing and quality assurance depth - a quote that assumes a light testing pass covering happy-path functionality is pricing a meaningfully different project than a quote that assumes the risk-weighted, thorough testing approach covered earlier in the context of software testing broadly, and this difference alone can account for a substantial share of the price gap between two quotes for ostensibly the same feature set.
 
-The second major source is edge-case and error-handling scope — a quote that implicitly assumes only the common, expected usage patterns need to be handled gracefully is pricing considerably less work than a quote that assumes genuine handling of unusual inputs, failure modes, and edge cases, and this assumption is rarely stated explicitly in a quote unless a CFO specifically asks how each vendor is scoping this dimension of the work.
+The second major source is edge-case and error-handling scope - a quote that implicitly assumes only the common, expected usage patterns need to be handled gracefully is pricing considerably less work than a quote that assumes genuine handling of unusual inputs, failure modes, and edge cases, and this assumption is rarely stated explicitly in a quote unless a CFO specifically asks how each vendor is scoping this dimension of the work.
 
-The third major source is post-launch support and knowledge transfer scope — some quotes include a defined period of post-launch support and genuine documentation and knowledge transfer to the client's team, while others price only the initial build and treat everything after launch as a separate, later engagement, and a CFO comparing quotes without confirming this scope is comparing a project that includes real transition support against one that doesn't.
+The third major source is post-launch support and knowledge transfer scope - some quotes include a defined period of post-launch support and genuine documentation and knowledge transfer to the client's team, while others price only the initial build and treat everything after launch as a separate, later engagement, and a CFO comparing quotes without confirming this scope is comparing a project that includes real transition support against one that doesn't.
 
-The fourth major source is the underlying assumed skill and seniority level of the team actually doing the work — quotes built around a team with less senior, less specialized engineers naturally cost less than quotes built around a more senior, more specialized team, and while a less senior team isn't automatically the wrong choice, a CFO should know explicitly which assumption underlies each quote, since it affects not just cost but the quality and risk profile of what actually gets delivered.
+The fourth major source is the underlying assumed skill and seniority level of the team actually doing the work - quotes built around a team with less senior, less specialized engineers naturally cost less than quotes built around a more senior, more specialized team, and while a less senior team isn't automatically the wrong choice, a CFO should know explicitly which assumption underlies each quote, since it affects not just cost but the quality and risk profile of what actually gets delivered.
 
-A CFO who explicitly asks each vendor to detail their assumptions on these four dimensions — testing depth, edge-case handling scope, post-launch support inclusion, and team seniority — before comparing quotes gets genuinely comparable numbers, or at minimum, a clear understanding of what a lower number is actually not including, which is the information a CFO actually needs to make a genuinely informed vendor selection decision rather than one based on a number that may represent a materially different, smaller project.
+A CFO who explicitly asks each vendor to detail their assumptions on these four dimensions - testing depth, edge-case handling scope, post-launch support inclusion, and team seniority - before comparing quotes gets genuinely comparable numbers, or at minimum, a clear understanding of what a lower number is actually not including, which is the information a CFO actually needs to make a genuinely informed vendor selection decision rather than one based on a number that may represent a materially different, smaller project.
 
 ## The Hybrid Hub: How Manifera Executes This
 
@@ -56,7 +56,7 @@ Skaitmeninė Prekyba Kaunas UAB, a Kaunas-based retail company, had selected a v
 Manifera's subsequent quote for the company's next project included an explicit scope breakdown across all four dimensions, allowing the CFO to directly compare it against a competing quote on genuinely equal terms for the first time. The company selected Manifera with full visibility into what was actually being purchased, avoiding the change-order surprises the earlier project had experienced.
 
 > *"We picked the cheaper quote and thought we were saving money. We were buying a smaller project and didn't know it. The second time, we made every vendor spell out exactly what was and wasn't included, and the real cost differences made a lot more sense once we could actually see them."*
-> — **CFO, Skaitmeninė Prekyba Kaunas UAB, Lithuania**
+> - **CFO, Skaitmeninė Prekyba Kaunas UAB, Lithuania**
 
 ## Opaque Quote Comparison vs. Manifera's Explicitly-Scoped Quoting
 
@@ -76,7 +76,7 @@ A CFO who selects a vendor based on the lowest software development cost quote, 
 
 ### (Scenario: CFO comparing widely differing software development cost quotes for the same project) Why can two honest software development cost quotes for the same project differ by two or three times?
 
-Because vendors make different assumptions about scope — testing depth, edge-case handling, post-launch support, and team seniority — that aren't always stated explicitly in the quoted number.
+Because vendors make different assumptions about scope - testing depth, edge-case handling, post-launch support, and team seniority - that aren't always stated explicitly in the quoted number.
 
 ### (Scenario: CFO trying to understand why testing depth affects a quote's price) How does testing and quality assurance depth affect a software development cost quote?
 

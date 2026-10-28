@@ -1,4 +1,4 @@
-🚨 He'd already lost a quarter of runway to a contract dispute he didn't see coming — because he'd skimmed the fine print once and trusted it was boilerplate. He wasn't doing that twice. 😳
+🚨 He'd already lost a quarter of runway to a contract dispute he didn't see coming - because he'd skimmed the fine print once and trusted it was boilerplate. He wasn't doing that twice. 😳
 
 Most founders sign engineering contracts the way they sign phone contracts: skim for the price, ignore the rest. Here's what actually matters: 🧠
 

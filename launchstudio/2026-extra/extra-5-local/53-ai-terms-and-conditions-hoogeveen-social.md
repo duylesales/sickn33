@@ -1,4 +1,4 @@
-📋 Sander Kuipers built FlexCrew, a shift-scheduling app for staffing agencies around Hoogeveen, using Cursor over evenings after his day job — he owned the code outright, no question. Then a logistics client asked, before signing, how employee data was stored and secured. He had no confident answer. 😳
+📋 Sander Kuipers built FlexCrew, a shift-scheduling app for staffing agencies around Hoogeveen, using Cursor over evenings after his day job - he owned the code outright, no question. Then a logistics client asked, before signing, how employee data was stored and secured. He had no confident answer. 😳
 
 Owning your AI-generated code and knowing it's actually safe are two completely different things. 🧠
 
@@ -11,7 +11,7 @@ Owning your AI-generated code and knowing it's actually safe are two completely 
 ✅ Row-level security and session expiry fixed
 ✅ A written data-handling summary Sander could hand straight to procurement
 
-At **LaunchStudio**, we turn "I own it" into "it's actually ready" — the same rigor Manifera applies across 160+ delivered projects for clients like Vodafone and TNO. 🛡️
+At **LaunchStudio**, we turn "I own it" into "it's actually ready" - the same rigor Manifera applies across 160+ delivered projects for clients like Vodafone and TNO. 🛡️
 
 His result: FlexCrew closed its first paying logistics client, with the security summary now reused in every sales conversation since. 🚀
 

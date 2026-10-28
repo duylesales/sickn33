@@ -1,6 +1,6 @@
-🚨 Nadia bouwde een platform voor vergadernotities met **Replit** — nadia, a startup founder, used **replit** to build an AI meeting-notes tool, maar een storing van 3 uur bij OpenAI wiste stilletjes zes vergaderingen aan notities tijdens de evaluatieweek van haar grootste proefklant. 🧠
+🚨 Nadia bouwde een platform voor vergadernotities met **Replit** - nadia, a startup founder, used **replit** to build an AI meeting-notes tool, maar een storing van 3 uur bij OpenAI wiste stilletjes zes vergaderingen aan notities tijdens de evaluatieweek van haar grootste proefklant. 🧠
 
-Als uw AI SaaS-product nog nooit een echte LLM-providerstoring heeft overleefd, is dat niet omdat het veerkrachtig is — het is omdat het nog niet is getest.
+Als uw AI SaaS-product nog nooit een echte LLM-providerstoring heeft overleefd, is dat niet omdat het veerkrachtig is - het is omdat het nog niet is getest.
 
 ❌ Geen time-out of circuit breaker, waardoor hangende verzoeken zich opstapelden en de storing erger maakten
 ❌ Geen fallback-model of wachtrij, waardoor mislukte aanroepen gewoon stilletjes data verloren
@@ -12,7 +12,7 @@ Als uw AI SaaS-product nog nooit een echte LLM-providerstoring heeft overleefd, 
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De volgende storing was een non-event: geen verloren notities, geen supporttickets, en Nadia's proefklant werd twee weken later omgezet in een volledige bedrijfsbrede uitrol. (€1.400 (Launch Ready Pakket) — 5 werkdagen, voor een vergelijkbaar traject.) 🚀
+De volgende storing was een non-event: geen verloren notities, geen supporttickets, en Nadia's proefklant werd twee weken later omgezet in een volledige bedrijfsbrede uitrol. (€1.400 (Launch Ready Pakket) - 5 werkdagen, voor een vergelijkbaar traject.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/graceful-degradation-llm-outage-case-study
 

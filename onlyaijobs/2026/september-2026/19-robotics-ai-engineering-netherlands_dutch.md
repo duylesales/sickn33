@@ -21,19 +21,19 @@ Content Format: Career Guide
 }
 </script>
 
-Een perceptiemodel dat perfect werkt in een Jupyter-notebook kan alsnog falen op een robot, omdat de notebook niet in realtime hoeft te draaien op beperkte hardware terwijl een fysieke arm al beweegt. Roboticarollen zijn een van de kleinste categorieën in de Nederlandse AI-arbeidsmarkt, en ook een van de meest onderscheidende — het machine learning is noodzakelijk maar niet voldoende, en de meeste algemene AI-vacatures toetsen simpelweg niet op de andere helft.
+Een perceptiemodel dat perfect werkt in een Jupyter-notebook kan alsnog falen op een robot, omdat de notebook niet in realtime hoeft te draaien op beperkte hardware terwijl een fysieke arm al beweegt. Roboticarollen zijn een van de kleinste categorieën in de Nederlandse AI-arbeidsmarkt, en ook een van de meest onderscheidende - het machine learning is noodzakelijk maar niet voldoende, en de meeste algemene AI-vacatures toetsen simpelweg niet op de andere helft.
 
 ## Wat robotica-AI-rollen anders maakt
 
-**Realtime-randvoorwaarden zijn niet onderhandelbaar.** Een aanbevelingsmodel mag een paar honderd milliseconden traag zijn zonder dat iemand het merkt. Een perceptiemodel op een bewegende robot niet — de fysieke wereld wacht niet op een trage inferentiepas.
+**Realtime-randvoorwaarden zijn niet onderhandelbaar.** Een aanbevelingsmodel mag een paar honderd milliseconden traag zijn zonder dat iemand het merkt. Een perceptiemodel op een bewegende robot niet - de fysieke wereld wacht niet op een trage inferentiepas.
 
-**De stack overspant disciplines.** Een robotica-AI-rol vraagt doorgaans gemak met regeltechniek, sensorfusie en vaak C++ of embedded randvoorwaarden, naast het machine learning zelf. Kandidaten die sterk zijn in de ene helft en zwak in de andere, komen vaak niet door deze gesprekken heen — niet omdat het ML zwaar is, maar omdat de systeemhelft onbekend terrein is.
+**De stack overspant disciplines.** Een robotica-AI-rol vraagt doorgaans gemak met regeltechniek, sensorfusie en vaak C++ of embedded randvoorwaarden, naast het machine learning zelf. Kandidaten die sterk zijn in de ene helft en zwak in de andere, komen vaak niet door deze gesprekken heen - niet omdat het ML zwaar is, maar omdat de systeemhelft onbekend terrein is.
 
-**Falen is fysiek.** Een verkeerd geclassificeerd object is geen slechte aanbeveling — het kan een botsing zijn, een gevallen onderdeel, of een veiligheidsstop. Evaluatie- en testnormen weerspiegelen dat.
+**Falen is fysiek.** Een verkeerd geclassificeerd object is geen slechte aanbeveling - het kan een botsing zijn, een gevallen onderdeel, of een veiligheidsstop. Evaluatie- en testnormen weerspiegelen dat.
 
 ## Waarom deze categorie bijna leeg oogt op algemene vacaturebanken
 
-Roboticarollen zijn in absolute aantallen daadwerkelijk zeldzamer dan algemene ML-rollen, en de bedrijven die ervoor werven zijn doorgaans gespecialiseerd — industriële automatisering, hardwarestartups, onderzoeksspin-offs — in plaats van de consumententechwerkgevers die de advertenties op algemene banken domineren. Een dunne categorie op welke vacaturebank dan ook weerspiegelt een dun marktsegment op landelijk niveau, geen bankspecifiek gat, dus geduld en een ruimere geografische zoekstraal wegen hier zwaarder dan in de meeste andere categorieën.
+Roboticarollen zijn in absolute aantallen daadwerkelijk zeldzamer dan algemene ML-rollen, en de bedrijven die ervoor werven zijn doorgaans gespecialiseerd - industriële automatisering, hardwarestartups, onderzoeksspin-offs - in plaats van de consumententechwerkgevers die de advertenties op algemene banken domineren. Een dunne categorie op welke vacaturebank dan ook weerspiegelt een dun marktsegment op landelijk niveau, geen bankspecifiek gat, dus geduld en een ruimere geografische zoekstraal wegen hier zwaarder dan in de meeste andere categorieën.
 
 ## Waar te beginnen
 
@@ -43,11 +43,11 @@ Bekijk actuele robotica-, computer vision- en AI-engineeringvacatures door heel 
 
 ## Het entiteitenlandschap van Nederlandse roboticawerkgelegenheid
 
-**Industriële automatiseringsbedrijven** die perceptie en besturing integreren in productielijnen vormen de grootste werkgeverscategorie — vaak bedrijven die zichzelf helemaal niet omschrijven als "roboticabedrijf", maar gewoon als fabrikant die toevallig een proces heeft geautomatiseerd.
+**Industriële automatiseringsbedrijven** die perceptie en besturing integreren in productielijnen vormen de grootste werkgeverscategorie - vaak bedrijven die zichzelf helemaal niet omschrijven als "roboticabedrijf", maar gewoon als fabrikant die toevallig een proces heeft geautomatiseerd.
 
-**Hardware- en roboticastartups** zijn kleiner in aantal maar produceren enkele van de technisch meest veeleisende rollen, aangezien een jong bedrijf dat een fysiek product vanaf nul bouwt zich doorgaans nog niet kan veroorloven perceptie, besturing en ML in aparte specialistenrollen te splitsen — verwacht brede reikwijdte.
+**Hardware- en roboticastartups** zijn kleiner in aantal maar produceren enkele van de technisch meest veeleisende rollen, aangezien een jong bedrijf dat een fysiek product vanaf nul bouwt zich doorgaans nog niet kan veroorloven perceptie, besturing en ML in aparte specialistenrollen te splitsen - verwacht brede reikwijdte.
 
-**Robotica-labs van universiteiten en instituten** overlappen sterk met de onderzoeksnabije wervingspatronen die elders op deze site worden besproken — gesubsidieerd, academisch genetwerkt, en zelden op een algemene vacaturebank geplaatst tot er een specifieke opening bestaat.
+**Robotica-labs van universiteiten en instituten** overlappen sterk met de onderzoeksnabije wervingspatronen die elders op deze site worden besproken - gesubsidieerd, academisch genetwerkt, en zelden op een algemene vacaturebank geplaatst tot er een specifieke opening bestaat.
 
 ## Robotica-AI versus schermgebaseerd ML, direct vergeleken
 
@@ -61,7 +61,7 @@ Bekijk actuele robotica-, computer vision- en AI-engineeringvacatures door heel 
 
 ## Waarom de kleine kandidatenpool twee kanten op snijdt
 
-Een kleinere landelijke pool robotica-bekwame kandidaten betekent minder concurrentie per opening, maar het betekent ook dat werkgevers zich niet altijd zo selectief kunnen opstellen als een Randstad-productbedrijf dat kan voor een algemene ML-rol — wat zich soms vertaalt in meer bereidheid om een sterke systeemengineer op te leiden naar de ML-kant, of een sterke ML-engineer naar de systeemkant, in plaats van te eisen dat een kandidaat beide al heeft. Ben je sterk in de ene helft en zwak in de andere, dan is deze markt vergevingsgezinder voor dat gat dan de omvang van het vakgebied doet vermoeden, mits je open bent over in welke helft je solide bent.
+Een kleinere landelijke pool robotica-bekwame kandidaten betekent minder concurrentie per opening, maar het betekent ook dat werkgevers zich niet altijd zo selectief kunnen opstellen als een Randstad-productbedrijf dat kan voor een algemene ML-rol - wat zich soms vertaalt in meer bereidheid om een sterke systeemengineer op te leiden naar de ML-kant, of een sterke ML-engineer naar de systeemkant, in plaats van te eisen dat een kandidaat beide al heeft. Ben je sterk in de ene helft en zwak in de andere, dan is deze markt vergevingsgezinder voor dat gat dan de omvang van het vakgebied doet vermoeden, mits je open bent over in welke helft je solide bent.
 
 ## Veelgestelde vragen
 
@@ -69,16 +69,16 @@ Een kleinere landelijke pool robotica-bekwame kandidaten betekent minder concurr
 Roboticarollen vragen doorgaans gemak met regeltechniek, sensorfusie en realtime-randvoorwaarden naast machine learning. Kandidaten die sterk zijn in modellering maar onbekend met de systeemhelft lopen vaak vast, niet omdat de ML-verwachtingen ongewoon hoog zijn, maar omdat die andere helft onbekend terrein is.
 
 ### (Scenario: kandidaat die weinig roboticavacatures ziet) Waarom zijn er zo weinig robotica-AI-vacatures vergeleken met andere categorieën?
-Roboticarollen zijn landelijk in absolute aantallen daadwerkelijk zeldzamer — de werkgevers die ervoor werven zijn doorgaans gespecialiseerde industriële-automatiserings-, hardware- of onderzoeksorganisaties in plaats van de consumententechbedrijven die de advertenties op algemene banken domineren.
+Roboticarollen zijn landelijk in absolute aantallen daadwerkelijk zeldzamer - de werkgevers die ervoor werven zijn doorgaans gespecialiseerde industriële-automatiserings-, hardware- of onderzoeksorganisaties in plaats van de consumententechbedrijven die de advertenties op algemene banken domineren.
 
 ### (Scenario: kandidaat die wil weten wat deze categorie onderscheidt) Wat maakt een perceptiemodel voor robotica zwaarder dan een vergelijkbaar model voor een schermgebaseerd product?
 Realtime-inferentierandvoorwaarden en fysieke faalgevolgen. Een robotica-perceptiemodel moet binnen een strikt latencybudget draaien op beperkte hardware, en een misclassificatie kan fysieke gevolgen hebben in plaats van alleen een slechtere gebruikerservaring.
 
 ### (Scenario: kandidaat die twijfelt of hij zijn zoekstraal moet verbreden) Moet ik mijn zoekstraal specifiek voor roboticarollen verbreden?
-Waarschijnlijk wel, meer dan voor andere categorieën — omdat het segment landelijk kleiner en gespecialiseerder is, is je zoektocht beperken tot één stad eerder een manier om het beperkte aantal relevante werkgevers te missen.
+Waarschijnlijk wel, meer dan voor andere categorieën - omdat het segment landelijk kleiner en gespecialiseerder is, is je zoektocht beperken tot één stad eerder een manier om het beperkte aantal relevante werkgevers te missen.
 
 ### (Scenario: kandidaat met een hybride ML/systeemachtergrond die wil weten hoe die te presenteren) Hoe positioneer ik een achtergrond die zowel ML als systeemengineering omvat?
-Haal de combinatie expliciet naar voren in plaats van te beginnen met een generiek ML-cv — het is een zeldzamere combinatie dan elk van beide vaardigheden apart, en roboticawerkgevers screenen daar specifiek op.
+Haal de combinatie expliciet naar voren in plaats van te beginnen met een generiek ML-cv - het is een zeldzamere combinatie dan elk van beide vaardigheden apart, en roboticawerkgevers screenen daar specifiek op.
 
 <script type="application/ld+json">
 {

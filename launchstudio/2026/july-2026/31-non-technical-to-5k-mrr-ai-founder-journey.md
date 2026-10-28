@@ -29,7 +29,7 @@ Sarah realized the prototype was a brilliant proof of concept, but it was not a 
 
 ## The Bridge: LaunchStudio
 
-Instead of trying to learn database security and webhook verification—which would have taken months—Sarah contacted LaunchStudio.
+Instead of trying to learn database security and webhook verification - which would have taken months - Sarah contacted LaunchStudio.
 
 Because Sarah had already built the frontend and the core logic, she didn't need a development agency to start from scratch. She needed a production-readiness bridge. LaunchStudio assessed the codebase and implemented the critical infrastructure over two weeks:
 
@@ -93,7 +93,7 @@ Daniel partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 **Result:** Daniel launched the monetization flow successfully, converting 45 paying customers within 7 days.
 
-**Cost & Timeline:** €1,200 (Monetization Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,200 (Monetization Package) - production-ready and deployed in 4 business days.
 
 ---
 

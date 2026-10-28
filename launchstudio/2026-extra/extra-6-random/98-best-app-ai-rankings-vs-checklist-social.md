@@ -1,4 +1,4 @@
-📊 Senna Edam picked her AI coding tool by researching "best app AI" rankings — reasonable at first. Then she kept re-checking those rankings weekly mid-build and switched tools twice when a competitor edged ahead slightly. 😅
+📊 Senna Edam picked her AI coding tool by researching "best app AI" rankings - reasonable at first. Then she kept re-checking those rankings weekly mid-build and switched tools twice when a competitor edged ahead slightly. 😅
 
 A ranking treadmill can cost you more than either tool was ever worth. 🧠
 
@@ -8,7 +8,7 @@ A ranking treadmill can cost you more than either tool was ever worth. 🧠
 ❌ The feature differences turned out to be marginal for her specific use case anyway
 
 ✅ Build a short, concrete checklist specific to your project's actual needs, checked once
-✅ Only switch tools for a specific, named blocker — not a ranking wobble
+✅ Only switch tools for a specific, named blocker - not a ranking wobble
 ✅ Consolidate the most complete version of a multi-tool project instead of starting over again
 
 At **LaunchStudio**, backed by Manifera's 120+ seasoned engineers, our Singapore hub regularly untangles exactly this kind of tool-hopping into one coherent, production-ready codebase. 🛡️

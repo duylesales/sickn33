@@ -10,7 +10,7 @@
 ✅ **Role-Based Authorization Testing:** Verifying access control across tenancy and roles, not just login.
 ✅ **Full Transitive Dependency and Infrastructure Review:** Nothing three levels deep goes unchecked.
 
-A report that holds up when someone else checks your work — that's the actual bar. 🎯
+A report that holds up when someone else checks your work - that's the actual bar. 🎯
 
 👉 Read our full deep dive on software security audits: https://www.manifera.com/blog/software-security-audit
 

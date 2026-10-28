@@ -35,7 +35,7 @@ Content Format: Practical Guide
 }
 </script>
 
-Take-home assignments in AI hiring are common across Europe, and candidates' feelings about them range from mild irritation to outright refusal. Some are excellent: a focused, two-hour task closely related to the team's work, discussed afterwards with an engineer. Others are unpaid project work disguised as assessment. The difference matters, because a good assignment is the fairest part of many hiring processes — it rewards thinking rather than interview nerves — while a bad one wastes a weekend you will not get back. This guide explains what reviewers actually look for, how to scope your effort, what to document, when to push back or decline and how to make the follow-up conversation the strongest part of your candidacy.
+Take-home assignments in AI hiring are common across Europe, and candidates' feelings about them range from mild irritation to outright refusal. Some are excellent: a focused, two-hour task closely related to the team's work, discussed afterwards with an engineer. Others are unpaid project work disguised as assessment. The difference matters, because a good assignment is the fairest part of many hiring processes - it rewards thinking rather than interview nerves - while a bad one wastes a weekend you will not get back. This guide explains what reviewers actually look for, how to scope your effort, what to document, when to push back or decline and how to make the follow-up conversation the strongest part of your candidacy.
 
 ## What Reviewers Actually Look For
 
@@ -51,7 +51,7 @@ A submission that scores slightly worse on the metric but includes a clear basel
 
 ## Scoping Your Time
 
-Ask how long the task should take, and then respect that number — treating a four-hour assignment as a two-day project is not a sign of enthusiasm, and many reviewers mark it down. If you genuinely need more time because of work or family commitments, ask for a deadline extension rather than spending more hours.
+Ask how long the task should take, and then respect that number - treating a four-hour assignment as a two-day project is not a sign of enthusiasm, and many reviewers mark it down. If you genuinely need more time because of work or family commitments, ask for a deadline extension rather than spending more hours.
 
 A workable allocation for a typical four-hour data task:
 
@@ -132,7 +132,7 @@ Candidates who can discuss their own work critically almost always outperform ca
 
 ## Handling Feedback and Rejection
 
-If you are rejected after an assignment, ask for specific feedback. Many European employers give it, and a single sentence — "the split ignored the time ordering" — is worth more than another course. If no feedback is offered, review the submission yourself a week later; the flaws are usually visible with fresh eyes.
+If you are rejected after an assignment, ask for specific feedback. Many European employers give it, and a single sentence - "the split ignored the time ordering" - is worth more than another course. If no feedback is offered, review the submission yourself a week later; the flaws are usually visible with fresh eyes.
 
 ## What Good Employers Do
 
@@ -142,25 +142,25 @@ Employers who get this right find that assignments become a selling point: stron
 
 ## AI Tools and Assignments
 
-Most employers now assume candidates use coding assistants, and many say so explicitly. The safe approach is to ask what is permitted, use tools as you would at work, and be able to explain every line you submit. Reviewers do not usually mind that a helper generated boilerplate; they mind when a candidate cannot justify a decision in the code. If an employer asks you not to use assistants, respect that — and expect the follow-up discussion to test your understanding either way.
+Most employers now assume candidates use coding assistants, and many say so explicitly. The safe approach is to ask what is permitted, use tools as you would at work, and be able to explain every line you submit. Reviewers do not usually mind that a helper generated boilerplate; they mind when a candidate cannot justify a decision in the code. If an employer asks you not to use assistants, respect that - and expect the follow-up discussion to test your understanding either way.
 
 ## How OnlyAIJobs Fits Your Process
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Vacancies are shown at their exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Because listings are limited to AI, ML and data roles and compete on content, the postings tend to describe the actual work — which helps you judge, before you invest a weekend, whether a take-home task is likely to be relevant to a job you want. Reading two or three vacancies from the same employer also gives you useful context for the assignment brief.
+Because listings are limited to AI, ML and data roles and compete on content, the postings tend to describe the actual work - which helps you judge, before you invest a weekend, whether a take-home task is likely to be relevant to a job you want. Reading two or three vacancies from the same employer also gives you useful context for the assignment brief.
 
 To be transparent about scope: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Elsewhere in Europe, combine it with national boards and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
 
 ## A Final Thought
 
-Treat every assignment as a small piece of professional work rather than an exam. The habits that make a submission strong — stating assumptions, building a baseline, documenting limitations, stopping on time — are the same habits that make you effective once you are hired. Candidates who internalise that tend to find the process less stressful, because they are not performing; they are simply working the way they intend to keep working.
+Treat every assignment as a small piece of professional work rather than an exam. The habits that make a submission strong - stating assumptions, building a baseline, documenting limitations, stopping on time - are the same habits that make you effective once you are hired. Candidates who internalise that tend to find the process less stressful, because they are not performing; they are simply working the way they intend to keep working.
 
 ## Live Assignments and Pair Sessions
 
 Some employers replace take-home work with a live session: an hour with an engineer, working on a small problem together, sometimes with a dataset you see for the first time. Candidates often dread these, but they are usually fairer than they feel, because the interviewer sees your reasoning rather than only your output.
 
-Preparation for a live session differs from preparation for a take-home. Practise narrating your thinking out loud — what you are checking, what you expect to see, what would change your mind. Start by inspecting the data and stating assumptions rather than writing code immediately. Ask questions; in a live setting, asking "what decision does this support?" is part of the assessment, not an interruption. Do not worry about syntax errors or looking things up; interviewers expect both. What they are listening for is structure: do you form a hypothesis, test it, and adapt when the data disagrees?
+Preparation for a live session differs from preparation for a take-home. Practise narrating your thinking out loud - what you are checking, what you expect to see, what would change your mind. Start by inspecting the data and stating assumptions rather than writing code immediately. Ask questions; in a live setting, asking "what decision does this support?" is part of the assessment, not an interruption. Do not worry about syntax errors or looking things up; interviewers expect both. What they are listening for is structure: do you form a hypothesis, test it, and adapt when the data disagrees?
 
 If you freeze, say what you are considering and why you are stuck. Interviewers routinely help candidates who think aloud, and a recovered stumble often reads better than a flawless but silent performance.
 
@@ -182,7 +182,7 @@ The hiring manager invited the second candidate. In the discussion, her leakage 
 
 ## Key Takeaways
 
-- Reviewers assess problem understanding, evaluation soundness, code clarity, scope discipline and communication — not just the metric.
+- Reviewers assess problem understanding, evaluation soundness, code clarity, scope discipline and communication - not just the metric.
 - Respect the stated time; ask for an extension rather than overspending.
 - Always include a baseline and an honest limitations section.
 - Make the submission runnable from a single command.
@@ -190,7 +190,7 @@ The hiring manager invited the second candidate. In the discussion, her leakage 
 
 ## Where to Start
 
-Prepare a small personal template — project structure, evaluation helpers, write-up outline — so your next assignment starts at the interesting part. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
+Prepare a small personal template - project structure, evaluation helpers, write-up outline - so your next assignment starts at the interesting part. Browse current AI, ML and data vacancies at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), and if you hire AI talent, list your first vacancy free via info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

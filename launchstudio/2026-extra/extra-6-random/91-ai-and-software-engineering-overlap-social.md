@@ -1,4 +1,4 @@
-🚨 Bente Bennebroek built RoosterKoppel, a shift-swap tool for retail teams, with Cursor — the code was clean and readable, so she skipped a dedicated review pass entirely, figuring "the AI already engineered it." 😳
+🚨 Bente Bennebroek built RoosterKoppel, a shift-swap tool for retail teams, with Cursor - the code was clean and readable, so she skipped a dedicated review pass entirely, figuring "the AI already engineered it." 😳
 
 Clean code and engineered code are not the same claim. 🧠
 

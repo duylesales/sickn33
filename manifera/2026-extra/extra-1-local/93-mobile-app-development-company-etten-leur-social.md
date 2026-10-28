@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Offline-First Architecture:** Built for unreliable connectivity, not assuming it away.
-✅ **Low-Friction Data Entry:** Fast input designed for real field conditions — gloves, one hand, time pressure.
+✅ **Low-Friction Data Entry:** Fast input designed for real field conditions - gloves, one hand, time pressure.
 ✅ **Direct Field Observation:** Workflows built after watching technicians work, not from a stakeholder's description.
 
 Adoption is the only metric that actually matters. 🛡️

@@ -35,20 +35,20 @@ Veel oprichters zeggen vol enthousiasme *"ja"* tegen het eerste, en laten zich s
 
 Het integreren van notificaties met zakelijke chatplatforms zoals Slack of Microsoft Teams kent vier verschillende niveaus van softwarematige complexiteit:
 
-**1. Inkomende webhooks (Incoming Webhooks):** De klant maakt in zijn eigen Slack- of Teams-werkruimte een inkomende webhook-URL aan en plakt die link in uw beheerpaneel. Uw server vuurt simpelweg een HTTP POST-verzoek met een JSON-payload af naar die URL. Geen OAuth-toestemmingsschermen, geen platformreviews, geen tokenbeheer in uw database, en de IT-beheerder van de klant behoudt de volledige controle over het kanaal — wat enterprise-klanten doorgaans prefereren. Dit kost een ontwikkelaar letterlijk één middag werk, en dekt 90% van alle klantwensen direct af.
+**1. Inkomende webhooks (Incoming Webhooks):** De klant maakt in zijn eigen Slack- of Teams-werkruimte een inkomende webhook-URL aan en plakt die link in uw beheerpaneel. Uw server vuurt simpelweg een HTTP POST-verzoek met een JSON-payload af naar die URL. Geen OAuth-toestemmingsschermen, geen platformreviews, geen tokenbeheer in uw database, en de IT-beheerder van de klant behoudt de volledige controle over het kanaal - wat enterprise-klanten doorgaans prefereren. Dit kost een ontwikkelaar letterlijk één middag werk, en dekt 90% van alle klantwensen direct af.
 
-**2. Een officiële Slack/Teams app met OAuth-koppeling:** De klant klikt in uw app op de knop *"Add to Slack"*, geeft toestemming via een OAuth-dialoog, en selecteert het gewenste kanaal. Dit biedt een iets geliktere gebruikerservaring, maar betekent wel dat u OAuth-tokens voor hun werkruimte moet opslaan, rekening moet houden met ingetrokken rechten, en — als u de app publiek in de Slack App Directory wilt vermelden — een streng verificatietraject moet doorlopen.
+**2. Een officiële Slack/Teams app met OAuth-koppeling:** De klant klikt in uw app op de knop *"Add to Slack"*, geeft toestemming via een OAuth-dialoog, en selecteert het gewenste kanaal. Dit biedt een iets geliktere gebruikerservaring, maar betekent wel dat u OAuth-tokens voor hun werkruimte moet opslaan, rekening moet houden met ingetrokken rechten, en - als u de app publiek in de Slack App Directory wilt vermelden - een streng verificatietraject moet doorlopen.
 
 **3. Een interactieve bot:** Berichten met interactieve knoppen, keuzemenu's, modals en slash-commands (zoals `/dossier status`). Elke interactie van een gebruiker in Slack stuurt direct een webhook-verzoek naar uw server, dat u binnen drie seconden cryptografisch moet verifiëren en beantwoorden. Dit is een serieuze, doorlopende architectonische verplichting met zijn eigen foutopsporing.
 
-**4. Hetzelfde feest opnieuw voor Microsoft Teams:** Wat een compleet gescheiden API, een afzonderlijke Azure Active Directory-registratie en een eigen reviewproces vereist. Voor veel Europese zakelijke dienstverleners (accountants, juristen, zorginstellingen) is Microsoft Teams echter het enige platform dat telt — Teams domineert massaal in sectoren waar Slack volkomen afwezig is.
+**4. Hetzelfde feest opnieuw voor Microsoft Teams:** Wat een compleet gescheiden API, een afzonderlijke Azure Active Directory-registratie en een eigen reviewproces vereist. Voor veel Europese zakelijke dienstverleners (accountants, juristen, zorginstellingen) is Microsoft Teams echter het enige platform dat telt - Teams domineert massaal in sectoren waar Slack volkomen afwezig is.
 
 Het juiste vertrekpunt voor 95% van de vroege SaaS-producten is **niveau 1**. Het lost het probleem direct op, kost vrijwel niets aan onderhoud, en stelt de beslissing over een complexe interactieve bot uit totdat meerdere betalende klanten er expliciet om smeken.
 ## Bouw Eerst een In-App Notificatiecentrum
 
 Voordat u tijd en energie investeert in externe chatkanalen, moet u eerst een fundamentele vraag beantwoorden: bezit uw eigen softwareapplicatie al een centrale plek waar notificaties leven?
 
-Een betrouwbaar notificatiecentrum direct in de applicatie — een herkenbaar bel-icoontje rechtsbovenin het scherm met een overzicht van recente gebeurtenissen, gelezen en ongelezen statussen — is oneindig veel goedkoper om te bouwen en vervult een functie die geen enkele externe tool kan evenaren: **het is de officiële, permanente waarheid**. E-mails worden over het hoofd gezien in een overvolle inbox, Slack-berichten scrollen binnen een uur buiten beeld in een druk teamkanaal, maar een klant die na twee weken vakantie inlogt in uw app ziet direct exact wat er in zijn afwezigheid is gebeurd. Het maakt externe kanalen bovendien een optioneel extraatje in plaats van een kwetsbare afhankelijkheid.
+Een betrouwbaar notificatiecentrum direct in de applicatie - een herkenbaar bel-icoontje rechtsbovenin het scherm met een overzicht van recente gebeurtenissen, gelezen en ongelezen statussen - is oneindig veel goedkoper om te bouwen en vervult een functie die geen enkele externe tool kan evenaren: **het is de officiële, permanente waarheid**. E-mails worden over het hoofd gezien in een overvolle inbox, Slack-berichten scrollen binnen een uur buiten beeld in een druk teamkanaal, maar een klant die na twee weken vakantie inlogt in uw app ziet direct exact wat er in zijn afwezigheid is gebeurd. Het maakt externe kanalen bovendien een optioneel extraatje in plaats van een kwetsbare afhankelijkheid.
 
 De logische volgorde van investeren luidt:
 1. Eerst een degelijk in-app notificatiecentrum.
@@ -68,7 +68,7 @@ Drie ontwerpregels voorkomen deze notificatie-moeheid:
 
 **Intelligente bundeling bij piekverkeer (Batching):** Tien gebeurtenissen binnen twee minuten moeten automatisch worden samengevat in één enkel overzichtsbericht, exact volgens hetzelfde batching-principe dat geldt voor e-mailnotificaties.
 
-Laat de klant daarnaast zelf kiezen welke gebeurtenissen naar het kanaal worden gestuurd, strikt gescheiden van zijn e-mailvoorkeuren. Een gezamenlijk teamkanaal wil uitsluitend belangrijke zakelijke mijlpalen zien — een nieuwe betalende klant, een getekende offerte of een grote escalatie — terwijl individuele taaktoewijzingen en herinneringen thuishoren in een persoonlijke e-mail of direct message.
+Laat de klant daarnaast zelf kiezen welke gebeurtenissen naar het kanaal worden gestuurd, strikt gescheiden van zijn e-mailvoorkeuren. Een gezamenlijk teamkanaal wil uitsluitend belangrijke zakelijke mijlpalen zien - een nieuwe betalende klant, een getekende offerte of een grote escalatie - terwijl individuele taaktoewijzingen en herinneringen thuishoren in een persoonlijke e-mail of direct message.
 
 En waarschuw klanten over privacy: een bericht in een openbaar Slack-kanaal is zichtbaar voor élke medewerker in die werkruimte. Het posten van persoonsgegevens, klantnamen of factuurbedragen in een algemeen kanaal is een formele openbaarmaking van data. Het tonen van een minimalistisch bericht waarbij gevoelige details achter de beveiligde link blijven, is het enige verantwoorde ontwerp.
 ## Betrouwbaarheid en Storingsmonitoring
@@ -89,7 +89,7 @@ Twee nuchtere vragen bepalen uw keuze:
 1. **Welke applicatie staat de hele dag geopend op het primaire scherm van uw klanten?** Dat is exact de plek waar realtime notificaties thuishoren.
 2. **Hoeveel klanten hebben er al concreet om gevraagd?** Eén klantverzoek is een interessant gesprek; vijf onafhankelijke verzoeken vormen pas een feature die ontwikkeltijd rechtvaardigt.
 
-En onderzoek altijd of een veel eenvoudigere oplossing niet exact hetzelfde resultaat bereikt. Een iCalendar-feed (`.ics`) voor deadlines en afspraken, of een dagelijkse samenvattingsmail die stipt om 08:00 uur 's ochtends arriveert, lost de onderliggende behoefte (*"Ik wil weten wat er gebeurt zónder steeds te hoeven inloggen"*) vaak al voor 100% op — tegen een fractie van de ontwikkelkosten, zónder platformafhankelijkheid en zónder bureaucratische reviewprocessen.
+En onderzoek altijd of een veel eenvoudigere oplossing niet exact hetzelfde resultaat bereikt. Een iCalendar-feed (`.ics`) voor deadlines en afspraken, of een dagelijkse samenvattingsmail die stipt om 08:00 uur 's ochtends arriveert, lost de onderliggende behoefte (*"Ik wil weten wat er gebeurt zónder steeds te hoeven inloggen"*) vaak al voor 100% op - tegen een fractie van de ontwikkelkosten, zónder platformafhankelijkheid en zónder bureaucratische reviewprocessen.
 ## Echt voorbeeld
 
 ### De Zes Weken Durende Slack-App Die Door Twee Klanten Werd Gebruikt
@@ -99,7 +99,7 @@ Roos Hendriksen runde Werkbon, een SaaS-applicatie voor planning, werkbonregistr
 Roos besloot het groots aan te pakken: ze bouwde een geavanceerde interactieve Slack-app met OAuth-autorisatie, interactieve goedkeuringsknoppen voor monteurs en een slash-commando (`/werkbon status`) om de status van een klus op te vragen. Het complete traject, inclusief documentatie en de officiële goedkeuring door Slack, kostte **zes volle werkweken**.
 
 Na de lancering bleek de adoptie een enorme domper:
-Van haar 60 aangesloten installatiebedrijven koppelden precies **twee klanten** de app — exact de twee die erom hadden gevraagd. 
+Van haar 60 aangesloten installatiebedrijven koppelden precies **twee klanten** de app - exact de twee die erom hadden gevraagd. 
 
 Een telefonische rondgang langs de overige 58 klanten bracht een pijnlijk inzicht aan het licht: 
 Het overgrote deel van de Nederlandse installatiebranche werkt uitsluitend met **Microsoft Teams** of gebruikt helemaal geen zakelijke chat-app. Hun monteurs zaten in servicebusjes op de weg en wilden simpelweg een helder e-mailoverzicht aan het begin van de dag of een notificatie op hun telefoon.
@@ -109,7 +109,7 @@ Bovendien leverde de interactieve Slack-app continu kopzorgen op: door een gewij
 **Resultaat:** Roos verving de complexe Slack-app binnen twee dagen door een universele inkomende webhook-functie die zowel Slack als Microsoft Teams ondersteunt. De echte tijdsinvestering ging naar wat de klanten écht nodig hadden: een in-app notificatiebelletje en een geautomatiseerde ochtend-digest per e-mail. Binnen vier weken werd het in-app notificatieoverzicht actief gebruikt door **41 van de 60 bedrijven**.
 
 > *"Ik bouwde in zes weken de meest complexe versie van iets waar twee mensen om hadden gevraagd, en negeerde de eenvoudige oplossing die al mijn zestig klanten nodig hadden."*
-> — **Roos Hendriksen, Oprichter, Werkbon**
+> - **Roos Hendriksen, Oprichter, Werkbon**
 
 **Kosten & Doorlooptijd:** Notificatiecentrum, dagelijkse e-mailsamenvatting en universele webhook-integratie opgeleverd in 4 werkdagen.
 

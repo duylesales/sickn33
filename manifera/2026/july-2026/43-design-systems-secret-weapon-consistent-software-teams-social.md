@@ -2,7 +2,7 @@
 
 Count the font sizes. Count the shades of your brand colour.
 
-If the numbers are higher than they should be — you have a consistency problem costing you engineering hours and user trust.
+If the numbers are higher than they should be - you have a consistency problem costing you engineering hours and user trust.
 
 **A design system fixes this.**
 
@@ -10,10 +10,10 @@ It's a single source of truth: reusable components, design tokens, and guideline
 
 **What's inside:**
 
-🎯 Design tokens — colours, typography, spacing (platform-agnostic variables)
-🧱 Component library — Button, Input, Modal, Table (built once, used everywhere)
-📐 Pattern library — data tables, forms with validation, dashboard cards
-📖 Guidelines — accessibility, responsive behaviour, when to use what
+🎯 Design tokens - colours, typography, spacing (platform-agnostic variables)
+🧱 Component library - Button, Input, Modal, Table (built once, used everywhere)
+📐 Pattern library - data tables, forms with validation, dashboard cards
+📖 Guidelines - accessibility, responsive behaviour, when to use what
 
 **The ROI:**
 

@@ -10,7 +10,7 @@
 ✅ **Amsterdam Strategic Governance:** Reviewing sprint commitments and velocity data before they reach the client, catching optimism before it becomes a missed deadline.
 ✅ **Vietnam Execution Velocity:** The same tech lead from scoping through delivery, accountable for the estimate they made.
 
-These four variables are visible within the first two weeks — well before a release date is at risk. 🛡️
+These four variables are visible within the first two weeks - well before a release date is at risk. 🛡️
 
 👉 Read our full deep dive on outsourcing app development vietnam execution: https://www.manifera.com/blog/outsourcing-app-development-vietnam-execution
 

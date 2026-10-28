@@ -31,41 +31,41 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-A solo founder iterating alone with an AI coding tool operates under a specific, if implicit, set of tolerances that a team of two or more contributors cannot rely on in the same way — not because a solo founder's standards are lower, but because several production-readiness dimensions specifically exist to coordinate multiple people's work, and provide little value when there's structurally only one person's work to coordinate in the first place.
+A solo founder iterating alone with an AI coding tool operates under a specific, if implicit, set of tolerances that a team of two or more contributors cannot rely on in the same way - not because a solo founder's standards are lower, but because several production-readiness dimensions specifically exist to coordinate multiple people's work, and provide little value when there's structurally only one person's work to coordinate in the first place.
 
 ## Why a CI Pipeline Matters More the Moment a Second Person Joins
 
-The CI pipeline covered extensively throughout this series protects against silent regressions from any single change — valuable for a solo founder, but genuinely more urgent once a second contributor starts pushing changes you didn't personally write and haven't personally reviewed line by line. A solo founder has full context on every change by definition; a team introduces the possibility of one contributor's change silently breaking something another contributor built, with neither party necessarily aware until a CI pipeline specifically catches it.
+The CI pipeline covered extensively throughout this series protects against silent regressions from any single change - valuable for a solo founder, but genuinely more urgent once a second contributor starts pushing changes you didn't personally write and haven't personally reviewed line by line. A solo founder has full context on every change by definition; a team introduces the possibility of one contributor's change silently breaking something another contributor built, with neither party necessarily aware until a CI pipeline specifically catches it.
 
 ## Why Code Review Becomes a Distinct, Necessary Practice
 
-For a solo founder, "code review" is a somewhat meaningless concept — there's no second party to review anything against. The moment a team exists, code review becomes a genuine, valuable practice specifically because it directly addresses the self-review blind spot covered throughout this series: a second contributor reviewing your changes, and you reviewing theirs, provides exactly the kind of adversarial second perspective that a solo founder structurally cannot generate by re-reading their own work.
+For a solo founder, "code review" is a somewhat meaningless concept - there's no second party to review anything against. The moment a team exists, code review becomes a genuine, valuable practice specifically because it directly addresses the self-review blind spot covered throughout this series: a second contributor reviewing your changes, and you reviewing theirs, provides exactly the kind of adversarial second perspective that a solo founder structurally cannot generate by re-reading their own work.
 
 ## Why Access Control Needs to Extend Beyond User-Facing Authorization
 
-The authorization gaps covered throughout this series concern your product's end users. A team introduces a parallel, internal version of the same concern: does every contributor have access to exactly what they need, and nothing more — production database credentials, deployment access, customer data — or does everyone simply share full access by default because that was simplest when it was just one founder? This internal access control matters increasingly as team size grows, for reasons structurally similar to the external role-based access control covered elsewhere in this series.
+The authorization gaps covered throughout this series concern your product's end users. A team introduces a parallel, internal version of the same concern: does every contributor have access to exactly what they need, and nothing more - production database credentials, deployment access, customer data - or does everyone simply share full access by default because that was simplest when it was just one founder? This internal access control matters increasingly as team size grows, for reasons structurally similar to the external role-based access control covered elsewhere in this series.
 
 ## Why Documentation Shifts From "Nice to Have" to Genuinely Necessary
 
-A solo founder holds their entire codebase's context in their own head, making formal documentation a convenience rather than a necessity. A team introduces genuine information asymmetry — a second contributor lacks the context a solo founder accumulated during original development, meaning decisions, conventions, and non-obvious reasoning that lived only in the founder's head need to become explicit and written down for a team to function without constant, inefficient re-explanation.
+A solo founder holds their entire codebase's context in their own head, making formal documentation a convenience rather than a necessity. A team introduces genuine information asymmetry - a second contributor lacks the context a solo founder accumulated during original development, meaning decisions, conventions, and non-obvious reasoning that lived only in the founder's head need to become explicit and written down for a team to function without constant, inefficient re-explanation.
 
 ## Why Onboarding a New Contributor Is a Specific Risk Moment
 
-Every new contributor, particularly one unfamiliar with the specific patterns and conventions covered throughout this series, represents a fresh opportunity to reintroduce a gap that was previously closed — exactly the pattern covered in this series' multi-tenant isolation guidance, where a new feature built by someone unaware of an existing convention silently broke it months after the original fix. This risk is specifically elevated during onboarding, before a new contributor has fully internalized your team's existing production-readiness discipline.
+Every new contributor, particularly one unfamiliar with the specific patterns and conventions covered throughout this series, represents a fresh opportunity to reintroduce a gap that was previously closed - exactly the pattern covered in this series' multi-tenant isolation guidance, where a new feature built by someone unaware of an existing convention silently broke it months after the original fix. This risk is specifically elevated during onboarding, before a new contributor has fully internalized your team's existing production-readiness discipline.
 
 ## A Concrete Setup Checklist for the Week Your Second Contributor Joins
 
 Rather than treating team-scale practices as an abstract goal to formalize "eventually," a specific, bounded checklist to work through in the days before or immediately after a second contributor's first commit turns the general guidance above into something actually actionable.
 
-**Branch protection on your main branch.** A simple repository setting requiring at least one review before merging to your production branch — a five-minute configuration change that directly enforces the code-review practice covered above, rather than relying on it happening informally and inconsistently.
+**Branch protection on your main branch.** A simple repository setting requiring at least one review before merging to your production branch - a five-minute configuration change that directly enforces the code-review practice covered above, rather than relying on it happening informally and inconsistently.
 
-**CI enforcement, not just CI existence.** A pipeline that runs but doesn't actually block a merge on failure provides considerably less protection than one that does — confirming your CI is configured to prevent, not just flag, a failing change from reaching your main branch is worth checking explicitly, since a non-blocking pipeline is easy to silently ignore under time pressure.
+**CI enforcement, not just CI existence.** A pipeline that runs but doesn't actually block a merge on failure provides considerably less protection than one that does - confirming your CI is configured to prevent, not just flag, a failing change from reaching your main branch is worth checking explicitly, since a non-blocking pipeline is easy to silently ignore under time pressure.
 
-**Scoped access credentials, not shared founder-level access.** Creating a separate set of credentials for your new contributor — scoped to exactly what their work requires, rather than handing over your own full-access founder credentials — is a small setup cost that directly prevents the internal access-control gap described above from existing on day one.
+**Scoped access credentials, not shared founder-level access.** Creating a separate set of credentials for your new contributor - scoped to exactly what their work requires, rather than handing over your own full-access founder credentials - is a small setup cost that directly prevents the internal access-control gap described above from existing on day one.
 
-**A short written onboarding note covering non-obvious conventions.** Not comprehensive documentation, just the specific things a new contributor genuinely can't infer from reading the code alone — why authorization checks happen in a particular utility function, which patterns to specifically avoid and why, and where the previous production-readiness work already landed, so a new contributor's first feature doesn't unknowingly repeat a mistake that was already fixed once.
+**A short written onboarding note covering non-obvious conventions.** Not comprehensive documentation, just the specific things a new contributor genuinely can't infer from reading the code alone - why authorization checks happen in a particular utility function, which patterns to specifically avoid and why, and where the previous production-readiness work already landed, so a new contributor's first feature doesn't unknowingly repeat a mistake that was already fixed once.
 
-Working through these four items specifically before or during a new contributor's first week costs a founder a few focused hours — considerably less than the reactive remediation Tobias's case required after a gap had already reached production.
+Working through these four items specifically before or during a new contributor's first week costs a founder a few focused hours - considerably less than the reactive remediation Tobias's case required after a gap had already reached production.
 
 ## What This Means Practically as You Scale Your Team
 
@@ -73,7 +73,7 @@ Treat the addition of any second contributor as a deliberate trigger to formaliz
 
 [LaunchStudio](https://launchstudio.eu/en/) helps founding teams formalize exactly these team-scale production-readiness practices as they grow beyond a solo founder, backed by Manifera's experience supporting AI-native teams through this specific transition.
 
-[Get your team-scale production practices formalized before your second contributor joins](https://launchstudio.eu/en/#calculator) — several gaps that were tolerable solo become genuinely necessary the moment they're not.
+[Get your team-scale production practices formalized before your second contributor joins](https://launchstudio.eu/en/#calculator) - several gaps that were tolerable solo become genuinely necessary the moment they're not.
 
 ## Real example
 
@@ -81,14 +81,14 @@ Treat the addition of any second contributor as a deliberate trigger to formaliz
 
 Tobias, a former operations manager turned founder in Amsterdam, built LogistiekTracker, an AI tool coordinating small freight forwarding businesses' shipment tracking and customer notifications, using Bolt, and had personally closed the standard authentication and error-handling gaps covered throughout this series during LaunchStudio's original hardening engagement, launching and growing solo for several months afterward.
 
-As LogistiekTracker grew, Tobias brought on a part-time contract developer, unfamiliar with the specific conventions LaunchStudio's original hardening had established, to help build a new customer-facing reporting feature. Without a formal code review practice or CI pipeline enforcing the existing patterns, the contractor's new feature — built competently on its own terms — inadvertently reintroduced a frontend-only authorization pattern for the new reporting endpoints, unaware that the rest of the codebase specifically avoided this exact pattern for a reason.
+As LogistiekTracker grew, Tobias brought on a part-time contract developer, unfamiliar with the specific conventions LaunchStudio's original hardening had established, to help build a new customer-facing reporting feature. Without a formal code review practice or CI pipeline enforcing the existing patterns, the contractor's new feature - built competently on its own terms - inadvertently reintroduced a frontend-only authorization pattern for the new reporting endpoints, unaware that the rest of the codebase specifically avoided this exact pattern for a reason.
 
-**Result:** A routine follow-up check, prompted specifically by Tobias adding his first team member, caught the reintroduced gap before it reached production, and LaunchStudio helped Tobias establish the formalized practices described in this article — a lightweight code review step and CI enforcement — specifically to prevent this exact scenario from recurring as he continued adding contributors.
+**Result:** A routine follow-up check, prompted specifically by Tobias adding his first team member, caught the reintroduced gap before it reached production, and LaunchStudio helped Tobias establish the formalized practices described in this article - a lightweight code review step and CI enforcement - specifically to prevent this exact scenario from recurring as he continued adding contributors.
 
 > *"I closed all the gaps LaunchStudio found the first time and genuinely thought I was covered going forward. It never occurred to me that bringing on one contractor for one feature could quietly undo something that was already fixed, just because he didn't know the specific reason we'd avoided that pattern everywhere else."*
-> — **Tobias Meijer, Founder, LogistiekTracker (Amsterdam)**
+> - **Tobias Meijer, Founder, LogistiekTracker (Amsterdam)**
 
-**Cost & Timeline:** €1,600 (team-scale process formalization and gap remediation) — completed in 6 business days.
+**Cost & Timeline:** €1,600 (team-scale process formalization and gap remediation) - completed in 6 business days.
 
 ---
 
@@ -96,7 +96,7 @@ As LogistiekTracker grew, Tobias brought on a part-time contract developer, unfa
 
 ### At what specific team size does this transition from solo-founder tolerances to team-scale practices actually matter?
 
-The moment a second person begins genuinely contributing code, not at any larger threshold — as Tobias's case shows, the risk of reintroducing a previously-closed gap exists with even a single additional contributor, making "second contributor" the practically relevant trigger rather than any larger team size.
+The moment a second person begins genuinely contributing code, not at any larger threshold - as Tobias's case shows, the risk of reintroducing a previously-closed gap exists with even a single additional contributor, making "second contributor" the practically relevant trigger rather than any larger team size.
 
 ### Does formalizing these practices require significant additional tooling or cost beyond what a solo founder already has in place?
 
@@ -108,11 +108,11 @@ A structured onboarding process specifically covering the codebase's established
 
 ### Is a full code review practice necessary even for a very small team of two or three people?
 
-Even lightweight review — a second person glancing at significant changes before they merge, rather than a formal, heavyweight process — provides meaningful protection against the self-review blind spot covered throughout this series, making some version of this practice worthwhile even for very small teams.
+Even lightweight review - a second person glancing at significant changes before they merge, rather than a formal, heavyweight process - provides meaningful protection against the self-review blind spot covered throughout this series, making some version of this practice worthwhile even for very small teams.
 
 ### Does adding a technical cofounder specifically, rather than a contractor, change any of this guidance?
 
-The underlying dynamics apply similarly regardless of the new contributor's specific role or relationship to the company — the risk stems from a second person touching the codebase without full context on previously-established conventions, which applies to a cofounder, employee, or contractor alike.
+The underlying dynamics apply similarly regardless of the new contributor's specific role or relationship to the company - the risk stems from a second person touching the codebase without full context on previously-established conventions, which applies to a cofounder, employee, or contractor alike.
 
 <script type="application/ld+json">
 {
@@ -132,7 +132,7 @@ The underlying dynamics apply similarly regardless of the new contributor's spec
       "name": "Does formalizing these practices require significant additional tooling or cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modestly — the core additions are largely process and configuration changes rather than expensive new infrastructure."
+        "text": "Modestly - the core additions are largely process and configuration changes rather than expensive new infrastructure."
       }
     },
     {

@@ -95,9 +95,9 @@ Het Manifera-team voerde in 14 werkdagen een grondige herziening uit:
 **Resultaat:** David presenteerde het nieuwe architectuurdossier aan de DPO. Het ziekenhuis zag dat er nooit ongeanonimiseerde data de eigen servers verliet en keurde de software goed. David sloot een contract van €250.000 en gebruikte deze beveiligingsarchitectuur als verkoopargument om direct drie extra ziekenhuizen aan te sluiten.
 
 > *"Ik bouwde een fantastische medische tool, maar ik had geen verstand van medische gegevensbeveiliging. Het ziekenhuis wees me resoluut af. LaunchStudio leverde de enterprise-beveiligingsarchitectuur waarmee ik mijn product daadwerkelijk kon verkopen. Zonder hun ZDR- en proxy-implementaties had mijn bedrijf nu niet meer bestaan."*
-> — **David Schwartz, Oprichter, MedVision AI (Berlijn)**
+> - **David Schwartz, Oprichter, MedVision AI (Berlijn)**
 
-**Kosten & Doorlooptijd:** €15.500 (Launch & Grow Pakket met Enterprise Security & ZDR Add-on) — productie-klaar en live binnen 14 werkdagen.
+**Kosten & Doorlooptijd:** €15.500 (Launch & Grow Pakket met Enterprise Security & ZDR Add-on) - productie-klaar en live binnen 14 werkdagen.
 
 ---
 

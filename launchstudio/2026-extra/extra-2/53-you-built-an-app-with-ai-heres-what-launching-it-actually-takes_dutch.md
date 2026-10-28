@@ -35,7 +35,7 @@ U heeft een app gebouwd met AI, het werkt, en nu wilt u het oprecht live hebben.
 
 ## Stap een: Identificeer elke functie die een lijst met records retourneert
 
-Elke functionaliteit die een doorzoekbare of doorbladerbare lijst oplevert — een ledenregister, een vrijwilligersrooster of een openbaar overzicht — is een directe kandidaat voor deze specifieke controle. Hoe onschuldig de onderliggende data aanvankelijk ook lijkt: zelfs schijnbaar ongevoelige contactgegevens worden aanzienlijk gevoeliger zodra ze massaal worden geaggregeerd in plaats van per individueel record bekeken. Dit geldt ook voor functies die in naam helemaal niet op een 'directory' lijken: een zoekvenster dat overeenkomende klantrecords toont, een API-endpoint voor automatische aanvulling, een openbaar scorebord of een exportknop die bedoeld is voor de eigen data van één lid maar die zonder controle herhaaldelijk voor andermans data kan worden aangeroepen.
+Elke functionaliteit die een doorzoekbare of doorbladerbare lijst oplevert - een ledenregister, een vrijwilligersrooster of een openbaar overzicht - is een directe kandidaat voor deze specifieke controle. Hoe onschuldig de onderliggende data aanvankelijk ook lijkt: zelfs schijnbaar ongevoelige contactgegevens worden aanzienlijk gevoeliger zodra ze massaal worden geaggregeerd in plaats van per individueel record bekeken. Dit geldt ook voor functies die in naam helemaal niet op een 'directory' lijken: een zoekvenster dat overeenkomende klantrecords toont, een API-endpoint voor automatische aanvulling, een openbaar scorebord of een exportknop die bedoeld is voor de eigen data van één lid maar die zonder controle herhaaldelijk voor andermans data kan worden aangeroepen.
 
 
 ## Stap twee: Begrijp waarom geaggregeerde gegevens risicovoller zijn dan ze er individueel uitzien
@@ -92,9 +92,9 @@ Een coördinator opmerkte dat een ongebruikelijk grote, complete export van cont
 **Resultaat:** LaunchStudio implementeerde een gecalibreerde snelheidslimiet op de gidszoekfunctie, waardoor normaal gebruik van coördinatoren exact zoals voorheen door kon gaan, terwijl snelle herhaalde verzoeken effectief beperkt werden.
 
 > *"We zijn er nooit met totale zekerheid achter gekomen hoe die export precies plaatsvond, maar de beoordeling maakte duidelijk dat het absoluut op deze manier had gekund."*
-> — **Duco Hendriks, Oprichter, BrandweerRoster (Alphen aan den Rijn)**
+> - **Duco Hendriks, Oprichter, BrandweerRoster (Alphen aan den Rijn)**
 
-**Kosten en tijdlijn:** € 1.900 (implementatie van snelheidsbeperking op gidszoeken) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (implementatie van snelheidsbeperking op gidszoeken) - voltooid in 6 werkdagen.
 
 ---
 
@@ -108,7 +108,7 @@ Omdat tientallen of honderden medewerkers van hetzelfde bedrijf of dezelfde univ
 
 Een fixed window telt verzoeken per vast tijdsblok (bijvoorbeeld per klokuur), waardoor een aanvaller aan het einde van het ene blok en het begin van het volgende blok een dubbele piek kan afvuren. Een sliding window berekent het aantal verzoeken over een continu verschuivend venster, wat pieken en misbruik veel consistenter afvlakt.
 
-### Manifera ontwerpt backend-systemen die schalen — hoe richt het team rate limiting in bij piekbelasting?
+### Manifera ontwerpt backend-systemen die schalen - hoe richt het team rate limiting in bij piekbelasting?
 
 Door gebruik te maken van snelle in-memory datastores zoals Redis in combinatie met het beproefde 'Token Bucket'- of 'Leaky Bucket'-algoritme. Hierdoor kunnen applicaties duizenden gelijktijdige verzoeken per seconde valideren zonder dat de database wordt belast.
 
@@ -143,7 +143,7 @@ Altijd HTTP 429 Too Many Requests, vergezeld van een `Retry-After` header die he
     },
     {
       "@type": "Question",
-      "name": "Manifera ontwerpt backend-systemen die schalen — hoe richt het team rate limiting in bij piekbelasting?",
+      "name": "Manifera ontwerpt backend-systemen die schalen - hoe richt het team rate limiting in bij piekbelasting?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Door gebruik te maken van snelle in-memory datastores zoals Redis in combinatie met het beproefde 'Token Bucket'- of 'Leaky Bucket'-algoritme. Hierdoor kunnen applicaties duizenden gelijktijdige verzoeken per seconde valideren zonder dat de database wordt belast."

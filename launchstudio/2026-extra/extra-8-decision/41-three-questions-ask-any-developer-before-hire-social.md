@@ -1,4 +1,4 @@
-🎯 He asked one freelance developer a single question — not about his stack, not about his rate — and it saved him a €12,000 rebuild he never needed. 👀
+🎯 He asked one freelance developer a single question - not about his stack, not about his rate - and it saved him a €12,000 rebuild he never needed. 👀
 
 Founders vetting developers for their AI-generated prototype almost always ask about tech stacks and hourly rates. Those questions don't predict what actually matters. 🧠
 

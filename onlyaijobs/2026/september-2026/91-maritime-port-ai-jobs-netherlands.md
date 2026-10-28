@@ -40,7 +40,7 @@ Most sectors optimise within one organisation. Maritime operations rarely can, a
 
 A container arriving in Rotterdam involves a shipping line, a terminal operator, a customs authority, a barge or rail or road carrier, a freight forwarder, an inland terminal and a consignee. Each is an independent commercial party with its own systems, its own objectives and no obligation to share information beyond what is contractually required.
 
-The consequence is that the largest inefficiencies in the system are not within any single party's operations but between them. A truck waiting four hours at a terminal gate, a barge sailing half empty, a container sitting on a quay because nobody knew it had arrived — these are coordination failures, and no single organisation can solve them by optimising internally.
+The consequence is that the largest inefficiencies in the system are not within any single party's operations but between them. A truck waiting four hours at a terminal gate, a barge sailing half empty, a container sitting on a quay because nobody knew it had arrived - these are coordination failures, and no single organisation can solve them by optimising internally.
 
 This produces technical problems with an unusual shape.
 
@@ -58,7 +58,7 @@ This produces technical problems with an unusual shape.
 
 **Vessel arrival prediction.** Knowing when a ship will actually arrive, as opposed to when its schedule says, enables everything downstream. Prediction from position reports, weather, port congestion and historical behaviour is a well-defined and valuable problem.
 
-**Inland shipping.** Lock scheduling, tidal windows, and draught limits that vary with river levels — which recent dry summers converted from background condition to commercial crisis, as described in the Dordrecht analysis.
+**Inland shipping.** Lock scheduling, tidal windows, and draught limits that vary with river levels - which recent dry summers converted from background condition to commercial crisis, as described in the Dordrecht analysis.
 
 **Voyage optimisation.** Route and speed against fuel consumption, weather routing, and emissions regulation that has made efficiency a compliance matter as well as a cost one.
 
@@ -156,7 +156,7 @@ The combination means this is one of the better ratios of problem interest to co
 
 The advice differs from technology sector norms in ways worth knowing.
 
-**Domain credibility is weighted heavily.** This industry has watched external technologists arrive with proposals that ignored how vessels, ports or cargo actually work. Demonstrating that you have taken the trouble to understand the operational reality — even at a basic level — changes your reception substantially.
+**Domain credibility is weighted heavily.** This industry has watched external technologists arrive with proposals that ignored how vessels, ports or cargo actually work. Demonstrating that you have taken the trouble to understand the operational reality - even at a basic level - changes your reception substantially.
 
 **Long-term intent matters.** Many employers are family-owned firms thinking in decades. They value people who intend to stay and who can work alongside engineers with thirty years of experience in a specific vessel type or cargo handling operation.
 
@@ -170,12 +170,12 @@ The advice differs from technology sector norms in ways worth knowing.
 - The largest inefficiencies sit between parties rather than inside them, which makes incomplete information and misaligned incentives working conditions rather than research problems.
 - Agreeing data standards and exchange formats often creates more value here than better algorithms, which candidates focused on modelling systematically undervalue.
 - Vessel arrival prediction, terminal optimisation, inland waterway planning under variable draught, and vessel autonomy are the most substantive problem areas.
-- The sector is undervalued because its vocabulary hides it, it does not market to technologists, and it looks old-fashioned — all reasons the competition is thin.
+- The sector is undervalued because its vocabulary hides it, it does not market to technologists, and it looks old-fashioned - all reasons the competition is thin.
 - Maritime employers weight domain credibility and long-term intent heavily, and roles often carry more influence than their titles suggest.
 
 ## Where to Start
 
-Search operational vocabulary rather than machine learning vocabulary, and look at the port cluster and the maritime manufacturing region directly rather than through national job boards. If you want to be taken seriously quickly, spend a few hours understanding how a container actually moves through a port — it is the single most efficient preparation available for this sector.
+Search operational vocabulary rather than machine learning vocabulary, and look at the port cluster and the maritime manufacturing region directly rather than through national job boards. If you want to be taken seriously quickly, spend a few hours understanding how a container actually moves through a port - it is the single most efficient preparation available for this sector.
 
 Browse current maritime, logistics, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -194,7 +194,7 @@ The vocabulary hides them. Postings appear as operations analyst, planner or eng
 Demonstrate that you have made an effort to understand operational reality, and expect them to assess long-term intent. Many are family-owned firms thinking in decades, and direct approaches work better than they do in sectors with heavy recruitment infrastructure.
 
 ### (Scenario: candidate assessing career value) Are these roles junior in scope?
-Often the opposite. Many maritime companies lack modern data capability and know it, so you may be establishing the function rather than joining one — with more influence and more isolation risk than the title suggests.
+Often the opposite. Many maritime companies lack modern data capability and know it, so you may be establishing the function rather than joining one - with more influence and more isolation risk than the title suggests.
 
 <script type="application/ld+json">
 {

@@ -20,11 +20,11 @@ Content Format: Listicle with Depth
 }
 </script>
 
-Two applications launch on the same day, built by teams of similar size and experience. Six months later, one has 4.8 stars and a 94% uptime record. The other has 2.3 stars and its engineering team spends 70% of their time firefighting production issues. The difference is not talent. It is not technology. It is quality assurance discipline — the unglamorous set of practices that nobody brags about on LinkedIn but that determines whether software survives contact with real users.
+Two applications launch on the same day, built by teams of similar size and experience. Six months later, one has 4.8 stars and a 94% uptime record. The other has 2.3 stars and its engineering team spends 70% of their time firefighting production issues. The difference is not talent. It is not technology. It is quality assurance discipline - the unglamorous set of practices that nobody brags about on LinkedIn but that determines whether software survives contact with real users.
 
 ## The Quality Pyramid: Why Most Teams Get It Backwards
 
-Most teams think of QA as something that happens after development — a gate before release. This is the most expensive possible approach. Defects found in production cost 100x more to fix than defects caught during code review, according to IBM's Systems Sciences Institute.
+Most teams think of QA as something that happens after development - a gate before release. This is the most expensive possible approach. Defects found in production cost 100x more to fix than defects caught during code review, according to IBM's Systems Sciences Institute.
 
 The quality pyramid organises QA investments by cost-effectiveness:
 
@@ -37,7 +37,7 @@ The quality pyramid organises QA investments by cost-effectiveness:
 - **Type systems** (TypeScript instead of JavaScript, strong typing where possible)
 - **Architecture reviews** before coding starts
 - **Pair programming** for complex logic
-- **Automated formatting** (Prettier, Black) — eliminates style debates in code review
+- **Automated formatting** (Prettier, Black) - eliminates style debates in code review
 
 **Cost:** Near zero. These are one-time setups that prevent thousands of issues.
 
@@ -124,20 +124,20 @@ Code review catches 60-70% of defects that testing misses (Microsoft Research, 2
 - PRs must be under 400 lines of code (larger PRs get superficial reviews)
 - Every PR needs a description explaining WHY, not just WHAT
 - Reviewers must run the code, not just read the diff
-- Blocking reviews require a reason — "I wouldn't do it this way" is not blocking
+- Blocking reviews require a reason - "I wouldn't do it this way" is not blocking
 
 ## QA for Offshore Teams: Special Considerations
 
-When your development team operates across time zones — as Manifera's teams do between Amsterdam and Ho Chi Minh City — QA discipline becomes even more critical because you cannot rely on hallway conversations to catch issues.
+When your development team operates across time zones - as Manifera's teams do between Amsterdam and Ho Chi Minh City - QA discipline becomes even more critical because you cannot rely on hallway conversations to catch issues.
 
 **What changes for distributed teams:**
-1. **Automated test suites must be comprehensive** — the code that gets pushed at 17:00 Vietnam time will not be reviewed until 09:00 Netherlands time. Tests catch what humans cannot review in real-time.
-2. **Bug reports must be detailed** — screenshots, reproduction steps, and expected vs. actual behaviour. No "it's broken" messages.
-3. **Definition of Done must be explicit** — a shared checklist that every PR must satisfy before merge, regardless of who wrote it or when.
+1. **Automated test suites must be comprehensive** - the code that gets pushed at 17:00 Vietnam time will not be reviewed until 09:00 Netherlands time. Tests catch what humans cannot review in real-time.
+2. **Bug reports must be detailed** - screenshots, reproduction steps, and expected vs. actual behaviour. No "it's broken" messages.
+3. **Definition of Done must be explicit** - a shared checklist that every PR must satisfy before merge, regardless of who wrote it or when.
 
-Manifera's [way of working](https://www.manifera.com/about-us/our-way-of-working/) includes QA as an embedded discipline — not a separate phase. Combining Scrum discipline from the Netherlands with Vietnam's deep technical talent pool ensures quality is built in, not inspected in.
+Manifera's [way of working](https://www.manifera.com/about-us/our-way-of-working/) includes QA as an embedded discipline - not a separate phase. Combining Scrum discipline from the Netherlands with Vietnam's deep technical talent pool ensures quality is built in, not inspected in.
 
-Schedule a free consultation with our Amsterdam team to discuss your quality challenges — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Schedule a free consultation with our Amsterdam team to discuss your quality challenges - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -145,11 +145,11 @@ Schedule a free consultation with our Amsterdam team to discuss your quality cha
 
 ### What test coverage percentage should we target? (Scenario: VP Engineering setting quality standards for a 30-person team)
 
-Target 80% code coverage for business logic and 95%+ for critical paths (authentication, payment processing, data validation). Aiming for 100% overall coverage is counterproductive — it incentivises writing trivial tests for getters and setters instead of meaningful tests for complex behaviour. Coverage is a floor, not a ceiling.
+Target 80% code coverage for business logic and 95%+ for critical paths (authentication, payment processing, data validation). Aiming for 100% overall coverage is counterproductive - it incentivises writing trivial tests for getters and setters instead of meaningful tests for complex behaviour. Coverage is a floor, not a ceiling.
 
 ### How do we introduce QA practices into a team that has never done testing? (Scenario: CTO at a startup that has been shipping without tests for 2 years)
 
-Start with the highest-impact, lowest-effort practices: (1) Add a linter and enforce it on all new code — zero cost, immediate benefit. (2) Write tests only for new features and bug fixes — do not attempt to retroactively test the entire codebase. (3) Require one approval on every PR. Within 3 months, you will have meaningful coverage where it matters most: the code that changes frequently.
+Start with the highest-impact, lowest-effort practices: (1) Add a linter and enforce it on all new code - zero cost, immediate benefit. (2) Write tests only for new features and bug fixes - do not attempt to retroactively test the entire codebase. (3) Require one approval on every PR. Within 3 months, you will have meaningful coverage where it matters most: the code that changes frequently.
 
 ### Is manual testing still necessary in 2026, or can everything be automated? (Scenario: Engineering Manager evaluating whether to hire a manual QA engineer)
 
@@ -157,7 +157,7 @@ Manual testing is still necessary for exploratory testing (finding bugs that nob
 
 ### How do we measure the ROI of investing in QA? (Scenario: CFO questioning why QA costs have increased by 25%)
 
-Measure three things: (1) Number of production incidents before and after QA investment — each incident has a calculable cost (developer time to fix × hourly rate + revenue lost during downtime). (2) Customer churn reduction attributable to fewer bugs. (3) Developer velocity improvement — teams with good QA spend less time firefighting and more time building features. A well-implemented QA programme typically pays for itself within 6 months.
+Measure three things: (1) Number of production incidents before and after QA investment - each incident has a calculable cost (developer time to fix × hourly rate + revenue lost during downtime). (2) Customer churn reduction attributable to fewer bugs. (3) Developer velocity improvement - teams with good QA spend less time firefighting and more time building features. A well-implemented QA programme typically pays for itself within 6 months.
 
 ### What QA tools are essential for a small team building a web application? (Scenario: Startup CTO choosing a QA toolstack on a €500/month budget)
 
@@ -173,7 +173,7 @@ Free or near-free essentials: ESLint (linting), Jest (unit tests), Playwright (E
       "name": "What test coverage percentage should we target? (Scenario: VP Engineering setting quality standards for a 30-person team)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Target 80% code coverage for business logic and 95%+ for critical paths (authentication, payment processing, data validation). Aiming for 100% overall coverage is counterproductive — it incentivises writing trivial tests for getters and setters instead of meaningful tests for complex behaviour. Coverage is a floor, not a ceiling."
+        "text": "Target 80% code coverage for business logic and 95%+ for critical paths (authentication, payment processing, data validation). Aiming for 100% overall coverage is counterproductive - it incentivises writing trivial tests for getters and setters instead of meaningful tests for complex behaviour. Coverage is a floor, not a ceiling."
       }
     },
     {
@@ -181,7 +181,7 @@ Free or near-free essentials: ESLint (linting), Jest (unit tests), Playwright (E
       "name": "How do we introduce QA practices into a team that has never done testing? (Scenario: CTO at a startup that has been shipping without tests for 2 years)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Start with the highest-impact, lowest-effort practices: (1) Add a linter and enforce it on all new code — zero cost, immediate benefit. (2) Write tests only for new features and bug fixes — do not attempt to retroactively test the entire codebase. (3) Require one approval on every PR. Within 3 months, you will have meaningful coverage where it matters most."
+        "text": "Start with the highest-impact, lowest-effort practices: (1) Add a linter and enforce it on all new code - zero cost, immediate benefit. (2) Write tests only for new features and bug fixes - do not attempt to retroactively test the entire codebase. (3) Require one approval on every PR. Within 3 months, you will have meaningful coverage where it matters most."
       }
     },
     {
@@ -197,7 +197,7 @@ Free or near-free essentials: ESLint (linting), Jest (unit tests), Playwright (E
       "name": "How do we measure the ROI of investing in QA? (Scenario: CFO questioning why QA costs have increased by 25%)",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Measure three things: (1) Number of production incidents before and after QA investment — each incident has a calculable cost. (2) Customer churn reduction attributable to fewer bugs. (3) Developer velocity improvement — teams with good QA spend less time firefighting and more time building features. A well-implemented QA programme typically pays for itself within 6 months."
+        "text": "Measure three things: (1) Number of production incidents before and after QA investment - each incident has a calculable cost. (2) Customer churn reduction attributable to fewer bugs. (3) Developer velocity improvement - teams with good QA spend less time firefighting and more time building features. A well-implemented QA programme typically pays for itself within 6 months."
       }
     },
     {

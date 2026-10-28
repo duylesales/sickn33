@@ -31,35 +31,35 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-You've finished your prototype. It works. Every button does what it's supposed to do, every screen loads, every workflow completes exactly as you designed it. So why does almost every experienced engineer respond to "it works" with a follow-up question rather than a congratulations? Because "works" is doing a lot of quiet, unexamined lifting in that sentence, and the specific thing it usually means — works for me, the way I use it — is a much narrower claim than founders tend to assume.
+You've finished your prototype. It works. Every button does what it's supposed to do, every screen loads, every workflow completes exactly as you designed it. So why does almost every experienced engineer respond to "it works" with a follow-up question rather than a congratulations? Because "works" is doing a lot of quiet, unexamined lifting in that sentence, and the specific thing it usually means - works for me, the way I use it - is a much narrower claim than founders tend to assume.
 
 ## Two Very Different Meanings of "Works"
 
-"Works" can mean: this specific sequence of actions, performed by the person who built it, produces the expected result. Or it can mean: this application behaves safely and correctly under a very wide range of inputs, including ones nobody anticipated, from users who don't behave the way the founder imagined they would. AI coding tools are optimized almost entirely toward proving the first meaning, because that's the meaning a demo naturally tests — and the second meaning is the one that actually determines whether a product survives contact with real, unpredictable users.
+"Works" can mean: this specific sequence of actions, performed by the person who built it, produces the expected result. Or it can mean: this application behaves safely and correctly under a very wide range of inputs, including ones nobody anticipated, from users who don't behave the way the founder imagined they would. AI coding tools are optimized almost entirely toward proving the first meaning, because that's the meaning a demo naturally tests - and the second meaning is the one that actually determines whether a product survives contact with real, unpredictable users.
 
 ## Where the Gap Between the Two Meanings Actually Lives
 
-The gap tends to concentrate in exactly the places a founder's own testing never goes: free-text input fields, search boxes, file uploads, and anywhere a user supplies a value the application then uses to construct a database query or file path. A founder searching their own test data types reasonable search terms and gets reasonable results — because that's what "testing search" means to someone who isn't specifically trying to break it.
+The gap tends to concentrate in exactly the places a founder's own testing never goes: free-text input fields, search boxes, file uploads, and anywhere a user supplies a value the application then uses to construct a database query or file path. A founder searching their own test data types reasonable search terms and gets reasonable results - because that's what "testing search" means to someone who isn't specifically trying to break it.
 
 ## Why Unsanitized Input Is the Textbook Version of This Problem
 
-A search field that passes user input directly into a database query without properly sanitizing it can, in the worst case, allow a specifically crafted input to manipulate the query itself — extracting data it was never meant to return, or in more severe cases modifying or deleting records outright. This isn't a hypothetical: it's one of the oldest, most well-documented classes of vulnerability in web development, and AI-generated code that hasn't been specifically reviewed for it is exactly as exposed as hand-written code with the same oversight would be.
+A search field that passes user input directly into a database query without properly sanitizing it can, in the worst case, allow a specifically crafted input to manipulate the query itself - extracting data it was never meant to return, or in more severe cases modifying or deleting records outright. This isn't a hypothetical: it's one of the oldest, most well-documented classes of vulnerability in web development, and AI-generated code that hasn't been specifically reviewed for it is exactly as exposed as hand-written code with the same oversight would be.
 
 ## Why "I Tested Search and It Worked Fine" Doesn't Rule This Out
 
-Testing search with normal search terms — a product name, a customer's name, a reasonable keyword — never triggers this failure mode, because normal search terms are, by definition, not the specifically malformed input that exposes the underlying gap. The two tests look identical from the outside (you type something, you get results) but only one of them is actually probing whether the query construction underneath is safe.
+Testing search with normal search terms - a product name, a customer's name, a reasonable keyword - never triggers this failure mode, because normal search terms are, by definition, not the specifically malformed input that exposes the underlying gap. The two tests look identical from the outside (you type something, you get results) but only one of them is actually probing whether the query construction underneath is safe.
 
 ## A Founder's Field Guide to Spotting Risky Input Handling Without Reading Every Line
 
-You don't need to read your entire codebase line by line to get a reasonable sense of where this kind of risk concentrates — you need to know what questions to ask and where to point a search.
+You don't need to read your entire codebase line by line to get a reasonable sense of where this kind of risk concentrates - you need to know what questions to ask and where to point a search.
 
 **Search your own codebase for these patterns:**
 
-- **Direct string concatenation into a query.** Search for a database query being built by joining pieces of text together, especially anywhere that includes a variable that came from user input — for example, a query string assembled with `+` or template literals containing something the user typed. This is the textbook version of the pattern that let a malformed search string reach RouteWise's database directly.
-- **Raw query methods, even inside an ORM-based project.** Most modern ORMs parameterize input safely by default, but nearly all of them also expose a "raw query" or "execute" escape hatch for cases the ORM's normal methods don't handle well — and AI coding tools reach for that escape hatch more often than founders expect, particularly for anything resembling a flexible search or filter feature.
+- **Direct string concatenation into a query.** Search for a database query being built by joining pieces of text together, especially anywhere that includes a variable that came from user input - for example, a query string assembled with `+` or template literals containing something the user typed. This is the textbook version of the pattern that let a malformed search string reach RouteWise's database directly.
+- **Raw query methods, even inside an ORM-based project.** Most modern ORMs parameterize input safely by default, but nearly all of them also expose a "raw query" or "execute" escape hatch for cases the ORM's normal methods don't handle well - and AI coding tools reach for that escape hatch more often than founders expect, particularly for anything resembling a flexible search or filter feature.
 - **Any field that accepts free text and later appears in a database lookup, a file path, or a system command.** Search boxes are the obvious case, but the same underlying risk applies to file names, tags, and any other user-editable text that your application later uses to look something up rather than just display.
 
-**A question worth asking your AI tool directly:** "Does this query use parameterized inputs, or is any part of it built from a string containing user input?" It's not a guarantee — the tool can answer incorrectly, or the underlying pattern can change in a later edit you didn't specifically re-check — but it's a faster first signal than reading the raw code yourself, and it gives you a specific, answerable question to bring to a professional review rather than a vague worry about "is this secure."
+**A question worth asking your AI tool directly:** "Does this query use parameterized inputs, or is any part of it built from a string containing user input?" It's not a guarantee - the tool can answer incorrectly, or the underlying pattern can change in a later edit you didn't specifically re-check - but it's a faster first signal than reading the raw code yourself, and it gives you a specific, answerable question to bring to a professional review rather than a vague worry about "is this secure."
 
 None of this replaces a proper audit, which checks every entry point systematically rather than the handful a founder happens to think to search for. But it's a reasonable way to get a rough sense of your own exposure before that conversation happens, and it often turns up at least one obvious instance on its own.
 
@@ -69,7 +69,7 @@ Closing this gap means replacing direct string-concatenation into queries with p
 
 Manifera's engineers, working primarily out of the Ho Chi Minh City development center on Pho Quang Street with client coordination through the Amsterdam office at Herengracht 420, apply this same review pattern regardless of which specific backend framework a founder's AI tool happened to generate.
 
-[Send us your prototype link — we'll give you free advice](https://launchstudio.eu/en/#contact).
+[Send us your prototype link - we'll give you free advice](https://launchstudio.eu/en/#contact).
 
 ## Real example
 
@@ -82,15 +82,15 @@ A partner's IT contractor, poking at the search field out of professional habit,
 **Result:** LaunchStudio replaced the vulnerable query construction with properly parameterized queries across every search and filter feature in the app, closing the exposure without changing the search experience Tim's dispatch teams were already used to.
 
 > *"I tested that search box constantly while building it. I searched real customer names and real tracking numbers a hundred times. It never once occurred to me to type something deliberately weird into it."*
-> — **Tim Oosterhuis, Founder, RouteWise (The Hague)**
+> - **Tim Oosterhuis, Founder, RouteWise (The Hague)**
 
-**Cost & Timeline:** €2,100 (input sanitization and query hardening audit) — completed in 6 business days.
+**Cost & Timeline:** €2,100 (input sanitization and query hardening audit) - completed in 6 business days.
 
 ---
 
 ## Frequently Asked Questions
 
-### A backend-focused engineer might call this "SQL injection" specifically — is that too technical a term for a founder to need to know?
+### A backend-focused engineer might call this "SQL injection" specifically - is that too technical a term for a founder to need to know?
 
 The term itself doesn't matter much for a founder to memorize, but recognizing the pattern is useful: any field where a user types something that later gets used to look something up in a database is worth asking about specifically, even without knowing the formal vulnerability name.
 
@@ -98,21 +98,21 @@ The term itself doesn't matter much for a founder to memorize, but recognizing t
 
 It reduces the risk substantially when used as intended, since most ORMs parameterize queries by default, but it's still possible to bypass that protection with raw query calls, which AI coding assistants sometimes generate when a standard ORM method doesn't easily express what was asked for.
 
-### Manifera has decades of combined engineering experience across very different tech stacks — does that breadth actually help with a Lovable-generated Node.js app specifically?
+### Manifera has decades of combined engineering experience across very different tech stacks - does that breadth actually help with a Lovable-generated Node.js app specifically?
 
-Yes, precisely because this class of vulnerability isn't stack-specific — the same underlying pattern (unsanitized input reaching a query) shows up across PHP, Node.js, Python, and .NET alike, so broad backend experience translates directly rather than requiring stack-specific specialization.
+Yes, precisely because this class of vulnerability isn't stack-specific - the same underlying pattern (unsanitized input reaching a query) shows up across PHP, Node.js, Python, and .NET alike, so broad backend experience translates directly rather than requiring stack-specific specialization.
 
-### Herre Roelevink's own background includes cybersecurity work with TNO — does that experience shape how LaunchStudio treats a finding like Tim's?
+### Herre Roelevink's own background includes cybersecurity work with TNO - does that experience shape how LaunchStudio treats a finding like Tim's?
 
-It's a direct throughline — TNO-affiliated security research treats exactly this category of input-handling flaw as foundational rather than exotic, and that same foundational treatment is what LaunchStudio applies when this pattern turns up in an AI-native founder's codebase.
+It's a direct throughline - TNO-affiliated security research treats exactly this category of input-handling flaw as foundational rather than exotic, and that same foundational treatment is what LaunchStudio applies when this pattern turns up in an AI-native founder's codebase.
 
 ### Is this the kind of issue a founder should expect a freelancer to catch, or does it require something more specialized?
 
-It depends heavily on the individual freelancer's specific security background rather than freelancing as a category — this is part of why LaunchStudio positions itself against generalist freelancers specifically for founders who want assurance the review was done by someone with dedicated security experience, not just general coding ability.
+It depends heavily on the individual freelancer's specific security background rather than freelancing as a category - this is part of why LaunchStudio positions itself against generalist freelancers specifically for founders who want assurance the review was done by someone with dedicated security experience, not just general coding ability.
 
 ### Can I just ask my AI coding tool to fix this across the whole codebase in one prompt?
 
-It's worth trying as a first pass, but treat the result as a starting point rather than a guarantee — a single prompt may miss instances tucked in files the tool doesn't reconsider, or introduce a regression in a query that was already working, which is why a systematic review still checks the result rather than trusting the prompt alone.
+It's worth trying as a first pass, but treat the result as a starting point rather than a guarantee - a single prompt may miss instances tucked in files the tool doesn't reconsider, or introduce a regression in a query that was already working, which is why a systematic review still checks the result rather than trusting the prompt alone.
 
 <script type="application/ld+json">
 {
@@ -164,7 +164,7 @@ It's worth trying as a first pass, but treat the result as a starting point rath
       "name": "Can I ask my AI coding tool to fix this across the whole codebase in one prompt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Worth trying as a first pass, but treat it as a starting point — a single prompt can miss instances or introduce regressions."
+        "text": "Worth trying as a first pass, but treat it as a starting point - a single prompt can miss instances or introduce regressions."
       }
     }
   ]

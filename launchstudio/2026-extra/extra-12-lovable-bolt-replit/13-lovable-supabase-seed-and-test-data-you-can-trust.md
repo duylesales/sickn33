@@ -36,7 +36,7 @@ Six properties, and every one of them breaks something in a typical AI-built app
 
 **Age.** Records from last year, from before you added a required column, from before you changed how status worked. Old rows are a running record of every schema decision you have revised.
 
-**Awkward characters.** Names with apostrophes and diacritics — Van 't Hoff, Peña, Müller — which break string handling, exports and search. Dutch names alone will find most of it.
+**Awkward characters.** Names with apostrophes and diacritics - Van 't Hoff, Peña, Müller - which break string handling, exports and search. Dutch names alone will find most of it.
 
 **Emptiness.** Optional fields nobody filled in, relationships that point at deleted things, half-finished records abandoned mid-form.
 
@@ -48,7 +48,7 @@ A seed set that contains all six will catch more bugs than any amount of additio
 
 Make your seed a script, checked in, that builds a database from empty to useful in one command.
 
-The value is not only that new environments are quick. It is that everyone — you, a contractor, a future employee, an AI session — works against the same data, so "it works for me" becomes a meaningful statement rather than a coincidence. And when a bug is found, the fix is to add a row to the seed that reproduces it, which means it can never silently return.
+The value is not only that new environments are quick. It is that everyone - you, a contractor, a future employee, an AI session - works against the same data, so "it works for me" becomes a meaningful statement rather than a coincidence. And when a bug is found, the fix is to add a row to the seed that reproduces it, which means it can never silently return.
 
 Keep it deterministic. Random generators that produce different data each run make failures unreproducible, which is the opposite of what a seed is for. Fixed identifiers, fixed values, fixed dates relative to a known reference point.
 
@@ -58,11 +58,11 @@ And give it a defined set of accounts with known roles: an administrator, an ord
 
 Seed data is right for development. Staging is where you want the real shapes, because it is the last place to notice that a customer's peculiar data breaks the new feature.
 
-Never point staging at the production database. It is one mistaken delete away from an incident, and it means test emails go to real customers — a mistake almost every company makes exactly once.
+Never point staging at the production database. It is one mistaken delete away from an incident, and it means test emails go to real customers - a mistake almost every company makes exactly once.
 
 Instead, copy production and anonymise it. Replace names, emails, phone numbers and addresses with generated values, redact free-text fields that may contain anything, and neutralise every email address so nothing can reach a real person. Keep the structure: same row counts, same distribution, same ages, same relationships.
 
-Two rules make this safe rather than theatrical. Anonymise during the copy, not after — a staging database that is real for twenty minutes is a real database. And treat the result as still sensitive: it has production's shape, which is itself informative, so it deserves the same access control.
+Two rules make this safe rather than theatrical. Anonymise during the copy, not after - a staging database that is real for twenty minutes is a real database. And treat the result as still sensitive: it has production's shape, which is itself informative, so it deserves the same access control.
 
 ## The Fields People Forget to Anonymise
 
@@ -70,7 +70,7 @@ Reviews of anonymisation scripts find the same misses.
 
 Free-text notes, which contain anything a user typed and are the single richest source of personal data in most products. Uploaded file contents, which are usually not covered at all. Audit and event logs recording who did what. Stored email bodies from your notification history. External identifiers such as payment provider customer IDs, which link a fake name back to a real person in somebody else's system. And backups of the staging database, which quietly preserve whatever was there before you improved the script.
 
-The test to apply: pick three customers you know in the anonymised copy and try to identify them. If you can, it is not anonymised — it is renamed.
+The test to apply: pick three customers you know in the anonymised copy and try to identify them. If you can, it is not anonymised - it is renamed.
 
 ## Make Sending Impossible, Not Unlikely
 
@@ -84,7 +84,7 @@ The failure this prevents is specific and memorable: a staging run of a notifica
 
 ## Snapshots Make Everything Cheap
 
-Once seeding exists, add the ability to restore a known state quickly — a database snapshot you can reset to in seconds.
+Once seeding exists, add the ability to restore a known state quickly - a database snapshot you can reset to in seconds.
 
 This changes how you work more than it sounds. Destructive changes become safe to try. A migration can be run, inspected, rolled back and run again. Reproducing a customer's bug becomes a matter of restoring the snapshot rather than a careful sequence of clicks you must not get wrong.
 
@@ -104,9 +104,9 @@ The hardest support tickets are the ones where a customer describes something yo
 
 Almost always the difference is their data. They have a record with an unusual combination of fields, a relationship that should not exist, or a volume that changes which code path runs. Guessing is slow; copying is fast.
 
-Build the ability to extract one account's data from production — anonymised, structurally complete, with everything it references — and load it into a development database beside your ordinary seed. A single command, ten minutes of work the first time, and the difference between reproducing a bug in a minute and speculating about it for an afternoon.
+Build the ability to extract one account's data from production - anonymised, structurally complete, with everything it references - and load it into a development database beside your ordinary seed. A single command, ten minutes of work the first time, and the difference between reproducing a bug in a minute and speculating about it for an afternoon.
 
-Two constraints keep it honest. The extract must be anonymised the same way staging is, since it is production data on a laptop otherwise. And it should be deleted when the investigation is finished rather than accumulating in a folder of old customer exports — which is exactly how a company ends up holding personal data it cannot account for.
+Two constraints keep it honest. The extract must be anonymised the same way staging is, since it is production data on a laptop otherwise. And it should be deleted when the investigation is finished rather than accumulating in a folder of old customer exports - which is exactly how a company ends up holding personal data it cannot account for.
 
 For products with a support obligation this is close to essential. A bug you cannot reproduce is a bug you fix by guessing, and guessing at production data is how the second incident gets created while fixing the first.
 
@@ -114,7 +114,7 @@ For products with a support obligation this is close to essential. A bug you can
 
 For an existing product this is typically one to two days: a deterministic seed script in the repository covering volume, uneven distribution, historical rows, awkward characters, empty fields and extremes; a defined set of test accounts including a second organisation for isolation checks; an anonymisation script covering every field holding personal data, including free text, logs, files and external identifiers; a staging refresh that anonymises during the copy; hard prevention of outbound email and third-party calls in non-production; snapshot and restore for fast reset; and both scripts wired into your checks so they cannot rot.
 
-LaunchStudio sets this up as part of production readiness, and it is usually the change that makes every subsequent change safer. The engineers are Manifera's — eleven years, 160+ projects, and staging environments that do not email customers.
+LaunchStudio sets this up as part of production readiness, and it is usually the change that makes every subsequent change safer. The engineers are Manifera's - eleven years, 160+ projects, and staging environments that do not email customers.
 
 [Ask us what your staging environment is connected to](https://launchstudio.eu/en/#contact). The answer is occasionally alarming.
 
@@ -128,14 +128,14 @@ Her development database had 30 participants, all created by her, all with names
 
 The one that finally forced the issue was the certificate export. A training provider in Limburg ran a course with participants named Müller, Peña and Van 't Hoff. The export generated a CSV where those three rows were malformed, which the provider only discovered after sending 84 certificates to a corporate client with three of them blank. It was, from the client's perspective, the provider's mistake.
 
-Two business days: a seed script producing 4,000 participants across twelve providers with deliberately uneven distribution — one provider holding 2,600 of them; names including apostrophes, diacritics and a 180-character company name; records dated across two years including some predating two schema changes; 15 percent with empty optional fields and a handful with dangling references; four named test accounts including a second provider for isolation checks and one deactivated user; a staging refresh that copies production and anonymises during the copy, covering participants, free-text notes, uploaded certificates, audit logs and payment provider identifiers; email credentials removed from staging entirely with every address rewritten to a capture domain; and a local snapshot and restore taking four seconds.
+Two business days: a seed script producing 4,000 participants across twelve providers with deliberately uneven distribution - one provider holding 2,600 of them; names including apostrophes, diacritics and a 180-character company name; records dated across two years including some predating two schema changes; 15 percent with empty optional fields and a handful with dangling references; four named test accounts including a second provider for isolation checks and one deactivated user; a staging refresh that copies production and anonymises during the copy, covering participants, free-text notes, uploaded certificates, audit logs and payment provider identifiers; email credentials removed from staging entirely with every address rewritten to a capture domain; and a local snapshot and restore taking four seconds.
 
-**Result:** the export bug reproduced on the first run of the new seed, along with two others nobody had reported — a list page that timed out for the largest provider and a search that missed diacritics entirely. Support tickets attributable to data shape fell from roughly three a week to two in the following quarter.
+**Result:** the export bug reproduced on the first run of the new seed, along with two others nobody had reported - a list page that timed out for the largest provider and a search that missed diacritics entirely. Support tickets attributable to data shape fell from roughly three a week to two in the following quarter.
 
 > *"I had tested everything. I had just tested it all against thirty people I invented, who were all called Jan and had all signed up last Tuesday."*
-> — **Sanne Verkerk, Founder, Deelnemerslijst (Venlo)**
+> - **Sanne Verkerk, Founder, Deelnemerslijst (Venlo)**
 
-**Cost & Timeline:** €2,300 (seed script with realistic distribution and edge cases, test accounts, anonymisation for staging including free text and logs, outbound prevention, snapshot and restore, CI wiring) — completed in 2 business days.
+**Cost & Timeline:** €2,300 (seed script with realistic distribution and edge cases, test accounts, anonymisation for staging including free text and logs, outbound prevention, snapshot and restore, CI wiring) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -193,7 +193,7 @@ Two layers: no credentials for your real email provider in that environment, and
       "name": "Should seed data be randomly generated?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — deterministic data means failures reproduce. Random generation produces bugs that appear once and cannot be investigated."
+        "text": "No - deterministic data means failures reproduce. Random generation produces bugs that appear once and cannot be investigated."
       }
     },
     {

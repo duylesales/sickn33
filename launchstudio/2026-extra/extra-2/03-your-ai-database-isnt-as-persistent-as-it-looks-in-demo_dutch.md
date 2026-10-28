@@ -53,18 +53,18 @@ In tegenstelling tot een zichtbare bug kondigt een ontbrekende snelheidsbeperkin
 
 Niet elk eindpunt in uw applicatie heeft hetzelfde beschermingsniveau nodig, en proberen om alles tegelijk met snelheidsbeperking af te schermen is een goede manier om de taak nooit daadwerkelijk af te maken. Een nuttigere benadering is het rangschikken van uw eindpunten op basis van hoeveel schade een script dat ze herhaaldelijk treft daadwerkelijk zou kunnen aanrichten, en in volgorde die lijst af te werken.
 
-**Niveau één — herstel deze eerst:**
+**Niveau één - herstel deze eerst:**
 
 - Eindpunten voor het opnieuw instellen van wachtwoorden en inloggen, aangezien deze het meest populair zijn bij geautomatiseerde bots die scannen op exact deze zwakheid. Een enkel onbeschermd reset-eindpunt kan binnen enkele uren duizenden e-mails en een reële piek in hostingkosten genereren, zoals het gebeurde voor Bram.
 - Elk eindpunt dat een betaalde, gemeten actie aan uw kant triggert – een AI-modelaanroep, een SMS-verzending, een e-mailverzending – omdat elk herhaald verzoek een directe dollarkost met zich meebrengt, en niet alleen overlast.
 - Eindpunten voor het aanmaken van accounts en registratie, die een veelvoorkomend doelwit zijn voor het in bulk genereren van nepaccounts.
 
-**Niveau twee — herstel deze daarna:**
+**Niveau twee - herstel deze daarna:**
 
 - Zoek- en filtereindpunten, in het bijzonder eindpunten die een databasequery construeren uit gebruikersinvoer, aangezien deze de neiging hebben zowel computationeel duur te zijn om herhaaldelijk uit te voeren als een veelvoorkomend doelwit voor het peilen naar misvormde invoer.
 - Eindpunten voor bestandsuploads, waar herhaalde grote uploads opslag of bandbreedte snel kunnen uitputten.
 
-**Niveau drie — waard om te doen, lagere urgentie:**
+**Niveau drie - waard om te doen, lagere urgentie:**
 
 - Alleen-lezen eindpunten die niet-gevoelige, cachebare gegevens serveren, waar de kosten van misbruik lager zijn en standaard bescherming op hostingniveau vaak zelfstandig voldoende dekking biedt.
 
@@ -89,9 +89,9 @@ Na een maand merkte Bram dat zijn e-mailverzendkosten van de ene op de andere da
 **Resultaat:** LaunchStudio voegde snelheidsbeperking toe aan het eindpunt voor het opnieuw instellen van wachtwoorden en elke andere gevoelige, niet-geauthenticeerde route, samen met basisbewaking van misbruikpatronen, waardoor de kloof werd gesloten zonder OnboardIQ's inwerklogica aan te raken.
 
 > *"Ik wist niet eens dat 'rate limiting' iets was dat ik nodig had totdat het me van de ene op de andere nacht geld kostte."*
-> — **Bram Willemsen, Oprichter, OnboardIQ (Eindhoven)**
+> - **Bram Willemsen, Oprichter, OnboardIQ (Eindhoven)**
 
-**Kosten en tijdlijn:** € 1.150 (eindpunt-uitharding en snelheidsbeperking) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.150 (eindpunt-uitharding en snelheidsbeperking) - voltooid in 4 werkdagen.
 
 ---
 

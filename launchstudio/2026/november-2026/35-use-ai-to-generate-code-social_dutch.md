@@ -1,6 +1,6 @@
 🚨 Uw team gebruikt AI om code te genereren. Maar heeft u grip op de governance?
 
-Wanneer iedereen — van junior developers tot servicemanagers — met Lovable of Cursor apps bouwt, schiet de productiviteit omhoog, maar stort de beveiliging in door "Shadow IT".
+Wanneer iedereen - van junior developers tot servicemanagers - met Lovable of Cursor apps bouwt, schiet de productiviteit omhoog, maar stort de beveiliging in door "Shadow IT".
 
 Onbeheerde AI-codegeneratie leidt tot:
 ⚠️ Wildgroei aan geheimen (hardcoded API-sleutels).

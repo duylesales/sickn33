@@ -4,7 +4,7 @@ What quietly comes along for the ride in your config files matters more than wha
 
 ❌ An old test API key sat directly in a config file, not an environment variable
 ❌ It moved with the code to the new provider, unnoticed
-❌ It stayed active — still valid, still callable — for three weeks after migration
+❌ It stayed active - still valid, still callable - for three weeks after migration
 ❌ Django only caught it by chance, during an unrelated cleanup
 
 ✅ Run a full secrets and dependency audit on any downloaded codebase before building further

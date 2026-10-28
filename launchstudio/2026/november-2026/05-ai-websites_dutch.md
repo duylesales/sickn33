@@ -41,7 +41,7 @@ De vraag is niet of AI een mooie website kan bouwen. Dat kan het overduidelijk w
 
 ## Wat AI-Websites Opleveren (en Wat Ze Overslaan)
 
-AI-websitebouwers blinken uit in de presentatielaag. De HTML, CSS en JavaScript die de visuele ervaring creëren zijn van echte productiekwaliteit. Responsieve lay-outs, moderne typografie, vloeiende animaties en toegankelijke kleurcontrasten — dit zijn de aspecten waarop AI-modellen op grote schaal zijn getraind en die ze uitstekend opleveren.
+AI-websitebouwers blinken uit in de presentatielaag. De HTML, CSS en JavaScript die de visuele ervaring creëren zijn van echte productiekwaliteit. Responsieve lay-outs, moderne typografie, vloeiende animaties en toegankelijke kleurcontrasten - dit zijn de aspecten waarop AI-modellen op grote schaal zijn getraind en die ze uitstekend opleveren.
 
 Dit is wat wél aanwezig is en wat ontbreekt in een typische AI-gegenereerde website:
 
@@ -113,9 +113,9 @@ Uw AI-website krijgt complimenten. Met complimenten kunt u de huur niet betalen.
 
 Het dichten van deze kloof vereist drie specifieke conversies:
 
-1. **Bezoeker → Lead** — Een werkend contactformulier met echte e-mailaflevering (geen console.log)
-2. **Lead → Gebruiker** — Correcte accountaanmaak met e-mailverificatie
-3. **Gebruiker → Klant** — Betalingsverwerking met automatisch abonnementsbeheer
+1. **Bezoeker → Lead** - Een werkend contactformulier met echte e-mailaflevering (geen console.log)
+2. **Lead → Gebruiker** - Correcte accountaanmaak met e-mailverificatie
+3. **Gebruiker → Klant** - Betalingsverwerking met automatisch abonnementsbeheer
 
 Elke conversie vereist backend-infrastructuur die AI-tools niet automatisch genereren. [LaunchStudio](https://launchstudio.eu/nl/#contact) overbrugt al deze drie stappen in één overzichtelijk traject, doorgaans binnen één tot drie weken.
 
@@ -133,16 +133,16 @@ Anouk, een freelance interieurontwerper in Eindhoven, gebruikte Lovable om te bo
 
 Reacties van klanten veranderden haar ambitie. Drie klanten vroegen of ze rechtstreeks via de website een adviesgesprek konden boeken. Twee klanten vroegen of ze haar samengestelde materiaal-samplekits konden aanschaffen. Anouk probeerde Calendly-embeds en een Stripe-checkoutknop toe te voegen via Lovable, maar de Calendly-integratie vervormde de lay-out en de Stripe-knop werkte alleen in de testmodus.
 
-Een lokale webontwikkelaar uit Eindhoven vroeg € 6.500 voor het bouwen van een complete e-commercesite met Shopify. Dit zou betekenen dat zij haar unieke Lovable-ontwerp zou verliezen — precies het element waar klanten zo enthousiast over waren.
+Een lokale webontwikkelaar uit Eindhoven vroeg € 6.500 voor het bouwen van een complete e-commercesite met Shopify. Dit zou betekenen dat zij haar unieke Lovable-ontwerp zou verliezen - precies het element waar klanten zo enthousiast over waren.
 
 Anouk vond LaunchStudio via de website. Binnen één kort kennismakingsgesprek van 15 minuten bracht het team het werk in kaart: behoud de Lovable-frontend volledig, voeg een Calendly API-integratie toe die past bij haar huisstijl, implementeer Mollie-betalingsverwerking (geprefereerd door Nederlandse klanten via iDEAL) voor de verkoop van de samplekits, en rol de site uit naar Vercel met een eigen domein.
 
-**Resultaat:** Anouks website genereert nu € 1.800 per maand uit de verkoop van samplekits en adviesboekingen — inkomsten die eerder handmatige e-mailafstemming en bankoverschrijvingen vereisten.
+**Resultaat:** Anouks website genereert nu € 1.800 per maand uit de verkoop van samplekits en adviesboekingen - inkomsten die eerder handmatige e-mailafstemming en bankoverschrijvingen vereisten.
 
-> *"Mijn Lovable-website was prachtig maar nutteloos voor mijn bedrijf. LaunchStudio maakte hem prachtig én winstgevend. Ze veranderden geen enkel ontwerpelement — ze zorgden er simpelweg voor dat de knoppen werkelijk gingen functioneren."*
-> — **Anouk Bakker, Oprichter, Studio Anouk Interiors (Eindhoven)**
+> *"Mijn Lovable-website was prachtig maar nutteloos voor mijn bedrijf. LaunchStudio maakte hem prachtig én winstgevend. Ze veranderden geen enkel ontwerpelement - ze zorgden er simpelweg voor dat de knoppen werkelijk gingen functioneren."*
+> - **Anouk Bakker, Oprichter, Studio Anouk Interiors (Eindhoven)**
 
-**Kosten & Doorlooptijd:** € 1.400 (Launch Ready Pakket) — productieklaar en uitgerold in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 1.400 (Launch Ready Pakket) - productieklaar en uitgerold in 5 werkdagen.
 
 ---
 
@@ -161,7 +161,7 @@ Ja. LaunchStudio biedt white-label partnerschappen waarbij zij de technische pro
 AI-gegenereerde frontends scoren doorgaans goed op Largest Contentful Paint (LCP) en Cumulative Layout Shift (CLS) omdat de HTML-structuur schoon is. Waar de prestaties onder lijden, zijn niet-geoptimaliseerde afbeeldingen, het ontbreken van lazy loading en het ontbreken van een CDN-configuratie. LaunchStudio pakt alle drie deze punten aan tijdens de uitrol, zodat uw site slaagt voor de Core Web Vitals.
 
 ### Hoeveel kost de hosting van een AI-gebouwde website per maand na de lancering?
-Bij het Launch Ready-pakket beheert u uw eigen hosting — Vercel en Netlify bieden royale gratis abonnementen die de meeste startende sites dekken. Bij het Launch & Grow-pakket van € 49 per maand beheert LaunchStudio uw hosting inclusief SSL, monitoring, back-ups en beveiligingsupdates. Beide opties zijn aanzienlijk voordeliger dan traditioneel hostingbeheer.
+Bij het Launch Ready-pakket beheert u uw eigen hosting - Vercel en Netlify bieden royale gratis abonnementen die de meeste startende sites dekken. Bij het Launch & Grow-pakket van € 49 per maand beheert LaunchStudio uw hosting inclusief SSL, monitoring, back-ups en beveiligingsupdates. Beide opties zijn aanzienlijk voordeliger dan traditioneel hostingbeheer.
 
 <script type="application/ld+json">
 {

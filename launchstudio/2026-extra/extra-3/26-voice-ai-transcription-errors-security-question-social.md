@@ -1,4 +1,4 @@
-🚨 A customer called BelBestel to fix their order mid-sentence: "no, wait." Background noise on the line meant the system transcribed just "no," heard silence after, and quietly dropped the correction — no cancellation, no clarification, no updated order. The customer never got what they actually asked for. 📞
+🚨 A customer called BelBestel to fix their order mid-sentence: "no, wait." Background noise on the line meant the system transcribed just "no," heard silence after, and quietly dropped the correction - no cancellation, no clarification, no updated order. The customer never got what they actually asked for. 📞
 
 Binary yes-no logic works great in a quiet room. Real phone calls aren't quiet rooms. 🧠
 
@@ -11,7 +11,7 @@ Binary yes-no logic works great in a quiet room. Real phone calls aren't quiet r
 ✅ Require an unambiguous, repeated confirmation before any consequential, voice-triggered action executes
 ✅ Add fallback logic that asks a clarifying follow-up on ambiguous input instead of silently defaulting
 
-At **LaunchStudio**, we review voice-driven AI products specifically for this transcription-to-action risk — treating input validation as a security question, not just a quality one. Backed by Manifera's engineering discipline around consequential input handling. 🛡️
+At **LaunchStudio**, we review voice-driven AI products specifically for this transcription-to-action risk - treating input validation as a security question, not just a quality one. Backed by Manifera's engineering discipline around consequential input handling. 🛡️
 
 His result: BelBestel now reads back every order before confirming, with fallback logic that clarifies instead of silently dropping ambiguous speech. 🚀
 

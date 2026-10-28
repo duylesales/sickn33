@@ -40,7 +40,7 @@ Applicaties gaan de mist in door alle drie deze varianten op exact dezelfde mani
 
 In PostgreSQL (en dus Supabase) betekent dit dat je kiest voor `timestamptz` in plaats van `timestamp`. Dat onderscheid is oneindig veel belangrijker dan de namen doen vermoeden.
 
-Een `timestamptz` legt een objectief, universeel tijdstip vast. Ongeacht in welke offset of tijdzone de data binnenkomt, het wordt intern eenduidig opgeslagen in UTC, en elke lezer krijgt exact hetzelfde moment te zien. Een reguliere `timestamp` (zonder tijdzone) slaat louter losse cijfers op zonder enige context wat ze betekenen — een waarde vastgelegd door een server in Frankfurt en gelezen door een browser in Londen wordt daardoor simpelweg geraden.
+Een `timestamptz` legt een objectief, universeel tijdstip vast. Ongeacht in welke offset of tijdzone de data binnenkomt, het wordt intern eenduidig opgeslagen in UTC, en elke lezer krijgt exact hetzelfde moment te zien. Een reguliere `timestamp` (zonder tijdzone) slaat louter losse cijfers op zonder enige context wat ze betekenen - een waarde vastgelegd door een server in Frankfurt en gelezen door een browser in Londen wordt daardoor simpelweg geraden.
 
 Door AI gegenereerde databaseschema's produceren vrijwel standaard de kale `timestamp`-versie, omdat het verschil onzichtbaar blijft zolang iedereen zich toevallig in dezelfde tijdzone bevindt. Controleer je databasekolommen. Als je absolute gebeurtenissen opslaat in gewone `timestamp`-velden, vereist het converteren naar `timestamptz` zorgvuldige datamigratie: je moet bepalen in welke tijdzone historische rijen zijn aangemaakt, en het eerlijke antwoord is soms dat je dat voor records van vóór afgelopen maart niet met zekerheid kunt vaststellen.
 
@@ -50,11 +50,11 @@ De architectuurregel: **sla alles op in UTC, converteer uitsluitend voor de weer
 
 Er zijn twee specifieke factoren die achter vrijwel alle tijdfouten in Nederlandse SaaS-producten zitten:
 
-**Nederland kent zomertijd en wintertijd.** De tijdsverschuiving ten opzichte van UTC is UTC+1 in de winter en UTC+2 in de zomer (Midden-Europese Tijd / MET vs. Midden-Europese Zomertijd / MEZT). Een systeem dat ooit hardcoded `+1 uur` heeft ingesteld, loopt ruwweg de helft van het jaar een vol uur achter — en de fout valt niet op als je in december test.
+**Nederland kent zomertijd en wintertijd.** De tijdsverschuiving ten opzichte van UTC is UTC+1 in de winter en UTC+2 in de zomer (Midden-Europese Tijd / MET vs. Midden-Europese Zomertijd / MEZT). Een systeem dat ooit hardcoded `+1 uur` heeft ingesteld, loopt ruwweg de helft van het jaar een vol uur achter - en de fout valt niet op als je in december test.
 
 **De klokovergang vindt plaats op een vast moment in de vroege ochtend op zondag in maart en oktober.** In het voorjaar bestaat het lokale uur tussen 02:00 en 03:00 niet; in het najaar gebeurt datzelfde uur twee keer. Een nachtelijke cron-job die op dat tijdstip staat ingesteld wordt óf overgeslagen óf draait twee keer achter elkaar. En elke periodieke afspraak die als vast tijdstip is opgeslagen, verschuift een uur.
 
-De praktische consequentie voor een reserverings- of planningssysteem: een afspraak gedefinieerd als *"elke dinsdag om 09:00 uur"* moet worden opgeslagen als lokale tijd plus tijdzone (`Europe/Amsterdam`), waarbij het absolute tijdstip voor elke afzonderlijke sessie dynamisch wordt berekend. Sla je de eerste les op als een absoluut moment en tel je daar steeds 7 dagen bij op, dan zitten alle lessen na de klokverzetting er een uur naast — en de klanten die dat ontdekken zijn degene die een uur te vroeg voor een dichte deur staan.
+De praktische consequentie voor een reserverings- of planningssysteem: een afspraak gedefinieerd als *"elke dinsdag om 09:00 uur"* moet worden opgeslagen als lokale tijd plus tijdzone (`Europe/Amsterdam`), waarbij het absolute tijdstip voor elke afzonderlijke sessie dynamisch wordt berekend. Sla je de eerste les op als een absoluut moment en tel je daar steeds 7 dagen bij op, dan zitten alle lessen na de klokverzetting er een uur naast - en de klanten die dat ontdekken zijn degene die een uur te vroeg voor een dichte deur staan.
 
 ## Kalenderdagen zijn géén tijdstippen
 
@@ -62,7 +62,7 @@ De tweede meest voorkomende fout, en gelukkig het eenvoudigst op te lossen:
 
 Een geboortedatum, een factuurdatum of een officiële feestdag hebben géén uren of minuten. Sla je een geboortedatum op als een timestamp om middernacht (`2026-05-15 00:00:00 UTC`), dan zorgt een conversie naar een tijdzone ten westen van Greenwich ervoor dat de datum verspringt naar `2026-05-14 23:00:00`. Gevolg: een factuur gedateerd op 31 mei verschijnt op het scherm als 30 mei, en een verjaardag klopt niet meer.
 
-Gebruik in PostgreSQL het datatype `DATE`. Een `DATE` kent geen tijdzones en participeert niet in conversies — exact wat je wilt.
+Gebruik in PostgreSQL het datatype `DATE`. Een `DATE` kent geen tijdzones en participeert niet in conversies - exact wat je wilt.
 
 Een verwant knelpunt: een rapportageperiode zoals *"de maand september"* is een reeks lokale dagen in een specifieke tijdzone. Als je maandoverzichten in UTC berekent tegen lokale administratieve verwachtingen, vallen transacties van de vroege ochtend of late avond op de verkeerde maand. Bepaal expliciet in welke tijdzone rapportagegrenzen liggen en pas dat consequent toe.
 
@@ -70,7 +70,7 @@ Een verwant knelpunt: een rapportageperiode zoals *"de maand september"* is een 
 
 Achtergrondtaken vereisen speciale aandacht:
 
-Plan geplande taken bij voorkeur buiten de overgangsuren (tussen 02:00 en 03:00) — plan nachtelijke taken bijvoorbeeld om 01:00 of 04:00 uur lokale tijd. Maak taken te allen tijde idempotent: zorg dat een job die per ongeluk twee keer draait niet twee keer een factuur verstuurt of een incasso uitvoert. Registreer elke uitvoering in een logtabel, zodat een overgeslagen taak direct opvalt.
+Plan geplande taken bij voorkeur buiten de overgangsuren (tussen 02:00 en 03:00) - plan nachtelijke taken bijvoorbeeld om 01:00 of 04:00 uur lokale tijd. Maak taken te allen tijde idempotent: zorg dat een job die per ongeluk twee keer draait niet twee keer een factuur verstuurt of een incasso uitvoert. Registreer elke uitvoering in een logtabel, zodat een overgeslagen taak direct opvalt.
 
 Wees expliciet over de tijdzone van je taakplanner. Een cron-job ingesteld op `02:00` op een hostingplatform dat in UTC draait, start in Nederland om 03:00 (wintertijd) of 04:00 (zomertijd).
 
@@ -96,7 +96,7 @@ Naast tijdzones is er een tweede categorie datumvalkuilen die leidt tot zakelijk
 
 Voor een actieve applicatie is dit een afgebakend en dankbaar project: `timestamp`-kolommen migreren naar `timestamptz` met gedocumenteerde interpretatie van historische data, kalenderdagen omzetten naar `DATE`, herhalende afspraken opslaan als lokale kloktijd met tijdzone, rapportagegrenzen eenduidig definiëren, achtergrondtaken idempotent maken, en de frontend voorzien van eenduidige tijdzonelabels en gebruikersvoorkeuren.
 
-LaunchStudio voert deze normalisatieslag uit zonder verstoring van je live-applicatie. De software engineers zijn van Manifera: elf jaar ervaring met productiesystemen die simultaan opereren over Amsterdam Herengracht 420, Singapore en Ho Chi Minhstad — drie verschillende tijdzones, wat direct verklaart waarom we dit onderwerp zo scherp beheersen.
+LaunchStudio voert deze normalisatieslag uit zonder verstoring van je live-applicatie. De software engineers zijn van Manifera: elf jaar ervaring met productiesystemen die simultaan opereren over Amsterdam Herengracht 420, Singapore en Ho Chi Minhstad - drie verschillende tijdzones, wat direct verklaart waarom we dit onderwerp zo scherp beheersen.
 
 [Vertel ons waar de datums in jouw product haperen](https://launchstudio.eu/nl/#contact) voor een gerichte analyse binnen één werkdag, of bekijk onze [pakketten](https://launchstudio.eu/nl/#packages).
 
@@ -104,20 +104,20 @@ LaunchStudio voert deze normalisatieslag uit zonder verstoring van je live-appli
 
 ### Elke buitenlandse cliënt, één uur te vroeg
 
-Noortje Haan bouwde met Lovable het platform Trainingsschema: online coaching en afsprakenplanning voor veertien personal trainers en fysiopraktijken in Utrecht en Amersfoort. Circa een derde van hun cliënten woont in het buitenland — Nederlandse expats die na hun verhuizing hun vertrouwde coach aanhielden.
+Noortje Haan bouwde met Lovable het platform Trainingsschema: online coaching en afsprakenplanning voor veertien personal trainers en fysiopraktijken in Utrecht en Amersfoort. Circa een derde van hun cliënten woont in het buitenland - Nederlandse expats die na hun verhuizing hun vertrouwde coach aanhielden.
 
 Sessies werden in Supabase opgeslagen als platte `timestamp` (zonder tijdzone). Tijden werden in de interface letterlijk getoond zoals ze in de database stonden, zonder tijdzonelabel. Wekelijks terugkerende afspraken werden gegenereerd door de eerste sessie op te slaan en daar telkens 7 dagen bij op te tellen.
 
-Drie afzonderlijke ontwerpfouten versterkten elkaar: Cliënten in het buitenland zagen de Nederlandse kloktijd zonder enige toelichting. Een cliënte in Portugal verscheen daardoor vier maanden lang elke week een uur te laat en dacht dat ze zich telkens vergiste. Na de klokverzetting in maart verschoven alle herhalende sessies in de database met een uur ten opzichte van de papieren agenda van de trainers; veertien trainers waren twee weken lang handmatig afspraken aan het herstellen en één trainer verloor twee cliënten door gemiste sessies. En het wekelijkse omzetoverzicht dat trainers op maandagochtend ontvingen werd berekend in UTC, waardoor trainingen op zondagavond werden meegenomen in het rapport van de vólgende week — wat al maanden zorgde voor onverklaarbare afwijkingen met de eigen boekhouding.
+Drie afzonderlijke ontwerpfouten versterkten elkaar: Cliënten in het buitenland zagen de Nederlandse kloktijd zonder enige toelichting. Een cliënte in Portugal verscheen daardoor vier maanden lang elke week een uur te laat en dacht dat ze zich telkens vergiste. Na de klokverzetting in maart verschoven alle herhalende sessies in de database met een uur ten opzichte van de papieren agenda van de trainers; veertien trainers waren twee weken lang handmatig afspraken aan het herstellen en één trainer verloor twee cliënten door gemiste sessies. En het wekelijkse omzetoverzicht dat trainers op maandagochtend ontvingen werd berekend in UTC, waardoor trainingen op zondagavond werden meegenomen in het rapport van de vólgende week - wat al maanden zorgde voor onverklaarbare afwijkingen met de eigen boekhouding.
 
 In acht werkdagen werd de tijdlaag structureel gesaneerd: databasekolommen werden gemigreerd naar `timestamptz`, waarbij historische records na afstemming met de trainers eenduidig werden geïnterpreteerd als Nederlandse lokale tijd; herhalende sessies werden geherstructureerd naar lokale kloktijd met expliciete tijdzone (`Europe/Amsterdam`), waarbij elk afzonderlijk sessiemoment dynamisch wordt berekend zodat klokwisselingen geen effect meer hebben; tijden worden in de webapp getoond in de tijdzone van de bezoeker met een duidelijk label en een instelbare voorkeur; het wekelijkse omzetrapport werd verankerd op Nederlandse kalenderdagen; geplande taken werden verplaatst naar veilige nachtelijke tijdstippen met audit logging; en er werd een testsuite toegevoegd die de klokovergangen in maart en oktober automatisch simuleert.
 
-**Resultaat:** Nul klachten over afspraken tijdens de daaropvolgende overgangen naar zomer- en wintertijd — de eerste keer in het bestaan van het platform dat een klokwisseling geruisloos verliep. De Portugese cliënte werd geïnformeerd over de softwarefout en bleef tevreden klant.
+**Resultaat:** Nul klachten over afspraken tijdens de daaropvolgende overgangen naar zomer- en wintertijd - de eerste keer in het bestaan van het platform dat een klokwisseling geruisloos verliep. De Portugese cliënte werd geïnformeerd over de softwarefout en bleef tevreden klant.
 
 > *"Een cliënte in Portugal logde vier maanden lang elke week een uur te laat in en gaf zichzelf de schuld. Mijn applicatie toonde simpelweg een getal zonder enig idee wat voor tijd het werkelijk was."*
-> — **Noortje Haan, Oprichter, Trainingsschema (Utrecht)**
+> - **Noortje Haan, Oprichter, Trainingsschema (Utrecht)**
 
-**Kosten & Doorlooptijd:** € 3.800 (databasemigratie naar timestamptz met historische datacorrectie, herstructurering herhalende afspraken, tijdzoneweergave en voorkeuren, rapportagekalender, idempotente cron-jobs, zomertijd-testsuite) — opgeleverd in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 3.800 (databasemigratie naar timestamptz met historische datacorrectie, herstructurering herhalende afspraken, tijdzoneweergave en voorkeuren, rapportagekalender, idempotente cron-jobs, zomertijd-testsuite) - opgeleverd in 8 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -139,7 +139,7 @@ Vermijd het overgangsuur tussen 02:00 en 03:00 uur op zondagochtend (dat uur bes
 
 ### Hoe horen tijden getoond te worden aan eindgebruikers?
 
-Standaard in de lokale tijdzone van de bezoeker met een expliciet tijdzonelabel erbij — bijvoorbeeld *"14:00 uur (Amsterdam)"*. Gebruik relatieve tekst (*"15 minuten geleden"*) voor recente gebeurtenissen en geef gebruikers de optie om hun tijdzone handmatig in te stellen.
+Standaard in de lokale tijdzone van de bezoeker met een expliciet tijdzonelabel erbij - bijvoorbeeld *"14:00 uur (Amsterdam)"*. Gebruik relatieve tekst (*"15 minuten geleden"*) voor recente gebeurtenissen en geef gebruikers de optie om hun tijdzone handmatig in te stellen.
 
 <script type="application/ld+json">
 {

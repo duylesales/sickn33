@@ -80,7 +80,7 @@ In early 2026, Simon's team launched a brilliant new feature: an Autonomous Cate
 The feature was a massive technical success, but an economic disaster. 
 
 The large accounting firm loved the AI so much that they realized they no longer needed 100 bookkeepers to do data entry. They fired 80 junior staff members and reduced their seat count to just 20 senior reviewers. 
-Simon's monthly revenue from his biggest client instantly plummeted from €4,000 to €800—simply because his AI was too good. He had cannibalized his own business.
+Simon's monthly revenue from his biggest client instantly plummeted from €4,000 to €800 - simply because his AI was too good. He had cannibalized his own business.
 
 Simon engaged LaunchStudio to restructure his platform's underlying architecture and billing logic.
 
@@ -91,9 +91,9 @@ They shifted the platform away from Seat-Based billing to a Hybrid Compute model
 **Result:** The large accounting firm was processing 100,000 transactions a month. Under the new Outcome-Based model, they paid Simon €10,000 for the automated categorizations, plus €200 for the 20 seats. Simon's revenue from the client jumped to €10,200/month. The accounting firm was thrilled because they were still saving €300,000 a month on junior staff salaries. Simon aligned his revenue with the actual value his AI delivered, saving his SaaS company.
 
 > *"We built an incredible AI, and our reward was losing 80% of our revenue because our pricing model was built for the 2010s. LaunchStudio didn't just understand the code; they understood SaaS economics. They built the complex, real-time metering infrastructure that allowed us to actually capture the value our AI was creating."*
-> — **Simon Hayes, CEO, LedgerLogic (London)**
+> - **Simon Hayes, CEO, LedgerLogic (London)**
 
-**Cost & Timeline:** €22,000 (Launch & Grow Package with Metronome Integration & Metering Add-on) — production-ready and deployed in 30 business days.
+**Cost & Timeline:** €22,000 (Launch & Grow Package with Metronome Integration & Metering Add-on) - production-ready and deployed in 30 business days.
 
 ---
 

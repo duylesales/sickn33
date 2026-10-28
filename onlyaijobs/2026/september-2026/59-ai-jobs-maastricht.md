@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Maastricht is physically closer to Aachen and Liège than to Amsterdam, and that border location, combined with a strongly internationally oriented university, gives the city an AI labour market that feels different from the rest of the Netherlands — more international in composition, and closely tied to healthcare and life sciences.
+Maastricht is physically closer to Aachen and Liège than to Amsterdam, and that border location, combined with a strongly internationally oriented university, gives the city an AI labour market that feels different from the rest of the Netherlands - more international in composition, and closely tied to healthcare and life sciences.
 
 ## What This Border Region Character Concretely Means
 
-A candidate looking for AI or data work in Maastricht often competes with a more internationally composed candidate pool than in a comparable Dutch city further from the border — partly because of the university, partly because of the proximity of German and Belgian employers who sometimes also recruit Dutch candidates.
+A candidate looking for AI or data work in Maastricht often competes with a more internationally composed candidate pool than in a comparable Dutch city further from the border - partly because of the university, partly because of the proximity of German and Belgian employers who sometimes also recruit Dutch candidates.
 
 ## What Kind of Data Work Actually Happens Here
 
@@ -47,7 +47,7 @@ The region's strong healthcare and life sciences orientation produces work aroun
 
 ## What the International Composition Means for an Application
 
-A more international candidate pool doesn't necessarily mean more competition in absolute numbers — it means a different kind of competition, in which English skills and experience with international collaboration can weigh more heavily than in a purely Dutch regional market. For a candidate comfortable in an international work environment, this can be a real advantage over a more monocultural regional team elsewhere in the country.
+A more international candidate pool doesn't necessarily mean more competition in absolute numbers - it means a different kind of competition, in which English skills and experience with international collaboration can weigh more heavily than in a purely Dutch regional market. For a candidate comfortable in an international work environment, this can be a real advantage over a more monocultural regional team elsewhere in the country.
 
 ## Comparison Table: Maastricht vs. a Comparable Dutch University City
 
@@ -68,11 +68,11 @@ A research group affiliated with the university in Maastricht works with a healt
 
 ## A Common Misconception About What "Working Internationally" Means
 
-Candidates often associate working internationally with moving abroad. Maastricht offers a middle way that is rarely considered explicitly: an international work environment, with colleagues and sometimes employers from several countries, without having to move to another country yourself — an option that can be a real alternative, especially for people with a family or other reasons to stay in the Netherlands.
+Candidates often associate working internationally with moving abroad. Maastricht offers a middle way that is rarely considered explicitly: an international work environment, with colleagues and sometimes employers from several countries, without having to move to another country yourself - an option that can be a real alternative, especially for people with a family or other reasons to stay in the Netherlands.
 
 ## Why This Border Region Dynamic Is Likely to Strengthen, Not Weaken
 
-As European cooperation in healthcare, research and regulation increases further, border regions like Maastricht are expected to play a growing, not shrinking, role as hubs for this kind of international collaboration — making the region more attractive in the longer term for candidates already seeking internationally oriented work.
+As European cooperation in healthcare, research and regulation increases further, border regions like Maastricht are expected to play a growing, not shrinking, role as hubs for this kind of international collaboration - making the region more attractive in the longer term for candidates already seeking internationally oriented work.
 
 ## How to Adapt Your Application for This International Context
 
@@ -86,7 +86,7 @@ For candidates who aspire to an international career eventually but don't want t
 
 "An internationally oriented university" and "a strong healthcare sector" become concrete once you know the institutions.
 
-**Maastricht University (UM).** Founded in 1976 and one of the most international universities in the Netherlands, with a large share of international students and many English-taught programmes. The university is known for its problem-based learning model. The **Department of Advanced Computing Sciences** — formerly known as Data Science and Knowledge Engineering — conducts research and teaching in areas including artificial intelligence, machine learning, robotics, game theory and optimisation, and produces graduates in data science and AI every year.
+**Maastricht University (UM).** Founded in 1976 and one of the most international universities in the Netherlands, with a large share of international students and many English-taught programmes. The university is known for its problem-based learning model. The **Department of Advanced Computing Sciences** - formerly known as Data Science and Knowledge Engineering - conducts research and teaching in areas including artificial intelligence, machine learning, robotics, game theory and optimisation, and produces graduates in data science and AI every year.
 
 **Maastricht UMC+.** The academic hospital combines patient care, research and education, and is strong in areas including cardiovascular research, oncology, imaging and precision medicine. That is the source of the clinical data analysis work this article describes.
 
@@ -122,7 +122,7 @@ There are direct train connections between Maastricht, Heerlen and Aachen, and b
 
 ## Cross-Border Work: Arrange It in Advance
 
-Anyone living in the Netherlands and going to work in Belgium or Germany — or the other way round — deals with different systems for tax, social security and pensions. That doesn't have to be an obstacle, but it deserves preparation. The regional **GrensInfoPunt** (cross-border information point) provides independent information to cross-border workers and employers on taxes, social security, health insurance and employment law. Check this before accepting an offer, and if you work from home in your country of residence, check what that means for your social security.
+Anyone living in the Netherlands and going to work in Belgium or Germany - or the other way round - deals with different systems for tax, social security and pensions. That doesn't have to be an obstacle, but it deserves preparation. The regional **GrensInfoPunt** (cross-border information point) provides independent information to cross-border workers and employers on taxes, social security, health insurance and employment law. Check this before accepting an offer, and if you work from home in your country of residence, check what that means for your social security.
 
 ## International Graduates: Stay or Leave
 
@@ -154,14 +154,14 @@ For a candidate, that means two things. First: read the language requirement in 
 
 ## Where to Start
 
-If you are open to a more international work environment and interested in healthcare or research-related data work, Maastricht is worth considering — look specifically at the region instead of assuming serious AI work can only be found in the Randstad.
+If you are open to a more international work environment and interested in healthcare or research-related data work, Maastricht is worth considering - look specifically at the region instead of assuming serious AI work can only be found in the Randstad.
 
 Browse current AI, machine learning and data jobs in and around Maastricht at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate unsure whether Maastricht has a serious AI market) Does Maastricht have a serious AI labour market, despite its distance from the Randstad?
-Yes, with its own character — closely tied to healthcare and life sciences, and more international in composition thanks to the border location and the university.
+Yes, with its own character - closely tied to healthcare and life sciences, and more international in composition thanks to the border location and the university.
 
 ### (Scenario: candidate unsure about competition) Is competition for AI vacancies in Maastricht different from elsewhere in the Netherlands?
 It is often more international in composition, partly because of the university and the proximity of German and Belgian employers who sometimes also recruit Dutch candidates.
@@ -180,7 +180,7 @@ Filter by category and distance from home, and look specifically at healthcare a
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does Maastricht have a serious AI labour market, despite its distance from the Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with its own character — closely tied to healthcare and life sciences, and more international in composition."}},
+    {"@type": "Question", "name": "Does Maastricht have a serious AI labour market, despite its distance from the Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with its own character - closely tied to healthcare and life sciences, and more international in composition."}},
     {"@type": "Question", "name": "Is competition for AI vacancies in Maastricht different from elsewhere in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "It is often more international in composition, partly because of the university and the proximity of German and Belgian employers."}},
     {"@type": "Question", "name": "What kind of data work happens specifically in the healthcare sector around Maastricht?", "acceptedAnswer": {"@type": "Answer", "text": "Clinical data analysis and health research, with a more pronounced international component than elsewhere."}},
     {"@type": "Question", "name": "What makes Maastricht different from other Dutch university cities for AI work?", "acceptedAnswer": {"@type": "Answer", "text": "The border location next to Belgium and Germany and the internationally oriented university give a more international candidate pool."}},

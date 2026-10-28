@@ -24,25 +24,25 @@ Dit is de ongemakkelijke realiteit van een applicatie die op Supabase draait: uw
 
 Die regels heten Row Level Security (RLS) policies. Wanneer ze correct zijn ingericht, is de architectuur buitengewoon robuust: de beveiliging bevindt zich diep in de database-engine zelf, waar deze onverbiddelijk geldt, ongeacht welke query binnenkomt of wie deze heeft geschreven. Maar wanneer ze ontbreken, onvolledig zijn of puur zijn geschreven om een foutmelding snel weg te poetsen, is uw architectuur in feite een openbare database met niet meer dan een dun inlogschermpje ervoor.
 
-Dit is het meest ingrijpende onderdeel van een met AI gebouwd softwareproduct. En het is precies het onderdeel dat AI-codegeneratoren het minst betrouwbaar aanmaken — want RLS-policies coderen uw specifieke bedrijfslogica, en de AI begrijpt uw bedrijfsregels niet uit zichzelf.
+Dit is het meest ingrijpende onderdeel van een met AI gebouwd softwareproduct. En het is precies het onderdeel dat AI-codegeneratoren het minst betrouwbaar aanmaken - want RLS-policies coderen uw specifieke bedrijfslogica, en de AI begrijpt uw bedrijfsregels niet uit zichzelf.
 
 ## Wat de Policy Werkelijk Evalueert
 
-Een policy is een logische voorwaarde die wordt geëvalueerd voor elke rij, bij elke database-operatie, voor elk inkomend verzoek. Als de voorwaarde waar (`true`) is, is de rij zichtbaar of wordt de mutatie toegestaan. Als de voorwaarde onwaar (`false`) is, bestaat de rij simpelweg niet voor dat verzoek — geen foutmelding, geen permissie-weigering, puur stilzwijgende afwezigheid.
+Een policy is een logische voorwaarde die wordt geëvalueerd voor elke rij, bij elke database-operatie, voor elk inkomend verzoek. Als de voorwaarde waar (`true`) is, is de rij zichtbaar of wordt de mutatie toegestaan. Als de voorwaarde onwaar (`false`) is, bestaat de rij simpelweg niet voor dat verzoek - geen foutmelding, geen permissie-weigering, puur stilzwijgende afwezigheid.
 
-Die stilte is aan twee kanten gevaarlijk. Een policy die te permissief is, geeft geen enkel signaal; alles werkt feilloos in de UI, maar er is veel te veel data openbaar inzichtelijk. Een policy die te restrictief is, zorgt ervoor dat data plotseling mysterieus verdwijnt uit schermen — wat oprichters meestal als eerste opmerken en vervolgens op de slechtst mogelijke manier "oplossen".
+Die stilte is aan twee kanten gevaarlijk. Een policy die te permissief is, geeft geen enkel signaal; alles werkt feilloos in de UI, maar er is veel te veel data openbaar inzichtelijk. Een policy die te restrictief is, zorgt ervoor dat data plotseling mysterieus verdwijnt uit schermen - wat oprichters meestal als eerste opmerken en vervolgens op de slechtst mogelijke manier "oplossen".
 
-Elk verzoek draagt een identiteit mee. Voor een ingelogde gebruiker is dat diens account-ID en de claims in het JSON Web Token (JWT). Voor een anonieme bezoeker is het een beperkte anon-rol. Voor servercode die gebruikmaakt van de bevoorrechte `service_role`-sleutel worden RLS-policies volledig omzeild — en dat is precies de reden waarom die sleutel nooit ofte nimmer in de browser mag belanden.
+Elk verzoek draagt een identiteit mee. Voor een ingelogde gebruiker is dat diens account-ID en de claims in het JSON Web Token (JWT). Voor een anonieme bezoeker is het een beperkte anon-rol. Voor servercode die gebruikmaakt van de bevoorrechte `service_role`-sleutel worden RLS-policies volledig omzeild - en dat is precies de reden waarom die sleutel nooit ofte nimmer in de browser mag belanden.
 
 ## Inschakelen Is Niet Hetzelfde Als Beveiligen
 
 Dit zijn twee volstrekt gescheiden stappen, en het misverstand ertussen is waar datalekken ontstaan.
 
-Het inschakelen van Row Level Security op een tabel (`ALTER TABLE ... ENABLE ROW LEVEL SECURITY;`) betekent dat de tabel vanaf dat moment standaard alles weigert (default-deny). Het schrijven van policies betekent dat u expliciet specificeert wat wel is toegestaan. Een tabel met RLS ingeschakeld maar zonder policies is onzichtbaar voor de frontend, waardoor de applicatie kapot lijkt. Maar een tabel met geschreven policies waarbij RLS **niet** expliciet is ingeschakeld, staat wijd open voor de hele wereld — terwijl de UI perfect functioneert.
+Het inschakelen van Row Level Security op een tabel (`ALTER TABLE ... ENABLE ROW LEVEL SECURITY;`) betekent dat de tabel vanaf dat moment standaard alles weigert (default-deny). Het schrijven van policies betekent dat u expliciet specificeert wat wel is toegestaan. Een tabel met RLS ingeschakeld maar zonder policies is onzichtbaar voor de frontend, waardoor de applicatie kapot lijkt. Maar een tabel met geschreven policies waarbij RLS **niet** expliciet is ingeschakeld, staat wijd open voor de hele wereld - terwijl de UI perfect functioneert.
 
 Dat tweede geval is het meest risicovolle scenario: niets in de draaiende applicatie wijst op een probleem. De policies staan netjes in het dashboard, u herinnert zich dat u ze heeft geconfigureerd, maar PostgreSQL raadpleegt ze in werkelijkheid nooit.
 
-Controleer elke tabel afzonderlijk. Niet alleen de tabellen die u belangrijk vindt, maar letterlijk elke tabel — inclusief hulptabellen die een AI-tool automatisch heeft aangemaakt en die u zelf nog nooit heeft geopend.
+Controleer elke tabel afzonderlijk. Niet alleen de tabellen die u belangrijk vindt, maar letterlijk elke tabel - inclusief hulptabellen die een AI-tool automatisch heeft aangemaakt en die u zelf nog nooit heeft geopend.
 
 ## Vier Manieren Waarop Policies in de Praktijk Falen
 
@@ -68,21 +68,21 @@ De fout die u koste wat het kost moet vermijden, is beginnen met een simpel eige
 
 RLS-policies worden uitgevoerd op elke individuele rij van elke databasequery. Wat er in die policy staat, heeft directe gevolgen voor de responstijd van uw applicatie.
 
-Een policy die voor elke geëvalueerde rij een subquery of join uitvoert op een andere tabel, kan een snelle zoekopdracht dramatisch vertragen naarmate de database groeit. Twee maatregelen zijn standaard vereist: indexeer altijd de kolommen waarop uw policies filteren (zoals `tenant_id` of `user_id`), en structureer policies zo dat zware checks slechts eenmaal per query worden geëvalueerd in plaats van per individuele rij. Als uw applicatie merkbaar trager werd nadat RLS werd toegevoegd, is dit vrijwel altijd de oorzaak — en de verkeerde reflex is om de policies weer uit te zetten.
+Een policy die voor elke geëvalueerde rij een subquery of join uitvoert op een andere tabel, kan een snelle zoekopdracht dramatisch vertragen naarmate de database groeit. Twee maatregelen zijn standaard vereist: indexeer altijd de kolommen waarop uw policies filteren (zoals `tenant_id` of `user_id`), en structureer policies zo dat zware checks slechts eenmaal per query worden geëvalueerd in plaats van per individuele rij. Als uw applicatie merkbaar trager werd nadat RLS werd toegevoegd, is dit vrijwel altijd de oorzaak - en de verkeerde reflex is om de policies weer uit te zetten.
 
 ## Policies Testen Door Erop Aan te Vallen
 
 Het lezen van SQL-code vertelt u wat u *bedoelde*. Alleen een penetratietest vertelt u wat de database *daadwerkelijk doet*.
 
-Maak twee testaccounts aan in twee verschillende browsers, bij voorkeur gekoppeld aan twee verschillende organisaties. Voer vervolgens systematisch de volgende stappen uit: probeer een record van het andere account te openen door de ID in de URL aan te passen. Probeer het record van de ander via de console te bewerken (`UPDATE`). Probeer het te verwijderen (`DELETE`). Probeer een nieuw record aan te maken dat gekoppeld is aan het ID van de ander (`INSERT`). Log uit en herhaal exact dezelfde pogingen als anonieme bezoeker. Probeer ten slotte met uitsluitend uw publieke anon-key via een HTTP-client (zoals Postman of cURL) alle tabellen in de database op te vragen — inclusief tabellen die uw frontend nergens aanroept.
+Maak twee testaccounts aan in twee verschillende browsers, bij voorkeur gekoppeld aan twee verschillende organisaties. Voer vervolgens systematisch de volgende stappen uit: probeer een record van het andere account te openen door de ID in de URL aan te passen. Probeer het record van de ander via de console te bewerken (`UPDATE`). Probeer het te verwijderen (`DELETE`). Probeer een nieuw record aan te maken dat gekoppeld is aan het ID van de ander (`INSERT`). Log uit en herhaal exact dezelfde pogingen als anonieme bezoeker. Probeer ten slotte met uitsluitend uw publieke anon-key via een HTTP-client (zoals Postman of cURL) alle tabellen in de database op te vragen - inclusief tabellen die uw frontend nergens aanroept.
 
-Die laatste stap brengt steevast de vergeten hulptabellen aan het licht, en het kost niet meer dan vijf minuten. Elke query die data retourneert die niet zichtbaar had mogen zijn, is een beveiligingslek — en elk lek dat u nu vindt, had anders door een buitenstaander ontdekt kunnen worden.
+Die laatste stap brengt steevast de vergeten hulptabellen aan het licht, en het kost niet meer dan vijf minuten. Elke query die data retourneert die niet zichtbaar had mogen zijn, is een beveiligingslek - en elk lek dat u nu vindt, had anders door een buitenstaander ontdekt kunnen worden.
 
 ## Schrijf de Toegangsregels Eerst in Gewone Mensentaal
 
 Voordat u ook maar één regel SQL tikt, stelt u een document van één pagina op: per tabel wie mag lezen, wie mag aanmaken, wie mag wijzigen en wie mag verwijderen, en op basis van welke voorwaarde. Voor de meeste softwareproducten volstaan twintig regels tekst.
 
-Dit document vervult drie cruciale functies. Het maakt het schrijven van policies een kwestie van vertalen in plaats van improviseren. Het geeft u een waterdichte checklist om tests tegenaan te houden. En het is het tastbare artefact dat u kunt overhandigen aan een security auditor of een zakelijke klant die vraagt hoe autorisatie is geregeld — een vraag die anders tot een pijnlijke stilte leidt.
+Dit document vervult drie cruciale functies. Het maakt het schrijven van policies een kwestie van vertalen in plaats van improviseren. Het geeft u een waterdichte checklist om tests tegenaan te houden. En het is het tastbare artefact dat u kunt overhandigen aan een security auditor of een zakelijke klant die vraagt hoe autorisatie is geregeld - een vraag die anders tot een pijnlijke stilte leidt.
 
 ## Hoe Een Gezonde Beveiligingslaag Eruitziet
 
@@ -94,11 +94,11 @@ Voor een gemiddelde applicatie is dit ongeveer één werkdag werk. Het is het ve
 
 De regels één keer goed krijgen is het eenvoudigste deel. Ze correct houden gedurende een jaar vol continue feature-ontwikkeling is waar de meeste applicaties geruisloos degraderen.
 
-**Elke nieuwe tabel vereist een bewuste beslissing, geen aanname.** Op het moment dat een tabel wordt aangemaakt — door uzelf, een collega of een AI-agent — moet iemand vastleggen wie rijen mag lezen, toevoegen, wijzigen en wissen. Een tabel die tijdens een drukke sprint wordt aangemaakt onder het mom van "dat beveiligen we later wel", wordt in de praktijk nooit beveiligd, omdat de applicatie er ogenschijnlijk prima mee draait.
+**Elke nieuwe tabel vereist een bewuste beslissing, geen aanname.** Op het moment dat een tabel wordt aangemaakt - door uzelf, een collega of een AI-agent - moet iemand vastleggen wie rijen mag lezen, toevoegen, wijzigen en wissen. Een tabel die tijdens een drukke sprint wordt aangemaakt onder het mom van "dat beveiligen we later wel", wordt in de praktijk nooit beveiligd, omdat de applicatie er ogenschijnlijk prima mee draait.
 
 Maak er een vaste routine van: een tabel is pas klaar wanneer RLS is ingeschakeld, vier policies zijn gedefinieerd, en er een regel is toegevoegd aan het centrale autorisatiedocument. Dat kost drie minuten, en het voorkomt de geleidelijke opeenhoping van onbeschermde tabellen die bij vrijwel elke audit naar boven komt.
 
-**Migraties moeten hun eigen policies bevatten.** Als een tabel wordt aangemaakt via een SQL-migratiebestand, horen de bijbehorende RLS-policies in datzelfde bestand te staan. Policies die handmatig in een dashboard worden aangeklikt, bestaan alleen in die specifieke database. Bij een database-restore, een staging-omgeving of een lokale ontwikkelomgeving ontstaat dan een systeem waarin de data aanwezig is maar de beveiliging ontbreekt — de gevaarlijkste situatie denkbaar, omdat alles functioneert.
+**Migraties moeten hun eigen policies bevatten.** Als een tabel wordt aangemaakt via een SQL-migratiebestand, horen de bijbehorende RLS-policies in datzelfde bestand te staan. Policies die handmatig in een dashboard worden aangeklikt, bestaan alleen in die specifieke database. Bij een database-restore, een staging-omgeving of een lokale ontwikkelomgeving ontstaat dan een systeem waarin de data aanwezig is maar de beveiliging ontbreekt - de gevaarlijkste situatie denkbaar, omdat alles functioneert.
 
 **Wees alert op policies die worden verwijderd in plaats van hersteld.** Wanneer een nieuwe feature faalt met een permissiefout, zijn er twee oplossingen: de juiste permissie toekennen of de controle tijdelijk uitschakelen. Die tweede optie is sneller. Over een heel jaar bezien holt die asymmetrie een zorgvuldig ontworpen beveiligingsmodel stap voor stap uit. Het reviewen van wijzigingen in policy-bestanden levert meer beveiligingswaarde op dan vrijwel elk ander onderdeel van de codebase.
 
@@ -110,7 +110,7 @@ Maak er een vaste routine van: een tabel is pas klaar wanneer RLS is ingeschakel
 
 Voor een draaiende applicatie met actieve gebruikers is dit overzichtelijk precisiewerk in plaats van een complete herbouw.
 
-LaunchStudio pakt dit aan volgens een vaste systematiek: elke tabel wordt geïnventariseerd inclusief de vergeten hulptabellen, het autorisatiemodel wordt samen met u in heldere taal uitgeschreven, RLS wordt overal geactiveerd, policies worden per bewerking geschreven met sessie-gebaseerde identiteit, gebruikersrollen worden verplaatst naar afgeschermde tabellen, database-indexen worden toegevoegd om vertraging te voorkomen, en het volledige geheel wordt geverifieerd via actieve inbraaktests vanaf een extern account — zonder dat de interface die u heeft gebouwd wordt aangetast, en met volledige documentatie zodat u de regels zelfstandig kunt onderhouden.
+LaunchStudio pakt dit aan volgens een vaste systematiek: elke tabel wordt geïnventariseerd inclusief de vergeten hulptabellen, het autorisatiemodel wordt samen met u in heldere taal uitgeschreven, RLS wordt overal geactiveerd, policies worden per bewerking geschreven met sessie-gebaseerde identiteit, gebruikersrollen worden verplaatst naar afgeschermde tabellen, database-indexen worden toegevoegd om vertraging te voorkomen, en het volledige geheel wordt geverifieerd via actieve inbraaktests vanaf een extern account - zonder dat de interface die u heeft gebouwd wordt aangetast, en met volledige documentatie zodat u de regels zelfstandig kunt onderhouden.
 
 De engineers zijn afkomstig van Manifera: elf jaar ervaring met enterprise databases en beveiliging voor klanten zoals Vodafone, TNO en CFLW, vanuit Amsterdam (Herengracht 420) en Ho Chi Minhstad. [Stuur ons uw project](https://launchstudio.eu/nl/#contact) voor een gerichte analyse, doorgaans binnen één werkdag, of bekijk de specificaties van het [Launch Ready pakket](https://launchstudio.eu/nl/#packages).
 
@@ -118,24 +118,24 @@ De engineers zijn afkomstig van Manifera: elf jaar ervaring met enterprise datab
 
 ### Een Ledentabel Die Elk Lid Kon Uitlezen
 
-Koen Vermeulen bouwde Ledenadmin met Lovable: ledenadministratie-software die werd gebruikt door vijf sportverenigingen in en rondom Helmond — twee voetbalclubs, een tennisvereniging, een zwemclub en een turnvereniging. In totaal circa 4.000 leden, inclusief namen, adressen, geboortedata, IBAN-nummers voor automatische incasso en in sommige gevallen vertrouwelijke medische notities voor trainers.
+Koen Vermeulen bouwde Ledenadmin met Lovable: ledenadministratie-software die werd gebruikt door vijf sportverenigingen in en rondom Helmond - twee voetbalclubs, een tennisvereniging, een zwemclub en een turnvereniging. In totaal circa 4.000 leden, inclusief namen, adressen, geboortedata, IBAN-nummers voor automatische incasso en in sommige gevallen vertrouwelijke medische notities voor trainers.
 
 Row Level Security was weliswaar ingeschakeld op de ledentabel, maar de actieve policy stond iedere geauthenticeerde gebruiker toe om alle rijen op te vragen (`SELECT true`). Die regel was tijdens de ontwikkelfase haastig ingevoerd toen een ledenlijst leeg bleef en de snelste oplossing een regel was die alle rijen teruggaf.
 
-Elk lid met een inlogaccount — alle 4.000 leden — kon de volledige gegevens van elk ander lid inzien, dwars door alle vijf de verenigingen heen, door de openbare Supabase-API rechtstreeks aan te roepen met de publieke anon-key uit de broncode van de browser.
+Elk lid met een inlogaccount - alle 4.000 leden - kon de volledige gegevens van elk ander lid inzien, dwars door alle vijf de verenigingen heen, door de openbare Supabase-API rechtstreeks aan te roepen met de publieke anon-key uit de broncode van de browser.
 
 Niemand had dat nog gedaan. Het probleem kwam aan het licht toen de penningmeester van de tennisclub, die zelf in de IT-sector werkte, vroeg hoe de scheiding tussen de verschillende verenigingen technisch gewaarborgd was en geen genoegen nam met een ontwijkend antwoord.
 
 Negen werkdagen aan gerichte interventies: een volwaardige organisatie- en lidmaatschapsstructuur werd opgezet waarin elke vereniging een strikt gescheiden tenant vormt met specifieke rollen voor lid, commissielid en beheerder; policies werden per tabel en per database-operatie herschreven met identiteit ontleend aan de sessie (`auth.uid()`); de rolkolom werd uit het bewerkbare gebruikersprofiel gehaald en ondergebracht in een lidmaatschapstabel waar gebruikers zelf geen schrijfrechten op hebben; bankgegevens en IBAN's werden verplaatst naar een aparte tabel die uitsluitend door clubbestuurders kan worden gelezen; indexen werden toegevoegd op de lidmaatschapskolommen nadat een policy-check een ledenoverzicht vertraagde; het autorisatiemodel werd vastgelegd in een helder document van één pagina; en het geheel werd uitvoerig getest vanuit drie verschillende accounts bij verschillende clubs plus een niet-ingelogde client, inclusief een geautomatiseerde scan van alle tabellen met uitsluitend de publieke sleutel.
 
-Die laatste scan bracht nog twee vergeten tabellen aan het licht die de frontend niet meer gebruikte — een oude import-stagtabel met een verouderde kopie van de ledenlijst en een ongebruikte audit-tabel — die beide openbaar leesbaar bleken en direct werden opgeruimd.
+Die laatste scan bracht nog twee vergeten tabellen aan het licht die de frontend niet meer gebruikte - een oude import-stagtabel met een verouderde kopie van de ledenlijst en een ongebruikte audit-tabel - die beide openbaar leesbaar bleken en direct werden opgeruimd.
 
 **Resultaat:** De vijf sportclubs ondertekenden de gezamenlijke verwerkersovereenkomst (DPA) die eerder was vastgelopen, en Koen beschikt nu over een officieel beveiligingsdocument dat hij direct overlegt wanneer een verenigingsbestuur vraagt naar data-isolatie.
 
 > *"Vierduizend verenigingsleden konden elkaars bankrekeningnummers inzien omdat anderhalf jaar geleden een lijst leeg bleef en ik de foutmelding snel wilde laten verdwijnen."*
-> — **Koen Vermeulen, Oprichter, Ledenadmin (Helmond)**
+> - **Koen Vermeulen, Oprichter, Ledenadmin (Helmond)**
 
-**Kosten & Doorlooptijd:** €4.600 (organisatie- en lidmaatschapsmodel, herinrichting policies per bewerking, afscherming van rollen, database-indexering, documentatie en penetratietesten) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** €4.600 (organisatie- en lidmaatschapsmodel, herinrichting policies per bewerking, afscherming van rollen, database-indexering, documentatie en penetratietesten) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -177,7 +177,7 @@ Door ze actief aan te vallen. Maak twee accounts aan in verschillende browsers, 
       "name": "Waarom worden er zo vaak policies geschreven die alles toestaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat een lege query een zichtbare bug is en een permissieve policy dit direct verhelpt — precies wat AI genereert bij de prompt 'los deze lege query op'."
+        "text": "Omdat een lege query een zichtbare bug is en een permissieve policy dit direct verhelpt - precies wat AI genereert bij de prompt 'los deze lege query op'."
       }
     },
     {

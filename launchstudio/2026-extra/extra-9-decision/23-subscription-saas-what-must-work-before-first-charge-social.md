@@ -1,4 +1,4 @@
-🚨 "Billing bugs don't look like bugs," said one founder after his accountant found a 9% gap between his MRR dashboard and his actual invoice ledger. Six churned accounts still had full access — one for four months. 😳
+🚨 "Billing bugs don't look like bugs," said one founder after his accountant found a 9% gap between his MRR dashboard and his actual invoice ledger. Six churned accounts still had full access - one for four months. 😳
 
 Recurring billing fails silently and asymmetrically, which is exactly why nobody catches it before it reaches an investor update: 🧠
 

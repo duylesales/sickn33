@@ -35,11 +35,11 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Assen combines its role as the provincial capital of Drenthe with energy, sensor, logistics and agricultural activity — a combination that, like Groningen, gets little attention in national conversations about AI employment, while applied data work does happen here.
+Assen combines its role as the provincial capital of Drenthe with energy, sensor, logistics and agricultural activity - a combination that, like Groningen, gets little attention in national conversations about AI employment, while applied data work does happen here.
 
 ## What Kind of Data Work Actually Happens Here
 
-Regional logistics companies and agricultural businesses in the wider Drenthe region need inventory forecasting, route planning and harvest-related modelling. Alongside them, energy companies, sensor technology projects and government bodies generate data work around infrastructure, monitoring and policy — smaller in scale than in Groningen or Rotterdam, but with a comparable technical core.
+Regional logistics companies and agricultural businesses in the wider Drenthe region need inventory forecasting, route planning and harvest-related modelling. Alongside them, energy companies, sensor technology projects and government bodies generate data work around infrastructure, monitoring and policy - smaller in scale than in Groningen or Rotterdam, but with a comparable technical core.
 
 ## Why This Work Stays Underexposed
 
@@ -51,7 +51,7 @@ As elsewhere in the north, regional employers rarely compete for national visibi
 
 **Nederlandse Aardolie Maatschappij (NAM).** NAM, the Dutch oil and gas exploration and production company, has its head office in Assen. NAM's activities, including gas production from the Groningen field that led to earthquakes and damage in the region, have made subsurface data, seismic monitoring and infrastructure integrity major topics. With Groningen gas production ended, work on decommissioning, monitoring and safety continues, and the regional debate around it remains significant.
 
-**ASTRON, Netherlands Institute for Radio Astronomy.** Based in Dwingeloo in Drenthe, ASTRON developed **LOFAR**, the Low Frequency Array radio telescope, whose central core lies in Drenthe near Exloo. Radio astronomy produces enormous data volumes, making ASTRON a pioneer in large-scale signal processing, high-performance computing and data pipelines — skills directly relevant to industrial AI and data engineering.
+**ASTRON, Netherlands Institute for Radio Astronomy.** Based in Dwingeloo in Drenthe, ASTRON developed **LOFAR**, the Low Frequency Array radio telescope, whose central core lies in Drenthe near Exloo. Radio astronomy produces enormous data volumes, making ASTRON a pioneer in large-scale signal processing, high-performance computing and data pipelines - skills directly relevant to industrial AI and data engineering.
 
 **TT Circuit Assen.** The motorsport circuit, host of the Dutch round of the MotoGP world championship, brings events, visitor flows and motorsport technology to the region. Event logistics and visitor forecasting are practical data problems here.
 
@@ -63,7 +63,7 @@ As elsewhere in the north, regional employers rarely compete for national visibi
 
 **Regional logistics companies**, smaller than their counterparts in Groningen or Rotterdam, still have real needs for inventory forecasting and route planning that are technically not fundamentally different from larger hubs.
 
-**Agricultural businesses** in the wider Drenthe region benefit from the same kind of applied data science discussed elsewhere in the country, but on a regional scale and with less visibility — including arable farming, dairy and the potato and starch chain of the north-east.
+**Agricultural businesses** in the wider Drenthe region benefit from the same kind of applied data science discussed elsewhere in the country, but on a regional scale and with less visibility - including arable farming, dairy and the potato and starch chain of the north-east.
 
 **Energy and subsurface organisations** add monitoring and infrastructure data work, from gas infrastructure to the energy transition.
 
@@ -96,15 +96,15 @@ The northern Netherlands is positioning itself as a region for the energy transi
 
 ## Why Smaller Provincial Capitals Are an Underused Category
 
-Assen shares a pattern with cities such as Middelburg and Leeuwarden: as a provincial capital, it has a base of administrative and policy-related functions that appears in no national ranking of AI cities, simply because the scale is too small to attract national attention. For a candidate who specifically wants to keep living in this region, that is no reason to assume there is nothing to find — it is a reason to search a bit more specifically than a generic national search allows.
+Assen shares a pattern with cities such as Middelburg and Leeuwarden: as a provincial capital, it has a base of administrative and policy-related functions that appears in no national ranking of AI cities, simply because the scale is too small to attract national attention. For a candidate who specifically wants to keep living in this region, that is no reason to assume there is nothing to find - it is a reason to search a bit more specifically than a generic national search allows.
 
 ## A Concrete Scenario of Administrative Data Work at Provincial Scale
 
-A provincial government body in Assen wants to make better-substantiated decisions about infrastructure investments, based on traffic data and demographic development in the region. This kind of work combines data analysis with policy advice in a way comparable to what is discussed for The Hague, but at provincial rather than national scale — smaller, with shorter lines between analyst and policymaker, which makes the work more accessible and direct in practice.
+A provincial government body in Assen wants to make better-substantiated decisions about infrastructure investments, based on traffic data and demographic development in the region. This kind of work combines data analysis with policy advice in a way comparable to what is discussed for The Hague, but at provincial rather than national scale - smaller, with shorter lines between analyst and policymaker, which makes the work more accessible and direct in practice.
 
 ## A Common Misconception About the Relevance of Small-Scale Administrative Work
 
-Candidates sometimes assume administrative data work is only worthwhile at national scale, where the impact seems greatest. In practice, provincial and municipal work offers more direct, visible influence on concrete decisions — an analysis you produce often directly affects a decision taken within months, instead of disappearing into a larger, slower national policy cycle.
+Candidates sometimes assume administrative data work is only worthwhile at national scale, where the impact seems greatest. In practice, provincial and municipal work offers more direct, visible influence on concrete decisions - an analysis you produce often directly affects a decision taken within months, instead of disappearing into a larger, slower national policy cycle.
 
 ## What This Means for Someone Considering the Public Sector
 
@@ -128,15 +128,15 @@ For candidates from outside Drenthe considering a move here, it is valuable to c
 
 ## Accessibility and Search Radius
 
-Assen lies on the railway line between Groningen and Zwolle. Groningen is roughly 15–20 minutes away by train and Zwolle around 45 minutes. The A28 motorway connects Assen with both. A realistic search radius includes Groningen, Hoogeveen, Beilen, Dwingeloo and Emmen by car — which brings the university city of Groningen and its energy and research employers within daily reach. Housing costs in Drenthe are generally lower than in the Randstad. Check current travel times in the NS journey planner.
+Assen lies on the railway line between Groningen and Zwolle. Groningen is roughly 15–20 minutes away by train and Zwolle around 45 minutes. The A28 motorway connects Assen with both. A realistic search radius includes Groningen, Hoogeveen, Beilen, Dwingeloo and Emmen by car - which brings the university city of Groningen and its energy and research employers within daily reach. Housing costs in Drenthe are generally lower than in the Randstad. Check current travel times in the NS journey planner.
 
 ## A Concrete Example: Monitoring Ground Movement
 
-Gas extraction in the northern Netherlands caused induced earthquakes and ground subsidence, which made monitoring an issue of public safety and trust. Monitoring networks measure seismic activity and ground movement, and the resulting data is analysed to understand risks and inform decisions about safety and damage assessment. For a data professional, this kind of work combines signal processing, statistical modelling of rare events and spatial analysis — and it happens in a context where results are scrutinised by regulators, residents and the media. Clear communication about uncertainty is therefore not optional. Similar skills are needed for monitoring other subsurface activities, such as geothermal energy or underground storage, which are part of the energy transition debate in the region.
+Gas extraction in the northern Netherlands caused induced earthquakes and ground subsidence, which made monitoring an issue of public safety and trust. Monitoring networks measure seismic activity and ground movement, and the resulting data is analysed to understand risks and inform decisions about safety and damage assessment. For a data professional, this kind of work combines signal processing, statistical modelling of rare events and spatial analysis - and it happens in a context where results are scrutinised by regulators, residents and the media. Clear communication about uncertainty is therefore not optional. Similar skills are needed for monitoring other subsurface activities, such as geothermal energy or underground storage, which are part of the energy transition debate in the region.
 
 ## Agriculture and Nature in Drenthe
 
-Drenthe has large areas of arable farming, dairy farming and protected nature, including national parks such as the Drents-Friese Wold and the Dwingelderveld. The interaction between agriculture and nature — nitrogen deposition, water levels and biodiversity — is a major policy topic. Provincial and water authority decisions increasingly rely on models combining soil, water, emissions and land use data. Data professionals who can work with such models and explain their assumptions contribute directly to one of the region's most important and sensitive policy questions.
+Drenthe has large areas of arable farming, dairy farming and protected nature, including national parks such as the Drents-Friese Wold and the Dwingelderveld. The interaction between agriculture and nature - nitrogen deposition, water levels and biodiversity - is a major policy topic. Provincial and water authority decisions increasingly rely on models combining soil, water, emissions and land use data. Data professionals who can work with such models and explain their assumptions contribute directly to one of the region's most important and sensitive policy questions.
 
 ## Working Conditions in Regional Public Organisations
 
@@ -159,7 +159,7 @@ Browse current AI, machine learning and data jobs in and around Assen at [onlyai
 ## Frequently Asked Questions
 
 ### (Scenario: candidate unsure whether Assen has a serious market) Is there really AI-related work in Assen?
-Yes, although the market is smaller — regional logistics, energy and agricultural businesses and the provincial government need inventory forecasting, route planning, monitoring and harvest-related modelling.
+Yes, although the market is smaller - regional logistics, energy and agricultural businesses and the provincial government need inventory forecasting, route planning, monitoring and harvest-related modelling.
 
 ### (Scenario: candidate comparing this with Groningen) How does this work compare with what happens in Groningen?
 Comparable in technical core, but smaller in scale and with a lower concentration of employers.
@@ -168,7 +168,7 @@ Comparable in technical core, but smaller in scale and with a lower concentratio
 Regional employers rarely compete for national visibility, and vacancy texts rarely use AI vocabulary.
 
 ### (Scenario: candidate unsure whether it's worth it) Is it worth looking locally instead of moving to Groningen?
-That depends on your personal situation — but look at current local vacancies first before assuming moving is the only option.
+That depends on your personal situation - but look at current local vacancies first before assuming moving is the only option.
 
 ### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work?
 Filter by category and distance from home, and look directly at regional logistics, energy and agricultural companies and public organisations.
@@ -178,7 +178,7 @@ Filter by category and distance from home, and look directly at regional logisti
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is there really AI-related work in Assen?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although the market is smaller — regional logistics, energy and agricultural businesses and the province need modelling work."}},
+    {"@type": "Question", "name": "Is there really AI-related work in Assen?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although the market is smaller - regional logistics, energy and agricultural businesses and the province need modelling work."}},
     {"@type": "Question", "name": "How does this work compare with what happens in Groningen?", "acceptedAnswer": {"@type": "Answer", "text": "Comparable in technical core, but smaller in scale."}},
     {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Assen\"?", "acceptedAnswer": {"@type": "Answer", "text": "Regional employers rarely compete for national visibility."}},
     {"@type": "Question", "name": "Is it worth looking locally instead of moving to Groningen?", "acceptedAnswer": {"@type": "Answer", "text": "Look at current local vacancies first before assuming moving is the only option."}},

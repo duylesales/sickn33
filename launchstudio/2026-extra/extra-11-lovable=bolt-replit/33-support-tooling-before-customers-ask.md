@@ -20,7 +20,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-The first support email is never a complaint. It is a question: "I can't find the invoice for March — can you send it?" And because your app has no way to look that up, you open your database, write a query against the production data, find the record, and copy the details into a reply.
+The first support email is never a complaint. It is a question: "I can't find the invoice for March - can you send it?" And because your app has no way to look that up, you open your database, write a query against the production data, find the record, and copy the details into a reply.
 
 That takes four minutes and it establishes a habit that becomes a genuine problem: a founder routinely reading raw customer data, with no record of what was accessed, because the product has no support capability at all.
 
@@ -34,7 +34,7 @@ They are remarkably consistent across products, and they fall into five groups.
 
 **"Why did this happen?"** A charge they do not recognise, an email they did not expect, an account that behaved unexpectedly.
 
-**"Can you change this for me?"** A typo in a name, a wrong date, an address that needs correcting — things the interface does not allow them to edit themselves.
+**"Can you change this for me?"** A typo in a name, a wrong date, an address that needs correcting - things the interface does not allow them to edit themselves.
 
 **"It doesn't work."** With no further detail, requiring you to see what they see.
 
@@ -44,15 +44,15 @@ Each of these has a tooling answer, and none of them requires a full administrat
 
 ## Start With Read-Only Lookup
 
-The highest-value first step is the smallest: a single page where you enter an email address and see that account's state — plan, status, recent activity, recent payments, recent errors. Read-only, no editing, no ability to change anything.
+The highest-value first step is the smallest: a single page where you enter an email address and see that account's state - plan, status, recent activity, recent payments, recent errors. Read-only, no editing, no ability to change anything.
 
 This answers the first two categories entirely and removes the reason you were querying the database. It is perhaps a day of work and it is the piece founders build last, usually after months of manual queries.
 
-Two rules make it safe. Show what you need to answer questions, not everything you hold — there is rarely a reason for a support view to display full message contents or uploaded documents. And record every lookup: who searched for whom, and when.
+Two rules make it safe. Show what you need to answer questions, not everything you hold - there is rarely a reason for a support view to display full message contents or uploaded documents. And record every lookup: who searched for whom, and when.
 
 ## Impersonation, Done Properly
 
-"It doesn't work" is only solvable by seeing what the customer sees, which is why impersonation — viewing the app as another user — is so tempting to build. It is also the single most dangerous feature in any product, because it converts your admin account into every account.
+"It doesn't work" is only solvable by seeing what the customer sees, which is why impersonation - viewing the app as another user - is so tempting to build. It is also the single most dangerous feature in any product, because it converts your admin account into every account.
 
 If you build it, six conditions make it defensible.
 
@@ -64,7 +64,7 @@ If you build it, six conditions make it defensible.
 
 **Unmistakably visible.** A persistent banner while impersonating, so you never mistake their account for yours.
 
-**Logged in detail,** with the reason recorded — ideally the support ticket reference.
+**Logged in detail,** with the reason recorded - ideally the support ticket reference.
 
 **Consent where the data is sensitive.** For health, financial or otherwise personal products, asking the customer's permission before viewing their account is both good practice and a strong answer in a privacy review.
 
@@ -72,7 +72,7 @@ Without these, impersonation is an undocumented backdoor into every customer's d
 
 ## Audit Trails: Who Did What
 
-Once more than one person can act on customer data — you and a contractor, you and a first employee — you need a record of administrative actions: who changed what, when, and why.
+Once more than one person can act on customer data - you and a contractor, you and a first employee - you need a record of administrative actions: who changed what, when, and why.
 
 This matters for three reasons. It answers a customer asking why their record changed. It protects you and your colleagues when something goes wrong and the question is who did it. And it is what allows you to answer the access question in a privacy questionnaire with something other than an assurance.
 
@@ -80,13 +80,13 @@ The implementation is modest: a table capturing actor, action, target, timestamp
 
 ## Corrections, Refunds and the Rest
 
-The third category — "can you change this for me" — is where founders either build too much or nothing at all.
+The third category - "can you change this for me" - is where founders either build too much or nothing at all.
 
 Too little means editing the database by hand, which is error-prone and unrecorded. Too much means a full administrative interface built before anyone has asked for the features in it.
 
 The middle path: implement the two or three corrections you actually receive, as proper functions with validation and audit logging, and leave the rest until a pattern appears. For most products that means correcting a name or an email address, changing a date, and issuing a refund or credit.
 
-Refunds deserve particular care, because they touch money. The support function should record who issued it and why, tell the payment provider, update the customer's entitlement, and send confirmation — which is a small workflow rather than a button, and which is exactly the kind of thing that goes wrong quietly if it is done manually in a provider dashboard.
+Refunds deserve particular care, because they touch money. The support function should record who issued it and why, tell the payment provider, update the customer's entitlement, and send confirmation - which is a small workflow rather than a button, and which is exactly the kind of thing that goes wrong quietly if it is done manually in a provider dashboard.
 
 ## The Cheapest Support Work Is the Support You Avoid
 
@@ -140,7 +140,7 @@ If you track a single support metric, make it messages per hundred active users 
 
 Absolute volume tells you how busy you are, which you already know. The ratio tells you whether your product is getting clearer or more confusing as it grows, and it is the only version of this number that stays meaningful while your user count changes.
 
-A ratio that climbs means the product is teaching people less than it did — usually because a new feature arrived without explaining itself, or because a workaround you communicated personally to ten customers does not scale to a hundred. A ratio that falls after you ship a self-service feature is direct evidence that the feature worked.
+A ratio that climbs means the product is teaching people less than it did - usually because a new feature arrived without explaining itself, or because a workaround you communicated personally to ten customers does not scale to a hundred. A ratio that falls after you ship a self-service feature is direct evidence that the feature worked.
 
 Review it monthly, alongside the categories. Two numbers and a list of topics is a complete support dashboard for a small product, and it takes ten minutes to maintain.
 
@@ -148,7 +148,7 @@ Review it monthly, alongside the categories. Two numbers and a list of topics is
 
 ### A Tutoring Platform Where the Founder Was the Admin Interface
 
-Youssef Bakkali ran Bijlesnet, a platform matching secondary school tutors with families across Tilburg and Breda, with about 400 active accounts. Every support question — and there were around fifteen a week — was answered by opening the database, running a query, and reading the result.
+Youssef Bakkali ran Bijlesnet, a platform matching secondary school tutors with families across Tilburg and Breda, with about 400 active accounts. Every support question - and there were around fifteen a week - was answered by opening the database, running a query, and reading the result.
 
 Two things forced a change. A tutor asked why a parent's phone number had changed on a booking, and Youssef had no way to know who had changed it or when. And a school partnership questionnaire asked who at his company could access pupil data and whether that access was logged. The honest answer was that he could see everything and nothing was recorded.
 
@@ -157,9 +157,9 @@ Six business days of work: a read-only account lookup page showing status, booki
 **Result:** support volume fell by roughly a third once invoices became self-service, the phone number question was answerable within a minute, and the school partnership was approved with the access log cited in the assessment.
 
 > *"I was the admin panel. Every question meant me reading a family's records with nobody, including me, keeping track of what I'd looked at."*
-> — **Youssef Bakkali, Founder, Bijlesnet (Tilburg)**
+> - **Youssef Bakkali, Founder, Bijlesnet (Tilburg)**
 
-**Cost & Timeline:** €2,850 (account lookup, scoped impersonation, audit trail, correction functions, self-service export) — completed in 6 business days.
+**Cost & Timeline:** €2,850 (account lookup, scoped impersonation, audit trail, correction functions, self-service export) - completed in 6 business days.
 
 ## Frequently Asked Questions
 
@@ -209,7 +209,7 @@ Self-service invoice history and data export, reliable password resets that genu
       "name": "Do I need an audit trail as a solo founder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — it answers customers asking why a record changed, protects you once others can act on data, and provides evidence in privacy reviews."
+        "text": "Yes - it answers customers asking why a record changed, protects you once others can act on data, and provides evidence in privacy reviews."
       }
     },
     {
@@ -225,7 +225,7 @@ Self-service invoice history and data export, reliable password resets that genu
       "name": "What reduces support volume most?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Self-service invoice history and data export, reliable password resets, and clear account status — each removes a category of message entirely."
+        "text": "Self-service invoice history and data export, reliable password resets, and clear account status - each removes a category of message entirely."
       }
     }
   ]

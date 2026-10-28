@@ -1,4 +1,4 @@
-🔥 Daniel built a prototype using **Lovable** — daniel, a digital marketer, used **lovable** to build an ai writer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Daniel built a prototype using **Lovable** - daniel, a digital marketer, used **lovable** to build an ai writer, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Daniel's application achieved silky-smooth performance: Bot registrations dropped to zero, while free-to-paid trial conversion increased by 22%. (€1,500 (Bot Prevention Package) — production-ready and deployed in 4 business days.). 🚀
+Daniel's application achieved silky-smooth performance: Bot registrations dropped to zero, while free-to-paid trial conversion increased by 22%. (€1,500 (Bot Prevention Package) - production-ready and deployed in 4 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/b2b-ai-trials-freemium-vs-reverse-trials
 

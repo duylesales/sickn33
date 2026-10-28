@@ -1,4 +1,4 @@
-🔥 Mark bouwde een prototype met **Lovable** — als voormalig makelaar in Rotterdam bouwde hij een AI SaaS voor huurcontracten, maar liep vast op torenhoge Make.com-facturen en een afgewezen privacy-audit. 🧠
+🔥 Mark bouwde een prototype met **Lovable** - als voormalig makelaar in Rotterdam bouwde hij een AI SaaS voor huurcontracten, maar liep vast op torenhoge Make.com-facturen en een afgewezen privacy-audit. 🧠
 
 Als uw AI-prototype draait op no-code automatiseringen (zoals Zapier of Make) in plaats van maatwerk API's, veroorzaakt live verkeer direct crashes, enorme vertraging en AVG-overtredingen.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype draait op no-code automatiseringen (zoals Zapier of Make) in
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Mark passeerde de privacy-audit van een grote verhuurorganisatie en sloot een contract van €4.000 MRR. (€3.500 (Maatwerk API Integratie) — binnen 10 werkdagen live). 🚀
+Mark passeerde de privacy-audit van een grote verhuurorganisatie en sloot een contract van €4.000 MRR. (€3.500 (Maatwerk API Integratie) - binnen 10 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/custom-api-development-ai-saas
 

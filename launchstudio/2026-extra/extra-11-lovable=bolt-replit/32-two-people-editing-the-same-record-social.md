@@ -1,4 +1,4 @@
-🚨 Marloes Huisman launched Ambachtsklas in Utrecht with 12 seats in a woodworking workshop. When registration opened, 19 people completed payment within 40 seconds because the database updated seats with a simple read-then-write without atomic locking — leaving her with 7 angry, overbooked customers who had already paid. 😳
+🚨 Marloes Huisman launched Ambachtsklas in Utrecht with 12 seats in a woodworking workshop. When registration opened, 19 people completed payment within 40 seconds because the database updated seats with a simple read-then-write without atomic locking - leaving her with 7 angry, overbooked customers who had already paid. 😳
 
 When two users click the same button in the same millisecond, simple database logic fails. Here's how race conditions happen: 🧠
 

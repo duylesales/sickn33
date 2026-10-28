@@ -86,7 +86,7 @@ You need one when several teams share features, when online serving requires low
 
 You do not need one when a single team builds a handful of batch models, in which case a shared library of feature definitions and a documented join pattern achieves the same outcome with a fraction of the operational burden.
 
-The judgement to express in an interview is that the concepts — consistency, point-in-time correctness, reuse — matter regardless, and the product is one way of implementing them rather than a prerequisite.
+The judgement to express in an interview is that the concepts - consistency, point-in-time correctness, reuse - matter regardless, and the product is one way of implementing them rather than a prerequisite.
 
 ## The Path to Production
 
@@ -96,7 +96,7 @@ A workable path has defined steps: a model is trained by a pipeline whose code a
 
 Several properties make this work in practice. The same process applies to every model, so nobody invents their own. It is automated, so deploying is not an event requiring three people. It is reversible, because a rollback at three in the morning must be executable by someone who did not build the model. And it records what was deployed when, which matters for debugging and, in regulated contexts, for evidence.
 
-Where an organisation already has a mature software deployment platform, the right answer is usually to use it rather than to build a parallel one for models. Machine learning deployment has particular needs — artefact size, dependencies, warm-up — but they are extensions rather than a separate universe.
+Where an organisation already has a mature software deployment platform, the right answer is usually to use it rather than to build a parallel one for models. Machine learning deployment has particular needs - artefact size, dependencies, warm-up - but they are extensions rather than a separate universe.
 
 ## Reproducibility and the Registry
 
@@ -172,7 +172,7 @@ The trade-off is distance from the domain. You will build for people solving bus
 
 OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Vacancies show their exact address and the distance from your home, applications go directly to the employer's own page, browsing is free without an account, and no employer can pay for a higher position.
 
-Platform roles appear under several titles — MLOps engineer, machine learning infrastructure engineer, data platform engineer, AI platform engineer — and the underlying work is similar. Read descriptions for whether a platform exists or is to be built, because joining before one exists is a different and often more interesting job than maintaining one.
+Platform roles appear under several titles - MLOps engineer, machine learning infrastructure engineer, data platform engineer, AI platform engineer - and the underlying work is similar. Read descriptions for whether a platform exists or is to be built, because joining before one exists is a different and often more interesting job than maintaining one.
 
 To be clear about coverage: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel, with employers such as Sendcloud, Mollie, Boltrics, AMCS, Cegeka and Accenture among those listing AI and data roles. Employers can list a first vacancy free via info@onlyaijobs.eu.
 

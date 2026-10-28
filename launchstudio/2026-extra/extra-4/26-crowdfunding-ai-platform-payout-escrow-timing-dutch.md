@@ -84,9 +84,9 @@ LaunchStudio's ingenieurs herbouwden de uitbetalingslogica rond een expliciete s
 **Resultaat:** SteunProject's uitbetalingsstroom garandeert nu dat fondsen beschikbaar blijven voor het gehele terugbetalingsvenster bij elke campagne, en Tobias heeft geen persoonlijke financiële blootstelling meer als een campagne na financiering wordt geannuleerd.
 
 > *"Ik bouwde een platform om geld te verplaatsen en heb nooit stilgestaan bij de vraag in welke status dat geld zich op elk moment daadwerkelijk bevond. LaunchStudio behandelde het als het financiële systeem dat het daadwerkelijk is, en niet zomaar een functie om op te leveren."*
-> — **Tobias Kramer, Oprichter, SteunProject (Zaandam)**
+> - **Tobias Kramer, Oprichter, SteunProject (Zaandam)**
 
-**Kosten en tijdlijn:** € 1.600 (herontwerp van de escrow-statusmachine, geautomatiseerde uitbetalingspoort, en testen van het terugbetalingspad) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (herontwerp van de escrow-statusmachine, geautomatiseerde uitbetalingspoort, en testen van het terugbetalingspad) - voltooid in 8 werkdagen.
 
 ---
 

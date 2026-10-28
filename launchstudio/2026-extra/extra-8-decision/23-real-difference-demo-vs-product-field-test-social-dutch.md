@@ -14,7 +14,7 @@ Vijftig keer zelf door je app klikken bewijst bijna niets over wat een echte, on
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring bij klanten als Vodafone en TNO, vinden we wat uw eigen test structureel niet kon vinden. 🛡️
 
-Bas' resultaat: ClaimClear live in 9 werkdagen voor €2.400 — met consistente autorisatie op elk endpoint, niet alleen het ene gat dat hij toevallig vond. 🚀
+Bas' resultaat: ClaimClear live in 9 werkdagen voor €2.400 - met consistente autorisatie op elk endpoint, niet alleen het ene gat dat hij toevallig vond. 🚀
 
 👉 Ontdek het verschil tussen een demo die werkt en een product dat standhoudt: https://launchstudio.eu/nl/blog/real-difference-demo-vs-product-field-test
 

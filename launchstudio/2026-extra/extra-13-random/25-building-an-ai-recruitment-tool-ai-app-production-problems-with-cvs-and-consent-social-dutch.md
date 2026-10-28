@@ -5,12 +5,12 @@ Elke recruiter kon via de API elke kandidaat doorzoeken. Cv's stonden in een ope
 ❌ Alle kandidaten zichtbaar voor alle recruiters
 ❌ Openbare cv-bestanden, voor altijd bewaard
 ❌ Vooraf aangevinkte, niet vastgelegde toestemming
-❌ Automatische afwijzing op AI-score — en cv's in de logs
+❌ Automatische afwijzing op AI-score - en cv's in de logs
 
 ✅ Toegang per organisatie met row level security
 ✅ Privéopslag van cv's met ondertekende links, malwarescans en verwijdering vier weken na sluiting van een vacature (twaalf maanden met vastgelegde toestemming)
 ✅ Expliciete, geversioneerde toestemming met intrekking in één klik
-✅ Een beoordelingswachtrij voor recruiters met uitleg van de match, cv-tekst uit de logs, en export en verwijdering per kandidaat — inclusief embeddings
+✅ Een beoordelingswachtrij voor recruiters met uitleg van de match, cv-tekst uit de logs, en export en verwijdering per kandidaat - inclusief embeddings
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, zorgen we dat slimme matching rust op kandidaatdata die wordt behandeld zoals mensen en toezichthouders verwachten. ⚙️
 

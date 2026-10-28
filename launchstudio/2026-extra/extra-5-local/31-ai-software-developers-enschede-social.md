@@ -1,4 +1,4 @@
-🔓 Sanne Bruggeman built Kenniswijzer, a peer-tutoring marketplace for students across Enschede, in a two-week Lovable sprint. Clean UI, working booking flow, Stripe checkout — genuinely impressive demo. Then LaunchStudio's pre-launch review found the Supabase database had zero row-level security: any logged-in user could read every other user's booking history, phone number, and payment metadata just by inspecting the browser console.
+🔓 Sanne Bruggeman built Kenniswijzer, a peer-tutoring marketplace for students across Enschede, in a two-week Lovable sprint. Clean UI, working booking flow, Stripe checkout - genuinely impressive demo. Then LaunchStudio's pre-launch review found the Supabase database had zero row-level security: any logged-in user could read every other user's booking history, phone number, and payment metadata just by inspecting the browser console.
 
 A polished demo and a production-ready backend are not the same thing. 🧠
 
@@ -13,7 +13,7 @@ A polished demo and a production-ready backend are not the same thing. 🧠
 
 At **LaunchStudio**, Manifera's 120+ engineers run the same review checklist on an Enschede prototype that they'd run on an enterprise codebase for clients like Vodafone and TNO. 🛡️
 
-Kenniswijzer launched to 400 University of Twente students in week one with zero data exposure incidents — and Sanne didn't have to change a single line of her UI. 🚀
+Kenniswijzer launched to 400 University of Twente students in week one with zero data exposure incidents - and Sanne didn't have to change a single line of her UI. 🚀
 
 👉 Building in Enschede? Get a launch-readiness review before day one: https://launchstudio.eu/en/blog/ai-software-developers-enschede
 

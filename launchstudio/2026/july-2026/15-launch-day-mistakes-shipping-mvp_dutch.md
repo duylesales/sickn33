@@ -92,7 +92,7 @@ Noah werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 
 **Resultaat:** Noah verwerkte een piek van meer dan 8.000 documentuploads op de lanceringsdag zonder ook maar één databasetime-out.
 
-**Kosten en tijdlijn:** € 1.900 (Launch Guard-pakket) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (Launch Guard-pakket) - klaar voor productie en geïmplementeerd binnen 6 werkdagen.
 
 ---
 

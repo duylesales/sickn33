@@ -12,7 +12,7 @@ Meer junior handjes inhuren levert zonder senior leiding vaak vooral 2x zoveel t
 
 Bij LaunchStudio leveren we directe senior engineeringkracht voor uw kernfundament. 🛡️
 
-Owen liet zijn backend in 7 dagen repareren en lanceerde vlekkeloos. (€ 2.800 (Audit & Hardening) — 7 werkdagen.) 🚀
+Owen liet zijn backend in 7 dagen repareren en lanceerde vlekkeloos. (€ 2.800 (Audit & Hardening) - 7 werkdagen.) 🚀
 
 👉 Lees de vergelijking tussen juniors en een senior partner: https://launchstudio.eu/nl/blog/two-juniors-vs-one-senior-partner-decision
 

@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Five Board Questions, Pre-Answered:** Model rationale, bounded exposure, named accountability, local-hiring comparison, and measurable six-month success criteria.
-✅ **Amsterdam Strategic Governance:** A named EU-jurisdiction entity — not "the vendor" — the board can understand as legally accountable.
+✅ **Amsterdam Strategic Governance:** A named EU-jurisdiction entity - not "the vendor" - the board can understand as legally accountable.
 ✅ **Vietnam Execution Velocity:** Delivery against concrete milestones that make the engagement auditable at the next board review.
 
 Reframe from "should we outsource" to "here's the specific, bounded structure we're asking you to approve." 🛡️

@@ -1,4 +1,4 @@
-🔥 Dominic bouwde een prototype met **Lovable** — Dominic, een HR-manager, bouwde een kandidatenportal, maar liep vast op zware AVG-eisen doordat CV-data en vector embeddings oneindig werden bewaard zonder verwijderingslogica. 🧠
+🔥 Dominic bouwde een prototype met **Lovable** - Dominic, een HR-manager, bouwde een kandidatenportal, maar liep vast op zware AVG-eisen doordat CV-data en vector embeddings oneindig werden bewaard zonder verwijderingslogica. 🧠
 
 Het bouwen van AVG-conforme AI-applicaties vereist RAG-architecturen, cascading vector-deletes en contractuele Zero Data Retention.
 
@@ -12,7 +12,7 @@ Het bouwen van AVG-conforme AI-applicaties vereist RAG-architecturen, cascading 
 
 Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en vectorstore-verwijderingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Dominics portal werd 100% compliant: Het platform slaagde glansrijk voor alle externe Europese privacy-audits. (€2.200 (GDPR Compliance Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Dominics portal werd 100% compliant: Het platform slaagde glansrijk voor alle externe Europese privacy-audits. (€2.200 (GDPR Compliance Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/gdpr-ai-navigating-regulatory-minefield
 

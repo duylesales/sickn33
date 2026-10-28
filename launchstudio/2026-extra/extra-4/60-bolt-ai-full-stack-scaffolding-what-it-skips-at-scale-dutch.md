@@ -81,9 +81,9 @@ LaunchStudio's team stemde de verbindingspool af op AgendaKoppel's daadwerkelijk
 **Resultaat:** AgendaKoppel handelt nu meerdere keren zijn eerdere gelijktijdige gebruikersbelasting af zonder een enkele verbindingsgerelateerde fout. Elin heeft nu zicht op het gebruik van de databaseverbinding voordat het opnieuw een probleem wordt.
 
 > *"Tachtig gebruikers, alles was perfect. Honderd gebruikers, en ik was ervan overtuigd dat ik zelf iets gebroken had. Ik had nooit geredeneerd dat het getal simpelweg ergens hardgecodeerd zat waar ik het niet kon zien."*
-> — **Elin Rutten, Oprichter, AgendaKoppel (Steenwijk)**
+> - **Elin Rutten, Oprichter, AgendaKoppel (Steenwijk)**
 
-**Kosten en tijdlijn:** € 800 (afstemmen van de verbindingspool, middleware voor pooling, en instellen van gebruiksmonitoren) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 800 (afstemmen van de verbindingspool, middleware voor pooling, en instellen van gebruiksmonitoren) - voltooid in 4 werkdagen.
 
 ---
 

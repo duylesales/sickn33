@@ -51,7 +51,7 @@ Een generieke controle op productiegereedheid controleert of authenticatie en au
 
 [LaunchStudio](https://launchstudio.eu/nl/) heeft AI-tools voor vastgoedbeheer verhard met exact dit gelaagde machtigingsmodel en bewaringsbewuste datarchitectuur in gedachten. Wij behandelen de specifieke combinatie van financiële, identiteits- en langetermijndossiergegevens van de verticale markt als een afzonderlijke overweging bij de afbakening in plaats van deze op te vouwen in een generieke checklist, ondersteund door Manifera's bredere ervaring met het afhandelen van vergelijkbaar gevoelige gegevensstructuren voor meerdere partijen in haar enterprise-opdrachten.
 
-[Laat uw tool voor vastgoedbeheer beoordelen tegen wat deze specifieke verticale markt daadwerkelijk vereist](https://launchstudio.eu/nl/#calculator) — de generieke checklist is een vertrekpunt, niet de finishlijn, voor gegevens die zo gelaagd zijn.
+[Laat uw tool voor vastgoedbeheer beoordelen tegen wat deze specifieke verticale markt daadwerkelijk vereist](https://launchstudio.eu/nl/#calculator) - de generieke checklist is een vertrekpunt, niet de finishlijn, voor gegevens die zo gelaagd zijn.
 
 ## De integraties van derden die deze verticale markt bijna altijd toevoegt
 
@@ -80,9 +80,9 @@ Een externe loodgietersaannemer die werd uitgenodigd om een enkel onderhoudstick
 **Resultaat:** LaunchStudio implementeerde een oprecht gelaagd machtigingsmodel – eigenaren, personeel en externe aannemers elk begrensd tot exact wat hun rol vereiste. Hiermee werd een kloof gedicht die, voor een onbekende periode, elke externe aannemer die Sanne ooit had uitgenodigd volledige zichtbaarheid had gegeven in gevoelige financiële en huurdersgegevens die helemaal niets te maken hadden met hun daadwerkelijke taak.
 
 > *"Ik had er nooit over nagedacht dat een loodgieter een ander toegangsniveau nodig had dan mijn eigen personeel. Het was volkomen logisch op het moment dat er op werd gewezen, maar tot die tijd kon iedereen die ik om welke reden dan ook uitnodigde letterlijk alles zien, inclusief gegevens die niets te maken hadden met waarom ik ze had uitgenodigd."*
-> — **Sanne Willemsen, Oprichter, PandBeheerder (Nijmegen)**
+> - **Sanne Willemsen, Oprichter, PandBeheerder (Nijmegen)**
 
-**Kosten en tijdlijn:** € 2.300 (Launch Ready Pakket, gelaagd machtigingsmodel) — live in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (Launch Ready Pakket, gelaagd machtigingsmodel) - live in 9 werkdagen.
 
 ---
 
@@ -150,7 +150,7 @@ Niet typisch – zoals in de zaak van Sanne is het een toevoegende wijziging aan
       "name": "Eist het toevoegen van machtigingsniveaus een herbouw van de tool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet typisch — het is een toevoegende wijziging aan de autorisatielaag, niet aan de kernlogica."
+        "text": "Niet typisch - het is een toevoegende wijziging aan de autorisatielaag, niet aan de kernlogica."
       }
     }
   ]

@@ -1,4 +1,4 @@
-🚌 "If you got hit by a bus tomorrow, could I keep Metricflow running?" Ilse asked her co-founder over coffee, half-joking. He laughed, then stopped — he didn't know. 😳
+🚌 "If you got hit by a bus tomorrow, could I keep Metricflow running?" Ilse asked her co-founder over coffee, half-joking. He laughed, then stopped - he didn't know. 😳
 
 Bus factor isn't a hypothetical borrowed from engineering. In a two-person startup it's usually one, and it's nobody's fault: 🧠
 
@@ -7,7 +7,7 @@ Bus factor isn't a hypothetical borrowed from engineering. In a two-person start
 ❌ A credential-locked vendor account lapsing since only one person could touch it
 ❌ An incident hitting the week the one person who understands it is gone
 
-✅ One living document — deploy steps, credential locations, the "why" — readable cold in 15 minutes
+✅ One living document - deploy steps, credential locations, the "why" - readable cold in 15 minutes
 ✅ Every critical account needs two people with admin access, not one password nobody's seen
 ✅ Boring, standard tools and commit messages explaining "why" make a codebase pickable by anyone
 ✅ A standing relationship with an outside developer turns an emergency into days, not weeks

@@ -47,7 +47,7 @@ Inside the same organisation, two data roles can look almost identical on paper 
 
 **Internal applications.** Tools that let a planner, an underwriter or a technician use a model's output in their actual workflow.
 
-**Governance infrastructure.** Catalogues, lineage, access control, retention — increasingly demanded by regulation rather than by preference.
+**Governance infrastructure.** Catalogues, lineage, access control, retention - increasingly demanded by regulation rather than by preference.
 
 ## Why Candidates Undervalue It
 
@@ -91,7 +91,7 @@ If you take internal work, make measurement part of it from the start: time from
 
 Internal tooling is usually funded as a cost, and customer-facing work as a contribution to revenue. In a cost programme, that distinction decides what gets cut.
 
-This is not an argument against internal roles — platform teams in organisations that depend on them are extremely secure — but it is an argument for asking where the funding comes from, who sponsors it and what happened to the team during the last cost exercise.
+This is not an argument against internal roles - platform teams in organisations that depend on them are extremely secure - but it is an argument for asking where the funding comes from, who sponsors it and what happened to the team during the last cost exercise.
 
 ## Questions to Ask
 
@@ -111,7 +111,7 @@ This is not an argument against internal roles — platform teams in organisatio
 
 **Senior.** Either, and the strongest profiles have done both: platform experience makes you credible with engineering, product experience makes you credible with the business.
 
-**When you want security.** A platform that everyone depends on is a safer place to be than a model whose contribution is disputed — provided the dependency is recognised.
+**When you want security.** A platform that everyone depends on is a safer place to be than a model whose contribution is disputed - provided the dependency is recognised.
 
 ## When to Choose Internal
 
@@ -135,7 +135,7 @@ If you take internal work, it helps to know the failure modes, because they are 
 
 **Built without users.** A team designs the platform it would want, launches it, and discovers that the analysts continue exporting to spreadsheets because the new tool does not fit how they actually work. The remedy is unglamorous: sit with three users for a day before designing anything.
 
-**Adoption assumed rather than earned.** Internal tools have captive users in theory and competitors in practice — the old process, the spreadsheet, the direct database connection someone still has. A platform nobody switches to is a cost with no benefit.
+**Adoption assumed rather than earned.** Internal tools have captive users in theory and competitors in practice - the old process, the spreadsheet, the direct database connection someone still has. A platform nobody switches to is a cost with no benefit.
 
 **Too general, too early.** Building for every future case produces something that serves no present one. Platforms that succeed usually start by solving one team's problem completely and then generalising.
 
@@ -161,7 +161,7 @@ Do those three and the visibility problem largely solves itself, because you wil
 
 There is a third arrangement worth looking for, and it is increasingly common in Dutch organisations: platform work embedded in a product or business team rather than in a central function.
 
-You build the pipelines, tooling and deployment capability for one domain — claims, planning, energy trading, patient flow — sitting with the people who use the output. In practice this combines most of the advantages of each option.
+You build the pipelines, tooling and deployment capability for one domain - claims, planning, energy trading, patient flow - sitting with the people who use the output. In practice this combines most of the advantages of each option.
 
 **You keep the engineering depth,** because you are still building infrastructure rather than dashboards.
 
@@ -189,19 +189,19 @@ The figures are unspectacular individually and overwhelming together. The team i
 
 He also changes how the team works: every quarter, one page of the same numbers goes to the director.
 
-Three years later he is approached for a lead platform role at a larger employer, and the thing they ask about most is not the architecture — it is how he made an invisible team's contribution legible.
+Three years later he is approached for a lead platform role at a larger employer, and the thing they ask about most is not the architecture - it is how he made an invisible team's contribution legible.
 
 ## Key Takeaways
 
 - Internal tooling and customer-facing work look similar on paper and differ in visibility, budget security and the skills they build.
 - Internal work builds platform and MLOps capability, engineering discipline and leverage; customer-facing work builds commercial judgement, experimentation practice and visible results.
 - The asymmetry is measurement: customer-facing work is counted in metrics the board watches, internal work is counted in problems that did not happen.
-- If you take internal work, measure it from the start — time to production, incidents avoided, hours returned, costs retired — and report it quarterly.
+- If you take internal work, measure it from the start - time to production, incidents avoided, hours returned, costs retired - and report it quarterly.
 - Ask who the users are, who sponsors the budget and what happened to the team in the last cost programme.
 
 ## Where to Start
 
-Vacancies rarely make this distinction clear, so read for who uses what you would build — and compare both kinds of role among employers within your travel radius.
+Vacancies rarely make this distinction clear, so read for who uses what you would build - and compare both kinds of role among employers within your travel radius.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -227,11 +227,11 @@ Yes. Platform experience makes you credible with engineering and product experie
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is platform work worse for my career than customer-facing work?", "acceptedAnswer": {"@type": "Answer", "text": "No — platform and MLOps skills are highly portable; the drawback is visibility, which you can fix by measuring impact."}},
+    {"@type": "Question", "name": "Is platform work worse for my career than customer-facing work?", "acceptedAnswer": {"@type": "Answer", "text": "No - platform and MLOps skills are highly portable; the drawback is visibility, which you can fix by measuring impact."}},
     {"@type": "Question", "name": "Which is more secure in a cost programme?", "acceptedAnswer": {"@type": "Answer", "text": "Whichever demonstrates value; internal teams are more exposed by default."}},
     {"@type": "Question", "name": "Which should I do first?", "acceptedAnswer": {"@type": "Answer", "text": "Internal platform work early for engineering discipline; customer-facing later for commercial judgement."}},
     {"@type": "Question", "name": "What is the main failure mode?", "acceptedAnswer": {"@type": "Answer", "text": "A platform built without consulting the people who would use it."}},
-    {"@type": "Question", "name": "Is it worth doing each at some point?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — senior roles increasingly expect credibility with both engineering and the business."}}
+    {"@type": "Question", "name": "Is it worth doing each at some point?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - senior roles increasingly expect credibility with both engineering and the business."}}
   ]
 }
 </script>

@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Five Board Questions, Pre-Answered:** Legal accountability, data handling, IP ownership, bounded downside, and why Vietnam doesn't increase risk.
-✅ **Amsterdam Strategic Governance:** A named, EU-jurisdiction accountable party — not a diffuse offshore relationship.
+✅ **Amsterdam Strategic Governance:** A named, EU-jurisdiction accountable party - not a diffuse offshore relationship.
 ✅ **Vietnam Execution Velocity:** A scoped pilot phase with defined success criteria, so the downside is the pilot cost, not the full budget.
 
 The board isn't approving outsourcing to Vietnam. They're approving a Netherlands-governed initiative that executes efficiently offshore. 🛡️

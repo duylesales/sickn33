@@ -7,8 +7,8 @@
 
 **The Manifera Solution:**
 ✅ **Four Real Predictive Signals:** Contractual team continuity, transparency on where hours are actually spent, clear change-order pricing, and team-specific reference checks.
-✅ **Amsterdam Strategic Governance:** Team continuity commitments held contractually — verifiable answers, not sales assurances.
-✅ **Vietnam Execution Velocity:** Dedicated pods assigned for the project's duration — the team in the sales call is the team doing the work.
+✅ **Amsterdam Strategic Governance:** Team continuity commitments held contractually - verifiable answers, not sales assurances.
+✅ **Vietnam Execution Velocity:** Dedicated pods assigned for the project's duration - the team in the sales call is the team doing the work.
 
 Ask the reference: was the specific team promised the team that stayed? Not "was the company good." 🛡️
 

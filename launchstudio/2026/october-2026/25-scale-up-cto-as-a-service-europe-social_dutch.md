@@ -1,4 +1,4 @@
-🔥 David bouwde een prototype via **AI builders** — als oprichter van een e-commerce analytics SaaS in Antwerpen liep hij bij €40k MRR vast op torenhoge OpenAI-kosten en een afgewezen security-audit. 🧠
+🔥 David bouwde een prototype via **AI builders** - als oprichter van een e-commerce analytics SaaS in Antwerpen liep hij bij €40k MRR vast op torenhoge OpenAI-kosten en een afgewezen security-audit. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of schaalbare caching heeft, loopt uw scale-up vast op technische schuld.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-David doorstond de enterprise security-audit glansrijk, sloot de deal en schaalde door naar €65k MRR met gezonde marges. (€4.500 (Launch & Grow Fractional CTO Pakket) — binnen 15 werkdagen live). 🚀
+David doorstond de enterprise security-audit glansrijk, sloot de deal en schaalde door naar €65k MRR met gezonde marges. (€4.500 (Launch & Grow Fractional CTO Pakket) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scale-up-cto-as-a-service-europe
 

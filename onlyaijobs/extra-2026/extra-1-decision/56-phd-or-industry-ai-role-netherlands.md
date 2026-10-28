@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The Dutch version of this decision differs from the one described in most international advice, and the difference matters. Here, a PhD position at a university is normally an employment contract: you are staff, paid under the universities' collective agreement, accruing pension and holiday, with the employment protections that come with a job. It is not an extension of studenthood. That reframes the question. You are not choosing between studying and working — you are choosing between two jobs, one of which pays less now, lasts four years and produces a specific kind of credential, and one of which pays more now and produces production experience.
+The Dutch version of this decision differs from the one described in most international advice, and the difference matters. Here, a PhD position at a university is normally an employment contract: you are staff, paid under the universities' collective agreement, accruing pension and holiday, with the employment protections that come with a job. It is not an extension of studenthood. That reframes the question. You are not choosing between studying and working - you are choosing between two jobs, one of which pays less now, lasts four years and produces a specific kind of credential, and one of which pays more now and produces production experience.
 
 ## What a PhD Position Actually Is Here
 
@@ -49,7 +49,7 @@ Some positions are funded by industry partners, and some are formally shared wit
 
 **Industry builds delivery.** Working systems, other people's constraints, engineering practice, stakeholders, maintenance, the difference between a result and a product. These are what most employers assess for, and they are hard to acquire in a university setting.
 
-**A PhD gives you a credential with specific doors attached.** Research roles in industrial labs, applied research institutes, senior positions in regulated and scientific domains, and academia. In parts of the Dutch market — pharmaceuticals, semiconductors, energy research, healthcare, climate, defence-adjacent research — a doctorate is close to a requirement for the most interesting work.
+**A PhD gives you a credential with specific doors attached.** Research roles in industrial labs, applied research institutes, senior positions in regulated and scientific domains, and academia. In parts of the Dutch market - pharmaceuticals, semiconductors, energy research, healthcare, climate, defence-adjacent research - a doctorate is close to a requirement for the most interesting work.
 
 **Industry gives you compounding market position.** Four years of production experience, a network of colleagues who move to other employers, and a salary that has been rising from a higher base throughout.
 
@@ -63,7 +63,7 @@ So the financial case for a PhD is weak in isolation. It becomes reasonable when
 
 Ask anyone who has done a PhD what determined their experience, and almost all will say the supervisor rather than the subject.
 
-Before accepting a position, speak to current and former candidates of that supervisor — not with the supervisor present. Ask how often they meet, how quickly drafts are returned, how many candidates finished and in what time, what happened to those who struggled, and whether people leave for industry mid-way.
+Before accepting a position, speak to current and former candidates of that supervisor - not with the supervisor present. Ask how often they meet, how quickly drafts are returned, how many candidates finished and in what time, what happened to those who struggled, and whether people leave for industry mid-way.
 
 Ask the supervisor directly how they see the position: an apprenticeship in research, or a pair of hands on a funded project. Both exist. Only one develops you.
 
@@ -98,7 +98,7 @@ It varies more than candidates expect, and the variation is predictable.
 
 **Some employers are mildly wary,** from experience with doctorate holders who found delivery work unsatisfying. The answer is easy if you have it: a project you took to production, even during the PhD.
 
-The single best way to protect your options is to do something applied during the doctorate — an internship, a collaboration with a company, a tool other researchers actually use, code that someone else runs.
+The single best way to protect your options is to do something applied during the doctorate - an internship, a collaboration with a company, a tool other researchers actually use, code that someone else runs.
 
 ## Questions to Ask Before Accepting a PhD Position
 
@@ -150,19 +150,19 @@ He takes the PhD, with two conditions he negotiates himself: a six-month industr
 
 Year three is as hard as everyone warned. The collaboration is what carries him through it, and it also produces the deployment experience the doctorate would not have.
 
-He now works in an applied research group, on problems he could not have reached without the title. His view is that the decision was never PhD versus industry, but this supervisor versus that manager — and that he only found out which was which by asking the people who had already been there.
+He now works in an applied research group, on problems he could not have reached without the title. His view is that the decision was never PhD versus industry, but this supervisor versus that manager - and that he only found out which was which by asking the people who had already been there.
 
 ## Key Takeaways
 
 - In the Netherlands a PhD position is a paid job with a contract, pension and collective agreement terms, so the choice is between two jobs rather than between study and work.
 - A PhD builds depth, independence and a credential with specific doors; industry builds delivery, engineering practice and a compounding market position.
 - The financial case for a doctorate is weak in isolation and reasonable when it opens work you could not otherwise do.
-- Supervision determines the experience more than the topic — speak to current and former candidates before accepting.
+- Supervision determines the experience more than the topic - speak to current and former candidates before accepting.
 - Do something applied during the doctorate to keep industry options fully open.
 
 ## Where to Start
 
-Before choosing either path, look at the roles you would actually want in five years and check how many of them require a doctorate — the answer differs sharply by field and by region.
+Before choosing either path, look at the roles you would actually want in five years and check how many of them require a doctorate - the answer differs sharply by field and by region.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -190,7 +190,7 @@ Industry keeps more options open, and a doctorate can be started later, sometime
   "mainEntity": [
     {"@type": "Question", "name": "Is a PhD worth it for an AI career in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "When the roles you want require one and supervision is good; otherwise production experience compounds faster."}},
     {"@type": "Question", "name": "How does the money compare?", "acceptedAnswer": {"@type": "Answer", "text": "Lower pay for four years, compounding through salary and pension, rarely recovered immediately."}},
-    {"@type": "Question", "name": "What matters most in choosing a PhD position?", "acceptedAnswer": {"@type": "Answer", "text": "Supervision — ask former candidates about meetings, feedback and completion rates."}},
+    {"@type": "Question", "name": "What matters most in choosing a PhD position?", "acceptedAnswer": {"@type": "Answer", "text": "Supervision - ask former candidates about meetings, feedback and completion rates."}},
     {"@type": "Question", "name": "Does a PhD hurt my chances in industry?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not; applied work during the doctorate removes most doubt."}},
     {"@type": "Question", "name": "What if I cannot decide?", "acceptedAnswer": {"@type": "Answer", "text": "Industry keeps more doors open, and a doctorate can be started later."}}
   ]

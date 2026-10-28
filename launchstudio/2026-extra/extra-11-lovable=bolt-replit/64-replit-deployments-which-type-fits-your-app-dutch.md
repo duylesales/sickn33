@@ -26,7 +26,7 @@ De juiste vraag luidt: wat doet jouw software wanneer niemand ernaar kijkt? Moet
 
 Beantwoord die drie vragen, en de juiste deployment-keuze wijst zichzelf vanzelf uit. Het prijskaartje is dan een logisch gevolg van je architectuur, in plaats van een willekeurige gok.
 
-Pakketnamen en productlabels veranderen geregeld op cloudplatforms, en ook Replit heeft zijn tiers al meermalen hernoemd. Wat volgt gaat over de onderliggende technische patronen — en die veranderen nooit.
+Pakketnamen en productlabels veranderen geregeld op cloudplatforms, en ook Replit heeft zijn tiers al meermalen hernoemd. Wat volgt gaat over de onderliggende technische patronen - en die veranderen nooit.
 
 ## De vier verschijningsvormen van een webapplicatie
 
@@ -48,7 +48,7 @@ Deployments die 'schalen naar nul' (autoscale / serverless) zijn goedkoper omdat
 
 **Voor een normale B2B webapplicatie** is dit meestal prima. De allereerste bezoeker na een rustige periode ervaart een zogeheten 'koude start' (cold start) van enkele seconden; iedereen die daarna klikt ervaart een razendsnelle app. Als jouw doelgroep bestaat uit Nederlandse zakelijke gebruikers tijdens kantoortijden, merkt slechts een fractie van je gebruikers ooit iets van die kleine vertraging.
 
-**Voor systemen die webhooks ontvangen** is het vaak een ramp. Externe API's hanteren strikte time-outlimieten (bijvoorbeeld 3 tot 5 seconden). Als jouw server eerst uit zijn slaapstand moet ontwaken, beschouwt de betalingsprovider de poging als mislukt. Sommige diensten proberen het later opnieuw; andere geven het na twee pogingen stilletjes op. Een gemiste webhook levert geen foutmelding op in je browser — het levert een betalende klant op wiens abonnement nooit wordt geactiveerd.
+**Voor systemen die webhooks ontvangen** is het vaak een ramp. Externe API's hanteren strikte time-outlimieten (bijvoorbeeld 3 tot 5 seconden). Als jouw server eerst uit zijn slaapstand moet ontwaken, beschouwt de betalingsprovider de poging als mislukt. Sommige diensten proberen het later opnieuw; andere geven het na twee pogingen stilletjes op. Een gemiste webhook levert geen foutmelding op in je browser - het levert een betalende klant op wiens abonnement nooit wordt geactiveerd.
 
 **Voor software die data in het lokale servergeheugen bewaart** is het ronduit funest. De juiste oplossing is dan echter niet een grotere of duurdere server, maar een architectuuraanpassing: verplaats sessies en data naar een database, waarna schalen naar nul opeens wél probleemloos functioneert.
 
@@ -67,8 +67,8 @@ Wie dit verwaarloost kampt niet met serveruitval, maar met een gestage stroom ge
 Het klassieke ontwerppatroon dat in stilte stukloopt: een simpele timer of `setInterval` binnenin de webapplicatie die elke nacht om twaalf uur afgaat.
 
 Tijdens het lokaal ontwikkelen werkt dit prachtig, omdat je server continu blijft draaien. Maar in productie leidt dit tot twee uitersten:
-- Als de deployment slaapt tijdens rustige uren, slaapt de timer vrolijk mee — en wordt de nachtelijke herinneringsmail nooit verstuurd.
-- Als het platform juist automatisch opschaalt naar drie actieve containers vanwege drukte, vuurt de timer in álle drie de containers tegelijk — waardoor klanten hun factuur ineens drie keer in hun inbox ontvangen.
+- Als de deployment slaapt tijdens rustige uren, slaapt de timer vrolijk mee - en wordt de nachtelijke herinneringsmail nooit verstuurd.
+- Als het platform juist automatisch opschaalt naar drie actieve containers vanwege drukte, vuurt de timer in álle drie de containers tegelijk - waardoor klanten hun factuur ineens drie keer in hun inbox ontvangen.
 
 Gepland achtergrondwerk hoort thuis in een mechanisme dat daar specifiek voor is ontworpen: een dedicated scheduled deployment, een platform-cronjob of een externe scheduler die een beveiligd endpoint aanroept. Voeg altijd twee cruciale elementen toe: een duidelijke database-registratie van elke uitvoering, en een alarmering zodra een verwachte taak uitblijft. Een cronjob die al drie weken stilletjes faalt is de meest voorkomende onzichtbare fout in startups, omdat succes en falen er aan de buitenkant exact hetzelfde uitzien.
 
@@ -92,7 +92,7 @@ Dit moet met klem worden benadrukt, want het veroorzaakt regelmatig pijnlijke in
 
 Het adres dat je gebruikt tijdens het bouwen in Replit is direct gekoppeld aan jouw actieve ontwikkelcontainer. Die URL verandert, stopt met functioneren zodra jij je browsertabblad sluit, en toont direct elke half-affe codewijziging waar je toevallig mee bezig bent. Het sturen van die link naar een klant betekent dat je een link stuurt die gegarandeerd stukgaat, en waarmee een zakelijke klant per ongeluk meekijkt in een kapotte testversie.
 
-Een officiële deployment is een stabiele, geïsoleerde productie-omgeving die is opgebouwd vanuit een geteste staat van je broncode. Zodra iemand buiten je eigen werkkamer de app gebruikt, is de deployed URL de enige link die je deelt — en die hoort op je eigen custom domein te staan.
+Een officiële deployment is een stabiele, geïsoleerde productie-omgeving die is opgebouwd vanuit een geteste staat van je broncode. Zodra iemand buiten je eigen werkkamer de app gebruikt, is de deployed URL de enige link die je deelt - en die hoort op je eigen custom domein te staan.
 
 ## Hoe je de architectuur in de praktijk opsplitst
 
@@ -136,16 +136,16 @@ Sanne Kuipers bouwde via Replit Bezetting: een zaalreserverings- en bezettingsto
 
 Binnen een maand ontstonden er twee ernstige problemen. Eerst ontvingen sommige huurders dezelfde reserveringsherinnering driemaal achter elkaar in hun inbox, wat slordig oogde tegenover zakelijke klanten. Vervolgens stopten de herinneringen ineens elf dagen lang volledig met werken. Niemand merkte het, totdat een huurder een dubbele boeking misliep en boos opbelde.
 
-Beide problemen hadden exact dezelfde oorzaak: de herinnering werd aangestuurd door een eenvoudige timer binnen de webservercode. Wanneer Replit tijdens drukke uren automatisch opschaalde naar meerdere container-instanties, vuurde elke actieve container de timer af — met drie mails tot gevolg. Wanneer het platform tijdens rustige uren echter uitschakelde (scale-to-zero), sliep de timer mee — wat de elf stille dagen verklaarde. Daarnaast kwamen opzeggingsmeldingen van de betaalprovider binnen op een slapend endpoint, waardoor twee opgezegde abonnementen ongemerkt actief bleven.
+Beide problemen hadden exact dezelfde oorzaak: de herinnering werd aangestuurd door een eenvoudige timer binnen de webservercode. Wanneer Replit tijdens drukke uren automatisch opschaalde naar meerdere container-instanties, vuurde elke actieve container de timer af - met drie mails tot gevolg. Wanneer het platform tijdens rustige uren echter uitschakelde (scale-to-zero), sliep de timer mee - wat de elf stille dagen verklaarde. Daarnaast kwamen opzeggingsmeldingen van de betaalprovider binnen op een slapend endpoint, waardoor twee opgezegde abonnementen ongemerkt actief bleven.
 
 De herstelwerkzaamheden vergden vijf werkdagen: herinneringsmails losgekoppeld en ondergebracht in een dedicated scheduled job die elke nacht exact één keer draait, inclusief statuslogging en SMS-alarmering bij uitval; de boekingsapplicatie zelf gelaten op automatische schaalbaarheid (scale-to-zero), wat uitstekend past bij het kantoorgebruik; de betalings-webhook verplaatst naar een permanent bereikbaar endpoint met handtekeningverificatie en deduplicatie van event-ID's; statische informatiepagina's afgesplitst; en de twee onterecht actieve abonnementen handmatig gesynchroniseerd met Stripe.
 
 **Resultaat:** in de negen maanden sinds de aanpassing is er geen enkele dubbele herinnering meer verstuurd en is er geen nacht gemist. Het verzamelgebouw dat eerder dreigde op te zeggen verlengde zijn jaarcontract.
 
 > *"Dezelfde herinnering ging drie keer de deur uit, en daarna elf dagen helemaal niet meer. Het bleek exact dezelfde fout te zijn: ik had een periodieke achtergrondtaak midden in een webserver gestopt."*
-> — **Sanne Kuipers, Oprichter, Bezetting (Deventer)**
+> - **Sanne Kuipers, Oprichter, Bezetting (Deventer)**
 
-**Kosten & Doorlooptijd:** € 2.400 (afsplitsing scheduled jobs met monitoring, webhook-hervorming en deduplicatie, scheiding statische content) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.400 (afsplitsing scheduled jobs met monitoring, webhook-hervorming en deduplicatie, scheiding statische content) - afgerond in 5 werkdagen.
 
 ## Veelgestelde vragen
 

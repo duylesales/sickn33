@@ -20,7 +20,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Er bestaat een vorm van accountovername die geen greintje technische kennis vereist. Iemand stuurt een e-mail naar de oprichter, meldt dat hij zijn telefoon kwijt is en geen toegang meer heeft tot zijn account, klinkt sympathiek en gestrest, verstrekt een stukje informatie dat openbaar vindbaar of makkelijk te raden is, en vraagt om hulp om weer binnen te komen. De oprichter — behulpzaam, drukbezet en opererend in een vroege fase waarin elke klant telt — helpt de gebruiker direct weer op weg.
+Er bestaat een vorm van accountovername die geen greintje technische kennis vereist. Iemand stuurt een e-mail naar de oprichter, meldt dat hij zijn telefoon kwijt is en geen toegang meer heeft tot zijn account, klinkt sympathiek en gestrest, verstrekt een stukje informatie dat openbaar vindbaar of makkelijk te raden is, en vraagt om hulp om weer binnen te komen. De oprichter - behulpzaam, drukbezet en opererend in een vroege fase waarin elke klant telt - helpt de gebruiker direct weer op weg.
 
 Dat is statistisch gezien de meest waarschijnlijke manier waarop een account in jouw applicatie zal worden gekaapt. En het staat volkomen los van welke geavanceerde cryptografische authenticatie je hebt gebouwd. Dat is de kern van dit artikel: tweeledige verificatie (2FA/MFA) zonder een doordachte herstelprocedure voegt geen beveiliging toe, maar creëert simpelweg een support-inbox met een achterdeur.
 
@@ -34,7 +34,7 @@ Niet direct op dag één voor een eenvoudig consumentenproduct, maar aanzienlijk
 
 **Je klanten zijn zakelijke organisaties.** B2B- en overheidsinkopers verwachten MFA als harde basiseis; het staat steevast als een ja/nee-vraag op elke inkoop- en securityvragenlijst.
 
-**Gebruikers hebben beheerdersrechten (admin-rollen).** Zelfs als gewone eindgebruikers het niet verplicht nodig hebben, moeten administrators dat wél — de accounts die data van alle andere gebruikers kunnen inzien of manipuleren verdienen prioriteit.
+**Gebruikers hebben beheerdersrechten (admin-rollen).** Zelfs als gewone eindgebruikers het niet verplicht nodig hebben, moeten administrators dat wél - de accounts die data van alle andere gebruikers kunnen inzien of manipuleren verdienen prioriteit.
 
 Een verstandige fasering voor een startend product: maak MFA optioneel voor alle gebruikers, stel het verplicht voor beheerdersrollen, en bied zakelijke klanten de optie om het voor hun hele organisatie af te dwingen.
 
@@ -52,9 +52,9 @@ Een verstandige fasering voor een startend product: maak MFA optioneel voor alle
 
 Voor een Nederlandse B2B-app biedt de combinatie van authenticator-apps met passkeys als upgrade-pad de ideale balans voor vrijwel elke zakelijke eis.
 
-## Herstel Is het Moeilijkste Gedeelte — en Waar Het Om Draait
+## Herstel Is het Moeilijkste Gedeelte - en Waar Het Om Draait
 
-Elke tweede factor creëert een nieuwe manier waarop legitieme gebruikers zichzelf kunnen buitensluiten. Smartphones vallen in het water, worden vervangen, gereset of gestolen — dagelijks, door betalende klanten die niets verkeerd hebben gedaan.
+Elke tweede factor creëert een nieuwe manier waarop legitieme gebruikers zichzelf kunnen buitensluiten. Smartphones vallen in het water, worden vervangen, gereset of gestolen - dagelijks, door betalende klanten die niets verkeerd hebben gedaan.
 
 Jouw herstelontwerp bepaalt je werkelijke beveiligingsniveau, want een aanvaller zoekt altijd de route van de minste weerstand. Als jouw herstelprocedure neerkomt op "mail ons en wij zetten MFA voor je uit", dan is je tweede factor louter een visuele illusie en is je échte beveiligingsmechanisme het onderbuikgevoel van degene die om 09:00 uur 's ochtends de supportmail leest.
 
@@ -70,7 +70,7 @@ Wat absoluut géén herstelroute mag zijn: geheime vragen met eenvoudig te achte
 
 Dit verdient een strikte interne procedure, omdat het de meest voorkomende reële dreiging is en sociale manipulatie ('social engineering') inspeelt op jouw bereidheid om klanten te helpen.
 
-Leg vooraf schriftelijk vast welk onweerlegbaar bewijs vereist is om handmatig toegang te herstellen. Informatie die uitsluitend de echte accounteigenaar kan bezitten: een specifiek recent factuurnummer, een bankoverschrijvingskenmerk, bevestiging vanaf een geverifieerd alternatief domein, of schriftelijke toestemming van de hoofdbeheerder van het bedrijf. Hanteer deze controle zonder uitzondering, ook wanneer de beller gefrustreerd is, zich voordoet als de directeur, of roept dat er een dringende deadline is — dat zijn exact de psychologische drukmiddelen die aanvallers hanteren.
+Leg vooraf schriftelijk vast welk onweerlegbaar bewijs vereist is om handmatig toegang te herstellen. Informatie die uitsluitend de echte accounteigenaar kan bezitten: een specifiek recent factuurnummer, een bankoverschrijvingskenmerk, bevestiging vanaf een geverifieerd alternatief domein, of schriftelijke toestemming van de hoofdbeheerder van het bedrijf. Hanteer deze controle zonder uitzondering, ook wanneer de beller gefrustreerd is, zich voordoet als de directeur, of roept dat er een dringende deadline is - dat zijn exact de psychologische drukmiddelen die aanvallers hanteren.
 
 Twee aanvullende beveiligingsregels: bevestig nooit informatie over een account aan iemand wiens identiteit niet sluitend vaststaat, inclusief de vraag óf het account überhaupt bestaat. En wanneer een account handmatig wordt hersteld, stuur dan direct een notificatie naar het oorspronkelijke e-mailadres in je database, zodat een eventuele overname direct alarm slaat bij het echte slachtoffer.
 
@@ -82,7 +82,7 @@ Voor zakelijke B2B-software is de schoonste oplossing om accountherstel volledig
 
 **Eenmalige herstelcodes,** die na één keer gebruiken ongeldig worden, direct vervallen zodra nieuwe codes worden gegenereerd, en cryptografisch even zorgvuldig worden gecontroleerd als een wachtwoord.
 
-**Apparaatbeheer,** zodat gebruikers een lijst zien van gekoppelde apparaten en deze zelfstandig kunnen intrekken — precies hoe iemand bij vermoeden van misbruik een verdacht apparaat verwijdert.
+**Apparaatbeheer,** zodat gebruikers een lijst zien van gekoppelde apparaten en deze zelfstandig kunnen intrekken - precies hoe iemand bij vermoeden van misbruik een verdacht apparaat verwijdert.
 
 **Opnieuw inloggen (re-authenticatie) bij gevoelige acties.** Het uitschakelen van 2FA, het wijzigen van het e-mailadres, het aanpassen van IBAN-uitbetalingsgegevens of het verwijderen van het account. Een bestaande actieve sessie is voor deze handelingen onvoldoende, want sessies worden regelmatig onbeheerd achtergelaten op laptops.
 
@@ -108,13 +108,13 @@ Dit is een overzichtelijke functionaliteit die disproportioneel vaak terugkomt i
 
 **Sla re-authenticatie niet over** bij acties die de beveiliging van het account wijzigen.
 
-**Ga de cryptografische code niet zelf programmeren;** gebruik beproefde, gecertificeerde libraries voor je stack — dit is typisch het domein waar AI-gegenereerde code subtiele logicafouten introduceert die pas bij een audit aan het licht komen.
+**Ga de cryptografische code niet zelf programmeren;** gebruik beproefde, gecertificeerde libraries voor je stack - dit is typisch het domein waar AI-gegenereerde code subtiele logicafouten introduceert die pas bij een audit aan het licht komen.
 
 ## Je Eigen Implementatie Testen
 
 Een half uur testen legt de meeste gebreken direct bloot:
 
-Activeer een tweede factor en controleer of je er bij de volgende inlogpoging netjes om wordt gevraagd. Gebruik één van je herstelcodes, en probeer daarna exact dezelfde code nogmaals — hij móét falen. Genereer een nieuwe set herstelcodes en controleer of de oude direct ongeldig zijn. Probeer 2FA uit te schakelen en kijk of het systeem je dwingt opnieuw je wachtwoord in te voeren. Pas je e-mailadres aan en controleer of je oude mailbox een waarschuwingsmail ontvangt. Log in op een tweede browser, verwijder die sessie via de eerste browser, en controleer of de tweede sessie onmiddellijk stopt. Controleer tot slot je inbox: heeft elk van deze stappen een beveiligingsnotificatie opgeleverd?
+Activeer een tweede factor en controleer of je er bij de volgende inlogpoging netjes om wordt gevraagd. Gebruik één van je herstelcodes, en probeer daarna exact dezelfde code nogmaals - hij móét falen. Genereer een nieuwe set herstelcodes en controleer of de oude direct ongeldig zijn. Probeer 2FA uit te schakelen en kijk of het systeem je dwingt opnieuw je wachtwoord in te voeren. Pas je e-mailadres aan en controleer of je oude mailbox een waarschuwingsmail ontvangt. Log in op een tweede browser, verwijder die sessie via de eerste browser, en controleer of de tweede sessie onmiddellijk stopt. Controleer tot slot je inbox: heeft elk van deze stappen een beveiligingsnotificatie opgeleverd?
 
 Elk afwijkend gedrag is een actiepunt, en vrijwel altijd betreft het een ontbrekende controle of configuratie in plaats van een complete herbouw.
 
@@ -122,7 +122,7 @@ Elk afwijkend gedrag is een actiepunt, en vrijwel altijd betreft het een ontbrek
 
 Dit is typisch een onderdeel waar door AI gegenereerde code op het oog compleet oogt, maar de cruciale helft weglaat: de activatie werkt meestal wel, maar accountherstel ontbreekt volledig en re-authenticatie bij gevoelige acties is nergens te bekennen.
 
-LaunchStudio richt het complete traject in als onderdeel van het klaarmaken van AI-apps voor productie: tweeledige verificatie gebouwd op beproefde standaarden voor jouw backend, robuuste herstelcodes die correct invalideren, apparaatbeheer, re-authenticatie bij gevoelige instellingen, automatische beveiligingsnotificaties, organisatie-brede verplichting voor zakelijke klanten, en een waterdichte supportprocedure voor noodgevallen — zonder de interface die je in Lovable hebt gebouwd aan te tasten.
+LaunchStudio richt het complete traject in als onderdeel van het klaarmaken van AI-apps voor productie: tweeledige verificatie gebouwd op beproefde standaarden voor jouw backend, robuuste herstelcodes die correct invalideren, apparaatbeheer, re-authenticatie bij gevoelige instellingen, automatische beveiligingsnotificaties, organisatie-brede verplichting voor zakelijke klanten, en een waterdichte supportprocedure voor noodgevallen - zonder de interface die je in Lovable hebt gebouwd aan te tasten.
 
 De engineers zijn van Manifera: elf jaar ervaring met enterprise-authenticatie voor klanten als Vodafone, TNO en CFLW, vanuit Amsterdam en Ho Chi Minhstad. [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact), of bekijk wat het [Launch Ready pakket](https://launchstudio.eu/nl/#packages) inhoudt.
 
@@ -155,9 +155,9 @@ Zes werkdagen werk volgden: herstelcodes opnieuw geïmplementeerd met verplichte
 **Resultaat:** er werd geen cent gestolen, het accountantskantoor bleef klant nadat open kaart werd gespeeld over het incident, en twee latere herstelverzoeken werden soepel afgehandeld door de beheerders van de kantoren zelf zonder dat Erik eraan te pas kwam.
 
 > *"Mijn techniek werkte prima. De achterdeur was ikzelf, op een drukke dinsdagochtend, terwijl ik behulpzaam probeerde te zijn voor iemand die klonk alsof ze een zware dag had."*
-> — **Erik Vlietstra, Oprichter, Salarisplan (Zwolle)**
+> - **Erik Vlietstra, Oprichter, Salarisplan (Zwolle)**
 
-**Kosten & Doorlooptijd:** € 2.700 (herstelcodes, apparaatbeheer, re-authenticatie, beveiligingsnotificaties, organisatieregels en supportprocedure) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 2.700 (herstelcodes, apparaatbeheer, re-authenticatie, beveiligingsnotificaties, organisatieregels en supportprocedure) - afgerond in 6 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -167,7 +167,7 @@ Zodra de applicatie privacygevoelige of bedrijfskritische data bevat, wanneer ac
 
 ### Welke tweede factor kan ik het beste aanbieden?
 
-Authenticator-apps (TOTP) zijn de meest betrouwbare en universele standaard — gratis, offline bruikbaar en breed ondersteund — met passkeys als moderne upgrade. E-mailcodes zijn onveilig wanneer e-mail ook gebruikt wordt voor wachtwoordresets, en sms brengt risico's met zich mee rond SIM-swapping.
+Authenticator-apps (TOTP) zijn de meest betrouwbare en universele standaard - gratis, offline bruikbaar en breed ondersteund - met passkeys als moderne upgrade. E-mailcodes zijn onveilig wanneer e-mail ook gebruikt wordt voor wachtwoordresets, en sms brengt risico's met zich mee rond SIM-swapping.
 
 ### Wat is de meest voorkomende manier waarop accounts gekaapt worden?
 
@@ -175,7 +175,7 @@ Via de helpdesk. Een aanvaller neemt contact op met de oprichter, beweert zijn t
 
 ### Hoe hoort een veilige herstelprocedure eruit te zien?
 
-Eenmalig bruikbare herstelcodes die bij activatie verplicht worden opgeslagen, een tweede geregistreerd toestel waar mogelijk, en voor B2B-applicaties een interne bedrijfsbeheerder bij de klant die zijn eigen collega's kan resetten — wat jou volledig uit de risicocirkel haalt.
+Eenmalig bruikbare herstelcodes die bij activatie verplicht worden opgeslagen, een tweede geregistreerd toestel waar mogelijk, en voor B2B-applicaties een interne bedrijfsbeheerder bij de klant die zijn eigen collega's kan resetten - wat jou volledig uit de risicocirkel haalt.
 
 ### Voor welke acties moet een gebruiker opnieuw zijn inloggegevens invoeren?
 

@@ -46,7 +46,7 @@ Roughly in order of how often each surprises somebody.
 
 The instinct after a bad bill is to reduce everything. The better move is to find out what drove it, which most platforms will tell you if you ask precisely.
 
-Break the bill down by service and compare the month to the previous one, looking for the line that changed rather than the line that is largest. Then, within that service, find the dimension — which function, which endpoint, which bucket, which model.
+Break the bill down by service and compare the month to the previous one, looking for the line that changed rather than the line that is largest. Then, within that service, find the dimension - which function, which endpoint, which bucket, which model.
 
 Two attributions are worth building into the product rather than reading from a dashboard. Cost per customer, at least approximately, for anything usage-driven: if you cannot say what your heaviest account costs to serve, you cannot price correctly. And cost per feature, so that an expensive feature is a business decision rather than an accident.
 
@@ -72,7 +72,7 @@ Three, and they take minutes.
 
 A budget alert at half and at 90 percent of what you expect to spend, so unusual activity is visible in days rather than at month end.
 
-An anomaly alert if your provider supports it — spend significantly above the same day last week is the shape you want to catch.
+An anomaly alert if your provider supports it - spend significantly above the same day last week is the shape you want to catch.
 
 And one product-level alert of your own: a count of the expensive operation, per hour, with a threshold. If your product normally processes 40 documents an hour, an alert at 400 finds a loop before the invoice does.
 
@@ -88,7 +88,7 @@ Serve images at display size in modern formats, which for image-heavy products i
 
 Delete what nobody needs: abandoned uploads, orphaned objects, old exports, originals of images only ever shown as thumbnails. A cleanup job plus a retention rule.
 
-And for AI features, send less. Trim the context to what the task needs, cap the response length, and cache results for identical inputs — which in practice happens more often than founders expect.
+And for AI features, send less. Trim the context to what the task needs, cap the response length, and cache results for identical inputs - which in practice happens more often than founders expect.
 
 ## Plan Sizing Comes Last
 
@@ -106,17 +106,17 @@ The first is your own time. An hour spent every week investigating a cost anomal
 
 The second is the cost of the thing that went wrong. The weekend outage that cost two customers. The duplicated emails that took a day of apology. The slow page that quietly reduced conversion for three months. These are real amounts and they are usually larger than the infrastructure line everyone is scrutinising.
 
-This matters because cost control can become its own trap: a founder economising on a €90 platform bill while a €4,000 problem sits unaddressed in the same product. The correct frame is not minimising the invoice — it is knowing what each part costs so you can decide deliberately what to spend.
+This matters because cost control can become its own trap: a founder economising on a €90 platform bill while a €4,000 problem sits unaddressed in the same product. The correct frame is not minimising the invoice - it is knowing what each part costs so you can decide deliberately what to spend.
 
 A useful annual exercise: put the platform bill, your time on operations, and the estimated cost of incidents in the same table. It is usually the first time the three have been compared, and it generally reorders what to work on next.
 
 ## Reserve Capacity Only Once the Shape Is Known
 
-Providers offer discounts for committing in advance — reserved instances, annual plans, prepaid credits — typically 20 to 40 percent against paying as you go.
+Providers offer discounts for committing in advance - reserved instances, annual plans, prepaid credits - typically 20 to 40 percent against paying as you go.
 
 The trap is committing before your usage has a stable shape. A product whose architecture changes twice in a year commits to capacity it no longer uses, which is a discount on the wrong thing. Worse, the commitment becomes an argument against a change that would otherwise be correct.
 
-The sensible sequence: run on demand until usage is predictable across three or four months, fix the bugs and inefficiencies first so you are committing to real need rather than to waste, then commit to the floor of your usage rather than the peak — the portion you are certain to consume — and leave the variable part on demand.
+The sensible sequence: run on demand until usage is predictable across three or four months, fix the bugs and inefficiencies first so you are committing to real need rather than to waste, then commit to the floor of your usage rather than the peak - the portion you are certain to consume - and leave the variable part on demand.
 
 For most products under a few hundred customers this point arrives in year two, and the annual plan on the model provider or the database is the first one worth taking. Before then, flexibility is worth more than the discount, because the most expensive commitment is the one that stops you fixing something.
 
@@ -124,7 +124,7 @@ For most products under a few hundred customers this point arrives in year two, 
 
 For an existing product this is typically half a day to a day: the bill broken down by service and dimension with the changed line identified, cost attribution for the expensive feature and the heaviest accounts, spending caps set where the provider offers them, per-user and per-endpoint rate limits on costly operations, bounded retries and timeouts on every external call, size and count limits on user-submitted work, budget and anomaly alerts routed somewhere you read, caching and image transformation applied, a cleanup job for orphaned and abandoned storage, and AI payloads trimmed with response limits and result caching.
 
-LaunchStudio does this as part of the managed arrangement at €49 per month, where the alerts come to us and the caps are set before they are needed. The engineers are Manifera's — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this as part of the managed arrangement at €49 per month, where the alerts come to us and the caps are set before they are needed. The engineers are Manifera's - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Send us last month's bill](https://launchstudio.eu/en/#contact) and we will tell you which line is a bug.
 
@@ -134,7 +134,7 @@ LaunchStudio does this as part of the managed arrangement at €49 per month, wh
 
 Daniël Wubbels built Bestekcheck with Lovable: a tool that reads construction specifications and flags inconsistencies for small contractors and architects, 40 subscribers on €95 a month.
 
-On a Friday evening he deployed a change to how documents were split before being sent to the model. The change introduced a condition that, on documents above a certain length, produced overlapping segments — and each segment triggered a further split.
+On a Friday evening he deployed a change to how documents were split before being sent to the model. The change introduced a condition that, on documents above a certain length, produced overlapping segments - and each segment triggered a further split.
 
 Nothing errored. The feature appeared to work. Over Saturday and Sunday, eleven uploaded documents generated 41,000 model calls between them, and his provider bill for the weekend was €3,100 against monthly revenue of €3,800.
 
@@ -142,12 +142,12 @@ He found out on Monday morning from a billing email.
 
 Two business days: a hard cap on segments per document with the job failing loudly rather than continuing; recursion depth limited so a split cannot trigger a split; per-account rate limiting on document processing, set well above normal use; bounded retries with backoff replacing an unlimited retry on model timeouts; a spending cap at the model provider that suspends rather than bills beyond it; an hourly alert on model call volume at ten times the normal rate; cost attribution per document and per account written into the usage table, so Daniël can now see what each customer costs; response length limits and context trimming that cut ordinary per-document cost by 40 percent; and results cached for identical document hashes, which turned out to cover 18 percent of uploads because contractors re-upload revised specifications that are largely unchanged.
 
-**Result:** the provider credited part of the weekend after Daniël explained the loop, and the remaining €1,900 was a month of profit. In the two years since, the volume alert has fired twice — once for a genuine bug caught in eleven minutes, once for a legitimate large customer — and per-document cost is 40 percent lower than before the incident.
+**Result:** the provider credited part of the weekend after Daniël explained the loop, and the remaining €1,900 was a month of profit. In the two years since, the volume alert has fired twice - once for a genuine bug caught in eleven minutes, once for a legitimate large customer - and per-document cost is 40 percent lower than before the incident.
 
 > *"The feature worked. The output was correct. There was nothing to notice except a number on a dashboard I had no reason to open on a Saturday."*
-> — **Daniël Wubbels, Founder, Bestekcheck (Zwolle)**
+> - **Daniël Wubbels, Founder, Bestekcheck (Zwolle)**
 
-**Cost & Timeline:** €2,400 (segment and recursion caps, rate limiting, bounded retries, provider spending cap, volume alerting, per-account cost attribution, payload and response trimming, result caching) — completed in 2 business days.
+**Cost & Timeline:** €2,400 (segment and recursion caps, rate limiting, bounded retries, provider spending cap, volume alerting, per-account cost attribution, payload and response trimming, result caching) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
@@ -181,7 +181,7 @@ Check for a missing index, a connection or retry bug, and uncached content first
       "name": "What causes sudden hosting bill spikes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A loop — unbounded retries, recursive processing, a development polling interval left in place, or model calls inside a loop over rows."
+        "text": "A loop - unbounded retries, recursive processing, a development polling interval left in place, or model calls inside a loop over rows."
       }
     },
     {

@@ -12,7 +12,7 @@ Doelgroep: SaaS-oprichters in Scale-Up fase
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-App naar Productie voor Internationale Gebruikers: Talen, Valuta's en Tijdzones",
-  "description": "AI-gebouwde apps gaan standaard uit van één taal, één valuta, één tijdzone en één vaste naamstructuur. Een voor-en-na gids over wat er misgaat zodra internationale gebruikers instromen — en hoe je een AI-app productieklaar maakt voor een wereldwijd publiek.",
+  "description": "AI-gebouwde apps gaan standaard uit van één taal, één valuta, één tijdzone en één vaste naamstructuur. Een voor-en-na gids over wat er misgaat zodra internationale gebruikers instromen - en hoe je een AI-app productieklaar maakt voor een wereldwijd publiek.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-11-27",
@@ -92,7 +92,7 @@ Een AI-app naar productie brengen voor internationale gebruikers begint in de da
 | Valuta | Impliciet euro's | `currency`-code bij elk bedrag |
 | Geboortedatum | Opgeslagen als tekst | Datumtype, getoond per taalinstelling |
 
-Deze velden wijzigen in een live app vraagt om een migratie: voeg nieuwe kolommen toe, vul ze vanuit de oude, schakel lezen en schrijven om, en verwijder daarna de oude velden — de expand-and-contract-aanpak die downtime voorkomt.
+Deze velden wijzigen in een live app vraagt om een migratie: voeg nieuwe kolommen toe, vul ze vanuit de oude, schakel lezen en schrijven om, en verwijder daarna de oude velden - de expand-and-contract-aanpak die downtime voorkomt.
 
 ## Tijdzones in Planningsfuncties
 
@@ -124,7 +124,7 @@ Platforms voor internationale studenten of bezoekers krijgen vaak te maken met g
 
 ## Zoeken en Sorteren over Talen Heen
 
-Zoeken hoort ongevoelig te zijn voor accenten en tolerant voor transliteraties — "Müller", "Mueller" en "Muller" horen elkaar te vinden. Postgres ondersteunt dit met de extensie `unaccent` en passende collaties; voor veel talen bestaan configuraties voor full-text search. Namen alfabetisch sorteren hoort de regels van de taalinstelling van de gebruiker te volgen, die per taal verschillen.
+Zoeken hoort ongevoelig te zijn voor accenten en tolerant voor transliteraties - "Müller", "Mueller" en "Muller" horen elkaar te vinden. Postgres ondersteunt dit met de extensie `unaccent` en passende collaties; voor veel talen bestaan configuraties voor full-text search. Namen alfabetisch sorteren hoort de regels van de taalinstelling van de gebruiker te volgen, die per taal verschillen.
 
 ## E-mails, Documenten en Notificaties over Taalinstellingen Heen
 
@@ -132,7 +132,7 @@ Internationale gebruikers komen je product het vaakst tegen buiten de app: beves
 
 ## Juridische en Fiscale Overwegingen voor Internationale Gebruikers
 
-Gebruikers uit veel landen bedienen roept vragen op die verder gaan dan de taal van de interface: welk consumentenrecht geldt, welke btw-behandeling verschuldigd is, welke regels voor gegevensbescherming gelden voor gebruikers buiten de EU, en of je voorwaarden vertaald moeten worden. Voor de meeste producten met een vestiging in de EU geldt de AVG voor alle gebruikers, ongeacht nationaliteit, en kunnen bij consumentenverkoop de consumentenregels van het land van de klant gelden. Laat je specifieke situatie bevestigen door adviseurs en zorg dat je datamodel opslaat wat nodig is — land van de klant, type klant, toestemmingsregistraties — om de juiste regels toe te passen.
+Gebruikers uit veel landen bedienen roept vragen op die verder gaan dan de taal van de interface: welk consumentenrecht geldt, welke btw-behandeling verschuldigd is, welke regels voor gegevensbescherming gelden voor gebruikers buiten de EU, en of je voorwaarden vertaald moeten worden. Voor de meeste producten met een vestiging in de EU geldt de AVG voor alle gebruikers, ongeacht nationaliteit, en kunnen bij consumentenverkoop de consumentenregels van het land van de klant gelden. Laat je specifieke situatie bevestigen door adviseurs en zorg dat je datamodel opslaat wat nodig is - land van de klant, type klant, toestemmingsregistraties - om de juiste regels toe te passen.
 
 ## Toegankelijkheid voor Niet-Moedertaalsprekers
 
@@ -148,19 +148,19 @@ In plaats van elke taalinstelling tegelijk te ondersteunen, kun je de uitrol fas
 
 ## Waarom Het Zich Terugbetaalt
 
-Internationale gebruikers zijn vaak early adopters, actief in gemeenschappen en gul met aanbevelingen — zolang het product hen als volwaardige gebruikers behandelt. Namen, tijdzones, valuta's en talen goed regelen is een kleine engineeringinspanning vergeleken met de groei die het ontsluit.
+Internationale gebruikers zijn vaak early adopters, actief in gemeenschappen en gul met aanbevelingen - zolang het product hen als volwaardige gebruikers behandelt. Namen, tijdzones, valuta's en talen goed regelen is een kleine engineeringinspanning vergeleken met de groei die het ontsluit.
 
 ## Een Snelle Zelfcontrole voor Je App
 
-Probeer je aan te melden als iemand die "Nguyễn Thị Minh Khai" heet met een Vietnamees telefoonnummer, daarna als "Björk" zonder achternaam, en daarna als iemand in São Paulo die een slot in Rotterdam boekt. Faalt een stap, verschijnen er verminkte tekens of wordt de verkeerde tijd getoond, dan heb je je eerste internationale productietaak gevonden. De meeste met AI-tools gebouwde apps zakken bij de eerste poging voor minstens één van deze drie tests — en elke fout kost meestal een paar uur om goed te herstellen, veel minder dan de gebruikers die het anders zou afschrikken.
+Probeer je aan te melden als iemand die "Nguyễn Thị Minh Khai" heet met een Vietnamees telefoonnummer, daarna als "Björk" zonder achternaam, en daarna als iemand in São Paulo die een slot in Rotterdam boekt. Faalt een stap, verschijnen er verminkte tekens of wordt de verkeerde tijd getoond, dan heb je je eerste internationale productietaak gevonden. De meeste met AI-tools gebouwde apps zakken bij de eerste poging voor minstens één van deze drie tests - en elke fout kost meestal een paar uur om goed te herstellen, veel minder dan de gebruikers die het anders zou afschrikken.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio maakt AI-gebouwde apps klaar voor internationale gebruikers zonder ze opnieuw te ontwerpen: tekst naar vertaalbestanden, geïnternationaliseerde e-mails en documenten, inclusieve omgang met namen, adressen en telefoonnummers, valutabewuste omgang met geld, planning met correcte tijdzones, zoeken per taalinstelling — naast de gebruikelijke productieversterking. De schermen blijven; de aannames veranderen.
+LaunchStudio maakt AI-gebouwde apps klaar voor internationale gebruikers zonder ze opnieuw te ontwerpen: tekst naar vertaalbestanden, geïnternationaliseerde e-mails en documenten, inclusieve omgang met namen, adressen en telefoonnummers, valutabewuste omgang met geld, planning met correcte tijdzones, zoeken per taalinstelling - naast de gebruikelijke productieversterking. De schermen blijven; de aannames veranderen.
 
-LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en teams in Amsterdam, Singapore en Ho Chi Minh-stad — een organisatie die elke dag over talen, valuta's en tijdzones heen werkt. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/); de [W3C-richtlijn over persoonsnamen](https://www.w3.org/International/questions/qa-personal-names) is een uitstekende externe referentie.
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en teams in Amsterdam, Singapore en Ho Chi Minh-stad - een organisatie die elke dag over talen, valuta's en tijdzones heen werkt. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/); de [W3C-richtlijn over persoonsnamen](https://www.w3.org/International/questions/qa-personal-names) is een uitstekende externe referentie.
 
-[Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — vanuit elke tijdzone.
+[Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) - vanuit elke tijdzone.
 
 ## Praktijkvoorbeeld
 
@@ -175,9 +175,9 @@ In tien werkdagen haalden de engineers van LaunchStudio alle tekst en e-mails er
 **Resultaat:** Het percentage internationale studenten dat de aanmelding afrondde, steeg van ongeveer 71% naar 94%. Bij de volgende klokwissel werden geen gesprekken gemist, en Stagebank breidde het jaar daarna uit naar nog drie universiteiten.
 
 > *"Mijn gebruikers waren per definitie internationaal, en mijn app ging ervan uit dat ze allemaal uit Heerlen kwamen."*
-> — **Mark Hermans, Oprichter, Stagebank (Heerlen)**
+> - **Mark Hermans, Oprichter, Stagebank (Heerlen)**
 
-**Kosten & Tijdlijn:** € 2.900 (Launch Ready-pakket: internationalisering, omgang met namen/adressen/telefoonnummers, tijdzones, valuta's en zoeken) — afgerond in 10 werkdagen.
+**Kosten & Tijdlijn:** € 2.900 (Launch Ready-pakket: internationalisering, omgang met namen/adressen/telefoonnummers, tijdzones, valuta's en zoeken) - afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -187,7 +187,7 @@ Starre naam- en adresvelden die geldige internationale invoer weigeren, op de vo
 
 ### Moet ik mijn hele app vertalen voordat ik internationaal lanceer?
 
-Geef voorrang aan kritieke flows — aanmelden, kernacties, betalingen, e-mails en juridische teksten — in de talen die je gebruikers nodig hebben. Secundaire schermen kunnen volgen.
+Geef voorrang aan kritieke flows - aanmelden, kernacties, betalingen, e-mails en juridische teksten - in de talen die je gebruikers nodig hebben. Secundaire schermen kunnen volgen.
 
 ### Hoe moet een app tijden van afspraken over tijdzones heen opslaan?
 
@@ -195,7 +195,7 @@ Sla het tijdstempel op in UTC samen met de bedoelde tijdzone van de gebeurtenis,
 
 ### Hoe beïnvloedt de internationale opzet van Manifera dit werk?
 
-Manifera opereert in Nederland, Singapore en Vietnam, dus eisen rond meerdere talen, valuta's en tijdzones horen bij het dagelijkse werk — en bij de systemen die het bouwt.
+Manifera opereert in Nederland, Singapore en Vietnam, dus eisen rond meerdere talen, valuta's en tijdzones horen bij het dagelijkse werk - en bij de systemen die het bouwt.
 
 ### Helpt internationalisering bij zoekmachines en AI-antwoordmachines?
 

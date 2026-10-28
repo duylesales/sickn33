@@ -63,7 +63,7 @@ Operating under the vision of CEO Herre Roelevink in Amsterdam, and driven by ou
 
 Our AI Stack Enablement includes:
 1. **Framework Standardization:** We migrate your team away from messy, manual API calls into standardized orchestration frameworks (like LangChain or DSPy), establishing the structural guardrails your codebase needs to scale.
-2. **Infrastructure-as-Code for AI:** We deploy your specialized AI infrastructure—including vector databases, Redis semantic caches, and LLM observability tools (like Langfuse)—using rigorous IaC practices, ensuring your AI environment is enterprise-ready.
+2. **Infrastructure-as-Code for AI:** We deploy your specialized AI infrastructure - including vector databases, Redis semantic caches, and LLM observability tools (like Langfuse) - using rigorous IaC practices, ensuring your AI environment is enterprise-ready.
 3. **Evaluation-Driven Development (EDD):** We train your QA and DevOps teams to abandon traditional unit tests for AI outputs, replacing them with LLM-as-a-Judge CI/CD pipelines to statistically measure and prevent hallucination regressions.
 
 ## Real example
@@ -88,9 +88,9 @@ In a 15-day architectural rewrite, LaunchStudio transformed the feature using th
 **Result:** The search latency dropped from 45 seconds to 1.2 seconds. The cost per search plummeted from €0.80 to €0.002. The AI stopped hallucinating winter coats because its context window was strictly limited to highly relevant vector results. The feature drove a 22% increase in average order value.
 
 > *"My team knew exactly how to build a web app, but we had absolutely no idea how to build an AI app. We were trying to hammer a nail with a screwdriver. LaunchStudio came in and installed the actual machinery required to run AI at scale. They didn't just fix our code; they upgraded our entire engineering philosophy."*
-> — **Kian O'Sullivan, CTO, TrendLogic (Dublin)**
+> - **Kian O'Sullivan, CTO, TrendLogic (Dublin)**
 
-**Cost & Timeline:** €10,500 (Launch & Grow Package with AI Architecture Overhaul Add-on) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €10,500 (Launch & Grow Package with AI Architecture Overhaul Add-on) - production-ready and deployed in 15 business days.
 
 ---
 

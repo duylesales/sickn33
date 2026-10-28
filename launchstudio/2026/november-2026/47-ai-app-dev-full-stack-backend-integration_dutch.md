@@ -93,9 +93,9 @@ In een refactoringsprint van 15 werkdagen herbouwde LaunchStudio de feature volg
 **Resultaat:** De responstijd daalde van 45 seconden naar 1,2 seconden. De kosten per zoekactie daalden van €0,80 naar €0,002. Hallucinaties over winterjassen verdwenen volledig. De gemiddelde orderwaarde (AOV) steeg met 22%.
 
 > *"Mijn team wist precies hoe je een webshop bouwt, maar we hadden geen idee hoe je een AI-applicatie bouwt. We probeerden een spijker in de muur te slaan met een schroevendraaier. LaunchStudio installeerde de juiste AI-infrastructuur. Ze repareerden niet alleen onze code, maar tilden onze hele engineeringfilosofie naar een hoger niveau."*
-> — **Kian O'Sullivan, CTO, TrendLogic (Dublin)**
+> - **Kian O'Sullivan, CTO, TrendLogic (Dublin)**
 
-**Kosten & Doorlooptijd:** €10.500 (Launch & Grow Pakket met AI Architectuur Overhaul Add-on) — productie-klaar en live binnen 15 werkdagen.
+**Kosten & Doorlooptijd:** €10.500 (Launch & Grow Pakket met AI Architectuur Overhaul Add-on) - productie-klaar en live binnen 15 werkdagen.
 
 ---
 

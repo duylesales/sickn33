@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Outgrowing Lovable and Bolt: Four Signals It Is Time to Move",
-  "description": "How to tell the difference between friction that means you should leave your AI builder and friction that simply means your product got complicated — and why leaving is a workflow change rather than a rewrite.",
+  "description": "How to tell the difference between friction that means you should leave your AI builder and friction that simply means your product got complicated - and why leaving is a workflow change rather than a rewrite.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-27",
@@ -32,7 +32,7 @@ Your application code already exists as ordinary files in a repository you can o
 
 What changes is the workflow: you edit in a code editor rather than through prompts against a platform, you deploy through a pipeline you control, and you gain the ability to do things the platform did not expose. That is a shift in how you work, not a reconstruction of what you built.
 
-Holding that in mind changes the risk calculation considerably — and it is why "we should rebuild it properly" is almost always the wrong framing of this decision.
+Holding that in mind changes the risk calculation considerably - and it is why "we should rebuild it properly" is almost always the wrong framing of this decision.
 
 ## Signal One: You Spend More Time Fighting the Tool Than the Problem
 
@@ -48,7 +48,7 @@ Note the distinction from "this feature is hard". Difficult problems are difficu
 
 AI builders produce a recognisable structure: screens, forms, records, straightforward relationships. That structure covers an enormous range of products.
 
-It starts to strain when your domain has real complexity — a pricing model with interacting rules, a workflow with states and transitions and permissions that vary per state, calculations that must be provably correct, or data relationships that cannot be expressed as one table per screen.
+It starts to strain when your domain has real complexity - a pricing model with interacting rules, a workflow with states and transitions and permissions that vary per state, calculations that must be provably correct, or data relationships that cannot be expressed as one table per screen.
 
 The tell is that you find yourself explaining the same business rule in several places because there is no single place for it to live. That is a structural mismatch, and no amount of prompting resolves it, because the problem is the absence of an abstraction rather than the presence of a bug.
 
@@ -56,9 +56,9 @@ The tell is that you find yourself explaining the same business rule in several 
 
 Prompt-driven development is a solo activity in a way that is easy to miss until a second person arrives.
 
-Two people prompting independently against the same codebase produce divergent conventions within weeks. There is no shared mental model of the structure, because neither of them authored most of it. Code review becomes strange — reviewing generated code you did not write, for a colleague who also did not write it.
+Two people prompting independently against the same codebase produce divergent conventions within weeks. There is no shared mental model of the structure, because neither of them authored most of it. Code review becomes strange - reviewing generated code you did not write, for a colleague who also did not write it.
 
-Teams that work well in this mode impose structure deliberately: written conventions, a documented data model, tests around what matters, and a habit of consolidating duplication. That is essentially working like an engineering team that uses generation as a drafting tool — which is a fine arrangement, and it means the builder is now one input to your process rather than the process itself.
+Teams that work well in this mode impose structure deliberately: written conventions, a documented data model, tests around what matters, and a habit of consolidating duplication. That is essentially working like an engineering team that uses generation as a drafting tool - which is a fine arrangement, and it means the builder is now one input to your process rather than the process itself.
 
 If you have a second contributor and no such structure, the friction you are feeling is organisational rather than technical.
 
@@ -94,15 +94,15 @@ If the signals are real, the transition does not need to be a single event.
 
 ## When Staying Is Right
 
-You are solo or nearly so, your domain fits the structure, you cannot name a capability you are blocked on, and your customers are not asking questions you cannot answer. In that situation the builder is doing exactly what it should, and the money is better spent on the last-mile work — access control, payments, hosting, monitoring — that has to happen regardless of which tool you edit in.
+You are solo or nearly so, your domain fits the structure, you cannot name a capability you are blocked on, and your customers are not asking questions you cannot answer. In that situation the builder is doing exactly what it should, and the money is better spent on the last-mile work - access control, payments, hosting, monitoring - that has to happen regardless of which tool you edit in.
 
 That is worth emphasising: the production gap is not closed by changing editors. It is closed by building the layer underneath, and that layer is the same whether you prompt it or type it.
 
 ## Getting the Transition Done Without Losing a Month
 
-LaunchStudio does this as a defined piece of work rather than an open-ended migration: repository and history in your name, the application made runnable with explicit configuration, a deployment pipeline with staging and rollback, infrastructure moved to where you need it, and the codebase left conventional and documented — deliberately AI-readable, so you can keep prompting against it in Lovable, Bolt or Cursor if that remains the fastest way for you to work.
+LaunchStudio does this as a defined piece of work rather than an open-ended migration: repository and history in your name, the application made runnable with explicit configuration, a deployment pipeline with staging and rollback, infrastructure moved to where you need it, and the codebase left conventional and documented - deliberately AI-readable, so you can keep prompting against it in Lovable, Bolt or Cursor if that remains the fastest way for you to work.
 
-The engineering comes from Manifera, eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. See what [Launch Ready covers](https://launchstudio.eu/en/#packages), or [describe your project](https://launchstudio.eu/en/#contact) and we will tell you honestly whether the signals you are seeing justify moving at all — sometimes the answer is that they do not.
+The engineering comes from Manifera, eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City. See what [Launch Ready covers](https://launchstudio.eu/en/#packages), or [describe your project](https://launchstudio.eu/en/#contact) and we will tell you honestly whether the signals you are seeing justify moving at all - sometimes the answer is that they do not.
 
 ## What the Transition Actually Costs in Time
 
@@ -112,7 +112,7 @@ Founders postpone this decision partly because the cost is unknown, so it is wor
 
 **Setting up a deployment pipeline with staging and rollback** is usually two to four days, depending on how much configuration was implicit in the platform.
 
-**Moving infrastructure** — database region, storage, secrets — is a few days plus a rehearsal, and it is the part where a mistake is visible to users, which is why the rehearsal is not optional.
+**Moving infrastructure** - database region, storage, secrets - is a few days plus a rehearsal, and it is the part where a mistake is visible to users, which is why the rehearsal is not optional.
 
 **Shifting your own working habits** is the longest and least predictable, because it is not engineering. Expect a few weeks of being slower before being faster, and expect to keep reaching for the builder during it, which is fine.
 
@@ -124,7 +124,7 @@ The mistake is treating these as one project that must happen together. They are
 
 Emma Zwart's app, Vakvraag, matched small construction firms with independent inspectors across Gelderland. Built in Lovable, live for seven months, roughly 300 active firms. She had been told twice that she needed to "move to a real codebase" and had budgeted for a rebuild.
 
-The assessment found two of the four signals present and two absent. She could name a blocking capability — a large customer required EU-region hosting and a documented deployment process, neither of which she could produce. And a second developer had joined, with conventions diverging visibly across the codebase. But the domain fitted the generated structure well, and her time was going into genuine product problems rather than into fighting the tool.
+The assessment found two of the four signals present and two absent. She could name a blocking capability - a large customer required EU-region hosting and a documented deployment process, neither of which she could produce. And a second developer had joined, with conventions diverging visibly across the codebase. But the domain fitted the generated structure well, and her time was going into genuine product problems rather than into fighting the tool.
 
 So the work was scoped as a transition rather than a rebuild: repository ownership with full history, explicit build configuration, a deployment pipeline with staging and one-command rollback, database migrated to an EU region with tested restores, written conventions agreed between the two contributors, and the codebase left fully editable in Lovable.
 
@@ -133,9 +133,9 @@ Emma continued building interface work by prompting. Her colleague worked in a c
 **Result:** the customer requirement was met and the contract signed five weeks later. Fourteen months on, the product is still edited in Lovable for interface changes, which Emma describes as the part nobody told her was an option.
 
 > *"Two people told me I had to leave the tool behind. What I actually needed was a deploy pipeline and a hosting region, and I got to keep working the way I like."*
-> — **Emma Zwart, Founder, Vakvraag (Nijmegen)**
+> - **Emma Zwart, Founder, Vakvraag (Nijmegen)**
 
-**Cost & Timeline:** €3,150 (repository ownership, build configuration, pipeline with staging, region migration) — completed in 8 business days.
+**Cost & Timeline:** €3,150 (repository ownership, build configuration, pipeline with staging, region migration) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -149,7 +149,7 @@ Measure it over a fortnight. Time spent expressing what you want is normal; time
 
 ### Can I keep using Lovable after moving to my own pipeline?
 
-Frequently yes, and many founders do — interface work by prompting, backend work in an editor, both deploying through the same pipeline. It requires the codebase to be left conventional and AI-readable, which is worth stating as a requirement.
+Frequently yes, and many founders do - interface work by prompting, backend work in an editor, both deploying through the same pipeline. It requires the codebase to be left conventional and AI-readable, which is worth stating as a requirement.
 
 ### My developer says the generated code must be replaced. Is that a real signal?
 
@@ -185,7 +185,7 @@ No, and this is the most common misconception. Those gaps exist independently of
       "name": "Can I keep using Lovable after moving to my own pipeline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often yes — interface work by prompting, backend work in an editor, both through one pipeline, provided the codebase stays conventional and AI-readable."
+        "text": "Often yes - interface work by prompting, backend work in an editor, both through one pipeline, provided the codebase stays conventional and AI-readable."
       }
     },
     {

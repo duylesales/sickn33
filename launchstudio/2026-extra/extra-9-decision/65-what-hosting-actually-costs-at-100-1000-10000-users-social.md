@@ -1,4 +1,4 @@
-📈 Sander's hosting bill jumped from €40 to €300 in one cycle. He'd watched database costs like a hawk — the real driver was a line item he'd never isolated. 😳
+📈 Sander's hosting bill jumped from €40 to €300 in one cycle. He'd watched database costs like a hawk - the real driver was a line item he'd never isolated. 😳
 
 Hosting cost is line items that each hit a free-tier ceiling at different points, founders discover each by hitting it: 🧠
 
@@ -9,8 +9,8 @@ Hosting cost is line items that each hit a free-tier ceiling at different points
 
 ✅ Estimate line items now, then at 10x users, to see which grow fastest
 ✅ Cache AI queries, use a smaller model, cap usage per user
-✅ A managed platform's higher cost is often right — the alternative costs hours
-✅ Set budget alerts at 50% and 90% — turn a shock into a warning
+✅ A managed platform's higher cost is often right - the alternative costs hours
+✅ Set budget alerts at 50% and 90% - turn a shock into a warning
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, Launch & Grow includes hosting, monitoring, and backups. 📊
 

@@ -33,7 +33,7 @@ Dat verandert het engineeringwerk op manieren die zelden in een functietitel ter
 
 **Latency is een fysieke randvoorwaarde, geen UX-voorkeur.** Als een vision-model een onderdeel moet classificeren terwijl de lijn draait, wordt het budget gemeten in milliseconden en is er geen optie om netjes te degraderen met een laadicoon.
 
-**Data is duur om te verzamelen en vaak schaars.** Je kunt je niet naar een trainingsset A/B-testen wanneer elk gelabeld voorbeeld een fysiek monster en een domeinexpert vereist. Technieken die elders academische curiositeiten zijn — synthetische data, few-shot-benaderingen, zorgvuldige transfer learning — worden hier dagelijkse praktijk.
+**Data is duur om te verzamelen en vaak schaars.** Je kunt je niet naar een trainingsset A/B-testen wanneer elk gelabeld voorbeeld een fysiek monster en een domeinexpert vereist. Technieken die elders academische curiositeiten zijn - synthetische data, few-shot-benaderingen, zorgvuldige transfer learning - worden hier dagelijkse praktijk.
 
 **Falen heeft een kostprijs met een eenheid.** Een verkeerde classificatie is een afgekeurd onderdeel, een ongeplande stilstand of een veiligheidsonderzoek. Modelevaluatie wordt een engineeringdiscipline in plaats van een ranglijst.
 
@@ -47,7 +47,7 @@ Ten eerste komen de titels niet overeen met de zoekopdracht. Een rol die voor ta
 
 Ten tweede zijn veel van de werkgevers industriële of engineeringbedrijven in plaats van techbedrijven. Ze hebben geen employer brand in de techgemeenschap, geen tekstschrijver voor de carrièrepagina en geen wervingsmarketingbudget. Op een platform dat rangschikt op advertentiebudget zijn ze structureel onzichtbaar.
 
-Ten derde is de geografie van de regio verspreid. De relevante werkgevers zitten in Eindhoven, Veldhoven, Helmond, Best, Son, Nuenen en Oss. Een kandidaat die filtert op "Eindhoven" sluit de meeste daarvan per definitie uit — ook wanneer meerdere ervan dichter bij hun woning liggen dan de Eindhovense adressen die wél verschenen.
+Ten derde is de geografie van de regio verspreid. De relevante werkgevers zitten in Eindhoven, Veldhoven, Helmond, Best, Son, Nuenen en Oss. Een kandidaat die filtert op "Eindhoven" sluit de meeste daarvan per definitie uit - ook wanneer meerdere ervan dichter bij hun woning liggen dan de Eindhovense adressen die wél verschenen.
 
 ## Vergelijking: twee manieren om dezelfde regio te doorzoeken
 
@@ -56,7 +56,7 @@ Ten derde is de geografie van de regio verspreid. De relevante werkgevers zitten
 | Stadsfilter "Eindhoven" | Werkgevers met een Eindhovens postadres | Alles in Veldhoven, Helmond, Best, Son, Oss |
 | Trefwoord "machine learning" | Rollen die de term in de titel gebruiken | Vision-, R&D- en procesrollen die inhoudelijk ML zijn |
 | Rangschikking van een algemeen platform | Werkgevers met wervingsbudget | Industriële mkb'ers met één vacature en geen budget |
-| Straal vanaf je eigen adres | Elke AI-rol binnen een reistijd die je accepteert | Niets — dit is de bovenverzameling |
+| Straal vanaf je eigen adres | Elke AI-rol binnen een reistijd die je accepteert | Niets - dit is de bovenverzameling |
 
 De laatste rij is het punt. Afstand is het enige filter dat aansluit op de beslissing die je daadwerkelijk neemt.
 
@@ -80,7 +80,7 @@ OnlyAIJobs is precies voor dit probleem gebouwd. Elke vacature wordt getoond op 
 
 ## Waar te beginnen
 
-Stel een straal in, geen stad. Lees vervolgens de taken in plaats van de titels — in deze regio is de titel het minst informatieve onderdeel van de advertentie.
+Stel een straal in, geen stad. Lees vervolgens de taken in plaats van de titels - in deze regio is de titel het minst informatieve onderdeel van de advertentie.
 
 Bekijk actuele AI-, machine learning- en datarollen in de Brainport-regio op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 

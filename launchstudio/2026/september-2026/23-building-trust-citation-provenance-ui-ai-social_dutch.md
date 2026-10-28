@@ -1,6 +1,6 @@
-🔍 Daniel, een medisch auteur, bouwde een database voor klinisch onderzoek met **Bolt** — maar artsen en onderzoekers twijfelden aan de AI-antwoorden omdat bronverwijzingen ontbraken. 📄
+🔍 Daniel, een medisch auteur, bouwde een database voor klinisch onderzoek met **Bolt** - maar artsen en onderzoekers twijfelden aan de AI-antwoorden omdat bronverwijzingen ontbraken. 📄
 
-De barrière voor enterprise AI-adoptie was nooit intelligentie, maar vertrouwen — en vertrouwen vereist sluitend bewijs. 🧠
+De barrière voor enterprise AI-adoptie was nooit intelligentie, maar vertrouwen - en vertrouwen vereist sluitend bewijs. 🧠
 
 ❌ AI-gegenereerde claims zonder enige mogelijkheid om deze te herleiden naar het brondocument
 ❌ Professionals dwingen handmatig PDF's te doorzoeken om één enkel getal te controleren
@@ -12,7 +12,7 @@ De barrière voor enterprise AI-adoptie was nooit intelligentie, maar vertrouwen
 
 Bij **LaunchStudio** passen we deze methodiek toe voor onderzoeksintensieve organisaties zoals TNO, waar traceerbaarheid van data een harde randvoorwaarde is. 🛡️
 
-Voor Daniel tonen antwoorden nu klikbare bronlinks die direct naar PDF-pagina's verwijzen, waardoor het gebruikersvertrouwen met 90% steeg. (€1.550 (Citation Rendering Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Voor Daniel tonen antwoorden nu klikbare bronlinks die direct naar PDF-pagina's verwijzen, waardoor het gebruikersvertrouwen met 90% steeg. (€1.550 (Citation Rendering Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe u vertrouwen bouwt met een Citation UI: https://launchstudio.eu/nl/blog/building-trust-citation-provenance-ui-ai
 

@@ -9,7 +9,7 @@ Elite enterprises control costs through **Fixed-Velocity Agile**, not Fixed-Pric
 At **Manifera**, we deploy **Autonomous Pods** via our Hybrid Hub (Amsterdam - Vietnam):
 ✅ You pay a predictable, flat OpEx rate for the entire Pod. 💰
 ✅ The Scrum Master guarantees a fixed velocity of Story Points every sprint. 🏃‍♂️
-✅ Quality is mathematically enforced—zero corners cut. 🛡️
+✅ Quality is mathematically enforced - zero corners cut. 🛡️
 
 Stop buying broken promises. Procure predictable engineering velocity! 🚀
 👉 Why CFOs are abandoning fixed-price software contracts: https://www.manifera.com/blog/custom-software-cost

@@ -1,4 +1,4 @@
-🔥 Jeroen built a prototype using **Cursor** — jeroen, a marketing consultant in amsterdam, used **cursor** to build an ai saas that generated seo-optimized blog outlines based on competitor urls, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Jeroen built a prototype using **Cursor** - jeroen, a marketing consultant in amsterdam, used **cursor** to build an ai saas that generated seo-optimized blog outlines based on competitor urls, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Jeroen's application achieved production readiness: Jeroen's platform can now handle hundreds of concurrent users without any manual intervention. With his time freed from infrastructure maintenance, he focused heavily on marketing and scaled his AI SaaS to €1,200 MRR within two months. I was drowning in manual backend tasks. LaunchStudio gave me the infrastructure I needed to actually run a business, not just a prototype. (€2,800 (Launch & Grow package) + €49/month — completed in 10 business days.). 🚀
+Jeroen's application achieved production readiness: Jeroen's platform can now handle hundreds of concurrent users without any manual intervention. With his time freed from infrastructure maintenance, he focused heavily on marketing and scaled his AI SaaS to €1,200 MRR within two months. I was drowning in manual backend tasks. LaunchStudio gave me the infrastructure I needed to actually run a business, not just a prototype. (€2,800 (Launch & Grow package) + €49/month - completed in 10 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/scaling-ai-saas-infrastructure-guide
 

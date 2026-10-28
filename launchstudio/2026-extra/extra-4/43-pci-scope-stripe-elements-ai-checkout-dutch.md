@@ -47,7 +47,7 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 LaunchStudio's ingenieurs, werkend vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, beoordelen betalingsstromen als een standaard onderdeel van het productie-gereed maken van een met AI gegenereerd SaaS-product. Ze vervangen afrekenformulieren met rauwe velden door Stripe Elements of een gehoste afrekening voordat een enkel echt kaartnummer ooit de eigen servers van de app bereikt. Als u niet zeker weet in welke categorie uw huidige afrekening valt, is het de moeite waard om [een beveiligingsbeoordeling met een vaste omvang te krijgen](https://launchstudio.eu/nl/#calculator) voordat het een groter gesprek wordt met een betalingsverwerker of het beveiligingsteam van een zakelijke klant.
 
-## Stripe Elements isoleert het kaartveld — Het beveiligd niet al het andere op de pagina
+## Stripe Elements isoleert het kaartveld - Het beveiligd niet al het andere op de pagina
 
 Het verplaatsen van het verzamelen van kaarten naar Stripe's iframe lost het omvangprobleem op, maar het creëert een vals gevoel dat de afrekenpagina zelf nu het probleem van iemand anders is. Dat is het niet. Een afrekenpagina laadt doorgaans nog steeds andere scripts naast het betalings-iframe – analyse-tags, chat-widgets, een tag-manager-container – en elk van die scripts kan, als het gecompromitteerd is via een toeleveringsketenprobleem of geïnjecteerd is door een aanvaller, knoeien met de pagina rond het iframe, zelfs zonder de rauwe kaartvelden ooit rechtstreeks aan te raken. Deze klasse van aanvallen, algemeen bekend als web skimming, geeft er niet om dat uw kaartgegevens technisch buiten de omvang vallen. Het richt zich op de omringende pagina om indieningen om te leiden, een nepformulier te tonen, of gegevens via een ander middel vast te leggen.
 
@@ -87,9 +87,9 @@ De met AI gegenereerde afrekening had nooit Stripe Elements of een gehoste betal
 LaunchStudio verving de afrekening met rauwe velden door Stripe Elements, waardoor al het verzamelen van kaartgegevens naar Stripe's PCI-nalevende iframe verhuisde zodat het de servers van WinkelKassa überhaupt nooit raakte. We auditeerden ook de bestaande logboeken en bevestigden dat er geen historische kaartgegevens waren opgeslagen. Daarna documenteerden we de nieuwe architectuur zodat Boaz een standaard SAQ A-zelfbeoordeling kon voltooien in plaats van een volledige audit. **Resultaat:** WinkelKassa sloot de retail-deal met nalevingsdocumentatie die een dag kostte om te voltooien in plaats van maanden.
 
 > *"Ik had geen idee dat een afrekenformulier mijn hele app stilletjes kon veranderen in een PCI-risico. Toen het me eenmaal werd uitgelegd, voelde de herstelling bijna te eenvoudig vergeleken met het risico dat het wegnam."*
-> — **Boaz Dekker, Oprichter, WinkelKassa (Goes)**
+> - **Boaz Dekker, Oprichter, WinkelKassa (Goes)**
 
-**Kosten en tijdlijn:** € 1.400 (migratie naar Stripe Elements, audit van logboeken, ondersteuning bij SAQ A-documentatie) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (migratie naar Stripe Elements, audit van logboeken, ondersteuning bij SAQ A-documentatie) - voltooid in 6 werkdagen.
 
 ---
 

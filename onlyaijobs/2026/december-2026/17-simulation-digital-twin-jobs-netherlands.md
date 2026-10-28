@@ -39,7 +39,7 @@ There is a category of Dutch job that pays well, is chronically hard to fill, an
 
 ## What Simulation Work Actually Is
 
-Simulation answers questions that cannot be answered by experiment, either because the experiment is impossible, too expensive or too dangerous. Instead of learning a pattern from data, you encode the mechanism — the physics, the logistics rules, the queueing behaviour — and then run it.
+Simulation answers questions that cannot be answered by experiment, either because the experiment is impossible, too expensive or too dangerous. Instead of learning a pattern from data, you encode the mechanism - the physics, the logistics rules, the queueing behaviour - and then run it.
 
 That is the fundamental difference from mainstream machine learning, and it produces a different working style. A simulation model can answer questions about situations that have never occurred, which a purely data-driven model cannot. In exchange, it requires you to know how the system works, and it must be validated against reality before anyone will act on it.
 
@@ -69,11 +69,11 @@ The interesting frontier is not simulation versus machine learning, but their co
 
 **Calibration.** Simulations have parameters that must be tuned to match measurements. Bayesian calibration quantifies how well they are known, and propagates that uncertainty into predictions.
 
-**Data assimilation.** Continuously updating a model with incoming sensor data so it tracks the real system — the technical core of what people call a digital twin.
+**Data assimilation.** Continuously updating a model with incoming sensor data so it tracks the real system - the technical core of what people call a digital twin.
 
 **Hybrid models.** Using a physics model for the well-understood part and a learned component for what is not, rather than forcing one approach to cover both.
 
-**Simulation as a data generator.** Training models on simulated data when real data is scarce, then handling the reality gap — an approach standard in robotics and increasingly used in industrial vision.
+**Simulation as a data generator.** Training models on simulated data when real data is scarce, then handling the reality gap - an approach standard in robotics and increasingly used in industrial vision.
 
 ## What a Digital Twin Actually Requires
 
@@ -91,7 +91,7 @@ The lesson is standard in simulation practice: models fail not on their mathemat
 
 ## A Common Misconception About Simulation Careers
 
-Many data scientists assume simulation is an old-fashioned engineering discipline with limited prospects. The opposite is true in the Dutch market: as physical infrastructure, manufacturing and energy systems become more instrumented, demand for people who can model mechanisms — not just correlations — is rising, and the supply of such people is small because universities produce far more data scientists than modellers.
+Many data scientists assume simulation is an old-fashioned engineering discipline with limited prospects. The opposite is true in the Dutch market: as physical infrastructure, manufacturing and energy systems become more instrumented, demand for people who can model mechanisms - not just correlations - is rising, and the supply of such people is small because universities produce far more data scientists than modellers.
 
 The second misconception is that simulation requires a physics degree. Discrete event simulation in logistics and healthcare is accessible to anyone with good probability, programming and process analysis skills. The physics-heavy branches do require domain training, but they are a subset of the field.
 
@@ -103,19 +103,19 @@ The second misconception is that simulation requires a physics degree. Discrete 
 - **Uncertainty quantification.** Sensitivity analysis, parameter uncertainty, and communicating ranges instead of single numbers.
 - **Optimisation and experimental design.** Running simulation experiments efficiently rather than brute-forcing scenarios.
 - **Machine learning for surrogates and calibration.** Gaussian processes, neural surrogates, Bayesian methods.
-- **Domain modelling.** Translating an operational process into a model structure — usually by watching the real process, not by reading documentation.
+- **Domain modelling.** Translating an operational process into a model structure - usually by watching the real process, not by reading documentation.
 
 ## How to Build Experience
 
 Build one small but complete simulation of a system you can observe: a supermarket checkout, a bicycle ferry, a hospital outpatient clinic. Collect real timing data, validate the model against it, and document where it fails. A candidate who can show a validation plot and honestly discuss discrepancies is far more convincing than one with a visually impressive animation.
 
-Then add a machine learning layer: train a surrogate on the simulation's outputs and demonstrate the speed-up and the accuracy loss. That combination — mechanism plus learned approximation — is the exact profile many Dutch employers are looking for and cannot find.
+Then add a machine learning layer: train a surrogate on the simulation's outputs and demonstrate the speed-up and the accuracy loss. That combination - mechanism plus learned approximation - is the exact profile many Dutch employers are looking for and cannot find.
 
 ## Career Growth in Simulation and Modelling
 
 Simulation specialists progress towards lead modeller, consultant or technical authority roles, and frequently into project leadership because the work is inherently client- and stakeholder-facing. In product companies, the path can lead into systems architecture, where understanding the whole machine is the point.
 
-The field is also unusually consultancy-friendly: independent simulation specialists are in demand, and reputations travel through sectors that are small and well connected. Long-term, the safest bet is the hybrid profile — someone who can build a mechanistic model, connect it to live data, and accelerate it with machine learning is currently among the scarcest technical profiles in the Netherlands.
+The field is also unusually consultancy-friendly: independent simulation specialists are in demand, and reputations travel through sectors that are small and well connected. Long-term, the safest bet is the hybrid profile - someone who can build a mechanistic model, connect it to live data, and accelerate it with machine learning is currently among the scarcest technical profiles in the Netherlands.
 
 ## Questions Worth Asking in an Interview
 
@@ -133,13 +133,13 @@ Most Dutch simulation work sits in one of two places, and they produce quite dif
 
 **In-house teams** at manufacturers, ports, hospitals or network operators live with the consequences. You model the same system repeatedly, accumulate deep knowledge, and build long-lived tools rather than one-off studies. You also see your predictions tested against reality, which is the fastest way to become genuinely good at this. The costs are narrower scope and, in some organisations, the risk of becoming the person who maintains a model nobody else understands.
 
-A common and sensible career shape is to start in consultancy for breadth, then move in-house for depth — or to alternate. Candidates should ask directly whether a role is study-based or product-based, because job descriptions often obscure the distinction.
+A common and sensible career shape is to start in consultancy for breadth, then move in-house for depth - or to alternate. Candidates should ask directly whether a role is study-based or product-based, because job descriptions often obscure the distinction.
 
 ## The Reality Gap and How Professionals Close It
 
 Every simulation eventually faces the question of whether it resembles the real system closely enough to be trusted. Experienced modellers have a standard toolkit for this, and knowing it marks a candidate as serious.
 
-**Structural validation.** Walk the model through with the people who operate the real system. They will spot missing behaviour within minutes — an exception that happens every Friday, an informal rule nobody documented, a machine that is never actually run at rated speed.
+**Structural validation.** Walk the model through with the people who operate the real system. They will spot missing behaviour within minutes - an exception that happens every Friday, an informal rule nobody documented, a machine that is never actually run at rated speed.
 
 **Historical replay.** Feed the model real historical inputs and compare its outputs against what actually happened. Differences are informative rather than embarrassing.
 
@@ -174,7 +174,7 @@ Not for discrete event simulation in logistics or healthcare; physics-based bran
 Simulation engineer, modelling specialist, consultant logistics, capacity analyst, CAE engineer and research engineer.
 
 ### (Scenario: ML engineer) Is simulation being replaced by machine learning?
-No — the trend is combination: learned surrogates, Bayesian calibration and hybrid models built on top of mechanistic simulations.
+No - the trend is combination: learned surrogates, Bayesian calibration and hybrid models built on top of mechanistic simulations.
 
 ### (Scenario: candidate evaluating a digital twin project) How do I tell a real project from a dashboard?
 Ask about live data connections, who recalibrates the model, and which operational decision consumes its output.
@@ -189,7 +189,7 @@ Consultancy and public-sector projects usually require Dutch; high-tech manufact
   "mainEntity": [
     {"@type": "Question", "name": "Do I need a physics degree for simulation work?", "acceptedAnswer": {"@type": "Answer", "text": "Not for discrete event simulation in logistics or healthcare; physics-based branches do require domain training."}},
     {"@type": "Question", "name": "What job titles should I search for in simulation?", "acceptedAnswer": {"@type": "Answer", "text": "Simulation engineer, modelling specialist, consultant logistics, capacity analyst, CAE engineer and research engineer."}},
-    {"@type": "Question", "name": "Is simulation being replaced by machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "No — the trend is combination through learned surrogates, Bayesian calibration and hybrid models."}},
+    {"@type": "Question", "name": "Is simulation being replaced by machine learning?", "acceptedAnswer": {"@type": "Answer", "text": "No - the trend is combination through learned surrogates, Bayesian calibration and hybrid models."}},
     {"@type": "Question", "name": "How do I tell a real digital twin from a dashboard?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about live data connections, recalibration ownership and which operational decision consumes the output."}},
     {"@type": "Question", "name": "Is Dutch required for simulation jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Consultancy and public-sector projects usually require Dutch; high-tech manufacturing and research often work in English."}}
   ]

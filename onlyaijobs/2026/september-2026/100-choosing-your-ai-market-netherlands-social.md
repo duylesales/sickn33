@@ -1,10 +1,10 @@
-🧭 Most people choose where to work by applying to whatever is advertised and accepting the first reasonable offer. Understandable — and also how people end up five years into a specialisation they didn't choose.
+🧭 Most people choose where to work by applying to whatever is advertised and accepting the first reasonable offer. Understandable - and also how people end up five years into a specialisation they didn't choose.
 
 Four questions that actually determine fit, in this order, and none of them is salary or prestige:
 
-1️⃣ What kind of problem do you want to spend years on? Not which technique — which problem shape. Inferring something unmeasurable from indirect signals. Optimising under constraints that can't be violated. Predicting rare events that mustn't be missed. Coordinating parties who don't share information. These are genuinely different working lives, and technique follows from them rather than the reverse.
+1️⃣ What kind of problem do you want to spend years on? Not which technique - which problem shape. Inferring something unmeasurable from indirect signals. Optimising under constraints that can't be violated. Predicting rare events that mustn't be missed. Coordinating parties who don't share information. These are genuinely different working lives, and technique follows from them rather than the reverse.
 
-2️⃣ How much does your work need to be verifiable? Some sectors have objectives already measured — kilometres saved, yield gained, stock-outs avoided. Others have objectives that are argued. Engineers who need to know whether they succeeded should choose the former, and many discover that preference only after years in the latter.
+2️⃣ How much does your work need to be verifiable? Some sectors have objectives already measured - kilometres saved, yield gained, stock-outs avoided. Others have objectives that are argued. Engineers who need to know whether they succeeded should choose the former, and many discover that preference only after years in the latter.
 
 3️⃣ How much constraint do you want? Regulated environments impose explainability, validation and governance. Some find working within real constraints harder and more interesting than unconstrained optimisation. Others find it suffocating. Temperament question, no correct answer.
 

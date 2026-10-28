@@ -36,7 +36,7 @@ Zes eigenschappen, en elk ervan breekt iets in een typische door AI gebouwde app
 
 **Leeftijd.** Records van vorig jaar, van vóór u een verplichte kolom toevoegde, van vóór u veranderde hoe status werkte. Oude rijen zijn een doorlopend verslag van elke schemabeslissing die u hebt herzien.
 
-**Lastige tekens.** Namen met apostroffen en diakritische tekens — Van 't Hoff, Peña, Müller — die stringverwerking, exports en zoeken breken. Alleen al Nederlandse namen vinden het meeste.
+**Lastige tekens.** Namen met apostroffen en diakritische tekens - Van 't Hoff, Peña, Müller - die stringverwerking, exports en zoeken breken. Alleen al Nederlandse namen vinden het meeste.
 
 **Leegte.** Optionele velden die niemand invulde, relaties die naar verwijderde dingen verwijzen, half afgemaakte records die halverwege een formulier zijn achtergelaten.
 
@@ -48,7 +48,7 @@ Een seedset die alle zes bevat, vangt meer fouten dan welke hoeveelheid extra te
 
 Maak van uw seed een script, ingecheckt, dat een database in één commando van leeg naar bruikbaar brengt.
 
-De waarde is niet alleen dat nieuwe omgevingen snel klaarstaan. Het is dat iedereen — u, een opdrachtnemer, een toekomstige medewerker, een AI-sessie — met dezelfde data werkt, zodat "het werkt bij mij" een betekenisvolle uitspraak wordt in plaats van toeval. En wanneer een fout wordt gevonden, is de oplossing een rij aan de seed toe te voegen die haar reproduceert, wat betekent dat ze nooit ongemerkt kan terugkeren.
+De waarde is niet alleen dat nieuwe omgevingen snel klaarstaan. Het is dat iedereen - u, een opdrachtnemer, een toekomstige medewerker, een AI-sessie - met dezelfde data werkt, zodat "het werkt bij mij" een betekenisvolle uitspraak wordt in plaats van toeval. En wanneer een fout wordt gevonden, is de oplossing een rij aan de seed toe te voegen die haar reproduceert, wat betekent dat ze nooit ongemerkt kan terugkeren.
 
 Houd het deterministisch. Willekeurige generatoren die bij elke run andere data opleveren, maken mislukkingen onreproduceerbaar, het tegenovergestelde van waar een seed voor is. Vaste identificaties, vaste waarden, vaste datums ten opzichte van een bekend referentiepunt.
 
@@ -58,11 +58,11 @@ En geef haar een vaste set accounts met bekende rollen: een beheerder, een gewon
 
 Seeddata is juist voor ontwikkeling. Staging is waar u de echte vormen wilt, omdat het de laatste plek is om te merken dat de eigenaardige data van een klant de nieuwe functie breekt.
 
-Laat staging nooit naar de productiedatabase wijzen. Het is één verkeerde delete verwijderd van een incident, en het betekent dat testmails naar echte klanten gaan — een fout die bijna elk bedrijf precies één keer maakt.
+Laat staging nooit naar de productiedatabase wijzen. Het is één verkeerde delete verwijderd van een incident, en het betekent dat testmails naar echte klanten gaan - een fout die bijna elk bedrijf precies één keer maakt.
 
 Kopieer in plaats daarvan productie en anonimiseer haar. Vervang namen, e-mailadressen, telefoonnummers en adressen door gegenereerde waarden, schoon vrije-tekstvelden op die van alles kunnen bevatten, en maak elk e-mailadres onschadelijk zodat niets een echt persoon kan bereiken. Behoud de structuur: dezelfde aantallen rijen, dezelfde verdeling, dezelfde leeftijden, dezelfde relaties.
 
-Twee regels maken dit veilig in plaats van toneelspel. Anonimiseer tijdens het kopiëren, niet erna — een stagingdatabase die twintig minuten echt is, is een echte database. En behandel het resultaat als nog steeds gevoelig: het heeft de vorm van productie, wat op zichzelf informatief is, dus het verdient dezelfde toegangscontrole.
+Twee regels maken dit veilig in plaats van toneelspel. Anonimiseer tijdens het kopiëren, niet erna - een stagingdatabase die twintig minuten echt is, is een echte database. En behandel het resultaat als nog steeds gevoelig: het heeft de vorm van productie, wat op zichzelf informatief is, dus het verdient dezelfde toegangscontrole.
 
 ## De Velden Die Mensen Vergeten te Anonimiseren
 
@@ -70,7 +70,7 @@ Reviews van anonimiseringsscripts vinden steeds dezelfde missers.
 
 Vrije-tekstnotities, die alles bevatten wat een gebruiker typte en in de meeste producten de rijkste bron van persoonsgegevens zijn. De inhoud van geüploade bestanden, die meestal helemaal niet wordt meegenomen. Audit- en eventlogs die vastleggen wie wat deed. Opgeslagen e-mailteksten uit uw meldingsgeschiedenis. Externe identificaties zoals klant-ID's bij de betaalprovider, die een nepnaam terugkoppelen aan een echt persoon in het systeem van een ander. En back-ups van de stagingdatabase, die stilletjes bewaren wat er stond voordat u het script verbeterde.
 
-De test die u moet toepassen: kies drie klanten die u kent in de geanonimiseerde kopie en probeer ze te herkennen. Lukt dat, dan is het niet geanonimiseerd — dan is het hernoemd.
+De test die u moet toepassen: kies drie klanten die u kent in de geanonimiseerde kopie en probeer ze te herkennen. Lukt dat, dan is het niet geanonimiseerd - dan is het hernoemd.
 
 ## Maak Versturen Onmogelijk, Niet Onwaarschijnlijk
 
@@ -84,7 +84,7 @@ De mislukking die dit voorkomt, is specifiek en gedenkwaardig: een stagingrun va
 
 ## Snapshots Maken Alles Goedkoop
 
-Zodra seeden bestaat, voeg dan de mogelijkheid toe om snel een bekende toestand te herstellen — een database-snapshot waarnaar u in seconden kunt terugzetten.
+Zodra seeden bestaat, voeg dan de mogelijkheid toe om snel een bekende toestand te herstellen - een database-snapshot waarnaar u in seconden kunt terugzetten.
 
 Dit verandert hoe u werkt meer dan het klinkt. Destructieve wijzigingen worden veilig om te proberen. Een migratie kan worden uitgevoerd, bekeken, teruggedraaid en opnieuw uitgevoerd. Het reproduceren van de fout van een klant wordt een kwestie van de snapshot herstellen in plaats van een zorgvuldige reeks klikken die u niet verkeerd mag doen.
 
@@ -104,9 +104,9 @@ De lastigste supporttickets zijn die waarin een klant iets beschrijft wat uw pro
 
 Bijna altijd is het verschil hun data. Ze hebben een record met een ongebruikelijke combinatie van velden, een relatie die niet zou moeten bestaan, of een volume dat verandert welk codepad wordt uitgevoerd. Gissen is traag; kopiëren is snel.
 
-Bouw de mogelijkheid om de data van één account uit productie te halen — geanonimiseerd, structureel compleet, met alles waarnaar het verwijst — en die naast uw gewone seed in een ontwikkeldatabase te laden. Eén commando, de eerste keer tien minuten werk, en het verschil tussen een fout in een minuut reproduceren en er een middag over speculeren.
+Bouw de mogelijkheid om de data van één account uit productie te halen - geanonimiseerd, structureel compleet, met alles waarnaar het verwijst - en die naast uw gewone seed in een ontwikkeldatabase te laden. Eén commando, de eerste keer tien minuten werk, en het verschil tussen een fout in een minuut reproduceren en er een middag over speculeren.
 
-Twee voorwaarden houden het eerlijk. De extractie moet op dezelfde manier worden geanonimiseerd als staging, omdat het anders productiedata op een laptop is. En ze moet worden verwijderd wanneer het onderzoek klaar is, in plaats van zich op te stapelen in een map met oude klantexports — precies zo komt een bedrijf aan persoonsgegevens waarvan het niet kan verantwoorden waarom het ze heeft.
+Twee voorwaarden houden het eerlijk. De extractie moet op dezelfde manier worden geanonimiseerd als staging, omdat het anders productiedata op een laptop is. En ze moet worden verwijderd wanneer het onderzoek klaar is, in plaats van zich op te stapelen in een map met oude klantexports - precies zo komt een bedrijf aan persoonsgegevens waarvan het niet kan verantwoorden waarom het ze heeft.
 
 Voor producten met een supportverplichting is dit bijna onmisbaar. Een fout die u niet kunt reproduceren, is een fout die u oplost door te gissen, en gissen met productiedata is hoe het tweede incident ontstaat terwijl u het eerste oplost.
 
@@ -114,7 +114,7 @@ Voor producten met een supportverplichting is dit bijna onmisbaar. Een fout die 
 
 Voor een bestaand product kost dit doorgaans één tot twee dagen: een deterministisch seedscript in de repository dat volume, ongelijke verdeling, historische rijen, lastige tekens, lege velden en uitersten dekt; een vaste set testaccounts inclusief een tweede organisatie voor isolatiecontroles; een anonimiseringsscript dat elk veld met persoonsgegevens dekt, inclusief vrije tekst, logs, bestanden en externe identificaties; een stagingvernieuwing die tijdens het kopiëren anonimiseert; harde preventie van uitgaande e-mail en aanroepen naar derden buiten productie; snapshot en herstel voor snel terugzetten; en beide scripts gekoppeld aan uw controles zodat ze niet kunnen verouderen.
 
-LaunchStudio richt dit in als onderdeel van productieklaar maken, en het is meestal de wijziging die elke volgende wijziging veiliger maakt. De engineers zijn van Manifera — elf jaar, 160+ projecten, en stagingomgevingen die geen klanten mailen.
+LaunchStudio richt dit in als onderdeel van productieklaar maken, en het is meestal de wijziging die elke volgende wijziging veiliger maakt. De engineers zijn van Manifera - elf jaar, 160+ projecten, en stagingomgevingen die geen klanten mailen.
 
 [Vraag ons waarmee uw stagingomgeving is verbonden](https://launchstudio.eu/nl/#contact). Het antwoord is soms alarmerend.
 
@@ -128,14 +128,14 @@ Haar ontwikkeldatabase had 30 deelnemers, allemaal door haar aangemaakt, allemaa
 
 Degene die het probleem uiteindelijk afdwong, was de certificaatexport. Een trainingsaanbieder in Limburg gaf een cursus met deelnemers die Müller, Peña en Van 't Hoff heetten. De export maakte een CSV waarin die drie rijen misvormd waren, wat de aanbieder pas ontdekte nadat 84 certificaten naar een zakelijke klant waren gestuurd, waarvan drie leeg. Vanuit het perspectief van de klant was het de fout van de aanbieder.
 
-Twee werkdagen: een seedscript met 4.000 deelnemers verdeeld over twaalf aanbieders met een bewust ongelijke verdeling — één aanbieder met 2.600 ervan; namen met apostroffen, diakritische tekens en een bedrijfsnaam van 180 tekens; records gedateerd over twee jaar, waarvan sommige van vóór twee schemawijzigingen; 15 procent met lege optionele velden en een handvol met verwijzingen naar niet-bestaande records; vier testaccounts op naam, inclusief een tweede aanbieder voor isolatiecontroles en één gedeactiveerde gebruiker; een stagingvernieuwing die productie kopieert en tijdens het kopiëren anonimiseert, voor deelnemers, vrije-tekstnotities, geüploade certificaten, auditlogs en identificaties bij de betaalprovider; e-mailgegevens volledig verwijderd uit staging, met elk adres herschreven naar een opvangdomein; en een lokale snapshot en herstel die vier seconden duren.
+Twee werkdagen: een seedscript met 4.000 deelnemers verdeeld over twaalf aanbieders met een bewust ongelijke verdeling - één aanbieder met 2.600 ervan; namen met apostroffen, diakritische tekens en een bedrijfsnaam van 180 tekens; records gedateerd over twee jaar, waarvan sommige van vóór twee schemawijzigingen; 15 procent met lege optionele velden en een handvol met verwijzingen naar niet-bestaande records; vier testaccounts op naam, inclusief een tweede aanbieder voor isolatiecontroles en één gedeactiveerde gebruiker; een stagingvernieuwing die productie kopieert en tijdens het kopiëren anonimiseert, voor deelnemers, vrije-tekstnotities, geüploade certificaten, auditlogs en identificaties bij de betaalprovider; e-mailgegevens volledig verwijderd uit staging, met elk adres herschreven naar een opvangdomein; en een lokale snapshot en herstel die vier seconden duren.
 
-**Resultaat:** de exportfout werd bij de eerste run van de nieuwe seed gereproduceerd, samen met twee andere die niemand had gemeld — een lijstpagina die vastliep voor de grootste aanbieder en een zoekfunctie die diakritische tekens volledig miste. Het aantal supporttickets dat aan de vorm van data te wijten was, daalde in het kwartaal daarna van zo'n drie per week naar twee.
+**Resultaat:** de exportfout werd bij de eerste run van de nieuwe seed gereproduceerd, samen met twee andere die niemand had gemeld - een lijstpagina die vastliep voor de grootste aanbieder en een zoekfunctie die diakritische tekens volledig miste. Het aantal supporttickets dat aan de vorm van data te wijten was, daalde in het kwartaal daarna van zo'n drie per week naar twee.
 
 > *"Ik had alles getest. Ik had het alleen getest met dertig mensen die ik had verzonnen, die allemaal Jan heetten en zich allemaal afgelopen dinsdag hadden aangemeld."*
-> — **Sanne Verkerk, Oprichter, Deelnemerslijst (Venlo)**
+> - **Sanne Verkerk, Oprichter, Deelnemerslijst (Venlo)**
 
-**Kosten & Doorlooptijd:** €2.300 (seedscript met realistische verdeling en randgevallen, testaccounts, anonimisering voor staging inclusief vrije tekst en logs, preventie van uitgaand verkeer, snapshot en herstel, koppeling aan CI) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €2.300 (seedscript met realistische verdeling en randgevallen, testaccounts, anonimisering voor staging inclusief vrije tekst en logs, preventie van uitgaand verkeer, snapshot en herstel, koppeling aan CI) - afgerond in 2 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -193,7 +193,7 @@ Twee lagen: geen inloggegevens voor uw echte e-mailprovider in die omgeving, en 
       "name": "Moet seeddata willekeurig worden gegenereerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — deterministische data betekent dat mislukkingen reproduceren. Willekeurige generatie levert fouten op die één keer verschijnen en niet te onderzoeken zijn."
+        "text": "Nee - deterministische data betekent dat mislukkingen reproduceren. Willekeurige generatie levert fouten op die één keer verschijnen en niet te onderzoeken zijn."
       }
     },
     {

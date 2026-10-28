@@ -7,14 +7,14 @@ A rising bill is a lagging signal, not proof you've outgrown your platform: 💰
 ❌ A full database export-and-import loses any writes made during the copy
 ❌ Decommissioning the old environment right after cutover removes your fallback when you need it
 
-✅ Check for real structural ceilings — connection limits, timeouts, cold starts — not just cost
+✅ Check for real structural ceilings - connection limits, timeouts, cold starts - not just cost
 ✅ A cheaper tier or a config change often solves what feels like an architecture problem
 ✅ Replicate the database live rather than a one-time export before any traffic cutover
 ✅ Keep the old environment running 48–72 hours after cutover as a genuine fallback
 
 At **LaunchStudio**, backed by Manifera's enterprise-grade migration discipline, we run zero-downtime moves most solo founders only ever attempt once. 🧱
 
-His result: connection pooling and one fixed query cut Niels's bill to roughly €180 and eliminated the errors entirely — no migration, no downtime risk, no lost weekend. 🚀
+His result: connection pooling and one fixed query cut Niels's bill to roughly €180 and eliminated the errors entirely - no migration, no downtime risk, no lost weekend. 🚀
 
 👉 Send us your prototype link for free feedback on your hosting bill: https://launchstudio.eu/en/blog/outgrowing-managed-hosting-when-and-how-to-move
 

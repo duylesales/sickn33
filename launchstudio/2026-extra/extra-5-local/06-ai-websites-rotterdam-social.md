@@ -5,7 +5,7 @@ An AI website builder gives you a polished site. It doesn't give you a compliant
 ❌ The cookie banner displayed but did nothing to actually block tracking scripts pre-consent
 ❌ There was no data processing agreement available for business customers
 ❌ The gap surfaced during a client's own vendor compliance review, not before
-❌ B2B buyers in logistics notice these gaps fast — and they say something
+❌ B2B buyers in logistics notice these gaps fast - and they say something
 
 ✅ Implement consent management that genuinely blocks non-essential scripts pre-consent
 ✅ Add the missing security headers (Content-Security-Policy, X-Frame-Options)

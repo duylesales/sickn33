@@ -41,7 +41,7 @@ Somewhere in a Dutch AI professional's inbox, right now, there is a message from
 
 In the Netherlands, recruitment agencies are paid by employers or clients, never by candidates. For permanent placements, contingency agencies typically earn a fee when a candidate they presented is hired; retained searches are paid partly in advance. Secondment firms employ you and place you with a client, earning a margin on your hours.
 
-None of this makes recruiters untrustworthy — good specialist recruiters build careers on reputation in a small market. But it explains predictable behaviour. Contingency recruiters prioritise vacancies they expect to fill quickly, present candidates to several clients at once and sometimes push for speed. Their incentive is a placement, which usually aligns with your interests and occasionally does not.
+None of this makes recruiters untrustworthy - good specialist recruiters build careers on reputation in a small market. But it explains predictable behaviour. Contingency recruiters prioritise vacancies they expect to fill quickly, present candidates to several clients at once and sometimes push for speed. Their incentive is a placement, which usually aligns with your interests and occasionally does not.
 
 A job board has no stake in which role you take. It shows listings; you decide. That is a weaker service and a stronger guarantee.
 
@@ -50,7 +50,7 @@ A job board has no stake in which role you take. It shows listings; you decide. 
 | Dimension | Recruitment agency | Job board (direct application) |
 |---|---|---|
 | Access to unadvertised roles | Yes, a genuine advantage | No |
-| Control over where your CV goes | Limited — you must set the rules | Full |
+| Control over where your CV goes | Limited - you must set the rules | Full |
 | Market information | Often good, on salaries and processes | You research yourself |
 | Interview preparation | Frequently offered | Your own responsibility |
 | Negotiation support | Yes, with aligned but not identical interests | You negotiate directly |
@@ -81,7 +81,7 @@ A job board has no stake in which role you take. It shows listings; you decide. 
 
 **Direct communication.** Questions go to the hiring manager, not through a third party who summarises.
 
-**Address-level location.** On OnlyAIJobs, each vacancy shows where the employer actually is, with the distance from your home — information an intermediary often gives you only after the process starts.
+**Address-level location.** On OnlyAIJobs, each vacancy shows where the employer actually is, with the distance from your home - information an intermediary often gives you only after the process starts.
 
 ## What to Ask Before Working With an Agency
 
@@ -106,7 +106,7 @@ If you join through a secondment firm, check the contract before signing. Client
 
 For temporary assignments the balance shifts. Interim and freelance work in the Netherlands often flows through intermediaries who hold framework agreements with clients, which means a large part of that market is genuinely difficult to reach directly. If you work as a self-employed professional, maintaining relationships with two or three specialised intermediaries is closer to a necessity than a choice.
 
-The considerations are different too. Rates rather than salaries, assignment length and extension prospects, the margin the intermediary takes, and how your working relationship is assessed for tax and employment purposes all matter. Dutch rules on the working relationship between clients and self-employed professionals have been tightened and enforcement has resumed, so the way an assignment is organised in practice — not just what the contract says — affects both parties.
+The considerations are different too. Rates rather than salaries, assignment length and extension prospects, the margin the intermediary takes, and how your working relationship is assessed for tax and employment purposes all matter. Dutch rules on the working relationship between clients and self-employed professionals have been tightened and enforcement has resumed, so the way an assignment is organised in practice - not just what the contract says - affects both parties.
 
 For permanent roles, by contrast, the argument for going direct is stronger, because advertised vacancies are visible to you anyway and an intermediary adds a layer without adding access.
 
@@ -114,9 +114,9 @@ For permanent roles, by contrast, the argument for going direct is stronger, bec
 
 Understanding how an intermediary evaluates you helps whichever route you choose.
 
-A specialist recruiter typically scans for three things in under a minute: whether your recent experience matches the assignment's core requirement, whether your seniority fits the band the client agreed, and whether anything in your history needs explaining — short tenures, gaps, a change of field. Everything else is secondary at that stage.
+A specialist recruiter typically scans for three things in under a minute: whether your recent experience matches the assignment's core requirement, whether your seniority fits the band the client agreed, and whether anything in your history needs explaining - short tenures, gaps, a change of field. Everything else is secondary at that stage.
 
-Two consequences follow. First, your most relevant experience must be visible in the top third of the first page; a chronological CV that buries the matching role on page two works against you. Second, it pays to state plainly what you are looking for — role type, seniority, maximum travel distance — because recruiters filter their own pipelines by those criteria and will otherwise guess.
+Two consequences follow. First, your most relevant experience must be visible in the top third of the first page; a chronological CV that buries the matching role on page two works against you. Second, it pays to state plainly what you are looking for - role type, seniority, maximum travel distance - because recruiters filter their own pipelines by those criteria and will otherwise guess.
 
 If you also search directly, the same principle applies to hiring managers, who read with less time and more domain knowledge: they look for evidence that you have done the specific thing the role needs.
 
@@ -126,7 +126,7 @@ If you also search directly, the same principle applies to hiring managers, who 
 
 A data scientist in Zwolle starts a search while employed. She registers with two specialist agencies and also browses a job board by category and distance in the evenings.
 
-The agencies move quickly. Within two weeks she has three introductions, all in the Randstad, two of them secondment constructions she had not expected. One recruiter presses for a decision on an interview within a day. Meanwhile, her own searching surfaces three roles within thirty minutes of home — a regional insurer, a logistics company and a hospital — none of which any agency mentioned, because none had those assignments.
+The agencies move quickly. Within two weeks she has three introductions, all in the Randstad, two of them secondment constructions she had not expected. One recruiter presses for a decision on an interview within a day. Meanwhile, her own searching surfaces three roles within thirty minutes of home - a regional insurer, a logistics company and a hospital - none of which any agency mentioned, because none had those assignments.
 
 She keeps both routes but changes the rules. She tells both agencies which companies she has already approached directly, requires permission per submission and asks for salary ranges before any introduction. In the end she accepts a role she found herself, twenty minutes from home. One of the recruiters stays in her network and later becomes a useful source of market information.
 
@@ -134,7 +134,7 @@ She keeps both routes but changes the rules. She tells both agencies which compa
 
 The quickest way to judge an intermediary is to notice what they want to know. A recruiter who asks only about your availability, your current salary and your notice period is filling a slot. Under the EU Pay Transparency Directive, asking about pay history is in any case prohibited, so that question alone tells you something.
 
-A recruiter worth working with asks about the substance of your work: which parts of the last project you owned, what you would want more or less of, which technologies you actually enjoy, how far you are willing to travel and what would make you decline an otherwise attractive offer. They ask about your constraints — care responsibilities, hybrid preferences, contract type — because those determine whether a placement lasts.
+A recruiter worth working with asks about the substance of your work: which parts of the last project you owned, what you would want more or less of, which technologies you actually enjoy, how far you are willing to travel and what would make you decline an otherwise attractive offer. They ask about your constraints - care responsibilities, hybrid preferences, contract type - because those determine whether a placement lasts.
 
 They also tell you things without being asked: why the role is open, what happened to the previous person, how the team is organised, where the process typically stalls. That information is the actual product a good recruiter sells, and it is worth more than speed.
 
@@ -174,7 +174,7 @@ They should not. Insist on written permission per company, and keep your own lis
 With secondment you are employed by the intermediary and placed with a client; check Waadi registration, contract terms and any client non-solicitation clause.
 
 ### (Scenario: candidate deciding how to apply) If I found the vacancy myself, should I still go through a recruiter?
-Usually not — applying directly keeps control with you and adds no benefit, unless the recruiter offers something specific such as insider process knowledge.
+Usually not - applying directly keeps control with you and adds no benefit, unless the recruiter offers something specific such as insider process knowledge.
 
 ### (Scenario: candidate seeking salary information) Will I learn the salary earlier through an agency?
 Often, and under the EU Pay Transparency Directive employers must provide pay information before the interview regardless of the channel.
@@ -184,10 +184,10 @@ Often, and under the EU Pay Transparency Directive employers must provide pay in
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I pay anything to work with a recruitment agency?", "acceptedAnswer": {"@type": "Answer", "text": "No — employers or clients pay recruitment fees in the Netherlands."}},
+    {"@type": "Question", "name": "Do I pay anything to work with a recruitment agency?", "acceptedAnswer": {"@type": "Answer", "text": "No - employers or clients pay recruitment fees in the Netherlands."}},
     {"@type": "Question", "name": "Can an agency send my CV without asking me?", "acceptedAnswer": {"@type": "Answer", "text": "They should not; require written permission per company and track your applications."}},
     {"@type": "Question", "name": "What is the difference between a direct job and secondment?", "acceptedAnswer": {"@type": "Answer", "text": "With secondment the intermediary employs you and places you with a client; check Waadi registration and contract clauses."}},
-    {"@type": "Question", "name": "If I found the vacancy myself, should I still go through a recruiter?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — applying directly keeps control with you."}},
+    {"@type": "Question", "name": "If I found the vacancy myself, should I still go through a recruiter?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - applying directly keeps control with you."}},
     {"@type": "Question", "name": "Will I learn the salary earlier through an agency?", "acceptedAnswer": {"@type": "Answer", "text": "Often, and pay transparency rules require pay information before the interview anyway."}}
   ]
 }

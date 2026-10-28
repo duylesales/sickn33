@@ -41,7 +41,7 @@ A well-established rule of thumb in software engineering is that **initial devel
 
 If you squeeze the CapEx (by hiring the absolute cheapest, fastest offshore agency), you mathematically inflate the OpEx. The agency will cut corners on architecture, security, and database normalization to hit the €50,000 budget. They deliver the code, cash the check, and leave you to pay the OpEx bill for the next five years.
 
-If a software agency gives you a cheap initial quote, they are not necessarily saving you money — they may simply be shifting the cost from the development phase, where it is visible and easy to compare across vendors, to the maintenance phase, where they (or your internal team) will pay premium rates to work around the technical debt that cheap quote required them to create.
+If a software agency gives you a cheap initial quote, they are not necessarily saving you money - they may simply be shifting the cost from the development phase, where it is visible and easy to compare across vendors, to the maintenance phase, where they (or your internal team) will pay premium rates to work around the technical debt that cheap quote required them to create.
 
 ## The Hidden Components of OpEx (The 80%)
 
@@ -87,7 +87,7 @@ Return to the opening scenario: Agency A at €50,000, Agency B at €60,000, an
 - Security/compliance remediation: largely avoided because secure-by-design architecture is part of the original scope, not a retrofit; budget a smaller ongoing compliance review cost of roughly €5,000-€10,000/year, or €25,000-€50,000 over 5 years.
 - **Illustrative 5-year total: roughly €155,000-€230,000**, against an initial quote of €80,000.
 
-The gap between the two totals — commonly €250,000-€460,000 on a project of this size — dwarfs the €30,000 difference in the original quotes. This is not a claim that every project will land on these exact figures; the ranges depend heavily on traffic scale, industry, and compliance regime. It is a demonstration of the mechanism: the CFO who selects Agency A because it is €30,000 cheaper on paper is not saving €30,000, they are deferring a much larger bill and moving it from a budget line they can negotiate (a fixed-price development contract) to one they cannot (emergency remediation, cloud overages, and change-request fees billed after the fact, often at a worse hourly rate than the original quote).
+The gap between the two totals - commonly €250,000-€460,000 on a project of this size - dwarfs the €30,000 difference in the original quotes. This is not a claim that every project will land on these exact figures; the ranges depend heavily on traffic scale, industry, and compliance regime. It is a demonstration of the mechanism: the CFO who selects Agency A because it is €30,000 cheaper on paper is not saving €30,000, they are deferring a much larger bill and moving it from a budget line they can negotiate (a fixed-price development contract) to one they cannot (emergency remediation, cloud overages, and change-request fees billed after the fact, often at a worse hourly rate than the original quote).
 
 ## The Manifera TCO Optimization Strategy
 

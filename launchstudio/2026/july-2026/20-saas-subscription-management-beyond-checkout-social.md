@@ -1,4 +1,4 @@
-🔥 Mia built a prototype using **Cursor** — mia, a startup founder, used **cursor** to build a real estate lead generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Mia built a prototype using **Cursor** - mia, a startup founder, used **cursor** to build a real estate lead generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Mia's application achieved production readiness: Mia automated subscription lifecycle updates, preventing feature abuse and reducing churn overhead. (€1,400 (Subscription Ops Package) — production-ready and deployed in 5 business days.). 🚀
+Mia's application achieved production readiness: Mia automated subscription lifecycle updates, preventing feature abuse and reducing churn overhead. (€1,400 (Subscription Ops Package) - production-ready and deployed in 5 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/saas-subscription-management-beyond-checkout
 

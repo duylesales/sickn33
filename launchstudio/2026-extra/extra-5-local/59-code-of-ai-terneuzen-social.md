@@ -1,4 +1,4 @@
-📄 Kevin Maes built DockFlow, a scheduling and documentation tool for freight forwarders working with Terneuzen's port logistics, using Lovable over a few weeks around his day job — when a logistics client's procurement contact asked what security standard DockFlow was held to, Kevin's only answer was "it works well." That stalled the deal. 😳
+📄 Kevin Maes built DockFlow, a scheduling and documentation tool for freight forwarders working with Terneuzen's port logistics, using Lovable over a few weeks around his day job - when a logistics client's procurement contact asked what security standard DockFlow was held to, Kevin's only answer was "it works well." That stalled the deal. 😳
 
 There's no official "code of AI" to point to. That's exactly why a documented review matters more, not less. 🧠
 
@@ -11,7 +11,7 @@ There's no official "code of AI" to point to. That's exactly why a documented re
 ✅ Session and access-control issues fixed
 ✅ A written summary Kevin could hand straight to the client's procurement team
 
-At **LaunchStudio**, we apply Manifera's 160+-project enterprise review standard — including work with Vodafone and TNO — to AI-generated codebases from any major tool. 🛡️
+At **LaunchStudio**, we apply Manifera's 160+-project enterprise review standard - including work with Vodafone and TNO - to AI-generated codebases from any major tool. 🛡️
 
 His result: DockFlow passed its first serious procurement review and signed its first logistics client from Terneuzen's port sector. 🚀
 

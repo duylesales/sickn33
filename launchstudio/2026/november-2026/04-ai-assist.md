@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI Assist Tools Are Not a Substitute for Engineering: What Founders Get Wrong",
-  "description": "AI assist tools accelerate code generation but cannot replace software engineering fundamentals. Why security, architecture, and deployment still require human expertise — and how founders can bridge the gap.",
+  "description": "AI assist tools accelerate code generation but cannot replace software engineering fundamentals. Why security, architecture, and deployment still require human expertise - and how founders can bridge the gap.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -39,7 +39,7 @@ AI assist tools are extraordinary at generating code. They are not engineering t
 
 ## The Difference Between Code Generation and Software Engineering
 
-An AI assist tool generates code that fulfills a prompt. Software engineering ensures that code works reliably under every condition — including conditions nobody anticipated.
+An AI assist tool generates code that fulfills a prompt. Software engineering ensures that code works reliably under every condition - including conditions nobody anticipated.
 
 Consider a simple feature: "Add user registration." Here is what an AI assist tool generates versus what production engineering requires:
 
@@ -66,31 +66,31 @@ The AI assist output takes two minutes. The production engineering takes two day
 
 ### Myth 1: "AI-generated code is secure because AI knows best practices"
 
-AI models are trained on public repositories, including millions of code examples with known vulnerabilities. When you prompt "add authentication," the model draws from patterns it has seen — including insecure patterns. A 2025 Stanford study found that developers using AI assist tools produced significantly more security vulnerabilities than those coding without AI assistance.
+AI models are trained on public repositories, including millions of code examples with known vulnerabilities. When you prompt "add authentication," the model draws from patterns it has seen - including insecure patterns. A 2025 Stanford study found that developers using AI assist tools produced significantly more security vulnerabilities than those coding without AI assistance.
 
 ### Myth 2: "I can fix issues incrementally after launch"
 
-Security and infrastructure are not features you iterate on. An exposed API key does not degrade gracefully — it gets exploited. Missing Row Level Security does not cause a minor inconvenience — it leaks every user's data to every other user. These are binary failures. They either work correctly before launch, or they cause damage after launch.
+Security and infrastructure are not features you iterate on. An exposed API key does not degrade gracefully - it gets exploited. Missing Row Level Security does not cause a minor inconvenience - it leaks every user's data to every other user. These are binary failures. They either work correctly before launch, or they cause damage after launch.
 
 ### Myth 3: "Any developer can production-harden AI-generated code"
 
-Most freelance developers have never worked with AI-generated code structures. The patterns used by Lovable (React with Supabase), Bolt (WebContainers), and Cursor (context-aware generation) are specific to each tool. A developer unfamiliar with these patterns will waste weeks understanding the codebase before they can improve it — and often they will insist on rewriting it entirely.
+Most freelance developers have never worked with AI-generated code structures. The patterns used by Lovable (React with Supabase), Bolt (WebContainers), and Cursor (context-aware generation) are specific to each tool. A developer unfamiliar with these patterns will waste weeks understanding the codebase before they can improve it - and often they will insist on rewriting it entirely.
 
 This is precisely why LaunchStudio exists. The engineering team at [Manifera](https://www.manifera.com/about-us/) has spent years working with AI-generated codebases. They understand Lovable's React patterns, Bolt's code structure, and Cursor's context conventions. They know what to keep and what to replace.
 
 ## What Smart Technical Founders Actually Do
 
-If you have some coding experience — enough to read code and understand what AI tools generate — you are in a strong position. You can evaluate AI output quality, guide the generation process with better prompts, and make informed decisions about what needs professional attention.
+If you have some coding experience - enough to read code and understand what AI tools generate - you are in a strong position. You can evaluate AI output quality, guide the generation process with better prompts, and make informed decisions about what needs professional attention.
 
 The most capital-efficient approach for technical solo founders:
 
-1. **Build the complete frontend with AI assist tools** — Let Lovable or Cursor generate the UI, routing, and component architecture. This is what AI does best.
+1. **Build the complete frontend with AI assist tools** - Let Lovable or Cursor generate the UI, routing, and component architecture. This is what AI does best.
 
-2. **Identify the infrastructure gaps yourself** — Review the generated code for security issues, missing error handling, and client-side operations that should be server-side. Your technical knowledge lets you create a specific scope document.
+2. **Identify the infrastructure gaps yourself** - Review the generated code for security issues, missing error handling, and client-side operations that should be server-side. Your technical knowledge lets you create a specific scope document.
 
-3. **Engage specialized production engineers for the backend** — Rather than spending weeks on infrastructure you build once, let [LaunchStudio](https://launchstudio.eu/en/) handle security hardening, payment integration, and deployment. Fixed pricing means you know the cost before you commit.
+3. **Engage specialized production engineers for the backend** - Rather than spending weeks on infrastructure you build once, let [LaunchStudio](https://launchstudio.eu/en/) handle security hardening, payment integration, and deployment. Fixed pricing means you know the cost before you commit.
 
-4. **Take ownership and continue building** — After launch, you have a clean, documented codebase you can extend with Cursor or any development workflow. LaunchStudio's code is designed to be AI-readable, meaning your AI assist tools work seamlessly with the production infrastructure.
+4. **Take ownership and continue building** - After launch, you have a clean, documented codebase you can extend with Cursor or any development workflow. LaunchStudio's code is designed to be AI-readable, meaning your AI assist tools work seamlessly with the production infrastructure.
 
 Herre Roelevink, who founded Manifera in Amsterdam and has managed engineering teams across the Netherlands, Singapore, and Vietnam for over a decade, designed LaunchStudio specifically for this workflow: *"The smartest founders use AI for speed and professionals for safety. They are not mutually exclusive."*
 
@@ -115,16 +115,16 @@ Marco, a former management consultant in Milan working remotely from Amsterdam, 
 
 The tool worked beautifully for his own consulting practice. Then a mid-size consulting firm with 40 consultants asked to license it. Their requirements: user role management (admin, manager, consultant), team-based template sharing with access controls, audit logging for compliance, and SSO integration with their Azure Active Directory.
 
-Marco spent six weeks trying to implement multi-tenant architecture himself using Cursor. The AI assist tool generated plausible-looking code, but the tenant isolation was superficial — client data could leak between consulting teams through improperly scoped database queries.
+Marco spent six weeks trying to implement multi-tenant architecture himself using Cursor. The AI assist tool generated plausible-looking code, but the tenant isolation was superficial - client data could leak between consulting teams through improperly scoped database queries.
 
 He contacted LaunchStudio after reading a case study on the LaunchStudio website. The Manifera engineering team, working from their Pho Quang Street office in Ho Chi Minh City under European project management from Amsterdam, implemented proper multi-tenant architecture with Row Level Security, Azure AD SSO integration, comprehensive audit logging, and role-based access control. They kept Marco's entire Cursor-built frontend and PDF generation system intact.
 
 **Result:** ProposalForge signed the enterprise license at €2,000/month. Marco now has three enterprise clients generating €6,000/month recurring revenue, directly attributable to the production-grade infrastructure LaunchStudio built.
 
-> *"Cursor helped me build the product. LaunchStudio helped me sell the product. The enterprise features I needed would have taken me six more months alone — they did it in two weeks."*
-> — **Marco Visconti, Founder, ProposalForge (Amsterdam)**
+> *"Cursor helped me build the product. LaunchStudio helped me sell the product. The enterprise features I needed would have taken me six more months alone - they did it in two weeks."*
+> - **Marco Visconti, Founder, ProposalForge (Amsterdam)**
 
-**Cost & Timeline:** €5,500 (Launch & Grow Package) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €5,500 (Launch & Grow Package) - production-ready and deployed in 14 business days.
 
 ---
 
@@ -148,7 +148,7 @@ A fractional CTO provides strategic guidance but usually does not write producti
 
 ### (Scenario: Founder worried about AI-generated code becoming technical debt) Will LaunchStudio's changes make my codebase harder for AI tools to understand?
 
-No. LaunchStudio specifically writes AI-readable code — clean patterns, consistent naming, thorough documentation. The engineering team at Manifera designs every modification to remain compatible with Lovable, Cursor, and Bolt, so you can continue using AI assist tools after launch without friction.
+No. LaunchStudio specifically writes AI-readable code - clean patterns, consistent naming, thorough documentation. The engineering team at Manifera designs every modification to remain compatible with Lovable, Cursor, and Bolt, so you can continue using AI assist tools after launch without friction.
 
 <script type="application/ld+json">
 {
@@ -192,7 +192,7 @@ No. LaunchStudio specifically writes AI-readable code — clean patterns, consis
       "name": "Will LaunchStudio's changes make my codebase harder for AI tools to understand?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. LaunchStudio specifically writes AI-readable code — clean patterns, consistent naming, thorough documentation. The engineering team at Manifera designs every modification to remain compatible with Lovable, Cursor, and Bolt, so you can continue using AI assist tools after launch without friction."
+        "text": "No. LaunchStudio specifically writes AI-readable code - clean patterns, consistent naming, thorough documentation. The engineering team at Manifera designs every modification to remain compatible with Lovable, Cursor, and Bolt, so you can continue using AI assist tools after launch without friction."
       }
     }
   ]

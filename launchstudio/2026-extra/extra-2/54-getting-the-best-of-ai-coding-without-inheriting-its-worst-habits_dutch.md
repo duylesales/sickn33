@@ -65,21 +65,21 @@ Manifera's beoordelingen van sessiebeveiliging worden uitgevoerd door het engine
 
 Voor een oprichter of bureau-eigenaar zonder diepe beveiligingsachtergrond kunnen 'cookie-vlaggen' abstract klinken. Afzonderlijk bekeken is elke vlag echter een specifiek, begrijpelijk antwoord op een heel concrete beveiligingsvraag.
 
-**1. HttpOnly — kan JavaScript op de pagina dit cookie uitlezen?**
+**1. HttpOnly - kan JavaScript op de pagina dit cookie uitlezen?**
 
-Zonder deze vlag kan elk script dat in de browser draait — inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerde XSS-kwetsbaarheid elders in de app — het sessiecookie rechtstreeks uitlezen via `document.cookie` en de waarde naar een externe server sturen. Met `HttpOnly` ingeschakeld wordt het cookie uitsluitend automatisch door de browser meegestuurd in HTTP-verzoeken naar de backend; geen enkel script op de pagina, kwaadaardig of legitiem, kan de inhoud ervan ooit inzien.
+Zonder deze vlag kan elk script dat in de browser draait - inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerde XSS-kwetsbaarheid elders in de app - het sessiecookie rechtstreeks uitlezen via `document.cookie` en de waarde naar een externe server sturen. Met `HttpOnly` ingeschakeld wordt het cookie uitsluitend automatisch door de browser meegestuurd in HTTP-verzoeken naar de backend; geen enkel script op de pagina, kwaadaardig of legitiem, kan de inhoud ervan ooit inzien.
 
-**2. Secure — wordt dit cookie ooit over een onbeveiligde verbinding verzonden?**
+**2. Secure - wordt dit cookie ooit over een onbeveiligde verbinding verzonden?**
 
-Zonder deze vlag kan het cookie technisch gezien worden verzonden over een onversleutelde HTTP-verbinding als die ooit optreedt — door een verkeerd geconfigureerde redirect, een verouderde link of een tussenliggend netwerk dat verkeer afluistert. Met de vlag `Secure` weigert de browser resoluut om het cookie te verzenden tenzij de verbinding volledig versleuteld is via HTTPS, waardoor dat specifieke lek volledig wordt afgesloten.
+Zonder deze vlag kan het cookie technisch gezien worden verzonden over een onversleutelde HTTP-verbinding als die ooit optreedt - door een verkeerd geconfigureerde redirect, een verouderde link of een tussenliggend netwerk dat verkeer afluistert. Met de vlag `Secure` weigert de browser resoluut om het cookie te verzenden tenzij de verbinding volledig versleuteld is via HTTPS, waardoor dat specifieke lek volledig wordt afgesloten.
 
-**3. SameSite — wordt dit cookie meegestuurd bij verzoeken vanaf een andere website?**
+**3. SameSite - wordt dit cookie meegestuurd bij verzoeken vanaf een andere website?**
 
-Zonder een passende `SameSite`-instelling kan een kwaadaardige website die een gebruiker in een ander browsertabblad opent, verzoeken initiëren die het sessiecookie van het slachtoffer meedragen naar uw applicatie zonder diens medeweten — een ontwerpfout genaamd Cross-Site Request Forgery (CSRF). Een correct geconfigureerde SameSite-waarde (zoals `SameSite=Lax`) beperkt exact wanneer het cookie aan externe verzoeken wordt gekoppeld en sluit misbruik betrouwbaar uit.
+Zonder een passende `SameSite`-instelling kan een kwaadaardige website die een gebruiker in een ander browsertabblad opent, verzoeken initiëren die het sessiecookie van het slachtoffer meedragen naar uw applicatie zonder diens medeweten - een ontwerpfout genaamd Cross-Site Request Forgery (CSRF). Een correct geconfigureerde SameSite-waarde (zoals `SameSite=Lax`) beperkt exact wanneer het cookie aan externe verzoeken wordt gekoppeld en sluit misbruik betrouwbaar uit.
 
 **Waarom AI-codeertools het cookie zelf vaak wel instellen, maar de vlaggen overslaan**
 
-Het instellen van een cookie dat een gebruiker succesvol ingelogd houdt, vereist technisch gezien alleen een naam en een waarde — de browser accepteert en gebruikt het immers in beide gevallen. De drie vlaggen zijn optionele parameters die het gedrag van het cookie verfijnen in situaties waar een simpele prompt zoals 'houd de gebruiker ingelogd' nooit specifiek om vraagt. Dat is precies waarom een vlekkeloos werkende login en een onbeschermd, blootgesteld cookie perfect naast elkaar kunnen bestaan zonder dat het systeem er ogenschijnlijk kapot uitziet.
+Het instellen van een cookie dat een gebruiker succesvol ingelogd houdt, vereist technisch gezien alleen een naam en een waarde - de browser accepteert en gebruikt het immers in beide gevallen. De drie vlaggen zijn optionele parameters die het gedrag van het cookie verfijnen in situaties waar een simpele prompt zoals 'houd de gebruiker ingelogd' nooit specifiek om vraagt. Dat is precies waarom een vlekkeloos werkende login en een onbeschermd, blootgesteld cookie perfect naast elkaar kunnen bestaan zonder dat het systeem er ogenschijnlijk kapot uitziet.
 
 
 ## Echt voorbeeld
@@ -93,9 +93,9 @@ Saskia's team richtte zich op het bevestigen dat de boekings- en dispatch-stroom
 **Resultaat:** LaunchStudio corrigeerde de sessie-cookieconfiguratie om alle standaard beschermende vlaggen (`HttpOnly`, `Secure`, `SameSite`) op te nemen. Dit sloot de kloof zonder dat het de functionele testen beïnvloedde.
 
 > *"Alles aan de inlog- en boekingsstroom werkte vlekkeloos in elke test die we zelf uitvoerden. Dit is exact het soort detail dat we opvangen omdat we deze controle specifiek elke keer uitvoeren."*
-> — **Saskia Bergman, Bureau-eigenaar, Weert**
+> - **Saskia Bergman, Bureau-eigenaar, Weert**
 
-**Kosten en tijdlijn:** € 1.600 (white-label sessie-cookie beveiligingsaudit) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (white-label sessie-cookie beveiligingsaudit) - voltooid in 5 werkdagen.
 
 ---
 
@@ -113,7 +113,7 @@ Omdat `HttpOnly` voorkomt dat kwaadaardige JavaScript-code op de pagina (bijvoor
 
 Omdat starter-templates en AI-prompts vaak zijn ingesteld op maximaal gemak tijdens lokale ontwikkeling op `localhost` (waar HTTPS vaak ontbreekt). De code werkt lokaal zonder foutmeldingen, en de stap om voor productie expliciet `Secure; HttpOnly; SameSite=Lax` te forceren wordt vergeten tenzij een engineer dit actief controleert.
 
-### Manifera bouwt webapplicaties met strenge beveiligingseisen — hoe toetst het team cookie-instellingen?
+### Manifera bouwt webapplicaties met strenge beveiligingseisen - hoe toetst het team cookie-instellingen?
 
 Als vast onderdeel van de deployment-audits controleert Manifera geautomatiseerd de Set-Cookie headers in staging- en productieomgevingen om te waarborgen dat elk authenticatietoken voldoet aan moderne beveiligingsstandaarden.
 
@@ -152,7 +152,7 @@ Ja, open de browserdeveloper tools, navigeer naar het tabblad 'Application' (of 
     },
     {
       "@type": "Question",
-      "name": "Manifera bouwt webapplicaties met strenge beveiligingseisen — hoe toetst het team cookie-instellingen?",
+      "name": "Manifera bouwt webapplicaties met strenge beveiligingseisen - hoe toetst het team cookie-instellingen?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Als vast onderdeel van de deployment-audits controleert Manifera geautomatiseerd de Set-Cookie headers in staging- en productieomgevingen om te waarborgen dat elk authenticatietoken voldoet aan moderne beveiligingsstandaarden."

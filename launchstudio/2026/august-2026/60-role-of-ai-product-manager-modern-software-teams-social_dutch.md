@@ -1,4 +1,4 @@
-🔥 Sadie bouwde een prototype met **Lovable** — Sadie, een retail-coördinator, bouwde een CRM, maar worstelde met inconsistente lay-outs doordat de AI-tool stijlen en componenten continu anders genereerde. 🧠
+🔥 Sadie bouwde een prototype met **Lovable** - Sadie, een retail-coördinator, bouwde een CRM, maar worstelde met inconsistente lay-outs doordat de AI-tool stijlen en componenten continu anders genereerde. 🧠
 
 De rol van de AI Product Manager verschuift van deterministische features naar het managen van statistische onzekerheid, Human-in-the-Loop workflows en gestructureerde evaluatiedatasets (Evals).
 
@@ -12,7 +12,7 @@ De rol van de AI Product Manager verschuift van deterministische features naar h
 
 Bij **LaunchStudio** lossen we exact dit type design-tokensystemen, HITL-architectuur en evaluatie-pijplijnen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Sadies CRM werd consistent en professioneel: De verfijnde workflow verkortte prototyping-iteraties met 60% dankzij gestructureerde design-tokens. (€1.100 (Design Token Setup Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
+Sadies CRM werd consistent en professioneel: De verfijnde workflow verkortte prototyping-iteraties met 60% dankzij gestructureerde design-tokens. (€1.100 (Design Token Setup Pakket) - productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/role-of-ai-product-manager-modern-software-teams
 

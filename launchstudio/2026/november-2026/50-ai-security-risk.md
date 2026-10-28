@@ -89,9 +89,9 @@ They implemented the entire Defense-in-Depth chain. They deployed Llama Guard as
 **Result:** The marketing team got their AI feature back, and Marcus got his peace of mind. When the security researcher attempted the exploit again, it failed at all three links. The firewall flagged the prompt, the API refused to return other users' data, and the frontend refused to render the image tag. The AI security risk was mathematically eliminated.
 
 > *"The marketing team thought they were launching a helpful chatbot. As a security engineer, I saw they had launched an unprotected database query terminal accessible to the entire internet. LaunchStudio understood the specific anatomy of AI attacks. They didn't just patch a bug; they built the heavy blast doors required to make AI safe for enterprise deployment."*
-> — **Marcus Lehmann, Security Engineer, RetailNet (Berlin)**
+> - **Marcus Lehmann, Security Engineer, RetailNet (Berlin)**
 
-**Cost & Timeline:** €16,500 (Enterprise AI Security Audit & Remediation Package) — production-ready and deployed in 14 business days.
+**Cost & Timeline:** €16,500 (Enterprise AI Security Audit & Remediation Package) - production-ready and deployed in 14 business days.
 
 ---
 

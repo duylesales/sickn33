@@ -103,7 +103,7 @@ Then the less concrete ones. The person who moves for a job arrives with colleag
 
 What helps: choosing a location where the partner has a realistic path to employment or study; arranging language courses from the start, ideally funded by the employer; arriving with a plan for the partner rather than an intention to sort it out later; and treating the first year's social effort as a shared project rather than an individual one.
 
-Employers who support the partner actively — introductions, job search help, language classes, a network of other international families — retain international hires far better, and it is entirely reasonable to ask what they offer.
+Employers who support the partner actively - introductions, job search help, language classes, a network of other international families - retain international hires far better, and it is entirely reasonable to ask what they offer.
 
 ## Language, Honestly
 
@@ -137,7 +137,7 @@ None of this is difficult. It is simply volume, arriving at the same time as a n
 
 After the arithmetic, the decision rests on less quantifiable things, and it is worth naming them explicitly.
 
-**Career.** Does the role offer something you cannot get at home — scale, a specialism, a sector, a team with more experienced people? This is the reason that ages best, because it compounds and remains valid even if you return.
+**Career.** Does the role offer something you cannot get at home - scale, a specialism, a sector, a team with more experienced people? This is the reason that ages best, because it compounds and remains valid even if you return.
 
 **Time horizon.** A two-year move to build experience is a different decision from an indefinite one. Being honest about which you intend changes what matters: for a short move, career and savings dominate; for a long one, language, family and belonging dominate.
 
@@ -155,7 +155,7 @@ A meaningful proportion of international moves end earlier than planned, and tre
 
 Common reasons: the job differed from what was described, the partner could not build a life, the winter was harder than expected, family circumstances changed at home, or the company restructured.
 
-Protective steps taken in advance cost little. Keep savings sufficient to return. Understand what your permit requires if employment ends — several countries allow a period to find new work, but the duration varies. Know whether relocation support is repayable if you leave within a defined period, since clawback clauses are common. Maintain your professional network at home. And avoid making irreversible decisions — selling a home, ending a partner's career permanently — in the first year.
+Protective steps taken in advance cost little. Keep savings sufficient to return. Understand what your permit requires if employment ends - several countries allow a period to find new work, but the duration varies. Know whether relocation support is repayable if you leave within a defined period, since clawback clauses are common. Maintain your professional network at home. And avoid making irreversible decisions - selling a home, ending a partner's career permanently - in the first year.
 
 Returning after eighteen months abroad is not a setback on a CV. International experience is read positively across European hiring, and the ability to work in an unfamiliar environment is exactly what employers say they value.
 

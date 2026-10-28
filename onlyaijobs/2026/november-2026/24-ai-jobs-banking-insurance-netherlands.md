@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-If you counted the data scientists, data engineers and quantitative analysts employed by Dutch organisations, banks and insurers would be near the top of the list. Large banks in Amsterdam and Utrecht and insurers in Utrecht, The Hague, Zeist, Apeldoorn and Tilburg have invested heavily in data teams for more than a decade. For candidates, financial services offer mature data platforms, strong salaries and a wide range of problems — but also one of the most regulated environments for AI in Europe. Understanding that regulation is not an administrative detail; it defines what the work looks like.
+If you counted the data scientists, data engineers and quantitative analysts employed by Dutch organisations, banks and insurers would be near the top of the list. Large banks in Amsterdam and Utrecht and insurers in Utrecht, The Hague, Zeist, Apeldoorn and Tilburg have invested heavily in data teams for more than a decade. For candidates, financial services offer mature data platforms, strong salaries and a wide range of problems - but also one of the most regulated environments for AI in Europe. Understanding that regulation is not an administrative detail; it defines what the work looks like.
 
 ## Why Financial Services Became Data-Driven Early
 
@@ -59,13 +59,13 @@ At the same time, financial institutions have faced major enforcement actions fo
 
 ## The Named Organisations and Supervisors
 
-**Banks.** The largest Dutch banks — ING, Rabobank and ABN AMRO — employ large data and analytics workforces, along with de Volksbank, Triodos Bank and a growing number of digital banks and payment companies.
+**Banks.** The largest Dutch banks - ING, Rabobank and ABN AMRO - employ large data and analytics workforces, along with de Volksbank, Triodos Bank and a growing number of digital banks and payment companies.
 
 **Insurers.** Achmea, NN Group, a.s.r. and other insurers, as well as health insurers, use data for pricing, claims, customer service and investment management.
 
 **De Nederlandsche Bank (DNB).** The Dutch central bank supervises the prudential soundness of banks, insurers and pension funds and has published principles and discussion papers on the responsible use of AI in the financial sector.
 
-**Dutch Authority for the Financial Markets (AFM).** The AFM supervises conduct — how financial institutions treat customers — including the use of algorithms in customer-facing decisions.
+**Dutch Authority for the Financial Markets (AFM).** The AFM supervises conduct - how financial institutions treat customers - including the use of algorithms in customer-facing decisions.
 
 **European Central Bank (ECB) Banking Supervision.** The largest Dutch banks are directly supervised by the ECB within the Single Supervisory Mechanism, which includes review of internal models used for capital requirements.
 
@@ -73,13 +73,13 @@ At the same time, financial institutions have faced major enforcement actions fo
 
 **EU Artificial Intelligence Act.** The act classifies AI systems used to evaluate the creditworthiness of natural persons or establish their credit score as high-risk, with an exception for fraud detection. AI systems used for risk assessment and pricing in life and health insurance for natural persons are also high-risk. Providers and deployers of such systems face requirements on risk management, data governance, documentation, human oversight, accuracy and robustness.
 
-**GDPR and automated decision-making.** Article 22 of the GDPR restricts decisions based solely on automated processing that significantly affect individuals. In its SCHUFA judgment (C-634/21), the Court of Justice of the EU held that generating a credit score can itself be an automated decision when it plays a determining role in a lender's decision — with direct implications for credit scoring models.
+**GDPR and automated decision-making.** Article 22 of the GDPR restricts decisions based solely on automated processing that significantly affect individuals. In its SCHUFA judgment (C-634/21), the Court of Justice of the EU held that generating a credit score can itself be an automated decision when it plays a determining role in a lender's decision - with direct implications for credit scoring models.
 
 **Consumer Credit Directive (EU) 2023/2225.** The revised directive, applicable from late 2026, strengthens rules on creditworthiness assessments, including rights for consumers when assessments involve automated processing.
 
 **Anti-Money Laundering and Anti-Terrorist Financing Act (Wwft).** Requires institutions to perform customer due diligence and monitor transactions for unusual activity. The EU's new anti-money laundering package, including a new EU authority, will further shape requirements in the coming years.
 
-**Digital Operational Resilience Act (DORA).** Applicable since January 2025, DORA sets requirements for ICT risk management, incident reporting, resilience testing and management of third-party ICT providers — relevant for cloud-based AI platforms and external model providers.
+**Digital Operational Resilience Act (DORA).** Applicable since January 2025, DORA sets requirements for ICT risk management, incident reporting, resilience testing and management of third-party ICT providers - relevant for cloud-based AI platforms and external model providers.
 
 **Capital requirements and Solvency II.** Internal models used for capital requirements must meet strict supervisory standards, which influences how far machine learning can be used in those models.
 
@@ -180,7 +180,7 @@ The CJEU held that a credit score can be an automated decision under GDPR Articl
     {"@type": "Question", "name": "Which financial AI applications are high-risk under the AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Credit scoring of individuals (excluding fraud detection) and life and health insurance risk assessment and pricing."}},
     {"@type": "Question", "name": "Is AI work at banks slower than at tech companies?", "acceptedAnswer": {"@type": "Answer", "text": "Approval processes are more formal, but many institutions have modern platforms and strong teams."}},
     {"@type": "Question", "name": "What data work exists in anti-money laundering?", "acceptedAnswer": {"@type": "Answer", "text": "Transaction monitoring, customer risk scoring, network analysis and alert prioritisation."}},
-    {"@type": "Question", "name": "What is model validation and is it a good career path?", "acceptedAnswer": {"@type": "Answer", "text": "Independent model review — a valued path for experienced, critical data scientists."}},
+    {"@type": "Question", "name": "What is model validation and is it a good career path?", "acceptedAnswer": {"@type": "Answer", "text": "Independent model review - a valued path for experienced, critical data scientists."}},
     {"@type": "Question", "name": "How does the SCHUFA judgment affect credit scoring models?", "acceptedAnswer": {"@type": "Answer", "text": "A credit score can be an automated decision under GDPR Article 22 when it determines a lending decision."}}
   ]
 }

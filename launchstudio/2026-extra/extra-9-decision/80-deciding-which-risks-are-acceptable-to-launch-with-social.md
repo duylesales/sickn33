@@ -8,13 +8,13 @@ No product launches risk-free. The skill isn't eliminating risk, it's sorting it
 ❌ A register built at launch and never revisited gets surprised by an old item
 
 ✅ Rate every risk on two dimensions: real probability, impact in money or trust
-✅ Must-fix: unencrypted data, broken authorization, non-compliant payments, no backups — non-negotiable
+✅ Must-fix: unencrypted data, broken authorization, non-compliant payments, no backups - non-negotiable
 ✅ Ship-and-monitor: track with a trigger that moves it to must-fix
-✅ Safe to defer: SOC 2 before any ask, multi-region for one country — no trigger yet
+✅ Safe to defer: SOC 2 before any ask, multi-region for one country - no trigger yet
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our reviews separate what blocks a launch from what can wait. ✅
 
-Her result: three blockers fixed in nine days for €2,900, launched with the rest tracked monthly — one deferred item has crossed into must-fix. 🚀
+Her result: three blockers fixed in nine days for €2,900, launched with the rest tracked monthly - one deferred item has crossed into must-fix. 🚀
 
 👉 Get a fixed-price quote and a risk breakdown: https://launchstudio.eu/en/blog/deciding-which-risks-are-acceptable-to-launch-with
 

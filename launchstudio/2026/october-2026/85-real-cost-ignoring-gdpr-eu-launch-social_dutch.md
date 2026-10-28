@@ -1,4 +1,4 @@
-⚖️ Astrid was nog drie weken van de lancering van haar HR-platform (gebouwd in **Lovable**) toen de IT-afdeling van een prospect om haar verwerkersovereenkomst vroeg. Ze had er geen — "verwijder mijn account" schakelde gewoon een statusvlag om.
+⚖️ Astrid was nog drie weken van de lancering van haar HR-platform (gebouwd in **Lovable**) toen de IT-afdeling van een prospect om haar verwerkersovereenkomst vroeg. Ze had er geen - "verwijder mijn account" schakelde gewoon een statusvlag om.
 
 "Ik regel de AVG later wel" is een van de duurste beslissingen die een oprichter kan nemen.
 
@@ -12,7 +12,7 @@
 
 Bij **LaunchStudio** bouwen wij deze compliance-laag al sinds 2014 in via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De prospect van Astrid keurde de leveranciersbeoordeling goed bij de eerste indiening — geen gestagneerde deal, geen paniek. (€ 2.400 — Launch & Grow Pakket, verholpen en gedocumenteerd in 9 werkdagen.) 🚀
+De prospect van Astrid keurde de leveranciersbeoordeling goed bij de eerste indiening - geen gestagneerde deal, geen paniek. (€ 2.400 - Launch & Grow Pakket, verholpen en gedocumenteerd in 9 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/real-cost-ignoring-gdpr-eu-launch
 

@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-De meeste apps krijgen een tweede kans. Evenementenapps vaak niet. Een bruiloft vindt op één zaterdag plaats; een bedrijfsjubileum op één avond. Werkt de RSVP-link niet in de week dat de uitnodigingen uitgaan, of raakt de tafelschikking de allergienotitie van een gast kwijt, dan is er geen "dat lossen we in de volgende sprint op". Dat maakt de productieproblemen van AI-apps in tools voor evenementenplanning zo pijnlijk — en daarom horen oprichters die ze met Lovable of Bolt bouwen ze op te lossen voordat de eerste echte uitnodiging wordt verstuurd.
+De meeste apps krijgen een tweede kans. Evenementenapps vaak niet. Een bruiloft vindt op één zaterdag plaats; een bedrijfsjubileum op één avond. Werkt de RSVP-link niet in de week dat de uitnodigingen uitgaan, of raakt de tafelschikking de allergienotitie van een gast kwijt, dan is er geen "dat lossen we in de volgende sprint op". Dat maakt de productieproblemen van AI-apps in tools voor evenementenplanning zo pijnlijk - en daarom horen oprichters die ze met Lovable of Bolt bouwen ze op te lossen voordat de eerste echte uitnodiging wordt verstuurd.
 
 ## Wat Evenementenapps Anders Maakt
 
@@ -33,7 +33,7 @@ De meeste apps krijgen een tweede kans. Evenementenapps vaak niet. Een bruiloft 
 
 ## Probleem 1: RSVP-Links die Iedereen Kan Wijzigen
 
-AI-gegenereerde RSVP-flows gebruiken vaak links als `/rsvp/123`. Een ander nummer opent de RSVP van een andere gast — naam, dieetwensen en of die komt — en laat iemand die wijzigen. RSVP-links horen lange willekeurige tokens per gast te zijn, beperkt tot het antwoord van die gast, waarbij de gastheer een link opnieuw kan genereren als die is doorgestuurd.
+AI-gegenereerde RSVP-flows gebruiken vaak links als `/rsvp/123`. Een ander nummer opent de RSVP van een andere gast - naam, dieetwensen en of die komt - en laat iemand die wijzigen. RSVP-links horen lange willekeurige tokens per gast te zijn, beperkt tot het antwoord van die gast, waarbij de gastheer een link opnieuw kan genereren als die is doorgestuurd.
 
 ## Probleem 2: Gastgegevens Zichtbaar voor Andere Gasten
 
@@ -41,7 +41,7 @@ Functies als "zie wie er nog meer komt" of gedeelde tafelschikkingen kunnen meer
 
 ## Probleem 3: Notities over Dieet en Toegankelijkheid
 
-"Ernstige notenallergie" of "rolstoelgebruiker" zijn details die de cateraar en de locatie nauwkeurig moeten bereiken — en niet verder mogen worden gedeeld. Behandel ze als gevoelig: beperkte toegang, een duidelijke export naar de leveranciers die ze nodig hebben, en verwijdering na het evenement.
+"Ernstige notenallergie" of "rolstoelgebruiker" zijn details die de cateraar en de locatie nauwkeurig moeten bereiken - en niet verder mogen worden gedeeld. Behandel ze als gevoelig: beperkte toegang, een duidelijke export naar de leveranciers die ze nodig hebben, en verwijdering na het evenement.
 
 ## Probleem 4: De Golf aan Uitnodigingen
 
@@ -49,7 +49,7 @@ Verstuurt een gastheer 200 uitnodigingen tegelijk, dan kunnen e-mailaanbieders d
 
 ## Probleem 5: Betalingen tussen Meerdere Partijen
 
-Bijdragen aan cadeaus, aanbetalingen aan leveranciers en evenementen met tickets brengen allemaal geld met zich mee. Bevestiging moet komen van de geverifieerde webhook van de betaalaanbieder, terugbetalingen moeten worden afgehandeld (evenementen worden afgelast of uitgesteld), en als er namens anderen geld wordt geïnd, moet de betaalopzet daarbij passen — betalingen in de stijl van een marktplaats in plaats van alles op de rekening van de eigenaar van het platform.
+Bijdragen aan cadeaus, aanbetalingen aan leveranciers en evenementen met tickets brengen allemaal geld met zich mee. Bevestiging moet komen van de geverifieerde webhook van de betaalaanbieder, terugbetalingen moeten worden afgehandeld (evenementen worden afgelast of uitgesteld), en als er namens anderen geld wordt geïnd, moet de betaalopzet daarbij passen - betalingen in de stijl van een marktplaats in plaats van alles op de rekening van de eigenaar van het platform.
 
 ## Probleem 6: Wijzigingen op het Laatste Moment
 
@@ -99,7 +99,7 @@ Verzamel optionele velden alleen als de gastheer de bijbehorende functie heeft a
 
 ## Uitnodigingen op Schaal Versturen
 
-Honderden uitnodigingen tegelijk versturen vraagt zorg: gebruik een aanbieder van transactionele e-mail met een geauthenticeerd domein (SPF, DKIM, DMARC), zet verzendingen in een wachtrij met een gelijkmatig tempo, personaliseer onderwerpregels bescheiden, vermijd inhoud die spamfilters triggert en monitor bounces. Geef gastheren een overzicht van de bezorging — bezorgd, gebounced, geopend — zodat ze persoonlijk kunnen opvolgen bij gasten van wie de uitnodiging niet aankwam. Respecteer bij uitnodigingen per sms de regels voor opt-in en de lokale verzendtijden.
+Honderden uitnodigingen tegelijk versturen vraagt zorg: gebruik een aanbieder van transactionele e-mail met een geauthenticeerd domein (SPF, DKIM, DMARC), zet verzendingen in een wachtrij met een gelijkmatig tempo, personaliseer onderwerpregels bescheiden, vermijd inhoud die spamfilters triggert en monitor bounces. Geef gastheren een overzicht van de bezorging - bezorgd, gebounced, geopend - zodat ze persoonlijk kunnen opvolgen bij gasten van wie de uitnodiging niet aankwam. Respecteer bij uitnodigingen per sms de regels voor opt-in en de lokale verzendtijden.
 
 ## Betalingen voor Evenementen: Het Model Kiezen
 
@@ -134,7 +134,7 @@ Gasten bestrijken generaties en mogelijkheden. Uitnodigingen en RSVP-pagina's ho
 
 ## Prestaties op de Dag van de Uitnodigingen
 
-Als uitnodigingen uitgaan, openen veel gasten ze binnen hetzelfde uur — vaak op mobiele netwerken. Houd RSVP-pagina's licht: geoptimaliseerde afbeeldingen, minimale scripts, op de server gerenderde inhoud en een snelle bevestigingsstap. Test de RSVP-flow vóór het versturen op een vertraagde mobiele verbinding. Een trage of kapotte RSVP-pagina op de eerste avond levert een stroom berichten aan de gastheren op, en dat is precies wat de app moest voorkomen.
+Als uitnodigingen uitgaan, openen veel gasten ze binnen hetzelfde uur - vaak op mobiele netwerken. Houd RSVP-pagina's licht: geoptimaliseerde afbeeldingen, minimale scripts, op de server gerenderde inhoud en een snelle bevestigingsstap. Test de RSVP-flow vóór het versturen op een vertraagde mobiele verbinding. Een trage of kapotte RSVP-pagina op de eerste avond levert een stroom berichten aan de gastheren op, en dat is precies wat de app moest voorkomen.
 
 ## Veelgemaakte Fouten in Evenementenapps
 
@@ -146,7 +146,7 @@ Vóór het drukke seizoen: veilige tokens per gast; instellingen voor de zichtba
 
 ## Waarom Evenementen Geen Ruimte Laten voor een Tweede Kans
 
-De meeste software kan herstellen van een slechte week. Evenementensoftware vaak niet: de bruiloft, het gala of het jubileum vindt één keer plaats, en een kapotte RSVP-link, een ontbrekende allergienotitie of een verloren betaling raakt een dag die mensen decennialang onthouden. Daarom draait productierijpheid voor evenementenapps minder om schaal en meer om precisie — het antwoord van elke gast juist vastgelegd, elk gevoelig detail bij de juiste leverancier en bij niemand anders, elke betaling bevestigd. Planners die dit goed doen, krijgen na elk evenement aanbevelingen; wie het niet goed doet, krijgt zelden een tweede kans bij dezelfde klanten.
+De meeste software kan herstellen van een slechte week. Evenementensoftware vaak niet: de bruiloft, het gala of het jubileum vindt één keer plaats, en een kapotte RSVP-link, een ontbrekende allergienotitie of een verloren betaling raakt een dag die mensen decennialang onthouden. Daarom draait productierijpheid voor evenementenapps minder om schaal en meer om precisie - het antwoord van elke gast juist vastgelegd, elk gevoelig detail bij de juiste leverancier en bij niemand anders, elke betaling bevestigd. Planners die dit goed doen, krijgen na elk evenement aanbevelingen; wie het niet goed doet, krijgt zelden een tweede kans bij dezelfde klanten.
 
 ## Eerste Stap
 
@@ -158,7 +158,7 @@ Gasten vertrouwen gastheren hun gegevens toe; gastheren vertrouwen op uw app. Do
 
 ## Waar LaunchStudio Past
 
-LaunchStudio lost deze problemen in AI-gebouwde evenementenapps op zonder het ontwerp aan te raken waar gastheren en gasten van houden: veilige RSVP-tokens, regels voor gastgegevens, omgang met gevoelige notities, gereedheid voor e-mail en pieken, betaalstromen, afhandeling van conflicten en bewaartermijnen. LaunchStudio wordt ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — met engineers in het ontwikkelcentrum in Ho Chi Minh-stad en kantoren in Amsterdam en Singapore. Zie [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/); [de documentatie van Stripe Connect](https://docs.stripe.com/connect) legt betalingen uit die namens anderen worden geïnd.
+LaunchStudio lost deze problemen in AI-gebouwde evenementenapps op zonder het ontwerp aan te raken waar gastheren en gasten van houden: veilige RSVP-tokens, regels voor gastgegevens, omgang met gevoelige notities, gereedheid voor e-mail en pieken, betaalstromen, afhandeling van conflicten en bewaartermijnen. LaunchStudio wordt ondersteund door Manifera - vertrouwd door Vodafone, TNO en CFLW - met engineers in het ontwikkelcentrum in Ho Chi Minh-stad en kantoren in Amsterdam en Singapore. Zie [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/); [de documentatie van Stripe Connect](https://docs.stripe.com/connect) legt betalingen uit die namens anderen worden geïnd.
 
 [Plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) vóór uw volgende trouwseizoen.
 
@@ -175,9 +175,9 @@ In acht werkdagen vervingen de engineers van LaunchStudio RSVP-ID's door willeke
 **Resultaat:** De 140 bruiloften van het volgende seizoen verliepen zonder geknoei met RSVP's of afwijkingen bij betalingen, en de bezorging van uitnodigingen steeg tot vrijwel volledig. Joyce geeft Trouwplanner nu in licentie aan twee andere weddingplanners.
 
 > *"Een bruiloft heeft één datum. De app kreeg geen tweede poging, dus moest hij de eerste keer goed zijn."*
-> — **Joyce van Dam, Oprichter, Trouwplanner (Nijkerk)**
+> - **Joyce van Dam, Oprichter, Trouwplanner (Nijkerk)**
 
-**Kosten & Tijdlijn:** € 2.100 (Launch Ready-pakket: RSVP-beveiliging, regels voor gastgegevens, betalingen, e-mail en afhandeling van conflicten) — afgerond in 8 werkdagen.
+**Kosten & Tijdlijn:** € 2.100 (Launch Ready-pakket: RSVP-beveiliging, regels voor gastgegevens, betalingen, e-mail en afhandeling van conflicten) - afgerond in 8 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -195,7 +195,7 @@ Met betalingen die via geverifieerde webhooks worden bevestigd, ondersteuning vo
 
 ### Hoe is de ervaring van Manifera van toepassing op evenementenapps?
 
-Evenementenapps combineren piekerig verkeer, gevoelige data en betalingen — gebieden die de engineers van Manifera al meer dan tien jaar in enterprisesystemen afhandelen.
+Evenementenapps combineren piekerig verkeer, gevoelige data en betalingen - gebieden die de engineers van Manifera al meer dan tien jaar in enterprisesystemen afhandelen.
 
 ### Kan een app voor evenementenplanning klanten aantrekken via AI-zoekresultaten?
 

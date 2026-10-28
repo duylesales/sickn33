@@ -1,4 +1,4 @@
-🚨 68% of offshore engineering engagements that fail do so not because of code quality, but because the team was never actually "dedicated" — it was a shared resource pool quietly juggling three other clients behind the scenes. ⚙️💥
+🚨 68% of offshore engineering engagements that fail do so not because of code quality, but because the team was never actually "dedicated" - it was a shared resource pool quietly juggling three other clients behind the scenes. ⚙️💥
 
 **The Pain Points:**
 ❌ **The Amersfoort Engineering Talent Trap:** A VP of Engineering at an Amersfoort-headquartered software company has been told to scale delivery capacity by 40% this year without a matching headcount budget increase. Every recruiter and vendor promises a "dedicated team," but the VP has been burned before by a team that was dedicated in name only, with engineers pulled mid-sprint to firefight someone else's production incident.

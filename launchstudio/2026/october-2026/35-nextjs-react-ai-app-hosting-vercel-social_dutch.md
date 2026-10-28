@@ -1,4 +1,4 @@
-🔥 Sophia bouwde een prototype met **Bolt.new** — als voormalig docent in Utrecht bouwde ze een Next.js-app voor quizgeneratie, maar haar Vercel-deployment crashte direct met onbegrijpelijke build-errors. 🧠
+🔥 Sophia bouwde een prototype met **Bolt.new** - als voormalig docent in Utrecht bouwde ze een Next.js-app voor quizgeneratie, maar haar Vercel-deployment crashte direct met onbegrijpelijke build-errors. 🧠
 
 Als u een door AI gegenereerde app uit een sandbox exporteert zonder scoped omgevingsvariabelen, GitHub branch-beveiliging en CORS-configuratie, strandt uw lancering definitief.
 
@@ -12,7 +12,7 @@ Als u een door AI gegenereerde app uit een sandbox exporteert zonder scoped omge
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Sophia lanceerde haar app binnen 48 uur op `quizgen.nl` en sloot in haar eerste week direct 150 betalende abonnees aan. (€900 (Snelle Vercel Deployment) — binnen 2 werkdagen live). 🚀
+Sophia lanceerde haar app binnen 48 uur op `quizgen.nl` en sloot in haar eerste week direct 150 betalende abonnees aan. (€900 (Snelle Vercel Deployment) - binnen 2 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/nextjs-react-ai-app-hosting-vercel
 

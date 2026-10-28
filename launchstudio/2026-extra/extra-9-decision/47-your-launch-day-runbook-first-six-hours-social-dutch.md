@@ -7,7 +7,7 @@ De lanceerdag is een operationele dienst, geen feestelijke borrel. De meeste opr
 ❌ Een DMARC-record dat wel op staging DNS stond maar nooit naar productie is gekopieerd, waardoor Microsoft alle mails weigert
 ❌ Nieuwe features uitrollen op de lanceerdag zelf, waardoor u niet meer weet welke wijziging de storing veroorzaakt
 
-✅ Koop uw eigen product met een echte betaalpas in het eerste uur — dat bewijst als enige dat de live geldstroom functioneert
+✅ Koop uw eigen product met een echte betaalpas in het eerste uur - dat bewijst als enige dat de live geldstroom functioneert
 ✅ Houd foutmeldingen, betalingsstatussen en e-mailbezorging nauwlettend in de gaten in plaats van het bezoekersaantal
 ✅ Controleer handmatig waar welkomstmails fysiek landen bij Gmail, Outlook en een zakelijk domein
 ✅ Spreek vooraf in alle rust drie harde rollback-triggers af: datalekken tussen accounts, foutieve betalingen en dataverlies

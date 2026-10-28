@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-For a long time, data science was an office-hours profession. Models were built, results were presented, and nothing woke anyone at three in the morning. That has changed as machine learning moved into production: fraud scoring that must run before a payment clears, forecasts that feed tomorrow's planning, inspection models on a production line, recommendation systems on a live platform. With that shift comes a line in the job description that candidates often skim past — participation in an on-call rotation. It is worth reading carefully, because a rotation that is well organised is a minor inconvenience and a badly organised one is the most common reason people leave otherwise good engineering jobs.
+For a long time, data science was an office-hours profession. Models were built, results were presented, and nothing woke anyone at three in the morning. That has changed as machine learning moved into production: fraud scoring that must run before a payment clears, forecasts that feed tomorrow's planning, inspection models on a production line, recommendation systems on a live platform. With that shift comes a line in the job description that candidates often skim past - participation in an on-call rotation. It is worth reading carefully, because a rotation that is well organised is a minor inconvenience and a badly organised one is the most common reason people leave otherwise good engineering jobs.
 
 ## What On-Call Usually Means Here
 
@@ -43,11 +43,11 @@ In Dutch employment vocabulary, the relevant concept is standby duty (consignati
 
 For data and ML roles it typically means carrying a phone for a week at a time, on a rotation with colleagues, with an escalation path and an agreement about response times. What you are expected to respond to varies enormously: everything from a failed nightly pipeline to a genuine production incident affecting customers.
 
-Related but different arrangements exist. Being genuinely on the premises and available is on-call duty of a different kind with stricter rules; a voluntary "we might call you" culture with no formal rotation is, in practice, the worst version — the obligation without the structure or the compensation.
+Related but different arrangements exist. Being genuinely on the premises and available is on-call duty of a different kind with stricter rules; a voluntary "we might call you" culture with no formal rotation is, in practice, the worst version - the obligation without the structure or the compensation.
 
 ## What Dutch Rules Say
 
-The **Working Hours Act (Arbeidstijdenwet)** regulates working and rest times, including standby duty. It sets limits on how standby periods can be scheduled, on required rest, and on how call-outs interact with the hours you may work. Collective labour agreements frequently add more detailed rules for a sector — how often you can be scheduled, what compensation applies and what rest follows a night call-out.
+The **Working Hours Act (Arbeidstijdenwet)** regulates working and rest times, including standby duty. It sets limits on how standby periods can be scheduled, on required rest, and on how call-outs interact with the hours you may work. Collective labour agreements frequently add more detailed rules for a sector - how often you can be scheduled, what compensation applies and what rest follows a night call-out.
 
 Three points matter most in practice.
 
@@ -57,7 +57,7 @@ Three points matter most in practice.
 
 **Compensation must be agreed.** Dutch law does not set a single universal standby rate; the compensation usually comes from the collective agreement or the individual contract. What is not acceptable is an expectation with no arrangement at all.
 
-Where a works council exists, arrangements on working time and standby schedules are typically matters it is involved in — which is one reason larger employers usually have clearer rules than small ones.
+Where a works council exists, arrangements on working time and standby schedules are typically matters it is involved in - which is one reason larger employers usually have clearer rules than small ones.
 
 ## Why More AI Roles Now Include It
 
@@ -95,15 +95,15 @@ A rotation that exists because one person built everything and nobody else under
 
 On-call is one of the more negotiable parts of an offer, because the constraints are organisational rather than budgetary.
 
-You can ask for a delayed start — joining the rotation after three months rather than immediately, which is reasonable and common. You can ask for the compensation arrangement to be confirmed in writing. You can ask for the rest arrangement after night call-outs to be explicit. You can ask about swaps and cover for holidays, and about what happens during illness or family emergencies.
+You can ask for a delayed start - joining the rotation after three months rather than immediately, which is reasonable and common. You can ask for the compensation arrangement to be confirmed in writing. You can ask for the rest arrangement after night call-outs to be explicit. You can ask about swaps and cover for holidays, and about what happens during illness or family emergencies.
 
-Where a rotation is genuinely not compatible with your situation — a caring responsibility, a health condition, a partner working nights — say so early. Some roles cannot accommodate it, but many can, and an employer who dismisses the question entirely has told you how flexible they are on everything else.
+Where a rotation is genuinely not compatible with your situation - a caring responsibility, a health condition, a partner working nights - say so early. Some roles cannot accommodate it, but many can, and an employer who dismisses the question entirely has told you how flexible they are on everything else.
 
 ## Health, Sleep and the Long View
 
 Repeated broken sleep is not a minor inconvenience; it affects health, judgement and mood, and its effects accumulate. If a rotation is affecting your health, the **occupational physician (bedrijfsarts)** is the route to a formal conversation rather than an informal complaint, and Dutch employers have obligations around working conditions.
 
-Take the long view when deciding. A demanding rotation is manageable at some life stages and unsustainable at others. It is entirely legitimate to accept on-call now and to renegotiate it in three years — provided you know that renegotiating is possible, which is itself a question worth asking before you sign.
+Take the long view when deciding. A demanding rotation is manageable at some life stages and unsustainable at others. It is entirely legitimate to accept on-call now and to renegotiate it in three years - provided you know that renegotiating is possible, which is itself a question worth asking before you sign.
 
 ## What On-Call Gives You
 
@@ -139,18 +139,18 @@ Eighteen months later he is the person who wrote half the runbooks. The rotation
 - More AI roles include on-call because production models are systems, MLOps sits in operations, and DORA and NIS2 push regulated sectors towards documented incident response.
 - The decisive questions are rotation size, actual call-out frequency, alert actionability, compensation in writing, rest after night call-outs and whether runbooks exist.
 - Negotiate a delayed start, written compensation and explicit rest arrangements; raise incompatible personal circumstances early.
-- Operational experience is genuinely valuable for a production ML career — the question is whether this specific rotation is sustainable for you.
+- Operational experience is genuinely valuable for a production ML career - the question is whether this specific rotation is sustainable for you.
 
 ## Where to Start
 
-Before accepting a role with on-call duty, ask for the call-out numbers from the last quarter — and compare the role with others near you where the operational load is different.
+Before accepting a role with on-call duty, ask for the call-out numbers from the last quarter - and compare the role with others near you where the operational load is different.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate offered a role with on-call) Is on-call duty normal for data and ML roles in the Netherlands?
-Increasingly, yes — particularly for MLOps, data engineering and production machine learning in regulated sectors where incident response is required.
+Increasingly, yes - particularly for MLOps, data engineering and production machine learning in regulated sectors where incident response is required.
 
 ### (Scenario: candidate asking about pay) Is standby duty compensated?
 Compensation normally comes from the collective labour agreement or your contract rather than a single statutory rate; what matters is that it is agreed in writing.
@@ -173,7 +173,7 @@ Sometimes. Raise it early: some roles genuinely require it, but many employers c
     {"@type": "Question", "name": "Is standby duty compensated?", "acceptedAnswer": {"@type": "Answer", "text": "Usually via the collective agreement or contract; ensure it is agreed in writing."}},
     {"@type": "Question", "name": "Do I have to work normally the next day?", "acceptedAnswer": {"@type": "Answer", "text": "Rest rules apply under the Working Hours Act and collective agreements."}},
     {"@type": "Question", "name": "How can I tell whether a rotation is sustainable?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about rotation size, call-out numbers, alert quality and runbooks."}},
-    {"@type": "Question", "name": "Can I decline on-call duty?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes — raise it early; the employer's reaction reveals their flexibility."}}
+    {"@type": "Question", "name": "Can I decline on-call duty?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes - raise it early; the employer's reaction reveals their flexibility."}}
   ]
 }
 </script>

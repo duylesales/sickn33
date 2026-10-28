@@ -31,7 +31,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-AI coding tools let you build a working prototype in an afternoon. They do not let you launch a business. The gap between "it works on my screen" and "customers are paying for it" is where 80% of AI-built projects die — not from bad ideas, but from missing architecture.
+AI coding tools let you build a working prototype in an afternoon. They do not let you launch a business. The gap between "it works on my screen" and "customers are paying for it" is where 80% of AI-built projects die - not from bad ideas, but from missing architecture.
 
 If you have used Lovable, Bolt, or Cursor to generate your first application, you have already done something remarkable. You turned an idea into a working interface without writing code from scratch. But that interface is running on scaffolding, not foundations. And scaffolding does not hold weight.
 
@@ -43,11 +43,11 @@ What these tools produce is genuinely impressive. A complete frontend with routi
 
 But here is what AI coding consistently misses:
 
-- **Row Level Security (RLS)** — Your database is open. Any user can read any other user's data.
-- **Server-side validation** — All input validation happens in the browser, where it can be bypassed.
-- **Environment variables** — API keys sit in your frontend code, visible to anyone who opens browser dev tools.
-- **Error handling** — When something fails, your app shows a white screen instead of a helpful message.
-- **Payment webhooks** — Stripe charges go through, but your database never records the subscription.
+- **Row Level Security (RLS)** - Your database is open. Any user can read any other user's data.
+- **Server-side validation** - All input validation happens in the browser, where it can be bypassed.
+- **Environment variables** - API keys sit in your frontend code, visible to anyone who opens browser dev tools.
+- **Error handling** - When something fails, your app shows a white screen instead of a helpful message.
+- **Payment webhooks** - Stripe charges go through, but your database never records the subscription.
 
 These are not edge cases. They are the difference between a demo and a product.
 
@@ -106,7 +106,7 @@ AI coding gave you the starting line. Professional architecture gives you the fi
 
 Thomas, a personal trainer in Rotterdam, used Lovable to build a client management dashboard where trainers could track workouts, nutrition plans, and client progress. After three weeks of prompting, he had a polished React application with a professional UI, Supabase database connection, and basic authentication.
 
-Then he tried to onboard his first paying client. The Stripe integration only worked in test mode. Client data was not isolated — trainer A could see trainer B's clients by modifying the URL. And every time Thomas closed his laptop, the development server stopped and the app went offline.
+Then he tried to onboard his first paying client. The Stripe integration only worked in test mode. Client data was not isolated - trainer A could see trainer B's clients by modifying the URL. And every time Thomas closed his laptop, the development server stopped and the app went offline.
 
 He contacted two freelancers. Both quoted over €8,000 and wanted to rebuild the frontend in a different framework. A local Amsterdam agency quoted €35,000.
 
@@ -114,10 +114,10 @@ Thomas found LaunchStudio through a BNI network recommendation. The Manifera eng
 
 **Result:** Thomas launched with 12 paying trainers within the first two weeks. His SaaS now generates €2,400/month recurring revenue.
 
-> *"I spent three months trying to make my Lovable app work for real users. LaunchStudio did it in eight days. They didn't touch my design — they just made everything actually work."*
-> — **Thomas van der Berg, Founder, FitTrack Pro (Rotterdam)**
+> *"I spent three months trying to make my Lovable app work for real users. LaunchStudio did it in eight days. They didn't touch my design - they just made everything actually work."*
+> - **Thomas van der Berg, Founder, FitTrack Pro (Rotterdam)**
 
-**Cost & Timeline:** €2,100 (Launch Ready Package) — production-ready and deployed in 8 business days.
+**Cost & Timeline:** €2,100 (Launch Ready Package) - production-ready and deployed in 8 business days.
 
 ---
 
@@ -125,11 +125,11 @@ Thomas found LaunchStudio through a BNI network recommendation. The Manifera eng
 
 ### (Scenario: Non-technical founder who just finished an AI-coded prototype) Is my AI-generated code good enough to build on, or should I start over?
 
-In most cases, your AI-generated frontend is perfectly usable. The UI, routing, and component structure produced by tools like Lovable are production-quality. What needs replacing is the backend architecture — security, database access patterns, and deployment configuration. LaunchStudio keeps your frontend and rebuilds only the infrastructure layer.
+In most cases, your AI-generated frontend is perfectly usable. The UI, routing, and component structure produced by tools like Lovable are production-quality. What needs replacing is the backend architecture - security, database access patterns, and deployment configuration. LaunchStudio keeps your frontend and rebuilds only the infrastructure layer.
 
 ### (Scenario: Solo founder comparing costs between a freelancer and LaunchStudio) Why is LaunchStudio so much cheaper than hiring a freelancer or agency?
 
-LaunchStudio is powered by Manifera, whose 120+ engineers in Ho Chi Minh City deliver European-quality work at Southeast Asian operational costs. Combined with a fixed-scope approach — keeping your existing frontend instead of rebuilding — this cuts both time and cost dramatically. Pricing starts at €800 with fixed quotes.
+LaunchStudio is powered by Manifera, whose 120+ engineers in Ho Chi Minh City deliver European-quality work at Southeast Asian operational costs. Combined with a fixed-scope approach - keeping your existing frontend instead of rebuilding - this cuts both time and cost dramatically. Pricing starts at €800 with fixed quotes.
 
 ### (Scenario: Technical co-founder worried about code ownership) Will I still own my code after LaunchStudio works on it?
 
@@ -137,7 +137,7 @@ Yes, always. All code lives in your own GitHub repository, on your own hosting a
 
 ### (Scenario: Founder planning to raise seed funding) Can I show investors a LaunchStudio-launched product as proof of traction?
 
-Absolutely. A live product with real users and payment processing is significantly more compelling than a demo prototype. LaunchStudio's managed hosting package (€49/month) includes uptime monitoring, automatic backups, and security updates — exactly the infrastructure stability investors want to see.
+Absolutely. A live product with real users and payment processing is significantly more compelling than a demo prototype. LaunchStudio's managed hosting package (€49/month) includes uptime monitoring, automatic backups, and security updates - exactly the infrastructure stability investors want to see.
 
 ### (Scenario: Founder who previously had a bad experience with an offshore team) How does LaunchStudio ensure quality with a remote development team?
 
@@ -153,7 +153,7 @@ LaunchStudio operates under Manifera, founded by Dutch entrepreneur Herre Roelev
       "name": "Is my AI-generated code good enough to build on, or should I start over?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In most cases, your AI-generated frontend is perfectly usable. The UI, routing, and component structure produced by tools like Lovable are production-quality. What needs replacing is the backend architecture — security, database access patterns, and deployment configuration. LaunchStudio keeps your frontend and rebuilds only the infrastructure layer."
+        "text": "In most cases, your AI-generated frontend is perfectly usable. The UI, routing, and component structure produced by tools like Lovable are production-quality. What needs replacing is the backend architecture - security, database access patterns, and deployment configuration. LaunchStudio keeps your frontend and rebuilds only the infrastructure layer."
       }
     },
     {
@@ -161,7 +161,7 @@ LaunchStudio operates under Manifera, founded by Dutch entrepreneur Herre Roelev
       "name": "Why is LaunchStudio so much cheaper than hiring a freelancer or agency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is powered by Manifera, whose 120+ engineers in Ho Chi Minh City deliver European-quality work at Southeast Asian operational costs. Combined with a fixed-scope approach — keeping your existing frontend instead of rebuilding — this cuts both time and cost dramatically. Pricing starts at €800 with fixed quotes."
+        "text": "LaunchStudio is powered by Manifera, whose 120+ engineers in Ho Chi Minh City deliver European-quality work at Southeast Asian operational costs. Combined with a fixed-scope approach - keeping your existing frontend instead of rebuilding - this cuts both time and cost dramatically. Pricing starts at €800 with fixed quotes."
       }
     },
     {
@@ -177,7 +177,7 @@ LaunchStudio operates under Manifera, founded by Dutch entrepreneur Herre Roelev
       "name": "Can I show investors a LaunchStudio-launched product as proof of traction?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. A live product with real users and payment processing is significantly more compelling than a demo prototype. LaunchStudio's managed hosting package includes uptime monitoring, automatic backups, and security updates — exactly the infrastructure stability investors want to see."
+        "text": "Absolutely. A live product with real users and payment processing is significantly more compelling than a demo prototype. LaunchStudio's managed hosting package includes uptime monitoring, automatic backups, and security updates - exactly the infrastructure stability investors want to see."
       }
     },
     {

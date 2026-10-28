@@ -1,6 +1,6 @@
-🚨 Caleb, a CRM founder, built a sales app with **Lovable**. He had zero database tenant isolation — every customer's leads sat in shared tables with no enforcement layer — and it raised red flags the moment VC investors ran technical diligence. 📉
+🚨 Caleb, a CRM founder, built a sales app with **Lovable**. He had zero database tenant isolation - every customer's leads sat in shared tables with no enforcement layer - and it raised red flags the moment VC investors ran technical diligence. 📉
 
-In 2026, VCs don't fund a good demo — they fund defensible architecture, and a shared, unisolated database is one of the fastest ways to kill a term sheet. 🧠
+In 2026, VCs don't fund a good demo - they fund defensible architecture, and a shared, unisolated database is one of the fastest ways to kill a term sheet. 🧠
 
 ❌ Every customer's leads sitting in shared tables with no tenant boundary
 ❌ No enforcement layer stopping one tenant from ever querying another's data

@@ -1,4 +1,4 @@
-🔥 Ryder bouwde een prototype met **Cursor** — Ryder, een support-lead, bouwde een interne kennisbank, maar een gebruiker manipuleerde de zoekbalk met een geïnjecteerde instructie om directiedocumenten te downloaden. 🧠
+🔥 Ryder bouwde een prototype met **Cursor** - Ryder, een support-lead, bouwde een interne kennisbank, maar een gebruiker manipuleerde de zoekbalk met een geïnjecteerde instructie om directiedocumenten te downloaden. 🧠
 
 Het beveiligen van vector-databases tegen Prompt Injection vereist strikte metadata-filtering op query-niveau, LLM-firewalls en Read-Only tools.
 
@@ -12,7 +12,7 @@ Het beveiligen van vector-databases tegen Prompt Injection vereist strikte metad
 
 Bij **LaunchStudio** lossen we exact dit type AI-beveiligingsarchitectuur en vectorstore-beveiligingsvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Ryders kennisbank werd hermetisch afgesloten: Prompt-injectieaanvallen werden tijdens opvolgende penetratietests in 100% van de gevallen geblokkeerd. (€2.100 (Vector Security Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Ryders kennisbank werd hermetisch afgesloten: Prompt-injectieaanvallen werden tijdens opvolgende penetratietests in 100% van de gevallen geblokkeerd. (€2.100 (Vector Security Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/securing-vector-database-prompt-injection
 

@@ -1,4 +1,4 @@
-🛡️ "Can you walk us through your threat model?" — the question that stops most AI-native founders cold the first time an enterprise security team asks it.
+🛡️ "Can you walk us through your threat model?" - the question that stops most AI-native founders cold the first time an enterprise security team asks it.
 
 If your Lovable, Bolt, or Cursor-built platform has never been threat modeled, you don't know what prompt injection, RAG poisoning, or agentic tool-call risks are already sitting inside it.
 
@@ -12,7 +12,7 @@ If your Lovable, Bolt, or Cursor-built platform has never been threat modeled, y
 
 At **LaunchStudio**, we've threat-modeled and hardened AI-native platforms built on Lovable, Bolt, and Cursor since 2014 through Manifera, across 160+ delivered projects. 🔍
 
-One founder's law firm pilot nearly stalled on an unanswered security questionnaire — until a fixed-scope threat model found and fixed a live prompt-injection path and an unthrottled API key. Result: pilot approved with zero follow-up questions. (€3,200, Enterprise Hardening Package — 9 business days.) 🚀
+One founder's law firm pilot nearly stalled on an unanswered security questionnaire - until a fixed-scope threat model found and fixed a live prompt-injection path and an unthrottled API key. Result: pilot approved with zero follow-up questions. (€3,200, Enterprise Hardening Package - 9 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-threat-modeling-ai-platform
 

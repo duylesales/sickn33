@@ -16,9 +16,9 @@ The 7-layer stack every AI startup needs: 📊
 6️⃣ Live, secured hosting ❌
 7️⃣ Monitoring & alerts ❌
 
-AI tools deliver layer 1 and part of 2. Layers 3-7 are what **LaunchStudio** builds — backed by Manifera's 120+ engineers, 160+ enterprise projects. 🛡️
+AI tools deliver layer 1 and part of 2. Layers 3-7 are what **LaunchStudio** builds - backed by Manifera's 120+ engineers, 160+ enterprise projects. 🛡️
 
-📐 Order matters too: auth ALWAYS goes first — every other layer (database isolation, billing, alerts) is keyed off knowing who a request belongs to. Build payments before auth and you're charging people your system can't reliably identify.
+📐 Order matters too: auth ALWAYS goes first - every other layer (database isolation, billing, alerts) is keyed off knowing who a request belongs to. Build payments before auth and you're charging people your system can't reliably identify.
 
 She launched to 19 planners, zero data incidents. 🚀
 

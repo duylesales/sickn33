@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The offer includes something extra on arrival: a sign-on payment, relocation costs covered, a certification programme funded, or a retention amount payable after a year. Attached to it, usually in a separate paragraph near the end of the contract, is the condition — if you leave within a defined period, you pay it back. Candidates tend to read the first part carefully and the second part quickly. The second part is the one that determines whether this money is a benefit or a rope, because it decides what happens if the role turns out to be different from what you were told.
+The offer includes something extra on arrival: a sign-on payment, relocation costs covered, a certification programme funded, or a retention amount payable after a year. Attached to it, usually in a separate paragraph near the end of the contract, is the condition - if you leave within a defined period, you pay it back. Candidates tend to read the first part carefully and the second part quickly. The second part is the one that determines whether this money is a benefit or a rope, because it decides what happens if the role turns out to be different from what you were told.
 
 This article gives general information rather than legal advice; for your own contract, an hour with a lawyer, your union or your legal expenses insurer is money well spent, and the free **Juridisch Loket** can point you in the right direction.
 
@@ -53,7 +53,7 @@ This article gives general information rather than legal advice; for your own co
 
 ## The Dutch Rules Worth Knowing
 
-The area that has changed most is training costs. Following the implementation of the EU directive on transparent and predictable working conditions, training that an employer is obliged to provide — because law or an applicable collective agreement requires it for the job — must in principle be provided free of charge to the employee, count as working time where possible, and cannot be made subject to a repayment clause.
+The area that has changed most is training costs. Following the implementation of the EU directive on transparent and predictable working conditions, training that an employer is obliged to provide - because law or an applicable collective agreement requires it for the job - must in principle be provided free of charge to the employee, count as working time where possible, and cannot be made subject to a repayment clause.
 
 Training outside that category may still carry a study costs clause, but Dutch case law has long set conditions on such clauses: the employee should be informed in advance about the costs and the arrangement, the period during which the employer benefits should be defined, and the repayment obligation should reduce over that period rather than remaining at full value until the last day.
 
@@ -119,7 +119,7 @@ And if the employer refuses every amendment while insisting the role is attracti
 - The period is a year or less, with a sliding scale.
 - Repayment applies only if you resign.
 - The amount is genuinely additional rather than a substitute for base salary.
-- You have strong reasons to expect to stay — the work, the team, the location.
+- You have strong reasons to expect to stay - the work, the team, the location.
 - The employer will discuss the terms openly.
 - Relocation costs are covered generously and the condition is proportionate.
 
@@ -136,7 +136,7 @@ And if the employer refuses every amendment while insisting the role is attracti
 
 Sign-on money is paid to get you through the door. Retention money is paid to keep you somewhere you might otherwise leave, and it appears in specific circumstances: an acquisition, a platform migration, a regulatory programme, or the run-up to a company sale.
 
-The structure is usually simple — an amount payable on a future date if you are still employed — and the details decide whether it is worth anything.
+The structure is usually simple - an amount payable on a future date if you are still employed - and the details decide whether it is worth anything.
 
 **What counts as "still employed".** Employed on the date, or employed and not under notice? Many arrangements exclude anyone who has resigned, which means handing in your notice a week early can cost the entire amount.
 
@@ -146,7 +146,7 @@ The structure is usually simple — an amount payable on a future date if you ar
 
 **Timing and tax.** These amounts are taxed as income when paid, which can land awkwardly, and the treatment of a payment spanning a transaction is worth checking with an adviser.
 
-**What you are being asked to give up.** A retention payment is compensation for staying through a period you might not otherwise choose — a reorganisation, an integration, a stressful migration. Judge the amount against that, not against your salary.
+**What you are being asked to give up.** A retention payment is compensation for staying through a period you might not otherwise choose - a reorganisation, an integration, a stressful migration. Judge the amount against that, not against your salary.
 
 The negotiation points are ordinary: payment on employer-initiated termination, a clear definition of the qualifying date, and where possible, staged payments rather than a single cliff. Employers who are serious about keeping people through a transition usually agree to all three, because the alternative is losing the person before the date.
 
@@ -156,7 +156,7 @@ The negotiation points are ordinary: payment on employer-initiated termination, 
 
 A machine learning engineer receives an offer including a sign-on payment, repayable in full if he leaves within two years, plus a funded certification with its own repayment condition.
 
-He asks first whether the sign-on amount can go into his base salary instead. The answer is no — it comes from a recruitment budget rather than the salary budget, which is a common and honest reason.
+He asks first whether the sign-on amount can go into his base salary instead. The answer is no - it comes from a recruitment budget rather than the salary budget, which is a common and honest reason.
 
 So he asks for three changes. The repayment reduces monthly over the period. It applies only if he resigns, not if the company terminates or restructures. And the period drops from two years to one.
 
@@ -164,7 +164,7 @@ The employer agrees to the sliding scale and the trigger limitation, and holds a
 
 Fourteen months later his manager leaves and the team is reorganised. He considers moving, calculates the remaining obligation under the sliding scale, and finds it small enough not to influence the decision.
 
-He stays, in the end, for reasons that have nothing to do with the clause — which is exactly the position he had negotiated for.
+He stays, in the end, for reasons that have nothing to do with the clause - which is exactly the position he had negotiated for.
 
 ## Key Takeaways
 
@@ -172,7 +172,7 @@ He stays, in the end, for reasons that have nothing to do with the clause — wh
 - Training the employer is obliged to provide must in principle be free and cannot generally be made repayable; other study costs clauses must meet conditions including a reducing obligation over a defined period.
 - Check the trigger, the sliding scale, gross or net, the length of the period, what is covered and what happens on redundancy or illness.
 - A one-off payment is worth far less than the same amount on your base salary, which compounds and counts for pension, allowances and borrowing.
-- Negotiate a sliding scale, a trigger limited to your own resignation and a clear calculation — all three are commonly granted.
+- Negotiate a sliding scale, a trigger limited to your own resignation and a clear calculation - all three are commonly granted.
 
 ## Where to Start
 
@@ -183,7 +183,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 ## Frequently Asked Questions
 
 ### (Scenario: candidate offered a sign-on payment) Is a repayment clause normal in the Netherlands?
-For sign-on payments, relocation costs and some training, yes. What varies is the length, the trigger and whether the obligation reduces over time — and those are negotiable.
+For sign-on payments, relocation costs and some training, yes. What varies is the length, the trigger and whether the obligation reduces over time - and those are negotiable.
 
 ### (Scenario: candidate offered funded training) Can my employer make me repay training costs?
 Training the employer is obliged to provide must in principle be free and not repayable. Other training may carry a clause, subject to conditions including advance information and a reducing obligation. Verify the current rules for your case.
@@ -195,7 +195,7 @@ Less than the same amount on your base salary. It does not compound, usually doe
 A sliding scale that reduces monthly, a trigger limited to your own resignation, and a clear calculation stated in the same terms as the payment you received.
 
 ### (Scenario: candidate worried about being locked in) What is the real risk?
-That leaving becomes expensive exactly when leaving becomes right — after a reorganisation, a cancelled project or a manager's departure. Decide in advance what you would do in that situation.
+That leaving becomes expensive exactly when leaving becomes right - after a reorganisation, a cancelled project or a manager's departure. Decide in advance what you would do in that situation.
 
 <script type="application/ld+json">
 {
@@ -204,7 +204,7 @@ That leaving becomes expensive exactly when leaving becomes right — after a re
   "mainEntity": [
     {"@type": "Question", "name": "Is a repayment clause normal in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "For sign-on payments, relocation and some training yes; length, trigger and tapering are negotiable."}},
     {"@type": "Question", "name": "Can my employer make me repay training costs?", "acceptedAnswer": {"@type": "Answer", "text": "Mandatory training must in principle be free and not repayable; other clauses must meet conditions."}},
-    {"@type": "Question", "name": "How much is a sign-on bonus really worth?", "acceptedAnswer": {"@type": "Answer", "text": "Less than the same amount on base salary — it does not compound or count for pension and borrowing."}},
+    {"@type": "Question", "name": "How much is a sign-on bonus really worth?", "acceptedAnswer": {"@type": "Answer", "text": "Less than the same amount on base salary - it does not compound or count for pension and borrowing."}},
     {"@type": "Question", "name": "What should I try to change?", "acceptedAnswer": {"@type": "Answer", "text": "A monthly sliding scale, a trigger limited to resignation, and a clear calculation."}},
     {"@type": "Question", "name": "What is the real risk?", "acceptedAnswer": {"@type": "Answer", "text": "Being locked in exactly when leaving becomes the right decision."}}
   ]

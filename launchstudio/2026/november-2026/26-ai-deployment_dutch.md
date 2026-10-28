@@ -114,9 +114,9 @@ Binnen 10 werkdagen bouwde LaunchStudio een robuuste deploymentpijplijn: alle sl
 **Resultaat:** MedLiterature lanceerde opnieuw en verwerkte moeiteloos 300 gelijktijdige analyses zonder een enkele time-out. Meerdere universitaire afdelingen betalen inmiddels €1.200 per maand voor toegang.
 
 > *"Ik ben onderzoeker, geen DevOps-engineer. De code die ik met AI bouwde was wetenschappelijk solide, maar de cloudinfrastructuur liet het direct afweten. LaunchStudio bouwde de asynchrone deploymentpijplijn die mijn app nodig had om een echt bedrijf te worden."*
-> — **Dr. Lars van der Berg, Oprichter, MedLiterature (Leiden)**
+> - **Dr. Lars van der Berg, Oprichter, MedLiterature (Leiden)**
 
-**Kosten & Doorlooptijd:** €5.200 (Launch & Grow Pakket met Asynchrone Architectuur Add-on) — productie-klaar en live binnen 10 werkdagen.
+**Kosten & Doorlooptijd:** €5.200 (Launch & Grow Pakket met Asynchrone Architectuur Add-on) - productie-klaar en live binnen 10 werkdagen.
 
 ---
 

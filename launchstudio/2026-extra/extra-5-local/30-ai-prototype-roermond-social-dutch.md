@@ -1,4 +1,4 @@
-⚠️ Iris Coenen bouwde OutletOps — een tool voor personeelsplanning en voorraadsynchronisatie voor outletretailers nabij Roermond — met Bolt in twee weken. Tijdens haar eigen belastingtest vóór het drukke najaarsseizoen, waarbij meerdere personeelsleden tegelijk inklokten, begon de planningsdatabase één dienst tegelijkertijd aan twee medewerkers toe te wijzen. 😳
+⚠️ Iris Coenen bouwde OutletOps - een tool voor personeelsplanning en voorraadsynchronisatie voor outletretailers nabij Roermond - met Bolt in twee weken. Tijdens haar eigen belastingtest vóór het drukke najaarsseizoen, waarbij meerdere personeelsleden tegelijk inklokten, begon de planningsdatabase één dienst tegelijkertijd aan twee medewerkers toe te wijzen. 😳
 
 De backend van Bolt had helemaal geen transactievergrendeling op de schrijfacties voor ploegentoewijzing. Bijna-gelijktijdige updates konden elkaar stilletjes overschrijven. 🧠
 
@@ -13,7 +13,7 @@ De backend van Bolt had helemaal geen transactievergrendeling op de schrijfactie
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ opgeleverde projecten voor klanten zoals Vodafone, passen we dezelfde productiediscipline toe op prototypes van oprichters als op zakelijke systemen die reële belasting verwerken. 🛡️
 
-Het resultaat voor OutletOps: de tool lanceerde bij alle zeven retailers vóór het najaarsseizoen zonder één enkel planningsconflict — iets wat Iris rechtstreeks toeschrijft aan het opsporen van de bug tijdens het testen, niet tijdens de daadwerkelijke drukte. 🚀
+Het resultaat voor OutletOps: de tool lanceerde bij alle zeven retailers vóór het najaarsseizoen zonder één enkel planningsconflict - iets wat Iris rechtstreeks toeschrijft aan het opsporen van de bug tijdens het testen, niet tijdens de daadwerkelijke drukte. 🚀
 
 👉 Bouwt u iets dat een drukke zaterdag moet overleven? Belasttest het vóór lancering: https://launchstudio.eu/nl/blog/30-ai-prototype-roermond
 

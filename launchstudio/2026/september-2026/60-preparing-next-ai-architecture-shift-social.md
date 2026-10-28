@@ -1,6 +1,6 @@
 🚨 Christian, a store manager, built an auto-reordering bot with **Cursor**. It kept stalling or producing malformed orders whenever it tried to check stock, calculate reorder quantities, and place a supplier order all inside one single monolithic AI query. 🔄
 
-The next architecture shift in AI isn't a smarter model — it's moving from one "God Prompt" trying to do everything, to a pipeline of specialized agents that can be traced and retried individually. 🧠
+The next architecture shift in AI isn't a smarter model - it's moving from one "God Prompt" trying to do everything, to a pipeline of specialized agents that can be traced and retried individually. 🧠
 
 ❌ One massive prompt trying to check stock, calculate quantities, and place an order at once
 ❌ Failures with no way to tell which step in the chain actually broke

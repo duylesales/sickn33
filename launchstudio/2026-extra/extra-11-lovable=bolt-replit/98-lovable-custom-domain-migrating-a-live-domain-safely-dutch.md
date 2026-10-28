@@ -46,9 +46,9 @@ Vijf afzonderlijke systemen, elk op een andere plek geconfigureerd, en elk perfe
 
 Dit is met afstand de meest effectieve voorbereiding, en tevens degene die het vaakst wordt overgeslagen:
 
-Elk afzonderlijk DNS-record bevat een **Time-To-Live (TTL)**: de tijd dat resolvers en internetproviders het antwoord in hun cache mogen vasthouden. Als jouw TTL momenteel op 24 uur (86.400 seconden) staat en je past het IP-adres aan, blijven sommige bezoekers nog een volle dag de oude server benaderen — en daar kun je met geen mogelijkheid iets aan veranderen.
+Elk afzonderlijk DNS-record bevat een **Time-To-Live (TTL)**: de tijd dat resolvers en internetproviders het antwoord in hun cache mogen vasthouden. Als jouw TTL momenteel op 24 uur (86.400 seconden) staat en je past het IP-adres aan, blijven sommige bezoekers nog een volle dag de oude server benaderen - en daar kun je met geen mogelijkheid iets aan veranderen.
 
-Verlaag daarom enkele dagen vóór de geplande migratie de TTL van alle relevante records naar een minimale waarde — bijvoorbeeld 300 seconden (5 minuten). Wacht vervolgens minimaal 24 uur totdat de oude, lange TTL wereldwijd overal uit de caches is verdwenen. Wanneer je daarna de daadwerkelijke overstap maakt, verspreidt de wijziging zich binnen vijf minuten wereldwijd. En mocht er onverhoopt iets misgaan, dan draai je de wijziging net zo snel weer terug.
+Verlaag daarom enkele dagen vóór de geplande migratie de TTL van alle relevante records naar een minimale waarde - bijvoorbeeld 300 seconden (5 minuten). Wacht vervolgens minimaal 24 uur totdat de oude, lange TTL wereldwijd overal uit de caches is verdwenen. Wanneer je daarna de daadwerkelijke overstap maakt, verspreidt de wijziging zich binnen vijf minuten wereldwijd. En mocht er onverhoopt iets misgaan, dan draai je de wijziging net zo snel weer terug.
 
 Verhoog de TTL pas weer een volle week na een bewezen stabiele migratie.
 
@@ -134,7 +134,7 @@ Vincent Bogaers bouwde met Lovable het platform Taxatierapport: software voor he
 
 Vincent besloot over te stappen naar een dedicated hostingomgeving en wilde tegelijkertijd het DNS-beheer centraliseren bij dezelfde partij. Hij voerde de webserverrecords in, paste op donderdagmiddag de naamservers aan bij zijn registrar, en zag tot zijn vreugde dat de website binnen twintig minuten actief was op de nieuwe host. Tevreden sloot hij zijn laptop.
 
-De mailserverrecords (MX, SPF, DKIM) waren echter niet overgenomen. Gedurende drie volle dagen werd elke inkomende e-mail naar het domein geruisloos geweigerd door de ontvangende mailservers — inclusief het centrale contactadres dat onder elk taxatierapport stond afgedrukt voor vragen van banken en hypotheekadviseurs.
+De mailserverrecords (MX, SPF, DKIM) waren echter niet overgenomen. Gedurende drie volle dagen werd elke inkomende e-mail naar het domein geruisloos geweigerd door de ontvangende mailservers - inclusief het centrale contactadres dat onder elk taxatierapport stond afgedrukt voor vragen van banken en hypotheekadviseurs.
 
 Op maandagochtend openbaarden zich twee aanvullende crisissituaties: niemand van de negentien makelaars kon meer inloggen, omdat de callback URL van de authenticatiedienst nog naar het oude webadres verwees (de makelaars hadden op vrijdag gedacht dat het systeem een tijdelijke storing had); en de maandelijkse incassowebhook wees nog naar het oude platform, waardoor elf dagen aan abonnementsmutaties niet werden geregistreerd, inclusief twee opzeggingen die daardoor gratis toegang behielden.
 
@@ -143,9 +143,9 @@ In vijf werkdagen werd de situatie hersteld: MX-records, SPF, DKIM en DMARC werd
 **Resultaat:** De registrar-overstap verliep drie weken later vlekkeloos. Vincent schat dat de drie dagen onbereikbaarheid per e-mail hem bij één taxatiebureau bijna een vol jaar aan opgebouwd vertrouwen heeft gekost.
 
 > *"De website laadde binnen twintig minuten en ik dacht dat ik klaar was. Drie dagen lang werd elke e-mail naar mijn bedrijf geweigerd, inclusief het e-mailadres dat op elk taxatierapport stond dat we ooit hadden verstuurd."*
-> — **Vincent Bogaers, Oprichter, Taxatierapport (Bergen op Zoom)**
+> - **Vincent Bogaers, Oprichter, Taxatierapport (Bergen op Zoom)**
 
-**Kosten & Doorlooptijd:** € 2.800 (herstel mailrecords en authenticatie, correctie inlogcallbacks, webhook-herstel met datareconciliatie, DNS-zone inventarisatie en draaiboek) — opgeleverd in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 2.800 (herstel mailrecords en authenticatie, correctie inlogcallbacks, webhook-herstel met datareconciliatie, DNS-zone inventarisatie en draaiboek) - opgeleverd in 5 werkdagen.
 
 ## Veelgestelde vragen
 

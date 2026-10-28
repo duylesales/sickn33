@@ -1,4 +1,4 @@
-🔥 Lincoln built a prototype using **Lovable** — lincoln, a startup founder, used **lovable** to build an ai video transcriber prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Lincoln built a prototype using **Lovable** - lincoln, a startup founder, used **lovable** to build an ai video transcriber prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Lincoln's application achieved production readiness: Lincoln slashed video transcription server infrastructure costs by 72% while maintaining accuracy levels his users never noticed had changed. (€4,400 (GPU Optimization Package) — production-ready and deployed in 12 business days.). 🚀
+Lincoln's application achieved production readiness: Lincoln slashed video transcription server infrastructure costs by 72% while maintaining accuracy levels his users never noticed had changed. (€4,400 (GPU Optimization Package) - production-ready and deployed in 12 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/open-source-ai-hardware-accelerators
 

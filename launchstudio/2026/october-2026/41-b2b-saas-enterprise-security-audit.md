@@ -11,7 +11,7 @@ Your digital agency just pitched a brilliant AI-driven internal tool to a major 
 
 Then, the client's procurement department sends over a 150-question **Vendor Security Assessment Questionnaire (VSAQ)**.
 
-Suddenly, your design agency is being interrogated about database encryption at rest, ISO 27001 or SOC 2 Type II compliance, penetration testing history, and disaster recovery Time-To-Recover (TTR) metrics. If you built the prototype using Bubble, Airtable, and Make.com, you are going to fail this audit spectacularly. The €150,000 deal will evaporate, and your agency will be labeled a security risk — a label that follows you into every future pitch to that client's industry, because procurement teams talk to each other.
+Suddenly, your design agency is being interrogated about database encryption at rest, ISO 27001 or SOC 2 Type II compliance, penetration testing history, and disaster recovery Time-To-Recover (TTR) metrics. If you built the prototype using Bubble, Airtable, and Make.com, you are going to fail this audit spectacularly. The €150,000 deal will evaporate, and your agency will be labeled a security risk - a label that follows you into every future pitch to that client's industry, because procurement teams talk to each other.
 
 Selling AI software to enterprises is no longer just about good UX; it is about rigorous IT compliance. Here is how agencies can navigate the enterprise security audit and secure six-figure contracts.
 
@@ -21,7 +21,7 @@ Corporate Chief Information Security Officers (CISOs) do not care how pretty you
 
 ### 1. The Multi-Tenant Data Leak Risk
 
-If your agency built the SaaS on a shared database without strict, cryptographically enforced Row Level Security (RLS), the IT auditor will flag it immediately. They need absolute proof that a frontend routing bug won't accidentally show their proprietary corporate data to another user on your platform — proof usually means showing the actual RLS policy definitions, not just describing the intent in a slide.
+If your agency built the SaaS on a shared database without strict, cryptographically enforced Row Level Security (RLS), the IT auditor will flag it immediately. They need absolute proof that a frontend routing bug won't accidentally show their proprietary corporate data to another user on your platform - proof usually means showing the actual RLS policy definitions, not just describing the intent in a slide.
 
 ### 2. Third-Party LLM Data Harvesting
 
@@ -33,37 +33,37 @@ If your AI feature sends corporate data to the standard, consumer-facing OpenAI 
 
 ### 4. Encryption Gaps
 
-Auditors will ask, specifically, whether data is encrypted both "at rest" (AES-256 on your database volumes, typically managed through your cloud provider's Key Management Service) and "in transit" (TLS 1.2 or higher on every connection, no exceptions for internal service-to-service calls). "We use HTTPS on the frontend" answers only half the question — a surprising number of agencies get caught not knowing whether their database backups themselves are encrypted, which is exactly the kind of gap a 150-question VSAQ is designed to surface.
+Auditors will ask, specifically, whether data is encrypted both "at rest" (AES-256 on your database volumes, typically managed through your cloud provider's Key Management Service) and "in transit" (TLS 1.2 or higher on every connection, no exceptions for internal service-to-service calls). "We use HTTPS on the frontend" answers only half the question - a surprising number of agencies get caught not knowing whether their database backups themselves are encrypted, which is exactly the kind of gap a 150-question VSAQ is designed to surface.
 
 ### 5. The Unmapped Sub-processor Chain
 
-A subtler disqualifier: every third-party service your app touches — your LLM provider, your email sender, your analytics tool, your file storage — is a sub-processor under GDPR, and enterprise auditors expect a complete, named list of all of them with their own compliance certifications attached. Agencies frequently cannot produce this list at all, because nobody tracked which services accumulated in the stack as the prototype grew. A missing sub-processor list reads to a CISO as "nobody is actually in control of this system," which is close enough to the truth to be disqualifying on its own.
+A subtler disqualifier: every third-party service your app touches - your LLM provider, your email sender, your analytics tool, your file storage - is a sub-processor under GDPR, and enterprise auditors expect a complete, named list of all of them with their own compliance certifications attached. Agencies frequently cannot produce this list at all, because nobody tracked which services accumulated in the stack as the prototype grew. A missing sub-processor list reads to a CISO as "nobody is actually in control of this system," which is close enough to the truth to be disqualifying on its own.
 
 ## The White-Label Compliance Solution
 
-As a design, marketing, or no-code agency, you likely do not have an internal Chief Technology Officer (CTO) or a dedicated DevOps team to answer a 150-question VSAQ. Trying to fake your way through the audit will result in legal liability, not just a lost deal — misrepresenting your security posture in a signed vendor agreement can expose your agency to breach-of-contract claims later.
+As a design, marketing, or no-code agency, you likely do not have an internal Chief Technology Officer (CTO) or a dedicated DevOps team to answer a 150-question VSAQ. Trying to fake your way through the audit will result in legal liability, not just a lost deal - misrepresenting your security posture in a signed vendor agreement can expose your agency to breach-of-contract claims later.
 
 This is why top European agencies partner with [LaunchStudio](https://launchstudio.eu/en/).
 
-Powered by the engineering standards of [Manifera](https://www.manifera.com/) — 11+ years of production experience, 160+ delivered projects for enterprise clients including Vodafone and TNO, with engineering teams across Amsterdam, Singapore, and Ho Chi Minh City — LaunchStudio acts as your agency's invisible, white-label technical department. We specialize in building the hardened, enterprise-grade backends required to pass B2B security audits.
+Powered by the engineering standards of [Manifera](https://www.manifera.com/) - 11+ years of production experience, 160+ delivered projects for enterprise clients including Vodafone and TNO, with engineering teams across Amsterdam, Singapore, and Ho Chi Minh City - LaunchStudio acts as your agency's invisible, white-label technical department. We specialize in building the hardened, enterprise-grade backends required to pass B2B security audits.
 
-> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." — Herre Roelevink, Founder & Director, Manifera
+> "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's about the architecture and the security required to bring those products to maturity. We have eleven years of experience in exactly that." - Herre Roelevink, Founder & Director, Manifera
 
 When the 150-question IT audit lands on your desk, you don't panic. You hand it to us.
 
-We configure the secure EU-based AWS servers with KMS-managed encryption at rest. We implement the PostgreSQL Row Level Security with policies you can show, not just describe. We establish the secure, zero-retention LLM routing with signed DPAs on file. We even help you fill out the VSAQ documentation, providing the formal architecture diagrams, penetration testing reports, and disaster recovery plans (including tested restore times, not just backup schedules) that corporate IT departments demand. We make your agency look like a massive, globally compliant software firm — see [our packages](https://launchstudio.eu/en/#packages) for how a compliance engagement is typically scoped.
+We configure the secure EU-based AWS servers with KMS-managed encryption at rest. We implement the PostgreSQL Row Level Security with policies you can show, not just describe. We establish the secure, zero-retention LLM routing with signed DPAs on file. We even help you fill out the VSAQ documentation, providing the formal architecture diagrams, penetration testing reports, and disaster recovery plans (including tested restore times, not just backup schedules) that corporate IT departments demand. We make your agency look like a massive, globally compliant software firm - see [our packages](https://launchstudio.eu/en/#packages) for how a compliance engagement is typically scoped.
 
 ## What to Do the Moment the VSAQ Lands
 
-Do not try to answer the questionnaire yourself in an afternoon to "not look slow." A rushed, partially accurate VSAQ response is worse than a delayed, accurate one — auditors cross-reference your answers against what they can independently verify (SSL certificate details, public DNS records, breach databases), and inconsistencies read as either incompetence or dishonesty. Flag the questionnaire immediately, get your engineering partner involved before you write a single answer, and only submit once every claim can be backed by an artifact — a policy definition, a diagram, a signed agreement — not just a sentence.
+Do not try to answer the questionnaire yourself in an afternoon to "not look slow." A rushed, partially accurate VSAQ response is worse than a delayed, accurate one - auditors cross-reference your answers against what they can independently verify (SSL certificate details, public DNS records, breach databases), and inconsistencies read as either incompetence or dishonesty. Flag the questionnaire immediately, get your engineering partner involved before you write a single answer, and only submit once every claim can be backed by an artifact - a policy definition, a diagram, a signed agreement - not just a sentence.
 
-It also helps to know, going in, roughly which framework the client is anchored to. European corporates lean toward ISO 27001; US-headquartered enterprises and their European subsidiaries more often ask about SOC 2 Type II. The two overlap heavily but not completely, and an agency that can name which one the client actually cares about — instead of producing a generic answer to both — reads as materially more credible in the first five minutes of the conversation.
+It also helps to know, going in, roughly which framework the client is anchored to. European corporates lean toward ISO 27001; US-headquartered enterprises and their European subsidiaries more often ask about SOC 2 Type II. The two overlap heavily but not completely, and an agency that can name which one the client actually cares about - instead of producing a generic answer to both - reads as materially more credible in the first five minutes of the conversation.
 
 ## Key Takeaways
 
 - Winning a B2B enterprise contract requires passing a rigorous, 150+ question IT security audit covering encryption, RLS, DevOps maturity, and LLM data handling.
 - CISOs will instantly reject software built on fragile no-code platforms, shared databases without RLS, consumer-tier AI APIs, or unverifiable encryption claims.
-- Every VSAQ answer should be backed by an artifact — a policy, a diagram, a signed DPA — not just an assertion.
+- Every VSAQ answer should be backed by an artifact - a policy, a diagram, a signed DPA - not just an assertion.
 - Digital agencies often lack the internal DevOps and compliance documentation to pass these audits alone.
 - LaunchStudio provides white-label enterprise engineering, building the secure backend and providing the compliance documentation you need to close the deal.
 
@@ -75,7 +75,7 @@ It also helps to know, going in, roughly which framework the client is anchored 
 
 A creative design agency in Amsterdam pitched a custom AI onboarding portal to a multinational bank. The portal used AI to generate personalized training videos for new banking employees. The bank loved the pitch and verbally agreed to a €120,000 development contract.
 
-A week later, the bank's IT department sent the agency a grueling 200-question security audit. The agency had planned to build the backend using Firebase and Zapier. As they read the questionnaire — asking about "SOC 2 Type II compliance," "VPC peering," and "PII encryption at rest" — they realized their tech stack would fail immediately. They had no idea how to answer the questions, let alone produce evidence for them.
+A week later, the bank's IT department sent the agency a grueling 200-question security audit. The agency had planned to build the backend using Firebase and Zapier. As they read the questionnaire - asking about "SOC 2 Type II compliance," "VPC peering," and "PII encryption at rest" - they realized their tech stack would fail immediately. They had no idea how to answer the questions, let alone produce evidence for them.
 
 Facing the loss of the contract, the agency's director contacted **LaunchStudio (by Manifera)**.
 
@@ -85,7 +85,7 @@ Crucially, our senior architects sat down with the agency and co-authored the 20
 
 **Result:** The bank's CISO reviewed the documentation and approved the architecture within 48 hours. The agency secured the €120,000 contract, delivered a beautiful frontend, and let LaunchStudio securely manage the backend. *"We are a UX agency, not a cybersecurity firm. LaunchStudio provided the enterprise muscle we needed to pass the audit and win the bank's trust."*
 
-**Cost & Timeline:** €8,000 (Enterprise Backend Architecture & IT Audit Support) — completed in 15 business days.
+**Cost & Timeline:** €8,000 (Enterprise Backend Architecture & IT Audit Support) - completed in 15 business days.
 
 ---
 

@@ -2,10 +2,10 @@
 
 😱 Confusing a gorgeous Lovable prototype with a "finished" product
 😱 Trying to prompt your way to real security (spoiler: it doesn't work)
-😱 "I'll add payments later" — the sentence that killed the most startups
+😱 "I'll add payments later" - the sentence that killed the most startups
 😱 Building horizontal "AI for everything" instead of a real niche
 😱 Going solo on a stack too complex for one person to manage
-😱 Perfectionism over presence — polishing prompts while competitors shipped
+😱 Perfectionism over presence - polishing prompts while competitors shipped
 
 The founders who won in 2026 did ONE thing differently: they launched fast, then brought in specialized engineering for the last mile. 🎯
 

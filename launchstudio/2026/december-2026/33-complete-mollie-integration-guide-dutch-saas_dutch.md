@@ -43,13 +43,13 @@ Mollie is in Nederland gebouwd, voor de Nederlandse markt, en dat is zichtbaar i
 Mollie verwerkt terugkerende abonnementsbetalingen via de Payments API in combinatie met een klant- en mandaatsysteem: een klant autoriseert een eerste betaling, wat een herbruikbaar mandaat aanmaakt voor toekomstige automatische incasso's. Dit verschilt architectonisch wezenlijk van een eenmalige afrekening en moet specifiek worden ontworpen voor abonnementsmodellen.
 
 ### Webhook-Afhandeling voor Betaalstatus-Updates
-Net als Stripe communiceert Mollie statuswijzigingen van betalingen via webhooks. Uw applicatie moet deze betrouwbaar en idempotent verwerken — hetzelfde principe dat geldt voor Stripe-facturatie is hier onverkort van toepassing, aangezien dubbele of gemiste webhooks bij elke payment provider tot identieke facturatiefouten leiden.
+Net als Stripe communiceert Mollie statuswijzigingen van betalingen via webhooks. Uw applicatie moet deze betrouwbaar en idempotent verwerken - hetzelfde principe dat geldt voor Stripe-facturatie is hier onverkort van toepassing, aangezien dubbele of gemiste webhooks bij elke payment provider tot identieke facturatiefouten leiden.
 
 ### Het Afhandelen van de Specifieke iDEAL Betaalstroom
 In tegenstelling tot een creditcardbetaling die binnen één formulier wordt afgerond, leidt iDEAL de klant door naar de authenticatie-omgeving van zijn eigen bank vóórdat hij terugkeert naar uw applicatie. Uw integratie moet deze redirect-and-return stroom soepel afhandelen, inclusief situaties waarin een bezoeker het proces halverwege afbreekt bij zijn bank.
 
 ### Btw-Berekening en Facturatie voor Nederlandse en EU-Klanten
-Mollie verzorgt niet automatisch de btw-berekening en facturatie — dit moet worden ingebouwd in uw applicatielogica of via een aanvullende facturatietool worden afgehandeld, met de juiste btw-behandeling afhankelijk van of uw klant een Nederlandse consument, een Nederlands bedrijf of een onderneming elders in de EU is.
+Mollie verzorgt niet automatisch de btw-berekening en facturatie - dit moet worden ingebouwd in uw applicatielogica of via een aanvullende facturatietool worden afgehandeld, met de juiste btw-behandeling afhankelijk van of uw klant een Nederlandse consument, een Nederlands bedrijf of een onderneming elders in de EU is.
 
 ## Mollie versus Stripe: Een Praktische Vergelijking
 
@@ -61,7 +61,7 @@ Mollie verzorgt niet automatisch de btw-berekening en facturatie — dit moet wo
 | Abonnementsfunctionaliteiten | Solide, overzichtelijk | Zeer volwassen en uitgebreid |
 | Beste use-case | Focus op Nederland / Benelux | Focus op wereldwijde markt |
 
-Veel LaunchStudio-klanten gebruiken uiteindelijk beide systemen — Mollie voor Nederlandse en Benelux-klanten, en Stripe voor bredere internationale afnemers — afgestemd op de werkelijke geografie van hun gebruikersbestand.
+Veel LaunchStudio-klanten gebruiken uiteindelijk beide systemen - Mollie voor Nederlandse en Benelux-klanten, en Stripe voor bredere internationale afnemers - afgestemd op de werkelijke geografie van hun gebruikersbestand.
 
 ## De Integratie Direct Goed Neerzetten
 
@@ -95,19 +95,19 @@ Toen Amber de afrekenstatistieken analyseerde en navraag deed bij potentiële kl
 
 Amber schakelde LaunchStudio in om de facturatie van SchoonPlan te migreren van Stripe naar Mollie. Het team van Manifera bouwde Mollie's terugkerende mandaatsysteem in voor SchoonPlan's maandabonnement, richtte de iDEAL-redirectstroom foutloos in en implementeerde Nederlandse btw-verwerking voor haar mkb-klanten.
 
-**Resultaat:** Het voltooiingspercentage bij het afrekenen steeg binnen de eerste maand na de migratie van circa 8% naar 19% — een meer dan verdubbeling van de betalende klanten uit exact dezelfde stroom geïnteresseerde bezoekers, puur door de betaalmethode aan te bieden die Nederlandse schoonmaakondernemers daadwerkelijk wilden gebruiken.
+**Resultaat:** Het voltooiingspercentage bij het afrekenen steeg binnen de eerste maand na de migratie van circa 8% naar 19% - een meer dan verdubbeling van de betalende klanten uit exact dezelfde stroom geïnteresseerde bezoekers, puur door de betaalmethode aan te bieden die Nederlandse schoonmaakondernemers daadwerkelijk wilden gebruiken.
 
 > *"Ik dacht dat mijn prijsstelling of mijn presentatie het probleem was. Geen van beide: mensen wilden gewoon geen creditcard tevoorschijn halen. Vanaf het moment dat iDEAL een optie was, rekende twee keer zoveel bezoekers direct af."*  
-> — **Amber Smeets, Oprichter SchoonPlan (Vlissingen)**
+> - **Amber Smeets, Oprichter SchoonPlan (Vlissingen)**
 
-**Kosten & tijdlijn:** €2.150 (Mollie-migratie en integratie) — afgerond in 9 werkdagen.
+**Kosten & tijdlijn:** €2.150 (Mollie-migratie en integratie) - afgerond in 9 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Moet elke Nederlandse SaaS-oprichter volledig overstappen van Stripe naar Mollie?
-Niet per se volledig — veel oprichters combineren beide succesvol door Mollie in te zetten voor Nederlandse klanten met een voorkeur voor iDEAL, en Stripe voor internationale klanten die met creditcard betalen. De juiste keuze hangt af van uw specifieke klantengeografie.
+Niet per se volledig - veel oprichters combineren beide succesvol door Mollie in te zetten voor Nederlandse klanten met een voorkeur voor iDEAL, en Stripe voor internationale klanten die met creditcard betalen. De juiste keuze hangt af van uw specifieke klantengeografie.
 
 ### Is iDEAL daadwerkelijk zoveel populairder dan creditcards voor Nederlandse online betalingen?
 Ja, iDEAL is al jarenlang onbetwist de dominante online betaalmethode in Nederland, geworteld in een diep consumentenvertrouwen. Voor elk product dat zich primair richt op Nederlandse consumenten of het lokale mkb, betekent het uitsluiten van iDEAL het uitsluiten van de standaard betaalverwachting van die markt.
@@ -116,7 +116,7 @@ Ja, iDEAL is al jarenlang onbetwist de dominante online betaalmethode in Nederla
 Mollie ondersteunt terugkerende betalingen via zijn SEPA-mandaatsysteem voor reguliere abonnementsmodellen. Stripe's abonnementstools zijn over het algemeen rijker aan functies voor complexe facturatiescenario's (zoals variabele verbruikstiers of complexe pro-rata verrekeningen). Voor gangbare maandelijkse of jaarlijkse abonnementen is Mollie uitstekend toegerust.
 
 ### Hoe complex is btw-afhandeling voor een kleine SaaS die levert aan zowel consumenten als bedrijven?
-Het vereist een helder onderscheid tussen B2C- en B2B-klanten en, voor zakelijke afnemers elders in de EU, het correct toepassen van btw-verlegging (*reverse-charge*). Deze logica moet correct in uw facturatiesysteem worden verwerkt — LaunchStudio configureert dit standaard bij Mollie- en Stripe-integraties.
+Het vereist een helder onderscheid tussen B2C- en B2B-klanten en, voor zakelijke afnemers elders in de EU, het correct toepassen van btw-verlegging (*reverse-charge*). Deze logica moet correct in uw facturatiesysteem worden verwerkt - LaunchStudio configureert dit standaard bij Mollie- en Stripe-integraties.
 
 ### Kan LaunchStudio een bestaande Stripe-integratie migreren naar Mollie zonder verstoring voor huidige abonnees?
 Ja, dit is een veelvoorkomend traject, zoals bij de migratie van SchoonPlan. Het team verzorgt de overgang uiterst zorgvuldig door bestaande abonnees op hun oorspronkelijke betaalmethode te laten lopen terwijl nieuwe aanmeldingen direct via de nieuwe Mollie-koppeling worden verwerkt.

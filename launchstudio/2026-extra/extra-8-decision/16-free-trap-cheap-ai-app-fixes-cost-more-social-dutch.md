@@ -12,7 +12,7 @@
 ✅ Een oplossing die actief getest is tegen directe pogingen om de beveiliging te omzeilen
 ✅ Het in één keer goed doen is vrijwel altijd goedkoper dan twee keer betalen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, dichten we het werkelijke lek — geverifieerd in de code, nooit op basis van aannames. 🔍
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, dichten we het werkelijke lek - geverifieerd in de code, nooit op basis van aannames. 🔍
 
 Zijn resultaat: de echte oplossing kostte uiteindelijk bijna het 4-voudige van zijn "besparing" toen het herstelwerk, de communicatie en het incident eenmaal waren opgeteld. 📉
 

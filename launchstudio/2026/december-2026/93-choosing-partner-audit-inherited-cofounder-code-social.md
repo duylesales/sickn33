@@ -1,4 +1,4 @@
-😳 Sofia's technical co-founder left abruptly — leaving her sole owner of a **Cursor**-built booking platform she had no way to verify was even safe to keep running. 🧠
+😳 Sofia's technical co-founder left abruptly - leaving her sole owner of a **Cursor**-built booking platform she had no way to verify was even safe to keep running. 🧠
 
 Inheriting a codebase means inheriting every shortcut someone else took, with no one left to explain which ones were deliberate and which were oversights.
 

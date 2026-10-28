@@ -39,7 +39,7 @@ Content Format: Career Guide
 }
 </script>
 
-Iași, in north-eastern Romania, is one of the country's oldest university cities and its largest centre in the historical region of Moldavia. With tens of thousands of students, two major universities and a growing number of technology companies, it has become Romania's third major tech hub after Bucharest and Cluj-Napoca. International companies run development centres in the city — including teams working on voice AI and automotive software — alongside cybersecurity, software services and product companies. For students and recent graduates, AI jobs in Iași offer a realistic entry into machine learning, often in English-speaking teams, with a cost of living below Bucharest and Cluj. This guide explains where to look and how to get started.
+Iași, in north-eastern Romania, is one of the country's oldest university cities and its largest centre in the historical region of Moldavia. With tens of thousands of students, two major universities and a growing number of technology companies, it has become Romania's third major tech hub after Bucharest and Cluj-Napoca. International companies run development centres in the city - including teams working on voice AI and automotive software - alongside cybersecurity, software services and product companies. For students and recent graduates, AI jobs in Iași offer a realistic entry into machine learning, often in English-speaking teams, with a cost of living below Bucharest and Cluj. This guide explains where to look and how to get started.
 
 ## Universities
 
@@ -90,11 +90,11 @@ Romanian is the language of daily life; English is the working language in inter
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Iași you will find few or no local vacancies there today. Use Romanian job portals, university career centres, company internship pages and local tech communities as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later — where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles — and as a model for searching by category and real commute. Iași employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Iași you will find few or no local vacancies there today. Use Romanian job portals, university career centres, company internship pages and local tech communities as primary sources. OnlyAIJobs becomes useful if you consider working in the Netherlands later - where employers such as Accenture, Cegeka, Sendcloud and Mollie list AI roles - and as a model for searching by category and real commute. Iași employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Voice and Language AI: What Juniors Do
 
-Working in a voice and language AI team as a junior engineer can involve many tasks: building tools that measure recognition accuracy across accents and noise conditions, processing large speech and text datasets, maintaining training pipelines, analysing errors, supporting multilingual expansion and helping deploy models into production. Over time, juniors take on model development and experimentation. The experience teaches rigorous evaluation, scalable data processing and collaboration in large global teams — skills that are valued throughout the AI industry. Privacy and responsible data handling are central in voice AI, because speech data can be sensitive.
+Working in a voice and language AI team as a junior engineer can involve many tasks: building tools that measure recognition accuracy across accents and noise conditions, processing large speech and text datasets, maintaining training pipelines, analysing errors, supporting multilingual expansion and helping deploy models into production. Over time, juniors take on model development and experimentation. The experience teaches rigorous evaluation, scalable data processing and collaboration in large global teams - skills that are valued throughout the AI industry. Privacy and responsible data handling are central in voice AI, because speech data can be sensitive.
 
 ## Automotive Software: Safety and Discipline
 
@@ -148,7 +148,7 @@ Apply to two or three internship programmes each year of your studies, build one
 
 ## Cybersecurity as a Career Path
 
-Iași's cybersecurity presence gives graduates a distinctive option. Security companies analyse malware, phishing, network attacks and fraud at global scale, and machine learning plays a central role in detecting threats quickly. Junior roles may involve analysing samples, building data pipelines for threat intelligence, evaluating detection models or developing tools for researchers. Over time, engineers can specialise in security ML, reverse engineering or threat research. The work is adversarial — attackers adapt constantly — which makes it intellectually demanding and keeps skills sharp. Security experience is valued across industries, from banking to cloud providers, and it pairs well with AI skills as the EU AI Act requires robustness and cybersecurity for high-risk AI systems. Graduates who enjoy puzzles, low-level systems and data analysis should consider this path seriously.
+Iași's cybersecurity presence gives graduates a distinctive option. Security companies analyse malware, phishing, network attacks and fraud at global scale, and machine learning plays a central role in detecting threats quickly. Junior roles may involve analysing samples, building data pipelines for threat intelligence, evaluating detection models or developing tools for researchers. Over time, engineers can specialise in security ML, reverse engineering or threat research. The work is adversarial - attackers adapt constantly - which makes it intellectually demanding and keeps skills sharp. Security experience is valued across industries, from banking to cloud providers, and it pairs well with AI skills as the EU AI Act requires robustness and cybersecurity for high-risk AI systems. Graduates who enjoy puzzles, low-level systems and data analysis should consider this path seriously.
 
 ## Research at the Universities
 
@@ -164,7 +164,7 @@ Companies in Iași build AI systems used by customers across Europe and beyond, 
 
 ## A Final Tip
 
-Treat your internship as a long interview: deliver carefully, ask good questions and build relationships — many full-time offers in Iași start this way.
+Treat your internship as a long interview: deliver carefully, ask good questions and build relationships - many full-time offers in Iași start this way.
 
 ## Startups in Iași
 

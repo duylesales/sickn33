@@ -1,4 +1,4 @@
-🚨 Een inkoopfactuur van €3.100 van een developer verandert in een offertepost van €9.500 richting de klant. Naast elkaar voelt dat als ongemakkelijke "lucht" — maar is dat het ook? 😅
+🚨 Een inkoopfactuur van €3.100 van een developer verandert in een offertepost van €9.500 richting de klant. Naast elkaar voelt dat als ongemakkelijke "lucht" - maar is dat het ook? 😅
 
 Bureaus gaan hier op twee manieren de mist in, en beiden kosten geld: 💸
 
@@ -8,7 +8,7 @@ Bureaus gaan hier op twee manieren de mist in, en beiden kosten geld: 💸
 ❌ Geen duidelijke scopegrens betekent dat meerwerk halverwege geruisloos uw winst opbrandt
 
 ✅ Hanteer cost-plus met benoembare posten: inkoop, scoping & regie, revisiebuffer, marge
-✅ Presenteer één gebundeld bedrag op basis van resultaat — verkoop de uitkomst, niet uw interne kosten
+✅ Presenteer één gebundeld bedrag op basis van resultaat - verkoop de uitkomst, niet uw interne kosten
 ✅ Kader het aanbod vooraf tegen traditionele bureautarieven (€20K–€50K+) vóórdat u uw getal noemt
 ✅ Wees alleen transparant over de interne opbouw bij een technisch onderlegde klant die er expliciet naar vraagt
 

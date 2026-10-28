@@ -6,16 +6,16 @@ Vraag een Nederlander hoe hij wil betalen: het antwoord is vrijwel altijd iDEAL.
 ❌ Potentiële klanten zeiden letterlijk: "Ik wil gewoon op de normale manier afrekenen via mijn bank"
 
 De overstap naar Mollie: ✅
-✅ Eersteklas iDEAL-ondersteuning — dé betaalmethode die Nederlandse klanten 100% vertrouwen
+✅ Eersteklas iDEAL-ondersteuning - dé betaalmethode die Nederlandse klanten 100% vertrouwen
 ✅ Terugkerend SEPA-mandaatsysteem voor SaaS-abonnementen
 ✅ Foutloze Nederlandse & Europese btw-afhandeling (inclusief btw-verlegd)
 ✅ Idempotente webhook-verwerking
 
-Belangrijke valkuil: iDEAL-mandaatmislukkingen werken anders dan verlopen creditcards — "over 3 dagen automatisch opnieuw proberen" faalt vaak. U heeft directe her-autorisatiemails nodig. 🔍
+Belangrijke valkuil: iDEAL-mandaatmislukkingen werken anders dan verlopen creditcards - "over 3 dagen automatisch opnieuw proberen" faalt vaak. U heeft directe her-autorisatiemails nodig. 🔍
 
 Bij **LaunchStudio**, ondersteund door Manifera's Amsterdamse team met directe kennis van het Nederlandse betaallandschap, richten we dit vakkundig voor u in. 🛡️
 
-Haar resultaat: checkout-conversie MEER DAN VERDUBBELD — van 8% naar 19% bij exact hetzelfde aantal bezoekers! 🚀
+Haar resultaat: checkout-conversie MEER DAN VERDUBBELD - van 8% naar 19% bij exact hetzelfde aantal bezoekers! 🚀
 
 👉 Lees de complete Mollie-integratiegids voor Nederlandse SaaS: https://launchstudio.eu/nl/blog/complete-mollie-integration-guide-dutch-saas
 

@@ -31,27 +31,27 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A user emails you a screenshot: "your AI gave me this completely wrong answer." You go look. And you find nothing — no record of what prompt was actually sent, which model version handled it, what temperature or parameters were in play, what context got included. You're staring at an output with zero ability to reproduce how it was produced. This is the debugging dead end almost every AI-native SaaS founder hits eventually, and it's entirely preventable with logging that should have existed from day one.
+A user emails you a screenshot: "your AI gave me this completely wrong answer." You go look. And you find nothing - no record of what prompt was actually sent, which model version handled it, what temperature or parameters were in play, what context got included. You're staring at an output with zero ability to reproduce how it was produced. This is the debugging dead end almost every AI-native SaaS founder hits eventually, and it's entirely preventable with logging that should have existed from day one.
 
 ## Why this gap is so easy to miss during development
 
-When you're building an AI feature with Cursor or a similar tool, your own testing loop is tight and immediate: you send a prompt, you see the output right there in your terminal or editor, you iterate. There's no need for logging because you *are* the log — everything relevant is visible on your screen in real time. That workflow completely disappears the moment the feature ships to real users, and nobody goes back to retrofit logging onto a code path that "already works," because from a functional standpoint, it does work. It's only when something goes *wrong* in production, days or weeks later, that the absence of a record becomes a real problem.
+When you're building an AI feature with Cursor or a similar tool, your own testing loop is tight and immediate: you send a prompt, you see the output right there in your terminal or editor, you iterate. There's no need for logging because you *are* the log - everything relevant is visible on your screen in real time. That workflow completely disappears the moment the feature ships to real users, and nobody goes back to retrofit logging onto a code path that "already works," because from a functional standpoint, it does work. It's only when something goes *wrong* in production, days or weeks later, that the absence of a record becomes a real problem.
 
-The specific gap is almost always the same: application logs might capture that an AI call happened and maybe whether it succeeded or errored, but not the actual request payload — the full prompt sent (including any injected context or retrieved documents), the exact model version and provider used, the temperature and other sampling parameters, and the raw response before any post-processing. Without all of that captured together, tied to a request ID you can trace back to a specific user complaint, every bug report becomes an unreproducible anecdote instead of a debuggable incident.
+The specific gap is almost always the same: application logs might capture that an AI call happened and maybe whether it succeeded or errored, but not the actual request payload - the full prompt sent (including any injected context or retrieved documents), the exact model version and provider used, the temperature and other sampling parameters, and the raw response before any post-processing. Without all of that captured together, tied to a request ID you can trace back to a specific user complaint, every bug report becomes an unreproducible anecdote instead of a debuggable incident.
 
 ## What to actually capture, and why each piece matters
 
-A minimal but genuinely useful logging setup for an AI feature captures, per request: a unique request ID, the user or session ID, the full prompt text as sent to the model (not a paraphrase), the model name and version string, key parameters like temperature and max tokens, the raw model response, latency, and token counts. This needs to happen server-side, not client-side, both for reliability and because client-side logging can be tampered with or simply never reach you if the browser tab closes early. Retention matters too — logs need to be kept long enough to actually investigate a complaint that might arrive days after the interaction, but with prompt content handled carefully if it could contain personal data, since logging isn't exempt from the same data-handling rules as the rest of the product.
+A minimal but genuinely useful logging setup for an AI feature captures, per request: a unique request ID, the user or session ID, the full prompt text as sent to the model (not a paraphrase), the model name and version string, key parameters like temperature and max tokens, the raw model response, latency, and token counts. This needs to happen server-side, not client-side, both for reliability and because client-side logging can be tampered with or simply never reach you if the browser tab closes early. Retention matters too - logs need to be kept long enough to actually investigate a complaint that might arrive days after the interaction, but with prompt content handled carefully if it could contain personal data, since logging isn't exempt from the same data-handling rules as the rest of the product.
 
-This is a pattern LaunchStudio sees constantly across AI-native SaaS tools: the AI feature itself works, but the observability around it was never built because it wasn't part of the original prompt-to-code workflow. Our engineers, supported out of Manifera's Ho Chi Minh City development center, add this kind of structured logging as a standard part of preparing an AI feature for real users — Manifera has shipped observability tooling across 160+ projects for enterprise clients, and the same discipline applies whether the system being debugged is a traditional backend or an LLM call.
+This is a pattern LaunchStudio sees constantly across AI-native SaaS tools: the AI feature itself works, but the observability around it was never built because it wasn't part of the original prompt-to-code workflow. Our engineers, supported out of Manifera's Ho Chi Minh City development center, add this kind of structured logging as a standard part of preparing an AI feature for real users - Manifera has shipped observability tooling across 160+ projects for enterprise clients, and the same discipline applies whether the system being debugged is a traditional backend or an LLM call.
 
 If your AI feature has shipped without this in place, it's worth [getting a quote on adding proper observability](https://launchstudio.eu/en/#calculator) before the next complaint arrives with nothing behind it to investigate.
 
 ## Logging Everything at Full Detail Doesn't Scale Forever
 
-Once structured logging is in place, a second, quieter problem shows up: logging the full prompt and full response for every single AI call, especially anything using retrieved documents or long context, generates a lot of data fast. A feature doing a few thousand requests a day with a few thousand tokens of context per request can turn logging into one of the more expensive and unwieldy parts of the stack — slow to query, expensive to retain, and full of duplicate context that adds little value once you've already confirmed a hundred similar requests behaved correctly.
+Once structured logging is in place, a second, quieter problem shows up: logging the full prompt and full response for every single AI call, especially anything using retrieved documents or long context, generates a lot of data fast. A feature doing a few thousand requests a day with a few thousand tokens of context per request can turn logging into one of the more expensive and unwieldy parts of the stack - slow to query, expensive to retain, and full of duplicate context that adds little value once you've already confirmed a hundred similar requests behaved correctly.
 
-The fix isn't to log less overall — it's to log unevenly, on purpose. Every failed or flagged request gets full detail, always. Successful, unflagged requests get sampled at a much lower rate, or have their context truncated to a reference rather than the full text, since the full context is usually reconstructable from the request ID if it's ever actually needed.
+The fix isn't to log less overall - it's to log unevenly, on purpose. Every failed or flagged request gets full detail, always. Successful, unflagged requests get sampled at a much lower rate, or have their context truncated to a reference rather than the full text, since the full context is usually reconstructable from the request ID if it's ever actually needed.
 
 ```
 function shouldLogFullDetail(request, response) {
@@ -61,22 +61,22 @@ function shouldLogFullDetail(request, response) {
 }
 ```
 
-This keeps the logging system useful for exactly the moments it exists for — debugging a specific bad output — without the retention bill or query performance degrading as usage grows. It's a policy decision, not a technical limitation, and it's one most AI-generated logging setups never make because "log everything" is the simplest thing to build first.
+This keeps the logging system useful for exactly the moments it exists for - debugging a specific bad output - without the retention bill or query performance degrading as usage grows. It's a policy decision, not a technical limitation, and it's one most AI-generated logging setups never make because "log everything" is the simplest thing to build first.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Writing Assistant With No Memory of Its Own Mistakes
 
-Isa Rovers, a founder in Winterswijk, built SchrijfHulp, an AI writing assistant SaaS, using Cursor. The core feature — generating and refining written content based on user prompts — worked well enough in Isa's own testing that logging never came up as a priority during development. It simply wasn't something she thought to ask Cursor to build, because her own testing loop never needed it.
+Isa Rovers, a founder in Winterswijk, built SchrijfHulp, an AI writing assistant SaaS, using Cursor. The core feature - generating and refining written content based on user prompts - worked well enough in Isa's own testing that logging never came up as a priority during development. It simply wasn't something she thought to ask Cursor to build, because her own testing loop never needed it.
 
-The gap became a real problem once real users started reporting bad outputs — text that was off-topic, oddly formatted, or factually wrong for their context. Isa had no way to investigate a single one of these complaints. There was no record anywhere of what prompt had actually been sent to the model for that user's request, which model version had handled it, or what parameters were active at the time. Every complaint dead-ended at "we'll look into it," because there was genuinely nothing to look into.
+The gap became a real problem once real users started reporting bad outputs - text that was off-topic, oddly formatted, or factually wrong for their context. Isa had no way to investigate a single one of these complaints. There was no record anywhere of what prompt had actually been sent to the model for that user's request, which model version had handled it, or what parameters were active at the time. Every complaint dead-ended at "we'll look into it," because there was genuinely nothing to look into.
 
-LaunchStudio added structured, server-side logging to every AI call in SchrijfHulp: full prompt text, model version, temperature and token settings, raw response, and a request ID tied to the user's session, all retained with appropriate handling for any personal content in the logs. **Result:** the next batch of bad-output complaints Isa received were fully reproducible — she could see exactly what had been sent, identify the pattern causing the issue, and fix the underlying prompt template within a day instead of guessing.
+LaunchStudio added structured, server-side logging to every AI call in SchrijfHulp: full prompt text, model version, temperature and token settings, raw response, and a request ID tied to the user's session, all retained with appropriate handling for any personal content in the logs. **Result:** the next batch of bad-output complaints Isa received were fully reproducible - she could see exactly what had been sent, identify the pattern causing the issue, and fix the underlying prompt template within a day instead of guessing.
 
 > *"I didn't realize how much I was flying blind until I actually had the logs and could see, for the first time, exactly what my own product had done."*
-> — **Isa Rovers, Founder, SchrijfHulp (Winterswijk)**
+> - **Isa Rovers, Founder, SchrijfHulp (Winterswijk)**
 
-**Cost & Timeline:** €600 (structured request logging, retention policy, request-ID tracing) — completed in 3 business days.
+**Cost & Timeline:** €600 (structured request logging, retention policy, request-ID tracing) - completed in 3 business days.
 
 ---
 
@@ -84,7 +84,7 @@ LaunchStudio added structured, server-side logging to every AI call in SchrijfHu
 
 ### What's the minimum I should log for every AI feature call in production?
 
-At minimum: a request ID, the full prompt as sent to the model, the model version, key parameters like temperature, the raw response, and timing — all tied together so a single complaint can be traced back to exactly what happened.
+At minimum: a request ID, the full prompt as sent to the model, the model version, key parameters like temperature, the raw response, and timing - all tied together so a single complaint can be traced back to exactly what happened.
 
 ### Why can't I just rely on my AI provider's own dashboard for this?
 
@@ -92,7 +92,7 @@ Most provider dashboards show aggregate usage, not a per-request record tied to 
 
 ### Does logging full prompts create a privacy risk?
 
-It can, if prompts include personal data — which is why logging needs a defined retention period and access control, not indefinite unrestricted storage, treated with the same care as any other personal data in the product.
+It can, if prompts include personal data - which is why logging needs a defined retention period and access control, not indefinite unrestricted storage, treated with the same care as any other personal data in the product.
 
 ### How does Manifera's engineering experience apply to AI-specific logging?
 
@@ -100,11 +100,11 @@ Manifera has delivered observability and monitoring tooling across 160+ projects
 
 ### Is this something I can add without changing my existing AI integration?
 
-Yes — structured logging is typically added as a wrapper around existing model calls, capturing the request and response without changing how the AI feature itself functions.
+Yes - structured logging is typically added as a wrapper around existing model calls, capturing the request and response without changing how the AI feature itself functions.
 
 ### Won't logging every prompt and response get expensive at scale?
 
-It can, if every request is logged at full detail forever — the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without the storage and query cost growing unchecked as usage increases.
+It can, if every request is logged at full detail forever - the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without the storage and query cost growing unchecked as usage increases.
 
 <script type="application/ld+json">
 {
@@ -139,7 +139,7 @@ It can, if every request is logged at full detail forever — the fix is logging
     {
       "@type": "Question",
       "name": "Won't logging every prompt and response get expensive at scale?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It can, if every request is logged at full detail forever — the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without storage and query cost growing unchecked." }
+      "acceptedAnswer": { "@type": "Answer", "text": "It can, if every request is logged at full detail forever - the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without storage and query cost growing unchecked." }
     }
   ]
 }

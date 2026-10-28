@@ -22,13 +22,13 @@ Below 1M requests/month: yes. Above 3-5M: containers are 40-70% cheaper.
 → AI pipelines processing personal data = EU-hosted compute only
 
 💡 The CTO cheat sheet:
-✅ Kubernetes (EKS/AKS) — portable
-✅ PostgreSQL — no lock-in
-✅ Terraform — provider-agnostic IaC
-✅ GitHub Actions + ArgoCD — CI/CD
-❌ CloudFormation — AWS-only
-❌ DynamoDB — migration nightmare
-❌ CloudWatch — blind outside AWS
+✅ Kubernetes (EKS/AKS) - portable
+✅ PostgreSQL - no lock-in
+✅ Terraform - provider-agnostic IaC
+✅ GitHub Actions + ArgoCD - CI/CD
+❌ CloudFormation - AWS-only
+❌ DynamoDB - migration nightmare
+❌ CloudWatch - blind outside AWS
 
 As Kelsey Hightower said: *"Every company is either in the cloud, moving to the cloud, or lying about moving to the cloud."*
 

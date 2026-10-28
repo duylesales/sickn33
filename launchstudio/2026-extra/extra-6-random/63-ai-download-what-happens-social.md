@@ -1,4 +1,4 @@
-📦 Twan Steenbergen built "ExportGrip," a logistics quoting tool, with Bolt — and when he downloaded the codebase to move it to his own hosting, he expected a complete, self-contained copy of everything he'd built and tested. 😳
+📦 Twan Steenbergen built "ExportGrip," a logistics quoting tool, with Bolt - and when he downloaded the codebase to move it to his own hosting, he expected a complete, self-contained copy of everything he'd built and tested. 😳
 
 The speed of an "export" button implies completeness. It rarely delivers it. 🧠
 
@@ -11,7 +11,7 @@ The speed of an "export" button implies completeness. It rarely delivers it. �
 ✅ Identify each missing configuration piece one by one
 ✅ Rebuild the configuration layer so the app runs identically on self-hosted infrastructure
 
-At **LaunchStudio**, our Ho Chi Minh City engineering center handles a steady stream of exactly this kind of migration work — backed by Manifera's 11+ years across 160+ delivered projects. 🛡️
+At **LaunchStudio**, our Ho Chi Minh City engineering center handles a steady stream of exactly this kind of migration work - backed by Manifera's 11+ years across 160+ delivered projects. 🛡️
 
 His result: ExportGrip now runs on his own hosting with a documented, complete configuration set, and a checklist for verifying future exports before they're trusted. 🚀
 

@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Find a Mentor in AI Without It Feeling Like a Strange Request",
-  "description": "Students often imagine mentorship as a formal, awkward request. In practice it usually develops differently — and that changes how best to begin.",
+  "description": "Students often imagine mentorship as a formal, awkward request. In practice it usually develops differently - and that changes how best to begin.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-05",
@@ -35,11 +35,11 @@ Content Format: Career Guide
 }
 </script>
 
-"Will you be my mentor?" is a sentence few experienced professionals feel comfortable saying yes to — it sounds like a long-term commitment. Mentorship that actually works rarely starts that formally.
+"Will you be my mentor?" is a sentence few experienced professionals feel comfortable saying yes to - it sounds like a long-term commitment. Mentorship that actually works rarely starts that formally.
 
 ## How It Usually Develops in Practice
 
-**A specific, small question instead of a big request.** "I'm torn between two approaches to this problem — could I ask your opinion for five minutes?" is easier to answer than an open request for long-term guidance.
+**A specific, small question instead of a big request.** "I'm torn between two approaches to this problem - could I ask your opinion for five minutes?" is easier to answer than an open request for long-term guidance.
 
 **Repeated contact around a concrete topic.** Someone who comes back two or three times with a relevant, thoughtful question organically develops a mentor-like relationship, without the word ever being used.
 
@@ -47,11 +47,11 @@ Content Format: Career Guide
 
 ## Why This Works Better Than a Formal Request
 
-A formal mentorship request asks someone to take on an abstract, time-consuming commitment. A series of small, specific questions asks for something concrete and limited — much easier to say yes to, and it can grow organically into something bigger.
+A formal mentorship request asks someone to take on an abstract, time-consuming commitment. A series of small, specific questions asks for something concrete and limited - much easier to say yes to, and it can grow organically into something bigger.
 
 ## A Deeper Look at What Distinguishes a Good First Question From a Bad One
 
-A bad first question is broad and takes a lot of time to answer: "How do I get a job in AI?" A good first question is specific and takes two minutes: "I'm torn between two ways to handle the class imbalance in my dataset — do you have a strong preference?" The difference isn't politeness, but how easy the question is to answer for someone with a busy schedule.
+A bad first question is broad and takes a lot of time to answer: "How do I get a job in AI?" A good first question is specific and takes two minutes: "I'm torn between two ways to handle the class imbalance in my dataset - do you have a strong preference?" The difference isn't politeness, but how easy the question is to answer for someone with a busy schedule.
 
 ## Comparison Table: What Works and What Backfires
 
@@ -64,7 +64,7 @@ A bad first question is broad and takes a lot of time to answer: "How do I get a
 
 ## Why You Don't Have to Wait Until You Have "Something Valuable" to Offer
 
-Students sometimes postpone contacting experienced professionals because they feel they have nothing to give back yet. That isn't a necessary condition — genuine interest and a well-put, specific question are already a form of appreciation most people enjoy receiving.
+Students sometimes postpone contacting experienced professionals because they feel they have nothing to give back yet. That isn't a necessary condition - genuine interest and a well-put, specific question are already a form of appreciation most people enjoy receiving.
 
 ## Named Places Where Students in the Netherlands Can Meet Potential Mentors
 
@@ -96,11 +96,11 @@ A technical question about a modelling choice is best asked of someone who works
 
 What works well is periodically reporting back what you did with earlier advice. A short message saying you followed the suggestion and what came of it is satisfying for the other person and keeps the relationship alive without a new request.
 
-Sharing something the other person may find interesting — an article, a development in their area — also works well. What works less well is proposing a fixed meeting structure when the relationship arose informally; a monthly appointment turns something voluntary into something obligatory, which is exactly when people drop out.
+Sharing something the other person may find interesting - an article, a development in their area - also works well. What works less well is proposing a fixed meeting structure when the relationship arose informally; a monthly appointment turns something voluntary into something obligatory, which is exactly when people drop out.
 
 ## When You Become the Mentor Yourself
 
-You don't need fifteen years of experience to be valuable to someone two years behind you. Someone who still has to take the step you just took often benefits more from your recent experience than from the perspective of someone who took that step twenty years ago. Answering others' questions also forces you to make your own understanding explicit — so offering mentorship early in a career is partly an investment in your own development.
+You don't need fifteen years of experience to be valuable to someone two years behind you. Someone who still has to take the step you just took often benefits more from your recent experience than from the perspective of someone who took that step twenty years ago. Answering others' questions also forces you to make your own understanding explicit - so offering mentorship early in a career is partly an investment in your own development.
 
 ## Formal Mentoring Programmes Versus Organic Relationships
 
@@ -108,36 +108,36 @@ The advantage of a formal programme is that it removes the hardest step: making 
 
 ## What to Do If a Mentoring Relationship Isn't Working
 
-The clearest signal is advice that structurally doesn't fit your situation — for example because the other person works in a very different organisational context. A second signal is a structural asymmetry in effort: if every contact has to come from you and responses stay minimal, the other person probably isn't in a position to fill this role. Informal relationships may fade informally; no explicit ending is needed.
+The clearest signal is advice that structurally doesn't fit your situation - for example because the other person works in a very different organisational context. A second signal is a structural asymmetry in effort: if every contact has to come from you and responses stay minimal, the other person probably isn't in a position to fill this role. Informal relationships may fade informally; no explicit ending is needed.
 
 ## Why This Works a Little Differently in the Dutch Context
 
-Much mentoring advice comes from an American professional context. Dutch organisational culture is characterised by relatively low power distance — a concept from **Hofstede's cultural dimensions** — which means approaching someone formally senior to you feels less loaded than in more hierarchical cultures. A junior asking a question of someone fifteen years further along is doing something normal here, not something daring.
+Much mentoring advice comes from an American professional context. Dutch organisational culture is characterised by relatively low power distance - a concept from **Hofstede's cultural dimensions** - which means approaching someone formally senior to you feels less loaded than in more hierarchical cultures. A junior asking a question of someone fifteen years further along is doing something normal here, not something daring.
 
 Dutch directness also extends to these relationships: a concrete, direct question is generally appreciated, while an indirect, roundabout approach is more likely to cause confusion. And because the Dutch AI community is small, a relationship that starts informally today may turn out, five years from now, to be a colleague, client or referee.
 
 ## A Concrete Starting Point for Today
 
-Choose one person whose work you admire and who is reachable — through a shared community, a meetup or a public profile — and formulate one specific question about something you are actually dealing with right now. Not an introduction request, not a general request for advice, but one concrete question answerable in two minutes. If you get an answer, report back briefly a week later on what you did with it. These two messages cost half an hour and start exactly the pattern described in this article.
+Choose one person whose work you admire and who is reachable - through a shared community, a meetup or a public profile - and formulate one specific question about something you are actually dealing with right now. Not an introduction request, not a general request for advice, but one concrete question answerable in two minutes. If you get an answer, report back briefly a week later on what you did with it. These two messages cost half an hour and start exactly the pattern described in this article.
 
 ## Example Messages That Work
 
 Concrete wording often helps more than general advice. Three examples you can adapt:
 
 **After a meetup talk:**
-> "Thanks for your talk on monitoring models in production. I'm working on a student project where our model's performance dropped after two months. You mentioned checking input distributions first — would you start with population stability or with simple summary statistics?"
+> "Thanks for your talk on monitoring models in production. I'm working on a student project where our model's performance dropped after two months. You mentioned checking input distributions first - would you start with population stability or with simple summary statistics?"
 
 **To an alumnus of your programme:**
 > "I'm a final-year student in the same programme you graduated from. I'm choosing between a thesis project on computer vision in agriculture and one on NLP for customer service. Looking back, which kind of project helped you more when applying for your first job?"
 
 **After receiving advice:**
-> "Two weeks ago you suggested checking input distributions first. I did, and one feature turned out to have changed completely after a system update. Thanks — that saved me a lot of time."
+> "Two weeks ago you suggested checking input distributions first. I did, and one feature turned out to have changed completely after a system update. Thanks - that saved me a lot of time."
 
-Each message is short, specific, easy to answer and shows that you've done your own thinking first. The third message, in particular, is the one most people forget — and it is the one that turns a single exchange into a relationship.
+Each message is short, specific, easy to answer and shows that you've done your own thinking first. The third message, in particular, is the one most people forget - and it is the one that turns a single exchange into a relationship.
 
 ## What Mentors Themselves Say They Value
 
-Experienced professionals who mentor others tend to name the same qualities in mentees they enjoy helping: they come prepared, they ask focused questions, they follow up on advice, and they respect the mentor's time. None of these depend on experience level or background — which means every student can offer them from the very first conversation.
+Experienced professionals who mentor others tend to name the same qualities in mentees they enjoy helping: they come prepared, they ask focused questions, they follow up on advice, and they respect the mentor's time. None of these depend on experience level or background - which means every student can offer them from the very first conversation.
 
 ## Key Takeaways
 
@@ -145,7 +145,7 @@ Experienced professionals who mentor others tend to name the same qualities in m
 - Study associations, alumni networks, graduation internships, ICAI labs, PyData meetups, Women in AI Netherlands and ADPList are concrete places to meet potential mentors.
 - A mentor offers perspective and honest feedback, not guaranteed access to jobs.
 - Several informal mentors for different questions work better than one exclusive mentor.
-- The Dutch context — low power distance, directness and a small community — makes direct, specific questions especially effective.
+- The Dutch context - low power distance, directness and a small community - makes direct, specific questions especially effective.
 
 ## Where to Start
 
@@ -156,19 +156,19 @@ Browse current junior AI, machine learning and data jobs in the Netherlands at [
 ## Frequently Asked Questions
 
 ### (Scenario: student afraid of making a strange request) Is it appropriate to ask someone directly to be my mentor?
-It can be, but it often works less well than a specific, small question — start with a concrete topic instead of a big, abstract request.
+It can be, but it often works less well than a specific, small question - start with a concrete topic instead of a big, abstract request.
 
 ### (Scenario: student who doesn't know how to start) How do I start a conversation with someone I admire in the field?
 Ask a specific, thoughtful question about their work or a problem you're dealing with, instead of a general request for help.
 
 ### (Scenario: student wondering how long it takes) How long does it take before something feels like a mentoring relationship?
-It often grows organically after two or three relevant, thoughtful contacts — there is no fixed moment when it becomes "official."
+It often grows organically after two or three relevant, thoughtful contacts - there is no fixed moment when it becomes "official."
 
 ### (Scenario: student wondering whether they must give something back) Should I give something back as a student to someone who helps me?
-It helps make the relationship reciprocal — a short summary of what you learned, or sharing something relevant, instead of only asking.
+It helps make the relationship reciprocal - a short summary of what you learned, or sharing something relevant, instead of only asking.
 
 ### (Scenario: student unsure whether this really helps their career) Does a mentor really make a difference to my career in AI?
-It can give access to insights and networks you wouldn't otherwise have, but it doesn't replace your own technical development — it's a complement, not a substitute.
+It can give access to insights and networks you wouldn't otherwise have, but it doesn't replace your own technical development - it's a complement, not a substitute.
 
 <script type="application/ld+json">
 {

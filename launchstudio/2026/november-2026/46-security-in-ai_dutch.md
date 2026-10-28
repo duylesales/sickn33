@@ -99,9 +99,9 @@ In 12 werkdagen voerde het Manifera-team een volledige "Zero Trust" herziening u
 **Resultaat:** Toen de aanval opnieuw werd getest, werd de prompt met "debug-modus" direct geblokkeerd door de firewall. En zelfs als de firewall werd omzeild, weigerde de database de salarisdata fysiek omdat de sessie van de medewerker niet beschikte over de claim `role: executive`. De klant keurde de nieuwe architectuur goed en activeerde de software opnieuw.
 
 > *"We behandelden de AI als een vriendelijke bibliothecaris, vergetend dat een kwaadwillende die bibliothecaris kon manipuleren om de sleutels van de kluis te overhandigen. LaunchStudio repareerde niet zomaar een bug; ze herbouwden onze beveiligingsarchitectuur. Ze maakten het wiskundig onmogelijk voor de AI om data te zien waar het geen recht op had."*
-> — **Elena Rodriguez, Oprichter, HR-Flow (Madrid)**
+> - **Elena Rodriguez, Oprichter, HR-Flow (Madrid)**
 
-**Kosten & Doorlooptijd:** €13.500 (Launch & Grow Pakket met Zero Trust Security & RLS Add-on) — productie-klaar en live binnen 12 werkdagen.
+**Kosten & Doorlooptijd:** €13.500 (Launch & Grow Pakket met Zero Trust Security & RLS Add-on) - productie-klaar en live binnen 12 werkdagen.
 
 ---
 

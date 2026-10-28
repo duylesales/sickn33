@@ -1,4 +1,4 @@
-🔥 Scarlett built a prototype using **Lovable** — scarlett, a startup founder, used **lovable** to build a hr onboarding saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Scarlett built a prototype using **Lovable** - scarlett, a startup founder, used **lovable** to build a hr onboarding saas prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Scarlett's application achieved production readiness: Scarlett established a safe, version-controlled database schema upgrade process for all future features. (€1,850 (Migration & Schema Package) — production-ready and deployed in 6 business days.). 🚀
+Scarlett's application achieved production readiness: Scarlett established a safe, version-controlled database schema upgrade process for all future features. (€1,850 (Migration & Schema Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/database-migrations-supabase-schema
 

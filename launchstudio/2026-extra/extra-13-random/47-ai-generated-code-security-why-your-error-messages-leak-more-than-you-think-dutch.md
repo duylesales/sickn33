@@ -21,24 +21,24 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Als een AI-codeerassistent een API-route schrijft, ziet de foutafhandeling er meestal ongeveer zo uit: vang de fout op, geef hem terug als JSON met status 500. Tijdens het ontwikkelen is dat handig — je ziet in de browser precies wat er misging. Het is ook een van de meest onderschatte problemen in de beveiliging van AI-gegenereerde code, want in productie geldt dezelfde behulpzaamheid voor iedereen, ook voor mensen die een manier zoeken om binnen te komen.
+Als een AI-codeerassistent een API-route schrijft, ziet de foutafhandeling er meestal ongeveer zo uit: vang de fout op, geef hem terug als JSON met status 500. Tijdens het ontwikkelen is dat handig - je ziet in de browser precies wat er misging. Het is ook een van de meest onderschatte problemen in de beveiliging van AI-gegenereerde code, want in productie geldt dezelfde behulpzaamheid voor iedereen, ook voor mensen die een manier zoeken om binnen te komen.
 
 ## Wat een Ruwe Foutmelding Kan Onthullen
 
 Afhankelijk van de stack en de fout kunnen meldingen die naar de browser worden teruggestuurd het volgende bevatten:
 
-- **Stack traces** met bestandspaden, frameworkversies en functienamen — een plattegrond van je codebase.
-- **SQL-statements en databasefouten**, die tabelnamen, kolomnamen en constraints onthullen — en soms bevestigen dat invoer ongefilterd een query bereikt.
+- **Stack traces** met bestandspaden, frameworkversies en functienamen - een plattegrond van je codebase.
+- **SQL-statements en databasefouten**, die tabelnamen, kolomnamen en constraints onthullen - en soms bevestigen dat invoer ongefilterd een query bereikt.
 - **Connection strings of hostnamen** van databases en interne diensten.
 - **Antwoorden van externe aanbieders**, die accountidentificatoren, request-ID's en in slecht ontworpen gevallen delen van API-sleutels of configuratie kunnen bevatten.
-- **Validatiedetails** die onthullen wat er bestaat — "er bestaat al een gebruiker met dit e-mailadres", "kortingscode verlopen" — wat enumeratie mogelijk maakt.
+- **Validatiedetails** die onthullen wat er bestaat - "er bestaat al een gebruiker met dit e-mailadres", "kortingscode verlopen" - wat enumeratie mogelijk maakt.
 - **Data van andere gebruikers**, wanneer een foutmelding het record bevat dat een conflict veroorzaakte.
 
-Elk punt op zich lijkt misschien klein. Samen maken ze van een blinde gok een geïnformeerde aanval. De OWASP-categorie hiervoor — onjuiste foutafhandeling, onderdeel van verkeerde beveiligingsconfiguratie — bestaat omdat dit aanvallers zo betrouwbaar helpt.
+Elk punt op zich lijkt misschien klein. Samen maken ze van een blinde gok een geïnformeerde aanval. De OWASP-categorie hiervoor - onjuiste foutafhandeling, onderdeel van verkeerde beveiligingsconfiguratie - bestaat omdat dit aanvallers zo betrouwbaar helpt.
 
 ## Waarom de Beveiliging van AI-Gegenereerde Code Lijdt onder Dit Patroon
 
-Drie redenen. Ten eerste is de foutmelding teruggeven het meest behulpzame gedrag in de context die de tool kan zien — jouw ontwikkelsessie. Ten tweede doen veel voorbeelden en tutorials waarvan de modellen hebben geleerd precies dit, kortheidshalve. Ten derde voegt de tool, als je hem vraagt een bug op te lossen, vaak meer foutdetails toe om je te helpen bij de diagnose, en die details blijven staan.
+Drie redenen. Ten eerste is de foutmelding teruggeven het meest behulpzame gedrag in de context die de tool kan zien - jouw ontwikkelsessie. Ten tweede doen veel voorbeelden en tutorials waarvan de modellen hebben geleerd precies dit, kortheidshalve. Ten derde voegt de tool, als je hem vraagt een bug op te lossen, vaak meer foutdetails toe om je te helpen bij de diagnose, en die details blijven staan.
 
 Er is een verwant patroon in frameworks: de ontwikkelmodus toont gedetailleerde foutpagina's, de productiemodus verbergt ze. AI-gebouwde apps worden soms in ontwikkelmodus gedeployed, of eigen handlers omzeilen het productiegedrag van het framework.
 
@@ -57,11 +57,11 @@ Je kunt je eigen app in ongeveer een kwartier controleren:
 Veilige foutafhandeling betekent niet minder informatie voor jou. Het betekent dat informatie op de juiste plek terechtkomt:
 
 - **Voor gebruikers:** een korte, bruikbare melding ("Er ging iets mis bij het opslaan van je boeking. Probeer het opnieuw.") en een referentie-ID.
-- **Voor jou:** de volledige fout — stack trace, context, verzoekdetails (zonder geheimen en gevoelige persoonsgegevens) — verzonden naar een dienst voor foutregistratie en naar logs, gelabeld met dezelfde referentie-ID.
+- **Voor jou:** de volledige fout - stack trace, context, verzoekdetails (zonder geheimen en gevoelige persoonsgegevens) - verzonden naar een dienst voor foutregistratie en naar logs, gelabeld met dezelfde referentie-ID.
 
 Meldt een gebruiker een probleem, dan geeft hij je de referentie, en vind jij direct de volledige details. Je verliest niets aan debugbaarheid en geeft aanvallers niets.
 
-In de praktijk betekent dit een centrale foutafhandeling voor API-routes die bekende fouten (mislukte validatie, niet gevonden, niet toegestaan) omzet in duidelijke, veilige antwoorden met passende statuscodes, en al het andere in een generieke 500 met een referentie-ID — plus zorgvuldig opschonen zodat ook geheimen en persoonsgegevens niet in logs terechtkomen.
+In de praktijk betekent dit een centrale foutafhandeling voor API-routes die bekende fouten (mislukte validatie, niet gevonden, niet toegestaan) omzet in duidelijke, veilige antwoorden met passende statuscodes, en al het andere in een generieke 500 met een referentie-ID - plus zorgvuldig opschonen zodat ook geheimen en persoonsgegevens niet in logs terechtkomen.
 
 ## De Details van Enumeratie
 
@@ -74,7 +74,7 @@ Sommige meldingen zijn nuttig voor gebruikers én voor aanvallers. Veelvoorkomen
 
 ## Vergeet de Logs Zelf Niet
 
-Fouten uit antwoorden halen en in logs zetten is juist — maar logs kunnen ook lekken. AI-gegenereerde code logt vaak volledige verzoekbody's, die wachtwoorden, tokens, betaalgegevens of gezondheidsinformatie kunnen bevatten. Diensten voor foutregistratie slaan die vervolgens op. Schoon gevoelige velden op vóór het loggen, en beperk wie toegang heeft tot logs.
+Fouten uit antwoorden halen en in logs zetten is juist - maar logs kunnen ook lekken. AI-gegenereerde code logt vaak volledige verzoekbody's, die wachtwoorden, tokens, betaalgegevens of gezondheidsinformatie kunnen bevatten. Diensten voor foutregistratie slaan die vervolgens op. Schoon gevoelige velden op vóór het loggen, en beperk wie toegang heeft tot logs.
 
 ## Een Centrale Foutafhandeling, Uitgeschreven
 
@@ -101,7 +101,7 @@ export function handleError(err: unknown) {
 }
 ```
 
-Bekende, verwachte fouten — mislukte validatie, niet gevonden, niet toegestaan — worden gegooid als `AppError` met een veilige melding en een passende status. Al het andere wordt een generieke 500 met een referentie, terwijl de volledige details naar de foutregistratie gaan. Elke route handler wikkelt zijn logica in een try/catch die `handleError` aanroept, of een middleware van het framework doet dat voor alle routes.
+Bekende, verwachte fouten - mislukte validatie, niet gevonden, niet toegestaan - worden gegooid als `AppError` met een veilige melding en een passende status. Al het andere wordt een generieke 500 met een referentie, terwijl de volledige details naar de foutregistratie gaan. Elke route handler wikkelt zijn logica in een try/catch die `handleError` aanroept, of een middleware van het framework doet dat voor alle routes.
 
 ## Statuscodes Kiezen Die Weinig Onthullen
 
@@ -140,7 +140,7 @@ Voeg tests toe die controleren dat foutantwoorden geen gevoelige inhoud bevatten
 
 ## Tegelijk Gebruikers én Support Helpen
 
-Goede foutafhandeling verbetert niet alleen de beveiliging, maar ook de support. Ziet de gebruiker "Er ging iets mis (ref 3f9a2c1b)", dan vindt support de exacte fout binnen seconden. Combineer dit met gebruiksvriendelijke meldingen voor veelvoorkomende fouten — "Je sessie is verlopen, log opnieuw in", "Dit bestand is te groot (max. 10 MB)" — en veel supporttickets worden nooit geschreven.
+Goede foutafhandeling verbetert niet alleen de beveiliging, maar ook de support. Ziet de gebruiker "Er ging iets mis (ref 3f9a2c1b)", dan vindt support de exacte fout binnen seconden. Combineer dit met gebruiksvriendelijke meldingen voor veelvoorkomende fouten - "Je sessie is verlopen, log opnieuw in", "Dit bestand is te groot (max. 10 MB)" - en veel supporttickets worden nooit geschreven.
 
 ## Een Foutaudit vóór de Lancering
 
@@ -152,7 +152,7 @@ Lekken beperken zich niet tot API-antwoorden. Door AI-tools gegenereerde fronten
 
 ## Foutantwoorden van Derden
 
-Als je app een externe dienst aanroept en die faalt, kan het foutantwoord van die dienst accountidentificatoren, interne request-ID's, details over rate limits of fragmenten van je verzoek bevatten. Geef deze nooit door aan gebruikers. Zet externe fouten om in je eigen fouttypen — "betaalaanbieder niet beschikbaar, probeer het opnieuw", "adres opzoeken mislukt" — en log de ruwe details privé. Dat maakt je app ook bestendiger tegen wijzigingen in de foutformaten van aanbieders.
+Als je app een externe dienst aanroept en die faalt, kan het foutantwoord van die dienst accountidentificatoren, interne request-ID's, details over rate limits of fragmenten van je verzoek bevatten. Geef deze nooit door aan gebruikers. Zet externe fouten om in je eigen fouttypen - "betaalaanbieder niet beschikbaar, probeer het opnieuw", "adres opzoeken mislukt" - en log de ruwe details privé. Dat maakt je app ook bestendiger tegen wijzigingen in de foutformaten van aanbieders.
 
 ## Lekken via Timing en Gedrag
 
@@ -174,16 +174,16 @@ Leverde je zelfaudit een stack trace op, [plan dan een gratis kennismakingsgespr
 
 Fleur Verhoef, logistiek analist in Bussum, bouwde Pakketpunt met Cursor: een netwerk van lokale winkels die als afhaalpunt voor pakketten dienen, met een app waarin ontvangers zien welke winkel hun pakket heeft en winkels pakketten in- en uitscannen. Zestig winkels in het Gooi deden mee.
 
-De neef van een winkeleigenaar, student cybersecurity, stuurde Fleur een vriendelijk rapport. Door misvormde trackingcodes in te sturen, had hij foutmeldingen ontvangen met volledige SQL-statements inclusief tabel- en kolomnamen, de interne hostnaam van de Postgres-database, en stack traces met versies van bibliotheken. Een mislukt verzoek aan de API van de vervoerder gaf het volledige foutantwoord van de vervoerder terug, inclusief de accountidentificator van Pakketpunt. Het inlogformulier maakte onderscheid tussen onbekende e-mailadressen en verkeerde wachtwoorden, en de dienst voor foutregistratie sloeg volledige verzoekbody's op — inclusief wachtwoorden van winkelpersoneel die bij het inloggen waren verstuurd.
+De neef van een winkeleigenaar, student cybersecurity, stuurde Fleur een vriendelijk rapport. Door misvormde trackingcodes in te sturen, had hij foutmeldingen ontvangen met volledige SQL-statements inclusief tabel- en kolomnamen, de interne hostnaam van de Postgres-database, en stack traces met versies van bibliotheken. Een mislukt verzoek aan de API van de vervoerder gaf het volledige foutantwoord van de vervoerder terug, inclusief de accountidentificator van Pakketpunt. Het inlogformulier maakte onderscheid tussen onbekende e-mailadressen en verkeerde wachtwoorden, en de dienst voor foutregistratie sloeg volledige verzoekbody's op - inclusief wachtwoorden van winkelpersoneel die bij het inloggen waren verstuurd.
 
-In vier werkdagen voerden de engineers van LaunchStudio een centrale foutafhandeling in met veilige meldingen en referentie-ID's, verplaatsten ze gedetailleerde fouten naar de foutregistratie met opschonen van wachtwoorden, tokens en persoonsgegevens, verwijderden ze opgeslagen wachtwoorden uit de geschiedenis van de foutregistratie en dwongen ze een wachtwoordreset af voor het betrokken personeel, maakten ze de meldingen voor inloggen en herstellen gelijk, bevestigden ze de productieconfiguratie, en — omdat SQL in foutmeldingen daar op wees — controleerden ze het opzoeken van trackingcodes, dat veilig geparametriseerde query's bleek te gebruiken.
+In vier werkdagen voerden de engineers van LaunchStudio een centrale foutafhandeling in met veilige meldingen en referentie-ID's, verplaatsten ze gedetailleerde fouten naar de foutregistratie met opschonen van wachtwoorden, tokens en persoonsgegevens, verwijderden ze opgeslagen wachtwoorden uit de geschiedenis van de foutregistratie en dwongen ze een wachtwoordreset af voor het betrokken personeel, maakten ze de meldingen voor inloggen en herstellen gelijk, bevestigden ze de productieconfiguratie, en - omdat SQL in foutmeldingen daar op wees - controleerden ze het opzoeken van trackingcodes, dat veilig geparametriseerde query's bleek te gebruiken.
 
 **Resultaat:** De foutantwoorden van Pakketpunt onthullen nu niets meer dan een vriendelijke melding en een referentie. Support gaat sneller, omdat winkelpersoneel de referentie doorgeeft en Fleur de volledige fout binnen seconden vindt. De neef is inmiddels de parttime beveiligingstester van Pakketpunt.
 
 > *"Mijn app was zo behulpzaam als hij faalde dat hij een vreemde vertelde hoe mijn database was opgebouwd. Nu is hij behulpzaam voor mij."*
-> — **Fleur Verhoef, Oprichter, Pakketpunt (Bussum)**
+> - **Fleur Verhoef, Oprichter, Pakketpunt (Bussum)**
 
-**Kosten & Tijdlijn:** € 980 (foutafhandeling, opschonen van logs, oplossingen tegen enumeratie en review van de configuratie) — afgerond in 4 werkdagen.
+**Kosten & Tijdlijn:** € 980 (foutafhandeling, opschonen van logs, oplossingen tegen enumeratie en review van de configuratie) - afgerond in 4 werkdagen.
 
 ## Veelgestelde Vragen
 

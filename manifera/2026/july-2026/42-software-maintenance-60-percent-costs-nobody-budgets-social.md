@@ -12,10 +12,10 @@ Research: maintenance = **60-80% of total cost of ownership.**
 
 **The 4 types of maintenance:**
 
-🔧 **Corrective** (20-25%) — Bug fixes from real-world usage
-🔄 **Adaptive** (25-30%) — iOS updates, API changes, framework deprecations
-✨ **Perfective** (30-35%) — New features users actually want
-🛡️ **Preventive** (10-15%) — Refactoring, dependency updates, monitoring
+🔧 **Corrective** (20-25%) - Bug fixes from real-world usage
+🔄 **Adaptive** (25-30%) - iOS updates, API changes, framework deprecations
+✨ **Perfective** (30-35%) - New features users actually want
+🛡️ **Preventive** (10-15%) - Refactoring, dependency updates, monitoring
 
 **The maintenance budget formula:**
 
@@ -44,9 +44,9 @@ Year 1 is most expensive (25-35%). Years 2-5 stabilise at 15-20%.
 
 **The retainer model:**
 
-Basic: 10-20 hrs/month (€2K-€4K) — patches + bug fixes
-Standard: 20-40 hrs/month (€4K-€8K) — above + small features
-Premium: 40-80 hrs/month (€8K-€16K) — above + major features
+Basic: 10-20 hrs/month (€2K-€4K) - patches + bug fixes
+Standard: 20-40 hrs/month (€4K-€8K) - above + small features
+Premium: 40-80 hrs/month (€8K-€16K) - above + major features
 
 Predictable costs. Guaranteed availability. Institutional knowledge.
 

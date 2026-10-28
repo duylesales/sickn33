@@ -39,7 +39,7 @@ Lelystad stands on land that was seabed less than a century ago. The polder of F
 
 ## Why Flevoland Is a Natural Laboratory for Data-Driven Agriculture
 
-When the polders were designed, farms were laid out in regular plots with uniform soil conditions and good access. The result is an agricultural landscape of large, relatively homogeneous fields — ideal conditions for mechanisation, GPS-guided machines and experiments with sensors, drones and variable-rate application. Farmers in Flevoland grow crops such as potatoes, onions, sugar beet and grain, and many are early adopters of new technology.
+When the polders were designed, farms were laid out in regular plots with uniform soil conditions and good access. The result is an agricultural landscape of large, relatively homogeneous fields - ideal conditions for mechanisation, GPS-guided machines and experiments with sensors, drones and variable-rate application. Farmers in Flevoland grow crops such as potatoes, onions, sugar beet and grain, and many are early adopters of new technology.
 
 This makes the province attractive for research institutes, technology companies and education programmes that want to test data-driven farming methods under real field conditions instead of on small experimental plots.
 
@@ -85,11 +85,11 @@ Data-driven water management uses weather forecasts, water level sensors and hyd
 
 **EU Common Agricultural Policy (CAP).** Farmers applying for CAP support must register their parcels and crops, and member states increasingly use satellite-based monitoring to check declarations. In the Netherlands, the **Netherlands Enterprise Agency (RVO)** implements much of this, which creates large-scale geospatial data work.
 
-**Environmental rules.** Nitrates, crop protection and water quality regulations — including EU water quality objectives — drive demand for precise data on fertiliser and pesticide use and their effects.
+**Environmental rules.** Nitrates, crop protection and water quality regulations - including EU water quality objectives - drive demand for precise data on fertiliser and pesticide use and their effects.
 
 **EU drone regulation (EU) 2019/947.** Rules for operating drones, including categories and pilot requirements, affect how drone data can be collected over fields.
 
-**GDPR and data ownership.** Farm data can be personal data when linked to individual farmers. Agricultural data sharing agreements and codes of conduct address who owns and may use farm data — a sensitive topic for farmers.
+**GDPR and data ownership.** Farm data can be personal data when linked to individual farmers. Agricultural data sharing agreements and codes of conduct address who owns and may use farm data - a sensitive topic for farmers.
 
 **EU Artificial Intelligence Act.** Most agricultural applications are not high-risk, but AI systems used as safety components in machinery and in management of critical infrastructure such as water systems can fall within stricter categories.
 
@@ -97,11 +97,11 @@ Data-driven water management uses weather forecasts, water level sensors and hyd
 
 Late blight is a destructive disease in potato cultivation, and farmers traditionally spray preventively according to schedules and warning systems. A team develops a model that detects early symptoms in drone images, so that spraying can be targeted more precisely.
 
-The model performs well on images from one season. The next season, results drop: a different potato variety, different lighting, different drone camera settings. The team learns what many agricultural AI projects discover. Field conditions vary far more than lab conditions, labelled data is expensive because experts must walk the fields, and a model is only useful when it fits into a farmer's decision schedule and machinery. The eventual system combines imagery with weather-based disease risk models — a hybrid of domain knowledge and machine learning.
+The model performs well on images from one season. The next season, results drop: a different potato variety, different lighting, different drone camera settings. The team learns what many agricultural AI projects discover. Field conditions vary far more than lab conditions, labelled data is expensive because experts must walk the fields, and a model is only useful when it fits into a farmer's decision schedule and machinery. The eventual system combines imagery with weather-based disease risk models - a hybrid of domain knowledge and machine learning.
 
 ## A Common Misconception About Agricultural AI
 
-Many engineers expect agricultural AI to be a simpler version of industrial computer vision. In practice, agriculture is harder in several ways: conditions change daily, the "product" is alive, seasons limit how many experiments can be run per year and users are independent entrepreneurs who adopt technology only when it clearly pays off. A team can run perhaps one full experiment per crop per year. That makes careful experimental design and collaboration with farmers essential — and it rewards engineers who are patient and practical.
+Many engineers expect agricultural AI to be a simpler version of industrial computer vision. In practice, agriculture is harder in several ways: conditions change daily, the "product" is alive, seasons limit how many experiments can be run per year and users are independent entrepreneurs who adopt technology only when it clearly pays off. A team can run perhaps one full experiment per crop per year. That makes careful experimental design and collaboration with farmers essential - and it rewards engineers who are patient and practical.
 
 ## Typical Job Titles to Search For
 
@@ -163,10 +163,10 @@ Browse current AI, machine learning and data jobs in and around Lelystad at [onl
 ## Frequently Asked Questions
 
 ### (Scenario: candidate who doesn't know Lelystad as a research location) Is Lelystad a serious location for data science?
-Yes — Wageningen Bioveterinary Research, WUR research on precision agriculture and the Zuiderzeeland Water Board all rely on data science and modelling.
+Yes - Wageningen Bioveterinary Research, WUR research on precision agriculture and the Zuiderzeeland Water Board all rely on data science and modelling.
 
 ### (Scenario: computer vision engineer) Is agricultural computer vision different from industrial vision?
-Yes — lighting, weather, crop varieties and seasons vary constantly, so robustness and careful field validation are essential.
+Yes - lighting, weather, crop varieties and seasons vary constantly, so robustness and careful field validation are essential.
 
 ### (Scenario: candidate interested in public health) How does animal health research relate to public health?
 Several animal diseases can affect humans, so outbreak modelling and surveillance in animals are part of a broader One Health approach.
@@ -175,18 +175,18 @@ Several animal diseases can affect humans, so outbreak modelling and surveillanc
 Forecasting water levels, optimising pumping stations, monitoring dikes and analysing water quality, often combining sensors with hydrological models.
 
 ### (Scenario: candidate living in Amsterdam or Zwolle) Is Lelystad easy to reach?
-Yes — trains connect Lelystad with Amsterdam in about forty minutes and with Zwolle via the Hanzelijn.
+Yes - trains connect Lelystad with Amsterdam in about forty minutes and with Zwolle via the Hanzelijn.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is Lelystad a serious location for data science?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — animal health research, precision agriculture research and water management all rely on data science."}},
-    {"@type": "Question", "name": "Is agricultural computer vision different from industrial vision?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — constantly changing field conditions make robustness and field validation essential."}},
+    {"@type": "Question", "name": "Is Lelystad a serious location for data science?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - animal health research, precision agriculture research and water management all rely on data science."}},
+    {"@type": "Question", "name": "Is agricultural computer vision different from industrial vision?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - constantly changing field conditions make robustness and field validation essential."}},
     {"@type": "Question", "name": "How does animal health research relate to public health?", "acceptedAnswer": {"@type": "Answer", "text": "Several animal diseases can affect humans, linking animal surveillance to a One Health approach."}},
     {"@type": "Question", "name": "What data work does a water board do?", "acceptedAnswer": {"@type": "Answer", "text": "Water level forecasting, pumping optimisation, dike monitoring and water quality analysis."}},
-    {"@type": "Question", "name": "Is Lelystad easy to reach?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — about forty minutes by train from Amsterdam and connected to Zwolle via the Hanzelijn."}}
+    {"@type": "Question", "name": "Is Lelystad easy to reach?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - about forty minutes by train from Amsterdam and connected to Zwolle via the Hanzelijn."}}
   ]
 }
 </script>

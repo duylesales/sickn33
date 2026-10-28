@@ -1,4 +1,4 @@
-🔥 Logan bouwde een prototype met **Cursor** — Logan, een inkoopfunctionaris, bouwde een bestelbot, maar de bot faalde structureel wanneer leveranciers de formaten in hun catalogi enigszins aanpasten. 🧠
+🔥 Logan bouwde een prototype met **Cursor** - Logan, een inkoopfunctionaris, bouwde een bestelbot, maar de bot faalde structureel wanneer leveranciers de formaten in hun catalogi enigszins aanpasten. 🧠
 
 Generatieve AI transformeert enterprise-inkoop: RAG-gestuurde RFP Copilots, machinaal leesbare sales-documenten en geautomatiseerde contract-redlining bepalen wie enterprise-deals wint.
 
@@ -12,7 +12,7 @@ Generatieve AI transformeert enterprise-inkoop: RAG-gestuurde RFP Copilots, mach
 
 Bij **LaunchStudio** lossen we exact dit type schema-validatie, document-orkestratie en API-sandboxvraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Logans inkoopbot werd uiterst betrouwbaar: Het percentage succesvolle automatische bestellingen steeg naar 99,5% dankzij robuuste JSON-schemavalidatie. (€1.900 (Schema Validation Setup Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+Logans inkoopbot werd uiterst betrouwbaar: Het percentage succesvolle automatische bestellingen steeg naar 99,5% dankzij robuuste JSON-schemavalidatie. (€1.900 (Schema Validation Setup Pakket) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/how-generative-ai-is-reshaping-b2b-procurement
 

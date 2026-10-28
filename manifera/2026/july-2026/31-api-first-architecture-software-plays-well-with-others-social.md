@@ -2,7 +2,7 @@
 
 Your mobile app calls different endpoints than your web app for the same data.
 
-A partner wants to integrate — but there's no documentation and your APIs return inconsistent formats.
+A partner wants to integrate - but there's no documentation and your APIs return inconsistent formats.
 
 **This is what happens when APIs are an afterthought.**
 

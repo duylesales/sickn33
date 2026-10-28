@@ -83,7 +83,7 @@ Come with evidence, not with an impression.
 
 **Privately first, to the person responsible.** Not in a group meeting, and not in writing to a wide audience.
 
-**Frame it as a question.** "I reproduced the validation and got something different — can we look at it together?" leaves room for you to be wrong and for them to save face.
+**Frame it as a question.** "I reproduced the validation and got something different - can we look at it together?" leaves room for you to be wrong and for them to save face.
 
 **Separate the finding from the person.** The model was built under constraints you did not face, by someone solving a different problem.
 
@@ -97,9 +97,9 @@ Handled this way, finding a serious flaw in your first months is one of the fast
 
 The calculation changes when the model affects people rather than processes.
 
-If it influences employment, credit, access to services, benefits, education or similar decisions, the organisation's obligations are heavier — under the **AI Act**, such uses generally fall in the high-risk category, with requirements around documentation, data governance, human oversight and monitoring, while privacy rules impose their own duties around transparency and decisions with significant effects.
+If it influences employment, credit, access to services, benefits, education or similar decisions, the organisation's obligations are heavier - under the **AI Act**, such uses generally fall in the high-risk category, with requirements around documentation, data governance, human oversight and monitoring, while privacy rules impose their own duties around transparency and decisions with significant effects.
 
-In that context, an unresolved known flaw is not merely a quality issue. Raise it formally, involve the people whose job it is — compliance, the data protection officer, model validation where it exists, the works council if employees are affected — and keep a record of what you raised and what was decided. Obligations sit with the organisation, and your professional position rests on having said so clearly and in writing.
+In that context, an unresolved known flaw is not merely a quality issue. Raise it formally, involve the people whose job it is - compliance, the data protection officer, model validation where it exists, the works council if employees are affected - and keep a record of what you raised and what was decided. Obligations sit with the organisation, and your professional position rests on having said so clearly and in writing.
 
 ## If You Spot It During the Interviews
 
@@ -111,7 +111,7 @@ You have more leverage before accepting than at any point afterwards. Use it car
 
 **Ask what would happen if you concluded it needed rebuilding.** The answer tells you whether you would have the authority the role implies.
 
-**Ask who built it and where they are now.** If they are your prospective manager, weigh that carefully — it is workable, and it requires a manager secure enough to be corrected.
+**Ask who built it and where they are now.** If they are your prospective manager, weigh that carefully - it is workable, and it requires a manager secure enough to be corrected.
 
 ## When to Accept
 
@@ -135,7 +135,7 @@ You have more leverage before accepting than at any point afterwards. Use it car
 
 Inheriting something broken is, oddly, one of the better situations for a new joiner. The bar is low, the improvement is measurable, and the story afterwards is exactly what interviewers want: you found a real problem, established it with evidence, persuaded people, fixed it and showed what changed.
 
-The candidates who do badly are not the ones who inherit flawed models. They are the ones who inherit them, notice, and say nothing for two years because raising it felt awkward — and then have to explain, in a later interview, why the system they owned was producing numbers that were never right.
+The candidates who do badly are not the ones who inherit flawed models. They are the ones who inherit them, notice, and say nothing for two years because raising it felt awkward - and then have to explain, in a later interview, why the system they owned was producing numbers that were never right.
 
 ## If You Have to Live With It for a While
 
@@ -143,7 +143,7 @@ Confirming a problem does not mean you can fix it next week. Retraining may need
 
 **Write the limitation down.** A short, factual note: what the model does, where it is unreliable, which cases it should not be used for, and what the evidence is. This single document protects users, the organisation and you.
 
-**Restrict the use rather than the model.** Often the fastest safe step is narrowing where the output is applied — excluding the population where it fails, or requiring human review for the affected cases — while the rebuild proceeds.
+**Restrict the use rather than the model.** Often the fastest safe step is narrowing where the output is applied - excluding the population where it fails, or requiring human review for the affected cases - while the rebuild proceeds.
 
 **Add monitoring immediately.** If nobody was watching, start. Even a weekly check on distribution and outcomes turns an unknown into something observable.
 
@@ -163,7 +163,7 @@ He does not raise it immediately. He reproduces the training pipeline, confirms 
 
 The real performance is far below what is reported, and roughly equal to the baseline. Marketing has been spending on retention campaigns targeted by this model for three years.
 
-He takes it to his manager privately, with the notebook and a one-page summary. The conversation is uncomfortable for ten minutes and then constructive — the person who built it left two years ago, and nobody has looked at it since.
+He takes it to his manager privately, with the notebook and a one-page summary. The conversation is uncomfortable for ten minutes and then constructive - the person who built it left two years ago, and nobody has looked at it since.
 
 They keep the model running for one more cycle with a corrected feature set, measure properly against the baseline, and rebuild over the following quarter.
 
@@ -171,15 +171,15 @@ The finding becomes the reason he is trusted with the next two projects, and the
 
 ## Key Takeaways
 
-- Distinguish technical flaws, right-model-wrong-problem, outdated models, unfair effects and use beyond the intended purpose — the response differs for each.
+- Distinguish technical flaws, right-model-wrong-problem, outdated models, unfair effects and use beyond the intended purpose - the response differs for each.
 - Before concluding you are right, reproduce the work, look for the documented rationale, build a baseline, backtest out of time and ask the users.
 - Raise it privately first, framed as a question, separated from the person who built it, with a proportionate proposal.
 - When the model affects decisions about people, treat an unresolved flaw as a governance matter: involve compliance or the data protection officer and keep a written record.
-- Ask in the interview how the model is validated and what would happen if you concluded it needed rebuilding — defensiveness there predicts your first year.
+- Ask in the interview how the model is validated and what would happen if you concluded it needed rebuilding - defensiveness there predicts your first year.
 
 ## Where to Start
 
-Ask how any production model is validated and what it is compared against before you accept — and see which employers near you already have a validation practice rather than a plan for one.
+Ask how any production model is validated and what it is compared against before you accept - and see which employers near you already have a validation practice rather than a plan for one.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -205,10 +205,10 @@ The opposite, if you act. Finding a real problem, proving it and fixing it is am
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I decline a role because a production model looks flawed?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually — decline when it affects people and nobody is interested, or when you lack authority."}},
+    {"@type": "Question", "name": "Should I decline a role because a production model looks flawed?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually - decline when it affects people and nobody is interested, or when you lack authority."}},
     {"@type": "Question", "name": "How do I check whether I am right?", "acceptedAnswer": {"@type": "Answer", "text": "Reproduce it, seek the documented rationale, build a baseline, backtest out of time and ask users."}},
     {"@type": "Question", "name": "How should I raise it?", "acceptedAnswer": {"@type": "Answer", "text": "Privately, as a question, with evidence and a proportionate next step."}},
-    {"@type": "Question", "name": "When is this more than a technical issue?", "acceptedAnswer": {"@type": "Answer", "text": "When decisions about people are involved — treat it as governance and record what you raised."}},
+    {"@type": "Question", "name": "When is this more than a technical issue?", "acceptedAnswer": {"@type": "Answer", "text": "When decisions about people are involved - treat it as governance and record what you raised."}},
     {"@type": "Question", "name": "Is inheriting a broken model bad for my career?", "acceptedAnswer": {"@type": "Answer", "text": "The opposite if you act; staying silent for years is the damaging option."}}
   ]
 }

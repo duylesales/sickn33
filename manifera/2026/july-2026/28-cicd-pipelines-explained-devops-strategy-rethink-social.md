@@ -8,22 +8,22 @@ That's €156,000/year in a Western European team.
 
 **5 anti-patterns killing your pipeline:**
 
-❌ **Monolith pipeline** — all tests run on every commit
+❌ **Monolith pipeline** - all tests run on every commit
 → Fix: Tiered architecture
 Tier 1 (<2 min): lint + unit tests → every commit
 Tier 2 (<10 min): integration → on PR
 Tier 3 (<30 min): E2E + security → on merge
 
-❌ **Flaky tests** — 20% random failures
+❌ **Flaky tests** - 20% random failures
 → Fix: quarantine immediately, track %, fix at >5%
 
-❌ **No caching** — downloads everything from scratch
+❌ **No caching** - downloads everything from scratch
 → Fix: Docker layer cache, dependency cache, artifact cache
 
-❌ **Manual deploy steps** — SSH, pull, pray
+❌ **Manual deploy steps** - SSH, pull, pray
 → Fix: infrastructure-as-code, zero-touch deployment
 
-❌ **No rollback** — "fix forward" while production burns
+❌ **No rollback** - "fix forward" while production burns
 → Fix: blue-green or canary releases, rollback in seconds
 
 **The 2026 pipeline goal:**

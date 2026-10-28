@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The offer arrives on Tuesday and they would like an answer by Friday. It is a good offer. It is also not the one you were hoping for, because a second employer — the one you actually want — has you at second-interview stage with a final round somewhere next week. Candidates in this position tend to do one of three things: panic and accept, stall clumsily and damage both processes, or accept and then renege, which is worse than it sounds. There is a fourth approach, and it is mostly a matter of asking two straightforward questions quickly rather than agonising privately for three days.
+The offer arrives on Tuesday and they would like an answer by Friday. It is a good offer. It is also not the one you were hoping for, because a second employer - the one you actually want - has you at second-interview stage with a final round somewhere next week. Candidates in this position tend to do one of three things: panic and accept, stall clumsily and damage both processes, or accept and then renege, which is worse than it sounds. There is a fourth approach, and it is mostly a matter of asking two straightforward questions quickly rather than agonising privately for three days.
 
 ## Why Deadlines Exist
 
@@ -43,15 +43,15 @@ Some reasons are genuine. A team has budget for one hire this quarter and a seco
 
 Other reasons are tactical. A short deadline prevents you from comparing, limits negotiation and stops you from using the offer elsewhere. A deadline of forty-eight hours on a permanent role, after a process that took two months, is usually about pressure rather than logistics.
 
-The distinction matters because it tells you what kind of employer you are dealing with — which is itself information about the job.
+The distinction matters because it tells you what kind of employer you are dealing with - which is itself information about the job.
 
 ## What Is Normal in the Netherlands
 
 There is no general statutory waiting period for considering a job offer, and practice varies. That said, expectations here are reasonably settled: a few working days to consider a written offer is ordinary and rarely questioned, and a week is common for senior roles or where a partner and a relocation are involved.
 
-Recruitment practice in the Netherlands is also guided by the **NVP recruitment code**, which sets expectations for how employers handle applicants — transparency about the process and timely communication among them. It is not law, and many employers follow it in spirit.
+Recruitment practice in the Netherlands is also guided by the **NVP recruitment code**, which sets expectations for how employers handle applicants - transparency about the process and timely communication among them. It is not law, and many employers follow it in spirit.
 
-Two practical points. First, a written offer with the terms set out is what you consider — an enthusiastic phone call is not something you can weigh. Second, with pay transparency rules increasingly shaping how ranges are communicated, more employers now put the salary position in writing early, which removes one reason for delay.
+Two practical points. First, a written offer with the terms set out is what you consider - an enthusiastic phone call is not something you can weigh. Second, with pay transparency rules increasingly shaping how ranges are communicated, more employers now put the salary position in writing early, which removes one reason for delay.
 
 ## Your Actual Leverage
 
@@ -63,7 +63,7 @@ The leverage disappears in exactly one situation: when you ask repeatedly, or wh
 
 ## How to Ask for Time
 
-Keep it short and concrete. Thank them, confirm your genuine interest, say you want to give the decision the seriousness it deserves, and propose a specific date — ideally one that is only a few days later than theirs.
+Keep it short and concrete. Thank them, confirm your genuine interest, say you want to give the decision the seriousness it deserves, and propose a specific date - ideally one that is only a few days later than theirs.
 
 You do not have to explain that another process is running. You may, and there are two schools of thought. Saying so is honest and sometimes accelerates everything; it also tells them you may leave, which in rare cases changes their enthusiasm. A middle path works well: "I am in the final stage of one other process and want to be able to accept your offer without reservation. I can confirm on Wednesday."
 
@@ -73,7 +73,7 @@ Ask once. Deliver on the date you named, whatever the answer.
 
 This is the part candidates neglect, and it is where most of the resolution actually comes from.
 
-Contact the second employer immediately — the same day, not after two days of deliberation. Be direct: you have received a written offer with a deadline, you are genuinely interested in their role, and you wanted to tell them rather than disappear. Ask whether it is possible to bring their remaining steps forward.
+Contact the second employer immediately - the same day, not after two days of deliberation. Be direct: you have received a written offer with a deadline, you are genuinely interested in their role, and you wanted to tell them rather than disappear. Ask whether it is possible to bring their remaining steps forward.
 
 Employers respond to this far more often than candidates expect. Interviews get compressed, final rounds move up, and decisions that would have taken two weeks take three days. A hiring manager who wants you will move; one who will not move has told you something useful about how much they want you, and that is worth knowing before you turn down a real offer for a hypothetical one.
 
@@ -85,7 +85,7 @@ Sometimes nothing moves and you have to choose. In that case, judge the offer in
 
 Ask yourself one question: if the second process did not exist, would I be pleased to accept this? If the answer is yes, accept it. A concrete good offer beats a hypothetical better one, and the second process may well have ended in a rejection you never saw coming.
 
-If the answer is no — if you would only take it as insurance — then declining is the more honest choice, and usually the better one. Accepting a role you do not want, planning to keep looking, costs you the next six months and your reputation with that employer.
+If the answer is no - if you would only take it as insurance - then declining is the more honest choice, and usually the better one. Accepting a role you do not want, planning to keep looking, costs you the next six months and your reputation with that employer.
 
 ## What Not to Do
 
@@ -139,7 +139,7 @@ You cannot meaningfully consider an offer you have not seen in full, and a deadl
 
 **Anything you negotiated.** A training budget, a specific project, a review point, a day off per week, a commitment about scope. A term agreed verbally and absent from the document does not exist, and the person who promised it may not be your manager in a year.
 
-If the employer cannot produce this within a day or two, that is worth noticing — and it is also a legitimate reason to ask for the deadline to start from when the complete offer arrives, which most employers accept without argument.
+If the employer cannot produce this within a day or two, that is worth noticing - and it is also a legitimate reason to ask for the deadline to start from when the complete offer arrives, which most employers accept without argument.
 
 ## Real example
 
@@ -149,7 +149,7 @@ An ML engineer receives a written offer from a logistics company on a Tuesday, w
 
 He does two things that afternoon. He replies to the logistics company thanking them, confirming his interest, and asking whether he can respond by the following Wednesday because he wants to accept without reservation. They agree the same day. He then emails the second employer, explains he has a written offer with a deadline, says he is genuinely interested in their role, and asks whether the final stage can be brought forward.
 
-The second employer moves the interview to Friday and promises a decision by Monday. On Monday they decline him — the role goes to a candidate with more domain experience.
+The second employer moves the interview to Friday and promises a decision by Monday. On Monday they decline him - the role goes to a candidate with more domain experience.
 
 On Wednesday he accepts the logistics offer, without the lingering question of what the other one would have been, and with a hiring manager who noticed that he asked once, named a date and kept to it.
 
@@ -157,13 +157,13 @@ On Wednesday he accepts the logistics offer, without the lingering question of w
 
 - Distinguish genuine deadlines from tactical ones; a very short deadline after a long process is usually about pressure.
 - A few working days to consider a written offer is ordinary in the Netherlands, and a single polite request with a specific date is rarely refused.
-- Contact the second employer the same day and ask them to accelerate — this is where most of the resolution comes from.
+- Contact the second employer the same day and ask them to accelerate - this is where most of the resolution comes from.
 - If you must choose blind, judge the offer in hand on its own merits: would you be pleased to accept it if the other process did not exist?
 - Never accept and renege, and do not treat a probationary period as a hedge; the Dutch AI market is small and reputations travel.
 
 ## Where to Start
 
-Having a realistic picture of what else is out there is what makes a deadline manageable rather than frightening — check what is currently open near you before you are under time pressure.
+Having a realistic picture of what else is out there is what makes a deadline manageable rather than frightening - check what is currently open near you before you are under time pressure.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -190,10 +190,10 @@ Often. A one- or two-day deadline after a long process, refusal to put terms in 
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How much time can I ask for?", "acceptedAnswer": {"@type": "Answer", "text": "A few working days is ordinary; ask once, politely, naming a date you will keep."}},
-    {"@type": "Question", "name": "Should I tell the other employer I have an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the same day — it often accelerates their remaining steps."}},
+    {"@type": "Question", "name": "Should I tell the other employer I have an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the same day - it often accelerates their remaining steps."}},
     {"@type": "Question", "name": "Can I accept and change my mind later?", "acceptedAnswer": {"@type": "Answer", "text": "Once signed, withdrawing is a breach with potential consequences and reputational cost."}},
     {"@type": "Question", "name": "What if the second process cannot be sped up?", "acceptedAnswer": {"@type": "Answer", "text": "Judge the offer in hand on its own merits and accept or decline honestly."}},
-    {"@type": "Question", "name": "Is a very short deadline a warning sign?", "acceptedAnswer": {"@type": "Answer", "text": "Often — especially after a long process, or when terms are withheld in writing."}}
+    {"@type": "Question", "name": "Is a very short deadline a warning sign?", "acceptedAnswer": {"@type": "Answer", "text": "Often - especially after a long process, or when terms are withheld in writing."}}
   ]
 }
 </script>

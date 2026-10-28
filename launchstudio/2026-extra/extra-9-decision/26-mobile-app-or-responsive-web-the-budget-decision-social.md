@@ -1,14 +1,14 @@
 🚨 "So it's an app?" "It's a web app, works on your phone." "But is it in the App Store?" One founder heard that so often she requested quotes and stared at €14,000 before validating the product. 😳
 
-The App Store isn't extra work bolted on — it's a different budget and commission — most founders answer before asking: 🧠
+The App Store isn't extra work bolted on - it's a different budget and commission - most founders answer before asking: 🧠
 
 ❌ A subscription sold in-app nets less after Apple's cut, forever
-❌ Releasing stops being instant — fixes wait on review and updates
+❌ Releasing stops being instant - fixes wait on review and updates
 ❌ Push needs server credentials, device tokens, a backend routing them
 ❌ "Customers keep asking about the App Store" gets read as technical, not marketing
 
 ✅ Check whether revenue is a digital good consumed in-app
-✅ Ask if the core loop needs location, Bluetooth or offline — most don't
+✅ Ask if the core loop needs location, Bluetooth or offline - most don't
 ✅ Ship an installable web product first, let usage decide if the app is needed
 ✅ Remember push works on Android, desktop, and iOS via the home screen
 

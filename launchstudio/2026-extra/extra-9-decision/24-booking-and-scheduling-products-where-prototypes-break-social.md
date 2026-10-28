@@ -1,6 +1,6 @@
 🚨 One newsletter to 2,400 patients on a Monday. By Tuesday morning: four slots booked twice, two patients arriving an hour early after booking from Spain, and a calendar sync dead for three weeks. 😳
 
-A booking app looks like the easy build — a calendar, a form, a confirmation email. It isn't — here's where it breaks first: 🧠
+A booking app looks like the easy build - a calendar, a form, a confirmation email. It isn't - here's where it breaks first: 🧠
 
 ❌ Availability gets checked, then saved, as two steps two people can slip through
 ❌ Appointment times get stored without saying which time zone they're in

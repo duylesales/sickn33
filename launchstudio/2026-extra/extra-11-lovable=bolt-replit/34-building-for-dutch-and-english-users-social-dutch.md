@@ -1,4 +1,4 @@
-🇳🇱 Lotte Verhoeven bouwde Praktijkplanner in Lovable voor 60 zorgpraktijken in Noord-Brabant. De app mengde Nederlands en Engels, data stonden op zijn Amerikaans (MM/DD/JJJJ) en facturen bevatten geen Nederlandse btw-vermeldingen — waardoor patiënten op de verkeerde dag verschenen en boekhouders facturen afkeurden. 😳
+🇳🇱 Lotte Verhoeven bouwde Praktijkplanner in Lovable voor 60 zorgpraktijken in Noord-Brabant. De app mengde Nederlands en Engels, data stonden op zijn Amerikaans (MM/DD/JJJJ) en facturen bevatten geen Nederlandse btw-vermeldingen - waardoor patiënten op de verkeerde dag verschenen en boekhouders facturen afkeurden. 😳
 
 Meertaligheid is meer dan tekst vertalen; het vraagt om lokale datum-, valuta- en belastingformaten. Waar het misgaat:
 

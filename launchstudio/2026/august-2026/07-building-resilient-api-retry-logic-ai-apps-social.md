@@ -1,4 +1,4 @@
-🔥 Thomas built a prototype using **Lovable** — thomas, a customer success manager, used **lovable** to build a review analysis tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Thomas built a prototype using **Lovable** - thomas, a customer success manager, used **lovable** to build a review analysis tool, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Thomas's application achieved silky-smooth performance: API failure rate dropped to zero, and user sessions remained uninterrupted during outages. (€1,400 (Resilient API Package) — production-ready and deployed in 3 business days.). 🚀
+Thomas's application achieved silky-smooth performance: API failure rate dropped to zero, and user sessions remained uninterrupted during outages. (€1,400 (Resilient API Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/building-resilient-api-retry-logic-ai-apps
 

@@ -37,7 +37,7 @@ Content Format: Career Guide
 
 People step away from work for many reasons: raising young children, caring for a parent, recovering from illness or burnout, studying, relocating with a partner, or simply taking time off. In most professions, returning after one or two years means a period of adjustment. In AI and data work, where tools and techniques seem to change every few months, a career break can feel like falling off a moving train. The good news is that the fundamentals of the field change much more slowly than the headlines suggest, Dutch law offers meaningful protections, and many employers value the perspective and maturity that returners bring.
 
-## What Actually Changes During a Break — and What Doesn't
+## What Actually Changes During a Break - and What Doesn't
 
 **What changes quickly.** Tools, libraries, model releases, cloud services and popular frameworks evolve continuously. Generative AI in particular has changed how many teams write code, search documentation, build prototypes and create applications on top of language models. Regulatory context also changes: the EU AI Act, for example, introduced new obligations that affect many AI teams.
 
@@ -51,7 +51,7 @@ A returner who refreshes tools and understands recent developments while bringin
 
 **Step 2: Refresh the core toolchain.** Update your programming environment, work through recent versions of the main libraries you used and practise version control and testing. Use AI coding assistants carefully to accelerate learning, while checking results.
 
-**Step 3: Learn the essentials of generative AI applications.** Even if you do not plan to specialise in generative AI, understanding how teams use language models — retrieval-augmented generation, evaluation of model outputs, prompt and system design, and risks such as hallucination and data leakage — has become part of general AI literacy.
+**Step 3: Learn the essentials of generative AI applications.** Even if you do not plan to specialise in generative AI, understanding how teams use language models - retrieval-augmented generation, evaluation of model outputs, prompt and system design, and risks such as hallucination and data leakage - has become part of general AI literacy.
 
 **Step 4: Understand the regulatory context.** Learn the basics of the EU AI Act, including risk categories, transparency obligations and the AI literacy requirement for organisations.
 
@@ -61,7 +61,7 @@ A realistic refresh takes weeks to a few months, depending on the length of the 
 
 ## How to Explain a Career Gap
 
-**Be brief and matter-of-fact.** A single line on your CV — for example, "Career break for family care" or "Sabbatical and relocation" — is sufficient. You do not need to share private details, such as medical information.
+**Be brief and matter-of-fact.** A single line on your CV - for example, "Career break for family care" or "Sabbatical and relocation" - is sufficient. You do not need to share private details, such as medical information.
 
 **Focus on readiness.** In interviews, spend less time explaining why you were away and more time explaining what you have done to prepare for returning and what you want to work on now.
 
@@ -92,7 +92,7 @@ Candidates who apply to a new employer after recovery are not required to disclo
 
 ## Returning Part-Time or Gradually
 
-Many returners prefer to start with fewer hours and increase them over time. Part-time work is common in the Netherlands, and many employers — particularly in the public sector, healthcare, research and education — are used to such arrangements. When applying, you can propose a concrete arrangement, such as starting at 24 or 32 hours with an evaluation after several months.
+Many returners prefer to start with fewer hours and increase them over time. Part-time work is common in the Netherlands, and many employers - particularly in the public sector, healthcare, research and education - are used to such arrangements. When applying, you can propose a concrete arrangement, such as starting at 24 or 32 hours with an evaluation after several months.
 
 ## Negotiating Pay and Level
 
@@ -106,7 +106,7 @@ Start by contacting a handful of former colleagues for informal conversations. A
 
 Attend a few local meetups or online events in your specialism. Data and AI communities in cities such as Amsterdam, Utrecht, Eindhoven, Rotterdam and Groningen organise regular events where new tools and practices are discussed. Even one or two events can quickly show which developments matter in practice and which are mostly hype.
 
-Update your professional profile gradually rather than all at once. A short note that you are returning to work and interested in specific types of roles can prompt people in your network to reach out. Keep the message positive and specific — for example, mentioning the domain and type of work you want — so that others can easily think of relevant opportunities.
+Update your professional profile gradually rather than all at once. A short note that you are returning to work and interested in specific types of roles can prompt people in your network to reach out. Keep the message positive and specific - for example, mentioning the domain and type of work you want - so that others can easily think of relevant opportunities.
 
 ## Returner Programmes and Communities
 
@@ -135,27 +135,27 @@ The most common misconception is that a break of more than a year makes an AI ca
 ## Key Takeaways
 
 - Tools and frameworks change quickly, but fundamentals such as statistics, evaluation, data quality and communication remain central.
-- A structured refresh — mapping changes, updating tools, learning generative AI basics, understanding the AI Act and building a recent project — takes weeks to months.
+- A structured refresh - mapping changes, updating tools, learning generative AI basics, understanding the AI Act and building a recent project - takes weeks to months.
 - Explain a career gap briefly and focus on readiness; you do not need to share private details.
 - Dutch equal treatment law, the Work and Care Act, the Flexible Working Act and the Gatekeeper Improvement Act offer important protections and support.
 - Returners often bring valuable domain knowledge and maturity; negotiate a level that reflects prior experience.
 
 ## Where to Start
 
-Review ten current vacancies similar to your previous role, list the gaps and plan a focused refresh — then start applying before you feel completely ready.
+Review ten current vacancies similar to your previous role, list the gaps and plan a focused refresh - then start applying before you feel completely ready.
 
 Browse current AI, machine learning and data jobs, including part-time and flexible roles, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: professional after a long break) Is it possible to return to AI work after several years away?
-Yes — employers value experience and domain knowledge, and a focused refresh of tools and recent developments is usually sufficient.
+Yes - employers value experience and domain knowledge, and a focused refresh of tools and recent developments is usually sufficient.
 
 ### (Scenario: candidate writing a CV) How should I describe a career gap on my CV?
 Briefly and factually, for example "Career break for family care", focusing the rest of the CV on skills and readiness.
 
 ### (Scenario: returner overwhelmed by generative AI) Do I need to become a generative AI expert before returning?
-No — understanding the basics of how teams use language models and their risks is enough for most roles, unless you specialise in that area.
+No - understanding the basics of how teams use language models and their risks is enough for most roles, unless you specialise in that area.
 
 ### (Scenario: employee returning after burnout) How does returning after illness work in the Netherlands?
 Under the Gatekeeper Improvement Act, employer and employee cooperate on gradual reintegration guided by an occupational physician.
@@ -168,9 +168,9 @@ Rejecting a candidate on grounds such as pregnancy can constitute unlawful discr
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it possible to return to AI work after several years away?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — experience and domain knowledge remain valuable, with a focused skills refresh."}},
+    {"@type": "Question", "name": "Is it possible to return to AI work after several years away?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - experience and domain knowledge remain valuable, with a focused skills refresh."}},
     {"@type": "Question", "name": "How should I describe a career gap on my CV?", "acceptedAnswer": {"@type": "Answer", "text": "Briefly and factually, focusing the rest of the CV on skills and readiness."}},
-    {"@type": "Question", "name": "Do I need to become a generative AI expert before returning?", "acceptedAnswer": {"@type": "Answer", "text": "No — basic understanding of how teams use language models is enough for most roles."}},
+    {"@type": "Question", "name": "Do I need to become a generative AI expert before returning?", "acceptedAnswer": {"@type": "Answer", "text": "No - basic understanding of how teams use language models is enough for most roles."}},
     {"@type": "Question", "name": "How does returning after illness work in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Gradual reintegration under the Gatekeeper Improvement Act with an occupational physician."}},
     {"@type": "Question", "name": "Can an employer reject me because of pregnancy or care responsibilities?", "acceptedAnswer": {"@type": "Answer", "text": "Rejection on grounds such as pregnancy can be unlawful discrimination under Dutch law."}}
   ]

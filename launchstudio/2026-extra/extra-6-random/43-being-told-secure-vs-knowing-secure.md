@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Difference Between Being Told 'It's Secure' and Knowing It's Secure",
-  "description": "An opinion piece on why an ai secure label inside your build tool tells you almost nothing about whether your product is actually safe to launch — and what founders should ask instead.",
+  "description": "An opinion piece on why an ai secure label inside your build tool tells you almost nothing about whether your product is actually safe to launch - and what founders should ask instead.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
@@ -28,13 +28,13 @@ That gap between being told something is ai secure and actually knowing it is th
 
 Security isn't one property. It's a long list of specific, separately-verifiable claims: data encrypted in transit, data encrypted at rest, passwords hashed rather than stored in plaintext, access properly scoped so one user can't see another's data, dependencies free of known vulnerabilities, secrets kept out of source code. A tool can be fully honest when it says "your data is encrypted" while only meaning one of those six things.
 
-The founder reading that message has no way to know which one is meant. That's not a flaw unique to any particular AI coding tool — it's a structural problem with compressing a technical, multi-part claim into a two-word reassurance aimed at someone without the background to unpack it.
+The founder reading that message has no way to know which one is meant. That's not a flaw unique to any particular AI coding tool - it's a structural problem with compressing a technical, multi-part claim into a two-word reassurance aimed at someone without the background to unpack it.
 
 ## A distinction that has no reason to be intuitive
 
-Julia Mertens, a founder in Renkum, built KliniekAfspraak — an appointment app for a small clinic network — using Lovable. At one point the interface told her, plainly, that her data was encrypted. It was true. It just meant encrypted in transit — protected while moving between her users' browsers and her servers — not encrypted at rest, meaning unprotected once it sat in the database.
+Julia Mertens, a founder in Renkum, built KliniekAfspraak - an appointment app for a small clinic network - using Lovable. At one point the interface told her, plainly, that her data was encrypted. It was true. It just meant encrypted in transit - protected while moving between her users' browsers and her servers - not encrypted at rest, meaning unprotected once it sat in the database.
 
-There's no reason Julia should have known to ask which kind. Nothing about the sentence "your data is encrypted" signals that it's describing only half of the picture. This isn't a criticism of her judgment. It's exactly the kind of distinction that only becomes obvious once someone with the right background explains it — and by then, it's often already relevant, because real patient appointment data is already sitting in that database.
+There's no reason Julia should have known to ask which kind. Nothing about the sentence "your data is encrypted" signals that it's describing only half of the picture. This isn't a criticism of her judgment. It's exactly the kind of distinction that only becomes obvious once someone with the right background explains it - and by then, it's often already relevant, because real patient appointment data is already sitting in that database.
 
 ## What "knowing" actually looks like
 
@@ -44,46 +44,46 @@ None of these questions require the founder to become an engineer. They require 
 
 ## Why this matters more for AI-native founders specifically
 
-Founders building with AI tools are, by definition, often building things they couldn't have built alone a few years ago — which is genuinely good. But the tools that made building accessible didn't also make security legible. The interface that tells you "encrypted" doesn't show you the encryption. The tool that "handles auth" doesn't show you what happens when a token is stolen. The confidence of the interface and the actual state of the system underneath it are only loosely correlated, and founders without a technical background have no built-in way to sense the gap.
+Founders building with AI tools are, by definition, often building things they couldn't have built alone a few years ago - which is genuinely good. But the tools that made building accessible didn't also make security legible. The interface that tells you "encrypted" doesn't show you the encryption. The tool that "handles auth" doesn't show you what happens when a token is stolen. The confidence of the interface and the actual state of the system underneath it are only loosely correlated, and founders without a technical background have no built-in way to sense the gap.
 
-That's not an argument against building with AI tools. It's an argument for treating "it says it's secure" and "it's actually secure" as two different claims that need two different kinds of verification — one from the tool, one from a person qualified to check.
+That's not an argument against building with AI tools. It's an argument for treating "it says it's secure" and "it's actually secure" as two different claims that need two different kinds of verification - one from the tool, one from a person qualified to check.
 
-Our engineers, working out of Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, spend a meaningful share of their time doing exactly this kind of translation — turning "it says it's secure" into a specific, checked list of what's actually true. LaunchStudio brings Manifera's enterprise-grade engineering standard, refined over 160+ delivered projects, to that translation work. If you're unsure which category your own product falls into, you can [send us your prototype link for a free read on where it stands](https://launchstudio.eu/en/#contact).
+Our engineers, working out of Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, spend a meaningful share of their time doing exactly this kind of translation - turning "it says it's secure" into a specific, checked list of what's actually true. LaunchStudio brings Manifera's enterprise-grade engineering standard, refined over 160+ delivered projects, to that translation work. If you're unsure which category your own product falls into, you can [send us your prototype link for a free read on where it stands](https://launchstudio.eu/en/#contact).
 
 ## Six Questions That Go Further Than "Is It Secure"
 
-The questions raised earlier in this article — encryption at rest, password hashing, data isolation — are the starting list, not the whole list. Once those specific answers are in hand, a handful of further questions catch gaps that "it's secure" would just as confidently paper over, because each one is testing a different, separately-verifiable claim.
+The questions raised earlier in this article - encryption at rest, password hashing, data isolation - are the starting list, not the whole list. Once those specific answers are in hand, a handful of further questions catch gaps that "it's secure" would just as confidently paper over, because each one is testing a different, separately-verifiable claim.
 
 **Where do your secrets actually live?** Not "are they secure," but specifically: are API keys and database credentials sitting in environment variables or a secrets manager, or are they written directly into the code itself? A confident "yes, we handle secrets properly" and a hardcoded key sitting in a public repository's history are both things a founder without a technical background has no way to distinguish without asking this more specific version of the question.
 
-**What happens to a login session that's never actively closed?** Tokens that never expire are a common, quiet gap — technically "working," since the login flow functions fine, while leaving an indefinitely valid credential sitting around for anyone who obtains it. Ask specifically how long a session stays valid and what forces it to expire.
+**What happens to a login session that's never actively closed?** Tokens that never expire are a common, quiet gap - technically "working," since the login flow functions fine, while leaving an indefinitely valid credential sitting around for anyone who obtains it. Ask specifically how long a session stays valid and what forces it to expire.
 
 **Are your dependencies checked for known vulnerabilities, and how often?** Every AI-generated app depends on dozens of external packages, and those packages get security patches released against them regularly. "We built it securely" says nothing about whether an outdated, vulnerable package is quietly sitting in the dependency list six months after launch.
 
-**Are your backups protected the same way your live data is?** A product can encrypt its production database carefully and then store backups of that same data somewhere with weaker protection — an oversight that's invisible until the backup itself becomes the point of exposure rather than the live system.
+**Are your backups protected the same way your live data is?** A product can encrypt its production database carefully and then store backups of that same data somewhere with weaker protection - an oversight that's invisible until the backup itself becomes the point of exposure rather than the live system.
 
 **Who besides your own team can see raw user data, and why?** Third-party integrations, analytics tools, and support platforms often get broader data access than they actually need, simply because it was the fastest way to wire up the integration. Ask what each connected service can see, not just whether your own database is locked down.
 
 **If something did go wrong, would you know before a customer told you?** This is less a yes/no security question and more a test of whether any monitoring exists to detect unusual access patterns or failed login attempts at all. A product with strong defenses but zero visibility into attempted breaches is still flying blind on the question that matters most in the moment it matters most.
 
-None of these six questions require a technical background to ask — they require knowing that "it's secure" was never actually an answer to any of them. Bring this list, or one like it, to whoever built or is maintaining your product, and treat a vague or deflecting response to any single question the same way you'd treat one to the encryption questions raised earlier: as the start of a conversation, not the end of one.
+None of these six questions require a technical background to ask - they require knowing that "it's secure" was never actually an answer to any of them. Bring this list, or one like it, to whoever built or is maintaining your product, and treat a vague or deflecting response to any single question the same way you'd treat one to the encryption questions raised earlier: as the start of a conversation, not the end of one.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Sentence That Meant Half of What Julia Thought
 
-Julia Mertens had built KliniekAfspraak to let a small network of clinics manage patient appointments without juggling phone calls and paper calendars. Lovable's interface reassured her early on that data was encrypted — a sentence she took, reasonably, as a green light to move forward with onboarding real clinics and real patient records.
+Julia Mertens had built KliniekAfspraak to let a small network of clinics manage patient appointments without juggling phone calls and paper calendars. Lovable's interface reassured her early on that data was encrypted - a sentence she took, reasonably, as a green light to move forward with onboarding real clinics and real patient records.
 
-When LaunchStudio reviewed the project ahead of that onboarding, the distinction surfaced immediately: the encryption Julia had been told about covered data in transit only. Once patient appointment details reached the database, they sat there unencrypted — readable by anyone with direct database access, whether through a misconfigured integration, a compromised credential, or simply an overlooked permission setting. For a system handling healthcare appointment data, that gap was not a minor technical footnote.
+When LaunchStudio reviewed the project ahead of that onboarding, the distinction surfaced immediately: the encryption Julia had been told about covered data in transit only. Once patient appointment details reached the database, they sat there unencrypted - readable by anyone with direct database access, whether through a misconfigured integration, a compromised credential, or simply an overlooked permission setting. For a system handling healthcare appointment data, that gap was not a minor technical footnote.
 
-Manifera's engineers implemented encryption at rest across the database, reviewed access permissions clinic by clinic, and gave Julia a plain-language summary of exactly what was now protected and how — the kind of specific answer "it's secure" had never actually provided.
+Manifera's engineers implemented encryption at rest across the database, reviewed access permissions clinic by clinic, and gave Julia a plain-language summary of exactly what was now protected and how - the kind of specific answer "it's secure" had never actually provided.
 
 **Result:** KliniekAfspraak now handles patient data with encryption at both stages, and Julia has a written explanation she can hand to any clinic's IT contact who asks.
 
 > *"I didn't know there was a difference until someone explained it to me. Now it's the first thing I ask about anything I build."*
-> — **Julia Mertens, Founder, KliniekAfspraak (Renkum)**
+> - **Julia Mertens, Founder, KliniekAfspraak (Renkum)**
 
-**Cost & Timeline:** €1,100 (encryption-at-rest implementation and access review) — completed in 8 business days.
+**Cost & Timeline:** €1,100 (encryption-at-rest implementation and access review) - completed in 8 business days.
 
 ---
 
@@ -95,7 +95,7 @@ Encryption in transit protects data while it moves between a user's device and t
 
 ### Why would an AI coding tool only mention one type of encryption?
 
-It's not necessarily misleading on purpose — the tool may implement transit encryption by default through standard web protocols, while encryption at rest requires an additional, deliberate configuration step that isn't always included automatically.
+It's not necessarily misleading on purpose - the tool may implement transit encryption by default through standard web protocols, while encryption at rest requires an additional, deliberate configuration step that isn't always included automatically.
 
 ### How can a non-technical founder verify security claims without learning to code?
 

@@ -21,7 +21,7 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-For a growing SaaS built with Lovable or Bolt, hosting decisions tend to arrive at an awkward moment: enough customers that downtime hurts, not enough revenue for a DevOps hire. Somewhere between a free tier and a €5,000-a-month infrastructure team is the question founders actually face — how much AI application scalability and reliability can a small monthly budget buy? LaunchStudio's managed hosting is priced at €49 per month, so let us be specific about what that covers, what it does not, and how it compares with the alternatives.
+For a growing SaaS built with Lovable or Bolt, hosting decisions tend to arrive at an awkward moment: enough customers that downtime hurts, not enough revenue for a DevOps hire. Somewhere between a free tier and a €5,000-a-month infrastructure team is the question founders actually face - how much AI application scalability and reliability can a small monthly budget buy? LaunchStudio's managed hosting is priced at €49 per month, so let us be specific about what that covers, what it does not, and how it compares with the alternatives.
 
 ## What Founders Actually Need From Hosting at This Stage
 
@@ -31,7 +31,7 @@ At a few dozen to a few thousand users, the needs are modest but real:
 - SSL certificates renew without anyone remembering.
 - Backups run, and restores have been tested.
 - Security updates are applied to the parts of the stack you do not control.
-- Traffic spikes — a newsletter, a partner announcement — do not take the app down.
+- Traffic spikes - a newsletter, a partner announcement - do not take the app down.
 - When something breaks, someone who understands the setup fixes it.
 
 Note what is not on the list: multi-region failover, Kubernetes, custom autoscaling policies. Those come later, if ever.
@@ -45,7 +45,7 @@ LaunchStudio's managed hosting, part of the Launch & Grow package, includes:
 - **Uptime monitoring** with alerts to engineers and to you.
 - **Automatic backups** and periodic restore checks.
 - **Security updates** for the hosting stack and dependencies with known vulnerabilities.
-- **Priority support** — if something breaks, it gets fixed.
+- **Priority support** - if something breaks, it gets fixed.
 
 The value is less the servers than the responsibility: someone other than you owns noticing and fixing problems.
 
@@ -55,7 +55,7 @@ Being clear about the edges avoids surprises:
 
 - **Third-party usage costs.** Supabase, AI model APIs, email providers and payment fees are billed by those providers based on your usage.
 - **Feature development.** New features are separate projects.
-- **Major architecture changes.** If the app outgrows its setup — say, it needs background job infrastructure or a data warehouse — that is scoped separately.
+- **Major architecture changes.** If the app outgrows its setup - say, it needs background job infrastructure or a data warehouse - that is scoped separately.
 - **Unlimited scale.** A very large traffic increase may need a larger plan from the underlying providers.
 
 ## The Three Alternatives, Compared
@@ -86,7 +86,7 @@ That is why LaunchStudio pairs managed hosting with the initial Launch & Grow ha
 - Regulatory requirements for specific hosting (for example, dedicated environments)
 - Engineering work needed every week rather than every month
 
-When those appear, the next step is a scoped architecture project — through LaunchStudio or, for larger work, Manifera's full-cycle teams.
+When those appear, the next step is a scoped architecture project - through LaunchStudio or, for larger work, Manifera's full-cycle teams.
 
 ## What "Managed" Means Operationally
 
@@ -98,7 +98,7 @@ For AI application scalability on a small budget, it helps to see what a managed
 - **Monthly:** a restore test on a rotating basis; a summary of incidents, changes and recommendations sent to the founder.
 - **On incident:** alert acknowledged, diagnosis started, founder informed, fix or rollback applied, short written post-incident note.
 
-The founder's role reduces to reading a monthly summary and deciding on recommendations — which is the point.
+The founder's role reduces to reading a monthly summary and deciding on recommendations - which is the point.
 
 ## Response Expectations Worth Agreeing
 
@@ -131,11 +131,11 @@ As products grow, some founders bring operations in-house. A good managed arrang
 
 ## The Scalability Work That Pays for Itself
 
-The optimisation done at the start of a managed arrangement often reduces costs by more than the monthly fee — as in the example below, where moving to pooled connections, indexes and background jobs cut both load times and hosting costs. Combining one-time optimisation with ongoing care is usually the most cost-effective way to grow an AI-built SaaS from dozens to thousands of customers.
+The optimisation done at the start of a managed arrangement often reduces costs by more than the monthly fee - as in the example below, where moving to pooled connections, indexes and background jobs cut both load times and hosting costs. Combining one-time optimisation with ongoing care is usually the most cost-effective way to grow an AI-built SaaS from dozens to thousands of customers.
 
 ## Choosing the Underlying Platform
 
-Managed hosting for an AI-built app sits on top of a hosting platform, and the choice affects both scalability and cost. Serverless platforms such as Vercel and Netlify scale request handling automatically and suit Next.js and frontend-heavy apps, but long-running tasks need background job services. Container or VM platforms such as DigitalOcean, Fly.io or AWS give more control and predictable pricing for steady workloads, with more configuration. Backend-as-a-service providers such as Supabase or Firebase handle database, authentication and storage, with usage-based tiers. A managed service should choose based on your app's pattern — bursty versus steady traffic, background work, data volume and EU hosting requirements — rather than on habit.
+Managed hosting for an AI-built app sits on top of a hosting platform, and the choice affects both scalability and cost. Serverless platforms such as Vercel and Netlify scale request handling automatically and suit Next.js and frontend-heavy apps, but long-running tasks need background job services. Container or VM platforms such as DigitalOcean, Fly.io or AWS give more control and predictable pricing for steady workloads, with more configuration. Backend-as-a-service providers such as Supabase or Firebase handle database, authentication and storage, with usage-based tiers. A managed service should choose based on your app's pattern - bursty versus steady traffic, background work, data volume and EU hosting requirements - rather than on habit.
 
 ## Backups and Recovery Objectives, Explained
 
@@ -155,7 +155,7 @@ A small monthly budget cannot buy unlimited scale, but it can buy something more
 
 ## Who Is Behind the Monthly Fee
 
-LaunchStudio is powered by Manifera, a software development company with 11+ years of experience running production systems for clients including Vodafone, Statler BI and Xpar Vision. The managed hosting service is operated by Manifera engineers at the development centre in Ho Chi Minh City — which gives round-the-clock coverage across time zones with the Netherlands — and supported from Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio is powered by Manifera, a software development company with 11+ years of experience running production systems for clients including Vodafone, Statler BI and Xpar Vision. The managed hosting service is operated by Manifera engineers at the development centre in Ho Chi Minh City - which gives round-the-clock coverage across time zones with the Netherlands - and supported from Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/).
 
 To compare packages, see [Launch Ready and Launch & Grow](https://launchstudio.eu/en/#packages). For a vendor-neutral view of what reliable hosting involves, Google's [Site Reliability Engineering book](https://sre.google/books/) is freely available and surprisingly readable.
 
@@ -165,22 +165,22 @@ To compare packages, see [Launch Ready and Launch & Grow](https://launchstudio.e
 
 Linda Peters, a hairdresser and salon owner in Hengelo, built Salonagenda in Lovable: an online booking and client-card system for hair and beauty salons, with SMS reminders and deposits. It grew to 64 salons across Twente and the Achterhoek, with around 18,000 bookings a month.
 
-Linda was also, by default, its operations team. She had set up hosting on a DigitalOcean droplet with help from a friend, who had since moved on. Twice in one quarter the app went down overnight — once because the SSL certificate failed to renew, once because the disk filled with logs — and Linda found out from salon owners at 07:30. Backups existed but had never been restored. The booking calendar slowed badly on Saturday mornings, when half the salons were busy at once.
+Linda was also, by default, its operations team. She had set up hosting on a DigitalOcean droplet with help from a friend, who had since moved on. Twice in one quarter the app went down overnight - once because the SSL certificate failed to renew, once because the disk filled with logs - and Linda found out from salon owners at 07:30. Backups existed but had never been restored. The booking calendar slowed badly on Saturday mornings, when half the salons were busy at once.
 
 LaunchStudio's Launch & Grow project moved Salonagenda to managed serverless hosting with pooled Postgres, added indexes for the calendar queries, cached salon availability pages, moved SMS reminders to a background queue, set up log rotation and retention, and configured uptime monitoring and backups with a documented restore test. Managed hosting then took over monitoring, certificates, backups and updates.
 
-**Result:** In the following twelve months, Salonagenda had no overnight outages; the one incident — a provider issue lasting eleven minutes on a Tuesday — was handled by LaunchStudio's engineers before most salons opened. Saturday calendar load times fell from around five seconds to under one, and Linda grew the platform to 110 salons while going back to cutting hair four days a week.
+**Result:** In the following twelve months, Salonagenda had no overnight outages; the one incident - a provider issue lasting eleven minutes on a Tuesday - was handled by LaunchStudio's engineers before most salons opened. Saturday calendar load times fell from around five seconds to under one, and Linda grew the platform to 110 salons while going back to cutting hair four days a week.
 
 > *"I was paying nothing for hosting and everything in sleep. Forty-nine euros a month turned out to be the cheapest employee I've ever had."*
-> — **Linda Peters, Founder, Salonagenda (Hengelo)**
+> - **Linda Peters, Founder, Salonagenda (Hengelo)**
 
-**Cost & Timeline:** €2,700 (Launch & Grow package: hosting migration, performance, queues and monitoring) — completed in 10 business days, then €49/month managed hosting.
+**Cost & Timeline:** €2,700 (Launch & Grow package: hosting migration, performance, queues and monitoring) - completed in 10 business days, then €49/month managed hosting.
 
 ## Frequently Asked Questions
 
 ### Does €49 per month include my Supabase and API costs?
 
-No. Usage-based services — database providers, AI APIs, email and SMS, payment fees — are billed by those providers. Managed hosting covers operating and looking after the setup.
+No. Usage-based services - database providers, AI APIs, email and SMS, payment fees - are billed by those providers. Managed hosting covers operating and looking after the setup.
 
 ### How many users can an AI-built SaaS handle on managed hosting?
 

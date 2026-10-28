@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Four months in, the pattern is clear. The machine learning role is mostly building dashboards. The data platform that was promised has no budget. The manager who hired you has left, and their replacement has different priorities. You are not miserable, exactly, but you are not doing what you moved for, and the thought of two more years like this is heavy. Leaving a job within the first year feels like an admission of failure and a mark on your CV. Sometimes it is the right decision anyway — and the way to tell is to separate what can still change from what cannot.
+Four months in, the pattern is clear. The machine learning role is mostly building dashboards. The data platform that was promised has no budget. The manager who hired you has left, and their replacement has different priorities. You are not miserable, exactly, but you are not doing what you moved for, and the thought of two more years like this is heavy. Leaving a job within the first year feels like an admission of failure and a mark on your CV. Sometimes it is the right decision anyway - and the way to tell is to separate what can still change from what cannot.
 
 This article provides general information, not legal advice. For your own situation, consult an employment lawyer, your union or the free information service **Juridisch Loket**.
 
@@ -61,11 +61,11 @@ Before deciding, run a short structured attempt at fixing it.
 
 **Write down what would need to be true** for this job to be worth staying in: a specific project, access to specific data, one senior colleague, a change of scope.
 
-**Raise it once, clearly, with the person who can change it.** Not a complaint — a proposal. "I was hired for X; currently I am doing Y. Here is what I could deliver if we shifted the balance."
+**Raise it once, clearly, with the person who can change it.** Not a complaint - a proposal. "I was hired for X; currently I am doing Y. Here is what I could deliver if we shifted the balance."
 
 **Set a date.** Three months is usually enough to see whether words become action.
 
-**Watch what happens, not what is said.** A budget line, a calendar invitation, a data access request approved — these are evidence. "We are looking into it" repeated twice is also evidence.
+**Watch what happens, not what is said.** A budget line, a calendar invitation, a data access request approved - these are evidence. "We are looking into it" repeated twice is also evidence.
 
 Candidates who do this rarely regret it. Either something changes, or you leave with a clear conscience and a much better answer to the inevitable interview question.
 
@@ -87,7 +87,7 @@ Candidates who do this rarely regret it. Either something changes, or you leave 
 
 - **The work is fundamentally different from what was agreed,** and nobody with authority will change it.
 - **There is no data and no plan to get any.** A data role without data does not improve with patience.
-- **You are being asked to do something you consider unethical or unlawful** — for example, deploying a system you believe is discriminatory, or processing personal data without a proper basis.
+- **You are being asked to do something you consider unethical or unlawful** - for example, deploying a system you believe is discriminatory, or processing personal data without a proper basis.
 - **The organisation is in visible financial trouble** and your role is not core.
 - **Your health is suffering.**
 - **A genuinely better opportunity appears** and the current role has no realistic path.
@@ -108,13 +108,13 @@ Two or three in a row create a genuine pattern, and hiring managers start asking
 
 A workable explanation has three parts: what you were hired to do, what the role turned out to be, and what you did about it before leaving. "I was hired to build forecasting models; after the reorganisation the role became operational reporting. I proposed a split and worked on it for three months, but the priorities did not change, so I decided to move." That is a professional answer, and it demonstrates exactly the judgement employers want.
 
-Avoid criticising individuals, avoid irony, and never suggest that the previous employer was incompetent — interviewers hear that as a preview of how you will describe them.
+Avoid criticising individuals, avoid irony, and never suggest that the previous employer was incompetent - interviewers hear that as a preview of how you will describe them.
 
 ## Searching While in a New Job
 
 Discretion matters, especially in a small market.
 
-Use personal email and your own devices. Schedule interviews outside working hours or with leave where possible. Be careful about visible activity on professional networks, which colleagues notice. And do not resign until a contract is signed — verbal offers occasionally evaporate.
+Use personal email and your own devices. Schedule interviews outside working hours or with leave where possible. Be careful about visible activity on professional networks, which colleagues notice. And do not resign until a contract is signed - verbal offers occasionally evaporate.
 
 You also have a normal working relationship to maintain in the meantime. Doing your current job properly until the last day is what produces a usable reference, and in the Dutch AI market you will meet these people again.
 
@@ -126,7 +126,7 @@ Ask to speak to a future colleague as well as the manager. Ask what happened to 
 
 ## When the Role Changed Rather Than Being Misdescribed
 
-There is a difference between an employer who oversold a role and one where circumstances changed after you joined — a reorganisation, a lost budget, a departed sponsor. Both leave you doing different work, but the conversation is different.
+There is a difference between an employer who oversold a role and one where circumstances changed after you joined - a reorganisation, a lost budget, a departed sponsor. Both leave you doing different work, but the conversation is different.
 
 Employers in the Netherlands can direct the work within reasonable limits, and roles evolve. A substantial unilateral change to the content of your job is a different matter: what your employer may change, and on what grounds, depends on your contract, any collective agreement and whether the change is reasonable in the circumstances. If a large part of your agreed role has disappeared, it is legitimate to say so explicitly and ask what the plan is, and worth taking advice if the answer is unsatisfactory.
 
@@ -134,7 +134,7 @@ Practically, ask three things. What is the expected duration of this situation? 
 
 Reasonable employers answer concretely, because they know they risk losing you. Employers who treat the question as disloyalty have answered it in a different way.
 
-Document what you agree, briefly and in writing — an email summarising the conversation is enough. If you later leave, that record makes your explanation in interviews precise rather than anecdotal. And if you stay, it gives you a reference point for the follow-up conversation in three months.
+Document what you agree, briefly and in writing - an email summarising the conversation is enough. If you later leave, that record makes your explanation in interviews precise rather than anecdotal. And if you stay, it gives you a reference point for the follow-up conversation in three months.
 
 ## Real example
 
@@ -154,11 +154,11 @@ Nobody treats the seven months as a problem. Two interviewers say they would hav
 - Run a three-month structured attempt to fix it, with a written list of what would need to change and one clear conversation.
 - Dutch probation periods are short and capped, the statutory employee notice period is one month, and resigning without a new role can affect benefits and residence permits.
 - One short tenure is unremarkable when explained calmly; a pattern of them is what damages a CV.
-- Before your next role, ask about review, data, sponsor, first project and team stability — the questions whose absence usually causes early exits.
+- Before your next role, ask about review, data, sponsor, first project and team stability - the questions whose absence usually causes early exits.
 
 ## Where to Start
 
-If you are considering leaving, look at what actually exists nearby before deciding — knowing your real alternatives turns an emotional decision into a comparison.
+If you are considering leaving, look at what actually exists nearby before deciding - knowing your real alternatives turns an emotional decision into a comparison.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -174,10 +174,10 @@ Dutch probation periods are short and capped, and during probation either party 
 The statutory notice period for employees is one month unless a longer period is agreed in your contract or a collective agreement.
 
 ### (Scenario: international employee) Does leaving affect my residence permit?
-It can — residence for highly skilled migrants depends on sponsored employment, so check current conditions with the IND and avoid gaps.
+It can - residence for highly skilled migrants depends on sponsored employment, so check current conditions with the IND and avoid gaps.
 
 ### (Scenario: candidate explaining a short tenure) How do I explain leaving early in an interview?
-State what you were hired to do, what the role became, and what you tried before leaving — briefly, without criticising individuals.
+State what you were hired to do, what the role became, and what you tried before leaving - briefly, without criticising individuals.
 
 <script type="application/ld+json">
 {
@@ -187,7 +187,7 @@ State what you were hired to do, what the role became, and what you tried before
     {"@type": "Question", "name": "Is it bad to leave a job within the first year?", "acceptedAnswer": {"@type": "Answer", "text": "One short tenure is normally unremarkable when explained calmly; a pattern raises questions."}},
     {"@type": "Question", "name": "What is different during the probation period?", "acceptedAnswer": {"@type": "Answer", "text": "Probation periods are short and capped, and either party can end the contract immediately."}},
     {"@type": "Question", "name": "How much notice do I have to give?", "acceptedAnswer": {"@type": "Answer", "text": "One month unless a longer period is agreed in the contract or collective agreement."}},
-    {"@type": "Question", "name": "Does leaving affect my residence permit?", "acceptedAnswer": {"@type": "Answer", "text": "It can — sponsored employment is required, so check IND conditions and avoid gaps."}},
+    {"@type": "Question", "name": "Does leaving affect my residence permit?", "acceptedAnswer": {"@type": "Answer", "text": "It can - sponsored employment is required, so check IND conditions and avoid gaps."}},
     {"@type": "Question", "name": "How do I explain leaving early in an interview?", "acceptedAnswer": {"@type": "Answer", "text": "Describe the role agreed, what it became and what you tried, without criticising individuals."}}
   ]
 }

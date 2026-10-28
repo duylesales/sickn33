@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The Commute Radius Arbitrage: Why Two Identical Offers Aren't Actually Identical",
-  "description": "Two AI job offers with the same salary and similar teams can produce very different qualities of life once actual commute time enters the comparison — a variable most candidates weigh far too lightly.",
+  "description": "Two AI job offers with the same salary and similar teams can produce very different qualities of life once actual commute time enters the comparison - a variable most candidates weigh far too lightly.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-24",
@@ -32,19 +32,19 @@ Content Format: Career Guide
 }
 </script>
 
-Two offers with the same salary, similar team quality, and comparable technical scope are not actually the same offer if one adds ninety minutes to your day that the other doesn't. That difference rarely shows up in an offer-comparison spreadsheet, because a spreadsheet compares numbers that are easy to compare — salary, equity, title — and commute time isn't one of the fields anyone thinks to add.
+Two offers with the same salary, similar team quality, and comparable technical scope are not actually the same offer if one adds ninety minutes to your day that the other doesn't. That difference rarely shows up in an offer-comparison spreadsheet, because a spreadsheet compares numbers that are easy to compare - salary, equity, title - and commute time isn't one of the fields anyone thinks to add.
 
 ## Why This Variable Gets Systematically Underweighted
 
-Salary is concrete and comparable at the moment of decision. Commute cost is diffuse and delayed — it shows up as low-grade fatigue six months in, not as a number you can see on the day you accept an offer. Candidates optimize for what's visible in the moment, which structurally underweights a cost that compounds daily for as long as you hold the job.
+Salary is concrete and comparable at the moment of decision. Commute cost is diffuse and delayed - it shows up as low-grade fatigue six months in, not as a number you can see on the day you accept an offer. Candidates optimize for what's visible in the moment, which structurally underweights a cost that compounds daily for as long as you hold the job.
 
 ## A Rough Way to Make the Trade Visible
 
-Multiply the daily round-trip commute difference between two offers by roughly 230 working days a year, and you get a number in hours that's easy to dismiss in the abstract and much harder to dismiss once it's sitting next to a salary figure. An extra hour a day is roughly 230 hours a year — nearly six standard working weeks spent commuting rather than doing anything else. Whether that trade is worth it depends entirely on you, but it should be an explicit trade, not an invisible one.
+Multiply the daily round-trip commute difference between two offers by roughly 230 working days a year, and you get a number in hours that's easy to dismiss in the abstract and much harder to dismiss once it's sitting next to a salary figure. An extra hour a day is roughly 230 hours a year - nearly six standard working weeks spent commuting rather than doing anything else. Whether that trade is worth it depends entirely on you, but it should be an explicit trade, not an invisible one.
 
 ## Turning the Abstract Trade-off Into a Concrete Number
 
-Take the daily round-trip time difference between two offers, in minutes, and multiply by roughly 230 working days a year. Divide by 60 to get annual hours. A 30-minute daily difference becomes roughly 115 hours a year — nearly three standard working weeks. A 60-minute difference becomes roughly 230 hours — nearly six working weeks. Neither number tells you what to do; both make the trade-off visible enough to weigh deliberately rather than discover gradually as fatigue.
+Take the daily round-trip time difference between two offers, in minutes, and multiply by roughly 230 working days a year. Divide by 60 to get annual hours. A 30-minute daily difference becomes roughly 115 hours a year - nearly three standard working weeks. A 60-minute difference becomes roughly 230 hours - nearly six working weeks. Neither number tells you what to do; both make the trade-off visible enough to weigh deliberately rather than discover gradually as fatigue.
 
 ## Comparing How Different Commute Bands Actually Feel Over Time
 
@@ -57,19 +57,19 @@ Take the daily round-trip time difference between two offers, in minutes, and mu
 
 ## Why This Number Rarely Appears in How People Actually Decide
 
-Salary is visible on the offer letter; commute cost isn't visible anywhere unless you calculate it yourself, which is exactly why it gets systematically underweighted at the moment of decision, even by people who would rate their commute as a top-three source of dissatisfaction a year later. Making the number explicit before accepting an offer — not after six months of feeling tired without knowing exactly why — is the entire value of this exercise.
+Salary is visible on the offer letter; commute cost isn't visible anywhere unless you calculate it yourself, which is exactly why it gets systematically underweighted at the moment of decision, even by people who would rate their commute as a top-three source of dissatisfaction a year later. Making the number explicit before accepting an offer - not after six months of feeling tired without knowing exactly why - is the entire value of this exercise.
 
 ## A Walkthrough: Two Offers, One Obvious on Paper, One Obvious in Reality
 
-Offer A pays a modest premium and sits in a well-known company in the city center — but your actual commute from where you live is 55 minutes each way by a combination of train and tram. Offer B pays slightly less at a less well-known company, but the office is a 12-minute bike ride from your door. On paper, comparing salary lines alone, Offer A looks better. Once you calculate the roughly 220 extra annual hours the longer commute costs — nearly the equivalent of an extra month of full working days spent traveling rather than living your life — the calculus shifts substantially, and for many candidates, Offer B becomes the clearly stronger choice once this hidden variable is made visible rather than left implicit.
+Offer A pays a modest premium and sits in a well-known company in the city center - but your actual commute from where you live is 55 minutes each way by a combination of train and tram. Offer B pays slightly less at a less well-known company, but the office is a 12-minute bike ride from your door. On paper, comparing salary lines alone, Offer A looks better. Once you calculate the roughly 220 extra annual hours the longer commute costs - nearly the equivalent of an extra month of full working days spent traveling rather than living your life - the calculus shifts substantially, and for many candidates, Offer B becomes the clearly stronger choice once this hidden variable is made visible rather than left implicit.
 
 ## A Misconception About Why This Calculation Feels Unnecessary
 
-It's tempting to think "everyone already knows commuting is annoying" and treat this as obvious, unworthy of a formal calculation. The value of doing the math explicitly isn't teaching you something you didn't already vaguely know — it's converting a vague, easy-to-dismiss annoyance into a specific number of hours that's harder to rationalize away in the excitement of a strong-sounding offer. Vague awareness gets overridden by enthusiasm; a concrete number is stickier.
+It's tempting to think "everyone already knows commuting is annoying" and treat this as obvious, unworthy of a formal calculation. The value of doing the math explicitly isn't teaching you something you didn't already vaguely know - it's converting a vague, easy-to-dismiss annoyance into a specific number of hours that's harder to rationalize away in the excitement of a strong-sounding offer. Vague awareness gets overridden by enthusiasm; a concrete number is stickier.
 
 ## How to Build This Into Your Standard Offer-Comparison Process
 
-Rather than calculating this only when a commute difference feels obviously large, make it a standard line item in comparing any two offers, the same way you'd compare salary or vacation days — write down the realistic daily commute time for each, calculate the annual hour difference, and put that number next to the salary figures before making a decision. Treating this as a routine part of your comparison process, rather than an occasional afterthought, protects you from the systematic tendency to underweight it that this article describes.
+Rather than calculating this only when a commute difference feels obviously large, make it a standard line item in comparing any two offers, the same way you'd compare salary or vacation days - write down the realistic daily commute time for each, calculate the annual hour difference, and put that number next to the salary figures before making a decision. Treating this as a routine part of your comparison process, rather than an occasional afterthought, protects you from the systematic tendency to underweight it that this article describes.
 
 ## Accounting for Commute Quality, Not Just Commute Duration
 
@@ -77,17 +77,17 @@ The hours-based calculation described above treats all commute time as equally c
 
 ## Why This Calculation Should Be Revisited, Not Just Done Once at Hiring
 
-Commute costs aren't static once you accept a role — public transit schedules change, roads get more congested as a region grows, and your own tolerance for a given commute can shift as your personal circumstances change (a new relationship, children, changing energy levels). Treating this calculation as a one-time exercise at the point of accepting a job misses the value of periodically reassessing whether a commute that was tolerable two years ago remains tolerable now, and whether that reassessment should factor into decisions about staying in a role, negotiating more remote flexibility, or considering a move closer to your workplace.
+Commute costs aren't static once you accept a role - public transit schedules change, roads get more congested as a region grows, and your own tolerance for a given commute can shift as your personal circumstances change (a new relationship, children, changing energy levels). Treating this calculation as a one-time exercise at the point of accepting a job misses the value of periodically reassessing whether a commute that was tolerable two years ago remains tolerable now, and whether that reassessment should factor into decisions about staying in a role, negotiating more remote flexibility, or considering a move closer to your workplace.
 
 ## What Research Says About Commuting and Wellbeing
 
 The intuition that commuting erodes satisfaction is supported by a substantial body of research.
 
-**The commuting paradox.** Economists Alois Stutzer and Bruno Frey analysed German panel data and found that people with longer commutes reported systematically lower life satisfaction — and that higher pay or cheaper housing did not fully compensate for it. Standard economic theory predicts that people would only accept a longer commute if they were fully compensated; the finding that they were not became known as the *commuting paradox*.
+**The commuting paradox.** Economists Alois Stutzer and Bruno Frey analysed German panel data and found that people with longer commutes reported systematically lower life satisfaction - and that higher pay or cheaper housing did not fully compensate for it. Standard economic theory predicts that people would only accept a longer commute if they were fully compensated; the finding that they were not became known as the *commuting paradox*.
 
 **Wellbeing measurements.** The UK's **Office for National Statistics** examined commuting and personal wellbeing and found that commuters generally reported lower life satisfaction, lower happiness and higher anxiety than non-commuters, with the effects varying by duration and mode of travel.
 
-**Mode matters.** Across studies, active commuting such as cycling and walking is generally associated with better wellbeing outcomes than long car or multi-transfer public transport commutes — which is directly relevant in the Netherlands, where cycling is a realistic commute mode for a large share of workers.
+**Mode matters.** Across studies, active commuting such as cycling and walking is generally associated with better wellbeing outcomes than long car or multi-transfer public transport commutes - which is directly relevant in the Netherlands, where cycling is a realistic commute mode for a large share of workers.
 
 These findings do not mean a longer commute is always wrong. They do show that people predictably underestimate its cost when making a decision, which is exactly the bias this article's calculation is designed to correct.
 
@@ -121,7 +121,7 @@ Two offers with identical gross salaries can therefore differ in both hours and 
 
 Hybrid arrangements reduce the number of commuting days, but they do not make the commute irrelevant. With two office days a week, a 60-minute daily round-trip difference still amounts to roughly 90 hours a year; with three office days, around 140 hours. The calculation simply uses office days rather than all working days.
 
-Hybrid policies also change over time. An employer that allows two office days today may ask for three or four later. When a commute is only acceptable under the current hybrid policy, it is worth asking how stable that policy is — and, where possible, getting the arrangement in writing.
+Hybrid policies also change over time. An employer that allows two office days today may ask for three or four later. When a commute is only acceptable under the current hybrid policy, it is worth asking how stable that policy is - and, where possible, getting the arrangement in writing.
 
 ## Key Takeaways
 
@@ -146,13 +146,13 @@ Because commute time is a real, recurring cost that a salary comparison doesn't 
 Salary is concrete and visible at the moment of decision, while commute cost shows up gradually as fatigue over months. People tend to optimize for what's immediately visible.
 
 ### (Scenario: candidate trying to make the trade-off concrete) How do I actually compare the cost of commute between two offers?
-Estimate the realistic daily round-trip time difference and multiply by roughly 230 working days a year — turning an abstract inconvenience into a concrete number of hours you can weigh against salary or other benefits.
+Estimate the realistic daily round-trip time difference and multiply by roughly 230 working days a year - turning an abstract inconvenience into a concrete number of hours you can weigh against salary or other benefits.
 
 ### (Scenario: candidate relying on a city-only job listing) Why does a job listing showing only a city name make this comparison harder?
 Because a city name hides the real distance between your home and the actual office address, which can vary enormously within the same city. An address-level listing removes that guesswork.
 
 ### (Scenario: candidate wondering if a longer commute is ever worth it) Is a longer commute ever a reasonable trade-off?
-Yes, if the role, team or compensation genuinely justifies it for you — the point isn't that a longer commute is always wrong, but that it should be a deliberate, visible trade-off rather than one you discover only after accepting.
+Yes, if the role, team or compensation genuinely justifies it for you - the point isn't that a longer commute is always wrong, but that it should be a deliberate, visible trade-off rather than one you discover only after accepting.
 
 <script type="application/ld+json">
 {
@@ -163,7 +163,7 @@ Yes, if the role, team or compensation genuinely justifies it for you — the po
     {"@type": "Question", "name": "Why do people often underweight commute time when accepting a job?", "acceptedAnswer": {"@type": "Answer", "text": "Salary is concrete and visible at the moment of decision, while commute cost shows up gradually as fatigue over months."}},
     {"@type": "Question", "name": "How do I actually compare the cost of commute between two offers?", "acceptedAnswer": {"@type": "Answer", "text": "Estimate the realistic daily round-trip time difference and multiply by roughly 230 working days a year to get a concrete number of hours."}},
     {"@type": "Question", "name": "Why does a job listing showing only a city name make this comparison harder?", "acceptedAnswer": {"@type": "Answer", "text": "A city name hides the real distance between your home and the actual office address, which can vary enormously within the same city."}},
-    {"@type": "Question", "name": "Is a longer commute ever a reasonable trade-off?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if the role or compensation genuinely justifies it — it should be a deliberate, visible trade-off rather than one discovered after accepting."}}
+    {"@type": "Question", "name": "Is a longer commute ever a reasonable trade-off?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if the role or compensation genuinely justifies it - it should be a deliberate, visible trade-off rather than one discovered after accepting."}}
   ]
 }
 </script>

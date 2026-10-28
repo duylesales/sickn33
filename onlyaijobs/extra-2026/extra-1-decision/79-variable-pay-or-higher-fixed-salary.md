@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two offers, and the one that looks bigger is built differently. The first is a straightforward fixed salary. The second is a slightly lower fixed salary with a target bonus attached, described in the conversation as "usually paid in full". Add the numbers and the second wins. Look at what is actually guaranteed and it may not, and in data and AI roles the arithmetic tilts further than most candidates realise — because the things that determine whether a bonus is paid are rarely things you control.
+Two offers, and the one that looks bigger is built differently. The first is a straightforward fixed salary. The second is a slightly lower fixed salary with a target bonus attached, described in the conversation as "usually paid in full". Add the numbers and the second wins. Look at what is actually guaranteed and it may not, and in data and AI roles the arithmetic tilts further than most candidates realise - because the things that determine whether a bonus is paid are rarely things you control.
 
 ## The Shapes Variable Pay Takes
 
@@ -51,7 +51,7 @@ Two offers, and the one that looks bigger is built differently. The first is a s
 
 ## The Dutch Context
 
-Bonus culture in the Netherlands is modest by international standards. In most sectors, variable pay for technical staff is a small share of total compensation, and many employers — particularly under collective agreements, in the public sector, in healthcare and in education — have no individual bonus at all.
+Bonus culture in the Netherlands is modest by international standards. In most sectors, variable pay for technical staff is a small share of total compensation, and many employers - particularly under collective agreements, in the public sector, in healthcare and in education - have no individual bonus at all.
 
 The financial sector is a specific case. Dutch legislation on remuneration policy in financial undertakings imposes a cap on variable pay as a proportion of fixed pay for most staff, with limited exceptions. If you are considering a role at a bank, insurer or asset manager, ask how the cap applies to your position, and verify current rules rather than relying on a summary.
 
@@ -63,7 +63,7 @@ Pay transparency obligations are also changing the conversation. Employers are i
 - **What has it actually paid out for the last three years?** For your team, not company-wide. Employers who answer this readily usually have good news; vagueness is itself the answer.
 - **Who sets the targets, and when?** Targets set in March for a year that started in January, by someone who does not understand your work, are not targets you control.
 - **Individual, team or company?** A company-wide trigger means your bonus depends on sales in a division you have never met.
-- **What happens if you join mid-year or leave mid-year?** Many schemes pay pro rata on joining and nothing at all if you have resigned before the payment date — which can lock you in for months.
+- **What happens if you join mid-year or leave mid-year?** Many schemes pay pro rata on joining and nothing at all if you have resigned before the payment date - which can lock you in for months.
 - **Is there a clawback provision?**
 - **Is the bonus pensionable?** Frequently it is not, which quietly reduces its long-term value.
 
@@ -73,7 +73,7 @@ Pay transparency obligations are also changing the conversation. Employers are i
 
 **The cycles are long.** Meaningful data work often spans more than a year, while bonus periods are annual, so the work you do this year pays off in someone else's bonus year.
 
-**Targets get written badly.** Because managers struggle to specify good objectives for technical work, targets frequently default to activity — projects delivered, models built — which rewards the wrong things and pushes you towards shipping rather than shipping well.
+**Targets get written badly.** Because managers struggle to specify good objectives for technical work, targets frequently default to activity - projects delivered, models built - which rewards the wrong things and pushes you towards shipping rather than shipping well.
 
 **Foundational work is invisible to bonus schemes.** Fixing pipelines, writing documentation, retiring systems and improving monitoring are exactly the work that does not appear in a target and exactly the work that makes a data function viable.
 
@@ -111,11 +111,11 @@ Fixed salary does more than arrive every month.
 
 ## How to Negotiate the Swap
 
-Ask plainly whether the target bonus can be converted, in whole or in part, into fixed salary. Many employers will do it, because predictable fixed cost is easier to plan than a variable one, and because the bonus pool is often separate from the salary budget — which is also why some employers cannot.
+Ask plainly whether the target bonus can be converted, in whole or in part, into fixed salary. Many employers will do it, because predictable fixed cost is easier to plan than a variable one, and because the bonus pool is often separate from the salary budget - which is also why some employers cannot.
 
 If conversion is refused, ask for the scheme document, ask for the payout history in writing, and then value the offer using the lower of the target and the historical average rather than the headline figure.
 
-And compare the two offers on what is guaranteed. If the fixed-salary offer wins on guaranteed pay, the variable offer is asking you to accept risk in exchange for a possibility — which is a trade worth making consciously, if at all.
+And compare the two offers on what is guaranteed. If the fixed-salary offer wins on guaranteed pay, the variable offer is asking you to accept risk in exchange for a possibility - which is a trade worth making consciously, if at all.
 
 ## Deferred Awards and Long-Term Incentives
 
@@ -123,13 +123,13 @@ Larger employers sometimes offer a third element: an award that pays out over se
 
 These are not the same as an annual bonus and should be assessed separately.
 
-**Vesting is the whole question.** An award that pays over three or four years is worth nothing if you leave in year two, and the conditions attached to leaving matter more than the headline value. Ask what happens if you resign, if you are made redundant, and if the employer ends the contract for other reasons — the treatment often differs.
+**Vesting is the whole question.** An award that pays over three or four years is worth nothing if you leave in year two, and the conditions attached to leaving matter more than the headline value. Ask what happens if you resign, if you are made redundant, and if the employer ends the contract for other reasons - the treatment often differs.
 
 **Deferral is a retention device.** That is its purpose, and it works: people stay for the vesting date. Understand that you are being asked to trade future flexibility for value you may not receive.
 
 **Performance conditions may sit on top.** Some awards vest only if the organisation meets targets, which adds a second uncertainty to the first.
 
-**Tax timing varies.** When an award is taxed, and on what value, depends on its structure and the current rules — verify with an adviser rather than assuming, because the outcome can differ substantially between plan types.
+**Tax timing varies.** When an award is taxed, and on what value, depends on its structure and the current rules - verify with an adviser rather than assuming, because the outcome can differ substantially between plan types.
 
 **Value it conservatively.** A reasonable approach is to treat deferred awards as worth nothing in the comparison, and to be pleased if they arrive. If an offer only wins once you count them at face value, the offer is asking you to pay for the privilege of staying.
 
@@ -141,7 +141,7 @@ These are not the same as an annual bonus and should be assessed separately.
 
 A data scientist receives two offers. One is a straightforward fixed salary at a logistics company. The other, at a larger commercial organisation, is slightly lower fixed with a target bonus that would make it the better package if paid.
 
-She asks three questions about the bonus. Is it contractual — it is discretionary. What did it pay for her prospective team in the last three years — full one year, half the next, nothing the third, because a different division missed its target. And is it pensionable — it is not.
+She asks three questions about the bonus. Is it contractual - it is discretionary. What did it pay for her prospective team in the last three years - full one year, half the next, nothing the third, because a different division missed its target. And is it pensionable - it is not.
 
 She asks whether the target can be converted into fixed salary. The employer declines, explaining that the bonus comes from a different budget.
 
@@ -159,7 +159,7 @@ She takes the logistics role. Two years later she hears that the bonus paid noth
 
 ## Where to Start
 
-Comparing offers is easier when you know the range for your role in your region — pay transparency has made that information easier to obtain, and the vacancies themselves are a good place to start.
+Comparing offers is easier when you know the range for your role in your region - pay transparency has made that information easier to obtain, and the vacancies themselves are a good place to start.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -185,10 +185,10 @@ Often, and it is a normal request. Where it is refused, ask for the scheme docum
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Should I prefer a bonus or a higher fixed salary?", "acceptedAnswer": {"@type": "Answer", "text": "In data roles usually fixed — outcomes are not cleanly attributable and fixed pay drives pension and borrowing."}},
+    {"@type": "Question", "name": "Should I prefer a bonus or a higher fixed salary?", "acceptedAnswer": {"@type": "Answer", "text": "In data roles usually fixed - outcomes are not cleanly attributable and fixed pay drives pension and borrowing."}},
     {"@type": "Question", "name": "What should I ask about a bonus?", "acceptedAnswer": {"@type": "Answer", "text": "Contractual or discretionary, three years of payout history, who sets targets, and whether it is pensionable."}},
     {"@type": "Question", "name": "Are there limits on bonuses in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "The financial sector has a statutory cap on variable pay for most staff; verify current rules."}},
-    {"@type": "Question", "name": "Does variable pay affect borrowing?", "acceptedAnswer": {"@type": "Answer", "text": "Usually — lenders average or discount variable income."}},
+    {"@type": "Question", "name": "Does variable pay affect borrowing?", "acceptedAnswer": {"@type": "Answer", "text": "Usually - lenders average or discount variable income."}},
     {"@type": "Question", "name": "Can I swap a bonus for fixed salary?", "acceptedAnswer": {"@type": "Answer", "text": "Often, and it is a normal request; otherwise value the offer at the historical average."}}
   ]
 }

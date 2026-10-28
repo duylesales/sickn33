@@ -1,4 +1,4 @@
-🚨 A team that optimizes code review purely for turnaround speed gets exactly that — and loses much of what review actually exists to provide. Speed and depth are frequently in real tension. ⚙️👀
+🚨 A team that optimizes code review purely for turnaround speed gets exactly that - and loses much of what review actually exists to provide. Speed and depth are frequently in real tension. ⚙️👀
 
 **The Pain Points:**
 ❌ **Fast, Shallow Approvals:** Reviewers under pressure catch typos, miss logic errors and architecture concerns.

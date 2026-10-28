@@ -35,11 +35,11 @@ Content Format: Decision Guide
 }
 </script>
 
-The role is at a manufacturer, an insurer or a municipality, and somewhere in the final conversation it becomes clear: your manager would be the operations director, the finance lead or an IT manager whose background is infrastructure. They are enthusiastic, they understand the business problem well and they have never trained a model or reviewed a pull request. For a large share of AI and data roles in the Netherlands this is simply how it is, particularly outside technology companies — and candidates tend to either dismiss it as irrelevant or treat it as disqualifying. Both reactions skip the question that matters, which is not whether your manager can read your code but where the things a technical manager normally provides will come from instead.
+The role is at a manufacturer, an insurer or a municipality, and somewhere in the final conversation it becomes clear: your manager would be the operations director, the finance lead or an IT manager whose background is infrastructure. They are enthusiastic, they understand the business problem well and they have never trained a model or reviewed a pull request. For a large share of AI and data roles in the Netherlands this is simply how it is, particularly outside technology companies - and candidates tend to either dismiss it as irrelevant or treat it as disqualifying. Both reactions skip the question that matters, which is not whether your manager can read your code but where the things a technical manager normally provides will come from instead.
 
 ## Why This Is So Common Here
 
-A large share of Dutch data work sits at SMEs, regional manufacturers, care organisations, water boards, insurers and public bodies. Many of them are hiring their first or second data professional, which means there is no technical data leader to report to — the function did not exist last year.
+A large share of Dutch data work sits at SMEs, regional manufacturers, care organisations, water boards, insurers and public bodies. Many of them are hiring their first or second data professional, which means there is no technical data leader to report to - the function did not exist last year.
 
 Even in larger organisations, data teams frequently sit under business units rather than engineering, on the reasonable theory that proximity to the problem matters more than proximity to the code. And AI literacy obligations have pushed managers to engage with the subject without turning them into practitioners.
 
@@ -84,7 +84,7 @@ So this is not a niche situation to be avoided. It is the majority case outside 
 
 **Arrange your own technical review.** Ask for it as part of the offer: a budget for an external mentor, a few hours a month from a consultancy, or membership of a peer network. Frame it as risk reduction for the employer, which is exactly what it is.
 
-**Translate deliberately.** Report in the manager's units — hours saved, waste reduced, forecast error, complaints handled — and keep the technical detail for documentation. Managers who understand the value defend the work.
+**Translate deliberately.** Report in the manager's units - hours saved, waste reduced, forecast error, complaints handled - and keep the technical detail for documentation. Managers who understand the value defend the work.
 
 **Make the invisible visible.** Put technical debt, monitoring gaps and data quality problems into the same reporting where you put results, with a cost attached. If it never appears, it will never be prioritised.
 
@@ -107,14 +107,14 @@ So this is not a niche situation to be avoided. It is the majority case outside 
 - The manager is genuinely curious, asks good questions and admits what they do not know.
 - There is a named budget for external review, training and tooling.
 - You are experienced enough that autonomy is an advantage rather than a risk.
-- The business access and sponsorship are strong — which is where these roles outperform technically-led teams that nobody listens to.
+- The business access and sponsorship are strong - which is where these roles outperform technically-led teams that nobody listens to.
 - The work reaches real users, which forces quality more effectively than any reviewer.
 
 ## Where the Reporting Line Sits Also Matters
 
 Beyond whether your manager is technical, the department you report into shapes the job in ways worth checking before accepting.
 
-**Under a business unit** — operations, finance, commerce — you sit close to the problem and the sponsor. Access to domain experts is easy and your work is used. The risk is narrowness: you serve one department's priorities, and enterprise-wide data problems are someone else's concern.
+**Under a business unit** - operations, finance, commerce - you sit close to the problem and the sponsor. Access to domain experts is easy and your work is used. The risk is narrowness: you serve one department's priorities, and enterprise-wide data problems are someone else's concern.
 
 **Under IT** you get infrastructure, security and engineering practice, and often better tooling. The risk is distance from the business, and being treated as a delivery function that receives requirements rather than shapes them.
 
@@ -122,7 +122,7 @@ Beyond whether your manager is technical, the department you report into shapes 
 
 **Directly under a director or the board** happens at smaller organisations. Sponsorship is excellent and structure is absent; everything depends on that one relationship.
 
-None is wrong, but they produce different jobs under the same title. Ask which one you would sit in, who sets your priorities, and — the revealing question — who you would go to if your manager and a stakeholder disagreed about what you should work on.
+None is wrong, but they produce different jobs under the same title. Ask which one you would sit in, who sets your priorities, and - the revealing question - who you would go to if your manager and a stakeholder disagreed about what you should work on.
 
 ## Real example
 
@@ -134,7 +134,7 @@ In the final conversation she asks who would review her technical work. The hone
 
 The director agrees, partly because it costs less than a fortnight of consultancy and visibly reduces the risk of hiring someone they cannot evaluate. She takes the role.
 
-Two years later the planning model is in daily use, she has presented it at a sector event, and the mentor arrangement has become a standing item in the department budget. The director still cannot read her code. He has, however, defended her time in three budget rounds — which is the part she could not have done herself.
+Two years later the planning model is in daily use, she has presented it at a sector event, and the mentor arrangement has become a standing item in the department budget. The director still cannot read her code. He has, however, defended her time in three budget rounds - which is the part she could not have done herself.
 
 ## What to Watch During the Interview Itself
 
@@ -156,13 +156,13 @@ None of these is disqualifying alone. Together they tell you whether you would b
 
 - Reporting to a non-technical manager is the normal case outside Dutch technology companies, especially for first and second data hires.
 - They provide access, sponsorship, business judgement and translation; they cannot provide technical review, credible estimation pressure or advocacy for engineering practice.
-- The decisive question is who will review your technical work — and "nobody, we trust you" is not an acceptable answer early in a career.
+- The decisive question is who will review your technical work - and "nobody, we trust you" is not an acceptable answer early in a career.
 - Make it work by arranging external review, reporting in business units, making technical debt visible and building a peer network outside the organisation.
 - Decline when there is no reviewer, no budget for one, no curiosity from the manager and no explanation for why previous data hires left.
 
 ## Where to Start
 
-If a role has no technical reviewer, ask for one to be funded as part of the offer — and compare the role with nearby employers where a data team already exists.
+If a role has no technical reviewer, ask for one to be funded as part of the offer - and compare the role with nearby employers where a data team already exists.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -178,7 +178,7 @@ Having nobody to review your work. Early in a career this shapes habits you may 
 Frame it as risk reduction: a few hours a month from an external reviewer costs far less than a consultancy engagement and protects the employer's investment in you.
 
 ### (Scenario: candidate worried about promotion) How does career progression work without a technical manager?
-Ask explicitly. Where no technical ladder exists, agree what growth means in concrete terms — scope, budget, mentoring others — rather than relying on titles.
+Ask explicitly. Where no technical ladder exists, agree what growth means in concrete terms - scope, budget, mentoring others - rather than relying on titles.
 
 ### (Scenario: candidate assessing the manager) What should I look for in the interview?
 Curiosity and honesty about what they do not know, a willingness to fund review and training, and a clear answer on who decides priorities when the business wants something fast.
@@ -188,7 +188,7 @@ Curiosity and honesty about what they do not know, a willingness to fund review 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it bad to report to a non-technical manager?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently — it is the norm outside tech companies and offers access and sponsorship, if technical review exists elsewhere."}},
+    {"@type": "Question", "name": "Is it bad to report to a non-technical manager?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently - it is the norm outside tech companies and offers access and sponsorship, if technical review exists elsewhere."}},
     {"@type": "Question", "name": "What is the biggest risk?", "acceptedAnswer": {"@type": "Answer", "text": "Having nobody to review your work, which shapes habits early in a career."}},
     {"@type": "Question", "name": "How do I ask for a technical mentor?", "acceptedAnswer": {"@type": "Answer", "text": "Frame it as risk reduction; a few hours a month is cheaper than consultancy."}},
     {"@type": "Question", "name": "How does career progression work without a technical manager?", "acceptedAnswer": {"@type": "Answer", "text": "Agree concrete growth measures such as scope, budget and mentoring instead of titles."}},

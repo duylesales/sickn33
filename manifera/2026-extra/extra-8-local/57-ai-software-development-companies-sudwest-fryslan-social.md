@@ -1,9 +1,9 @@
-More than half of AI pilots never make it into production — and it's almost never the model's fault. 📉🤖
+More than half of AI pilots never make it into production - and it's almost never the model's fault. 📉🤖
 
 **The Pain Points:**
 ❌ **Demo-Polish Bias:** Choosing an AI vendor based on the slickest pitch, not on production-readiness.
 ❌ **No Retraining Plan:** Models ship, then quietly decay with nobody budgeted to retrain them.
-❌ **Reactive Data Governance:** GDPR questions only get answered after legal asks — too late.
+❌ **Reactive Data Governance:** GDPR questions only get answered after legal asks - too late.
 
 **The Manifera Solution:**
 ✅ **Automated Drift Monitoring:** Model performance tracked with defined alert thresholds, not discovered the hard way.

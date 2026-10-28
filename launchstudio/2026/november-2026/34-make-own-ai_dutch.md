@@ -61,7 +61,7 @@ In plaats van feitenkennis in het neurale netwerk te proberen bakken, slaat u do
 **De voordelen van RAG voor SaaS:**
 - **Nul Hertrainingskosten:** Wijzigt een wet of beleid, dan past u het document in de database aan. De AI weet het direct.
 - **Feilloze Bronvermelding:** Het model kan exact het document, de paragraaf en het paginanummer citeren in zijn antwoord.
-- **Strikte Toegangsbeveiliging:** U kunt Row Level Security (RLS) afdwingen op de vectordatabase. Gebruiker A krijgt uitsluitend data te zien waar hij rechten voor heeft — iets wat bij een getraind model technisch onmogelijk is.
+- **Strikte Toegangsbeveiliging:** U kunt Row Level Security (RLS) afdwingen op de vectordatabase. Gebruiker A krijgt uitsluitend data te zien waar hij rechten voor heeft - iets wat bij een getraind model technisch onmogelijk is.
 
 ## Hoe LaunchStudio RAG-Pipelines Ontwerpt
 
@@ -83,7 +83,7 @@ Zelf een AI-applicatie in elkaar zetten is geweldig voor conceptvalidatie, maar 
 ### Van Idee naar Duurzaam Softwarebedrijf
 
 Zorg voor een vliegende start met een professionele enterprise-infrastructuur:
-1. **Volledige Eigendomsrechten:** Uw code, uw servers en uw data — 100% vrij van vendor lock-in.
+1. **Volledige Eigendomsrechten:** Uw code, uw servers en uw data - 100% vrij van vendor lock-in.
 
 ## Echt voorbeeld
 
@@ -106,9 +106,9 @@ Wanneer een advocaat om een specifieke clausule vroeg, voerde de backend een hyb
 **Resultaat:** De contractclausules waren juridisch perfect en bevatten exacte bronverwijzingen naar eerdere dossiers. Bij wetswijzigingen paste David simpelweg de tekstbestanden in de database aan. Zijn maandelijkse serverkosten daalden van duizenden euro's aan GPU-huur naar €150 per maand aan API- en databasekosten. David sloot direct drie advocatenkantoren aan (€5.500 MRR).
 
 > *"Ik heb €40.000 verspild aan het proberen van een AI een advocaat te maken. LaunchStudio leerde me dat je de AI niets hoeft te leren; je moet het simpelweg op het juiste moment de juiste documenten voorleggen. Zij vervingen een peperduur ML-project door een elegante, betaalbare datapijplijn."*
-> — **David Weber, Oprichter, ContractForge (Frankfurt)**
+> - **David Weber, Oprichter, ContractForge (Frankfurt)**
 
-**Kosten & Doorlooptijd:** €5.800 (Launch & Grow Pakket met Geavanceerde RAG Add-on) — productie-klaar en live binnen 12 werkdagen.
+**Kosten & Doorlooptijd:** €5.800 (Launch & Grow Pakket met Geavanceerde RAG Add-on) - productie-klaar en live binnen 12 werkdagen.
 
 ---
 

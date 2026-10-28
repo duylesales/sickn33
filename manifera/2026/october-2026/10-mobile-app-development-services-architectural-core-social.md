@@ -1,4 +1,4 @@
-🚨 Does your mobile app take 14 seconds to load? The frontend isn't the problem—your 15-year-old Legacy Database is! 📉
+🚨 Does your mobile app take 14 seconds to load? The frontend isn't the problem - your 15-year-old Legacy Database is! 📉
 
 When procuring **Mobile App Development Services**, many IT leaders assume their ancient backend can easily feed data to a modern React Native app. It simply cannot! 🛑
 

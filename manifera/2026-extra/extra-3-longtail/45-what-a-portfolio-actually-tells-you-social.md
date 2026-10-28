@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Whether the project shipped on time and on budget.:** A portfolio shows the finished product, not the timeline or cost overruns that may have preceded it.
-✅ **What the communication and collaboration process actually felt like:** for the client, day to day, across the project's full duration — a portfolio has no mechanism to convey this at all.
+✅ **What the communication and collaboration process actually felt like:** for the client, day to day, across the project's full duration - a portfolio has no mechanism to convey this at all.
 ✅ **Whether the client would work with the company again:** which is a more honest signal than a single polished case study the company chose to publish.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

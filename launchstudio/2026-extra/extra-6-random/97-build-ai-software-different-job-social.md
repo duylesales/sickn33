@@ -1,4 +1,4 @@
-🍳 Stef Oostzaan set out to build AI software for SmaakGids, a recipe app — a custom recommendation engine trained on his own data. Two months in, he was still chasing accuracy gains nobody would notice. 😅
+🍳 Stef Oostzaan set out to build AI software for SmaakGids, a recipe app - a custom recommendation engine trained on his own data. Two months in, he was still chasing accuracy gains nobody would notice. 😅
 
 "Build AI software" and "build software that uses AI" sound alike but are entirely different jobs. 🧠
 

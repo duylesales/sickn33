@@ -31,7 +31,7 @@ Dit stuk brengt in kaart waar het werk werkelijk zit, wat elk gebied technisch o
 
 **Halfgeleidermetrologie en computational imaging.** Geconcentreerd in Veldhoven en Eindhoven. Fysieke structuur afleiden op schalen onder de golflengte van het licht waarmee je observeert. Fysisch gebaseerde voorwaartse modellen, inverse problemen, gekalibreerde onzekerheid. Het mathematisch meest veeleisende cluster.
 
-**Medische en biomedische beeldvorming.** Geconcentreerd in de umc's — Utrecht, Nijmegen, Amsterdam, Leiden, Rotterdam, Groningen, Maastricht — plus een laag medische apparatuur- en softwarebedrijven. Radiologie, pathologie, oogheelkunde, chirurgische ondersteuning. Gereguleerd, met klinische validatie-eisen en expertonenigheid in de labels.
+**Medische en biomedische beeldvorming.** Geconcentreerd in de umc's - Utrecht, Nijmegen, Amsterdam, Leiden, Rotterdam, Groningen, Maastricht - plus een laag medische apparatuur- en softwarebedrijven. Radiologie, pathologie, oogheelkunde, chirurgische ondersteuning. Gereguleerd, met klinische validatie-eisen en expertonenigheid in de labels.
 
 **Landbouw- en voedselvision.** Geconcentreerd in Wageningen, Westland, Venlo, Lelystad en het zaadcluster bij Hoorn. Niet-standaard beeldmateriaal waaronder hyperspectraal, biologische variabiliteit, occlusie door blad, kleine dure datasets, en buitenlicht dat je niet beheerst.
 
@@ -44,10 +44,10 @@ Dit stuk brengt in kaart waar het werk werkelijk zit, wat elk gebied technisch o
 | | Datavolume | Labelkwaliteit | Latentie | Kostenasymmetrie | Kernmoeilijkheid |
 |---|---|---|---|---|---|
 | **Industriële inspectie** | Gemiddeld, uitbreidbaar | Goed, operatorgeverifieerd | Hard realtime | Scherp bij veiligheidsdelen | Betrouwbaar beeld in fabrieksomstandigheden |
-| **Halfgeleidermetrologie** | Zeer klein | Fysisch afgeleid | Batch | Extreem — afgekeurde wafers | Invers probleem, fysicamodellering |
+| **Halfgeleidermetrologie** | Zeer klein | Fysisch afgeleid | Batch | Extreem - afgekeurde wafers | Invers probleem, fysicamodellering |
 | **Medische beeldvorming** | Gemiddeld, lastig toegankelijk | Expert, met onenigheid | Meestal niet realtime | Scherp in beide richtingen | Validatie en toelating |
 | **Landbouwvision** | Zeer klein, seizoensgebonden | Zwak, vertraagd | Veldsnelheid | Gemiddeld | Niet-standaard beeld, biologische variatie |
-| **Automotive-perceptie** | Zeer groot | Gemengd, duur | Hard realtime, embedded | Extreem — veiligheid | Staart van zeldzame scenario's, validatie |
+| **Automotive-perceptie** | Zeer groot | Gemengd, duur | Hard realtime, embedded | Extreem - veiligheid | Staart van zeldzame scenario's, validatie |
 | **Remote sensing** | Groot | Register- of survey-afgeleid | Niet realtime | Gemiddeld, administratief | Verzoening over schalen, tijdsmismatch |
 
 Lees die tabel als kaart van wat je zou moeten leren om tussen clusters te wisselen. Beide overgangen zijn mogelijk; beide kosten maanden.
@@ -68,7 +68,7 @@ Lees die tabel als kaart van wat je zou moeten leren om tussen clusters te wisse
 
 ## Welke vaardigheden werkelijk overdragen
 
-**Draagt goed over.** Begrip van beeldvormingsfysica — hoe sensoren werken, wat belichting doet, waarom een beeld eruitziet zoals het doet. Kalibratie en geometrie. Evaluatieontwerp, vooral bij onevenwichtige klassen en asymmetrische kosten. Datapijplijnengineering op volume. Werken met domeinexperts die gezag over de uitkomst hebben.
+**Draagt goed over.** Begrip van beeldvormingsfysica - hoe sensoren werken, wat belichting doet, waarom een beeld eruitziet zoals het doet. Kalibratie en geometrie. Evaluatieontwerp, vooral bij onevenwichtige klassen en asymmetrische kosten. Datapijplijnengineering op volume. Werken met domeinexperts die gezag over de uitkomst hebben.
 
 **Draagt slecht over.** Bekendheid met specifieke architecturen, die zowel makkelijk te verwerven als snel achterhaald is. Aannames over dataovervloed. Gewoonten gevormd op schone benchmarkdatasets. Elke verwachting dat labels correct zijn.
 
@@ -76,7 +76,7 @@ Lees die tabel als kaart van wat je zou moeten leren om tussen clusters te wisse
 
 ## Waarop elk cluster in gesprekken screent
 
-**Industriële inspectie** wil bewijs dat je fysieke randvoorwaarden begrijpt — belichting, mechanica, lijnsnelheid, reiniging — en met productiepersoneel kunt werken.
+**Industriële inspectie** wil bewijs dat je fysieke randvoorwaarden begrijpt - belichting, mechanica, lijnsnelheid, reiniging - en met productiepersoneel kunt werken.
 
 **Halfgeleiders** willen kwantitatieve diepte. Verwacht kansrekening, lineaire algebra, optimalisatie en fysica.
 
@@ -86,7 +86,7 @@ Lees die tabel als kaart van wat je zou moeten leren om tussen clusters te wisse
 
 **Automotive** wil veiligheidskritisch besef, diepte in één modaliteit en softwarediscipline.
 
-**Remote sensing** wil geo-literacy — coördinatenstelsels, resolutie, tijdsmismatch — wat kandidaten zonder GIS-achtergrond consequent onderschatten.
+**Remote sensing** wil geo-literacy - coördinatenstelsels, resolutie, tijdsmismatch - wat kandidaten zonder GIS-achtergrond consequent onderschatten.
 
 ## De hardwarevraag die kandidaten verwaarlozen
 
@@ -94,12 +94,12 @@ Een substantieel deel van deze functies raakt hardware.
 
 Bij industriële inspectie bepaalt de keuze en plaatsing van een camera, de selectie van belichting en de specificatie van optiek vaak of het probleem überhaupt oplosbaar is. Een engineer die het beeld kan verbeteren is meer waard dan een die alleen het model kan verbeteren, want een beter beeld neemt de moeilijkheid vaak volledig weg.
 
-Kandidaten met een pure softwareachtergrond behandelen het beeld vaak als gegeven. Wie leert het als ontwerpvariabele te zien, wordt aanzienlijk effectiever — en een werkend begrip van optiek, belichting en sensorkenmerken is in weken te verwerven en betaalt zich onbeperkt terug.
+Kandidaten met een pure softwareachtergrond behandelen het beeld vaak als gegeven. Wie leert het als ontwerpvariabele te zien, wordt aanzienlijk effectiever - en een werkend begrip van optiek, belichting en sensorkenmerken is in weken te verwerven en betaalt zich onbeperkt terug.
 
 ## Belangrijkste punten
 
 - Computer vision in Nederland splitst in zes clusters met vrijwel niets gemeen behalve beelden als input.
-- De verschillen die tellen zijn datavolume, labelkwaliteit, latentie-eisen, kostenasymmetrie en kernmoeilijkheid — niet modelarchitectuur.
+- De verschillen die tellen zijn datavolume, labelkwaliteit, latentie-eisen, kostenasymmetrie en kernmoeilijkheid - niet modelarchitectuur.
 - Industriële inspectie heeft de meeste functies met de minste concurrentie; medische beeldvorming de meeste concurrentie; landbouwvision de beste verhouding.
 - De meest portabele vaardigheid is vaststellen of een visionsysteem werkelijk werkt.
 - Architectuurbekendheid draagt slecht over; beeldvormingsfysica, kalibratie en evaluatieontwerp goed.

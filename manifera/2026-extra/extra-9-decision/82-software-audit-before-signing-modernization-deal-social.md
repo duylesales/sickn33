@@ -1,4 +1,4 @@
-A signed letter of intent, six figures, ready for signature — based on a two-hour codebase walkthrough. An independent audit later found the quote was short by nearly 40% of the real effort. 📉🔍
+A signed letter of intent, six figures, ready for signature - based on a two-hour codebase walkthrough. An independent audit later found the quote was short by nearly 40% of the real effort. 📉🔍
 
 **The Pain Points:**
 ❌ **The Vendor Audits Itself:** Letting the vendor competing for your build contract also perform the audit that justifies their own quote is incentive misalignment, not necessarily dishonesty.
@@ -6,7 +6,7 @@ A signed letter of intent, six figures, ready for signature — based on a two-h
 ❌ **Talking Points Without Contract Teeth:** Audit findings that never make it into a change-order threshold, milestone payments, or a warranty period protect nobody.
 
 **The Manifera Solution:**
-✅ **Independent Findings First:** A structured audit — architecture, security, test coverage, undocumented business logic — delivered in writing before any commercial number is discussed.
+✅ **Independent Findings First:** A structured audit - architecture, security, test coverage, undocumented business logic - delivered in writing before any commercial number is discussed.
 ✅ **Cross-Referenced Proposals:** Compare every shortlisted vendor's quote against the same audit findings to see who actually engaged versus who padded their estimate to absorb surprises.
 ✅ **Contract Protections Built In:** Change-order thresholds, milestone-based payments, and a warranty period targeted at the audit's highest-risk findings.
 

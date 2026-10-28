@@ -21,13 +21,13 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Assen telt ongeveer 70.000 inwoners en is de hoofdstad van Drenthe. De eigen technische markt is provinciaal van schaal — provinciebestuur, zorg, dienstverlening, wat industrie. Wat deze provincie een artikel waard maakt, ligt in het buitengebied eromheen: het Nederlandse radioastronomie-instituut en een verspreide radiotelescoop waarvan de datasnelheden en verwerkingsproblemen vrijwel alles in de commerciële technologie overtreffen.
+Assen telt ongeveer 70.000 inwoners en is de hoofdstad van Drenthe. De eigen technische markt is provinciaal van schaal - provinciebestuur, zorg, dienstverlening, wat industrie. Wat deze provincie een artikel waard maakt, ligt in het buitengebied eromheen: het Nederlandse radioastronomie-instituut en een verspreide radiotelescoop waarvan de datasnelheden en verwerkingsproblemen vrijwel alles in de commerciële technologie overtreffen.
 
 ## Het meest extreme dataprobleem van het land
 
-Een verspreide radiotelescoop bestaat uit vele antennestations over een groot gebied — in dit geval door Nederland en in enkele andere Europese landen. De signalen van alle stations moeten worden gecombineerd, wat correlatie met precieze tijdsynchronisatie vergt. De ruwe datasnelheid van de volledige array is enorm, en die kan niet allemaal worden opgeslagen, dus een substantieel deel van het engineeringprobleem is beslissen wat je bewaart en de rest realtime verwerken.
+Een verspreide radiotelescoop bestaat uit vele antennestations over een groot gebied - in dit geval door Nederland en in enkele andere Europese landen. De signalen van alle stations moeten worden gecombineerd, wat correlatie met precieze tijdsynchronisatie vergt. De ruwe datasnelheid van de volledige array is enorm, en die kan niet allemaal worden opgeslagen, dus een substantieel deel van het engineeringprobleem is beslissen wat je bewaart en de rest realtime verwerken.
 
-**Onderdrukking van radiofrequentie-interferentie.** Het instrument probeert extreem zwakke natuurlijke signalen te detecteren in een omgeving verzadigd met door mensen gemaakte radiotransmissie. Interferentie identificeren en verwijderen — van omroep, luchtvaart, mobiele netwerken, schrikdraad, slecht afgeschermde apparatuur — is een continue strijd, en het is fundamenteel een patroonherkenningsprobleem op tijd-frequentiedata.
+**Onderdrukking van radiofrequentie-interferentie.** Het instrument probeert extreem zwakke natuurlijke signalen te detecteren in een omgeving verzadigd met door mensen gemaakte radiotransmissie. Interferentie identificeren en verwijderen - van omroep, luchtvaart, mobiele netwerken, schrikdraad, slecht afgeschermde apparatuur - is een continue strijd, en het is fundamenteel een patroonherkenningsprobleem op tijd-frequentiedata.
 
 **Kalibratie van een verspreid instrument.** Elk station heeft eigen kenmerken, en de ionosfeer tussen hemel en instrument vervormt signalen op manieren die variëren met tijd, richting en frequentie. Kalibratie is een groot invers probleem dat iteratief wordt opgelost en een groot deel van de totale rekentijd opeist.
 
@@ -39,7 +39,7 @@ Een verspreide radiotelescoop bestaat uit vele antennestations over een groot ge
 
 **Databeheer op extreme schaal.** Archiveren, distribueren en herverwerking mogelijk maken van petabyte-datasets voor een internationale gebruikersgemeenschap.
 
-Twee dingen horen helder gezegd: dit is intellectueel een van de meest veeleisende toegepaste rekenomgevingen die bestaat. En het is klein — landelijk enkele tientallen relevante technische functies, geen honderden.
+Twee dingen horen helder gezegd: dit is intellectueel een van de meest veeleisende toegepaste rekenomgevingen die bestaat. En het is klein - landelijk enkele tientallen relevante technische functies, geen honderden.
 
 ## Waarom astronomiesoftware-ervaring goed overdraagt
 
@@ -47,7 +47,7 @@ De technieken zijn algemeen. Inverse problemen, interferentieonderdrukking, kali
 
 De schaal is leerzaam. Systemen hebben gebouwd die datasnelheden verwerken die de meeste commerciële engineers nooit tegenkomen, is geloofwaardig bewijs van engineeringvermogen.
 
-De softwarecultuur is sterk. Astronomie kent een lange traditie van open, gedeelde, goed gedocumenteerde wetenschappelijke software, en engineers uit die achtergrond hebben gewoonten — reproduceerbaarheid, versiebeheerdiscipline, testen van numerieke code — die goed overdragen.
+De softwarecultuur is sterk. Astronomie kent een lange traditie van open, gedeelde, goed gedocumenteerde wetenschappelijke software, en engineers uit die achtergrond hebben gewoonten - reproduceerbaarheid, versiebeheerdiscipline, testen van numerieke code - die goed overdragen.
 
 De eerlijke kanttekening is dat vertaling nodig is. Een hiring manager begrijpt mogelijk niet direct wat een kalibratiepijplijn is of waarom die lastig was.
 
@@ -92,7 +92,7 @@ Functies zijn weinig en verschijnen onregelmatig, dus de vacatures maandenlang v
 
 Een astronomiediploma is niet vereist voor engineeringfuncties. Wat wél vereist is, is oprechte belangstelling voor het instrument en de fysica, genoeg om motivatie vol te houden bij werk waarvan de wetenschappelijke opbrengst indirect is.
 
-Publicaties en opensource-bijdragen wegen hier zwaarder dan in de meeste commerciële werving, en de software van het instituut is openbaar — je kunt die dus lezen vóór een gesprek. Dat doen en er intelligent over kunnen praten is een van de sterkste signalen van echte belangstelling.
+Publicaties en opensource-bijdragen wegen hier zwaarder dan in de meeste commerciële werving, en de software van het instituut is openbaar - je kunt die dus lezen vóór een gesprek. Dat doen en er intelligent over kunnen praten is een van de sterkste signalen van echte belangstelling.
 
 ## Belangrijkste punten
 
@@ -105,6 +105,6 @@ Publicaties en opensource-bijdragen wegen hier zwaarder dan in de meeste commerc
 
 ## Waar te beginnen
 
-Hebben inverse problemen, signaalbewerking of data-engineering op extreme schaal je belangstelling, lees dan eerst de openbare software en technische publicaties van het radioastronomie-instituut — die vertellen je binnen een uur of dit werk je pakt.
+Hebben inverse problemen, signaalbewerking of data-engineering op extreme schaal je belangstelling, lees dan eerst de openbare software en technische publicaties van het radioastronomie-instituut - die vertellen je binnen een uur of dit werk je pakt.
 
 Bekijk actuele AI-, machine learning- en datavacatures in en rond Assen op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).

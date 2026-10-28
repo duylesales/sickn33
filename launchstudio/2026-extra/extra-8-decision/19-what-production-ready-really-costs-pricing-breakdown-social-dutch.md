@@ -1,4 +1,4 @@
-💸 Ze begrootte op basis van een blogpost van een andere startup over een "vergelijkbaar" project. Toen las ze de werkelijke pakketbeschrijvingen zelf — en besefte dat haar app in een heel ander segment viel.
+💸 Ze begrootte op basis van een blogpost van een andere startup over een "vergelijkbaar" project. Toen las ze de werkelijke pakketbeschrijvingen zelf - en besefte dat haar app in een heel ander segment viel.
 
 "Noem gewoon een getal" is wat elke oprichter wil. Dit is waarom "het hangt ervan af" technisch waar is (en hoe u stopt met gissen):
 
@@ -14,7 +14,7 @@
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, is elke offerte gebaseerd op uw feitelijke code. 💰
 
-Haar resultaat: nul verrassingen in de scope — de offerte viel exact binnen het pakket dat ze vooraf zelf al had gecalculeerd. ✅
+Haar resultaat: nul verrassingen in de scope - de offerte viel exact binnen het pakket dat ze vooraf zelf al had gecalculeerd. ✅
 
 👉 Bekijk de complete prijsuitsplitsing en vind uw pakket: https://launchstudio.eu/nl/blog/what-production-ready-really-costs-pricing-breakdown
 

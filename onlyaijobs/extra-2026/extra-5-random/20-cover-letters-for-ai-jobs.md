@@ -54,7 +54,7 @@ The practical rule: write one when you have something to say that the CV cannot 
 
 Hiring managers reading applications for AI roles are trying to answer three questions quickly:
 
-1. **Does this person understand what we do?** Not the marketing description — the actual problem.
+1. **Does this person understand what we do?** Not the marketing description - the actual problem.
 2. **Can they do the work, or learn it fast?** Evidence, not adjectives.
 3. **Why us, and why now?** A reason that is true, specific and not flattery.
 
@@ -97,7 +97,7 @@ Certain sentences appear in most letters and therefore carry no information.
 - *"I am excited about the opportunity to leverage cutting-edge technologies."* Buzzword density without content.
 - *"Your company is a leader in innovation."* Flattery that applies to any employer.
 
-The replacement principle is simple: if a sentence could appear in a letter to any other company, delete it or make it specific. A letter of 250 specific words beats one of 500 general ones, and it takes less of the reader's time — which is itself a small courtesy that registers.
+The replacement principle is simple: if a sentence could appear in a letter to any other company, delete it or make it specific. A letter of 250 specific words beats one of 500 general ones, and it takes less of the reader's time - which is itself a small courtesy that registers.
 
 ## Adapting the Letter to European Conventions
 
@@ -167,7 +167,7 @@ A master's graduate in computational physics applied for a machine learning engi
 
 Her first letter said she was "passionate about applying AI to real-world problems" and "a fast learner". She sent thirty of them and got two responses.
 
-She rewrote the approach. For each application she spent twenty minutes reading what the company actually built, then wrote one paragraph connecting her real work to their real problem. For the manufacturing company she wrote that her thesis involved detecting anomalies in sensor data from an experimental rig where labels were scarce and false alarms were expensive, that she had built the data pipeline herself because nobody else would, and that she assumed their predictive maintenance problem had the same shape — few labelled failures and a high cost of crying wolf.
+She rewrote the approach. For each application she spent twenty minutes reading what the company actually built, then wrote one paragraph connecting her real work to their real problem. For the manufacturing company she wrote that her thesis involved detecting anomalies in sensor data from an experimental rig where labels were scarce and false alarms were expensive, that she had built the data pipeline herself because nobody else would, and that she assumed their predictive maintenance problem had the same shape - few labelled failures and a high cost of crying wolf.
 
 The hiring manager told her later that the phrase "few labelled failures and a high cost of crying wolf" was why she was invited. It showed she understood the problem before she arrived. She sent eleven applications in the new style and received five interviews.
 

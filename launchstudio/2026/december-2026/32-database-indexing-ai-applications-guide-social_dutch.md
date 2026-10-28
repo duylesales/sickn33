@@ -11,9 +11,9 @@ De database-checklist voor AI-apps: ✅
 2️⃣ Samengestelde indexen voor veelgebruikte filters en sorteringen
 3️⃣ Gespecialiseerde vector-indexen (pgvector HNSW) voor AI-embeddings
 4️⃣ Monitor trage queries direct na livegang
-5️⃣ Over-indexeer niet — elke index kost een fractie schrijftijd
+5️⃣ Over-indexeer niet - elke index kost een fractie schrijftijd
 
-Vertrouw niet blind op aannames — draai `EXPLAIN ANALYZE`. Een "Seq Scan" op een tabel die geïndexeerd had moeten zijn, betekent dat de database uw index stilletjes negeert. 🔍
+Vertrouw niet blind op aannames - draai `EXPLAIN ANALYZE`. Een "Seq Scan" op een tabel die geïndexeerd had moeten zijn, betekent dat de database uw index stilletjes negeert. 🔍
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten met PostgreSQL, MySQL & MongoDB, sporen we dit binnen uren op. 🛡️
 

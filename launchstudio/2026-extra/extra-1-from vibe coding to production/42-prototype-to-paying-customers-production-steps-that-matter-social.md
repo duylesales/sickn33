@@ -7,10 +7,10 @@ There's a narrower, non-negotiable subset between "my prototype works" and "some
 ❌ Feeling overwhelmed by the complete list is exactly what drives indefinite delay
 ❌ Over-preparing on lower-stakes items delays real revenue and real feedback for no reason
 
-✅ Reliable payment processing — idempotency and webhooks actually working
+✅ Reliable payment processing - idempotency and webhooks actually working
 ✅ Genuinely secure auth and data access before real customer data touches it
 ✅ The core feature actually delivers what was paid for, under real first-use conditions
-✅ Basic support responsiveness — someone reachable when friction happens
+✅ Basic support responsiveness - someone reachable when friction happens
 
 At **LaunchStudio**, we scope engagements around exactly this practical first-customer threshold, then expand as growth warrants. Backed by Manifera's experience across founders at every stage. 🛡️
 

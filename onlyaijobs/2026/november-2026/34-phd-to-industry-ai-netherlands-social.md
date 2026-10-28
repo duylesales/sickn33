@@ -1,4 +1,4 @@
-💡 In the Netherlands, PhD candidates are employees with contracts and pension accrual. When that contract ends, most build careers outside academia — and often worry that their experience does not translate.
+💡 In the Netherlands, PhD candidates are employees with contracts and pension accrual. When that contract ends, most build careers outside academia - and often worry that their experience does not translate.
 
 🔬 It does. Industry values deep expertise, independent problem-solving, rigour in evaluation and persistence through long projects. The hesitation on the other side is predictable: will this person chase perfection, can they work to shorter timelines, do they write maintainable code? Address it explicitly.
 

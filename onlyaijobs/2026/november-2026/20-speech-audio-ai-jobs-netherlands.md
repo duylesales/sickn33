@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-A physician dictates a consultation summary that appears in the patient record within seconds. A television programme receives automatic subtitles for viewers who are deaf or hard of hearing. A customer service team analyses thousands of calls to understand why customers are frustrated. A synthetic voice reads public information aloud for people with low literacy. Speech and audio AI has moved from research labs into daily practice, and the arrival of powerful open speech recognition models has accelerated adoption. For machine learning engineers interested in signal processing, language and accessibility, speech and audio AI is a specialised but growing career path in the Netherlands — one where Dutch language expertise and careful handling of voice data make a real difference.
+A physician dictates a consultation summary that appears in the patient record within seconds. A television programme receives automatic subtitles for viewers who are deaf or hard of hearing. A customer service team analyses thousands of calls to understand why customers are frustrated. A synthetic voice reads public information aloud for people with low literacy. Speech and audio AI has moved from research labs into daily practice, and the arrival of powerful open speech recognition models has accelerated adoption. For machine learning engineers interested in signal processing, language and accessibility, speech and audio AI is a specialised but growing career path in the Netherlands - one where Dutch language expertise and careful handling of voice data make a real difference.
 
 ## Why Speech AI Matters in the Dutch Context
 
@@ -55,7 +55,7 @@ A physician dictates a consultation summary that appears in the patient record w
 
 **Max Planck Institute for Psycholinguistics.** Also in Nijmegen, the institute studies how people produce and understand language, contributing fundamental knowledge relevant to speech science.
 
-**Meertens Institute.** The Amsterdam-based research institute studies Dutch language variation and culture, including dialects — highly relevant for speech recognition across regional varieties.
+**Meertens Institute.** The Amsterdam-based research institute studies Dutch language variation and culture, including dialects - highly relevant for speech recognition across regional varieties.
 
 **Spoken Dutch Corpus.** The Corpus Gesproken Nederlands, a large corpus of spoken Dutch from the Netherlands and Flanders, has been an important resource for speech research; it is made available through the **Dutch Language Institute**.
 
@@ -96,9 +96,9 @@ Other universities, including the University of Amsterdam, Utrecht University, t
 
 **GDPR.** Voice recordings are personal data. When voice data is processed to uniquely identify a person, it is biometric data, a special category under Article 9 of the GDPR with strict conditions. Recording calls requires a lawful basis and transparency.
 
-**EU Artificial Intelligence Act — prohibited practices.** AI systems that infer emotions of natural persons in the workplace and education institutions are prohibited except for medical or safety reasons. Speech analytics products that claim to detect employees' emotions from voice in call centres can fall within this prohibition.
+**EU Artificial Intelligence Act - prohibited practices.** AI systems that infer emotions of natural persons in the workplace and education institutions are prohibited except for medical or safety reasons. Speech analytics products that claim to detect employees' emotions from voice in call centres can fall within this prohibition.
 
-**EU Artificial Intelligence Act — transparency.** Under Article 50, providers of AI systems that generate synthetic audio must ensure outputs are marked in a machine-readable format and detectable as artificially generated, and deployers of deepfakes must disclose that content is artificially generated or manipulated, subject to exceptions. Systems interacting directly with people, such as voicebots, must inform users that they are interacting with an AI system unless this is obvious.
+**EU Artificial Intelligence Act - transparency.** Under Article 50, providers of AI systems that generate synthetic audio must ensure outputs are marked in a machine-readable format and detectable as artificially generated, and deployers of deepfakes must disclose that content is artificially generated or manipulated, subject to exceptions. Systems interacting directly with people, such as voicebots, must inform users that they are interacting with an AI system unless this is obvious.
 
 **European Accessibility Act (Directive (EU) 2019/882).** Applicable since June 2025, the act sets accessibility requirements for certain products and services, including aspects of audiovisual media services, e-commerce and banking, increasing demand for accessible interfaces such as captions and speech-based access.
 
@@ -106,7 +106,7 @@ Other universities, including the University of Amsterdam, Utrecht University, t
 
 ## A Concrete Scenario: Clinical Speech Recognition That Missed the Critical Word
 
-A hospital pilots speech recognition to help physicians write consultation notes. Overall word error rates are low, and physicians appreciate the time savings. But a review reveals that the system occasionally confuses similar-sounding medication names and dosage expressions — rare errors with potentially serious consequences.
+A hospital pilots speech recognition to help physicians write consultation notes. Overall word error rates are low, and physicians appreciate the time savings. But a review reveals that the system occasionally confuses similar-sounding medication names and dosage expressions - rare errors with potentially serious consequences.
 
 The team adds a specialised medical vocabulary, fine-tunes the model on de-identified clinical dictations, highlights low-confidence medical terms for review and trains physicians to check highlighted segments before saving notes. Evaluation shifts from overall word error rate to error rates on clinically critical terms. The pilot continues with better safeguards. The case shows that in speech AI, the cost of an error depends heavily on which word is wrong.
 
@@ -134,7 +134,7 @@ Designing such evaluations requires representative test sets, often created with
 
 Many organisations experiment with voicebots in customer service: automated systems that answer calls, understand questions and route customers. Technically, modern speech recognition and language models make such systems far more capable than older menu-based systems. Yet customer acceptance depends on design choices beyond model accuracy.
 
-Effective voicebots state clearly that the caller is speaking with an AI system, as required under the AI Act's transparency obligations. They handle simple requests quickly, recognise when a caller is frustrated or when a question is complex and transfer to a human without forcing callers to repeat information. They are tested with diverse callers, including older people, non-native speakers and people with speech impairments. And they are monitored continuously, with call transcripts reviewed — under strict privacy safeguards — to find failure patterns.
+Effective voicebots state clearly that the caller is speaking with an AI system, as required under the AI Act's transparency obligations. They handle simple requests quickly, recognise when a caller is frustrated or when a question is complex and transfer to a human without forcing callers to repeat information. They are tested with diverse callers, including older people, non-native speakers and people with speech impairments. And they are monitored continuously, with call transcripts reviewed - under strict privacy safeguards - to find failure patterns.
 
 For speech AI professionals, voicebot projects combine speech recognition, language understanding, conversation design, integration with customer systems and careful evaluation. Organisations increasingly look for people who can bridge these areas rather than specialists in a single component.
 
@@ -182,13 +182,13 @@ Browse current AI, machine learning and data jobs, including speech and audio AI
 ## Frequently Asked Questions
 
 ### (Scenario: engineer assuming speech is solved) Is speech recognition still a good specialisation?
-Yes — organisations need experts to adapt models to domains, dialects and noisy environments, evaluate fairness and deploy responsibly.
+Yes - organisations need experts to adapt models to domains, dialects and noisy environments, evaluate fairness and deploy responsibly.
 
 ### (Scenario: candidate looking for employers) Which sectors hire speech and audio AI specialists in the Netherlands?
 Healthcare technology, media and broadcasting, customer contact software, accessibility technology, automotive and electronics, industrial monitoring, research and government.
 
 ### (Scenario: candidate concerned about privacy) Are voice recordings personal data?
-Yes — and voice data processed to uniquely identify a person is biometric data subject to strict GDPR conditions.
+Yes - and voice data processed to uniquely identify a person is biometric data subject to strict GDPR conditions.
 
 ### (Scenario: engineer working on call analytics) Can we analyse employees' emotions from their voice?
 AI systems inferring emotions in the workplace are prohibited under the AI Act except for medical or safety reasons.
@@ -201,11 +201,11 @@ Under the AI Act, synthetic audio must be marked as artificially generated in a 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is speech recognition still a good specialisation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — adaptation, evaluation and responsible deployment remain in demand."}},
+    {"@type": "Question", "name": "Is speech recognition still a good specialisation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - adaptation, evaluation and responsible deployment remain in demand."}},
     {"@type": "Question", "name": "Which sectors hire speech and audio AI specialists in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Healthcare, media, customer contact, accessibility, automotive, industry, research and government."}},
-    {"@type": "Question", "name": "Are voice recordings personal data?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — and identifying voice data is biometric data under GDPR."}},
+    {"@type": "Question", "name": "Are voice recordings personal data?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - and identifying voice data is biometric data under GDPR."}},
     {"@type": "Question", "name": "Can we analyse employees' emotions from their voice?", "acceptedAnswer": {"@type": "Answer", "text": "Workplace emotion recognition is prohibited except for medical or safety reasons."}},
-    {"@type": "Question", "name": "Do synthetic voices need to be labelled?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — machine-readable marking and deepfake disclosure apply, with exceptions."}}
+    {"@type": "Question", "name": "Do synthetic voices need to be labelled?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - machine-readable marking and deepfake disclosure apply, with exceptions."}}
   ]
 }
 </script>

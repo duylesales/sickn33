@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-For many AI and data roles, the interview process includes a take-home assignment: a dataset and a question, a small modelling task, a data pipeline to build or a case to analyse at home within a few days. When designed well, a take-home is one of the fairest ways to assess practical skills — it resembles real work more closely than whiteboard puzzles and gives candidates time to think. When designed poorly, it becomes an unpaid weekend project, a test of free time rather than skill, or even a way to obtain free consultancy. Candidates who understand the difference can invest their time wisely, set boundaries where needed and deliver work that genuinely stands out.
+For many AI and data roles, the interview process includes a take-home assignment: a dataset and a question, a small modelling task, a data pipeline to build or a case to analyse at home within a few days. When designed well, a take-home is one of the fairest ways to assess practical skills - it resembles real work more closely than whiteboard puzzles and gives candidates time to think. When designed poorly, it becomes an unpaid weekend project, a test of free time rather than skill, or even a way to obtain free consultancy. Candidates who understand the difference can invest their time wisely, set boundaries where needed and deliver work that genuinely stands out.
 
 ## Types of Practical Assessments in AI Hiring
 
@@ -53,7 +53,7 @@ Each has advantages. Take-homes allow thoughtful work; live exercises test reaso
 ## What a Reasonable Take-Home Looks Like
 
 - **Clear scope.** The assignment defines the question, deliverables and evaluation criteria.
-- **Limited time investment.** The employer indicates the expected effort, and it is proportional to the stage of the process — typically a few hours rather than days.
+- **Limited time investment.** The employer indicates the expected effort, and it is proportional to the stage of the process - typically a few hours rather than days.
 - **Realistic but artificial data.** Data is public, synthetic or anonymised, not live company data with a real business problem the company needs solved.
 - **Flexibility.** Candidates can choose when to work on it within a reasonable deadline.
 - **Follow-up conversation.** The work is discussed, giving candidates the opportunity to explain choices.
@@ -71,7 +71,7 @@ The **NVP Recruitment Code**, used by many Dutch employers, emphasises that sele
 - **Requests to transfer rights** to your work or to sign broad agreements before starting.
 - **No feedback or conversation** after submission.
 
-A single warning sign does not necessarily mean bad intent — many companies simply have not thought carefully about assessment design. But multiple signs suggest that the employer does not value candidates' time.
+A single warning sign does not necessarily mean bad intent - many companies simply have not thought carefully about assessment design. But multiple signs suggest that the employer does not value candidates' time.
 
 ## Ownership of Your Work
 
@@ -95,7 +95,7 @@ Generative AI coding assistants have changed practical assessments. Some employe
 
 **Ask if unclear.** A short question about the policy shows professionalism.
 
-**Be transparent.** If you use AI tools, mention how you used them — for example, for boilerplate code or debugging — and ensure you understand and can explain every part of the solution.
+**Be transparent.** If you use AI tools, mention how you used them - for example, for boilerplate code or debugging - and ensure you understand and can explain every part of the solution.
 
 **Expect follow-up questions.** Interviewers increasingly ask candidates to explain or modify their code live, precisely to verify understanding.
 
@@ -139,7 +139,7 @@ The follow-up conversation about a take-home assignment is often as important as
 
 **Prepare a short walkthrough.** Be ready to summarise your approach in a few minutes: the question, the key data issues you found, your modelling choices, results and limitations.
 
-**Know your weak points.** Identify parts of your solution that could be challenged — a validation choice, a missing feature, a simplifying assumption — and prepare to discuss alternatives.
+**Know your weak points.** Identify parts of your solution that could be challenged - a validation choice, a missing feature, a simplifying assumption - and prepare to discuss alternatives.
 
 **Welcome critique.** When an interviewer questions a choice, respond with curiosity rather than defensiveness. Explaining how you would adjust the approach given new information shows exactly the collaborative judgement teams need.
 
@@ -182,7 +182,7 @@ Many candidates believe that investing more time always improves their chances. 
 
 ## Where to Start
 
-Before your next assignment, ask the six questions above — then aim for a focused, well-explained solution rather than the most complex one.
+Before your next assignment, ask the six questions above - then aim for a focused, well-explained solution rather than the most complex one.
 
 Browse current AI, machine learning and data jobs at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -198,7 +198,7 @@ Generally you do, as you are not an employee, unless you agree to transfer right
 Ask about the employer's policy; if allowed, be transparent about how you used them and make sure you can explain all your code.
 
 ### (Scenario: candidate with limited time) Can I decline a take-home assignment?
-Yes — politely explain your situation and ask whether an alternative, such as a shorter task or discussing a previous project, is possible.
+Yes - politely explain your situation and ask whether an alternative, such as a shorter task or discussing a previous project, is possible.
 
 ### (Scenario: candidate wanting to stand out) What makes a take-home submission stand out?
 A clear question, data quality checks, a baseline, honest evaluation, readable code and a short summary of conclusions and limitations.
@@ -211,7 +211,7 @@ A clear question, data quality checks, a baseline, honest evaluation, readable c
     {"@type": "Question", "name": "How long should a take-home assignment take?", "acceptedAnswer": {"@type": "Answer", "text": "Usually a few hours of work; multi-day projects are excessive for most roles."}},
     {"@type": "Question", "name": "Who owns the code I write for a take-home assignment?", "acceptedAnswer": {"@type": "Answer", "text": "Generally you do unless you agree to transfer rights."}},
     {"@type": "Question", "name": "Can I use AI tools during a take-home assignment?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about the policy; if allowed, be transparent and able to explain your code."}},
-    {"@type": "Question", "name": "Can I decline a take-home assignment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — politely, and propose an alternative."}},
+    {"@type": "Question", "name": "Can I decline a take-home assignment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - politely, and propose an alternative."}},
     {"@type": "Question", "name": "What makes a take-home submission stand out?", "acceptedAnswer": {"@type": "Answer", "text": "Clear question, data checks, baseline, honest evaluation, readable code and concise summary."}}
   ]
 }

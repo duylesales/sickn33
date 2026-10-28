@@ -1,4 +1,4 @@
-What if your biggest roadmap risk isn't a competitor — it's a dev partner who says "yes, we can build that" to everything? 🤔📋
+What if your biggest roadmap risk isn't a competitor - it's a dev partner who says "yes, we can build that" to everything? 🤔📋
 
 **The Pain Points:**
 ❌ **No Evidence, Just Requests:** Features get scheduled because a loud customer asked, not because the data backs it up.

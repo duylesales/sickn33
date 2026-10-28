@@ -35,7 +35,7 @@ Content Format: Practical Guide
 }
 </script>
 
-AI technical interview preparation attracts a great deal of advice, much of it imported from a different market. European hiring for data and machine learning roles rarely resembles the algorithm-puzzle marathons described in American interview guides. Processes are usually shorter, more conversational and more focused on whether you have actually shipped something. That is good news if you prepare for the right things — and a waste of months if you spend your evenings memorising dynamic programming patterns for a role where nobody will ask. This guide describes the rounds you are likely to face in Europe, how to prepare for each, what interviewers are listening for and which advice to disregard.
+AI technical interview preparation attracts a great deal of advice, much of it imported from a different market. European hiring for data and machine learning roles rarely resembles the algorithm-puzzle marathons described in American interview guides. Processes are usually shorter, more conversational and more focused on whether you have actually shipped something. That is good news if you prepare for the right things - and a waste of months if you spend your evenings memorising dynamic programming patterns for a role where nobody will ask. This guide describes the rounds you are likely to face in Europe, how to prepare for each, what interviewers are listening for and which advice to disregard.
 
 ## AI Technical Interview Preparation: The Four Rounds You Will Actually Face
 
@@ -55,9 +55,9 @@ There is usually also a conversation about collaboration, and sometimes a meetin
 
 Prepare three stories in advance, each with the same structure: the problem and why it mattered; what you inherited; what you built; how you evaluated it; what failed; what you would do differently; and what happened afterwards.
 
-Choose stories that show range — one where you shipped something end to end, one where the hard part was data or stakeholders rather than modelling, and one that did not succeed. The failure story is frequently the most valuable: it demonstrates judgement, and interviewers trust candidates who can discuss their own work critically.
+Choose stories that show range - one where you shipped something end to end, one where the hard part was data or stakeholders rather than modelling, and one that did not succeed. The failure story is frequently the most valuable: it demonstrates judgement, and interviewers trust candidates who can discuss their own work critically.
 
-Rehearse out loud, with a timer. Most candidates need three or four attempts before they can tell a five-minute version without wandering. Know your numbers — baseline, result, scale of data, latency — because vagueness here reads as second-hand experience.
+Rehearse out loud, with a timer. Most candidates need three or four attempts before they can tell a five-minute version without wandering. Know your numbers - baseline, result, scale of data, latency - because vagueness here reads as second-hand experience.
 
 ## Preparing for the Practical Round
 
@@ -121,7 +121,7 @@ Match your preparation to the role rather than preparing a generic "AI interview
 
 ## The Week Before
 
-Re-read the vacancy and write down what you think the team's hardest problem is. Look up the interviewers if their names are given. Refresh the specific stack mentioned in the posting. Rehearse your three stories once more. Prepare four questions. Check the practical arrangements — video link, address, parking, travel time. Sleep more than you feel like. Candidates consistently underestimate how much fatigue affects performance in design rounds, where thinking aloud for an hour is genuinely demanding.
+Re-read the vacancy and write down what you think the team's hardest problem is. Look up the interviewers if their names are given. Refresh the specific stack mentioned in the posting. Rehearse your three stories once more. Prepare four questions. Check the practical arrangements - video link, address, parking, travel time. Sleep more than you feel like. Candidates consistently underestimate how much fatigue affects performance in design rounds, where thinking aloud for an hour is genuinely demanding.
 
 ## During the Interview: Practical Habits
 
@@ -130,14 +130,14 @@ Re-read the vacancy and write down what you think the team's hardest problem is.
 - **State assumptions explicitly** and revisit them when new information appears.
 - **Start simple.** Propose a baseline, then improve. Beginning with the most complex option signals poor judgement.
 - **Manage time.** Say what you would do with more time rather than rushing.
-- **Handle challenges collaboratively.** "That is a fair point — if that is true, I would change X" is a strong answer.
+- **Handle challenges collaboratively.** "That is a fair point - if that is true, I would change X" is a strong answer.
 - **Admit gaps.** Then describe how you would find out.
 
 ## If Something Goes Wrong
 
-Interviews go wrong in predictable ways: you blank on a definition, the code does not run, the interviewer seems unengaged, or a question lands outside your experience. None of these are fatal. Say what is happening — "I have lost my thread, let me restate the problem" — and continue. Interviewers routinely recommend candidates who recovered well, because recovery is what the job requires.
+Interviews go wrong in predictable ways: you blank on a definition, the code does not run, the interviewer seems unengaged, or a question lands outside your experience. None of these are fatal. Say what is happening - "I have lost my thread, let me restate the problem" - and continue. Interviewers routinely recommend candidates who recovered well, because recovery is what the job requires.
 
-If a process feels disrespectful — no preparation from the interviewer, hostile questioning, repeated rescheduling — treat it as information about the employer. You are evaluating them at the same time, and the interview is usually the politest version of an organisation you will ever see.
+If a process feels disrespectful - no preparation from the interviewer, hostile questioning, repeated rescheduling - treat it as information about the employer. You are evaluating them at the same time, and the interview is usually the politest version of an organisation you will ever see.
 
 ## After the Interview
 
@@ -149,19 +149,19 @@ If you are rejected, ask for specific feedback. Many European employers provide 
 
 ## Preparing While Employed
 
-Most candidates interview while working full-time. Realistic preparation is therefore about compounding small efforts: thirty minutes a few evenings a week, one weekend session for the design checklist, and rehearsing stories during commutes. Use the first interviews of a search deliberately — with companies you like but are not desperate for — because three real interviews teach more than a month of preparation in isolation.
+Most candidates interview while working full-time. Realistic preparation is therefore about compounding small efforts: thirty minutes a few evenings a week, one weekend session for the design checklist, and rehearsing stories during commutes. Use the first interviews of a search deliberately - with companies you like but are not desperate for - because three real interviews teach more than a month of preparation in isolation.
 
 ## How OnlyAIJobs Fits Your Interview Preparation
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Vacancies are shown at their exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-For interview preparation, the practical use is simple: read the vacancy text closely before each process. Because listings are limited to AI, ML and data roles and compete on content rather than budget, the descriptions often reveal the team's maturity and the problems they are solving — which is exactly the material you need to prepare relevant questions and anticipate the design round.
+For interview preparation, the practical use is simple: read the vacancy text closely before each process. Because listings are limited to AI, ML and data roles and compete on content rather than budget, the descriptions often reveal the team's maturity and the problems they are solving - which is exactly the material you need to prepare relevant questions and anticipate the design round.
 
 To be transparent about scope: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Elsewhere in Europe, combine it with national boards and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
 
 ## A Final Word
 
-The most common mistake in AI technical interview preparation is optimising for the hardest imaginable question rather than the most likely one. In European processes, the likely questions are about work you have already done: what you built, how you knew it worked, what you would change. Prepare those thoroughly, practise the practical skills you use daily, learn to structure a design discussion, and you will be better prepared than most candidates — including many who have spent far more evenings studying.
+The most common mistake in AI technical interview preparation is optimising for the hardest imaginable question rather than the most likely one. In European processes, the likely questions are about work you have already done: what you built, how you knew it worked, what you would change. Prepare those thoroughly, practise the practical skills you use daily, learn to structure a design discussion, and you will be better prepared than most candidates - including many who have spent far more evenings studying.
 
 ## Advice Worth Ignoring
 

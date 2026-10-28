@@ -54,7 +54,7 @@ The most persuasive material is evidence that something you built ran.
 
 Keep it to six lines and the same six every time.
 
-What it does and who uses it. What you built versus what already existed — clients value honesty here more than they value credit. Which tools were used. What you did about the production concerns: access control, payments, deployment, backups. Something that went wrong. And what the client could do afterwards without you.
+What it does and who uses it. What you built versus what already existed - clients value honesty here more than they value credit. Which tools were used. What you did about the production concerns: access control, payments, deployment, backups. Something that went wrong. And what the client could do afterwards without you.
 
 That last line is the one that closes engagements. A client reading "she left it documented and I added two features myself in Lovable the following month" has heard the answer to their real fear.
 
@@ -64,7 +64,7 @@ If you work with AI-generated code, a short section on how you handle security i
 
 It does not need to be sophisticated. Four sentences describing your standard practice: that you enable and test row-level access rules per table, that privileged keys never appear in client code, that you validate server-side, and that you verify by attempting to bypass your own work rather than by assuming.
 
-Clients cannot evaluate your code. They can absolutely evaluate whether you have a method — and having one stated puts you ahead of most of the market for AI-built work, where the honest answer is that nobody checked.
+Clients cannot evaluate your code. They can absolutely evaluate whether you have a method - and having one stated puts you ahead of most of the market for AI-built work, where the honest answer is that nobody checked.
 
 ## Talking About AI Tooling Honestly
 
@@ -78,7 +78,7 @@ The formulation that works places the tool where it belongs: you build quickly w
 
 ## What to Leave Out
 
-Projects that never had users, unless labelled as explorations. Screenshots without context. Tool logos as a substitute for capability. Claims about security you cannot describe a method for. And client work you cannot name — better to describe it anonymously with detail than to list a logo with nothing attached.
+Projects that never had users, unless labelled as explorations. Screenshots without context. Tool logos as a substitute for capability. Claims about security you cannot describe a method for. And client work you cannot name - better to describe it anonymously with detail than to list a logo with nothing attached.
 
 Volume works against you here. Four projects described properly outperform twelve listed, because the reader is looking for depth of evidence rather than breadth of activity.
 
@@ -86,7 +86,7 @@ Volume works against you here. Four projects described properly outperform twelv
 
 The honest starting position for many people, and it is solvable in weeks rather than years.
 
-**Take one thing you built and actually launch it.** A small tool with ten real users teaches you — and lets you describe — more than ten prototypes. Put it on a domain, add monitoring, take a backup and restore it, and handle the first bug in production.
+**Take one thing you built and actually launch it.** A small tool with ten real users teaches you - and lets you describe - more than ten prototypes. Put it on a domain, add monitoring, take a backup and restore it, and handle the first bug in production.
 
 **Harden something existing, and document it.** Take your own prototype, run the access-control test, fix what you find, and write up what you did. That write-up is portfolio material precisely because it shows method.
 
@@ -104,7 +104,7 @@ Moving between those two positions is largely a matter of evidence. The same per
 
 A common position: the client relationship, the design capability and the prototype skills exist; the engineering that makes it safe to launch does not, and hiring for it is hard to justify against lumpy demand.
 
-The arrangement that solves it is a silent production partner — your branding and your client relationship, someone else's engineering behind it under NDA. LaunchStudio does this explicitly for Dutch freelancers and studios, delivering the last-mile work on fixed scope so the client experience stays yours, with a handover pack you can pass on under your own name.
+The arrangement that solves it is a silent production partner - your branding and your client relationship, someone else's engineering behind it under NDA. LaunchStudio does this explicitly for Dutch freelancers and studios, delivering the last-mile work on fixed scope so the client experience stays yours, with a handover pack you can pass on under your own name.
 
 It also produces exactly the portfolio material discussed above, since the projects launch and keep running. Behind it is Manifera: eleven years of production engineering for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
@@ -126,17 +126,17 @@ The content matters more than the container, and a few practical decisions make 
 
 **Say what you are looking for.** The kind of work, the stage of product, whether you take white-label engagements. Portfolios that describe capability without stating availability generate enquiries you have to filter.
 
-**Keep a private version with more detail** — the technical specifics, the architecture decisions, the things under NDA described generically — to send when a conversation becomes serious. The public page earns the conversation; the private version wins it.
+**Keep a private version with more detail** - the technical specifics, the architecture decisions, the things under NDA described generically - to send when a conversation becomes serious. The public page earns the conversation; the private version wins it.
 
 ## What Clients Ask That Your Portfolio Should Pre-Answer
 
 Three questions arrive in almost every first conversation, and a portfolio that answers them in advance shortens the conversation considerably.
 
-**"What happens if you are unavailable?"** Every client working with an individual has this worry and few say it aloud. Addressing it directly — documented handovers as standard, code and accounts in the client's name, a named colleague or partner for continuity — removes the objection before it forms.
+**"What happens if you are unavailable?"** Every client working with an individual has this worry and few say it aloud. Addressing it directly - documented handovers as standard, code and accounts in the client's name, a named colleague or partner for continuity - removes the objection before it forms.
 
 **"Will I be able to change it without you?"** Say plainly that you leave codebases conventional, documented and editable in the client's own tool, and that you verify it with them before finishing.
 
-**"How do I know it is secure?"** Not a request for a certification. A description of your method — what you check, how you verify it, what you hand over — is what a non-technical buyer can actually evaluate.
+**"How do I know it is secure?"** Not a request for a certification. A description of your method - what you check, how you verify it, what you hand over - is what a non-technical buyer can actually evaluate.
 
 Answering these in the portfolio rather than in the meeting has a second effect: it filters out the clients looking for the cheapest possible build, who are the ones least likely to value the work you do after the interface is finished.
 
@@ -150,12 +150,12 @@ The problem was that nothing in the portfolio addressed risk. Every prospect was
 
 He rewrote it in a weekend. Four projects instead of eleven, each with six lines covering what was built, what already existed, what he did about access control and deployment, something that broke, and what the client could do afterwards. He added a four-sentence section describing his security method, and one paragraph explaining that he builds with AI tooling and does the production work deliberately.
 
-He also spent two weeks launching a small tool of his own properly — domain, monitoring, tested restore — so that at least one entry described something he operated rather than delivered.
+He also spent two weeks launching a small tool of his own properly - domain, monitoring, tested restore - so that at least one entry described something he operated rather than delivered.
 
 **Result:** his conversion from first conversation to engagement roughly doubled over the following quarter, and he moved from competing on prototype price to quoting production work. Two clients told him the security paragraph was the reason they chose him.
 
 > *"I was showing people beautiful screenshots and losing to people with worse screenshots and lower prices. Nobody was buying screenshots. They were buying the absence of a disaster."*
-> — **Tim Roorda, Freelance developer (Groningen)**
+> - **Tim Roorda, Freelance developer (Groningen)**
 
 **Cost & Timeline:** Two weekends of rewriting, plus two weeks launching one small product properly.
 
@@ -175,7 +175,7 @@ The opposite. A portfolio without a single incident is not believable to anyone 
 
 ### How do I build evidence if everything I have made is a prototype?
 
-Launch one small thing properly — domain, monitoring, tested backup, a real bug handled. Then harden an existing prototype and write up the method. Both produce portfolio material within weeks.
+Launch one small thing properly - domain, monitoring, tested backup, a real bug handled. Then harden an existing prototype and write up the method. Both produce portfolio material within weeks.
 
 ### As an agency, how do I offer production work I cannot staff?
 
@@ -191,7 +191,7 @@ Through a white-label production partner under NDA, so the client relationship a
       "name": "What do clients most want to see in an AI-focused portfolio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Evidence that something you built met real users and survived — modest numbers, an incident you handled, a before-and-after metric, and what the client could do without you."
+        "text": "Evidence that something you built met real users and survived - modest numbers, an incident you handled, a before-and-after metric, and what the client could do without you."
       }
     },
     {
@@ -207,7 +207,7 @@ Through a white-label production partner under NDA, so the client relationship a
       "name": "Is including a project that broke a mistake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The opposite — a portfolio with no incident is not believable, and describing a diagnosis and fix demonstrates more than several successful builds."
+        "text": "The opposite - a portfolio with no incident is not believable, and describing a diagnosis and fix demonstrates more than several successful builds."
       }
     },
     {

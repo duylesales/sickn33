@@ -98,7 +98,7 @@ Scarlett partnered with **LaunchStudio (by Manifera)** to make the product launc
 
 **Result:** Scarlett established a safe, version-controlled database schema upgrade process for all future features.
 
-**Cost & Timeline:** €1,850 (Migration & Schema Package) — production-ready and deployed in 6 business days.
+**Cost & Timeline:** €1,850 (Migration & Schema Package) - production-ready and deployed in 6 business days.
 
 ---
 

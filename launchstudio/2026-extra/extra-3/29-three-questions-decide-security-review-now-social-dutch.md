@@ -1,13 +1,13 @@
-🚨 Maandenlang beantwoordde Yara eerlijk "nee" op alle drie de vragen die bepalen of een prototype nu een beveiligingsbeoordeling nodig heeft. Toen wilde een middelgroot architectenbureau RuimtePlan testen met drie van hun eigen echte projectbestanden — en alle drie de antwoorden veranderden binnen één week. 📐
+🚨 Maandenlang beantwoordde Yara eerlijk "nee" op alle drie de vragen die bepalen of een prototype nu een beveiligingsbeoordeling nodig heeft. Toen wilde een middelgroot architectenbureau RuimtePlan testen met drie van hun eigen echte projectbestanden - en alle drie de antwoorden veranderden binnen één week. 📐
 
 De juiste urgentie hangt af van uw daadwerkelijke antwoorden op dit moment, niet van een regel die u maanden geleden opstelde. 🧠
 
 ❌ Echte projectgegevens van klanten stroomden plotseling door een prototype dat alleen ooit synthetische testgegevens had gezien
 ❌ Meerdere echte gebruikers bij het bureau, terwijl solo-testen nooit de gelijktijdigheids- en isolatierisico's had blootgelegd die ontstaan zodra er meer dan één gebruiker is
 ❌ Een specifieke pilottijdlijn die het bureau van haar verwachtte, zonder buffer om onder druk reactief dingen op te lossen
-❌ Twee echte hiaten hadden sluimerend en met lage inzet gelegen tijdens het solo-testen — klaar om een levend risico te worden zodra echt gebruik begon
+❌ Twee echte hiaten hadden sluimerend en met lage inzet gelegen tijdens het solo-testen - klaar om een levend risico te worden zodra echt gebruik begon
 
-✅ Stel de drie vragen opnieuw zodra er iets betekenisvols verandert — een nieuwe pilot, een groeiend gebruikersbestand, een naderende deal
+✅ Stel de drie vragen opnieuw zodra er iets betekenisvols verandert - een nieuwe pilot, een groeiend gebruikersbestand, een naderende deal
 ✅ Handel naar echte gegevens, echte gebruikers of externe betrokkenheid zodra een van die antwoorden "ja" wordt
 ✅ Laat proactief beoordelen voordat een lancering of partnerschap ervan afhangt, in plaats van gaten te ontdekken onder deadlinedruk
 

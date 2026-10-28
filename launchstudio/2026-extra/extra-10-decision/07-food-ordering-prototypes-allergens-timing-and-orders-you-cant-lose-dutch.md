@@ -21,15 +21,15 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-"Wacht eens even — is die opmerking over die ernstige pinda-allergie nu daadwerkelijk in de keuken terechtgekomen, of stond die alleen op het bevestigingsscherm van de klant?"
+"Wacht eens even - is die opmerking over die ernstige pinda-allergie nu daadwerkelijk in de keuken terechtgekomen, of stond die alleen op het bevestigingsscherm van de klant?"
 
-Die ene vraag, drie dagen voor de officiële livegang gesteld door een verontruste restauranthouder, deed Nils stokstijf stilstaan. Hij wist het oprechte antwoord niet. Zijn bestelplatform voor maaltijden, in Lovable gebouwd voor een collectief van zelfstandige restaurants in Rotterdam, toonde dieetwensen en allergenennotities prachtig op het scherm van de consument. Waar die notities bleven nadat de bestelling was geplaatst — en of ze gegarandeerd de kok bereikten die de pannen vasthield — was een vraag die niemand aan de AI-assistent had gesteld. Omdat simpelweg niemand eraan had gedacht.
+Die ene vraag, drie dagen voor de officiële livegang gesteld door een verontruste restauranthouder, deed Nils stokstijf stilstaan. Hij wist het oprechte antwoord niet. Zijn bestelplatform voor maaltijden, in Lovable gebouwd voor een collectief van zelfstandige restaurants in Rotterdam, toonde dieetwensen en allergenennotities prachtig op het scherm van de consument. Waar die notities bleven nadat de bestelling was geplaatst - en of ze gegarandeerd de kok bereikten die de pannen vasthield - was een vraag die niemand aan de AI-assistent had gesteld. Omdat simpelweg niemand eraan had gedacht.
 
 Software voor het bestellen van eten faalt op manieren die vele malen tastbaarder zijn dan reguliere SaaS-producten: een bug resulteert niet slechts in een ticket bij de klantenservice, maar kan een levensbedreigende allergische reactie uitlokken, een betaalde bestelling doen verdwijnen tijdens de avondpiek, of een bezorgtijd beloven die de keuken onmogelijk kan waarmaken. Geen van deze faalmodi openbaart zich tijdens een ontspannen demonstratie met één enkele testbestelling. Ze manifesteren zich allemaal tegelijk op de allereerste drukke vrijdagavond.
 
 ## Allergeendata: Een Veld Dat Elke Systeemoverdracht Moet Overleven
 
-De meest gevaarlijke fout rondom allergenen is niet dat de informatie ontbreekt, maar dat de data aanwezig is in het ene deel van uw systeem en geruisloos verdwijnt in het andere. Een klant vult in het opmerkingenveld in: *"Ernstige pinda-allergie"*. Die cruciale waarschuwing moet vanaf het afrekenscherm en de orderbevestiging ongeschonden doorstromen naar wat het keukenpersoneel feitelijk ziet — een geprinte keukenbon, een keukenscherm (KDS) of een medewerkersnotificatie. Zonder te worden afgekapt door een tekenlimiet, en zonder verborgen te raken onder de vouw van een compacte keukentablet waar tijdens de spits niemand naar beneden scrolt.
+De meest gevaarlijke fout rondom allergenen is niet dat de informatie ontbreekt, maar dat de data aanwezig is in het ene deel van uw systeem en geruisloos verdwijnt in het andere. Een klant vult in het opmerkingenveld in: *"Ernstige pinda-allergie"*. Die cruciale waarschuwing moet vanaf het afrekenscherm en de orderbevestiging ongeschonden doorstromen naar wat het keukenpersoneel feitelijk ziet - een geprinte keukenbon, een keukenscherm (KDS) of een medewerkersnotificatie. Zonder te worden afgekapt door een tekenlimiet, en zonder verborgen te raken onder de vouw van een compacte keukentablet waar tijdens de spits niemand naar beneden scrolt.
 
 Door AI gegenereerde bestel-prototypes behandelen allergenen en speciale instructies standaard als een generiek open tekstveldje. Het wordt visueel exact hetzelfde weergegeven als *"Graag twee keer aanbellen"*, zonder enige garantie dat het buiten de consumentenbevestiging ergens verschijnt. De technische oplossing is elementair maar dwingend: allergenen en medische dieetwensen vereisen een afzonderlijk, visueel prominent dataveld door de gehele keten. Ze moeten direct in het oog springen tussen twaalf verzoeken om *"extra saus"*. Bovendien vereist het veld een ruime tekenlimiet met een fail-safe die bij afkapping direct luid en duidelijk alarmeert (*"Let op: opmerking afgekapt, open volledige bestelling"*).
 
@@ -51,7 +51,7 @@ Een robuust systeem biedt het restaurant een ultrasnelle manier om de capaciteit
 
 ## Wijzigingen en Annuleringen: De Race Condition Waar Niemand op Test
 
-Een consument wil zijn bestelling 90 seconden na plaatsing aanpassen of annuleren — een volkomen menselijk verzoek. Of dat nog kan, hangt er volledig van af of de kok de biefstuk al op de grill heeft gelegd. Dit is een klassieke technische *race condition*: het annuleringsverzoek van de klant en de status *"in bereiding"* van de kok kunnen binnen dezelfde seconde binnenkomen. AI-code heeft zelden doordachte logica voor wie er wint. De gevolgen zijn in beide gevallen slecht: een annulering die wordt geaccepteerd terwijl het eten al klaarstaat (verspild eten, een woedende restauranthouder), of een wijziging die geruisloos wordt genegeerd omdat de keuken de oude bon al heeft afgechekt.
+Een consument wil zijn bestelling 90 seconden na plaatsing aanpassen of annuleren - een volkomen menselijk verzoek. Of dat nog kan, hangt er volledig van af of de kok de biefstuk al op de grill heeft gelegd. Dit is een klassieke technische *race condition*: het annuleringsverzoek van de klant en de status *"in bereiding"* van de kok kunnen binnen dezelfde seconde binnenkomen. AI-code heeft zelden doordachte logica voor wie er wint. De gevolgen zijn in beide gevallen slecht: een annulering die wordt geaccepteerd terwijl het eten al klaarstaat (verspild eten, een woedende restauranthouder), of een wijziging die geruisloos wordt genegeerd omdat de keuken de oude bon al heeft afgechekt.
 
 De oplossing is een formele **state machine**: een bestelling doorloopt strikt gedefinieerde toestanden (*geplaatst, bevestigd door keuken, in bereiding, gereed, onderweg, voltooid, geannuleerd*). Elk wijzigings- of annuleringsverzoek toetst eerst de actuele status, met een eerlijke, directe melding naar de klant zodra een wijziging niet meer mogelijk is (*"Helaas, de keuken is al begonnen met de bereiding"*), in plaats van een falende achtergrondfout.
 
@@ -72,7 +72,7 @@ Prioriteer de technische betrouwbaarheid van uw prototype vóór de lancering al
 
 ## De Betrouwbaarheidslaag Die Eten Bestellen Werkelijk Vereist
 
-De senior engineers van LaunchStudio bouwen de state machine voor keukenbevestigingen, de prominente allergeenverwerking, de druktemodule voor restaurants en de veilige betaalstromen met pre-autorisatie. Dit is het robuuste infrastructuurwerk dat van een mooi ogend prototype een betrouwbaar platform maakt dat een chaotische zaterdagavondspits glansrijk doorstaat — zonder de gebruiksvriendelijke bestel-interface aan te tasten die uw restaurants en klanten al omarmen. Ondersteund door Manifera's decennialange ervaring met bedrijfskritische softwaresystemen garanderen wij een storingsvrije werking.
+De senior engineers van LaunchStudio bouwen de state machine voor keukenbevestigingen, de prominente allergeenverwerking, de druktemodule voor restaurants en de veilige betaalstromen met pre-autorisatie. Dit is het robuuste infrastructuurwerk dat van een mooi ogend prototype een betrouwbaar platform maakt dat een chaotische zaterdagavondspits glansrijk doorstaat - zonder de gebruiksvriendelijke bestel-interface aan te tasten die uw restaurants en klanten al omarmen. Ondersteund door Manifera's decennialange ervaring met bedrijfskritische softwaresystemen garanderen wij een storingsvrije werking.
 
 [Deel uw projectgegevens met ons](https://launchstudio.eu/nl/#contact) en u ontvangt binnen één werkdag een concrete analyse van de faalrisico's in uw huidige bestel-app.
 
@@ -87,9 +87,9 @@ Tijdens het Launch Ready-traject implementeerden we een actieve heartbeat-check 
 **Resultaat:** Buurtmaaltijd doorstond de volgende vier zaterdagen, inclusief twee reële wifistoringen in verschillende keukens, zonder een enkele verloren bestelling of onterecht afgeschreven betaling.
 
 > *"Ik had de app zelf vijftig keer getest, maar altijd op vlekkeloze wifi en met één testbestelling tegelijk. De eerste echte zaterdagavond veegde elke aanname die ik onbewust had gedaan genadeloos van tafel."*
-> — **Nils de Vries, Oprichter, Buurtmaaltijd (Rotterdam)**
+> - **Nils de Vries, Oprichter, Buurtmaaltijd (Rotterdam)**
 
-**Kosten & Doorlooptijd:** €2.300 (Launch Ready-pakket, hardware-connectiviteit, heartbeat-monitoring en betaaltiming) — binnen 9 werkdagen live.
+**Kosten & Doorlooptijd:** €2.300 (Launch Ready-pakket, hardware-connectiviteit, heartbeat-monitoring en betaaltiming) - binnen 9 werkdagen live.
 
 ## Veelgestelde Vragen
 

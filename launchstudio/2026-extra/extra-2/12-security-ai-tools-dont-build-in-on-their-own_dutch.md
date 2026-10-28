@@ -80,7 +80,7 @@ Een geslaagde inlog bewijst niets over de opslagindeling – de enige betrouwbar
 
 1. Een secundair pad geïmplementeerd door het kopiëren en plakken van de code van het hoofdpad, en vervolgens genoeg gewijzigd dat de hashing-aanroep per ongeluk werd verwijderd
 2. Een beheerders-tool later gebouwd, onder tijdsdruk, die rechtstreeks naar de database schrijft zonder te routeren via dezelfde authenticatiedienst die de hoofdapp gebruikt
-3. Een "snelle herstelling" voor een ondersteuningsverzoek — een oprichter die handmatig het wachtwoord van een gebruiker herstelt door de database rechtstreeks in platte tekst zuiver te bewerken, met de bedoeling het "binnen een minuut" te hashen en er nooit meer naar terug te keren
+3. Een "snelle herstelling" voor een ondersteuningsverzoek - een oprichter die handmatig het wachtwoord van een gebruiker herstelt door de database rechtstreeks in platte tekst zuiver te bewerken, met de bedoeling het "binnen een minuut" te hashen en er nooit meer naar terug te keren
 4. Een migratiescript dat gebruikers tussen systemen verplaatst en de indeling van het bronsysteem behoudt, waardoor plattekst stilletjes wordt meegenomen
 
 **Plan de opschoning voor alles wat al getroffen is**
@@ -102,9 +102,9 @@ Tijdens het voorbereiden van een beveiligingsaudit door de klant van WachtPost a
 **Resultaat:** LaunchStudio auditeerde elk pad voor het aanmaken van accounts in WachtPost, paste consistente hashing toe over alle paden, en migreerde veilig de getroffen in platte tekst opgeslagen wachtwoorden. Dit sloot de inconsistentie voordat het de audit van de klant bereikte.
 
 > *"Het gehele punt van WachtPost is het vertellen aan andere bedrijven over exact dit soort kloven. Het vinden ervan in mijn eigen product voordat een klant dat deed was een oprecht nederig makend moment."*
-> — **Iris van Dongen, Oprichter, WachtPost (Apeldoorn)**
+> - **Iris van Dongen, Oprichter, WachtPost (Apeldoorn)**
 
-**Kosten en tijdlijn:** € 2.600 (volledige authenticatiepad-audit en wachtwoordmigratie) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.600 (volledige authenticatiepad-audit en wachtwoordmigratie) - voltooid in 9 werkdagen.
 
 ---
 

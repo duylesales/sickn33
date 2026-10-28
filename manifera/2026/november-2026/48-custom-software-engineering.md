@@ -86,12 +86,12 @@ Consider a hypothetical mid-market healthtech company processing 200,000 patient
 | :--- | :--- | :--- |
 | Initial architecture & build cost | ~$180,000 (standard AWS RDS + TLS setup) | ~$310,000 (Data Quarantine pattern, VSOCK services, KMS attestation policy) |
 | Annual infrastructure delta | $0 | ~$24,000 (isolated EC2 enclave-capable instances) |
-| Probability of a reportable breach over 5 years (illustrative, based on industry breach-frequency studies) | ~26% | ~4% (residual risk from endpoints, credentials, phishing — not memory extraction) |
+| Probability of a reportable breach over 5 years (illustrative, based on industry breach-frequency studies) | ~26% | ~4% (residual risk from endpoints, credentials, phishing - not memory extraction) |
 | Expected breach cost if it occurs (IBM healthcare average, $9.77M) | $9.77M | $9.77M |
 | 5-year risk-adjusted expected cost | ~$2.54M | ~$0.39M |
 | 5-year total cost (build + infra + risk-adjusted expected breach cost) | ~$2.72M | ~$0.82M |
 
-The illustrative math is not subtle: even though the Confidential Computing architecture costs roughly $130,000 more to build up front, the reduction in breach *probability* — not just breach severity — dominates the five-year total. This is the framing a CFO or CISO should bring to the board: the enclave is not a cost center, it is a five-figure insurance premium against a seven-figure exposure that grows larger every year the average breach cost climbs (IBM's global average has risen from $3.86 million in 2020 to $4.88 million in 2024).
+The illustrative math is not subtle: even though the Confidential Computing architecture costs roughly $130,000 more to build up front, the reduction in breach *probability* - not just breach severity - dominates the five-year total. This is the framing a CFO or CISO should bring to the board: the enclave is not a cost center, it is a five-figure insurance premium against a seven-figure exposure that grows larger every year the average breach cost climbs (IBM's global average has risen from $3.86 million in 2020 to $4.88 million in 2024).
 
 ## Guarantee Absolute Data Sovereignty Today
 

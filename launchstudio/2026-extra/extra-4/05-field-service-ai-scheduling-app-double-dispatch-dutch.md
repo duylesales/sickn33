@@ -79,9 +79,9 @@ LaunchStudio herstructureerde de planningslogica van MonteurPlanner zodat elk pa
 **Resultaat:** MonteurPlanner heeft sinds de aanpassing gedraaid zonder een enkel incident met dubbele verzending, over een monteursteam dat sindsdien is gegroeid van vier naar negen.
 
 > *"Ik nam aan dat de kalender de bron van de waarheid was. Het bleek meer te lijken op drie verschillende meningen over de waarheid die toevallig meestal overeenkwamen."*
-> — **Jorrit Hagen, Oprichter, MonteurPlanner (Enschede)**
+> - **Jorrit Hagen, Oprichter, MonteurPlanner (Enschede)**
 
-**Kosten en tijdlijn:** € 1.650 (herbouw van planningsarchitectuur, gecentraliseerde beschikbaarheidslogica, conflictvergrendeling) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 1.650 (herbouw van planningsarchitectuur, gecentraliseerde beschikbaarheidslogica, conflictvergrendeling) - voltooid in 9 werkdagen.
 
 ---
 

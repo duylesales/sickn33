@@ -1,6 +1,6 @@
 🚨 Offerte van €4.900, drie weken voor het skiseizoen, €2.200 op de bank. Hij typte "enige flexibiliteit in de prijs?", wiste het, en stuurde zijn werkelijke budget. Het antwoord kwam dezelfde middag al. 😳
 
-Zeggen dat een offerte "te duur" is leidt hoogstens tot korting op dezelfde scope — de slechtste uitkomst denkbaar. Dit is hoe u het bedrag écht beweegt: 🧠
+Zeggen dat een offerte "te duur" is leidt hoogstens tot korting op dezelfde scope - de slechtste uitkomst denkbaar. Dit is hoe u het bedrag écht beweegt: 🧠
 
 ❌ Vragen om korting nodigt de softwarepartner uit om ongezien op kwaliteit te beknibbelen
 ❌ "Mijn neefje zegt dat dit een weekje werk is" signaleert dat u elke inschatting zult betwisten

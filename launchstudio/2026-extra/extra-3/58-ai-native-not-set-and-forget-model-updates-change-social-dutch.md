@@ -1,13 +1,13 @@
-🚨 Kim besteedde maanden aan het zorgvuldig afstemmen van de prompts van SchrijfAssist op een warme, toegankelijke toon die deel was geworden van de daadwerkelijke waarde van het product. Toen werkte haar AI-provider stilletjes het onderliggende model bij. Er ging niets kapot. Klanten merkten gewoon dat de teksten kouder aanvoelden — eerder dan Kim zelf. 🌡️
+🚨 Kim besteedde maanden aan het zorgvuldig afstemmen van de prompts van SchrijfAssist op een warme, toegankelijke toon die deel was geworden van de daadwerkelijke waarde van het product. Toen werkte haar AI-provider stilletjes het onderliggende model bij. Er ging niets kapot. Klanten merkten gewoon dat de teksten kouder aanvoelden - eerder dan Kim zelf. 🌡️
 
 AI-native is geen eenmalige integratie. Het is een voortdurende relatie met een afhankelijkheid die onder u blijft veranderen. 🧠
 
 ❌ Een modelupdate kan de output van zorgvuldig afgestemde prompts veranderen zonder dat u ook maar één regel van uw eigen code aanraakt
-❌ Er wordt geen fout gegenereerd — kwaliteits- of toonafwijking geeft geen "kapot"-signaal af, dus niets markeert het intern
+❌ Er wordt geen fout gegenereerd - kwaliteits- of toonafwijking geeft geen "kapot"-signaal af, dus niets markeert het intern
 ❌ De klantgerichte toon kan verschuiven op een manier die voelt als een onaangekondigde inconsistentie voor iedereen die uw product al eerder gebruikte
 ❌ Kosten- en prestatiekenmerken kunnen samen met de kwaliteit veranderen bij elke update, niet alleen de output zelf
 
-✅ Evalueer periodiek de daadwerkelijke uitvoerkwaliteit van uw AI-functie aan de hand van uw eigen vastgestelde standaard — ga niet uit van continuïteit alleen omdat er niets zichtbaar kapot ging
+✅ Evalueer periodiek de daadwerkelijke uitvoerkwaliteit van uw AI-functie aan de hand van uw eigen vastgestelde standaard - ga niet uit van continuïteit alleen omdat er niets zichtbaar kapot ging
 ✅ Abonneer u op de changelog of modelupdate-aankondigingen van uw AI-provider, indien beschikbaar
 ✅ Behandel elke belangrijke modelupdate als een bewuste trigger voor herverificatie, niet als een non-event
 

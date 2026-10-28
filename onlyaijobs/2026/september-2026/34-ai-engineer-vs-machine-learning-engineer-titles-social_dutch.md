@@ -2,7 +2,7 @@
 
 De opkomst van grote taalmodellen gaf bedrijven een trendyer klinkende titel om naar te grijpen, en veel rollen die drie jaar geleden gewoon ML Engineer heetten, heten nu AI Engineer.
 
-Waar sommige bedrijven wél een grens trekken: AI Engineer neigt naar integreren en orkestreren — foundation models, prompting, retrieval, agents. ML Engineer neigt naar trainen en finetunen op eigen data. Maar dat is verre van universeel.
+Waar sommige bedrijven wél een grens trekken: AI Engineer neigt naar integreren en orkestreren - foundation models, prompting, retrieval, agents. ML Engineer neigt naar trainen en finetunen op eigen data. Maar dat is verre van universeel.
 
 Eén vraag lost het grootste deel van de ambiguïteit op: "traint deze rol modellen op onze eigen data, of integreert die primair bestaande foundation models?"
 

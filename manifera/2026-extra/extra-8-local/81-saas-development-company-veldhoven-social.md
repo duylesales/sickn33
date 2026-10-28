@@ -1,7 +1,7 @@
-60% of a SaaS product's lifetime engineering cost is spent AFTER launch — mostly fixing the tenant-isolation shortcuts a CTO approved under deadline pressure. 🏗️⚠️
+60% of a SaaS product's lifetime engineering cost is spent AFTER launch - mostly fixing the tenant-isolation shortcuts a CTO approved under deadline pressure. 🏗️⚠️
 
 **The Pain Points:**
-❌ **Shared-Schema Roulette:** Tenant filtering left to developer discipline instead of the database — one missed query is a cross-tenant leak.
+❌ **Shared-Schema Roulette:** Tenant filtering left to developer discipline instead of the database - one missed query is a cross-tenant leak.
 ❌ **Noisy-Neighbor Blind Spot:** Infrastructure sized for the average tenant, not the one enterprise account that's 10x the median.
 ❌ **Security Questionnaire Wall:** Enterprise deals stalling for months because nobody can document the isolation model.
 

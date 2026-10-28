@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-The vacancy says English is the working language, the interviews are in English, and the team you met includes four nationalities. Then you look at what you would actually work on: claim descriptions written by Dutch adjusters, maintenance notes typed by technicians in Groningen, policy documents, municipal records, customer emails, a database where every column is abbreviated Dutch. This combination — international team, Dutch data — is extremely common here, and it is the thing that most often surprises people who arrived expecting language to be a non-issue. It is usually workable. Whether it is workable in this specific role depends on where in the pipeline the Dutch sits.
+The vacancy says English is the working language, the interviews are in English, and the team you met includes four nationalities. Then you look at what you would actually work on: claim descriptions written by Dutch adjusters, maintenance notes typed by technicians in Groningen, policy documents, municipal records, customer emails, a database where every column is abbreviated Dutch. This combination - international team, Dutch data - is extremely common here, and it is the thing that most often surprises people who arrived expecting language to be a non-issue. It is usually workable. Whether it is workable in this specific role depends on where in the pipeline the Dutch sits.
 
 ## Where the Mismatch Actually Shows Up
 
@@ -47,7 +47,7 @@ The vacancy says English is the working language, the interviews are in English,
 
 **Stakeholders.** People can speak English and think in Dutch. The planner explaining why the schedule works the way it does will be more precise, more detailed and more willing in their own language.
 
-**Meetings that drift.** The meeting is in English until two people get into the substance, at which point it is briefly in Dutch — and the substance is what you needed.
+**Meetings that drift.** The meeting is in English until two people get into the substance, at which point it is briefly in Dutch - and the substance is what you needed.
 
 **Written internal context.** Older documentation, ticket histories, email threads and decision records that predate the team's switch to English.
 
@@ -65,7 +65,7 @@ Employers offering English-language roles usually mean it sincerely, and they un
 
 **How much informal knowledge transfer happens in Dutch.** Lunch, corridor conversations, the aside after a meeting. A team can be genuinely English-speaking in meetings and Dutch in every other minute of the day.
 
-**How isolating the gap becomes over a year.** Not in the work, but in belonging — which affects whether you stay.
+**How isolating the gap becomes over a year.** Not in the work, but in belonging - which affects whether you stay.
 
 None of this means an employer is misleading you. It means the question deserves a direct answer rather than a reassurance.
 
@@ -73,7 +73,7 @@ None of this means an employer is misleading you. It means the question deserves
 
 - **What language is the data I would work with?** Ask for an example record or document.
 - **What language is the documentation?**
-- **Do the stakeholders I need speak comfortable English?** Not "do they speak English" — comfortable is the operative word.
+- **Do the stakeholders I need speak comfortable English?** Not "do they speak English" - comfortable is the operative word.
 - **What language are team meetings, and what happens when a discussion gets technical?**
 - **Have international colleagues worked here before, and are they still here?** The most informative question available.
 - **Is language support offered?** Many Dutch employers fund courses; ask whether it is budgeted and whether time is allowed.
@@ -91,7 +91,7 @@ None of this means an employer is misleading you. It means the question deserves
 ## When It Will Be Hard
 
 - The core work is Dutch free text and you cannot read it.
-- Your main stakeholders are operational staff — planners, technicians, nurses, adjusters — who work in Dutch.
+- Your main stakeholders are operational staff - planners, technicians, nurses, adjusters - who work in Dutch.
 - You would be the first international in the team.
 - Documentation, tickets and history are all in Dutch with no intention to change.
 - The role involves regulatory, legal or HR material.
@@ -105,7 +105,7 @@ None of this means an employer is misleading you. It means the question deserves
 
 **Pair with a Dutch colleague for data exploration,** explicitly and with time set aside, rather than interrupting them ad hoc.
 
-**Use translation as a tool, not a solution.** It is excellent for gist and unreliable for domain nuance — which is precisely where model quality is decided.
+**Use translation as a tool, not a solution.** It is excellent for gist and unreliable for domain nuance - which is precisely where model quality is decided.
 
 **Ask people to write to you in Dutch.** Counter-intuitive and effective: you read it, they do not have to translate, and your reading improves quickly.
 
@@ -113,15 +113,15 @@ None of this means an employer is misleading you. It means the question deserves
 
 ## The Career Angle
 
-There is an advantage hidden in this difficulty. People who can work with Dutch-language data are scarce, and the demand is real — in healthcare, insurance, government, legal services, media and customer contact, the text is Dutch and the general tools are weak. An international professional who can evaluate Dutch text properly occupies a small and valuable niche.
+There is an advantage hidden in this difficulty. People who can work with Dutch-language data are scarce, and the demand is real - in healthcare, insurance, government, legal services, media and customer contact, the text is Dutch and the general tools are weak. An international professional who can evaluate Dutch text properly occupies a small and valuable niche.
 
-More broadly, reading Dutch changes what you are considered for. A large share of roles at Dutch employers outside the international tech cluster assume comfortable Dutch, and the ability to read it — even without fluent speech — widens the set of employers within reach of where you live considerably.
+More broadly, reading Dutch changes what you are considered for. A large share of roles at Dutch employers outside the international tech cluster assume comfortable Dutch, and the ability to read it - even without fluent speech - widens the set of employers within reach of where you live considerably.
 
 ## Where the Language Gap Becomes a Model Quality Problem
 
 The risk in these roles is not that you work slowly. It is that you produce something that looks correct and is not, because the errors are invisible to someone who cannot read the material. A few failure modes account for most of it.
 
-**Annotation you cannot check.** If labels are produced by others and you cannot read the underlying text, you are trusting a process you cannot inspect. Disagreements between annotators — the most informative signal in any labelling exercise — become inaccessible.
+**Annotation you cannot check.** If labels are produced by others and you cannot read the underlying text, you are trusting a process you cannot inspect. Disagreements between annotators - the most informative signal in any labelling exercise - become inaccessible.
 
 **Evaluation by proxy.** Without reading outputs, people fall back on aggregate metrics. A model can score well while failing systematically on a category you never saw, and in Dutch operational text those categories are often the ones that matter most.
 
@@ -133,7 +133,7 @@ The risk in these roles is not that you work slowly. It is that you produce some
 
 **Silent regional and sector vocabulary.** Words that mean one thing generally and something specific in a sector or region, which colleagues use without noticing.
 
-The remedy is procedural rather than linguistic. Put a fluent reader in the evaluation loop, formally: scheduled error-analysis sessions where a Dutch-speaking colleague reads a sample of failures with you. Sample deliberately across categories rather than at random. Keep the glossary current. And never accept an evaluation you cannot inspect yourself in at least some depth — if you cannot read enough to spot the pattern, someone on the project must, and that arrangement should exist before the model ships rather than after.
+The remedy is procedural rather than linguistic. Put a fluent reader in the evaluation loop, formally: scheduled error-analysis sessions where a Dutch-speaking colleague reads a sample of failures with you. Sample deliberately across categories rather than at random. Keep the glossary current. And never accept an evaluation you cannot inspect yourself in at least some depth - if you cannot read enough to spot the pattern, someone on the project must, and that arrangement should exist before the model ships rather than after.
 
 ## Writing Is Where You Recover the Gap
 
@@ -141,7 +141,7 @@ There is a compensation available that most international hires discover late: b
 
 A team with one non-Dutch speaker has a reason to document in English that it did not have before, and the documentation it produces is usually better than what existed, because writing for someone who lacks the context forces the context to be made explicit.
 
-In practice this means three habits. Keep the bilingual glossary of fields, codes and domain terms as a living document rather than a personal note. Write decisions and definitions in English as a matter of course, and ask for the Dutch term to be recorded alongside so nobody loses the link to the source systems. And summarise meetings briefly in writing — partly to confirm you understood correctly, partly because the summary becomes the record for everyone.
+In practice this means three habits. Keep the bilingual glossary of fields, codes and domain terms as a living document rather than a personal note. Write decisions and definitions in English as a matter of course, and ask for the Dutch term to be recorded alongside so nobody loses the link to the source systems. And summarise meetings briefly in writing - partly to confirm you understood correctly, partly because the summary becomes the record for everyone.
 
 The effect is practical rather than symbolic: within a year, the parts of the organisation you work with will have more written context than the parts you do not, and you will have become the person who knows where things are written down. That is a durable position, and it started as a workaround for not being able to follow the corridor.
 
@@ -185,7 +185,7 @@ What language the data and documentation are in, whether key stakeholders are co
 Reading, for this work. It arrives faster and unlocks column names, notes and documentation, which is where most of the daily friction sits.
 
 ### (Scenario: candidate relying on tools) Is machine translation enough?
-For gist, yes. For domain nuance, no — and domain nuance is exactly where model quality and evaluation are decided.
+For gist, yes. For domain nuance, no - and domain nuance is exactly where model quality and evaluation are decided.
 
 ### (Scenario: candidate thinking about career) Is Dutch-language data work a good specialism?
 It is a scarce one. Healthcare, insurance, government, legal and customer contact all run on Dutch text where general tools underperform, and people who can evaluate it properly are in demand.
@@ -197,9 +197,9 @@ It is a scarce one. Healthcare, insurance, government, legal and customer contac
   "mainEntity": [
     {"@type": "Question", "name": "Can I work in Dutch data without speaking Dutch?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes for structured data; hard when the core material is Dutch free text or stakeholders work in Dutch."}},
     {"@type": "Question", "name": "What should I ask in the interview?", "acceptedAnswer": {"@type": "Answer", "text": "Language of data and documentation, stakeholder comfort in English, and whether internationals stayed."}},
-    {"@type": "Question", "name": "Should I learn to speak or to read first?", "acceptedAnswer": {"@type": "Answer", "text": "Reading — it arrives faster and removes most daily friction."}},
-    {"@type": "Question", "name": "Is machine translation enough?", "acceptedAnswer": {"@type": "Answer", "text": "For gist yes, for domain nuance no — and nuance decides model quality."}},
-    {"@type": "Question", "name": "Is Dutch-language data work a good specialism?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — scarce and in demand across healthcare, insurance, government and customer contact."}}
+    {"@type": "Question", "name": "Should I learn to speak or to read first?", "acceptedAnswer": {"@type": "Answer", "text": "Reading - it arrives faster and removes most daily friction."}},
+    {"@type": "Question", "name": "Is machine translation enough?", "acceptedAnswer": {"@type": "Answer", "text": "For gist yes, for domain nuance no - and nuance decides model quality."}},
+    {"@type": "Question", "name": "Is Dutch-language data work a good specialism?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - scarce and in demand across healthcare, insurance, government and customer contact."}}
   ]
 }
 </script>

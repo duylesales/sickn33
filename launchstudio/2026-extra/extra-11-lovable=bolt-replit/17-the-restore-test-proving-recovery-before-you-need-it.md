@@ -44,7 +44,7 @@ Notice that only one of these is a technical failure of the platform. The rest a
 
 Read your provider's current documentation rather than assuming, because the details differ by plan and change over time. Establish four things concretely.
 
-**Frequency.** Daily is common. Daily means your worst case is losing a day of customer activity — acceptable for some products, unacceptable for anything transactional.
+**Frequency.** Daily is common. Daily means your worst case is losing a day of customer activity - acceptable for some products, unacceptable for anything transactional.
 
 **Retention.** How far back can you go? This matters most for quiet corruption, which is often discovered weeks later. A seven-day window is useless if the bug started three weeks ago.
 
@@ -60,7 +60,7 @@ Professional practice reduces this to two questions, and both are business decis
 
 **How long can you afford to be down?** An hour, a day, a weekend. This determines whether you need a rehearsed restore procedure or can improvise.
 
-Write both numbers down and compare them to what your current arrangement actually provides. Most founders find a gap, and most find the gap is cheaper to close than they expected — frequently one paid tier plus an afternoon.
+Write both numbers down and compare them to what your current arrangement actually provides. Most founders find a gap, and most find the gap is cheaper to close than they expected - frequently one paid tier plus an afternoon.
 
 ## Rehearsing a Restore in an Afternoon
 
@@ -70,7 +70,7 @@ This is the part almost nobody does and it is genuinely straightforward.
 
 **Restore your most recent backup into it.** Time it. That number is your actual recovery time, and it is usually longer than people guess.
 
-**Verify the contents by hand.** Count rows in your three most important tables and compare with production. Open five specific records you recognise. Check the most recent entries — a backup that silently stops at last month's data is a real failure mode.
+**Verify the contents by hand.** Count rows in your three most important tables and compare with production. Open five specific records you recognise. Check the most recent entries - a backup that silently stops at last month's data is a real failure mode.
 
 **Point a copy of your app at it** and use it for ten minutes. Log in. Create something. Confirm the schema is complete, not just the rows.
 
@@ -82,7 +82,7 @@ This is the part almost nobody does and it is genuinely straightforward.
 
 Technology is half of it. The other half is a page that answers: who notices, who decides, what is communicated, and to whom.
 
-For a solo founder this is short. For a product with customers, three things belong in it. A monitoring alert that reaches an actual human when the app is unreachable. A decision rule — how much loss justifies restoring versus repairing forward. And a customer communication line drafted in advance, because writing honestly about an outage while fixing it is harder than it sounds.
+For a solo founder this is short. For a product with customers, three things belong in it. A monitoring alert that reaches an actual human when the app is unreachable. A decision rule - how much loss justifies restoring versus repairing forward. And a customer communication line drafted in advance, because writing honestly about an outage while fixing it is harder than it sounds.
 
 If your product holds personal data, this is also where breach obligations live. A data loss is not automatically a notifiable breach, but the assessment has to be made quickly under GDPR timelines, and knowing in advance who makes that call saves hours you will not have.
 
@@ -90,13 +90,13 @@ If your product holds personal data, this is also where breach obligations live.
 
 Backups running at a frequency matched to what you can afford to lose. Retention long enough to cover slow-moving corruption. Point-in-time recovery if you handle transactions. Files backed up separately and verified. A restore rehearsed at least once, with a written procedure and a known duration. Monitoring that tells you about failures rather than customers telling you. And a calendar reminder to repeat the rehearsal twice a year, because arrangements drift.
 
-That is perhaps a day of work in total and a small monthly cost. Set against the alternative — reconstructing customer data from email threads and hoping — it is one of the cheapest forms of insurance available to a small product.
+That is perhaps a day of work in total and a small monthly cost. Set against the alternative - reconstructing customer data from email threads and hoping - it is one of the cheapest forms of insurance available to a small product.
 
 ## Getting It Set Up and Proven
 
 LaunchStudio treats recovery as part of making an AI-built product production-ready rather than as an optional extra: backup configuration matched to your tolerance, file storage included rather than forgotten, a restore rehearsed and timed in a scratch environment, monitoring wired to alert a human, and a written runbook handed over with the rest of the documentation. Managed hosting keeps it maintained afterwards at €49 per month, which mostly means somebody notices when a backup starts failing.
 
-The interface you built in Lovable, Bolt or Cursor is untouched, and the engineering comes from Manifera's team — eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
+The interface you built in Lovable, Bolt or Cursor is untouched, and the engineering comes from Manifera's team - eleven years of production systems for clients including Vodafone, TNO and CFLW, from Amsterdam and Ho Chi Minh City.
 
 If you have backups and have never restored one, [describe your project](https://launchstudio.eu/en/#contact) and we will tell you what your actual recovery position is within one business day.
 
@@ -104,11 +104,11 @@ If you have backups and have never restored one, [describe your project](https:/
 
 Recovery is technical. The conversation after it is not, and founders are consistently unprepared for how specific the questions become.
 
-**"What exactly was lost?"** Not "some data" — which records, over which period. This requires knowing your backup timestamp and being able to describe the gap in terms the customer understands: bookings made between Tuesday evening and Wednesday morning, for example.
+**"What exactly was lost?"** Not "some data" - which records, over which period. This requires knowing your backup timestamp and being able to describe the gap in terms the customer understands: bookings made between Tuesday evening and Wednesday morning, for example.
 
 **"Was anything exposed?"** Loss and exposure are different events with different obligations. If you cannot distinguish them, the honest answer is that you are investigating, which is why access logging matters as much as backups.
 
-**"Will it happen again?"** They are asking what changed. A specific answer — staging environment added, migrations no longer run directly against production, restore procedure rehearsed and timed — is reassuring. "We'll be more careful" is not.
+**"Will it happen again?"** They are asking what changed. A specific answer - staging environment added, migrations no longer run directly against production, restore procedure rehearsed and timed - is reassuring. "We'll be more careful" is not.
 
 **"How long were you down, and why did it take that long?"** This is where a rehearsed restore pays for itself twice: once in the shorter outage, and once in being able to say the procedure was tested and the timing was known.
 
@@ -124,7 +124,7 @@ A confusion worth clearing up, because founders sometimes believe one covers the
 
 **Backups protect your data.** They contain what your users created and none of the reasoning behind your code. Restoring one brings back rows and tells you nothing about which deployment introduced the bug that corrupted them.
 
-Real incidents usually need both: the database restored to a point before the damage, and the code reverted to the version that was running when it was correct. Knowing which deploy coincided with which data state is what makes that possible, which is why a simple deployment log — what shipped, when — is quietly part of your recovery plan rather than a separate nicety.
+Real incidents usually need both: the database restored to a point before the damage, and the code reverted to the version that was running when it was correct. Knowing which deploy coincided with which data state is what makes that possible, which is why a simple deployment log - what shipped, when - is quietly part of your recovery plan rather than a separate nicety.
 
 ## Real example
 
@@ -134,22 +134,22 @@ Bas Oosterhuis ran Sportief, a membership and scheduling platform used by six am
 
 The mistake was noticed on Wednesday morning when treasurers from two clubs reported members showing as unpaid. Bas had daily backups on his database plan and had never restored one.
 
-The recovery took nine hours rather than the one he expected. The most recent backup restored cleanly into a scratch project, but the schema had changed since it was taken, so the data could not be pushed back directly. Reconciling renewals recorded by the payment provider after the backup point with the restored rows was manual work. Uploaded club logos and member photographs, stored separately, were unaffected — which he confirmed only after two hours of worry, having never checked what was in scope.
+The recovery took nine hours rather than the one he expected. The most recent backup restored cleanly into a scratch project, but the schema had changed since it was taken, so the data could not be pushed back directly. Reconciling renewals recorded by the payment provider after the backup point with the restored rows was manual work. Uploaded club logos and member photographs, stored separately, were unaffected - which he confirmed only after two hours of worry, having never checked what was in scope.
 
 Afterwards, five business days of work: point-in-time recovery enabled, file storage backed up on its own schedule, a rehearsed restore procedure written down and timed at 40 minutes, staging environment created so migrations are never again run first against production, and monitoring added that alerts on backup failure.
 
 **Result:** a subsequent migration error four months later was resolved in 50 minutes using the written procedure, with no customer noticing.
 
 > *"I had backups. What I didn't have was any idea what restoring one involved, and I found out on the morning I could least afford to."*
-> — **Bas Oosterhuis, Founder, Sportief (Almere)**
+> - **Bas Oosterhuis, Founder, Sportief (Almere)**
 
-**Cost & Timeline:** €1,850 (recovery configuration, file backup, rehearsed restore, staging environment) — completed in 5 business days.
+**Cost & Timeline:** €1,850 (recovery configuration, file backup, rehearsed restore, staging environment) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
 ### My provider takes backups automatically. Is that enough?
 
-It is the foundation, not the plan. You still need to know the frequency, the retention window, whether uploaded files are included, how long a restore takes and whether it works — and only a rehearsal answers the last two.
+It is the foundation, not the plan. You still need to know the frequency, the retention window, whether uploaded files are included, how long a restore takes and whether it works - and only a rehearsal answers the last two.
 
 ### What is point-in-time recovery and do I need it?
 
@@ -177,7 +177,7 @@ That is the argument for longer retention and for monitoring data quality, not j
       "name": "My provider takes backups automatically. Is that enough?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is the foundation, not the plan. You still need the frequency, retention window, whether files are included, how long a restore takes and whether it works — and only a rehearsal answers the last two."
+        "text": "It is the foundation, not the plan. You still need the frequency, retention window, whether files are included, how long a restore takes and whether it works - and only a rehearsal answers the last two."
       }
     },
     {

@@ -6,7 +6,7 @@
 ❌ **Costly Enforcement Penalties:** Regulatory audits impose immediate fines, license suspensions, and reputational damage for unverified discrepancy gaps.
 
 **The Manifera Solution:**
-✅ **Structuring compliance logic around a configurable ruleset per city:** Rather than a single hardcoded policy, so city-specific requirements — registration display, night-cap thresholds, tax-collection rate — can be applied without a separate, parallel system per city.
+✅ **Structuring compliance logic around a configurable ruleset per city:** Rather than a single hardcoded policy, so city-specific requirements - registration display, night-cap thresholds, tax-collection rate - can be applied without a separate, parallel system per city.
 ✅ **Building dynamic, running night-cap tracking per property:** Since correctly enforcing a city's annual rental-night limit depends on accurately counting actual nights booked within the relevant municipal period and proactively blocking bookings once the cap is reached, not just storing a static limit value.
 ✅ **Designing the system to accommodate evolving municipal requirements over time:** Since short-term rental regulation is a genuinely active, evolving area at the municipal level, and a system that can only be updated for new city requirements through substantial rework creates real ongoing compliance risk as more cities adopt or revise their own rules.
 

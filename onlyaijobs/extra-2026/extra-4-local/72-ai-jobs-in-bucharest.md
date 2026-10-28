@@ -84,7 +84,7 @@ Bucharest is a large, energetic city with Belle Époque architecture, large park
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Bucharest you will find few or no local vacancies there today. Use Romanian job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Bucharest with the Netherlands — where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles — and its distance-based approach is especially relevant in a large city where traffic makes the exact office location matter. Romanian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Bucharest you will find few or no local vacancies there today. Use Romanian job portals, company career pages and local tech communities as primary sources. OnlyAIJobs is useful for comparing Bucharest with the Netherlands - where employers such as Accenture, Cegeka, Mollie and Sendcloud list AI roles - and its distance-based approach is especially relevant in a large city where traffic makes the exact office location matter. Romanian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Automation, Document AI and Agents
 
@@ -92,7 +92,7 @@ Enterprise automation has evolved from rule-based bots that mimic clicks to AI-d
 
 ## Security ML and AI Security
 
-Cybersecurity companies in Bucharest process large volumes of threat data and apply machine learning to detect malware, phishing, network intrusions and fraud. Research teams also study the security of AI systems themselves — adversarial examples, model extraction and data poisoning — and the use of AI by attackers. The combination of adversarial problems, global scale and deep security expertise makes this one of the most intellectually demanding fields in the city. The EU AI Act's requirements for robustness and cybersecurity of high-risk AI systems make such expertise increasingly relevant across industries.
+Cybersecurity companies in Bucharest process large volumes of threat data and apply machine learning to detect malware, phishing, network intrusions and fraud. Research teams also study the security of AI systems themselves - adversarial examples, model extraction and data poisoning - and the use of AI by attackers. The combination of adversarial problems, global scale and deep security expertise makes this one of the most intellectually demanding fields in the city. The EU AI Act's requirements for robustness and cybersecurity of high-risk AI systems make such expertise increasingly relevant across industries.
 
 ## E-commerce and Regional Marketplaces
 
@@ -128,7 +128,7 @@ Bucharest suits engineers who want product-focused AI work in automation, securi
 
 ## Preparing for Interviews
 
-Interviews at Bucharest tech companies usually include algorithmic coding tasks — Romania's competitive programming tradition makes these rigorous — ML fundamentals, a system design discussion and a deep dive into past projects. Automation companies may ask about document understanding, evaluation of extraction quality or designing human-in-the-loop workflows; security companies about classification under adversarial conditions and false-positive control; e-commerce companies about experimentation and ranking. Prepare to explain trade-offs clearly in English and to ask about team ownership and deployment.
+Interviews at Bucharest tech companies usually include algorithmic coding tasks - Romania's competitive programming tradition makes these rigorous - ML fundamentals, a system design discussion and a deep dive into past projects. Automation companies may ask about document understanding, evaluation of extraction quality or designing human-in-the-loop workflows; security companies about classification under adversarial conditions and false-positive control; e-commerce companies about experimentation and ranking. Prepare to explain trade-offs clearly in English and to ask about team ownership and deployment.
 
 ## Research Careers
 
@@ -160,7 +160,7 @@ Ask to meet engineers from the team, not only managers; in Bucharest's competiti
 
 ## Responsible AI
 
-Automation, security and banking AI all involve sensitive data and decisions. Engineers who understand GDPR, the EU AI Act and practical governance — documentation, evaluation, human oversight — are increasingly valued by Bucharest employers serving European customers.
+Automation, security and banking AI all involve sensitive data and decisions. Engineers who understand GDPR, the EU AI Act and practical governance - documentation, evaluation, human oversight - are increasingly valued by Bucharest employers serving European customers.
 
 ## Real example
 

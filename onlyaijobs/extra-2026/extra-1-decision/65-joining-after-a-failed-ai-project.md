@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Somewhere in the second interview it comes out. They tried this before. There was a project, or a consultancy, or a predecessor in your chair, and it did not work — the model was never used, the platform was abandoned, the pilot was quietly stopped after eighteen months and a significant budget. Candidates typically react in one of two ways: treating it as disqualifying, or ignoring it because the role sounds good. Both are mistakes. A failed project is the most useful piece of information an employer can give you, because it tells you exactly how this organisation behaves when data work meets reality. The question is not whether they failed. It is what kind of failure it was, and what changed afterwards.
+Somewhere in the second interview it comes out. They tried this before. There was a project, or a consultancy, or a predecessor in your chair, and it did not work - the model was never used, the platform was abandoned, the pilot was quietly stopped after eighteen months and a significant budget. Candidates typically react in one of two ways: treating it as disqualifying, or ignoring it because the role sounds good. Both are mistakes. A failed project is the most useful piece of information an employer can give you, because it tells you exactly how this organisation behaves when data work meets reality. The question is not whether they failed. It is what kind of failure it was, and what changed afterwards.
 
 ## Why These Projects Fail
 
@@ -49,7 +49,7 @@ The pattern in Dutch organisations is consistent and rarely technical.
 
 **The sponsor left.** Reorganisation, a new manager with different priorities, or a budget round. This kills more data projects in large Dutch organisations than any technical cause.
 
-**Compliance stopped it.** Privacy, works council objections or governance questions that were raised too late — and that should have been raised at the start.
+**Compliance stopped it.** Privacy, works council objections or governance questions that were raised too late - and that should have been raised at the start.
 
 **The pilot was never meant to become anything.** It succeeded as a demonstration and had no path to production, no budget for running costs and no owner.
 
@@ -63,7 +63,7 @@ Every one of these has a different implication for the role you are being offere
 
 **Data foundations.** They discovered their data could not support the ambition. Implication: your first eighteen months are data engineering and governance, whatever the vacancy says. Fine if you want that and are told honestly; miserable if you expected modelling.
 
-**Governance halt.** Privacy or oversight questions stopped it. Implication: the organisation now knows those questions exist, which is genuinely good — provided compliance is resourced rather than resented.
+**Governance halt.** Privacy or oversight questions stopped it. Implication: the organisation now knows those questions exist, which is genuinely good - provided compliance is resourced rather than resented.
 
 **Political failure.** The sponsor left, the department resisted, or two executives disagreed. Implication: the most dangerous kind, because nothing technical was wrong and nothing has necessarily changed. Ask who sponsors this attempt and how secure they are.
 
@@ -112,13 +112,13 @@ The way the story is told matters more than the story.
 
 **Blame sounds like:** the consultancy oversold it; the previous person could not communicate; the business would not cooperate; IT blocked everything.
 
-Some blame is accurate — suppliers do oversell, and some colleagues are obstructive. But an organisation that can describe its own contribution to a failure has done the work that makes a second attempt viable. One that cannot has arranged the story so that nothing needs to change.
+Some blame is accurate - suppliers do oversell, and some colleagues are obstructive. But an organisation that can describe its own contribution to a failure has done the work that makes a second attempt viable. One that cannot has arranged the story so that nothing needs to change.
 
 ## The Stakeholder Recovery Problem
 
 Whatever the technical situation, you inherit a trust deficit. Someone in operations gave twelve meetings to the last attempt and got nothing, and they will not volunteer their time again on the strength of your enthusiasm.
 
-The only remedy is a small, fast, useful delivery for the people who were burned most. Not a platform, not a roadmap — something they asked for, within weeks, that saves them effort. Trust in these situations is rebuilt by usefulness and by nothing else.
+The only remedy is a small, fast, useful delivery for the people who were burned most. Not a platform, not a roadmap - something they asked for, within weeks, that saves them effort. Trust in these situations is rebuilt by usefulness and by nothing else.
 
 Plan for this explicitly, and say so in the interview. Hiring managers who have lived through a failure recognise the approach immediately, and it separates you from candidates promising a strategy.
 
@@ -171,12 +171,12 @@ The forecasting work that follows is adopted, partly because it is better and mo
 - A failed project is information, not a verdict: the kind of failure determines whether the role is a good one.
 - Technical, foundational and governance failures are usually recoverable; political failures often are not, because nothing has necessarily changed.
 - Organisations that have failed once frequently offer reset expectations, surviving budget, hard-won self-knowledge and appetite for realism.
-- Listen for analysis rather than blame — an employer who cannot describe its own contribution has arranged the story so nothing needs to change.
+- Listen for analysis rather than blame - an employer who cannot describe its own contribution has arranged the story so nothing needs to change.
 - Plan for stakeholder recovery with one small, fast, useful delivery for the people who were burned, and re-establish business ownership for everything you build.
 
 ## Where to Start
 
-Ask what changed since the last attempt, then compare the answer with what other employers near you already have running — the contrast usually makes the decision obvious.
+Ask what changed since the last attempt, then compare the answer with what other employers near you already have running - the contrast usually makes the decision obvious.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -186,7 +186,7 @@ Browse current AI, machine learning and data jobs by category and distance, free
 No. It is a reason to ask precisely what failed and what changed. Organisations that failed once often make better employers for the second attempt.
 
 ### (Scenario: candidate assessing the story) Which failures are most dangerous to walk into?
-Political ones — a sponsor who left, a department that resisted, two executives who disagreed. Nothing technical was wrong, so nothing has necessarily changed.
+Political ones - a sponsor who left, a department that resisted, two executives who disagreed. Nothing technical was wrong, so nothing has necessarily changed.
 
 ### (Scenario: candidate in the interview) What is the single best question to ask?
 What has changed since. "We are hiring you" is not an answer; a new sponsor, a defined problem, a business owner or an operating budget is.
@@ -202,9 +202,9 @@ Two years with nothing delivered is hard to explain. Reduce it by agreeing writt
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a failed AI project a reason to avoid an employer?", "acceptedAnswer": {"@type": "Answer", "text": "No — ask what failed and what changed; second attempts are often better environments."}},
+    {"@type": "Question", "name": "Is a failed AI project a reason to avoid an employer?", "acceptedAnswer": {"@type": "Answer", "text": "No - ask what failed and what changed; second attempts are often better environments."}},
     {"@type": "Question", "name": "Which failures are most dangerous to walk into?", "acceptedAnswer": {"@type": "Answer", "text": "Political ones, because nothing technical was wrong and nothing has necessarily changed."}},
-    {"@type": "Question", "name": "What is the single best question to ask?", "acceptedAnswer": {"@type": "Answer", "text": "What has changed since — a new sponsor, a defined problem, a business owner or a budget."}},
+    {"@type": "Question", "name": "What is the single best question to ask?", "acceptedAnswer": {"@type": "Answer", "text": "What has changed since - a new sponsor, a defined problem, a business owner or a budget."}},
     {"@type": "Question", "name": "How do I deal with people burned by the last attempt?", "acceptedAnswer": {"@type": "Answer", "text": "Deliver something small and useful to the most sceptical stakeholder first."}},
     {"@type": "Question", "name": "What is the risk if it fails again?", "acceptedAnswer": {"@type": "Answer", "text": "Two years with nothing delivered; mitigate with written success criteria and early delivery."}}
   ]

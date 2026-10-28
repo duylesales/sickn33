@@ -1,4 +1,4 @@
-⏳ Ethan, a real estate broker, built a listing helper using **Bolt** — then watched prospective buyers close the chat widget as a 6-second frozen loading spinner made the software look completely broken. 🏠
+⏳ Ethan, a real estate broker, built a listing helper using **Bolt** - then watched prospective buyers close the chat widget as a 6-second frozen loading spinner made the software look completely broken. 🏠
 
 If a user stares at a blank loading screen for 6 seconds, they assume your software failed, refresh the page, and double your API costs with duplicate requests. 🧠
 

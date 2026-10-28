@@ -29,7 +29,7 @@ The modern software supply chain is the most vulnerable attack vector for Europe
 
 In 2026, selecting an IT software development company is not a cost-saving exercise; it is an exercise in rigorous legal and architectural risk mitigation.
 
-This is not a niche CISO anxiety; it is the dominant concern across enterprise risk functions. Deloitte's Global Third-Party Risk Management Survey found that cyber and information security risk was ranked the single top third-party risk by 62% of respondents — ahead of geopolitical risk (61%), inflationary pressure (46%), and ESG concerns (40%). When your board asks why vendor due diligence takes longer with Manifera than with a bargain-bin agency, the answer is that the rest of the risk-management industry has already concluded that the vendor relationship itself, not just the code it produces, is the primary attack surface.
+This is not a niche CISO anxiety; it is the dominant concern across enterprise risk functions. Deloitte's Global Third-Party Risk Management Survey found that cyber and information security risk was ranked the single top third-party risk by 62% of respondents - ahead of geopolitical risk (61%), inflationary pressure (46%), and ESG concerns (40%). When your board asks why vendor due diligence takes longer with Manifera than with a bargain-bin agency, the answer is that the rest of the risk-management industry has already concluded that the vendor relationship itself, not just the code it produces, is the primary attack surface.
 
 ## The Architectural Mandate: Zero-Trust and DevSecOps
 
@@ -48,7 +48,7 @@ How do you leverage the economic velocity of offshore engineering without exposi
 You do not use a pure offshore agency. You use Manifera's Hybrid Hub model.
 
 - **Amsterdam (Governance/Strategy):** Our Dutch entity (MANIFERA SOFTWARE DEVELOPMENT PTE LTD) is your legal and technical firewall. Your contract is governed entirely by strict Dutch and European Union laws. Our elite Dutch Architects handle all GDPR compliance, define the Zero-Trust architecture, and control the master access keys to your AWS/Azure environments. They act as the CISO's proxy, ensuring that every architectural decision prioritizes the protection of your Intellectual Property.
-- **Vietnam (Execution/Velocity):** The actual coding is executed by our Autonomous Pods in Vietnam. However, because they are full-time Manifera employees operating inside our ISO-standardized, highly secure offices—and strictly governed by the Dutch architects' CI/CD pipelines—they represent zero legal risk to you. They execute with terrifying speed, fully enclosed within a secure European governance framework.
+- **Vietnam (Execution/Velocity):** The actual coding is executed by our Autonomous Pods in Vietnam. However, because they are full-time Manifera employees operating inside our ISO-standardized, highly secure offices - and strictly governed by the Dutch architects' CI/CD pipelines - they represent zero legal risk to you. They execute with terrifying speed, fully enclosed within a secure European governance framework.
 
 ## Case Study: The HealthTech Compliance Rescue
 
@@ -74,21 +74,21 @@ When selecting an IT software development company, the hourly rate is irrelevant
 
 By partnering with Manifera, you are investing in a heavily fortified architectural perimeter. Our European governance ensures your legal and technical safety, while our Vietnamese engineering hubs deliver the economic velocity required to maintain high feature output. You achieve ironclad security without sacrificing your budget.
 
-The vendor-risk scenario in the case study above is not an edge case; it is one of the fastest-growing categories of breach in the industry's own data. IBM's 2025 *Cost of a Data Breach Report* found that supply chain and third-party vendor compromise accounts for roughly 15% of all breaches, at an average cost of $4.91 million — the second-costliest attack vector the report tracks — and that these breaches take an average of 267 days to detect and contain, the longest of any category, precisely because they exploit the trust relationship between an enterprise and the vendor it outsourced work to. That detection lag matters enormously: it means an unvetted offshore agency's data-hygiene failure can sit undiscovered for the better part of a year before anyone even realizes the breach happened, let alone quantifies the damage.
+The vendor-risk scenario in the case study above is not an edge case; it is one of the fastest-growing categories of breach in the industry's own data. IBM's 2025 *Cost of a Data Breach Report* found that supply chain and third-party vendor compromise accounts for roughly 15% of all breaches, at an average cost of $4.91 million - the second-costliest attack vector the report tracks - and that these breaches take an average of 267 days to detect and contain, the longest of any category, precisely because they exploit the trust relationship between an enterprise and the vendor it outsourced work to. That detection lag matters enormously: it means an unvetted offshore agency's data-hygiene failure can sit undiscovered for the better part of a year before anyone even realizes the breach happened, let alone quantifies the damage.
 
-The regulatory backdrop makes the exposure worse, not better. DLA Piper's GDPR Fines and Data Breach Survey, published in January 2026, found that European supervisory authorities issued approximately €1.2 billion in GDPR fines in 2025 alone, bringing the cumulative total since the regulation's 2018 introduction to roughly €7.1 billion, while notified data breaches across Europe rose 22% year-over-year to an average of 443 per day. Under GDPR, liability for a data controller does not transfer to an offshore processor simply because the processor caused the leak — the European entity that owns the customer relationship remains exposed to the fine, exactly as in the pain scenario above, regardless of where the underlying mistake happened or how thin the vendor's contract turns out to be.
+The regulatory backdrop makes the exposure worse, not better. DLA Piper's GDPR Fines and Data Breach Survey, published in January 2026, found that European supervisory authorities issued approximately €1.2 billion in GDPR fines in 2025 alone, bringing the cumulative total since the regulation's 2018 introduction to roughly €7.1 billion, while notified data breaches across Europe rose 22% year-over-year to an average of 443 per day. Under GDPR, liability for a data controller does not transfer to an offshore processor simply because the processor caused the leak - the European entity that owns the customer relationship remains exposed to the fine, exactly as in the pain scenario above, regardless of where the underlying mistake happened or how thin the vendor's contract turns out to be.
 
 ### A Worked Example: Cheap Offshore Mill vs. Governed Hybrid Hub
 
 Consider an illustrative European fintech evaluating two vendor options for a customer-facing portal handling PII for roughly 100,000 users.
 
-**Path A — Unvetted, purely offshore agency at a low headline rate:**
+**Path A - Unvetted, purely offshore agency at a low headline rate:**
 - Headline savings: a materially lower hourly rate than a governed Hybrid Hub, attractive to a CFO comparing quotes line by line
-- Breach probability: elevated by the vendor's lack of Zero-Trust controls, VDI enforcement, and SAST/DAST pipeline gating — the exact gaps described in the case study above
+- Breach probability: elevated by the vendor's lack of Zero-Trust controls, VDI enforcement, and SAST/DAST pipeline gating - the exact gaps described in the case study above
 - If a breach occurs: applying IBM's $4.91 million average supply-chain breach cost, plus GDPR exposure drawn from the same €1.2 billion pool DLA Piper documented being issued in 2025 alone, the downside dwarfs any hourly-rate savings by orders of magnitude, and the average 267-day detection window means the exposure compounds silently long before anyone notices
 - Legal recourse: often minimal to nonexistent, since the offshore agency may sit outside EU jurisdiction entirely
 
-**Path B — Manifera's Hybrid Hub (Dutch legal entity + governed Vietnamese Pod):**
+**Path B - Manifera's Hybrid Hub (Dutch legal entity + governed Vietnamese Pod):**
 - Rate premium: modestly higher than a bottom-tier offshore mill, but bounded and predictable
 - Breach probability: structurally reduced by VPC-only development, VDI enforcement, embedded SAST/DAST, and RBAC governed directly by the Dutch entity
 - Legal exposure: the contracting entity is Dutch, governed by EU law, with full accountability rather than a jurisdictional dead end

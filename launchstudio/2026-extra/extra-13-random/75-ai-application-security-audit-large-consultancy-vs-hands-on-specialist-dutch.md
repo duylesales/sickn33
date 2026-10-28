@@ -21,7 +21,7 @@ Doelgroep: SaaS-Oprichter Scale-Up
 }
 </script>
 
-Een enterprise-klant toont serieuze interesse in jouw SaaS-platform, maar stelt één harde eis: overleg een "onafhankelijk security assessment". Je gaat op zoek naar een auditpartner en ontdekt al snel twee totaal verschillende werelden. Aan de ene kant staan de gerenommeerde cybersecuritybureaus en 'Big Four'-consultancykantoren: gevestigde namen, formele certificeringsmethodieken en dikke PDF-rapporten die corporate inkoopafdelingen direct herkennen. Aan de andere kant staan hands-on specialisten: ingenieurs die rechtstreeks in je broncode duiken, kwetsbaarheden opsporen én deze direct voor je oplossen. Voor een met AI gebouwde applicatie hebben beide opties bestaansrecht — maar de verkeerde keuze op het verkeerde moment kost onnodig veel geld of kostbare tijd.
+Een enterprise-klant toont serieuze interesse in jouw SaaS-platform, maar stelt één harde eis: overleg een "onafhankelijk security assessment". Je gaat op zoek naar een auditpartner en ontdekt al snel twee totaal verschillende werelden. Aan de ene kant staan de gerenommeerde cybersecuritybureaus en 'Big Four'-consultancykantoren: gevestigde namen, formele certificeringsmethodieken en dikke PDF-rapporten die corporate inkoopafdelingen direct herkennen. Aan de andere kant staan hands-on specialisten: ingenieurs die rechtstreeks in je broncode duiken, kwetsbaarheden opsporen én deze direct voor je oplossen. Voor een met AI gebouwde applicatie hebben beide opties bestaansrecht - maar de verkeerde keuze op het verkeerde moment kost onnodig veel geld of kostbare tijd.
 
 ## Wat een Groot Consultancybureau Doorgaans Oplevert
 
@@ -29,16 +29,16 @@ Gevestigde securitybedrijven en auditdivisies van grote adviesorganisaties lever
 - **Formele penetratietests (pentests)** uitgevoerd door gecertificeerde ethical hackers (OSCP, CEH) volgens erkende standaarden (zoals OWASP of PTES).
 - **Een formeel rapport dat corporate inkoop accepteert,** inclusief management summary, gestandaardiseerde risicoscores (CVSS) en aanbevelingen voor herstel.
 - **Een hertest (retest)** zodra jouw eigen team alle gevonden kwetsbaarheden heeft verholpen.
-- **Brede compliance-dienstverlening** — voorbereiding op ISO 27001, SOC 2, ISAE 3402 of NIS2-trajecten.
+- **Brede compliance-dienstverlening** - voorbereiding op ISO 27001, SOC 2, ISAE 3402 of NIS2-trajecten.
 
 Wat zij vrijwel nooit doen, is jouw code daadwerkelijk repareren. De uitkomst is een rapport met bevindingen; de technische oplossing moet je zelf organiseren. De wachttijd bedraagt vaak vier tot acht weken, en de tarieven voor een basale webapplicatietest beginnen doorgaans bij € 8.000 tot € 15.000, exclusief retest.
 
 ## Wat een Hands-On Specialist Doorgaans Oplevert
 
 Een specialist gericht op met AI gebouwde software biedt een wezenlijk andere aanpak:
-- **Diepgaande code- en configuratiereview** — het rechtstreeks auditen van de broncode, databaseregels (RLS), API-endpoints en cloudinfrastructuur, waar 90% van de kwetsbaarheden in AI-applicaties zich bevindt.
-- **Directe fixes** — toegangsbeveiliging, afscherming van API-sleutels, webhook-validatie, input-sanitizing en veilige logging worden direct in de codebase geïmplementeerd.
-- **Geautomatiseerde bewijslast en hertests** — toevoeging van automatische regressietests in CI/CD die aantonen dat de lekken definitief gedicht zijn.
+- **Diepgaande code- en configuratiereview** - het rechtstreeks auditen van de broncode, databaseregels (RLS), API-endpoints en cloudinfrastructuur, waar 90% van de kwetsbaarheden in AI-applicaties zich bevindt.
+- **Directe fixes** - toegangsbeveiliging, afscherming van API-sleutels, webhook-validatie, input-sanitizing en veilige logging worden direct in de codebase geïmplementeerd.
+- **Geautomatiseerde bewijslast en hertests** - toevoeging van automatische regressietests in CI/CD die aantonen dat de lekken definitief gedicht zijn.
 - **Een technisch beveiligingsdossier** dat je direct kunt voorleggen aan de klant of diens security officer.
 
 Wat zij niet leveren, is het wereldwijd bekende merklogo dat sommige multinationals puur voor formele vinkjes verlangen.
@@ -112,11 +112,11 @@ Ongeacht de partij die je inschakelt, vereist de afhandeling discipline:
 
 ## Kosten- en Tijdsafwegingen
 
-Bij formele consultancybedrijven betaal je doorgaans per 'mankindag', waarbij wachttijden van enkele maanden geen uitzondering zijn — met name aan het einde van het kalenderjaar. Specialisten werken met vaste projectprijzen en kunnen vaak binnen enkele dagen van start. Loopt er een deal met een harde deadline? Boek de formele pentest dan alvast in de toekomst en benut de tussenliggende weken voor een intensief hardening-traject met een specialist.
+Bij formele consultancybedrijven betaal je doorgaans per 'mankindag', waarbij wachttijden van enkele maanden geen uitzondering zijn - met name aan het einde van het kalenderjaar. Specialisten werken met vaste projectprijzen en kunnen vaak binnen enkele dagen van start. Loopt er een deal met een harde deadline? Boek de formele pentest dan alvast in de toekomst en benut de tussenliggende weken voor een intensief hardening-traject met een specialist.
 
 ## Toewerken naar Certificering (ISO 27001 / SOC 2)
 
-Veel groeiende B2B SaaS-bedrijven ambiëren op termijn ISO 27001 of SOC 2. Dit zijn geen momentopnamen, maar doorlopende managementsystemen: beleid, risicoregisters, leveranciersbeoordelingen, personeelsscreening en incidentenbeheer. De technische standaarden die je tijdens een hardening-traject neerzet — rolgebaseerde databasetoegang, CI/CD-securitychecks, geteste back-up-restores en auditlogging — vormen hiervoor het ideale technische fundament.
+Veel groeiende B2B SaaS-bedrijven ambiëren op termijn ISO 27001 of SOC 2. Dit zijn geen momentopnamen, maar doorlopende managementsystemen: beleid, risicoregisters, leveranciersbeoordelingen, personeelsscreening en incidentenbeheer. De technische standaarden die je tijdens een hardening-traject neerzet - rolgebaseerde databasetoegang, CI/CD-securitychecks, geteste back-up-restores en auditlogging - vormen hiervoor het ideale technische fundament.
 
 ## Vragen Vóórdat Je Kiest
 
@@ -178,7 +178,7 @@ Een auditcertificaat heeft pas waarde als de onderliggende software het verdient
 
 LaunchStudio is dé hands-on partner voor softwarebouwers: code review, direct herstel van kwetsbaarheden, geautomatiseerde hertests en een helder technisch rapport tegen een vaste projectprijs, doorgaans binnen één tot twee werkweken. Wanneer jouw klant een formele pentest door een geaccrediteerde partij verlangt, prepareert LaunchStudio de codebase zodat de audit vlekkeloos en zonder dure retests verloopt. LaunchStudio wordt ondersteund door Manifera, waarvan CEO Herre Roelevink medeoprichter was van CyberDevOps (nu CFLW Cyber Strategies) en met TNO meewerkte aan darkweb-onderzoeksprojecten. Manifera opereert vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minhstad. Bekijk [Manifera's over-onspagina](https://www.manifera.com/about-us/); de [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) beschrijft de standaarden waaraan degelijke beveiligingstests moeten voldoen.
 
-[Vraag een vaste prijsopgave aan](https://launchstudio.eu/nl/#contact) — en deel met ons wat jouw klant precies verlangt.
+[Vraag een vaste prijsopgave aan](https://launchstudio.eu/nl/#contact) - en deel met ons wat jouw klant precies verlangt.
 
 ## Praktijkvoorbeeld
 
@@ -193,9 +193,9 @@ Het energieconcern accepteerde het gedetailleerde LaunchStudio-rapport direct vo
 **Resultaat:** Zonwijzer kon twee maanden eerder starten met de pilot dan bij een pentest-first route mogelijk was geweest. De uiteindelijke formele pentest kostte bovendien 40% minder dan de oorspronkelijke offerte dankzij de verkleinde scope en het ontbreken van hercontroles.
 
 > *"Het rapport met de grote naam was perfect voor de allerlaatste stap. Maar het was een peperdure manier geweest om de eerste vier elementaire fouten te ontdekken."*
-> — **Stefan Hulshof, Oprichter, Zonwijzer (Houten)**
+> - **Stefan Hulshof, Oprichter, Zonwijzer (Houten)**
 
-**Kosten & Tijdlijn:** € 2.900 (security review, fixes, autorisatietests en rapportage) — afgerond in 10 werkdagen.
+**Kosten & Tijdlijn:** € 2.900 (security review, fixes, autorisatietests en rapportage) - afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 

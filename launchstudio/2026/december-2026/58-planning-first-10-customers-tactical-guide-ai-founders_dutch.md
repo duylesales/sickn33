@@ -13,7 +13,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Plannen van Uw Eerste 10 Klanten: Een Tactische Gids voor AI-Oprichters",
-  "description": "De eerste 10 betalende klanten vragen om een fundamenteel andere aanpak dan klant 100 tot 1.000 — namelijk een persoonlijke, tactische en bewust onschaalbare benadering.",
+  "description": "De eerste 10 betalende klanten vragen om een fundamenteel andere aanpak dan klant 100 tot 1.000 - namelijk een persoonlijke, tactische en bewust onschaalbare benadering.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -41,7 +41,7 @@ Betaalde advertenties en SEO-content zijn gebouwd op massa en conversiepercentag
 ## Het Tactische 10-Klanten Draaiboek
 
 ### 1. Graaf Expliciet in Uw Bestaande Netwerk
-Maak een overzicht van iedereen die u kent — zakelijk, privé, via hobby's of netwerken. Deze lijst is bijna altijd groter dan u denkt.
+Maak een overzicht van iedereen die u kent - zakelijk, privé, via hobby's of netwerken. Deze lijst is bijna altijd groter dan u denkt.
 
 ### 2. Doe Bewust Dingen Die Niet Schalen
 Voer persoonlijk de onboarding uit voor uw eerste klanten. Bekijk live hoe ze uw product gebruiken (eventueel via een schermdeelsessie). Dit levert twee dingen op: een beter product en een sterkere relatie.
@@ -59,7 +59,7 @@ Bij 10 klanten kunt u vragen binnen het uur beantwoorden en bugs nog dezelfde da
 
 Elke tactiek hierboven valt of staat met een product dat fysiek werkt. Een kapotte registratieflow of een mislukte betaling richt in deze persoonlijke, op vertrouwen gebaseerde fase extra grote schade aan.
 
-[LaunchStudio](https://launchstudio.eu/nl/) zorgt dat uw product klaar is voor deze persoonlijke 10-klanten aanpak — stabiel, beveiligd en professioneel.
+[LaunchStudio](https://launchstudio.eu/nl/) zorgt dat uw product klaar is voor deze persoonlijke 10-klanten aanpak - stabiel, beveiligd en professioneel.
 
 [Word productierijp vóór uw eerste klantgesprek](https://launchstudio.eu/nl/#calculator).
 
@@ -80,7 +80,7 @@ Leg per gesprek de volgende zaken vast in een eenvoudig overzicht:
 ### Het Tactische Draaiboek voor Uw Eerste 10 Betalende Klanten
 
 Vergeet dure advertenties; uw eerste tien klanten werft u uitsluitend via directe, persoonlijke interactie:
-- **Gerichte Koude Outreach via LinkedIn:** Zoek 50 specifieke beslissers die dagelijks worstelen met het probleem dat uw software oplost. Bied geen verkoopgesprek aan, maar vraag: *"We hebben een tool gebouwd die taak X automatiseert — mag ik u een 3-minuten video sturen om te zien of dit uw probleem oplost?"*
+- **Gerichte Koude Outreach via LinkedIn:** Zoek 50 specifieke beslissers die dagelijks worstelen met het probleem dat uw software oplost. Bied geen verkoopgesprek aan, maar vraag: *"We hebben een tool gebouwd die taak X automatiseert - mag ik u een 3-minuten video sturen om te zien of dit uw probleem oplost?"*
 - **Persoonlijke Onboarding via Schermdelen:** Leid elke nieuwe klant persoonlijk door de software via een 15-minuten Zoom call. U ziet direct waar de gebruiker aarzelt en lost interface-frictie real-time op.
 - **Vraag om een Case Study in Ruil voor Korting:** Bied de eerste tien klanten 30% korting op hun jaarabonnement in ruil voor een gedetailleerde testimonial en een quote op uw landingspagina.
 
@@ -122,18 +122,18 @@ Bied vroege klanten een 'Design Partner'-overeenkomst aan: in ruil voor wekelijk
 
 ### Een AI-native oprichter in actie: Tien betalende klanten uit een lijst van veertig namen
 
-Reinier, hobby-imker en voormalig salestrainer in Meppel, bouwde ImkerLog — een AI-tool die de gezondheid van bijenkasten bijhoudt en seizoensgebonden advies geeft — met behulp van Bolt. Vóór elke marketinginspanning zette Reinier 40 namen op papier van imkers uit zijn lokale vereniging en online fora.
+Reinier, hobby-imker en voormalig salestrainer in Meppel, bouwde ImkerLog - een AI-tool die de gezondheid van bijenkasten bijhoudt en seizoensgebonden advies geeft - met behulp van Bolt. Vóór elke marketinginspanning zette Reinier 40 namen op papier van imkers uit zijn lokale vereniging en online fora.
 
 In plaats van breed te lanceren, stuurde Reinier iedereen een persoonlijk bericht waarin hij aanbood ImkerLog live te demonstreren. Bij twaalf imkers keek hij live mee via beeldbellen en ontdekte direct twee ergonomische fouten in zijn interface.
 
 Na de productielancering via LaunchStudio (authenticatie, Mollie-facturatie, veilige hosting) keerde Reinier terug naar zijn lijst van 40 namen met het aanbod om betalend klant te worden en om specifieke introducties te vragen.
 
-**Resultaat:** Reinier verwierf zijn eerste 10 betalende klanten binnen 3 weken na de lancering — puur uit zijn netwerk en gericht doorverwijzingen, zonder 1 euro aan advertenties te besteden.
+**Resultaat:** Reinier verwierf zijn eerste 10 betalende klanten binnen 3 weken na de lancering - puur uit zijn netwerk en gericht doorverwijzingen, zonder 1 euro aan advertenties te besteden.
 
 > *"Ik heb geen enkele advertentie geplaatst. Ik maakte een lijst van 40 mensen die ik kende, liet ze het product zien en vroeg gericht om introducties. Tien betalende klanten in drie weken."*
-> — **Reinier Boersma, Oprichter, ImkerLog (Meppel)**
+> - **Reinier Boersma, Oprichter, ImkerLog (Meppel)**
 
-**Kosten & Doorlooptijd:** € 2.150 (Launch Ready Pakket) — live in 10 werkdagen, gevolgd door 3 weken tot de eerste 10 klanten.
+**Kosten & Doorlooptijd:** € 2.150 (Launch Ready Pakket) - live in 10 werkdagen, gevolgd door 3 weken tot de eerste 10 klanten.
 
 ---
 

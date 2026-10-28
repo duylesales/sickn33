@@ -1,4 +1,4 @@
-🚨 "AI Image Analysis Can Simply Replace a Veterinarian's or Radiologist's Diagno..." — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
+🚨 "AI Image Analysis Can Simply Replace a Veterinarian's or Radiologist's Diagno..." - 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
 **The Pain Points:**
 ❌ **Myth 1: "AI Image Analysis Can Simply Replace a Veterinarian'...":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.

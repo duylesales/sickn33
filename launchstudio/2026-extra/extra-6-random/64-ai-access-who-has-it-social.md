@@ -1,4 +1,4 @@
-🔑 Lieve Prinsen built "DataToegang," a shared document tool for small nonprofits, with Lovable — and connected a third-party AI provider through a test key during development. The feature shipped differently later. The key never got revoked. 😳
+🔑 Lieve Prinsen built "DataToegang," a shared document tool for small nonprofits, with Lovable - and connected a third-party AI provider through a test key during development. The feature shipped differently later. The key never got revoked. 😳
 
 Nobody audits their "AI access" list because nothing about running the app day to day ever forces you to look. 🧠
 
@@ -11,7 +11,7 @@ Nobody audits their "AI access" list because nothing about running the app day t
 ✅ Ask what each one is currently used for, and whether that's still true
 ✅ Revoke anything unused and document the current, active list for future partners who ask
 
-At **LaunchStudio**, our Amsterdam team runs exactly this kind of access audit as a standard part of taking over a founder's project — backed by Manifera's 11+ years of experience. 🛡️
+At **LaunchStudio**, our Amsterdam team runs exactly this kind of access audit as a standard part of taking over a founder's project - backed by Manifera's 11+ years of experience. 🛡️
 
 Her result: DataToegang now has a fully documented, current list of every integration with access to customer data, with the unused test key permanently revoked. 🚀
 

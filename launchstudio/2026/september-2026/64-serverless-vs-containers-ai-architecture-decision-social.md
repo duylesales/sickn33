@@ -1,4 +1,4 @@
-⏱️ Dario's Bolt-built due-diligence tool worked fine in testing — until his first real customer uploaded a 340-document data room and the ingestion job hit the serverless timeout and silently died two-thirds of the way through. 🧠
+⏱️ Dario's Bolt-built due-diligence tool worked fine in testing - until his first real customer uploaded a 340-document data room and the ingestion job hit the serverless timeout and silently died two-thirds of the way through. 🧠
 
 If your AI SaaS runs document processing, batch embedding, or agent chains on the same serverless functions handling your CRUD, real workloads will hit timeout limits your AI builder never warned you about.
 

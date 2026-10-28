@@ -29,7 +29,7 @@ Negotiating compensation in the Netherlands differs from other markets in ways t
 
 This determines everything else, and candidates often do not ask.
 
-**Collective agreement employers.** Public sector, healthcare, education, many research institutes, and a number of large companies operate under a collective labour agreement that defines pay scales. Your role maps to a scale, and the scale has steps. Within that structure, the negotiable elements are which scale you are placed in and which step within it — not the amount itself. Arguing for a number outside the scale is asking for something the person opposite you cannot grant.
+**Collective agreement employers.** Public sector, healthcare, education, many research institutes, and a number of large companies operate under a collective labour agreement that defines pay scales. Your role maps to a scale, and the scale has steps. Within that structure, the negotiable elements are which scale you are placed in and which step within it - not the amount itself. Arguing for a number outside the scale is asking for something the person opposite you cannot grant.
 
 **Commercially free employers.** Technology companies, scale-ups, consultancies, most financial institutions and most industrial employers set compensation themselves. Here the number is genuinely negotiable and the range can be wide.
 
@@ -41,7 +41,7 @@ The practical first step in any negotiation is to ask directly: is this role wit
 
 **Under a collective agreement**, focus on placement rather than amount. Which scale the role sits in, which step within the scale, whether prior experience justifies a higher starting step, and whether there is scope for an allowance for scarce expertise. Some agreements include such provisions and they are used less often than they could be.
 
-Also negotiable: start date, training budget, conference attendance, working hours pattern, additional leave in some agreements, and equipment. These are not trivial — a guaranteed training budget and conference attendance have real career value.
+Also negotiable: start date, training budget, conference attendance, working hours pattern, additional leave in some agreements, and equipment. These are not trivial - a guaranteed training budget and conference attendance have real career value.
 
 **Under commercial freedom**, the whole package is in scope. Base salary, signing bonus, variable pay, equity where offered, pension contribution above the minimum, training budget, and the specifics of a hybrid working arrangement.
 
@@ -67,7 +67,7 @@ Three sources, used together.
 
 **Sector position.** As the sector analyses in this series describe, compensation differs substantially by sector. Semiconductor and quantitative finance sit at the top. Public sector, research institutes and healthcare are bounded by collective agreements. Industrial, logistics and retail sit between. A number that is aggressive in one sector is below market in another.
 
-**Regional adjustment.** Amsterdam and Utrecht pay more and cost considerably more. Brainport pays well with moderate housing costs. Regional markets pay less with substantially lower housing costs. Compare disposable income rather than gross salary — the Apeldoorn analysis makes this point concretely and candidates consistently misjudge it.
+**Regional adjustment.** Amsterdam and Utrecht pay more and cost considerably more. Brainport pays well with moderate housing costs. Regional markets pay less with substantially lower housing costs. Compare disposable income rather than gross salary - the Apeldoorn analysis makes this point concretely and candidates consistently misjudge it.
 
 **Scarcity of your specific profile.** This is the factor with the largest effect and the one candidates underuse. A competent generalist data scientist is not scarce. Someone who can formulate and solve a large routing problem, or who has taken a medical AI product through regulatory approval, or who understands semiconductor metrology, or who can do disclosure control properly, is scarce. The negotiation position follows from scarcity rather than from years of experience.
 
@@ -75,7 +75,7 @@ Three sources, used together.
 
 Dutch professional culture is direct, and this works in your favour.
 
-**State a number when asked, with reasoning.** Evasion reads as game-playing here rather than as strategy. A clear figure with a short justification — sector norms, your specific scarce capability, a competing offer if you have one — is received better than a refusal to engage.
+**State a number when asked, with reasoning.** Evasion reads as game-playing here rather than as strategy. A clear figure with a short justification - sector norms, your specific scarce capability, a competing offer if you have one - is received better than a refusal to engage.
 
 **Do not inflate.** Dutch employers tend to check, and an implausible number damages credibility in a way that is hard to recover. Aim high within the plausible range rather than outside it.
 
@@ -93,9 +93,9 @@ This specific moment causes more anxiety than the rest of the process combined, 
 
 **When it comes early, ask for the range first.** A reasonable response is: "Before I give a figure, can you tell me the range budgeted for this role?" Many Dutch employers will answer, and in collective agreement contexts the scales are public anyway. If they answer, you have the information you needed and can position within it.
 
-**If they will not give a range, give one yourself with reasoning.** Not a single number — a range whose bottom is a figure you would genuinely accept. "Based on the sector and my experience with [specific scarce capability], I am looking in the region of X to Y." Naming the capability is what justifies the figure; a range without reasoning invites them to take the bottom.
+**If they will not give a range, give one yourself with reasoning.** Not a single number - a range whose bottom is a figure you would genuinely accept. "Based on the sector and my experience with [specific scarce capability], I am looking in the region of X to Y." Naming the capability is what justifies the figure; a range without reasoning invites them to take the bottom.
 
-**Do not name your current salary if you can avoid it.** It anchors the conversation to your past rather than to the role's value, and in the Netherlands you are not obliged to disclose it. A polite deflection — "I would rather focus on what this role is worth, since the responsibilities differ" — is well received.
+**Do not name your current salary if you can avoid it.** It anchors the conversation to your past rather than to the role's value, and in the Netherlands you are not obliged to disclose it. A polite deflection - "I would rather focus on what this role is worth, since the responsibilities differ" - is well received.
 
 **If you are underpaid currently, say so plainly.** "My current salary is below market because I joined as a junior and it has not been adjusted" is a legitimate and credible statement that prevents an old figure from constraining a new offer.
 
@@ -133,7 +133,7 @@ Most advice covers offers. Raising your salary where you already work follows di
 
 **Market evidence helps but must be handled carefully.** Pointing out that comparable roles pay more elsewhere is legitimate. Implying you will leave unless matched converts a collaborative conversation into a negotiation with an ultimatum, which sometimes works and often damages the relationship permanently. Be aware of which conversation you are starting.
 
-**Scope change is a stronger lever than performance.** Performing your existing role well is expected. Taking on responsibility beyond it — owning a system, leading a workstream, becoming the person who handles a specific problem class — changes what your role is, which is a much more compelling basis for re-evaluation than doing the same job better.
+**Scope change is a stronger lever than performance.** Performing your existing role well is expected. Taking on responsibility beyond it - owning a system, leading a workstream, becoming the person who handles a specific problem class - changes what your role is, which is a much more compelling basis for re-evaluation than doing the same job better.
 
 **If the answer is no twice, believe it.** Two refusals with vague reasoning usually means the constraint is structural or you are not valued as you think. Both are useful information, and the appropriate response is to test the external market rather than to ask a third time.
 

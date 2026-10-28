@@ -1,9 +1,9 @@
 🚨 Daan Verhoeven generated an API key for a customer in five minutes flat. Eleven months and four customers later, one of those keys could have deleted an entire product catalogue. 😳
 
-Handing out an API key feels like a five-minute favour — it's actually a permanent commitment you haven't priced in: 🧠
+Handing out an API key feels like a five-minute favour - it's actually a permanent commitment you haven't priced in: 🧠
 
 ❌ All four keys were stored in plain text, so anyone with database access held working credentials to four customer accounts
-❌ Keys carried no scope — one meant to update stock levels could just as easily delete products, change prices, or remove users
+❌ Keys carried no scope - one meant to update stock levels could just as easily delete products, change prices, or remove users
 ❌ With no rate limits, one customer's retry loop quietly generated around 40,000 requests an hour for three weeks
 ❌ Two of the four keys hadn't been used in over six months, from integrations nobody had bothered to revoke
 

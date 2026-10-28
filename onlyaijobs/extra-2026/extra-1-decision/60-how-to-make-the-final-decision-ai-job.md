@@ -85,15 +85,15 @@ Assumptions are what produce regret. Three checks are worth the small awkwardnes
 
 **Speak to a future colleague without a manager present.** Ask what they would change, what surprised them and what the last difficult period was like. Employers who arrange this readily are telling you something; those who refuse are telling you more.
 
-**Ask what happened to the person who held the role before.** Promoted internally, left the organisation, still there in a different position — each answer means something.
+**Ask what happened to the person who held the role before.** Promoted internally, left the organisation, still there in a different position - each answer means something.
 
-**Confirm the terms in writing.** Salary, contract type and duration, hours, holiday, pension, training budget, home working and travel arrangements, on-call expectations, and any specific commitment you negotiated. With pay transparency rules increasingly shaping how employers communicate ranges, written clarity is easier to obtain than it used to be — and a term that exists only in a conversation does not exist.
+**Confirm the terms in writing.** Salary, contract type and duration, hours, holiday, pension, training budget, home working and travel arrangements, on-call expectations, and any specific commitment you negotiated. With pay transparency rules increasingly shaping how employers communicate ranges, written clarity is easier to obtain than it used to be - and a term that exists only in a conversation does not exist.
 
 ## A Simple Way to Compare
 
 Take a sheet of paper and list your top three priorities with a weight for each. Score each offer on those, plus commute, manager, terms and the production question. Do not agonise over the numbers; the point is not arithmetic precision but forcing yourself to be explicit.
 
-Then look at the winner and notice your reaction. If you feel relief, you have your answer. If you immediately start looking for reasons the other one should have won, that reaction is information the scoring missed — usually about something you did not want to write down, such as the manager or the domain.
+Then look at the winner and notice your reaction. If you feel relief, you have your answer. If you immediately start looking for reasons the other one should have won, that reaction is information the scoring missed - usually about something you did not want to write down, such as the manager or the domain.
 
 Use the sheet to find your true preference, not to overrule it.
 
@@ -115,7 +115,7 @@ Once you decide, decide. Tell the employer promptly and warmly. Decline the othe
 
 Then stop comparing. The alternative you did not take becomes an idealised version of itself the moment you turn it down, and continuing to weigh it against a real job with real bad weeks is a reliable way to be dissatisfied with a good decision.
 
-Give the new role a fair run — a year, unless something is genuinely wrong. The first months of any job are the worst months of that job.
+Give the new role a fair run - a year, unless something is genuinely wrong. The first months of any job are the worst months of that job.
 
 It is worth being specific about what "genuinely wrong" means, because the distinction saves people from both leaving too early and staying too long. Discovering that the work is different from what was described, that a promised commitment is not being honoured, or that the environment is one you cannot professionally accept are real problems, and they are worth raising immediately rather than enduring. Finding the first months hard, the systems confusing, the colleagues unfamiliar and your own contribution unclear is not a problem; it is what starting a job feels like, for everyone, including the people around you who look settled. Almost nobody feels competent in a new role before month four, and the feeling arrives later for people joining a complicated domain.
 
@@ -123,7 +123,7 @@ It is worth being specific about what "genuinely wrong" means, because the disti
 
 Sometimes the right answer is to stay, or to keep looking. That is worth saying explicitly, because a search builds momentum of its own.
 
-Decline both when neither offer is better than your current situation on the things you ranked; when the only appeal is escape rather than direction; when the terms would not be honoured — evasiveness during negotiation predicts the rest of the relationship; or when you have discovered during the process that what you actually want is something neither employer offers.
+Decline both when neither offer is better than your current situation on the things you ranked; when the only appeal is escape rather than direction; when the terms would not be honoured - evasiveness during negotiation predicts the rest of the relationship; or when you have discovered during the process that what you actually want is something neither employer offers.
 
 A search that ends in staying, with a clearer picture of the market and of what you want, is not a failed search.
 
@@ -131,7 +131,7 @@ A search that ends in staying, with a clearer picture of the market and of what 
 
 A job decision is rarely only yours, and the parts that involve other people are the ones most likely to be skipped under time pressure.
 
-**Map the week honestly with your household.** Not the salary — the schedule. Which days you would be away and for how long, who does the school run, what a departure at seven and a return at nineteen hundred does to the evenings, and what happens when one of you has an early meeting. Draw the actual week rather than describing it in general terms; the disagreements surface immediately and are much cheaper to resolve now.
+**Map the week honestly with your household.** Not the salary - the schedule. Which days you would be away and for how long, who does the school run, what a departure at seven and a return at nineteen hundred does to the evenings, and what happens when one of you has an early meeting. Draw the actual week rather than describing it in general terms; the disagreements surface immediately and are much cheaper to resolve now.
 
 **Be explicit about what changes for the other person.** A role with occasional travel, evening calls or on-call duty transfers work to whoever is at home. That is a legitimate trade to make and a poor one to make silently.
 
@@ -197,7 +197,7 @@ Yes. If neither beats your current situation on what you ranked, or if the appea
     {"@type": "Question", "name": "What should I verify before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "A colleague conversation without the manager, what happened to your predecessor, and written terms."}},
     {"@type": "Question", "name": "What if the two options seem equal?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about regret, employability in three years, the manager on a bad week and equal-pay preference."}},
     {"@type": "Question", "name": "How do I stop second-guessing myself?", "acceptedAnswer": {"@type": "Answer", "text": "Decline cleanly, stop comparing and give the new role a fair year."}},
-    {"@type": "Question", "name": "Is it acceptable to turn both down?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — if neither beats your current situation on what you ranked."}}
+    {"@type": "Question", "name": "Is it acceptable to turn both down?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - if neither beats your current situation on what you ranked."}}
   ]
 }
 </script>

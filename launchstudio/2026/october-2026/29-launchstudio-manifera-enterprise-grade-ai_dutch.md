@@ -25,9 +25,9 @@ Opgericht door directeur Herre Roelevink, heeft Manifera meer dan een decennium 
 
 Toen de AI-coderevolutie in 2025 doorbrak, signaleerden Herre Roelevink en de directie van Manifera een zorgwekkende trend: briljante niet-technische ondernemers gebruikten AI om spectaculaire SaaS-applicaties te genereren, maar lanceerden deze door een gebrek aan cybersecurity- en DevOps-kennis met wagenwijd openstaande databases en hardcoded API-sleutels.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
-LaunchStudio werd opgericht als de dedicated "laatste mijl" deployment-brug. Wij combineerden Manifera's 11 jaar aan strikte enterprise-engineeringprotocollen met een gestroomlijnd servicemodel dat specifiek is ontworpen voor AI-native oprichters — met vaste projectprijzen van **€ 800 tot € 7.500** en een gegarandeerde oplevering binnen **1 tot 3 weken**, een fractie van de kosten van een traditioneel softwarebureau.
+LaunchStudio werd opgericht als de dedicated "laatste mijl" deployment-brug. Wij combineerden Manifera's 11 jaar aan strikte enterprise-engineeringprotocollen met een gestroomlijnd servicemodel dat specifiek is ontworpen voor AI-native oprichters - met vaste projectprijzen van **€ 800 tot € 7.500** en een gegarandeerde oplevering binnen **1 tot 3 weken**, een fractie van de kosten van een traditioneel softwarebureau.
 
 Onze naam weerspiegelt die filosofie bewust. Een "launch studio" heeft een scherpe, afgebakende focus: breng datgene wat al bestaat veilig over de eindstreep, in plaats van een breed bureau-mandaat om alles vanaf nul opnieuw te ontwerpen. Oprichters die naar LaunchStudio komen, behouden hun eigen frontend, hun productbeslissingen en hun merkidentiteit exact zoals hun AI-tool deze heeft gegenereerd. Wat verandert, is de onzichtbare infrastructuur onder de motorkap.
 
@@ -37,7 +37,7 @@ Wanneer u samenwerkt met LaunchStudio om uw AI-applicatie te deployen, huurt u g
 
 ### 1. Databeveiliging en Row Level Security (RLS)
 
-AI-tools zoals Lovable of Bolt.new slaan databeveiliging vaak over om het prototypen te versnellen. Manifera's software-engineers bouwen al ruim een decennium AVG-conforme enterprise-databases. Wanneer LaunchStudio uw app beveiligt, passen we diezelfde strenge standaarden toe: we dwingen strikte PostgreSQL Row Level Security (RLS) af op elke tabel en voor elke operatie — `SELECT`, `INSERT`, `UPDATE` en `DELETE` — zodat Gebruiker A nooit data van Gebruiker B kan inzien.
+AI-tools zoals Lovable of Bolt.new slaan databeveiliging vaak over om het prototypen te versnellen. Manifera's software-engineers bouwen al ruim een decennium AVG-conforme enterprise-databases. Wanneer LaunchStudio uw app beveiligt, passen we diezelfde strenge standaarden toe: we dwingen strikte PostgreSQL Row Level Security (RLS) af op elke tabel en voor elke operatie - `SELECT`, `INSERT`, `UPDATE` en `DELETE` - zodat Gebruiker A nooit data van Gebruiker B kan inzien.
 
 ### 2. Schaalbare DevOps-Pijplijnen (CI/CD)
 
@@ -59,19 +59,19 @@ Zakelijke inkopers geloven een oprichter zelden op zijn blauwe ogen wanneer hij 
 
 Ondernemers die opties vergelijken, kijken vaak puur naar prijs. In de praktijk is het beheersen van risico echter veel belangrijker:
 
-- **Een freelance ontwikkelaar** kan handig zijn voor een kleine, geïsoleerde taak, maar als hij ziek wordt, een andere opdracht aanneemt of simpelweg niet meer reageert, heeft u geen enkele back-up of continuïteit — een enorm risico wanneer de gehele beveiliging en bedrijfscontinuïteit van uw software op het spel staat.
+- **Een freelance ontwikkelaar** kan handig zijn voor een kleine, geïsoleerde taak, maar als hij ziek wordt, een andere opdracht aanneemt of simpelweg niet meer reageert, heeft u geen enkele back-up of continuïteit - een enorm risico wanneer de gehele beveiliging en bedrijfscontinuïteit van uw software op het spel staat.
 - **Een klein lokaal webbureau** biedt meer continuïteit dan een solist, maar veel van deze bureaus bestaan zelf pas één of twee jaar en missen daardoor de diepgaande enterprise-ervaring met gereguleerde industrieën, complexe compliance-audits en de specifieke beveiligingsvalkuilen van door AI gegenereerde codebases.
-- **LaunchStudio, aangedreven door Manifera**, levert een complete engineering-afdeling met 11+ jaar institutionele ervaring, redundantie over drie internationale vestigingen (Amsterdam, Singapore en Ho Chi Minhstad) en directe toegang tot dezelfde enterprise-discipline die we toepassen voor multinationals — maar dan perfect geschaald naar de scope en het budget van een ambitieuze software-oprichter.
+- **LaunchStudio, aangedreven door Manifera**, levert een complete engineering-afdeling met 11+ jaar institutionele ervaring, redundantie over drie internationale vestigingen (Amsterdam, Singapore en Ho Chi Minhstad) en directe toegang tot dezelfde enterprise-discipline die we toepassen voor multinationals - maar dan perfect geschaald naar de scope en het budget van een ambitieuze software-oprichter.
 
 ## Het Beste van Twee Werelden
 
 Het AI-tijdperk vervangt software-engineers niet; het tilt hen naar een strategisch hoger niveau. Door AI te gebruiken voor de frontend besparen oprichters duizenden euro's en maanden aan bouwtijd. Door samen te werken met LaunchStudio garanderen zij dat die snelle gebruikersinterface verankerd is in een onbreekbare, enterprise-grade backend gebouwd door Manifera's ervaren ingenieurs in Amsterdam, Singapore en Ho Chi Minhstad.
 
-Dit is tevens de reden waarom de prijzen van LaunchStudio transparant en vooraf vastliggen in plaats van gefactureerd te worden op basis van open-einde uurtarieven. Een enterprise softwareteam weet, dankzij meer dan 160 eerdere productielanceringen, exact hoeveel tijd en discipline nodig is om een specifieke applicatieklasse kogelvrij te maken — een Supabase-applicatie met Stripe facturatie vraagt immers een andere scope dan een fintech compliance portaal met strenge audit-eisen. Wij begroten die scope vooraf nauwgezet, zodat u als oprichter exact weet waar u financieel aan toe bent vóórdat het project van start gaat.
+Dit is tevens de reden waarom de prijzen van LaunchStudio transparant en vooraf vastliggen in plaats van gefactureerd te worden op basis van open-einde uurtarieven. Een enterprise softwareteam weet, dankzij meer dan 160 eerdere productielanceringen, exact hoeveel tijd en discipline nodig is om een specifieke applicatieklasse kogelvrij te maken - een Supabase-applicatie met Stripe facturatie vraagt immers een andere scope dan een fintech compliance portaal met strenge audit-eisen. Wij begroten die scope vooraf nauwgezet, zodat u als oprichter exact weet waar u financieel aan toe bent vóórdat het project van start gaat.
 
 ## Belangrijkste Inzichten
 
-- AI-codetools zijn uitmuntend voor frontend UI, maar slaan veilige backend-infrastructuur structureel over — 45% van de AI-code bevat ernstige lekken.
+- AI-codetools zijn uitmuntend voor frontend UI, maar slaan veilige backend-infrastructuur structureel over - 45% van de AI-code bevat ernstige lekken.
 - LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met 11+ jaar enterprise-ervaring, 120+ engineers en 160+ opgeleverde projecten.
 - LaunchStudio past strikte enterprise-protocollen (RLS, webhook-encryptie, CI/CD-pijplijnen, monitoring) toe op uw AI-codebase.
 - Oprichters combineren de snelheid van AI-prototypen met de onwrikbare veiligheid van een enterprise team voor circa 20% van de traditionele bureaukosten.
@@ -93,7 +93,7 @@ Omdat LaunchStudio gesteund wordt door Manifera's enterprise engineers, wisten w
 
 **Resultaat:** Laura diende haar aanvraag opnieuw in bij de bancaire auditors en slaagde met vlag en wimpel. Zij sloot binnen twee weken contracten met twee gerenommeerde Nederlandse financiële instellingen, goed voor **€ 4.500 aan MRR**. *"Ik had de domeinkennis en AI bouwde de UI. Maar LaunchStudio's enterprise engineers bouwden de onkraakbare vesting die nodig was om daadwerkelijk aan banken te verkopen."*
 
-**Kosten & Tijdlijn:** €4.500 (Enterprise Infrastructure Hardening Pakket) — binnen 14 werkdagen volledig live opgeleverd.
+**Kosten & Tijdlijn:** €4.500 (Enterprise Infrastructure Hardening Pakket) - binnen 14 werkdagen volledig live opgeleverd.
 
 ---
 
@@ -113,7 +113,7 @@ Nee, absoluut niet. Alle software-engineering, database-architectuur en cloud-de
 
 ### Kan LaunchStudio ook structureel enterprise-onderhoud verzorgen na de lancering?
 
-Ja. Via onze "Launch & Grow"-pakketten verzorgen onze engineers continue 24/7 servermonitoring, proactieve beveiligingsupdates en incident response — een vereiste om zakelijke B2B-contracten te behouden.
+Ja. Via onze "Launch & Grow"-pakketten verzorgen onze engineers continue 24/7 servermonitoring, proactieve beveiligingsupdates en incident response - een vereiste om zakelijke B2B-contracten te behouden.
 
 ### Verlies ik het eigendom over mijn intellectuele eigendom als LaunchStudio mijn app deployt?
 

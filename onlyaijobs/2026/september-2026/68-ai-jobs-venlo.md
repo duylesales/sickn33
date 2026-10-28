@@ -33,7 +33,7 @@ Content Format: Regional Market Analysis
 }
 </script>
 
-Venlo is a city of roughly 100,000 people in northern Limburg, directly on the German border. It is one of the largest logistics concentrations in Europe and a major hub for fresh produce trade. For a data scientist or machine learning engineer, that combination produces a specific kind of work — optimisation and forecasting under hard physical and time constraints — plus a cross-border labour market that almost no Dutch AI candidate factors into their planning.
+Venlo is a city of roughly 100,000 people in northern Limburg, directly on the German border. It is one of the largest logistics concentrations in Europe and a major hub for fresh produce trade. For a data scientist or machine learning engineer, that combination produces a specific kind of work - optimisation and forecasting under hard physical and time constraints - plus a cross-border labour market that almost no Dutch AI candidate factors into their planning.
 
 ## Why Logistics Optimisation Is a Real Technical Domain
 
@@ -138,15 +138,15 @@ For a candidate who speaks German, or is willing to learn it, Venlo is a base fr
 
 There is a structural imbalance worth knowing about.
 
-University and bootcamp training in data science has concentrated heavily on statistical learning and neural methods. Operations research — linear and integer programming, combinatorial optimisation, heuristic design, queueing theory — is taught less and studied less than it was a generation ago, while demand for it has not declined. Logistics companies consequently find it easier to hire someone who can fit a forecasting model than someone who can formulate and solve a routing problem properly.
+University and bootcamp training in data science has concentrated heavily on statistical learning and neural methods. Operations research - linear and integer programming, combinatorial optimisation, heuristic design, queueing theory - is taught less and studied less than it was a generation ago, while demand for it has not declined. Logistics companies consequently find it easier to hire someone who can fit a forecasting model than someone who can formulate and solve a routing problem properly.
 
-For a candidate, this means the optimisation side of logistics is a less crowded specialisation than the modelling side. An engineer who invests in genuine competence with mathematical programming solvers, metaheuristic design and problem formulation enters a market where the supply of qualified people is thin relative to demand. The learning curve is real, but the material is stable — an integer programming formulation learned today remains correct indefinitely, which is not true of every skill in this field.
+For a candidate, this means the optimisation side of logistics is a less crowded specialisation than the modelling side. An engineer who invests in genuine competence with mathematical programming solvers, metaheuristic design and problem formulation enters a market where the supply of qualified people is thin relative to demand. The learning curve is real, but the material is stable - an integer programming formulation learned today remains correct indefinitely, which is not true of every skill in this field.
 
 ## A Walkthrough: How a Logistics Data Role Actually Gets Filled
 
 Consider a logistics service provider with a few hundred vehicles, currently planning routes with a combination of commercial software and experienced human planners who override it frequently.
 
-They want to improve this. What they need is someone who can understand why the planners override the software — which usually reflects real constraints the software does not model, such as customer relationships, driver preferences or site-specific access limitations — and then either encode those constraints or demonstrate why the automated solution is acceptable despite them.
+They want to improve this. What they need is someone who can understand why the planners override the software - which usually reflects real constraints the software does not model, such as customer relationships, driver preferences or site-specific access limitations - and then either encode those constraints or demonstrate why the automated solution is acceptable despite them.
 
 This is as much an organisational problem as a technical one. A candidate who arrives intending to replace the planners will fail, because the planners hold knowledge that is not written down anywhere and will not cooperate with someone trying to eliminate them. A candidate who treats the planners as the primary source of requirements, and positions the work as making their expertise scale, succeeds far more often.
 
@@ -162,7 +162,7 @@ If none of those three apply to you, Eindhoven is under an hour away and offers 
 
 ## Key Takeaways
 
-- Logistics optimisation is a genuine technical domain — vehicle routing, warehouse and network optimisation, and forecasting where the loss function matters more than the architecture.
+- Logistics optimisation is a genuine technical domain - vehicle routing, warehouse and network optimisation, and forecasting where the loss function matters more than the architecture.
 - The fresh produce dimension adds constraints that make this market distinctive: shelf-life prediction from cold chain histories, quality-based dynamic allocation, and structural label noise in grading.
 - Operations research skills are undersupplied relative to demand, making optimisation a less crowded specialisation than modelling.
 - The German border is the underrated feature; for a German-speaking candidate the Ruhr region roughly doubles the accessible market.
@@ -184,7 +184,7 @@ Yes. Vehicle routing with time windows, capacity and driver-hours constraints re
 Quality is a continuous, temperature-dependent state rather than binary. Cold chain sensor data becomes an input to routing and allocation decisions, and shelf-life prediction with expensive, late-arriving ground truth becomes a core problem.
 
 ### (Scenario: international candidate considering the border) Can I really access the German market from Venlo?
-Geographically yes — Düsseldorf is about an hour and the Ruhr area within ninety minutes. Practically it requires German for most engineering roles, and cross-border tax and social security arrangements need advance advice from regional information services.
+Geographically yes - Düsseldorf is about an hour and the Ruhr area within ninety minutes. Practically it requires German for most engineering roles, and cross-border tax and social security arrangements need advance advice from regional information services.
 
 ### (Scenario: candidate deciding what to learn) Why focus on optimisation rather than machine learning here?
 Data science training has concentrated on statistical learning while operations research is taught less than a generation ago, even though demand persists. The optimisation side is therefore less crowded, and the material stays valid indefinitely.

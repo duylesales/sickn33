@@ -7,7 +7,7 @@ Maatwerk offreren voelt nauwkeurig, maar kent een verborgen prijs die niemand me
 ❌ Meer dan drie pakketten leidt tot keuzestress bij de klant en grensgevallen die nergens passen
 ❌ Pakketten ontwerpen als minieme prijsvariaties verbergt wat de meerinvestering feitelijk oplevert
 
-✅ Werk met drie heldere niveaus — Launch Fix, Launch & Grow, Custom Build — in plaats van vijf prijspunten
+✅ Werk met drie heldere niveaus - Launch Fix, Launch & Grow, Custom Build - in plaats van vijf prijspunten
 ✅ Beprijs elk pakket met een integrale cost-plus methode: partnerinkoop, projectmanagement, buffer en marge
 ✅ Vang tussenprojecten op met een basispakket plus een vaste, vooraf gedefinieerde add-on
 ✅ Standaardiseer de operationele opleverchecklist achter elk pakket, niet alleen de verkoopprijs

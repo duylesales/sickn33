@@ -33,7 +33,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Open your browser developer tools right now. Navigate to the Network tab. Load your AI-generated application. Look at the requests your frontend makes.
 
-If you see direct Supabase or Firebase queries leaving the browser — `.from('users').select('*')` or `collection('payments').get()` — your database is essentially public. Every query your frontend makes is visible to every user. Every table your application touches is accessible to anyone who opens the browser console and types a modified query.
+If you see direct Supabase or Firebase queries leaving the browser - `.from('users').select('*')` or `collection('payments').get()` - your database is essentially public. Every query your frontend makes is visible to every user. Every table your application touches is accessible to anyone who opens the browser console and types a modified query.
 
 This is not a hypothetical vulnerability. It is the default architecture that AI coding tools generate. And it is the single most dangerous pattern in the AI database landscape.
 
@@ -42,7 +42,7 @@ This is not a hypothetical vulnerability. It is the default architecture that AI
 When you prompt Lovable to "add a database for user profiles," it generates something like this:
 
 ```javascript
-// This code runs in the browser — visible to everyone
+// This code runs in the browser - visible to everyone
 const { data, error } = await supabase
   .from('profiles')
   .select('*')
@@ -70,9 +70,9 @@ This architecture adds a small amount of latency (typically 10–50ms) but provi
 
 | Metric | Direct Client-DB | Three-Layer Architecture |
 |---|---|---|
-| Data exposure risk | Critical — any user can query any data | Minimal — API controls all data access |
-| Query optimization | None — frontend sends whatever query AI generated | Full — server optimizes queries, adds caching |
-| Scalability | Poor — each user opens a database connection | Good — connection pooling handles thousands of users |
+| Data exposure risk | Critical - any user can query any data | Minimal - API controls all data access |
+| Query optimization | None - frontend sends whatever query AI generated | Full - server optimizes queries, adds caching |
+| Scalability | Poor - each user opens a database connection | Good - connection pooling handles thousands of users |
 | Sensitive data | Exposed in network tab | Never leaves the server |
 | Rate limiting | Impossible | Built into the API layer |
 | Audit logging | Impossible | Every data access is logged |
@@ -81,17 +81,17 @@ This architecture adds a small amount of latency (typically 10–50ms) but provi
 
 Supabase's Row Level Security (RLS) is often presented as the solution to AI database security issues. It helps, but it is not enough by itself.
 
-RLS policies tell the database: "User A can only read rows where `user_id = User A's ID`." This prevents the most basic data leakage — User A cannot read User B's records by changing the query parameter.
+RLS policies tell the database: "User A can only read rows where `user_id = User A's ID`." This prevents the most basic data leakage - User A cannot read User B's records by changing the query parameter.
 
 But RLS has limitations:
 
-- **Column-level security** — RLS operates on rows, not columns. If you have a table with both public and private columns, RLS cannot hide specific columns from certain users. You need a server-side API to filter columns before returning data.
+- **Column-level security** - RLS operates on rows, not columns. If you have a table with both public and private columns, RLS cannot hide specific columns from certain users. You need a server-side API to filter columns before returning data.
 
-- **Complex business logic** — Some access rules depend on factors the database does not know: subscription tier, time-limited access, feature flags, team membership hierarchies. These rules must be enforced in the API layer.
+- **Complex business logic** - Some access rules depend on factors the database does not know: subscription tier, time-limited access, feature flags, team membership hierarchies. These rules must be enforced in the API layer.
 
-- **Write validation** — RLS can prevent unauthorized reads, but validating write operations (ensuring a user submits valid data in the correct format with appropriate values) requires server-side validation that RLS cannot provide.
+- **Write validation** - RLS can prevent unauthorized reads, but validating write operations (ensuring a user submits valid data in the correct format with appropriate values) requires server-side validation that RLS cannot provide.
 
-- **Performance** — Complex RLS policies add overhead to every query. A well-designed API layer with targeted queries and caching performs significantly better than a frontend making broad queries filtered by RLS policies.
+- **Performance** - Complex RLS policies add overhead to every query. A well-designed API layer with targeted queries and caching performs significantly better than a frontend making broad queries filtered by RLS policies.
 
 ## From Frontend-to-Database to Production Architecture
 
@@ -108,7 +108,7 @@ But RLS has limitations:
 
 This transformation is one of the most common engagements for [Manifera's](https://www.manifera.com/services/custom-software-development/) engineering team. With experience across 160+ projects and deep expertise in PostgreSQL, MongoDB, and Supabase, the team at 10 Pho Quang Street, Ho Chi Minh City executes database architecture transformations efficiently under European project management from Herengracht 420, Amsterdam.
 
-Herre Roelevink, who leads both Manifera and LaunchStudio, views database architecture as foundational: *"Every security incident we have investigated for founders traces back to the same root cause — the AI tool connected the browser directly to the database. The fix is always the same: put a proper server layer in between."*
+Herre Roelevink, who leads both Manifera and LaunchStudio, views database architecture as foundational: *"Every security incident we have investigated for founders traces back to the same root cause - the AI tool connected the browser directly to the database. The fix is always the same: put a proper server layer in between."*
 
 [Send us your prototype for a free AI database architecture assessment](https://launchstudio.eu/en/#contact).
 
@@ -118,18 +118,18 @@ Herre Roelevink, who leads both Manifera and LaunchStudio, views database archit
 
 Hannah, a recruitment consultant in Breda, used Lovable to build a recruitment CRM where her team could manage candidate profiles, track hiring pipelines, and share shortlists with client companies.
 
-During a client demonstration, disaster struck. While showing the platform to a hiring manager at a logistics company, Hannah navigated to the candidate pipeline. The hiring manager noticed a name he recognized — a candidate who had applied to his competitor. Hannah quickly realized that the CRM was showing all candidates across all client accounts. There was no data isolation whatsoever.
+During a client demonstration, disaster struck. While showing the platform to a hiring manager at a logistics company, Hannah navigated to the candidate pipeline. The hiring manager noticed a name he recognized - a candidate who had applied to his competitor. Hannah quickly realized that the CRM was showing all candidates across all client accounts. There was no data isolation whatsoever.
 
-Investigation revealed the problem: Lovable had generated direct Supabase queries from the frontend with no RLS policies. The `candidates` table had no `client_id` filter enforced at the database level. Every logged-in user could see every candidate across every client account — a catastrophic breach of confidentiality in the recruitment industry.
+Investigation revealed the problem: Lovable had generated direct Supabase queries from the frontend with no RLS policies. The `candidates` table had no `client_id` filter enforced at the database level. Every logged-in user could see every candidate across every client account - a catastrophic breach of confidentiality in the recruitment industry.
 
 Hannah took the application offline and contacted LaunchStudio that same afternoon. The Manifera team treated it as a priority engagement. Within 6 business days, they implemented a complete three-layer architecture: server-side API routes with client-scoped queries, RLS policies on every table, audit logging for compliance, and proper role-based access (admin recruiter, team recruiter, client viewer).
 
 **Result:** RecruitFlow relaunched with airtight data isolation. Hannah now serves 7 client companies, each paying €299/month, with full confidence that client A never sees client B's candidates. The platform passed a GDPR compliance review conducted by one of her enterprise clients.
 
 > *"One demo nearly destroyed my business. LaunchStudio rebuilt my database architecture in less than a week. Now I have enterprise clients asking for security documentation, and I can actually provide it."*
-> — **Hannah van den Berg, Founder, RecruitFlow (Breda)**
+> - **Hannah van den Berg, Founder, RecruitFlow (Breda)**
 
-**Cost & Timeline:** €3,400 (Launch & Grow Package) — production-ready and deployed in 6 business days.
+**Cost & Timeline:** €3,400 (Launch & Grow Package) - production-ready and deployed in 6 business days.
 
 ---
 
@@ -137,7 +137,7 @@ Hannah took the application offline and contacted LaunchStudio that same afterno
 
 ### (Scenario: Founder using Supabase with default settings) How do I know if my Supabase database has Row Level Security enabled?
 
-In the Supabase dashboard, navigate to Authentication > Policies. If you see "No policies created" for your tables, RLS is either disabled or enabled without policies — both mean your data is exposed. LaunchStudio audits your Supabase configuration and implements proper RLS policies as part of every engagement.
+In the Supabase dashboard, navigate to Authentication > Policies. If you see "No policies created" for your tables, RLS is either disabled or enabled without policies - both mean your data is exposed. LaunchStudio audits your Supabase configuration and implements proper RLS policies as part of every engagement.
 
 ### (Scenario: Technical founder choosing between Supabase and Firebase) Should I use Supabase or Firebase for my AI database?
 
@@ -149,7 +149,7 @@ Supabase's free tier handles most early-stage applications (up to 500MB storage,
 
 ### (Scenario: Founder who needs to migrate from a poorly structured database) Can LaunchStudio fix a database that already has user data in it?
 
-Yes. LaunchStudio's team writes migration scripts that restructure your database while preserving all existing data. This includes adding RLS policies, creating proper indexes, normalizing schema relationships, and implementing backup systems — all without data loss. Manifera's team has performed hundreds of live database migrations.
+Yes. LaunchStudio's team writes migration scripts that restructure your database while preserving all existing data. This includes adding RLS policies, creating proper indexes, normalizing schema relationships, and implementing backup systems - all without data loss. Manifera's team has performed hundreds of live database migrations.
 
 ### (Scenario: Enterprise client asking about data residency) Can LaunchStudio ensure my AI database stores data in the EU?
 
@@ -165,7 +165,7 @@ Yes. Supabase offers EU-region database hosting (Frankfurt, Germany). LaunchStud
       "name": "How do I know if my Supabase database has Row Level Security enabled?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In the Supabase dashboard, navigate to Authentication > Policies. If you see 'No policies created' for your tables, RLS is either disabled or enabled without policies — both mean your data is exposed. LaunchStudio audits your Supabase configuration and implements proper RLS policies as part of every engagement."
+        "text": "In the Supabase dashboard, navigate to Authentication > Policies. If you see 'No policies created' for your tables, RLS is either disabled or enabled without policies - both mean your data is exposed. LaunchStudio audits your Supabase configuration and implements proper RLS policies as part of every engagement."
       }
     },
     {
@@ -189,7 +189,7 @@ Yes. Supabase offers EU-region database hosting (Frankfurt, Germany). LaunchStud
       "name": "Can LaunchStudio fix a database that already has user data in it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. LaunchStudio's team writes migration scripts that restructure your database while preserving all existing data. This includes adding RLS policies, creating proper indexes, normalizing schema relationships, and implementing backup systems — all without data loss."
+        "text": "Yes. LaunchStudio's team writes migration scripts that restructure your database while preserving all existing data. This includes adding RLS policies, creating proper indexes, normalizing schema relationships, and implementing backup systems - all without data loss."
       }
     },
     {

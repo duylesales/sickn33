@@ -7,7 +7,7 @@ Vendor A: credentials trickled in over two weeks, first commit landed at week fi
 
 **The Manifera Solution:**
 ✅ **Access Ready Before Kickoff:** Credentials, docs, and standards provisioned in the days between signature and day one.
-✅ **A Written Working Agreement, Week One:** Named review turnaround times, standup overlap, and escalation contacts — specific enough to hold both sides to.
+✅ **A Written Working Agreement, Week One:** Named review turnaround times, standup overlap, and escalation contacts - specific enough to hold both sides to.
 ✅ **Formal Day-30 Check-In:** Velocity, working agreement, and every selection-stage concern reviewed directly with the CTO, not left to assumption.
 
 The fix for a messy onboarding is rarely a better vendor. It's a more deliberate first thirty days. 📋

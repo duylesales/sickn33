@@ -1,6 +1,6 @@
 🤝 "Wat als ik betaal voor development en het resultaat valt me zwaar tegen?" Een volkomen terechte vraag van niet-technische oprichters.
 
-Uw software uit handen geven voelt riskant. U kunt niet meekijken zoals een schilder die een muur verft. Maar de échte bescherming tegen teleurstelling is geen blind vertrouwen in een ontwikkelaar — het is de structuur van uw afspraak vóóraf.
+Uw software uit handen geven voelt riskant. U kunt niet meekijken zoals een schilder die een muur verft. Maar de échte bescherming tegen teleurstelling is geen blind vertrouwen in een ontwikkelaar - het is de structuur van uw afspraak vóóraf.
 
 De 4 grootste risico's bij het uitbesteden van software:
 
@@ -18,7 +18,7 @@ Hoe een fixed-scope overeenkomst u 100% beschermt:
 
 Bij **LaunchStudio**, ondersteund door Manifera, werken we uitsluitend met fixed scope en fixed price. Geen verrassingen, maar gegarandeerde productierijpheid.
 
-💡 Zo hielpen we abonnementsbox-platform van Tomas Novak met een glashelder scope-document binnen 13 werkdagen live — inclusief tussentijdse add-on zonder discussie.
+💡 Zo hielpen we abonnementsbox-platform van Tomas Novak met een glashelder scope-document binnen 13 werkdagen live - inclusief tussentijdse add-on zonder discussie.
 
 👉 Lees hoe een scope-document uw investering beschermt: https://launchstudio.eu/nl/blog/what-if-i-dont-like-the-result
 

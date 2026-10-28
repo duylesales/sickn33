@@ -1,4 +1,4 @@
-🔥 Nora bouwde een prototype met **Cursor** — Nora, een taaldocente, gebruikte Cursor om een conversationele spraakbot te bouwen, maar had te maken met een storende vertraging van 7 seconden voor elk audiofragment. 🧠
+🔥 Nora bouwde een prototype met **Cursor** - Nora, een taaldocente, gebruikte Cursor om een conversationele spraakbot te bouwen, maar had te maken met een storende vertraging van 7 seconden voor elk audiofragment. 🧠
 
 Het bouwen van conversationele Voice AI vereist een naadloze streaming-pijplijn, WebSocket-architectuur en real-time interruptie-afhandeling (barge-in).
 
@@ -12,7 +12,7 @@ Het bouwen van conversationele Voice AI vereist een naadloze streaming-pijplijn,
 
 Bij **LaunchStudio** lossen we exact dit type audio-architectuur en streamingproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Nora's spraakbot werd vederlicht en natuurlijk: De audiolatentie daalde naar minder dan 600ms, waardoor gesprekken direct natuurlijk aanvoelden. (€2.100 (Voice Streaming Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
+Nora's spraakbot werd vederlicht en natuurlijk: De audiolatentie daalde naar minder dan 600ms, waardoor gesprekken direct natuurlijk aanvoelden. (€2.100 (Voice Streaming Pakket) - productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/voice-ai-integrating-elevenlabs-saas
 

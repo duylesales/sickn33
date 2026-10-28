@@ -72,9 +72,9 @@ LaunchStudio's ingenieurs herbouwden de foto-opslaglaag zodat elke upload wordt 
 **Resultaat:** elke foto van een condatierapport is nu permanent gekoppeld aan een verifieerbaar tijdstempel en boekingsrecord, wat zowel huurder als eigenaar bewijs geeft dat geen van beide partijen kan betwisten.
 
 > *"Ik dacht dat ik een functie voor geschillenbeslechting had gebouwd. Wat ik daadwerkelijk had gebouwd was een fotogalerij die elke kant stilletjes kon bewerken. Dat is een heel ander ding wanneer er echt geld op het spel staat."*
-> — **Julia Mulder, Oprichter, HuurAuto Check (Groningen)**
+> - **Julia Mulder, Oprichter, HuurAuto Check (Groningen)**
 
-**Kosten en tijdlijn:** € 750 (onveranderlijke foto-opslag, tijdstempels aan serverzijde, aan boeking gekoppeld audit-log) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 750 (onveranderlijke foto-opslag, tijdstempels aan serverzijde, aan boeking gekoppeld audit-log) - voltooid in 3 werkdagen.
 
 ---
 

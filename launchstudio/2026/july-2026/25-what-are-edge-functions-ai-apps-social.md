@@ -1,4 +1,4 @@
-🔥 William built a prototype using **Lovable** — william, a startup founder, used **lovable** to build a dynamic pdf generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 William built a prototype using **Lovable** - william, a startup founder, used **lovable** to build a dynamic pdf generator prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-William's application achieved production readiness: William eliminated user-facing timeout errors and supported PDF generation of up to 200 pages. (€1,750 (Edge Architecture Package) — production-ready and deployed in 6 business days.). 🚀
+William's application achieved production readiness: William eliminated user-facing timeout errors and supported PDF generation of up to 200 pages. (€1,750 (Edge Architecture Package) - production-ready and deployed in 6 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/what-are-edge-functions-ai-apps
 

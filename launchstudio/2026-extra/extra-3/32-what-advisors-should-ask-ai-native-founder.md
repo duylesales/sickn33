@@ -31,11 +31,11 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-An experienced mentor or angel advisor sitting across from an AI-native founder often reaches for the same generic startup diligence questions they'd ask any early-stage founder — market size, customer validation, unit economics. These remain genuinely relevant, and they miss a category of question specific to this particular kind of company, where a working, demo-ready prototype can mask a meaningfully incomplete technical foundation in ways a traditionally-built early product typically doesn't.
+An experienced mentor or angel advisor sitting across from an AI-native founder often reaches for the same generic startup diligence questions they'd ask any early-stage founder - market size, customer validation, unit economics. These remain genuinely relevant, and they miss a category of question specific to this particular kind of company, where a working, demo-ready prototype can mask a meaningfully incomplete technical foundation in ways a traditionally-built early product typically doesn't.
 
 ## Why Generic Startup Questions Miss Something Specific Here
 
-Traditional early-stage diligence questions largely assume that if a product demos well and has real usage, the underlying technical foundation is reasonably proportionate to that demonstrated capability — a reasonable assumption for a traditionally-built product where reaching a working demo state required roughly commensurate underlying engineering investment. AI-generated prototypes specifically break this assumption, since the speed of reaching an impressive demo state has become largely decoupled from how much production-hardening work has actually happened underneath, precisely the gap covered throughout this entire content series.
+Traditional early-stage diligence questions largely assume that if a product demos well and has real usage, the underlying technical foundation is reasonably proportionate to that demonstrated capability - a reasonable assumption for a traditionally-built product where reaching a working demo state required roughly commensurate underlying engineering investment. AI-generated prototypes specifically break this assumption, since the speed of reaching an impressive demo state has become largely decoupled from how much production-hardening work has actually happened underneath, precisely the gap covered throughout this entire content series.
 
 ## Five Questions Worth Adding to a Standard Advisory Conversation
 
@@ -51,15 +51,15 @@ Traditional early-stage diligence questions largely assume that if a product dem
 
 ## Why These Questions Are Better Suited to This Specific Founder Category
 
-Each of these questions is designed to surface the specific gap this content series addresses throughout — the difference between "works when I use it" and "verified to be safe for real, unpredictable use" — translated into plain language an advisor without deep technical background can genuinely ask and evaluate the response to, without needing to personally verify the technical answer.
+Each of these questions is designed to surface the specific gap this content series addresses throughout - the difference between "works when I use it" and "verified to be safe for real, unpredictable use" - translated into plain language an advisor without deep technical background can genuinely ask and evaluate the response to, without needing to personally verify the technical answer.
 
 ## What a Good Answer Actually Sounds Like
 
-A founder with genuinely solid answers describes specifics — a particular audit that happened, a particular test that was run, a particular provider dependency they've specifically thought through — rather than general reassurance. The specificity itself, more than the content of any single answer, is what an advisor should actually be listening for, mirroring the broader guidance throughout this series on evaluating any technical claim.
+A founder with genuinely solid answers describes specifics - a particular audit that happened, a particular test that was run, a particular provider dependency they've specifically thought through - rather than general reassurance. The specificity itself, more than the content of any single answer, is what an advisor should actually be listening for, mirroring the broader guidance throughout this series on evaluating any technical claim.
 
 [LaunchStudio](https://launchstudio.eu/en/) works directly with founders' advisors and mentors, when invited into that conversation, to help translate exactly these kinds of questions and their answers accurately, backed by Manifera's broader experience communicating technical findings clearly to non-technical stakeholders across 160+ delivered projects.
 
-[Bring these five questions to your next advisory conversation](https://launchstudio.eu/en/#contact) — they surface something generic diligence questions consistently miss for this specific founder category.
+[Bring these five questions to your next advisory conversation](https://launchstudio.eu/en/#contact) - they surface something generic diligence questions consistently miss for this specific founder category.
 
 ## A Short Self-Test for Advisors: Have You Actually Been Diligencing the Technical Layer?
 
@@ -67,15 +67,15 @@ Before adding the five questions above to a next advisory conversation, it's wor
 
 **Can you name one specific technical claim a founder you advise has made, beyond "it works" or "we tested it"?** If every technical update you've received from a founder has been a general reassurance rather than a specific, checkable claim, that's a signal your advisory relationship has been accepting vagueness on this dimension that you likely wouldn't accept on customer acquisition numbers or burn rate.
 
-**Have you ever asked a founder a technical question you didn't already know how to evaluate the answer to?** Sticking only to questions within your own comfort zone is understandable, but it also means an entire category of real risk — the one this content series addresses throughout — has likely never entered your advisory conversations at all, simply because it wasn't a domain you felt equipped to probe.
+**Have you ever asked a founder a technical question you didn't already know how to evaluate the answer to?** Sticking only to questions within your own comfort zone is understandable, but it also means an entire category of real risk - the one this content series addresses throughout - has likely never entered your advisory conversations at all, simply because it wasn't a domain you felt equipped to probe.
 
 **Do you know whether the founder's product has ever had an external, adversarial look from anyone besides the founder?** Not a code review from a friend checking that it runs, but someone specifically looking for what would break it. If you don't know the answer to this for a founder you actively advise, it's a reasonable indicator this specific diligence gap has been present in the relationship without either party noticing it as a gap.
 
 **When a founder describes technical progress, do you notice whether the language is specific or general?** Advisors who are highly attuned to vagueness in a founder's customer acquisition claims ("we're getting good traction") sometimes give the exact same vague language a pass when it's about the technical foundation ("the backend is solid"), simply because the second claim feels outside their usual scrutiny zone.
 
-**Would you know what to do next if a founder's answer to any of the five questions above revealed a genuine gap?** Knowing the right question to ask is only half the value; having a sense of where to direct a founder next — toward a technical reviewer, not toward resolving it yourself — is what turns a good question into an actually useful piece of advisory guidance rather than an interesting observation with nowhere to go.
+**Would you know what to do next if a founder's answer to any of the five questions above revealed a genuine gap?** Knowing the right question to ask is only half the value; having a sense of where to direct a founder next - toward a technical reviewer, not toward resolving it yourself - is what turns a good question into an actually useful piece of advisory guidance rather than an interesting observation with nowhere to go.
 
-An advisor who answers most of these honestly as "no" hasn't been doing anything wrong exactly — generic startup diligence genuinely wasn't built with this specific gap in mind, since the gap itself is relatively new to how quickly AI-generated prototypes can now reach a convincing demo state. The self-test isn't about assigning blame for a blind spot that was reasonable to have; it's about deciding, now that the blind spot is named, whether to keep advising with it or close it.
+An advisor who answers most of these honestly as "no" hasn't been doing anything wrong exactly - generic startup diligence genuinely wasn't built with this specific gap in mind, since the gap itself is relatively new to how quickly AI-generated prototypes can now reach a convincing demo state. The self-test isn't about assigning blame for a blind spot that was reasonable to have; it's about deciding, now that the blind spot is named, whether to keep advising with it or close it.
 
 ## Real example
 
@@ -83,14 +83,14 @@ An advisor who answers most of these honestly as "no" hasn't been doing anything
 
 Niels, a former operations manager turned founder in Haarlem, built OnderhoudsPlan, an AI tool scheduling preventive maintenance for small facility management companies, using Lovable, and had been meeting regularly with an experienced startup mentor who, until recently, had focused advisory conversations entirely on customer acquisition and pricing strategy.
 
-After learning about this specific category of question, Niels's mentor asked directly whether anyone besides Niels had technically reviewed OnderhoudsPlan — a question Niels realized, mid-answer, he genuinely couldn't answer with anything more specific than his own confidence in his own testing, despite months of active development and real customer conversations already underway.
+After learning about this specific category of question, Niels's mentor asked directly whether anyone besides Niels had technically reviewed OnderhoudsPlan - a question Niels realized, mid-answer, he genuinely couldn't answer with anything more specific than his own confidence in his own testing, despite months of active development and real customer conversations already underway.
 
 **Result:** The mentor's specific question prompted Niels to bring OnderhoudsPlan to LaunchStudio for exactly the kind of external, adversarial review his own testing had never provided, surfacing and closing two genuine gaps before OnderhoudsPlan's planned launch to its first paying facility management clients.
 
-> *"Every advisory conversation I'd had before that point was about customers and pricing, which felt like the right things to focus on. One specific, different question — has anyone besides you actually checked this technically — was the first time anyone had asked me something I genuinely didn't have a confident answer to."*
-> — **Niels Bakker, Founder, OnderhoudsPlan (Haarlem)**
+> *"Every advisory conversation I'd had before that point was about customers and pricing, which felt like the right things to focus on. One specific, different question - has anyone besides you actually checked this technically - was the first time anyone had asked me something I genuinely didn't have a confident answer to."*
+> - **Niels Bakker, Founder, OnderhoudsPlan (Haarlem)**
 
-**Cost & Timeline:** €1,900 (Launch Ready Package) — live in 8 business days.
+**Cost & Timeline:** €1,900 (Launch Ready Package) - live in 8 business days.
 
 ---
 
@@ -98,11 +98,11 @@ After learning about this specific category of question, Niels's mentor asked di
 
 ### Should advisors expect a founder to give a fully technical answer to these questions?
 
-No — the goal is a specific, concrete answer in plain language, not a technical explanation; "yes, an external review found and fixed two things last month" is a good answer even without technical detail, while a vague "I think it's fine" is the signal worth following up on.
+No - the goal is a specific, concrete answer in plain language, not a technical explanation; "yes, an external review found and fixed two things last month" is a good answer even without technical detail, while a vague "I think it's fine" is the signal worth following up on.
 
 ### Is it appropriate for a non-technical advisor to ask questions this specific if they can't personally verify the technical answer?
 
-Yes — the value is in prompting the founder to have and articulate a concrete answer at all, similar to the broader guidance throughout this series on non-technical founders evaluating specificity rather than technical accuracy directly.
+Yes - the value is in prompting the founder to have and articulate a concrete answer at all, similar to the broader guidance throughout this series on non-technical founders evaluating specificity rather than technical accuracy directly.
 
 ### How often should these questions come up in an ongoing advisory relationship, rather than just once?
 
@@ -110,7 +110,7 @@ Periodically, particularly around growth milestones or before a fundraise, simil
 
 ### Does asking these questions risk making a founder feel distrusted or discouraged?
 
-Framed with genuine curiosity rather than accusation, similar to how Niels's mentor asked, these questions tend to be received as helpful prompts rather than distrust — the specificity of the question, not its tone, is what makes it useful.
+Framed with genuine curiosity rather than accusation, similar to how Niels's mentor asked, these questions tend to be received as helpful prompts rather than distrust - the specificity of the question, not its tone, is what makes it useful.
 
 ### What should an advisor do if a founder's answers reveal genuine gaps, as in Niels's case?
 

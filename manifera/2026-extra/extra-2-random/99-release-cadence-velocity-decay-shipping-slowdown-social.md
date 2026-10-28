@@ -1,4 +1,4 @@
-🚨 Three years ago: shipping every week, no drama. Now: roughly monthly, and nobody can point to the day it changed. That's exactly how real velocity decay happens — gradually. 📉⚙️
+🚨 Three years ago: shipping every week, no drama. Now: roughly monthly, and nobody can point to the day it changed. That's exactly how real velocity decay happens - gradually. 📉⚙️
 
 **The Pain Points:**
 ❌ **"We're Just More Complex Now":** A vague, unexamined explanation that's never actually been measured.
@@ -6,7 +6,7 @@
 ❌ **Accumulated Manual Deployment Steps:** Patched incrementally for years, never deliberately redesigned.
 
 **The Manifera Solution:**
-✅ **Measured Pipeline Component Timings:** Test runtime, review turnaround, deployment duration — the real bottleneck, found.
+✅ **Measured Pipeline Component Timings:** Test runtime, review turnaround, deployment duration - the real bottleneck, found.
 ✅ **Flaky Tests Tracked and Fixed:** Not re-run and ignored.
 ✅ **Deliberate Deployment Redesign:** Streamlined, not just incrementally patched.
 

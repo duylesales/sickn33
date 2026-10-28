@@ -20,7 +20,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Je zit in een belangrijk verkoopgesprek met een potentiële klant — een Nederlands MKB-bedrijf met veertig medewerkers en een formele inkoopprocedure — en ze vragen waar ze de applicatie alvast kunnen bekijken. Je stuurt het linkje door via de chat. De URL bevat de naam van een Amerikaans ontwikkelaarsplatform, gevolgd door een vreemde reeks willekeurige tekens. Nog voordat je kunt uitleggen wat jouw software voor hun bedrijf oplost, merk je dat je aan het verantwoorden bent wat voor link je zojuist hebt gestuurd.
+Je zit in een belangrijk verkoopgesprek met een potentiële klant - een Nederlands MKB-bedrijf met veertig medewerkers en een formele inkoopprocedure - en ze vragen waar ze de applicatie alvast kunnen bekijken. Je stuurt het linkje door via de chat. De URL bevat de naam van een Amerikaans ontwikkelaarsplatform, gevolgd door een vreemde reeks willekeurige tekens. Nog voordat je kunt uitleggen wat jouw software voor hun bedrijf oplost, merk je dat je aan het verantwoorden bent wat voor link je zojuist hebt gestuurd.
 
 Die ervaring alleen al is het ultieme argument om direct een eigen custom domain in te richten. Maar er zijn nog drie doorslaggevende redenen, en één daarvan kost je gigantisch veel geld en kopzorgen als je het vanaf het begin verkeerd aanpakt.
 
@@ -38,9 +38,9 @@ Die ervaring alleen al is het ultieme argument om direct een eigen custom domain
 
 DNS klinkt voor niet-technische oprichters vaak intimiderend, maar in de praktijk werk je vrijwel altijd met slechts twee typen records:
 
-**Een A-record:** koppelt een domeinnaam rechtstreeks aan een numeriek IP-adres van de server — doorgaans gebruikt voor het kale hoofddomein, zoals `jouwbedrijf.nl`.
+**Een A-record:** koppelt een domeinnaam rechtstreeks aan een numeriek IP-adres van de server - doorgaans gebruikt voor het kale hoofddomein, zoals `jouwbedrijf.nl`.
 
-**Een CNAME-record:** verwijst de ene naam door naar een andere domeinnaam — doorgaans gebruikt voor `www.jouwbedrijf.nl` of subdomeinen zoals `app.jouwbedrijf.nl`.
+**Een CNAME-record:** verwijst de ene naam door naar een andere domeinnaam - doorgaans gebruikt voor `www.jouwbedrijf.nl` of subdomeinen zoals `app.jouwbedrijf.nl`.
 
 Replit toont je exact welke records je moet aanmaken en met welke waarden; het invoeren doe je in het controlepaneel van je eigen domeinregistrar (zoals TransIP, Hostnet of Cloudflare).
 
@@ -53,13 +53,13 @@ Elke moderne website vereist HTTPS. Zonder geldig SSL-certificaat toont elke mod
 
 Replit genereert en vernieuwt het SSL-certificaat tegenwoordig automatisch zodra je DNS-records correct naar hun servers wijzen. Twee valkuilen blijven echter veel voorkomen:
 - Het certificaat kan niet worden uitgegeven zolang de DNS-records nog foutief staan; een foutmelding in de eerste minuten betekent bijna altijd dat een record niet klopt of nog niet is gepropageerd.
-- Een certificaat dat wél de `www`-variant dekt maar niet het kale hoofddomein (of andersom) levert waarschuwingen op voor de helft van je bezoekers — wat direct leidt tot de volgende cruciale beslissing.
+- Een certificaat dat wél de `www`-variant dekt maar niet het kale hoofddomein (of andersom) levert waarschuwingen op voor de helft van je bezoekers - wat direct leidt tot de volgende cruciale beslissing.
 
 ## Kies één primair adres en verwijs de rest door
 
 `jouwbedrijf.nl` en `www.jouwbedrijf.nl` zijn voor internetprotocollen twee compleet verschillende adressen. Hetzelfde geldt voor de onbeveiligde HTTP- en beveiligde HTTPS-versies.
 
-Als alle vier de varianten zelfstandig laden, heb je in feite vier gescheiden versies van je website online staan. Dit versnippert je SEO-waarde, vervuilt je websitestatistieken en veroorzaakt certificaatwaarschuwingen. Kies één variant als de officiële standaard (canoniek) — met of zonder `www` maakt functioneel niet uit, zolang je maar consequent bent — en stel een permanente 301-redirect in voor alle andere drie varianten. Gebruik die ene standaardvorm vervolgens overal: in e-mails, promotiemateriaal, advertenties en structured data.
+Als alle vier de varianten zelfstandig laden, heb je in feite vier gescheiden versies van je website online staan. Dit versnippert je SEO-waarde, vervuilt je websitestatistieken en veroorzaakt certificaatwaarschuwingen. Kies één variant als de officiële standaard (canoniek) - met of zonder `www` maakt functioneel niet uit, zolang je maar consequent bent - en stel een permanente 301-redirect in voor alle andere drie varianten. Gebruik die ene standaardvorm vervolgens overal: in e-mails, promotiemateriaal, advertenties en structured data.
 
 ## E-mailconfiguratie is een compleet apart vraagstuk
 
@@ -126,18 +126,18 @@ De technische realisatie ligt bij Manifera: elf jaar ervaring in het beheren van
 
 Ilse Brandsma bouwde via Replit Proefles: een planningstool voor proeflessen gebruikt door vier muziekscholen en twee dansstudio's rondom Breda. Een handige vriend die haar in het begin had geholpen had de domeinnaam geregistreerd op zijn eigen privé-account, betaald met zijn eigen creditcard en gekoppeld aan het Replit-project.
 
-Anderhalf jaar later was de vriend geëmigreerd naar Nieuw-Zeeland en reageerde hij nauwelijks nog op WhatsApp. De jaarlijkse verlenging van het domein kwam eraan, de creditcard op zijn account was verlopen en Ilse had geen enkele toegang tot het registrar-dashboard. Bovendien had ze nooit e-mailauthenticatie kunnen instellen, waardoor bevestigingsmails van proeflessen al een jaar lang geregeld in spammppen belandden — iets wat pas aan het licht kwam toen een dansschoolhouder opmerkte dat "de bevestigingen meestal wel opduiken tussen de ongewenste e-mail".
+Anderhalf jaar later was de vriend geëmigreerd naar Nieuw-Zeeland en reageerde hij nauwelijks nog op WhatsApp. De jaarlijkse verlenging van het domein kwam eraan, de creditcard op zijn account was verlopen en Ilse had geen enkele toegang tot het registrar-dashboard. Bovendien had ze nooit e-mailauthenticatie kunnen instellen, waardoor bevestigingsmails van proeflessen al een jaar lang geregeld in spammppen belandden - iets wat pas aan het licht kwam toen een dansschoolhouder opmerkte dat "de bevestigingen meestal wel opduiken tussen de ongewenste e-mail".
 
 Het terugkrijgen van het domein via de formele geschillenprocedure van de registrar kostte elf dagen van grote stress, en slaagde uitsluitend omdat de vriend uiteindelijk na herhaaldelijke officiële e-mails van de registrar toestemming gaf.
 
 Het herstelwerk zodra de controle terug was vergde drie werkdagen: het domein direct overgedragen naar een zakelijk account op naam van haar eigen bedrijf met automatische incasso en twee geautoriseerde beheerders; de canonieke URL ingesteld met 301-redirects; SSL-certificaten gevalideerd; SPF, DKIM en DMARC geconfigureerd en de aflevering succesvol getest tegen Gmail en Outlook; het afzenderadres omgezet van een no-reply naar een gemonitorde support-inbox; en de complete DNS-configuratie vastgelegd in een helder document.
 
-**Resultaat:** bevestigingsmails komen sindsdien direct aan in de inbox — een dansschool meldde dat het aantal no-shows bij proeflessen in de maanden erna met 30% daalde — en een geplande serververhuizing drie maanden later was binnen een kwartier geregeld met één simpele DNS-aanpassing.
+**Resultaat:** bevestigingsmails komen sindsdien direct aan in de inbox - een dansschool meldde dat het aantal no-shows bij proeflessen in de maanden erna met 30% daalde - en een geplande serververhuizing drie maanden later was binnen een kwartier geregeld met één simpele DNS-aanpassing.
 
 > *"Mijn domeinnaam bleek op naam te staan van iemand die naar Nieuw-Zeeland was verhuisd en zijn inbox niet meer opende. Het kostte me elf dagen bureaucratie om een webadres terug te krijgen waar mijn klanten al anderhalf jaar dagelijks op inlogden."*
-> — **Ilse Brandsma, Oprichter, Proefles (Breda)**
+> - **Ilse Brandsma, Oprichter, Proefles (Breda)**
 
-**Kosten & Doorlooptijd:** € 900 (domeinoverdracht en eigenaarschapsstructuur, redirects en SSL-configuratie, e-mailauthenticatie met aflevertester, canonieke SEO-uitlijning en documentatie) — afgerond in 3 werkdagen nadat de toegang was hersteld.
+**Kosten & Doorlooptijd:** € 900 (domeinoverdracht en eigenaarschapsstructuur, redirects en SSL-configuratie, e-mailauthenticatie met aflevertester, canonieke SEO-uitlijning en documentatie) - afgerond in 3 werkdagen nadat de toegang was hersteld.
 
 ## Veelgestelde vragen
 

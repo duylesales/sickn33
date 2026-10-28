@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom govtech builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom govtech builds. 💸💥
 
 **The Pain Points:**
 ❌ **Genuine Accessibility Compliance, Not Cosmetic Adjustment:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

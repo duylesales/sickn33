@@ -49,7 +49,7 @@ LaunchStudio's engineeringbank zit binnen Manifera, wier 160+ geleverde enterpri
 
 Als u een schatting met vaste omvang wilt voor dit soort herstellingen, is [onze calculator](https://launchstudio.eu/nl/#calculator) een snelle manier om een getal te krijgen voordat u zich verbindt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dekt dezelfde klasse van gelijktijdigheids- en transactionele integriteitswerk op enterprise-schaal.
 
-## Vernieuwingen slaan de afrekening volledig over — en de voorraadcontrole ermee
+## Vernieuwingen slaan de afrekening volledig over - en de voorraadcontrole ermee
 
 De atomaire voorraadcontrole hierboven sluit de kloof voor nieuwe aanmeldingen, maar een abonnementsbox heeft een tweede afschrijvingsgebeurtenis die de afrekenstroom nooit raakt: de maandelijkse vernieuwing. Bestaande abonnees klikken niet opnieuw door de afrekening – een factureringstaak draait op de achtergrond, belast hun geregistreerde kaart, en neemt in de meeste met AI gegenereerde bouwsels aan dat omdat ze al abonnee waren, de box van deze maand standaard van hen is. Die aanname breekt op het moment dat een beperkt of seizoensgebonden boxniveau minder voorraad heeft dan actieve abonnees op dat niveau. Dat gebeurt vaker dan oprichters verwachten zodra een abonneebasis zijn oorspronkelijke leveranciersbestelling ontgroeit.
 
@@ -85,9 +85,9 @@ LaunchStudio's ingenieurs voegden een atomaire voorraadcontrole toe aan de afrek
 **Resultaat:** de afrekening dwingt nu realtime voorraadlimieten af onder gelijktijdige belasting, en een toekomstige virale piek converteert naar wachtlijst-aanmeldingen in plaats van een oververkoop-crisis.
 
 > *"De TikTok-vermelding was het beste wat mijn bedrijf die maand overkwam, en het maakte het ook bijna kapot. Ik heb er nooit aan gedacht om te testen wat mijn afrekening doet wanneer driehonderd mensen tegelijk dezelfde beperkte voorraad proberen te kopen."*
-> — **Thijmen Visser, Oprichter, BoxAbonnement (Alkmaar)**
+> - **Thijmen Visser, Oprichter, BoxAbonnement (Alkmaar)**
 
-**Kosten en tijdlijn:** € 1.200 (atomaire voorraadbewuste afrekening, omleiding naar wachtlijst, gelijktijdigheidsveilige voorraadvermindering) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (atomaire voorraadbewuste afrekening, omleiding naar wachtlijst, gelijktijdigheidsveilige voorraadvermindering) - voltooid in 5 werkdagen.
 
 ---
 

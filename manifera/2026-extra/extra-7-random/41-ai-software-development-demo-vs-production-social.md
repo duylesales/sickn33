@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Four Categories, Explicitly Scoped:** Reliability handling, quality monitoring, integration, and ongoing operational effort.
 ✅ **Amsterdam Strategic Governance:** Realistic budgets and timelines set upfront, not extrapolated from a demo.
-✅ **Vietnam Execution Velocity:** Building the full production system — not just the demonstrable part.
+✅ **Vietnam Execution Velocity:** Building the full production system - not just the demonstrable part.
 
 The demo worked so well we assumed we were most of the way there. We were maybe twenty percent of the way there. 🛡️
 

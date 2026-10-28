@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Building an AI Loyalty App? AI App Production Problems With Points and Fraud",
-  "description": "Loyalty points are a currency, and AI-built loyalty apps rarely treat them like one. This article covers the AI app production problems in loyalty systems — balance fields, replayable QR codes, race conditions, expiry, refunds and liabilities — and how a ledger fixes them.",
+  "description": "Loyalty points are a currency, and AI-built loyalty apps rarely treat them like one. This article covers the AI app production problems in loyalty systems - balance fields, replayable QR codes, race conditions, expiry, refunds and liabilities - and how a ledger fixes them.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-07",
@@ -21,7 +21,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-A loyalty app looks like the friendliest possible product: collect stamps, earn points, get a free coffee. Under the surface it is a small bank. Points are a currency that customers value, shops pay for and fraudsters love. AI coding tools build loyalty apps as if points were a number on a profile, and that is where the AI app production problems start — duplicated rewards, balances that drift, and a single screenshot of a QR code redeemed a hundred times.
+A loyalty app looks like the friendliest possible product: collect stamps, earn points, get a free coffee. Under the surface it is a small bank. Points are a currency that customers value, shops pay for and fraudsters love. AI coding tools build loyalty apps as if points were a number on a profile, and that is where the AI app production problems start - duplicated rewards, balances that drift, and a single screenshot of a QR code redeemed a hundred times.
 
 ## Points Are Money, So Treat Them Like Money
 
@@ -128,11 +128,11 @@ Simple dashboards and weekly reviews catch most patterns before they become cost
 
 ## Settlement Between Participating Shops
 
-In multi-shop programmes, settlement is the financial heart. Record for each entry which shop issued points and which shop redeemed them; value points at an agreed rate; produce a monthly statement per shop showing points issued, points redeemed and the resulting balance to pay or receive. Reconcile statements against the ledger and keep them immutable once issued. Clear settlement rules — agreed in writing by participating shops — prevent disputes that can break up a local programme.
+In multi-shop programmes, settlement is the financial heart. Record for each entry which shop issued points and which shop redeemed them; value points at an agreed rate; produce a monthly statement per shop showing points issued, points redeemed and the resulting balance to pay or receive. Reconcile statements against the ledger and keep them immutable once issued. Clear settlement rules - agreed in writing by participating shops - prevent disputes that can break up a local programme.
 
 ## Expiry and Accounting
 
-Expiry rules — for example points valid for 12 months after earning — are implemented as scheduled jobs that add expiry entries per member, oldest points first. Notify members before points expire, which also encourages visits. For accounting, outstanding points represent an obligation; your accountant may want regular reports of issued, redeemed, expired and outstanding points to reflect this properly in the books.
+Expiry rules - for example points valid for 12 months after earning - are implemented as scheduled jobs that add expiry entries per member, oldest points first. Notify members before points expire, which also encourages visits. For accounting, outstanding points represent an obligation; your accountant may want regular reports of issued, redeemed, expired and outstanding points to reflect this properly in the books.
 
 ## Privacy in Loyalty Programmes
 
@@ -148,19 +148,19 @@ Reward design influences fraud. Rewards that can be redeemed for cash-like value
 
 ## Promotions Without Chaos
 
-Double-points days and bonus campaigns cause spikes and edge cases. Configure promotions as data — start and end time in local time, eligible shops and products, multiplier or bonus, caps per member — rather than code changes. Test them on staging with realistic transactions, monitor issuance during the promotion and have a way to end a campaign early if something goes wrong.
+Double-points days and bonus campaigns cause spikes and edge cases. Configure promotions as data - start and end time in local time, eligible shops and products, multiplier or bonus, caps per member - rather than code changes. Test them on staging with realistic transactions, monitor issuance during the promotion and have a way to end a campaign early if something goes wrong.
 
 ## Member Experience
 
-Members judge a loyalty app by simplicity: fast access to their code (even offline), a clear balance with history, understandable rewards and reminders before points expire. Showing the history — "earned 12 points at the bakery on Tuesday" — builds trust and reduces support questions. It is only possible with a ledger, which is one more reason the ledger is worth building from the start.
+Members judge a loyalty app by simplicity: fast access to their code (even offline), a clear balance with history, understandable rewards and reminders before points expire. Showing the history - "earned 12 points at the bakery on Tuesday" - builds trust and reduces support questions. It is only possible with a ledger, which is one more reason the ledger is worth building from the start.
 
 ## Support Tools for Shops and Administrators
 
-Shops need to correct mistakes — a wrong amount entered, a refund — without contacting the programme administrator for every case. Give shop managers a limited adjustment tool with reasons required and thresholds above which approval is needed; give administrators a view of each member's ledger and all adjustments. Every correction becomes a new ledger entry, preserving the complete history.
+Shops need to correct mistakes - a wrong amount entered, a refund - without contacting the programme administrator for every case. Give shop managers a limited adjustment tool with reasons required and thresholds above which approval is needed; give administrators a view of each member's ledger and all adjustments. Every correction becomes a new ledger entry, preserving the complete history.
 
 ## Reporting to Participating Shops
 
-Shops stay in a programme when they see its value: customers who visit more often, cross-visits from other shops, redemption patterns and the net settlement position. Monthly reports built from the ledger — not from estimates — make the programme's value visible and keep participation high.
+Shops stay in a programme when they see its value: customers who visit more often, cross-visits from other shops, redemption patterns and the net settlement position. Monthly reports built from the ledger - not from estimates - make the programme's value visible and keep participation high.
 
 ## When the Programme Grows
 
@@ -176,7 +176,7 @@ Try redeeming the same reward twice from two phones at the same moment. If both 
 
 ## Where LaunchStudio Fits
 
-LaunchStudio turns AI-built loyalty apps into systems that hold up: a points ledger with migration from existing balances, transactional redemptions with idempotency, rotating single-use codes, staff audit trails, fraud controls, expiry jobs and settlement reports — with the customer-facing app unchanged. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience building transactional systems for clients such as Vodafone, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/). Martin Fowler's writing on [accounting patterns](https://martinfowler.com/eaaDev/AccountingNarrative.html) explains why ledgers beat balance fields.
+LaunchStudio turns AI-built loyalty apps into systems that hold up: a points ledger with migration from existing balances, transactional redemptions with idempotency, rotating single-use codes, staff audit trails, fraud controls, expiry jobs and settlement reports - with the customer-facing app unchanged. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience building transactional systems for clients such as Vodafone, with engineers in Ho Chi Minh City and offices in Amsterdam and Singapore. See [Manifera's technologies](https://www.manifera.com/about-us/manifera-technologies/). Martin Fowler's writing on [accounting patterns](https://martinfowler.com/eaaDev/AccountingNarrative.html) explains why ledgers beat balance fields.
 
 [Get a fixed-price quote](https://launchstudio.eu/en/#contact) before your next promotion goes live.
 
@@ -186,16 +186,16 @@ LaunchStudio turns AI-built loyalty apps into systems that hold up: a points led
 
 Daan Koopman, who manages a shopping street association in Bergen op Zoom, built Spaarpas in Bolt: a digital stamp card shared by 34 local shops. Customers collect points at any participating shop and redeem them for vouchers at others; shops pay a monthly fee and settle redeemed vouchers at month end. About 5,200 residents signed up in the first three months.
 
-The first promotion — double points on a Saturday — exposed everything. Each customer had a static QR code, and points were added by staff scanning it and typing an amount. Screenshots of vouchers were redeemed at several shops. A group of accounts collected the sign-up bonus dozens of times with disposable email addresses. Two shops found that their tablets had issued points twice when the connection dropped and staff retried. At month end, the settlement report did not match what shops remembered, and there was no history to check.
+The first promotion - double points on a Saturday - exposed everything. Each customer had a static QR code, and points were added by staff scanning it and typing an amount. Screenshots of vouchers were redeemed at several shops. A group of accounts collected the sign-up bonus dozens of times with disposable email addresses. Two shops found that their tablets had issued points twice when the connection dropped and staff retried. At month end, the settlement report did not match what shops remembered, and there was no history to check.
 
 Over nine business days, LaunchStudio's engineers replaced the balance column with a ledger, reconstructing opening balances from available logs and flagging uncertain accounts, made earning and redemption transactional with idempotency keys, replaced static codes with rotating single-use codes validated on the server, tied sign-up bonuses to verified phone numbers, logged every staff action per employee, added expiry and refund reversals, and built a monthly settlement report per shop.
 
 **Result:** The next promotion ran without duplicate redemptions, and the month-end settlement matched to the voucher. Spaarpas expanded to 51 shops, and the association's treasurer now uses the ledger report instead of a spreadsheet.
 
 > *"We thought we'd built a stamp card. We'd actually built a small currency with no bookkeeping."*
-> — **Daan Koopman, Founder, Spaarpas (Bergen op Zoom)**
+> - **Daan Koopman, Founder, Spaarpas (Bergen op Zoom)**
 
-**Cost & Timeline:** €2,600 (Launch Ready package: ledger, transactional redemptions, secure codes, fraud controls and settlement) — completed in 9 business days.
+**Cost & Timeline:** €2,600 (Launch Ready package: ledger, transactional redemptions, secure codes, fraud controls and settlement) - completed in 9 business days.
 
 ## Frequently Asked Questions
 

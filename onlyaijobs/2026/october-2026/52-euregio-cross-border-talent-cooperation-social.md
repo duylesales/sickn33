@@ -1,4 +1,4 @@
-💡 Dutch border regions have decades of Euregio cooperation — EUREGIO, Ems Dollart Region, Rhine-Waal, Meuse-Rhine and Scheldemond. Job visibility for AI roles rarely crosses those borders.
+💡 Dutch border regions have decades of Euregio cooperation - EUREGIO, Ems Dollart Region, Rhine-Waal, Meuse-Rhine and Scheldemond. Job visibility for AI roles rarely crosses those borders.
 
 🚲 National job boards stop at the border. Commute radii don't. Interreg VI, GrensInfoPunten, EURES and the cross-border telework framework agreement already support cross-border work.
 

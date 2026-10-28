@@ -1,11 +1,11 @@
-🔌 Teun Molenaar, a founder in Huizen, built OfferteSnel — a quoting tool — using v0. He'd chosen v0 specifically because it was marketed as a no-code AI tool, and had genuinely assumed "no code" also meant "no ongoing maintenance." 😳
+🔌 Teun Molenaar, a founder in Huizen, built OfferteSnel - a quoting tool - using v0. He'd chosen v0 specifically because it was marketed as a no-code AI tool, and had genuinely assumed "no code" also meant "no ongoing maintenance." 😳
 
 Then a downstream API changed shape overnight, months after launch. 🧠
 
-❌ Assumed "no code to write" meant "no code to maintain" — never seen a single line of the underlying implementation
+❌ Assumed "no code to write" meant "no code to maintain" - never seen a single line of the underlying implementation
 ❌ A downstream pricing API changed its response format without warning
 ❌ The quoting feature stopped producing accurate numbers, then stopped working entirely, with a generic error and no useful detail
-❌ Teun had no idea where to even begin — no error log he knew how to read, no one to ask
+❌ Teun had no idea where to even begin - no error log he knew how to read, no one to ask
 
 ✅ Traced the failure to the specific schema mismatch
 ✅ Updated the integration to handle the new API response format

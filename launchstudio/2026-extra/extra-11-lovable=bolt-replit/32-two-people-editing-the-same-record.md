@@ -24,7 +24,7 @@ A planner opens a job record at 10:14 and starts updating the address. Her colle
 
 Nothing errored. Both saves succeeded. The database did exactly what it was asked to do, which was to take the entire form contents from whoever submitted last and write them over whatever was there.
 
-This is the lost update problem, and it is one of three concurrency failures that AI-generated applications produce by default — invisible in development, ordinary in production, and impossible to find by reading the code.
+This is the lost update problem, and it is one of three concurrency failures that AI-generated applications produce by default - invisible in development, ordinary in production, and impossible to find by reading the code.
 
 ## Why None of This Appears in Testing
 
@@ -34,7 +34,7 @@ Production reverses that: several people, several tabs, mobile connections that 
 
 ## Failure One: The Lost Update
 
-The scenario above. Two users load the same record, both edit, both save, and the second save silently overwrites the first — including fields the second person never looked at, because the form submits everything it loaded.
+The scenario above. Two users load the same record, both edit, both save, and the second save silently overwrites the first - including fields the second person never looked at, because the form submits everything it loaded.
 
 **The cheapest reliable fix is optimistic concurrency.** Add a version number or updated-timestamp column to the record. When a user loads the form, they receive the current version; when they save, the update applies only if the version still matches. If someone else saved in between, the write affects no rows and your application can tell the user that the record changed and show them what is different.
 
@@ -50,7 +50,7 @@ Disabling the button after the first click is a courtesy, not a protection: the 
 
 **The fix is idempotency:** the client generates a unique key for the operation, sends it with the request, and the server records it. A second request carrying the same key returns the original result rather than performing the action again. Payment providers work this way for exactly this reason, and the same pattern belongs on any operation that creates something or moves money.
 
-For simpler cases, a uniqueness constraint in the database achieves much of it — one booking per user per slot, enforced where it cannot be bypassed.
+For simpler cases, a uniqueness constraint in the database achieves much of it - one booking per user per slot, enforced where it cannot be bypassed.
 
 ## Failure Three: The Race on a Limited Resource
 
@@ -58,7 +58,7 @@ Ten seats, ten tickets sold, two people clicking at the same moment, eleven tick
 
 The generated code reads correctly: check availability, then create the booking. At runtime both checks execute before either write, both see a free seat, and both proceed. No amount of reading that function reveals the problem, because the problem is in the gap between two statements.
 
-**The fix belongs in the database, not in your application logic.** Either perform the check and the write as a single atomic operation — a conditional update that decrements only if capacity remains — or wrap both in a transaction with appropriate locking, or express the rule as a constraint the database enforces regardless of timing.
+**The fix belongs in the database, not in your application logic.** Either perform the check and the write as a single atomic operation - a conditional update that decrements only if capacity remains - or wrap both in a transaction with appropriate locking, or express the rule as a constraint the database enforces regardless of timing.
 
 The principle worth internalising: if correctness depends on two operations not being interleaved, application code cannot guarantee it. The database can.
 
@@ -72,7 +72,7 @@ For a founder without a database background, the practical translation is: any r
 
 Concurrency handling produces situations where a user's action is refused, and the message matters.
 
-"This record was changed by someone else while you were editing. Here is what changed — would you like to reload or overwrite?" is a good message: it explains, it shows, and it offers a choice.
+"This record was changed by someone else while you were editing. Here is what changed - would you like to reload or overwrite?" is a good message: it explains, it shows, and it offers a choice.
 
 "Error: version mismatch" is the same protection presented as a malfunction, and it will generate support email.
 
@@ -110,9 +110,9 @@ If your product sells something with limited availability, [describe your projec
 
 There are two broad strategies, and choosing between them is simpler than the terminology suggests.
 
-**Optimistic** assumes conflicts are rare. Everyone can start editing; the conflict is detected at save time and reported. This is what the version column approach does, and it is right for records that are occasionally edited by more than one person — a customer record, a job description, a product listing. The cost is that a user can lose work at the moment of saving, which is why showing them what changed matters.
+**Optimistic** assumes conflicts are rare. Everyone can start editing; the conflict is detected at save time and reported. This is what the version column approach does, and it is right for records that are occasionally edited by more than one person - a customer record, a job description, a product listing. The cost is that a user can lose work at the moment of saving, which is why showing them what changed matters.
 
-**Pessimistic** prevents the conflict by locking: while one person is editing, others cannot. It suits records that are edited for long periods and where losing work would be severe — a detailed form, a long document. The cost is that locks must expire, or a user who closes their laptop blocks a record indefinitely, and you need a way to see and break a stale lock.
+**Pessimistic** prevents the conflict by locking: while one person is editing, others cannot. It suits records that are edited for long periods and where losing work would be severe - a detailed form, a long document. The cost is that locks must expire, or a user who closes their laptop blocks a record indefinitely, and you need a way to see and break a stale lock.
 
 For most small products, optimistic is the correct default, with one addition worth the small effort: show presence. Displaying "Jan is also viewing this record" prevents a large share of conflicts before they occur, and it is a fraction of the work of a locking system.
 
@@ -130,12 +130,12 @@ Reading the booking function showed nothing wrong: it counted existing bookings,
 
 Five business days of work: capacity enforced as an atomic conditional update so a booking can only be created while remaining places are above zero; a uniqueness constraint preventing the same person booking the same workshop twice; idempotency keys on the booking and payment path so a double-tap on a slow connection cannot create two bookings; optimistic versioning on the workshop record, since makers frequently edit details while bookings arrive; user-facing messages explaining a full workshop or a changed record; and a load test simulating fifty simultaneous bookings, now part of every deploy.
 
-**Result:** the same maker ran a sold-out series of six workshops two months later with no overbooking, and the load test has failed once — catching a regression introduced while adding a waiting list feature.
+**Result:** the same maker ran a sold-out series of six workshops two months later with no overbooking, and the load test has failed once - catching a regression introduced while adding a waiting list feature.
 
 > *"I read that function twenty times looking for the bug. The bug was that two people clicked at the same moment, which is not something you can see in the code."*
-> — **Marloes Huisman, Founder, Ambachtsklas (Utrecht)**
+> - **Marloes Huisman, Founder, Ambachtsklas (Utrecht)**
 
-**Cost & Timeline:** €2,500 (atomic capacity handling, idempotency, versioning, concurrency tests in the pipeline) — completed in 5 business days.
+**Cost & Timeline:** €2,500 (atomic capacity handling, idempotency, versioning, concurrency tests in the pipeline) - completed in 5 business days.
 
 ## Frequently Asked Questions
 
@@ -177,7 +177,7 @@ By hand: two browsers editing the same record and saving in reverse order, a thr
       "name": "What is the simplest fix for two people overwriting each other's edits?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Optimistic concurrency — a version column returned on load and required to match on save, so a conflicting update affects no rows and can be reported."
+        "text": "Optimistic concurrency - a version column returned on load and required to match on save, so a conflicting update affects no rows and can be reported."
       }
     },
     {
@@ -193,7 +193,7 @@ By hand: two browsers editing the same record and saving in reverse order, a thr
       "name": "Do I need this everywhere in my app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — only where simultaneous actions would produce a noticeably wrong answer: capacity, stock, balances, shared records, payment state and redeemable codes."
+        "text": "No - only where simultaneous actions would produce a noticeably wrong answer: capacity, stock, balances, shared records, payment state and redeemable codes."
       }
     },
     {

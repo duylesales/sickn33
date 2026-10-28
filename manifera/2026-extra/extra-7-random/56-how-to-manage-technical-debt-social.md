@@ -6,7 +6,7 @@
 ❌ **A Smaller Number, No Velocity Change:** Aggregate debt reduction that doesn't translate to actual improvement.
 
 **The Manifera Solution:**
-✅ **Two Factors, Weighted:** Ongoing cost (by touch frequency) versus paydown cost — prioritized explicitly.
+✅ **Two Factors, Weighted:** Ongoing cost (by touch frequency) versus paydown cost - prioritized explicitly.
 ✅ **Amsterdam Strategic Governance:** A genuine cost-weighted portfolio, not a backlog to clear to zero.
 ✅ **Vietnam Execution Velocity:** Paydown effort concentrated where it actually improves development velocity.
 

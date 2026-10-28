@@ -1,4 +1,4 @@
-🔥 Wyatt built a prototype using **Cursor** — wyatt, a software builder, used **cursor** to build an ai code helper, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
+🔥 Wyatt built a prototype using **Cursor** - wyatt, a software builder, used **cursor** to build an ai code helper, but discovered critical performance and architecture bottlenecks before scaling to production. 🧠
 
 If your AI application lacks proper caching, database connection pooling, or state isolation, real user traffic will trigger severe UI latency and unexpected hosting bills.
 
@@ -12,7 +12,7 @@ If your AI application lacks proper caching, database connection pooling, or sta
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Wyatt's application achieved silky-smooth performance: Dev signups grew by 150% in two weeks, establishing a high-trust developer community. (€1,400 (OAuth Security Package) — production-ready and deployed in 3 business days.). 🚀
+Wyatt's application achieved silky-smooth performance: Dev signups grew by 150% in two weeks, establishing a high-trust developer community. (€1,400 (OAuth Security Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/community-led-growth-developer-tools-ai
 

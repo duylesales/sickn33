@@ -83,9 +83,9 @@ LaunchStudio's ingenieurs voegden e-mailnormalisatie toe om de plus-adressering 
 **Resultaat:** OfferteMaker's herhaalde-proefperiodepatroon daalde tot bijna nul binnen de eerste maand nadat de herstelling werd verzonden. Jesse heeft nu zicht op welke aanmeldingen zijn gemarkeerd en waarom.
 
 > *"Ik bouwde de proefperiode om mensen te converteren, en niet om een gratis niveau te worden voor iedereen die geduldig genoeg is om een nieuw e-mailadres te maken. Het kostte één spreadsheet om te realiseren hoe lang dat al aan de gang was."*
-> — **Jesse Broersen, Oprichter, OfferteMaker (Barneveld)**
+> - **Jesse Broersen, Oprichter, OfferteMaker (Barneveld)**
 
-**Kosten en tijdlijn:** € 1.150 (e-mailnormalisatie, apparaatvingerafdrukken, en beoordelingsstroom voor gemarkeerde aanmeldingen) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 1.150 (e-mailnormalisatie, apparaatvingerafdrukken, en beoordelingsstroom voor gemarkeerde aanmeldingen) - voltooid in 7 werkdagen.
 
 ---
 

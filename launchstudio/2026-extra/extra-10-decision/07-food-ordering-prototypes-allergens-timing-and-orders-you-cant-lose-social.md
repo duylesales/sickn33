@@ -1,9 +1,9 @@
 🚨 "Did the peanut allergy note actually go to the kitchen, or just the confirmation screen?" A restaurant owner asked Nils that three days before launch. He didn't know. 😳
 
-Food ordering apps fail in ways that hurt people or lose paid orders — none of it shows up in a calm demo with one test order: 🧠
+Food ordering apps fail in ways that hurt people or lose paid orders - none of it shows up in a calm demo with one test order: 🧠
 
 ❌ Allergen notes were a generic free-text field, styled identically to "ring the doorbell twice"
-❌ Three paid orders never reached the kitchen tablet after WiFi briefly dropped — no one noticed
+❌ Three paid orders never reached the kitchen tablet after WiFi briefly dropped - no one noticed
 ❌ "Payment succeeded" and "kitchen received the order" were treated as the same event
 ❌ Time estimates were a static formula with no way for a slammed kitchen to signal "add 15 minutes"
 

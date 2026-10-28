@@ -31,13 +31,13 @@ Doelgroep: Frontend & Backend Developers / Security Leads
 }
 </script>
 
-Als een kwaadwillende uw Supabase `anon`-sleutel steelt, blijft de schade doorgaans beperkt binnen de grenzen van uw Row-Level Security beleid. Als iemand echter uw OpenAI of Anthropic API-key steelt, kan uw startup binnen 48 uur failliet zijn. Geautomatiseerde scripts scannen continu publieke GitHub-repositories, npm-pakketten en openbare client-side JavaScript-bundels op zoek naar `sk-proj-` of `sk-ant-` patronen om gestolen sleutels te misbruiken voor massale geautomatiseerde runs, wederverkoop op illegale Discord-servers of kwaadwillige uitputting van uw kredietlimiet. Wanneer u een AI-product bouwt met Next.js, is sleutelbeveiliging geen optionele extra — het is de allereerste beveiligingslaag die 100% waterdicht moet zijn.
+Als een kwaadwillende uw Supabase `anon`-sleutel steelt, blijft de schade doorgaans beperkt binnen de grenzen van uw Row-Level Security beleid. Als iemand echter uw OpenAI of Anthropic API-key steelt, kan uw startup binnen 48 uur failliet zijn. Geautomatiseerde scripts scannen continu publieke GitHub-repositories, npm-pakketten en openbare client-side JavaScript-bundels op zoek naar `sk-proj-` of `sk-ant-` patronen om gestolen sleutels te misbruiken voor massale geautomatiseerde runs, wederverkoop op illegale Discord-servers of kwaadwillige uitputting van uw kredietlimiet. Wanneer u een AI-product bouwt met Next.js, is sleutelbeveiliging geen optionele extra - het is de allereerste beveiligingslaag die 100% waterdicht moet zijn.
 
 ## De Kwetsbaarheid aan de Client-Side
 
-De meest verwoestende fout die een beginnende ontwikkelaar — of een ongecontroleerde AI-codingassistent — kan maken, is het direct importeren van de OpenAI SDK in een React Client Component en het aanroepen van een omgevingsvariabele met het `NEXT_PUBLIC_` voorvoegsel. Dit voorvoegsel vertelt het build-proces van Next.js expliciet om die waarde direct in te compileren in de publieke JavaScript-bundel die naar de browser van elke bezoeker wordt verstuurd.
+De meest verwoestende fout die een beginnende ontwikkelaar - of een ongecontroleerde AI-codingassistent - kan maken, is het direct importeren van de OpenAI SDK in een React Client Component en het aanroepen van een omgevingsvariabele met het `NEXT_PUBLIC_` voorvoegsel. Dit voorvoegsel vertelt het build-proces van Next.js expliciet om die waarde direct in te compileren in de publieke JavaScript-bundel die naar de browser van elke bezoeker wordt verstuurd.
 
-Bevat uw `.env`-bestand de regel `NEXT_PUBLIC_OPENAI_API_KEY=sk-proj-...` en leest een Client Component dit uit, dan bent u vanaf het moment van livegang direct gecompromitteerd. Iedere bezoeker kan Chrome DevTools openen, het tabblad Sources of Network inspecteren, zoeken naar `sk-`, uw geheime API-key kopiëren en deze wereldwijd misbruiken — vaak binnen enkele minuten na uitrol, omdat geautomatiseerde bots nieuw gelanceerde websites hier continu op scannen.
+Bevat uw `.env`-bestand de regel `NEXT_PUBLIC_OPENAI_API_KEY=sk-proj-...` en leest een Client Component dit uit, dan bent u vanaf het moment van livegang direct gecompromitteerd. Iedere bezoeker kan Chrome DevTools openen, het tabblad Sources of Network inspecteren, zoeken naar `sk-`, uw geheime API-key kopiëren en deze wereldwijd misbruiken - vaak binnen enkele minuten na uitrol, omdat geautomatiseerde bots nieuw gelanceerde websites hier continu op scannen.
 
 **De Oplossing:** API-keys van AI-providers mogen onder geen enkele voorwaarde de browser bereiken. Verwijder het voorvoegsel `NEXT_PUBLIC_` volledig van al uw geheime sleutels. API-aanroepen moeten uitsluitend aan de serverzijde worden gecoördineerd, waar variabelen in `process.env` zonder dit voorvoegsel gegarandeerd strikt binnen de backend blijven en nooit in de client-bundel terechtkomen.
 
@@ -46,11 +46,11 @@ Bevat uw `.env`-bestand de regel `NEXT_PUBLIC_OPENAI_API_KEY=sk-proj-...` en lee
 In de Next.js App Router verloopt de veilige architectuur via Server Actions of Route Handlers, die beide uitsluitend op de server worden uitgevoerd:
 
 1. De gebruiker klikt op "Genereer" in de frontend (Client Component).
-2. De frontend stuurt een HTTP POST-verzoek naar uw backend (bijv. `/api/generate`) met uitsluitend de prompt en eventuele gebruikerscontext — nooit een geheime sleutel.
+2. De frontend stuurt een HTTP POST-verzoek naar uw backend (bijv. `/api/generate`) met uitsluitend de prompt en eventuele gebruikerscontext - nooit een geheime sleutel.
 3. Uw backend Route Handler (die veilig draait op de serverinfrastructuur van Vercel of uw eigen host) leest `process.env.OPENAI_API_KEY` uit.
 4. De backend verifieert de gebruikerssessie, controleert het verbruiksquota, roept de AI-provider aan en streamt het antwoord veilig terug naar de frontend.
 
-Omdat de Node.js omgevingsvariabelen nooit in de client-bundel worden opgenomen, blijft de API-sleutel volledig beschermd, ongeacht hoe grondig een gebruiker uw frontend-code inspecteert. Dit geldt vanzelfsprekend voor alle geheime sleutels van derden — Stripe secret keys, database service-role keys en interne ondertekeningssleutels.
+Omdat de Node.js omgevingsvariabelen nooit in de client-bundel worden opgenomen, blijft de API-sleutel volledig beschermd, ongeacht hoe grondig een gebruiker uw frontend-code inspecteert. Dit geldt vanzelfsprekend voor alle geheime sleutels van derden - Stripe secret keys, database service-role keys en interne ondertekeningssleutels.
 
 ## Het 'Bring Your Own Key' (BYOK) Model
 
@@ -74,7 +74,7 @@ Gebruik altijd gescheiden sleutels per omgeving (development, staging, productie
 
 ## Harde Verbruikslimieten Instellen bij OpenAI of Anthropic
 
-Software wordt geschreven door mensen — en steeds vaker door AI-assistenten — en beiden maken fouten. Een `.env`-bestand kan per ongeluk naar een openbare repository worden gepusht, of een oneindige loop in de code kan duizenden aanroepen per minuut triggeren. Om u tegen financiële rampspoed te beschermen, moet u altijd vangrails op provider-niveau instellen.
+Software wordt geschreven door mensen - en steeds vaker door AI-assistenten - en beiden maken fouten. Een `.env`-bestand kan per ongeluk naar een openbare repository worden gepusht, of een oneindige loop in de code kan duizenden aanroepen per minuut triggeren. Om u tegen financiële rampspoed te beschermen, moet u altijd vangrails op provider-niveau instellen.
 
 Log in op uw dashboard bij OpenAI of Anthropic en stel een **Harde Facturatielimiet (Hard Billing Limit)** in. Verwacht uw startup maandelijks $ 50 aan verbruik, stel de limiet dan in op $ 100 à $ 150. Mocht een sleutel worden gestolen en een hacker probeert voor $ 10.000 aan queries uit te voeren, dan blokkeert de provider de API-toegang automatisch zodra het plafond is bereikt. Uw app gaat tijdelijk offline, maar uw bankrekening en het voortbestaan van uw onderneming blijven gegarandeerd gespaard.
 
@@ -90,7 +90,7 @@ Circa 45% van de door AI gegenereerde code bevat kwetsbare beveiligingsfouten, e
 
 ## Laat Uw AI-Beveiliging Auditen
 
-Eén enkele uitgelekte sleutel kan uw bedrijfsvoering verlammen. **LaunchStudio** voert diepgaande security audits uit op Next.js AI-applicaties en implementeert robuuste encryptie, sleutelrotatie en backend-orkestratie om uw infrastructuur waterdicht te beveiligen — tegen circa 20% van de kosten van een traditioneel bureau. [Vraag vandaag nog een vrijblijvende offerte aan](https://launchstudio.eu/nl/#contact).
+Eén enkele uitgelekte sleutel kan uw bedrijfsvoering verlammen. **LaunchStudio** voert diepgaande security audits uit op Next.js AI-applicaties en implementeert robuuste encryptie, sleutelrotatie en backend-orkestratie om uw infrastructuur waterdicht te beveiligen - tegen circa 20% van de kosten van een traditioneel bureau. [Vraag vandaag nog een vrijblijvende offerte aan](https://launchstudio.eu/nl/#contact).
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. Lees meer over Manifera op de [over ons pagina](https://www.manifera.com/about-us/).
 
@@ -104,7 +104,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam verplaats
 
 **Resultaat:** Private API-keys werden volledig afgeschermd van de frontend, waardoor ongeautoriseerd verbruik en financiële risico's direct werden geëlimineerd.
 
-**Kosten & Tijdlijn:** €850 (Secrets Protection Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €850 (Secrets Protection Pakket) - productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
@@ -120,7 +120,7 @@ In Next.js wordt elke omgevingsvariabele met het voorvoegsel `NEXT_PUBLIC_` tijd
 
 ### Hoe beveilig ik een OpenAI- of Anthropic-aanroep in Next.js?
 
-Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder `NEXT_PUBLIC_`), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend — de geheime sleutel verlaat de server daardoor nooit.
+Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder `NEXT_PUBLIC_`), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend - de geheime sleutel verlaat de server daardoor nooit.
 
 ### Hoe sla ik API-sleutels van gebruikers veilig op bij een BYOK-model?
 
@@ -156,7 +156,7 @@ LaunchStudio is het gespecialiseerde fixed-scope aanbod van Manifera voor AI-nat
       "name": "Hoe beveilig ik een OpenAI- of Anthropic-aanroep in Next.js?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder NEXT_PUBLIC_), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend — de geheime sleutel verlaat de server daardoor nooit."
+        "text": "Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder NEXT_PUBLIC_), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend - de geheime sleutel verlaat de server daardoor nooit."
       }
     },
     {

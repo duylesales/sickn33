@@ -1,4 +1,4 @@
-🔥 Elena bouwde een prototype via **Bubble & Pinecone** — als oprichter van een LegalTech SaaS voor advocatenkantoren kreeg ze 2 miljoen documenten te verwerken, maar haar Pinecone-factuur schoot naar €4.000/mnd en de wachttijd steeg naar 6 seconden. 🧠
+🔥 Elena bouwde een prototype via **Bubble & Pinecone** - als oprichter van een LegalTech SaaS voor advocatenkantoren kreeg ze 2 miljoen documenten te verwerken, maar haar Pinecone-factuur schoot naar €4.000/mnd en de wachttijd steeg naar 6 seconden. 🧠
 
 Als uw RAG-architectuur afhankelijk is van losse, beheerde vectordatabases zonder multi-tenant RLS en databaselinking, bezwijkt uw SaaS bij enterprise-volumes.
 
@@ -12,7 +12,7 @@ Als uw RAG-architectuur afhankelijk is van losse, beheerde vectordatabases zonde
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Elena verlaagde haar maandelijkse databasekosten van €4.000 naar €450 en sloot direct drie nieuwe advocatenkantoren aan. (€12.500 (Vectormigratie & pgvector) — binnen 25 werkdagen live). 🚀
+Elena verlaagde haar maandelijkse databasekosten van €4.000 naar €450 en sloot direct drie nieuwe advocatenkantoren aan. (€12.500 (Vectormigratie & pgvector) - binnen 25 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-vector-database-scale-up
 

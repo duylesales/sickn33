@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two offers arrive in the same week. One is from a consultancy or secondment firm: varied clients, fast learning, a cohort of people at your level, a structured training budget. The other is from an organisation with its own data team: one domain, one set of systems, models you will still be responsible for in three years. The salaries are close enough that money will not decide it. What will decide it is which kind of professional you want to become, because these two paths build genuinely different capabilities — and the differences are largest in exactly the areas that AI work depends on.
+Two offers arrive in the same week. One is from a consultancy or secondment firm: varied clients, fast learning, a cohort of people at your level, a structured training budget. The other is from an organisation with its own data team: one domain, one set of systems, models you will still be responsible for in three years. The salaries are close enough that money will not decide it. What will decide it is which kind of professional you want to become, because these two paths build genuinely different capabilities - and the differences are largest in exactly the areas that AI work depends on.
 
 ## The Two Working Lives, Side by Side
 
@@ -80,7 +80,7 @@ Neither column is better. They suit different people and different moments in a 
 
 Every consultancy and secondment firm runs on billable hours. That single fact explains most of what candidates later find surprising.
 
-It explains why time for internal development can evaporate when demand is high, why an assignment you find unrewarding may continue anyway, why people get moved between projects, and why "bench" periods — unassigned time — are viewed nervously by both sides even though you remain employed and paid.
+It explains why time for internal development can evaporate when demand is high, why an assignment you find unrewarding may continue anyway, why people get moved between projects, and why "bench" periods - unassigned time - are viewed nervously by both sides even though you remain employed and paid.
 
 It also explains the positive side: the firm has a strong interest in your skills being current and marketable, because that is what it sells.
 
@@ -90,7 +90,7 @@ Ask directly what the target utilisation is, how much non-billable time is prote
 
 Secondment and staffing arrangements in the Netherlands are regulated, including under the **Waadi**, which covers matters such as the right of seconded workers to equal terms in certain respects and the prohibition on charging workers for placement. If you are being placed with clients, ask which arrangement applies to you.
 
-Check the contract for **non-solicitation and client clauses**. It is common for consultancy contracts to restrict joining a client directly for a period after an assignment. That matters, because being offered a permanent role by a client is one of the most common ways consultancy careers end — usually happily.
+Check the contract for **non-solicitation and client clauses**. It is common for consultancy contracts to restrict joining a client directly for a period after an assignment. That matters, because being offered a permanent role by a client is one of the most common ways consultancy careers end - usually happily.
 
 Check **travel arrangements** as well: which region assignments are drawn from, whether travel time counts as working time, and what is reimbursed. In a country where a client on the other side of the Randstad can mean three hours of daily travel, this is not a detail.
 
@@ -125,7 +125,7 @@ Check **travel arrangements** as well: which region assignments are drawn from, 
 
 ## The Middle Options
 
-Several arrangements sit between the two poles. **Secondment into a single client for a long period** gives some of the depth of in-house with the employment structure of a firm. **Internal consulting teams** inside large organisations — a central data team serving business units — combine variety with belonging. **Product companies serving one sector** give domain depth with several customers rather than one.
+Several arrangements sit between the two poles. **Secondment into a single client for a long period** gives some of the depth of in-house with the employment structure of a firm. **Internal consulting teams** inside large organisations - a central data team serving business units - combine variety with belonging. **Product companies serving one sector** give domain depth with several customers rather than one.
 
 If both offers appeal for different reasons, it is worth asking whether one of these hybrids exists near you before treating the choice as binary.
 
@@ -141,7 +141,7 @@ It is worth knowing how hiring managers interpret these two backgrounds, because
 
 **Titles travel unevenly.** Consultancy ladders often promote faster in title than in scope, and in-house employers discount that when they see it. The reverse also happens: a small in-house team may leave you at one title for years while your actual responsibility grows well past it. In both cases, describe scope rather than relying on the label.
 
-**Sector credibility compounds in-house.** After three years in energy, insurance or healthcare, employers in that sector see you as one of their own, which opens roles that are otherwise hard to reach. Consultancy gives breadth instead — useful for optionality, weaker for belonging.
+**Sector credibility compounds in-house.** After three years in energy, insurance or healthcare, employers in that sector see you as one of their own, which opens roles that are otherwise hard to reach. Consultancy gives breadth instead - useful for optionality, weaker for belonging.
 
 If you are choosing partly on how the next step will look, ask yourself which suspicion you would rather have to answer, because you will be answering one of them.
 
@@ -151,7 +151,7 @@ If you are choosing partly on how the next step will look, ask yourself which su
 
 An engineer joins a consultancy from university. In three years she works at a bank, a manufacturer and a healthcare provider, and learns to orient herself quickly in unfamiliar systems. She also notices a pattern: every assignment ends at the demonstration or the handover, and she has never once seen what happened to a model six months later.
 
-She moves in-house, to a logistics company forty minutes from home, taking a role with a slightly smaller title. The first year is uncomfortable — the variety is gone, and the problems are the same problems.
+She moves in-house, to a logistics company forty minutes from home, taking a role with a slightly smaller title. The first year is uncomfortable - the variety is gone, and the problems are the same problems.
 
 Then the compounding starts. The forecasting system she built in year one is retrained, criticised, repaired and extended in year two, and by year three she has changed how the planning department works. When she interviews later, every conversation focuses on that period rather than on the three consultancy years.
 
@@ -160,14 +160,14 @@ Her own summary: consultancy taught her how to start, in-house taught her how to
 ## Key Takeaways
 
 - Consultancy builds breadth, orientation speed and a professional cohort; in-house builds ownership, domain depth and the feedback loop of living with your own systems.
-- Utilisation explains most of consultancy's behaviour — ask about targets, protected development time, bench periods, travel and assignment choice.
+- Utilisation explains most of consultancy's behaviour - ask about targets, protected development time, bench periods, travel and assignment choice.
 - Check secondment terms, including Waadi-related arrangements and any restriction on joining a client directly.
 - In-house teams vary enormously; ask what is in production, who else is on the team and how people progress.
 - Consultancy suits early career, in-house usually suits mid-career, and doing both in that order is a strong combination.
 
 ## Where to Start
 
-Both types of employer advertise the same job titles, so read the vacancy for who owns the system after it ships — and compare what each kind of employer offers within your own travel radius.
+Both types of employer advertise the same job titles, so read the vacancy for who owns the system after it ships - and compare what each kind of employer offers within your own travel radius.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -193,11 +193,11 @@ Yes. Many people do consultancy early for breadth and move in-house for depth, a
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is consultancy or in-house better for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Neither in general — consultancy builds breadth, in-house builds ownership and depth."}},
+    {"@type": "Question", "name": "Is consultancy or in-house better for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Neither in general - consultancy builds breadth, in-house builds ownership and depth."}},
     {"@type": "Question", "name": "What should I ask a consultancy before accepting?", "acceptedAnswer": {"@type": "Answer", "text": "Utilisation targets, development time, bench arrangements, travel and client clauses."}},
     {"@type": "Question", "name": "Does consultancy work hurt me at mid-career interviews?", "acceptedAnswer": {"@type": "Answer", "text": "It can if you never maintained a system; seek assignments with production follow-up."}},
     {"@type": "Question", "name": "What rules apply to secondment in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "Staffing and secondment are regulated, including under the Waadi; check your arrangement."}},
-    {"@type": "Question", "name": "Can I combine the two paths?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — breadth first, then depth, is a common and effective sequence."}}
+    {"@type": "Question", "name": "Can I combine the two paths?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - breadth first, then depth, is a common and effective sequence."}}
   ]
 }
 </script>

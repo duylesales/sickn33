@@ -11,9 +11,9 @@ The barrier to enterprise AI adoption is not intelligence; it is trust. When an 
 
 Data Provenance is the traceable lineage of information. In a Retrieval-Augmented Generation (RAG) pipeline, your AI searches a database of 10,000 PDFs, extracts a fact, and writes a summary. The user reading the summary will inevitably ask: *"Where did this specific number come from?"*
 
-If your UI cannot immediately answer that question, the user has to manually open the PDFs and search for the number themselves to verify it. If the user has to do the work anyway, your AI software provides zero value — you have simply added a slower, less reliable middle step to a process the user was already capable of doing manually. You must design the interface to prove its own accuracy, every time, without exception.
+If your UI cannot immediately answer that question, the user has to manually open the PDFs and search for the number themselves to verify it. If the user has to do the work anyway, your AI software provides zero value - you have simply added a slower, less reliable middle step to a process the user was already capable of doing manually. You must design the interface to prove its own accuracy, every time, without exception.
 
-This is not a nice-to-have feature you add after product-market fit. It is often the single deciding factor in an enterprise procurement review. Security and compliance teams evaluating a new vendor will specifically ask, "Can your system show its work?" A vague answer sinks the deal. It is worth noting that roughly 45% of AI-generated code ships with some class of security vulnerability when a team skips a dedicated engineering review — the same instinct to "trust the black box" is exactly what a citation UI exists to counteract, on the product side rather than the codebase side.
+This is not a nice-to-have feature you add after product-market fit. It is often the single deciding factor in an enterprise procurement review. Security and compliance teams evaluating a new vendor will specifically ask, "Can your system show its work?" A vague answer sinks the deal. It is worth noting that roughly 45% of AI-generated code ships with some class of security vulnerability when a team skips a dedicated engineering review - the same instinct to "trust the black box" is exactly what a citation UI exists to counteract, on the product side rather than the codebase side.
 
 ## Prompting for Citations
 
@@ -23,13 +23,13 @@ Your System Prompt should be strictly enforced: *"You must answer the user's que
 
 When the LLM outputs the text, it will look like this: *"The Acme Corp contract includes a 30-day termination clause [Doc_2]."*
 
-It helps to also pass back structured metadata alongside each chunk — the page number, the paragraph offset, the document's last-modified date — rather than relying on the LLM to remember and restate that detail. Treat the citation marker as a lightweight pointer, and let your own retrieval layer, not the LLM's memory, be the source of truth for exactly where that chunk lives.
+It helps to also pass back structured metadata alongside each chunk - the page number, the paragraph offset, the document's last-modified date - rather than relying on the LLM to remember and restate that detail. Treat the citation marker as a lightweight pointer, and let your own retrieval layer, not the LLM's memory, be the source of truth for exactly where that chunk lives.
 
 ## Designing the Citation UI (The Hover State)
 
 When the frontend receives the text string containing `[Doc_2]`, it should not just display raw brackets. Your React or Vue frontend must parse those brackets using Regex (or a small streaming-aware parser, since the text may arrive token by token) and convert them into interactive UI elements.
 
-The standard best practice is the **Interactive Tooltip**. The `[Doc_2]` becomes a superscript link, styled subtly enough not to clutter the reading experience but visibly enough to invite a hover. When the user hovers their mouse over the link, a sleek popover appears within roughly 150 milliseconds. This popover displays the exact raw text snippet from the original document that the AI used, along with the document's title, author, and last-modified date. The user can verify the claim in about a second without leaving the page — no new tab, no search, no context switch.
+The standard best practice is the **Interactive Tooltip**. The `[Doc_2]` becomes a superscript link, styled subtly enough not to clutter the reading experience but visibly enough to invite a hover. When the user hovers their mouse over the link, a sleek popover appears within roughly 150 milliseconds. This popover displays the exact raw text snippet from the original document that the AI used, along with the document's title, author, and last-modified date. The user can verify the claim in about a second without leaving the page - no new tab, no search, no context switch.
 
 On mobile or touch devices, hover states don't exist, so the same interaction should degrade to a tap-to-expand accordion beneath the claim. Designing only for desktop hover state is a common oversight that quietly breaks trust-building for an entire class of users.
 
@@ -37,13 +37,13 @@ On mobile or touch devices, hover states don't exist, so the same interaction sh
 
 For high-stakes B2B workflows (like legal discovery, medical record analysis, or financial auditing), tooltips are not enough. The industry standard layout is the **Split-Screen UX**.
 
-The left 40% of the screen is the AI chat or generated report. The right 60% of the screen is a native PDF or document viewer, typically implemented with a library like PDF.js or react-pdf. When the user clicks the citation link on the left, the right pane instantly loads the original source PDF, automatically scrolls to page 47, and physically highlights the exact paragraph in yellow using coordinate data captured at ingestion time. This instantaneous, side-by-side verification builds absolute, unshakable trust between the human professional and the AI agent, because the human is never asked to take the AI's word for it — they're shown the primary source directly, every time.
+The left 40% of the screen is the AI chat or generated report. The right 60% of the screen is a native PDF or document viewer, typically implemented with a library like PDF.js or react-pdf. When the user clicks the citation link on the left, the right pane instantly loads the original source PDF, automatically scrolls to page 47, and physically highlights the exact paragraph in yellow using coordinate data captured at ingestion time. This instantaneous, side-by-side verification builds absolute, unshakable trust between the human professional and the AI agent, because the human is never asked to take the AI's word for it - they're shown the primary source directly, every time.
 
 ## Handling the Case Where No Citation Exists
 
-A mature Citation UI also needs an honest failure state. If the retrieval step returns no relevant documents, or the LLM's claim can't be traced to a specific chunk, the UI must visibly flag that gap — a small "unverified" badge, styled distinctly from a cited claim — rather than silently presenting unsupported text with the same visual confidence as a well-sourced one. Enterprises that adopt AI tools for compliance-adjacent work specifically look for this behavior during evaluation, because a system that only cites when convenient is arguably worse than one that never cites at all: it creates a false sense of universal verifiability.
+A mature Citation UI also needs an honest failure state. If the retrieval step returns no relevant documents, or the LLM's claim can't be traced to a specific chunk, the UI must visibly flag that gap - a small "unverified" badge, styled distinctly from a cited claim - rather than silently presenting unsupported text with the same visual confidence as a well-sourced one. Enterprises that adopt AI tools for compliance-adjacent work specifically look for this behavior during evaluation, because a system that only cites when convenient is arguably worse than one that never cites at all: it creates a false sense of universal verifiability.
 
-As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A citation and provenance layer is exactly this kind of maturity work — it rarely shows up in a founder's first prototype, and it is almost always what separates a tool that gets a paid enterprise pilot from one that gets politely declined. Founded in **2014**, Manifera has applied this same rigor to research-heavy clients like TNO (the Netherlands Organisation for Applied Scientific Research), where traceability of underlying data is a core requirement, not an afterthought.
+As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A citation and provenance layer is exactly this kind of maturity work - it rarely shows up in a founder's first prototype, and it is almost always what separates a tool that gets a paid enterprise pilot from one that gets politely declined. Founded in **2014**, Manifera has applied this same rigor to research-heavy clients like TNO (the Netherlands Organisation for Applied Scientific Research), where traceability of underlying data is a core requirement, not an afterthought.
 
 ## Key Takeaways
 
@@ -73,7 +73,7 @@ He partnered with **LaunchStudio (by Manifera)** to implement vector metadata ci
 
 **Result:** Answers now display clickable link citations pointing directly to PDF pages, raising user trust scores by 90%.
 
-**Cost & Timeline:** €1,550 (Citation Rendering Package) — production-ready and deployed in 4 business days.
+**Cost & Timeline:** €1,550 (Citation Rendering Package) - production-ready and deployed in 4 business days.
 
 ---
 

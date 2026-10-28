@@ -1,4 +1,4 @@
-🔥 Naledi Dube built WriteWise AI — an AI writing assistant in **Cursor** — and shipped a DIY affiliate program with a referral-link system built over a weekend. 🧠
+🔥 Naledi Dube built WriteWise AI - an AI writing assistant in **Cursor** - and shipped a DIY affiliate program with a referral-link system built over a weekend. 🧠
 
 Within a month, three top affiliates disputed missing commissions from mobile-to-desktop conversions, and one refund never got clawed back from a commission already paid out.
 
@@ -12,7 +12,7 @@ Within a month, three top affiliates disputed missing commissions from mobile-to
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-WriteWise AI's affiliate program now reconciles automatically and processes payouts with zero manual corrections. (€2,300 (Launch & Grow Package) — 8 business days.) 🚀
+WriteWise AI's affiliate program now reconciles automatically and processes payouts with zero manual corrections. (€2,300 (Launch & Grow Package) - 8 business days.) 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/affiliate-program-build-vs-hire-cost
 

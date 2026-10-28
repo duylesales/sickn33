@@ -95,13 +95,13 @@ Salaries in Frankfurt's financial sector are among the highest in Germany, and b
 
 ## Living in the Rhine-Main Region
 
-Frankfurt's skyline is unusual for Germany, but the city is compact, green and well connected. Housing is expensive by German standards, and many people live in surrounding cities and towns — Offenbach, Bad Homburg, Darmstadt, Wiesbaden, Mainz or smaller towns — connected by S-Bahn and regional trains. Frankfurt's central location, airport and high-speed rail connections make travel across Europe easy. Check the commute to your employer's exact office: the banking district, Eschborn, the airport area and suburban campuses each require different transport.
+Frankfurt's skyline is unusual for Germany, but the city is compact, green and well connected. Housing is expensive by German standards, and many people live in surrounding cities and towns - Offenbach, Bad Homburg, Darmstadt, Wiesbaden, Mainz or smaller towns - connected by S-Bahn and regional trains. Frankfurt's central location, airport and high-speed rail connections make travel across Europe easy. Check the commute to your employer's exact office: the banking district, Eschborn, the airport area and suburban campuses each require different transport.
 
 ## How OnlyAIJobs Fits a Frankfurt Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Every vacancy is shown at its exact address with the distance from your home, applications go straight to the employer's own page, browsing is free without an account and no employer can pay for higher placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Frankfurt you will find few or no local vacancies there today. Use German and international job portals, bank and institution career pages and your network as primary sources. OnlyAIJobs is useful for comparing Frankfurt with the Netherlands — where financial and technology employers such as Mollie, Accenture and Cegeka list AI roles — and as a method: in a polycentric region with offices in the banking district, Eschborn and near the airport, searching by real commute is essential. Frankfurt employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Frankfurt you will find few or no local vacancies there today. Use German and international job portals, bank and institution career pages and your network as primary sources. OnlyAIJobs is useful for comparing Frankfurt with the Netherlands - where financial and technology employers such as Mollie, Accenture and Cegeka list AI roles - and as a method: in a polycentric region with offices in the banking district, Eschborn and near the airport, searching by real commute is essential. Frankfurt employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## AI in Anti-Money-Laundering and Financial Crime
 
@@ -109,7 +109,7 @@ Financial crime prevention is one of the largest areas of AI work in Frankfurt. 
 
 ## Supervisory and Central Bank Analytics
 
-Central banks and supervisors increasingly use data science — sometimes called "suptech" — to analyse large regulatory datasets, detect risks in bank portfolios, monitor payment systems, process supervisory documents with natural language processing and nowcast economic indicators. Work in these institutions combines economics, statistics and machine learning with a strong emphasis on robustness, transparency and methodological rigour. The environment is international and multilingual, and roles often involve interaction with national authorities across Europe.
+Central banks and supervisors increasingly use data science - sometimes called "suptech" - to analyse large regulatory datasets, detect risks in bank portfolios, monitor payment systems, process supervisory documents with natural language processing and nowcast economic indicators. Work in these institutions combines economics, statistics and machine learning with a strong emphasis on robustness, transparency and methodological rigour. The environment is international and multilingual, and roles often involve interaction with national authorities across Europe.
 
 ## Market Data and Trading Analytics
 
@@ -125,7 +125,7 @@ Large banks offer stability, structured career paths, strong benefits and access
 
 ## Questions to Ask Frankfurt Employers
 
-- Which office will I work in — city centre, Eschborn, near the airport or elsewhere?
+- Which office will I work in - city centre, Eschborn, near the airport or elsewhere?
 - What is the working language of the team and of stakeholders?
 - How long does it take for a model to reach production, and what approvals are involved?
 - Is the role covered by a collective agreement, and how are bonuses determined?
@@ -158,7 +158,7 @@ Darmstadt, Mainz and Wiesbaden each have their own employers and research instit
 
 An ML engineer working on payment fraud at an Amsterdam fintech receives an offer from a Frankfurt bank's transaction monitoring team. The role involves modernising anti-money-laundering systems with machine learning, and the salary is higher than in Amsterdam.
 
-He compares net pay, housing costs in Frankfurt and the surrounding towns and the working culture. He learns that the team works in English but interacts with compliance colleagues in German, and that model changes require validation and documentation before deployment. He accepts and finds a flat in a town along an S-Bahn line. After a year, he says the pace is slower than in fintech, but the scale and the regulatory importance of the work are greater — and his German is improving.
+He compares net pay, housing costs in Frankfurt and the surrounding towns and the working culture. He learns that the team works in English but interacts with compliance colleagues in German, and that model changes require validation and documentation before deployment. He accepts and finds a flat in a town along an S-Bahn line. After a year, he says the pace is slower than in fintech, but the scale and the regulatory importance of the work are greater - and his German is improving.
 
 ## Key Takeaways
 

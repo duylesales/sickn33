@@ -13,7 +13,7 @@ Content Format: Policy Brief
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Data Centres and Regional Employment: What the Jobs Argument Actually Supports",
-  "description": "Employment is routinely cited in Dutch debates about data centre development. The honest picture is smaller and more specific than either side usually claims — and it points to different policy choices.",
+  "description": "Employment is routinely cited in Dutch debates about data centre development. The honest picture is smaller and more specific than either side usually claims - and it points to different policy choices.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-27",
@@ -45,7 +45,7 @@ Direct roles are real and skilled: critical facility engineers, electrical and m
 
 Construction employment during the build phase is substantial and temporary, often drawing on specialised contractors from outside the region.
 
-Indirect employment — maintenance contractors, catering, security services, local suppliers — exists but is dispersed and difficult to attribute confidently.
+Indirect employment - maintenance contractors, catering, security services, local suppliers - exists but is dispersed and difficult to attribute confidently.
 
 What a data centre does not typically bring is software engineering or machine learning employment. Those functions sit with the companies whose workloads run in the facility, and those companies are usually located elsewhere, frequently in another country.
 
@@ -67,9 +67,9 @@ In much of the Netherlands the binding constraint on new economic activity is gr
 
 This changes the nature of the decision. The question is not only whether a data centre is desirable in itself, but what else the same capacity could support: a manufacturer expanding, a housing development electrifying, a horticultural cluster converting away from gas, an electrolyser, a hospital.
 
-For a province or municipality, this makes grid capacity an explicit planning variable rather than a technical detail handled by the network operator. Regions that have started treating it that way — mapping available capacity against economic priorities — are making better decisions than those treating each application in isolation.
+For a province or municipality, this makes grid capacity an explicit planning variable rather than a technical detail handled by the network operator. Regions that have started treating it that way - mapping available capacity against economic priorities - are making better decisions than those treating each application in isolation.
 
-It also creates a negotiating position. A facility that can offer flexibility — reducing demand at peak times, providing local grid services, coordinating its build with network reinforcement — is a materially different proposition from one that simply requests a large firm connection.
+It also creates a negotiating position. A facility that can offer flexibility - reducing demand at peak times, providing local grid services, coordinating its build with network reinforcement - is a materially different proposition from one that simply requests a large firm connection.
 
 ## What to Negotiate, Beyond Jobs
 
@@ -83,7 +83,7 @@ Municipalities and provinces have more leverage in these conversations than they
 
 **Water and cooling transparency**, particularly where cooling affects local water resources.
 
-**Landscape and reuse.** Design quality, screening, and what happens to the site if the facility becomes obsolete — a genuine question given the pace of technological change.
+**Landscape and reuse.** Design quality, screening, and what happens to the site if the facility becomes obsolete - a genuine question given the pace of technological change.
 
 **Local energy participation.** Where renewable generation is developed alongside, community participation structures used for Dutch wind projects can apply.
 
@@ -97,13 +97,13 @@ Three years later the facility is operating with a permanent staff considerably 
 
 Nothing improper occurred. The operator delivered what it always intended. The municipality negotiated on an argument that the facility could never have satisfied, and neglected the conditions it could have obtained.
 
-The next application in that region faces an electorate that no longer believes anything it is told — which is the real cost, and it is paid by the next project rather than by this one.
+The next application in that region faces an electorate that no longer believes anything it is told - which is the real cost, and it is paid by the next project rather than by this one.
 
 ## What Regional Policy Should Actually Optimise For
 
 If the goal is regional technical employment, data centres are not the most efficient instrument available, and it is worth saying so.
 
-The same policy attention directed at the region's existing manufacturers, food processors, logistics operators, hospitals and energy companies — helping them adopt data-driven methods and find the people to run them — produces more technical jobs per unit of land, electricity and political capital.
+The same policy attention directed at the region's existing manufacturers, food processors, logistics operators, hospitals and energy companies - helping them adopt data-driven methods and find the people to run them - produces more technical jobs per unit of land, electricity and political capital.
 
 That does not mean refusing digital infrastructure. It means being clear about which objective each instrument serves. Digital infrastructure serves connectivity, digital sovereignty and specific industrial needs; technical employment is served better by supporting the companies already in the region.
 
@@ -126,10 +126,10 @@ Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss maki
 ## Frequently Asked Questions
 
 ### (Scenario: municipality assessing an application) How many permanent jobs does a large data centre create?
-Modest relative to its footprint — skilled facility, electrical, mechanical, security and monitoring roles rather than software employment.
+Modest relative to its footprint - skilled facility, electrical, mechanical, security and monitoring roles rather than software employment.
 
 ### (Scenario: council member hearing cluster claims) Will a technology cluster follow?
-Generally not — the software and machine learning work sits with the companies using the capacity, usually located elsewhere.
+Generally not - the software and machine learning work sits with the companies using the capacity, usually located elsewhere.
 
 ### (Scenario: province with grid congestion) Why does capacity matter so much?
 Where congestion exists, a large connection granted to one user is unavailable to others, making it an explicit planning choice.
@@ -138,18 +138,18 @@ Where congestion exists, a large connection granted to one user is unavailable t
 Residual heat connection, local training and recruitment commitments, grid flexibility, water transparency and site reuse plans.
 
 ### (Scenario: region wanting technical jobs) Is this the best instrument?
-Usually not — helping existing regional companies adopt data-driven methods produces more technical employment per unit of land and electricity.
+Usually not - helping existing regional companies adopt data-driven methods produces more technical employment per unit of land and electricity.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "How many permanent jobs does a large data centre create?", "acceptedAnswer": {"@type": "Answer", "text": "Modest relative to its footprint — skilled facility, electrical, mechanical, security and monitoring roles."}},
-    {"@type": "Question", "name": "Does a technology cluster follow a data centre?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not — software and machine learning work sits with the companies using the capacity, often elsewhere."}},
+    {"@type": "Question", "name": "How many permanent jobs does a large data centre create?", "acceptedAnswer": {"@type": "Answer", "text": "Modest relative to its footprint - skilled facility, electrical, mechanical, security and monitoring roles."}},
+    {"@type": "Question", "name": "Does a technology cluster follow a data centre?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not - software and machine learning work sits with the companies using the capacity, often elsewhere."}},
     {"@type": "Question", "name": "Why is grid capacity central to data centre decisions?", "acceptedAnswer": {"@type": "Answer", "text": "Where congestion exists, capacity granted to one user is unavailable to others, making it a planning choice."}},
     {"@type": "Question", "name": "What conditions should municipalities negotiate?", "acceptedAnswer": {"@type": "Answer", "text": "Residual heat connection, local training and recruitment commitments, grid flexibility, water transparency and site reuse."}},
-    {"@type": "Question", "name": "Are data centres an efficient way to create regional technical jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not — supporting existing regional companies to adopt data-driven methods produces more jobs per unit of land and power."}}
+    {"@type": "Question", "name": "Are data centres an efficient way to create regional technical jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not - supporting existing regional companies to adopt data-driven methods produces more jobs per unit of land and power."}}
   ]
 }
 </script>

@@ -84,9 +84,9 @@ LaunchStudio's ingenieurs traceerden het probleem naar de initialisatie van de s
 **Resultaat:** voortgangsgegevens overleven nu wissels van apparaten, uitlogactiviteiten en herinstallaties. Fien heeft sindsdien twee van de drie abonnees die waren afgehaakt opnieuw verwelkomd na uitleg van wat er was gebeurd.
 
 > *"Ik wist niet eens dat 'synchroniseren' en 'opslaan' verschillende problemen waren totdat mijn eigen gebruikers begonnen te verdwijnen. LaunchStudio heeft het niet zomaar gerepareerd – ze legden exact uit waarom Cursor het op die manier had gebouwd, zodat ik de architectuur van mijn eigen app voor het eerst daadwerkelijk begreep."*
-> — **Fien Willems, Oprichter, TaalStap (Venlo)**
+> - **Fien Willems, Oprichter, TaalStap (Venlo)**
 
-**Kosten en tijdlijn:** € 1.150 (audit van voortgangssynchronisatie, herbehandeling met server-autoriteit, en regressietesten voor meerdere apparaten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.150 (audit van voortgangssynchronisatie, herbehandeling met server-autoriteit, en regressietesten voor meerdere apparaten) - voltooid in 6 werkdagen.
 
 ---
 

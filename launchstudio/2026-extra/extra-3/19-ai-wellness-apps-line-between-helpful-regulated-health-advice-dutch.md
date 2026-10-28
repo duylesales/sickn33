@@ -55,7 +55,7 @@ Dit is geen oproep om personalisatie te vermijden of terug te trekken naar puur 
 
 [LaunchStudio](https://launchstudio.eu/nl/) helpt AI-native oprichters in de wellness- en fitnesscategorie om concreet na te denken over exact deze grens, waarbij de specifieke personalisatie en taal keuzes in hun product worden gekoppeld aan zowel gegevensverwerking als regelgevende overwegingen, ondersteund door Manifera's bredere ervaring in het helpen van oprichters om oprecht genuanceerde nalevingsvragen te navigeren in plaats van te vervallen in een generiek antwoord.
 
-[Krijg helderheid over waar de uitvoer van uw wellnessproduct daadwerkelijk staat](https://launchstudio.eu/nl/#contact) — de grens is echt, en bevindt zich zelden waar oprichters aanvankelijk aannemen dat deze is.
+[Krijg helderheid over waar de uitvoer van uw wellnessproduct daadwerkelijk staat](https://launchstudio.eu/nl/#contact) - de grens is echt, en bevindt zich zelden waar oprichters aanvankelijk aannemen dat deze is.
 
 ## Een zelfdiagnose: Vijf vragen om uw product op het verloop te plaatsen
 
@@ -86,9 +86,9 @@ Toen een op de gezondheidszorg gerichte adviseur HerstelCoach beoordeelde vooraf
 **Resultaat:** LaunchStudio hielp Fleur om de uitvoertaal van HerstelCoach te herzien naar algemene, duidelijk geframede wellness-suggesties gekoppeld aan expliciete aansporingen om een fysiotherapeut te raadplegen voor alles voorbij algemene begeleiding, samen met een beoordeling van hoe blessuregeschiedenisgegevens werden opgeslagen en beschermd. Hiermee werd de specifieke kloof gedicht die de adviseur had gemarkeerd voordat het een echt probleem werd met de samenwerking met de sportscholen.
 
 > *"Ik had de aanbevelingen geschreven om zelfverzekerd en behulpzaam te klinken, wat op dat moment voelde als een goed productontwerp. Er was een extern gezondheidszorgperspectief voor nodig om er op te wijzen dat 'zelfverzekerd en behulpzaam' was afgedreven naar taal die veel meer klonk als medische sturing dan als algemeen wellness-advies."*
-> — **Fleur Aarts, Oprichter, HerstelCoach (Breda)**
+> - **Fleur Aarts, Oprichter, HerstelCoach (Breda)**
 
-**Kosten en tijdlijn:** € 1.150 (beoordeling van uitvoertaal en gegevensverwerking) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.150 (beoordeling van uitvoertaal en gegevensverwerking) - voltooid in 4 werkdagen.
 
 ---
 
@@ -124,7 +124,7 @@ Personalisatie op basis van algemene voorkeuren en doelen, zonder specifieke gez
       "name": "Loopt elk fitness- of wellness-AI-product het risico op gereguleerd terrein te komen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet elk product — generieke, niet-gepersonaliseerde inhoud blijft buiten deze zorg; personalisatie verhoogt het risico."
+        "text": "Niet elk product - generieke, niet-gepersonaliseerde inhoud blijft buiten deze zorg; personalisatie verhoogt het risico."
       }
     },
     {
@@ -140,7 +140,7 @@ Personalisatie op basis van algemene voorkeuren en doelen, zonder specifieke gez
       "name": "Hoe verhoudt dit zich tot vereisten voor het verwerken van gezondheidsdata?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het zijn afzonderlijke vragen — advies betreft uitvoerimplicaties, terwijl gegevensverwerking opslag en beveiliging betreft."
+        "text": "Het zijn afzonderlijke vragen - advies betreft uitvoerimplicaties, terwijl gegevensverwerking opslag en beveiliging betreft."
       }
     },
     {

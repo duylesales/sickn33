@@ -1,4 +1,4 @@
-💡 Dordrecht sits where several rivers meet, at the heart of the Drechtsteden — a maritime and industrial region next to Rotterdam that most candidates skip.
+💡 Dordrecht sits where several rivers meet, at the heart of the Drechtsteden - a maritime and industrial region next to Rotterdam that most candidates skip.
 
 👉 The work: inland shipping planning (low Rhine water levels are a real optimisation problem), shipbuilding scheduling, predictive maintenance and process optimisation under Seveso III and the EU ETS.
 

@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Lovable Beveiliging: Vijf Lekken Die We Vinden in AI-Gebouwde Apps",
-  "description": "De terugkerende kwetsbaarheden in met AI gebouwde applicaties, uitgelegd zonder technisch jargon: autorisatiefouten in URL's, ontbrekende servercontroles, onbeveiligde uploads, afwezigheid van rate limiting en lekkende foutmeldingen — inclusief hoe u ze zelf test.",
+  "description": "De terugkerende kwetsbaarheden in met AI gebouwde applicaties, uitgelegd zonder technisch jargon: autorisatiefouten in URL's, ontbrekende servercontroles, onbeveiligde uploads, afwezigheid van rate limiting en lekkende foutmeldingen - inclusief hoe u ze zelf test.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-06-07",
@@ -30,19 +30,19 @@ Uw app gebruikt URL-adressen zoals `/factuur/1043` of `/reservering/22`. De pagi
 
 In door AI gegenereerde applicaties is het antwoord vrijwel altijd: nee. De frontend toont immers uitsluitend links naar uw eigen records, dus tijdens het testen probeert u nooit iets anders. Maar de adresbalk is vrij bewerkbaar, en `/factuur/1042` is een volstrekt valide verzoek dat direct door de database wordt beantwoord. Dit type lek staat in vaktermen bekend als een IDOR (Insecure Direct Object Reference).
 
-**Test het zelf binnen twee minuten.** Log in als Gebruiker A, noteer de URL van een dossier of factuur, log vervolgens in als Gebruiker B in een privé-browservenster en open exact datzelfde adres. Ziet u de gegevens van Gebruiker A? Dan heeft u het lek gevonden. Voer deze test uit voor elk datatype dat uw app beheert — boekingen, berichten, documenten en gebruikersprofielen. De oplossing hoort thuis in de databasetoegangsregels (RLS) en servercontroles, niet in het simpelweg verbergen van links in het menu.
+**Test het zelf binnen twee minuten.** Log in als Gebruiker A, noteer de URL van een dossier of factuur, log vervolgens in als Gebruiker B in een privé-browservenster en open exact datzelfde adres. Ziet u de gegevens van Gebruiker A? Dan heeft u het lek gevonden. Voer deze test uit voor elk datatype dat uw app beheert - boekingen, berichten, documenten en gebruikersprofielen. De oplossing hoort thuis in de databasetoegangsregels (RLS) en servercontroles, niet in het simpelweg verbergen van links in het menu.
 
 ## 2. De Controles Leven in de Browser, Waar Iedereen Ze Kan Omzeilen
 
 Een invoerformulier valideert of een kortingscode echt is, of een bestelaantal positief is, of controleert of een gebruiker beheerder is alvorens de knop "Beheerderspaneel" te tonen. Als al die logica uitsluitend in de browser van de bezoeker draait, is het een vrijblijvend advies en geen wet.
 
-Iedereen kan de ontwikkelaarstools openen, de paginacode manipuleren of via een directe API-aanroep verzenden wat diegene wil. De browser is per definitie een onveilige omgeving — het is immers een programma dat draait op de computer van iemand anders, onder diens volledige controle.
+Iedereen kan de ontwikkelaarstools openen, de paginacode manipuleren of via een directe API-aanroep verzenden wat diegene wil. De browser is per definitie een onveilige omgeving - het is immers een programma dat draait op de computer van iemand anders, onder diens volledige controle.
 
 Het praktische gevolg is zelden een spectaculaire hackaanval. Het is een bezoeker die het aantal op `-1` zet en een terugbetaling ontvangt, of een nieuwsgierige klant die ontdekt dat de variabele `is_admin: true` gewoon kan worden meegestuurd in het registratieverzoek. Elke regel die commercieel of juridisch telt, moet onverbiddelijk op de server worden afgedwongen; browsercontroles zijn er uitsluitend voor het gebruiksgemak van eerlijke gebruikers.
 
 ## 3. Iedereen Kan Alles Uploaden, Naar Willekeurige Plekken
 
-Als uw app bestanden accepteert — profielfoto's, cv's, facturen, schaderapporten — bepalen drie vragen of die functie een aanwinst is of een gigantisch risico: welke bestandstypen worden geaccepteerd, hoe groot mogen ze zijn, en wie kan ze achteraf inzien?
+Als uw app bestanden accepteert - profielfoto's, cv's, facturen, schaderapporten - bepalen drie vragen of die functie een aanwinst is of een gigantisch risico: welke bestandstypen worden geaccepteerd, hoe groot mogen ze zijn, en wie kan ze achteraf inzien?
 
 Door AI gegenereerde uploadfuncties antwoorden standaard doorgaans met: "elk bestandstype", "onbeperkte bestandsgrootte" en "iedereen met de link". Die combinatie betekent dat uw opslagfactuur wordt bepaald door uw minst zorgvuldige bezoeker, dat uitvoerbare kwaadaardige software (malware) op uw domein kan worden gehost, en dat een document geüpload door Klant A direct kan worden gedownload door Klant B door simpelweg een bestandsnaam te raden.
 
@@ -52,7 +52,7 @@ De remedie is helder en doelgericht: beperk bestandstypen op de server en niet i
 
 Niets in een standaard met AI gebouwde app weerhoudt een script ervan om uw inlog-endpoint tienduizend keer per minuut aan te roepen, uw contactformulier continu te bestoken, of wachtwoordresets aan te vragen voor elk denkbaar e-mailadres.
 
-De gevolgen variëren van buitengewoon irritant tot financieel pijnlijk. Geautomatiseerde bots vullen uw database met duizenden nepacounts. Herhaalde wachtwoordresetaanvragen veranderen uw transactionele e-mailprovider in een spambron, waardoor uw verzendreputatie wordt vernietigd en legitieme mails niet meer aankomen. En als een endpoint een externe betaalde API aanroept — een adresvalidatiedienst, een AI-taalmodel of een SMS-gateway — verandert een script dat een nachtje doorloopt in een torenhoge factuur.
+De gevolgen variëren van buitengewoon irritant tot financieel pijnlijk. Geautomatiseerde bots vullen uw database met duizenden nepacounts. Herhaalde wachtwoordresetaanvragen veranderen uw transactionele e-mailprovider in een spambron, waardoor uw verzendreputatie wordt vernietigd en legitieme mails niet meer aankomen. En als een endpoint een externe betaalde API aanroept - een adresvalidatiedienst, een AI-taalmodel of een SMS-gateway - verandert een script dat een nachtje doorloopt in een torenhoge factuur.
 
 Rate limiting is het antwoord, en dit moet worden ingericht op de server of de CDN-rand (edge) en niet in de interface. Voor de meeste jonge SaaS-producten is dit een kwestie van een beknopte configuratie, geen maandenlang project.
 
@@ -68,22 +68,22 @@ Het juiste gedrag in productie: een algemene, neutrale melding voor de bezoeker 
 
 Ze delen allemaal dezelfde fundamentele oorzaak. Elk van deze beveiligingsgaten is onzichtbaar tenzij iemand zich doelbewust gedraagt als een tegenstander. En AI-codingtools hebben van nature geen enkel concept van een kwaadwillende actor. Lovable, Bolt, Cursor en Replit zijn gebouwd om te realiseren wat u beschrijft. Dat doen ze fenomenaal goed, wat verklaart waarom 80% van het product binnen enkele dagen live kan staan.
 
-Wat ze echter niet uit zichzelf kunnen, is de kritische vragen stellen: wat als deze persoon niet is wie hij beweert te zijn? Wat als hij een negatief getal invult? Wat als hij dit verzoek een miljoen keer achter elkaar afvuurt? Die denkwijze vormt de resterende 20% — en dat is exact het deel dat bepaalt of uw lancering een triomf wordt of een pijnlijk beveiligingsincident.
+Wat ze echter niet uit zichzelf kunnen, is de kritische vragen stellen: wat als deze persoon niet is wie hij beweert te zijn? Wat als hij een negatief getal invult? Wat als hij dit verzoek een miljoen keer achter elkaar afvuurt? Die denkwijze vormt de resterende 20% - en dat is exact het deel dat bepaalt of uw lancering een triomf wordt of een pijnlijk beveiligingsincident.
 
 ## Een Zelfevaluatie Die U Deze Week Kunt Uitvoeren
 
 - Open een record van een ander account door het ID in de adresbalk aan te passen. Herhaal dit voor elk datatype.
-- Verstuur een formulier met waarden die de interface normaal niet toestaat — een negatief bedrag, een gigantisch aantal, of een zelfverzonnen admin-rol.
+- Verstuur een formulier met waarden die de interface normaal niet toestaat - een negatief bedrag, een gigantisch aantal, of een zelfverzonnen admin-rol.
 - Upload een bestandstype dat niet hoort (zoals een `.exe` of `.html` vermomd als profielfoto) en kijk of de server dit weigert.
 - Klik tweemaal op een wachtwoordreset-link en controleer of deze na de eerste keer direct ongeldig is geworden.
 - Lees de exacte bewoordingen van uw inlogfoutmeldingen bij een foutief e-mailadres versus een foutief wachtwoord.
 - Log uit, en probeer via de "Vorige"-knop van de browser een afgeschermde pagina te heropenen.
 
-Elke actie die slaagt terwijl dat niet zou moeten, is een bevinding. Noteer de punten rustig — de lijst onthult vrijwel altijd een structureel patroon waarin autorisatie op serverniveau ontbreekt, en het aanpakken van het patroon gaat veel sneller dan het oplossen van losse symptomen.
+Elke actie die slaagt terwijl dat niet zou moeten, is een bevinding. Noteer de punten rustig - de lijst onthult vrijwel altijd een structureel patroon waarin autorisatie op serverniveau ontbreekt, en het aanpakken van het patroon gaat veel sneller dan het oplossen van losse symptomen.
 
 ## De Gaten Dichten Zonder De App Opnieuw Te Bouwen
 
-Elk hierboven beschreven probleem kan worden opgelost zonder de interface die u met Lovable heeft gemaakt opnieuw te ontwerpen. Dat is de kern van LaunchStudio: uw frontend blijft onaangeroerd, en de robuuste beveiligingslaag wordt eronder gemonteerd — autorisatieregels per record, validatie verhuisd naar de server, strenge uploadregels, rate limiting en discrete foutafhandeling. Dit is het werk binnen het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), doorgaans uitgevoerd in dagen in plaats van maanden, door de software-engineers van Manifera die al ruim elf jaar productiesystemen beveiligen voor enterprise-opdrachtgevers zoals Vodafone, TNO en CFLW.
+Elk hierboven beschreven probleem kan worden opgelost zonder de interface die u met Lovable heeft gemaakt opnieuw te ontwerpen. Dat is de kern van LaunchStudio: uw frontend blijft onaangeroerd, en de robuuste beveiligingslaag wordt eronder gemonteerd - autorisatieregels per record, validatie verhuisd naar de server, strenge uploadregels, rate limiting en discrete foutafhandeling. Dit is het werk binnen het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), doorgaans uitgevoerd in dagen in plaats van maanden, door de software-engineers van Manifera die al ruim elf jaar productiesystemen beveiligen voor enterprise-opdrachtgevers zoals Vodafone, TNO en CFLW.
 
 Leverde een van de bovenstaande zelfevaluatietests een verontrustend resultaat op? [Stuur ons uw prototypelink](https://launchstudio.eu/nl/#contact) en u ontvangt binnen één werkdag een heldere, vertrouwelijke beoordeling van wat openstaat en wat al veilig is.
 
@@ -107,7 +107,7 @@ Het is uiterst zeldzaam om één van deze gaten geïsoleerd aan te treffen, en d
 
 Een prototype ontstaat door het beschrijven van gewenst gedrag: een gebruiker boekt een les, een taxateur uploadt een schadefoto, een beheerder bekijkt statistieken. Niets in dat creatieve proces stelt de tegenovergestelde vraag: wat gebeurt er als iemand iets doet wat niet in de beschrijving stond?
 
-Daarom verschijnen deze lekken als een samenhangend pakket, en worden ze ook als een pakket opgelost. Zodra een ervaren engineer de app systematisch aan de tand voelt, landen de oplossingen op dezelfde vaste plekken: de database-autorisatielaag (RLS), de server-side validatielaag en de opslagrechten. Dat is waarom een grondige hardening-audit doorgaans aanzienlijk minder kost dan oprichters vrezen — de kwetsbaarheden zijn talrijk, maar de hersteloperatie is uiterst geconcentreerd.
+Daarom verschijnen deze lekken als een samenhangend pakket, en worden ze ook als een pakket opgelost. Zodra een ervaren engineer de app systematisch aan de tand voelt, landen de oplossingen op dezelfde vaste plekken: de database-autorisatielaag (RLS), de server-side validatielaag en de opslagrechten. Dat is waarom een grondige hardening-audit doorgaans aanzienlijk minder kost dan oprichters vrezen - de kwetsbaarheden zijn talrijk, maar de hersteloperatie is uiterst geconcentreerd.
 
 ## Echt voorbeeld
 
@@ -115,16 +115,16 @@ Daarom verschijnen deze lekken als een samenhangend pakket, en worden ze ook als
 
 Ilse Kramer bouwde met Lovable de applicatie ScheldeScan voor een netwerk van zelfstandige autoschade-experts in de regio Dordrecht. Experts fotograferen autoschades, de app slaat de foto's op onder een schadedossiernummer, en verzekeraars ontvangen een link naar het digitale rapport.
 
-De audit bracht vier van de vijf bovenstaande patronen aan het licht. Schadedossiers laadden direct op basis van dossiernummer zonder enige eigendomscontrole, waardoor elke expert de dossiers van alle andere experts kon openen. De fotoupload accepteerde elk bestandstype en bewaarde foto's onder voorspelbare namen in een publiek toegankelijke storage bucket. Daardoor waren alle foto's — inclusief leesbare kentekenplaten en in meerdere gevallen herkenbare huisnummers van autobezitters — voor iedereen met een internetbrowser op te vragen door simpelweg URL's te raden. De rapportagelink kende geen verloopdatum, en het inlogscherm maakte onderscheid tussen onbekende e-mailadressen en foute wachtwoorden.
+De audit bracht vier van de vijf bovenstaande patronen aan het licht. Schadedossiers laadden direct op basis van dossiernummer zonder enige eigendomscontrole, waardoor elke expert de dossiers van alle andere experts kon openen. De fotoupload accepteerde elk bestandstype en bewaarde foto's onder voorspelbare namen in een publiek toegankelijke storage bucket. Daardoor waren alle foto's - inclusief leesbare kentekenplaten en in meerdere gevallen herkenbare huisnummers van autobezitters - voor iedereen met een internetbrowser op te vragen door simpelweg URL's te raden. De rapportagelink kende geen verloopdatum, en het inlogscherm maakte onderscheid tussen onbekende e-mailadressen en foute wachtwoorden.
 
 De herstelwerkzaamheden namen zeven werkdagen in beslag: eigendomscontroles afgedwongen op databaseniveau voor elk schadedossier, uploads strikt begrensd op bestandstype en -grootte met geanonimiseerde willekeurige bestandsnamen en afgeschermde bucket-policies per account, rapportagelinks omgezet naar tijdelijk geldige cryptografisch ondertekende URL's (signed URL's), rate limiting geactiveerd op inloggen en rapportageverzoeken, en inlogfoutmeldingen uniform gemaakt.
 
-**Resultaat:** ScheldeScan slaagde vijf weken later met vlag en wimpel voor de leveranciersveiligheidsaudit van haar eerste grote verzekeraar — een traject dat Ilse eerder tweemaal had moeten uitstellen omdat niemand binnen het team de vragen over toegangsbeveiliging kon beantwoorden.
+**Resultaat:** ScheldeScan slaagde vijf weken later met vlag en wimpel voor de leveranciersveiligheidsaudit van haar eerste grote verzekeraar - een traject dat Ilse eerder tweemaal had moeten uitstellen omdat niemand binnen het team de vragen over toegangsbeveiliging kon beantwoorden.
 
 > *"We stuurden verzekeraars links naar foto's van auto's van hun klanten die iedereen met een browser had kunnen vinden. Er was nog niets misgegaan, maar dat was puur geluk, geen beveiliging."*
-> — **Ilse Kramer, Oprichter, ScheldeScan (Dordrecht)**
+> - **Ilse Kramer, Oprichter, ScheldeScan (Dordrecht)**
 
-**Kosten & Doorlooptijd:** €3.200 (Launch Ready-pakket: toegangsbeveiliging, veilige uploads, rate limiting) — voltooid in 7 werkdagen.
+**Kosten & Doorlooptijd:** €3.200 (Launch Ready-pakket: toegangsbeveiliging, veilige uploads, rate limiting) - voltooid in 7 werkdagen.
 
 ---
 
@@ -132,11 +132,11 @@ De herstelwerkzaamheden namen zeven werkdagen in beslag: eigendomscontroles afge
 
 ### Als er tot nu toe niets is misgegaan, loopt mijn app dan echt gevaar?
 
-Het uitblijven van een incident is geen bewijs van beveiliging — de meeste vroege apps zijn simpelweg nog niet bekend genoeg om de aandacht van kwaadwillenden te trekken. Dat risico slaat direct om zodra u waardevolle klantdata beheert, een concurrent nieuwsgierig wordt, of een willekeurige bezoeker uit nieuwsgierigheid een URL aanpast.
+Het uitblijven van een incident is geen bewijs van beveiliging - de meeste vroege apps zijn simpelweg nog niet bekend genoeg om de aandacht van kwaadwillenden te trekken. Dat risico slaat direct om zodra u waardevolle klantdata beheert, een concurrent nieuwsgierig wordt, of een willekeurige bezoeker uit nieuwsgierigheid een URL aanpast.
 
 ### Kan ik deze kwetsbaarheden zelf oplossen als ik de app met AI heb gebouwd?
 
-Sommige wel — uploadbeperkingen en neutrale foutmeldingen zijn relatief eenvoudig in te stellen. De autorisatielaag is aanzienlijk complexer, omdat een deugdelijke oplossing leeft in databasepolicies en server-side controles in plaats van de frontend, en een halfslachtige fix vaak veilig lijkt terwijl het gat open blijft staan.
+Sommige wel - uploadbeperkingen en neutrale foutmeldingen zijn relatief eenvoudig in te stellen. De autorisatielaag is aanzienlijk complexer, omdat een deugdelijke oplossing leeft in databasepolicies en server-side controles in plaats van de frontend, en een halfslachtige fix vaak veilig lijkt terwijl het gat open blijft staan.
 
 ### Tast het beveiligen van de backend het ontwerp van mijn app aan?
 
@@ -184,7 +184,7 @@ Het verkort het traject doorgaans juist. Het alternatief is immers dat deze teko
       "name": "Waarin verschilt dit van het toevoegen van een inlogscherm?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een inlogscherm controleert identiteit (authenticatie). Deze lekken betreffen bevoegdheden (autorisatie) — legitieme gebruikers die ongehinderd andermans dossiers kunnen inzien."
+        "text": "Een inlogscherm controleert identiteit (authenticatie). Deze lekken betreffen bevoegdheden (autorisatie) - legitieme gebruikers die ongehinderd andermans dossiers kunnen inzien."
       }
     },
     {

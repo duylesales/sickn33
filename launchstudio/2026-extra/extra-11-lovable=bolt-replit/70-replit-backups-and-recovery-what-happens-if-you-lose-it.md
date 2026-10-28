@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-An agent session at eleven in the morning is asked to clean up an unused column. It generates a migration, runs it, and reports success. The column was not unused — a report written four months earlier still read it — and the migration dropped it along with fourteen months of values.
+An agent session at eleven in the morning is asked to clean up an unused column. It generates a migration, runs it, and reports success. The column was not unused - a report written four months earlier still read it - and the migration dropped it along with fourteen months of values.
 
 Nothing is broken. The application runs. The data is gone, and the question that decides how the rest of the week goes is one nobody has asked before: what exactly can be restored, from when, and by whom?
 
@@ -36,13 +36,13 @@ They require different preparations, and planning for one does not cover the oth
 
 **You lose access.** An account closed, a payment method expired, a domain registered by someone unreachable, a workspace belonging to a former collaborator. No data is lost and you cannot reach it, which is the same thing from your customers' point of view.
 
-The second is the one to prepare for, and it is the one platform backups protect against least well — because from the system's perspective, nothing went wrong.
+The second is the one to prepare for, and it is the one platform backups protect against least well - because from the system's perspective, nothing went wrong.
 
 ## What Your Platform Actually Backs Up
 
 Read your provider's documentation rather than assuming, because the coverage is narrower than most people expect.
 
-**Managed databases** typically have automated backups with a retention window, and better tiers offer point-in-time recovery — the ability to restore the state as of a specific moment, which is exactly what the dropped-column scenario needs. Check which you have, and check the retention period, because "we have backups" and "we have backups covering the last seven days" are different sentences when a problem surfaces after three weeks.
+**Managed databases** typically have automated backups with a retention window, and better tiers offer point-in-time recovery - the ability to restore the state as of a specific moment, which is exactly what the dropped-column scenario needs. Check which you have, and check the retention period, because "we have backups" and "we have backups covering the last seven days" are different sentences when a problem surfaces after three weeks.
 
 **Object storage** may or may not have versioning enabled. Without it, an overwritten or deleted file is gone.
 
@@ -50,7 +50,7 @@ Read your provider's documentation rather than assuming, because the coverage is
 
 **Secrets and configuration** are generally not backed up in any useful sense. Losing the environment can mean reconstructing every credential by hand.
 
-**State held in third-party services** — subscriptions at your payment provider, contacts at your email service — is theirs, not yours, and restoring your database to an earlier point does not roll those back. This mismatch is the most awkward part of a real recovery.
+**State held in third-party services** - subscriptions at your payment provider, contacts at your email service - is theirs, not yours, and restoring your database to an earlier point does not roll those back. This mismatch is the most awkward part of a real recovery.
 
 ## The Two Numbers That Define a Backup
 
@@ -60,7 +60,7 @@ Every backup arrangement answers two questions, whether or not anybody has state
 
 **How long can you be down while recovering?** A restore takes time, and a large database takes more. If your answer is "an hour" and you have never timed a restore, you do not have an answer, you have a hope.
 
-Write both numbers down and check your arrangement matches them. Most founders discover the two are out of alignment — either paying for protection they do not need, or assuming protection they do not have.
+Write both numbers down and check your arrangement matches them. Most founders discover the two are out of alignment - either paying for protection they do not need, or assuming protection they do not have.
 
 ## An Untested Restore Is a Hypothesis
 
@@ -88,7 +88,7 @@ Since destruction by authorised action is the most common cause, it is worth def
 
 Independent of the platform's arrangements, keep your own copy somewhere else.
 
-A weekly export of the database and the uploaded files, stored with a different provider, is protection against the third disaster — the one where nothing failed and you simply cannot get in. It also happens to be the answer when a business customer asks whether they can get their data out.
+A weekly export of the database and the uploaded files, stored with a different provider, is protection against the third disaster - the one where nothing failed and you simply cannot get in. It also happens to be the answer when a business customer asks whether they can get their data out.
 
 Automate it, check occasionally that the files are non-empty and recent, and keep enough history that a problem discovered late is still recoverable.
 
@@ -128,22 +128,22 @@ LaunchStudio includes this in production readiness work and in the €49 per mon
 
 ### Fourteen Months of Stock History, Removed in One Migration
 
-Daan Poelman built Voorraadje on Replit: a stock-tracking tool used by six specialist shops around Venlo — a bicycle dealer, two bookshops, a lighting retailer and two hardware stores.
+Daan Poelman built Voorraadje on Replit: a stock-tracking tool used by six specialist shops around Venlo - a bicycle dealer, two bookshops, a lighting retailer and two hardware stores.
 
 An agent session asked to tidy the schema generated a migration removing a column it judged unused. It held the purchase price at which each stock movement had been recorded, which no screen displayed but which the annual valuation report calculated from. Fourteen months of values, across roughly 90,000 stock movements.
 
 Daan discovered it nine days later, when a shop asked for its valuation report and the figures came back as zero.
 
-The recovery was possible and awkward. Automated backups existed with a seven-day retention window, which had passed. Point-in-time recovery was not enabled on his tier. What saved him was a manual export he had taken three months earlier, before an unrelated change, and had left in a folder on his laptop — which meant three months of purchase prices were recoverable and six weeks were not.
+The recovery was possible and awkward. Automated backups existed with a seven-day retention window, which had passed. Point-in-time recovery was not enabled on his tier. What saved him was a manual export he had taken three months earlier, before an unrelated change, and had left in a folder on his laptop - which meant three months of purchase prices were recoverable and six weeks were not.
 
 Seven business days of work: the three-month export restored into a separate database and the missing column reconstructed by matching stock movements on identifier and timestamp; the six irrecoverable weeks reconstructed for four of the six shops from supplier invoices they still had, and written off for the other two after a conversation; point-in-time recovery enabled; a weekly automated export to a second provider configured; versioning enabled on file storage; soft deletion and an audit trail added to the stock tables; the application's database credentials separated from a second set holding destructive rights, so no agent session can drop anything; a rule adopted that migrations touching data are read by Daan and preceded by a manual snapshot; and a restore rehearsed end to end, timed at 34 minutes.
 
 **Result:** the two shops that lost six weeks of valuation history stayed, though Daan describes the conversation as the worst of his working life. Nothing has been lost since, and the restore has been rehearsed twice more.
 
 > *"My backups were seven days old and the mistake was nine days old. Two days. The only reason I recovered anything was a file I had forgotten about on my own laptop."*
-> — **Daan Poelman, Founder, Voorraadje (Venlo)**
+> - **Daan Poelman, Founder, Voorraadje (Venlo)**
 
-**Cost & Timeline:** €3,800 (data reconstruction, point-in-time recovery, independent export automation, soft deletion and audit trail, credential separation, restore rehearsal) — completed in 7 business days.
+**Cost & Timeline:** €3,800 (data reconstruction, point-in-time recovery, independent export automation, soft deletion and audit trail, credential separation, restore rehearsal) - completed in 7 business days.
 
 ## Frequently Asked Questions
 
@@ -153,7 +153,7 @@ Almost certainly not everything. Managed databases usually have automated backup
 
 ### What is the most likely way I lose data?
 
-Not a platform failure. An authorised action — a migration that drops a column, a query without a filter, a bulk delete with the wrong condition. From the system's point of view nothing went wrong, which is why that case needs its own defences.
+Not a platform failure. An authorised action - a migration that drops a column, a query without a filter, a bulk delete with the wrong condition. From the system's point of view nothing went wrong, which is why that case needs its own defences.
 
 ### How do I know my backup works?
 
@@ -165,7 +165,7 @@ It restores the database as of a specific moment rather than the last scheduled 
 
 ### Should I keep my own export as well?
 
-Yes. A weekly export of database and files to a different provider protects against losing access rather than losing data — a closed account, an expired card, a workspace owned by someone unreachable — and answers customers who ask whether they can get their data out.
+Yes. A weekly export of database and files to a different provider protects against losing access rather than losing data - a closed account, an expired card, a workspace owned by someone unreachable - and answers customers who ask whether they can get their data out.
 
 <script type="application/ld+json">
 {
@@ -185,7 +185,7 @@ Yes. A weekly export of database and files to a different provider protects agai
       "name": "What is the most likely way I lose data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An authorised action — a migration dropping a column, an unfiltered query, a bulk delete — rather than a platform failure."
+        "text": "An authorised action - a migration dropping a column, an unfiltered query, a bulk delete - rather than a platform failure."
       }
     },
     {
@@ -209,7 +209,7 @@ Yes. A weekly export of database and files to a different provider protects agai
       "name": "Should I keep my own export as well?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — a weekly export to a different provider protects against losing access rather than losing data, and answers customer data-portability questions."
+        "text": "Yes - a weekly export to a different provider protects against losing access rather than losing data, and answers customer data-portability questions."
       }
     }
   ]

@@ -20,7 +20,7 @@ Target Persona: Technical Solo Founder
 }
 </script>
 
-Ask ten founders what "AI and software engineering" means and you'll get ten different mental models. Some picture two circles that have basically merged into one — if the AI wrote it, it's engineered. Others picture a fast typist sitting entirely outside the discipline, producing text that merely resembles code. Both models are wrong, and the space between them is exactly where production incidents come from. The honest answer is that AI and software engineering overlap in specific, nameable ways — and diverge in ways that matter just as much, even though the divergence is invisible until something breaks in front of real users.
+Ask ten founders what "AI and software engineering" means and you'll get ten different mental models. Some picture two circles that have basically merged into one - if the AI wrote it, it's engineered. Others picture a fast typist sitting entirely outside the discipline, producing text that merely resembles code. Both models are wrong, and the space between them is exactly where production incidents come from. The honest answer is that AI and software engineering overlap in specific, nameable ways - and diverge in ways that matter just as much, even though the divergence is invisible until something breaks in front of real users.
 
 ## Where the overlap is genuinely real
 
@@ -28,46 +28,46 @@ Modern AI coding tools are excellent at the parts of engineering that are patter
 
 ## Where the overlap quietly stops
 
-But engineering has always meant more than producing syntax that compiles. It means reasoning about what happens when two users touch the same record at the same time. It means deciding which trade-off to accept when speed and safety pull in different directions. It means anticipating the case nobody asked about because the spec didn't mention it. AI tools are prediction engines — they generate the statistically likely next lines of code based on patterns in their training data. They do not sit back and ask, "what happens if this function is called twice in the same second by two different users?" unless a person prompts them to consider it. That question is still, stubbornly, a human one.
+But engineering has always meant more than producing syntax that compiles. It means reasoning about what happens when two users touch the same record at the same time. It means deciding which trade-off to accept when speed and safety pull in different directions. It means anticipating the case nobody asked about because the spec didn't mention it. AI tools are prediction engines - they generate the statistically likely next lines of code based on patterns in their training data. They do not sit back and ask, "what happens if this function is called twice in the same second by two different users?" unless a person prompts them to consider it. That question is still, stubbornly, a human one.
 
 ## Why solo founders conflate the two anyway
 
-The conflation happens because AI-generated output looks finished. It runs. It returns the right response in your one test. It reads like code a senior engineer would write, because it was trained on code senior engineers wrote. But "runs without error in the one scenario I tried" and "engineered correctly for concurrent, adversarial, production conditions" are different bars entirely — and only one of them is visible from inside a code editor before launch.
+The conflation happens because AI-generated output looks finished. It runs. It returns the right response in your one test. It reads like code a senior engineer would write, because it was trained on code senior engineers wrote. But "runs without error in the one scenario I tried" and "engineered correctly for concurrent, adversarial, production conditions" are different bars entirely - and only one of them is visible from inside a code editor before launch.
 
 ## A practical line to draw before you ship
 
-A useful rule: if a feature involves state shared between more than one user — bookings, shifts, inventory counts, payments, anything with a limited quantity that multiple people can claim — treat the AI's output as a first draft, not a deliverable. Get a review pass, human or otherwise, specifically looking for what happens under concurrency, before that feature reaches real users.
+A useful rule: if a feature involves state shared between more than one user - bookings, shifts, inventory counts, payments, anything with a limited quantity that multiple people can claim - treat the AI's output as a first draft, not a deliverable. Get a review pass, human or otherwise, specifically looking for what happens under concurrency, before that feature reaches real users.
 
-LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and our team in Amsterdam works with founders on exactly this handoff — the point where AI-generated code needs a second, engineering-trained set of eyes before it meets real traffic. You can see how that review fits into a launch with our [step-by-step process](https://launchstudio.eu/en/#process), and Manifera's own [custom software development](https://www.manifera.com/services/custom-software-development/) work shows the same discipline applied at enterprise scale.
+LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and our team in Amsterdam works with founders on exactly this handoff - the point where AI-generated code needs a second, engineering-trained set of eyes before it meets real traffic. You can see how that review fits into a launch with our [step-by-step process](https://launchstudio.eu/en/#process), and Manifera's own [custom software development](https://www.manifera.com/services/custom-software-development/) work shows the same discipline applied at enterprise scale.
 
 ## Five Signs a Feature Needs Engineering Judgment, Not Just a Prompt
 
-Shared state — two people touching the same booking, shift, or balance — is the clearest trigger for a review pass, but it's not the only one, and treating it as the sole warning sign leaves other categories of engineering judgment quietly unreviewed. Five patterns predict, reliably, that a feature needs a second look before it reaches real users, regardless of how clean the AI's output reads on a first pass through the code.
+Shared state - two people touching the same booking, shift, or balance - is the clearest trigger for a review pass, but it's not the only one, and treating it as the sole warning sign leaves other categories of engineering judgment quietly unreviewed. Five patterns predict, reliably, that a feature needs a second look before it reaches real users, regardless of how clean the AI's output reads on a first pass through the code.
 
-1. **Money changes hands, even indirectly.** Payments, credits, refunds, and anything that decrements a stored balance need explicit handling for partial failures — a charge that succeeds while the corresponding database write doesn't, or the reverse. AI-generated code reliably handles the case where both steps succeed together and rarely reasons through what happens when only one of them does.
-2. **A calculation touches time zones, rounding, or currency conversion.** These are quiet sources of bugs that don't look like bugs at all — a booking that's technically one hour off, a total that's a cent out because of rounding order, a "tomorrow" that means something different to two users in different regions. Each is individually small and collectively expensive to a user's trust in the product.
-3. **An external service can fail mid-operation.** A payment processor, an email provider, an AI API call embedded in the product itself — any step where the app needs to land in a known, deliberate state whether the external call succeeds, times out, or returns something malformed. A generic catch-all that logs the error and moves on isn't the same as a person deciding what the user actually sees next.
-4. **A record can be edited by more than one person, even at different times.** This is broader than the same-instant concurrency case already covered — it includes a record edited offline and reconciled later, or a shared document two admins update on their own separate schedules. The specific rule for whose edit wins in a conflict is a judgment call every time, not something an AI tool infers from a prompt that never mentioned the scenario.
+1. **Money changes hands, even indirectly.** Payments, credits, refunds, and anything that decrements a stored balance need explicit handling for partial failures - a charge that succeeds while the corresponding database write doesn't, or the reverse. AI-generated code reliably handles the case where both steps succeed together and rarely reasons through what happens when only one of them does.
+2. **A calculation touches time zones, rounding, or currency conversion.** These are quiet sources of bugs that don't look like bugs at all - a booking that's technically one hour off, a total that's a cent out because of rounding order, a "tomorrow" that means something different to two users in different regions. Each is individually small and collectively expensive to a user's trust in the product.
+3. **An external service can fail mid-operation.** A payment processor, an email provider, an AI API call embedded in the product itself - any step where the app needs to land in a known, deliberate state whether the external call succeeds, times out, or returns something malformed. A generic catch-all that logs the error and moves on isn't the same as a person deciding what the user actually sees next.
+4. **A record can be edited by more than one person, even at different times.** This is broader than the same-instant concurrency case already covered - it includes a record edited offline and reconciled later, or a shared document two admins update on their own separate schedules. The specific rule for whose edit wins in a conflict is a judgment call every time, not something an AI tool infers from a prompt that never mentioned the scenario.
 5. **Permissions differ by role, not just by login state.** Anything with an admin, a manager, and a regular user sitting on the same feature needs an explicit, server-side rule for what each role can see and do. AI tools reliably generate "is this user logged in" and far less reliably generate "is this specific user, in this specific role, allowed to do this specific thing."
 
-None of these five require a full security audit to check — most take an experienced engineer a few focused minutes per feature, specifically looking for the scenario rather than reading the whole codebase end to end. What they require is knowing to look before a feature actually meets the exact condition — a concurrent edit, a failed payment mid-flow, a role boundary nobody specified — that the original build was never tested against in the first place.
+None of these five require a full security audit to check - most take an experienced engineer a few focused minutes per feature, specifically looking for the scenario rather than reading the whole codebase end to end. What they require is knowing to look before a feature actually meets the exact condition - a concurrent edit, a failed payment mid-flow, a role boundary nobody specified - that the original build was never tested against in the first place.
 
 ## Real example
 
 ### An AI-Native Founder in Action: The Shift Nobody Was Supposed to Double-Book
 
-Bente Bennebroek, founder in Bennebroek, built RoosterKoppel — a shift-swap tool for retail teams — using Cursor. Because the AI had written clean, readable code that passed her manual walkthrough, Bente treated "AI and software engineering" as interchangeable and skipped a dedicated code review pass entirely. Her reasoning was straightforward: the AI had already engineered it, so what would a review even find?
+Bente Bennebroek, founder in Bennebroek, built RoosterKoppel - a shift-swap tool for retail teams - using Cursor. Because the AI had written clean, readable code that passed her manual walkthrough, Bente treated "AI and software engineering" as interchangeable and skipped a dedicated code review pass entirely. Her reasoning was straightforward: the AI had already engineered it, so what would a review even find?
 
 What it would have found was a race condition in the shift-swap logic. When two employees tapped "claim" on the same open shift within moments of each other, both requests read the shift as available before either write completed, and both claims went through. The bug didn't show up in testing because testing happened one click at a time. It showed up three weeks after launch, when two servers at the same retail chain arrived for the same shift and neither manager could explain why the app had confirmed both.
 
-LaunchStudio's engineers, backed by Manifera, traced the issue to a missing database-level lock on the claim operation — the kind of concurrency check that AI tools rarely generate unprompted because nothing in a single-user test ever triggers it. They added row-level locking around the claim transaction and a status check that rejects a second claim the instant the first is committed, then wrote a small test suite specifically simulating simultaneous claims so the same class of bug couldn't slip through again.
+LaunchStudio's engineers, backed by Manifera, traced the issue to a missing database-level lock on the claim operation - the kind of concurrency check that AI tools rarely generate unprompted because nothing in a single-user test ever triggers it. They added row-level locking around the claim transaction and a status check that rejects a second claim the instant the first is committed, then wrote a small test suite specifically simulating simultaneous claims so the same class of bug couldn't slip through again.
 
 **Result:** Double-booked shifts dropped to zero across three retail chains using RoosterKoppel, and Bente added a standing review step for any feature touching shared state.
 
-> *"I thought 'the AI engineered it' meant the job was done. It meant the typing was done — the engineering judgment was still mine to add."*
-> — **Bente Bennebroek, Founder, RoosterKoppel (Bennebroek)**
+> *"I thought 'the AI engineered it' meant the job was done. It meant the typing was done - the engineering judgment was still mine to add."*
+> - **Bente Bennebroek, Founder, RoosterKoppel (Bennebroek)**
 
-**Cost & Timeline:** €650 (concurrency audit, fix, and regression tests) — completed in 3 business days.
+**Cost & Timeline:** €650 (concurrency audit, fix, and regression tests) - completed in 3 business days.
 
 ---
 
@@ -79,7 +79,7 @@ Not automatically. AI-generated code is often syntactically correct and function
 
 ### What kinds of features need a human review pass most urgently?
 
-Anything involving shared or limited state — bookings, shifts, inventory, payments, or any resource multiple users could claim at once — because these are exactly the scenarios single-user testing won't surface.
+Anything involving shared or limited state - bookings, shifts, inventory, payments, or any resource multiple users could claim at once - because these are exactly the scenarios single-user testing won't surface.
 
 ### Does LaunchStudio review AI-generated code from tools like Cursor, Lovable, or Bolt?
 
@@ -87,7 +87,7 @@ Yes. LaunchStudio's team, backed by Manifera's 11+ years of production engineeri
 
 ### How do I know if my app has a race condition like RoosterKoppel's?
 
-A common tell is a feature that behaves correctly when tested alone but produces inconsistent results under simultaneous use — two bookings for one slot, two withdrawals of the same balance, or duplicate claims on a shared resource.
+A common tell is a feature that behaves correctly when tested alone but produces inconsistent results under simultaneous use - two bookings for one slot, two withdrawals of the same balance, or duplicate claims on a shared resource.
 
 ### Where is LaunchStudio's engineering team based?
 

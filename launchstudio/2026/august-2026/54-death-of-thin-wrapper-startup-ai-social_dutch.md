@@ -1,4 +1,4 @@
-🔥 William bouwde een prototype met **Lovable** — William, een juridisch medewerker, bouwde een PDF-zoektool, maar zag zijn gebruikersaantallen direct dalen toen OpenAI standaard PDF-uploads introduceerde. 🧠
+🔥 William bouwde een prototype met **Lovable** - William, een juridisch medewerker, bouwde een PDF-zoektool, maar zag zijn gebruikersaantallen direct dalen toen OpenAI standaard PDF-uploads introduceerde. 🧠
 
 De ondergang van dunne AI-wrappers dwingt founders om 'Thick Wrappers' te bouwen met diepe API-koppelingen, persistente geheugenstructuren en agentic actieworkflows.
 
@@ -12,7 +12,7 @@ De ondergang van dunne AI-wrappers dwingt founders om 'Thick Wrappers' te bouwen
 
 Bij **LaunchStudio** lossen we exact dit type diepe backend-architectuur en RAG-verrijking op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Williams zoekportaal werd een onvervangbare enterprise-tool: De zoekrelevantie steeg met 85% dankzij maatwerk vectordatabases met lokale regelgeving, waardoor B2B-klanten behouden bleven. (€2.900 (Vector Search Tuning Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
+Williams zoekportaal werd een onvervangbare enterprise-tool: De zoekrelevantie steeg met 85% dankzij maatwerk vectordatabases met lokale regelgeving, waardoor B2B-klanten behouden bleven. (€2.900 (Vector Search Tuning Pakket) - productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/death-of-thin-wrapper-startup-ai
 

@@ -84,9 +84,9 @@ LaunchStudio's team beoordeelde de BuurtBord-codebase en voegde een moderatielaa
 **Resultaat:** BuurtBord behield zijn AI-hoogtepuntfunctie, maar geen door AI geselecteerde inhoud bereikt een buurtfeed zonder eerst door een beleidscontrole te gaan. Floor kan nu exact zien wat de AI heeft gemarkeerd en waarom.
 
 > *"Ik bouwde de hoogtepuntfunctie om BuurtBord tot leven te laten komen. Ik heb er nooit één keer over nagedacht wat er gebeurt wanneer de AI het slechtste bericht kiest om het 'tot leven' mee te brengen."*
-> — **Floor Achterberg, Oprichter, BuurtBord (Nieuwegein)**
+> - **Floor Achterberg, Oprichter, BuurtBord (Nieuwegein)**
 
-**Kosten en tijdlijn:** € 950 (moderatielaag voor zowel gebruikersberichten als door AI gegenereerde samenvattingen, plus een beheerbeoordelingswachtrij) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 950 (moderatielaag voor zowel gebruikersberichten als door AI gegenereerde samenvattingen, plus een beheerbeoordelingswachtrij) - voltooid in 6 werkdagen.
 
 ---
 

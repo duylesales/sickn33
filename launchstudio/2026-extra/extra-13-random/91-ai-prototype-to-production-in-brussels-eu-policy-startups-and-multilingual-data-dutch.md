@@ -24,7 +24,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
 
 Rond het Luxemburgplein en Schuman bouwt een bepaald soort oprichter met AI: voormalige beleidsmedewerkers, consultants en NGO-medewerkers die precies weten hoe pijnlijk het is om een wetgevingsdossier in meerdere talen te volgen door commissies, amendementen en triloogonderhandelingen. Met Cursor of Lovable bouwen ze in een paar weken volgdashboards, tools om amendementen te vergelijken en door AI gegenereerde briefings. Dat AI-prototype in Brussel naar productie brengen betekent echter klanten bedienen die ongewoon gevoelig zijn voor vertrouwelijkheid, taal en betrouwbaarheid op precies de momenten die ertoe doen.
 
-## Wie de Klanten Zijn — en Wat Ze Verwachten
+## Wie de Klanten Zijn - en Wat Ze Verwachten
 
 Beleidstools in Brussel worden doorgaans verkocht aan NGO's, brancheverenigingen, public-affairsbureaus, advocatenkantoren en soms overheidsinstanties. Deze klanten delen verwachtingen die de bouw bepalen:
 
@@ -36,7 +36,7 @@ Beleidstools in Brussel worden doorgaans verkocht aan NGO's, brancheverenigingen
 
 ## Van AI-Prototype naar Productie voor Beleidstools: Vertrouwelijkheid tussen Klanten
 
-Veel beleidstools zijn multi-tenant: meerdere organisaties gebruiken één platform, soms aan tegengestelde kanten van hetzelfde dossier. Scheiding moet in de database worden afgedwongen — elke notitie, tag, stakeholderregistratie en opgeslagen zoekopdracht afgebakend tot de organisatie — en getest met negatieve tests. Gedeelde openbare data (wetgevingsdocumenten, stemmingen) staat apart van privédata van klanten, zodat een query op openbare data nooit kan samenvoegen met de notities van een andere klant.
+Veel beleidstools zijn multi-tenant: meerdere organisaties gebruiken één platform, soms aan tegengestelde kanten van hetzelfde dossier. Scheiding moet in de database worden afgedwongen - elke notitie, tag, stakeholderregistratie en opgeslagen zoekopdracht afgebakend tot de organisatie - en getest met negatieve tests. Gedeelde openbare data (wetgevingsdocumenten, stemmingen) staat apart van privédata van klanten, zodat een query op openbare data nooit kan samenvoegen met de notities van een andere klant.
 
 ## Meertalige Data Goed Geregeld
 
@@ -74,11 +74,11 @@ Bij het naar productie brengen van een AI-prototype in de beleidswereld is de be
 | Privédata van klanten | Notities, stakeholderkaarten, standpunten, tags, opgeslagen zoekopdrachten | Eén organisatie | Tabellen per tenant met RLS |
 | Van klanten afgeleide content | AI-samenvattingen met privénotities | Eén organisatie | Per tenant, nooit gedeeld |
 
-De cruciale regel: privédata stroomt nooit naar gedeelde content. Een AI-samenvatting die de notities van één klant verwerkt, moet alleen voor die klant worden opgeslagen en getoond — ook als het onderliggende openbare document wordt gedeeld.
+De cruciale regel: privédata stroomt nooit naar gedeelde content. Een AI-samenvatting die de notities van één klant verwerkt, moet alleen voor die klant worden opgeslagen en getoond - ook als het onderliggende openbare document wordt gedeeld.
 
 ## Officiële Bronnen Betrouwbaar Importeren
 
-Beleidstools hangen af van regelmatige imports uit openbare bronnen zoals EU-databases, parlementaire websites en officiële publicatiebladen. Importeren op productieniveau draait als geplande achtergrondtaken, slaat ruwe brondocumenten op met tijdstempels van ophalen en versie-identificatoren, detecteert wijzigingen tussen versies, gaat met storingen bij bronnen om via nieuwe pogingen en meldingen, en legt vast op welke versie elke samenvatting is gebaseerd. Monitoring hoort te waarschuwen als een verwachte update niet binnenkomt — geen nieuwe amendementen tijdens een plenaire week is waarschijnlijker een mislukte import dan een rustige week.
+Beleidstools hangen af van regelmatige imports uit openbare bronnen zoals EU-databases, parlementaire websites en officiële publicatiebladen. Importeren op productieniveau draait als geplande achtergrondtaken, slaat ruwe brondocumenten op met tijdstempels van ophalen en versie-identificatoren, detecteert wijzigingen tussen versies, gaat met storingen bij bronnen om via nieuwe pogingen en meldingen, en legt vast op welke versie elke samenvatting is gebaseerd. Monitoring hoort te waarschuwen als een verwachte update niet binnenkomt - geen nieuwe amendementen tijdens een plenaire week is waarschijnlijker een mislukte import dan een rustige week.
 
 ## Traceerbare AI-Samenvattingen
 
@@ -98,7 +98,7 @@ Beleidsgebruikers zoeken over talen en terminologievarianten heen. Sla de taal v
 
 ## Toegangsbeheer voor Vertrouwelijke Standpunten
 
-Binnen één klantorganisatie hoort niet iedereen alles te zien. Public-affairsteams beperken bepaalde dossiers — gevoelige onderhandelingen, interne standpunten — vaak tot bij naam genoemde leden. Ondersteun rechten op het niveau van map of dossier binnen een organisatie, afgedwongen in de database, met auditlogs van wie afgeschermd materiaal heeft bekeken. Meerfactorauthenticatie voor alle gebruikers is gezien de gevoeligheid van de inhoud een redelijke standaard.
+Binnen één klantorganisatie hoort niet iedereen alles te zien. Public-affairsteams beperken bepaalde dossiers - gevoelige onderhandelingen, interne standpunten - vaak tot bij naam genoemde leden. Ondersteun rechten op het niveau van map of dossier binnen een organisatie, afgedwongen in de database, met auditlogs van wie afgeschermd materiaal heeft bekeken. Meerfactorauthenticatie voor alle gebruikers is gezien de gevoeligheid van de inhoud een redelijke standaard.
 
 ## Inkoopdocumentatie voor Verenigingen en Overheidsinstanties
 
@@ -110,7 +110,7 @@ Vóór plenaire weken en belangrijke stemmingen: bevestig dat de importtaken gez
 
 ## Transparantie over AI-Gebruik
 
-Beleidsklanten letten bijzonder op transparantie over AI: welke modellen worden gebruikt, of hun data modellen traint, waar verwerking plaatsvindt en hoe met fouten wordt omgegaan. Een duidelijke openbare pagina die uw AI-gebruik beschrijft — en instellingen waarmee organisaties kunnen weigeren dat hun privénotities door AI worden verwerkt — spreekt deze zorgen direct aan en onderscheidt een serieus product van een snel prototype.
+Beleidsklanten letten bijzonder op transparantie over AI: welke modellen worden gebruikt, of hun data modellen traint, waar verwerking plaatsvindt en hoe met fouten wordt omgegaan. Een duidelijke openbare pagina die uw AI-gebruik beschrijft - en instellingen waarmee organisaties kunnen weigeren dat hun privénotities door AI worden verwerkt - spreekt deze zorgen direct aan en onderscheidt een serieus product van een snel prototype.
 
 ## Een Taalbeleid voor een Brussels Product
 
@@ -118,7 +118,7 @@ Producten uit Brussel bedienen vaak gebruikers die tegelijk in het Engels, Frans
 
 ## Meldingen Zonder Overbelasting
 
-Beleidsprofessionals volgen veel dossiers en kunnen makkelijk worden overspoeld met meldingen. Laat gebruikers de frequentie van meldingen kiezen (direct, dagelijkse samenvatting, wekelijks), filteren op commissie, fase of trefwoord, en meldingen ontvangen in hun voorkeurstaal. Verstuur meldingen via betrouwbare transactionele e-mail met geauthenticeerde domeinen, en neem in elke melding een link naar de bron op. Goed ontworpen meldingen zijn vaak de functie die klanten het meest waarderen — en de functie die de meeste supportvragen oplevert als ze slecht zijn ingericht.
+Beleidsprofessionals volgen veel dossiers en kunnen makkelijk worden overspoeld met meldingen. Laat gebruikers de frequentie van meldingen kiezen (direct, dagelijkse samenvatting, wekelijks), filteren op commissie, fase of trefwoord, en meldingen ontvangen in hun voorkeurstaal. Verstuur meldingen via betrouwbare transactionele e-mail met geauthenticeerde domeinen, en neem in elke melding een link naar de bron op. Goed ontworpen meldingen zijn vaak de functie die klanten het meest waarderen - en de functie die de meeste supportvragen oplevert als ze slecht zijn ingericht.
 
 ## Beveiligingsverwachtingen van Belangenorganisaties
 
@@ -134,7 +134,7 @@ Controleer of een AI-samenvatting of gedeelde weergave ooit de privénotities va
 
 ## Waarom Brusselse Oprichters een Voorsprong Hebben
 
-Oprichters die binnen de EU-beleidswereld hebben gewerkt, begrijpen de dagelijkse werkelijkheid van hun gebruikers op een manier die buitenstaanders niet kunnen: het ritme van commissieweken, het belang van amendementnummers, de nuances tussen talen en de gevoeligheid van stakeholderrelaties. AI-tools laten hen die kennis snel in software omzetten. Wat de software tot een product maakt waarvoor verenigingen, NGO's en overheidsinstanties willen betalen, is de productielaag — strikte scheiding tussen klanten, traceerbare samenvattingen, betrouwbaar importeren en documentatie die voldoet aan de inkoop. Met beide op hun plek kan een kleine Brusselse startup geloofwaardig concurreren met veel grotere informatieaanbieders, omdat ze inzicht van binnenuit combineert met de betrouwbaarheid die die klanten vereisen.
+Oprichters die binnen de EU-beleidswereld hebben gewerkt, begrijpen de dagelijkse werkelijkheid van hun gebruikers op een manier die buitenstaanders niet kunnen: het ritme van commissieweken, het belang van amendementnummers, de nuances tussen talen en de gevoeligheid van stakeholderrelaties. AI-tools laten hen die kennis snel in software omzetten. Wat de software tot een product maakt waarvoor verenigingen, NGO's en overheidsinstanties willen betalen, is de productielaag - strikte scheiding tussen klanten, traceerbare samenvattingen, betrouwbaar importeren en documentatie die voldoet aan de inkoop. Met beide op hun plek kan een kleine Brusselse startup geloofwaardig concurreren met veel grotere informatieaanbieders, omdat ze inzicht van binnenuit combineert met de betrouwbaarheid die die klanten vereisen.
 
 ## Onthoud
 
@@ -142,13 +142,13 @@ Openbare data kan worden gedeeld; inzichten van klanten nooit. Bouw elke functie
 
 ## Breng Uw Datastromen in Kaart
 
-Teken uw datastromen op één pagina — openbare bronnen erin, klantnotities erin, samenvattingen en meldingen eruit — en markeer elke plek waar privédata en openbare data elkaar raken. Elk kruispunt heeft een expliciete regel en een test nodig.
+Teken uw datastromen op één pagina - openbare bronnen erin, klantnotities erin, samenvattingen en meldingen eruit - en markeer elke plek waar privédata en openbare data elkaar raken. Elk kruispunt heeft een expliciete regel en een test nodig.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio brengt met AI gebouwde beleids- en belangenbehartigingstools naar productie: scheiding tussen tenants met tests, meertalige omgang met data en zoeken, traceerbare AI-samenvattingen met grenzen aan data, importeren en caching op de achtergrond voor piekweken, hosting in de EU en inkoopdocumentatie — met behoud van de interface die u bouwde. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring, wiens Europese kantoor aan de Herengracht 420 in Amsterdam op minder dan drie uur met de trein van Brussel ligt, met engineering in Ho Chi Minh-stad en een hub in Singapore. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/); [EUR-Lex](https://eur-lex.europa.eu/) van de EU is de referentiebron waarop de meeste beleidstools voortbouwen.
+LaunchStudio brengt met AI gebouwde beleids- en belangenbehartigingstools naar productie: scheiding tussen tenants met tests, meertalige omgang met data en zoeken, traceerbare AI-samenvattingen met grenzen aan data, importeren en caching op de achtergrond voor piekweken, hosting in de EU en inkoopdocumentatie - met behoud van de interface die u bouwde. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring, wiens Europese kantoor aan de Herengracht 420 in Amsterdam op minder dan drie uur met de trein van Brussel ligt, met engineering in Ho Chi Minh-stad en een hub in Singapore. Zie [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/); [EUR-Lex](https://eur-lex.europa.eu/) van de EU is de referentiebron waarop de meeste beleidstools voortbouwen.
 
-[Beschrijf uw project](https://launchstudio.eu/nl/#contact) — in het Engels of Frans.
+[Beschrijf uw project](https://launchstudio.eu/nl/#contact) - in het Engels of Frans.
 
 ## Praktijkvoorbeeld
 
@@ -156,16 +156,16 @@ LaunchStudio brengt met AI gebouwde beleids- en belangenbehartigingstools naar p
 
 Camille Lenaerts, die acht jaar bij een milieu-NGO in Brussel werkte, bouwde Dossierwatch met Cursor: organisaties volgen wetgevingsdossiers, ontvangen door AI gegenereerde samenvattingen van nieuwe amendementen in het Engels en Frans, brengen standpunten van stakeholders in kaart en delen interne notities. Tweeëntwintig NGO's en drie brancheverenigingen hadden een abonnement.
 
-De IT-verantwoordelijke van een branchevereniging stelde tijdens de onboarding een scherpe vraag: konden andere abonnees — waaronder NGO's die tegen hen campagne voerden — hun stakeholdernotities zien? Het eerlijke antwoord was dat het van de pagina afhing. De review vond filters per organisatie in de interface, maar een zoek-endpoint dat overeenkomende notities van alle organisaties teruggaf. Privénotities werden naar een AI-model gestuurd om "samenvattingen te verbeteren", zonder dat klanten dat wisten. Samenvattingen waren niet gekoppeld aan de versies van de amendementen die ze beschreven, en één samenvatting had een amendement verkeerd toegeschreven nadat een document was bijgewerkt. Franse termen met accenten werden niet gevonden, en tijdens de vorige plenaire week werd de site tergend traag omdat samenvattingen bij het laden van de pagina werden gegenereerd.
+De IT-verantwoordelijke van een branchevereniging stelde tijdens de onboarding een scherpe vraag: konden andere abonnees - waaronder NGO's die tegen hen campagne voerden - hun stakeholdernotities zien? Het eerlijke antwoord was dat het van de pagina afhing. De review vond filters per organisatie in de interface, maar een zoek-endpoint dat overeenkomende notities van alle organisaties teruggaf. Privénotities werden naar een AI-model gestuurd om "samenvattingen te verbeteren", zonder dat klanten dat wisten. Samenvattingen waren niet gekoppeld aan de versies van de amendementen die ze beschreven, en één samenvatting had een amendement verkeerd toegeschreven nadat een document was bijgewerkt. Franse termen met accenten werden niet gevonden, en tijdens de vorige plenaire week werd de site tergend traag omdat samenvattingen bij het laden van de pagina werden gegenereerd.
 
 In twaalf werkdagen dwongen de engineers van LaunchStudio scheiding per organisatie af met row level security en negatieve tests, stopten ze met het naar het model sturen van privénotities tenzij een organisatie daarvoor kiest, koppelden ze elke samenvatting aan de versies van brondocumenten met opnieuw genereren als bronnen veranderen, voegden ze AI-labels en een reviewstatus toe, implementeerden ze meertalig zoeken dat ongevoelig is voor accenten, verplaatsten ze het genereren van samenvattingen en het importeren naar achtergrondtaken met monitoring, cachten ze openbare dossierpagina's en stelden ze een beschrijving van beveiliging en data op die klaar is voor inkoop, met de AI-aanbieder vermeld als verwerker.
 
 **Resultaat:** De branchevereniging tekende, en de volgende plenaire week verliep met snelle laadtijden. Dossierwatch heeft er sindsdien elf organisaties bij, waarvan verschillende de databeschrijving bij de inkoop noemden.
 
 > *"Mijn klanten zijn het beroepshalve met elkaar oneens. Het enige waarover ze het allemaal eens moesten zijn, was dat het platform hun notities gescheiden hield."*
-> — **Camille Lenaerts, Oprichter, Dossierwatch (Brussel)**
+> - **Camille Lenaerts, Oprichter, Dossierwatch (Brussel)**
 
-**Kosten & Tijdlijn:** € 3.700 (Launch & Grow-pakket: scheiding tussen tenants, grenzen aan AI-data, traceerbare samenvattingen, meertalig zoeken en prestaties bij pieken) — afgerond in 12 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 3.700 (Launch & Grow-pakket: scheiding tussen tenants, grenzen aan AI-data, traceerbare samenvattingen, meertalig zoeken en prestaties bij pieken) - afgerond in 12 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
@@ -175,7 +175,7 @@ Strikte scheiding tussen klantorganisaties, traceerbare AI-samenvattingen, meert
 
 ### Kunnen klanten door AI gegenereerde beleidsbriefings vertrouwen?
 
-Als elke samenvatting verwijst naar de exacte bronversies, als door AI gegenereerd is gelabeld en door een mens kan worden beoordeeld, kunnen klanten haar verifiëren — en dat is wat vertrouwen opbouwt.
+Als elke samenvatting verwijst naar de exacte bronversies, als door AI gegenereerd is gelabeld en door een mens kan worden beoordeeld, kunnen klanten haar verifiëren - en dat is wat vertrouwen opbouwt.
 
 ### Moeten notities van klanten naar een AI-model worden gestuurd?
 
@@ -187,7 +187,7 @@ Via zijn kantoor in Amsterdam op korte treinafstand en engineeringcapaciteit in 
 
 ### Hoe kan een beleidstool zichtbaar worden in AI-gestuurd zoeken?
 
-Publiceer duidelijke, goed gestructureerde openbare pagina's over de dossiers en onderwerpen die u volgt, met gekoppelde bronnen. AI-antwoordmachines geven de voorkeur aan precieze content met bronnen — en dat is ook wat beleidsprofessionals vertrouwen.
+Publiceer duidelijke, goed gestructureerde openbare pagina's over de dossiers en onderwerpen die u volgt, met gekoppelde bronnen. AI-antwoordmachines geven de voorkeur aan precieze content met bronnen - en dat is ook wat beleidsprofessionals vertrouwen.
 
 <script type="application/ld+json">
 {

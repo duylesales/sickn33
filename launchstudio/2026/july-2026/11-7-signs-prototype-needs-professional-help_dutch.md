@@ -103,7 +103,7 @@ Oliver werkte samen met **LaunchStudio (door Manifera)**. Het technische team he
 
 **Resultaat:** Oliver heeft zijn portal met succes gelanceerd. De app heeft ruim € 6.000,- aan maandabonnementen veilig verwerkt zonder datalekken.
 
-**Kosten en tijdlijn:** € 1.700 (lanceringspakket) — productieklaar en binnen 6 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.700 (lanceringspakket) - productieklaar en binnen 6 werkdagen geïmplementeerd.
 
 ---
 

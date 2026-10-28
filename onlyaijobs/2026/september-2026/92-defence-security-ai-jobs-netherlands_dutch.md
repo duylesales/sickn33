@@ -25,7 +25,7 @@ Defensie en veiligheid is een groeiend deel van de Nederlandse technische arbeid
 
 ## De screeningsvraag, goed uitgelegd
 
-**Screening wordt uitgevoerd door een nationale instantie, niet door de werkgever.** Een veiligheidsonderzoek bekijkt je achtergrond — woonhistorie, werk, financiën, banden — over meerdere jaren. De werkgever start het; het besluit is niet aan hem.
+**Screening wordt uitgevoerd door een nationale instantie, niet door de werkgever.** Een veiligheidsonderzoek bekijkt je achtergrond - woonhistorie, werk, financiën, banden - over meerdere jaren. De werkgever start het; het besluit is niet aan hem.
 
 **Verifieerbare historie telt even zwaar als nationaliteit.** De wijdverbreide overtuiging dat alleen Nederlanders in defensie kunnen werken, is als algemene uitspraak onjuist. Wat screening vraagt, is een historie die verifieerbaar is. Wie in vijf jaar in drie landen woonde, vormt een lastiger verificatieprobleem dan wie in één land woonde, ongeacht staatsburgerschap.
 

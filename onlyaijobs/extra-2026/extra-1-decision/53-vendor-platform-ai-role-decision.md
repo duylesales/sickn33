@@ -35,11 +35,11 @@ Content Format: Decision Guide
 }
 </script>
 
-The vacancy says machine learning, and the interview reveals something different: the organisation has bought a platform. A supplier provides the models — demand forecasting, document classification, fraud scoring, scheduling — and the role is to make it work here, keep it working and answer for it when it does not. For candidates who trained to build models, this can feel like a demotion dressed up as an AI job. Sometimes it is. Increasingly often it is not, because the difficult part of applied AI in a mid-sized Dutch organisation was never the algorithm, and the people who can make a bought system genuinely work are scarcer than the people who can train one.
+The vacancy says machine learning, and the interview reveals something different: the organisation has bought a platform. A supplier provides the models - demand forecasting, document classification, fraud scoring, scheduling - and the role is to make it work here, keep it working and answer for it when it does not. For candidates who trained to build models, this can feel like a demotion dressed up as an AI job. Sometimes it is. Increasingly often it is not, because the difficult part of applied AI in a mid-sized Dutch organisation was never the algorithm, and the people who can make a bought system genuinely work are scarcer than the people who can train one.
 
 ## Why Organisations Buy Rather Than Build
 
-The reasoning is usually sound. Building requires a team, a platform, monitoring, retraining, documentation and continuity — a standing commitment most organisations of moderate size cannot staff. A supplier offers a working system next quarter with a support contract behind it.
+The reasoning is usually sound. Building requires a team, a platform, monitoring, retraining, documentation and continuity - a standing commitment most organisations of moderate size cannot staff. A supplier offers a working system next quarter with a support contract behind it.
 
 Regulation has pushed in the same direction. Compliance obligations around AI and personal data are substantial, and buying from a supplier who has done the documentation work is attractive. It does not, however, remove your organisation's own responsibilities: under the AI Act, an organisation using a system has obligations of its own, including in areas such as human oversight, monitoring and using the system in accordance with the instructions provided. Someone internally has to understand and discharge those.
 
@@ -76,7 +76,7 @@ There is also a lock-in risk. Deep expertise in one supplier's product is valuab
 ## Questions That Reveal Which Version You Are Being Offered
 
 - **Who evaluates whether the system works on our data?** If the answer is "the supplier", the role is configuration.
-- **What would I build myself?** Pipelines, integrations, monitoring, reporting — or nothing.
+- **What would I build myself?** Pipelines, integrations, monitoring, reporting - or nothing.
 - **Can we see the model's behaviour, or only its outputs?** Determines whether meaningful analysis is possible.
 - **Who is accountable if the system produces a wrong or unfair outcome?** Under the AI Act and privacy rules there must be an answer; if nobody knows, that is a finding.
 - **What happens at contract renewal, and who advises on it?**
@@ -90,7 +90,7 @@ There is also a lock-in risk. Deep expertise in one supplier's product is valuab
 - The data engineering around the system is real and yours.
 - The role includes advising on whether to continue, extend or replace the system, which is genuine influence.
 - You want to move towards governance, ML oversight or a lead role where judgement matters more than implementation.
-- The alternative is a role with no production systems at all — a running bought system beats a prototype nobody uses.
+- The alternative is a role with no production systems at all - a running bought system beats a prototype nobody uses.
 
 ## When to Decline
 
@@ -118,9 +118,9 @@ Every purchased system reaches a contract renewal, and that moment is the most i
 
 What the conversation needs is not an opinion but a comparison: what the system produces, what the previous process produced, what a simple internal alternative would produce, what the total cost is including your own time and the integration work, and what switching would cost.
 
-Preparing that requires exactly the work worth doing anyway — a retained test period, a baseline, monitoring history and a record of incidents and supplier responses. Start collecting it in your first months, because the year before renewal is too late to reconstruct it.
+Preparing that requires exactly the work worth doing anyway - a retained test period, a baseline, monitoring history and a record of incidents and supplier responses. Start collecting it in your first months, because the year before renewal is too late to reconstruct it.
 
-Three outcomes are common. The system is clearly better and is renewed on better terms, because you now know its weaknesses. The system is adequate for some cases and not others, producing a hybrid where internal work supplements it — often the best result technically and the most interesting for you. Or the system is not justifying itself, and the organisation builds, replaces or stops.
+Three outcomes are common. The system is clearly better and is renewed on better terms, because you now know its weaknesses. The system is adequate for some cases and not others, producing a hybrid where internal work supplements it - often the best result technically and the most interesting for you. Or the system is not justifying itself, and the organisation builds, replaces or stops.
 
 Whichever it is, the person who produced the evidence becomes the person consulted about what happens next. That is a materially different position from the one described in the original vacancy, and it is reachable from inside almost any platform role.
 
@@ -144,7 +144,7 @@ An engineer joins a housing organisation that has purchased a maintenance predic
 
 Rather than accept the role as defined, he asks a question nobody had asked: how do we know it is better than what we did before? There is no answer, because the supplier's accuracy figures are based on their general model, not on this housing stock.
 
-Over two months he builds a comparison — a simple internal model on historical maintenance data, a shared test period and a clear metric. The purchased system wins on some property types and loses on others, particularly older stock, which turns out to be most of the portfolio.
+Over two months he builds a comparison - a simple internal model on historical maintenance data, a shared test period and a clear metric. The purchased system wins on some property types and loses on others, particularly older stock, which turns out to be most of the portfolio.
 
 The finding changes the relationship with the supplier and produces a hybrid arrangement, with internal adjustments layered on the purchased predictions. His role changes with it: evaluation, monitoring and the data pipelines are now his, and he advises on renewal.
 
@@ -153,14 +153,14 @@ Two years later he applies elsewhere. The interview spends almost no time on the
 ## Key Takeaways
 
 - Buying rather than building is a rational choice for many Dutch organisations, and it creates real internal work rather than removing it.
-- The role has three versions — configurator, owner-integrator and evaluator-governor — and only the first is a poor career move.
+- The role has three versions - configurator, owner-integrator and evaluator-governor - and only the first is a poor career move.
 - Transferable value lies in independent evaluation, data integration, monitoring, governance literacy and supplier management.
 - The gaps are modelling depth and experimentation, plus the lock-in risk of becoming an expert in one supplier's product.
 - If you accept, build your own baseline, own the data layer, write the evaluation framework and learn the deployer obligations properly.
 
 ## Where to Start
 
-Ask in the first interview who evaluates the system on the organisation's own data — and compare the answer with what other employers within your travel radius are building internally.
+Ask in the first interview who evaluates the system on the organisation's own data - and compare the answer with what other employers within your travel radius are building internally.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -189,7 +189,7 @@ Build an internal baseline for comparison, own the data layer, keep general skil
     {"@type": "Question", "name": "Is working with a bought AI system bad for my career?", "acceptedAnswer": {"@type": "Answer", "text": "Not if you own evaluation, integration and monitoring; only configuration-only roles stall careers."}},
     {"@type": "Question", "name": "How do I tell which version of the role this is?", "acceptedAnswer": {"@type": "Answer", "text": "Ask who evaluates on your data, what you would build and who is accountable for wrong outcomes."}},
     {"@type": "Question", "name": "What transfers from this work?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluation, data engineering, monitoring, governance literacy and supplier management."}},
-    {"@type": "Question", "name": "Does buying a system remove the organisation's responsibility?", "acceptedAnswer": {"@type": "Answer", "text": "No — organisations using AI carry their own obligations, including oversight and monitoring."}},
+    {"@type": "Question", "name": "Does buying a system remove the organisation's responsibility?", "acceptedAnswer": {"@type": "Answer", "text": "No - organisations using AI carry their own obligations, including oversight and monitoring."}},
     {"@type": "Question", "name": "How do I avoid becoming locked into one platform?", "acceptedAnswer": {"@type": "Answer", "text": "Build an internal baseline, own the data layer and keep general skills current."}}
   ]
 }

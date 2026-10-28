@@ -10,7 +10,7 @@ One global MSA, four subsidiaries. Eighteen months later: a blocked German rollo
 ✅ **Time-Zone-Aligned Delivery Teams:** Regional development capacity structured around local working hours, not headquarters convenience.
 ✅ **Explicit Governance Scope:** Clear rules for what's centrally mandated versus regionally delegated, so shadow vendors never become necessary.
 
-Global consistency and local fit aren't opposites — they just need a structure that actually separates them. 🏗️
+Global consistency and local fit aren't opposites - they just need a structure that actually separates them. 🏗️
 
 👉 Read our full deep dive on global vendors vs regional partners for multi-subsidiary enterprises: https://www.manifera.com/blog/multi-subsidiary-enterprises-one-global-vendor-or-regional-partners
 

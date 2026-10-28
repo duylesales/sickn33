@@ -38,13 +38,13 @@ Emmen is a city of roughly 107,000 people in southeast Drenthe, close to the Ger
 
 Process industry data work is consistently underrated by engineers who have not encountered it, and polymer processing in particular has characteristics that make it demanding.
 
-**The product is defined by properties, not composition alone.** A polymer's usefulness depends on molecular weight distribution, crystallinity, mechanical strength, thermal behaviour and appearance. These properties emerge from processing conditions — temperature profiles, shear, residence time, cooling rate — in ways that are related to the underlying physics but not simply calculable from it. Predicting end-use properties from process settings is a genuine modelling problem.
+**The product is defined by properties, not composition alone.** A polymer's usefulness depends on molecular weight distribution, crystallinity, mechanical strength, thermal behaviour and appearance. These properties emerge from processing conditions - temperature profiles, shear, residence time, cooling rate - in ways that are related to the underlying physics but not simply calculable from it. Predicting end-use properties from process settings is a genuine modelling problem.
 
 **Measurement lags production.** Many quality properties require laboratory testing that takes hours. By the time you know a batch is off-specification, you have made more of it. This is precisely the situation soft sensors address: inferring the laboratory measurement from continuously available process data so that correction can happen in time to matter.
 
 **Processes are continuous and coupled.** As covered in the food manufacturing analysis, continuous processes break the discrete-record assumption. Material flows through vessels with residence time distributions, so relating an output measurement to input conditions requires estimating a variable and distributed delay. Additionally, chemical processes are strongly coupled: changing temperature to fix one property affects three others.
 
-**Transitions are where the value is.** A plant running steadily at a known good operating point is not where problems occur. Grade changes — switching production from one product specification to another — generate off-specification material, consume time and are where a meaningful share of waste arises. Optimising transitions is commercially valuable and technically interesting because it is inherently dynamic rather than steady-state.
+**Transitions are where the value is.** A plant running steadily at a known good operating point is not where problems occur. Grade changes - switching production from one product specification to another - generate off-specification material, consume time and are where a meaningful share of waste arises. Optimising transitions is commercially valuable and technically interesting because it is inherently dynamic rather than steady-state.
 
 **Energy intensity makes optimisation directly valuable.** Chemical processing consumes substantial energy, and energy prices have made reduction financially urgent rather than merely virtuous. A percentage point of energy reduction on a continuous plant is real money.
 
@@ -121,7 +121,7 @@ It is worth closing on the trade honestly, because both sides are real.
 
 The constraints are genuine: a non-growing regional employer base, thinning services over a long horizon, professional isolation risk, and limited options if the role does not work out. Those should not be minimised.
 
-Against them, process industry offers something scarce. The problems are physically grounded and do not go out of fashion. The skills — soft sensing, dynamic optimisation, working with continuous data and physical constraints — transfer to every process sector, which means chemicals, pharmaceuticals, food, water, energy and materials anywhere in Europe. Plants of this kind exist in industrial regions across the continent, and someone who can demonstrably improve yield or reduce energy at one is employable at another.
+Against them, process industry offers something scarce. The problems are physically grounded and do not go out of fashion. The skills - soft sensing, dynamic optimisation, working with continuous data and physical constraints - transfer to every process sector, which means chemicals, pharmaceuticals, food, water, energy and materials anywhere in Europe. Plants of this kind exist in industrial regions across the continent, and someone who can demonstrably improve yield or reduce energy at one is employable at another.
 
 That is the honest shape of the offer: a narrow local market, a durable and portable specialisation, and a set of regional conditions that are manageable if you go in with clear eyes and unmanageable if you assume they will improve.
 
@@ -159,7 +159,7 @@ If those four describe you, process industry offers a career with unusual durabi
 - Polymer process data work is genuinely demanding: properties emerge from processing conditions in ways not simply calculable, quality measurement lags production, and continuous flow breaks discrete-record assumptions.
 - Grade transitions rather than steady operation are where the waste and the opportunity sit, and they are inherently dynamic problems.
 - Recycled material introduces a newer problem class where input variability is the central challenge rather than an inconvenience.
-- Southeast Drenthe has declining population, a non-growing employer base and thinning services over a long horizon — real conditions to weigh, not reasons to dismiss the region.
+- Southeast Drenthe has declining population, a non-growing employer base and thinning services over a long horizon - real conditions to weigh, not reasons to dismiss the region.
 - Recruitment difficulty improves your position but raises the risk of being the only person doing your work.
 - With German, the cross-border market genuinely offsets local thinness; without it, options are narrow.
 
@@ -175,13 +175,13 @@ Browse current AI, machine learning and data vacancies in and around Emmen at [o
 End-use properties emerge from processing conditions in ways related to physics but not simply calculable, quality measurement lags production by hours, and continuous flow means relating outputs to inputs requires estimating a variable, distributed delay.
 
 ### (Scenario: candidate curious where the value sits) Why focus on grade transitions rather than steady operation?
-Steady operation at a known good point is not where problems occur. Switching between product specifications generates off-specification material and consumes time, so a meaningful share of total waste arises there — and it is a dynamic rather than steady-state problem.
+Steady operation at a known good point is not where problems occur. Switching between product specifications generates off-specification material and consumes time, so a meaningful share of total waste arises there - and it is a dynamic rather than steady-state problem.
 
 ### (Scenario: candidate considering relocation) How much should the shrinking population matter to me?
 Enough to weigh explicitly. The employer base is not growing, so your options do not expand over time, and services thin over a long horizon. It is a reason for deliberate choice rather than dismissal.
 
 ### (Scenario: international candidate) Does the German border help here?
-Substantially, if you speak German — northwest Germany has significant chemical and mechanical engineering industry within driving distance. Without German, your realistic options narrow to the local cluster plus a long Groningen commute.
+Substantially, if you speak German - northwest Germany has significant chemical and mechanical engineering industry within driving distance. Without German, your realistic options narrow to the local cluster plus a long Groningen commute.
 
 ### (Scenario: candidate deciding on a specialisation) Who does well in process industry data work?
 Engineers who want a measurable number attached to their work, prefer deep understanding of one system over breadth, accept that physics and safety envelopes constrain optimisation, and do not need their tools to be new.

@@ -7,7 +7,7 @@
 
 **The Manifera Solution:**
 ✅ **Upfront Discovery Discipline:** Narrow the cone of uncertainty before writing code through wireframes, API schemas, and explicit architectural scopes.
-✅ **Transparent Line-Item Breakdown:** Every phase — design, backend engineering, QA testing, and app store release — is priced transparently.
+✅ **Transparent Line-Item Breakdown:** Every phase - design, backend engineering, QA testing, and app store release - is priced transparently.
 ✅ **Hybrid Team Efficiency:** Combines Dutch strategic management in Amsterdam with senior engineering pods in Vietnam to maximize ROI without cutting corners.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️

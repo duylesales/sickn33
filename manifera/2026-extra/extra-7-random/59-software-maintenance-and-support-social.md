@@ -1,4 +1,4 @@
-🚨 The commonly cited "15-20% of development cost" maintenance rule of thumb is a reasonable starting estimate that a meaningful share of real systems exceed. It's not a plan — it's a guess. 💶⚙️
+🚨 The commonly cited "15-20% of development cost" maintenance rule of thumb is a reasonable starting estimate that a meaningful share of real systems exceed. It's not a plan - it's a guess. 💶⚙️
 
 **The Pain Points:**
 ❌ **One Generic Percentage:** Blended development, integration, and domain complexity into a single number.

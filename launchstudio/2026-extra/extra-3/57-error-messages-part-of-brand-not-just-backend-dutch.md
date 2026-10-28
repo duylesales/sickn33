@@ -55,13 +55,13 @@ Het behandelen van foutmeldingen als een echte ontwerptaak, en niet als een tech
 
 [LaunchStudio](https://launchstudio.eu/nl/) behandelt foutmeldingen als een echte ontwerp-overweging gedurende productieverharding. Wij zorgen ervoor dat technisch correcte foutafhandeling ook gepast communiceert naar de daadwerkelijke klant die de storing meemaakt, ondersteund door Manifera's bredere erkenning dat vertrouwen onevenredig wordt opgebouwd en verloren op exact deze momenten met hoge belangen en hoge emoties.
 
-[Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product](https://launchstudio.eu/nl/#contact) — het moment dat er iets faalt is onevenredig invloedrijk op hoe een klant over u denkt.
+[Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product](https://launchstudio.eu/nl/#contact) - het moment dat er iets faalt is onevenredig invloedrijk op hoe een klant over u denkt.
 
 ## Niet elke storing verdient dezelfde toon
 
 Het behandelen van "foutmeldingen" als een enkele ontwerptaak heeft de neiging om één herschreven sjabloon op te leveren dat overal uniform wordt toegepast. Dit is een verbetering ten opzichte van rauwe technische tekst, maar mist nog steeds dat verschillende categorieën storingen vragen om oprecht verschillende tonen en inhoud, en niet alleen een warmere versie van dezelfde generieke formulering.
 
-**Een invoerfout van een gebruiker is de eigen fout van de klant, en het bericht moet behulpzaam voelen, en niet bestraffend.** Een verplicht veld leeg gelaten, een ongeldige e-mailindeling, een wachtwoord dat niet aan de vereisten voldoet – deze hebben specifieke, actiegerichte taal nodig die de klant exact vertelt wat hij moet herstellen. Dit in een toon die uitgaat van goede trouw in plaats van een die leest als een correctie. "Dat ziet er niet uit als een geldig e-mailadres — vind je het erg om het te dubbelchecken?" komt heel anders binnen dan "Ongeldige invoer."
+**Een invoerfout van een gebruiker is de eigen fout van de klant, en het bericht moet behulpzaam voelen, en niet bestraffend.** Een verplicht veld leeg gelaten, een ongeldige e-mailindeling, een wachtwoord dat niet aan de vereisten voldoet – deze hebben specifieke, actiegerichte taal nodig die de klant exact vertelt wat hij moet herstellen. Dit in een toon die uitgaat van goede trouw in plaats van een die leest als een correctie. "Dat ziet er niet uit als een geldig e-mailadres - vind je het erg om het te dubbelchecken?" komt heel anders binnen dan "Ongeldige invoer."
 
 **Een systeem- of backendfout is voor de klant geen zichtbare schuld van iemand, en het bericht moet dat duidelijk nemen.** Wanneer er iets breekt aan uw kant – een serverfout, een database-timeout – is de eerlijke, vertrouwenbehoudende stap een bericht dat de storing duidelijk erkent, bevestigt dat er naar gekeken wordt en vermijdt te suggereren dat de klant iets verkeerd heeft gedaan. Een generieke fouttoon toegepast op een systeemstoring kan immers onbedoeld overkomen als het beschuldigen van de klant voor iets dat volledig buiten zijn controle ligt.
 
@@ -84,9 +84,9 @@ Een klant die een echte, geïsoleerde rimpel bij de betalingsverwerking meemaakt
 **Resultaat:** LaunchStudio herschreef KlantContact's foutmeldingen over elk storingspunt om te matchen met dezelfde warme, specifieke, behulpzame stem die elders in het product al ingesteld was. Hiermee werd een kloof gedicht waar het moment dat het meest waarschijnlijk het klantvertrouwen zou doen wankelen, tot dan toe de minste bewuste ontwerpaandacht had ontvangen van elk onderdeel van het gehele product.
 
 > *"Ik had zoveel oprechte zorg besteed aan elk onderdeel van de ervaring, behalve exact de momenten waarop er daadwerkelijk iets brak. Dat bleken precies de momenten te zijn waarop de indruk van een klant het meest kwetsbaar was. Eén rauwe technische foutmelding deed in dat enkele moment meer vertrouwen teniet dan weken van zorgvuldige onboarding-tekst had opgebouwd."*
-> — **Bo Kramer, Oprichter, KlantContact (Haarlem)**
+> - **Bo Kramer, Oprichter, KlantContact (Haarlem)**
 
-**Kosten en tijdlijn:** € 600 (ontwerp van foutmeldingen en herschrijven over alle storingspunten) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 600 (ontwerp van foutmeldingen en herschrijven over alle storingspunten) - voltooid in 2 werkdagen.
 
 ---
 

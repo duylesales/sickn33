@@ -8,7 +8,7 @@ A security questionnaire is a risk assessment, not a pass/fail exam checking whe
 ❌ Reconstructing a sub-processor list from memory under the exact pressure that causes mistakes
 
 ✅ Pair every honest "no" with what you do instead, specifically
-✅ Enforce MFA across the whole team the same day — a settings change, not a project
+✅ Enforce MFA across the whole team the same day - a settings change, not a project
 ✅ Write a short, real incident response commitment before a questionnaire asks for one
 ✅ Keep the sub-processor list current so this section takes minutes, not days
 

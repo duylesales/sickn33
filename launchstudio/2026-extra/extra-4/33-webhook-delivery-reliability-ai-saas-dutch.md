@@ -74,7 +74,7 @@ async function sendWebhook(url, payload, secret, attempt = 1) {
 
 Het leveringslogboek doet er evenveel toe als de herhaallogica. Het is wat een oprichter – of het ondersteuningsteam van zijn klant – laat antwoorden op "is deze gebeurtenis daadwerkelijk geleverd" zonder te gokken. Manifera's ingenieurs, puttend uit 11+ jaar ervaring in integratiewerk in productie, behandelen een leveringslogboek als niet-onderhandelbaar voor elk B2B SaaS-product waar het stroomafwaartse systeem van een klant afhankelijk is van het aankomen van uw gebeurtenissen.
 
-## Levering is niet exact-één-keer — Ontwerp de ontvangende kant daar voor
+## Levering is niet exact-één-keer - Ontwerp de ontvangende kant daar voor
 
 Het toevoegen van herhaalpogingen herstelt stille storingen, maar het introduceert een feit waar de meeste met AI gegenereerde integraties nooit rekening mee houden: op het moment dat herhaalpogingen bestaan, is de levering niet langer exact-één-keer. Het is minstens-één-keer. Als een ontvangende server een gebeurtenis succesvol verwerkt maar de bevestiging ervan raakt verloren tijdens het transport, zal de herhaallogica van de verzender – exact werkend zoals ontworpen – diezelfde gebeurtenis opnieuw leveren. Elke grote webhook-provider (Stripe, GitHub, Slack) documenteert dit expliciet en verwacht dat de ontvanger het afhandelt. De meeste door oprichters gebouwde integraties doen dat niet, omdat een demo nooit het scenario met een vertraagde bevestiging activeert dat het veroorzaakt.
 
@@ -110,9 +110,9 @@ LaunchStudio's ingenieurs herbouwden het systeem voor het leveren van webhooks m
 **Resultaat:** Job's klanten kunnen nu in realtime zien of hun integratie gebeurtenissen ontvangt – en KoppelHub herstelt automatisch van tijdelijke netwerkstoringen in plaats van stilletjes gegevens te laten vallen.
 
 > *"Ik hoopte vroeger simpelweg dat de webhooks aankwamen. Nu kan ik een klant daadwerkelijk het bewijs tonen dat zijn gegevens zijn gesynchroniseerd, of het zelf opvangen voordat ze überhaupt een kloof opmerken."*
-> — **Job Reijnders, Oprichter, KoppelHub (Tiel)**
+> - **Job Reijnders, Oprichter, KoppelHub (Tiel)**
 
-**Kosten en tijdlijn:** € 1.100 (infrastructuur voor webhook-herhaalpogingen, HMAC-ondertekening, en leveringslogboeken over alle integratie-eindpunten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (infrastructuur voor webhook-herhaalpogingen, HMAC-ondertekening, en leveringslogboeken over alle integratie-eindpunten) - voltooid in 6 werkdagen.
 
 ---
 

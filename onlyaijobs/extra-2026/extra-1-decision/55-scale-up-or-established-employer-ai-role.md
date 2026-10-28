@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-One offer comes from a scale-up that closed a funding round recently: fast, unstructured, a small team where you would own a large surface. The other comes from an established organisation — a bank, an insurer, a manufacturer, a public body — with a collective agreement, a pension scheme, a training budget and a process for everything. The job titles are similar. The salaries are closer than people expect. What differs is the kind of professional each will make you over three years, and how much risk you carry while it happens.
+One offer comes from a scale-up that closed a funding round recently: fast, unstructured, a small team where you would own a large surface. The other comes from an established organisation - a bank, an insurer, a manufacturer, a public body - with a collective agreement, a pension scheme, a training budget and a process for everything. The job titles are similar. The salaries are closer than people expect. What differs is the kind of professional each will make you over three years, and how much risk you carry while it happens.
 
 ## What the Comparison Actually Looks Like
 
@@ -78,7 +78,7 @@ One offer comes from a scale-up that closed a funding round recently: fast, unst
 
 Scale-up risk is real and it is also frequently overstated by people describing it from outside. In the Netherlands, being made redundant is a bounded event rather than a catastrophe: dismissal for business economic reasons generally requires a formal route, notice applies, a transition payment is in principle due, and unemployment benefit exists for those who qualify. The market for experienced data people has been reasonably robust.
 
-The realistic downside is not destitution; it is disruption at a bad moment — during a mortgage application, a visa situation, or a period when you cannot easily search.
+The realistic downside is not destitution; it is disruption at a bad moment - during a mortgage application, a visa situation, or a period when you cannot easily search.
 
 Ask directly about runway, revenue and the path to the next round. Serious founders answer these questions; evasiveness is itself informative. Also ask how many people the company has let go in the past two years, which is more revealing than the funding announcement.
 
@@ -112,7 +112,7 @@ Candidates compare gross salaries and stop. The rest is where established employ
 - **Who else is technical, and who would review my work?**
 - **What is in production today, and who maintains it at three in the morning?**
 - **How many people left in the past year, and why?**
-- **What are the terms beyond salary — pension, training, leave?**
+- **What are the terms beyond salary - pension, training, leave?**
 - **What happens to my scope when the next twenty people join?**
 
 ## Questions to Ask an Established Employer
@@ -136,7 +136,7 @@ Both kinds of employer describe themselves optimistically, and both descriptions
 
 **For a scale-up.** Ask when the last funding round closed and what the plan is for the next one. Look at how many people they are currently recruiting; aggressive hiring with a short runway is a specific kind of risk. Look at whether the engineering team has grown or churned. Ask to speak with someone who joined about a year ago, and ask them what has changed since.
 
-**For an established employer.** Ask what the data team delivered in the last twelve months, and listen for whether the answer is systems or presentations. Ask how long the last project took from idea to production. Ask how many people have joined and left the team in two years — high turnover in a large organisation usually means the work is frustrating rather than insecure.
+**For an established employer.** Ask what the data team delivered in the last twelve months, and listen for whether the answer is systems or presentations. Ask how long the last project took from idea to production. Ask how many people have joined and left the team in two years - high turnover in a large organisation usually means the work is frustrating rather than insecure.
 
 **For both.** Ask to meet a future colleague without a manager present. Ask what they would change. The willingness to arrange that conversation is itself a signal, and the content of it is the most reliable information you will get in the whole process.
 
@@ -144,7 +144,7 @@ Both kinds of employer describe themselves optimistically, and both descriptions
 
 Most candidates compare the first year. The difference shows up later, and it is worth imagining.
 
-**In a scale-up,** year three is either expansion or contraction. If the company has grown, your scope has probably narrowed as specialists arrived — which can feel like a demotion even when it is progress — and you may be managing rather than building. If the company has struggled, the team is smaller, the ambitious projects are paused and the interesting work has gone.
+**In a scale-up,** year three is either expansion or contraction. If the company has grown, your scope has probably narrowed as specialists arrived - which can feel like a demotion even when it is progress - and you may be managing rather than building. If the company has struggled, the team is smaller, the ambitious projects are paused and the interesting work has gone.
 
 **In an established employer,** year three is where you either gained standing or became furniture. If you delivered systems that people rely on, you now have influence and a track record of things that ran for years. If you spent three years on projects that were diluted or delayed, you have seniority in title and little to show.
 
@@ -168,7 +168,7 @@ Several employers do not sit cleanly in either column, and these are often the b
 
 A data scientist joins a scale-up straight from university because it sounds more exciting. She learns quickly, deploys things herself and enjoys the autonomy. She also develops habits nobody corrects: minimal testing, no monitoring, validation designs that flatter her results.
 
-Eighteen months later the company narrows its focus and her team is reduced. She finds a role at an insurer, expecting boredom, and instead spends her first year being reviewed properly for the first time — on validation, documentation, monitoring and the governance requirements attached to models that affect customers.
+Eighteen months later the company narrows its focus and her team is reduced. She finds a role at an insurer, expecting boredom, and instead spends her first year being reviewed properly for the first time - on validation, documentation, monitoring and the governance requirements attached to models that affect customers.
 
 It is uncomfortable and it changes her. Three years later she joins a different scale-up as a lead, and this time she brings the practice with her: review, testing, monitoring, a documented approach to evaluation.
 
@@ -180,11 +180,11 @@ Her own summary is that the scale-up taught her to move and the insurer taught h
 - Dutch employment rules bound the downside of a scale-up failing, so the realistic risk is disruption at a bad moment rather than catastrophe.
 - Compare pension, training budget, allowances and working-time arrangements, not only gross salary; treat equity as a possible bonus.
 - Early careers usually benefit more from established employers; mid-career professionals with production experience can absorb scale-up chaos and gain from it.
-- Decide by which failure mode you tolerate better — chaos and disappearance, or delay and dilution.
+- Decide by which failure mode you tolerate better - chaos and disappearance, or delay and dilution.
 
 ## Where to Start
 
-Both kinds of employer advertise the same titles, so read for what is already in production and who maintains it — then compare what each type offers within your own travel radius.
+Both kinds of employer advertise the same titles, so read for what is already in production and who maintains it - then compare what each type offers within your own travel radius.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -210,7 +210,7 @@ They can, when everything is slow and diluted. Ask how long it takes to get some
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a scale-up too risky for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely in itself — Dutch rules bound the downside; time it around mortgages and visas."}},
+    {"@type": "Question", "name": "Is a scale-up too risky for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Rarely in itself - Dutch rules bound the downside; time it around mortgages and visas."}},
     {"@type": "Question", "name": "Which is better for a first role?", "acceptedAnswer": {"@type": "Answer", "text": "Usually an established employer, where practice and review are learned from colleagues."}},
     {"@type": "Question", "name": "What do candidates most often overlook?", "acceptedAnswer": {"@type": "Answer", "text": "Pension, training budget, allowances and working-time arrangements."}},
     {"@type": "Question", "name": "What should I ask about stability?", "acceptedAnswer": {"@type": "Answer", "text": "Runway, revenue trajectory, departures in the past year and who supports production."}},

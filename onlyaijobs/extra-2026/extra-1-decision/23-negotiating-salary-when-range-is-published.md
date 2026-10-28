@@ -35,13 +35,13 @@ Content Format: Decision Guide
 }
 </script>
 
-For years the salary conversation in Dutch hiring happened late, awkwardly and with one side holding all the information. That is changing. Under the EU Pay Transparency Directive, employers must give candidates information about the initial pay or its range before the job interview, and may not ask about pay history. More vacancies now arrive with a band attached. The common conclusion — that a published range removes the negotiation — is wrong, and acting on it can cost you real money. What a range removes is the guessing. What it creates is a different and more evidence-based conversation.
+For years the salary conversation in Dutch hiring happened late, awkwardly and with one side holding all the information. That is changing. Under the EU Pay Transparency Directive, employers must give candidates information about the initial pay or its range before the job interview, and may not ask about pay history. More vacancies now arrive with a band attached. The common conclusion - that a published range removes the negotiation - is wrong, and acting on it can cost you real money. What a range removes is the guessing. What it creates is a different and more evidence-based conversation.
 
 ## What the Rules Actually Require
 
 The directive requires that applicants receive information about the initial pay or its range, based on objective, gender-neutral criteria, before the interview. Employers may not ask about your pay history in current or previous employment. Vacancy texts and job titles must be gender-neutral, and employers must make the criteria used for pay and pay progression accessible to employees.
 
-Two consequences follow for you as a candidate. First, you can see whether a role is worth your time before investing in a process. Second, because pay must rest on objective criteria, an employer should be able to explain why you would sit at one point in the band rather than another — which is exactly the conversation you want to have.
+Two consequences follow for you as a candidate. First, you can see whether a role is worth your time before investing in a process. Second, because pay must rest on objective criteria, an employer should be able to explain why you would sit at one point in the band rather than another - which is exactly the conversation you want to have.
 
 Dutch implementing legislation has been in preparation, so check the current status; equal pay obligations already exist under Dutch law, and the Netherlands Institute for Human Rights can assess complaints about unequal pay.
 
@@ -49,13 +49,13 @@ Dutch implementing legislation has been in preparation, so check the current sta
 
 Bands exist because roles are filled by people with different experience. A range of any meaningful width implies criteria for placement: years of relevant experience, specific expertise, evidence of independence, sometimes scarcity of the skill.
 
-That is the negotiation. Not "can you pay more than this band", but "here is why I belong at this point in it". The employer has already told you the boundaries, which means you are arguing about evidence rather than about their budget — a much easier conversation, and one where facts help you.
+That is the negotiation. Not "can you pay more than this band", but "here is why I belong at this point in it". The employer has already told you the boundaries, which means you are arguing about evidence rather than about their budget - a much easier conversation, and one where facts help you.
 
 ## The Question to Ask First
 
 Before naming a number, ask one question: what determines where someone lands within this range?
 
-The answers are informative. An employer with a structured approach will describe criteria — years in comparable roles, production experience, domain knowledge, leadership of projects. An employer who says "it depends on the candidate" has not thought it through, which usually means there is more discretion available than they are admitting.
+The answers are informative. An employer with a structured approach will describe criteria - years in comparable roles, production experience, domain knowledge, leadership of projects. An employer who says "it depends on the candidate" has not thought it through, which usually means there is more discretion available than they are admitting.
 
 Ask a second question if you can: where would you place me based on what you know so far, and what would move me up? This invites them to argue your case internally with you rather than against you.
 
@@ -77,7 +77,7 @@ Ask a second question if you can: where would you place me based on what you kno
 
 ## What Is Usually Not Movable
 
-Bands set by a collective agreement cannot simply be exceeded, and public sector scales are published for a reason. Signing bonuses are uncommon in most Dutch sectors outside specific industries. And an employer who has just told you their criteria will not abandon them for one candidate without a defensible reason — which is the point of the system.
+Bands set by a collective agreement cannot simply be exceeded, and public sector scales are published for a reason. Signing bonuses are uncommon in most Dutch sectors outside specific industries. And an employer who has just told you their criteria will not abandon them for one candidate without a defensible reason - which is the point of the system.
 
 Recognising the difference saves goodwill. Pushing against a genuinely fixed constraint reads as not listening; pushing on placement within a band reads as knowing your worth.
 
@@ -91,7 +91,7 @@ Then make the request concrete: a specific figure or step, with one sentence of 
 
 ## Since They Cannot Ask About Your Salary
 
-Pay history questions are prohibited, which removes the anchor that used to dominate these conversations. If you are asked anyway — it will happen while the rules bed in — you can decline politely and redirect: "I would rather focus on the value of this role; based on the range you published, I am aiming at this point in it."
+Pay history questions are prohibited, which removes the anchor that used to dominate these conversations. If you are asked anyway - it will happen while the rules bed in - you can decline politely and redirect: "I would rather focus on the value of this role; based on the range you published, I am aiming at this point in it."
 
 This also means a low current salary no longer travels with you automatically. For anyone who has been underpaid, that is the single most valuable change in the new framework.
 
@@ -99,7 +99,7 @@ This also means a low current salary no longer travels with you automatically. F
 
 Occasionally an employer says you are above their range. Three responses are worth having ready.
 
-Ask whether a more senior version of the role exists, since the mismatch may be about level rather than money. Ask what the progression looks like — a band you enter at the top with rapid movement to a higher band is different from one you enter at the top and stay in. And weigh the rest of the package honestly: hours, commute, pension contribution and training budget can close a surprising part of a gap.
+Ask whether a more senior version of the role exists, since the mismatch may be about level rather than money. Ask what the progression looks like - a band you enter at the top with rapid movement to a higher band is different from one you enter at the top and stay in. And weigh the rest of the package honestly: hours, commute, pension contribution and training budget can close a surprising part of a gap.
 
 If none of that works, declining is reasonable, and doing it warmly keeps the relationship for a future role.
 
@@ -107,13 +107,13 @@ If none of that works, declining is reasonable, and doing it warmly keeps the re
 
 Pay transparency exists primarily to address unequal pay. Under the directive, employees gain the right to information about average pay levels by sex for workers doing the same work or work of equal value, and larger employers must report on gender pay gaps, with joint pay assessments where unexplained gaps persist.
 
-For an individual candidate, the practical effect is that a bad answer to "how do you determine placement?" is now a meaningful signal. Employers who cannot explain their criteria are the ones most likely to have inconsistencies — and those inconsistencies tend to disadvantage the people who negotiate least assertively.
+For an individual candidate, the practical effect is that a bad answer to "how do you determine placement?" is now a meaningful signal. Employers who cannot explain their criteria are the ones most likely to have inconsistencies - and those inconsistencies tend to disadvantage the people who negotiate least assertively.
 
 ## When the Range Is Very Wide
 
 Sometimes the published band is so wide that it communicates almost nothing. A range spanning what a junior and a senior would earn is technically transparent and practically useless.
 
-Treat that as a question rather than an answer. Ask which level this particular vacancy is scoped at, and what would place someone at the lower versus the upper end. A well-organised employer answers immediately, because the range covers several levels and yours has been decided internally. A less organised one discovers, while answering, that they have not decided — which is useful for you, because an undecided level is negotiable in a way a decided one is not.
+Treat that as a question rather than an answer. Ask which level this particular vacancy is scoped at, and what would place someone at the lower versus the upper end. A well-organised employer answers immediately, because the range covers several levels and yours has been decided internally. A less organised one discovers, while answering, that they have not decided - which is useful for you, because an undecided level is negotiable in a way a decided one is not.
 
 Two follow-up questions help. Does this range cover more than one job level, and if so which one am I being considered for? And how many people currently in this role sit in each part of the band?
 
@@ -123,7 +123,7 @@ If you get no clear answer at all, weigh that alongside everything else. An empl
 
 ## If They Will Not Move At All
 
-Occasionally the answer to every request is no: the placement is fixed, the secondary terms are standard, and nothing is available. That happens most often in public organisations and in companies with rigid job evaluation systems, and it is not always a bad sign — a structured employer that applies its rules consistently is also one that will apply them consistently to your next increase.
+Occasionally the answer to every request is no: the placement is fixed, the secondary terms are standard, and nothing is available. That happens most often in public organisations and in companies with rigid job evaluation systems, and it is not always a bad sign - a structured employer that applies its rules consistently is also one that will apply them consistently to your next increase.
 
 Three things are still worth doing.
 
@@ -131,7 +131,7 @@ Three things are still worth doing.
 
 **Ask what would change the classification.** If the role is graded at a certain level, the question is which responsibilities would place it a level higher. That answer gives you something concrete to aim at rather than a vague hope of being noticed.
 
-**Decide on the total, calmly.** If the cash is genuinely fixed and the package still works — hours, commute, pension, development budget, the work itself — accept it without treating the failed negotiation as a defeat. If it does not work, decline warmly and say why in one sentence. Employers with fixed structures encounter this regularly and rarely take it personally.
+**Decide on the total, calmly.** If the cash is genuinely fixed and the package still works - hours, commute, pension, development budget, the work itself - accept it without treating the failed negotiation as a defeat. If it does not work, decline warmly and say why in one sentence. Employers with fixed structures encounter this regularly and rarely take it personally.
 
 What is not worth doing is repeating the request in different words. Under transparency rules the criteria are meant to be objective; asking twice implies you did not believe the first answer.
 
@@ -141,28 +141,28 @@ What is not worth doing is repeating the request in different words. Under trans
 
 A data engineer sees a vacancy with a published band and applies. At the offer stage he is offered a figure just below the midpoint, with the explanation that this is "standard for new joiners".
 
-Rather than countering with a number, he asks what determines placement. The recruiter explains: years of relevant experience, cloud platform experience and whether the candidate has run production systems. He then maps his own history to those three criteria in writing — five years in relevant work, two platform migrations, three years on call for production pipelines — and asks to be placed accordingly.
+Rather than countering with a number, he asks what determines placement. The recruiter explains: years of relevant experience, cloud platform experience and whether the candidate has run production systems. He then maps his own history to those three criteria in writing - five years in relevant work, two platform migrations, three years on call for production pipelines - and asks to be placed accordingly.
 
 The employer moves him to the upper part of the band, explaining that the earlier figure reflected an assumption about his cloud experience that the conversation had corrected. Nothing about him changed. The criteria were simply applied to evidence instead of to a default.
 
 ## Key Takeaways
 
 - Pay transparency rules require pay information before the interview and prohibit pay history questions; they remove guessing, not negotiation.
-- A range implies criteria for placement within it — ask what they are before naming a number.
+- A range implies criteria for placement within it - ask what they are before naming a number.
 - Movable elements include placement in the band, the step within a scale, a written review date, training budget, hours, leave, travel reimbursement and sometimes the job level.
 - Argue with evidence mapped to the employer's stated criteria, then make one concrete, justified request.
 - An employer who cannot explain how placement is determined is telling you something about how consistently they pay people.
 
 ## Where to Start
 
-Before your next salary conversation, look at how comparable roles near you describe their ranges — the more local reference points you have, the more concrete your request can be.
+Before your next salary conversation, look at how comparable roles near you describe their ranges - the more local reference points you have, the more concrete your request can be.
 
 Browse current AI, machine learning and data jobs, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate seeing a published range) Can I still negotiate if the salary range is published?
-Yes — the negotiation is about where you sit within the band, based on the employer's stated criteria, plus non-salary terms such as training budget, hours and review dates.
+Yes - the negotiation is about where you sit within the band, based on the employer's stated criteria, plus non-salary terms such as training budget, hours and review dates.
 
 ### (Scenario: candidate asked about current salary) Can an employer ask what I earn now?
 No. Pay history questions are prohibited under the pay transparency rules; you can decline politely and redirect to the published range.
@@ -181,8 +181,8 @@ Ask what determines placement, map your evidence to those criteria, then make on
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I still negotiate if the salary range is published?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — on placement within the band and on non-salary terms."}},
-    {"@type": "Question", "name": "Can an employer ask what I earn now?", "acceptedAnswer": {"@type": "Answer", "text": "No — pay history questions are prohibited under pay transparency rules."}},
+    {"@type": "Question", "name": "Can I still negotiate if the salary range is published?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - on placement within the band and on non-salary terms."}},
+    {"@type": "Question", "name": "Can an employer ask what I earn now?", "acceptedAnswer": {"@type": "Answer", "text": "No - pay history questions are prohibited under pay transparency rules."}},
     {"@type": "Question", "name": "What if my expectation is above the band?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about a more senior version, progression and the wider package."}},
     {"@type": "Question", "name": "Is there room to negotiate when a cao applies?", "acceptedAnswer": {"@type": "Answer", "text": "The scale is fixed but the starting step usually is not."}},
     {"@type": "Question", "name": "How should I ask for a higher placement?", "acceptedAnswer": {"@type": "Answer", "text": "Ask the criteria, map your evidence to them and make one concrete request."}}

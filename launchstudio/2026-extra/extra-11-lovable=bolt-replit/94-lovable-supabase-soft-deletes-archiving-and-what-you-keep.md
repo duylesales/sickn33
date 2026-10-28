@@ -28,7 +28,7 @@ In a real business, delete means at least four different things depending on who
 
 ## Four Meanings of Delete
 
-**Hide it from my view.** A user tidying up. They expect it gone from their screen and would be horrified to learn it was irrecoverable — "I didn't mean permanently" is the most common support message in any product without an undo.
+**Hide it from my view.** A user tidying up. They expect it gone from their screen and would be horrified to learn it was irrecoverable - "I didn't mean permanently" is the most common support message in any product without an undo.
 
 **Remove it from active use, but we may need it.** A cancelled order, a former employee's record, a closed project. The business still refers to these.
 
@@ -50,7 +50,7 @@ Three things make this work properly.
 
 **Clean up on a schedule.** Soft-deleted rows are still rows: they occupy space, they slow queries, and they contain personal data you no longer need. Purge them after the recovery window, automatically.
 
-The cost of soft delete is that every query has an extra condition and every unique constraint needs thought — a deleted record should usually not block a new one with the same email address.
+The cost of soft delete is that every query has an extra condition and every unique constraint needs thought - a deleted record should usually not block a new one with the same email address.
 
 ## Archiving Is a Different Problem
 
@@ -66,7 +66,7 @@ The genuinely difficult part, and where honest advice is hedged.
 
 A customer asks you to erase their data. Some of that data sits in invoices you are required to keep. These obligations point in opposite directions, and the resolution is not to pick one.
 
-The shape of the answer is usually that the right to erasure does not override a legal obligation to retain, so the retained records stay, and everything not covered by that obligation is erased. Practically this means separating the data that carries an obligation — the invoice, with the details required on it — from the data that does not: activity history, preferences, uploaded documents, analytics, support conversations.
+The shape of the answer is usually that the right to erasure does not override a legal obligation to retain, so the retained records stay, and everything not covered by that obligation is erased. Practically this means separating the data that carries an obligation - the invoice, with the details required on it - from the data that does not: activity history, preferences, uploaded documents, analytics, support conversations.
 
 Products that store everything in one table cannot do this, which is why the separation is a design decision rather than a policy one. Build it before you receive the request.
 
@@ -76,9 +76,9 @@ What that separation looks like in practice: financial records in their own tabl
 
 When you do erase, the row is the easy part.
 
-Uploaded files in object storage. Entries in your audit trail, which raises its own question — the fact that a change happened is frequently legitimate to keep even when the personal detail in it is not, so consider recording actor identifiers that can be dissociated rather than names. Search indexes. Caches. Backups, which hold a copy until their retention window expires — which is acceptable provided your retention period is defined, documented and honoured. And any third party you sent the data to, which is what your subprocessor list is for.
+Uploaded files in object storage. Entries in your audit trail, which raises its own question - the fact that a change happened is frequently legitimate to keep even when the personal detail in it is not, so consider recording actor identifiers that can be dissociated rather than names. Search indexes. Caches. Backups, which hold a copy until their retention window expires - which is acceptable provided your retention period is defined, documented and honoured. And any third party you sent the data to, which is what your subprocessor list is for.
 
-Anonymisation is frequently the better tool than deletion: replacing identifying fields while keeping the record's shape preserves your aggregate figures and your referential integrity, and properly anonymised data is no longer personal data. Properly is doing work in that sentence — a record with the name removed but a unique reference intact is not anonymous.
+Anonymisation is frequently the better tool than deletion: replacing identifying fields while keeping the record's shape preserves your aggregate figures and your referential integrity, and properly anonymised data is no longer personal data. Properly is doing work in that sentence - a record with the name removed but a unique reference intact is not anonymous.
 
 ## What to Build, and in What Order
 
@@ -90,9 +90,9 @@ That is a few days on a product that already works, and it is the part of a secu
 
 Individual records are the easy case. A customer ending their contract is the one nobody designs for, and it arrives with a deadline attached.
 
-**They want their data out, in a usable form.** Not a screenshot, not a report — their records, in a format another system can read. Build this before you need it: a per-tenant export producing standard files, available to the customer without you being involved. It is a procurement question before it is a leaving question, and being able to answer it during a sales conversation is worth more than it costs.
+**They want their data out, in a usable form.** Not a screenshot, not a report - their records, in a format another system can read. Build this before you need it: a per-tenant export producing standard files, available to the customer without you being involved. It is a procurement question before it is a leaving question, and being able to answer it during a sales conversation is worth more than it costs.
 
-**There should be a grace period.** Immediate deletion on the day a contract ends is legally tidy and commercially foolish: customers change their minds, invoices get disputed, and someone always remembers a document they needed a week later. A defined window — stated in your terms — where the account is closed but recoverable serves everybody.
+**There should be a grace period.** Immediate deletion on the day a contract ends is legally tidy and commercially foolish: customers change their minds, invoices get disputed, and someone always remembers a document they needed a week later. A defined window - stated in your terms - where the account is closed but recoverable serves everybody.
 
 **Then deletion has to actually happen.** On a schedule, automatically, reaching rows, files, search indexes, caches and the third parties you sent data to. A dormant tenant kept indefinitely because nobody wrote the cleanup is personal data you are holding with no basis, and it is the finding that turns an otherwise fine data protection review uncomfortable.
 
@@ -112,11 +112,11 @@ LaunchStudio does this alongside the access model, since the two together are wh
 
 ### A Deleted Employee and an Invoice That Went With Them
 
-Wendy Bosman built Personeelsdossier with Lovable: personnel file management for small companies, used by 29 businesses around Hengelo and Enschede — contracts, absence records, review notes, payslip archives.
+Wendy Bosman built Personeelsdossier with Lovable: personnel file management for small companies, used by 29 businesses around Hengelo and Enschede - contracts, absence records, review notes, payslip archives.
 
 Delete removed the row. There was no bin, no archive, no separation between personnel data and the payroll documents attached to it.
 
-Two failures arrived within a month. A bookkeeper at a customer deleted a former employee's file intending to remove them from the active list, and removed seven years of payslip records with them — records the company was obliged to retain and could not reconstruct, since Wendy's product had been the only place they lived after the company changed payroll providers.
+Two failures arrived within a month. A bookkeeper at a customer deleted a former employee's file intending to remove them from the active list, and removed seven years of payslip records with them - records the company was obliged to retain and could not reconstruct, since Wendy's product had been the only place they lived after the company changed payroll providers.
 
 Then a former employee at a different customer made a GDPR erasure request. Wendy had no way to comply partially: everything about that person was in one table, including the payroll records her customer was obliged to keep. Her options were to refuse the request or to destroy her customer's legal records.
 
@@ -124,12 +124,12 @@ Eleven business days of work: soft delete implemented across all user-deletable 
 
 The seven years of payslips were partially recovered from a backup that happened to predate the deletion by nine days. The gap was documented and reported to the customer honestly.
 
-**Result:** the erasure request was handled in a way both the individual and the customer accepted — personal data removed, obligated payroll records retained with a documented basis — and the retention policy is now sent to every new customer during onboarding.
+**Result:** the erasure request was handled in a way both the individual and the customer accepted - personal data removed, obligated payroll records retained with a documented basis - and the retention policy is now sent to every new customer during onboarding.
 
 > *"One click removed a person and seven years of payslips my customer was legally required to keep. The same week, someone asked me to erase them, and I could not do it without destroying the same kind of records for somebody else."*
-> — **Wendy Bosman, Founder, Personeelsdossier (Hengelo)**
+> - **Wendy Bosman, Founder, Personeelsdossier (Hengelo)**
 
-**Cost & Timeline:** €5,100 (soft delete with recovery window and policy-level filtering, archiving, separation of obligated records, full erasure operation, anonymisation, retention policy, erasure logging) — completed in 11 business days.
+**Cost & Timeline:** €5,100 (soft delete with recovery window and policy-level filtering, archiving, separation of obligated records, full erasure operation, anonymisation, retention policy, erasure logging) - completed in 11 business days.
 
 ## Frequently Asked Questions
 
@@ -139,7 +139,7 @@ Usually not. Most users clicking delete mean "hide this from my view" and expect
 
 ### How do I stop a deleted record reappearing in a report?
 
-Apply the exclusion once — in your access policies or in a view — rather than in every query. Anything relying on each query remembering will eventually be contradicted by a query written later.
+Apply the exclusion once - in your access policies or in a view - rather than in every query. Anything relying on each query remembering will eventually be contradicted by a query written later.
 
 ### What happens when retention obligations conflict with an erasure request?
 
@@ -151,7 +151,7 @@ No. It must reach uploaded files, search indexes, caches, your audit trail and a
 
 ### Is anonymisation better than deletion?
 
-Often, yes. Replacing identifying fields preserves your aggregate figures and referential integrity, and properly anonymised data is no longer personal data — but a record with the name removed and a unique reference intact is not anonymous.
+Often, yes. Replacing identifying fields preserves your aggregate figures and referential integrity, and properly anonymised data is no longer personal data - but a record with the name removed and a unique reference intact is not anonymous.
 
 <script type="application/ld+json">
 {
@@ -163,7 +163,7 @@ Often, yes. Replacing identifying fields preserves your aggregate figures and re
       "name": "Should delete remove the row?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually not — most users mean 'hide this'. Use a deletion timestamp filtered in one place, offer a bin, and purge on a schedule."
+        "text": "Usually not - most users mean 'hide this'. Use a deletion timestamp filtered in one place, offer a bin, and purge on a schedule."
       }
     },
     {
@@ -171,7 +171,7 @@ Often, yes. Replacing identifying fields preserves your aggregate figures and re
       "name": "How do I stop a deleted record reappearing in a report?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Apply the exclusion once in access policies or a view, rather than relying on every query — including future ones — to remember."
+        "text": "Apply the exclusion once in access policies or a view, rather than relying on every query - including future ones - to remember."
       }
     },
     {
@@ -179,7 +179,7 @@ Often, yes. Replacing identifying fields preserves your aggregate figures and re
       "name": "What happens when retention obligations conflict with an erasure request?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Obligated records are retained and everything else is erased — which requires storing obligated data separately, a decision made before the request arrives."
+        "text": "Obligated records are retained and everything else is erased - which requires storing obligated data separately, a decision made before the request arrives."
       }
     },
     {
@@ -187,7 +187,7 @@ Often, yes. Replacing identifying fields preserves your aggregate figures and re
       "name": "Does erasure only mean deleting database rows?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — it must reach files, search indexes, caches, audit trails and third parties, with backups covered by a defined retention window."
+        "text": "No - it must reach files, search indexes, caches, audit trails and third parties, with backups covered by a defined retention window."
       }
     },
     {
@@ -195,7 +195,7 @@ Often, yes. Replacing identifying fields preserves your aggregate figures and re
       "name": "Is anonymisation better than deletion?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often, since it preserves aggregates and integrity — but only if done properly; a removed name with a unique reference intact is not anonymous."
+        "text": "Often, since it preserves aggregates and integrity - but only if done properly; a removed name with a unique reference intact is not anonymous."
       }
     }
   ]

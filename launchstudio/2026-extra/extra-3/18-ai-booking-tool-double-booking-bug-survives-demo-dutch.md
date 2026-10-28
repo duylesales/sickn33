@@ -55,7 +55,7 @@ Omdat de faalmodus een oprecht zichtbare, vaak gênante klantgerichte consequent
 
 [LaunchStudio](https://launchstudio.eu/nl/) test boekings- en reserveringsstromen specifiek op exact deze gelijktijdigheidsfaalmodus als een standaard onderdeel van het verharden van elk product in de planningscategorie, inclusief de afstemmingscomplexiteit die reis- en horecaboeikingen daar nog bovenop voegen, ondersteund door Manifera's engineeringervaring in meerdere productieboekingssystemen.
 
-[Laat uw boekingsstroom testen tegen de omstandigheid die uw eigen testen niet kunnen reproduceren](https://launchstudio.eu/nl/#calculator) — deze specifieke bug vereist iemand anders, of iets anders, om hem daadwerkelijk te vinden.
+[Laat uw boekingsstroom testen tegen de omstandigheid die uw eigen testen niet kunnen reproduceren](https://launchstudio.eu/nl/#calculator) - deze specifieke bug vereist iemand anders, of iets anders, om hem daadwerkelijk te vinden.
 
 ## Andere functies die dezelfde gelijktijdigheidsbug verbergen
 
@@ -86,9 +86,9 @@ Tijdens een druk feestdagenweekend boekten twee afzonderlijke gasten binnen enke
 **Resultaat:** LaunchStudio implementeerde vergrendeling op databaseniveau om ervoor te zorgen dat de beschikbaarheidscontrole en het schrijven van de boeking als een enkele atomaire bewerking plaatsvinden, waarmee de raceconditie werd gedicht voordat deze kon terugkeren – specifiek geverifieerd door het afvuren van gelijktijdige testboekingen tegen hetzelfde slot en te bevestigen dat exact één boeking nu elke keer slaagt.
 
 > *"Elke afzonderlijke test die ik tijdens de ontwikkeling uitvoerde boekte één ding tegelijk en werkte vlekkeloos. Er was een daadwerkelijk druk weekend voor nodig, met twee echte gasten die binnen enkele seconden van elkaar boekten, om een bug te onthullen die in maanden van mijn eigen testen echt nog nooit een keer naar voren was gekomen."*
-> — **Lars Peeters, Oprichter, KamerPlan (Valkenburg)**
+> - **Lars Peeters, Oprichter, KamerPlan (Valkenburg)**
 
-**Kosten en tijdlijn:** € 1.450 (gelijktijdigheidsverharding voor boekingsstroom) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.450 (gelijktijdigheidsverharding voor boekingsstroom) - voltooid in 5 werkdagen.
 
 ---
 

@@ -1,4 +1,4 @@
-🚨 Most build-vs-buy spreadsheets comparing in-house hiring to offshore development compare a fully-loaded in-house salary to a bare offshore hourly rate — which is not a comparison, it's a mistake dressed up as analysis. ⚙️💥
+🚨 Most build-vs-buy spreadsheets comparing in-house hiring to offshore development compare a fully-loaded in-house salary to a bare offshore hourly rate - which is not a comparison, it's a mistake dressed up as analysis. ⚙️💥
 
 **The Pain Points:**
 ❌ **Tco House Offshore Crisis:** A CFO evaluating whether to hire three senior engineers in-house or engage an offshore dedicated pod has been handed two numbers by two different stakeholders: an in-house recruiter's salary benchmark and a vendor's day rate. Neither number includes the same cost categories, and the board wants a recommendation by next week.

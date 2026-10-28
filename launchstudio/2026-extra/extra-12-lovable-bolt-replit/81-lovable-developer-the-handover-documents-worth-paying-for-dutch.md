@@ -34,7 +34,7 @@ Ze kost misschien een halve dag van een opdracht en ze is het verschil tussen ee
 
 **De lijst met diensten en accounts.** Elke aanbieder, waarvoor die is, welk account hem beheert, ongeveer wat hij kost, en wanneer hij wordt verlengd. Dit is het document dat voorkomt dat een domein verloopt omdat de herinnering naar iemand ging die is vertrokken.
 
-**Een beslissingenoverzicht.** Waarom de belangrijke keuzes werden gemaakt — die welke het documentatieartikel in deze reeks beschrijft. Drie zinnen per stuk, en het waardevolste van de set.
+**Een beslissingenoverzicht.** Waarom de belangrijke keuzes werden gemaakt - die welke het documentatieartikel in deze reeks beschrijft. Drie zinnen per stuk, en het waardevolste van de set.
 
 **Wat er niet is gedaan.** Bekende problemen, uitgesteld werk, geaccepteerde risico's, en dingen om in de gaten te houden. Een leverancier die bereid is dit te schrijven, is er een die u moet houden.
 
@@ -52,7 +52,7 @@ De leveranciers die zich verzetten, vertellen u iets nuttigs.
 
 Een uur, opgenomen, waarin het product met u wordt doorgelopen: zo past het in elkaar, dit is het ongebruikelijke deel, hier zou ik op letten, dit zou ik als eerste doen als dit gebeurde.
 
-De opname is het waardevolle artefact. Ze legt de dingen vast die niet worden opgeschreven — de aarzeling voordat iets wordt uitgelegd, de terloopse opmerking over een kwetsbaar onderdeel — en u kunt haar over zes maanden opnieuw bekijken wanneer de context is vervaagd.
+De opname is het waardevolle artefact. Ze legt de dingen vast die niet worden opgeschreven - de aarzeling voordat iets wordt uitgelegd, de terloopse opmerking over een kwetsbaar onderdeel - en u kunt haar over zes maanden opnieuw bekijken wanneer de context is vervaagd.
 
 Doe het vóór de laatste dag, zodat vragen die eruit voortkomen nog kunnen worden beantwoord.
 
@@ -60,13 +60,13 @@ Doe het vóór de laatste dag, zodat vragen die eruit voortkomen nog kunnen word
 
 Een overdracht is te controleren, en controleren kost een middag.
 
-Volg het runbook voor één scenario en kijk of het werkt — een back-up terugzetten is de beste test, omdat die de documentatie, de toegang en de back-up zelf op de proef stelt.
+Volg het runbook voor één scenario en kijk of het werkt - een back-up terugzetten is de beste test, omdat die de documentatie, de toegang en de back-up zelf op de proef stelt.
 
 Richt het product in vanuit de repository op een verse machine, met alleen de README. Wat u niet kunt, is wat er ontbreekt.
 
 Controleer dat elk account in de lijst met diensten een account is waar u bij kunt. Hier ontdekt u dat een account bij een aanbieder op naam van de leverancier staat, wat nu een klein probleem is en over een jaar een groot.
 
-En lees het beslissingenoverzicht. Is het leeg of algemeen, vraag er dan goed om — het is het document dat later het moeilijkst te reconstrueren is en het vaakst wordt overgeslagen.
+En lees het beslissingenoverzicht. Is het leeg of algemeen, vraag er dan goed om - het is het document dat later het moeilijkst te reconstrueren is en het vaakst wordt overgeslagen.
 
 ## Draag Over Wat Zij Bezitten
 
@@ -98,7 +98,7 @@ De benadering tot nu toe gaat ervan uit dat iemand anders dit nodig zal hebben. 
 
 **U vergeet.** Vier maanden met een andere prioriteit en de details van hoe de betalingsafstemming werkt, zijn weg. Het runbook dat u een leverancier liet schrijven, is het document dat u om zeven uur op een zondagochtend leest, en het alternatief is het onder druk reconstrueren.
 
-**U wilt op vakantie.** Een product dat één persoon kan beheren, is een product dat die persoon niet kan verlaten. Oprichters beschrijven dit als het moment waarop de documentatie ophield een verplicht nummer te zijn — de week dat ze weg waren en iemand anders de vraag van een klant over een mislukte betaling kon beantwoorden, omdat het runbook het behandelde.
+**U wilt op vakantie.** Een product dat één persoon kan beheren, is een product dat die persoon niet kan verlaten. Oprichters beschrijven dit als het moment waarop de documentatie ophield een verplicht nummer te zijn - de week dat ze weg waren en iemand anders de vraag van een klant over een mislukte betaling kon beantwoorden, omdat het runbook het behandelde.
 
 Er is een derde reden die commercieel uitmaakt. Dezelfde set documenten is waar een koper, een investeerder of de technische beoordelaar van een grotere klant om vraagt, en ze klaar hebben maakt van een due-diligence-oefening een leesopdracht. Zoals het documentatieartikel in deze reeks opmerkt, draagt een product dat maar één persoon kan uitleggen een risico dat elke serieuze tegenpartij direct ziet.
 
@@ -110,17 +110,17 @@ Niet elke oprichter heeft een leverancier om het aan te vragen. Heel veel hebben
 
 Dezelfde vijf documenten gelden en u schrijft ze zelf, en er is een kortere weg die precies voor deze situatie goed werkt: een assistent die uw codebase leest, kan het systeemoverzicht en veel van het referentiemateriaal in een middag maken, zoals het documentatieartikel in deze reeks beschrijft. Wat hij niet kan maken, is het beslissingenoverzicht en de bekende problemen, omdat geen van beide in de code staat.
 
-Dus: genereer de structurele helft, schrijf de twee documenten waarvoor geheugen nodig is, en stel de lijst met diensten samen uit uw eigen facturen — de betrouwbaarste bron en de bron waar niemand aan denkt.
+Dus: genereer de structurele helft, schrijf de twee documenten waarvoor geheugen nodig is, en stel de lijst met diensten samen uit uw eigen facturen - de betrouwbaarste bron en de bron waar niemand aan denkt.
 
 Test het daarna op dezelfde manier. Richt het product in op een andere machine met alleen de README. Volg uw eigen runbook om een back-up terug te zetten. Bevestig dat elk account op uw naam staat in plaats van op een e-mailadres dat u niet meer controleert.
 
-Eén keer een middag, en het resultaat is hetzelfde bezit dat een betaalde overdracht had opgeleverd — en aanzienlijk waarschijnlijker juist, omdat u degene bent die de beslissingen nam die het vastlegt.
+Eén keer een middag, en het resultaat is hetzelfde bezit dat een betaalde overdracht had opgeleverd - en aanzienlijk waarschijnlijker juist, omdat u degene bent die de beslissingen nam die het vastlegt.
 
 ## Dit Inrichten
 
 Voor elke opdracht hoort dit in de oorspronkelijke scope: een systeemoverzicht, een runbook voor de specifieke storingen die voorkomen, een lijst met diensten en accounts met kosten en verlengingen, een beslissingenoverzicht, en een geschreven verklaring van wat er niet is gedaan; de repository met geschiedenis, afsprakenbestand, tests en gedocumenteerde configuratie; een opgenomen rondleiding vóór de laatste dag; controle door het runbook te volgen, het product in te richten vanuit de README op een verse machine en toegang tot elk account te bevestigen; en een bewuste overdracht van accounts, domeinen, tweefactorauthenticatie en betaalmethoden, met de toegang van de leverancier verwijderd en inloggegevens geroteerd.
 
-LaunchStudio levert dit allemaal bij elke opdracht, omdat een product dat u niet kunt beheren geen product is dat wij hebben afgerond. Daarachter staat Manifera — elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio levert dit allemaal bij elke opdracht, omdat een product dat u niet kunt beheren geen product is dat wij hebben afgerond. Daarachter staat Manifera - elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
 
 [Vraag ons wat onze overdracht bevat](https://launchstudio.eu/nl/#contact) voordat u offertes op prijs vergelijkt.
 
@@ -136,20 +136,20 @@ Veertien maanden later verliep het domein. De registratie stond in het account v
 
 Zesentwintig cateringbedrijven konden in een weekend in juni, de drukste periode van hun jaar, niet bij hun evenementenplanning.
 
-Drie werkdagen daarna: een inventaris van elke dienst die het product gebruikt, die vier accounts op naam van de freelancer vond — het domein, de foutregistratie, de e-mailaanbieder en één opslagaccount; alle vier overgezet of opnieuw aangemaakt onder haar eigen accounts, met geroteerde inloggegevens; een systeemoverzicht geschreven vanuit de code door een tweede leverancier; een runbook voor de elf storingen die waren voorgekomen of redelijkerwijs konden voorkomen, inclusief het verlopen van domein en certificaat; een lijst met diensten met kosten, verlengdata en een agendaherinnering 60 dagen voor elke verlenging; een beslissingenoverzicht zo goed mogelijk gereconstrueerd, waarbij de freelancer royaal vragen per e-mail beantwoordde; een verklaring van bekende problemen; en een opgenomen rondleiding met de tweede leverancier.
+Drie werkdagen daarna: een inventaris van elke dienst die het product gebruikt, die vier accounts op naam van de freelancer vond - het domein, de foutregistratie, de e-mailaanbieder en één opslagaccount; alle vier overgezet of opnieuw aangemaakt onder haar eigen accounts, met geroteerde inloggegevens; een systeemoverzicht geschreven vanuit de code door een tweede leverancier; een runbook voor de elf storingen die waren voorgekomen of redelijkerwijs konden voorkomen, inclusief het verlopen van domein en certificaat; een lijst met diensten met kosten, verlengdata en een agendaherinnering 60 dagen voor elke verlenging; een beslissingenoverzicht zo goed mogelijk gereconstrueerd, waarbij de freelancer royaal vragen per e-mail beantwoordde; een verklaring van bekende problemen; en een opgenomen rondleiding met de tweede leverancier.
 
 **Resultaat:** de reconstructie kostte €3.100 en duurde drie dagen, tegen misschien een halve dag als het deel was geweest van de oorspronkelijke opdracht. Ingrid merkt op dat het oorspronkelijke werk competent was en dat ze er niet zelfstandig van kon profiteren.
 
 > *"Het werk was goed. Veertien maanden later verliep mijn domein in het account van iemand anders, tijdens een weekend in juni, en zesentwintig cateraars konden hun boekingen niet zien."*
-> — **Ingrid Ravenstijn, Oprichter, Cateringplanner (Breda)**
+> - **Ingrid Ravenstijn, Oprichter, Cateringplanner (Breda)**
 
-**Kosten & Doorlooptijd:** €3.100 (inventaris van diensten en overdracht van accounts met rotatie van inloggegevens, systeemoverzicht, runbook, lijst met diensten met verlengingsherinneringen, gereconstrueerd beslissingenoverzicht, verklaring van bekende problemen, opgenomen rondleiding) — afgerond in 3 werkdagen.
+**Kosten & Doorlooptijd:** €3.100 (inventaris van diensten en overdracht van accounts met rotatie van inloggegevens, systeemoverzicht, runbook, lijst met diensten met verlengingsherinneringen, gereconstrueerd beslissingenoverzicht, verklaring van bekende problemen, opgenomen rondleiding) - afgerond in 3 werkdagen.
 
 ## Veelgestelde vragen
 
 ### Wat moet een overdracht bevatten?
 
-Een systeemoverzicht, een runbook voor specifieke storingen, een lijst met diensten en accounts met kosten en verlengingen, een beslissingenoverzicht, en een geschreven verklaring van wat er niet is gedaan — plus de repository, tests en gedocumenteerde configuratie.
+Een systeemoverzicht, een runbook voor specifieke storingen, een lijst met diensten en accounts met kosten en verlengingen, een beslissingenoverzicht, en een geschreven verklaring van wat er niet is gedaan - plus de repository, tests en gedocumenteerde configuratie.
 
 ### Wanneer moet ik erom vragen?
 
@@ -157,7 +157,7 @@ In de oorspronkelijke afspraak, als benoemde oplevering waarvan de eindacceptati
 
 ### Hoe weet ik of de overdracht toereikend is?
 
-Volg het runbook voor één scenario — een back-up terugzetten is de beste test. Richt het product in vanuit de README op een verse machine. Bevestig dat u bij elk vermeld account kunt.
+Volg het runbook voor één scenario - een back-up terugzetten is de beste test. Richt het product in vanuit de README op een verse machine. Bevestig dat u bij elk vermeld account kunt.
 
 ### Wat is het waardevolste document?
 
@@ -185,7 +185,7 @@ Accounts en domeinen op uw naam zetten, tweefactorauthenticatie onder uw beheer 
       "name": "Wanneer moet een overdracht worden afgesproken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In de oorspronkelijke scope, als benoemde oplevering waarvan de acceptatie afhangt — niet aan het eind wanneer het budget op is."
+        "text": "In de oorspronkelijke scope, als benoemde oplevering waarvan de acceptatie afhangt - niet aan het eind wanneer het budget op is."
       }
     },
     {
@@ -201,7 +201,7 @@ Accounts en domeinen op uw naam zetten, tweefactorauthenticatie onder uw beheer 
       "name": "Welk overdrachtsdocument doet er het meest toe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het beslissingenoverzicht — het moeilijkst te reconstrueren en de reden dat een latere wijziging niets dragends verwijdert."
+        "text": "Het beslissingenoverzicht - het moeilijkst te reconstrueren en de reden dat een latere wijziging niets dragends verwijdert."
       }
     },
     {

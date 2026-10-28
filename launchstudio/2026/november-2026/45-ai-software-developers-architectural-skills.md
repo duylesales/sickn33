@@ -93,9 +93,9 @@ Simon then engaged LaunchStudio to upskill his entire remaining engineering team
 **Result:** Simon's engineering team tripled their output without hiring a single new developer. Because they were no longer bogged down in syntax errors, they spent their time building robust cloud architectures and strict security boundaries. The logistics startup successfully handled a 400% increase in holiday traffic with zero downtime.
 
 > *"I used to think my best developers were the ones who could write code the fastest. LaunchStudio showed me that the best developers are the ones who know how to manage the AI that writes the code. They helped my team transition from being bricklayers to being architects."*
-> — **Simon Visser, CTO, RouteLogistics (Rotterdam)**
+> - **Simon Visser, CTO, RouteLogistics (Rotterdam)**
 
-**Cost & Timeline:** €14,000 (Launch & Grow Package with AI Engineering Training & Architecture Add-on) — production-ready and deployed in 30 days.
+**Cost & Timeline:** €14,000 (Launch & Grow Package with AI Engineering Training & Architecture Add-on) - production-ready and deployed in 30 days.
 
 ---
 

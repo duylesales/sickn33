@@ -95,9 +95,9 @@ Het Manifera-team voerde een 20-daagse sprint uit:
 Het team zag hun tijdsbesteding aan bug-fixing dalen van 40% naar slechts 5% (de tijd om de PR goed te keuren). De ontwikkelsnelheid verdrievoudigde en de nieuwe belastingmodule werd drie weken vóór de deadline opgeleverd.
 
 > *"We behandelden onze senior engineers als duurbetaalde schoonmakers die dagelijks kleine syntaxisfoutjes moesten opruimen. LaunchStudio bouwde een robotische schoonmaker voor ons. De AI suggereert niet alleen code, maar lost onze Jira-achterstand op terwijl we slapen. Het heeft de economische dynamiek van onze IT-afdeling compleet veranderd."*
-> — **Thomas Berglund, VP of Engineering, PayFlow (Stockholm)**
+> - **Thomas Berglund, VP of Engineering, PayFlow (Stockholm)**
 
-**Kosten & Doorlooptijd:** €16.500 (Launch & Grow Pakket met Agentic CI/CD Orchestration Add-on) — productie-klaar en live binnen 20 werkdagen.
+**Kosten & Doorlooptijd:** €16.500 (Launch & Grow Pakket met Agentic CI/CD Orchestration Add-on) - productie-klaar en live binnen 20 werkdagen.
 
 ---
 

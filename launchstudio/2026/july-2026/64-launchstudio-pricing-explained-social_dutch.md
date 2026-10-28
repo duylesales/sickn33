@@ -1,4 +1,4 @@
-💸 Felix bouwde een SaaS voor abonnementsboxen met **Bolt** — maar wist niet zeker welk beveiligingspakket zijn app daadwerkelijk nodig had, dus vroeg hij het na in plaats van te gokken. 🧠
+💸 Felix bouwde een SaaS voor abonnementsboxen met **Bolt** - maar wist niet zeker welk beveiligingspakket zijn app daadwerkelijk nodig had, dus vroeg hij het na in plaats van te gokken. 🧠
 
 Als u niet weet of uw door AI gebouwde app een lichte beveiligingscontrole of een volledige compliance-overhaul nodig heeft, betaalt u óf te veel voor werk dat u niet nodig heeft, óf te weinig voor werk dat u kwetsbaar laat.
 
@@ -12,7 +12,7 @@ Als u niet weet of uw door AI gebouwde app een lichte beveiligingscontrole of ee
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Felix' applicatie behaalde productie-gereedheid: Felix verwerkte zijn eerste 200 abonnementsverlengingen zonder één betalingsgeschil, en geen enkele klant ondervond een verlopen abonnement door een gemiste betalingsbevestiging. (€2.400 (Launch & Grow Pakket) — 8 werkdagen.). 🚀
+Felix' applicatie behaalde productie-gereedheid: Felix verwerkte zijn eerste 200 abonnementsverlengingen zonder één betalingsgeschil, en geen enkele klant ondervond een verlopen abonnement door een gemiste betalingsbevestiging. (€2.400 (Launch & Grow Pakket) - 8 werkdagen.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-pricing-explained
 

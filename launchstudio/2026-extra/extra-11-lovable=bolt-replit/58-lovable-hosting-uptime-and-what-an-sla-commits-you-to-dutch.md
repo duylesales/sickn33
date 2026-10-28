@@ -32,9 +32,9 @@ Een SLA bestaat uit twee onlosmakelijke delen, en het tweede deel is waar het om
 
 **Een beschikbaarheidstoezegging.** De dienst is gedurende een vastgesteld percentage van de tijd operationeel, gemeten volgens een overeengekomen meetmethode over een specifieke tijdsperiode (meestal per kalendermaand).
 
-**Een compensatieregeling (remedy).** Wat de klant ontvangt als je die toezegging niet nakomt — doorgaans service credits (korting op de volgende factuur), in sommige gevallen het recht om het contract direct te ontbinden, en in slecht opgestelde contracten zelfs open claims voor gevolgschade.
+**Een compensatieregeling (remedy).** Wat de klant ontvangt als je die toezegging niet nakomt - doorgaans service credits (korting op de volgende factuur), in sommige gevallen het recht om het contract direct te ontbinden, en in slecht opgestelde contracten zelfs open claims voor gevolgschade.
 
-Een overeenkomst met een percentage maar zónder omschreven sanctie is vaag in jouw voordeel totdat er een conflict ontstaat — waarna het in niemands voordeel vaag blijkt te zijn. Maar een overeenkomst waarin direct ontbindingsrecht is gekoppeld aan een cijfer dat je nog nooit proactief hebt gemonitord, is een enorm bedrijfsrisico dat je hebt geaccepteerd zonder daar een risicopremie voor te rekenen.
+Een overeenkomst met een percentage maar zónder omschreven sanctie is vaag in jouw voordeel totdat er een conflict ontstaat - waarna het in niemands voordeel vaag blijkt te zijn. Maar een overeenkomst waarin direct ontbindingsrecht is gekoppeld aan een cijfer dat je nog nooit proactief hebt gemonitord, is een enorm bedrijfsrisico dat je hebt geaccepteerd zonder daar een risicopremie voor te rekenen.
 
 ## Wat percentages betekenen in keiharde minuten
 
@@ -44,7 +44,7 @@ De percentages lijken op papier sprekend op elkaar, maar de realiteit is totaal 
 
 **99,5% staat circa 3,5 uur downtime per maand toe.**
 
-**99,9% — "three nines" — staat slechts circa 43 minuten downtime per maand toe.** Eén mislukte software-update, één tijdelijke storing bij je hostingprovider of een herstart van je database verbruikt dit budget al volledig.
+**99,9% - "three nines" - staat slechts circa 43 minuten downtime per maand toe.** Eén mislukte software-update, één tijdelijke storing bij je hostingprovider of een herstart van je database verbruikt dit budget al volledig.
 
 **99,95% staat slechts ongeveer 22 minuten downtime per maand toe.** Dit vereist serieuze redundancy: geautomatiseerde failover, continue gezondheidscontroles en multi-region opzet.
 
@@ -74,7 +74,7 @@ Een contractuele belofte zonder vastgelegde meetmethode is een gegarandeerde ruz
 
 **Over welke periode?** Gangbaar is per kalendermaand, waarbij de teller aan het begin van elke maand weer op nul begint.
 
-Voor een klein SaaS-product is het antwoord eenvoudig: installeer één betrouwbare externe uptime-monitor die elke minuut test, en gebruik de publieke statusgeschiedenis als het officiële bewijsstuk. Richt dit in vóórdat je ook maar één contract ondertekent. Een belofte die je niet kunt aantonen met data, kun je juridisch niet verdedigen — en je hebt die data voor je eigen gemoedsrust sowieso nodig.
+Voor een klein SaaS-product is het antwoord eenvoudig: installeer één betrouwbare externe uptime-monitor die elke minuut test, en gebruik de publieke statusgeschiedenis als het officiële bewijsstuk. Richt dit in vóórdat je ook maar één contract ondertekent. Een belofte die je niet kunt aantonen met data, kun je juridisch niet verdedigen - en je hebt die data voor je eigen gemoedsrust sowieso nodig.
 
 ## Wat je een klant kunt bieden in plaats van loze percentages
 
@@ -96,7 +96,7 @@ Tijdens inkoopgesprekken wint een leverancier die bescheiden, bewezen garanties 
 
 Als je een beschikbaarheidspercentage afspreekt, moet je gelijktijdig gepland onderhoud contractueel regelen. Anders telt elke software-update rechtstreeks mee als downtime.
 
-Standaardpraktijk: een overeengekomen onderhoudsvenster — bijvoorbeeld op zondagochtend of buiten kantooruren — dat minimaal 48 uur van tevoren wordt aangekondigd, en waarbij werkzaamheden niet meetellen voor het uptime-percentage. Voor moderne webapplicaties is het nog beter om je deployment-proces zo in te richten dat er 'zero-downtime deployments' plaatsvinden, waardoor deze vraag überhaupt niet meer ter sprake hoeft te komen.
+Standaardpraktijk: een overeengekomen onderhoudsvenster - bijvoorbeeld op zondagochtend of buiten kantooruren - dat minimaal 48 uur van tevoren wordt aangekondigd, en waarbij werkzaamheden niet meetellen voor het uptime-percentage. Voor moderne webapplicaties is het nog beter om je deployment-proces zo in te richten dat er 'zero-downtime deployments' plaatsvinden, waardoor deze vraag überhaupt niet meer ter sprake hoeft te komen.
 
 ## Wat je doet als je de SLA toch een keer mist
 
@@ -130,7 +130,7 @@ Het percentage eist alle aandacht op, maar de omliggende clausules bepalen wat h
 
 **De exacte meetmethode.** Welke specifieke monitoringdienst meet, met welk interval, wat de definitie is van onbeschikbaarheid, en hoe de klant inzage krijgt. Zonder dit is elk percentage een bron van toekomstige conflicten.
 
-**Een gemaximeerde compensatie (capped remedy).** Service credits die evenredig zijn aan de uitvalduur, met een hard maximum — bijvoorbeeld maximaal 20% of 50% van het maandbedrag. Onbeperkte aansprakelijkheid voor omzetschade door uitval is een risico dat een startup simpelweg niet kan dragen.
+**Een gemaximeerde compensatie (capped remedy).** Service credits die evenredig zijn aan de uitvalduur, met een hard maximum - bijvoorbeeld maximaal 20% of 50% van het maandbedrag. Onbeperkte aansprakelijkheid voor omzetschade door uitval is een risico dat een startup simpelweg niet kan dragen.
 
 **Een hersteltermijn vóór ontbinding (cure period).** Mocht je de norm een maand niet halen, dan hoort een redelijk contract jou eerst een termijn van dertig dagen te geven om de oorzaak structureel te verhelpen alvorens de klant mag opzeggen.
 
@@ -150,14 +150,14 @@ Het reconstrueren van de uptime bleek pijnlijker dan het ontbreken van de rappor
 
 Het herstel vergde vier werkdagen: externe uptime-monitoring met pings om de minuut en directe SMS-alarmering naar zijn telefoon; geavanceerde error tracking; een CI/CD deployment-pipeline met staging en automatische rollback zodat releases geen storingen meer veroorzaakten; een geverifieerde database-herstelprocedure geklokt op 26 minuten; en een overzichtelijk document met de uptime-garanties van zijn cloudleveranciers naast zijn eigen gemeten prestaties.
 
-Vervolgens ging hij het gesprek aan dat hij eerder had vermeden. Hij stelde voor het contract te wijzigen naar 99,5%, extern gemeten volgens een vastgelegde methode, inclusief een reactietijdgarantie en een onderhoudsvenster — en legde eerlijk uit waarom 99,9% technisch onhaalbaar was voor een applicatie in één cloudregio gerund door een solist.
+Vervolgens ging hij het gesprek aan dat hij eerder had vermeden. Hij stelde voor het contract te wijzigen naar 99,5%, extern gemeten volgens een vastgelegde methode, inclusief een reactietijdgarantie en een onderhoudsvenster - en legde eerlijk uit waarom 99,9% technisch onhaalbaar was voor een applicatie in één cloudregio gerund door een solist.
 
 **Resultaat:** de woningcorporatie accepteerde de contractwijziging zonder enig bezwaar. De inkoopmanager gaf achteraf aan dat een transparant gemeten 99,5% met duidelijke procedures veel meer zekerheid bood dan een loze 99,9% op papier.
 
 > *"Ik had getekend voor een getal omdat het zo professioneel stond in een contract. Maar als ze me hadden gevraagd of ik het had gehaald of met een factor tien had overschreden, had ik geen flauw idee gehad."*
-> — **Ruud Bosman, Oprichter, Inspectiepunt (Deventer)**
+> - **Ruud Bosman, Oprichter, Inspectiepunt (Deventer)**
 
-**Kosten & Doorlooptijd:** € 1.900 (monitoring en alerting, deployment-pipeline met rollback, gemeten back-upherstel en uptime-documentatie) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 1.900 (monitoring en alerting, deployment-pipeline met rollback, gemeten back-upherstel en uptime-documentatie) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -167,7 +167,7 @@ Circa 43 minuten downtime per maand. Eén mislukte software-update of een tijdel
 
 ### Kan ik een hogere beschikbaarheid beloven dan mijn hostingprovider garandeert?
 
-Nee. Beschikbaarheid telt cumulatief omlaag door je gehele technische keten — hosting, database, login, betalingen en DNS. Je maximale uptime ligt wiskundig altijd onder die van je minst betrouwbare externe toeleverancier.
+Nee. Beschikbaarheid telt cumulatief omlaag door je gehele technische keten - hosting, database, login, betalingen en DNS. Je maximale uptime ligt wiskundig altijd onder die van je minst betrouwbare externe toeleverancier.
 
 ### Hoe hoort uptime formeel te worden gemeten in een SaaS-overeenkomst?
 

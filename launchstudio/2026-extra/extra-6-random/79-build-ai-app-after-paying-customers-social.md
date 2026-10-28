@@ -1,9 +1,9 @@
-🏗️ Tobias Krimpen built "LanceerApp," a rental-inspection tool, with Lovable in a single weekend. He signed ten paying property managers who relied on it daily — then discovered what "built" hadn't included. 😳
+🏗️ Tobias Krimpen built "LanceerApp," a rental-inspection tool, with Lovable in a single weekend. He signed ten paying property managers who relied on it daily - then discovered what "built" hadn't included. 😳
 
 A weekend build answers "can this work at all?" It doesn't answer "what happens when it breaks at 11pm for a paying customer?" 🧠
 
-❌ No logging at all — when a record vanished, there was no way to trace what happened
-❌ No backup restore process — the only data copy was whatever currently existed live
+❌ No logging at all - when a record vanished, there was no way to trace what happened
+❌ No backup restore process - the only data copy was whatever currently existed live
 ❌ Diagnosing any problem meant pure guesswork, nothing in the app explained itself
 ❌ It took a confused customer's phone call to reveal the gap
 

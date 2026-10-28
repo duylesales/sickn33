@@ -20,13 +20,13 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Three vendors, one scope of work, three prices that don't even look like they're describing the same project. If you've requested more than one fixed-price development quote for the same job, you've probably experienced this exact confusion — and the natural instinct is to assume one vendor is overcharging or another is cutting corners. Sometimes that's true. More often, the quotes simply aren't priced against the same underlying breakdown, and you have no way to tell without doing the breakdown yourself. Here's a practical method for doing exactly that.
+Three vendors, one scope of work, three prices that don't even look like they're describing the same project. If you've requested more than one fixed-price development quote for the same job, you've probably experienced this exact confusion - and the natural instinct is to assume one vendor is overcharging or another is cutting corners. Sometimes that's true. More often, the quotes simply aren't priced against the same underlying breakdown, and you have no way to tell without doing the breakdown yourself. Here's a practical method for doing exactly that.
 
 ## Step 1: Get every quote broken into line items, not a single number
 
-The single biggest signal of a fair quote is a vendor's willingness to break it down. A vendor who returns one number for "fix the authentication and payment flow" hasn't shown you their reasoning — they've shown you a conclusion. Ask each vendor, explicitly, to itemize: what specific tasks make up the price, and roughly how many hours or days each one represents.
+The single biggest signal of a fair quote is a vendor's willingness to break it down. A vendor who returns one number for "fix the authentication and payment flow" hasn't shown you their reasoning - they've shown you a conclusion. Ask each vendor, explicitly, to itemize: what specific tasks make up the price, and roughly how many hours or days each one represents.
 
-If a vendor resists breaking down their number, that's information in itself. It usually means either the price was set by instinct rather than scope, or the vendor doesn't want you comparing components across quotes — both are reasons for caution.
+If a vendor resists breaking down their number, that's information in itself. It usually means either the price was set by instinct rather than scope, or the vendor doesn't want you comparing components across quotes - both are reasons for caution.
 
 ## Step 2: Build your own itemized list independently, before comparing
 
@@ -37,48 +37,48 @@ Before you look at the vendors' breakdowns side by side, write your own list of 
 Once you have three itemized breakdowns and your own independent list, the real comparison starts. Look for:
 
 - **Scope mismatches.** Is one vendor quoting to fix the actual authentication bug, while another is quoting to fix the bug plus rebuild the entire login flow "while they're in there"? That's not the same job, even if both are labeled "auth fix."
-- **Missing line items.** Did one vendor's quote simply omit something the others included — like testing, or handling the migration of existing data? A lower total that's missing a whole component isn't cheaper, it's incomplete.
-- **Wildly different hour estimates for the same item.** If one vendor estimates 2 days for a task and another estimates 8 for what looks like the identical task, that's worth a direct conversation about what each of them thinks the work actually involves — often it reveals one has spotted a complication the other missed, or one is padding.
+- **Missing line items.** Did one vendor's quote simply omit something the others included - like testing, or handling the migration of existing data? A lower total that's missing a whole component isn't cheaper, it's incomplete.
+- **Wildly different hour estimates for the same item.** If one vendor estimates 2 days for a task and another estimates 8 for what looks like the identical task, that's worth a direct conversation about what each of them thinks the work actually involves - often it reveals one has spotted a complication the other missed, or one is padding.
 - **What happens if the scope grows mid-project.** A fair fixed-price quote should specify what counts as "in scope" and what triggers a change order. A quote silent on this is a quote with a hidden asterisk.
 
 ## Step 4: Use the itemization to negotiate specifically, not generally
 
-Once you can see the components, you're no longer negotiating "can you come down on price" — a request every vendor is trained to resist. You're negotiating "I don't need the item you priced at three days, I only need the item you priced at one" — a much more specific, defensible conversation that usually gets a real answer instead of a discount for discount's sake.
+Once you can see the components, you're no longer negotiating "can you come down on price" - a request every vendor is trained to resist. You're negotiating "I don't need the item you priced at three days, I only need the item you priced at one" - a much more specific, defensible conversation that usually gets a real answer instead of a discount for discount's sake.
 
 ## What "fair" actually means once you've done this
 
-Fair doesn't mean cheapest. It means the price is legible — you can see what you're paying for, component by component, and you'd make the same trade-off if you were pricing it yourself with full information. A quote that's higher but fully itemized and scoped correctly is often the fairer one, even against a lower number that turns out to be missing half the actual work.
+Fair doesn't mean cheapest. It means the price is legible - you can see what you're paying for, component by component, and you'd make the same trade-off if you were pricing it yourself with full information. A quote that's higher but fully itemized and scoped correctly is often the fairer one, even against a lower number that turns out to be missing half the actual work.
 
-LaunchStudio is built around this exact principle — every engagement is scoped and quoted as an itemized breakdown before a euro sign gets attached to it, which is why fixed-price engagements typically land in the €800–€7,500 range for a defined scope. Our Amsterdam team walks founders through this itemization directly. You can [calculate an estimate for your own project](https://launchstudio.eu/en/#calculator) as a starting reference point before you compare it against other quotes. For a broader look at how scoped engineering pricing works at scale, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice, applied across 160+ delivered projects.
+LaunchStudio is built around this exact principle - every engagement is scoped and quoted as an itemized breakdown before a euro sign gets attached to it, which is why fixed-price engagements typically land in the €800–€7,500 range for a defined scope. Our Amsterdam team walks founders through this itemization directly. You can [calculate an estimate for your own project](https://launchstudio.eu/en/#calculator) as a starting reference point before you compare it against other quotes. For a broader look at how scoped engineering pricing works at scale, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice, applied across 160+ delivered projects.
 
 ## Reading the Gap Between Two Itemized Quotes, Line by Line
 
-Once you've broken two or three quotes down into the same itemized categories, the interesting part isn't the total — it's where, specifically, the numbers diverge. A €4,000 gap between two otherwise-similar quotes is meaningless on its own; the same gap concentrated entirely in one line item tells you something concrete about what each vendor actually thinks the hard part of the job is.
+Once you've broken two or three quotes down into the same itemized categories, the interesting part isn't the total - it's where, specifically, the numbers diverge. A €4,000 gap between two otherwise-similar quotes is meaningless on its own; the same gap concentrated entirely in one line item tells you something concrete about what each vendor actually thinks the hard part of the job is.
 
-**A large gap in a single line, surrounded by near-identical numbers everywhere else, usually means a genuine scope disagreement, not padding.** If two vendors price authentication, the dashboard, and deployment within a few hundred euros of each other but disagree by a factor of three on the payments integration, that's rarely one vendor overcharging — it's more likely they're picturing meaningfully different implementations of that specific piece, and it's worth asking both, directly, what exactly is included in that number.
+**A large gap in a single line, surrounded by near-identical numbers everywhere else, usually means a genuine scope disagreement, not padding.** If two vendors price authentication, the dashboard, and deployment within a few hundred euros of each other but disagree by a factor of three on the payments integration, that's rarely one vendor overcharging - it's more likely they're picturing meaningfully different implementations of that specific piece, and it's worth asking both, directly, what exactly is included in that number.
 
-**A gap spread evenly across every line item usually means a different hourly-rate assumption, not a different scope.** When every single item in one quote runs 30-40% higher than the equivalent item in another, with no line standing out, the vendors are most likely applying different baseline rates to roughly the same work — which is a legitimate difference (seniority, location, overhead) worth asking about directly, rather than a sign either quote is wrong.
+**A gap spread evenly across every line item usually means a different hourly-rate assumption, not a different scope.** When every single item in one quote runs 30-40% higher than the equivalent item in another, with no line standing out, the vendors are most likely applying different baseline rates to roughly the same work - which is a legitimate difference (seniority, location, overhead) worth asking about directly, rather than a sign either quote is wrong.
 
 **A suspiciously low total with no itemization to back it up is the pattern worth the most scrutiny.** A vendor who won't or can't break a number down the way the others did isn't necessarily hiding something, but it does mean you're comparing a real number against a guess, and a guess that turns out to be an underestimate becomes your problem the moment the project starts running over.
 
 **Ask each vendor directly what happens if their own estimate turns out to be wrong.** A fixed-price quote is only meaningfully fixed if the vendor, not you, absorbs the cost of their own underestimation on a line they scoped themselves. If a vendor's answer involves rebilling you for their own miscalculation, the "fixed" in fixed-price is doing less work than the number on the page suggests.
 
-Comparing quotes this way turns "which number is right" into a much more answerable question: which vendor's breakdown reflects an actual understanding of the work, and which one is a total dressed up to look itemized. The gap tells you where to ask better questions — not just which quote to accept.
+Comparing quotes this way turns "which number is right" into a much more answerable question: which vendor's breakdown reflects an actual understanding of the work, and which one is a total dressed up to look itemized. The gap tells you where to ask better questions - not just which quote to accept.
 
 ## Real example
 
 ### An AI-Native Founder in Action: Three quotes, one spreadsheet
 
-Femke Oosterhuis, a founder in Blaricum, built AgendaKoppel — a scheduling SaaS — using Lovable. Ahead of a planned production push, she requested quotes from three different development vendors for what she believed was the exact same scope: hardening the app's authentication, fixing a double-booking bug in the scheduling logic, and securing calendar data shared between users. The three quotes came back at roughly €900, €3,200, and €6,000 — for, on paper, the same job.
+Femke Oosterhuis, a founder in Blaricum, built AgendaKoppel - a scheduling SaaS - using Lovable. Ahead of a planned production push, she requested quotes from three different development vendors for what she believed was the exact same scope: hardening the app's authentication, fixing a double-booking bug in the scheduling logic, and securing calendar data shared between users. The three quotes came back at roughly €900, €3,200, and €6,000 - for, on paper, the same job.
 
 Femke had no framework for evaluating which number was actually reasonable, so she built one herself: she wrote out her own itemized list of what she believed each part of the fix required, then asked each vendor to break their number down the same way. The exercise revealed that the €900 quote omitted testing and data migration entirely, the €6,000 quote included a broader authentication rebuild she hadn't asked for and didn't need, and the €3,200 quote most closely matched her own itemized scope, with a clear breakdown of hours per component.
 
 **Result:** Femke selected the vendor whose itemization matched her actual scope rather than the cheapest or most expensive number, and used the itemized list to negotiate two unnecessary line items out of the final price.
 
 > *"Once I forced every quote into the same format, the prices stopped looking random. Two of them just weren't quoting the same job I was asking for."*
-> — **Femke Oosterhuis, Founder, AgendaKoppel (Blaricum)**
+> - **Femke Oosterhuis, Founder, AgendaKoppel (Blaricum)**
 
-**Cost & Timeline:** €2,600 (authentication hardening, double-booking fix, calendar data access controls) — completed in 11 business days.
+**Cost & Timeline:** €2,600 (authentication hardening, double-booking fix, calendar data access controls) - completed in 11 business days.
 
 ---
 
@@ -90,7 +90,7 @@ Ask for an itemized breakdown. A vendor unwilling to show their reasoning compon
 
 ### Why do quotes for the "same" scope of work vary so much between vendors?
 
-Usually because the vendors aren't actually quoting the same scope — one may include testing or migration, another may exclude it, and another may quote a broader fix than what was asked for.
+Usually because the vendors aren't actually quoting the same scope - one may include testing or migration, another may exclude it, and another may quote a broader fix than what was asked for.
 
 ### Should I always choose the middle-priced quote?
 

@@ -19,13 +19,13 @@ AI-tools, met name Lovable, genereren uitstekende gebruikersinterfaces. De gegen
 
 Specifieke sterke punten zijn onder meer:
 
-- **Consistente ontwerpsystemen** — Gegenereerde apps gebruiken Tailwind CSS of stijlcomponenten met consistente spatiëring, typografie en kleurenpaletten
+- **Consistente ontwerpsystemen** - Gegenereerde apps gebruiken Tailwind CSS of stijlcomponenten met consistente spatiëring, typografie en kleurenpaletten
 
-- **Responsieve lay-outs** — Mobiele en desktop-lay-outs werken over het algemeen goed uit de doos
+- **Responsieve lay-outs** - Mobiele en desktop-lay-outs werken over het algemeen goed uit de doos
 
-- **Moderne patronen** — Componenten volgen de best practices van React met hooks, goed statusbeheer en een schone JSX-structuur
+- **Moderne patronen** - Componenten volgen de best practices van React met hooks, goed statusbeheer en een schone JSX-structuur
 
-- **Basisprincipes van toegankelijkheid** — Semantische HTML, de juiste kophiërarchie en basis-ARIA-attributen zijn meestal inbegrepen
+- **Basisprincipes van toegankelijkheid** - Semantische HTML, de juiste kophiërarchie en basis-ARIA-attributen zijn meestal inbegrepen
 
 ### Standaard CRUD-bewerkingen
 
@@ -43,15 +43,15 @@ Nadat we honderden door AI gegenereerde applicaties hebben beoordeeld en gerepar
 
 Beveiliging is veruit de meest kritische zwakte in door AI gegenereerde code. De meest voorkomende problemen die wij tegenkomen:
 
-1. **API-sleutels in clientcode** — Anon-sleutels van Supabase, publiceerbare Stripe-sleutels en soms zelfs geheime sleutels worden rechtstreeks in frontend JavaScript-bestanden hardgecodeerd. Dit is het belangrijkste beveiligingsprobleem dat we tegenkomen en dat in ongeveer 70% van de Lovable-projecten voorkomt.
+1. **API-sleutels in clientcode** - Anon-sleutels van Supabase, publiceerbare Stripe-sleutels en soms zelfs geheime sleutels worden rechtstreeks in frontend JavaScript-bestanden hardgecodeerd. Dit is het belangrijkste beveiligingsprobleem dat we tegenkomen en dat in ongeveer 70% van de Lovable-projecten voorkomt.
 
-2. **Beveiliging op rijniveau** — Supabase-tabellen worden gemaakt zonder RLS-beleid, wat betekent dat elke geverifieerde gebruiker de gegevens van andere gebruikers kan lezen, wijzigen of verwijderen. Dit is een catastrofale kwetsbaarheid voor elke applicatie voor meerdere gebruikers.
+2. **Beveiliging op rijniveau** - Supabase-tabellen worden gemaakt zonder RLS-beleid, wat betekent dat elke geverifieerde gebruiker de gegevens van andere gebruikers kan lezen, wijzigen of verwijderen. Dit is een catastrofale kwetsbaarheid voor elke applicatie voor meerdere gebruikers.
 
-3. **Geen invoervalidatie** — Door de gebruiker ingediende gegevens stromen rechtstreeks naar de database zonder opschoning of validatie, waardoor SQL-injectie en XSS-aanvalsvectoren ontstaan.
+3. **Geen invoervalidatie** - Door de gebruiker ingediende gegevens stromen rechtstreeks naar de database zonder opschoning of validatie, waardoor SQL-injectie en XSS-aanvalsvectoren ontstaan.
 
-4. **Onveilige directe objectreferenties** — Gebruikers kunnen URL's of API-aanroepen manipuleren om toegang te krijgen tot bronnen van andere gebruikers.
+4. **Onveilige directe objectreferenties** - Gebruikers kunnen URL's of API-aanroepen manipuleren om toegang te krijgen tot bronnen van andere gebruikers.
 
-5. **Ontbrekende CSRF-bescherming** — Formulieren en API-eindpunten hebben geen tokens voor vervalsing van verzoeken voor meerdere sites.
+5. **Ontbrekende CSRF-bescherming** - Formulieren en API-eindpunten hebben geen tokens voor vervalsing van verzoeken voor meerdere sites.
 
 ### Foutafhandeling hiaten
 
@@ -71,15 +71,15 @@ Door AI gegenereerde applicaties volgen het 'gelukkige pad': ze werken prachtig 
 
 Door AI gegenereerde code bevat vaak prestatie-antipatronen die er bij tien gebruikers misschien niet toe doen, maar op grote schaal ernstige problemen veroorzaken:
 
-- **N+1 queryproblemen** — Gerelateerde gegevens ophalen in lussen in plaats van joins
+- **N+1 queryproblemen** - Gerelateerde gegevens ophalen in lussen in plaats van joins
 
-- **Onnodig opnieuw renderen** — Ontbrekende React.memo-, useMemo- en useCallback-optimalisaties
+- **Onnodig opnieuw renderen** - Ontbrekende React.memo-, useMemo- en useCallback-optimalisaties
 
-- **Niet-geoptimaliseerde afbeeldingen** — Geen lazyloading, compressie of responsieve afbeeldingsgrootte
+- **Niet-geoptimaliseerde afbeeldingen** - Geen lazyloading, compressie of responsieve afbeeldingsgrootte
 
-- **Geen cachingstrategie** — Bij elke paginalading worden nieuwe gegevens uit de database opgehaald
+- **Geen cachingstrategie** - Bij elke paginalading worden nieuwe gegevens uit de database opgehaald
 
-- **Ontbrekende database-indexen** — Query's op veelgebruikte kolommen voeren volledige tabelscans uit
+- **Ontbrekende database-indexen** - Query's op veelgebruikte kolommen voeren volledige tabelscans uit
 
 ### Hiaten in de betalingsintegratie
 
@@ -172,7 +172,7 @@ Emma nam contact op met **LaunchStudio (door Manifera)**. Het technische team hi
 
 **Resultaat:** De laadtijd van Emma's app daalde van 8 seconden naar minder dan 0,5 seconde en haar klantgegevens werden volledig veilig. Binnen twee weken na de lancering heeft ze met succes 80 betalende klanten aan boord gekregen.
 
-**Kosten en tijdlijn:** € 2.200 (schaalpakket) — productieklaar en binnen 7 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 2.200 (schaalpakket) - productieklaar en binnen 7 werkdagen geïmplementeerd.
 
 ---
 

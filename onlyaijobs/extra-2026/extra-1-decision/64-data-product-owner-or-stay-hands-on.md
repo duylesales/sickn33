@@ -39,7 +39,7 @@ The offer arrives with flattering framing. You understand the technology and you
 
 ## What the Role Actually Is
 
-Titles vary — data product owner, product manager for data, analytics lead, analytics translator — and the substance is consistent. You decide what gets built and why, and other people build it.
+Titles vary - data product owner, product manager for data, analytics lead, analytics translator - and the substance is consistent. You decide what gets built and why, and other people build it.
 
 That means a week of deciding between requests that all have advocates, writing down what "done" means for things that are inherently uncertain, negotiating with stakeholders whose priorities conflict, explaining delays, defining success measures, and protecting your team's attention from the organisation's enthusiasm.
 
@@ -59,7 +59,7 @@ You are being offered the role because you can do both. That is a genuine compli
 
 **A broader market later.** Product skills apply across sectors and outlive any particular technology stack.
 
-**Influence over whether the work matters.** Much of what makes data work satisfying — being used, changing a decision — is determined at the framing stage, which is now your job.
+**Influence over whether the work matters.** Much of what makes data work satisfying - being used, changing a decision - is determined at the framing stage, which is now your job.
 
 **Relief from a particular frustration.** If you have spent years building things that were never adopted, owning the adoption problem is unusually satisfying.
 
@@ -79,7 +79,7 @@ Frequently not, and it is worth establishing this before deciding.
 
 Compare the salary scale, not the title. In many Dutch organisations a senior engineer and a product owner sit at similar levels, and the move is lateral. Ask where the role sits in the scale, what the progression path looks like from there, and who the role reports to.
 
-Ask also whether the previous product owner was promoted, moved sideways or left. And ask whether the senior technical track exists at all in this organisation — in places where it does not, product or management is the only route upwards, which is a real constraint but also an argument for looking at employers where that is not true.
+Ask also whether the previous product owner was promoted, moved sideways or left. And ask whether the senior technical track exists at all in this organisation - in places where it does not, product or management is the only route upwards, which is a real constraint but also an argument for looking at employers where that is not true.
 
 ## The Reversibility Question
 
@@ -150,7 +150,7 @@ If you are weighing the move partly on future employability, it helps to know ho
 
 **The titles are inconsistent.** Data product owner, product manager data, analytics lead, information manager, sometimes business partner. Read the responsibilities, since two roles with the same title can differ completely in authority.
 
-**Your competition is not only technical people.** Many candidates for these roles come from the business side — planners, analysts, process owners — and they usually have more experience of stakeholder work than you do. Your advantage is feasibility judgement, and it is worth making explicit: you can tell when an estimate is wrong, when a request is technically incoherent and when a promised capability does not exist.
+**Your competition is not only technical people.** Many candidates for these roles come from the business side - planners, analysts, process owners - and they usually have more experience of stakeholder work than you do. Your advantage is feasibility judgement, and it is worth making explicit: you can tell when an estimate is wrong, when a request is technically incoherent and when a promised capability does not exist.
 
 **Returning is easier from a technical product role than from a general one.** If your product work stays close to models and data platforms, the return path to engineering remains open longer than if you drift into general delivery management.
 
@@ -162,13 +162,13 @@ If you are weighing the move partly on future employability, it helps to know ho
 
 A senior ML engineer at a logistics company is offered the product owner role for the planning platform. Same salary scale, a team of six, a seat in conversations she had previously only heard about second-hand.
 
-She accepts, with two conditions: a review after a year, and one technical responsibility retained — she keeps ownership of the evaluation framework for the forecasting models.
+She accepts, with two conditions: a review after a year, and one technical responsibility retained - she keeps ownership of the evaluation framework for the forecasting models.
 
 The first six months are the most satisfying of her career. Three projects that had been stuck for a year get unstuck, mostly by being reframed or cancelled. She discovers she is good at saying no.
 
 The second six months are different. The organisation reorganises, her sponsor leaves, and the role becomes coordination between departments rather than product ownership. The authority she was given informally evaporates with the person who gave it.
 
-At the review, she moves back to a lead engineering role. The evaluation framework she kept is what makes the return straightforward — it is current, technical and hers.
+At the review, she moves back to a lead engineering role. The evaluation framework she kept is what makes the return straightforward - it is current, technical and hers.
 
 Her view now: the year taught her more about why data projects fail than five years of building did, and keeping one technical thing was the decision that made it a detour rather than a change of career.
 
@@ -176,13 +176,13 @@ Her view now: the year taught her more about why data projects fail than five ye
 
 - A data product role is a different profession, not a senior version of your current one: you decide what gets built and others build it.
 - The real gains are leverage, visibility, transferable product skills and ownership of whether the work gets used.
-- Technical depth decays gradually — comfortable at six months, noticeable at two years, a career change at four.
+- Technical depth decays gradually - comfortable at six months, noticeable at two years, a career change at four.
 - Check the salary scale rather than the title; in many Dutch organisations the move is lateral, and the absence of a senior technical track is itself information.
 - If you accept, keep one genuine technical responsibility and set a review point at a year.
 
 ## Where to Start
 
-Before deciding, check whether employers near you offer a senior technical track — the answer often determines whether this move is a choice or the only route upwards where you currently work.
+Before deciding, check whether employers near you offer a senior technical track - the answer often determines whether this move is a choice or the only route upwards where you currently work.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -208,7 +208,7 @@ That is a legitimate reason to accept, and also a reason to check whether other 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a data product owner role a promotion?", "acceptedAnswer": {"@type": "Answer", "text": "Often lateral — compare the salary scale rather than the title."}},
+    {"@type": "Question", "name": "Is a data product owner role a promotion?", "acceptedAnswer": {"@type": "Answer", "text": "Often lateral - compare the salary scale rather than the title."}},
     {"@type": "Question", "name": "How quickly do technical skills decay?", "acceptedAnswer": {"@type": "Answer", "text": "Reversible within a year, noticeable at two, a career change at three or four."}},
     {"@type": "Question", "name": "How do I tell a real product role from a coordination job?", "acceptedAnswer": {"@type": "Answer", "text": "Authority to say no, a defined product with users, ownership of measures and a staffed team."}},
     {"@type": "Question", "name": "Should I take it if I still like coding?", "acceptedAnswer": {"@type": "Answer", "text": "Probably not yet; product work produces decisions rather than artefacts."}},

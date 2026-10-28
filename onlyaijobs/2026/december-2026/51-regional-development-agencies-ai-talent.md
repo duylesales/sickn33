@@ -13,7 +13,7 @@ Content Format: Policy Brief
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Regional Development Agencies and AI Talent: The Missing Link Between Funding and People",
-  "description": "Dutch regional development organisations fund innovation projects that then fail to find staff. Treating talent visibility as infrastructure — not as a company's private problem — closes a gap nobody currently owns.",
+  "description": "Dutch regional development organisations fund innovation projects that then fail to find staff. Treating talent visibility as infrastructure - not as a company's private problem - closes a gap nobody currently owns.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-26",
@@ -39,7 +39,7 @@ Every Dutch region has an organisation whose job is to strengthen its economy: a
 
 ## The Gap Nobody Owns
 
-A development agency co-finances a project to develop a new industrial vision system. The technology works. The company then needs two machine learning engineers to take it to market, searches for eight months, and hires a consultancy instead — knowledge that leaves when the contract ends. The project is recorded as a success in the funding report and delivers a fraction of the intended regional benefit.
+A development agency co-finances a project to develop a new industrial vision system. The technology works. The company then needs two machine learning engineers to take it to market, searches for eight months, and hires a consultancy instead - knowledge that leaves when the contract ends. The project is recorded as a success in the funding report and delivers a fraction of the intended regional benefit.
 
 This pattern repeats across the Netherlands, and it falls between the responsibilities of the organisations involved.
 
@@ -57,7 +57,7 @@ Three market failures make this a legitimate object of regional policy rather th
 
 **Sunk-cost geography.** People do not relocate freely. Housing, partners, schools and family anchor them, which means regional supply and demand can be persistently mismatched even in a country this small. Someone commuting ninety minutes each way is not a functioning market outcome.
 
-Where a market fails for these reasons, the standard regional policy response is to build shared infrastructure. Talent visibility is infrastructure of exactly this kind — and it is considerably cheaper than the physical infrastructure these organisations routinely fund.
+Where a market fails for these reasons, the standard regional policy response is to build shared infrastructure. Talent visibility is infrastructure of exactly this kind - and it is considerably cheaper than the physical infrastructure these organisations routinely fund.
 
 ## What a Development Agency Can Actually Do
 
@@ -69,11 +69,11 @@ Six interventions, roughly in order of cost.
 
 **Target returnees deliberately.** People who grew up in the region, left for study or work, and would consider coming back are the highest-conversion audience available, and they can be reached through alumni networks, regional media and family connections.
 
-**Build employer collectives.** Twenty companies sharing a recruitment presence, a graduate programme or a traineeship reach candidates none could reach alone, and give a candidate the assurance that a second employer exists if the first does not work out — which is the unspoken concern about regional moves.
+**Build employer collectives.** Twenty companies sharing a recruitment presence, a graduate programme or a traineeship reach candidates none could reach alone, and give a candidate the assurance that a second employer exists if the first does not work out - which is the unspoken concern about regional moves.
 
 **Connect education to employers systematically.** Graduation projects, internships and applied research placements are the most reliable regional talent pipeline and the least systematically organised.
 
-**Include talent in funding conditions.** Where an agency co-finances a project, asking how the company will staff it — and offering support with that — turns an afterthought into a plan.
+**Include talent in funding conditions.** Where an agency co-finances a project, asking how the company will staff it - and offering support with that - turns an afterthought into a plan.
 
 ## A Concrete Scenario: The Programme That Funded Its Own Bottleneck
 
@@ -105,7 +105,7 @@ Several of these can be assembled from existing statistics and from the agencies
 
 Two trends make this more urgent than it was five years ago.
 
-Hybrid working has permanently changed the geography of employment. A regional employer offering two office days can now recruit from a radius that includes several cities — but only if candidates know the employer exists. The constraint has shifted from physical proximity to visibility, which is precisely the constraint a regional organisation can address.
+Hybrid working has permanently changed the geography of employment. A regional employer offering two office days can now recruit from a radius that includes several cities - but only if candidates know the employer exists. The constraint has shifted from physical proximity to visibility, which is precisely the constraint a regional organisation can address.
 
 And the housing situation has made regional living materially more attractive relative to the Randstad. People who would not have considered a move out of the major cities are doing the arithmetic. Regions that are visible when that calculation happens will capture people; regions that are not will watch them move somewhere else.
 
@@ -131,7 +131,7 @@ Commuting tolerance in the Netherlands is real but bounded: many people will tra
 
 The practical implications are specific. An initiative based in the provincial capital may be irrelevant to companies an hour away. A traineeship requiring attendance at one location excludes participants from the far side of the province. A regional campaign aimed at returnees should name the towns people actually come from rather than the province, because identity attaches to places, not to administrative units.
 
-The fix is to map the region as candidates experience it: travel times, rail connections, housing costs and where the employers actually sit. Several Dutch regions that did this discovered that their real labour market extends across a provincial border — into Germany, into another province, into a neighbouring region's city — and that some of their coordination effort was being spent on the wrong geography entirely.
+The fix is to map the region as candidates experience it: travel times, rail connections, housing costs and where the employers actually sit. Several Dutch regions that did this discovered that their real labour market extends across a provincial border - into Germany, into another province, into a neighbouring region's city - and that some of their coordination effort was being spent on the wrong geography entirely.
 
 ## Key Takeaways
 

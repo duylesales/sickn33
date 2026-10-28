@@ -31,11 +31,11 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
 }
 </script>
 
-Dinsdagochtend, 09:14 uur op de dag van lancering. De applicatie van uw klant staat vier uur live. Uw telefoon gaat — geen appje, maar een directe oproep, wat op dit soort momenten zelden goed nieuws betekent. Aan de andere kant klinkt de gespannen stem van de oprichter: "Bezoekers melden dat ze niet kunnen afrekenen. En bij een aantal klanten is het bedrag dubbel afgeschreven."
+Dinsdagochtend, 09:14 uur op de dag van lancering. De applicatie van uw klant staat vier uur live. Uw telefoon gaat - geen appje, maar een directe oproep, wat op dit soort momenten zelden goed nieuws betekent. Aan de andere kant klinkt de gespannen stem van de oprichter: "Bezoekers melden dat ze niet kunnen afrekenen. En bij een aantal klanten is het bedrag dubbel afgeschreven."
 
 Er gebeuren nu drie dingen tegelijk: u heeft een klant die u het vertrouwen gaf over een lancering waar maandenlang naartoe is gewerkt; er is een technisch defect dat u niet zelf heeft veroorzaakt en niet zelf kunt oplossen; en de klok tikt genadeloos voor hoe u dit aanpakt. Wat u in de komende twintig minuten doet, is bepalender voor het behoud van deze klantrelatie dan alles wat er daarna gebeurt.
 
-Dit is het handboek voor dat telefoongesprek. Niet voor de technische bugfix — dat is de taak van uw ontwikkelpartner — maar voor de accountmanagement-volgorde die bepaalt of dit incident verandert in een nare herinnering die de klant u vergeeft, of in de reden waarom u die klant nooit meer terugziet.
+Dit is het handboek voor dat telefoongesprek. Niet voor de technische bugfix - dat is de taak van uw ontwikkelpartner - maar voor de accountmanagement-volgorde die bepaalt of dit incident verandert in een nare herinnering die de klant u vergeeft, of in de reden waarom u die klant nooit meer terugziet.
 
 ## Minuut 0 tot 20: Stop met Raden, Begin met Verifiëren
 
@@ -44,7 +44,7 @@ Onder acute druk is de menselijke reflex om direct gerust te stellen: *"Geen zor
 De juiste eerste reactie:
 1. Erken specifiek wat de klant meldt, zonder het probleem te bagatelliseren of gouden bergen te beloven.
 2. Schakel uw technische partner direct in, parallel aan het gesprek met de klant.
-3. Communiceer glashelder: *"Ik begrijp de ernst — dubbele afschrijvingen zijn volstrekt onacceptabel. Ik zet direct ons engineeringteam hierop en ik kom binnen vijftien minuten bij je terug met een inhoudelijke update."*
+3. Communiceer glashelder: *"Ik begrijp de ernst - dubbele afschrijvingen zijn volstrekt onacceptabel. Ik zet direct ons engineeringteam hierop en ik kom binnen vijftien minuten bij je terug met een inhoudelijke update."*
 
 Dit is eerlijk, toont urgentie en koopt u de tijd om uit te zoeken wat er werkelijk aan de hand is vóórdat u toezeggingen doet.
 
@@ -52,7 +52,7 @@ Verzamel ondertussen direct de feitelijke data die engineers nodig hebben: hoeve
 
 ## Minuut 20 tot 60: De Eerste Inhoudelijke Update
 
-Rond dit tijdstip moet u iets tastbaars kunnen melden vanuit uw ontwikkelpartner — zelfs als dat bericht luidt: *"We hebben de oorzaak gelokaliseerd en implementeren een hotfix, verwachte hersteltijd dertig minuten."*
+Rond dit tijdstip moet u iets tastbaars kunnen melden vanuit uw ontwikkelpartner - zelfs als dat bericht luidt: *"We hebben de oorzaak gelokaliseerd en implementeren een hotfix, verwachte hersteltijd dertig minuten."*
 
 Deel dit feitelijk en zonder overbodige omhaal. Indien er dubbele afschrijvingen plaatsvinden, is dit tevens het moment om met de engineers te besluiten of de betaalstraat tijdelijk volledig moet worden dichtgezet. Dit is een expliciet besluit dat u samen met de klant neemt, om te voorkomen dat er tijdens de reparatie nog meer gedupeerden bijkomen.
 
@@ -68,7 +68,7 @@ Stel, in nauw overleg met de klant, direct een beknopt en oprecht bericht op voo
 
 ## Dag 1 tot 3: De Schriftelijke Debriefing (Zelfs Als Men Er Niet Om Vraagt)
 
-Zodra de acute brand is geblust, is de verleiding groot om snel door te gaan naar de orde van de dag. Weersta dat. Een beknopte, schriftelijke debriefing naar de klant — wat gebeurde er, hoe is het opgelost en wat doen we om herhaling uit te sluiten — rondt het incident professioneel af.
+Zodra de acute brand is geblust, is de verleiding groot om snel door te gaan naar de orde van de dag. Weersta dat. Een beknopte, schriftelijke debriefing naar de klant - wat gebeurde er, hoe is het opgelost en wat doen we om herhaling uit te sluiten - rondt het incident professioneel af.
 
 Dit document hoeft geen boekwerk te zijn:
 - Een tijdlijn van het incident in heldere lekentaal.
@@ -94,7 +94,7 @@ Veel bureaus vinden dit eng en hopen dat het incident vanzelf vergeten wordt. Ma
 
 Nadat de debriefing naar de klant is verzonden, voert u een tweede, strikt interne evaluatie uit met uw eigen team en uw technische partner. Deze sessie richt zich op een fundamenteel andere vraag: niet alleen wat er technisch gebeurde, maar hoe de incidentrespons zélf heeft gefunctioneerd. Hoorde de klant snel genoeg van u? Verliep de overdracht tussen u en uw technische partner soepel, of ging er cruciale context verloren in de vertaalslag? Beschikte u direct over de toegang en informatie die u nodig had om updates met vertrouwen door te geven, of zat u langer op uw partner te wachten dan de klant op u had mogen wachten? 
 
-Deze interne debriefing is de plek waar u uw incidentrespons-procedure daadwerkelijk verbetert voor een volgende keer — iets wat bij voldoende klanttrajecten over meerdere jaren onvermijdelijk opnieuw zal voorkomen, ongeacht hoe bekwaam uw technische partner ook is. Behandel elk incident, zodra het eenmaal is opgelost, als een uitgelezen kans om de responsketen zelf aan te scherpen, en niet slechts als het verhelpen van de specifieke bug die de crisis veroorzaakte.
+Deze interne debriefing is de plek waar u uw incidentrespons-procedure daadwerkelijk verbetert voor een volgende keer - iets wat bij voldoende klanttrajecten over meerdere jaren onvermijdelijk opnieuw zal voorkomen, ongeacht hoe bekwaam uw technische partner ook is. Behandel elk incident, zodra het eenmaal is opgelost, als een uitgelezen kans om de responsketen zelf aan te scherpen, en niet slechts als het verhelpen van de specifieke bug die de crisis veroorzaakte.
 
 ## Wat Dit Betekent Voor de Selectie van Uw Ontwikkelpartner
 
@@ -104,7 +104,7 @@ Dit is een doorslaggevend criterium om expliciet mee te wegen bij het selecteren
 
 [LaunchStudio](https://launchstudio.eu/nl/) beschouwt proactieve incidentbeheersing als een vast onderdeel van elke samenwerking, ondersteund door [Manifera's 11+ jaar ervaring met bedrijfskritische softwaresystemen](https://www.manifera.com/portfolio/) voor veeleisende opdrachtgevers zoals TNO en CFLW. Dezelfde discipline die we inzetten om software in één keer goed te lanceren, hanteren we wanneer er onverhoopt toch iets misgaat.
 
-Loopt een livegang op dit moment spaak? [Laat direct een ervaren engineer meekijken](https://launchstudio.eu/nl/#contact) — nu het probleem nog actief impact heeft op uw klant.
+Loopt een livegang op dit moment spaak? [Laat direct een ervaren engineer meekijken](https://launchstudio.eu/nl/#contact) - nu het probleem nog actief impact heeft op uw klant.
 
 ## Echt voorbeeld
 
@@ -117,7 +117,7 @@ Niels weerstond de neiging tot loze beloftes. Hij noteerde de feiten, schakelde 
 **Resultaat:** De opdrachtgever, die aanvankelijk twijfelde aan het hele lanceertraject, gaf een week later aan dat de kalme, transparante en daadkrachtige schadebeheersing hem juist enorm veel vertrouwen had gegeven. Niels behield het account en heeft inmiddels al twee vervolgprojecten voor dezelfde klant succesvol gelanceerd.
 
 > *"De bug bezorgde me klamme handen. Maar de snelheid en eerlijkheid waarmee het werd opgelost, is de reden waarom ik geen seconde heb getwijfeld om bij dit bureau te blijven."*
-> — **De opdrachtgever van Niels Kramer, marktplaats-oprichter (Haarlem)**
+> - **De opdrachtgever van Niels Kramer, marktplaats-oprichter (Haarlem)**
 
 ## Veelgestelde Vragen
 

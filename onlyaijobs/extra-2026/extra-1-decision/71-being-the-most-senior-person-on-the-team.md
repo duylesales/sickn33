@@ -51,7 +51,7 @@ Each has different implications. Joining a team whose seniors all left recently 
 
 ## What Changes Without Someone Above You
 
-**Nobody checks your reasoning.** Design decisions, validation approaches, architectural choices — all yours, unreviewed. Mistakes do not surface until they are expensive.
+**Nobody checks your reasoning.** Design decisions, validation approaches, architectural choices - all yours, unreviewed. Mistakes do not surface until they are expensive.
 
 **Your calibration drifts.** Without comparison you lose the ability to judge whether your work is strong, adequate or poor. People in this position routinely misjudge themselves in both directions.
 
@@ -90,7 +90,7 @@ Most people know which applies to them. A useful proxy is whether you can rememb
 - **What is the training budget and time, and is it contractual?**
 - **Is a second senior planned, and on what trigger?**
 - **What happens when I say something will take three months and the business wants it in three weeks?** Ask for a real example.
-- **Who decides technical direction — me, the manager, or IT?**
+- **Who decides technical direction - me, the manager, or IT?**
 
 ## Signals the Employer Understands the Risk
 
@@ -139,7 +139,7 @@ An employer with none of these is not necessarily a bad employer. They simply ha
 
 Set a review point at two years and ask three questions honestly. Am I better than I was, or only more senior? Could I pass a technical interview at a strong employer today? Have I had my mind changed about anything technical in the past year?
 
-If the answers are uncomfortable, the remedy is not necessarily to leave. It is to introduce the review and challenge that the role does not supply — which is easier while you are still in the job than afterwards, when a search exposes the gap for you.
+If the answers are uncomfortable, the remedy is not necessarily to leave. It is to introduce the review and challenge that the role does not supply - which is easier while you are still in the job than afterwards, when a search exposes the gap for you.
 
 ## Managing Upwards Becomes Part of the Job
 
@@ -173,7 +173,7 @@ Three years later the team is six people with two mid-level engineers, and she i
 
 ## Key Takeaways
 
-- Being the most senior person brings authority, ownership and fast growth in judgement — and removes review, calibration and passive learning.
+- Being the most senior person brings authority, ownership and fast growth in judgement - and removes review, calibration and passive learning.
 - The honest test is whether you have been held to a standard by better colleagues long enough to have internalised one.
 - Ask why there is no senior now, who would review your work, and whether there is budget for external input or a second senior hire.
 - Replace the missing colleague deliberately: buy external review, find peers outside the organisation, use engineers elsewhere and expose your work publicly.
@@ -181,7 +181,7 @@ Three years later the team is six people with two mid-level engineers, and she i
 
 ## Where to Start
 
-If you are weighing a lead role with no senior above you, compare it with team roles near you where strong reviewers exist — the trade-off between authority and correction is easier to judge side by side.
+If you are weighing a lead role with no senior above you, compare it with team roles near you where strong reviewers exist - the trade-off between authority and correction is easier to judge side by side.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -211,7 +211,7 @@ Ask why, specifically. A team that lost its experienced people recently has a re
     {"@type": "Question", "name": "How do I know whether I am ready?", "acceptedAnswer": {"@type": "Answer", "text": "If you can recall colleagues changing your mind technically, you have been calibrated."}},
     {"@type": "Question", "name": "What should I ask the employer for?", "acceptedAnswer": {"@type": "Answer", "text": "External review budget, contractual training, access to engineers and a second senior hire plan."}},
     {"@type": "Question", "name": "How do I keep developing?", "acceptedAnswer": {"@type": "Answer", "text": "Buy review, join an external peer group, have code reviewed and present your work."}},
-    {"@type": "Question", "name": "What if the previous seniors all left?", "acceptedAnswer": {"@type": "Answer", "text": "Ask why specifically — recent senior departures usually say something about the organisation."}}
+    {"@type": "Question", "name": "What if the previous seniors all left?", "acceptedAnswer": {"@type": "Answer", "text": "Ask why specifically - recent senior departures usually say something about the organisation."}}
   ]
 }
 </script>

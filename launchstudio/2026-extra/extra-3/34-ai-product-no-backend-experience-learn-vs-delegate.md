@@ -31,31 +31,31 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Once a non-technical founder understands, genuinely, that a production-readiness gap exists between their vibe-coded prototype and a launch-ready product, a specific fork appears: learn enough backend concepts to meaningfully close the gap themselves, or delegate the entire technical layer to someone else. Neither path is universally correct, and the honest answer depends on specifics — available time, genuine interest in the technical side, and how central ongoing technical control is to the founder's actual goals for the company.
+Once a non-technical founder understands, genuinely, that a production-readiness gap exists between their vibe-coded prototype and a launch-ready product, a specific fork appears: learn enough backend concepts to meaningfully close the gap themselves, or delegate the entire technical layer to someone else. Neither path is universally correct, and the honest answer depends on specifics - available time, genuine interest in the technical side, and how central ongoing technical control is to the founder's actual goals for the company.
 
 ## Why "Learn Everything" Is an Unrealistic Framing of the Learn Path
 
-Genuinely learning backend development to the depth required for independent, adversarial production verification — the specific skill distinguishing role one from role two covered elsewhere in broader guidance — takes considerably longer than most non-technical founders have available runway for, especially while simultaneously running every other part of an early-stage company. Framing the "learn" option as "become a real backend engineer" sets up a comparison that makes delegation look obviously correct by default, which understates what a more realistic, partial learning investment can actually achieve.
+Genuinely learning backend development to the depth required for independent, adversarial production verification - the specific skill distinguishing role one from role two covered elsewhere in broader guidance - takes considerably longer than most non-technical founders have available runway for, especially while simultaneously running every other part of an early-stage company. Framing the "learn" option as "become a real backend engineer" sets up a comparison that makes delegation look obviously correct by default, which understates what a more realistic, partial learning investment can actually achieve.
 
 ## What's Genuinely Worth Learning Even If You're Delegating the Rest
 
-The vocabulary and diagnostic questions covered throughout broader guidance for non-technical founders — understanding what authentication versus authorization means, knowing to ask whether something is enforced server-side, recognizing the difference between a specific answer and vague reassurance — are achievable in hours, not years, and meaningfully improve a founder's ability to evaluate and direct delegated technical work, even without ever writing code themselves.
+The vocabulary and diagnostic questions covered throughout broader guidance for non-technical founders - understanding what authentication versus authorization means, knowing to ask whether something is enforced server-side, recognizing the difference between a specific answer and vague reassurance - are achievable in hours, not years, and meaningfully improve a founder's ability to evaluate and direct delegated technical work, even without ever writing code themselves.
 
 ## What's Genuinely Not Worth Learning for Most Founders
 
-Actually implementing server-side authorization correctly, configuring database-level locking to prevent race conditions, or setting up proper CI pipelines are specialized skills that take real, sustained practice to develop reliable judgment in — attempting to learn these specifically to avoid delegation costs, for most non-technical founders, trades a bounded, predictable delegation cost for an unbounded, uncertain learning investment with real risk of producing worse results than delegation would have, given how consequential mistakes in these specific areas can be.
+Actually implementing server-side authorization correctly, configuring database-level locking to prevent race conditions, or setting up proper CI pipelines are specialized skills that take real, sustained practice to develop reliable judgment in - attempting to learn these specifically to avoid delegation costs, for most non-technical founders, trades a bounded, predictable delegation cost for an unbounded, uncertain learning investment with real risk of producing worse results than delegation would have, given how consequential mistakes in these specific areas can be.
 
 ## The Middle Path Most Founders Actually End Up On
 
-Most non-technical founders land somewhere between the two extremes: learning enough vocabulary and diagnostic skill to meaningfully evaluate and direct technical work, while delegating the actual implementation to someone with genuine backend depth — a division that mirrors, in miniature, the same specialization logic covered throughout broader guidance about why "my cofounder can code a little" isn't sufficient production strategy on its own, applied here to a founder's own individual skill development choice rather than a team composition question.
+Most non-technical founders land somewhere between the two extremes: learning enough vocabulary and diagnostic skill to meaningfully evaluate and direct technical work, while delegating the actual implementation to someone with genuine backend depth - a division that mirrors, in miniature, the same specialization logic covered throughout broader guidance about why "my cofounder can code a little" isn't sufficient production strategy on its own, applied here to a founder's own individual skill development choice rather than a team composition question.
 
 ## Why This Choice Isn't Permanent
 
-A founder who delegates entirely at launch isn't committed to that choice indefinitely — many founders gradually develop deeper technical fluency over time, informed by watching real delegated engagements and asking increasingly specific questions, without ever needing to make an all-or-nothing decision upfront about how technical they'll eventually become.
+A founder who delegates entirely at launch isn't committed to that choice indefinitely - many founders gradually develop deeper technical fluency over time, informed by watching real delegated engagements and asking increasingly specific questions, without ever needing to make an all-or-nothing decision upfront about how technical they'll eventually become.
 
-[LaunchStudio](https://launchstudio.eu/en/) works with founders across this entire spectrum — from those wanting the vocabulary to evaluate delegated work intelligently to those wanting the technical layer handled entirely — translating findings and decisions to whatever level of technical fluency a given founder actually has, backed by Manifera's broader experience communicating clearly across a wide range of client technical backgrounds.
+[LaunchStudio](https://launchstudio.eu/en/) works with founders across this entire spectrum - from those wanting the vocabulary to evaluate delegated work intelligently to those wanting the technical layer handled entirely - translating findings and decisions to whatever level of technical fluency a given founder actually has, backed by Manifera's broader experience communicating clearly across a wide range of client technical backgrounds.
 
-[Figure out which parts are worth learning and which are worth delegating](https://launchstudio.eu/en/#contact) — the right mix is more nuanced than an all-or-nothing choice.
+[Figure out which parts are worth learning and which are worth delegating](https://launchstudio.eu/en/#contact) - the right mix is more nuanced than an all-or-nothing choice.
 
 ## A Focused Few Hours' Worth of Learning: What to Actually Cover, In Order
 
@@ -63,15 +63,15 @@ A founder who delegates entirely at launch isn't committed to that choice indefi
 
 **First: the frontend-versus-backend authorization distinction.** Before anything else, understanding why a check that happens only in the interface a user sees is fundamentally different from a check enforced on the server handling the actual request is the single concept most other diagnostic questions build on. Everything else in this sequence assumes this distinction already makes sense.
 
-**Second: what "secrets" actually refers to, and why they end up exposed.** Understanding that API keys, database credentials, and similar values need to live outside the actual code, and the specific, common way they end up in a public repository anyway — an early commit nobody thought to check — turns "have you handled secrets properly" from an abstract question into one a founder can ask with genuine specificity.
+**Second: what "secrets" actually refers to, and why they end up exposed.** Understanding that API keys, database credentials, and similar values need to live outside the actual code, and the specific, common way they end up in a public repository anyway - an early commit nobody thought to check - turns "have you handled secrets properly" from an abstract question into one a founder can ask with genuine specificity.
 
 **Third: what a structured error path looks like versus a generic one.** A rough sense of the difference between code that handles a payment failure, an AI provider timeout, or a malformed response specifically, versus code that catches every failure the same generic way, equips a founder to ask a pointed question about a specific integration rather than a vague one about "error handling in general."
 
-**Fourth: the specific language for asking about testing beyond the happy path.** Understanding what "concurrent users" and "adversarial testing" actually mean in practice — not the happy-path testing a founder naturally does themselves — gives vocabulary for a question a founder would otherwise not know how to ask at all.
+**Fourth: the specific language for asking about testing beyond the happy path.** Understanding what "concurrent users" and "adversarial testing" actually mean in practice - not the happy-path testing a founder naturally does themselves - gives vocabulary for a question a founder would otherwise not know how to ask at all.
 
-**Fifth, and only after the first four: a general sense of what a genuine technical review actually produces.** Knowing what specific, verifiable findings look like, versus vague reassurance, is the piece that lets a founder evaluate whether delegated work was actually done well, which is why it comes last — it's most useful once the first four pieces give it something concrete to apply to.
+**Fifth, and only after the first four: a general sense of what a genuine technical review actually produces.** Knowing what specific, verifiable findings look like, versus vague reassurance, is the piece that lets a founder evaluate whether delegated work was actually done well, which is why it comes last - it's most useful once the first four pieces give it something concrete to apply to.
 
-Working through these five in order, rather than jumping to whichever sounds most urgent, builds each concept on the one before it, which is closer to how the vocabulary functions in an actual technical conversation — a founder who understands the authorization distinction first finds the secrets and error-handling questions considerably easier to grasp than one who started somewhere in the middle of the list.
+Working through these five in order, rather than jumping to whichever sounds most urgent, builds each concept on the one before it, which is closer to how the vocabulary functions in an actual technical conversation - a founder who understands the authorization distinction first finds the secrets and error-handling questions considerably easier to grasp than one who started somewhere in the middle of the list.
 
 ## Real example
 
@@ -79,14 +79,14 @@ Working through these five in order, rather than jumping to whichever sounds mos
 
 Renske, a former physical therapist turned founder in Nijmegen, built BewegingsPlan, an AI tool generating personalized rehabilitation exercise plans for small physiotherapy practices, using Bolt, and had initially assumed she needed to either learn to code seriously or hand over the entire technical direction of her company to someone else.
 
-After an initial conversation with LaunchStudio walking through the specific vocabulary and diagnostic questions covered throughout broader guidance, Renske realized she could meaningfully evaluate and direct technical decisions — asking pointed, specific questions about authentication and data handling — without needing to personally implement any of it, landing on a middle path she hadn't originally considered as a real option.
+After an initial conversation with LaunchStudio walking through the specific vocabulary and diagnostic questions covered throughout broader guidance, Renske realized she could meaningfully evaluate and direct technical decisions - asking pointed, specific questions about authentication and data handling - without needing to personally implement any of it, landing on a middle path she hadn't originally considered as a real option.
 
 **Result:** Renske delegated the actual technical hardening to LaunchStudio while retaining genuine, informed involvement in reviewing findings and understanding trade-offs, a division of labor that let her stay meaningfully engaged with her product's technical direction without the unrealistic time investment full independent technical competency would have required.
 
 > *"I thought my only real choices were becoming technical myself or completely stepping back from that whole side of the business. Learning just enough to ask smart questions and actually understand the answers turned out to be a genuinely achievable middle ground I hadn't realized existed."*
-> — **Renske Voskuil, Founder, BewegingsPlan (Nijmegen)**
+> - **Renske Voskuil, Founder, BewegingsPlan (Nijmegen)**
 
-**Cost & Timeline:** €2,050 (Launch Ready Package) — live in 9 business days.
+**Cost & Timeline:** €2,050 (Launch Ready Package) - live in 9 business days.
 
 ---
 
@@ -102,11 +102,11 @@ Not inherently risky if working with a genuinely trustworthy, transparent techni
 
 ### Does choosing to delegate now prevent a founder from becoming more technical later if their interest or needs change?
 
-Not at all — as covered in this article, the choice isn't permanent, and many founders develop deeper fluency gradually over time through exposure to real delegated engagements, without having committed to a fixed level of technical involvement upfront.
+Not at all - as covered in this article, the choice isn't permanent, and many founders develop deeper fluency gradually over time through exposure to real delegated engagements, without having committed to a fixed level of technical involvement upfront.
 
 ### How would a founder know if they're actually interested enough in the technical side to make deeper learning worthwhile, versus just feeling obligated to try?
 
-Genuine curiosity that persists after learning the basic vocabulary — wanting to understand more, not just tolerating the minimum needed to function — is a reasonable signal, whereas obligation without genuine interest tends to fade once the immediate pressure driving it passes.
+Genuine curiosity that persists after learning the basic vocabulary - wanting to understand more, not just tolerating the minimum needed to function - is a reasonable signal, whereas obligation without genuine interest tends to fade once the immediate pressure driving it passes.
 
 ### Is the middle path Renske landed on the most common outcome, or do most founders end up at one extreme or the other?
 
@@ -138,7 +138,7 @@ The middle path is common specifically because the all-or-nothing framing this a
       "name": "Does delegating now prevent becoming more technical later?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not at all — the choice isn't permanent, and many founders develop fluency gradually over time."
+        "text": "Not at all - the choice isn't permanent, and many founders develop fluency gradually over time."
       }
     },
     {

@@ -1,4 +1,4 @@
-💸 She budgeted based on a competitor's blog post about a "similar" project. Then she actually read the real pricing breakdown herself — and realized she was in a completely different tier.
+💸 She budgeted based on a competitor's blog post about a "similar" project. Then she actually read the real pricing breakdown herself - and realized she was in a completely different tier.
 
 "Just tell me a number" is what every founder wants. Here's why "it depends" is actually true (and how to stop guessing):
 
@@ -14,7 +14,7 @@
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering experience, every quote is priced against your actual codebase. 💰
 
-Her result: no scope surprises — the quote landed exactly where she'd already mapped herself beforehand. ✅
+Her result: no scope surprises - the quote landed exactly where she'd already mapped herself beforehand. ✅
 
 👉 See the full pricing breakdown and find your tier: https://launchstudio.eu/en/blog/what-production-ready-really-costs-pricing-breakdown
 

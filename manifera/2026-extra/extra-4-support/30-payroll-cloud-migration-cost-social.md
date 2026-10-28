@@ -1,4 +1,4 @@
-🚨 "Add 20% for compliance and scaling." — The dangerous guesswork that causes massive six-figure budget blowouts in custom payroll cloud builds. 💸💥
+🚨 "Add 20% for compliance and scaling." - The dangerous guesswork that causes massive six-figure budget blowouts in custom payroll cloud builds. 💸💥
 
 **The Pain Points:**
 ❌ **Parallel Run Verification:** Budgeting compliance or scaling as a flat percentage underfunds the specific architectural layers carrying real technical weight.

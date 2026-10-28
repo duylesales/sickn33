@@ -22,19 +22,19 @@ Doelgroep: Technische solo-oprichter / Indie hacker
 
 Twee mislukkingen zijn verantwoordelijk voor de meeste configuratie-incidenten in door AI gebouwde producten, en ze zijn elkaars tegenpolen.
 
-De eerste: een geheim dat op de server had moeten blijven, belandt in het JavaScript dat naar browsers wordt gestuurd, waar iedereen het kan lezen. De tweede: een variabele die in productie had moeten zijn ingesteld, was dat niet, dus de deploy slaagde en de functie deed stilletjes niets — e-mails niet verstuurd, betalingen niet geïnd, fouten niet gemeld.
+De eerste: een geheim dat op de server had moeten blijven, belandt in het JavaScript dat naar browsers wordt gestuurd, waar iedereen het kan lezen. De tweede: een variabele die in productie had moeten zijn ingesteld, was dat niet, dus de deploy slaagde en de functie deed stilletjes niets - e-mails niet verstuurd, betalingen niet geïnd, fouten niet gemeld.
 
 Beide hebben dezelfde oorsprong. De configuratie werd één keer haastig ingericht, door waarden te plakken waar de tool erom vroeg, en sindsdien heeft niemand ernaar gekeken.
 
 ## Publiek en Geheim Zijn Niet Hetzelfde Woord
 
-Moderne frontendframeworks maken onderscheid tussen variabelen die in de browserbundel worden gecompileerd en variabelen die op de server blijven, en dat doen ze met een voorvoegsel in de naam. In op Vite gebaseerde projecten — wat Lovable oplevert — is alles wat met `VITE_` begint publiek. In Next.js is dat `NEXT_PUBLIC_`.
+Moderne frontendframeworks maken onderscheid tussen variabelen die in de browserbundel worden gecompileerd en variabelen die op de server blijven, en dat doen ze met een voorvoegsel in de naam. In op Vite gebaseerde projecten - wat Lovable oplevert - is alles wat met `VITE_` begint publiek. In Next.js is dat `NEXT_PUBLIC_`.
 
 Publiek betekent niet "zichtbaar voor ingelogde gebruikers". Het betekent gecompileerd in een bestand dat iedereen kan downloaden en lezen, voor altijd, in elke kopie van die build.
 
 De regel die daaruit volgt is absoluut: mag een waarde niet bij uw gebruikers bekend zijn, dan mag ze geen publiek voorvoegsel hebben en mag ze niet worden gebruikt in code die in de browser draait. Geen uitzonderingen, geen "het is maar een testsleutel", geen "niemand kijkt toch".
 
-Sommige waarden zijn bewust publiek, en dat is prima. Een anonieme Supabase-sleutel hoort in de browser — de veiligheid ervan komt van row-level security, niet van geheimhouding. Een publieke Stripe-sleutel is per definitie publiek. Analytics-identificaties, de eigen URL van de applicatie, feature flags: allemaal publiek, allemaal onschuldig.
+Sommige waarden zijn bewust publiek, en dat is prima. Een anonieme Supabase-sleutel hoort in de browser - de veiligheid ervan komt van row-level security, niet van geheimhouding. Een publieke Stripe-sleutel is per definitie publiek. Analytics-identificaties, de eigen URL van de applicatie, feature flags: allemaal publiek, allemaal onschuldig.
 
 Wat nooit publiek mag zijn: de service role-sleutel van Supabase, elke geheime sleutel van een betaalprovider, database-connection strings, inloggegevens van de e-mailprovider, webhook-signing-secrets, en elke API-sleutel voor een dienst die op gebruik afrekent.
 
@@ -62,7 +62,7 @@ Heeft een dienst geen testmodus, dan krijgt staging helemaal geen inloggegevens 
 
 Het bestand dat opsomt welke variabelen er bestaan, hoort in uw repository. De waarden niet.
 
-Een `.env.example` met elke variabelenaam, een opmerking over waar elke variabele voor is, en een placeholder of een overduidelijk nepwaarde, is een van de waardevolste bestanden die een project kan hebben. Het vertelt een nieuwe developer — of uzelf over acht maanden — precies wat er moet worden ingesteld, informatie die anders in het geheugen van één persoon opgesloten zit.
+Een `.env.example` met elke variabelenaam, een opmerking over waar elke variabele voor is, en een placeholder of een overduidelijk nepwaarde, is een van de waardevolste bestanden die een project kan hebben. Het vertelt een nieuwe developer - of uzelf over acht maanden - precies wat er moet worden ingesteld, informatie die anders in het geheugen van één persoon opgesloten zit.
 
 Daarnaast: een controle bij het opstarten dat elke vereiste variabele aanwezig is, die direct faalt als dat niet zo is. Het alternatief is een deploy die slaagt en een functie die niet werkt, twee weken later ontdekt door een klant.
 
@@ -90,13 +90,13 @@ Twee instellingen lossen het op: previews krijgen hun eigen niet-productiewaarde
 
 Ga ervan uit dat elk geheim dat in een publieke bundel, een repository, een schermafbeelding of een supportticket heeft gestaan, gecompromitteerd is, hoe kort ook.
 
-De volgorde is: vervang de inloggegevens eerst bij de provider, zodat de oude niet meer werken; deploy de nieuwe waarde; kijk dan wat de oude kon bereiken en of hij is gebruikt, wat de meeste providers u vanuit hun logs kunnen vertellen. De sleutel uit uw code verwijderen is deel van de oplossing, niet de oplossing zelf — kopieën van uw build en uw repositorygeschiedenis blijven bestaan.
+De volgorde is: vervang de inloggegevens eerst bij de provider, zodat de oude niet meer werken; deploy de nieuwe waarde; kijk dan wat de oude kon bereiken en of hij is gebruikt, wat de meeste providers u vanuit hun logs kunnen vertellen. De sleutel uit uw code verwijderen is deel van de oplossing, niet de oplossing zelf - kopieën van uw build en uw repositorygeschiedenis blijven bestaan.
 
 Sluit daarna de route die hem daar bracht, want een sleutel die één keer via frontendcode lekte, lekt opnieuw bij de volgende sessie die tegen dezelfde rechtenfout aanloopt.
 
 ## Wie Productie Kan Wijzigen, en Hoe U Dat Zou Weten
 
-Configuratie is een categorie wijzigingen die elke waarborg omzeilt die u rond code hebt gebouwd. Er is geen review, geen testrun, geen deployregistratie — iemand past een veld in een dashboard aan en het gedrag van uw product verandert, direct, overal.
+Configuratie is een categorie wijzigingen die elke waarborg omzeilt die u rond code hebt gebouwd. Er is geen review, geen testrun, geen deployregistratie - iemand past een veld in een dashboard aan en het gedrag van uw product verandert, direct, overal.
 
 Voor een solo-oprichter is dat acceptabel, mits het risico wordt begrepen. Zodra een tweede persoon toegang heeft, verdient het twee kleine controles.
 
@@ -104,13 +104,13 @@ De eerste is een registratie. De meeste platforms loggen configuratiewijzigingen
 
 De tweede is een lijst van wie toegang heeft, bekeken wanneer mensen beginnen of vertrekken. Een opdrachtnemer die in het voorjaar een week dashboardtoegang kreeg, heeft die in het najaar meestal nog steeds, en dashboardtoegang is meestal toegang tot elk geheim dat het product heeft. Het intrekken is een taak van twee minuten die niemand ooit inplant.
 
-Nog één gewoonte die de moeite waard is: schrijf bij het wijzigen van een productiewaarde op wat en waarom, op dezelfde plek waar u deploys noteert. Configuratiedrift — het geleidelijk uit elkaar lopen van omgevingen doordat waarden in de ene worden gewijzigd en in de andere niet — is onzichtbaar totdat het een fout veroorzaakt die nergens te reproduceren is, en een gedateerde lijst van wijzigingen is de snelste weg terug.
+Nog één gewoonte die de moeite waard is: schrijf bij het wijzigen van een productiewaarde op wat en waarom, op dezelfde plek waar u deploys noteert. Configuratiedrift - het geleidelijk uit elkaar lopen van omgevingen doordat waarden in de ene worden gewijzigd en in de andere niet - is onzichtbaar totdat het een fout veroorzaakt die nergens te reproduceren is, en een gedateerde lijst van wijzigingen is de snelste weg terug.
 
 ## Dit Inrichten
 
 Voor een bestaand product kost dit doorgaans een halve dag: elke variabele ingedeeld als publiek of geheim met afgedwongen naamgeving, de build-uitvoer en het live JavaScript doorzocht op alles wat er niet hoort, gelekte inloggegevens vervangen, drie volledige omgevingssets ingericht zonder gedeelde inloggegevens, een voorbeeldbestand gecommit met een opstartcontrole op vereiste variabelen, ignore-regels gecontroleerd, preview-deployments voorzien van eigen waarden en beschermd tegen publieke toegang, en een korte notitie die vastlegt waar elke waarde vandaan komt en wie haar kan wijzigen.
 
-LaunchStudio doet dit als onderdeel van productieklaar maken, en vooral het doorzoeken van de bundel vindt vaker wel dan niet iets. De engineers zijn van Manifera — elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW.
+LaunchStudio doet dit als onderdeel van productieklaar maken, en vooral het doorzoeken van de bundel vindt vaker wel dan niet iets. De engineers zijn van Manifera - elf jaar, 120+ engineers, klanten als Vodafone, TNO en CFLW.
 
 [Vraag ons uw live bundel te doorzoeken](https://launchstudio.eu/nl/#contact). Het kost vijf minuten.
 
@@ -129,9 +129,9 @@ Eén werkdag, die dezelfde avond begon: de service role-sleutel direct vervangen
 **Resultaat:** geen aanwijzing dat de sleutel was gebruikt, wat Jelmer geluk noemt in plaats van een resultaat. De scan tijdens de build heeft sindsdien één nieuwe poging geblokkeerd om een serversleutel vanuit browsercode te gebruiken, in een sessie zes weken later die precies dezelfde fout maakte om precies dezelfde reden.
 
 > *"Het werkte, dus ik heb er nooit meer naar gekeken. De sleutel die de prijzen van elke groothandel kan lezen, stond zes maanden in een bestand dat iedereen kon downloaden."*
-> — **Jelmer Ottevanger, Oprichter, Inkoopportaal (Zwijndrecht)**
+> - **Jelmer Ottevanger, Oprichter, Inkoopportaal (Zwijndrecht)**
 
-**Kosten & Doorlooptijd:** €1.700 (vervangen van inloggegevens, herschrijven van beheerrapport, bundelcontrole, scheiding van omgevingen, voorbeeldbestand en opstartvalidatie, previewbeveiliging, geautomatiseerde scan op geheimen in de build) — afgerond in 1 werkdag.
+**Kosten & Doorlooptijd:** €1.700 (vervangen van inloggegevens, herschrijven van beheerrapport, bundelcontrole, scheiding van omgevingen, voorbeeldbestand en opstartvalidatie, previewbeveiliging, geautomatiseerde scan op geheimen in de build) - afgerond in 1 werkdag.
 
 ## Veelgestelde vragen
 
@@ -149,7 +149,7 @@ Publieke variabelen worden tijdens de build ingecompileerd, dus ze vereisen een 
 
 ### Wat doe ik als een sleutel is gelekt?
 
-Vervang hem eerst bij de provider, deploy dan de nieuwe waarde, en bekijk daarna de logs van de provider op gebruik van de oude. Hem uit uw code verwijderen is niet genoeg — kopieën blijven bestaan in de geschiedenis en in oude builds.
+Vervang hem eerst bij de provider, deploy dan de nieuwe waarde, en bekijk daarna de logs van de provider op gebruik van de oude. Hem uit uw code verwijderen is niet genoeg - kopieën blijven bestaan in de geschiedenis en in oude builds.
 
 ### Hebben preview-deployments een aparte configuratie nodig?
 
@@ -165,7 +165,7 @@ Ja. Ze erven standaard variabelen, en preview-URL's zijn vaak publiek en indexee
       "name": "Welke omgevingsvariabelen zijn veilig om aan de browser bloot te stellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anonieme Supabase-sleutels, publieke betaalsleutels, analytics-ID's, uw eigen URL's en feature flags — nooit service role-sleutels, geheime sleutels, database-URL's of webhook-secrets."
+        "text": "Anonieme Supabase-sleutels, publieke betaalsleutels, analytics-ID's, uw eigen URL's en feature flags - nooit service role-sleutels, geheime sleutels, database-URL's of webhook-secrets."
       }
     },
     {
@@ -197,7 +197,7 @@ Ja. Ze erven standaard variabelen, en preview-URL's zijn vaak publiek en indexee
       "name": "Hebben preview-deployments een eigen configuratie nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — ze erven standaard productievariabelen en hun URL's zijn vaak publiek en indexeerbaar. Geef ze aparte waarden en toegangsbeveiliging."
+        "text": "Ja - ze erven standaard productievariabelen en hun URL's zijn vaak publiek en indexeerbaar. Geef ze aparte waarden en toegangsbeveiliging."
       }
     }
   ]

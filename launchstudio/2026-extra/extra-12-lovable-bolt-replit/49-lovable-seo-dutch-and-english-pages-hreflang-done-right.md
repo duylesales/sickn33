@@ -22,7 +22,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 Dutch founders reach this question early, because the Netherlands is a country where everyone reads English and almost everyone prefers Dutch when buying something that matters.
 
-The technical part — telling search engines which version to show whom — is a solved problem with a specific implementation that is easy to get subtly wrong. The strategic part, which comes first, is whether you should have two languages at all.
+The technical part - telling search engines which version to show whom - is a solved problem with a specific implementation that is easy to get subtly wrong. The strategic part, which comes first, is whether you should have two languages at all.
 
 ## Answer the Strategic Question First
 
@@ -38,11 +38,11 @@ The middle case, which is common: Dutch for everything that sells, English for d
 
 Three options, and for a small Dutch product one is clearly best.
 
-**Subdirectories** — `yourproduct.nl/nl/` and `yourproduct.nl/en/` — keep everything on one domain, share whatever authority the domain has, and are simplest to host and maintain. This is the right default.
+**Subdirectories** - `yourproduct.nl/nl/` and `yourproduct.nl/en/` - keep everything on one domain, share whatever authority the domain has, and are simplest to host and maintain. This is the right default.
 
-**Subdomains** — `nl.yourproduct.nl` — are more separated than most small products need.
+**Subdomains** - `nl.yourproduct.nl` - are more separated than most small products need.
 
-**Separate domains** — a `.nl` and a `.com` — make sense when you genuinely operate as two businesses in two markets, and they mean building authority twice.
+**Separate domains** - a `.nl` and a `.com` - make sense when you genuinely operate as two businesses in two markets, and they mean building authority twice.
 
 Whichever you choose, make the language explicit in the URL. A site that serves different content at the same URL depending on the visitor's browser settings cannot be indexed properly, because a crawler sees one version and has no way to reach the other.
 
@@ -58,7 +58,7 @@ Four rules, and breaking any of them makes the whole thing inert.
 
 **Use correct codes.** `nl` for Dutch, `en` for English, `nl-BE` for Dutch in Belgium. The language comes first; a region alone is not valid.
 
-**Include an x-default** naming the version to show when nothing matches — usually your English page, or a language selector.
+**Include an x-default** naming the version to show when nothing matches - usually your English page, or a language selector.
 
 Put them in the HTML head, pointing at absolute canonical URLs. And make sure the canonical link on each page points at itself rather than at the other language, which is an error that quietly removes one version from the index entirely.
 
@@ -68,7 +68,7 @@ The instinct is to detect the visitor's language or country and send them to the
 
 A crawler arriving from a US address is redirected to English and never sees the Dutch pages, so half your site goes unindexed. A Dutch speaker travelling abroad gets English. Someone who deliberately chose English is redirected back to Dutch on their next visit.
 
-The approach that works: serve the URL that was requested, and offer the other version prominently — a clear language switcher, and a dismissible notice suggesting the alternative. Remember the choice, and let the user's explicit selection override any detection.
+The approach that works: serve the URL that was requested, and offer the other version prominently - a clear language switcher, and a dismissible notice suggesting the alternative. Remember the choice, and let the user's explicit selection override any detection.
 
 ## Translate Properly, Including the Keywords
 
@@ -76,7 +76,7 @@ A translated page is not a translation of your keywords.
 
 Dutch buyers search using Dutch terms, and the direct translation of your English keyword is frequently not the term people use. Sometimes the English word is what Dutch professionals actually search for; sometimes there is a Dutch term with far more volume. This has to be researched per market rather than assumed.
 
-The same applies to the whole page. Titles, descriptions, headings, image alternatives and structured data all need their own language version — a Dutch page with an English title in search results is a page nobody clicks.
+The same applies to the whole page. Titles, descriptions, headings, image alternatives and structured data all need their own language version - a Dutch page with an English title in search results is a page nobody clicks.
 
 And translate the content rather than generating it: machine translation has improved enormously and still produces Dutch that reads as translated, which for a product selling trust to Dutch businesses is a cost that does not appear in any analytics.
 
@@ -86,15 +86,15 @@ Everything above concerns public pages. The application behind the login has a p
 
 The interface language should follow the user's own setting, stored on their account, not the browser's guess and not the marketing site's current path. A Dutch user who happens to open your product on an English-configured machine should still see Dutch.
 
-Three things travel with that setting and are usually missed. Emails your product sends — confirmations, reminders, invoices — should be in the recipient's language, which means the template is selected per recipient rather than per application. Dates, numbers and currency formatting, where Dutch conventions differ from English ones in ways that look wrong immediately to a native reader. And exported documents, which are frequently generated from a template that was never translated at all.
+Three things travel with that setting and are usually missed. Emails your product sends - confirmations, reminders, invoices - should be in the recipient's language, which means the template is selected per recipient rather than per application. Dates, numbers and currency formatting, where Dutch conventions differ from English ones in ways that look wrong immediately to a native reader. And exported documents, which are frequently generated from a template that was never translated at all.
 
-Two implementation notes. Keep translations as data rather than as conditionals in your code, so adding a language is a file rather than a rewrite — and so an AI session adding a feature has an obvious place to put its strings rather than hard-coding English. And ensure the fallback is defined: a missing translation should show the default language, not an empty string or a raw key, which is how a product ends up displaying `dashboard.header.title` to a customer.
+Two implementation notes. Keep translations as data rather than as conditionals in your code, so adding a language is a file rather than a rewrite - and so an AI session adding a feature has an obvious place to put its strings rather than hard-coding English. And ensure the fallback is defined: a missing translation should show the default language, not an empty string or a raw key, which is how a product ends up displaying `dashboard.header.title` to a customer.
 
 ## Belgium Is Not the Netherlands
 
 Founders who add Dutch pages often assume Flanders comes free. It mostly does, with three caveats worth knowing before you promise a Belgian customer anything.
 
-The language differs in ways that are noticeable to a Belgian reader — vocabulary, some terminology, and a register that reads as distinctly Dutch-from-the-Netherlands. For marketing copy this is usually tolerable; for a product that positions itself as local, less so.
+The language differs in ways that are noticeable to a Belgian reader - vocabulary, some terminology, and a register that reads as distinctly Dutch-from-the-Netherlands. For marketing copy this is usually tolerable; for a product that positions itself as local, less so.
 
 The practical differences matter more. Belgian business buyers frequently expect Bancontact at checkout. VAT numbers, company registration formats and invoicing conventions differ. And a Belgian customer searching will often be served results from Belgian domains preferentially, which is the one thing hreflang genuinely helps with: a `nl-BE` declaration, pointing at pages written for that market, tells search engines which version belongs there.
 
@@ -110,7 +110,7 @@ It also removes an ambiguity that hreflang cannot resolve on its own. A `.nl` do
 
 For an existing product this is typically two to three days: a decision about which languages and which content in each, language-explicit URLs with a subdirectory structure, complete reciprocal hreflang including self-references and an x-default, self-referencing canonical links per language, automatic redirection removed in favour of a clear switcher with a remembered preference, per-language titles, descriptions, headings, alternatives and structured data, keyword research per language rather than translated keywords, separate sitemaps per language, and validation in the search console to confirm the declarations are being read.
 
-LaunchStudio does this for Dutch products selling into more than one market — and advises against a second language where the audience does not justify it. Behind the work is Manifera — eleven years, bilingual operations from Amsterdam, Singapore and Ho Chi Minh City.
+LaunchStudio does this for Dutch products selling into more than one market - and advises against a second language where the audience does not justify it. Behind the work is Manifera - eleven years, bilingual operations from Amsterdam, Singapore and Ho Chi Minh City.
 
 [Ask us whether your second language is earning its keep](https://launchstudio.eu/en/#contact). Sometimes the answer is no.
 
@@ -122,16 +122,16 @@ Sjoerd Waanders built Magazijnmaat in Lovable: warehouse and picking software fo
 
 He had built the site in English first because that is what his tools produced, then added Dutch pages a year later. Both versions existed at the same URLs, with the language chosen by browser detection and a redirect.
 
-Nothing ranked. The search console showed the English pages indexed and the Dutch pages almost entirely absent, because crawlers arriving with non-Dutch settings were redirected to English every time and never saw them. The English pages, meanwhile, were competing for terms his actual buyers never searched — his customers were Dutch wholesalers searching for Dutch terms.
+Nothing ranked. The search console showed the English pages indexed and the Dutch pages almost entirely absent, because crawlers arriving with non-Dutch settings were redirected to English every time and never saw them. The English pages, meanwhile, were competing for terms his actual buyers never searched - his customers were Dutch wholesalers searching for Dutch terms.
 
 Three business days: language-explicit URLs introduced with `/nl/` and `/en/` subdirectories and permanent redirects from the old shared URLs; automatic redirection removed, replaced with a visible switcher and a dismissible notice that remembers the choice; complete reciprocal hreflang added including self-references and an x-default; canonical links corrected, since every Dutch page had been pointing at its English equivalent, which had been actively removing them from the index; per-language titles, descriptions and structured data; Dutch keyword research, which found that his customers searched for "magazijnsoftware" and "orderpicken software" with meaningful volume while the English terms he had optimised for had essentially none in the Netherlands; the Dutch pages rewritten around the actual terms rather than translated from English; separate sitemaps per language; and the English version reduced from a full mirror to six pages covering the product for an international audience, since maintaining two complete sites for one Dutch customer base was the underlying problem.
 
 **Result:** the Dutch pages were indexed within three weeks and organic traffic went from 90 to 740 visits a month within four months, with 11 trial signups attributable to organic search in the fourth month against zero before. Sjoerd's assessment is that reducing the English site was as valuable as fixing the technical errors, because it halved the work of keeping the Dutch pages good.
 
 > *"Every crawler that arrived was sent to the English site, so Google had never seen my Dutch pages at all. I had been writing them for a year for nobody."*
-> — **Sjoerd Waanders, Founder, Magazijnmaat (Ede)**
+> - **Sjoerd Waanders, Founder, Magazijnmaat (Ede)**
 
-**Cost & Timeline:** €3,200 (language-explicit URL structure with redirects, redirection removal and switcher, reciprocal hreflang, canonical correction, per-language metadata and structured data, Dutch keyword research and page rewriting, sitemaps, English site reduction) — completed in 3 business days.
+**Cost & Timeline:** €3,200 (language-explicit URL structure with redirects, redirection removal and switcher, reciprocal hreflang, canonical correction, per-language metadata and structured data, Dutch keyword research and page rewriting, sitemaps, English site reduction) - completed in 3 business days.
 
 ## Frequently Asked Questions
 
@@ -165,7 +165,7 @@ For understanding, yes. For pages selling to Dutch businesses, it reads as trans
       "name": "Do I need English pages if I only sell in the Netherlands?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually not — it doubles the work and competes with your Dutch pages. One language done thoroughly outperforms two done shallowly."
+        "text": "Usually not - it doubles the work and competes with your Dutch pages. One language done thoroughly outperforms two done shallowly."
       }
     },
     {
@@ -181,7 +181,7 @@ For understanding, yes. For pages selling to Dutch businesses, it reads as trans
       "name": "What is the most common hreflang error?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omitting the self-reference or non-reciprocal declarations, either of which makes the set ignored — followed by canonicals pointing at the other language."
+        "text": "Omitting the self-reference or non-reciprocal declarations, either of which makes the set ignored - followed by canonicals pointing at the other language."
       }
     },
     {

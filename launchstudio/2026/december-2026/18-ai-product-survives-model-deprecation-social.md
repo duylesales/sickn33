@@ -6,14 +6,14 @@ Every AI model gets deprecated eventually. It's not IF, it's WHEN. Most AI-gener
 ❌ Prompts and parsing logic tangled around one model's exact quirks
 ❌ "Switching models" secretly means rewriting half the app
 
-The fix is a proven engineering pattern — the abstraction layer: 🧠
+The fix is a proven engineering pattern - the abstraction layer: 🧠
 ✅ Centralize ALL AI calls through one service layer
 ✅ Version your prompts alongside your code
 ✅ Update routing in ONE place when a model dies, not your whole codebase
 
 ⚠️ Even with a perfect abstraction layer, models still shift silently: context windows, instruction-following, output length, latency, refusal behavior. That's why we diff old vs. new model against 20-50 REAL production inputs before every cutover, not eyeball a handful and hope.
 
-At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this in from the start — so a deprecation notice becomes a non-event instead of an emergency. 🛡️
+At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this in from the start - so a deprecation notice becomes a non-event instead of an emergency. 🛡️
 
 His migration: zero downtime, 5 days ahead of the deadline. 🚀
 

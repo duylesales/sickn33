@@ -1,6 +1,6 @@
-🚨 Evelyn, a realtor, used **Cursor** to build a listing copywriter — a competitor extracted her private OpenAI API key straight from the deployed frontend bundle, running up €600 in unauthorized charges before she even noticed. 🔑
+🚨 Evelyn, a realtor, used **Cursor** to build a listing copywriter - a competitor extracted her private OpenAI API key straight from the deployed frontend bundle, running up €600 in unauthorized charges before she even noticed. 🔑
 
-An exposed API key is like taping your corporate credit card to a park bench — your frontend should never touch it. 🧠
+An exposed API key is like taping your corporate credit card to a park bench - your frontend should never touch it. 🧠
 
 ❌ Calling OpenAI directly from client-side React code, shipping the secret key to the browser
 ❌ Anyone opening DevTools, searching for "sk-", and copying the key within seconds

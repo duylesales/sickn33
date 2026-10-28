@@ -27,7 +27,7 @@ Content Format: How-To Guide
 }
 </script>
 
-You have validated the problem. You have talked to 50 potential customers. You have a napkin sketch of what the product should look like. Now you need to actually build the thing — and you do not write code.
+You have validated the problem. You have talked to 50 potential customers. You have a napkin sketch of what the product should look like. Now you need to actually build the thing - and you do not write code.
 
 This guide is the exact playbook that successful non-technical founders use to go from a validated idea to a working Minimum Viable Product (MVP) with an external development partner, without wasting months or burning through your seed round.
 
@@ -52,13 +52,13 @@ Now find 3-5 development firms and evaluate them. Schedule 45-minute calls with 
 
 ## Step 3: Invest in a Paid Discovery Phase
 
-The discovery phase is where most of the value is created — and where most founders try to cut corners.
+The discovery phase is where most of the value is created - and where most founders try to cut corners.
 
 A proper discovery phase (1-2 weeks, typically €2,000-€5,000) produces:
 
 - **User flow diagrams** showing how users navigate through the core experience
 - **Wireframes or clickable prototypes** you can test with real users before a single line of code is written
-- **Technical architecture decisions** — what database, what hosting, what frameworks, and why
+- **Technical architecture decisions** - what database, what hosting, what frameworks, and why
 - **A detailed scope document** with effort estimates for each feature, forming the basis of your contract
 
 This upfront investment typically saves 30-40% of total project cost by catching requirement gaps before they become expensive code changes.
@@ -67,15 +67,15 @@ This upfront investment typically saves 30-40% of total project cost by catching
 
 Once the discovery phase is approved, development begins. The gold standard workflow:
 
-**Week 1-2 (Sprint 1):** The development team builds the most critical user flow end-to-end. At the end of sprint 1, you should see a working feature — not a slide deck, not a mockup, but actual running software you can click through.
+**Week 1-2 (Sprint 1):** The development team builds the most critical user flow end-to-end. At the end of sprint 1, you should see a working feature - not a slide deck, not a mockup, but actual running software you can click through.
 
-**Every 2 weeks thereafter:** A sprint review where the team demos new features, you provide feedback, and priorities are adjusted for the next sprint. This is your quality control mechanism — you catch issues every 14 days instead of discovering them 3 months later.
+**Every 2 weeks thereafter:** A sprint review where the team demos new features, you provide feedback, and priorities are adjusted for the next sprint. This is your quality control mechanism - you catch issues every 14 days instead of discovering them 3 months later.
 
 **Your role during development:** Show up to every sprint review. Test every feature as if you were your most demanding customer. Provide feedback within 24 hours. Be available for questions on Slack daily.
 
 ## Step 5: Launch Small, Learn Fast
 
-Your MVP is not a finished product. It is a hypothesis in code form. Launch it to a small group of real users (50-100) and watch what they actually do — not what they said they would do in interviews.
+Your MVP is not a finished product. It is a hypothesis in code form. Launch it to a small group of real users (50-100) and watch what they actually do - not what they said they would do in interviews.
 
 The metrics that matter in the first 30 days:
 - **Activation rate:** What percentage of signups complete the core action?
@@ -88,9 +88,9 @@ Before you sign anything, you will be asked to choose (or a firm will propose) o
 
 **Fixed-price** means the firm quotes a single number for an agreed scope, defined in the discovery-phase specification. You know your maximum cost upfront, which is reassuring when you are managing a fixed seed round. The catch: any feature you add or change after the scope is locked triggers a formal change order, usually priced at a premium, and firms that quote fixed-price often pad the number by 15-25% to absorb the risk of ambiguity in your brief.
 
-**Time & Materials (T&M)** means you pay for actual hours worked, typically billed monthly against a sprint plan. This is more flexible — if user testing after sprint 2 reveals your onboarding flow needs to be rebuilt, you simply reprioritize the backlog rather than negotiating a change order. The tradeoff is that your total cost is only as predictable as your own discipline in managing scope; a T&M engagement with no sprint-level budget checkpoints can drift.
+**Time & Materials (T&M)** means you pay for actual hours worked, typically billed monthly against a sprint plan. This is more flexible - if user testing after sprint 2 reveals your onboarding flow needs to be rebuilt, you simply reprioritize the backlog rather than negotiating a change order. The tradeoff is that your total cost is only as predictable as your own discipline in managing scope; a T&M engagement with no sprint-level budget checkpoints can drift.
 
-**The pattern that works best for MVPs specifically:** a fixed-price discovery phase (so you know exactly what you are committing to before writing a check for development), followed by a T&M build phase with a hard budget ceiling and mandatory sprint-by-sprint reporting of hours consumed versus hours remaining. This gives you cost predictability where it matters most (the initial commitment) and flexibility where it matters most (adapting the product based on what sprint reviews and early users teach you). If a firm insists on pure fixed-price for the entire build including iterations you have not yet specified, ask them how they price change requests — the answer tells you whether you are getting genuine cost certainty or a number designed to be renegotiated upward later.
+**The pattern that works best for MVPs specifically:** a fixed-price discovery phase (so you know exactly what you are committing to before writing a check for development), followed by a T&M build phase with a hard budget ceiling and mandatory sprint-by-sprint reporting of hours consumed versus hours remaining. This gives you cost predictability where it matters most (the initial commitment) and flexibility where it matters most (adapting the product based on what sprint reviews and early users teach you). If a firm insists on pure fixed-price for the entire build including iterations you have not yet specified, ask them how they price change requests - the answer tells you whether you are getting genuine cost certainty or a number designed to be renegotiated upward later.
 
 ## Budgeting Your MVP
 

@@ -13,7 +13,7 @@ In maand één werkt dit model fantastisch. U heeft 50 actieve gebruikers die we
 
 In maand drie slaat het noodlot echter toe. Vijf van uw nieuwe gebruikers blijken "power users" te zijn. Zij automatiseren uw webinterface en genereren plotseling 10.000 rapporten per dag. Uw vaste abonnementsinkomsten van € 20 per maand blijven exact gelijk, maar uw maandelijkse OpenAI API-rekening explodeert naar € 800. U verliest letterlijk handenvol geld telkens wanneer uw meest actieve klanten uw software gebruiken.
 
-Dit is de klassieke **flat-rate valkuil van AI SaaS**. Omdat uw directe kostprijs (Cost of Goods Sold - COGS) één-op-één gekoppeld is aan het token-verbruik van externe LLM's — en dat verbruik meeschaalt op een manier die traditionele serverhosting of opslagkosten nooit deden — kunt u het zich simpelweg niet veroorloven om onbeperkte AI-generaties aan te bieden.
+Dit is de klassieke **flat-rate valkuil van AI SaaS**. Omdat uw directe kostprijs (Cost of Goods Sold - COGS) één-op-één gekoppeld is aan het token-verbruik van externe LLM's - en dat verbruik meeschaalt op een manier die traditionele serverhosting of opslagkosten nooit deden - kunt u het zich simpelweg niet veroorloven om onbeperkte AI-generaties aan te bieden.
 
 Om financieel te overleven en een winstgevend softwarebedrijf op te bouwen, moet u **verbruiksafhankelijke facturatie (metered SaaS billing)** implementeren. Hier leest u hoe u dit waterdicht en veilig opzet met Stripe.
 
@@ -24,7 +24,7 @@ Verbruiksafhankelijke facturatie (usage-based billing) betekent dat u de zakelij
 1. **Achteraf Factureren (Post-paid Metered Billing):** Met behulp van Stripe's Billing Meters API registreert u het token-verbruik van de gebruiker gedurende de maand, rapporteert u verbruiksgebeurtenissen realtime aan Stripe en belast Stripe de creditcard van de klant aan het einde van de facturatiecyclus op basis van de opgebouwde totalen.
 2. **Vooraf Betaalde Credits (Het Prepaid Credit Model - Aanbevolen):** De klant koopt vooraf een bundel met "credits" (bijv. € 10 voor 1.000 credits) via een standaard Stripe Checkout sessie. Uw database schrijft automatisch credits af naarmate de gebruiker AI-antwoorden genereert. Zodra het saldo nul bereikt, wordt de API direct vergrendeld totdat de klant zijn tegoed opwaardeert.
 
-Voor solo-oprichters en scale-ups is het **Prepaid Credit Model** met afstand superieur. Het garandeert een positieve cashflow vooraf en elimineert het levensgrote risico dat de creditcard van een klant aan het einde van de maand weigert nadat hij al voor € 500 aan OpenAI-tokens heeft verstookt — een risico dat zeer reëel is, aangezien het percentage mislukte betalingen bij facturen achteraf 5% tot 10% hoger ligt dan bij directe kassa-afrekeningen.
+Voor solo-oprichters en scale-ups is het **Prepaid Credit Model** met afstand superieur. Het garandeert een positieve cashflow vooraf en elimineert het levensgrote risico dat de creditcard van een klant aan het einde van de maand weigert nadat hij al voor € 500 aan OpenAI-tokens heeft verstookt - een risico dat zeer reëel is, aangezien het percentage mislukte betalingen bij facturen achteraf 5% tot 10% hoger ligt dan bij directe kassa-afrekeningen.
 
 ## Prepaid Credits Implementeren met Supabase en Stripe
 
@@ -32,7 +32,7 @@ Als u uw applicatie heeft gebouwd met een AI-tool zoals Cursor of Bolt.new, moet
 
 ### 1. Het Database Credit-Grootboek (Credit Ledger)
 
-U moet een `credit_balance` integer-kolom toevoegen aan uw tabel `users` in Supabase — of nog beter: een afzonderlijke append-only transactietabel `credit_transactions` die elke afschrijving en opwaardering registreert met een timestamp en reden. Deze tabel moet hermetisch worden afgesloten met strikte PostgreSQL Row Level Security (RLS), zodat een gebruiker nooit vanuit de browserconsole zijn eigen saldo kan wijzigen naar `999999`.
+U moet een `credit_balance` integer-kolom toevoegen aan uw tabel `users` in Supabase - of nog beter: een afzonderlijke append-only transactietabel `credit_transactions` die elke afschrijving en opwaardering registreert met een timestamp en reden. Deze tabel moet hermetisch worden afgesloten met strikte PostgreSQL Row Level Security (RLS), zodat een gebruiker nooit vanuit de browserconsole zijn eigen saldo kan wijzigen naar `999999`.
 
 ### 2. De Beveiligde Stripe Webhook
 
@@ -69,9 +69,9 @@ Daarnaast is er het risico op verstoorde webhooks: wat gebeurt er als Stripe een
 
 Dit is exact waarom technische oprichters hun facturatie-architectuur toevertrouwen aan [LaunchStudio](https://launchstudio.eu/nl/).
 
-Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring in robuuste softwareontwikkeling vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — beveiligt LaunchStudio uw complete SaaS-facturatie. Wij bouwen kogelvrije, atomaire verbruiksfacturatie met idempotente Stripe-webhooks en strikte RLS-policies, zodat u nooit een cent verliest aan API-misbruik.
+Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) - met ruim 11 jaar ervaring in robuuste softwareontwikkeling vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** - beveiligt LaunchStudio uw complete SaaS-facturatie. Wij bouwen kogelvrije, atomaire verbruiksfacturatie met idempotente Stripe-webhooks en strikte RLS-policies, zodat u nooit een cent verliest aan API-misbruik.
 
-> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." - Herre Roelevink, Oprichter & Directeur, Manifera
 
 ## Hoe een Uitstekende Facturatie-Architectuur Erbij Staat bij Lancering
 
@@ -99,15 +99,15 @@ Zie onze [service-pakketten](https://launchstudio.eu/nl/#packages) voor de exact
 
 David, een solo-ontwikkelaar in Amsterdam, bouwde een AI-tool die lange YouTube-video's automatisch transcribeerde en vertaalde met behulp van OpenAI's Whisper API. Hij rekende een vast maandelijks abonnement van € 15 per maand.
 
-De eerste twee maanden verliepen uitstekend. Vervolgens ontdekte een Amsterdams digitaal marketingbureau zijn tool. Het bureau sloot een account van € 15 af en uploadde in één weekend meer dan 400 uur aan videomateriaal. Omdat David geen verbruiksbeperkingen had ingebouwd, verwerkte zijn backend trouw alle video's. Op maandagochtend werd David wakker met een OpenAI API-factuur van **€ 1.200** — allemaal voor één enkele klant van € 15.
+De eerste twee maanden verliepen uitstekend. Vervolgens ontdekte een Amsterdams digitaal marketingbureau zijn tool. Het bureau sloot een account van € 15 af en uploadde in één weekend meer dan 400 uur aan videomateriaal. Omdat David geen verbruiksbeperkingen had ingebouwd, verwerkte zijn backend trouw alle video's. Op maandagochtend werd David wakker met een OpenAI API-factuur van **€ 1.200** - allemaal voor één enkele klant van € 15.
 
 David realiseerde zich dat zijn prijsmodel dodelijk was, zette de servers uit en nam contact op met **LaunchStudio (door Manifera)**.
 
-Onze backend-engineers herstructureerden zijn architectuur onmiddellijk. We schakelden over van het vaste abonnement naar een Prepaid Credit model via Stripe en Supabase. We bouwden veilige Edge Functions die de exacte audiolengte van de video berekenden, het saldo via een atomaire database-update controleerden vóórdat het bestand naar Whisper werd gestuurd, en de credits direct afschreven na een succesvolle transcriptie — inclusief dagelijkse Stripe-reconciliatie.
+Onze backend-engineers herstructureerden zijn architectuur onmiddellijk. We schakelden over van het vaste abonnement naar een Prepaid Credit model via Stripe en Supabase. We bouwden veilige Edge Functions die de exacte audiolengte van de video berekenden, het saldo via een atomaire database-update controleerden vóórdat het bestand naar Whisper werd gestuurd, en de credits direct afschreven na een succesvolle transcriptie - inclusief dagelijkse Stripe-reconciliatie.
 
 **Resultaat:** David herlanceerde zijn applicatie met een pay-as-you-go model van € 0,10 per getranscribeerde minuut. Het marketingbureau keerde terug, maar moest nu vooraf **€ 2.400 aan credits** inkopen om 400 uur aan video te kunnen verwerken. Davids API-kosten waren 100% gedekt vóórdat er ook maar één seconde audio werd verwerkt. *"LaunchStudio heeft mijn businessmodel gered. Zonder hun verbruiksfacturatie had mijn 'succesvolle' app me binnen een maand failliet gemaakt."*
 
-**Kosten & Tijdlijn:** €2.800 (Stripe Metered Billing & Edge Function Beveiliging) — binnen 7 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.800 (Stripe Metered Billing & Edge Function Beveiliging) - binnen 7 werkdagen live opgeleverd.
 
 ---
 
@@ -127,7 +127,7 @@ Nee, absoluut nooit. Als uw Stripe Secret Key in de frontend staat, kan iedereen
 
 ### Hoe reken ik OpenAI tokens om naar SaaS credits in mijn applicatie?
 
-U hanteert een centrale conversieratio — bijvoorbeeld 1 SaaS Credit = 1.000 tokens. Uw backend leest het `total_tokens` veld uit het OpenAI-antwoord, berekent het benodigde aantal credits en debiteert dit bedrag veilig via uw database-transactie.
+U hanteert een centrale conversieratio - bijvoorbeeld 1 SaaS Credit = 1.000 tokens. Uw backend leest het `total_tokens` veld uit het OpenAI-antwoord, berekent het benodigde aantal credits en debiteert dit bedrag veilig via uw database-transactie.
 
 ### Beheert LaunchStudio mijn Stripe-account na de oplevering?
 

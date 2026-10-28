@@ -22,7 +22,7 @@ target_persona: "VP of Engineering"
 
 Every mature software product eventually accumulates a system that only one person truly understands, and every VP of Engineering eventually has to face the question of what happens to that system the day that person leaves.
 
-**The Pain:** A VP of Engineering at a booking-and-reservations software vendor based in Westerveld — the rural Drenthe municipality built around Dwingelderveld National Park, whose economy blends tourism-sector businesses with agricultural SMEs — oversees a fifteen-year-old reservations engine that still processes the majority of the company's revenue, maintained almost entirely by one senior engineer who joined the company in its early years and has quietly become the only person who can safely touch large parts of the codebase. That engineer has started mentioning retirement plans within the next eighteen months.
+**The Pain:** A VP of Engineering at a booking-and-reservations software vendor based in Westerveld - the rural Drenthe municipality built around Dwingelderveld National Park, whose economy blends tourism-sector businesses with agricultural SMEs - oversees a fifteen-year-old reservations engine that still processes the majority of the company's revenue, maintained almost entirely by one senior engineer who joined the company in its early years and has quietly become the only person who can safely touch large parts of the codebase. That engineer has started mentioning retirement plans within the next eighteen months.
 
 **The Agitation:** The VP of Engineering has watched a near-identical scenario play out at a former employer: a single legacy-system expert left with six weeks' notice, and the resulting scramble to reverse-engineer undocumented business logic from git history and support tickets consumed four months of a team's capacity and delayed two unrelated product initiatives. In the interim, a data-migration bug that the departed engineer would have caught in code review shipped to production and went undetected for three weeks, corrupting a subset of customer booking records and requiring a full manual reconciliation that cost an estimated €45,000 in staff time and customer-goodwill damage.
 
@@ -30,17 +30,17 @@ Every mature software product eventually accumulates a system that only one pers
 
 Outsourcing software maintenance solves the single-point-of-failure problem only if it is structured to actively extract and redistribute institutional knowledge, not simply to hand a legacy codebase to a new team and hope familiarity develops on its own over time.
 
-The first requirement is a structured knowledge-transfer phase before the departing expert leaves, not after. This means dedicated pairing sessions between the outgoing engineer and the incoming maintenance team, focused specifically on the undocumented business logic and historical decisions that never made it into comments or tickets — the reasons a particular workaround exists, the edge case a particular validation rule was added to catch, the vendor integration quirk that isn't in anyone's documentation. This transfer window needs to be scheduled with real hours allocated to it, not squeezed into whatever time is left after regular duties.
+The first requirement is a structured knowledge-transfer phase before the departing expert leaves, not after. This means dedicated pairing sessions between the outgoing engineer and the incoming maintenance team, focused specifically on the undocumented business logic and historical decisions that never made it into comments or tickets - the reasons a particular workaround exists, the edge case a particular validation rule was added to catch, the vendor integration quirk that isn't in anyone's documentation. This transfer window needs to be scheduled with real hours allocated to it, not squeezed into whatever time is left after regular duties.
 
-Second, the maintenance model needs an explicit service-level agreement covering response time, resolution time, and severity classification for the legacy system specifically — not a generic SLA copied from a different, newer part of the product. A fifteen-year-old reservations engine has different failure modes and different acceptable-downtime thresholds than a recently built microservice, and the SLA should reflect that reality rather than treating all systems as equivalent.
+Second, the maintenance model needs an explicit service-level agreement covering response time, resolution time, and severity classification for the legacy system specifically - not a generic SLA copied from a different, newer part of the product. A fifteen-year-old reservations engine has different failure modes and different acceptable-downtime thresholds than a recently built microservice, and the SLA should reflect that reality rather than treating all systems as equivalent.
 
 Third, documentation has to be treated as a deliverable with its own acceptance criteria, not an incidental byproduct of maintenance work. Every ticket resolved against the legacy system should update a living architecture document and a decision log, specifically so that the knowledge a departing expert carries gets captured incrementally through real work rather than requiring a separate, artificial documentation sprint that inevitably gets deprioritized.
 
-Fourth, the maintenance team should run a structured risk-mapping exercise early in the engagement — identifying which parts of the legacy system are highest-risk (most business-critical, least documented, most fragile under change) and prioritizing knowledge capture and test-coverage improvement there first, rather than treating the whole system as uniformly risky and spreading limited attention too thin.
+Fourth, the maintenance team should run a structured risk-mapping exercise early in the engagement - identifying which parts of the legacy system are highest-risk (most business-critical, least documented, most fragile under change) and prioritizing knowledge capture and test-coverage improvement there first, rather than treating the whole system as uniformly risky and spreading limited attention too thin.
 
-Fifth, a maintenance-only engagement should still include a modest allocation for incremental modernization — extracting a well-tested module into a properly documented, decoupled service whenever a maintenance ticket already requires touching that area — so that the system's risk profile actually improves over time rather than staying frozen at its current fragility while surrounding technology moves on.
+Fifth, a maintenance-only engagement should still include a modest allocation for incremental modernization - extracting a well-tested module into a properly documented, decoupled service whenever a maintenance ticket already requires touching that area - so that the system's risk profile actually improves over time rather than staying frozen at its current fragility while surrounding technology moves on.
 
-Sixth, the maintenance team should maintain a running "bus factor" audit — a simple, regularly updated inventory of which modules currently depend on a single person's knowledge, whether that person is the departing expert or a newer team member who has quietly become the sole owner of a given area. Treating this as a living metric, reviewed quarterly rather than discovered during a crisis, turns succession planning into a routine management practice instead of a one-time fire drill triggered by a single resignation.
+Sixth, the maintenance team should maintain a running "bus factor" audit - a simple, regularly updated inventory of which modules currently depend on a single person's knowledge, whether that person is the departing expert or a newer team member who has quietly become the sole owner of a given area. Treating this as a living metric, reviewed quarterly rather than discovered during a crisis, turns succession planning into a routine management practice instead of a one-time fire drill triggered by a single resignation.
 
 ## By the Numbers
 
@@ -64,13 +64,13 @@ Sixth, the maintenance team should maintain a running "bus factor" audit — a s
 3. **Weeks 6-7:** SLA finalized specifically for the legacy system's actual failure modes, and documentation-as-deliverable standards built into the ticket workflow going forward.
 4. **Week 8 and beyond:** Maintenance pod takes primary ownership with the departing expert available in a reduced advisory capacity, and incremental modernization begins on any module a maintenance ticket already requires touching.
 
-Westerveld's economy, centered on Dwingelderveld National Park and its surrounding villages, blends a tourism sector built around the park's ecological draw with agricultural small and medium enterprises, and the booking, reservations, and farm-management software companies that serve those sectors from Westerveld frequently run on systems built years ago by a founding technical team that has since thinned out — a pattern that makes structured succession planning for legacy maintenance considerably more urgent here than the region's quiet, rural profile might suggest.
+Westerveld's economy, centered on Dwingelderveld National Park and its surrounding villages, blends a tourism sector built around the park's ecological draw with agricultural small and medium enterprises, and the booking, reservations, and farm-management software companies that serve those sectors from Westerveld frequently run on systems built years ago by a founding technical team that has since thinned out - a pattern that makes structured succession planning for legacy maintenance considerably more urgent here than the region's quiet, rural profile might suggest.
 
 ## The Governance Split
 
 Manifera structures legacy maintenance outsourcing so continuity risk is actively managed rather than passively inherited. Amsterdam-based architects own the risk-mapping exercise, define the SLA against the system's actual failure modes, and hold documentation to explicit acceptance standards. The Vietnam-based Autonomous Pod in Ho Chi Minh City conducts the knowledge-transfer pairing sessions, executes day-to-day maintenance, and carries out incremental modernization as opportunities arise within regular ticket work.
 
-This structure exists specifically to prevent single-person risk from simply relocating from one engineer to one offshore team — continuity is designed into the process itself. Read more on our [offshore software development page](https://www.manifera.com/services/offshore-software-development/).
+This structure exists specifically to prevent single-person risk from simply relocating from one engineer to one offshore team - continuity is designed into the process itself. Read more on our [offshore software development page](https://www.manifera.com/services/offshore-software-development/).
 
 ## Case Study & Testimonial
 
@@ -81,7 +81,7 @@ Randonnée Réservations SAS, a hiking and outdoor-tourism booking platform base
 Manifera ran an eight-week structured knowledge-transfer engagement, mapping the system's highest-risk modules first and pairing the departing lead directly with the Ho Chi Minh City maintenance pod on the least-documented logic. A living architecture document, built incrementally through the transfer sessions rather than as a separate project, captured the business reasoning behind several long-standing workarounds that had never been written down anywhere. Eighteen months after the founding lead's departure, incident rates on the legacy core remained stable rather than spiking, and two previously fragile modules had been incrementally modernized as part of routine maintenance tickets.
 
 > *"We were bracing for the six months of chaos we'd heard other companies describe after a founder-engineer leaves. Because the knowledge transfer happened before he left, not after, that chaos simply never arrived."*
-> — **VP of Engineering, Randonnée Réservations SAS, France**
+> - **VP of Engineering, Randonnée Réservations SAS, France**
 
 ## Reactive Handoff vs. Manifera Structured Maintenance
 
@@ -95,7 +95,7 @@ Manifera ran an eight-week structured knowledge-transfer engagement, mapping the
 
 ## The Economics
 
-An unplanned legacy-system handoff, based on comparable incidents, typically costs a company at Westerveld's scale €40,000-€70,000 in lost engineering capacity, extended incident-resolution time, and the occasional costly production error during the scramble period — costs that a structured transfer largely avoids. A Manifera legacy-maintenance engagement of this scope typically runs €8,000-€14,000 per month for a dedicated maintenance pod, including the initial knowledge-transfer phase, meaning the avoided cost of a single chaotic handoff often covers four to six months of the ongoing engagement outright. Companies that adopt the risk-mapping and documentation-as-deliverable model also typically see legacy-system incident-resolution time improve by 25-40% within the first year, simply because the highest-risk areas finally have both documentation and dedicated attention rather than living entirely in one person's memory.
+An unplanned legacy-system handoff, based on comparable incidents, typically costs a company at Westerveld's scale €40,000-€70,000 in lost engineering capacity, extended incident-resolution time, and the occasional costly production error during the scramble period - costs that a structured transfer largely avoids. A Manifera legacy-maintenance engagement of this scope typically runs €8,000-€14,000 per month for a dedicated maintenance pod, including the initial knowledge-transfer phase, meaning the avoided cost of a single chaotic handoff often covers four to six months of the ongoing engagement outright. Companies that adopt the risk-mapping and documentation-as-deliverable model also typically see legacy-system incident-resolution time improve by 25-40% within the first year, simply because the highest-risk areas finally have both documentation and dedicated attention rather than living entirely in one person's memory.
 
 If your organization has a system that only one person truly understands, the time to build a continuity plan is before that person gives notice, not after. Talk to a Manifera architect: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
@@ -103,12 +103,12 @@ If your organization has a system that only one person truly understands, the ti
 
 A legacy-specific SLA needs severity tiers calibrated to a fifteen-year-old revenue-critical system, not a generic template:
 
-- **P1 — Revenue-blocking (booking engine down or corrupting data):** 15-minute acknowledgment, 1-hour response from a maintenance engineer familiar with the specific module, 4-hour target resolution or rollback.
-- **P2 — Degraded but functional (partial booking failures, slow reconciliation):** 1-hour acknowledgment, 4-hour response, next-business-day resolution target.
-- **P3 — Non-critical defect (reporting inaccuracies, minor UI issues in admin tools):** Next-business-day acknowledgment, resolution scheduled into the next sprint rather than treated as an interrupt.
-- **P4 — Modernization and documentation opportunities:** Batched and scheduled against available capacity, explicitly not competing with P1-P3 response times.
+- **P1 - Revenue-blocking (booking engine down or corrupting data):** 15-minute acknowledgment, 1-hour response from a maintenance engineer familiar with the specific module, 4-hour target resolution or rollback.
+- **P2 - Degraded but functional (partial booking failures, slow reconciliation):** 1-hour acknowledgment, 4-hour response, next-business-day resolution target.
+- **P3 - Non-critical defect (reporting inaccuracies, minor UI issues in admin tools):** Next-business-day acknowledgment, resolution scheduled into the next sprint rather than treated as an interrupt.
+- **P4 - Modernization and documentation opportunities:** Batched and scheduled against available capacity, explicitly not competing with P1-P3 response times.
 
-Each tier should specify not just response time but who is authorized to respond — a P1 on the fifteen-year-old core should route to whoever completed the original knowledge-transfer pairing sessions on that specific module, not whoever is next in a generic support rotation. A legacy system's failure modes are specific enough that a one-size SLA across the whole product portfolio routinely misclassifies severity during a real incident.
+Each tier should specify not just response time but who is authorized to respond - a P1 on the fifteen-year-old core should route to whoever completed the original knowledge-transfer pairing sessions on that specific module, not whoever is next in a generic support rotation. A legacy system's failure modes are specific enough that a one-size SLA across the whole product portfolio routinely misclassifies severity during a real incident.
 
 ## Frequently Asked Questions
 
@@ -126,7 +126,7 @@ Make documentation an explicit acceptance criterion for closing any maintenance 
 
 ### (Scenario: Leadership asking whether legacy systems should just be rewritten) Should we just replace the legacy system instead of maintaining it?
 
-Not usually as a first step — a full rewrite of an undocumented, business-critical system carries significant risk of its own; incremental modernization folded into routine maintenance work typically reduces risk faster and cheaper than a big-bang rewrite.
+Not usually as a first step - a full rewrite of an undocumented, business-critical system carries significant risk of its own; incremental modernization folded into routine maintenance work typically reduces risk faster and cheaper than a big-bang rewrite.
 
 ### (Scenario: VP of Engineering evaluating an offshore maintenance partner) What SLA terms should we insist on for a legacy system specifically?
 
@@ -142,7 +142,7 @@ Freeze non-critical changes and modernization work during the peak booking windo
 
 ### (Scenario: VP of Engineering wanting a specific cadence for the ongoing bus-factor audit mentioned earlier) How often should the bus-factor audit actually run once it's established as a practice?
 
-Quarterly is the practical cadence — frequent enough to catch a new single-owner dependency before it calcifies, infrequent enough not to become its own maintenance burden competing with actual ticket work.
+Quarterly is the practical cadence - frequent enough to catch a new single-owner dependency before it calcifies, infrequent enough not to become its own maintenance burden competing with actual ticket work.
 
 ### (Scenario: VP of Engineering wanting explicit contract language ensuring knowledge-transfer documentation belongs to the company) Who owns the documentation and architecture decision log produced during a knowledge-transfer engagement?
 

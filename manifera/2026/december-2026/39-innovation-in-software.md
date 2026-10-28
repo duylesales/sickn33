@@ -40,7 +40,7 @@ At Manifera, we mandate the eradication of "bolt-on" innovation. We rely on stri
 
 ## The Hybrid Hub: European Risk Management, Asian Execution
 
-Executing the Strangler Fig pattern and building secure, innovative microservices requires a massive amount of engineering bandwidth—bandwidth that internal enterprise teams usually lack. Manifera solves this through our Hybrid Hub model:
+Executing the Strangler Fig pattern and building secure, innovative microservices requires a massive amount of engineering bandwidth - bandwidth that internal enterprise teams usually lack. Manifera solves this through our Hybrid Hub model:
 
 - **Amsterdam (Governance/Strategy):** Our elite Dutch Architects are the guardians of your legacy core. They analyze the monolithic database and design the API gateways required to safely extract functionality. They define the strict security boundaries (Data Masking, Zero-Trust authentication) ensuring that the new "innovative" modules never compromise your GDPR compliance or legacy stability. They manage the risk.
 - **Vietnam (Execution/Velocity):** While the Dutch architects guard the core, our Autonomous Pods in Vietnam act as your dedicated R&D innovation engine. Because they are working in modern, isolated microservices defined by the Amsterdam blueprint, they can execute at terrifying speed. They build the AI integrations, the real-time analytics dashboards, and the mobile APIs. They deliver the aggressive innovation your board demands, safely enclosed in a European architectural firewall.
@@ -67,12 +67,12 @@ Our Vietnamese Pod then built the highly innovative AI analysis engine on top of
 
 ## What the Data Shows: Rushed AI Innovation Has a Price Tag
 
-The opening scenario of this article — a rushed LLM integration exposing a legacy database — is not a hypothetical worst case invented for dramatic effect. It maps directly onto the two most current, authoritative sources tracking AI-related security risk.
+The opening scenario of this article - a rushed LLM integration exposing a legacy database - is not a hypothetical worst case invented for dramatic effect. It maps directly onto the two most current, authoritative sources tracking AI-related security risk.
 
-- **Prompt injection is the industry's own consensus #1 risk for LLM-integrated systems.** OWASP's Top 10 for LLM Applications (2025 edition) ranks Prompt Injection as LLM01 — the single highest-priority risk — for the second consecutive edition of the report. The mechanism is structural, not a vendor-specific bug: LLMs process instructions and untrusted data through the same channel, so a model frequently cannot distinguish "content to analyze" from "a new instruction to follow," which is exactly the failure mode that let the fictional attacker in this article's opening scenario pivot from the AI layer into the legacy database.
-- **Ungoverned AI tooling is now one of the three costliest breach factors, measured.** IBM's 2025 Cost of a Data Breach Report found that "shadow AI" — unsanctioned or ungoverned generative AI tools and integrations deployed without a security review — added an average of USD 670,000 to the cost of a breach compared to organizations with low or no shadow AI exposure, and that 20% of breached organizations were compromised specifically through a shadow AI pathway. The report explicitly frames this as a governance gap, not an AI capability gap: the risk comes from bolting AI onto systems without the architectural review that would normally gate a new integration.
+- **Prompt injection is the industry's own consensus #1 risk for LLM-integrated systems.** OWASP's Top 10 for LLM Applications (2025 edition) ranks Prompt Injection as LLM01 - the single highest-priority risk - for the second consecutive edition of the report. The mechanism is structural, not a vendor-specific bug: LLMs process instructions and untrusted data through the same channel, so a model frequently cannot distinguish "content to analyze" from "a new instruction to follow," which is exactly the failure mode that let the fictional attacker in this article's opening scenario pivot from the AI layer into the legacy database.
+- **Ungoverned AI tooling is now one of the three costliest breach factors, measured.** IBM's 2025 Cost of a Data Breach Report found that "shadow AI" - unsanctioned or ungoverned generative AI tools and integrations deployed without a security review - added an average of USD 670,000 to the cost of a breach compared to organizations with low or no shadow AI exposure, and that 20% of breached organizations were compromised specifically through a shadow AI pathway. The report explicitly frames this as a governance gap, not an AI capability gap: the risk comes from bolting AI onto systems without the architectural review that would normally gate a new integration.
 
-Read together, these two sources describe exactly the trap the Strangler Fig pattern is designed to prevent: prompt injection is a known, top-ranked, structural risk, and skipping governance to integrate AI quickly is a measured, six-figure liability per incident — not a theoretical one.
+Read together, these two sources describe exactly the trap the Strangler Fig pattern is designed to prevent: prompt injection is a known, top-ranked, structural risk, and skipping governance to integrate AI quickly is a measured, six-figure liability per incident - not a theoretical one.
 
 ## The Economics: The ROI of Quarantined Risk
 
@@ -84,23 +84,23 @@ To make the risk-quarantine argument concrete, consider an illustrative comparis
 
 | Risk Factor (illustrative) | Frantic Bolt-On (direct LLM-to-legacy-DB integration) | Strangler Fig / Isolated Microservice |
 | :--- | :--- | :--- |
-| Exposure to prompt injection (OWASP LLM01, the #1 ranked LLM risk) | Direct — the LLM has a path to the legacy database | Contained — the microservice only ever sees a read-only, isolated data replica |
+| Exposure to prompt injection (OWASP LLM01, the #1 ranked LLM risk) | Direct - the LLM has a path to the legacy database | Contained - the microservice only ever sees a read-only, isolated data replica |
 | Blast radius if the AI layer is compromised | The entire legacy core, and every system connected to it | A single, disposable container with no write access to production data |
-| Cost exposure if a breach occurs via ungoverned AI tooling | Consistent with IBM's 2025 finding of a ~USD 670,000 average cost premium for shadow-AI-linked breaches | Materially reduced — the isolated architecture removes the direct attack path the premium is measured against |
-| Time to safely kill the feature if it underperforms or is found risky | Difficult — the integration is entangled with core logic | A configuration change at the API gateway |
+| Cost exposure if a breach occurs via ungoverned AI tooling | Consistent with IBM's 2025 finding of a ~USD 670,000 average cost premium for shadow-AI-linked breaches | Materially reduced - the isolated architecture removes the direct attack path the premium is measured against |
+| Time to safely kill the feature if it underperforms or is found risky | Difficult - the integration is entangled with core logic | A configuration change at the API gateway |
 
-The point of this comparison is not that the isolated path is free of risk — nothing connected to an LLM is. It is that the isolated path converts an open-ended, core-system liability into a bounded, contained one, which is precisely the distinction between "innovating fast" and "innovating recklessly."
+The point of this comparison is not that the isolated path is free of risk - nothing connected to an LLM is. It is that the isolated path converts an open-ended, core-system liability into a bounded, contained one, which is precisely the distinction between "innovating fast" and "innovating recklessly."
 
 ## Innovation Accounting: Kill Criteria Before You Build
 
 Architectural isolation via the Strangler Fig pattern solves the *technical* risk of innovation, but it does not solve the *financial* risk of building features nobody wants. Enterprises frequently confuse "we shipped it safely" with "it was worth shipping." Manifera pairs every innovation microservice with a lightweight Innovation Accounting protocol, borrowed from lean startup discipline but adapted for enterprise governance:
 
 - **A fixed pilot window, not an open-ended budget.** Before a single line of code is written, our Dutch Architects and your Head of Innovation jointly define a hard 6-to-8 week pilot window and a specific success metric (e.g., "15% of active users engage with the AI insights panel at least once a week").
-- **Pre-agreed kill criteria.** Just as important as the success metric is defining, in writing, what failure looks like *before* the pilot launches—for example, "if weekly engagement is below 5% at week 6, the feature is decommissioned, not extended." This prevents the common enterprise failure mode where a pet project survives on political momentum long after the data says to stop.
+- **Pre-agreed kill criteria.** Just as important as the success metric is defining, in writing, what failure looks like *before* the pilot launches - for example, "if weekly engagement is below 5% at week 6, the feature is decommissioned, not extended." This prevents the common enterprise failure mode where a pet project survives on political momentum long after the data says to stop.
 - **A decommissioning plan baked into the architecture.** Because the feature was built as an isolated microservice behind the API gateway from day one, killing it is a configuration change, not a surgical extraction. The gateway simply stops routing to the dead service, and it is decommissioned without touching the legacy core or any other feature.
 - **Scale-up criteria for the winners.** For pilots that clear the success bar, we define in advance what "graduating" looks like: moving from a single-instance experimental container to a fully redundant, auto-scaled deployment with production-grade monitoring and an SLA.
 
-This protocol reframes innovation spend from an open-ended cost center into a disciplined portfolio of small, time-boxed bets—exactly the mindset your CFO needs to keep approving R&D budget year after year, because every dollar has a predefined exit ramp.
+This protocol reframes innovation spend from an open-ended cost center into a disciplined portfolio of small, time-boxed bets - exactly the mindset your CFO needs to keep approving R&D budget year after year, because every dollar has a predefined exit ramp.
 
 ## Stop Hacking Legacy Code. Architect for Innovation.
 

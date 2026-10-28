@@ -26,11 +26,11 @@ A CTO at a construction technology company building a project management platfor
 
 Getting this foundational data architecture decision right early spares a construction technology company a considerably more disruptive correction once real, tool-diverse projects are already depending on the platform.
 
-Construction projects typically involve building models created and maintained across multiple different software tools — different architecture, structural engineering, and mechanical/electrical/plumbing disciplines frequently use different specialized software, each with its own native, often proprietary file format. IFC, developed and maintained by buildingSMART International, provides a standardized, vendor-neutral data schema specifically designed to let building model data move between these different tools without loss of the structured, semantic information (which specific object is a wall versus a duct versus a structural beam, and their actual relationships and properties) that a simpler geometric export alone wouldn't preserve.
+Construction projects typically involve building models created and maintained across multiple different software tools - different architecture, structural engineering, and mechanical/electrical/plumbing disciplines frequently use different specialized software, each with its own native, often proprietary file format. IFC, developed and maintained by buildingSMART International, provides a standardized, vendor-neutral data schema specifically designed to let building model data move between these different tools without loss of the structured, semantic information (which specific object is a wall versus a duct versus a structural beam, and their actual relationships and properties) that a simpler geometric export alone wouldn't preserve.
 
 ## Why Proprietary Format Lock-In Creates a Real Interoperability Problem
 
-A construction management platform built around a single proprietary CAD or BIM vendor's file format works adequately as long as every project the platform serves uses that specific vendor's tools throughout the design and construction team. This is genuinely uncommon in real construction projects, where different firms on the same project — the architect, the structural engineer, various subcontractors — frequently use different software tools based on their own established workflows and preferences. A platform tied to a single proprietary format either can't ingest and coordinate model data from project participants using different tools, or requires a fragile, lossy conversion process attempting to translate between formats, risking exactly the kind of information loss (missing object relationships, dropped metadata) that undermines the platform's actual coordination value.
+A construction management platform built around a single proprietary CAD or BIM vendor's file format works adequately as long as every project the platform serves uses that specific vendor's tools throughout the design and construction team. This is genuinely uncommon in real construction projects, where different firms on the same project - the architect, the structural engineer, various subcontractors - frequently use different software tools based on their own established workflows and preferences. A platform tied to a single proprietary format either can't ingest and coordinate model data from project participants using different tools, or requires a fragile, lossy conversion process attempting to translate between formats, risking exactly the kind of information loss (missing object relationships, dropped metadata) that undermines the platform's actual coordination value.
 
 ## Why This Decision Directly Shapes a Platform's Real Project Applicability
 
@@ -44,7 +44,7 @@ A specific, concrete business consequence of this architectural choice: a constr
 
 ## Why This Gap Is Especially Common Among Startups Built Around a Single Early Client's Tool Stack
 
-A specific reason this architectural mismatch shows up repeatedly among construction technology startups specifically, as it did at Costruzioni Digitali Terni below: an early-stage startup's first significant client relationship often shapes foundational product decisions more than a founder might later realize, since building specifically and efficiently for that first client's actual tool stack is a genuinely reasonable, pragmatic early-stage priority. The risk isn't in that initial pragmatic choice — it's in not recognizing explicitly that this choice was made for a specific client's circumstances rather than representing a deliberate, generalizable architecture decision, meaning the platform's actual applicability to the broader, genuinely tool-diverse construction market remains untested and potentially considerably narrower than the founding team assumes until a meaningfully different second or third client relationship actually surfaces the gap.
+A specific reason this architectural mismatch shows up repeatedly among construction technology startups specifically, as it did at Costruzioni Digitali Terni below: an early-stage startup's first significant client relationship often shapes foundational product decisions more than a founder might later realize, since building specifically and efficiently for that first client's actual tool stack is a genuinely reasonable, pragmatic early-stage priority. The risk isn't in that initial pragmatic choice - it's in not recognizing explicitly that this choice was made for a specific client's circumstances rather than representing a deliberate, generalizable architecture decision, meaning the platform's actual applicability to the broader, genuinely tool-diverse construction market remains untested and potentially considerably narrower than the founding team assumes until a meaningfully different second or third client relationship actually surfaces the gap.
 
 This is a specific instance of a broader pattern worth naming directly across many of the technical case studies in this collection: an architecture decision that's genuinely correct and efficient for a startup's specific first customer can quietly become an unexamined default that doesn't actually generalize, and a founding team benefits from periodically and deliberately asking whether foundational architecture decisions reflect genuine, considered choices about the platform's target market, or simply reflect whatever happened to work for the specific circumstances of the earliest customer relationship that shaped the product's initial build.
 
@@ -66,7 +66,7 @@ Costruzioni Digitali Terni, a Terni-based construction technology startup, had b
 Manifera's Amsterdam team rebuilt the platform's core building data architecture around native IFC support, with proper handling of IFC's object relationships and metadata, and built validation logic specifically surfacing data quality issues in imported models from the genuinely varied source tools real projects actually involve.
 
 > *"We'd built for the tool our biggest early client happened to use and just assumed that covered the market. Once we tried to serve projects with a genuinely mixed set of design tools across different firms, our proprietary-format approach fell apart, and rebuilding around the actual open standard was what let us serve the real, messy diversity of tools construction projects actually involve."*
-> — **CTO, Costruzioni Digitali Terni**
+> - **CTO, Costruzioni Digitali Terni**
 
 Costruzioni Digitali Terni now successfully coordinates building data across projects with genuinely diverse tool usage among different participating firms, directly expanding the platform's addressable project base beyond its original single-tool assumption.
 
@@ -81,7 +81,7 @@ Costruzioni Digitali Terni now successfully coordinates building data across pro
 
 ## Scoping Your Own Construction Platform's Building Data Architecture
 
-Before building a construction management or BIM coordination platform, structure the core building data model around native IFC support from the start — a proprietary-format-only approach limits real project applicability given the genuinely tool-diverse reality of most construction projects. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an IFC-native construction technology platform.
+Before building a construction management or BIM coordination platform, structure the core building data model around native IFC support from the start - a proprietary-format-only approach limits real project applicability given the genuinely tool-diverse reality of most construction projects. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building an IFC-native construction technology platform.
 
 ## Frequently Asked Questions
 
@@ -103,7 +103,7 @@ Real-world IFC exports from different source tools vary in completeness and qual
 
 ### (Scenario: CTO evaluating a construction technology development team) What should I ask a development team about their BIM and IFC experience?
 
-Ask specifically how they handle IFC's object relationships and metadata during import, and how they validate imported data quality — genuine experience produces a specific, technical answer about semantic data handling, not a general "we support BIM" claim.
+Ask specifically how they handle IFC's object relationships and metadata during import, and how they validate imported data quality - genuine experience produces a specific, technical answer about semantic data handling, not a general "we support BIM" claim.
 
 <script type="application/ld+json">
 {

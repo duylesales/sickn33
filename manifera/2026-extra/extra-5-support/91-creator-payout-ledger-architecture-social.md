@@ -6,7 +6,7 @@
 ❌ **Costly Retrofitting Bottlenecks:** Patching resilience, conflict resolution, or regulatory rules onto an already-built core requires tearing down live production workflows.
 
 **The Manifera Solution:**
-✅ **Structuring the ledger as an append-only source of truth:** recording every earnings event and payout attempt with a unique idempotency key, since accurate, non-duplicated payout fundamentally depends on the ledger — not any single API response — being the authoritative record of what's owed and what's been paid.
+✅ **Structuring the ledger as an append-only source of truth:** recording every earnings event and payout attempt with a unique idempotency key, since accurate, non-duplicated payout fundamentally depends on the ledger - not any single API response - being the authoritative record of what's owed and what's been paid.
 ✅ **Building an ongoing reconciliation engine:** that compares internal ledger state against the payment rail's actual settlement records on a regular cycle, surfacing discrepancies for resolution before they compound into a larger accounting or trust problem.
 ✅ **Designing payout submission around idempotent retry semantics from the start:** Rather than a simpler fire-and-forget model that would need fundamental rework to support genuine exactly-once payout guarantees later.
 

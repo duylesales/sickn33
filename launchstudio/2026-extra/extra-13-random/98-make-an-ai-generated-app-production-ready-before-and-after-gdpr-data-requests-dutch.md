@@ -21,13 +21,13 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Het e-mailtje is beleefd en kort: "Op grond van de Algemene Verordening Gegevensbescherming (AVG) verzoek ik u vriendelijk om mij een kopie te sturen van alle persoonsgegevens die u over mij verwerkt, en aansluitend mijn account en alle bijbehorende gegevens definitief te verwijderen." Voor veel oprichters van door AI gegenereerde applicaties ontketent zo'n verzoek een uiterst ongemakkelijke middag vol speuren door losse databasetabellen, cloud storage buckets, e-mailsystemen en spreadsheets — met de verontrustende conclusie dat niemand precies weet waar alle data eigenlijk staat. Om een met AI gebouwde app echt productieklaar te maken, moet u deze wettelijke verzoeken rustig, volledig en ruim binnen de gestelde termijn kunnen afhandelen.
+Het e-mailtje is beleefd en kort: "Op grond van de Algemene Verordening Gegevensbescherming (AVG) verzoek ik u vriendelijk om mij een kopie te sturen van alle persoonsgegevens die u over mij verwerkt, en aansluitend mijn account en alle bijbehorende gegevens definitief te verwijderen." Voor veel oprichters van door AI gegenereerde applicaties ontketent zo'n verzoek een uiterst ongemakkelijke middag vol speuren door losse databasetabellen, cloud storage buckets, e-mailsystemen en spreadsheets - met de verontrustende conclusie dat niemand precies weet waar alle data eigenlijk staat. Om een met AI gebouwde app echt productieklaar te maken, moet u deze wettelijke verzoeken rustig, volledig en ruim binnen de gestelde termijn kunnen afhandelen.
 
 ## Vóór: Hoe met AI gebouwde apps doorgaans omgaan met AVG-verzoeken
 
 - Persoonsgegevens liggen gefragmenteerd verspreid over databasetabellen, bestandsopslag, e-maillijsten, analytics, error logs, AI-providerlogs en automatiseringstools.
 - Niemand binnen de organisatie beschikt over een actueel register of overzicht van waar persoonsgegevens exact worden verwerkt.
-- Een knop als "Verwijder account" wist in werkelijkheid alleen het inlogaccount, maar laat profieldata, uploads en activiteitenhistorie onaangeroerd achter — óf verwijdert per abuis records die u wettelijk verplicht bent te bewaren, zoals facturen voor de Belastingdienst.
+- Een knop als "Verwijder account" wist in werkelijkheid alleen het inlogaccount, maar laat profieldata, uploads en activiteitenhistorie onaangeroerd achter - óf verwijdert per abuis records die u wettelijk verplicht bent te bewaren, zoals facturen voor de Belastingdienst.
 - Data-exports worden handmatig en houtje-touwtje samengesteld via screenshots of ruwe database-exports.
 - Verzoeken komen binnen via willekeurige mailboxen, worden nergens geregistreerd en de wettelijke reactietermijn van één maand verstrijkt geruisloos.
 
@@ -49,7 +49,7 @@ Het fundament van compliance is een overzichtelijke datakaart waarin exact staat
 
 ## Na: Data-export in één eenvoudige stap
 
-Een productierijpe applicatie kan per gebruiker met één druk op de knop een complete export genereren: profielgegevens, gebruiksactiviteit, door de gebruiker gecreëerde content, geüploade bestanden en communicatievoorkeuren — netjes gebundeld in een leesbaar en machineleesbaar formaat (zoals JSON of CSV, gecombineerd met de originele bestanden). Geauthenticeerde gebruikers kunnen dit archief idealiter direct zelf downloaden via hun accountinstellingen.
+Een productierijpe applicatie kan per gebruiker met één druk op de knop een complete export genereren: profielgegevens, gebruiksactiviteit, door de gebruiker gecreëerde content, geüploade bestanden en communicatievoorkeuren - netjes gebundeld in een leesbaar en machineleesbaar formaat (zoals JSON of CSV, gecombineerd met de originele bestanden). Geauthenticeerde gebruikers kunnen dit archief idealiter direct zelf downloaden via hun accountinstellingen.
 
 ## Na: Verwijdering die overal doordringt om een AI-app productieklaar te maken
 
@@ -129,11 +129,11 @@ Sommige situaties vragen om een zorgvuldige afweging: een ouder die data opvraag
 
 ## Rectificatie: Het corrigeren van onjuiste gegevens
 
-Het recht op rectificatie houdt in dat gebruikers onjuiste gegevens moeten kunnen laten corrigeren. In de meeste webapps kunnen gebruikers hun eigen basisprofiel zelfstandig bewerken, maar voor data elders in het systeem — zoals opmerkingen van medewerkers, gekoppelde systemen of historische dossiers — is dat niet mogelijk. Bied gebruikers een laagdrempelige mogelijkheid om correctieverzoeken in te dienen, zorg dat gekoppelde systemen automatisch worden bijgewerkt bij een wijziging en bewaar een audittrail voor wijzigingen in dossiers waarin historie van belang is.
+Het recht op rectificatie houdt in dat gebruikers onjuiste gegevens moeten kunnen laten corrigeren. In de meeste webapps kunnen gebruikers hun eigen basisprofiel zelfstandig bewerken, maar voor data elders in het systeem - zoals opmerkingen van medewerkers, gekoppelde systemen of historische dossiers - is dat niet mogelijk. Bied gebruikers een laagdrempelige mogelijkheid om correctieverzoeken in te dienen, zorg dat gekoppelde systemen automatisch worden bijgewerkt bij een wijziging en bewaar een audittrail voor wijzigingen in dossiers waarin historie van belang is.
 
 ## Bezwaar, beperking van verwerking en marketing
 
-Gebruikers hebben te allen tijde het recht om bezwaar te maken tegen direct marketing en kunnen verzoeken om verwerking tijdelijk te bevriezen zolang een geschil loopt. Zorg voor directe uitschrijflinks in alle commerciële e-mails die over alle marketingkanalen direct effect sorteren, leg bezwaren en beperkingen direct vast in het gebruikersprofiel en zie erop toe dat achtergrondprocessen — zoals herinneringsmails, nieuwsbrieven en statistische analyses — deze markeringen strikt respecteren. Een uitschrijving die door geautomatiseerde workflows wordt genegeerd, is een veelvoorkomende en onnodige bron van boetes.
+Gebruikers hebben te allen tijde het recht om bezwaar te maken tegen direct marketing en kunnen verzoeken om verwerking tijdelijk te bevriezen zolang een geschil loopt. Zorg voor directe uitschrijflinks in alle commerciële e-mails die over alle marketingkanalen direct effect sorteren, leg bezwaren en beperkingen direct vast in het gebruikersprofiel en zie erop toe dat achtergrondprocessen - zoals herinneringsmails, nieuwsbrieven en statistische analyses - deze markeringen strikt respecteren. Een uitschrijving die door geautomatiseerde workflows wordt genegeerd, is een veelvoorkomende en onnodige bron van boetes.
 
 ## AVG-verzoeken en AI-functionaliteiten
 
@@ -153,25 +153,25 @@ Het soepel en professioneel afhandelen van AVG-verzoeken bewijst aan uw gebruike
 
 ## De eerste stap
 
-Maak vandaag nog een lijst van alle externe clouddiensten en tools die uw applicatie benut en stel uzelf bij elk onderdeel de vraag: worden hier persoonsgegevens van mijn klanten verwerkt? Het antwoord vormt het fundament van uw datakaart — en de basis van een AVG-proces dat u voortaan minuten kost in plaats van slapeloze avonden.
+Maak vandaag nog een lijst van alle externe clouddiensten en tools die uw applicatie benut en stel uzelf bij elk onderdeel de vraag: worden hier persoonsgegevens van mijn klanten verwerkt? Het antwoord vormt het fundament van uw datakaart - en de basis van een AVG-proces dat u voortaan minuten kost in plaats van slapeloze avonden.
 
 ## Vóór en na, samengevat
 
-Vóór: persoonsgegevens liggen versnipperd over tabellen, buckets, mailtools en logs; niemand heeft overzicht; exports worden handmatig in elkaar geknutseld; accountverwijdering wist alleen de inloggegevens; en verzoeken raken zoek in iemands persoonlijke inbox. Na: een complete datakaart over alle systemen; geautomatiseerde self-service data-export; verwijdering en anonimisering die datarelaties netjes volgen met respect voor wettelijke bewaarplichten; externe verwerkers automatisch bijgewerkt via API's; proportionele identiteitscontrole; geregistreerde verzoeken met deadlinebewaking; en een getoetst proces dat slechts enkele minuten kost. Voor de meeste gebruikers blijft dit onzichtbaar — totdat zij erom vragen. En op dat exacte moment maakt het het verschil tussen een betrouwbare onderneming en een kostbare klacht bij de toezichthouder.
+Vóór: persoonsgegevens liggen versnipperd over tabellen, buckets, mailtools en logs; niemand heeft overzicht; exports worden handmatig in elkaar geknutseld; accountverwijdering wist alleen de inloggegevens; en verzoeken raken zoek in iemands persoonlijke inbox. Na: een complete datakaart over alle systemen; geautomatiseerde self-service data-export; verwijdering en anonimisering die datarelaties netjes volgen met respect voor wettelijke bewaarplichten; externe verwerkers automatisch bijgewerkt via API's; proportionele identiteitscontrole; geregistreerde verzoeken met deadlinebewaking; en een getoetst proces dat slechts enkele minuten kost. Voor de meeste gebruikers blijft dit onzichtbaar - totdat zij erom vragen. En op dat exacte moment maakt het het verschil tussen een betrouwbare onderneming en een kostbare klacht bij de toezichthouder.
 
 ## Belangrijk om te onthouden
 
-Elk AVG-inzage- of verwijderverzoek is in feite een praktische audit van uw datakaart. Kost de afhandeling u uren zoekwerk, dan is uw dataoverzicht incompleet. Kost het u slechts enkele minuten, dan heeft uw applicatie de verwerking van persoonsgegevens écht onder controle — en dat is precies wat productierijpheid op het gebied van privacy betekent.
+Elk AVG-inzage- of verwijderverzoek is in feite een praktische audit van uw datakaart. Kost de afhandeling u uren zoekwerk, dan is uw dataoverzicht incompleet. Kost het u slechts enkele minuten, dan heeft uw applicatie de verwerking van persoonsgegevens écht onder controle - en dat is precies wat productierijpheid op het gebied van privacy betekent.
 
 ## In het kort
 
-Breng data in kaart, exporteer geautomatiseerd, wis zorgvuldig, verifieer de aanvrager en leg alles vast — en test de complete keten vóórdat het eerste officiële verzoek op uw bureau belandt.
+Breng data in kaart, exporteer geautomatiseerd, wis zorgvuldig, verifieer de aanvrager en leg alles vast - en test de complete keten vóórdat het eerste officiële verzoek op uw bureau belandt.
 
 ## Waar LaunchStudio het verschil maakt
 
 LaunchStudio bouwt de technische fundamenten voor AVG-verzoeken rechtstreeks in uw door AI gebouwde applicatie: een sluitende datakaart, self-service data-export, geautomatiseerde verwijdering en anonimisering over alle databasetabellen en clouddiensten, strikte bewaarregels voor fiscale data en een lichtgewicht auditlog voor verzoeken. LaunchStudio is een initiatief van Manifera, een softwarebedrijf met meer dan 11 jaar ervaring, werkzaam vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minh City. Bekijk [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/); op de website van de [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/) leest u alle officiële richtlijnen over rechten van betrokkenen en wettelijke reactietermijnen.
 
-[Omschrijf uw project](https://launchstudio.eu/nl/#contact) — bij voorkeur vóórdat het eerste officiële verzoek binnenkomt.
+[Omschrijf uw project](https://launchstudio.eu/nl/#contact) - bij voorkeur vóórdat het eerste officiële verzoek binnenkomt.
 
 ## Praktijkvoorbeeld
 
@@ -183,12 +183,12 @@ Toen een gezin ging verhuizen naar het buitenland, ontving Fenna het formele ver
 
 Binnen zeven werkdagen stelden de engineers van LaunchStudio een complete datakaart op, bouwden een self-service exportfunctie waarmee ouders een compleet archief inclusief lesvorderingen en foto's kunnen downloaden, implementeerden geautomatiseerde verwijdering en anonimisering over alle tabellen en opslagbuckets (met behoud van geanonimiseerde lesstatistieken en fiscale factuurgegevens), koppelden automatische uitschrijving bij de e-mailtool, stelden logretentie in op de workflow- en foutregistratietools en richtten een overzichtelijk verzoekenregister in met geautomatiseerde herinneringen.
 
-**Resultaat:** De verhuizende ouder ontving binnen enkele dagen een complete data-export en een officiële bevestiging van verwijdering. Sindsdien heeft Fenna al ruim een dozijn verzoeken — voornamelijk van verhuizende gezinnen — binnen enkele minuten probleemloos afgehandeld.
+**Resultaat:** De verhuizende ouder ontving binnen enkele dagen een complete data-export en een officiële bevestiging van verwijdering. Sindsdien heeft Fenna al ruim een dozijn verzoeken - voornamelijk van verhuizende gezinnen - binnen enkele minuten probleemloos afgehandeld.
 
 > *"Het eerste inzageverzoek kostte mij twee volle avonden en nog wist ik niet zeker of ik alles had gevonden. Nu kost het mij letterlijk twee klikken en weet ik honderd procent zeker dat het klopt."*
-> — **Fenna Wiersma, Oprichter, Zwemlesplan (Bolsward)**
+> - **Fenna Wiersma, Oprichter, Zwemlesplan (Bolsward)**
 
-**Kosten & Tijdlijn:** € 1.900 (Launch Ready-pakket: datakaart, exportfunctionaliteit, verwijdering en anonimisering, fiscale bewaarlogica en verzoekenregister) — afgerond in 7 werkdagen.
+**Kosten & Tijdlijn:** € 1.900 (Launch Ready-pakket: datakaart, exportfunctionaliteit, verwijdering en anonimisering, fiscale bewaarlogica en verzoekenregister) - afgerond in 7 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -206,7 +206,7 @@ In de regel hoeven back-uparchieven niet handmatig te worden bewerkt, mits deze 
 
 ### Hoe integreert Manifera privacy functionaliteiten in software-applicaties?
 
-Door eerst alle gegevensstromen in een gedetailleerde datakaart vast te leggen en privacy-by-design direct in te bouwen via geautomatiseerde export- en anonimiseringsfuncties — volgens beproefde methodieken uit meer dan tien jaar enterprise softwareontwikkeling.
+Door eerst alle gegevensstromen in een gedetailleerde datakaart vast te leggen en privacy-by-design direct in te bouwen via geautomatiseerde export- en anonimiseringsfuncties - volgens beproefde methodieken uit meer dan tien jaar enterprise softwareontwikkeling.
 
 ### Kan een professioneel privacybeleid bijdragen aan het vertrouwen en de vindbaarheid van mijn applicatie?
 

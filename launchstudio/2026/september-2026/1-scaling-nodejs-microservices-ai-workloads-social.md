@@ -1,6 +1,6 @@
-💥 Nathan, a photography SaaS founder, built an AI image enhancer using **Lovable** — then watched his server crash during a traffic spike as heavy CPU preprocessing blocked the Node.js event loop and dropped connection requests. 📸
+💥 Nathan, a photography SaaS founder, built an AI image enhancer using **Lovable** - then watched his server crash during a traffic spike as heavy CPU preprocessing blocked the Node.js event loop and dropped connection requests. 📸
 
-When you process AI workloads synchronously on Node's single thread, one heavy task blocks the entire server — timing out every other concurrent user's request. 🧠
+When you process AI workloads synchronously on Node's single thread, one heavy task blocks the entire server - timing out every other concurrent user's request. 🧠
 
 ❌ Image preprocessing and token parsing running synchronously on the main Node.js event loop
 ❌ Holding HTTP connections open for 30 seconds waiting for long LLM generation responses

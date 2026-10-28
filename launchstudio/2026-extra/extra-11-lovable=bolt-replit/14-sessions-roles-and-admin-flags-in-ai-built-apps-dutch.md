@@ -30,7 +30,7 @@ Authenticatie in een serieus product is niet één vraagstuk, maar drie afzonder
 
 **Wie ben je?** Inloggen, sessies, tokens. Supabase Auth, Auth0, Firebase en vergelijkbare diensten handelen dit uitstekend af. Dat is precies de reden waarom met AI gebouwde apps zo snel over een werkend inlogscherm beschikken.
 
-**Wat mag je doen?** Rollen, permissies, eigenaarschap van data. Dit is waar prototypes het zwakst zijn, omdat hiervoor diepgaande kennis nodig is van jouw specifieke bedrijfslogica — kennis die simpelweg niet in je initiële prompt zat.
+**Wat mag je doen?** Rollen, permissies, eigenaarschap van data. Dit is waar prototypes het zwakst zijn, omdat hiervoor diepgaande kennis nodig is van jouw specifieke bedrijfslogica - kennis die simpelweg niet in je initiële prompt zat.
 
 **Klopt dat op dít exacte moment nog steeds?** Sessies verlopen, rollen veranderen, accounts worden geblokkeerd en abonnementen worden beëindigd. Een permissie die eenmalig bij het inloggen wordt bepaald en daarna nooit meer wordt geverifieerd, is een bevoegdheid die veel langer actief blijft dan gerechtvaardigd is.
 
@@ -38,11 +38,11 @@ Authenticatie in een serieus product is niet één vraagstuk, maar drie afzonder
 
 Dit ontwerppatroon is alomtegenwoordig omdat het de meest voor de hand liggende structuur is die een taalmodel kan genereren: gebruikers hebben eigenschappen, beheerder zijn is een eigenschap, dus die hoort thuis in de tabel `users` of `profiles`.
 
-Het acute gevaar ontstaat zodra die tabel wordt ontsloten via een automatisch gegenereerde API — zoals standaard het geval is in een typische Supabase-omgeving — en het database-toegangsbeleid (Row Level Security) gebruikers toestaat om hun eigen rij bij te werken. Op het eerste gezicht klinkt dat logisch: een gebruiker moet immers zijn eigen naam kunnen aanpassen. Maar tenzij het beleid expliciet het bijwerken van die specifieke rol-kolom blokkeert, betekent dit dat een gebruiker een updateverzoek kan sturen waarin hij zijn eigen rol verandert in `admin`.
+Het acute gevaar ontstaat zodra die tabel wordt ontsloten via een automatisch gegenereerde API - zoals standaard het geval is in een typische Supabase-omgeving - en het database-toegangsbeleid (Row Level Security) gebruikers toestaat om hun eigen rij bij te werken. Op het eerste gezicht klinkt dat logisch: een gebruiker moet immers zijn eigen naam kunnen aanpassen. Maar tenzij het beleid expliciet het bijwerken van die specifieke rol-kolom blokkeert, betekent dit dat een gebruiker een updateverzoek kan sturen waarin hij zijn eigen rol verandert in `admin`.
 
 De aanval vereist geen speciale tools of hackersvaardigheden: open het tabblad Netwerk in de browserontwikkelaarstools, bekijk het JSON-formaat van een profielwijziging en stuur hetzelfde verzoek opnieuw met één extra veld: `"role": "admin"`. Als jouw applicatie vervolgens simpelweg de rol uit die profieltabel uitleest om beheerdersrechten toe te kennen, heb je zojuist volledige beheerdersrechten weggegeven via een doodgewoon instellingenformulier.
 
-Er is nog een subtielere variant. Sommige gegenereerde apps controleren de rol uitsluitend in de browser (client-side) en bepalen aan de hand daarvan welke knoppen of menu's worden getoond. Een knop verbergen in de gebruikersinterface is echter geen beveiligingscontrole — iedereen kan het achterliggende API-endpoint direct aanroepen. Als de server de rol niet onafhankelijk verifieert, wordt je admin-paneel slechts beschermd door de beleefdheid van de bezoeker.
+Er is nog een subtielere variant. Sommige gegenereerde apps controleren de rol uitsluitend in de browser (client-side) en bepalen aan de hand daarvan welke knoppen of menu's worden getoond. Een knop verbergen in de gebruikersinterface is echter geen beveiligingscontrole - iedereen kan het achterliggende API-endpoint direct aanroepen. Als de server de rol niet onafhankelijk verifieert, wordt je admin-paneel slechts beschermd door de beleefdheid van de bezoeker.
 
 ## Hoe een solide rollenmodel eruitziet
 
@@ -50,11 +50,11 @@ Er is nog een subtielere variant. Sommige gegenereerde apps controleren de rol u
 
 **Permissies worden afgedwongen op de datalaag.** Niet in de frontend-interface en niet uitsluitend in een API-route. In een applicatie met Supabase betekent dit Row Level Security (RLS) policies die de rol van de aanvrager verifiëren voor elke gevoelige database-operatie. Zo kan een endpoint nooit omzeild worden door de database-API rechtstreeks te bevragen.
 
-**De server beslist, de interface volgt.** Toon gerust een beheerdersmenu op basis van een rol in de frontend — maar elke geprivilegieerde bewerking moet de rol opnieuw op de server valideren, alsof de grafische interface helemaal niet bestaat.
+**De server beslist, de interface volgt.** Toon gerust een beheerdersmenu op basis van een rol in de frontend - maar elke geprivilegieerde bewerking moet de rol opnieuw op de server valideren, alsof de grafische interface helemaal niet bestaat.
 
 **Rollen zijn overzichtelijk en vernoemd naar de organisatie.** Eigenaar, medewerker, lid, lezer. Vier of vijf heldere, goed begrepen rollen werken oneindig veel beter dan twintig fijnmazige permissievlaggen die niemand meer kan overzien en die snel afwijken van de werkelijkheid.
 
-**Wijzigingen zijn direct van kracht.** Wanneer iemand uit een team wordt verwijderd of in rang wordt verlaagd, moet het eerstvolgende verzoek dat direct weerspiegelen. Als je app permissies langdurig cacht in een JWT-token, blijft een verwijderde medewerker bevoegd totdat dat token verloopt — precies het risico dat je wilde elimineren.
+**Wijzigingen zijn direct van kracht.** Wanneer iemand uit een team wordt verwijderd of in rang wordt verlaagd, moet het eerstvolgende verzoek dat direct weerspiegelen. Als je app permissies langdurig cacht in een JWT-token, blijft een verwijderde medewerker bevoegd totdat dat token verloopt - precies het risico dat je wilde elimineren.
 
 ## De multi-tenant valkuil
 
@@ -99,13 +99,13 @@ Heb je een `is_admin`-kolom in je database en weet je niet 100% zeker wie daarna
 
 Als je applicatie teams of organisaties ondersteunt, verdient het uitnodigingsproces extra aandacht. Dit is namelijk de plek waar toegangsbeslissingen worden genomen door eindgebruikers die niet stilstaan bij beveiliging:
 
-**Uitnodigingslinks zijn feitelijk inloggegevens.** Een link die met één klik lidmaatschap verleent, is een digitale sleutel die per e-mail wordt verstuurd. Deze link moet eenmalig bruikbaar zijn, strikt gekoppeld aan één specifiek e-mailadres en voorzien zijn van een vervaldatum — maximaal zeven dagen is een gezonde termijn. Gegenereerde flows produceren regelmatig uitnodigingslinks die voor altijd en door iedereen gebruikt kunnen worden, waardoor links worden doorgestuurd, in groepsapps belanden en jarenlang actief blijven.
+**Uitnodigingslinks zijn feitelijk inloggegevens.** Een link die met één klik lidmaatschap verleent, is een digitale sleutel die per e-mail wordt verstuurd. Deze link moet eenmalig bruikbaar zijn, strikt gekoppeld aan één specifiek e-mailadres en voorzien zijn van een vervaldatum - maximaal zeven dagen is een gezonde termijn. Gegenereerde flows produceren regelmatig uitnodigingslinks die voor altijd en door iedereen gebruikt kunnen worden, waardoor links worden doorgestuurd, in groepsapps belanden en jarenlang actief blijven.
 
 **De rechten van de uitnodiger begrenzen de uitnodiging.** Een gewoon teamlid mag nooit een beheerder kunnen uitnodigen. Als de rol in de browser wordt geselecteerd en met het formulierverzoek wordt meegestuurd, kan deze worden gemanipuleerd. De server moet daarom altijd controleren of de uitnodiger zelf wel bevoegd is om die rol toe te kennen.
 
 **Een e-mailwijziging is een toegangsverandering.** Als een gebruiker zijn account-e-mailadres kan wijzigen zonder het nieuwe adres te bevestigen, kan een uitnodiging die aan een specifiek e-mailadres is gekoppeld eenvoudig worden gekaapt. Vereis altijd verificatie van het nieuwe adres én stuur een notificatie naar het oude adres.
 
-**Verwijdering moet onmiddellijk en volledig zijn.** Wanneer een medewerker een organisatie verlaat, moeten diens sessies voor die organisatie bij het eerstvolgende verzoek direct worden geblokkeerd — niet pas wanneer een sessietoken over een week verloopt. Test dit expliciet: verwijder een gebruiker in browser A en probeer direct een organisatiedossier te openen in browser B.
+**Verwijdering moet onmiddellijk en volledig zijn.** Wanneer een medewerker een organisatie verlaat, moeten diens sessies voor die organisatie bij het eerstvolgende verzoek direct worden geblokkeerd - niet pas wanneer een sessietoken over een week verloopt. Test dit expliciet: verwijder een gebruiker in browser A en probeer direct een organisatiedossier te openen in browser B.
 
 **Openstaande uitnodigingen zijn statusrecords.** Een uitnodiging die is verstuurd naar iemand die nog niet heeft geaccepteerd, voor een organisatie die inmiddels is overgedragen of verwijderd, mag nooit automatisch toegang geven tot wat zich nu op die plek bevindt.
 
@@ -117,7 +117,7 @@ Elk van deze punten betreft kleine stukjes validatielogica. Samen bepalen ze of 
 
 Marijn Kuipers bouwde DierZorg in Lovable: een gedeeld softwareplatform waarmee onafhankelijke dierenartsenpraktijken rond Apeldoorn afspraken en patiëntendossiers beheren. Elf dierenartsenpraktijken hadden zich al aangesloten vóór de eerste professionele security review plaatsvond.
 
-Twee bevindingen waren doorslaggevend. De profieltabel van gebruikers bevatte een veld `role` met een database-policy die gebruikers toestond hun eigen rij bij te werken. Hierdoor kon elke geregistreerde dierenartsassistent zichzelf binnen tien seconden promoveren tot systeembeheerder door één JSON-veld toe te voegen aan het profielformulier. Daarnaast controleerde het data-toegangsbeleid alleen of de aanvrager was ingelogd en het specifieke consult had aangemaakt — er werd nergens gecontroleerd tot welke praktijk het dossier behoorde. Een dierenarts bij Praktijk A kon daardoor patiëntendossiers van Praktijk B openen door simpelweg een volgnummer in de URL aan te passen.
+Twee bevindingen waren doorslaggevend. De profieltabel van gebruikers bevatte een veld `role` met een database-policy die gebruikers toestond hun eigen rij bij te werken. Hierdoor kon elke geregistreerde dierenartsassistent zichzelf binnen tien seconden promoveren tot systeembeheerder door één JSON-veld toe te voegen aan het profielformulier. Daarnaast controleerde het data-toegangsbeleid alleen of de aanvrager was ingelogd en het specifieke consult had aangemaakt - er werd nergens gecontroleerd tot welke praktijk het dossier behoorde. Een dierenarts bij Praktijk A kon daardoor patiëntendossiers van Praktijk B openen door simpelweg een volgnummer in de URL aan te passen.
 
 De tweede bevinding raakte direct de commerciële toekomst van het bedrijf: DierZorg zat op dat moment midden in inkoopgesprekken met een regionale maatschap van negen dierenklinieken, waarvan het security-questionnaire exact naar deze gegevensscheiding vroeg.
 
@@ -126,9 +126,9 @@ Negen werkdagen waren nodig om de architectuur waterdicht te maken: rollen verpl
 **Resultaat:** de groep van negen klinieken tekende zes weken later na een vlekkeloze security-audit, en DierZorg draait de permissietestsuite nu automatisch bij elke nieuwe release.
 
 > *"Iedereen had zichzelf vanuit de profielinstellingen tot admin kunnen bombarderen. Het platform stond al vier maanden live en de enige reden dat er niets misging, is dat niemand het had geprobeerd."*
-> — **Marijn Kuipers, Oprichter, DierZorg (Apeldoorn)**
+> - **Marijn Kuipers, Oprichter, DierZorg (Apeldoorn)**
 
-**Kosten & Doorlooptijd:** € 3.700 (Launch Ready Pakket: rollenmodel, multi-tenant isolatie, sessiebeveiliging en permissietests) — afgerond in 9 werkdagen.
+**Kosten & Doorlooptijd:** € 3.700 (Launch Ready Pakket: rollenmodel, multi-tenant isolatie, sessiebeveiliging en permissietests) - afgerond in 9 werkdagen.
 
 ## Veelgestelde vragen
 

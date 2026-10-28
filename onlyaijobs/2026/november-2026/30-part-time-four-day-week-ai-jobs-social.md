@@ -4,7 +4,7 @@
 
 💰 32 hours and 4×9 are not the same: one reduces pay and pension accrual proportionally, the other keeps 36 hours of pay across four longer days.
 
-✅ What makes it work: fixed working days, adjusted on-call rotations, realistic planning and better documentation — which helps the whole team.
+✅ What makes it work: fixed working days, adjusted on-call rotations, realistic planning and better documentation - which helps the whole team.
 
 🔎 Browse current jobs: https://onlyaijobs.eu/jobs
 

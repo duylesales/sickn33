@@ -42,9 +42,9 @@ Content Format: Employer Playbook
 }
 </script>
 
-Eindhoven is the centre of Brainport, one of Europe's most technology-intensive regions. Global high-tech companies, a dense supplier network, a leading technical university and hundreds of startups compete for engineers. For employers, hiring AI engineers in Eindhoven means competing in one of the tightest technical labour markets in the Netherlands — often against household names with large recruitment budgets. This playbook is written for hiring managers and recruiters at companies of all sizes, and especially for SMEs and scale-ups that need to attract ML talent without matching the largest employers' offers. It covers where talent comes from, what candidates look for, how to write vacancies that work and how to handle international hiring and onboarding.
+Eindhoven is the centre of Brainport, one of Europe's most technology-intensive regions. Global high-tech companies, a dense supplier network, a leading technical university and hundreds of startups compete for engineers. For employers, hiring AI engineers in Eindhoven means competing in one of the tightest technical labour markets in the Netherlands - often against household names with large recruitment budgets. This playbook is written for hiring managers and recruiters at companies of all sizes, and especially for SMEs and scale-ups that need to attract ML talent without matching the largest employers' offers. It covers where talent comes from, what candidates look for, how to write vacancies that work and how to handle international hiring and onboarding.
 
-OnlyAIJobs already lists AI vacancies in Eindhoven, and its design — exact addresses, distance from the candidate's home and no paid placement — was shaped by the Brabant talent market described here.
+OnlyAIJobs already lists AI vacancies in Eindhoven, and its design - exact addresses, distance from the candidate's home and no paid placement - was shaped by the Brabant talent market described here.
 
 ## Understanding the Brainport Talent Market
 
@@ -60,7 +60,7 @@ OnlyAIJobs already lists AI vacancies in Eindhoven, and its design — exact add
 
 ## What AI Engineers in Eindhoven Look For
 
-- **Technically meaningful work**: many candidates are drawn to Brainport precisely because of deep engineering problems — models that run on machines, sensors and devices.
+- **Technically meaningful work**: many candidates are drawn to Brainport precisely because of deep engineering problems - models that run on machines, sensors and devices.
 - **Ownership**: the chance to design and own a system rather than a small part of it.
 - **Colleagues they can learn from**: strong senior engineers and a healthy technical culture.
 - **English as working language**, especially for international candidates.
@@ -70,8 +70,8 @@ OnlyAIJobs already lists AI vacancies in Eindhoven, and its design — exact add
 
 ## Writing a Vacancy That Works in Brainport
 
-1. **A precise title**: "ML Engineer — defect detection for wafer inspection" rather than "AI Specialist".
-2. **The problem and the data**: images, sensor streams, logs, simulations — what will the engineer work with?
+1. **A precise title**: "ML Engineer - defect detection for wafer inspection" rather than "AI Specialist".
+2. **The problem and the data**: images, sensor streams, logs, simulations - what will the engineer work with?
 3. **Where the model runs**: cloud, on-premise, embedded, at customer sites.
 4. **The team**: size, seniority and who the engineer will learn from.
 5. **Exact office address and hybrid policy**: Eindhoven, Veldhoven, Best, Helmond and the campuses mean different commutes.
@@ -91,7 +91,7 @@ SMEs and scale-ups rarely win on salary alone against the largest employers. The
 - **Learning budget and conference time**.
 - **Honesty**: candidates in Brainport are experienced and notice exaggeration; describe challenges openly.
 
-Because OnlyAIJobs does not sell higher placement, a well-written SME vacancy appears on equal terms with that of a large corporation — which rewards precise, honest vacancy texts.
+Because OnlyAIJobs does not sell higher placement, a well-written SME vacancy appears on equal terms with that of a large corporation - which rewards precise, honest vacancy texts.
 
 ## International Hiring
 
@@ -105,7 +105,7 @@ Housing is one of the biggest obstacles to hiring in Eindhoven. Employers that h
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Its listings are currently concentrated in the Netherlands, including Eindhoven, and employers listing AI roles include organisations such as Holland Innovative, Cegeka, Boltrics, Heijmans, VINCI Energies, Rexel and Accenture. Each vacancy is shown at its exact address with the distance from the candidate's home, applications go directly to your own careers page and candidates browse without an account.
 
-Two features matter particularly in Brainport. First, distance: candidates living in Helmond, Tilburg, 's-Hertogenbosch or across the Belgian border immediately see whether your site is within their commuting radius — valuable when housing pushes people outward. Second, the absence of paid placement: every vacancy competes on its content, so a precise SME vacancy is not buried under larger employers' sponsored listings. Your first vacancy is free via info@onlyaijobs.eu.
+Two features matter particularly in Brainport. First, distance: candidates living in Helmond, Tilburg, 's-Hertogenbosch or across the Belgian border immediately see whether your site is within their commuting radius - valuable when housing pushes people outward. Second, the absence of paid placement: every vacancy competes on its content, so a precise SME vacancy is not buried under larger employers' sponsored listings. Your first vacancy is free via info@onlyaijobs.eu.
 
 ## Designing AI Roles for High-Tech Contexts
 
@@ -113,7 +113,7 @@ Many Brainport companies struggle because they combine several needs in one vaca
 
 - **ML engineer (vision or signal)**: builds and deploys models on images, sensor data or logs.
 - **Embedded or edge ML engineer**: optimises models for constrained hardware close to machines.
-- **Data engineer**: builds pipelines from machines, test benches and production systems — often the first hire needed.
+- **Data engineer**: builds pipelines from machines, test benches and production systems - often the first hire needed.
 - **Applied scientist**: explores new methods, often in collaboration with TU/e.
 - **MLOps engineer**: brings models into reliable operation and maintains them across product versions.
 
@@ -126,7 +126,7 @@ The most reliable long-term source of AI talent in Brainport is the region's own
 ## Running an Efficient Interview Process
 
 - **Screening call**: motivation, experience, salary expectations and permit situation.
-- **Technical deep dive**: discuss a past project — data, choices, evaluation, deployment.
+- **Technical deep dive**: discuss a past project - data, choices, evaluation, deployment.
 - **Practical exercise**: a short, relevant task, such as designing an evaluation for a defect detection model; respect candidates' time.
 - **Team conversation**: meet future colleagues and see the lab or production environment.
 - **Decision within days**: strong candidates have other offers.
@@ -160,11 +160,11 @@ Treat every AI vacancy as a product for engineers: describe the problem honestly
 
 ## Where Candidates Live and Commute
 
-Eindhoven's housing shortage means many engineers live in surrounding municipalities — Veldhoven, Best, Helmond, Geldrop, Son en Breugel, Waalre — or further away in 's-Hertogenbosch, Tilburg, Weert or even across the Belgian border in the Kempen region. Sites differ greatly in accessibility: High Tech Campus is reached by bus and bike, Veldhoven by car and bus, the TU/e campus and Strijp-S by train and bike, and industrial estates often mainly by car. When hiring, look at where your current engineers live and how they travel, publish the exact address and transport options in the vacancy and consider flexible hours that avoid peak congestion on the A2 and A67. Offering a bicycle scheme, public transport reimbursement or a realistic hybrid policy can widen your effective recruitment radius considerably. Candidates increasingly filter vacancies by travel time, so a clear description of the commute is not a detail — it is part of your offer.
+Eindhoven's housing shortage means many engineers live in surrounding municipalities - Veldhoven, Best, Helmond, Geldrop, Son en Breugel, Waalre - or further away in 's-Hertogenbosch, Tilburg, Weert or even across the Belgian border in the Kempen region. Sites differ greatly in accessibility: High Tech Campus is reached by bus and bike, Veldhoven by car and bus, the TU/e campus and Strijp-S by train and bike, and industrial estates often mainly by car. When hiring, look at where your current engineers live and how they travel, publish the exact address and transport options in the vacancy and consider flexible hours that avoid peak congestion on the A2 and A67. Offering a bicycle scheme, public transport reimbursement or a realistic hybrid policy can widen your effective recruitment radius considerably. Candidates increasingly filter vacancies by travel time, so a clear description of the commute is not a detail - it is part of your offer.
 
 ## Working With Regional Partners
 
-Brainport Development, the Holland Expat Center South, universities and industry associations offer programmes for talent attraction, international onboarding and SME support. Participating in shared initiatives — joint career events, regional traineeships, internship pools — lets smaller employers reach candidates they would not reach alone.
+Brainport Development, the Holland Expat Center South, universities and industry associations offer programmes for talent attraction, international onboarding and SME support. Participating in shared initiatives - joint career events, regional traineeships, internship pools - lets smaller employers reach candidates they would not reach alone.
 
 ## Compensation Benchmarks
 
@@ -184,9 +184,9 @@ Benchmark salaries regularly using collective agreement scales, regional salary 
 
 A high-tech supplier near Eindhoven struggled for months to hire two ML engineers for vision-based quality inspection. Candidates chose larger employers nearby.
 
-The hiring manager rewrote the vacancy: a specific title, a description of the inspection images and production lines, the exact address with parking and bus connection, English as working language, a salary range, a two-day hybrid policy, IND sponsorship and a four-step process completed within three weeks. The vacancy emphasised ownership — the engineers would design the inspection system end to end — and included a short description of the senior engineer they would work with. The company also offered thesis projects to TU/e and Fontys students.
+The hiring manager rewrote the vacancy: a specific title, a description of the inspection images and production lines, the exact address with parking and bus connection, English as working language, a salary range, a two-day hybrid policy, IND sponsorship and a four-step process completed within three weeks. The vacancy emphasised ownership - the engineers would design the inspection system end to end - and included a short description of the senior engineer they would work with. The company also offered thesis projects to TU/e and Fontys students.
 
-Applications improved, and both roles were filled within two months — one by an experienced engineer who preferred ownership over a larger brand, the other by a TU/e graduate who had done a thesis at the company.
+Applications improved, and both roles were filled within two months - one by an experienced engineer who preferred ownership over a larger brand, the other by a TU/e graduate who had done a thesis at the company.
 
 ## Key Takeaways
 

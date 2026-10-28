@@ -38,7 +38,7 @@ Ask any AI tool for a search box and you will typically get a query matching a p
 
 **One column only.** A product search that examines the title and ignores the description, category and brand.
 
-**No index,** so it reads the whole table on every keystroke of a live search — which is also why the page slows down as the catalogue grows.
+**No index,** so it reads the whole table on every keystroke of a live search - which is also why the page slows down as the catalogue grows.
 
 That combination is the difference between a search box that looks present and one that works.
 
@@ -46,7 +46,7 @@ That combination is the difference between a search box that looks present and o
 
 Modest things, and all of them absent above.
 
-They expect case to be irrelevant, word order to be flexible ("rode fiets" finding "fiets, rood"), partial words to match sensibly, typos to be forgiven, results to be ordered with the best first, and multiple fields to be considered. In Dutch specifically, they expect compound words to work — searching "fietsslot" should find "slot voor fiets" — which naive matching never does.
+They expect case to be irrelevant, word order to be flexible ("rode fiets" finding "fiets, rood"), partial words to match sensibly, typos to be forgiven, results to be ordered with the best first, and multiple fields to be considered. In Dutch specifically, they expect compound words to work - searching "fietsslot" should find "slot voor fiets" - which naive matching never does.
 
 None of that requires a search engine. Most of it is available in the database you already have.
 
@@ -56,7 +56,7 @@ If your app runs on Supabase or any Postgres database, native full-text search c
 
 **Language-aware processing.** Postgres can reduce words to their stems, so a search for one form matches others. Dutch language support is included, which matters for compounds and inflections that naive matching misses entirely.
 
-**Ranking.** Results scored by relevance rather than returned in arbitrary order, with the ability to weight fields — a match in the title counting for more than one in the description.
+**Ranking.** Results scored by relevance rather than returned in arbitrary order, with the ability to weight fields - a match in the title counting for more than one in the description.
 
 **Multi-column search** combined into a single searchable representation.
 
@@ -73,7 +73,7 @@ Sometimes the database is not enough, and the honest thresholds are higher than 
 - Hundreds of thousands of records or more, with search as a primary interaction.
 - Faceted filtering across many dimensions simultaneously, updating instantly as users click.
 - Search-as-you-type where results must appear within tens of milliseconds.
-- Relevance tuning as an ongoing activity — synonyms, business rules, promoted results.
+- Relevance tuning as an ongoing activity - synonyms, business rules, promoted results.
 - Multi-language search across substantially different languages.
 
 Below those thresholds, a dedicated service adds a system to operate, a second copy of your data to keep in sync, and a monthly cost, in exchange for capability you are not using. Above them it earns its place immediately.
@@ -90,7 +90,7 @@ Below those thresholds, a dedicated service adds a system to operate, a second c
 
 **Add typo tolerance** through similarity matching, applied when an exact search returns little.
 
-**Handle the empty state properly.** A search returning nothing should suggest something — related categories, a spelling correction, a way to browse — rather than presenting a blank page that reads as "we do not have this".
+**Handle the empty state properly.** A search returning nothing should suggest something - related categories, a spelling correction, a way to browse - rather than presenting a blank page that reads as "we do not have this".
 
 **Log what people search for.** This is the highest-value and least-implemented item. Queries with no results are a direct list of what your users want and you do not offer, or of vocabulary mismatches between you and them.
 
@@ -98,7 +98,7 @@ Below those thresholds, a dedicated service adds a system to operate, a second c
 
 Ask yourself what proportion of searches in your app return zero results. Most founders have no idea, because nothing records it.
 
-In products where this gets measured for the first time, the figure is frequently high enough to be alarming — and the causes are usually mundane: plurals, capitalisation, a word your users use and your catalogue does not, or a field that was never included in the query. Every one of those is a customer who concluded you did not have what they wanted.
+In products where this gets measured for the first time, the figure is frequently high enough to be alarming - and the causes are usually mundane: plurals, capitalisation, a word your users use and your catalogue does not, or a field that was never included in the query. Every one of those is a customer who concluded you did not have what they wanted.
 
 Logging failed searches costs an afternoon and tends to change the roadmap.
 
@@ -106,7 +106,7 @@ Logging failed searches costs an afternoon and tends to change the roadmap.
 
 This is a well-bounded piece of work with a visible effect on how usable a product feels. LaunchStudio implements it as part of the last-mile work on AI-built products: native full-text search configured with the right language support, fields weighted deliberately, typo tolerance where it helps, proper indexes so it stays fast as the data grows, sensible empty states, and logging of failed searches so you can see what your users are actually asking for.
 
-The interface you built in Lovable is untouched — search improvements happen behind the same box — and the code stays documented and AI-readable so you can keep iterating. That sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers from Amsterdam and Ho Chi Minh City, with eleven years of production work behind it for clients including Vodafone and TNO.
+The interface you built in Lovable is untouched - search improvements happen behind the same box - and the code stays documented and AI-readable so you can keep iterating. That sits inside the [Launch Ready package](https://launchstudio.eu/en/#packages), delivered by Manifera's engineers from Amsterdam and Ho Chi Minh City, with eleven years of production work behind it for clients including Vodafone and TNO.
 
 If your search box is quietly losing you customers, [describe your project](https://launchstudio.eu/en/#contact) and you will get a specific assessment within one business day.
 
@@ -118,13 +118,13 @@ Search is only half of how people locate something. The other half is filtering,
 
 **Show the state.** Which filters are active, as removable chips, with a way to clear everything. Users who cannot see why results are limited assume the catalogue is empty.
 
-**Counts prevent dead ends.** Showing how many items sit behind each option, based on the current query, stops people selecting a filter that yields nothing. This requires an aggregate query per facet — cheap with indexes, expensive without, which is one more reason the indexing work comes first.
+**Counts prevent dead ends.** Showing how many items sit behind each option, based on the current query, stops people selecting a filter that yields nothing. This requires an aggregate query per facet - cheap with indexes, expensive without, which is one more reason the indexing work comes first.
 
-**Make filters shareable.** Filter state in the URL means a user can bookmark a search, send it to a colleague, and return to it. Generated apps usually hold this in memory, so refreshing loses everything — a small thing that makes a product feel unserious.
+**Make filters shareable.** Filter state in the URL means a user can bookmark a search, send it to a colleague, and return to it. Generated apps usually hold this in memory, so refreshing loses everything - a small thing that makes a product feel unserious.
 
 **Choose defaults deliberately.** Sorting by newest is rarely right for a catalogue and usually right for a message list. Whatever the default, say what it is rather than leaving the order unexplained.
 
-**Watch what people filter by.** If a filter is never used, remove it; if users repeatedly search for something that should be a filter — a size, a region, a status — that is a product signal rather than a search one.
+**Watch what people filter by.** If a filter is never used, remove it; if users repeatedly search for something that should be a filter - a size, a region, a status - that is a product signal rather than a search one.
 
 Getting these right typically matters more to perceived quality than relevance tuning does, and it is a day of work rather than a project.
 
@@ -134,7 +134,7 @@ Most searching in small products happens on mobile, and the constraints there ch
 
 **Typing is expensive.** Every character costs the user effort, which makes typo tolerance and short-prefix matching worth more on a phone than on a laptop. A search that requires four correctly spelled words will simply not be used.
 
-**Suggestions beat results.** Showing a short list of matching items as the user types — three or four, not thirty — lets someone tap rather than finish typing, and it is the single largest usability improvement available on mobile search.
+**Suggestions beat results.** Showing a short list of matching items as the user types - three or four, not thirty - lets someone tap rather than finish typing, and it is the single largest usability improvement available on mobile search.
 
 **Do not query on every keystroke.** A request per character is expensive for you and slow for them on a mobile connection. Wait until typing pauses, then query once, and cancel the previous request when a new one starts.
 
@@ -150,16 +150,16 @@ These are interface decisions rather than search engineering, and they frequentl
 
 Wietse Kamphuis ran Onderdeelshop, a catalogue of spare parts for agricultural machinery serving dealers across Friesland and Groningen, built in Lovable with about 18,000 products. Dealers searched by part number, machine model or description.
 
-Complaints were vague — "your search is not great" — so the first step was measuring. Logging revealed that 34% of searches returned zero results, and the causes were almost entirely mechanical: search was case-sensitive and matched only the product title, so part numbers written with a hyphen in the catalogue and without one by the dealer never matched, model names differing by a space failed, and any description-only term was invisible.
+Complaints were vague - "your search is not great" - so the first step was measuring. Logging revealed that 34% of searches returned zero results, and the causes were almost entirely mechanical: search was case-sensitive and matched only the product title, so part numbers written with a hyphen in the catalogue and without one by the dealer never matched, model names differing by a space failed, and any description-only term was invisible.
 
 Four business days of work: a searchable representation combining title, part number, description and machine compatibility, maintained automatically by the database; Dutch language configuration for stemming; trigram similarity for part numbers so hyphens and spacing stopped mattering; relevance weighting with part number highest; proper indexing; an empty state suggesting the nearest matches; and continued logging of failed searches.
 
-**Result:** zero-result searches fell from 34% to under 6%, and the remaining failures became a useful weekly list of parts dealers wanted that the catalogue genuinely did not carry — three of which were added as stocked lines.
+**Result:** zero-result searches fell from 34% to under 6%, and the remaining failures became a useful weekly list of parts dealers wanted that the catalogue genuinely did not carry - three of which were added as stocked lines.
 
 > *"I thought I had a catalogue problem. I had a search problem, and a third of my dealers were being told we didn't sell things we had in stock."*
-> — **Wietse Kamphuis, Founder, Onderdeelshop (Drachten)**
+> - **Wietse Kamphuis, Founder, Onderdeelshop (Drachten)**
 
-**Cost & Timeline:** €1,900 (full-text search, similarity matching, indexing, logging and empty states) — completed in 4 business days.
+**Cost & Timeline:** €1,900 (full-text search, similarity matching, indexing, logging and empty states) - completed in 4 business days.
 
 ## Frequently Asked Questions
 

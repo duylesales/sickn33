@@ -30,7 +30,7 @@ Niets overtuigt zoals dat. Het schept ook het specifieke probleem waar dit artik
 
 De presentatie doet er meer toe dan wat dan ook, en ze moet vóór de demonstratie worden vastgelegd, niet achteraf in de verdediging.
 
-Wat werkt: dit is een werkend model van het product, gebouwd om te bevestigen dat we het eens zijn over wat het moet doen. Het draait, u kunt erdoorheen klikken, en het is niet het product — het heeft geen beveiliging, geen betrouwbaarheid, geen bescherming van wiens data dan ook. Dat zijn de volgende acht weken.
+Wat werkt: dit is een werkend model van het product, gebouwd om te bevestigen dat we het eens zijn over wat het moet doen. Het draait, u kunt erdoorheen klikken, en het is niet het product - het heeft geen beveiliging, geen betrouwbaarheid, geen bescherming van wiens data dan ook. Dat zijn de volgende acht weken.
 
 Zeg het, zet het op papier in dezelfde e-mail als de link, en herhaal het aan het begin van de demonstratie. Klanten accepteren dit gemakkelijk als het vooraf wordt gezegd, en verzetten zich er volledig tegen als het opduikt tijdens een gesprek over kosten.
 
@@ -52,9 +52,9 @@ Offreer productie nooit voordat het prototype bestaat. Het prototype vertelt u w
 
 Eén bedrag voor "het prototype productieklaar maken" nodigt uit tot de vergelijking die u niet wilt. Een gespecificeerde lijst van werk verandert het in een specificatie.
 
-De punten die in bijna elke offerte van dit soort voorkomen: autorisatie en toegangsbeheer op elk endpoint; sleutels naar de server verplaatsen en vervangen; validatie op de server; een echt datamodel met constraints en migraties; authenticatie, sessies en wachtwoordherstel goed gedaan; bestandsafhandeling met controle van het type en privé-opslag; betalingen inclusief de foutroutes; foutafhandeling, logging en monitoring; back-ups met een geteste herstelactie; drie omgevingen en een herhaalbare deployment; prestatiewerk — indexen, caching, paginering; toegankelijkheid; en het juridische en privacywerk als de klant in Europa verkoopt.
+De punten die in bijna elke offerte van dit soort voorkomen: autorisatie en toegangsbeheer op elk endpoint; sleutels naar de server verplaatsen en vervangen; validatie op de server; een echt datamodel met constraints en migraties; authenticatie, sessies en wachtwoordherstel goed gedaan; bestandsafhandeling met controle van het type en privé-opslag; betalingen inclusief de foutroutes; foutafhandeling, logging en monitoring; back-ups met een geteste herstelactie; drie omgevingen en een herhaalbare deployment; prestatiewerk - indexen, caching, paginering; toegankelijkheid; en het juridische en privacywerk als de klant in Europa verkoopt.
 
-Een klant die die lijst leest, vraagt niet meer waarom het acht weken duurt. De meesten hebben geen idee dat dit allemaal bestaat, en dat is niet hun fout — het is per definitie onzichtbaar.
+Een klant die die lijst leest, vraagt niet meer waarom het acht weken duurt. De meesten hebben geen idee dat dit allemaal bestaat, en dat is niet hun fout - het is per definitie onzichtbaar.
 
 ## Wees Voorzichtig met Wat U Garandeert
 
@@ -78,9 +78,9 @@ Klanten die bezwaar maken tegen de tools, zijn zeldzaam. Klanten die bezwaar mak
 
 ## Wie Wat Bezit, Precies
 
-Klanten vragen het, en een vaag antwoord schept een probleem op precies het moment dat u het het minst kunt gebruiken — meestal wanneer ze overwegen met iemand anders te werken.
+Klanten vragen het, en een vaag antwoord schept een probleem op precies het moment dat u het het minst kunt gebruiken - meestal wanneer ze overwegen met iemand anders te werken.
 
-Het standpunt dat eerlijk en makkelijk uit te leggen is: de klant bezit de opleveringen waarvoor hij betaalde, inclusief de broncode, de data en alles wat specifiek voor hem is gemaakt. U behoudt wat u meebracht — uw eigen bibliotheken, componenten en interne tooling — en geeft hun een licentie om dat te gebruiken als deel van wat u opleverde.
+Het standpunt dat eerlijk en makkelijk uit te leggen is: de klant bezit de opleveringen waarvoor hij betaalde, inclusief de broncode, de data en alles wat specifiek voor hem is gemaakt. U behoudt wat u meebracht - uw eigen bibliotheken, componenten en interne tooling - en geeft hun een licentie om dat te gebruiken als deel van wat u opleverde.
 
 Twee punten specifiek voor dit soort werk. Gegenereerde code kan niet als origineel worden gegarandeerd zoals handgeschreven werk soms wel, en dat duidelijk in de overeenkomst zeggen is beter dan een garantie die niemand kan waarmaken. En de abonnementen op de tools zijn van u en niet van hen, wat ertoe doet wanneer een klant aanneemt dat het betalen voor het project ook een account omvatte dat hij kan blijven gebruiken.
 
@@ -90,9 +90,9 @@ De overdracht verdient dezelfde precisie. Spreek vooraf af waaruit ze bestaat: d
 
 Voor een bureau is de economie van dit werk niet wat het eerste snelle prototype doet vermoeden, en die goed krijgen bepaalt of de praktijk houdbaar is.
 
-Verkenning is snel en moet als product worden geprijsd, niet per uur. Twee dagen werk verkocht voor €2.500 is goede handel en de klant krijgt iets echt waardevols — maar het levert op zichzelf geen inkomen op, en het per uur prijzen ondergewaardeert het flink.
+Verkenning is snel en moet als product worden geprijsd, niet per uur. Twee dagen werk verkocht voor €2.500 is goede handel en de klant krijgt iets echt waardevols - maar het levert op zichzelf geen inkomen op, en het per uur prijzen ondergewaardeert het flink.
 
-Productie is waar de uren zitten, en het is gewone engineering, gewoon geprijsd. De vergissing is aan te nemen dat de tools het comprimeren zoals ze de verkenning comprimeerden. Ze helpen — opzet, standaardcode, tests — maar autorisatie, datamodellering, foutroutes bij betalingen en toegankelijkheid zijn denkwerk in plaats van typewerk, en denken is niet sneller geworden.
+Productie is waar de uren zitten, en het is gewone engineering, gewoon geprijsd. De vergissing is aan te nemen dat de tools het comprimeren zoals ze de verkenning comprimeerden. Ze helpen - opzet, standaardcode, tests - maar autorisatie, datamodellering, foutroutes bij betalingen en toegankelijkheid zijn denkwerk in plaats van typewerk, en denken is niet sneller geworden.
 
 Het derde stuk, en het stuk dat bureaus verwaarlozen, is wat er daarna gebeurt. Een product dat is gelanceerd, heeft voor onbepaalde tijd updates, monitoring, incidentrespons en kleine wijzigingen nodig. Een onderhoudsabonnement dat dat dekt, is voorspelbare omzet op werk waarvoor u al het best geplaatst bent, en het houdt u in de relatie wanneer het volgende project van de klant verschijnt.
 
@@ -102,7 +102,7 @@ De vorm die werkt: verkenning als product met vaste prijs, productie geofferd op
 
 Voor een bureau of freelancer kost dit doorgaans een dag voorbereiding die daarna voor elke opdracht geldt: een geschreven beschrijving van wat een prototype is, meegestuurd met elke demonstratielink; een commerciële structuur in twee fasen met verkenning geprijsd en betaald; een standaard gespecificeerde lijst van productiewerk bij elke offerte; contractbepalingen over de status van het prototype, intellectueel eigendom en aansprakelijkheid; een standpunt over het melden van toolgebruik; en een checklist voor de productiefase, zodat niets op de lijst wordt vergeten wanneer het werk echt wordt gedaan.
 
-LaunchStudio doet de productiefase als white-labelpartner voor bureaus die de klantrelatie willen houden en het verstevigen willen uitbesteden. Daarachter staat Manifera — elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio doet de productiefase als white-labelpartner voor bureaus die de klantrelatie willen houden en het verstevigen willen uitbesteden. Daarachter staat Manifera - elf jaar, 160+ projecten, 120+ engineers, vanaf de Herengracht 420 in Amsterdam.
 
 [Vraag ons de productiefase te offreren](https://launchstudio.eu/nl/#contact) terwijl u de klant houdt.
 
@@ -120,14 +120,14 @@ Er werd niets gelekt, voor zover iemand kon vaststellen. Maar de klant had het i
 
 De opdracht werd in vier werkdagen gered: het prototype offline gehaald met een uitleg van precies wat wel en niet was blootgesteld, onderbouwd met de toegangslogs; de drie weken aan echte data gemigreerd naar een goed gebouwde versie in plaats van weggegooid, wat voor de klant belangrijker was dan wat ook; het productiewerk gespecificeerd in 14 benoemde punten met de onderbouwing voor elk; en de relatie opnieuw opgebouwd rond een structuur in twee fasen die vanaf dat moment werd toegepast.
 
-Sindsdien hanteert Studio Meridiaan een standaardaanpak: elke prototypelink verloopt na 14 dagen, is beveiligd met een wachtwoord, draagt een zichtbare banner met de tekst *demonstratiemodel — niet voor gebruik met echte gegevens*, en gaat vergezeld van een geschreven verklaring van één pagina over wat het is. Verkenning wordt geofferd voor €2.500 en betaald voordat het prototype wordt gebouwd.
+Sindsdien hanteert Studio Meridiaan een standaardaanpak: elke prototypelink verloopt na 14 dagen, is beveiligd met een wachtwoord, draagt een zichtbare banner met de tekst *demonstratiemodel - niet voor gebruik met echte gegevens*, en gaat vergezeld van een geschreven verklaring van één pagina over wat het is. Verkenning wordt geofferd voor €2.500 en betaald voordat het prototype wordt gebouwd.
 
 **Resultaat:** bij elf opdrachten sindsdien is de productieofferte negen keer geaccepteerd en nooit ter discussie gesteld op basis van de snelheid van het prototype. Joost vindt dat de banner en het verlopen van de link meer werk doen dan welk gesprek ook.
 
-> *"Ze rolden het uit naar veertig klanten omdat het werkte. Dat was niet hun fout — ik had ze iets laten zien wat werkte en niets gezegd over wat het was."*
-> — **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
+> *"Ze rolden het uit naar veertig klanten omdat het werkte. Dat was niet hun fout - ik had ze iets laten zien wat werkte en niets gezegd over wat het was."*
+> - **Joost Meijer, Partner, Studio Meridiaan (Utrecht)**
 
-**Kosten & Doorlooptijd:** €4.300 (beoordeling van het incident en communicatie met de klant, datamigratie van prototype naar productieversie, gespecificeerde productiespecificatie, commerciële structuur en contractbepalingen, standaarden voor de presentatie van prototypes) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €4.300 (beoordeling van het incident en communicatie met de klant, datamigratie van prototype naar productieversie, gespecificeerde productiespecificatie, commerciële structuur en contractbepalingen, standaarden voor de presentatie van prototypes) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -177,7 +177,7 @@ Een bepaling over de status van het prototype en dat het niet mag worden uitgero
       "name": "Hoe onderbouw ik productiekosten na een snel prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Specificeer het werk — autorisatie, sleutels, validatie, datamodel, authenticatie, betalingen, logging, back-ups, omgevingen, prestaties, toegankelijkheid, privacy."
+        "text": "Specificeer het werk - autorisatie, sleutels, validatie, datamodel, authenticatie, betalingen, logging, back-ups, omgevingen, prestaties, toegankelijkheid, privacy."
       }
     },
     {

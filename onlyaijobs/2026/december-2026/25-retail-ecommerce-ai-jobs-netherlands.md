@@ -13,7 +13,7 @@ Content Format: Career Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Retail and E-Commerce AI Jobs in the Netherlands: Pricing, Availability and the Cost of Being Wrong",
-  "description": "Dutch retailers and online platforms run some of the country's largest machine learning operations, covering pricing, assortment, replenishment, fulfilment and returns — with measurable consequences for every decision.",
+  "description": "Dutch retailers and online platforms run some of the country's largest machine learning operations, covering pricing, assortment, replenishment, fulfilment and returns - with measurable consequences for every decision.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-13",
@@ -41,7 +41,7 @@ Retail is where a large share of Dutch machine learning actually runs in product
 
 **Demand forecasting and replenishment.** Predicting sales per product per location per day, then converting that into orders. This is the backbone of grocery retail and one of the largest operational ML systems in the country.
 
-**Pricing.** Setting and changing prices across an assortment, reacting to competitors, managing promotions and markdowns, and estimating elasticity — which requires careful causal thinking rather than correlation.
+**Pricing.** Setting and changing prices across an assortment, reacting to competitors, managing promotions and markdowns, and estimating elasticity - which requires careful causal thinking rather than correlation.
 
 **Assortment and space.** Deciding which products to carry where, how much shelf or warehouse space to allocate, and which items to delist.
 
@@ -57,7 +57,7 @@ Retail is where a large share of Dutch machine learning actually runs in product
 
 The Netherlands has a distinctive retail landscape: a highly consolidated grocery sector with sophisticated supply chains, several sizeable domestic online platforms and marketplaces, a strong delivery and fulfilment culture in a country small enough that next-day delivery is a solved logistics problem, and consumers who are notoriously price-sensitive.
 
-That combination produces employers with real scale in a compact market. A Dutch retailer's forecasting system may handle millions of product-location-day combinations, and its analytics teams are correspondingly large and specialised — one of the few environments in the country where a data scientist can focus narrowly and still have a full-time job doing it.
+That combination produces employers with real scale in a compact market. A Dutch retailer's forecasting system may handle millions of product-location-day combinations, and its analytics teams are correspondingly large and specialised - one of the few environments in the country where a data scientist can focus narrowly and still have a full-time job doing it.
 
 Geographically, the head offices cluster in the Randstad and in Brabant, with technology teams that are often among the most international in the country.
 
@@ -65,7 +65,7 @@ Geographically, the head offices cluster in the Randstad and in Brabant, with te
 
 In retail, the questions that matter are causal. Did the promotion increase sales, or did it move demand forward a week? Did the price cut win customers from a competitor, or discount people who would have bought anyway? Did the new recommendation increase revenue, or reallocate it?
 
-Observational data answers these badly because prices, promotions and placements are not assigned at random — they are chosen precisely because someone expected them to work. This makes naive analysis systematically optimistic.
+Observational data answers these badly because prices, promotions and placements are not assigned at random - they are chosen precisely because someone expected them to work. This makes naive analysis systematically optimistic.
 
 Serious retail teams therefore invest in experimentation: store-level randomised tests, switchback designs, geo experiments, and holdout groups maintained even when it is commercially uncomfortable. They also invest in methods that work when experimentation is impossible: difference-in-differences, synthetic controls and structural models of demand.
 
@@ -75,7 +75,7 @@ A candidate who can discuss the difference between elasticity estimated from an 
 
 A fashion retailer builds a model to recommend markdowns. It trains on historical data: what was discounted, by how much, and what sold afterwards.
 
-The recommendations are conservative and unhelpful. The reason is that historical markdowns were not random. Buyers discounted items they believed were failing, which means the training data associates discounts with weak demand. The model learns that discounting predicts poor sales — a relationship that is real in the data and backwards as a decision rule.
+The recommendations are conservative and unhelpful. The reason is that historical markdowns were not random. Buyers discounted items they believed were failing, which means the training data associates discounts with weak demand. The model learns that discounting predicts poor sales - a relationship that is real in the data and backwards as a decision rule.
 
 The correction requires either experimental variation, by randomising markdown timing or depth on a subset, or a model that explicitly separates the decision policy from the demand response. The team introduces a limited randomised programme, accepts a small short-term cost, and within two seasons has a model that can be trusted to act.
 
@@ -89,7 +89,7 @@ This is the single most common failure mode in retail machine learning: training
 
 **Digital Services Act.** Online platforms face obligations around advertising transparency, recommender system explanation and illegal content handling, which turn parts of the recommendation stack into regulated functionality.
 
-**EU AI Act.** Most retail use cases are not high-risk, but transparency obligations and prohibitions — for example around manipulative techniques and exploiting vulnerabilities — set boundaries that product teams must understand.
+**EU AI Act.** Most retail use cases are not high-risk, but transparency obligations and prohibitions - for example around manipulative techniques and exploiting vulnerabilities - set boundaries that product teams must understand.
 
 **Sustainability reporting.** Emissions across product and delivery chains increasingly require calculation rather than estimation, which is producing a new category of analytical work inside retailers.
 
@@ -113,7 +113,7 @@ The genuine downside is commercial pressure. Decisions are made on quarterly rhy
 
 Public retail datasets are plentiful, and a forecasting project on hierarchical sales data with promotions is a solid start. What raises it above the crowd is the decision layer and the causal component: convert forecasts into order quantities with an explicit cost of waste versus lost sales, and estimate a promotional effect using a method that acknowledges non-random assignment.
 
-If you can also show a simple experiment design — how you would test a pricing change across stores, with power analysis and a contamination check — you will be discussing the same problems that retail teams debate internally, which is exactly the impression you want to leave.
+If you can also show a simple experiment design - how you would test a pricing change across stores, with power analysis and a contamination check - you will be discussing the same problems that retail teams debate internally, which is exactly the impression you want to leave.
 
 ## Career Growth in Retail and E-Commerce
 
@@ -168,7 +168,7 @@ Browse current retail, e-commerce and pricing analytics roles at [onlyaijobs.eu/
 ## Frequently Asked Questions
 
 ### (Scenario: research-minded candidate) Is retail analytics intellectually serious?
-Yes — causal inference, large-scale forecasting and optimisation under cost asymmetry are demanding, with unusually clear ground truth.
+Yes - causal inference, large-scale forecasting and optimisation under cost asymmetry are demanding, with unusually clear ground truth.
 
 ### (Scenario: candidate from another sector) What is the hardest transition?
 Commercial tempo and the requirement to show impact quickly, plus learning category and margin mechanics well enough to be credible.
@@ -187,7 +187,7 @@ Demand is steady, but priorities shift with trading performance, so projects can
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is retail analytics intellectually serious work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — causal inference, large-scale forecasting and cost-sensitive optimisation with clear ground truth."}},
+    {"@type": "Question", "name": "Is retail analytics intellectually serious work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - causal inference, large-scale forecasting and cost-sensitive optimisation with clear ground truth."}},
     {"@type": "Question", "name": "What is the hardest transition into retail data work?", "acceptedAnswer": {"@type": "Answer", "text": "Commercial tempo and learning margin and category mechanics well enough to be credible with buyers."}},
     {"@type": "Question", "name": "Is Dutch required in retail data roles?", "acceptedAnswer": {"@type": "Answer", "text": "Many technology teams work in English; commercial, buying and store operations counterparts often work in Dutch."}},
     {"@type": "Question", "name": "Why do retail models underperform after launch?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because they were trained on data generated by past decisions, or the downstream decision rule was unchanged."}},

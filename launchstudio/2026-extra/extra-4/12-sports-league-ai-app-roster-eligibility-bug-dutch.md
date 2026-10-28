@@ -86,9 +86,9 @@ Een teammanager, onbewust van het feit dat een speler een schorsing van één we
 **Resultaat:** CompetitieBeheer blokkeert nu ongeschikte spelers op het moment van het indienen van de opstelling in al haar pilot-competities. Geen enkele club die het bijgewerkte systeem gebruikt heeft sindsdien te maken gekregen met een reglementaire nederlaag vanwege een geschiktheidsfout.
 
 > *"De badge stond recht op het scherm. Iedereen nam aan dat dat betekende dat het systeem ons beschermde. Dat deed het niet – het toonde ons gewoon informatie en vertrouwde erop dat een mens er elke keer correct naar zou handelen, wat natuurlijk uiteindelijk een keer niet gebeurde."*
-> — **Kaylee Smit, Oprichter, CompetitieBeheer (Breda)**
+> - **Kaylee Smit, Oprichter, CompetitieBeheer (Breda)**
 
-**Kosten en tijdlijn:** € 480 (validatielogica voor geschiktheid van de opstelling over schorsings-, transfer- en leeftijdsgroepregels) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 480 (validatielogica voor geschiktheid van de opstelling over schorsings-, transfer- en leeftijdsgroepregels) - voltooid in 3 werkdagen.
 
 ---
 

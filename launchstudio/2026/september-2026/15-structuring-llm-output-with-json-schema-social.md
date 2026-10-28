@@ -1,6 +1,6 @@
-🚨 Logan, a sales analyst, used **Cursor** to build a contact scraping bot — but the LLM occasionally returned messy, unparseable text instead of the structured JSON his database required. 📇
+🚨 Logan, a sales analyst, used **Cursor** to build a contact scraping bot - but the LLM occasionally returned messy, unparseable text instead of the structured JSON his database required. 📇
 
-Raw AI text is fine for a chatbot, but a disaster for a backend — you need JSON Schema and validation, not regex. 🧠
+Raw AI text is fine for a chatbot, but a disaster for a backend - you need JSON Schema and validation, not regex. 🧠
 
 ❌ Fragile regex parsing that broke the moment the model added a stray sentence
 ❌ "JSON Mode" guaranteeing valid syntax but not the right keys or structure

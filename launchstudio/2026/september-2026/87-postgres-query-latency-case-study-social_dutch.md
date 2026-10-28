@@ -1,4 +1,4 @@
-📉 Priya bouwde een real-time logistiekdashboard met **Lovable** — priya, a startup founder, used **lovable** to build a real-time SaaS dashboard, maar ontdekte ernstige Postgres query-latency zodra echte klanten data op productieschaal laadden. 🧠
+📉 Priya bouwde een real-time logistiekdashboard met **Lovable** - priya, a startup founder, used **lovable** to build a real-time SaaS dashboard, maar ontdekte ernstige Postgres query-latency zodra echte klanten data op productieschaal laadden. 🧠
 
 Als uw dashboardqueries geen samengestelde indexen, connection pooling en resultaatcaching hebben, verandert echt datavolume een vlotte demo in een negen seconden durende laadspinner.
 
@@ -12,7 +12,7 @@ Als uw dashboardqueries geen samengestelde indexen, connection pooling en result
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Priya's dashboard behaalde productie-gereedheid: de mediane queryresponstijd daalde van 4,2 seconden naar minder dan 850 milliseconden — een verlaging van 80% — terwijl het CPU-gebruik van de database daalde van boven de 90% naar 20-30%. (Query-optimalisatie voltooid en geverifieerd binnen dagen, geen frontend-rebuild nodig.) 🚀
+Priya's dashboard behaalde productie-gereedheid: de mediane queryresponstijd daalde van 4,2 seconden naar minder dan 850 milliseconden - een verlaging van 80% - terwijl het CPU-gebruik van de database daalde van boven de 90% naar 20-30%. (Query-optimalisatie voltooid en geverifieerd binnen dagen, geen frontend-rebuild nodig.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/postgres-query-latency-case-study
 

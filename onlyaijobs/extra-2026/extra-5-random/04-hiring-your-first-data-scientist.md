@@ -40,7 +40,7 @@ Hiring your first data scientist is one of the easiest hires to get wrong. The o
 
 ## Before You Hire: What Problem Are You Buying?
 
-Write down, in plain language, the three decisions you want to make better with data. Not "become data-driven" — actual decisions: which customers to contact, how much stock to hold, which machines to service, which claims to review. If you cannot name three, you are not ready to hire; you are ready to run a short diagnostic project, possibly with an external partner.
+Write down, in plain language, the three decisions you want to make better with data. Not "become data-driven" - actual decisions: which customers to contact, how much stock to hold, which machines to service, which claims to review. If you cannot name three, you are not ready to hire; you are ready to run a short diagnostic project, possibly with an external partner.
 
 Then check three practical conditions:
 
@@ -53,11 +53,11 @@ Then check three practical conditions:
 The most common mistake in a first data hire is choosing the wrong profile. Broadly:
 
 - **Data engineer or analytics engineer**: if your data is scattered across systems, undocumented, or only available as exports. They build the foundation and usually deliver visible value fastest in organisations starting from zero.
-- **Data analyst**: if your questions are mostly descriptive — what happened, where, to whom — and decisions would improve with reliable reporting.
+- **Data analyst**: if your questions are mostly descriptive - what happened, where, to whom - and decisions would improve with reliable reporting.
 - **Data scientist**: if you have reasonably accessible data and genuine prediction or optimisation problems.
 - **ML engineer**: if you already have models that need to run reliably in production.
 
-Many companies advertise for a data scientist and then need a data engineer. Being honest about this at the start avoids a frustrated hire and a year of low output. If you need two profiles and can only fund one, hire the one whose absence blocks everything else — usually the engineer.
+Many companies advertise for a data scientist and then need a data engineer. Being honest about this at the start avoids a frustrated hire and a year of low output. If you need two profiles and can only fund one, hire the one whose absence blocks everything else - usually the engineer.
 
 ## Writing a Vacancy People Will Answer
 
@@ -81,7 +81,7 @@ A process that works for a first hire:
 
 - **Conversation about your actual problem.** Describe one real decision and ask how they would approach it. Listen for clarifying questions about data availability, definitions and who acts on the result. Candidates who start proposing algorithms before asking what you measure are usually wrong for a first hire.
 - **A small, time-boxed exercise** based on anonymised data resembling yours, discussed rather than graded. Respect their time: two hours maximum.
-- **A structured conversation about a past project** — what they inherited, what they built, what failed and what they would do differently.
+- **A structured conversation about a past project** - what they inherited, what they built, what failed and what they would do differently.
 - **An external technical reviewer.** Borrow a trusted engineer, an advisor or a consultant for one interview. This single step prevents most bad first hires.
 - **Reference conversations** focused on autonomy: did this person work well without a senior colleague to lean on?
 
@@ -91,7 +91,7 @@ The first ninety days determine whether the hire produces something or spends a 
 
 - **Access on day one**: systems, databases, a laptop with the permissions to install what they need.
 - **A named sponsor** who meets them weekly and can unblock IT, procurement and data owners.
-- **One scoped first project** with a visible outcome within a quarter — a reliable report, a forecast that replaces a spreadsheet, an early-warning signal for one process.
+- **One scoped first project** with a visible outcome within a quarter - a reliable report, a forecast that replaces a spreadsheet, an early-warning signal for one process.
 - **A budget** for cloud or tooling, however modest, agreed in advance.
 - **External peers**: pay for a conference, a community membership or a monthly mentoring session. Isolation is the biggest retention risk for a solo data professional.
 - **Realistic expectations** communicated to the wider organisation, so nobody expects a chatbot that answers everything by summer.
@@ -104,7 +104,7 @@ In the interest of transparency, OnlyAIJobs listings are currently concentrated 
 
 ## Buy, Build or Borrow First
 
-Hiring is not the only option, and sometimes not the first one. A short engagement with a consultancy or freelancer can tell you whether your data supports the decisions you care about, and produce a specification for the role you actually need. A university collaboration — a master's thesis project, for example — can deliver a proof of concept cheaply and often introduces you to future candidates.
+Hiring is not the only option, and sometimes not the first one. A short engagement with a consultancy or freelancer can tell you whether your data supports the decisions you care about, and produce a specification for the role you actually need. A university collaboration - a master's thesis project, for example - can deliver a proof of concept cheaply and often introduces you to future candidates.
 
 The risk of relying on external help indefinitely is that knowledge leaves with the supplier. A reasonable pattern for smaller organisations is: borrow to diagnose, hire to build, and keep a small external advisory relationship for review and mentoring once your own person is in place.
 
@@ -116,13 +116,13 @@ If your budget cannot reach the market rate for an experienced hire, consider al
 
 ## Job Titles and Expectations
 
-Titles shape expectations. "Data scientist" attracts modelling-oriented candidates who may be disappointed by pipeline work. "Data engineer" attracts builders. "Analytics engineer" signals dbt-style modelling of business data. "AI engineer" increasingly signals building applications on top of language models. If your first hire will do a mixture — which is normal in small organisations — choose the title of the majority of the work and describe the rest explicitly in the vacancy. Candidates rarely object to breadth; they object to surprises.
+Titles shape expectations. "Data scientist" attracts modelling-oriented candidates who may be disappointed by pipeline work. "Data engineer" attracts builders. "Analytics engineer" signals dbt-style modelling of business data. "AI engineer" increasingly signals building applications on top of language models. If your first hire will do a mixture - which is normal in small organisations - choose the title of the majority of the work and describe the rest explicitly in the vacancy. Candidates rarely object to breadth; they object to surprises.
 
 ## Governance From the Start
 
 Even a first data hire needs a minimal governance frame, and putting it in place early is far cheaper than retrofitting it. At a minimum: know which personal data you hold and on what legal basis, under GDPR; decide who may access which data; document data sources and definitions so that a number means the same thing in two reports; and keep a simple record of what models exist, what they are used for and who owns them.
 
-If any of your intended uses fall into the EU AI Act's high-risk categories — for example decisions about hiring, access to essential services, creditworthiness or safety components in regulated products — establish early what documentation, human oversight and evaluation will be required. It is much easier to build these habits with one person than to impose them on a team of ten later.
+If any of your intended uses fall into the EU AI Act's high-risk categories - for example decisions about hiring, access to essential services, creditworthiness or safety components in regulated products - establish early what documentation, human oversight and evaluation will be required. It is much easier to build these habits with one person than to impose them on a team of ten later.
 
 ## Common Mistakes to Avoid
 
@@ -138,7 +138,7 @@ If any of your intended uses fall into the EU AI Act's high-risk categories — 
 
 Set expectations for the first year in terms your organisation understands. Reasonable milestones for a first hire include: reliable access to the key data sources; one recurring report or dashboard that replaces manual work; one model or analysis that changes a real decision; documentation that lets someone else maintain what was built; and a clear proposal for what the second hire or the next investment should be.
 
-Avoid measuring activity — number of models, dashboards or experiments — rather than outcomes. A single forecast that changes purchasing decisions is worth more than five prototypes.
+Avoid measuring activity - number of models, dashboards or experiments - rather than outcomes. A single forecast that changes purchasing decisions is worth more than five prototypes.
 
 ## Growing Beyond One
 
@@ -165,9 +165,9 @@ If you can tick all eight, your first data hire has a good chance of becoming th
 
 A mid-sized manufacturer with 400 employees decided to "start with AI" and advertised for a data scientist. They hired a strong candidate from a research background. Nine months later she left, frustrated: production data sat in a machine controller nobody could export from, quality records were on paper, and her models ran on manually assembled spreadsheets.
 
-The company took a different approach the second time. They wrote down three decisions they wanted to improve, discovered that all three required historical machine data, and advertised for a data engineer with industrial experience instead — honestly describing the state of the data and the fact that this was a first hire with a mandate to build foundations.
+The company took a different approach the second time. They wrote down three decisions they wanted to improve, discovered that all three required historical machine data, and advertised for a data engineer with industrial experience instead - honestly describing the state of the data and the fact that this was a first hire with a mandate to build foundations.
 
-The engineer spent his first six months making machine data available and reliable, then built a simple dashboard that showed scrap rates per line and shift. That alone paid for the role. A year later, the company hired a data scientist — who joined a system that worked, delivered a quality prediction model within a quarter and is still there.
+The engineer spent his first six months making machine data available and reliable, then built a simple dashboard that showed scrap rates per line and shift. That alone paid for the role. A year later, the company hired a data scientist - who joined a system that worked, delivered a quality prediction model within a quarter and is still there.
 
 ## Key Takeaways
 

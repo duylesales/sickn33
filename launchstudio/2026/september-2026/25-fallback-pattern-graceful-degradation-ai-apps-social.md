@@ -1,6 +1,6 @@
-🐌 Jack, a subscription manager, built a billing assistant with **Lovable** — then watched it completely crash during a global Anthropic API outage, taking his users' billing workflow down with it. ⚡
+🐌 Jack, a subscription manager, built a billing assistant with **Lovable** - then watched it completely crash during a global Anthropic API outage, taking his users' billing workflow down with it. ⚡
 
-Every startup built on a third-party AI API is inheriting that provider's downtime — the question is whether your product goes down with it. 🧠
+Every startup built on a third-party AI API is inheriting that provider's downtime - the question is whether your product goes down with it. 🧠
 
 ❌ One AI feature, tightly wired into the UI, that bricks the entire interface when the API fails
 ❌ Being single-threaded to one LLM provider, no matter how good its frontier model currently is

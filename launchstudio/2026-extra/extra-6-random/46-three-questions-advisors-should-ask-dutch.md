@@ -21,13 +21,13 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 
 De meeste startupadviseurs hebben een vertrouwde lijst met vragen voor een oprichter die met AI-tools bouwt: hoe groot is de markt, wat is het plan voor klantwerving, hoe zien de unit economics eruit op schaal. Allemaal goede vragen. Allemaal vragen waar een ai native oprichter klaar voor zou moeten zijn.
 
-Er zijn drie vragen die bijna niemand stelt, en dat zijn precies degene die het meest blijken uit te maken op het moment dat iets concreets — een investeerder, een partner, een due-diligenceproces — eindelijk echte druk zet op het product achter de pitch.
+Er zijn drie vragen die bijna niemand stelt, en dat zijn precies degene die het meest blijken uit te maken op het moment dat iets concreets - een investeerder, een partner, een due-diligenceproces - eindelijk echte druk zet op het product achter de pitch.
 
 ## Vraag één: wie bezit eigenlijk de infrastructuur?
 
-Niet "wie bezit het bedrijf" — wie bezit, in technische en contractuele zin, de servers, het hostingaccount, de database en de deploymentpipeline waarop het product draait. Voor een oprichter die met een AI-tool heeft gebouwd en nooit een terminal heeft aangeraakt, is het eerlijke antwoord soms "ik weet het eigenlijk niet zeker" — het AI-platform kan accounts, inloggegevens of configuraties bezitten die de oprichter nooit rechtstreeks heeft hoeven benaderen.
+Niet "wie bezit het bedrijf" - wie bezit, in technische en contractuele zin, de servers, het hostingaccount, de database en de deploymentpipeline waarop het product draait. Voor een oprichter die met een AI-tool heeft gebouwd en nooit een terminal heeft aangeraakt, is het eerlijke antwoord soms "ik weet het eigenlijk niet zeker" - het AI-platform kan accounts, inloggegevens of configuraties bezitten die de oprichter nooit rechtstreeks heeft hoeven benaderen.
 
-Dat antwoord is prima in de vroegste dagen. Het wordt een echt probleem op het moment dat iemand buiten de oprichter het moet verifiëren — de technisch adviseur van een investeerder, het inkoopteam van een potentiële zakelijke klant, een partner die basale due diligence doet voordat er een overeenkomst wordt ondertekend.
+Dat antwoord is prima in de vroegste dagen. Het wordt een echt probleem op het moment dat iemand buiten de oprichter het moet verifiëren - de technisch adviseur van een investeerder, het inkoopteam van een potentiële zakelijke klant, een partner die basale due diligence doet voordat er een overeenkomst wordt ondertekend.
 
 ## Vraag twee: wie heeft controle over de gegevens?
 
@@ -35,25 +35,25 @@ Vergelijkbare vraag, andere laag. Waar leven klantgegevens fysiek, wie heeft er 
 
 ## Vraag drie: wat gebeurt er als de onderliggende AI-tool verandert of verdwijnt?
 
-Elk AI-ontwikkelplatform is zelf een product, gebouwd door een bedrijf, onderhevig aan prijswijzigingen, featurewijzigingen, of in het ergste geval, stopzetting. Een oprichter die zich nooit heeft afgevraagd "als dit platform morgen zijn voorwaarden zou wijzigen, zou ik mijn product dan nog kunnen laten draaien" heeft een onderzochte afhankelijkheid onder zijn hele bedrijf zitten — een die onzichtbaar is tot de dag dat het dat niet meer is.
+Elk AI-ontwikkelplatform is zelf een product, gebouwd door een bedrijf, onderhevig aan prijswijzigingen, featurewijzigingen, of in het ergste geval, stopzetting. Een oprichter die zich nooit heeft afgevraagd "als dit platform morgen zijn voorwaarden zou wijzigen, zou ik mijn product dan nog kunnen laten draaien" heeft een onderzochte afhankelijkheid onder zijn hele bedrijf zitten - een die onzichtbaar is tot de dag dat het dat niet meer is.
 
 ## Waarom deze drie vragen worden overgeslagen
 
-Adviseurs, zelfs goede, stellen doorgaans vragen vanuit hun eigen expertisegebied — marktstrategie, financieringsverhaal, go-to-marketvolgorde. Infrastructuur en gegevenseigendom vallen in een gat: te technisch voor een op strategie gerichte adviseur om zich gekwalificeerd te voelen om te onderzoeken, en te onzichtbaar in een productdemo voor iemand om zich af te vragen. Het product werkt. De demo verloopt soepel. Er is geen natuurlijke aanleiding voor "wacht, wie heeft er eigenlijk controle over wat hieronder zit."
+Adviseurs, zelfs goede, stellen doorgaans vragen vanuit hun eigen expertisegebied - marktstrategie, financieringsverhaal, go-to-marketvolgorde. Infrastructuur en gegevenseigendom vallen in een gat: te technisch voor een op strategie gerichte adviseur om zich gekwalificeerd te voelen om te onderzoeken, en te onzichtbaar in een productdemo voor iemand om zich af te vragen. Het product werkt. De demo verloopt soepel. Er is geen natuurlijke aanleiding voor "wacht, wie heeft er eigenlijk controle over wat hieronder zit."
 
-Die lacune is precies waarom ze meestal opduikt op het slechtst denkbare moment — niet tijdens een informeel gesprek, maar tijdens een formeel proces waarin iemand er specifiek naar zoekt.
+Die lacune is precies waarom ze meestal opduikt op het slechtst denkbare moment - niet tijdens een informeel gesprek, maar tijdens een formeel proces waarin iemand er specifiek naar zoekt.
 
 ## Ties' vastgelopen partnerschap
 
-Ties Bakker, een oprichter in Zutphen, bouwde SubsidieCheck — een tool voor subsidieaanvragen — met Lovable. Zijn startupadviseur was betrokken en behulpzaam op het gebied van strategie, financieringspositionering en marktomvang. De adviseur vroeg nooit naar gegevenseigendom of wie er eigenlijk controle had over de onderliggende infrastructuur.
+Ties Bakker, een oprichter in Zutphen, bouwde SubsidieCheck - een tool voor subsidieaanvragen - met Lovable. Zijn startupadviseur was betrokken en behulpzaam op het gebied van strategie, financieringspositionering en marktomvang. De adviseur vroeg nooit naar gegevenseigendom of wie er eigenlijk controle had over de onderliggende infrastructuur.
 
-Die lacune bleef onzichtbaar tot een veelbelovende partnerschapskans overging in due diligence. Het team van de potentiële partner vroeg rechtstreeks wie de infrastructuur bezat waarop SubsidieCheck draaide en hoe gegevens van subsidieaanvragers werden opgeslagen en gecontroleerd. Ties had geen zelfverzekerd antwoord, en het proces liep vast — niet omdat SubsidieCheck geen goed product was, maar omdat niemand deze specifieke vragen ooit had getest voordat iemand anders ze op een deadline beantwoord moest hebben.
+Die lacune bleef onzichtbaar tot een veelbelovende partnerschapskans overging in due diligence. Het team van de potentiële partner vroeg rechtstreeks wie de infrastructuur bezat waarop SubsidieCheck draaide en hoe gegevens van subsidieaanvragers werden opgeslagen en gecontroleerd. Ties had geen zelfverzekerd antwoord, en het proces liep vast - niet omdat SubsidieCheck geen goed product was, maar omdat niemand deze specifieke vragen ooit had getest voordat iemand anders ze op een deadline beantwoord moest hebben.
 
 ## Wat het vroeg stellen van deze vragen daadwerkelijk oplevert
 
-De waarde van deze drie vragen zit er niet in dat ze op dag één perfecte antwoorden nodig hebben. Het zit erin dat ze gesteld — en eerlijk beantwoord, zelfs als het eerlijke antwoord "we moeten dit nog oplossen" is — een onzichtbaar risico veranderen in een bekend, aanpakbaar risico. Een oprichter die kan zeggen "we hebben onze infrastructuureigendom en gegevenscontrole beoordeeld, en dit is onze opzet" komt due diligence binnen in een compleet andere positie dan iemand die de vraag voor het eerst in die kamer hoort.
+De waarde van deze drie vragen zit er niet in dat ze op dag één perfecte antwoorden nodig hebben. Het zit erin dat ze gesteld - en eerlijk beantwoord, zelfs als het eerlijke antwoord "we moeten dit nog oplossen" is - een onzichtbaar risico veranderen in een bekend, aanpakbaar risico. Een oprichter die kan zeggen "we hebben onze infrastructuureigendom en gegevenscontrole beoordeeld, en dit is onze opzet" komt due diligence binnen in een compleet andere positie dan iemand die de vraag voor het eerst in die kamer hoort.
 
-Ons team, gevestigd in Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, werkt met oprichters specifiek aan het concreet maken van deze drie antwoorden — echt infrastructuureigendom, duidelijke gegevenscontrole, en een gedocumenteerd pad vooruit, ongeacht wat een bepaalde AI-tool vervolgens doet. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en dit soort eigendomsverheldering is een routineonderdeel van het productieklaar maken van een project. Wilt u een rechtstreeks antwoord op deze drie vragen over uw eigen product, dan kunt u [een gratis intakegesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact).
+Ons team, gevestigd in Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, werkt met oprichters specifiek aan het concreet maken van deze drie antwoorden - echt infrastructuureigendom, duidelijke gegevenscontrole, en een gedocumenteerd pad vooruit, ongeacht wat een bepaalde AI-tool vervolgens doet. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en dit soort eigendomsverheldering is een routineonderdeel van het productieklaar maken van een project. Wilt u een rechtstreeks antwoord op deze drie vragen over uw eigen product, dan kunt u [een gratis intakegesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact).
 
 ## Hoe U Eerlijke Antwoorden Voorbereidt op Alle Drie de Vragen Vóórdat Iemand Ze Stelt
 
@@ -72,7 +72,7 @@ Door deze antwoorden vooraf scherp geformuleerd te hebben, transformeert u een p
 
 ### Een AI-native oprichter in actie: de due-diligencevragen die niemand eerst had gesteld
 
-Ties Bakker had SubsidieCheck gebouwd om kleine bedrijven te helpen bij het navigeren door het aanvraagproces voor subsidies — een oprecht nuttige tool die al de interesse had gewekt van een grotere organisatie die een distributiepartnerschap overwoog. Tijdens de vroege ontwikkeling had Ties geleund op een startupadviseur voor begeleiding bij positionering en groei, en het advies was op elk gebied waar de adviseur zich mee bezighield solide geweest.
+Ties Bakker had SubsidieCheck gebouwd om kleine bedrijven te helpen bij het navigeren door het aanvraagproces voor subsidies - een oprecht nuttige tool die al de interesse had gewekt van een grotere organisatie die een distributiepartnerschap overwoog. Tijdens de vroege ontwikkeling had Ties geleund op een startupadviseur voor begeleiding bij positionering en groei, en het advies was op elk gebied waar de adviseur zich mee bezighield solide geweest.
 
 Niemand had infrastructuur of gegevenseigendom ter sprake gebracht totdat het due-diligenceteam van de partner dat halverwege de formele gesprekken deed. Hun vragen waren specifiek: waar werden aanvraaggegevens opgeslagen, wie had beheertoegang, en welke contractuele controle had Ties eigenlijk over de systemen waar SubsidieCheck van afhing. Ties bracht het project naar LaunchStudio om echte antwoorden te krijgen voordat het proces verder kon gaan.
 
@@ -81,9 +81,9 @@ De technici van Manifera documenteerden SubsidieChecks volledige infrastructuur,
 **Resultaat:** Het partnerschapsgesprek werd hervat met een gedocumenteerde, door de oprichter beheerde infrastructuuropzet, en Ties stelt deze drie vragen nu aan elke adviseur of tool voordat hij op hun begeleiding vertrouwt.
 
 > *"Niemand had me ooit gevraagd wie er eigenlijk iets van bezat. Ik had het mezelf ook niet bedacht om te vragen."*
-> — **Ties Bakker, oprichter, SubsidieCheck (Zutphen)**
+> - **Ties Bakker, oprichter, SubsidieCheck (Zutphen)**
 
-**Kosten en tijdlijn:** € 1.600 (migratie infrastructuureigendom en gegevensdocumentatie) — voltooid in 10 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (migratie infrastructuureigendom en gegevensdocumentatie) - voltooid in 10 werkdagen.
 
 ---
 

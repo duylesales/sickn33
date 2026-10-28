@@ -1,4 +1,4 @@
-🔥 Een Amsterdams ontwerpbureau bouwde een prototype via **AI builders** — voor een internationale bank pitchten ze een AI-onboardingportaal van €120.000, maar liepen vast op een zware IT-audit van 200 vragen. 🧠
+🔥 Een Amsterdams ontwerpbureau bouwde een prototype via **AI builders** - voor een internationale bank pitchten ze een AI-onboardingportaal van €120.000, maar liepen vast op een zware IT-audit van 200 vragen. 🧠
 
 Als uw bureau enterprise B2B-contracten wil sluiten zonder enterprise backend-infrastructuur (VPC, RLS, KMS-encryptie), verdampt de deal direct bij de security-audit van de CISO.
 
@@ -12,7 +12,7 @@ Als uw bureau enterprise B2B-contracten wil sluiten zonder enterprise backend-in
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-De CISO van de bank keurde de documentatie binnen 48 uur goed en het bureau sloot het contract van €120.000 af. (€8.000 (Enterprise Backend & IT Audit) — binnen 15 werkdagen live). 🚀
+De CISO van de bank keurde de documentatie binnen 48 uur goed en het bureau sloot het contract van €120.000 af. (€8.000 (Enterprise Backend & IT Audit) - binnen 15 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/b2b-saas-enterprise-security-audit
 

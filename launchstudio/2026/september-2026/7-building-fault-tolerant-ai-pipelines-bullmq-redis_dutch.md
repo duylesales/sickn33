@@ -6,7 +6,7 @@ Koperfase: Bewustzijn
 
 # Fouttolerante Pijplijnen Bouwen met BullMQ en Redis bij het Coderen met AI
 
-Wanneer u een AI-applicatie bouwt waarbij de publieke webserver rechtstreeks en synchroon verbinding maakt met de OpenAI API, is uw software-architectuur structureel fragiel. Externe Large Language Models zijn traag, leggen agressieve rate limits op en hebben regelmatig te maken met tijdelijke storingen — alle grote AI-aanbieders publiceren openbare statuspagina's vol gedeeltelijke uitval. Als uw Node.js-server crasht tijdens het wachten op een AI-generatie van 30 seconden, is de gebruikersinvoer definitief verloren. Om enterprise-waardige veerkracht te bouwen, moet u data-inname strikt ontkoppelen van de feitelijke taakuitvoering via een robuuste message queue. In het Node.js-ecosysteem is **BullMQ op basis van Redis** de gouden standaard, en het correct implementeren van dit patroon is de scheidslijn tussen een wankel prototype en een stabiele productie-app.
+Wanneer u een AI-applicatie bouwt waarbij de publieke webserver rechtstreeks en synchroon verbinding maakt met de OpenAI API, is uw software-architectuur structureel fragiel. Externe Large Language Models zijn traag, leggen agressieve rate limits op en hebben regelmatig te maken met tijdelijke storingen - alle grote AI-aanbieders publiceren openbare statuspagina's vol gedeeltelijke uitval. Als uw Node.js-server crasht tijdens het wachten op een AI-generatie van 30 seconden, is de gebruikersinvoer definitief verloren. Om enterprise-waardige veerkracht te bouwen, moet u data-inname strikt ontkoppelen van de feitelijke taakuitvoering via een robuuste message queue. In het Node.js-ecosysteem is **BullMQ op basis van Redis** de gouden standaard, en het correct implementeren van dit patroon is de scheidslijn tussen een wankel prototype en een stabiele productie-app.
 
 ## De Architectuur van Ontkoppeling (Decoupling)
 
@@ -18,7 +18,7 @@ In een fouttolerante architectuur communiceert de primaire API-webserver nooit d
 4. **Achtergrond-Uitvoering:** Een afzonderlijke vloot van "Worker Nodes" (een `Worker`-instantie in BullMQ, draaiend als geïsoleerd proces of container) haalt de taak uit Redis en voert de trage LLM API-aanroep uit.
 5. **Opslag & Afronding:** De worker voltooit de generatie, slaat het resultaat op in PostgreSQL en markeert de taak als voltooid, wat een event triggert waar listeners op kunnen reageren.
 
-Omdat Redis de taak persistent opslaat (met configureerbare duurzaamheid via AOF of RDB snapshots), leidt een crash of herstart van de API-server of workers nooit tot dataverlies — de taak wordt direct hervat waar hij gebleven was.
+Omdat Redis de taak persistent opslaat (met configureerbare duurzaamheid via AOF of RDB snapshots), leidt een crash of herstart van de API-server of workers nooit tot dataverlies - de taak wordt direct hervat waar hij gebleven was.
 
 ## Waarom BullMQ? Native Rate Limiting
 
@@ -69,7 +69,7 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om BullMQ op een Redis-ins
 
 **Resultaat:** Serverless timeout-fouten daalden naar nul en de applicatie verwerkte probleemloos audiobestanden van 2 uur zonder enige onderbreking.
 
-**Kosten & Tijdlijn:** €1.950 (BullMQ Infrastructuur Setup Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.950 (BullMQ Infrastructuur Setup Pakket) - productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 

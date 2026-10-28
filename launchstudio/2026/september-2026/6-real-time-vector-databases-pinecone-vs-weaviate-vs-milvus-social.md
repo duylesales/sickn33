@@ -1,4 +1,4 @@
-⚡ Ava, a tech lead, built an enterprise knowledge bot using **Cursor** — then watched Supabase pgvector CPU usage hit 100% as vector retrieval slowed to a crawl under heavy document ingestion. 📚
+⚡ Ava, a tech lead, built an enterprise knowledge bot using **Cursor** - then watched Supabase pgvector CPU usage hit 100% as vector retrieval slowed to a crawl under heavy document ingestion. 📚
 
 When your RAG pipeline scales past 10M vectors, choosing the wrong vector database creates catastrophic latency and enterprise compliance blocks. 🧠
 

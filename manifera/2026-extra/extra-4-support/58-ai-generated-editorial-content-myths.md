@@ -20,7 +20,7 @@ target_persona: "B"
 }
 </script>
 
-A CEO or editorial director at a digital publisher evaluating AI-generated content — automated summaries, AI-assisted drafting of routine coverage, dynamic headline and metadata generation — often approaches the technology with assumptions shaped by AI's visible progress in other creative domains, assumptions that don't fully account for the specific accuracy, trust, and legal considerations editorial content carries. Several of these assumptions deserve direct correction before they shape a production pipeline decision.
+A CEO or editorial director at a digital publisher evaluating AI-generated content - automated summaries, AI-assisted drafting of routine coverage, dynamic headline and metadata generation - often approaches the technology with assumptions shaped by AI's visible progress in other creative domains, assumptions that don't fully account for the specific accuracy, trust, and legal considerations editorial content carries. Several of these assumptions deserve direct correction before they shape a production pipeline decision.
 
 ## Myth 1: "AI-Generated Content Can Simply Replace Human-Authored Reporting at Similar Quality"
 
@@ -28,15 +28,15 @@ Generative AI tools have genuinely improved at producing text that reads fluentl
 
 ## Myth 2: "AI Generation Reduces Editorial Production Cost Roughly Proportionally to the Content Volume It Produces"
 
-A publisher reasonably expects that if AI generation can produce a large volume of drafts quickly, the cost savings should scale proportionally with that volume. What this underweights is that AI-generated editorial content, particularly for anything beyond simple templated summaries, typically requires a genuine human fact-checking and editing pass to reach publishable quality — verifying claims, checking sourcing, and correcting the fluent-sounding factual errors generative models are known to produce. This verification cost doesn't scale down proportionally with generation volume the way raw generation cost might, meaning the actual cost savings from AI-assisted editorial production are often considerably more modest than a naive volume-based cost projection would suggest, particularly for content categories where accuracy and trust matter most to the publication's actual credibility.
+A publisher reasonably expects that if AI generation can produce a large volume of drafts quickly, the cost savings should scale proportionally with that volume. What this underweights is that AI-generated editorial content, particularly for anything beyond simple templated summaries, typically requires a genuine human fact-checking and editing pass to reach publishable quality - verifying claims, checking sourcing, and correcting the fluent-sounding factual errors generative models are known to produce. This verification cost doesn't scale down proportionally with generation volume the way raw generation cost might, meaning the actual cost savings from AI-assisted editorial production are often considerably more modest than a naive volume-based cost projection would suggest, particularly for content categories where accuracy and trust matter most to the publication's actual credibility.
 
 ## Myth 3: "Legal and Attribution Considerations Around AI-Generated Content Are Settled and Low-Risk"
 
-The legal landscape around AI-generated editorial content — questions of copyright status for AI-generated output, the provenance and licensing status of training data underlying generative models, and disclosure obligations to readers — remains genuinely unsettled in multiple jurisdictions relevant to digital publishing, with active litigation involving major publishers and evolving regulatory guidance rather than a stable, low-risk legal consensus a newsroom can confidently build a production pipeline around without ongoing attention. A publisher treating this as a solved, low-risk legal question, rather than an actively evolving area requiring ongoing legal monitoring specific to editorial content and the specific tools and models actually used in production, risks building meaningful commercial and reputational value on a legal foundation that could shift in ways affecting the publisher's actual rights to the content it's published.
+The legal landscape around AI-generated editorial content - questions of copyright status for AI-generated output, the provenance and licensing status of training data underlying generative models, and disclosure obligations to readers - remains genuinely unsettled in multiple jurisdictions relevant to digital publishing, with active litigation involving major publishers and evolving regulatory guidance rather than a stable, low-risk legal consensus a newsroom can confidently build a production pipeline around without ongoing attention. A publisher treating this as a solved, low-risk legal question, rather than an actively evolving area requiring ongoing legal monitoring specific to editorial content and the specific tools and models actually used in production, risks building meaningful commercial and reputational value on a legal foundation that could shift in ways affecting the publisher's actual rights to the content it's published.
 
 ## Why These Myths Deserve Direct Correction Before Production Decisions
 
-These assumptions aren't unreasonable — AI generation's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and speed advantages a mature technology appears to offer. What makes editorial content specifically different from some other AI-generation use cases is the combination of genuinely high reader and regulatory scrutiny over factual accuracy (unlike a single impressive generated sample, published journalism needs to hold up to verification), a real, non-proportional fact-checking cost that limits how directly generation volume translates into production savings, and a genuinely unsettled legal landscape specifically relevant to a publisher's ability to protect and commercialize its published content.
+These assumptions aren't unreasonable - AI generation's genuine, visible progress naturally creates optimism about its broader applicability, and it's a reasonable instinct to explore cost and speed advantages a mature technology appears to offer. What makes editorial content specifically different from some other AI-generation use cases is the combination of genuinely high reader and regulatory scrutiny over factual accuracy (unlike a single impressive generated sample, published journalism needs to hold up to verification), a real, non-proportional fact-checking cost that limits how directly generation volume translates into production savings, and a genuinely unsettled legal landscape specifically relevant to a publisher's ability to protect and commercialize its published content.
 
 ## What This Means for Scoping an AI-Assisted Editorial Pipeline Correctly
 
@@ -65,7 +65,7 @@ Digitalno Novinarstvo Zagreb, a Zagreb-based digital publisher, had planned an a
 Manifera's Amsterdam team, engaged to rework the production pipeline, repositioned AI generation as an acceleration tool specifically for templated summaries and metadata within human-edited workflows, rebuilt the budget around realistic fact-checking cost, and established ongoing legal review specific to the publisher's actual generation tools and content usage.
 
 > *"We'd budgeted as if generation volume and cost savings moved together in a straight line. What we actually found was that the fact-checking work needed to make generated content genuinely publishable didn't shrink the way the generation volume grew, and that gap was where our original budget really fell apart."*
-> — **Editorial Director, Digitalno Novinarstvo Zagreb**
+> - **Editorial Director, Digitalno Novinarstvo Zagreb**
 
 Digitalno Novinarstvo Zagreb's recalibrated pipeline, focused on generation within verified editorial constraints rather than broad reporting replacement, delivered content meeting the publisher's actual accuracy bar within a realistically budgeted production timeline.
 
@@ -85,15 +85,15 @@ Before building a production pipeline around AI-generated editorial content, bud
 
 ### (Scenario: publisher scoping an AI content pipeline) Can AI-generated content simply replace human reporting in a newsroom at similar quality?
 
-Not reliably — factual accuracy and original sourcing typically require genuine human reporting and judgment, which current generation approaches don't fully substitute for at the level of verified accuracy real journalism requires.
+Not reliably - factual accuracy and original sourcing typically require genuine human reporting and judgment, which current generation approaches don't fully substitute for at the level of verified accuracy real journalism requires.
 
 ### (Scenario: publisher projecting cost savings) Do AI content generation cost savings scale proportionally with the volume of content produced?
 
-Not typically — most generated drafts require a genuine human fact-checking and editing pass to reach publishable quality, and this verification cost doesn't shrink proportionally with generation volume, limiting realistic cost savings.
+Not typically - most generated drafts require a genuine human fact-checking and editing pass to reach publishable quality, and this verification cost doesn't shrink proportionally with generation volume, limiting realistic cost savings.
 
 ### (Scenario: publisher assuming legal questions are settled) Is the legal status of AI-generated editorial content and its training data a settled, low-risk question?
 
-No — copyright status and training data provenance remain genuinely unsettled in multiple relevant jurisdictions, with active litigation involving major publishers and evolving guidance requiring ongoing legal monitoring rather than a one-time assessment.
+No - copyright status and training data provenance remain genuinely unsettled in multiple relevant jurisdictions, with active litigation involving major publishers and evolving guidance requiring ongoing legal monitoring rather than a one-time assessment.
 
 ### (Scenario: publisher deciding where to apply AI generation) Where does AI generation add the most genuine value in an editorial content pipeline?
 
@@ -108,8 +108,8 @@ Budget genuine fact-checking and editing cost alongside generation cost explicit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "(Scenario: publisher scoping an AI content pipeline) Can AI-generated content simply replace human reporting in a newsroom at similar quality?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — factual accuracy and original sourcing typically require genuine human authorship current generation doesn't fully replace." } },
-    { "@type": "Question", "name": "(Scenario: publisher projecting cost savings) Do AI content generation cost savings scale proportionally with the volume of content produced?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically — fact-checking cost doesn't shrink proportionally with generation volume, limiting realistic cost savings." } },
+    { "@type": "Question", "name": "(Scenario: publisher scoping an AI content pipeline) Can AI-generated content simply replace human reporting in a newsroom at similar quality?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably - factual accuracy and original sourcing typically require genuine human authorship current generation doesn't fully replace." } },
+    { "@type": "Question", "name": "(Scenario: publisher projecting cost savings) Do AI content generation cost savings scale proportionally with the volume of content produced?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically - fact-checking cost doesn't shrink proportionally with generation volume, limiting realistic cost savings." } },
     { "@type": "Question", "name": "(Scenario: publisher assuming legal questions are settled) Is the legal status of AI-generated editorial content and its training data a settled, low-risk question?", "acceptedAnswer": { "@type": "Answer", "text": "No, copyright and training data provenance remain unsettled with active litigation, requiring ongoing legal monitoring." } },
     { "@type": "Question", "name": "(Scenario: publisher deciding where to apply AI generation) Where does AI generation add the most genuine value in an editorial content pipeline?", "acceptedAnswer": { "@type": "Answer", "text": "Templated summaries and metadata generation within a human-edited framework align best with generation's strengths without compromising accuracy." } },
     { "@type": "Question", "name": "(Scenario: publisher budgeting a content pipeline) How should a newsroom budget for AI-assisted content production realistically?", "acceptedAnswer": { "@type": "Answer", "text": "Budget genuine fact-checking cost alongside generation cost explicitly, rather than projecting proportional volume-based savings." } }

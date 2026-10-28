@@ -32,7 +32,7 @@ De uitvoer van deze tools is doorgaans een single-page application. De server st
 
 Zoekmachines kunnen JavaScript uitvoeren, dus dit is niet fataal. Het is wel een handicap: het opbouwen wordt in een wachtrij gezet en vertraagd in plaats van direct gedaan, elke fout in uw script betekent dat de pagina helemaal geen inhoud heeft, en dezelfde pagina is trager voor elke bezoeker op een middenklasse telefoon.
 
-Het alternatief is dat de server echte HTML stuurt — ofwel bij de build gegenereerd voor pagina's die zelden veranderen, ofwel per verzoek opgebouwd. Marketingpagina's, blogartikelen en publieke overzichten horen allemaal in die categorie, en voor een klein product is statische generatie bij de build zowel de snelste als de eenvoudigste optie.
+Het alternatief is dat de server echte HTML stuurt - ofwel bij de build gegenereerd voor pagina's die zelden veranderen, ofwel per verzoek opgebouwd. Marketingpagina's, blogartikelen en publieke overzichten horen allemaal in die categorie, en voor een klein product is statische generatie bij de build zowel de snelste als de eenvoudigste optie.
 
 Dit is de beslissing die al het andere bepaalt, en degene die het meest waarschijnlijk later een herstructurering vereist als u haar laat liggen.
 
@@ -40,9 +40,9 @@ Dit is de beslissing die al het andere bepaalt, en degene die het meest waarschi
 
 Trek een duidelijke lijn tussen wat publiek is en wat achter een login zit.
 
-Alles wat publiek is — home, productpagina's, prijzen, blog, documentatie, publieke overzichten — wordt statisch gegenereerd, aan de rand gecachet, en is indexeerbaar.
+Alles wat publiek is - home, productpagina's, prijzen, blog, documentatie, publieke overzichten - wordt statisch gegenereerd, aan de rand gecachet, en is indexeerbaar.
 
-Alles wat privé is — dashboards, instellingen, klantdata, alles na het inloggen — wordt volledig uitgesloten van indexering, en er is geen reden waarom het snel moet zijn voor een crawler, omdat er geen crawler hoort te komen.
+Alles wat privé is - dashboards, instellingen, klantdata, alles na het inloggen - wordt volledig uitgesloten van indexering, en er is geen reden waarom het snel moet zijn voor een crawler, omdat er geen crawler hoort te komen.
 
 Twee manieren om de lijn te trekken. Een padvoorvoegsel, met de applicatie onder iets als `/app`, wat één domein houdt en het eenvoudigst is. Of een subdomein, met `app.uwproduct.nl` los van de marketingsite, wat het mogelijk maakt de twee onafhankelijk te bouwen en uit te rollen.
 
@@ -52,7 +52,7 @@ Padvoorvoegsels passen bij de meeste kleine producten. Subdomeinen verdienen hun
 
 Oprichters vertrouwen hiervoor op robots.txt, en dat doet het verkeerde.
 
-Een pad in robots.txt verbieden, vraagt crawlers het niet te bezoeken. Het voorkomt niet dat een pagina wordt geïndexeerd als er van elders naar wordt gelinkt — wat de slechtste uitkomst oplevert: een zoekresultaat met uw URL, geen beschrijving, en geen manier voor de crawler om te zien dat het er niet hoort te staan, omdat u hem zei niet te kijken.
+Een pad in robots.txt verbieden, vraagt crawlers het niet te bezoeken. Het voorkomt niet dat een pagina wordt geïndexeerd als er van elders naar wordt gelinkt - wat de slechtste uitkomst oplevert: een zoekresultaat met uw URL, geen beschrijving, en geen manier voor de crawler om te zien dat het er niet hoort te staan, omdat u hem zei niet te kijken.
 
 Het betrouwbare mechanisme is een noindex-instructie op de pagina's zelf, in de HTML of als header, die crawlers moeten ophalen om te zien. Dus: sta het crawlen van de routes van de applicatie toe, en zeg duidelijk dat ze niet moeten worden geïndexeerd. Combineer dat met authenticatie, wat betekent dat de meeste inhoud toch niet bereikbaar is.
 
@@ -80,7 +80,7 @@ De nuttigste afzonderlijke diagnose op dit terrein kost tien seconden en bijna n
 
 Vraag vanuit een terminal de URL op en kijk naar de HTML. Staan uw kop, uw lopende tekst en uw links in dat antwoord, dan kunnen zoekmachines de pagina direct lezen. Komt er een containerdiv en een scripttag terug, dan hangt alles af van een opbouw die vertraagd kan zijn of kan mislukken.
 
-Doe hetzelfde voor drie of vier paginatypes — home, een artikel, een functiepagina, een prijspagina — omdat ze in een gedeeltelijk gemigreerde site vaak verschillen.
+Doe hetzelfde voor drie of vier paginatypes - home, een artikel, een functiepagina, een prijspagina - omdat ze in een gedeeltelijk gemigreerde site vaak verschillen.
 
 Twee verwante controles die dezelfde tien seconden waard zijn. Bevestig dat uw interne links echte ankers met href-attributen zijn in plaats van klikhandlers op divs, omdat een crawler de eerste volgt en de tweede niet kan zien. En bevestig dat de responsstatus is wat u verwacht: een pagina die 200 teruggeeft voor een URL die niet bestaat, betekent dat elke verkeerd getypte link een geïndexeerde lege pagina wordt, wat een verrassend veelvoorkomende configuratie is in single-page applications waar de server voor alles hetzelfde document teruggeeft.
 
@@ -90,9 +90,9 @@ Deze drie controles vertellen u meer over of een site kan ranken dan welke audit
 
 Een single-page application heeft doorgaans één titel, één keer in het document gedefinieerd, en die blijft op elke route hetzelfde. Elke pagina in de zoekresultaten draagt dan dezelfde tekst, wat zowel onbehulpzaam is voor een lezer die tussen resultaten kiest als een gemiste kans op elke pagina die u publiceert.
 
-Elke pagina heeft een eigen titel en beschrijving nodig, geschreven voor die pagina. Een titel is ongeveer zestig tekens en moet het specifieke ding noemen plus, waar het past, het product of bedrijf. Een beschrijving is ongeveer honderdzestig tekens en is een advertentie in plaats van een samenvatting — haar taak is iemand te laten klikken, niet de kop te herhalen.
+Elke pagina heeft een eigen titel en beschrijving nodig, geschreven voor die pagina. Een titel is ongeveer zestig tekens en moet het specifieke ding noemen plus, waar het past, het product of bedrijf. Een beschrijving is ongeveer honderdzestig tekens en is een advertentie in plaats van een samenvatting - haar taak is iemand te laten klikken, niet de kop te herhalen.
 
-Drie gewoontes maken dit beheersbaar in plaats van saai. Stel ze in waar de inhoud van de pagina wordt gedefinieerd, zodat het schrijven van een nieuw artikel betekent dat u tegelijk de titel en beschrijving schrijft. Genereer ze uit de inhoud voor pagina's die uit data worden opgebouwd, met een patroon dat iets specifieks oplevert in plaats van een sjabloon met een ingevulde variabele. En controleer ze af en toe in bulk — een lijst met de titel en beschrijving van elke pagina, in één keer gelezen, maakt duplicaten en weglatingen duidelijk op een manier die het afzonderlijk bekijken van pagina's nooit doet.
+Drie gewoontes maken dit beheersbaar in plaats van saai. Stel ze in waar de inhoud van de pagina wordt gedefinieerd, zodat het schrijven van een nieuw artikel betekent dat u tegelijk de titel en beschrijving schrijft. Genereer ze uit de inhoud voor pagina's die uit data worden opgebouwd, met een patroon dat iets specifieks oplevert in plaats van een sjabloon met een ingevulde variabele. En controleer ze af en toe in bulk - een lijst met de titel en beschrijving van elke pagina, in één keer gelezen, maakt duplicaten en weglatingen duidelijk op een manier die het afzonderlijk bekijken van pagina's nooit doet.
 
 Hetzelfde geldt voor de preview die wordt getoond wanneer een link in een bericht of een social post wordt gedeeld. Een gegenereerde site heeft meestal één afbeelding en één beschrijving voor het hele domein, zodat elk gedeeld artikel er hetzelfde uitziet.
 
@@ -100,7 +100,7 @@ Hetzelfde geldt voor de preview die wordt getoond wanneer een link in een berich
 
 Voor een bestaand product kost dit doorgaans twee tot drie dagen: publieke pagina's omgezet naar statische generatie of serverrendering met echte HTML in het antwoord, de publieke en private helften gescheiden via padvoorvoegsel of subdomein, de applicatie uitgesloten van indexering met een noindex-instructie in plaats van alleen robots.txt, preview-deployments beschermd en uitgesloten, één canonieke URL per pagina met permanente doorverwijzingen vanaf elke variatie, een sitemap gegenereerd uit de werkelijke routes en ingediend, gestructureerde data op de pagina's waar die van toepassing is, en het publieke oppervlak bekeken op de pagina's die een koper zou zoeken en nu niet kan vinden.
 
-LaunchStudio doet dit als onderdeel van het vindbaar maken van een door AI gebouwd product, vaak het eerste groeiwerk dat een gelanceerd product nodig heeft. Daarachter staat Manifera — elf jaar, 160+ projecten, met Europees klantcontact vanaf de Herengracht 420 in Amsterdam.
+LaunchStudio doet dit als onderdeel van het vindbaar maken van een door AI gebouwd product, vaak het eerste groeiwerk dat een gelanceerd product nodig heeft. Daarachter staat Manifera - elf jaar, 160+ projecten, met Europees klantcontact vanaf de Herengracht 420 in Amsterdam.
 
 [Vraag ons wat een zoekmachine nu op uw homepage ziet](https://launchstudio.eu/nl/#contact). Soms is dat niets.
 
@@ -112,16 +112,16 @@ Jasmijn Kolthof bouwde Voorraadslim in Lovable: voorraadbeheer voor zelfstandige
 
 Ze had in een jaar elf artikelen over voorraadbeheer geschreven, en geen ervan verscheen voor wat dan ook in de zoekresultaten. Haar homepage rankte niet eens op haar eigen productnaam.
 
-De site was een single-page application. De HTML die voor elke URL werd geserveerd, was identiek — een lege container en een script — met de inhoud in de browser opgebouwd. Zoekmachines hadden de homepage geïndexeerd met de titel "Voorraadslim" en zonder beschrijving, en verder niets, omdat de interne links volledig in JavaScript werden afgehandeld, zonder echte href-attributen. Daarnaast waren 40 routes van de applicatie indexeerbaar en waren er vier geïndexeerd als lege pagina's, een ervan met de titel "Loading...". Dezelfde inhoud was bereikbaar via vier URL-variaties, en drie preview-deployments waren volledig geïndexeerd als duplicaten van de hele site.
+De site was een single-page application. De HTML die voor elke URL werd geserveerd, was identiek - een lege container en een script - met de inhoud in de browser opgebouwd. Zoekmachines hadden de homepage geïndexeerd met de titel "Voorraadslim" en zonder beschrijving, en verder niets, omdat de interne links volledig in JavaScript werden afgehandeld, zonder echte href-attributen. Daarnaast waren 40 routes van de applicatie indexeerbaar en waren er vier geïndexeerd als lege pagina's, een ervan met de titel "Loading...". Dezelfde inhoud was bereikbaar via vier URL-variaties, en drie preview-deployments waren volledig geïndexeerd als duplicaten van de hele site.
 
-Vier werkdagen: publieke pagina's omgezet naar statische generatie, zodat de server volledige HTML teruggeeft, met de artikelen, functiepagina's en prijzen bij de deploy gebouwd; interne links herschreven als echte ankers met href-attributen; de applicatie verplaatst onder een `/app`-voorvoegsel en uitgesloten met een noindex-instructie, met robots.txt aangepast zodat crawlen is toegestaan en de instructie kan worden gezien; preview-deployments achter toegangsbeveiliging gezet en uitgesloten; één canonieke URL-vorm gekozen met permanente doorverwijzingen vanaf de www-, slash- en HTTP-varianten, en een canonieke link op elke pagina; een sitemap gegenereerd uit de werkelijke routelijst en ingediend; gestructureerde data voor artikelen toegevoegd; de vier geïndexeerde applicatiepagina's via de zoekconsole uit de index verwijderd; en twee ontbrekende pagina's geschreven — een prijspagina met echte prijzen, die nooit had bestaan, en een over-pagina die het bedrijf identificeert.
+Vier werkdagen: publieke pagina's omgezet naar statische generatie, zodat de server volledige HTML teruggeeft, met de artikelen, functiepagina's en prijzen bij de deploy gebouwd; interne links herschreven als echte ankers met href-attributen; de applicatie verplaatst onder een `/app`-voorvoegsel en uitgesloten met een noindex-instructie, met robots.txt aangepast zodat crawlen is toegestaan en de instructie kan worden gezien; preview-deployments achter toegangsbeveiliging gezet en uitgesloten; één canonieke URL-vorm gekozen met permanente doorverwijzingen vanaf de www-, slash- en HTTP-varianten, en een canonieke link op elke pagina; een sitemap gegenereerd uit de werkelijke routelijst en ingediend; gestructureerde data voor artikelen toegevoegd; de vier geïndexeerde applicatiepagina's via de zoekconsole uit de index verwijderd; en twee ontbrekende pagina's geschreven - een prijspagina met echte prijzen, die nooit had bestaan, en een over-pagina die het bedrijf identificeert.
 
-**Resultaat:** binnen acht weken waren negen van de elf artikelen geïndexeerd en rankten ze, en gingen de organische bezoeken van 40 per maand naar 610. Twee van de artikelen leveren nu meer proefaanmeldingen op dan de Facebookgroep. Jasmijns opmerking is dat ze de inhoud een jaar eerder had geschreven en dat er niets mis mee was — het kon gewoon niet worden gelezen.
+**Resultaat:** binnen acht weken waren negen van de elf artikelen geïndexeerd en rankten ze, en gingen de organische bezoeken van 40 per maand naar 610. Twee van de artikelen leveren nu meer proefaanmeldingen op dan de Facebookgroep. Jasmijns opmerking is dat ze de inhoud een jaar eerder had geschreven en dat er niets mis mee was - het kon gewoon niet worden gelezen.
 
 > *"Ik dacht dat mijn artikelen niet goed genoeg waren. Ze waren nooit gezien. De server stuurde iedereen een lege pagina, en alleen browsers zetten de woorden erin."*
-> — **Jasmijn Kolthof, Oprichter, Voorraadslim (Zutphen)**
+> - **Jasmijn Kolthof, Oprichter, Voorraadslim (Zutphen)**
 
-**Kosten & Doorlooptijd:** €3.500 (statische generatie voor publieke pagina's, echte interne links, scheiding van de applicatie en noindex, previewbeveiliging, canonieke URL's en doorverwijzingen, sitemap, gestructureerde data, opschonen van de index, ontbrekende pagina's) — afgerond in 4 werkdagen.
+**Kosten & Doorlooptijd:** €3.500 (statische generatie voor publieke pagina's, echte interne links, scheiding van de applicatie en noindex, previewbeveiliging, canonieke URL's en doorverwijzingen, sitemap, gestructureerde data, opschonen van de index, ontbrekende pagina's) - afgerond in 4 werkdagen.
 
 ## Veelgestelde vragen
 
@@ -143,7 +143,7 @@ Slashes aan het eind, www, HTTP en campagneparameters maken elk een variatie. Ki
 
 ### Welke publieke pagina's moeten minimaal bestaan?
 
-Een homepage die duidelijk zegt wat het product doet, een pagina per belangrijke toepassing, echte prijzen, een over-pagina die het bedrijf identificeert, en contactgegevens — daarna artikelen die vragen van vóór de aankoop beantwoorden.
+Een homepage die duidelijk zegt wat het product doet, een pagina per belangrijke toepassing, echte prijzen, een over-pagina die het bedrijf identificeert, en contactgegevens - daarna artikelen die vragen van vóór de aankoop beantwoorden.
 
 <script type="application/ld+json">
 {
@@ -171,7 +171,7 @@ Een homepage die duidelijk zegt wat het product doet, een pagina per belangrijke
       "name": "Houdt robots.txt een app uit de zoekresultaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — het voorkomt crawlen, niet het indexeren van gelinkte URL's. Gebruik een noindex-instructie die de crawler werkelijk kan ophalen."
+        "text": "Nee - het voorkomt crawlen, niet het indexeren van gelinkte URL's. Gebruik een noindex-instructie die de crawler werkelijk kan ophalen."
       }
     },
     {

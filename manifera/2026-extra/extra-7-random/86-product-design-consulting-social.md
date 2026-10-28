@@ -10,7 +10,7 @@ Design brought in after requirements are locked can only decorate a decision tha
 ✅ **Divergent Concept Validation:** Multiple directions prototype-tested before any full build begins.
 ✅ **Strategic Coherence:** A defined product vision that gives every feature decision a consistent frame.
 
-Built exactly to spec, barely touched by customers — because the spec was never tested. 🧭
+Built exactly to spec, barely touched by customers - because the spec was never tested. 🧭
 
 👉 Read our full deep dive on product design consulting: https://www.manifera.com/blog/product-design-consulting
 

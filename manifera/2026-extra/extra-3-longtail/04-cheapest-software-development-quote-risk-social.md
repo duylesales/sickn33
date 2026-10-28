@@ -6,9 +6,9 @@
 ❌ **The Cheap Vendor Trap:** Selecting the lowest hourly rate consistently costs 2x to 3x more after accounting for bug fixes, rework, and delayed time-to-market.
 
 **The Manifera Solution:**
-✅ **Line-item specificity:** — design, build, QA, and post-launch broken out separately, not bundled into one figure.
-✅ **A discovery phase before the number:** — a vendor that quotes without asking questions first is guessing, regardless of how confident the number sounds.
-✅ **References that match your project's complexity:** — not just any past client, but one who built something with a similar integration count and compliance profile.
+✅ **Line-item specificity:** - design, build, QA, and post-launch broken out separately, not bundled into one figure.
+✅ **A discovery phase before the number:** - a vendor that quotes without asking questions first is guessing, regardless of how confident the number sounds.
+✅ **References that match your project's complexity:** - not just any past client, but one who built something with a similar integration count and compliance profile.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

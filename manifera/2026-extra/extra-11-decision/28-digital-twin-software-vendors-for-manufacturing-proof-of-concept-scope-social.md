@@ -1,9 +1,9 @@
-"Build us a digital twin of the plant" isn't a testable proposition — it's how a POC quietly dies over eight months of scope arguments. 🏭🔁
+"Build us a digital twin of the plant" isn't a testable proposition - it's how a POC quietly dies over eight months of scope arguments. 🏭🔁
 
 **The Pain Points:**
-❌ **Undefined Twin Type:** Product, process, and asset twins are structurally different — and vendors specialize unevenly across them, even when the pitch claims equal strength everywhere.
+❌ **Undefined Twin Type:** Product, process, and asset twins are structurally different - and vendors specialize unevenly across them, even when the pitch claims equal strength everywhere.
 ❌ **No Held-Out Validation:** A twin tested only on the data it was calibrated against will look far more accurate than it performs on genuinely new conditions.
-❌ **Licensing Cliffs at Scale:** POC pricing rarely extrapolates linearly — some per-asset models become prohibitive the moment you go from one line to plant-wide.
+❌ **Licensing Cliffs at Scale:** POC pricing rarely extrapolates linearly - some per-asset models become prohibitive the moment you go from one line to plant-wide.
 
 **The Manifera Solution:**
 ✅ **Twin Type Defined First:** We scope the POC around a specific process, asset, or product twin before any vendor conversation starts.

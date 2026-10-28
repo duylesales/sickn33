@@ -1,19 +1,19 @@
 🚨 One agency quoted €65,000 to "properly rebuild" what 11 subcontractors already loved. LaunchStudio quoted €3,400 for what he actually needed. 💸
 
-"Why does one company charge €800 and another €80,000 for 'the same thing'?" Here's the real answer — it's not a scam, it's a different SCOPE: 🧠
+"Why does one company charge €800 and another €80,000 for 'the same thing'?" Here's the real answer - it's not a scam, it's a different SCOPE: 🧠
 
 €80,000+ traditional agency = starts from ZERO: discovery, UX design, frontend build, backend, everything
 €800-€7,500 LaunchStudio = starts from your ALREADY-BUILT AI prototype, last-mile only
 
 The comparison table: 📊
-✅ Product discovery — Agency: 2-6 weeks | LaunchStudio: already done (you did it)
-✅ Frontend — Agency: rebuilt from scratch | LaunchStudio: preserved exactly
-✅ Security, payments, hosting — BOTH include this
-✅ Timeline — Agency: 3-12 months | LaunchStudio: 1-3 weeks
+✅ Product discovery - Agency: 2-6 weeks | LaunchStudio: already done (you did it)
+✅ Frontend - Agency: rebuilt from scratch | LaunchStudio: preserved exactly
+✅ Security, payments, hosting - BOTH include this
+✅ Timeline - Agency: 3-12 months | LaunchStudio: 1-3 weeks
 
-There's also a real middle tier (€15K-€40K) for prototypes that aren't quite last-mile-ready — the 1-hour test: could an engineer look at your build today and name exactly what's broken? If not, you're not in the €800-€7,500 tier yet. 🔍
+There's also a real middle tier (€15K-€40K) for prototypes that aren't quite last-mile-ready - the 1-hour test: could an engineer look at your build today and name exactly what's broken? If not, you're not in the €800-€7,500 tier yet. 🔍
 
-Same quality. Same Manifera engineering standard trusted by Vodafone and TNO. Just a fraction of the scope — and the price. 🛡️
+Same quality. Same Manifera engineering standard trusted by Vodafone and TNO. Just a fraction of the scope - and the price. 🛡️
 
 His result: launched at 5% of the agency quote, zero redesign. 🚀
 

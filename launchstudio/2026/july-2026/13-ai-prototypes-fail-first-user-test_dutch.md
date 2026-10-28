@@ -130,7 +130,7 @@ Chloe werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 
 **Resultaat:** Chloe heeft met succes haar eerste cohort van 150 studenten ingewerkt en er zijn geen crashes gemeld.
 
-**Kosten en tijdlijn:** € 1.800 (lanceringsklaar pakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en tijdlijn:** € 1.800 (lanceringsklaar pakket) - productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
 

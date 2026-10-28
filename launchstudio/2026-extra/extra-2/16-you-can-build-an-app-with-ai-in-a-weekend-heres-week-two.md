@@ -31,33 +31,33 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Week one is the fun part: you build an app with AI, watch it come together faster than you thought possible, and by Sunday night you have something real to show people. Week two is quieter and less visible, and it's where most of the actual risk in a weekend build tends to live — starting with a simple question almost nobody asks during the excitement of week one: where exactly did your API keys end up?
+Week one is the fun part: you build an app with AI, watch it come together faster than you thought possible, and by Sunday night you have something real to show people. Week two is quieter and less visible, and it's where most of the actual risk in a weekend build tends to live - starting with a simple question almost nobody asks during the excitement of week one: where exactly did your API keys end up?
 
 ## Checklist Item One: Search Your Repository for Exposed Keys
 
-A weekend of fast iteration often means copying working code between files, committing frequently without much scrutiny, and occasionally pasting a key directly into a config file to get something working quickly, with every intention of moving it somewhere safer "later." Checking whether that "later" ever actually happened — searching your own repository history for anything resembling an API key or credential — is a five-minute check with outsized value.
+A weekend of fast iteration often means copying working code between files, committing frequently without much scrutiny, and occasionally pasting a key directly into a config file to get something working quickly, with every intention of moving it somewhere safer "later." Checking whether that "later" ever actually happened - searching your own repository history for anything resembling an API key or credential - is a five-minute check with outsized value.
 
 ## Checklist Item Two: Confirm Your Repository's Visibility Setting
 
-A surprising number of founder-built projects sit in a public GitHub repository by default, either because the founder didn't think to change it or didn't realize the setting existed. A public repository means anything committed to it — including a key missed during the search above — is visible to literally anyone, indexed by automated scanners that specifically search public repositories for exactly this pattern.
+A surprising number of founder-built projects sit in a public GitHub repository by default, either because the founder didn't think to change it or didn't realize the setting existed. A public repository means anything committed to it - including a key missed during the search above - is visible to literally anyone, indexed by automated scanners that specifically search public repositories for exactly this pattern.
 
 ## Checklist Item Three: Rotate Anything That Was Ever Exposed, Even Briefly
 
-If a key was ever committed to a public repository, even if it was later removed, the safest assumption is that it was already seen — git history preserves old commits, and automated scanners work fast enough that "it was only public for an hour" isn't a meaningful safety margin. Rotating (generating a new key and revoking the old one) is the only way to be certain an old exposure isn't still usable.
+If a key was ever committed to a public repository, even if it was later removed, the safest assumption is that it was already seen - git history preserves old commits, and automated scanners work fast enough that "it was only public for an hour" isn't a meaningful safety margin. Rotating (generating a new key and revoking the old one) is the only way to be certain an old exposure isn't still usable.
 
 ## Checklist Item Four: Move Remaining Secrets Into Proper Environment Configuration
 
-Beyond the immediate cleanup, secrets belong in environment variables or a dedicated secrets manager, never directly in committed code — this is a permanent habit change, not a one-time fix, since the same convenient shortcut that caused the first exposure is just as available during every future feature added afterward.
+Beyond the immediate cleanup, secrets belong in environment variables or a dedicated secrets manager, never directly in committed code - this is a permanent habit change, not a one-time fix, since the same convenient shortcut that caused the first exposure is just as available during every future feature added afterward.
 
-A dedicated secrets manager (such as Doppler, 1Password's developer tools, or a cloud provider's built-in secrets service) adds meaningful protection beyond a plain `.env` file, since it typically provides access logging, easy rotation, and per-environment separation between development, staging, and production credentials — none of which a flat environment file gives you by default. For a solo founder, even the discipline of a properly `.gitignore`-excluded `.env` file, consistently used for every new integration, closes most of the practical risk without requiring a dedicated tool.
+A dedicated secrets manager (such as Doppler, 1Password's developer tools, or a cloud provider's built-in secrets service) adds meaningful protection beyond a plain `.env` file, since it typically provides access logging, easy rotation, and per-environment separation between development, staging, and production credentials - none of which a flat environment file gives you by default. For a solo founder, even the discipline of a properly `.gitignore`-excluded `.env` file, consistently used for every new integration, closes most of the practical risk without requiring a dedicated tool.
 
 ## Checklist Item Five: Get a Second Set of Eyes Before Real Users Arrive
 
-None of the above is exotic or hard to understand once pointed out, which is exactly the problem — a founder deep in their own weekend build has no natural prompt to stop and specifically check for it, which is precisely the gap a second, independent review closes. [LaunchStudio](https://launchstudio.eu/en/) runs exactly this kind of secrets and repository audit as a standard first step in its Launch Ready package, backed by Manifera's 11+ years of production engineering experience.
+None of the above is exotic or hard to understand once pointed out, which is exactly the problem - a founder deep in their own weekend build has no natural prompt to stop and specifically check for it, which is precisely the gap a second, independent review closes. [LaunchStudio](https://launchstudio.eu/en/) runs exactly this kind of secrets and repository audit as a standard first step in its Launch Ready package, backed by Manifera's 11+ years of production engineering experience.
 
 Manifera's secrets and configuration audits are performed by the engineering team based at the Ho Chi Minh City development center on Pho Quang Street, with client conversations handled through the Amsterdam headquarters at Herengracht 420.
 
-[Let's get moving — prototype to production in weeks, not months](https://launchstudio.eu/en/#contact).
+[Let's get moving - prototype to production in weeks, not months](https://launchstudio.eu/en/#contact).
 
 ## Beyond API Keys: A Fuller Pre-Launch Secrets Checklist
 
@@ -65,26 +65,26 @@ API keys get the most attention because they're the most obviously damaging when
 
 **Look beyond `.env` files for these common leak points**
 
-- **Webhook signing secrets** — used to verify that an incoming webhook (from Stripe, GitHub, or another service) genuinely came from that provider; if this leaks, someone could send forged webhook events your application would treat as legitimate
-- **OAuth app client secrets** — the credential behind "Sign in with Google" or similar integrations, separate from any user-facing API key
-- **Database connection strings** — these often contain a username and password directly in the URL itself, and get pasted into scripts, notebooks, or documentation far more casually than a standalone API key
-- **CI/CD deployment tokens** — credentials stored in a build pipeline configuration, sometimes visible in build logs even when the underlying secret itself is properly stored elsewhere
+- **Webhook signing secrets** - used to verify that an incoming webhook (from Stripe, GitHub, or another service) genuinely came from that provider; if this leaks, someone could send forged webhook events your application would treat as legitimate
+- **OAuth app client secrets** - the credential behind "Sign in with Google" or similar integrations, separate from any user-facing API key
+- **Database connection strings** - these often contain a username and password directly in the URL itself, and get pasted into scripts, notebooks, or documentation far more casually than a standalone API key
+- **CI/CD deployment tokens** - credentials stored in a build pipeline configuration, sometimes visible in build logs even when the underlying secret itself is properly stored elsewhere
 
 **Check documentation and chat history too, not just code**
 
-A surprising number of exposed secrets never made it into a git commit at all — they were pasted into a shared Notion doc, a Slack message to a collaborator, or an AI coding tool's chat history that got shared or made public later. Anywhere a key was ever typed or pasted, even outside the codebase itself, is worth a moment's thought before launch.
+A surprising number of exposed secrets never made it into a git commit at all - they were pasted into a shared Notion doc, a Slack message to a collaborator, or an AI coding tool's chat history that got shared or made public later. Anywhere a key was ever typed or pasted, even outside the codebase itself, is worth a moment's thought before launch.
 
 **Understand what "rotate" actually means for each secret type**
 
-Rotating an API key is usually straightforward — generate a new one, update where it's used, revoke the old one. Rotating a webhook secret requires updating the configuration on both your side and the provider's side simultaneously, or webhook delivery breaks temporarily. Rotating a database credential, if the database itself has active connections using the old credential, requires more care to avoid an outage during the swap. Knowing this ahead of time prevents rotation itself from becoming a second, self-inflicted incident.
+Rotating an API key is usually straightforward - generate a new one, update where it's used, revoke the old one. Rotating a webhook secret requires updating the configuration on both your side and the provider's side simultaneously, or webhook delivery breaks temporarily. Rotating a database credential, if the database itself has active connections using the old credential, requires more care to avoid an outage during the swap. Knowing this ahead of time prevents rotation itself from becoming a second, self-inflicted incident.
 
 **Set a recurring reminder, not a one-time check**
 
-Treating a secrets audit as a single pre-launch task misses secrets added months later, when a founder connects a new third-party service under time pressure and pastes the resulting key directly into a config file "just to test it quickly." A recurring quarterly check — even a simple repeated repository search — catches these before they accumulate into the same kind of long-unnoticed exposure the original audit was meant to prevent.
+Treating a secrets audit as a single pre-launch task misses secrets added months later, when a founder connects a new third-party service under time pressure and pastes the resulting key directly into a config file "just to test it quickly." A recurring quarterly check - even a simple repeated repository search - catches these before they accumulate into the same kind of long-unnoticed exposure the original audit was meant to prevent.
 
 **Keep a running inventory of every service your product depends on**
 
-A short, maintained list of every third-party service integrated into a product — what it's used for, where its credentials live, and when they were last rotated — turns a quarterly audit from "try to remember everything we've connected" into a five-minute checklist walk-through. This is especially valuable once a product has more than two or three integrations, since that's roughly the point where relying on memory alone starts missing things.
+A short, maintained list of every third-party service integrated into a product - what it's used for, where its credentials live, and when they were last rotated - turns a quarterly audit from "try to remember everything we've connected" into a five-minute checklist walk-through. This is especially valuable once a product has more than two or three integrations, since that's roughly the point where relying on memory alone starts missing things.
 
 ## Real example
 
@@ -97,9 +97,9 @@ A month later, preparing for a small local launch, Noa mentioned the project to 
 **Result:** LaunchStudio rotated the exposed key immediately, migrated all remaining secrets to proper environment configuration, and set the repository to private, closing the exposure with no changes to TrouwPlan's actual features.
 
 > *"A month of that key just sitting there in a public repo, and I found out purely because a friend happened to look. That's not a system I want to rely on going forward."*
-> — **Noa Bergsma, Founder, TrouwPlan (Middelburg)**
+> - **Noa Bergsma, Founder, TrouwPlan (Middelburg)**
 
-**Cost & Timeline:** €1,200 (secrets audit, key rotation, and repository hardening) — completed in 4 business days.
+**Cost & Timeline:** €1,200 (secrets audit, key rotation, and repository hardening) - completed in 4 business days.
 
 ---
 
@@ -107,23 +107,23 @@ A month later, preparing for a small local launch, Noa mentioned the project to 
 
 ### Would a security researcher consider a month of public exposure a serious window, or a minor one?
 
-Serious — automated scanners that specifically search public repositories for exposed credentials typically operate on a timescale of minutes to hours, not weeks, so a month of exposure should be treated as though the key was definitely found, not merely possibly found.
+Serious - automated scanners that specifically search public repositories for exposed credentials typically operate on a timescale of minutes to hours, not weeks, so a month of exposure should be treated as though the key was definitely found, not merely possibly found.
 
 ### Is this specifically a GitHub problem, or does it apply to other code-hosting platforms too?
 
-It applies universally to any code-hosting platform with a public visibility option — GitLab, Bitbucket, and others all face the identical underlying risk, since the vulnerability is about what's committed and visible, not which specific platform hosts it.
+It applies universally to any code-hosting platform with a public visibility option - GitLab, Bitbucket, and others all face the identical underlying risk, since the vulnerability is about what's committed and visible, not which specific platform hosts it.
 
-### Manifera works with clients with far more sensitive data exposure risk than a wedding-planning app — does that experience change how a case like Noa's gets handled?
+### Manifera works with clients with far more sensitive data exposure risk than a wedding-planning app - does that experience change how a case like Noa's gets handled?
 
-The specific handling doesn't change, only the stakes framing does — the same rotate-and-migrate process applies whether the exposed key belongs to a wedding-planning tool or an enterprise client's production system, since the technical remediation itself isn't scaled by company size.
+The specific handling doesn't change, only the stakes framing does - the same rotate-and-migrate process applies whether the exposed key belongs to a wedding-planning tool or an enterprise client's production system, since the technical remediation itself isn't scaled by company size.
 
-### Herre Roelevink has spoken about founders needing security expertise they didn't previously have access to — does a case like this fit that description?
+### Herre Roelevink has spoken about founders needing security expertise they didn't previously have access to - does a case like this fit that description?
 
-Precisely — a public repository visibility setting is the kind of default a founder without a security background has no particular reason to question, and that exact gap between what founders instinctively check and what a trained eye instinctively checks is the space Roelevink has described LaunchStudio as filling.
+Precisely - a public repository visibility setting is the kind of default a founder without a security background has no particular reason to question, and that exact gap between what founders instinctively check and what a trained eye instinctively checks is the space Roelevink has described LaunchStudio as filling.
 
 ### If a founder catches this themselves before launch, is a professional audit still worth the cost?
 
-If a founder can confidently confirm every key was found, rotated, and never appeared anywhere else in git history, a full audit may add limited additional value — though confirming that confidently, across an entire repository history, is exactly the kind of systematic check that's easy to do partially and believe was done completely.
+If a founder can confidently confirm every key was found, rotated, and never appeared anywhere else in git history, a full audit may add limited additional value - though confirming that confidently, across an entire repository history, is exactly the kind of systematic check that's easy to do partially and believe was done completely.
 
 <script type="application/ld+json">
 {

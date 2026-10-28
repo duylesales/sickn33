@@ -42,7 +42,7 @@ Banks and insurers operate under supervisory expectations about how models used 
 
 **Independent validation is a separate function.** Someone whose job is not to build models will assess yours: the data, the assumptions, the methodology, the testing, the limitations. This is adversarial by design and it is not personal. Engineers who experience it as an attack struggle; engineers who use it to find their own weaknesses improve faster than they would alone.
 
-**Documentation is a deliverable.** Not a README — a document describing what the model does, what data it uses, what assumptions it makes, how it was tested, where it should not be used, and what monitoring will detect degradation. Writing this well is a genuine professional skill and a differentiator in this sector.
+**Documentation is a deliverable.** Not a README - a document describing what the model does, what data it uses, what assumptions it makes, how it was tested, where it should not be used, and what monitoring will detect degradation. Writing this well is a genuine professional skill and a differentiator in this sector.
 
 **Explainability may be a requirement rather than a preference.** Where a model affects a customer, the decision may need to be explicable to that customer and to a supervisor. This constrains methods and is a design input from the start rather than an afterthought.
 
@@ -90,7 +90,7 @@ And English is the working language in most large financial institutions and nea
 
 This deserves its own treatment because it has moved from a discussion topic to an operational requirement faster than most candidates realise, and it is one of the more intellectually substantial parts of the sector.
 
-The situation is this. A model that determines who gets credit, what an insurance policy costs, or whose claim is investigated affects people materially. If its behaviour differs systematically across groups defined by characteristics that are legally protected — or by proxies for them — that is a problem with legal and reputational consequences, whether or not anyone intended it.
+The situation is this. A model that determines who gets credit, what an insurance policy costs, or whose claim is investigated affects people materially. If its behaviour differs systematically across groups defined by characteristics that are legally protected - or by proxies for them - that is a problem with legal and reputational consequences, whether or not anyone intended it.
 
 The difficulty is that the technical problem is genuinely hard and partly unresolved.
 
@@ -112,7 +112,7 @@ In this sector, your model documentation is read by people who did not build it,
 
 The consequence is that the quality of your writing materially affects the outcome of your technical work. A well-reasoned model documented poorly gets challenged, delayed or rejected. An adequately reasoned model documented clearly progresses. This feels unjust to engineers who believe the work should speak for itself, but it is not arbitrary: an institution that cannot understand a model cannot responsibly rely on it.
 
-The practical implication is that learning to write a clear technical argument is among the highest-return investments available in financial services. It is also portable — the same skill determines whether you are effective in consultancy, public administration, regulated healthcare and any environment where your conclusions must survive scrutiny by people who were not present when you reached them.
+The practical implication is that learning to write a clear technical argument is among the highest-return investments available in financial services. It is also portable - the same skill determines whether you are effective in consultancy, public administration, regulated healthcare and any environment where your conclusions must survive scrutiny by people who were not present when you reached them.
 
 Candidates who can point to a document they wrote that persuaded someone of something technical have a stronger signal than candidates who can point to a model with good metrics.
 
@@ -122,11 +122,11 @@ Financial services offers a specific bargain, and it is worth being explicit abo
 
 **What you gain.** Compensation is among the highest in the Dutch market outside semiconductor. Data is abundant, well-structured and genuinely valuable. You learn model governance, which is becoming a required competence across sectors as regulation of automated decision-making spreads. Job security is reasonable and the sector does not disappear.
 
-**What you give up.** Iteration speed is slower than in product companies, sometimes much slower. Methodological freedom is constrained, particularly in regulated functions. The work can feel distant from anything tangible — you may spend years improving a risk model without ever meeting a customer. And parts of the sector attract people motivated primarily by compensation, which affects culture in ways some people find unpleasant.
+**What you give up.** Iteration speed is slower than in product companies, sometimes much slower. Methodological freedom is constrained, particularly in regulated functions. The work can feel distant from anything tangible - you may spend years improving a risk model without ever meeting a customer. And parts of the sector attract people motivated primarily by compensation, which affects culture in ways some people find unpleasant.
 
 **The most common failure mode** is a candidate joining a regulated modelling function expecting the pace and freedom of a technology company, becoming frustrated within a year, and leaving with a sense that the sector wasted their time. That is avoidable by understanding the bargain in advance.
 
-**The most common pleasant surprise** is a candidate who expected finance to be intellectually dull and discovers that working within genuine constraints — explainability, fairness, regulatory acceptability — is harder and more interesting than unconstrained optimisation. This happens often enough to be worth mentioning.
+**The most common pleasant surprise** is a candidate who expected finance to be intellectually dull and discovers that working within genuine constraints - explainability, fairness, regulatory acceptability - is harder and more interesting than unconstrained optimisation. This happens often enough to be worth mentioning.
 
 ## Where to Position Yourself If You Are Entering
 
@@ -151,14 +151,14 @@ For a candidate from a general machine learning background, fraud or claims proc
 
 ## Where to Start
 
-If you are entering from a technology background, target fraud and financial crime or claims document processing rather than credit risk — the skills transfer more directly and you still learn governance practice. Read a public model risk management guideline before interviewing; understanding what validation will ask of you changes how you describe your work.
+If you are entering from a technology background, target fraud and financial crime or claims document processing rather than credit risk - the skills transfer more directly and you still learn governance practice. Read a public model risk management guideline before interviewing; understanding what validation will ask of you changes how you describe your work.
 
 Browse current finance, insurance, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate from a technology company) What surprises people most about finance?
-That a model is a governed artefact rather than a piece of code — it has an owner, a documented purpose, independent validation, specified monitoring and often explainability requirements. This shapes the work more than the techniques do.
+That a model is a governed artefact rather than a piece of code - it has an owner, a documented purpose, independent validation, specified monitoring and often explainability requirements. This shapes the work more than the techniques do.
 
 ### (Scenario: candidate dreading validation) How should I handle independent model validation?
 As a resource rather than an attack. It is adversarial by design, and engineers who use it to find their own weaknesses improve faster than they would alone. Experiencing it as personal is the most common cultural failure here.

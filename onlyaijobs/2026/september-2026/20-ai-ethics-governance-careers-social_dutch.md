@@ -1,4 +1,4 @@
-AI-governance is de lastigste categorie om op te zoeken in Nederland. ⚖️ Niet omdat er weinig rollen zijn — omdat niemand ze hetzelfde noemt.
+AI-governance is de lastigste categorie om op te zoeken in Nederland. ⚖️ Niet omdat er weinig rollen zijn - omdat niemand ze hetzelfde noemt.
 
 "AI Ethics Officer". "Responsible AI Lead". "AI Compliance Manager". Of gewoon ingevouwen in een bestaande FG- of juristenrol. Er is nog geen conventie zoals bij "Data Scientist". Zoek op concept, niet op titel.
 

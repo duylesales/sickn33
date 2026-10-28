@@ -1,4 +1,4 @@
-🔥 Victoria built a prototype using **Bolt** — victoria, a startup founder, used **bolt** to build a recruiting platform prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
+🔥 Victoria built a prototype using **Bolt** - victoria, a startup founder, used **bolt** to build a recruiting platform prototype, but discovered critical architecture, security, and deployment bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real user traffic will trigger severe crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Victoria's application achieved production readiness: Victoria identified and fixed a third-party API timeout within 20 minutes of integration, saving potential clients. (€950 (Error Monitoring Package) — production-ready and deployed in 3 business days.). 🚀
+Victoria's application achieved production readiness: Victoria identified and fixed a third-party API timeout within 20 minutes of integration, saving potential clients. (€950 (Error Monitoring Package) - production-ready and deployed in 3 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/setting-up-error-tracking-sentry
 

@@ -2,7 +2,7 @@
 
 **The Pain Points:**
 ❌ **Undocumented Agency Spaghetti Code:** A newly appointed CTO at a mid-market e-commerce company inherits a five-year-old platform built by three different agencies in sequence, none of whom left documentation, tests, or a coherent architecture. Every bug fix risks breaking two unrelated features because business logic, database queries, and UI rendering are all tangled into the same 4,000-line controller files.
-❌ **Paralyzed Delivery Velocity:** Engineering velocity has collapsed to a crawl — what should be a two-day feature now takes three weeks because every change requires manually tracing side effects nobody documented. The company is quoting customers delivery dates it structurally cannot hit, churn is rising, and the CTO estimates the hidden cost of this paralysis at €25,000-€40,000 per month in lost engineering throughput alone, before counting the customers walking away over missed commitments.
+❌ **Paralyzed Delivery Velocity:** Engineering velocity has collapsed to a crawl - what should be a two-day feature now takes three weeks because every change requires manually tracing side effects nobody documented. The company is quoting customers delivery dates it structurally cannot hit, churn is rising, and the CTO estimates the hidden cost of this paralysis at €25,000-€40,000 per month in lost engineering throughput alone, before counting the customers walking away over missed commitments.
 ❌ **Exponential Maintenance Costs:** Attempting ad-hoc patches or panic rewrites halts ongoing feature delivery, multiplying development costs with zero guarantee of stability.
 
 **The Manifera Solution:**

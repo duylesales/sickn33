@@ -1,7 +1,7 @@
 Your launch date is on the CEO's board slide. Then Apple rejects the build four days before go-live for a reason nobody flagged during development. 😬📵
 
 **The Pain Points:**
-❌ **30-40% First-Submission Rejection Rate:** Industry-wide, and higher still for health, fintech, or UGC apps — yet most timelines assume submission is instant.
+❌ **30-40% First-Submission Rejection Rate:** Industry-wide, and higher still for health, fintech, or UGC apps - yet most timelines assume submission is instant.
 ❌ **The Zero-Buffer Gantt Chart:** If "development complete" and "launch date" are the same day, review risk hasn't been modeled at all.
 ❌ **The Vague "We Handle That" Answer:** A vendor who can't name a specific past rejection and its fix time hasn't actually been tested by App Store review.
 

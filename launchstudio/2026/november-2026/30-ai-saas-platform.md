@@ -42,7 +42,7 @@ The presence of AI in SaaS is no longer a differentiator; it is a commodity. To 
 To transition from a fragile thin wrapper to a defensible AI SaaS platform, you must engineer value across three specific architectural layers.
 
 ### 1. The Data Defensibility Layer (RAG & Proprietary Context)
-If your AI app relies solely on the LLM's pre-trained knowledge, it is indefensible. True value in an AI SaaS platform comes from Retrieval-Augmented Generation (RAG)—feeding the LLM context that OpenAI does not have.
+If your AI app relies solely on the LLM's pre-trained knowledge, it is indefensible. True value in an AI SaaS platform comes from Retrieval-Augmented Generation (RAG) - feeding the LLM context that OpenAI does not have.
 
 This requires engineering a robust vector database architecture. A defensible SaaS connects to a user's internal systems (Notion, Salesforce, proprietary PDFs), vectorizes that data, and uses it to ground the AI's responses. The defensibility lies in the *data integration pipeline*. Even if OpenAI releases a better model tomorrow, users will not abandon your platform, because your platform is the only place the model has access to their specific, private business data.
 
@@ -90,9 +90,9 @@ Finally, they implemented Semantic Caching to drastically reduce her OpenAI API 
 **Result:** AdCopyAI transformed from a thin wrapper into an indispensable workflow tool. Monthly churn dropped from 80% to 4%. Users happily paid €89/month because the software was no longer just writing text; it was managing their entire ad deployment pipeline. The SaaS now generates €14,000 in highly stable MRR.
 
 > *"I thought I built a SaaS, but I really just built an API forwarder. The churn almost killed my company. LaunchStudio built the deep workflow integrations and data pipelines that made my software actually sticky. They turned my wrapper into a real company."*
-> — **Sophie Laurent, Founder, AdCopyAI (Paris)**
+> - **Sophie Laurent, Founder, AdCopyAI (Paris)**
 
-**Cost & Timeline:** €6,500 (Launch & Grow Package with Workflow Integrations Add-on) — production-ready and deployed in 15 business days.
+**Cost & Timeline:** €6,500 (Launch & Grow Package with Workflow Integrations Add-on) - production-ready and deployed in 15 business days.
 
 ---
 
@@ -100,7 +100,7 @@ Finally, they implemented Semantic Caching to drastically reduce her OpenAI API 
 
 ### (Scenario: Founder worried about OpenAI updates) Will my AI SaaS become obsolete when OpenAI releases their next major model?
 
-If you run a Thin Wrapper, yes. If OpenAI releases a feature that mimics your UI, your business dies. However, if you build a Thick Wrapper with LaunchStudio—integrating proprietary user data via RAG and deeply embedding the AI into a multi-step human workflow—a new OpenAI model actually *helps* you. You simply swap the underlying API endpoint, and your highly defensible product instantly becomes faster and smarter.
+If you run a Thin Wrapper, yes. If OpenAI releases a feature that mimics your UI, your business dies. However, if you build a Thick Wrapper with LaunchStudio - integrating proprietary user data via RAG and deeply embedding the AI into a multi-step human workflow - a new OpenAI model actually *helps* you. You simply swap the underlying API endpoint, and your highly defensible product instantly becomes faster and smarter.
 
 ### (Scenario: Developer struggling with API costs) How exactly does Semantic Caching save money in an AI SaaS?
 
@@ -128,7 +128,7 @@ For 99% of B2B SaaS startups, no. Training a foundational model costs millions a
       "name": "Will my AI SaaS become obsolete when OpenAI releases their next major model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you run a Thin Wrapper, yes. But if you build a Thick Wrapper—integrating proprietary user data via RAG and deeply embedding the AI into a multi-step workflow—a new OpenAI model actually helps you. You swap the API, and your defensible product becomes faster and smarter."
+        "text": "If you run a Thin Wrapper, yes. But if you build a Thick Wrapper - integrating proprietary user data via RAG and deeply embedding the AI into a multi-step workflow - a new OpenAI model actually helps you. You swap the API, and your defensible product becomes faster and smarter."
       }
     },
     {

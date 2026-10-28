@@ -14,7 +14,7 @@ Wat u wél moet inrichten vóór uw officiële lancering:
 ✅ Strikte 301-redirects en HSTS-beveiliging voor een waterdichte domeinstructuur
 ✅ Geautomatiseerde SSL-dekking over alle productie- en staging-omgevingen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, zorgen we dat uw domein, mailservers en auth-flows naadloos samenwerken — vóórdat u uw eerste marketingcampagne start.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, zorgen we dat uw domein, mailservers en auth-flows naadloos samenwerken - vóórdat u uw eerste marketingcampagne start.
 
 💡 Het resultaat: Sanne Bakker liet de complete domein-, mail- en callback-revisie in 3 werkdagen uitvoeren voor € 1.150. Voltooide registraties van Shiftly stegen binnen 3 weken van circa 66% naar ruim 90% zonder één regel productcode te wijzigen. 🚀
 

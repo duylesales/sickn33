@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two offers, both described as machine learning engineering. One is at a company whose product is an AI system sold to other organisations: document processing, planning software, inspection tooling, a language platform. The other is inside a business that uses AI to run itself better: a manufacturer, an insurer, a health organisation, a retailer. The technologies overlap almost entirely. Nearly everything else differs — what counts as success, how close you get to the data, who decides what you work on, and what your experience is worth afterwards. Candidates rarely make this comparison explicitly, and it is one of the more consequential ones available.
+Two offers, both described as machine learning engineering. One is at a company whose product is an AI system sold to other organisations: document processing, planning software, inspection tooling, a language platform. The other is inside a business that uses AI to run itself better: a manufacturer, an insurer, a health organisation, a retailer. The technologies overlap almost entirely. Nearly everything else differs - what counts as success, how close you get to the data, who decides what you work on, and what your experience is worth afterwards. Candidates rarely make this comparison explicitly, and it is one of the more consequential ones available.
 
 ## What Changes Day to Day
 
@@ -91,7 +91,7 @@ Where AI is the product, your employer is likely the **provider** of the system 
 
 Privacy obligations also land differently. A vendor processing customer data acts under contractual arrangements defining what it may do; an in-house team works with data its own organisation controls, with impact assessments and internal governance.
 
-If you want to build regulatory expertise, both routes offer it in different shapes — provider-side documentation and standards, or deployer-side oversight and monitoring.
+If you want to build regulatory expertise, both routes offer it in different shapes - provider-side documentation and standards, or deployer-side oversight and monitoring.
 
 ## The Dutch Market Reality
 
@@ -104,7 +104,7 @@ Practically, this means the vendor path often involves a location constraint, wh
 - **What access do engineers have to customer data, and under what arrangements?**
 - **How do you evaluate the product across customers?**
 - **How often does the roadmap change, and what drives it?**
-- **Who handles customer-specific tuning — engineering, implementation consultants or the customer?**
+- **Who handles customer-specific tuning - engineering, implementation consultants or the customer?**
 - **What proportion of my week would be support and implementation work?**
 
 ## Questions to Ask an In-House Employer
@@ -119,7 +119,7 @@ Practically, this means the vendor path often involves a location constraint, wh
 
 **Choose the vendor** when you want engineering rigour, generalisation problems, scale and commercial exposure, and when you accept that the data will often be out of reach.
 
-**Choose in-house** when you want domain depth, ownership of the full chain, direct data access and the experience of living with what you built — and when you want more employers within a sensible distance of home.
+**Choose in-house** when you want domain depth, ownership of the full chain, direct data access and the experience of living with what you built - and when you want more employers within a sensible distance of home.
 
 ## The Implementation Trap
 
@@ -135,7 +135,7 @@ This work is legitimate and someone must do it. It is also a different career fr
 
 **Ask what shipped to the core product last quarter,** and who built it. The answer tells you whether product engineering is a real function or an aspiration between customer demands.
 
-There is a version of implementation work that is genuinely good — deep exposure to many organisations' data and processes, which builds pattern recognition quickly — but you should choose it knowingly rather than discover it in month two. If what you want is to build the product itself, confirm that the role sits in the team that does.
+There is a version of implementation work that is genuinely good - deep exposure to many organisations' data and processes, which builds pattern recognition quickly - but you should choose it knowingly rather than discover it in month two. If what you want is to build the product itself, confirm that the role sits in the team that does.
 
 ## What Happens When a Large Customer Leaves
 
@@ -151,7 +151,7 @@ After three years he moves in-house, to a manufacturer using similar technology 
 
 He fixes in two months a class of problem he had chased for a year at the vendor, because he could finally see what was happening.
 
-He also imports the vendor's practices — testing, versioning, monitoring — into a team that had none, which is what gets him promoted.
+He also imports the vendor's practices - testing, versioning, monitoring - into a team that had none, which is what gets him promoted.
 
 His conclusion is that the vendor taught him how to build software and the manufacturer taught him what the software was for, and that anyone who can do both is unusually employable in either direction.
 
@@ -159,7 +159,7 @@ His conclusion is that the vendor taught him how to build software and the manuf
 
 - At a vendor, generalisation across customers is the central problem and data access is limited by contract and privacy; in-house, fit and adoption are central and the data is yours.
 - Vendor roles build engineering rigour, generalisation, scale and commercial literacy; in-house roles build domain depth, end-to-end ownership, stakeholder skill and consequence.
-- Commercial pressure shapes vendor roadmaps; sponsorship and internal politics shape in-house ones — ask for a concrete example of something reprioritised last year.
+- Commercial pressure shapes vendor roadmaps; sponsorship and internal politics shape in-house ones - ask for a concrete example of something reprioritised last year.
 - Vendors are typically providers under the AI Act and in-house teams deployers, which changes where the regulatory work sits.
 - In the Netherlands, vendor roles cluster geographically while in-house roles exist almost everywhere, which often decides the matter for people who will not relocate.
 
@@ -184,16 +184,16 @@ Both travel. Vendor experience signals production discipline; in-house experienc
 Typically yes: vendors are usually providers, with heavier documentation and conformity obligations, while in-house organisations are usually deployers, focused on oversight, correct use and monitoring.
 
 ### (Scenario: candidate who will not relocate) Which is more realistic where I live?
-In-house roles are spread across the whole country, while AI product companies cluster in a few regions — often the deciding factor for people unwilling to commute far.
+In-house roles are spread across the whole country, while AI product companies cluster in a few regions - often the deciding factor for people unwilling to commute far.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it better to work for an AI product company or an end user?", "acceptedAnswer": {"@type": "Answer", "text": "Neither in general — vendors build rigour and generalisation, in-house builds domain depth and adoption."}},
+    {"@type": "Question", "name": "Is it better to work for an AI product company or an end user?", "acceptedAnswer": {"@type": "Answer", "text": "Neither in general - vendors build rigour and generalisation, in-house builds domain depth and adoption."}},
     {"@type": "Question", "name": "Which gives better access to data?", "acceptedAnswer": {"@type": "Answer", "text": "In-house, decisively; vendor data access is constrained by contract and privacy."}},
-    {"@type": "Question", "name": "Which experience travels better?", "acceptedAnswer": {"@type": "Answer", "text": "Both — vendor signals production discipline, in-house signals domain depth."}},
+    {"@type": "Question", "name": "Which experience travels better?", "acceptedAnswer": {"@type": "Answer", "text": "Both - vendor signals production discipline, in-house signals domain depth."}},
     {"@type": "Question", "name": "Does the AI Act apply differently?", "acceptedAnswer": {"@type": "Answer", "text": "Usually vendors are providers with heavier obligations; in-house organisations are deployers."}},
     {"@type": "Question", "name": "Which is more realistic where I live?", "acceptedAnswer": {"@type": "Answer", "text": "In-house roles exist nationwide; AI product companies cluster in a few regions."}}
   ]

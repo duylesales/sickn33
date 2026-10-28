@@ -1,4 +1,4 @@
-⚠️ Niels Bakker, een voormalig testengineer bij een Helmondse automotive-toeleverancier, bouwde TestTrack — een planningstool voor voertuigtestslots — met Lovable in twee weken. Drie faciliteiten sloten aan om te pilotten. Toen meldde een facilitymanager dat een testslot dubbel was geboekt, zonder enige waarschuwing voor beide partijen totdat ze fysiek bij dezelfde testbaan arriveerden. 😳
+⚠️ Niels Bakker, een voormalig testengineer bij een Helmondse automotive-toeleverancier, bouwde TestTrack - een planningstool voor voertuigtestslots - met Lovable in twee weken. Drie faciliteiten sloten aan om te pilotten. Toen meldde een facilitymanager dat een testslot dubbel was geboekt, zonder enige waarschuwing voor beide partijen totdat ze fysiek bij dezelfde testbaan arriveerden. 😳
 
 De UI blokkeerde dubbel boeken. De server deed dat nooit. 🧠
 

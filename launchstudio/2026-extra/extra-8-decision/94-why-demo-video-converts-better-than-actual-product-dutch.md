@@ -60,14 +60,14 @@ Een demo omvormen tot een boeiend, sticky product vereist last-mile productie-en
 - **Optimistic UI en Skeleton States:** UI-layoutstructuren onmiddellijk renderen terwijl achtergrond-API's asynchroon data ophalen.
 - **Foutbestendige Sessiepersistentie:** Conceptstatussen automatisch opslaan in de database zodat het verversen van de pagina nooit gebruikersvoortgang vernietigt.
 
-[LaunchStudio](https://launchstudio.eu/nl/) transformeert AI-prototypes in gepolijste producten met hoge activatie — mogelijk gemaakt door Manifera's 11+ jaar ervaring in het bouwen van intuïtieve digitale ervaringen voor enterprise-leiders.
+[LaunchStudio](https://launchstudio.eu/nl/) transformeert AI-prototypes in gepolijste producten met hoge activatie - mogelijk gemaakt door Manifera's 11+ jaar ervaring in het bouwen van intuïtieve digitale ervaringen voor enterprise-leiders.
 
 [Verander uw demo-enthousiasme in echte, geactiveerde dagelijkse gebruikers](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Van 18% Naar 64% Gebruikersactivatie
 
-Giselle van Dijk, een marketingconsultant in Hilversum, bouwde ContentChef — een AI-marketingkalendergenerator. Haar LinkedIn-lanceringsvideo ging viraal en trok 420 beta-aanmeldingen aan. Maar slechts 18% van de gebruikers genereerde daadwerkelijk een marketingkalender na het inloggen.
+Giselle van Dijk, een marketingconsultant in Hilversum, bouwde ContentChef - een AI-marketingkalendergenerator. Haar LinkedIn-lanceringsvideo ging viraal en trok 420 beta-aanmeldingen aan. Maar slechts 18% van de gebruikers genereerde daadwerkelijk een marketingkalender na het inloggen.
 
 LaunchStudio auditte ContentChef's gebruikersonboardingtraject en identificeerde drie kritieke afhaakpunten:
 1. Bij het inloggen werden gebruikers begroet door een leeg wit raster zonder enige instructie.
@@ -79,9 +79,9 @@ Het Manifera-team implementeerde een 3-staps-onboardingmodal met vooraf geladen 
 **Resultaat:** Binnen twee weken na het uitrollen van de updates schoot ContentChef's gebruikersactivatiegraad omhoog van **18% naar 64%**, waarbij betaalde proefconversies met 280% stegen.
 
 > *"Onze demo oogde als magie op video, maar onze live app voelde verwarrend en traag voor echte mensen. LaunchStudio voegde de polish, onboardingflow en achtergrondbetrouwbaarheid toe die ons echte product liet stroken met de belofte van onze demo."*
-> — **Giselle van Dijk, Oprichter, ContentChef (Hilversum)**
+> - **Giselle van Dijk, Oprichter, ContentChef (Hilversum)**
 
-**Kosten & Doorlooptijd:** €1.800 (Launch Ready Package, UX-statepolish + achtergrond-jobqueue + template-onboarding) — afgerond in 6 werkdagen.
+**Kosten & Doorlooptijd:** €1.800 (Launch Ready Package, UX-statepolish + achtergrond-jobqueue + template-onboarding) - afgerond in 6 werkdagen.
 
 ---
 
@@ -97,7 +97,7 @@ Optimistic UI werkt het scherm onmiddellijk bij om te tonen wat de gebruiker zoj
 Door streaming-responses te gebruiken (tokens die real-time renderen) of meerfasige voortgangsbalken die stap voor stap uitleggen wat de AI analyseert, in plaats van een statische laadspinner.
 
 ### Wat is het belangrijkste scherm om te optimaliseren na aanmelding?
-De "Lege State" — het eerste scherm dat een gloednieuwe gebruiker ziet zonder enige data. Vooraf ingevulde voorbeeldtemplates en een duidelijke, prominente primaire actieknop stimuleren directe betrokkenheid.
+De "Lege State" - het eerste scherm dat een gloednieuwe gebruiker ziet zonder enige data. Vooraf ingevulde voorbeeldtemplates en een duidelijke, prominente primaire actieknop stimuleren directe betrokkenheid.
 
 ### Wijzigt LaunchStudio ons visuele design bij het verbeteren van de onboarding?
 Nee. We werken binnen uw bestaande designsysteem en componenten (Lovable, React, Tailwind), en voegen simpelweg de ontbrekende states, skeletons en flowlogica eronder toe.

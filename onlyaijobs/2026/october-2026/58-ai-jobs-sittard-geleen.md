@@ -39,11 +39,11 @@ Sittard-Geleen hosts one of the largest integrated chemical and materials scienc
 
 ## What This Work Actually Involves
 
-Materials science data work involves modelling chemical processes and material properties — predicting how a formulation or process change affects output quality, with real production and safety stakes. This is applied statistics and machine learning grounded in chemistry and materials engineering, not software product work.
+Materials science data work involves modelling chemical processes and material properties - predicting how a formulation or process change affects output quality, with real production and safety stakes. This is applied statistics and machine learning grounded in chemistry and materials engineering, not software product work.
 
 ## Why This Segment Is Hard to Find
 
-Job titles here reflect chemical and process-engineering vocabulary, and the companies on this campus don't compete for tech-scene visibility the way consumer AI companies do — a national AI job search will consistently miss this cluster.
+Job titles here reflect chemical and process-engineering vocabulary, and the companies on this campus don't compete for tech-scene visibility the way consumer AI companies do - a national AI job search will consistently miss this cluster.
 
 ## The History Behind the Campus
 
@@ -53,7 +53,7 @@ The story of Chemelot starts with coal. In the early twentieth century, the Dutc
 
 **Chemelot industrial park.** One of the largest chemical sites in Western Europe, where several chemical and materials companies operate production plants with shared infrastructure. Among the companies with production activities on the site are **SABIC**, which produces plastics and chemicals, and **OCI Nitrogen**, which produces fertilisers and nitrogen-based products.
 
-**Brightlands Chemelot Campus.** Next to the industrial park, this campus — one of the four Brightlands campuses in Limburg — brings together companies, start-ups and knowledge institutions working on chemistry, materials, circularity and biobased materials. Its location next to large-scale production gives researchers access to pilot facilities and industrial partners.
+**Brightlands Chemelot Campus.** Next to the industrial park, this campus - one of the four Brightlands campuses in Limburg - brings together companies, start-ups and knowledge institutions working on chemistry, materials, circularity and biobased materials. Its location next to large-scale production gives researchers access to pilot facilities and industrial partners.
 
 **Chemelot Institute for Science & Technology (InSciTe).** A research institute on the campus, founded with Maastricht University and Eindhoven University of Technology among its partners, focusing on biobased and biomedical materials and pilot-scale development.
 
@@ -73,8 +73,8 @@ The story of Chemelot starts with coal. In the early twentieth century, the Dutc
 
 | | Shared industrial campus (Sittard-Geleen) | Single-employer industrial site |
 |---|---|---|
-| Variety of employers reachable in one location | High — multiple companies share infrastructure | Low — one employer, one set of opportunities |
-| Career mobility without relocating | Higher — can move between campus companies | Lower — moving employers usually means moving cities |
+| Variety of employers reachable in one location | High - multiple companies share infrastructure | Low - one employer, one set of opportunities |
+| Career mobility without relocating | Higher - can move between campus companies | Lower - moving employers usually means moving cities |
 | Concentration of relevant technical community | High | Lower |
 
 ## Where Data and Machine Learning Are Applied
@@ -88,7 +88,7 @@ The story of Chemelot starts with coal. In the early twentieth century, the Dutc
 | Energy and emissions management | Utility consumption, emissions measurements | Forecasting, optimisation under constraints |
 | Site-wide utility optimisation | Steam, electricity and cooling across plants | Network optimisation, scheduling |
 
-**Materials informatics** deserves a special mention. Predicting material properties from composition and processing conditions — and using those predictions to decide which experiments to run next — can shorten development cycles considerably. Because experiments are expensive, techniques that make the most of small datasets, such as Bayesian optimisation and active learning, are especially valuable here.
+**Materials informatics** deserves a special mention. Predicting material properties from composition and processing conditions - and using those predictions to decide which experiments to run next - can shorten development cycles considerably. Because experiments are expensive, techniques that make the most of small datasets, such as Bayesian optimisation and active learning, are especially valuable here.
 
 ## Regulation and Safety That Shape the Work
 
@@ -120,7 +120,7 @@ A materials company on the campus wants to develop a polymer grade with better h
 
 ## The Cross-Border Research Axis
 
-Sittard-Geleen's research ecosystem is closely linked to institutions across the border. AMIBM is a joint institute of Maastricht University and RWTH Aachen University, and the wider Euregio Meuse-Rhine connects the campus with the chemical and materials research strengths of the Aachen and Liège regions. For data scientists, this means collaboration opportunities with some of Europe's strongest engineering research groups, often in English, within commuting distance. It also means that expertise built on the campus is visible to a European rather than purely Dutch professional network — a real advantage for candidates who want to keep international career options open while living in South Limburg.
+Sittard-Geleen's research ecosystem is closely linked to institutions across the border. AMIBM is a joint institute of Maastricht University and RWTH Aachen University, and the wider Euregio Meuse-Rhine connects the campus with the chemical and materials research strengths of the Aachen and Liège regions. For data scientists, this means collaboration opportunities with some of Europe's strongest engineering research groups, often in English, within commuting distance. It also means that expertise built on the campus is visible to a European rather than purely Dutch professional network - a real advantage for candidates who want to keep international career options open while living in South Limburg.
 
 ## Skills That Stand Out
 
@@ -141,7 +141,7 @@ Sittard-Geleen's research ecosystem is closely linked to institutions across the
 
 ## Accessibility and Search Radius
 
-Sittard has direct train connections to Maastricht, Heerlen, Roermond and Eindhoven. Maastricht is roughly 15–20 minutes away by train, and Eindhoven around 40 minutes. The A2 and A76 motorways connect the area with the rest of the Netherlands, Belgium and Germany. A realistic search radius includes Maastricht, Heerlen, Roermond, the Belgian province of Limburg and the Aachen region — which makes the Euregio Meuse-Rhine the relevant labour market. Check current travel times in the NS journey planner.
+Sittard has direct train connections to Maastricht, Heerlen, Roermond and Eindhoven. Maastricht is roughly 15–20 minutes away by train, and Eindhoven around 40 minutes. The A2 and A76 motorways connect the area with the rest of the Netherlands, Belgium and Germany. A realistic search radius includes Maastricht, Heerlen, Roermond, the Belgian province of Limburg and the Aachen region - which makes the Euregio Meuse-Rhine the relevant labour market. Check current travel times in the NS journey planner.
 
 ## Who This Market Suits
 

@@ -25,7 +25,7 @@ During the MVP phase, building a **full stack web application** feels effortless
 
 Then, you sign your first enterprise client. You hit 5,000 concurrent users. 
 
-Suddenly, the application grinds to a halt. The CPU on the database server hits 100%. Users see "504 Gateway Timeout" errors. The CEO demands that you "upgrade the servers." You double the RAM and CPU, but the application remains slow. The business cost of that slowdown is not abstract: in a widely cited 2006 internal study, Amazon found that every additional 100 milliseconds of page latency cost it roughly 1% in sales — a finding that has been repeated often enough in web performance research to become the industry's default justification for treating latency as a revenue metric, not just an engineering one.
+Suddenly, the application grinds to a halt. The CPU on the database server hits 100%. Users see "504 Gateway Timeout" errors. The CEO demands that you "upgrade the servers." You double the RAM and CPU, but the application remains slow. The business cost of that slowdown is not abstract: in a widely cited 2006 internal study, Amazon found that every additional 100 milliseconds of page latency cost it roughly 1% in sales - a finding that has been repeated often enough in web performance research to become the industry's default justification for treating latency as a revenue metric, not just an engineering one.
 
 You cannot fix a structural bottleneck by throwing hardware at it. When a **full stack web application** fails at scale, 95% of the time, the problem is the database. And the database is failing because the backend developers wrote code that assumed data would always be small.
 
@@ -53,7 +53,7 @@ When your `users` table hits 5 million rows, that Sequential Scan takes 4 second
 **The Architectural Fix:**
 Any column that is used in a `WHERE` clause (like an email address, or a foreign key) must have a Database Index. An index creates a B-Tree data structure, turning a 4-second Sequential Scan into a 5-millisecond indexed lookup.
 
-> *"If a developer pushes code to production that searches a table without an index, they have created a ticking time bomb. It will work today, and it will crash the server next year."* — Herre Roelevink, Managing Director, Manifera
+> *"If a developer pushes code to production that searches a table without an index, they have created a ticking time bomb. It will work today, and it will crash the server next year."* - Herre Roelevink, Managing Director, Manifera
 
 ## Bottleneck 3: Synchronous Processing for Slow Tasks
 
@@ -83,24 +83,24 @@ Elite teams solve this with a "lock-and-refresh" pattern: only the *first* reque
 
 ## The Fourth Bottleneck: Connection Pool Exhaustion
 
-Fix the N+1 queries, add the missing indexes, move slow tasks to a background queue, and add read replicas and caching — and some full stack web applications will still fall over under enterprise load. The cause has nothing to do with query efficiency. It is a resource nobody budgets for: the database's own connection limit.
+Fix the N+1 queries, add the missing indexes, move slow tasks to a background queue, and add read replicas and caching - and some full stack web applications will still fall over under enterprise load. The cause has nothing to do with query efficiency. It is a resource nobody budgets for: the database's own connection limit.
 
-PostgreSQL, by default, ships with `max_connections` set to **100**, and for good reason — the database engine forks a dedicated operating system process for every single connection, and each idle connection typically consumes **5–10 MB of RAM** (considerably more once it is actively running a query with a non-trivial `work_mem` allocation). This architecture works fine for a traditional application server that opens a handful of long-lived connections and reuses them. It breaks catastrophically for modern deployment patterns that many full stack teams adopt by default:
+PostgreSQL, by default, ships with `max_connections` set to **100**, and for good reason - the database engine forks a dedicated operating system process for every single connection, and each idle connection typically consumes **5–10 MB of RAM** (considerably more once it is actively running a query with a non-trivial `work_mem` allocation). This architecture works fine for a traditional application server that opens a handful of long-lived connections and reuses them. It breaks catastrophically for modern deployment patterns that many full stack teams adopt by default:
 
-- **Serverless functions** (AWS Lambda, Vercel Functions, Cloudflare Workers) spin up a new execution environment per concurrent request. If each function instance opens its own fresh database connection, 500 concurrent requests can attempt to open 500 simultaneous connections — five times the default Postgres limit — in what practitioners call a "connection storm." The database does not slow down gracefully; it starts outright refusing new connections.
+- **Serverless functions** (AWS Lambda, Vercel Functions, Cloudflare Workers) spin up a new execution environment per concurrent request. If each function instance opens its own fresh database connection, 500 concurrent requests can attempt to open 500 simultaneous connections - five times the default Postgres limit - in what practitioners call a "connection storm." The database does not slow down gracefully; it starts outright refusing new connections.
 - **Horizontally scaled containers** multiply the problem the same way: 20 application pods, each configured with an ORM connection pool of 10, can reserve 200 database-side connections before a single real user request arrives, simply by starting up.
 
-**The Architectural Fix:** Introduce a dedicated connection pooler — such as PgBouncer, or a managed equivalent like Amazon RDS Proxy — between the application and the database. PgBouncer multiplexes thousands of lightweight client-side connections down to a small, fixed pool of real database connections, and because it is written in a lightweight event loop rather than forking OS processes, each pooled client connection costs roughly **2 KB of memory** instead of the 5–10 MB a native Postgres connection requires. In practice, this lets a single mid-sized database server safely serve thousands of application-side connections through a pool of 20–50 real ones.
+**The Architectural Fix:** Introduce a dedicated connection pooler - such as PgBouncer, or a managed equivalent like Amazon RDS Proxy - between the application and the database. PgBouncer multiplexes thousands of lightweight client-side connections down to a small, fixed pool of real database connections, and because it is written in a lightweight event loop rather than forking OS processes, each pooled client connection costs roughly **2 KB of memory** instead of the 5–10 MB a native Postgres connection requires. In practice, this lets a single mid-sized database server safely serve thousands of application-side connections through a pool of 20–50 real ones.
 
 Not all pooling modes behave identically, and choosing the wrong one silently breaks features your application depends on:
 
 | Pooling Mode | How It Works | Safe For | Breaks |
 |---|---|---|---|
-| **Session pooling** | One database connection held for the entire client session | Everything, including session-level features | Nothing — but scales worst (closest to no pooling) |
+| **Session pooling** | One database connection held for the entire client session | Everything, including session-level features | Nothing - but scales worst (closest to no pooling) |
 | **Transaction pooling** | Connection returned to the pool after each transaction commits | Most application workloads; the default recommendation for web apps | Session-level features: `SET` variables, `LISTEN/NOTIFY`, prepared statements tied to a session |
-| **Statement pooling** | Connection returned after every single statement | Nothing most teams should use in production | Multi-statement transactions — an application-level `BEGIN...COMMIT` block will not behave correctly |
+| **Statement pooling** | Connection returned after every single statement | Nothing most teams should use in production | Multi-statement transactions - an application-level `BEGIN...COMMIT` block will not behave correctly |
 
-Elite teams default to **transaction pooling** for the application's general workload, and route the small number of operations that genuinely need session-level guarantees (advisory locks, `LISTEN/NOTIFY` for real-time features) through a separate, unpooled connection reserved specifically for that purpose. Getting this wrong does not show up in a load test with 10 users — it shows up during the exact 5,000-concurrent-user enterprise rollout this article opened with, which is precisely why it belongs in the same architectural review as indexes and background queues, not treated as a production incident to debug after the fact.
+Elite teams default to **transaction pooling** for the application's general workload, and route the small number of operations that genuinely need session-level guarantees (advisory locks, `LISTEN/NOTIFY` for real-time features) through a separate, unpooled connection reserved specifically for that purpose. Getting this wrong does not show up in a load test with 10 users - it shows up during the exact 5,000-concurrent-user enterprise rollout this article opened with, which is precisely why it belongs in the same architectural review as indexes and background queues, not treated as a production incident to debug after the fact.
 
 ## The Manifera Standard for Scalable Architecture
 

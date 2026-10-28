@@ -1,4 +1,4 @@
-🚨 Custom software development timeline estimates aren't wrong randomly. They're wrong in one predictable direction — almost always too optimistic. ⚙️⏱️
+🚨 Custom software development timeline estimates aren't wrong randomly. They're wrong in one predictable direction - almost always too optimistic. ⚙️⏱️
 
 **The Pain Points:**
 ❌ **Best-Case Dressed Up as the Plan:** A single number treated as a prediction with symmetric uncertainty.
@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Two Numbers, Not One:** An explicit best-case and most-likely range, honestly presented.
 ✅ **Amsterdam Strategic Governance:** Honest about timeline uncertainty instead of confident-sounding guesses.
-✅ **Vietnam Execution Velocity:** Realistic buffer built in for the near-certain unknowns — delivering against the most-likely number.
+✅ **Vietnam Execution Velocity:** Realistic buffer built in for the near-certain unknowns - delivering against the most-likely number.
 
 The first vendor gave us one number and we built our whole launch plan around it. It was the best case dressed up as the plan. 🛡️
 

@@ -24,7 +24,7 @@ Most AI-built products have exactly one public page with words on it. The homepa
 
 That is the second half of Lovable SEO, and it is the half that fixing rendering does not touch. A crawler can now read your homepage. What it cannot do is decide that your homepage is the best answer to "shift planning tool for hospitality" when your homepage says "the modern way to organise your team".
 
-Five pages close that gap. Not a content programme — five pages, written once, that between them cover how people actually search.
+Five pages close that gap. Not a content programme - five pages, written once, that between them cover how people actually search.
 
 ## Why One Page Cannot Rank for Everything
 
@@ -44,7 +44,7 @@ The test: could a person experiencing that problem, who has never heard of you, 
 
 ## Page Two: The Alternatives Page
 
-A large share of commercial search begins with a competitor's name. "Alternative to X", "X versus Y", "X too expensive". These searches come from people who already know they need this category of product and are dissatisfied — which makes them the highest-intent traffic available.
+A large share of commercial search begins with a competitor's name. "Alternative to X", "X versus Y", "X too expensive". These searches come from people who already know they need this category of product and are dissatisfied - which makes them the highest-intent traffic available.
 
 Two rules make this page work rather than embarrassing you. Be accurate about the competitor, including what they do better, because a page that reads as a hatchet job convinces nobody and ages badly. And be specific about who should choose each: "if you need multi-country payroll, they are the better fit; if you are a single-site business who wants this running this week, we are" is more persuasive than a feature table with ticks in your column.
 
@@ -54,23 +54,23 @@ For Dutch products this page is frequently the highest-converting one on the sit
 
 One page per distinct situation your product serves, in the language of that situation.
 
-A booking tool used by physiotherapists, driving schools and hair salons has three pages, not one, because the words differ — "afspraken", "lesuren", "behandelingen" — and so do the concerns. The physiotherapist cares about patient data; the driving school cares about instructor availability; the salon cares about no-shows.
+A booking tool used by physiotherapists, driving schools and hair salons has three pages, not one, because the words differ - "afspraken", "lesuren", "behandelingen" - and so do the concerns. The physiotherapist cares about patient data; the driving school cares about instructor availability; the salon cares about no-shows.
 
 This is also where AI-built products have an advantage they rarely use. You already know your customer segments from your first ten conversations. Each segment is a page, and each page can be written in an afternoon from those conversations.
 
 ## Page Four: The Location Page, Where Geography Is Real
 
-If your product is bought locally — services, marketplaces, anything with physical presence — locations are genuine search intent: "boekhoudprogramma Rotterdam", "sportschool software Groningen".
+If your product is bought locally - services, marketplaces, anything with physical presence - locations are genuine search intent: "boekhoudprogramma Rotterdam", "sportschool software Groningen".
 
 The rule that keeps this honest: only create a location page where something is actually different. Real customers in that city, a regional integration, local pricing, a partner. Twenty generated city pages with the name substituted is a pattern search engines have recognised and devalued for years, and it makes a small product look larger and less trustworthy at the same time.
 
-Two or three genuine location pages outperform twenty templated ones, and for a Dutch product they also carry the GEO-entity signals — city, region, address — that make your organisation identifiable to both search engines and AI answer tools.
+Two or three genuine location pages outperform twenty templated ones, and for a Dutch product they also carry the GEO-entity signals - city, region, address - that make your organisation identifiable to both search engines and AI answer tools.
 
 ## Page Five: The Pricing Page
 
 Frequently the second most visited page on any product site and frequently absent from AI-built products, because pricing was not decided when the site was generated.
 
-It ranks for its own searches — "X pricing", "wat kost", "X kosten" — and it answers a question people will otherwise ask you by email. Even without final pricing, a page stating the model, the range and what changes the number outperforms nothing at all.
+It ranks for its own searches - "X pricing", "wat kost", "X kosten" - and it answers a question people will otherwise ask you by email. Even without final pricing, a page stating the model, the range and what changes the number outperforms nothing at all.
 
 Include what people actually want to know: whether there is a free trial, whether they can cancel, what happens to their data if they leave, and whether prices include VAT, which Dutch business buyers will check.
 
@@ -90,7 +90,7 @@ The content only works if the page is a real page.
 
 **A place in your sitemap.**
 
-Without these, five excellent pages remain invisible — which is the failure mode of doing the content half without the technical half.
+Without these, five excellent pages remain invisible - which is the failure mode of doing the content half without the technical half.
 
 ## Writing Them Without a Content Team
 
@@ -104,7 +104,7 @@ Then leave them alone for three months. These pages compound slowly, and rewriti
 
 ## Measuring Whether It Worked
 
-Connect your domain to Google Search Console — free, and the only view of what people search before reaching you.
+Connect your domain to Google Search Console - free, and the only view of what people search before reaching you.
 
 After six to eight weeks, three numbers matter: how many of your pages are indexed, which queries produce impressions, and which pages receive clicks. The useful surprise is usually in the queries: the words people actually use are rarely the words you chose, and adjusting a title to match real language is the cheapest improvement available.
 
@@ -112,7 +112,7 @@ After six to eight weeks, three numbers matter: how many of your pages are index
 
 Content only performs if the pages are served in a way crawlers and answer engines can read, which for an AI-built product means work at the rendering and infrastructure level rather than in a text editor.
 
-LaunchStudio handles that part: pre-rendering or server-side rendering for public pages, per-page titles and descriptions, sitemap and canonical addresses, structured data for your organisation and products, internal linking, and Search Console connected so you can see the effect — without touching the interface you built in Lovable. Behind it is Manifera, eleven years of engineering for clients including Vodafone and TNO, from Amsterdam and Ho Chi Minh City.
+LaunchStudio handles that part: pre-rendering or server-side rendering for public pages, per-page titles and descriptions, sitemap and canonical addresses, structured data for your organisation and products, internal linking, and Search Console connected so you can see the effect - without touching the interface you built in Lovable. Behind it is Manifera, eleven years of engineering for clients including Vodafone and TNO, from Amsterdam and Ho Chi Minh City.
 
 If you have written good pages and nothing is ranking, [describe your project](https://launchstudio.eu/en/#contact) and we will tell you which half is missing, usually within one business day. The [packages page](https://launchstudio.eu/en/#packages) shows what the technical work includes.
 
@@ -120,13 +120,13 @@ If you have written good pages and nothing is ranking, [describe your project](h
 
 The question that follows immediately, and the honest answer is: later, and only if you can sustain it.
 
-The five pages above serve people who are looking to buy. A blog serves people who are learning, which is a legitimate and much slower route — articles compound over months, need consistent publishing to matter, and produce traffic that converts at a fraction of the rate of a comparison page.
+The five pages above serve people who are looking to buy. A blog serves people who are learning, which is a legitimate and much slower route - articles compound over months, need consistent publishing to matter, and produce traffic that converts at a fraction of the rate of a comparison page.
 
 For a product with a founder and twenty customers, the sequence that works is the five pages first, then measurement, then articles only if two conditions hold: you can publish consistently for six months, and you have identified questions your customers ask that no existing page answers well.
 
 If you do write articles, three rules keep them useful. Write about the problem rather than about your product, because nobody searches for your product. Answer the question completely on the page rather than teasing a signup. And link each article to the relevant one of your five pages, so the reader who becomes interested has somewhere to go.
 
-**The one exception worth making early:** if your product involves a subject where people genuinely research before buying — compliance, regulation, a technical migration, anything with a procurement process — then one thorough article on that subject can outperform everything else on your site, because it reaches someone at the exact moment they are trying to understand what they need. One such article, written properly, is worth more than twelve written to a schedule.
+**The one exception worth making early:** if your product involves a subject where people genuinely research before buying - compliance, regulation, a technical migration, anything with a procurement process - then one thorough article on that subject can outperform everything else on your site, because it reaches someone at the exact moment they are trying to understand what they need. One such article, written properly, is worth more than twelve written to a schedule.
 
 ## Real example
 
@@ -143,15 +143,15 @@ The alternatives page was the one she resisted writing, because it named competi
 **Result:** after ten weeks, indexed pages rose from three to eleven, and search enquiries went from roughly one a month to nine. The alternatives page produced more enquiries than the other four combined, including two customers who said they had arrived while searching for a competitor's pricing.
 
 > *"I spent three months making the product better for people who could not find it. Four pages written from my own inbox changed that more than anything I built."*
-> — **Femke Roelofs, Founder, Planbaas (Deventer)**
+> - **Femke Roelofs, Founder, Planbaas (Deventer)**
 
-**Cost & Timeline:** €2,300 (page structure, pre-rendering, metadata, structured data, sitemap and Search Console setup) — completed in 5 business days, alongside two weeks of her own writing.
+**Cost & Timeline:** €2,300 (page structure, pre-rendering, metadata, structured data, sitemap and Search Console setup) - completed in 5 business days, alongside two weeks of her own writing.
 
 ## Frequently Asked Questions
 
 ### Why does my homepage not rank for everything my product does?
 
-Because search engines match a page to an intent, and a single page serving five intents dilutes all of them. People search by problem, by competitor, by situation, by location and by price — five different pages with five different vocabularies.
+Because search engines match a page to an intent, and a single page serving five intents dilutes all of them. People search by problem, by competitor, by situation, by location and by price - five different pages with five different vocabularies.
 
 ### Is a comparison page against competitors a good idea?
 
@@ -159,7 +159,7 @@ Usually the highest-converting page on a small product's site, because people se
 
 ### Should I create a page for every Dutch city?
 
-No. Create location pages only where something is genuinely different — real customers, a regional integration, local pricing. Templated city pages have been recognised and devalued for years, and they make a small product look less trustworthy.
+No. Create location pages only where something is genuinely different - real customers, a regional integration, local pricing. Templated city pages have been recognised and devalued for years, and they make a small product look less trustworthy.
 
 ### How long should each page be?
 
@@ -187,7 +187,7 @@ Yes. Public pages need their own address, title and description, content present
       "name": "Is a comparison page against competitors a good idea?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually the highest-converting page on a small product's site, provided it is accurate — including about what the competitor does better."
+        "text": "Usually the highest-converting page on a small product's site, provided it is accurate - including about what the competitor does better."
       }
     },
     {
@@ -195,7 +195,7 @@ Yes. Public pages need their own address, title and description, content present
       "name": "Should I create a page for every Dutch city?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — only where something is genuinely different, such as real customers or local pricing. Templated city pages have been devalued for years."
+        "text": "No - only where something is genuinely different, such as real customers or local pricing. Templated city pages have been devalued for years."
       }
     },
     {
@@ -211,7 +211,7 @@ Yes. Public pages need their own address, title and description, content present
       "name": "Do these pages need different technical treatment from my app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — their own addresses, titles, descriptions, content in the served HTML via pre-rendering, structured data and sitemap entries."
+        "text": "Yes - their own addresses, titles, descriptions, content in the served HTML via pre-rendering, structured data and sitemap entries."
       }
     }
   ]

@@ -1,6 +1,6 @@
 🚨 Een Functionaris Gegevensbescherming van een schoolbestuur stelde ÉÉN vraag tijdens het inkoopgesprek: "Kunnen leerlingen elkaars cijfers zien?" Ze wist het oprecht niet. 😳
 
-EdTech heeft te maken met veel strengere eisen dan de meeste AI-apps — de gebruikers zijn minderjarig, de data betreft academische dossiers, en de koper heeft wettelijke compliance-plichten. Dit is wat dat betekent: 🧠
+EdTech heeft te maken met veel strengere eisen dan de meeste AI-apps - de gebruikers zijn minderjarig, de data betreft academische dossiers, en de koper heeft wettelijke compliance-plichten. Dit is wat dat betekent: 🧠
 
 ❌ Rolscheiding die alleen aan de interface bestaat, maar niet wordt gecontroleerd bij de API
 ❌ Een latere "klasvoortgang"-feature die nooit opnieuw is gecheckt op toegangsrechten
@@ -8,7 +8,7 @@ EdTech heeft te maken met veel strengere eisen dan de meeste AI-apps — de gebr
 ❌ Een privacybeleid dat niet overeenkomt met de werkelijke code is erger dan geen beleid
 
 ✅ Toegangscontrole moet worden geverifieerd op elk endpoint, niet alleen in de hoofdroute
-✅ Documentatie moet beschrijven wat het systeem aantoonbaar doet — niet slechts intenties
+✅ Documentatie moet beschrijven wat het systeem aantoonbaar doet - niet slechts intenties
 ✅ De inkoopprocedure van een school is een vaste poort, geen frictie om omheen te sturen
 ✅ Niets van dit alles vereist aanpassingen aan de didactische logica of de gebruikerservaring
 

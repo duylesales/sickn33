@@ -12,7 +12,7 @@ Een fulltime engineer aannemen vóórdat uw product live staat en omzet genereer
 
 Bij LaunchStudio harden we AI-prototypes met vaste projectprijzen, zodat u uw runway optimaal benut. 🚀
 
-Camille lanceerde binnen 12 dagen, onboardde 35 advocatenkantoren en startte haar werving pas vanuit winstgevendheid. (€ 2.800 (Launch & Grow Pakket) — 12 werkdagen.) ✨
+Camille lanceerde binnen 12 dagen, onboardde 35 advocatenkantoren en startte haar werving pas vanuit winstgevendheid. (€ 2.800 (Launch & Grow Pakket) - 12 werkdagen.) ✨
 
 👉 Bekijk de budgetvergelijking: https://launchstudio.eu/nl/blog/launchstudio-vs-first-full-time-engineer-2027
 

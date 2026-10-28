@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-A fully remote offer solves the problem candidates complain about most: the commute disappears, the radius of employers you can consider widens enormously, and the day belongs to you. It also removes things that are hard to notice until they are gone — the incidental conversation that reveals why a dataset looks strange, the colleague who would have reviewed your approach before you spent a week on it, the visibility that determines who is considered for the interesting project. Fully remote work suits some people and some roles extremely well. The decision is worth making on the specifics of this role rather than on a general preference.
+A fully remote offer solves the problem candidates complain about most: the commute disappears, the radius of employers you can consider widens enormously, and the day belongs to you. It also removes things that are hard to notice until they are gone - the incidental conversation that reveals why a dataset looks strange, the colleague who would have reviewed your approach before you spent a week on it, the visibility that determines who is considered for the interesting project. Fully remote work suits some people and some roles extremely well. The decision is worth making on the specifics of this role rather than on a general preference.
 
 ## What "Fully Remote" Actually Means Here
 
@@ -57,7 +57,7 @@ The **Flexible Working Act** allows employees of employers with at least ten emp
 
 Practically, this means remote work in the Netherlands rests on what is agreed rather than on a statutory right. Get the arrangement into the contract or a written annex, because a policy can change when a manager does.
 
-Employers also have obligations for your working conditions under the **Working Conditions Act**, including the home workstation — equipment, a suitable chair and desk, and attention to health. Many employers provide a setup budget and a **home working allowance**, the tax-free level of which is set annually; check the current amount rather than assuming.
+Employers also have obligations for your working conditions under the **Working Conditions Act**, including the home workstation - equipment, a suitable chair and desk, and attention to health. Many employers provide a setup budget and a **home working allowance**, the tax-free level of which is set annually; check the current amount rather than assuming.
 
 ## What Remote Costs in an AI Role Specifically
 
@@ -101,7 +101,7 @@ The practical advice is simple: if any part of your arrangement crosses a border
 
 - **How many people work fully remotely, and for how long?** Existing examples matter more than policy.
 - **Where are decisions recorded?** A documentation culture is the single best predictor of remote success.
-- **What does onboarding look like for a remote joiner?** Ask for specifics — a buddy, structured introductions, a first project designed for it.
+- **What does onboarding look like for a remote joiner?** Ask for specifics - a buddy, structured introductions, a first project designed for it.
 - **How often would I travel to the office or to colleagues, and who pays?**
 - **What equipment and home working arrangements are provided?**
 - **Is the remote arrangement in the contract or in a policy?** Policies change.
@@ -129,9 +129,9 @@ Remote roles rarely fail in year two. They fail in the first months, quietly, an
 
 **Months four to six.** Either you have become someone colleagues route questions to, or you have become someone they forget to include. This is the fork, and it is largely determined by how visible your work has been rather than how good it was.
 
-Two practices protect against the bad branch. First, a standing weekly written update in a channel people actually read — three lines on what moved, what you learned and what you need. Second, deliberate one-to-one contact with at least one person outside your immediate team each month, which is how remote professionals hear about things before they are announced.
+Two practices protect against the bad branch. First, a standing weekly written update in a channel people actually read - three lines on what moved, what you learned and what you need. Second, deliberate one-to-one contact with at least one person outside your immediate team each month, which is how remote professionals hear about things before they are announced.
 
-If the employer offers an onboarding period with more presence — a first week on site, a fortnight of daily calls with a buddy — take it, even if it is inconvenient. It compresses months of drift into days.
+If the employer offers an onboarding period with more presence - a first week on site, a fortnight of daily calls with a buddy - take it, even if it is inconvenient. It compresses months of drift into days.
 
 ## If the Team Is Not Remote-First, Negotiate This
 
@@ -157,7 +157,7 @@ He asks the questions. Three of eleven team members are fully remote, two of the
 
 He negotiates one addition: four full days a quarter in Utrecht, reimbursed, scheduled in advance, plus a home office budget.
 
-The first months are harder than expected — he underestimates how much he relied on incidental conversation — so he adds a weekly written update and a standing monthly call with two stakeholders. A year later he is leading a project. The quarterly days, he says, do most of the relationship work; the writing does the rest.
+The first months are harder than expected - he underestimates how much he relied on incidental conversation - so he adds a weekly written update and a standing monthly call with two stakeholders. A year later he is leading a project. The quarterly days, he says, do most of the relationship work; the writing does the rest.
 
 ## Key Takeaways
 
@@ -169,7 +169,7 @@ The first months are harder than expected — he underestimates how much he reli
 
 ## Where to Start
 
-Before committing to fully remote, check what exists within a reasonable distance of your home — the comparison is often closer than people expect once distance-based search replaces city names.
+Before committing to fully remote, check what exists within a reasonable distance of your home - the comparison is often closer than people expect once distance-based search replaces city names.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -195,7 +195,7 @@ Employers have working conditions obligations covering the home workstation; man
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I have a right to work from home in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No — you may request it under the Flexible Working Act, but employers retain discretion; agree it in writing."}},
+    {"@type": "Question", "name": "Do I have a right to work from home in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "No - you may request it under the Flexible Working Act, but employers retain discretion; agree it in writing."}},
     {"@type": "Question", "name": "How can I tell whether a company is genuinely remote-friendly?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how many work remotely already, where decisions are documented and how remote onboarding works."}},
     {"@type": "Question", "name": "Does remote work affect promotion?", "acceptedAnswer": {"@type": "Answer", "text": "It can, since visibility drives project allocation; compensate deliberately."}},
     {"@type": "Question", "name": "What if I want to work remotely from abroad?", "acceptedAnswer": {"@type": "Answer", "text": "Social security and tax follow where you work; get written confirmation and advice."}},

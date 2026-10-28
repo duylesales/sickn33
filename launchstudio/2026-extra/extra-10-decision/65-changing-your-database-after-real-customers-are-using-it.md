@@ -30,9 +30,9 @@ Three things change the moment real data exists.
 
 **The data must be preserved and transformed.** Splitting a `name` column into `first_name` and `last_name` is not a structure change; it is a structure change plus a rule for interpreting every existing value, including the ones with three words, a single word, or a company name.
 
-**The application keeps running during the change.** For the seconds or minutes a migration takes, requests are still arriving. If the code expects the old structure and the database has the new one — or the reverse — those requests fail. On a large table, "seconds" can become "eleven minutes," and eleven minutes of failed requests is an outage.
+**The application keeps running during the change.** For the seconds or minutes a migration takes, requests are still arriving. If the code expects the old structure and the database has the new one - or the reverse - those requests fail. On a large table, "seconds" can become "eleven minutes," and eleven minutes of failed requests is an outage.
 
-**Mistakes are not reversible.** A dropped column takes its contents with it. The only recovery is a restore, which discards everything else that happened since — and if you have never tested a restore, this is a bad moment to discover its properties.
+**Mistakes are not reversible.** A dropped column takes its contents with it. The only recovery is a restore, which discards everything else that happened since - and if you have never tested a restore, this is a bad moment to discover its properties.
 
 ## Expand and Contract: The Pattern Worth Knowing
 
@@ -56,17 +56,17 @@ The cost is that a change takes days instead of minutes, and that for a period t
 
 There is a specific, avoidable way to take a product offline with a single line, and it catches people who have only ever worked with small tables.
 
-Some schema operations require the database to lock the table while they run. On a table with 500 rows this is imperceptible. On a table with two million, the same operation may hold the lock for minutes, during which every query touching that table waits. Your application appears to hang, requests time out, and customers see a dead product — from a command that returned quickly in staging against a fraction of the data.
+Some schema operations require the database to lock the table while they run. On a table with 500 rows this is imperceptible. On a table with two million, the same operation may hold the lock for minutes, during which every query touching that table waits. Your application appears to hang, requests time out, and customers see a dead product - from a command that returned quickly in staging against a fraction of the data.
 
 Which operations lock, and for how long, depends on your database and version. In modern Postgres, adding a nullable column is fast, adding one with a default has become much cheaper than it once was, but adding an index without the concurrent option locks writes for the duration, and changing a column's type generally rewrites the whole table. The practical rules: build indexes concurrently, add columns as nullable and populate separately, avoid type changes on large tables in favour of expand-and-contract, and always check the size of the table you are about to alter rather than assuming staging is representative.
 
 ## Test on Real Volume, Not Real Data
 
-A migration tested against fifty rows tells you the syntax is valid and nothing else. The two things that matter — how long it takes and whether the transformation is correct for every value — only appear at scale and in variety.
+A migration tested against fifty rows tells you the syntax is valid and nothing else. The two things that matter - how long it takes and whether the transformation is correct for every value - only appear at scale and in variety.
 
 The practical approach: restore a recent production backup into a separate environment and run the migration there, timing it. This gives you a genuine duration estimate and, more valuably, exposes the data you did not know you had. Real customer data always contains surprises: empty strings where you expected nulls, an email field containing two addresses separated by a semicolon, dates from 1900 that someone used as a placeholder, and text in a column your transformation assumes is numeric.
 
-If your production data contains personal information, that copy is itself sensitive and belongs under the same protections as production, or should be anonymised before use — a detail that is easy to overlook when the goal is just to test a migration.
+If your production data contains personal information, that copy is itself sensitive and belongs under the same protections as production, or should be anonymised before use - a detail that is easy to overlook when the goal is just to test a migration.
 
 Every migration should also be paired, in advance, with a written answer to "what do I do if this goes wrong halfway?" For expand-and-contract steps the answer is usually simple. For anything irreversible, the answer needs to be established before you run it, not composed under pressure.
 
@@ -78,7 +78,7 @@ A specific habit separates products that can be maintained from products that ca
 
 Without this, nothing can be reproduced. A new environment cannot be created from scratch. Staging drifts from production in ways nobody can enumerate. And the answer to "when did this column appear and why" is lost permanently.
 
-This is a common weak point in AI-generated products, where schema changes are often made through a platform's visual editor or by an assistant modifying the database directly. Both leave no history. Bringing an existing product into a proper migration workflow starts with capturing the current schema as a baseline — a day of work that pays back the first time you need a second environment, and a prerequisite for any staged rollout.
+This is a common weak point in AI-generated products, where schema changes are often made through a platform's visual editor or by an assistant modifying the database directly. Both leave no history. Bringing an existing product into a proper migration workflow starts with capturing the current schema as a baseline - a day of work that pays back the first time you need a second environment, and a prerequisite for any staged rollout.
 
 ## Real example
 
@@ -90,10 +90,10 @@ She ran it during a quiet evening. In staging, against 900 rows, it had complete
 
 The subsequent review found a second, larger risk waiting: a planned change to split a combined address field into separate columns, written as a single migration that would drop the original after transforming it, tested against the same 900 staging rows.
 
-**Result:** the index rebuilt concurrently without locking, migrations moved into version control with a captured baseline, a policy of testing every migration against a restored production copy for timing, and the address change re-planned as expand-and-contract. The backfill duly revealed 3,100 addresses the transformation handled incorrectly — found before anything read the new columns.
+**Result:** the index rebuilt concurrently without locking, migrations moved into version control with a captured baseline, a policy of testing every migration against a restored production copy for timing, and the address change re-planned as expand-and-contract. The backfill duly revealed 3,100 addresses the transformation handled incorrectly - found before anything read the new columns.
 
 > "Nine minutes offline from one line that had taken half a second on my laptop. The staging database was a thousandth the size and I had never thought about what that meant."
-> — **Lieke Groothuis, Founder, Rittenboek**
+> - **Lieke Groothuis, Founder, Rittenboek**
 
 **Cost & Timeline:** migration workflow and staged schema change delivered in 3 business days.
 

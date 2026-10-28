@@ -12,7 +12,7 @@ Niet-technische oprichters hoeven geen programmeur te zijn om kwaliteit te herke
 
 Bij LaunchStudio bewijzen we senioriteit met transparante code, geautomatiseerde tests en open communicatie. 🛡️
 
-Mei's proef-sprint slaagde met vlag en wimpel; ze lanceerde met 28 boetieks zonder één bug. (€ 2.950 totaal — 11 werkdagen.) 🚀
+Mei's proef-sprint slaagde met vlag en wimpel; ze lanceerde met 28 boetieks zonder één bug. (€ 2.950 totaal - 11 werkdagen.) 🚀
 
 👉 Ontdek hoe u een dev partner scherp toetst: https://launchstudio.eu/nl/blog/non-technical-founder-vetting-code-quality-case-study
 

@@ -31,15 +31,15 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Every timestamp your product will ever store — when an account was created, when a booking was made, when an AI-generated result was produced — depends on a time zone decision that most founders never explicitly make, letting whatever their AI coding tool's default behavior happens to be quietly determine it instead, a decision with real, specific consequences once your product serves users across more than one time zone, or even just experiences the twice-yearly clock changes most European time zones still observe.
+Every timestamp your product will ever store - when an account was created, when a booking was made, when an AI-generated result was produced - depends on a time zone decision that most founders never explicitly make, letting whatever their AI coding tool's default behavior happens to be quietly determine it instead, a decision with real, specific consequences once your product serves users across more than one time zone, or even just experiences the twice-yearly clock changes most European time zones still observe.
 
 ## Why Leaving This Implicit Specifically Causes Problems Later
 
-An AI coding tool generating date and time handling code makes a default choice — often storing timestamps in whatever time zone the developer's own machine happens to be set to, or sometimes in UTC by default, depending on the specific framework and database involved — without necessarily flagging this as a decision requiring explicit founder input. This works fine, invisibly, for as long as a founder is testing entirely from their own location, in their own time zone, and breaks in specific, confusing ways the moment either real users in a different time zone or an actual daylight saving transition enters the picture.
+An AI coding tool generating date and time handling code makes a default choice - often storing timestamps in whatever time zone the developer's own machine happens to be set to, or sometimes in UTC by default, depending on the specific framework and database involved - without necessarily flagging this as a decision requiring explicit founder input. This works fine, invisibly, for as long as a founder is testing entirely from their own location, in their own time zone, and breaks in specific, confusing ways the moment either real users in a different time zone or an actual daylight saving transition enters the picture.
 
 ## The Specific, Well-Established Correct Default
 
-Storing all timestamps in UTC (Coordinated Universal Time) in the database, and converting to a user's local time zone only at the point of display, is the well-established, correct pattern across the software industry generally — not a matter of founder preference, but a genuinely settled best practice that avoids the specific bugs covered elsewhere in this content series' broader guidance on timezone-related errors, precisely because UTC never shifts for daylight saving and provides one single, unambiguous reference point regardless of where a given user or server happens to be located.
+Storing all timestamps in UTC (Coordinated Universal Time) in the database, and converting to a user's local time zone only at the point of display, is the well-established, correct pattern across the software industry generally - not a matter of founder preference, but a genuinely settled best practice that avoids the specific bugs covered elsewhere in this content series' broader guidance on timezone-related errors, precisely because UTC never shifts for daylight saving and provides one single, unambiguous reference point regardless of where a given user or server happens to be located.
 
 ## Where AI-Generated Code Specifically Deviates From This Pattern
 
@@ -51,25 +51,25 @@ Storing all timestamps in UTC (Coordinated Universal Time) in the database, and 
 
 ## Why This Is Considerably Cheaper to Fix Early Than Late
 
-Establishing UTC-first storage from the very beginning of a database schema costs essentially nothing extra — it's simply a different default convention applied consistently from day one. Retrofitting it onto an already-live product with accumulated timestamp data in an inconsistent or local-time format requires a genuine, careful data migration, mirroring the same "cheaper to address early" pattern covered throughout broader guidance regarding other architectural decisions.
+Establishing UTC-first storage from the very beginning of a database schema costs essentially nothing extra - it's simply a different default convention applied consistently from day one. Retrofitting it onto an already-live product with accumulated timestamp data in an inconsistent or local-time format requires a genuine, careful data migration, mirroring the same "cheaper to address early" pattern covered throughout broader guidance regarding other architectural decisions.
 
 [LaunchStudio](https://launchstudio.eu/en/) establishes and verifies UTC-first timestamp handling as a standard part of production hardening, checking for exactly the inconsistencies and local-time storage patterns AI-generated code frequently introduces, backed by Manifera's broader engineering discipline applying well-established industry conventions consistently across every project.
 
-[Get your timestamp handling checked before it becomes a genuine migration problem](https://launchstudio.eu/en/#calculator) — this specific decision is cheap to get right early and expensive to fix later.
+[Get your timestamp handling checked before it becomes a genuine migration problem](https://launchstudio.eu/en/#calculator) - this specific decision is cheap to get right early and expensive to fix later.
 
 ## Beyond Storage: Other Time Decisions AI-Generated Code Tends to Skip
 
 UTC-first storage, covered above, is the foundational decision, but it doesn't automatically resolve every time-related question a product actually has to answer. A handful of adjacent decisions get overlooked even in codebases that have correctly adopted UTC storage, each capable of producing the same category of confusing, hard-to-reproduce bug once real usage and real time actually pass.
 
-**Date-only fields quietly treated as full timestamps.** A birthday, a subscription renewal date, a deadline that's meant to represent a specific calendar day rather than a specific moment — stored as a full UTC timestamp, these can shift to the wrong day when converted to a user's local time zone near a date boundary, since a date that's genuinely meant to be timezone-agnostic gets an unintended timezone dependency the moment it's stored as a timestamp rather than a plain date value.
+**Date-only fields quietly treated as full timestamps.** A birthday, a subscription renewal date, a deadline that's meant to represent a specific calendar day rather than a specific moment - stored as a full UTC timestamp, these can shift to the wrong day when converted to a user's local time zone near a date boundary, since a date that's genuinely meant to be timezone-agnostic gets an unintended timezone dependency the moment it's stored as a timestamp rather than a plain date value.
 
-**Recurring events that don't account for a time zone's own rules changing across a recurrence.** A weekly appointment scheduled at "9am every Tuesday" needs to actually mean 9am local time on every future Tuesday, including ones on the other side of a daylight saving transition — a naive implementation that stores a fixed UTC offset for the recurrence, rather than recalculating the correct UTC time for each occurrence based on the user's actual time zone rules, will drift by an hour immediately after the next clock change.
+**Recurring events that don't account for a time zone's own rules changing across a recurrence.** A weekly appointment scheduled at "9am every Tuesday" needs to actually mean 9am local time on every future Tuesday, including ones on the other side of a daylight saving transition - a naive implementation that stores a fixed UTC offset for the recurrence, rather than recalculating the correct UTC time for each occurrence based on the user's actual time zone rules, will drift by an hour immediately after the next clock change.
 
-**No stored record of which time zone a user actually intended.** UTC storage answers "what moment did this happen at," not "what time zone should this be displayed in for this specific user." A product serving users across multiple time zones needs to actually store each user's time zone preference somewhere — inferred from their browser at signup, or explicitly set — rather than assuming a single default display time zone is correct for everyone, a gap that's invisible until a second time zone's worth of real users actually shows up.
+**No stored record of which time zone a user actually intended.** UTC storage answers "what moment did this happen at," not "what time zone should this be displayed in for this specific user." A product serving users across multiple time zones needs to actually store each user's time zone preference somewhere - inferred from their browser at signup, or explicitly set - rather than assuming a single default display time zone is correct for everyone, a gap that's invisible until a second time zone's worth of real users actually shows up.
 
-**Scheduled jobs and reminders anchored to server time rather than the relevant user's time.** An AI-generated background job sending a "reminder at 9am" notification often runs on a schedule defined in the server's own time zone, which may not match any actual user's time zone at all, meaning a reminder meant to arrive at a sensible local hour can land in the middle of the night for users elsewhere — a gap that only surfaces once the product actually has users outside the developer's own time zone.
+**Scheduled jobs and reminders anchored to server time rather than the relevant user's time.** An AI-generated background job sending a "reminder at 9am" notification often runs on a schedule defined in the server's own time zone, which may not match any actual user's time zone at all, meaning a reminder meant to arrive at a sensible local hour can land in the middle of the night for users elsewhere - a gap that only surfaces once the product actually has users outside the developer's own time zone.
 
-None of these require a fundamentally different architecture than UTC-first storage already establishes — they require explicitly thinking through, for each specific feature, whether "the moment in time" (UTC) or "the user's local experience of that moment" (their specific time zone, tracked separately) is actually the thing that matters, rather than assuming UTC storage alone has automatically handled every time-related decision the product will ever need to make correctly.
+None of these require a fundamentally different architecture than UTC-first storage already establishes - they require explicitly thinking through, for each specific feature, whether "the moment in time" (UTC) or "the user's local experience of that moment" (their specific time zone, tracked separately) is actually the thing that matters, rather than assuming UTC storage alone has automatically handled every time-related decision the product will ever need to make correctly.
 
 ## Real example
 
@@ -77,14 +77,14 @@ None of these require a fundamentally different architecture than UTC-first stor
 
 Bram, a founder in Deventer running AfspraakPlan, an AI appointment scheduling tool for small service businesses, built entirely using Bolt with timestamps stored based on whatever local time zone his own development machine happened to be configured to, tested exclusively during a period when no daylight saving transition occurred.
 
-The first time a daylight saving clock change occurred after AfspraakPlan's launch, several appointments booked before the transition displayed at the wrong time afterward, since the underlying storage had never explicitly accounted for the time zone offset shift — a bug invisible during Bram's entire development and testing period, which happened to occur entirely within one consistent offset period.
+The first time a daylight saving clock change occurred after AfspraakPlan's launch, several appointments booked before the transition displayed at the wrong time afterward, since the underlying storage had never explicitly accounted for the time zone offset shift - a bug invisible during Bram's entire development and testing period, which happened to occur entirely within one consistent offset period.
 
 **Result:** LaunchStudio migrated AfspraakPlan's existing timestamp data to proper UTC-based storage with explicit local-time conversion only at display time, closing the gap permanently and preventing any future daylight saving transition from causing the same displayed-time confusion again.
 
 > *"Everything I tested happened to fall within one consistent time period, so I never once noticed a problem. The very first clock change after real appointments were already booked is when things started displaying an hour off, and by then it was real customer data I had to carefully migrate rather than a clean decision I could have made for free at the very start."*
-> — **Bram Kuijpers, Founder, AfspraakPlan (Deventer)**
+> - **Bram Kuijpers, Founder, AfspraakPlan (Deventer)**
 
-**Cost & Timeline:** €1,200 (timestamp storage migration to UTC) — completed in 5 business days.
+**Cost & Timeline:** €1,200 (timestamp storage migration to UTC) - completed in 5 business days.
 
 ---
 
@@ -92,15 +92,15 @@ The first time a daylight saving clock change occurred after AfspraakPlan's laun
 
 ### Does UTC-first storage matter even for a product only ever used by customers in a single time zone?
 
-Yes, specifically because of the daylight saving transition issue covered in Bram's case — even a single-time-zone product experiences the twice-yearly clock change most European time zones observe, meaning the ambiguity risk exists regardless of whether multiple time zones are ever involved.
+Yes, specifically because of the daylight saving transition issue covered in Bram's case - even a single-time-zone product experiences the twice-yearly clock change most European time zones observe, meaning the ambiguity risk exists regardless of whether multiple time zones are ever involved.
 
 ### How would a founder check whether their existing product already has this gap, similar to Bram's situation?
 
-Reviewing how timestamps are actually stored in the database — checking whether they include explicit UTC or time zone information, or are stored as ambiguous local values — is the direct technical check, ideally performed before any daylight saving transition reveals the gap the way it did for Bram.
+Reviewing how timestamps are actually stored in the database - checking whether they include explicit UTC or time zone information, or are stored as ambiguous local values - is the direct technical check, ideally performed before any daylight saving transition reveals the gap the way it did for Bram.
 
 ### Is migrating existing timestamp data to UTC, once a product is already live, always possible?
 
-Generally possible, though it requires careful handling to correctly determine what the original, ambiguous local timestamps actually meant at the time they were recorded — a more involved process than establishing the correct pattern from the start would have been.
+Generally possible, though it requires careful handling to correctly determine what the original, ambiguous local timestamps actually meant at the time they were recorded - a more involved process than establishing the correct pattern from the start would have been.
 
 ### Does this concern apply to timestamps generated by AI model outputs specifically, or just general application timestamps?
 

@@ -65,7 +65,7 @@ A vacancy has been open five months, a project is slipping, and someone suggests
 
 A contractor's day rate looks like a large premium over an equivalent salary, and comparing them directly is misleading in both directions.
 
-Against the contractor's rate, set the true cost of an employee: gross salary, employer social contributions, pension, holiday, sickness, equipment, training, recruitment cost and management overhead. Depending on the country, the loaded cost is considerably above the headline salary — the difference is substantial in much of continental Europe.
+Against the contractor's rate, set the true cost of an employee: gross salary, employer social contributions, pension, holiday, sickness, equipment, training, recruitment cost and management overhead. Depending on the country, the loaded cost is considerably above the headline salary - the difference is substantial in much of continental Europe.
 
 Against the employee, set the contractor's lack of holiday and sickness cost, their immediate availability, and the absence of termination obligations.
 
@@ -127,13 +127,13 @@ These conditions also attract better contractors, because competent professional
 
 Most European organisations that use both arrangements well converge on a similar structure.
 
-A permanent core owns the systems, the domain knowledge and the relationships. These are the people who know why the data behaves as it does and who will still be there in three years. Even a small permanent core — two or three people — changes everything, because there is someone to receive knowledge and someone accountable for what runs.
+A permanent core owns the systems, the domain knowledge and the relationships. These are the people who know why the data behaves as it does and who will still be there in three years. Even a small permanent core - two or three people - changes everything, because there is someone to receive knowledge and someone accountable for what runs.
 
 Contractors supplement this for defined pieces: a specialist capability, a project with a deadline, a peak in demand, or cover for absence. They work on bounded deliverables alongside permanent staff.
 
 Consultancies and agencies fit a third role: larger pieces of work requiring a team, or capability the organisation does not want to build at all.
 
-The arrangement that reliably fails is the inverse — a permanent manager with no permanent technical staff, and a rotating cast of contractors building things. The organisation accumulates systems and no understanding, and each new contractor spends a month learning what the last one knew.
+The arrangement that reliably fails is the inverse - a permanent manager with no permanent technical staff, and a rotating cast of contractors building things. The organisation accumulates systems and no understanding, and each new contractor spends a month learning what the last one knew.
 
 If you are starting from nothing, the sequence that works is usually a contractor to prove the problem is tractable, then a permanent hire to own what follows, then further contract help as needed.
 
@@ -179,7 +179,7 @@ Be honest that the work will change. Employment brings meetings, longer horizons
 
 ## How OnlyAIJobs Supports Permanent Hiring
 
-OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position — vacancies compete on how clearly they are written rather than on advertising spend.
+OnlyAIJobs is a European job board listing only AI, machine learning and data roles. Candidates browse free without an account, applications go directly to your own careers page rather than through an intermediary, and no employer can pay for a better position - vacancies compete on how clearly they are written rather than on advertising spend.
 
 When the decision is to build permanent capability, the practical challenge for many organisations is being found at all, particularly outside the main technology centres. Listings show the exact address and the distance from the candidate's home, which surfaces employers that candidates would otherwise never encounter.
 

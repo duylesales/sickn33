@@ -10,7 +10,7 @@ Reserveringen, subsidienummers en gebruiksnotities van elke instelling stonden i
 ✅ Tenancy per instelling en faciliteit met row level security en rollen per faciliteit
 ✅ SSO via OpenID Connect voor institutionele logins, plus een alternatief voor externe gebruikers
 ✅ De database gemigreerd naar een EU-regio met back-ups en een geteste restore
-✅ Toegangslogging, instelbare bewaartermijnen per instelling en releases met versies via CI met staging — terwijl het bureau voor technologietransfer de licentie afrondde
+✅ Toegangslogging, instelbare bewaartermijnen per instelling en releases met versies via CI met staging - terwijl het bureau voor technologietransfer de licentie afrondde
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering en werk voor onderzoeksorganisaties als TNO, maken we van het vertrouwen dat in het lab vanzelfsprekend was regels die in code worden afgedwongen. ⚙️
 

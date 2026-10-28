@@ -1,6 +1,6 @@
-🕸️ De met Cursor gebouwde triage-tool voor klantenservice van Tomás verpakte een vaste driestapspijplijn in een LangChain `AgentExecutor` — een eenvoudige wijziging in urgentiescoring kostte twee volle dagen en raakte vijf bestanden. 🧠
+🕸️ De met Cursor gebouwde triage-tool voor klantenservice van Tomás verpakte een vaste driestapspijplijn in een LangChain `AgentExecutor` - een eenvoudige wijziging in urgentiescoring kostte twee volle dagen en raakte vijf bestanden. 🧠
 
-Als uw "agent" nooit daadwerkelijk vertakt, draait u geen orkestratie — u draait overhead rond een vaste functieaanroep.
+Als uw "agent" nooit daadwerkelijk vertakt, draait u geen orkestratie - u draait overhead rond een vaste functieaanroep.
 
 ❌ `AgentExecutor` en geheugenklassen die verpakken wat functioneel één enkele, stateless API-aanroep is
 ❌ Eenvoudige promptwijzigingen die aanpassingen in drie of meer bestanden vereisen
@@ -12,7 +12,7 @@ Als uw "agent" nooit daadwerkelijk vertakt, draait u geen orkestratie — u draa
 
 Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-De stack van Tomás werd drastisch eenvoudiger: dezelfde urgentiescoringswijziging die twee dagen en vijf bestanden had gekost, werd in negen regels code geïmplementeerd in minder dan twintig minuten, en een nieuwe engineer begreep de volledige AI-pijplijn in één zitting. (€2.600 (Launch & Grow Pakket) — opschoning voltooid en uitgerold in 10 werkdagen.). 🚀
+De stack van Tomás werd drastisch eenvoudiger: dezelfde urgentiescoringswijziging die twee dagen en vijf bestanden had gekost, werd in negen regels code geïmplementeerd in minder dan twintig minuten, en een nieuwe engineer begreep de volledige AI-pijplijn in één zitting. (€2.600 (Launch & Grow Pakket) - opschoning voltooid en uitgerold in 10 werkdagen.). 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/langchain-cleanup-vs-rebuild-decision
 

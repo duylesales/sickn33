@@ -20,11 +20,11 @@ target_persona: "CTO"
 }
 </script>
 
-Every CTO who inherits a decade-old codebase eventually asks the same question — rewrite it from scratch or keep patching it — and both instinctive answers are usually wrong, because the actual answer almost never involves choosing between those two extremes at all.
+Every CTO who inherits a decade-old codebase eventually asks the same question - rewrite it from scratch or keep patching it - and both instinctive answers are usually wrong, because the actual answer almost never involves choosing between those two extremes at all.
 
 **The Pain:** A CTO at a fruit-orchard logistics and order-management software company based in Neder-Betuwe, the Gelderland municipality straddling the Betuweroute freight rail line through the heart of the Betuwe's fruit-growing orchards, has inherited an order management system built over eleven years by four different developers who each left without documenting what they changed, and every new feature request now requires a senior engineer to spend days tracing execution paths through tightly coupled code before anyone can safely estimate the work.
 
-**The Agitation:** A recent, seemingly minor change to the order-pricing logic broke inventory allocation for an entirely unrelated warehouse module three weeks later, in a way nobody connected to the original change until a major fruit distributor's order was fulfilled incorrectly during peak harvest season — and the CTO now has a board asking, in blunt terms, whether the company needs to write off the platform entirely and start over, a decision that would mean a multi-year rebuild timeline the business cannot actually afford to wait through.
+**The Agitation:** A recent, seemingly minor change to the order-pricing logic broke inventory allocation for an entirely unrelated warehouse module three weeks later, in a way nobody connected to the original change until a major fruit distributor's order was fulfilled incorrectly during peak harvest season - and the CTO now has a board asking, in blunt terms, whether the company needs to write off the platform entirely and start over, a decision that would mean a multi-year rebuild timeline the business cannot actually afford to wait through.
 
 ## The Legacy Rescue Mandate
 
@@ -32,13 +32,13 @@ A genuine custom software application development company approaches inherited s
 
 First, the rescue has to begin with dependency mapping across the entire codebase, tracing which modules actually call which others, which shared state and global variables cross module boundaries, and where the pricing-to-inventory coupling that caused the recent incident actually lives in the code. Without this map, every subsequent change is still a guess dressed up as an estimate.
 
-Second, before any refactoring touches production logic, characterization tests need to capture the system's actual current behavior — not its intended behavior, its real behavior, including the undocumented quirks and edge cases business users have learned to work around over eleven years. These tests exist specifically so that a refactor can be verified to preserve existing behavior exactly, which is the property that makes safe incremental change possible at all in code nobody fully understands anymore.
+Second, before any refactoring touches production logic, characterization tests need to capture the system's actual current behavior - not its intended behavior, its real behavior, including the undocumented quirks and edge cases business users have learned to work around over eleven years. These tests exist specifically so that a refactor can be verified to preserve existing behavior exactly, which is the property that makes safe incremental change possible at all in code nobody fully understands anymore.
 
-Third, the actual decoupling work should follow the strangler fig pattern: new functionality and gradually refactored old functionality get built behind a facade that routes requests to either the legacy code or the new, modularized replacement, allowing the two to coexist and the legacy system to be replaced piece by piece rather than in one high-risk cutover. The pricing module that caused the recent incident is a natural first candidate — high business risk, high change frequency, and now a demonstrated coupling problem worth fixing first.
+Third, the actual decoupling work should follow the strangler fig pattern: new functionality and gradually refactored old functionality get built behind a facade that routes requests to either the legacy code or the new, modularized replacement, allowing the two to coexist and the legacy system to be replaced piece by piece rather than in one high-risk cutover. The pricing module that caused the recent incident is a natural first candidate - high business risk, high change frequency, and now a demonstrated coupling problem worth fixing first.
 
-Fourth, technical debt has to be quantified and prioritized by actual business risk and change frequency, not by which code looks the messiest. A module that's ugly but stable and rarely touched is a lower priority than a module that is merely somewhat tangled but gets modified every sprint and has already caused a production incident — prioritizing by mess alone routinely wastes effort on the wrong parts of the system.
+Fourth, technical debt has to be quantified and prioritized by actual business risk and change frequency, not by which code looks the messiest. A module that's ugly but stable and rarely touched is a lower priority than a module that is merely somewhat tangled but gets modified every sprint and has already caused a production incident - prioritizing by mess alone routinely wastes effort on the wrong parts of the system.
 
-Fifth, each extracted module needs a defined, enforced interface boundary going forward — explicit inputs and outputs, no shared mutable state reaching across the boundary — so that the coupling failure that caused the pricing-to-inventory incident cannot recur silently in whatever comes next. This is the actual deliverable of a rescue project: not just fixed code, but code that structurally prevents the specific failure mode that triggered the rescue in the first place.
+Fifth, each extracted module needs a defined, enforced interface boundary going forward - explicit inputs and outputs, no shared mutable state reaching across the boundary - so that the coupling failure that caused the pricing-to-inventory incident cannot recur silently in whatever comes next. This is the actual deliverable of a rescue project: not just fixed code, but code that structurally prevents the specific failure mode that triggered the rescue in the first place.
 
 Sixth, documentation has to be treated as a first-class deliverable of the rescue project, not an afterthought, precisely because undocumented institutional knowledge walking out the door with departing developers is what created this situation to begin with. Every extracted module should leave behind a clear record of its boundaries, its dependencies, and its business logic, so the next CTO's incident response doesn't start with days of archaeology.
 
@@ -59,19 +59,19 @@ Sixth, documentation has to be treated as a first-class deliverable of the rescu
 
 ### What This Looks Like in Practice
 
-1. **Weeks 1-2 — Dependency mapping and risk prioritization:** The Autonomous Pod maps the full codebase's module dependencies and shared state, identifying the pricing-to-inventory coupling and other high-risk, high-change-frequency areas as first priorities.
-2. **Weeks 2-4 — Characterization testing and facade construction:** Characterization tests capture the pricing and inventory modules' actual current behavior, and a strangler-fig facade is built to route requests between legacy and refactored code during the transition.
-3. **Weeks 4-6 — Incremental extraction of priority modules:** The pricing module is extracted first with an enforced interface boundary, followed by the inventory allocation logic, each validated against characterization tests before cutover.
-4. **Weeks 6-8 — Documentation and remaining module roadmap:** Full documentation is delivered for extracted modules, and a prioritized roadmap for the remaining legacy code is handed to the internal team for ongoing incremental work.
+1. **Weeks 1-2 - Dependency mapping and risk prioritization:** The Autonomous Pod maps the full codebase's module dependencies and shared state, identifying the pricing-to-inventory coupling and other high-risk, high-change-frequency areas as first priorities.
+2. **Weeks 2-4 - Characterization testing and facade construction:** Characterization tests capture the pricing and inventory modules' actual current behavior, and a strangler-fig facade is built to route requests between legacy and refactored code during the transition.
+3. **Weeks 4-6 - Incremental extraction of priority modules:** The pricing module is extracted first with an enforced interface boundary, followed by the inventory allocation logic, each validated against characterization tests before cutover.
+4. **Weeks 6-8 - Documentation and remaining module roadmap:** Full documentation is delivered for extracted modules, and a prioritized roadmap for the remaining legacy code is handed to the internal team for ongoing incremental work.
 
-Neder-Betuwe sits at the heart of the Betuwe fruit-growing region in Gelderland, a landscape of orchards that has cultivated fruit for centuries, and the Betuweroute freight rail line — one of the busiest dedicated freight corridors in the Netherlands — runs directly through the municipality, underscoring the region's deep ties to fruit logistics and distribution. A company managing order and inventory systems for this supply chain is operating on genuinely time-sensitive, harvest-driven business cycles, which makes a production incident during peak harvest season a materially different problem than the same bug occurring during a quiet month.
+Neder-Betuwe sits at the heart of the Betuwe fruit-growing region in Gelderland, a landscape of orchards that has cultivated fruit for centuries, and the Betuweroute freight rail line - one of the busiest dedicated freight corridors in the Netherlands - runs directly through the municipality, underscoring the region's deep ties to fruit logistics and distribution. A company managing order and inventory systems for this supply chain is operating on genuinely time-sensitive, harvest-driven business cycles, which makes a production incident during peak harvest season a materially different problem than the same bug occurring during a quiet month.
 
 ## The Hybrid Rescue Model
 
 - **Amsterdam (Governance/Strategy):** Dutch-based architects own the dependency mapping and prioritization decisions, taking direct responsibility for the migration risk of extracting business-critical modules from a decade-old system nobody fully documented.
 - **Vietnam (Execution/Velocity):** Autonomous Pods in Ho Chi Minh City build the characterization tests, the strangler-fig facade, and the incremental module extractions, working through the codebase methodically rather than attempting a high-risk full rewrite.
 
-This structure means the highest-stakes decisions — what to touch first, how much risk a given extraction carries — sit with senior European architects, while the substantial engineering effort of characterization testing and incremental refactoring moves at Autonomous Pod velocity. See how the model works on our [offshore software development page](https://www.manifera.com/services/offshore-software-development/).
+This structure means the highest-stakes decisions - what to touch first, how much risk a given extraction carries - sit with senior European architects, while the substantial engineering effort of characterization testing and incremental refactoring moves at Autonomous Pod velocity. See how the model works on our [offshore software development page](https://www.manifera.com/services/offshore-software-development/).
 
 ## Case Study & Testimonial
 
@@ -82,7 +82,7 @@ Cassiers Software Herstel NV, a Belgian company providing order and inventory ma
 Manifera mapped the full dependency graph of the pricing and inventory modules, built characterization tests capturing their actual current behavior, and extracted both behind a strangler-fig facade with enforced interface boundaries between them. The extraction was completed without a single regression against the characterization test suite, and the specific coupling that caused the original incident was structurally eliminated rather than merely patched.
 
 > *"We were seriously discussing a full rewrite before this. Instead, they fixed the actual coupling that caused our incident and left us with a system we finally understand, without betting the business on a multi-year rebuild."*
-> — **CTO, Cassiers Software Herstel NV, Belgium**
+> - **CTO, Cassiers Software Herstel NV, Belgium**
 
 ## Full Rewrite vs. Manifera's Incremental Modularization Approach
 
@@ -96,18 +96,18 @@ Manifera mapped the full dependency graph of the pricing and inventory modules, 
 
 ## The Economics
 
-The pricing-to-inventory incident cost this Neder-Betuwe company an estimated **€25,000** in incorrect order fulfillment, expedited correction shipping during peak harvest season, and account-management time spent repairing trust with a major wholesale client — a single incident traceable to one undocumented coupling in an eleven-year-old codebase. A full platform rewrite for a comparable order management system typically runs **€150,000–€250,000** over twelve to eighteen months with real delivery risk throughout. A targeted, incremental modularization rescue — dependency mapping, characterization testing, and strangler-fig extraction of the highest-risk modules — typically costs **€35,000–€55,000** delivered over six to eight weeks. Companies that choose incremental rescue over a full rewrite typically resolve their most business-critical coupling risks at roughly **one-quarter the cost** and a small fraction of the timeline, with production incidents tied to the rescued modules dropping close to zero once enforced interface boundaries are in place.
+The pricing-to-inventory incident cost this Neder-Betuwe company an estimated **€25,000** in incorrect order fulfillment, expedited correction shipping during peak harvest season, and account-management time spent repairing trust with a major wholesale client - a single incident traceable to one undocumented coupling in an eleven-year-old codebase. A full platform rewrite for a comparable order management system typically runs **€150,000–€250,000** over twelve to eighteen months with real delivery risk throughout. A targeted, incremental modularization rescue - dependency mapping, characterization testing, and strangler-fig extraction of the highest-risk modules - typically costs **€35,000–€55,000** delivered over six to eight weeks. Companies that choose incremental rescue over a full rewrite typically resolve their most business-critical coupling risks at roughly **one-quarter the cost** and a small fraction of the timeline, with production incidents tied to the rescued modules dropping close to zero once enforced interface boundaries are in place.
 
-If your codebase has reached the point where every change requires archaeology before anyone can estimate it, the answer probably isn't a full rewrite — it's a structured rescue that fixes the actual coupling causing your incidents. Talk to Manifera about a legacy code assessment: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
+If your codebase has reached the point where every change requires archaeology before anyone can estimate it, the answer probably isn't a full rewrite - it's a structured rescue that fixes the actual coupling causing your incidents. Talk to Manifera about a legacy code assessment: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
 ## Technical Deep-Dive: Detecting Dangerous Coupling Before It Breaks Production
 
-Manual code review rarely catches the coupling that caused the pricing-to-inventory incident — it takes structural analysis:
+Manual code review rarely catches the coupling that caused the pricing-to-inventory incident - it takes structural analysis:
 
 - **Afferent/efferent coupling counts.** A static dependency-graph pass computes, per module, how many other modules depend on it (afferent) and how many it depends on (efferent). A module scoring high on both is the exact profile that caused this incident: heavily relied upon and itself entangled with everything around it.
-- **Instability metric (I = Ce / (Ca + Ce)).** Modules near 0.5 are the most dangerous — neither stable enough to be safely depended upon nor independent enough to change without ripple effects.
+- **Instability metric (I = Ce / (Ca + Ce)).** Modules near 0.5 are the most dangerous - neither stable enough to be safely depended upon nor independent enough to change without ripple effects.
 - **Shared mutable state scans.** Static analysis tools flag global variables and shared objects written from more than one module, which is the specific pattern that let a pricing change silently corrupt inventory state.
-- **Change-frequency overlay.** Cross-referencing git commit history against the dependency graph surfaces which high-coupling modules are also frequently modified — the actual highest-risk intersection, not the messiest-looking code.
+- **Change-frequency overlay.** Cross-referencing git commit history against the dependency graph surfaces which high-coupling modules are also frequently modified - the actual highest-risk intersection, not the messiest-looking code.
 
 Running this analysis before writing a single characterization test typically takes three to five days on a decade-old codebase and produces a prioritized extraction order backed by numbers, not intuition about which files "feel" risky.
 

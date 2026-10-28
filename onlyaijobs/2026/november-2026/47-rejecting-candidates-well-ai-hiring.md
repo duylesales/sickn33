@@ -35,7 +35,7 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-For every AI or data role filled, dozens of other candidates hear "no" — or hear nothing at all. Many employers treat rejection as an administrative afterthought: a template email sent weeks later, or silence after an interview. In the Dutch AI and data community, that is a costly habit. The community is small enough that people meet at meetups, study together, work at the same clients and share experiences in online groups. A candidate rejected today may be the ideal hire next year, a future customer or the colleague who recommends — or warns against — your company. How you reject candidates is part of your employer brand.
+For every AI or data role filled, dozens of other candidates hear "no" - or hear nothing at all. Many employers treat rejection as an administrative afterthought: a template email sent weeks later, or silence after an interview. In the Dutch AI and data community, that is a costly habit. The community is small enough that people meet at meetups, study together, work at the same clients and share experiences in online groups. A candidate rejected today may be the ideal hire next year, a future customer or the colleague who recommends - or warns against - your company. How you reject candidates is part of your employer brand.
 
 ## Why Rejection Quality Matters More in AI Hiring
 
@@ -90,7 +90,7 @@ Many employers avoid giving feedback out of fear of legal disputes. In practice,
 
 **Be specific and factual.** "Your solution did not include validation across time, which is important for our forecasting work" is useful and defensible. "Not a culture fit" is vague and can raise suspicion of bias.
 
-**Avoid references to protected characteristics.** Comments about age, nationality, family situation, religion or similar characteristics — even indirectly, such as "we are looking for a young team" — can indicate discrimination under the **General Equal Treatment Act** and related legislation. Candidates who suspect discrimination can request an opinion from the **Netherlands Institute for Human Rights**.
+**Avoid references to protected characteristics.** Comments about age, nationality, family situation, religion or similar characteristics - even indirectly, such as "we are looking for a young team" - can indicate discrimination under the **General Equal Treatment Act** and related legislation. Candidates who suspect discrimination can request an opinion from the **Netherlands Institute for Human Rights**.
 
 **Keep notes consistent with feedback.** Under the **GDPR**, candidates can request access to their personal data, which may include interview notes. Feedback and notes should tell the same story.
 
@@ -148,13 +148,13 @@ Organisations that take candidate experience seriously measure it. Options inclu
 - **Percentage of candidates** who receive a response.
 - **Short surveys** for candidates after interviews, including those rejected.
 - **Monitoring public reviews** and responding constructively.
-- **Tracking rehires** — candidates rejected once and hired later.
+- **Tracking rehires** - candidates rejected once and hired later.
 
 ## A Concrete Scenario: The Runner-Up Who Became a Hire
 
 A scale-up hiring a senior ML engineer has two strong finalists. It selects one candidate. The hiring manager calls the other finalist the same day, explains that the decision was close, gives specific feedback about experience with large-scale deployment and asks whether they may keep the candidate's details for future roles. The candidate agrees.
 
-Four months later, the scale-up opens a new role focused on model evaluation — an area where the runner-up excelled. The recruiter contacts the candidate personally. The candidate, impressed by the respectful rejection, accepts an interview and is hired within three weeks, saving the company time and recruitment costs.
+Four months later, the scale-up opens a new role focused on model evaluation - an area where the runner-up excelled. The recruiter contacts the candidate personally. The candidate, impressed by the respectful rejection, accepts an interview and is hired within three weeks, saving the company time and recruitment costs.
 
 ## A Common Misconception
 
@@ -176,7 +176,7 @@ Different situations call for different messages. A few principles per situation
 
 **Internal candidate.** Hold a conversation in person, provide concrete feedback and discuss development opportunities.
 
-Standardising these message types in the applicant tracking system — while leaving room for personalisation — saves time and improves consistency.
+Standardising these message types in the applicant tracking system - while leaving room for personalisation - saves time and improves consistency.
 
 ## A Rejection Process Checklist
 
@@ -201,9 +201,9 @@ Standardising these message types in the applicant tracking system — while lea
 
 ## Where to Start
 
-Review your last three hiring processes: how long candidates waited, how many received no response and whether finalists received feedback — then fix the biggest gap first.
+Review your last three hiring processes: how long candidates waited, how many received no response and whether finalists received feedback - then fix the biggest gap first.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
@@ -217,7 +217,7 @@ Feedback based on predefined, job-related criteria and free of references to pro
 Yes, with the candidate's consent and for a limited period, such as up to one year; otherwise delete data within about four weeks.
 
 ### (Scenario: employer using an applicant tracking system) Can we use automated rejections?
-Only with care — decisions based solely on automated processing trigger GDPR safeguards, and AI screening tools require human oversight under the AI Act.
+Only with care - decisions based solely on automated processing trigger GDPR safeguards, and AI screening tools require human oversight under the AI Act.
 
 ### (Scenario: employer after a take-home assignment) How much feedback should candidates receive after a technical assessment?
 A short structured response with key strengths, main gaps and an indication of how close they were is usually appropriate.

@@ -1,4 +1,4 @@
-🔥 Evelyn bouwde een prototype met **Bolt** — Evelyn, een content marketeer, gebruikte Bolt om een copywriting-assistent te bouwen, maar haar geheime Anthropic API-sleutel bleek zichtbaar in de browserbundel. 🧠
+🔥 Evelyn bouwde een prototype met **Bolt** - Evelyn, een content marketeer, gebruikte Bolt om een copywriting-assistent te bouwen, maar haar geheime Anthropic API-sleutel bleek zichtbaar in de browserbundel. 🧠
 
 Het blootstellen van API-sleutels via de frontend kan uw AI-startup binnen 48 uur failliet laten gaan door geautomatiseerde bots.
 
@@ -12,7 +12,7 @@ Het blootstellen van API-sleutels via de frontend kan uw AI-startup binnen 48 uu
 
 Bij **LaunchStudio** lossen we exact dit type beveiligings- en architectuurproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Evelyns platform werd kogelvrij: Alle API-sleutels werden volledig verborgen voor de client en haar facturatie werd definitief beschermd tegen misbruik. (€850 (Secrets Protection Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
+Evelyns platform werd kogelvrij: Alle API-sleutels werden volledig verborgen voor de client en haar facturatie werd definitief beschermd tegen misbruik. (€850 (Secrets Protection Pakket) - productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/securing-api-keys-nextjs-ai-apps
 

@@ -1,4 +1,4 @@
-🧮 Owen hired two junior developers to "finish the backend" of his **Bolt**-built ticketing platform on a tight budget — six weeks later, one had broken a working feature and neither had actually tested if Row Level Security isolated organizer data. 🧠
+🧮 Owen hired two junior developers to "finish the backend" of his **Bolt**-built ticketing platform on a tight budget - six weeks later, one had broken a working feature and neither had actually tested if Row Level Security isolated organizer data. 🧠
 
 Two juniors for the price of one senior looks efficient on a spreadsheet, until you account for what junior developers reliably miss in AI-generated code.
 

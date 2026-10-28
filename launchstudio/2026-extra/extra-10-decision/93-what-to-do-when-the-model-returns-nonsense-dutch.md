@@ -25,7 +25,7 @@ Elk ander traditioneel onderdeel in uw softwarearchitectuur faalt binair:
 Een database-query slaagt of gooit een SQL-fout. Een betaling via Mollie of Stripe lukt of wordt geweigerd met een foutcode.
 
 **Een groot taalmodel (LLM) bezit een unieke derde toestand die geen enkel ander softwarecomponent kent:**
-Het retourneert een antwoord dat er grammaticaal foutloos, overtuigend en uiterst zelfverzekerd uitziet — **maar inhoudelijk 100% verzonnen of pertinent onjuist is** (*hallucinatie*) — zónder dat er ergens een foutmelding afgaat.
+Het retourneert een antwoord dat er grammaticaal foutloos, overtuigend en uiterst zelfverzekerd uitziet - **maar inhoudelijk 100% verzonnen of pertinent onjuist is** (*hallucinatie*) - zónder dat er ergens een foutmelding afgaat.
 
 Deze toestand is geen zeldzame randzaak die u kunt weg-engineeren met een slimmere prompt. Het is een fundamentele eigenschap van probabilistische neurale netwerken.
 
@@ -63,7 +63,7 @@ Modeloutput die direct resulteert in een databaseschrijfoperatie, een automatisc
 Validatie vertelt u dat een antwoord niet deugt. Wat er daarna gebeurt is een cruciale productbeslissing:
 
 - **Probeer het Maximaal Één Keer Opnieuw (*Retry Once*):** Omdat LLM's non-deterministisch zijn, levert een tweede poging met een iets aangepaste prompt vaak wél een valide resultaat op. Probeer het echter nooit vaker dan één keer: drie opeenvolgende fouten betekenen dat het brondocument onleesbaar is, en oneindige retries jagen uw API-rekening omhoog.
-- **Wees Eerlijk Tegen de Gebruiker:** *"Wij konden dit document niet automatisch uitlezen — controleer of vul het totaalbedrag a.u.b. handmatig in"*. Gebruikers accepteren een eerlijke waarschuwing direct. Wat ze nóóit vergeven is een softwaretool die stilletjes foute cijfers in hun boekhouding zet.
+- **Wees Eerlijk Tegen de Gebruiker:** *"Wij konden dit document niet automatisch uitlezen - controleer of vul het totaalbedrag a.u.b. handmatig in"*. Gebruikers accepteren een eerlijke waarschuwing direct. Wat ze nóóit vergeven is een softwaretool die stilletjes foute cijfers in hun boekhouding zet.
 - **Toon Liever Niets Dan Iets Dat Fout Is:** Laat nooit een lege samenvatting, een nulbedrag of een verzonnen gemiddelde zien dat door de klant voor een echt meetresultaat kan worden aangezien.
 
 ## Welke Taken Tolereren Fouten (En Welke Niet?)
@@ -83,7 +83,7 @@ Houd in uw database bij hoe vaak een veld handmatig gecorrigeerd wordt:
 - Wordt de voorgestelde categorie in **8%** van de gevallen aangepast? Uw AI-functie werkt uitstekend.
 - Wordt een veld in **55%** van de gevallen overschreven? Uw feature kost klanten meer frustratie dan hij tijd bespaart.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software-architecturen) bouwen we strikte validatielagen, automatische bronverificatie en fouttolerante interfaces tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-implementatie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat hallucinaties uw klanten niet bereiken.
+Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software-architecturen) bouwen we strikte validatielagen, automatische bronverificatie en fouttolerante interfaces tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-implementatie met ons](https://launchstudio.eu/nl/#contact) - wij zorgen dat hallucinaties uw klanten niet bereiken.
 
 ## Echt voorbeeld
 
@@ -94,7 +94,7 @@ Kasper Lund runde Bonnetjesbox, een online onkosten- en declaratietool voor zzp'
 Bij scherpe, digitale PDF-facturen functioneerde dit feilloos.
 
 Maar bij verkreukelde thermische kassabonnen, vage scans of lastige hoeken sloeg het model aan het gissen:
-Omdat het model in de prompt was opgedragen *"altijd een totaalbedrag en btw te extraheren"*, gaf het **altijd een getal terug** — desnoods ter plekke verzonnen. Er was geen enkele validatiecode ingebouwd.
+Omdat het model in de prompt was opgedragen *"altijd een totaalbedrag en btw te extraheren"*, gaf het **altijd een getal terug** - desnoods ter plekke verzonnen. Er was geen enkele validatiecode ingebouwd.
 
 Het drama kwam aan het licht toen de accountant van een schildersbedrijf een declaratie ontdekte van **€340,00 voor een snelle lunchbon die in werkelijkheid €34,00 bedroeg**.
 
@@ -103,7 +103,7 @@ Toen LaunchStudio de database over de afgelopen drie maanden auditeerde, bleek d
 **Resultaat:** Binnen drie werkdagen bracht LaunchStudio een waterdichte beveiligingsarchitectuur aan: modeloutput werd gekoppeld aan een strict JSON-schema, een server-side controlemechanisme verifieerde of het geëxtraheerde bedrag letterlijk voorkwam in de ruwe OCR-tekstlaag van de afbeelding (bij afwezigheid werd het veld direct geel gemarkeerd met het label *"Controle vereist"*), bij twijfel werd maximaal één retry uitgevoerd waarna de gebruiker direct de foto naast een handmatig invoerveld te zien kreeg, en alle correcties werden gemonitord. De 47 gedupeerde ondernemers ontvingen direct een geautomatiseerd hersteloverzicht om naheffingen van de fiscus te voorkomen.
 
 > *"Het model gaf nooit een foutmelding zoals 'deze foto is te wazig'. Het verzon gewoon een getal dat er betrouwbaar uitzag. En dertig van die verzinsels waren al ingediend bij de belastinginspecteur."*
-> — **Kasper Lund, Oprichter, Bonnetjesbox**
+> - **Kasper Lund, Oprichter, Bonnetjesbox**
 
 **Kosten & Doorlooptijd:** AI output validatie, cross-verificatie tegen brondata en fallback UI opgeleverd in 3 werkdagen.
 

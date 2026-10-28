@@ -51,17 +51,17 @@ These are not features. They are the conditions for having users at all.
 
 ## Why Real Users Make It Production
 
-The moment a stranger enters their data or payment details, your MVP is a production system — legally, ethically and practically. Early adopters are also your most valuable users: they give feedback, refer others and forgive rough edges. They do not forgive seeing someone else's data or being charged twice. And early incidents tend to be remembered and repeated far longer than early features.
+The moment a stranger enters their data or payment details, your MVP is a production system - legally, ethically and practically. Early adopters are also your most valuable users: they give feedback, refer others and forgive rough edges. They do not forgive seeing someone else's data or being charged twice. And early incidents tend to be remembered and repeated far longer than early features.
 
 ## The Cost Argument, Reversed
 
-Founders defer the basics to save money. In practice, the basics are cheapest at MVP stage: there is little data to migrate, few users to notify, few integrations to reconfigure. The same fixes after growth cost more — and after an incident, much more, because they come with notifications, refunds and reputational repair.
+Founders defer the basics to save money. In practice, the basics are cheapest at MVP stage: there is little data to migrate, few users to notify, few integrations to reconfigure. The same fixes after growth cost more - and after an incident, much more, because they come with notifications, refunds and reputational repair.
 
 ## A One-Page "Minimum Safe" Standard for MVPs
 
 Keep features minimal; keep these non-negotiable:
 
-1. Users can only access their own data — enforced on the server
+1. Users can only access their own data - enforced on the server
 2. No secret keys in the browser or app
 3. Payments confirmed by the provider's verified webhook
 4. Backups on, with one restore tested
@@ -73,7 +73,7 @@ A focused Launch Ready project covering these often starts at €800 for simple 
 
 ## How to Talk About It With Investors
 
-"It's just an MVP" is fine when it refers to scope. When investors ask about security, the stronger answer is: "The feature set is minimal; the minimum safety standard is in place." It signals that you understand the difference — which is what experienced investors are checking for.
+"It's just an MVP" is fine when it refers to scope. When investors ask about security, the stronger answer is: "The feature set is minimal; the minimum safety standard is in place." It signals that you understand the difference - which is what experienced investors are checking for.
 
 ## Defining Your Minimum Safe Standard in Writing
 
@@ -93,7 +93,7 @@ Everything not on this page can be minimal. Everything on it is not negotiable, 
 
 ## Separating Scope Decisions From Safety Decisions
 
-MVP discussions often mix two kinds of decisions. Scope decisions ask "which features do we build now?" and are rightly aggressive — cut, postpone, simplify. Safety decisions ask "what could hurt a user or the business?" and should not be traded for speed. A useful practice in planning meetings is to label every item as scope or safety. Scope items compete for time; safety items are prerequisites. This simple labelling prevents the gradual erosion where "we'll add access checks later" sneaks into the scope backlog.
+MVP discussions often mix two kinds of decisions. Scope decisions ask "which features do we build now?" and are rightly aggressive - cut, postpone, simplify. Safety decisions ask "what could hurt a user or the business?" and should not be traded for speed. A useful practice in planning meetings is to label every item as scope or safety. Scope items compete for time; safety items are prerequisites. This simple labelling prevents the gradual erosion where "we'll add access checks later" sneaks into the scope backlog.
 
 ## Lean Ways to Meet the Safety Standard
 
@@ -109,26 +109,26 @@ These choices keep the MVP small while keeping it safe.
 
 ## The Cost of an Incident at MVP Stage
 
-Founders sometimes reason that an incident at MVP stage would be small. In practice, incidents hurt early companies disproportionately: the first users are often the most influential (early adopters, friends of investors, community leaders); there is no brand reputation to absorb the damage; and the founder's time — the scarcest resource — is consumed by response, notifications and repairs instead of learning. A single data leak or payment mess can end an MVP's momentum even if the technical fix takes an afternoon.
+Founders sometimes reason that an incident at MVP stage would be small. In practice, incidents hurt early companies disproportionately: the first users are often the most influential (early adopters, friends of investors, community leaders); there is no brand reputation to absorb the damage; and the founder's time - the scarcest resource - is consumed by response, notifications and repairs instead of learning. A single data leak or payment mess can end an MVP's momentum even if the technical fix takes an afternoon.
 
 ## Investor Perspective on "Just an MVP"
 
-Experienced investors hear "it's just an MVP" frequently. What reassures them is not a long feature list but evidence of judgment: a clearly defined minimum safe standard, a list of known limitations with a plan, account ownership in order and no history of incidents. Presenting this in due diligence signals that the founder will make good trade-offs as the company grows — which is ultimately what early investors bet on.
+Experienced investors hear "it's just an MVP" frequently. What reassures them is not a long feature list but evidence of judgment: a clearly defined minimum safe standard, a list of known limitations with a plan, account ownership in order and no history of incidents. Presenting this in due diligence signals that the founder will make good trade-offs as the company grows - which is ultimately what early investors bet on.
 
 ## When an MVP Stops Being an MVP
 
-The label should expire. Signs that your MVP has become a product: paying customers depend on it daily; you are onboarding users you do not know personally; business customers ask about security; or you are raising money on its traction. At that point, revisit the postponed list — performance, admin tools, testing depth, monitoring — and plan the next level of production readiness. The minimum safe standard remains the floor; the ceiling rises with the business.
+The label should expire. Signs that your MVP has become a product: paying customers depend on it daily; you are onboarding users you do not know personally; business customers ask about security; or you are raising money on its traction. At that point, revisit the postponed list - performance, admin tools, testing depth, monitoring - and plan the next level of production readiness. The minimum safe standard remains the floor; the ceiling rises with the business.
 
 ## Common Rationalisations to Watch For
 
 Certain phrases signal that safety is being traded for speed without anyone deciding it explicitly:
 
-- "Nobody knows about the app yet." — Automated scanners do.
-- "We only have friendly users." — Friendly users forward links and reuse passwords.
-- "We'll add security once we have funding." — Investors will ask what you did before.
-- "The AI tool handles that." — It builds what you asked for, not what you forgot.
-- "It's only test data." — Until the first real signup, which is often sooner than planned.
-- "We'll clean it up after launch." — After launch, every clean-up competes with customer requests.
+- "Nobody knows about the app yet." - Automated scanners do.
+- "We only have friendly users." - Friendly users forward links and reuse passwords.
+- "We'll add security once we have funding." - Investors will ask what you did before.
+- "The AI tool handles that." - It builds what you asked for, not what you forgot.
+- "It's only test data." - Until the first real signup, which is often sooner than planned.
+- "We'll clean it up after launch." - After launch, every clean-up competes with customer requests.
 
 When you hear one of these in a planning discussion, check the item against the minimum safe standard before accepting it.
 
@@ -147,19 +147,19 @@ Simple apps without payments often finish in a week. Features are untouched thro
 
 ## Communicating Limitations Honestly
 
-An MVP can be honest about what it does not yet do without undermining trust: a short "what's coming" page, clear labels on beta features and transparent answers to user questions. What it should never communicate — explicitly or implicitly — is that data is safe when it is not. Users forgive missing features; they rarely forgive discovering that their data was exposed while the product claimed otherwise.
+An MVP can be honest about what it does not yet do without undermining trust: a short "what's coming" page, clear labels on beta features and transparent answers to user questions. What it should never communicate - explicitly or implicitly - is that data is safe when it is not. Users forgive missing features; they rarely forgive discovering that their data was exposed while the product claimed otherwise.
 
 ## What Good Looks Like
 
-A well-run MVP looks deliberately small from the outside and deliberately careful underneath: a handful of features that work, users who can only see their own data, payments that reconcile, backups that restore, alerts that reach someone and documentation that lists what was postponed. That combination lets founders learn quickly from real users without betting their reputation on luck. It is the difference between a minimum viable product and a minimum viable risk — and only the first is worth launching.
+A well-run MVP looks deliberately small from the outside and deliberately careful underneath: a handful of features that work, users who can only see their own data, payments that reconcile, backups that restore, alerts that reach someone and documentation that lists what was postponed. That combination lets founders learn quickly from real users without betting their reputation on luck. It is the difference between a minimum viable product and a minimum viable risk - and only the first is worth launching.
 
 ## First Step
 
-Write your own minimum safe standard today on one page, using the table above as a template, and mark each line as true, false or unknown. Every false or unknown line is your next task — before the next user signs up.
+Write your own minimum safe standard today on one page, using the table above as a template, and mark each line as true, false or unknown. Every false or unknown line is your next task - before the next user signs up.
 
 ## Minimal Features, Maximum Care
 
-The best early-stage products share a paradox: they do very little, and they do it very carefully. Their founders cut features ruthlessly and protect users uncompromisingly. That combination is what earns trust from the first users — the people whose feedback, recommendations and patience determine whether an MVP ever becomes a company. AI tools make the "do very little" part fast; the "very carefully" part is still a deliberate choice, and it is the one that separates MVPs that grow from those that stall after their first incident. Make that choice explicitly, write it down, and hold every scope decision against it.
+The best early-stage products share a paradox: they do very little, and they do it very carefully. Their founders cut features ruthlessly and protect users uncompromisingly. That combination is what earns trust from the first users - the people whose feedback, recommendations and patience determine whether an MVP ever becomes a company. AI tools make the "do very little" part fast; the "very carefully" part is still a deliberate choice, and it is the one that separates MVPs that grow from those that stall after their first incident. Make that choice explicitly, write it down, and hold every scope decision against it.
 
 ## A Question for Your Next Planning Session
 
@@ -167,7 +167,7 @@ Before approving the next sprint, ask one question about every item on the list:
 
 ## Where LaunchStudio Fits
 
-LaunchStudio's smallest projects exist for exactly this: bringing an AI-built MVP up to the minimum safe standard without adding features or rebuilding what works. LaunchStudio is powered by Manifera — LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy — with 11+ years of experience and engineers at its development centre in Ho Chi Minh City, coordinated from Herengracht 420 in Amsterdam. See [Manifera's portfolio](https://www.manifera.com/portfolio/). The [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) is clear that GDPR applies regardless of company size.
+LaunchStudio's smallest projects exist for exactly this: bringing an AI-built MVP up to the minimum safe standard without adding features or rebuilding what works. LaunchStudio is powered by Manifera - LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy - with 11+ years of experience and engineers at its development centre in Ho Chi Minh City, coordinated from Herengracht 420 in Amsterdam. See [Manifera's portfolio](https://www.manifera.com/portfolio/). The [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) is clear that GDPR applies regardless of company size.
 
 [Send us your MVP link](https://launchstudio.eu/en/#contact) and we will tell you, for free, which of the seven it still needs.
 
@@ -177,16 +177,16 @@ LaunchStudio's smallest projects exist for exactly this: bringing an AI-built MV
 
 Kim Verheul, who rents out small electric boats in Vlaardingen, built Bootje in Lovable as "just an MVP": customers pick a boat and a time slot, pay a deposit and receive a digital key code for the boat lock. She planned to test it for one summer before investing further. Within three weeks, around 400 bookings came through.
 
-"Just a test" had real consequences. Every customer's booking — name, phone number and the lock code for the boat — was readable by any logged-in user through the API. Deposits were confirmed by the browser redirect, so some customers received lock codes without paying. The Mollie key was in the frontend. There were no backups, and the database sat in a US region. When one boat was taken out by someone who had not booked it, using a code from another customer's booking, Kim realised the MVP label had not protected anyone.
+"Just a test" had real consequences. Every customer's booking - name, phone number and the lock code for the boat - was readable by any logged-in user through the API. Deposits were confirmed by the browser redirect, so some customers received lock codes without paying. The Mollie key was in the frontend. There were no backups, and the database sat in a US region. When one boat was taken out by someone who had not booked it, using a code from another customer's booking, Kim realised the MVP label had not protected anyone.
 
 In eight business days, LaunchStudio's engineers brought Bootje to the minimum safe standard: booking and lock-code access limited to the booker and only valid during the booked slot, deposits confirmed by Mollie webhooks before a code was issued, key rotation, EU migration with backups and a tested restore, account consolidation and alerts. The feature set stayed exactly as small as before.
 
-**Result:** Bootje finished the summer with about 1,900 bookings and no further unauthorised boat use. Kim expanded to a second marina the following spring — with the same minimal features.
+**Result:** Bootje finished the summer with about 1,900 bookings and no further unauthorised boat use. Kim expanded to a second marina the following spring - with the same minimal features.
 
 > *"I kept the MVP small, which was right. I also kept the safety small, which wasn't."*
-> — **Kim Verheul, Founder, Bootje (Vlaardingen)**
+> - **Kim Verheul, Founder, Bootje (Vlaardingen)**
 
-**Cost & Timeline:** €2,200 (Launch Ready package: access control, lock-code security, payments, data migration and monitoring) — completed in 8 business days.
+**Cost & Timeline:** €2,200 (Launch Ready package: access control, lock-code security, payments, data migration and monitoring) - completed in 8 business days.
 
 ## Frequently Asked Questions
 
@@ -204,7 +204,7 @@ Usually not. With little data and few users, fixes are cheapest early; after gro
 
 ### What would Manifera's engineers check first in an MVP?
 
-Server-side data access, exposed secrets and payment confirmation — the three areas where AI-built MVPs most often put users at risk — followed by backups and ownership.
+Server-side data access, exposed secrets and payment confirmation - the three areas where AI-built MVPs most often put users at risk - followed by backups and ownership.
 
 ### Can an MVP build a positive online reputation early?
 

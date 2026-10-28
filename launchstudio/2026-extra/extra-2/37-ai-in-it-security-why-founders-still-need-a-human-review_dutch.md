@@ -59,11 +59,11 @@ Een correcte herstelling balanceert betekenisvolle bescherming met een aanmelder
 
 Manifera's implementatie van authenticatiebeleid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Beschrijf uw product aan ons — we reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
+[Beschrijf uw product aan ons - we reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Een Wachtwoordbeleid Opstellen Dat Niet Bestraffend Aanvoelt
 
-Een wachtwoordbeleid kan het risico voor uw platform aanzienlijk verlagen óf echte gebruikers mateloos frustreren — en vaak beide tegelijk als het is ontworpen rondom verouderde aannames. Een paar beproefde principes houden het beleid aan de effectieve kant:
+Een wachtwoordbeleid kan het risico voor uw platform aanzienlijk verlagen óf echte gebruikers mateloos frustreren - en vaak beide tegelijk als het is ontworpen rondom verouderde aannames. Een paar beproefde principes houden het beleid aan de effectieve kant:
 
 - **Geef de voorkeur aan lengte boven complexe tekenregels.** Het vereisen van een langere minimumlengte (12 tekens is een uitstekende moderne basis) doet veel meer voor de daadwerkelijke veiligheid dan het afdwingen van een mengeling van hoofdletters, cijfers en symbolen. Dat laatste dwingt gebruikers vaak juist naar voorspelbare patronen ("Wachtwoord1!") die formeel aan de regel voldoen maar nauwelijks veiliger zijn.
 - **Controleer tegen lijsten met bekende datalekken**, en niet alleen op lengte of opmaak. Een wachtwoord kan perfect lang zijn en aan elke complexiteitseis voldoen, terwijl het tegelijkertijd voorkomt in openbare lijsten van miljarden gelekte inloggegevens die actief worden gebruikt voor credential-stuffing aanvallen. Een controle via een dienst zoals de Have I Been Pwned API onderschept dit direct.
@@ -84,9 +84,9 @@ Een bezorgde vroege gebruiker vermeldde terloops dat ze "schoonmaak123" als haar
 **Resultaat:** LaunchStudio implementeerde een duidelijke minimale sterktevereiste die vooraf werd gecommuniceerd tijdens het aanmelden, samen met een controle tegen lijsten met bekende gelekte wachtwoorden. Ze vroegen bestaande gebruikers met zwakke wachtwoorden om deze bij te werken, wat de blootstelling sloot zonder de eenvoudige aanmeldervaring van SchoonBij te verstoren.
 
 > *"Ze vroeg me bijna voor de grap of dat veilig was, en ik had oprecht geen zelfverzekerd antwoord. Het deed me realiseren dat ik er nooit daadwerkelijk over na had gedacht wat ons aanmeldformulier wel en niet zou toestaan."*
-> — **Yara Smit, Oprichter, SchoonBij (Zeist)**
+> - **Yara Smit, Oprichter, SchoonBij (Zeist)**
 
-**Kosten en tijdlijn:** € 1.500 (implementatie van wachtwoordbeleid en controle tegen gelekte lijsten) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.500 (implementatie van wachtwoordbeleid en controle tegen gelekte lijsten) - voltooid in 5 werkdagen.
 
 ---
 

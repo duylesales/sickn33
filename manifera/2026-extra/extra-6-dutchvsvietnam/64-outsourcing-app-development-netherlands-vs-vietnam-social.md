@@ -7,8 +7,8 @@
 
 **The Manifera Solution:**
 ✅ **Four Line Items, Compared Honestly:** Rate structure, actual staffing, architecture accountability, and timezone/communication structure.
-✅ **Amsterdam Strategic Governance:** Reviewing architecture decisions before they ship — the layer that prevents the rework scenario cheap offshore vendors are known for.
-✅ **Vietnam Execution Velocity:** A contractually fixed team composition — specific tech lead, engineers, QA — unchanged unless you agree to a change.
+✅ **Amsterdam Strategic Governance:** Reviewing architecture decisions before they ship - the layer that prevents the rework scenario cheap offshore vendors are known for.
+✅ **Vietnam Execution Velocity:** A contractually fixed team composition - specific tech lead, engineers, QA - unchanged unless you agree to a change.
 
 Comparable quality at roughly half the total cost, when the governance layer is real, not a marketing line. 🛡️
 

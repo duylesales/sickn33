@@ -1,4 +1,4 @@
-🔥 David bouwde een prototype met **Supabase** — als solo-oprichter in Amsterdam bouwde hij een AI-assistent voor de advocatuur, maar ontdekte een gigantisch datalek omdat Row Level Security (RLS) uitstond. 🧠
+🔥 David bouwde een prototype met **Supabase** - als solo-oprichter in Amsterdam bouwde hij een AI-assistent voor de advocatuur, maar ontdekte een gigantisch datalek omdat Row Level Security (RLS) uitstond. 🧠
 
 Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en datalekken.
 
@@ -12,7 +12,7 @@ Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Securit
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-David sloot het datalek definitief, doorstond een enterprise security-audit en tekende een contract van €3.000 MRR. (€2.800 (Launch Ready Pakket) — binnen 5 werkdagen opgeleverd). 🚀
+David sloot het datalek definitief, doorstond een enterprise security-audit en tekende een contract van €3.000 MRR. (€2.800 (Launch Ready Pakket) - binnen 5 werkdagen opgeleverd). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/supabase-postgresql-row-level-security-ai
 

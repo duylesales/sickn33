@@ -25,13 +25,13 @@ FlutterFlow sits between no-code and code. You design screens visually, use AI f
 
 ## Where FlutterFlow Apps Keep Their Risk on the Way From AI Prototype to Production
 
-A FlutterFlow app is mostly a client. The phone talks directly to Firebase or Supabase, or to APIs you configured. That makes the backend configuration the real security boundary — and it is configured separately from the screens you designed.
+A FlutterFlow app is mostly a client. The phone talks directly to Firebase or Supabase, or to APIs you configured. That makes the backend configuration the real security boundary - and it is configured separately from the screens you designed.
 
 **Firestore or Supabase rules.** If the app queries Firestore directly, security rules decide who can read and write each document. Prototypes commonly run on test-mode rules or "any authenticated user can do anything." With Supabase, the same applies to row-level security policies. A beautifully designed app with open rules exposes every user's data to anyone who signs up.
 
 **API keys in the app.** API calls configured in FlutterFlow with secret keys end up inside the app binary, where they can be extracted. Payment secrets, AI model keys and admin tokens belong in Cloud Functions or Edge Functions, not in the client.
 
-**Custom code.** FlutterFlow lets you add custom widgets, actions and functions — often pasted from AI chat tools. That code runs with full access inside your app and deserves review, including the packages it pulls in.
+**Custom code.** FlutterFlow lets you add custom widgets, actions and functions - often pasted from AI chat tools. That code runs with full access inside your app and deserves review, including the packages it pulls in.
 
 **Role logic in the interface.** Hiding an admin page for non-admins in the builder does not stop a non-admin from calling the data directly. Roles must be enforced in rules or server functions.
 
@@ -74,7 +74,7 @@ Taking a FlutterFlow AI prototype to production requires one early decision: whe
 | Exported code as source of truth | Export once, continue in an IDE; FlutterFlow no longer used | Teams with Flutter expertise, complex custom logic |
 | Hybrid with boundaries | UI in FlutterFlow; custom packages and backend in separate repositories | Growing products needing both speed and custom code |
 
-Mixing approaches without boundaries — editing exported code and then re-exporting from FlutterFlow — overwrites changes and causes subtle regressions. Whatever you choose, keep everything in Git and document where each kind of change is made.
+Mixing approaches without boundaries - editing exported code and then re-exporting from FlutterFlow - overwrites changes and causes subtle regressions. Whatever you choose, keep everything in Git and document where each kind of change is made.
 
 ## Supabase Row-Level Security for FlutterFlow Apps
 
@@ -95,7 +95,7 @@ Keep custom code small and documented; the more logic moves into reviewed backen
 
 ## Push Notifications and Deep Links
 
-FlutterFlow makes push notifications and deep links easy to add, which also makes them easy to misuse. Send notifications from server functions that check who should receive them, never include sensitive content in notification text, and remove device tokens on logout. Deep links that open specific screens — a booking, a payment — must require authentication and check ownership in the backend, because anyone can craft a deep link.
+FlutterFlow makes push notifications and deep links easy to add, which also makes them easy to misuse. Send notifications from server functions that check who should receive them, never include sensitive content in notification text, and remove device tokens on logout. Deep links that open specific screens - a booking, a payment - must require authentication and check ownership in the backend, because anyone can craft a deep link.
 
 ## Environments for Mobile Apps
 
@@ -135,7 +135,7 @@ Before submitting: source of truth decided and in Git; security rules or RLS tes
 
 ## Why the Backend Decides the Outcome
 
-In a FlutterFlow app, the screens are often excellent from the start — that is the tool's strength. Whether the app is safe for real members depends almost entirely on what happens behind them: rules and policies that decide who sees what, server functions that handle money and permissions, environments that keep test data away from real users, and release practices that respect installed versions. Invest there, and the visual speed of FlutterFlow carries straight through to a product that club members, customers and app store reviewers can trust from its first release onwards.
+In a FlutterFlow app, the screens are often excellent from the start - that is the tool's strength. Whether the app is safe for real members depends almost entirely on what happens behind them: rules and policies that decide who sees what, server functions that handle money and permissions, environments that keep test data away from real users, and release practices that respect installed versions. Invest there, and the visual speed of FlutterFlow carries straight through to a product that club members, customers and app store reviewers can trust from its first release onwards.
 
 ## First Step
 
@@ -147,7 +147,7 @@ LaunchStudio takes FlutterFlow prototypes to production by hardening the backend
 
 LaunchStudio is powered by Manifera, which has built Flutter and React Native apps for enterprise clients for more than 11 years; see [Manifera's mobile app development](https://www.manifera.com/services/mobile-app-development/). Engineering happens at Manifera's development centre in Ho Chi Minh City, with client contact through Herengracht 420, Amsterdam. The [FlutterFlow documentation on Firebase security rules](https://docs.flutterflow.io/) is a useful starting point for the builder side.
 
-[Send us your prototype link](https://launchstudio.eu/en/#contact) — including the store listing if you have one.
+[Send us your prototype link](https://launchstudio.eu/en/#contact) - including the store listing if you have one.
 
 ## Real example
 
@@ -155,16 +155,16 @@ LaunchStudio is powered by Manifera, which has built Flutter and React Native ap
 
 Thijmen de Lange, a gliding instructor at a club near Lelystad, built Zweefvliegclub in FlutterFlow: members book flight slots and instructors, log flights, see aircraft availability and pay flight fees. Three gliding clubs used it, with about 520 members, and Thijmen wanted it in both app stores before the new season.
 
-The review found the pattern typical of client-heavy apps. Firestore rules allowed any logged-in member to read and write every collection, including other members' medical certificate expiry dates and payment records — and to mark their own flights as paid. A Mollie API key was configured in a FlutterFlow API call and present in the app binary. The instructor-only "approve solo flight" screen was hidden in the interface but the underlying write was open to all. Custom code pasted from an AI chat added an outdated package with known issues. There was no account deletion, no crash reporting, and designs were edited both in FlutterFlow and in exported code, overwriting each other.
+The review found the pattern typical of client-heavy apps. Firestore rules allowed any logged-in member to read and write every collection, including other members' medical certificate expiry dates and payment records - and to mark their own flights as paid. A Mollie API key was configured in a FlutterFlow API call and present in the app binary. The instructor-only "approve solo flight" screen was hidden in the interface but the underlying write was open to all. Custom code pasted from an AI chat added an outdated package with known issues. There was no account deletion, no crash reporting, and designs were edited both in FlutterFlow and in exported code, overwriting each other.
 
 Over eleven business days, LaunchStudio's engineers wrote Firestore rules scoped to clubs, members and roles with emulator tests, moved payment creation and confirmation to Cloud Functions with Mollie webhooks, enforced instructor approvals on the server, replaced the problematic package, added in-app account deletion with backend clean-up, enabled Crashlytics, set FlutterFlow as the single source of truth with exports committed to Git, and prepared both store submissions with staged rollout.
 
 **Result:** Both apps were approved at first submission. The season started with all three clubs on the app, and a fourth club joined mid-season. Crash-free sessions stayed above 99.5%.
 
 > *"FlutterFlow made the app look finished. The rules behind it decided whether it actually was."*
-> — **Thijmen de Lange, Founder, Zweefvliegclub (Lelystad)**
+> - **Thijmen de Lange, Founder, Zweefvliegclub (Lelystad)**
 
-**Cost & Timeline:** €3,300 (Mobile App: security rules, server functions, code review, deletion flow, monitoring and store releases) — completed in 11 business days.
+**Cost & Timeline:** €3,300 (Mobile App: security rules, server functions, code review, deletion flow, monitoring and store releases) - completed in 11 business days.
 
 ## Frequently Asked Questions
 

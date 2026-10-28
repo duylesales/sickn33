@@ -31,11 +31,11 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-AI in software engineering has gotten remarkably good at producing code that follows recognizable, common patterns quickly — including patterns that were once standard practice but have since been superseded by better alternatives. A password-hashing implementation is a specific, concrete place this shows up: technically functional, technically "hashing" the password, and technically using an algorithm the security community moved away from years before most current AI training data was even assembled.
+AI in software engineering has gotten remarkably good at producing code that follows recognizable, common patterns quickly - including patterns that were once standard practice but have since been superseded by better alternatives. A password-hashing implementation is a specific, concrete place this shows up: technically functional, technically "hashing" the password, and technically using an algorithm the security community moved away from years before most current AI training data was even assembled.
 
 ## Why Not All Hashing Algorithms Offer the Same Protection
 
-Hashing a password, rather than storing it in plain text, is a genuinely correct and important practice — but not all hashing algorithms provide equal protection against modern cracking techniques. Algorithms designed decades ago for general-purpose speed, rather than specifically for password storage, can be computed extremely quickly by an attacker with modern hardware, making a stolen hash considerably easier to reverse than one produced by an algorithm specifically designed to be slow and resource-intensive on purpose.
+Hashing a password, rather than storing it in plain text, is a genuinely correct and important practice - but not all hashing algorithms provide equal protection against modern cracking techniques. Algorithms designed decades ago for general-purpose speed, rather than specifically for password storage, can be computed extremely quickly by an attacker with modern hardware, making a stolen hash considerably easier to reverse than one produced by an algorithm specifically designed to be slow and resource-intensive on purpose.
 
 ## Why an AI Coding Tool Might Reach for an Outdated Algorithm
 
@@ -43,15 +43,15 @@ Training data reflects code written across many years, including a substantial a
 
 ## Why This Specific Gap Is Invisible in Every Functional Test
 
-A password hashed with an outdated algorithm still hashes correctly, still allows correct login verification, and still passes every functional test a founder could reasonably run — the weakness only becomes relevant in the event of a database breach, when the specific algorithm used determines how quickly an attacker could feasibly reverse the stolen hashes back into usable passwords, a scenario no amount of normal functional testing ever simulates.
+A password hashed with an outdated algorithm still hashes correctly, still allows correct login verification, and still passes every functional test a founder could reasonably run - the weakness only becomes relevant in the event of a database breach, when the specific algorithm used determines how quickly an attacker could feasibly reverse the stolen hashes back into usable passwords, a scenario no amount of normal functional testing ever simulates.
 
 ## Why "It's Hashed, So It's Fine" Is an Understandable but Incomplete Assumption
 
-Founders without a security background reasonably associate "hashed" with "safe," since hashing is indeed dramatically safer than plaintext storage — but the specific algorithm used still matters considerably, and treating "hashed" as a single, uniform level of protection rather than a spectrum of protection is an easy, understandable gap in an otherwise reasonable security instinct.
+Founders without a security background reasonably associate "hashed" with "safe," since hashing is indeed dramatically safer than plaintext storage - but the specific algorithm used still matters considerably, and treating "hashed" as a single, uniform level of protection rather than a spectrum of protection is an easy, understandable gap in an otherwise reasonable security instinct.
 
 ## What Upgrading This Properly Involves
 
-A proper fix replaces an outdated hashing algorithm with a modern, purpose-built one, and carefully migrates any existing stored hashes so users aren't disruptively forced to reset their passwords in the process. The standard migration technique is to rehash a user's password with the new, stronger algorithm the next time they successfully log in using their existing credentials — the old hash still verifies correctly at that exact moment, so the transition happens quietly in the background, one real login at a time, without ever needing to email every user and ask them to pick a new password. Accounts that don't log in again for months simply carry the older hash a little longer, which is an acceptable tradeoff against forcing a disruptive, all-at-once reset. [LaunchStudio](https://launchstudio.eu/en/) checks for exactly this pattern as part of its authentication security review, backed by Manifera's 11+ years of experience with modern cryptographic best practices in production systems.
+A proper fix replaces an outdated hashing algorithm with a modern, purpose-built one, and carefully migrates any existing stored hashes so users aren't disruptively forced to reset their passwords in the process. The standard migration technique is to rehash a user's password with the new, stronger algorithm the next time they successfully log in using their existing credentials - the old hash still verifies correctly at that exact moment, so the transition happens quietly in the background, one real login at a time, without ever needing to email every user and ask them to pick a new password. Accounts that don't log in again for months simply carry the older hash a little longer, which is an acceptable tradeoff against forcing a disruptive, all-at-once reset. [LaunchStudio](https://launchstudio.eu/en/) checks for exactly this pattern as part of its authentication security review, backed by Manifera's 11+ years of experience with modern cryptographic best practices in production systems.
 
 Manifera's cryptographic and authentication reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
@@ -63,21 +63,21 @@ Most founders can't audit their own cryptography, but there's a quick, practical
 
 **What a modern implementation typically looks like**
 
-- References to bcrypt, scrypt, or Argon2 (Argon2id specifically) in the authentication code or package dependencies — these are purpose-built for password storage and deliberately slow to compute
-- A visible "cost factor," "work factor," or "iterations" parameter — a number you can actually see and reason about, usually set somewhere between 10 and 14 for bcrypt
+- References to bcrypt, scrypt, or Argon2 (Argon2id specifically) in the authentication code or package dependencies - these are purpose-built for password storage and deliberately slow to compute
+- A visible "cost factor," "work factor," or "iterations" parameter - a number you can actually see and reason about, usually set somewhere between 10 and 14 for bcrypt
 - Hashes stored in the database that look long and include an embedded algorithm identifier (a bcrypt hash typically starts with $2b$ or $2a$)
 
 **What tends to signal an outdated choice**
 
 - References to MD5, SHA-1, or a bare, unsalted SHA-256 call used directly on the password rather than through a password-specific library
-- No visible cost factor or iteration count at all — general-purpose hash functions don't have one, because they were never designed to be slow on purpose
+- No visible cost factor or iteration count at all - general-purpose hash functions don't have one, because they were never designed to be slow on purpose
 - A custom "hash the password" function written from scratch rather than calling an established, audited library
 
-Finding a reference to MD5 or SHA-1 in your authentication code doesn't necessarily mean you're compromised today — it means the question is worth asking directly, in writing, before it becomes relevant during a breach rather than after. Ask your AI coding tool point-blank: "What hashing algorithm and library is this project using for passwords, and what cost factor is configured?" A tool that can't give you a clear, specific answer is itself a signal worth taking seriously.
+Finding a reference to MD5 or SHA-1 in your authentication code doesn't necessarily mean you're compromised today - it means the question is worth asking directly, in writing, before it becomes relevant during a breach rather than after. Ask your AI coding tool point-blank: "What hashing algorithm and library is this project using for passwords, and what cost factor is configured?" A tool that can't give you a clear, specific answer is itself a signal worth taking seriously.
 
-One additional nuance worth knowing: a higher cost factor isn't automatically better without limit. Setting it too high can meaningfully slow down every single login attempt on your own server, creating a genuine performance cost of its own — the right value balances resistance to offline cracking against real login latency for real users, which is exactly the kind of calibration an experienced engineer tunes based on actual server load rather than picking an arbitrary large number and hoping for the best.
+One additional nuance worth knowing: a higher cost factor isn't automatically better without limit. Setting it too high can meaningfully slow down every single login attempt on your own server, creating a genuine performance cost of its own - the right value balances resistance to offline cracking against real login latency for real users, which is exactly the kind of calibration an experienced engineer tunes based on actual server load rather than picking an arbitrary large number and hoping for the best.
 
-This self-check takes ten minutes and won't catch everything a full review would — confirming the cost factor is actually appropriate, checking whether the migration path handles existing users safely, and verifying no other authentication logic quietly bypasses the hashing step entirely are all things that benefit from an engineer's eyes rather than a founder's own quick search.
+This self-check takes ten minutes and won't catch everything a full review would - confirming the cost factor is actually appropriate, checking whether the migration path handles existing users safely, and verifying no other authentication logic quietly bypasses the hashing step entirely are all things that benefit from an engineer's eyes rather than a founder's own quick search.
 
 ## Real example
 
@@ -90,9 +90,9 @@ A photographer friend with a cybersecurity day job, reviewing FotoBoeking's code
 **Result:** LaunchStudio upgraded FotoBoeking's password hashing to a modern, purpose-built algorithm and implemented a safe migration path for existing accounts, closing the gap without requiring any disruptive, forced password resets for current users.
 
 > *"Every login worked perfectly the entire time, so there was genuinely nothing to suggest anything was wrong. It took a friend who happened to know exactly what to look for, purely by chance, to notice at all."*
-> — **Twan Meijer, Founder, FotoBoeking (Barneveld)**
+> - **Twan Meijer, Founder, FotoBoeking (Barneveld)**
 
-**Cost & Timeline:** €2,100 (password hashing upgrade and safe account migration) — completed in 7 business days.
+**Cost & Timeline:** €2,100 (password hashing upgrade and safe account migration) - completed in 7 business days.
 
 ---
 
@@ -100,19 +100,19 @@ A photographer friend with a cybersecurity day job, reviewing FotoBoeking's code
 
 ### Would a cryptography specialist consider this an urgent risk, or a lower-priority best-practice improvement?
 
-It depends on context, but generally treated as a meaningful, worthwhile fix rather than a purely cosmetic improvement — the risk is specifically realized only in the event of a database breach, but given that breaches do happen across the industry regularly, using a modern, purpose-built algorithm is standard, recommended practice rather than an optional extra.
+It depends on context, but generally treated as a meaningful, worthwhile fix rather than a purely cosmetic improvement - the risk is specifically realized only in the event of a database breach, but given that breaches do happen across the industry regularly, using a modern, purpose-built algorithm is standard, recommended practice rather than an optional extra.
 
 ### Does this gap only affect custom-built authentication, or can it happen with established auth providers too?
 
-It's considerably less likely with established providers like Auth0 or Supabase Auth, which typically default to modern, appropriate algorithms — the risk is specifically higher in custom-built authentication logic, where the AI coding tool is generating the hashing implementation directly rather than delegating that responsibility to a dedicated, security-focused provider.
+It's considerably less likely with established providers like Auth0 or Supabase Auth, which typically default to modern, appropriate algorithms - the risk is specifically higher in custom-built authentication logic, where the AI coding tool is generating the hashing implementation directly rather than delegating that responsibility to a dedicated, security-focused provider.
 
-### Manifera's engineering has kept pace with cryptographic best practices across many client engagements — does that continuity matter for catching outdated algorithms specifically?
+### Manifera's engineering has kept pace with cryptographic best practices across many client engagements - does that continuity matter for catching outdated algorithms specifically?
 
-Yes, directly — cryptographic best practices evolve over time, and having engineers who actively stay current with those changes across ongoing client work is precisely what allows a review to recognize an outdated pattern as outdated, rather than simply assuming any hashing implementation is equivalently safe.
+Yes, directly - cryptographic best practices evolve over time, and having engineers who actively stay current with those changes across ongoing client work is precisely what allows a review to recognize an outdated pattern as outdated, rather than simply assuming any hashing implementation is equivalently safe.
 
-### Herre Roelevink has spoken about the value of experienced engineering judgment specifically in areas where "it works" isn't the same as "it's current best practice" — does this case fit that description?
+### Herre Roelevink has spoken about the value of experienced engineering judgment specifically in areas where "it works" isn't the same as "it's current best practice" - does this case fit that description?
 
-Very well — FotoBoeking's login worked flawlessly by every functional measure, and the gap was purely a question of whether the underlying technique reflected current best practice rather than historical convention, exactly the judgment-based distinction Roelevink's commentary on experienced engineering oversight consistently emphasizes.
+Very well - FotoBoeking's login worked flawlessly by every functional measure, and the gap was purely a question of whether the underlying technique reflected current best practice rather than historical convention, exactly the judgment-based distinction Roelevink's commentary on experienced engineering oversight consistently emphasizes.
 
 ### Should a founder specifically ask their AI coding tool to use a modern password hashing algorithm by name?
 
@@ -152,7 +152,7 @@ It's a reasonable, specific request that can help steer the generated code in th
       "name": "Does this case fit the experienced-judgment-over-functional-testing framing the CEO describes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very well — the login worked flawlessly; the gap was purely about current best practice versus historical convention."
+        "text": "Very well - the login worked flawlessly; the gap was purely about current best practice versus historical convention."
       }
     },
     {

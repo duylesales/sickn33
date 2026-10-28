@@ -61,11 +61,11 @@ Manifera's beoordelingen van infrastructuurbeveiliging worden uitgevoerd door he
 
 Een oprichter hoeft niet te wachten op een externe audit om een globaal overzicht te krijgen van wat er daadwerkelijk live op zijn cloud-infrastructuur draait. Een eerste inventarisatie brengt vaak verrassende vondsten aan het licht:
 
-1. **Open het beheerdersdashboard van uw hostingprovider** — platforms zoals Vercel, Supabase, Netlify of AWS tonen een lijst van alle actieve serverloze functies ('Edge Functions' of 'Serverless Functions'), vaak met veel meer actieve endpoints dan een oprichter verwacht.
-2. **Noteer in heldere taal wat elke afzonderlijke functie doet** — herleid op basis van de functienaam en de code welke functionaliteit binnen de app erdoor wordt ondersteund (zoals `process-upload` of `send-email`).
+1. **Open het beheerdersdashboard van uw hostingprovider** - platforms zoals Vercel, Supabase, Netlify of AWS tonen een lijst van alle actieve serverloze functies ('Edge Functions' of 'Serverless Functions'), vaak met veel meer actieve endpoints dan een oprichter verwacht.
+2. **Noteer in heldere taal wat elke afzonderlijke functie doet** - herleid op basis van de functienaam en de code welke functionaliteit binnen de app erdoor wordt ondersteund (zoals `process-upload` of `send-email`).
 3. **Stel bij elke functie de vraag: is deze uitsluitend bedoeld voor intern gebruik of voor het publieke internet?** Functies die uitsluitend intern data moeten verwerken, blijken in AI-gegeneerde code schrikbarend vaak als publiek toegankelijke URL zonder authenticatie te zijn uitgerold.
-4. **Test het direct aanroepen van de functie-URL in een browser zonder ingelogd te zijn** — controleer of het eindpunt data retourneert of een actie uitvoert, in plaats van het verzoek direct af te wijzen met een 401 Unauthorized statuscode.
-5. **Markeer elk endpoint dat ongeautoriseerd reageert voor directe opvolging** — dit levert direct een geprioriteerde actielijst op voor uw volgende ontwikkelronde.
+4. **Test het direct aanroepen van de functie-URL in een browser zonder ingelogd te zijn** - controleer of het eindpunt data retourneert of een actie uitvoert, in plaats van het verzoek direct af te wijzen met een 401 Unauthorized statuscode.
+5. **Markeer elk endpoint dat ongeautoriseerd reageert voor directe opvolging** - dit levert direct een geprioriteerde actielijst op voor uw volgende ontwikkelronde.
 
 Deze zelf-audit vervangt geen diepgaande penetratietest, maar zorgt ervoor dat u met concrete inzichten en gerichte prioriteiten aan tafel zit met uw software-engineers.
 
@@ -80,9 +80,9 @@ Tijdens het oplossen van een ongerelateerde kwestie ontdekte een technisch nieuw
 **Resultaat:** LaunchStudio voegde de juiste authenticatie toe aan de catalogus-updatefunctie en voerde een volledige inventarisatie uit van elke andere ingezette functie in LeesNet, om te bevestigen dat geen van de andere dezelfde kloof deelde.
 
 > *"Die functie was nooit iets wat ik überhaupt zag als 'onderdeel van het product' op de manier waarop ik nadacht over de daadwerkelijke pagina's. Het draaide gewoon stilletjes op de achtergrond de hele tijd, deed zijn werk, totdat bleek dat iedereen het rechtstreeks kon bereiken."*
-> — **Sofie Willemsen, Oprichter, LeesNet (Enschede)**
+> - **Sofie Willemsen, Oprichter, LeesNet (Enschede)**
 
-**Kosten en tijdlijn:** € 2.100 (inventarisatie van serverloze functies en herstel van authenticatie) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (inventarisatie van serverloze functies en herstel van authenticatie) - voltooid in 7 werkdagen.
 
 ---
 
@@ -106,7 +106,7 @@ Door de URL van de serverless functie rechtstreeks aan te roepen via de browser 
 
 ### Is het verbergen van de URL van een functie voldoende beveiliging ('security through obscurity')?
 
-Beslist niet — het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels.
+Beslist niet - het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels.
 
 <script type="application/ld+json">
 {
@@ -150,7 +150,7 @@ Beslist niet — het geheimhouden van een URL biedt nul garantie. Zodra de URL i
       "name": "Is het verbergen van de URL van een functie voldoende beveiliging ('security through obscurity')?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beslist niet — het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels."
+        "text": "Beslist niet - het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels."
       }
     }
   ]

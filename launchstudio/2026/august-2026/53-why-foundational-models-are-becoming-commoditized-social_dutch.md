@@ -1,4 +1,4 @@
-🔥 James bouwde een prototype met **Cursor** — James, een SaaS-bouwer, bouwde een forecast-tool, maar een update van GPT-4 naar GPT-4o brak zijn applicatie doordat API-parametersyntax verouderd raakte. 🧠
+🔥 James bouwde een prototype met **Cursor** - James, een SaaS-bouwer, bouwde een forecast-tool, maar een update van GPT-4 naar GPT-4o brak zijn applicatie doordat API-parametersyntax verouderd raakte. 🧠
 
 De commoditisering van AI-modellen dwingt een verschuiving af van oppervlakkige API-wrappers naar diepe workflow-integraties en universele adapter-architecturen.
 
@@ -12,7 +12,7 @@ De commoditisering van AI-modellen dwingt een verschuiving af van oppervlakkige 
 
 Bij **LaunchStudio** lossen we exact dit type LLM-adapterarchitectuur en workflow-integratievraagstukken op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-James' forecast-applicatie werd toekomstbestendig: Het wisselen van AI-modellen kost nu slechts enkele minuten configuratie zonder vendor lock-in. (€1.500 (LLM Adapter Integratie) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
+James' forecast-applicatie werd toekomstbestendig: Het wisselen van AI-modellen kost nu slechts enkele minuten configuratie zonder vendor lock-in. (€1.500 (LLM Adapter Integratie) - productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
 👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/why-foundational-models-are-becoming-commoditized
 

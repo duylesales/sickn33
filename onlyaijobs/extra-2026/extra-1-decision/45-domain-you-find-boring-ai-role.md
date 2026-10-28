@@ -13,7 +13,7 @@ Content Format: Decision Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Great Team, Dull Domain. Should You Take a Job in a Sector That Does Not Interest You?",
-  "description": "Pension administration, industrial coatings, waste logistics — the Dutch AI market is full of technically excellent roles in unglamorous sectors. How much domain interest actually matters, and when it becomes the thing that makes you leave.",
+  "description": "Pension administration, industrial coatings, waste logistics - the Dutch AI market is full of technically excellent roles in unglamorous sectors. How much domain interest actually matters, and when it becomes the thing that makes you leave.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-23",
@@ -35,13 +35,13 @@ Content Format: Decision Guide
 }
 </script>
 
-The offer is technically strong: production systems, a competent team, a manager who understands the work, twenty minutes from home. The company administers pensions, or coats steel, or routes waste collection lorries, and you feel nothing about any of it. Meanwhile, a role at a company whose product you find genuinely interesting is further away, pays less and has no data team to speak of. Candidates rarely admit that domain interest is driving the decision, because it sounds unserious next to salary and technology. It deserves a place in the decision — just not the place most people give it.
+The offer is technically strong: production systems, a competent team, a manager who understands the work, twenty minutes from home. The company administers pensions, or coats steel, or routes waste collection lorries, and you feel nothing about any of it. Meanwhile, a role at a company whose product you find genuinely interesting is further away, pays less and has no data team to speak of. Candidates rarely admit that domain interest is driving the decision, because it sounds unserious next to salary and technology. It deserves a place in the decision - just not the place most people give it.
 
 ## Why the Dutch Market Puts This Question in Front of You
 
 Much of the interesting applied AI work in the Netherlands sits in sectors that nobody grows up dreaming about: insurance, pensions, logistics, wholesale, waste, water, steel, chemicals, greenhouse horticulture, social services. That is not an accident. These industries have decades of operational data, real cost pressure, physical constraints and problems that data can genuinely improve.
 
-Consumer technology, gaming, media and research, the sectors people name when asked what they find interesting, employ a much smaller share of the country's data professionals — and compete for candidates accordingly. A search restricted to sectors that sound exciting will return fewer roles, further from home, with more applicants each.
+Consumer technology, gaming, media and research, the sectors people name when asked what they find interesting, employ a much smaller share of the country's data professionals - and compete for candidates accordingly. A search restricted to sectors that sound exciting will return fewer roles, further from home, with more applicants each.
 
 ## What Domain Interest Actually Affects
 
@@ -49,7 +49,7 @@ It is worth separating what interest changes from what it does not.
 
 **It does not usually affect the technical work.** Forecasting demand for industrial fasteners and forecasting demand for concert tickets involve the same methods, the same evaluation problems and the same production concerns.
 
-**It strongly affects your appetite for the domain conversations.** Half your job is asking people to explain their processes in detail and listening carefully to the answer. If the subject bores you, those conversations become an effort rather than a source of insight — and the quality of your models depends on them.
+**It strongly affects your appetite for the domain conversations.** Half your job is asking people to explain their processes in detail and listening carefully to the answer. If the subject bores you, those conversations become an effort rather than a source of insight - and the quality of your models depends on them.
 
 **It affects how quickly you learn the domain.** Curiosity accelerates it; indifference means you rely on formal explanations rather than on noticing things.
 
@@ -87,7 +87,7 @@ Before deciding that a domain bores you, find out what the problem actually is. 
 
 ## When It Becomes the Reason You Leave
 
-**When the work requires deep domain immersion.** Some roles cannot be done without genuinely caring — regulatory modelling, clinical applications, safety engineering. Indifference shows and holds you back.
+**When the work requires deep domain immersion.** Some roles cannot be done without genuinely caring - regulatory modelling, clinical applications, safety engineering. Indifference shows and holds you back.
 
 **When the domain conversations are most of the job.** If you spend four days a week with underwriters, planners or clinicians, sustained disinterest is corrosive for everyone.
 
@@ -99,13 +99,13 @@ Before deciding that a domain bores you, find out what the problem actually is. 
 
 ## The Portability Argument
 
-The strongest practical case for accepting an uninteresting domain is portability. Domain knowledge accumulates slowly and transfers partially, but a specific pairing — forecasting plus logistics, vision plus manufacturing, governance plus a regulated sector — makes you unusually employable within that sector and still credible outside it.
+The strongest practical case for accepting an uninteresting domain is portability. Domain knowledge accumulates slowly and transfers partially, but a specific pairing - forecasting plus logistics, vision plus manufacturing, governance plus a regulated sector - makes you unusually employable within that sector and still credible outside it.
 
 The corresponding risk is that after five years in a sector, most of the roles you are qualified for are in that sector. If you are certain you want out eventually, choosing a domain you can tolerate for a long time matters more than it seems at the start.
 
 ## A Middle Path Worth Considering
 
-If the technical role is excellent and the domain leaves you cold, consider accepting with an explicit personal horizon: two or three years, during which you build production experience, a portfolio of transferable work and a professional network — and then reassess deliberately rather than drifting.
+If the technical role is excellent and the domain leaves you cold, consider accepting with an explicit personal horizon: two or three years, during which you build production experience, a portfolio of transferable work and a professional network - and then reassess deliberately rather than drifting.
 
 Write down what you want to have learned by then. People who do this generally leave on their own terms with something to show. People who accept indefinitely and hope to become interested usually neither become interested nor leave until something forces it.
 
@@ -113,7 +113,7 @@ Write down what you want to have learned by then. People who do this generally l
 
 Disinterest in a sector is often an impression formed in ten seconds from a company name, and it is worth examining before it costs you a good role.
 
-**Read three vacancies from that sector properly.** Not the company descriptions — the sections describing the work. Notice whether your reaction changes when you see the actual problems.
+**Read three vacancies from that sector properly.** Not the company descriptions - the sections describing the work. Notice whether your reaction changes when you see the actual problems.
 
 **Spend an hour understanding the business.** How does this organisation make money or deliver its service, where does it lose money, and what decisions repeat weekly? Most sectors become interesting at exactly this level of detail.
 
@@ -121,7 +121,7 @@ Disinterest in a sector is often an impression formed in ten seconds from a comp
 
 **Separate the sector from the employer.** "Insurance" is a category; this particular insurer with this particular team and this particular data is a specific thing, and your indifference may be attached to the category rather than the specifics.
 
-**Notice whether you are avoiding or comparing.** Rejecting a domain because something genuinely better is available is a comparison. Rejecting it in the abstract, with nothing else in hand, is avoidance — and avoidance in a search usually costs more than the domain ever would.
+**Notice whether you are avoiding or comparing.** Rejecting a domain because something genuinely better is available is a comparison. Rejecting it in the abstract, with nothing else in hand, is avoidance - and avoidance in a search usually costs more than the domain ever would.
 
 If after all that the answer is still no, that is a legitimate conclusion reached properly rather than a reflex.
 
@@ -131,7 +131,7 @@ The people who end up content in sectors they did not choose are almost always t
 
 **Spend the first weeks asking rather than building.** Sit with the people whose work you are modelling. Watch them do it. The questions that feel naive in month one are the ones nobody can answer in month two.
 
-**Learn the vocabulary properly.** Every sector has terms that carry precise meaning — coverage, batch, tariff, disposition, shrinkage. Using them correctly changes how stakeholders talk to you, and the detail they volunteer is where the useful features come from.
+**Learn the vocabulary properly.** Every sector has terms that carry precise meaning - coverage, batch, tariff, disposition, shrinkage. Using them correctly changes how stakeholders talk to you, and the detail they volunteer is where the useful features come from.
 
 **Find the constraint that shapes everything.** Regulation, a physical bottleneck, a seasonal cycle, a contract structure. Once you see it, decisions that looked arbitrary become legible, and the domain becomes a system rather than a list of rules.
 
@@ -139,7 +139,7 @@ The people who end up content in sectors they did not choose are almost always t
 
 **Write down what you learn.** Domain knowledge is the part of your work that nobody hands over, and the document you build becomes valuable to the team and to you.
 
-Indifference usually dissolves at the level of detail, not at the level of the sector name. If it survives a year of genuine attention, that is real information about fit — and a much better basis for leaving than an initial impression was.
+Indifference usually dissolves at the level of detail, not at the level of the sector name. If it survives a year of genuine attention, that is real information about fit - and a much better basis for leaving than an initial impression was.
 
 ## Real example
 
@@ -149,7 +149,7 @@ A data scientist turns down an offer from a media company, which she finds genui
 
 She gives herself two years. The first six months are slower than expected, because pension rules are complicated and she has to ask a great deal.
 
-Then something shifts. The data quality problem she is working on turns out to affect what individual people receive when they retire, and the actuaries she works with are precise, curious and patient with her questions. The technical work — reconciling decades of records across systems — is harder than anything she did previously.
+Then something shifts. The data quality problem she is working on turns out to affect what individual people receive when they retire, and the actuaries she works with are precise, curious and patient with her questions. The technical work - reconciling decades of records across systems - is harder than anything she did previously.
 
 Three years later she is still there, leading data quality work. She would not describe pensions as her passion. She would describe the problem as the most consequential she has worked on, which she says is a better reason to stay than interest in the subject ever was.
 
@@ -163,7 +163,7 @@ Three years later she is still there, leading data quality work. She would not d
 
 ## Where to Start
 
-Before dismissing a sector, ask what the team's hardest current problem is — and check which nearby employers offer comparable technical work in domains you would choose.
+Before dismissing a sector, ask what the team's hardest current problem is - and check which nearby employers offer comparable technical work in domains you would choose.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
@@ -179,7 +179,7 @@ Ask what the hardest current technical problem is, who is affected when the mode
 When the job requires deep immersion, when domain conversations fill most of your week, or when you cannot explain to yourself why the work matters to anyone.
 
 ### (Scenario: candidate worried about being stuck) Will working in one sector limit my future options?
-Partly — after several years most roles you qualify for will be in that sector. Choose a domain you could tolerate long-term, and keep your skills transferable.
+Partly - after several years most roles you qualify for will be in that sector. Choose a domain you could tolerate long-term, and keep your skills transferable.
 
 ### (Scenario: candidate deciding pragmatically) Is it acceptable to take a job purely for the technical experience?
 Yes, provided you set a horizon and write down what you want to have learned. Drifting indefinitely in a domain you tolerate is what produces regret.
@@ -189,10 +189,10 @@ Yes, provided you set a horizon and write down what you want to have learned. Dr
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does the industry matter for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Less than candidates think — methods transfer and production experience is what employers value."}},
+    {"@type": "Question", "name": "Does the industry matter for an AI career?", "acceptedAnswer": {"@type": "Answer", "text": "Less than candidates think - methods transfer and production experience is what employers value."}},
     {"@type": "Question", "name": "How do I know whether a domain will bore me?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about the hardest problem, the consequences of errors and what insiders find surprising."}},
     {"@type": "Question", "name": "When does a boring domain become a real problem?", "acceptedAnswer": {"@type": "Answer", "text": "When the role requires deep immersion or domain conversations fill most of the week."}},
-    {"@type": "Question", "name": "Will working in one sector limit my future options?", "acceptedAnswer": {"@type": "Answer", "text": "Partly — keep skills transferable and choose a domain you can tolerate long-term."}},
+    {"@type": "Question", "name": "Will working in one sector limit my future options?", "acceptedAnswer": {"@type": "Answer", "text": "Partly - keep skills transferable and choose a domain you can tolerate long-term."}},
     {"@type": "Question", "name": "Is it acceptable to take a job purely for the technical experience?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with a set horizon and written learning goals."}}
   ]
 }

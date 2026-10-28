@@ -21,7 +21,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Your product manager just dropped the bomb: "We need a mobile app." The question that follows will shape your engineering budget for the next 12-18 months. Do you build native apps for iOS and Android separately — doubling your codebase and your team size? Do you use a cross-platform framework like React Native or Flutter? Or do you skip the App Store entirely and build a Progressive Web App?
+Your product manager just dropped the bomb: "We need a mobile app." The question that follows will shape your engineering budget for the next 12-18 months. Do you build native apps for iOS and Android separately - doubling your codebase and your team size? Do you use a cross-platform framework like React Native or Flutter? Or do you skip the App Store entirely and build a Progressive Web App?
 
 The answer in 2026 is not ideological. It is mathematical. Each approach has a cost, a capability set, and a maintenance burden. Choosing wrong wastes six figures and six months.
 
@@ -44,15 +44,15 @@ Native development means building two separate applications: Swift/SwiftUI for i
 | Team requirement | 1-2 iOS developers | 1-2 Android developers | 2-4 developers |
 | Time to first release | 3-6 months | 3-6 months | 4-8 months (parallel) |
 
-For most B2B SaaS applications — dashboards, CRM tools, project management apps — native development is an expensive luxury that delivers marginal user experience benefits over cross-platform alternatives.
+For most B2B SaaS applications - dashboards, CRM tools, project management apps - native development is an expensive luxury that delivers marginal user experience benefits over cross-platform alternatives.
 
 ## Cross-Platform: The 2026 Sweet Spot
 
-Cross-platform frameworks let you write one codebase that runs on both iOS and Android. In 2026, two frameworks dominate: Stack Overflow's 2024 Developer Survey put Flutter ahead of React Native among professional developers (46% vs. 35% among those using a cross-platform framework), with the two together accounting for over 80% of cross-platform usage — but Flutter's technical lead hasn't translated into the job market, where React Native still posts roughly six times more open listings, reflecting how much longer it's been the default choice at established companies. Neither framework is "winning" decisively in 2026; the right choice depends on your team's existing skills and hiring pool more than on raw ecosystem size.
+Cross-platform frameworks let you write one codebase that runs on both iOS and Android. In 2026, two frameworks dominate: Stack Overflow's 2024 Developer Survey put Flutter ahead of React Native among professional developers (46% vs. 35% among those using a cross-platform framework), with the two together accounting for over 80% of cross-platform usage - but Flutter's technical lead hasn't translated into the job market, where React Native still posts roughly six times more open listings, reflecting how much longer it's been the default choice at established companies. Neither framework is "winning" decisively in 2026; the right choice depends on your team's existing skills and hiring pool more than on raw ecosystem size.
 
-**React Native** — JavaScript/TypeScript based, backed by Meta. The largest ecosystem, the most libraries, and the easiest hiring market. If your web team already uses React, React Native allows significant code sharing between web and mobile.
+**React Native** - JavaScript/TypeScript based, backed by Meta. The largest ecosystem, the most libraries, and the easiest hiring market. If your web team already uses React, React Native allows significant code sharing between web and mobile.
 
-**Flutter** — Dart-based, backed by Google. Superior animation performance, a more opinionated widget system, and growing ecosystem. Flutter's "write once, run anywhere" promise now extends to web, desktop, and embedded devices.
+**Flutter** - Dart-based, backed by Google. Superior animation performance, a more opinionated widget system, and growing ecosystem. Flutter's "write once, run anywhere" promise now extends to web, desktop, and embedded devices.
 
 **The pragmatic comparison:**
 
@@ -72,20 +72,20 @@ Cross-platform development costs 40-60% less than maintaining two native codebas
 
 ## Progressive Web Apps: Skip the App Store Entirely
 
-A Progressive Web App (PWA) is a web application that behaves like a native app — it can be installed on the home screen, works offline, sends push notifications, and runs full-screen without browser chrome.
+A Progressive Web App (PWA) is a web application that behaves like a native app - it can be installed on the home screen, works offline, sends push notifications, and runs full-screen without browser chrome.
 
-The results of well-executed PWAs are well documented. Google's own web.dev case study on Twitter Lite recorded a 65% increase in pages per session, a 75% increase in Tweets sent, and a 20% decrease in bounce rate after the PWA replaced the previous mobile web experience — achieved on a service worth of under 1MB that loaded reliably on slow connections. Starbucks reported similar results with its ordering PWA: daily active users roughly doubled after launch, at a fraction of the native app's download size. These are not edge cases — they reflect the core PWA value proposition of removing install friction for content- and transaction-heavy experiences.
+The results of well-executed PWAs are well documented. Google's own web.dev case study on Twitter Lite recorded a 65% increase in pages per session, a 75% increase in Tweets sent, and a 20% decrease in bounce rate after the PWA replaced the previous mobile web experience - achieved on a service worth of under 1MB that loaded reliably on slow connections. Starbucks reported similar results with its ordering PWA: daily active users roughly doubled after launch, at a fraction of the native app's download size. These are not edge cases - they reflect the core PWA value proposition of removing install friction for content- and transaction-heavy experiences.
 
 **When PWA is the right choice:**
 
-- **Content-heavy applications.** News apps, documentation tools, e-commerce catalogues — where the primary interaction is reading and browsing.
+- **Content-heavy applications.** News apps, documentation tools, e-commerce catalogues - where the primary interaction is reading and browsing.
 - **Low-frequency usage apps.** If users open your app once a week, forcing them to download and update a native app is friction. A PWA is always up-to-date.
 - **Budget-constrained projects.** A PWA costs 50-70% less than a native app and requires only web developers to build and maintain.
-- **Rapid iteration.** PWA updates deploy instantly — no App Store review process, no waiting for users to update.
+- **Rapid iteration.** PWA updates deploy instantly - no App Store review process, no waiting for users to update.
 
 **PWA limitations in 2026:**
 
-- **iOS restrictions — and a genuine EU-specific wrinkle.** Apple still limits PWA capabilities on iOS: no background push notifications, limited offline storage, no access to Bluetooth or NFC. European teams should also be aware of a 2024 episode worth knowing about: as part of complying with the EU's Digital Markets Act, Apple briefly announced in February 2024 that it would remove home-screen PWA support entirely for EU users in iOS 17.4, then reversed the decision within two weeks after the European Commission signalled it would investigate. Home-screen PWAs remain available in the EU today, but the episode is a useful reminder that PWA capability on iOS is ultimately a policy decision Apple controls, not a stable technical guarantee — a real consideration when betting a multi-year roadmap on PWA for an iOS-heavy EU user base.
+- **iOS restrictions - and a genuine EU-specific wrinkle.** Apple still limits PWA capabilities on iOS: no background push notifications, limited offline storage, no access to Bluetooth or NFC. European teams should also be aware of a 2024 episode worth knowing about: as part of complying with the EU's Digital Markets Act, Apple briefly announced in February 2024 that it would remove home-screen PWA support entirely for EU users in iOS 17.4, then reversed the decision within two weeks after the European Commission signalled it would investigate. Home-screen PWAs remain available in the EU today, but the episode is a useful reminder that PWA capability on iOS is ultimately a policy decision Apple controls, not a stable technical guarantee - a real consideration when betting a multi-year roadmap on PWA for an iOS-heavy EU user base.
 - **No App Store presence.** Being discoverable in the App Store matters for B2C applications. B2B applications distributed via direct links are less affected.
 - **Limited device API access.** No camera with advanced controls, no geofencing, no access to the contact list.
 
@@ -103,7 +103,7 @@ The results of well-executed PWAs are well documented. Google's own web.dev case
 
 ### Scoring Your Specific Project
 
-The table above works for a first pass, but most real decisions sit between rows — a €70K budget with some GPU-intensive screens, for example. A more reliable method is to score your project against five weighted criteria and let the total point out the answer, rather than pattern-matching to the nearest row.
+The table above works for a first pass, but most real decisions sit between rows - a €70K budget with some GPU-intensive screens, for example. A more reliable method is to score your project against five weighted criteria and let the total point out the answer, rather than pattern-matching to the nearest row.
 
 | Criterion | Weight | Native scores high when... | Cross-Platform scores high when... | PWA scores high when... |
 |---|---|---|---|---|
@@ -113,7 +113,7 @@ The table above works for a first pass, but most real decisions sit between rows
 | Update cadence required | 15% | Monthly release cycle is acceptable | Weekly releases needed, OTA update tooling in place | Daily or continuous deployment desired |
 | Existing team skillset | 20% | Team already has Swift/Kotlin expertise | Team already knows React or is starting fresh with mobile | Team is web-only (HTML/CSS/JS, no mobile experience) |
 
-Score each criterion 1–5 for how well your project matches each column, multiply by the weight, and sum. In practice, the exercise is less about the arithmetic and more about forcing an honest conversation: teams consistently overweight "we might need AR someday" (performance/hardware) and underweight "we have zero mobile engineers today" (existing team skillset) — the second criterion is usually the one that should have decided the question from the start. The framework is for teams that already know they need a mobile app and are choosing how to build it, not for teams still validating whether they need one at all.
+Score each criterion 1–5 for how well your project matches each column, multiply by the weight, and sum. In practice, the exercise is less about the arithmetic and more about forcing an honest conversation: teams consistently overweight "we might need AR someday" (performance/hardware) and underweight "we have zero mobile engineers today" (existing team skillset) - the second criterion is usually the one that should have decided the question from the start. The framework is for teams that already know they need a mobile app and are choosing how to build it, not for teams still validating whether they need one at all.
 
 **The 2026 default recommendation:** Start with a responsive web app. If mobile engagement data shows users want a native experience, build with React Native (if your team uses React) or Flutter (if starting fresh). Go native only if you hit specific technical limitations that cross-platform cannot solve.
 
@@ -123,7 +123,7 @@ Mobile development is particularly well-suited to distributed team models becaus
 
 At Manifera, our [dedicated development teams](https://www.manifera.com/services/dedicated-development-teams/) include experienced React Native and Flutter developers in Ho Chi Minh City, coordinated by project managers in Amsterdam who ensure the mobile experience meets European quality and accessibility standards.
 
-Explore mobile development options — [manifera.com/contact-us](https://www.manifera.com/contact-us/).
+Explore mobile development options - [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -131,11 +131,11 @@ Explore mobile development options — [manifera.com/contact-us](https://www.man
 
 ### We already have a React web app. Should we use React Native for mobile? (Scenario: CTO evaluating mobile strategy for a team of 5 React developers)
 
-Yes — this is one of the strongest arguments for React Native. Your developers already know TypeScript, React component patterns, and state management (Redux, Zustand). The learning curve is 2-4 weeks instead of 3-6 months for a new framework. Additionally, you can share business logic, API clients, and utility functions between web and mobile codebases. Expect 30-40% code reuse between your React web app and React Native mobile app.
+Yes - this is one of the strongest arguments for React Native. Your developers already know TypeScript, React component patterns, and state management (Redux, Zustand). The learning curve is 2-4 weeks instead of 3-6 months for a new framework. Additionally, you can share business logic, API clients, and utility functions between web and mobile codebases. Expect 30-40% code reuse between your React web app and React Native mobile app.
 
 ### How do we decide between iOS-first or Android-first? (Scenario: Startup founder with budget for only one platform initially)
 
-Analyse your existing user base. Check your web analytics for device distribution — if 70% of your users visit from iOS, launch iOS first. For B2B applications targeting Western European and North American markets, iOS typically dominates (60-70% of professional users). For markets in Southeast Asia, Latin America, or Africa, Android dominates (80-90%). If you have no data, choose the platform where your target customer persona is most likely to be.
+Analyse your existing user base. Check your web analytics for device distribution - if 70% of your users visit from iOS, launch iOS first. For B2B applications targeting Western European and North American markets, iOS typically dominates (60-70% of professional users). For markets in Southeast Asia, Latin America, or Africa, Android dominates (80-90%). If you have no data, choose the platform where your target customer persona is most likely to be.
 
 ### Can Flutter apps truly match native performance? (Scenario: Engineering lead concerned about performance for a data-heavy dashboard app)
 
@@ -151,7 +151,7 @@ Web app, almost always. A responsive web application is 40-60% cheaper to build,
 
 ### Is it safe to bet a European product's mobile strategy on PWA long-term? (Scenario: CTO of a Dutch B2B platform weighing PWA against a native iOS app for EU customers)
 
-Mostly yes, with one caveat worth building into your risk register. In February 2024, Apple briefly announced it would remove home-screen PWA support entirely for EU users as part of its Digital Markets Act compliance, then reversed the decision within two weeks after the European Commission signalled a formal investigation. Home-screen PWAs, including push notifications and offline storage, remain fully available in the EU today, and the DMA's broader intent — more competition and openness on Apple's platform — points toward PWA capability staying protected rather than shrinking further. The practical lesson is not "avoid PWA," but "don't treat any single platform's PWA support as immovable": build your PWA on standard web APIs, keep an eye on DMA enforcement developments, and if your product is mission-critical for iOS-heavy EU customers, budget contingency time for a native fallback rather than assuming zero regulatory risk.
+Mostly yes, with one caveat worth building into your risk register. In February 2024, Apple briefly announced it would remove home-screen PWA support entirely for EU users as part of its Digital Markets Act compliance, then reversed the decision within two weeks after the European Commission signalled a formal investigation. Home-screen PWAs, including push notifications and offline storage, remain fully available in the EU today, and the DMA's broader intent - more competition and openness on Apple's platform - points toward PWA capability staying protected rather than shrinking further. The practical lesson is not "avoid PWA," but "don't treat any single platform's PWA support as immovable": build your PWA on standard web APIs, keep an eye on DMA enforcement developments, and if your product is mission-critical for iOS-heavy EU customers, budget contingency time for a native fallback rather than assuming zero regulatory risk.
 
 <script type="application/ld+json">
 {

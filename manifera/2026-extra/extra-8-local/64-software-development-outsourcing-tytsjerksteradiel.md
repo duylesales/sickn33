@@ -20,9 +20,9 @@ target_persona: "CMO"
 }
 </script>
 
-Marketing calendars are built around dates that do not move — a trade show, a seasonal buying window, an investor demo — while engineering timelines are built around scope that does, and the gap between the two is where most go-to-market plans quietly die.
+Marketing calendars are built around dates that do not move - a trade show, a seasonal buying window, an investor demo - while engineering timelines are built around scope that does, and the gap between the two is where most go-to-market plans quietly die.
 
-**The Pain:** A CMO at a fast-growing consumer-tech company headquartered in Tytsjerksteradiel — the Friesland municipality wrapped around the De Leien lake district, a water-sports and recreational-boating region just northeast of Leeuwarden — has already booked a September campaign around the launch of a new customer-facing mobile feature, and the in-house engineering team, which is small, talented, and permanently at capacity, is telling her the feature will not be ready until November at the earliest. The campaign budget is already committed to media partners and the trade-show booth is already paid for; the only thing missing is the product the campaign is supposed to sell.
+**The Pain:** A CMO at a fast-growing consumer-tech company headquartered in Tytsjerksteradiel - the Friesland municipality wrapped around the De Leien lake district, a water-sports and recreational-boating region just northeast of Leeuwarden - has already booked a September campaign around the launch of a new customer-facing mobile feature, and the in-house engineering team, which is small, talented, and permanently at capacity, is telling her the feature will not be ready until November at the earliest. The campaign budget is already committed to media partners and the trade-show booth is already paid for; the only thing missing is the product the campaign is supposed to sell.
 
 **The Agitation:** Every quarter this pattern repeats: marketing commits to a launch date based on a roadmap estimate that engineering gave under optimistic assumptions, engineering hits an unforeseen dependency or a competing priority from another part of the business, and the CMO ends up either pushing the campaign at real cost to media spend and momentum, or launching a stripped-down version that undersells the very positioning the campaign was built around. Last year, a delayed loyalty-program integration forced a full campaign postponement six days before a regional water-sports festival sponsorship activation, costing an estimated €22,000 in non-refundable media placements and handing the sponsorship spotlight to a competitor who had nothing better to say than "we showed up on time."
 
@@ -30,13 +30,13 @@ Marketing calendars are built around dates that do not move — a trade show, a 
 
 Software development outsourcing solves a speed-to-market problem only when it is structured as an extension of delivery capacity with real accountability to campaign dates, not a vague promise that "an agency will help." That requires several specific things to be true from the first engagement.
 
-First, the outsourced team has to be scoped against the marketing calendar, not the other way around. Most engineering estimates are built assuming no fixed external date exists; when a campaign date is fixed and non-negotiable, the estimation process has to work backward from that date, identifying which features are true launch blockers versus which are enhancements that can ship in a fast-follow release after the campaign lands. This distinction — launch-critical versus enhancement — has to be made explicitly and in writing before a single sprint starts, because it is the single biggest lever for hitting a hard date without cutting corners on what actually matters.
+First, the outsourced team has to be scoped against the marketing calendar, not the other way around. Most engineering estimates are built assuming no fixed external date exists; when a campaign date is fixed and non-negotiable, the estimation process has to work backward from that date, identifying which features are true launch blockers versus which are enhancements that can ship in a fast-follow release after the campaign lands. This distinction - launch-critical versus enhancement - has to be made explicitly and in writing before a single sprint starts, because it is the single biggest lever for hitting a hard date without cutting corners on what actually matters.
 
-Second, the engagement needs a dedicated integration layer between marketing and engineering that exists independently of the CMO having to personally chase status updates. A weekly build-and-demo cadence, visible in a shared dashboard, means marketing can see real progress against the launch-critical scope weeks before the date arrives — and can adjust campaign messaging or timing with two or three weeks of runway if slippage becomes visible early, instead of finding out six days before a sponsorship activation.
+Second, the engagement needs a dedicated integration layer between marketing and engineering that exists independently of the CMO having to personally chase status updates. A weekly build-and-demo cadence, visible in a shared dashboard, means marketing can see real progress against the launch-critical scope weeks before the date arrives - and can adjust campaign messaging or timing with two or three weeks of runway if slippage becomes visible early, instead of finding out six days before a sponsorship activation.
 
-Third, technical debt taken on to hit a hard date has to be tracked and paid down deliberately, not silently absorbed into the codebase. A team under launch pressure will reasonably cut some corners — skip an edge case, hardcode a config that should be dynamic — but if that debt is not logged and scheduled for cleanup in the sprint immediately after launch, it compounds into the exact kind of instability that causes the next campaign's feature request to take even longer.
+Third, technical debt taken on to hit a hard date has to be tracked and paid down deliberately, not silently absorbed into the codebase. A team under launch pressure will reasonably cut some corners - skip an edge case, hardcode a config that should be dynamic - but if that debt is not logged and scheduled for cleanup in the sprint immediately after launch, it compounds into the exact kind of instability that causes the next campaign's feature request to take even longer.
 
-Fourth, the outsourced team should carry enough business context to make judgment calls under time pressure without escalating every ambiguous decision back to the CMO. A team that understands why a feature exists — what campaign narrative it supports, what customer segment it targets — makes faster, better-aligned decisions when a genuine tradeoff appears late in a sprint than a team that only has a ticket description to go on.
+Fourth, the outsourced team should carry enough business context to make judgment calls under time pressure without escalating every ambiguous decision back to the CMO. A team that understands why a feature exists - what campaign narrative it supports, what customer segment it targets - makes faster, better-aligned decisions when a genuine tradeoff appears late in a sprint than a team that only has a ticket description to go on.
 
 Fifth, launch-day technical support has to be planned as its own deliverable, not an afterthought. A feature that works in staging and breaks under real campaign-driven traffic on day one does more brand damage than a slightly later launch would have, so load testing against realistic campaign-traffic projections belongs in the plan from the outset, not added in if someone remembers.
 
@@ -78,8 +78,8 @@ Lacustre Sports SAS, an outdoor and watersports retail company based in Annecy, 
 
 Manifera's Amsterdam architects triaged the feature scope against the fixed festival date within the first two weeks, splitting off two enhancement items that were not launch-critical, while the Ho Chi Minh City pod built the core booking flow on a weekly demo cadence visible to the marketing team throughout. Load testing two weeks before the festival caught a booking-concurrency limit that would have failed under real festival-day traffic, and the feature launched on schedule with no incidents during the festival's peak weekend.
 
-> *"We had missed two campaign dates in the previous year before working with Manifera. Having marketing and engineering looking at the same weekly demo, instead of finding out about delays after the fact, was the actual fix — not just more engineers."*
-> — **CMO, Lacustre Sports SAS, France**
+> *"We had missed two campaign dates in the previous year before working with Manifera. Having marketing and engineering looking at the same weekly demo, instead of finding out about delays after the fact, was the actual fix - not just more engineers."*
+> - **CMO, Lacustre Sports SAS, France**
 
 ## In-House-Only Delivery vs. Manifera Outsourced Pod
 
@@ -101,7 +101,7 @@ If your campaign calendar keeps outrunning what engineering can promise, the fix
 
 ### (Scenario: CMO with a fixed campaign date and a stretched in-house team) How does software development outsourcing actually help hit a marketing deadline that engineering says is unrealistic?
 
-An outsourced pod adds capacity specifically scoped against the fixed date, and the first step is separating truly launch-critical scope from enhancements that can ship afterward — which alone recovers most of the timeline pressure without cutting real corners.
+An outsourced pod adds capacity specifically scoped against the fixed date, and the first step is separating truly launch-critical scope from enhancements that can ship afterward - which alone recovers most of the timeline pressure without cutting real corners.
 
 ### (Scenario: Marketing team burned by a last-minute delay before) How do we get visibility into engineering progress early enough to adjust the campaign if needed?
 
@@ -109,7 +109,7 @@ A weekly build-and-demo cadence, visible to marketing stakeholders directly rath
 
 ### (Scenario: CMO worried about quality being sacrificed for speed) Won't rushing a feature for a fixed date just create more technical debt later?
 
-Some shortcuts under launch pressure are reasonable, but they need to be logged and explicitly scheduled for cleanup in the sprint right after launch — the problem isn't the debt itself, it's debt nobody tracked.
+Some shortcuts under launch pressure are reasonable, but they need to be logged and explicitly scheduled for cleanup in the sprint right after launch - the problem isn't the debt itself, it's debt nobody tracked.
 
 ### (Scenario: Leadership deciding between hiring locally or outsourcing) Why not just hire more engineers in Friesland instead of outsourcing?
 

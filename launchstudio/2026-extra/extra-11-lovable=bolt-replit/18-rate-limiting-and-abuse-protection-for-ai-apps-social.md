@@ -1,4 +1,4 @@
-🚨 Nadia el Amrani built Taalmaatje in Lovable for 340 language learners in Eindhoven. Someone registered an account in 15 seconds, extracted the request format, and hammered her AI model endpoint 60,000 times over nine days as a free translation proxy — with zero rate limiting or spending caps in place. 😳
+🚨 Nadia el Amrani built Taalmaatje in Lovable for 340 language learners in Eindhoven. Someone registered an account in 15 seconds, extracted the request format, and hammered her AI model endpoint 60,000 times over nine days as a free translation proxy - with zero rate limiting or spending caps in place. 😳
 
 Public AI endpoints without abuse guards are blank checks written to strangers. Here's how to protect your budget: 🧠
 

@@ -12,7 +12,7 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Wijzigingen Deployen Zonder Uw Adem In Te Houden",
-  "description": "Als het uitrollen van nieuwe software voelt als een riskant kansspel, gaat u minder vaak deployen — en zeldzame, massale deployments zijn juist véél gevaarlijker. Hoe u releases saai en voorspelbaar maakt met geautomatiseerde pipelines, veilige database-migraties en een geteste rollback.",
+  "description": "Als het uitrollen van nieuwe software voelt als een riskant kansspel, gaat u minder vaak deployen - en zeldzame, massale deployments zijn juist véél gevaarlijker. Hoe u releases saai en voorspelbaar maakt met geautomatiseerde pipelines, veilige database-migraties en een geteste rollback.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-04-27",
@@ -100,7 +100,7 @@ Bewaak gedurende de eerste vijf minuten na de release drie vitale signalen:
 - **De responstijden (Latency):** Een codewijziging kan functioneel 100% correct zijn, maar door een ontbrekende database-index plotseling vijf keer zo traag draaien.
 - **De primaire gebruikersreis:** Verifieer de kernflow persoonlijk door zelf direct in te loggen en één testactie uit te voeren. Dit kost u exact twee minuten en vangt 90% van alle mislukte releases af vóórdat de eerste echte klant er hinder van ondervindt.
 
-Zorg daarnaast voor instrumentatie die regressies opmerkt die zich pas later manifesteren. Een softwarefout die uitsluitend optreedt bij klanten met een specifieke configuratie komt soms pas na enkele uren aan het licht. Daarom is error-tracking verrijkt met klantcontext — gecombineerd met het kort inspecteren van nieuwe foutmeldingen na elke release — de onmisbare metgezel van frequent deployen.
+Zorg daarnaast voor instrumentatie die regressies opmerkt die zich pas later manifesteren. Een softwarefout die uitsluitend optreedt bij klanten met een specifieke configuratie komt soms pas na enkele uren aan het licht. Daarom is error-tracking verrijkt met klantcontext - gecombineerd met het kort inspecteren van nieuwe foutmeldingen na elke release - de onmisbare metgezel van frequent deployen.
 
 Houd tot slot een onveranderlijk logboek bij van wat er wanneer is gedeployed. Wanneer een klant op donderdagmiddag meldt dat een export hapert, toont een deploymentlogboek binnen tien seconden exact welke code-update op dinsdagavond daarvoor verantwoordelijk was. De meeste moderne cloudplatforms houden dit automatisch bij; de professionele discipline zit in het daadwerkelijk raadplegen ervan.
 ## Echt voorbeeld
@@ -118,8 +118,8 @@ De bom barstte toen een handmatige migratie halverwege vastliep op een vergrende
 
 **Resultaat:** Binnen drie werkdagen implementeerde LaunchStudio een professionele CI/CD-pipeline: geautomatiseerde pre-deploy regressietests via GitHub Actions, database-migraties als strikt geautomatiseerde tussenstap met additieve schema-splitsing, geautomatiseerde smoke-checks direct na de release en een geteste één-klik rollback die de vorige werkende container binnen **90 seconden** herstelt. Ilja's deployment-frequentie steeg van eens per week naar meerdere keren per dag, en de beruchte 90-seconden storingsgaten verdwenen voorgoed.
 
-> *"Ik was er onbewust aan gewend geraakt dat ons platform bij elke update anderhalve minuut crashte. Ik had het elf keer goedgepraat omdat het zichzelf daarna altijd leek op te lossen — totdat het een keer 40 minuten lang helemaal misging."*
-> — **Ilja Pietersen, Oprichter, Contractbeheer**
+> *"Ik was er onbewust aan gewend geraakt dat ons platform bij elke update anderhalve minuut crashte. Ik had het elf keer goedgepraat omdat het zichzelf daarna altijd leek op te lossen - totdat het een keer 40 minuten lang helemaal misging."*
+> - **Ilja Pietersen, Oprichter, Contractbeheer**
 
 **Kosten & Doorlooptijd:** CI/CD-inrichting, geautomatiseerde migraties en one-click rollback opgeleverd in 3 werkdagen.
 

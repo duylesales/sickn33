@@ -42,7 +42,7 @@ Content Format: Regional Guide
 }
 </script>
 
-The Nuremberg metropolitan region in northern Bavaria — Franconia — combines a historic city with a dense concentration of technology companies and research. Erlangen, next door, is the global headquarters of a leading medical technology company and home to a major Siemens campus. A Fraunhofer institute in Erlangen gave the world the MP3 format. Herzogenaurach hosts the headquarters of two global sportswear brands and a large automotive supplier. Nuremberg adds enterprise software, market research and federal agencies. For experienced machine learning engineers, AI jobs in Nuremberg and Erlangen span medical imaging, audio and sensor AI, e-commerce and sports, automotive, enterprise software and public-sector data. This guide explains the landscape.
+The Nuremberg metropolitan region in northern Bavaria - Franconia - combines a historic city with a dense concentration of technology companies and research. Erlangen, next door, is the global headquarters of a leading medical technology company and home to a major Siemens campus. A Fraunhofer institute in Erlangen gave the world the MP3 format. Herzogenaurach hosts the headquarters of two global sportswear brands and a large automotive supplier. Nuremberg adds enterprise software, market research and federal agencies. For experienced machine learning engineers, AI jobs in Nuremberg and Erlangen span medical imaging, audio and sensor AI, e-commerce and sports, automotive, enterprise software and public-sector data. This guide explains the landscape.
 
 ## Medical Technology in Erlangen
 
@@ -91,7 +91,7 @@ Nuremberg has a historic old town, a famous Christmas market and a strong local 
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles, showing each vacancy at its exact address with the distance from your home. Applications go straight to the employer's own page, browsing is free without an account and there is no paid placement.
 
-Its listings are currently concentrated in the Netherlands, so for AI jobs in Nuremberg you will find few or no local vacancies there today. Use German job portals, company career pages and Fraunhofer and FAU vacancy lists as primary sources. OnlyAIJobs is useful for comparing Franconia with the Netherlands — where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles — and its distance-based approach is well suited to a region where the main employers sit in three different towns. Franconian employers can list their first AI vacancy free via info@onlyaijobs.eu.
+Its listings are currently concentrated in the Netherlands, so for AI jobs in Nuremberg you will find few or no local vacancies there today. Use German job portals, company career pages and Fraunhofer and FAU vacancy lists as primary sources. OnlyAIJobs is useful for comparing Franconia with the Netherlands - where employers such as Accenture, Cegeka, Holland Innovative and Sendcloud list AI roles - and its distance-based approach is well suited to a region where the main employers sit in three different towns. Franconian employers can list their first AI vacancy free via info@onlyaijobs.eu.
 
 ## Medical Imaging AI in Depth
 
@@ -111,7 +111,7 @@ Fraunhofer IIS applies ML to audio coding and enhancement, speech processing, lo
 
 ## Questions to Ask Franconian Employers
 
-- At which site will I work — Erlangen, Nuremberg, Herzogenaurach or elsewhere?
+- At which site will I work - Erlangen, Nuremberg, Herzogenaurach or elsewhere?
 - What is the working language of the team?
 - For medical AI: how are validation and regulatory approval organised?
 - Which collective agreement applies, and is there a works council?

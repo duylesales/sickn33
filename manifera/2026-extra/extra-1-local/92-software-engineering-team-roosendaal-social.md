@@ -6,8 +6,8 @@
 ❌ **Silent Degradation:** Confidently wrong data is more dangerous than visibly uncertain data.
 
 **The Manifera Solution:**
-✅ **Explicit, Monitored Staleness Tolerances:** Alerts before the tolerance is breached — not after.
-✅ **Genuine Peak-Throughput Load Testing:** Not average-case volume — real operational tempo.
+✅ **Explicit, Monitored Staleness Tolerances:** Alerts before the tolerance is breached - not after.
+✅ **Genuine Peak-Throughput Load Testing:** Not average-case volume - real operational tempo.
 ✅ **Graceful, Operator-Visible Degradation:** The system tells you when it's not sure, instead of going silent.
 
 Real-time reliability engineered for genuine peak tempo. 🛡️

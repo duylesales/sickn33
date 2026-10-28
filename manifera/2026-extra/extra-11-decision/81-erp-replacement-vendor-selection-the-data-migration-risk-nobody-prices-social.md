@@ -6,8 +6,8 @@ Your ERP vendor's migration line item is a guess. Until they've profiled your ac
 ❌ **No cutover rehearsal:** Vendors skip timed mock cycles, so cutover weekend becomes the first real test of whether the delta load fits inside your freeze window.
 
 **The Manifera Solution:**
-✅ **Profile before pricing:** We run data profiling against real production tables during due diligence, before the SOW is final — not as a change order after signature.
-✅ **Three mock cycles, real reconciliation:** Mock 1 surfaces data quality issues, Mock 2 validates fixes at full volume, Mock 3 rehearses cutover timing — with raw reconciliation reports you can audit yourself.
+✅ **Profile before pricing:** We run data profiling against real production tables during due diligence, before the SOW is final - not as a change order after signature.
+✅ **Three mock cycles, real reconciliation:** Mock 1 surfaces data quality issues, Mock 2 validates fixes at full volume, Mock 3 rehearses cutover timing - with raw reconciliation reports you can audit yourself.
 ✅ **A documented rollback plan:** Go/no-go criteria and a tested path back to the legacy system, agreed before cutover weekend, not improvised during it.
 
 Cheap migration quotes are cheap because they're priced against data that doesn't exist in your actual system.

@@ -1,9 +1,9 @@
 📧 The email lands at 4:47 PM. Bram expected €2,500. The quote said €6,200. His first instinct was to shelve the launch, not negotiate. 😳
 
-A quote over budget isn't proof of overcharging — just the gap between a guess and a fact, and quotes bundle different stakes: 🧠
+A quote over budget isn't proof of overcharging - just the gap between a guess and a fact, and quotes bundle different stakes: 🧠
 
 ❌ Founders treat a quote as one number instead of asking what breaks if it's cut
-❌ Payment security and data isolation aren't negotiable — cutting them moves the risk later
+❌ Payment security and data isolation aren't negotiable - cutting them moves the risk later
 ❌ A discount request is awkward: was it padded, or will corners get cut?
 ❌ A cheaper second quote sometimes trims the essential, not the deferrable
 

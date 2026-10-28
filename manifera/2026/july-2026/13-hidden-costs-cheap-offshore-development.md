@@ -22,7 +22,7 @@ Content Format: Cost Analysis
 
 The CFO sees two proposals: Partner A at €35/hour and Partner B at €18/hour. For a 2,000-hour project, that is €70,000 versus €36,000. "We would be foolish not to choose Partner B," she says. The CTO winces. He has seen this movie before.
 
-Eight months later, the project is over budget, behind schedule, and the codebase requires a complete rewrite. The final cost? €140,000 — double the "expensive" option.
+Eight months later, the project is over budget, behind schedule, and the codebase requires a complete rewrite. The final cost? €140,000 - double the "expensive" option.
 
 This article is the autopsy of that decision. Here are the hidden costs that the €18/hour proposal never mentioned.
 
@@ -30,7 +30,7 @@ This article is the autopsy of that decision. Here are the hidden costs that the
 
 **How it works:** The proposal features impressive senior developer profiles. After signing, you discover those seniors are "temporarily assigned to another project." Your actual team consists of engineers with 6-18 months of experience who have never built a production system.
 
-**The cost:** Junior developers take 3-4× longer to implement features correctly. They produce code with more bugs, less documentation, and architectural decisions that create technical debt. A task that a senior developer completes in 8 hours takes a junior 24-32 hours — plus 8 hours of rework after code review.
+**The cost:** Junior developers take 3-4× longer to implement features correctly. They produce code with more bugs, less documentation, and architectural decisions that create technical debt. A task that a senior developer completes in 8 hours takes a junior 24-32 hours - plus 8 hours of rework after code review.
 
 **How to prevent it:** Interview every engineer who will work on your project. Include a technical assessment. And contractually guarantee that specific individuals are assigned to your team for the duration.
 
@@ -42,9 +42,9 @@ This article is the autopsy of that decision. Here are the hidden costs that the
 
 ## Hidden Cost #3: Communication Overhead Tax
 
-**How it works:** At bottom-market rates, the partner cannot afford dedicated project managers. The developers communicate directly with you — in broken English, without context on your business requirements, and without anyone translating between your product vision and their task list.
+**How it works:** At bottom-market rates, the partner cannot afford dedicated project managers. The developers communicate directly with you - in broken English, without context on your business requirements, and without anyone translating between your product vision and their task list.
 
-**The cost:** You become the project manager. Every unclear requirement generates a back-and-forth chain of 5-10 messages. Your CTO spends 15-20 hours per week managing the offshore team instead of doing architecture and strategy work. At a CTO hourly cost of €150+, that management overhead costs €120,000/year — more than the entire development team.
+**The cost:** You become the project manager. Every unclear requirement generates a back-and-forth chain of 5-10 messages. Your CTO spends 15-20 hours per week managing the offshore team instead of doing architecture and strategy work. At a CTO hourly cost of €150+, that management overhead costs €120,000/year - more than the entire development team.
 
 ## Hidden Cost #4: The Rewrite Tax
 
@@ -60,13 +60,13 @@ This article is the autopsy of that decision. Here are the hidden costs that the
 
 ## Hidden Cost #6: Developer Turnover and the Knowledge-Loss Spiral
 
-**How it works:** Bottom-market offshore vendors compete for contracts on price, which means they compete for developers on price too — and lose. Industry attrition data for budget outsourcing shops in Southeast Asia commonly runs 30-40% annually, compared to 10-15% at partners who pay competitively and invest in career growth. Engineers who land at €18/hour shops treat the job as a stepping stone, not a career, and leave the moment a better offer appears — often within 6-9 months.
+**How it works:** Bottom-market offshore vendors compete for contracts on price, which means they compete for developers on price too - and lose. Industry attrition data for budget outsourcing shops in Southeast Asia commonly runs 30-40% annually, compared to 10-15% at partners who pay competitively and invest in career growth. Engineers who land at €18/hour shops treat the job as a stepping stone, not a career, and leave the moment a better offer appears - often within 6-9 months.
 
 **The cost:** Every departure resets the clock. A new developer needs 2-6 weeks just to become productive on an unfamiliar codebase, and that ramp-up is worse than normal here because budget shops rarely document architecture decisions or maintain onboarding materials. Recruiting research generally puts the fully-loaded cost of replacing a mid-level developer at 50-150% of their annual salary once ramp-up, reduced productivity, and management time are counted. On a two-year engagement with 35% annual attrition, it is common for a client to unknowingly work with 3-4 different "primary" developers on the same module, each rediscovering the same tribal knowledge the last one had and never wrote down.
 
-**How to prevent it:** Ask any prospective partner for their trailing 12-month attrition rate on client-facing engineers, not company-wide — the two numbers are often very different. Ask how the team documents architecture decisions (an Architecture Decision Record process is a good sign) so that a departure does not erase institutional knowledge. And treat unusually low quoted rates as a proxy for this hidden risk: a partner cannot pay developers well enough to retain them while quoting €18/hour, so the turnover cost is baked into the "savings" whether it appears on the invoice or not.
+**How to prevent it:** Ask any prospective partner for their trailing 12-month attrition rate on client-facing engineers, not company-wide - the two numbers are often very different. Ask how the team documents architecture decisions (an Architecture Decision Record process is a good sign) so that a departure does not erase institutional knowledge. And treat unusually low quoted rates as a proxy for this hidden risk: a partner cannot pay developers well enough to retain them while quoting €18/hour, so the turnover cost is baked into the "savings" whether it appears on the invoice or not.
 
-A useful diagnostic question during vendor selection: "Which of the engineers on this proposal have been with your company for more than two years?" A budget shop will struggle to answer, because their senior people have already left for better-paying employers — often the same quality-focused partners competing for your business. A partner that retains its senior engineers for 3+ years is implicitly telling you it pays well enough, and treats its people well enough, that the knowledge sitting in those engineers' heads is actually going to stay on your project.
+A useful diagnostic question during vendor selection: "Which of the engineers on this proposal have been with your company for more than two years?" A budget shop will struggle to answer, because their senior people have already left for better-paying employers - often the same quality-focused partners competing for your business. A partner that retains its senior engineers for 3+ years is implicitly telling you it pays well enough, and treats its people well enough, that the knowledge sitting in those engineers' heads is actually going to stay on your project.
 
 ## The Total Cost Comparison
 

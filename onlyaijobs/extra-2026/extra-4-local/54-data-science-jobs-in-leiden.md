@@ -41,11 +41,11 @@ Content Format: Career Guide
 }
 </script>
 
-Leiden is the Netherlands' oldest university city and one of its most important life science locations. Between Amsterdam and The Hague, with Schiphol Airport nearby, it combines Leiden University, the Leiden University Medical Center, the country's largest life science park and — just up the coast in Noordwijk — the European Space Agency's largest establishment. For students and graduates, data science jobs in Leiden are concentrated in biomedical research, pharma and biotech, health data, space and scientific data, with access to the wider Randstad job market. This guide explains where to look and how to build a career from Leiden.
+Leiden is the Netherlands' oldest university city and one of its most important life science locations. Between Amsterdam and The Hague, with Schiphol Airport nearby, it combines Leiden University, the Leiden University Medical Center, the country's largest life science park and - just up the coast in Noordwijk - the European Space Agency's largest establishment. For students and graduates, data science jobs in Leiden are concentrated in biomedical research, pharma and biotech, health data, space and scientific data, with access to the wider Randstad job market. This guide explains where to look and how to build a career from Leiden.
 
 ## Leiden University and Its Data Science Research
 
-Leiden University has a long tradition in mathematics, statistics and computer science. The Leiden Institute of Advanced Computer Science (LIACS) conducts research and teaching in AI, machine learning, data science, computer vision, bioinformatics and algorithms, with many English-taught programmes. The Leiden Centre of Data Science connects researchers across faculties — from astronomy and medicine to law and humanities — who use data science in their work. Leiden's Mathematical Institute has strong statistics research, particularly relevant for health data.
+Leiden University has a long tradition in mathematics, statistics and computer science. The Leiden Institute of Advanced Computer Science (LIACS) conducts research and teaching in AI, machine learning, data science, computer vision, bioinformatics and algorithms, with many English-taught programmes. The Leiden Centre of Data Science connects researchers across faculties - from astronomy and medicine to law and humanities - who use data science in their work. Leiden's Mathematical Institute has strong statistics research, particularly relevant for health data.
 
 The university's campus in The Hague focuses on governance, security and global affairs, including the governance of technology, which connects Leiden to the policy side of AI.
 
@@ -69,7 +69,7 @@ The European Space Research and Technology Centre (ESTEC) in Noordwijk, around 1
 | Scientific institutes | Research software engineer, data scientist | Large scientific datasets |
 | Employers in Amsterdam, The Hague, Haarlem | Junior data roles across sectors | Broader industry experience |
 
-OnlyAIJobs already lists vacancies in the Netherlands, including in Amsterdam, Utrecht and Capelle aan den IJssel — all within reach of Leiden — which makes it practical to compare regional options by distance.
+OnlyAIJobs already lists vacancies in the Netherlands, including in Amsterdam, Utrecht and Capelle aan den IJssel - all within reach of Leiden - which makes it practical to compare regional options by distance.
 
 ## Entry Paths
 
@@ -99,7 +99,7 @@ Companies on the Leiden Bio Science Park use data science throughout the drug de
 
 ## Scientific Computing and Astronomy
 
-Leiden's astronomy tradition connects to some of the largest datasets in science. Telescopes and space missions generate petabytes of data, and astronomers use machine learning to classify galaxies, detect transient events, analyse spectra and simulate the universe. Graduates with physics, astronomy or computer science backgrounds can find research software engineering and data science roles in these projects, often in international collaborations. The skills — handling very large datasets, efficient computing, rigorous statistics — transfer well to industry, and many astronomy graduates move into data science careers in companies across the Randstad.
+Leiden's astronomy tradition connects to some of the largest datasets in science. Telescopes and space missions generate petabytes of data, and astronomers use machine learning to classify galaxies, detect transient events, analyse spectra and simulate the universe. Graduates with physics, astronomy or computer science backgrounds can find research software engineering and data science roles in these projects, often in international collaborations. The skills - handling very large datasets, efficient computing, rigorous statistics - transfer well to industry, and many astronomy graduates move into data science careers in companies across the Randstad.
 
 ## Biodiversity and Image Recognition
 
@@ -130,11 +130,11 @@ Leiden is a compact, historic city with canals, almshouses and a lively student 
 
 ## Your First Two Years
 
-Use your first years to build depth in one domain — genomics, imaging, clinical data or scientific computing — while strengthening engineering practices and statistical judgement. Stay connected to the university through seminars and alumni networks. These foundations prepare you for senior roles in Leiden's life science ecosystem or anywhere in the Randstad.
+Use your first years to build depth in one domain - genomics, imaging, clinical data or scientific computing - while strengthening engineering practices and statistical judgement. Stay connected to the university through seminars and alumni networks. These foundations prepare you for senior roles in Leiden's life science ecosystem or anywhere in the Randstad.
 
 ## Traineeships and Graduate Programmes
 
-Beyond research and biotech, many Randstad employers — banks, insurers, government, consultancies and grid operators — run data traineeships that suit Leiden graduates. These programmes typically last one to two years, combine rotations with training and offer good conditions by Dutch graduate standards. Because Leiden lies between Amsterdam and The Hague, graduates can apply to programmes in both cities without moving. Comparing such options by distance from your home helps you choose programmes that fit your life as well as your ambitions.
+Beyond research and biotech, many Randstad employers - banks, insurers, government, consultancies and grid operators - run data traineeships that suit Leiden graduates. These programmes typically last one to two years, combine rotations with training and offer good conditions by Dutch graduate standards. Because Leiden lies between Amsterdam and The Hague, graduates can apply to programmes in both cities without moving. Comparing such options by distance from your home helps you choose programmes that fit your life as well as your ambitions.
 
 ## Dutch Graduate Conditions
 
@@ -142,7 +142,7 @@ Dutch packages usually include a holiday allowance of around eight percent, pens
 
 ## A Weekly Search Routine
 
-Set your home address, choose a commuting radius that includes Amsterdam and The Hague, review new vacancies weekly and attend one Bio Science Park or university event per month. Follow up personally with people you meet — many Leiden roles are filled through recommendations.
+Set your home address, choose a commuting radius that includes Amsterdam and The Hague, review new vacancies weekly and attend one Bio Science Park or university event per month. Follow up personally with people you meet - many Leiden roles are filled through recommendations.
 
 ## The Space Sector Around Noordwijk
 
@@ -154,7 +154,7 @@ A growing career path in Leiden's research ecosystem is research software engine
 
 ## Networking in Leiden
 
-Leiden University and LUMC host frequent seminars, the Bio Science Park organises events for its community and data science meetups in Leiden, The Hague and Amsterdam are within easy reach. Attend regularly, ask researchers and engineers about their work and follow up — many first jobs in Leiden come from these conversations.
+Leiden University and LUMC host frequent seminars, the Bio Science Park organises events for its community and data science meetups in Leiden, The Hague and Amsterdam are within easy reach. Attend regularly, ask researchers and engineers about their work and follow up - many first jobs in Leiden come from these conversations.
 
 ## Real example
 

@@ -12,7 +12,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI-App naar Productie met een Budget van € 3.500: Wat het Middensegment Daadwerkelijk Koopt",
-  "description": "Wat levert een investering van € 3.500 op wanneer je een AI-app naar productie brengt? Een gedetailleerd overzicht van de typische scope in het middensegment — beveiliging, gebruikersaccounts, databescherming, iDEAL-betalingen, hosting en e-mailbezorging — wat doorgaans niet past, en hoe je het maximale uit je budget haalt.",
+  "description": "Wat levert een investering van € 3.500 op wanneer je een AI-app naar productie brengt? Een gedetailleerd overzicht van de typische scope in het middensegment - beveiliging, gebruikersaccounts, databescherming, iDEAL-betalingen, hosting en e-mailbezorging - wat doorgaans niet past, en hoe je het maximale uit je budget haalt.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-12-15",
@@ -21,14 +21,14 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Een bedrag van € 3.500 bevindt zich op een cruciaal kantelpunt op de investeringsladder. Het is te substantieel om impulsief uit te geven, maar veel te bescheiden voor een traditioneel bureau — een klassiek softwarebureau heeft voor dat bedrag de inventarisatiefase (discovery) nog nauwelijks afgerond. Voor het productierijp maken van een met AI gebouwde applicatie is het echter exact het budget waarin de meeste MKB-ondernemers en vroege SaaS-bouwers terechtkomen: ruim voldoende om professioneel en veilig live te gaan met betalingen, maar te beperkt om elk willekeurig idee op je verlanglijstje te realiseren. Dit artikel zet uiteen wat je voor dat geld daadwerkelijk mag verwachten.
+Een bedrag van € 3.500 bevindt zich op een cruciaal kantelpunt op de investeringsladder. Het is te substantieel om impulsief uit te geven, maar veel te bescheiden voor een traditioneel bureau - een klassiek softwarebureau heeft voor dat bedrag de inventarisatiefase (discovery) nog nauwelijks afgerond. Voor het productierijp maken van een met AI gebouwde applicatie is het echter exact het budget waarin de meeste MKB-ondernemers en vroege SaaS-bouwers terechtkomen: ruim voldoende om professioneel en veilig live te gaan met betalingen, maar te beperkt om elk willekeurig idee op je verlanglijstje te realiseren. Dit artikel zet uiteen wat je voor dat geld daadwerkelijk mag verwachten.
 
 ## Waar € 3.500 Zich Bevindt op de Prijsladder
 
 De vaste projectprijzen van LaunchStudio bewegen zich tussen € 800 en € 7.500:
-- **€ 800 – € 1.500:** Een gerichte audit en fixes voor een eenvoudige applicatie — basisbeveiliging, EU-datalocatie, automatische back-ups en een eigen domein. Doorgaans zonder online betaalmodule.
+- **€ 800 – € 1.500:** Een gerichte audit en fixes voor een eenvoudige applicatie - basisbeveiliging, EU-datalocatie, automatische back-ups en een eigen domein. Doorgaans zonder online betaalmodule.
 - **€ 2.000 – € 3.500:** Het middensegment. Een compleet werkende applicatie met gebruikersaccounts en iDEAL-betalingen die van begin tot eind veilig, stabiel en AVG-conform live wordt gezet.
-- **€ 4.000 – € 7.500:** Complexere platforms — meerdere rollen en organisatiestructuren, marktplaatsen met uitbetalingen, zware dataverwerking, piekbelasting en beheerd 24/7 onderhoud.
+- **€ 4.000 – € 7.500:** Complexere platforms - meerdere rollen en organisatiestructuren, marktplaatsen met uitbetalingen, zware dataverwerking, piekbelasting en beheerd 24/7 onderhoud.
 
 Onze prijscalculator sluit hier naadloos op aan: een Webshop begint rond € 1.500 – € 3.500, een Tool rond € 1.200 – € 3.000 en een SaaS rond € 2.833 – € 7.167, aangevuld met modules zoals Betalingen (+€ 400), Gebruikersaccounts (+€ 250), Security-audit (+€ 500) en Database-hardening (+€ 350).
 
@@ -83,7 +83,7 @@ Om inzichtelijk te maken waar de uren naartoe gaan bij een boekingsapplicatie me
 | Transactionele e-mail met DKIM/SPF/DMARC | ~5% | Ja |
 | Uptime-monitoring en foutopsporing met alerts | ~5% | Ja |
 | Integrale tests en 48-uurs launch-support | ~10% | Ja |
-| Nieuwe features (uitgebreide wachtlijst, rapportages) | — | Doorgaans niet |
+| Nieuwe features (uitgebreide wachtlijst, rapportages) | - | Doorgaans niet |
 
 Het patroon is duidelijk: het leeuwendeel van het budget beschermt data en geldstromen; het restant zorgt voor operationele stabiliteit.
 
@@ -109,7 +109,7 @@ Het patroon is duidelijk: het leeuwendeel van het budget beschermt data en gelds
 
 ## € 3.500 Vergeleken met Alternatieven
 
-Voor dezelfde scope ontvangen oprichters sterk uiteenlopende voorstellen: freelancers die offreren op uurbasis (waardoor het eindbedrag volstrekt onzeker is), of klassieke softwarebureaus die direct een offerte van € 25.000 neerleggen omdat ze alles vanaf nul willen herbouwen. Het prijsverschil zit zelden in het kale uurtarief; het zit in de scope — of de bestaande frontend behouden blijft en wie het risico van uitloop draagt.
+Voor dezelfde scope ontvangen oprichters sterk uiteenlopende voorstellen: freelancers die offreren op uurbasis (waardoor het eindbedrag volstrekt onzeker is), of klassieke softwarebureaus die direct een offerte van € 25.000 neerleggen omdat ze alles vanaf nul willen herbouwen. Het prijsverschil zit zelden in het kale uurtarief; het zit in de scope - of de bestaande frontend behouden blijft en wie het risico van uitloop draagt.
 
 ## Maandelijkse Exploitatiekosten na de Lancering
 
@@ -184,7 +184,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met ruim 11 ja
 
 ### Een AI-Native Oprichter in Actie: Een Boekingsapp voor een Muziekschool voor Exact € 3.500
 
-Ilse Dekkers, pianodocente en eigenaar van een particuliere muziekschool in Emmen met zes freelance muziekdocenten, bouwde Muziekmoment met behulp van Lovable: leerlingen boeken zangles of pianoles, schaffen strippenkaarten aan, ontvangen herinneringen en kunnen lessen zelfstandig verzetten volgens de schoolregels. Circa 180 leerlingen maakten informeel gebruik van de app, waarbij betalingen via losse bankoverschrijvingen liepen — wat Ilse maandelijks tientallen uren aan administratief uitzoekwerk kostte.
+Ilse Dekkers, pianodocente en eigenaar van een particuliere muziekschool in Emmen met zes freelance muziekdocenten, bouwde Muziekmoment met behulp van Lovable: leerlingen boeken zangles of pianoles, schaffen strippenkaarten aan, ontvangen herinneringen en kunnen lessen zelfstandig verzetten volgens de schoolregels. Circa 180 leerlingen maakten informeel gebruik van de app, waarbij betalingen via losse bankoverschrijvingen liepen - wat Ilse maandelijks tientallen uren aan administratief uitzoekwerk kostte.
 
 Zij had exact € 3.500 gereserveerd voor de livegang. De review van LaunchStudio toonde het typische beeld van een AI-prototype: leerlingen konden elkaars lesnotities en vorderingen inzien door het ID-nummer in de browser aan te passen, de geheime Supabase-sleutel stond open en bloot in de frontend-code, strippenkaarten hadden nog geen werkende betaalkoppeling, de database draaide in een Amerikaans datacenter zonder back-up-schema en notificatiemails belandden massaal in de spambox. Bovendien wilde Ilse graag een exportfunctie voor de docentenuitbetaling en een automatische wachtlijstmodule.
 
@@ -193,9 +193,9 @@ De vaste offerte van € 3.500 omvatte: waterdichte autorisatieregels voor leerl
 **Resultaat:** Muziekmoment ging exact twaalf werkdagen na akkoord live. Het handmatig controleren van bankoverschrijvingen behoort definitief tot het verleden, de verkoop van leskaarten steeg omdat leerlingen direct via hun mobiel met iDEAL konden afrekenen, en de school groeide voor het einde van het seizoen door naar 230 actieve leerlingen.
 
 > *"Ik kreeg niet elk puntje van mijn wensenlijst. Maar ik kreeg precies alles wat nodig was om 's avonds niet meer tot middernacht bankoverschrijvingen te hoeven afstemmen."*
-> — **Ilse Dekkers, Oprichter, Muziekmoment (Emmen)**
+> - **Ilse Dekkers, Oprichter, Muziekmoment (Emmen)**
 
-**Kosten & Tijdlijn:** € 3.500 (Launch Ready-pakket met betalingen, beveiliging en e-mail) — afgerond in 12 werkdagen.
+**Kosten & Tijdlijn:** € 3.500 (Launch Ready-pakket met betalingen, beveiliging en e-mail) - afgerond in 12 werkdagen.
 
 ## Veelgestelde Vragen
 

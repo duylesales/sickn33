@@ -35,7 +35,7 @@ Content Format: Decision Guide
 }
 </script>
 
-Two roles, similar salary, similar distance from home. One is greenfield: a new team, a blank repository, the chance to build something from scratch. The other is described more cautiously — a portfolio of existing models in production, some of them years old, that need monitoring, retraining, documentation and gradual improvement. Almost every candidate prefers the first, and a significant number of them regret it within a year. Greenfield work is more exciting to describe and less reliably valuable to do, while maintenance work teaches things that are genuinely hard to learn any other way. The useful decision is not which sounds better but which balance you are actually being offered.
+Two roles, similar salary, similar distance from home. One is greenfield: a new team, a blank repository, the chance to build something from scratch. The other is described more cautiously - a portfolio of existing models in production, some of them years old, that need monitoring, retraining, documentation and gradual improvement. Almost every candidate prefers the first, and a significant number of them regret it within a year. Greenfield work is more exciting to describe and less reliably valuable to do, while maintenance work teaches things that are genuinely hard to learn any other way. The useful decision is not which sounds better but which balance you are actually being offered.
 
 ## What "Maintenance" Actually Contains
 
@@ -59,7 +59,7 @@ None of this is glamorous. All of it is the part of the field that separates peo
 
 **Many never reach production.** A new model that stays in a notebook teaches you less than an old one that runs daily.
 
-**The novelty is short.** Six months in, greenfield work becomes maintenance anyway — of your own decisions, which are harder to criticise.
+**The novelty is short.** Six months in, greenfield work becomes maintenance anyway - of your own decisions, which are harder to criticise.
 
 **Blank pages hide missing foundations.** "You can build it however you like" sometimes means "nobody here knows what they want, and there is no data".
 
@@ -69,7 +69,7 @@ None of this is glamorous. All of it is the part of the field that separates peo
 
 ## What Maintenance Teaches That Nothing Else Does
 
-**How systems actually fail.** Not in theory — the specific ways a pipeline breaks, a data source changes silently, an upstream schema shifts, a retrain degrades performance.
+**How systems actually fail.** Not in theory - the specific ways a pipeline breaks, a data source changes silently, an upstream schema shifts, a retrain degrades performance.
 
 **Judgement about change.** When to retrain, when to leave it, when a small degradation matters and when it does not.
 
@@ -122,7 +122,7 @@ Interviewers in this field recognise those sentences immediately, because everyo
 
 If the work is right but the balance is wrong, that is a conversation rather than a reason to decline.
 
-Ask for a stated allocation — for example, a proportion of time for improvement and new development alongside the maintenance portfolio — and for one new project in the first year. Ask what decommissioning authority you have. And ask for time budgeted to reduce the noisiest alerts, which benefits both sides and is rarely refused when framed as reducing incident load.
+Ask for a stated allocation - for example, a proportion of time for improvement and new development alongside the maintenance portfolio - and for one new project in the first year. Ask what decommissioning authority you have. And ask for time budgeted to reduce the noisiest alerts, which benefits both sides and is rarely refused when framed as reducing incident load.
 
 Where the employer cannot commit to any new work at all, weigh that honestly: a stable role is legitimate, but you should know you are choosing one.
 
@@ -140,7 +140,7 @@ The hardest version of maintenance work is taking over something whose author ha
 
 **Decide what to keep alive.** Some inherited models are no longer used by anyone, and the most valuable thing you can do is establish that and switch them off.
 
-Ask before accepting whether the predecessor is contactable, even for a few hours. Employers often arrange a handover conversation if asked at the offer stage and rarely offer one unprompted — and an hour with the person who built it can save a month.
+Ask before accepting whether the predecessor is contactable, even for a few hours. Employers often arrange a handover conversation if asked at the offer stage and rarely offer one unprompted - and an hour with the person who built it can save a month.
 
 ## Real example
 
@@ -150,7 +150,7 @@ An ML engineer has two offers. The first is a new AI team at a scale-up with not
 
 He asks about the balance. The insurer describes roughly seventy per cent maintenance and improvement, thirty per cent new work, with two models due for replacement within eighteen months and a documented model governance process. The scale-up cannot say what he would build first, and there is no data engineer.
 
-He takes the insurer role. The first year is monitoring, retraining, documentation and one replacement project. It is less exciting than he hoped and he learns more than in the previous three years combined — particularly about how models fail quietly.
+He takes the insurer role. The first year is monitoring, retraining, documentation and one replacement project. It is less exciting than he hoped and he learns more than in the previous three years combined - particularly about how models fail quietly.
 
 When he changes jobs, interviewers focus almost entirely on the replacement project and the model governance work. The scale-up he turned down, he later hears, spent that year without producing anything that reached production.
 
@@ -168,7 +168,7 @@ The practical advice is to prepare two stories in advance: one about something t
 
 ## Key Takeaways
 
-- Maintenance work includes monitoring, retraining, incident response, documentation, debt reduction and decommissioning — and is what regulated employers increasingly need.
+- Maintenance work includes monitoring, retraining, incident response, documentation, debt reduction and decommissioning - and is what regulated employers increasingly need.
 - Greenfield roles disappoint more often than candidates expect, because novelty is short and blank pages sometimes hide missing foundations.
 - Ask for numbers: how many models in production, how old, how often they need intervention and what new work is planned.
 - A maintenance-heavy role is a strong choice if you lack production experience, want MLOps or platform work, or are entering a regulated sector.
@@ -176,14 +176,14 @@ The practical advice is to prepare two stories in advance: one about something t
 
 ## Where to Start
 
-When comparing a greenfield role with a maintenance-heavy one, ask both employers how many models they have running today — the answers usually settle the question faster than any description of ambition.
+When comparing a greenfield role with a maintenance-heavy one, ask both employers how many models they have running today - the answers usually settle the question faster than any description of ambition.
 
 Browse current AI, machine learning and data jobs by category and distance, free and without an account, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 
 ### (Scenario: candidate offered a maintenance-heavy role) Is maintaining existing models bad for my career?
-No — it is often the fastest way to gain production experience, which is the most common gap in data CVs and the thing employers trust most.
+No - it is often the fastest way to gain production experience, which is the most common gap in data CVs and the thing employers trust most.
 
 ### (Scenario: candidate attracted to greenfield work) Why do greenfield AI roles disappoint?
 Many never reach production, the novelty fades within months, and a blank page can conceal missing data, unclear goals or absent engineering support.
@@ -202,7 +202,7 @@ When nothing is ever rebuilt, when you would be the only person who understands 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is maintaining existing models bad for my career?", "acceptedAnswer": {"@type": "Answer", "text": "No — it is often the fastest route to production experience, which employers trust most."}},
+    {"@type": "Question", "name": "Is maintaining existing models bad for my career?", "acceptedAnswer": {"@type": "Answer", "text": "No - it is often the fastest route to production experience, which employers trust most."}},
     {"@type": "Question", "name": "Why do greenfield AI roles disappoint?", "acceptedAnswer": {"@type": "Answer", "text": "Many never reach production and a blank page can hide missing data and support."}},
     {"@type": "Question", "name": "What should I ask about the balance of work?", "acceptedAnswer": {"@type": "Answer", "text": "Number and age of production models, intervention frequency and planned new work."}},
     {"@type": "Question", "name": "How do I describe maintenance work convincingly?", "acceptedAnswer": {"@type": "Answer", "text": "By outcomes: faster retraining, fewer false alerts, compliance, replaced pipelines."}},

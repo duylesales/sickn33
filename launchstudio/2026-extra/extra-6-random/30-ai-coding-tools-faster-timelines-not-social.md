@@ -11,7 +11,7 @@ The AI sped up the part that was never actually the slow part. 🧠
 ✅ Added concurrency handling for simultaneous warehouse staff actions
 ✅ Ran a security review of the inventory permission model, underneath the existing frontend
 
-At **LaunchStudio**, Manifera's team of 120+ engineers, operating out of its European headquarters in Amsterdam, spends most of its time inside exactly this phase — the one AI speedups don't touch. 🛡️
+At **LaunchStudio**, Manifera's team of 120+ engineers, operating out of its European headquarters in Amsterdam, spends most of its time inside exactly this phase - the one AI speedups don't touch. 🛡️
 
 His result: VoorraadZicht's inventory-adjustment feature shipped to full warehouse staff with proper error handling and concurrency safety, and has run without a single incident since. 🚀
 

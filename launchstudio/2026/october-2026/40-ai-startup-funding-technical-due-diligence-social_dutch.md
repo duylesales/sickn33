@@ -1,4 +1,4 @@
-🔥 Alex bouwde een prototype via **AI builders & scripts** — als solo-ontwikkelaar in Frankfurt haalde hij een Term Sheet binnen van €2M Seed, maar dreigde de deal te verliezen door een technische due diligence audit. 🧠
+🔥 Alex bouwde een prototype via **AI builders & scripts** - als solo-ontwikkelaar in Frankfurt haalde hij een Term Sheet binnen van €2M Seed, maar dreigde de deal te verliezen door een technische due diligence audit. 🧠
 
 Als uw gefundeerde AI-startup naar een investeringsronde gaat zonder PII-masking, automatische back-ups of schone documentatie, verlaagt de VC uw waardering of blaast de deal direct af.
 
@@ -12,7 +12,7 @@ Als uw gefundeerde AI-startup naar een investeringsronde gaat zonder PII-masking
 
 Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Alex slaagde voor de technische audit zonder één enkele rode vlag en ontving de €2.000.000 op zijn bankrekening. (€9.500 (Spoed Hardening & Documentatie) — binnen 10 werkdagen live). 🚀
+Alex slaagde voor de technische audit zonder één enkele rode vlag en ontving de €2.000.000 op zijn bankrekening. (€9.500 (Spoed Hardening & Documentatie) - binnen 10 werkdagen live). 🚀
 
 👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-startup-funding-technical-due-diligence
 

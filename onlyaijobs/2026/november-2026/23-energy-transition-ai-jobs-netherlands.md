@@ -35,7 +35,7 @@ Content Format: Career Guide
 }
 </script>
 
-In large parts of the Netherlands, companies that want a new or heavier connection to the electricity grid are placed on a waiting list. Housing developments, factories switching from gas to electricity and charging hubs for electric trucks all compete for limited grid capacity. At the same time, solar parks sometimes cannot feed in their full output on sunny days. Grid congestion has become one of the most pressing economic issues in the country — and one of the clearest places where data and AI can make an immediate difference. For data professionals who want work with visible societal impact, the energy transition is one of the strongest career choices in the Dutch market.
+In large parts of the Netherlands, companies that want a new or heavier connection to the electricity grid are placed on a waiting list. Housing developments, factories switching from gas to electricity and charging hubs for electric trucks all compete for limited grid capacity. At the same time, solar parks sometimes cannot feed in their full output on sunny days. Grid congestion has become one of the most pressing economic issues in the country - and one of the clearest places where data and AI can make an immediate difference. For data professionals who want work with visible societal impact, the energy transition is one of the strongest career choices in the Dutch market.
 
 ## Why the Grid Became a Data Problem
 
@@ -51,7 +51,7 @@ Expanding grid capacity takes years, because cables, substations and transformer
 
 **Netbeheer Nederland.** The association of Dutch grid operators coordinates sector-wide topics and publishes information about grid capacity, including maps showing where transport capacity is limited.
 
-**GOPACS.** A platform established by Dutch grid operators to manage congestion by letting market parties offer flexibility — for example, by increasing production or reducing consumption in one area and compensating elsewhere.
+**GOPACS.** A platform established by Dutch grid operators to manage congestion by letting market parties offer flexibility - for example, by increasing production or reducing consumption in one area and compensating elsewhere.
 
 **ElaadNL.** The knowledge and innovation centre for smart charging, established by Dutch grid operators, researches how electric vehicle charging can be integrated into the grid without overloading it.
 
@@ -78,11 +78,11 @@ Expanding grid capacity takes years, because cables, substations and transformer
 
 **Grid state estimation.** Low-voltage grids historically had few measurements. Operators estimate loads on cables and transformers from smart meter data, connection data and a limited number of sensors. Improving these estimates tells operators where they can safely connect more users.
 
-**Flexibility optimisation.** Batteries, electric vehicles, heat pumps and industrial processes can shift consumption. Optimising when they charge or run — considering prices, grid constraints and user needs — is a classic optimisation problem with real-time and uncertainty components.
+**Flexibility optimisation.** Batteries, electric vehicles, heat pumps and industrial processes can shift consumption. Optimising when they charge or run - considering prices, grid constraints and user needs - is a classic optimisation problem with real-time and uncertainty components.
 
 **Asset management.** Grid operators manage enormous numbers of cables, transformers and other assets. Predicting failures and prioritising replacement or reinforcement investments is a data-driven task with long time horizons.
 
-**Grid planning.** Deciding where to reinforce the grid requires scenarios of future demand from electrification, housing and industry — combining spatial data, adoption forecasts and power flow analysis.
+**Grid planning.** Deciding where to reinforce the grid requires scenarios of future demand from electrification, housing and industry - combining spatial data, adoption forecasts and power flow analysis.
 
 ## Regulation That Shapes the Work
 
@@ -102,13 +102,13 @@ Expanding grid capacity takes years, because cables, substations and transformer
 
 A regional grid operator has declared an industrial area congested: no new large connections are possible for years. Several companies want to electrify. A data team analyses measured loads on the relevant substations over several years and discovers that peak loads occur during a limited number of hours per year.
 
-With probabilistic forecasts and agreements with companies willing to reduce consumption during expected peaks, the operator can offer some companies a connection with conditions — for example, a non-firm or time-dependent capacity arrangement. The model is only part of the solution: contracts, regulatory rules, operational procedures and trust between companies and the operator are equally important. But without the data analysis, the capacity would have remained invisible.
+With probabilistic forecasts and agreements with companies willing to reduce consumption during expected peaks, the operator can offer some companies a connection with conditions - for example, a non-firm or time-dependent capacity arrangement. The model is only part of the solution: contracts, regulatory rules, operational procedures and trust between companies and the operator are equally important. But without the data analysis, the capacity would have remained invisible.
 
 ## Batteries and the Growing Flexibility Market
 
 Large batteries have become one of the fastest-growing assets in the Dutch electricity system. They can charge when electricity is abundant and cheap, discharge when prices are high, provide balancing services to the transmission operator and, in some cases, help relieve local congestion. Behind every battery is an optimisation problem: when to charge and discharge, in which market to offer capacity, and how to manage battery degradation over time.
 
-This has created demand for optimisation engineers and quantitative analysts at battery developers, energy traders and aggregators. The work combines price forecasting under uncertainty, stochastic optimisation and detailed understanding of market rules. It is also an area where rules change frequently — for example, how grid tariffs apply to batteries or how batteries can participate in congestion management — so models must be adaptable.
+This has created demand for optimisation engineers and quantitative analysts at battery developers, energy traders and aggregators. The work combines price forecasting under uncertainty, stochastic optimisation and detailed understanding of market rules. It is also an area where rules change frequently - for example, how grid tariffs apply to batteries or how batteries can participate in congestion management - so models must be adaptable.
 
 For candidates, battery optimisation is an attractive entry point into energy because it uses familiar mathematical tools while teaching the fundamentals of electricity markets quickly.
 
@@ -130,7 +130,7 @@ Many candidates imagine energy data work as mainly about trading algorithms or r
 
 - **Probabilistic forecasting.** Quantile regression, ensemble methods and evaluation with proper scoring rules.
 - **Optimisation.** Linear, mixed-integer and stochastic optimisation for flexibility and planning problems.
-- **Power systems basics.** Understanding voltage, capacity, power flow and grid topology — enough to talk with grid engineers.
+- **Power systems basics.** Understanding voltage, capacity, power flow and grid topology - enough to talk with grid engineers.
 - **Geospatial analysis.** Grid assets and future demand are strongly spatial.
 - **Time series data engineering.** Handling large volumes of meter and sensor data reliably.
 - **Energy market knowledge.** Day-ahead, intraday and balancing markets and how prices form.
@@ -167,16 +167,16 @@ Browse current AI, machine learning and data jobs in the energy sector at [onlya
 Grid operators, energy suppliers, traders and aggregators, charging companies, industrial companies, consultancies and research institutes.
 
 ### (Scenario: data scientist new to energy) Do I need an electrical engineering background?
-Not necessarily — forecasting and optimisation skills transfer well, but you must learn grid basics and market rules.
+Not necessarily - forecasting and optimisation skills transfer well, but you must learn grid basics and market rules.
 
 ### (Scenario: candidate curious about grid congestion) How can data help with grid congestion?
 By estimating actual grid loads, forecasting peaks, identifying spare capacity and organising flexibility through platforms such as GOPACS.
 
 ### (Scenario: candidate concerned about regulation) Is AI in the energy sector regulated?
-Yes — AI used as a safety component in critical infrastructure can be high-risk under the AI Act, and NIS2, GDPR and energy regulation also apply.
+Yes - AI used as a safety component in critical infrastructure can be high-risk under the AI Act, and NIS2, GDPR and energy regulation also apply.
 
 ### (Scenario: candidate choosing between startups and grid operators) Are grid operators good employers for data scientists?
-Often yes — they offer large-scale, impactful work, stable employment and substantial investment in data and digitalisation.
+Often yes - they offer large-scale, impactful work, stable employment and substantial investment in data and digitalisation.
 
 <script type="application/ld+json">
 {
@@ -184,10 +184,10 @@ Often yes — they offer large-scale, impactful work, stable employment and subs
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Which employers hire data professionals for the energy transition?", "acceptedAnswer": {"@type": "Answer", "text": "Grid operators, suppliers, traders, aggregators, charging companies, industry, consultancies and research institutes."}},
-    {"@type": "Question", "name": "Do I need an electrical engineering background?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — forecasting and optimisation transfer well, with grid basics learned on the job."}},
+    {"@type": "Question", "name": "Do I need an electrical engineering background?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily - forecasting and optimisation transfer well, with grid basics learned on the job."}},
     {"@type": "Question", "name": "How can data help with grid congestion?", "acceptedAnswer": {"@type": "Answer", "text": "By estimating loads, forecasting peaks, identifying spare capacity and organising flexibility."}},
-    {"@type": "Question", "name": "Is AI in the energy sector regulated?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the AI Act, NIS2, GDPR and energy regulation all apply."}},
-    {"@type": "Question", "name": "Are grid operators good employers for data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes — large-scale impactful work and substantial digital investment."}}
+    {"@type": "Question", "name": "Is AI in the energy sector regulated?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the AI Act, NIS2, GDPR and energy regulation all apply."}},
+    {"@type": "Question", "name": "Are grid operators good employers for data scientists?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes - large-scale impactful work and substantial digital investment."}}
   ]
 }
 </script>

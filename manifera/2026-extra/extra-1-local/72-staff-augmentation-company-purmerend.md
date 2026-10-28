@@ -22,26 +22,26 @@ target_persona: "CFO"
 
 A staff augmentation company quotes a rate per engineer that looks like the whole cost, and a CFO who takes that number at face value has just budgeted for the visible half of the expense and left the management overhead entirely off the spreadsheet.
 
-**The Pain:** A CFO at an agri-trade technology company in Purmerend — a Noord-Holland town with strong ties to the Dutch agricultural and greenhouse-produce trade — is evaluating a staff augmentation company to add engineering capacity, and the quoted per-engineer rate looks straightforwardly comparable to hiring, but doesn't account for who manages the augmented staff day to day.
+**The Pain:** A CFO at an agri-trade technology company in Purmerend - a Noord-Holland town with strong ties to the Dutch agricultural and greenhouse-produce trade - is evaluating a staff augmentation company to add engineering capacity, and the quoted per-engineer rate looks straightforwardly comparable to hiring, but doesn't account for who manages the augmented staff day to day.
 
-**The Agitation:** A CFO who budgets purely on the per-engineer rate discovers, a few months in, that the internal engineering leadership is now spending 30-40% more of their time managing augmented staff than the org chart assumed — a hidden cost that never appears on the vendor's invoice but shows up directly in the CTO's calendar and the roadmap's actual velocity.
+**The Agitation:** A CFO who budgets purely on the per-engineer rate discovers, a few months in, that the internal engineering leadership is now spending 30-40% more of their time managing augmented staff than the org chart assumed - a hidden cost that never appears on the vendor's invoice but shows up directly in the CTO's calendar and the roadmap's actual velocity.
 
 ## The Hidden Overhead a Per-Engineer Rate Doesn't Show
 
-Staff augmentation, structurally, rents individuals into your existing management chain — which means every augmented engineer needs the same task assignment, code review, and architectural guidance an internal hire would need, but from your team, not the vendor's.
+Staff augmentation, structurally, rents individuals into your existing management chain - which means every augmented engineer needs the same task assignment, code review, and architectural guidance an internal hire would need, but from your team, not the vendor's.
 
 The first hidden cost is management time. Augmented engineers without their own embedded technical leadership route every ambiguous decision back through the client's own engineering managers, which at scale becomes a meaningful, uncosted tax on internal leadership bandwidth.
 
 The second is onboarding depth. A staff augmentation company optimized purely for headcount speed sometimes under-invests in matching engineers to the specific technical context needed, producing augmented staff who need more hand-holding than a properly vetted, context-matched hire would.
 
-The third is what happens when the engagement needs its own coordination — cross-augmented-engineer alignment, sprint planning specific to their workstream — none of which a pure staff augmentation model provides by default, because it isn't structured as a team, just a set of individuals.
+The third is what happens when the engagement needs its own coordination - cross-augmented-engineer alignment, sprint planning specific to their workstream - none of which a pure staff augmentation model provides by default, because it isn't structured as a team, just a set of individuals.
 
 ## The Hybrid Hub: How Manifera Executes This
 
 - **Amsterdam (Governance/Strategy):** Dutch-based leads absorb architectural ambiguity and coordination overhead that pure staff augmentation would otherwise push back onto your internal management chain.
 - **Vietnam (Execution/Velocity):** The Ho Chi Minh City pod operates with its own internal coordination and technical leadership, reducing the augmented-headcount tax on your own team's bandwidth.
 
-This is Dutch Management × Vietnamese Mastery — augmented capacity that doesn't quietly consume your internal leadership's calendar. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
+This is Dutch Management × Vietnamese Mastery - augmented capacity that doesn't quietly consume your internal leadership's calendar. Review the model on Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) page.
 
 ## Case Study & Testimonial
 
@@ -52,7 +52,7 @@ Vlaamse Agrihandel NV, an agricultural trading technology company based in Antwe
 Manifera restructured the engagement into a pod model with its own internal technical leadership absorbing that coordination load, reducing the internal management time back to a level closer to what the original budget had assumed. The CFO reported the effective total cost, once management time was counted, was materially lower than the original augmentation arrangement despite a comparable per-engineer rate.
 
 > *"The invoice looked fine every month. What it didn't show was our own managers quietly losing half their week to coordination we never budgeted for."*
-> — **CFO, Vlaamse Agrihandel NV, Belgium**
+> - **CFO, Vlaamse Agrihandel NV, Belgium**
 
 ## Pure Staff Augmentation vs. Manifera's Coordinated Pod
 
@@ -66,7 +66,7 @@ Manifera restructured the engagement into a pod model with its own internal tech
 
 ## The Economics
 
-A per-engineer staff augmentation rate that looks cheaper than a structured pod model routinely produces a higher effective total cost once uncosted internal management overhead — often 30-40% of engineering leadership time — is properly counted. A structured pod with embedded coordination absorbs that overhead instead of quietly billing it to your own team's calendar. [Talk to Manifera about a coordinated pod model](https://www.manifera.com/contact-us/).
+A per-engineer staff augmentation rate that looks cheaper than a structured pod model routinely produces a higher effective total cost once uncosted internal management overhead - often 30-40% of engineering leadership time - is properly counted. A structured pod with embedded coordination absorbs that overhead instead of quietly billing it to your own team's calendar. [Talk to Manifera about a coordinated pod model](https://www.manifera.com/contact-us/).
 
 ## Frequently Asked Questions
 

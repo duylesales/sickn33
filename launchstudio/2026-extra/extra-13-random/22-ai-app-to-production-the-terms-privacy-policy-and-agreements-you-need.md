@@ -12,7 +12,7 @@ Target Persona: AI-Native Founder (Non-Technical)
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI App to Production: The Terms, Privacy Policy and Agreements You Need",
-  "description": "Moving an AI app to production is not only technical. This article explains the documents a small app needs before launch — privacy notice, terms, processing agreements, cookie consent and supplier terms — why AI-generated versions often fail, and how the documents must match what the code actually does.",
+  "description": "Moving an AI app to production is not only technical. This article explains the documents a small app needs before launch - privacy notice, terms, processing agreements, cookie consent and supplier terms - why AI-generated versions often fail, and how the documents must match what the code actually does.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-10-22",
@@ -21,17 +21,17 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Many founders ask their AI tool to "add a privacy policy page" in the last hour before launch. The tool produces three convincing pages of legal-sounding text, mentioning cookies, data rights and security measures. It looks complete. It is also, almost always, a description of an app that does not exist — because it was written without looking at what your app actually does. When you move an AI app to production, the documents are part of the product, and they have to be true.
+Many founders ask their AI tool to "add a privacy policy page" in the last hour before launch. The tool produces three convincing pages of legal-sounding text, mentioning cookies, data rights and security measures. It looks complete. It is also, almost always, a description of an app that does not exist - because it was written without looking at what your app actually does. When you move an AI app to production, the documents are part of the product, and they have to be true.
 
 This article is not legal advice; for anything unusual, talk to a lawyer. It is a practical map of what a small app needs and where AI-generated documents typically go wrong.
 
 ## AI App to Production Paperwork: The Documents a Small App Needs
 
-**A privacy notice.** Required under GDPR whenever you process personal data — which any app with accounts does. It explains what you collect, why, on what legal basis, how long you keep it, who processes it for you, where it goes and what rights people have.
+**A privacy notice.** Required under GDPR whenever you process personal data - which any app with accounts does. It explains what you collect, why, on what legal basis, how long you keep it, who processes it for you, where it goes and what rights people have.
 
 **Terms of service (or terms and conditions).** The agreement between you and your users: what you provide, what they may and may not do, payment and cancellation terms, liability limits. For consumer sales in the EU, specific consumer-protection rules apply, including withdrawal rights for many online purchases.
 
-**Data processing agreements (DPAs).** Every service that processes personal data on your behalf — hosting, database, email, analytics, error tracking, AI APIs — needs a DPA with you. Most providers offer a standard one you accept online. If you sell to businesses and process their customers' data, you are the processor and your customers will expect a DPA from you.
+**Data processing agreements (DPAs).** Every service that processes personal data on your behalf - hosting, database, email, analytics, error tracking, AI APIs - needs a DPA with you. Most providers offer a standard one you accept online. If you sell to businesses and process their customers' data, you are the processor and your customers will expect a DPA from you.
 
 **Cookie and tracking consent.** Non-essential cookies and trackers (most analytics and marketing tools) require prior consent in the EU. Strictly necessary cookies, like session cookies for login, do not.
 
@@ -42,7 +42,7 @@ This article is not legal advice; for anything unusual, talk to a lawyer. It is 
 AI tools write plausible documents based on typical examples. The problems are predictable:
 
 - **Wrong processors.** The privacy notice mentions Google Analytics when you use Plausible, omits Supabase, Resend and the AI API you call, and says nothing about data transfers outside the EU.
-- **Invented security claims.** "All data is encrypted and stored in secure EU data centres" — when the database is in a US region and nobody has checked encryption settings. Claims you cannot back up are a liability.
+- **Invented security claims.** "All data is encrypted and stored in secure EU data centres" - when the database is in a US region and nobody has checked encryption settings. Claims you cannot back up are a liability.
 - **Rights you cannot honour.** The notice promises deletion within 30 days, but the app has no way to delete an account completely.
 - **Retention periods from nowhere.** "We keep your data for 24 months," while the database keeps everything forever.
 - **Consumer terms that conflict with the law.** Clauses excluding all liability or removing withdrawal rights are often unenforceable for consumers and can draw attention from regulators.
@@ -55,10 +55,10 @@ The single most useful rule is that your documents should describe what your app
 1. List every external service the app calls, from the code and environment variables.
 2. For each, note what personal data it receives, where it is hosted and whether you have a DPA.
 3. Check your database for what you store and how long you keep it.
-4. Check whether account deletion actually removes data from every place it lives — database, file storage, email lists, analytics, backups within their retention window.
+4. Check whether account deletion actually removes data from every place it lives - database, file storage, email lists, analytics, backups within their retention window.
 5. Check which cookies and trackers load before consent.
 
-Only then write — or ask an AI tool to write — the privacy notice, based on that list. The resulting document will be shorter, more honest and much more defensible.
+Only then write - or ask an AI tool to write - the privacy notice, based on that list. The resulting document will be shorter, more honest and much more defensible.
 
 ## Cookie Consent Done Properly
 
@@ -68,7 +68,7 @@ The simplest route for many small apps is privacy-friendly analytics that do not
 
 ## When You Sell to Businesses
 
-B2B customers ask for more: a DPA from you, a list of your sub-processors, information about security measures and sometimes answers to a security questionnaire. Preparing these once — accurately — shortens every sales cycle afterwards. The same verified list of services behind your privacy notice becomes your sub-processor list.
+B2B customers ask for more: a DPA from you, a list of your sub-processors, information about security measures and sometimes answers to a security questionnaire. Preparing these once - accurately - shortens every sales cycle afterwards. The same verified list of services behind your privacy notice becomes your sub-processor list.
 
 ## Building the Processor List From Your Code
 
@@ -80,7 +80,7 @@ The most reliable way to write an accurate privacy notice for an AI app to produ
 4. **Check automation tools** (n8n, Make, Zapier) for connected accounts.
 5. **For each service, record:** what personal data it receives, its purpose, where it processes data, and whether a data processing agreement is in place.
 
-The result is a table you can place, in simplified form, in your privacy notice — and reuse as a sub-processor list for business customers.
+The result is a table you can place, in simplified form, in your privacy notice - and reuse as a sub-processor list for business customers.
 
 | Service type | Example data received | Typical role |
 | --- | --- | --- |
@@ -95,7 +95,7 @@ Payment providers are often independent controllers for parts of the data they p
 
 ## Legal Bases, Explained Briefly
 
-Every processing purpose needs a legal basis under GDPR. For a typical app: providing the service to users usually relies on the **contract**; keeping invoices relies on a **legal obligation**; security logging and fraud prevention often rely on **legitimate interests**; marketing emails and non-essential tracking usually require **consent**. AI-generated privacy notices tend to claim consent for everything, which is inaccurate and creates problems — consent can be withdrawn, and the service cannot simply stop working when it is. Match each purpose to the right basis, and your notice becomes both shorter and more defensible.
+Every processing purpose needs a legal basis under GDPR. For a typical app: providing the service to users usually relies on the **contract**; keeping invoices relies on a **legal obligation**; security logging and fraud prevention often rely on **legitimate interests**; marketing emails and non-essential tracking usually require **consent**. AI-generated privacy notices tend to claim consent for everything, which is inaccurate and creates problems - consent can be withdrawn, and the service cannot simply stop working when it is. Match each purpose to the right basis, and your notice becomes both shorter and more defensible.
 
 ## Retention Periods That Match Reality
 
@@ -115,7 +115,7 @@ Good terms describe what the service actually does and does not promise. Useful 
 
 ## Keeping Documents and Code in Sync
 
-Documents drift as the product changes. Tie updates to engineering events: when a new external service is added, update the processor list; when a new data type is collected, review the privacy notice; when an AI feature is launched, add it to the notice and to your processor list. A simple rule in your pull request template — "Does this change add a service or new personal data?" — catches most drift before it becomes inaccurate.
+Documents drift as the product changes. Tie updates to engineering events: when a new external service is added, update the processor list; when a new data type is collected, review the privacy notice; when an AI feature is launched, add it to the notice and to your processor list. A simple rule in your pull request template - "Does this change add a service or new personal data?" - catches most drift before it becomes inaccurate.
 
 ## Cookie Banners That Pass Scrutiny
 
@@ -123,7 +123,7 @@ If you use trackers that require consent, the banner must meet a few practical s
 
 ## When You Become a Processor for Business Customers
 
-If your app handles your business customers' data about their own clients — a booking tool used by salons, a CRM used by agencies — you are usually their processor. They will expect a data processing agreement from you describing what you process, security measures, sub-processors, breach notification timelines and what happens to data at the end of the contract. Prepare a standard DPA once, aligned with your actual technical setup, and offer it proactively. It removes one of the most common delays in B2B sales.
+If your app handles your business customers' data about their own clients - a booking tool used by salons, a CRM used by agencies - you are usually their processor. They will expect a data processing agreement from you describing what you process, security measures, sub-processors, breach notification timelines and what happens to data at the end of the contract. Prepare a standard DPA once, aligned with your actual technical setup, and offer it proactively. It removes one of the most common delays in B2B sales.
 
 ## Documents for AI Features
 
@@ -131,11 +131,11 @@ If your app sends user content to an AI model, the documents should say so plain
 
 ## How LaunchStudio Helps With the Technical Side
 
-LaunchStudio does not write legal documents. What it does is make the technical facts behind them true and knowable: data moved to EU regions where needed, deletion that actually deletes, retention rules implemented, trackers loaded only after consent, and a verified list of every service that processes personal data. With that list, a lawyer or a template service can produce accurate documents quickly — and you can answer customer questions confidently.
+LaunchStudio does not write legal documents. What it does is make the technical facts behind them true and knowable: data moved to EU regions where needed, deletion that actually deletes, retention rules implemented, trackers loaded only after consent, and a verified list of every service that processes personal data. With that list, a lawyer or a template service can produce accurate documents quickly - and you can answer customer questions confidently.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience delivering systems for organisations with formal compliance requirements, working from Amsterdam, Singapore and Ho Chi Minh City. CEO Herre Roelevink's background in cybersecurity shaped a culture where "what does the system actually do?" comes before "what does the document say?" More about the team is on [Manifera's about page](https://www.manifera.com/about-us/).
 
-If you are approaching launch, [plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) — and bring your current privacy notice.
+If you are approaching launch, [plan a free 15-minute intro call](https://launchstudio.eu/en/#contact) - and bring your current privacy notice.
 
 ## Real example
 
@@ -143,16 +143,16 @@ If you are approaching launch, [plan a free 15-minute intro call](https://launch
 
 Merel Koster, a photographer in Gouda, built Fotoboekje in Lovable: customers upload holiday and family photos, arrange them into a photo book with AI-suggested layouts, pay online and receive a printed book. Before launch, she asked Lovable to generate a privacy notice and terms. They looked professional.
 
-A LaunchStudio review compared the documents with the app. The privacy notice mentioned Google Analytics (not used) and omitted Supabase, the print partner who received customers' photos and addresses, the email provider and the AI layout service that received every uploaded image. It claimed EU data storage; the database and file storage were in a US region. It promised deletion on request; the app had no deletion function, and uploaded photos — many showing children — were kept indefinitely. A marketing pixel loaded before consent. The terms excluded withdrawal rights for all orders, although the law allows an exception only for personalised products like the printed book itself.
+A LaunchStudio review compared the documents with the app. The privacy notice mentioned Google Analytics (not used) and omitted Supabase, the print partner who received customers' photos and addresses, the email provider and the AI layout service that received every uploaded image. It claimed EU data storage; the database and file storage were in a US region. It promised deletion on request; the app had no deletion function, and uploaded photos - many showing children - were kept indefinitely. A marketing pixel loaded before consent. The terms excluded withdrawal rights for all orders, although the law allows an exception only for personalised products like the printed book itself.
 
 The team migrated the database and storage to an EU region, built account and order deletion that removed photos from storage and notified the print partner, implemented automatic deletion of uploaded photos 60 days after a book was delivered, moved the pixel behind consent, and produced a verified processor list. Merel used that list with an online legal template service and a one-hour lawyer review to publish accurate documents, including a DPA with the print partner.
 
 **Result:** Fotoboekje launched ahead of the summer season and processed 1,150 orders in four months. When a customer asked exactly which companies had seen her children's photos, Merel answered in one email.
 
 > *"The AI wrote a privacy policy that sounded perfect. It just described somebody else's app."*
-> — **Merel Koster, Founder, Fotoboekje (Gouda)**
+> - **Merel Koster, Founder, Fotoboekje (Gouda)**
 
-**Cost & Timeline:** €1,300 (data migration, deletion and retention, consent fix and processor inventory) — completed in 5 business days.
+**Cost & Timeline:** €1,300 (data migration, deletion and retention, consent fix and processor inventory) - completed in 5 business days.
 
 ## Frequently Asked Questions
 

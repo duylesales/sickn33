@@ -22,23 +22,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 
 Core Web Vitals are three measurements of what using your site feels like: how long until the main content appears, how quickly the page responds when someone interacts, and whether things move around while they are reading.
 
-They are a ranking factor, which is why they appear in SEO discussions. They matter considerably more as a conversion factor, because a page that takes six seconds on a phone loses a substantial share of the people who requested it — and the ranking effect is small compared with that.
+They are a ranking factor, which is why they appear in SEO discussions. They matter considerably more as a conversion factor, because a page that takes six seconds on a phone loses a substantial share of the people who requested it - and the ranking effect is small compared with that.
 
 AI-built frontends fail them in consistent ways, which is good news: the fixes are the same every time.
 
 ## The Three Metrics, Practically
 
-**Largest Contentful Paint** — how long until the biggest visible element appears. Under 2.5 seconds is good. On generated sites this is usually slow because the page is assembled by JavaScript after a large bundle downloads, or because the hero image is enormous.
+**Largest Contentful Paint** - how long until the biggest visible element appears. Under 2.5 seconds is good. On generated sites this is usually slow because the page is assembled by JavaScript after a large bundle downloads, or because the hero image is enormous.
 
-**Interaction to Next Paint** — how quickly the page responds when someone taps or types. Under 200 milliseconds is good. Failures come from too much JavaScript occupying the main thread, and are far worse on mid-range Android phones than on a developer's laptop.
+**Interaction to Next Paint** - how quickly the page responds when someone taps or types. Under 200 milliseconds is good. Failures come from too much JavaScript occupying the main thread, and are far worse on mid-range Android phones than on a developer's laptop.
 
-**Cumulative Layout Shift** — how much content moves while loading. Under 0.1 is good. Caused by images without dimensions, fonts swapping, banners inserted above content, and anything that appears after the page has rendered.
+**Cumulative Layout Shift** - how much content moves while loading. Under 0.1 is good. Caused by images without dimensions, fonts swapping, banners inserted above content, and anything that appears after the page has rendered.
 
 ## Measure Real Visitors, Not a Laboratory
 
 A page speed tool gives you a laboratory score from one simulated run. It is useful for diagnosis and misleading as a measure of reality.
 
-What counts is field data — actual measurements from actual visitors on their actual devices and connections. Search consoles report it, and it is the number that reflects your users.
+What counts is field data - actual measurements from actual visitors on their actual devices and connections. Search consoles report it, and it is the number that reflects your users.
 
 The gap between the two is frequently large, and always in the same direction. Your laboratory score is generated on a fast connection; your Dutch customers include people on a train with a four-year-old phone. Optimising the laboratory number while the field number stays poor is the most common way this work is wasted.
 
@@ -48,7 +48,7 @@ If you have too little traffic for field data, test on a real mid-range phone wi
 
 **Serve real HTML for public pages.** Covered elsewhere in this series and the single largest factor: if the content is in the server's response, the largest element can paint immediately instead of after a bundle downloads and executes.
 
-**Fix the images.** Correct dimensions in the markup so nothing shifts, modern formats, sizes matched to display, lazy loading for anything below the fold — and specifically *not* lazy loading the hero image, which is a common mistake that directly harms the metric it was meant to help.
+**Fix the images.** Correct dimensions in the markup so nothing shifts, modern formats, sizes matched to display, lazy loading for anything below the fold - and specifically *not* lazy loading the hero image, which is a common mistake that directly harms the metric it was meant to help.
 
 **Reduce the JavaScript.** Generated sites routinely ship several hundred kilobytes for a marketing page with no interactivity. Split by route so a visitor downloads what that page needs, remove component libraries used for one element, and question anything imported for a single function.
 
@@ -80,7 +80,7 @@ An AI session adds a charting library for one small visualisation and it lands i
 
 Two measures hold the line at small-product scale.
 
-**A budget, enforced in the build.** State a maximum size for the JavaScript served to public pages — 200 KB compressed is a reasonable starting point for a marketing site — and fail the build when it is exceeded. The failure forces a decision rather than allowing an accumulation, and the decision is usually "load this only on the page that needs it".
+**A budget, enforced in the build.** State a maximum size for the JavaScript served to public pages - 200 KB compressed is a reasonable starting point for a marketing site - and fail the build when it is exceeded. The failure forces a decision rather than allowing an accumulation, and the decision is usually "load this only on the page that needs it".
 
 **A monthly look at field data.** Five minutes in the search console, comparing the three metrics against last month. A step change points at a specific deploy, which is far easier to investigate than a gradual decline discovered a year later.
 
@@ -88,11 +88,11 @@ The habit worth attaching to both: when a library is added, ask which pages need
 
 ## The Application Deserves the Same Attention
 
-The metrics are a search consideration for public pages, and a retention consideration for the product behind the login — where the same visitor returns every day rather than once.
+The metrics are a search consideration for public pages, and a retention consideration for the product behind the login - where the same visitor returns every day rather than once.
 
 The failure modes differ. Public pages are slow because too much is downloaded before anything appears. Applications are slow because too much work happens after the data arrives: a list rendering four hundred rows at once, a component recalculating on every keystroke, a table re-sorting the whole dataset in the browser.
 
-The measurement that matters inside a product is responsiveness — the delay between a user acting and something happening. Typing in a search box that freezes for 300 milliseconds per character is a product people describe as sluggish without being able to say why, and it is invariably work on the main thread that could be deferred, debounced or moved to the server.
+The measurement that matters inside a product is responsiveness - the delay between a user acting and something happening. Typing in a search box that freezes for 300 milliseconds per character is a product people describe as sluggish without being able to say why, and it is invariably work on the main thread that could be deferred, debounced or moved to the server.
 
 Three checks find most of it. Open the busiest screen with a device throttled to a quarter of its speed and use it normally. Type quickly in every search and filter field. And load the account with the most data rather than your own test account, which is the difference between a product that feels fine and one your largest customer complains about.
 
@@ -104,7 +104,7 @@ It is also the work most likely to be noticed by the people paying you. Nobody w
 
 For an existing site this is typically one to two days: field data reviewed for real visitors rather than laboratory scores, public pages served as real HTML, images given explicit dimensions and modern formats with the hero eagerly loaded and the rest lazy, JavaScript split by route with unnecessary libraries removed, fonts self-hosted with preloading and a fallback stack, third-party scripts removed from pages that do not need them, space reserved for everything that arrives late, and verification on a real mid-range phone with a throttled connection rather than on a laptop.
 
-LaunchStudio does this alongside the architectural work that usually determines it, since the rendering decision sets the ceiling for everything else. Behind it is Manifera — eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
+LaunchStudio does this alongside the architectural work that usually determines it, since the rendering decision sets the ceiling for everything else. Behind it is Manifera - eleven years, 160+ projects, from Amsterdam and Ho Chi Minh City.
 
 [Ask us what your site scores for real visitors](https://launchstudio.eu/en/#contact), not in a test.
 
@@ -123,15 +123,15 @@ Two business days: course listing and detail pages converted to static generatio
 **Result:** field LCP settled at 1.9 seconds, INP at 140 milliseconds and CLS at 0.02. Mobile booking conversion rose from 1.1 to 2.9 percent over the following two months, which on her volume was worth roughly €4,100 a month in commission. Organic rankings improved modestly; the conversion change was the one that mattered.
 
 > *"My score on a laptop was 88 and I thought I was finished. My actual customers were on phones on trains, and for them the site took six seconds and then moved while they were tapping."*
-> — **Nienke Brandts, Founder, Cursusplein (Haarlem)**
+> - **Nienke Brandts, Founder, Cursusplein (Haarlem)**
 
-**Cost & Timeline:** €2,900 (static generation for public pages, image dimensions formats and loading strategy, bundle splitting and library removal, font self-hosting with preload, third-party script removal, layout shift remediation, real-device verification) — completed in 2 business days.
+**Cost & Timeline:** €2,900 (static generation for public pages, image dimensions formats and loading strategy, bundle splitting and library removal, font self-hosting with preload, third-party script removal, layout shift remediation, real-device verification) - completed in 2 business days.
 
 ## Frequently Asked Questions
 
 ### Do Core Web Vitals actually affect rankings?
 
-They are a factor and a modest one. The larger effect is on conversion — a six-second page on a phone loses a meaningful share of visitors before anything else matters.
+They are a factor and a modest one. The larger effect is on conversion - a six-second page on a phone loses a meaningful share of visitors before anything else matters.
 
 ### Why is my laboratory score good but my field data poor?
 
@@ -147,7 +147,7 @@ No. Lazy loading the hero image delays the largest element and directly harms LC
 
 ### Is a perfect score worth pursuing?
 
-No. Meet the thresholds — 2.5 seconds, 200 milliseconds, 0.1 — and spend the remaining effort on content, which is where ranking actually comes from.
+No. Meet the thresholds - 2.5 seconds, 200 milliseconds, 0.1 - and spend the remaining effort on content, which is where ranking actually comes from.
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ No. Meet the thresholds — 2.5 seconds, 200 milliseconds, 0.1 — and spend the
       "name": "Do Core Web Vitals affect search rankings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They are a modest ranking factor. The larger effect is conversion — slow pages lose visitors before content quality matters."
+        "text": "They are a modest ranking factor. The larger effect is conversion - slow pages lose visitors before content quality matters."
       }
     },
     {
@@ -175,7 +175,7 @@ No. Meet the thresholds — 2.5 seconds, 200 milliseconds, 0.1 — and spend the
       "name": "What single change helps AI-built sites most?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Serving real HTML for public pages instead of assembling them in the browser — it sets the ceiling for every other improvement."
+        "text": "Serving real HTML for public pages instead of assembling them in the browser - it sets the ceiling for every other improvement."
       }
     },
     {

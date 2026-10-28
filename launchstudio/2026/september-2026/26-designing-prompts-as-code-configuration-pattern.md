@@ -11,7 +11,7 @@ Prompt Engineering is not a one-time task; it is a continuous operational cycle.
 
 Imagine your SaaS features an AI agent that drafts legal contracts. A user reports that the agent is incorrectly formatting the liability clauses. The fix is simple: add a sentence to the system prompt saying *"Format liability clauses in bold."*
 
-If the prompt is hardcoded in your backend repository, a software engineer must check out the code, modify the string, write a commit, open a pull request, wait for a colleague to review a one-line English-language change they have no real way to evaluate for correctness, wait 15 minutes for the CI/CD pipeline to run tests, and redeploy the entire production server. This is a massive waste of engineering resources for a simple text change — and it puts a software engineer in the position of being a bottleneck for what is fundamentally a product or domain-expertise decision, not a coding decision.
+If the prompt is hardcoded in your backend repository, a software engineer must check out the code, modify the string, write a commit, open a pull request, wait for a colleague to review a one-line English-language change they have no real way to evaluate for correctness, wait 15 minutes for the CI/CD pipeline to run tests, and redeploy the entire production server. This is a massive waste of engineering resources for a simple text change - and it puts a software engineer in the position of being a bottleneck for what is fundamentally a product or domain-expertise decision, not a coding decision.
 
 ## The Configuration Pattern
 
@@ -19,7 +19,7 @@ The solution is the **Configuration Pattern**. You must decouple the instruction
 
 Your backend Node.js or Python code should only contain the structural framework (the API call, the error handling, the rate limiting, the retry logic). The actual System Prompt should be stored externally, either in a dedicated JSON/YAML configuration file outside the main logic flow, or preferably, in a database (like PostgreSQL or a headless CMS such as Sanity or Contentful) that supports fast reads and simple editing.
 
-When the user triggers the AI feature, the backend dynamically fetches the prompt from the database — usually cached in Redis with a short TTL to avoid a database round-trip on every single API call — injects the user's variables using a lightweight templating engine, and sends the assembled prompt to the LLM provider.
+When the user triggers the AI feature, the backend dynamically fetches the prompt from the database - usually cached in Redis with a short TTL to avoid a database round-trip on every single API call - injects the user's variables using a lightweight templating engine, and sends the assembled prompt to the LLM provider.
 
 ## Empowering the Product Team
 
@@ -27,23 +27,23 @@ When you move prompts to a database, you democratize AI iteration. You can build
 
 If the AI is hallucinating, the Product Manager logs into the dashboard, tweaks the phrasing of the instruction, clicks "Save," and tests it immediately against a sandbox environment before it ever reaches production users. They do not need to bother the engineering team for a wording change. This accelerates your iteration cycle from days (waiting for an engineer's sprint capacity) to minutes.
 
-It's worth being deliberate about the boundary here: the *structure* of a prompt template — which variables get injected, what tools are available to the model, what output schema is enforced — is still an engineering concern, because a poorly structured prompt change can silently break downstream parsing. The Configuration Pattern separates *wording* (safe for a product manager to touch) from *structure* (still requires an engineer's sign-off), typically by keeping the template's variable slots and expected output schema version-locked, while the surrounding instructional language remains freely editable.
+It's worth being deliberate about the boundary here: the *structure* of a prompt template - which variables get injected, what tools are available to the model, what output schema is enforced - is still an engineering concern, because a poorly structured prompt change can silently break downstream parsing. The Configuration Pattern separates *wording* (safe for a product manager to touch) from *structure* (still requires an engineer's sign-off), typically by keeping the template's variable slots and expected output schema version-locked, while the surrounding instructional language remains freely editable.
 
 ## A/B Testing and Instant Rollbacks
 
 Storing prompts as data unlocks enterprise-grade testing that simply isn't practical when prompts live inside application code.
 
-- **A/B Testing:** You can store two versions of a prompt in the database, tagged `variant_a` and `variant_b`. The backend randomly assigns 50% of users to each variant using a simple hash of the user ID (ensuring the same user always sees the same variant for a consistent experience). You can then measure which prompt yields higher user satisfaction, fewer thumbs-down ratings, or a lower rate of downstream human corrections — feeding directly into the same feedback loop that a well-designed Human-in-the-Loop system already captures.
+- **A/B Testing:** You can store two versions of a prompt in the database, tagged `variant_a` and `variant_b`. The backend randomly assigns 50% of users to each variant using a simple hash of the user ID (ensuring the same user always sees the same variant for a consistent experience). You can then measure which prompt yields higher user satisfaction, fewer thumbs-down ratings, or a lower rate of downstream human corrections - feeding directly into the same feedback loop that a well-designed Human-in-the-Loop system already captures.
 
 - **Version Control:** LLM behavior is highly fragile. A Product Manager might edit a prompt to fix one edge case, only to accidentally break three other features that depended on subtle wording elsewhere in the same prompt. Because the prompts are stored in a database with version history (v1.0, v1.1, v1.2), the team can instantly roll back to the previous stable version with a single click, completely avoiding server downtime or an emergency code deploy.
 
-- **Evals as a Safety Net:** The most mature teams pair this pattern with an automated evaluation suite — a fixed set of test inputs with expected output characteristics — that runs automatically against any new prompt version before it's allowed to go live for more than a small percentage of traffic. This catches the "fixed one thing, broke three things" problem before real users ever see it.
+- **Evals as a Safety Net:** The most mature teams pair this pattern with an automated evaluation suite - a fixed set of test inputs with expected output characteristics - that runs automatically against any new prompt version before it's allowed to go live for more than a small percentage of traffic. This catches the "fixed one thing, broke three things" problem before real users ever see it.
 
 ## Where This Pattern Breaks Down If Done Carelessly
 
-Not every team benefits equally from this pattern on day one. If you move to a fully database-driven prompt system before you have more than one or two AI features, you're adding infrastructure overhead (a cache layer, an admin UI, a versioning scheme) for a problem you don't have yet. The Configuration Pattern earns its complexity once you have multiple AI features, multiple stakeholders who need to tune wording, or a compliance requirement to show exactly which prompt version produced a given historical output — which ties directly into the kind of auditable activity log enterprise buyers increasingly expect.
+Not every team benefits equally from this pattern on day one. If you move to a fully database-driven prompt system before you have more than one or two AI features, you're adding infrastructure overhead (a cache layer, an admin UI, a versioning scheme) for a problem you don't have yet. The Configuration Pattern earns its complexity once you have multiple AI features, multiple stakeholders who need to tune wording, or a compliance requirement to show exactly which prompt version produced a given historical output - which ties directly into the kind of auditable activity log enterprise buyers increasingly expect.
 
-As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Knowing when to introduce a pattern like this — and when it's premature — is exactly the kind of judgment that separates a founder's first working prototype from a system ready for enterprise scale. Founded in **2014**, Manifera has guided 160+ delivered projects through precisely this kind of architectural maturity curve, work detailed on the [Manifera custom software development page](https://www.manifera.com/services/custom-software-development/).
+As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Knowing when to introduce a pattern like this - and when it's premature - is exactly the kind of judgment that separates a founder's first working prototype from a system ready for enterprise scale. Founded in **2014**, Manifera has guided 160+ delivered projects through precisely this kind of architectural maturity curve, work detailed on the [Manifera custom software development page](https://www.manifera.com/services/custom-software-development/).
 
 ## Key Takeaways
 
@@ -55,7 +55,7 @@ As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a 
 
 - Decoupling prompts empowers Product Managers to tweak AI behavior and fix hallucinations instantly via an Admin Dashboard, without requiring software engineers to write code for every wording change.
 
-- Storing prompts in a database allows for robust version control and A/B testing. If a new prompt adjustment causes the AI to fail, you can instantly roll back to the previous version without server downtime — ideally backed by an automated eval suite that catches regressions before they reach users.
+- Storing prompts in a database allows for robust version control and A/B testing. If a new prompt adjustment causes the AI to fail, you can instantly roll back to the previous version without server downtime - ideally backed by an automated eval suite that catches regressions before they reach users.
 
 ## Iterate Faster
 
@@ -73,7 +73,7 @@ She partnered with **LaunchStudio (by Manifera)** to move all system prompts to 
 
 **Result:** Her non-technical team can now update prompts in real-time, reducing testing cycles from days to seconds.
 
-**Cost & Timeline:** €1,250 (Prompt Management Package) — production-ready and deployed in 3 business days.
+**Cost & Timeline:** €1,250 (Prompt Management Package) - production-ready and deployed in 3 business days.
 
 ---
 

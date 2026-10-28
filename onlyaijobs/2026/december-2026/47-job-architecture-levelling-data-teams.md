@@ -13,7 +13,7 @@ Content Format: Decision-Stage Guide
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Job Architecture for Data Teams: Defining Levels Before Pay Transparency Forces You To",
-  "description": "Most Dutch employers grade data roles against frameworks written for other professions, then wonder why they lose people — and European pay transparency rules are about to make the gaps visible.",
+  "description": "Most Dutch employers grade data roles against frameworks written for other professions, then wonder why they lose people - and European pay transparency rules are about to make the gaps visible.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-12-24",
@@ -45,7 +45,7 @@ Three pressures are converging.
 
 **Pay transparency.** European rules move employers towards disclosing salary ranges in recruitment, giving employees information about pay levels for comparable work, and reporting on gaps. Ranges require defensible levels behind them, and "comparable work" requires a definition of what work is comparable.
 
-**Retention.** Technical staff leave when progression is opaque. A capable engineer who cannot see what the next level requires, or who suspects a peer is paid more for the same work, starts looking — and in this market, looking produces offers.
+**Retention.** Technical staff leave when progression is opaque. A capable engineer who cannot see what the next level requires, or who suspects a peer is paid more for the same work, starts looking - and in this market, looking produces offers.
 
 **Scarcity.** Employers competing for scarce skills need to be able to answer a simple question in interviews: what would I earn here in three years, and what would I have to do to get there. Organisations without an answer lose candidates to those that have one.
 
@@ -83,7 +83,7 @@ The most common structural failure in Dutch data teams is having only one route 
 
 The consequence is predictable. Your best engineer becomes a mediocre and unhappy manager, you lose your strongest technical contributor, and the person you promoted leaves within two years. Alternatively they refuse the promotion, stay at the same level indefinitely, and eventually leave for an employer with a senior technical role.
 
-A parallel individual contributor track — senior, principal, expert or architect — with equivalent pay bands and genuine status solves this. Two conditions determine whether it works in practice: the senior technical levels must have real decision authority rather than decorative titles, and at least one person must actually be on the track, because an unpopulated ladder is not believed by anyone.
+A parallel individual contributor track - senior, principal, expert or architect - with equivalent pay bands and genuine status solves this. Two conditions determine whether it works in practice: the senior technical levels must have real decision authority rather than decorative titles, and at least one person must actually be on the track, because an unpopulated ladder is not believed by anyone.
 
 For smaller Dutch organisations, a full dual ladder may be excessive. Even then, it is worth stating explicitly that technical seniority is recognised and how.
 
@@ -111,7 +111,7 @@ For a mid-sized Dutch employer, a workable approach takes weeks rather than mont
 
 **Fix the clearest anomalies first.** Correcting two obvious underpayments buys more credibility than a perfect framework announced later.
 
-**Involve the works council** where one exists, and where a collective agreement applies, work within it — job evaluation is usually governed by the agreement rather than by your preference.
+**Involve the works council** where one exists, and where a collective agreement applies, work within it - job evaluation is usually governed by the agreement rather than by your preference.
 
 **Publish it internally.** A framework nobody can read does nothing. The point is that people can see what the next level requires.
 
@@ -119,13 +119,13 @@ For a mid-sized Dutch employer, a workable approach takes weeks rather than mont
 
 Once levels exist, several recruitment problems become easier.
 
-You can publish a range in the advert, which is where pay transparency rules are heading and which improves application quality immediately — candidates who would have withdrawn at the offer stage self-select out at the start.
+You can publish a range in the advert, which is where pay transparency rules are heading and which improves application quality immediately - candidates who would have withdrawn at the offer stage self-select out at the start.
 
 You can answer the progression question in interviews concretely, which is a differentiator against competitors who cannot.
 
 You can level candidates consistently, rather than paying whatever the last negotiation produced, which is the mechanism by which pay inequities accumulate in the first place.
 
-And you can explain to an internal candidate why an external hire came in at a particular level — a conversation that otherwise corrodes trust quietly.
+And you can explain to an internal candidate why an external hire came in at a particular level - a conversation that otherwise corrodes trust quietly.
 
 ## The Equity Dimension
 
@@ -159,7 +159,7 @@ Expect to find people who are paid above their level and people paid below. The 
 
 The first group is harder. The standard approach is to protect current salary rather than reduce it, while limiting future increases until the level and the pay align. Communicating that honestly is better than pretending the anomaly does not exist, because the person usually knows.
 
-Two further principles help. Apply the framework to new hires immediately, so that the anomalies stop growing. And be explicit that the placement of a role reflects the work rather than a judgement of the person — a distinction that sounds pedantic and turns out to matter enormously in how the conversation lands.
+Two further principles help. Apply the framework to new hires immediately, so that the anomalies stop growing. And be explicit that the placement of a role reflects the work rather than a judgement of the person - a distinction that sounds pedantic and turns out to matter enormously in how the conversation lands.
 
 ## Key Takeaways
 
@@ -173,12 +173,12 @@ Two further principles help. Apply the framework to new hires immediately, so th
 
 Compare what each person in your data team is paid against what they actually own. If the ranking differs from your instinct, you have found your first two conversations.
 
-Post your AI, machine learning or data vacancy — first listing free — at info@onlyaijobs.eu.
+Post your AI, machine learning or data vacancy - first listing free - at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer without a framework) Do we need a full job architecture project?
-No — for a mid-sized employer, two or three families and four or five one-page level descriptions can be built in weeks.
+No - for a mid-sized employer, two or three families and four or five one-page level descriptions can be built in weeks.
 
 ### (Scenario: employer under a collective agreement) Can we create our own levels?
 Job evaluation is usually governed by the agreement; work within it and use the scale placement and job family description as your levers.
@@ -190,18 +190,18 @@ Often because the only route upward was management; a genuine individual contrib
 Compare pay within each level across the team and examine the outliers, before ranges have to be published.
 
 ### (Scenario: employer worried about internal reactions) Should we publish the framework internally?
-Yes — a framework people cannot read achieves nothing, and visibility is what makes progression conversations constructive.
+Yes - a framework people cannot read achieves nothing, and visibility is what makes progression conversations constructive.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does a job architecture require a full consultancy project?", "acceptedAnswer": {"@type": "Answer", "text": "No — two or three job families and four or five one-page level descriptions can be built in weeks."}},
+    {"@type": "Question", "name": "Does a job architecture require a full consultancy project?", "acceptedAnswer": {"@type": "Answer", "text": "No - two or three job families and four or five one-page level descriptions can be built in weeks."}},
     {"@type": "Question", "name": "Can employers under a collective agreement define their own levels?", "acceptedAnswer": {"@type": "Answer", "text": "Job evaluation is usually governed by the agreement; scale placement and job family descriptions are the available levers."}},
     {"@type": "Question", "name": "Why do technical staff leave after being promoted?", "acceptedAnswer": {"@type": "Answer", "text": "Often because management was the only route upward; a real individual contributor track prevents it."}},
     {"@type": "Question", "name": "What should employers do first to prepare for pay transparency?", "acceptedAnswer": {"@type": "Answer", "text": "Compare pay within each level across the team and examine outliers before ranges must be published."}},
-    {"@type": "Question", "name": "Should a levelling framework be published internally?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — visibility is what makes progression conversations constructive rather than adversarial."}}
+    {"@type": "Question", "name": "Should a levelling framework be published internally?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - visibility is what makes progression conversations constructive rather than adversarial."}}
   ]
 }
 </script>

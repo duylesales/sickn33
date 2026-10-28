@@ -31,15 +31,15 @@ Content Format: Decision-Stage Guide
 }
 </script>
 
-A free first vacancy answers one question cheaply: does a specialist audience change the quality of applications you get, compared to what you're used to on a generalist board. Once that question is answered, a different one follows — what happens when you're hiring for more than one role, or hiring for the same kind of role repeatedly.
+A free first vacancy answers one question cheaply: does a specialist audience change the quality of applications you get, compared to what you're used to on a generalist board. Once that question is answered, a different one follows - what happens when you're hiring for more than one role, or hiring for the same kind of role repeatedly.
 
 ## What to Evaluate Once You've Tested the First Listing
 
-**Application quality relative to your existing channels, not in the abstract.** Compare the relevance rate directly against what the same role would have produced on a generalist board — that comparison is what actually tells you whether a second listing is worth pursuing.
+**Application quality relative to your existing channels, not in the abstract.** Compare the relevance rate directly against what the same role would have produced on a generalist board - that comparison is what actually tells you whether a second listing is worth pursuing.
 
-**Whether your hiring need is a one-off or recurring.** A single AI hire is a different situation than a team scaling up multiple AI/ML/Data roles over the coming months — the second case makes an ongoing relationship with a specialist channel more valuable than a single test ever could show.
+**Whether your hiring need is a one-off or recurring.** A single AI hire is a different situation than a team scaling up multiple AI/ML/Data roles over the coming months - the second case makes an ongoing relationship with a specialist channel more valuable than a single test ever could show.
 
-**What information you're still missing about pricing beyond the first free listing.** This is worth asking about directly rather than assuming — reach out and ask what posting additional roles involves, rather than guessing or avoiding the channel because the answer isn't published.
+**What information you're still missing about pricing beyond the first free listing.** This is worth asking about directly rather than assuming - reach out and ask what posting additional roles involves, rather than guessing or avoiding the channel because the answer isn't published.
 
 ## A Framework for Evaluating the First Listing's Results
 
@@ -53,33 +53,33 @@ A free first vacancy answers one question cheaply: does a specialist audience ch
 
 | | Single, one-off hire | Recurring AI/ML/Data hiring |
 |---|---|---|
-| Value of the free first listing | High — low-risk test of the channel | Still valuable, but only the start |
-| Value of an ongoing relationship | Limited, since there's no repeat need | Compounds — pre-filtered access to a specialist audience each time |
+| Value of the free first listing | High - low-risk test of the channel | Still valuable, but only the start |
+| Value of an ongoing relationship | Limited, since there's no repeat need | Compounds - pre-filtered access to a specialist audience each time |
 | What to ask about next | Whether the channel worked this once | Volume-based terms for repeated postings |
 
 ## Why This Decision Deserves a Direct Conversation Rather Than Assumption
 
-Employers sometimes avoid asking about pricing beyond a free first listing, assuming either that it's prohibitively expensive or that it's not worth the conversation. Both assumptions skip a step that costs nothing: asking directly. A specialist channel's terms for ongoing use are shaped by actual conversations with employers, not a one-size-fits-all published rate — which means the only way to know if it fits your situation is to ask.
+Employers sometimes avoid asking about pricing beyond a free first listing, assuming either that it's prohibitively expensive or that it's not worth the conversation. Both assumptions skip a step that costs nothing: asking directly. A specialist channel's terms for ongoing use are shaped by actual conversations with employers, not a one-size-fits-all published rate - which means the only way to know if it fits your situation is to ask.
 
 ## A Walkthrough: Evaluating Results After Thirty Days
 
-Thirty days after posting a first free listing, an employer reviews the results: twelve applications, eight of which came from candidates with genuine, relevant AI/ML/Data experience — a relevance rate the employer estimates is roughly triple what a similar posting on a generalist board historically produced. This single data point, gathered at essentially no cost, is enough to justify a direct conversation about what a second posting would look like, rather than continuing to guess whether the channel is worth pursuing further based on assumption alone.
+Thirty days after posting a first free listing, an employer reviews the results: twelve applications, eight of which came from candidates with genuine, relevant AI/ML/Data experience - a relevance rate the employer estimates is roughly triple what a similar posting on a generalist board historically produced. This single data point, gathered at essentially no cost, is enough to justify a direct conversation about what a second posting would look like, rather than continuing to guess whether the channel is worth pursuing further based on assumption alone.
 
 ## A Misconception About What "Worth It" Means at This Stage
 
-Employers sometimes hold off on a follow-up conversation because they're waiting to see whether the first free listing actually results in a completed hire, treating "worth it" as binary and tied only to that single outcome. A more useful frame treats application relevance rate itself as the primary signal worth acting on — a channel that produces well-matched applicants is valuable regardless of whether this particular search happens to result in a hire, since hiring outcomes depend on many factors beyond channel quality alone (timing, specific candidate availability, interview process fit).
+Employers sometimes hold off on a follow-up conversation because they're waiting to see whether the first free listing actually results in a completed hire, treating "worth it" as binary and tied only to that single outcome. A more useful frame treats application relevance rate itself as the primary signal worth acting on - a channel that produces well-matched applicants is valuable regardless of whether this particular search happens to result in a hire, since hiring outcomes depend on many factors beyond channel quality alone (timing, specific candidate availability, interview process fit).
 
 ## Why Waiting Too Long to Have This Conversation Has a Real Cost
 
-An employer who delays asking about posting additional roles — waiting for a "perfect" moment or a fully resolved hiring need — risks losing momentum with a channel that was working, and may end up re-explaining their situation from scratch later rather than building on an already-established relationship. Since the conversation itself costs nothing but time, there's little reason to delay it once the first listing has produced a clear enough signal to act on.
+An employer who delays asking about posting additional roles - waiting for a "perfect" moment or a fully resolved hiring need - risks losing momentum with a channel that was working, and may end up re-explaining their situation from scratch later rather than building on an already-established relationship. Since the conversation itself costs nothing but time, there's little reason to delay it once the first listing has produced a clear enough signal to act on.
 
 ## What to Prepare Before Initiating the Conversation About Additional Roles
 
-Before reaching out to discuss posting beyond the free first listing, it helps to have a clear, specific picture of your actual upcoming hiring need ready to share — how many roles, what rough timeline, what specific specializations. A vague inquiry ("we might hire more, not sure yet") is harder for anyone to respond to usefully than a specific one ("we expect to hire two more ML engineers over the next two quarters"). Employers who invest a few minutes preparing this specificity before the conversation tend to get more useful, tailored responses than those who approach the conversation without having thought through their own actual need first.
+Before reaching out to discuss posting beyond the free first listing, it helps to have a clear, specific picture of your actual upcoming hiring need ready to share - how many roles, what rough timeline, what specific specializations. A vague inquiry ("we might hire more, not sure yet") is harder for anyone to respond to usefully than a specific one ("we expect to hire two more ML engineers over the next two quarters"). Employers who invest a few minutes preparing this specificity before the conversation tend to get more useful, tailored responses than those who approach the conversation without having thought through their own actual need first.
 
 ## Why Revisiting This Decision Periodically Makes Sense Even After a "No" Answer
 
-If an initial exploration of posting additional roles doesn't lead anywhere — perhaps timing wasn't right, or the specific terms didn't fit your situation at that moment — it's worth revisiting periodically rather than treating an initial no as permanent. Both your own hiring needs and a specialist channel's own offerings can change over time, and a conversation that didn't lead anywhere six months ago may lead somewhere useful now, particularly if your hiring volume or the channel's own capabilities have shifted in the interim.
+If an initial exploration of posting additional roles doesn't lead anywhere - perhaps timing wasn't right, or the specific terms didn't fit your situation at that moment - it's worth revisiting periodically rather than treating an initial no as permanent. Both your own hiring needs and a specialist channel's own offerings can change over time, and a conversation that didn't lead anywhere six months ago may lead somewhere useful now, particularly if your hiring volume or the channel's own capabilities have shifted in the interim.
 
 ## Measure the First Listing Properly Before Deciding
 
@@ -97,11 +97,11 @@ A second listing is only a good decision if the first one was measured well. Man
 
 **Attribution in practice.** Use a separate application link per channel, ideally tagged with UTM campaign parameters so your analytics can distinguish sources, and add a "Where did you find this vacancy?" question to the application form. Self-reported and tracked sources sometimes differ; record both.
 
-## Reusing Strong Candidates From the First Vacancy — Legally
+## Reusing Strong Candidates From the First Vacancy - Legally
 
-A first listing that attracts several strong candidates often produces more good people than one role can absorb. Those "near-miss" candidates are the most efficient starting point for a second or third vacancy — provided you handle their data correctly.
+A first listing that attracts several strong candidates often produces more good people than one role can absorb. Those "near-miss" candidates are the most efficient starting point for a second or third vacancy - provided you handle their data correctly.
 
-**Consent to retain.** Under the **AVG**, you may not keep applicant data longer than necessary for the procedure. The **Autoriteit Persoonsgegevens** has long advised deleting applicant data no later than four weeks after the procedure ends, unless the candidate consents to longer retention — commonly up to one year — for future vacancies. Ask for that consent explicitly when you reject a strong candidate for the first role.
+**Consent to retain.** Under the **AVG**, you may not keep applicant data longer than necessary for the procedure. The **Autoriteit Persoonsgegevens** has long advised deleting applicant data no later than four weeks after the procedure ends, unless the candidate consents to longer retention - commonly up to one year - for future vacancies. Ask for that consent explicitly when you reject a strong candidate for the first role.
 
 **Transparency.** Tell candidates for which kinds of roles you may contact them, and make it easy to withdraw consent.
 
@@ -113,9 +113,9 @@ When several AI, ML and data roles are coming up, planning them together produce
 
 **Sequence the roles.** Hire the role that unblocks others first. A data engineer who makes data available often needs to precede a data scientist who depends on it; an ML platform engineer may need to precede several ML engineers.
 
-**Categorise each role precisely.** Different AI roles attract different audiences. Assigning each vacancy to the right category — for example Machine Learning, Infrastructure, Research, Computer Vision or Ethics & Governance on OnlyAIJobs — ensures each listing reaches the candidates who search for that kind of work, instead of three near-identical postings competing with each other.
+**Categorise each role precisely.** Different AI roles attract different audiences. Assigning each vacancy to the right category - for example Machine Learning, Infrastructure, Research, Computer Vision or Ethics & Governance on OnlyAIJobs - ensures each listing reaches the candidates who search for that kind of work, instead of three near-identical postings competing with each other.
 
-**Keep pay structures consistent.** The **EU Pay Transparency Directive (EU) 2023/970** requires pay structures based on objective, gender-neutral criteria and introduces pay transparency obligations towards applicants. When you post several similar roles, candidates will compare the ranges. Consistent, explainable ranges across roles avoid awkward questions — and future compliance issues.
+**Keep pay structures consistent.** The **EU Pay Transparency Directive (EU) 2023/970** requires pay structures based on objective, gender-neutral criteria and introduces pay transparency obligations towards applicants. When you post several similar roles, candidates will compare the ranges. Consistent, explainable ranges across roles avoid awkward questions - and future compliance issues.
 
 **Publish on your own site too.** Each role should also exist on your careers page with accurate schema.org **JobPosting** data, so that search engines and aggregators can index it and link back to your own site.
 
@@ -139,26 +139,26 @@ When several AI, ML and data roles are coming up, planning them together produce
 
 ## Where to Start
 
-If your first free listing produced better-matched applications than your usual channels, the natural next step is a direct conversation about what posting additional roles looks like — not a guess, and not avoidance.
+If your first free listing produced better-matched applications than your usual channels, the natural next step is a direct conversation about what posting additional roles looks like - not a guess, and not avoidance.
 
 Email [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss posting more than one vacancy.
 
 ## Frequently Asked Questions
 
 ### (Scenario: employer whose first free listing worked well) My first free listing produced good applications. What should I do next?
-Reach out directly to discuss posting additional roles rather than assuming a fixed process — this is worth a direct conversation given hiring needs and volume vary considerably between employers.
+Reach out directly to discuss posting additional roles rather than assuming a fixed process - this is worth a direct conversation given hiring needs and volume vary considerably between employers.
 
 ### (Scenario: employer trying to judge whether the channel is worth continuing with) How do I know if a specialist board is worth using beyond the first free listing?
-Compare the relevance rate of applications you received against what the same role would typically produce on your usual channels — that direct comparison is the most useful signal, more than any general claim about the platform.
+Compare the relevance rate of applications you received against what the same role would typically produce on your usual channels - that direct comparison is the most useful signal, more than any general claim about the platform.
 
 ### (Scenario: employer with a single, one-off hiring need) Does it make sense to use a specialist board for just one hire?
-The free first listing is designed exactly for that — a low-risk way to test the channel for a single role before deciding whether it's worth using again.
+The free first listing is designed exactly for that - a low-risk way to test the channel for a single role before deciding whether it's worth using again.
 
 ### (Scenario: employer planning to scale up an AI team) What changes if I'm hiring multiple AI/ML/Data roles over the coming months rather than just one?
 An ongoing relationship with a specialist channel becomes more valuable than a single test, since consistent access to a pre-filtered audience compounds across multiple hires rather than helping just once.
 
 ### (Scenario: employer unsure what pricing looks like beyond the first listing) Where can I find pricing information for additional vacancies?
-Reach out directly by email rather than assuming — pricing for additional listings is discussed directly with employers rather than published as a fixed rate, since hiring volume and needs vary.
+Reach out directly by email rather than assuming - pricing for additional listings is discussed directly with employers rather than published as a fixed rate, since hiring volume and needs vary.
 
 <script type="application/ld+json">
 {
@@ -167,9 +167,9 @@ Reach out directly by email rather than assuming — pricing for additional list
   "mainEntity": [
     {"@type": "Question", "name": "My first free listing produced good applications. What should I do next?", "acceptedAnswer": {"@type": "Answer", "text": "Reach out directly to discuss posting additional roles rather than assuming a fixed process, since hiring needs vary considerably between employers."}},
     {"@type": "Question", "name": "How do I know if a specialist board is worth using beyond the first free listing?", "acceptedAnswer": {"@type": "Answer", "text": "Compare the relevance rate of applications against what the same role would typically produce on your usual channels."}},
-    {"@type": "Question", "name": "Does it make sense to use a specialist board for just one hire?", "acceptedAnswer": {"@type": "Answer", "text": "The free first listing is designed exactly for that — a low-risk way to test the channel before deciding whether to use it again."}},
+    {"@type": "Question", "name": "Does it make sense to use a specialist board for just one hire?", "acceptedAnswer": {"@type": "Answer", "text": "The free first listing is designed exactly for that - a low-risk way to test the channel before deciding whether to use it again."}},
     {"@type": "Question", "name": "What changes if I'm hiring multiple AI/ML/Data roles over the coming months rather than just one?", "acceptedAnswer": {"@type": "Answer", "text": "An ongoing relationship with a specialist channel becomes more valuable, since consistent access to a pre-filtered audience compounds across multiple hires."}},
-    {"@type": "Question", "name": "Where can I find pricing information for additional vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "Reach out directly by email — pricing for additional listings is discussed directly with employers rather than published as a fixed rate."}}
+    {"@type": "Question", "name": "Where can I find pricing information for additional vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "Reach out directly by email - pricing for additional listings is discussed directly with employers rather than published as a fixed rate."}}
   ]
 }
 </script>

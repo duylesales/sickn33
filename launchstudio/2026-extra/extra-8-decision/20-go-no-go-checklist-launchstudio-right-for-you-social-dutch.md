@@ -1,4 +1,4 @@
-🙅 "Gaan jullie me vertellen dat ik dit nodig heb, zelfs als dat niet zo is?" Een bureau-eigenares vroeg het ons rechtstreeks. Ons antwoord verraste haar — we praatten haar de eerste keer UIT het betalen van een factuur.
+🙅 "Gaan jullie me vertellen dat ik dit nodig heb, zelfs als dat niet zo is?" Een bureau-eigenares vroeg het ons rechtstreeks. Ons antwoord verraste haar - we praatten haar de eerste keer UIT het betalen van een factuur.
 
 Niet elk met AI gebouwd prototype is al toe aan backend hardening. Dit is de eerlijke checklist:
 
@@ -14,7 +14,7 @@ Niet elk met AI gebouwd prototype is al toe aan backend hardening. Dit is de eer
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, zeggen we liever eerlijk 'nee' dan een mismatch aan te gaan. ✅
 
-Haar resultaat: haar klant voorkwam betalen voor hardening van een versie die herschreven had moeten worden — en kwam 6 weken later terug voor het echte werk. 🔁
+Haar resultaat: haar klant voorkwam betalen voor hardening van een versie die herschreven had moeten worden - en kwam 6 weken later terug voor het echte werk. 🔁
 
 👉 Toets uw eigen project aan de 5-signalen checklist: https://launchstudio.eu/nl/blog/go-no-go-checklist-launchstudio-right-for-you
 

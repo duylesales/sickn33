@@ -53,7 +53,7 @@ What they mostly ignore: contribution graphs, the number of repositories, stars 
 
 **Career changers and self-taught candidates.** The clearest case. Without an employer's name to vouch for you, merged contributions to a real project are independent evidence that people who did not have to accept your work did.
 
-**Engineers in closed environments.** If your work is confidential — defence, health, finance — public code lets you demonstrate ability without disclosing anything.
+**Engineers in closed environments.** If your work is confidential - defence, health, finance - public code lets you demonstrate ability without disclosing anything.
 
 **People targeting a specific niche.** Contributing to the main library in a specialism marks you as a participant rather than a user.
 
@@ -99,7 +99,7 @@ The mechanics are straightforward and the etiquette is where people fail.
 
 This is where people create genuine problems for themselves, and a short conversation prevents all of them.
 
-Employment contracts across Europe commonly assign intellectual property created during employment to the employer, and some clauses extend further than people expect — to work in your own time, in the same field, using knowledge gained at work. Contributing a fix you developed while solving a work problem may legally belong to your employer regardless of when you typed it.
+Employment contracts across Europe commonly assign intellectual property created during employment to the employer, and some clauses extend further than people expect - to work in your own time, in the same field, using knowledge gained at work. Contributing a fix you developed while solving a work problem may legally belong to your employer regardless of when you typed it.
 
 The solution is straightforward: ask. Many European employers have an open source policy, several actively encourage contribution, and most will grant permission for specific contributions when asked. Some run formal approval processes, which are usually quick.
 
@@ -107,7 +107,7 @@ The upside for employers is real: tools they depend on improve, engineers develo
 
 If your employer refuses without reason, that is useful information about how they view your development.
 
-Beyond permission, be careful about content. Do not include anything confidential in a contribution — data, internal system names, business logic or details of your infrastructure. Abstract the fix from the situation that prompted it, which is usually straightforward and is good practice anyway.
+Beyond permission, be careful about content. Do not include anything confidential in a contribution - data, internal system names, business logic or details of your infrastructure. Abstract the fix from the situation that prompted it, which is usually straightforward and is good practice anyway.
 
 ## Open Weights and the Model Ecosystem
 
@@ -119,13 +119,13 @@ This matters practically for European organisations. Building a product on a mod
 
 Regulatory context is also developing. The EU AI Act includes provisions relating to general-purpose models, with certain exemptions and different treatment for models released under free and open source licences, subject to conditions.
 
-For a candidate, being able to discuss licensing accurately — rather than treating everything downloadable as free to use — is a differentiator in interviews, because it is a question hiring managers encounter regularly and rarely find candidates prepared for.
+For a candidate, being able to discuss licensing accurately - rather than treating everything downloadable as free to use - is a differentiator in interviews, because it is a question hiring managers encounter regularly and rarely find candidates prepared for.
 
 ## Alternatives That Often Work Better
 
 Open source is one way to build public evidence of competence. For many people, other routes produce more return for the same effort.
 
-**Writing.** A clear post explaining something you learned — a failure, a comparison, a technique applied to a real problem — reaches more people than most code contributions and demonstrates communication, which teams find scarcer than coding ability.
+**Writing.** A clear post explaining something you learned - a failure, a comparison, a technique applied to a real problem - reaches more people than most code contributions and demonstrates communication, which teams find scarcer than coding ability.
 
 **A well-documented personal project.** Deployed, evaluated, with an honest write-up of what failed. For career changers this is frequently more persuasive than a contribution to someone else's project, because it shows you can take something from nothing to running.
 
@@ -183,7 +183,7 @@ It was reviewed, revised twice and merged. He continued with three smaller contr
 
 When he applied for a role at a company whose stack included that tool, the hiring manager had already read the pull request before the interview. The technical conversation started from it.
 
-He was hired, and later said that the contribution had not made him a better engineer — he had fixed a bug he already understood — but that it had made his ability legible to someone who had never met him.
+He was hired, and later said that the contribution had not made him a better engineer - he had fixed a bug he already understood - but that it had made his ability legible to someone who had never met him.
 
 ## Key Takeaways
 

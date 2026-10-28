@@ -8,7 +8,7 @@
 **The Manifera Solution:**
 ✅ **Structuring stylist availability as short-lived, atomic slot locks:** Since fair, non-double-booking scheduling fundamentally depends on the ability to lock a specific stylist's specific slot the moment it's selected and reliably release it if checkout isn't completed within a bounded window.
 ✅ **Designing checkout handling around the lock-then-confirm pattern from the start:** Rather than a simpler check-then-book model that would need fundamental rework to support genuine real-time scheduling integrity later.
-✅ **Building reliable lock expiry and reconciliation logic:** so an abandoned checkout — a client who selects a slot and then closes the browser — releases the lock back into genuinely available inventory within a reasonably short window, rather than leaving stylists appearing falsely booked.
+✅ **Building reliable lock expiry and reconciliation logic:** so an abandoned checkout - a client who selects a slot and then closes the browser - releases the lock back into genuinely available inventory within a reasonably short window, rather than leaving stylists appearing falsely booked.
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 

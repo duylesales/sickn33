@@ -1,4 +1,4 @@
-🔥 Pieter built a prototype using **Lovable** — pieter, a corporate lawyer in the hague, saw an opportunity to automate contract review for dutch smes, but discovered critical architectural and security bottlenecks before going live. 🧠
+🔥 Pieter built a prototype using **Lovable** - pieter, a corporate lawyer in the hague, saw an opportunity to automate contract review for dutch smes, but discovered critical architectural and security bottlenecks before going live. 🧠
 
 If your AI prototype lacks server-side input sanitization, database Row Level Security (RLS), or proper deployment configuration, real traffic will trigger crashes and security risks.
 
@@ -12,7 +12,7 @@ If your AI prototype lacks server-side input sanitization, database Row Level Se
 
 At **LaunchStudio**, we've been fixing exactly this class of production engineering problem since 2014 through Manifera, across 160+ delivered projects. 🛡️
 
-Pieter's application achieved production readiness: Pieter got the exact same enterprise-grade security the Amsterdam agency offered, but at a fraction of the price. The app was launched in 3 weeks. Pieter successfully pitched his platform to a mid-sized accounting firm, passing their data-privacy audit purely because his backend was engineered by a trusted Dutch tech firm. LaunchStudio gave me the best of both worlds: Dutch legal security and affordable, elite engineering. (€4,500 (Secure Database & Payment Integration) — completed in 15 business days.). 🚀
+Pieter's application achieved production readiness: Pieter got the exact same enterprise-grade security the Amsterdam agency offered, but at a fraction of the price. The app was launched in 3 weeks. Pieter successfully pitched his platform to a mid-sized accounting firm, passing their data-privacy audit purely because his backend was engineered by a trusted Dutch tech firm. LaunchStudio gave me the best of both worlds: Dutch legal security and affordable, elite engineering. (€4,500 (Secure Database & Payment Integration) - completed in 15 business days.). 🚀
 
 👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-manifera-custom-software-netherlands
 

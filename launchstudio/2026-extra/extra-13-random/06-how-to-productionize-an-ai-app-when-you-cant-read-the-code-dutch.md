@@ -21,7 +21,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Je hebt de app gebouwd zonder code te schrijven. Dat was juist de bedoeling. Dus wanneer iemand je vertelt dat je je AI-app nu productierijp moet maken — de beveiliging laten controleren, de backend versterken, de databaseregels nalopen — kan dat voelen alsof je een boek krijgt in een taal die je nooit hebt geleerd. Het goede nieuws: je hoeft de code niet te kunnen lezen om er goede beslissingen over te nemen. Je moet weten waar je naar kijkt, wat je vraagt, en hoe je een echt antwoord onderscheidt van een vaag antwoord.
+Je hebt de app gebouwd zonder code te schrijven. Dat was juist de bedoeling. Dus wanneer iemand je vertelt dat je je AI-app nu productierijp moet maken - de beveiliging laten controleren, de backend versterken, de databaseregels nalopen - kan dat voelen alsof je een boek krijgt in een taal die je nooit hebt geleerd. Het goede nieuws: je hoeft de code niet te kunnen lezen om er goede beslissingen over te nemen. Je moet weten waar je naar kijkt, wat je vraagt, en hoe je een echt antwoord onderscheidt van een vaag antwoord.
 
 ## Wat een AI-App Productierijp Maken Betekent, in Gewone Woorden
 
@@ -29,7 +29,7 @@ Een AI-app productierijp maken betekent hem veilig en betrouwbaar maken voor men
 
 1. **Mensen zien alleen hun eigen data.**
 2. **Geld wordt pas geteld wanneer het echt binnenkomt.**
-3. **Data overleeft fouten** — die van jou, van je gebruikers en van je aanbieders.
+3. **Data overleeft fouten** - die van jou, van je gebruikers en van je aanbieders.
 4. **Iemand weet het wanneer het kapotgaat.**
 
 Alles wat een engineer doet tijdens het productierijp maken, dient een van die vier beloften. Onthoud je verder niets uit dit artikel, onthoud dan dit lijstje; het laat je bij elk stuk werk waarvoor je een offerte krijgt vragen: "welke belofte lost dit op?"
@@ -38,9 +38,9 @@ Alles wat een engineer doet tijdens het productierijp maken, dient een van die v
 
 Geen van deze vraagt om code. Ze kosten samen ongeveer een halfuur en geven je een verrassend goed beeld.
 
-**Controle 1: De "paginabron bekijken"-test.** Open je app, klik met de rechtermuisknop, kies "Paginabron weergeven", druk op Ctrl+F (of Cmd+F) en zoek naar woorden als `key`, `secret`, `sk_` en `token`. Vind je lange, willekeurig ogende reeksen ernaast, dan staat er mogelijk een API-sleutel open voor elke bezoeker. Niet elke treffer is een probleem — sommige sleutels zijn bedoeld om openbaar te zijn — maar het is het eerste waar je een engineer naar vraagt.
+**Controle 1: De "paginabron bekijken"-test.** Open je app, klik met de rechtermuisknop, kies "Paginabron weergeven", druk op Ctrl+F (of Cmd+F) en zoek naar woorden als `key`, `secret`, `sk_` en `token`. Vind je lange, willekeurig ogende reeksen ernaast, dan staat er mogelijk een API-sleutel open voor elke bezoeker. Niet elke treffer is een probleem - sommige sleutels zijn bedoeld om openbaar te zijn - maar het is het eerste waar je een engineer naar vraagt.
 
-**Controle 2: De twee-accountstest.** Maak twee accounts aan. Maak met account A iets aan — een boeking, een notitie, een bestelling. Kijk naar de adresbalk; staat er een nummer of code in de URL, kopieer die dan. Log in als account B en plak de URL. Kun je het item van A zien, dan is belofte 1 gebroken.
+**Controle 2: De twee-accountstest.** Maak twee accounts aan. Maak met account A iets aan - een boeking, een notitie, een bestelling. Kijk naar de adresbalk; staat er een nummer of code in de URL, kopieer die dan. Log in als account B en plak de URL. Kun je het item van A zien, dan is belofte 1 gebroken.
 
 **Controle 3: De betaaltest met gesloten tabblad.** Start in testmodus een betaling en sluit het browsertabblad op de pagina van de betaalprovider voordat je terugkeert. Controleer daarna je app: denkt die dat je hebt betaald? Zo ja, dan is belofte 2 gebroken.
 
@@ -52,7 +52,7 @@ Geen van deze vraagt om code. Ze kosten samen ongeveer een halfuur en geven je e
 
 Wanneer je met iemand praat over het versterken van je app, onderscheiden deze vragen specialisten van generalisten:
 
-- "Hoe controleer je dat gebruikers alleen bij hun eigen data kunnen — in de interface, of in de database?" (Het juiste antwoord noemt de database of de server, niet alleen het verbergen van knoppen.)
+- "Hoe controleer je dat gebruikers alleen bij hun eigen data kunnen - in de interface, of in de database?" (Het juiste antwoord noemt de database of de server, niet alleen het verbergen van knoppen.)
 - "Hoe weet de app dat een betaling is gelukt?" (Let op het woord "webhook" en een vermelding van het controleren daarvan.)
 - "Waar komt de data te staan, en hoe weten we dat een back-up werkt?" (Goede antwoorden noemen een regio en een testherstel.)
 - "Wat kan ik zien wanneer er iets kapotgaat?" (Let op genoemde tools voor monitoring of foutregistratie en wie de meldingen krijgt.)
@@ -75,20 +75,20 @@ Je kunt het werk van een engineer niet regel voor regel controleren, maar je kun
 
 Sommige stappen om productierijp te worden vragen helemaal geen technische kennis, en ze zelf doen bespaart geld:
 
-- Zet elk account — domein, hosting, database, e-mail, betaalprovider — op een zakelijk e-mailadres dat jij beheert, met tweefactorauthenticatie.
+- Zet elk account - domein, hosting, database, e-mail, betaalprovider - op een zakelijk e-mailadres dat jij beheert, met tweefactorauthenticatie.
 - Schrijf op welke diensten je app gebruikt en wat elke dienst doet.
 - Schrijf een privacyverklaring van één pagina die beschrijft welke data je verzamelt en waarom. De [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) heeft begrijpelijke uitleg voor kleine ondernemers.
-- Beslis wie een melding krijgt wanneer de app kapotgaat — en zorg dat die persoon dat ook wil.
+- Beslis wie een melding krijgt wanneer de app kapotgaat - en zorg dat die persoon dat ook wil.
 
 ## De Bevindingen van een Engineer Lezen Zonder Er Zelf Een te Zijn
 
 Na een review ontvang je een lijst met bevindingen. Elke bevinding hoort vijf dingen te bevatten, en je kunt de lijst beoordelen op of die aanwezig zijn:
 
-1. **Een begrijpelijke titel** — "Klanten kunnen de bestellingen van andere klanten lezen", niet "IDOR in /api/orders".
-2. **Ernst** — kritiek, hoog, gemiddeld of laag, met één zin waarom.
-3. **Wie het raakt** — alle gebruikers, sommige gebruikers, alleen beheerders, alleen jij.
-4. **Bewijs** — hoe het is gevonden of aangetoond.
-5. **De oplossing en wat die kost** — in moeite of prijs, en of het iets verandert aan wat je ziet.
+1. **Een begrijpelijke titel** - "Klanten kunnen de bestellingen van andere klanten lezen", niet "IDOR in /api/orders".
+2. **Ernst** - kritiek, hoog, gemiddeld of laag, met één zin waarom.
+3. **Wie het raakt** - alle gebruikers, sommige gebruikers, alleen beheerders, alleen jij.
+4. **Bewijs** - hoe het is gevonden of aangetoond.
+5. **De oplossing en wat die kost** - in moeite of prijs, en of het iets verandert aan wat je ziet.
 
 Een nuttige gewoonte is de engineer te vragen bevindingen te rangschikken op "wat kan een klant deze week schaden". Kritieke en hoge bevindingen vallen bijna altijd in vier categorieën die je al uit dit artikel kent: toegang tot data, geheimen, betalingen en herstelbaarheid. Alles daarbuiten kan meestal worden ingepland.
 
@@ -126,11 +126,11 @@ Soms stelt een engineer werk voor dat nu niet nodig is. Het is prima om te vrage
 
 ## Een Realistische Tijdlijn voor Niet-Technische Oprichters
 
-Productierijp maken wanneer je de code niet kunt lezen, volgt meestal een rustig, voorspelbaar ritme. In week één beschrijf je de app, doe je de vijf browsercontroles en heb je het kennismakingsgesprek; de engineer bekijkt de code en levert een lijst met bevindingen. In week twee worden de fixes gemaakt terwijl jij accounts samenbrengt, je privacyverklaring schrijft en je eerste gebruikers voorbereidt. Aan het eind doe je zelf de twee-accounts- en betaaltest op staging, met de engineer aan de lijn, en geef je de lancering goedkeuring. Niets in deze volgorde vraagt je een code-editor te openen — maar elke stap laat je achter met meer begrip en meer controle dan daarvoor.
+Productierijp maken wanneer je de code niet kunt lezen, volgt meestal een rustig, voorspelbaar ritme. In week één beschrijf je de app, doe je de vijf browsercontroles en heb je het kennismakingsgesprek; de engineer bekijkt de code en levert een lijst met bevindingen. In week twee worden de fixes gemaakt terwijl jij accounts samenbrengt, je privacyverklaring schrijft en je eerste gebruikers voorbereidt. Aan het eind doe je zelf de twee-accounts- en betaaltest op staging, met de engineer aan de lijn, en geef je de lancering goedkeuring. Niets in deze volgorde vraagt je een code-editor te openen - maar elke stap laat je achter met meer begrip en meer controle dan daarvoor.
 
 ## Wat Je aan het Eind Hoort te Ontvangen
 
-Wanneer het werk klaar is, vraag dan om een kort overdrachtspakket: de lijst met bevindingen gemarkeerd als opgelost, een lijst met accounts waarvan je nu eigenaar bent, waar back-ups staan en hoe vaak ze draaien, welke meldingen er zijn en wie ze ontvangt, en een notitie in gewone taal over alles wat is uitgesteld. Bewaar het bij je bedrijfsdocumenten. Het is het bewijs dat je redelijke zorg hebt betracht — nuttig voor klanten, verzekeraars en investeerders.
+Wanneer het werk klaar is, vraag dan om een kort overdrachtspakket: de lijst met bevindingen gemarkeerd als opgelost, een lijst met accounts waarvan je nu eigenaar bent, waar back-ups staan en hoe vaak ze draaien, welke meldingen er zijn en wie ze ontvangt, en een notitie in gewone taal over alles wat is uitgesteld. Bewaar het bij je bedrijfsdocumenten. Het is het bewijs dat je redelijke zorg hebt betracht - nuttig voor klanten, verzekeraars en investeerders.
 
 ## Vertrouwen Zonder Alles te Controleren
 
@@ -138,11 +138,11 @@ Je zult nooit elke regel controleren die een engineer verandert, en dat hoeft oo
 
 ## Als Je Maar Eén Ding Onthoudt
 
-Je kunt een AI-app productierijp maken zonder de code te lezen, zolang je aandringt op bewijs dat je begrijpt: tests die je kunt draaien, bevindingen die je kunt reproduceren en accounts die je beheert. Al het andere is detail dat een engineer kan afhandelen — en dat hij je, wanneer je erom vraagt, in gewone woorden en zonder jargon hoort uit te leggen.
+Je kunt een AI-app productierijp maken zonder de code te lezen, zolang je aandringt op bewijs dat je begrijpt: tests die je kunt draaien, bevindingen die je kunt reproduceren en accounts die je beheert. Al het andere is detail dat een engineer kan afhandelen - en dat hij je, wanneer je erom vraagt, in gewone woorden en zonder jargon hoort uit te leggen.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio is gebouwd voor oprichters in precies deze situatie: een app die werkt, een maker die geen engineer is, en de behoefte om veilig live te gaan zonder eerst te leren programmeren. De eerste stap is in je eigen woorden beschrijven wat je hebt gebouwd; de tweede is een gesprek van 15 minuten; de derde is een offerte tegen vaste prijs met scope en tijdlijn. Elke bevinding komt met een uitleg in gewone taal, en de code blijft van jou — gedocumenteerd, zodat jij, of je AI-tool, verder kunt bouwen.
+LaunchStudio is gebouwd voor oprichters in precies deze situatie: een app die werkt, een maker die geen engineer is, en de behoefte om veilig live te gaan zonder eerst te leren programmeren. De eerste stap is in je eigen woorden beschrijven wat je hebt gebouwd; de tweede is een gesprek van 15 minuten; de derde is een offerte tegen vaste prijs met scope en tijdlijn. Elke bevinding komt met een uitleg in gewone taal, en de code blijft van jou - gedocumenteerd, zodat jij, of je AI-tool, verder kunt bouwen.
 
 Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers, vanuit kantoren in Amsterdam, Singapore en Ho Chi Minh-stad. Je krijgt hun ervaring zonder dat je hun taal hoeft te spreken. Bekijk de [pakketten Launch Ready en Launch & Grow](https://launchstudio.eu/nl/#packages), of lees over [het maatwerk in softwareontwikkeling van Manifera](https://www.manifera.com/services/custom-software-development/).
 
@@ -152,16 +152,16 @@ Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers, vanu
 
 Anouk Smit, leerkracht op een basisschool in Haarlem, bouwde Oppasklok in Bolt om een probleem in haar eigen vriendengroep op te lossen: het afstemmen van gedeelde oppassen tussen vijf gezinnen. Via mond-tot-mondreclame groeide het naar zo'n 60 gezinnen, elk met een profiel met de namen, leeftijden en allergieën van de kinderen en het huisadres. Voordat ze het openstelde voor een lokale oudervereniging met enkele honderden leden, las Anouk een artikel over de beveiliging van AI-apps en deed ze zelf de twee-accountstest.
 
-Die faalde meteen. Door een nummer in de URL te veranderen, kon een ingelogde ouder het profiel van elk gezin openen — inclusief de namen van de kinderen, allergieën en het adres. De "paginabron bekijken"-test leverde bovendien een API-sleutel van een kaartendienst op in de pagina. Anouk wist niet wat beide bevindingen technisch betekenden, maar ze wist wel dat ze daar niet mee wilde lanceren.
+Die faalde meteen. Door een nummer in de URL te veranderen, kon een ingelogde ouder het profiel van elk gezin openen - inclusief de namen van de kinderen, allergieën en het adres. De "paginabron bekijken"-test leverde bovendien een API-sleutel van een kaartendienst op in de pagina. Anouk wist niet wat beide bevindingen technisch betekenden, maar ze wist wel dat ze daar niet mee wilde lanceren.
 
 De engineers van LaunchStudio voegden toegangsregels op databaseniveau toe, zodat de data van elk gezin alleen zichtbaar was voor dat gezin en voor oppassen die het gezin expliciet had uitgenodigd, verplaatsten de kaartsleutel naar een functie op de server met gebruikslimieten, richtten back-ups in een EU-regio in met een getest herstel, en voegden eenvoudige uptimemeldingen toe op Anouks telefoon. Daarna liepen ze met Anouk aan de lijn de twee-accountstest opnieuw door, zodat ze hem veilig kon zien falen.
 
 **Resultaat:** Oppasklok werd twee weken later opengesteld voor de oudervereniging en groeide tegen het einde van het schooljaar naar 240 gezinnen, zonder incidenten rond toegang tot data. Anouk doet de twee-accountstest nog steeds zelf na elke grote wijziging.
 
 > *"Ik kon geen regel van de code lezen, maar ik kon de test doen. Dat ik de fix zelf kon zien, betekende meer dan welke uitleg ook."*
-> — **Anouk Smit, Oprichter, Oppasklok (Haarlem)**
+> - **Anouk Smit, Oprichter, Oppasklok (Haarlem)**
 
-**Kosten & Tijdlijn:** € 1.450 (Launch Ready-pakket: toegangsbeheer, geheimen, back-ups en monitoring) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.450 (Launch Ready-pakket: toegangsbeheer, geheimen, back-ups en monitoring) - afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
@@ -171,7 +171,7 @@ Gedeeltelijk. Eigenaarschap van accounts, tweefactorauthenticatie, een privacyve
 
 ### Is de twee-accountstest genoeg om te bewijzen dat mijn app veilig is?
 
-Nee. Hij bewijst één belangrijk ding — of data tussen gebruikers is gescheiden op de pagina's die je test. Het is een snelle controle, geen audit, maar als hij faalt is dat een duidelijk signaal dat er vóór de lancering een goede review nodig is.
+Nee. Hij bewijst één belangrijk ding - of data tussen gebruikers is gescheiden op de pagina's die je test. Het is een snelle controle, geen audit, maar als hij faalt is dat een duidelijk signaal dat er vóór de lancering een goede review nodig is.
 
 ### Wat moet ik doen als ik een blootgestelde sleutel in de paginabron vind?
 

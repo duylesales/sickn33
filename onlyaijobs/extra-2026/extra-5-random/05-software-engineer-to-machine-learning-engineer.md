@@ -35,7 +35,7 @@ Content Format: Career Transition Guide
 }
 </script>
 
-Moving from software engineer to machine learning engineer is one of the most common and most achievable career transitions in European tech — and also one where candidates routinely waste a year on the wrong preparation. Many start by working through mathematics courses and Kaggle competitions, then discover in interviews that what employers wanted was production judgement they already had. Others assume their engineering background is enough and are caught out by questions about evaluation and data leakage. This guide sets out what actually transfers, what you genuinely need to learn, how to get relevant experience without changing jobs first, and how to present the switch so that hiring managers take it seriously.
+Moving from software engineer to machine learning engineer is one of the most common and most achievable career transitions in European tech - and also one where candidates routinely waste a year on the wrong preparation. Many start by working through mathematics courses and Kaggle competitions, then discover in interviews that what employers wanted was production judgement they already had. Others assume their engineering background is enough and are caught out by questions about evaluation and data leakage. This guide sets out what actually transfers, what you genuinely need to learn, how to get relevant experience without changing jobs first, and how to present the switch so that hiring managers take it seriously.
 
 ## What Already Transfers (More Than You Think)
 
@@ -47,7 +47,7 @@ Software engineers arrive with advantages that many data science graduates lack:
 - **Working with product and stakeholders**: scoping, estimating, negotiating requirements.
 - **Debugging**: the willingness to keep digging until you understand why something behaves as it does.
 
-Most machine learning work in industry is software work with statistical components. Teams routinely struggle to find people who can make ML systems reliable — not people who can name more algorithms.
+Most machine learning work in industry is software work with statistical components. Teams routinely struggle to find people who can make ML systems reliable - not people who can name more algorithms.
 
 ## What You Genuinely Need to Learn
 
@@ -61,7 +61,7 @@ Four areas cover the gap for most engineers:
 
 **4. The current applied stack.** Whatever your target domain uses: scikit-learn and pandas for tabular work; PyTorch for deep learning; retrieval, prompting and evaluation frameworks for language model applications; experiment tracking and model registries for production work.
 
-A focused engineer can reach working competence in these in three to six months alongside a job — considerably faster than the "learn all the maths first" route, which delays contact with real problems.
+A focused engineer can reach working competence in these in three to six months alongside a job - considerably faster than the "learn all the maths first" route, which delays contact with real problems.
 
 ## How to Get Experience Without Changing Jobs
 
@@ -103,7 +103,7 @@ A plan that has worked for many engineers, assuming five to eight hours a week a
 
 **Months 3–4: one real project, end to end.** Choose a problem where you can get data, ideally at work. Build it properly: reproducible pipeline, tests, a deployed endpoint or scheduled job, monitoring, documentation. Write down what surprised you.
 
-**Month 5: depth in one area.** Pick the specialisation that matches your target roles — tabular prediction, forecasting, computer vision, NLP and retrieval — and go deeper with a second project.
+**Month 5: depth in one area.** Pick the specialisation that matches your target roles - tabular prediction, forecasting, computer vision, NLP and retrieval - and go deeper with a second project.
 
 **Month 6: interview preparation and applications.** Practise ML system design out loud, rehearse your project stories, refresh coding practice, and start applying. Expect to learn more in three interview loops than in a month of study.
 
@@ -117,13 +117,13 @@ Your existing domain is usually the best entry point, because you already unders
 - **Data-heavy backend engineers** often move into forecasting, ranking or fraud, where the systems and the models are tightly coupled.
 - **Mobile and embedded engineers** are well placed for on-device and edge AI, where efficiency skills are rare.
 - **Frontend and full-stack engineers** are increasingly moving into AI application engineering: building products on top of language models, where UX, latency and evaluation meet.
-- **Engineers in regulated industries** — finance, health, energy — have domain knowledge that is hard to acquire and valued highly.
+- **Engineers in regulated industries** - finance, health, energy - have domain knowledge that is hard to acquire and valued highly.
 
 Choosing a specialism early makes your applications coherent. You can always broaden later; starting broad usually means competing with everyone.
 
 ## The Generative AI Route
 
-Building applications on top of language models has become a realistic entry path for software engineers, because the work is mostly engineering: retrieval pipelines, prompt and context management, caching, latency and cost control, guardrails, and evaluation harnesses. What distinguishes good engineers here is rigour about evaluation — measuring whether answers are correct, grounded and useful, rather than shipping demos. If you take this route, learn to build an evaluation set and a scoring pipeline before you learn twelve frameworks.
+Building applications on top of language models has become a realistic entry path for software engineers, because the work is mostly engineering: retrieval pipelines, prompt and context management, caching, latency and cost control, guardrails, and evaluation harnesses. What distinguishes good engineers here is rigour about evaluation - measuring whether answers are correct, grounded and useful, rather than shipping demos. If you take this route, learn to build an evaluation set and a scoring pipeline before you learn twelve frameworks.
 
 ## Mistakes That Cost People Months
 
@@ -136,13 +136,13 @@ Building applications on top of language models has become a realistic entry pat
 
 ## Talking About Models You Did Not Train
 
-You will often have contributed to ML systems without building the model. That is fine, and interviewers respect precision: say what you owned, what you learned from the person who did the modelling, and what you would do differently. Engineers who can describe the boundary of their contribution accurately are trusted more than those who blur it — and blurring is easy to detect with two follow-up questions.
+You will often have contributed to ML systems without building the model. That is fine, and interviewers respect precision: say what you owned, what you learned from the person who did the modelling, and what you would do differently. Engineers who can describe the boundary of their contribution accurately are trusted more than those who blur it - and blurring is easy to detect with two follow-up questions.
 
 ## How OnlyAIJobs Fits a Transition Search
 
 OnlyAIJobs is a European job board that lists only AI, machine learning and data roles. Vacancies are shown at their exact address with the distance from your home, applications go directly to the employer's own page, browsing is free without an account and no employer can pay for a higher position.
 
-For someone transitioning, the value is in reading vacancies closely. Because the board is limited to AI, ML and data roles, you can see in one place how different employers describe the same work — and you will quickly notice which postings emphasise production engineering, which emphasise research and which are really analytics roles with a fashionable title. That helps you target applications where your software background is an advantage rather than a gap.
+For someone transitioning, the value is in reading vacancies closely. Because the board is limited to AI, ML and data roles, you can see in one place how different employers describe the same work - and you will quickly notice which postings emphasise production engineering, which emphasise research and which are really analytics roles with a fashionable title. That helps you target applications where your software background is an advantage rather than a gap.
 
 To be clear about scope: listings are currently concentrated in the Netherlands, in cities including Amsterdam, Utrecht, Eindhoven, Groningen, Ede and Capelle aan den IJssel. Elsewhere in Europe, combine it with national boards and company career pages. Employers can list their first vacancy free via info@onlyaijobs.eu.
 
@@ -154,7 +154,7 @@ Most experienced software engineers do not need to take a pay cut to move into M
 
 Once you land an ML role, expect the first months to feel uneven. You will be faster than your colleagues at engineering tasks and slower at judging whether a result is real. Useful habits: ask the team how they decide something is working; read the evaluation code before the model code; keep a list of assumptions you are unsure about and check them with a senior colleague weekly; and resist the urge to rebuild the stack in your first month.
 
-Within a year, most engineers who make this transition find their previous experience becomes their differentiator: they are the person who makes the team's work reliable, reproducible and deployable, while continuing to deepen their modelling judgement. That combination — engineering discipline plus applied ML sense — remains one of the most durable profiles in the European job market, and it is why this transition is worth doing properly rather than quickly.
+Within a year, most engineers who make this transition find their previous experience becomes their differentiator: they are the person who makes the team's work reliable, reproducible and deployable, while continuing to deepen their modelling judgement. That combination - engineering discipline plus applied ML sense - remains one of the most durable profiles in the European job market, and it is why this transition is worth doing properly rather than quickly.
 
 ## Real example
 
@@ -164,14 +164,14 @@ A backend engineer with six years of experience spent eight months on online cou
 
 He changed tactics. At work, he volunteered to take over deployment of a demand forecasting model that a data scientist had built in a notebook. Over four months he rewrote it as a tested pipeline, set up retraining, added monitoring for input drift and prediction distributions, and wrote a runbook. When an upstream system changed its units, his monitoring caught it within a day.
 
-He then applied again — this time describing that system end to end, including the incident. He received three interviews and two offers. The technical content he had studied helped him in the interviews, but it was the production story that got him through the door.
+He then applied again - this time describing that system end to end, including the incident. He received three interviews and two offers. The technical content he had studied helped him in the interviews, but it was the production story that got him through the door.
 
 ## Key Takeaways
 
 - Software engineering skills transfer directly; the gap is usually evaluation and data judgement, not mathematics.
 - Three to six months of focused learning alongside real work is enough to be interview-ready.
 - The fastest route is taking production responsibility for an existing model inside your current job.
-- Employers test coding, project depth, ML system design and judgement — not algorithm trivia.
+- Employers test coding, project depth, ML system design and judgement - not algorithm trivia.
 - Present yourself as an experienced engineer adding a specialism, not as a beginner.
 
 ## Where to Start
@@ -187,7 +187,7 @@ No. Many ML engineers come from software backgrounds; employers weigh demonstrat
 Enough to reason about metrics, probability and model behaviour. Deep derivations matter for research roles, not for most engineering positions.
 
 ### (Scenario: candidate with no ML at work) What if my employer has no ML projects?
-Build one thing end to end outside work — deployed, evaluated and monitored — and consider roles at companies where you can grow into ML from a platform or data engineering position.
+Build one thing end to end outside work - deployed, evaluated and monitored - and consider roles at companies where you can grow into ML from a platform or data engineering position.
 
 ### (Scenario: engineer targeting LLM work) Is generative AI a shortcut into ML roles?
 It is a genuine entry point: building and evaluating retrieval and LLM applications is in demand, and it rewards software engineering skills.

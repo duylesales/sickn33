@@ -1,4 +1,4 @@
-⚡ Noor bouwde ShiftSync AI met **Bolt** — een onregelmatige vertraging van 2,3 seconden op "willekeurige" requests bleek een klassiek Vercel cold-start-patroon dat zich verstopte in de logs. 🧠
+⚡ Noor bouwde ShiftSync AI met **Bolt** - een onregelmatige vertraging van 2,3 seconden op "willekeurige" requests bleek een klassiek Vercel cold-start-patroon dat zich verstopte in de logs. 🧠
 
 Als de backend van uw AI SaaS draait op serverless functions met opgeblazen bundels en zonder connection pooling, raken gebruikers onzichtbare cold starts die u niet kunt diagnosticeren via supporttickets alleen.
 
@@ -12,7 +12,7 @@ Als de backend van uw AI SaaS draait op serverless functions met opgeblazen bund
 
 Bij **LaunchStudio** lossen wij dit type performance-probleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
 
-Cold-start-latency daalde van 2,1s naar 630ms — een verlaging van 70% — en aan lag gerelateerde tickets verdwenen bijna volledig. (€ 1.700 (Launch & Grow Pakket) — 6 werkdagen.) 🚀
+Cold-start-latency daalde van 2,1s naar 630ms - een verlaging van 70% - en aan lag gerelateerde tickets verdwenen bijna volledig. (€ 1.700 (Launch & Grow Pakket) - 6 werkdagen.) 🚀
 
 👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vercel-cold-start-latency-case-study
 
